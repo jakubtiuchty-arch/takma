@@ -40,6 +40,9 @@ export interface Category {
   slug: string
   name: string
   description: string
+  seoTitle: string
+  seoDescription: string
+  longDescription: string
   icon: string
   productCount: number
 }
@@ -49,15 +52,20 @@ export interface Manufacturer {
   slug: string
   name: string
   logo: string
+  seoTitle?: string
+  seoDescription?: string
 }
 
-// Kategorie produktów AutoID
+// Kategorie produktów AutoID z pełnym SEO
 export const categories: Category[] = [
   {
     id: 'drukarki-etykiet',
     slug: 'drukarki-etykiet',
     name: 'Drukarki etykiet',
     description: 'Drukarki termiczne i termotransferowe do etykiet kodów kreskowych',
+    seoTitle: 'Drukarki etykiet | Termiczne i termotransferowe',
+    seoDescription: 'Profesjonalne drukarki etykiet termiczne i termotransferowe od Zebra, TSC, SATO. Drukarki kodów kreskowych do magazynu, logistyki i produkcji. Szeroki wybór, doradztwo, serwis.',
+    longDescription: 'Oferujemy szeroki wybór drukarek etykiet od wiodących producentów: Zebra Technologies, TSC, SATO, Citizen. Drukarki termiczne do etykiet samoprzylepnych oraz termotransferowe do trwałych oznaczeń. Rozwiązania dla magazynów, logistyki, produkcji i handlu detalicznego.',
     icon: 'printer',
     productCount: 24,
   },
@@ -66,6 +74,9 @@ export const categories: Category[] = [
     slug: 'skanery-kodow',
     name: 'Skanery kodów',
     description: 'Skanery ręczne, prezentacyjne i przemysłowe do kodów 1D i 2D',
+    seoTitle: 'Skanery kodów kreskowych | Ręczne, prezentacyjne, przemysłowe',
+    seoDescription: 'Skanery kodów kreskowych 1D i 2D od Zebra, Honeywell, Datalogic. Skanery ręczne, bezprzewodowe, prezentacyjne i przemysłowe. Skanowanie kodów QR, DataMatrix. Autoryzowany dystrybutor.',
+    longDescription: 'Kompletna oferta skanerów kodów kreskowych: od prostych czytników 1D po zaawansowane imagery 2D. Skanery ręczne przewodowe i bezprzewodowe, prezentacyjne na ladę kasową, przemysłowe do linii produkcyjnych. Obsługa kodów QR, DataMatrix, PDF417 i wszystkich standardów.',
     icon: 'scan',
     productCount: 32,
   },
@@ -74,6 +85,9 @@ export const categories: Category[] = [
     slug: 'terminale-mobilne',
     name: 'Terminale mobilne',
     description: 'Komputery mobilne i kolektory danych do pracy w terenie',
+    seoTitle: 'Terminale mobilne | Kolektory danych, komputery mobilne',
+    seoDescription: 'Terminale mobilne i kolektory danych Zebra, Honeywell. Wytrzymałe komputery mobilne z Androidem do magazynu, logistyki, inwentaryzacji. Klasa IP67, upadki, ekstremalny zakres temperatur.',
+    longDescription: 'Profesjonalne terminale mobilne klasy enterprise do pracy w wymagających warunkach. Kolektory danych z wbudowanym skanerem, komputery mobilne z systemem Android. Wytrzymała konstrukcja IP67, odporność na upadki, praca w ekstremalnych temperaturach. Idealne do zarządzania magazynem, inwentaryzacji i logistyki.',
     icon: 'smartphone',
     productCount: 18,
   },
@@ -82,6 +96,9 @@ export const categories: Category[] = [
     slug: 'rfid',
     name: 'RFID',
     description: 'Czytniki, anteny i tagi RFID do automatycznej identyfikacji',
+    seoTitle: 'Systemy RFID | Czytniki, anteny, tagi UHF',
+    seoDescription: 'Systemy RFID UHF od Zebra Technologies. Czytniki stacjonarne i mobilne, anteny RFID, tagi i etykiety RFID. Kompleksowe wdrożenia RFID dla magazynów, produkcji i retail. Doradztwo techniczne.',
+    longDescription: 'Kompleksowe rozwiązania RFID UHF: czytniki stacjonarne i mobilne, anteny o różnych charakterystykach, tagi i etykiety RFID. Systemy do śledzenia aktywów, zarządzania magazynem, kontroli produkcji i inwentaryzacji. Wsparcie w projektowaniu i wdrażaniu systemów RFID.',
     icon: 'radio',
     productCount: 15,
   },
@@ -90,6 +107,9 @@ export const categories: Category[] = [
     slug: 'etykiety-tasmy',
     name: 'Etykiety i taśmy',
     description: 'Materiały eksploatacyjne do druku etykiet',
+    seoTitle: 'Etykiety i taśmy termotransferowe | Materiały eksploatacyjne',
+    seoDescription: 'Etykiety termiczne i termotransferowe, taśmy barwiące woskowe, woskowo-żywiczne i żywiczne. Materiały eksploatacyjne do drukarek Zebra, TSC, SATO. Etykiety na wymiar, szybka realizacja.',
+    longDescription: 'Szeroki wybór materiałów eksploatacyjnych do drukarek etykiet. Etykiety termiczne TOP i ECO, etykiety termotransferowe papierowe, PP, PE. Taśmy barwiące (ribbon) woskowe do standardowych zastosowań, woskowo-żywiczne i żywiczne do trwałych oznaczeń. Produkcja etykiet na wymiar.',
     icon: 'tag',
     productCount: 45,
   },
@@ -98,19 +118,64 @@ export const categories: Category[] = [
     slug: 'akcesoria',
     name: 'Akcesoria',
     description: 'Baterie, ładowarki, uchwyty i inne akcesoria',
+    seoTitle: 'Akcesoria AutoID | Baterie, ładowarki, uchwyty, etui',
+    seoDescription: 'Oryginalne akcesoria do urządzeń Zebra, Honeywell, Datalogic. Baterie, ładowarki wielostanowiskowe, uchwyty samochodowe, etui, paski na rękę. Części zamienne i rozszerzenia gwarancji.',
+    longDescription: 'Oryginalne akcesoria i części zamienne do urządzeń AutoID. Baterie standardowe i o zwiększonej pojemności, ładowarki jednotanowiskowe i wielostanowiskowe, uchwyty samochodowe i stacjonarne, etui ochronne, paski. Rozszerzenia gwarancji i umowy serwisowe.',
     icon: 'package',
     productCount: 60,
   },
 ]
 
-// Producenci
+// Producenci z SEO
 export const manufacturers: Manufacturer[] = [
-  { id: 'zebra', slug: 'zebra', name: 'Zebra Technologies', logo: '/images/manufacturers/zebra.svg' },
-  { id: 'honeywell', slug: 'honeywell', name: 'Honeywell', logo: '/images/manufacturers/honeywell.svg' },
-  { id: 'datalogic', slug: 'datalogic', name: 'Datalogic', logo: '/images/manufacturers/datalogic.svg' },
-  { id: 'tsc', slug: 'tsc', name: 'TSC', logo: '/images/manufacturers/tsc.svg' },
-  { id: 'sato', slug: 'sato', name: 'SATO', logo: '/images/manufacturers/sato.svg' },
-  { id: 'citizen', slug: 'citizen', name: 'Citizen', logo: '/images/manufacturers/citizen.svg' },
+  {
+    id: 'zebra',
+    slug: 'zebra',
+    name: 'Zebra Technologies',
+    logo: '/images/manufacturers/zebra.svg',
+    seoTitle: 'Produkty Zebra Technologies',
+    seoDescription: 'Autoryzowany dystrybutor Zebra Technologies w Polsce. Drukarki etykiet, skanery kodów, terminale mobilne, systemy RFID. Pełna oferta, serwis gwarancyjny, doradztwo.'
+  },
+  {
+    id: 'honeywell',
+    slug: 'honeywell',
+    name: 'Honeywell',
+    logo: '/images/manufacturers/honeywell.svg',
+    seoTitle: 'Produkty Honeywell',
+    seoDescription: 'Skanery kodów kreskowych i terminale mobilne Honeywell. Urządzenia do magazynu, logistyki i handlu. Autoryzowany partner, serwis i wsparcie techniczne.'
+  },
+  {
+    id: 'datalogic',
+    slug: 'datalogic',
+    name: 'Datalogic',
+    logo: '/images/manufacturers/datalogic.svg',
+    seoTitle: 'Produkty Datalogic',
+    seoDescription: 'Skanery kodów kreskowych Datalogic - ręczne, prezentacyjne, przemysłowe. Czytniki dla retail, logistyki i przemysłu. Dystrybutor w Polsce.'
+  },
+  {
+    id: 'tsc',
+    slug: 'tsc',
+    name: 'TSC',
+    logo: '/images/manufacturers/tsc.svg',
+    seoTitle: 'Drukarki etykiet TSC',
+    seoDescription: 'Drukarki etykiet TSC - ekonomiczne rozwiązania do druku kodów kreskowych. Drukarki biurkowe i przemysłowe. Dobra jakość w przystępnej cenie.'
+  },
+  {
+    id: 'sato',
+    slug: 'sato',
+    name: 'SATO',
+    logo: '/images/manufacturers/sato.svg',
+    seoTitle: 'Drukarki etykiet SATO',
+    seoDescription: 'Drukarki etykiet SATO - japońska jakość i niezawodność. Drukarki przemysłowe i mobilne do wymagających zastosowań.'
+  },
+  {
+    id: 'citizen',
+    slug: 'citizen',
+    name: 'Citizen',
+    logo: '/images/manufacturers/citizen.svg',
+    seoTitle: 'Drukarki etykiet Citizen',
+    seoDescription: 'Drukarki etykiet Citizen - kompaktowe drukarki termiczne do biura i punktów sprzedaży. Niezawodność i łatwość obsługi.'
+  },
 ]
 
 // Mock produkty - różnorodne urządzenia AutoID
