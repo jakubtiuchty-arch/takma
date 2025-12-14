@@ -1,4 +1,5 @@
-// MOCK DATA - Do zastąpienia prawdziwym API w przyszłości
+// TAKMA - Katalog produktów Zebra Technologies
+// Dane zebrane z oficjalnych źródeł Zebra
 
 export interface Product {
   id: string
@@ -8,15 +9,15 @@ export interface Product {
   description: string
   categoryId: string
   manufacturerId: string
-  priceFrom?: number // opcjonalna cena "od"
-  images: string[] // placeholder URLs
+  priceFrom?: number
+  images: string[]
   tags: ProductTag[]
   availability: 'available' | 'on-order' | 'unavailable'
   isNew: boolean
   isBestseller: boolean
   specifications: ProductSpecification[]
   applications: string[]
-  compatibleAccessories: string[] // IDs produktów
+  compatibleAccessories: string[]
   downloads: ProductDownload[]
   createdAt: string
 }
@@ -29,7 +30,7 @@ export interface ProductSpecification {
 export interface ProductDownload {
   name: string
   type: 'pdf' | 'datasheet' | 'manual' | 'software'
-  url: string // placeholder
+  url: string
   size: string
 }
 
@@ -56,159 +57,123 @@ export interface Manufacturer {
   seoDescription?: string
 }
 
-// Kategorie produktów AutoID z pełnym SEO
+// Kategorie produktów AutoID
 export const categories: Category[] = [
   {
     id: 'drukarki-etykiet',
     slug: 'drukarki-etykiet',
     name: 'Drukarki etykiet',
     description: 'Drukarki termiczne i termotransferowe do etykiet kodów kreskowych',
-    seoTitle: 'Drukarki etykiet | Termiczne i termotransferowe',
-    seoDescription: 'Profesjonalne drukarki etykiet termiczne i termotransferowe od Zebra, TSC, SATO. Drukarki kodów kreskowych do magazynu, logistyki i produkcji. Szeroki wybór, doradztwo, serwis.',
-    longDescription: 'Oferujemy szeroki wybór drukarek etykiet od wiodących producentów: Zebra Technologies, TSC, SATO, Citizen. Drukarki termiczne do etykiet samoprzylepnych oraz termotransferowe do trwałych oznaczeń. Rozwiązania dla magazynów, logistyki, produkcji i handlu detalicznego.',
+    seoTitle: 'Drukarki etykiet Zebra | Termiczne i termotransferowe',
+    seoDescription: 'Profesjonalne drukarki etykiet Zebra - biurkowe, przemysłowe i mobilne. Drukarki kodów kreskowych do magazynu, logistyki i produkcji. Autoryzowany dystrybutor.',
+    longDescription: 'Oferujemy pełną gamę drukarek etykiet Zebra Technologies: od kompaktowych drukarek biurkowych ZD421/ZD621, przez półprzemysłowe ZT411/ZT421, po wydajne drukarki przemysłowe ZT610/ZT620. Drukarki mobilne ZQ320/ZQ520/ZQ630 do pracy w terenie.',
     icon: 'printer',
-    productCount: 24,
+    productCount: 15,
   },
   {
     id: 'skanery-kodow',
     slug: 'skanery-kodow',
     name: 'Skanery kodów',
     description: 'Skanery ręczne, prezentacyjne i przemysłowe do kodów 1D i 2D',
-    seoTitle: 'Skanery kodów kreskowych | Ręczne, prezentacyjne, przemysłowe',
-    seoDescription: 'Skanery kodów kreskowych 1D i 2D od Zebra, Honeywell, Datalogic. Skanery ręczne, bezprzewodowe, prezentacyjne i przemysłowe. Skanowanie kodów QR, DataMatrix. Autoryzowany dystrybutor.',
-    longDescription: 'Kompletna oferta skanerów kodów kreskowych: od prostych czytników 1D po zaawansowane imagery 2D. Skanery ręczne przewodowe i bezprzewodowe, prezentacyjne na ladę kasową, przemysłowe do linii produkcyjnych. Obsługa kodów QR, DataMatrix, PDF417 i wszystkich standardów.',
+    seoTitle: 'Skanery kodów kreskowych Zebra | Ręczne i bezprzewodowe',
+    seoDescription: 'Skanery kodów kreskowych Zebra 1D i 2D. Skanery ręczne DS2208, bezprzewodowe LI4278, ultra-wytrzymałe DS3608. Skanowanie kodów QR z ekranów.',
+    longDescription: 'Kompletna oferta skanerów Zebra: od uniwersalnych DS2208 do handlu, przez bezprzewodowe DS2278 i LI4278, po ultra-wytrzymałe DS3608 do przemysłu. Wszystkie modele obsługują kody 1D, 2D oraz kody z ekranów urządzeń mobilnych.',
     icon: 'scan',
-    productCount: 32,
+    productCount: 8,
   },
   {
     id: 'terminale-mobilne',
     slug: 'terminale-mobilne',
     name: 'Terminale mobilne',
     description: 'Komputery mobilne i kolektory danych do pracy w terenie',
-    seoTitle: 'Terminale mobilne | Kolektory danych, komputery mobilne',
-    seoDescription: 'Terminale mobilne i kolektory danych Zebra, Honeywell. Wytrzymałe komputery mobilne z Androidem do magazynu, logistyki, inwentaryzacji. Klasa IP67, upadki, ekstremalny zakres temperatur.',
-    longDescription: 'Profesjonalne terminale mobilne klasy enterprise do pracy w wymagających warunkach. Kolektory danych z wbudowanym skanerem, komputery mobilne z systemem Android. Wytrzymała konstrukcja IP67, odporność na upadki, praca w ekstremalnych temperaturach. Idealne do zarządzania magazynem, inwentaryzacji i logistyki.',
+    seoTitle: 'Terminale mobilne Zebra | Kolektory danych Android',
+    seoDescription: 'Terminale mobilne Zebra z Androidem - TC21, TC26, TC52, TC57, MC3300. Wytrzymałe komputery mobilne IP67 do magazynu i logistyki.',
+    longDescription: 'Profesjonalne terminale mobilne Zebra klasy enterprise. Seria TC21/TC26 dla małych i średnich firm, TC52/TC57 dla wymagających środowisk, MC3300 z klawiaturą do intensywnej pracy. System Android, wbudowany skaner, odporność IP67.',
     icon: 'smartphone',
-    productCount: 18,
+    productCount: 8,
   },
   {
     id: 'rfid',
     slug: 'rfid',
     name: 'RFID',
     description: 'Czytniki, anteny i tagi RFID do automatycznej identyfikacji',
-    seoTitle: 'Systemy RFID | Czytniki, anteny, tagi UHF',
-    seoDescription: 'Systemy RFID UHF od Zebra Technologies. Czytniki stacjonarne i mobilne, anteny RFID, tagi i etykiety RFID. Kompleksowe wdrożenia RFID dla magazynów, produkcji i retail. Doradztwo techniczne.',
-    longDescription: 'Kompleksowe rozwiązania RFID UHF: czytniki stacjonarne i mobilne, anteny o różnych charakterystykach, tagi i etykiety RFID. Systemy do śledzenia aktywów, zarządzania magazynem, kontroli produkcji i inwentaryzacji. Wsparcie w projektowaniu i wdrażaniu systemów RFID.',
+    seoTitle: 'Systemy RFID Zebra | Czytniki stacjonarne i mobilne',
+    seoDescription: 'Systemy RFID UHF Zebra - czytniki stacjonarne FX7500/FX9600, mobilne RFD40/RFD90. Kompleksowe wdrożenia RFID dla magazynów i produkcji.',
+    longDescription: 'Kompleksowe rozwiązania RFID Zebra: czytniki stacjonarne FX7500 i FX9600 do bramek i linii produkcyjnych, mobilne przystawki RFD40 i RFD90 do terminali. Oprogramowanie 123RFID Desktop do konfiguracji.',
     icon: 'radio',
-    productCount: 15,
+    productCount: 6,
   },
   {
-    id: 'etykiety-tasmy',
-    slug: 'etykiety-tasmy',
-    name: 'Etykiety i taśmy',
-    description: 'Materiały eksploatacyjne do druku etykiet',
-    seoTitle: 'Etykiety i taśmy termotransferowe | Materiały eksploatacyjne',
-    seoDescription: 'Etykiety termiczne i termotransferowe, taśmy barwiące woskowe, woskowo-żywiczne i żywiczne. Materiały eksploatacyjne do drukarek Zebra, TSC, SATO. Etykiety na wymiar, szybka realizacja.',
-    longDescription: 'Szeroki wybór materiałów eksploatacyjnych do drukarek etykiet. Etykiety termiczne TOP i ECO, etykiety termotransferowe papierowe, PP, PE. Taśmy barwiące (ribbon) woskowe do standardowych zastosowań, woskowo-żywiczne i żywiczne do trwałych oznaczeń. Produkcja etykiet na wymiar.',
-    icon: 'tag',
-    productCount: 45,
+    id: 'drukarki-mobilne',
+    slug: 'drukarki-mobilne',
+    name: 'Drukarki mobilne',
+    description: 'Przenośne drukarki etykiet i paragonów',
+    seoTitle: 'Drukarki mobilne Zebra | Przenośne drukarki etykiet',
+    seoDescription: 'Drukarki mobilne Zebra ZQ320, ZQ520, ZQ630. Przenośne drukarki etykiet i paragonów do pracy w terenie. Bluetooth, Wi-Fi, wytrzymała konstrukcja.',
+    longDescription: 'Mobilne drukarki Zebra do druku etykiet i paragonów w terenie. ZQ320 Plus do paragonów 3", ZQ520 do etykiet 4", ZQ630 Plus do intensywnych zastosowań. Łączność Bluetooth i Wi-Fi, wytrzymała konstrukcja.',
+    icon: 'printer',
+    productCount: 4,
   },
   {
     id: 'akcesoria',
     slug: 'akcesoria',
     name: 'Akcesoria',
     description: 'Baterie, ładowarki, uchwyty i inne akcesoria',
-    seoTitle: 'Akcesoria AutoID | Baterie, ładowarki, uchwyty, etui',
-    seoDescription: 'Oryginalne akcesoria do urządzeń Zebra, Honeywell, Datalogic. Baterie, ładowarki wielostanowiskowe, uchwyty samochodowe, etui, paski na rękę. Części zamienne i rozszerzenia gwarancji.',
-    longDescription: 'Oryginalne akcesoria i części zamienne do urządzeń AutoID. Baterie standardowe i o zwiększonej pojemności, ładowarki jednotanowiskowe i wielostanowiskowe, uchwyty samochodowe i stacjonarne, etui ochronne, paski. Rozszerzenia gwarancji i umowy serwisowe.',
+    seoTitle: 'Akcesoria Zebra | Baterie, ładowarki, uchwyty',
+    seoDescription: 'Oryginalne akcesoria Zebra - baterie, ładowarki wielostanowiskowe, uchwyty, etui. Części zamienne do drukarek, skanerów i terminali.',
+    longDescription: 'Oryginalne akcesoria Zebra: baterie standardowe i rozszerzone, ładowarki jedno- i wielostanowiskowe, uchwyty samochodowe i biurkowe, etui ochronne, paski na rękę. Pełna kompatybilność i gwarancja producenta.',
     icon: 'package',
-    productCount: 60,
+    productCount: 12,
   },
 ]
 
-// Producenci z SEO
+// Producenci
 export const manufacturers: Manufacturer[] = [
   {
     id: 'zebra',
     slug: 'zebra',
     name: 'Zebra Technologies',
     logo: '/images/manufacturers/zebra.svg',
-    seoTitle: 'Produkty Zebra Technologies',
-    seoDescription: 'Autoryzowany dystrybutor Zebra Technologies w Polsce. Drukarki etykiet, skanery kodów, terminale mobilne, systemy RFID. Pełna oferta, serwis gwarancyjny, doradztwo.'
-  },
-  {
-    id: 'honeywell',
-    slug: 'honeywell',
-    name: 'Honeywell',
-    logo: '/images/manufacturers/honeywell.svg',
-    seoTitle: 'Produkty Honeywell',
-    seoDescription: 'Skanery kodów kreskowych i terminale mobilne Honeywell. Urządzenia do magazynu, logistyki i handlu. Autoryzowany partner, serwis i wsparcie techniczne.'
-  },
-  {
-    id: 'datalogic',
-    slug: 'datalogic',
-    name: 'Datalogic',
-    logo: '/images/manufacturers/datalogic.svg',
-    seoTitle: 'Produkty Datalogic',
-    seoDescription: 'Skanery kodów kreskowych Datalogic - ręczne, prezentacyjne, przemysłowe. Czytniki dla retail, logistyki i przemysłu. Dystrybutor w Polsce.'
-  },
-  {
-    id: 'tsc',
-    slug: 'tsc',
-    name: 'TSC',
-    logo: '/images/manufacturers/tsc.svg',
-    seoTitle: 'Drukarki etykiet TSC',
-    seoDescription: 'Drukarki etykiet TSC - ekonomiczne rozwiązania do druku kodów kreskowych. Drukarki biurkowe i przemysłowe. Dobra jakość w przystępnej cenie.'
-  },
-  {
-    id: 'sato',
-    slug: 'sato',
-    name: 'SATO',
-    logo: '/images/manufacturers/sato.svg',
-    seoTitle: 'Drukarki etykiet SATO',
-    seoDescription: 'Drukarki etykiet SATO - japońska jakość i niezawodność. Drukarki przemysłowe i mobilne do wymagających zastosowań.'
-  },
-  {
-    id: 'citizen',
-    slug: 'citizen',
-    name: 'Citizen',
-    logo: '/images/manufacturers/citizen.svg',
-    seoTitle: 'Drukarki etykiet Citizen',
-    seoDescription: 'Drukarki etykiet Citizen - kompaktowe drukarki termiczne do biura i punktów sprzedaży. Niezawodność i łatwość obsługi.'
+    seoTitle: 'Produkty Zebra Technologies | Autoryzowany dystrybutor',
+    seoDescription: 'Pełna oferta Zebra Technologies - drukarki etykiet, skanery kodów, terminale mobilne, systemy RFID. TAKMA - autoryzowany partner Zebra w Polsce.'
   },
 ]
 
-// Mock produkty - różnorodne urządzenia AutoID
-export const products: Product[] = [
-  // Drukarki etykiet
+// ============================================
+// DRUKARKI BIURKOWE (DESKTOP)
+// ============================================
+
+const desktopPrinters: Product[] = [
   {
-    id: 'zd621t',
-    slug: 'zebra-zd621t',
-    name: 'Zebra ZD621t',
-    shortDescription: 'Drukarka termotransferowa klasy desktop z 4" szerokością druku',
-    description: `Zebra ZD621t to zaawansowana drukarka termotransferowa klasy desktop, oferująca niezawodność i wszechstronność dla wymagających środowisk pracy.
+    id: 'zebra-zd421t',
+    slug: 'zebra-zd421t',
+    name: 'Zebra ZD421t',
+    shortDescription: 'Drukarka termotransferowa 4" z kolorowym LCD',
+    description: `Zebra ZD421t to najnowsza drukarka biurkowa firmy Zebra, będąca następcą popularnej serii GK/GX. Łączy sprawdzoną niezawodność z nowoczesnymi funkcjami.
 
-Dzięki rozdzielczości do 300 dpi i prędkości druku do 203 mm/s, drukarka ta idealnie sprawdza się w aplikacjach wymagających wysokiej jakości etykiet – od logistyki po oznaczanie produktów.
+Oferuje ulepszoną szybkość i jakość druku oraz rozbudowane opcje łączności. Dostępna w rozdzielczości 203 lub 300 dpi.
 
-Wyposażona w szereg interfejsów komunikacyjnych (USB, Ethernet, Bluetooth, Wi-Fi) oraz intuicyjny kolorowy wyświetlacz, ZD621t zapewnia łatwą integrację i obsługę.`,
+Kolorowy wyświetlacz LCD ułatwia konfigurację i monitoring pracy. Standardowo wyposażona w USB i USB Host, z opcjonalnym Ethernet, Serial oraz podwójnym radiem bezprzewodowym Wi-Fi i Bluetooth.`,
     categoryId: 'drukarki-etykiet',
     manufacturerId: 'zebra',
-    priceFrom: 2890,
-    images: ['/images/products/placeholder.svg'],
-    tags: ['magazyn', 'logistyka', 'produkcja'],
+    priceFrom: 2490,
+    images: ['/images/products/zebra-zd421t.jpg'],
+    tags: ['magazyn', 'logistyka', 'retail'],
     availability: 'available',
     isNew: true,
     isBestseller: true,
     specifications: [
       { name: 'Metoda druku', value: 'Termotransferowa / termiczna' },
-      { name: 'Rozdzielczość', value: '203/300 dpi' },
-      { name: 'Szerokość druku', value: '108 mm (4")' },
-      { name: 'Prędkość druku', value: 'do 203 mm/s' },
-      { name: 'Interfejsy', value: 'USB, Ethernet, Bluetooth, Wi-Fi (opcja)' },
-      { name: 'Wyświetlacz', value: 'Kolorowy LCD 2.7"' },
+      { name: 'Rozdzielczość', value: '203 dpi lub 300 dpi' },
+      { name: 'Szerokość druku', value: '104 mm (4")' },
+      { name: 'Prędkość druku', value: 'do 152 mm/s' },
+      { name: 'Interfejsy', value: 'USB, USB Host, Ethernet (opcja), Wi-Fi (opcja), Bluetooth' },
+      { name: 'Wyświetlacz', value: 'Kolorowy LCD' },
+      { name: 'Pamięć', value: '512 MB Flash, 256 MB RAM' },
+      { name: 'Języki programowania', value: 'ZPL, EPL, XML' },
     ],
-    applications: ['Etykiety wysyłkowe', 'Oznaczanie produktów', 'Etykiety magazynowe', 'Etykiety z kodem kreskowym'],
-    compatibleAccessories: ['tasma-woskowa-110', 'etykiety-termo-100x50'],
+    applications: ['Etykiety wysyłkowe', 'Oznaczanie produktów', 'Etykiety magazynowe', 'Retail'],
+    compatibleAccessories: ['zebra-ribbon-wax-110', 'zebra-labels-100x50'],
     downloads: [
       { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.2 MB' },
       { name: 'Instrukcja obsługi', type: 'manual', url: '#', size: '5.8 MB' },
@@ -216,187 +181,694 @@ Wyposażona w szereg interfejsów komunikacyjnych (USB, Ethernet, Bluetooth, Wi-
     createdAt: '2024-01-15',
   },
   {
-    id: 'tsc-te210',
-    slug: 'tsc-te210',
-    name: 'TSC TE210',
-    shortDescription: 'Kompaktowa drukarka etykiet do małych i średnich wolumenów',
-    description: `TSC TE210 to ekonomiczna drukarka termiczna i termotransferowa idealna dla firm poszukujących niezawodnego rozwiązania do druku etykiet przy ograniczonym budżecie.
+    id: 'zebra-zd421d',
+    slug: 'zebra-zd421d',
+    name: 'Zebra ZD421d',
+    shortDescription: 'Ekonomiczna drukarka termiczna 4" direct thermal',
+    description: `Zebra ZD421d to wersja termiczna drukarki ZD421, idealna do druku etykiet bez użycia taśmy barwiącej.
 
-Kompaktowa konstrukcja i prosta obsługa czynią ją idealnym wyborem do biur, małych magazynów i punktów sprzedaży.`,
+Doskonała do etykiet wysyłkowych, paragonów i oznaczeń tymczasowych. Niższe koszty eksploatacji dzięki brakowi taśmy termotransferowej.
+
+Kompaktowa konstrukcja zajmuje minimum miejsca na biurku. Łatwa wymiana materiałów eksploatacyjnych.`,
     categoryId: 'drukarki-etykiet',
-    manufacturerId: 'tsc',
-    priceFrom: 890,
-    images: ['/images/products/placeholder.svg'],
-    tags: ['retail', 'magazyn'],
+    manufacturerId: 'zebra',
+    priceFrom: 1890,
+    images: ['/images/products/zebra-zd421d.jpg'],
+    tags: ['logistyka', 'retail'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Metoda druku', value: 'Termiczna (direct thermal)' },
+      { name: 'Rozdzielczość', value: '203 dpi lub 300 dpi' },
+      { name: 'Szerokość druku', value: '104 mm (4")' },
+      { name: 'Prędkość druku', value: 'do 152 mm/s' },
+      { name: 'Interfejsy', value: 'USB, USB Host, Ethernet (opcja), Wi-Fi (opcja), Bluetooth' },
+      { name: 'Pamięć', value: '512 MB Flash, 256 MB RAM' },
+    ],
+    applications: ['Etykiety wysyłkowe', 'Paragony', 'Etykiety tymczasowe'],
+    compatibleAccessories: ['zebra-labels-100x50'],
+    downloads: [
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.1 MB' },
+    ],
+    createdAt: '2024-01-15',
+  },
+  {
+    id: 'zebra-zd621t',
+    slug: 'zebra-zd621t',
+    name: 'Zebra ZD621t',
+    shortDescription: 'Premium drukarka biurkowa 4" z zaawansowanymi funkcjami',
+    description: `Zebra ZD621t to flagowa drukarka biurkowa oferująca najwyższą jakość druku w swojej klasie.
+
+Rozdzielczość do 300 dpi i prędkość do 203 mm/s zapewniają doskonałą jakość przy wysokiej wydajności. Duży kolorowy wyświetlacz 2.7" ułatwia obsługę.
+
+Dostępna również wersja ZD621R z wbudowanym koderem RFID UHF do druku i kodowania smart etykiet.`,
+    categoryId: 'drukarki-etykiet',
+    manufacturerId: 'zebra',
+    priceFrom: 2890,
+    images: ['/images/products/zebra-zd621t.jpg'],
+    tags: ['magazyn', 'logistyka', 'produkcja'],
     availability: 'available',
     isNew: false,
     isBestseller: true,
     specifications: [
       { name: 'Metoda druku', value: 'Termotransferowa / termiczna' },
-      { name: 'Rozdzielczość', value: '203 dpi' },
-      { name: 'Szerokość druku', value: '108 mm' },
-      { name: 'Prędkość druku', value: 'do 152 mm/s' },
-      { name: 'Interfejsy', value: 'USB, Ethernet (opcja)' },
+      { name: 'Rozdzielczość', value: '203 dpi lub 300 dpi' },
+      { name: 'Szerokość druku', value: '108 mm (4")' },
+      { name: 'Prędkość druku', value: 'do 203 mm/s' },
+      { name: 'Interfejsy', value: 'USB, Ethernet, Bluetooth, Wi-Fi (opcja)' },
+      { name: 'Wyświetlacz', value: 'Kolorowy LCD 2.7"' },
+      { name: 'Pamięć', value: '512 MB Flash, 256 MB RAM' },
+      { name: 'Opcje', value: 'Obcinacz, odklejak, RFID' },
     ],
-    applications: ['Etykiety cenowe', 'Oznaczanie produktów', 'Etykiety adresowe'],
-    compatibleAccessories: ['tasma-woskowa-110'],
+    applications: ['Etykiety wysyłkowe', 'Oznaczanie produktów', 'Etykiety RFID', 'Healthcare'],
+    compatibleAccessories: ['zebra-ribbon-wax-110', 'zebra-labels-100x50'],
     downloads: [
-      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '0.8 MB' },
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.4 MB' },
+      { name: 'Instrukcja obsługi', type: 'manual', url: '#', size: '6.2 MB' },
     ],
-    createdAt: '2023-08-10',
+    createdAt: '2023-06-10',
+  },
+]
+
+// ============================================
+// DRUKARKI PÓŁPRZEMYSŁOWE
+// ============================================
+
+const industrialLightPrinters: Product[] = [
+  {
+    id: 'zebra-zt231',
+    slug: 'zebra-zt231',
+    name: 'Zebra ZT231',
+    shortDescription: 'Kompaktowa drukarka przemysłowa 4" z dotykowym LCD',
+    description: `Zebra ZT231 powstała w odpowiedzi na potrzeby klientów dotyczące ergonomii i optymalizacji procesu wydruku etykiet.
+
+Nowoczesna, zwarta konstrukcja wymaga tylko 10 cm przestrzeni na otwarcie obudowy - zmieści się nawet w wąskich miejscach. Dotykowy wyświetlacz LCD znacznie ułatwia obsługę.
+
+ZT231 to następca modeli ZT230, S4M i S600. Dostępna w wersji termicznej i termotransferowej.`,
+    categoryId: 'drukarki-etykiet',
+    manufacturerId: 'zebra',
+    priceFrom: 3290,
+    images: ['/images/products/zebra-zt231.jpg'],
+    tags: ['magazyn', 'produkcja', 'logistyka'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Metoda druku', value: 'Termotransferowa / termiczna' },
+      { name: 'Rozdzielczość', value: '203 dpi lub 300 dpi' },
+      { name: 'Szerokość druku', value: '104 mm (4")' },
+      { name: 'Prędkość druku', value: 'do 305 mm/s' },
+      { name: 'Interfejsy', value: 'USB, USB Host, Ethernet, Serial, Bluetooth' },
+      { name: 'Wyświetlacz', value: 'Dotykowy LCD' },
+      { name: 'Otwieranie', value: 'Wymaga tylko 10 cm przestrzeni' },
+    ],
+    applications: ['Produkcja', 'Magazyn', 'Logistyka', 'Dystrybucja'],
+    compatibleAccessories: ['zebra-ribbon-wax-110', 'zebra-ribbon-resin-110'],
+    downloads: [
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.3 MB' },
+    ],
+    createdAt: '2024-02-01',
+  },
+  {
+    id: 'zebra-zt111',
+    slug: 'zebra-zt111',
+    name: 'Zebra ZT111',
+    shortDescription: 'Ekonomiczna drukarka przemysłowa entry-level',
+    description: `Zebra ZT111 wypełnia lukę pomiędzy drukarkami biurkowymi a przemysłowymi.
+
+Ekonomiczne rozwiązanie dla firm, które potrzebują większej wydajności niż oferują drukarki biurkowe, ale nie wymagają pełnych możliwości drukarek przemysłowych.
+
+Następca modeli ZT220, S4M i S600. Solidna konstrukcja metalowa w przystępnej cenie.`,
+    categoryId: 'drukarki-etykiet',
+    manufacturerId: 'zebra',
+    priceFrom: 2490,
+    images: ['/images/products/zebra-zt111.jpg'],
+    tags: ['magazyn', 'produkcja'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Metoda druku', value: 'Termotransferowa / termiczna' },
+      { name: 'Rozdzielczość', value: '203 dpi lub 300 dpi' },
+      { name: 'Szerokość druku', value: '104 mm (4")' },
+      { name: 'Prędkość druku', value: 'do 254 mm/s' },
+      { name: 'Interfejsy', value: 'USB, Ethernet, Serial' },
+      { name: 'Konstrukcja', value: 'Metalowa obudowa' },
+    ],
+    applications: ['Lekka produkcja', 'Magazyn', 'Dystrybucja'],
+    compatibleAccessories: ['zebra-ribbon-wax-110'],
+    downloads: [
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.0 MB' },
+    ],
+    createdAt: '2023-09-15',
   },
   {
     id: 'zebra-zt411',
     slug: 'zebra-zt411',
     name: 'Zebra ZT411',
-    shortDescription: 'Przemysłowa drukarka etykiet do intensywnej eksploatacji',
-    description: `Zebra ZT411 to przemysłowa drukarka etykiet zaprojektowana do pracy w wymagających środowiskach produkcyjnych i magazynowych.
+    shortDescription: 'Półprzemysłowa drukarka 4" do intensywnej eksploatacji',
+    description: `Zebra ZT411 to półprzemysłowa drukarka etykiet zaprojektowana do intensywnej pracy w środowiskach produkcyjnych i magazynowych.
 
-Metalowa konstrukcja, wysoka wydajność i zaawansowane opcje łączności sprawiają, że jest idealnym wyborem dla firm o dużych wolumenach druku.`,
+Seria ZT400 oferuje modele 104 mm (ZT411) i 168 mm (ZT421) szerokości druku. Wszystkie urządzenia wyposażone są w zaawansowane funkcje standardowo.
+
+Dostępna z rozdzielczością 203, 300 lub 600 dpi dla małych etykiet. Opcjonalny moduł RFID, obcinacz lub odklejak.`,
     categoryId: 'drukarki-etykiet',
     manufacturerId: 'zebra',
     priceFrom: 5890,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/zebra-zt411.jpg'],
     tags: ['produkcja', 'magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
     isBestseller: true,
     specifications: [
       { name: 'Metoda druku', value: 'Termotransferowa / termiczna' },
-      { name: 'Rozdzielczość', value: '203/300/600 dpi' },
-      { name: 'Szerokość druku', value: '104 mm' },
-      { name: 'Prędkość druku', value: 'do 356 mm/s' },
-      { name: 'Interfejsy', value: 'USB, Ethernet, Serial, Bluetooth, Wi-Fi' },
+      { name: 'Rozdzielczość', value: '203 / 300 / 600 dpi' },
+      { name: 'Szerokość druku', value: '104 mm (4")' },
+      { name: 'Prędkość druku', value: 'do 356 mm/s (203dpi)' },
+      { name: 'Interfejsy', value: 'USB, USB Host, Ethernet, Serial, Bluetooth 4.1, Wi-Fi' },
+      { name: 'Wyświetlacz', value: 'Kolorowy dotykowy 4.3"' },
+      { name: 'Pamięć', value: '256 MB RAM, 512 MB Flash' },
+      { name: 'Opcje', value: 'RFID, obcinacz, odklejak, nawijak' },
     ],
-    applications: ['Etykiety produkcyjne', 'Oznaczanie palet', 'Etykiety wysyłkowe', 'Etykiety do warunków ekstremalnych'],
-    compatibleAccessories: ['tasma-zywiczna-110', 'etykiety-pp-100x50'],
+    applications: ['Etykiety produkcyjne', 'Oznaczanie palet', 'Etykiety wysyłkowe', 'RFID'],
+    compatibleAccessories: ['zebra-ribbon-wax-110', 'zebra-ribbon-resin-110'],
     downloads: [
       { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.5 MB' },
       { name: 'Instrukcja obsługi', type: 'manual', url: '#', size: '8.2 MB' },
     ],
     createdAt: '2023-03-20',
   },
-
-  // Skanery kodów
   {
-    id: 'ds2208',
+    id: 'zebra-zt421',
+    slug: 'zebra-zt421',
+    name: 'Zebra ZT421',
+    shortDescription: 'Półprzemysłowa drukarka 6" do szerokich etykiet',
+    description: `Zebra ZT421 to wersja szeroka drukarki z serii ZT400, przeznaczona do druku etykiet o szerokości do 168 mm.
+
+Idealna do etykiet paletowych, oznaczeń dużych produktów i etykiet GS1 wymagających większej powierzchni.
+
+Wszystkie zalety serii ZT400: metalowa konstrukcja, kolorowy dotykowy wyświetlacz, zaawansowane opcje łączności.`,
+    categoryId: 'drukarki-etykiet',
+    manufacturerId: 'zebra',
+    priceFrom: 7490,
+    images: ['/images/products/zebra-zt421.jpg'],
+    tags: ['produkcja', 'logistyka', 'magazyn'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Metoda druku', value: 'Termotransferowa / termiczna' },
+      { name: 'Rozdzielczość', value: '203 / 300 dpi' },
+      { name: 'Szerokość druku', value: '168 mm (6")' },
+      { name: 'Prędkość druku', value: 'do 305 mm/s (203dpi)' },
+      { name: 'Interfejsy', value: 'USB, USB Host, Ethernet, Serial, Bluetooth, Wi-Fi' },
+      { name: 'Wyświetlacz', value: 'Kolorowy dotykowy 4.3"' },
+      { name: 'Opcje', value: 'RFID, obcinacz, odklejak, nawijak' },
+    ],
+    applications: ['Etykiety paletowe', 'Duże oznaczenia', 'Etykiety GS1', 'Logistyka'],
+    compatibleAccessories: ['zebra-ribbon-wax-170'],
+    downloads: [
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.5 MB' },
+    ],
+    createdAt: '2023-03-20',
+  },
+]
+
+// ============================================
+// DRUKARKI PRZEMYSŁOWE
+// ============================================
+
+const industrialPrinters: Product[] = [
+  {
+    id: 'zebra-zt610',
+    slug: 'zebra-zt610',
+    name: 'Zebra ZT610',
+    shortDescription: 'Przemysłowa drukarka 4" do pracy 24/7',
+    description: `Zebra ZT610 to przemysłowa drukarka etykiet będąca następcą legendarnej serii Xi4.
+
+Wytrzymała metalowa obudowa, znacznie większa pamięć (1 GB RAM, 2 GB Flash) i duży kolorowy wyświetlacz w przednim panelu sterowania.
+
+Drukarka przystosowana do pracy 24 godziny na dobę w trudnych środowiskach produkcyjnych i magazynowych. Możliwość aktualizacji do RFID w terenie w zaledwie 5 minut.`,
+    categoryId: 'drukarki-etykiet',
+    manufacturerId: 'zebra',
+    priceFrom: 12900,
+    images: ['/images/products/zebra-zt610.jpg'],
+    tags: ['produkcja', 'magazyn', 'logistyka'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: true,
+    specifications: [
+      { name: 'Metoda druku', value: 'Termotransferowa / termiczna' },
+      { name: 'Rozdzielczość', value: '203 / 300 / 600 dpi' },
+      { name: 'Szerokość druku', value: '114 mm (4")' },
+      { name: 'Prędkość druku', value: 'do 356 mm/s (203dpi)' },
+      { name: 'Interfejsy', value: 'USB, USB Host, Ethernet, Serial, Bluetooth, Wi-Fi' },
+      { name: 'Wyświetlacz', value: 'Kolorowy dotykowy' },
+      { name: 'Pamięć', value: '1 GB RAM, 2 GB Flash' },
+      { name: 'Praca', value: '24/7' },
+      { name: 'Opcje', value: 'RFID (upgrade w 5 min), obcinacz, odklejak, nawijak' },
+    ],
+    applications: ['Produkcja przemysłowa', 'Magazyn wysokiego składowania', 'Centra dystrybucji', 'RFID'],
+    compatibleAccessories: ['zebra-ribbon-resin-110', 'zebra-ribbon-wax-resin-110'],
+    downloads: [
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.8 MB' },
+      { name: 'Instrukcja obsługi', type: 'manual', url: '#', size: '12.5 MB' },
+    ],
+    createdAt: '2022-08-15',
+  },
+  {
+    id: 'zebra-zt620',
+    slug: 'zebra-zt620',
+    name: 'Zebra ZT620',
+    shortDescription: 'Przemysłowa drukarka 6" do szerokich etykiet',
+    description: `Zebra ZT620 to szeroka wersja drukarki przemysłowej z serii ZT600, obsługująca etykiety do 168 mm szerokości.
+
+Wyprzedza poprzedników z serii Xi, oferując wytrzymałość, kontrolę i wydajność nowej generacji. Najlepsza w swojej klasie jakość druku w wysokiej rozdzielczości.
+
+Idealna do etykiet paletowych, oznaczeń magazynowych i etykiet na duże produkty. Możliwość pracy 24/7.`,
+    categoryId: 'drukarki-etykiet',
+    manufacturerId: 'zebra',
+    priceFrom: 15900,
+    images: ['/images/products/zebra-zt620.jpg'],
+    tags: ['produkcja', 'logistyka', 'magazyn'],
+    availability: 'on-order',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Metoda druku', value: 'Termotransferowa / termiczna' },
+      { name: 'Rozdzielczość', value: '203 / 300 dpi' },
+      { name: 'Szerokość druku', value: '168 mm (6")' },
+      { name: 'Prędkość druku', value: 'do 305 mm/s (203dpi)' },
+      { name: 'Interfejsy', value: 'USB, USB Host, Ethernet, Serial, Bluetooth, Wi-Fi' },
+      { name: 'Pamięć', value: '1 GB RAM, 2 GB Flash' },
+      { name: 'Praca', value: '24/7' },
+      { name: 'Opcje', value: 'RFID, obcinacz, odklejak, nawijak' },
+    ],
+    applications: ['Etykiety paletowe', 'Przemysł ciężki', 'Centra logistyczne', 'Duże oznaczenia'],
+    compatibleAccessories: ['zebra-ribbon-wax-170'],
+    downloads: [
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.8 MB' },
+    ],
+    createdAt: '2022-08-15',
+  },
+]
+
+// ============================================
+// DRUKARKI MOBILNE
+// ============================================
+
+const mobilePrinters: Product[] = [
+  {
+    id: 'zebra-zq320-plus',
+    slug: 'zebra-zq320-plus',
+    name: 'Zebra ZQ320 Plus',
+    shortDescription: 'Mobilna drukarka paragonów 3" do średnich obciążeń',
+    description: `Zebra ZQ320 Plus to mobilna drukarka paragonów o szerokości 3" (72 mm), zoptymalizowana dla środowisk o średnim obciążeniu.
+
+Idealna dla kurierów, serwisantów i przedstawicieli handlowych. Możliwość druku paragonów i podstawowych etykiet.
+
+Wytrzymała konstrukcja, łączność Bluetooth i Wi-Fi, długi czas pracy na baterii.`,
+    categoryId: 'drukarki-mobilne',
+    manufacturerId: 'zebra',
+    priceFrom: 1890,
+    images: ['/images/products/zebra-zq320.jpg'],
+    tags: ['logistyka', 'retail', 'outdoor'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Metoda druku', value: 'Termiczna' },
+      { name: 'Rozdzielczość', value: '203 dpi' },
+      { name: 'Szerokość druku', value: '72 mm (3")' },
+      { name: 'Prędkość druku', value: 'do 100 mm/s' },
+      { name: 'Interfejsy', value: 'Bluetooth 4.1, Wi-Fi, USB' },
+      { name: 'Bateria', value: 'Li-Ion 2500 mAh' },
+      { name: 'Odporność', value: 'IP54, upadki z 1.5 m' },
+      { name: 'Waga', value: '480 g z baterią' },
+    ],
+    applications: ['Dostawy kurierskie', 'Serwis w terenie', 'Paragony mobilne', 'Etykiety podstawowe'],
+    compatibleAccessories: ['zebra-battery-zq3', 'zebra-charger-zq3'],
+    downloads: [
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '0.9 MB' },
+    ],
+    createdAt: '2024-03-01',
+  },
+  {
+    id: 'zebra-zq521',
+    slug: 'zebra-zq521',
+    name: 'Zebra ZQ521',
+    shortDescription: 'Mobilna drukarka etykiet 4" następca ZQ520',
+    description: `Zebra ZQ521 to następca popularnego modelu ZQ520, oferująca druk etykiet i paragonów o szerokości do 104 mm.
+
+32-bitowy procesor, 512 MB Flash i 256 MB RAM zapewniają wysoką wydajność. Wytrzymała konstrukcja do pracy w terenie.
+
+Idealna do etykiet wysyłkowych, magazynowych i kurierskich drukowanych w terenie.`,
+    categoryId: 'drukarki-mobilne',
+    manufacturerId: 'zebra',
+    priceFrom: 3290,
+    images: ['/images/products/zebra-zq521.jpg'],
+    tags: ['logistyka', 'magazyn', 'outdoor'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: true,
+    specifications: [
+      { name: 'Metoda druku', value: 'Termiczna' },
+      { name: 'Rozdzielczość', value: '203 dpi' },
+      { name: 'Szerokość druku', value: '104 mm (4")' },
+      { name: 'Prędkość druku', value: 'do 127 mm/s' },
+      { name: 'Interfejsy', value: 'Bluetooth 4.2, Wi-Fi, USB' },
+      { name: 'Pamięć', value: '512 MB Flash, 256 MB RAM' },
+      { name: 'Bateria', value: 'PowerPrecision+ Li-Ion' },
+      { name: 'Odporność', value: 'IP54, upadki z 2.1 m' },
+    ],
+    applications: ['Etykiety kurierskie', 'Magazyn', 'Logistyka', 'Dostawy'],
+    compatibleAccessories: ['zebra-battery-zq5', 'zebra-charger-zq5'],
+    downloads: [
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.1 MB' },
+    ],
+    createdAt: '2024-02-15',
+  },
+  {
+    id: 'zebra-zq630-plus',
+    slug: 'zebra-zq630-plus',
+    name: 'Zebra ZQ630 Plus',
+    shortDescription: 'Wytrzymała mobilna drukarka 4" do intensywnych zastosowań',
+    description: `Zebra ZQ630 Plus to najbardziej wytrzymała mobilna drukarka etykiet 4" przeznaczona do środowisk o wysokim obciążeniu.
+
+Następca modelu QLn420. Drukuje etykiety, paragony i metki o szerokości do 104 mm z najwyższą niezawodnością.
+
+Idealna dla logistyki, transportu i aplikacji wymagających ekstremalnej wytrzymałości.`,
+    categoryId: 'drukarki-mobilne',
+    manufacturerId: 'zebra',
+    priceFrom: 4890,
+    images: ['/images/products/zebra-zq630.jpg'],
+    tags: ['logistyka', 'outdoor', 'produkcja'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Metoda druku', value: 'Termiczna' },
+      { name: 'Rozdzielczość', value: '203 dpi' },
+      { name: 'Szerokość druku', value: '104 mm (4")' },
+      { name: 'Prędkość druku', value: 'do 115 mm/s' },
+      { name: 'Interfejsy', value: 'Bluetooth 4.1, Wi-Fi 802.11ac, USB' },
+      { name: 'Bateria', value: 'PowerPrecision+ 6800 mAh' },
+      { name: 'Odporność', value: 'IP54, upadki z 2.4 m, MIL-STD-810G' },
+      { name: 'Temperatura pracy', value: '-20°C do +50°C' },
+    ],
+    applications: ['Transport ciężki', 'Logistyka', 'Praca w ekstremalnych warunkach', 'Magazyny outdoor'],
+    compatibleAccessories: ['zebra-battery-zq6', 'zebra-charger-zq6'],
+    downloads: [
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.3 MB' },
+    ],
+    createdAt: '2023-06-01',
+  },
+]
+
+// ============================================
+// SKANERY KODÓW KRESKOWYCH
+// ============================================
+
+const scanners: Product[] = [
+  {
+    id: 'zebra-ds2208',
     slug: 'zebra-ds2208',
     name: 'Zebra DS2208',
-    shortDescription: 'Uniwersalny skaner 2D do codziennych zastosowań',
-    description: `Zebra DS2208 to wszechstronny skaner kodów 2D, który zapewnia szybkie i precyzyjne skanowanie kodów kreskowych 1D i 2D, w tym kodów z ekranów urządzeń mobilnych.
+    shortDescription: 'Uniwersalny skaner 2D do handlu i biura',
+    description: `Zebra DS2208 to nowa generacja skanera LS2208, będąca odpowiedzią na potrzebę odczytu kodów z ekranów urządzeń mobilnych.
 
-Idealny do handlu detalicznego, obsługi klienta i lekkich zastosowań przemysłowych.`,
+Radzi sobie z odczytem kodów słabej jakości, uszkodzonych lub słabo wydrukowanych. Błyskawiczny odczyt kodów 1D i 2D w różnych odległościach do 37 cm.
+
+Technologia Plug and Play - gotowy do pracy natychmiast po podłączeniu. Idealny dla handlu detalicznego i obsługi dokumentów.`,
     categoryId: 'skanery-kodow',
     manufacturerId: 'zebra',
     priceFrom: 590,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/zebra-ds2208.jpg'],
     tags: ['retail', 'magazyn'],
     availability: 'available',
     isNew: false,
     isBestseller: true,
     specifications: [
-      { name: 'Typ skanera', value: 'Imager 2D' },
+      { name: 'Typ skanera', value: 'Imager 2D przewodowy' },
       { name: 'Skanowane kody', value: '1D, 2D, kody z ekranów' },
       { name: 'Interfejsy', value: 'USB, RS-232' },
-      { name: 'Zasięg skanowania', value: 'do 36.8 cm' },
+      { name: 'Zasięg skanowania', value: 'do 37 cm' },
       { name: 'Odporność na upadki', value: '1.5 m na beton' },
+      { name: 'Klasa IP', value: 'IP52' },
+      { name: 'Waga', value: '115 g' },
     ],
     applications: ['Kasy sklepowe', 'Inwentaryzacja', 'Obsługa dokumentów', 'Weryfikacja produktów'],
-    compatibleAccessories: ['podstawka-ds22xx'],
+    compatibleAccessories: ['zebra-stand-ds22'],
     downloads: [
       { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '0.9 MB' },
     ],
     createdAt: '2022-11-05',
   },
   {
-    id: 'honeywell-voyager-1472g',
-    slug: 'honeywell-voyager-1472g',
-    name: 'Honeywell Voyager 1472g',
+    id: 'zebra-ds2278',
+    slug: 'zebra-ds2278',
+    name: 'Zebra DS2278',
     shortDescription: 'Bezprzewodowy skaner 2D z bazą ładującą',
-    description: `Honeywell Voyager 1472g to bezprzewodowy skaner kodów 2D, który łączy mobilność z wysoką wydajnością skanowania.
+    description: `Zebra DS2278 to bezprzewodowa wersja popularnego skanera DS2208, łącząca mobilność z wysoką wydajnością.
 
-Zasięg bezprzewodowy do 100 m i bateria wystarczająca na ponad 65 000 skanów sprawiają, że jest idealny do zastosowań wymagających swobody ruchu.`,
+Komunikacja Bluetooth zapewnia zasięg do 10 m od bazy. Bateria wystarczająca na pełną zmianę roboczą.
+
+Wszystkie zalety DS2208 w wersji bezprzewodowej: odczyt kodów z ekranów, kodów uszkodzonych, technologia Plug and Play.`,
     categoryId: 'skanery-kodow',
-    manufacturerId: 'honeywell',
-    priceFrom: 1290,
-    images: ['/images/products/placeholder.svg'],
-    tags: ['retail', 'magazyn', 'logistyka'],
+    manufacturerId: 'zebra',
+    priceFrom: 990,
+    images: ['/images/products/zebra-ds2278.jpg'],
+    tags: ['retail', 'magazyn'],
     availability: 'available',
-    isNew: true,
-    isBestseller: false,
+    isNew: false,
+    isBestseller: true,
     specifications: [
       { name: 'Typ skanera', value: 'Imager 2D bezprzewodowy' },
-      { name: 'Skanowane kody', value: '1D, 2D, PDF417, QR' },
-      { name: 'Łączność', value: 'Bluetooth, USB (baza)' },
-      { name: 'Zasięg bezprzewodowy', value: 'do 100 m' },
-      { name: 'Bateria', value: '65 000 skanów' },
+      { name: 'Skanowane kody', value: '1D, 2D, kody z ekranów' },
+      { name: 'Łączność', value: 'Bluetooth 4.0, USB (baza)' },
+      { name: 'Zasięg bezprzewodowy', value: 'do 10 m' },
+      { name: 'Bateria', value: 'Li-Ion, pełna zmiana' },
+      { name: 'Odporność na upadki', value: '1.5 m na beton' },
     ],
-    applications: ['Handel detaliczny', 'Inwentaryzacja mobilna', 'Magazyn', 'Logistyka'],
-    compatibleAccessories: [],
+    applications: ['Handel detaliczny', 'Inwentaryzacja mobilna', 'Magazyn', 'Recepcja'],
+    compatibleAccessories: ['zebra-stand-ds22'],
     downloads: [
-      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.1 MB' },
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.0 MB' },
     ],
-    createdAt: '2024-02-01',
+    createdAt: '2023-02-10',
   },
   {
-    id: 'datalogic-gryphon-4500',
-    slug: 'datalogic-gryphon-gd4520',
-    name: 'Datalogic Gryphon GD4520',
-    shortDescription: 'Skaner prezentacyjny 2D na ladę kasową',
-    description: `Datalogic Gryphon GD4520 to zaawansowany skaner prezentacyjny zaprojektowany do intensywnego użytkowania w punktach sprzedaży.
+    id: 'zebra-li4278',
+    slug: 'zebra-li4278',
+    name: 'Zebra LI4278',
+    shortDescription: 'Bezprzewodowy skaner laserowy 1D z zasięgiem 100 m',
+    description: `Zebra Symbol LI4278 to bezprzewodowy czytnik kodów 1D komunikujący się za pośrednictwem Bluetooth.
 
-Technologia Motionix™ automatycznie wykrywa ruch i aktywuje skanowanie, zapewniając błyskawiczną obsługę klientów.`,
+Nowoczesna technologia linear imager pozwala na odczyt kodów ze standardowych etykiet i ekranów telefonów. Akumulator gwarantuje nieprzerwaną pracę nawet przez 72 godziny.
+
+Wyjątkowy zasięg radiowy do 100 metrów i norma szczelności IP53.`,
     categoryId: 'skanery-kodow',
-    manufacturerId: 'datalogic',
+    manufacturerId: 'zebra',
     priceFrom: 890,
-    images: ['/images/products/placeholder.svg'],
-    tags: ['retail'],
+    images: ['/images/products/zebra-li4278.jpg'],
+    tags: ['retail', 'magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
     isBestseller: false,
     specifications: [
-      { name: 'Typ skanera', value: 'Prezentacyjny 2D' },
-      { name: 'Skanowane kody', value: '1D, 2D, GS1, QR' },
-      { name: 'Interfejsy', value: 'USB, RS-232' },
-      { name: 'Technologia', value: 'Motionix™ auto-sensing' },
-      { name: 'Odporność IP', value: 'IP52' },
+      { name: 'Typ skanera', value: 'Linear Imager 1D bezprzewodowy' },
+      { name: 'Skanowane kody', value: '1D, kody z ekranów' },
+      { name: 'Łączność', value: 'Bluetooth, USB (baza)' },
+      { name: 'Zasięg bezprzewodowy', value: 'do 100 m' },
+      { name: 'Bateria', value: '72 godziny pracy' },
+      { name: 'Klasa IP', value: 'IP53' },
+      { name: 'Odporność na upadki', value: '1.8 m na beton' },
     ],
-    applications: ['Kasy sklepowe', 'Apteki', 'Punkty obsługi klienta'],
+    applications: ['Magazyn', 'Logistyka', 'Handel', 'Inwentaryzacja'],
     compatibleAccessories: [],
     downloads: [
-      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.0 MB' },
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '0.8 MB' },
     ],
-    createdAt: '2023-06-15',
+    createdAt: '2022-06-15',
   },
-
-  // Terminale mobilne
   {
-    id: 'tc52x',
+    id: 'zebra-ds3608',
+    slug: 'zebra-ds3608',
+    name: 'Zebra DS3608',
+    shortDescription: 'Ultra-wytrzymały skaner przemysłowy 2D',
+    description: `Zebra DS3608 to ultra-wytrzymały skaner zapewniający niepowtarzalną wydajność w najtrudniejszych warunkach.
+
+Błyskawicznie przechwytuje kody 1D i 2D z odległości do 1.5 metra. Unikalny tryb multi-kod umożliwia jednoczesne wychwytywanie do 20 kodów na jednej etykiecie.
+
+Konstrukcja odporna na upadki z 2.4 m, klasa IP67, temperatura pracy od -30°C do +50°C.`,
+    categoryId: 'skanery-kodow',
+    manufacturerId: 'zebra',
+    priceFrom: 2490,
+    images: ['/images/products/zebra-ds3608.jpg'],
+    tags: ['produkcja', 'magazyn', 'logistyka', 'outdoor'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Typ skanera', value: 'Imager 2D ultra-wytrzymały' },
+      { name: 'Skanowane kody', value: '1D, 2D, DPM, multi-kod (do 20)' },
+      { name: 'Interfejsy', value: 'USB, RS-232' },
+      { name: 'Zasięg skanowania', value: 'do 1.5 m' },
+      { name: 'Odporność na upadki', value: '2.4 m na beton' },
+      { name: 'Klasa IP', value: 'IP67' },
+      { name: 'Temperatura pracy', value: '-30°C do +50°C' },
+    ],
+    applications: ['Linie produkcyjne', 'Magazyny chłodnicze', 'Przemysł ciężki', 'Outdoor'],
+    compatibleAccessories: [],
+    downloads: [
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.4 MB' },
+    ],
+    createdAt: '2022-04-20',
+  },
+  {
+    id: 'zebra-ds8178',
+    slug: 'zebra-ds8178',
+    name: 'Zebra DS8178',
+    shortDescription: 'Premium bezprzewodowy skaner 2D do wymagających zastosowań',
+    description: `Zebra DS8178 to bezprzewodowy czytnik premium klasy, błyskawicznie odczytujący kody 1D i 2D.
+
+Potrafi odczytać niewyraźne, wyblakłe, uszkodzone lub zabrudzone kody. Świetnie radzi sobie z kodami na ekranach smartfonów, nawet słabo doświetlonych.
+
+Inteligentna bateria PowerPrecision Plus zapewnia do 24 godzin nieprzerwanej pracy. Wersja DS8178-HC dedykowana dla służby zdrowia z antybakteryjną powłoką.`,
+    categoryId: 'skanery-kodow',
+    manufacturerId: 'zebra',
+    priceFrom: 1790,
+    images: ['/images/products/zebra-ds8178.jpg'],
+    tags: ['retail', 'healthcare', 'magazyn'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Typ skanera', value: 'Imager 2D bezprzewodowy premium' },
+      { name: 'Skanowane kody', value: '1D, 2D, kody z ekranów, kody uszkodzone' },
+      { name: 'Łączność', value: 'Bluetooth 4.0, USB (baza)' },
+      { name: 'Bateria', value: 'PowerPrecision Plus, do 24h pracy' },
+      { name: 'Odporność na upadki', value: '2.4 m na beton' },
+      { name: 'Klasa IP', value: 'IP52' },
+      { name: 'Wersja HC', value: 'Antybakteryjna powłoka dla healthcare' },
+    ],
+    applications: ['Apteki', 'Szpitale', 'Handel premium', 'Logistyka'],
+    compatibleAccessories: [],
+    downloads: [
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.2 MB' },
+    ],
+    createdAt: '2022-09-10',
+  },
+]
+
+// ============================================
+// TERMINALE MOBILNE
+// ============================================
+
+const mobileComputers: Product[] = [
+  {
+    id: 'zebra-tc21',
+    slug: 'zebra-tc21',
+    name: 'Zebra TC21',
+    shortDescription: 'Ekonomiczny terminal mobilny Android dla firm',
+    description: `Zebra TC21 to ekonomiczny komputer dotykowy klasy biznesowej w przystępnej cenie, działający na systemie Android.
+
+Obudowa niewielka, lekka i wygodna w przenoszeniu. Duży 5-calowy ekran dotykowy HD i kamera 13MP z tyłu.
+
+Idealny dla małych i średnich firm szukających wytrzymałego urządzenia do inwentaryzacji i zarządzania magazynem.`,
+    categoryId: 'terminale-mobilne',
+    manufacturerId: 'zebra',
+    priceFrom: 2890,
+    images: ['/images/products/zebra-tc21.jpg'],
+    tags: ['retail', 'magazyn'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: true,
+    specifications: [
+      { name: 'System operacyjny', value: 'Android 10/11' },
+      { name: 'Procesor', value: 'Qualcomm Snapdragon 660' },
+      { name: 'Wyświetlacz', value: '5" HD (1280x720)' },
+      { name: 'Pamięć', value: '3/4 GB RAM, 32/64 GB Flash' },
+      { name: 'Skaner', value: 'SE4710 Imager 2D' },
+      { name: 'Kamera', value: '13 MP tył, 5 MP przód' },
+      { name: 'Bateria', value: '3100 mAh lub 5200 mAh' },
+      { name: 'Odporność', value: 'IP67, upadki z 1.2 m' },
+      { name: 'Łączność', value: 'Wi-Fi 6, Bluetooth 5.0' },
+    ],
+    applications: ['Zarządzanie magazynem', 'Inwentaryzacja', 'Retail', 'Małe i średnie firmy'],
+    compatibleAccessories: ['zebra-battery-tc21', 'zebra-cradle-tc21'],
+    downloads: [
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.6 MB' },
+      { name: 'Instrukcja obsługi', type: 'manual', url: '#', size: '8.5 MB' },
+    ],
+    createdAt: '2023-04-15',
+  },
+  {
+    id: 'zebra-tc26',
+    slug: 'zebra-tc26',
+    name: 'Zebra TC26',
+    shortDescription: 'Terminal mobilny z LTE/4G do pracy w terenie',
+    description: `Zebra TC26 to wersja terminala TC21 z dodatkowym modułem 4G (LTE) do pracy w terenie poza zasięgiem Wi-Fi.
+
+Podwyższona norma szczelności IP67 przystosowuje urządzenie do pracy w trudnych warunkach przemysłowych i terenowych.
+
+Idealny dla serwisantów, kurierów i pracowników działających poza biurem.`,
+    categoryId: 'terminale-mobilne',
+    manufacturerId: 'zebra',
+    priceFrom: 3490,
+    images: ['/images/products/zebra-tc26.jpg'],
+    tags: ['logistyka', 'outdoor', 'retail'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'System operacyjny', value: 'Android 10/11' },
+      { name: 'Procesor', value: 'Qualcomm Snapdragon 660' },
+      { name: 'Wyświetlacz', value: '5" HD (1280x720)' },
+      { name: 'Pamięć', value: '4 GB RAM, 64 GB Flash' },
+      { name: 'Skaner', value: 'SE4710 Imager 2D' },
+      { name: 'Łączność', value: 'Wi-Fi 6, Bluetooth 5.0, 4G LTE, GPS' },
+      { name: 'Bateria', value: '3100 mAh lub 5200 mAh' },
+      { name: 'Odporność', value: 'IP67, upadki z 1.2 m' },
+    ],
+    applications: ['Serwis w terenie', 'Dostawy kurierskie', 'Praca poza biurem', 'Logistyka'],
+    compatibleAccessories: ['zebra-battery-tc21', 'zebra-vehicle-cradle-tc2'],
+    downloads: [
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.6 MB' },
+    ],
+    createdAt: '2023-04-15',
+  },
+  {
+    id: 'zebra-tc52x',
     slug: 'zebra-tc52x',
     name: 'Zebra TC52x',
-    shortDescription: 'Wytrzymały terminal mobilny z Androidem dla przedsiębiorstw',
-    description: `Zebra TC52x to wszechstronny terminal mobilny klasy enterprise, który łączy funkcjonalność smartfona z wytrzymałością urządzenia przemysłowego.
+    shortDescription: 'Wytrzymały terminal mobilny do wymagających środowisk',
+    description: `Zebra TC52x to wszechstronny terminal mobilny klasy enterprise, łączący funkcjonalność smartfona z wytrzymałością urządzenia przemysłowego.
 
-System Android, potężny procesor i zaawansowane możliwości skanowania czynią go idealnym narzędziem dla pracowników mobilnych.`,
+System Android, potężny procesor Snapdragon 660 i zaawansowane możliwości skanowania czynią go idealnym narzędziem dla pracowników mobilnych.
+
+Wytrzymałość IP67, odporność na upadki z 1.5 m, wsparcie Mobility DNA dla łatwego zarządzania flotą urządzeń.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'zebra',
     priceFrom: 4590,
-    images: ['/images/products/placeholder.svg'],
-    tags: ['magazyn', 'logistyka', 'retail'],
+    images: ['/images/products/zebra-tc52x.jpg'],
+    tags: ['magazyn', 'logistyka', 'produkcja'],
     availability: 'available',
     isNew: false,
     isBestseller: true,
     specifications: [
       { name: 'System operacyjny', value: 'Android 11' },
       { name: 'Procesor', value: 'Qualcomm Snapdragon 660' },
-      { name: 'Wyświetlacz', value: '5" Full HD' },
-      { name: 'Pamięć', value: '4GB RAM / 32GB Flash' },
+      { name: 'Wyświetlacz', value: '5" Full HD (1920x1080)' },
+      { name: 'Pamięć', value: '4 GB RAM, 32/64 GB Flash' },
       { name: 'Skaner', value: 'SE4720 Imager 2D' },
-      { name: 'Bateria', value: '4150 mAh' },
-      { name: 'Odporność', value: 'IP67, upadki z 1.5m' },
+      { name: 'Bateria', value: '4150 mAh (standard) / 7000 mAh (extended)' },
+      { name: 'Odporność', value: 'IP67, upadki z 1.5 m, MIL-STD-810G' },
+      { name: 'Łączność', value: 'Wi-Fi 6, Bluetooth 5.0, NFC' },
     ],
-    applications: ['Zarządzanie magazynem', 'Inwentaryzacja', 'Dostawy', 'Obsługa w terenie'],
-    compatibleAccessories: ['bateria-tc52-extended', 'uchwyt-samochodowy-tc52'],
+    applications: ['Zarządzanie magazynem', 'Inwentaryzacja', 'Produkcja', 'Logistyka'],
+    compatibleAccessories: ['zebra-battery-tc52-extended', 'zebra-cradle-tc52'],
     downloads: [
       { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '2.1 MB' },
       { name: 'Instrukcja obsługi', type: 'manual', url: '#', size: '12.5 MB' },
@@ -404,64 +876,180 @@ System Android, potężny procesor i zaawansowane możliwości skanowania czyni�
     createdAt: '2023-01-10',
   },
   {
-    id: 'honeywell-ct60xp',
-    slug: 'honeywell-ct60xp',
-    name: 'Honeywell CT60 XP',
-    shortDescription: 'Terminal mobilny do ekstremalnych warunków',
-    description: `Honeywell CT60 XP to wytrzymały komputer mobilny zaprojektowany do pracy w najtrudniejszych warunkach środowiskowych.
+    id: 'zebra-tc57x',
+    slug: 'zebra-tc57x',
+    name: 'Zebra TC57x',
+    shortDescription: 'Terminal mobilny z LTE/4G dla pracowników terenowych',
+    description: `Zebra TC57x to wersja terminala TC52x z modułem sieci komórkowej 4G LTE dla pracowników działających w terenie.
 
-Klasa odporności IP67/IP65 i możliwość pracy w temperaturach od -20°C do +50°C czynią go idealnym wyborem dla logistyki i przemysłu.`,
+Wszystkie zalety TC52x plus łączność WAN dla pracy poza zasięgiem Wi-Fi. Moduł GPS do śledzenia lokalizacji.
+
+Idealny dla serwisu w terenie, dostaw kurierskich i pracowników mobilnych.`,
     categoryId: 'terminale-mobilne',
-    manufacturerId: 'honeywell',
+    manufacturerId: 'zebra',
     priceFrom: 5290,
-    images: ['/images/products/placeholder.svg'],
-    tags: ['logistyka', 'produkcja', 'outdoor'],
-    availability: 'on-order',
-    isNew: true,
+    images: ['/images/products/zebra-tc57x.jpg'],
+    tags: ['logistyka', 'outdoor', 'produkcja'],
+    availability: 'available',
+    isNew: false,
     isBestseller: false,
     specifications: [
       { name: 'System operacyjny', value: 'Android 11' },
       { name: 'Procesor', value: 'Qualcomm Snapdragon 660' },
-      { name: 'Wyświetlacz', value: '4.7" HD' },
-      { name: 'Pamięć', value: '4GB RAM / 32GB Flash' },
-      { name: 'Skaner', value: 'FlexRange Imager' },
-      { name: 'Odporność', value: 'IP67/IP65, MIL-STD-810G' },
-      { name: 'Temperatura pracy', value: '-20°C do +50°C' },
+      { name: 'Wyświetlacz', value: '5" Full HD (1920x1080)' },
+      { name: 'Pamięć', value: '4 GB RAM, 32/64 GB Flash' },
+      { name: 'Skaner', value: 'SE4720 Imager 2D' },
+      { name: 'Łączność', value: 'Wi-Fi 6, Bluetooth 5.0, 4G LTE, GPS, NFC' },
+      { name: 'Bateria', value: '4150 mAh / 7000 mAh' },
+      { name: 'Odporność', value: 'IP67, upadki z 1.5 m' },
     ],
-    applications: ['Transport i logistyka', 'Magazyn chłodniczy', 'Praca na zewnątrz', 'Przemysł'],
+    applications: ['Dostawy i logistyka', 'Serwis w terenie', 'Praca poza biurem', 'Transport'],
+    compatibleAccessories: ['zebra-battery-tc52-extended', 'zebra-vehicle-cradle-tc5'],
+    downloads: [
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '2.1 MB' },
+    ],
+    createdAt: '2023-01-10',
+  },
+  {
+    id: 'zebra-mc3300x',
+    slug: 'zebra-mc3300x',
+    name: 'Zebra MC3300x',
+    shortDescription: 'Terminal z klawiaturą do intensywnych zastosowań',
+    description: `Zebra MC3300x to wytrzymały terminal mobilny z pełną klawiaturą, zaprojektowany do intensywnych zastosowań magazynowych i produkcyjnych.
+
+Różne warianty klawiatury: numeryczna, alfanumeryczna, obrotowa. Skaner dalekiego zasięgu do kodów z górnych półek.
+
+Następca popularnej serii MC3200. System Android, wsparcie Mobility DNA.`,
+    categoryId: 'terminale-mobilne',
+    manufacturerId: 'zebra',
+    priceFrom: 5890,
+    images: ['/images/products/zebra-mc3300x.jpg'],
+    tags: ['magazyn', 'produkcja', 'logistyka'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'System operacyjny', value: 'Android 10' },
+      { name: 'Procesor', value: 'Qualcomm Snapdragon 660' },
+      { name: 'Wyświetlacz', value: '4" WVGA (800x480)' },
+      { name: 'Pamięć', value: '4 GB RAM, 32 GB Flash' },
+      { name: 'Klawiatura', value: 'Numeryczna / Alfanumeryczna / Obrotowa' },
+      { name: 'Skaner', value: 'SE4770 (standard) / SE4850 (daleki zasięg)' },
+      { name: 'Bateria', value: '5200 mAh / 7000 mAh' },
+      { name: 'Odporność', value: 'IP64, upadki z 1.8 m' },
+    ],
+    applications: ['Magazyn wysokiego składowania', 'Kompletacja', 'Produkcja', 'Cross-docking'],
+    compatibleAccessories: ['zebra-battery-mc33', 'zebra-cradle-mc33'],
+    downloads: [
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.9 MB' },
+    ],
+    createdAt: '2022-10-20',
+  },
+  {
+    id: 'zebra-tc22-tc27',
+    slug: 'zebra-tc22-tc27',
+    name: 'Zebra TC22/TC27',
+    shortDescription: 'Nowa generacja terminali TC - następca TC21/TC26',
+    description: `Zebra TC22 i TC27 to najnowsza generacja ekonomicznych terminali mobilnych, będąca następcą popularnej serii TC21/TC26.
+
+Ulepszony procesor, nowszy system Android i jeszcze lepsza wytrzymałość. TC22 z Wi-Fi, TC27 dodatkowo z 4G LTE.
+
+Idealne dla firm szukających nowoczesnego i ekonomicznego rozwiązania mobilnego.`,
+    categoryId: 'terminale-mobilne',
+    manufacturerId: 'zebra',
+    priceFrom: 3290,
+    images: ['/images/products/zebra-tc22.jpg'],
+    tags: ['retail', 'magazyn', 'logistyka'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'System operacyjny', value: 'Android 13' },
+      { name: 'Procesor', value: 'Qualcomm QCM4490' },
+      { name: 'Wyświetlacz', value: '5.5" HD+ (1440x720)' },
+      { name: 'Pamięć', value: '4 GB RAM, 64 GB Flash' },
+      { name: 'Skaner', value: 'SE4710 Imager 2D' },
+      { name: 'Bateria', value: '3800 mAh (standard)' },
+      { name: 'Odporność', value: 'IP68, upadki z 1.2 m' },
+      { name: 'TC27 dodatkowo', value: '4G LTE, GPS' },
+    ],
+    applications: ['Retail', 'Magazyn', 'Logistyka', 'Serwis w terenie'],
     compatibleAccessories: [],
     downloads: [
       { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.8 MB' },
     ],
-    createdAt: '2024-01-20',
+    createdAt: '2024-06-01',
   },
+]
 
-  // RFID
+// ============================================
+// RFID
+// ============================================
+
+const rfidProducts: Product[] = [
   {
-    id: 'zebra-fx9600',
-    slug: 'zebra-fx9600',
-    name: 'Zebra FX9600',
-    shortDescription: 'Stacjonarny czytnik RFID o wysokiej wydajności',
-    description: `Zebra FX9600 to stacjonarny czytnik RFID UHF oferujący najwyższą wydajność odczytu i elastyczność konfiguracji.
+    id: 'zebra-fx7500',
+    slug: 'zebra-fx7500',
+    name: 'Zebra FX7500',
+    shortDescription: 'Stacjonarny czytnik RFID UHF do 4 anten',
+    description: `Zebra FX7500 to stacjonarny czytnik RFID UHF oferujący wysoką wydajność odczytu przy kompaktowych wymiarach.
 
-Obsługa do 32 anten i zaawansowane filtrowanie danych sprawiają, że jest idealny do rozbudowanych instalacji RFID.`,
+Obsługa do 4 anten na porcie, możliwość kaskadowego łączenia czytników. System operacyjny Linux dla elastycznej integracji.
+
+Idealny do bramek RFID, punktów kontrolnych i mniejszych instalacji.`,
     categoryId: 'rfid',
     manufacturerId: 'zebra',
-    priceFrom: 8900,
-    images: ['/images/products/placeholder.svg'],
-    tags: ['magazyn', 'logistyka', 'produkcja'],
+    priceFrom: 5900,
+    images: ['/images/products/zebra-fx7500.jpg'],
+    tags: ['magazyn', 'logistyka', 'retail'],
     availability: 'available',
     isNew: false,
     isBestseller: false,
     specifications: [
       { name: 'Standard', value: 'UHF RFID (EPC Gen2v2)' },
+      { name: 'Porty antenowe', value: '4' },
+      { name: 'Moc wyjściowa', value: 'do +31.5 dBm' },
+      { name: 'Interfejsy', value: 'Ethernet, USB, GPIO' },
+      { name: 'System operacyjny', value: 'Linux' },
+      { name: 'Oprogramowanie', value: '123RFID Desktop' },
+      { name: 'Zasilanie', value: 'PoE lub zasilacz' },
+    ],
+    applications: ['Bramki RFID', 'Punkty kontrolne', 'Retail RFID', 'Zarządzanie aktywami'],
+    compatibleAccessories: ['zebra-antenna-an440'],
+    downloads: [
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.2 MB' },
+    ],
+    createdAt: '2022-03-15',
+  },
+  {
+    id: 'zebra-fx9600',
+    slug: 'zebra-fx9600',
+    name: 'Zebra FX9600',
+    shortDescription: 'Wydajny czytnik RFID do rozbudowanych instalacji',
+    description: `Zebra FX9600 to stacjonarny czytnik RFID UHF oferujący najwyższą wydajność odczytu i elastyczność konfiguracji.
+
+Obsługa do 32 anten (z hubem), zaawansowane filtrowanie danych i prędkość odczytu ponad 1100 tagów na sekundę.
+
+Idealny do rozbudowanych instalacji RFID w magazynach i centrach dystrybucji.`,
+    categoryId: 'rfid',
+    manufacturerId: 'zebra',
+    priceFrom: 8900,
+    images: ['/images/products/zebra-fx9600.jpg'],
+    tags: ['magazyn', 'logistyka', 'produkcja'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: true,
+    specifications: [
+      { name: 'Standard', value: 'UHF RFID (EPC Gen2v2)' },
       { name: 'Porty antenowe', value: '4 lub 8 (do 32 z hubem)' },
       { name: 'Moc wyjściowa', value: 'do +33 dBm' },
       { name: 'Interfejsy', value: 'Ethernet, USB, GPIO' },
+      { name: 'System operacyjny', value: 'Linux' },
       { name: 'Prędkość odczytu', value: 'ponad 1100 tagów/s' },
+      { name: 'Oprogramowanie', value: '123RFID Desktop' },
     ],
     applications: ['Bramki RFID', 'Zarządzanie magazynem', 'Kontrola dostępu', 'Śledzenie aktywów'],
-    compatibleAccessories: ['antena-rfid-an440', 'antena-rfid-an480'],
+    compatibleAccessories: ['zebra-antenna-an440', 'zebra-antenna-an480'],
     downloads: [
       { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.4 MB' },
       { name: 'Instrukcja integracji', type: 'manual', url: '#', size: '6.2 MB' },
@@ -471,47 +1059,93 @@ Obsługa do 32 anten i zaawansowane filtrowanie danych sprawiają, że jest idea
   {
     id: 'zebra-rfd40',
     slug: 'zebra-rfd40',
-    name: 'Zebra RFD40 RFID Sled',
-    shortDescription: 'Przystawka RFID do smartfonów i terminali',
+    name: 'Zebra RFD40',
+    shortDescription: 'Mobilna przystawka RFID do smartfonów i terminali',
     description: `Zebra RFD40 to uniwersalna przystawka RFID, która zamienia kompatybilny smartfon lub terminal mobilny w wydajny czytnik RFID UHF.
 
-Lekka konstrukcja i ergonomiczny uchwyt zapewniają komfort podczas długotrwałej pracy.`,
+Lekka konstrukcja i ergonomiczny uchwyt zapewniają komfort podczas długotrwałej pracy. Zasięg odczytu do 6 metrów.
+
+Komunikacja Bluetooth i USB-C, kompatybilność z terminalami TC52x, TC57x i wybranymi smartfonami.`,
     categoryId: 'rfid',
     manufacturerId: 'zebra',
     priceFrom: 3490,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/zebra-rfd40.jpg'],
     tags: ['magazyn', 'retail', 'logistyka'],
     availability: 'available',
     isNew: true,
-    isBestseller: false,
+    isBestseller: true,
     specifications: [
       { name: 'Standard', value: 'UHF RFID (EPC Gen2v2)' },
       { name: 'Zasięg odczytu', value: 'do 6 m' },
-      { name: 'Łączność', value: 'Bluetooth, USB-C' },
+      { name: 'Łączność', value: 'Bluetooth 5.0, USB-C' },
       { name: 'Bateria', value: '2280 mAh' },
-      { name: 'Kompatybilność', value: 'TC52x, TC57, smartfony' },
+      { name: 'System operacyjny', value: 'ThreadX RTOS' },
+      { name: 'Kompatybilność', value: 'TC52x, TC57x, smartfony' },
+      { name: 'Waga', value: '338 g z baterią' },
+      { name: 'Odporność', value: 'IP52, upadki z 1.2 m' },
     ],
-    applications: ['Inwentaryzacja RFID', 'Lokalizacja produktów', 'Zarządzanie aktywami'],
-    compatibleAccessories: ['tc52x'],
+    applications: ['Inwentaryzacja RFID', 'Lokalizacja produktów', 'Zarządzanie aktywami', 'Retail'],
+    compatibleAccessories: ['zebra-tc52x', 'zebra-tc57x'],
     downloads: [
       { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.1 MB' },
     ],
     createdAt: '2024-02-10',
   },
-
-  // Etykiety i taśmy
   {
-    id: 'tasma-woskowa-110',
-    slug: 'tasma-woskowa-110mm',
-    name: 'Taśma woskowa 110mm x 300m',
-    shortDescription: 'Ekonomiczna taśma termotransferowa do etykiet papierowych',
-    description: `Taśma woskowa o szerokości 110mm to ekonomiczne rozwiązanie do druku etykiet na papierze powlekanym i niepowlekanym.
+    id: 'zebra-rfd90',
+    slug: 'zebra-rfd90',
+    name: 'Zebra RFD90',
+    shortDescription: 'Kompaktowa przystawka RFID ultra-wytrzymała',
+    description: `Zebra RFD90 to ultra-wytrzymała przystawka RFID UHF do terminali mobilnych Zebra.
 
-Idealna do etykiet wysyłkowych, adresowych i magazynowych przy średnich wymaganiach jakościowych.`,
-    categoryId: 'etykiety-tasmy',
+Zaprojektowana do intensywnego użytkowania w trudnych warunkach. Praca w ekstremalnych temperaturach i wysokiej wilgotności.
+
+Integracja z terminalami TC52x, TC57x, MC3300x dla kompleksowych rozwiązań RFID.`,
+    categoryId: 'rfid',
+    manufacturerId: 'zebra',
+    priceFrom: 4290,
+    images: ['/images/products/zebra-rfd90.jpg'],
+    tags: ['magazyn', 'produkcja', 'logistyka'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Standard', value: 'UHF RFID (EPC Gen2v2)' },
+      { name: 'Zasięg odczytu', value: 'do 9 m' },
+      { name: 'Łączność', value: 'Bluetooth, USB' },
+      { name: 'System operacyjny', value: 'ThreadX RTOS' },
+      { name: 'Bateria', value: 'PowerPrecision+' },
+      { name: 'Odporność', value: 'IP65, MIL-STD-810G' },
+      { name: 'Temperatura pracy', value: '-20°C do +50°C' },
+    ],
+    applications: ['Magazyn RFID', 'Produkcja', 'Inwentaryzacja', 'Zarządzanie aktywami'],
+    compatibleAccessories: ['zebra-tc52x', 'zebra-mc3300x'],
+    downloads: [
+      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.2 MB' },
+    ],
+    createdAt: '2024-03-01',
+  },
+]
+
+// ============================================
+// AKCESORIA
+// ============================================
+
+const accessories: Product[] = [
+  {
+    id: 'zebra-ribbon-wax-110',
+    slug: 'zebra-tasma-woskowa-110mm',
+    name: 'Taśma woskowa Zebra 110mm x 300m',
+    shortDescription: 'Ekonomiczna taśma termotransferowa do etykiet papierowych',
+    description: `Oryginalna taśma woskowa Zebra o szerokości 110mm do druku na etykietach papierowych powlekanych i niepowlekanych.
+
+Idealna do etykiet wysyłkowych, adresowych i magazynowych. Ekonomiczne rozwiązanie dla standardowych zastosowań.
+
+Gwarantowana kompatybilność z drukarkami Zebra.`,
+    categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 45,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/zebra-ribbon-wax.jpg'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -520,28 +1154,56 @@ Idealna do etykiet wysyłkowych, adresowych i magazynowych przy średnich wymaga
       { name: 'Typ taśmy', value: 'Woskowa (wax)' },
       { name: 'Szerokość', value: '110 mm' },
       { name: 'Długość', value: '300 m' },
-      { name: 'Nawój', value: '1" (25mm)' },
+      { name: 'Nawój', value: '1" (25 mm)' },
       { name: 'Strona barwiąca', value: 'OUT (zewnętrzna)' },
     ],
     applications: ['Etykiety papierowe', 'Etykiety wysyłkowe', 'Etykiety magazynowe'],
     compatibleAccessories: [],
-    downloads: [
-      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '0.3 MB' },
-    ],
+    downloads: [],
     createdAt: '2022-01-01',
   },
   {
-    id: 'etykiety-termo-100x50',
-    slug: 'etykiety-termiczne-100x50',
-    name: 'Etykiety termiczne 100x50mm (1000 szt.)',
-    shortDescription: 'Etykiety termiczne TOP do druku bez taśmy',
-    description: `Etykiety termiczne o wymiarach 100x50mm, przeznaczone do druku bezpośredniego w drukarkach termicznych.
+    id: 'zebra-ribbon-resin-110',
+    slug: 'zebra-tasma-zywiczna-110mm',
+    name: 'Taśma żywiczna Zebra 110mm x 300m',
+    shortDescription: 'Taśma do trwałych oznaczeń na materiale syntetycznym',
+    description: `Taśma żywiczna Zebra do druku na etykietach syntetycznych (PP, PE, PET) wymagających wysokiej trwałości.
 
-Wysoka jakość druku i dobra odporność na ścieranie. Idealne do etykiet wysyłkowych i magazynowych.`,
-    categoryId: 'etykiety-tasmy',
+Odporna na ścieranie, chemikalia i wilgoć. Idealna do oznaczeń produktów, etykiet laboratoryjnych i przemysłowych.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 89,
+    images: ['/images/products/zebra-ribbon-resin.jpg'],
+    tags: ['produkcja', 'healthcare'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Typ taśmy', value: 'Żywiczna (resin)' },
+      { name: 'Szerokość', value: '110 mm' },
+      { name: 'Długość', value: '300 m' },
+      { name: 'Nawój', value: '1" (25 mm)' },
+      { name: 'Odporność', value: 'Ścieranie, chemikalia, wilgoć' },
+    ],
+    applications: ['Etykiety syntetyczne', 'Oznaczenia trwałe', 'Healthcare', 'Przemysł'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2022-01-01',
+  },
+  {
+    id: 'zebra-labels-100x50',
+    slug: 'zebra-etykiety-termiczne-100x50',
+    name: 'Etykiety termiczne 100x50mm (1000 szt.)',
+    shortDescription: 'Etykiety termiczne TOP do druku direct thermal',
+    description: `Etykiety termiczne Zebra o wymiarach 100x50mm do druku bezpośredniego bez użycia taśmy barwiącej.
+
+Wysoka jakość druku i dobra odporność na ścieranie. Perforacja między etykietami dla łatwego odrywania.
+
+Idealne do etykiet wysyłkowych i magazynowych o średnim czasie życia.`,
+    categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 38,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/zebra-labels.jpg'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -558,47 +1220,77 @@ Wysoka jakość druku i dobra odporność na ścieranie. Idealne do etykiet wysy
     downloads: [],
     createdAt: '2022-01-01',
   },
-
-  // Akcesoria
   {
-    id: 'bateria-tc52-extended',
-    slug: 'bateria-zebra-tc52-extended',
-    name: 'Bateria rozszerzona Zebra TC52 (5200mAh)',
-    shortDescription: 'Bateria o zwiększonej pojemności do terminali TC52/TC57',
-    description: `Oryginalna bateria Zebra o pojemności 5200mAh, zapewniająca znacznie dłuższy czas pracy terminali TC52 i TC57.
+    id: 'zebra-battery-tc52-extended',
+    slug: 'zebra-bateria-tc52-extended',
+    name: 'Bateria rozszerzona Zebra TC52/TC57 (7000mAh)',
+    shortDescription: 'Bateria PowerPrecision+ o zwiększonej pojemności',
+    description: `Oryginalna bateria Zebra PowerPrecision+ o pojemności 7000mAh do terminali TC52 i TC57.
 
-Idealna dla użytkowników pracujących na długich zmianach bez dostępu do ładowarki.`,
+Znacznie dłuższy czas pracy dla użytkowników pracujących na długich zmianach. Inteligentne zarządzanie energią.
+
+Wskaźnik stanu naładowania i pozostałego czasu pracy.`,
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
-    priceFrom: 390,
-    images: ['/images/products/placeholder.svg'],
+    priceFrom: 490,
+    images: ['/images/products/zebra-battery-tc52.jpg'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
     isBestseller: false,
     specifications: [
-      { name: 'Pojemność', value: '5200 mAh' },
+      { name: 'Pojemność', value: '7000 mAh' },
       { name: 'Napięcie', value: '3.85V' },
-      { name: 'Kompatybilność', value: 'TC52, TC52x, TC57' },
-      { name: 'Typ', value: 'Li-Ion PowerPrecision+' },
+      { name: 'Technologia', value: 'Li-Ion PowerPrecision+' },
+      { name: 'Kompatybilność', value: 'TC52, TC52x, TC57, TC57x' },
+      { name: 'Funkcje', value: 'Wskaźnik stanu, diagnostyka' },
     ],
     applications: ['Praca na długich zmianach', 'Praca w terenie'],
-    compatibleAccessories: ['tc52x'],
+    compatibleAccessories: ['zebra-tc52x', 'zebra-tc57x'],
     downloads: [],
     createdAt: '2023-02-01',
   },
   {
-    id: 'podstawka-ds22xx',
-    slug: 'podstawka-zebra-ds22xx',
-    name: 'Podstawka do skanerów Zebra DS22xx',
-    shortDescription: 'Ergonomiczna podstawka hands-free do skanerów serii DS22xx',
-    description: `Podstawka umożliwia pracę ze skanerem w trybie hands-free, zapewniając wygodną prezentację produktów do skanowania.
+    id: 'zebra-cradle-tc52',
+    slug: 'zebra-stacja-dokujaca-tc52',
+    name: 'Stacja dokująca Zebra TC52/TC57 (5-stanowiskowa)',
+    shortDescription: '5-portowa stacja ładowania z Ethernet',
+    description: `Stacja dokująca Zebra do jednoczesnego ładowania 5 terminali TC52/TC57 z funkcją komunikacji Ethernet.
 
-Stabilna konstrukcja i możliwość regulacji kąta nachylenia.`,
+Idealna do stanowisk dystrybucji urządzeń i nocnego ładowania floty terminali.
+
+Możliwość łączenia wielu stacji dla dużych instalacji.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 1890,
+    images: ['/images/products/zebra-cradle-tc52.jpg'],
+    tags: ['magazyn'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Liczba stanowisk', value: '5' },
+      { name: 'Kompatybilność', value: 'TC52, TC52x, TC57, TC57x' },
+      { name: 'Funkcje', value: 'Ładowanie, Ethernet' },
+      { name: 'Zasilanie', value: 'Zasilacz w zestawie' },
+    ],
+    applications: ['Ładowanie floty', 'Dystrybucja urządzeń', 'Stanowisko IT'],
+    compatibleAccessories: ['zebra-tc52x', 'zebra-tc57x'],
+    downloads: [],
+    createdAt: '2023-03-01',
+  },
+  {
+    id: 'zebra-stand-ds22',
+    slug: 'zebra-podstawka-ds22',
+    name: 'Podstawka Zebra do skanerów DS22xx',
+    shortDescription: 'Ergonomiczna podstawka hands-free',
+    description: `Podstawka Zebra umożliwiająca pracę ze skanerem DS2208/DS2278 w trybie hands-free.
+
+Stabilna konstrukcja i możliwość regulacji kąta nachylenia. Idealna do stanowisk kasowych.`,
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 89,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/zebra-stand-ds22.jpg'],
     tags: ['retail'],
     availability: 'available',
     isNew: false,
@@ -610,10 +1302,80 @@ Stabilna konstrukcja i możliwość regulacji kąta nachylenia.`,
       { name: 'Materiał', value: 'Tworzywo ABS' },
     ],
     applications: ['Stanowisko kasowe', 'Punkt obsługi klienta'],
-    compatibleAccessories: ['ds2208'],
+    compatibleAccessories: ['zebra-ds2208', 'zebra-ds2278'],
     downloads: [],
     createdAt: '2022-06-01',
   },
+  {
+    id: 'zebra-charger-4slot',
+    slug: 'zebra-ladowarka-4-baterie',
+    name: 'Ładowarka 4-stanowiskowa do baterii TC/MC',
+    shortDescription: 'Ładowarka do 4 baterii terminali Zebra',
+    description: `Ładowarka Zebra do jednoczesnego ładowania 4 baterii terminali serii TC i MC.
+
+Indywidualne wskaźniki LED dla każdego stanowiska. Szybkie ładowanie i diagnostyka baterii.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 590,
+    images: ['/images/products/zebra-charger-4slot.jpg'],
+    tags: ['magazyn'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Liczba stanowisk', value: '4 baterie' },
+      { name: 'Kompatybilność', value: 'TC52, TC57, MC3300 i inne' },
+      { name: 'Wskaźniki', value: 'LED indywidualne' },
+      { name: 'Zasilanie', value: 'Zasilacz w zestawie' },
+    ],
+    applications: ['Ładowanie baterii zapasowych', 'Wymiana na gorąco'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2022-08-01',
+  },
+  {
+    id: 'zebra-antenna-an440',
+    slug: 'zebra-antena-rfid-an440',
+    name: 'Antena RFID Zebra AN440',
+    shortDescription: 'Antena RFID UHF do czytników stacjonarnych',
+    description: `Antena RFID Zebra AN440 do czytników stacjonarnych FX7500 i FX9600.
+
+Szeroki kąt odczytu idealny do bramek i punktów kontrolnych. Wytrzymała konstrukcja przemysłowa.`,
+    categoryId: 'rfid',
+    manufacturerId: 'zebra',
+    priceFrom: 890,
+    images: ['/images/products/zebra-antenna-an440.jpg'],
+    tags: ['magazyn', 'logistyka'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Typ', value: 'Antena RFID UHF' },
+      { name: 'Zysk', value: '6 dBiC' },
+      { name: 'Kąt odczytu', value: 'Szeroki' },
+      { name: 'Kompatybilność', value: 'FX7500, FX9600' },
+      { name: 'Złącze', value: 'RP-TNC' },
+    ],
+    applications: ['Bramki RFID', 'Punkty kontrolne', 'Stacjonarne odczyty'],
+    compatibleAccessories: ['zebra-fx7500', 'zebra-fx9600'],
+    downloads: [],
+    createdAt: '2022-04-01',
+  },
+]
+
+// ============================================
+// EXPORT - WSZYSTKIE PRODUKTY
+// ============================================
+
+export const products: Product[] = [
+  ...desktopPrinters,
+  ...industrialLightPrinters,
+  ...industrialPrinters,
+  ...mobilePrinters,
+  ...scanners,
+  ...mobileComputers,
+  ...rfidProducts,
+  ...accessories,
 ]
 
 // Helper do pobrania produktu po slug
@@ -650,7 +1412,8 @@ export function filterProducts(params: {
     const searchLower = params.search.toLowerCase()
     filtered = filtered.filter(p =>
       p.name.toLowerCase().includes(searchLower) ||
-      p.shortDescription.toLowerCase().includes(searchLower)
+      p.shortDescription.toLowerCase().includes(searchLower) ||
+      p.description.toLowerCase().includes(searchLower)
     )
   }
 
@@ -695,4 +1458,14 @@ export function getCategoryById(id: string): Category | undefined {
 // Helper do pobrania producenta po ID
 export function getManufacturerById(id: string): Manufacturer | undefined {
   return manufacturers.find(m => m.id === id)
+}
+
+// Helper do pobrania produktów po kategorii
+export function getProductsByCategory(categoryId: string): Product[] {
+  return products.filter(p => p.categoryId === categoryId)
+}
+
+// Helper do zliczenia produktów w kategorii
+export function countProductsInCategory(categoryId: string): number {
+  return products.filter(p => p.categoryId === categoryId).length
 }
