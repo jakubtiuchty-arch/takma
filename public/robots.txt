@@ -1,0 +1,5 @@
+# robots.txt for TAKMA
+User-agent: *
+Allow: /
+
+Sitemap: https://takma.pl/sitemap.xml

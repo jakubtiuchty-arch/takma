@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     title: 'TAKMA - Urządzenia AutoID',
     description: 'Profesjonalne rozwiązania AutoID dla Twojej firmy',
   },
+  icons: {
+    icon: '/favicon.svg',
+  },
 }
 
 export default function RootLayout({
