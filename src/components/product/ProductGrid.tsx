@@ -1,0 +1,57 @@
+'use client'
+
+import { Product } from '@/data/products'
+import ProductCard from './ProductCard'
+import clsx from 'clsx'
+
+interface ProductGridProps {
+  products: Product[]
+  variant?: 'grid' | 'list'
+  columns?: 2 | 3 | 4
+}
+
+export default function ProductGrid({
+  products,
+  variant = 'grid',
+  columns = 4,
+}: ProductGridProps) {
+  if (products.length === 0) {
+    return (
+      <div className="text-center py-16">
+        <div className="w-16 h-16 bg-gray-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+          <span className="text-3xl">🔍</span>
+        </div>
+        <h3 className="text-lg font-medium text-gray-900 mb-2">
+          Brak produktów
+        </h3>
+        <p className="text-gray-500">
+          Spróbuj zmienić kryteria wyszukiwania lub filtry
+        </p>
+      </div>
+    )
+  }
+
+  if (variant === 'list') {
+    return (
+      <div className="space-y-4">
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} variant="list" />
+        ))}
+      </div>
+    )
+  }
+
+  const gridCols = {
+    2: 'grid-cols-1 sm:grid-cols-2',
+    3: 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3',
+    4: 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4',
+  }
+
+  return (
+    <div className={clsx('grid gap-6', gridCols[columns])}>
+      {products.map((product) => (
+        <ProductCard key={product.id} product={product} variant="grid" />
+      ))}
+    </div>
+  )
+}
