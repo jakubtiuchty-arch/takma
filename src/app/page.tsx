@@ -209,6 +209,34 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Banner 1 - Serwis Zebry */}
+      <section className="py-6 bg-gradient-to-r from-primary-600 to-primary-700">
+        <div className="container-main">
+          <a
+            href="https://serwis-zebry.pl"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col md:flex-row items-center justify-between gap-4 text-white group"
+          >
+            <div className="flex items-center gap-4">
+              <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center">
+                <WrenchIcon size={28} />
+              </div>
+              <div>
+                <div className="text-xl font-bold">Serwis-Zebry.pl</div>
+                <div className="text-primary-100">
+                  Profesjonalna naprawa i serwis urządzeń Zebra
+                </div>
+              </div>
+            </div>
+            <div className="flex items-center gap-2 px-5 py-2.5 bg-white text-primary-600 font-semibold rounded-lg group-hover:bg-primary-50 transition-colors">
+              Sprawdź ofertę serwisu
+              <ArrowRightIcon size={18} />
+            </div>
+          </a>
+        </div>
+      </section>
+
       {/* Trust Bar */}
       <section className="py-8 bg-gray-900">
         <div className="container-main">
@@ -305,6 +333,36 @@ export default function HomePage() {
               <p className="text-gray-500 text-sm">Pomoc w wyborze</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Banner 2 - Serwis Zebry (dark variant) */}
+      <section className="py-8 bg-gray-800">
+        <div className="container-main">
+          <a
+            href="https://serwis-zebry.pl"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col lg:flex-row items-center justify-between gap-6 group"
+          >
+            <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+              <div className="w-16 h-16 bg-primary-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                <WrenchIcon size={32} className="text-white" />
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-white mb-1">
+                  Twoja drukarka Zebra wymaga naprawy?
+                </div>
+                <div className="text-gray-400">
+                  Autoryzowany serwis z 20-letnim doświadczeniem. Naprawy gwarancyjne i pogwarancyjne.
+                </div>
+              </div>
+            </div>
+            <div className="flex items-center gap-2 px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg group-hover:bg-primary-500 transition-colors flex-shrink-0">
+              Serwis-Zebry.pl
+              <ArrowRightIcon size={18} />
+            </div>
+          </a>
         </div>
       </section>
 
