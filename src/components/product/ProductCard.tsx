@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react'
 
 interface ProductCardProps {
   product: Product
-  variant?: 'grid' | 'list'
+  variant?: 'grid' | 'list' | 'compact'
 }
 
 export default function ProductCard({ product, variant = 'grid' }: ProductCardProps) {
@@ -42,6 +42,69 @@ export default function ProductCard({ product, variant = 'grid' }: ProductCardPr
   }
 
   const availability = availabilityConfig[product.availability]
+
+  // Compact variant for homepage bestsellers
+  if (variant === 'compact') {
+    return (
+      <article className="card group overflow-hidden flex flex-col h-full">
+        {/* Image */}
+        <Link
+          href={`/produkt/${product.slug}`}
+          className="relative aspect-[4/3] bg-gray-100 flex items-center justify-center overflow-hidden"
+        >
+          <span className="text-gray-300 text-sm group-hover:text-primary-500 transition-colors">
+            IMG
+          </span>
+
+          {/* Badges overlay */}
+          {(product.isNew || product.isBestseller) && (
+            <div className="absolute top-2 left-2 flex gap-1">
+              {product.isNew && (
+                <Badge variant="primary" size="sm">
+                  Nowość
+                </Badge>
+              )}
+              {product.isBestseller && (
+                <Badge variant="info" size="sm">
+                  Hit
+                </Badge>
+              )}
+            </div>
+          )}
+        </Link>
+
+        {/* Content */}
+        <div className="p-3 flex flex-col flex-1">
+          <div className="flex-1">
+            {manufacturer && (
+              <span className="text-xs text-gray-500 uppercase tracking-wide">
+                {manufacturer.name}
+              </span>
+            )}
+            <Link href={`/produkt/${product.slug}`}>
+              <h3 className="font-medium text-sm text-gray-900 hover:text-primary-600 transition-colors mt-0.5 line-clamp-2">
+                {product.name}
+              </h3>
+            </Link>
+          </div>
+
+          {/* Price */}
+          <div className="mt-2 pt-2 border-t border-gray-100">
+            {product.priceFrom ? (
+              <div className="flex items-baseline gap-1">
+                <span className="text-xs text-gray-500">od</span>
+                <span className="font-bold text-gray-900">
+                  {product.priceFrom.toLocaleString('pl-PL')} zł
+                </span>
+              </div>
+            ) : (
+              <span className="text-xs text-gray-500">Zapytaj o cenę</span>
+            )}
+          </div>
+        </div>
+      </article>
+    )
+  }
 
   if (variant === 'list') {
     return (
