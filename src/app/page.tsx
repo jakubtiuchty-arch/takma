@@ -41,7 +41,7 @@ export default function HomePage() {
           <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary-600/10 to-transparent" />
         </div>
 
-        <div className="container-main relative py-12 lg:py-16">
+        <div className="container-main relative py-8 lg:py-10">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary-600/20 border border-primary-500/30 rounded-full text-sm mb-5">
               <span className="w-1.5 h-1.5 bg-primary-400 rounded-full" />
@@ -97,7 +97,7 @@ export default function HomePage() {
       </section>
 
       {/* Categories Section - compact */}
-      <section className="py-10 lg:py-12 border-b border-gray-100">
+      <section className="py-6 lg:py-8 border-b border-gray-100">
         <div className="container-main">
           <div className="flex flex-wrap justify-center gap-2 lg:gap-3">
             {categories.map((category) => (
@@ -119,11 +119,11 @@ export default function HomePage() {
       </section>
 
       {/* Featured Product + Bestsellers */}
-      <section className="py-12 lg:py-16">
+      <section className="py-8 lg:py-10">
         <div className="container-main">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
             {/* Featured Product - Large */}
-            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 lg:p-8">
+            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-5 lg:p-6">
               <div className="flex items-center gap-2 mb-4">
                 <span className="px-2.5 py-1 bg-primary-600 text-white text-xs font-semibold rounded-full">
                   POLECAMY
@@ -136,34 +136,34 @@ export default function HomePage() {
               </div>
 
               {/* Product image placeholder */}
-              <div className="aspect-square max-w-xs mx-auto mb-6 bg-white rounded-xl flex items-center justify-center">
+              <div className="aspect-square max-w-[200px] mx-auto mb-4 bg-white rounded-lg flex items-center justify-center">
                 <div className="text-gray-300">
-                  <PrinterIcon size={120} />
+                  <PrinterIcon size={80} />
                 </div>
               </div>
 
-              <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">
+              <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-1">
                 {featuredProduct.name}
               </h2>
 
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 text-sm mb-3">
                 {featuredProduct.shortDescription}
               </p>
 
               {/* Key specs */}
-              <div className="grid grid-cols-2 gap-3 mb-6">
+              <div className="grid grid-cols-2 gap-2 mb-4">
                 {featuredProduct.specifications.slice(0, 4).map((spec, i) => (
-                  <div key={i} className="bg-white rounded-lg p-3">
-                    <div className="text-xs text-gray-500 mb-0.5">{spec.name}</div>
+                  <div key={i} className="bg-white rounded-lg p-2">
+                    <div className="text-xs text-gray-500">{spec.name}</div>
                     <div className="text-sm font-semibold text-gray-900">{spec.value}</div>
                   </div>
                 ))}
               </div>
 
               {featuredProduct.priceFrom && (
-                <div className="mb-4">
+                <div className="mb-3">
                   <span className="text-sm text-gray-500">od </span>
-                  <span className="text-2xl font-bold text-gray-900">
+                  <span className="text-xl font-bold text-gray-900">
                     {featuredProduct.priceFrom.toLocaleString('pl-PL')} zł
                   </span>
                   <span className="text-sm text-gray-500"> netto</span>
@@ -210,7 +210,7 @@ export default function HomePage() {
       </section>
 
       {/* Banner 1 - Serwis Zebry */}
-      <section className="py-6 bg-gradient-to-r from-primary-600 to-primary-700">
+      <section className="py-4 bg-gradient-to-r from-primary-600 to-primary-700">
         <div className="container-main">
           <a
             href="https://serwis-zebry.pl"
@@ -238,7 +238,7 @@ export default function HomePage() {
       </section>
 
       {/* Trust Bar */}
-      <section className="py-8 bg-gray-900">
+      <section className="py-5 bg-gray-900">
         <div className="container-main">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
@@ -262,10 +262,10 @@ export default function HomePage() {
       </section>
 
       {/* More Products by Category */}
-      <section className="py-12 lg:py-16 bg-gray-50">
+      <section className="py-8 lg:py-10 bg-gray-50">
         <div className="container-main">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3">
+          <div className="text-center mb-6">
+            <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">
               Przeglądaj według kategorii
             </h2>
             <p className="text-gray-600">
@@ -278,7 +278,7 @@ export default function HomePage() {
               <Link
                 key={category.id}
                 href={`/katalog?kategoria=${category.slug}`}
-                className="group bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-primary-200"
+                className="group bg-white rounded-xl p-4 hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-primary-200"
               >
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors flex-shrink-0">
@@ -301,9 +301,9 @@ export default function HomePage() {
       </section>
 
       {/* Why TAKMA - Compact */}
-      <section className="py-12 lg:py-16">
+      <section className="py-8 lg:py-10">
         <div className="container-main">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="w-12 h-12 mx-auto mb-3 bg-primary-50 rounded-xl flex items-center justify-center text-primary-600">
                 <UserGroupIcon size={24} />
@@ -337,7 +337,7 @@ export default function HomePage() {
       </section>
 
       {/* Banner 2 - Serwis Zebry (dark variant) */}
-      <section className="py-8 bg-gray-800">
+      <section className="py-5 bg-gray-800">
         <div className="container-main">
           <a
             href="https://serwis-zebry.pl"
@@ -345,12 +345,12 @@ export default function HomePage() {
             rel="noopener noreferrer"
             className="flex flex-col lg:flex-row items-center justify-between gap-6 group"
           >
-            <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
-              <div className="w-16 h-16 bg-primary-600 rounded-2xl flex items-center justify-center flex-shrink-0">
-                <WrenchIcon size={32} className="text-white" />
+            <div className="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left">
+              <div className="w-12 h-12 bg-primary-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                <WrenchIcon size={24} className="text-white" />
               </div>
               <div>
-                <div className="text-2xl font-bold text-white mb-1">
+                <div className="text-lg font-bold text-white">
                   Twoja drukarka Zebra wymaga naprawy?
                 </div>
                 <div className="text-gray-400">
@@ -358,21 +358,21 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div className="flex items-center gap-2 px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg group-hover:bg-primary-500 transition-colors flex-shrink-0">
+            <div className="flex items-center gap-2 px-4 py-2 bg-primary-600 text-white text-sm font-semibold rounded-lg group-hover:bg-primary-500 transition-colors flex-shrink-0">
               Serwis-Zebry.pl
-              <ArrowRightIcon size={18} />
+              <ArrowRightIcon size={16} />
             </div>
           </a>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 lg:py-16 bg-gray-900 text-white">
+      <section className="py-8 lg:py-10 bg-gray-900 text-white">
         <div className="container-main text-center">
-          <h2 className="text-2xl lg:text-3xl font-bold mb-3">
+          <h2 className="text-xl lg:text-2xl font-bold mb-2">
             Potrzebujesz pomocy w wyborze?
           </h2>
-          <p className="text-gray-400 mb-6 max-w-xl mx-auto">
+          <p className="text-gray-400 text-sm mb-4 max-w-xl mx-auto">
             Skontaktuj się z nami - doradzimy i przygotujemy indywidualną ofertę.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
