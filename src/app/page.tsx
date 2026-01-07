@@ -135,52 +135,59 @@ export default function HomePage() {
                 )}
               </div>
 
-              {/* Product image placeholder */}
-              <div className="aspect-square max-w-[200px] mx-auto mb-4 bg-white rounded-lg flex items-center justify-center">
-                <div className="text-gray-300">
-                  <PrinterIcon size={80} />
-                </div>
-              </div>
-
-              <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-1">
-                {featuredProduct.name}
-              </h2>
-
-              <p className="text-gray-600 text-sm mb-3">
-                {featuredProduct.shortDescription}
-              </p>
-
-              {/* Key specs */}
-              <div className="grid grid-cols-2 gap-2 mb-4">
-                {featuredProduct.specifications.slice(0, 4).map((spec, i) => (
-                  <div key={i} className="bg-white rounded-lg p-2">
-                    <div className="text-xs text-gray-500">{spec.name}</div>
-                    <div className="text-sm font-semibold text-gray-900">{spec.value}</div>
+              <div className="flex flex-col sm:flex-row gap-5">
+                {/* Product image */}
+                <div className="w-full sm:w-40 lg:w-48 flex-shrink-0">
+                  <div className="aspect-square bg-white rounded-lg flex items-center justify-center">
+                    <PrinterIcon size={80} className="text-gray-300" />
                   </div>
-                ))}
-              </div>
-
-              {featuredProduct.priceFrom && (
-                <div className="mb-3">
-                  <span className="text-sm text-gray-500">od </span>
-                  <span className="text-xl font-bold text-gray-900">
-                    {featuredProduct.priceFrom.toLocaleString('pl-PL')} zł
-                  </span>
-                  <span className="text-sm text-gray-500"> netto</span>
                 </div>
-              )}
 
-              <div className="flex gap-3">
-                <Link href={`/produkt/${featuredProduct.slug}`} className="flex-1">
-                  <Button className="w-full bg-primary-600 hover:bg-primary-700 text-white">
-                    Zobacz szczegóły
-                  </Button>
-                </Link>
-                <Link href={`/zapytanie?produkt=${featuredProduct.id}`}>
-                  <Button variant="secondary" className="border-gray-300">
-                    Zapytaj o cenę
-                  </Button>
-                </Link>
+                {/* Product info */}
+                <div className="flex-1 flex flex-col">
+                  <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-1">
+                    {featuredProduct.name}
+                  </h2>
+
+                  <p className="text-gray-600 text-sm mb-3">
+                    {featuredProduct.shortDescription}
+                  </p>
+
+                  {/* Key specs */}
+                  <div className="grid grid-cols-2 gap-2 mb-4">
+                    {featuredProduct.specifications.slice(0, 4).map((spec, i) => (
+                      <div key={i} className="bg-white rounded p-2">
+                        <div className="text-xs text-gray-500">{spec.name}</div>
+                        <div className="text-sm font-semibold text-gray-900">{spec.value}</div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-auto">
+                    {featuredProduct.priceFrom && (
+                      <div className="mb-3">
+                        <span className="text-sm text-gray-500">od </span>
+                        <span className="text-xl font-bold text-gray-900">
+                          {featuredProduct.priceFrom.toLocaleString('pl-PL')} zł
+                        </span>
+                        <span className="text-sm text-gray-500"> netto</span>
+                      </div>
+                    )}
+
+                    <div className="flex gap-2">
+                      <Link href={`/produkt/${featuredProduct.slug}`} className="flex-1">
+                        <Button size="sm" className="w-full bg-primary-600 hover:bg-primary-700 text-white">
+                          Zobacz szczegóły
+                        </Button>
+                      </Link>
+                      <Link href={`/zapytanie?produkt=${featuredProduct.id}`}>
+                        <Button size="sm" variant="secondary" className="border-gray-300">
+                          Zapytaj
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
