@@ -5,6 +5,8 @@ export interface RFQItem {
   productId: string
   productName: string
   productSlug: string
+  productImage?: string
+  partNumber?: string
   quantity: number
   note: string
 }
@@ -14,7 +16,7 @@ interface RFQStore {
   isDrawerOpen: boolean
 
   // Actions
-  addItem: (product: { id: string; name: string; slug: string }) => void
+  addItem: (product: { id: string; name: string; slug: string; image?: string; partNumber?: string }) => void
   removeItem: (productId: string) => void
   updateQuantity: (productId: string, quantity: number) => void
   updateNote: (productId: string, note: string) => void
@@ -57,6 +59,8 @@ export const useRFQStore = create<RFQStore>()(
                 productId: product.id,
                 productName: product.name,
                 productSlug: product.slug,
+                productImage: product.image,
+                partNumber: product.partNumber,
                 quantity: 1,
                 note: '',
               },

@@ -1,0 +1,466 @@
+'use client'
+
+import { useEffect, useState, useMemo, useRef } from 'react'
+import { Badge } from '@/components/ui'
+import { Button } from '@/components/ui'
+import { PlusIcon, CheckIcon, BellIcon, ChevronDownIcon } from '@/components/ui/Icons'
+import { useRFQStore } from '@/store/rfqStore'
+import { ProductVariant } from '@/data/products'
+import { useStockData } from './StockInfo'
+
+interface VariantsTableProps {
+  productSlug: string
+  productName: string
+  productImage?: string
+  variants: ProductVariant[]
+}
+
+const availabilityConfig = {
+  available: { label: 'Dostępny', variant: 'success' as const },
+  'on-order': { label: 'Na zamówienie', variant: 'warning' as const },
+  unavailable: { label: 'Niedostępny', variant: 'danger' as const },
+}
+
+function StockCell({ stockPL, stockDE, loading }: { stockPL: number; stockDE: number; loading: boolean }) {
+  if (loading) {
+    return <span className="text-xs text-gray-400 animate-pulse">...</span>
+  }
+
+  if (stockPL === 0 && stockDE === 0) {
+    return <span className="text-xs text-gray-400">—</span>
+  }
+
+  return (
+    <div className="relative group space-y-0.5">
+      {stockPL > 0 && (
+        <div className="flex items-center gap-1.5">
+          <div className="w-1.5 h-1.5 bg-green-500 rounded-full" />
+          <span className="text-xs text-gray-700">PL: {stockPL}</span>
+        </div>
+      )}
+      {stockDE > 0 && (
+        <div className="flex items-center gap-1.5">
+          <div className="w-1.5 h-1.5 bg-yellow-500 rounded-full" />
+          <span className="text-xs text-gray-700">EU: {stockDE}</span>
+        </div>
+      )}
+      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-2 bg-gray-900 text-white text-xs rounded-lg whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-10">
+        <div className="flex items-center gap-1.5 mb-1">
+          <span className="w-1.5 h-1.5 bg-green-400 rounded-full" />
+          PL — Dostawa 24h
+        </div>
+        <div className="flex items-center gap-1.5">
+          <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full" />
+          EU — Dostawa 72h
+        </div>
+        <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-900" />
+      </div>
+    </div>
+  )
+}
+
+function NotifyButton({ partNumber, productName }: { partNumber: string; productName: string }) {
+  const [open, setOpen] = useState(false)
+  const [email, setEmail] = useState('')
+  const [status, setStatus] = useState<'idle' | 'sending' | 'done' | 'error'>('idle')
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  useEffect(() => {
+    if (open && inputRef.current) {
+      inputRef.current.focus()
+    }
+  }, [open])
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!email) return
+
+    setStatus('sending')
+    try {
+      const res = await fetch('/api/notify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, partNumber, productName }),
+      })
+      if (res.ok) {
+        setStatus('done')
+      } else {
+        setStatus('error')
+      }
+    } catch {
+      setStatus('error')
+    }
+  }
+
+  if (status === 'done') {
+    return (
+      <span className="inline-flex items-center gap-1.5 text-xs text-green-600 font-medium">
+        <CheckIcon size={14} />
+        Powiadomimy Cię
+      </span>
+    )
+  }
+
+  if (!open) {
+    return (
+      <button
+        onClick={() => setOpen(true)}
+        className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-700 hover:text-amber-800 bg-amber-50 hover:bg-amber-100 border border-amber-200 rounded-lg px-3 py-2.5 transition-colors whitespace-nowrap"
+      >
+        <BellIcon size={14} />
+        Powiadom
+      </button>
+    )
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className="flex items-center gap-1">
+      <input
+        ref={inputRef}
+        type="email"
+        placeholder="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+        className="w-32 px-2.5 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-amber-500 focus:border-transparent"
+      />
+      <button
+        type="submit"
+        disabled={status === 'sending'}
+        className="text-sm font-medium text-white bg-amber-600 hover:bg-amber-700 disabled:opacity-50 rounded-lg px-3 py-2 transition-colors"
+      >
+        {status === 'sending' ? '...' : 'OK'}
+      </button>
+      <button
+        type="button"
+        onClick={() => { setOpen(false); setStatus('idle') }}
+        className="text-gray-400 hover:text-gray-600 text-sm leading-none p-1"
+      >
+        &times;
+      </button>
+      {status === 'error' && (
+        <span className="text-xs text-red-500">!</span>
+      )}
+    </form>
+  )
+}
+
+const attributeTooltips: Record<string, string> = {
+  'Odklejak': 'Odklejak (dyspenser) automatycznie oddziela etykietę od podłoża (liner) podczas druku. Dzięki temu etykieta jest gotowa do natychmiastowego naklejenia — nie musisz jej ręcznie odrywać. Przydatny przy dużych ilościach etykiet naklejanych ręcznie.',
+  'Gilotyna': 'Gilotyna (obcinacz) automatycznie odcina etykietę po wydrukowaniu. Idealna przy druku pojedynczych etykiet lub krótkich serii — każda etykieta jest od razu gotowa do użycia, bez ręcznego odrywania.',
+  'Nawijak': 'Nawijak (rewinder) nawija zużyty liner (podłoże) po odklejeniu etykiety, utrzymując porządek na stanowisku pracy. Niezbędny przy dużych wolumenach druku z odklejakiem — bez niego liner spada na podłogę i plącze się.',
+  'Linerless': 'Tryb linerless pozwala drukować na etykietach bez podłoża (linera). Eliminuje odpady — nie ma wstęgi do wyrzucenia. Na jednej rolce mieści się nawet 40% więcej etykiet. Wymaga specjalnej głowicy i wałka dociskowego przystosowanego do kleju.',
+}
+
+function AttributeLabel({ label }: { label: string }) {
+  const tooltip = attributeTooltips[label]
+
+  if (!tooltip) return <>{label}</>
+
+  return (
+    <span className="inline-flex items-center gap-1.5">
+      {label}
+      <span className="relative group/tip">
+        <span
+          className="inline-flex w-4 h-4 rounded-full bg-gray-300 text-white text-[10px] font-bold leading-none items-center justify-center cursor-help hover:bg-primary-500 transition-colors"
+          aria-label={`Wyjaśnienie: ${label}`}
+        >
+          ?
+        </span>
+        <span className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 px-3 py-2 bg-gray-900 text-white text-xs font-normal rounded-lg text-left leading-relaxed z-50 whitespace-normal opacity-0 pointer-events-none group-hover/tip:opacity-100 transition-opacity">
+          {tooltip}
+          <span className="absolute bottom-full left-1/2 -translate-x-1/2 border-4 border-transparent border-b-gray-900" />
+        </span>
+      </span>
+    </span>
+  )
+}
+
+function DesktopRow({ variant, productSlug, productName, productImage, attributeKeys, rowIndex, mounted, stockData, stockLoading, addItem, isInRFQ }: {
+  variant: ProductVariant
+  productSlug: string
+  productName: string
+  productImage?: string
+  attributeKeys: string[]
+  rowIndex: number
+  mounted: boolean
+  stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; availability: 'available' | 'on-order' | 'unavailable' }>
+  stockLoading: boolean
+  addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string }) => void
+  isInRFQ: (id: string) => boolean
+}) {
+  const inRFQ = mounted ? isInRFQ(`${productSlug}__${variant.partNumber}`) : false
+  const stock = stockData.get(variant.partNumber)
+  const avail = stock?.found
+    ? availabilityConfig[stock.availability]
+    : availabilityConfig[variant.availability]
+  const isUnavailable = !stockLoading && stock?.found && stock.availability === 'unavailable'
+
+  return (
+    <tr className={`${rowIndex % 2 === 0 ? 'bg-white' : 'bg-gray-50'} hover:bg-primary-50/50 transition-colors`}>
+      <td className="px-3 py-3.5 text-sm font-mono font-semibold text-gray-900 whitespace-nowrap">
+        {variant.partNumber}
+      </td>
+      {attributeKeys.map((key) => (
+        <td key={key} className="px-3 py-3.5 text-sm text-gray-700 text-center">
+          {variant.attributes[key] || '—'}
+        </td>
+      ))}
+      <td className="px-3 py-3.5 text-sm font-semibold text-gray-900 whitespace-nowrap">
+        {variant.priceFrom
+          ? `${variant.priceFrom.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł`
+          : 'Na zapytanie'}
+      </td>
+      <td className="px-3 py-3.5">
+        <StockCell stockPL={stock?.stockPL ?? 0} stockDE={stock?.stockDE ?? 0} loading={stockLoading} />
+      </td>
+      <td className="px-3 py-3.5 text-center">
+        <Badge variant={avail.variant}>{avail.label}</Badge>
+      </td>
+      <td className="px-3 py-3.5 text-center whitespace-nowrap">
+        {isUnavailable ? (
+          <NotifyButton partNumber={variant.partNumber} productName={`${productName} (${variant.partNumber})`} />
+        ) : (
+          <Button
+            size="sm"
+            variant={inRFQ ? 'secondary' : 'primary'}
+            onClick={() => addItem({
+              id: `${productSlug}__${variant.partNumber}`,
+              name: productName,
+              slug: productSlug,
+              image: productImage,
+              partNumber: variant.partNumber,
+            })}
+            leftIcon={inRFQ ? <CheckIcon size={14} /> : <PlusIcon size={14} />}
+          >
+            {inRFQ ? 'Dodano' : 'Koszyk'}
+          </Button>
+        )}
+      </td>
+    </tr>
+  )
+}
+
+function MobileCard({ variant, productSlug, productName, productImage, attributeKeys, mounted, stockData, stockLoading, addItem, isInRFQ }: {
+  variant: ProductVariant
+  productSlug: string
+  productName: string
+  productImage?: string
+  attributeKeys: string[]
+  mounted: boolean
+  stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; availability: 'available' | 'on-order' | 'unavailable' }>
+  stockLoading: boolean
+  addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string }) => void
+  isInRFQ: (id: string) => boolean
+}) {
+  const inRFQ = mounted ? isInRFQ(`${productSlug}__${variant.partNumber}`) : false
+  const stock = stockData.get(variant.partNumber)
+  const avail = stock?.found
+    ? availabilityConfig[stock.availability]
+    : availabilityConfig[variant.availability]
+  const isUnavailable = !stockLoading && stock?.found && stock.availability === 'unavailable'
+
+  return (
+    <div className="bg-white border border-gray-200 rounded-xl p-4 space-y-3">
+      <div className="flex items-start justify-between">
+        <div>
+          <span className="text-xs text-gray-500 uppercase tracking-wide">Part Number</span>
+          <p className="font-mono font-semibold text-gray-900">{variant.partNumber}</p>
+        </div>
+        <Badge variant={avail.variant}>{avail.label}</Badge>
+      </div>
+
+      <div className="grid grid-cols-2 gap-2">
+        {attributeKeys.map((key) => (
+          <div key={key}>
+            <span className="text-xs text-gray-500"><AttributeLabel label={key} /></span>
+            <p className="text-sm font-medium text-gray-900">
+              {variant.attributes[key] || '—'}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      {!stockLoading && stock?.found && (stock.stockPL > 0 || stock.stockDE > 0) && (
+        <div className="flex items-center gap-3 text-xs text-gray-600">
+          {stock.stockPL > 0 && (
+            <span className="flex items-center gap-1">
+              <span className="w-1.5 h-1.5 bg-green-500 rounded-full" />
+              PL: {stock.stockPL} szt.
+            </span>
+          )}
+          {stock.stockDE > 0 && (
+            <span className="flex items-center gap-1">
+              <span className="w-1.5 h-1.5 bg-yellow-500 rounded-full" />
+              EU: {stock.stockDE} szt.
+            </span>
+          )}
+        </div>
+      )}
+
+      <div className="flex items-center justify-between pt-2 border-t border-gray-100">
+        <div>
+          {variant.priceFrom ? (
+            <div>
+              <span className="text-lg font-bold text-gray-900">
+                {variant.priceFrom.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
+              </span>
+              <span className="text-xs text-gray-500"> netto</span>
+            </div>
+          ) : (
+            <span className="text-sm text-gray-600">Cena na zapytanie</span>
+          )}
+        </div>
+        {isUnavailable ? (
+          <NotifyButton partNumber={variant.partNumber} productName={`${productName} (${variant.partNumber})`} />
+        ) : (
+          <Button
+            size="md"
+            variant={inRFQ ? 'secondary' : 'primary'}
+            onClick={() => addItem({
+              id: `${productSlug}__${variant.partNumber}`,
+              name: productName,
+              slug: productSlug,
+              image: productImage,
+              partNumber: variant.partNumber,
+            })}
+            leftIcon={inRFQ ? <CheckIcon size={16} /> : <PlusIcon size={16} />}
+          >
+            {inRFQ ? 'Dodano' : 'Koszyk'}
+          </Button>
+        )}
+      </div>
+    </div>
+  )
+}
+
+export default function VariantsTable({ productSlug, productName, productImage, variants }: VariantsTableProps) {
+  const { addItem, isInRFQ } = useRFQStore()
+  const [mounted, setMounted] = useState(false)
+  const [showUnavailable, setShowUnavailable] = useState(false)
+
+  const partNumbers = useMemo(() => variants.map(v => v.partNumber), [variants])
+  const { stockData, loading: stockLoading } = useStockData(partNumbers)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const attributeKeys = useMemo(() => Array.from(
+    new Set(variants.flatMap((v) => Object.keys(v.attributes)))
+  ), [variants])
+
+  // Podział na dostępne i niedostępne
+  // Gdy stock się ładuje, pokaż wszystko razem (bez podziału)
+  const { availableVariants, unavailableVariants } = useMemo(() => {
+    if (stockLoading) {
+      return { availableVariants: variants, unavailableVariants: [] as ProductVariant[] }
+    }
+    const available: ProductVariant[] = []
+    const unavailable: ProductVariant[] = []
+    for (const v of variants) {
+      const stock = stockData.get(v.partNumber)
+      const effectiveAvailability = stock?.found ? stock.availability : v.availability
+      if (effectiveAvailability === 'unavailable') {
+        unavailable.push(v)
+      } else {
+        available.push(v)
+      }
+    }
+    return { availableVariants: available, unavailableVariants: unavailable }
+  }, [variants, stockData, stockLoading])
+
+  if (variants.length === 0) return null
+
+  const sharedProps = { productSlug, productName, productImage, attributeKeys, mounted, stockData, stockLoading, addItem, isInRFQ }
+  const colCount = 4 + attributeKeys.length // PN + attrs + cena + magazyn + status + akcja
+
+  return (
+    <section id="warianty">
+      <h2 className="text-2xl font-bold text-gray-900 mb-4">Dostępne warianty</h2>
+
+      {/* Desktop: tabela */}
+      <div className="hidden lg:block bg-gray-50 rounded-xl overflow-x-auto">
+        <table className="w-full min-w-[900px]">
+          <thead>
+            <tr className="bg-gray-100 border-b border-gray-200">
+              <th scope="col" className="px-3 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                Part Number
+              </th>
+              {attributeKeys.map((key) => (
+                <th key={key} scope="col" className="px-3 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider whitespace-nowrap">
+                  <AttributeLabel label={key} />
+                </th>
+              ))}
+              <th scope="col" className="px-3 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                Cena netto
+              </th>
+              <th scope="col" className="px-3 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                Magazyn
+              </th>
+              <th scope="col" className="px-3 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                Status
+              </th>
+              <th scope="col" className="px-3 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                Akcja
+              </th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-200">
+            {availableVariants.map((variant, i) => (
+              <DesktopRow key={variant.partNumber} variant={variant} rowIndex={i} {...sharedProps} />
+            ))}
+          </tbody>
+          {unavailableVariants.length > 0 && (
+            <tbody>
+              <tr>
+                <td colSpan={colCount}>
+                  <button
+                    onClick={() => setShowUnavailable(!showUnavailable)}
+                    className="w-full flex items-center justify-center gap-2 py-3 text-sm font-medium text-gray-500 hover:text-gray-700 hover:bg-gray-100 transition-colors"
+                  >
+                    <ChevronDownIcon size={16} className={`transition-transform duration-200 ${showUnavailable ? 'rotate-180' : ''}`} />
+                    {showUnavailable
+                      ? 'Ukryj niedostępne warianty'
+                      : `Pokaż niedostępne warianty (${unavailableVariants.length})`}
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          )}
+          {showUnavailable && unavailableVariants.length > 0 && (
+            <tbody className="divide-y divide-gray-200 bg-gray-50/50">
+              {unavailableVariants.map((variant, i) => (
+                <DesktopRow key={variant.partNumber} variant={variant} rowIndex={i} {...sharedProps} />
+              ))}
+            </tbody>
+          )}
+        </table>
+      </div>
+
+      {/* Mobile: karty */}
+      <div className="lg:hidden space-y-3">
+        {availableVariants.map((variant) => (
+          <MobileCard key={variant.partNumber} variant={variant} {...sharedProps} />
+        ))}
+
+        {unavailableVariants.length > 0 && (
+          <>
+            <button
+              onClick={() => setShowUnavailable(!showUnavailable)}
+              className="w-full flex items-center justify-center gap-2 py-3 text-sm font-medium text-gray-500 hover:text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-xl transition-colors"
+            >
+              <ChevronDownIcon size={16} className={`transition-transform duration-200 ${showUnavailable ? 'rotate-180' : ''}`} />
+              {showUnavailable
+                ? 'Ukryj niedostępne warianty'
+                : `Pokaż niedostępne warianty (${unavailableVariants.length})`}
+            </button>
+            {showUnavailable && unavailableVariants.map((variant) => (
+              <MobileCard key={variant.partNumber} variant={variant} {...sharedProps} />
+            ))}
+          </>
+        )}
+      </div>
+    </section>
+  )
+}

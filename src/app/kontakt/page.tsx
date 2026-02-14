@@ -172,10 +172,10 @@ export default function ContactPage() {
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">E-mail</h3>
                 <a
-                  href="mailto:kontakt@takma.pl"
+                  href="mailto:kontakt@takma.com.pl"
                   className="text-gray-600 hover:text-primary-600 transition-colors"
                 >
-                  kontakt@takma.pl
+                  kontakt@takma.com.pl
                 </a>
                 <p className="text-sm text-gray-500 mt-1">Odpowiadamy w ciągu 24h</p>
               </div>

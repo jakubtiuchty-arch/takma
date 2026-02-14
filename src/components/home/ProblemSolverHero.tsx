@@ -350,7 +350,7 @@ export function ProblemSolverHero() {
                         {solution.category}
                       </h3>
                       <Link
-                        href={`/katalog?kategoria=${solution.categorySlug}`}
+                        href={`/${solution.categorySlug}`}
                         className="text-primary-400 hover:text-primary-300 text-sm flex items-center gap-1"
                       >
                         Zobacz wszystkie

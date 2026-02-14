@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import clsx from 'clsx'
+import Image from 'next/image'
 import { CloseIcon, TrashIcon, PlusIcon, MinusIcon, ArrowRightIcon } from '@/components/ui/Icons'
 import { Button } from '@/components/ui'
 import { useRFQStore } from '@/store/rfqStore'
@@ -64,12 +65,12 @@ export default function RFQDrawer() {
         )}
         role="dialog"
         aria-modal="true"
-        aria-label="Lista zapytania ofertowego"
+        aria-label="Koszyk"
       >
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
           <div>
-            <h2 className="text-lg font-semibold text-gray-900">Lista zapytania</h2>
+            <h2 className="text-lg font-semibold text-gray-900">Koszyk</h2>
             <p className="text-sm text-gray-500">
               {items.length === 0
                 ? 'Brak produktów'
@@ -96,7 +97,7 @@ export default function RFQDrawer() {
                 Lista jest pusta
               </h3>
               <p className="text-sm text-gray-500 mb-6">
-                Dodaj produkty, aby przygotować zapytanie ofertowe
+                Dodaj produkty do koszyka
               </p>
               <Button variant="secondary" onClick={closeDrawer}>
                 Przeglądaj katalog
@@ -107,9 +108,19 @@ export default function RFQDrawer() {
               {items.map((item) => (
                 <li key={item.productId} className="px-6 py-4">
                   <div className="flex items-start gap-4">
-                    {/* Placeholder obrazka */}
-                    <div className="w-16 h-16 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center">
-                      <span className="text-xs text-gray-400">IMG</span>
+                    {/* Obrazek produktu */}
+                    <div className="w-16 h-16 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
+                      {item.productImage ? (
+                        <Image
+                          src={item.productImage}
+                          alt={item.productName}
+                          width={64}
+                          height={64}
+                          className="object-contain"
+                        />
+                      ) : (
+                        <span className="text-xs text-gray-400">IMG</span>
+                      )}
                     </div>
 
                     <div className="flex-1 min-w-0">
@@ -120,6 +131,11 @@ export default function RFQDrawer() {
                       >
                         {item.productName}
                       </Link>
+                      {item.partNumber && (
+                        <p className="text-xs text-gray-500 mt-0.5">
+                          {item.partNumber}
+                        </p>
+                      )}
 
                       {/* Quantity controls */}
                       <div className="flex items-center gap-2 mt-2">
@@ -173,7 +189,7 @@ export default function RFQDrawer() {
           <div className="border-t border-gray-100 px-6 py-4 space-y-3 bg-gray-50">
             <Link href="/zapytanie" onClick={closeDrawer}>
               <Button fullWidth rightIcon={<ArrowRightIcon size={18} />}>
-                Przejdź do formularza zapytania
+                Przejdź do kasy
               </Button>
             </Link>
             <button

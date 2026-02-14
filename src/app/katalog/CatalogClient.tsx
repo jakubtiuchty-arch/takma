@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo, Suspense } from 'react'
+import Link from 'next/link'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { Button, Select, Badge } from '@/components/ui'
 import {
@@ -15,6 +16,7 @@ import {
   manufacturers,
   filterProducts,
   ProductTag,
+  getSubcategoriesForCategory,
 } from '@/data/products'
 import clsx from 'clsx'
 
@@ -140,22 +142,56 @@ function CatalogContent() {
                     Wszystkie kategorie
                   </button>
                 </li>
-                {categories.map((category) => (
-                  <li key={category.id}>
-                    <button
-                      onClick={() => updateFilters({ kategoria: category.slug })}
-                      className={clsx(
-                        'w-full text-left px-3 py-2 rounded-lg text-sm transition-colors',
-                        categoryParam === category.slug
-                          ? 'bg-primary-50 text-primary-700 font-medium'
-                          : 'text-gray-600 hover:bg-gray-50'
+                {categories.map((category) => {
+                  const subs = getSubcategoriesForCategory(category.id)
+                  const hasDedicatedPage = category.id === 'drukarki-etykiet'
+                  return (
+                    <li key={category.id}>
+                      {hasDedicatedPage ? (
+                        <Link
+                          href={`/${category.slug}`}
+                          className={clsx(
+                            'block px-3 py-2 rounded-lg text-sm transition-colors',
+                            categoryParam === category.slug
+                              ? 'bg-primary-50 text-primary-700 font-medium'
+                              : 'text-gray-600 hover:bg-gray-50'
+                          )}
+                        >
+                          {category.name}
+                          <span className="text-gray-400 ml-1">({category.productCount})</span>
+                        </Link>
+                      ) : (
+                        <button
+                          onClick={() => updateFilters({ kategoria: category.slug })}
+                          className={clsx(
+                            'w-full text-left px-3 py-2 rounded-lg text-sm transition-colors',
+                            categoryParam === category.slug
+                              ? 'bg-primary-50 text-primary-700 font-medium'
+                              : 'text-gray-600 hover:bg-gray-50'
+                          )}
+                        >
+                          {category.name}
+                          <span className="text-gray-400 ml-1">({category.productCount})</span>
+                        </button>
                       )}
-                    >
-                      {category.name}
-                      <span className="text-gray-400 ml-1">({category.productCount})</span>
-                    </button>
-                  </li>
-                ))}
+                      {categoryParam === category.slug && subs.length > 0 && (
+                        <ul className="ml-3 mt-1 space-y-0.5">
+                          {subs.map((sub) => (
+                            <li key={sub.id}>
+                              <Link
+                                href={`/${sub.slug}`}
+                                className="block px-3 py-1.5 rounded-lg text-sm text-gray-500 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                              >
+                                {sub.name}
+                                <span className="text-gray-400 ml-1">({sub.productCount})</span>
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  )
+                })}
               </ul>
             </div>
 
@@ -392,24 +428,58 @@ function CatalogContent() {
                       Wszystkie kategorie
                     </button>
                   </li>
-                  {categories.map((category) => (
-                    <li key={category.id}>
-                      <button
-                        onClick={() => {
-                          updateFilters({ kategoria: category.slug })
-                          setIsMobileFiltersOpen(false)
-                        }}
-                        className={clsx(
-                          'w-full text-left px-3 py-2 rounded-lg text-sm transition-colors',
-                          categoryParam === category.slug
-                            ? 'bg-primary-50 text-primary-700 font-medium'
-                            : 'text-gray-600 hover:bg-gray-50'
+                  {categories.map((category) => {
+                    const subs = getSubcategoriesForCategory(category.id)
+                    const hasDedicatedPage = category.id === 'drukarki-etykiet'
+                    return (
+                      <li key={category.id}>
+                        {hasDedicatedPage ? (
+                          <Link
+                            href={`/${category.slug}`}
+                            onClick={() => setIsMobileFiltersOpen(false)}
+                            className={clsx(
+                              'block px-3 py-2 rounded-lg text-sm transition-colors',
+                              categoryParam === category.slug
+                                ? 'bg-primary-50 text-primary-700 font-medium'
+                                : 'text-gray-600 hover:bg-gray-50'
+                            )}
+                          >
+                            {category.name}
+                          </Link>
+                        ) : (
+                          <button
+                            onClick={() => {
+                              updateFilters({ kategoria: category.slug })
+                              setIsMobileFiltersOpen(false)
+                            }}
+                            className={clsx(
+                              'w-full text-left px-3 py-2 rounded-lg text-sm transition-colors',
+                              categoryParam === category.slug
+                                ? 'bg-primary-50 text-primary-700 font-medium'
+                                : 'text-gray-600 hover:bg-gray-50'
+                            )}
+                          >
+                            {category.name}
+                          </button>
                         )}
-                      >
-                        {category.name}
-                      </button>
-                    </li>
-                  ))}
+                        {categoryParam === category.slug && subs.length > 0 && (
+                          <ul className="ml-3 mt-1 space-y-0.5">
+                            {subs.map((sub) => (
+                              <li key={sub.id}>
+                                <Link
+                                  href={`/${sub.slug}`}
+                                  className="block px-3 py-1.5 rounded-lg text-sm text-gray-500 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                                  onClick={() => setIsMobileFiltersOpen(false)}
+                                >
+                                  {sub.name}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </li>
+                    )
+                  })}
                 </ul>
               </div>
 

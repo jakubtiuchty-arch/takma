@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { DocumentTextIcon } from '@/components/ui/Icons'
+import { ShoppingCartIcon } from '@/components/ui/Icons'
 import { useRFQStore } from '@/store/rfqStore'
 import clsx from 'clsx'
 
@@ -34,9 +34,9 @@ export default function RFQBadge() {
         'text-gray-600 hover:text-primary-600 hover:bg-primary-50',
         'focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2'
       )}
-      aria-label={`Lista zapytania (${count} ${count === 1 ? 'produkt' : 'produktów'})`}
+      aria-label={`Koszyk (${count} ${count === 1 ? 'produkt' : 'produktów'})`}
     >
-      <DocumentTextIcon size={24} />
+      <ShoppingCartIcon size={24} />
 
       {count > 0 && (
         <span

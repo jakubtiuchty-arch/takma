@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://takma.pl/sitemap.xml
+Sitemap: https://takma.com.pl/sitemap.xml

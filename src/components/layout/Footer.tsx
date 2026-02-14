@@ -3,7 +3,11 @@ import { PhoneIcon, MailIcon, LocationIcon } from '@/components/ui/Icons'
 
 const footerLinks = {
   produkty: [
-    { name: 'Drukarki etykiet', href: '/katalog?kategoria=drukarki-etykiet' },
+    { name: 'Drukarki etykiet', href: '/drukarki-etykiet' },
+    { name: 'Drukarki biurkowe', href: '/biurkowe-drukarki-etykiet' },
+    { name: 'Drukarki przemysłowe', href: '/przemyslowe-drukarki-etykiet' },
+    { name: 'Drukarki termotransferowe', href: '/termotransferowe-drukarki-etykiet' },
+    { name: 'Drukarki termiczne', href: '/termiczne-drukarki-etykiet' },
     { name: 'Skanery kodów', href: '/katalog?kategoria=skanery-kodow' },
     { name: 'Terminale mobilne', href: '/katalog?kategoria=terminale-mobilne' },
     { name: 'RFID', href: '/katalog?kategoria=rfid' },
@@ -14,6 +18,13 @@ const footerLinks = {
     { name: 'O nas', href: '/o-nas' },
     { name: 'Kontakt', href: '/kontakt' },
     { name: 'Polityka prywatności', href: '/polityka-prywatnosci' },
+  ],
+  serwis: [
+    { name: 'Serwis drukarek Zebra', href: 'https://serwis-zebry.pl/serwis-drukarek-zebra' },
+    { name: 'Instrukcje obsługi (PL)', href: 'https://serwis-zebry.pl/instrukcje' },
+    { name: 'Sterowniki Windows', href: 'https://serwis-zebry.pl/sterowniki' },
+    { name: 'Blog — poradniki i FAQ', href: 'https://serwis-zebry.pl/blog' },
+    { name: 'Poradniki wideo', href: 'https://serwis-zebry.pl/poradniki-wideo' },
   ],
   producenci: [
     { name: 'Zebra Technologies', href: '/katalog?producent=zebra' },
@@ -28,7 +39,7 @@ export default function Footer() {
     <footer className="bg-gray-900 text-gray-300">
       {/* Main footer */}
       <div className="container-main py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
           {/* Info o firmie */}
           <div className="lg:col-span-1">
             <Link
@@ -53,11 +64,11 @@ export default function Footer() {
                 <span>+48 12 345 67 89</span>
               </a>
               <a
-                href="mailto:kontakt@takma.pl"
+                href="mailto:kontakt@takma.com.pl"
                 className="flex items-center gap-3 text-sm hover:text-primary-400 transition-colors"
               >
                 <MailIcon size={18} className="text-primary-400" />
-                <span>kontakt@takma.pl</span>
+                <span>kontakt@takma.com.pl</span>
               </a>
               <div className="flex items-start gap-3 text-sm">
                 <LocationIcon size={18} className="text-primary-400 flex-shrink-0 mt-0.5" />
@@ -98,6 +109,29 @@ export default function Footer() {
                   >
                     {link.name}
                   </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Serwis Zebra */}
+          <div>
+            <h3 className="font-semibold text-white mb-4">
+              <a href="https://serwis-zebry.pl" target="_blank" rel="noopener" className="hover:text-primary-400 transition-colors">
+                Serwis-Zebry.pl
+              </a>
+            </h3>
+            <ul className="space-y-2.5">
+              {footerLinks.serwis.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener"
+                    className="text-sm hover:text-primary-400 transition-colors"
+                  >
+                    {link.name}
+                  </a>
                 </li>
               ))}
             </ul>

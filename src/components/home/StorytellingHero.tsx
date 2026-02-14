@@ -406,7 +406,7 @@ export function StorytellingHero() {
                   </div>
                 </div>
 
-                <Link href={`/katalog?kategoria=${section.categorySlug}`}>
+                <Link href={`/${section.categorySlug}`}>
                   <Button
                     className="bg-white text-gray-900 hover:bg-white/90"
                     rightIcon={<ArrowRightIcon size={18} />}

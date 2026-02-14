@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { Button, Input, Textarea, Checkbox, Select } from '@/components/ui'
 import {
@@ -224,9 +225,19 @@ export default function RFQPage() {
                 {items.map((item) => (
                   <li key={item.productId} className="p-6">
                     <div className="flex gap-4">
-                      {/* Placeholder image */}
-                      <div className="w-20 h-20 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center">
-                        <span className="text-xs text-gray-400">IMG</span>
+                      {/* Obrazek produktu */}
+                      <div className="w-20 h-20 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
+                        {item.productImage ? (
+                          <Image
+                            src={item.productImage}
+                            alt={item.productName}
+                            width={80}
+                            height={80}
+                            className="object-contain"
+                          />
+                        ) : (
+                          <span className="text-xs text-gray-400">IMG</span>
+                        )}
                       </div>
 
                       <div className="flex-1 min-w-0">
@@ -236,6 +247,11 @@ export default function RFQPage() {
                         >
                           {item.productName}
                         </Link>
+                        {item.partNumber && (
+                          <p className="text-sm text-gray-500 mt-0.5">
+                            {item.partNumber}
+                          </p>
+                        )}
 
                         {/* Quantity */}
                         <div className="flex items-center gap-2 mt-3">

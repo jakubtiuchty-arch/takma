@@ -6,7 +6,7 @@ import clsx from 'clsx'
 
 interface ProductGridProps {
   products: Product[]
-  variant?: 'grid' | 'list'
+  variant?: 'grid' | 'list' | 'compact'
   columns?: 2 | 3 | 4
 }
 
@@ -36,6 +36,16 @@ export default function ProductGrid({
       <div className="space-y-4">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} variant="list" />
+        ))}
+      </div>
+    )
+  }
+
+  if (variant === 'compact') {
+    return (
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} variant="compact" />
         ))}
       </div>
     )

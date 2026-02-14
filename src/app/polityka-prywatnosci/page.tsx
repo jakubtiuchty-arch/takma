@@ -108,7 +108,7 @@ export default function PrivacyPolicyPage() {
             W sprawach związanych z ochroną danych osobowych można kontaktować się:
           </p>
           <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
-            <li>E-mail: kontakt@takma.pl</li>
+            <li>E-mail: kontakt@takma.com.pl</li>
             <li>Telefon: +48 12 345 67 89</li>
             <li>Adres: ul. Przykładowa 123, 30-000 Kraków</li>
           </ul>
