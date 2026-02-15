@@ -16,6 +16,8 @@ import {
   CheckIcon,
 } from '@/components/ui/Icons'
 import AddToRFQButton from './AddToRFQButton'
+import AskAboutProductButton from './AskAboutProductButton'
+import ServicePlansBox from './ServicePlansBox'
 import RelatedProducts from './RelatedProducts'
 import VariantsTable from './VariantsTable'
 import StockInfo, { LiveAvailabilityBadge } from './StockInfo'
@@ -64,7 +66,8 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     ? `${product.name} — ${product.shortDescription}. Od ${product.priceFrom.toLocaleString('pl-PL')} zł netto. Sprawdź warianty i zamów w TAKMA.`
     : `${product.name} — ${product.shortDescription}. Sprawdź i zamów w TAKMA.`
 
-  const ogImage = product.images[0] || undefined
+  // OG image — pełny URL z domeną (nie relative path)
+  const ogImage = product.images[0] ? `https://takma.com.pl${product.images[0]}` : undefined
 
   return {
     title,
@@ -75,7 +78,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
       locale: 'pl_PL',
       siteName: 'TAKMA',
       images: ogImage ? [{ url: ogImage, width: 1200, height: 630, alt: product.name }] : undefined,
-      url: `/produkt/${product.slug}`,
+      url: `https://takma.com.pl/produkt/${product.slug}`,
     },
     twitter: {
       card: 'summary_large_image',
@@ -127,10 +130,14 @@ export default async function ProductPage({ params }: ProductPageProps) {
     .map((id) => products.find((p) => p.id === id))
     .filter(Boolean)
 
-  // Akcesoria
-  const relatedAccessories = (product.relatedAccessories || [])
+  // Akcesoria — grupowane wg kategorii
+  const allRelated = (product.relatedAccessories || [])
     .map((id) => products.find((p) => p.id === id))
     .filter(Boolean)
+
+  const relatedCards = allRelated.filter((p) => p!.subcategoryIds?.includes('karty-pcv'))
+  const relatedSoftware = allRelated.filter((p) => p!.categoryId === 'oprogramowanie')
+  const relatedAccessories = allRelated.filter((p) => !p!.subcategoryIds?.includes('karty-pcv') && p!.categoryId !== 'oprogramowanie')
 
   // JSON-LD: Product schema
   const availabilitySchemaMap = {
@@ -150,12 +157,21 @@ export default async function ProductPage({ params }: ProductPageProps) {
   // Extract model name from product name (e.g. "Zebra ZD230d" → "ZD230d")
   const modelName = manufacturer ? product.name.replace(manufacturer.name, '').trim() : product.name
 
-  // Extract specs for JSON-LD additionalProperty
+  // Extract specs for JSON-LD additionalProperty — dynamicznie z specifications[]
   const weightSpec = product.specifications.find(s => s.name.toLowerCase().includes('waga'))
   const dimensionsSpec = product.specifications.find(s => s.name.toLowerCase().includes('wymiar'))
-  const resolutionSpec = product.specifications.find(s => s.name.toLowerCase().includes('rozdzielczość'))
-  const speedSpec = product.specifications.find(s => s.name.toLowerCase().includes('prędkość'))
-  const interfaceSpec = product.specifications.find(s => s.name.toLowerCase().includes('interfejsy') || s.name.toLowerCase() === 'interfejs')
+
+  // Klucze specyfikacji do uwzględnienia w additionalProperty
+  const additionalPropertyKeys = [
+    'Rozdzielczość', 'Prędkość druku', 'Interfejsy', 'Interfejs',
+    'Szerokość druku', 'Maks. szerokość nośnika', 'Pamięć RAM', 'Pamięć Flash',
+    'Bluetooth', 'Klasa ochrony (IP)', 'Odporność na upadki', 'Waga z baterią',
+    'Bateria', 'Temperatura pracy', 'Języki programowania', 'Part Number',
+  ]
+
+  const dynamicAdditionalProps = product.specifications
+    .filter(s => additionalPropertyKeys.some(key => s.name === key))
+    .map(s => ({ '@type': 'PropertyValue' as const, name: s.name, value: s.value }))
 
   // Build isRelatedTo from accessories and compatible labels
   const relatedProductsForSchema = [
@@ -175,7 +191,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
     description: product.shortDescription,
     image: product.images.map((img) => `https://takma.com.pl${img}`),
     brand: manufacturer ? { '@type': 'Brand', name: manufacturer.name } : undefined,
-    manufacturer: manufacturer ? { '@type': 'Organization', name: `${manufacturer.name} Technologies`, url: 'https://zebra.com' } : undefined,
+    manufacturer: manufacturer ? { '@type': 'Organization', name: manufacturer.id === 'zebra' ? 'Zebra Technologies' : manufacturer.name, ...(manufacturer.id === 'zebra' ? { url: 'https://www.zebra.com' } : {}) } : undefined,
     model: modelName,
     category: category?.name,
     sku: product.variants?.[0]?.partNumber || product.id,
@@ -183,37 +199,17 @@ export default async function ProductPage({ params }: ProductPageProps) {
     datePublished: product.createdAt,
     dateModified: new Date().toISOString().split('T')[0],
     inLanguage: 'pl-PL',
+    ...(product.sameAs ? { sameAs: product.sameAs } : {}),
     ...(weightSpec ? { weight: { '@type': 'QuantitativeValue', value: parseFloat(weightSpec.value.replace(',', '.')) || weightSpec.value, unitCode: 'KGM' } } : {}),
     ...(() => {
       const props = [
-        ...(dimensionsSpec ? [{ '@type': 'PropertyValue', name: 'Wymiary', value: dimensionsSpec.value }] : []),
-        ...(resolutionSpec ? [{ '@type': 'PropertyValue', name: 'Rozdzielczość', value: resolutionSpec.value }] : []),
-        ...(speedSpec ? [{ '@type': 'PropertyValue', name: 'Prędkość druku', value: speedSpec.value }] : []),
-        ...(interfaceSpec ? [{ '@type': 'PropertyValue', name: 'Interfejsy', value: interfaceSpec.value }] : []),
+        ...(dimensionsSpec ? [{ '@type': 'PropertyValue' as const, name: 'Wymiary', value: dimensionsSpec.value }] : []),
+        ...dynamicAdditionalProps,
       ]
       return props.length > 0 ? { additionalProperty: props } : {}
     })(),
     ...(relatedProductsForSchema.length > 0 ? { isRelatedTo: relatedProductsForSchema } : {}),
     ...(product.gtin13 ? { gtin13: product.gtin13 } : {}),
-    ...(product.editorialReview ? {
-      review: {
-        '@type': 'Review',
-        author: { '@type': 'Organization', name: 'TAKMA' },
-        datePublished: product.createdAt,
-        reviewRating: {
-          '@type': 'Rating',
-          ratingValue: product.editorialReview.ratingValue.toString(),
-          bestRating: product.editorialReview.bestRating.toString(),
-        },
-        reviewBody: product.editorialReview.reviewBody,
-      },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: product.editorialReview.ratingValue.toString(),
-        bestRating: product.editorialReview.bestRating.toString(),
-        reviewCount: '1',
-      },
-    } : {}),
     offers: product.variants && product.variants.length > 0
       ? {
           '@type': 'AggregateOffer',
@@ -276,23 +272,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
     itemListElement: breadcrumbItems,
   }
 
-  // JSON-LD: FAQ (jeśli produkt ma FAQ)
-  const faqJsonLd = product.faq && product.faq.length > 0
-    ? {
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: product.faq.map((item) => ({
-          '@type': 'Question',
-          name: item.question,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: item.answer,
-            author: { '@type': 'Organization', name: 'TAKMA' },
-          },
-        })),
-      }
-    : null
-
   // JSON-LD: Speakable — dla Google Assistant / voice search
   const speakableJsonLd = {
     '@context': 'https://schema.org',
@@ -309,25 +288,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
     },
     url: `https://takma.com.pl/produkt/${product.slug}`,
   }
-
-  // JSON-LD: HowTo — dla drukarek (mają downloads z instrukcjami)
-  const isPrinter = product.categoryId === 'drukarki-etykiet'
-  const isDirectThermalOnly = product.specifications.some(s => s.name === 'Rodzaj druku' && s.value.toLowerCase().includes('bezpośredni'))
-  const howToJsonLd = isPrinter ? {
-    '@context': 'https://schema.org',
-    '@type': 'HowTo',
-    name: `Jak skonfigurować ${product.name}`,
-    description: `Instrukcja pierwszego uruchomienia i konfiguracji drukarki ${product.name}.`,
-    step: [
-      { '@type': 'HowToStep', position: 1, name: 'Podłącz zasilanie i kabel USB', text: 'Podłącz zasilacz do drukarki i gniazda sieciowego, następnie połącz drukarkę z komputerem kablem USB.' },
-      { '@type': 'HowToStep', position: 2, name: 'Załaduj materiały eksploatacyjne', text: isDirectThermalOnly
-        ? 'Otwórz pokrywę drukarki i włóż rolkę etykiet termicznych zgodnie z oznaczeniami na urządzeniu. Drukarka direct thermal nie wymaga taśmy barwiącej (ribbona).'
-        : 'Otwórz pokrywę drukarki, włóż rolkę etykiet i taśmę termotransferową (ribbon) zgodnie z oznaczeniami na urządzeniu.' },
-      { '@type': 'HowToStep', position: 3, name: 'Zainstaluj sterowniki', text: 'Pobierz i zainstaluj sterowniki ze strony serwis-zebry.pl/sterowniki. Sterowniki obsługują Windows 10/11.' },
-      { '@type': 'HowToStep', position: 4, name: 'Przeprowadź kalibrację', text: 'Uruchom drukarkę i przeprowadź kalibrację sensora mediów za pomocą Zebra Setup Utilities lub funkcji auto-kalibracji.' },
-      { '@type': 'HowToStep', position: 5, name: 'Wydrukuj testową etykietę', text: 'Z menu drukarki wybierz druk testowy, aby potwierdzić poprawność konfiguracji i jakość wydruku.' },
-    ],
-  } : null
 
   const ogProductMeta = `<meta property="og:type" content="product" />${product.priceFrom ? `<meta property="product:price:amount" content="${product.priceFrom.toFixed(2)}" /><meta property="product:price:currency" content="PLN" />` : ''}`
 
@@ -349,22 +309,10 @@ export default async function ProductPage({ params }: ProductPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      {faqJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
-      )}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
       />
-      {howToJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
-        />
-      )}
 
       <div className="container-main py-6 lg:py-10">
         {/* Breadcrumbs */}
@@ -410,7 +358,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           </div>
 
           {/* Product info */}
-          <div>
+          <div className="lg:sticky lg:top-24 lg:self-start">
             {/* Manufacturer */}
             {manufacturer && (
               <Link
@@ -446,11 +394,33 @@ export default async function ProductPage({ params }: ProductPageProps) {
               />
             </div>
 
+            {/* Variants link */}
+            {product.variants && product.variants.length > 0 && (
+              <a
+                href="#warianty"
+                className="inline-flex items-center gap-1 text-sm font-semibold text-gray-900 underline underline-offset-4 decoration-primary-400 hover:decoration-primary-600 transition-colors mb-1"
+              >
+                {product.variants.length} {product.variants.length === 1 ? 'wariant' : product.variants.length < 5 ? 'warianty' : 'wariantów'} do wyboru ↓
+              </a>
+            )}
+
             {/* Price — smart fallback na najtańszy dostępny wariant */}
             <SmartPrice product={product} />
 
             {/* CTA */}
-            <AddToRFQButton product={product} />
+            <div className="space-y-3">
+              <AddToRFQButton product={product} />
+              <AskAboutProductButton productName={product.name} productSlug={product.slug} />
+            </div>
+
+            {/* Service Plans — OneCare upsell */}
+            {product.servicePlans && product.servicePlans.length > 0 && (
+              <ServicePlansBox
+                plans={product.servicePlans}
+                productSlug={product.slug}
+                productName={product.name}
+              />
+            )}
 
             {/* Key specs */}
             {product.keyParams ? (
@@ -559,7 +529,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   href="#etykiety-papierowe"
                   className="px-3 py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
-                  Etykiety papierowe
+                  {product.categoryId === 'drukarki-kart' ? 'Taśmy' : product.categoryId === 'drukarki-opasek' ? 'Opaski' : product.subcategoryIds?.includes('termiczne-drukarki-etykiet') ? 'Etykiety termiczne' : 'Etykiety papierowe'}
                 </a>
               )}
               {compatibleFoilLabels.length > 0 && (
@@ -568,6 +538,22 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   className="px-3 py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   Etykiety foliowe
+                </a>
+              )}
+              {relatedCards.length > 0 && (
+                <a
+                  href="#karty-pcv"
+                  className="px-3 py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                >
+                  Karty PCV
+                </a>
+              )}
+              {relatedSoftware.length > 0 && (
+                <a
+                  href="#oprogramowanie"
+                  className="px-3 py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                >
+                  Oprogramowanie
                 </a>
               )}
               {relatedAccessories.length > 0 && (
@@ -589,6 +575,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 productName={product.name}
                 productImage={product.images[0]}
                 variants={product.variants}
+                variantAttributeTooltips={product.variantAttributeTooltips}
+                manufacturerId={product.manufacturerId}
               />
             )}
 
@@ -602,12 +590,19 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   </p>
                 ))}
               </div>
-              <p className="text-xs text-gray-400 mt-6">
-                {product.manufacturerId === 'zebra'
-                  ? 'Oferowany przez TAKMA — autoryzowanego partnera Zebra Technologies z 25-letnim doświadczeniem w branży AutoID.'
-                  : 'Oferowany przez TAKMA — 20 lat doświadczenia w branży AutoID.'}
-                {' '}Aktualizacja: {new Date().toLocaleDateString('pl-PL', { month: 'long', year: 'numeric' })}
-              </p>
+              <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500">
+                <span>
+                  {product.manufacturerId === 'zebra'
+                    ? 'Oferowany przez TAKMA — autoryzowanego partnera Zebra Technologies z 25-letnim doświadczeniem w branży AutoID.'
+                    : 'Oferowany przez TAKMA — 20 lat doświadczenia w branży AutoID.'}
+                </span>
+                <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-gray-100 rounded text-gray-600 font-medium">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+                  </svg>
+                  Aktualizacja: {product.createdAt ? new Date(product.createdAt).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' }) : new Date().toLocaleDateString('pl-PL', { month: 'long', year: 'numeric' })}
+                </span>
+              </div>
             </section>
 
             {/* Specyfikacja */}
@@ -616,7 +611,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   Specyfikacja techniczna
                 </h2>
-                <SpecsAccordion specs={product.specifications} />
+                <SpecsAccordion specs={product.specifications} productName={product.name} />
               </section>
             )}
 
@@ -673,11 +668,13 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 <div className="grid sm:grid-cols-2 gap-4">
                   {product.downloads.map((download, i) => {
                     const isExternal = download.url.startsWith('http')
+                    const isSerwisZebry = download.url.includes('serwis-zebry.pl')
+                    const externalRel = isSerwisZebry ? 'noopener' : 'noopener nofollow'
                     return (
                       <a
                         key={i}
                         href={download.url}
-                        {...(isExternal ? { target: '_blank', rel: 'noopener' } : {})}
+                        {...(isExternal ? { target: '_blank', rel: externalRel } : {})}
                         className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group"
                       >
                         <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors">
@@ -728,9 +725,10 @@ export default async function ProductPage({ params }: ProductPageProps) {
             {compatibleConsumables.length > 0 && (
               <RelatedProducts
                 id="etykiety-papierowe"
-                title={product.subcategoryIds?.includes('termiczne-drukarki-etykiet') ? 'Etykiety termiczne' : 'Etykiety papierowe termotransferowe'}
+                title={product.categoryId === 'drukarki-kart' ? 'Taśmy do drukarek kart' : product.categoryId === 'drukarki-opasek' ? 'Opaski identyfikacyjne' : product.subcategoryIds?.includes('termiczne-drukarki-etykiet') ? 'Etykiety termiczne' : 'Etykiety papierowe termotransferowe'}
                 products={compatibleConsumables as typeof products}
-                labels
+                labels={product.categoryId !== 'drukarki-kart' && product.categoryId !== 'drukarki-opasek'}
+                showDualButtons
               />
             )}
 
@@ -741,6 +739,27 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 title="Etykiety foliowe termotransferowe"
                 products={compatibleFoilLabels as typeof products}
                 labels
+                showDualButtons
+              />
+            )}
+
+            {/* Karty PCV */}
+            {relatedCards.length > 0 && (
+              <RelatedProducts
+                id="karty-pcv"
+                title="Karty PCV"
+                products={relatedCards as typeof products}
+                showDualButtons
+              />
+            )}
+
+            {/* Oprogramowanie */}
+            {relatedSoftware.length > 0 && (
+              <RelatedProducts
+                id="oprogramowanie"
+                title="Oprogramowanie"
+                products={relatedSoftware as typeof products}
+                showDualButtons
               />
             )}
 
@@ -751,6 +770,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 title="Akcesoria"
                 products={relatedAccessories as typeof products}
                 initialLimit={4}
+                showDualButtons
               />
             )}
           </div>
@@ -759,7 +779,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
       {/* Sticky mobile CTA */}
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 lg:hidden safe-bottom z-40">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
           {product.priceFrom && (
             <div className="flex-shrink-0">
               <span className="text-xl font-bold text-gray-900">
@@ -771,6 +791,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <div className="flex-1">
             <AddToRFQButton product={product} compact />
           </div>
+          <AskAboutProductButton productName={product.name} productSlug={product.slug} compact />
         </div>
       </div>
 

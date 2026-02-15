@@ -5,47 +5,44 @@ import { industryPages } from '@/data/industry-content'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://takma.com.pl'
+  const lastUpdated = new Date('2026-02-15')
 
   const staticPages: MetadataRoute.Sitemap = [
-    { url: baseUrl, lastModified: new Date(), changeFrequency: 'weekly', priority: 1.0 },
-    { url: `${baseUrl}/katalog`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${baseUrl}/drukarki-etykiet`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${baseUrl}/materialy-eksploatacyjne`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${baseUrl}/o-nas`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${baseUrl}/kontakt`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${baseUrl}/zapytanie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/polityka-prywatnosci`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.2 },
+    { url: baseUrl, lastModified: lastUpdated },
+    { url: `${baseUrl}/katalog`, lastModified: lastUpdated },
+    { url: `${baseUrl}/drukarki-etykiet`, lastModified: lastUpdated },
+    { url: `${baseUrl}/drukarki-kart`, lastModified: lastUpdated },
+    { url: `${baseUrl}/drukarki-opasek`, lastModified: lastUpdated },
+    { url: `${baseUrl}/materialy-eksploatacyjne`, lastModified: lastUpdated },
+    { url: `${baseUrl}/oprogramowanie`, lastModified: lastUpdated },
+    { url: `${baseUrl}/terminale-mobilne`, lastModified: lastUpdated },
+    { url: `${baseUrl}/o-nas`, lastModified: new Date('2025-12-01') },
+    { url: `${baseUrl}/kontakt`, lastModified: new Date('2025-12-01') },
+    { url: `${baseUrl}/zapytanie`, lastModified: new Date('2025-12-01') },
+    { url: `${baseUrl}/polityka-prywatnosci`, lastModified: new Date('2025-06-01') },
   ]
 
   const productPages: MetadataRoute.Sitemap = products.map((product) => ({
     url: `${baseUrl}/produkt/${product.slug}`,
     lastModified: new Date(product.createdAt),
-    changeFrequency: (product.isNew ? 'daily' : 'weekly') as 'daily' | 'weekly',
-    priority: product.isBestseller ? 0.9 : product.isNew ? 0.85 : 0.8,
   }))
 
   const subcategoryPages: MetadataRoute.Sitemap = subcategories.map((sub) => ({
     url: `${baseUrl}/${sub.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.85,
+    lastModified: lastUpdated,
   }))
 
   const guidePages: MetadataRoute.Sitemap = [
-    { url: `${baseUrl}/poradnik`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: `${baseUrl}/poradnik`, lastModified: lastUpdated },
     ...guides.map((guide) => ({
       url: `${baseUrl}/poradnik/${guide.slug}`,
       lastModified: new Date(guide.updatedAt),
-      changeFrequency: 'monthly' as const,
-      priority: 0.85,
     })),
   ]
 
   const industryLandingPages: MetadataRoute.Sitemap = industryPages.map((page) => ({
     url: `${baseUrl}/${page.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.85,
+    lastModified: lastUpdated,
   }))
 
   return [...staticPages, ...subcategoryPages, ...productPages, ...guidePages, ...industryLandingPages]

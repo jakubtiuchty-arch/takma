@@ -10,6 +10,7 @@ interface RelatedProductsProps {
   initialLimit?: number
   labels?: boolean
   id?: string
+  showDualButtons?: boolean
 }
 
 const ROW_SIZE = 4 // ilość kart w jednym wierszu (desktop xl:grid-cols-4)
@@ -123,7 +124,7 @@ function DimensionFilters({
   )
 }
 
-export default function RelatedProducts({ title, products, initialLimit, labels, id }: RelatedProductsProps) {
+export default function RelatedProducts({ title, products, initialLimit, labels, id, showDualButtons }: RelatedProductsProps) {
   const [visibleRows, setVisibleRows] = useState(1)
   const [selectedWidth, setSelectedWidth] = useState('')
   const [selectedHeight, setSelectedHeight] = useState('')
@@ -173,7 +174,7 @@ export default function RelatedProducts({ title, products, initialLimit, labels,
           <p className="text-sm text-gray-500 py-8 text-center">Brak etykiet o wybranych wymiarach</p>
         ) : (
           <>
-            <ProductGrid products={visible} columns={4} />
+            <ProductGrid products={visible} columns={4} showDualButtons={showDualButtons} />
 
             <div className="mt-5 text-center flex justify-center gap-3">
               {hasMore && (
@@ -205,7 +206,7 @@ export default function RelatedProducts({ title, products, initialLimit, labels,
   const capped = Math.max(limit, visibleCount)
   const visible = products.slice(0, capped)
   const hasMore = capped < products.length
-  const isExpanded = capped > limit && capped >= products.length
+  const isExpanded = visibleRows > 1 && capped >= products.length
 
   return (
     <section id={id}>
@@ -215,7 +216,7 @@ export default function RelatedProducts({ title, products, initialLimit, labels,
           <span className="text-sm text-gray-500">{products.length} produktów</span>
         )}
       </div>
-      <ProductGrid products={visible} columns={4} />
+      <ProductGrid products={visible} columns={4} showDualButtons={showDualButtons} />
       <div className="mt-5 text-center flex justify-center gap-3">
         {hasMore && (
           <button

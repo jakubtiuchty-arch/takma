@@ -36,7 +36,7 @@ export const industryPages: IndustryPage[] = [
   {
     slug: 'drukarki-etykiet-produkcja',
     name: 'Drukarki etykiet do produkcji',
-    seoTitle: 'Drukarka etykiet do produkcji i linii produkcyjnej | TAKMA',
+    seoTitle: 'Drukarka etykiet do produkcji i linii produkcyjnej',
     seoDescription: 'Drukarki etykiet przemysłowych do produkcji 24/7. Zebra ZT411, ZT610, ZT620 z integracją MES/SAP. Praca 3-zmianowa, odporność na pył i wibracje. Od 2 081 zł netto.',
     heroHeadline: 'Drukarki etykiet do produkcji i linii produkcyjnych',
     heroSubtext: 'Przemysłowe drukarki etykiet Zebra zaprojektowane do pracy ciągłej 24/7 na liniach produkcyjnych. Integracja z MES, SAP i systemami SCADA. Odporność na pył, wibracje i temperatury od 5°C do 40°C. Szeroka gama modeli od kompaktowych ZT111 (od 2 081 zł netto) po high-endowe ZT620 (od 12 417 zł netto) z 6-calową głowicą drukującą.',
@@ -238,7 +238,7 @@ export const industryPages: IndustryPage[] = [
   {
     slug: 'drukarki-etykiet-e-commerce',
     name: 'Drukarki etykiet do e-commerce',
-    seoTitle: 'Drukarka etykiet do e-commerce i sklepu internetowego | TAKMA',
+    seoTitle: 'Drukarka etykiet do e-commerce i sklepu internetowego',
     seoDescription: 'Drukarki etykiet do sklepu internetowego i e-commerce: InPost, DPD, DHL, Allegro, Amazon. Zebra od 621 zł netto. Porównanie modeli, integracja z BaseLinker. Doradztwo TAKMA.',
     heroHeadline: 'Drukarki etykiet do sklepu internetowego i e-commerce',
     heroSubtext: 'Drukuj etykiety kurierskie InPost, DPD, DHL i UPS bezpośrednio z BaseLinker, Allegro i WMS. Modele Zebra od 621 zł netto — od małego sklepu internetowego po centra fulfillment obsługujące 10 000+ paczek dziennie.',
@@ -598,7 +598,7 @@ export const industryPages: IndustryPage[] = [
   {
     slug: 'drukarki-etykiet-gastronomia',
     name: 'Drukarki etykiet do gastronomii',
-    seoTitle: 'Drukarka etykiet do gastronomii, restauracji i cateringu | TAKMA',
+    seoTitle: 'Drukarka etykiet do gastronomii, restauracji i cateringu',
     seoDescription: 'Drukarki etykiet do gastronomii i HoReCa: etykiety fresh z datą ważności, linerless, HACCP. Zebra od 620 zł netto. Doradztwo i wdrożenie — TAKMA.',
     heroHeadline: 'Drukarki etykiet do gastronomii i HoReCa',
     heroSubtext: 'Etykiety fresh z datą ważności, linerless bez odpadów, druk termiczny bez ribbona. Sprawdzone rozwiązania Zebra dla restauracji, hoteli, cateringu i sieci gastronomicznych — zgodne z HACCP i wymogami Sanepidu.',
@@ -948,7 +948,7 @@ export const industryPages: IndustryPage[] = [
   {
     slug: 'drukarki-etykiet-magazyn',
     name: 'Drukarki etykiet do magazynu',
-    seoTitle: 'Drukarka etykiet do magazynu i WMS — Zebra pick-pack-ship | TAKMA',
+    seoTitle: 'Drukarka etykiet do magazynu i WMS — Zebra pick-pack-ship',
     seoDescription: 'Drukarki etykiet do magazynu i centrum logistycznego: integracja z WMS, pick-pack-ship, etykiety lokalizacyjne. Zebra od 621 zł netto. Wydajność 24/7 dla magazynów.',
     heroHeadline: 'Drukarki etykiet do magazynu i centrum logistycznego',
     heroSubtext: 'Przemysłowe i biurkowe drukarki etykiet Zebra do operacji magazynowych: etykiety lokalizacyjne, pick-lists, shipping labels, inwentaryzacja. Integracja z WMS, SAP EWM i systemami pick-by-label. Od kompaktowych ZD220d (621 zł netto) do high-performance ZT620 (12 417 zł) z wydajnością 24/7.',
@@ -1240,7 +1240,7 @@ export const industryPages: IndustryPage[] = [
   {
     slug: 'drukarki-etykiet-logistyka',
     name: 'Drukarki etykiet do logistyki',
-    seoTitle: 'Drukarka etykiet do logistyki, TSL i spedycji | TAKMA',
+    seoTitle: 'Drukarka etykiet do logistyki, TSL i spedycji',
     seoDescription: 'Drukarki etykiet przemysłowych do logistyki i TSL: GS1-128, SSCC palety, cross-docking. Zebra od 621 zł netto. Integracja z WMS i TMS. Doradztwo — TAKMA.',
     heroHeadline: 'Drukarki etykiet do logistyki i branży TSL',
     heroSubtext: 'Przemysłowe drukarki etykiet Zebra zaprojektowane do centrum logistycznego, cross-docku, spedycji i magazynu wysyłkowego. Etykiety GS1-128, SSCC paletowe, shipping labels. Integracja z WMS, TMS i systemami kurierskimi. Modele od kompaktowych ZD220d (od 621 zł netto) po high-endowe ZT620 (od 12 417 zł netto) z 6-calową głowicą drukującą.',
@@ -1466,7 +1466,7 @@ export const industryPages: IndustryPage[] = [
   {
     slug: 'drukarki-etykiet-apteka',
     name: 'Drukarki etykiet do apteki i farmacji',
-    seoTitle: 'Drukarka etykiet do apteki i farmacji — FMD, GS1 DataMatrix | TAKMA',
+    seoTitle: 'Drukarka etykiet do apteki i farmacji — FMD, GS1 DataMatrix',
     seoDescription: 'Drukarki etykiet do aptek i farmacji — serializacja FMD, GS1 DataMatrix, opaski pacjenta, etykiety laboratoryjne. Zebra od 621 zł netto. Zgodność GMP/GDP.',
     heroHeadline: 'Drukarki etykiet do apteki, szpitala i farmacji',
     heroSubtext: 'Profesjonalne drukarki etykiet Zebra do aptek, szpitali i laboratoriów. Serializacja leków zgodna z FMD, druk GS1 DataMatrix, opaski identyfikacyjne pacjenta, etykiety laboratoryjne. Od 621 zł netto — zgodność z GMP, GDP i wymogami sanitarnymi.',

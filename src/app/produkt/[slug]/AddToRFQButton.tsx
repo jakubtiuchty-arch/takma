@@ -155,11 +155,14 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
     return <NotifyForm partNumber={pn} productName={product.name} compact={compact} />
   }
 
+  const isZebra = product.manufacturerId === 'zebra'
+  const activeVariant = isZebra ? 'zebra' : 'primary'
+
   if (compact) {
     return (
       <Button
         fullWidth
-        variant={inRFQ ? 'secondary' : 'primary'}
+        variant={inRFQ ? 'secondary' : activeVariant}
         onClick={handleAdd}
         leftIcon={inRFQ ? <CheckIcon size={18} /> : <PlusIcon size={18} />}
       >
@@ -172,7 +175,7 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
     <Button
       size="lg"
       fullWidth
-      variant={inRFQ ? 'secondary' : 'primary'}
+      variant={inRFQ ? 'secondary' : activeVariant}
       onClick={handleAdd}
       leftIcon={inRFQ ? <CheckIcon size={20} /> : <PlusIcon size={20} />}
     >

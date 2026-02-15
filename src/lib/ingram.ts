@@ -105,12 +105,19 @@ function extractAttribute(xml: string, tag: string, attr: string): string | null
 
 /**
  * Konwertuje Part Number Zebra na Ingram ItemID.
- * Wzór z dokumentacji: ZB + Part Number (z myślnikami).
+ * Zebra printers (PN starts with Z, P, K) → prefix ZB (Zebra)
+ * Symbol-heritage mobile/accessories (PN starts with W, MC, TC, CC, SG, CRD, SAC, BTRY, TRG, CBL) → prefix SB
  * Np. ZD4A042-30EM00EZ → ZBZD4A042-30EM00EZ
+ * Np. WLMT0-T22B6ABC2-A6 → SBWLMT0-T22B6ABC2-A6
  */
 function toIngramItemId(partNumber: string): string {
   const upper = partNumber.toUpperCase()
-  if (upper.startsWith('ZB')) return upper
+  if (upper.startsWith('ZB') || upper.startsWith('SB')) return upper
+  // Symbol-heritage products (terminale mobilne, skanery, akcesoria mobilne)
+  const sbPrefixes = ['W', 'MC', 'TC', 'CC', 'SG-', 'CRD-', 'SAC-', 'BTRY-', 'TRG-', 'CBL-', 'Z1A']
+  for (const prefix of sbPrefixes) {
+    if (upper.startsWith(prefix)) return 'SB' + upper
+  }
   return 'ZB' + upper
 }
 

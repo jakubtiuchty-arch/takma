@@ -8,12 +8,14 @@ interface ProductGridProps {
   products: Product[]
   variant?: 'grid' | 'list' | 'compact'
   columns?: 2 | 3 | 4
+  showDualButtons?: boolean
 }
 
 export default function ProductGrid({
   products,
   variant = 'grid',
   columns = 4,
+  showDualButtons = false,
 }: ProductGridProps) {
   if (products.length === 0) {
     return (
@@ -60,7 +62,7 @@ export default function ProductGrid({
   return (
     <div className={clsx('grid gap-6', gridCols[columns])}>
       {products.map((product) => (
-        <ProductCard key={product.id} product={product} variant="grid" />
+        <ProductCard key={product.id} product={product} variant="grid" showDualButtons={showDualButtons} />
       ))}
     </div>
   )

@@ -882,51 +882,117 @@ Profesjonalna analiza zakupowa powinna uwzględniać całkowity koszt posiadania
   },
 
   // ============================================
-  // OPASKI IDENTYFIKACYJNE
+  // DRUKARKI OPASEK IDENTYFIKACYJNYCH
   // ============================================
-  'opaski-identyfikacyjne': {
+  'drukarki-opasek': {
     definition: {
-      heading: 'Opaski identyfikacyjne Zebra Z-Band — bezpieczna identyfikacja pacjentów i gości',
-      content: 'Opaski identyfikacyjne Zebra Z-Band to drukowane opaski na nadgarstek z kodem kreskowym, używane przede wszystkim w szpitalach do identyfikacji pacjentów oraz na eventach i w parkach rozrywki do kontroli wstępu. Każda opaska jest unikalna — zawiera wydrukowane dane (imię, numer identyfikacyjny, kod kreskowy/QR), co eliminuje błędy ręcznego przepisywania. Zebra oferuje serie: Z-Band Direct (termiczne, ekonomiczne), Z-Band Fun (kolorowe, do eventów), Z-Band Ultra Soft (najdelikatniejsze, do noworodków i pediatrii). Opaski drukowane na dedykowanych drukarkach Zebra HC100 (legacy) i ZD510-HC lub adaptowalnych ZD421-HC/ZD621-HC.',
+      heading: 'Czym jest drukarka opasek identyfikacyjnych?',
+      content: 'Drukarka opasek identyfikacyjnych (ang. wristband printer) to dedykowane urządzenie do druku termicznego na jednorazowych opaskach na nadgarstek. W odróżnieniu od drukarek etykiet, drukarka opasek wykorzystuje system kartridżowy — gotowe wkłady z opaskami Z-Band, które wystarczy włożyć do drukarki. Smart Chip w kartridżu automatycznie kalibruje drukarkę (rozpoznaje rozmiar opaski, ustawia ciemność i prędkość druku). Operator nie musi ręcznie konfigurować żadnych parametrów. Zastosowania: identyfikacja pacjentów w szpitalach (kod kreskowy na opasce powiązany z systemem HIS/ADT), kontrola wstępu na eventach i w parkach rozrywki, identyfikacja gości w hotelach i SPA. Aktualny model: Zebra ZD510-HC (następca HC100).',
     },
     buyingGuide: {
-      heading: 'Jak wybrać opaski identyfikacyjne?',
+      heading: 'Jak wybrać drukarkę opasek identyfikacyjnych?',
       items: [
-        'Zastosowanie: szpital (Z-Band Direct, Ultra Soft) vs event (Z-Band Fun, kolorowe)',
-        'Rozmiar: dorosły (standardowy), pediatryczny (węższy), noworodkowy (najmniejszy) — sprawdź obwód nadgarstka',
-        'Materiał: standard (polietylen, Z-Band Direct), ultra miękki (Z-Band Ultra Soft — do noworodków, alergików)',
-        'Zamknięcie: klipsy plastikowe (standardowe), samoprzylepne (Z-Band QuickClip)',
-        'Kolor: biały (standard szpitalny), kolorowy (event — czerwony, niebieski, zielony, żółty, różowy)',
+        'Określ zastosowanie — szpital wymaga zasilacza klasy medycznej IEC 60601-1 i obudowy odpornej na dezynfekcję UV; eventy i parki rozrywki wymagają szybszego druku (102 mm/s na Z-Band Fun) i kolorowych opasek.',
+        'Sprawdź kompatybilność z systemem informatycznym — Zebra ZD510-HC obsługuje ZPL/ZPL II i XML, jest certyfikowana do pracy z Allscripts, CareFusion, Cerner, CPSI, Epic i McKesson. Zapytaj dział IT o wymagany protokół druku.',
+        'Wybierz łączność — wersja podstawowa (ZD51013-D0EE00FZ) ma USB, Ethernet i BLE; wersja z Wi-Fi (ZD51013-D0EB02FZ) pozwala na bezprzewodowe drukowanie z wielu stanowisk. Wi-Fi jest zalecane przy dużej liczbie punktów druku.',
+        'Dobierz opaski do grupy pacjentów — Z-Band Direct dla dorosłych (25×279 mm), dzieci (25×178 mm) i niemowląt (25×152 mm). Dla neonatologii z wrażliwą skórą: Z-Band UltraSoft. Dla eventów: Z-Band Fun (kolorowe) lub Splash (wodoodporne).',
+        'Zaplanuj zapas materiałów — opakowanie zbiorcze (sufiks "K") zawiera 6 kartridży. Szpital o 500 przyjęciach/miesiąc potrzebuje ok. 1 opakowania na 2 miesiące. Głowica (P1100266-003) wymaga wymiany co 50–100 tys. opasek.',
+        'Uwzględnij zdalne zarządzanie — ZD510-HC z Link-OS umożliwia centralne zarządzanie flotą drukarek przez Printer Profile Manager Enterprise, SOTI Connect lub VMware Workspace ONE. Kluczowe przy wdrożeniach w szpitalach wielooddziałowych.',
       ],
     },
-    expertAuthority: 'Opaski identyfikacyjne to niszowy, ale krytyczny segment — błędna identyfikacja pacjenta jest jednym z najczęstszych błędów medycznych na świecie. System Zebra Z-Band zintegrowany z HIS (Hospital Information System) eliminuje ryzyko pomyłki. TAKMA wdraża systemy identyfikacji pacjentów w szpitalach w Polsce, od doboru drukarek opasek po integrację z systemami informatycznymi.',
-    technicalDeepDive: 'Opaski Z-Band Direct są wykonane z polietylenu (PE) z jednostronnym powleczeniem termicznym — druk bezpośredni (DT) bez taśmy barwiącej. Klej zamykający jest formułowany tak, aby opaska nie otwierała się przypadkowo, ale mogła być przecięta nożyczkami przy wypisie. Z-Band Ultra Soft używa miększego polietylenu o grubości 0,15 mm (standard: 0,20 mm) z zaokrąglonymi krawędziami — certyfikowana do kontaktu ze skórą noworodków. Z-Band Fun jest dostępna w 6 kolorach z możliwością nadruku kodów kreskowych, tekstu i grafik — powszechnie stosowana na festiwalach, w aquaparkach i parkach rozrywki jako system cashless (powiązanie z kontem gościa).',
+    expertAuthority: 'TAKMA to Zebra Premier Business Partner i autoryzowane centrum serwisowe (Printer Repair Specialist). Wdrażamy systemy identyfikacji pacjentów w szpitalach w całej Polsce — od doboru drukarki i opasek, przez integrację z systemem HIS/ADT (Epic, Cerner, Allscripts), po szkolenie personelu medycznego i serwis on-site. Współpracujemy z serwis-zebry.pl — centrum serwisowym Zebra Technologies oferującym naprawy gwarancyjne i pogwarancyjne drukarek opasek.',
+    technicalDeepDive: `Zebra ZD510-HC to jedyna na rynku drukarka opasek z zasilaczem klasy medycznej IEC 60601-1:2012 — wymaganie w wielu placówkach szpitalnych. Obudowa jest odporna na regularne dezynfekowanie środkami chemicznymi (izopropanol, chlorheksydyna, betadyna) i promieniami UV — materiał nie degraduje się nawet przy wielokrotnym czyszczeniu.
+
+Porównanie z poprzednikiem HC100: ZD510-HC ma 4× więcej RAM (256 vs 64 MB), nowoczesną platformę Link-OS (vs legacy firmware), łączność Wi-Fi 802.11ac + BT 4.1 (vs opcja Wi-Fi b/g/n), NFC Print Touch do parowania przez dotknięcie smartfonem, Element Energy Equalizer (E3) wydłużający żywotność głowicy oraz certyfikat ENERGY STAR. Kartridże Z-Band są w 100% kompatybilne wstecz — przejście z HC100 na ZD510-HC nie wymaga zmiany opasek.
+
+Parametry druku: rozdzielczość 300 dpi (12 dots/mm), prędkość do 51 mm/s (healthcare) lub 102 mm/s (Z-Band Fun/Splash), szerokości opasek: 19,05 / 25,4 / 30,16 mm, długość druku: 76–558 mm. Pamięć: 256 MB RAM + 512 MB Flash. Języki: ZPL, ZPL II, XML, opcja ZBI 2.0. Kody kreskowe 1D (Code 128, GS1 DataBar) i 2D (QR Code, Data Matrix, PDF417).
+
+Koszty eksploatacji (TCO): opaska Z-Band Direct = ok. 0,70–0,90 zł/szt. Brak taśmy barwiącej (druk termiczny bezpośredni). Głowica P1100266-003 = ok. 680 zł, wymiana co 50–100 tys. opasek. Wałek P1100266-008 = ok. 554 zł. TCO drukarki opasek jest znacząco niższy niż druk termotransferowy na zwykłych drukarkach etykiet z opaskami adaptowanymi.`,
     useCases: [
-      { title: 'Szpital — identyfikacja pacjentów', description: 'Z-Band Direct/Ultra Soft na drukarce ZD510-HC — każdy pacjent przy przyjęciu otrzymuje opaskę z kodem kreskowym powiązanym z HIS. Personel skanuje opaskę przed każdą procedurą (podanie leku, badanie, operacja). Eliminuje pomyłki identyfikacji.' },
-      { title: 'Event i festiwal — kontrola wstępu', description: 'Z-Band Fun kolorowe na drukarce HC100 — uczestnicy otrzymują opaskę z kodem QR przy wejściu. Kolor oznacza strefę dostępu (VIP, standard, backstage). System cashless: opaska powiązana z kontem prepaid.' },
-      { title: 'Park rozrywki i aquapark', description: 'Z-Band Fun wodoodporne — wytrzymują zanurzenie, pot i krem do opalania. Kod kreskowy na opasce służy jako klucz do szafki i system płatności wewnątrz obiektu.' },
+      {
+        title: 'Szpitale — identyfikacja pacjentów',
+        description: 'Drukowanie opasek z kodem kreskowym przy rejestracji pacjenta na SOR, izbie przyjęć i oddziałach. Skanowanie opaski przed podaniem leku, pobraniem krwi, badaniem diagnostycznym i zabiegiem operacyjnym. Zgodność z zasadami „5 Praw" farmakoterapii i wymogami akredytacji szpitalnej (Joint Commission, CMJ).',
+      },
+      {
+        title: 'Neonatologia i porodówki',
+        description: 'Opaski niemowlęce Z-Band Direct (25×152 mm) lub ultramiękkie Z-Band UltraSoft (19×279 mm) do identyfikacji noworodków. Kojarzenie noworodek–matka (mother-baby matching) przez skanowanie kodów kreskowych. Opaski bezlateksowe z powłoką antybakteryjną.',
+      },
+      {
+        title: 'Banki krwi i laboratoria',
+        description: 'Identyfikacja dawców krwi i pacjentów biorców. Opaski Z-Band z kodem kreskowym powiązanym z systemem laboratoryjnym (LIMS) eliminują ryzyko pomyłki przy pobraniu i podaniu preparatów krwiopochodnych. Kody 2D (QR/DataMatrix) na opaskach zawierają więcej danych niż tradycyjne kody 1D.',
+      },
+      {
+        title: 'Eventy, koncerty i parki rozrywki',
+        description: 'Kolorowe opaski Z-Band Fun (7 kolorów) jako kontrola wstępu i identyfikacja stref (VIP, standard, backstage). Opaski Z-Band Splash (wodoodporne) do aquaparków. Szybki druk na ZD510-HC z prędkością 102 mm/s — nawet duże eventy obsłużone bez kolejek.',
+      },
     ],
     uniqueInsights: {
-      heading: 'Dlaczego opaski Zebra dominują w szpitalach?',
+      heading: 'Co warto wiedzieć przed zakupem drukarki opasek?',
       items: [
-        { title: 'Compliance z Joint Commission i akredytacją CMJ', text: 'Joint Commission International i Centrum Monitorowania Jakości w Ochronie Zdrowia wymagają dwóch niezależnych identyfikatorów pacjenta. Opaska z kodem kreskowym + imieniem to standard spełniający te wymogi.' },
-        { title: 'Odporność na środki dezynfekcyjne', text: 'Opaski Z-Band wytrzymują wielokrotne przecieranie środkami dezynfekcyjnymi (izopropanol, chlorheksydyna) bez utraty czytelności nadruku — kluczowe w reżimie sanitarnym szpitala.' },
+        {
+          title: 'Zasilacz medyczny to nie opcja — to wymóg',
+          text: 'Wiele szpitali wymaga zasilacza zgodnego z IEC 60601-1 przy urządzeniach używanych w pobliżu pacjentów. ZD510-HC ma go w standardzie — jedyna drukarka opasek na rynku z tym certyfikatem. Konkurencyjne drukarki (SATO WS2, Honeywell PC23d w trybie wristband) używają zasilaczy standardowych.',
+        },
+        {
+          title: 'Smart Chip eliminuje 90% zgłoszeń serwisowych',
+          text: 'Najczęstszą przyczyną problemów z drukarkami opasek była błędna kalibracja po wymianie mediów. Smart Chip w kartridżach Z-Band automatycznie konfiguruje ciemność, prędkość i pozycję druku — personel medyczny nie musi znać się na ustawieniach drukarki.',
+        },
+        {
+          title: 'ZD510-HC to inwestycja na 5–7 lat',
+          text: 'Drukarka opasek nie jest urządzeniem o dużym zużyciu mechanicznym (wolumen druku w szpitalu to zwykle 50–200 opasek/dzień). Przy prawidłowej konserwacji (wymiana głowicy co 50–100 tys. opasek) ZD510-HC będzie pracować bezawaryjnie przez wiele lat.',
+        },
+        {
+          title: 'Pełna kompatybilność wstecz z HC100',
+          text: 'Jeśli szpital ma zapas kartridży Z-Band do starej HC100 — można je bez zmian użyć w nowej ZD510-HC. Przejście na nowszy model nie generuje strat materiałowych.',
+        },
+        {
+          title: 'Drukarka opasek vs drukarka etykiet z adapterem',
+          text: 'Niektóre drukarki biurkowe (ZD421-HC, ZD621-HC) obsługują opaski przez adapter — ale wymagają ręcznej kalibracji i nie mają zasilacza medycznego. Dedykowana ZD510-HC z systemem kartridżowym jest szybsza we wdrożeniu i prostsza w obsłudze dla personelu nieznającego się na drukarkach.',
+        },
       ],
     },
     faq: [
-      { question: 'Na jakich drukarkach drukuje się opaski Zebra Z-Band?', answer: 'Dedykowane drukarki opasek: Zebra ZD510-HC (aktualna), Zebra HC100 (legacy). Drukarki biurkowe z adapterem: ZD421-HC, ZD621-HC. Wszystkie drukarki opasek są termiczne (DT) — nie wymagają taśmy barwiącej.' },
-      { question: 'Czy opaski Z-Band są wodoodporne?', answer: 'Tak — opaski Z-Band Direct i Z-Band Fun są odporne na wodę, pot i krem do opalania. Nadruk termiczny na powleczonym polietylenie nie rozmazuje się po kontakcie z wodą, co sprawia że są idealne do aquaparków i aktywności fizycznych.' },
-      { question: 'Jakie rozmiary opasek są dostępne?', answer: 'Dorosły: 25 mm × 279 mm (obwód nadgarstka do 200 mm). Pediatryczny: 25 mm × 178 mm (obwód do 130 mm). Noworodkowy: 19 mm × 178 mm (obwód do 100 mm). Z-Band Ultra Soft dostępna we wszystkich rozmiarach.' },
-      { question: 'Ile kosztują opaski identyfikacyjne?', answer: 'Cena zależy od serii i rozmiaru. Z-Band Direct (standard): od 120 zł za 300 szt. Z-Band Fun (kolorowe): od 150 zł za 300 szt. Z-Band Ultra Soft (noworodkowe): od 180 zł za 300 szt. Cena per opaska: 0,40–0,60 zł.' },
-      { question: 'Czy mogę drukować na opaskach kody QR?', answer: 'Tak — drukarki opasek Zebra obsługują kody 1D (Code 128, Code 39) i 2D (QR, DataMatrix). Kody QR są coraz popularniejsze — mogą zawierać więcej danych i są szybciej skanowane. Zalecana rozdzielczość druku: 300 dpi.' },
+      {
+        question: 'Ile kosztuje drukarka opasek identyfikacyjnych?',
+        answer: 'Zebra ZD510-HC w wersji podstawowej (USB, Ethernet, BLE) kosztuje od 2 674 zł netto. Wersja z Wi-Fi 802.11ac + Bluetooth 4.1 od ok. 3 200 zł netto (w zależności od dostępności w Ingram). Do tego dochodzą opaski Z-Band — od 1 081 zł za opakowanie 1 200 szt. (dorosłe).',
+      },
+      {
+        question: 'Jakie opaski pasują do drukarki ZD510-HC?',
+        answer: 'ZD510-HC obsługuje wszystkie opaski Zebra Z-Band w kartridżach: Direct (termiczne, do healthcare), UltraSoft (najmiększe, do neonatologii), QuickClip (zamknięcie klipsowe), Fun (kolorowe, do eventów) i Splash (wodoodporne). Rozmiary: dorosły 25×279 mm, dziecko 25×178 mm, niemowlę 25×152 mm.',
+      },
+      {
+        question: 'Czy ZD510-HC jest kompatybilna z systemem szpitalnym (HIS/ADT)?',
+        answer: 'Tak. ZD510-HC jest certyfikowana do współpracy z: Allscripts, CareFusion, Cerner, CPSI, Epic i McKesson. Obsługuje języki ZPL II i XML, co zapewnia kompatybilność z praktycznie każdym systemem informatycznym szpitala. Integracja wymaga konfiguracji szablonu druku w systemie HIS.',
+      },
+      {
+        question: 'Czym ZD510-HC różni się od starszego modelu HC100?',
+        answer: 'ZD510-HC to następca HC100 z istotnymi ulepszeniami: platforma Link-OS (zdalne zarządzanie), 256 MB RAM (vs 64 MB), Wi-Fi 802.11ac + BT 4.1 (vs opcja b/g/n), NFC Print Touch, Element Energy Equalizer (E3), certyfikat ENERGY STAR, obudowa UV-odporna. Kartridże Z-Band w 100% kompatybilne wstecz.',
+      },
+      {
+        question: 'Czy można dezynfekować drukarkę ZD510-HC?',
+        answer: 'Tak. Obudowa ZD510-HC jest odporna na UV i środki dezynfekcyjne (izopropanol, chlorheksydyna, betadyna). Można ją regularnie czyścić silnymi preparatami chemicznymi bez degradacji materiału — kluczowe w środowisku szpitalnym z restrykcyjnymi wymogami kontroli zakażeń.',
+      },
+      {
+        question: 'Ile kosztuje eksploatacja drukarki opasek (TCO)?',
+        answer: 'Główny koszt to kartridże Z-Band: ok. 0,70–0,90 zł za opaskę (w zależności od rozmiaru). Brak taśmy barwiącej (druk termiczny). Głowica drukująca P1100266-003 (ok. 680 zł) wymaga wymiany co 50–100 tys. opasek. Przy 100 opaskach/dzień głowica wystarczy na 1,5–3 lata.',
+      },
+      {
+        question: 'Jakie są alternatywy dla drukarki opasek Zebra ZD510-HC?',
+        answer: 'Alternatywami są: SATO WS2/WS4 (kompaktowe drukarki opasek SoftTouch), Honeywell PC23d w trybie wristband (ogólnego przeznaczenia, bez zasilacza medycznego), drukarki biurkowe Zebra ZD421-HC/ZD621-HC z adapterem do opasek (wymagają ręcznej kalibracji). ZD510-HC to jedyna dedykowana drukarka opasek z zasilaczem IEC 60601-1, systemem Smart Chip i obudową UV-odporną.',
+      },
     ],
     comparisons: [
-      { title: 'Z-Band Direct vs Z-Band Fun vs Z-Band Ultra Soft', content: 'Z-Band Direct: biała, standard szpitalny, polietylen 0,20 mm, ekonomiczna. Z-Band Fun: 6 kolorów, do eventów i parków, polietylen 0,20 mm. Z-Band Ultra Soft: biała, najdelikatniejsza, polietylen 0,15 mm, zaokrąglone krawędzie, do noworodków i alergików. Wszystkie wodoodporne, druk termiczny.' },
+      {
+        title: 'Zebra ZD510-HC vs HC100 (poprzednik)',
+        content: 'ZD510-HC: Link-OS, 256 MB RAM, Wi-Fi 802.11ac + BT 4.1, BLE, NFC Print Touch, E3, ENERGY STAR, obudowa UV-odporna, zasilacz IEC 60601-1, cena od 2 674 zł. HC100 (wycofana): legacy firmware, 64 MB RAM, USB + Ethernet + opcja Wi-Fi b/g/n, brak NFC, brak E3, brak ENERGY STAR. Kartridże Z-Band w 100% kompatybilne wstecz.',
+      },
     ],
     howToSteps: [
-      { name: 'Określ zastosowanie i wymagania', text: 'Szpital → Z-Band Direct lub Ultra Soft. Event → Z-Band Fun (kolorowe). Noworodki → Z-Band Ultra Soft (obowiązkowo).' },
-      { name: 'Dobierz rozmiar i kolor', text: 'Dorosły/pediatryczny/noworodkowy. Biały (szpital) lub kolorowy (event — kolor = strefa dostępu).' },
-      { name: 'Wybierz drukarkę i zamów', text: 'Nowa instalacja → Zebra ZD510-HC. Istniejąca drukarka biurkowa → adapter HC do ZD421/ZD621. Zamów opaski w paczkach po 300 szt.' },
+      { name: 'Określ zastosowanie i wymagania', text: 'Szpital → zasilacz medyczny IEC 60601-1 (ZD510-HC w standardzie). Event/park → szybki druk 102 mm/s (Z-Band Fun/Splash). Oba → Wi-Fi do druku z wielu stanowisk.' },
+      { name: 'Wybierz wariant drukarki', text: 'ZD51013-D0EE00FZ (USB + Ethernet + BLE, od 2 674 zł) — wystarcza do stanowisk z kablem sieciowym. ZD51013-D0EB02FZ (+ Wi-Fi + BT 4.1) — do bezprzewodowego druku z terminali mobilnych i laptopów.' },
+      { name: 'Dobierz opaski do grupy pacjentów', text: 'Dorośli → Z-Band Direct 10006995K (1 200 szt./opak.). Dzieci → 10006999K (1 800 szt.). Niemowlęta → 10006998K (2 100 szt.). Neonatologia → Z-Band UltraSoft 10015355K.' },
+      { name: 'Skonfiguruj integrację z HIS/ADT', text: 'Połącz drukarkę z siecią szpitalną (Ethernet lub Wi-Fi). Skonfiguruj szablon druku opaski w systemie HIS (Epic, Cerner itd.) — format ZPL II lub XML. Testuj druk i skanowanie kodów kreskowych.' },
+      { name: 'Zamów zapas materiałów i akcesoriów', text: 'Opaski na 3–6 miesięcy + głowica zapasowa P1100266-003 (ok. 680 zł). Wałek dociskowy P1100266-008 (ok. 554 zł) przy pogorszeniu jakości druku. Karty czyszczące 61332M do regularnej konserwacji.' },
     ],
   },
 
@@ -1053,6 +1119,377 @@ Przykładowa kalkulacja TCO (Total Cost of Ownership) dla floty 10 mobilnych dru
       { name: 'Dobierz łączność do infrastruktury', text: 'Parowanie 1:1 z terminalem → Bluetooth 5.0. Flota 10+ drukarek → Wi-Fi 802.11ac z centralnym zarządzaniem. Oba → dual-mode BT + Wi-Fi.' },
       { name: 'Zaplanuj zasilanie na zmianę', text: 'Jedna zmiana, <500 etykiet → jedna bateria wystarczy. Dwie zmiany lub >500 etykiet → bateria zapasowa + stacja ładowania. Trzy zmiany → stacja wielogniazdowa (4–8 baterii).' },
       { name: 'Zamów drukarkę z akcesoriami', text: 'Drukarka + klips do pasa lub pasek na ramię + bateria zapasowa + etykiety termiczne w małych rolkach (śr. 40–65 mm). Dla flot: stacja ładowania wielogniazdowa + walizka transportowa.' },
+    ],
+  },
+  'opaski-identyfikacyjne': {
+    definition: {
+      heading: 'Czym są opaski identyfikacyjne?',
+      content: 'Opaski identyfikacyjne (ang. wristbands) to jednorazowe opaski na nadgarstek lub kostkę, na których drukarka termiczna nadrukuje imię i nazwisko, kod kreskowy (1D lub 2D), datę przyjęcia i inne dane identyfikacyjne. W szpitalach służą do precyzyjnej identyfikacji pacjentów — zgodnie z wymogami akredytacji szpitalnej i zasadami „5 Praw" podania leku (prawidłowy pacjent, lek, dawka, droga podania, pora). Na eventach, w parkach rozrywki i aquaparkach działają jako kontrola wstępu, system stref VIP i opaski cashless. Opaski Zebra Z-Band są drukowane na dedykowanych drukarkach kartridżowych ZD510-HC i HC100 — system Smart Chip automatycznie kalibruje drukarkę po włożeniu kartridża, eliminując błędy konfiguracji.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać opaski identyfikacyjne?',
+      items: [
+        'Określ grupę pacjentów — dorośli (25×279 mm / 1"×11"), dzieci (25×178 mm / 1"×7"), niemowlęta (25×152 mm / 1"×6"). Dla neonatologii rozważ opaski Z-Band UltraSoft — najmiększy materiał na rynku.',
+        'Wybierz typ zapięcia — Z-Band Direct: zapięcie samoprzylepne (najpopularniejsze); Z-Band QuickClip: zamknięcie klipsowe (szybsze zakładanie); Z-Band UltraSoft: samoprzylepne, ultramiękkie dla noworodków i pacjentów z wrażliwą skórą.',
+        'Sprawdź wymagania środowiskowe — standardowe Z-Band Direct wystarczą do oddziałów szpitalnych; Z-Band Fun i Splash (wodoodporne, kolorowe) do eventów, aquaparków i parków rozrywki.',
+        'Oblicz zużycie miesięczne — opakowania zbiorcze (sufiks "K") zawierają 3–6 kartridży po 175–350 opasek. Szpital o 500 przyjęciach/miesiąc potrzebuje ok. 1 opakowania Z-Band Direct Adult na 2 miesiące.',
+        'Uwzględnij powłokę antybakteryjną — opaski Zebra Z-Band posiadają unikalną powłokę antimicrobial, której nie oferuje żadna konkurencja. Jest to istotne w szpitalach z restrykcyjnymi wymogami kontroli zakażeń.',
+        'Zadbaj o drukarkę — opaski Z-Band w kartridżach są kompatybilne z Zebra ZD510-HC (aktualna generacja) i HC100 (model wycofany). Jeśli nie masz drukarki, zamów ZD510-HC z opakami — cena drukarki od 2 674 zł netto.',
+      ],
+    },
+    expertAuthority: 'TAKMA to autoryzowany partner Zebra Technologies z wieloletnim doświadczeniem we wdrożeniach systemów identyfikacji pacjentów w polskich szpitalach. Nasi inżynierowie przeprowadzili wdrożenia drukarek opasek identyfikacyjnych na oddziałach: SOR, neonatologia, chirurgia, onkologia i laboratoria. Oferujemy pełne wsparcie: od doboru opaski i drukarki, przez integrację z systemem HIS/ADT, po szkolenie personelu medycznego. Współpracujemy z serwis-zebry.pl — centrum serwisowym Zebra Technologies w Polsce.',
+    technicalDeepDive: `Opaski Zebra Z-Band to jedyne na rynku opaski identyfikacyjne z powłoką antybakteryjną (antimicrobial coating). Testy laboratoryjne Zebra potwierdzają 2–6-krotnie większą trwałość nadruku w porównaniu z opaskami konkurencji — kody kreskowe pozostają skanowalne po ekspozycji na wodę, mydło, piany, alkohole, betadynę i inne środki dezynfekcyjne.
+
+System kartridżowy z chipem Smart Chip eliminuje problem kalibracji — po włożeniu kartridża drukarka ZD510-HC automatycznie rozpoznaje typ opaski (rozmiar, materiał) i ustawia optymalną ciemność, prędkość i pozycję druku. Operatorzy nie muszą ręcznie konfigurować parametrów, co eliminuje błędy i przestoje.
+
+Cena pojedynczej opaski Z-Band Direct: Adult (10006995K) = ok. 0,90 zł/szt. (1 080 zł / 1 200 szt.), Child (10006999K) = ok. 0,70 zł/szt. (1 266 zł / 1 800 szt.), Infant (10006998K) = ok. 0,68 zł/szt. (1 425 zł / 2 100 szt.). Wszystkie opaski są bezlateksowe (latex-free) i MR-Safe (bezpieczne w MRI).
+
+Porównanie materiałów opasek Zebra Z-Band: Direct (polipropylen, najtańszy, zapięcie samoprzylepne) — UltraSoft (najmiększy, do noworodków, zapięcie permanentne) — QuickClip (zamknięcie klipsowe, szybkie nakładanie na dużą liczbę pacjentów) — Fun (kolorowe, 7 kolorów, do eventów) — Splash (wodoodporne, do aquaparków).`,
+    useCases: [
+      {
+        title: 'Szpitalne oddziały ogólne (SOR, interny, chirurgia)',
+        description: 'Identyfikacja pacjentów dorosłych z kodem kreskowym na opasce Z-Band Direct (25×279 mm). Skanowanie przed podaniem leku, pobraniem krwi, badaniem diagnostycznym. Zgodność z zasadami „5 Praw" farmakoterapii i wymogami akredytacji szpitalnej.',
+      },
+      {
+        title: 'Neonatologia i porodówki',
+        description: 'Identyfikacja noworodków opaskami Z-Band Direct Infant (25×152 mm) lub Z-Band UltraSoft (najmiększe). Kojarzenie noworodek–matka (mother-baby matching) przez skanowanie kodów kreskowych. Opaski bezlateksowe, bezpieczne dla delikatnej skóry.',
+      },
+      {
+        title: 'Banki krwi i laboratoria',
+        description: 'Identyfikacja dawców krwi i pacjentów biorców. Opaski Z-Band z kodem kreskowym powiązanym z systemem laboratoryjnym eliminują ryzyko pomyłki przy pobraniu i podaniu preparatów krwiopochodnych.',
+      },
+      {
+        title: 'Eventy, koncerty i parki rozrywki',
+        description: 'Kolorowe opaski Z-Band Fun (7 kolorów) jako kontrola wstępu i rozróżnienie stref (VIP, standard, backstage). Opaski Z-Band Splash (wodoodporne) do aquaparków. Szybki druk na ZD510-HC z prędkością 102 mm/s.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Co warto wiedzieć przed zakupem opasek identyfikacyjnych?',
+      items: [
+        {
+          title: 'Powłoka antybakteryjna to nie gadżet',
+          text: 'Opaski Z-Band Direct mają unikalną powłokę antimicrobial — potwierdzoną laboratoryjnie skuteczność przeciw bakteriom. W środowisku szpitalnym z restrykcyjnymi wymogami kontroli zakażeń jest to realny argument przy wyborze dostawcy.',
+        },
+        {
+          title: 'Smart Chip eliminuje błędy kalibracji',
+          text: 'Chip w kartridżu Z-Band automatycznie konfiguruje drukarkę — prędkość, ciemność, pozycję druku. Personel medyczny nie musi znać się na ustawieniach drukarki. Każda wymiana kartridża trwa kilka sekund.',
+        },
+        {
+          title: 'Koszt pojedynczej opaski to ok. 0,70–0,90 zł',
+          text: 'Przy opakowaniach zbiorczych (6 kartridży) koszt jednostkowy spada do 0,68 zł (niemowlęta) – 0,90 zł (dorośli). Brak taśmy barwiącej (druk termiczny) eliminuje dodatkowy materiał eksploatacyjny.',
+        },
+        {
+          title: 'Opaski HC100 i ZD510-HC są w pełni wymienne',
+          text: 'Kartridże Z-Band są kompatybilne wstecz — te same wkłady działają w starej HC100 i nowej ZD510-HC. Przejście na nowszy model drukarki nie wymaga zmiany opasek ani dostawcy materiałów.',
+        },
+        {
+          title: 'Trwałość nadruku: 2–6× lepsza niż u konkurencji',
+          text: 'Testy laboratoryjne Zebra potwierdzają, że kody kreskowe na opaskach Z-Band pozostają skanowalne 2–6 razy dłużej niż u konkurencji po ekspozycji na wodę, mydło, alkohole i środki dezynfekcyjne. Kluczowe dla szpitali z wielodniowymi pobytami pacjentów.',
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Ile kosztuje opaska identyfikacyjna Zebra Z-Band?',
+        answer: 'Koszt pojedynczej opaski Z-Band Direct: dla dorosłych ok. 0,90 zł/szt. (opakowanie 10006995K = 1 200 szt. za 1 081 zł netto), dla dzieci ok. 0,70 zł/szt. (10006999K = 1 800 szt. za 1 266 zł netto), dla niemowląt ok. 0,68 zł/szt. (10006998K = 2 100 szt. za 1 425 zł netto). Ceny netto, dane z lutego 2026.',
+      },
+      {
+        question: 'Do jakiej drukarki pasują opaski Z-Band?',
+        answer: 'Opaski Z-Band w kartridżach pasują do drukarek Zebra ZD510-HC (aktualna generacja, cena od 2 674 zł netto) i HC100 (model wycofany z produkcji). Kartridże są kompatybilne wstecz — te same opaski działają w obu drukarkach.',
+      },
+      {
+        question: 'Czy opaski Z-Band są odporne na wodę i dezynfekcję?',
+        answer: 'Tak. Opaski Z-Band Direct i UltraSoft są odporne na wodę, mydło, pianki, alkohole, betadynę i inne środki dezynfekcyjne stosowane w szpitalach. Kody kreskowe pozostają skanowalne przez cały czas pobytu pacjenta — potwierdzone testami laboratoryjnymi (2–6× trwalsze niż konkurencja).',
+      },
+      {
+        question: 'Jakie opaski wybrać do neonatologii?',
+        answer: 'Do noworodków rekomendujemy: Z-Band Direct Infant 10006998K (25×152 mm, najtańsze) lub Z-Band UltraSoft 10015356K (19×279 mm, najmiększy materiał — dedykowane do neonatologii i wcześniaków). Oba typy są bezlateksowe (latex-free) i posiadają powłokę antybakteryjną.',
+      },
+      {
+        question: 'Ile opasek jest w jednym opakowaniu (kartonie)?',
+        answer: 'Opakowania zbiorcze (sufiks "K"): Z-Band Direct Adult (10006995K) = 6 kartridży × 200 = 1 200 szt.; Child (10006999K) = 6 × 300 = 1 800 szt.; Infant (10006998K) = 6 × 350 = 2 100 szt. Z-Band UltraSoft Adult (10015355K) = 6 × 175 = 1 050 szt.',
+      },
+      {
+        question: 'Czym różnią się opaski Z-Band Direct od Z-Band UltraSoft?',
+        answer: 'Z-Band Direct: polipropylen, zapięcie samoprzylepne, ekonomiczne — standard do oddziałów szpitalnych. Z-Band UltraSoft: najmiększy materiał na rynku, zapięcie permanentne — dedykowane do neonatologii i pacjentów z wrażliwą lub uszkodzoną skórą. Oba typy mają powłokę antybakteryjną i są bezlateksowe.',
+      },
+      {
+        question: 'Jakie są alternatywy dla opasek Zebra Z-Band?',
+        answer: 'Alternatywami są: opaski SATO SoftTouch (do drukarek SATO WS2/WS4), opaski PDC Healthcare (do drukarek PDC Certis), generyczne opaski z Chin (bez powłoki antybakteryjnej). Zebra Z-Band to jedyne opaski z powłoką antimicrobial i systemem kartridżowym Smart Chip — standard w szpitalach w Polsce i Europie.',
+      },
+    ],
+    comparisons: [
+      {
+        title: 'Porównanie opasek Z-Band Direct vs Z-Band UltraSoft',
+        content: 'Z-Band Direct: polipropylen, zapięcie samoprzylepne (adhesive), cena ok. 0,68–0,90 zł/szt., rozmiary dla dorosłych/dzieci/niemowląt. Z-Band UltraSoft: najmiększy materiał, zapięcie permanentne, cena ok. 1,00–1,20 zł/szt., rozmiary 1"×11" i 0,75"×11". Oba typy: powłoka antybakteryjna, Smart Chip, druk termiczny bezpośredni, kompatybilne z ZD510-HC i HC100.',
+      },
+    ],
+    howToSteps: [
+      { name: 'Określ grupę pacjentów', text: 'Dorośli → Z-Band Direct 25×279 mm (10006995K); Dzieci → 25×178 mm (10006999K); Niemowlęta → 25×152 mm (10006998K); Neonatologia z wrażliwą skórą → Z-Band UltraSoft (10015355K/10015356K).' },
+      { name: 'Oblicz miesięczne zużycie', text: 'Policz średnią liczbę przyjęć miesięcznie × opaski na pacjenta (zazwyczaj 1 szt.). Szpital o 500 przyjęciach/mies. → 1 opakowanie Z-Band Direct Adult na 2+ miesiące (1 200 szt.).' },
+      { name: 'Sprawdź drukarkę', text: 'Opaski Z-Band wymagają drukarki Zebra ZD510-HC (zalecana, od 2 674 zł) lub HC100 (wycofana). Jeśli nie masz drukarki, zamów zestaw: drukarka + opaski.' },
+      { name: 'Skonfiguruj integrację z HIS/ADT', text: 'ZD510-HC obsługuje ZPL II i XML — kompatybilna z systemami Allscripts, CareFusion, Cerner, CPSI, Epic, McKesson. Wymaga konfiguracji szablonu druku w systemie szpitalnym.' },
+      { name: 'Zamów zapas opasek i akcesoriów', text: 'Zapas opasek na 3–6 miesięcy + głowica zapasowa (P1100266-003, ok. 680 zł) do wymiany co 50–100 tys. opasek. Wałek dociskowy (P1100266-008, ok. 554 zł) przy pogorszeniu jakości druku.' },
+    ],
+  },
+  'terminale-mobilne': {
+    definition: {
+      heading: 'Co to jest terminal mobilny (kolektor danych)?',
+      content: 'Terminal mobilny (kolektor danych, ang. mobile computer / handheld terminal) to wytrzymały komputer przenośny z wbudowanym skanerem kodów kreskowych, zaprojektowany do profesjonalnej pracy w magazynie, logistyce, produkcji, handlu detalicznym i służbie zdrowia. W odróżnieniu od zwykłych smartfonów, terminale mobilne klasy enterprise posiadają: skanery 1D/2D klasy przemysłowej (SE4710, SE4770, SE55) skanujące zniszczone i zadrukowane kody z odległości do 60 cm, obudowy odporne na upadki z 1,2–2,4 m na beton i klasy ochrony IP65/IP67/IP68, wymienne baterie hot-swap (3 100–7 000 mAh) na 10–14 godzin pracy, oraz system Android klasy enterprise z 5–10-letnim wsparciem aktualizacji bezpieczeństwa (GMS/AOSP). Terminale mobilne obsługują Wi-Fi 6/6E, Bluetooth 5.1, NFC i opcjonalnie 4G LTE/5G. Zarządzanie flotą odbywa się przez MDM (Mobile Device Management) i OEMConfig. Ceny terminali mobilnych enterprise zaczynają się od ok. 3 000 zł netto za modele entry-level (Zebra TC22) do ponad 15 000 zł za urządzenia z klawiaturą fizyczną i rozszerzonym zasięgiem skanowania (Zebra MC3300).',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać terminal mobilny?',
+      items: [
+        'Środowisko pracy — suchy magazyn z regałami → IP65, upadki z 1,2 m wystarczą (TC22/TC27). Chłodnia, rampa załadunkowa, praca na zewnątrz → IP67+, upadki z 1,8 m (TC52/TC57). Produkcja, agresywne środowiska → IP67/IP68, pełna klawiatura fizyczna (MC3300).',
+        'Typ skanera — SE4710: standardowy imager 1D/2D, zasięg do 35 cm, idealna do magazynu. SE4770: rozszerzony zasięg do 60 cm, skanowanie z daleka (wysokie regały, palety). SE55: skaner nowej generacji z IntelliFocus — odczyt kodów od 10 cm do 7,6 m. Do prostych zastosowań (retail, inwentaryzacja) wystarczy SE4710.',
+        'Dotykowy czy z klawiaturą fizyczną — ekran dotykowy (TC22, TC52): intuicyjny, lżejszy, szybszy onboarding pracowników. Klawiatura fizyczna (MC3300): niezbędna do intensywnego wprowadzania danych liczbowych (numery partii, ilości) — znacznie szybsza niż klawiatura ekranowa.',
+        'Łączność — Wi-Fi 6/6E: standard do pracy wewnątrz magazynu/sklepu z infrastrukturą bezprzewodową. 4G LTE: konieczne dla pracowników terenowych (serwis, dostawy) bez dostępu do Wi-Fi. 5G: przyszłościowe, najniższe opóźnienia — dla automatyzacji i IoT.',
+        'System operacyjny — Android 13/14 GMS (Google Mobile Services): pełny dostęp do Google Play, Chrome, Gmail. Android AOSP: bez usług Google, dla środowisk zamkniętych. Zawsze sprawdź Lifecycle — Zebra gwarantuje 5–10 lat wsparcia bezpieczeństwa.',
+        'Bateria — modele entry (TC22): 3 100 mAh, ~10 h pracy. Modele enterprise (TC52/MC3300): 5 200–7 000 mAh, ~14 h. Kluczowe: wymienna bateria hot-swap — bez wyłączania urządzenia, ciągła praca na wielu zmianach.',
+        'Zarządzanie flotą (MDM) — Zebra oferuje darmowe narzędzie LifeGuard™ do aktualizacji bezpieczeństwa i OEMConfig do zdalnej konfiguracji. Dla flot 50+ urządzeń MDM (SOTI, VMware, Microsoft Intune) to wymóg, nie opcja.',
+        'Budżet i TCO — entry-level (TC22, ~3 400 zł): mały i średni biznes, prosty skan + Wi-Fi. Mid-range (TC52, ~6 000 zł): duży magazyn, serwis, healthcare. Premium (MC3300, ~12 000 zł): produkcja, klawiatura, max wydajność. Pamiętaj o kosztach akcesoriów (stacje ładowania, baterie, etuia) — to 20–30% ceny urządzenia.',
+      ],
+    },
+    expertAuthority: 'TAKMA to autoryzowany Premier Business Partner Zebra Technologies z ponad 25-letnim doświadczeniem w branży AutoID. Wdrożyliśmy setki terminali mobilnych w polskich magazynach, centrach dystrybucji, szpitalach i zakładach produkcyjnych — od firm z 5 urządzeniami po floty 500+ terminali zarządzanych centralnie przez MDM. Jako Printer Repair Specialist Zebra oferujemy nie tylko sprzedaż, ale także konfigurację, szkolenie pracowników, integrację z WMS/ERP i wieloletni serwis gwarancyjny i pogwarancyjny we współpracy z serwis-zebry.pl — największym centrum serwisowym Zebra w Polsce. Każda rekomendacja na tej stronie opiera się na realnych danych z wdrożeń, nie na kartach katalogowych.',
+    technicalDeepDive: `Terminale mobilne klasy enterprise to zupełnie inna kategoria sprzętu niż smartfony konsumenckie. Kluczowe różnice techniczne obejmują trzy obszary: skaner, obudowę i oprogramowanie.
+
+Skanery klasy enterprise (SE4710, SE4770, SE55) wykorzystują zaawansowane algorytmy dekodowania (Zebra PRZM Intelligent Imaging) zdolne do odczytu kodów 1D i 2D z odległości do 60 cm, nawet gdy kod jest zniszczony, zabrudzony, drukowany na folii lub wyświetlany na ekranie. Dla porównania: aparat w smartfonie w trybie skanowania osiąga zasięg 10–15 cm i wymaga dobrze wydrukowanego kodu w dobrym oświetleniu. W testach Zebra różnica w prędkości pierwszego skanowania wynosi 0,3 s (terminal) vs 2–4 s (smartfon) — przy 500 skanowaniach dziennie to oszczędność 30–45 minut na zmianę.
+
+Obudowy terminali mobilnych przechodzą certyfikację MIL-STD-810H (standard wojskowy USA) — testy upadku z 1,2–2,4 m na beton wielokrotnie (26 upadków z każdej krawędzi i rogu), wibracje, szok termiczny (-20°C do +50°C), wilgotność 95% RH, oraz test tumble (1 000 upadków z 0,5 m w bębnie obrotowym). Klasa ochrony IP67 oznacza pełną pyłoszczelność i zanurzenie w wodzie na 30 minut do głębokości 1 m. Gorilla Glass na wyświetlaczu wytrzymuje upadek stalowej kulki z 1,2 m.
+
+System Android klasy enterprise (Zebra Mobility DNA) rozszerza standardowy Android o pakiet narzędzi: StageNow (masowa konfiguracja), Workforce Connect (komunikacja push-to-talk), DataWedge (konfiguracja skanera bez programowania), Device Tracker (lokalizacja zaginionych urządzeń). LifeGuard™ for Android zapewnia comiesięczne łatki bezpieczeństwa przez 5–10 lat od premiery urządzenia — krytyczne w środowiskach podlegających regulacjom (healthcare, finanse).
+
+Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 000 zł × 20 = 120 000 zł) + baterie zapasowe (350 zł × 40 = 14 000 zł) + stacje ładowania 5-gniazdowe (3 500 zł × 4 = 14 000 zł) + etuia ochronne (200 zł × 20 = 4 000 zł) + MDM licencja roczna (50 zł × 20 × 3 = 3 000 zł) = łączny TCO ~155 000 zł, tj. ~215 zł/miesiąc/terminal. Dla porównania: smartfon konsumencki (1 500 zł × 20 = 30 000 zł) wymienia się co 12–18 miesięcy z powodu uszkodzeń → TCO 3 lata: 60 000–90 000 zł + koszty przestojów, utracone skanowania, brak MDM. Terminal enterprise jest tańszy w 3-letnim TCO mimo wyższej ceny zakupu.`,
+    useCases: [
+      {
+        title: 'Magazyn WMS — kompletacja, przyjęcie i wydanie towaru',
+        description: 'Terminal mobilny zintegrowany z systemem WMS (SAP, Oracle WMS, Comarch WMS) prowadzi pracownika krok po kroku: skanowanie lokalizacji → skanowanie produktu → potwierdzenie ilości → druk etykiety wysyłkowej (parowanie z drukarką mobilną przez Bluetooth). Eliminacja papierowych list kompletacyjnych redukuje błędy z 3–5% do 0,1%. Terminal TC52 z SE4770 skanuje kody na wysokich regałach z odległości do 60 cm bez konieczności wspinania się na drabinę.',
+      },
+      {
+        title: 'Retail — weryfikacja cen, inwentaryzacja i obsługa klienta',
+        description: 'Pracownik sklepu skanuje kod produktu i natychmiast widzi cenę, stan magazynowy, lokalizację na zapleczu i dostępność w innych sklepach. Inwentaryzacja: skanowanie 1 000+ produktów na godzinę vs 200 ręcznie. TC22 z dotykowym ekranem 6" — lekki, intuicyjny, z wyglądem zbliżonym do smartfona (łatwiejszy onboarding nowych pracowników sezonowych).',
+      },
+      {
+        title: 'Produkcja — śledzenie partii, kontrola jakości, traceability',
+        description: 'Terminal MC3300 z klawiaturą fizyczną do szybkiego wpisywania numerów partii, ilości i kodów wad. Skanowanie komponentów na każdym etapie produkcji zapewnia pełną identyfikowalność (traceability) wymaganą przez ISO 9001 i IATF 16949. MC3300 z rozszerzonym zasięgiem skanera (SE4850) — odczyt kodów z odległości do 7 m na dużych opakowaniach i paletach.',
+      },
+      {
+        title: 'Logistyka i kurier — skanowanie przesyłek i potwierdzenie dostawy',
+        description: 'Kierowca skanuje każdą przesyłkę przy załadunku i rozładunku — system rejestruje czas, lokalizację GPS i podpis klienta na ekranie dotykowym. Terminal TC57 z 4G LTE i GPS działa bez Wi-Fi — transmisja danych w czasie rzeczywistym do systemu TMS. IP67 i upadki z 1,8 m chronią urządzenie przy pracy w pojeździe i na rampie.',
+      },
+      {
+        title: 'Healthcare — identyfikacja pacjentów i zarządzanie lekami',
+        description: 'Pielęgniarka skanuje opaskę pacjenta i kod leku — system weryfikuje zgodność (5 Praw farmakoterapii) w czasie rzeczywistym. Terminal TC52-HC z obudową odporną na środki dezynfekcyjne (IPA, chlorheksydyna) i czytnikiem NFC do identyfikacji personelu. Integracja z HIS (Hospital Information System) przez Wi-Fi 6.',
+      },
+      {
+        title: 'Serwis terenowy i utrzymanie ruchu — inwentaryzacja aktywów i zlecenia',
+        description: 'Technik serwisowy skanuje kody aktywów (maszyny, instalacje, pojazdy), rejestruje czynności konserwacyjne i pobiera części z magazynu. Terminal TC27 z 4G LTE pracuje w terenie bez Wi-Fi. Aplikacja CMMS na Androidzie. GPS rejestruje trasy i czas spędzony u klienta.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego nie powiedzą Ci o terminalach mobilnych',
+      items: [
+        {
+          title: 'TCO terminala enterprise vs smartfona — terminal wygrywa po 18 miesiącach',
+          text: 'Smartfon konsumencki kosztuje 1 500 zł, ale wymaga wymiany co 12–18 miesięcy z powodu pęknięcia ekranu, awarii baterii lub braku aktualizacji. Terminal Zebra TC22 kosztuje 3 400 zł, ale służy 5+ lat z wymienną baterią i wsparciem bezpieczeństwa LifeGuard. W 3-letnim TCO (zakup + wymiana + akcesoria + przestoje) terminal jest tańszy o 30–50%. Dodaj do tego stratę czasu na wolniejszy skaner smartfona (2–4 s vs 0,3 s) — przy 500 skanowaniach dziennie to 30 minut straconego czasu na zmianę.',
+        },
+        {
+          title: 'Android enterprise vs konsumencki — to zupełnie inny system',
+          text: 'Android w terminalu Zebra to Android z Mobility DNA: DataWedge (skanowanie bez pisania kodu), StageNow (konfiguracja 100 urządzeń w 5 minut), Device Tracker (GPS dla zaginionych terminali), Workforce Connect (push-to-talk zamiast krótkofalówki). Konsumencki Android nie ma tych narzędzi. Kluczowa różnica: LifeGuard dostarcza łatki bezpieczeństwa przez 10 lat — Samsung daje max 4–5 lat, Xiaomi 3 lata.',
+        },
+        {
+          title: 'Skaner enterprise vs aparat smartfona — przepaść w wydajności',
+          text: 'Dedykowany skaner SE4770 w terminalu dekoduje 1D/2D w 0,3 s z odległości do 60 cm, nawet przy zniszczonym, zabrudzonym lub źle wydrukowanym kodzie. Aparat smartfona potrzebuje 2–4 s na dobrze widoczny kod z 10–15 cm. Przy 500 skanowaniach dziennie terminal oszczędza 30–45 minut na zmianę. W słabym oświetleniu magazynu różnica jest jeszcze większa — skaner ma własną diodę celującą.',
+        },
+        {
+          title: 'Wymienna bateria hot-swap to kluczowa przewaga nad smartfonem',
+          text: 'Terminal z baterią wymienną pozwala na ciągłą pracę na wielu zmianach: pracownik wymienia baterię w 5 sekund, urządzenie nie wyłącza się (warm swap). Smartfon z wbudowaną baterią wymaga ładowania 1–2 h w ciągu dnia — to stracony czas pracy. Stacja ładowania 5-gniazdowa utrzymuje cykl 10 baterii → zerowy czas przestoju dla floty.',
+        },
+        {
+          title: 'IP67 nie chroni przed upadkami — to osobna specyfikacja',
+          text: 'Częsty błąd: „mój terminal jest IP67, więc jest niezniszczalny". IP67 chroni przed pyłem i zanurzeniem w wodzie — ale nie mówi NIC o odporności na upadki. Drop spec (np. 1,8 m na beton, test MIL-STD-810H) to osobna certyfikacja. Terminal z IP67 bez drop spec może nie przeżyć upadku z ręki pracownika. Zawsze sprawdzaj oba parametry.',
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Ile kosztuje terminal mobilny (kolektor danych)?',
+        answer: 'Ceny terminali mobilnych enterprise zaczynają się od ok. 3 000–3 500 zł netto za modele entry-level (Zebra TC22) przez ok. 5 500–7 000 zł za mid-range (TC52, TC57) do 10 000–15 000 zł za modele premium z klawiaturą fizyczną (MC3300). Cena zależy od: skanera (SE4710 vs SE4770), łączności (Wi-Fi vs Wi-Fi + 4G LTE), rozmiaru baterii i wariantu obudowy. Ceny netto, dane z lutego 2026.',
+      },
+      {
+        question: 'Czym różni się terminal mobilny od zwykłego smartfona?',
+        answer: 'Terminal mobilny enterprise różni się od smartfona w 5 kluczowych obszarach: 1) Skaner — dedykowany imager SE4710/SE4770 skanuje kody 50–100× szybciej niż aparat smartfona (0,3 s vs 2–4 s). 2) Wytrzymałość — upadki z 1,2–2,4 m na beton, IP67, MIL-STD-810H. 3) Bateria wymienna hot-swap — ciągła praca na wielu zmianach. 4) Wsparcie — 5–10 lat aktualizacji bezpieczeństwa (smartfon: 3–5 lat). 5) MDM — zdalne zarządzanie flotą, konfiguracja, lokalizacja. W 3-letnim TCO terminal jest tańszy mimo wyższej ceny zakupu.',
+      },
+      {
+        question: 'Jaki terminal mobilny do magazynu?',
+        answer: 'Do magazynu rekomendujemy: mały magazyn (do 500 skanowań/dzień) → Zebra TC22 (Wi-Fi 6, SE4710, IP65, ~3 400 zł). Średni magazyn z WMS → TC52 (Wi-Fi 6, SE4770 z rozszerzonym zasięgiem 60 cm, IP67, wymienne baterie, ~6 000 zł). Duży magazyn z wysokimi regałami → TC52 z SE4770 lub MC3300 z SE4850 (zasięg do 7 m). Kluczowe: terminal musi obsługiwać język programowania Twojego WMS (ZPL, CPCL, SAP ITSmobile).',
+      },
+      {
+        question: 'Jak wybrać kolektor danych do inwentaryzacji?',
+        answer: 'Do inwentaryzacji najważniejsze to: 1) Szybki skaner 1D/2D — minimum SE4710, do inwentaryzacji regałowej SE4770 z zasięgiem 60 cm. 2) Waga poniżej 300 g (bez baterii) — pracownik trzyma urządzenie cały dzień. 3) Bateria na 10+ godzin lub wymienna hot-swap. 4) Wi-Fi do transmisji danych w czasie rzeczywistym do systemu ERP. 5) Aplikacja inwentaryzacyjna (Zebra DataWedge + dowolna apka Android). Rekomendacja: Zebra TC22 (lekki, szybki, przystępna cena) lub TC52 (rozszerzony zasięg skanowania).',
+      },
+      {
+        question: 'Terminal mobilny z klawiaturą czy dotykowy?',
+        answer: 'Dotykowy (TC22, TC52): lżejszy, intuicyjny (jak smartfon), szybszy onboarding nowych pracowników, wystarczający do skanowania + potwierdzania na ekranie. Polecany dla: magazynu, retailu, healthcare, inwentaryzacji. Z klawiaturą fizyczną (MC3300): niezbędna do intensywnego wpisywania danych liczbowych — numery partii, kody produktów, ilości. Klawiatura jest 3–5× szybsza niż wirtualna przy dużej ilości tekstu. Polecana dla: produkcji, logistyki z ręcznym wprowadzaniem danych, DPD/InPost kurier.',
+      },
+      {
+        question: 'Ile waży terminal mobilny?',
+        answer: 'Terminale dotykowe: TC22 — 236 g (bez baterii), ~330 g z baterią standardową. TC52 — 249 g (bez baterii), ~398 g z baterią rozszerzoną. TC57 (z 4G) — 249 g (bez baterii). Terminale z klawiaturą: MC3300 — 490 g z baterią standardową. Dla porównania: iPhone 15 Pro Max = 221 g. Terminale enterprise są nieco cięższe, ale balans ciężaru jest zaprojektowany do ergonomicznego trzymania przez 8–12 godzin.',
+      },
+      {
+        question: 'Jak długo działa bateria w terminalu mobilnym?',
+        answer: 'Zebra TC22: bateria 3 100 mAh, ~10 godzin typowej pracy (Wi-Fi + skanowanie). TC52: bateria 4 300 mAh (standard) lub 5 200 mAh (rozszerzona), ~12–14 godzin. MC3300: bateria 5 200 mAh lub 7 000 mAh, ~14–16 godzin. Wszystkie modele mają wymienną baterię hot-swap — wymiana w 5 sekund bez wyłączania. Stacja ładowania 5-gniazdowa utrzymuje rotację baterii dla floty.',
+      },
+      {
+        question: 'Czy terminal mobilny jest odporny na upadki i wodę?',
+        answer: 'Tak — terminale Zebra przechodzą certyfikację MIL-STD-810H (standard wojskowy): wielokrotne upadki z 1,2 m (TC22) do 2,4 m (MC3300) na beton + test tumble 1 000 upadków z 0,5 m w bębnie obrotowym. Klasa ochrony IP65 (TC22) lub IP67 (TC52, MC3300) — pełna pyłoszczelność + zanurzenie w wodzie. Gorilla Glass na ekranie. W praktyce: terminal przeżyje upadek z ręki, z wózka widłowego, a nawet przejechanie wózkiem po posadzce magazynu.',
+      },
+      {
+        question: 'Jaki system operacyjny mają terminale mobilne?',
+        answer: 'Współczesne terminale mobilne enterprise działają na Android 13 lub 14 (GMS — Google Mobile Services lub AOSP — bez usług Google). Zebra gwarantuje wsparcie bezpieczeństwa LifeGuard przez minimum 5 lat (modele TC), a niektóre serie do 10 lat od premiery. Aplikacje można pobierać z Google Play (GMS) lub wgrywać przez MDM (AOSP). Windows Mobile/CE został wycofany — nie kupuj terminali z systemem Windows.',
+      },
+      {
+        question: 'Jak zarządzać flotą terminali mobilnych (MDM)?',
+        answer: 'Zarządzanie flotą terminali odbywa się przez MDM (Mobile Device Management): SOTI MobiControl, VMware Workspace ONE, Microsoft Intune, Zebra DNA Cloud. MDM umożliwia: zdalną instalację/aktualizację aplikacji, blokowanie funkcji (aparat, USB, Google Play), lokalizację urządzeń, wymuszanie polityk bezpieczeństwa. Zebra oferuje darmowe narzędzia: StageNow (masowa konfiguracja), OEMConfig (konfiguracja przez MDM), Device Tracker (lokalizacja GPS). Dla flot 10+ urządzeń MDM to absolutna konieczność.',
+      },
+      {
+        question: 'Terminal mobilny Wi-Fi czy z 4G LTE?',
+        answer: 'Wi-Fi (TC22, TC52): wystarczający gdy terminal pracuje wyłącznie wewnątrz budynku z siecią bezprzewodową — magazyn, sklep, szpital, fabryka. Niższy koszt (~500–1 000 zł mniej). 4G LTE (TC27, TC57): konieczny dla pracowników terenowych bez dostępu do Wi-Fi — kurierzy, serwisanci, inwentaryzacja w terenie. Wyższy koszt + karta SIM z abonamentem. Reguła: jeśli terminal nigdy nie opuszcza budynku → Wi-Fi. Jeśli wyjeżdża w teren → 4G LTE.',
+      },
+      {
+        question: 'Czym różni się terminal mobilny od skanera kodów kreskowych?',
+        answer: 'Skaner kodów kreskowych to urządzenie wejściowe — odczytuje kody i przesyła dane do komputera (przez USB/BT). Nie ma ekranu, systemu operacyjnego ani aplikacji. Terminal mobilny to kompletny komputer przenośny: ma ekran, Android, Wi-Fi, skaner, aplikacje — działa samodzielnie bez komputera. Skaner: ~500–2 000 zł, prosty odczyt kodów. Terminal: ~3 000–15 000 zł, pełne aplikacje WMS/ERP na urządzeniu. Do prostego skanowania przy komputerze → skaner. Do pracy w ruchu z aplikacją → terminal.',
+      },
+      {
+        question: 'Jak długo służy terminal mobilny?',
+        answer: 'Terminale mobilne klasy enterprise (Zebra TC/MC) służą 5–7 lat w typowych warunkach magazynowych. Kluczowe czynniki trwałości: wymienna bateria (wymiana co 12–24 miesiące, ~350 zł), aktualizacje bezpieczeństwa LifeGuard (5–10 lat od premiery), serwis gwarancyjny Zebra OneCare (rozszerzony do 5 lat). Smartfon konsumencki w tych samych warunkach służy 12–18 miesięcy. Terminale z klawiaturą fizyczną (MC3300) mogą służyć nawet 8+ lat dzięki braku ruchomych elementów dotykowych.',
+      },
+      {
+        question: 'Czy terminal mobilny obsługuje RFID?',
+        answer: 'Standardowe terminale mobilne (TC22, TC52, MC3300) NIE mają wbudowanego czytnika RFID UHF — obsługują NFC (13,56 MHz) do identyfikacji pracowników i tagów bliskiego zasięgu. Do skanowania RFID UHF (860–960 MHz) potrzebna jest nakładka RFID (sled) — np. Zebra RFD40 lub RFD90 — montowana na terminalu. Nakładka dodaje ~2 000–4 000 zł do kosztu, ale umożliwia skanowanie 100–700 tagów na sekundę z odległości do 9 m.',
+      },
+      {
+        question: 'Jakie akcesoria są potrzebne do terminala mobilnego?',
+        answer: 'Podstawowe akcesoria: 1) Bateria zapasowa (~350 zł) — obowiązkowa przy pracy wielozmianowej. 2) Stacja ładowania 1-gniazdowa (~600 zł) lub 5-gniazdowa (~3 500 zł) do flot. 3) Etui ochronne (~200 zł) — dodatkowa ochrona w agresywnym środowisku. 4) Rysik/pasek na dłoń (~50–100 zł) — zabezpieczenie przed upuszczeniem. 5) Uchwyt samochodowy (~400 zł) — dla kierowców i serwisantów. Łączny koszt akcesoriów to 20–30% ceny terminala.',
+      },
+      {
+        question: 'Jakie są alternatywy dla terminali mobilnych Zebra?',
+        answer: 'Na polskim rynku dostępni są także: Datalogic (Memor 11/12/20/30/35, Skorpio X5 — włoski producent, dobra jakość, nieco niższe ceny), Honeywell (CT40/CT60, EDA51/EDA52 — amerykański, silny w logistyce), Keyence (BT-W100/BT-A500 — japoński, specjalizacja w produkcji). Zebra dominuje w Polsce z ~40–50% udziałem rynkowym dzięki: najszerszemu portfolio, darmowym narzędziom Mobility DNA, 10-letniemu wsparciu LifeGuard i rozbudowanej sieci serwisowej. TAKMA jako Premier Partner Zebra rekomenduje modele TC/MC — najlepsze wsparcie serwisowe w Polsce.',
+      },
+    ],
+    comparisons: [
+      {
+        title: 'Terminal mobilny vs smartfon — porównanie do pracy w magazynie',
+        content: 'Terminal enterprise (Zebra TC52): skaner SE4770 — 0,3 s na skan, zasięg 60 cm; IP67 + upadki 1,8 m; bateria wymienna 5 200 mAh, 14 h pracy; Android z LifeGuard (10 lat wsparcia); MDM (zdalne zarządzanie flotą); cena ~6 000 zł, żywotność 5–7 lat → TCO 3 lata: ~7 750 zł. Smartfon konsumencki (Samsung A55): aparat jako skaner — 2–4 s na skan, zasięg 10–15 cm; Gorilla Glass ale brak IP67/MIL-STD; bateria wbudowana 5 000 mAh, 8 h; Android z 4-letnim wsparciem; ograniczone MDM; cena ~1 800 zł, żywotność 12–18 mies. → TCO 3 lata: ~5 400 zł + przestoje + wolniejszy skan. Wniosek: terminal jest droższy na start, ale tańszy w TCO i radykalnie wydajniejszy.',
+      },
+      {
+        title: 'Zebra TC22 vs TC52 — entry-level vs mid-range',
+        content: 'TC22: ekran 6", SE4710 (zasięg 35 cm), IP65, upadki 1,2 m, bateria 3 100 mAh, Wi-Fi 6, Android 14, cena ~3 400 zł. TC52: ekran 5", SE4770 (zasięg 60 cm), IP67, upadki 1,8 m, bateria 4 300/5 200 mAh (wymienna hot-swap), Wi-Fi 6, Android 13, cena ~6 000 zł. Rekomendacja: TC22 wystarczy do retailu, lekkiej inwentaryzacji, healthcare. TC52 do dużych magazynów z WMS, pracy wielozmianowej, wysokich regałów (SE4770), oraz środowisk wymagających IP67 (chłodnie, rampy).',
+      },
+      {
+        title: 'Terminal dotykowy vs terminal z klawiaturą fizyczną',
+        content: 'Dotykowy (TC22, TC52, TC57): lżejszy (249–330 g vs 490 g), intuicyjny interfejs, szybszy onboarding, większy ekran — idealny do skanowania + potwierdzania, przeglądania list, nawigacji po aplikacji WMS. Z klawiaturą (MC3300): fizyczne klawisze do szybkiego wpisywania danych liczbowych (3–5× szybciej niż klawiatura ekranowa), konfiguracja 29/38/47 klawiszy, pistoletowy uchwyt — idealny do produkcji, intensywnego wprowadzania numerów partii/ilości, wielogodzinnego skanowania. Zasada: jeśli pracownik głównie skanuje → dotykowy. Jeśli dużo wpisuje ręcznie → klawiatura.',
+      },
+      {
+        title: 'Wi-Fi 6 vs 4G LTE w terminalu mobilnym',
+        content: 'Wi-Fi 6 (802.11ax): prędkość do 1,2 Gbps, opóźnienie <10 ms, zasięg wewnątrz budynku, brak kosztów karty SIM — standard do magazynu, sklepu, szpitala, fabryki. Modele: TC22, TC52, MC3300. 4G LTE: prędkość do 300 Mbps, opóźnienie ~30 ms, zasięg wszędzie (sieć komórkowa), koszt SIM ~30–50 zł/mies. — konieczny dla serwisu terenowego, kurierów, inwentaryzacji w terenie. Modele: TC27, TC57. Rekomendacja: 80% wdrożeń to Wi-Fi (praca w budynku). 4G LTE wybierz tylko gdy terminal opuszcza zasięg Wi-Fi.',
+      },
+      {
+        title: 'Zebra vs Datalogic vs Honeywell — porównanie producentów terminali',
+        content: 'Zebra (TC/MC): ~40–50% rynku w PL, najszersze portfolio, darmowe narzędzia Mobility DNA, 10-letni LifeGuard, najlepsza sieć serwisowa w Polsce (serwis-zebry.pl). Datalogic (Memor/Skorpio): ~15–20% rynku, włoska jakość, nieco niższe ceny (10–15%), dobry skaner, ale mniejsze portfolio i krótszy support (5 lat). Honeywell (CT/EDA): ~15–20% rynku, silny w logistyce i healthcare USA, w Polsce mniejsze wsparcie serwisowe. Rekomendacja TAKMA: Zebra dla nowych wdrożeń (najlepszy ekosystem i wsparcie w Polsce). Datalogic jako alternatywa budżetowa. Honeywell rozważ przy kompatybilności z istniejącą flotą.',
+      },
+    ],
+    howToSteps: [
+      { name: 'Zdefiniuj środowisko i procesy', text: 'Odpowiedz na pytania: Gdzie będzie pracował terminal? (magazyn, sklep, teren, produkcja). Jakie procesy obsługuje? (kompletacja WMS, inwentaryzacja, skanowanie przesyłek). Ile skanowań dziennie? (<200 → entry, 200–500 → mid, >500 → premium). Czy potrzebna klawiatura fizyczna?' },
+      { name: 'Wybierz model i konfigurację', text: 'Entry: TC22 (Wi-Fi, SE4710, IP65) ~3 400 zł — retail, lekka inwentaryzacja. Mid: TC52 (Wi-Fi 6, SE4770, IP67) ~6 000 zł — magazyn z WMS, healthcare. Teren: TC57 (Wi-Fi + 4G LTE, SE4770, IP67) ~7 500 zł — kurier, serwis. Produkcja: MC3300 (klawiatura, SE4850, IP67) ~12 000 zł — intensywne wpisywanie danych.' },
+      { name: 'Zamów akcesoria do floty', text: 'Na każdy terminal: bateria zapasowa (~350 zł). Na każde 5 terminali: stacja ładowania 5-gniazdowa (~3 500 zł) + stacja na 5 baterii (~1 500 zł). Opcjonalnie: etuia ochronne, rysiki, paski na dłoń, uchwyty samochodowe. Budżet akcesoriów: 20–30% wartości terminali.' },
+      { name: 'Skonfiguruj i wdróż', text: 'Masowa konfiguracja Zebra StageNow: sieć Wi-Fi, profil MDM, aplikacje WMS, ustawienia skanera DataWedge — konfiguracja 100 terminali w jednej sesji. Zainstaluj aplikacje WMS/ERP z Google Play lub przez MDM. Przeszkol pracowników (0,5–1 dzień). Uruchom pilotaż na 5–10 urządzeniach przed pełnym wdrożeniem.' },
+      { name: 'Zarządzaj i serwisuj flotę', text: 'MDM do zdalnego zarządzania (SOTI, VMware, Intune). Aktualizacje bezpieczeństwa LifeGuard co miesiąc. Wymiana baterii co 12–24 miesiące. Gwarancja Zebra OneCare (3–5 lat). Serwis pogwarancyjny: TAKMA + serwis-zebry.pl. Device Tracker do lokalizacji zaginionych terminali.' },
+    ],
+  },
+  'drukarki-kart': {
+    definition: {
+      heading: 'Co to jest drukarka kart plastikowych?',
+      content: 'Drukarka kart plastikowych (ang. card printer) to specjalistyczne urządzenie do personalizacji kart PVC w standardzie CR-80 (85,6 × 54 mm, grubość 0,76 mm). Drukuje pełnokolorowe zdjęcia, logo, tekst i kody kreskowe na kartach identyfikacyjnych, kartach dostępu, legitymacjach, kartach lojalnościowych i przepustkach. Dostępne są dwie technologie druku: termosublimacja (dye-sublimation / direct-to-card) — taśma barwiąca YMCKO sublimuje bezpośrednio na kartę przy rozdzielczości 300 dpi, oraz retransfer (reverse transfer) — obraz drukowany jest najpierw na folię retransferową, a następnie przenoszony na kartę, co daje druk edge-to-edge bez białych ramek i rozdzielczość do 600 dpi. Drukarki kart mogą kodować paski magnetyczne (HiCo/LoCo), chipy kontaktowe (ISO 7816) i zbliżeniowe RFID/NFC (Mifare, DESFire, HID Prox, iCLASS). Zebra oferuje modele od entry-level ZC100 (150 kart/h) przez mid-range ZC300 (jedno- i dwustronna) po zaawansowaną ZC350 z rozszerzonym kodowaniem.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać drukarkę kart plastikowych?',
+      items: [
+        'Określ nakład — do 500 kart/rok → Zebra ZC100 (entry-level, jednostronna); 500–5 000 kart/rok → ZC300 (jedno- lub dwustronna); powyżej 5 000 kart/rok → ZC350 lub retransfer ZXP Series.',
+        'Jednostronna czy dwustronna — jednostronna wystarcza do prostych identyfikatorów (zdjęcie + imię). Dwustronna potrzebna, gdy na odwrocie drukujesz kod kreskowy, dane kontaktowe lub regulamin.',
+        'Termosublimacja czy retransfer — termosublimacja (ZC100, ZC300, ZC350): tańsza, szybsza, 300 dpi, wystarczy dla 95% zastosowań. Retransfer (ZXP Series 7/9): druk edge-to-edge, 600 dpi, photo-quality — do dokumentów tożsamości, kart finansowych i high-security ID.',
+        'Opcje kodowania — pasek magnetyczny HiCo (hotele, kontrola dostępu) lub LoCo (karty lojalnościowe); RFID/NFC 13,56 MHz Mifare (e-legitymacje, kontrola dostępu); 125 kHz HID Prox (starsze systemy); smart card kontaktowy ISO 7816 (certyfikaty cyfrowe).',
+        'Łączność — USB (standard w każdym modelu), Ethernet (druk sieciowy, wiele stanowisk), Wi-Fi (opcja w ZC300/ZC350 — elastyczność lokalizacji).',
+        'Koszt eksploatacji (TCO) — taśma YMCKO 200–500 wydruków (ok. 1,25 zł/karta) + karta PVC blank (ok. 0,50 zł/szt.) = ok. 2 zł/karta. Porównaj z outsourcingiem: 5–10 zł/karta. Próg opłacalności: ok. 500 kart.',
+      ],
+    },
+    expertAuthority: 'TAKMA to autoryzowany Premier Business Partner Zebra Technologies z 25-letnim doświadczeniem w branży AutoID. Jako Printer Repair Specialist zapewniamy nie tylko sprzedaż, ale także serwis pogwarancyjny, konfigurację kodowania RFID i wsparcie w integracji z systemami kontroli dostępu. Pomagamy dobrać drukarkę kart do konkretnego zastosowania — od prostych identyfikatorów pracowniczych po zaawansowane karty zbliżeniowe z kodowaniem Mifare DESFire.',
+    technicalDeepDive: 'Druk termosublimacyjny (direct-to-card): taśma YMCKO (Yellow-Magenta-Cyan-blacK-Overlay) przesuwa się nad głowicą termiczną o rozdzielczości 300 dpi (11,8 dot/mm). Każdy panel barwny sublimuje kolejno na powierzchnię karty PVC, a panel Overlay nakłada warstwę ochronną UV. Cykl druku jednej karty kolorowej (YMCKO, jednostronnie): ok. 24 s w ZC100, ok. 25 s w ZC300. Monochromatyczny (panel K): ok. 4–5 s/karta. Głowica dotyka karty — żywotność ok. 1–2 mln wydruków.\n\nDruk retransferowy (reverse transfer): obraz drukowany jest najpierw na film retransferowy (przezroczysty), a następnie termicznie laminowany na kartę. Głowica NIE dotyka karty → dłuższa żywotność. Druk edge-to-edge (bez białych ramek), rozdzielczość do 600 dpi — photo-quality porównywalna z drukiem offsetowym. Idealny do kart smart card z wypukłym chipem (termosublimacja źle radzi sobie z nierówną powierzchnią).\n\nKodowanie: enkoder magnetyczny zapisuje dane na 3 ścieżkach paska HiCo (2750 Oe) lub LoCo (300 Oe). Enkoder RFID/NFC komunikuje się z chipem w karcie przez antenę wbudowaną w drukarkę — obsługuje Mifare Classic 1K/4K, Mifare DESFire EV1/EV2/EV3, NTAG 213/215/216, HID iCLASS, HID Prox. Enkoder smart card kontaktowy (ISO 7816) łączy się przez styki złote na karcie.\n\nKoszt eksploatacji ZC300 (YMCKO dwustronnie): taśma 800300-360EM (300 wydruków) ok. 350 zł → 1,17 zł/odcisk × 2 strony = 2,34 zł + karta PVC blank 0,50 zł + amortyzacja drukarki (5 000 zł / 10 000 kart = 0,50 zł) = ok. 3,34 zł/karta dwustronna kolorowa. Outsourcing tego samego: 8–15 zł/karta.',
+    useCases: [
+      {
+        title: 'Kontrola dostępu i identyfikatory pracownicze',
+        description: 'Karty dostępu z kolorowym zdjęciem, imieniem, stanowiskiem i chipem RFID (Mifare lub HID Prox). Nowy pracownik = karta tego samego dnia. Zebra ZC300 z enkoderem RFID 13,56 MHz + oprogramowanie CardStudio = kompletne stanowisko do personalizacji kart w dziale HR.',
+      },
+      {
+        title: 'Hotele i recepcje — key cards',
+        description: 'Karty hotelowe z logo i numerem pokoju. Kodowanie magnetyczne HiCo lub RFID 13,56 MHz. Gość otrzymuje spersonalizowaną kartę przy check-in. Zebra ZC100 z enkoderem magnetycznym — kompaktowa, prosta obsługa, wystarczająca dla hoteli do 100 pokoi.',
+      },
+      {
+        title: 'Szkoły i uczelnie — e-legitymacje',
+        description: 'E-legitymacje szkolne i studenckie ze zdjęciem, hologramem i chipem Mifare DESFire do kontroli dostępu, stołówki i biblioteki. Druk dwustronny (awers: dane ucznia, rewers: kod kreskowy + regulamin). Zebra ZC300 Dual-sided z enkoderem contactless — druk sezonowy na początku roku szkolnego.',
+      },
+      {
+        title: 'Retail i usługi — karty lojalnościowe',
+        description: 'Karty rabatowe, karnety fitness, karty członkowskie klubu z kodem kreskowym lub paskiem magnetycznym. Branding: logo, kolory firmowe, indywidualny numer. Zebra ZC100 — najtańszy model, idealny do małych sieci: kawiarnie, restauracje, salony kosmetyczne. Koszt druku: ok. 2 zł/karta.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Praktyczne wskazówki od ekspertów TAKMA',
+      items: [
+        {
+          title: 'ROI własnej drukarki kart — kiedy się opłaca?',
+          text: 'Próg rentowności: ok. 500 kart. Przy nakładzie 1 000 kart/rok oszczędność vs outsourcing wynosi 3 000–8 000 zł rocznie. Dodatkowa wartość: pełna kontrola danych poufnych (RODO), druk on-demand (karta w 30 sekund), brak minimum zamówienia i szybka wymiana zgubionej karty.',
+        },
+        {
+          title: 'HiCo vs LoCo — który pasek magnetyczny wybrać?',
+          text: 'HiCo (High Coercivity, 2750 Oe): odporny na rozmagnesowanie, trwalszy — standard dla hoteli i kontroli dostępu (karta używana wielokrotnie dziennie). LoCo (Low Coercivity, 300 Oe): tańszy, łatwiej się rozmagnesowuje — wystarczający do kart lojalnościowych i gift cards (rzadkie użycie).',
+        },
+        {
+          title: 'Taśma YMCKO — co oznaczają litery?',
+          text: 'Y = Yellow, M = Magenta, C = Cyan, K = blacK (kontur, tekst, kody), O = Overlay (warstwa ochronna UV). Jedno przejście taśmy = jeden pełnokolorowy wydruk. Taśma 200-odciskowa (ZC100) lub 300-odciskowa (ZC300) — nie da się wydrukować więcej niż paneli na taśmie, nawet jeśli drukowałeś tylko czarno-białe karty.',
+        },
+        {
+          title: 'Czyszczenie drukarki kart — klucz do jakości',
+          text: 'Zalecane czyszczenie co 1 000 kart lub co wymianę taśmy. Zestaw czyszczący Zebra (105999-302 dla ZC100/ZC300): karta czyszcząca + rolki + chusteczki IPA. Brud na rolkach = smugi na kartach i skrócona żywotność głowicy. Czas czyszczenia: 2 minuty.',
+        },
+        {
+          title: 'Kodowanie RFID — Mifare Classic vs DESFire',
+          text: 'Mifare Classic 1K: tani, powszechny, ale podatny na klonowanie (złamane szyfrowanie Crypto-1). DESFire EV2/EV3: szyfrowanie AES-128, odporny na ataki relay — wymagany przez nowe systemy kontroli dostępu i e-legitymacje. Cena karty DESFire: 3–5 zł vs Classic: 1–2 zł, ale bezpieczeństwo nieporównywalne.',
+        },
+      ],
+    },
+    faq: [
+      { question: 'Ile kosztuje drukarka kart plastikowych?', answer: 'Modele entry-level (Zebra ZC100, jednostronna): ok. 4 000 zł netto. Mid-range (ZC300, jedno- lub dwustronna): 4 500–6 000 zł netto. Zaawansowane z rozszerzonym kodowaniem (ZC350): 8 000–12 000 zł netto. Retransfer high-end (ZXP Series 7/9): 15 000–20 000 zł netto.' },
+      { question: 'Jaki jest koszt wydruku jednej karty?', answer: 'Druk kolorowy jednostronny (YMCKO): ok. 1,25 zł (taśma) + 0,50 zł (karta PVC blank) = ok. 1,75 zł/karta. Druk dwustronny: ok. 3,00–3,50 zł/karta. Monochromatyczny (czarny): ok. 0,15 zł/karta + karta. Porównanie: outsourcing kosztuje 5–10 zł/karta.' },
+      { question: 'Czym różni się druk termosublimacyjny od retransferowego?', answer: 'Termosublimacja (direct-to-card): taśma barwiąca sublimuje bezpośrednio na kartę. Zalety: szybsza, tańsza. Wady: biała ramka ok. 1 mm, 300 dpi, głowica dotyka karty. Retransfer: obraz drukowany na folię, potem termicznie laminowany na kartę. Zalety: edge-to-edge (brak ramki), do 600 dpi, dłuższa żywotność głowicy, lepszy druk na kartach z chipem. Wady: droższy (film retransferowy + taśma), wolniejszy.' },
+      { question: 'Czy mogę drukować karty RFID/NFC?', answer: 'Tak. Drukarki Zebra ZC300 i ZC350 oferują wbudowane enkodery RFID obsługujące: Mifare Classic 1K/4K, Mifare DESFire EV1/EV2/EV3, NTAG 213/215/216, HID iCLASS SE, HID Prox (125 kHz). Enkoder zapisuje dane na chipie karty jednocześnie z drukiem — cały proces w jednym przejściu.' },
+      { question: 'Drukarka jednostronna czy dwustronna — co wybrać?', answer: 'Jednostronna (single-sided): wystarczy do prostych identyfikatorów (zdjęcie, imię, logo) i kart lojalnościowych z kodem kreskowym na froncie. Dwustronna (dual-sided): potrzebna, gdy na odwrocie drukujesz dodatkowe informacje — kod kreskowy, dane kontaktowe, regulamin, QR code. Przykład: Zebra ZC300 dostępna w wersji jednostronnej (ZC31-xxx) i dwustronnej (ZC32-xxx).' },
+      { question: 'Jak często trzeba czyścić drukarkę kart?', answer: 'Co 1 000 wydrukowanych kart lub przy każdej wymianie taśmy barwiącej. Zestaw czyszczący Zebra (105999-302): karta czyszcząca do rolki transportowej, rolki klejące zbierające kurz, chusteczki IPA do głowicy. Czyszczenie zajmuje ok. 2 minuty i znacząco wydłuża żywotność głowicy drukującej (1–2 mln wydruków).' },
+      { question: 'Jakie karty do kontroli dostępu w biurze?', answer: 'Dla nowych systemów: karty RFID 13,56 MHz Mifare DESFire EV2/EV3 (szyfrowanie AES-128, odporne na klonowanie). Dla istniejących systemów HID: karty HID iCLASS SE lub HID Prox (125 kHz). Drukarka: Zebra ZC300 z enkoderem contactless — drukuje zdjęcie + koduje chip w jednym przejściu. Koszt: drukarka ok. 5 500 zł + karta DESFire ok. 4 zł/szt.' },
+      { question: 'Jakie alternatywy dla drukarek kart Zebra?', answer: 'Na polskim rynku dostępne są także: Evolis Zenius/Primacy 2 (francuski producent, dobra jakość, nieco niższe ceny), Magicard (brytyjski, specjalizacja w bezpieczeństwie), HID Fargo DTC1250e/DTC4500e (amerykański, integracja z systemami HID). TAKMA jako autoryzowany partner Zebra rekomenduje modele ZC — sprawdzona platforma Link-OS, zdalne zarządzanie flotą, szerokie wsparcie serwisowe w Polsce.' },
+    ],
+    comparisons: [
+      {
+        title: 'Termosublimacja vs retransfer — porównanie technologii druku kart',
+        content: 'Termosublimacja (direct-to-card): koszt urządzenia od 4 000 zł, prędkość 150–900 kart/h, rozdzielczość 300 dpi, biała ramka ok. 1 mm dookoła obrazu, głowica dotyka karty (żywotność 1–2 mln), idealna do identyfikatorów, kart lojalnościowych, kart hotelowych. Modele: Zebra ZC100, ZC300, ZC350. Retransfer (reverse transfer): koszt urządzenia od 15 000 zł, prędkość 140–190 kart/h, rozdzielczość do 600 dpi, druk edge-to-edge (cała powierzchnia karty), głowica NIE dotyka karty (dłuższa żywotność), lepszy druk na kartach z chipem kontaktowym/zbliżeniowym, idealna do dokumentów tożsamości, kart finansowych, government ID. Modele: Zebra ZXP Series 7, ZXP Series 9. Rekomendacja TAKMA: dla 95% zastosowań B2B (identyfikatory, kontrola dostępu, karty lojalnościowe) termosublimacja ZC300 to optymalny wybór. Retransfer wybierz tylko gdy potrzebujesz druku edge-to-edge lub rozdzielczości 600 dpi.',
+      },
+    ],
+    howToSteps: [
+      { name: 'Określ zastosowanie i nakład', text: 'Identyfikatory pracownicze, karty dostępu, karty hotelowe, e-legitymacje czy karty lojalnościowe? Oszacuj roczny nakład: <500 kart → ZC100, 500–5 000 → ZC300, >5 000 → ZC350. Czy potrzebujesz druku dwustronnego? Kodowania RFID/magnetic?' },
+      { name: 'Wybierz model i konfigurację', text: 'ZC100: USB, jednostronna, basic — od ok. 4 000 zł. ZC300: USB+Ethernet, jedno- lub dwustronna, opcja RFID/magnetic — od ok. 4 500 zł. ZC350: rozszerzone kodowanie, specialty ribbons — od ok. 8 000 zł. Skontaktuj się z TAKMA po indywidualną wycenę z enkoderem.' },
+      { name: 'Zamów materiały eksploatacyjne', text: 'Taśma YMCKO (pełny kolor): 200–500 wydruków. Karty PVC blank CR-80 (białe, 30 mil): opakowania po 100 lub 500 szt. Jeśli kodowanie: karty z chipem Mifare/magnetic stripe. Zestaw czyszczący (105999-302) — od razu na start.' },
+      { name: 'Zainstaluj oprogramowanie', text: 'Zebra CardStudio (Classic lub Professional) do projektowania układu karty: zdjęcie, logo, tekst, kod kreskowy, dane z bazy. Alternatywa: CardPresso (uniwersalny, multi-brand). Podłącz drukarkę przez USB lub Ethernet, zainstaluj sterownik Zebra.' },
+      { name: 'Skonfiguruj i drukuj', text: 'Załaduj taśmę YMCKO i karty blank do podajnika (100 szt.). Uruchom czyszczenie inicjalne (karta czyszcząca w zestawie). Wydrukuj kartę testową. Jeśli kodowanie RFID — skonfiguruj enkoder w CardStudio (typ karty, klucze szyfrowania). Gotowe — druk pierwszej karty w 25 sekund.' },
     ],
   },
 }

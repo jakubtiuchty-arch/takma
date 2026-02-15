@@ -13,6 +13,8 @@ interface VariantsTableProps {
   productName: string
   productImage?: string
   variants: ProductVariant[]
+  variantAttributeTooltips?: Record<string, string>
+  manufacturerId?: string
 }
 
 const availabilityConfig = {
@@ -150,10 +152,13 @@ const attributeTooltips: Record<string, string> = {
   'Gilotyna': 'Gilotyna (obcinacz) automatycznie odcina etykietę po wydrukowaniu. Idealna przy druku pojedynczych etykiet lub krótkich serii — każda etykieta jest od razu gotowa do użycia, bez ręcznego odrywania.',
   'Nawijak': 'Nawijak (rewinder) nawija zużyty liner (podłoże) po odklejeniu etykiety, utrzymując porządek na stanowisku pracy. Niezbędny przy dużych wolumenach druku z odklejakiem — bez niego liner spada na podłogę i plącze się.',
   'Linerless': 'Tryb linerless pozwala drukować na etykietach bez podłoża (linera). Eliminuje odpady — nie ma wstęgi do wyrzucenia. Na jednej rolce mieści się nawet 40% więcej etykiet. Wymaga specjalnej głowicy i wałka dociskowego przystosowanego do kleju.',
+  'RFID-ready': 'Wariant z gniazdem do montażu czytnika RFID (np. Zebra RFD40). Pozwala dodać funkcję odczytu znaczników RFID bez wymiany terminala. Przydatne w magazynach i sklepach do szybkiej inwentaryzacji — skanowanie całej półki w sekundach zamiast pojedynczych kodów kreskowych.',
+  'Lokalizator BLE': 'Wbudowany beacon Bluetooth Low Energy umożliwia śledzenie lokalizacji urządzenia w budynku. Jeśli terminal zostanie zgubiony, administrator widzi jego pozycję na mapie w aplikacji Zebra Device Tracker. Przydatne przy dużych flotach urządzeń.',
 }
 
-function AttributeLabel({ label }: { label: string }) {
-  const tooltip = attributeTooltips[label]
+
+function AttributeLabel({ label, extraTooltips }: { label: string; extraTooltips?: Record<string, string> }) {
+  const tooltip = extraTooltips?.[label] || attributeTooltips[label]
 
   if (!tooltip) return <>{label}</>
 
@@ -167,7 +172,7 @@ function AttributeLabel({ label }: { label: string }) {
         >
           ?
         </span>
-        <span className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 px-3 py-2 bg-gray-900 text-white text-xs font-normal rounded-lg text-left leading-relaxed z-50 whitespace-normal opacity-0 pointer-events-none group-hover/tip:opacity-100 transition-opacity">
+        <span className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-72 px-3 py-2 bg-gray-900 text-white text-xs font-normal rounded-lg text-left leading-relaxed z-50 whitespace-pre-line opacity-0 pointer-events-none group-hover/tip:opacity-100 transition-opacity">
           {tooltip}
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 border-4 border-transparent border-b-gray-900" />
         </span>
@@ -176,7 +181,7 @@ function AttributeLabel({ label }: { label: string }) {
   )
 }
 
-function DesktopRow({ variant, productSlug, productName, productImage, attributeKeys, rowIndex, mounted, stockData, stockLoading, addItem, isInRFQ }: {
+function DesktopRow({ variant, productSlug, productName, productImage, attributeKeys, rowIndex, mounted, stockData, stockLoading, addItem, isInRFQ, manufacturerId }: {
   variant: ProductVariant
   productSlug: string
   productName: string
@@ -188,13 +193,14 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   stockLoading: boolean
   addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string }) => void
   isInRFQ: (id: string) => boolean
+  manufacturerId?: string
 }) {
   const inRFQ = mounted ? isInRFQ(`${productSlug}__${variant.partNumber}`) : false
   const stock = stockData.get(variant.partNumber)
   const avail = stock?.found
     ? availabilityConfig[stock.availability]
     : availabilityConfig[variant.availability]
-  const isUnavailable = !stockLoading && stock?.found && stock.availability === 'unavailable'
+  const isUnavailable = !stockLoading && stock?.found && (stock.availability === 'unavailable' || stock.availability === 'on-order')
 
   return (
     <tr className={`${rowIndex % 2 === 0 ? 'bg-white' : 'bg-gray-50'} hover:bg-primary-50/50 transition-colors`}>
@@ -223,7 +229,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
         ) : (
           <Button
             size="sm"
-            variant={inRFQ ? 'secondary' : 'primary'}
+            variant={inRFQ ? 'secondary' : manufacturerId === 'zebra' ? 'zebra' : 'primary'}
             onClick={() => addItem({
               id: `${productSlug}__${variant.partNumber}`,
               name: productName,
@@ -241,7 +247,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   )
 }
 
-function MobileCard({ variant, productSlug, productName, productImage, attributeKeys, mounted, stockData, stockLoading, addItem, isInRFQ }: {
+function MobileCard({ variant, productSlug, productName, productImage, attributeKeys, mounted, stockData, stockLoading, addItem, isInRFQ, variantAttributeTooltips, manufacturerId }: {
   variant: ProductVariant
   productSlug: string
   productName: string
@@ -252,13 +258,15 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
   stockLoading: boolean
   addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string }) => void
   isInRFQ: (id: string) => boolean
+  variantAttributeTooltips?: Record<string, string>
+  manufacturerId?: string
 }) {
   const inRFQ = mounted ? isInRFQ(`${productSlug}__${variant.partNumber}`) : false
   const stock = stockData.get(variant.partNumber)
   const avail = stock?.found
     ? availabilityConfig[stock.availability]
     : availabilityConfig[variant.availability]
-  const isUnavailable = !stockLoading && stock?.found && stock.availability === 'unavailable'
+  const isUnavailable = !stockLoading && stock?.found && (stock.availability === 'unavailable' || stock.availability === 'on-order')
 
   return (
     <div className="bg-white border border-gray-200 rounded-xl p-4 space-y-3">
@@ -273,7 +281,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
       <div className="grid grid-cols-2 gap-2">
         {attributeKeys.map((key) => (
           <div key={key}>
-            <span className="text-xs text-gray-500"><AttributeLabel label={key} /></span>
+            <span className="text-xs text-gray-500"><AttributeLabel label={key} extraTooltips={variantAttributeTooltips} /></span>
             <p className="text-sm font-medium text-gray-900">
               {variant.attributes[key] || '—'}
             </p>
@@ -316,7 +324,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
         ) : (
           <Button
             size="md"
-            variant={inRFQ ? 'secondary' : 'primary'}
+            variant={inRFQ ? 'secondary' : manufacturerId === 'zebra' ? 'zebra' : 'primary'}
             onClick={() => addItem({
               id: `${productSlug}__${variant.partNumber}`,
               name: productName,
@@ -334,7 +342,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
   )
 }
 
-export default function VariantsTable({ productSlug, productName, productImage, variants }: VariantsTableProps) {
+export default function VariantsTable({ productSlug, productName, productImage, variants, variantAttributeTooltips, manufacturerId }: VariantsTableProps) {
   const { addItem, isInRFQ } = useRFQStore()
   const [mounted, setMounted] = useState(false)
   const [showUnavailable, setShowUnavailable] = useState(false)
@@ -361,7 +369,7 @@ export default function VariantsTable({ productSlug, productName, productImage, 
     for (const v of variants) {
       const stock = stockData.get(v.partNumber)
       const effectiveAvailability = stock?.found ? stock.availability : v.availability
-      if (effectiveAvailability === 'unavailable') {
+      if (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order') {
         unavailable.push(v)
       } else {
         available.push(v)
@@ -372,16 +380,17 @@ export default function VariantsTable({ productSlug, productName, productImage, 
 
   if (variants.length === 0) return null
 
-  const sharedProps = { productSlug, productName, productImage, attributeKeys, mounted, stockData, stockLoading, addItem, isInRFQ }
+  const sharedProps = { productSlug, productName, productImage, attributeKeys, mounted, stockData, stockLoading, addItem, isInRFQ, variantAttributeTooltips, manufacturerId }
   const colCount = 4 + attributeKeys.length // PN + attrs + cena + magazyn + status + akcja
 
   return (
-    <section id="warianty">
+    <section id="warianty" className="scroll-mt-28">
       <h2 className="text-2xl font-bold text-gray-900 mb-4">Dostępne warianty</h2>
 
       {/* Desktop: tabela */}
-      <div className="hidden lg:block bg-gray-50 rounded-xl overflow-x-auto">
-        <table className="w-full min-w-[900px]">
+      <div className="hidden lg:block bg-gray-50 rounded-xl overflow-hidden">
+        <table className="w-full">
+          <caption className="sr-only">Warianty i konfiguracje {productName}</caption>
           <thead>
             <tr className="bg-gray-100 border-b border-gray-200">
               <th scope="col" className="px-3 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">
@@ -389,7 +398,7 @@ export default function VariantsTable({ productSlug, productName, productImage, 
               </th>
               {attributeKeys.map((key) => (
                 <th key={key} scope="col" className="px-3 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider whitespace-nowrap">
-                  <AttributeLabel label={key} />
+                  <AttributeLabel label={key} extraTooltips={variantAttributeTooltips} />
                 </th>
               ))}
               <th scope="col" className="px-3 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">

@@ -26,6 +26,8 @@ const navigation: NavItem[] = [
       { name: 'Drukarki termotransferowe', href: '/termotransferowe-drukarki-etykiet' },
       { name: 'Drukarki termiczne', href: '/termiczne-drukarki-etykiet' },
       { name: 'Drukarki mobilne', href: '/mobilne-drukarki-etykiet' },
+      { name: 'Drukarki opasek', href: '/drukarki-opasek' },
+      { name: 'Drukarki kart', href: '/drukarki-kart' },
     ],
   },
   {
@@ -39,6 +41,7 @@ const navigation: NavItem[] = [
       { name: 'Taśmy termotransferowe', href: '/tasmy-termotransferowe' },
       { name: 'Opaski identyfikacyjne', href: '/opaski-identyfikacyjne' },
       { name: 'Karty PCV', href: '/karty-pcv' },
+      { name: 'Taśmy do drukarek kart', href: '/tasmy-do-drukarek-kart' },
     ],
   },
   {
@@ -61,6 +64,13 @@ const navigation: NavItem[] = [
       { name: 'Logistyka i transport', href: '/drukarki-etykiet-logistyka' },
       { name: 'Apteka i healthcare', href: '/drukarki-etykiet-apteka' },
       { name: 'Gastronomia i HoReCa', href: '/drukarki-etykiet-gastronomia' },
+    ],
+  },
+  {
+    name: 'Terminale',
+    href: '/terminale-mobilne',
+    children: [
+      { name: 'Wszystkie terminale', href: '/terminale-mobilne' },
     ],
   },
   { name: 'Katalog', href: '/katalog' },

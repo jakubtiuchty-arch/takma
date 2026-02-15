@@ -226,19 +226,17 @@ export default function RFQPage() {
                   <li key={item.productId} className="p-6">
                     <div className="flex gap-4">
                       {/* Obrazek produktu */}
-                      <div className="w-20 h-20 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
-                        {item.productImage ? (
+                      {(item.productId.includes('__onecare__') || item.productImage) && (
+                        <div className="relative w-28 h-28 rounded-lg flex-shrink-0 overflow-hidden">
                           <Image
-                            src={item.productImage}
-                            alt={item.productName}
-                            width={80}
-                            height={80}
-                            className="object-contain"
+                            src={item.productId.includes('__onecare__') ? '/images/zebra-onecare-logo.png' : item.productImage!}
+                            alt={item.productId.includes('__onecare__') ? 'Zebra OneCare' : item.productName}
+                            fill
+                            className="object-contain p-2"
+                            sizes="80px"
                           />
-                        ) : (
-                          <span className="text-xs text-gray-400">IMG</span>
-                        )}
-                      </div>
+                        </div>
+                      )}
 
                       <div className="flex-1 min-w-0">
                         <Link

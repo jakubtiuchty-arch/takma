@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { PhoneIcon, MailIcon, LocationIcon } from '@/components/ui/Icons'
+import { PhoneIcon, MailIcon } from '@/components/ui/Icons'
 
 const footerLinks = {
   produkty: [
@@ -9,7 +9,7 @@ const footerLinks = {
     { name: 'Drukarki termotransferowe', href: '/termotransferowe-drukarki-etykiet' },
     { name: 'Drukarki termiczne', href: '/termiczne-drukarki-etykiet' },
     { name: 'Skanery kodów', href: '/katalog?kategoria=skanery-kodow' },
-    { name: 'Terminale mobilne', href: '/katalog?kategoria=terminale-mobilne' },
+    { name: 'Terminale mobilne', href: '/terminale-mobilne' },
     { name: 'RFID', href: '/katalog?kategoria=rfid' },
     { name: 'Etykiety i taśmy', href: '/katalog?kategoria=etykiety-tasmy' },
     { name: 'Akcesoria', href: '/katalog?kategoria=akcesoria' },
@@ -52,16 +52,16 @@ export default function Footer() {
               <span>TAKMA</span>
             </Link>
             <p className="text-sm text-gray-400 mb-6">
-              Od 20 lat dostarczamy rozwiązania AutoID dla firm w całej Polsce.
+              Od 25 lat dostarczamy rozwiązania AutoID dla firm w całej Polsce.
               Drukarki etykiet, skanery kodów, terminale mobilne i systemy RFID.
             </p>
             <div className="space-y-3">
               <a
-                href="tel:+48123456789"
+                href="tel:+48607819688"
                 className="flex items-center gap-3 text-sm hover:text-primary-400 transition-colors"
               >
                 <PhoneIcon size={18} className="text-primary-400" />
-                <span>+48 12 345 67 89</span>
+                <span>+48 607 819 688</span>
               </a>
               <a
                 href="mailto:kontakt@takma.com.pl"
@@ -70,13 +70,10 @@ export default function Footer() {
                 <MailIcon size={18} className="text-primary-400" />
                 <span>kontakt@takma.com.pl</span>
               </a>
-              <div className="flex items-start gap-3 text-sm">
-                <LocationIcon size={18} className="text-primary-400 flex-shrink-0 mt-0.5" />
-                <span>
-                  ul. Przykładowa 123<br />
-                  00-000 Kraków
-                </span>
-              </div>
+            </div>
+            <div className="mt-6 flex items-center gap-4">
+              <img src="/images/premier-partner-1.png" alt="Zebra Premier Business Partner" className="h-[48px] w-auto transition-transform duration-300 hover:scale-150 cursor-pointer" />
+              <img src="/images/repair_specialist.png" alt="Zebra Premier Solution Partner — Printer Repair Specialist" className="h-[56px] w-auto transition-transform duration-300 hover:scale-150 cursor-pointer" />
             </div>
           </div>
 
@@ -155,7 +152,7 @@ export default function Footer() {
             <div className="mt-6 pt-6 border-t border-gray-800">
               <p className="text-xs text-gray-500">
                 Godziny pracy:<br />
-                Pon-Pt: 8:00 - 16:00
+                Pon-Pt: 7:30 - 15:30
               </p>
             </div>
           </div>
@@ -166,7 +163,7 @@ export default function Footer() {
       <div className="border-t border-gray-800">
         <div className="container-main py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
-            <p>© {new Date().getFullYear()} TAKMA. Wszelkie prawa zastrzeżone.</p>
+            <p>© {new Date().getFullYear()} TAKMA Tadeusz Tiuchty · ul. Poświęcka 1a, 51-128 Wrocław · NIP: 915-100-43-77</p>
             <p>
               Strona ma charakter informacyjny. Ceny i dostępność mogą ulec zmianie.
             </p>

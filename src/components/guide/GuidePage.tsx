@@ -59,29 +59,11 @@ export default function GuidePage({ guide }: GuidePageProps) {
     image: guide.heroImage ? `https://takma.com.pl${guide.heroImage}` : undefined,
   }
 
-  // JSON-LD: FAQPage
-  const faqJsonLd = guide.faq.length > 0 ? {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: guide.faq.map(f => ({
-      '@type': 'Question',
-      name: f.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: f.answer,
-        author: { '@type': 'Organization', name: 'TAKMA' },
-      },
-    })),
-  } : null
-
   return (
     <>
       {/* JSON-LD Schemas */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-      {faqJsonLd && (
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      )}
 
       <div className="bg-white">
         {/* Breadcrumbs */}

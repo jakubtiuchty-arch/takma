@@ -47,7 +47,7 @@ export const guides: Guide[] = [
 {
   slug: 'jak-wybrac-drukarke-etykiet',
   title: 'Jak wybrać drukarkę etykiet? Kompletny poradnik 2026',
-  seoTitle: 'Jak wybrać drukarkę etykiet? Poradnik 2026 | TAKMA',
+  seoTitle: 'Jak wybrać drukarkę etykiet? Poradnik 2026',
   seoDescription: 'Poradnik wyboru drukarki etykiet: termiczna vs termotransferowa, biurkowa vs przemysłowa, TCO, polecane modele Zebra i 7 kryteriów wyboru. Ekspercki przewodnik.',
   excerpt: 'Kompleksowy przewodnik po drukarkach etykiet na rok 2026 — od definicji technologii druku, przez 7 kluczowych kryteriów wyboru, kalkulację TCO, aż po konkretne polecane modele Zebra z cenami. Opracowany na podstawie ponad 500 wdrożeń w polskich firmach.',
   category: 'poradnik',
@@ -592,7 +592,7 @@ export const guides: Guide[] = [
 {
   slug: 'drukarka-termiczna-vs-termotransferowa',
   title: 'Drukarka termiczna vs termotransferowa — różnice, koszty, zastosowania',
-  seoTitle: 'Drukarka termiczna vs termotransferowa — porównanie 2026 | TAKMA',
+  seoTitle: 'Drukarka termiczna vs termotransferowa — porównanie 2026',
   seoDescription: 'Drukarka termiczna czy termotransferowa? Porównanie kosztów druku, trwałości etykiet, TCO i zastosowań. Konkretne kalkulacje PLN i polecane modele Zebra.',
   excerpt: 'Kompleksowe porównanie dwóch technologii druku etykiet: direct thermal i thermal transfer. Szczegółowe kalkulacje kosztów na etykietę, analiza TCO przy różnych wolumenach oraz konkretne rekomendacje modeli dla każdego zastosowania.',
   category: 'porownanie',
@@ -1022,7 +1022,7 @@ export const guides: Guide[] = [
 {
   slug: 'drukarki-etykiet-zebra-przewodnik',
   title: 'Drukarki etykiet Zebra — kompletny przewodnik po seriach ZD i ZT',
-  seoTitle: 'Drukarki etykiet Zebra — przewodnik ZD vs ZT 2026 | TAKMA',
+  seoTitle: 'Drukarki etykiet Zebra — przewodnik ZD vs ZT 2026',
   seoDescription: 'Porównanie drukarek Zebra ZD i ZT: ceny, parametry, zastosowania. ZD220d od 621 zł, ZT620 do 168 mm. Pomoc w wyborze modelu od autoryzowanego partnera.',
   excerpt: 'Kompletne zestawienie drukarek etykiet Zebra serii ZD (biurkowe) i ZT (przemysłowe) — od najtańszej ZD220d za 621 zł netto po flagową ZT620 drukującą etykiety 6-calowe. Porównanie parametrów, cen i zastosowań z perspektywy autoryzowanego partnera Zebra.',
   category: 'przewodnik',

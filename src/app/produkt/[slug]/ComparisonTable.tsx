@@ -18,11 +18,15 @@ export default function ComparisonTable({ title, models }: ComparisonTableProps)
 
   return (
     <section id="porownanie">
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">{title}</h2>
+      <h2 className="text-2xl font-bold text-gray-900 mb-1">{title}</h2>
+      <p className="text-sm text-gray-500 mb-4">
+        {models.map(m => m.name).join(' vs ')}
+      </p>
 
       {/* Desktop table */}
       <div className="hidden md:block bg-gray-50 rounded-xl overflow-hidden">
         <table className="w-full">
+          <caption className="sr-only">{title}</caption>
           <thead>
             <tr className="border-b border-gray-200">
               <th scope="col" className="px-5 py-4 text-left text-sm font-medium text-gray-500 w-1/4">Parametr</th>

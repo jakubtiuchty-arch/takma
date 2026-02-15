@@ -109,19 +109,17 @@ export default function RFQDrawer() {
                 <li key={item.productId} className="px-6 py-4">
                   <div className="flex items-start gap-4">
                     {/* Obrazek produktu */}
-                    <div className="w-16 h-16 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden">
-                      {item.productImage ? (
+                    {(item.productId.includes('__onecare__') || item.productImage) && (
+                      <div className="relative w-[70px] h-[70px] rounded-lg flex-shrink-0 overflow-hidden">
                         <Image
-                          src={item.productImage}
-                          alt={item.productName}
-                          width={64}
-                          height={64}
-                          className="object-contain"
+                          src={item.productId.includes('__onecare__') ? '/images/zebra-onecare-logo.png' : item.productImage!}
+                          alt={item.productId.includes('__onecare__') ? 'Zebra OneCare' : item.productName}
+                          fill
+                          className="object-contain p-1.5"
+                          sizes="64px"
                         />
-                      ) : (
-                        <span className="text-xs text-gray-400">IMG</span>
-                      )}
-                    </div>
+                      </div>
+                    )}
 
                     <div className="flex-1 min-w-0">
                       <Link

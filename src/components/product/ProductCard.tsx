@@ -12,6 +12,7 @@ import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 interface ProductCardProps {
   product: Product
   variant?: 'grid' | 'list' | 'compact'
+  showDualButtons?: boolean
 }
 
 function getPartNumbers(product: Product): string[] {
@@ -22,7 +23,7 @@ function getPartNumbers(product: Product): string[] {
   return pnSpec ? [pnSpec.value] : []
 }
 
-export default function ProductCard({ product, variant = 'grid' }: ProductCardProps) {
+export default function ProductCard({ product, variant = 'grid', showDualButtons = false }: ProductCardProps) {
   const { addItem, isInRFQ } = useRFQStore()
   const [mounted, setMounted] = useState(false)
 
@@ -233,12 +234,47 @@ export default function ProductCard({ product, variant = 'grid' }: ProductCardPr
             </div>
           )}
 
-          <Link
-            href={`/produkt/${product.slug}`}
-            className="w-full flex items-center justify-center text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-lg px-3 py-2 transition-colors"
-          >
-            Zobacz więcej
-          </Link>
+          {showDualButtons ? (
+            <div className="flex items-center gap-2">
+              {isUnavailable ? (
+                <Link
+                  href={`/produkt/${product.slug}`}
+                  className="flex-1 flex items-center justify-center gap-1.5 text-sm font-medium text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200 rounded-lg px-3 py-2 transition-colors"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <BellIcon size={14} />
+                  Powiadom
+                </Link>
+              ) : (
+                <button
+                  onClick={handleAddToCart}
+                  className={`flex-1 flex items-center justify-center gap-1.5 text-sm font-semibold rounded-lg px-3 py-2 transition-all active:scale-[0.98] ${
+                    inRFQ
+                      ? 'text-primary-600 bg-white border-2 border-primary-600'
+                      : product.manufacturerId === 'zebra'
+                        ? 'text-gray-900 bg-[#A8F000] hover:bg-[#96d800]'
+                        : 'text-white bg-primary-600 hover:bg-primary-700'
+                  }`}
+                >
+                  {inRFQ ? <CheckIcon size={14} /> : <PlusIcon size={14} />}
+                  {inRFQ ? 'Dodano' : 'Koszyk'}
+                </button>
+              )}
+              <Link
+                href={`/produkt/${product.slug}`}
+                className="flex items-center justify-center text-sm font-medium text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-lg px-3 py-2 transition-colors whitespace-nowrap"
+              >
+                Więcej
+              </Link>
+            </div>
+          ) : (
+            <Link
+              href={`/produkt/${product.slug}`}
+              className="w-full flex items-center justify-center text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-lg px-3 py-2.5 transition-colors"
+            >
+              Zobacz więcej
+            </Link>
+          )}
         </div>
       </div>
     </article>

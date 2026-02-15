@@ -10,7 +10,7 @@ interface Spec {
 
 const VISIBLE_ROWS = 6
 
-export default function SpecsAccordion({ specs }: { specs: Spec[] }) {
+export default function SpecsAccordion({ specs, productName }: { specs: Spec[]; productName?: string }) {
   const [expanded, setExpanded] = useState(false)
 
   const needsAccordion = specs.length > VISIBLE_ROWS
@@ -19,6 +19,7 @@ export default function SpecsAccordion({ specs }: { specs: Spec[] }) {
   return (
     <div className="bg-gray-50 rounded-xl overflow-hidden">
       <table className="w-full">
+        <caption className="sr-only">Specyfikacja techniczna{productName ? ` ${productName}` : ''}</caption>
         <tbody className="divide-y divide-gray-200">
           {visibleSpecs.map((spec, i) => (
             <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>

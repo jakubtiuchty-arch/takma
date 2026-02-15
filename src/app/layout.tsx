@@ -36,17 +36,33 @@ const organizationJsonLd = {
   '@type': 'Organization',
   name: 'TAKMA',
   url: 'https://takma.com.pl',
-  logo: 'https://takma.com.pl/images/logo.svg',
+  logo: { '@type': 'ImageObject', url: 'https://takma.com.pl/images/takma_logo.png', width: 300, height: 60 },
   description: 'Profesjonalne rozwiązania AutoID — drukarki etykiet, skanery kodów kreskowych, terminale mobilne, systemy RFID. 20+ lat doświadczenia, autoryzowany partner Zebra Technologies.',
   address: {
     '@type': 'PostalAddress',
+    streetAddress: 'ul. Poświęcka 1a',
+    postalCode: '51-128',
+    addressLocality: 'Wrocław',
     addressCountry: 'PL',
-    addressLocality: 'Polska',
   },
+  taxID: '915-100-43-77',
   foundingDate: '2004',
-  numberOfEmployees: { '@type': 'QuantitativeValue', value: '15' },
+  numberOfEmployees: { '@type': 'QuantitativeValue', value: 15 },
   knowsAbout: ['Drukarki etykiet', 'Skanery kodów kreskowych', 'Terminale mobilne', 'RFID', 'AutoID', 'Zebra Technologies'],
-  sameAs: ['https://serwis-zebry.pl'],
+  sameAs: [
+    'https://www.serwis-zebry.pl',
+    'https://www.linkedin.com/company/takma',
+  ],
+  hasCredential: {
+    '@type': 'EducationalOccupationalCredential',
+    credentialCategory: 'Autoryzacja producenta',
+    name: 'Autoryzowany Partner Zebra Technologies',
+    recognizedBy: {
+      '@type': 'Organization',
+      name: 'Zebra Technologies',
+      url: 'https://www.zebra.com',
+    },
+  },
 }
 
 const websiteJsonLd = {

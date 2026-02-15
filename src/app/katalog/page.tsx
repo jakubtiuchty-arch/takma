@@ -20,7 +20,7 @@ export async function generateMetadata({ searchParams }: CatalogPageProps): Prom
       title: category.seoTitle,
       description: category.seoDescription,
       openGraph: {
-        title: category.seoTitle + ' | TAKMA',
+        title: category.seoTitle,
         description: category.seoDescription,
       },
     }

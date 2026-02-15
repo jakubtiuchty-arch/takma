@@ -156,12 +156,12 @@ export default function ContactPage() {
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Telefon</h3>
                 <a
-                  href="tel:+48123456789"
+                  href="tel:+48607819688"
                   className="text-gray-600 hover:text-primary-600 transition-colors"
                 >
-                  +48 12 345 67 89
+                  +48 607 819 688
                 </a>
-                <p className="text-sm text-gray-500 mt-1">Pon-Pt: 8:00 - 16:00</p>
+                <p className="text-sm text-gray-500 mt-1">Pon-Pt: 7:30 - 15:30</p>
               </div>
             </div>
 
@@ -188,9 +188,9 @@ export default function ContactPage() {
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Adres</h3>
                 <p className="text-gray-600">
-                  ul. Przykładowa 123
+                  ul. Poświęcka 1a
                   <br />
-                  30-000 Kraków
+                  51-128 Wrocław
                 </p>
               </div>
             </div>

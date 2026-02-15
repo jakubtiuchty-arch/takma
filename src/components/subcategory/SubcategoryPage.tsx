@@ -80,43 +80,6 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
     },
   }
 
-  const faqJsonLd = content ? {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: content.faq.map(f => ({
-      '@type': 'Question',
-      name: f.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: f.answer,
-      },
-    })),
-  } : null
-
-  const howToJsonLd = content?.howToSteps ? {
-    '@context': 'https://schema.org',
-    '@type': 'HowTo',
-    name: content.buyingGuide.heading,
-    description: `Przewodnik krok po kroku: ${content.buyingGuide.heading.toLowerCase()}`,
-    step: content.howToSteps.map(step => ({
-      '@type': 'HowToStep',
-      name: step.name,
-      text: step.text,
-    })),
-  } : null
-
-  const articleJsonLd = content ? {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: `${subcategory.name} — przewodnik ekspercki TAKMA`,
-    author: { '@type': 'Organization', name: 'TAKMA', url: 'https://takma.com.pl' },
-    publisher: { '@type': 'Organization', name: 'TAKMA', url: 'https://takma.com.pl' },
-    datePublished: '2025-01-15',
-    dateModified: '2026-02-11',
-    description: subcategory.seoDescription,
-    mainEntityOfPage: `https://takma.com.pl/${subcategory.slug}`,
-  } : null
-
   const productWord = products.length === 1
     ? 'produkt'
     : products.length < 5
@@ -133,24 +96,6 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
       />
-      {faqJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
-      )}
-      {howToJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
-        />
-      )}
-      {articleJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
-        />
-      )}
 
       <div className="container-main py-8 lg:py-12">
         {/* Breadcrumbs */}

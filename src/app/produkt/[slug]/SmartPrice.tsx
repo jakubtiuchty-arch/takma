@@ -70,7 +70,7 @@ export default function SmartPrice({ product }: SmartPriceProps) {
 
   if (!displayed && !product.priceFrom) {
     return (
-      <div className="bg-gray-50 rounded-xl p-6 mb-6">
+      <div className="bg-gray-100 shadow-sm rounded-xl p-6 mb-6">
         <p className="text-lg text-gray-600">Cena na zapytanie</p>
       </div>
     )
@@ -83,7 +83,7 @@ export default function SmartPrice({ product }: SmartPriceProps) {
   const displayedPn = pn ? [pn] : partNumbers
 
   return (
-    <div className="bg-gray-50 rounded-xl p-6 mb-6">
+    <div className="bg-gray-100 shadow-sm rounded-xl p-6 mb-6">
       {pn && (
         <p className="text-xs font-mono text-gray-500 mb-2">PN: {pn}</p>
       )}

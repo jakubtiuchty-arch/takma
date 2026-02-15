@@ -41,9 +41,12 @@ export interface Product {
     bestRating: number
     reviewBody: string
   }
+  variantAttributeTooltips?: Record<string, string>
   downloads: ProductDownload[]
+  servicePlans?: ServicePlan[]
   createdAt: string
   updatedAt?: string
+  sameAs?: string
 }
 
 export interface ProductVariant {
@@ -64,6 +67,13 @@ export interface ProductDownload {
   type: 'pdf' | 'datasheet' | 'manual' | 'software'
   url: string
   size: string
+}
+
+export interface ServicePlan {
+  name: string
+  partNumber: string
+  duration: string
+  priceNetto: number
 }
 
 export type ProductTag = 'magazyn' | 'retail' | 'produkcja' | 'logistyka' | 'healthcare' | 'outdoor'
@@ -110,22 +120,44 @@ export const categories: Category[] = [
     slug: 'drukarki-etykiet',
     name: 'Drukarki etykiet',
     description: 'Drukarki termiczne i termotransferowe do etykiet kodów kreskowych',
-    seoTitle: 'Drukarki etykiet | Biurkowe, przemysłowe, termiczne | TAKMA',
+    seoTitle: 'Drukarki etykiet | Biurkowe, przemysłowe, termiczne',
     seoDescription: 'Profesjonalne drukarki etykiet — biurkowe, przemysłowe, termiczne i termotransferowe. Zebra, Honeywell, TSC. Porównanie modeli, ceny netto, doradztwo techniczne.',
     longDescription: 'Oferujemy pełną gamę drukarek etykiet czołowych producentów: Zebra Technologies, Honeywell, TSC i innych. Drukarki biurkowe do biura i punktu sprzedaży, przemysłowe do pracy 24/7, termiczne i termotransferowe — znajdziesz model dopasowany do swoich potrzeb.',
     icon: 'printer',
-    productCount: 15,
+    productCount: 26,
+  },
+  {
+    id: 'drukarki-kart',
+    slug: 'drukarki-kart',
+    name: 'Drukarki kart plastikowych',
+    description: 'Drukarki kart plastikowych PVC — identyfikatory, karty dostępu, karty lojalnościowe, kodowanie RFID/NFC',
+    seoTitle: 'Drukarki kart plastikowych Zebra | ZC100, ZC300, ZC350',
+    seoDescription: 'Drukarki kart plastikowych Zebra: ZC100, ZC300, ZC350 — druk termosublimacyjny i retransferowy. Karty pracownicze, identyfikatory, karty RFID/NFC, magnetic stripe. Kodowanie Mifare, HID Prox, iCLASS. Ceny netto B2B, dostawa 24h.',
+    longDescription: 'Drukarki kart plastikowych (card printers) to specjalistyczne urządzenia do personalizacji kart PVC w standardzie CR-80 (85,6 × 54 mm). Drukują identyfikatory pracownicze, karty dostępu, legitymacje szkolne, karty lojalnościowe i przepustki — z pełnokolorowym nadrukiem zdjęć, logo i kodów kreskowych. Dostępne w technologii termosublimacyjnej (direct-to-card, 300 dpi) i retransferowej (edge-to-edge, do 600 dpi). Opcje kodowania: pasek magnetyczny HiCo/LoCo, smart card kontaktowy (ISO 7816), zbliżeniowy RFID/NFC (Mifare Classic, DESFire, HID Prox, iCLASS). W ofercie TAKMA modele Zebra ZC100 (entry-level), ZC300 (mid-range, jedno- i dwustronna) oraz ZC350 (zaawansowane kodowanie). Koszt druku własnego: ok. 2 zł/karta vs 5–10 zł przy outsourcingu — zwrot inwestycji już od 500 kart.',
+    icon: 'printer',
+    productCount: 2,
+  },
+  {
+    id: 'drukarki-opasek',
+    slug: 'drukarki-opasek',
+    name: 'Drukarki opasek identyfikacyjnych',
+    description: 'Dedykowane drukarki opasek identyfikacyjnych do szpitali, klinik i eventów — system kartridżowy Z-Band',
+    seoTitle: 'Drukarki opasek identyfikacyjnych | Drukarka opasek szpitalnych Zebra',
+    seoDescription: 'Drukarki opasek identyfikacyjnych Zebra ZD510-HC do szpitali, klinik i eventów. System kartridżowy Z-Band, zasilacz medyczny IEC 60601-1, automatyczna kalibracja. Identyfikacja pacjentów z kodem kreskowym. Ceny od 2 674 zł netto.',
+    longDescription: 'Drukarki opasek identyfikacyjnych (wristband printers) to dedykowane urządzenia do druku termicznego na opaskach na nadgarstek. W szpitalach służą do identyfikacji pacjentów — każda opaska zawiera imię, nazwisko, kod kreskowy i dane powiązane z systemem HIS/ADT. Na eventach i w parkach rozrywki działają jako kontrola wstępu i system cashless. Zebra ZD510-HC to następca modelu HC100 — jedyna drukarka opasek z zasilaczem klasy medycznej IEC 60601-1, obudową odporną na UV i dezynfekcję oraz systemem kartridżowym Smart Chip z automatyczną kalibracją. Kompatybilna z opaskami Z-Band Direct, UltraSoft, QuickClip i Fun.',
+    icon: 'printer',
+    productCount: 1,
   },
   {
     id: 'terminale-mobilne',
     slug: 'terminale-mobilne',
-    name: 'Terminale',
-    description: 'Komputery mobilne i kolektory danych do pracy w terenie',
-    seoTitle: 'Terminale mobilne Zebra | Kolektory danych Android',
-    seoDescription: 'Terminale mobilne Zebra z Androidem - TC21, TC26, TC52, TC57, MC3300. Wytrzymałe komputery mobilne IP67 do magazynu i logistyki.',
-    longDescription: 'Profesjonalne terminale mobilne Zebra klasy enterprise. Seria TC21/TC26 dla małych i średnich firm, TC52/TC57 dla wymagających środowisk, MC3300 z klawiaturą do intensywnej pracy. System Android, wbudowany skaner, odporność IP67.',
+    name: 'Terminale mobilne',
+    description: 'Wytrzymałe komputery mobilne i kolektory danych Android do magazynu, logistyki i produkcji',
+    seoTitle: 'Terminale mobilne Zebra — kolektory danych Android do magazynu i logistyki',
+    seoDescription: 'Terminale mobilne Zebra i Datalogic z Androidem: TC22, TC27, TC52, TC57, MC3300, Memor 11/12. Wytrzymałe komputery mobilne IP68/IP67 do magazynu, logistyki i produkcji. Ceny netto od 2 180 zł, doradztwo, serwis Zebra.',
+    longDescription: 'Profesjonalne terminale mobilne (kolektory danych) Zebra klasy enterprise z systemem Android. Seria TC21/TC26 dla małych i średnich firm — lekkie, intuicyjne, w przystępnej cenie. TC52/TC57 dla wymagających środowisk magazynowych i logistycznych — IP67, upadki z 1,8 m, skaner SE4770. MC3300 z klawiaturą fizyczną do intensywnego skanowania w produkcji. EC50/EC55 — kompaktowe komputery enterprise zastępujące smartfony. Wszystkie modele z wbudowanym skanerem 1D/2D, Wi-Fi 6, Bluetooth 5.0 i zarządzaniem MDM.',
     icon: 'smartphone',
-    productCount: 8,
+    productCount: 14,
   },
   {
     id: 'skanery-kodow',
@@ -154,7 +186,7 @@ export const categories: Category[] = [
     slug: 'materialy-eksploatacyjne',
     name: 'Materiały eksploatacyjne',
     description: 'Etykiety, taśmy barwiące (ribbon), opaski identyfikacyjne i karty PCV do drukarek Zebra',
-    seoTitle: 'Materiały eksploatacyjne Zebra | Etykiety, taśmy ribbon, opaski | TAKMA',
+    seoTitle: 'Materiały eksploatacyjne Zebra | Etykiety, taśmy ribbon, opaski',
     seoDescription: 'Oryginalne materiały eksploatacyjne Zebra: etykiety termotransferowe papierowe i foliowe, etykiety termiczne, taśmy barwiące woskowe i żywiczne, opaski identyfikacyjne, karty PCV. Najniższe ceny, szybka dostawa.',
     longDescription: 'Kompletna oferta oryginalnych materiałów eksploatacyjnych Zebra Technologies. Etykiety papierowe termotransferowe (Z-Perform 1000T, Z-Select 2000T, 8000T All-Temp) i foliowe (Z-Ultimate 3000T, 8000T CryoCool), etykiety termiczne (Z-Select 2000D, Z-Perform 2000D), taśmy barwiące woskowe (2300 Wax), woskowo-żywiczne (3200 Wax/Resin) i żywiczne (5095 Resin), opaski identyfikacyjne dla służby zdrowia oraz karty PCV do drukarek kart. Wszystkie materiały kalibrowane pod drukarki Zebra — gwarantujemy optymalną jakość druku, trwałość nadruku i minimalizację przestojów.',
     icon: 'tag',
@@ -171,6 +203,17 @@ export const categories: Category[] = [
     icon: 'package',
     productCount: 12,
   },
+  {
+    id: 'oprogramowanie',
+    slug: 'oprogramowanie',
+    name: 'Oprogramowanie',
+    description: 'Oprogramowanie do projektowania kart, etykiet i zarządzania drukarkami',
+    seoTitle: 'Oprogramowanie Zebra | CardStudio, ZebraDesigner',
+    seoDescription: 'Oprogramowanie Zebra: CardStudio 2.0 do projektowania kart plastikowych, ZebraDesigner do etykiet. Licencje Classic, Standard, Professional, Enterprise. Ceny netto B2B.',
+    longDescription: 'Oprogramowanie Zebra Technologies do projektowania i drukowania kart plastikowych oraz etykiet. Zebra CardStudio 2.0 — intuicyjne narzędzie do tworzenia identyfikatorów, kart dostępu i kart lojalnościowych z integracją baz danych, kodowaniem magnetycznym i RFID. Dostępne w wersjach Classic (podstawowa), Standard (bazy danych), Professional (zaawansowane kodowanie) i Enterprise (pełne API). ZebraDesigner — profesjonalne oprogramowanie do projektowania etykiet z kodami kreskowymi.',
+    icon: 'code',
+    productCount: 4,
+  },
 ]
 
 // Podkategorie drukarek (SEO landing pages)
@@ -181,7 +224,7 @@ export const subcategories: Subcategory[] = [
     name: 'Biurkowe drukarki etykiet',
     parentCategoryId: 'drukarki-etykiet',
     description: 'Kompaktowe drukarki etykiet na biurko i stanowisko robocze',
-    seoTitle: 'Biurkowe drukarki etykiet | Kompaktowe drukarki kodów kreskowych | TAKMA',
+    seoTitle: 'Biurkowe drukarki etykiet | Kompaktowe drukarki kodów kreskowych',
     seoDescription: 'Kompaktowe drukarki etykiet biurkowe do 4 cali szerokości. Idealne do biura, punktu sprzedaży i magazynu. Modele Zebra, Honeywell, TSC. Ceny, porównanie, doradztwo.',
     longDescription: 'Drukarki biurkowe (desktop) to kompaktowe urządzenia zaprojektowane do pracy na biurku lub stanowisku roboczym. Zajmują minimum miejsca, a jednocześnie oferują niezawodny druk etykiet z kodami kreskowymi do 4 cali (108 mm) szerokości. Sprawdzają się w biurach, punktach sprzedaży, aptekach, małych magazynach i wszędzie tam, gdzie liczy się niewielki rozmiar i łatwość obsługi. W ofercie modele czołowych producentów: Zebra, Honeywell, TSC i innych.',
     icon: 'printer',
@@ -194,7 +237,7 @@ export const subcategories: Subcategory[] = [
     name: 'Przemysłowe drukarki etykiet',
     parentCategoryId: 'drukarki-etykiet',
     description: 'Wytrzymałe drukarki etykiet do pracy ciągłej 24/7',
-    seoTitle: 'Przemysłowe drukarki etykiet | Druk 24/7 do magazynu i produkcji | TAKMA',
+    seoTitle: 'Przemysłowe drukarki etykiet | Druk 24/7 do magazynu i produkcji',
     seoDescription: 'Przemysłowe drukarki etykiet do pracy ciągłej 24/7. Metalowa obudowa, do 600 dpi, RFID. Zebra, Honeywell, TSC. Porównanie modeli, ceny, doradztwo techniczne.',
     longDescription: 'Drukarki przemysłowe (industrial) przeznaczone są do pracy ciągłej 24/7 w wymagających środowiskach produkcyjnych, magazynowych i logistycznych. Metalowa konstrukcja, zaawansowane interfejsy sieciowe, kolorowe wyświetlacze i opcje takie jak moduł RFID, obcinacz czy odklejak czynią je niezastąpionymi w operacjach o dużym wolumenie druku. W ofercie modele od entry-level po flagowe urządzenia 6-calowe od wiodących producentów.',
     icon: 'printer',
@@ -207,7 +250,7 @@ export const subcategories: Subcategory[] = [
     name: 'Termotransferowe drukarki etykiet',
     parentCategoryId: 'drukarki-etykiet',
     description: 'Drukarki z taśmą barwiącą (ribbon) do trwałych etykiet',
-    seoTitle: 'Termotransferowe drukarki etykiet | Trwały druk z taśmą ribbon | TAKMA',
+    seoTitle: 'Termotransferowe drukarki etykiet | Trwały druk z taśmą ribbon',
     seoDescription: 'Drukarki termotransferowe — trwały druk etykiet z użyciem taśmy barwiącej (ribbon). Biurkowe i przemysłowe modele Zebra, Honeywell, TSC. Porównanie, ceny, doradztwo.',
     longDescription: 'Drukarki termotransferowe (thermal transfer) wykorzystują taśmę barwiącą (ribbon) do przenoszenia obrazu na etykietę. Dzięki temu wydruk jest odporny na ścieranie, wilgoć, temperaturę i promienie UV — idealne rozwiązanie do etykiet produktowych, oznaczeń trwałych, etykiet na przewody i oznaczeń w przemyśle. W ofercie zarówno kompaktowe modele biurkowe, jak i wydajne drukarki przemysłowe do pracy 24/7.',
     icon: 'printer',
@@ -224,7 +267,7 @@ export const subcategories: Subcategory[] = [
     name: 'Termiczne drukarki etykiet',
     parentCategoryId: 'drukarki-etykiet',
     description: 'Drukarki direct thermal — druk bez taśmy, niższe koszty eksploatacji',
-    seoTitle: 'Termiczne drukarki etykiet | Termiczna bez taśmy barwiącej | TAKMA',
+    seoTitle: 'Termiczne drukarki etykiet | Termiczna bez taśmy barwiącej',
     seoDescription: 'Drukarki termiczne (direct thermal) — druk etykiet bez taśmy barwiącej. Niższe koszty eksploatacji, idealne do etykiet wysyłkowych i paragonów. Zebra, Honeywell, TSC.',
     longDescription: 'Drukarki termiczne bezpośrednie (direct thermal) nie wymagają taśmy barwiącej — obraz powstaje bezpośrednio na specjalnym papierze termicznym pod wpływem ciepła z głowicy. To oznacza niższe koszty eksploatacji i prostszą obsługę. Idealne rozwiązanie do etykiet wysyłkowych, kurierskich, paragonów i oznaczeń tymczasowych, gdzie trwałość wydruku nie jest kluczowa.',
     icon: 'printer',
@@ -237,12 +280,12 @@ export const subcategories: Subcategory[] = [
     name: 'Mobilne drukarki etykiet',
     parentCategoryId: 'drukarki-etykiet',
     description: 'Przenośne drukarki etykiet — druk w terenie, magazynie i dostawie bez kabli',
-    seoTitle: 'Mobilne drukarki etykiet | Przenośna drukarka kodów kreskowych | TAKMA',
+    seoTitle: 'Mobilne drukarki etykiet | Przenośna drukarka kodów kreskowych',
     seoDescription: 'Mobilne drukarki etykiet Zebra — przenośne, bezprzewodowe drukowanie etykiet i kodów kreskowych w terenie. Bluetooth, Wi-Fi, IP54, bateria na cały dzień pracy. Idealne do magazynu, logistyki i dostaw.',
     longDescription: 'Mobilne drukarki etykiet (ang. mobile/portable label printers) to kompaktowe, zasilane bateryjnie urządzenia do drukowania etykiet bezpośrednio w terenie — na magazynie, w dostawie, przy inwentaryzacji czy na linii produkcyjnej. Łączą się bezprzewodowo przez Bluetooth i Wi-Fi z terminalami mobilnymi, smartfonami i tabletami. Klasa ochrony IP54/IP65 i odporność na upadki z 1,5–2,1 m gwarantują niezawodną pracę w wymagających warunkach. Druk termiczny bezpośredni eliminuje potrzebę taśmy barwiącej, co upraszcza obsługę w terenie.',
     icon: 'printer',
-    productIds: ['zebra-zq511', 'zebra-zq521', 'zebra-zq610-plus', 'zebra-zq620-plus'],
-    productCount: 4,
+    productIds: ['zebra-zq511', 'zebra-zq521', 'zebra-zq610-plus', 'zebra-zq620-plus', 'zebra-zq630-plus', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus', 'zebra-zq210'],
+    productCount: 9,
   },
   // --- Podkategorie: Materiały eksploatacyjne ---
   {
@@ -251,7 +294,7 @@ export const subcategories: Subcategory[] = [
     name: 'Etykiety termotransferowe papierowe',
     parentCategoryId: 'materialy-eksploatacyjne',
     description: 'Etykiety papierowe do druku termotransferowego — Z-Perform 1000T, Z-Select 2000T, 8000T All-Temp',
-    seoTitle: 'Etykiety termotransferowe papierowe Zebra | Z-Perform, Z-Select | TAKMA',
+    seoTitle: 'Etykiety termotransferowe papierowe Zebra | Z-Perform, Z-Select',
     seoDescription: 'Oryginalne etykiety papierowe termotransferowe Zebra: Z-Perform 1000T (ekonomiczne), Z-Select 2000T (premium powlekane), 8000T All-Temp (mrozoodporne). Gilza fi25 i fi76, wszystkie rozmiary. Porównanie serii, dobór do drukarki.',
     longDescription: 'Etykiety papierowe termotransferowe to najpopularniejszy typ materiałów eksploatacyjnych do drukarek przemysłowych. Wymagają taśmy barwiącej (ribbon) — woskowej, woskowo-żywicznej lub żywicznej — dzięki czemu nadruk jest trwały i odporny na ścieranie. Oferujemy trzy serie Zebra: Z-Perform 1000T (papier niepowlekany, ekonomiczny, do codziennych zastosowań), Z-Select 2000T (papier powlekany, premium jakość nadruku, do etykiet produktowych i farmaceutycznych) oraz 8000T All-Temp (klej mrozoodporny, do chłodni i logistyki mrożonej). Dostępne w gilzach fi25 mm (drukarki biurkowe) i fi76 mm (drukarki przemysłowe).',
     icon: 'tag',
@@ -281,7 +324,7 @@ export const subcategories: Subcategory[] = [
     name: 'Etykiety termotransferowe foliowe',
     parentCategoryId: 'materialy-eksploatacyjne',
     description: 'Etykiety foliowe do ekstremalnych warunków — Z-Ultimate 3000T, 8000T CryoCool, LabResist',
-    seoTitle: 'Etykiety foliowe termotransferowe Zebra | Z-Ultimate 3000T | TAKMA',
+    seoTitle: 'Etykiety foliowe termotransferowe Zebra | Z-Ultimate 3000T',
     seoDescription: 'Trwałe etykiety foliowe Zebra Z-Ultimate 3000T, 8000T CryoCool i LabResist. Odporne na chemikalia, ścieranie, temperaturę od -196°C do +300°C. Do elektroniki, farmacji, laboratoriów.',
     longDescription: 'Etykiety foliowe termotransferowe Zebra to najtrwalszy rodzaj etykiet samoprzylepnych — odporne na ścieranie, chemikalia, rozpuszczalniki, wilgoć i ekstremalne temperatury. Seria Z-Ultimate 3000T (poliester biały i srebrny) jest standardem w elektronice, motoryzacji i przemyśle. Seria 8000T CryoCool wytrzymuje temperatury kriogeniczne do -196°C (ciekły azot), a 8000T LabResist jest certyfikowana do laboratoriów. Wymagają taśmy żywicznej (resin) Zebra 5095 lub 5100.',
     icon: 'tag',
@@ -322,7 +365,7 @@ export const subcategories: Subcategory[] = [
     name: 'Etykiety termiczne',
     parentCategoryId: 'materialy-eksploatacyjne',
     description: 'Etykiety do druku termicznego bezpośredniego — bez taśmy barwiącej',
-    seoTitle: 'Etykiety termiczne Zebra | Z-Select 2000D, Z-Perform 2000D | TAKMA',
+    seoTitle: 'Etykiety termiczne Zebra | Z-Select 2000D, Z-Perform 2000D',
     seoDescription: 'Oryginalne etykiety termiczne Zebra do druku bezpośredniego (direct thermal). Bez taśmy barwiącej — niższe koszty eksploatacji. Z-Select 2000D, Z-Perform 2000D. Idealne do etykiet wysyłkowych i cenowych.',
     longDescription: 'Etykiety termiczne (direct thermal) nie wymagają taśmy barwiącej — obraz powstaje bezpośrednio na specjalnym papierze termicznym pod wpływem ciepła z głowicy drukującej. To oznacza niższe koszty eksploatacji i prostszą obsługę. Idealne do etykiet wysyłkowych, kurierskich, cenowych i tymczasowych. Serie Zebra: Z-Select 2000D (powlekane, premium) i Z-Perform 2000D (ekonomiczne). Uwaga: nadruk termiczny blaknie z czasem — do etykiet trwałych wybierz etykiety termotransferowe.',
     icon: 'tag',
@@ -338,7 +381,7 @@ export const subcategories: Subcategory[] = [
     name: 'Taśmy termotransferowe (ribbon)',
     parentCategoryId: 'materialy-eksploatacyjne',
     description: 'Taśmy barwiące woskowe, woskowo-żywiczne i żywiczne do drukarek etykiet',
-    seoTitle: 'Taśmy termotransferowe Zebra | Ribbon woskowy, żywiczny | TAKMA',
+    seoTitle: 'Taśmy termotransferowe Zebra | Ribbon woskowy, żywiczny',
     seoDescription: 'Oryginalne taśmy barwiące (ribbon) Zebra: 2300 Wax (woskowe), 3200 Wax/Resin (woskowo-żywiczne), 5095 Resin (żywiczne). Wszystkie szerokości i długości. Dobór taśmy do etykiety.',
     longDescription: 'Taśmy barwiące termotransferowe (ribbon) to materiał eksploatacyjny niezbędny do druku na etykietach termotransferowych. Od wyboru taśmy zależy trwałość nadruku, odporność na ścieranie i jakość kodów kreskowych. Oferujemy trzy typy taśm Zebra: woskowe (Wax) — ekonomiczne, do standardowych etykiet papierowych; woskowo-żywiczne (Wax/Resin) — uniwersalne, do etykiet powlekanych i syntetycznych; żywiczne (Resin) — najtrwalsze, do etykiet foliowych w ekstremalnych warunkach. Dostępne w szerokościach od 33 do 174 mm i długościach 74–600 m.',
     icon: 'tag',
@@ -351,12 +394,25 @@ export const subcategories: Subcategory[] = [
     name: 'Opaski identyfikacyjne',
     parentCategoryId: 'materialy-eksploatacyjne',
     description: 'Opaski na nadgarstek do szpitali, eventów i parków rozrywki — Z-Band Direct, Z-Band Fun',
-    seoTitle: 'Opaski identyfikacyjne Zebra | Z-Band do szpitali i eventów | TAKMA',
+    seoTitle: 'Opaski identyfikacyjne Zebra | Z-Band do szpitali i eventów',
     seoDescription: 'Opaski identyfikacyjne Zebra Z-Band Direct, Z-Band Fun, Z-Band Ultra Soft. Do identyfikacji pacjentów w szpitalach, kontroli wstępu na eventach i parkach rozrywki. Drukowane na drukarkach Zebra HC100 i ZD510-HC.',
     longDescription: 'Opaski identyfikacyjne Zebra Z-Band to bezpieczne, wygodne i trwałe rozwiązanie do identyfikacji osób. W szpitalach zapewniają precyzyjną identyfikację pacjentów z kodem kreskowym — zgodnie z wymogami akredytacji i bezpieczeństwa farmakoterapii. Na eventach i w parkach rozrywki służą jako kontrola wstępu i system cashless. Serie: Z-Band Direct (termiczne, ekonomiczne), Z-Band Fun (kolorowe, do eventów), Z-Band Ultra Soft (najdelikatniejsze, do noworodków). Drukowane na dedykowanych drukarkach opasek Zebra HC100 i ZD510-HC.',
     icon: 'tag',
-    productIds: [],
-    productCount: 0,
+    productIds: ['zebra-zband-direct-adult', 'zebra-zband-direct-child', 'zebra-zband-direct-infant'],
+    productCount: 3,
+  },
+  {
+    id: 'tasmy-do-drukarek-kart',
+    slug: 'tasmy-do-drukarek-kart',
+    name: 'Taśmy do drukarek kart',
+    parentCategoryId: 'materialy-eksploatacyjne',
+    description: 'Taśmy barwiące YMCKO, monochromatyczne i białe do drukarek kart Zebra ZC100, ZC300, ZC350',
+    seoTitle: 'Taśmy do drukarek kart Zebra | YMCKO, czarne, białe',
+    seoDescription: 'Oryginalne taśmy barwiące do drukarek kart Zebra ZC100, ZC300, ZC350. Kolorowe YMCKO (200–300 wydruków), czarne monochromatyczne (1500 wydruków), białe. Ceny netto, szybka dostawa.',
+    longDescription: 'Taśmy barwiące (ribbony) do drukarek kart plastikowych Zebra to materiał eksploatacyjny niezbędny do druku termosublimacyjnego na kartach PVC. Taśma YMCKO (Yellow-Magenta-Cyan-blacK-Overlay) służy do druku pełnokolorowego ze zdjęciami — każdy panel barwny sublimuje kolejno na kartę, a panel Overlay nakłada warstwę ochronną UV. Taśma monochromatyczna (K — czarna) drukuje tylko tekst i kody kreskowe — idealny wybór do dużych nakładów jednokolorowych kart. Taśma biała (W) służy do nadruku na ciemnych kartach. Wszystkie taśmy kompatybilne z drukarkami Zebra ZC100, ZC300 i ZC350.',
+    icon: 'tag',
+    productIds: ['zebra-ribbon-ymcko-zc', 'zebra-ribbon-black-zc', 'zebra-ribbon-white-zc'],
+    productCount: 3,
   },
   {
     id: 'karty-pcv',
@@ -364,12 +420,12 @@ export const subcategories: Subcategory[] = [
     name: 'Karty PCV',
     parentCategoryId: 'materialy-eksploatacyjne',
     description: 'Karty plastikowe PVC do drukarek kart identyfikacyjnych i dostępowych',
-    seoTitle: 'Karty PCV Zebra | Karty plastikowe do drukarek kart | TAKMA',
+    seoTitle: 'Karty PCV Zebra | Karty plastikowe do drukarek kart',
     seoDescription: 'Karty PCV Zebra Premier do drukarek kart ZC100, ZC300, ZC350, ZXP7. Białe i kolorowe karty plastikowe do identyfikatorów, kart dostępowych i lojalnościowych.',
     longDescription: 'Karty PCV (PVC) to plastikowe karty w standardowym formacie CR-80 (85,6 × 54 mm) do drukarek kart Zebra. Służą do tworzenia identyfikatorów pracowniczych, kart dostępowych, kart lojalnościowych i legitymacji. Oferujemy karty Zebra Premier PVC w różnych wariantach: białe jedno- i dwustronne, z paskiem magnetycznym, z chipem RFID oraz z hologramem zabezpieczającym. Kompatybilne z drukarkami kart Zebra ZC100, ZC300, ZC350 i ZXP Series 7.',
     icon: 'tag',
-    productIds: [],
-    productCount: 0,
+    productIds: ['zebra-cards-premier-025', 'zebra-cards-premier-076'],
+    productCount: 2,
   },
 ]
 
@@ -403,7 +459,9 @@ const desktopPrinters: Product[] = [
     slug: 'zebra-zd421t',
     name: 'Zebra ZD421t',
     shortDescription: 'Drukarka termotransferowa biurkowa 4" — następca GK420t',
-    description: `Zebra ZD421t to kompaktowa drukarka biurkowa do etykiet 4-calowych, będąca bezpośrednim następcą popularnych modeli Zebra GK420t i ZD420t. Łączy sprawdzoną niezawodność serii Zebra z nowoczesną architekturą modularną Link-OS, oferując druk termotransferowy i termiczny bezpośredni w rozdzielczości do 300 dpi z prędkością 152 mm/s.
+    description: `Zebra ZD421t to najlepszy wybór dla firm logistycznych, magazynów i e-commerce, które potrzebują niezawodnej biurkowej drukarki termotransferowej z możliwością rozbudowy o sieć Wi-Fi i Ethernet.
+
+Zebra ZD421t to kompaktowa drukarka biurkowa do etykiet 4-calowych, będąca bezpośrednim następcą popularnych modeli Zebra GK420t i ZD420t. Łączy sprawdzoną niezawodność serii Zebra z nowoczesną architekturą modularną Link-OS, oferując druk termotransferowy i termiczny bezpośredni w rozdzielczości do 300 dpi z prędkością 152 mm/s.
 
 Modułowa konstrukcja ZD421t pozwala na łatwy upgrade interfejsów — od podstawowej konfiguracji USB po rozbudowane zestawy z Ethernet (LAN), RS-232, a nawet podwójnym radiem bezprzewodowym Bluetooth 4.1 i Wi-Fi 802.11ac. Instalacja modułów nie wymaga narzędzi, co znacząco ułatwia późniejszą rozbudowę floty drukarek.
 
@@ -413,7 +471,9 @@ ZD421t obsługuje szeroką gamę materiałów: etykiety papierowe, syntetyczne (
 
 Drukarka obsługuje praktycznie wszystkie popularne symbole kodów kreskowych 1D (Code 39, Code 128, EAN-13, EAN-8, UPC-A, ITF-14, GS1-128) oraz 2D (QR Code, DataMatrix, PDF417, Aztec), co czyni ją uniwersalnym narzędziem do etykietowania w dowolnej branży. Programowanie odbywa się w językach ZPL II i EPL2 z pełną kompatybilnością wsteczną.
 
-Zebra ZD421t jest objęta 36-miesięczną gwarancją producenta na drukarkę oraz 12-miesięczną gwarancją na głowicę drukującą, co potwierdza najwyższą jakość wykonania i trwałość urządzenia.`,
+Zebra ZD421t jest objęta 36-miesięczną gwarancją producenta na drukarkę oraz 12-miesięczną gwarancją na głowicę drukującą, co potwierdza najwyższą jakość wykonania i trwałość urządzenia.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -621,6 +681,10 @@ Zebra ZD421t jest objęta 36-miesięczną gwarancją producenta na drukarkę ora
         question: 'Która wersja ZD421t jest najtańsza?',
         answer: 'Najtańsza jest wersja ZD4A042-30EM00EZ (203 dpi, USB, bez Wi-Fi) w cenie od 1637,70 zł netto. Do większości zastosowań magazynowych i e-commerce ta wersja w pełni wystarcza. Moduły Wi-Fi i Ethernet można dokupić później.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZD421t?',
+        answer: 'Alternatywami są: Zebra ZD621t (wyższa klasa z LCD i kolorowym ekranem), Honeywell PC43t, TSC TE310, SATO WS412.',
+      },
     ],
     comparison: {
       title: 'Porównanie drukarek termotransferowych biurkowych Zebra 4" — ZD220t vs ZD230t vs ZD421t vs ZD621t',
@@ -694,13 +758,16 @@ Zebra ZD421t jest objęta 36-miesięczną gwarancją producenta na drukarkę ora
       { name: 'Rozwiązywanie problemów', type: 'manual', url: 'https://serwis-zebry.pl/blog/serwis-drukarki-zebra-zd420-zd421-diagnostyka-naprawa', size: 'Online' },
     ],
     createdAt: '2024-01-15',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd400-series/zd421.html',
   },
   {
     id: 'zebra-zd421d',
     slug: 'zebra-zd421d',
     name: 'Zebra ZD421d',
     shortDescription: 'Biurkowa drukarka termiczna 4" direct thermal — następca GK420d. 203/300 dpi, do 152 mm/s, modułowa architektura MCS',
-    description: `Zebra ZD421d to biurkowa drukarka etykiet typu direct thermal (druk termiczny bezpośredni) — następca sprawdzonych modeli GK420d i ZD420d. Drukuje bez taśmy barwiącej (ribbona), co obniża koszty eksploatacji o 40–50% w porównaniu do modelu termotransferowego ZD421t. Dostępna w rozdzielczości 203 dpi (standard) lub 300 dpi (do bardzo małych kodów 2D), z prędkością druku do 152 mm/s (6 ips) — 50% szybciej niż budżetowy ZD220d.
+    description: `Zebra ZD421d to najlepszy wybór dla firm e-commerce, punktów nadawczych i magazynów, które potrzebują szybkiej biurkowej drukarki termicznej z modułową architekturą i niskim kosztem eksploatacji.
+
+Zebra ZD421d to biurkowa drukarka etykiet typu direct thermal (druk termiczny bezpośredni) — następca sprawdzonych modeli GK420d i ZD420d. Drukuje bez taśmy barwiącej (ribbona), co obniża koszty eksploatacji o 40–50% w porównaniu do modelu termotransferowego ZD421t. Dostępna w rozdzielczości 203 dpi (standard) lub 300 dpi (do bardzo małych kodów 2D), z prędkością druku do 152 mm/s (6 ips) — 50% szybciej niż budżetowy ZD220d.
 
 Drukarka wykorzystuje modułową architekturę MCS (Modular Connectivity Slot), która pozwala rozbudować łączność w dowolnym momencie: do standardowych portów USB 2.0 i USB Host można dodać moduł Ethernet 10/100, RS-232 lub Wi-Fi 802.11ac + Bluetooth 4.1 — wszystkie instalowane beznarzędziowo w slocie z tyłu obudowy. Opcjonalnie dostępny jest obcinacz (cutter) do automatycznego cięcia etykiet i przywieszek oraz odklejak (peeler) do automatycznego odrywania etykiet od podłoża — oba montowane w terenie bez narzędzi.
 
@@ -708,7 +775,9 @@ Platforma Link-OS umożliwia zdalne zarządzanie flotą drukarek z poziomu Print
 
 ZD421d obsługuje języki programowania ZPL II i EPL2 z pełną kompatybilnością wsteczną — istniejące szablony etykiet z GK420d, ZD420d i innych drukarek Zebra działają bez zmian. Drukarka współpracuje z systemami WMS, ERP i TMS (SAP, Comarch, enova, Subiekt) oraz platformami e-commerce (Allegro, Amazon, Shopify, BaseLinker) i systemami kurierskimi InPost, DPD, DHL, GLS i UPS.
 
-ZD421d jest idealnym wyborem dla firm drukujących 200–1000 etykiet dziennie, które potrzebują niskich kosztów eksploatacji (brak ribbona), modułowej łączności sieciowej i możliwości zdalnego zarządzania. Do zastosowań wymagających trwałych, odpornych etykiet (produktowe, magazynowe długoterminowe) polecamy model termotransferowy ZD421t. Drukarka dostępna jest również w wersji healthcare (ZD421d-HC) z obudową odporną na środki dezynfekujące i zasilaczem IEC 60601-1.`,
+ZD421d jest idealnym wyborem dla firm drukujących 200–1000 etykiet dziennie, które potrzebują niskich kosztów eksploatacji (brak ribbona), modułowej łączności sieciowej i możliwości zdalnego zarządzania. Do zastosowań wymagających trwałych, odpornych etykiet (produktowe, magazynowe długoterminowe) polecamy model termotransferowy ZD421t. Drukarka dostępna jest również w wersji healthcare (ZD421d-HC) z obudową odporną na środki dezynfekujące i zasilaczem IEC 60601-1.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -864,6 +933,10 @@ ZD421d jest idealnym wyborem dla firm drukujących 200–1000 etykiet dziennie, 
         question: 'Jak podłączyć Zebra ZD421d do sieci Wi-Fi lub Ethernet?',
         answer: 'ZD421d w wersji podstawowej łączy się przez USB. Do połączenia sieciowego masz dwie opcje: 1) Moduł Ethernet (P1112640-015) — instalacja beznarzędziowa w gnieździe MCS z tyłu drukarki, 2) Moduł Wi-Fi + Bluetooth (P1112640-017C) — również instalacja w gnieździe MCS. Możesz też kupić wariant z fabrycznie zainstalowanym interfejsem: ZD4A042-D0EE00EZ (USB + Ethernet, 1 691 zł) lub ZD4A042-D0EW02EZ (USB + Wi-Fi + BT, 1 885 zł).',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZD421d?',
+        answer: 'Alternatywami są: Zebra ZD621d (wyższa klasa), Honeywell PC43d, TSC DA320.',
+      },
     ],
     comparison: {
       title: 'Porównanie drukarek termicznych biurkowych Zebra 4" — ZD220d vs ZD230d vs ZD421d',
@@ -925,19 +998,24 @@ ZD421d jest idealnym wyborem dla firm drukujących 200–1000 etykiet dziennie, 
       { name: 'Rozwiązywanie problemów', type: 'manual', url: 'https://serwis-zebry.pl/blog/serwis-drukarki-zebra-zd420-zd421-diagnostyka-naprawa', size: 'Online' },
     ],
     createdAt: '2024-01-15',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd400-series/zd421.html',
   },
   {
     id: 'zebra-zd621t',
     slug: 'zebra-zd621t',
     name: 'Zebra ZD621t',
     shortDescription: 'Flagowa drukarka biurkowa 4" z kolorowym LCD, najszybsza w klasie (203 mm/s), obcinacz/odklejak/RFID',
-    description: `Zebra ZD621t to flagowa, premium drukarka etykiet w segmencie biurkowym Zebra, zaprojektowana z myślą o firmach wymagających najwyższej wydajności, niezawodności i zaawansowanych funkcji zarządzania. Jako najszybsza 4-calowa drukarka biurkowa Zebra, ZD621t osiąga prędkość druku do 203 mm/s (8 cali na sekundę) — o 33% szybciej niż ZD421t (152 mm/s) i dwukrotnie szybciej niż budżetowy model ZD220t (102 mm/s). Rozdzielczość 203 dpi w wersji standardowej lub 300 dpi w wersji opcjonalnej zapewnia doskonałą jakość nawet przy bardzo małych kodach kreskowych 2D (QR Code, DataMatrix) i drobnym tekście. Drukarka obsługuje druk termotransferowy z użyciem taśmy barwiącej (ribbon) oraz druk termiczny bezpośredni (direct thermal), co czyni ją najbardziej wszechstronną drukarką biurkową w ofercie Zebra.
+    description: `Zebra ZD621t to najlepszy wybór dla firm drukujących ponad 500 etykiet dziennie, które potrzebują najszybszej biurkowej drukarki termotransferowej z kolorowym ekranem LCD i wbudowanym Ethernet.
+
+Zebra ZD621t to flagowa, premium drukarka etykiet w segmencie biurkowym Zebra, zaprojektowana z myślą o firmach wymagających najwyższej wydajności, niezawodności i zaawansowanych funkcji zarządzania. Jako najszybsza 4-calowa drukarka biurkowa Zebra, ZD621t osiąga prędkość druku do 203 mm/s (8 cali na sekundę) — o 33% szybciej niż ZD421t (152 mm/s) i dwukrotnie szybciej niż budżetowy model ZD220t (102 mm/s). Rozdzielczość 203 dpi w wersji standardowej lub 300 dpi w wersji opcjonalnej zapewnia doskonałą jakość nawet przy bardzo małych kodach kreskowych 2D (QR Code, DataMatrix) i drobnym tekście. Drukarka obsługuje druk termotransferowy z użyciem taśmy barwiącej (ribbon) oraz druk termiczny bezpośredni (direct thermal), co czyni ją najbardziej wszechstronną drukarką biurkową w ofercie Zebra.
 
 Wyróżniającą cechą ZD621t jest kolorowy dotykowy wyświetlacz LCD 4,3 cala (rozdzielczość 480 x 272 pikseli) — jedyny taki ekran w całej gamie biurkowych drukarek Zebra. Wyświetlacz oferuje intuicyjne menu konfiguracyjne z kreatorami ustawień krok po kroku, animacje rozwiązywania problemów oraz instrukcje ładowania mediów i kalibracji. Dzięki niemu operator może samodzielnie skonfigurować drukarkę, zmienić ustawienia i zdiagnozować problemy bez potrzeby podłączania komputera. Dodatkowo 5 diod LED informuje o statusie urządzenia na pierwszy rzut oka. ZD621t obsługuje taśmy barwiące o długości 74 m lub 300 m — rolka 300-metrowa zapewnia stosunek 4:1 wymiany taśmy do mediów, co znacząco redukuje przestoje i podnosi produktywność przy dużych nakładach druku.
 
 Modułowa architektura ZD621t oparta na systemie MCS (Modular Connectivity Slot) pozwala na elastyczną rozbudowę łączności — od standardowej konfiguracji z portami USB 2.0, USB Host, Ethernet (LAN) i RS-232, po opcjonalny moduł podwójnego radia bezprzewodowego Bluetooth 4.1 i Wi-Fi 802.11ac, który można doinstalować fabrycznie lub w terenie bez narzędzi. Platforma Link-OS umożliwia zdalne zarządzanie całą flotą drukarek z jednego miejsca za pomocą Printer Profile Manager Enterprise — aktualizacje firmware, konfiguracja, diagnostyka i zabezpieczenia realizowane są zdalnie, w chmurze, bez konieczności fizycznego dostępu do urządzenia. Funkcja PrintSecure chroni dane druku przed nieautoryzowanym dostępem, a Print DNA dostarcza pakiet narzędzi programistycznych i diagnostycznych klasy enterprise. Opcjonalnie dostępny jest obcinacz (cutter) do automatycznego cięcia etykiet i przywieszek, odklejak (peeler/dispenser) do automatycznego odrywania etykiet od podłoża, a także wersja ZD621R z wbudowanym koderem RFID UHF (moduł Zebra RE40) obsługującym standardy EPC Gen 2 V2, ISO/IEC 18000-63 i RAIN RFID.
 
-ZD621t to drukarka stworzona do środowisk o wysokim nakładzie druku, w których liczy się szybkość, ciągłość pracy i łatwość zarządzania. W porównaniu do ZD421t oferuje szybszy druk, kolorowy wyświetlacz dotykowy i wbudowany port Ethernet w standardzie. W porównaniu do ZD220t jest to skok o dwie klasy wyżej — od prostego urządzenia USB do w pełni sieciowej, zarządzanej platformy druku etykiet. Drukarka obsługuje języki programowania ZPL II i EPL2 z pełną kompatybilnością wsteczną, co ułatwia migrację z wcześniejszych modeli Zebra. ZD621t jest dostępna również w wersji healthcare (ZD621t-HC) z obudową odporną na środki dezynfekujące i zasilaczem zgodnym z IEC 60601-1. Producent udziela standardowej gwarancji, którą można rozszerzyć do 3 lat w ramach kontraktu Zebra OneCare.`,
+ZD621t to drukarka stworzona do środowisk o wysokim nakładzie druku, w których liczy się szybkość, ciągłość pracy i łatwość zarządzania. W porównaniu do ZD421t oferuje szybszy druk, kolorowy wyświetlacz dotykowy i wbudowany port Ethernet w standardzie. W porównaniu do ZD220t jest to skok o dwie klasy wyżej — od prostego urządzenia USB do w pełni sieciowej, zarządzanej platformy druku etykiet. Drukarka obsługuje języki programowania ZPL II i EPL2 z pełną kompatybilnością wsteczną, co ułatwia migrację z wcześniejszych modeli Zebra. ZD621t jest dostępna również w wersji healthcare (ZD621t-HC) z obudową odporną na środki dezynfekujące i zasilaczem zgodnym z IEC 60601-1. Producent udziela standardowej gwarancji, którą można rozszerzyć do 3 lat w ramach kontraktu Zebra OneCare.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -1258,6 +1336,10 @@ ZD621t to drukarka stworzona do środowisk o wysokim nakładzie druku, w któryc
         question: 'Czy ZD621t jest kompatybilna z etykietami i taśmami z drukarek GK420t, ZD420t i ZD421t?',
         answer: 'Tak, Zebra ZD621t jest w pełni kompatybilna z materiałami eksploatacyjnymi używanymi w drukarkach GK420t, ZD420t i ZD421t. Obsługuje taśmy barwiące o szerokości do 110 mm na wałkach 0,5 cala (74 m) i 1 cal (300 m) oraz etykiety o szerokości od 15 mm do 118 mm. Drukarka programowana jest w językach ZPL II i EPL2 z pełną kompatybilnością wsteczną — istniejące szablony etykiet i konfiguracje z wcześniejszych modeli zadziałają bez zmian. Migracja z GK420t, ZD420t lub ZD421t na ZD621t jest bezproblemowa.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZD621t?',
+        answer: 'Alternatywami są: Zebra ZD621d (wersja DT), Honeywell PC45t, TSC ML240P, SATO WS4.',
+      },
     ],
     comparison: {
       title: 'Porównanie drukarek termotransferowych biurkowych Zebra 4"',
@@ -1320,13 +1402,16 @@ ZD621t to drukarka stworzona do środowisk o wysokim nakładzie druku, w któryc
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zd621-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2023-06-10',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd600-series/zd621.html',
   },
   {
     id: 'zebra-zd621d',
     slug: 'zebra-zd621d',
     name: 'Zebra ZD621d',
     shortDescription: 'Najszybsza biurkowa drukarka termiczna Zebra (203 mm/s) z opcjonalnym LCD 4,3", drukiem linerless i modularnym MCS — następca ZD620d i GX420d',
-    description: `Zebra ZD621d to flagowa biurkowa drukarka etykiet pracująca wyłącznie w technologii druku termicznego bezpośredniego (direct thermal) — nie wymaga taśmy barwiącej (ribbona), co oznacza niższy koszt eksploatacji i prostszą obsługę. Jest to najszybsza 4-calowa biurkowa drukarka termiczna Zebra, osiągająca prędkość druku do 203 mm/s (8 cali na sekundę) — o 33% szybciej niż ZD421d (152 mm/s) i dwukrotnie szybciej niż budżetowy model ZD220d (102 mm/s). Rozdzielczość 203 dpi w wersji standardowej lub 300 dpi w wersji opcjonalnej zapewnia doskonałą jakość nawet przy bardzo małych kodach kreskowych 2D (QR Code, DataMatrix) i drobnym tekście na etykietach kurierskich, wysyłkowych i produktowych.
+    description: `Zebra ZD621d to najlepszy wybór dla firm e-commerce i centrów logistycznych drukujących ponad 500 etykiet dziennie, które potrzebują najszybszej biurkowej drukarki termicznej z kolorowym LCD i obsługą linerless.
+
+Zebra ZD621d to flagowa biurkowa drukarka etykiet pracująca wyłącznie w technologii druku termicznego bezpośredniego (direct thermal) — nie wymaga taśmy barwiącej (ribbona), co oznacza niższy koszt eksploatacji i prostszą obsługę. Jest to najszybsza 4-calowa biurkowa drukarka termiczna Zebra, osiągająca prędkość druku do 203 mm/s (8 cali na sekundę) — o 33% szybciej niż ZD421d (152 mm/s) i dwukrotnie szybciej niż budżetowy model ZD220d (102 mm/s). Rozdzielczość 203 dpi w wersji standardowej lub 300 dpi w wersji opcjonalnej zapewnia doskonałą jakość nawet przy bardzo małych kodach kreskowych 2D (QR Code, DataMatrix) i drobnym tekście na etykietach kurierskich, wysyłkowych i produktowych.
 
 ZD621d to bezpośredni następca modelu ZD620d w ofercie Zebra Technologies. Wyróżniającą cechą jest opcjonalny kolorowy dotykowy wyświetlacz LCD 4,3 cala (rozdzielczość 480 × 272 pikseli) — jedyny taki ekran w gamie biurkowych drukarek termicznych Zebra. Wyświetlacz oferuje intuicyjne menu konfiguracyjne z kreatorami ustawień krok po kroku, animowane instrukcje rozwiązywania problemów oraz przewodniki ładowania mediów i kalibracji. Dzięki niemu operator może samodzielnie skonfigurować drukarkę, zmienić parametry druku i zdiagnozować problemy bez podłączania komputera. Wersja bez LCD wyposażona jest w 5 diod LED i 3 przyciski sterujące, co obniża cenę wejścia do 1 829 zł netto.
 
@@ -1334,7 +1419,9 @@ Unikatową cechą ZD621d w segmencie biurkowym jest obsługa druku etykiet liner
 
 Modułowa architektura oparta na systemie MCS (Modular Connectivity Slot) pozwala na elastyczną rozbudowę łączności — od standardowej konfiguracji z portami USB 2.0, USB Host, Ethernet (LAN) i RS-232, po opcjonalny moduł podwójnego radia Bluetooth 4.1 i Wi-Fi 802.11ac, który można doinstalować fabrycznie lub w terenie bez narzędzi. Platforma Link-OS umożliwia zdalne zarządzanie całą flotą drukarek z jednego miejsca za pomocą Printer Profile Manager Enterprise — aktualizacje firmware, konfiguracja, diagnostyka i zabezpieczenia realizowane są zdalnie, w chmurze. Funkcja PrintSecure chroni dane druku przed nieautoryzowanym dostępem, a Print DNA dostarcza pakiet narzędzi programistycznych i diagnostycznych klasy enterprise.
 
-W porównaniu do termotransferowego bliźniaka ZD621t, model ZD621d eliminuje koszt taśm barwiących i upraszcza wymianę materiałów eksploatacyjnych — jedynym materiałem jest rolka etykiet termicznych. Jest to optymalny wybór wszędzie tam, gdzie wydruki nie muszą być odporne na ścieranie, wilgoć czy działanie chemikaliów: etykiety kurierskie, wysyłkowe, cenowe, gastronomiczne, magazynowe i inwentaryzacyjne. Drukarka obsługuje języki programowania ZPL II i EPL 2 z pełną kompatybilnością wsteczną, co ułatwia migrację z wcześniejszych modeli Zebra (ZD620d, GK420d, GC420d). ZD621d jest dostępna również w wersji healthcare (ZD621d-HC) z obudową odporną na środki dezynfekujące.`,
+W porównaniu do termotransferowego bliźniaka ZD621t, model ZD621d eliminuje koszt taśm barwiących i upraszcza wymianę materiałów eksploatacyjnych — jedynym materiałem jest rolka etykiet termicznych. Jest to optymalny wybór wszędzie tam, gdzie wydruki nie muszą być odporne na ścieranie, wilgoć czy działanie chemikaliów: etykiety kurierskie, wysyłkowe, cenowe, gastronomiczne, magazynowe i inwentaryzacyjne. Drukarka obsługuje języki programowania ZPL II i EPL 2 z pełną kompatybilnością wsteczną, co ułatwia migrację z wcześniejszych modeli Zebra (ZD620d, GK420d, GC420d). ZD621d jest dostępna również w wersji healthcare (ZD621d-HC) z obudową odporną na środki dezynfekujące.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -1582,6 +1669,10 @@ W porównaniu do termotransferowego bliźniaka ZD621t, model ZD621d eliminuje ko
         question: 'Jak zarządzać flotą drukarek ZD621d w sieci?',
         answer: 'ZD621d wykorzystuje platformę Link-OS z narzędziem Printer Profile Manager Enterprise (PPME). PPME umożliwia zdalne zarządzanie konfiguracją, aktualizację firmware, diagnostykę i zabezpieczenia całej floty drukarek z jednej konsoli webowej. Funkcja PrintSecure wymusza uwierzytelnianie przed zmianą ustawień. Obsługiwane protokoły: SNMP, HTTP/HTTPS, FTP, Zebra Link-OS API (REST/JSON).',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZD621d?',
+        answer: 'Alternatywami są: Zebra ZD621t (wersja TT), Honeywell PC45d.',
+      },
     ],
     comparison: {
       title: 'Porównanie biurkowych drukarek termicznych Zebra',
@@ -1644,13 +1735,16 @@ W porównaniu do termotransferowego bliźniaka ZD621t, model ZD621d eliminuje ko
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zd621-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2023-06-10',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd600-series/zd621.html',
   },
   {
     id: 'zebra-zd411d',
     slug: 'zebra-zd411d',
     name: 'Zebra ZD411d',
     shortDescription: 'Kompaktowa drukarka termiczna 2" direct thermal — następca ZD410 i LP2824. 203/300 dpi, do 152 mm/s, modułowa architektura MCS, Wi-Fi 6',
-    description: `Zebra ZD411d to najkompaktniejsza biurkowa drukarka etykiet w rodzinie Zebra — format 2 cale (56 mm szerokości druku) zajmuje na biurku jedynie 220 × 115 mm i waży zaledwie 1 kg. Jest to bezpośredni następca modeli Zebra ZD410 i LP2824 Plus, zaprojektowany do druku małych etykiet z kodami kreskowymi, cenówek, etykiet na fiolki, próbówki laboratoryjne i biżuterię. Drukarka wykorzystuje metodę druku termicznego bezpośredniego (direct thermal) — bez taśmy barwiącej (ribbona), co obniża koszty eksploatacji nawet o 50% w porównaniu do modeli termotransferowych. Dostępna w rozdzielczości 203 dpi (standard) lub 300 dpi (do bardzo małych kodów 2D na probówkach i komponentach elektronicznych), z prędkością druku do 152 mm/s (6 ips).
+    description: `Zebra ZD411d to najlepszy wybór dla aptek, laboratoriów i jubilerów, którzy potrzebują kompaktowej 2-calowej drukarki termicznej do druku małych etykiet z kodami kreskowymi.
+
+Zebra ZD411d to najkompaktniejsza biurkowa drukarka etykiet w rodzinie Zebra — format 2 cale (56 mm szerokości druku) zajmuje na biurku jedynie 220 × 115 mm i waży zaledwie 1 kg. Jest to bezpośredni następca modeli Zebra ZD410 i LP2824 Plus, zaprojektowany do druku małych etykiet z kodami kreskowymi, cenówek, etykiet na fiolki, próbówki laboratoryjne i biżuterię. Drukarka wykorzystuje metodę druku termicznego bezpośredniego (direct thermal) — bez taśmy barwiącej (ribbona), co obniża koszty eksploatacji nawet o 50% w porównaniu do modeli termotransferowych. Dostępna w rozdzielczości 203 dpi (standard) lub 300 dpi (do bardzo małych kodów 2D na probówkach i komponentach elektronicznych), z prędkością druku do 152 mm/s (6 ips).
 
 ZD411d obsługuje etykiety o szerokości od 15 do 60 mm i długości od 6,35 do 991 mm, co obejmuje zarówno drobne etykiety jubilerskie (np. 25×10 mm), jak i dłuższe paragony czy etykiety na opaski identyfikacyjne pacjentów. Maksymalna średnica rolki wynosi 127 mm (5 cali), a drukarka akceptuje wałki 12,7 mm (0,5") i 25,4 mm (1"). Pamięć 512 MB Flash i 256 MB DDR3 SDRAM zapewnia buforowanie dużych szablonów graficznych i fontów. Konstrukcja OpenACCESS umożliwia szybki załadunek etykiet z góry bez narzędzi.
 
@@ -1658,7 +1752,9 @@ Modułowa architektura MCS (Modular Connectivity Slot) pozwala rozbudować łąc
 
 Platforma Zebra Print DNA zapewnia zestaw narzędzi diagnostycznych i zarządzających: Browser Print (druk z przeglądarki), Visibility Services (monitoring statusu), Printer Profile Manager (klonowanie konfiguracji) oraz Link-OS SDK do integracji z systemami WMS, ERP i platformami e-commerce. Drukarka jest kompatybilna z językami ZPL II i EPL2, co gwarantuje pełną kompatybilność wsteczną z istniejącymi szablonami etykiet z ZD410, LP2824 i TLP2824.
 
-Dla kogo jest Zebra ZD411d? To optymalny wybór dla firm potrzebujących kompaktowej drukarki do małych etykiet: jubilerzy (cenówki na biżuterię), apteki (etykiety na recepturę), laboratoria (próbówki, fiolki), szpitale (opaski pacjentów — dostępna wersja healthcare ZD411d-HC z certyfikatem IEC 60601-1), sklepy detaliczne (małe cenówki półkowe), branża elektroniczna (etykiety na komponenty SMD) i e-commerce (małe etykiety zwrotne). Gwarancja producenta na drukarkę i 6 miesięcy na głowicę drukującą. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies.`,
+Dla kogo jest Zebra ZD411d? To optymalny wybór dla firm potrzebujących kompaktowej drukarki do małych etykiet: jubilerzy (cenówki na biżuterię), apteki (etykiety na recepturę), laboratoria (próbówki, fiolki), szpitale (opaski pacjentów — dostępna wersja healthcare ZD411d-HC z certyfikatem IEC 60601-1), sklepy detaliczne (małe cenówki półkowe), branża elektroniczna (etykiety na komponenty SMD) i e-commerce (małe etykiety zwrotne). Gwarancja producenta na drukarkę i 6 miesięcy na głowicę drukującą. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -1811,6 +1907,10 @@ Dla kogo jest Zebra ZD411d? To optymalny wybór dla firm potrzebujących kompakt
         question: 'Jaka jest gwarancja na Zebra ZD411d?',
         answer: 'ZD411d objęta jest standardową gwarancją producenta. Gwarancja na głowicę drukującą wynosi 6 miesięcy. Gwarancję można rozszerzyć w ramach kontraktów serwisowych Zebra OneCare Essential lub Select. Serwis autoryzowany w Polsce: serwis-zebry.pl.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZD411d?',
+        answer: 'ZD411d jest jedyną 2-calową drukarką termiczną Zebra w aktualnej ofercie. Alternatywą w ramach Zebra jest ZD411t (wersja termotransferowa z trwalszymi wydrukami). Spoza marki Zebra: Honeywell PC23d, TSC TDP-225, Brother TD-2120N.',
+      },
     ],
     comparison: {
       title: 'Porównanie drukarek Zebra 2" — ZD411d vs ZD411t vs ZD421d (4")',
@@ -1872,13 +1972,16 @@ Dla kogo jest Zebra ZD411d? To optymalny wybór dla firm potrzebujących kompakt
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zd411-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2025-01-15',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd400-series/zd411.html',
   },
   {
     id: 'zebra-zd411t',
     slug: 'zebra-zd411t',
     name: 'Zebra ZD411t',
     shortDescription: 'Kompaktowa drukarka termotransferowa 2" — następca TLP2824. 203/300 dpi, do 152 mm/s, trwałe etykiety jubilerskie i przemysłowe, Wi-Fi 6',
-    description: `Zebra ZD411t to kompaktowa biurkowa drukarka etykiet termotransferowa w formacie 2 cali (56 mm szerokości druku) — oficjalny następca legendarnego modelu Zebra TLP2824 Plus. Łączy sprawdzoną niezawodność Zebra z nowoczesną architekturą modularną i platformą Print DNA, oferując druk termotransferowy i termiczny bezpośredni w rozdzielczości do 300 dpi z prędkością do 152 mm/s. Jako drukarka termotransferowa, ZD411t drukuje z użyciem taśmy barwiącej (ribbona) — obraz jest przenoszony z taśmy na etykietę pod wpływem ciepła z głowicy, dzięki czemu wydruki są trwałe i odporne na ścieranie, wilgoć, UV i chemikalia.
+    description: `Zebra ZD411t to najlepszy wybór dla jubilerów, producentów elektroniki i firm telekomunikacyjnych, które potrzebują kompaktowej drukarki termotransferowej 2" do trwałych małych etykiet z taśmą żywiczną.
+
+Zebra ZD411t to kompaktowa biurkowa drukarka etykiet termotransferowa w formacie 2 cali (56 mm szerokości druku) — oficjalny następca legendarnego modelu Zebra TLP2824 Plus. Łączy sprawdzoną niezawodność Zebra z nowoczesną architekturą modularną i platformą Print DNA, oferując druk termotransferowy i termiczny bezpośredni w rozdzielczości do 300 dpi z prędkością do 152 mm/s. Jako drukarka termotransferowa, ZD411t drukuje z użyciem taśmy barwiącej (ribbona) — obraz jest przenoszony z taśmy na etykietę pod wpływem ciepła z głowicy, dzięki czemu wydruki są trwałe i odporne na ścieranie, wilgoć, UV i chemikalia.
 
 ZD411t to najlepsza drukarka Zebra do trwałych małych etykiet — cenówek jubilerskich, etykiet na środki trwałe, oznaczeń komponentów elektronicznych i etykiet kablowych. Taśma barwiąca 74 m na wałku 0,5 cala (12,7 mm) o szerokości 33–58 mm obsługuje trzy rodzaje ribbonów: woskowe (wax) do standardowych etykiet papierowych, woskowo-żywiczne (wax-resin) do etykiet laminowanych i żywiczne (resin) do etykiet syntetycznych (PP, PE, PET). Drukarka obsługuje etykiety o szerokości od 15 do 60 mm i długości do 991 mm, akceptuje rolki o średnicy do 127 mm na wałkach 12,7 i 25,4 mm. Wymiary 242,9 × 138,7 × 169,2 mm przy wadze 1,63 kg — niewiele większa od modelu direct thermal ZD411d.
 
@@ -1886,7 +1989,9 @@ Modułowa architektura MCS (Modular Connectivity Slot) pozwala rozbudować łąc
 
 Opcjonalnie dostępny odklejak/peeler (P1117258-230) do automatycznego oddzielania etykiet od podłoża i gilotyna/cutter (P1117258-231) do automatycznego cięcia — oba montowane w terenie bez narzędzi. ZD411t drukuje również w trybie termicznym bezpośrednim (direct thermal) bez ribbona.
 
-Dla kogo jest Zebra ZD411t? To optymalny wybór dla firm potrzebujących trwałych małych etykiet: jubilerzy (cenówki odporne na ścieranie — taśma żywiczna na etykiecie syntetycznej), branża elektroniczna (etykiety na komponenty, PCB, SMD z rozdzielczością 300 dpi), telekomunikacja (etykiety flagowe na kable), producenci (oznaczenia trwałe na częściach), farmacja i kosmetyka (małe etykiety produktowe). Gwarancja producenta na drukarkę i 6 miesięcy na głowicę. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies.`,
+Dla kogo jest Zebra ZD411t? To optymalny wybór dla firm potrzebujących trwałych małych etykiet: jubilerzy (cenówki odporne na ścieranie — taśma żywiczna na etykiecie syntetycznej), branża elektroniczna (etykiety na komponenty, PCB, SMD z rozdzielczością 300 dpi), telekomunikacja (etykiety flagowe na kable), producenci (oznaczenia trwałe na częściach), farmacja i kosmetyka (małe etykiety produktowe). Gwarancja producenta na drukarkę i 6 miesięcy na głowicę. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -2067,6 +2172,10 @@ Dla kogo jest Zebra ZD411t? To optymalny wybór dla firm potrzebujących trwały
         question: 'Jaka jest gwarancja na ZD411t?',
         answer: 'ZD411t objęta jest standardową gwarancją producenta Zebra. Gwarancja na głowicę drukującą wynosi 6 miesięcy. Gwarancję można rozszerzyć w ramach Zebra OneCare Essential lub Select. Autoryzowany serwis w Polsce: serwis-zebry.pl.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZD411t?',
+        answer: 'ZD411t jest jedyną 2-calową drukarką termotransferową Zebra w aktualnej ofercie. Alternatywą w Zebra jest ZD411d (wersja DT, tańsza w eksploatacji). Spoza Zebra: Honeywell PC23t, TSC TTP-225, Brother TD-2130N.',
+      },
     ],
     comparison: {
       title: 'Porównanie drukarek Zebra 2" — ZD411t vs ZD411d vs ZD421t (4")',
@@ -2128,19 +2237,24 @@ Dla kogo jest Zebra ZD411t? To optymalny wybór dla firm potrzebujących trwały
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zd411-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2025-01-15',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd400-series/zd411.html',
   },
   {
     id: 'zebra-zd220d',
     slug: 'zebra-zd220d',
     name: 'Zebra ZD220d',
     shortDescription: 'Najtańsza 4-calowa drukarka termiczna Zebra — druk direct thermal bez taśmy barwiącej, idealnie do etykiet kurierskich i wysyłkowych',
-    description: `Zebra ZD220d to biurkowa drukarka etykiet pracująca wyłącznie w technologii druku termicznego bezpośredniego (direct thermal). Jest to najtańsze urządzenie w ofercie Zebra Technologies drukujące etykiety o szerokości do 4 cali, zaprojektowane z myślą o firmach e-commerce, punktach nadawczych paczek, sklepach detalicznych i małych magazynach, gdzie dominującym zastosowaniem jest druk etykiet wysyłkowych, kurierskich i cenowych. W odróżnieniu od siostrzanego modelu ZD220t (wersja termotransferowa), ZD220d nie wymaga taśmy barwiącej (ribbona) — obraz powstaje bezpośrednio na papierze termicznym pod wpływem ciepła z głowicy drukującej. Eliminacja ribbona oznacza niższy koszt eksploatacji na etykietę, prostszą obsługę (jedynym materiałem eksploatacyjnym jest rolka etykiet) i szybszą wymianę mediów.
+    description: `Zebra ZD220d to najlepszy wybór dla małych firm i startupów szukających niezawodnej biurkowej drukarki etykiet termicznych w przystępnej cenie.
+
+Zebra ZD220d to biurkowa drukarka etykiet pracująca wyłącznie w technologii druku termicznego bezpośredniego (direct thermal). Jest to najtańsze urządzenie w ofercie Zebra Technologies drukujące etykiety o szerokości do 4 cali, zaprojektowane z myślą o firmach e-commerce, punktach nadawczych paczek, sklepach detalicznych i małych magazynach, gdzie dominującym zastosowaniem jest druk etykiet wysyłkowych, kurierskich i cenowych. W odróżnieniu od siostrzanego modelu ZD220t (wersja termotransferowa), ZD220d nie wymaga taśmy barwiącej (ribbona) — obraz powstaje bezpośrednio na papierze termicznym pod wpływem ciepła z głowicy drukującej. Eliminacja ribbona oznacza niższy koszt eksploatacji na etykietę, prostszą obsługę (jedynym materiałem eksploatacyjnym jest rolka etykiet) i szybszą wymianę mediów.
 
 Drukarka oferuje rozdzielczość 203 dpi (8 punktów/mm), prędkość druku do 102 mm/s (4 cale na sekundę) i obsługuje etykiety o szerokości od 25,4 mm do 112 mm przy maksymalnej szerokości nadruku 104 mm. Maksymalna długość pojedynczej etykiety wynosi 991 mm, a maksymalna średnica rolki to 127 mm (5 cali). Kompaktowe wymiary — 267 × 197 × 191 mm przy wadze zaledwie 1,0 kg — pozwalają umieścić drukarkę na każdym biurku lub stanowisku pakowania. Konstrukcja OpenACCESS z jednoczęściową obudową umożliwia szybkie załadowanie rolki etykiet: wystarczy podnieść pokrywę, włożyć rolkę i zamknąć — bez prowadnic, bez taśmy, bez narzędzi. Podwójna ścianka obudowy zapewnia trwałość wystarczającą do codziennej pracy biurowej.
 
 Zebra ZD220d komunikuje się z komputerem za pośrednictwem interfejsu USB 2.0 i jest wyposażona w 256 MB pamięci Flash oraz 128 MB SDRAM. Drukarka obsługuje języki programowania ZPL II i EPL 2, co zapewnia pełną kompatybilność z istniejącymi szablonami etykiet z wcześniejszych modeli Zebra, w tym GK420d i GC420d. Obsługiwane kody kreskowe 1D obejmują: Code 39, Code 128, EAN-13, EAN-8, UPC-A, UPC-E, ITF, Codabar i Code 93. Kody 2D: QR Code, DataMatrix, PDF417, Aztec i MaxiCode — dzięki czemu ZD220d spełnia wymagania standardów GS1 i etykiet kurierskich wszystkich głównych przewoźników (InPost, DPD, DHL, UPS, GLS, Pocztex). Opcjonalnie dostępna jest wersja z odklejakiem (dyspenserem) do automatycznego oddzielania etykiety od podłoża, co przyspiesza ręczne naklejanie etykiet na paczki.
 
-ZD220d to optymalny wybór, gdy drukujesz wyłącznie etykiety o ograniczonej trwałości — wysyłkowe, kurierskie, cenowe, tymczasowe oznaczenia magazynowe — i nie potrzebujesz wydruków odpornych na ścieranie, wilgoć czy działanie chemikaliów (do tego służy model termotransferowy ZD220t). Koszty eksploatacji ZD220d są niższe niż ZD220t, ponieważ jedynym materiałem eksploatacyjnym jest papier termiczny — nie kupujesz taśm barwiących. Producent udziela 24-miesięcznej gwarancji na urządzenie. Drukarka jest dostarczana z zasilaczem sieciowym, kablem zasilającym, skróconą instrukcją obsługi oraz płytą CD ze sterownikami (sterowniki dostępne także online na serwis-zebry.pl/sterowniki).`,
+ZD220d to optymalny wybór, gdy drukujesz wyłącznie etykiety o ograniczonej trwałości — wysyłkowe, kurierskie, cenowe, tymczasowe oznaczenia magazynowe — i nie potrzebujesz wydruków odpornych na ścieranie, wilgoć czy działanie chemikaliów (do tego służy model termotransferowy ZD220t). Koszty eksploatacji ZD220d są niższe niż ZD220t, ponieważ jedynym materiałem eksploatacyjnym jest papier termiczny — nie kupujesz taśm barwiących. Producent udziela 24-miesięcznej gwarancji na urządzenie. Drukarka jest dostarczana z zasilaczem sieciowym, kablem zasilającym, skróconą instrukcją obsługi oraz płytą CD ze sterownikami (sterowniki dostępne także online na serwis-zebry.pl/sterowniki).
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -2250,6 +2364,10 @@ ZD220d to optymalny wybór, gdy drukujesz wyłącznie etykiety o ograniczonej tr
         question: 'Jak wypada ZD220d na tle droższych modeli Zebra?',
         answer: 'ZD220d to najtańsza drukarka termiczna Zebra (od 620,95 zł netto). W porównaniu: ZD421d (ok. 1 890 zł) oferuje szybszy druk (152 mm/s vs 102 mm/s), więcej interfejsów (Ethernet, Wi-Fi, Bluetooth jako opcje), modularność i rozdzielczość do 300 dpi. ZD220d wystarczy, gdy drukujesz do kilkuset etykiet dziennie, korzystasz z jednego stanowiska USB i nie potrzebujesz łączności sieciowej. ZD421d warto wybrać przy dużym wolumenie, potrzebie zdalnego zarządzania lub pracy w sieci.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZD220d?',
+        answer: 'Alternatywami są: Zebra ZD421d (wyższa klasa z LCD), Honeywell PC42d, Brother TD-4520DN, TSC DA220. W ramach Zebra — ZD230d oferuje tę samą funkcjonalność w niższej cenie.',
+      },
     ],
     comparison: {
       title: 'Porównanie drukarek termicznych biurkowych Zebra 4"',
@@ -2314,13 +2432,16 @@ ZD220d to optymalny wybór, gdy drukujesz wyłącznie etykiety o ograniczonej tr
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Printers/Desktop%20Printers/zd220/spec-sheet/zd220-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2024-06-01',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd200-series/zd220.html',
   },
   {
     id: 'zebra-zd230d',
     slug: 'zebra-zd230d',
     name: 'Zebra ZD230d',
     shortDescription: 'Drukarka termiczna 4" direct thermal — następca ZD220d z szybszym drukiem (152 mm/s), opcją gilotyny, odklejaka, Ethernet, Bluetooth i Wi-Fi',
-    description: `Zebra ZD230d to biurkowa drukarka etykiet pracująca wyłącznie w technologii druku termicznego bezpośredniego (direct thermal) — oficjalny następca popularnego modelu Zebra ZD220d. W porównaniu do poprzednika, ZD230d oferuje o 50% wyższą prędkość druku (152 mm/s vs 102 mm/s), znacznie bogatszy wybór interfejsów komunikacyjnych (USB, Ethernet, Bluetooth, Wi-Fi) oraz opcje gilotyny (cutter) i odklejaka (peeler/dispenser), które wcześniej nie były dostępne w tej klasie cenowej. Drukarka termiczna ZD230d nie wymaga taśmy barwiącej (ribbona) — obraz powstaje bezpośrednio na papierze termicznym pod wpływem ciepła z głowicy drukującej. Eliminacja ribbona oznacza niższy koszt eksploatacji na etykietę, prostszą obsługę i szybszą wymianę mediów. ZD230d to idealne rozwiązanie do druku etykiet kurierskich, wysyłkowych i cenowych w firmach e-commerce, punktach nadawczych paczek, sklepach detalicznych i małych magazynach.
+    description: `Zebra ZD230d to najlepszy wybór dla firm e-commerce i sklepów detalicznych, które potrzebują szybkiej drukarki termicznej z opcją Ethernet i gilotyny w przystępnej cenie.
+
+Zebra ZD230d to biurkowa drukarka etykiet pracująca wyłącznie w technologii druku termicznego bezpośredniego (direct thermal) — oficjalny następca popularnego modelu Zebra ZD220d. W porównaniu do poprzednika, ZD230d oferuje o 50% wyższą prędkość druku (152 mm/s vs 102 mm/s), znacznie bogatszy wybór interfejsów komunikacyjnych (USB, Ethernet, Bluetooth, Wi-Fi) oraz opcje gilotyny (cutter) i odklejaka (peeler/dispenser), które wcześniej nie były dostępne w tej klasie cenowej. Drukarka termiczna ZD230d nie wymaga taśmy barwiącej (ribbona) — obraz powstaje bezpośrednio na papierze termicznym pod wpływem ciepła z głowicy drukującej. Eliminacja ribbona oznacza niższy koszt eksploatacji na etykietę, prostszą obsługę i szybszą wymianę mediów. ZD230d to idealne rozwiązanie do druku etykiet kurierskich, wysyłkowych i cenowych w firmach e-commerce, punktach nadawczych paczek, sklepach detalicznych i małych magazynach.
 
 Drukarka oferuje rozdzielczość 203 dpi (8 punktów/mm) i obsługuje etykiety o szerokości od 25,4 mm do 112 mm przy maksymalnej szerokości nadruku 108 mm. Maksymalna długość pojedynczej etykiety wynosi 991 mm, a maksymalna średnica rolki to 127 mm (5 cali). Kompaktowe wymiary — 220 × 176 × 151 mm przy wadze zaledwie 1,1 kg — pozwalają umieścić drukarkę na każdym biurku lub stanowisku pakowania. Konstrukcja OpenACCESS z jednoczęściową obudową umożliwia szybkie załadowanie rolki etykiet: wystarczy podnieść pokrywę, włożyć rolkę i zamknąć — bez prowadnic, bez taśmy, bez narzędzi. Podwójna ścianka obudowy (dual-wall construction) zapewnia trwałość wystarczającą do intensywnej codziennej eksploatacji. Prędkość druku 152 mm/s (6 cali na sekundę) to taki sam parametr jak w droższym modelu ZD421d — oznacza to, że ZD230d drukuje etykietę kurierską 100×150 mm w niespełna sekundę.
 
@@ -2328,7 +2449,9 @@ Zebra ZD230d jest dostępna w sześciu wariantach, które różnią się interfe
 
 ZD230d to następca ZD220d i optymalny wybór dla firm, które potrzebują szybszego druku niż oferuje ZD220d, ale nie chcą inwestować w droższego ZD421d. Obsługiwane kody kreskowe 1D obejmują: Code 39, Code 128, EAN-13, EAN-8, UPC-A, UPC-E, ITF, Codabar i Code 93. Kody 2D: QR Code, DataMatrix, PDF417, Aztec i MaxiCode — dzięki czemu ZD230d spełnia wymagania standardów GS1 i etykiet kurierskich wszystkich głównych przewoźników (InPost, DPD, DHL, UPS, GLS, Pocztex). Koszty eksploatacji ZD230d są niższe niż drukarek termotransferowych, ponieważ jedynym materiałem eksploatacyjnym jest papier termiczny. Producent udziela 24-miesięcznej gwarancji na urządzenie. Drukarka jest dostarczana z zasilaczem sieciowym, kablem zasilającym i skróconą instrukcją obsługi. Sterowniki i oprogramowanie konfiguracyjne dostępne są na serwis-zebry.pl/sterowniki.
 
-Podsumowanie: Dla kogo jest Zebra ZD230d? To optymalny wybór dla firm drukujących do 500 etykiet dziennie, które potrzebują szybszej drukarki niż ZD220d (152 vs 102 mm/s) i opcji łączności sieciowej (Ethernet, Wi-Fi), ale nie chcą inwestować w droższego ZD421d. Idealna do etykiet kurierskich (InPost, DPD, DHL), cenowych i magazynowych. Cena od 1 081 zł netto. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies z 20-letnim doświadczeniem w branży AutoID.`,
+Podsumowanie: Dla kogo jest Zebra ZD230d? To optymalny wybór dla firm drukujących do 500 etykiet dziennie, które potrzebują szybszej drukarki niż ZD220d (152 vs 102 mm/s) i opcji łączności sieciowej (Ethernet, Wi-Fi), ale nie chcą inwestować w droższego ZD421d. Idealna do etykiet kurierskich (InPost, DPD, DHL), cenowych i magazynowych. Cena od 1 081 zł netto. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies z 20-letnim doświadczeniem w branży AutoID.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -2478,6 +2601,10 @@ Podsumowanie: Dla kogo jest Zebra ZD230d? To optymalny wybór dla firm drukując
         question: 'Gdzie kupić Zebra ZD230d w Polsce?',
         answer: 'Zebra ZD230d jest dostępna w TAKMA — autoryzowanym partnerze Zebra Technologies z ponad 20-letnim doświadczeniem w branży AutoID. Oferujemy pełne doradztwo techniczne przy wyborze wariantu (USB, Ethernet, Wi-Fi, gilotyna, odklejak), pomoc w doborze etykiet i konfiguracji drukarki. Zapewniamy dostawę kurierem na terenie całej Polski, gwarancję producenta oraz serwis gwarancyjny i pogwarancyjny przez serwis-zebry.pl. Aby złożyć zamówienie, dodaj wybrany wariant do koszyka zapytaniowego lub skontaktuj się z nami telefonicznie.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZD230d?',
+        answer: 'Alternatywami są: Zebra ZD421d (wyższa klasa z LCD), Honeywell PC42d, Brother TD-4520DN, TSC DA220. W ramach Zebra — ZD230d oferuje tę samą funkcjonalność w niższej cenie.',
+      },
     ],
     comparison: {
       title: 'Porównanie drukarek termicznych biurkowych Zebra 4" — ZD220d vs ZD230d vs ZD421d',
@@ -2550,19 +2677,24 @@ Podsumowanie: Dla kogo jest Zebra ZD230d? To optymalny wybór dla firm drukując
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Printers/Desktop%20Printers/zd230/spec-sheet/zd230-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2025-06-01',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd200-series/zd220.html',
   },
   {
     id: 'zebra-zd220t',
     slug: 'zebra-zd220t',
     name: 'Zebra ZD220t',
     shortDescription: 'Najtańsza 4-calowa drukarka etykiet termotransferowa Zebra — następca GC420t',
-    description: `Zebra ZD220t to biurkowa drukarka etykiet termotransferowa, która stanowi oficjalnego następcę popularnego modelu Zebra GC420t. Jako najtańsza 4-calowa drukarka termotransferowa w ofercie Zebra, ZD220t łączy niezawodność i jakość wykonania charakterystyczną dla marki Zebra z ceną dostępną nawet dla najmniejszych firm. Drukarka obsługuje zarówno druk termotransferowy z użyciem taśmy barwiącej (woskowej, woskowo-żywicznej lub żywicznej), jak i druk termiczny bezpośredni — co czyni ją wszechstronnym narzędziem do tworzenia etykiet z kodami kreskowymi, etykiet kurierskich, metek produktowych i oznaczeń magazynowych.
+    description: `Zebra ZD220t to najlepszy wybór dla małych firm szukających najtańszej drukarki termotransferowej Zebra do trwałych etykiet produktowych i magazynowych.
+
+Zebra ZD220t to biurkowa drukarka etykiet termotransferowa, która stanowi oficjalnego następcę popularnego modelu Zebra GC420t. Jako najtańsza 4-calowa drukarka termotransferowa w ofercie Zebra, ZD220t łączy niezawodność i jakość wykonania charakterystyczną dla marki Zebra z ceną dostępną nawet dla najmniejszych firm. Drukarka obsługuje zarówno druk termotransferowy z użyciem taśmy barwiącej (woskowej, woskowo-żywicznej lub żywicznej), jak i druk termiczny bezpośredni — co czyni ją wszechstronnym narzędziem do tworzenia etykiet z kodami kreskowymi, etykiet kurierskich, metek produktowych i oznaczeń magazynowych.
 
 Pomimo budżetowego pozycjonowania, Zebra ZD220t wyróżnia się solidną konstrukcją z podwójną ścianką obudowy i metalową głowicą drukującą — elementami typowymi dla droższych modeli. System OpenACCESS pozwala na szybką i intuicyjną wymianę etykiet oraz taśmek barwiących, bez konieczności użycia narzędzi. Drukarka oferuje rozdzielczość 203 dpi, prędkość druku do 102 mm/s (4 cale na sekundę) oraz możliwość druku na etykietach o szerokości od 25,4 mm do 112 mm. Kompaktowe wymiary (267 × 197 × 191 mm) i waga 1,7 kg sprawiają, że ZD220t bez problemu zmieści się na każdym biurku lub stanowisku roboczym.
 
 Zebra ZD220t obsługuje języki programowania ZPL II i EPL II, dzięki czemu migracja z modelu GC420t jest bezproblemowa — istniejące szablony etykiet i konfiguracje zadziałają bez zmian. Taśmy barwiące używane w GC420t i GT800 są w pełni kompatybilne z ZD220t (wałek 0,5 cala, do 74 m). Drukarka komunikuje się z komputerem za pośrednictwem interfejsu USB 2.0, a pamięć 256 MB Flash i 128 MB SDRAM zapewnia sprawne przetwarzanie nawet bardziej złożonych projektów etykiet. Opcjonalnie dostępny jest odklejak (dyspenser) do automatycznego oddzielania etykiet od podłoża.
 
-ZD220t to doskonały wybór dla firm szukających niezawodnej drukarki etykiet bez konieczności inwestowania w droższe modele z rozbudowaną funkcjonalnością sieciową. Sprawdzi się wszędzie tam, gdzie drukarka jest podłączona do jednego stanowiska komputerowego i dzienny nakład druku wynosi do kilkuset etykiet. Producent udziela 24-miesięcznej gwarancji na urządzenie, co potwierdza zaufanie Zebry do trwałości tego modelu.`,
+ZD220t to doskonały wybór dla firm szukających niezawodnej drukarki etykiet bez konieczności inwestowania w droższe modele z rozbudowaną funkcjonalnością sieciową. Sprawdzi się wszędzie tam, gdzie drukarka jest podłączona do jednego stanowiska komputerowego i dzienny nakład druku wynosi do kilkuset etykiet. Producent udziela 24-miesięcznej gwarancji na urządzenie, co potwierdza zaufanie Zebry do trwałości tego modelu.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -2732,6 +2864,10 @@ ZD220t to doskonały wybór dla firm szukających niezawodnej drukarki etykiet b
         question: 'Czy taśmy z GC420t pasują do ZD220t?',
         answer: 'Tak, taśmy barwiące (ribbony) używane w drukarkach Zebra GC420t i GT800 są w pełni kompatybilne z ZD220t. Wszystkie trzy modele używają taśm na wałku 0,5 cala (12,7 mm) o maksymalnej długości 74 m. Dzięki temu migracja z GC420t na ZD220t nie wymaga zmiany materiałów eksploatacyjnych.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZD220t?',
+        answer: 'Alternatywami są: Zebra ZD421t (wyższa klasa), Honeywell PC42t, Brother TD-4520TN, TSC TE210. ZD230t to ulepszona wersja ZD220t.',
+      },
     ],
     comparison: {
       title: 'Porównanie drukarek termotransferowych biurkowych Zebra 4" — ZD220t vs ZD230t vs ZD421t',
@@ -2796,13 +2932,16 @@ ZD220t to doskonały wybór dla firm szukających niezawodnej drukarki etykiet b
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Printers/Desktop%20Printers/zd220/spec-sheet/zd220-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2024-06-01',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd200-series/zd220.html',
   },
   {
     id: 'zebra-zd230t',
     slug: 'zebra-zd230t',
     name: 'Zebra ZD230t',
     shortDescription: 'Drukarka termotransferowa 4" — następca ZD220t z szybszym drukiem (152 mm/s), taśmą 300 m, opcją Ethernet, Bluetooth i Wi-Fi',
-    description: `Zebra ZD230t to biurkowa drukarka etykiet termotransferowa — oficjalny następca popularnego modelu Zebra ZD220t. W porównaniu do poprzednika, ZD230t oferuje o 50% wyższą prędkość druku (152 mm/s vs 102 mm/s), czterokrotnie większą pojemność taśmy barwiącej (300 m vs 74 m na wałku 1 cala zamiast 0,5 cala), znacznie bogatszy wybór interfejsów komunikacyjnych (USB, Ethernet, Bluetooth, Wi-Fi) oraz opcje gilotyny (cutter) i odklejaka (peeler/dispenser). Jako drukarka termotransferowa, ZD230t drukuje z użyciem taśmy barwiącej (ribbona) — obraz jest przenoszony z taśmy na etykietę pod wpływem ciepła z głowicy drukującej, dzięki czemu wydruki są odporne na ścieranie, wilgoć, promienie UV i działanie chemikaliów. ZD230t obsługuje również tryb druku termicznego bezpośredniego (direct thermal) bez taśmy barwiącej, co czyni ją wszechstronnym narzędziem do każdego rodzaju etykiet.
+    description: `Zebra ZD230t to najlepszy wybór dla firm szukających szybkiej drukarki termotransferowej z taśmą 300 m i opcją Ethernet w klasie cenowej poniżej 1500 zł.
+
+Zebra ZD230t to biurkowa drukarka etykiet termotransferowa — oficjalny następca popularnego modelu Zebra ZD220t. W porównaniu do poprzednika, ZD230t oferuje o 50% wyższą prędkość druku (152 mm/s vs 102 mm/s), czterokrotnie większą pojemność taśmy barwiącej (300 m vs 74 m na wałku 1 cala zamiast 0,5 cala), znacznie bogatszy wybór interfejsów komunikacyjnych (USB, Ethernet, Bluetooth, Wi-Fi) oraz opcje gilotyny (cutter) i odklejaka (peeler/dispenser). Jako drukarka termotransferowa, ZD230t drukuje z użyciem taśmy barwiącej (ribbona) — obraz jest przenoszony z taśmy na etykietę pod wpływem ciepła z głowicy drukującej, dzięki czemu wydruki są odporne na ścieranie, wilgoć, promienie UV i działanie chemikaliów. ZD230t obsługuje również tryb druku termicznego bezpośredniego (direct thermal) bez taśmy barwiącej, co czyni ją wszechstronnym narzędziem do każdego rodzaju etykiet.
 
 Drukarka oferuje rozdzielczość 203 dpi (8 punktów/mm) i obsługuje etykiety o szerokości od 25,4 mm do 112 mm przy maksymalnej szerokości nadruku 104 mm. Maksymalna długość pojedynczej etykiety wynosi 991 mm, a maksymalna średnica rolki to 127 mm (5 cali). Taśmy barwiące (ribbony) o szerokości od 33,8 mm do 109,2 mm i długości do 300 m nawijane są na wałek 1-calowy (25,4 mm). Obsługiwane typy taśm: woskowe (wax) do standardowych etykiet papierowych, woskowo-żywiczne (wax-resin) do etykiet laminowanych i żywiczne (resin) do etykiet syntetycznych (PP, PE, PET). Kompaktowe wymiary — 267 × 197 × 191 mm przy wadze 1,7 kg — pozwalają umieścić drukarkę na każdym biurku lub stanowisku pakowania. Konstrukcja OpenACCESS z jednoczęściową obudową umożliwia szybką wymianę etykiet i taśmy barwiącej: wystarczy podnieść pokrywę, włożyć materiały i zamknąć — bez narzędzi. Podwójna ścianka obudowy (dual-wall construction) zapewnia trwałość do intensywnej codziennej eksploatacji. Prędkość druku 152 mm/s (6 cali na sekundę) to taki sam parametr jak w droższym modelu ZD421t.
 
@@ -2810,7 +2949,9 @@ Zebra ZD230t jest dostępna w kilku wariantach, które różnią się interfejsa
 
 ZD230t to następca ZD220t i optymalny wybór dla firm, które potrzebują trwałych etykiet termotransferowych, szybszego druku niż oferuje ZD220t, ale nie chcą inwestować w droższego ZD421t. Kluczowa przewaga nad ZD220t to pojemność taśmy barwiącej — 300 m zamiast 74 m oznacza czterokrotnie rzadszą wymianę ribbona i znacznie niższy koszt druku per etykieta. Obsługiwane kody kreskowe 1D obejmują: Code 39, Code 128, EAN-13, EAN-8, UPC-A, UPC-E, ITF, Codabar i Code 93. Kody 2D: QR Code, DataMatrix, PDF417, Aztec i MaxiCode — dzięki czemu ZD230t spełnia wymagania standardów GS1 i etykiet w każdej branży. Producent udziela 36-miesięcznej gwarancji na urządzenie i 12-miesięcznej na głowicę drukującą. Drukarka jest dostarczana z zasilaczem sieciowym, kablem zasilającym i skróconą instrukcją obsługi. Sterowniki i oprogramowanie konfiguracyjne dostępne są na serwis-zebry.pl/sterowniki.
 
-Podsumowanie: Dla kogo jest Zebra ZD230t? To optymalny wybór dla firm drukujących trwałe etykiety termotransferowe w nakładzie do 500 sztuk dziennie, które potrzebują szybszej drukarki niż ZD220t (152 vs 102 mm/s), dłuższej taśmy (300 vs 74 m) i opcji łączności sieciowej (Ethernet, Wi-Fi), ale nie chcą inwestować w droższego ZD421t. Idealna do etykiet produktowych, inwentaryzacyjnych, na środki trwałe, oznaczeń trwałych w produkcji i handlu. Cena od 1 069 zł netto. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies z 25-letnim doświadczeniem w branży AutoID.`,
+Podsumowanie: Dla kogo jest Zebra ZD230t? To optymalny wybór dla firm drukujących trwałe etykiety termotransferowe w nakładzie do 500 sztuk dziennie, które potrzebują szybszej drukarki niż ZD220t (152 vs 102 mm/s), dłuższej taśmy (300 vs 74 m) i opcji łączności sieciowej (Ethernet, Wi-Fi), ale nie chcą inwestować w droższego ZD421t. Idealna do etykiet produktowych, inwentaryzacyjnych, na środki trwałe, oznaczeń trwałych w produkcji i handlu. Cena od 1 069 zł netto. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies z 25-letnim doświadczeniem w branży AutoID.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -3021,6 +3162,10 @@ Podsumowanie: Dla kogo jest Zebra ZD230t? To optymalny wybór dla firm drukując
         question: 'Gdzie kupić Zebra ZD230t w Polsce?',
         answer: 'Zebra ZD230t jest dostępna w TAKMA — autoryzowanym partnerze Zebra Technologies z ponad 25-letnim doświadczeniem w branży AutoID. Oferujemy pełne doradztwo techniczne przy wyborze wariantu (USB, Ethernet, Wi-Fi, odklejak), pomoc w doborze taśm barwiących i etykiet oraz konfiguracji drukarki. Zapewniamy dostawę kurierem na terenie całej Polski, gwarancję producenta oraz serwis gwarancyjny i pogwarancyjny przez serwis-zebry.pl. Aby złożyć zamówienie, dodaj wybrany wariant do koszyka zapytaniowego lub skontaktuj się z nami telefonicznie.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZD230t?',
+        answer: 'Alternatywami są: Zebra ZD421t (wyższa klasa), Honeywell PC42t, Brother TD-4520TN, TSC TE210. ZD230t to ulepszona wersja ZD220t.',
+      },
     ],
     comparison: {
       title: 'Porównanie drukarek termotransferowych biurkowych Zebra 4" — ZD220t vs ZD230t vs ZD421t',
@@ -3094,6 +3239,191 @@ Podsumowanie: Dla kogo jest Zebra ZD230t? To optymalny wybór dla firm drukując
     ],
     createdAt: '2025-06-01',
   },
+  // ---- Drukarka opasek identyfikacyjnych ----
+  {
+    id: 'zebra-zd510-hc',
+    slug: 'zebra-zd510-hc',
+    name: 'Zebra ZD510-HC',
+    shortDescription: 'Biurkowa drukarka opasek identyfikacyjnych 300 dpi — ZPL, Link-OS, Ethernet, zasilacz medyczny IEC 60601-1',
+    description: `Zebra ZD510-HC to najlepszy wybór dla szpitali, klinik i laboratoriów, które potrzebują niezawodnej drukarki opasek identyfikacyjnych z certyfikatem medycznym i integracją z systemami ADT.
+
+Następca popularnego modelu HC100 — jedyna dedykowana drukarka opasek Zebra nowej generacji. Drukuje termicznie na opaski Z-Band Direct (dorosły, dziecko, niemowlę), Z-Band UltraSoft i Z-Band Fun w rozdzielczości 300 dpi z prędkością do 51 mm/s (healthcare) lub 102 mm/s (Z-Band Fun/eventy).
+
+System kartridżowy (wkłady) z chipem — wystarczy włożyć wkład z opaskami, a drukarka automatycznie rozpoznaje typ i kalibruje się bez ingerencji operatora. Wymiana głowicy i wałka bez narzędzi (tool-less). Element Energy Equalizer (E3) wydłuża żywotność głowicy drukującej.
+
+Zasilacz klasy medycznej IEC 60601-1 w zestawie. Obudowa odporna na dezynfekcję środkami chemicznymi i UV. Certyfikat ENERGY STAR. Kompatybilna z wiodącymi systemami ADT: Allscripts, CareFusion, Cerner, CPSI, Epic, McKesson.
+
+Platforma Link-OS z Zebra DNA: zdalne zarządzanie (Printer Profile Manager Enterprise), integracja z SOTI Connect i VMware Workspace ONE. Funkcja PrintSecure zapewnia zgodność z HIPAA. Programowanie w ZPL/ZPL II i XML z pełnym wsparciem Unicode.
+
+Interfejsy standardowe: USB 2.0, USB Host, Ethernet 10/100 i Bluetooth Low Energy (BLE). Opcjonalnie: Wi-Fi 802.11ac + Bluetooth 4.1 (wariant ZD51013-D0EB02FZ). Gwarancja producenta 2 lata (głowica 12 miesięcy).
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+    categoryId: 'drukarki-opasek',
+    subcategoryIds: [],
+    manufacturerId: 'zebra',
+    priceFrom: 2673.59,
+    images: ['/images/products/zd510_1_s.png', '/images/products/zd510_2_s.png', '/images/products/zd510_3_s.png'],
+    tags: ['healthcare'],
+    availability: 'unavailable',
+    isNew: true,
+    isBestseller: false,
+    keyParams: {
+      rodzajDruku: 'Termiczny bezpośredni (Direct Thermal)',
+      rozdzielczosc: '300 dpi (12 dots/mm)',
+      predkoscDruku: 'do 51 mm/s (healthcare) / 102 mm/s (eventy)',
+      szerokoscDruku: '30,2 mm (1.1875")',
+      szerokoscEtykiet: 'opaski Z-Band (kartridże)',
+    },
+    variants: [
+      {
+        partNumber: 'ZD51013-D0EE00FZ',
+        name: 'Ethernet + BLE (bez Wi-Fi)',
+        attributes: {},
+        priceFrom: 2673.59,
+        availability: 'unavailable',
+      },
+      {
+        partNumber: 'ZD51013-D0EB02FZ',
+        name: 'Ethernet + Wi-Fi 802.11ac + Bluetooth 4.1',
+        attributes: { 'Wi-Fi': 'Tak' },
+        availability: 'unavailable',
+      },
+    ],
+    specifications: [
+      { name: 'Part Number', value: 'ZD51013-D0EE00FZ (bazowy)' },
+      { name: 'Metoda druku', value: 'Termiczny bezpośredni (Direct Thermal)' },
+      { name: 'Rozdzielczość', value: '300 dpi (12 dots/mm)' },
+      { name: 'Prędkość druku', value: '51 mm/s (healthcare), 102 mm/s (Z-Band Fun)' },
+      { name: 'Szerokości druku', value: '19,05 mm / 25,4 mm / 30,16 mm' },
+      { name: 'Min. długość druku', value: '76 mm (3")' },
+      { name: 'Maks. długość druku', value: '558 mm (22")' },
+      { name: 'Pamięć RAM', value: '256 MB SDRAM' },
+      { name: 'Pamięć Flash', value: '512 MB' },
+      { name: 'Języki programowania', value: 'ZPL, ZPL II, XML' },
+      { name: 'System operacyjny', value: 'Link-OS' },
+      { name: 'Ethernet', value: '10/100 Mbps' },
+      { name: 'USB', value: 'USB 2.0 + USB Host' },
+      { name: 'Bluetooth', value: 'BLE (standard), BT 4.1 + Wi-Fi 802.11ac (opcja)' },
+      { name: 'Zasilacz', value: 'Medyczny IEC 60601-1, 100-240 VAC' },
+      { name: 'Wymiary (S×W×G)', value: '127 × 178 × 242 mm' },
+      { name: 'Waga', value: '1,4 kg' },
+      { name: 'Temperatura pracy', value: '4,4°C do 40°C' },
+      { name: 'Temperatura przechowywania', value: '-40°C do 60°C' },
+      { name: 'Wilgotność', value: '20% do 85% (bez kondensacji)' },
+      { name: 'Certyfikaty', value: 'ENERGY STAR, IEC 60601-1, FCC Class B, CE, TUV' },
+      { name: 'Kompatybilność ADT', value: 'Allscripts, CareFusion, Cerner, CPSI, Epic, McKesson' },
+      { name: 'Zegar RTC', value: 'Tak' },
+      { name: 'ZBI 2.0', value: 'Opcjonalny' },
+      { name: 'Kody 1D', value: 'Code 39, 93, 128, Codabar, EAN-8/13, UPC-A/E, I2of5, GS1 DataBar, Postnet' },
+      { name: 'Kody 2D', value: 'QR Code, Data Matrix, PDF417, Aztec, MaxiCode' },
+      { name: 'Gwarancja', value: '2 lata (głowica 12 miesięcy)' },
+    ],
+    applications: [
+      'Identyfikacja pacjentów w szpitalach (SOR, oddziały, blok operacyjny)',
+      'Identyfikacja noworodków na oddziałach neonatologii',
+      'Banki krwi i laboratoria (identyfikacja próbek z pacjentem)',
+      'Apteki szpitalne (weryfikacja tożsamości przy podawaniu leków)',
+      'Kontrola wstępu na eventach i koncertach (Z-Band Fun)',
+      'Parki wodne i rozrywki (opaski wodo- i chloroodporne)',
+      'Ośrodki SPA i wellness (identyfikacja gości)',
+      'Obozy i kolonie (identyfikacja uczestników)',
+    ],
+    relatedAccessories: [
+      'zebra-printhead-zd510-hc',
+      'zebra-platen-roller-zd510-hc',
+    ],
+    compatibleAccessories: [
+      'zebra-zband-direct-adult',
+      'zebra-zband-direct-child',
+      'zebra-zband-direct-infant',
+    ],
+    faq: [
+      {
+        question: 'Czym Zebra ZD510-HC różni się od starszego modelu HC100?',
+        answer: 'ZD510-HC to następca HC100 z istotnymi ulepszeniami: platforma Link-OS (zdalne zarządzanie), ZPL II zamiast EPL2, 256 MB RAM (vs 64 MB), Ethernet + BLE w standardzie, opcjonalne Wi-Fi 802.11ac, Element Energy Equalizer (E3) wydłużający żywotność głowicy, wsparcie Unicode i integracja z SOTI/Airwatch. Zachowana kompatybilność z kartridżami Z-Band.',
+      },
+      {
+        question: 'Jakie opaski pasują do drukarki ZD510-HC?',
+        answer: 'ZD510-HC obsługuje wszystkie opaski Zebra Z-Band w kartridżach: Z-Band Direct (termiczne, do healthcare — dorosły, dziecko, niemowlę), Z-Band UltraSoft (najdelikatniejsze, do neonatologii), Z-Band Fun (kolorowe, do eventów i parków), Z-Band QuickClip (z zamknięciem klipsowym), Z-Band Splash (wodoodporne). Kartridże są kompatybilne wstecz z HC100.',
+      },
+      {
+        question: 'Czy ZD510-HC jest certyfikowana do użytku w szpitalach?',
+        answer: 'Tak — zasilacz klasy medycznej IEC 60601-1 w zestawie, obudowa odporna na dezynfekcję (środki chemiczne i UV), funkcja PrintSecure zapewniająca zgodność z HIPAA. Drukarka jest kompatybilna z wiodącymi systemami ADT: Allscripts, CareFusion, Cerner, CPSI, Epic, McKesson.',
+      },
+      {
+        question: 'Jak działa system kartridżowy w ZD510-HC?',
+        answer: 'Opaski Z-Band są dostarczane w kartridżach (wkładach) z wbudowanym chipem. Wystarczy włożyć kartridż do drukarki — chip automatycznie informuje drukarkę o typie opasek, szerokości i prędkości druku. Nie wymaga ręcznej kalibracji ani ustawień. Jeden kartridż Z-Band Direct Adult zawiera 200 opasek.',
+      },
+      {
+        question: 'Ile opasek wydrukuję na jednym kartridżu?',
+        answer: 'Zależy od typu: Z-Band Direct Adult (1"×11"): 200 szt./kartridż, Child (1"×7"): 300 szt./kartridż, Infant (1"×6"): 350 szt./kartridż. Opakowanie zawiera 6 kartridży, więc jeden karton to 1200–2100 opasek w zależności od rozmiaru.',
+      },
+      {
+        question: 'Czy ZD510-HC obsługuje Wi-Fi?',
+        answer: 'Wariant bazowy ZD51013-D0EE00FZ ma Ethernet + BLE. Wariant ZD51013-D0EB02FZ oferuje dodatkowo Wi-Fi 802.11ac + Bluetooth 4.1, co umożliwia bezprzewodowe drukowanie z dowolnego miejsca w szpitalu.',
+      },
+      {
+        question: 'Jakie języki programowania obsługuje ZD510-HC?',
+        answer: 'ZD510-HC obsługuje ZPL, ZPL II i XML. To istotna przewaga nad HC100 (tylko EPL2). ZPL zapewnia kompatybilność z całym ekosystemem drukarek Zebra i systemami WMS/HIS. Opcjonalnie dostępny ZBI 2.0 (Zebra BASIC Interpreter).',
+      },
+      {
+        question: 'Czy ZD510-HC nadaje się do eventów i parków rozrywki?',
+        answer: 'Tak — z opaskami Z-Band Fun (kolorowe, 7 kolorów) i Z-Band Splash (wodoodporne) drukarka pracuje z prędkością 102 mm/s (4 ips). Idealna do parków wodnych, festiwali, koncertów i wesołych miasteczek jako system kontroli wstępu i cashless.',
+      },
+      {
+        question: 'Jak wymienić głowicę w ZD510-HC?',
+        answer: 'Wymiana głowicy (P1100266-003, 300 dpi) i wałka (P1100266-008) jest beznarzędziowa (tool-less) — wystarczy otworzyć pokrywę i wymienić element w kilka sekund. Głowica ma 12 miesięcy gwarancji. Element Energy Equalizer (E3) optymalizuje dystrybucję energii i wydłuża żywotność głowicy.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZD510-HC?',
+        answer: 'Alternatywami są: starsza Zebra HC100 (wycofywana z produkcji, tylko EPL2), a w konkurencji praktycznie nie ma dedykowanych drukarek opasek — rynek jest zdominowany przez Zebra. Niektóre szpitale używają drukarek Brother TD-2130NHC z adapterem opasek, ale to rozwiązanie kompromisowe bez systemu kartridżowego.',
+      },
+    ],
+    comparison: {
+      title: 'Porównanie drukarek opasek identyfikacyjnych Zebra',
+      models: [
+        {
+          name: 'Zebra ZD510-HC',
+          slug: 'zebra-zd510-hc',
+          highlight: true,
+          specs: {
+            'Rozdzielczość': '300 dpi',
+            'Prędkość': '51 mm/s (HC) / 102 mm/s (Fun)',
+            'RAM / Flash': '256 / 512 MB',
+            'Języki': 'ZPL, ZPL II, XML',
+            'Łączność': 'USB, Ethernet, BLE (+ Wi-Fi opcja)',
+            'Waga': '1,4 kg',
+            'Zasilacz medyczny': 'Tak (IEC 60601-1)',
+            'Link-OS / Print DNA': 'Tak',
+            'Gwarancja': '2 lata',
+            'Cena od': '2 674 zł',
+          },
+        },
+        {
+          name: 'Zebra HC100 (wycofana)',
+          specs: {
+            'Rozdzielczość': '300 dpi',
+            'Prędkość': '51 mm/s',
+            'RAM / Flash': '64 / 128 MB',
+            'Języki': 'EPL2',
+            'Łączność': 'USB, Ethernet (Wi-Fi opcja)',
+            'Waga': '1,6 kg',
+            'Zasilacz medyczny': 'Tak',
+            'Link-OS / Print DNA': 'Nie',
+            'Gwarancja': '1 rok',
+            'Cena od': 'Wycofana',
+          },
+        },
+      ],
+    },
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zd510-hc/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zd510-hc-spec-sheet-en-us.pdf', size: 'PDF' },
+      { name: 'Specyfikacja techniczna (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Printers/Desktop%20Printers/zd510-hc/spec-sheets/zd510-hc-spec-sheet-pl-pl.pdf', size: 'PDF' },
+    ],
+    createdAt: '2026-02-14',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd500-series/zd510-hc.html',
+  },
 ]
 
 // ============================================
@@ -3106,7 +3436,9 @@ const industrialLightPrinters: Product[] = [
     slug: 'zebra-zt231',
     name: 'Zebra ZT231',
     shortDescription: 'Drukarka przemysłowa 4" z kolorowym ekranem dotykowym 4,3", metalową konstrukcją i opcjonalnym RFID UHF — następca ZT230',
-    description: `Zebra ZT231 to drukarka przemysłowa klasy light-industrial zaprojektowana jako bezpośredni następca popularnego modelu ZT230. Łączy kompaktowe wymiary (432 × 241 × 279 mm) z wytrzymałą metalową ramą i metalowymi obudowami, zapewniając trwałość na poziomie klasy przemysłowej przy jednoczesnej oszczędności przestrzeni na stanowisku pracy. Dwuskrzydłowe drzwi mediów (bi-fold) wymagają jedynie 10 cm wolnej przestrzeni nad drukarką do otwarcia — idealne rozwiązanie do ciasnych pomieszczeń produkcyjnych i magazynowych.
+    description: `Zebra ZT231 to najlepszy wybór dla firm produkcyjnych i magazynów przechodzących z drukarek biurkowych na przemysłowe, które potrzebują kompaktowej drukarki z ekranem dotykowym i metalową konstrukcją.
+
+Zebra ZT231 to drukarka przemysłowa klasy light-industrial zaprojektowana jako bezpośredni następca popularnego modelu ZT230. Łączy kompaktowe wymiary (432 × 241 × 279 mm) z wytrzymałą metalową ramą i metalowymi obudowami, zapewniając trwałość na poziomie klasy przemysłowej przy jednoczesnej oszczędności przestrzeni na stanowisku pracy. Dwuskrzydłowe drzwi mediów (bi-fold) wymagają jedynie 10 cm wolnej przestrzeni nad drukarką do otwarcia — idealne rozwiązanie do ciasnych pomieszczeń produkcyjnych i magazynowych.
 
 Kolorowy dotykowy wyświetlacz 4,3" (resistive touch) z intuicyjnym menu umożliwia szybką konfigurację, dostęp do kreatorów ustawień i filmów instruktażowych. Trójkolorowe diody LED sygnalizują status drukarki na pierwszy rzut oka. Boczna ścieżka podawania materiałów z kolorowymi znacznikami upraszcza wymianę etykiet i ribbona — nawet dla niedoświadczonych operatorów.
 
@@ -3118,7 +3450,9 @@ Standardowe interfejsy: USB 2.0, RS-232, Ethernet 10/100, USB Host i Bluetooth L
 
 Platforma Zebra Print DNA zapewnia kompletny zestaw narzędzi IT: Printer Profile Manager Enterprise do zdalnego zarządzania flotą, PrintSecure do ochrony przed cyberatakami, Visibility Services do monitoringu statusu i Cloud Connect do integracji z chmurą. Analityka on-board oraz wykrywanie uszkodzonych elementów głowicy (printhead element out detection) pomagają planować konserwację predykcyjną. Certyfikat ENERGY STAR potwierdza niskie zużycie energii.
 
-Kluczowa przewaga ZT231 nad modelem ZT111: kolorowy ekran dotykowy 4,3" (vs monochromatyczny LCD), metalowe obudowy (vs plastikowe w ZT111), wyższa prędkość druku 304 mm/s (vs 254 mm/s), obsługa opcjonalnego kodowania RFID UHF i emulacja drukarek EPL/EPL2. ZT231 jest idealnym wyborem dla firm produkcyjnych, logistycznych i magazynowych, które potrzebują niezawodnej drukarki przemysłowej o kompaktowych wymiarach i intuicyjnej obsłudze — bez kompromisów w zakresie prędkości, jakości druku i możliwości rozbudowy.`,
+Kluczowa przewaga ZT231 nad modelem ZT111: kolorowy ekran dotykowy 4,3" (vs monochromatyczny LCD), metalowe obudowy (vs plastikowe w ZT111), wyższa prędkość druku 304 mm/s (vs 254 mm/s), obsługa opcjonalnego kodowania RFID UHF i emulacja drukarek EPL/EPL2. ZT231 jest idealnym wyborem dla firm produkcyjnych, logistycznych i magazynowych, które potrzebują niezawodnej drukarki przemysłowej o kompaktowych wymiarach i intuicyjnej obsłudze — bez kompromisów w zakresie prędkości, jakości druku i możliwości rozbudowy.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -3289,6 +3623,10 @@ Kluczowa przewaga ZT231 nad modelem ZT111: kolorowy ekran dotykowy 4,3" (vs mono
         question: 'Czym różni się ZT231 od droższego modelu ZT411?',
         answer: 'ZT411 to drukarka klasy mid-range industrial z wyższą prędkością druku (356 mm/s vs 304 mm/s), większą pamięcią (512 MB SDRAM vs 256 MB), obsługą rolek mediów do 254 mm OD (vs 203 mm) i opcjonalną rozdzielczością 600 dpi. ZT411 jest przeznaczona do intensywnych zastosowań przemysłowych z dużym wolumenem druku. ZT231 to ekonomiczniejsza alternatywa z doskonałym stosunkiem ceny do możliwości.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZT231?',
+        answer: 'Alternatywami są: Zebra ZT411 (pełna przemysłowa), Honeywell PM45, TSC MH241T.',
+      },
     ],
     comparison: {
       title: 'Porównanie drukarek przemysłowych Zebra',
@@ -3338,13 +3676,16 @@ Kluczowa przewaga ZT231 nad modelem ZT111: kolorowy ekran dotykowy 4,3" (vs mono
       { name: 'Sterowniki Windows', type: 'software', url: 'https://serwis-zebry.pl/sterowniki', size: 'Online' },
     ],
     createdAt: '2024-02-01',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/industrial/zt200-series/zt231.html',
   },
   {
     id: 'zebra-zt111',
     slug: 'zebra-zt111',
     name: 'Zebra ZT111',
     shortDescription: 'Przemysłowa drukarka etykiet entry-level 4" — metalowa konstrukcja, 254 mm/s, następca ZT220 i S4M. Idealna do magazynu i produkcji',
-    description: `Zebra ZT111 to przemysłowa drukarka etykiet entry-level zaprojektowana jako pomost między drukarkami biurkowymi a pełnoprzemysłowymi. Metalowa rama i plastikowe obudowy zapewniają trwałość na poziomie klasy przemysłowej, a kompaktowe wymiary (432 × 241 × 279 mm) pozwalają zmieścić ją w przestrzeniach, gdzie większe drukarki przemysłowe nie wchodzą w grę. ZT111 jest bezpośrednim następcą modeli Zebra ZT220, S4M i S600, oferując pełną kompatybilność wsteczną z językami ZPL II i EPL2 — istniejące szablony etykiet działają bez zmian.
+    description: `Zebra ZT111 to najlepszy wybór dla firm przechodzących z drukarek biurkowych na przemysłowe, które potrzebują metalowej konstrukcji i prędkości 254 mm/s w przystępnej cenie.
+
+Zebra ZT111 to przemysłowa drukarka etykiet entry-level zaprojektowana jako pomost między drukarkami biurkowymi a pełnoprzemysłowymi. Metalowa rama i plastikowe obudowy zapewniają trwałość na poziomie klasy przemysłowej, a kompaktowe wymiary (432 × 241 × 279 mm) pozwalają zmieścić ją w przestrzeniach, gdzie większe drukarki przemysłowe nie wchodzą w grę. ZT111 jest bezpośrednim następcą modeli Zebra ZT220, S4M i S600, oferując pełną kompatybilność wsteczną z językami ZPL II i EPL2 — istniejące szablony etykiet działają bez zmian.
 
 Drukarka oferuje prędkość druku do 254 mm/s (10 ips) przy rozdzielczości 203 dpi — to 67% szybciej niż drukarki biurkowe ZD421 (152 mm/s). Wersja 300 dpi drukuje z prędkością 152 mm/s (6 ips) i jest idealna do bardzo małych kodów kreskowych i tekstów. Maksymalna szerokość druku to 104 mm (4,09"), a szerokość mediów od 19,4 do 114 mm. Głowica drukująca E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła na całej szerokości nadruku, co przekłada się na ostry tekst i czytelne kody kreskowe.
 
@@ -3352,7 +3693,9 @@ ZT111 obsługuje rolki mediów o średnicy do 203 mm (8") na rdzeniu 76 mm (3") 
 
 Standardowe interfejsy to USB 2.0, RS-232, Ethernet 10/100, USB Host i Bluetooth Low Energy (do konfiguracji mobilnej). Opcjonalnie dostępna karta Wi-Fi 802.11ac i dodatkowy port Ethernet. Platforma Zebra Print DNA zapewnia narzędzia do zdalnego zarządzania, monitoringu i diagnostyki: Printer Profile Manager Enterprise (klonowanie konfiguracji), Visibility Services (monitoring statusu) i PrintSecure (ochrona przed cyberatakami). Analityka on-board oraz wykrywanie zużycia głowicy (printhead element out detection) pomagają planować konserwację z wyprzedzeniem.
 
-Dla kogo jest Zebra ZT111? To optymalny wybór dla firm przechodzących z drukarek biurkowych na klasy przemysłowej — magazyny, centra dystrybucyjne, lekka produkcja, logistyka, healthcare (etykiety laboratoryjne, apteczne) i retail (etykiety wysyłkowe, cenowe). ZT111 oferuje przemysłową trwałość i wydajność w cenie zbliżonej do drukarek biurkowych premium.`,
+Dla kogo jest Zebra ZT111? To optymalny wybór dla firm przechodzących z drukarek biurkowych na klasy przemysłowej — magazyny, centra dystrybucyjne, lekka produkcja, logistyka, healthcare (etykiety laboratoryjne, apteczne) i retail (etykiety wysyłkowe, cenowe). ZT111 oferuje przemysłową trwałość i wydajność w cenie zbliżonej do drukarek biurkowych premium.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -3506,6 +3849,10 @@ Dla kogo jest Zebra ZT111? To optymalny wybór dla firm przechodzących z drukar
         question: 'Jaka jest gwarancja na ZT111?',
         answer: 'ZT111 objęta jest 1-roczną gwarancją producenta na wady materiałowe i wykonanie. Gwarancję można rozszerzyć w ramach kontraktów Zebra OneCare Essential lub Select. Autoryzowany serwis w Polsce: serwis-zebry.pl.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZT111?',
+        answer: 'Alternatywami są: Zebra ZT231 (wyższa klasa), Honeywell PM45, TSC MH261T. ZT111 to najtańsza drukarka przemysłowa Zebra.',
+      },
     ],
     comparison: {
       title: 'Porównanie: ZT111 (entry-level) vs ZD421t (biurkowa) vs ZT411 (mid-range)',
@@ -3567,13 +3914,16 @@ Dla kogo jest Zebra ZT111? To optymalny wybór dla firm przechodzących z drukar
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zt111-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2023-09-15',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/industrial/zt100-series/zt111.html',
   },
   {
     id: 'zebra-zt411',
     slug: 'zebra-zt411',
     name: 'Zebra ZT411',
     shortDescription: 'Przemysłowa drukarka etykiet 4" z ekranem dotykowym 4,3" — następca ZT410. 203/300/600 dpi, do 356 mm/s, RFID opcja, Link-OS',
-    description: `Zebra ZT411 to przemysłowa drukarka etykiet klasy mid-range z kolorowym ekranem dotykowym 4,3" — bezpośredni następca legendarnego modelu Zebra ZT410. Zaprojektowana do intensywnej pracy w magazynach, centrach dystrybucyjnych i na liniach produkcyjnych, ZT411 łączy wytrzymałą metalową konstrukcję z intuicyjnym interfejsem dotykowym i platformą zarządzania Link-OS. Dostępna w trzech rozdzielczościach: 203 dpi (standard logistyczny, 356 mm/s), 300 dpi (drobne kody 2D i etykiety cenowe, 254 mm/s) i 600 dpi (mikro-etykiety elektroniczne i jubilerskie, 152 mm/s).
+    description: `Zebra ZT411 to najlepszy wybór dla zakładów produkcyjnych i centrów logistycznych wymagających wytrzymałej drukarki etykiet przemysłowej klasy z rozdzielczością 203/300/600 dpi.
+
+Zebra ZT411 to przemysłowa drukarka etykiet klasy mid-range z kolorowym ekranem dotykowym 4,3" — bezpośredni następca legendarnego modelu Zebra ZT410. Zaprojektowana do intensywnej pracy w magazynach, centrach dystrybucyjnych i na liniach produkcyjnych, ZT411 łączy wytrzymałą metalową konstrukcję z intuicyjnym interfejsem dotykowym i platformą zarządzania Link-OS. Dostępna w trzech rozdzielczościach: 203 dpi (standard logistyczny, 356 mm/s), 300 dpi (drobne kody 2D i etykiety cenowe, 254 mm/s) i 600 dpi (mikro-etykiety elektroniczne i jubilerskie, 152 mm/s).
 
 ZT411 drukuje z prędkością do 356 mm/s (14 ips) w rozdzielczości 203 dpi — 40% szybciej niż ZT231 (304 mm/s) i ponad dwukrotnie szybciej niż drukarki biurkowe ZD421 (152 mm/s). Szerokość druku 104 mm (4,09") obsługuje etykiety od 25,4 do 114 mm. Głowica E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła na całej szerokości nadruku. Drukarka obsługuje rolki mediów o średnicy do 203 mm (8") na rdzeniu 76 mm (3") i taśmy barwiące (ribbony) o długości 450 m na rdzeniu 25,4 mm (1") w szerokości 51–110 mm.
 
@@ -3583,7 +3933,9 @@ Platforma Link-OS umożliwia zdalne zarządzanie flotą drukarek z poziomu Print
 
 Opcje obsługi mediów: odklejak (peeler) do automatycznego odklejania etykiet od podłoża, gilotyna (cutter) do automatycznego cięcia, nawijak podkładu (liner takeup) i nawijak etykiet (full rewind). Wersje D9E wyposażone są w gilotynę linerless do druku etykiet bez podkładu. Dwuskrzydłowe drzwi mediów z dużym przezroczystym oknem ułatwiają załadunek i kontrolę poziomu materiałów.
 
-Podsumowanie: Dla kogo jest Zebra ZT411? To optymalny wybór dla firm potrzebujących drukarki przemysłowej z dotykowym ekranem, RFID i trzema rozdzielczościami — magazyny z dużym wolumenem etykiet (10 000+/dzień), centra dystrybucyjne, linie produkcyjne z etykietowaniem inline, farmacja i healthcare (etykiety laboratoryjne, banku krwi), retail (etykiety cenowe, compliance). Cena od 5 131 zł netto. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies z 20-letnim doświadczeniem w branży AutoID.`,
+Podsumowanie: Dla kogo jest Zebra ZT411? To optymalny wybór dla firm potrzebujących drukarki przemysłowej z dotykowym ekranem, RFID i trzema rozdzielczościami — magazyny z dużym wolumenem etykiet (10 000+/dzień), centra dystrybucyjne, linie produkcyjne z etykietowaniem inline, farmacja i healthcare (etykiety laboratoryjne, banku krwi), retail (etykiety cenowe, compliance). Cena od 5 131 zł netto. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies z 20-letnim doświadczeniem w branży AutoID.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -3760,6 +4112,10 @@ Podsumowanie: Dla kogo jest Zebra ZT411? To optymalny wybór dla firm potrzebuj�
         question: 'Gdzie kupić Zebra ZT411 z gwarancją w Polsce?',
         answer: 'TAKMA jest autoryzowanym partnerem Zebra Technologies z 20-letnim doświadczeniem w branży AutoID. Oferujemy: doradztwo w doborze konfiguracji (rozdzielczość, opcje), konfigurację i uruchomienie drukarki, szkolenie operatorów, serwis gwarancyjny i pogwarancyjny w Polsce, rozszerzenie gwarancji Zebra OneCare. Kontakt: takma.com.pl lub formularz zapytania na stronie produktu.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZT411?',
+        answer: 'Alternatywami są: Zebra ZT421 (szersza, 6"), Honeywell PX940, TSC MH361T, SATO CL4NX Plus.',
+      },
     ],
     comparison: {
       title: 'Porównanie drukarek przemysłowych Zebra 4"',
@@ -3816,6 +4172,7 @@ Podsumowanie: Dla kogo jest Zebra ZT411? To optymalny wybór dla firm potrzebuj�
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zt400-series-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2023-03-20',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/industrial/zt400-series/zt411.html',
     updatedAt: '2026-02-12',
   },
   {
@@ -3823,7 +4180,9 @@ Podsumowanie: Dla kogo jest Zebra ZT411? To optymalny wybór dla firm potrzebuj�
     slug: 'zebra-zt421',
     name: 'Zebra ZT421',
     shortDescription: 'Przemysłowa drukarka etykiet 6" z ekranem dotykowym 4,3" — następca ZT420. 203/300 dpi, do 305 mm/s, RFID opcja, Link-OS',
-    description: `Zebra ZT421 to przemysłowa drukarka etykiet klasy mid-range o szerokości druku 6,6" (168 mm) — bezpośredni następca modelu Zebra ZT420 i szersza wersja drukarki ZT411. Zaprojektowana do druku szerokich etykiet paletowych, logistycznych i compliance labels, ZT421 łączy wytrzymałą metalową konstrukcję z kolorowym ekranem dotykowym 4,3" i platformą zarządzania Link-OS. Dostępna w dwóch rozdzielczościach: 203 dpi (standard logistyczny, 305 mm/s) i 300 dpi (drobne kody 2D i etykiety produktowe, 305 mm/s).
+    description: `Zebra ZT421 to najlepszy wybór dla centrów dystrybucyjnych i magazynów potrzebujących szerokoformatowej drukarki przemysłowej 6" do etykiet paletowych GS1-128 i oznaczeń compliance.
+
+Zebra ZT421 to przemysłowa drukarka etykiet klasy mid-range o szerokości druku 6,6" (168 mm) — bezpośredni następca modelu Zebra ZT420 i szersza wersja drukarki ZT411. Zaprojektowana do druku szerokich etykiet paletowych, logistycznych i compliance labels, ZT421 łączy wytrzymałą metalową konstrukcję z kolorowym ekranem dotykowym 4,3" i platformą zarządzania Link-OS. Dostępna w dwóch rozdzielczościach: 203 dpi (standard logistyczny, 305 mm/s) i 300 dpi (drobne kody 2D i etykiety produktowe, 305 mm/s).
 
 ZT421 drukuje z prędkością do 305 mm/s (12 ips) w obu rozdzielczościach — szerokość druku 168 mm (6,6") obsługuje etykiety od 51 do 178 mm, co pozwala na druk etykiet paletowych GS1 (150×100 mm), oznaczeń A5, szerokich etykiet wysyłkowych i compliance labels wymagających większej powierzchni. Głowica E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła na całej szerokości nadruku. Drukarka obsługuje rolki mediów o średnicy do 203 mm (8") na rdzeniu 76 mm (3") i taśmy barwiące (ribbony) o długości 450 m na rdzeniu 25,4 mm (1") w szerokości 51–174 mm.
 
@@ -3833,7 +4192,9 @@ Platforma Link-OS umożliwia zdalne zarządzanie flotą drukarek z poziomu Print
 
 Opcje obsługi mediów: odklejak (peeler) z nawijakiem etykiet (full rewind) do automatycznego odklejania i nawijania, gilotyna (cutter) do automatycznego cięcia z tacką zbierającą. Dwuskrzydłowe drzwi mediów z dużym przezroczystym oknem ułatwiają załadunek rolek o szerokości do 178 mm.
 
-Podsumowanie: Dla kogo jest Zebra ZT421? To optymalny wybór gdy potrzebujesz szerokich etykiet powyżej 104 mm — etykiety paletowe GS1-128 (150×100 mm), oznaczenia A5, szerokie etykiety compliance, etykiety na duże produkty i opakowania zbiorcze. Magazyny z etykietowaniem palet (SSCC/GS1), centra dystrybucyjne, logistyka 3PL, produkcja z dużymi opakowaniami, retail (oznaczenia regałowe). Cena od 9 416 zł netto. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies z 20-letnim doświadczeniem w branży AutoID.`,
+Podsumowanie: Dla kogo jest Zebra ZT421? To optymalny wybór gdy potrzebujesz szerokich etykiet powyżej 104 mm — etykiety paletowe GS1-128 (150×100 mm), oznaczenia A5, szerokie etykiety compliance, etykiety na duże produkty i opakowania zbiorcze. Magazyny z etykietowaniem palet (SSCC/GS1), centra dystrybucyjne, logistyka 3PL, produkcja z dużymi opakowaniami, retail (oznaczenia regałowe). Cena od 9 416 zł netto. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies z 20-letnim doświadczeniem w branży AutoID.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -3998,6 +4359,10 @@ Podsumowanie: Dla kogo jest Zebra ZT421? To optymalny wybór gdy potrzebujesz sz
         question: 'Gdzie kupić Zebra ZT421 z gwarancją w Polsce?',
         answer: 'TAKMA jest autoryzowanym partnerem Zebra Technologies z 20-letnim doświadczeniem w branży AutoID. Oferujemy: doradztwo w doborze konfiguracji (rozdzielczość, opcje mediów), konfigurację i uruchomienie drukarki, szkolenie operatorów, serwis gwarancyjny i pogwarancyjny w Polsce, rozszerzenie gwarancji Zebra OneCare. Kontakt: takma.com.pl lub formularz zapytania na stronie produktu.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZT421?',
+        answer: 'Alternatywami są: Zebra ZT411 (węższa, 4"), Honeywell PX940 Wide, TSC MH641T.',
+      },
     ],
     comparison: {
       title: 'Porównanie drukarek przemysłowych Zebra 6" — ZT421 vs ZT620',
@@ -4041,6 +4406,7 @@ Podsumowanie: Dla kogo jest Zebra ZT421? To optymalny wybór gdy potrzebujesz sz
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zt400-series-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2023-03-20',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/industrial/zt400-series/zt421.html',
     updatedAt: '2026-02-12',
   },
 ]
@@ -4055,7 +4421,9 @@ const industrialPrinters: Product[] = [
     slug: 'zebra-zt510',
     name: 'Zebra ZT510',
     shortDescription: 'Przemysłowa drukarka etykiet 4" klasy ekonomicznej — następca 105SLPlus. 203/300 dpi, do 305 mm/s, NFC/Print Touch, Link-OS, praca 24/7',
-    description: `Zebra ZT510 to przemysłowa drukarka etykiet klasy ekonomicznej, będąca bezpośrednim następcą kultowej drukarki 105SLPlus — jednej z najszerzej stosowanych drukarek przemysłowych w historii Zebra. ZT510 łączy sprawdzoną wytrzymałość metalowej konstrukcji z nowoczesną platformą Link-OS, technologią NFC/Print Touch i pamięcią 512 MB RAM / 2 GB Flash. Drukarka jest zaprojektowana do nieprzerwanej pracy 24/7 w środowiskach produkcyjnych, magazynowych i logistycznych, gdzie wymagana jest niezawodność przy optymalnym budżecie.
+    description: `Zebra ZT510 to najlepszy wybór dla firm szukających ekonomicznej drukarki przemysłowej do pracy 24/7 jako następca kultowej 105SLPlus.
+
+Zebra ZT510 to przemysłowa drukarka etykiet klasy ekonomicznej, będąca bezpośrednim następcą kultowej drukarki 105SLPlus — jednej z najszerzej stosowanych drukarek przemysłowych w historii Zebra. ZT510 łączy sprawdzoną wytrzymałość metalowej konstrukcji z nowoczesną platformą Link-OS, technologią NFC/Print Touch i pamięcią 512 MB RAM / 2 GB Flash. Drukarka jest zaprojektowana do nieprzerwanej pracy 24/7 w środowiskach produkcyjnych, magazynowych i logistycznych, gdzie wymagana jest niezawodność przy optymalnym budżecie.
 
 Konstrukcja ZT510 to pełna metalowa rama ze stalowymi komponentami strukturalnymi i składaną metalową pokrywą bi-fold. Boczny system ładowania mediów pozwala na wymianę rolek etykiet i taśm barwiących bez konieczności wyjmowania drukarki z linii produkcyjnej. Podwójne czujniki mediów (transmisyjny i refleksyjny) automatycznie rozpoznają różne typy etykiet: ciągłe, wykrojnikowe (die-cut), perforowane i z czarnym znacznikiem (black-mark). Głowica drukująca z technologią E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła na całej szerokości 104 mm, co przekłada się na ostre kody kreskowe i czytelny tekst nawet przy prędkości 305 mm/s.
 
@@ -4063,7 +4431,9 @@ ZT510 jest dostępna w dwóch rozdzielczościach: 203 dpi (standard do etykiet l
 
 Podświetlany wieloliniowy wyświetlacz LCD z intuicyjnym menu i fizycznymi przyciskami nawigacyjnymi zapewnia prostą obsługę bez potrzeby szkolenia. Technologia NFC/Print Touch umożliwia szybkie parowanie i konfigurację za pomocą smartfona — wystarczy przyłożyć telefon do drukarki. Link-OS z pakietem Zebra Print DNA obejmuje: PrintSecure (szyfrowanie komunikacji), Profile Manager Enterprise (centralne zarządzanie flotą drukarek), Virtual Devices (emulacja starszych modeli) oraz Alert (system powiadomień o zdarzeniach). Opcjonalny ZBI 2.0 (Zebra BASIC Interpreter) pozwala na autonomiczne aplikacje bez komputera.
 
-Zebra ZT510 to idealna drukarka dla firm, które potrzebują przemysłowej wytrzymałości i pracy 24/7, ale nie wymagają kolorowego ekranu dotykowego czy rozdzielczości 600 dpi — oferowanych przez droższą serię ZT600. Zastępuje model 105SLPlus z pełną kompatybilnością wsteczną szablonów ZPL — migracja nie wymaga modyfikacji oprogramowania. W porównaniu z ZT610: ZT510 ma mniejszą pamięć RAM (512 MB vs 1 GB), monochromatyczny LCD zamiast kolorowego dotykowego, ale taką samą prędkość druku, metalową konstrukcję i niezawodność 24/7 — w niższej cenie.`,
+Zebra ZT510 to idealna drukarka dla firm, które potrzebują przemysłowej wytrzymałości i pracy 24/7, ale nie wymagają kolorowego ekranu dotykowego czy rozdzielczości 600 dpi — oferowanych przez droższą serię ZT600. Zastępuje model 105SLPlus z pełną kompatybilnością wsteczną szablonów ZPL — migracja nie wymaga modyfikacji oprogramowania. W porównaniu z ZT610: ZT510 ma mniejszą pamięć RAM (512 MB vs 1 GB), monochromatyczny LCD zamiast kolorowego dotykowego, ale taką samą prędkość druku, metalową konstrukcję i niezawodność 24/7 — w niższej cenie.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -4223,6 +4593,10 @@ Zebra ZT510 to idealna drukarka dla firm, które potrzebują przemysłowej wytrz
         question: 'Ile waży Zebra ZT510 i jakie ma wymiary?',
         answer: 'ZT510 waży 22,7 kg i ma wymiary 512 × 268 × 396 mm (D×S×W). To taka sama waga jak ZT610, ponieważ obie drukarki mają pełną metalową konstrukcję klasy przemysłowej. Do porównania: ZT411 (mid-range) waży 12,5 kg.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZT510?',
+        answer: 'Alternatywami są: Zebra ZT610 (wyższa klasa z ekranem dotykowym), Zebra ZT411 (mid-range z RFID), Honeywell PM45, TSC MH261T.',
+      },
     ],
     comparison: {
       title: 'Porównanie drukarek przemysłowych Zebra 4" — ZT510 vs ZT610',
@@ -4266,13 +4640,16 @@ Zebra ZT510 to idealna drukarka dla firm, które potrzebują przemysłowej wytrz
       { name: 'ZT510 Spec Sheet (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zt510-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2022-08-15',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/industrial/zt500-series/zt510.html',
   },
   {
     id: 'zebra-zt610',
     slug: 'zebra-zt610',
     name: 'Zebra ZT610',
     shortDescription: 'Przemysłowa drukarka etykiet 4" klasy heavy-duty — następca 110Xi4. 203/300/600 dpi, do 356 mm/s, ekran dotykowy 4,3", RFID opcja, Link-OS, praca 24/7',
-    description: `Zebra ZT610 to przemysłowa drukarka etykiet klasy heavy-duty, będąca bezpośrednim następcą legendarnej serii 110Xi4 — jednej z najdłużej produkowanych i najszerzej stosowanych drukarek przemysłowych na świecie. ZT610 łączy sprawdzoną wytrzymałość metalowej konstrukcji Xi z nowoczesną platformą Link-OS, kolorowym ekranem dotykowym 4,3" i pamięcią 1 GB RAM / 2 GB Flash. Drukarka jest zaprojektowana do nieprzerwanej pracy 24/7 w najbardziej wymagających środowiskach produkcyjnych, magazynowych i logistycznych.
+    description: `Zebra ZT610 to najlepszy wybór dla centrów dystrybucyjnych i linii produkcyjnych wymagających najwyższej klasy drukarki przemysłowej 4" z trwałością Xi i rozdzielczością do 600 dpi.
+
+Zebra ZT610 to przemysłowa drukarka etykiet klasy heavy-duty, będąca bezpośrednim następcą legendarnej serii 110Xi4 — jednej z najdłużej produkowanych i najszerzej stosowanych drukarek przemysłowych na świecie. ZT610 łączy sprawdzoną wytrzymałość metalowej konstrukcji Xi z nowoczesną platformą Link-OS, kolorowym ekranem dotykowym 4,3" i pamięcią 1 GB RAM / 2 GB Flash. Drukarka jest zaprojektowana do nieprzerwanej pracy 24/7 w najbardziej wymagających środowiskach produkcyjnych, magazynowych i logistycznych.
 
 Konstrukcja ZT610 to całkowicie metalowa obudowa z dwuczęściową pokrywą bi-fold i powiększonym oknem inspekcyjnym. Boczny system ładowania mediów (Easy Side-Loading) pozwala na wymianę rolek etykiet i taśm barwiących bez konieczności wyjmowania drukarki z linii produkcyjnej — wymiana trwa dosłownie kilkanaście sekund. Podwójne czujniki mediów (transmisyjny i refleksyjny) automatycznie rozpoznają różne typy etykiet: ciągłe, wykrojnikowe (die-cut), z nacięciem (notch) i z czarnym znacznikiem (black-mark). Głowica drukująca z technologią E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła na całej szerokości 104 mm, co przekłada się na ostre kody kreskowe i czytelny tekst nawet przy prędkości 356 mm/s.
 
@@ -4282,7 +4659,9 @@ Kolorowy dotykowy wyświetlacz 4,3" (opcja — wersja bazowa ma wyświetlacz mon
 
 Łączność standardowa obejmuje USB 2.0, RS-232 Serial, Gigabit Ethernet (10/100/1000) i Bluetooth 4.1 oraz dwa porty USB Host do integracji plug-and-play z czytnikami kodów i pamięciami USB. Dwa otwarte sloty komunikacyjne pozwalają na rozbudowę o Wi-Fi 802.11ac, port równoległy (LPT) lub dodatkowy interfejs Ethernet. RFID UHF (EPC Gen 2 V2, ISO 18000-63) jest instalowany w terenie w zaledwie 5 minut — bez konieczności wysyłki do serwisu.
 
-Zebra ZT610 to idealna drukarka dla zakładów produkcyjnych, centrów dystrybucji, magazynów wysokiego składowania i firm logistycznych, które potrzebują niezawodnego druku 24/7 z opcją 600 dpi do specjalistycznych zastosowań. Zastępuje modele 110Xi4 i ZM400 z pełną kompatybilnością wsteczną szablonów ZPL — migracja nie wymaga modyfikacji oprogramowania.`,
+Zebra ZT610 to idealna drukarka dla zakładów produkcyjnych, centrów dystrybucji, magazynów wysokiego składowania i firm logistycznych, które potrzebują niezawodnego druku 24/7 z opcją 600 dpi do specjalistycznych zastosowań. Zastępuje modele 110Xi4 i ZM400 z pełną kompatybilnością wsteczną szablonów ZPL — migracja nie wymaga modyfikacji oprogramowania.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -4448,6 +4827,10 @@ Zebra ZT610 to idealna drukarka dla zakładów produkcyjnych, centrów dystrybuc
         question: 'Ile waży Zebra ZT610 i jakie ma wymiary?',
         answer: 'ZT610 waży 22,7 kg i ma wymiary 505 × 268 × 396 mm (D×S×W). To solidna drukarka klasy heavy-duty z całkowicie metalową obudową. Do porównania: ZT411 (mid-range) waży 12,5 kg, a ZT620 (6") 26 kg.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZT610?',
+        answer: 'Alternatywami są: Zebra ZT620 (szersza, 6"), Honeywell PX940, SATO CL6NX Plus.',
+      },
     ],
     comparison: {
       title: 'Porównanie drukarek przemysłowych Zebra 4" — ZT411 vs ZT610',
@@ -4489,13 +4872,16 @@ Zebra ZT610 to idealna drukarka dla zakładów produkcyjnych, centrów dystrybuc
       { name: 'ZT600 Series Spec Sheet (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zt600-series-specification-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2022-08-15',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/industrial/zt600-series/zt610.html',
   },
   {
     id: 'zebra-zt620',
     slug: 'zebra-zt620',
     name: 'Zebra ZT620',
     shortDescription: 'Przemysłowa drukarka etykiet 6" klasy heavy-duty — następca 170Xi4. 203/300 dpi, do 305 mm/s, ekran dotykowy 4,3", RFID opcja, Link-OS, praca 24/7',
-    description: `Zebra ZT620 to przemysłowa drukarka etykiet klasy heavy-duty o szerokości druku 168 mm (6,6"), będąca bezpośrednim następcą legendarnej serii 170Xi4 — najszerzej stosowanej szerokoformatowej drukarki przemysłowej na świecie. ZT620 łączy sprawdzoną wytrzymałość metalowej konstrukcji Xi z nowoczesną platformą Link-OS, kolorowym ekranem dotykowym 4,3" i pamięcią 1 GB RAM / 2 GB Flash. Drukarka jest zaprojektowana do nieprzerwanej pracy 24/7 w centrach dystrybucji, magazynach wysokiego składowania i zakładach produkcyjnych, gdzie wymagane są szerokie etykiety paletowe, logistyczne i wysyłkowe.
+    description: `Zebra ZT620 to najlepszy wybór dla magazynów wysokiego składowania i centrów dystrybucji wymagających szerokoformatowej drukarki przemysłowej 6" klasy heavy-duty do pracy 24/7.
+
+Zebra ZT620 to przemysłowa drukarka etykiet klasy heavy-duty o szerokości druku 168 mm (6,6"), będąca bezpośrednim następcą legendarnej serii 170Xi4 — najszerzej stosowanej szerokoformatowej drukarki przemysłowej na świecie. ZT620 łączy sprawdzoną wytrzymałość metalowej konstrukcji Xi z nowoczesną platformą Link-OS, kolorowym ekranem dotykowym 4,3" i pamięcią 1 GB RAM / 2 GB Flash. Drukarka jest zaprojektowana do nieprzerwanej pracy 24/7 w centrach dystrybucji, magazynach wysokiego składowania i zakładach produkcyjnych, gdzie wymagane są szerokie etykiety paletowe, logistyczne i wysyłkowe.
 
 Konstrukcja ZT620 to całkowicie metalowa obudowa z dwuczęściową pokrywą bi-fold i powiększonym oknem inspekcyjnym. Boczny system ładowania mediów (Easy Side-Loading) pozwala na wymianę rolek etykiet i taśm barwiących bez konieczności wyjmowania drukarki z linii produkcyjnej — wymiana trwa dosłownie kilkanaście sekund. Podwójne czujniki mediów (transmisyjny i refleksyjny) automatycznie rozpoznają różne typy etykiet: ciągłe, wykrojnikowe (die-cut), z nacięciem (notch) i z czarnym znacznikiem (black-mark). Głowica drukująca z technologią E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła na całej szerokości 168 mm, co jest kluczowe przy druku szerokich etykiet paletowych z kodami kreskowymi GS1-128 i etykietami GHS.
 
@@ -4503,7 +4889,9 @@ ZT620 jest dostępna w dwóch rozdzielczościach: 203 dpi (standard do etykiet l
 
 Kolorowy dotykowy wyświetlacz 4,3" (opcja — wersja bazowa ma kolorowy LCD) zmienia kolor na czerwony podczas błędów, co pozwala operatorom zidentyfikować problem z odległości kilku metrów. Uproszczona nawigacja ikonowa grupuje funkcje logicznie, eliminując potrzebę szkolenia. Link-OS z pakietem Zebra Print DNA obejmuje: PrintSecure (szyfrowanie komunikacji), Cloud Connect (integracja z chmurą), Profile Manager (centralne zarządzanie flotą) oraz Visibility Services (monitorowanie stanu drukarek w czasie rzeczywistym). Opcjonalny ZBI 2.0 (Zebra BASIC Interpreter) pozwala na autonomiczne aplikacje — drukarka może pobierać dane z plików, baz danych lub czytników i drukować bez komputera.
 
-Zebra ZT620 to idealna drukarka dla centrów dystrybucji, magazynów cross-docking, zakładów chemicznych (etykiety GHS) i firm logistycznych 3PL, które potrzebują niezawodnego druku szerokich etykiet 24/7. Zastępuje modele 170Xi4 i ZM600 z pełną kompatybilnością wsteczną szablonów ZPL — migracja nie wymaga modyfikacji oprogramowania.`,
+Zebra ZT620 to idealna drukarka dla centrów dystrybucji, magazynów cross-docking, zakładów chemicznych (etykiety GHS) i firm logistycznych 3PL, które potrzebują niezawodnego druku szerokich etykiet 24/7. Zastępuje modele 170Xi4 i ZM600 z pełną kompatybilnością wsteczną szablonów ZPL — migracja nie wymaga modyfikacji oprogramowania.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -4671,6 +5059,10 @@ Zebra ZT620 to idealna drukarka dla centrów dystrybucji, magazynów cross-docki
         question: 'Jak przejść z Zebra 170Xi4 na ZT620?',
         answer: 'ZT620 jest bezpośrednim następcą 170Xi4. Obsługuje ten sam język ZPL/ZPL II, więc istniejące szablony etykiet będą działać bez zmian. Szerokość druku pozostaje 6" (168 mm). Zmieniły się part numbery akcesoriów (głowice, obcinacze). Ethernet jest teraz standardem, Wi-Fi jest opcją. Migracja nie wymaga zmian w systemie WMS/ERP — wystarczy zainstalować nowe sterowniki.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZT620?',
+        answer: 'Alternatywami są: Zebra ZT610 (węższa, 4"), Honeywell PX940 Wide, TSC MH641T.',
+      },
     ],
     comparison: {
       title: 'Porównanie drukarek przemysłowych Zebra — ZT610 vs ZT620',
@@ -4711,6 +5103,7 @@ Zebra ZT620 to idealna drukarka dla centrów dystrybucji, magazynów cross-docki
       { name: 'ZT600 Series Spec Sheet (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zt600-series-specification-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2022-08-15',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/industrial/zt600-series/zt620.html',
   },
 ]
 
@@ -4724,7 +5117,9 @@ const mobilePrinters: Product[] = [
     slug: 'zebra-zq511',
     name: 'Zebra ZQ511',
     shortDescription: 'Wzmocniona mobilna drukarka etykiet 3" — MIL-STD-810G, IP54, upadki z 2 m',
-    description: `Zebra ZQ511 to wzmocniona mobilna drukarka etykiet i paragonów o szerokości druku 3 cale (72 mm), zaprojektowana do najtrudniejszych warunków pracy w terenie, magazynie i dostawie. Następca modelu ZQ510.
+    description: `Zebra ZQ511 to najlepszy wybór dla firm kurierskich i magazynów potrzebujących wzmocnionej mobilnej drukarki 3" do druku paragonów i etykiet w najtrudniejszych warunkach terenowych.
+
+Zebra ZQ511 to wzmocniona mobilna drukarka etykiet i paragonów o szerokości druku 3 cale (72 mm), zaprojektowana do najtrudniejszych warunków pracy w terenie, magazynie i dostawie. Następca modelu ZQ510.
 
 Certyfikat wojskowy MIL-STD-810G, odporność na upadki z 2 metrów na beton, 1300 upadków obrotowych z 1 m (IEC68-2-32) i klasa ochrony IP54 (IP65 z egzoszkieletem) — ZQ511 wytrzyma wszystko, co spotka ją w codziennej pracy kuriera, magazyniera czy serwisanta.
 
@@ -4740,7 +5135,9 @@ Konstrukcja odporna na upadki z 2 metrów na beton (3 m z egzoszkieletem), 1300 
 
 Bateria PowerPrecision+ Li-Ion 3250 mAh (opcjonalnie 6500 mAh) z technologią monitorowania stanu baterii. Dual-radio: Bluetooth 4.1 (EDR + LE) i Wi-Fi 802.11ac (2,4/5 GHz) z jednoczesną pracą obu interfejsów. NFC (Zebra Print Touch) do parowania jednym dotknięciem. USB 2.0 OTG do serwisu.
 
-Zebra ZQ511 zastępuje model ZQ510. Baterie PowerPrecision+ i ładowarki są współdzielone w ramach serii ZQ5x0 (ZQ511, ZQ521), natomiast etui i egzoszkielety mają dedykowane wersje dla modelu 3" (ZQ511) i 4" (ZQ521). Dostępna w wersjach Bluetooth-only i Bluetooth + Wi-Fi, z opcją druku etykiet bez podkładu (linerless) i wersją RFID (ZQ511R).`,
+Zebra ZQ511 zastępuje model ZQ510. Baterie PowerPrecision+ i ładowarki są współdzielone w ramach serii ZQ5x0 (ZQ511, ZQ521), natomiast etui i egzoszkielety mają dedykowane wersje dla modelu 3" (ZQ511) i 4" (ZQ521). Dostępna w wersjach Bluetooth-only i Bluetooth + Wi-Fi, z opcją druku etykiet bez podkładu (linerless) i wersją RFID (ZQ511R).
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -4962,6 +5359,10 @@ Zebra ZQ511 zastępuje model ZQ510. Baterie PowerPrecision+ i ładowarki są wsp
         question: 'Czy mogę zarządzać flotą drukarek ZQ511 zdalnie?',
         answer: 'Tak — ZQ511 działa na systemie Link-OS, który umożliwia zdalne zarządzanie flotą: aktualizacja firmware, konfiguracja ustawień, monitorowanie stanu baterii i głowicy, diagnostyka błędów, wysyłanie szablonów etykiet. Dostępne przez Zebra Profile Manager (chmura) lub Zebra Printer Management (on-premise). Obsługa SNMP do integracji z istniejącymi narzędziami IT.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZQ511?',
+        answer: 'Alternatywami są: Zebra ZQ521 (szersza, 4"), Honeywell RP4f, Brother RJ-3250WBL.',
+      },
     ],
     editorialReview: {
       ratingValue: 4.7,
@@ -4974,13 +5375,16 @@ Zebra ZQ511 zastępuje model ZQ510. Baterie PowerPrecision+ i ładowarki są wsp
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zq511-zq521-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2026-02-13',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/mobile/zq500-series/zq511.html',
   },
   {
     id: 'zebra-zq521',
     slug: 'zebra-zq521',
     name: 'Zebra ZQ521',
     shortDescription: 'Wzmocniona mobilna drukarka etykiet 4" — MIL-STD-810G, IP54, upadki z 2,1 m, etykiety wysyłkowe 100×150',
-    description: `Zebra ZQ521 to wzmocniona mobilna drukarka etykiet i paragonów o szerokości druku 4 cale (104 mm), zaprojektowana do profesjonalnego druku pełnowymiarowych etykiet wysyłkowych bezpośrednio w terenie. Następca modelu ZQ520 i starszy brat kompaktowej ZQ511.
+    description: `Zebra ZQ521 to najlepszy wybór dla firm kurierskich i logistycznych potrzebujących wzmocnionej mobilnej drukarki 4" do druku pełnowymiarowych etykiet wysyłkowych w terenie.
+
+Zebra ZQ521 to wzmocniona mobilna drukarka etykiet i paragonów o szerokości druku 4 cale (104 mm), zaprojektowana do profesjonalnego druku pełnowymiarowych etykiet wysyłkowych bezpośrednio w terenie. Następca modelu ZQ520 i starszy brat kompaktowej ZQ511.
 
 Certyfikat wojskowy MIL-STD-810G, odporność na upadki z 2,1 metra na beton, 1300 upadków obrotowych z 1 m (IEC68-2-32) i klasa ochrony IP54 (IP65 z egzoszkieletem) — ZQ521 jest stworzona do najtrudniejszych warunków pracy kuriera, magazyniera i serwisanta.
 
@@ -4998,7 +5402,9 @@ Konstrukcja odporna na upadki z 2,1 metra na beton, 1300 upadków obrotowych z 1
 
 Bateria PowerPrecision+ Li-Ion 3250 mAh (opcjonalnie 6500 mAh) z technologią monitorowania stanu baterii. Dual-radio: Bluetooth 4.1 (EDR + LE) i Wi-Fi 802.11ac (2,4/5 GHz) z jednoczesną pracą obu interfejsów. NFC (Zebra Print Touch) do parowania jednym dotknięciem. USB 2.0 OTG do serwisu.
 
-Zebra ZQ521 zastępuje model ZQ520. Baterie PowerPrecision+ i ładowarki są współdzielone w ramach serii ZQ5x0 (ZQ511, ZQ521), natomiast etui i egzoszkielety mają dedykowane wersje dla modelu 3-calowego (ZQ511) i 4-calowego (ZQ521). Dostępna w wersjach Bluetooth-only i Bluetooth + Wi-Fi, z opcją druku etykiet bez podkładu (linerless) i wersją RFID (ZQ521R).`,
+Zebra ZQ521 zastępuje model ZQ520. Baterie PowerPrecision+ i ładowarki są współdzielone w ramach serii ZQ5x0 (ZQ511, ZQ521), natomiast etui i egzoszkielety mają dedykowane wersje dla modelu 3-calowego (ZQ511) i 4-calowego (ZQ521). Dostępna w wersjach Bluetooth-only i Bluetooth + Wi-Fi, z opcją druku etykiet bez podkładu (linerless) i wersją RFID (ZQ521R).
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -5214,6 +5620,10 @@ Zebra ZQ521 zastępuje model ZQ520. Baterie PowerPrecision+ i ładowarki są wsp
         question: 'Czy mogę zarządzać flotą drukarek ZQ521 zdalnie?',
         answer: 'Tak — ZQ521 działa na systemie Link-OS, który umożliwia zdalne zarządzanie flotą: aktualizacja firmware, konfiguracja ustawień, monitorowanie stanu baterii i głowicy, diagnostyka błędów, wysyłanie szablonów etykiet. Dostępne przez Zebra Profile Manager (chmura) lub Zebra Printer Management (on-premise). Idealne dla firm z 10+ drukarkami mobilnymi.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZQ521?',
+        answer: 'Alternatywami są: Zebra ZQ511 (węższa, 3"), Honeywell RP4f, Brother RJ-4250WB.',
+      },
     ],
     editorialReview: {
       ratingValue: 4.6,
@@ -5226,13 +5636,16 @@ Zebra ZQ521 zastępuje model ZQ520. Baterie PowerPrecision+ i ładowarki są wsp
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zq511-zq521-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2026-02-13',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/mobile/zq500-series/zq521.html',
   },
   {
     id: 'zebra-zq610-plus',
     slug: 'zebra-zq610-plus',
     name: 'Zebra ZQ610 Plus',
     shortDescription: 'Kompaktowa mobilna drukarka etykiet 2" — kolorowy wyświetlacz LCD, Wi-Fi 5/6, IP54',
-    description: `Zebra ZQ610 Plus to kompaktowa mobilna drukarka etykiet i paragonów o szerokości druku 2 cale (48 mm) z serii ZQ600 Plus, zaprojektowana do szybkiego drukowania potwierdzeń, metek cenowych i etykiet produktowych w terenie.
+    description: `Zebra ZQ610 Plus to najlepszy wybór dla handlu detalicznego i gastronomii potrzebujących kompaktowej mobilnej drukarki 2" do metek cenowych i potwierdzeń.
+
+Zebra ZQ610 Plus to kompaktowa mobilna drukarka etykiet i paragonów o szerokości druku 2 cale (48 mm) z serii ZQ600 Plus, zaprojektowana do szybkiego drukowania potwierdzeń, metek cenowych i etykiet produktowych w terenie.
 
 Następca modelu ZQ610 — nowa generacja z kolorowym wyświetlaczem LCD 288×240 px, ulepszonym zarządzaniem flotą przez Link-OS z Print DNA i opcjonalną łącznością Wi-Fi 6 (802.11ax) z Bluetooth 5.3. Prędkość druku do 115 mm/s w rozdzielczości 203 dpi.
 
@@ -5246,7 +5659,9 @@ Kolorowy wyświetlacz LCD (288×240 px) pokazuje stan baterii, łączność, kol
 
 Pamięć 512 MB Flash (128 MB dla użytkownika) obsługuje złożone formaty etykiet z kodami 1D/2D, grafiką i logotypami. Języki programowania: CPCL, ZPL, EPL i ZBI 2.0. Czujniki przerwy i czarnej linii w pozycji centralnej.
 
-Baterie PowerPrecision+ (3250 mAh i 6500 mAh) oraz ładowarki 1- i 3-gniazdowe są współdzielone w ramach serii ZQ500/ZQ600. Akcesoria ochronne (futerały, klipsy) mają dedykowane wersje dla serii ZQ610.`,
+Baterie PowerPrecision+ (3250 mAh i 6500 mAh) oraz ładowarki 1- i 3-gniazdowe są współdzielone w ramach serii ZQ500/ZQ600. Akcesoria ochronne (futerały, klipsy) mają dedykowane wersje dla serii ZQ610.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -5436,6 +5851,10 @@ Baterie PowerPrecision+ (3250 mAh i 6500 mAh) oraz ładowarki 1- i 3-gniazdowe s
         question: 'Ile kosztuje eksploatacja ZQ610 Plus miesięcznie?',
         answer: 'Przy 150 pokwitowaniach dziennie (3 300/mies.): rolki papierowe ~100 zł/mies., amortyzacja baterii ~20 zł/mies., amortyzacja głowicy ~15 zł/mies. = ok. 135 zł/mies. Druk termiczny bezpośredni nie wymaga taśmy barwiącej. Koszt pojedynczego wydruku: 0,02–0,04 zł.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZQ610 Plus?',
+        answer: 'Alternatywami są: Zebra ZQ620 Plus (szersza), Honeywell RP2f, Bixolon SPP-L310.',
+      },
     ],
     editorialReview: {
       ratingValue: 4.5,
@@ -5447,13 +5866,16 @@ Baterie PowerPrecision+ (3250 mAh i 6500 mAh) oraz ładowarki 1- i 3-gniazdowe s
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zq610-zq620-zq630-plus-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2026-02-13',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/mobile/zq600-plus-series.html',
   },
   {
     id: 'zebra-zq620-plus',
     slug: 'zebra-zq620-plus',
     name: 'Zebra ZQ620 Plus',
     shortDescription: 'Mobilna drukarka etykiet 3" — Wi-Fi 5/6, kolorowy wyświetlacz LCD, IP54, linerless',
-    description: `Zebra ZQ620 Plus to mobilna drukarka etykiet i paragonów o szerokości druku 3 cale (72 mm) z serii ZQ600 Plus, zaprojektowana do profesjonalnego drukowania etykiet wysyłkowych, metek cenowych i pokwitowań w terenie.
+    description: `Zebra ZQ620 Plus to najlepszy wybór dla firm logistycznych i kurierskich potrzebujących mobilnej drukarki 3" nowej generacji z Wi-Fi 6E i Bluetooth 5.3.
+
+Zebra ZQ620 Plus to mobilna drukarka etykiet i paragonów o szerokości druku 3 cale (72 mm) z serii ZQ600 Plus, zaprojektowana do profesjonalnego drukowania etykiet wysyłkowych, metek cenowych i pokwitowań w terenie.
 
 Następca modelu ZQ620 — nowa generacja z kolorowym wyświetlaczem LCD 288×240 px, ulepszonym zarządzaniem flotą przez Link-OS z Print DNA i opcjonalną łącznością Wi-Fi 6 (802.11ax) z Bluetooth 5.3. Prędkość druku do 115 mm/s w rozdzielczości 203 dpi.
 
@@ -5467,7 +5889,9 @@ Kolorowy wyświetlacz LCD (288×240 px) pokazuje stan baterii, łączność, kol
 
 Pamięć 512 MB Flash (128 MB dla użytkownika) obsługuje złożone formaty etykiet z kodami 1D/2D, grafiką i logotypami. Języki programowania: CPCL, ZPL, EPL i ZBI 2.0. Czujniki przerwy i czarnej linii w pozycji centralnej.
 
-Baterie PowerPrecision+ (3250 mAh i 6500 mAh) oraz ładowarki 1- i 3-gniazdowe są współdzielone w ramach serii ZQ500/ZQ600. Futerał ochronny P1031365-029 jest dedykowany dla ZQ620/ZQ620 Plus (3-calowy format).`,
+Baterie PowerPrecision+ (3250 mAh i 6500 mAh) oraz ładowarki 1- i 3-gniazdowe są współdzielone w ramach serii ZQ500/ZQ600. Futerał ochronny P1031365-029 jest dedykowany dla ZQ620/ZQ620 Plus (3-calowy format).
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -5674,6 +6098,10 @@ Baterie PowerPrecision+ (3250 mAh i 6500 mAh) oraz ładowarki 1- i 3-gniazdowe s
         question: 'Ile kosztuje eksploatacja ZQ620 Plus miesięcznie?',
         answer: 'Przy 200 pokwitowaniach dziennie (4 400/mies.): rolki papierowe ~130 zł/mies., amortyzacja baterii ~25 zł/mies., amortyzacja głowicy ~20 zł/mies. = ok. 175 zł/mies. Druk termiczny bezpośredni nie wymaga taśmy barwiącej. Koszt pojedynczego wydruku: 0,03–0,04 zł.',
       },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZQ620 Plus?',
+        answer: 'Alternatywami są: Zebra ZQ630 Plus (najszersza), Honeywell RP4f, Bixolon SPP-L410.',
+      },
     ],
     editorialReview: {
       ratingValue: 4.6,
@@ -5685,78 +6113,1123 @@ Baterie PowerPrecision+ (3250 mAh i 6500 mAh) oraz ładowarki 1- i 3-gniazdowe s
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zq610-zq620-zq630-plus-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2026-02-13',
-  },
-  {
-    id: 'zebra-zq320-plus',
-    slug: 'zebra-zq320-plus',
-    name: 'Zebra ZQ320 Plus',
-    shortDescription: 'Mobilna drukarka paragonów 3" do średnich obciążeń',
-    description: `Zebra ZQ320 Plus to mobilna drukarka paragonów o szerokości 3" (72 mm), zoptymalizowana dla środowisk o średnim obciążeniu.
-
-Idealna dla kurierów, serwisantów i przedstawicieli handlowych. Możliwość druku paragonów i podstawowych etykiet.
-
-Wytrzymała konstrukcja, łączność Bluetooth i Wi-Fi, długi czas pracy na baterii.`,
-    categoryId: 'drukarki-mobilne',
-    manufacturerId: 'zebra',
-    priceFrom: 1890,
-    images: ['/images/products/zebra-zq320.jpg'],
-    tags: ['logistyka', 'retail', 'outdoor'],
-    availability: 'available',
-    isNew: true,
-    isBestseller: false,
-    specifications: [
-      { name: 'Metoda druku', value: 'Termiczna' },
-      { name: 'Rozdzielczość', value: '203 dpi' },
-      { name: 'Szerokość druku', value: '72 mm (3")' },
-      { name: 'Prędkość druku', value: 'do 100 mm/s' },
-      { name: 'Interfejsy', value: 'Bluetooth 4.1, Wi-Fi, USB' },
-      { name: 'Bateria', value: 'Li-Ion 2500 mAh' },
-      { name: 'Odporność', value: 'IP54, upadki z 1.5 m' },
-      { name: 'Waga', value: '480 g z baterią' },
-    ],
-    applications: ['Dostawy kurierskie', 'Serwis w terenie', 'Paragony mobilne', 'Etykiety podstawowe'],
-    compatibleAccessories: ['zebra-battery-zq3', 'zebra-charger-zq3'],
-    downloads: [
-      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://serwis-zebry.pl/instrukcje/zebra-zq320-plus', size: 'Online' },
-      { name: 'Sterowniki Windows', type: 'software', url: 'https://serwis-zebry.pl/sterowniki', size: 'Online' },
-    ],
-    createdAt: '2024-03-01',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/mobile/zq600-plus-series.html',
   },
   {
     id: 'zebra-zq630-plus',
     slug: 'zebra-zq630-plus',
     name: 'Zebra ZQ630 Plus',
-    shortDescription: 'Wytrzymała mobilna drukarka 4" do intensywnych zastosowań',
-    description: `Zebra ZQ630 Plus to najbardziej wytrzymała mobilna drukarka etykiet 4" przeznaczona do środowisk o wysokim obciążeniu.
+    shortDescription: 'Mobilna drukarka etykiet 4" — Wi-Fi 5/6, kolorowy LCD, IP54, bateria 6800 mAh, linerless',
+    description: `Zebra ZQ630 Plus to najlepszy wybór dla firm kurierskich i logistycznych, które potrzebują mobilnego druku etykiet wysyłkowych 100×150 mm w terenie.
 
-Następca modelu QLn420. Drukuje etykiety, paragony i metki o szerokości do 104 mm z najwyższą niezawodnością.
+Zebra ZQ630 Plus to najpotężniejsza mobilna drukarka etykiet z serii ZQ600 Plus — jedyna 4-calowa (do 104 mm szerokości druku) drukarka przenośna Zebra nowej generacji. Drukuje etykiety wysyłkowe 100×150 mm, etykiety paletowe i pokwitowania bez konieczności stacji biurkowej.
 
-Idealna dla logistyki, transportu i aplikacji wymagających ekstremalnej wytrzymałości.`,
-    categoryId: 'drukarki-mobilne',
+Następca modelu ZQ630 — wyposażona w kolorowy wyświetlacz LCD 288×240 px, bateria PowerPrecision+ 6800 mAh (4-cell, 7.4V) zapewniającą najdłuższy czas pracy w serii ZQ600 Plus. Prędkość druku do 115 mm/s w rozdzielczości 203 dpi.
+
+Opcjonalna łączność Wi-Fi 6 (802.11ax) z Bluetooth 5.3 i szybkim roamingiem (Fast Transition / 802.11r) lub Wi-Fi 5 (ac) z BT 4.2. NFC (Zebra Print Touch) umożliwia parowanie jednym dotknięciem z terminalem mobilnym. RS-232C do integracji ze starszymi systemami, Ethernet 10/100 Mbps w stacji dokującej.
+
+Klasa ochrony IP54, odporność na upadki z 1,83 m (6 ft) na beton i 500 upadków obrotowych. Temperatura pracy od -20°C do +50°C. Obsługuje media o szerokości 50,8–111 mm (linered) i 50,8–109 mm (linerless), rolki o średnicy do 66,8 mm z gilzą 19 mm lub 34,9 mm.
+
+Zebra ZQ630 Plus to jedyna mobilna drukarka 4-calowa z serii ZQ600 Plus, łącząca szerokoformatowy druk etykiet (do 111 mm) z mobilnością. Wydrukujesz na niej standardowe etykiety kurierskie 100×150 mm, etykiety paletowe GS1-128 i kompletne dokumenty transportowe — bez powrotu do biurka.
+
+Kolorowy wyświetlacz LCD (288×240 px) informuje o stanie baterii, łączności, kolejce wydruków i diagnostyce. Bateria 6800 mAh (4-cell) zapewnia druk setek dużych etykiet na jednym ładowaniu — ponad 2× więcej niż baterie 3250 mAh w mniejszych modelach ZQ610/ZQ620 Plus.
+
+Waga 1,113 kg z baterią to o 383 g więcej niż ZQ620 Plus (730 g), ale wciąż poniżej 1,2 kg — akceptowalna dla pracy mobilnej z paskiem na ramię lub klipsem do paska. Pamięć 512 MB Flash (128 MB dla użytkownika) i 256 MB RAM obsługuje złożone formaty etykiet z kodami 1D/2D, grafiką i logotypami.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+    categoryId: 'drukarki-etykiet',
+    subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'zebra',
-    priceFrom: 4890,
-    images: ['/images/products/zebra-zq630.jpg'],
-    tags: ['logistyka', 'outdoor', 'produkcja'],
+    priceFrom: 4257.45,
+    images: ['/images/products/zq630plus_2_s.png', '/images/products/zq630plus_1_s.png', '/images/products/zq630plus_3_s.png'],
+    imageDescriptions: [
+      'Mobilna drukarka etykiet Zebra ZQ630 Plus — widok z przodu z kolorowym wyświetlaczem LCD',
+      'Zebra ZQ630 Plus — widok z góry z drukowaną etykietą',
+      'Zebra ZQ630 Plus — widok boczny z drukowaną etykietą',
+    ],
+    tags: ['logistyka', 'magazyn', 'produkcja', 'outdoor'] as ProductTag[],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    keyParams: {
+      rodzajDruku: 'Termiczny bezpośredni (Direct Thermal)',
+      rozdzielczosc: '203 dpi (8 dots/mm)',
+      predkoscDruku: 'do 115 mm/s (4,5 ips)',
+      szerokoscDruku: 'max. 104 mm (4,09")',
+      szerokoscEtykiet: '50,8–111 mm',
+    },
+    specifications: [
+      { name: 'Rodzaj druku', value: 'Termiczny bezpośredni (Direct Thermal)' },
+      { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm)' },
+      { name: 'Prędkość druku', value: 'do 115 mm/s (4,5 ips)' },
+      { name: 'Szerokość druku', value: 'max. 104 mm (4,09")' },
+      { name: 'Szerokość nośnika', value: '50,8–111 mm (linered) / 50,8–109 mm (linerless)' },
+      { name: 'Maks. średnica rolki', value: '66,8 mm (2,6")' },
+      { name: 'Gilza wewnętrzna', value: '19,05 mm (0,75") lub 34,925 mm (1,375")' },
+      { name: 'Maks. długość etykiety', value: '12,7–812,8 mm' },
+      { name: 'Grubość nośnika', value: '3,2–7,5 mils (0,08–0,19 mm)' },
+      { name: 'Typy nośników', value: 'Etykiety z przerwą, z czarną linią, ciągłe, die-cut, linerless' },
+      { name: 'Pamięć RAM', value: '256 MB' },
+      { name: 'Pamięć Flash', value: '512 MB (128 MB dla użytkownika)' },
+      { name: 'Procesor', value: 'ARM 32-bit, 400 MHz' },
+      { name: 'Wyświetlacz', value: 'Kolorowy LCD 288×240 px' },
+      { name: 'Bluetooth', value: '4.2 LE (standard) / 5.3 (z Wi-Fi 6)' },
+      { name: 'Wi-Fi', value: '802.11ax Wi-Fi 6 (opcja), 802.11ac Wi-Fi 5 (opcja), 2,4/5 GHz' },
+      { name: 'USB', value: '2.0 Full-Speed Mini-B (12 Mbps)' },
+      { name: 'RS-232', value: '14-pin RS-232C do 115,2 Kbps' },
+      { name: 'NFC', value: 'Tak (Zebra Print Touch)' },
+      { name: 'Ethernet', value: '10/100 Mbps (w stacji dokującej)' },
+      { name: 'Bateria', value: 'PowerPrecision+ Li-Ion 6800 mAh (4-cell, 7,4V)' },
+      { name: 'Klasa ochrony', value: 'IP54' },
+      { name: 'Odporność na upadki', value: '1,83 m (6 ft) na beton — wielokrotne' },
+      { name: 'Upadki obrotowe (tumble)', value: '500×' },
+      { name: 'Temperatura pracy', value: '-20°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-25°C do +65°C' },
+      { name: 'Temperatura ładowania', value: '0°C do +40°C' },
+      { name: 'Wilgotność', value: '10–90% (bez kondensacji)' },
+      { name: 'Wymiary (W×Sz×G)', value: '186,7 × 165,1 × 82,5 mm' },
+      { name: 'Waga z baterią', value: '1,113 kg (2,45 lbs)' },
+      { name: 'Rozstaw otworów montażowych', value: '101,6 mm (4,0")' },
+      { name: 'Języki programowania', value: 'CPCL, ZPL, EPL, ZBI 2.0' },
+      { name: 'System operacyjny drukarki', value: 'Link-OS z Print DNA' },
+      { name: 'Czujniki', value: 'Przerwa i czarna linia (pozycja centralna)' },
+      { name: 'Zarządzanie flotą', value: 'Link-OS, Profile Manager, Printer Management' },
+      { name: 'Certyfikaty', value: 'FCC, CE, TUV, CSA' },
+      { name: 'Gwarancja', value: '2 lata (bateria: 1 rok, głowica: 6 mies.)' },
+    ],
+    applications: [
+      'Etykiety wysyłkowe 100×150 mm w dostawach',
+      'Etykiety paletowe GS1-128 i SSCC',
+      'Dokumenty transportowe i CMR',
+      'Pokwitowania dostawy (proof of delivery)',
+      'Kompletacja zamówień pick & pack',
+      'Inwentaryzacja aktywów i zapasów',
+      'Etykiety na regały i półki (shelf labeling)',
+      'Serwis i konserwacja w terenie',
+      'Etykiety chłodnicze (-20°C)',
+      'Kontrola jakości na linii produkcyjnej',
+    ],
+    variants: [
+      {
+        partNumber: 'ZQ63-AUFAE14-00',
+        name: 'Bluetooth 4.2, bateria 6800 mAh',
+        attributes: {},
+        priceFrom: 4257.45,
+        availability: 'available',
+      },
+      {
+        partNumber: 'ZQ63-AUWAE14-00',
+        name: 'Bluetooth 4.2 + Wi-Fi 5 (ac), bateria 6800 mAh',
+        attributes: { 'Wi-Fi': 'Wi-Fi 5 (ac)' },
+        priceFrom: 4788.73,
+        availability: 'available',
+      },
+      {
+        partNumber: 'ZQ63-AUXAE14-00',
+        name: 'Bluetooth 5.3 + Wi-Fi 6 (ax), bateria 6800 mAh',
+        attributes: { 'Wi-Fi': 'Wi-Fi 6 (ax)' },
+        priceFrom: 4788.73,
+        availability: 'available',
+      },
+      {
+        partNumber: 'ZQ63-AUW2E14-00',
+        name: 'Bluetooth 4.2 + Wi-Fi 5 (ac), bateria 6800 mAh, linerless',
+        attributes: { 'Wi-Fi': 'Wi-Fi 5 (ac)', 'Linerless': 'Tak' },
+        priceFrom: 5057.13,
+        availability: 'unavailable',
+      },
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: [
+      'zebra-battery-zq630',
+      'zebra-charger-1slot-zq5',
+      'zebra-charger-3slot-zq5',
+      'zebra-ac-adapter-zq5',
+      'zebra-belt-clip-zq610',
+      'zebra-usb-cable-zq610',
+      'zebra-car-charger-zq5',
+    ],
+    comparison: {
+      title: 'Porównanie mobilnych drukarek Zebra 4" vs 3" vs 2"',
+      models: [
+        {
+          name: 'Zebra ZQ630 Plus',
+          slug: 'zebra-zq630-plus',
+          highlight: true,
+          specs: {
+            'Szerokość druku': '104 mm (4")',
+            'Prędkość': '115 mm/s',
+            'Bateria': '6800 mAh (4-cell)',
+            'Drop spec': '1,83 m na beton',
+            'IP': 'IP54',
+            'Waga': '1 113 g',
+            'Wi-Fi': 'Wi-Fi 5 lub 6 (opcja)',
+            'Wyświetlacz': 'Kolor LCD',
+            'Linerless': 'Opcja',
+            'Cena od': '4 257 zł',
+          },
+        },
+        {
+          name: 'Zebra ZQ620 Plus',
+          slug: 'zebra-zq620-plus',
+          specs: {
+            'Szerokość druku': '72 mm (3")',
+            'Prędkość': '115 mm/s',
+            'Bateria': '3250 / 6500 mAh',
+            'Drop spec': '1,52 m na beton',
+            'IP': 'IP54',
+            'Waga': '730 g',
+            'Wi-Fi': 'Wi-Fi 5 lub 6 (opcja)',
+            'Wyświetlacz': 'Kolor LCD',
+            'Linerless': 'Opcja',
+            'Cena od': '3 622 zł',
+          },
+        },
+        {
+          name: 'Zebra ZQ610 Plus',
+          slug: 'zebra-zq610-plus',
+          specs: {
+            'Szerokość druku': '48 mm (2")',
+            'Prędkość': '115 mm/s',
+            'Bateria': '3250 / 6500 mAh',
+            'Drop spec': '1,52 m na beton',
+            'IP': 'IP54',
+            'Waga': '600 g',
+            'Wi-Fi': 'Wi-Fi 5 lub 6 (opcja)',
+            'Wyświetlacz': 'Kolor LCD',
+            'Linerless': 'Brak',
+            'Cena od': '3 256 zł',
+          },
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Czym Zebra ZQ630 Plus różni się od ZQ620 Plus?',
+        answer: 'ZQ630 Plus to 4-calowa (104 mm druku) mobilna drukarka — największa w serii ZQ600 Plus. ZQ620 Plus drukuje do 72 mm (3"). ZQ630 Plus ma dedykowaną baterię 6800 mAh (4-cell) zapewniającą znacznie dłuższy czas pracy, waży 1,113 kg vs 730 g. Obsługuje media do 111 mm szerokości — mieści standardowe etykiety wysyłkowe 100×150 mm. Obie mają kolorowy LCD, te same opcje Wi-Fi 5/6 i IP54.',
+      },
+      {
+        question: 'Czy na ZQ630 Plus wydrukuję etykietę kurierską 100×150 mm?',
+        answer: 'Tak — ZQ630 Plus to jedyna mobilna drukarka Zebra z serii ZQ600 Plus, która obsługuje etykiety o pełnej szerokości 100 mm (do 111 mm). Standardowe etykiety kurierskie InPost, DPD, DHL 100×150 mm drukują się bez problemu. Dla mniejszych etykiet (do 79 mm) wystarczy tańsza ZQ620 Plus.',
+      },
+      {
+        question: 'Ile etykiet wydrukuję na baterii 6800 mAh?',
+        answer: 'Bateria 6800 mAh (4-cell, 7.4V) w ZQ630 Plus zapewnia druk ok. 500–800 standardowych etykiet (100×150 mm) na jednym ładowaniu. Dokładna liczba zależy od pokrycia druku, temperatury otoczenia i ustawień Wi-Fi. Bateria 6800 mAh nie jest wymienna na mniejsze — ZQ630 Plus używa wyłącznie baterii 4-cell.',
+      },
+      {
+        question: 'Czy ZQ630 Plus jest odporna na upadki i wodę?',
+        answer: 'ZQ630 Plus spełnia klasę ochrony IP54 (ochrona przed pyłem i bryzgami wody) i wytrzymuje wielokrotne upadki z 1,83 m (6 stóp) na beton oraz 500 upadków obrotowych (tumble). Temperatura pracy od -20°C do +50°C pozwala na pracę w chłodniach i na rampach załadunkowych. To najwyższy drop spec w serii ZQ600 Plus (ZQ610/ZQ620 Plus: 1,52 m).',
+      },
+      {
+        question: 'Jakie etykiety pasują do Zebra ZQ630 Plus?',
+        answer: 'ZQ630 Plus obsługuje etykiety termiczne o szerokości 50,8–111 mm (linered) lub 50,8–109 mm (linerless): samoprzylepne z przerwą lub czarną linią, ciągłe (paragony), die-cut i linerless. Gilza 19 mm lub 34,9 mm, maks. średnica rolki 66,8 mm. Etykiety wysyłkowe 100×150 mm, 100×100 mm, 76×51 mm — wszystkie pasują.',
+      },
+      {
+        question: 'Czy ZQ630 Plus obsługuje druk linerless?',
+        answer: 'Tak — wariant ZQ63-AUW2E14-00 ma silikonowy wałek dociskowy do druku etykiet bez podkładu (linerless, media 50,8–109 mm). Etykiety linerless redukują odpady o ok. 40% i zmieszczą więcej etykiet na rolce. Warianty z literą A (np. ZQ63-AUFAE14-00) mają standardowy wałek do etykiet z podkładem.',
+      },
+      {
+        question: 'Czy ZQ630 Plus jest kompatybilna z akcesoriami ZQ620 Plus?',
+        answer: 'Częściowo — ładowarki (SAC-MPP-1BCHGEU1-01, SAC-MPP-3BCHGEU1-01), zasilacz sieciowy (P1031365-042), kabel USB (P1031365-055) i klips do paska (P1031365-028) są współdzielone. Bateria jest inna — ZQ630 Plus używa wyłącznie 4-cell 6800 mAh (BTRY-MPP-68MA1-01), nie kompatybilnej z mniejszymi modelami. Futerał jest też dedykowany dla ZQ630 Plus.',
+      },
+      {
+        question: 'Jak długo ładuje się bateria ZQ630 Plus?',
+        answer: 'Bateria 6800 mAh (4-cell) ładuje się w ok. 4–5 godzin w ładowarce 1-gniazdowej (SAC-MPP-1BCHGEU1-01). Ładowanie kontrolowane przez PowerPrecision+ wydłuża żywotność baterii. Nie stosuj ładowarek nieoryginalnych — mogą uszkodzić baterię i unieważnić gwarancję.',
+      },
+      {
+        question: 'Do jakich zastosowań nadaje się ZQ630 Plus?',
+        answer: 'ZQ630 Plus to drukarka do zadań wymagających mobilnego druku etykiet 4-calowych: dostawy kurierskie (etykiety 100×150 mm drukowane na rampie), inwentaryzacja magazynu (etykiety na regały i palety), serwis terenowy (etykiety identyfikacyjne na sprzęt), logistyka cross-dock (etykiety transportowe GS1-128). Wszędzie gdzie potrzebujesz dużych etykiet bez powrotu do biurka.',
+      },
+      {
+        question: 'Ile kosztuje Zebra ZQ630 Plus i jakie są warianty?',
+        answer: 'Ceny ZQ630 Plus zaczynają się od 4 257 zł netto za wariant Bluetooth (ZQ63-AUFAE14-00). Z Wi-Fi 5: 4 789 zł, z Wi-Fi 6: 4 789 zł. Wariant linerless z Wi-Fi 5: 5 057 zł. Wszystkie warianty mają baterię 6800 mAh, kolorowy LCD i IP54. Wi-Fi 6 zapewnia szybszy roaming i lepszą łączność w dużych magazynach.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZQ630 Plus?',
+        answer: 'Alternatywami są: Zebra ZQ620 Plus (węższa), Honeywell RP4f, Brother RJ-4250WB.',
+      },
+    ],
+    editorialReview: {
+      ratingValue: 4.5,
+      bestRating: 5,
+      reviewBody: 'Zebra ZQ630 Plus to jedyna mobilna drukarka 4-calowa z nowej generacji ZQ600 Plus — idealna gdy potrzebujesz drukować etykiety wysyłkowe 100×150 mm w terenie. Bateria 6800 mAh (4-cell) zapewnia najdłuższy czas pracy w serii. Kolorowy LCD i Wi-Fi 6 to standard premium. Waga 1,113 kg jest wyższa niż u mniejszych modeli, ale akceptowalna z paskiem na ramię. Opcja linerless i szerokie media do 111 mm czynią ją najbardziej wszechstronną mobilną drukarką Zebra.',
+    },
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zq630-plus/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zq610-zq620-zq630-plus-spec-sheet-en-us.pdf', size: 'PDF' },
+    ],
+    createdAt: '2026-02-14',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/mobile/zq600-plus-series.html',
+  },
+  // --- Zebra ZQ310 — kompaktowa mobilna drukarka 2" ---
+  {
+    id: 'zebra-zq310-plus',
+    slug: 'zebra-zq310-plus',
+    name: 'Zebra ZQ310 Plus',
+    shortDescription: 'Kompaktowa mobilna drukarka paragonów i etykiet 2" — IP54, Bluetooth 5.0, USB-C, 370 g',
+    description: `Zebra ZQ310 Plus to najlepszy wybór dla handlu detalicznego i gastronomii szukających najlżejszej mobilnej drukarki Zebra z pełną obsługą ZPL.
+
+Zebra ZQ310 Plus to najlżejsza i najtańsza mobilna drukarka etykiet i paragonów Zebra z serii ZQ300 Plus — waży zaledwie 370 g z baterią i mieści się w dłoni. Szerokość druku 2 cale (48 mm) w rozdzielczości 203 dpi z prędkością do 100 mm/s. Następca oryginalnego modelu ZQ310 z istotnymi ulepszeniami: USB-C, Bluetooth 5.0 i kolorowy wyświetlacz LCD.
+
+Zaprojektowana jako entry-level mobilna drukarka Zebra do zastosowań, w których liczy się niska waga, kompaktowe wymiary i przystępna cena. Idealna do druku paragonów, pokwitowań kurierskich, biletów parkingowych, metek cenowych i małych etykiet identyfikacyjnych.
+
+Klasa ochrony IP54 (pyłoszczelna + odporna na bryzgi wody), odporność na upadki z 1,5 m na beton i 500 upadków obrotowych z 1 m (IEC 60068-2-32). Temperatura pracy od -15°C do +50°C pozwala na pracę w chłodniach, na rampach załadunkowych i w pełnym słońcu.
+
+Bateria PowerPrecision+ Li-Ion 2280 mAh wystarcza na pełną zmianę przy umiarkowanym obciążeniu (300–500 paragonów). Bluetooth 5.0 (BR/EDR + BLE) zapewnia stabilne i energooszczędne połączenie z telefonem Android/iOS, terminalem mobilnym lub tabletem. Pasywny tag NFC umożliwia szybkie parowanie jednym dotknięciem.
+
+Pamięć 128 MB RAM i 256 MB Flash (48 MB dostępne dla użytkownika) obsługuje szablony etykiet z kodami 1D/2D (Code 128, EAN-13, QR, DataMatrix) i logotypami. Języki programowania CPCL i ZPL gwarantują kompatybilność z systemami WMS, ERP i POS. Platforma Link-OS z pakietem Print DNA umożliwia zdalne zarządzanie flotą drukarek. Kolorowy wyświetlacz LCD informuje o stanie baterii, łączności i statusie mediów.
+
+Zebra ZQ310 Plus to następca modelu ZQ310 z serii ZQ300 — nowa generacja entry-level mobilnych drukarek Zebra z USB-C zamiast Micro-USB i Bluetooth 5.0 zamiast 4.0. Dostępna w wariantach: receipt (paragony ciągłe), receipt + label (z czujnikiem etykiet) i linerless (etykiety bez podkładu). Akcesoria (baterie, ładowarki, futerały) z rodziny MPM są współdzielone z modelem ZQ320 Plus.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+    categoryId: 'drukarki-etykiet',
+    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    manufacturerId: 'zebra',
+    priceFrom: 1496.16,
+    images: ['/images/products/zq310plus_1_s.png', '/images/products/zq310plus_2_s.png', '/images/products/zq310plus_3_s.png'],
+    imageDescriptions: [
+      'Mobilna drukarka Zebra ZQ310 Plus Outdoor — widok z przodu, kompaktowa konstrukcja IP54',
+      'Zebra ZQ310 Plus — widok z boku, widoczny port USB-C i klips do paska',
+      'Zebra ZQ310 Plus — widok z otwartą komorą na rolkę papieru',
+    ],
+    tags: ['logistyka', 'retail', 'outdoor'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    keyParams: {
+      rodzajDruku: 'Termiczny bezpośredni (Direct Thermal)',
+      rozdzielczosc: '203 dpi (8 dots/mm)',
+      predkoscDruku: 'do 100 mm/s (4 ips)',
+      szerokoscDruku: '48 mm (2")',
+      szerokoscEtykiet: 'do 58 mm',
+    },
+    variants: [
+      {
+        partNumber: 'ZQ31-A0E04TE-00',
+        name: 'Bluetooth 5.0, receipt (paragony)',
+        attributes: {},
+        priceFrom: 1496.16,
+        availability: 'available',
+      },
+      {
+        partNumber: 'ZQ31-A0E03RE-00',
+        name: 'Bluetooth 5.0, receipt + label (czujnik etykiet)',
+        attributes: { 'Czujnik etykiet': 'Tak' },
+        priceFrom: 1817.30,
+        availability: 'available',
+      },
+      {
+        partNumber: 'ZQ31-A0E14TE-00',
+        name: 'Bluetooth 5.0, linerless (etykiety bez podkładu)',
+        attributes: { 'Linerless': 'Tak' },
+        priceFrom: 1693.93,
+        availability: 'unavailable',
+      },
+    ],
+    specifications: [
+      { name: 'Metoda druku', value: 'Termiczny bezpośredni (Direct Thermal)' },
+      { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm)' },
+      { name: 'Szerokość druku', value: '48 mm (2")' },
+      { name: 'Maks. szerokość nośnika', value: '58 mm' },
+      { name: 'Prędkość druku', value: 'do 100 mm/s (4 ips)' },
+      { name: 'Pamięć RAM', value: '128 MB' },
+      { name: 'Pamięć Flash', value: '256 MB (48 MB dla użytkownika)' },
+      { name: 'Bluetooth', value: '5.0 (BR/EDR + BLE)' },
+      { name: 'NFC', value: 'Pasywny tag NFC' },
+      { name: 'USB', value: 'USB 2.0 (USB-C)' },
+      { name: 'Wyświetlacz', value: 'Kolorowy LCD (status baterii, łączność, media)' },
+      { name: 'Klasa ochrony', value: 'IP54 (pyłoszczelna + bryzgi wody)' },
+      { name: 'Odporność na upadki', value: '1,5 m (5 ft) na beton' },
+      { name: 'Upadki obrotowe', value: '500 × 1 m (IEC 60068-2-32)' },
+      { name: 'Temperatura pracy', value: '-15°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-20°C do +60°C' },
+      { name: 'Wilgotność', value: '10% do 90% (bez kondensacji)' },
+      { name: 'Bateria', value: 'Li-Ion PowerPrecision+ 2280 mAh, 7,2 V' },
+      { name: 'Czas ładowania', value: '~2,5 h (w ładowarce)' },
+      { name: 'Waga z baterią', value: '370 g' },
+      { name: 'Wymiary (Gł×S×W)', value: '130 × 93,5 × 49,5 mm' },
+      { name: 'Maks. średnica rolki', value: '40 mm' },
+      { name: 'Gilza', value: '19 mm' },
+      { name: 'Języki programowania', value: 'CPCL, ZPL' },
+      { name: 'Kody 1D', value: 'Code 39, 93, 128, UCC/EAN-128, Codabar, I2of5, UPC-A/E, EAN-8/13, GS1 DataBar' },
+      { name: 'Kody 2D', value: 'PDF417, MicroPDF417, MaxiCode, QR Code, Aztec, DataMatrix' },
+      { name: 'Certyfikaty', value: 'FCC, IC, CE, CCC, MIC, NCC, ANATEL, Wi-Fi Alliance (opcja)' },
+      { name: 'Gwarancja', value: '2 lata (drukarka), 1 rok (bateria)' },
+    ],
+    applications: [
+      'Paragony i pokwitowania kurierskie',
+      'Bilety parkingowe i eventowe',
+      'Metki cenowe w handlu detalicznym',
+      'Pokwitowania serwisowe',
+      'Etykiety identyfikacyjne (z wersją receipt+label)',
+      'Etykiety linerless (z wersją linerless)',
+      'Kontrola biletów na imprezach masowych',
+      'Wydruki z terminala mobilnego (Android/iOS)',
+    ],
+    relatedAccessories: [
+      'zebra-battery-zq3',
+      'zebra-cradle-zq3',
+      'zebra-charger-1slot-zq3',
+      'zebra-charger-3slot-zq3',
+      'zebra-belt-clip-zq3',
+      'zebra-soft-case-zq310',
+    ],
+    compatibleAccessories: [],
+    comparison: {
+      title: 'Porównanie kompaktowych mobilnych drukarek Zebra',
+      models: [
+        {
+          name: 'Zebra ZQ310 Plus',
+          slug: 'zebra-zq310-plus',
+          highlight: true,
+          specs: {
+            'Szerokość druku': '48 mm (2")',
+            'Prędkość': '100 mm/s',
+            'Bateria': '2280 mAh',
+            'Drop spec': '1,5 m na beton',
+            'IP': 'IP54',
+            'Waga': '370 g',
+            'Wi-Fi': 'Brak',
+            'Bluetooth': '5.0 (BR/EDR + BLE)',
+            'Wyświetlacz': 'Kolor LCD',
+            'USB': 'USB-C',
+            'Cena od': '1 496 zł',
+          },
+        },
+        {
+          name: 'Zebra ZQ320 Plus',
+          slug: 'zebra-zq320-plus',
+          specs: {
+            'Szerokość druku': '72 mm (3")',
+            'Prędkość': '100 mm/s',
+            'Bateria': '2280 mAh',
+            'Drop spec': '1,5 m na beton',
+            'IP': 'IP54',
+            'Waga': '430 g',
+            'Wi-Fi': '802.11ac (opcja)',
+            'Bluetooth': '4.2 (Classic + BLE)',
+            'Wyświetlacz': 'Brak',
+            'USB': 'USB-C',
+            'Cena od': '1 713 zł',
+          },
+        },
+        {
+          name: 'Zebra ZQ610 Plus',
+          slug: 'zebra-zq610-plus',
+          specs: {
+            'Szerokość druku': '48 mm (2")',
+            'Prędkość': '115 mm/s',
+            'Bateria': '3250 / 6500 mAh',
+            'Drop spec': '1,52 m na beton',
+            'IP': 'IP54',
+            'Waga': '600 g',
+            'Wi-Fi': 'Wi-Fi 5 lub 6 (opcja)',
+            'Bluetooth': '4.2 / 5.3',
+            'Wyświetlacz': 'Kolor LCD',
+            'USB': 'Micro-B + Twist Lock',
+            'Cena od': '3 256 zł',
+          },
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Czym Zebra ZQ310 Plus różni się od ZQ320 Plus?',
+        answer: 'ZQ310 Plus to drukarka 2-calowa (48 mm szerokości druku), ZQ320 Plus to 3-calowa (72 mm). ZQ310 Plus waży tylko 370 g vs 430 g ZQ320 Plus. ZQ310 Plus ma wyłącznie Bluetooth 5.0, ZQ320 Plus oferuje opcjonalne Wi-Fi 802.11ac. Obie mają IP54, 1,5 m drop spec, baterię 2280 mAh, USB-C i kolorowy LCD. ZQ310 Plus do paragonów i małych etykiet, ZQ320 Plus do szerszych pokwitowań i etykiet wysyłkowych.',
+      },
+      {
+        question: 'Czy ZQ310 Plus jest odporna na upadki i wodę?',
+        answer: 'ZQ310 Plus spełnia klasę ochrony IP54 (pyłoszczelna + odporna na bryzgi wody) i wytrzymuje upadki z 1,5 m (5 stóp) na beton oraz 500 upadków obrotowych z 1 m (IEC 60068-2-32). Temperatura pracy od -15°C do +50°C. Nie posiada certyfikatu MIL-STD — do zastosowań wojskowych polecamy ZQ511.',
+      },
+      {
+        question: 'Ile paragonów wydrukuję na jednej baterii ZQ310 Plus?',
+        answer: 'Bateria 2280 mAh PowerPrecision+ wystarcza na 300–500 paragonów standardowej długości przy umiarkowanym obciążeniu. Czas ładowania w ładowarce: ok. 2,5 godziny. Bateria jest wymienna — zakup zapasowej (BTRY-MPM-22MA1-01) pozwala na natychmiastową wymianę bez przestoju.',
+      },
+      {
+        question: 'Jakie etykiety i paragony pasują do Zebra ZQ310 Plus?',
+        answer: 'ZQ310 Plus obsługuje papier termiczny i etykiety o szerokości do 58 mm (druk na 48 mm). Wariant receipt (04TE) drukuje paragony ciągłe. Wariant receipt+label (03RE) ma czujnik etykiet — obsługuje też etykiety samoprzylepne z przerwą lub czarną linią. Wariant linerless (14TE) drukuje etykiety bez podkładu. Maks. średnica rolki 40 mm, gilza 19 mm.',
+      },
+      {
+        question: 'Czy ZQ310 Plus działa z telefonem Android i iPhone?',
+        answer: 'Tak — ZQ310 Plus łączy się przez Bluetooth 5.0 (BR/EDR + BLE) z urządzeniami Android, iOS i Windows. Pasywny tag NFC umożliwia parowanie jednym dotknięciem. Obsługiwane aplikacje: Zebra Printer Setup Utility, dowolna aplikacja drukująca przez Bluetooth (ZPL/CPCL).',
+      },
+      {
+        question: 'Czym ZQ310 Plus różni się od ZQ610 Plus?',
+        answer: 'Obie to drukarki 2-calowe z kolorowym LCD, ale w różnych klasach cenowych i wydajnościowych. ZQ610 Plus (od 3 256 zł) ma opcję Wi-Fi 5/6, szybszy druk (115 mm/s), baterię 3250/6500 mAh i platformę ZQ600 Plus. ZQ310 Plus (od 1 496 zł) to budżetowa alternatywa: lżejsza (370 g vs 600 g), tańsza o 54%, ale bez Wi-Fi i z mniejszą baterią 2280 mAh.',
+      },
+      {
+        question: 'Czy ZQ310 Plus nadaje się do pracy na zewnątrz (outdoor)?',
+        answer: 'Tak — ZQ310 Plus jest certyfikowana do pracy w temperaturze od -15°C do +50°C z klasą IP54. Nadaje się na rampy załadunkowe, do pracy kurierskiej i w handlu ulicznym. Do ekstremalnych warunków (mróz poniżej -15°C, deszcz) polecamy ZQ511 z MIL-STD-810G i IP54/IP65.',
+      },
+      {
+        question: 'Jakie akcesoria są dostępne do Zebra ZQ310 Plus?',
+        answer: 'Do ZQ310 Plus dostępne są: bateria zapasowa 2280 mAh (BTRY-MPM-22MA1-01), stacja dokująca 1-gniazdowa (CRD-MPM-1SCHGEU1-01), ładowarka baterii 1-gniazdowa (SAC-MPM-1BCHGEU1-01), ładowarka 3-gniazdowa (SAC-MPM-3BCHGEU1-01), klips do paska (KIT-MPM-BLTCLP5-01), miękki futerał (SG-MPM-SC21-01). Akcesoria z rodziny MPM są współdzielone z ZQ320 Plus.',
+      },
+      {
+        question: 'Czy mogę drukować etykiety bez podkładu (linerless) na ZQ310 Plus?',
+        answer: 'Tak — wariant ZQ31-A0E14TE-00 z dedykowanym wałkiem linerless obsługuje etykiety bez podkładu. Linerless daje 40–60% więcej etykiet na rolce i eliminuje odpady z podkładu. Wymaga specjalnych etykiet linerless i okresowej wymiany wałka (KIT-MPM-PRZQ311-01).',
+      },
+      {
+        question: 'Ile kosztuje Zebra ZQ310 Plus i jakie są warianty?',
+        answer: 'Ceny ZQ310 Plus zaczynają się od 1 496 zł netto za wariant Bluetooth receipt (ZQ31-A0E04TE-00). Wariant linerless: 1 694 zł. Wariant receipt + label z czujnikiem etykiet: 1 817 zł. Wszystkie warianty mają Bluetooth 5.0, IP54, baterię 2280 mAh, USB-C i kolorowy LCD. ZQ310 Plus to najtańsza mobilna drukarka Zebra — idealna jako pierwsza drukarka mobilna dla firmy.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZQ310 Plus?',
+        answer: 'Alternatywami są: Zebra ZQ320 Plus (szersza, 3"), Zebra ZQ210 (budżetowa), Bixolon SPP-R210.',
+      },
+    ],
+    editorialReview: {
+      ratingValue: 4.0,
+      bestRating: 5,
+      reviewBody: 'Zebra ZQ310 Plus to najtańsza mobilna drukarka Zebra — idealna jako pierwsza drukarka przenośna dla kurierów, serwisantów i handlu detalicznego. Waga 370 g i kompaktowe wymiary pozwalają na całodzienne noszenie przy pasku. IP54 i 1,5 m drop spec zapewniają wystarczającą ochronę do pracy wewnątrz i na zewnątrz. USB-C i Bluetooth 5.0 to upgrade vs starszy ZQ310 z Micro-USB. Brak Wi-Fi to jedyny minus — komunikacja przez BT 5.0 i NFC. Kolorowy LCD to miły bonus w tej klasie cenowej. Stosunek ceny do funkcjonalności jest najlepszy w ofercie Zebra.',
+    },
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zq310-plus/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zq300-plus-series-spec-sheet-en-us.pdf', size: 'PDF' },
+    ],
+    createdAt: '2026-02-14',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/mobile/zq300-plus-series.html',
+  },
+  // --- Zebra ZQ320 Plus — mobilna drukarka 3" z Wi-Fi ---
+  {
+    id: 'zebra-zq320-plus',
+    slug: 'zebra-zq320-plus',
+    name: 'Zebra ZQ320 Plus',
+    shortDescription: 'Mobilna drukarka paragonów i etykiet 3" — IP54, Bluetooth 4.2, Wi-Fi opcja, USB-C, 430 g',
+    description: `Zebra ZQ320 Plus to najlepszy wybór dla firm kurierskich i gastronomii potrzebujących mobilnej drukarki 3" z opcjonalnym Wi-Fi i pełną obsługą ZPL.
+
+Zebra ZQ320 Plus to mobilna drukarka paragonów i etykiet o szerokości druku 3 cale (72 mm) z nowej generacji ZQ300 Plus — następca popularnego modelu ZQ320. Waży zaledwie 430 g z baterią i oferuje opcjonalne Wi-Fi 802.11ac, którego brakuje w mniejszym modelu ZQ310 Plus.
+
+Zaprojektowana do zastosowań w terenie, gdzie potrzebna jest drukarka szerszych paragonów (80 mm) i etykiet: dostawy kurierskie (pokwitowania z podpisem), serwis terenowy (raporty serwisowe), handel mobilny (paragony fiskalne z drukarki zewnętrznej), inwentaryzacja (etykiety na regały i produkty).
+
+Klasa ochrony IP54, odporność na upadki z 1,5 m na beton i 500 upadków obrotowych z 0,5 m (IEC 60068-2-32). Temperatura pracy od -15°C do +50°C. USB-C (nowość vs Micro-USB w starym ZQ320) do ładowania i serwisu.
+
+Bateria PowerPrecision+ Li-Ion 2280 mAh z inteligentnym zarządzaniem energią (sleep mode, dynamic power saving). NFC (Zebra Print Touch) do parowania jednym dotknięciem. Bluetooth 4.2 (Classic + BLE) standardowo, Wi-Fi 802.11ac (2,4/5 GHz) opcjonalnie — w wariantach z literą W w PN.
+
+Pamięć 128 MB RAM i 256 MB Flash obsługuje szablony etykiet z kodami 1D/2D, grafiką i logotypami. CPCL i ZPL zapewniają kompatybilność z istniejącymi systemami. Link-OS z Print DNA umożliwia zdalne zarządzanie flotą, aktualizacje firmware OTA i diagnostykę.
+
+Zebra ZQ320 Plus to upgrade modelu ZQ320: USB-C zamiast Micro-USB, ulepszona elektronika, nowy firmware z Print DNA. Akcesoria (baterie, ładowarki, futerały) z rodziny MPM są współdzielone z modelem ZQ310 Plus. Wariant receipt+label (03RE) z czujnikiem etykiet do druku etykiet samoprzylepnych obok paragonów.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+    categoryId: 'drukarki-etykiet',
+    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    manufacturerId: 'zebra',
+    priceFrom: 1712.58,
+    images: ['/images/products/zq320plus_1_s.png', '/images/products/zq320plus_2_s.png', '/images/products/zq320plus_3_s.png'],
+    imageDescriptions: [
+      'Mobilna drukarka Zebra ZQ320 Plus Outdoor — widok z przodu, konstrukcja 3" z IP54',
+      'Zebra ZQ320 Plus — widok z boku, port USB-C i otwór na rolkę 80 mm',
+      'Zebra ZQ320 Plus — widok z otwartą komorą na nośnik, widoczna głowica drukująca',
+    ],
+    tags: ['logistyka', 'retail', 'outdoor'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    keyParams: {
+      rodzajDruku: 'Termiczny bezpośredni (Direct Thermal)',
+      rozdzielczosc: '203 dpi (8 dots/mm)',
+      predkoscDruku: 'do 100 mm/s (4 ips)',
+      szerokoscDruku: '72 mm (3")',
+      szerokoscEtykiet: 'do 80 mm',
+    },
+    variants: [
+      {
+        partNumber: 'ZQ32-A0E04TE-00',
+        name: 'Bluetooth 4.2, receipt (paragony)',
+        attributes: {},
+        priceFrom: 1712.58,
+        availability: 'available',
+      },
+      {
+        partNumber: 'ZQ32-A0W04TE-00',
+        name: 'Bluetooth 4.2 + Wi-Fi 802.11ac, receipt',
+        attributes: { 'Wi-Fi': 'Wi-Fi 802.11ac' },
+        priceFrom: 1946.78,
+        availability: 'unavailable',
+      },
+      {
+        partNumber: 'ZQ32-A0W03RE-00',
+        name: 'Bluetooth 4.2 + Wi-Fi 802.11ac, receipt + label',
+        attributes: { 'Wi-Fi': 'Wi-Fi 802.11ac', 'Czujnik etykiet': 'Tak' },
+        priceFrom: 2082.95,
+        availability: 'available',
+      },
+    ],
+    specifications: [
+      { name: 'Metoda druku', value: 'Termiczny bezpośredni (Direct Thermal)' },
+      { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm)' },
+      { name: 'Szerokość druku', value: '72 mm (3")' },
+      { name: 'Maks. szerokość nośnika', value: '80 mm' },
+      { name: 'Prędkość druku', value: 'do 100 mm/s (4 ips)' },
+      { name: 'Pamięć RAM', value: '128 MB' },
+      { name: 'Pamięć Flash', value: '256 MB (48 MB dla użytkownika)' },
+      { name: 'Bluetooth', value: '4.2 (Classic + BLE), Bluetooth 5.2 ready' },
+      { name: 'Wi-Fi', value: '802.11ac (2,4/5 GHz), 802.11r fast roaming — opcja' },
+      { name: 'NFC', value: 'Pasywny tag NFC (Zebra Print Touch)' },
+      { name: 'USB', value: 'USB 2.0 (USB-C)' },
+      { name: 'Klasa ochrony', value: 'IP54 (pyłoszczelna + bryzgi wody)' },
+      { name: 'Odporność na upadki', value: '1,5 m (5 ft) na beton' },
+      { name: 'Upadki obrotowe', value: '500 × 1 m (IEC 60068-2-32)' },
+      { name: 'Wibracje', value: 'MIL-STD-810' },
+      { name: 'Temperatura pracy', value: '-15°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-20°C do +60°C' },
+      { name: 'Wilgotność', value: '10% do 90% (bez kondensacji)' },
+      { name: 'Bateria', value: 'Li-Ion PowerPrecision+ 2280 mAh, 7,2 V' },
+      { name: 'Czas ładowania', value: '~2,5 h (w ładowarce)' },
+      { name: 'Waga z baterią', value: '~430 g' },
+      { name: 'Wymiary (S×G×W)', value: '130 × 117,7 × 49,5 mm' },
+      { name: 'Maks. średnica rolki', value: '40 mm' },
+      { name: 'Gilza', value: '19 mm' },
+      { name: 'Języki programowania', value: 'CPCL, ZPL' },
+      { name: 'Kody 1D', value: 'Code 39, 93, 128, UCC/EAN-128, Codabar, I2of5, UPC-A/E, EAN-8/13, GS1 DataBar' },
+      { name: 'Kody 2D', value: 'PDF417, MicroPDF417, MaxiCode, QR Code, Aztec, DataMatrix' },
+      { name: 'Certyfikaty', value: 'FCC, IC, CE, Wi-Fi Alliance, MFi (Apple), ISED' },
+      { name: 'Gwarancja', value: '2 lata (drukarka), 1 rok (bateria)' },
+    ],
+    applications: [
+      'Pokwitowania kurierskie z podpisem',
+      'Paragony serwisowe 80 mm',
+      'Etykiety wysyłkowe (z wersją receipt+label)',
+      'Raporty serwisowe w terenie',
+      'Bilety eventowe i parkingowe',
+      'Inwentaryzacja — etykiety na regały',
+      'Handel mobilny — paragony z terminala',
+      'Wydruki z terminala Android/iOS (BT + Wi-Fi)',
+    ],
+    relatedAccessories: [
+      'zebra-battery-zq3',
+      'zebra-cradle-zq3',
+      'zebra-charger-1slot-zq3',
+      'zebra-charger-3slot-zq3',
+      'zebra-belt-clip-zq3',
+      'zebra-soft-case-zq320',
+    ],
+    compatibleAccessories: [],
+    comparison: {
+      title: 'Porównanie mobilnych drukarek Zebra 3"',
+      models: [
+        {
+          name: 'Zebra ZQ320 Plus',
+          slug: 'zebra-zq320-plus',
+          highlight: true,
+          specs: {
+            'Szerokość druku': '72 mm (3")',
+            'Prędkość': '100 mm/s',
+            'Bateria': '2280 mAh',
+            'Drop spec': '1,5 m na beton',
+            'IP': 'IP54',
+            'Waga': '430 g',
+            'Wi-Fi': '802.11ac (opcja)',
+            'Bluetooth': '4.2 (Classic + BLE)',
+            'Wyświetlacz': 'Brak',
+            'USB': 'USB-C',
+            'Cena od': '1 713 zł',
+          },
+        },
+        {
+          name: 'Zebra ZQ511',
+          slug: 'zebra-zq511',
+          specs: {
+            'Szerokość druku': '72 mm (3")',
+            'Prędkość': '127 mm/s',
+            'Bateria': '3250 / 6500 mAh',
+            'Drop spec': '2 m (3 m z exo)',
+            'IP': 'IP54 (IP65 z exo)',
+            'Waga': '630 g',
+            'Wi-Fi': '802.11ac opcja',
+            'Bluetooth': '4.1',
+            'Wyświetlacz': 'Brak',
+            'USB': 'Micro-B + Twist Lock',
+            'Cena od': '2 288 zł',
+          },
+        },
+        {
+          name: 'Zebra ZQ620 Plus',
+          slug: 'zebra-zq620-plus',
+          specs: {
+            'Szerokość druku': '72 mm (3")',
+            'Prędkość': '115 mm/s',
+            'Bateria': '3250 / 6500 mAh',
+            'Drop spec': '1,52 m na beton',
+            'IP': 'IP54',
+            'Waga': '730 g',
+            'Wi-Fi': 'Wi-Fi 5 lub 6 (opcja)',
+            'Bluetooth': '4.2 / 5.3',
+            'Wyświetlacz': 'Kolor LCD',
+            'USB': 'Micro-B + Twist Lock',
+            'Cena od': '3 512 zł',
+          },
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Czym ZQ320 Plus różni się od starego modelu ZQ320?',
+        answer: 'ZQ320 Plus to następca ZQ320 z kluczowymi ulepszeniami: USB-C zamiast Micro-USB, ulepszona elektronika i nowy firmware z pakietem Print DNA do zdalnego zarządzania flotą. Bluetooth 4.2 (z BLE) vs 4.1 w starym modelu. Bateria i ładowarki z rodziny MPM pozostają kompatybilne. Akcesoria fizyczne (futerały) mogą wymagać wersji Plus.',
+      },
+      {
+        question: 'Czy ZQ320 Plus jest odporna na deszcz i upadki?',
+        answer: 'ZQ320 Plus spełnia IP54 (pyłoszczelna + odporna na bryzgi wody) i wytrzymuje upadki z 1,5 m na beton oraz 500 upadków obrotowych. Praca w temperaturze od -15°C do +50°C. Do ekstremalnych warunków (MIL-STD-810G) polecamy ZQ511 z drop spec 2 m i opcjonalnym egzoszkieletem podnoszącym do IP65.',
+      },
+      {
+        question: 'Jakie paragony i etykiety pasują do ZQ320 Plus?',
+        answer: 'ZQ320 Plus obsługuje rolki o szerokości do 80 mm z drukiem na 72 mm. Wariant receipt (04TE) drukuje paragony ciągłe. Wariant receipt+label (03RE) obsługuje też etykiety samoprzylepne z czujnikiem przerwy i czarnej linii. Grubość nośnika 0,05–0,16 mm, maks. średnica rolki 40 mm, gilza 19 mm.',
+      },
+      {
+        question: 'Ile waży ZQ320 Plus i czy nadaje się do noszenia przy pasku?',
+        answer: 'ZQ320 Plus waży ~430 g z baterią — to jedna z najlżejszych mobilnych drukarek 3-calowych na rynku (o 200 g lżejsza od ZQ511, o 300 g od ZQ620 Plus). Dostępny klips do paska (KIT-MPM-BLTCLP5-01) i miękki futerał z paskiem na ramię (SG-MPM-SC31-01).',
+      },
+      {
+        question: 'Czy ZQ320 Plus działa z telefonem Android i iPhone?',
+        answer: 'Tak — ZQ320 Plus łączy się przez Bluetooth 4.2 (Classic + BLE) i opcjonalnie Wi-Fi 802.11ac z urządzeniami Android, iOS (MFi certified) i Windows. NFC (Zebra Print Touch) do parowania jednym dotknięciem. Warianty Wi-Fi (A0W) pozwalają na druk bezpośrednio z sieci firmowej.',
+      },
+      {
+        question: 'Czym ZQ320 Plus różni się od ZQ511?',
+        answer: 'Obie drukują na papierze 3" (72 mm), ale w różnych klasach. ZQ511 (od 2 288 zł) ma MIL-STD-810G, drop 2 m (3 m z exo), baterię 3250/6500 mAh, szybszy druk 127 mm/s i opcję RFID. ZQ320 Plus (od 1 713 zł) jest tańsza o 25%, lżejsza (430 g vs 630 g), ale bez MIL-STD, z mniejszą baterią 2280 mAh i wolniejszym drukiem 100 mm/s.',
+      },
+      {
+        question: 'Czym ZQ320 Plus różni się od ZQ620 Plus?',
+        answer: 'ZQ620 Plus to premium: kolorowy LCD, Wi-Fi 5/6, BT 5.3, bateria 3250/6500 mAh, drop 1,52 m, 730 g, od 3 512 zł. ZQ320 Plus to budget: brak LCD, Wi-Fi ac opcja, BT 4.2, bateria 2280 mAh, drop 1,5 m, 430 g, od 1 713 zł. ZQ320 Plus jest 2x tańsza i o 300 g lżejsza. ZQ620 Plus ma wymienną baterię hot-swap i dłuższy czas pracy.',
+      },
+      {
+        question: 'Ile paragonów wydrukuję na jednej baterii ZQ320 Plus?',
+        answer: 'Bateria 2280 mAh PowerPrecision+ wystarcza na pełną zmianę przy umiarkowanym obciążeniu — ok. 300–500 paragonów 80 mm. W trybie sleep mode drukarka zużywa minimalną ilość energii między wydrukami. Zapasowa bateria (BTRY-MPM-22MA1-01) pozwala na natychmiastową wymianę.',
+      },
+      {
+        question: 'Jakie akcesoria są dostępne do ZQ320 Plus?',
+        answer: 'Do ZQ320 Plus dostępne są: bateria 2280 mAh (BTRY-MPM-22MA1-01), stacja dokująca 1-gniazdowa (CRD-MPM-1SCHGEU1-01), ładowarka baterii 1-gniazdowa (SAC-MPM-1BCHGEU1-01), ładowarka 3-gniazdowa (SAC-MPM-3BCHGEU1-01), klips do paska (KIT-MPM-BLTCLP5-01), miękki futerał 3" (SG-MPM-SC31-01). Akcesoria MPM współdzielone z ZQ310 Plus.',
+      },
+      {
+        question: 'Ile kosztuje Zebra ZQ320 Plus i jakie są warianty?',
+        answer: 'Ceny ZQ320 Plus zaczynają się od 1 713 zł netto za wariant Bluetooth receipt (ZQ32-A0E04TE-00). Z Wi-Fi 802.11ac receipt: 1 947 zł. Z Wi-Fi + czujnik etykiet (receipt+label): 2 083 zł. Wszystkie warianty mają IP54, baterię 2280 mAh, NFC i USB-C. ZQ320 Plus to najtańsza mobilna drukarka Zebra 3" — o 25% tańsza od ZQ511.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZQ320 Plus?',
+        answer: 'Alternatywami są: Zebra ZQ310 Plus (węższa, 2"), Zebra ZQ220 Plus (budżetowa 3"), Honeywell RP2f.',
+      },
+    ],
+    editorialReview: {
+      ratingValue: 4.0,
+      bestRating: 5,
+      reviewBody: 'Zebra ZQ320 Plus to najlepsza mobilna drukarka 3-calowa w stosunku ceny do możliwości. USB-C i opcjonalne Wi-Fi 802.11ac to kluczowe ulepszenia vs stary ZQ320. Waga 430 g czyni ją jedną z najlżejszych drukarek 3" na rynku. IP54 i 1,5 m drop spec wystarczają do normalnej pracy w terenie. Brak kolorowego LCD i mniejsza bateria 2280 mAh to kompromisy vs droższe modele ZQ600 Plus. Dla firm szukających pierwszej mobilnej drukarki 3" w budżecie poniżej 2000 zł netto — to najlepszy wybór.',
+    },
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zq320-plus/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zq310-zq320-plus-spec-sheet-en-us.pdf', size: 'PDF' },
+    ],
+    createdAt: '2026-02-14',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/mobile/zq300-plus-series.html',
+  },
+  // --- Zebra ZQ220 Plus — budżetowa mobilna drukarka 3" ---
+  {
+    id: 'zebra-zq220-plus',
+    slug: 'zebra-zq220-plus',
+    name: 'Zebra ZQ220 Plus',
+    shortDescription: 'Budżetowa mobilna drukarka paragonów i etykiet 3" — IP54, Bluetooth 5.0, NFC, OLED, 390 g',
+    description: `Zebra ZQ220 Plus to najlepszy wybór dla małych firm i punktów sprzedaży szukających najtańszej mobilnej drukarki Zebra 3" z wbudowaną odpornością IP54.
+
+Zebra ZQ220 Plus to budżetowa mobilna drukarka paragonów i etykiet o szerokości druku 3 cale (72 mm) — najtańsza drukarka mobilna Zebra z trzyCalowym drukiem. Waży zaledwie 390 g z baterią i oferuje wbudowane IP54 bez konieczności dokupowania futerału.
+
+Następca popularnego modelu ZQ220 z istotnymi ulepszeniami: Bluetooth 5.0 zamiast 4.1, wyświetlacz OLED i NFC do parowania jednym dotknięciem. Obsługuje media o szerokości 80, 76,2, 58 i 50,8 mm dzięki wymiennym rozpórkom — jeden model do paragonów i etykiet w różnych formatach.
+
+Klasa ochrony IP54 (pyłoszczelna + odporna na bryzgi wody) bez dodatkowego futerału, odporność na upadki z 1,5 m na beton. Temperatura pracy od -5°C do +50°C pozwala na pracę w chłodniach i w pełnym słońcu.
+
+Bateria Li-Ion 2500 mAh (7,4 V) wystarcza na min. 500 etykiet na jedno ładowanie. Ładowanie przez USB-C — z dowolnej ładowarki USB, w tym ładowarki samochodowej. Bluetooth 5.0 Low Energy zapewnia szybkie i energooszczędne połączenie z telefonem Android/iOS. Pasywny tag NFC (Print Touch) umożliwia parowanie jednym dotknięciem.
+
+Pamięć 8 MB SDRAM i 16 MB Flash obsługuje szablony z kodami 1D/2D. Języki programowania CPCL i ESC/POS (podzbiór) zapewniają kompatybilność z istniejącymi systemami POS. Czarno-biały wyświetlacz OLED informuje o stanie baterii, łączności Bluetooth i typie nośnika.
+
+Zebra ZQ220 Plus to idealna drukarka dla handlu detalicznego, gastronomii, kurierów i małych firm — tam, gdzie potrzebna jest prosta, lekka i tania mobilna drukarka paragonów 3". W zestawie: drukarka, bateria, kabel USB i klips do paska. Zasilacz sieciowy wymagany osobno.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+    categoryId: 'drukarki-etykiet',
+    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    manufacturerId: 'zebra',
+    priceFrom: 576.47,
+    images: ['/images/products/placeholder.svg'],
+    tags: ['retail', 'logistyka'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    keyParams: {
+      rodzajDruku: 'Termiczny bezpośredni (Direct Thermal)',
+      rozdzielczosc: '203 dpi (8 dots/mm)',
+      predkoscDruku: 'do 50 mm/s (2 ips)',
+      szerokoscDruku: '72 mm (3")',
+      szerokoscEtykiet: 'do 80 mm',
+    },
+    specifications: [
+      { name: 'Part Number', value: 'ZQ22-B16B1KE-00' },
+      { name: 'Metoda druku', value: 'Termiczny bezpośredni (Direct Thermal)' },
+      { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm)' },
+      { name: 'Szerokość druku', value: '72 mm (3")' },
+      { name: 'Maks. szerokość nośnika', value: '80 mm (76,2 / 58 / 50,8 mm z rozpórkami)' },
+      { name: 'Prędkość druku', value: 'do 50 mm/s (2 ips)' },
+      { name: 'Pamięć RAM', value: '8 MB SDRAM' },
+      { name: 'Pamięć Flash', value: '16 MB' },
+      { name: 'Bluetooth', value: '5.0 Low Energy (dual mode)' },
+      { name: 'NFC', value: 'Pasywny tag NFC (Print Touch)' },
+      { name: 'USB', value: 'USB 2.0 (USB-C)' },
+      { name: 'Wyświetlacz', value: 'OLED czarno-biały (status baterii, BT, media)' },
+      { name: 'Klasa ochrony', value: 'IP54 (bez futerału)' },
+      { name: 'Odporność na upadki', value: '1,5 m (5 ft) na beton' },
+      { name: 'Temperatura pracy', value: '-5°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-20°C do +60°C' },
+      { name: 'Temperatura ładowania', value: '0°C do +40°C' },
+      { name: 'Wilgotność', value: '10% do 90% (bez kondensacji)' },
+      { name: 'Bateria', value: 'Li-Ion 2500 mAh, 7,4 V (wymienna)' },
+      { name: 'Czas ładowania', value: '< 4 h (USB-C)' },
+      { name: 'Waga z baterią', value: '390 g' },
+      { name: 'Wymiary (Dł×S×W)', value: '129,8 × 114,4 × 58,9 mm' },
+      { name: 'Maks. średnica rolki', value: '50 mm' },
+      { name: 'Grubość nośnika', value: '0,058–0,158 mm' },
+      { name: 'Języki programowania', value: 'CPCL, ESC/POS (podzbiór)' },
+      { name: 'Kody 1D', value: 'Code 39, 93, 128, UCC/EAN-128, Codabar, I2of5, UPC-A/E, EAN-8/13' },
+      { name: 'Kody 2D', value: 'PDF417, MicroPDF417, MaxiCode, QR Code, DataBar, Aztec, DataMatrix' },
+      { name: 'Czujniki', value: 'Black Mark, Gap, Media Out' },
+      { name: 'Certyfikaty', value: 'CE, FCC, IC, VCCI, NCC' },
+      { name: 'Gwarancja', value: '1 rok' },
+    ],
+    applications: [
+      'Paragony i pokwitowania w handlu detalicznym',
+      'Bilety parkingowe i eventowe',
+      'Pokwitowania kurierskie i serwisowe',
+      'Druk etykiet cenowych i produktowych',
+      'Paragony gastronomiczne (zamówienia mobilne)',
+      'Potwierdzenia transakcji (POS mobilny)',
+      'Etykiety na regały (z rozpórkami do 50,8 mm)',
+      'Wydruki z terminala mobilnego Android/iOS',
+    ],
+    relatedAccessories: [
+      'zebra-battery-zq220plus',
+      'zebra-belt-clip-zq2',
+      'zebra-soft-case-zq220plus',
+      'zebra-charger-zq220plus',
+    ],
+    compatibleAccessories: [],
+    comparison: {
+      title: 'Porównanie budżetowych mobilnych drukarek Zebra',
+      models: [
+        {
+          name: 'Zebra ZQ220 Plus',
+          slug: 'zebra-zq220-plus',
+          highlight: true,
+          specs: {
+            'Szerokość druku': '72 mm (3")',
+            'Prędkość': '50 mm/s',
+            'Bateria': '2500 mAh',
+            'Drop spec': '1,5 m na beton',
+            'IP': 'IP54 (bez futerału)',
+            'Waga': '390 g',
+            'Bluetooth': '5.0 LE',
+            'Wyświetlacz': 'OLED',
+            'USB': 'USB-C',
+            'Języki': 'CPCL, ESC/POS',
+            'Cena od': '576 zł',
+          },
+        },
+        {
+          name: 'Zebra ZQ210',
+          slug: 'zebra-zq210',
+          specs: {
+            'Szerokość druku': '48 mm (2")',
+            'Prędkość': '60 mm/s',
+            'Bateria': '1500 mAh',
+            'Drop spec': '1,5 m na beton',
+            'IP': 'IP43 (IP54 z futerałem)',
+            'Waga': '265 g',
+            'Bluetooth': '4.1 (Classic + BLE)',
+            'Wyświetlacz': 'OLED',
+            'USB': 'USB-C',
+            'Języki': 'CPCL, ESC/POS',
+            'Cena od': '999 zł',
+          },
+        },
+        {
+          name: 'Zebra ZQ320 Plus',
+          slug: 'zebra-zq320-plus',
+          specs: {
+            'Szerokość druku': '72 mm (3")',
+            'Prędkość': '100 mm/s',
+            'Bateria': '2280 mAh',
+            'Drop spec': '1,5 m na beton',
+            'IP': 'IP54',
+            'Waga': '430 g',
+            'Bluetooth': '4.2 (+ Wi-Fi opcja)',
+            'Wyświetlacz': 'Brak',
+            'USB': 'USB-C',
+            'Języki': 'CPCL, ZPL',
+            'Cena od': '1 713 zł',
+          },
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Czym Zebra ZQ220 Plus różni się od ZQ320 Plus?',
+        answer: 'ZQ220 Plus to budżetowa drukarka 3" (od 576 zł), ZQ320 Plus to standard (od 1 713 zł). ZQ320 Plus drukuje 2× szybciej (100 vs 50 mm/s), obsługuje ZPL + CPCL (vs tylko CPCL + ESC/POS), ma opcjonalne Wi-Fi i platformę Link-OS z Print DNA. ZQ220 Plus ma nowszy Bluetooth 5.0 (vs 4.2) i wyświetlacz OLED, ale znacznie mniej pamięci (8/16 MB vs 128/256 MB). Jeśli potrzebujesz ZPL, Wi-Fi lub szybszego druku — wybierz ZQ320 Plus.',
+      },
+      {
+        question: 'Czy ZQ220 Plus obsługuje ZPL?',
+        answer: 'Nie — ZQ220 Plus obsługuje CPCL i podzbiór ESC/POS. Nie obsługuje języka ZPL (Zebra Programming Language). Jeśli Twój system wymaga ZPL, wybierz ZQ320 Plus (od 1 713 zł) lub ZQ310 Plus (od 1 496 zł), które obsługują zarówno CPCL, jak i ZPL.',
+      },
+      {
+        question: 'Jakie nośniki pasują do Zebra ZQ220 Plus?',
+        answer: 'ZQ220 Plus obsługuje papier termiczny i etykiety o szerokości 80 mm (bez rozpórek), 76,2 mm, 58 mm i 50,8 mm (z rozpórkami). Typy nośników: paragony ciągłe, etykiety z czarną linią (black mark) i etykiety z przerwą (gap). Maks. średnica rolki 50 mm, grubość 0,058–0,158 mm.',
+      },
+      {
+        question: 'Czy ZQ220 Plus jest odporna na upadki i wodę?',
+        answer: 'Tak — ZQ220 Plus ma klasę IP54 (pyłoszczelna + odporna na bryzgi) BEZ dodatkowego futerału (w odróżnieniu od ZQ210, która wymaga futerału do IP54). Wytrzymuje upadki z 1,5 m na beton. Temperatura pracy od -5°C do +50°C.',
+      },
+      {
+        question: 'Ile etykiet wydrukuję na jednej baterii ZQ220 Plus?',
+        answer: 'Bateria 2500 mAh (7,4 V) wystarcza na minimum 500 etykiet o długości 8,5 cala przy 13% pokryciu. Ładowanie przez USB-C trwa poniżej 4 godzin. Bateria jest wymienna — zapasowa (BTRY-MPV-25MAC1-01) pozwala na natychmiastową wymianę.',
+      },
+      {
+        question: 'Czy ZQ220 Plus działa z telefonem Android i iPhone?',
+        answer: 'Tak — ZQ220 Plus łączy się przez Bluetooth 5.0 Low Energy z urządzeniami Android i iOS. Pasywny tag NFC umożliwia parowanie jednym dotknięciem z telefonem NFC-enabled. Obsługuje druk z dowolnej aplikacji przez CPCL lub ESC/POS.',
+      },
+      {
+        question: 'Co jest w zestawie z ZQ220 Plus?',
+        answer: 'W zestawie: drukarka ZQ220 Plus, bateria Li-Ion 2500 mAh, kabel USB (USB-A/USB-C) i klips do paska. Zasilacz sieciowy USB (PWR-WUA5V12W0EU) oraz futerał (SG-MPV-SC31-01) trzeba kupić osobno.',
+      },
+      {
+        question: 'Czym ZQ220 Plus różni się od starszego ZQ220?',
+        answer: 'ZQ220 Plus to następca ZQ220 z ulepszeniami: Bluetooth 5.0 (zamiast 4.1), wyświetlacz OLED, NFC do parowania, IP54 bez futerału (ZQ220 wymagał futerału do IP54). Obie mają 203 dpi, USB-C, 390 g i CPCL + ESC/POS.',
+      },
+      {
+        question: 'Czy mogę ładować ZQ220 Plus w samochodzie?',
+        answer: 'Tak — ZQ220 Plus ładuje się przez USB-C. Można podłączyć do portu USB w samochodzie lub użyć opcjonalnego adaptera zapalniczki samochodowej (CHG-AUTO-USB1-01, 5V/2,5A, 2× USB-A).',
+      },
+      {
+        question: 'Ile kosztuje Zebra ZQ220 Plus?',
+        answer: 'Zebra ZQ220 Plus kosztuje od 576 zł netto (ZQ22-B16B1KE-00) — to najtańsza mobilna drukarka 3" Zebra, 3× tańsza od ZQ320 Plus (1 713 zł). Idealna jako pierwsza mobilna drukarka dla firmy lub do prostych zastosowań w handlu i gastronomii.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZQ220 Plus?',
+        answer: 'Alternatywami są: Zebra ZQ320 Plus (wyższa klasa z ZPL i Wi-Fi), Zebra ZQ210 (budżetowa 2"), Bixolon SPP-R310.',
+      },
+    ],
+    editorialReview: {
+      ratingValue: 3.5,
+      bestRating: 5,
+      reviewBody: 'Zebra ZQ220 Plus to najtańsza mobilna drukarka 3-calowa w ofercie Zebra — kosztuje zaledwie 576 zł netto, czyli 3× mniej od ZQ320 Plus. Bluetooth 5.0, OLED i IP54 bez futerału to solidne ulepszenia vs stary ZQ220. Ograniczenia: brak ZPL (tylko CPCL + ESC/POS), mała pamięć 8/16 MB i wolniejszy druk 50 mm/s. Idealna dla firm szukających budżetowej mobilnej drukarki paragonów — ale jeśli potrzebujesz ZPL, Wi-Fi lub szybszego druku, dopłać do ZQ320 Plus.',
+    },
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zq220-plus/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zq220-plus-spec-sheet-en-us.pdf', size: 'PDF' },
+    ],
+    createdAt: '2026-02-14',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/mobile/zq220/zq220-plus.html',
+  },
+  // --- Zebra ZQ210 — najlżejsza mobilna drukarka Zebra 2" ---
+  {
+    id: 'zebra-zq210',
+    slug: 'zebra-zq210',
+    name: 'Zebra ZQ210',
+    shortDescription: 'Najlżejsza mobilna drukarka paragonów i etykiet 2" — tylko 265 g, Bluetooth 4.1, NFC, OLED, IP43',
+    description: `Zebra ZQ210 to najlepszy wybór dla firm szukających najlżejszej i najtańszej mobilnej drukarki etykiet 2" do prostych zastosowań w handlu i gastronomii.
+
+Zebra ZQ210 to najlżejsza i najtańsza mobilna drukarka etykiet i paragonów Zebra — waży zaledwie 265 g z baterią (mniej niż smartphone). Szerokość druku 2 cale (48 mm) w rozdzielczości 203 dpi z prędkością do 60 mm/s. Obsługuje nośniki o szerokości 58, 50,8, 40 i 30 mm dzięki wymiennym rozpórkom.
+
+Zaprojektowana jako najtańsza mobilna drukarka Zebra dla firm szukających prostego rozwiązania do druku paragonów, pokwitowań i etykiet w terenie. Wariant linerless (ZQ21-A0E12KE-00) drukuje etykiety samoprzylepne bez podkładu — 40–60% więcej etykiet na rolce i zero odpadów.
+
+Klasa ochrony IP43 standardowo, IP54 z opcjonalnym futerałem (SG-MPV-SC21-01). Odporność na upadki z 1,5 m na beton. Bateria Li-Ion 1500 mAh (7,4 V) wystarczy na pełną zmianę przy lekkiej eksploatacji. Ładowanie przez USB-C z dowolnej ładowarki USB.
+
+Bluetooth 4.1 (Classic + BLE) zapewnia stabilne połączenie z telefonem Android/iOS i terminalem mobilnym. Certyfikat MFi dla urządzeń Apple. Pasywny tag NFC umożliwia parowanie jednym dotknięciem. Wyświetlacz OLED pokazuje status Bluetooth, mediów i ustawienia ciemności druku. Języki programowania CPCL i ESC/POS (podzbiór) gwarantują kompatybilność z popularnymi systemami POS i aplikacjami mobilnymi.
+
+Zebra ZQ210 to drukarka dla handlu detalicznego, gastronomii, targów i eventów — tam, gdzie liczy się niska cena, minimalna waga i prostota obsługi. Dostępna w dwóch wariantach: linered (standardowe paragony i etykiety) i linerless (etykiety bez podkładu). W zestawie: drukarka, bateria, kabel USB i klips do paska.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+    categoryId: 'drukarki-etykiet',
+    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    manufacturerId: 'zebra',
+    priceFrom: 999.12,
+    images: ['/images/products/placeholder.svg'],
+    tags: ['retail'],
     availability: 'available',
     isNew: false,
     isBestseller: false,
+    keyParams: {
+      rodzajDruku: 'Termiczny bezpośredni (Direct Thermal)',
+      rozdzielczosc: '203 dpi (8 dots/mm)',
+      predkoscDruku: 'do 60 mm/s (2,5 ips)',
+      szerokoscDruku: '48 mm (2")',
+      szerokoscEtykiet: 'do 58 mm',
+    },
+    variants: [
+      {
+        partNumber: 'ZQ21-A0E01KE-00',
+        name: 'Bluetooth 4.1, receipt (paragony)',
+        attributes: {},
+        priceFrom: 999.12,
+        availability: 'available',
+      },
+      {
+        partNumber: 'ZQ21-A0E12KE-00',
+        name: 'Bluetooth 4.1, linerless (etykiety bez podkładu)',
+        attributes: { 'Linerless': 'Tak' },
+        priceFrom: 1120.69,
+        availability: 'unavailable',
+      },
+    ],
     specifications: [
-      { name: 'Metoda druku', value: 'Termiczna' },
-      { name: 'Rozdzielczość', value: '203 dpi' },
-      { name: 'Szerokość druku', value: '104 mm (4")' },
-      { name: 'Prędkość druku', value: 'do 115 mm/s' },
-      { name: 'Interfejsy', value: 'Bluetooth 4.1, Wi-Fi 802.11ac, USB' },
-      { name: 'Bateria', value: 'PowerPrecision+ 6800 mAh' },
-      { name: 'Odporność', value: 'IP54, upadki z 2.4 m, MIL-STD-810G' },
-      { name: 'Temperatura pracy', value: '-20°C do +50°C' },
+      { name: 'Metoda druku', value: 'Termiczny bezpośredni (Direct Thermal)' },
+      { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm)' },
+      { name: 'Szerokość druku', value: '48 mm (2")' },
+      { name: 'Maks. szerokość nośnika', value: '58 mm (50,8 / 40 / 30 mm z rozpórkami)' },
+      { name: 'Prędkość druku', value: 'do 60 mm/s (linered), 50 mm/s (linerless)' },
+      { name: 'Pamięć RAM', value: '16 MB SDRAM' },
+      { name: 'Pamięć Flash', value: '16 MB' },
+      { name: 'Bluetooth', value: '4.1 (Classic + BLE), MFi' },
+      { name: 'NFC', value: 'Pasywny tag NFC' },
+      { name: 'USB', value: 'USB 2.0 (USB-C)' },
+      { name: 'Wyświetlacz', value: 'OLED (monochromatyczny)' },
+      { name: 'Klasa ochrony', value: 'IP43 (IP54 z futerałem SG-MPV-SC21-01)' },
+      { name: 'Odporność na upadki', value: '1,5 m (5 ft) na beton' },
+      { name: 'Temperatura pracy', value: '-10°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-20°C do +60°C' },
+      { name: 'Wilgotność', value: '10% do 90% (bez kondensacji)' },
+      { name: 'Bateria', value: 'Li-Ion 1500 mAh, 7,4 V (wymienna, P1105740-01)' },
+      { name: 'Waga z baterią', value: '265 g' },
+      { name: 'Wymiary (Dł×S×W)', value: '118 × 85,5 × 44,5 mm' },
+      { name: 'Maks. średnica rolki', value: '40 mm' },
+      { name: 'Języki programowania', value: 'CPCL, ESC/POS (podzbiór)' },
+      { name: 'Kody 1D', value: 'Code 39, 93, 128, UCC/EAN-128, Codabar, I2of5, UPC-A/E, EAN-8/13' },
+      { name: 'Kody 2D', value: 'PDF417, MicroPDF417, MaxiCode, QR Code, DataBar, Aztec, DataMatrix' },
+      { name: 'Czujniki', value: 'Black Mark, Gap, Media Out' },
+      { name: 'Certyfikaty', value: 'CE, FCC, IC, VCCI' },
+      { name: 'Gwarancja', value: '1 rok' },
     ],
-    applications: ['Transport ciężki', 'Logistyka', 'Praca w ekstremalnych warunkach', 'Magazyny outdoor'],
-    compatibleAccessories: ['zebra-battery-zq6', 'zebra-charger-zq6'],
+    applications: [
+      'Paragony i pokwitowania w handlu detalicznym',
+      'Paragony gastronomiczne (zamówienia mobilne)',
+      'Pokwitowania kurierskie i dostawy',
+      'Bilety parkingowe i eventowe',
+      'Etykiety linerless (wariant linerless)',
+      'Metki cenowe na targach i w handlu',
+      'Pokwitowania serwisowe w terenie',
+      'Wydruki z terminala mobilnego Android/iOS',
+    ],
+    relatedAccessories: [
+      'zebra-battery-zq210',
+      'zebra-belt-clip-zq2',
+      'zebra-soft-case-zq210',
+    ],
+    compatibleAccessories: [],
+    comparison: {
+      title: 'Porównanie kompaktowych mobilnych drukarek Zebra',
+      models: [
+        {
+          name: 'Zebra ZQ210',
+          slug: 'zebra-zq210',
+          highlight: true,
+          specs: {
+            'Szerokość druku': '48 mm (2")',
+            'Prędkość': '60 mm/s',
+            'Bateria': '1500 mAh',
+            'Drop spec': '1,5 m na beton',
+            'IP': 'IP43 (IP54 z futerałem)',
+            'Waga': '265 g',
+            'Bluetooth': '4.1 (Classic + BLE)',
+            'Wyświetlacz': 'OLED',
+            'USB': 'USB-C',
+            'Języki': 'CPCL, ESC/POS',
+            'Cena od': '999 zł',
+          },
+        },
+        {
+          name: 'Zebra ZQ220 Plus',
+          slug: 'zebra-zq220-plus',
+          specs: {
+            'Szerokość druku': '72 mm (3")',
+            'Prędkość': '50 mm/s',
+            'Bateria': '2500 mAh',
+            'Drop spec': '1,5 m na beton',
+            'IP': 'IP54 (bez futerału)',
+            'Waga': '390 g',
+            'Bluetooth': '5.0 LE',
+            'Wyświetlacz': 'OLED',
+            'USB': 'USB-C',
+            'Języki': 'CPCL, ESC/POS',
+            'Cena od': '576 zł',
+          },
+        },
+        {
+          name: 'Zebra ZQ310 Plus',
+          slug: 'zebra-zq310-plus',
+          specs: {
+            'Szerokość druku': '48 mm (2")',
+            'Prędkość': '100 mm/s',
+            'Bateria': '2280 mAh',
+            'Drop spec': '1,5 m na beton',
+            'IP': 'IP54',
+            'Waga': '370 g',
+            'Bluetooth': '5.0 (BR/EDR + BLE)',
+            'Wyświetlacz': 'Kolor LCD',
+            'USB': 'USB-C',
+            'Języki': 'CPCL, ZPL',
+            'Cena od': '1 496 zł',
+          },
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Czym Zebra ZQ210 różni się od ZQ220 Plus?',
+        answer: 'ZQ210 to drukarka 2-calowa (48 mm, 265 g, od 999 zł), ZQ220 Plus to 3-calowa (72 mm, 390 g, od 576 zł). ZQ220 Plus jest paradoksalnie tańsza, bo to prostsza konstrukcja z mniejszą pamięcią (8 vs 16 MB RAM). ZQ210 drukuje szybciej (60 vs 50 mm/s) na węższych nośnikach. ZQ220 Plus ma nowszy BT 5.0 (vs 4.1). Obie mają OLED i ESC/POS. ZQ210 ma IP43 (IP54 z futerałem), ZQ220 Plus IP54 bez futerału.',
+      },
+      {
+        question: 'Czy ZQ210 jest odporna na upadki?',
+        answer: 'ZQ210 wytrzymuje upadki z 1,5 m na beton. Klasa ochrony IP43 (ochrona przed ciałami stałymi > 1 mm i kapiącą wodą). Z futerałem SG-MPV-SC21-01 podnosi się do IP54. Do zastosowań outdoor z deszczem polecamy model ZQ220 Plus (IP54 bez futerału) lub ZQ310 Plus.',
+      },
+      {
+        question: 'Jakie nośniki pasują do Zebra ZQ210?',
+        answer: 'ZQ210 obsługuje papier termiczny o szerokości 58 mm (bez rozpórek), 50,8 mm, 40 mm i 30 mm (z rozpórkami). Wariant linered (ZQ21-A0E01KE-00) drukuje paragony i etykiety standardowe. Wariant linerless (ZQ21-A0E12KE-00) obsługuje etykiety bez podkładu (40–60% więcej etykiet na rolce).',
+      },
+      {
+        question: 'Czy ZQ210 działa z telefonem Android i iPhone?',
+        answer: 'Tak — ZQ210 łączy się przez Bluetooth 4.1 (Classic + BLE) z urządzeniami Android, iOS i Windows. Certyfikat MFi dla iPhone i iPad. NFC umożliwia szybkie parowanie jednym dotknięciem. Obsługuje druk z dowolnej aplikacji przez CPCL i ESC/POS.',
+      },
+      {
+        question: 'Ile paragonów wydrukuję na jednej baterii ZQ210?',
+        answer: 'Bateria 1500 mAh (7,4 V) wystarcza na ok. 200–300 paragonów standardowej długości. Bateria jest wymienna — zapasowa (P1105740-01) pozwala na natychmiastową wymianę. Ładowanie przez USB-C z dowolnej ładowarki USB.',
+      },
+      {
+        question: 'Czym ZQ210 różni się od ZQ310 Plus?',
+        answer: 'ZQ310 Plus (od 1 496 zł) to nowsza generacja z istotnymi ulepszeniami vs ZQ210 (od 999 zł): BT 5.0 (vs 4.1), ZPL + CPCL (vs CPCL + ESC/POS), kolorowy LCD (vs OLED mono), IP54 (vs IP43), 128/256 MB pamięci (vs 16/16 MB), platforma Link-OS z Print DNA. ZQ210 jest lżejsza (265 vs 370 g) i tańsza. Obie to drukarki 2".',
+      },
+      {
+        question: 'Co jest w zestawie z ZQ210?',
+        answer: 'W zestawie: drukarka ZQ210, bateria Li-Ion 1500 mAh, kabel USB (USB-A/USB-C) i klips do paska. Zasilacz sieciowy USB (PWR-WUA5V12W0EU) i futerał (SG-MPV-SC21-01) trzeba dokupić osobno.',
+      },
+      {
+        question: 'Czy ZQ210 obsługuje etykiety linerless?',
+        answer: 'Tak — wariant ZQ21-A0E12KE-00 z dedykowanym wałkiem linerless obsługuje etykiety bez podkładu (np. Zebra ZeroLiner 2000D). Linerless daje 40–60% więcej etykiet na rolce i eliminuje odpady z podkładu. Prędkość druku linerless: 50 mm/s (vs 60 mm/s na zwykłych nośnikach).',
+      },
+      {
+        question: 'Jakie akcesoria są dostępne do Zebra ZQ210?',
+        answer: 'Do ZQ210 dostępne są: bateria zapasowa 1500 mAh (P1105740-01), klips do paska (KIT-MPV-BLTCP21-05, 5 szt.), futerał z paskiem na ramię (SG-MPV-SC21-01, podnosi IP do IP54), zasilacz USB EU (PWR-WUA5V12W0EU), adapter samochodowy (CHG-AUTO-USB1-01), uchwyt na deskę rozdzielczą (MNT-MPV-VHD21-01), rozpórki mediów (KIT-MPV-MD3SPR1-5).',
+      },
+      {
+        question: 'Ile kosztuje Zebra ZQ210 i jakie są warianty?',
+        answer: 'Zebra ZQ210 jest dostępna w dwóch wariantach: linered (ZQ21-A0E01KE-00) za 999 zł netto i linerless (ZQ21-A0E12KE-00) za 1 121 zł netto. Wariant linerless kosztuje ok. 12% więcej, ale daje 40–60% więcej etykiet na rolce dzięki eliminacji podkładu.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Zebra ZQ210?',
+        answer: 'Alternatywami są: Zebra ZQ310 Plus (wyższa klasa z ZPL), Zebra ZQ220 Plus (3", tańsza), Bixolon SPP-R210.',
+      },
+    ],
+    editorialReview: {
+      ratingValue: 3.0,
+      bestRating: 5,
+      reviewBody: 'Zebra ZQ210 to absolutne minimum w ofercie mobilnych drukarek Zebra — 265 g, 999 zł, CPCL + ESC/POS. Niezastąpiona tam, gdzie liczy się każdy gram i każda złotówka: targi, eventy, drobny handel. IP43 bez futerału to jedyny poważny minus — na deszcz trzeba dokupić futerał. Mały monochromatyczny OLED wystarczy do kontroli statusu, ale brak ZPL ogranicza integrację z zaawansowanymi systemami WMS. Dla większości firm lepszym wyborem będzie ZQ310 Plus za 500 zł więcej — ale jeśli budżet jest kluczowy, ZQ210 robi swoje niezawodnie.',
+    },
     downloads: [
-      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://serwis-zebry.pl/instrukcje/zebra-zq630-plus', size: 'Online' },
-      { name: 'Sterowniki Windows', type: 'software', url: 'https://serwis-zebry.pl/sterowniki', size: 'Online' },
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zq210/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zq210-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
-    createdAt: '2023-06-01',
+    createdAt: '2026-02-14',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/mobile/zq220/zq210.html',
   },
 ]
 
@@ -6118,37 +7591,359 @@ Następca popularnej serii MC3200. System Android, wsparcie Mobility DNA.`,
     createdAt: '2022-10-20',
   },
   {
-    id: 'zebra-tc22-tc27',
-    slug: 'zebra-tc22-tc27',
-    name: 'Zebra TC22/TC27',
-    shortDescription: 'Nowa generacja terminali TC - następca TC21/TC26',
-    description: `Zebra TC22 i TC27 to najnowsza generacja ekonomicznych terminali mobilnych, będąca następcą popularnej serii TC21/TC26.
+    id: 'zebra-tc22',
+    slug: 'zebra-tc22',
+    name: 'Zebra TC22',
+    shortDescription: 'Komputer mobilny Wi-Fi 6E z ekranem 6" i skanerem 1D/2D — następca TC21',
+    description: `Dla kogo? Zebra TC22 to ekonomiczny terminal mobilny klasy enterprise, zaprojektowany dla małych i średnich firm szukających wytrzymałego urządzenia do pracy w sklepie, magazynie, aptece lub przychodni — w cenie zbliżonej do smartfona konsumenckiego, ale z wieloletnią żywotnością i profesjonalnym skanerem kodów kreskowych.
 
-Ulepszony procesor, nowszy system Android i jeszcze lepsza wytrzymałość. TC22 z Wi-Fi, TC27 dodatkowo z 4G LTE.
+Trzecia generacja bestsellerowej serii TC2x (następca Zebra TC21) oferuje duży 6-calowy wyświetlacz FHD+ (1080×2160) z Corning Gorilla Glass, wydajny procesor Qualcomm 5430 hex-core 2.1 GHz z 6 lub 8 GB RAM, oraz system Android z gwarancją aktualizacji do Androida 16. Dwukrotnie wyższa wydajność obliczeniowa w porównaniu z poprzednią generacją TC21.
 
-Idealne dla firm szukających nowoczesnego i ekonomicznego rozwiązania mobilnego.`,
+Wybierz skaner według potrzeb: SE4710 (standard, zasięg do 35 cm) do codziennego skanowania na poziomie ręki, lub SE55 Advanced Range (zasięg od 10 cm do 7,6 m) do skanowania towarów na wysokich regałach magazynowych bez użycia drabiny. Skaner enterprise dekoduje kody 1D i 2D w 0,3 s — nawet zniszczone, zadrukowane lub wyświetlane na ekranie. Dla porównania: aparat smartfona potrzebuje 2–4 s na dobrze widoczny kod.
+
+Konstrukcja o 10% cieńsza niż TC21, z ergonomicznym profilem redukującym nacisk na dłoń podczas wielogodzinnej pracy. Obudowa IP68 + IP65 z certyfikacją MIL-STD-810H: upadki z 1,5 m na beton (z etui ochronnym), test tumble 500 upadków z 0,5 m, zakres temperatur od -10°C do +50°C. Wymienne baterie PowerPrecision: 3 800 mAh (standard, ~10 h) lub 5 200 mAh (rozszerzona, ~14 h) z technologią hot-swap — wymiana w 5 sekund bez wyłączania urządzenia.
+
+Łączność Wi-Fi 6/6E (802.11ax) 2×2 MU-MIMO z prędkością do 2,4 Gbps, Bluetooth 5.2 i NFC (Apple VAS, Google SmartTap — obsługa płatności zbliżeniowych i kart lojalnościowych). Kamera 16 MP z tyłu i 5 MP z przodu. USB 3.1 Type-C SuperSpeed. MicroSD do 2 TB.
+
+Pakiet Mobility DNA Professional (w cenie urządzenia): DataWedge (skanowanie bez programowania), StageNow (masowa konfiguracja floty), Device Tracker (lokalizacja zagubionych terminali), LifeGuard™ (comiesięczne łatki bezpieczeństwa). Zarządzanie flotą przez MDM: SOTI, VMware, Microsoft Intune, Zebra DNA Cloud.
+
+Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC27. Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'zebra',
-    priceFrom: 3290,
-    images: ['/images/products/zebra-tc22.jpg'],
-    tags: ['retail', 'magazyn', 'logistyka'],
+    priceFrom: 2417,
+    images: [
+      '/images/products/tc22_scanner_1.png',
+      '/images/products/tc22_scanner_2.png',
+      '/images/products/tc22_scanner_3.png',
+      '/images/products/tc22_scanner_4.png',
+    ],
+    tags: ['retail', 'magazyn', 'healthcare'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: true,
+    specifications: [
+      { name: 'System operacyjny', value: 'Android (aktualizacja do Android 16)' },
+      { name: 'Procesor', value: 'Qualcomm 5430 hex-core, 2.1 GHz' },
+      { name: 'Wyświetlacz', value: '6.0" FHD+ (1080×2160), 450 nit, Gorilla Glass' },
+      { name: 'Pamięć', value: '6 GB / 64 GB lub 8 GB / 128 GB + microSD do 2 TB' },
+      { name: 'Skaner', value: 'SE4710 (standard) lub SE55 (advanced)' },
+      { name: 'Kamera', value: '16 MP tył, 5 MP przód' },
+      { name: 'Bateria', value: '3 800 mAh (standard) lub 5 200 mAh (rozszerzona), wymienna hot-swap' },
+      { name: 'Odporność', value: 'IP68/IP65, upadki z 1,5 m, MIL-STD-810H, tumble 500×0,5 m' },
+      { name: 'Łączność', value: 'Wi-Fi 6/6E (802.11ax), Bluetooth 5.2, NFC' },
+      { name: 'Wymiary', value: '165 × 76,3 × 12,5 mm' },
+      { name: 'Waga', value: '236 g (z baterią standardową)' },
+      { name: 'USB', value: 'USB 3.1 Type-C SuperSpeed' },
+      { name: 'Temperatura pracy', value: '-10°C do +50°C' },
+    ],
+    variantAttributeTooltips: {
+      'Skaner': 'SE4710 — skaner standardowego zasięgu (do 66 cm), czerwona kropka celownicza. Do skanowania na wyciągnięcie ręki: kasa, lada, kompletacja.\n\nSE55 — skaner dalekiego zasięgu (od 5 cm do 12,2 m), zielona kropka celownicza z automatycznym doborem ostrości. Skanuje kody na najwyższych półkach bez drabiny.',
+    },
+    variants: [
+      {
+        partNumber: 'WLMT0-T22B6ABC2-A6',
+        name: 'TC22 SE4710, 6/64 GB, 3800 mAh',
+        priceFrom: 2417,
+        availability: 'available',
+        attributes: {
+          'Skaner': 'SE4710',
+          'Pamięć': '6 GB / 64 GB',
+          'Bateria': '3 800 mAh',
+        },
+      },
+      {
+        partNumber: 'WLMT0-T22B6ABE2-A6',
+        name: 'TC22 SE4710, 6/64 GB, 5200 mAh',
+        priceFrom: 2553,
+        availability: 'available',
+        attributes: {
+          'Skaner': 'SE4710',
+          'Pamięć': '6 GB / 64 GB',
+          'Bateria': '5 200 mAh',
+        },
+      },
+      {
+        partNumber: 'WLMT0-T22B8ABC8-A6',
+        name: 'TC22 SE4710, 8/128 GB, 3800 mAh, RFID-ready',
+        priceFrom: 2830,
+        availability: 'available',
+        attributes: {
+          'Skaner': 'SE4710',
+          'Pamięć': '8 GB / 128 GB',
+          'Bateria': '3 800 mAh',
+          'RFID-ready': 'Tak',
+        },
+      },
+      {
+        partNumber: 'WLMT0-T22B6CBC2-A6',
+        name: 'TC22 SE55, 6/64 GB, 3800 mAh',
+        priceFrom: 2963,
+        availability: 'available',
+        attributes: {
+          'Skaner': 'SE55',
+          'Pamięć': '6 GB / 64 GB',
+          'Bateria': '3 800 mAh',
+        },
+      },
+      {
+        partNumber: 'WLMT0-T22B8ABD8-A6',
+        name: 'TC22 SE4710, 8/128 GB, 3800 mAh, RFID-ready, BLE',
+        priceFrom: 3060,
+        availability: 'available',
+        attributes: {
+          'Skaner': 'SE4710',
+          'Pamięć': '8 GB / 128 GB',
+          'Bateria': '3 800 mAh',
+          'RFID-ready': 'Tak',
+          'Lokalizator BLE': 'Tak',
+        },
+      },
+      {
+        partNumber: 'WLMT0-T22B6CBE2-A6',
+        name: 'TC22 SE55, 6/64 GB, 5200 mAh',
+        priceFrom: 3099,
+        availability: 'available',
+        attributes: {
+          'Skaner': 'SE55',
+          'Pamięć': '6 GB / 64 GB',
+          'Bateria': '5 200 mAh',
+        },
+      },
+      {
+        partNumber: 'WLMT0-T22B8CBD8-A6',
+        name: 'TC22 SE55, 8/128 GB, 3800 mAh, RFID-ready, BLE',
+        priceFrom: 3606,
+        availability: 'available',
+        attributes: {
+          'Skaner': 'SE55',
+          'Pamięć': '8 GB / 128 GB',
+          'Bateria': '3 800 mAh',
+          'RFID-ready': 'Tak',
+          'Lokalizator BLE': 'Tak',
+        },
+      },
+    ],
+    faq: [
+      { question: 'Ile kosztuje Zebra TC22?', answer: 'Ceny Zebra TC22 zaczynają się od ok. 2 180 zł netto za podstawową konfigurację (SE4710, 6/64 GB, bateria 3 800 mAh). Warianty z rozszerzonym skanerem SE55 kosztują od ok. 2 672 zł netto, a topowa konfiguracja (SE55, 8/128 GB, RFID-ready, BLE) to ok. 3 252 zł netto. Ceny netto, dane z lutego 2026.' },
+      { question: 'Czym różni się Zebra TC22 od TC27?', answer: 'TC22 i TC27 to bliźniacze urządzenia — identyczny procesor, ekran, skanery, wytrzymałość i akcesoria. Jedyna różnica: TC22 ma wyłącznie Wi-Fi 6/6E, a TC27 dodaje łączność 5G/4G LTE, dual SIM (nano + eSIM) i GPS/GNSS. TC22 wystarczy do pracy wewnątrz budynku (magazyn, sklep, szpital). TC27 jest konieczny dla pracowników terenowych bez dostępu do Wi-Fi (kurierzy, serwisanci).' },
+      { question: 'Czym różni się skaner SE4710 od SE55?', answer: 'SE4710 to standardowy skaner 1D/2D z zasięgiem do 35 cm — wystarczający do skanowania produktów na poziomie ręki (retail, inwentaryzacja, apteka). SE55 Advanced Range skanuje kody od 10 cm do 7,6 m — odczytuje etykiety na wysokich regałach magazynowych bez drabiny. SE55 kosztuje ok. 400–500 zł więcej, ale w dużym magazynie oszczędza czas i eliminuje ryzyko pracy na wysokości.' },
+      { question: 'Czy Zebra TC22 jest wodoodporny?', answer: 'Tak. TC22 ma podwójną klasę ochrony IP68 (pełna pyłoszczelność + zanurzenie do 1 m na 30 min) oraz IP65 (ochrona przed strumieniem wody). Dodatkowo certyfikacja MIL-STD-810H obejmuje testy upadków z 1,5 m na beton (z etui), 500 tumble z 0,5 m, szok termiczny i wilgotność 95%. Corning Gorilla Glass chroni wyświetlacz i okienko skanera.' },
+      { question: 'Jak długo działa bateria w Zebra TC22?', answer: 'Bateria standardowa 3 800 mAh zapewnia ok. 10 godzin typowej pracy (Wi-Fi + skanowanie). Bateria rozszerzona 5 200 mAh wystarcza na ok. 14 godzin. Obie baterie są wymienne hot-swap — pracownik wymienia baterię w 5 sekund bez wyłączania urządzenia. Technologia PowerPrecision podaje dokładne metryki stanu baterii w czasie rzeczywistym.' },
+      { question: 'Czy Zebra TC22 obsługuje płatności zbliżeniowe?', answer: 'Tak. Wbudowany NFC (ISO 14443 Type A/B, Mifare, FeliCa) obsługuje płatności contactless po integracji z systemem POS. TC22 jest certyfikowany Apple VAS i Google SmartTap — odczytuje bilety, karty lojalnościowe, karty podarunkowe i boarding passy z portfeli Apple Wallet i Google Wallet. Idealne dla sklepów i hoteli.' },
+      { question: 'Jaki Android ma Zebra TC22?', answer: 'TC22 jest dostarczany z systemem Android (wersja zależy od daty produkcji) i ma gwarancję aktualizacji do Androida 16. Zebra LifeGuard™ zapewnia comiesięczne łatki bezpieczeństwa przez wiele lat od premiery urządzenia. Aplikacje można pobierać z Google Play (wersja GMS) lub wgrywać przez MDM (wersja AOSP).' },
+      { question: 'Jakie akcesoria są dostępne do Zebra TC22?', answer: 'Kluczowe akcesoria TC22: bateria zapasowa (BTRY-TC2L-2XMAXX-01, 3 800 mAh), bateria rozszerzona (BTRY-TC2L-3XMAXX-01, 5 200 mAh), stacja ładowania 1-gniazdowa (CRD-TC2L-BS1CO-01), stacja 5-gniazdowa (CRD-TC2L-BS5CO-01), ładowarka 4 baterii (SAC-TC2L-4SCHG-01), etui ochronne (SG-TC2L-BOOT-01), trigger handle (TRG-TC2L-SNP1-01), uchwyt na ramię (SG-TC2L-ARMNT-01), kabel USB-C (CBL-TC5X-USBC2A-01).' },
+      { question: 'Czy Zebra TC22 obsługuje RFID?', answer: 'TC22 nie ma wbudowanego czytnika RFID UHF. Warianty z 8-pinowym złączem (RFID-ready) obsługują nakładkę Zebra RFD40 UHF RFID Sled montowaną przez adapter eConnex — odczyt 100–700 tagów/sekundę z odległości do 9 m. Warianty z 2-pinowym złączem mogą łączyć się z RFD40 przez Bluetooth. Wbudowany NFC (13,56 MHz) służy do identyfikacji pracowników i tagów bliskiego zasięgu.' },
+      { question: 'Jakie są alternatywy dla Zebra TC22?', answer: 'Główne alternatywy w klasie entry-level: Datalogic Memor 11 (5" HD, Android 11, od ~3 290 zł — starszy, mniej wydajny, ale z ładowaniem Qi), Datalogic Memor 12 (6" FHD+, Android 13, od ~4 490 zł — nowszy, droższy), Honeywell EDA52 (podobna półka cenowa, mocny w logistyce USA). TC22 wyróżnia się: największym ekranem 6" FHD+ w swojej klasie, najdłuższym wsparciem Android (do v16), darmowym pakietem Mobility DNA i najszerszą siecią serwisową w Polsce (TAKMA + serwis-zebry.pl).' },
+    ],
+    applications: ['Retail — weryfikacja cen i stanów', 'Magazyn — kompletacja WMS', 'Apteki i przychodnie', 'Inwentaryzacja', 'Obsługa klienta w sklepie', 'Hotele — recepcja i obsługa gości'],
+    compatibleAccessories: [],
+    relatedAccessories: [
+      'zebra-battery-tc2-standard',
+      'zebra-battery-tc2-ble',
+      'zebra-battery-tc2-extended',
+      'zebra-boot-tc2',
+      'zebra-trigger-tc2',
+      'zebra-holster-tc2',
+      'zebra-cradle-tc2-1slot',
+      'zebra-cradle-tc2-1slot-ethernet',
+      'zebra-cradle-tc2-1slot-1battery',
+      'zebra-cradle-tc2-5slot',
+      'zebra-cradle-tc2-5slot-ethernet',
+      'zebra-charger-tc2-4battery',
+      'zebra-cup-tc2-battery',
+      'zebra-psu-50w',
+      'zebra-psu-108w',
+      'zebra-cable-dc-388',
+      'zebra-cable-dc-381',
+      'zebra-lanyard-tc2',
+    ],
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-tc22/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/pl/spec-sheets/tc22-tc27-spec-sheet-pl-pl.pdf', size: 'PDF' },
+    ],
+    servicePlans: [
+      { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-TC22XX-3C00', duration: '3 lata', priceNetto: 1025.02 },
+      { name: 'Zebra OneCare Essential — 5 lat', partNumber: 'Z1AE-TC22XX-5C00', duration: '5 lat', priceNetto: 1708.39 },
+    ],
+    createdAt: '2024-06-01',
+  },
+  {
+    id: 'zebra-tc27',
+    slug: 'zebra-tc27',
+    name: 'Zebra TC27',
+    shortDescription: 'Komputer mobilny 5G/Wi-Fi 6E z GPS — następca TC26, do pracy w terenie',
+    description: `Dla kogo? Zebra TC27 to terminal mobilny klasy enterprise z łącznością 5G/4G LTE i GPS, zaprojektowany dla pracowników terenowych — kurierów, serwisantów, przedstawicieli handlowych, inspektorów — którzy potrzebują wytrzymałego urządzenia ze skanerem kodów kreskowych i stałym dostępem do systemów firmowych poza zasięgiem Wi-Fi.
+
+Bliźniacze urządzenie do Zebra TC22 (identyczny procesor, ekran, skanery, wytrzymałość), rozszerzone o moduł 5G FR1 z Gigabit LTE-A, dual SIM (nano + eSIM) oraz lokalizację GPS/GLONASS/Galileo/BeiDou z dwuzakresowym GNSS. TC27 łączy stylistykę i cenę smartfona z funkcjami biznesowymi klasy enterprise.
+
+Duży 6-calowy wyświetlacz FHD+ (1080×2160) z Corning Gorilla Glass, procesor Qualcomm 5430 hex-core 2.1 GHz z 6 lub 8 GB RAM. Android z gwarancją aktualizacji do wersji 16. Dwukrotnie wyższa wydajność obliczeniowa w porównaniu z poprzednią generacją TC26.
+
+Skaner do wyboru: SE4710 (standard, zasięg do 35 cm) do codziennego skanowania, lub SE55 Advanced Range (zasięg od 10 cm do 7,6 m) do skanowania towarów na regałach i paletach z odległości. Skaner enterprise dekoduje kody w 0,3 s — 5–10× szybciej niż aparat smartfona.
+
+Obudowa IP68/IP65 z certyfikacją MIL-STD-810H: upadki z 1,5 m na beton (z etui), 500 tumble z 0,5 m, temperatura pracy -10°C do +50°C. Wymienne baterie PowerPrecision hot-swap: 3 800 mAh (~10 h) lub 5 200 mAh (~14 h). Waga zaledwie 236 g — lżejszy niż wiele smartfonów premium.
+
+Łączność 5G FR1 (NSA/SA) + 4G LTE-A zapewnia stabilne połączenie z systemem TMS, ERP lub CRM w czasie rzeczywistym — śledzenie przesyłek, potwierdzanie dostawy, raportowanie wizyt. GPS z dokładnością dual-band (L1+L5) rejestruje trasy i czas pracy. VoLTE dla połączeń głosowych bez dodatkowego telefonu.
+
+Pakiet Mobility DNA Professional w cenie: DataWedge, StageNow, Device Tracker, LifeGuard™. Wersja Wi-Fi-only bez 5G: Zebra TC22. Szczegółowa dokumentacja na zebra.com i serwis-zebry.pl.`,
+    categoryId: 'terminale-mobilne',
+    manufacturerId: 'zebra',
+    priceFrom: 2690,
+    images: [
+      '/images/products/tc22_scanner_1.png',
+      '/images/products/tc22_scanner_2.png',
+      '/images/products/tc22_scanner_3.png',
+      '/images/products/tc22_scanner_4.png',
+    ],
+    tags: ['logistyka', 'outdoor', 'retail'],
     availability: 'available',
     isNew: true,
     isBestseller: false,
     specifications: [
-      { name: 'System operacyjny', value: 'Android 13' },
-      { name: 'Procesor', value: 'Qualcomm QCM4490' },
-      { name: 'Wyświetlacz', value: '5.5" HD+ (1440x720)' },
-      { name: 'Pamięć', value: '4 GB RAM, 64 GB Flash' },
-      { name: 'Skaner', value: 'SE4710 Imager 2D' },
-      { name: 'Bateria', value: '3800 mAh (standard)' },
-      { name: 'Odporność', value: 'IP68, upadki z 1.2 m' },
-      { name: 'TC27 dodatkowo', value: '4G LTE, GPS' },
+      { name: 'System operacyjny', value: 'Android (aktualizacja do Android 16)' },
+      { name: 'Procesor', value: 'Qualcomm 5430 hex-core, 2.1 GHz' },
+      { name: 'Wyświetlacz', value: '6.0" FHD+ (1080×2160), 450 nit, Gorilla Glass' },
+      { name: 'Pamięć', value: '6 GB / 64 GB lub 8 GB / 128 GB + microSD do 2 TB' },
+      { name: 'Skaner', value: 'SE4710 (standard) lub SE55 (advanced)' },
+      { name: 'Kamera', value: '16 MP tył, 5 MP przód' },
+      { name: 'Bateria', value: '3 800 mAh (standard) lub 5 200 mAh (rozszerzona), wymienna hot-swap' },
+      { name: 'Odporność', value: 'IP68/IP65, upadki z 1,5 m, MIL-STD-810H, tumble 500×0,5 m' },
+      { name: 'Łączność', value: 'Wi-Fi 6/6E, 5G FR1, 4G LTE-A, Bluetooth 5.2, NFC' },
+      { name: 'GNSS', value: 'GPS, GLONASS, Galileo, BeiDou — dual-band L1+L5' },
+      { name: 'SIM', value: 'Dual SIM — 1× nano SIM + 1× eSIM' },
+      { name: 'Wymiary', value: '165 × 76,3 × 12,5 mm' },
+      { name: 'Waga', value: '236 g (z baterią standardową)' },
+      { name: 'USB', value: 'USB 3.1 Type-C SuperSpeed' },
+      { name: 'Temperatura pracy', value: '-10°C do +50°C' },
     ],
-    applications: ['Retail', 'Magazyn', 'Logistyka', 'Serwis w terenie'],
+    variantAttributeTooltips: {
+      'Skaner': 'SE4710 — skaner standardowego zasięgu (do 66 cm), czerwona kropka celownicza. Do skanowania na wyciągnięcie ręki: kasa, lada, kompletacja.\n\nSE55 — skaner dalekiego zasięgu (od 5 cm do 12,2 m), zielona kropka celownicza z automatycznym doborem ostrości. Skanuje kody na najwyższych półkach bez drabiny.',
+    },
+    variants: [
+      {
+        partNumber: 'WCMTB-T27B6ABC2-A6',
+        name: 'TC27 SE4710, 6/64 GB, 3800 mAh',
+        priceFrom: 2690,
+        availability: 'available',
+        attributes: {
+          'Skaner': 'SE4710',
+          'Pamięć': '6 GB / 64 GB',
+          'Bateria': '3 800 mAh',
+        },
+      },
+      {
+        partNumber: 'WCMTB-T27B6ABE2-A6',
+        name: 'TC27 SE4710, 6/64 GB, 5200 mAh',
+        priceFrom: 2826,
+        availability: 'available',
+        attributes: {
+          'Skaner': 'SE4710',
+          'Pamięć': '6 GB / 64 GB',
+          'Bateria': '5 200 mAh',
+        },
+      },
+      {
+        partNumber: 'WCMTB-T27B8ABC8-A6',
+        name: 'TC27 SE4710, 8/128 GB, 3800 mAh, RFID-ready',
+        priceFrom: 3216,
+        availability: 'unavailable',
+        attributes: {
+          'Skaner': 'SE4710',
+          'Pamięć': '8 GB / 128 GB',
+          'Bateria': '3 800 mAh',
+          'RFID-ready': 'Tak',
+        },
+      },
+      {
+        partNumber: 'WCMTB-T27B6CBC2-A6',
+        name: 'TC27 SE55, 6/64 GB, 3800 mAh',
+        priceFrom: 3236,
+        availability: 'available',
+        attributes: {
+          'Skaner': 'SE55',
+          'Pamięć': '6 GB / 64 GB',
+          'Bateria': '3 800 mAh',
+        },
+      },
+      {
+        partNumber: 'WCMTB-T27B8ABD8-A6',
+        name: 'TC27 SE4710, 8/128 GB, 3800 mAh, RFID-ready, BLE',
+        priceFrom: 3333,
+        availability: 'available',
+        attributes: {
+          'Skaner': 'SE4710',
+          'Pamięć': '8 GB / 128 GB',
+          'Bateria': '3 800 mAh',
+          'RFID-ready': 'Tak',
+          'Lokalizator BLE': 'Tak',
+        },
+      },
+      {
+        partNumber: 'WCMTB-T27B8ABE8-A6',
+        name: 'TC27 SE4710, 8/128 GB, 5200 mAh, RFID-ready',
+        priceFrom: 3353,
+        availability: 'available',
+        attributes: {
+          'Skaner': 'SE4710',
+          'Pamięć': '8 GB / 128 GB',
+          'Bateria': '5 200 mAh',
+          'RFID-ready': 'Tak',
+        },
+      },
+      {
+        partNumber: 'WCMTB-T27B8CBD8-A6',
+        name: 'TC27 SE55, 8/128 GB, 3800 mAh, RFID-ready, BLE',
+        priceFrom: 3879,
+        availability: 'unavailable',
+        attributes: {
+          'Skaner': 'SE55',
+          'Pamięć': '8 GB / 128 GB',
+          'Bateria': '3 800 mAh',
+          'RFID-ready': 'Tak',
+          'Lokalizator BLE': 'Tak',
+        },
+      },
+    ],
+    faq: [
+      { question: 'Ile kosztuje Zebra TC27?', answer: 'Ceny Zebra TC27 zaczynają się od ok. 2 426 zł netto (SE4710, 6/64 GB, bateria 3 800 mAh). Warianty z rozszerzonym skanerem SE55 kosztują od ok. 2 918 zł, a topowa konfiguracja (SE55, 8/128 GB, RFID-ready, BLE) to ok. 3 498 zł netto. TC27 kosztuje ok. 200–250 zł więcej niż odpowiedni wariant TC22 z powodu modułu 5G/LTE. Ceny netto, dane z lutego 2026.' },
+      { question: 'Czym różni się Zebra TC27 od TC22?', answer: 'TC27 dodaje do TC22 trzy moduły: 1) 5G FR1 + 4G LTE-A — stała łączność z systemami firmowymi poza zasięgiem Wi-Fi, 2) Dual SIM (nano + eSIM) — dwie karty operatorów jednocześnie, 3) GPS/GLONASS/Galileo/BeiDou z dwuzakresowym GNSS (L1+L5) — precyzyjna lokalizacja w terenie. Pozostałe parametry (procesor, ekran, skaner, wytrzymałość, akcesoria) są identyczne. Jeśli terminal nigdy nie opuszcza budynku → TC22 wystarczy.' },
+      { question: 'Czy Zebra TC27 obsługuje 5G?', answer: 'Tak. TC27 obsługuje 5G FR1 (Sub-6 GHz) w trybie NSA (Non-Standalone) i SA (Standalone) z carrier aggregation. Gigabit LTE-A jako fallback. Obsługuje także prywatne sieci 5G i CBRS (USA). Dual SIM/Dual Standby: 1 nano SIM + 1 eSIM — możliwość korzystania z dwóch operatorów jednocześnie (np. roaming). VoLTE do połączeń głosowych.' },
+      { question: 'Czy Zebra TC27 ma GPS?', answer: 'Tak. TC27 ma wbudowany odbiornik GNSS obsługujący: GPS, GLONASS, Galileo, BeiDou, QZSS z dwuzakresowym odbiorem (L1/G1/E1/B1 + L5/E5a/B2a) — precyzyjna lokalizacja nawet w zabudowie miejskiej. Wsparcie A-GPS z XTRA dla szybkiego startu lokalizacji. Idealne do rejestrowania tras kurierskich, czasu spędzonego u klienta i raportowania wizyt w CRM.' },
+      { question: 'Jak długo działa bateria w Zebra TC27 z 5G?', answer: 'Bateria standardowa 3 800 mAh zapewnia ok. 8–10 godzin pracy z 5G (moduł LTE/5G zużywa więcej energii niż Wi-Fi). Bateria rozszerzona 5 200 mAh wydłuża czas do ok. 12–14 godzin. Dla kurierów z całodniową trasą rekomendujemy baterię 5 200 mAh lub baterię zapasową z wymianą hot-swap w trakcie dnia.' },
+      { question: 'Czy TC27 może zastąpić telefon służbowy?', answer: 'Tak. TC27 obsługuje VoLTE — połączenia głosowe przez sieć LTE/5G bez dodatkowego telefonu. Wbudowany głośnik, mikrofon i gniazdo zestawu słuchawkowego (przez adapter USB-C → 3,5 mm). Obsługuje Google Play (wersja GMS) — dostęp do aplikacji: Teams, Zoom, WhatsApp, e-mail. Jeden terminal zamiast dwóch urządzeń (telefon + skaner) = mniej sprzętu do zarządzania i niższy TCO.' },
+      { question: 'Jakie akcesoria są dostępne do Zebra TC27?', answer: 'TC27 używa tych samych akcesoriów co TC22 (wspólna platforma): baterie (BTRY-TC2L-2XMAXX-01 / 3XMAXX-01), stacje ładowania (CRD-TC2L-BS1CO-01 / BS5CO-01), ładowarka 4 baterii (SAC-TC2L-4SCHG-01), etui ochronne (SG-TC2L-BOOT-01), trigger handle (TRG-TC2L-SNP1-01), uchwyt na ramię (SG-TC2L-ARMNT-01), uchwyt samochodowy. Pełna lista akcesoriów na stronie TAKMA.' },
+      { question: 'TC27 Wi-Fi + 5G czy TC22 Wi-Fi-only — co wybrać?', answer: 'Reguła jest prosta: jeśli terminal pracuje WYŁĄCZNIE wewnątrz budynku z Wi-Fi (magazyn, sklep, szpital) → TC22 wystarczy i oszczędzasz ~250 zł/szt. Jeśli terminal wyjeżdża w teren (kurierzy, serwisanci, przedstawiciele handlowi, inspektorzy) → TC27 jest konieczny. Przy flocie 50 terminali różnica to 12 500 zł — warto przemyśleć, ile urządzeń naprawdę potrzebuje LTE.' },
+      { question: 'Czy Zebra TC27 jest następcą TC26?', answer: 'Tak. TC27 to trzecia generacja serii TC2x zastępująca TC26. Kluczowe ulepszenia vs TC26: procesor Qualcomm 5430 (2× wydajność), ekran 6" FHD+ (vs 5" HD w TC26), Wi-Fi 6E (vs Wi-Fi 6), Bluetooth 5.2 (vs 5.0), 5G FR1 (vs 4G LTE), IP68 (vs IP67), upadki z 1,5 m (vs 1,2 m), pamięć do 8/128 GB (vs 4/64 GB). Akcesoria TC26 NIE są kompatybilne z TC27 — zmieniony design obudowy.' },
+      { question: 'Jakie są alternatywy dla Zebra TC27?', answer: 'Alternatywy z 5G/LTE: Datalogic Memor 20 (6" FHD+, 5G, Android 13, od ~5 890 zł — znacznie droższy), Honeywell CT47 (5,5", 5G, od ~5 500 zł), Samsung Galaxy XCover7 (konsumencki z IP68, od ~1 800 zł — ale bez skanera enterprise i krótki support). TC27 oferuje najlepszy stosunek cena/wydajność w swojej klasie: 5G + skaner enterprise + pełny Mobility DNA od ok. 2 426 zł netto.' },
+    ],
+    applications: ['Kurier i dostawa ostatniej mili', 'Serwis terenowy i utrzymanie ruchu', 'Przedstawiciele handlowi (CRM)', 'Logistyka i transport', 'Inspekcje terenowe', 'E-commerce — zarządzanie zwrotami'],
     compatibleAccessories: [],
+    relatedAccessories: [
+      'zebra-battery-tc2-standard',
+      'zebra-battery-tc2-ble',
+      'zebra-battery-tc2-extended',
+      'zebra-boot-tc2',
+      'zebra-trigger-tc2',
+      'zebra-holster-tc2',
+      'zebra-cradle-tc2-1slot',
+      'zebra-cradle-tc2-1slot-ethernet',
+      'zebra-cradle-tc2-1slot-1battery',
+      'zebra-cradle-tc2-5slot',
+      'zebra-cradle-tc2-5slot-ethernet',
+      'zebra-charger-tc2-4battery',
+      'zebra-cup-tc2-battery',
+      'zebra-psu-50w',
+      'zebra-psu-108w',
+      'zebra-cable-dc-388',
+      'zebra-cable-dc-381',
+      'zebra-lanyard-tc2',
+    ],
     downloads: [
-      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://serwis-zebry.pl/instrukcje/zebra-tc22', size: 'Online' },
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-tc27/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/pl/spec-sheets/tc22-tc27-spec-sheet-pl-pl.pdf', size: 'PDF' },
+    ],
+    servicePlans: [
+      { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-TC27XX-3C00', duration: '3 lata', priceNetto: 1025.02 },
+      { name: 'Zebra OneCare Essential — 5 lat', partNumber: 'Z1AE-TC27XX-5C00', duration: '5 lat', priceNetto: 1708.39 },
     ],
     createdAt: '2024-06-01',
   },
@@ -6655,7 +8450,7 @@ const ribbons: Product[] = ribbonSpecs.map(r => ({
   subcategoryIds: ['tasmy-termotransferowe'],
   manufacturerId: 'zebra',
   priceFrom: r.price,
-  images: [r.type === 'resin' ? '/images/products/zebra-ribbon-resin.jpg' : '/images/products/zebra-ribbon-wax.jpg'],
+  images: ['/images/products/zebra-ribbon-wymiary.png'],
   tags: r.type === 'resin' ? (['produkcja', 'healthcare', 'outdoor'] as ProductTag[]) : (['magazyn', 'logistyka', 'produkcja'] as ProductTag[]),
   availability: r.avail,
   isNew: false,
@@ -6863,7 +8658,7 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 540.70,
-    images: ['/images/products/zebra-printhead-zd421t-203.jpg'],
+    images: ['/images/products/P1112640-218.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -6889,7 +8684,7 @@ Zalecana wymiana po widocznym spadku jakości druku lub uszkodzeniu mechanicznym
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 1045.95,
-    images: ['/images/products/zebra-printhead-zd421t-300.jpg'],
+    images: ['/images/products/P1112640-219.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -6915,7 +8710,7 @@ Wymiana wałka zalecana w przypadku widocznych śladów zużycia lub nierównomi
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 129.00,
-    images: ['/images/products/zebra-platen-roller-zd421t.jpg'],
+    images: ['/images/products/P1112640-216.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -6940,7 +8735,7 @@ Wymiana wałka zalecana w przypadku widocznych śladów zużycia lub nierównomi
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 129.00,
-    images: ['/images/products/zebra-platen-roller-zd421t-300.jpg'],
+    images: ['/images/products/P1112640-217.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -6965,7 +8760,7 @@ Prosty montaż — wystarczy wymienić przednią pokrywę drukarki na moduł z g
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 615.65,
-    images: ['/images/products/zebra-cutter-zd421t.jpg'],
+    images: ['/images/products/P1112640-230.png'],
     tags: ['magazyn', 'logistyka', 'retail'],
     availability: 'available',
     isNew: false,
@@ -6991,7 +8786,7 @@ Znacząco przyspiesza proces etykietowania — operator pobiera już odklejoną 
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 168.79,
-    images: ['/images/products/zebra-dispenser-zd421t.jpg'],
+    images: ['/images/products/P1112640-231.png'],
     tags: ['magazyn', 'logistyka', 'retail'],
     availability: 'available',
     isNew: false,
@@ -7017,7 +8812,7 @@ Wymaga dodatkowego modułu na baterię (P1080383-600) do zainstalowania w drukar
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 1431.60,
-    images: ['/images/products/zebra-battery-zd420.jpg'],
+    images: ['/images/products/P1080383-603.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7040,7 +8835,7 @@ Wymaga dodatkowego modułu na baterię (P1080383-600) do zainstalowania w drukar
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 246.10,
-    images: ['/images/products/zebra-battery-module-zd420t.jpg'],
+    images: ['/images/products/P1080383-600.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7065,7 +8860,7 @@ Idealne rozwiązanie dla drukarek zakupionych w wersji bazowej (tylko USB), któ
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 349.00,
-    images: ['/images/products/zebra-module-ethernet.jpg'],
+    images: ['/images/products/P1112640-015.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7092,7 +8887,7 @@ Instalacja w slocie modularnym drukarki.`,
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 131.16,
-    images: ['/images/products/zebra-module-rs232.jpg'],
+    images: ['/images/products/P1112640-016.png'],
     tags: ['magazyn', 'produkcja'],
     availability: 'available',
     isNew: false,
@@ -7119,7 +8914,7 @@ Umożliwia druk bezprzewodowy z komputerów, tabletów i smartfonów przez sieć
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 534.00,
-    images: ['/images/products/zebra-module-wifi.jpg'],
+    images: ['/images/products/P1112640-017C.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7146,7 +8941,7 @@ Montaż w terenie bez narzędzi — wystarczy wymienić standardową pokrywę na
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 153.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1112640-031.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7173,7 +8968,7 @@ Bateria montowana bezpośrednio w drukarce, zapewnia kilka godzin pracy na jedny
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 239.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1080383-601.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7199,7 +8994,7 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 509.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1112640-019.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7225,7 +9020,7 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 979.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1112640-020.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7251,7 +9046,7 @@ Wymiana wałka zalecana w przypadku nierównomiernego druku lub widocznego zuży
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 123.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1112640-061.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7277,7 +9072,7 @@ Wymiana wałka zalecana w przypadku nierównomiernego druku lub widocznego zuży
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 123.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1112640-062.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7303,7 +9098,7 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 489.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1115690.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7329,7 +9124,7 @@ Wymiana wałka dociskowego zalecana jest w przypadku widocznego zużycia powierz
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 69.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1080383-703.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7354,7 +9149,7 @@ Zasilacz jest kompatybilny z modelami ZD220d, ZD220t, ZD230d i ZD230t. Zalecany 
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 453.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1080383-704.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7381,7 +9176,7 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 496.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1115689.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7407,7 +9202,7 @@ Wymiana wałka dociskowego zalecana jest w przypadku widocznego zużycia powierz
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 69.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1080383-700.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7439,7 +9234,7 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 509.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1112640-050.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7465,7 +9260,7 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 650.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1112640-051.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7491,7 +9286,7 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 509.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1112640-240.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7517,7 +9312,7 @@ Zalecana wymiana po widocznym spadku jakości druku lub uszkodzeniu mechanicznym
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 979.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1112640-241.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7543,7 +9338,7 @@ Wymiana wałka zalecana w przypadku widocznych śladów zużycia lub nierównomi
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 123.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1112640-251.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7568,7 +9363,7 @@ Wymiana wałka zalecana w przypadku widocznych śladów zużycia lub nierównomi
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 123.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1112640-252.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7593,7 +9388,7 @@ Prosty montaż — wystarczy wymienić przednią pokrywę drukarki na moduł z g
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 571.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1112640-232.png'],
     tags: ['magazyn', 'logistyka', 'retail'],
     availability: 'available',
     isNew: false,
@@ -7619,7 +9414,7 @@ Znacząco przyspiesza proces etykietowania — operator pobiera już odklejoną 
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 153.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1112640-233.png'],
     tags: ['magazyn', 'logistyka', 'retail'],
     availability: 'available',
     isNew: false,
@@ -7645,7 +9440,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi.`,
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 302.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1112640-238.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7672,7 +9467,7 @@ Umożliwia druk bezprzewodowy z komputerów, tabletów i smartfonów przez sieć
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 534.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1112640-239C.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7699,7 +9494,7 @@ Zalecany jako zamiennik uszkodzonego zasilacza lub jako zapasowy do drugiego sta
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 555.00,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1079903-026.png'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -7726,7 +9521,7 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 1450.71,
-    images: [],
+    images: ['/images/products/P1123335-056.png'],
     tags: [],
     availability: 'available',
     isNew: false,
@@ -7752,7 +9547,7 @@ Zalecana wymiana po widocznym spadku jakości druku lub uszkodzeniu mechanicznym
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 1940.63,
-    images: [],
+    images: ['/images/products/P1123335-057.png'],
     tags: [],
     availability: 'available',
     isNew: false,
@@ -7778,7 +9573,7 @@ Wymiana wałka zalecana w przypadku widocznych śladów zużycia lub nierównomi
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 213.11,
-    images: [],
+    images: ['/images/products/P1037974-028.png'],
     tags: [],
     availability: 'available',
     isNew: false,
@@ -7803,7 +9598,7 @@ Idealny do zastosowań wymagających precyzyjnego cięcia etykiet o różnych d�
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 1937.35,
-    images: [],
+    images: ['/images/products/P1123335-041.png'],
     tags: [],
     availability: 'available',
     isNew: false,
@@ -7828,7 +9623,7 @@ Znacząco przyspiesza proces etykietowania — operator pobiera już odklejoną 
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 856.22,
-    images: [],
+    images: ['/images/products/P1123335-042.png'],
     tags: [],
     availability: 'available',
     isNew: false,
@@ -7853,7 +9648,7 @@ Umożliwia druk bezprzewodowy z komputerów, tabletów i smartfonów przez sieć
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 1619.38,
-    images: [],
+    images: ['/images/products/P1083320-037C.png'],
     tags: [],
     availability: 'available',
     isNew: false,
@@ -7879,7 +9674,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 1400.68,
-    images: [],
+    images: ['/images/products/P1123335-035.png'],
     tags: [],
     availability: 'available',
     isNew: false,
@@ -8624,7 +10419,7 @@ Wymienna hot-swap — wymiana w 5 sekund bez wyłączania drukarki. Jedna bateri
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 373.36,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/BTRY-MPP-34MA1-01.png'],
     tags: ['logistyka', 'magazyn'],
     availability: 'available',
     isNew: false,
@@ -8651,7 +10446,7 @@ Kompatybilna z drukarkami ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Technologia PowerPr
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 573.38,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/BTRY-MPP-EXT1-01.png'],
     tags: ['logistyka', 'magazyn', 'outdoor'],
     availability: 'available',
     isNew: false,
@@ -8670,15 +10465,15 @@ Kompatybilna z drukarkami ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Technologia PowerPr
   {
     id: 'zebra-charger-1slot-zq5',
     slug: 'zebra-ladowarka-1-gniazdowa-zq5-zq6',
-    name: 'Ładowarka 1-gniazdowa do baterii Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 Plus',
+    name: 'Ładowarka 1-gniazdowa do baterii Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus',
     shortDescription: 'Ładowarka pojedyncza do baterii PowerPrecision+ serii ZQ500/ZQ600 Plus',
-    description: `Oryginalna ładowarka Zebra 1-gniazdowa do baterii PowerPrecision+ drukarek mobilnych ZQ511, ZQ521, ZQ610, ZQ620. Kontrolowane ładowanie wydłuża żywotność baterii o 30% w porównaniu z ładowaniem przez USB.
+    description: `Oryginalna ładowarka Zebra 1-gniazdowa do baterii PowerPrecision+ drukarek mobilnych ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Kontrolowane ładowanie wydłuża żywotność baterii o 30% w porównaniu z ładowaniem przez USB.
 
 Czas ładowania baterii 3250 mAh: ok. 2,5–3 godziny. Zawiera zasilacz sieciowy EU. Idealna do pojedynczych stanowisk roboczych.`,
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 505.51,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/SAC-MPP-1BCHGEU1-01.png'],
     tags: ['logistyka', 'magazyn'],
     availability: 'available',
     isNew: false,
@@ -8697,15 +10492,15 @@ Czas ładowania baterii 3250 mAh: ok. 2,5–3 godziny. Zawiera zasilacz sieciowy
   {
     id: 'zebra-charger-3slot-zq5',
     slug: 'zebra-ladowarka-3-gniazdowa-zq5-zq6',
-    name: 'Ładowarka 3-gniazdowa do baterii Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 Plus',
+    name: 'Ładowarka 3-gniazdowa do baterii Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus',
     shortDescription: 'Ładowarka 3-gniazdowa do baterii PowerPrecision+ serii ZQ500/ZQ600 Plus — do flot mobilnych',
-    description: `Oryginalna ładowarka Zebra 3-gniazdowa do jednoczesnego ładowania 3 baterii PowerPrecision+ drukarek mobilnych ZQ511, ZQ521, ZQ610, ZQ620. Kontrolowane ładowanie wydłuża żywotność baterii.
+    description: `Oryginalna ładowarka Zebra 3-gniazdowa do jednoczesnego ładowania 3 baterii PowerPrecision+ drukarek mobilnych ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Kontrolowane ładowanie wydłuża żywotność baterii.
 
 Idealna do flot mobilnych — wystarczy jedna ładowarka na 3 stanowiska. Zawiera zasilacz sieciowy EU. Kompaktowa konstrukcja na blat lub regał.`,
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 1273.77,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/SAC-MPP-3BCHGEU1-01.png'],
     tags: ['logistyka', 'magazyn'],
     availability: 'available',
     isNew: false,
@@ -8724,15 +10519,15 @@ Idealna do flot mobilnych — wystarczy jedna ładowarka na 3 stanowiska. Zawier
   {
     id: 'zebra-ac-adapter-zq5',
     slug: 'zebra-zasilacz-ac-zq5-zq6',
-    name: 'Zasilacz AC do drukarki Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 Plus',
+    name: 'Zasilacz AC do drukarki Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus',
     shortDescription: 'Zasilacz sieciowy AC do drukarek mobilnych Zebra serii ZQ/QLn',
-    description: `Oryginalny zasilacz sieciowy Zebra AC do drukarek mobilnych ZQ511, ZQ521, ZQ610, ZQ620, QLn220, QLn320, QLn420. Umożliwia jednoczesne zasilanie drukarki i ładowanie baterii z gniazdka sieciowego.
+    description: `Oryginalny zasilacz sieciowy Zebra AC do drukarek mobilnych ZQ511, ZQ521, ZQ610, ZQ620, ZQ630, QLn220, QLn320, QLn420. Umożliwia jednoczesne zasilanie drukarki i ładowanie baterii z gniazdka sieciowego.
 
 Przydatny przy pracy stacjonarnej (np. punkt serwisowy, recepcja) lub jako zapasowy zasilacz na stanowisko ładowania.`,
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 248.16,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1031365-042.png'],
     tags: ['logistyka', 'magazyn'],
     availability: 'available',
     isNew: false,
@@ -8740,7 +10535,7 @@ Przydatny przy pracy stacjonarnej (np. punkt serwisowy, recepcja) lub jako zapas
     specifications: [
       { name: 'Part Number', value: 'P1031365-042' },
       { name: 'Typ', value: 'Zasilacz AC (EU)' },
-      { name: 'Kompatybilność', value: 'ZQ511, ZQ521, ZQ610, ZQ620, QLn' },
+      { name: 'Kompatybilność', value: 'ZQ511, ZQ521, ZQ610, ZQ620, ZQ630, QLn' },
     ],
     applications: ['Zasilanie sieciowe', 'Ładowanie baterii'],
     compatibleAccessories: [],
@@ -8758,7 +10553,7 @@ Etui umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia do
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 249.17,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1063406-038.png'],
     tags: ['logistyka', 'outdoor'],
     availability: 'available',
     isNew: false,
@@ -8784,7 +10579,7 @@ Niezbędny do pracy na zewnątrz (deszcz, śnieg), na rampach załadunkowych i w
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 523.24,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1063406-043.png'],
     tags: ['logistyka', 'outdoor'],
     availability: 'unavailable',
     isNew: false,
@@ -8804,15 +10599,15 @@ Niezbędny do pracy na zewnątrz (deszcz, śnieg), na rampach załadunkowych i w
   {
     id: 'zebra-usb-cable-zq5',
     slug: 'zebra-kabel-usb-twist-lock-zq5-zq6',
-    name: 'Kabel USB z Twist Lock do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 Plus',
+    name: 'Kabel USB z Twist Lock do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus',
     shortDescription: 'Kabel USB Micro-B z blokadą Twist Lock do drukarek mobilnych Zebra serii ZQ500/ZQ600',
-    description: `Oryginalny kabel USB Zebra z blokadą Twist Lock do drukarek mobilnych ZQ511, ZQ521, ZQ610, ZQ620. Blokada Twist Lock zapobiega przypadkowemu odłączeniu kabla podczas pracy.
+    description: `Oryginalny kabel USB Zebra z blokadą Twist Lock do drukarek mobilnych ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Blokada Twist Lock zapobiega przypadkowemu odłączeniu kabla podczas pracy.
 
 Używany do serwisu, aktualizacji firmware i konfiguracji drukarki z komputera.`,
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 74.77,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1063406-045.png'],
     tags: ['logistyka'],
     availability: 'available',
     isNew: false,
@@ -8830,13 +10625,13 @@ Używany do serwisu, aktualizacji firmware i konfiguracji drukarki z komputera.`
   {
     id: 'zebra-usb-adapter-zq5',
     slug: 'zebra-adapter-usb-zq5-zq6',
-    name: 'Adapter USB Micro A/B do USB-A do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 Plus',
+    name: 'Adapter USB Micro A/B do USB-A do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus',
     shortDescription: 'Krótki adapter USB OTG do drukarek mobilnych Zebra serii ZQ500/ZQ600',
-    description: `Adapter USB Micro A/B do USB-A (15 cm) do drukarek mobilnych Zebra ZQ511, ZQ521, ZQ610, ZQ620. Umożliwia podłączenie standardowych urządzeń USB (pendrive, czytnik kart) do portu USB OTG drukarki.`,
+    description: `Adapter USB Micro A/B do USB-A (15 cm) do drukarek mobilnych Zebra ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Umożliwia podłączenie standardowych urządzeń USB (pendrive, czytnik kart) do portu USB OTG drukarki.`,
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 32.90,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1063406-047.png'],
     tags: ['logistyka'],
     availability: 'available',
     isNew: false,
@@ -8845,12 +10640,42 @@ Używany do serwisu, aktualizacji firmware i konfiguracji drukarki z komputera.`
       { name: 'Part Number', value: 'P1063406-047' },
       { name: 'Typ', value: 'Adapter USB Micro A/B → USB-A (OTG)' },
       { name: 'Długość', value: '15 cm' },
-      { name: 'Kompatybilność', value: 'ZQ511, ZQ521, ZQ610, ZQ620' },
+      { name: 'Kompatybilność', value: 'ZQ511, ZQ521, ZQ610, ZQ620, ZQ630' },
     ],
     applications: ['Podłączenie USB', 'Serwis'],
     compatibleAccessories: [],
     downloads: [],
     createdAt: '2026-02-13',
+  },
+  {
+    id: 'zebra-battery-zq630',
+    slug: 'zebra-bateria-6800mah-zq630-plus',
+    name: 'Bateria 6800 mAh (4-cell) do Zebra ZQ630 Plus',
+    shortDescription: 'Oryginalna bateria PowerPrecision+ 6800 mAh 4-cell — dedykowana do ZQ630 Plus',
+    description: `Oryginalna bateria zapasowa Zebra PowerPrecision+ Li-Ion 6800 mAh (4-cell) dedykowana do mobilnej drukarki etykiet ZQ630 Plus. Większa pojemność niż standardowe baterie 3250/6500 mAh z serii ZQ500/ZQ600 — zapewnia najdłuższy czas pracy w całej rodzinie drukarek mobilnych Zebra.
+
+Technologia PowerPrecision+ monitoruje stan baterii, informuje o konieczności wymiany i optymalizuje ładowanie. Wymienna hot-swap — wymiana baterii bez wyłączania drukarki. Napięcie 7,4 VDC, pojemność nominalna 6600 mAh / minimalna 6,8 Ah.
+
+Jedna bateria wystarcza na 1200–1500 etykiet standardowego rozmiaru (100×150 mm). Czas ładowania w ładowarce 1-gniazdowej: ok. 4–5 godzin.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 582.41,
+    images: ['/images/products/BTRY-MPP-68MA1-01.png'],
+    tags: ['logistyka', 'magazyn', 'outdoor'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'BTRY-MPP-68MA1-01' },
+      { name: 'Pojemność', value: '6800 mAh (4-cell)' },
+      { name: 'Napięcie', value: '7,4 VDC' },
+      { name: 'Technologia', value: 'Li-Ion PowerPrecision+' },
+      { name: 'Kompatybilność', value: 'Zebra ZQ630 Plus' },
+    ],
+    applications: ['Bateria zapasowa', 'Praca wielozmianowa', 'Praca w niskich temperaturach'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
   },
   {
     id: 'zebra-soft-case-zq521',
@@ -8863,7 +10688,7 @@ Etui umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia do
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 274.07,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1063406-037.png'],
     tags: ['logistyka', 'outdoor'],
     availability: 'available',
     isNew: false,
@@ -8889,7 +10714,7 @@ Niezbędny do pracy na zewnątrz (deszcz, śnieg), na rampach załadunkowych i w
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 503.11,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1063406-044.png'],
     tags: ['logistyka', 'outdoor'],
     availability: 'available',
     isNew: false,
@@ -8918,7 +10743,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 387.18,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1031365-044.png'],
     tags: ['logistyka', 'retail'],
     availability: 'available',
     isNew: false,
@@ -8944,7 +10769,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 393.44,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1031365-029.png'],
     tags: ['logistyka', 'retail'],
     availability: 'available',
     isNew: false,
@@ -8970,7 +10795,7 @@ Solidna metalowa konstrukcja z mechanizmem szybkiego zwalniania. Pasuje do stand
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 157.41,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1031365-028.png'],
     tags: ['logistyka', 'retail'],
     availability: 'unavailable',
     isNew: false,
@@ -8996,7 +10821,7 @@ Kabel z blokadą zapobiega przypadkowemu odłączeniu podczas pracy.`,
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 90.39,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1031365-055.png'],
     tags: ['logistyka'],
     availability: 'available',
     isNew: false,
@@ -9022,7 +10847,7 @@ Długość kabla zapewnia wygodne podłączenie drukarki na stanowisku roboczym.
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 154.89,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1031365-053.png'],
     tags: ['retail', 'logistyka'],
     availability: 'unavailable',
     isNew: false,
@@ -9040,7 +10865,7 @@ Długość kabla zapewnia wygodne podłączenie drukarki na stanowisku roboczym.
   {
     id: 'zebra-car-charger-zq5',
     slug: 'zebra-zasilacz-samochodowy-zq5',
-    name: 'Zasilacz samochodowy (zapalniczka) do Zebra ZQ511 / ZQ610',
+    name: 'Zasilacz samochodowy (zapalniczka) do Zebra ZQ511 / ZQ610 / ZQ630 Plus',
     shortDescription: 'Zasilacz 12/24V do gniazda zapalniczki — ładowanie drukarki mobilnej w pojeździe',
     description: `Oryginalny zasilacz samochodowy Zebra do gniazda zapalniczki (12/24V DC). Umożliwia ładowanie baterii i zasilanie mobilnej drukarki etykiet bezpośrednio w pojeździe — podczas trasy kurierskiej, na rampie załadunkowej lub w samochodzie serwisowym.
 
@@ -9048,7 +10873,7 @@ Kompatybilny z drukarkami ZQ511, ZQ521, ZQ610, ZQ620 i ZQ630 (Plus). Automatyczn
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 198.59,
-    images: ['/images/products/placeholder.svg'],
+    images: ['/images/products/P1031359.png'],
     tags: ['logistyka', 'outdoor'],
     availability: 'available',
     isNew: false,
@@ -9062,6 +10887,777 @@ Kompatybilny z drukarkami ZQ511, ZQ521, ZQ610, ZQ620 i ZQ630 (Plus). Automatyczn
     compatibleAccessories: [],
     downloads: [],
     createdAt: '2026-02-13',
+  },
+  // --- Akcesoria dedykowane do ZQ310 / ZQ320 Plus (rodzina MPM) ---
+  {
+    id: 'zebra-battery-zq3',
+    slug: 'zebra-bateria-2280mah-zq310-zq320-plus',
+    name: 'Bateria 2280 mAh do Zebra ZQ310 Plus / ZQ320 Plus',
+    shortDescription: 'Oryginalna bateria PowerPrecision+ 2280 mAh do drukarek mobilnych Zebra serii ZQ300 Plus',
+    description: `Oryginalna bateria zapasowa Zebra PowerPrecision+ Li-Ion 2280 mAh do mobilnych drukarek ZQ310 Plus i ZQ320 Plus. Technologia PowerPrecision+ monitoruje stan baterii i informuje o konieczności wymiany.
+
+Wymienna — wymiana w kilka sekund bez narzędzi. Jedna bateria wystarcza na 300–500 paragonów przy umiarkowanym obciążeniu. Czas ładowania: ~2,5 godziny w ładowarce 1-gniazdowej.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 418.81,
+    images: ['/images/products/BTRY-MPM-22MA1-01.png'],
+    tags: ['logistyka', 'retail'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'BTRY-MPM-22MA1-01' },
+      { name: 'Pojemność', value: '2280 mAh' },
+      { name: 'Technologia', value: 'Li-Ion PowerPrecision+' },
+      { name: 'Kompatybilność', value: 'Zebra ZQ310 Plus, ZQ320 Plus' },
+    ],
+    applications: ['Bateria zapasowa', 'Praca wielozmianowa'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+  {
+    id: 'zebra-cradle-zq3',
+    slug: 'zebra-stacja-dokujaca-zq310-zq320-plus',
+    name: 'Stacja dokująca 1-gniazdowa do Zebra ZQ310 Plus / ZQ320 Plus',
+    shortDescription: 'Stacja dokująca z ładowaniem — ładuje drukarkę i zapasową baterię jednocześnie',
+    description: `Oryginalna stacja dokująca Zebra 1-gniazdowa do drukarek mobilnych ZQ310 Plus i ZQ320 Plus. Ładuje baterię w drukarce i jednocześnie zapasową baterię w dodatkowym gnieździe.
+
+Idealna do biura, magazynu lub stanowiska kurierskiego — drukarka wraca na stację po zmianie, rano jest naładowana i gotowa do pracy. Zawiera zasilacz sieciowy EU.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 395.35,
+    images: ['/images/products/CRD-MPM-1SCHGEU1-01.png'],
+    tags: ['logistyka', 'retail'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'CRD-MPM-1SCHGEU1-01' },
+      { name: 'Typ', value: 'Stacja dokująca 1-gniazdowa z ładowarką baterii' },
+      { name: 'Zasilacz', value: 'W zestawie (EU)' },
+      { name: 'Kompatybilność', value: 'Zebra ZQ310 Plus, ZQ320 Plus' },
+    ],
+    applications: ['Ładowanie drukarki', 'Ładowanie zapasowej baterii', 'Stanowisko kurierskie'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+  {
+    id: 'zebra-charger-1slot-zq3',
+    slug: 'zebra-ladowarka-1-gniazdowa-zq310-zq320-plus',
+    name: 'Ładowarka 1-gniazdowa do baterii Zebra ZQ310 Plus / ZQ320 Plus',
+    shortDescription: 'Ładowarka pojedyncza do baterii PowerPrecision+ serii ZQ300',
+    description: `Oryginalna ładowarka Zebra 1-gniazdowa do baterii PowerPrecision+ 2280 mAh drukarek mobilnych ZQ310 Plus i ZQ320 Plus. Kontrolowane ładowanie wydłuża żywotność baterii.
+
+Czas ładowania baterii 2280 mAh: ~2,5 godziny. Zawiera zasilacz sieciowy EU. Idealna do pojedynczych stanowisk roboczych.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 418.52,
+    images: ['/images/products/SAC-MPM-1BCHGEU1-01.png'],
+    tags: ['logistyka', 'retail'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'SAC-MPM-1BCHGEU1-01' },
+      { name: 'Liczba gniazd', value: '1' },
+      { name: 'Zasilacz', value: 'W zestawie (EU)' },
+      { name: 'Kompatybilność', value: 'Baterie ZQ310 Plus, ZQ320 Plus' },
+    ],
+    applications: ['Ładowanie baterii', 'Stanowisko pojedyncze'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+  {
+    id: 'zebra-charger-3slot-zq3',
+    slug: 'zebra-ladowarka-3-gniazdowa-zq310-zq320-plus',
+    name: 'Ładowarka 3-gniazdowa do baterii Zebra ZQ310 Plus / ZQ320 Plus',
+    shortDescription: 'Ładowarka 3-gniazdowa do baterii PowerPrecision+ serii ZQ300 — do flot mobilnych',
+    description: `Oryginalna ładowarka Zebra 3-gniazdowa do jednoczesnego ładowania 3 baterii PowerPrecision+ 2280 mAh drukarek mobilnych ZQ310 Plus i ZQ320 Plus.
+
+Idealna do flot kurierskich i mobilnych — wystarczy jedna ładowarka na 3 stanowiska. Zawiera zasilacz sieciowy EU. Kompaktowa konstrukcja na blat lub regał.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 1162.83,
+    images: ['/images/products/SAC-MPM-3BCHGEU1-01.png'],
+    tags: ['logistyka', 'magazyn'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'SAC-MPM-3BCHGEU1-01' },
+      { name: 'Liczba gniazd', value: '3' },
+      { name: 'Zasilacz', value: 'W zestawie (EU)' },
+      { name: 'Kompatybilność', value: 'Baterie ZQ310 Plus, ZQ320 Plus' },
+    ],
+    applications: ['Ładowanie baterii', 'Flota drukarek mobilnych', 'Praca wielozmianowa'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+  {
+    id: 'zebra-belt-clip-zq3',
+    slug: 'zebra-klips-paska-zq310-zq320-plus',
+    name: 'Klips do paska do Zebra ZQ310 Plus / ZQ320 Plus',
+    shortDescription: 'Klips montażowy do paska — mocowanie drukarki mobilnej ZQ300 na biodrze',
+    description: `Oryginalny klips Zebra do mocowania mobilnej drukarki ZQ310 Plus lub ZQ320 Plus na pasku. Umożliwia noszenie drukarki na biodrze bez użycia futerału — szybki dostęp do urządzenia i wygodna praca jednoręczna.
+
+Solidna konstrukcja z mechanizmem szybkiego zwalniania. Pasuje do standardowych pasków.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 136.95,
+    images: ['/images/products/KIT-MPM-BLTCLP5-01.png'],
+    tags: ['logistyka', 'retail'],
+    availability: 'unavailable',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'KIT-MPM-BLTCLP5-01' },
+      { name: 'Typ', value: 'Klips do paska' },
+      { name: 'Kompatybilność', value: 'Zebra ZQ310 Plus, ZQ320 Plus' },
+    ],
+    applications: ['Noszenie na pasku', 'Praca jednoręczna'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+  {
+    id: 'zebra-soft-case-zq310',
+    slug: 'zebra-futeral-zq310',
+    name: 'Futerał ochronny do Zebra ZQ310 Plus',
+    shortDescription: 'Miękki futerał z paskiem do mobilnej drukarki ZQ310 Plus (2")',
+    description: `Oryginalny miękki futerał ochronny Zebra do mobilnej drukarki ZQ310 Plus (2-calowej). Chroni drukarkę przed zarysowaniami, bryzgami i drobnymi uderzeniami. Pasek na ramię w zestawie.
+
+Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia dostęp do wydrukowanych paragonów i etykiet. Dedykowany do drukarek 2-calowych ZQ310 Plus.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 162.81,
+    images: ['/images/products/SG-MPM-SC21-01.png'],
+    tags: ['logistyka', 'retail'],
+    availability: 'unavailable',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'SG-MPM-SC21-01' },
+      { name: 'Typ', value: 'Futerał ochronny z paskiem' },
+      { name: 'Kompatybilność', value: 'Zebra ZQ310 Plus' },
+    ],
+    applications: ['Ochrona drukarki', 'Praca w terenie', 'Noszenie na ramieniu'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+  {
+    id: 'zebra-soft-case-zq320',
+    slug: 'zebra-futeral-zq320-plus',
+    name: 'Futerał ochronny do Zebra ZQ320 Plus',
+    shortDescription: 'Miękki futerał z paskiem do mobilnej drukarki ZQ320 Plus (3")',
+    description: `Oryginalny miękki futerał ochronny Zebra do mobilnej drukarki ZQ320 Plus (3-calowej). Chroni drukarkę przed zarysowaniami, bryzgami i drobnymi uderzeniami. Pasek na ramię w zestawie.
+
+Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia dostęp do wydrukowanych paragonów i etykiet. Dedykowany do drukarek 3-calowych ZQ320 Plus.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 162.81,
+    images: ['/images/products/SG-MPM-SC31-01.png'],
+    tags: ['logistyka', 'retail'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'SG-MPM-SC31-01' },
+      { name: 'Typ', value: 'Futerał ochronny z paskiem' },
+      { name: 'Kompatybilność', value: 'Zebra ZQ320 Plus' },
+    ],
+    applications: ['Ochrona drukarki', 'Praca w terenie', 'Noszenie na ramieniu'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+  // --- Akcesoria MPV (ZQ210 / ZQ220 Plus) ---
+  {
+    id: 'zebra-battery-zq220plus',
+    slug: 'zebra-bateria-2500mah-zq220-plus',
+    name: 'Bateria 2500 mAh do Zebra ZQ220 Plus',
+    shortDescription: 'Oryginalna bateria Li-Ion 2500 mAh do drukarki mobilnej Zebra ZQ220 Plus',
+    description: `Oryginalna bateria zapasowa Zebra Li-Ion 2500 mAh (7,4 V) do mobilnej drukarki ZQ220 Plus, ZQ120 Plus i ZR138. Wymienna przez operatora — wymiana w kilka sekund bez narzędzi. Jedna bateria wystarcza na min. 500 etykiet standardowego rozmiaru. Ładowanie przez USB-C: poniżej 4 godzin.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    images: ['/images/products/BTRY-MPV-25MAC1-01.png'],
+    tags: ['retail', 'logistyka'],
+    priceFrom: 84.16,
+    availability: 'unavailable',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'BTRY-MPV-25MAC1-01' },
+      { name: 'Pojemność', value: '2500 mAh' },
+      { name: 'Napięcie', value: '7,4 V' },
+      { name: 'Technologia', value: 'Li-Ion' },
+      { name: 'Kompatybilność', value: 'ZQ220 Plus, ZQ120 Plus, ZR138' },
+    ],
+    applications: ['Bateria zapasowa', 'Praca wielozmianowa'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+  {
+    id: 'zebra-battery-zq210',
+    slug: 'zebra-bateria-1500mah-zq210',
+    name: 'Bateria 1500 mAh do Zebra ZQ210',
+    shortDescription: 'Oryginalna bateria Li-Ion 1500 mAh do drukarki mobilnej Zebra ZQ210',
+    description: `Oryginalna bateria zapasowa Zebra Li-Ion 1500 mAh (7,4 V) do mobilnej drukarki ZQ210, ZQ220 (starsza generacja) i ZQ112. Wymienna przez operatora. Ładowanie przez USB-C z dowolnej ładowarki USB.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    images: ['/images/products/P1105740-01.png'],
+    tags: ['retail'],
+    availability: 'unavailable',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'P1105740-01' },
+      { name: 'Pojemność', value: '1500 mAh' },
+      { name: 'Napięcie', value: '7,4 V' },
+      { name: 'Technologia', value: 'Li-Ion' },
+      { name: 'Kompatybilność', value: 'ZQ210, ZQ220, ZQ112' },
+    ],
+    applications: ['Bateria zapasowa', 'Praca wielozmianowa'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+  {
+    id: 'zebra-belt-clip-zq2',
+    slug: 'zebra-klips-do-paska-zq210-zq220',
+    name: 'Klips do paska do Zebra ZQ210 / ZQ220 Plus (5 szt.)',
+    shortDescription: 'Oryginalny klips do paska (5 szt.) do drukarek mobilnych Zebra ZQ210, ZQ220 Plus, ZQ310, ZQ320',
+    description: `Oryginalny klips do paska Zebra (opakowanie 5 sztuk) kompatybilny z drukarkami mobilnymi ZQ210, ZQ220, ZQ220 Plus, ZQ310, ZQ320. Pozwala nosić drukarkę na pasku podczas pracy w terenie.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    images: ['/images/products/KIT-MPV-BLTCP21-05.png'],
+    tags: ['retail', 'logistyka'],
+    priceFrom: 140.71,
+    availability: 'unavailable',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'KIT-MPV-BLTCP21-05' },
+      { name: 'Ilość w opakowaniu', value: '5 szt.' },
+      { name: 'Kompatybilność', value: 'ZQ210, ZQ220, ZQ220 Plus, ZQ310, ZQ320' },
+    ],
+    applications: ['Noszenie drukarki na pasku', 'Praca mobilna'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+  {
+    id: 'zebra-soft-case-zq210',
+    slug: 'zebra-futeral-zq210',
+    name: 'Futerał ochronny do Zebra ZQ210',
+    shortDescription: 'Miękki futerał z paskiem na ramię do drukarki ZQ210 — podnosi IP do IP54',
+    description: `Oryginalny miękki futerał ochronny Zebra do mobilnej drukarki ZQ210 (2-calowej) z paskiem na ramię. Podnosi klasę ochrony drukarki z IP43 do IP54. Otwarta góra umożliwia drukowanie bez wyjmowania.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    images: ['/images/products/SG-MPV-SC21-01.png'],
+    tags: ['retail'],
+    priceFrom: 57.20,
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'SG-MPV-SC21-01' },
+      { name: 'Typ', value: 'Futerał ochronny z paskiem' },
+      { name: 'Kompatybilność', value: 'ZQ210, ZQ112, ZR118' },
+    ],
+    applications: ['Ochrona drukarki', 'Podniesienie IP do IP54', 'Noszenie na ramieniu'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+  {
+    id: 'zebra-soft-case-zq220plus',
+    slug: 'zebra-futeral-zq220-plus',
+    name: 'Futerał ochronny do Zebra ZQ220 Plus',
+    shortDescription: 'Miękki futerał z paskiem na ramię do drukarki ZQ220 Plus (3")',
+    description: `Oryginalny miękki futerał ochronny Zebra do mobilnej drukarki ZQ220 Plus (3-calowej) z paskiem na ramię. Chroni drukarkę przed zarysowaniami i uderzeniami. Otwarta góra umożliwia drukowanie bez wyjmowania.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    images: ['/images/products/SG-MPV-SC31-01.png'],
+    tags: ['retail', 'logistyka'],
+    priceFrom: 57.20,
+    availability: 'unavailable',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'SG-MPV-SC31-01' },
+      { name: 'Typ', value: 'Futerał ochronny z paskiem' },
+      { name: 'Kompatybilność', value: 'ZQ220 Plus, ZQ120 Plus, ZR138' },
+    ],
+    applications: ['Ochrona drukarki', 'Praca w terenie', 'Noszenie na ramieniu'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+  {
+    id: 'zebra-charger-zq220plus',
+    slug: 'zebra-ladowarka-1slot-zq220-plus',
+    name: 'Ładowarka baterii 1-gniazdowa do Zebra ZQ220 Plus',
+    shortDescription: 'Ładowarka 1-slot do baterii drukarki mobilnej Zebra ZQ220 Plus',
+    description: `Oryginalna ładowarka baterii Zebra 1-gniazdowa do mobilnej drukarki ZQ220 Plus, ZQ120 Plus i ZR138. LED informuje o stanie ładowania (czerwony = ładowanie, zielony = pełna). Zasilacz i kabel USB-C w zestawie.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    images: ['/images/products/CHG-MPV-SNGBC1-01.png'],
+    tags: ['retail', 'logistyka'],
+    priceFrom: 64.10,
+    availability: 'unavailable',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'CHG-MPV-SNGBC1-01' },
+      { name: 'Typ', value: 'Ładowarka baterii 1-gniazdowa' },
+      { name: 'Kompatybilność', value: 'ZQ220 Plus, ZQ120 Plus, ZR138' },
+    ],
+    applications: ['Ładowanie baterii zapasowych', 'Stacja ładowania'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+]
+
+// ============================================
+// AKCESORIA TERMINALI MOBILNYCH TC22/TC27
+// ============================================
+
+const tc22Accessories: Product[] = [
+  {
+    id: 'zebra-battery-tc2-standard',
+    slug: 'zebra-bateria-3800mah-tc22-tc27',
+    name: 'Akumulator 3800 mAh do Zebra TC22 / TC27',
+    shortDescription: 'Oryginalna bateria PowerPrecision 3800 mAh — wymienna hot-swap',
+    description: `Oryginalna bateria zapasowa Zebra PowerPrecision Li-Ion 3800 mAh do terminali mobilnych TC22 i TC27. Zapewnia ok. 10 godzin typowej pracy (Wi-Fi + skanowanie). Wymienna hot-swap — wymiana w 5 sekund bez wyłączania urządzenia. Technologia PowerPrecision monitoruje stan baterii w czasie rzeczywistym.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 270,
+    images: ['/images/products/BTRY-TC2L-2XMAXX-01.png'],
+    tags: ['retail', 'magazyn'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: true,
+    specifications: [
+      { name: 'Part Number', value: 'BTRY-TC2L-2XMAXX-01' },
+      { name: 'Pojemność', value: '3800 mAh' },
+      { name: 'Technologia', value: 'Li-Ion PowerPrecision' },
+      { name: 'Kompatybilność', value: 'TC22, TC27' },
+    ],
+    applications: ['Bateria zapasowa', 'Praca wielozmianowa'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-15',
+  },
+  {
+    id: 'zebra-battery-tc2-ble',
+    slug: 'zebra-bateria-3800mah-ble-tc22-tc27',
+    name: 'Akumulator 3800 mAh BLE do Zebra TC22 / TC27',
+    shortDescription: 'Bateria PowerPrecision 3800 mAh z BLE do śledzenia lokalizacji',
+    description: `Oryginalna bateria Zebra PowerPrecision Li-Ion 3800 mAh z wbudowanym nadajnikiem Bluetooth Low Energy (BLE). Umożliwia śledzenie lokalizacji terminala nawet gdy jest wyłączony — administrator widzi pozycję urządzenia w aplikacji Zebra Device Tracker. Wymienna hot-swap, kompatybilna z TC22 i TC27.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 361,
+    images: ['/images/products/BTRY-TC2L-2XMAXB-01.png'],
+    tags: ['retail', 'magazyn'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'BTRY-TC2L-2XMAXB-01' },
+      { name: 'Pojemność', value: '3800 mAh' },
+      { name: 'Technologia', value: 'Li-Ion PowerPrecision + BLE' },
+      { name: 'Kompatybilność', value: 'TC22, TC27' },
+    ],
+    applications: ['Bateria zapasowa', 'Śledzenie lokalizacji terminala'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-15',
+  },
+  {
+    id: 'zebra-battery-tc2-extended',
+    slug: 'zebra-bateria-5200mah-tc22-tc27',
+    name: 'Akumulator 5200 mAh do Zebra TC22 / TC27',
+    shortDescription: 'Bateria rozszerzona PowerPrecision 5200 mAh — do 14h pracy',
+    description: `Oryginalna bateria rozszerzona Zebra PowerPrecision Li-Ion 5200 mAh do TC22 i TC27. Zapewnia ok. 14 godzin pracy na jednym ładowaniu — pełna zmiana bez konieczności wymiany. Rekomendowana dla kurierów i pracowników terenowych z TC27 (moduł 5G zużywa więcej energii). Wymienna hot-swap.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 401,
+    images: ['/images/products/BTRY-TC2L-3XMAXX-01.png'],
+    tags: ['logistyka', 'outdoor'],
+    availability: 'unavailable',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'BTRY-TC2L-3XMAXX-01' },
+      { name: 'Pojemność', value: '5200 mAh' },
+      { name: 'Technologia', value: 'Li-Ion PowerPrecision' },
+      { name: 'Kompatybilność', value: 'TC22, TC27' },
+    ],
+    applications: ['Praca całodzienna', 'Kurierzy i teren', 'Praca wielozmianowa'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-15',
+  },
+  {
+    id: 'zebra-cradle-tc2-1slot',
+    slug: 'zebra-stacja-dokujaca-1slot-tc22-tc27',
+    name: 'Stacja dokująca 1-gniazdowa do Zebra TC22 / TC27',
+    shortDescription: 'Pojedyncza stacja dokująca — ładowanie terminala',
+    description: `Pojedyncza stacja dokująca Zebra do TC22/TC27. Ładuje terminal i baterię jednocześnie. Kompaktowa konstrukcja na biurko lub ladę sklepową.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 404,
+    images: ['/images/products/CRD-TC2L-BS1CO-01.png'],
+    tags: ['retail', 'magazyn'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'CRD-TC2L-BS1CO-01' },
+      { name: 'Typ', value: 'Stacja dokująca 1-gniazdowa' },
+      { name: 'Kompatybilność', value: 'TC22, TC27' },
+    ],
+    applications: ['Ładowanie terminala', 'Stacja biurkowa'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-15',
+  },
+  {
+    id: 'zebra-cradle-tc2-1slot-ethernet',
+    slug: 'zebra-stacja-dokujaca-ethernet-tc22-tc27',
+    name: 'Stacja dokująca Ethernet do Zebra TC22 / TC27',
+    shortDescription: 'Stacja dokująca z portem Ethernet — ładowanie + sieć przewodowa',
+    description: `Pojedyncza stacja dokująca Zebra z wbudowanym portem Ethernet do TC22/TC27. Ładuje terminal i jednocześnie zapewnia połączenie z siecią LAN. Idealna na stanowiskach stacjonarnych wymagających stabilnego połączenia przewodowego.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 1098,
+    images: ['/images/products/CRD-TC2L-SE1ET-01.png'],
+    tags: ['retail', 'magazyn'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'CRD-TC2L-SE1ET-01' },
+      { name: 'Typ', value: 'Stacja dokująca z Ethernet' },
+      { name: 'Kompatybilność', value: 'TC22, TC27' },
+    ],
+    applications: ['Ładowanie + sieć LAN', 'Stanowisko stacjonarne'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-15',
+  },
+  {
+    id: 'zebra-cradle-tc2-1slot-1battery',
+    slug: 'zebra-stacja-ladowania-1terminal-1bateria-tc22-tc27',
+    name: 'Stacja ładowania 1 terminal + 1 bateria do Zebra TC22 / TC27',
+    shortDescription: 'Stacja ładująca terminal i zapasową baterię jednocześnie',
+    description: `Stacja ładowania Zebra na 1 terminal + 1 baterię zapasową do TC22/TC27. Ładuje urządzenie i jednocześnie przygotowuje baterię zapasową — idealne rozwiązanie do pracy wielozmianowej.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 1197,
+    images: ['/images/products/CRD-TC2L-BS11B-01.png'],
+    tags: ['magazyn', 'logistyka'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'CRD-TC2L-BS11B-01' },
+      { name: 'Typ', value: 'Stacja ładowania 1 terminal + 1 bateria' },
+      { name: 'Kompatybilność', value: 'TC22, TC27' },
+    ],
+    applications: ['Praca wielozmianowa', 'Ładowanie terminala i baterii'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-15',
+  },
+  {
+    id: 'zebra-cradle-tc2-5slot',
+    slug: 'zebra-stacja-ladowania-5slot-tc22-tc27',
+    name: 'Stacja ładowania 5-gniazdowa do Zebra TC22 / TC27',
+    shortDescription: 'Stacja ładowania na 5 terminali jednocześnie',
+    description: `Stacja ładowania Zebra na 5 terminali TC22/TC27 jednocześnie. Oszczędza miejsce i eliminuje plątaninę kabli przy większych flotach. Montaż na biurku lub ścianie.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 2343,
+    images: ['/images/products/CRD-TC2L-BS5CO-01.png'],
+    tags: ['magazyn', 'logistyka'],
+    availability: 'unavailable',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'CRD-TC2L-BS5CO-01' },
+      { name: 'Typ', value: 'Stacja ładowania 5-gniazdowa' },
+      { name: 'Kompatybilność', value: 'TC22, TC27' },
+    ],
+    applications: ['Flota terminali', 'Ładowanie zbiorcze'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-15',
+  },
+  {
+    id: 'zebra-cradle-tc2-5slot-ethernet',
+    slug: 'zebra-stacja-ladowania-5slot-ethernet-tc22-tc27',
+    name: 'Stacja ładowania Ethernet 5-gniazdowa do Zebra TC22 / TC27',
+    shortDescription: 'Stacja 5-gniazdowa z Ethernet — ładowanie + sieć dla całej floty',
+    description: `Stacja ładowania Zebra na 5 terminali TC22/TC27 z wbudowanym switchem Ethernet. Każde gniazdo zapewnia ładowanie i połączenie LAN. Rozwiązanie dla dużych flot wymagających nocnego synchronizowania danych.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 3515,
+    images: ['/images/products/CRD-TC2L-SE5ET-01.png'],
+    tags: ['magazyn', 'logistyka'],
+    availability: 'unavailable',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'CRD-TC2L-SE5ET-01' },
+      { name: 'Typ', value: 'Stacja ładowania 5-gniazdowa z Ethernet' },
+      { name: 'Kompatybilność', value: 'TC22, TC27' },
+    ],
+    applications: ['Flota terminali', 'Nocna synchronizacja danych'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-15',
+  },
+  {
+    id: 'zebra-charger-tc2-4battery',
+    slug: 'zebra-ladowarka-4-akumulatory-tc22-tc27',
+    name: 'Ładowarka na 4 akumulatory do Zebra TC22 / TC27',
+    shortDescription: 'Ładowarka 4-gniazdowa na baterie TC22/TC27',
+    description: `Ładowarka Zebra na 4 akumulatory TC22/TC27 jednocześnie. LED wskaźnik stanu ładowania dla każdego gniazda. Idealna do pracy wielozmianowej — przygotowuje zapas naładowanych baterii na cały dzień.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 1362,
+    images: ['/images/products/SAC-TC2L-4SCHG-01.png'],
+    tags: ['magazyn', 'logistyka'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'SAC-TC2L-4SCHG-01' },
+      { name: 'Typ', value: 'Ładowarka 4-gniazdowa na baterie' },
+      { name: 'Kompatybilność', value: 'TC22, TC27' },
+    ],
+    applications: ['Praca wielozmianowa', 'Ładowanie baterii zapasowych'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-15',
+  },
+  {
+    id: 'zebra-cup-tc2-battery',
+    slug: 'zebra-adapter-ladowarki-akumulatorow-tc22-tc27',
+    name: 'Adapter stacji na ładowarkę akumulatorów TC22 / TC27',
+    shortDescription: 'Zamiennik gniazda stacji dokującej na ładowarkę baterii',
+    description: `Adapter Zebra zamieniający gniazdo stacji dokującej CRD-TC2L na ładowarkę akumulatorów TC22/TC27. Pozwala ładować 4 baterie w stacji 5-gniazdowej zamiast terminali.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    images: ['/images/products/CRDCUP-TC2L4B-01.png'],
+    tags: ['magazyn'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'CRDCUP-TC2L4B-01' },
+      { name: 'Typ', value: 'Adapter ładowania baterii' },
+      { name: 'Kompatybilność', value: 'TC22, TC27' },
+    ],
+    applications: ['Rozbudowa stacji ładowania'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-15',
+  },
+  {
+    id: 'zebra-psu-50w',
+    slug: 'zebra-zasilacz-50w',
+    name: 'Zasilacz sieciowy 50W Zebra',
+    shortDescription: 'Zasilacz 12V/50W do stacji dokujących Zebra',
+    description: `Oryginalny zasilacz sieciowy Zebra 12V 50W do pojedynczych stacji dokujących TC22/TC27. Kabel zasilający sprzedawany osobno (CBL-DC-388A1-01).`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    images: ['/images/products/PWR-BGA12V50W0WW.png'],
+    tags: ['retail', 'magazyn'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'PWR-BGA12V50W0WW' },
+      { name: 'Moc', value: '50W' },
+      { name: 'Napięcie', value: '12V' },
+    ],
+    applications: ['Zasilanie stacji dokującej'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-15',
+  },
+  {
+    id: 'zebra-psu-108w',
+    slug: 'zebra-zasilacz-108w',
+    name: 'Zasilacz sieciowy 108W Zebra',
+    shortDescription: 'Zasilacz 12V/108W do stacji wielogniazdowych Zebra',
+    description: `Oryginalny zasilacz sieciowy Zebra 12V 108W do stacji ładowania wielogniazdowych (5-slot) TC22/TC27. Kabel zasilający sprzedawany osobno (CBL-DC-381A1-01).`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    images: ['/images/products/PWR-BGA12V108W0WW.png'],
+    tags: ['magazyn', 'logistyka'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'PWR-BGA12V108W0WW' },
+      { name: 'Moc', value: '108W' },
+      { name: 'Napięcie', value: '12V' },
+    ],
+    applications: ['Zasilanie stacji 5-gniazdowej'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-15',
+  },
+  {
+    id: 'zebra-cable-dc-388',
+    slug: 'zebra-kabel-zasilajacy-388',
+    name: 'Kabel do zasilacza sieciowego Zebra (CBL-DC-388A1-01)',
+    shortDescription: 'Kabel zasilający AC do zasilacza 50W Zebra',
+    description: `Kabel zasilający AC do zasilacza sieciowego Zebra PWR-BGA12V50W0WW (50W). Do stacji dokujących 1-gniazdowych TC22/TC27.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 34,
+    images: ['/images/products/CBL-DC-388A1-01.png'],
+    tags: ['retail', 'magazyn'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'CBL-DC-388A1-01' },
+      { name: 'Typ', value: 'Kabel zasilający AC' },
+    ],
+    applications: ['Zasilanie stacji dokującej'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-15',
+  },
+  {
+    id: 'zebra-cable-dc-381',
+    slug: 'zebra-kabel-zasilajacy-381',
+    name: 'Kabel do zasilacza sieciowego Zebra (CBL-DC-381A1-01)',
+    shortDescription: 'Kabel zasilający AC do zasilacza 108W Zebra',
+    description: `Kabel zasilający AC do zasilacza sieciowego Zebra PWR-BGA12V108W0WW (108W). Do stacji ładowania 5-gniazdowych TC22/TC27.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 98,
+    images: ['/images/products/CBL-DC-381A1-01.png'],
+    tags: ['magazyn', 'logistyka'],
+    availability: 'unavailable',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'CBL-DC-381A1-01' },
+      { name: 'Typ', value: 'Kabel zasilający AC' },
+    ],
+    applications: ['Zasilanie stacji 5-gniazdowej'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-15',
+  },
+  {
+    id: 'zebra-trigger-tc2',
+    slug: 'zebra-uchwyt-pistoletowy-tc22-tc27',
+    name: 'Uchwyt pistoletowy do Zebra TC22 / TC27',
+    shortDescription: 'Trigger handle — ergonomiczny uchwyt do intensywnego skanowania',
+    description: `Uchwyt pistoletowy Zebra (trigger handle) do TC22/TC27. Ergonomiczny kształt zmniejsza zmęczenie nadgarstka przy wielogodzinnym skanowaniu. Spust umożliwia skanowanie jedną ręką. Montaż bez narzędzi — terminal wkłada się i zatrzaskuje.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 818,
+    images: ['/images/products/TRG-TC2L-SNP1-01.png'],
+    tags: ['magazyn', 'logistyka'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: true,
+    specifications: [
+      { name: 'Part Number', value: 'TRG-TC2L-SNP1-01' },
+      { name: 'Typ', value: 'Uchwyt pistoletowy (trigger handle)' },
+      { name: 'Kompatybilność', value: 'TC22, TC27' },
+    ],
+    applications: ['Intensywne skanowanie', 'Kompletacja magazynowa', 'Inwentaryzacja'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-15',
+  },
+  {
+    id: 'zebra-boot-tc2',
+    slug: 'zebra-etui-gumowe-tc22-tc27',
+    name: 'Gumowe etui ochronne do Zebra TC22 / TC27',
+    shortDescription: 'Etui ochronne (boot case) — dodatkowa ochrona przed upadkami',
+    description: `Oryginalne gumowe etui ochronne Zebra do TC22/TC27. Amortyzuje upadki, chroni narożniki i krawędzie urządzenia. Podnosi odporność na upadki z 1,5 m do 1,8 m na beton. Otwory na przyciski, kamerę, skaner i port USB-C.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 175,
+    images: ['/images/products/SG-TC2L-BOOT-01.png'],
+    tags: ['retail', 'magazyn'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: true,
+    specifications: [
+      { name: 'Part Number', value: 'SG-TC2L-BOOT-01' },
+      { name: 'Typ', value: 'Etui ochronne (boot case)' },
+      { name: 'Kompatybilność', value: 'TC22, TC27' },
+    ],
+    applications: ['Ochrona przed upadkami', 'Praca w magazynie'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-15',
+  },
+  {
+    id: 'zebra-holster-tc2',
+    slug: 'zebra-kabura-do-paska-tc22-tc27',
+    name: 'Kabura do paska do Zebra TC22 / TC27',
+    shortDescription: 'Kabura na pas — wygodne noszenie terminala',
+    description: `Kabura Zebra do noszenia TC22/TC27 na pasku. Obrotowy klips umożliwia szybkie wyjmowanie terminala jedną ręką. Zabezpieczenie przed wypadnięciem. Kompatybilna z terminalem w etui ochronnym SG-TC2L-BOOT-01.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 225,
+    images: ['/images/products/SG-TC2L-HLSTR1-01.png'],
+    tags: ['retail', 'logistyka'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'SG-TC2L-HLSTR1-01' },
+      { name: 'Typ', value: 'Kabura do paska' },
+      { name: 'Kompatybilność', value: 'TC22, TC27' },
+    ],
+    applications: ['Noszenie na pasku', 'Praca terenowa'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-15',
+  },
+  {
+    id: 'zebra-lanyard-tc2',
+    slug: 'zebra-smyczka-tc22-tc27',
+    name: 'Smyczka do Zebra TC22 / TC27',
+    shortDescription: 'Smyczka na nadgarstek — zabezpieczenie przed upuszczeniem',
+    description: `Smyczka Zebra na nadgarstek do TC22/TC27. Zabezpiecza terminal przed przypadkowym upuszczeniem podczas pracy. Regulowana długość.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    images: ['/images/products/50-12500-066.png'],
+    tags: ['retail', 'magazyn'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: '50-12500-066' },
+      { name: 'Typ', value: 'Smyczka na nadgarstek' },
+      { name: 'Kompatybilność', value: 'TC22, TC27' },
+    ],
+    applications: ['Zabezpieczenie przed upuszczeniem'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-15',
   },
 ]
 
@@ -10528,6 +13124,8 @@ function makeLabelComparison(highlightSeries: string) {
 
 // Przypisanie FAQ, comparison, downloads, editorialReview i subcategoryIds per seria
 thermalTransferLabels76.forEach(p => {
+  // Images
+  p.images = ['/images/products/tt-paper-labels.png']
   // Subcategory
   p.subcategoryIds = ['etykiety-termotransferowe-papierowe']
   // FAQ
@@ -10596,7 +13194,7 @@ Kompatybilne z drukarkami Zebra ZD220d, ZD421d i innymi modelami obsługującymi
     categoryId: 'materialy-eksploatacyjne',
     manufacturerId: 'zebra',
     priceFrom: 44.12,
-    images: [],
+    images: ['/images/products/800262-125.png'],
     tags: ['magazyn', 'logistyka', 'retail'],
     availability: 'available',
     isNew: false,
@@ -10627,7 +13225,7 @@ Kompatybilne z drukarkami Zebra ZD220d, ZD421d i innymi modelami obsługującymi
     categoryId: 'materialy-eksploatacyjne',
     manufacturerId: 'zebra',
     priceFrom: 55.12,
-    images: [],
+    images: ['/images/products/800263-205.png'],
     tags: ['magazyn', 'logistyka', 'retail'],
     availability: 'available',
     isNew: false,
@@ -10658,7 +13256,7 @@ Kompatybilne z drukarkami Zebra ZD220d, ZD421d i innymi modelami obsługującymi
     categoryId: 'materialy-eksploatacyjne',
     manufacturerId: 'zebra',
     priceFrom: 36.11,
-    images: [],
+    images: ['/images/products/800261-105.png'],
     tags: ['magazyn', 'logistyka', 'retail'],
     availability: 'available',
     isNew: false,
@@ -10689,7 +13287,7 @@ Kompatybilne z drukarkami Zebra ZD220d, ZD421d i innymi modelami obsługującymi
     categoryId: 'materialy-eksploatacyjne',
     manufacturerId: 'zebra',
     priceFrom: 92.11,
-    images: [],
+    images: ['/images/products/800264-155.png'],
     tags: ['magazyn', 'logistyka', 'retail'],
     availability: 'available',
     isNew: false,
@@ -11319,6 +13917,7 @@ Kompatybilne z drukarkami Zebra ZD421t, ZD621t, ZT411 i innymi modelami termotra
 
 // Przypisanie subcategoryIds do etykiet TT papierowych fi25
 paperLabels.forEach(p => {
+  p.images = ['/images/products/tt-paper-labels.png']
   p.subcategoryIds = ['etykiety-termotransferowe-papierowe']
 })
 
@@ -12305,6 +14904,7 @@ Kompatybilne z drukarkami Zebra ZD421t, ZD621t, ZT411 i innymi modelami termotra
 
 // Przypisanie subcategoryIds do etykiet foliowych
 foilLabels.forEach(p => {
+  p.images = ['/images/products/tt-foil-labels.png']
   p.subcategoryIds = ['etykiety-termotransferowe-foliowe']
 })
 
@@ -12449,6 +15049,883 @@ const foilLabels76: Product[] = foilLabel76Specs.map(s => {
 })
 
 // ============================================
+// OPASKI IDENTYFIKACYJNE ZEBRA Z-BAND
+// ============================================
+
+const wristbands: Product[] = [
+  {
+    id: 'zebra-zband-direct-adult',
+    slug: 'zebra-zband-direct-adult',
+    name: 'Zebra Z-Band Direct — opaski dla dorosłych (25×279 mm)',
+    shortDescription: 'Opaski identyfikacyjne termiczne Z-Band Direct 1"×11" do drukark ZD510-HC i HC100 — opakowanie 6 kartridży × 200 szt.',
+    description: `Zebra Z-Band Direct 10006995K to najlepszy wybór dla szpitali i placówek medycznych, które potrzebują trwałych opasek identyfikacyjnych do identyfikacji pacjentów dorosłych z kodem kreskowym.
+
+Opaski Z-Band Direct to ekonomiczne, termiczne opaski polipropylenowe z zapięciem samoprzylepnym (adhesive closure). Rozmiar 25,4 × 279,4 mm (1" × 11") idealny dla dorosłych pacjentów. Druk termiczny bezpośredni — bez taśmy barwiącej. Powłoka antybakteryjna (antimicrobial coating) — jedyne takie opaski na rynku.
+
+Kartridż Smart Chip zapewnia automatyczną kalibrację drukarki — wystarczy włożyć kartridż, a drukarka ZD510-HC lub HC100 rozpoznaje typ opaski i ustawia optymalne parametry druku. Brak kontaktu operatora z opaskami podczas ładowania i usuwania kartridża.
+
+Kody kreskowe pozostają czytelne przez cały czas pobytu pacjenta — odporne na wodę, mydło, pianki, alkohole i środki dezynfekcyjne stosowane w szpitalach. Testy laboratoryjne potwierdzają 2–6× większą trwałość niż u konkurencji. Bezlateksowe (latex-free).
+
+Opakowanie: 6 kartridży × 200 opasek = 1 200 szt./opak. Sufiks "K" w numerze katalogowym oznacza opakowanie zbiorcze (case).
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+    categoryId: 'materialy-eksploatacyjne',
+    subcategoryIds: ['opaski-identyfikacyjne'],
+    manufacturerId: 'zebra',
+    priceFrom: 1080.72,
+    images: ['/images/products/10006995K.png'],
+    tags: ['healthcare'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: true,
+    specifications: [
+      { name: 'Part Number', value: '10006995K' },
+      { name: 'Typ', value: 'Z-Band Direct (termiczna bezpośrednia)' },
+      { name: 'Materiał', value: 'Polipropylen z powłoką antybakteryjną' },
+      { name: 'Rozmiar opaski', value: '25,4 × 279,4 mm (1" × 11")' },
+      { name: 'Przeznaczenie', value: 'Dorośli' },
+      { name: 'Zapięcie', value: 'Samoprzylepne (adhesive closure)' },
+      { name: 'Ilość w kartridżu', value: '200 szt.' },
+      { name: 'Kartridży w opakowaniu', value: '6' },
+      { name: 'Łączna ilość', value: '1 200 szt./opak.' },
+      { name: 'Kolor', value: 'Biały' },
+      { name: 'Druk', value: 'Termiczny bezpośredni (direct thermal)' },
+      { name: 'Smart Chip', value: 'Tak (automatyczna kalibracja)' },
+      { name: 'Odporność', value: 'Woda, mydło, alkohole, środki dezynfekcyjne, UV' },
+      { name: 'Bezlateksowe', value: 'Tak (latex-free)' },
+      { name: 'Kompatybilne drukarki', value: 'Zebra ZD510-HC, HC100' },
+      { name: 'Warianty kolorystyczne', value: 'Biały, czerwony (-1K), niebieski (-2K), zielony (-3K), fioletowy (-4K), różowy (-5K), pomarańczowy (-6K), żółty (-7K)' },
+    ],
+    applications: [
+      'Identyfikacja pacjentów dorosłych na oddziałach szpitalnych',
+      'Izba przyjęć i SOR — szybkie drukowanie opasek przy rejestracji',
+      'Weryfikacja tożsamości przed podaniem leków (5 Praw)',
+      'Blok operacyjny — potwierdzenie tożsamości przed zabiegiem',
+      'Laboratoria — kojarzenie próbek z pacjentem',
+      'Banki krwi — identyfikacja dawców i biorców',
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: [],
+    faq: [
+      {
+        question: 'Ile opasek Z-Band Direct jest w opakowaniu 10006995K?',
+        answer: 'Opakowanie 10006995K zawiera 6 kartridży po 200 opasek = 1 200 szt. łącznie. Sufiks "K" oznacza opakowanie zbiorcze (case). Pojedyncze kartridże są dostępne pod numerem 10006995 (bez "K").',
+      },
+      {
+        question: 'Czy opaski Z-Band Direct są odporne na wodę i dezynfekcję?',
+        answer: 'Tak. Opaski Z-Band Direct są odporne na wodę, mydło, pianki, alkohole i środki dezynfekcyjne stosowane w szpitalach. Kody kreskowe pozostają czytelne przez cały pobyt pacjenta. Testy laboratoryjne Zebra potwierdzają 2–6× większą trwałość niż u konkurencji.',
+      },
+      {
+        question: 'Do jakich drukarek pasują opaski Z-Band Direct?',
+        answer: 'Opaski Z-Band Direct w kartridżach pasują do drukarek Zebra ZD510-HC (aktualna generacja) i HC100 (wycofany model). Kartridże są kompatybilne wstecz — te same wkłady działają w obu drukarkach.',
+      },
+      {
+        question: 'Czy opaski Z-Band Direct mają powłokę antybakteryjną?',
+        answer: 'Tak. Opaski Z-Band Direct posiadają unikalną powłokę antybakteryjną (antimicrobial coating) — jest to jedyny producent opasek identyfikacyjnych oferujący tę technologię. Dodatkowo opaski są bezlateksowe (latex-free).',
+      },
+      {
+        question: 'Jakie są alternatywy dla opasek Zebra Z-Band Direct?',
+        answer: 'Alternatywami są: opaski Zebra Z-Band UltraSoft (najmiększe, dedykowane do neonatologii), Z-Band QuickClip (z zamknięciem klipsowym), Z-Band Fun (kolorowe, do eventów). Wśród konkurencji: SATO SoftTouch Wristbands i opaski PDC Healthcare.',
+      },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/z-band-direct-wristbands-spec-sheet-en-us.pdf', size: 'PDF' },
+    ],
+    createdAt: '2026-02-14',
+    sameAs: 'https://www.zebra.com/us/en/products/supplies/wristbands/z-band-direct.html',
+  },
+  {
+    id: 'zebra-zband-direct-child',
+    slug: 'zebra-zband-direct-child',
+    name: 'Zebra Z-Band Direct — opaski dziecięce (25×178 mm)',
+    shortDescription: 'Opaski identyfikacyjne termiczne Z-Band Direct 1"×7" dla dzieci do drukarek ZD510-HC i HC100 — opakowanie 6 kartridży × 300 szt.',
+    description: `Zebra Z-Band Direct 10006999K to najlepszy wybór dla oddziałów pediatrycznych i klinik dziecięcych, które potrzebują wygodnych i trwałych opasek identyfikacyjnych dla małych pacjentów.
+
+Opaski Z-Band Direct w rozmiarze dziecięcym 25,4 × 177,8 mm (1" × 7") — krótsze niż opaski dla dorosłych, idealnie dopasowane do nadgarstków i kostek dzieci. Druk termiczny bezpośredni na polipropylenowej opasce z powłoką antybakteryjną. Zapięcie samoprzylepne, bezpieczne dla skóry dziecka. Bezlateksowe (latex-free).
+
+Kartridż Smart Chip — automatyczna kalibracja w drukarkach ZD510-HC i HC100. Odporne na wodę, mydło i środki dezynfekcyjne. 2–6× trwalsze niż opaski konkurencji.
+
+Opakowanie: 6 kartridży × 300 opasek = 1 800 szt./opak.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+    categoryId: 'materialy-eksploatacyjne',
+    subcategoryIds: ['opaski-identyfikacyjne'],
+    manufacturerId: 'zebra',
+    priceFrom: 1266.05,
+    images: ['/images/products/10006999K.png'],
+    tags: ['healthcare'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: '10006999K' },
+      { name: 'Typ', value: 'Z-Band Direct (termiczna bezpośrednia)' },
+      { name: 'Materiał', value: 'Polipropylen z powłoką antybakteryjną' },
+      { name: 'Rozmiar opaski', value: '25,4 × 177,8 mm (1" × 7")' },
+      { name: 'Przeznaczenie', value: 'Dzieci (pediatria)' },
+      { name: 'Zapięcie', value: 'Samoprzylepne (adhesive closure)' },
+      { name: 'Ilość w kartridżu', value: '300 szt.' },
+      { name: 'Kartridży w opakowaniu', value: '6' },
+      { name: 'Łączna ilość', value: '1 800 szt./opak.' },
+      { name: 'Kolor', value: 'Biały' },
+      { name: 'Druk', value: 'Termiczny bezpośredni (direct thermal)' },
+      { name: 'Smart Chip', value: 'Tak (automatyczna kalibracja)' },
+      { name: 'Odporność', value: 'Woda, mydło, alkohole, środki dezynfekcyjne, UV' },
+      { name: 'Bezlateksowe', value: 'Tak (latex-free)' },
+      { name: 'Kompatybilne drukarki', value: 'Zebra ZD510-HC, HC100' },
+    ],
+    applications: [
+      'Identyfikacja pacjentów na oddziałach pediatrycznych',
+      'Izba przyjęć — rejestracja dzieci',
+      'Weryfikacja tożsamości przed podaniem leków dzieciom',
+      'Oddziały chirurgii dziecięcej',
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: [],
+    faq: [
+      {
+        question: 'Ile opasek dziecięcych Z-Band Direct jest w opakowaniu 10006999K?',
+        answer: 'Opakowanie 10006999K zawiera 6 kartridży po 300 opasek = 1 800 szt. łącznie. Więcej opasek w kartridżu niż w wersji dla dorosłych, ponieważ opaski dziecięce są krótsze (178 mm vs 279 mm).',
+      },
+      {
+        question: 'Czym różnią się opaski dziecięce od dorosłych?',
+        answer: 'Opaski dziecięce Z-Band Direct (10006999K) mają rozmiar 25,4 × 177,8 mm (1" × 7") — są krótsze o 102 mm od opasek dorosłych (279 mm). Szerokość identyczna (25,4 mm). Materiał, powłoka antybakteryjna i trwałość identyczne. Kartridż mieści 300 szt. (vs 200 dla dorosłych).',
+      },
+      {
+        question: 'Jakie są alternatywy dla opasek dziecięcych Zebra Z-Band Direct?',
+        answer: 'Alternatywami są: opaski Zebra Z-Band UltraSoft 10015357K (najmiększe, 1"×7"), Z-Band QuickClip 10027729K (zamknięcie klipsowe). Wśród konkurencji: SATO SoftTouch i PDC Healthcare Soft.',
+      },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/z-band-direct-wristbands-spec-sheet-en-us.pdf', size: 'PDF' },
+    ],
+    createdAt: '2026-02-14',
+    sameAs: 'https://www.zebra.com/us/en/products/supplies/wristbands/z-band-direct.html',
+  },
+  {
+    id: 'zebra-zband-direct-infant',
+    slug: 'zebra-zband-direct-infant',
+    name: 'Zebra Z-Band Direct — opaski niemowlęce (25×152 mm)',
+    shortDescription: 'Opaski identyfikacyjne termiczne Z-Band Direct 1"×6" dla niemowląt do drukarek ZD510-HC i HC100 — opakowanie 6 kartridży × 350 szt.',
+    description: `Zebra Z-Band Direct 10006998K to najlepszy wybór dla oddziałów neonatologicznych i porodówek, które potrzebują bezpiecznych, delikatnych i trwałych opasek identyfikacyjnych dla noworodków.
+
+Opaski Z-Band Direct w rozmiarze niemowlęcym 25,4 × 152,4 mm (1" × 6") — najkrótsze w ofercie, zaprojektowane specjalnie na nadgarstki i kostki noworodków. Druk termiczny bezpośredni z powłoką antybakteryjną. Zapięcie samoprzylepne, bezlateksowe (latex-free), bezpieczne dla delikatnej skóry noworodka.
+
+Kartridż Smart Chip — automatyczna kalibracja. Kody kreskowe czytelne przez cały okres pobytu w szpitalu. Odporne na wodę, mydło, środki dezynfekcyjne.
+
+Dla skrajnie delikatnej skóry (np. wcześniaki) rekomendujemy opaski Z-Band UltraSoft — najmiększe opaski identyfikacyjne na rynku.
+
+Opakowanie: 6 kartridży × 350 opasek = 2 100 szt./opak.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+    categoryId: 'materialy-eksploatacyjne',
+    subcategoryIds: ['opaski-identyfikacyjne'],
+    manufacturerId: 'zebra',
+    priceFrom: 1425.20,
+    images: ['/images/products/10006998K.png'],
+    tags: ['healthcare'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: '10006998K' },
+      { name: 'Typ', value: 'Z-Band Direct (termiczna bezpośrednia)' },
+      { name: 'Materiał', value: 'Polipropylen z powłoką antybakteryjną' },
+      { name: 'Rozmiar opaski', value: '25,4 × 152,4 mm (1" × 6")' },
+      { name: 'Przeznaczenie', value: 'Niemowlęta (neonatologia)' },
+      { name: 'Zapięcie', value: 'Samoprzylepne (adhesive closure)' },
+      { name: 'Ilość w kartridżu', value: '350 szt.' },
+      { name: 'Kartridży w opakowaniu', value: '6' },
+      { name: 'Łączna ilość', value: '2 100 szt./opak.' },
+      { name: 'Kolor', value: 'Biały' },
+      { name: 'Druk', value: 'Termiczny bezpośredni (direct thermal)' },
+      { name: 'Smart Chip', value: 'Tak (automatyczna kalibracja)' },
+      { name: 'Odporność', value: 'Woda, mydło, alkohole, środki dezynfekcyjne, UV' },
+      { name: 'Bezlateksowe', value: 'Tak (latex-free)' },
+      { name: 'Kompatybilne drukarki', value: 'Zebra ZD510-HC, HC100' },
+    ],
+    applications: [
+      'Identyfikacja noworodków na oddziale neonatologicznym',
+      'Porodówki — natychmiastowa identyfikacja po porodzie',
+      'Oddziały intensywnej terapii noworodka (OITN)',
+      'Kojarzenie noworodek–matka (mother-baby matching)',
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: [],
+    faq: [
+      {
+        question: 'Ile opasek niemowlęcych Z-Band Direct jest w opakowaniu 10006998K?',
+        answer: 'Opakowanie 10006998K zawiera 6 kartridży po 350 opasek = 2 100 szt. łącznie. Największa ilość w kartridżu spośród wszystkich rozmiarów Z-Band Direct, ponieważ opaski niemowlęce są najkrótsze (152 mm).',
+      },
+      {
+        question: 'Czy opaski Z-Band Direct są bezpieczne dla noworodków?',
+        answer: 'Tak. Opaski Z-Band Direct są bezlateksowe (latex-free) z powłoką antybakteryjną. Dla skrajnie delikatnej skóry (wcześniaki, OITN) rekomendujemy model Z-Band UltraSoft (10015356K) — najmiększe opaski identyfikacyjne na rynku, specjalnie zaprojektowane do neonatologii.',
+      },
+      {
+        question: 'Jakie są alternatywy dla opasek niemowlęcych Zebra Z-Band Direct?',
+        answer: 'Alternatywami są: opaski Zebra Z-Band UltraSoft 10015356K (najmiększe, 0,75"×11" dedykowane do neonatologii) i Z-Band Direct 10006997K (0,75"×11" — najwęższe, 19 mm). Wśród konkurencji: SATO SoftTouch Infant i PDC Healthcare ComfortBand.',
+      },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/z-band-direct-wristbands-spec-sheet-en-us.pdf', size: 'PDF' },
+    ],
+    createdAt: '2026-02-14',
+    sameAs: 'https://www.zebra.com/us/en/products/supplies/wristbands/z-band-direct.html',
+  },
+]
+
+// ============================================
+// AKCESORIA ZEBRA ZD510-HC
+// ============================================
+
+const zd510Accessories: Product[] = [
+  {
+    id: 'zebra-printhead-zd510-hc',
+    slug: 'zebra-printhead-zd510-hc',
+    name: 'Głowica drukująca Zebra ZD510-HC (300 dpi)',
+    shortDescription: 'Oryginalna głowica drukująca 300 dpi do drukarki opasek Zebra ZD510-HC — P1100266-003',
+    description: `Oryginalna głowica drukująca Zebra P1100266-003 do drukarki opasek identyfikacyjnych ZD510-HC. Rozdzielczość 300 dpi (12 dots/mm). Wymiana bez narzędzi (tool-less) — Element Energy Equalizer (E3) wydłuża żywotność głowicy.
+
+Zalecana wymiana co ok. 50 000–100 000 opasek w zależności od intensywności użytkowania i typu materiału Z-Band. Gwarancja producenta 12 miesięcy pod warunkiem stosowania oryginalnych materiałów Zebra Z-Band.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 679.54,
+    images: ['/images/products/P1100266-003.png'],
+    tags: ['healthcare'],
+    availability: 'unavailable',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'P1100266-003' },
+      { name: 'Rozdzielczość', value: '300 dpi (12 dots/mm)' },
+      { name: 'Typ', value: 'Głowica drukująca (printhead)' },
+      { name: 'Kompatybilność', value: 'Zebra ZD510-HC' },
+      { name: 'Wymiana', value: 'Bez narzędzi (tool-less)' },
+      { name: 'Żywotność', value: '~50 000–100 000 opasek' },
+      { name: 'Gwarancja', value: '12 miesięcy (oryginalne materiały)' },
+    ],
+    applications: [
+      'Wymiana zużytej głowicy w drukarce ZD510-HC',
+      'Zapasowa głowica do szpitalnej drukarki opasek',
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+  {
+    id: 'zebra-platen-roller-zd510-hc',
+    slug: 'zebra-platen-roller-zd510-hc',
+    name: 'Wałek dociskowy Zebra ZD510-HC (platen roller)',
+    shortDescription: 'Oryginalny wałek dociskowy do drukarki opasek Zebra ZD510-HC — P1100266-008',
+    description: `Oryginalny wałek dociskowy (platen roller) Zebra P1100266-008 do drukarki opasek identyfikacyjnych ZD510-HC. Wymiana bez narzędzi (tool-less) — wałek dociskowy zapewnia równomierny docisk opaski do głowicy drukującej.
+
+Zalecana wymiana przy pogorszeniu jakości druku lub nierównym nadruku. Gwarancja producenta 12 miesięcy.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 554.24,
+    images: ['/images/products/P1100266-008.png'],
+    tags: ['healthcare'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'P1100266-008' },
+      { name: 'Typ', value: 'Wałek dociskowy (platen roller)' },
+      { name: 'Kompatybilność', value: 'Zebra ZD510-HC' },
+      { name: 'Wymiana', value: 'Bez narzędzi (tool-less)' },
+      { name: 'Gwarancja', value: '12 miesięcy' },
+    ],
+    applications: [
+      'Wymiana zużytego wałka w drukarce ZD510-HC',
+      'Poprawa jakości druku na opaskach',
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+]
+
+// ============================================
+// DRUKARKI KART PLASTIKOWYCH
+// ============================================
+
+const cardPrinters: Product[] = [
+  {
+    id: 'zebra-zc100',
+    slug: 'zebra-zc100',
+    name: 'Zebra ZC100',
+    shortDescription: 'Drukarka kart plastikowych entry-level — jednostronna, 300 dpi, termosublimacja, USB/Ethernet',
+    description: `Dla kogo? Zebra ZC100 to kompaktowa drukarka kart plastikowych zaprojektowana dla małych biur, recepcji hotelowych, klubów fitness i sklepów — wszędzie tam, gdzie potrzebujesz drukować identyfikatory, karty lojalnościowe lub karty członkowskie w niewielkich nakładach (do 500 kart/rok).
+
+Drukuje pełnokolorowe karty PVC CR-80 w technologii termosublimacyjnej (dye-sublimation) z rozdzielczością 300 dpi. Prędkość: 150 kart/h w trybie kolorowym YMCKO (24 s/karta) lub 700 kart/h w trybie monochromatycznym (5 s/karta). Podajnik na 100 kart, odbiornik na 50 kart.
+
+Opcjonalne kodowanie paskiem magnetycznym (HiCo/LoCo) pozwala tworzyć karty hotelowe i dostępowe. Wariant z zestawem startowym (ZC11-0000Q00EM00) zawiera taśmę YMCKO na 200 wydruków, 200 kart PVC i oprogramowanie CardStudio Classic.
+
+Łączność: USB 2.0 standardowo, Ethernet 10/100 opcjonalnie. Platforma Link-OS umożliwia zdalne zarządzanie przez przeglądarkę. Wymiary: 202 × 348 × 215 mm, waga 3,5 kg. Gwarancja producenta: 2 lata (drukarka) + 2 lata (głowica).
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+    categoryId: 'drukarki-kart',
+    subcategoryIds: [],
+    manufacturerId: 'zebra',
+    priceFrom: 3419.55,
+    images: ['/images/products/zc100_1_s.png', '/images/products/zc100_2_s.png', '/images/products/zc100_3_s.png'],
+    tags: ['retail'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Metoda druku', value: 'Termosublimacja (dye-sublimation)' },
+      { name: 'Rozdzielczość', value: '300 dpi (11,8 dot/mm)' },
+      { name: 'Druk jedno-/dwustronny', value: 'Jednostronny' },
+      { name: 'Prędkość druku (YMCKO)', value: '150 kart/h (24 s/karta)' },
+      { name: 'Prędkość druku (mono K)', value: '700 kart/h (5 s/karta)' },
+      { name: 'Format karty', value: 'CR-80 (85,6 × 54 mm), ISO 7810 ID-1' },
+      { name: 'Grubość karty', value: '0,25–1,02 mm (10–40 mil)' },
+      { name: 'Pojemność podajnika', value: '100 kart (0,76 mm)' },
+      { name: 'Pojemność odbiornika', value: '50 kart' },
+      { name: 'Pamięć', value: '512 MB flash' },
+      { name: 'Łączność (standard)', value: 'USB 2.0' },
+      { name: 'Łączność (opcja)', value: 'Ethernet 10/100' },
+      { name: 'Kodowanie (opcja)', value: 'Pasek magnetyczny HiCo/LoCo (ISO 7811)' },
+      { name: 'Oprogramowanie', value: 'Zebra CardStudio (wersje od Classic do Enterprise)' },
+      { name: 'Zarządzanie', value: 'Link-OS, przeglądarka www, SNMP' },
+      { name: 'Wymiary (szer.×gł.×wys.)', value: '202 × 348 × 215 mm' },
+      { name: 'Waga', value: '3,5 kg' },
+      { name: 'Zasilanie', value: '100–240 V AC, 50/60 Hz' },
+      { name: 'Gwarancja', value: '2 lata drukarka + 2 lata głowica' },
+    ],
+    applications: ['Identyfikatory pracownicze', 'Karty lojalnościowe', 'Karty hotelowe', 'Karty członkowskie (fitness, kluby)', 'Karty rabatowe i gift cards', 'Przepustki gości'],
+    variants: [
+      { partNumber: 'ZC11-0000000EM00', name: 'ZC100 USB', priceFrom: 3419.55, availability: 'available', attributes: {} },
+      { partNumber: 'ZC11-000C000EM00', name: 'ZC100 USB + Ethernet', priceFrom: 4226.55, availability: 'available', attributes: { 'Ethernet': 'Tak' } },
+      { partNumber: 'ZC11-0M00000EM00', name: 'ZC100 USB + Mag', priceFrom: 4445.44, availability: 'available', attributes: { 'Koder magnetyczny': 'Tak' } },
+      { partNumber: 'ZC11-0M0C000EM00', name: 'ZC100 USB + Ethernet + Mag', priceFrom: 5115.59, availability: 'available', attributes: { 'Ethernet': 'Tak', 'Koder magnetyczny': 'Tak' } },
+      { partNumber: 'ZC11-0000Q00EM00', name: 'ZC100 USB + Zestaw startowy', priceFrom: 3704.06, availability: 'available', attributes: { 'CardStudio': 'Tak', 'Taśma YMCKO': 'Tak', 'Karty PVC': '200 szt.' } },
+    ],
+    compatibleAccessories: ['zebra-ribbon-ymcko-zc', 'zebra-ribbon-black-zc', 'zebra-ribbon-white-zc'],
+    relatedAccessories: ['zebra-cards-premier-025', 'zebra-cards-premier-076', 'zebra-cardstudio'],
+    faq: [
+      { question: 'Czym różni się Zebra ZC100 od ZC300?', answer: 'ZC100 to model entry-level — wyłącznie jednostronny, bez opcji Wi-Fi i kodowania RFID. ZC300 oferuje druk dwustronny, enkodery RFID/smart card, Wi-Fi i większą elastyczność konfiguracji. ZC100 jest idealny do małych nakładów (do 500 kart/rok), ZC300 do średnich i dużych.' },
+      { question: 'Ile kosztuje wydruk jednej karty na ZC100?', answer: 'Druk kolorowy YMCKO: taśma 800300-250EM (200 wydruków) ok. 146 zł → 0,73 zł/odcisk + karta PVC blank ok. 0,50 zł = ok. 1,23 zł/karta. Mono czarny: taśma 800300-301 (1500 wydruków) ok. 77 zł → 0,05 zł/odcisk + karta = ok. 0,55 zł/karta.' },
+      { question: 'Czy ZC100 drukuje dwustronnie?', answer: 'Nie. ZC100 to drukarka wyłącznie jednostronna. Jeśli potrzebujesz druku dwustronnego, wybierz Zebra ZC300 w wersji Dual-sided (ZC32-xxx).' },
+      { question: 'Jakie taśmy pasują do ZC100?', answer: 'Wszystkie taśmy z serii 800300-xxx są kompatybilne z ZC100 i ZC300: YMCKO kolorowa (800300-250EM, 200 wydruków), czarna mono (800300-301, 1500 wydruków), biała (800300-309EM, 1500 wydruków). Taśmy są identyczne dla obu modeli.' },
+      { question: 'Czy mogę kodować karty magnetyczne na ZC100?', answer: 'Tak, w wariantach ZC11-0Mxx — z wbudowanym koderem magnetycznym ISO 7811 HiCo/LoCo. Karty hotelowe, karty dostępu z paskiem magnetycznym — wszystko to obsługuje ZC100 z koderem.' },
+      { question: 'Co zawiera zestaw startowy ZC11-0000Q00EM00?', answer: 'Drukarka ZC100 USB + taśma YMCKO na 200 kolorowych wydruków + 200 kart PVC blank (0,76 mm) + licencja Zebra CardStudio Classic. Gotowe do pracy od razu po rozpakowaniu.' },
+      { question: 'Jakie są alternatywy dla Zebra ZC100?', answer: 'W podobnej klasie cenowej: Evolis Zenius (od ok. 3 500 zł), Magicard 300 (od ok. 3 200 zł), HID Fargo DTC1250e (od ok. 4 000 zł). TAKMA rekomenduje ZC100 ze względu na platformę Link-OS, zdalne zarządzanie i szerokie wsparcie serwisowe Zebra w Polsce.' },
+    ],
+    comparison: {
+      title: 'Porównanie drukarek kart Zebra',
+      models: [
+        {
+          name: 'Zebra ZC100',
+          slug: 'zebra-zc100',
+          highlight: true,
+          specs: {
+            'Druk': 'Jednostronny',
+            'Rozdzielczość': '300 dpi',
+            'Prędkość (YMCKO)': '150 kart/h',
+            'Kodowanie': 'Magnetyczny (opcja)',
+            'Łączność': 'USB, Ethernet (opcja)',
+            'Cena od': '3 420 zł',
+          },
+        },
+        {
+          name: 'Zebra ZC300',
+          slug: 'zebra-zc300',
+          specs: {
+            'Druk': 'Jedno-/dwustronny',
+            'Rozdzielczość': '300 dpi',
+            'Prędkość (YMCKO)': '140 kart/h',
+            'Kodowanie': 'Mag + RFID + Smart Card',
+            'Łączność': 'USB, Ethernet, Wi-Fi',
+            'Cena od': '4 297 zł',
+          },
+        },
+        {
+          name: 'Zebra ZC350',
+          slug: 'zebra-zc350',
+          specs: {
+            'Druk': 'Jedno-/dwustronny',
+            'Rozdzielczość': '300 dpi',
+            'Prędkość (YMCKO)': '225 kart/h',
+            'Kodowanie': 'Mag + RFID/NFC + SC + UHF',
+            'Łączność': 'USB, Ethernet, Wi-Fi',
+            'Cena od': 'Na zapytanie',
+          },
+        },
+      ],
+    },
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zc100/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Printers/Card/zc100-zc300/spec-sheets/zc100-spec-sheet-en-us.pdf', size: 'PDF' },
+    ],
+    createdAt: '2026-02-14',
+    sameAs: 'https://www.zebra.com/pl/pl/products/printers/card/zc100.html',
+  },
+  {
+    id: 'zebra-zc300',
+    slug: 'zebra-zc300',
+    name: 'Zebra ZC300',
+    shortDescription: 'Drukarka kart plastikowych mid-range — jedno-/dwustronna, 300 dpi, kodowanie RFID/NFC/magnetyczne, Wi-Fi',
+    description: `Dla kogo? Zebra ZC300 to wszechstronna drukarka kart plastikowych zaprojektowana dla przedsiębiorstw, szkół, hoteli i organizacji — idealny wybór do identyfikatorów pracowniczych, e-legitymacji, kart dostępu RFID i kart hotelowych w nakładach od 500 do 5 000 kart/rok.
+
+Drukuje pełnokolorowe karty PVC CR-80 w technologii termosublimacyjnej z rozdzielczością 300 dpi. Dostępna w wersji jednostronnej (ZC31-xxx) i dwustronnej (ZC32-xxx). Prędkość: 140 kart/h kolorowo YMCKO lub do 900 kart/h monochromatycznie. Podajnik na 100 kart, odbiornik na 100 kart.
+
+Zaawansowane opcje kodowania: pasek magnetyczny HiCo/LoCo, enkoder RFID/NFC (Mifare Classic, DESFire, HID iCLASS/Prox, NTAG), smart card kontaktowy (ISO 7816), oraz kombinacje — wszystko w jednym przejściu z drukiem.
+
+Łączność: USB 2.0 + Ethernet 10/100 standardowo, Wi-Fi 802.11ac opcjonalnie. Platforma Link-OS ze zdalnym zarządzaniem. Pamięć: 2 GB flash. Wymiary: 202 × 484 × 234 mm (jednostronna), waga 5,3 kg.
+
+Wariant z zestawem startowym (ZC31-000CQ00EM00 / ZC32-000CQ00EM00) zawiera taśmę YMCKO, 200 kart PVC i CardStudio Classic. Gwarancja: 2 lata drukarka + 2 lata głowica.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+    categoryId: 'drukarki-kart',
+    subcategoryIds: [],
+    manufacturerId: 'zebra',
+    priceFrom: 4297.30,
+    images: ['/images/products/zc300_2_s.png', '/images/products/zc300_1_s.png', '/images/products/zc300_3_s.png', '/images/products/zc300_4_s.png', '/images/products/zc300_5_s.png'],
+    tags: ['retail', 'healthcare'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: true,
+    specifications: [
+      { name: 'Metoda druku', value: 'Termosublimacja (dye-sublimation)' },
+      { name: 'Rozdzielczość', value: '300 dpi (11,8 dot/mm)' },
+      { name: 'Druk jedno-/dwustronny', value: 'Jednostronny (ZC31) / Dwustronny (ZC32)' },
+      { name: 'Prędkość druku (YMCKO)', value: '140 kart/h jednostronnie, 120 kart/h dwustronnie' },
+      { name: 'Prędkość druku (mono K)', value: 'Do 900 kart/h jednostronnie' },
+      { name: 'Format karty', value: 'CR-80 (85,6 × 54 mm), ISO 7810 ID-1' },
+      { name: 'Grubość karty', value: '0,25–1,02 mm (10–40 mil)' },
+      { name: 'Pojemność podajnika', value: '100 kart (0,76 mm)' },
+      { name: 'Pojemność odbiornika', value: '100 kart' },
+      { name: 'Pamięć', value: '2 GB flash' },
+      { name: 'Łączność (standard)', value: 'USB 2.0 + Ethernet 10/100' },
+      { name: 'Łączność (opcja)', value: 'Wi-Fi 802.11ac (2,4/5 GHz)' },
+      { name: 'Kodowanie (opcja)', value: 'Magnetyczny HiCo/LoCo; RFID/NFC (Mifare, DESFire, HID, NTAG); Smart Card ISO 7816' },
+      { name: 'Oprogramowanie', value: 'Zebra CardStudio (wersje od Classic do Enterprise)' },
+      { name: 'Zarządzanie', value: 'Link-OS, przeglądarka www, SNMP, SDK' },
+      { name: 'Wymiary jedno. (szer.×gł.×wys.)', value: '202 × 484 × 234 mm' },
+      { name: 'Wymiary dwustr. (szer.×gł.×wys.)', value: '202 × 563 × 234 mm' },
+      { name: 'Waga', value: '5,3 kg (jedn.) / 6,7 kg (dwustr.)' },
+      { name: 'Zasilanie', value: '100–240 V AC, 50/60 Hz' },
+      { name: 'Gwarancja', value: '2 lata drukarka + 2 lata głowica' },
+    ],
+    applications: ['Identyfikatory pracownicze z RFID', 'E-legitymacje szkolne i studenckie', 'Karty hotelowe RFID', 'Karty dostępu do budynków', 'Karty członkowskie (fitness, kluby)', 'Karty lojalnościowe i rabatowe', 'Przepustki parkingowe'],
+    variants: [
+      { partNumber: 'ZC31-000C000EM00', name: 'ZC300 jednostronna', priceFrom: 4297.30, availability: 'available', attributes: {} },
+      { partNumber: 'ZC31-0M0C000EM00', name: 'ZC300 jednostr. + Mag', priceFrom: 5127.84, availability: 'available', attributes: { 'Koder magnetyczny': 'Tak' } },
+      { partNumber: 'ZC31-F00C000EM00', name: 'ZC300 jednostr. + RFID/Smart Card', priceFrom: 5763.98, availability: 'available', attributes: { 'Koder RFID/Smart Card': 'Tak' } },
+      { partNumber: 'ZC31-FM0C000EM00', name: 'ZC300 jednostr. + Mag + RFID/SC', priceFrom: 6607.82, availability: 'available', attributes: { 'Koder magnetyczny': 'Tak', 'Koder RFID/Smart Card': 'Tak' } },
+      { partNumber: 'ZC31-000CQ00EM00', name: 'ZC300 jednostr. + Zestaw startowy', priceFrom: 4254.10, availability: 'available', attributes: { 'CardStudio': 'Tak', 'Taśma YMCKO': 'Tak', 'Karty PVC': '200 szt.' } },
+      { partNumber: 'ZC31-000W000EM00', name: 'ZC300 jednostr. + Wi-Fi', priceFrom: 4920.09, availability: 'available', attributes: { 'Wi-Fi': 'Tak' } },
+      { partNumber: 'ZC32-000C000EM00', name: 'ZC300 dwustronna', priceFrom: 5242.70, availability: 'available', attributes: { 'Druk dwustronny': 'Tak' } },
+      { partNumber: 'ZC32-0M0C000EM00', name: 'ZC300 dwustr. + Mag', priceFrom: 6296.25, availability: 'available', attributes: { 'Druk dwustronny': 'Tak', 'Koder magnetyczny': 'Tak' } },
+      { partNumber: 'ZC32-000CQ00EM00', name: 'ZC300 dwustr. + Zestaw startowy', priceFrom: 5377.53, availability: 'available', attributes: { 'Druk dwustronny': 'Tak', 'CardStudio': 'Tak', 'Taśma YMCKO': 'Tak', 'Karty PVC': '200 szt.' } },
+      { partNumber: 'ZC32-000W000EM00', name: 'ZC300 dwustr. + Wi-Fi', priceFrom: 6088.50, availability: 'available', attributes: { 'Druk dwustronny': 'Tak', 'Wi-Fi': 'Tak' } },
+    ],
+    compatibleAccessories: ['zebra-ribbon-ymcko-zc', 'zebra-ribbon-black-zc', 'zebra-ribbon-white-zc'],
+    relatedAccessories: ['zebra-cards-premier-025', 'zebra-cards-premier-076', 'zebra-cardstudio'],
+    faq: [
+      { question: 'Czy ZC300 drukuje dwustronnie?', answer: 'Tak, ale tylko w wersji Dual-sided (ZC32-xxx). Wersja Single-sided (ZC31-xxx) drukuje wyłącznie jednostronnie. Druk dwustronny YMCKO: ok. 120 kart/h (30 s/karta).' },
+      { question: 'Jakie kodowanie RFID obsługuje ZC300?', answer: 'Enkoder RFID/NFC w ZC300 obsługuje: Mifare Classic 1K/4K, Mifare DESFire EV1/EV2/EV3, NTAG 213/215/216, HID iCLASS SE, HID Prox (125 kHz), SEOS. Kodowanie odbywa się równocześnie z drukiem — w jednym przejściu.' },
+      { question: 'Ile kosztuje wydruk jednej karty na ZC300?', answer: 'Druk kolorowy YMCKO jednostronny: ok. 1,23 zł/karta. Dwustronny YMCKOK: ok. 2,50 zł/karta. Monochromatyczny: ok. 0,55 zł/karta. Plus koszt karty PVC blank: 0,50–4 zł (w zależności od typu — czysta vs RFID).' },
+      { question: 'Czym różni się ZC300 od ZC350?', answer: 'ZC300 obsługuje standardowe taśmy YMCKO. ZC350 obsługuje dodatkowo taśmy specialty (UV fluorescencyjne, scratch-off, holograficzne) oraz ma rozszerzone opcje kodowania. Dla większości zastosowań B2B ZC300 jest w pełni wystarczający.' },
+      { question: 'Czy mogę drukować e-legitymacje szkolne na ZC300?', answer: 'Tak. ZC300 Dual-sided z enkoderem RFID/NFC (ZC32-xxx z enkoderem contactless) to idealne rozwiązanie do e-legitymacji: zdjęcie + dane na awersie, kod kreskowy + regulamin na rewersie, chip Mifare DESFire do kontroli dostępu, stołówki i biblioteki.' },
+      { question: 'Co zawiera wariant z zestawem startowym?', answer: 'Warianty ZC31-000CQ00EM00 (jednostronny) i ZC32-000CQ00EM00 (dwustronny) zawierają: drukarkę + taśmę YMCKO (200 kolorowych wydruków) + 200 kart PVC blank + licencję CardStudio Classic. Gotowe do pracy od razu.' },
+      { question: 'Jakie są alternatywy dla Zebra ZC300?', answer: 'W podobnej klasie: Evolis Primacy 2 (od ok. 4 800 zł), Magicard 600 (od ok. 5 500 zł), HID Fargo DTC4500e (od ok. 6 000 zł). TAKMA rekomenduje ZC300 ze względu na platformę Link-OS, szerokie opcje kodowania, zdalny monitoring i najlepsze wsparcie serwisowe Zebra w Polsce.' },
+    ],
+    comparison: {
+      title: 'Porównanie drukarek kart Zebra',
+      models: [
+        {
+          name: 'Zebra ZC100',
+          slug: 'zebra-zc100',
+          specs: {
+            'Druk': 'Jednostronny',
+            'Prędkość (YMCKO)': '150 kart/h',
+            'Taśmy specialty': 'Nie',
+            'Kodowanie': 'Magnetyczny',
+            'Łączność': 'USB, Ethernet',
+          },
+        },
+        {
+          name: 'Zebra ZC300',
+          slug: 'zebra-zc300',
+          highlight: true,
+          specs: {
+            'Druk': 'Jedno-/dwustronny',
+            'Prędkość (YMCKO)': '140 kart/h',
+            'Taśmy specialty': 'Nie',
+            'Kodowanie': 'Mag + RFID/NFC + SC',
+            'Łączność': 'USB, Ethernet, Wi-Fi',
+          },
+        },
+        {
+          name: 'Zebra ZC350',
+          slug: 'zebra-zc350',
+          specs: {
+            'Druk': 'Jedno-/dwustronny',
+            'Prędkość (YMCKO)': '225 kart/h',
+            'Taśmy specialty': 'Holo, pearl, 3D, 1/2',
+            'Kodowanie': 'Mag + RFID/NFC + SC + UHF',
+            'Łączność': 'USB, Ethernet, Wi-Fi',
+          },
+        },
+      ],
+    },
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zc300/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Printers/Card/zc100-zc300/spec-sheets/zc300-spec-sheet-en-us.pdf', size: 'PDF' },
+    ],
+    createdAt: '2026-02-14',
+    sameAs: 'https://www.zebra.com/pl/pl/products/printers/card/zc300.html',
+  },
+  // --- ZC350: zakomentowany — brak w Ingram, odkomentować po podłączeniu drugiego dystrybutora ---
+  /*{
+    id: 'zebra-zc350',
+    slug: 'zebra-zc350',
+    name: 'Zebra ZC350',
+    shortDescription: 'Zaawansowana drukarka kart plastikowych — taśmy specialty (UV/holo/3D), RFID UHF, 225 kart/h, 3 lata gwarancji',
+    description: `Dla kogo? Zebra ZC350 to zaawansowana drukarka kart plastikowych dla organizacji wymagających rozszerzonych opcji bezpieczeństwa i personalizacji — idealna do kart RFID UHF (np. kontrola dostępu na dużą odległość), kart wielowarstwowych z zabezpieczeniami UV/holograficznymi i kart inteligentnych z jednoczesnym kodowaniem wielu technologii.
+
+Drukuje pełnokolorowe karty PVC CR-80 w technologii termosublimacyjnej z rozdzielczością 300 dpi. Dostępna w wersji jednostronnej (ZC35-xxx) i dwustronnej (ZC36-xxx). Prędkość: 225 kart/h kolorowo YMCKO (jednostronnie) lub do 1 000 kart/h monochromatycznie — o 12% szybciej niż ZC300. Podajnik na 100 kart, odbiornik na 100 kart. Obsługuje karty o grubości 0,25–1,27 mm (10–50 mil).
+
+Kluczowa przewaga ZC350 nad ZC300: obsługa taśm specialty — UV fluorescencyjnych (weryfikacja autentyczności lampą UV), holograficznych YMCKLL (zabezpieczenie przed kopiowaniem), pearlescent YMCPKO (zmiana koloru pod kątem), scratch-off SDYMCKO (karty zdrapki) i półpanelowych 1/2 YMCKO (400 kart z rolki). Dzięki temu ZC350 drukuje karty o podwyższonym poziomie bezpieczeństwa w jednym przejściu — bez dodatkowej laminatorki.
+
+Zaawansowane opcje kodowania: pasek magnetyczny HiCo/LoCo, enkoder RFID/NFC (Mifare Classic, DESFire EV1/EV2/EV3, HID iCLASS SE/Prox, NTAG, SEOS), RFID UHF (EPCglobal Gen 2, zasięg odczytu do 6 m), smart card kontaktowy (ISO 7816, EMV Level 1) oraz kombinacje — wszystko w jednym przejściu z drukiem.
+
+Łączność: USB 2.0 + Ethernet 10/100 standardowo, Wi-Fi 802.11ac opcjonalnie (P1094879-005). Platforma Link-OS ze zdalnym zarządzaniem przez przeglądarkę, SNMP i SDK. Pamięć: 2 GB flash. Kolorowy wyświetlacz LCD. Wymiary: 157 × 383 × 258 mm (jednostronna), waga 4,0 kg — najsmuklejsza w klasie. Zabezpieczenia: blokada pokrywy, szyfrowanie klasy rządowej, uwierzytelnianie drukarka-host.
+
+Gwarancja producenta: 3 lata drukarka + głowica (EMEA). Pełna kompatybilność z taśmami Zebra serii ZC350 (800350-xxx) i kartami PVC Zebra. Oprogramowanie: Zebra CardStudio 2.0 w wersjach od Classic do Enterprise.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+    categoryId: 'drukarki-kart',
+    subcategoryIds: [],
+    manufacturerId: 'zebra',
+    images: [],
+    tags: ['retail', 'healthcare'],
+    availability: 'on-order',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Metoda druku', value: 'Termosublimacja (dye-sublimation)' },
+      { name: 'Rozdzielczość', value: '300 dpi (11,8 dot/mm)' },
+      { name: 'Druk jedno-/dwustronny', value: 'Jednostronny (ZC35) / Dwustronny (ZC36)' },
+      { name: 'Prędkość druku (YMCKO)', value: '225 kart/h jednostronnie, 150 kart/h dwustronnie' },
+      { name: 'Prędkość druku (mono K)', value: 'Do 1 000 kart/h jednostronnie, 500 kart/h dwustronnie' },
+      { name: 'Format karty', value: 'CR-80 (85,6 × 54 mm), CR-79, ISO 7810 ID-1' },
+      { name: 'Grubość karty', value: '0,25–1,02 mm (10–40 mil)' },
+      { name: 'Pojemność podajnika', value: '100 kart (0,76 mm) — automatyczne dostosowanie grubości' },
+      { name: 'Pojemność odbiornika', value: '100 kart — drzwiczki saloon' },
+      { name: 'Podajnik ręczny', value: 'Tak (manual feed slot)' },
+      { name: 'Taśmy specialty', value: 'YMCKLL (holograficzna), YMCPKO (pearlescent), SDYMCKO (3D), 1/2 YMCKO (400 kart)' },
+      { name: 'Wyświetlacz', value: 'Kolorowy LCD graficzny' },
+      { name: 'Pamięć', value: '2 GB flash' },
+      { name: 'Łączność (standard)', value: 'USB 2.0 + Ethernet 10/100' },
+      { name: 'Łączność (opcja)', value: 'Wi-Fi 802.11ac (P1094879-005)' },
+      { name: 'Kodowanie (opcja)', value: 'Magnetyczny HiCo/LoCo; RFID/NFC (Mifare, DESFire, HID, NTAG); RFID UHF (EPCglobal Gen 2); Smart Card ISO 7816' },
+      { name: 'Zabezpieczenia', value: 'Blokada pokrywy, szyfrowanie klasy rządowej, uwierzytelnianie drukarka-host' },
+      { name: 'Oprogramowanie', value: 'Zebra CardStudio (wersje od Classic do Enterprise)' },
+      { name: 'Zarządzanie', value: 'Link-OS, przeglądarka www, SNMP, SDK' },
+      { name: 'Wymiary jedno. (szer.×gł.×wys.)', value: '157 × 383 × 258 mm' },
+      { name: 'Wymiary dwustr. (szer.×gł.×wys.)', value: '157 × 468 × 258 mm' },
+      { name: 'Waga', value: '4,0 kg (jedn.) / 4,4 kg (dwustr.)' },
+      { name: 'Zasilanie', value: '100 W' },
+      { name: 'Temp. pracy', value: '15–35°C, wilgotność 20–80%' },
+      { name: 'Gwarancja', value: '3 lata drukarka + głowica (EMEA)' },
+    ],
+    applications: ['Karty RFID UHF do kontroli dostępu na dużą odległość', 'Identyfikatory z zabezpieczeniami UV/holograficznymi', 'Karty dostępu wielotechnologiczne (Mag+RFID+SC)', 'E-legitymacje z chipem kontaktowym i zbliżeniowym', 'Karty hotelowe z kodowaniem magnetycznym', 'Karty lojalnościowe z elementami scratch-off', 'Przepustki parkingowe z RFID UHF'],
+    variants: [
+      { partNumber: 'ZC35-000C000EM00', name: 'ZC350 jednostronna', availability: 'on-order', attributes: {} },
+      { partNumber: 'ZC36-000C000EM00', name: 'ZC350 dwustronna', availability: 'on-order', attributes: { 'Druk dwustronny': 'Tak' } },
+      { partNumber: 'ZC35-0M0C000EM00', name: 'ZC350 jednostr. + Mag', availability: 'on-order', attributes: { 'Koder magnetyczny': 'Tak' } },
+      { partNumber: 'ZC35-F00C000EM00', name: 'ZC350 jednostr. + RFID/NFC', availability: 'on-order', attributes: { 'Koder RFID/NFC': 'Tak' } },
+      { partNumber: 'ZC36-0M0C000EM00', name: 'ZC350 dwustr. + Mag', availability: 'on-order', attributes: { 'Druk dwustronny': 'Tak', 'Koder magnetyczny': 'Tak' } },
+      { partNumber: 'ZC35-000W000EM00', name: 'ZC350 jednostr. + Wi-Fi', availability: 'on-order', attributes: { 'Wi-Fi': 'Tak' } },
+      { partNumber: 'ZC35-FM0C000EM00', name: 'ZC350 jednostr. + Mag + RFID/SC', availability: 'on-order', attributes: { 'Koder magnetyczny': 'Tak', 'Koder RFID/Smart Card': 'Tak' } },
+      { partNumber: 'ZC36-FM0C000EM00', name: 'ZC350 dwustr. + Mag + RFID UHF', availability: 'on-order', attributes: { 'Druk dwustronny': 'Tak', 'Koder magnetyczny': 'Tak', 'RFID UHF': 'Tak' } },
+    ],
+    compatibleAccessories: ['zebra-ribbon-ymcko-zc', 'zebra-ribbon-black-zc', 'zebra-ribbon-white-zc'],
+    relatedAccessories: ['zebra-cards-premier-025', 'zebra-cards-premier-076', 'zebra-cardstudio'],
+    faq: [
+      { question: 'Czym różni się ZC350 od ZC300?', answer: 'ZC350 obsługuje taśmy specialty (UV fluorescencyjne, holograficzne, scratch-off) do kart z zabezpieczeniami. Dodatkowo ZC350 oferuje kodowanie RFID UHF (EPC Gen2, zasięg do 6 m) — niedostępne w ZC300. Pod względem prędkości druku, rozdzielczości i formy fizycznej oba modele są identyczne.' },
+      { question: 'Do czego potrzebuję taśm specialty?', answer: 'Taśmy UV fluorescencyjne — weryfikacja autentyczności karty pod lampą UV (kontrola na wejściu, karty rządowe). Taśmy holograficzne — zabezpieczenie karty przed kopiowaniem (karty do data center, strefy restricted). Scratch-off — karty zdrapki z ukrytym kodem (karty podarunkowe, PIN-y).' },
+      { question: 'Czy ZC350 obsługuje RFID UHF?', answer: 'Tak. Warianty ZC35-FM0C000EM00 (jednostronny) i ZC36-FM0C000EM00 (dwustronny) mają wbudowany enkoder RFID UHF (EPC Gen2). Zasięg odczytu tagu UHF: do 6 m. Idealne do kontroli dostępu pojazdów, identyfikacji na odległość i logistyki.' },
+      { question: 'Ile kosztuje wydruk jednej karty na ZC350?', answer: 'Druk kolorowy YMCKO jednostronny: ok. 1,23 zł/karta (identycznie jak ZC300). Taśmy specialty (UV, holograficzne): ok. 2–3 zł/karta dodatkowo. Monochromatyczny: ok. 0,55 zł/karta. Plus koszt karty PVC blank: 0,50–15 zł (w zależności od typu — czysta vs RFID UHF).' },
+      { question: 'Jakie technologie RFID obsługuje ZC350?', answer: 'HF/NFC 13,56 MHz: Mifare Classic 1K/4K, DESFire EV1/EV2/EV3, NTAG 213/215/216, HID iCLASS SE, HID Prox (125 kHz), SEOS. UHF 860–960 MHz: EPC Gen2 / ISO 18000-6C. Smart Card kontaktowy: ISO 7816. Wszystko w jednym przejściu z drukiem.' },
+      { question: 'Czy mogę drukować karty z hologramem na ZC350?', answer: 'Tak. ZC350 obsługuje taśmy holograficzne Zebra YMCKLL (seria 800350-xxx) — druk hologramu bezpośrednio na karcie w jednym przejściu razem z kolorem YMCKO. Nie trzeba osobnej laminatorki — ZC350 nanosi hologram w tym samym cyklu druku. Zabezpieczenie przed fałszerstwem na poziomie klasy bankowej.' },
+      { question: 'Jaka jest gwarancja na Zebra ZC350?', answer: '3 lata gwarancji producenta na drukarkę i głowicę drukującą (EMEA) — o rok dłużej niż ZC100/ZC300. Dodatkowo: blokada pokrywy, szyfrowanie klasy rządowej i uwierzytelnianie drukarka-host zapewniają bezpieczeństwo fizyczne i cyfrowe.' },
+      { question: 'Co zawiera wariant z zestawem startowym?', answer: 'Wariant ZC35-0M0C000EM00 (wybrany domyślnie na BCMarket) zawiera drukarkę z koderem magnetycznym. Zestaw startowy z taśmą YMCKO i kartami PVC dostępny osobno — skontaktuj się z TAKMA po wycenę pakietu.' },
+      { question: 'Jakie są alternatywy dla Zebra ZC350?', answer: 'W klasie drukarek z taśmami specialty i RFID UHF: HID Fargo DTC5500LMX (od ok. 12 000 zł), Evolis Avansia (retransfer, od ok. 15 000 zł), Matica XID8600 (od ok. 18 000 zł). ZC350 oferuje najlepszy stosunek ceny do funkcji — taśmy specialty + RFID UHF + Link-OS za ułamek ceny konkurencji.' },
+    ],
+    comparison: {
+      title: 'Porównanie drukarek kart Zebra',
+      models: [
+        {
+          name: 'Zebra ZC100',
+          slug: 'zebra-zc100',
+          specs: {
+            'Druk': 'Jednostronny',
+            'Taśmy specialty': 'Nie',
+            'Kodowanie': 'Magnetyczny',
+            'RFID UHF': 'Nie',
+            'Łączność': 'USB, Ethernet',
+          },
+        },
+        {
+          name: 'Zebra ZC300',
+          slug: 'zebra-zc300',
+          specs: {
+            'Druk': 'Jedno-/dwustronny',
+            'Taśmy specialty': 'Nie',
+            'Kodowanie': 'Mag + RFID/NFC + SC',
+            'RFID UHF': 'Nie',
+            'Łączność': 'USB, Ethernet, Wi-Fi',
+          },
+        },
+        {
+          name: 'Zebra ZC350',
+          slug: 'zebra-zc350',
+          highlight: true,
+          specs: {
+            'Druk': 'Jedno-/dwustronna',
+            'Prędkość (YMCKO)': '225 kart/h',
+            'Taśmy specialty': 'Holo, pearl, 3D, 1/2',
+            'Kodowanie': 'Mag + RFID/NFC + SC + UHF',
+            'Łączność': 'USB, Ethernet, Wi-Fi',
+          },
+        },
+      ],
+    },
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zc350/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Printers/Card/zc350/spec-sheets/zc350-spec-sheet-en-us.pdf', size: 'PDF' },
+    ],
+    createdAt: '2026-02-14',
+    sameAs: 'https://www.zebra.com/pl/pl/products/printers/card/zc350.html',
+  },*/
+]
+
+// ============================================
+// TAŚMY DO DRUKAREK KART
+// ============================================
+
+const cardRibbons: Product[] = [
+  {
+    id: 'zebra-ribbon-ymcko-zc',
+    slug: 'zebra-tasma-ymcko-zc100-zc300',
+    name: 'Taśma kolorowa YMCKO Zebra ZC100/ZC300',
+    shortDescription: 'Kolorowa taśma barwiąca YMCKO do drukarek kart Zebra ZC100, ZC300 — 200 wydruków pełnokolorowych',
+    description: `Oryginalna taśma barwiąca YMCKO (Yellow-Magenta-Cyan-blacK-Overlay) do drukarek kart plastikowych Zebra ZC100 i ZC300. Każda taśma wystarcza na 200 pełnokolorowych wydruków jednostronnych z warstwą ochronną Overlay (UV). Panele YMCK drukują pełnokolorowe zdjęcia, logo i grafikę, a panel O nakłada przezroczystą warstwę chroniącą nadruk przed zarysowaniami, blaknięciem i promieniowaniem UV. Kompatybilna z drukarkami Zebra ZC100 i ZC300/ZC350 (wszystkie warianty). Part Number: 800300-250EM.`,
+    categoryId: 'materialy-eksploatacyjne',
+    subcategoryIds: ['tasmy-do-drukarek-kart'],
+    manufacturerId: 'zebra',
+    priceFrom: 146.21,
+    images: ['/images/products/800300-250EM.png'],
+    tags: ['retail'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: true,
+    specifications: [
+      { name: 'Typ taśmy', value: 'YMCKO (Yellow-Magenta-Cyan-blacK-Overlay)' },
+      { name: 'Wydajność', value: '200 wydruków (jednostronnych, pełnokolorowych)' },
+      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300, ZC350' },
+      { name: 'Part Number', value: '800300-250EM' },
+      { name: 'Warstwa ochronna', value: 'Overlay — ochrona UV, zarysowania' },
+    ],
+    applications: ['Druk pełnokolorowych kart ID ze zdjęciem', 'Identyfikatory pracownicze', 'Karty lojalnościowe z logo', 'Karty członkowskie', 'E-legitymacje'],
+    compatibleAccessories: [],
+    faq: [
+      { question: 'Ile kart wydrukuję na jednej taśmie YMCKO?', answer: '200 pełnokolorowych wydruków jednostronnych. Każdy wydruk zużywa po jednym panelu Y, M, C, K i O — niezależnie od tego, ile kolorów jest na karcie.' },
+      { question: 'Czy taśma YMCKO pasuje zarówno do ZC100, jak i ZC300?', answer: 'Tak. Taśma 800300-250EM jest kompatybilna ze wszystkimi drukarkami Zebra ZC100, ZC300 i ZC350.' },
+    ],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+  {
+    id: 'zebra-ribbon-black-zc',
+    slug: 'zebra-tasma-czarna-zc100-zc300',
+    name: 'Taśma czarna mono Zebra ZC100/ZC300',
+    shortDescription: 'Czarna taśma monochromatyczna do drukarek kart Zebra ZC100, ZC300 — 1500 wydruków',
+    description: `Oryginalna monochromatyczna taśma czarna (K — blacK) do drukarek kart plastikowych Zebra ZC100 i ZC300. Wystarcza na 1 500 wydruków jednostronnych — idealna do dużych nakładów kart z tekstem, kodami kreskowymi i QR. Koszt wydruku: ok. 0,05 zł/karta (sama taśma). Kompatybilna z drukarkami Zebra ZC100, ZC300, ZC350. Part Number: 800300-301.`,
+    categoryId: 'materialy-eksploatacyjne',
+    subcategoryIds: ['tasmy-do-drukarek-kart'],
+    manufacturerId: 'zebra',
+    priceFrom: 76.81,
+    images: ['/images/products/800300-301.png'],
+    tags: ['retail'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Typ taśmy', value: 'Monochromatyczna czarna (K)' },
+      { name: 'Wydajność', value: '1 500 wydruków (jednostronnych)' },
+      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300, ZC350' },
+      { name: 'Part Number', value: '800300-301' },
+    ],
+    applications: ['Karty z tekstem i kodami kreskowymi', 'Karty lojalnościowe monochromatyczne', 'Przepustki jednokolorowe', 'Druk dużych nakładów kart'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+  {
+    id: 'zebra-ribbon-white-zc',
+    slug: 'zebra-tasma-biala-zc100-zc300',
+    name: 'Taśma biała Zebra ZC100/ZC300',
+    shortDescription: 'Biała taśma barwiąca do drukarek kart Zebra ZC100, ZC300 — 1500 wydruków na ciemnych kartach',
+    description: `Oryginalna biała taśma barwiąca (W — White) do drukarek kart plastikowych Zebra ZC100 i ZC300. Wystarcza na 1 500 wydruków jednostronnych. Służy do nadruku białego tekstu, logo i grafiki na ciemnych lub kolorowych kartach PVC. Kompatybilna z drukarkami Zebra ZC100, ZC300, ZC350. Part Number: 800300-309EM.`,
+    categoryId: 'materialy-eksploatacyjne',
+    subcategoryIds: ['tasmy-do-drukarek-kart'],
+    manufacturerId: 'zebra',
+    priceFrom: 137.79,
+    images: ['/images/products/800300-309EM.png'],
+    tags: ['retail'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Typ taśmy', value: 'Monochromatyczna biała (W)' },
+      { name: 'Wydajność', value: '1 500 wydruków (jednostronnych)' },
+      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300, ZC350' },
+      { name: 'Part Number', value: '800300-309EM' },
+    ],
+    applications: ['Nadruk na ciemnych/kolorowych kartach', 'Logo w negatywie', 'Karty firmowe z białym tekstem'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+]
+
+// ============================================
+// KARTY PCV
+// ============================================
+
+const pvcCards: Product[] = [
+  {
+    id: 'zebra-cards-premier-025',
+    slug: 'zebra-karty-pcv-premier-025',
+    name: 'Karty PCV Zebra Premier 0,25 mm',
+    shortDescription: 'Karty plastikowe Zebra Premier PVC CR-80, grubość 0,25 mm (10 mil) — opakowanie 500 szt.',
+    description: `Oryginalne karty plastikowe Zebra Premier PVC w standardowym formacie CR-80 (85,6 × 54 mm) o grubości 0,25 mm (10 mil). Cieńsze od standardowych kart 0,76 mm — idealne do kart tymczasowych, identyfikatorów gości i kart lojalnościowych. Białe, dwustronne, do druku termosublimacyjnego. Opakowanie: 500 szt. Part Number: 104523-210. Kompatybilne z drukarkami Zebra ZC100, ZC300, ZC350, ZXP Series 7.`,
+    categoryId: 'materialy-eksploatacyjne',
+    subcategoryIds: ['karty-pcv'],
+    manufacturerId: 'zebra',
+    priceFrom: 174.64,
+    images: ['/images/products/104523-210.png'],
+    tags: ['retail'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Format', value: 'CR-80 (85,6 × 54 mm) ISO 7810 ID-1' },
+      { name: 'Grubość', value: '0,25 mm (10 mil)' },
+      { name: 'Materiał', value: 'PVC (polichlorek winylu)' },
+      { name: 'Kolor', value: 'Biały' },
+      { name: 'Opakowanie', value: '500 szt.' },
+      { name: 'Part Number', value: '104523-210' },
+      { name: 'Kompatybilność', value: 'ZC100, ZC300, ZC350, ZXP Series 7' },
+    ],
+    applications: ['Karty tymczasowe i identyfikatory gości', 'Karty lojalnościowe', 'Karty rabatowe'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+  {
+    id: 'zebra-cards-premier-076',
+    slug: 'zebra-karty-pcv-premier-076',
+    name: 'Karty PCV Zebra Premier 0,76 mm',
+    shortDescription: 'Karty plastikowe Zebra Premier PVC CR-80, grubość 0,76 mm (30 mil) — opakowanie 500 szt.',
+    description: `Oryginalne karty plastikowe Zebra Premier PVC w standardowym formacie CR-80 (85,6 × 54 mm) o standardowej grubości 0,76 mm (30 mil). Najpopularniejsza grubość — identyczna jak karty bankowe i kredytowe. Białe, dwustronne, do druku termosublimacyjnego. Opakowanie: 500 szt. Part Number: 104523-111. Kompatybilne z drukarkami Zebra ZC100, ZC300, ZC350, ZXP Series 7.`,
+    categoryId: 'materialy-eksploatacyjne',
+    subcategoryIds: ['karty-pcv'],
+    manufacturerId: 'zebra',
+    priceFrom: 148.93,
+    images: ['/images/products/104523-111.png'],
+    tags: ['retail'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: true,
+    specifications: [
+      { name: 'Format', value: 'CR-80 (85,6 × 54 mm) ISO 7810 ID-1' },
+      { name: 'Grubość', value: '0,76 mm (30 mil)' },
+      { name: 'Materiał', value: 'PVC (polichlorek winylu)' },
+      { name: 'Kolor', value: 'Biały' },
+      { name: 'Opakowanie', value: '500 szt.' },
+      { name: 'Part Number', value: '104523-111' },
+      { name: 'Kompatybilność', value: 'ZC100, ZC300, ZC350, ZXP Series 7' },
+    ],
+    applications: ['Identyfikatory pracownicze', 'Karty dostępu', 'E-legitymacje', 'Karty lojalnościowe', 'Karty członkowskie'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-14',
+  },
+]
+
+// ============================================
+// OPROGRAMOWANIE
+// ============================================
+
+const software: Product[] = [
+  {
+    id: 'zebra-cardstudio',
+    slug: 'zebra-cardstudio',
+    name: 'Zebra CardStudio 2.0',
+    shortDescription: 'Oprogramowanie do projektowania i drukowania kart plastikowych — 4 wersje: Classic, Standard, Professional, Enterprise',
+    description: `Zebra CardStudio 2.0 to profesjonalne oprogramowanie do projektowania i drukowania kart plastikowych na drukarkach Zebra ZC100, ZC300, ZC350 i ZXP Series. Intuicyjny interfejs drag-and-drop pozwala szybko tworzyć układy kart z elementami: zdjęcie, logo, tekst, kod kreskowy 1D/2D, QR code.
+
+Dostępne w 4 wersjach:
+• Classic (CSR2C-SW00-E) — podstawowa: projektowanie kart, druk, import zdjęć z kamery/pliku
+• Standard (CSR2S-SW00-E) — integracja z bazami danych (CSV, Excel, ODBC, SQL), serial numbering, magnetic encoding
+• Professional (CSR2P-SW00-E) — zaawansowane kodowanie: smart card (ISO 7816), contactless (Mifare, DESFire, HID), UV printing, watermark
+• Enterprise (CSR2E-SW00-E) — pełne API/SDK, automatyzacja produkcji, łączenie wielu drukarek, encoding management
+
+Kompatybilne z Windows 7/8/10/11. Obsługuje druk jedno- i dwustronny, kodowanie magnetyczne, RFID/NFC i smart card (w zależności od wersji).`,
+    categoryId: 'oprogramowanie',
+    manufacturerId: 'zebra',
+    priceFrom: 259.60,
+    images: ['/images/products/cardstudio.png'],
+    tags: ['retail'],
+    availability: 'on-order',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Producent', value: 'Zebra Technologies' },
+      { name: 'Wersja', value: 'CardStudio 2.0' },
+      { name: 'System operacyjny', value: 'Windows 7/8/10/11 (32/64-bit)' },
+      { name: 'Typ licencji', value: 'Licencja elektroniczna (klucz aktywacyjny)' },
+      { name: 'Kompatybilne drukarki', value: 'ZC100, ZC300, ZC350, ZXP Series 7/9' },
+      { name: 'Funkcje Classic', value: 'Projektowanie kart, druk, import zdjęć' },
+      { name: 'Funkcje Standard', value: '+ Bazy danych, numeracja seryjna, kodowanie magnetyczne' },
+      { name: 'Funkcje Professional', value: '+ Smart Card, RFID/NFC, UV, watermark' },
+      { name: 'Funkcje Enterprise', value: '+ API/SDK, automatyzacja, multi-printer' },
+    ],
+    applications: ['Projektowanie identyfikatorów pracowniczych', 'Druk kart lojalnościowych', 'Personalizacja e-legitymacji', 'Kodowanie kart RFID/NFC', 'Automatyzacja produkcji kart'],
+    variants: [
+      { partNumber: 'CSR2C-SW00-E', name: 'CardStudio 2.0 Classic', priceFrom: 259.60, availability: 'available', attributes: {} },
+      { partNumber: 'CSR2S-SW00-E', name: 'CardStudio 2.0 Standard', priceFrom: 908.60, availability: 'available', attributes: { 'Bazy danych': 'Tak', 'Kodowanie magnetyczne': 'Tak' } },
+      { partNumber: 'CSR2E-SW00-E', name: 'CardStudio 2.0 Enterprise', priceFrom: 2206.59, availability: 'available', attributes: { 'API/SDK': 'Tak', 'Multi-printer': 'Tak' } },
+      { partNumber: 'CSR2P-SW00-E', name: 'CardStudio 2.0 Professional', priceFrom: 3439.66, availability: 'available', attributes: { 'Smart Card': 'Tak', 'RFID/NFC': 'Tak', 'UV/Watermark': 'Tak' } },
+    ],
+    compatibleAccessories: [],
+    faq: [
+      { question: 'Czym różnią się wersje CardStudio?', answer: 'Classic: podstawowe projektowanie i druk kart. Standard: + integracja z bazami danych (CSV, Excel, SQL) i kodowanie magnetyczne. Professional: + kodowanie RFID/NFC, smart card, UV printing. Enterprise: + pełne API/SDK, automatyzacja i obsługa wielu drukarek.' },
+      { question: 'Czy CardStudio działa z drukarkami innych producentów?', answer: 'Nie, CardStudio jest dedykowane wyłącznie drukarkom Zebra (ZC100, ZC300, ZC350, ZXP Series). Alternatywa uniwersalna: CardPresso (działa z wieloma markami).' },
+      { question: 'Czy mogę później zmienić wersję CardStudio?', answer: 'Tak, Zebra oferuje upgrade licencji — np. z Classic na Standard lub z Standard na Professional. Skontaktuj się z TAKMA po wycenę upgrade.' },
+    ],
+    downloads: [
+      { name: 'Pobierz CardStudio 2.0', type: 'manual', url: 'https://www.zebra.com/us/en/support-downloads/software/card-studio.html', size: 'Online' },
+    ],
+    createdAt: '2026-02-14',
+    sameAs: 'https://www.zebra.com/us/en/support-downloads/software/card-studio.html',
+  },
+]
+
+// ============================================
 // EXPORT - WSZYSTKIE PRODUKTY
 // ============================================
 
@@ -12465,12 +15942,19 @@ export const products: Product[] = [
   ...printerAccessories,
   ...printerAccessoriesZD621,
   ...mobilePrinterAccessories,
+  ...tc22Accessories,
+  ...zd510Accessories,
+  ...wristbands,
   ...thermalTransferLabels76,
   ...paperLabels,
   ...thermalLabels,
   ...foilLabels,
   ...foilLabels76,
   ...ribbons,
+  ...cardPrinters,
+  ...cardRibbons,
+  ...pvcCards,
+  ...software,
 ]
 
 // Helper do pobrania produktu po slug

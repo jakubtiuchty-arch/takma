@@ -37,8 +37,8 @@ export default function PrivacyPolicyPage() {
             1. Administrator danych osobowych
           </h2>
           <p className="text-gray-600 mb-4">
-            Administratorem Państwa danych osobowych jest TAKMA Sp. z o.o. z siedzibą w Krakowie,
-            ul. Przykładowa 123, 30-000 Kraków, NIP: [NIP], REGON: [REGON].
+            Administratorem Państwa danych osobowych jest TAKMA Tadeusz Tiuchty z siedzibą we Wrocławiu,
+            ul. Poświęcka 1a, 51-128 Wrocław, NIP: 915-100-43-77, REGON: 932677161.
           </p>
 
           <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
@@ -109,8 +109,8 @@ export default function PrivacyPolicyPage() {
           </p>
           <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
             <li>E-mail: kontakt@takma.com.pl</li>
-            <li>Telefon: +48 12 345 67 89</li>
-            <li>Adres: ul. Przykładowa 123, 30-000 Kraków</li>
+            <li>Telefon: +48 607 819 688</li>
+            <li>Adres: ul. Poświęcka 1a, 51-128 Wrocław</li>
           </ul>
 
           <p className="text-sm text-gray-500 mt-8">
