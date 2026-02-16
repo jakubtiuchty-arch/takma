@@ -172,7 +172,7 @@ function AttributeLabel({ label, extraTooltips }: { label: string; extraTooltips
         >
           ?
         </span>
-        <span className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-72 px-3 py-2 bg-gray-900 text-white text-xs font-normal rounded-lg text-left leading-relaxed z-50 whitespace-pre-line opacity-0 pointer-events-none group-hover/tip:opacity-100 transition-opacity">
+        <span className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-72 px-3 py-2 bg-gray-900 text-white text-xs font-normal rounded-lg text-left leading-relaxed z-50 whitespace-pre-line opacity-0 pointer-events-none group-hover/tip:opacity-100 transition-opacity shadow-lg">
           {tooltip}
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 border-4 border-transparent border-b-gray-900" />
         </span>
@@ -388,12 +388,12 @@ export default function VariantsTable({ productSlug, productName, productImage, 
       <h2 className="text-2xl font-bold text-gray-900 mb-4">Dostępne warianty</h2>
 
       {/* Desktop: tabela */}
-      <div className="hidden lg:block bg-gray-50 rounded-xl overflow-hidden">
+      <div className="hidden lg:block bg-gray-50 rounded-xl">
         <table className="w-full">
           <caption className="sr-only">Warianty i konfiguracje {productName}</caption>
           <thead>
             <tr className="bg-gray-100 border-b border-gray-200">
-              <th scope="col" className="px-3 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-3 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider first:rounded-tl-xl">
                 Part Number
               </th>
               {attributeKeys.map((key) => (
@@ -410,7 +410,7 @@ export default function VariantsTable({ productSlug, productName, productImage, 
               <th scope="col" className="px-3 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider">
                 Status
               </th>
-              <th scope="col" className="px-3 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-3 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider rounded-tr-xl">
                 Akcja
               </th>
             </tr>

@@ -200,7 +200,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
     dateModified: new Date().toISOString().split('T')[0],
     inLanguage: 'pl-PL',
     ...(product.sameAs ? { sameAs: product.sameAs } : {}),
-    ...(weightSpec ? { weight: { '@type': 'QuantitativeValue', value: parseFloat(weightSpec.value.replace(',', '.')) || weightSpec.value, unitCode: 'KGM' } } : {}),
+    ...(weightSpec ? { weight: { '@type': 'QuantitativeValue', value: parseFloat(weightSpec.value.replace(',', '.')) || weightSpec.value, unitCode: 'GRM' } } : {}),
     ...(() => {
       const props = [
         ...(dimensionsSpec ? [{ '@type': 'PropertyValue' as const, name: 'Wymiary', value: dimensionsSpec.value }] : []),
@@ -581,7 +581,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   href="#akcesoria"
                   className="px-3 py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
-                  Akcesoria
+                  {product.variants && product.variants.length > 0 ? 'Akcesoria' : 'Powiązane produkty'}
                 </a>
               )}
             </nav>
@@ -604,11 +604,20 @@ export default async function ProductPage({ params }: ProductPageProps) {
             <section id="opis">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Opis produktu</h2>
               <div className="prose prose-gray max-w-none">
-                {product.description.split('\n\n').map((paragraph, i) => (
-                  <p key={i} className="text-gray-600 mb-4 sm:text-justify">
-                    {paragraph}
-                  </p>
-                ))}
+                {product.description.split('\n\n').map((paragraph, i) => {
+                  const linkMatch = paragraph.match(/(.*sekcji )(Powiązane produkty)( poniżej.*)/)
+                  return (
+                    <p key={i} className="text-gray-600 mb-4 sm:text-justify">
+                      {linkMatch ? (
+                        <>
+                          {linkMatch[1]}
+                          <a href="#akcesoria" className="text-primary-600 font-semibold hover:underline">{linkMatch[2]}</a>
+                          {linkMatch[3]}
+                        </>
+                      ) : paragraph}
+                    </p>
+                  )
+                })}
               </div>
               <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500">
                 <span>
@@ -783,11 +792,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
               />
             )}
 
-            {/* Akcesoria */}
+            {/* Akcesoria / Powiązane produkty */}
             {relatedAccessories.length > 0 && (
               <RelatedProducts
                 id="akcesoria"
-                title="Akcesoria"
+                title={product.variants && product.variants.length > 0 ? 'Akcesoria' : 'Powiązane produkty'}
                 products={relatedAccessories as typeof products}
                 initialLimit={4}
                 showDualButtons

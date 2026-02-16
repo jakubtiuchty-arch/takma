@@ -52,19 +52,24 @@ export default function ServicePlansBox({ plans, productSlug, productName }: Ser
         )}
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-        {plans.map((plan) => {
+      {plans.length === 1 ? (
+        // Single plan — compact inline row
+        (() => {
+          const plan = plans[0]
           const itemId = `${productSlug}__onecare__${plan.partNumber}`
           const inRFQ = mounted ? isInRFQ(itemId) : false
-
           return (
-            <div key={plan.partNumber} className="bg-white rounded-lg border border-gray-200 p-3">
-              <p className="text-xs font-semibold text-blue-700 mb-0.5">{plan.duration}</p>
-              <p className="text-lg font-bold text-gray-900">
-                {plan.priceNetto.toLocaleString('pl-PL', { minimumFractionDigits: 2 })}
-                <span className="text-xs font-normal text-gray-500 ml-1">zł netto</span>
-              </p>
-              <p className="text-xs text-gray-400 mb-2.5">{plan.partNumber}</p>
+            <div className="bg-white rounded-lg border border-gray-200 p-3 flex items-center justify-between gap-4">
+              <div className="min-w-0">
+                <div className="flex items-baseline gap-2 flex-wrap">
+                  <span className="text-xs font-semibold text-blue-700">{plan.duration}</span>
+                  <span className="text-lg font-bold text-gray-900">
+                    {plan.priceNetto.toLocaleString('pl-PL', { minimumFractionDigits: 2 })}
+                    <span className="text-xs font-normal text-gray-500 ml-1">zł netto</span>
+                  </span>
+                </div>
+                <p className="text-xs text-gray-400 mt-0.5">{plan.partNumber}</p>
+              </div>
               <button
                 onClick={() => addItem({
                   id: itemId,
@@ -72,7 +77,7 @@ export default function ServicePlansBox({ plans, productSlug, productName }: Ser
                   slug: productSlug,
                   partNumber: plan.partNumber,
                 })}
-                className={`w-full flex items-center justify-center gap-1.5 py-2 text-xs font-medium rounded-lg transition-all duration-200 active:scale-[0.98] ${
+                className={`shrink-0 flex items-center justify-center gap-1.5 px-5 py-2 text-xs font-medium rounded-lg transition-all duration-200 active:scale-[0.98] ${
                   inRFQ
                     ? 'bg-white text-primary-600 border-2 border-primary-600'
                     : 'bg-primary-600 text-white hover:bg-primary-700'
@@ -83,8 +88,43 @@ export default function ServicePlansBox({ plans, productSlug, productName }: Ser
               </button>
             </div>
           )
-        })}
-      </div>
+        })()
+      ) : (
+        // Multiple plans — grid layout
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+          {plans.map((plan) => {
+            const itemId = `${productSlug}__onecare__${plan.partNumber}`
+            const inRFQ = mounted ? isInRFQ(itemId) : false
+
+            return (
+              <div key={plan.partNumber} className="bg-white rounded-lg border border-gray-200 p-3">
+                <p className="text-xs font-semibold text-blue-700 mb-0.5">{plan.duration}</p>
+                <p className="text-lg font-bold text-gray-900">
+                  {plan.priceNetto.toLocaleString('pl-PL', { minimumFractionDigits: 2 })}
+                  <span className="text-xs font-normal text-gray-500 ml-1">zł netto</span>
+                </p>
+                <p className="text-xs text-gray-400 mb-2.5">{plan.partNumber}</p>
+                <button
+                  onClick={() => addItem({
+                    id: itemId,
+                    name: `${plan.name} (${productName})`,
+                    slug: productSlug,
+                    partNumber: plan.partNumber,
+                  })}
+                  className={`w-full flex items-center justify-center gap-1.5 py-2 text-xs font-medium rounded-lg transition-all duration-200 active:scale-[0.98] ${
+                    inRFQ
+                      ? 'bg-white text-primary-600 border-2 border-primary-600'
+                      : 'bg-primary-600 text-white hover:bg-primary-700'
+                  }`}
+                >
+                  {inRFQ ? <CheckIcon size={14} /> : <PlusIcon size={14} />}
+                  {inRFQ ? 'Dodano' : 'Dodaj'}
+                </button>
+              </div>
+            )
+          })}
+        </div>
+      )}
     </div>
   )
 }

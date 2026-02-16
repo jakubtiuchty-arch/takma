@@ -88,8 +88,9 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
       }
 
       const queryLower = q.toLowerCase().trim()
+      const queryNormalized = queryLower.replace(/\s+/g, '')
       const queryTokens = queryLower.split(/\s+/).filter(Boolean)
-      const found: SearchResult[] = []
+      const found: (SearchResult & { _score: number })[] = []
 
       // Szukaj w produktach
       for (const entry of searchIndex) {
@@ -99,15 +100,37 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
         const allMatch = queryTokens.every((token) => searchText.includes(token))
         if (!allMatch) continue
 
-        // Sprawdź czy to trafienie na Part Number
-        const matchedPN = partNumbers.find((pn) => pn.includes(queryLower.replace(/\s+/g, '')))
+        // Scoring — im wyższy, tym lepszy match
+        let score = 0
+        const nameLower = product.name.toLowerCase()
+        const slugLower = product.slug.toLowerCase()
+        const idLower = product.id.toLowerCase()
+        const shortDescLower = product.shortDescription.toLowerCase()
+
+        if (nameLower === queryLower) score += 100            // exact name match
+        else if (nameLower.includes(queryNormalized)) score += 80  // name contains
+        if (slugLower.includes(queryNormalized)) score += 60  // slug contains
+        if (idLower.includes(queryNormalized)) score += 50    // id contains
+        if (shortDescLower.includes(queryNormalized)) score += 20  // shortDescription
+        // PN match gets high score
+        const matchedPN = partNumbers.find((pn) => pn.includes(queryNormalized))
+        if (matchedPN) score += 90
+
+        // Bonus: główne produkty (z wariantami) wyżej niż akcesoria
+        if (product.categoryId !== 'akcesoria' && product.categoryId !== 'oprogramowanie') score += 40
+
+        // Jeśli query nie pasuje do nazwy/slug/id/PN/shortDesc — to match jest tylko z FAQ/opisu/specyfikacji
+        // Te wyniki są mało istotne
+        if (score === 0) score = 1
+
+        // Sprawdź wariant
         const matchedVariant = matchedPN
-          ? product.variants?.find((v) => v.partNumber.toLowerCase().includes(queryLower.replace(/\s+/g, '')))
+          ? product.variants?.find((v) => v.partNumber.toLowerCase().includes(queryNormalized))
           : null
 
         if (matchedVariant) {
-          // Trafienie na wariant — pokaż wariant
           found.push({
+            _score: score,
             type: 'variant',
             id: `${product.id}__${matchedVariant.partNumber}`,
             slug: product.slug,
@@ -122,10 +145,9 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
             categoryId: product.categoryId,
           })
         } else {
-          // Trafienie na produkt
           const category = categories.find((c) => c.id === product.categoryId)
-          const manufacturer = manufacturers.find((m) => m.id === product.manufacturerId)
           found.push({
+            _score: score,
             type: 'product',
             id: product.id,
             slug: product.slug,
@@ -139,8 +161,6 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
             categoryId: product.categoryId,
           })
         }
-
-        if (found.length >= 8) break
       }
 
       // Szukaj w kategoriach
@@ -148,6 +168,7 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
         const catText = `${cat.name} ${cat.description}`.toLowerCase()
         if (queryTokens.every((t) => catText.includes(t))) {
           found.push({
+            _score: 30,
             type: 'category',
             id: cat.id,
             slug: cat.slug,
@@ -159,11 +180,8 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
         }
       }
 
-      // Sortuj: warianty (PN) na górze, potem produkty, potem kategorie
-      found.sort((a, b) => {
-        const order = { variant: 0, product: 1, category: 2 }
-        return order[a.type] - order[b.type]
-      })
+      // Sortuj wg relevance score (malejąco)
+      found.sort((a, b) => b._score - a._score)
 
       setResults(found.slice(0, 10))
       setIsOpen(found.length > 0 || q.length >= 2)
@@ -268,9 +286,9 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
             onKeyDown={handleKeyDown}
             placeholder="Szukaj produktu, modelu, PN..."
             className={clsx(
-              'w-full pl-10 pr-20 py-2.5 rounded-xl border border-gray-200',
-              'bg-gray-50 placeholder:text-gray-400 text-sm',
-              'focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 focus:bg-white',
+              'w-full pl-10 pr-20 py-2.5 rounded-xl border border-gray-300 shadow-sm',
+              'bg-white placeholder:text-gray-500 text-sm',
+              'focus:outline-none focus:ring-2 focus:ring-primary-500/30 focus:border-primary-500',
               'transition-all duration-200'
             )}
             aria-label="Wyszukaj produkty"
@@ -414,7 +432,12 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
               {/* Footer */}
               <div className="border-t border-gray-100 px-4 py-2.5 bg-gray-50/50 flex items-center justify-center flex-shrink-0">
                 <button
-                  onClick={handleSubmit}
+                  onClick={() => {
+                    router.push(`/katalog?szukaj=${encodeURIComponent(query.trim())}`)
+                    setQuery('')
+                    setIsOpen(false)
+                    onSearch?.()
+                  }}
                   className="text-sm text-primary-600 hover:text-primary-700 font-medium flex items-center gap-1"
                 >
                   Wszystkie wyniki dla &quot;{query}&quot;

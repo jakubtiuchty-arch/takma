@@ -151,7 +151,7 @@ export default function RelatedProducts({ title, products, initialLimit, labels,
     const isExpanded = visibleCount >= filtered.length && filtered.length > ROW_SIZE
 
     return (
-      <section id={id}>
+      <section id={id} className="scroll-mt-24">
         <div className="flex items-baseline justify-between mb-4">
           <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
           <span className="text-sm text-gray-400">
@@ -209,7 +209,7 @@ export default function RelatedProducts({ title, products, initialLimit, labels,
   const isExpanded = visibleRows > 1 && capped >= products.length
 
   return (
-    <section id={id}>
+    <section id={id} className="scroll-mt-24">
       <div className="flex items-baseline justify-between mb-6">
         <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
         {products.length > limit && (

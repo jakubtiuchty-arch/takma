@@ -163,10 +163,18 @@ export default function Footer() {
       <div className="border-t border-gray-800">
         <div className="container-main py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
-            <p>© {new Date().getFullYear()} TAKMA Tadeusz Tiuchty · ul. Poświęcka 1a, 51-128 Wrocław · NIP: 915-100-43-77</p>
-            <p>
-              Strona ma charakter informacyjny. Ceny i dostępność mogą ulec zmianie.
-            </p>
+            <p className="text-xs">© {new Date().getFullYear()} TAKMA · ul. Poświęcka 1a, 51-128 Wrocław · NIP: 915-100-43-77</p>
+            <a
+              href="https://www.qba.dev/"
+              target="_blank"
+              rel="noopener nofollow sponsored"
+              className="inline-flex items-center gap-1 pl-2.5 pr-0.5 py-0.5 rounded-full bg-gray-800/60 border border-gray-700/50 text-[10px] text-gray-500 hover:border-gray-600 transition-colors"
+            >
+              Crafted with <span className="animate-pulse text-red-500 text-[8px]">&#10084;</span> by
+              <span className="inline-flex items-center px-1.5 py-px rounded-full bg-gray-800 border border-gray-700 font-mono text-[10px] ml-0.5">
+                <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">&lt; qba.dev/&gt;</span>
+              </span>
+            </a>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo } from 'react'
+import { useMemo, useState, useRef, useEffect } from 'react'
 import { Product } from '@/data/products'
 import { useStockData } from './StockInfo'
 import StockInfo from './StockInfo'
@@ -92,11 +92,47 @@ export default function SmartPrice({ product }: SmartPriceProps) {
           {price.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
         </span>
         <span className="text-sm text-gray-500">netto</span>
+        <PriceTooltip />
       </div>
       <p className="text-sm text-gray-400 mt-1">
         {(price * 1.23).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł brutto
       </p>
       {displayedPn.length > 0 && <StockInfo partNumbers={displayedPn} />}
+    </div>
+  )
+}
+
+function PriceTooltip() {
+  const [open, setOpen] = useState(false)
+  const ref = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (!open) return
+    function handleClick(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false)
+    }
+    document.addEventListener('mousedown', handleClick)
+    return () => document.removeEventListener('mousedown', handleClick)
+  }, [open])
+
+  return (
+    <div ref={ref} className="relative inline-flex self-center">
+      <button
+        type="button"
+        aria-label="Informacja o cenie"
+        onClick={() => setOpen(o => !o)}
+        onMouseEnter={() => setOpen(true)}
+        onMouseLeave={() => setOpen(false)}
+        className="w-[18px] h-[18px] rounded-full bg-gray-300 text-gray-600 text-[11px] font-semibold leading-none flex items-center justify-center hover:bg-gray-400 hover:text-white transition-colors cursor-pointer"
+      >
+        i
+      </button>
+      {open && (
+        <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-64 bg-gray-900 text-white text-xs leading-relaxed rounded-lg p-3 shadow-lg z-50">
+          <p>Cena dotyczy 1 sztuki. Planujesz zakup większej ilości? Kliknij <strong>&bdquo;Zapytaj o produkt&rdquo;</strong> i podaj liczbę urządzeń &mdash; przygotujemy ofertę projektową z dedykowaną ceną.</p>
+          <div className="absolute left-1/2 -translate-x-1/2 top-full w-0 h-0 border-x-[6px] border-x-transparent border-t-[6px] border-t-gray-900" />
+        </div>
+      )}
     </div>
   )
 }
