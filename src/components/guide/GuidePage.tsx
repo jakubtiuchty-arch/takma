@@ -141,7 +141,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
                   <section key={section.id} id={section.id}>
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">{section.heading}</h2>
                     <div
-                      className="prose prose-gray max-w-none prose-headings:text-gray-900 prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline prose-table:text-sm prose-th:bg-gray-50 prose-th:text-left prose-th:font-semibold prose-td:border-t prose-td:border-gray-100 prose-img:rounded-xl"
+                      className="prose prose-gray max-w-none text-justify prose-headings:text-gray-900 prose-headings:text-left prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline prose-table:text-sm prose-th:bg-gray-50 prose-th:text-left prose-th:font-semibold prose-td:border-t prose-td:border-gray-100 prose-img:rounded-xl"
                       dangerouslySetInnerHTML={{ __html: boldifyModels(section.content) }}
                     />
                   </section>

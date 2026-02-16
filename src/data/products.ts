@@ -154,10 +154,10 @@ export const categories: Category[] = [
     name: 'Terminale mobilne',
     description: 'Wytrzymałe komputery mobilne i kolektory danych Android do magazynu, logistyki i produkcji',
     seoTitle: 'Terminale mobilne Zebra — kolektory danych Android do magazynu i logistyki',
-    seoDescription: 'Terminale mobilne Zebra i Datalogic z Androidem: TC22, TC27, TC52, TC57, MC3300, Memor 11/12. Wytrzymałe komputery mobilne IP68/IP67 do magazynu, logistyki i produkcji. Ceny netto od 2 180 zł, doradztwo, serwis Zebra.',
+    seoDescription: 'Terminale mobilne Zebra i Datalogic z Androidem: TC22, TC27, TC53, TC52, TC57, MC3300, Memor 11/12. Wytrzymałe komputery mobilne IP68/IP67 do magazynu, logistyki i produkcji. Ceny netto od 2 180 zł, doradztwo, serwis Zebra.',
     longDescription: 'Profesjonalne terminale mobilne (kolektory danych) Zebra klasy enterprise z systemem Android. Seria TC21/TC26 dla małych i średnich firm — lekkie, intuicyjne, w przystępnej cenie. TC52/TC57 dla wymagających środowisk magazynowych i logistycznych — IP67, upadki z 1,8 m, skaner SE4770. MC3300 z klawiaturą fizyczną do intensywnego skanowania w produkcji. EC50/EC55 — kompaktowe komputery enterprise zastępujące smartfony. Wszystkie modele z wbudowanym skanerem 1D/2D, Wi-Fi 6, Bluetooth 5.0 i zarządzaniem MDM.',
     icon: 'smartphone',
-    productCount: 14,
+    productCount: 15,
   },
   {
     id: 'skanery-kodow',
@@ -7947,6 +7947,109 @@ Pakiet Mobility DNA Professional w cenie: DataWedge, StageNow, Device Tracker, L
     ],
     createdAt: '2024-06-01',
   },
+  {
+    id: 'zebra-tc53',
+    slug: 'zebra-tc53',
+    name: 'Zebra TC53',
+    shortDescription: 'Wydajny terminal mobilny z WiFi 6E, ekranem 6" FHD i procesorem Qualcomm 6490 — następca TC52',
+    description: `Dla kogo? Zebra TC53 to flagowy terminal mobilny klasy enterprise, zaprojektowany dla dużych magazynów, centrów dystrybucyjnych, fabryk i sieci handlowych, które potrzebują maksymalnej wydajności skanowania, łączności WiFi 6E i wieloletniej niezawodności w warunkach intensywnej eksploatacji — z budżetem na urządzenie klasy premium.
+
+Następca bestsellerowej serii TC52/TC52x: procesor Qualcomm 6490 octa-core 2,7 GHz (o 60% szybszy od TC52x), 6-calowy wyświetlacz Full HD (1080×2160) o jasności 600 nitów z obsługą rękawiczek i odrzucaniem kropel wody, od 4 do 8 GB RAM i do 128 GB pamięci Flash (UFS). System Android z gwarancją aktualizacji do Androida 16.
+
+Wybierz skaner według potrzeb: SE4720 (standard, zasięg bliski) do codziennego skanowania na poziomie ręki, lub SE55 Advanced Range z technologią IntelliFocus (zasięg od 10 cm do 12 m) — skanuje kody na najwyższych regałach bez drabiny, a sekundę później odczyta drobny kod na etykiecie w ręce. Oba skanery dekodują 1D i 2D w ułamku sekundy, nawet zniszczone, zadrukowane lub wyświetlane na ekranie.
+
+Konstrukcja klasy wytrzymałości IP68 + IP65 z certyfikacją MIL-STD-810H: wielokrotne upadki z 1,8 m na beton, tumble test 1000×0,5 m (bez etui) i 1000×1,0 m (z etui), zakres temperatur od -20°C do +50°C. Wymienna bateria PowerPrecision+ 4680 mAh (standard, ~12 h) lub 7000 mAh (rozszerzona, ~18 h) z technologią warm/hot swap — wymiana baterii bez wyłączania urządzenia i utraty sesji.
+
+Łączność WiFi 6E (802.11ax) 2×2 MU-MIMO z trójpasmowym roamingiem (2,4 + 5 + 6 GHz), Bluetooth 5.2, NFC (Apple VAS, Google SmartTap). Kamera 16 MP z tyłu (autofokus, HDR, latarka) i 8 MP z przodu. USB 3.0 Type-C + USB 2.0 Host (tył). Dual-Band GNSS. MicroSD do 2 TB.
+
+Pakiet Mobility DNA Professional (w cenie urządzenia): DataWedge, StageNow, Device Tracker, LifeGuard, Workforce Connect Push-to-Talk. Opcjonalnie: Zebra Dimensioning — funkcja wymiarowania paczek kamerą urządzenia (eliminuje statyczne stanowisko pomiarowe). Zarządzanie flotą: SOTI, VMware, Microsoft Intune, Zebra DNA Cloud.
+
+Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC58. Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.`,
+    categoryId: 'terminale-mobilne',
+    manufacturerId: 'zebra',
+    priceFrom: 6418.37,
+    images: [
+      '/images/products/zebra-tc53.png',
+    ],
+    tags: ['magazyn', 'logistyka', 'produkcja', 'retail'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'System operacyjny', value: 'Android (aktualizacja do Android 16)' },
+      { name: 'Procesor', value: 'Qualcomm 6490 octa-core, 2.7 GHz' },
+      { name: 'Wyświetlacz', value: '6.0" FHD (1080×2160), 600 nit, optycznie bondowany' },
+      { name: 'Pamięć', value: '4/6/8 GB RAM, 64/128 GB Flash UFS + microSD do 2 TB' },
+      { name: 'Skaner', value: 'SE4720 (standard) lub SE55 (advanced range do 12 m)' },
+      { name: 'Kamera', value: '16 MP tył (AF, HDR, latarka), 8 MP przód' },
+      { name: 'Bateria', value: '4 680 mAh (standard) lub 7 000 mAh (rozszerzona), warm/hot swap' },
+      { name: 'Odporność', value: 'IP68/IP65, upadki z 1,8 m, MIL-STD-810H, tumble 1000×0,5 m' },
+      { name: 'Łączność', value: 'WiFi 6E (802.11ax), Bluetooth 5.2, NFC' },
+      { name: 'Wymiary', value: '164,8 × 77,35 × 16,75 mm' },
+      { name: 'Waga', value: '293 g (z baterią standardową)' },
+      { name: 'USB', value: 'USB 3.0 Type-C (dół) + USB 2.0 Host (tył)' },
+      { name: 'Temperatura pracy', value: '-20°C do +50°C' },
+    ],
+    variantAttributeTooltips: {
+      'Skaner': 'SE4720 — skaner standardowego zasięgu, niezawodny 1D/2D do codziennego skanowania na wyciągnięcie ręki.\n\nSE55 — skaner dalekiego zasięgu z IntelliFocus (od 10 cm do 12 m). Skanuje kody na najwyższych regałach bez drabiny, a sekundę później odczyta drobny kod tuż przy urządzeniu.',
+    },
+    variants: [
+      {
+        partNumber: 'TC5301-0T1E4B1000-A6',
+        name: 'TC53 SE4720, 4/64 GB',
+        priceFrom: 6418.37,
+        availability: 'available',
+        attributes: {
+          'Skaner': 'SE4720',
+          'Pamięć': '4 GB / 64 GB',
+        },
+      },
+      {
+        partNumber: 'TC5301-0T1K4B1000-A6',
+        name: 'TC53 SE55, 4/64 GB',
+        priceFrom: 6648.15,
+        availability: 'available',
+        attributes: {
+          'Skaner': 'SE55',
+          'Pamięć': '4 GB / 64 GB',
+        },
+      },
+      {
+        partNumber: 'TC5301-0T1K6B1000-A6',
+        name: 'TC53 SE55, 8/128 GB',
+        priceFrom: 7423.94,
+        availability: 'available',
+        attributes: {
+          'Skaner': 'SE55',
+          'Pamięć': '8 GB / 128 GB',
+        },
+      },
+    ],
+    faq: [
+      { question: 'Ile kosztuje Zebra TC53?', answer: 'Ceny Zebra TC53 zaczynają się od ok. 6 418 zł netto za podstawową konfigurację (SE4720, 4/64 GB). Wariant z rozszerzonym skanerem SE55 i 4/64 GB kosztuje ok. 6 648 zł netto, a topowa konfiguracja (SE55, 8/128 GB) to ok. 7 424 zł netto. Ceny netto, dane z lutego 2026.' },
+      { question: 'Czym różni się Zebra TC53 od TC52?', answer: 'TC53 to następca TC52/TC52x z istotnymi ulepszeniami: procesor Qualcomm 6490 (o 60% szybszy), WiFi 6E z trójpasmowym roamingiem (2,4 + 5 + 6 GHz), wyświetlacz 600 nit (vs 450 nit), USB 3.0, Bluetooth 5.2, bateria warm/hot swap, i dłuższe wsparcie Androida (do wersji 16). Obudowa jest też cieńsza, ale utrzymuje klasę IP68 i wytrzymałość na upadki z 1,8 m.' },
+      { question: 'Czym różni się TC53 od TC58?', answer: 'TC53 i TC58 to bliźniacze urządzenia — identyczny procesor, ekran, skanery i wytrzymałość. Jedyna różnica: TC53 ma wyłącznie WiFi 6E, a TC58 dodaje łączność 5G Sub-6/mmWave + 4G LTE, dual SIM (nano + eSIM) i GPS/GNSS. TC53 wystarczy do pracy wewnątrz budynku z WiFi. TC58 jest konieczny dla pracowników terenowych bez WiFi (kurierzy, serwisanci, kontrola w terenie).' },
+      { question: 'Jaki skaner wybrać: SE4720 czy SE55?', answer: 'SE4720 (standard) — do skanowania na wyciągnięcie ręki (do ~50 cm): kasa, lada, kompletacja na poziomie wzroku. Idealny, gdy 90% kodów jest w zasięgu ręki. SE55 z IntelliFocus (do 12 m) — automatycznie dobiera ostrość: skanuje drobny kod tuż przy urządzeniu i duży kod na najwyższej półce. Konieczny w magazynach wysokiego składowania (regały 8–12 m). Różnica cenowa: ok. 230 zł netto.' },
+      { question: 'Czy Zebra TC53 jest wodoodporny?', answer: 'Tak. TC53 ma podwójną klasę ochrony IP68 (pełna pyłoszczelność + zanurzenie) oraz IP65 (ochrona przed strumieniem wody pod ciśnieniem). Certyfikacja MIL-STD-810H obejmuje wielokrotne upadki z 1,8 m na beton, tumble test 1000×0,5 m (bez etui) i 1000×1,0 m (z etui ochronnym), szok termiczny i pracę w zakresie -20°C do +50°C.' },
+      { question: 'Jak długo Zebra wspiera TC53?', answer: 'Zebra zapewnia wsparcie TC53 obejmujące aktualizacje systemu Android do wersji 16, comiesięczne łatki bezpieczeństwa LifeGuard przez cały cykl życia urządzenia, oraz dostępność części zamiennych i serwisu. Typowy cykl wsparcia terminali Zebra to 8–10 lat od daty premiery — oznacza to realne użytkowanie do ok. 2030–2032 roku.' },
+      { question: 'Czym jest Zebra Dimensioning i czy TC53 to obsługuje?', answer: 'Zebra Dimensioning to opcjonalna licencja pozwalająca mierzyć wymiary paczek (długość × szerokość × wysokość) za pomocą kamery urządzenia — bez statycznego stanowiska pomiarowego. TC53 obsługuje tę funkcję w wariantach Premium (z czujnikiem ToF). Idealne dla firm kurierskich i centrów logistycznych, gdzie wymiarowanie paczek jest wymagane do wyceny frachtu.' },
+      { question: 'Czy TC53 obsługuje RFID?', answer: 'TC53 nie ma wbudowanego czytnika RFID, ale obsługuje zewnętrzne nakładki RFID Zebra: RFD40 (UHF RFID, kompaktowy) i RFD90 (UHF RFID, daleki zasięg do 9 m). Nakładki łączą się przez złącze eConnex (przewodowe, zero latencji) lub Bluetooth. Dzięki temu TC53 staje się pełnoprawnym czytnikiem RFID — idealnym do inwentaryzacji i zarządzania magazynem bez dodatkowego urządzenia.' },
+      { question: 'Jakie baterie pasują do TC53?', answer: 'Do TC53 pasują dwie baterie PowerPrecision+: standardowa 4 680 mAh (PN: BTRY-NGTC5TC7-44MA-01) wystarczająca na ok. 12 h pracy, oraz rozszerzona 7 000 mAh (PN: BTRY-NGTC5TC7-66MA-01) na ok. 18 h. Obie wspierają warm/hot swap — wymianę bez wyłączania urządzenia. Dostępna też wersja BLE (BTRY-NGTC5TC7-44MABLE-01) z czujnikiem kondycji baterii przez Bluetooth.' },
+      { question: 'Jakie są alternatywy dla Zebra TC53?', answer: 'W tej klasie cenowej i wydajnościowej alternatywami są: Honeywell CT47 (6" FHD, Snapdragon 778G, WiFi 6E, IP68, skanery N6803/S0703), Datalogic Memor 35 (5.5" FHD, Snapdragon 680, IP68, Green Spot), oraz Samsung Galaxy XCover6 Pro z nakładką enterprise. W ofercie TAKMA dostępne są też tańsze terminale: Zebra TC22 (od ok. 2 400 zł netto, WiFi) i TC27 (5G/LTE). TC53 wyróżnia się najszybszym procesorem, WiFi 6E z trójpasmowym roamingiem i najdłuższym wsparciem Androida w tej grupie.' },
+    ],
+    applications: ['Magazyn wysokiego składowania', 'Centrum dystrybucyjne', 'Kompletacja zamówień', 'Zarządzanie flotą urządzeń', 'Inwentaryzacja RFID', 'Logistyka i spedycja'],
+    compatibleAccessories: [],
+    relatedAccessories: ['zebra-tc53-battery-4680', 'zebra-tc53-battery-7000', 'zebra-tc53-rugged-boot', 'zebra-tc53-trigger-handle'],
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-tc53/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa TC53/TC58', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheet/tc53-tc58-spec-sheet-en-us.pdf', size: 'PDF' },
+    ],
+    servicePlans: [
+      { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-TC53XX-3C00', duration: '3 lata', priceNetto: 1260.45 },
+      { name: 'Zebra OneCare Essential — 5 lat', partNumber: 'Z1AE-TC53XX-5C00', duration: '5 lat', priceNetto: 2058.71 },
+    ],
+    createdAt: '2024-06-01',
+  },
 ]
 
 // ============================================
@@ -15275,6 +15378,111 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
 ]
 
 // ============================================
+// AKCESORIA TERMINALI MOBILNYCH TC53/TC58
+// ============================================
+
+const tc53Accessories: Product[] = [
+  {
+    id: 'zebra-tc53-battery-4680',
+    slug: 'zebra-bateria-4680mah-tc53-tc58',
+    name: 'Akumulator 4680 mAh do Zebra TC53 / TC58',
+    shortDescription: 'Oryginalna bateria PowerPrecision+ 4680 mAh — wymienna warm/hot swap',
+    description: `Oryginalna bateria zapasowa Zebra PowerPrecision+ Li-Ion 4680 mAh (18,01 Wh) do terminali mobilnych TC53 i TC58. Zapewnia ok. 12 godzin typowej pracy (WiFi 6E + skanowanie). Wymienna warm/hot swap — wymiana bez wyłączania urządzenia i utraty sesji. Technologia PowerPrecision+ monitoruje stan i kondycję baterii w czasie rzeczywistym.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 390.33,
+    images: ['/images/products/BTRY-NGTC5TC7-44MA-01.png'],
+    tags: ['magazyn', 'logistyka'],
+    availability: 'on-order',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'BTRY-NGTC5TC7-44MA-01' },
+      { name: 'Pojemność', value: '4 680 mAh (18,01 Wh)' },
+      { name: 'Technologia', value: 'Li-Ion PowerPrecision+, warm/hot swap' },
+      { name: 'Kompatybilność', value: 'TC53, TC58, TC73, TC78' },
+    ],
+    applications: ['Zapasowa bateria na zmianę', 'Wymiana warm/hot swap'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-16',
+  },
+  {
+    id: 'zebra-tc53-battery-7000',
+    slug: 'zebra-bateria-7000mah-tc53-tc58',
+    name: 'Akumulator rozszerzony 7000 mAh do Zebra TC53 / TC58',
+    shortDescription: 'Oryginalna bateria PowerPrecision+ 7000 mAh — wydłużony czas pracy do 18 h',
+    description: `Oryginalna bateria rozszerzona Zebra PowerPrecision+ Li-Ion 7000 mAh (26,95 Wh) do terminali mobilnych TC53 i TC58. Zapewnia ok. 18 godzin intensywnej pracy — idealna do wielozmianowych operacji magazynowych. Wymienna warm/hot swap — wymiana bez wyłączania urządzenia. Technologia PowerPrecision+ monitoruje kondycję baterii i prognozuje pozostały czas pracy.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 554.35,
+    images: ['/images/products/BTRY-NGTC5TC7-66MA-01.png'],
+    tags: ['magazyn', 'logistyka', 'produkcja'],
+    availability: 'on-order',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'BTRY-NGTC5TC7-66MA-01' },
+      { name: 'Pojemność', value: '7 000 mAh (26,95 Wh)' },
+      { name: 'Technologia', value: 'Li-Ion PowerPrecision+, warm/hot swap' },
+      { name: 'Kompatybilność', value: 'TC53, TC58, TC73, TC78' },
+    ],
+    applications: ['Praca wielozmianowa', 'Centrum dystrybucyjne', 'Logistyka'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-16',
+  },
+  {
+    id: 'zebra-tc53-rugged-boot',
+    slug: 'zebra-etui-ochronne-tc53',
+    name: 'Etui ochronne Rugged Boot do Zebra TC53 / TC58',
+    shortDescription: 'Gumowy egzoszkielet zwiększający odporność na upadki — podnosi tumble do 1000×1,0 m',
+    description: `Oryginalne etui ochronne Zebra Rugged Boot do terminali TC53 i TC58. Gumowy egzoszkielet absorbuje uderzenia i zwiększa odporność na upadki: tumble test rośnie z 1000×0,5 m do 1000×1,0 m. Precyzyjne wycięcia na skaner, kamery, porty USB i przyciski — pełna funkcjonalność bez zdejmowania etui.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 193.53,
+    images: ['/images/products/SG-NGTC5EXO1-01.png'],
+    tags: ['magazyn', 'logistyka', 'produkcja'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: true,
+    specifications: [
+      { name: 'Part Number', value: 'SG-NGTC5EXO1-01' },
+      { name: 'Typ', value: 'Rugged Boot (egzoszkielet ochronny)' },
+      { name: 'Kompatybilność', value: 'TC53, TC58' },
+    ],
+    applications: ['Ochrona terminala', 'Zwiększenie odporności na upadki', 'Praca w trudnych warunkach'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-16',
+  },
+  {
+    id: 'zebra-tc53-trigger-handle',
+    slug: 'zebra-uchwyt-spust-tc53',
+    name: 'Uchwyt ze spustem Trigger Handle do Zebra TC53 / TC58',
+    shortDescription: 'Ergonomiczny uchwyt pistoletowy ze spustem — szybsze skanowanie w magazynie',
+    description: `Oryginalny uchwyt ze spustem Zebra Trigger Handle do terminali TC53 i TC58. Przekształca terminal w ergonomiczny skaner pistoletowy — naturalny chwyt redukuje zmęczenie dłoni podczas wielogodzinnego skanowania. Fizyczny spust aktywuje skaner jednym kliknięciem. Idealny do kompletacji zamówień, inwentaryzacji i pracy w magazynie wysokiego składowania.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 943.05,
+    images: ['/images/products/TRG-NGTC5-ELEC-01.png'],
+    tags: ['magazyn', 'logistyka'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'TRG-NGTC5-ELEC-01' },
+      { name: 'Typ', value: 'Trigger Handle (uchwyt ze spustem)' },
+      { name: 'Kompatybilność', value: 'TC53, TC58' },
+    ],
+    applications: ['Skanowanie pistoletowe', 'Kompletacja zamówień', 'Inwentaryzacja'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-16',
+  },
+]
+
+// ============================================
 // AKCESORIA ZEBRA ZD510-HC
 // ============================================
 
@@ -15943,6 +16151,7 @@ export const products: Product[] = [
   ...printerAccessoriesZD621,
   ...mobilePrinterAccessories,
   ...tc22Accessories,
+  ...tc53Accessories,
   ...zd510Accessories,
   ...wristbands,
   ...thermalTransferLabels76,

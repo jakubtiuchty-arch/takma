@@ -81,7 +81,7 @@ export const guides: Guide[] = [
 <p>Drukarki termotransferowe mogą również pracować w trybie termicznym bezpośrednim — wystarczy załadować papier termiczny bez ribbona. To sprawia, że <strong>drukarka termotransferowa jest zawsze bardziej uniwersalna</strong> niż czysto termiczna.</p>
 
 <h3>Porównanie: termiczna vs termotransferowa</h3>
-<table>
+<table style="width:100%">
   <thead>
     <tr>
       <th>Cecha</th>
@@ -212,86 +212,75 @@ export const guides: Guide[] = [
       heading: 'Jaka drukarka do jakiej branży?',
       content: `<p>Na podstawie ponad 500 wdrożeń w polskich firmach przygotowaliśmy tabelę rekomendacji branżowych. Każda rekomendacja uwzględnia specyficzne wymagania danej branży — od wolumenu druku, przez wymaganą trwałość etykiet, po warunki środowiskowe.</p>
 
-<table>
+<table style="width:100%">
   <thead>
     <tr>
       <th>Branża</th>
-      <th>Polecany typ drukarki</th>
-      <th>Rozdzielczość</th>
-      <th>Budżet (netto)</th>
+      <th>Typ drukarki</th>
+      <th>Budżet netto</th>
       <th>Polecany model</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><strong>E-commerce / fulfillment</strong></td>
+      <td><strong>E-commerce</strong></td>
       <td>Termiczna biurkowa</td>
-      <td>203 dpi</td>
-      <td>621–1 330 PLN</td>
-      <td><a href="/produkt/zebra-zd220d">Zebra ZD220d</a> (do 200 szt./dzień) lub <a href="/produkt/zebra-zd421d">ZD421d</a> (200–1000 szt./dzień)</td>
+      <td>621–1 330 zł</td>
+      <td><a href="/produkt/zebra-zd220d">ZD220d</a> / <a href="/produkt/zebra-zd421d">ZD421d</a></td>
     </tr>
     <tr>
       <td><strong>Magazyn / logistyka</strong></td>
-      <td>Termotransferowa biurkowa lub light-industrial</td>
-      <td>203 dpi</td>
-      <td>1 638–5 132 PLN</td>
-      <td><a href="/produkt/zebra-zd421t">Zebra ZD421t</a> (mały magazyn) lub <a href="/produkt/zebra-zt411">ZT411</a> (centrum dystrybucyjne)</td>
+      <td>TT biurkowa lub przemysłowa</td>
+      <td>1 638–5 132 zł</td>
+      <td><a href="/produkt/zebra-zd421t">ZD421t</a> / <a href="/produkt/zebra-zt411">ZT411</a></td>
     </tr>
     <tr>
-      <td><strong>Produkcja przemysłowa</strong></td>
-      <td>Przemysłowa termotransferowa</td>
-      <td>203–300 dpi</td>
-      <td>5 132–12 417 PLN</td>
-      <td><a href="/produkt/zebra-zt411">Zebra ZT411</a> lub <a href="/produkt/zebra-zt610">ZT610</a> (praca 24/7)</td>
+      <td><strong>Produkcja</strong></td>
+      <td>Przemysłowa TT</td>
+      <td>5 132–12 417 zł</td>
+      <td><a href="/produkt/zebra-zt411">ZT411</a> / <a href="/produkt/zebra-zt610">ZT610</a></td>
     </tr>
     <tr>
       <td><strong>Apteka / farmacja</strong></td>
-      <td>Termotransferowa biurkowa 2" lub 4"</td>
-      <td>300 dpi</td>
-      <td>1 165–2 325 PLN</td>
-      <td><a href="/produkt/zebra-zd411t">Zebra ZD411t</a> (małe etykiety) lub <a href="/produkt/zebra-zd421t">ZD421t 300 dpi</a></td>
+      <td>TT biurkowa 300 dpi</td>
+      <td>1 165–2 325 zł</td>
+      <td><a href="/produkt/zebra-zd411t">ZD411t</a> / <a href="/produkt/zebra-zd421t">ZD421t</a></td>
     </tr>
     <tr>
-      <td><strong>Retail / handel detaliczny</strong></td>
+      <td><strong>Retail</strong></td>
       <td>Termiczna biurkowa</td>
-      <td>203 dpi</td>
-      <td>621–2 048 PLN</td>
-      <td><a href="/produkt/zebra-zd220d">Zebra ZD220d</a> (cenówki) lub <a href="/produkt/zebra-zd621t">ZD621t</a> (sieć sklepów)</td>
+      <td>621–2 048 zł</td>
+      <td><a href="/produkt/zebra-zd220d">ZD220d</a> / <a href="/produkt/zebra-zd621t">ZD621t</a></td>
     </tr>
     <tr>
-      <td><strong>Gastronomia / spożywcza</strong></td>
-      <td>Termiczna biurkowa (DT)</td>
-      <td>203 dpi</td>
-      <td>621–1 330 PLN</td>
-      <td><a href="/produkt/zebra-zd220d">Zebra ZD220d</a> (daty ważności, składniki)</td>
+      <td><strong>Gastronomia</strong></td>
+      <td>Termiczna biurkowa</td>
+      <td>621–1 330 zł</td>
+      <td><a href="/produkt/zebra-zd220d">ZD220d</a></td>
     </tr>
     <tr>
-      <td><strong>Laboratoria / healthcare</strong></td>
-      <td>Termotransferowa 2" lub 4", 300 dpi</td>
-      <td>300–600 dpi</td>
-      <td>1 165–6 162 PLN</td>
-      <td><a href="/produkt/zebra-zd411t">Zebra ZD411t</a> (próbówki) lub <a href="/produkt/zebra-zt411">ZT411 600 dpi</a> (mikro-etykiety)</td>
+      <td><strong>Laboratorium</strong></td>
+      <td>TT 300–600 dpi</td>
+      <td>1 165–6 162 zł</td>
+      <td><a href="/produkt/zebra-zd411t">ZD411t</a> / <a href="/produkt/zebra-zt411">ZT411</a></td>
     </tr>
     <tr>
-      <td><strong>Chemia / petrochemia</strong></td>
-      <td>Przemysłowa termotransferowa (ribbon żywiczny)</td>
-      <td>203–300 dpi</td>
-      <td>5 132–10 432 PLN</td>
-      <td><a href="/produkt/zebra-zt411">Zebra ZT411</a> (etykiety GHS, odporne na chemikalia)</td>
+      <td><strong>Chemia</strong></td>
+      <td>Przemysłowa TT, resin</td>
+      <td>5 132–10 432 zł</td>
+      <td><a href="/produkt/zebra-zt411">ZT411</a> (etykiety GHS)</td>
     </tr>
     <tr>
-      <td><strong>Logistyka paletowa / 3PL</strong></td>
-      <td>Przemysłowa 6" (szeroki format)</td>
-      <td>203 dpi</td>
-      <td>9 416–12 417 PLN</td>
-      <td><a href="/produkt/zebra-zt421">Zebra ZT421</a> lub <a href="/produkt/zebra-zt620">ZT620</a> (etykiety paletowe GS1-128)</td>
+      <td><strong>Logistyka paletowa</strong></td>
+      <td>Przemysłowa 6"</td>
+      <td>9 416–12 417 zł</td>
+      <td><a href="/produkt/zebra-zt421">ZT421</a> / <a href="/produkt/zebra-zt620">ZT620</a></td>
     </tr>
     <tr>
-      <td><strong>Jubilerstwo / elektronika</strong></td>
-      <td>Termotransferowa 2" lub przemysłowa 600 dpi</td>
-      <td>300–600 dpi</td>
-      <td>1 165–11 755 PLN</td>
-      <td><a href="/produkt/zebra-zd411t">Zebra ZD411t 300 dpi</a> lub <a href="/produkt/zebra-zt411">ZT411 600 dpi</a></td>
+      <td><strong>Jubilerstwo</strong></td>
+      <td>TT 300–600 dpi</td>
+      <td>1 165–11 755 zł</td>
+      <td><a href="/produkt/zebra-zd411t">ZD411t</a> / <a href="/produkt/zebra-zt411">ZT411</a></td>
     </tr>
   </tbody>
 </table>
@@ -305,58 +294,58 @@ export const guides: Guide[] = [
 
 <p>Poniższa tabela przedstawia kalkulację 3-letniego TCO dla trzech segmentów drukarek, przy założeniu druku 500 etykiet dziennie (ok. 10 000 etykiet/miesiąc, format 100×50 mm) przez 22 dni robocze w miesiącu:</p>
 
-<table>
+<table style="width:100%">
   <thead>
     <tr>
-      <th>Pozycja kosztowa</th>
-      <th>Ekonomiczna (DT)<br><small><a href="/produkt/zebra-zd220d">ZD220d</a></small></th>
-      <th>Średnia klasa (TT)<br><small><a href="/produkt/zebra-zd421t">ZD421t</a></small></th>
-      <th>Premium biurkowa (TT)<br><small><a href="/produkt/zebra-zd621t">ZD621t</a></small></th>
-      <th>Przemysłowa (TT)<br><small><a href="/produkt/zebra-zt411">ZT411</a></small></th>
+      <th>Pozycja</th>
+      <th><a href="/produkt/zebra-zd220d">ZD220d</a><br><small>DT</small></th>
+      <th><a href="/produkt/zebra-zd421t">ZD421t</a><br><small>TT</small></th>
+      <th><a href="/produkt/zebra-zd621t">ZD621t</a><br><small>TT</small></th>
+      <th><a href="/produkt/zebra-zt411">ZT411</a><br><small>TT</small></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><strong>Cena drukarki (netto)</strong></td>
-      <td>621 PLN</td>
-      <td>1 638 PLN</td>
-      <td>2 048 PLN</td>
-      <td>5 132 PLN</td>
+      <td><strong>Cena drukarki</strong></td>
+      <td>621 zł</td>
+      <td>1 638 zł</td>
+      <td>2 048 zł</td>
+      <td>5 132 zł</td>
     </tr>
     <tr>
-      <td>Koszt etykiet / miesiąc</td>
-      <td>250 PLN<br><small>(termiczne 0,025 PLN/szt.)</small></td>
-      <td>180 PLN<br><small>(papier TT 0,018 PLN/szt.)</small></td>
-      <td>180 PLN<br><small>(papier TT 0,018 PLN/szt.)</small></td>
-      <td>180 PLN<br><small>(papier TT 0,018 PLN/szt.)</small></td>
+      <td>Etykiety / mies.</td>
+      <td>250 zł</td>
+      <td>180 zł</td>
+      <td>180 zł</td>
+      <td>180 zł</td>
     </tr>
     <tr>
-      <td>Koszt taśmy (ribbon) / miesiąc</td>
-      <td>0 PLN<br><small>(brak ribbona)</small></td>
-      <td>120 PLN<br><small>(wax 0,012 PLN/szt.)</small></td>
-      <td>120 PLN<br><small>(wax 0,012 PLN/szt.)</small></td>
-      <td>100 PLN<br><small>(rolka 450 m, lepsza wydajność)</small></td>
+      <td>Ribbon / mies.</td>
+      <td>0 zł</td>
+      <td>120 zł</td>
+      <td>120 zł</td>
+      <td>100 zł</td>
     </tr>
     <tr>
-      <td>Wymiana głowicy (3 lata)</td>
-      <td>2× po 350 PLN = 700 PLN<br><small>(żywotność ~50 km druku)</small></td>
-      <td>1× po 450 PLN = 450 PLN<br><small>(żywotność ~75 km)</small></td>
-      <td>1× po 490 PLN = 490 PLN<br><small>(żywotność ~75 km)</small></td>
-      <td>0× = 0 PLN<br><small>(żywotność ~100 km, starczy na 3 lata)</small></td>
+      <td>Głowica (3 lata)</td>
+      <td>700 zł<br><small>(2× po 350)</small></td>
+      <td>450 zł<br><small>(1× po 450)</small></td>
+      <td>490 zł<br><small>(1× po 490)</small></td>
+      <td>0 zł<br><small>(starczy na 3 lata)</small></td>
     </tr>
     <tr>
-      <td><strong>TCO 3-letni</strong></td>
-      <td><strong>10 321 PLN</strong></td>
-      <td><strong>12 888 PLN</strong></td>
-      <td><strong>13 338 PLN</strong></td>
-      <td><strong>15 212 PLN</strong></td>
+      <td><strong>TCO 3 lata</strong></td>
+      <td><strong>10 321 zł</strong></td>
+      <td><strong>12 888 zł</strong></td>
+      <td><strong>13 338 zł</strong></td>
+      <td><strong>15 212 zł</strong></td>
     </tr>
     <tr>
-      <td>Koszt na etykietę (3 lata)</td>
-      <td>0,029 PLN/szt.</td>
-      <td>0,036 PLN/szt.</td>
-      <td>0,037 PLN/szt.</td>
-      <td>0,042 PLN/szt.</td>
+      <td>Koszt/etykietę</td>
+      <td>0,029 zł</td>
+      <td>0,036 zł</td>
+      <td>0,037 zł</td>
+      <td>0,042 zł</td>
     </tr>
   </tbody>
 </table>
@@ -376,12 +365,12 @@ export const guides: Guide[] = [
       heading: 'Drukarka biurkowa czy przemysłowa?',
       content: `<p>To druga — po wyborze technologii druku — najważniejsza decyzja. Drukarki biurkowe i przemysłowe różnią się nie tylko ceną, ale przede wszystkim wydajnością, trwałością i komfortem pracy przy dużym wolumenie. Poniżej przedstawiamy szczegółowe porównanie obydwu klas.</p>
 
-<table>
+<table style="width:100%">
   <thead>
     <tr>
       <th>Parametr</th>
-      <th>Drukarka biurkowa (desktop)</th>
-      <th>Drukarka przemysłowa (industrial)</th>
+      <th>Biurkowa (desktop)</th>
+      <th>Przemysłowa (industrial)</th>
     </tr>
   </thead>
   <tbody>
@@ -656,16 +645,17 @@ export const guides: Guide[] = [
 </ol>
 
 <h3>Rodzaje taśm barwiących (ribbonów)</h3>
-<table>
+<table style="width:100%">
 <thead>
-<tr><th>Typ ribbona</th><th>Skład</th><th>Temp. druku</th><th>Trwałość</th><th>Materiały etykiet</th><th>Zastosowania</th></tr>
+<tr><th>Typ ribbona</th><th>Temp. druku</th><th>Trwałość</th><th>Materiały etykiet</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Woskowy (wax)</strong></td><td>Wosk naturalny + syntetyczny</td><td>90–110°C</td><td>2–3 lata</td><td>Papier powlekany, papier matowy</td><td>Etykiety magazynowe, wysyłkowe, cenowe</td></tr>
-<tr><td><strong>Woskowo-żywiczny (wax-resin)</strong></td><td>Wosk + żywica syntetyczna</td><td>110–140°C</td><td>3–5 lat</td><td>Papier powlekany, folie PP matowe</td><td>Etykiety produktowe, logistyczne, półkowe</td></tr>
-<tr><td><strong>Żywiczny (resin)</strong></td><td>Żywica syntetyczna (polyester/polyimide)</td><td>140–200°C</td><td>5–10+ lat</td><td>Folie PE/PP, poliester, Tyvek, tekstylia</td><td>Etykiety chemiczne, elektryczne, outdoor, farmaceutyczne</td></tr>
+<tr><td><strong>Woskowy (wax)</strong></td><td>90–110°C</td><td>2–3 lata</td><td>Papier powlekany, matowy</td></tr>
+<tr><td><strong>Woskowo-żywiczny (wax-resin)</strong></td><td>110–140°C</td><td>3–5 lat</td><td>Papier powlekany, folie PP</td></tr>
+<tr><td><strong>Żywiczny (resin)</strong></td><td>140–200°C</td><td>5–10+ lat</td><td>Folie PE/PP, PET, Tyvek, tekstylia</td></tr>
 </tbody>
 </table>
+<p><strong>Zastosowania:</strong> Wax — etykiety magazynowe, wysyłkowe, cenowe. Wax-resin — etykiety produktowe, logistyczne. Resin — etykiety chemiczne, elektryczne, outdoor, farmaceutyczne.</p>
 
 <h3>Zalety druku termotransferowego</h3>
 <ul>
@@ -689,28 +679,28 @@ export const guides: Guide[] = [
       heading: 'Porównanie drukarki termicznej i termotransferowej',
       content: `<p>Poniższa tabela zestawia kluczowe parametry obu technologii na podstawie danych z wdrożeń u klientów TAKMA oraz specyfikacji technicznych producenta Zebra Technologies.</p>
 
-<table>
+<table style="width:100%">
 <thead>
-<tr><th>Parametr</th><th>Drukarka termiczna (DT)</th><th>Drukarka termotransferowa (TT)</th></tr>
+<tr><th>Parametr</th><th>Termiczna (DT)</th><th>Termotransferowa (TT)</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Zasada druku</strong></td><td>Bezpośrednie nagrzewanie papieru termoczułego</td><td>Transfer barwnika z taśmy (ribbona) na etykietę</td></tr>
-<tr><td><strong>Materiały eksploatacyjne</strong></td><td>Tylko papier termiczny</td><td>Etykiety (papier/folia) + taśma barwiąca (ribbon)</td></tr>
-<tr><td><strong>Koszt drukarki (klasa biurkowa 4")</strong></td><td>od 621 zł netto (<a href="/produkt/zebra-zd220d">ZD220d</a>)</td><td>od 635 zł netto (<a href="/produkt/zebra-zd220t">ZD220t</a>)</td></tr>
-<tr><td><strong>Koszt na etykietę 100×50 mm</strong></td><td>ok. 0,04–0,06 zł (sam papier termiczny)</td><td>ok. 0,06–0,12 zł (papier + ribbon woskowy)</td></tr>
-<tr><td><strong>Trwałość wydruku</strong></td><td>6–12 miesięcy (wewnątrz budynku)</td><td>2–10+ lat (zależnie od ribbona)</td></tr>
-<tr><td><strong>Odporność na UV</strong></td><td>Niska — blaknięcie po 2–4 tyg. na słońcu</td><td>Wysoka (resin) — brak blaknięcia przez lata</td></tr>
-<tr><td><strong>Odporność na wodę/wilgoć</strong></td><td>Niska — rozmazywanie przy kontakcie z wodą</td><td>Średnia (wax) / Wysoka (resin na folii PP/PET)</td></tr>
-<tr><td><strong>Odporność na temperaturę</strong></td><td>do 60°C (powyżej — ciemnienie papieru)</td><td>Wax: do 80°C / Resin: do 150°C</td></tr>
-<tr><td><strong>Odporność na chemikalia</strong></td><td>Brak — rozpuszczalniki niszczą wydruk</td><td>Resin na PET: odporna na IPA, aceton, oleje</td></tr>
-<tr><td><strong>Maksymalna prędkość druku</strong></td><td>do 203 mm/s (<a href="/produkt/zebra-zd621d">ZD621d</a>)</td><td>do 356 mm/s (<a href="/produkt/zebra-zt411">ZT411</a>)</td></tr>
-<tr><td><strong>Dostępna rozdzielczość</strong></td><td>203 dpi, 300 dpi</td><td>203 dpi, 300 dpi, 600 dpi</td></tr>
-<tr><td><strong>Materiały etykiet</strong></td><td>Wyłącznie papier termiczny (direct thermal)</td><td>Papier, PP, PE, PET, Tyvek, nylon, satyna</td></tr>
-<tr><td><strong>Kolor druku</strong></td><td>Tylko czarny</td><td>Czarny, czerwony, niebieski, zielony, biały, złoty</td></tr>
-<tr><td><strong>TCO roczne (500 etykiet/dzień)</strong></td><td>ok. 5 500–6 800 zł</td><td>ok. 7 200–9 500 zł (wax) / 12 000–16 000 zł (resin)</td></tr>
-<tr><td><strong>TCO roczne (2 000 etykiet/dzień)</strong></td><td>ok. 14 500–17 000 zł</td><td>ok. 20 000–26 000 zł (wax) / 38 000–48 000 zł (resin)</td></tr>
-<tr><td><strong>Żywotność głowicy</strong></td><td>ok. 500 000 – 1 000 000 etykiet (30% krótsza)</td><td>ok. 1 000 000 – 2 000 000 etykiet</td></tr>
-<tr><td><strong>Prostota obsługi</strong></td><td>Bardzo wysoka — załaduj rolkę, drukuj</td><td>Średnia — dobór ribbona + załadunek 2 mediów</td></tr>
+<tr><td><strong>Zasada druku</strong></td><td>Nagrzewanie papieru termoczułego</td><td>Transfer barwnika z ribbona</td></tr>
+<tr><td><strong>Eksploatacja</strong></td><td>Tylko papier termiczny</td><td>Etykiety + ribbon</td></tr>
+<tr><td><strong>Cena drukarki 4"</strong></td><td>od 621 zł (<a href="/produkt/zebra-zd220d">ZD220d</a>)</td><td>od 635 zł (<a href="/produkt/zebra-zd220t">ZD220t</a>)</td></tr>
+<tr><td><strong>Koszt/etykietę</strong></td><td>0,04–0,06 zł</td><td>0,06–0,12 zł (z wax)</td></tr>
+<tr><td><strong>Trwałość</strong></td><td>6–12 mies. (wewnątrz)</td><td>2–10+ lat (zależy od ribbona)</td></tr>
+<tr><td><strong>Odporność UV</strong></td><td>Niska — 2–4 tyg. na słońcu</td><td>Wysoka (resin) — lata</td></tr>
+<tr><td><strong>Odporność woda</strong></td><td>Niska — rozmazywanie</td><td>Średnia (wax) / Wysoka (resin)</td></tr>
+<tr><td><strong>Temperatura</strong></td><td>do 60°C</td><td>Wax: 80°C / Resin: 150°C</td></tr>
+<tr><td><strong>Chemikalia</strong></td><td>Brak odporności</td><td>Resin: IPA, aceton, oleje</td></tr>
+<tr><td><strong>Maks. prędkość</strong></td><td>203 mm/s (<a href="/produkt/zebra-zd621d">ZD621d</a>)</td><td>356 mm/s (<a href="/produkt/zebra-zt411">ZT411</a>)</td></tr>
+<tr><td><strong>Rozdzielczość</strong></td><td>203, 300 dpi</td><td>203, 300, 600 dpi</td></tr>
+<tr><td><strong>Materiały</strong></td><td>Tylko papier termiczny</td><td>Papier, PP, PE, PET, Tyvek</td></tr>
+<tr><td><strong>Kolor</strong></td><td>Tylko czarny</td><td>Czarny + kolory (ribbon)</td></tr>
+<tr><td><strong>TCO/rok (500 szt.)</strong></td><td>5 500–6 800 zł</td><td>7 200–9 500 zł (wax)</td></tr>
+<tr><td><strong>TCO/rok (2 000 szt.)</strong></td><td>14 500–17 000 zł</td><td>20 000–26 000 zł (wax)</td></tr>
+<tr><td><strong>Żywotność głowicy</strong></td><td>500 tys. – 1 mln szt.</td><td>1 mln – 2 mln szt.</td></tr>
+<tr><td><strong>Obsługa</strong></td><td>Bardzo prosta</td><td>Średnia (ribbon + etykiety)</td></tr>
 </tbody>
 </table>
 
@@ -722,52 +712,52 @@ export const guides: Guide[] = [
       content: `<p>Kalkulacje oparte na cenach rynkowych materiałów eksploatacyjnych i drukarek Zebra w I kwartale 2026 r. Wszystkie ceny netto (bez VAT). Przyjęte założenia: etykieta 100×50 mm, 250 dni roboczych w roku, wymiana głowicy po wyczerpaniu resursu.</p>
 
 <h3>Koszt materiałów na etykietę</h3>
-<table>
+<table style="width:100%">
 <thead>
-<tr><th>Składnik kosztu</th><th>Druk termiczny</th><th>Druk termotransferowy (wax)</th><th>Druk termotransferowy (resin)</th></tr>
+<tr><th>Składnik</th><th>Termiczny (DT)</th><th>TT wax</th><th>TT resin</th></tr>
 </thead>
 <tbody>
-<tr><td>Etykieta 100×50 mm (rolka 1000 szt.)</td><td>0,045 zł/szt. (papier termiczny TOP)</td><td>0,030 zł/szt. (papier powlekany)</td><td>0,08 zł/szt. (folia PP)</td></tr>
-<tr><td>Taśma barwiąca (ribbon)</td><td>0,00 zł (nie wymaga)</td><td>0,025 zł/szt. (wax 110mm×300m, ok. 18 zł/szt.)</td><td>0,055 zł/szt. (resin 110mm×300m, ok. 55 zł/szt.)</td></tr>
-<tr><td>Amortyzacja głowicy</td><td>0,002 zł/szt. (resurs 500 tys., głowica ~900 zł)</td><td>0,001 zł/szt. (resurs 1 mln, głowica ~900 zł)</td><td>0,001 zł/szt.</td></tr>
-<tr><td><strong>Razem koszt/etykietę</strong></td><td><strong>~0,047 zł</strong></td><td><strong>~0,056 zł</strong></td><td><strong>~0,136 zł</strong></td></tr>
+<tr><td>Etykieta 100×50 mm</td><td>0,045 zł/szt.</td><td>0,030 zł/szt.</td><td>0,08 zł/szt.</td></tr>
+<tr><td>Ribbon</td><td>0,00 zł</td><td>0,025 zł/szt.</td><td>0,055 zł/szt.</td></tr>
+<tr><td>Amortyzacja głowicy</td><td>0,002 zł/szt.</td><td>0,001 zł/szt.</td><td>0,001 zł/szt.</td></tr>
+<tr><td><strong>Razem</strong></td><td><strong>~0,047 zł</strong></td><td><strong>~0,056 zł</strong></td><td><strong>~0,136 zł</strong></td></tr>
 </tbody>
 </table>
 
 <h3>TCO (Total Cost of Ownership) — 3 scenariusze wolumenu</h3>
 <p>Poniższa tabela uwzględnia koszt zakupu drukarki (amortyzacja liniowa 3 lata), materiały eksploatacyjne, wymianę głowicy i serwis prewencyjny. Drukarka bazowa: Zebra ZD421 (biurkowa klasa średnia).</p>
 
-<table>
+<table style="width:100%">
 <thead>
-<tr><th>Parametr</th><th>200 etykiet/dzień</th><th>500 etykiet/dzień</th><th>2 000 etykiet/dzień</th></tr>
+<tr><th>Parametr</th><th>200 szt./dzień</th><th>500 szt./dzień</th><th>2 000 szt./dzień</th></tr>
 </thead>
 <tbody>
-<tr><td colspan="4"><strong>DRUK TERMICZNY (direct thermal) — <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> od 1 330 zł</strong></td></tr>
-<tr><td>Etykiety rocznie</td><td>50 000 szt.</td><td>125 000 szt.</td><td>500 000 szt.</td></tr>
-<tr><td>Koszt etykiet (papier termiczny)</td><td>2 250 zł</td><td>5 625 zł</td><td>22 500 zł</td></tr>
-<tr><td>Koszt ribbonów</td><td>0 zł</td><td>0 zł</td><td>0 zł</td></tr>
-<tr><td>Amortyzacja drukarki (rok)</td><td>443 zł</td><td>443 zł</td><td>443 zł</td></tr>
-<tr><td>Wymiana głowicy (rok)</td><td>0 zł</td><td>~225 zł (co 4 lata)</td><td>900 zł (co rok)</td></tr>
+<tr><td colspan="4"><strong>TERMICZNY — <a href="/produkt/zebra-zd421d">ZD421d</a> od 1 330 zł</strong></td></tr>
+<tr><td>Etykiety/rok</td><td>50 000</td><td>125 000</td><td>500 000</td></tr>
+<tr><td>Etykiety</td><td>2 250 zł</td><td>5 625 zł</td><td>22 500 zł</td></tr>
+<tr><td>Ribbony</td><td>0 zł</td><td>0 zł</td><td>0 zł</td></tr>
+<tr><td>Amortyzacja/rok</td><td>443 zł</td><td>443 zł</td><td>443 zł</td></tr>
+<tr><td>Głowica/rok</td><td>0 zł</td><td>~225 zł</td><td>900 zł</td></tr>
 <tr><td><strong>TCO roczne</strong></td><td><strong>~2 693 zł</strong></td><td><strong>~6 293 zł</strong></td><td><strong>~23 843 zł</strong></td></tr>
-<tr><td><strong>Koszt/etykietę (TCO)</strong></td><td><strong>0,054 zł</strong></td><td><strong>0,050 zł</strong></td><td><strong>0,048 zł</strong></td></tr>
+<tr><td><strong>Koszt/szt.</strong></td><td><strong>0,054 zł</strong></td><td><strong>0,050 zł</strong></td><td><strong>0,048 zł</strong></td></tr>
 
-<tr><td colspan="4"><strong>DRUK TERMOTRANSFEROWY — wax — <a href="/produkt/zebra-zd421t">Zebra ZD421t</a> od 1 638 zł</strong></td></tr>
-<tr><td>Etykiety rocznie</td><td>50 000 szt.</td><td>125 000 szt.</td><td>500 000 szt.</td></tr>
-<tr><td>Koszt etykiet (papier powlekany)</td><td>1 500 zł</td><td>3 750 zł</td><td>15 000 zł</td></tr>
-<tr><td>Koszt ribbonów (wax)</td><td>1 250 zł</td><td>3 125 zł</td><td>12 500 zł</td></tr>
-<tr><td>Amortyzacja drukarki (rok)</td><td>546 zł</td><td>546 zł</td><td>546 zł</td></tr>
-<tr><td>Wymiana głowicy (rok)</td><td>0 zł</td><td>0 zł</td><td>450 zł (co 2 lata)</td></tr>
+<tr><td colspan="4"><strong>TT WAX — <a href="/produkt/zebra-zd421t">ZD421t</a> od 1 638 zł</strong></td></tr>
+<tr><td>Etykiety/rok</td><td>50 000</td><td>125 000</td><td>500 000</td></tr>
+<tr><td>Etykiety</td><td>1 500 zł</td><td>3 750 zł</td><td>15 000 zł</td></tr>
+<tr><td>Ribbony</td><td>1 250 zł</td><td>3 125 zł</td><td>12 500 zł</td></tr>
+<tr><td>Amortyzacja/rok</td><td>546 zł</td><td>546 zł</td><td>546 zł</td></tr>
+<tr><td>Głowica/rok</td><td>0 zł</td><td>0 zł</td><td>450 zł</td></tr>
 <tr><td><strong>TCO roczne</strong></td><td><strong>~3 296 zł</strong></td><td><strong>~7 421 zł</strong></td><td><strong>~28 496 zł</strong></td></tr>
-<tr><td><strong>Koszt/etykietę (TCO)</strong></td><td><strong>0,066 zł</strong></td><td><strong>0,059 zł</strong></td><td><strong>0,057 zł</strong></td></tr>
+<tr><td><strong>Koszt/szt.</strong></td><td><strong>0,066 zł</strong></td><td><strong>0,059 zł</strong></td><td><strong>0,057 zł</strong></td></tr>
 
-<tr><td colspan="4"><strong>DRUK TERMOTRANSFEROWY — resin na folii PP — <a href="/produkt/zebra-zd621t">Zebra ZD621t</a> od 2 048 zł</strong></td></tr>
-<tr><td>Etykiety rocznie</td><td>50 000 szt.</td><td>125 000 szt.</td><td>500 000 szt.</td></tr>
-<tr><td>Koszt etykiet (folia PP)</td><td>4 000 zł</td><td>10 000 zł</td><td>40 000 zł</td></tr>
-<tr><td>Koszt ribbonów (resin)</td><td>2 750 zł</td><td>6 875 zł</td><td>27 500 zł</td></tr>
-<tr><td>Amortyzacja drukarki (rok)</td><td>683 zł</td><td>683 zł</td><td>683 zł</td></tr>
-<tr><td>Wymiana głowicy (rok)</td><td>0 zł</td><td>0 zł</td><td>450 zł (co 2 lata)</td></tr>
+<tr><td colspan="4"><strong>TT RESIN na PP — <a href="/produkt/zebra-zd621t">ZD621t</a> od 2 048 zł</strong></td></tr>
+<tr><td>Etykiety/rok</td><td>50 000</td><td>125 000</td><td>500 000</td></tr>
+<tr><td>Etykiety</td><td>4 000 zł</td><td>10 000 zł</td><td>40 000 zł</td></tr>
+<tr><td>Ribbony</td><td>2 750 zł</td><td>6 875 zł</td><td>27 500 zł</td></tr>
+<tr><td>Amortyzacja/rok</td><td>683 zł</td><td>683 zł</td><td>683 zł</td></tr>
+<tr><td>Głowica/rok</td><td>0 zł</td><td>0 zł</td><td>450 zł</td></tr>
 <tr><td><strong>TCO roczne</strong></td><td><strong>~7 433 zł</strong></td><td><strong>~17 558 zł</strong></td><td><strong>~68 633 zł</strong></td></tr>
-<tr><td><strong>Koszt/etykietę (TCO)</strong></td><td><strong>0,149 zł</strong></td><td><strong>0,140 zł</strong></td><td><strong>0,137 zł</strong></td></tr>
+<tr><td><strong>Koszt/szt.</strong></td><td><strong>0,149 zł</strong></td><td><strong>0,140 zł</strong></td><td><strong>0,137 zł</strong></td></tr>
 </tbody>
 </table>
 
@@ -806,7 +796,7 @@ export const guides: Guide[] = [
 </ul>
 
 <h3>Branżowa macierz decyzyjna</h3>
-<table>
+<table style="width:100%">
 <thead>
 <tr><th>Branża / zastosowanie</th><th>Rekomendowana technologia</th><th>Typ ribbona</th></tr>
 </thead>
@@ -832,34 +822,35 @@ export const guides: Guide[] = [
       content: `<p>Trwałość etykiety zależy od trzech czynników: technologii druku, materiału etykiety i warunków eksploatacji. Poniżej prezentujemy dane z testów laboratoryjnych i obserwacji z wdrożeń produkcyjnych u klientów TAKMA.</p>
 
 <h3>Druk termiczny — trwałość w różnych warunkach</h3>
-<table>
+<table style="width:100%">
 <thead>
-<tr><th>Warunki</th><th>Czas czytelności (skan kodów &gt;95%)</th><th>Uwagi</th></tr>
+<tr><th>Warunki</th><th>Czytelność</th><th>Uwagi</th></tr>
 </thead>
 <tbody>
-<tr><td>Wewnątrz budynku, bez bezpośredniego światła</td><td>12–18 miesięcy</td><td>Papier termiczny TOP (z warstwą ochronną) wydłuża trwałość o 30–50%</td></tr>
-<tr><td>Wewnątrz budynku, przy oknie (UV pośrednie)</td><td>6–9 miesięcy</td><td>Etykieta żółknie i traci kontrast; kody 1D blaknął wolniej niż tekst</td></tr>
-<tr><td>Na zewnątrz, pod zadaszeniem</td><td>2–4 miesiące</td><td>Deszcz i UV przyspieszają degradację wielokrotnie</td></tr>
-<tr><td>Na zewnątrz, pełna ekspozycja</td><td>2–6 tygodni</td><td>Nie rekomendujemy — etykieta termiczna nie jest przeznaczona do outdoor</td></tr>
-<tr><td>Chłodnia (0–5°C)</td><td>18–24 miesiące</td><td>Niska temperatura spowalnia degradację; uwaga na skraplanie wilgoci</td></tr>
-<tr><td>Blisko źródła ciepła (&gt;50°C)</td><td>1–4 tygodnie</td><td>Papier ciemnieje globalnie; etykieta staje się czarna i nieczytelna</td></tr>
-<tr><td>Kontakt z rozpuszczalnikami</td><td>Natychmiastowe uszkodzenie</td><td>IPA, aceton, benzyna — niszczą wydruk w sekundach</td></tr>
+<tr><td>Wewnątrz, bez światła</td><td>12–18 mies.</td><td>Papier TOP wydłuża o 30–50%</td></tr>
+<tr><td>Wewnątrz, przy oknie</td><td>6–9 mies.</td><td>Żółknięcie, utrata kontrastu</td></tr>
+<tr><td>Na zewnątrz, pod dachem</td><td>2–4 mies.</td><td>Deszcz i UV przyspieszają degradację</td></tr>
+<tr><td>Na zewnątrz, pełne słońce</td><td>2–6 tyg.</td><td>Nie rekomendujemy do outdoor</td></tr>
+<tr><td>Chłodnia (0–5°C)</td><td>18–24 mies.</td><td>Niska temp. spowalnia degradację</td></tr>
+<tr><td>Ciepło &gt;50°C</td><td>1–4 tyg.</td><td>Papier ciemnieje globalnie</td></tr>
+<tr><td>Rozpuszczalniki</td><td>Natychmiast</td><td>IPA, aceton niszczą wydruk</td></tr>
 </tbody>
 </table>
 
 <h3>Druk termotransferowy — trwałość wg rodzaju ribbona</h3>
-<table>
+<table style="width:100%">
 <thead>
-<tr><th>Ribbon + materiał etykiety</th><th>Czas czytelności</th><th>Odporność na UV</th><th>Odporność na wodę</th><th>Odporność na temperaturę</th><th>Odporność na chemikalia</th></tr>
+<tr><th>Ribbon + materiał</th><th>Czytelność</th><th>UV</th><th>Woda</th><th>Temp.</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Wax</strong> na papierze powlekanym</td><td>2–3 lata</td><td>Średnia (blaknięcie po 6–12 mies. na zewnątrz)</td><td>Średnia (nie rozpływa się, ale rozmięka klej)</td><td>do 80°C</td><td>Niska</td></tr>
-<tr><td><strong>Wax-resin</strong> na papierze powlekanym</td><td>3–5 lat</td><td>Dobra</td><td>Dobra</td><td>do 110°C</td><td>Średnia (krótkotrwały kontakt OK)</td></tr>
-<tr><td><strong>Wax-resin</strong> na folii PP</td><td>4–7 lat</td><td>Dobra</td><td>Bardzo dobra</td><td>do 110°C</td><td>Średnia</td></tr>
-<tr><td><strong>Resin</strong> na folii PP</td><td>5–10 lat</td><td>Bardzo dobra</td><td>Doskonała (wodoodporna)</td><td>do 150°C</td><td>Dobra (IPA, oleje, benzyna)</td></tr>
-<tr><td><strong>Resin</strong> na folii PET (poliester)</td><td>10+ lat</td><td>Doskonała</td><td>Doskonała</td><td>do 200°C (krótkotrwale)</td><td>Doskonała (aceton, rozpuszczalniki)</td></tr>
+<tr><td><strong>Wax</strong> / papier</td><td>2–3 lata</td><td>Średnia</td><td>Średnia</td><td>do 80°C</td></tr>
+<tr><td><strong>Wax-resin</strong> / papier</td><td>3–5 lat</td><td>Dobra</td><td>Dobra</td><td>do 110°C</td></tr>
+<tr><td><strong>Wax-resin</strong> / folia PP</td><td>4–7 lat</td><td>Dobra</td><td>Bardzo dobra</td><td>do 110°C</td></tr>
+<tr><td><strong>Resin</strong> / folia PP</td><td>5–10 lat</td><td>Bardzo dobra</td><td>Doskonała</td><td>do 150°C</td></tr>
+<tr><td><strong>Resin</strong> / folia PET</td><td>10+ lat</td><td>Doskonała</td><td>Doskonała</td><td>do 200°C</td></tr>
 </tbody>
 </table>
+<p><strong>Odporność na chemikalia:</strong> Wax — niska. Wax-resin — średnia (krótkotrwały kontakt OK). Resin na PP — dobra (IPA, oleje). Resin na PET — doskonała (aceton, rozpuszczalniki).</p>
 
 <h3>Praktyczna zasada kciuka</h3>
 <p>Jeśli etykieta musi być czytelna przez <strong>mniej niż 6 miesięcy</strong> w warunkach wewnętrznych — druk termiczny wystarczy. Jeśli wymagana trwałość to <strong>ponad 12 miesięcy</strong> lub etykieta będzie narażona na UV, wodę, ciepło albo chemikalia — wybierz druk termotransferowy z odpowiednim ribbonem i materiałem etykiety.</p>
@@ -872,34 +863,28 @@ export const guides: Guide[] = [
       content: `<p>Poniżej zestawiamy sprawdzone modele drukarek Zebra dostępne w ofercie TAKMA — pogrupowane według technologii druku. Wszystkie ceny netto, dotyczą wariantu bazowego (USB, 203 dpi).</p>
 
 <h3>Drukarki termiczne (direct thermal) — <a href="/termiczne-drukarki-etykiet">zobacz wszystkie</a></h3>
-<table>
+<table style="width:100%">
 <thead>
-<tr><th>Model</th><th>Klasa</th><th>Cena od (netto)</th><th>Prędkość</th><th>Rozdzielczość</th><th>Najlepszy dla</th></tr>
+<tr><th>Model</th><th>Cena od (netto)</th><th>Prędkość / DPI</th><th>Najlepszy dla</th></tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="/produkt/zebra-zd220d"><strong>Zebra ZD220d</strong></a></td>
-<td>Biurkowa entry-level</td>
+<td><a href="/produkt/zebra-zd220d"><strong>ZD220d</strong></a><br><small>Biurkowa entry-level</small></td>
 <td>621 zł</td>
-<td>102 mm/s</td>
-<td>203 dpi</td>
-<td>E-commerce, niski budżet, &lt;200 etykiet/dzień</td>
+<td>102 mm/s, 203 dpi</td>
+<td>E-commerce, &lt;200 szt./dzień</td>
 </tr>
 <tr>
-<td><a href="/produkt/zebra-zd421d"><strong>Zebra ZD421d</strong></a></td>
-<td>Biurkowa mid-range</td>
+<td><a href="/produkt/zebra-zd421d"><strong>ZD421d</strong></a><br><small>Biurkowa mid-range</small></td>
 <td>1 330 zł</td>
-<td>152 mm/s</td>
-<td>203/300 dpi</td>
-<td>Magazyn, logistyka, 200–500 etykiet/dzień</td>
+<td>152 mm/s, 203/300 dpi</td>
+<td>Magazyn, 200–500 szt./dzień</td>
 </tr>
 <tr>
-<td><a href="/produkt/zebra-zd621d"><strong>Zebra ZD621d</strong></a></td>
-<td>Biurkowa premium</td>
+<td><a href="/produkt/zebra-zd621d"><strong>ZD621d</strong></a><br><small>Biurkowa premium</small></td>
 <td>1 829 zł</td>
-<td>203 mm/s</td>
-<td>203/300 dpi</td>
-<td>Duży wolumen, linerless, &gt;500 etykiet/dzień</td>
+<td>203 mm/s, 203/300 dpi</td>
+<td>Duży wolumen, &gt;500 szt./dzień</td>
 </tr>
 </tbody>
 </table>
@@ -907,50 +892,40 @@ export const guides: Guide[] = [
 <p><strong>Jak wybrać?</strong> Przy budżecie do 800 zł i wolumenie &lt;200 etykiet/dzień — <a href="/produkt/zebra-zd220d">ZD220d</a> w zupełności wystarczy. Jeśli potrzebujesz Ethernetu, Wi-Fi, rozdzielczości 300 dpi lub odklejaka — przeskocz do <a href="/produkt/zebra-zd421d">ZD421d</a>. Dla największych wolumenów biurkowych z opcjonalnym LCD i drukiem linerless — <a href="/produkt/zebra-zd621d">ZD621d</a>.</p>
 
 <h3>Drukarki termotransferowe — <a href="/termotransferowe-drukarki-etykiet">zobacz wszystkie</a></h3>
-<table>
+<table style="width:100%">
 <thead>
-<tr><th>Model</th><th>Klasa</th><th>Cena od (netto)</th><th>Prędkość</th><th>Rozdzielczość</th><th>Najlepszy dla</th></tr>
+<tr><th>Model</th><th>Cena od (netto)</th><th>Prędkość / DPI</th><th>Najlepszy dla</th></tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="/produkt/zebra-zd220t"><strong>Zebra ZD220t</strong></a></td>
-<td>Biurkowa entry-level</td>
+<td><a href="/produkt/zebra-zd220t"><strong>ZD220t</strong></a><br><small>Biurkowa entry-level</small></td>
 <td>635 zł</td>
-<td>102 mm/s</td>
-<td>203 dpi</td>
-<td>Niski budżet, jedno stanowisko, &lt;200 etykiet/dzień</td>
+<td>102 mm/s, 203 dpi</td>
+<td>Niski budżet, &lt;200 szt./dzień</td>
 </tr>
 <tr>
-<td><a href="/produkt/zebra-zd421t"><strong>Zebra ZD421t</strong></a></td>
-<td>Biurkowa mid-range</td>
+<td><a href="/produkt/zebra-zd421t"><strong>ZD421t</strong></a><br><small>Biurkowa mid-range</small></td>
 <td>1 638 zł</td>
-<td>152 mm/s</td>
-<td>203/300 dpi</td>
-<td>Produkcja, retail, etykiety produktowe</td>
+<td>152 mm/s, 203/300 dpi</td>
+<td>Produkcja, retail</td>
 </tr>
 <tr>
-<td><a href="/produkt/zebra-zd621t"><strong>Zebra ZD621t</strong></a></td>
-<td>Biurkowa premium</td>
+<td><a href="/produkt/zebra-zd621t"><strong>ZD621t</strong></a><br><small>Biurkowa premium</small></td>
 <td>2 048 zł</td>
-<td>203 mm/s</td>
-<td>203/300 dpi</td>
-<td>Najwyższa jakość biurkowa, LCD, gilotyna/odklejak</td>
+<td>203 mm/s, 203/300 dpi</td>
+<td>Top biurkowa, LCD, gilotyna</td>
 </tr>
 <tr>
-<td><a href="/produkt/zebra-zt411"><strong>Zebra ZT411</strong></a></td>
-<td>Przemysłowa 4"</td>
+<td><a href="/produkt/zebra-zt411"><strong>ZT411</strong></a><br><small>Przemysłowa 4"</small></td>
 <td>5 132 zł</td>
-<td>356 mm/s</td>
-<td>203/300/600 dpi</td>
-<td>Linie produkcyjne, &gt;2 000 etykiet/dzień, RFID</td>
+<td>356 mm/s, do 600 dpi</td>
+<td>Produkcja, &gt;2 000 szt./dzień</td>
 </tr>
 <tr>
-<td><a href="/produkt/zebra-zt421"><strong>Zebra ZT421</strong></a></td>
-<td>Przemysłowa 6"</td>
+<td><a href="/produkt/zebra-zt421"><strong>ZT421</strong></a><br><small>Przemysłowa 6"</small></td>
 <td>9 416 zł</td>
-<td>305 mm/s</td>
-<td>203/300 dpi</td>
-<td>Szerokie etykiety logistyczne 6", palety, opakowania</td>
+<td>305 mm/s, 203/300 dpi</td>
+<td>Etykiety paletowe 6"</td>
 </tr>
 </tbody>
 </table>
@@ -1055,7 +1030,7 @@ export const guides: Guide[] = [
       heading: 'Seria ZD (biurkowe) vs seria ZT (przemysłowe) — kluczowe różnice',
       content: `<p>Zebra dzieli swoje drukarki etykiet na dwie główne serie: <strong>ZD</strong> (desktop — biurkowe) i <strong>ZT</strong> (industrial — przemysłowe). Wybór między nimi to najważniejsza decyzja, którą musisz podjąć. Poniżej zestawiamy kluczowe różnice.</p>
 
-<table>
+<table style="width:100%">
   <thead>
     <tr>
       <th>Cecha</th>
@@ -1231,189 +1206,151 @@ export const guides: Guide[] = [
       heading: 'Porównanie modeli Zebra — tabela zbiorcza',
       content: `<p>Poniższa tabela zestawia wszystkie 17 modeli drukarek Zebra dostępnych na takma.com.pl — od najtańszej ZD220d po flagową ZT620. Ceny netto, parametry kluczowe i główne zastosowania w jednym miejscu.</p>
 
-<table>
+<h3>Drukarki biurkowe (seria ZD)</h3>
+<table style="width:100%">
   <thead>
     <tr>
       <th>Model</th>
-      <th>Klasa</th>
-      <th>Technologia</th>
-      <th>Rozdzielczość</th>
-      <th>Prędkość</th>
-      <th>Szer. druku</th>
-      <th>Cena od (netto)</th>
+      <th>Druk</th>
+      <th>Prędkość / DPI</th>
+      <th>Cena od</th>
       <th>Zastosowanie</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><a href="/produkt/zebra-zd220d">ZD220d</a></td>
-      <td>Biurkowa</td>
-      <td>Termiczna</td>
-      <td>203 dpi</td>
-      <td>102 mm/s</td>
-      <td>104 mm</td>
+      <td>DT</td>
+      <td>102 mm/s, 203</td>
       <td><strong>621 zł</strong></td>
-      <td>E-commerce, etykiety kurierskie, cenniki</td>
+      <td>E-commerce, kurierskie</td>
     </tr>
     <tr>
       <td><a href="/produkt/zebra-zd220t">ZD220t</a></td>
-      <td>Biurkowa</td>
-      <td>Termotransfer</td>
-      <td>203 dpi</td>
-      <td>102 mm/s</td>
-      <td>104 mm</td>
+      <td>TT</td>
+      <td>102 mm/s, 203</td>
       <td><strong>635 zł</strong></td>
-      <td>Etykiety produktowe, oznaczenia trwałe</td>
+      <td>Etykiety produktowe</td>
     </tr>
     <tr>
       <td><a href="/produkt/zebra-zd230d">ZD230d</a></td>
-      <td>Biurkowa</td>
-      <td>Termiczna</td>
-      <td>203 dpi</td>
-      <td>152 mm/s</td>
-      <td>104 mm</td>
+      <td>DT</td>
+      <td>152 mm/s, 203</td>
       <td><strong>1 081 zł</strong></td>
-      <td>Biuro z Ethernet, apteka, healthcare</td>
+      <td>Biuro z Ethernet, apteka</td>
     </tr>
     <tr>
       <td><a href="/produkt/zebra-zd230t">ZD230t</a></td>
-      <td>Biurkowa</td>
-      <td>Termotransfer</td>
-      <td>203 dpi</td>
-      <td>152 mm/s</td>
-      <td>104 mm</td>
+      <td>TT</td>
+      <td>152 mm/s, 203</td>
       <td><strong>1 069 zł</strong></td>
-      <td>Etykiety trwałe z drukiem sieciowym</td>
+      <td>Etykiety trwałe, sieciowe</td>
     </tr>
     <tr>
-      <td><a href="/produkt/zebra-zd411d">ZD411d</a></td>
-      <td>Biurkowa 2"</td>
-      <td>Termiczna</td>
-      <td>203/300 dpi</td>
-      <td>152 mm/s</td>
-      <td>56 mm</td>
+      <td><a href="/produkt/zebra-zd411d">ZD411d</a> <small>(2")</small></td>
+      <td>DT</td>
+      <td>152 mm/s, 203/300</td>
       <td><strong>1 165 zł</strong></td>
-      <td>Laboratorium, etykiety probówkowe</td>
+      <td>Laboratorium, probówki</td>
     </tr>
     <tr>
-      <td><a href="/produkt/zebra-zd411t">ZD411t</a></td>
-      <td>Biurkowa 2"</td>
-      <td>Termotransfer</td>
-      <td>203 dpi</td>
-      <td>152 mm/s</td>
-      <td>56 mm</td>
+      <td><a href="/produkt/zebra-zd411t">ZD411t</a> <small>(2")</small></td>
+      <td>TT</td>
+      <td>152 mm/s, 203</td>
       <td><strong>1 526 zł</strong></td>
-      <td>Farmacja, elektronika, etykiety wąskie</td>
+      <td>Farmacja, elektronika</td>
     </tr>
     <tr>
       <td><a href="/produkt/zebra-zd421d">ZD421d</a></td>
-      <td>Biurkowa</td>
-      <td>Termiczna</td>
-      <td>203/300 dpi</td>
-      <td>152 mm/s</td>
-      <td>104 mm</td>
+      <td>DT</td>
+      <td>152 mm/s, 203/300</td>
       <td><strong>1 330 zł</strong></td>
-      <td>Magazyn z WMS, retail, healthcare</td>
+      <td>Magazyn, retail, WMS</td>
     </tr>
     <tr>
       <td><a href="/produkt/zebra-zd421t">ZD421t</a></td>
-      <td>Biurkowa</td>
-      <td>Termotransfer</td>
-      <td>203/300 dpi</td>
-      <td>152 mm/s</td>
-      <td>104 mm</td>
+      <td>TT</td>
+      <td>152 mm/s, 203/300</td>
       <td><strong>1 638 zł</strong></td>
-      <td>Produkcja, farmacja, logistyka</td>
+      <td>Produkcja, farmacja</td>
     </tr>
     <tr>
       <td><a href="/produkt/zebra-zd621d">ZD621d</a></td>
-      <td>Biurkowa premium</td>
-      <td>Termiczna</td>
-      <td>203/300 dpi</td>
-      <td>203 mm/s</td>
-      <td>104 mm</td>
+      <td>DT</td>
+      <td>203 mm/s, 203/300</td>
       <td><strong>1 829 zł</strong></td>
-      <td>Wysyłki dużych wolumenów, apteka szpitalna</td>
+      <td>Duże wolumeny, apteka</td>
     </tr>
     <tr>
       <td><a href="/produkt/zebra-zd621t">ZD621t</a></td>
-      <td>Biurkowa premium</td>
-      <td>Termotransfer</td>
-      <td>203/300 dpi</td>
-      <td>203 mm/s</td>
-      <td>104 mm</td>
+      <td>TT</td>
+      <td>203 mm/s, 203/300</td>
       <td><strong>2 048 zł</strong></td>
-      <td>Top biurkowa, zamiennik drukarki przemysłowej</td>
+      <td>Top biurkowa, LCD</td>
     </tr>
+  </tbody>
+</table>
+
+<h3>Drukarki przemysłowe (seria ZT)</h3>
+<table style="width:100%">
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Klasa</th>
+      <th>Prędkość / DPI</th>
+      <th>Cena od</th>
+      <th>Zastosowanie</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td><a href="/produkt/zebra-zt111">ZT111</a></td>
-      <td>Przemysłowa entry</td>
-      <td>TT / DT</td>
-      <td>203/300 dpi</td>
-      <td>254 mm/s</td>
-      <td>104 mm</td>
+      <td>Entry 4"</td>
+      <td>254 mm/s, 203/300</td>
       <td><strong>2 081 zł</strong></td>
-      <td>Magazyn, lekka produkcja, logistyka</td>
+      <td>Magazyn, lekka produkcja</td>
     </tr>
     <tr>
       <td><a href="/produkt/zebra-zt231">ZT231</a></td>
-      <td>Przemysłowa mid</td>
-      <td>TT / DT</td>
-      <td>203/300 dpi</td>
-      <td>304 mm/s</td>
-      <td>104 mm</td>
+      <td>Mid 4"</td>
+      <td>304 mm/s, 203/300</td>
       <td><strong>2 551 zł</strong></td>
-      <td>Centrum dystrybucyjne, 3PL, produkcja</td>
+      <td>Centrum dystrybucyjne, 3PL</td>
     </tr>
     <tr>
       <td><a href="/produkt/zebra-zt411">ZT411</a></td>
-      <td>Przemysłowa high</td>
-      <td>TT / DT</td>
-      <td>203/300/600 dpi</td>
-      <td>356 mm/s</td>
-      <td>104 mm</td>
+      <td>High 4"</td>
+      <td>356 mm/s, do 600</td>
       <td><strong>5 132 zł</strong></td>
-      <td>Farmacja, elektronika, 24/7 na 3 zmiany</td>
+      <td>Farmacja, elektronika, 24/7</td>
     </tr>
     <tr>
       <td><a href="/produkt/zebra-zt510">ZT510</a></td>
-      <td>Przemysłowa heavy</td>
-      <td>TT / DT</td>
-      <td>203/300 dpi</td>
-      <td>305 mm/s</td>
-      <td>104 mm</td>
+      <td>Heavy 4"</td>
+      <td>305 mm/s, 203/300</td>
       <td><strong>8 490 zł</strong></td>
-      <td>Ciężki przemysł, praca non-stop</td>
+      <td>Ciężki przemysł, non-stop</td>
     </tr>
     <tr>
       <td><a href="/produkt/zebra-zt421">ZT421</a></td>
-      <td>Przemysłowa 6"</td>
-      <td>TT / DT</td>
-      <td>203/300 dpi</td>
-      <td>305 mm/s</td>
-      <td>168 mm</td>
+      <td>6"</td>
+      <td>305 mm/s, 203/300</td>
       <td><strong>9 416 zł</strong></td>
-      <td>Etykiety paletowe GS1, logistyka FMCG</td>
+      <td>Etykiety paletowe GS1</td>
     </tr>
     <tr>
       <td><a href="/produkt/zebra-zt610">ZT610</a></td>
-      <td>Przemysłowa premium</td>
-      <td>TT / DT</td>
-      <td>203/300/600 dpi</td>
-      <td>356 mm/s</td>
-      <td>104 mm</td>
+      <td>Premium 4"</td>
+      <td>356 mm/s, do 600</td>
       <td><strong>10 432 zł</strong></td>
-      <td>Farmacja, elektronika, nanokody, premium</td>
+      <td>Farmacja, nanokody</td>
     </tr>
     <tr>
       <td><a href="/produkt/zebra-zt620">ZT620</a></td>
-      <td>Przemysłowa premium 6"</td>
-      <td>TT / DT</td>
-      <td>203/300 dpi</td>
-      <td>305 mm/s</td>
-      <td>168 mm</td>
+      <td>Premium 6"</td>
+      <td>305 mm/s, 203/300</td>
       <td><strong>12 417 zł</strong></td>
-      <td>Duże centra logistyczne, etykiety GHS, RFID</td>
+      <td>Centra logistyczne, GHS</td>
     </tr>
   </tbody>
 </table>
@@ -1468,7 +1405,7 @@ export const guides: Guide[] = [
 
 <h3>Najczęstsze scenariusze z naszych wdrożeń</h3>
 
-<table>
+<table style="width:100%">
   <thead>
     <tr>
       <th>Scenariusz</th>

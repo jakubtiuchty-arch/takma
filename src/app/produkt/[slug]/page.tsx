@@ -289,6 +289,20 @@ export default async function ProductPage({ params }: ProductPageProps) {
     url: `https://takma.com.pl/produkt/${product.slug}`,
   }
 
+  // JSON-LD: FAQPage — structured data for product FAQ
+  const faqJsonLd = product.faq && product.faq.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: product.faq.map(item => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  } : null
+
   const ogProductMeta = `<meta property="og:type" content="product" />${product.priceFrom ? `<meta property="product:price:amount" content="${product.priceFrom.toFixed(2)}" /><meta property="product:price:currency" content="PLN" />` : ''}`
 
   return (
@@ -313,6 +327,12 @@ export default async function ProductPage({ params }: ProductPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
 
       <div className="container-main py-6 lg:py-10">
         {/* Breadcrumbs */}
