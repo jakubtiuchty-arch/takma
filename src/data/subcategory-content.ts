@@ -1492,4 +1492,201 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
       { name: 'Skonfiguruj i drukuj', text: 'Załaduj taśmę YMCKO i karty blank do podajnika (100 szt.). Uruchom czyszczenie inicjalne (karta czyszcząca w zestawie). Wydrukuj kartę testową. Jeśli kodowanie RFID — skonfiguruj enkoder w CardStudio (typ karty, klucze szyfrowania). Gotowe — druk pierwszej karty w 25 sekund.' },
     ],
   },
+
+  // --- Podkategorie akcesoriów do terminali mobilnych ---
+
+  'baterie-do-terminali': {
+    definition: {
+      heading: 'Baterie do terminali mobilnych — co warto wiedzieć?',
+      content: 'Baterie do terminali mobilnych Zebra (ang. PowerPrecision / PowerPrecision+) to oryginalne akumulatory litowo-jonowe zaprojektowane pod konkretne serie urządzeń MC i TC. Każda bateria zawiera wbudowany chip diagnostyczny, który monitoruje stan zdrowia (State of Health), liczbę cykli ładowania, temperaturę pracy i prognozuje moment wymiany. Dane diagnostyczne są dostępne w narzędziu Zebra Device Diagnostics Tool lub przez API MDM. Dostępne pojemności: od 3500 mAh (standard, 8–10 h pracy) do 7000 mAh (extended, 12–16 h pracy). Modele z BLE (Bluetooth Low Energy) umożliwiają śledzenie lokalizacji baterii w magazynie — przydatne przy zarządzaniu flotą 50+ urządzeń.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać baterię do terminala Zebra?',
+      items: [
+        'Kompatybilność — sprawdź serię terminala (MC3300x/MC3400, MC2200/MC2700, TC22/TC27, TC52/TC57, TC53/TC58). Baterie NIE są wymienne między seriami.',
+        'Pojemność — standard (3500–4680 mAh) wystarcza na 8–10 h typowej pracy. Rozszerzona (4900–7000 mAh) dla 12–16 h lub pracy na dwóch zmianach bez ładowania.',
+        'BLE — moduł Bluetooth Low Energy w baterii pozwala śledzić jej lokalizację w magazynie. Przydatne przy flotach 50+ urządzeń, gdzie baterie rotują między terminalami.',
+        'Warm swap — w seriach MC3x00 wymiana baterii nie wymaga restartu Android. W seriach TC wymiana trwa ok. 30 s z zachowaniem sesji.',
+        'Cykl życia — bateria PowerPrecision+ wytrzymuje 500–1000 cykli pełnego ładowania. Przy codziennym ładowaniu to 2–3 lata. Chip diagnostyczny ostrzega z 30-dniowym wyprzedzeniem.',
+      ],
+    },
+    expertAuthority: 'TAKMA jako autoryzowany partner Zebra Technologies dostarcza oryginalne baterie PowerPrecision+ z pełną gwarancją producenta. Nasi inżynierowie pomagają dobrać optymalny model i pojemność do profilu pracy — na podstawie telemetrii z Zebra Visibility IQ. Obsługujemy floty od 10 do 500+ terminali.',
+    technicalDeepDive: 'Baterie Zebra PowerPrecision+ (generacja 2) oferują o 15–20% dłuższą żywotność w porównaniu z PowerPrecision (gen. 1) dzięki ulepszonej chemii ogniw i zaawansowanemu zarządzaniu termicznemu. Chip diagnostyczny mierzy: napięcie ogniw, prąd ładowania/rozładowania, temperaturę (zakres pracy: -20°C do +50°C), impedancję wewnętrzną, liczbę cykli i czas eksploatacji.\n\nKoszt wymiany baterii to ok. 180–370 zł netto, co stanowi ułamek kosztu przestoju terminala (~500–1500 zł/dzień w środowisku magazynowym). Zalecana strategia: 1 bateria zapasowa na każde 2–3 terminale + rotacja na stacjach ładowania.\n\nBaterie z BLE wykorzystują protokół Bluetooth 5.0 Low Energy do nadawania sygnału beacon co 2 s. W połączeniu z infrastrukturą Zebra RTLS (Real-Time Location System) możliwe jest śledzenie każdej baterii z dokładnością do 3 m w budynku.',
+    useCases: [
+      { title: 'Magazyn i logistyka', description: 'Praca 3-zmianowa z rotacją baterii. Baterie extended 7000 mAh dla zmian 12 h. Stacje ładowania 4-slot do nocnej rotacji zapasowych akumulatorów.' },
+      { title: 'Produkcja', description: 'Baterie standard 4680 mAh wystarczają na zmianę 8 h. Warm swap w MC3400 — wymiana bez przerywania pracy aplikacji na linii produkcyjnej.' },
+      { title: 'Dostawa i kurier', description: 'Baterie extended do TC22/TC27 — cały dzień pracy w terenie bez ładowania. Pojemność 4900 mAh zapewnia 10–14 h nawet przy intensywnym skanowaniu i nawigacji GPS.' },
+    ],
+    uniqueInsights: {
+      heading: 'Porady eksperta',
+      items: [
+        { title: 'Nie ładuj do 100% na noc', text: 'Optymalne ładowanie to 20–80%. Stacje Zebra mają tryb „battery optimization" — automatycznie ograniczają ładowanie do 90%, wydłużając żywotność o 30%.' },
+        { title: 'Kalibruj raz na kwartał', text: 'Pełny cykl rozładowania (do 5%) i ładowania (do 100%) co 3 miesiące poprawia dokładność wskaźnika poziomu naładowania.' },
+        { title: 'Zamienne baterie = ryzyko', text: 'Nieoryginalne baterie nie mają chipu PowerPrecision — brak diagnostyki, brak warm swap, ryzyko uszkodzenia terminala i utrata gwarancji Zebra.' },
+      ],
+    },
+    faq: [
+      { question: 'Ile wytrzymuje bateria terminala Zebra na jednym ładowaniu?', answer: 'Bateria standardowa (3500–4680 mAh) wystarcza na 8–10 godzin typowej pracy (skanowanie, Wi-Fi, ekran). Bateria rozszerzona (4900–7000 mAh) zapewnia 12–16 godzin — wystarczająco na dwie zmiany.' },
+      { question: 'Czy baterie Zebra PowerPrecision+ są kompatybilne z różnymi modelami?', answer: 'Nie — każda seria terminali (MC3x, MC2x, TC2x, TC5x) ma dedykowane baterie o innym kształcie i złączu. Baterie nie są wymienne między seriami.' },
+      { question: 'Co daje moduł BLE w baterii?', answer: 'Bateria z BLE (Bluetooth Low Energy) nadaje sygnał beacon, który pozwala śledzić jej lokalizację w magazynie. W połączeniu z systemem Zebra RTLS można zlokalizować każdą baterię z dokładnością do 3 metrów.' },
+      { question: 'Jak często trzeba wymieniać baterię?', answer: 'Baterie PowerPrecision+ wytrzymują 500–1000 pełnych cykli ładowania. Przy codziennym ładowaniu to 2–3 lata. Chip diagnostyczny ostrzega z 30-dniowym wyprzedzeniem o konieczności wymiany.' },
+      { question: 'Jaka jest gwarancja na baterie Zebra?', answer: 'Standardowa gwarancja producenta: 12 miesięcy od daty zakupu. Baterie kupione w autoryzowanym kanale (jak TAKMA) mają pełne wsparcie serwisowe Zebra.' },
+      { question: 'Ile kosztuje bateria do terminala Zebra?', answer: 'Ceny oryginalnych baterii Zebra: od ok. 180 zł (standard MC2x) do ok. 370 zł (extended 7000 mAh MC3x). Dokładne ceny zależą od modelu terminala i pojemności.' },
+    ],
+    comparisons: [
+      { title: 'Standard vs Extended', content: 'Bateria standardowa (3500–4680 mAh) — lżejsza, tańsza (od ok. 180 zł), wystarczająca na zmianę 8 h. Bateria rozszerzona (4900–7000 mAh) — węższa o 10–15 mm, droższa (od ok. 280 zł), ale eliminuje potrzebę ładowania w ciągu dnia.' },
+      { title: 'PowerPrecision vs PowerPrecision+', content: 'PowerPrecision (gen. 1) — podstawowa diagnostyka, 300–500 cykli. PowerPrecision+ (gen. 2) — zaawansowana diagnostyka, 500–1000 cykli, o 15–20% dłuższa żywotność, prognoza wymiany z 30-dniowym wyprzedzeniem.' },
+    ],
+    howToSteps: [
+      { name: 'Zidentyfikuj model terminala', text: 'Sprawdź serię terminala: MC3300x/MC3400, MC2200/MC2700, TC22/TC27, TC52/TC57, TC53/TC58. Part Number baterii znajdziesz w Zebra Device Diagnostics Tool lub na etykiecie pod baterią.' },
+      { name: 'Wybierz pojemność', text: 'Standard (3500–4680 mAh) na zmianę 8 h. Extended (4900–7000 mAh) na 12–16 h lub pracę bez ładowania przez cały dzień. BLE jeśli zarządzasz flotą 50+ baterii.' },
+      { name: 'Zamów i zainstaluj', text: 'Wyłącz terminal (lub użyj warm swap w MC3x). Wyjmij starą baterię, włóż nową. Terminal automatycznie rozpozna PowerPrecision+ i rozpocznie diagnostykę. Pierwsze pełne ładowanie: ~3 h.' },
+    ],
+  },
+
+  'stacje-ladowarki-terminali': {
+    definition: {
+      heading: 'Stacje dokujące i ładowarki do terminali mobilnych',
+      content: 'Stacje dokujące (cradle) i ładowarki Zebra to infrastruktura ładowania i synchronizacji danych dla terminali mobilnych serii MC i TC. Stacje ShareCradle 1-slot służą do indywidualnego stanowiska — ładują terminal i zapasową baterię jednocześnie, opcjonalnie z portem Ethernet do przewodowej komunikacji. Stacje 5-slot (multi-slot) są przeznaczone do nocnego ładowania floty urządzeń — każdy slot z portem Ethernet umożliwia masową aktualizację oprogramowania i synchronizację danych. Ładowarki baterii (battery charger) 4-slot i 20-slot służą do rotacyjnego zarządzania zapasowymi akumulatorami w dużych instalacjach magazynowych i logistycznych.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać stację dokującą do terminala Zebra?',
+      items: [
+        'Liczba urządzeń — 1 terminal? Stacja 1-slot. Flota 5+ terminali? Stacja 5-slot. Flota 20+? Ładowarka baterii 20-slot + stacje 5-slot.',
+        'Ethernet — jeśli potrzebujesz przewodowego połączenia sieciowego (np. do masowej aktualizacji firmware), wybierz wariant z Ethernet.',
+        'Ładowanie baterii zapasowej — stacje „ShareCradle" ładują terminal + 1 zapasową baterię. Stacje „CRD" ładują tylko terminal.',
+        'Zasilacz — wszystkie stacje Zebra są dostarczane z zasilaczem. Przy rozbudowie sprawdź moc: 50W (1-slot) lub 108W (5-slot).',
+        'Kompatybilność — stacje są dedykowane dla konkretnych serii terminali (MC3x, MC2x, TC2x, TC5x). Nie ma uniwersalnych stacji.',
+      ],
+    },
+    expertAuthority: 'TAKMA projektuje infrastrukturę ładowania dla magazynów i centrów logistycznych obsługujących od 10 do 500+ terminali. Nasi inżynierowie pomagają dobrać konfigurację stacji, zasilacze i okablowanie — z uwzględnieniem layoutu magazynu, rotacji zmianowej i wymagań IT. Dostarczamy kompletne rozwiązania „pod klucz" z instalacją i konfiguracją.',
+    technicalDeepDive: 'Stacje dokujące Zebra ShareCradle to urządzenia klasy enterprise z certyfikatem CE i FCC. Ładują terminale prądem 5V/2A (USB) lub 12V/3A (barrel). Stacje z Ethernet oferują port 10/100 Mbps z obsługą 802.1X i VLAN — umożliwia to segmentację ruchu sieciowego terminali w środowiskach korporacyjnych.\n\nStacje 5-slot z Ethernet są idealne do nocnego „firmware update push" — zamiast aktualizować każdy terminal przez Wi-Fi (30–60 min/szt.), podłączasz 5 terminali do stacji i aktualizujesz przez Ethernet (5–10 min/szt.).\n\nŁadowarki baterii 4-slot i 20-slot mają inteligentny algorytm ładowania: CC-CV (Constant Current → Constant Voltage) z ochroną przed przeładowaniem i przegrzaniem. Pełne ładowanie baterii 4680 mAh: ~2,5 h, 7000 mAh: ~4 h.',
+    useCases: [
+      { title: 'Stanowisko biurowe', description: 'Stacja 1-slot na biurku IT — ładowanie terminala + zapasowej baterii podczas przerwy. Opcja z Ethernet do komunikacji bez Wi-Fi.' },
+      { title: 'Punkt wydawania urządzeń', description: 'Stacja 5-slot z Ethernet na stanowisku dystrybucji. Pracownicy pobierają naładowane terminale na początek zmiany, oddają na koniec.' },
+      { title: 'Duży magazyn 24/7', description: 'Ładowarki baterii 20-slot do nocnej rotacji akumulatorów. Pracownicy wymieniają baterię co 8–12 h (warm swap w MC3x) bez konieczności oddawania terminala.' },
+      { title: 'Flota mobilna (kurier/dostawa)', description: 'Stacje 1-slot z Ethernet w bazach logistycznych. Kurierzy podłączają terminale po powrocie — nocna synchronizacja danych i ładowanie.' },
+    ],
+    uniqueInsights: {
+      heading: 'Porady eksperta',
+      items: [
+        { title: 'Planuj 1 stację na 1.5 terminala', text: 'W środowisku zmianowym nie każdy terminal jest na stacji jednocześnie. Stosunek 1:1.5 (stacja:terminal) minimalizuje kolejki i optymalizuje koszty.' },
+        { title: 'Ethernet > Wi-Fi do aktualizacji', text: 'Masowa aktualizacja firmware przez Ethernet na stacji 5-slot: 5 terminali × 10 min = 50 min. Przez Wi-Fi: 5 × 45 min = 3,75 h. Oszczędność: 85% czasu.' },
+        { title: 'Kupuj zasilacz osobno', text: 'Kabel zasilający AC do stacji Zebra jest sprzedawany OSOBNO (CBL-DC-388A1-01 lub CBL-DC-381A1-01). Zasilacz jest w zestawie, ale kabel AC nie — zaplanuj go w zamówieniu.' },
+      ],
+    },
+    faq: [
+      { question: 'Czy stacja dokująca Zebra jest dostarczana z zasilaczem?', answer: 'Tak — zasilacz jest w zestawie. Jednak kabel zasilający AC (łączący zasilacz z gniazdkiem) jest sprzedawany osobno: CBL-DC-388A1-01 (do zasilacza 50W) lub CBL-DC-381A1-01 (do zasilacza 108W).' },
+      { question: 'Ile terminali mogę ładować jednocześnie?', answer: 'Stacja 1-slot: 1 terminal + 1 bateria zapasowa. Stacja 5-slot: 5 terminali jednocześnie. Ładowarka baterii 4-slot: 4 baterie. Ładowarka 20-slot: 20 baterii. Stacje można łączyć do dowolnej skali.' },
+      { question: 'Czy potrzebuję wariantu z Ethernet?', answer: 'Jeśli terminale pracują wyłącznie przez Wi-Fi — nie. Jeśli potrzebujesz masowych aktualizacji firmware, podłączenia do sieci kablowej (np. ze względów bezpieczeństwa) lub szybkiej synchronizacji danych — tak.' },
+      { question: 'Czy mogę używać stacji z MC3300x do MC3400?', answer: 'Tak — stacje ShareCradle dla serii MC33xx są kompatybilne z MC3300x i MC3400 (ten sam form factor i złącze).' },
+      { question: 'Jak długo trwa ładowanie terminala na stacji?', answer: 'Zależy od pojemności baterii. Bateria standardowa 4680 mAh: ~2,5 h do 100%. Bateria extended 7000 mAh: ~4 h do 100%. Tryb szybkiego ładowania: do 80% w ~1,5 h.' },
+      { question: 'Ile kosztuje stacja dokująca do terminala Zebra?', answer: 'Stacja 1-slot (bez Ethernet): od ok. 650 zł. Stacja 1-slot z Ethernet: od ok. 750 zł. Stacja 5-slot z Ethernet: od ok. 2 500 zł. Ładowarka baterii 4-slot: od ok. 600 zł.' },
+    ],
+    comparisons: [
+      { title: '1-slot vs 5-slot', content: 'Stacja 1-slot (od ok. 650 zł) — na indywidualne stanowisko, ładuje terminal + zapasową baterię, kompaktowa. Stacja 5-slot (od ok. 2 500 zł) — do floty, ładuje 5 terminali, opcja Ethernet na każdym slocie, idealna do punktu wydawania.' },
+      { title: 'Stacja dokująca vs ładowarka baterii', content: 'Stacja dokująca ładuje terminal w obudowie (z opcją Ethernet). Ładowarka baterii ładuje wyjęte akumulatory — idealna przy pracy 24/7 z rotacją baterii (warm swap).' },
+    ],
+    howToSteps: [
+      { name: 'Określ liczbę terminali i model', text: 'Policz terminale w flocie i sprawdź serię (MC3x, MC2x, TC2x, TC5x). Stacje są dedykowane — nie ma uniwersalnych.' },
+      { name: 'Wybierz konfigurację', text: '1-slot na stanowisko biurowe. 5-slot do punktu wydawania. Ładowarka baterii do pracy 24/7 z rotacją akumulatorów. Wariant z Ethernet do masowych aktualizacji.' },
+      { name: 'Zamów zasilacz i kabel', text: 'Zasilacz w zestawie ze stacją. Kabel AC zamów osobno (CBL-DC-388 do 50W lub CBL-DC-381 do 108W). Dla stacji 5-slot: zasilacz 108W.' },
+      { name: 'Zainstaluj i podłącz', text: 'Umieść stację na stabilnej powierzchni. Podłącz zasilacz → kabel AC → gniazdko. Opcjonalnie: podłącz kabel Ethernet do switcha. Włóż terminal — ładowanie rozpocznie się automatycznie.' },
+    ],
+  },
+
+  'etui-kabury-uchwyty': {
+    definition: {
+      heading: 'Etui, kabury i uchwyty do terminali mobilnych',
+      content: 'Etui ochronne (rubber boot), kabury (holster), uchwyty pistoletowe (trigger handle), paski na rękę (hand strap) i smycze (lanyard) to akcesoria ergonomiczne i ochronne do terminali mobilnych Zebra serii MC i TC. Rubber boot z gumy TPU absorbuje energię upadku i chroni ekran oraz narożniki — wydłuża żywotność terminala o 30–50% w środowisku magazynowym. Trigger handle z ergonomicznym spustem zmniejsza zmęczenie nadgarstka o 40% przy wielogodzinnym skanowaniu. Kabury z klipsem obrotowym na pas pozwalają nosić terminal w gotowości, z szybkim dostępem jedną ręką.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać etui lub uchwyt do terminala Zebra?',
+      items: [
+        'Profil pracy — intensywne skanowanie (200+ skanów/h)? Trigger handle. Noszenie przy sobie między skanowaniami? Kabura. Praca w trudnych warunkach? Rubber boot.',
+        'Forma obudowy — terminale straight shooter (TC22, MC2200) i gun grip (MC3400, TC27) mają różne etui. Sprawdź kompatybilność.',
+        'Smycz vs pasek — smycz (lanyard) na nadgarstek zabezpiecza przed upuszczeniem. Pasek (hand strap) ułatwia trzymanie jedną ręką. Wiele firm stosuje oba jednocześnie.',
+        'Rękawice — jeśli pracownicy noszą rękawice, trigger handle z dużym spustem jest bardziej ergonomiczny niż dotykowy ekran.',
+        'Stylus — do pracy z ekranem dotykowym w rękawicach lub na mokro. Zebra oferuje stylus z mocowaniem na smyczy.',
+      ],
+    },
+    expertAuthority: 'TAKMA dobiera akcesoria ochronne na podstawie analizy środowiska pracy klienta — temperatura, wilgotność, częstotliwość upadków, profil skanowania. Nasze rekomendacje opierają się na danych z wdrożeń w magazynach, centrach logistycznych i liniach produkcyjnych obsługujących łącznie tysiące terminali.',
+    technicalDeepDive: 'Rubber boot Zebra jest wykonany z termoplastycznego poliuretanu (TPU) o twardości Shore A 60–70. Absorbuje energię upadku z wysokości 1,2–1,8 m na beton — w połączeniu z wbudowaną odpornością terminala (IP67/IP68) zapewnia przetrwanie upadków z 2,4+ m. Rubber boot dodaje ok. 50–80 g masy i 3–5 mm do wymiarów.\n\nTrigger handle Zebra ma ergonomiczny kształt pistoletu z indeksem spustu — optymalny kąt nadgarstka redukuje syndrom cieśni nadgarstka o ~40% w porównaniu z skanowaniem bez uchwytu (dane z badania ergonomii Zebra, 2024). Montaż bez narzędzi: terminal wkłada się i zatrzaskuje.\n\nKabury Zebra mają klips obrotowy 360° do paska (kompatybilny z paskami 4–5 cm) i blokadę szybkiego wyjmowania. Materiał: nylon balistyczny 1680D z podszewką z mikrofibry chroniącą ekran.',
+    useCases: [
+      { title: 'Magazyn — skanowanie palet', description: 'Trigger handle do MC3400/TC53 — intensywne skanowanie 500+ kodów/zmianę. Rubber boot chroni przy upadkach z regałów. Pasek na rękę jako zabezpieczenie.' },
+      { title: 'Dostawa — praca w terenie', description: 'Kabura na pasie do TC22/TC27 — szybki dostęp między dostawami. Smycz na nadgarstek zapobiega upuszczeniu przy przekazywaniu paczki.' },
+      { title: 'Produkcja — linia montażowa', description: 'Rubber boot z trigger handle do MC3400 — ochrona przed pyłem i upadkami + ergonomiczny uchwyt do skanowania komponentów.' },
+      { title: 'Chłodnia — praca w niskiej temperaturze', description: 'Trigger handle z dużym spustem do obsługi w rękawicach zimowych. Stylus do ekranu dotykowego zamiast ściągania rękawic.' },
+    ],
+    uniqueInsights: {
+      heading: 'Porady eksperta',
+      items: [
+        { title: 'Rubber boot = niższy TCO', text: 'Inwestycja 150–250 zł w etui ochronne zmniejsza koszty napraw uszkodzonych ekranów o 40–60%. Przy flocie 50 terminali to oszczędność 15 000–30 000 zł/rok.' },
+        { title: 'Trigger handle jest obowiązkowy powyżej 200 skanów/h', text: 'Bez uchwytu pistoletowego, przy intensywnym skanowaniu powyżej 200 kodów na godzinę, ryzyko urazów nadgarstka wzrasta 3-krotnie. Trigger handle to nie luksus — to wymóg BHP.' },
+        { title: 'Zamawiaj rubber boot z terminalem', text: 'Montaż rubber boot na nowy terminal trwa 10 sekund. Demontaż i ponowny montaż na używanym terminalu — 30 sekund. Zamów od razu przy zakupie terminala, nie dokupiaj po fakcie.' },
+      ],
+    },
+    faq: [
+      { question: 'Czy rubber boot (etui ochronne) wpływa na wagę terminala?', answer: 'Tak, dodaje ok. 50–80 g. Przy terminalu ważącym 300–500 g to wzrost o 10–20% — zauważalny, ale akceptowalny w kontekście zwiększonej ochrony.' },
+      { question: 'Czy trigger handle pasuje do rubber boot?', answer: 'Tak — uchwyty pistoletowe Zebra są kompatybilne z etui ochronnymi tego samego modelu. Rubber boot ma wycięcia na mocowania trigger handle.' },
+      { question: 'Ile kosztuje etui ochronne do terminala Zebra?', answer: 'Rubber boot: od ok. 150 zł (TC22) do ok. 250 zł (MC3400). Trigger handle: od ok. 300 zł do ok. 800 zł. Kabura: od ok. 150 zł. Smycz: od ok. 50 zł.' },
+      { question: 'Czy mogę używać etui z innego modelu?', answer: 'Nie — etui, kabury i uchwyty są dedykowane dla konkretnych modeli terminali. Różnice w wymiarach, rozmieszczeniu przycisków i złączy uniemożliwiają wymienność.' },
+      { question: 'Jak długo wytrzymuje rubber boot?', answer: 'Przy normalnym użytkowaniu: 12–24 miesiące. W ekstremalnych warunkach (chłodnia, linia produkcyjna): 6–12 miesięcy. TPU z czasem twardnieje i traci elastyczność — warto wymieniać prewencyjnie.' },
+      { question: 'Jakie są alternatywy dla oryginalnych akcesoriów Zebra?', answer: 'Na rynku są zamienniki (np. marki Agora, ProTech), ale nie gwarantują precyzyjnego dopasowania, mogą blokować porty ładowania i nie są objęte gwarancją Zebra. TAKMA rekomenduje oryginalne akcesoria dla pełnej kompatybilności.' },
+    ],
+    comparisons: [
+      { title: 'Rubber boot vs etui silikonowe', content: 'Rubber boot (TPU): trwalszy, lepsze pochłanianie upadków, precyzyjne dopasowanie. Etui silikonowe (zamienniki): tańsze, ale luźne, szybciej się zużywają, mogą blokować porty.' },
+      { title: 'Trigger handle vs skanowanie bez uchwytu', content: 'Trigger handle: ergonomiczny, redukcja zmęczenia nadgarstka o 40%, szybsze skanowanie (spust > dotyk ekranu). Bez uchwytu: lżejszy zestaw, ale wyższe ryzyko urazów RSI przy intensywnej pracy.' },
+    ],
+    howToSteps: [
+      { name: 'Określ model terminala', text: 'Sprawdź serię i formę obudowy: straight shooter (TC22, MC2200) czy gun grip (MC3400, TC53 z trigger). Akcesoria nie są wymienne między modelami.' },
+      { name: 'Dobierz zestaw ochronny', text: 'Minimum: rubber boot (ochrona) + smycz (zabezpieczenie). Intensywne skanowanie: + trigger handle. Noszenie przy sobie: + kabura z klipsem. Praca w rękawicach: + stylus.' },
+      { name: 'Zamów i zamontuj', text: 'Montaż rubber boot: wsuń terminal i zatrzaśnij. Trigger handle: wsuń terminal w uchwyt pistoletowy. Kabura: przełóż klips przez pasek. Smycz: przełóż przez oczko na terminalu lub rubber boot.' },
+    ],
+  },
+
+  'kable-zasilacze-terminali': {
+    definition: {
+      heading: 'Kable i zasilacze do terminali mobilnych Zebra',
+      content: 'Kable i zasilacze Zebra to infrastruktura zasilania stacji dokujących do terminali mobilnych serii MC i TC. Zasilacze sieciowe (PSU) konwertują napięcie AC 100–240V na DC 12V wymagane przez stacje. Kable zasilające DC (CBL-DC) łączą zasilacz z gniazdkiem sieciowym. Kable USB służą do komunikacji terminala z komputerem i ładowania. Kable DC do pojazdów (vehicle charger) umożliwiają ładowanie terminala z instalacji 12V/24V samochodu dostawczego lub wózka widłowego.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać zasilacz i kabel do stacji Zebra?',
+      items: [
+        'Moc zasilacza — stacja 1-slot: zasilacz 50W (PWR-BGA12V50W0WW). Stacja 5-slot: zasilacz 108W (PWR-BGA12V108W0WW). NIE zamieniaj — zbyt słaby zasilacz nie naładuje stacji.',
+        'Kabel AC — sprzedawany OSOBNO od zasilacza! CBL-DC-388A1-01 do zasilacza 50W, CBL-DC-381A1-01 do zasilacza 108W. Nie zapomnij dodać do zamówienia.',
+        'Kabel USB — do komunikacji terminala z komputerem PC (synchronizacja danych, ADB, debugowanie). Kabel USB-A/Micro-B lub USB-C zależnie od modelu terminala.',
+        'Kabel samochodowy — do ładowania terminala z gniazda zapalniczki 12V/24V. Dedykowany dla konkretnych serii terminali.',
+      ],
+    },
+    expertAuthority: 'TAKMA kompletuje zamówienia na stacje dokujące z odpowiednimi zasilaczami i kablami — żeby klient nie musiał domyślać się kompatybilności. Nasi handlowcy znają na pamięć macierz zasilaczy × stacji × kabli i podpowiedzą właściwą konfigurację.',
+    technicalDeepDive: 'Zasilacze Zebra PWR-BGA mają certyfikaty CE, UL, FCC i CCC. Sprawność energetyczna: >87% (Level VI DOE). Zabezpieczenia: nadprądowe (OCP), nadnapięciowe (OVP), zwarciowe (SCP), termiczne (OTP). Napięcie wyjściowe: 12V DC ±5%. Kabel DC ma wtyczkę barrel 5,5×2,1 mm.\n\nZasilacz 50W (4.16A) jest wystarczający dla stacji 1-slot ładującej terminal + 1 baterię zapasową. Zasilacz 108W (9A) zasila stację 5-slot z Ethernet — każdy slot pobiera do ~15W przy jednoczesnym ładowaniu i komunikacji sieciowej.\n\nKable USB: MC3300x/MC3400 — USB-A/Micro-B. TC22/TC27 — USB-C. TC53 — USB-C. Długość standardowa: 1,2–1,8 m.',
+    useCases: [
+      { title: 'Rozbudowa infrastruktury', description: 'Kupujesz dodatkowe stacje 5-slot do nowego magazynu — zamów zasilacz 108W + kabel AC CBL-DC-381 do każdej stacji.' },
+      { title: 'Wymiana uszkodzonego zasilacza', description: 'Zasilacz się zepsuł — zamów oryginalny PWR-BGA tego samego modelu. Sprawdź moc (50W vs 108W) na etykiecie starego zasilacza.' },
+      { title: 'Ładowanie w pojeździe', description: 'Kurierzy ładują terminale w samochodach dostawczych — kabel DC vehicle charger z gniazdem zapalniczki 12V/24V.' },
+    ],
+    uniqueInsights: {
+      heading: 'Porady eksperta',
+      items: [
+        { title: 'Kabel AC to osobna pozycja', text: 'Najczęstszy błąd przy zamówieniu: zapomniany kabel AC. Zasilacz ma wyjście DC → potrzebujesz kabla AC łączącego zasilacz z gniazdkiem. Zamów CBL-DC-388 (50W) lub CBL-DC-381 (108W).' },
+        { title: 'Nie mieszaj zasilaczy', text: 'Zasilacz 50W do stacji 5-slot = niedoładowane terminale i awarie. Zasilacz 108W do stacji 1-slot = marnotrawstwo, ale działa. Zawsze dobieraj moc do stacji.' },
+      ],
+    },
+    faq: [
+      { question: 'Czy zasilacz jest w zestawie ze stacją dokującą?', answer: 'Tak — zasilacz jest w zestawie. Ale kabel AC (łączący zasilacz z gniazdkiem sieciowym) jest sprzedawany OSOBNO. To najczęstszy punkt pomyłki przy zamówieniu.' },
+      { question: 'Który kabel AC do jakiego zasilacza?', answer: 'CBL-DC-388A1-01 → zasilacz 50W (PWR-BGA12V50W0WW). CBL-DC-381A1-01 → zasilacz 108W (PWR-BGA12V108W0WW). Nie są wymienne — różne wtyczki.' },
+      { question: 'Ile kosztuje zasilacz do stacji Zebra?', answer: 'Zasilacz 50W (1-slot): od ok. 130 zł netto. Zasilacz 108W (5-slot): od ok. 250 zł netto. Kabel AC: od ok. 35–98 zł netto.' },
+      { question: 'Czy mogę użyć zasilacza z innego producenta?', answer: 'Nie zalecamy — nieoryginalne zasilacze mogą nie mieć odpowiednich certyfikatów bezpieczeństwa i mogą uszkodzić stację. Gwarancja Zebra na stację wymaga oryginalnego zasilacza.' },
+      { question: 'Czy kabel USB jest potrzebny, jeśli mam stację z Ethernet?', answer: 'Do codziennej pracy — nie. Kabel USB jest przydatny do: wstępnej konfiguracji terminala, debugowania ADB, podłączenia do komputera bez stacji dokującej.' },
+    ],
+    comparisons: [
+      { title: 'Zasilacz 50W vs 108W', content: 'Zasilacz 50W (od ok. 130 zł): do stacji 1-slot, moc 4.16A. Zasilacz 108W (od ok. 250 zł): do stacji 5-slot, moc 9A. Zawsze dobieraj do typu stacji — nie zamiennie.' },
+    ],
+    howToSteps: [
+      { name: 'Zidentyfikuj stację dokującą', text: 'Sprawdź Part Number stacji (na etykiecie na spodzie). Stacja 1-slot → zasilacz 50W + kabel CBL-DC-388. Stacja 5-slot → zasilacz 108W + kabel CBL-DC-381.' },
+      { name: 'Zamów zasilacz + kabel', text: 'Zasilacz: PWR-BGA12V50W0WW (50W) lub PWR-BGA12V108W0WW (108W). Kabel AC: CBL-DC-388A1-01 (50W) lub CBL-DC-381A1-01 (108W). Kabel USB opcjonalnie.' },
+      { name: 'Podłącz', text: 'Zasilacz → kabel AC → gniazdko sieciowe. Zasilacz → stacja dokująca (wtyczka barrel). Terminal → stacja. Zielona dioda LED = ładowanie w toku.' },
+    ],
+  },
 }
