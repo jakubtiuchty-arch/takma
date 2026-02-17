@@ -150,7 +150,7 @@ export default function CheckoutPage() {
 
   useEffect(() => {
     setMounted(true)
-    document.title = 'Zamowienie | TAKMA'
+    document.title = 'Zamówienie | TAKMA'
   }, [])
 
   // ── Ceny (dynamiczne, jak w drawerze) ─────────────────────────
@@ -222,13 +222,13 @@ export default function CheckoutPage() {
     if (!formData.nip.trim()) {
       newErrors.nip = 'NIP jest wymagany do wystawienia faktury'
     } else if (!validateNIP(formData.nip)) {
-      newErrors.nip = 'Nieprawidlowy numer NIP'
+      newErrors.nip = 'Nieprawidłowy numer NIP'
     }
 
     if (!formData.email.trim()) {
       newErrors.email = 'Adres e-mail jest wymagany'
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Nieprawidlowy format adresu e-mail'
+      newErrors.email = 'Nieprawidłowy format adresu e-mail'
     }
 
     if (!formData.phone.trim()) {
@@ -265,7 +265,7 @@ export default function CheckoutPage() {
     }
 
     if (!formData.consent) {
-      newErrors.consent = 'Zgoda jest wymagana do zlozenia zamowienia'
+      newErrors.consent = 'Zgoda jest wymagana do złożenia zamówienia'
     }
 
     setErrors(newErrors)
@@ -408,8 +408,8 @@ export default function CheckoutPage() {
           </div>
           <h1 className="text-3xl font-bold text-gray-900 mb-4">
             {formData.paymentMethod === 'proforma'
-              ? 'Zamowienie zostalo przyjete!'
-              : 'Zamowienie zostalo zlozone!'}
+              ? 'Zamówienie zostało przyjęte!'
+              : 'Zamówienie zostało złożone!'}
           </h1>
 
           {orderNumber && (
@@ -420,8 +420,8 @@ export default function CheckoutPage() {
 
           <p className="text-lg text-gray-600 mb-8">
             {formData.paymentMethod === 'proforma'
-              ? 'Faktura pro forma zostanie wyslana na podany adres e-mail. Po zaksiegowaniu platnosci wyslemy zamowienie.'
-              : 'Potwierdzenie zamowienia zostanie wyslane na podany adres e-mail. Dziekujemy za zakupy!'}
+              ? 'Faktura pro forma zostanie wysłana na podany adres e-mail. Po zaksięgowaniu płatności wyślemy zamówienie.'
+              : 'Potwierdzenie zamówienia zostanie wysłane na podany adres e-mail. Dziękujemy za zakupy!'}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -431,7 +431,7 @@ export default function CheckoutPage() {
               </Button>
             </Link>
             <Link href="/">
-              <Button variant="secondary">Strona glowna</Button>
+              <Button variant="secondary">Strona główna</Button>
             </Link>
           </div>
         </div>
@@ -447,10 +447,10 @@ export default function CheckoutPage() {
         {/* Breadcrumbs */}
         <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6">
           <Link href="/" className="hover:text-primary-600 transition-colors">
-            Strona glowna
+            Strona główna
           </Link>
           <ChevronRightIcon size={16} />
-          <span className="text-gray-900 font-medium">Zamowienie</span>
+          <span className="text-gray-900 font-medium">Zamówienie</span>
         </nav>
 
         <div className="text-center py-16 bg-gray-50 rounded-2xl">
@@ -458,15 +458,15 @@ export default function CheckoutPage() {
             <ShoppingCartIcon size={36} className="text-gray-400" />
           </div>
           <h1 className="text-2xl font-bold text-gray-900 mb-2">
-            Twoj koszyk jest pusty
+            Twój koszyk jest pusty
           </h1>
           <p className="text-gray-500 mb-8 max-w-md mx-auto">
-            Dodaj produkty do koszyka, aby zlozyc zamowienie. Przejrzyj nasz katalog
-            drukarek etykiet, terminali mobilnych i akcesoriow.
+            Dodaj produkty do koszyka, aby złożyć zamówienie. Przejrzyj nasz katalog
+            drukarek etykiet, terminali mobilnych i akcesoriów.
           </p>
           <Link href="/katalog">
             <Button size="lg" rightIcon={<ArrowRightIcon size={18} />}>
-              Przegladaj katalog
+              Przeglądaj katalog
             </Button>
           </Link>
         </div>
@@ -481,10 +481,10 @@ export default function CheckoutPage() {
       {/* Breadcrumbs */}
       <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6">
         <Link href="/" className="hover:text-primary-600 transition-colors">
-          Strona glowna
+          Strona główna
         </Link>
         <ChevronRightIcon size={16} />
-        <span className="text-gray-900 font-medium">Zamowienie</span>
+        <span className="text-gray-900 font-medium">Zamówienie</span>
       </nav>
 
       {/* ── Stepper ── */}
@@ -509,7 +509,7 @@ export default function CheckoutPage() {
           <span className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold ${
             step === 2 ? 'bg-primary-600 text-white' : 'bg-gray-200 text-gray-500'
           }`}>2</span>
-          Dane i platnosc
+          Dane i płatność
         </span>
       </div>
 
@@ -524,13 +524,13 @@ export default function CheckoutPage() {
               <div className="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
                 <h2 className="font-semibold text-gray-900 flex items-center gap-2">
                   <ShoppingCartIcon size={20} className="text-primary-600" />
-                  Produkty w zamowieniu ({items.length})
+                  Produkty w zamówieniu ({items.length})
                 </h2>
                 <button
                   onClick={clearAll}
                   className="text-sm text-gray-500 hover:text-red-500 transition-colors"
                 >
-                  Wyczysc wszystko
+                  Wyczyść wszystko
                 </button>
               </div>
 
@@ -551,10 +551,10 @@ export default function CheckoutPage() {
               <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
                 <div className="px-6 py-4 border-b border-gray-200">
                   <h2 className="font-semibold text-gray-900">
-                    Uzupelnij zamowienie
+                    Uzupełnij zamówienie
                   </h2>
                   <p className="text-sm text-gray-500 mt-0.5">
-                    Polecane akcesoria do produktow w koszyku
+                    Polecane akcesoria do produktów w koszyku
                   </p>
                 </div>
 
@@ -619,7 +619,7 @@ export default function CheckoutPage() {
                 onClick={() => { setStep(2); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
                 disabled={items.length === 0}
               >
-                Przejdz do danych firmy
+                Przejdź do danych firmy
               </Button>
             </div>
           </div>
@@ -627,14 +627,14 @@ export default function CheckoutPage() {
       )}
 
       {/* ════════════════════════════════════════════════════════════ */}
-      {/* KROK 2: Dane firmy + Adres + Platnosc                      */}
+      {/* KROK 2: Dane firmy + Adres + Płatność                      */}
       {/* ════════════════════════════════════════════════════════════ */}
       {step === 2 && (
         <div className="flex flex-col lg:grid lg:grid-cols-5 gap-4 sm:gap-6">
           {/* ────── PRAWA KOLUMNA: Sticky podsumowanie + submit (desktop) ────── */}
           <div className="lg:col-span-2 order-first lg:order-last">
             <div className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-5 space-y-4 lg:sticky lg:top-36">
-              <h2 className="font-semibold text-gray-900">Twoje zamowienie</h2>
+              <h2 className="font-semibold text-gray-900">Twoje zamówienie</h2>
 
               {/* Lista produktow (scrollowalna) */}
               <div className="max-h-48 sm:max-h-64 overflow-y-auto divide-y divide-gray-100 -mx-4 sm:-mx-5 px-4 sm:px-5">
@@ -688,7 +688,7 @@ export default function CheckoutPage() {
               {/* Desktop: zgoda + submit w sticky */}
               <div className="hidden lg:block space-y-4 pt-2">
                 <Checkbox
-                  label={<span className="text-sm text-gray-600">Wyrazam zgode na przetwarzanie danych osobowych w celu realizacji zamowienia. <Link href="/polityka-prywatnosci" className="text-primary-600 hover:underline">Polityka prywatnosci</Link></span>}
+                  label={<span className="text-sm text-gray-600">Wyrażam zgodę na przetwarzanie danych osobowych w celu realizacji zamówienia. <Link href="/polityka-prywatnosci" className="text-primary-600 hover:underline">Polityka prywatności</Link></span>}
                   checked={formData.consent}
                   onChange={(e) => { setFormData((prev) => ({ ...prev, consent: e.target.checked })); if (errors.consent) { setErrors((prev) => ({ ...prev, consent: undefined })) } }}
                   error={errors.consent}
@@ -700,18 +700,18 @@ export default function CheckoutPage() {
                   disabled={items.length === 0}
                   onClick={() => { const form = document.getElementById('checkout-form') as HTMLFormElement; form?.requestSubmit() }}
                 >
-                  {formData.paymentMethod === 'online' ? 'Przejdz do platnosci' : 'Zloz zamowienie'}
+                  {formData.paymentMethod === 'online' ? 'Przejdź do płatnośći' : 'Złóż zamówienie'}
                 </Button>
                 <button
                   type="button"
                   onClick={() => { setStep(1); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
                   className="w-full text-sm text-gray-500 hover:text-gray-700 transition-colors py-1 text-center"
                 >
-                  &larr; Wroc do koszyka
+                  &larr; Wróć do koszyka
                 </button>
                 {formData.paymentMethod === 'online' && (
                   <p className="text-xs text-gray-400 text-center">
-                    Zostaniesz przekierowany do bezpiecznej strony platnosci
+                    Zostaniesz przekierowany do bezpiecznej strony płatnośći
                   </p>
                 )}
               </div>
@@ -729,7 +729,7 @@ export default function CheckoutPage() {
               <Input label="NIP" name="nip" value={formData.nip} onChange={handleInputChange} error={errors.nip} placeholder="np. 1234567890" helperText="Wymagany do faktury VAT" required />
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Input label="Osoba kontaktowa" name="firstName" value={formData.firstName} onChange={handleInputChange} error={errors.firstName} placeholder="Imie i nazwisko" required />
+                <Input label="Osoba kontaktowa" name="firstName" value={formData.firstName} onChange={handleInputChange} error={errors.firstName} placeholder="Imię i nazwisko" required />
                 <Input label="Telefon" name="phone" type="tel" value={formData.phone} onChange={handleInputChange} error={errors.phone} placeholder="np. 601 619 898" required />
               </div>
 
@@ -742,7 +742,7 @@ export default function CheckoutPage() {
 
               <div className="grid grid-cols-3 gap-4">
                 <div className="col-span-2">
-                  <Input label="Ulica" name="street" value={formData.street} onChange={handleInputChange} error={errors.street} placeholder="np. Glowna" required />
+                  <Input label="Ulica" name="street" value={formData.street} onChange={handleInputChange} error={errors.street} placeholder="np. Główna" required />
                 </div>
                 <div className="col-span-1">
                   <Input label="Nr bud." name="lastName" value={formData.lastName} onChange={handleInputChange} error={errors.lastName} placeholder="12A" required />
@@ -781,16 +781,16 @@ export default function CheckoutPage() {
               <Textarea label="Uwagi do zamowienia" name="notes" value={formData.notes} onChange={handleInputChange} placeholder="Dodatkowe informacje, np. preferowany termin dostawy..." rows={3} />
             </div>
 
-            {/* Platnosc */}
+            {/* Płatność */}
             <div className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-5 space-y-4">
-              <h2 className="text-base sm:text-lg font-semibold text-gray-900">Metoda platnosci</h2>
+              <h2 className="text-base sm:text-lg font-semibold text-gray-900">Metoda płatności</h2>
 
               <label className={`flex items-start gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all ${formData.paymentMethod === 'online' ? 'border-primary-500 bg-primary-50/50' : 'border-gray-200 hover:border-gray-300'}`}>
                 <input type="radio" name="paymentMethod" value="online" checked={formData.paymentMethod === 'online'} onChange={() => setFormData((prev) => ({ ...prev, paymentMethod: 'online' }))} className="mt-1 h-4 w-4 text-primary-600 border-gray-300 focus:ring-primary-500" />
                 <div className="flex-1">
-                  <span className="text-sm font-semibold text-gray-900">Platnosc online</span>
+                  <span className="text-sm font-semibold text-gray-900">Płatność online</span>
                   <span className="ml-2 inline-block text-xs font-medium text-green-700 bg-green-100 rounded-full px-2.5 py-0.5">Zalecane</span>
-                  <span className="text-xs text-gray-500 mt-0.5 block">Karta platnicza, BLIK, przelewy24. Szybka i bezpieczna platnosc przez Stripe.</span>
+                  <span className="text-xs text-gray-500 mt-0.5 block">Karta płatnicza, BLIK, przelewy24. Szybka i bezpieczna płatność przez Stripe.</span>
                 </div>
               </label>
 
@@ -798,7 +798,7 @@ export default function CheckoutPage() {
                 <input type="radio" name="paymentMethod" value="proforma" checked={formData.paymentMethod === 'proforma'} onChange={() => setFormData((prev) => ({ ...prev, paymentMethod: 'proforma' }))} className="mt-1 h-4 w-4 text-primary-600 border-gray-300 focus:ring-primary-500" />
                 <div className="flex-1">
                   <span className="text-sm font-semibold text-gray-900">Pro forma</span>
-                  <span className="text-xs text-gray-500 mt-0.5 block">Pobierz fakture pro forma i oplac przelewem. Realizacja po zaksiegowaniu.</span>
+                  <span className="text-xs text-gray-500 mt-0.5 block">Pobierz fakturę pro forma i opłać przelewem. Realizacja po zaksięgowaniu.</span>
                 </div>
               </label>
             </div>
@@ -806,20 +806,20 @@ export default function CheckoutPage() {
             {/* Mobile: zgoda + submit na dole formularza */}
             <div className="lg:hidden bg-white rounded-2xl border border-gray-200 p-4 space-y-4">
               <Checkbox
-                label={<span className="text-sm text-gray-600">Wyrazam zgode na przetwarzanie danych osobowych w celu realizacji zamowienia. <Link href="/polityka-prywatnosci" className="text-primary-600 hover:underline">Polityka prywatnosci</Link></span>}
+                label={<span className="text-sm text-gray-600">Wyrażam zgodę na przetwarzanie danych osobowych w celu realizacji zamówienia. <Link href="/polityka-prywatnosci" className="text-primary-600 hover:underline">Polityka prywatności</Link></span>}
                 checked={formData.consent}
                 onChange={(e) => { setFormData((prev) => ({ ...prev, consent: e.target.checked })); if (errors.consent) { setErrors((prev) => ({ ...prev, consent: undefined })) } }}
                 error={errors.consent}
               />
               <Button type="submit" fullWidth size="lg" isLoading={isSubmitting} disabled={items.length === 0}>
-                {formData.paymentMethod === 'online' ? `Zaplac ${formatPrice(totalBrutto)} zl` : `Zloz zamowienie (${formatPrice(totalBrutto)} zl)`}
+                {formData.paymentMethod === 'online' ? `Zapłać ${formatPrice(totalBrutto)} zl` : `Złóż zamówienie (${formatPrice(totalBrutto)} zl)`}
               </Button>
               <button
                 type="button"
                 onClick={() => { setStep(1); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
                 className="w-full text-sm text-gray-500 hover:text-gray-700 transition-colors py-1 text-center"
               >
-                &larr; Wroc do koszyka
+                &larr; Wróć do koszyka
               </button>
             </div>
           </form>
@@ -882,11 +882,11 @@ function CartItemRow({
 
           {/* Ilosc */}
           <div className="flex items-center gap-2 mt-3">
-            <span className="text-xs text-gray-500">Ilosc:</span>
+            <span className="text-xs text-gray-500">Ilość:</span>
             <button
               onClick={() => onUpdateQuantity(item.productId, item.quantity - 1)}
               className="w-7 h-7 rounded-md border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-gray-50 hover:border-gray-300 transition-colors"
-              aria-label="Zmniejsz ilosc"
+              aria-label="Zmniejsz ilość"
             >
               <MinusIcon size={14} />
             </button>
@@ -902,7 +902,7 @@ function CartItemRow({
             <button
               onClick={() => onUpdateQuantity(item.productId, item.quantity + 1)}
               className="w-7 h-7 rounded-md border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-gray-50 hover:border-gray-300 transition-colors"
-              aria-label="Zwieksz ilosc"
+              aria-label="Zwiększ ilość"
             >
               <PlusIcon size={14} />
             </button>
@@ -914,7 +914,7 @@ function CartItemRow({
           <button
             onClick={() => onRemove(item.productId)}
             className="p-1.5 text-gray-400 hover:text-red-500 transition-colors"
-            aria-label="Usun z koszyka"
+            aria-label="Usuń z koszyka"
           >
             <TrashIcon size={18} />
           </button>
@@ -952,7 +952,7 @@ function PriceSummary({
       <div className="space-y-3 text-sm">
         {/* Subtotal */}
         <div className="flex items-center justify-between">
-          <span className="text-gray-600">Wartosc produktow netto</span>
+          <span className="text-gray-600">Wartość produktów netto</span>
           <span className="font-medium text-gray-900">
             {formatPrice(subtotalNetto)} zl
           </span>
