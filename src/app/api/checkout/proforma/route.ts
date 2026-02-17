@@ -262,7 +262,6 @@ export async function POST(request: NextRequest) {
       <div class="logo-section">
         <div class="logos-row">
           <img src="${baseUrl}/images/takma_logo.png" alt="TAKMA" class="logo-img" />
-          <img src="${baseUrl}/images/premier-partner-1.png" alt="Zebra Premier Partner" class="badge-img" />
         </div>
       </div>
       <div class="doc-title">
