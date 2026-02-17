@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
         </span>
       </nav>
 
-      <div className="max-w-3xl">
+      <div className="max-w-4xl">
         <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
           Polityka prywatności
         </h1>

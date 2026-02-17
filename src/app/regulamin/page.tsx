@@ -21,7 +21,7 @@ export default function RegulaminPage() {
         <span className="text-gray-900 font-medium">Regulamin sklepu</span>
       </nav>
 
-      <div className="max-w-3xl">
+      <div className="max-w-4xl">
         <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
           Regulamin sklepu internetowego
         </h1>
