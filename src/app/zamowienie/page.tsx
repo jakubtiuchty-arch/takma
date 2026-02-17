@@ -797,8 +797,8 @@ export default function CheckoutPage() {
               <label className={`flex items-start gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all ${formData.paymentMethod === 'proforma' ? 'border-primary-500 bg-primary-50/50' : 'border-gray-200 hover:border-gray-300'}`}>
                 <input type="radio" name="paymentMethod" value="proforma" checked={formData.paymentMethod === 'proforma'} onChange={() => setFormData((prev) => ({ ...prev, paymentMethod: 'proforma' }))} className="mt-1 h-4 w-4 text-primary-600 border-gray-300 focus:ring-primary-500" />
                 <div className="flex-1">
-                  <span className="text-sm font-semibold text-gray-900">Przelew tradycyjny</span>
-                  <span className="text-xs text-gray-500 mt-0.5 block">Otrzymasz fakture pro forma na e-mail. Wysylka po zaksiegowaniu platnosci.</span>
+                  <span className="text-sm font-semibold text-gray-900">Pro forma</span>
+                  <span className="text-xs text-gray-500 mt-0.5 block">Pobierz fakture pro forma i oplac przelewem. Realizacja po zaksiegowaniu.</span>
                 </div>
               </label>
             </div>
