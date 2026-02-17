@@ -283,71 +283,62 @@ export default function CheckoutPage() {
 
     setIsSubmitting(true)
 
-    // TODO: Integracja z API
-    // if (formData.paymentMethod === 'online') {
-    //   const response = await fetch('/api/checkout/stripe', {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/json' },
-    //     body: JSON.stringify({
-    //       items: items.map(i => ({
-    //         productId: i.productId,
-    //         partNumber: i.partNumber,
-    //         quantity: i.quantity,
-    //         priceNetto: i.priceNetto,
-    //       })),
-    //       customer: {
-    //         firstName: formData.firstName,
-    //         lastName: formData.lastName,
-    //         company: formData.company,
-    //         nip: formData.nip,
-    //         email: formData.email,
-    //         phone: formData.phone,
-    //       },
-    //       billingAddress: {
-    //         street: formData.street,
-    //         postalCode: formData.postalCode,
-    //         city: formData.city,
-    //       },
-    //       shippingAddress: formData.differentShipping ? {
-    //         street: formData.shippingStreet,
-    //         postalCode: formData.shippingPostalCode,
-    //         city: formData.shippingCity,
-    //       } : null,
-    //       notes: formData.notes,
-    //     }),
-    //   })
-    //   const { sessionUrl } = await response.json()
-    //   window.location.href = sessionUrl // Redirect do Stripe Checkout
-    // }
+    const generatedOrderNumber = `TK-${Date.now().toString().slice(-6)}`
 
-    // if (formData.paymentMethod === 'proforma') {
-    //   const response = await fetch('/api/checkout/proforma', {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/json' },
-    //     body: JSON.stringify({ ... }),
-    //   })
-    //   const { orderNumber } = await response.json()
-    //   setOrderNumber(orderNumber)
-    // }
+    try {
+      if (formData.paymentMethod === 'proforma') {
+        // Generuj pro formę HTML i otwórz w nowym oknie
+        const proformaItems = items.map((item) => ({
+          productName: item.productName,
+          partNumber: item.partNumber,
+          quantity: item.quantity,
+          priceNetto: itemPrices.get(item.productId) ?? 0,
+        }))
 
-    // MOCK - symulacja
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+        const response = await fetch('/api/checkout/proforma', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            items: proformaItems,
+            customer: {
+              company: formData.company,
+              nip: formData.nip,
+              contactName: formData.firstName,
+              email: formData.email,
+              phone: formData.phone,
+              street: formData.street,
+              buildingNumber: formData.lastName,
+              postalCode: formData.postalCode,
+              city: formData.city,
+            },
+            subtotalNetto,
+            shippingNetto,
+            vatAmount,
+            totalBrutto,
+            orderNumber: generatedOrderNumber,
+            notes: formData.notes || undefined,
+          }),
+        })
 
-    const mockOrderNumber = `TK-${Date.now().toString().slice(-6)}`
-    console.log('Checkout submission:', {
-      formData,
-      items,
-      subtotalNetto,
-      shippingNetto,
-      vatAmount,
-      totalBrutto,
-      orderNumber: mockOrderNumber,
-    })
+        if (!response.ok) throw new Error('Błąd generowania pro formy')
 
-    setOrderNumber(mockOrderNumber)
-    setIsSubmitting(false)
-    setIsSuccess(true)
-    clearAll()
+        const html = await response.text()
+        const blob = new Blob([html], { type: 'text/html' })
+        const blobUrl = URL.createObjectURL(blob)
+        window.open(blobUrl, '_blank')
+      } else {
+        // TODO: Integracja ze Stripe
+        await new Promise((resolve) => setTimeout(resolve, 1500))
+      }
+
+      setOrderNumber(generatedOrderNumber)
+      setIsSubmitting(false)
+      setIsSuccess(true)
+      clearAll()
+    } catch (error) {
+      console.error('Checkout error:', error)
+      setIsSubmitting(false)
+    }
   }
 
   // ── Handlers ──────────────────────────────────────────────────
@@ -414,15 +405,25 @@ export default function CheckoutPage() {
 
           {orderNumber && (
             <p className="text-lg font-medium text-primary-600 mb-2">
-              Numer zamowienia: {orderNumber}
+              Numer zamówienia: {orderNumber}
             </p>
           )}
 
           <p className="text-lg text-gray-600 mb-8">
             {formData.paymentMethod === 'proforma'
-              ? 'Faktura pro forma zostanie wysłana na podany adres e-mail. Po zaksięgowaniu płatności wyślemy zamówienie.'
+              ? 'Faktura pro forma została otwarta w nowej karcie. Opłać przelew w ciągu 14 dni — realizacja po zaksięgowaniu.'
               : 'Potwierdzenie zamówienia zostanie wysłane na podany adres e-mail. Dziękujemy za zakupy!'}
           </p>
+
+          {formData.paymentMethod === 'proforma' && (
+            <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-8 max-w-md mx-auto">
+              <p className="text-sm font-semibold text-blue-900 mb-1">Dane do przelewu</p>
+              <p className="text-sm text-blue-800">TAKMA Tadeusz Tiuchty</p>
+              <p className="text-sm text-blue-800 font-mono">39 1020 5297 0000 1902 0283 3069</p>
+              <p className="text-sm text-blue-800">PKO BP</p>
+              <p className="text-sm text-blue-800 mt-1">Tytuł: <strong>Zamówienie {orderNumber}</strong></p>
+            </div>
+          )}
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/katalog">
