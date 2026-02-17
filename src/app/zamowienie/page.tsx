@@ -15,7 +15,7 @@ import {
   TruckIcon,
 } from '@/components/ui/Icons'
 import { useCartStore, type CartItem } from '@/store/cartStore'
-import { type Product } from '@/data/products'
+import { products, type Product } from '@/data/products'
 
 // ── Typy ────────────────────────────────────────────────────────
 
@@ -87,6 +87,25 @@ function validatePostalCode(code: string): boolean {
   return /^\d{2}-?\d{3}$/.test(code.trim())
 }
 
+/**
+ * Dynamiczne szukanie ceny produktu — identycznie jak w drawerze.
+ * Obsługuje warianty (slug__partNumber) i zwykłe produkty.
+ */
+function findProductPrice(productId: string): number | undefined {
+  if (productId.includes('__') && !productId.includes('__onecare__')) {
+    const [slug, partNumber] = productId.split('__')
+    const product = products.find((p) => p.slug === slug)
+    if (product?.variants) {
+      const variant = product.variants.find((v) => v.partNumber === partNumber)
+      if (variant?.priceFrom) return variant.priceFrom
+    }
+    return product?.priceFrom
+  }
+  if (productId.includes('__onecare__')) return undefined
+  const product = products.find((p) => p.id === productId)
+  return product?.priceFrom
+}
+
 // ── Komponent ───────────────────────────────────────────────────
 
 export default function CheckoutPage() {
@@ -133,12 +152,25 @@ export default function CheckoutPage() {
     document.title = 'Zamowienie | TAKMA'
   }, [])
 
-  // ── Ceny ──────────────────────────────────────────────────────
+  // ── Ceny (dynamiczne, jak w drawerze) ─────────────────────────
+
+  const itemPrices = useMemo(() => {
+    const prices = new Map<string, number | undefined>()
+    for (const item of items) {
+      prices.set(item.productId, item.priceNetto ?? findProductPrice(item.productId))
+    }
+    return prices
+  }, [items])
 
   const subtotalNetto = useMemo(() => {
     if (!mounted) return 0
-    return getSubtotalNetto()
-  }, [mounted, items, getSubtotalNetto])
+    let total = 0
+    for (const item of items) {
+      const price = itemPrices.get(item.productId)
+      if (price) total += price * item.quantity
+    }
+    return total
+  }, [mounted, items, itemPrices])
 
   const isFreeShipping = subtotalNetto >= FREE_SHIPPING_THRESHOLD
   const shippingNetto = isFreeShipping ? 0 : (items.length > 0 ? SHIPPING_COST : 0)
@@ -881,7 +913,8 @@ function CartItemRow({
   onRemove: (id: string) => void
   onUpdateQuantity: (id: string, qty: number) => void
 }) {
-  const lineTotal = item.priceNetto ? item.priceNetto * item.quantity : null
+  const unitPrice = item.priceNetto ?? findProductPrice(item.productId)
+  const lineTotal = unitPrice ? unitPrice * item.quantity : null
 
   return (
     <li className="p-4 sm:p-6">
@@ -914,9 +947,9 @@ function CartItemRow({
           )}
 
           {/* Cena jednostkowa */}
-          {item.priceNetto && (
+          {unitPrice && (
             <p className="text-sm text-gray-600 mt-1">
-              {formatPrice(item.priceNetto)} zl netto / szt.
+              {formatPrice(unitPrice)} zl netto / szt.
             </p>
           )}
 

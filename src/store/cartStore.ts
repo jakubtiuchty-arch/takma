@@ -89,8 +89,10 @@ export const useCartStore = create<CartStore>()(
           })
         }
 
-        // Otworz drawer po dodaniu
-        set({ isDrawerOpen: true })
+        // Otworz drawer po dodaniu (ale nie na stronie zamówienia)
+        if (typeof window !== 'undefined' && !window.location.pathname.startsWith('/zamowienie')) {
+          set({ isDrawerOpen: true })
+        }
       },
 
       removeItem: (productId) => {
