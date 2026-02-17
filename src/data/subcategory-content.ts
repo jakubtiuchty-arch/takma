@@ -1495,6 +1495,85 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
 
   // --- Podkategorie akcesoriów do terminali mobilnych ---
 
+  'akcesoria-do-terminali': {
+    definition: {
+      heading: 'Czym są akcesoria do terminali mobilnych?',
+      content: 'Akcesoria do terminali mobilnych to oryginalne komponenty i urządzenia peryferyjne zaprojektowane przez producenta (Zebra Technologies) specjalnie do profesjonalnych terminali serii MC i TC. Obejmują cztery główne grupy: baterie PowerPrecision+ z diagnostyką (3500–7000 mAh), stacje dokujące ShareCradle (1-slot i 5-slot z opcjonalnym Ethernet), akcesoria ochronne i ergonomiczne (rubber boot, trigger handle, kabury, smycze) oraz infrastrukturę zasilania (zasilacze 50W/108W, kable DC i USB). Każde akcesorium jest certyfikowane przez Zebra i objęte pełną gwarancją producenta, co zapewnia bezproblemową kompatybilność i zachowanie parametrów IP-rating terminala.',
+    },
+    buyingGuide: {
+      heading: 'Jak dobrać akcesoria do terminali mobilnych?',
+      items: [
+        'Kompatybilność z modelem — każda seria terminali (MC33xx, MC22xx, TC2x, TC5x) ma dedykowane akcesoria o różnych Part Number. Sprawdź listę kompatybilności przed zamówieniem.',
+        'Baterie — dobierz pojemność do długości zmiany: 3500 mAh (6–8 h pracy biurowej), 4680–4900 mAh (8–10 h praca mieszana), 7000 mAh (12+ h praca magazynowa z intensywnym skanowaniem).',
+        'Stacje dokujące — 1-slot do indywidualnego stanowiska, 5-slot do nocnego ładowania floty. Wersje z Ethernet umożliwiają synchronizację danych bez Wi-Fi.',
+        'Ochrona terminala — rubber boot absorbuje upadki i chroni w środowiskach przemysłowych. Trigger handle zmniejsza zmęczenie przy intensywnym skanowaniu powyżej 500 skanów/zmianę.',
+        'Zasilacze — 50W do stacji 1-slot, 108W do stacji 5-slot i ładowarek wieloslotowych. Kabel zasilający AC sprzedawany osobno.',
+      ],
+    },
+    expertAuthority: 'TAKMA od 25 lat dostarcza kompletne ekosystemy terminali mobilnych dla firm logistycznych, magazynów i sieci handlowych w Polsce. Jako Zebra Premier Business Partner doradzamy w doborze akcesoriów pod konkretne scenariusze wdrożeniowe — od floty 5 terminali w małym magazynie po instalacje 200+ urządzeń w centrum dystrybucyjnym. Każda rekomendacja opiera się na doświadczeniu z ponad 500 wdrożeń, nie na materiałach marketingowych.',
+    technicalDeepDive: `Baterie PowerPrecision+ posiadają wbudowany chip diagnostyczny monitorujący State of Health (SoH), liczbę cykli ładowania i temperaturę. Dane te są widoczne w Zebra Device Diagnostics Tool i LifeGuard Analytics — dzięki temu administrator IT może planować wymianę akumulatorów zanim spadek pojemności wpłynie na produktywność. Żywotność: 500–1000 pełnych cykli (do 80% pojemności nominalnej).
+
+Stacje dokujące ShareCradle obsługują ładowanie terminala + zapasowej baterii jednocześnie (modele 1-slot+1-battery). Wersje 5-slot z Ethernet zapewniają przewodową synchronizację danych z WMS bez obciążania sieci Wi-Fi — kluczowe w dużych magazynach z wieloma Access Point. Czas pełnego ładowania: 3–4 h (standardowa bateria), 5–6 h (rozszerzona).
+
+Uchwyty pistoletowe (trigger handle) z ergonomicznym spustem zmniejszają obciążenie nadgarstka przy wielogodzinnym skanowaniu. W testach Zebra skanowanie z trigger handle zmniejsza zmęczenie mięśni przedramienia o 30% w porównaniu z obsługą touchscreen.`,
+    useCases: [
+      {
+        title: 'Magazyn e-commerce — flota 20 terminali TC22',
+        description: 'Stacja 5-slot z Ethernet do nocnego ładowania, po 2 zapasowe baterie na terminal, rubber boot do ochrony przy pikach sezonowych. Budżet akcesoriów: ~650–900 zł/terminal.',
+      },
+      {
+        title: 'Centrum dystrybucyjne — 50 terminali MC3400',
+        description: 'Ładowarka 20-slot do rotacyjnego zarządzania bateriami 7000 mAh, trigger handle do intensywnego skanowania, ładowarka 4-slot na zapasowe akumulatory. Budżet: ~1200–1800 zł/terminal.',
+      },
+      {
+        title: 'Sieć handlowa — 5 terminali MC2200 na sklep',
+        description: 'Stacja 1-slot na zapleczu, kabura z klipsem do pasa, pasek na rękę. Minimalne akcesoria, niski budżet: ~350–500 zł/terminal.',
+      },
+      {
+        title: 'Logistyka terenowa — kurierzy z TC53',
+        description: 'Uchwyt samochodowy (vehicle cradle) do ładowania w trasie, rozszerzona bateria 7000 mAh, etui rugged boot. Budżet: ~800–1100 zł/terminal.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego producenci akcesoriów nie powiedzą',
+      items: [
+        {
+          title: 'Zamienniki baterii skracają żywotność terminala',
+          text: 'Nieoryginalne baterie nie mają chipu PowerPrecision — terminal nie rozpoznaje SoH, nie kontroluje temperatury ładowania i nie wspiera warm swap. W efekcie zamiennik może uszkodzić port ładowania lub sam terminal, co unieważnia gwarancję Zebra.',
+        },
+        {
+          title: 'Zasilacz 50W NIE naładuje stacji 5-slot',
+          text: 'Do stacji 5-slot i ładowarek wieloslotowych potrzebny jest zasilacz 108W. Użycie 50W powoduje cykliczne ładowanie/rozładowywanie, wydłuża czas ładowania 2–3× i przyspiesza degradację baterii.',
+        },
+        {
+          title: 'Rubber boot zmienia klasę upadków',
+          text: 'Terminal z etui ochronnym wytrzymuje upadki z większej wysokości (np. MC3400: 1,8 m bez boota → 2,4 m z bootem na beton). To realna różnica w środowisku magazynowym, gdzie 70% uszkodzeń to upadki.',
+        },
+      ],
+    },
+    faq: [
+      { question: 'Czy akcesoria Zebra są kompatybilne między seriami terminali?', answer: 'Nie — akcesoria są dedykowane do konkretnych serii. Bateria MC33xx nie pasuje do TC22, stacja TC22 nie ładuje MC2200. Wyjątek stanowią zasilacze sieciowe i kable DC, które są uniwersalne (np. PWR-BGA12V50W0WW pasuje do stacji 1-slot wszystkich serii).' },
+      { question: 'Ile baterii zapasowych potrzebuję na terminal?', answer: 'Zależy od długości zmiany i intensywności pracy: przy 1 zmianie (8 h) z baterią rozszerzoną — 0 zapasowych. Przy 2 zmianach (16 h) — 1 zapasowa na terminal. Przy 3 zmianach (24/7) — 2 zapasowe. W modelu rotacyjnym (4-slot charger) potrzebujesz o 20% więcej baterii niż terminali.' },
+      { question: 'Czy stacja dokująca z Ethernet zastąpi Wi-Fi?', answer: 'Tak, ale tylko na czas dokowania — gdy terminal jest w stacji, może synchronizować dane po kablu Ethernet (szybciej i stabilniej niż Wi-Fi). W terenie terminal nadal używa Wi-Fi. Jest to przydatne w magazynach z przeciążoną siecią bezprzewodową.' },
+      { question: 'Jaki zasilacz do stacji 1-slot, a jaki do 5-slot?', answer: 'Do stacji 1-slot: zasilacz 50W (PWR-BGA12V50W0WW) + kabel DC CBL-DC-388A1-01. Do stacji 5-slot i ładowarek 4-slot: zasilacz 108W (PWR-BGA12V108W0WW) + kabel DC CBL-DC-381A1-01. Kable AC sprzedawane osobno.' },
+      { question: 'Czy trigger handle pasuje do terminala z rubber bootem?', answer: 'Nie we wszystkich modelach — w serii MC33xx/MC34xx trigger handle wymaga zdjęcia rubber boot. W serii TC22/TC27 można używać trigger handle z rubber boot jednocześnie (boot ma wycięcie na mocowanie).' },
+      { question: 'Jakie akcesoria zamówić na start floty terminali?', answer: 'Minimalny zestaw: stacja dokująca (1 na terminal lub 5-slot na 5 terminali), zasilacz z kablem DC, rubber boot. Zalecane dodatki: 1 zapasowa bateria na terminal (przy 2 zmianach), trigger handle (jeśli skanowanie >500 kodów/zmianę), kabura lub pasek na rękę.' },
+      { question: 'Gdzie kupić oryginalne akcesoria Zebra w Polsce?', answer: 'TAKMA jest autoryzowanym Zebra Premier Business Partner — oferujemy pełen asortyment oryginalnych akcesoriów w cenach B2B netto z dostawą 24–48 h na terenie Polski. Gwarantujemy autentyczność i pełną gwarancję producenta na każdy produkt.' },
+    ],
+    comparisons: [
+      { title: 'Baterie standardowe vs rozszerzone', content: 'Standardowa (3500–4680 mAh): lżejsza o 30–40 g, wystarczająca na 6–8 h pracy biurowej, niższy koszt. Rozszerzona (4900–7000 mAh): cięższa, ale 10–14 h pracy magazynowej, eliminuje potrzebę wymiany w trakcie zmiany. Przy pracy 2-zmianowej rozszerzona jest tańsza w perspektywie 3 lat (mniej cykli ładowania = dłuższa żywotność).' },
+      { title: 'Stacja 1-slot vs 5-slot', content: 'Stacja 1-slot (~400–600 zł): idealna do biura i stanowiska indywidualnego, zajmuje mało miejsca, zasilacz 50W. Stacja 5-slot (~1800–2500 zł): do nocnego ładowania floty, z Ethernet na każdym slocie, zasilacz 108W. Koszt per-slot: 1-slot jest 50% droższy niż slot w stacji 5-slot.' },
+      { title: 'Oryginalne akcesoria vs zamienniki', content: 'Oryginalne Zebra: pełna kompatybilność, chip diagnostyczny, zachowanie klasy IP, gwarancja producenta. Zamienniki: niższa cena (40–60% taniej), ale brak diagnostyki PowerPrecision, ryzyko uszkodzenia portu ładowania, utrata gwarancji terminala, brak certyfikacji bezpieczeństwa. W perspektywie 3 lat TCO oryginalnych akcesoriów jest niższy o 15–25%.' },
+    ],
+    howToSteps: [
+      { name: 'Zidentyfikuj model terminala', text: 'Sprawdź dokładny Part Number terminala (np. TC220K-2HD224RG) — akcesoria są dedykowane do konkretnych serii.' },
+      { name: 'Określ scenariusz użycia', text: 'Ile zmian, ile skanów, środowisko pracy (biuro/magazyn/teren) — to determinuje potrzebne akcesoria.' },
+      { name: 'Dobierz baterię', text: 'Standardowa do pracy biurowej 1-zmianowej, rozszerzona do magazynu/terenu lub pracy 2-zmianowej.' },
+      { name: 'Wybierz stację dokującą', text: '1-slot do stanowiska, 5-slot do floty. Wersja z Ethernet jeśli potrzebujesz synchronizacji po kablu.' },
+      { name: 'Dodaj ochronę', text: 'Rubber boot i trigger handle w środowisku magazynowym. Kabura/pasek w handlu detalicznym.' },
+    ],
+  },
+
   'baterie-do-terminali': {
     definition: {
       heading: 'Baterie do terminali mobilnych — co warto wiedzieć?',

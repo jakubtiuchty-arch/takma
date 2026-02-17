@@ -5,6 +5,7 @@ import {
   getCategoryById,
   getProductsByCategory,
   getSubcategoriesForCategory,
+  getChildSubcategories,
   categories,
 } from '@/data/products'
 import { subcategoryContent } from '@/data/subcategory-content'
@@ -110,17 +111,35 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
                       </Link>
                       {isCurrent && subs.length > 0 && (
                         <ul className="ml-3 mt-1 space-y-0.5">
-                          {subs.map((sub) => (
-                            <li key={sub.id}>
-                              <Link
-                                href={`/${sub.slug}`}
-                                className="block px-3 py-1.5 rounded-lg text-sm text-gray-500 hover:bg-primary-50 hover:text-primary-600 transition-colors"
-                              >
-                                {sub.name}
-                                <span className="text-gray-400 ml-1">({sub.productCount})</span>
-                              </Link>
-                            </li>
-                          ))}
+                          {subs.map((sub) => {
+                            const children = getChildSubcategories(sub.id)
+                            return (
+                              <li key={sub.id}>
+                                <Link
+                                  href={`/${sub.slug}`}
+                                  className="block px-3 py-1.5 rounded-lg text-sm text-gray-500 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                                >
+                                  {sub.name}
+                                  <span className="text-gray-400 ml-1">({sub.productCount})</span>
+                                </Link>
+                                {children.length > 0 && (
+                                  <ul className="ml-3 mt-0.5 space-y-0.5">
+                                    {children.map((child) => (
+                                      <li key={child.id}>
+                                        <Link
+                                          href={`/${child.slug}`}
+                                          className="block px-3 py-1.5 rounded-lg text-xs text-gray-500 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                                        >
+                                          {child.name}
+                                          <span className="text-gray-400 ml-1">({child.productCount})</span>
+                                        </Link>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </li>
+                            )
+                          })}
                         </ul>
                       )}
                     </li>

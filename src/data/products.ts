@@ -95,6 +95,7 @@ export interface Subcategory {
   slug: string
   name: string
   parentCategoryId: string
+  parentSubcategoryId?: string
   description: string
   seoTitle: string
   seoDescription: string
@@ -429,10 +430,48 @@ export const subcategories: Subcategory[] = [
   },
   // --- Podkategorie: Akcesoria do terminali mobilnych ---
   {
+    id: 'akcesoria-do-terminali',
+    slug: 'akcesoria-do-terminali',
+    name: 'Akcesoria do terminali',
+    parentCategoryId: 'terminale-mobilne',
+    description: 'Oryginalne akcesoria Zebra do terminali mobilnych — baterie, stacje dokujące, ładowarki, etui, kabury, uchwyty, kable i zasilacze',
+    seoTitle: 'Akcesoria do terminali mobilnych Zebra | Baterie, stacje dokujące, etui, kable',
+    seoDescription: 'Oryginalne akcesoria Zebra do terminali MC3300x, MC3400, MC2200, MC2700, TC22, TC27, TC52, TC53. Baterie PowerPrecision+, stacje dokujące 1/5-slot, ładowarki, etui ochronne, uchwyty pistoletowe, kable i zasilacze. Ceny netto B2B.',
+    longDescription: 'Kompletna oferta oryginalnych akcesoriów Zebra do terminali mobilnych serii MC i TC. Baterie PowerPrecision+ z diagnostyką i warm swap (3500–7000 mAh). Stacje dokujące ShareCradle 1-slot i 5-slot z opcjonalnym Ethernet. Ładowarki baterii 4-slot i 20-slot do zarządzania zapasowymi akumulatorami. Etui ochronne rubber boot, uchwyty pistoletowe trigger handle, kabury z klipsem, paski na rękę i smycze. Zasilacze sieciowe 50W/108W i kable zasilające. Wszystkie akcesoria z gwarancją producenta i pełną kompatybilnością.',
+    icon: 'package',
+    productIds: [
+      'zebra-mc33-battery-7000', 'zebra-mc2x-battery-3500', 'zebra-mc2x-battery-4900',
+      'zebra-battery-tc2-standard', 'zebra-battery-tc2-ble', 'zebra-battery-tc2-extended',
+      'zebra-tc53-battery-4680', 'zebra-tc53-battery-7000', 'zebra-tc53-battery-4680-ble',
+      'zebra-battery-tc52-extended',
+      'zebra-mc33-cradle-1slot', 'zebra-mc33-battery-charger-4slot', 'zebra-mc33-cradle-5slot',
+      'zebra-mc33-cradle-4slot-4battery', 'zebra-mc33-cradle-5slot-ethernet',
+      'zebra-mc33-cradle-4slot-4battery-ethernet', 'zebra-mc33-battery-charger-20slot',
+      'zebra-mc2x-cradle-1slot', 'zebra-mc2x-cradle-1slot-battery', 'zebra-mc2x-cradle-5slot',
+      'zebra-mc2x-cradle-4slot-4battery', 'zebra-mc2x-battery-charger-4slot',
+      'zebra-cradle-tc2-1slot', 'zebra-cradle-tc2-1slot-ethernet', 'zebra-cradle-tc2-1slot-1battery',
+      'zebra-cradle-tc2-5slot', 'zebra-cradle-tc2-5slot-ethernet', 'zebra-charger-tc2-4battery',
+      'zebra-cup-tc2-battery',
+      'zebra-tc53-cradle-1slot', 'zebra-tc53-cradle-1slot-eth', 'zebra-tc53-cradle-5slot-eth',
+      'zebra-tc53-vehicle-cradle',
+      'zebra-cradle-tc52', 'zebra-charger-4slot',
+      'zebra-mc33-rubber-boot-gun', 'zebra-mc33-rubber-boot-straight', 'zebra-mc33-holster',
+      'zebra-mc2x-trigger', 'zebra-mc2x-rubber-boot', 'zebra-mc2x-rubber-boot-trigger',
+      'zebra-mc2x-holster', 'zebra-mc2x-handstrap',
+      'zebra-trigger-tc2', 'zebra-boot-tc2', 'zebra-holster-tc2', 'zebra-lanyard-tc2',
+      'zebra-tc53-rugged-boot', 'zebra-tc53-trigger-handle', 'zebra-tc53-hand-strap',
+      'zebra-tc53-holster', 'zebra-tc53-trigger-lanyard', 'zebra-tc53-stylus',
+      'zebra-mc33-usb-cable', 'zebra-mc33-dc-cable-388', 'zebra-mc33-dc-cable-382',
+      'zebra-psu-50w', 'zebra-psu-108w', 'zebra-cable-dc-388', 'zebra-cable-dc-381',
+    ],
+    productCount: 60,
+  },
+  {
     id: 'baterie-do-terminali',
     slug: 'baterie-do-terminali',
     name: 'Baterie i akumulatory',
     parentCategoryId: 'terminale-mobilne',
+    parentSubcategoryId: 'akcesoria-do-terminali',
     description: 'Oryginalne baterie PowerPrecision i PowerPrecision+ do terminali mobilnych Zebra — standardowe, rozszerzone i z BLE',
     seoTitle: 'Baterie do terminali mobilnych Zebra | PowerPrecision+ — akumulatory MC, TC',
     seoDescription: 'Oryginalne baterie Zebra PowerPrecision+ do terminali MC3300x, MC3400, MC2200, MC2700, TC22, TC27, TC52, TC53. Pojemności 3500–7000 mAh, diagnostyka BLE, warm swap. Ceny netto B2B, dostawa 24h.',
@@ -451,6 +490,7 @@ export const subcategories: Subcategory[] = [
     slug: 'stacje-ladowarki-terminali',
     name: 'Stacje dokujące i ładowarki',
     parentCategoryId: 'terminale-mobilne',
+    parentSubcategoryId: 'akcesoria-do-terminali',
     description: 'Stacje dokujące 1-slot i 5-slot, ładowarki baterii, adaptery ładowania do terminali Zebra MC i TC',
     seoTitle: 'Stacje dokujące i ładowarki do terminali Zebra | 1-slot, 5-slot, Ethernet',
     seoDescription: 'Stacje dokujące Zebra ShareCradle do terminali MC3300x, MC3400, MC2200, TC22, TC27, TC53. Modele 1-slot i 5-slot z Ethernet, ładowarki baterii 4-slot i 20-slot. Ceny netto B2B.',
@@ -476,6 +516,7 @@ export const subcategories: Subcategory[] = [
     slug: 'etui-kabury-uchwyty',
     name: 'Etui, kabury i uchwyty',
     parentCategoryId: 'terminale-mobilne',
+    parentSubcategoryId: 'akcesoria-do-terminali',
     description: 'Etui ochronne, kabury, uchwyty pistoletowe, paski i smycze do terminali mobilnych Zebra',
     seoTitle: 'Etui i uchwyty do terminali Zebra | Kabury, trigger handle, rubber boot',
     seoDescription: 'Oryginalne etui ochronne, kabury, uchwyty pistoletowe (trigger handle), rubber boot, paski na rękę i smycze do terminali Zebra MC3300x, MC2200, TC22, TC27, TC53. Ceny netto B2B.',
@@ -496,6 +537,7 @@ export const subcategories: Subcategory[] = [
     slug: 'kable-zasilacze-terminali',
     name: 'Kable i zasilacze',
     parentCategoryId: 'terminale-mobilne',
+    parentSubcategoryId: 'akcesoria-do-terminali',
     description: 'Kable USB, kable zasilające i zasilacze sieciowe 50W/108W do stacji dokujących Zebra',
     seoTitle: 'Kable i zasilacze do terminali Zebra | USB, DC, zasilacze 50W/108W',
     seoDescription: 'Oryginalne kable USB, kable zasilające DC i zasilacze sieciowe 50W/108W do stacji dokujących terminali Zebra MC3300x, MC3400, TC22, TC27. Ceny netto B2B.',
@@ -19373,7 +19415,11 @@ export function getProductsBySubcategory(subcategoryId: string): Product[] {
 }
 
 export function getSubcategoriesForCategory(categoryId: string): Subcategory[] {
-  return subcategories.filter(s => s.parentCategoryId === categoryId)
+  return subcategories.filter(s => s.parentCategoryId === categoryId && !s.parentSubcategoryId)
+}
+
+export function getChildSubcategories(parentSubcategoryId: string): Subcategory[] {
+  return subcategories.filter(s => s.parentSubcategoryId === parentSubcategoryId)
 }
 
 export function getSubcategoriesForProduct(product: Product): Subcategory[] {

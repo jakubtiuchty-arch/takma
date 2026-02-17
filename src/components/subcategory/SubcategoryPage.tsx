@@ -4,9 +4,11 @@ import { ProductGrid } from '@/components/product'
 import FilterableProductGrid, { FilterDefinition, CategoryNavItem } from '@/components/subcategory/FilterableProductGrid'
 import {
   getSubcategoryBySlug,
+  getSubcategoryById,
   getProductsBySubcategory,
   getCategoryById,
   getSubcategoriesForCategory,
+  getChildSubcategories,
   subcategories,
   categories,
 } from '@/data/products'
@@ -46,21 +48,37 @@ interface SubcategoryPageProps {
 export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
   const subcategory = getSubcategoryBySlug(slug)!
   const parentCategory = getCategoryById(subcategory.parentCategoryId)!
+  const parentSubcategory = subcategory.parentSubcategoryId
+    ? getSubcategoryById(subcategory.parentSubcategoryId)
+    : undefined
   const products = getProductsBySubcategory(subcategory.id)
   const content = subcategoryContent[slug]
 
-  const siblings = subcategories.filter(
-    s => s.parentCategoryId === subcategory.parentCategoryId && s.id !== subcategory.id
-  )
+  // Siblings: subcategories at the same level
+  const siblings = subcategory.parentSubcategoryId
+    ? subcategories.filter(s => s.parentSubcategoryId === subcategory.parentSubcategoryId && s.id !== subcategory.id)
+    : subcategories.filter(s => s.parentCategoryId === subcategory.parentCategoryId && !s.parentSubcategoryId && s.id !== subcategory.id)
+
+  // Breadcrumbs: 3-level or 4-level depending on hierarchy
+  const breadcrumbItems = [
+    { '@type': 'ListItem' as const, position: 1, name: 'Strona główna', item: 'https://takma.com.pl' },
+    { '@type': 'ListItem' as const, position: 2, name: parentCategory.name, item: `https://takma.com.pl/${parentCategory.slug}` },
+  ]
+  if (parentSubcategory) {
+    breadcrumbItems.push(
+      { '@type': 'ListItem', position: 3, name: parentSubcategory.name, item: `https://takma.com.pl/${parentSubcategory.slug}` },
+      { '@type': 'ListItem', position: 4, name: subcategory.name, item: `https://takma.com.pl/${subcategory.slug}` },
+    )
+  } else {
+    breadcrumbItems.push(
+      { '@type': 'ListItem', position: 3, name: subcategory.name, item: `https://takma.com.pl/${subcategory.slug}` },
+    )
+  }
 
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://takma.com.pl' },
-      { '@type': 'ListItem', position: 2, name: parentCategory.name, item: `https://takma.com.pl/${parentCategory.slug}` },
-      { '@type': 'ListItem', position: 3, name: subcategory.name, item: `https://takma.com.pl/${subcategory.slug}` },
-    ],
+    itemListElement: breadcrumbItems,
   }
 
   const collectionJsonLd = {
@@ -110,6 +128,17 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
           >
             {parentCategory.name}
           </Link>
+          {parentSubcategory && (
+            <>
+              <ChevronRightIcon size={14} className="flex-shrink-0 text-gray-400" />
+              <Link
+                href={`/${parentSubcategory.slug}`}
+                className="hover:text-primary-600 transition-colors whitespace-nowrap"
+              >
+                {parentSubcategory.name}
+              </Link>
+            </>
+          )}
           <ChevronRightIcon size={14} className="flex-shrink-0 text-gray-400" />
           <span className="text-gray-900 font-medium whitespace-nowrap">{subcategory.name}</span>
         </nav>
@@ -317,21 +346,46 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                         </Link>
                         {isParent && subs.length > 0 && (
                           <ul className="ml-3 mt-1 space-y-0.5">
-                            {subs.map((sub) => (
-                              <li key={sub.id}>
-                                <Link
-                                  href={`/${sub.slug}`}
-                                  className={`block px-3 py-1.5 rounded-lg text-sm transition-colors ${
-                                    sub.id === subcategory.id
-                                      ? 'bg-primary-50 text-primary-700 font-medium'
-                                      : 'text-gray-500 hover:bg-primary-50 hover:text-primary-600'
-                                  }`}
-                                >
-                                  {sub.name}
-                                  <span className="text-gray-400 ml-1">({sub.productCount})</span>
-                                </Link>
-                              </li>
-                            ))}
+                            {subs.map((sub) => {
+                              const children = getChildSubcategories(sub.id)
+                              const isCurrentOrAncestor = sub.id === subcategory.id || sub.id === subcategory.parentSubcategoryId
+                              return (
+                                <li key={sub.id}>
+                                  <Link
+                                    href={`/${sub.slug}`}
+                                    className={`block px-3 py-1.5 rounded-lg text-sm transition-colors ${
+                                      sub.id === subcategory.id
+                                        ? 'bg-primary-50 text-primary-700 font-medium'
+                                        : sub.id === subcategory.parentSubcategoryId
+                                          ? 'text-primary-600 font-medium'
+                                          : 'text-gray-500 hover:bg-primary-50 hover:text-primary-600'
+                                    }`}
+                                  >
+                                    {sub.name}
+                                    <span className="text-gray-400 ml-1">({sub.productCount})</span>
+                                  </Link>
+                                  {isCurrentOrAncestor && children.length > 0 && (
+                                    <ul className="ml-3 mt-0.5 space-y-0.5">
+                                      {children.map((child) => (
+                                        <li key={child.id}>
+                                          <Link
+                                            href={`/${child.slug}`}
+                                            className={`block px-3 py-1.5 rounded-lg text-xs transition-colors ${
+                                              child.id === subcategory.id
+                                                ? 'bg-primary-50 text-primary-700 font-medium'
+                                                : 'text-gray-500 hover:bg-primary-50 hover:text-primary-600'
+                                            }`}
+                                          >
+                                            {child.name}
+                                            <span className="text-gray-400 ml-1">({child.productCount})</span>
+                                          </Link>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  )}
+                                </li>
+                              )
+                            })}
                           </ul>
                         )}
                       </li>
