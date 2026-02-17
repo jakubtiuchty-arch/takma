@@ -265,7 +265,7 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden bg-white border-t border-gray-100 animate-slide-in-up">
+          <div className="lg:hidden bg-white border-t border-gray-100 animate-slide-in-up overflow-y-auto max-h-[calc(100vh-4rem)]">
             <nav className="container-main py-4">
               <ul className="space-y-1">
                 {navigation.map((item) => (
