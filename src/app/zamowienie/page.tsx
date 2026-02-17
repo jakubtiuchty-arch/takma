@@ -604,7 +604,7 @@ export default function CheckoutPage() {
 
           {/* Podsumowanie + przycisk Dalej */}
           <div className="lg:col-span-2">
-            <div className="lg:sticky lg:top-28 space-y-4">
+            <div className="lg:sticky lg:top-[156px] space-y-4">
               <PriceSummary
                 subtotalNetto={subtotalNetto}
                 shippingNetto={shippingNetto}
@@ -633,7 +633,7 @@ export default function CheckoutPage() {
         <div className="flex flex-col lg:grid lg:grid-cols-5 gap-4 sm:gap-6">
           {/* ────── PRAWA KOLUMNA: Sticky podsumowanie + submit (desktop) ────── */}
           <div className="lg:col-span-2 order-first lg:order-last">
-            <div className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-5 space-y-4 lg:sticky lg:top-36">
+            <div className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-5 space-y-4 lg:sticky lg:top-[156px]">
               <h2 className="font-semibold text-gray-900">Twoje zamówienie</h2>
 
               {/* Lista produktow (scrollowalna) */}
