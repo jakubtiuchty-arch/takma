@@ -888,7 +888,7 @@ function CartItemRow({
       <div className="flex gap-4">
         {/* Obrazek */}
         {item.productImage && (
-          <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-lg flex-shrink-0 overflow-hidden">
+          <div className="relative w-[88px] h-[88px] sm:w-[106px] sm:h-[106px] rounded-lg flex-shrink-0 overflow-hidden">
             <Image
               src={item.productImage}
               alt={item.productName}
