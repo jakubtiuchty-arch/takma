@@ -335,6 +335,7 @@ export default function CheckoutPage() {
       setIsSubmitting(false)
       setIsSuccess(true)
       clearAll()
+      window.scrollTo({ top: 0, behavior: 'instant' })
     } catch (error) {
       console.error('Checkout error:', error)
       setIsSubmitting(false)
