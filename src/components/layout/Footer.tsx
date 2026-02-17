@@ -72,10 +72,10 @@ export default function Footer() {
                 <span>kontakt@takma.com.pl</span>
               </a>
             </div>
-            <div className="mt-6 flex flex-col gap-3">
-              <img src="/images/zebra-premier-business-partner.png" alt="Zebra Premier Business Partner" className="h-[28px] w-auto object-contain object-left" />
-              <img src="/images/zebra-premier-solution-partner.png" alt="Zebra Premier Solution Partner" className="h-[28px] w-auto object-contain object-left" />
-              <img src="/images/zebra-printer-repair-specialist.png" alt="Zebra Printer Repair Specialist" className="h-[20px] w-auto object-contain object-left" />
+            <div className="mt-6 flex flex-col gap-4">
+              <img src="/images/zebra-premier-solution-partner.png" alt="Zebra Premier Solution Partner" className="w-full max-w-[280px]" />
+              <img src="/images/zebra-premier-business-partner.png" alt="Zebra Premier Business Partner" className="w-full max-w-[280px]" />
+              <img src="/images/zebra-printer-repair-specialist.png" alt="Zebra Printer Repair Specialist" className="w-full max-w-[280px]" />
             </div>
           </div>
 
