@@ -631,41 +631,6 @@ export default function CheckoutPage() {
       {/* ════════════════════════════════════════════════════════════ */}
       {step === 2 && (
         <div className="max-w-2xl mx-auto space-y-6">
-          {/* Podsumowanie zamowienia — kompaktowa lista */}
-          <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
-            <div className="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
-              <h2 className="font-semibold text-gray-900 text-sm">
-                Zamowienie ({items.length} {items.length === 1 ? 'produkt' : items.length < 5 ? 'produkty' : 'produktow'})
-              </h2>
-              <button
-                onClick={() => setStep(1)}
-                className="text-sm text-primary-600 hover:text-primary-700 font-medium transition-colors"
-              >
-                Edytuj koszyk
-              </button>
-            </div>
-            <ul className="divide-y divide-gray-100">
-              {items.map((item) => {
-                const price = item.priceNetto ?? findProductPrice(item.productId)
-                return (
-                  <li key={item.productId} className="px-6 py-3 flex items-center justify-between gap-4">
-                    <div className="min-w-0">
-                      <p className="text-sm text-gray-900 truncate">{item.productName}</p>
-                      {item.quantity > 1 && (
-                        <span className="text-xs text-gray-500">{item.quantity} szt.</span>
-                      )}
-                    </div>
-                    {price && (
-                      <span className="text-sm font-medium text-gray-700 whitespace-nowrap">
-                        {formatPrice(price * item.quantity)} zl
-                      </span>
-                    )}
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
-
           {/* Formularz */}
           <form onSubmit={handleSubmit} className="bg-gray-50 rounded-2xl p-6 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900">Dane firmy</h2>
