@@ -9,6 +9,12 @@ interface SmartPriceProps {
   product: Product
 }
 
+/** Kategorie urządzeń — tooltip "oferta projektowa" wyświetlany tylko dla nich */
+const DEVICE_CATEGORIES = new Set([
+  'drukarki-etykiet', 'drukarki-kart', 'drukarki-opasek',
+  'terminale-mobilne', 'skanery-kodow', 'tablety',
+])
+
 /**
  * Wyświetla cenę produktu z inteligentnym fallbackiem:
  * Jeśli najtańszy wariant jest niedostępny, pokazuje najtańszy DOSTĘPNY wariant.
@@ -92,7 +98,7 @@ export default function SmartPrice({ product }: SmartPriceProps) {
           {price.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
         </span>
         <span className="text-sm text-gray-500">netto</span>
-        <PriceTooltip />
+        {DEVICE_CATEGORIES.has(product.categoryId) && <PriceTooltip />}
       </div>
       <p className="text-sm text-gray-400 mt-1">
         {(price * 1.23).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł brutto
