@@ -9846,6 +9846,11 @@ Bluetooth 5.3, NFC, WiFi 6E 2×2 MU-MIMO, kamera 16 MP (tył) i 8 MP (przód), U
     ],
     variantAttributeTooltips: {
       'Skaner': 'SR500 — skaner standardowego zasięgu, skanowanie z bliska na kasie, ladzie i w kompletacji.\n\nSR560 — ulepszony skaner 2D z szybszym dekodowaniem uszkodzonych i zabrudzonych kodów.\n\nAC670 — zaawansowany skaner kolorowy z zasięgiem do 30 m, skanuje kody na najwyższych regałach bez drabiny.',
+      'Pamięć': '8 GB / 128 GB — wystarczająca do standardowych aplikacji WMS, ERP i skanowania.\n\n12 GB / 256 GB — do intensywnego AI on-device, wielu aplikacji równocześnie i dużych baz danych offline.',
+      '5G': 'Wersje WiFi (TC5010) — wyłącznie Wi-Fi 7, do pracy wewnątrz budynku z infrastrukturą sieciową.\n\nWersje 5G (TC501G) — Wi-Fi 7 + 5G Release 17, dual eSIM, GPS/GNSS. Do pracowników terenowych, kierowców i serwisantów.',
+      'Bateria': 'Standardowa 5 000 mAh — ok. 12h pracy, ładowanie bezprzewodowe Qi.\n\nRozszerzona 7 240 mAh — ok. 16h pracy, do wielozmianowej eksploatacji bez ładowania.',
+      'Kamera ultrawide': 'Standardowa — tylna 50 MP do dokumentacji i skanowania OCR.\n\nUltrawide — dodatkowy obiektyw 13 MP z szerokim kątem do fotografowania dużych obiektów, regałów i palet z bliska.',
+      'Czujnik ToF': 'Time-of-Flight — czujnik głębi 3D do pomiaru odległości i wymiarów paczek (dimensioning). Eliminuje ręczne mierzenie — automatyczny odczyt długości, szerokości i wysokości przesyłki.',
     },
     variants: [
       {
