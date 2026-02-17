@@ -114,7 +114,7 @@ function toIngramItemId(partNumber: string): string {
   const upper = partNumber.toUpperCase()
   if (upper.startsWith('ZB') || upper.startsWith('SB')) return upper
   // Symbol-heritage products (terminale mobilne, skanery, akcesoria mobilne)
-  const sbPrefixes = ['W', 'MC', 'TC', 'CC', 'SG-', 'CRD-', 'SAC-', 'BTRY-', 'TRG-', 'CBL-', 'Z1A']
+  const sbPrefixes = ['W', 'MC', 'TC', 'CC', 'EM', 'SG-', 'CRD-', 'SAC-', 'BTRY-', 'TRG-', 'CBL-', 'Z1A']
   for (const prefix of sbPrefixes) {
     if (upper.startsWith(prefix)) return 'SB' + upper
   }
@@ -363,8 +363,8 @@ export async function lookupStock(partNumbers: string[]): Promise<StockInfo[]> {
     }
     if (product.itemId) {
       byItemId.set(product.itemId.toUpperCase(), product)
-      // Mapuj też bez prefiksu ZB
-      const noZb = product.itemId.toUpperCase().replace(/^ZB/, '')
+      // Mapuj też bez prefiksu ZB/SB
+      const noZb = product.itemId.toUpperCase().replace(/^(ZB|SB)/, '')
       byItemId.set(noZb, product)
     }
   }
