@@ -630,9 +630,8 @@ export default function CheckoutPage() {
       {/* KROK 2: Dane firmy + Adres + Platnosc                      */}
       {/* ════════════════════════════════════════════════════════════ */}
       {step === 2 && (
-        <div className="grid lg:grid-cols-5 gap-8 lg:gap-10 items-start">
-          {/* ────── LEWA KOLUMNA: Formularz ────── */}
-          <form onSubmit={handleSubmit} className="lg:col-span-3 space-y-6">
+        <>
+          <form id="checkout-form" onSubmit={handleSubmit} className="max-w-3xl mx-auto space-y-6 pb-28">
             {/* Dane firmy */}
             <div className="bg-white rounded-2xl border border-gray-200 p-6 space-y-5">
               <h2 className="text-lg font-semibold text-gray-900">Dane firmy</h2>
@@ -717,32 +716,36 @@ export default function CheckoutPage() {
                 error={errors.consent}
               />
             </div>
+          </form>
 
-            {/* Submit — zawsze pod formularzem */}
-            <div className="space-y-4">
-              {/* Podsumowanie cenowe — tylko mobile */}
-              <div className="lg:hidden">
-                <PriceSummary subtotalNetto={subtotalNetto} shippingNetto={shippingNetto} isFreeShipping={isFreeShipping} vatAmount={vatAmount} totalBrutto={totalBrutto} />
-              </div>
-              <div className="flex gap-3">
-                <Button type="button" variant="secondary" onClick={() => { setStep(1); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Wstecz</Button>
-                <Button type="submit" fullWidth size="lg" isLoading={isSubmitting} disabled={items.length === 0}>
+          {/* ────── STICKY BOTTOM BAR ────── */}
+          <div className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+            <div className="container-main py-3 flex items-center justify-between gap-4">
+              <button
+                type="button"
+                onClick={() => { setStep(1); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
+                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors flex-shrink-0"
+              >
+                &larr; Wstecz
+              </button>
+
+              <div className="flex items-center gap-4 sm:gap-6">
+                <div className="text-right flex-shrink-0">
+                  <p className="text-xs text-gray-500">Razem brutto</p>
+                  <p className="text-lg sm:text-xl font-bold text-primary-600">{formatPrice(totalBrutto)} zl</p>
+                </div>
+                <Button
+                  size="lg"
+                  isLoading={isSubmitting}
+                  disabled={items.length === 0}
+                  onClick={() => { const form = document.getElementById('checkout-form') as HTMLFormElement; form?.requestSubmit() }}
+                >
                   {formData.paymentMethod === 'online' ? 'Przejdz do platnosci' : 'Zamow z faktura pro forma'}
                 </Button>
               </div>
-              <p className="text-xs text-gray-500 text-center">
-                {formData.paymentMethod === 'online' ? 'Zostaniesz przekierowany do bezpiecznej platnosci Stripe' : 'Faktura pro forma zostanie wyslana na podany adres e-mail'}
-              </p>
-            </div>
-          </form>
-
-          {/* ────── PRAWA KOLUMNA: Podsumowanie (sticky, tylko desktop) ────── */}
-          <div className="hidden lg:block lg:col-span-2">
-            <div className="lg:sticky lg:top-28">
-              <PriceSummary subtotalNetto={subtotalNetto} shippingNetto={shippingNetto} isFreeShipping={isFreeShipping} vatAmount={vatAmount} totalBrutto={totalBrutto} />
             </div>
           </div>
-        </div>
+        </>
       )}
     </div>
   )
