@@ -443,7 +443,6 @@ export const subcategories: Subcategory[] = [
       'zebra-mc33-battery-7000', 'zebra-mc2x-battery-3500', 'zebra-mc2x-battery-4900',
       'zebra-battery-tc2-standard', 'zebra-battery-tc2-ble', 'zebra-battery-tc2-extended',
       'zebra-tc53-battery-4680', 'zebra-tc53-battery-7000', 'zebra-tc53-battery-4680-ble',
-      'zebra-battery-tc52-extended',
       'zebra-mc33-cradle-1slot', 'zebra-mc33-battery-charger-4slot', 'zebra-mc33-cradle-5slot',
       'zebra-mc33-cradle-4slot-4battery', 'zebra-mc33-cradle-5slot-ethernet',
       'zebra-mc33-cradle-4slot-4battery-ethernet', 'zebra-mc33-battery-charger-20slot',
@@ -464,7 +463,7 @@ export const subcategories: Subcategory[] = [
       'zebra-mc33-usb-cable', 'zebra-mc33-dc-cable-388', 'zebra-mc33-dc-cable-382',
       'zebra-psu-50w', 'zebra-psu-108w', 'zebra-cable-dc-388', 'zebra-cable-dc-381',
     ],
-    productCount: 60,
+    productCount: 59,
   },
   {
     id: 'baterie-do-terminali',
@@ -481,9 +480,8 @@ export const subcategories: Subcategory[] = [
       'zebra-mc33-battery-7000', 'zebra-mc2x-battery-3500', 'zebra-mc2x-battery-4900',
       'zebra-battery-tc2-standard', 'zebra-battery-tc2-ble', 'zebra-battery-tc2-extended',
       'zebra-tc53-battery-4680', 'zebra-tc53-battery-7000', 'zebra-tc53-battery-4680-ble',
-      'zebra-battery-tc52-extended',
     ],
-    productCount: 10,
+    productCount: 9,
   },
   {
     id: 'stacje-ladowarki-terminali',
@@ -7676,7 +7674,7 @@ Wytrzymałość IP67, odporność na upadki z 1.5 m, wsparcie Mobility DNA dla �
       { name: 'Łączność', value: 'Wi-Fi 6, Bluetooth 5.0, NFC' },
     ],
     applications: ['Zarządzanie magazynem', 'Inwentaryzacja', 'Produkcja', 'Logistyka'],
-    compatibleAccessories: ['zebra-battery-tc52-extended', 'zebra-cradle-tc52'],
+    compatibleAccessories: ['zebra-cradle-tc52'],
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://serwis-zebry.pl/instrukcje/zebra-tc52', size: 'Online' },
     ],
@@ -7712,7 +7710,7 @@ Idealny dla serwisu w terenie, dostaw kurierskich i pracowników mobilnych.`,
       { name: 'Odporność', value: 'IP67, upadki z 1.5 m' },
     ],
     applications: ['Dostawy i logistyka', 'Serwis w terenie', 'Praca poza biurem', 'Transport'],
-    compatibleAccessories: ['zebra-battery-tc52-extended', 'zebra-vehicle-cradle-tc5'],
+    compatibleAccessories: ['zebra-vehicle-cradle-tc5'],
     downloads: [
       { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '2.1 MB' },
     ],
@@ -11310,38 +11308,6 @@ const ribbons: Product[] = ribbonSpecs.map(r => ({
 // ============================================
 
 const accessories: Product[] = [
-  {
-    id: 'zebra-battery-tc52-extended',
-    slug: 'zebra-bateria-tc52-extended',
-    name: 'Bateria rozszerzona Zebra TC52/TC57 (7000mAh)',
-    shortDescription: 'Bateria PowerPrecision+ o zwiększonej pojemności',
-    description: `Oryginalna bateria Zebra PowerPrecision+ o pojemności 7000mAh do terminali TC52 i TC57.
-
-Znacznie dłuższy czas pracy dla użytkowników pracujących na długich zmianach. Inteligentne zarządzanie energią.
-
-Wskaźnik stanu naładowania i pozostałego czasu pracy.`,
-    categoryId: 'akcesoria',
-    subcategoryIds: ['baterie-do-terminali'],
-    manufacturerId: 'zebra',
-    priceFrom: 490,
-    images: ['/images/products/zebra-battery-tc52.jpg'],
-    imageDescriptions: ['Bateria rozszerzona Zebra TC52/TC57 (7000mAh)'],
-    tags: ['magazyn', 'logistyka'],
-    availability: 'available',
-    isNew: false,
-    isBestseller: false,
-    specifications: [
-      { name: 'Pojemność', value: '7000 mAh' },
-      { name: 'Napięcie', value: '3.85V' },
-      { name: 'Technologia', value: 'Li-Ion PowerPrecision+' },
-      { name: 'Kompatybilność', value: 'TC52, TC52x, TC57, TC57x' },
-      { name: 'Funkcje', value: 'Wskaźnik stanu, diagnostyka' },
-    ],
-    applications: ['Praca na długich zmianach', 'Praca w terenie'],
-    compatibleAccessories: ['zebra-tc52x', 'zebra-tc57x'],
-    downloads: [],
-    createdAt: '2023-02-01',
-  },
   {
     id: 'zebra-cradle-tc52',
     slug: 'zebra-stacja-dokujaca-tc52',
