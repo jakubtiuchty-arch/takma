@@ -630,11 +630,97 @@ export default function CheckoutPage() {
       {/* KROK 2: Dane firmy + Adres + Platnosc                      */}
       {/* ════════════════════════════════════════════════════════════ */}
       {step === 2 && (
-        <>
-          <form id="checkout-form" onSubmit={handleSubmit} className="max-w-3xl mx-auto space-y-6 pb-28">
+        <div className="flex flex-col lg:grid lg:grid-cols-5 gap-4 sm:gap-6">
+          {/* ────── PRAWA KOLUMNA: Sticky podsumowanie + submit (desktop) ────── */}
+          <div className="lg:col-span-2 order-first lg:order-last">
+            <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 shadow-sm lg:sticky lg:top-4 space-y-4">
+              <h2 className="font-semibold text-gray-900">Twoje zamowienie</h2>
+
+              {/* Lista produktow (scrollowalna) */}
+              <div className="max-h-48 sm:max-h-64 overflow-y-auto divide-y divide-gray-100 -mx-4 sm:-mx-5 px-4 sm:px-5">
+                {items.map((item) => {
+                  const price = itemPrices.get(item.productId)
+                  return (
+                    <div key={item.productId} className="flex items-center gap-3 py-2.5 text-sm">
+                      <span className="text-gray-500 flex-shrink-0">{item.quantity}&times;</span>
+                      <span className="text-gray-700 truncate flex-1">{item.productName}</span>
+                      {price && (
+                        <span className="text-gray-900 font-medium flex-shrink-0 whitespace-nowrap">
+                          {formatPrice(price * item.quantity)} zl
+                        </span>
+                      )}
+                    </div>
+                  )
+                })}
+              </div>
+
+              {/* Ceny */}
+              <div className="border-t border-gray-200 pt-3 space-y-2 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-gray-600">Suma netto</span>
+                  <span className="font-medium text-gray-900">{formatPrice(subtotalNetto)} zl</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-600 flex items-center gap-1.5"><TruckIcon size={14} /> Dostawa</span>
+                  {isFreeShipping ? (
+                    <span className="font-medium text-green-600">Gratis</span>
+                  ) : (
+                    <span className="font-medium text-gray-900">{formatPrice(shippingNetto)} zl</span>
+                  )}
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-600">VAT 23%</span>
+                  <span className="font-medium text-gray-900">{formatPrice(vatAmount)} zl</span>
+                </div>
+                <div className="border-t border-gray-200 pt-2 flex justify-between">
+                  <span className="text-base font-bold text-gray-900">Razem brutto</span>
+                  <span className="text-lg sm:text-xl font-bold text-primary-600">{formatPrice(totalBrutto)} zl</span>
+                </div>
+              </div>
+
+              {isFreeShipping && (
+                <div className="flex items-center gap-2 text-xs text-green-700 bg-green-50 rounded-lg px-3 py-2">
+                  <TruckIcon size={14} />
+                  Darmowa dostawa
+                </div>
+              )}
+
+              {/* Desktop: zgoda + submit w sticky */}
+              <div className="hidden lg:block space-y-4 pt-2">
+                <Checkbox
+                  label={<span className="text-sm text-gray-600">Wyrazam zgode na przetwarzanie danych osobowych w celu realizacji zamowienia. <Link href="/polityka-prywatnosci" className="text-primary-600 hover:underline">Polityka prywatnosci</Link></span>}
+                  checked={formData.consent}
+                  onChange={(e) => { setFormData((prev) => ({ ...prev, consent: e.target.checked })); if (errors.consent) { setErrors((prev) => ({ ...prev, consent: undefined })) } }}
+                  error={errors.consent}
+                />
+                <Button
+                  fullWidth
+                  size="lg"
+                  isLoading={isSubmitting}
+                  disabled={items.length === 0}
+                  onClick={() => { const form = document.getElementById('checkout-form') as HTMLFormElement; form?.requestSubmit() }}
+                >
+                  {formData.paymentMethod === 'online' ? 'Przejdz do platnosci' : 'Zloz zamowienie'}
+                </Button>
+                <button
+                  type="button"
+                  onClick={() => { setStep(1); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
+                  className="w-full text-sm text-gray-500 hover:text-gray-700 transition-colors py-1 text-center"
+                >
+                  &larr; Wroc do koszyka
+                </button>
+                <p className="text-xs text-gray-400 text-center">
+                  {formData.paymentMethod === 'online' ? 'Zostaniesz przekierowany do bezpiecznej platnosci Stripe' : 'Faktura pro forma zostanie wyslana na e-mail'}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* ────── LEWA KOLUMNA: Formularz ────── */}
+          <form id="checkout-form" onSubmit={handleSubmit} className="lg:col-span-3 space-y-4 sm:space-y-6 order-last lg:order-first">
             {/* Dane firmy */}
-            <div className="bg-white rounded-2xl border border-gray-200 p-6 space-y-5">
-              <h2 className="text-lg font-semibold text-gray-900">Dane firmy</h2>
+            <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 shadow-sm space-y-4">
+              <h2 className="text-base sm:text-lg font-semibold text-gray-900">Dane firmy</h2>
 
               <div className="grid grid-cols-2 gap-4">
                 <Input label="Imie" name="firstName" value={formData.firstName} onChange={handleInputChange} error={errors.firstName} placeholder="Jan" required />
@@ -652,8 +738,8 @@ export default function CheckoutPage() {
             </div>
 
             {/* Adres */}
-            <div className="bg-white rounded-2xl border border-gray-200 p-6 space-y-5">
-              <h2 className="text-lg font-semibold text-gray-900">Adres firmy</h2>
+            <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 shadow-sm space-y-4">
+              <h2 className="text-base sm:text-lg font-semibold text-gray-900">Adres dostawy</h2>
 
               <Input label="Ulica i numer" name="street" value={formData.street} onChange={handleInputChange} error={errors.street} placeholder="ul. Przykladowa 10/2" required />
 
@@ -690,8 +776,8 @@ export default function CheckoutPage() {
             </div>
 
             {/* Platnosc */}
-            <div className="bg-white rounded-2xl border border-gray-200 p-6 space-y-4">
-              <h2 className="text-lg font-semibold text-gray-900">Sposob platnosci</h2>
+            <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 shadow-sm space-y-4">
+              <h2 className="text-base sm:text-lg font-semibold text-gray-900">Metoda platnosci</h2>
 
               <label className={`flex items-start gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all ${formData.paymentMethod === 'online' ? 'border-primary-500 bg-primary-50/50' : 'border-gray-200 hover:border-gray-300'}`}>
                 <input type="radio" name="paymentMethod" value="online" checked={formData.paymentMethod === 'online'} onChange={() => setFormData((prev) => ({ ...prev, paymentMethod: 'online' }))} className="mt-1 h-4 w-4 text-primary-600 border-gray-300 focus:ring-primary-500" />
@@ -708,44 +794,29 @@ export default function CheckoutPage() {
                   <span className="text-xs text-gray-500 mt-0.5 block">Otrzymasz fakture pro forma na e-mail. Wysylka po zaksiegowaniu platnosci.</span>
                 </div>
               </label>
+            </div>
 
+            {/* Mobile: zgoda + submit na dole formularza */}
+            <div className="lg:hidden bg-white rounded-xl p-4 shadow-sm space-y-4">
               <Checkbox
-                label={<span className="text-sm text-gray-600">Wyrazam zgode na przetwarzanie moich danych osobowych w celu realizacji zamowienia. <Link href="/polityka-prywatnosci" className="text-primary-600 hover:underline">Polityka prywatnosci</Link></span>}
+                label={<span className="text-sm text-gray-600">Wyrazam zgode na przetwarzanie danych osobowych w celu realizacji zamowienia. <Link href="/polityka-prywatnosci" className="text-primary-600 hover:underline">Polityka prywatnosci</Link></span>}
                 checked={formData.consent}
                 onChange={(e) => { setFormData((prev) => ({ ...prev, consent: e.target.checked })); if (errors.consent) { setErrors((prev) => ({ ...prev, consent: undefined })) } }}
                 error={errors.consent}
               />
-            </div>
-          </form>
-
-          {/* ────── STICKY BOTTOM BAR ────── */}
-          <div className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
-            <div className="container-main py-3 flex items-center justify-between gap-4">
+              <Button type="submit" fullWidth size="lg" isLoading={isSubmitting} disabled={items.length === 0}>
+                {formData.paymentMethod === 'online' ? `Zaplac ${formatPrice(totalBrutto)} zl` : `Zloz zamowienie (${formatPrice(totalBrutto)} zl)`}
+              </Button>
               <button
                 type="button"
                 onClick={() => { setStep(1); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
-                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors flex-shrink-0"
+                className="w-full text-sm text-gray-500 hover:text-gray-700 transition-colors py-1 text-center"
               >
-                &larr; Wstecz
+                &larr; Wroc do koszyka
               </button>
-
-              <div className="flex items-center gap-4 sm:gap-6">
-                <div className="text-right flex-shrink-0">
-                  <p className="text-xs text-gray-500">Razem brutto</p>
-                  <p className="text-lg sm:text-xl font-bold text-primary-600">{formatPrice(totalBrutto)} zl</p>
-                </div>
-                <Button
-                  size="lg"
-                  isLoading={isSubmitting}
-                  disabled={items.length === 0}
-                  onClick={() => { const form = document.getElementById('checkout-form') as HTMLFormElement; form?.requestSubmit() }}
-                >
-                  {formData.paymentMethod === 'online' ? 'Przejdz do platnosci' : 'Zamow z faktura pro forma'}
-                </Button>
-              </div>
             </div>
-          </div>
-        </>
+          </form>
+        </div>
       )}
     </div>
   )
