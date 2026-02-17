@@ -287,7 +287,7 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
             placeholder="Szukaj produktu, modelu, PN..."
             className={clsx(
               'w-full pl-10 pr-20 py-2.5 rounded-xl border border-gray-300 shadow-sm',
-              'bg-white placeholder:text-gray-500 text-sm',
+              'bg-white placeholder:text-gray-500 text-base sm:text-sm',
               'focus:outline-none focus:ring-2 focus:ring-primary-500/30 focus:border-primary-500',
               'transition-all duration-200'
             )}
