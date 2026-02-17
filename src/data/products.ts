@@ -155,10 +155,10 @@ export const categories: Category[] = [
     name: 'Terminale mobilne',
     description: 'Wytrzymałe komputery mobilne i kolektory danych Android do magazynu, logistyki i produkcji',
     seoTitle: 'Terminale mobilne Zebra — kolektory danych Android do magazynu i logistyki',
-    seoDescription: 'Terminale mobilne Zebra i Datalogic z Androidem: TC22, TC27, TC53, TC52, TC57, MC3300, Memor 11/12. Wytrzymałe komputery mobilne IP68/IP67 do magazynu, logistyki i produkcji. Ceny netto od 2 180 zł, doradztwo, serwis Zebra.',
-    longDescription: 'Profesjonalne terminale mobilne (kolektory danych) Zebra klasy enterprise z systemem Android. Seria TC21/TC26 dla małych i średnich firm — lekkie, intuicyjne, w przystępnej cenie. TC52/TC57 dla wymagających środowisk magazynowych i logistycznych — IP67, upadki z 1,8 m, skaner SE4770. MC3300 z klawiaturą fizyczną do intensywnego skanowania w produkcji. EC50/EC55 — kompaktowe komputery enterprise zastępujące smartfony. Wszystkie modele z wbudowanym skanerem 1D/2D, Wi-Fi 6, Bluetooth 5.0 i zarządzaniem MDM.',
+    seoDescription: 'Terminale mobilne Zebra i Datalogic z Androidem: TC22, TC27, TC53, TC58, MC3400, MC3450, Memor 11/12. Wytrzymałe komputery mobilne IP68/IP67 do magazynu, logistyki i produkcji. Ceny netto od 2 180 zł, doradztwo, serwis Zebra.',
+    longDescription: 'Profesjonalne terminale mobilne (kolektory danych) Zebra klasy enterprise z systemem Android. Seria TC22/TC27 dla małych i średnich firm — lekkie, intuicyjne, w przystępnej cenie. TC53/TC58 dla wymagających środowisk magazynowych i logistycznych — IP68, upadki z 1,8 m, skaner SE55. MC3400/MC3450 z klawiaturą fizyczną do intensywnego skanowania w produkcji. Wszystkie modele z wbudowanym skanerem 1D/2D, Wi-Fi 6/6E, Bluetooth 5.x i zarządzaniem MDM.',
     icon: 'smartphone',
-    productCount: 24,
+    productCount: 20,
   },
   {
     id: 'skanery-kodow',
@@ -7572,151 +7572,6 @@ Inteligentna bateria PowerPrecision Plus zapewnia do 24 godzin nieprzerwanej pra
 
 const mobileComputers: Product[] = [
   {
-    id: 'zebra-tc21',
-    slug: 'zebra-tc21',
-    name: 'Zebra TC21',
-    shortDescription: 'Ekonomiczny terminal mobilny Android dla firm',
-    description: `Zebra TC21 to ekonomiczny komputer dotykowy klasy biznesowej w przystępnej cenie, działający na systemie Android.
-
-Obudowa niewielka, lekka i wygodna w przenoszeniu. Duży 5-calowy ekran dotykowy HD i kamera 13MP z tyłu.
-
-Idealny dla małych i średnich firm szukających wytrzymałego urządzenia do inwentaryzacji i zarządzania magazynem.`,
-    categoryId: 'terminale-mobilne',
-    manufacturerId: 'zebra',
-    priceFrom: 2890,
-    images: ['/images/products/zebra-tc21.jpg'],
-    imageDescriptions: ['Zebra TC21 — widok z przodu'],
-    tags: ['retail', 'magazyn'],
-    availability: 'available',
-    isNew: false,
-    isBestseller: true,
-    specifications: [
-      { name: 'System operacyjny', value: 'Android 10/11' },
-      { name: 'Procesor', value: 'Qualcomm Snapdragon 660' },
-      { name: 'Wyświetlacz', value: '5" HD (1280x720)' },
-      { name: 'Pamięć', value: '3/4 GB RAM, 32/64 GB Flash' },
-      { name: 'Skaner', value: 'SE4710 Imager 2D' },
-      { name: 'Kamera', value: '13 MP tył, 5 MP przód' },
-      { name: 'Bateria', value: '3100 mAh lub 5200 mAh' },
-      { name: 'Odporność', value: 'IP67, upadki z 1.2 m' },
-      { name: 'Łączność', value: 'Wi-Fi 6, Bluetooth 5.0' },
-    ],
-    applications: ['Zarządzanie magazynem', 'Inwentaryzacja', 'Retail', 'Małe i średnie firmy'],
-    compatibleAccessories: ['zebra-battery-tc21', 'zebra-cradle-tc21'],
-    downloads: [
-      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://serwis-zebry.pl/instrukcje/zebra-tc21', size: 'Online' },
-    ],
-    createdAt: '2023-04-15',
-  },
-  {
-    id: 'zebra-tc26',
-    slug: 'zebra-tc26',
-    name: 'Zebra TC26',
-    shortDescription: 'Terminal mobilny z LTE/4G do pracy w terenie',
-    description: `Zebra TC26 to wersja terminala TC21 z dodatkowym modułem 4G (LTE) do pracy w terenie poza zasięgiem Wi-Fi.
-
-Podwyższona norma szczelności IP67 przystosowuje urządzenie do pracy w trudnych warunkach przemysłowych i terenowych.
-
-Idealny dla serwisantów, kurierów i pracowników działających poza biurem.`,
-    categoryId: 'terminale-mobilne',
-    manufacturerId: 'zebra',
-    priceFrom: 3490,
-    images: ['/images/products/zebra-tc26.jpg'],
-    imageDescriptions: ['Zebra TC26 — widok z przodu'],
-    tags: ['logistyka', 'outdoor', 'retail'],
-    availability: 'available',
-    isNew: false,
-    isBestseller: false,
-    specifications: [
-      { name: 'System operacyjny', value: 'Android 10/11' },
-      { name: 'Procesor', value: 'Qualcomm Snapdragon 660' },
-      { name: 'Wyświetlacz', value: '5" HD (1280x720)' },
-      { name: 'Pamięć', value: '4 GB RAM, 64 GB Flash' },
-      { name: 'Skaner', value: 'SE4710 Imager 2D' },
-      { name: 'Łączność', value: 'Wi-Fi 6, Bluetooth 5.0, 4G LTE, GPS' },
-      { name: 'Bateria', value: '3100 mAh lub 5200 mAh' },
-      { name: 'Odporność', value: 'IP67, upadki z 1.2 m' },
-    ],
-    applications: ['Serwis w terenie', 'Dostawy kurierskie', 'Praca poza biurem', 'Logistyka'],
-    compatibleAccessories: ['zebra-battery-tc21', 'zebra-vehicle-cradle-tc2'],
-    downloads: [
-      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://serwis-zebry.pl/instrukcje/zebra-tc26', size: 'Online' },
-    ],
-    createdAt: '2023-04-15',
-  },
-  {
-    id: 'zebra-tc52x',
-    slug: 'zebra-tc52x',
-    name: 'Zebra TC52x',
-    shortDescription: 'Wytrzymały terminal mobilny do wymagających środowisk',
-    description: `Zebra TC52x to wszechstronny terminal mobilny klasy enterprise, łączący funkcjonalność smartfona z wytrzymałością urządzenia przemysłowego.
-
-System Android, potężny procesor Snapdragon 660 i zaawansowane możliwości skanowania czynią go idealnym narzędziem dla pracowników mobilnych.
-
-Wytrzymałość IP67, odporność na upadki z 1.5 m, wsparcie Mobility DNA dla łatwego zarządzania flotą urządzeń.`,
-    categoryId: 'terminale-mobilne',
-    manufacturerId: 'zebra',
-    priceFrom: 4590,
-    images: ['/images/products/zebra-tc52x.jpg'],
-    imageDescriptions: ['Zebra TC52x — widok z przodu'],
-    tags: ['magazyn', 'logistyka', 'produkcja'],
-    availability: 'available',
-    isNew: false,
-    isBestseller: true,
-    specifications: [
-      { name: 'System operacyjny', value: 'Android 11' },
-      { name: 'Procesor', value: 'Qualcomm Snapdragon 660' },
-      { name: 'Wyświetlacz', value: '5" Full HD (1920x1080)' },
-      { name: 'Pamięć', value: '4 GB RAM, 32/64 GB Flash' },
-      { name: 'Skaner', value: 'SE4720 Imager 2D' },
-      { name: 'Bateria', value: '4150 mAh (standard) / 7000 mAh (extended)' },
-      { name: 'Odporność', value: 'IP67, upadki z 1.5 m, MIL-STD-810G' },
-      { name: 'Łączność', value: 'Wi-Fi 6, Bluetooth 5.0, NFC' },
-    ],
-    applications: ['Zarządzanie magazynem', 'Inwentaryzacja', 'Produkcja', 'Logistyka'],
-    compatibleAccessories: ['zebra-cradle-tc52'],
-    downloads: [
-      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://serwis-zebry.pl/instrukcje/zebra-tc52', size: 'Online' },
-    ],
-    createdAt: '2023-01-10',
-  },
-  {
-    id: 'zebra-tc57x',
-    slug: 'zebra-tc57x',
-    name: 'Zebra TC57x',
-    shortDescription: 'Terminal mobilny z LTE/4G dla pracowników terenowych',
-    description: `Zebra TC57x to wersja terminala TC52x z modułem sieci komórkowej 4G LTE dla pracowników działających w terenie.
-
-Wszystkie zalety TC52x plus łączność WAN dla pracy poza zasięgiem Wi-Fi. Moduł GPS do śledzenia lokalizacji.
-
-Idealny dla serwisu w terenie, dostaw kurierskich i pracowników mobilnych.`,
-    categoryId: 'terminale-mobilne',
-    manufacturerId: 'zebra',
-    priceFrom: 5290,
-    images: ['/images/products/zebra-tc57x.jpg'],
-    imageDescriptions: ['Zebra TC57x — widok z przodu'],
-    tags: ['logistyka', 'outdoor', 'produkcja'],
-    availability: 'available',
-    isNew: false,
-    isBestseller: false,
-    specifications: [
-      { name: 'System operacyjny', value: 'Android 11' },
-      { name: 'Procesor', value: 'Qualcomm Snapdragon 660' },
-      { name: 'Wyświetlacz', value: '5" Full HD (1920x1080)' },
-      { name: 'Pamięć', value: '4 GB RAM, 32/64 GB Flash' },
-      { name: 'Skaner', value: 'SE4720 Imager 2D' },
-      { name: 'Łączność', value: 'Wi-Fi 6, Bluetooth 5.0, 4G LTE, GPS, NFC' },
-      { name: 'Bateria', value: '4150 mAh / 7000 mAh' },
-      { name: 'Odporność', value: 'IP67, upadki z 1.5 m' },
-    ],
-    applications: ['Dostawy i logistyka', 'Serwis w terenie', 'Praca poza biurem', 'Transport'],
-    compatibleAccessories: ['zebra-vehicle-cradle-tc5'],
-    downloads: [
-      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '2.1 MB' },
-    ],
-    createdAt: '2023-01-10',
-  },
-  {
     id: 'zebra-mc3300x',
     slug: 'zebra-mc3300x',
     name: 'Zebra MC3300x',
@@ -11134,7 +10989,7 @@ Komunikacja Bluetooth i USB-C, kompatybilność z terminalami TC52x, TC57x i wyb
       { name: 'Odporność', value: 'IP52, upadki z 1.2 m' },
     ],
     applications: ['Inwentaryzacja RFID', 'Lokalizacja produktów', 'Zarządzanie aktywami', 'Retail'],
-    compatibleAccessories: ['zebra-tc52x', 'zebra-tc57x'],
+    compatibleAccessories: [],
     downloads: [
       { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.1 MB' },
     ],
@@ -11169,7 +11024,7 @@ Integracja z terminalami TC52x, TC57x, MC3300x dla kompleksowych rozwiązań RFI
       { name: 'Temperatura pracy', value: '-20°C do +50°C' },
     ],
     applications: ['Magazyn RFID', 'Produkcja', 'Inwentaryzacja', 'Zarządzanie aktywami'],
-    compatibleAccessories: ['zebra-tc52x', 'zebra-mc3300x'],
+    compatibleAccessories: ['zebra-mc3300x'],
     downloads: [
       { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.2 MB' },
     ],
@@ -11335,7 +11190,7 @@ Możliwość łączenia wielu stacji dla dużych instalacji.`,
       { name: 'Zasilanie', value: 'Zasilacz w zestawie' },
     ],
     applications: ['Ładowanie floty', 'Dystrybucja urządzeń', 'Stanowisko IT'],
-    compatibleAccessories: ['zebra-tc52x', 'zebra-tc57x'],
+    compatibleAccessories: [],
     downloads: [],
     createdAt: '2023-03-01',
   },
