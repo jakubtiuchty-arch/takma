@@ -158,7 +158,7 @@ export const categories: Category[] = [
     seoDescription: 'Terminale mobilne Zebra i Datalogic z Androidem: TC22, TC27, TC53, TC58, MC3400, MC3450, Memor 11/12. Wytrzymałe komputery mobilne IP68/IP67 do magazynu, logistyki i produkcji. Ceny netto od 2 180 zł, doradztwo, serwis Zebra.',
     longDescription: 'Profesjonalne terminale mobilne (kolektory danych) Zebra klasy enterprise z systemem Android. Seria TC22/TC27 dla małych i średnich firm — lekkie, intuicyjne, w przystępnej cenie. TC53/TC58 dla wymagających środowisk magazynowych i logistycznych — IP68, upadki z 1,8 m, skaner SE55. MC3400/MC3450 z klawiaturą fizyczną do intensywnego skanowania w produkcji. Wszystkie modele z wbudowanym skanerem 1D/2D, Wi-Fi 6/6E, Bluetooth 5.x i zarządzaniem MDM.',
     icon: 'smartphone',
-    productCount: 20,
+    productCount: 13,
   },
   {
     id: 'skanery-kodow',
@@ -10605,7 +10605,8 @@ const mc2xAccessories: Product[] = [
 // DATALOGIC - TERMINALE MOBILNE
 // ============================================
 
-const datalogicMobileComputers: Product[] = [
+// TODO: Datalogic tymczasowo wyłączony
+const datalogicMobileComputers: Product[] = [] /* [
   {
     id: 'datalogic-memor-11',
     slug: 'datalogic-memor-11',
@@ -10881,7 +10882,7 @@ Idealny do małych i średnich sklepów internetowych, punktów sprzedaży detal
     ],
     createdAt: '2024-03-20',
   },
-]
+] */
 
 // ============================================
 // RFID
