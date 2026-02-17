@@ -329,7 +329,7 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
 
       {/* Results dropdown */}
       {isOpen && (
-        <div className="absolute top-full right-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-50 animate-fade-in max-h-[480px] flex flex-col min-w-[480px] w-max max-w-[560px]">
+        <div className="absolute top-full left-0 right-0 sm:left-auto sm:right-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-50 animate-fade-in max-h-[70vh] sm:max-h-[480px] flex flex-col sm:min-w-[480px] sm:w-max sm:max-w-[560px]">
           {results.length > 0 ? (
             <>
               <ul
@@ -396,8 +396,8 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
                         </p>
                       </div>
 
-                      {/* Availability + Price */}
-                      <div className="flex flex-col items-end flex-shrink-0 gap-0.5">
+                      {/* Availability + Price — hidden on mobile */}
+                      <div className="hidden sm:flex flex-col items-end flex-shrink-0 gap-0.5">
                         {result.availability && (
                           <span className={clsx(
                             'text-[10px] font-medium flex items-center gap-1',
