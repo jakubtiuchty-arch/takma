@@ -6,7 +6,7 @@ import clsx from 'clsx'
 import Image from 'next/image'
 import { CloseIcon, TrashIcon, PlusIcon, MinusIcon, ArrowRightIcon } from '@/components/ui/Icons'
 import { Button } from '@/components/ui'
-import { useRFQStore } from '@/store/rfqStore'
+import { useCartStore } from '@/store/cartStore'
 import { products } from '@/data/products'
 import type { Product } from '@/data/products'
 
@@ -103,7 +103,7 @@ function getCrossSellSuggestions(
 
 export default function RFQDrawer() {
   const { items, isDrawerOpen, closeDrawer, removeItem, updateQuantity, updateNote, clearAll, addItem } =
-    useRFQStore()
+    useCartStore()
   const [mounted, setMounted] = useState(false)
 
   // Hydration fix

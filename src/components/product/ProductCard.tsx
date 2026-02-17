@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Badge, Button } from '@/components/ui'
 import { PlusIcon, CheckIcon, BellIcon } from '@/components/ui/Icons'
 import { Product, getManufacturerById } from '@/data/products'
-import { useRFQStore } from '@/store/rfqStore'
+import { useCartStore } from '@/store/cartStore'
 import { useEffect, useState, useMemo } from 'react'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 
@@ -24,7 +24,7 @@ function getPartNumbers(product: Product): string[] {
 }
 
 export default function ProductCard({ product, variant = 'grid', showDualButtons = false }: ProductCardProps) {
-  const { addItem, isInRFQ } = useRFQStore()
+  const { addItem, isInCart } = useCartStore()
   const [mounted, setMounted] = useState(false)
 
   const partNumbers = useMemo(() => getPartNumbers(product), [product])
@@ -35,7 +35,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   }, [])
 
   const manufacturer = getManufacturerById(product.manufacturerId)
-  const inRFQ = mounted ? isInRFQ(product.id) : false
+  const inRFQ = mounted ? isInCart(product.id) : false
   const hasRealImage = product.images.length > 0 && !product.images[0].includes('placeholder')
 
   // Live dostępność z Ingram — tylko gdy Ingram faktycznie znalazł PN-y (found: true)

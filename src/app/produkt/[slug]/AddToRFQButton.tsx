@@ -3,7 +3,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { Button } from '@/components/ui'
 import { PlusIcon, CheckIcon, BellIcon } from '@/components/ui/Icons'
-import { useRFQStore } from '@/store/rfqStore'
+import { useCartStore } from '@/store/cartStore'
 import { Product } from '@/data/products'
 import { useStockData } from './StockInfo'
 
@@ -105,7 +105,7 @@ function NotifyForm({ partNumber, productName, compact }: { partNumber: string; 
 }
 
 export default function AddToRFQButton({ product, compact = false }: AddToRFQButtonProps) {
-  const { addItem, isInRFQ } = useRFQStore()
+  const { addItem, isInCart } = useCartStore()
   const [mounted, setMounted] = useState(false)
 
   // Wyciągnij Part Numbery z wariantów lub specyfikacji
@@ -122,7 +122,7 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
     setMounted(true)
   }, [])
 
-  const inRFQ = mounted ? isInRFQ(product.id) : false
+  const inRFQ = mounted ? isInCart(product.id) : false
 
   // Sprawdź czy produkt jest niedostępny wg Ingram
   // Tylko jeśli Ingram faktycznie znalazł PN-y (found: true) — inaczej fallback na statyczną dostępność

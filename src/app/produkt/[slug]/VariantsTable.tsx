@@ -4,7 +4,7 @@ import { useEffect, useState, useMemo, useRef } from 'react'
 import { Badge } from '@/components/ui'
 import { Button } from '@/components/ui'
 import { PlusIcon, CheckIcon, BellIcon, ChevronDownIcon } from '@/components/ui/Icons'
-import { useRFQStore } from '@/store/rfqStore'
+import { useCartStore } from '@/store/cartStore'
 import { ProductVariant } from '@/data/products'
 import { useStockData } from './StockInfo'
 
@@ -181,7 +181,7 @@ function AttributeLabel({ label, extraTooltips }: { label: string; extraTooltips
   )
 }
 
-function DesktopRow({ variant, productSlug, productName, productImage, attributeKeys, rowIndex, mounted, stockData, stockLoading, addItem, isInRFQ, manufacturerId }: {
+function DesktopRow({ variant, productSlug, productName, productImage, attributeKeys, rowIndex, mounted, stockData, stockLoading, addItem, isInCart, manufacturerId }: {
   variant: ProductVariant
   productSlug: string
   productName: string
@@ -192,10 +192,10 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; availability: 'available' | 'on-order' | 'unavailable' }>
   stockLoading: boolean
   addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string }) => void
-  isInRFQ: (id: string) => boolean
+  isInCart: (id: string) => boolean
   manufacturerId?: string
 }) {
-  const inRFQ = mounted ? isInRFQ(`${productSlug}__${variant.partNumber}`) : false
+  const inRFQ = mounted ? isInCart(`${productSlug}__${variant.partNumber}`) : false
   const stock = stockData.get(variant.partNumber)
   const avail = stock?.found
     ? availabilityConfig[stock.availability]
@@ -247,7 +247,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   )
 }
 
-function MobileCard({ variant, productSlug, productName, productImage, attributeKeys, mounted, stockData, stockLoading, addItem, isInRFQ, variantAttributeTooltips, manufacturerId }: {
+function MobileCard({ variant, productSlug, productName, productImage, attributeKeys, mounted, stockData, stockLoading, addItem, isInCart, variantAttributeTooltips, manufacturerId }: {
   variant: ProductVariant
   productSlug: string
   productName: string
@@ -257,11 +257,11 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
   stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; availability: 'available' | 'on-order' | 'unavailable' }>
   stockLoading: boolean
   addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string }) => void
-  isInRFQ: (id: string) => boolean
+  isInCart: (id: string) => boolean
   variantAttributeTooltips?: Record<string, string>
   manufacturerId?: string
 }) {
-  const inRFQ = mounted ? isInRFQ(`${productSlug}__${variant.partNumber}`) : false
+  const inRFQ = mounted ? isInCart(`${productSlug}__${variant.partNumber}`) : false
   const stock = stockData.get(variant.partNumber)
   const avail = stock?.found
     ? availabilityConfig[stock.availability]
@@ -343,7 +343,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
 }
 
 export default function VariantsTable({ productSlug, productName, productImage, variants, variantAttributeTooltips, manufacturerId }: VariantsTableProps) {
-  const { addItem, isInRFQ } = useRFQStore()
+  const { addItem, isInCart } = useCartStore()
   const [mounted, setMounted] = useState(false)
   const [showUnavailable, setShowUnavailable] = useState(false)
 
@@ -380,7 +380,7 @@ export default function VariantsTable({ productSlug, productName, productImage, 
 
   if (variants.length === 0) return null
 
-  const sharedProps = { productSlug, productName, productImage, attributeKeys, mounted, stockData, stockLoading, addItem, isInRFQ, variantAttributeTooltips, manufacturerId }
+  const sharedProps = { productSlug, productName, productImage, attributeKeys, mounted, stockData, stockLoading, addItem, isInCart, variantAttributeTooltips, manufacturerId }
   const colCount = 4 + attributeKeys.length // PN + attrs + cena + magazyn + status + akcja
 
   return (

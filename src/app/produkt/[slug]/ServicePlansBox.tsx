@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { PlusIcon, CheckIcon, ChevronDownIcon } from '@/components/ui/Icons'
-import { useRFQStore } from '@/store/rfqStore'
+import { useCartStore } from '@/store/cartStore'
 import { ServicePlan } from '@/data/products'
 
 interface ServicePlansBoxProps {
@@ -12,7 +12,7 @@ interface ServicePlansBoxProps {
 }
 
 export default function ServicePlansBox({ plans, productSlug, productName }: ServicePlansBoxProps) {
-  const { addItem, isInRFQ } = useRFQStore()
+  const { addItem, isInCart } = useCartStore()
   const [mounted, setMounted] = useState(false)
   const [infoOpen, setInfoOpen] = useState(false)
 
@@ -57,7 +57,7 @@ export default function ServicePlansBox({ plans, productSlug, productName }: Ser
         (() => {
           const plan = plans[0]
           const itemId = `${productSlug}__onecare__${plan.partNumber}`
-          const inRFQ = mounted ? isInRFQ(itemId) : false
+          const inRFQ = mounted ? isInCart(itemId) : false
           return (
             <div className="bg-white rounded-lg border border-gray-200 p-3 flex items-center justify-between gap-4">
               <div className="min-w-0">
@@ -94,7 +94,7 @@ export default function ServicePlansBox({ plans, productSlug, productName }: Ser
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
           {plans.map((plan) => {
             const itemId = `${productSlug}__onecare__${plan.partNumber}`
-            const inRFQ = mounted ? isInRFQ(itemId) : false
+            const inRFQ = mounted ? isInCart(itemId) : false
 
             return (
               <div key={plan.partNumber} className="bg-white rounded-lg border border-gray-200 p-3">

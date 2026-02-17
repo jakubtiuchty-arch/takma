@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from 'react'
 import { ShoppingCartIcon } from '@/components/ui/Icons'
-import { useRFQStore } from '@/store/rfqStore'
+import { useCartStore } from '@/store/cartStore'
 import clsx from 'clsx'
 
 export default function RFQBadge() {
-  const { toggleDrawer, getItemCount } = useRFQStore()
+  const { toggleDrawer, getItemCount } = useCartStore()
   const [mounted, setMounted] = useState(false)
   const [animate, setAnimate] = useState(false)
 
