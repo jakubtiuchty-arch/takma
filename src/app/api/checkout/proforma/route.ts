@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
 
     const today = new Date().toLocaleDateString('pl-PL')
     const dueDate = new Date(
-      Date.now() + 14 * 24 * 60 * 60 * 1000
+      Date.now() + 7 * 24 * 60 * 60 * 1000
     ).toLocaleDateString('pl-PL')
 
     const url = new URL(request.url)

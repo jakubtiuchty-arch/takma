@@ -412,7 +412,7 @@ export default function CheckoutPage() {
 
           <p className="text-lg text-gray-600 mb-8">
             {formData.paymentMethod === 'proforma'
-              ? 'Faktura pro forma została otwarta w nowej karcie. Opłać przelew w ciągu 14 dni — realizacja po zaksięgowaniu.'
+              ? 'Faktura pro forma została otwarta w nowej karcie. Opłać przelew w ciągu 7 dni — realizacja po zaksięgowaniu.'
               : 'Potwierdzenie zamówienia zostanie wysłane na podany adres e-mail. Dziękujemy za zakupy!'}
           </p>
 
