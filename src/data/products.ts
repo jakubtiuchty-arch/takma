@@ -160,28 +160,22 @@ export const categories: Category[] = [
     icon: 'smartphone',
     productCount: 18,
   },
-  {
-    id: 'skanery-kodow',
-    slug: 'skanery-kodow',
-    name: 'Skanery / Czytniki',
-    description: 'Skanery ręczne, prezentacyjne i przemysłowe do kodów 1D i 2D',
-    seoTitle: 'Skanery kodów kreskowych Zebra | Ręczne i bezprzewodowe',
-    seoDescription: 'Skanery kodów kreskowych Zebra 1D i 2D. Skanery ręczne DS2208, bezprzewodowe LI4278, ultra-wytrzymałe DS3608. Skanowanie kodów QR z ekranów.',
-    longDescription: 'Kompletna oferta skanerów Zebra: od uniwersalnych DS2208 do handlu, przez bezprzewodowe DS2278 i LI4278, po ultra-wytrzymałe DS3608 do przemysłu. Wszystkie modele obsługują kody 1D, 2D oraz kody z ekranów urządzeń mobilnych.',
-    icon: 'scan',
-    productCount: 8,
-  },
-  {
-    id: 'tablety',
-    slug: 'tablety',
-    name: 'Tablety',
-    description: 'Wytrzymałe tablety przemysłowe do pracy w trudnych warunkach',
-    seoTitle: 'Tablety przemysłowe Zebra | Wytrzymałe tablety Android',
-    seoDescription: 'Tablety przemysłowe Zebra - wytrzymałe, wodoodporne tablety Android do magazynu, logistyki i pracy w terenie.',
-    longDescription: 'Wytrzymałe tablety przemysłowe Zebra z systemem Android. Duże ekrany dotykowe, odporność na upadki i wodę, długi czas pracy na baterii. Idealne do magazynów, logistyki i pracy terenowej.',
-    icon: 'tablet',
-    productCount: 4,
-  },
+  // {
+  //   id: 'skanery-kodow',
+  //   slug: 'skanery-kodow',
+  //   name: 'Skanery / Czytniki',
+  //   description: 'Skanery ręczne, prezentacyjne i przemysłowe do kodów 1D i 2D',
+  //   icon: 'scan',
+  //   productCount: 8,
+  // },
+  // {
+  //   id: 'tablety',
+  //   slug: 'tablety',
+  //   name: 'Tablety',
+  //   description: 'Wytrzymałe tablety przemysłowe do pracy w trudnych warunkach',
+  //   icon: 'tablet',
+  //   productCount: 4,
+  // },
   {
     id: 'materialy-eksploatacyjne',
     slug: 'materialy-eksploatacyjne',
@@ -7407,10 +7401,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
 ]
 
 // ============================================
-// SKANERY KODÓW KRESKOWYCH
+// SKANERY KODÓW KRESKOWYCH (TODO: odkomentować po uruchomieniu kategorii)
 // ============================================
 
-const scanners: Product[] = [
+const scanners: Product[] = [ /* zakomentowane — skanery tymczasowo wyłączone
   {
     id: 'zebra-ds2208',
     slug: 'zebra-ds2208',
@@ -7585,7 +7579,7 @@ Inteligentna bateria PowerPrecision Plus zapewnia do 24 godzin nieprzerwanej pra
     ],
     createdAt: '2022-09-10',
   },
-]
+*/ ]
 
 // ============================================
 // TERMINALE MOBILNE
@@ -20944,7 +20938,7 @@ export const products: Product[] = [
   ...industrialLightPrinters,
   ...industrialPrinters,
   ...mobilePrinters,
-  ...scanners,
+  // ...scanners, // TODO: odkomentować po uruchomieniu kategorii
   ...mobileComputers,
   ...datalogicMobileComputers,
   ...rfidProducts,
