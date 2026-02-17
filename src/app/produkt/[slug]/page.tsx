@@ -139,6 +139,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
   const relatedSoftware = allRelated.filter((p) => p!.categoryId === 'oprogramowanie')
   const relatedAccessories = allRelated.filter((p) => !p!.subcategoryIds?.includes('karty-pcv') && p!.categoryId !== 'oprogramowanie')
 
+  const isDevice = ['drukarki-etykiet', 'drukarki-kart', 'drukarki-opasek', 'terminale-mobilne', 'skanery-kodow', 'tablety'].includes(product.categoryId)
+
   // JSON-LD: Product schema
   const availabilitySchemaMap = {
     available: 'https://schema.org/InStock',
@@ -581,7 +583,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   href="#akcesoria"
                   className="px-3 py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
-                  {product.variants && product.variants.length > 0 ? 'Akcesoria' : 'Powiązane produkty'}
+                  {isDevice ? 'Akcesoria' : 'Powiązane produkty'}
                 </a>
               )}
             </nav>
@@ -605,7 +607,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Opis produktu</h2>
               <div className="prose prose-gray max-w-none">
                 {product.description.split('\n\n').map((paragraph, i) => {
-                  const linkMatch = paragraph.match(/(.*sekcji )(Powiązane produkty)( poniżej.*)/)
+                  const linkMatch = paragraph.match(/(.*sekcji )(Powiązane produkty|Akcesoria)( poniżej.*)/)
                   return (
                     <p key={i} className="text-gray-600 mb-4 sm:text-justify">
                       {linkMatch ? (
@@ -796,7 +798,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             {relatedAccessories.length > 0 && (
               <RelatedProducts
                 id="akcesoria"
-                title={product.variants && product.variants.length > 0 ? 'Akcesoria' : 'Powiązane produkty'}
+                title={isDevice ? 'Akcesoria' : 'Powiązane produkty'}
                 products={relatedAccessories as typeof products}
                 initialLimit={4}
                 showDualButtons
