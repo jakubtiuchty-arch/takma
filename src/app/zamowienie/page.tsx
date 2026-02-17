@@ -334,7 +334,7 @@ export default function CheckoutPage() {
       id: product.id,
       name: product.name,
       slug: product.slug,
-      image: product.images?.[0] ? `/images/products/${product.images[0]}` : undefined,
+      image: product.images?.[0],
       partNumber: product.variants?.[0]?.partNumber ?? undefined,
       priceNetto: product.priceFrom,
       categoryId: product.categoryId,
