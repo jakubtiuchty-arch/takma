@@ -730,14 +730,14 @@ export default async function ProductPage({ params }: ProductPageProps) {
             {product.manufacturerId === 'zebra' && (
               <section>
                 <a
-                  href="https://serwis-zebry.pl"
+                  href={product.categoryId === 'terminale-mobilne' ? 'https://www.serwis-zebry.pl/serwis-terminali-zebra' : 'https://www.serwis-zebry.pl/serwis-drukarek-zebra'}
                   target="_blank"
                   rel="noopener"
                   className="block relative rounded-xl overflow-hidden hover:shadow-lg transition-all group bg-gray-900 min-h-[160px]"
                 >
                   <img
                     src="/images/serwis-zebry-banner.jpg"
-                    alt="Serwis-Zebry.pl — autoryzowany serwis drukarek Zebra"
+                    alt={product.categoryId === 'terminale-mobilne' ? 'Serwis-Zebry.pl — autoryzowany serwis terminali Zebra' : 'Serwis-Zebry.pl — autoryzowany serwis drukarek Zebra'}
                     className="absolute inset-0 w-full h-full object-cover object-[65%_28%]"
                   />
                   <div className="relative h-full flex items-center justify-between p-6">
