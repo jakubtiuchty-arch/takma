@@ -122,6 +122,7 @@ export default function CheckoutPage() {
   } = useCartStore()
 
   const [mounted, setMounted] = useState(false)
+  const [step, setStep] = useState<1 | 2>(1)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSuccess, setIsSuccess] = useState(false)
   const [orderNumber, setOrderNumber] = useState('')
@@ -486,115 +487,432 @@ export default function CheckoutPage() {
         <span className="text-gray-900 font-medium">Zamowienie</span>
       </nav>
 
-      <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
-        Zamowienie
-      </h1>
-      <p className="text-gray-600 mb-8">
-        Sprawdz produkty, uzupelnij dane firmy i wybierz forme platnosci.
-      </p>
+      {/* ── Stepper ── */}
+      <div className="flex items-center gap-3 mb-8">
+        <button
+          onClick={() => setStep(1)}
+          className={`flex items-center gap-2 text-sm font-semibold transition-colors ${
+            step === 1 ? 'text-primary-600' : 'text-gray-400 hover:text-gray-600'
+          }`}
+        >
+          <span className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold ${
+            step === 1 ? 'bg-primary-600 text-white' : 'bg-gray-200 text-gray-500'
+          }`}>1</span>
+          Koszyk
+        </button>
+        <ChevronRightIcon size={16} className="text-gray-300" />
+        <span
+          className={`flex items-center gap-2 text-sm font-semibold ${
+            step === 2 ? 'text-primary-600' : 'text-gray-400'
+          }`}
+        >
+          <span className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold ${
+            step === 2 ? 'bg-primary-600 text-white' : 'bg-gray-200 text-gray-500'
+          }`}>2</span>
+          Dane i platnosc
+        </span>
+      </div>
 
-      <div className="grid lg:grid-cols-5 gap-8 lg:gap-10 items-start">
-        {/* ────── LEWA KOLUMNA: Produkty ────── */}
-        <div className="lg:col-span-3 space-y-6">
-          {/* Lista produktow */}
-          <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
-            <div className="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
-              <h2 className="font-semibold text-gray-900 flex items-center gap-2">
-                <ShoppingCartIcon size={20} className="text-primary-600" />
-                Produkty w zamowieniu ({items.length})
-              </h2>
-              <button
-                onClick={clearAll}
-                className="text-sm text-gray-500 hover:text-red-500 transition-colors"
-              >
-                Wyczysc wszystko
-              </button>
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* KROK 1: Koszyk + Cross-sell + Podsumowanie                 */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      {step === 1 && (
+        <div className="grid lg:grid-cols-5 gap-8 lg:gap-10 items-start">
+          <div className="lg:col-span-3 space-y-6">
+            {/* Lista produktow */}
+            <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+              <div className="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
+                <h2 className="font-semibold text-gray-900 flex items-center gap-2">
+                  <ShoppingCartIcon size={20} className="text-primary-600" />
+                  Produkty w zamowieniu ({items.length})
+                </h2>
+                <button
+                  onClick={clearAll}
+                  className="text-sm text-gray-500 hover:text-red-500 transition-colors"
+                >
+                  Wyczysc wszystko
+                </button>
+              </div>
+
+              <ul className="divide-y divide-gray-100">
+                {items.map((item) => (
+                  <CartItemRow
+                    key={item.productId}
+                    item={item}
+                    onRemove={removeItem}
+                    onUpdateQuantity={updateQuantity}
+                  />
+                ))}
+              </ul>
             </div>
 
-            <ul className="divide-y divide-gray-100">
-              {items.map((item) => (
-                <CartItemRow
-                  key={item.productId}
-                  item={item}
-                  onRemove={removeItem}
-                  onUpdateQuantity={updateQuantity}
-                />
-              ))}
-            </ul>
+            {/* Cross-sell */}
+            {crossSellProducts.length > 0 && (
+              <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+                <div className="px-6 py-4 border-b border-gray-200">
+                  <h2 className="font-semibold text-gray-900">
+                    Uzupelnij zamowienie
+                  </h2>
+                  <p className="text-sm text-gray-500 mt-0.5">
+                    Polecane akcesoria do produktow w koszyku
+                  </p>
+                </div>
+
+                <div className="p-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {crossSellProducts.map((product) => (
+                    <div
+                      key={product.id}
+                      className="flex items-center gap-3 p-3 rounded-xl border border-gray-100 hover:border-primary-200 hover:bg-primary-50/30 transition-all"
+                    >
+                      {product.images?.[0] && (
+                        <div className="relative w-16 h-16 rounded-lg flex-shrink-0 overflow-hidden bg-gray-50">
+                          <Image
+                            src={product.images[0]}
+                            alt={product.name}
+                            fill
+                            className="object-contain p-1"
+                            sizes="64px"
+                          />
+                        </div>
+                      )}
+                      <div className="flex-1 min-w-0">
+                        <Link
+                          href={`/produkt/${product.slug}`}
+                          className="text-sm font-medium text-gray-900 hover:text-primary-600 transition-colors line-clamp-2"
+                        >
+                          {product.name}
+                        </Link>
+                        {product.priceFrom && (
+                          <p className="text-sm font-semibold text-primary-600 mt-0.5">
+                            {formatPrice(product.priceFrom)} zl netto
+                          </p>
+                        )}
+                      </div>
+                      <button
+                        onClick={() => handleAddCrossSell(product)}
+                        className="flex-shrink-0 w-9 h-9 rounded-lg bg-primary-600 hover:bg-primary-700 text-white flex items-center justify-center transition-colors"
+                        aria-label={`Dodaj ${product.name} do koszyka`}
+                      >
+                        <PlusIcon size={18} />
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
-          {/* Cross-sell */}
-          {crossSellProducts.length > 0 && (
-            <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
-              <div className="px-6 py-4 border-b border-gray-200">
-                <h2 className="font-semibold text-gray-900">
-                  Uzupelnij zamowienie
-                </h2>
-                <p className="text-sm text-gray-500 mt-0.5">
-                  Polecane akcesoria do produktow w koszyku
-                </p>
-              </div>
-
-              <div className="p-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {crossSellProducts.map((product) => (
-                  <div
-                    key={product.id}
-                    className="flex items-center gap-3 p-3 rounded-xl border border-gray-100 hover:border-primary-200 hover:bg-primary-50/30 transition-all"
-                  >
-                    {product.images?.[0] && (
-                      <div className="relative w-16 h-16 rounded-lg flex-shrink-0 overflow-hidden bg-gray-50">
-                        <Image
-                          src={product.images[0]}
-                          alt={product.name}
-                          fill
-                          className="object-contain p-1"
-                          sizes="64px"
-                        />
-                      </div>
-                    )}
-                    <div className="flex-1 min-w-0">
-                      <Link
-                        href={`/produkt/${product.slug}`}
-                        className="text-sm font-medium text-gray-900 hover:text-primary-600 transition-colors line-clamp-2"
-                      >
-                        {product.name}
-                      </Link>
-                      {product.priceFrom && (
-                        <p className="text-sm font-semibold text-primary-600 mt-0.5">
-                          {formatPrice(product.priceFrom)} zl netto
-                        </p>
-                      )}
-                    </div>
-                    <button
-                      onClick={() => handleAddCrossSell(product)}
-                      className="flex-shrink-0 w-9 h-9 rounded-lg bg-primary-600 hover:bg-primary-700 text-white flex items-center justify-center transition-colors"
-                      aria-label={`Dodaj ${product.name} do koszyka`}
-                    >
-                      <PlusIcon size={18} />
-                    </button>
-                  </div>
-                ))}
-              </div>
+          {/* Podsumowanie + przycisk Dalej */}
+          <div className="lg:col-span-2">
+            <div className="lg:sticky lg:top-28 space-y-4">
+              <PriceSummary
+                subtotalNetto={subtotalNetto}
+                shippingNetto={shippingNetto}
+                isFreeShipping={isFreeShipping}
+                vatAmount={vatAmount}
+                totalBrutto={totalBrutto}
+              />
+              <Button
+                fullWidth
+                size="lg"
+                rightIcon={<ArrowRightIcon size={18} />}
+                onClick={() => { setStep(2); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
+                disabled={items.length === 0}
+              >
+                Przejdz do danych firmy
+              </Button>
             </div>
-          )}
-
-          {/* Podsumowanie cenowe (widoczne na mobile przed formularzem) */}
-          <div className="lg:hidden">
-            <PriceSummary
-              subtotalNetto={subtotalNetto}
-              shippingNetto={shippingNetto}
-              isFreeShipping={isFreeShipping}
-              vatAmount={vatAmount}
-              totalBrutto={totalBrutto}
-            />
           </div>
         </div>
+      )}
 
-        {/* ────── PRAWA KOLUMNA: Formularz + Podsumowanie ────── */}
-        <div className="lg:col-span-2">
-          <div className="lg:sticky lg:top-28 space-y-6">
-            {/* Podsumowanie cenowe (desktop) */}
-            <div className="hidden lg:block">
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* KROK 2: Dane firmy + Adres + Platnosc                      */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      {step === 2 && (
+        <div className="max-w-2xl mx-auto space-y-6">
+          {/* Podsumowanie zamowienia — kompaktowe */}
+          <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+            <div className="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
+              <h2 className="font-semibold text-gray-900 text-sm">
+                Zamowienie ({items.length} {items.length === 1 ? 'produkt' : items.length < 5 ? 'produkty' : 'produktow'})
+              </h2>
+              <button
+                onClick={() => setStep(1)}
+                className="text-sm text-primary-600 hover:text-primary-700 font-medium transition-colors"
+              >
+                Edytuj koszyk
+              </button>
+            </div>
+            <div className="px-6 py-3 flex items-center justify-between">
+              <span className="text-sm text-gray-600">
+                {items.map(i => i.productName).join(', ').slice(0, 80)}{items.map(i => i.productName).join(', ').length > 80 ? '...' : ''}
+              </span>
+              <span className="text-sm font-bold text-gray-900 whitespace-nowrap ml-4">
+                {formatPrice(totalBrutto)} zl brutto
+              </span>
+            </div>
+          </div>
+
+          {/* Formularz */}
+          <form onSubmit={handleSubmit} className="bg-gray-50 rounded-2xl p-6 space-y-5">
+            <h2 className="text-lg font-semibold text-gray-900">Dane firmy</h2>
+
+            <div className="grid grid-cols-2 gap-4">
+              <Input
+                label="Imie"
+                name="firstName"
+                value={formData.firstName}
+                onChange={handleInputChange}
+                error={errors.firstName}
+                placeholder="Jan"
+                required
+              />
+              <Input
+                label="Nazwisko"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleInputChange}
+                error={errors.lastName}
+                placeholder="Kowalski"
+                required
+              />
+            </div>
+
+            <Input
+              label="Firma"
+              name="company"
+              value={formData.company}
+              onChange={handleInputChange}
+              error={errors.company}
+              placeholder="Nazwa firmy Sp. z o.o."
+              required
+            />
+
+            <Input
+              label="NIP"
+              name="nip"
+              value={formData.nip}
+              onChange={handleInputChange}
+              error={errors.nip}
+              placeholder="123-456-78-90"
+              helperText="Wymagany do faktury VAT"
+              required
+            />
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Input
+                label="E-mail"
+                name="email"
+                type="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                error={errors.email}
+                placeholder="jan@firma.pl"
+                required
+              />
+              <Input
+                label="Telefon"
+                name="phone"
+                type="tel"
+                value={formData.phone}
+                onChange={handleInputChange}
+                error={errors.phone}
+                placeholder="+48 123 456 789"
+                required
+              />
+            </div>
+
+            <div className="border-t border-gray-200 pt-5">
+              <h3 className="text-base font-semibold text-gray-900 mb-4">Adres firmy</h3>
+              <div className="space-y-4">
+                <Input
+                  label="Ulica i numer"
+                  name="street"
+                  value={formData.street}
+                  onChange={handleInputChange}
+                  error={errors.street}
+                  placeholder="ul. Przykladowa 10/2"
+                  required
+                />
+                <div className="grid grid-cols-5 gap-4">
+                  <div className="col-span-2">
+                    <Input
+                      label="Kod pocztowy"
+                      name="postalCode"
+                      value={formData.postalCode}
+                      onChange={handleInputChange}
+                      error={errors.postalCode}
+                      placeholder="00-000"
+                      required
+                    />
+                  </div>
+                  <div className="col-span-3">
+                    <Input
+                      label="Miasto"
+                      name="city"
+                      value={formData.city}
+                      onChange={handleInputChange}
+                      error={errors.city}
+                      placeholder="Warszawa"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="border-t border-gray-200 pt-5">
+              <Checkbox
+                label={
+                  <span className="text-sm font-medium text-gray-700">
+                    Inny adres dostawy
+                  </span>
+                }
+                checked={formData.differentShipping}
+                onChange={(e) =>
+                  setFormData((prev) => ({
+                    ...prev,
+                    differentShipping: e.target.checked,
+                  }))
+                }
+              />
+
+              {formData.differentShipping && (
+                <div className="mt-4 space-y-4 pl-8 border-l-2 border-primary-200">
+                  <Input
+                    label="Ulica i numer"
+                    name="shippingStreet"
+                    value={formData.shippingStreet}
+                    onChange={handleInputChange}
+                    error={errors.shippingStreet}
+                    placeholder="ul. Dostawcza 5"
+                    required
+                  />
+                  <div className="grid grid-cols-5 gap-4">
+                    <div className="col-span-2">
+                      <Input
+                        label="Kod pocztowy"
+                        name="shippingPostalCode"
+                        value={formData.shippingPostalCode}
+                        onChange={handleInputChange}
+                        error={errors.shippingPostalCode}
+                        placeholder="00-000"
+                        required
+                      />
+                    </div>
+                    <div className="col-span-3">
+                      <Input
+                        label="Miasto"
+                        name="shippingCity"
+                        value={formData.shippingCity}
+                        onChange={handleInputChange}
+                        error={errors.shippingCity}
+                        placeholder="Warszawa"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <Textarea
+              label="Uwagi do zamowienia"
+              name="notes"
+              value={formData.notes}
+              onChange={handleInputChange}
+              placeholder="Dodatkowe informacje, np. preferowany termin dostawy..."
+              rows={3}
+            />
+
+            <div className="border-t border-gray-200 pt-5">
+              <h3 className="text-base font-semibold text-gray-900 mb-4">
+                Sposob platnosci
+              </h3>
+
+              <div className="space-y-3">
+                <label
+                  className={`flex items-start gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all ${
+                    formData.paymentMethod === 'online'
+                      ? 'border-primary-500 bg-primary-50/50'
+                      : 'border-gray-200 hover:border-gray-300 bg-white'
+                  }`}
+                >
+                  <input
+                    type="radio"
+                    name="paymentMethod"
+                    value="online"
+                    checked={formData.paymentMethod === 'online'}
+                    onChange={() =>
+                      setFormData((prev) => ({ ...prev, paymentMethod: 'online' }))
+                    }
+                    className="mt-1 h-4 w-4 text-primary-600 border-gray-300 focus:ring-primary-500"
+                  />
+                  <div className="flex-1">
+                    <span className="text-sm font-semibold text-gray-900">
+                      Platnosc online
+                    </span>
+                    <span className="text-xs text-gray-500 mt-0.5 block">
+                      BLIK, karta platnicza, Przelewy24 — zaplac teraz przez Stripe
+                    </span>
+                  </div>
+                </label>
+
+                <label
+                  className={`flex items-start gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all ${
+                    formData.paymentMethod === 'proforma'
+                      ? 'border-primary-500 bg-primary-50/50'
+                      : 'border-gray-200 hover:border-gray-300 bg-white'
+                  }`}
+                >
+                  <input
+                    type="radio"
+                    name="paymentMethod"
+                    value="proforma"
+                    checked={formData.paymentMethod === 'proforma'}
+                    onChange={() =>
+                      setFormData((prev) => ({ ...prev, paymentMethod: 'proforma' }))
+                    }
+                    className="mt-1 h-4 w-4 text-primary-600 border-gray-300 focus:ring-primary-500"
+                  />
+                  <div className="flex-1">
+                    <span className="text-sm font-semibold text-gray-900">
+                      Przelew tradycyjny
+                    </span>
+                    <span className="text-xs text-gray-500 mt-0.5 block">
+                      Otrzymasz fakture pro forma na e-mail. Wysylka po zaksiegowaniu platnosci.
+                    </span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <Checkbox
+              label={
+                <span className="text-sm text-gray-600">
+                  Wyrazam zgode na przetwarzanie moich danych osobowych w celu
+                  realizacji zamowienia.{' '}
+                  <Link
+                    href="/polityka-prywatnosci"
+                    className="text-primary-600 hover:underline"
+                  >
+                    Polityka prywatnosci
+                  </Link>
+                </span>
+              }
+              checked={formData.consent}
+              onChange={(e) => {
+                setFormData((prev) => ({ ...prev, consent: e.target.checked }))
+                if (errors.consent) {
+                  setErrors((prev) => ({ ...prev, consent: undefined }))
+                }
+              }}
+              error={errors.consent}
+            />
+
+            {/* Podsumowanie cenowe */}
+            <div className="border-t border-gray-200 pt-5">
               <PriceSummary
                 subtotalNetto={subtotalNetto}
                 shippingNetto={shippingNetto}
@@ -604,278 +922,15 @@ export default function CheckoutPage() {
               />
             </div>
 
-            {/* Formularz */}
-            <form onSubmit={handleSubmit} className="bg-gray-50 rounded-2xl p-6 space-y-5">
-              <h2 className="text-lg font-semibold text-gray-900">Dane firmy</h2>
-
-              {/* Imie / Nazwisko */}
-              <div className="grid grid-cols-2 gap-4">
-                <Input
-                  label="Imie"
-                  name="firstName"
-                  value={formData.firstName}
-                  onChange={handleInputChange}
-                  error={errors.firstName}
-                  placeholder="Jan"
-                  required
-                />
-                <Input
-                  label="Nazwisko"
-                  name="lastName"
-                  value={formData.lastName}
-                  onChange={handleInputChange}
-                  error={errors.lastName}
-                  placeholder="Kowalski"
-                  required
-                />
-              </div>
-
-              {/* Firma */}
-              <Input
-                label="Firma"
-                name="company"
-                value={formData.company}
-                onChange={handleInputChange}
-                error={errors.company}
-                placeholder="Nazwa firmy Sp. z o.o."
-                required
-              />
-
-              {/* NIP */}
-              <Input
-                label="NIP"
-                name="nip"
-                value={formData.nip}
-                onChange={handleInputChange}
-                error={errors.nip}
-                placeholder="123-456-78-90"
-                helperText="Wymagany do faktury VAT"
-                required
-              />
-
-              {/* Email / Telefon */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Input
-                  label="E-mail"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  error={errors.email}
-                  placeholder="jan@firma.pl"
-                  required
-                />
-                <Input
-                  label="Telefon"
-                  name="phone"
-                  type="tel"
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                  error={errors.phone}
-                  placeholder="+48 123 456 789"
-                  required
-                />
-              </div>
-
-              {/* Separator */}
-              <div className="border-t border-gray-200 pt-5">
-                <h3 className="text-base font-semibold text-gray-900 mb-4">Adres firmy</h3>
-
-                <div className="space-y-4">
-                  <Input
-                    label="Ulica i numer"
-                    name="street"
-                    value={formData.street}
-                    onChange={handleInputChange}
-                    error={errors.street}
-                    placeholder="ul. Przykladowa 10/2"
-                    required
-                  />
-
-                  <div className="grid grid-cols-5 gap-4">
-                    <div className="col-span-2">
-                      <Input
-                        label="Kod pocztowy"
-                        name="postalCode"
-                        value={formData.postalCode}
-                        onChange={handleInputChange}
-                        error={errors.postalCode}
-                        placeholder="00-000"
-                        required
-                      />
-                    </div>
-                    <div className="col-span-3">
-                      <Input
-                        label="Miasto"
-                        name="city"
-                        value={formData.city}
-                        onChange={handleInputChange}
-                        error={errors.city}
-                        placeholder="Warszawa"
-                        required
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Inny adres dostawy */}
-              <div className="border-t border-gray-200 pt-5">
-                <Checkbox
-                  label={
-                    <span className="text-sm font-medium text-gray-700">
-                      Inny adres dostawy
-                    </span>
-                  }
-                  checked={formData.differentShipping}
-                  onChange={(e) =>
-                    setFormData((prev) => ({
-                      ...prev,
-                      differentShipping: e.target.checked,
-                    }))
-                  }
-                />
-
-                {formData.differentShipping && (
-                  <div className="mt-4 space-y-4 pl-8 border-l-2 border-primary-200">
-                    <Input
-                      label="Ulica i numer"
-                      name="shippingStreet"
-                      value={formData.shippingStreet}
-                      onChange={handleInputChange}
-                      error={errors.shippingStreet}
-                      placeholder="ul. Dostawcza 5"
-                      required
-                    />
-
-                    <div className="grid grid-cols-5 gap-4">
-                      <div className="col-span-2">
-                        <Input
-                          label="Kod pocztowy"
-                          name="shippingPostalCode"
-                          value={formData.shippingPostalCode}
-                          onChange={handleInputChange}
-                          error={errors.shippingPostalCode}
-                          placeholder="00-000"
-                          required
-                        />
-                      </div>
-                      <div className="col-span-3">
-                        <Input
-                          label="Miasto"
-                          name="shippingCity"
-                          value={formData.shippingCity}
-                          onChange={handleInputChange}
-                          error={errors.shippingCity}
-                          placeholder="Warszawa"
-                          required
-                        />
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              {/* Uwagi */}
-              <Textarea
-                label="Uwagi do zamowienia"
-                name="notes"
-                value={formData.notes}
-                onChange={handleInputChange}
-                placeholder="Dodatkowe informacje, np. preferowany termin dostawy..."
-                rows={3}
-              />
-
-              {/* Metoda platnosci */}
-              <div className="border-t border-gray-200 pt-5">
-                <h3 className="text-base font-semibold text-gray-900 mb-4">
-                  Sposob platnosci
-                </h3>
-
-                <div className="space-y-3">
-                  {/* Platnosc online */}
-                  <label
-                    className={`flex items-start gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all ${
-                      formData.paymentMethod === 'online'
-                        ? 'border-primary-500 bg-primary-50/50'
-                        : 'border-gray-200 hover:border-gray-300 bg-white'
-                    }`}
-                  >
-                    <input
-                      type="radio"
-                      name="paymentMethod"
-                      value="online"
-                      checked={formData.paymentMethod === 'online'}
-                      onChange={() =>
-                        setFormData((prev) => ({ ...prev, paymentMethod: 'online' }))
-                      }
-                      className="mt-1 h-4 w-4 text-primary-600 border-gray-300 focus:ring-primary-500"
-                    />
-                    <div className="flex-1">
-                      <span className="text-sm font-semibold text-gray-900 flex items-center gap-2">
-                        Platnosc online
-                      </span>
-                      <span className="text-xs text-gray-500 mt-0.5 block">
-                        BLIK, karta platnicza, Przelewy24 — zaplac teraz przez Stripe
-                      </span>
-                    </div>
-                  </label>
-
-                  {/* Przelew tradycyjny */}
-                  <label
-                    className={`flex items-start gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all ${
-                      formData.paymentMethod === 'proforma'
-                        ? 'border-primary-500 bg-primary-50/50'
-                        : 'border-gray-200 hover:border-gray-300 bg-white'
-                    }`}
-                  >
-                    <input
-                      type="radio"
-                      name="paymentMethod"
-                      value="proforma"
-                      checked={formData.paymentMethod === 'proforma'}
-                      onChange={() =>
-                        setFormData((prev) => ({ ...prev, paymentMethod: 'proforma' }))
-                      }
-                      className="mt-1 h-4 w-4 text-primary-600 border-gray-300 focus:ring-primary-500"
-                    />
-                    <div className="flex-1">
-                      <span className="text-sm font-semibold text-gray-900 flex items-center gap-2">
-                        Przelew tradycyjny
-                      </span>
-                      <span className="text-xs text-gray-500 mt-0.5 block">
-                        Otrzymasz fakture pro forma na e-mail. Wysylka po zaksiegowaniu platnosci.
-                      </span>
-                    </div>
-                  </label>
-                </div>
-              </div>
-
-              {/* Zgoda */}
-              <Checkbox
-                label={
-                  <span className="text-sm text-gray-600">
-                    Wyrazam zgode na przetwarzanie moich danych osobowych w celu
-                    realizacji zamowienia.{' '}
-                    <Link
-                      href="/polityka-prywatnosci"
-                      className="text-primary-600 hover:underline"
-                    >
-                      Polityka prywatnosci
-                    </Link>
-                  </span>
-                }
-                checked={formData.consent}
-                onChange={(e) => {
-                  setFormData((prev) => ({ ...prev, consent: e.target.checked }))
-                  if (errors.consent) {
-                    setErrors((prev) => ({ ...prev, consent: undefined }))
-                  }
-                }}
-                error={errors.consent}
-              />
-
-              {/* Submit button */}
+            {/* Przyciski */}
+            <div className="flex gap-3">
+              <Button
+                type="button"
+                variant="secondary"
+                onClick={() => { setStep(1); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
+              >
+                Wstecz
+              </Button>
               <Button
                 type="submit"
                 variant={formData.paymentMethod === 'online' ? 'primary' : 'secondary'}
@@ -888,16 +943,16 @@ export default function CheckoutPage() {
                   ? 'Przejdz do platnosci'
                   : 'Zamow z faktura pro forma'}
               </Button>
+            </div>
 
-              <p className="text-xs text-gray-500 text-center">
-                {formData.paymentMethod === 'online'
-                  ? 'Zostaniesz przekierowany do bezpiecznej platnosci Stripe'
-                  : 'Faktura pro forma zostanie wyslana na podany adres e-mail'}
-              </p>
-            </form>
-          </div>
+            <p className="text-xs text-gray-500 text-center">
+              {formData.paymentMethod === 'online'
+                ? 'Zostaniesz przekierowany do bezpiecznej platnosci Stripe'
+                : 'Faktura pro forma zostanie wyslana na podany adres e-mail'}
+            </p>
+          </form>
         </div>
-      </div>
+      )}
     </div>
   )
 }
