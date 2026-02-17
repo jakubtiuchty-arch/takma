@@ -279,6 +279,9 @@ export default function RFQDrawer() {
                 Przejdź do zamówienia
               </Button>
             </Link>
+            <Button variant="secondary" fullWidth onClick={closeDrawer}>
+              Kontynuuj zakupy
+            </Button>
             <button
               onClick={clearAll}
               className="w-full text-sm text-gray-500 hover:text-red-500 transition-colors py-2"
