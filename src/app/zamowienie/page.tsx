@@ -633,7 +633,7 @@ export default function CheckoutPage() {
         <div className="flex flex-col lg:grid lg:grid-cols-5 gap-4 sm:gap-6">
           {/* ────── PRAWA KOLUMNA: Sticky podsumowanie + submit (desktop) ────── */}
           <div className="lg:col-span-2 order-first lg:order-last">
-            <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 shadow-sm space-y-4 lg:sticky lg:top-28">
+            <div className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-5 space-y-4 lg:sticky lg:top-28">
               <h2 className="font-semibold text-gray-900">Twoje zamowienie</h2>
 
               {/* Lista produktow (scrollowalna) */}
@@ -719,7 +719,7 @@ export default function CheckoutPage() {
           {/* ────── LEWA KOLUMNA: Formularz ────── */}
           <form id="checkout-form" onSubmit={handleSubmit} className="lg:col-span-3 space-y-4 sm:space-y-6 order-last lg:order-first">
             {/* Dane firmy */}
-            <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 shadow-sm space-y-4">
+            <div className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-5 space-y-4">
               <h2 className="text-base sm:text-lg font-semibold text-gray-900">Dane firmy</h2>
 
               <div className="grid grid-cols-2 gap-4">
@@ -738,7 +738,7 @@ export default function CheckoutPage() {
             </div>
 
             {/* Adres */}
-            <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 shadow-sm space-y-4">
+            <div className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-5 space-y-4">
               <h2 className="text-base sm:text-lg font-semibold text-gray-900">Adres dostawy</h2>
 
               <Input label="Ulica i numer" name="street" value={formData.street} onChange={handleInputChange} error={errors.street} placeholder="ul. Przykladowa 10/2" required />
@@ -776,7 +776,7 @@ export default function CheckoutPage() {
             </div>
 
             {/* Platnosc */}
-            <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 shadow-sm space-y-4">
+            <div className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-5 space-y-4">
               <h2 className="text-base sm:text-lg font-semibold text-gray-900">Metoda platnosci</h2>
 
               <label className={`flex items-start gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all ${formData.paymentMethod === 'online' ? 'border-primary-500 bg-primary-50/50' : 'border-gray-200 hover:border-gray-300'}`}>
@@ -797,7 +797,7 @@ export default function CheckoutPage() {
             </div>
 
             {/* Mobile: zgoda + submit na dole formularza */}
-            <div className="lg:hidden bg-white rounded-xl p-4 shadow-sm space-y-4">
+            <div className="lg:hidden bg-white rounded-2xl border border-gray-200 p-4 space-y-4">
               <Checkbox
                 label={<span className="text-sm text-gray-600">Wyrazam zgode na przetwarzanie danych osobowych w celu realizacji zamowienia. <Link href="/polityka-prywatnosci" className="text-primary-600 hover:underline">Polityka prywatnosci</Link></span>}
                 checked={formData.consent}
