@@ -633,7 +633,7 @@ export default function CheckoutPage() {
         <div className="flex flex-col lg:grid lg:grid-cols-5 gap-4 sm:gap-6">
           {/* ────── PRAWA KOLUMNA: Sticky podsumowanie + submit (desktop) ────── */}
           <div className="lg:col-span-2 order-first lg:order-last">
-            <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 shadow-sm space-y-4">
+            <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 shadow-sm space-y-4 lg:sticky lg:top-28">
               <h2 className="font-semibold text-gray-900">Twoje zamowienie</h2>
 
               {/* Lista produktow (scrollowalna) */}
