@@ -9,7 +9,7 @@ import {
   UserGroupIcon,
 } from '@/components/ui/Icons'
 import { ProductCard } from '@/components/product'
-import { categories, getBestsellers } from '@/data/products'
+import { categories, products } from '@/data/products'
 import HeroCarousel from '@/components/home/HeroCarousel'
 
 const categoryIcons: Record<string, string> = {
@@ -22,7 +22,8 @@ const categoryIcons: Record<string, string> = {
 }
 
 export default function HomePage() {
-  const bestsellers = getBestsellers(4)
+  const bestsellerSlugs = ['zebra-zd421t', 'zebra-zd220d', 'zebra-tc22', 'zebra-mc3400']
+  const bestsellers = bestsellerSlugs.map(s => products.find(p => p.slug === s)!)
 
   return (
     <>
