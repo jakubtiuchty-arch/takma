@@ -140,10 +140,10 @@ export default function ContactPage() {
           </nav>
 
           <div className="max-w-3xl">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-4">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
               Porozmawiajmy o Twoim projekcie
             </h1>
-            <p className="text-xl text-primary-100">
+            <p className="text-lg sm:text-xl text-primary-100">
               Potrzebujesz pomocy w doborze terminali, drukarek etykiet lub skanerów?
               Nasi specjaliści z 25-letnim doświadczeniem pomogą dobrać optymalne rozwiązanie.
             </p>
@@ -164,7 +164,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-sm text-gray-500 mb-0.5">Zadzwoń do nas</p>
-                <p className="text-lg font-bold text-gray-900">+48 607 819 688</p>
+                <p className="text-base sm:text-lg font-bold text-gray-900">+48 607 819 688</p>
                 <p className="text-xs text-gray-400 mt-0.5">Pon-Pt: 7:30 - 15:30</p>
               </div>
             </a>
@@ -178,7 +178,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-sm text-gray-500 mb-0.5">Napisz do nas</p>
-                <p className="text-lg font-bold text-gray-900">takma@takma.com.pl</p>
+                <p className="text-base sm:text-lg font-bold text-gray-900">takma@takma.com.pl</p>
                 <p className="text-xs text-gray-400 mt-0.5">Odpowiadamy w ciągu 24h</p>
               </div>
             </a>
@@ -189,7 +189,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-sm text-gray-500 mb-0.5">Odwiedź nas</p>
-                <p className="text-lg font-bold text-gray-900">ul. Poświęcka 1a</p>
+                <p className="text-base sm:text-lg font-bold text-gray-900">ul. Poświęcka 1a</p>
                 <p className="text-xs text-gray-400 mt-0.5">51-128 Wrocław</p>
               </div>
             </div>
@@ -199,7 +199,7 @@ export default function ContactPage() {
 
       {/* Form + Map */}
       <section className="container-main pb-16 lg:pb-24">
-        <div className="grid lg:grid-cols-5 gap-10 lg:gap-14">
+        <div className="grid lg:grid-cols-5 gap-8 lg:gap-14">
           {/* Contact form */}
           <div className="lg:col-span-3">
             <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 lg:p-8">
