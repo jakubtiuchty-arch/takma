@@ -885,7 +885,7 @@ function CartItemRow({
 
   return (
     <li className="p-4 sm:p-6">
-      <div className="flex gap-4">
+      <div className="flex items-center gap-4">
         {/* Obrazek */}
         {item.productImage && (
           <div className="relative w-24 h-24 sm:w-32 sm:h-32 rounded-lg flex-shrink-0 overflow-hidden">
