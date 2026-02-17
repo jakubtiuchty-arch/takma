@@ -72,15 +72,6 @@ export default function Footer() {
                 <span>kontakt@takma.com.pl</span>
               </a>
             </div>
-            <section className="mt-6" aria-label="Certyfikaty i partnerstwa producenckie">
-              <h3 className="sr-only">Autoryzowani partnerzy i certyfikaty</h3>
-              <p className="text-[10px] text-gray-500 uppercase tracking-wider font-medium mb-2">Autoryzowany partner:</p>
-              <div className="flex items-center gap-4 flex-wrap">
-                <img src="/images/zebra-premier-solution-partner.png" alt="Zebra Premier Solution Partner" className="h-5 w-auto opacity-80" />
-                <img src="/images/zebra-premier-business-partner.png" alt="Zebra Premier Business Partner" className="h-5 w-auto opacity-80" />
-                <img src="/images/zebra-printer-repair-specialist.png" alt="Zebra Printer Repair Specialist" className="h-5 w-auto opacity-80" />
-              </div>
-            </section>
           </div>
 
           {/* Produkty */}
