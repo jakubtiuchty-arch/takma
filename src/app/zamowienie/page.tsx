@@ -700,7 +700,7 @@ export default function CheckoutPage() {
                   disabled={items.length === 0}
                   onClick={() => { const form = document.getElementById('checkout-form') as HTMLFormElement; form?.requestSubmit() }}
                 >
-                  {formData.paymentMethod === 'online' ? 'Przejdź do płatnośći' : 'Złóż zamówienie'}
+                  {formData.paymentMethod === 'online' ? 'Przejdź do płatności' : 'Złóż zamówienie'}
                 </Button>
                 <button
                   type="button"
