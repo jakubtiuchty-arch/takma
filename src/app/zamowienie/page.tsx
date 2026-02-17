@@ -920,11 +920,11 @@ function CartItemRow({
     <li className="p-4 sm:p-6">
       <div className="flex items-center gap-4">
         {/* Obrazek */}
-        {item.productImage && (
+        {(item.productImage || item.productId.includes('__onecare__')) && (
           <div className="relative w-24 h-24 sm:w-32 sm:h-32 rounded-lg flex-shrink-0 overflow-hidden">
             <Image
-              src={item.productImage}
-              alt={item.productName}
+              src={item.productId.includes('__onecare__') ? '/images/zebra-onecare-logo.png' : item.productImage!}
+              alt={item.productId.includes('__onecare__') ? 'Zebra OneCare' : item.productName}
               fill
               className="object-contain p-2"
               sizes="96px"
