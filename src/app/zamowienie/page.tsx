@@ -783,7 +783,7 @@ export default function CheckoutPage() {
                 <input type="radio" name="paymentMethod" value="online" checked={formData.paymentMethod === 'online'} onChange={() => setFormData((prev) => ({ ...prev, paymentMethod: 'online' }))} className="mt-1 h-4 w-4 text-primary-600 border-gray-300 focus:ring-primary-500" />
                 <div className="flex-1">
                   <span className="text-sm font-semibold text-gray-900">Platnosc online</span>
-                  <span className="text-xs text-gray-500 mt-0.5 block">BLIK, karta platnicza, Przelewy24 — zaplac teraz przez Stripe</span>
+                  <span className="text-xs text-gray-500 mt-0.5 block">BLIK, karta platnicza, Przelewy24</span>
                 </div>
               </label>
 
