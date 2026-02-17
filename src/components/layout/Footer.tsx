@@ -4,20 +4,8 @@ import { PhoneIcon, MailIcon } from '@/components/ui/Icons'
 const footerLinks = {
   produkty: [
     { name: 'Drukarki etykiet', href: '/drukarki-etykiet' },
-    { name: 'Drukarki biurkowe', href: '/biurkowe-drukarki-etykiet' },
-    { name: 'Drukarki przemysłowe', href: '/przemyslowe-drukarki-etykiet' },
-    { name: 'Drukarki termotransferowe', href: '/termotransferowe-drukarki-etykiet' },
-    { name: 'Drukarki termiczne', href: '/termiczne-drukarki-etykiet' },
-    { name: 'Skanery kodów', href: '/katalog?kategoria=skanery-kodow' },
     { name: 'Terminale mobilne', href: '/terminale-mobilne' },
-    { name: 'Akcesoria do terminali', href: '/akcesoria-do-terminali' },
-    { name: '— Baterie i akumulatory', href: '/baterie-do-terminali' },
-    { name: '— Stacje dokujące i ładowarki', href: '/stacje-ladowarki-terminali' },
-    { name: '— Etui, kabury i uchwyty', href: '/etui-kabury-uchwyty' },
-    { name: '— Kable i zasilacze', href: '/kable-zasilacze-terminali' },
-    { name: 'RFID', href: '/katalog?kategoria=rfid' },
-    { name: 'Etykiety i taśmy', href: '/katalog?kategoria=etykiety-tasmy' },
-    { name: 'Akcesoria', href: '/katalog?kategoria=akcesoria' },
+    { name: 'Materiały eksploatacyjne', href: '/materialy-eksploatacyjne' },
   ],
   firma: [
     { name: 'O nas', href: '/o-nas' },
