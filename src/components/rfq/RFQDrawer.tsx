@@ -4,11 +4,10 @@ import { useEffect, useState, useMemo } from 'react'
 import Link from 'next/link'
 import clsx from 'clsx'
 import Image from 'next/image'
-import { CloseIcon, TrashIcon, PlusIcon, MinusIcon, ArrowRightIcon } from '@/components/ui/Icons'
+import { CloseIcon, TrashIcon, MinusIcon, PlusIcon, ArrowRightIcon } from '@/components/ui/Icons'
 import { Button } from '@/components/ui'
 import { useCartStore } from '@/store/cartStore'
 import { products } from '@/data/products'
-import type { Product } from '@/data/products'
 
 function formatPrice(price: number): string {
   return price.toLocaleString('pl-PL', {
@@ -39,75 +38,6 @@ function findProductPrice(productId: string): number | undefined {
   // Zwykły produkt
   const product = products.find((p) => p.id === productId)
   return product?.priceFrom
-}
-
-/**
- * Inteligentny cross-sell:
- * - Drukarki → etykiety i taśmy (compatibleAccessories), NIE głowice/wałki (spare parts)
- * - Terminale → baterie, ładowarki, etui (relatedAccessories), NIE głowice
- * - Filtruje: głowice, wałki dociskowe, kontrakty OneCare
- * - Max 4 wyniki
- */
-const EXCLUDED_CROSS_SELL_KEYWORDS = [
-  'głowica', 'glowica', 'printhead', 'wałek', 'walek', 'platen',
-  'onecare', 'OneCare', 'one-care', 'kontrakt', 'serwisow',
-]
-
-function isSparePart(product: Product): boolean {
-  const nameLower = product.name.toLowerCase()
-  return EXCLUDED_CROSS_SELL_KEYWORDS.some(kw => nameLower.includes(kw.toLowerCase()))
-}
-
-function getCrossSellSuggestions(
-  cartItemIds: string[],
-  maxResults: number = 4
-): Product[] {
-  const cartProductIds = new Set(cartItemIds)
-  const cartSlugs = new Set<string>()
-  for (const id of cartItemIds) {
-    if (id.includes('__')) cartSlugs.add(id.split('__')[0])
-  }
-
-  const seenIds = new Set<string>()
-  const suggestions: Product[] = []
-
-  for (const itemId of cartItemIds) {
-    if (suggestions.length >= maxResults) break
-
-    let product: Product | undefined
-    if (itemId.includes('__') && !itemId.includes('__onecare__')) {
-      const slug = itemId.split('__')[0]
-      product = products.find((p) => p.slug === slug)
-    } else {
-      product = products.find((p) => p.id === itemId)
-    }
-    if (!product) continue
-
-    const isDrukarka = product.categoryId === 'drukarki-etykiet'
-      || product.subcategoryIds?.some(s => s.includes('drukar'))
-
-    // Drukarki → materiały eksploatacyjne (etykiety, taśmy)
-    // Terminale → akcesoria (baterie, ładowarki, etui)
-    const accessoryIds = isDrukarka
-      ? (product.compatibleAccessories ?? [])
-      : (product.relatedAccessories ?? [])
-
-    for (const accessoryId of accessoryIds) {
-      if (suggestions.length >= maxResults) break
-      if (cartProductIds.has(accessoryId)) continue
-      if (seenIds.has(accessoryId)) continue
-
-      const accessory = products.find((p) => p.id === accessoryId)
-      if (!accessory) continue
-      if (cartSlugs.has(accessory.slug)) continue
-      if (isSparePart(accessory)) continue
-
-      seenIds.add(accessoryId)
-      suggestions.push(accessory)
-    }
-  }
-
-  return suggestions
 }
 
 export default function RFQDrawer() {
@@ -165,12 +95,6 @@ export default function RFQDrawer() {
     }
     return hasAnyPrice ? total : null
   }, [items, itemPrices])
-
-  // Cross-sell sugestie
-  const crossSellProducts = useMemo(() => {
-    if (items.length === 0) return []
-    return getCrossSellSuggestions(items.map((i) => i.productId))
-  }, [items])
 
   if (!mounted) return null
 
@@ -333,82 +257,6 @@ export default function RFQDrawer() {
                 })}
               </ul>
 
-              {/* Cross-sell: Uzupełnij zamówienie */}
-              {crossSellProducts.length > 0 && (
-                <div className="border-t border-gray-200 px-6 py-4">
-                  <h3 className="text-sm font-semibold text-gray-700 mb-3">
-                    Uzupełnij zamówienie
-                  </h3>
-                  <div className="space-y-2.5">
-                    {crossSellProducts.map((product) => {
-                      const hasImage =
-                        product.images.length > 0 &&
-                        !product.images[0].includes('placeholder')
-                      return (
-                        <div
-                          key={product.id}
-                          className="flex items-center gap-3 p-2 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
-                        >
-                          {/* Miniatura */}
-                          <div className="relative w-12 h-12 rounded-md overflow-hidden flex-shrink-0 bg-white border border-gray-100">
-                            {hasImage ? (
-                              <Image
-                                src={product.images[0]}
-                                alt={product.name}
-                                fill
-                                className="object-contain p-1"
-                                sizes="48px"
-                              />
-                            ) : (
-                              <div className="w-full h-full flex items-center justify-center">
-                                <span className="text-gray-300 text-[10px]">IMG</span>
-                              </div>
-                            )}
-                          </div>
-
-                          {/* Nazwa i cena */}
-                          <div className="flex-1 min-w-0">
-                            <Link
-                              href={`/produkt/${product.slug}`}
-                              className="text-sm font-medium text-gray-900 hover:text-primary-600 transition-colors line-clamp-1"
-                              onClick={closeDrawer}
-                            >
-                              {product.name}
-                            </Link>
-                            {product.priceFrom ? (
-                              <p className="text-xs text-gray-500">
-                                od {formatPrice(product.priceFrom)} zł netto
-                              </p>
-                            ) : (
-                              <p className="text-xs text-gray-400">Cena na zapytanie</p>
-                            )}
-                          </div>
-
-                          {/* Przycisk Dodaj */}
-                          <button
-                            onClick={() =>
-                              addItem({
-                                id: product.id,
-                                name: product.name,
-                                slug: product.slug,
-                                image: product.images[0],
-                                partNumber:
-                                  product.variants?.[0]?.partNumber ||
-                                  product.specifications.find((s) => s.name === 'Part Number')?.value,
-                              })
-                            }
-                            className="flex items-center gap-1 px-2.5 py-1.5 text-xs font-medium text-primary-600 border border-primary-200 bg-white rounded-lg hover:bg-primary-50 hover:border-primary-300 transition-colors flex-shrink-0"
-                            aria-label={`Dodaj ${product.name} do koszyka`}
-                          >
-                            <PlusIcon size={14} />
-                            Dodaj
-                          </button>
-                        </div>
-                      )
-                    })}
-                  </div>
-                </div>
-              )}
             </>
           )}
         </div>
