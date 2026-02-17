@@ -718,31 +718,28 @@ export default function CheckoutPage() {
               />
             </div>
 
-            {/* Submit — widoczny na mobile pod formularzem */}
-            <div className="lg:hidden space-y-4">
-              <PriceSummary subtotalNetto={subtotalNetto} shippingNetto={shippingNetto} isFreeShipping={isFreeShipping} vatAmount={vatAmount} totalBrutto={totalBrutto} />
+            {/* Submit — zawsze pod formularzem */}
+            <div className="space-y-4">
+              {/* Podsumowanie cenowe — tylko mobile */}
+              <div className="lg:hidden">
+                <PriceSummary subtotalNetto={subtotalNetto} shippingNetto={shippingNetto} isFreeShipping={isFreeShipping} vatAmount={vatAmount} totalBrutto={totalBrutto} />
+              </div>
               <div className="flex gap-3">
                 <Button type="button" variant="secondary" onClick={() => { setStep(1); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Wstecz</Button>
                 <Button type="submit" fullWidth size="lg" isLoading={isSubmitting} disabled={items.length === 0}>
                   {formData.paymentMethod === 'online' ? 'Przejdz do platnosci' : 'Zamow z faktura pro forma'}
                 </Button>
               </div>
-            </div>
-          </form>
-
-          {/* ────── PRAWA KOLUMNA: Podsumowanie (sticky) ────── */}
-          <div className="hidden lg:block lg:col-span-2">
-            <div className="lg:sticky lg:top-28 space-y-4">
-              <PriceSummary subtotalNetto={subtotalNetto} shippingNetto={shippingNetto} isFreeShipping={isFreeShipping} vatAmount={vatAmount} totalBrutto={totalBrutto} />
-              <div className="flex gap-3">
-                <Button type="button" variant="secondary" onClick={() => { setStep(1); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Wstecz</Button>
-                <Button fullWidth size="lg" isLoading={isSubmitting} disabled={items.length === 0} onClick={() => { const form = document.querySelector('form'); form?.requestSubmit() }}>
-                  {formData.paymentMethod === 'online' ? 'Przejdz do platnosci' : 'Zamow z faktura pro forma'}
-                </Button>
-              </div>
               <p className="text-xs text-gray-500 text-center">
                 {formData.paymentMethod === 'online' ? 'Zostaniesz przekierowany do bezpiecznej platnosci Stripe' : 'Faktura pro forma zostanie wyslana na podany adres e-mail'}
               </p>
+            </div>
+          </form>
+
+          {/* ────── PRAWA KOLUMNA: Podsumowanie (sticky, tylko desktop) ────── */}
+          <div className="hidden lg:block lg:col-span-2">
+            <div className="lg:sticky lg:top-28">
+              <PriceSummary subtotalNetto={subtotalNetto} shippingNetto={shippingNetto} isFreeShipping={isFreeShipping} vatAmount={vatAmount} totalBrutto={totalBrutto} />
             </div>
           </div>
         </div>
