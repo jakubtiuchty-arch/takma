@@ -173,28 +173,48 @@ export const useCartStore = create<CartStore>()(
       // --- Cross-sell ---
 
       getCrossSellProducts: (productId: string): Product[] => {
-        const product = products.find((p) => p.id === productId)
+        // Resolve slug for variant IDs (slug__partNumber)
+        let resolvedId = productId
+        if (productId.includes('__') && !productId.includes('__onecare__')) {
+          resolvedId = productId.split('__')[0]
+        }
+
+        const product = products.find((p) =>
+          p.id === resolvedId || p.slug === resolvedId
+        )
         if (!product) return []
 
         const cartProductIds = new Set(
           get().items.map((item) => item.productId)
         )
 
-        // Priorytet: relatedAccessories (baterie, ladowarki) przed compatibleAccessories (etykiety)
-        const relatedIds = product.relatedAccessories ?? []
-        const compatibleIds = product.compatibleAccessories ?? []
-        const combinedIds = [...relatedIds, ...compatibleIds]
+        // Smart cross-sell: drukarki → etykiety, terminale → akcesoria
+        const isDrukarka = product.categoryId === 'drukarki-etykiet'
+          || product.subcategoryIds?.some(s => s.includes('drukar'))
+
+        const accessoryIds = isDrukarka
+          ? (product.compatibleAccessories ?? [])
+          : (product.relatedAccessories ?? [])
+
+        // Filtruj spare parts (głowice, wałki, OneCare)
+        const excludeKeywords = [
+          'głowica', 'glowica', 'printhead', 'wałek', 'walek', 'platen',
+          'onecare', 'one-care', 'kontrakt', 'serwisow',
+        ]
 
         const suggestions: Product[] = []
 
-        for (const accessoryId of combinedIds) {
+        for (const accessoryId of accessoryIds) {
           if (suggestions.length >= 4) break
           if (cartProductIds.has(accessoryId)) continue
 
           const accessory = products.find((p) => p.id === accessoryId)
-          if (accessory) {
-            suggestions.push(accessory)
-          }
+          if (!accessory) continue
+
+          const nameLower = accessory.name.toLowerCase()
+          if (excludeKeywords.some(kw => nameLower.includes(kw))) continue
+
+          suggestions.push(accessory)
         }
 
         return suggestions

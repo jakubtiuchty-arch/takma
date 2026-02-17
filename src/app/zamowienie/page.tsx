@@ -512,7 +512,7 @@ export default function CheckoutPage() {
                     {product.images?.[0] && (
                       <div className="relative w-16 h-16 rounded-lg flex-shrink-0 overflow-hidden bg-gray-50">
                         <Image
-                          src={`/images/products/${product.images[0]}`}
+                          src={product.images[0]}
                           alt={product.name}
                           fill
                           className="object-contain p-1"
