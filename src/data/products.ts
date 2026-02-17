@@ -10433,10 +10433,10 @@ Wersja enterprise (lżejsza, upadki 2,4 m, tańsza): Zebra TC501. Szczegółowa 
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-tc701/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/tc701-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
-    servicePlans: [
-      { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-TC701X-3C00', duration: '3 lata', priceNetto: 0 },
-      { name: 'Zebra OneCare Essential — 5 lat', partNumber: 'Z1AE-TC701X-5C00', duration: '5 lat', priceNetto: 0 },
-    ],
+    // servicePlans: [ // TODO: uncomment when available in Ingram
+    //   { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-TC701X-3C00', duration: '3 lata' },
+    //   { name: 'Zebra OneCare Essential — 5 lat', partNumber: 'Z1AE-TC701X-5C00', duration: '5 lat' },
+    // ],
     createdAt: '2026-02-17',
   },
   {
