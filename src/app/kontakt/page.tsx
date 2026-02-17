@@ -170,7 +170,7 @@ export default function ContactPage() {
             </a>
 
             <a
-              href="mailto:kontakt@takma.com.pl"
+              href="mailto:takma@takma.com.pl"
               className="group bg-white rounded-2xl shadow-lg hover:shadow-xl border border-gray-100 p-6 flex items-center gap-5 transition-all hover:-translate-y-0.5"
             >
               <div className="w-14 h-14 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors flex-shrink-0">
@@ -178,7 +178,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-sm text-gray-500 mb-0.5">Napisz do nas</p>
-                <p className="text-lg font-bold text-gray-900">kontakt@takma.com.pl</p>
+                <p className="text-lg font-bold text-gray-900">takma@takma.com.pl</p>
                 <p className="text-xs text-gray-400 mt-0.5">Odpowiadamy w ciągu 24h</p>
               </div>
             </a>
@@ -295,7 +295,7 @@ export default function ContactPage() {
             {/* Google Maps embed */}
             <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.5!2d16.977!3d51.138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c2d4b5f1c1%3A0x0!2zNTHCsDA4JzE3LjAiTiAxNsKwNTgnMzcuMCJF!5e0!3m2!1spl!2spl!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.8!2d16.9770!3d51.1380!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9dcd44c8b0d%3A0x1!2sul.+Po%C5%9Bwi%C4%99cka+1a%2C+51-128+Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1"
                 width="100%"
                 height="280"
                 style={{ border: 0 }}
@@ -312,7 +312,7 @@ export default function ContactPage() {
               <ul className="space-y-3">
                 {[
                   '25 lat na rynku AutoID w Polsce',
-                  'Autoryzowany partner Zebra Technologies',
+                  'Autoryzowany partner wiodących producentów',
                   'Własny serwis drukarek i terminali',
                   'Indywidualne wyceny dla firm B2B',
                   'Wsparcie techniczne przed i po zakupie',
