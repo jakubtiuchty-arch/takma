@@ -53,16 +53,38 @@ const organizationJsonLd = {
     'https://www.serwis-zebry.pl',
     'https://www.linkedin.com/company/takma',
   ],
-  hasCredential: {
-    '@type': 'EducationalOccupationalCredential',
-    credentialCategory: 'Autoryzacja producenta',
-    name: 'Autoryzowany Partner Zebra Technologies',
-    recognizedBy: {
-      '@type': 'Organization',
-      name: 'Zebra Technologies',
-      url: 'https://www.zebra.com',
+  hasCredential: [
+    {
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'Autoryzacja producenta',
+      name: 'Zebra Premier Solution Partner',
+      recognizedBy: {
+        '@type': 'Organization',
+        name: 'Zebra Technologies',
+        url: 'https://www.zebra.com',
+      },
     },
-  },
+    {
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'Autoryzacja producenta',
+      name: 'Zebra Premier Business Partner',
+      recognizedBy: {
+        '@type': 'Organization',
+        name: 'Zebra Technologies',
+        url: 'https://www.zebra.com',
+      },
+    },
+    {
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'Certyfikat serwisowy',
+      name: 'Zebra Printer Repair Specialist',
+      recognizedBy: {
+        '@type': 'Organization',
+        name: 'Zebra Technologies',
+        url: 'https://www.zebra.com',
+      },
+    },
+  ],
 }
 
 const websiteJsonLd = {
