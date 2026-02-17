@@ -416,23 +416,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
               />
             </div>
 
-            {/* Partner trust strip — kontekstowy per producent */}
-            {product.manufacturerId === 'zebra' && (
-              <div
-                className="flex items-center gap-2 py-2 px-3 rounded-md bg-gray-50 border border-gray-100 mb-4"
-                role="complementary"
-                aria-label="Status partnerski producenta"
-              >
-                <span className="text-[10px] text-gray-400 uppercase tracking-wider font-medium shrink-0">
-                  Autoryzowany partner
-                </span>
-                <div className="flex items-center gap-3 flex-wrap">
-                  <img src="/images/zebra-premier-solution-partner.png" alt="Zebra Premier Solution Partner — autoryzowany partner serwisowy" className="h-3.5 w-auto opacity-60 invert" />
-                  <img src="/images/zebra-premier-business-partner.png" alt="Zebra Premier Business Partner — autoryzowany dystrybutor" className="h-3.5 w-auto opacity-60 invert" />
-                </div>
-              </div>
-            )}
-
             {/* Variants link */}
             {product.variants && product.variants.length > 0 && (
               <a
