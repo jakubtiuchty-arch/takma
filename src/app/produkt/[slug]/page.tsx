@@ -169,6 +169,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
     'Szerokość druku', 'Maks. szerokość nośnika', 'Pamięć RAM', 'Pamięć Flash',
     'Bluetooth', 'Klasa ochrony (IP)', 'Odporność na upadki', 'Waga z baterią',
     'Bateria', 'Temperatura pracy', 'Języki programowania', 'Part Number',
+    'Procesor', 'Wyświetlacz', 'Kamera', 'RFID', 'Skaner', 'Wi-Fi', 'NFC',
+    'NPU/AI', 'System operacyjny', '5G',
   ]
 
   const dynamicAdditionalProps = product.specifications
