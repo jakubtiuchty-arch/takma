@@ -49,8 +49,8 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 lg:gap-4">
-            {categories.slice(0, 6).map((category, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 lg:gap-4">
+            {['terminale-mobilne', 'drukarki-etykiet', 'materialy-eksploatacyjne'].map(id => categories.find(c => c.id === id)!).map((category, i) => (
               <Link
                 key={category.id}
                 href={`/${category.slug}`}
