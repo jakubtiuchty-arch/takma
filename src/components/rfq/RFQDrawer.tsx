@@ -42,32 +42,38 @@ function findProductPrice(productId: string): number | undefined {
 }
 
 /**
- * Zbiera sugestie cross-sell na podstawie wszystkich produktów w koszyku.
- * Priorytet: relatedAccessories > compatibleAccessories.
- * Filtruje produkty już w koszyku. Max 3 wyniki.
+ * Inteligentny cross-sell:
+ * - Drukarki → etykiety i taśmy (compatibleAccessories), NIE głowice/wałki (spare parts)
+ * - Terminale → baterie, ładowarki, etui (relatedAccessories), NIE głowice
+ * - Filtruje: głowice, wałki dociskowe, kontrakty OneCare
+ * - Max 4 wyniki
  */
+const EXCLUDED_CROSS_SELL_KEYWORDS = [
+  'głowica', 'glowica', 'printhead', 'wałek', 'walek', 'platen',
+  'onecare', 'OneCare', 'one-care', 'kontrakt', 'serwisow',
+]
+
+function isSparePart(product: Product): boolean {
+  const nameLower = product.name.toLowerCase()
+  return EXCLUDED_CROSS_SELL_KEYWORDS.some(kw => nameLower.includes(kw.toLowerCase()))
+}
+
 function getCrossSellSuggestions(
   cartItemIds: string[],
-  maxResults: number = 3
+  maxResults: number = 4
 ): Product[] {
   const cartProductIds = new Set(cartItemIds)
-
-  // Zbieramy slugi z ID-ków wariantów
   const cartSlugs = new Set<string>()
   for (const id of cartItemIds) {
-    if (id.includes('__')) {
-      cartSlugs.add(id.split('__')[0])
-    }
+    if (id.includes('__')) cartSlugs.add(id.split('__')[0])
   }
 
   const seenIds = new Set<string>()
   const suggestions: Product[] = []
 
-  // Iteruj po produktach w koszyku
   for (const itemId of cartItemIds) {
     if (suggestions.length >= maxResults) break
 
-    // Znajdź odpowiadający produkt
     let product: Product | undefined
     if (itemId.includes('__') && !itemId.includes('__onecare__')) {
       const slug = itemId.split('__')[0]
@@ -75,23 +81,26 @@ function getCrossSellSuggestions(
     } else {
       product = products.find((p) => p.id === itemId)
     }
-
     if (!product) continue
 
-    // Priorytet: relatedAccessories, potem compatibleAccessories
-    const relatedIds = product.relatedAccessories ?? []
-    const compatibleIds = product.compatibleAccessories ?? []
-    const combinedIds = [...relatedIds, ...compatibleIds]
+    const isDrukarka = product.categoryId === 'drukarki-etykiet'
+      || product.subcategoryIds?.some(s => s.includes('drukar'))
 
-    for (const accessoryId of combinedIds) {
+    // Drukarki → materiały eksploatacyjne (etykiety, taśmy)
+    // Terminale → akcesoria (baterie, ładowarki, etui)
+    const accessoryIds = isDrukarka
+      ? (product.compatibleAccessories ?? [])
+      : (product.relatedAccessories ?? [])
+
+    for (const accessoryId of accessoryIds) {
       if (suggestions.length >= maxResults) break
       if (cartProductIds.has(accessoryId)) continue
       if (seenIds.has(accessoryId)) continue
 
-      // Sprawdź czy slug akcesorium nie jest już w koszyku (wariant)
       const accessory = products.find((p) => p.id === accessoryId)
       if (!accessory) continue
       if (cartSlugs.has(accessory.slug)) continue
+      if (isSparePart(accessory)) continue
 
       seenIds.add(accessoryId)
       suggestions.push(accessory)
