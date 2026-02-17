@@ -726,8 +726,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </section>
             )}
 
-            {/* Serwis gwarancyjny — tylko dla produktów Zebra */}
-            {product.manufacturerId === 'zebra' && (
+            {/* Serwis gwarancyjny — urządzenia Zebra + akcesoria serwisowe (głowice, wałki, obcinaki, odklejaki) */}
+            {product.manufacturerId === 'zebra' && (product.variants?.length || /głowic|wałek|wałk|obcinak|odklejak|cutter|dispenser|platen|printhead/i.test(product.name)) && (
               <section>
                 <a
                   href={product.categoryId === 'terminale-mobilne' ? 'https://www.serwis-zebry.pl/serwis-terminali-zebra' : 'https://www.serwis-zebry.pl/serwis-drukarek-zebra'}
