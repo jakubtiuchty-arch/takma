@@ -208,11 +208,11 @@ export default function CheckoutPage() {
     const newErrors: FormErrors = {}
 
     if (!formData.firstName.trim()) {
-      newErrors.firstName = 'Imie jest wymagane'
+      newErrors.firstName = 'Osoba kontaktowa jest wymagana'
     }
 
     if (!formData.lastName.trim()) {
-      newErrors.lastName = 'Nazwisko jest wymagane'
+      newErrors.lastName = 'Nr budynku jest wymagany'
     }
 
     if (!formData.company.trim()) {
@@ -720,34 +720,38 @@ export default function CheckoutPage() {
 
           {/* ────── LEWA KOLUMNA: Formularz ────── */}
           <form id="checkout-form" onSubmit={handleSubmit} className="lg:col-span-3 space-y-4 sm:space-y-6 order-last lg:order-first">
-            {/* Dane firmy */}
+            {/* Dane do faktury */}
             <div className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-5 space-y-4">
-              <h2 className="text-base sm:text-lg font-semibold text-gray-900">Dane firmy</h2>
+              <h2 className="text-base sm:text-lg font-semibold text-gray-900">Dane do faktury</h2>
 
-              <div className="grid grid-cols-2 gap-4">
-                <Input label="Imie" name="firstName" value={formData.firstName} onChange={handleInputChange} error={errors.firstName} placeholder="Jan" required />
-                <Input label="Nazwisko" name="lastName" value={formData.lastName} onChange={handleInputChange} error={errors.lastName} placeholder="Kowalski" required />
-              </div>
+              <Input label="Nazwa firmy" name="company" value={formData.company} onChange={handleInputChange} error={errors.company} placeholder="np. ABC Sp. z o.o." required />
 
-              <Input label="Firma" name="company" value={formData.company} onChange={handleInputChange} error={errors.company} placeholder="Nazwa firmy Sp. z o.o." required />
-
-              <Input label="NIP" name="nip" value={formData.nip} onChange={handleInputChange} error={errors.nip} placeholder="123-456-78-90" helperText="Wymagany do faktury VAT" required />
+              <Input label="NIP" name="nip" value={formData.nip} onChange={handleInputChange} error={errors.nip} placeholder="np. 1234567890" helperText="Wymagany do faktury VAT" required />
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Input label="E-mail" name="email" type="email" value={formData.email} onChange={handleInputChange} error={errors.email} placeholder="jan@firma.pl" required />
-                <Input label="Telefon" name="phone" type="tel" value={formData.phone} onChange={handleInputChange} error={errors.phone} placeholder="+48 123 456 789" required />
+                <Input label="Osoba kontaktowa" name="firstName" value={formData.firstName} onChange={handleInputChange} error={errors.firstName} placeholder="Imie i nazwisko" required />
+                <Input label="Telefon" name="phone" type="tel" value={formData.phone} onChange={handleInputChange} error={errors.phone} placeholder="np. 601 619 898" required />
               </div>
+
+              <Input label="E-mail" name="email" type="email" value={formData.email} onChange={handleInputChange} error={errors.email} placeholder="email@firma.pl" required />
             </div>
 
-            {/* Adres */}
+            {/* Adres dostawy */}
             <div className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-5 space-y-4">
               <h2 className="text-base sm:text-lg font-semibold text-gray-900">Adres dostawy</h2>
 
-              <Input label="Ulica i numer" name="street" value={formData.street} onChange={handleInputChange} error={errors.street} placeholder="ul. Przykladowa 10/2" required />
-
-              <div className="grid grid-cols-5 gap-4">
+              <div className="grid grid-cols-3 gap-4">
                 <div className="col-span-2">
-                  <Input label="Kod pocztowy" name="postalCode" value={formData.postalCode} onChange={handleInputChange} error={errors.postalCode} placeholder="00-000" required />
+                  <Input label="Ulica" name="street" value={formData.street} onChange={handleInputChange} error={errors.street} placeholder="np. Glowna" required />
+                </div>
+                <div className="col-span-1">
+                  <Input label="Nr bud." name="lastName" value={formData.lastName} onChange={handleInputChange} error={errors.lastName} placeholder="12A" required />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-4 gap-4">
+                <div className="col-span-1">
+                  <Input label="Kod poczt." name="postalCode" value={formData.postalCode} onChange={handleInputChange} error={errors.postalCode} placeholder="00-000" required />
                 </div>
                 <div className="col-span-3">
                   <Input label="Miasto" name="city" value={formData.city} onChange={handleInputChange} error={errors.city} placeholder="Warszawa" required />
