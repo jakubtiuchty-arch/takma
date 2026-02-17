@@ -277,7 +277,7 @@ export async function POST(request: NextRequest) {
         <div class="party-text">ul. Poświęcka 1a</div>
         <div class="party-text">51-128 Wrocław</div>
         <div class="party-text">NIP: 9151004377</div>
-        <div class="party-text">Email: kontakt@takma.com.pl</div>
+        <div class="party-text">Email: takma@takma.com.pl</div>
       </div>
       <div class="party">
         <div class="party-title">Nabywca</div>

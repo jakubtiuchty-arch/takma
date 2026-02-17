@@ -49,10 +49,10 @@ export default function PrivacyPolicyPage() {
               <p>
                 E-mail:{' '}
                 <a
-                  href="mailto:kontakt@takma.com.pl"
+                  href="mailto:takma@takma.com.pl"
                   className="text-primary-600 hover:underline"
                 >
-                  kontakt@takma.com.pl
+                  takma@takma.com.pl
                 </a>
               </p>
               <p>Tel.: +48 607 819 688</p>
@@ -323,10 +323,10 @@ export default function PrivacyPolicyPage() {
             <p className="text-gray-600 mt-3">
               W celu realizacji powyższych praw prosimy o kontakt na adres:{' '}
               <a
-                href="mailto:kontakt@takma.com.pl"
+                href="mailto:takma@takma.com.pl"
                 className="text-primary-600 hover:underline"
               >
-                kontakt@takma.com.pl
+                takma@takma.com.pl
               </a>
               . Odpowiedź zostanie udzielona w ciągu 30 dni.
             </p>
@@ -554,10 +554,10 @@ export default function PrivacyPolicyPage() {
               <li>
                 E-mail:{' '}
                 <a
-                  href="mailto:kontakt@takma.com.pl"
+                  href="mailto:takma@takma.com.pl"
                   className="text-primary-600 hover:underline"
                 >
-                  kontakt@takma.com.pl
+                  takma@takma.com.pl
                 </a>
               </li>
               <li>Telefon: +48 607 819 688</li>

@@ -57,11 +57,11 @@ export default function Footer() {
                 <span>+48 607 819 688</span>
               </a>
               <a
-                href="mailto:kontakt@takma.com.pl"
+                href="mailto:takma@takma.com.pl"
                 className="flex items-center gap-3 text-sm hover:text-primary-400 transition-colors"
               >
                 <MailIcon size={18} className="text-primary-400" />
-                <span>kontakt@takma.com.pl</span>
+                <span>takma@takma.com.pl</span>
               </a>
             </div>
           </div>

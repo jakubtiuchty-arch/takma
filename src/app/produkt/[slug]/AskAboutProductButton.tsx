@@ -219,7 +219,7 @@ function InquiryModal({
             </label>
 
             {status === 'error' && (
-              <p className="text-sm text-red-600">Wystąpił błąd. Spróbuj ponownie lub napisz na kontakt@takma.com.pl.</p>
+              <p className="text-sm text-red-600">Wystąpił błąd. Spróbuj ponownie lub napisz na takma@takma.com.pl.</p>
             )}
 
             {/* Submit */}

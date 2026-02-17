@@ -64,7 +64,7 @@ export default function OrderConfirmationPage({
         </div>
 
         <p className="mt-8 text-sm text-gray-400">
-          W razie pytań: <a href="mailto:kontakt@takma.com.pl" className="text-primary-600 hover:underline">kontakt@takma.com.pl</a> | <a href="tel:+48607819688" className="text-primary-600 hover:underline">+48 607 819 688</a>
+          W razie pytań: <a href="mailto:takma@takma.com.pl" className="text-primary-600 hover:underline">takma@takma.com.pl</a> | <a href="tel:+48607819688" className="text-primary-600 hover:underline">+48 607 819 688</a>
         </p>
       </div>
     </div>

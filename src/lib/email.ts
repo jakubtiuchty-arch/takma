@@ -67,7 +67,7 @@ export async function sendOrderConfirmation(email: string, orderNumber: string, 
             <strong style="font-size:18px">Razem brutto: ${totalBrutto.toFixed(2)} zł</strong>
           </div>
           <p style="margin-top:24px;color:#6b7280;font-size:14px">Twoje zamówienie jest w realizacji. Otrzymasz powiadomienie o wysyłce z numerem przesyłki.</p>
-          <p style="color:#6b7280;font-size:14px">W razie pytań: <a href="mailto:kontakt@takma.com.pl" style="color:#2563eb">kontakt@takma.com.pl</a> | <a href="tel:+48607819688" style="color:#2563eb">+48 607 819 688</a></p>
+          <p style="color:#6b7280;font-size:14px">W razie pytań: <a href="mailto:takma@takma.com.pl" style="color:#2563eb">takma@takma.com.pl</a> | <a href="tel:+48607819688" style="color:#2563eb">+48 607 819 688</a></p>
         </div>
       </div>
     `,
@@ -93,7 +93,7 @@ export async function sendProformaEmail(email: string, orderNumber: string, pdfB
             Tytuł: <strong>${orderNumber}</strong>
           </div>
           <p style="color:#6b7280;font-size:14px">Pro forma ważna 7 dni od daty wystawienia.</p>
-          <p style="color:#6b7280;font-size:14px">W razie pytań: <a href="mailto:kontakt@takma.com.pl" style="color:#2563eb">kontakt@takma.com.pl</a></p>
+          <p style="color:#6b7280;font-size:14px">W razie pytań: <a href="mailto:takma@takma.com.pl" style="color:#2563eb">takma@takma.com.pl</a></p>
         </div>
       </div>
     `,
@@ -124,7 +124,7 @@ export async function sendShippingNotification(email: string, orderNumber: strin
 }
 
 export async function sendAdminNotification(orderNumber: string, customerEmail: string, totalBrutto: number, paymentMethod: string) {
-  const adminEmail = process.env.ADMIN_EMAIL || 'kontakt@takma.com.pl'
+  const adminEmail = process.env.ADMIN_EMAIL || 'takma@takma.com.pl'
   return sendEmail({
     to: adminEmail,
     subject: `[NOWE ZAMÓWIENIE] ${orderNumber} — ${totalBrutto.toFixed(2)} zł brutto`,
