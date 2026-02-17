@@ -630,304 +630,121 @@ export default function CheckoutPage() {
       {/* KROK 2: Dane firmy + Adres + Platnosc                      */}
       {/* ════════════════════════════════════════════════════════════ */}
       {step === 2 && (
-        <div className="max-w-2xl mx-auto space-y-6">
-          {/* Formularz */}
-          <form onSubmit={handleSubmit} className="bg-gray-50 rounded-2xl p-6 space-y-5">
-            <h2 className="text-lg font-semibold text-gray-900">Dane firmy</h2>
+        <div className="grid lg:grid-cols-5 gap-8 lg:gap-10 items-start">
+          {/* ────── LEWA KOLUMNA: Formularz ────── */}
+          <form onSubmit={handleSubmit} className="lg:col-span-3 space-y-6">
+            {/* Dane firmy */}
+            <div className="bg-white rounded-2xl border border-gray-200 p-6 space-y-5">
+              <h2 className="text-lg font-semibold text-gray-900">Dane firmy</h2>
 
-            <div className="grid grid-cols-2 gap-4">
-              <Input
-                label="Imie"
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleInputChange}
-                error={errors.firstName}
-                placeholder="Jan"
-                required
-              />
-              <Input
-                label="Nazwisko"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleInputChange}
-                error={errors.lastName}
-                placeholder="Kowalski"
-                required
-              />
-            </div>
+              <div className="grid grid-cols-2 gap-4">
+                <Input label="Imie" name="firstName" value={formData.firstName} onChange={handleInputChange} error={errors.firstName} placeholder="Jan" required />
+                <Input label="Nazwisko" name="lastName" value={formData.lastName} onChange={handleInputChange} error={errors.lastName} placeholder="Kowalski" required />
+              </div>
 
-            <Input
-              label="Firma"
-              name="company"
-              value={formData.company}
-              onChange={handleInputChange}
-              error={errors.company}
-              placeholder="Nazwa firmy Sp. z o.o."
-              required
-            />
+              <Input label="Firma" name="company" value={formData.company} onChange={handleInputChange} error={errors.company} placeholder="Nazwa firmy Sp. z o.o." required />
 
-            <Input
-              label="NIP"
-              name="nip"
-              value={formData.nip}
-              onChange={handleInputChange}
-              error={errors.nip}
-              placeholder="123-456-78-90"
-              helperText="Wymagany do faktury VAT"
-              required
-            />
+              <Input label="NIP" name="nip" value={formData.nip} onChange={handleInputChange} error={errors.nip} placeholder="123-456-78-90" helperText="Wymagany do faktury VAT" required />
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Input
-                label="E-mail"
-                name="email"
-                type="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                error={errors.email}
-                placeholder="jan@firma.pl"
-                required
-              />
-              <Input
-                label="Telefon"
-                name="phone"
-                type="tel"
-                value={formData.phone}
-                onChange={handleInputChange}
-                error={errors.phone}
-                placeholder="+48 123 456 789"
-                required
-              />
-            </div>
-
-            <div className="border-t border-gray-200 pt-5">
-              <h3 className="text-base font-semibold text-gray-900 mb-4">Adres firmy</h3>
-              <div className="space-y-4">
-                <Input
-                  label="Ulica i numer"
-                  name="street"
-                  value={formData.street}
-                  onChange={handleInputChange}
-                  error={errors.street}
-                  placeholder="ul. Przykladowa 10/2"
-                  required
-                />
-                <div className="grid grid-cols-5 gap-4">
-                  <div className="col-span-2">
-                    <Input
-                      label="Kod pocztowy"
-                      name="postalCode"
-                      value={formData.postalCode}
-                      onChange={handleInputChange}
-                      error={errors.postalCode}
-                      placeholder="00-000"
-                      required
-                    />
-                  </div>
-                  <div className="col-span-3">
-                    <Input
-                      label="Miasto"
-                      name="city"
-                      value={formData.city}
-                      onChange={handleInputChange}
-                      error={errors.city}
-                      placeholder="Warszawa"
-                      required
-                    />
-                  </div>
-                </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <Input label="E-mail" name="email" type="email" value={formData.email} onChange={handleInputChange} error={errors.email} placeholder="jan@firma.pl" required />
+                <Input label="Telefon" name="phone" type="tel" value={formData.phone} onChange={handleInputChange} error={errors.phone} placeholder="+48 123 456 789" required />
               </div>
             </div>
 
-            <div className="border-t border-gray-200 pt-5">
+            {/* Adres */}
+            <div className="bg-white rounded-2xl border border-gray-200 p-6 space-y-5">
+              <h2 className="text-lg font-semibold text-gray-900">Adres firmy</h2>
+
+              <Input label="Ulica i numer" name="street" value={formData.street} onChange={handleInputChange} error={errors.street} placeholder="ul. Przykladowa 10/2" required />
+
+              <div className="grid grid-cols-5 gap-4">
+                <div className="col-span-2">
+                  <Input label="Kod pocztowy" name="postalCode" value={formData.postalCode} onChange={handleInputChange} error={errors.postalCode} placeholder="00-000" required />
+                </div>
+                <div className="col-span-3">
+                  <Input label="Miasto" name="city" value={formData.city} onChange={handleInputChange} error={errors.city} placeholder="Warszawa" required />
+                </div>
+              </div>
+
               <Checkbox
-                label={
-                  <span className="text-sm font-medium text-gray-700">
-                    Inny adres dostawy
-                  </span>
-                }
+                label={<span className="text-sm font-medium text-gray-700">Inny adres dostawy</span>}
                 checked={formData.differentShipping}
-                onChange={(e) =>
-                  setFormData((prev) => ({
-                    ...prev,
-                    differentShipping: e.target.checked,
-                  }))
-                }
+                onChange={(e) => setFormData((prev) => ({ ...prev, differentShipping: e.target.checked }))}
               />
 
               {formData.differentShipping && (
-                <div className="mt-4 space-y-4 pl-8 border-l-2 border-primary-200">
-                  <Input
-                    label="Ulica i numer"
-                    name="shippingStreet"
-                    value={formData.shippingStreet}
-                    onChange={handleInputChange}
-                    error={errors.shippingStreet}
-                    placeholder="ul. Dostawcza 5"
-                    required
-                  />
+                <div className="space-y-4 pl-6 border-l-2 border-primary-200">
+                  <Input label="Ulica i numer" name="shippingStreet" value={formData.shippingStreet} onChange={handleInputChange} error={errors.shippingStreet} placeholder="ul. Dostawcza 5" required />
                   <div className="grid grid-cols-5 gap-4">
                     <div className="col-span-2">
-                      <Input
-                        label="Kod pocztowy"
-                        name="shippingPostalCode"
-                        value={formData.shippingPostalCode}
-                        onChange={handleInputChange}
-                        error={errors.shippingPostalCode}
-                        placeholder="00-000"
-                        required
-                      />
+                      <Input label="Kod pocztowy" name="shippingPostalCode" value={formData.shippingPostalCode} onChange={handleInputChange} error={errors.shippingPostalCode} placeholder="00-000" required />
                     </div>
                     <div className="col-span-3">
-                      <Input
-                        label="Miasto"
-                        name="shippingCity"
-                        value={formData.shippingCity}
-                        onChange={handleInputChange}
-                        error={errors.shippingCity}
-                        placeholder="Warszawa"
-                        required
-                      />
+                      <Input label="Miasto" name="shippingCity" value={formData.shippingCity} onChange={handleInputChange} error={errors.shippingCity} placeholder="Warszawa" required />
                     </div>
                   </div>
                 </div>
               )}
+
+              <Textarea label="Uwagi do zamowienia" name="notes" value={formData.notes} onChange={handleInputChange} placeholder="Dodatkowe informacje, np. preferowany termin dostawy..." rows={3} />
             </div>
 
-            <Textarea
-              label="Uwagi do zamowienia"
-              name="notes"
-              value={formData.notes}
-              onChange={handleInputChange}
-              placeholder="Dodatkowe informacje, np. preferowany termin dostawy..."
-              rows={3}
-            />
+            {/* Platnosc */}
+            <div className="bg-white rounded-2xl border border-gray-200 p-6 space-y-4">
+              <h2 className="text-lg font-semibold text-gray-900">Sposob platnosci</h2>
 
-            <div className="border-t border-gray-200 pt-5">
-              <h3 className="text-base font-semibold text-gray-900 mb-4">
-                Sposob platnosci
-              </h3>
+              <label className={`flex items-start gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all ${formData.paymentMethod === 'online' ? 'border-primary-500 bg-primary-50/50' : 'border-gray-200 hover:border-gray-300'}`}>
+                <input type="radio" name="paymentMethod" value="online" checked={formData.paymentMethod === 'online'} onChange={() => setFormData((prev) => ({ ...prev, paymentMethod: 'online' }))} className="mt-1 h-4 w-4 text-primary-600 border-gray-300 focus:ring-primary-500" />
+                <div className="flex-1">
+                  <span className="text-sm font-semibold text-gray-900">Platnosc online</span>
+                  <span className="text-xs text-gray-500 mt-0.5 block">BLIK, karta platnicza, Przelewy24 — zaplac teraz przez Stripe</span>
+                </div>
+              </label>
 
-              <div className="space-y-3">
-                <label
-                  className={`flex items-start gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all ${
-                    formData.paymentMethod === 'online'
-                      ? 'border-primary-500 bg-primary-50/50'
-                      : 'border-gray-200 hover:border-gray-300 bg-white'
-                  }`}
-                >
-                  <input
-                    type="radio"
-                    name="paymentMethod"
-                    value="online"
-                    checked={formData.paymentMethod === 'online'}
-                    onChange={() =>
-                      setFormData((prev) => ({ ...prev, paymentMethod: 'online' }))
-                    }
-                    className="mt-1 h-4 w-4 text-primary-600 border-gray-300 focus:ring-primary-500"
-                  />
-                  <div className="flex-1">
-                    <span className="text-sm font-semibold text-gray-900">
-                      Platnosc online
-                    </span>
-                    <span className="text-xs text-gray-500 mt-0.5 block">
-                      BLIK, karta platnicza, Przelewy24 — zaplac teraz przez Stripe
-                    </span>
-                  </div>
-                </label>
+              <label className={`flex items-start gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all ${formData.paymentMethod === 'proforma' ? 'border-primary-500 bg-primary-50/50' : 'border-gray-200 hover:border-gray-300'}`}>
+                <input type="radio" name="paymentMethod" value="proforma" checked={formData.paymentMethod === 'proforma'} onChange={() => setFormData((prev) => ({ ...prev, paymentMethod: 'proforma' }))} className="mt-1 h-4 w-4 text-primary-600 border-gray-300 focus:ring-primary-500" />
+                <div className="flex-1">
+                  <span className="text-sm font-semibold text-gray-900">Przelew tradycyjny</span>
+                  <span className="text-xs text-gray-500 mt-0.5 block">Otrzymasz fakture pro forma na e-mail. Wysylka po zaksiegowaniu platnosci.</span>
+                </div>
+              </label>
 
-                <label
-                  className={`flex items-start gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all ${
-                    formData.paymentMethod === 'proforma'
-                      ? 'border-primary-500 bg-primary-50/50'
-                      : 'border-gray-200 hover:border-gray-300 bg-white'
-                  }`}
-                >
-                  <input
-                    type="radio"
-                    name="paymentMethod"
-                    value="proforma"
-                    checked={formData.paymentMethod === 'proforma'}
-                    onChange={() =>
-                      setFormData((prev) => ({ ...prev, paymentMethod: 'proforma' }))
-                    }
-                    className="mt-1 h-4 w-4 text-primary-600 border-gray-300 focus:ring-primary-500"
-                  />
-                  <div className="flex-1">
-                    <span className="text-sm font-semibold text-gray-900">
-                      Przelew tradycyjny
-                    </span>
-                    <span className="text-xs text-gray-500 mt-0.5 block">
-                      Otrzymasz fakture pro forma na e-mail. Wysylka po zaksiegowaniu platnosci.
-                    </span>
-                  </div>
-                </label>
-              </div>
-            </div>
-
-            <Checkbox
-              label={
-                <span className="text-sm text-gray-600">
-                  Wyrazam zgode na przetwarzanie moich danych osobowych w celu
-                  realizacji zamowienia.{' '}
-                  <Link
-                    href="/polityka-prywatnosci"
-                    className="text-primary-600 hover:underline"
-                  >
-                    Polityka prywatnosci
-                  </Link>
-                </span>
-              }
-              checked={formData.consent}
-              onChange={(e) => {
-                setFormData((prev) => ({ ...prev, consent: e.target.checked }))
-                if (errors.consent) {
-                  setErrors((prev) => ({ ...prev, consent: undefined }))
-                }
-              }}
-              error={errors.consent}
-            />
-
-            {/* Podsumowanie cenowe */}
-            <div className="border-t border-gray-200 pt-5">
-              <PriceSummary
-                subtotalNetto={subtotalNetto}
-                shippingNetto={shippingNetto}
-                isFreeShipping={isFreeShipping}
-                vatAmount={vatAmount}
-                totalBrutto={totalBrutto}
+              <Checkbox
+                label={<span className="text-sm text-gray-600">Wyrazam zgode na przetwarzanie moich danych osobowych w celu realizacji zamowienia. <Link href="/polityka-prywatnosci" className="text-primary-600 hover:underline">Polityka prywatnosci</Link></span>}
+                checked={formData.consent}
+                onChange={(e) => { setFormData((prev) => ({ ...prev, consent: e.target.checked })); if (errors.consent) { setErrors((prev) => ({ ...prev, consent: undefined })) } }}
+                error={errors.consent}
               />
             </div>
 
-            {/* Przyciski */}
-            <div className="flex gap-3">
-              <Button
-                type="button"
-                variant="secondary"
-                onClick={() => { setStep(1); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
-              >
-                Wstecz
-              </Button>
-              <Button
-                type="submit"
-                variant={formData.paymentMethod === 'online' ? 'primary' : 'secondary'}
-                fullWidth
-                size="lg"
-                isLoading={isSubmitting}
-                disabled={items.length === 0}
-              >
-                {formData.paymentMethod === 'online'
-                  ? 'Przejdz do platnosci'
-                  : 'Zamow z faktura pro forma'}
-              </Button>
+            {/* Submit — widoczny na mobile pod formularzem */}
+            <div className="lg:hidden space-y-4">
+              <PriceSummary subtotalNetto={subtotalNetto} shippingNetto={shippingNetto} isFreeShipping={isFreeShipping} vatAmount={vatAmount} totalBrutto={totalBrutto} />
+              <div className="flex gap-3">
+                <Button type="button" variant="secondary" onClick={() => { setStep(1); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Wstecz</Button>
+                <Button type="submit" fullWidth size="lg" isLoading={isSubmitting} disabled={items.length === 0}>
+                  {formData.paymentMethod === 'online' ? 'Przejdz do platnosci' : 'Zamow z faktura pro forma'}
+                </Button>
+              </div>
             </div>
-
-            <p className="text-xs text-gray-500 text-center">
-              {formData.paymentMethod === 'online'
-                ? 'Zostaniesz przekierowany do bezpiecznej platnosci Stripe'
-                : 'Faktura pro forma zostanie wyslana na podany adres e-mail'}
-            </p>
           </form>
+
+          {/* ────── PRAWA KOLUMNA: Podsumowanie (sticky) ────── */}
+          <div className="hidden lg:block lg:col-span-2">
+            <div className="lg:sticky lg:top-28 space-y-4">
+              <PriceSummary subtotalNetto={subtotalNetto} shippingNetto={shippingNetto} isFreeShipping={isFreeShipping} vatAmount={vatAmount} totalBrutto={totalBrutto} />
+              <div className="flex gap-3">
+                <Button type="button" variant="secondary" onClick={() => { setStep(1); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Wstecz</Button>
+                <Button fullWidth size="lg" isLoading={isSubmitting} disabled={items.length === 0} onClick={() => { const form = document.querySelector('form'); form?.requestSubmit() }}>
+                  {formData.paymentMethod === 'online' ? 'Przejdz do platnosci' : 'Zamow z faktura pro forma'}
+                </Button>
+              </div>
+              <p className="text-xs text-gray-500 text-center">
+                {formData.paymentMethod === 'online' ? 'Zostaniesz przekierowany do bezpiecznej platnosci Stripe' : 'Faktura pro forma zostanie wyslana na podany adres e-mail'}
+              </p>
+            </div>
+          </div>
         </div>
       )}
     </div>
