@@ -1,0 +1,119 @@
+// TAKMA e-commerce — Prisma schema
+// PostgreSQL, modele: Customer, Order, OrderItem
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ---------------------------------------------------------------------------
+// Enums
+// ---------------------------------------------------------------------------
+
+enum OrderStatus {
+  PENDING_PAYMENT
+  PAID
+  AWAITING_PAYMENT
+  PROCESSING
+  SHIPPED
+  DELIVERED
+  CANCELLED
+  EXPIRED
+  REFUNDED
+}
+
+enum PaymentMethod {
+  ONLINE
+  PROFORMA
+}
+
+// ---------------------------------------------------------------------------
+// Customer
+// ---------------------------------------------------------------------------
+
+model Customer {
+  id                String   @id @default(cuid())
+  email             String   @unique
+  firstName         String
+  lastName          String
+  company           String
+  nip               String?
+  phone             String?
+  address           String?
+  shippingAddress   String?
+  stripeCustomerId  String?  @unique
+
+  orders            Order[]
+
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+// ---------------------------------------------------------------------------
+// Order
+// ---------------------------------------------------------------------------
+
+model Order {
+  id                     String        @id @default(cuid())
+  orderNumber            String        @unique
+  status                 OrderStatus   @default(PENDING_PAYMENT)
+
+  customer               Customer      @relation(fields: [customerId], references: [id])
+  customerId             String
+
+  subtotalNetto          Int
+  vatAmount              Int
+  shippingNetto          Int           @default(0)
+  totalBrutto            Int
+
+  paymentMethod          PaymentMethod @default(ONLINE)
+  stripeSessionId        String?
+  stripePaymentIntentId  String?
+
+  proformaUrl            String?
+  proformaSentAt         DateTime?
+  paidAt                 DateTime?
+
+  ingramOrderId          String?
+  trackingNumber         String?
+  carrierName            String?
+  shippedAt              DateTime?
+  deliveredAt            DateTime?
+
+  customerNotes          String?
+  adminNotes             String?
+
+  items                  OrderItem[]
+
+  createdAt              DateTime      @default(now())
+  updatedAt              DateTime      @updatedAt
+
+  @@index([status])
+  @@index([customerId])
+  @@index([orderNumber])
+}
+
+// ---------------------------------------------------------------------------
+// OrderItem
+// ---------------------------------------------------------------------------
+
+model OrderItem {
+  id                   String  @id @default(cuid())
+
+  order                Order   @relation(fields: [orderId], references: [id])
+  orderId              String
+
+  productId            String
+  productName          String
+  productSlug          String
+  partNumber           String
+  quantity             Int
+  priceNetto           Int
+  totalNetto           Int
+  note                 String?
+  ingramPriceSnapshot  Int?
+}
