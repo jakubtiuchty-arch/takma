@@ -52,7 +52,7 @@ export default function RegulaminPage() {
               ['#par9', 'Prawa konsumenta i quasi-konsumentów JDG (art. 12 i 27 UPK)'],
               ['#par10', 'Wzór formularza odstąpienia od umowy'],
               ['#par11', 'Rękojmia za wady'],
-              ['#par12', 'Gwarancja producenta — Zebra Technologies'],
+              ['#par12', 'Gwarancja producenta'],
               ['#par13', 'Reklamacje — tryb postępowania'],
               ['#par14', 'Ochrona danych osobowych'],
               ['#par15', 'Własność intelektualna'],
@@ -749,7 +749,7 @@ export default function RegulaminPage() {
                 Pomimo wyłączenia rękojmi, Sprzedawca zobowiązuje się do
                 rzetelnego rozpatrywania zgłoszeń reklamacyjnych B2B i —
                 w miarę możliwości — pomocy w uzyskaniu serwisu gwarancyjnego
-                producenta (Zebra Technologies, patrz § 12).
+                producenta (patrz § 12).
               </li>
               <li>
                 <strong>Rękojmia quasi-konsumentów (art. 556⁴ KC):</strong>
@@ -793,35 +793,89 @@ export default function RegulaminPage() {
           {/* § 12 GWARANCJA */}
           <section id="par12">
             <h2 className="text-xl font-semibold text-gray-900 mb-4">
-              § 12. Gwarancja producenta — Zebra Technologies
+              § 12. Gwarancja producenta
             </h2>
             <ol className="list-decimal pl-6 text-gray-600 space-y-3 text-sm">
               <li>
                 Towary sprzedawane w Sklepie są objęte <strong>gwarancją
-                producenta — Zebra Technologies Corp.</strong> z siedzibą
-                w Lincolnshire, Illinois, USA (zwana dalej „Gwarantem").
-                Gwarancja udzielana jest przez Gwaranta bezpośrednio
-                Kupującemu i jest niezależna od zobowiązań Sprzedawcy.
-              </li>
-              <li>
-                <strong>Zakres i okres gwarancji</strong> zależy od rodzaju
-                produktu i jest określony w dokumentacji dostarczonej wraz
-                z Towarem lub dostępnej na stronie Gwaranta
-                (zebra.com/warranty). Standardowe okresy gwarancji produktów
-                Zebra wynoszą:
+                producenta</strong> udzielaną bezpośrednio przez danego
+                producenta (zwanego dalej „Gwarantem"). Gwarancja jest
+                niezależna od zobowiązań Sprzedawcy. W ofercie Sklepu
+                znajdują się produkty następujących producentów:
                 <ul className="list-disc pl-4 mt-2 space-y-1">
-                  <li>Drukarki etykiet (ZD/ZT): 1 rok lub 2 lata (zależnie od modelu)</li>
-                  <li>Terminale mobilne (MC/TC): 1 rok</li>
-                  <li>Skanery kodów: 1 rok</li>
-                  <li>Baterie i materiały eksploatacyjne: 90 dni</li>
+                  <li><strong>Zebra Technologies Corp.</strong> — Lincolnshire, Illinois, USA</li>
+                  <li><strong>Honeywell International Inc.</strong> — Charlotte, North Carolina, USA</li>
+                  <li><strong>Datalogic S.p.A.</strong> — Lippo di Calderara di Reno, Włochy</li>
+                  <li><strong>M3 Mobile Co., Ltd.</strong> — Seul, Korea Południowa</li>
+                  <li><strong>Newland Digital Technology Co., Ltd.</strong> — Fuzhou, Chiny</li>
+                  <li><strong>Godex International Co., Ltd.</strong> — Tajpej, Tajwan</li>
+                  <li><strong>Citizen Systems Japan Co., Ltd.</strong> — Tokio, Japonia</li>
                 </ul>
-                Dokładne warunki gwarancji zawarte są w karcie gwarancyjnej
-                dołączonej do produktu.
               </li>
               <li>
-                <strong>Serwis gwarancyjny:</strong> Sprzedawca jest
-                autoryzowanym partnerem serwisowym Zebra Technologies.
-                Serwis gwarancyjny i pogwarancyjny realizowany jest przez:
+                <strong>Zakres i okres gwarancji</strong> zależy od producenta,
+                rodzaju produktu i jest określony w dokumentacji dostarczonej
+                wraz z Towarem lub dostępnej na stronie internetowej danego
+                Gwaranta. Orientacyjne standardowe okresy gwarancji:
+                <div className="overflow-x-auto mt-2">
+                  <table className="w-full text-xs border border-gray-200 rounded-lg">
+                    <thead>
+                      <tr className="bg-gray-50">
+                        <th className="text-left p-2 border-b border-gray-200 font-semibold">Producent</th>
+                        <th className="text-left p-2 border-b border-gray-200 font-semibold">Urządzenia</th>
+                        <th className="text-left p-2 border-b border-gray-200 font-semibold">Akcesoria / baterie</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="p-2 border-b border-gray-100">Zebra Technologies</td>
+                        <td className="p-2 border-b border-gray-100">1–2 lata (zal. od modelu)</td>
+                        <td className="p-2 border-b border-gray-100">90 dni</td>
+                      </tr>
+                      <tr>
+                        <td className="p-2 border-b border-gray-100">Honeywell</td>
+                        <td className="p-2 border-b border-gray-100">1–2 lata</td>
+                        <td className="p-2 border-b border-gray-100">90 dni – 1 rok</td>
+                      </tr>
+                      <tr>
+                        <td className="p-2 border-b border-gray-100">Datalogic</td>
+                        <td className="p-2 border-b border-gray-100">1–3 lata</td>
+                        <td className="p-2 border-b border-gray-100">90 dni – 1 rok</td>
+                      </tr>
+                      <tr>
+                        <td className="p-2 border-b border-gray-100">M3 Mobile</td>
+                        <td className="p-2 border-b border-gray-100">1 rok</td>
+                        <td className="p-2 border-b border-gray-100">90 dni</td>
+                      </tr>
+                      <tr>
+                        <td className="p-2 border-b border-gray-100">Newland</td>
+                        <td className="p-2 border-b border-gray-100">2 lata</td>
+                        <td className="p-2 border-b border-gray-100">1 rok</td>
+                      </tr>
+                      <tr>
+                        <td className="p-2 border-b border-gray-100">Godex</td>
+                        <td className="p-2 border-b border-gray-100">2 lata</td>
+                        <td className="p-2 border-b border-gray-100">6 mies. – 1 rok</td>
+                      </tr>
+                      <tr>
+                        <td className="p-2">Citizen</td>
+                        <td className="p-2">2 lata</td>
+                        <td className="p-2">6 mies. – 1 rok</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p className="text-xs text-gray-500 mt-1">
+                  Powyższe okresy mają charakter orientacyjny. Dokładne
+                  warunki gwarancji zawarte są w karcie gwarancyjnej
+                  dołączonej do produktu lub na stronie producenta.
+                </p>
+              </li>
+              <li>
+                <strong>Serwis gwarancyjny produktów Zebra Technologies:</strong>
+                {' '}Sprzedawca jest autoryzowanym partnerem serwisowym
+                Zebra Technologies. Serwis gwarancyjny i pogwarancyjny
+                urządzeń Zebra realizowany jest przez:
                 <div className="bg-gray-50 border border-gray-200 rounded-lg p-3 mt-2">
                   <p className="font-semibold">Serwis Zebry</p>
                   <p>
@@ -836,6 +890,12 @@ export default function RegulaminPage() {
                     </a>
                   </p>
                 </div>
+                <p className="mt-2">
+                  W przypadku produktów pozostałych producentów (Honeywell,
+                  Datalogic, M3 Mobile, Newland, Godex, Citizen) Sprzedawca
+                  pośredniczy w przekazaniu sprzętu do autoryzowanego serwisu
+                  producenta lub wskazuje bezpośredni kontakt do serwisu.
+                </p>
               </li>
               <li>
                 <strong>Warunki skorzystania z gwarancji:</strong>
@@ -855,12 +915,13 @@ export default function RegulaminPage() {
                 </ul>
               </li>
               <li>
-                <strong>Gwarancja OneCare (opcjonalna):</strong> Sprzedawca
-                oferuje możliwość zakupu rozszerzonej umowy serwisowej
-                Zebra OneCare Essential lub Select, która przedłuża
-                standardową gwarancję i zapewnia priorytetowe wsparcie
-                techniczne. Szczegóły dostępne na stronie produktu lub
-                po kontakcie ze Sprzedawcą.
+                <strong>Rozszerzone umowy serwisowe (opcjonalne):</strong>
+                {' '}Dla wybranych produktów Sprzedawca oferuje możliwość
+                zakupu rozszerzonych umów serwisowych producenta (np. Zebra
+                OneCare Essential/Select, Honeywell Service Plans, Datalogic
+                Easeofcare), które przedłużają standardową gwarancję
+                i zapewniają priorytetowe wsparcie techniczne. Szczegóły
+                dostępne na stronie produktu lub po kontakcie ze Sprzedawcą.
               </li>
               <li>
                 Gwarancja producenta nie wyłącza, nie ogranicza ani nie
