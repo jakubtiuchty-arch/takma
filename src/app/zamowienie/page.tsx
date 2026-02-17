@@ -709,9 +709,11 @@ export default function CheckoutPage() {
                 >
                   &larr; Wroc do koszyka
                 </button>
-                <p className="text-xs text-gray-400 text-center">
-                  {formData.paymentMethod === 'online' ? 'Zostaniesz przekierowany do bezpiecznej platnosci Stripe' : 'Faktura pro forma zostanie wyslana na e-mail'}
-                </p>
+                {formData.paymentMethod === 'online' && (
+                  <p className="text-xs text-gray-400 text-center">
+                    Zostaniesz przekierowany do bezpiecznej strony platnosci
+                  </p>
+                )}
               </div>
             </div>
           </div>
