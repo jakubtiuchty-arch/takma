@@ -23,13 +23,13 @@ const slides: HeroSlide[] = [
     priceFrom: 5299,
     imageClassName: 'object-contain scale-[1.3] translate-y-[3%]',
   },
-  {
-    image: '/images/hero-memor17.jpeg',
-    name: 'Datalogic Memor 17',
-    slug: 'datalogic-memor-17',
-    priceFrom: undefined,
-    imageClassName: 'object-cover scale-[1.4]',
-  },
+  // {
+  //   image: '/images/hero-memor17.jpeg',
+  //   name: 'Datalogic Memor 17',
+  //   slug: 'datalogic-memor-17',
+  //   priceFrom: undefined,
+  //   imageClassName: 'object-cover scale-[1.4]',
+  // },
 ]
 
 const INTERVAL = 6000
