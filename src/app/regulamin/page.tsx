@@ -630,18 +630,15 @@ export default function RegulaminPage() {
                 rozpatrywania reklamacji i dochodzenia roszczeń, w tym:
                 <ul className="list-disc pl-4 mt-2 space-y-1">
                   <li>mediacji prowadzonej przez Inspekcję Handlową,</li>
-                  <li>
-                    internetowej platformy ODR dostępnej pod adresem:{' '}
-                    <a
-                      href="https://ec.europa.eu/consumers/odr"
-                      target="_blank"
-                      rel="noopener nofollow"
-                      className="text-primary-600 hover:underline"
-                    >
-                      ec.europa.eu/consumers/odr
-                    </a>
-                  </li>
+                  <li>stałych polubownych sądów konsumenckich przy Wojewódzkich Inspektoratach Inspekcji Handlowej,</li>
+                  <li>Rzecznika Praw Konsumentów lub powiatowego/miejskiego rzecznika konsumentów.</li>
                 </ul>
+                <p className="text-xs text-gray-500 mt-2">
+                  Unijna platforma ODR (ec.europa.eu/odr) została trwale zamknięta
+                  w dniu 20 lipca 2025 r. i nie jest dostępna do rozwiązywania sporów.
+                  Szczegółowe informacje o pozasądowym rozstrzyganiu sporów:{' '}
+                  <a href="https://www.uokik.gov.pl" target="_blank" rel="noopener nofollow" className="text-primary-600 hover:underline">uokik.gov.pl</a>.
+                </p>
               </li>
             </ol>
           </section>
