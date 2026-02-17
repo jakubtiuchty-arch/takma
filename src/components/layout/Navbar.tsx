@@ -86,6 +86,7 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [expandedMobileItem, setExpandedMobileItem] = useState<string | null>(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -268,40 +269,66 @@ export default function Navbar() {
           <div className="lg:hidden bg-white border-t border-gray-100 animate-slide-in-up overflow-y-auto max-h-[calc(100vh-4rem)]">
             <nav className="container-main py-4">
               <ul className="space-y-1">
-                {navigation.map((item) => (
-                  <li key={item.name}>
-                    <Link
-                      href={item.href}
-                      className={clsx(
-                        'block px-4 py-3 rounded-lg font-medium transition-colors',
-                        pathname === item.href || pathname.startsWith(item.href + '/')
-                          ? 'bg-primary-50 text-primary-600'
-                          : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+                {navigation.map((item) => {
+                  const isActive = pathname === item.href || pathname.startsWith(item.href + '/')
+                    || (item.children?.some(c => pathname === c.href))
+                  const isExpanded = expandedMobileItem === item.name
+
+                  return (
+                    <li key={item.name}>
+                      {item.children ? (
+                        <>
+                          <button
+                            onClick={() => setExpandedMobileItem(isExpanded ? null : item.name)}
+                            className={clsx(
+                              'flex items-center justify-between w-full px-4 py-3 rounded-lg font-medium transition-colors',
+                              isActive
+                                ? 'bg-primary-50 text-primary-600'
+                                : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+                            )}
+                          >
+                            {item.name}
+                            <ChevronDownIcon
+                              size={16}
+                              className={clsx('transition-transform', isExpanded && 'rotate-180')}
+                            />
+                          </button>
+                          {isExpanded && (
+                            <ul className="ml-4 mt-1 space-y-0.5">
+                              {item.children.map((child) => (
+                                <li key={child.href}>
+                                  <Link
+                                    href={child.href}
+                                    className={clsx(
+                                      'block px-4 py-2 rounded-lg text-sm transition-colors',
+                                      pathname === child.href
+                                        ? 'text-primary-600 bg-primary-50 font-medium'
+                                        : 'text-gray-500 hover:bg-gray-50 hover:text-gray-900'
+                                    )}
+                                  >
+                                    {child.name}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </>
+                      ) : (
+                        <Link
+                          href={item.href}
+                          className={clsx(
+                            'block px-4 py-3 rounded-lg font-medium transition-colors',
+                            isActive
+                              ? 'bg-primary-50 text-primary-600'
+                              : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+                          )}
+                        >
+                          {item.name}
+                        </Link>
                       )}
-                    >
-                      {item.name}
-                    </Link>
-                    {item.children && (
-                      <ul className="ml-4 mt-1 space-y-0.5">
-                        {item.children.filter(c => c.href !== item.href).map((child) => (
-                          <li key={child.href}>
-                            <Link
-                              href={child.href}
-                              className={clsx(
-                                'block px-4 py-2 rounded-lg text-sm transition-colors',
-                                pathname === child.href
-                                  ? 'text-primary-600 bg-primary-50 font-medium'
-                                  : 'text-gray-500 hover:bg-gray-50 hover:text-gray-900'
-                              )}
-                            >
-                              {child.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </li>
-                ))}
+                    </li>
+                  )
+                })}
               </ul>
               <div className="mt-4 pt-4 border-t border-gray-100">
                 <a
