@@ -520,8 +520,9 @@ export const subcategories: Subcategory[] = [
       'zebra-mc94-cradle-1slot-usb', 'zebra-mc94-cradle-4slot', 'zebra-mc94-cradle-4slot-ethernet',
       'zebra-mc94-battery-charger-4slot', 'zebra-mc94-battery-charger-16slot',
       'zebra-tc501-cradle-1slot-ethernet', 'zebra-tc501-cradle-2slot-1battery', 'zebra-tc501-cradle-2slot-ethernet-1battery',
+      'zebra-tc701-cradle-2slot-1battery', 'zebra-tc701-cradle-5slot', 'zebra-tc701-cradle-5slot-v2',
     ],
-    productCount: 33,
+    productCount: 36,
   },
   {
     id: 'etui-kabury-uchwyty',
@@ -544,8 +545,9 @@ export const subcategories: Subcategory[] = [
       'zebra-mc94-rubber-boot', 'zebra-mc94-holster',
       'zebra-em45-exoskeleton', 'zebra-em45-screen-protector',
       'zebra-tc501-exoskeleton', 'zebra-tc501-trigger', 'zebra-tc501-screen-protector', 'zebra-tc501-hand-strap',
+      'zebra-tc701-trigger',
     ],
-    productCount: 26,
+    productCount: 27,
   },
   {
     id: 'kable-zasilacze-terminali',
@@ -563,8 +565,9 @@ export const subcategories: Subcategory[] = [
       'zebra-psu-50w', 'zebra-psu-108w', 'zebra-cable-dc-388', 'zebra-cable-dc-381',
       'zebra-mc94-usb-cable',
       'zebra-em45-usb-cable',
+      'zebra-tc701-psu-12v',
     ],
-    productCount: 9,
+    productCount: 10,
   },
 ]
 
