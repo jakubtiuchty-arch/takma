@@ -17,6 +17,18 @@ interface NavItem {
 
 const navigation: NavItem[] = [
   {
+    name: 'Terminale',
+    href: '/terminale-mobilne',
+    children: [
+      { name: 'Wszystkie terminale', href: '/terminale-mobilne' },
+      { name: 'Akcesoria do terminali', href: '/akcesoria-do-terminali' },
+      { name: '— Baterie i akumulatory', href: '/baterie-do-terminali' },
+      { name: '— Stacje dokujące i ładowarki', href: '/stacje-ladowarki-terminali' },
+      { name: '— Etui, kabury i uchwyty', href: '/etui-kabury-uchwyty' },
+      { name: '— Kable i zasilacze', href: '/kable-zasilacze-terminali' },
+    ],
+  },
+  {
     name: 'Drukarki',
     href: '/drukarki-etykiet',
     children: [
@@ -64,18 +76,6 @@ const navigation: NavItem[] = [
       { name: 'Logistyka i transport', href: '/drukarki-etykiet-logistyka' },
       { name: 'Apteka i healthcare', href: '/drukarki-etykiet-apteka' },
       { name: 'Gastronomia i HoReCa', href: '/drukarki-etykiet-gastronomia' },
-    ],
-  },
-  {
-    name: 'Terminale',
-    href: '/terminale-mobilne',
-    children: [
-      { name: 'Wszystkie terminale', href: '/terminale-mobilne' },
-      { name: 'Akcesoria do terminali', href: '/akcesoria-do-terminali' },
-      { name: '— Baterie i akumulatory', href: '/baterie-do-terminali' },
-      { name: '— Stacje dokujące i ładowarki', href: '/stacje-ladowarki-terminali' },
-      { name: '— Etui, kabury i uchwyty', href: '/etui-kabury-uchwyty' },
-      { name: '— Kable i zasilacze', href: '/kable-zasilacze-terminali' },
     ],
   },
   { name: 'Katalog', href: '/katalog' },
