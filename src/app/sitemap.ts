@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/kontakt`, lastModified: new Date('2025-12-01') },
     { url: `${baseUrl}/zapytanie`, lastModified: new Date('2025-12-01') },
     { url: `${baseUrl}/polityka-prywatnosci`, lastModified: new Date('2025-06-01') },
+    { url: `${baseUrl}/regulamin`, lastModified: new Date('2026-02-17') },
   ]
 
   const productPages: MetadataRoute.Sitemap = products.map((product) => ({

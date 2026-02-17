@@ -10,6 +10,7 @@ const footerLinks = {
   firma: [
     { name: 'O nas', href: '/o-nas' },
     { name: 'Kontakt', href: '/kontakt' },
+    { name: 'Regulamin sklepu', href: '/regulamin' },
     { name: 'Polityka prywatności', href: '/polityka-prywatnosci' },
   ],
   serwis: [
