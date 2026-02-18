@@ -612,12 +612,12 @@ export default function AboutPage() {
             <p className="text-sm text-gray-500 mb-4">Zaufali nam między innymi:</p>
             <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 max-w-4xl mx-auto">
               {[
-                { src: '/images/clients/lasy_logo.png', alt: 'Lasy Państwowe — klient TAKMA' },
-                { src: '/images/clients/orlen_logo.png', alt: 'Orlen — klient TAKMA' },
-                { src: '/images/clients/poczta_polska_logo.png', alt: 'Poczta Polska — klient TAKMA' },
-                { src: '/images/clients/żabka_logo.png', alt: 'Żabka — klient TAKMA' },
-                { src: '/images/clients/cba_logo.png', alt: 'CBA — klient TAKMA' },
-                { src: '/images/clients/wosjko_logo.png', alt: 'Wojsko Polskie — klient TAKMA' },
+                { src: '/images/clients/lasy_logo.png', alt: 'Lasy Państwowe — klient TAKMA', h: 'max-h-14' },
+                { src: '/images/clients/orlen_logo.png', alt: 'Orlen — klient TAKMA', h: 'max-h-14' },
+                { src: '/images/clients/poczta_polska_logo.png', alt: 'Poczta Polska — klient TAKMA', h: 'max-h-12' },
+                { src: '/images/clients/żabka_logo.png', alt: 'Żabka — klient TAKMA', h: 'max-h-10' },
+                { src: '/images/clients/cba_logo.png', alt: 'CBA — klient TAKMA', h: 'max-h-20' },
+                { src: '/images/clients/wosjko_logo.png', alt: 'Wojsko Polskie — klient TAKMA', h: 'max-h-20' },
               ].map((client) => (
                 <div
                   key={client.alt}
@@ -626,9 +626,9 @@ export default function AboutPage() {
                   <Image
                     src={client.src}
                     alt={client.alt}
-                    width={160}
-                    height={80}
-                    className="object-contain max-h-16"
+                    width={200}
+                    height={100}
+                    className={`object-contain ${client.h}`}
                   />
                 </div>
               ))}
