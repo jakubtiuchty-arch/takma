@@ -115,14 +115,14 @@ export async function GET(request: NextRequest) {
     .service-notes { font-size: 10px; color: #64748b; margin-top: 4px; }
     .summary { display: flex; justify-content: flex-end; margin-bottom: 25px; }
     .summary-box {
-      width: 220px; background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      width: 260px; background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
       padding: 15px; border-radius: 6px; border: 1px solid #e2e8f0;
     }
-    .summary-row { display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 11px; }
+    .summary-row { display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 11px; white-space: nowrap; }
     .summary-total {
       font-size: 16px; font-weight: bold; color: #2563eb;
       border-top: 2px solid #2563eb; padding-top: 10px; margin-top: 10px;
-      display: flex; justify-content: space-between;
+      display: flex; justify-content: space-between; white-space: nowrap;
     }
     .freebies {
       background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
