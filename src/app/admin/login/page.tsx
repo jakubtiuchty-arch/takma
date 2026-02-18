@@ -1,10 +1,23 @@
 'use client'
 
-import { useActionState } from 'react'
+import { useFormState, useFormStatus } from 'react-dom'
 import { loginAdmin } from '@/actions/auth'
 
+function SubmitButton() {
+  const { pending } = useFormStatus()
+  return (
+    <button
+      type="submit"
+      disabled={pending}
+      className="w-full bg-blue-600 text-white py-2.5 rounded-lg font-medium hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+    >
+      {pending ? 'Logowanie...' : 'Zaloguj się'}
+    </button>
+  )
+}
+
 export default function AdminLoginPage() {
-  const [state, formAction, isPending] = useActionState(loginAdmin, null)
+  const [state, formAction] = useFormState(loginAdmin, null)
 
   return (
     <div className="min-h-screen bg-slate-900 flex items-center justify-center px-4">
@@ -50,13 +63,7 @@ export default function AdminLoginPage() {
             />
           </div>
 
-          <button
-            type="submit"
-            disabled={isPending}
-            className="w-full bg-blue-600 text-white py-2.5 rounded-lg font-medium hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-          >
-            {isPending ? 'Logowanie...' : 'Zaloguj się'}
-          </button>
+          <SubmitButton />
         </form>
       </div>
     </div>
