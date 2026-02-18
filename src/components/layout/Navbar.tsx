@@ -38,9 +38,9 @@ const navigation: NavItem[] = [
       { name: 'Drukarki termotransferowe', href: '/termotransferowe-drukarki-etykiet' },
       { name: 'Drukarki termiczne', href: '/termiczne-drukarki-etykiet' },
       { name: 'Drukarki mobilne', href: '/mobilne-drukarki-etykiet' },
-      { name: 'Akcesoria do drukarek', href: '/akcesoria-do-drukarek-etykiet' },
       { name: 'Drukarki opasek', href: '/drukarki-opasek' },
       { name: 'Drukarki kart', href: '/drukarki-kart' },
+      { name: 'Akcesoria do drukarek', href: '/akcesoria-do-drukarek-etykiet' },
     ],
   },
   {
