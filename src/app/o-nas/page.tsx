@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Button } from '@/components/ui'
 import {
   ChevronRightIcon,
@@ -181,6 +182,11 @@ export default function AboutPage() {
         {
           '@type': 'EducationalOccupationalCredential',
           credentialCategory: 'certification',
+          name: 'Zebra Public Sector Specialist',
+        },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          credentialCategory: 'certification',
           name: 'Zebra Printer Repair Specialist',
         },
       ],
@@ -265,7 +271,7 @@ export default function AboutPage() {
               { end: 25, suffix: '+', label: 'lat doświadczenia', sublabel: 'od 2001 roku' },
               { end: 5000, suffix: '+', label: 'zrealizowanych projektów', sublabel: 'dla firm B2B' },
               { end: 2000, suffix: '+', label: 'zadowolonych klientów', sublabel: 'w całej Polsce' },
-              { end: 24, suffix: ' lata', label: 'partnerstwa z Zebra', sublabel: 'Premier Solution Partner' },
+              { end: 4, suffix: ' firmy', label: 'Public Sector Specialist', sublabel: '1 z 4 w Polsce — Zebra' },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -534,21 +540,57 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Certyfikaty */}
-          <div className="flex flex-wrap justify-center gap-3">
+          {/* Certyfikaty Zebra — oficjalne loga */}
+          <div className="bg-white rounded-xl border border-gray-100 p-8">
+            <h3 className="text-center text-sm font-semibold text-gray-500 uppercase tracking-wider mb-6">
+              Nasze certyfikaty Zebra Technologies
+            </h3>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12">
+              <div className="text-center">
+                <Image
+                  src="/images/certifications/zebra-premier-solution-partner.png"
+                  alt="Zebra Premier Solution Partner — oficjalny certyfikat TAKMA"
+                  width={220}
+                  height={48}
+                  className="mx-auto"
+                />
+              </div>
+              <div className="text-center">
+                <Image
+                  src="/images/certifications/zebra-public-sector-specialist.png"
+                  alt="Zebra Premier Solution Partner — Public Sector Specialist — 1 z 4 firm w Polsce"
+                  width={220}
+                  height={48}
+                  className="mx-auto"
+                />
+                <span className="inline-block mt-2 px-3 py-1 rounded-full bg-primary-50 text-primary-700 text-xs font-semibold">
+                  1 z 4 firm w Polsce
+                </span>
+              </div>
+              <div className="text-center">
+                <Image
+                  src="/images/certifications/zebra-printer-repair-specialist.png"
+                  alt="Zebra Premier Solution Partner — Printer Repair Specialist — autoryzowany serwis TAKMA"
+                  width={220}
+                  height={48}
+                  className="mx-auto"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Nagrody */}
+          <div className="flex flex-wrap justify-center gap-3 mt-6">
             {[
-              'Zebra Premier Solution Partner',
-              'Zebra Business Partner',
-              'Zebra Printer Repair Specialist',
               'Złoty Medal MTP LAS-EXPO 2016',
               'Genius of Business 2020',
-            ].map((cert) => (
+            ].map((award) => (
               <span
-                key={cert}
+                key={award}
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white border border-gray-200 text-sm text-gray-700 font-medium"
               >
-                <CheckIcon size={14} className="text-green-500" />
-                {cert}
+                <CheckIcon size={14} className="text-yellow-500" />
+                {award}
               </span>
             ))}
           </div>
