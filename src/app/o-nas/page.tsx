@@ -94,11 +94,6 @@ const industries = [
     desc: 'Metkownice, drukarki cenówek, skanery kasowe i systemy inwentaryzacji',
   },
   {
-    icon: <WrenchIcon size={28} />,
-    name: 'Produkcja przemysłowa',
-    desc: 'Drukarki przemysłowe, etykiety odporne na chemikalia, systemy śledzenia',
-  },
-  {
     icon: <StarIcon size={28} />,
     name: 'Leśnictwo i środowisko',
     desc: 'Mobilne drukarki etykiet i terminale terenowe dla Lasów Państwowych',
@@ -597,7 +592,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {industries.map((industry) => (
               <div
                 key={industry.name}
