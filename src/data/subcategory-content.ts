@@ -1787,20 +1787,9 @@ Uchwyty pistoletowe (trigger handle) z ergonomicznym spustem zmniejszają obcią
       ],
     },
     expertAuthority: 'TAKMA to autoryzowany dystrybutor Zebra Technologies z ponad 20-letnim doświadczeniem na polskim rynku AutoID. Nasz zespół techniczny wymienia setki głowic drukujących rocznie i konfiguruje moduły komunikacyjne w drukarek pracujących w centrach logistycznych, na liniach produkcyjnych i w punktach sprzedaży. Jako certyfikowany partner serwisowy, współpracujemy z serwis-zebry.pl — jedynym serwisem w Polsce oferującym instrukcje obsługi drukarek Zebra w języku polskim. Każda rekomendacja na tej stronie wynika z realnych danych serwisowych i doświadczeń z tysięcy wdrożeń, nie z materiałów marketingowych producenta.',
-    technicalDeepDive: `Żywotność głowicy drukującej zależy od klasy drukarki i warunków eksploatacji. W drukarkach biurkowych (ZD220, ZD421, ZD621) głowica wytrzymuje od 500 000 do 1 500 000 etykiet przy prawidłowej konserwacji. W drukarkach przemysłowych (ZT231, ZT411, ZT610, ZT620) żywotność mierzy się w kilometrach taśmy: typowo 50–150 km, co przy etykietach 50 mm odpowiada 1 000 000–3 000 000 wydrukowanych etykiet.
+    technicalDeepDive: `Głowica drukująca to główny koszt eksploatacyjny. W drukarkach biurkowych wytrzymuje 500 tys.–1,5 mln etykiet, w przemysłowych 1–3 mln. Regularne czyszczenie IPA 99% podwaja żywotność.
 
-Czynniki skracające żywotność głowicy: chropowate etykiety (papier eco vs papier powlekany — różnica żywotności 30–50%), zbyt wysoka ciemność druku (ustawienie powyżej 60% skraca życie o 20–40%), brak regularnego czyszczenia (kurz i klej z etykiet osadzają się na elementach grzejnych). Czyszczenie głowicy alkoholem izopropylowym (IPA 99%) co 1 000 etykiet lub przy każdej wymianie rolki może wydłużyć żywotność nawet dwukrotnie.
-
-Analiza TCO akcesoriów: oryginalna głowica 203 dpi do ZD621d (P1112640-050) kosztuje od 509 zł netto i wytrzymuje ~1 000 000 etykiet. Zamiennikowa głowica kosztuje ~200–300 zł, ale wytrzymuje ~300 000–500 000 etykiet. W perspektywie 3 000 000 etykiet: oryginał = 3 głowice × 509 zł = 1 527 zł; zamiennik = 6–10 głowic × 250 zł = 1 500–2 500 zł + ryzyko utraty gwarancji + przestoje na częstsze wymiany.
-
-Macierz kompatybilności — krytyczne różnice w obrębie serii:
-• Głowice: ZD621d → P1112640-050 (203 dpi), P1112640-051 (300 dpi) | ZD621t → P1112640-240 (203 dpi), P1112640-241 (300 dpi)
-• Gilotyny: ZD421d/ZD621d → P1112640-030 (współdzielona) | ZD421t → P1112640-230 | ZD621t → P1112640-237
-• Odklejaki: ZD421d/ZD621d → P1112640-031 (współdzielona) | ZD621t → P1112640-238
-• Wi-Fi MCS: ZD411/ZD421/ZD621d → P1112640-017C (od 534 zł) | ZD621t → P1112640-239C
-• Wałki dociskowe ZD421d/ZD621d: P1112640-061 (203 dpi), P1112640-062 (300 dpi), P1112640-063 (203 dpi linerless), P1112640-064 (300 dpi linerless)
-
-Moduły Wi-Fi instalowane w gnieździe MCS (Modular Connectivity Slot) obsługują standard 802.11ac z WPA2-Enterprise i szyfrowanie AES-256. Instalacja w terenie wymaga jedynie wykręcenia zaślepki, wsunięcia modułu i konfiguracji przez Zebra Setup Utilities — cała operacja trwa ok. 5 minut bez narzędzi.`,
+Akcesoria Zebra mają RÓŻNE Part Numbery nawet w obrębie tej samej serii — np. głowica ZD621d (P1112640-050) ≠ ZD621t (P1112640-240). Przed zamówieniem zawsze zweryfikuj wariant drukarki (d/t) i rozdzielczość (203/300 dpi).`,
     useCases: [
       {
         title: 'Magazyn e-commerce — wymiana głowicy co 12 miesięcy',

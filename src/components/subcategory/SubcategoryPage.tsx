@@ -14,6 +14,28 @@ import {
 } from '@/data/products'
 import { subcategoryContent } from '@/data/subcategory-content'
 
+/** Renders text with \n\n paragraph breaks and \n line breaks within paragraphs */
+function RichText({ text, className }: { text: string; className?: string }) {
+  const paragraphs = text.split('\n\n')
+  return (
+    <div className={className}>
+      {paragraphs.map((para, i) => {
+        const lines = para.split('\n')
+        return (
+          <p key={i}>
+            {lines.map((line, j) => (
+              <span key={j}>
+                {j > 0 && <br />}
+                {line}
+              </span>
+            ))}
+          </p>
+        )
+      })}
+    </div>
+  )
+}
+
 /** Konfiguracja filtrów w sidebarze per subcategory */
 const sidebarFilters: Record<string, FilterDefinition[]> = {
   'tasmy-termotransferowe': [
@@ -223,11 +245,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
 
                 <section>
                   <h2 className="text-2xl font-bold text-gray-900 mb-3">Parametry techniczne i koszty</h2>
-                  <div className="text-gray-600 leading-relaxed space-y-3 sm:text-justify">
-                    {content.technicalDeepDive.split('\n\n').map((paragraph, i) => (
-                      <p key={i}>{paragraph}</p>
-                    ))}
-                  </div>
+                  <RichText text={content.technicalDeepDive} className="text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
                 </section>
 
                 <section>
@@ -263,7 +281,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                       {content.comparisons.map((comp, i) => (
                         <div key={i} className="border-l-4 border-primary-500 pl-4">
                           <h3 className="font-semibold text-gray-900 mb-1">{comp.title}</h3>
-                          <p className="text-gray-600 text-sm leading-relaxed">{comp.content}</p>
+                          <RichText text={comp.content} className="text-gray-600 text-sm leading-relaxed space-y-2" />
                         </div>
                       ))}
                     </div>
@@ -435,11 +453,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
 
                   <section>
                     <h2 className="text-2xl font-bold text-gray-900 mb-3">Parametry techniczne i koszty</h2>
-                    <div className="text-gray-600 leading-relaxed space-y-3 sm:text-justify">
-                      {content.technicalDeepDive.split('\n\n').map((paragraph, i) => (
-                        <p key={i}>{paragraph}</p>
-                      ))}
-                    </div>
+                    <RichText text={content.technicalDeepDive} className="text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
                   </section>
 
                   <section>
@@ -475,7 +489,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                         {content.comparisons.map((comp, i) => (
                           <div key={i} className="border-l-4 border-primary-500 pl-4">
                             <h3 className="font-semibold text-gray-900 mb-1">{comp.title}</h3>
-                            <p className="text-gray-600 text-sm leading-relaxed">{comp.content}</p>
+                            <RichText text={comp.content} className="text-gray-600 text-sm leading-relaxed space-y-2" />
                           </div>
                         ))}
                       </div>

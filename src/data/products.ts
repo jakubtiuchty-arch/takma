@@ -323,8 +323,25 @@ export const subcategories: Subcategory[] = [
       'zebra-lpt-zt411', 'zebra-rfid-zt411',
       'zebra-rewind-zt411', 'zebra-rewind-zt610', 'zebra-rewind-zt620',
       'zebra-keyboard-zkdu', 'zebra-resolution-converter-zt411', 'zebra-resolution-converter-zt421',
+      // Akcesoria do drukarek mobilnych ZQ
+      'zebra-battery-zq5-standard', 'zebra-battery-zq5-extended', 'zebra-battery-zq630',
+      'zebra-charger-1slot-zq5', 'zebra-charger-3slot-zq5', 'zebra-ac-adapter-zq5',
+      'zebra-soft-case-zq5', 'zebra-exoskeleton-zq5',
+      'zebra-usb-cable-zq5', 'zebra-usb-adapter-zq5',
+      'zebra-soft-case-zq521', 'zebra-exoskeleton-zq521',
+      'zebra-soft-case-zq610', 'zebra-soft-case-zq620',
+      'zebra-belt-clip-zq610', 'zebra-usb-cable-zq610', 'zebra-cable-db9-zq610',
+      'zebra-car-charger-zq5',
+      'zebra-battery-zq3', 'zebra-cradle-zq3',
+      'zebra-charger-1slot-zq3', 'zebra-charger-3slot-zq3',
+      'zebra-belt-clip-zq3', 'zebra-soft-case-zq310', 'zebra-soft-case-zq320',
+      'zebra-battery-zq220plus', 'zebra-battery-zq210',
+      'zebra-belt-clip-zq2', 'zebra-soft-case-zq210', 'zebra-soft-case-zq220plus',
+      'zebra-charger-zq220plus',
+      // Akcesoria ZD510-HC (drukarka opasek)
+      'zebra-printhead-zd510-hc', 'zebra-platen-roller-zd510-hc',
     ],
-    productCount: 70,
+    productCount: 103,
   },
   // --- Podkategorie: Materiały eksploatacyjne ---
   {
@@ -15077,6 +15094,7 @@ const mobilePrinterAccessories: Product[] = [
 
 Wymienna hot-swap — wymiana w 5 sekund bez wyłączania drukarki. Jedna bateria wystarcza na 800–1000 etykiet standardowego rozmiaru. Czas ładowania: 2,5–3 godziny.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 373.36,
     images: ['/images/products/BTRY-MPP-34MA1-01.png'],
@@ -15105,6 +15123,7 @@ Wymienna hot-swap — wymiana w 5 sekund bez wyłączania drukarki. Jedna bateri
 
 Kompatybilna z drukarkami ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Technologia PowerPrecision+ z monitorowaniem stanu baterii. Wymienna hot-swap.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 573.38,
     images: ['/images/products/BTRY-MPP-EXT1-01.png'],
@@ -15133,6 +15152,7 @@ Kompatybilna z drukarkami ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Technologia PowerPr
 
 Czas ładowania baterii 3250 mAh: ok. 2,5–3 godziny. Zawiera zasilacz sieciowy EU. Idealna do pojedynczych stanowisk roboczych.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 505.51,
     images: ['/images/products/SAC-MPP-1BCHGEU1-01.png'],
@@ -15161,6 +15181,7 @@ Czas ładowania baterii 3250 mAh: ok. 2,5–3 godziny. Zawiera zasilacz sieciowy
 
 Idealna do flot mobilnych — wystarczy jedna ładowarka na 3 stanowiska. Zawiera zasilacz sieciowy EU. Kompaktowa konstrukcja na blat lub regał.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 1273.77,
     images: ['/images/products/SAC-MPP-3BCHGEU1-01.png'],
@@ -15189,6 +15210,7 @@ Idealna do flot mobilnych — wystarczy jedna ładowarka na 3 stanowiska. Zawier
 
 Przydatny przy pracy stacjonarnej (np. punkt serwisowy, recepcja) lub jako zapasowy zasilacz na stanowisko ładowania.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 248.16,
     images: ['/images/products/P1031365-042.png'],
@@ -15216,6 +15238,7 @@ Przydatny przy pracy stacjonarnej (np. punkt serwisowy, recepcja) lub jako zapas
 
 Etui umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia dostęp do wydrukowanych etykiet.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 249.17,
     images: ['/images/products/P1063406-038.png'],
@@ -15243,6 +15266,7 @@ Etui umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia do
 
 Niezbędny do pracy na zewnątrz (deszcz, śnieg), na rampach załadunkowych i w środowiskach o podwyższonym ryzyku upadków. Nie utrudnia wymiany baterii ani rolek etykiet.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 523.24,
     images: ['/images/products/P1063406-043.png'],
@@ -15272,6 +15296,7 @@ Niezbędny do pracy na zewnątrz (deszcz, śnieg), na rampach załadunkowych i w
 
 Używany do serwisu, aktualizacji firmware i konfiguracji drukarki z komputera.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 74.77,
     images: ['/images/products/P1063406-045.png'],
@@ -15297,6 +15322,7 @@ Używany do serwisu, aktualizacji firmware i konfiguracji drukarki z komputera.`
     shortDescription: 'Krótki adapter USB OTG do drukarek mobilnych Zebra serii ZQ500/ZQ600',
     description: `Adapter USB Micro A/B do USB-A (15 cm) do drukarek mobilnych Zebra ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Umożliwia podłączenie standardowych urządzeń USB (pendrive, czytnik kart) do portu USB OTG drukarki.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 32.90,
     images: ['/images/products/P1063406-047.png'],
@@ -15327,6 +15353,7 @@ Technologia PowerPrecision+ monitoruje stan baterii, informuje o konieczności w
 
 Jedna bateria wystarcza na 1200–1500 etykiet standardowego rozmiaru (100×150 mm). Czas ładowania w ładowarce 1-gniazdowej: ok. 4–5 godzin.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 582.41,
     images: ['/images/products/BTRY-MPP-68MA1-01.png'],
@@ -15356,6 +15383,7 @@ Jedna bateria wystarcza na 1200–1500 etykiet standardowego rozmiaru (100×150 
 
 Etui umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia dostęp do wydrukowanych etykiet. Wersja dedykowana do drukarek 4-calowych (ZQ520/ZQ521).`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 274.07,
     images: ['/images/products/P1063406-037.png'],
@@ -15383,6 +15411,7 @@ Etui umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia do
 
 Niezbędny do pracy na zewnątrz (deszcz, śnieg), na rampach załadunkowych i w środowiskach o podwyższonym ryzyku upadków. Wersja dedykowana do drukarek 4-calowych (ZQ520/ZQ521). Nie utrudnia wymiany baterii ani rolek etykiet.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 503.11,
     images: ['/images/products/P1063406-044.png'],
@@ -15413,6 +15442,7 @@ Niezbędny do pracy na zewnątrz (deszcz, śnieg), na rampach załadunkowych i w
 
 Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia dostęp do wydrukowanych etykiet i pokwitowań. Dedykowany do drukarek 2-calowych serii ZQ610.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 387.18,
     images: ['/images/products/P1031365-044.png'],
@@ -15440,6 +15470,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
 
 Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia dostęp do wydrukowanych etykiet i pokwitowań. Dedykowany do drukarek 3-calowych serii ZQ620 i QLn320.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 393.44,
     images: ['/images/products/P1031365-029.png'],
@@ -15467,6 +15498,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
 
 Solidna metalowa konstrukcja z mechanizmem szybkiego zwalniania. Pasuje do standardowych pasków o szerokości do 50 mm.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 157.41,
     images: ['/images/products/P1031365-028.png'],
@@ -15494,6 +15526,7 @@ Solidna metalowa konstrukcja z mechanizmem szybkiego zwalniania. Pasuje do stand
 
 Kabel z blokadą zapobiega przypadkowemu odłączeniu podczas pracy.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 90.39,
     images: ['/images/products/P1031365-055.png'],
@@ -15521,6 +15554,7 @@ Kabel z blokadą zapobiega przypadkowemu odłączeniu podczas pracy.`,
 
 Długość kabla zapewnia wygodne podłączenie drukarki na stanowisku roboczym. Przydatny w integracji ze starszymi systemami kasowymi i wagowymi.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 154.89,
     images: ['/images/products/P1031365-053.png'],
@@ -15548,6 +15582,7 @@ Długość kabla zapewnia wygodne podłączenie drukarki na stanowisku roboczym.
 
 Kompatybilny z drukarkami ZQ511, ZQ521, ZQ610, ZQ620 i ZQ630 (Plus). Automatyczne wykrywanie napięcia 12V/24V.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 198.59,
     images: ['/images/products/P1031359.png'],
@@ -15576,6 +15611,7 @@ Kompatybilny z drukarkami ZQ511, ZQ521, ZQ610, ZQ620 i ZQ630 (Plus). Automatyczn
 
 Wymienna — wymiana w kilka sekund bez narzędzi. Jedna bateria wystarcza na 300–500 paragonów przy umiarkowanym obciążeniu. Czas ładowania: ~2,5 godziny w ładowarce 1-gniazdowej.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 418.81,
     images: ['/images/products/BTRY-MPM-22MA1-01.png'],
@@ -15604,6 +15640,7 @@ Wymienna — wymiana w kilka sekund bez narzędzi. Jedna bateria wystarcza na 30
 
 Idealna do biura, magazynu lub stanowiska kurierskiego — drukarka wraca na stację po zmianie, rano jest naładowana i gotowa do pracy. Zawiera zasilacz sieciowy EU.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 395.35,
     images: ['/images/products/CRD-MPM-1SCHGEU1-01.png'],
@@ -15632,6 +15669,7 @@ Idealna do biura, magazynu lub stanowiska kurierskiego — drukarka wraca na sta
 
 Czas ładowania baterii 2280 mAh: ~2,5 godziny. Zawiera zasilacz sieciowy EU. Idealna do pojedynczych stanowisk roboczych.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 418.52,
     images: ['/images/products/SAC-MPM-1BCHGEU1-01.png'],
@@ -15660,6 +15698,7 @@ Czas ładowania baterii 2280 mAh: ~2,5 godziny. Zawiera zasilacz sieciowy EU. Id
 
 Idealna do flot kurierskich i mobilnych — wystarczy jedna ładowarka na 3 stanowiska. Zawiera zasilacz sieciowy EU. Kompaktowa konstrukcja na blat lub regał.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 1162.83,
     images: ['/images/products/SAC-MPM-3BCHGEU1-01.png'],
@@ -15688,6 +15727,7 @@ Idealna do flot kurierskich i mobilnych — wystarczy jedna ładowarka na 3 stan
 
 Solidna konstrukcja z mechanizmem szybkiego zwalniania. Pasuje do standardowych pasków.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 136.95,
     images: ['/images/products/KIT-MPM-BLTCLP5-01.png'],
@@ -15715,6 +15755,7 @@ Solidna konstrukcja z mechanizmem szybkiego zwalniania. Pasuje do standardowych 
 
 Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia dostęp do wydrukowanych paragonów i etykiet. Dedykowany do drukarek 2-calowych ZQ310 Plus.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 162.81,
     images: ['/images/products/SG-MPM-SC21-01.png'],
@@ -15742,6 +15783,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
 
 Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia dostęp do wydrukowanych paragonów i etykiet. Dedykowany do drukarek 3-calowych ZQ320 Plus.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 162.81,
     images: ['/images/products/SG-MPM-SC31-01.png'],
@@ -15768,6 +15810,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
     shortDescription: 'Oryginalna bateria Li-Ion 2500 mAh do drukarki mobilnej Zebra ZQ220 Plus',
     description: `Oryginalna bateria zapasowa Zebra Li-Ion 2500 mAh (7,4 V) do mobilnej drukarki ZQ220 Plus, ZQ120 Plus i ZR138. Wymienna przez operatora — wymiana w kilka sekund bez narzędzi. Jedna bateria wystarcza na min. 500 etykiet standardowego rozmiaru. Ładowanie przez USB-C: poniżej 4 godzin.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     images: ['/images/products/BTRY-MPV-25MAC1-01.png'],
     imageDescriptions: ['Bateria 2500 mAh do Zebra ZQ220 Plus'],
@@ -15795,6 +15838,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
     shortDescription: 'Oryginalna bateria Li-Ion 1500 mAh do drukarki mobilnej Zebra ZQ210',
     description: `Oryginalna bateria zapasowa Zebra Li-Ion 1500 mAh (7,4 V) do mobilnej drukarki ZQ210, ZQ220 (starsza generacja) i ZQ112. Wymienna przez operatora. Ładowanie przez USB-C z dowolnej ładowarki USB.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     images: ['/images/products/P1105740-01.png'],
     imageDescriptions: ['Bateria 1500 mAh do Zebra ZQ210'],
@@ -15821,6 +15865,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
     shortDescription: 'Oryginalny klips do paska (5 szt.) do drukarek mobilnych Zebra ZQ210, ZQ220 Plus, ZQ310, ZQ320',
     description: `Oryginalny klips do paska Zebra (opakowanie 5 sztuk) kompatybilny z drukarkami mobilnymi ZQ210, ZQ220, ZQ220 Plus, ZQ310, ZQ320. Pozwala nosić drukarkę na pasku podczas pracy w terenie.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     images: ['/images/products/KIT-MPV-BLTCP21-05.png'],
     imageDescriptions: ['Klips do paska do Zebra ZQ210 / ZQ220 Plus (5 szt.)'],
@@ -15846,6 +15891,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
     shortDescription: 'Miękki futerał z paskiem na ramię do drukarki ZQ210 — podnosi IP do IP54',
     description: `Oryginalny miękki futerał ochronny Zebra do mobilnej drukarki ZQ210 (2-calowej) z paskiem na ramię. Podnosi klasę ochrony drukarki z IP43 do IP54. Otwarta góra umożliwia drukowanie bez wyjmowania.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     images: ['/images/products/SG-MPV-SC21-01.png'],
     imageDescriptions: ['Futerał ochronny do Zebra ZQ210'],
@@ -15871,6 +15917,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
     shortDescription: 'Miękki futerał z paskiem na ramię do drukarki ZQ220 Plus (3")',
     description: `Oryginalny miękki futerał ochronny Zebra do mobilnej drukarki ZQ220 Plus (3-calowej) z paskiem na ramię. Chroni drukarkę przed zarysowaniami i uderzeniami. Otwarta góra umożliwia drukowanie bez wyjmowania.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     images: ['/images/products/SG-MPV-SC31-01.png'],
     imageDescriptions: ['Futerał ochronny do Zebra ZQ220 Plus'],
@@ -15896,6 +15943,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
     shortDescription: 'Ładowarka 1-slot do baterii drukarki mobilnej Zebra ZQ220 Plus',
     description: `Oryginalna ładowarka baterii Zebra 1-gniazdowa do mobilnej drukarki ZQ220 Plus, ZQ120 Plus i ZR138. LED informuje o stanie ładowania (czerwony = ładowanie, zielony = pełna). Zasilacz i kabel USB-C w zestawie.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     images: ['/images/products/CHG-MPV-SNGBC1-01.png'],
     imageDescriptions: ['Ładowarka baterii 1-gniazdowa do Zebra ZQ220 Plus'],
@@ -20388,6 +20436,7 @@ Zalecana wymiana co ok. 50 000–100 000 opasek w zależności od intensywności
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 679.54,
     images: ['/images/products/P1100266-003.png'],
@@ -20425,6 +20474,7 @@ Zalecana wymiana przy pogorszeniu jakości druku lub nierównym nadruku. Gwaranc
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 554.24,
     images: ['/images/products/P1100266-008.png'],
