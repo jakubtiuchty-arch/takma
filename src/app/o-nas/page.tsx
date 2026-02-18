@@ -145,7 +145,7 @@ export default function AboutPage() {
         name: 'Tadeusz Tiuchty',
         jobTitle: 'Założyciel i właściciel',
         description:
-          'Absolwent Uniwersytetu Wrocławskiego (prawo) i Uniwersytetu Rolniczego w Krakowie (leśnictwo). Wieloletni sekretarz Stowarzyszenia Przedsiębiorców Leśnych, prelegent IFBC 2018, autor książki Las Polski.',
+          'Absolwent Uniwersytetu Wrocławskiego (prawo) i Uniwersytetu Rolniczego w Krakowie (leśnictwo). Wieloletni sekretarz Stowarzyszenia Przedsiębiorców Leśnych, prelegent IFBC 2018.',
       },
       address: {
         '@type': 'PostalAddress',
@@ -323,13 +323,12 @@ export default function AboutPage() {
                 <p>
                   Przez <strong className="text-gray-900">8 lat pełnił funkcję sekretarza
                   Stowarzyszenia Przedsiębiorców Leśnych</strong>, aktywnie wspierając rozwój
-                  technologiczny polskiego leśnictwa. Jest autorem książki
-                  &quot;Las Polski&quot; i prelegentem na konferencji IFBC 2018.
+                  technologiczny polskiego leśnictwa. Był prelegentem na konferencji IFBC 2018.
                 </p>
               </div>
 
               {/* Callout cards */}
-              <div className="grid sm:grid-cols-3 gap-3 mt-8">
+              <div className="grid sm:grid-cols-2 gap-3 mt-8">
                 <div className="bg-primary-50 rounded-lg p-3 text-center">
                   <div className="text-primary-700 font-semibold text-sm">Prelegent</div>
                   <div className="text-primary-600 text-xs">IFBC 2018</div>
@@ -337,10 +336,6 @@ export default function AboutPage() {
                 <div className="bg-primary-50 rounded-lg p-3 text-center">
                   <div className="text-primary-700 font-semibold text-sm">Sekretarz SPL</div>
                   <div className="text-primary-600 text-xs">8 lat działalności</div>
-                </div>
-                <div className="bg-primary-50 rounded-lg p-3 text-center">
-                  <div className="text-primary-700 font-semibold text-sm">Autor</div>
-                  <div className="text-primary-600 text-xs">&quot;Las Polski&quot;</div>
                 </div>
               </div>
 
