@@ -50,31 +50,23 @@ export default function QuoteSummary() {
           </div>
           <div>
             <label className="block text-xs font-medium text-gray-500 mb-1">Płatność</label>
-            <select
+            <input
+              type="text"
               value={paymentTerms}
               onChange={(e) => setTerms({ paymentTerms: e.target.value })}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm bg-white"
-            >
-              <option value="7 dni">7 dni</option>
-              <option value="14 dni">14 dni</option>
-              <option value="21 dni">21 dni</option>
-              <option value="30 dni">30 dni</option>
-              <option value="Przedpłata">Przedpłata</option>
-              <option value="Za pobraniem">Za pobraniem</option>
-            </select>
+              placeholder="np. 14 dni, przedpłata"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm"
+            />
           </div>
           <div>
             <label className="block text-xs font-medium text-gray-500 mb-1">Dostawa</label>
-            <select
+            <input
+              type="text"
               value={deliveryTerms}
               onChange={(e) => setTerms({ deliveryTerms: e.target.value })}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm bg-white"
-            >
-              <option value="2-5 dni roboczych">2-5 dni roboczych</option>
-              <option value="1-3 dni robocze">1-3 dni robocze</option>
-              <option value="7-10 dni roboczych">7-10 dni roboczych</option>
-              <option value="Do uzgodnienia">Do uzgodnienia</option>
-            </select>
+              placeholder="np. 2-5 dni roboczych"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm"
+            />
           </div>
         </div>
       </div>
