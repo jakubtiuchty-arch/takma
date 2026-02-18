@@ -71,13 +71,15 @@ const faqItems = [
 ]
 
 const partners = [
-  { name: 'Zebra Technologies', status: 'Premier Solution Partner' },
-  { name: 'Honeywell', status: 'Autoryzowany partner' },
-  { name: 'Datalogic', status: 'Autoryzowany partner' },
-  { name: 'TSC', status: 'Autoryzowany partner' },
-  { name: 'Citizen', status: 'Autoryzowany partner' },
-  { name: 'Godex', status: 'Autoryzowany partner' },
-  { name: 'SATO', status: 'Autoryzowany partner' },
+  { name: 'Zebra Technologies', status: 'Premier Solution Partner', logo: '/images/partners/logo_zebra.png' },
+  { name: 'Honeywell', status: 'Autoryzowany partner', logo: '/images/partners/logo_honeywell.png' },
+  { name: 'Datalogic', status: 'Autoryzowany partner', logo: '/images/partners/logo_datalogic.png' },
+  { name: 'TSC', status: 'Autoryzowany partner', logo: '/images/partners/logo_tsc.png' },
+  { name: 'Citizen', status: 'Autoryzowany partner', logo: '/images/partners/logo_citizen.png' },
+  { name: 'Godex', status: 'Autoryzowany partner', logo: '/images/partners/logo-godex.png' },
+  { name: 'SATO', status: 'Autoryzowany partner', logo: '/images/partners/logo_sato.png' },
+  { name: 'Newland', status: 'Autoryzowany partner', logo: '/images/partners/logo_newland.png' },
+  { name: 'M3 Mobile', status: 'Autoryzowany partner', logo: '/images/partners/logo_m3mobile.png' },
 ]
 
 const industries = [
@@ -514,28 +516,25 @@ export default function AboutPage() {
           </div>
 
           {/* Loga partnerów */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+          <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-4 mb-12">
             {partners.map((partner) => (
               <div
                 key={partner.name}
-                className="bg-white rounded-xl p-6 border border-gray-100 text-center hover:shadow-md transition-all group"
+                className="bg-white rounded-xl p-5 border border-gray-100 text-center hover:shadow-md transition-all group"
               >
-                <div className="w-16 h-16 mx-auto mb-3 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-primary-50 transition-colors">
-                  <span className="text-gray-400 group-hover:text-primary-600 font-bold text-xs transition-colors">
-                    {partner.name.split(' ')[0]}
-                  </span>
+                <div className="h-12 flex items-center justify-center mb-3 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all">
+                  <Image
+                    src={partner.logo}
+                    alt={`Logo ${partner.name} — partner TAKMA`}
+                    width={120}
+                    height={48}
+                    className="object-contain max-h-12"
+                  />
                 </div>
-                <h3 className="font-semibold text-gray-900 text-sm">{partner.name}</h3>
-                <p className="text-gray-500 text-xs mt-1">{partner.status}</p>
+                <h3 className="font-semibold text-gray-900 text-xs">{partner.name}</h3>
+                <p className="text-gray-500 text-[10px] mt-0.5">{partner.status}</p>
               </div>
             ))}
-            {/* Extra card for more */}
-            <div className="bg-white rounded-xl p-6 border border-gray-100 text-center flex flex-col items-center justify-center">
-              <div className="w-16 h-16 mx-auto mb-3 bg-gray-50 rounded-lg flex items-center justify-center">
-                <span className="text-gray-300 text-2xl font-light">+</span>
-              </div>
-              <p className="text-gray-500 text-xs">i wielu innych</p>
-            </div>
           </div>
 
           {/* Certyfikaty Zebra — oficjalne loga */}
