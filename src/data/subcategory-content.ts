@@ -1768,4 +1768,191 @@ Uchwyty pistoletowe (trigger handle) z ergonomicznym spustem zmniejszają obcią
       { name: 'Podłącz', text: 'Zasilacz → kabel AC → gniazdko sieciowe. Zasilacz → stacja dokująca (wtyczka barrel). Terminal → stacja. Zielona dioda LED = ładowanie w toku.' },
     ],
   },
+
+  'akcesoria-do-drukarek-etykiet': {
+    definition: {
+      heading: 'Co to są akcesoria do drukarek etykiet?',
+      content: 'Akcesoria do drukarek etykiet to oryginalne części zamienne i moduły rozszerzające funkcjonalność drukarek termicznych i termotransferowych Zebra. Do najważniejszych kategorii należą: głowice drukujące (203, 300 i 600 dpi) — kluczowy element eksploatacyjny odpowiedzialny za jakość druku; gilotyny (cuttery) do automatycznego odcinania etykiet; odklejaki (dyspensery/peelery) do automatycznego oddzielania etykiet od podkładu; wałki dociskowe (platen rollers) utrzymujące równomierne dociskanie materiału; moduły komunikacyjne (Wi-Fi 802.11ac, Ethernet 10/100, RS-232, Bluetooth 5.0) instalowane w gniazdach MCS; zasilacze sieciowe o różnej mocy i napięciu; moduły baterii do pracy mobilnej; nawijaki podkładu i etykiet; oraz moduły RFID do kodowania znaczników UHF. Dobór odpowiednich akcesoriów wymaga dokładnej weryfikacji kompatybilności z konkretnym modelem drukarki — Part Numbery różnią się nawet między wariantami tego samego modelu (np. ZD621d vs ZD621t).',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać akcesoria do drukarki etykiet Zebra?',
+      items: [
+        'Kompatybilność z modelem drukarki — to najważniejszy krok. Każde akcesorium Zebra ma dedykowany Part Number przypisany do konkretnego modelu lub serii. Głowica do ZD621d (P1112640-050) jest INNA niż głowica do ZD621t (P1112640-240) — mimo że to ta sama seria ZD621. Przed zakupem zawsze zweryfikuj PN na stronie produktu lub skontaktuj się z nami.',
+        'Rozdzielczość głowicy i wałka dociskowego — muszą być zgodne! Jeśli drukarka pracuje w 203 dpi, głowica i wałek muszą być 203 dpi. Wymiana na 300 dpi wymaga zmiany obu elementów jednocześnie. Nie mieszaj rozdzielczości — to najczęstsza przyczyna nieczytelnego druku po wymianie.',
+        'Gilotyna vs odklejak — to modyfikacje wzajemnie się wykluczające. Nie można zainstalować obu jednocześnie. Gilotyna automatycznie odcina etykietę (idealna do etykiet logistycznych). Odklejak automatycznie oddziela etykietę od podkładu (idealny do etykiet produktowych aplikowanych ręcznie). Wybierz jedną opcję na podstawie procesu pracy.',
+        'Opcje field-installable — wiele akcesoriów Zebra można zainstalować samodzielnie, bez wzywania serwisanta. Moduły Wi-Fi/Ethernet w gniazdzie MCS montuje się w 5 minut. Głowicę w drukarkach biurkowych wymienia się w 60 sekund. Gilotyny i odklejaki wymagają prostego montażu mechanicznego.',
+        'Oryginalne vs zamiennikowe — oryginalne akcesoria Zebra kosztują więcej, ale gwarantują pełną kompatybilność, zachowanie gwarancji drukarki i 2–3-krotnie dłuższą żywotność. Zamiennikowe głowice (aftermarket) mogą unieważnić gwarancję i zużywają się nawet 3× szybciej — co w perspektywie roku generuje WYŻSZE koszty.',
+        'Kiedy wymieniać głowicę — objawy zużycia to: przerywane linie w kodach kreskowych, blade fragmenty wydruku, pionowe smugi, nieskanowalność kodów. Wymiana głowicy to standardowa czynność serwisowa, nie naprawa — planuj ją w kalkulacji TCO.',
+        'Zasilacz — sprawdź napięcie i moc! Zasilacz ZD220 (P1080383-418, 24V/2.5A) NIE pasuje do ZD421 (P1080383-440, 24V/2.5A — inna wtyczka). Użycie nieodpowiedniego zasilacza może uszkodzić drukarkę i unieważnić gwarancję.',
+      ],
+    },
+    expertAuthority: 'TAKMA to autoryzowany dystrybutor Zebra Technologies z ponad 20-letnim doświadczeniem na polskim rynku AutoID. Nasz zespół techniczny wymienia setki głowic drukujących rocznie i konfiguruje moduły komunikacyjne w drukarek pracujących w centrach logistycznych, na liniach produkcyjnych i w punktach sprzedaży. Jako certyfikowany partner serwisowy, współpracujemy z serwis-zebry.pl — jedynym serwisem w Polsce oferującym instrukcje obsługi drukarek Zebra w języku polskim. Każda rekomendacja na tej stronie wynika z realnych danych serwisowych i doświadczeń z tysięcy wdrożeń, nie z materiałów marketingowych producenta.',
+    technicalDeepDive: `Żywotność głowicy drukującej zależy od klasy drukarki i warunków eksploatacji. W drukarkach biurkowych (ZD220, ZD421, ZD621) głowica wytrzymuje od 500 000 do 1 500 000 etykiet przy prawidłowej konserwacji. W drukarkach przemysłowych (ZT231, ZT411, ZT610, ZT620) żywotność mierzy się w kilometrach taśmy: typowo 50–150 km, co przy etykietach 50 mm odpowiada 1 000 000–3 000 000 wydrukowanych etykiet.
+
+Czynniki skracające żywotność głowicy: chropowate etykiety (papier eco vs papier powlekany — różnica żywotności 30–50%), zbyt wysoka ciemność druku (ustawienie powyżej 60% skraca życie o 20–40%), brak regularnego czyszczenia (kurz i klej z etykiet osadzają się na elementach grzejnych). Czyszczenie głowicy alkoholem izopropylowym (IPA 99%) co 1 000 etykiet lub przy każdej wymianie rolki może wydłużyć żywotność nawet dwukrotnie.
+
+Analiza TCO akcesoriów: oryginalna głowica 203 dpi do ZD621d (P1112640-050) kosztuje od 509 zł netto i wytrzymuje ~1 000 000 etykiet. Zamiennikowa głowica kosztuje ~200–300 zł, ale wytrzymuje ~300 000–500 000 etykiet. W perspektywie 3 000 000 etykiet: oryginał = 3 głowice × 509 zł = 1 527 zł; zamiennik = 6–10 głowic × 250 zł = 1 500–2 500 zł + ryzyko utraty gwarancji + przestoje na częstsze wymiany.
+
+Macierz kompatybilności — krytyczne różnice w obrębie serii:
+• Głowice: ZD621d → P1112640-050 (203 dpi), P1112640-051 (300 dpi) | ZD621t → P1112640-240 (203 dpi), P1112640-241 (300 dpi)
+• Gilotyny: ZD421d/ZD621d → P1112640-030 (współdzielona) | ZD421t → P1112640-230 | ZD621t → P1112640-237
+• Odklejaki: ZD421d/ZD621d → P1112640-031 (współdzielona) | ZD621t → P1112640-238
+• Wi-Fi MCS: ZD411/ZD421/ZD621d → P1112640-017C (od 534 zł) | ZD621t → P1112640-239C
+• Wałki dociskowe ZD421d/ZD621d: P1112640-061 (203 dpi), P1112640-062 (300 dpi), P1112640-063 (203 dpi linerless), P1112640-064 (300 dpi linerless)
+
+Moduły Wi-Fi instalowane w gnieździe MCS (Modular Connectivity Slot) obsługują standard 802.11ac z WPA2-Enterprise i szyfrowanie AES-256. Instalacja w terenie wymaga jedynie wykręcenia zaślepki, wsunięcia modułu i konfiguracji przez Zebra Setup Utilities — cała operacja trwa ok. 5 minut bez narzędzi.`,
+    useCases: [
+      {
+        title: 'Magazyn e-commerce — wymiana głowicy co 12 miesięcy',
+        description: 'Firma wysyłająca 1 000 paczek dziennie drukuje etykiety kurierskie na Zebra ZD621d. Przy 250 000 etykiet miesięcznie głowica (P1112640-050, od 509 zł) zużywa się co 4–6 miesięcy. Planowana wymiana głowicy (60 sekund, bez narzędzi) eliminuje nieplanowane przestoje. Roczny koszt głowic: ~1 018–1 527 zł — ułamek kosztu utraconej produktywności przy awarii.',
+      },
+      {
+        title: 'Linia produkcyjna — montaż gilotyny do automatycznego odcinania etykiet',
+        description: 'Zakład produkcyjny instaluje gilotynę w drukarce ZT411 (od ok. 8 040 zł w wariancie z gilotyną vs 5 132 zł bazowy). Gilotyna automatycznie odcina każdą etykietę, eliminując ręczne odrywanie — oszczędność ~3 sekundy na etykietę. Przy 5 000 etykiet dziennie to 4,2 godziny zaoszczędzone tygodniowo. Zwrot z inwestycji: 2–3 miesiące.',
+      },
+      {
+        title: 'Apteka — dodanie modułu Ethernet do ZD421 w sieci lokalnej',
+        description: 'Apteka posiadająca ZD421d z USB dokupuje moduł Ethernet (P1112640-015, od ok. 302 zł). Instalacja w gnieździe MCS z tyłu drukarki — 5 minut, bez narzędzi. Dzięki temu drukarka jest współdzielona przez 3 stanowiska w aptece, eliminując konieczność podłączania kabla USB przy każdej potrzebie druku etykiet na leki.',
+      },
+      {
+        title: 'Centrum logistyczne — dodanie Wi-Fi do floty ZT411',
+        description: 'Firma logistyczna z 12 drukarkami ZT411 montuje moduły Wi-Fi, umożliwiając elastyczne rozmieszczenie drukarek na hali bez prowadzenia kabli Ethernet. Koszt: 12 × moduł Wi-Fi (od ok. 534 zł) = ~6 408 zł — wielokrotnie mniej niż koszt okablowania strukturalnego hali magazynowej.',
+      },
+      {
+        title: 'Sieć sklepów — magazyn zapasowych głowic i zasilaczy',
+        description: 'Sieć 20 sklepów z drukarkami ZD421d utrzymuje zapas 3 głowic 203 dpi (P1112640-014, od ok. 400 zł) i 2 zasilaczy w magazynie centralnym. Przy awarii głowicy w dowolnym sklepie, wymiana trwa 60 sekund po dostarczeniu części — vs 2–5 dni oczekiwania na zamówienie. Minimalizacja przestojów druku cenówek i etykiet logistycznych.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego sprzedawcy akcesoriów nie powiedzą — 5 krytycznych faktów',
+      items: [
+        {
+          title: 'Głowica ZD621d ≠ ZD621t — najczęstszy błąd przy zamawianiu',
+          text: 'Drukarki ZD621d (direct thermal) i ZD621t (thermal transfer) wyglądają niemal identycznie, ale mają RÓŻNE głowice drukujące. ZD621d: P1112640-050 (203 dpi) i P1112640-051 (300 dpi). ZD621t: P1112640-240 (203 dpi) i P1112640-241 (300 dpi). Zamówienie złej głowicy to strata czasu i pieniędzy na zwrot. To samo dotyczy gilotyn (ZD621d: P1112640-030 vs ZD621t: P1112640-237) i odklejaków (ZD621d: P1112640-031 vs ZD621t: P1112640-238). Zawsze weryfikuj literę „d" lub „t" w modelu drukarki przed zamówieniem.',
+        },
+        {
+          title: 'Zamiennikowe głowice: tańsze na fakturze, droższe w eksploatacji',
+          text: 'Aftermarketowa głowica kosztuje 200–300 zł vs 400–650 zł za oryginał Zebra. Ale producent zastrzega w warunkach gwarancji: użycie nieoryginalnych części unieważnia gwarancję na drukarkę. Dodatkowo zamienniki mają 2–3× krótszą żywotność (300–500 tys. etykiet vs 1–1,5 mln), co przy intensywnym druku oznacza częstsze wymiany i dłuższe przestoje. W perspektywie 3 lat TCO zamienników jest WYŻSZE niż oryginałów.',
+        },
+        {
+          title: 'Czyszczenie głowicy wydłuża jej życie dwukrotnie',
+          text: 'Producent zaleca czyszczenie głowicy alkoholem izopropylowym (IPA 99%, nie 70%!) co 1 000 etykiet lub przy każdej wymianie rolki — w zależności co nastąpi wcześniej. W praktyce mało kto to robi. Regularne czyszczenie usuwa osad kleju, kurzu i resztek materiału z elementów grzejnych, co może wydłużyć żywotność głowicy z 500 000 do 1 000 000 etykiet. Koszt zestawu czyszczącego: ~30–50 zł. Koszt nowej głowicy: 400–980 zł.',
+        },
+        {
+          title: 'Zasilacz ZD220 ≠ ZD421 — różne napięcia i wtyczki',
+          text: 'Mimo że ZD220 i ZD421 to drukarki biurkowe z tej samej rodziny Zebra, mają RÓŻNE zasilacze z różnymi wtyczkami. ZD220: P1080383-418. ZD421/ZD621: P1080383-440. Nie są zamienne! Podłączenie niewłaściwego zasilacza może uszkodzić elektronikę drukarki, a gwarancja nie pokryje takiej szkody. Zawsze sprawdzaj Part Number na etykiecie zasilacza.',
+        },
+        {
+          title: 'Moduł Wi-Fi instalujesz sam w 5 minut — bez serwisanta',
+          text: 'Moduły komunikacyjne Zebra (Wi-Fi, Ethernet, RS-232) w drukarkach z gniazdem MCS (Modular Connectivity Slot) instaluje się beznarzędziowo: odkręć zaślepkę z tyłu drukarki, wsuń moduł, skonfiguruj przez Zebra Setup Utilities. Cała operacja trwa 5 minut. Nie musisz zamawiać wizyty serwisowej (~300–500 zł) ani wysyłać drukarki do serwisu (kilka dni przestoju). Moduł Wi-Fi P1112640-017C (od 534 zł) do ZD421/ZD621d to jedno z najlepszych „upgrade\'ów" dla drukarek w sieci.',
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Jaka głowica do drukarki Zebra ZD421?',
+        answer: 'Głowica do Zebra ZD421 zależy od wariantu drukarki. ZD421d (direct thermal): głowica 203 dpi — P1112640-014 (od ok. 400 zł netto). ZD421t (thermal transfer): głowica 203 dpi — P1112640-219 (od ok. 400 zł netto), głowica 300 dpi — P1112640-220 (od ok. 650 zł netto). Głowice d i t NIE są zamienne — mają inną konstrukcję mechaniczną i elektryczną. Wymiana trwa ok. 60 sekund bez narzędzi. Dostępne w sklepie TAKMA z dostawą 1–3 dni robocze.',
+      },
+      {
+        question: 'Jak wymienić głowicę w drukarce Zebra?',
+        answer: 'Wymiana głowicy w biurkowych drukarkach Zebra (ZD220, ZD421, ZD621) jest prosta i nie wymaga narzędzi: 1) Wyłącz drukarkę i otwórz pokrywę. 2) Zwolnij zatrzask głowicy (plastikowy klips lub dźwignia, zależnie od modelu). 3) Delikatnie odłącz taśmę sygnałową (flat cable) ze złącza na głowicy. 4) Włóż nową głowicę, podłącz taśmę, zatrzaśnij klips. 5) Zamknij pokrywę, włącz drukarkę i wykonaj kalibrację (Feed + Pause). Cała operacja trwa 60–90 sekund. Instrukcja po polsku: serwis-zebry.pl.',
+      },
+      {
+        question: 'Czy odklejak do ZD621 pasuje do ZD421?',
+        answer: 'To zależy od wariantu. Odklejak (dyspenser) do ZD421d i ZD621d ma TEN SAM Part Number: P1112640-031 (od ok. 153 zł netto) — jest współdzielony między tymi dwoma modelami. Natomiast odklejak do ZD621t ma INNY Part Number: P1112640-238 (od ok. 302 zł netto) i NIE pasuje do ZD421t. Odklejak do ZD421t to osobny moduł: P1112640-229. Kluczowa zasada: warianty „d" (direct thermal) współdzielą akcesoria, ale warianty „d" i „t" mają RÓŻNE akcesoria.',
+      },
+      {
+        question: 'Jaki zasilacz do drukarki Zebra ZD220?',
+        answer: 'Zasilacz do Zebra ZD220 to P1080383-418 (24V, 60W). To zasilacz z dedykowaną wtyczką, specyficzny dla serii ZD220/ZD230. NIE jest zamienny z zasilaczem do ZD421/ZD621 (P1080383-440), mimo że obie drukarki pracują na 24V — różnią się wtyczki. Użycie niewłaściwego zasilacza może uszkodzić drukarkę i unieważnia gwarancję. Oryginalny zasilacz Zebra jest dostępny w TAKMA.',
+      },
+      {
+        question: 'Ile kosztuje głowica do drukarki przemysłowej Zebra?',
+        answer: 'Ceny głowic do drukarek przemysłowych Zebra (stan na luty 2026): ZT231 — głowica 203 dpi od ok. 650 zł, 300 dpi od ok. 980 zł. ZT411 — głowica 203 dpi od ok. 700 zł, 300 dpi od ok. 1 050 zł, 600 dpi od ok. 2 200 zł. ZT610 — głowica 203 dpi od ok. 900 zł, 300 dpi od ok. 1 400 zł. ZT620 (6-calowa) — głowica 203 dpi od ok. 1 100 zł, 300 dpi od ok. 1 700 zł. Ceny netto. Głowice przemysłowe mają dłuższą żywotność (50–150 km taśmy) niż biurkowe, co rekompensuje wyższą cenę.',
+      },
+      {
+        question: '203 dpi czy 300 dpi — jaką rozdzielczość głowicy wybrać?',
+        answer: '203 dpi (8 dots/mm) to standard wystarczający do 95% zastosowań: etykiety logistyczne, adresowe, kody EAN-13, Code 128, etykiety produktowe. Głowica 203 dpi jest tańsza (o 30–50%), szybsza (o 15–30% większa prędkość druku) i ma dłuższą żywotność. 300 dpi (12 dots/mm) jest potrzebna, gdy: drukujesz bardzo małe etykiety (<25×10 mm), używasz kodów DataMatrix lub QR Code o rozmiarze <10 mm, potrzebujesz tekstu poniżej 6 pkt, drukujesz etykiety na biżuterię lub elektronikę. 600 dpi to niszowe zastosowania: mikroetykiety na komponenty SMD, etykiety na obwody drukowane.',
+      },
+      {
+        question: 'Gilotyna vs odklejak — co wybrać do drukarki etykiet?',
+        answer: 'Gilotyna (cutter) automatycznie odcina etykietę od reszty rolki — idealna do etykiet logistycznych i wysyłkowych, które pracownik zdejmuje z drukarki i nakleja ręcznie. Koszt: od ok. 571–616 zł (biurkowe). Odklejak (peeler/dispenser) automatycznie oddziela etykietę od podkładu, podając ją gotową do naklejenia — idealny do etykiet produktowych aplikowanych na towar. Koszt: od ok. 153–302 zł (biurkowe). Kluczowe: gilotyna i odklejak to modyfikacje WZAJEMNIE WYKLUCZAJĄCE się — nie można zainstalować obu jednocześnie w tej samej drukarce. Jeśli potrzebujesz obu trybów, rozważ zakup dwóch drukarek lub wariantu z odklejakiem i nawijakiem (peeler + rewinder).',
+      },
+      {
+        question: 'Jakie akcesoria do drukarki etykiet kupić na start?',
+        answer: 'Zestaw startowy zależy od zastosowania. Dla firmy e-commerce (druk termiczny, ZD421d/ZD621d): drukarka + etykiety termiczne 100×150 mm + ewentualnie moduł Ethernet lub Wi-Fi. Dla magazynu (druk termotransferowy, ZD421t/ZD621t): drukarka + etykiety + taśma woskowa + ewentualnie odklejak + moduł Ethernet. W obu przypadkach POLECAMY: zapasową głowicę 203 dpi (od 400 zł) — żeby nie czekać na dostawę przy awarii. Opcjonalnie: zestaw czyszczący do głowicy (od 30 zł), zewnętrzny nawijak podkładu (jeśli odklejak). NIE kupuj od razu gilotyny/odklejaka — przetestuj workflow bez nich i zdecyduj po tygodniu pracy.',
+      },
+      {
+        question: 'Ile wytrzymuje głowica drukująca w drukarce etykiet?',
+        answer: 'Żywotność głowicy Zebra zależy od klasy drukarki, materiału etykiet i konserwacji. Drukarki biurkowe (ZD220, ZD421, ZD621): 500 000–1 500 000 etykiet przy regularnym czyszczeniu. Drukarki przemysłowe (ZT231, ZT411, ZT610, ZT620): 50–150 km taśmy, co odpowiada 1 000 000–3 000 000 etykiet standardowego rozmiaru. Czynniki skracające żywotność: etykiety z chropowatą powierzchnią (papier eco), zbyt wysoka ciemność druku (>60%), brak czyszczenia, praca w zapylonym środowisku. Objawy zużycia: przerywane linie w kodach, blade fragmenty, pionowe smugi, kody nieskanowalności przez czytniki.',
+      },
+      {
+        question: 'Zamiennik vs oryginał — czy warto kupić zamiennikową głowicę Zebra?',
+        answer: 'Nie zalecamy zamienników. Oryginalna głowica Zebra: cena 400–980 zł (biurkowe) / 650–2 200 zł (przemysłowe), żywotność 1–1,5 mln etykiet, pełna gwarancja, idealny docisk i jakość druku. Zamiennikowa głowica: cena 200–400 zł, żywotność 300–500 tys. etykiet, BRAK gwarancji Zebra na drukarkę, ryzyko gorszego docisku i zużycia wałka. W perspektywie 3 lat TCO zamienników jest równe lub WYŻSZE — przy dodatkowym ryzyku utraty gwarancji i częstszych przestojów. Jedyna sytuacja, gdy zamiennik ma sens: drukarka jest poza gwarancją i drukuje <100 etykiet dziennie.',
+      },
+      {
+        question: 'Jaki moduł Wi-Fi do drukarki Zebra ZD421?',
+        answer: 'Moduł Wi-Fi do Zebra ZD421 (obie wersje d i t) to P1112640-017C (od ok. 534 zł netto). Obsługuje Wi-Fi 802.11ac (2.4 GHz + 5 GHz) z Bluetooth 5.0 LE. Instalacja w gnieździe MCS z tyłu drukarki — 5 minut, bez narzędzi. Ten sam moduł pasuje do ZD411d, ZD411t, ZD421d, ZD421t i ZD621d. Uwaga: do ZD621t potrzebny jest INNY moduł — P1112640-239C. Konfiguracja Wi-Fi przez Zebra Setup Utilities (darmowe oprogramowanie) lub PrintConnect na Androidzie.',
+      },
+      {
+        question: 'Jak czyścić głowicę drukującą w drukarce Zebra?',
+        answer: 'Czyszczenie głowicy Zebra: 1) Wyłącz drukarkę i otwórz pokrywę. 2) Wyjmij rolkę etykiet i taśmę (jeśli termotransfer). 3) Zanurz bawełniany patyczek lub dedykowaną ściereczkę w alkoholu izopropylowym (IPA 99% — nie 70%!). 4) Delikatnie przetrzyj linię grzejną głowicy od lewej do prawej, jednym ruchem. 5) Poczekaj 30 sekund na wyschnięcie. 6) Włóż materiały i zamknij pokrywę. Częstotliwość: co 1 000 etykiet lub przy każdej wymianie rolki. Koszt zestawu czyszczącego: 30–50 zł. Efekt: wydłużenie żywotności głowicy nawet 2×. Instrukcja wideo po polsku: serwis-zebry.pl.',
+      },
+      {
+        question: 'Czy zasilacz ZD220 pasuje do ZD421?',
+        answer: 'NIE — zasilacz Zebra ZD220 (P1080383-418) NIE pasuje do ZD421/ZD621. Mimo że obie drukarki pracują na 24V, mają RÓŻNE wtyczki zasilające. Zasilacz do ZD421/ZD621 to P1080383-440. Podłączenie niewłaściwego zasilacza może uszkodzić elektronikę drukarki, a gwarancja nie pokryje takiej szkody. Zawsze sprawdzaj Part Number na etykiecie zasilacza przed podłączeniem. W razie wątpliwości skontaktuj się z TAKMA — pomożemy dobrać odpowiedni zasilacz.',
+      },
+      {
+        question: 'Co to jest wałek dociskowy (platen roller) i kiedy go wymieniać?',
+        answer: 'Wałek dociskowy (platen roller) to gumowy wałek napędowy pod głowicą drukującą, odpowiedzialny za równomierny transport etykiet przez strefę druku. Wałek zużywa się wolniej niż głowica — typowa żywotność to 2–5 mln etykiet. Objawy zużycia: nierównomierny druk (jaśniejsze/ciemniejsze pasy), ślizganie się etykiet, problemy z kalibracją. Wałki mają RÓŻNE wersje dla rozdzielczości: np. ZD421d/ZD621d 203 dpi → P1112640-061, 300 dpi → P1112640-062, linerless 203 dpi → P1112640-063, linerless 300 dpi → P1112640-064. Przy wymianie głowicy na inną rozdzielczość ZAWSZE wymieniaj też wałek.',
+      },
+      {
+        question: 'Jakie są alternatywy dla oryginalnych akcesoriów Zebra?',
+        answer: 'Alternatywy istnieją, ale z istotnymi ograniczeniami. Głowice zamiennikowe (aftermarket): dostępne od firm takich jak SSI, Gulton, Kyocera — tańsze o 30–50%, ale z krótszą żywotność i ryzykiem utraty gwarancji. Zestawy czyszczące: zamienniki są akceptowalne, pod warunkiem że zawierają IPA 99%. Taśmy barwiące (ribbony): zamienniki są popularne i często akceptowalne jakościowo, choć Zebra zaleca certyfikowane materiały. Zasilacze: BEZWZGLĘDNIE oryginalne — zamiennikowy zasilacz bez certyfikatów UL/CE stanowi zagrożenie pożarowe i unieważnia gwarancję. Moduły komunikacyjne (Wi-Fi, Ethernet): BRAK zamienników — wyłącznie oryginalne moduły Zebra. Gilotyny i odklejaki: BRAK zamienników — wyłącznie oryginalne moduły Zebra. Ogólna zasada: na elementach mechanicznych i elektronicznych NIE oszczędzaj.',
+      },
+    ],
+    comparisons: [
+      {
+        title: 'Gilotyna vs odklejak — porównanie modułów do drukarek biurkowych',
+        content: 'Gilotyna (cutter): automatycznie odcina etykietę po wydruku. Cena: od ok. 571–616 zł netto (biurkowe Zebra). Zastosowanie: etykiety logistyczne, wysyłkowe, cenówki — pracownik zdejmuje odciętą etykietę i nakleja ręcznie. Zalety: czyste cięcie, brak podkładu do utylizacji (przy linerless). Wady: wolniejsza niż odklejak przy masowej aplikacji, wymaga okresowej wymiany ostrza.\n\nOdklejak (peeler/dispenser): automatycznie oddziela etykietę od podkładu i podaje gotową do naklejenia. Cena: od ok. 153–302 zł netto (biurkowe Zebra). Zastosowanie: etykiety produktowe, apteczne — aplikowane bezpośrednio na towar. Zalety: szybsza aplikacja (~15 sek./etykietę oszczędności), tańszy. Wady: generuje odpad podkładu (liner), wymaga nawijaka podkładu przy dużych wolumenach.\n\nKluczowa różnica: gilotyna i odklejak to modyfikacje WZAJEMNIE WYKLUCZAJĄCE — nie można zainstalować obu jednocześnie.',
+      },
+      {
+        title: 'Głowice 203 dpi vs 300 dpi vs 600 dpi — kiedy która rozdzielczość',
+        content: '203 dpi (8 dots/mm): standard branżowy. Cena głowicy: od ok. 400 zł (biurkowe), od ok. 650 zł (przemysłowe). Nadaje się do: etykiet logistycznych, adresowych, kodów EAN-13/Code 128, etykiet >25×15 mm. Prędkość druku: maksymalna dla danego modelu. Żywotność: najdłuższa.\n\n300 dpi (12 dots/mm): wysoka jakość. Cena głowicy: od ok. 650 zł (biurkowe), od ok. 980 zł (przemysłowe). Nadaje się do: małych etykiet, kodów DataMatrix/QR <10 mm, tekstu <6 pkt, etykiet na biżuterię. Prędkość druku: 15–30% wolniejsza niż 203 dpi. Żywotność: ~20% krótsza.\n\n600 dpi (24 dots/mm): ultra-precyzja. Cena głowicy: od ok. 2 200 zł. Dostępna tylko w przemysłowych (ZT411, ZT610). Nadaje się do: mikroetykiet na elektronikę/SMD, etykiet na obwody drukowane, oznaczeń <10×5 mm. Prędkość druku: 50–60% wolniejsza niż 203 dpi.\n\nRekomendacja: zacznij od 203 dpi. Przejdź na 300 dpi tylko jeśli kody są nieskanowalane lub tekst nieczytelny.',
+      },
+      {
+        title: 'Wi-Fi vs Ethernet — wybór modułu komunikacyjnego',
+        content: 'Moduł Ethernet (LAN 10/100): cena od ok. 302 zł netto. Zalety: stabilne połączenie, brak zakłóceń, niski ping, łatwa konfiguracja (DHCP). Wady: wymaga kabla do switcha, brak mobilności drukarki. Najlepszy gdy: drukarka stoi w jednym miejscu, blisko switcha sieciowego, wymagana jest niezawodność 99,99%.\n\nModuł Wi-Fi 802.11ac + Bluetooth 5.0: cena od ok. 534 zł netto. Zalety: brak kabli, mobilność drukarki, druk z urządzeń mobilnych przez Bluetooth. Wady: zależność od zasięgu AP, potencjalne zakłócenia w środowisku magazynowym z dużą ilością metalu. Najlepszy gdy: drukarka musi być przenośna, brak infrastruktury kablowej, druk z tabletów/smartfonów.\n\nW środowiskach przemysłowych 24/7 Ethernet jest bezpieczniejszym wyborem. W biurach i sklepach Wi-Fi daje większą elastyczność.',
+      },
+      {
+        title: 'Oryginalne vs zamiennikowe akcesoria Zebra — porównanie TCO',
+        content: 'Oryginalne akcesoria Zebra: głowica 203 dpi od 400 zł, żywotność 1–1,5 mln etykiet, pełna gwarancja producenta, certyfikowane materiały, idealny docisk. Koszt na 3 mln etykiet: ~1 200–1 500 zł (2–3 głowice).\n\nZamiennikowe (aftermarket): głowica 203 dpi od 200 zł, żywotność 300–500 tys. etykiet, BRAK gwarancji Zebra, ryzyko gorszego docisku, potencjalne uszkodzenie wałka. Koszt na 3 mln etykiet: ~1 200–2 000 zł (6–10 głowic) + ryzyko utraty gwarancji drukarki + częstsze przestoje.\n\nWerdykt: w perspektywie >1 roku oryginalne akcesoria są tańsze w TCO lub porównywalne cenowo — przy zerowym ryzyku dla gwarancji. Zamienniki opłacają się wyłącznie jako doraźne rozwiązanie dla drukarek poza gwarancją o niskim wolumenie druku (<100 et./dzień).',
+      },
+      {
+        title: 'Akcesoria do drukarek biurkowych vs przemysłowych',
+        content: 'Drukarki biurkowe (ZD220, ZD421, ZD621): głowice od 400 zł, gilotyny od 571 zł, odklejaki od 153 zł, moduły Wi-Fi od 534 zł, Ethernet od 302 zł. Wymiana głowicy: 60 sekund, bez narzędzi. Głowice flat-head. Żywotność: 500 tys.–1,5 mln etykiet.\n\nDrukarki przemysłowe (ZT231, ZT411, ZT610, ZT620): głowice od 650 zł (203 dpi) do 2 200 zł (600 dpi). Moduły gilotyn i odklejaków są wbudowane w konfigurację fabryczną (warianty z literą w PN). Wymiana głowicy: 2–5 minut. Głowice near-edge w modelach premium. Żywotność: 50–150 km taśmy (1–3 mln etykiet).\n\nKluczowa różnica: akcesoria biurkowe są tańsze jednostkowo, ale zużywają się szybciej przy intensywnym druku. Przy >3 000 etykiet dziennie opłaca się przejść na drukarkę przemysłową — oszczędność na głowicach i serwisie zwraca się w 5–10 miesięcy.',
+      },
+    ],
+    howToSteps: [
+      {
+        name: 'Wyłącz drukarkę i otwórz pokrywę',
+        text: 'Wyłącz drukarkę przyciskiem zasilania. Odczekaj 10 sekund. Otwórz pokrywę górną — w drukarkach biurkowych Zebra (ZD421, ZD621) pokrywa otwiera się do góry po naciśnięciu zatrzasków po bokach. Wyjmij rolkę etykiet i taśmę barwiącą (jeśli drukarka termotransferowa).',
+      },
+      {
+        name: 'Zwolnij zatrzask głowicy drukującej',
+        text: 'Zlokalizuj zatrzask mocujący głowicę — w ZD421/ZD621 to plastikowy klips z prawej strony mechanizmu druku. Naciśnij klips i odchyl ramię głowicy do góry. Głowica powinna się delikatnie wysunąć. Nie używaj siły — jeśli głowica nie wychodzi, upewnij się, że zwolniłeś właściwy zatrzask.',
+      },
+      {
+        name: 'Odłącz taśmę sygnałową i wyjmij starą głowicę',
+        text: 'Delikatnie odłącz taśmę sygnałową (flat cable) ze złącza na głowicy — wyciągnij prosto, nie pod kątem. Wyjmij starą głowicę. Sprawdź stan wałka dociskowego (platen roller) — jeśli jest zużyty (twarde, gładkie pasy), wymień go jednocześnie z głowicą.',
+      },
+      {
+        name: 'Zainstaluj nową głowicę i podłącz taśmę',
+        text: 'Włóż nową głowicę w prowadnice (zwróć uwagę na orientację — złącze taśmy musi być od strony gniazda). Podłącz taśmę sygnałową do złącza — powinna wejść pewnie, z charakterystycznym kliknięciem. Zamknij ramię głowicy i upewnij się, że zatrzask zaskoczył. NIE dotykaj linii grzejnej palcami — tłuszcz skraca żywotność.',
+      },
+      {
+        name: 'Wykonaj test druku i kalibrację',
+        text: 'Włóż rolkę etykiet (i taśmę, jeśli termotransfer). Zamknij pokrywę i włącz drukarkę. Wykonaj kalibrację sensora: przytrzymaj przycisk Feed przez 5 sekund (ZD421) lub użyj menu LCD. Wydrukuj etykietę testową: przytrzymaj Feed przez 2 sekundy. Sprawdź jakość druku — kody kreskowe powinny być wyraźne, bez przerw. Jeśli druk jest nierówny, wyreguluj docisk głowicy (pokrętło z boku).',
+      },
+    ],
+  },
 }

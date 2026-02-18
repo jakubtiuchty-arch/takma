@@ -4,6 +4,7 @@ import { PhoneIcon, MailIcon } from '@/components/ui/Icons'
 const footerLinks = {
   produkty: [
     { name: 'Drukarki etykiet', href: '/drukarki-etykiet' },
+    { name: 'Akcesoria do drukarek', href: '/akcesoria-do-drukarek-etykiet' },
     { name: 'Terminale mobilne', href: '/terminale-mobilne' },
     { name: 'Materiały eksploatacyjne', href: '/materialy-eksploatacyjne' },
   ],
