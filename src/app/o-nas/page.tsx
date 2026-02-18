@@ -607,16 +607,29 @@ export default function AboutPage() {
             ))}
           </div>
 
-          {/* Placeholder loga klientów */}
+          {/* Loga klientów */}
           <div className="text-center">
             <p className="text-sm text-gray-500 mb-4">Zaufali nam między innymi:</p>
-            <div className="grid grid-cols-3 sm:grid-cols-6 gap-3 max-w-2xl mx-auto">
-              {Array.from({ length: 6 }).map((_, i) => (
+            <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 max-w-3xl mx-auto">
+              {[
+                { src: '/images/clients/lasy_logo.png', alt: 'Lasy Państwowe — klient TAKMA' },
+                { src: '/images/clients/orlen_logo.png', alt: 'Orlen — klient TAKMA' },
+                { src: '/images/clients/poczta_polska_logo.png', alt: 'Poczta Polska — klient TAKMA' },
+                { src: '/images/clients/żabka_logo.png', alt: 'Żabka — klient TAKMA' },
+                { src: '/images/clients/cba_logo.png', alt: 'CBA — klient TAKMA' },
+                { src: '/images/clients/wosjko_logo.png', alt: 'Wojsko Polskie — klient TAKMA' },
+              ].map((client) => (
                 <div
-                  key={i}
-                  className="bg-gray-50 border-2 border-dashed border-gray-200 rounded-lg aspect-[3/2] flex items-center justify-center"
+                  key={client.alt}
+                  className="bg-white rounded-lg border border-gray-100 p-3 flex items-center justify-center aspect-[3/2]"
                 >
-                  <span className="text-gray-300 text-xs">Logo</span>
+                  <Image
+                    src={client.src}
+                    alt={client.alt}
+                    width={100}
+                    height={60}
+                    className="object-contain max-h-10 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all"
+                  />
                 </div>
               ))}
             </div>
