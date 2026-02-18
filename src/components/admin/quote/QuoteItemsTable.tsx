@@ -69,13 +69,28 @@ function ItemRow({ item, index }: { item: QuoteItemData; index: number }) {
       <td className="px-3 py-2 w-28 text-right text-sm font-medium tabular-nums">
         {formatPrice(item.priceNetto * item.quantity)} zł
       </td>
-      <td className="px-3 py-2 w-20 text-center">
-        {item.marginPercent !== undefined ? (
-          <span className={`text-xs font-medium ${item.marginPercent >= 10 ? 'text-green-600' : 'text-orange-600'}`}>
-            {item.marginPercent.toFixed(1)}%
-          </span>
+      <td className="px-3 py-2 w-24">
+        {item.purchasePrice && item.purchasePrice > 0 ? (
+          <div className="flex items-center gap-0.5">
+            <input
+              type="number"
+              value={item.marginPercent !== undefined ? item.marginPercent.toFixed(1) : ''}
+              onChange={(e) => {
+                const margin = parseFloat(e.target.value)
+                if (!isNaN(margin) && item.purchasePrice) {
+                  const newPrice = Math.round(item.purchasePrice * (1 + margin / 100))
+                  updateItem(item.id, { priceNetto: newPrice, marginPercent: margin })
+                }
+              }}
+              step="0.1"
+              className={`w-16 text-xs text-right border border-gray-200 rounded px-1.5 py-1 tabular-nums ${
+                (item.marginPercent ?? 0) >= 10 ? 'text-green-600' : 'text-orange-600'
+              }`}
+            />
+            <span className="text-xs text-gray-400">%</span>
+          </div>
         ) : (
-          <span className="text-xs text-gray-400">—</span>
+          <span className="text-xs text-gray-400 text-center block">—</span>
         )}
       </td>
       <td className="px-3 py-2 w-10">

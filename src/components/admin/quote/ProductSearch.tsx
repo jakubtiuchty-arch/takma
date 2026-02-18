@@ -60,6 +60,12 @@ export default function ProductSearch() {
       ? Math.round(product.priceFrom * 100)
       : 0
 
+    // priceFrom = ingramPrice × 1.15, więc purchasePrice = priceNetto / 1.15
+    const purchasePrice = priceNetto > 0 ? Math.round(priceNetto / 1.15) : undefined
+    const marginPercent = purchasePrice && purchasePrice > 0
+      ? ((priceNetto - purchasePrice) / purchasePrice) * 100
+      : undefined
+
     addItem({
       source: 'catalog',
       productId: product.id,
@@ -67,8 +73,9 @@ export default function ProductSearch() {
       partNumber: variant?.partNumber || product.variants?.[0]?.partNumber,
       description: product.shortDescription,
       quantity: 1,
+      purchasePrice,
       priceNetto,
-      marginPercent: 15,
+      marginPercent,
     })
 
     setQuery('')
