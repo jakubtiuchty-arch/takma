@@ -1,6 +1,6 @@
 'use client'
 
-import { useTransition } from 'react'
+import { useEffect, useTransition } from 'react'
 import { useQuoteStore } from '@/store/quoteStore'
 import { createQuote } from '@/actions/admin-quotes'
 import NipLookup from './NipLookup'
@@ -13,6 +13,12 @@ import QuoteSummary from './QuoteSummary'
 export default function QuoteBuilder() {
   const store = useQuoteStore()
   const [isPending, startTransition] = useTransition()
+
+  // Reset store przy otwarciu nowej oferty
+  useEffect(() => {
+    store.resetAll()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const handleSave = () => {
     if (!store.client.company) {
