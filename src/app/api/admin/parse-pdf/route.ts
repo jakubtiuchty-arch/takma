@@ -11,10 +11,8 @@ export async function POST(request: NextRequest) {
 
     const buffer = Buffer.from(await file.arrayBuffer())
 
-    // Dynamic import to avoid issues with pdf-parse in edge runtime
-    const pdfParseModule = await import('pdf-parse')
-    const pdfParse = (pdfParseModule as unknown as { default: (buf: Buffer) => Promise<{ text: string }> }).default || pdfParseModule
-    const data = await (pdfParse as (buf: Buffer) => Promise<{ text: string }>)(buffer)
+    const pdfParse = (await import('pdf-parse')).default
+    const data = await pdfParse(buffer)
     const text = data.text
 
     // Parse the PDF text to find product lines
