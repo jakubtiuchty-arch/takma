@@ -86,13 +86,23 @@ export default function ContactPage() {
 
     setIsSubmitting(true)
 
-    // MOCK - symulacja wysyłki do API
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
 
-    console.log('Contact form submission:', formData)
+      if (res.ok) {
+        setIsSuccess(true)
+      } else {
+        setErrors({ name: 'Wystąpił błąd. Spróbuj ponownie lub napisz na takma@takma.com.pl.' })
+      }
+    } catch {
+      setErrors({ name: 'Wystąpił błąd. Spróbuj ponownie lub napisz na takma@takma.com.pl.' })
+    }
 
     setIsSubmitting(false)
-    setIsSuccess(true)
   }
 
   const handleInputChange = (

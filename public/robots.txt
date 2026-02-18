@@ -12,6 +12,9 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: ClaudeBot
+Allow: /
+
 # Block AI training-only crawlers
 User-agent: CCBot
 Disallow: /

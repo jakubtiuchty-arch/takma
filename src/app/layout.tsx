@@ -1,8 +1,17 @@
 import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import RFQDrawer from '@/components/rfq/RFQDrawer'
+import CookieConsent from '@/components/layout/CookieConsent'
+
+const inter = Inter({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['400', '500', '600', '700', '800'],
+  display: 'swap',
+  variable: '--font-inter',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://takma.com.pl'),
@@ -11,7 +20,7 @@ export const metadata: Metadata = {
     template: '%s | TAKMA',
   },
   description:
-    'TAKMA - 20 lat doświadczenia na rynku AutoID. Drukarki etykiet, skanery kodów kreskowych, terminale mobilne, systemy RFID. Profesjonalne doradztwo i serwis w całej Polsce.',
+    'TAKMA — 25+ lat doświadczenia na rynku AutoID. Drukarki etykiet, skanery kodów kreskowych, terminale mobilne, systemy RFID. Autoryzowany partner Zebra Technologies. Profesjonalne doradztwo i serwis w całej Polsce.',
   authors: [{ name: 'TAKMA' }],
   creator: 'TAKMA',
   robots: 'index, follow',
@@ -21,6 +30,7 @@ export const metadata: Metadata = {
     siteName: 'TAKMA',
     title: 'TAKMA - Urządzenia AutoID',
     description: 'Profesjonalne rozwiązania AutoID dla Twojej firmy',
+    images: [{ url: '/images/takma-og.png', width: 1200, height: 630, alt: 'TAKMA — Autoryzowany dystrybutor urządzeń AutoID' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -37,7 +47,7 @@ const organizationJsonLd = {
   name: 'TAKMA',
   url: 'https://takma.com.pl',
   logo: { '@type': 'ImageObject', url: 'https://takma.com.pl/images/takma_logo.png', width: 300, height: 60 },
-  description: 'Profesjonalne rozwiązania AutoID — drukarki etykiet, skanery kodów kreskowych, terminale mobilne, systemy RFID. 20+ lat doświadczenia, autoryzowany partner Zebra Technologies.',
+  description: 'Profesjonalne rozwiązania AutoID — drukarki etykiet, skanery kodów kreskowych, terminale mobilne, systemy RFID. 25+ lat doświadczenia, autoryzowany partner Zebra Technologies.',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'ul. Poświęcka 1a',
@@ -46,7 +56,7 @@ const organizationJsonLd = {
     addressCountry: 'PL',
   },
   taxID: '915-100-43-77',
-  foundingDate: '2004',
+  foundingDate: '2001',
   numberOfEmployees: { '@type': 'QuantitativeValue', value: 15 },
   knowsAbout: ['Drukarki etykiet', 'Skanery kodów kreskowych', 'Terminale mobilne', 'RFID', 'AutoID', 'Zebra Technologies'],
   sameAs: [
@@ -105,7 +115,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pl">
+    <html lang="pl" className={inter.variable}>
       <head>
         <script
           type="application/ld+json"
@@ -124,6 +134,7 @@ export default function RootLayout({
         <main id="main-content" className="flex-1">{children}</main>
         <Footer />
         <RFQDrawer />
+        <CookieConsent />
       </body>
     </html>
   )
