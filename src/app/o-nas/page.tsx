@@ -535,6 +535,12 @@ export default function AboutPage() {
                 <p className="text-gray-500 text-[10px] mt-0.5">{partner.status}</p>
               </div>
             ))}
+            <div className="bg-white rounded-xl p-5 border border-gray-100 text-center flex flex-col items-center justify-center">
+              <div className="h-12 flex items-center justify-center mb-3">
+                <span className="text-gray-300 text-2xl font-light">+</span>
+              </div>
+              <h3 className="font-semibold text-gray-900 text-xs">i wielu innych</h3>
+            </div>
           </div>
 
           {/* Certyfikaty Zebra — oficjalne loga */}
