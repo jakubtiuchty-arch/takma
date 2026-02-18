@@ -609,8 +609,8 @@ export default function AboutPage() {
 
           {/* Loga klientów */}
           <div className="text-center">
-            <p className="text-sm text-gray-500 mb-4">Zaufali nam między innymi:</p>
-            <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 max-w-4xl mx-auto">
+            <p className="text-sm text-gray-500 mb-6">Zaufali nam między innymi:</p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
               {[
                 { src: '/images/clients/lasy_logo.png', alt: 'Lasy Państwowe — klient TAKMA' },
                 { src: '/images/clients/orlen_logo.png', alt: 'Orlen — klient TAKMA' },
@@ -621,13 +621,14 @@ export default function AboutPage() {
               ].map((client) => (
                 <div
                   key={client.alt}
-                  className="bg-white rounded-lg border border-gray-100 p-3 flex items-center justify-center aspect-[3/2] relative"
+                  className="bg-white rounded-xl border border-gray-100 h-24 relative"
                 >
                   <Image
                     src={client.src}
                     alt={client.alt}
                     fill
-                    className="object-contain p-4"
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                    className="object-contain p-5"
                   />
                 </div>
               ))}
