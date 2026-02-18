@@ -84,7 +84,7 @@ export async function GET(request: NextRequest) {
       display: flex; justify-content: space-between; align-items: flex-start;
       margin-bottom: 30px; padding-bottom: 15px; border-bottom: 3px solid #2563eb;
     }
-    .logo-img { height: 55px; width: auto; }
+    .logo-img { height: 60px; width: auto; }
     .doc-title { text-align: right; }
     .doc-title h1 { font-size: 26px; color: #1e3a5f; margin-bottom: 5px; letter-spacing: 2px; }
     .doc-title .number { font-size: 12px; color: #666; }
@@ -161,7 +161,7 @@ export async function GET(request: NextRequest) {
     <div class="parties">
       <div class="party">
         <div class="party-title">Sprzedawca</div>
-        <div class="party-name">TAKMA Tadeusz Tiuchty</div>
+        <div class="party-name">TAKMA</div>
         <div class="party-text">ul. Poświęcka 1a</div>
         <div class="party-text">51-128 Wrocław</div>
         <div class="party-text">NIP: 9151004377</div>
