@@ -54,17 +54,11 @@ export default function ProductSearch() {
   }, [query, search])
 
   const addFromCatalog = (product: Product, variant?: { partNumber: string; name: string; priceFrom?: number }) => {
-    const priceNetto = variant?.priceFrom
+    const catalogPrice = variant?.priceFrom
       ? Math.round(variant.priceFrom * 100)
       : product.priceFrom
       ? Math.round(product.priceFrom * 100)
       : 0
-
-    // priceFrom = ingramPrice × 1.15, więc purchasePrice = priceNetto / 1.15
-    const purchasePrice = priceNetto > 0 ? Math.round(priceNetto / 1.15) : undefined
-    const marginPercent = purchasePrice && purchasePrice > 0
-      ? ((priceNetto - purchasePrice) / purchasePrice) * 100
-      : undefined
 
     addItem({
       source: 'catalog',
@@ -73,9 +67,9 @@ export default function ProductSearch() {
       partNumber: variant?.partNumber || product.variants?.[0]?.partNumber,
       description: product.shortDescription,
       quantity: 1,
-      purchasePrice,
-      priceNetto,
-      marginPercent,
+      catalogPrice,
+      priceNetto: catalogPrice, // 0% rabatu na start
+      discountPercent: 0,
     })
 
     setQuery('')

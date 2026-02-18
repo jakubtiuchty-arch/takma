@@ -8,6 +8,7 @@ function formatPrice(grosze: number): string {
 
 function ItemRow({ item, index }: { item: QuoteItemData; index: number }) {
   const { updateItem, removeItem, reorderItems } = useQuoteStore()
+  const isCatalog = item.source === 'catalog'
 
   return (
     <tr className="border-b border-gray-100 hover:bg-gray-50">
@@ -56,10 +57,17 @@ function ItemRow({ item, index }: { item: QuoteItemData; index: number }) {
             const val = parseFloat(e.target.value)
             if (!isNaN(val)) {
               const newPrice = Math.round(val * 100)
-              const margin = item.purchasePrice && item.purchasePrice > 0
-                ? ((newPrice - item.purchasePrice) / item.purchasePrice) * 100
-                : undefined
-              updateItem(item.id, { priceNetto: newPrice, marginPercent: margin })
+              if (isCatalog && item.catalogPrice && item.catalogPrice > 0) {
+                // Catalog: przelicz rabat z nowej ceny
+                const discount = ((item.catalogPrice - newPrice) / item.catalogPrice) * 100
+                updateItem(item.id, { priceNetto: newPrice, discountPercent: Math.max(0, discount) })
+              } else if (!isCatalog && item.purchasePrice && item.purchasePrice > 0) {
+                // Manual/import: przelicz marżę z nowej ceny
+                const margin = ((newPrice - item.purchasePrice) / item.purchasePrice) * 100
+                updateItem(item.id, { priceNetto: newPrice, marginPercent: Math.max(0, margin) })
+              } else {
+                updateItem(item.id, { priceNetto: newPrice })
+              }
             }
           }}
           step="0.01"
@@ -69,21 +77,49 @@ function ItemRow({ item, index }: { item: QuoteItemData; index: number }) {
       <td className="px-3 py-2 w-28 text-right text-sm font-medium tabular-nums">
         {formatPrice(item.priceNetto * item.quantity)} zł
       </td>
-      <td className="px-3 py-2 w-24">
-        {item.purchasePrice && item.purchasePrice > 0 ? (
+      <td className="px-3 py-2 w-28">
+        {isCatalog && item.catalogPrice && item.catalogPrice > 0 ? (
+          /* RABAT — produkt z katalogu */
           <div className="flex items-center gap-0.5">
+            <span className="text-xs text-gray-400 mr-0.5">-</span>
             <input
               type="number"
-              value={item.marginPercent !== undefined ? item.marginPercent.toFixed(1) : ''}
+              value={item.discountPercent !== undefined ? item.discountPercent.toFixed(1) : '0.0'}
               onChange={(e) => {
-                const margin = parseFloat(e.target.value)
-                if (!isNaN(margin) && item.purchasePrice) {
-                  const newPrice = Math.round(item.purchasePrice * (1 + margin / 100))
-                  updateItem(item.id, { priceNetto: newPrice, marginPercent: margin })
+                const discount = parseFloat(e.target.value)
+                if (!isNaN(discount) && item.catalogPrice) {
+                  const clamped = Math.max(0, Math.min(100, discount))
+                  const newPrice = Math.round(item.catalogPrice * (1 - clamped / 100))
+                  updateItem(item.id, { priceNetto: newPrice, discountPercent: clamped })
                 }
               }}
               step="0.1"
-              className={`w-16 text-xs text-right border border-gray-200 rounded px-1.5 py-1 tabular-nums ${
+              min="0"
+              max="100"
+              className={`w-14 text-xs text-right border border-gray-200 rounded px-1.5 py-1 tabular-nums ${
+                (item.discountPercent ?? 0) > 0 ? 'text-red-600' : 'text-gray-500'
+              }`}
+            />
+            <span className="text-xs text-gray-400">%</span>
+          </div>
+        ) : !isCatalog && item.purchasePrice && item.purchasePrice > 0 ? (
+          /* MARŻA — produkt z palca / import */
+          <div className="flex items-center gap-0.5">
+            <span className="text-xs text-gray-400 mr-0.5">+</span>
+            <input
+              type="number"
+              value={item.marginPercent !== undefined ? item.marginPercent.toFixed(1) : '0.0'}
+              onChange={(e) => {
+                const margin = parseFloat(e.target.value)
+                if (!isNaN(margin) && item.purchasePrice) {
+                  const clamped = Math.max(0, margin)
+                  const newPrice = Math.round(item.purchasePrice * (1 + clamped / 100))
+                  updateItem(item.id, { priceNetto: newPrice, marginPercent: clamped })
+                }
+              }}
+              step="0.1"
+              min="0"
+              className={`w-14 text-xs text-right border border-gray-200 rounded px-1.5 py-1 tabular-nums ${
                 (item.marginPercent ?? 0) >= 10 ? 'text-green-600' : 'text-orange-600'
               }`}
             />
@@ -130,7 +166,7 @@ export default function QuoteItemsTable() {
             <th className="px-3 py-2 text-center text-xs font-medium text-gray-500 uppercase w-20">Ilość</th>
             <th className="px-3 py-2 text-right text-xs font-medium text-gray-500 uppercase w-32">Cena netto</th>
             <th className="px-3 py-2 text-right text-xs font-medium text-gray-500 uppercase w-28">Razem netto</th>
-            <th className="px-3 py-2 text-center text-xs font-medium text-gray-500 uppercase w-20">Marża</th>
+            <th className="px-3 py-2 text-center text-xs font-medium text-gray-500 uppercase w-28">Rabat/Marża</th>
             <th className="px-3 py-2 w-10" />
           </tr>
         </thead>

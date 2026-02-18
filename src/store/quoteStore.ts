@@ -8,9 +8,11 @@ export interface QuoteItemData {
   partNumber?: string
   description?: string
   quantity: number
-  purchasePrice?: number // grosze — cena zakupu Ingram
-  priceNetto: number     // grosze — cena sprzedaży netto
-  marginPercent?: number
+  catalogPrice?: number    // grosze — cena sklepowa (dla catalog: bazowa do rabatu)
+  purchasePrice?: number   // grosze — cena zakupu specjalna (dla manual/import: bazowa do marży)
+  priceNetto: number       // grosze — cena sprzedaży netto (końcowa)
+  discountPercent?: number // % rabatu (catalog: cena = catalogPrice × (1 - rabat/100))
+  marginPercent?: number   // % marży (manual/import: cena = purchasePrice × (1 + marża/100))
 }
 
 export interface QuoteClientData {

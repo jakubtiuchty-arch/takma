@@ -53,12 +53,15 @@ export default function PdfImport() {
   const addSelectedItems = () => {
     const selected = items.filter((item) => item.selected)
     for (const item of selected) {
+      const purchasePrice = Math.round((item.price || 0) * 100)
       addItem({
         source: 'import',
         productName: item.name,
         partNumber: item.partNumber,
         quantity: item.quantity,
-        priceNetto: Math.round((item.price || 0) * 100),
+        purchasePrice,
+        priceNetto: purchasePrice, // 0% marży na start
+        marginPercent: 0,
       })
     }
     setItems([])

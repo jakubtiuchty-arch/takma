@@ -12,13 +12,15 @@ export default function ManualItemForm() {
 
   const handleAdd = () => {
     if (!name.trim() || !priceNetto) return
+    const purchasePrice = Math.round(parseFloat(priceNetto) * 100) // PLN → grosze
     addItem({
       source: 'manual',
       productName: name.trim(),
       partNumber: partNumber.trim() || undefined,
       quantity: parseInt(quantity) || 1,
-      priceNetto: Math.round(parseFloat(priceNetto) * 100), // PLN → grosze
-      marginPercent: undefined,
+      purchasePrice,
+      priceNetto: purchasePrice, // 0% marży na start
+      marginPercent: 0,
     })
     setName('')
     setPartNumber('')
