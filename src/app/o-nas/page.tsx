@@ -266,12 +266,11 @@ export default function AboutPage() {
       {/* S2: Statystyki z AnimatedCounter */}
       <section className="relative z-10 -mt-8 pb-8">
         <div className="container-main">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+          <div className="grid grid-cols-3 gap-4 lg:gap-6 max-w-3xl mx-auto">
             {[
               { end: 25, suffix: '+', label: 'lat doświadczenia', sublabel: 'od 2001 roku' },
               { end: 5000, suffix: '+', label: 'zrealizowanych projektów', sublabel: 'dla firm B2B' },
               { end: 2000, suffix: '+', label: 'zadowolonych klientów', sublabel: 'w całej Polsce' },
-              { end: 4, suffix: ' firmy', label: 'Public Sector Specialist', sublabel: '1 z 4 w Polsce — Zebra' },
             ].map((stat) => (
               <div
                 key={stat.label}
