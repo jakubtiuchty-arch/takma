@@ -378,7 +378,7 @@ export default function RegulaminPage() {
                 <li>podaje dane: nazwa firmy, NIP, adres dostawy, dane kontaktowe;</li>
                 <li>wybiera metodę płatności i dostawy;</li>
                 <li>akceptuje Regulamin i Politykę Prywatności;</li>
-                <li>klika przycisk „Zamawiam i płacę" (lub „Zamawiam — płatność przelewem").</li>
+                <li>klika przycisk &bdquo;Zamawiam i płacę&rdquo; (lub &bdquo;Zamawiam — płatność przelewem&rdquo;).</li>
               </ol>
               <p>5.3. Złożenie zamówienia stanowi ofertę zawarcia umowy sprzedaży (art. 66 KC).</p>
               <p>5.4. Po złożeniu zamówienia Kupujący otrzymuje automatyczne potwierdzenie
