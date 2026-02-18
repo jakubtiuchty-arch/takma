@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { headers } from 'next/headers'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
@@ -109,32 +110,52 @@ const websiteJsonLd = {
   },
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const headersList = await headers()
+  const pathname = headersList.get('x-next-pathname') || headersList.get('x-invoke-path') || ''
+  const isAdmin = pathname.startsWith('/admin')
+
   return (
     <html lang="pl" className={inter.variable}>
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
-        />
+        {!isAdmin && (
+          <>
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+            />
+          </>
+        )}
       </head>
-      <body className="min-h-screen flex flex-col">
-        <a href="#main-content" className="absolute -top-full left-4 z-50 bg-primary-600 text-white px-4 py-2 rounded-lg text-sm font-medium focus:top-4 transition-[top]">
-          Przejdź do treści
-        </a>
-        <Navbar />
-        <main id="main-content" className="flex-1">{children}</main>
-        <Footer />
-        <RFQDrawer />
-        <CookieConsent />
+      <body className={isAdmin ? 'min-h-screen' : 'min-h-screen flex flex-col'}>
+        {!isAdmin && (
+          <>
+            <a href="#main-content" className="absolute -top-full left-4 z-50 bg-primary-600 text-white px-4 py-2 rounded-lg text-sm font-medium focus:top-4 transition-[top]">
+              Przejdź do treści
+            </a>
+            <Navbar />
+          </>
+        )}
+        {isAdmin ? (
+          children
+        ) : (
+          <main id="main-content" className="flex-1">{children}</main>
+        )}
+        {!isAdmin && (
+          <>
+            <Footer />
+            <RFQDrawer />
+            <CookieConsent />
+          </>
+        )}
       </body>
     </html>
   )

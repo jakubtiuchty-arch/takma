@@ -31,6 +31,19 @@ enum PaymentMethod {
   PROFORMA
 }
 
+enum QuoteStatus {
+  DRAFT
+  SENT
+  ACCEPTED
+  EXPIRED
+  REJECTED
+}
+
+enum AdminRole {
+  ADMIN
+  MANAGER
+}
+
 // ---------------------------------------------------------------------------
 // Customer
 // ---------------------------------------------------------------------------
@@ -48,6 +61,7 @@ model Customer {
   stripeCustomerId  String?  @unique
 
   orders            Order[]
+  quotes            Quote[]
 
   createdAt         DateTime @default(now())
   updatedAt         DateTime @updatedAt
@@ -116,4 +130,92 @@ model OrderItem {
   totalNetto           Int
   note                 String?
   ingramPriceSnapshot  Int?
+}
+
+// ---------------------------------------------------------------------------
+// AdminUser
+// ---------------------------------------------------------------------------
+
+model AdminUser {
+  id             String    @id @default(cuid())
+  email          String    @unique
+  hashedPassword String
+  name           String
+  role           AdminRole @default(ADMIN)
+
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+}
+
+// ---------------------------------------------------------------------------
+// Quote (Oferta)
+// ---------------------------------------------------------------------------
+
+model Quote {
+  id              String      @id @default(cuid())
+  quoteNumber     String      @unique
+
+  status          QuoteStatus @default(DRAFT)
+
+  customerId      String?
+  customer        Customer?   @relation(fields: [customerId], references: [id])
+
+  clientCompany   String
+  clientNip       String?
+  clientContact   String?
+  clientEmail     String?
+  clientPhone     String?
+  clientAddress   String?
+
+  validUntil      DateTime
+  paymentTerms    String      @default("7 dni")
+  deliveryTerms   String      @default("2-5 dni roboczych")
+  notes           String?
+  internalNotes   String?
+
+  subtotalNetto   Int
+  vatAmount       Int
+  totalBrutto     Int
+
+  freebiesNote    String?
+
+  items           QuoteItem[]
+
+  sentAt          DateTime?
+  acceptedAt      DateTime?
+  pdfUrl          String?
+
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+
+  @@index([status])
+  @@index([quoteNumber])
+}
+
+// ---------------------------------------------------------------------------
+// QuoteItem (Pozycja oferty)
+// ---------------------------------------------------------------------------
+
+model QuoteItem {
+  id              String  @id @default(cuid())
+
+  quote           Quote   @relation(fields: [quoteId], references: [id], onDelete: Cascade)
+  quoteId         String
+
+  position        Int
+
+  source          String  @default("catalog")
+
+  productId       String?
+  productName     String
+  partNumber      String?
+  description     String?
+
+  quantity        Int
+
+  purchasePrice   Int?
+  priceNetto      Int
+  totalNetto      Int
+
+  marginPercent   Float?
 }
