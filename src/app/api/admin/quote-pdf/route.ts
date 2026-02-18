@@ -172,7 +172,7 @@ export async function GET(request: NextRequest) {
         <div class="party-title">Nabywca</div>
         <div class="party-name">${escapeHtml(quote.clientCompany)}</div>
         ${quote.clientContact ? `<div class="party-text">${escapeHtml(quote.clientContact)}</div>` : ''}
-        ${quote.clientAddress ? `<div class="party-text">${escapeHtml(quote.clientAddress)}</div>` : ''}
+        ${quote.clientAddress ? quote.clientAddress.split(',').map((part: string) => `<div class="party-text">${escapeHtml(part.trim())}</div>`).join('') : ''}
         ${quote.clientNip ? `<div class="party-text"><strong>NIP: ${escapeHtml(quote.clientNip)}</strong></div>` : ''}
         ${quote.clientEmail ? `<div class="party-text">Email: ${escapeHtml(quote.clientEmail)}</div>` : ''}
         ${quote.clientPhone ? `<div class="party-text">Tel: ${escapeHtml(quote.clientPhone)}</div>` : ''}
