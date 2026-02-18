@@ -66,7 +66,7 @@ const faqItems = [
   },
   {
     q: 'Jak skontaktować się z TAKMA?',
-    a: 'Najszybciej pod numerem telefonu +48 71 334 71 72 lub mailowo na adres biuro@takma.com.pl. Formularz kontaktowy dostępny jest na stronie takma.com.pl/kontakt. Odpowiadamy w ciągu 24 godzin w dni robocze.',
+    a: 'Najszybciej pod numerem telefonu +48 71 781 71 28 lub mailowo na adres takma@takma.com.pl. Formularz kontaktowy dostępny jest na stronie takma.com.pl/kontakt. Odpowiadamy w ciągu 24 godzin w dni robocze.',
   },
 ]
 
@@ -137,8 +137,8 @@ export default function AboutPage() {
       name: 'TAKMA Tadeusz Tiuchty',
       alternateName: 'TAKMA',
       url: 'https://takma.com.pl',
-      telephone: '+48713347172',
-      email: 'biuro@takma.com.pl',
+      telephone: '+48717817128',
+      email: 'takma@takma.com.pl',
       foundingDate: '2001-08-01',
       founder: {
         '@type': 'Person',
@@ -674,18 +674,18 @@ export default function AboutPage() {
           {/* Kontakt bezpośredni */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
             <a
-              href="tel:+48713347172"
+              href="tel:+48717817128"
               className="flex items-center gap-2 text-primary-100 hover:text-white transition-colors"
             >
               <PhoneIcon size={20} />
-              <span className="font-medium">+48 71 334 71 72</span>
+              <span className="font-medium">+48 71 781 71 28</span>
             </a>
             <a
-              href="mailto:biuro@takma.com.pl"
+              href="mailto:takma@takma.com.pl"
               className="flex items-center gap-2 text-primary-100 hover:text-white transition-colors"
             >
               <MailIcon size={20} />
-              <span className="font-medium">biuro@takma.com.pl</span>
+              <span className="font-medium">takma@takma.com.pl</span>
             </a>
           </div>
 
@@ -694,7 +694,7 @@ export default function AboutPage() {
             <Link href="/kontakt">
               <Button
                 size="lg"
-                className="bg-white text-primary-700 hover:bg-primary-50"
+                className="!bg-white !text-primary-700 hover:!bg-primary-50"
               >
                 Wyślij zapytanie
               </Button>
