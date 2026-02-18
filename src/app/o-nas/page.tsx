@@ -240,8 +240,7 @@ export default function AboutPage() {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-sm font-medium text-primary-100 mb-6">
-                <CheckIcon size={16} />
+              <span className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 text-sm font-medium text-primary-100 mb-6">
                 Autoryzowany partner Zebra Technologies od 2001
               </span>
               <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
