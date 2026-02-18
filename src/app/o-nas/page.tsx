@@ -562,9 +562,6 @@ export default function AboutPage() {
                   height={48}
                   className="mx-auto"
                 />
-                <span className="inline-block mt-2 px-3 py-1 rounded-full bg-primary-50 text-primary-700 text-xs font-semibold">
-                  1 z 4 firm w Polsce
-                </span>
               </div>
               <div className="text-center">
                 <Image
@@ -578,21 +575,6 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Nagrody */}
-          <div className="flex flex-wrap justify-center gap-3 mt-6">
-            {[
-              'Złoty Medal MTP LAS-EXPO 2016',
-              'Genius of Business 2020',
-            ].map((award) => (
-              <span
-                key={award}
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white border border-gray-200 text-sm text-gray-700 font-medium"
-              >
-                <CheckIcon size={14} className="text-yellow-500" />
-                {award}
-              </span>
-            ))}
-          </div>
         </div>
       </section>
 
