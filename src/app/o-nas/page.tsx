@@ -145,7 +145,7 @@ export default function AboutPage() {
         name: 'Tadeusz Tiuchty',
         jobTitle: 'Założyciel i właściciel',
         description:
-          'Absolwent Uniwersytetu Wrocławskiego (prawo) i Uniwersytetu Rolniczego w Krakowie (leśnictwo). Wieloletni sekretarz Stowarzyszenia Przedsiębiorców Leśnych, prelegent IFBC 2018.',
+          'Absolwent Uniwersytetu Wrocławskiego (prawo) i Uniwersytetu Rolniczego w Krakowie (leśnictwo). Wieloletni sekretarz Stowarzyszenia Przedsiębiorców Leśnych, wykładowca UR Kraków (Wydział Leśny — informatyzacja i AutoID).',
       },
       address: {
         '@type': 'PostalAddress',
@@ -323,15 +323,18 @@ export default function AboutPage() {
                 <p>
                   Przez <strong className="text-gray-900">8 lat pełnił funkcję sekretarza
                   Stowarzyszenia Przedsiębiorców Leśnych</strong>, aktywnie wspierając rozwój
-                  technologiczny polskiego leśnictwa. Był prelegentem na konferencji IFBC 2018.
+                  technologiczny polskiego leśnictwa. Obecnie jest{' '}
+                  <strong className="text-gray-900">wykładowcą na Uniwersytecie Rolniczym
+                  w Krakowie</strong> (Wydział Leśny), gdzie prowadzi zajęcia z informatyzacji
+                  i automatycznej identyfikacji w leśnictwie.
                 </p>
               </div>
 
               {/* Callout cards */}
               <div className="grid sm:grid-cols-2 gap-3 mt-8">
                 <div className="bg-primary-50 rounded-lg p-3 text-center">
-                  <div className="text-primary-700 font-semibold text-sm">Prelegent</div>
-                  <div className="text-primary-600 text-xs">IFBC 2018</div>
+                  <div className="text-primary-700 font-semibold text-sm">Wykładowca</div>
+                  <div className="text-primary-600 text-xs">UR Kraków, Wydział Leśny</div>
                 </div>
                 <div className="bg-primary-50 rounded-lg p-3 text-center">
                   <div className="text-primary-700 font-semibold text-sm">Sekretarz SPL</div>
