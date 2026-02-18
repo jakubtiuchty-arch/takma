@@ -628,7 +628,7 @@ export default function AboutPage() {
                     alt={client.alt}
                     width={160}
                     height={80}
-                    className="object-contain max-h-16 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all"
+                    className="object-contain max-h-16"
                   />
                 </div>
               ))}
