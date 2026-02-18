@@ -53,7 +53,7 @@ const faqItems = [
   },
   {
     q: 'Czy TAKMA realizuje zamówienia publiczne i przetargi?',
-    a: 'Tak. Mamy wieloletnie doświadczenie w realizacji zamówień publicznych. Zrealizowaliśmy przetargi o łącznej wartości ponad 614 000 PLN dla instytucji takich jak RDLP Łódź, RDLP Wrocław i RDLP Zielona Góra.',
+    a: 'Tak. Mamy wieloletnie doświadczenie w realizacji zamówień publicznych dla instytucji takich jak RDLP Łódź, RDLP Wrocław i RDLP Zielona Góra. Znamy procedury PZP i przygotowujemy kompletną dokumentację przetargową.',
   },
   {
     q: 'Ile lat doświadczenia ma firma TAKMA?',
@@ -265,7 +265,7 @@ export default function AboutPage() {
               { end: 25, suffix: '+', label: 'lat doświadczenia', sublabel: 'od 2001 roku' },
               { end: 5000, suffix: '+', label: 'zrealizowanych projektów', sublabel: 'dla firm B2B' },
               { end: 2000, suffix: '+', label: 'zadowolonych klientów', sublabel: 'w całej Polsce' },
-              { end: 614, suffix: 'K PLN', label: 'przetargi publiczne', sublabel: 'Lasy Państwowe' },
+              { end: 24, suffix: ' lata', label: 'partnerstwa z Zebra', sublabel: 'Premier Solution Partner' },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -408,8 +408,8 @@ export default function AboutPage() {
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Przetargi publiczne</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Ponad 614 000 PLN zrealizowanych zamówień publicznych dla Lasów Państwowych
-                (RDLP Łódź, Wrocław, Zielona Góra). Doświadczenie w procedurach PZP.
+                Wieloletnie doświadczenie w zamówieniach publicznych — realizacje dla Lasów
+                Państwowych (RDLP Łódź, Wrocław, Zielona Góra). Znajomość procedur PZP.
               </p>
             </div>
 
