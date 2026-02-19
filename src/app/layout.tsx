@@ -2,10 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { headers } from 'next/headers'
 import './globals.css'
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
-import RFQDrawer from '@/components/rfq/RFQDrawer'
-import CookieConsent from '@/components/layout/CookieConsent'
+import LayoutShell from '@/components/layout/LayoutShell'
 
 const inter = Inter({
   subsets: ['latin', 'latin-ext'],
@@ -136,28 +133,7 @@ export default async function RootLayout({
           </>
         )}
       </head>
-      <body className={(isAdmin || isPanel) ? 'min-h-screen' : 'min-h-screen flex flex-col'}>
-        {!isAdmin && !isPanel && (
-          <>
-            <a href="#main-content" className="absolute -top-full left-4 z-50 bg-primary-600 text-white px-4 py-2 rounded-lg text-sm font-medium focus:top-4 transition-[top]">
-              Przejdź do treści
-            </a>
-            <Navbar />
-          </>
-        )}
-        {(isAdmin || isPanel) ? (
-          children
-        ) : (
-          <main id="main-content" className="flex-1">{children}</main>
-        )}
-        {!isAdmin && !isPanel && (
-          <>
-            <Footer />
-            <RFQDrawer />
-            <CookieConsent />
-          </>
-        )}
-      </body>
+      <LayoutShell>{children}</LayoutShell>
     </html>
   )
 }
