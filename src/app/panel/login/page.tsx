@@ -1,0 +1,89 @@
+'use client'
+
+import { useFormState, useFormStatus } from 'react-dom'
+import { loginCustomer } from '@/actions/customer-auth'
+import Link from 'next/link'
+
+function SubmitButton() {
+  const { pending } = useFormStatus()
+  return (
+    <button
+      type="submit"
+      disabled={pending}
+      className="w-full bg-primary-600 text-white py-2.5 rounded-lg font-medium hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+    >
+      {pending ? 'Logowanie...' : 'Zaloguj się'}
+    </button>
+  )
+}
+
+export default function CustomerLoginPage() {
+  const [state, formAction] = useFormState(loginCustomer, null)
+
+  return (
+    <div className="min-h-screen bg-slate-900 flex items-center justify-center px-4">
+      <div className="w-full max-w-sm">
+        {/* Header */}
+        <div className="text-center mb-8">
+          <h1 className="text-2xl font-bold text-white">TAKMA</h1>
+          <p className="text-slate-400 mt-1">Panel klienta B2B</p>
+        </div>
+
+        {/* Form */}
+        <form action={formAction} className="bg-white rounded-xl shadow-xl p-6 space-y-4">
+          {state?.error && (
+            <div className="bg-red-50 text-red-700 px-4 py-2.5 rounded-lg text-sm font-medium">
+              {state.error}
+            </div>
+          )}
+
+          <div>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+              Email
+            </label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              autoComplete="email"
+              className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500/30 focus:border-primary-500"
+              placeholder="jan@firma.pl"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
+              Hasło
+            </label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              required
+              autoComplete="current-password"
+              className="w-full px-3 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500/30 focus:border-primary-500"
+            />
+          </div>
+
+          <SubmitButton />
+
+          <div className="flex items-center justify-between text-sm pt-2">
+            <Link
+              href="/panel/rejestracja"
+              className="text-primary-600 hover:text-primary-700 font-medium"
+            >
+              Nie masz konta? Zarejestruj się
+            </Link>
+            <span
+              className="text-gray-400 cursor-not-allowed"
+              title="Wkrótce dostępne"
+            >
+              Zapomniałeś hasła?
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  )
+}

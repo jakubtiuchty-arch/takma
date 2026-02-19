@@ -49,8 +49,8 @@ enum AdminRole {
 // ---------------------------------------------------------------------------
 
 model Customer {
-  id                String   @id @default(cuid())
-  email             String   @unique
+  id                String    @id @default(cuid())
+  email             String    @unique
   firstName         String
   lastName          String
   company           String
@@ -58,13 +58,44 @@ model Customer {
   phone             String?
   address           String?
   shippingAddress   String?
-  stripeCustomerId  String?  @unique
+  stripeCustomerId  String?   @unique
+  hashedPassword    String?   // null = customer has not activated account yet
+  isActive          Boolean   @default(false)
+  activatedAt       DateTime?
 
   orders            Order[]
   quotes            Quote[]
+  devices           Device[]
 
-  createdAt         DateTime @default(now())
-  updatedAt         DateTime @updatedAt
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+}
+
+// ---------------------------------------------------------------------------
+// Device (customer equipment tracking)
+// ---------------------------------------------------------------------------
+
+model Device {
+  id              String    @id @default(cuid())
+
+  customer        Customer  @relation(fields: [customerId], references: [id])
+  customerId      String
+
+  productName     String    // e.g. "Zebra TC22"
+  productSlug     String?   // link to product page
+  partNumber      String?
+  serialNumber    String?
+
+  purchaseDate    DateTime?
+  warrantyEnd     DateTime?
+  oneCareEnd      DateTime? // Zebra OneCare service contract
+
+  notes           String?
+
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  @@index([customerId])
 }
 
 // ---------------------------------------------------------------------------
