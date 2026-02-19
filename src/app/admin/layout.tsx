@@ -1,5 +1,5 @@
+import { headers } from 'next/headers'
 import { getSessionFromCookie } from '@/lib/auth'
-import { redirect } from 'next/navigation'
 import Sidebar from '@/components/admin/Sidebar'
 import TopBar from '@/components/admin/TopBar'
 
@@ -9,10 +9,20 @@ export const metadata = {
 }
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
+  const headersList = await headers()
+  const pathname = headersList.get('x-next-pathname') || ''
+
+  // Login page — render without sidebar/topbar
+  if (pathname === '/admin/login') {
+    return <>{children}</>
+  }
+
+  // Protected pages — middleware already handles redirect
   const session = await getSessionFromCookie()
 
   if (!session) {
-    redirect('/admin/login')
+    // Fallback — middleware should have caught this
+    return <>{children}</>
   }
 
   return (
