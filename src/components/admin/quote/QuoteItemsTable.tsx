@@ -1,9 +1,39 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import { useQuoteStore, type QuoteItemData } from '@/store/quoteStore'
 
 function formatPrice(grosze: number): string {
   return (grosze / 100).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+}
+
+function PriceInput({ value, onChange }: { value: number; onChange: (grosze: number) => void }) {
+  const [localValue, setLocalValue] = useState((value / 100).toFixed(2))
+
+  useEffect(() => {
+    setLocalValue((value / 100).toFixed(2))
+  }, [value])
+
+  const commit = () => {
+    const val = parseFloat(localValue)
+    if (!isNaN(val) && val >= 0) {
+      onChange(Math.round(val * 100))
+    } else {
+      setLocalValue((value / 100).toFixed(2))
+    }
+  }
+
+  return (
+    <input
+      type="text"
+      inputMode="decimal"
+      value={localValue}
+      onChange={(e) => setLocalValue(e.target.value)}
+      onBlur={commit}
+      onKeyDown={(e) => e.key === 'Enter' && commit()}
+      className="w-full text-sm text-right border border-gray-200 rounded px-2 py-1 tabular-nums"
+    />
+  )
 }
 
 function ItemRow({ item, index }: { item: QuoteItemData; index: number }) {
@@ -50,28 +80,19 @@ function ItemRow({ item, index }: { item: QuoteItemData; index: number }) {
         />
       </td>
       <td className="px-3 py-2 w-32">
-        <input
-          type="number"
-          value={(item.priceNetto / 100).toFixed(2)}
-          onChange={(e) => {
-            const val = parseFloat(e.target.value)
-            if (!isNaN(val)) {
-              const newPrice = Math.round(val * 100)
-              if (isCatalog && item.catalogPrice && item.catalogPrice > 0) {
-                // Catalog: przelicz rabat z nowej ceny
-                const discount = ((item.catalogPrice - newPrice) / item.catalogPrice) * 100
-                updateItem(item.id, { priceNetto: newPrice, discountPercent: Math.max(0, discount) })
-              } else if (!isCatalog && item.purchasePrice && item.purchasePrice > 0) {
-                // Manual/import: przelicz marżę z nowej ceny
-                const margin = ((newPrice - item.purchasePrice) / item.purchasePrice) * 100
-                updateItem(item.id, { priceNetto: newPrice, marginPercent: Math.max(0, margin) })
-              } else {
-                updateItem(item.id, { priceNetto: newPrice })
-              }
+        <PriceInput
+          value={item.priceNetto}
+          onChange={(newPrice) => {
+            if (isCatalog && item.catalogPrice && item.catalogPrice > 0) {
+              const discount = ((item.catalogPrice - newPrice) / item.catalogPrice) * 100
+              updateItem(item.id, { priceNetto: newPrice, discountPercent: Math.max(0, discount) })
+            } else if (!isCatalog && item.purchasePrice && item.purchasePrice > 0) {
+              const margin = ((newPrice - item.purchasePrice) / item.purchasePrice) * 100
+              updateItem(item.id, { priceNetto: newPrice, marginPercent: Math.max(0, margin) })
+            } else {
+              updateItem(item.id, { priceNetto: newPrice })
             }
           }}
-          step="0.01"
-          className="w-full text-sm text-right border border-gray-200 rounded px-2 py-1 tabular-nums"
         />
       </td>
       <td className="px-3 py-2 w-28 text-right text-sm font-medium tabular-nums">
