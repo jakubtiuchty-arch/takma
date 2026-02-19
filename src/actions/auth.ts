@@ -15,18 +15,24 @@ export async function loginAdmin(
     return { error: 'Podaj email i hasło' }
   }
 
-  const admin = await prisma.adminUser.findUnique({ where: { email } })
-  if (!admin) {
-    return { error: 'Nieprawidłowy email lub hasło' }
-  }
+  try {
+    const admin = await prisma.adminUser.findUnique({ where: { email } })
+    if (!admin) {
+      return { error: 'Nieprawidłowy email lub hasło' }
+    }
 
-  const valid = await verifyPassword(password, admin.hashedPassword)
-  if (!valid) {
-    return { error: 'Nieprawidłowy email lub hasło' }
-  }
+    const valid = await verifyPassword(password, admin.hashedPassword)
+    if (!valid) {
+      return { error: 'Nieprawidłowy email lub hasło' }
+    }
 
-  const token = await createSession(admin.id, admin.email, admin.name)
-  await setSessionCookie(token)
+    const token = await createSession(admin.id, admin.email, admin.name)
+    await setSessionCookie(token)
+  } catch (err) {
+    console.error('[loginAdmin] Błąd:', err)
+    const message = err instanceof Error ? err.message : 'Nieznany błąd'
+    return { error: `Błąd serwera: ${message}` }
+  }
 
   redirect('/admin')
 }
