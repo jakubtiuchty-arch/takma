@@ -2,6 +2,7 @@ import { headers } from 'next/headers'
 import { getCustomerFromCookie } from '@/lib/customer-auth'
 import PanelSidebar from '@/components/panel/Sidebar'
 import PanelTopBar from '@/components/panel/TopBar'
+import ScrollReset from '@/components/ui/ScrollReset'
 
 export const metadata = {
   title: 'Panel klienta — TAKMA',
@@ -33,9 +34,9 @@ export default async function PanelLayout({ children }: { children: React.ReactN
           customerName={`${session.firstName}`}
           companyName={session.company}
         />
-        <div className="flex-1 p-6 overflow-auto">
+        <ScrollReset>
           {children}
-        </div>
+        </ScrollReset>
       </div>
     </div>
   )
