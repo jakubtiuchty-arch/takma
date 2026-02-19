@@ -118,11 +118,12 @@ export default async function RootLayout({
   const headersList = await headers()
   const pathname = headersList.get('x-next-pathname') || headersList.get('x-invoke-path') || ''
   const isAdmin = pathname.startsWith('/admin')
+  const isPanel = pathname.startsWith('/panel')
 
   return (
     <html lang="pl" className={inter.variable}>
       <head>
-        {!isAdmin && (
+        {!isAdmin && !isPanel && (
           <>
             <script
               type="application/ld+json"
@@ -135,8 +136,8 @@ export default async function RootLayout({
           </>
         )}
       </head>
-      <body className={isAdmin ? 'min-h-screen' : 'min-h-screen flex flex-col'}>
-        {!isAdmin && (
+      <body className={(isAdmin || isPanel) ? 'min-h-screen' : 'min-h-screen flex flex-col'}>
+        {!isAdmin && !isPanel && (
           <>
             <a href="#main-content" className="absolute -top-full left-4 z-50 bg-primary-600 text-white px-4 py-2 rounded-lg text-sm font-medium focus:top-4 transition-[top]">
               Przejdź do treści
@@ -144,12 +145,12 @@ export default async function RootLayout({
             <Navbar />
           </>
         )}
-        {isAdmin ? (
+        {(isAdmin || isPanel) ? (
           children
         ) : (
           <main id="main-content" className="flex-1">{children}</main>
         )}
-        {!isAdmin && (
+        {!isAdmin && !isPanel && (
           <>
             <Footer />
             <RFQDrawer />
