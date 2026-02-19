@@ -212,12 +212,13 @@ export default function Navbar() {
 
             {/* Desktop RFQ only */}
             <div className="hidden lg:flex items-center justify-end lg:w-48 gap-1">
-              <button
+              <Link
+                href="/panel"
                 className="p-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-colors"
                 aria-label="Panel klienta"
               >
                 <UserIcon size={24} />
-              </button>
+              </Link>
               <RFQBadge />
             </div>
 
@@ -230,12 +231,13 @@ export default function Navbar() {
               >
                 {isMobileSearchOpen ? <CloseIcon size={24} /> : <SearchIcon size={24} />}
               </button>
-              <button
+              <Link
+                href="/panel"
                 className="p-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors"
                 aria-label="Panel klienta"
               >
                 <UserIcon size={24} />
-              </button>
+              </Link>
               <RFQBadge />
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
