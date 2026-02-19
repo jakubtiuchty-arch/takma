@@ -188,6 +188,63 @@ export async function sendQuoteEmail(quoteId: string) {
   return result
 }
 
+export async function priceRfqQuote(rfqQuoteId: string, input: {
+  items: QuoteItemInput[]
+  validDays: number
+  paymentTerms: string
+  deliveryTerms: string
+  notes?: string
+  internalNotes?: string
+  freebiesNote?: string
+}) {
+  const existing = await prisma.quote.findUnique({ where: { id: rfqQuoteId } })
+  if (!existing) throw new Error('Zapytanie nie znalezione')
+
+  const totals = calculateQuoteTotals(input.items)
+
+  const validUntil = new Date()
+  validUntil.setDate(validUntil.getDate() + input.validDays)
+
+  // Usuń stare pozycje (z zerami) i wstaw nowe z cenami
+  await prisma.quoteItem.deleteMany({ where: { quoteId: rfqQuoteId } })
+
+  await prisma.quote.update({
+    where: { id: rfqQuoteId },
+    data: {
+      status: 'DRAFT',
+      validUntil,
+      paymentTerms: input.paymentTerms,
+      deliveryTerms: input.deliveryTerms,
+      notes: input.notes,
+      internalNotes: input.internalNotes,
+      freebiesNote: input.freebiesNote,
+      subtotalNetto: totals.subtotalNetto,
+      vatAmount: totals.vatAmount,
+      totalBrutto: totals.totalBrutto,
+      items: {
+        create: input.items.map((item, index) => ({
+          position: index + 1,
+          source: item.source,
+          productId: item.productId,
+          productName: item.productName,
+          partNumber: item.partNumber,
+          description: item.description,
+          quantity: item.quantity,
+          purchasePrice: item.purchasePrice,
+          priceNetto: item.priceNetto,
+          totalNetto: item.priceNetto * item.quantity,
+          marginPercent: item.marginPercent,
+        })),
+      },
+    },
+  })
+
+  revalidatePath('/admin/oferty')
+  revalidatePath(`/admin/oferty/${rfqQuoteId}`)
+  revalidatePath('/panel/oferty')
+  redirect(`/admin/oferty/${rfqQuoteId}`)
+}
+
 export async function duplicateQuote(quoteId: string) {
   const original = await prisma.quote.findUnique({
     where: { id: quoteId },

@@ -7,16 +7,16 @@ import { QuoteStatus } from '@/generated/prisma/client'
 
 const statusLabels: Record<QuoteStatus, string> = {
   REQUESTED: 'Wysłane zapytanie',
-  DRAFT: 'Szkic',
-  SENT: 'Wyslana',
+  DRAFT: 'Wyceniona',
+  SENT: 'Wysłana',
   ACCEPTED: 'Zaakceptowana',
-  EXPIRED: 'Wygasla',
+  EXPIRED: 'Wygasła',
   REJECTED: 'Odrzucona',
 }
 
 const statusVariants: Record<QuoteStatus, string> = {
   REQUESTED: 'bg-cyan-100 text-cyan-800',
-  DRAFT: 'bg-gray-100 text-gray-700',
+  DRAFT: 'bg-indigo-100 text-indigo-800',
   SENT: 'bg-blue-100 text-blue-800',
   ACCEPTED: 'bg-green-100 text-green-800',
   EXPIRED: 'bg-yellow-100 text-yellow-800',
@@ -149,16 +149,14 @@ export default async function OfertyPage() {
                               <span className="text-xs text-gray-400">Oczekuje na wycenę</span>
                             ) : (
                               <>
-                                {quote.status !== 'DRAFT' && (
-                                  <a
-                                    href={`/api/admin/quote-pdf?id=${quote.id}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="px-2.5 py-1 text-xs font-medium text-primary-600 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors"
-                                  >
-                                    Pobierz PDF
-                                  </a>
-                                )}
+                                <a
+                                  href={`/api/admin/quote-pdf?id=${quote.id}`}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="px-2.5 py-1 text-xs font-medium text-primary-600 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors"
+                                >
+                                  Pobierz PDF
+                                </a>
                                 <button
                                   disabled
                                   className="px-2.5 py-1 text-xs font-medium text-gray-400 bg-gray-50 rounded-lg cursor-not-allowed"
@@ -240,16 +238,14 @@ export default async function OfertyPage() {
                       <span className="text-xs text-gray-400">Oczekuje na wycenę</span>
                     ) : (
                       <>
-                        {quote.status !== 'DRAFT' && (
-                          <a
-                            href={`/api/admin/quote-pdf?id=${quote.id}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="px-3 py-1.5 text-sm font-medium text-primary-600 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors"
-                          >
-                            Pobierz PDF
-                          </a>
-                        )}
+                        <a
+                          href={`/api/admin/quote-pdf?id=${quote.id}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-3 py-1.5 text-sm font-medium text-primary-600 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors"
+                        >
+                          Pobierz PDF
+                        </a>
                         <button
                           disabled
                           className="px-3 py-1.5 text-sm font-medium text-gray-400 bg-gray-50 rounded-lg cursor-not-allowed"

@@ -2,7 +2,7 @@
 
 import { useEffect, useTransition, useRef } from 'react'
 import { useQuoteStore } from '@/store/quoteStore'
-import { createQuote, updateQuoteStatus } from '@/actions/admin-quotes'
+import { createQuote, priceRfqQuote } from '@/actions/admin-quotes'
 import NipLookup from './NipLookup'
 import ProductSearch from './ProductSearch'
 import ManualItemForm from './ManualItemForm'
@@ -82,40 +82,50 @@ export default function QuoteBuilder({ rfqData }: QuoteBuilderProps) {
       return
     }
 
-    startTransition(async () => {
-      // Jeśli konwersja z RFQ — oznacz oryginalne zapytanie jako przetworzone
-      if (rfqData?.rfqQuoteId) {
-        await updateQuoteStatus(rfqData.rfqQuoteId, 'DRAFT')
-      }
+    const itemsData = store.items.map((item) => ({
+      source: item.source,
+      productId: item.productId,
+      productName: item.productName,
+      partNumber: item.partNumber,
+      description: item.description,
+      quantity: item.quantity,
+      purchasePrice: item.purchasePrice,
+      priceNetto: item.priceNetto,
+      marginPercent: item.marginPercent,
+    }))
 
-      await createQuote({
-        client: {
-          company: store.client.company,
-          nip: store.client.nip,
-          contact: store.client.contact,
-          email: store.client.email,
-          phone: store.client.phone,
-          address: store.client.address,
-        },
-        items: store.items.map((item) => ({
-          source: item.source,
-          productId: item.productId,
-          productName: item.productName,
-          partNumber: item.partNumber,
-          description: item.description,
-          quantity: item.quantity,
-          purchasePrice: item.purchasePrice,
-          priceNetto: item.priceNetto,
-          marginPercent: item.marginPercent,
-        })),
-        validDays: store.validDays,
-        paymentTerms: store.paymentTerms,
-        deliveryTerms: store.deliveryTerms,
-        notes: store.notes || undefined,
-        internalNotes: store.internalNotes || undefined,
-        freebiesNote: store.freebiesNote || undefined,
-      })
-      // redirect happens in createQuote
+    startTransition(async () => {
+      if (rfqData?.rfqQuoteId) {
+        // Aktualizuj istniejące zapytanie z cenami (nie twórz nowej oferty)
+        await priceRfqQuote(rfqData.rfqQuoteId, {
+          items: itemsData,
+          validDays: store.validDays,
+          paymentTerms: store.paymentTerms,
+          deliveryTerms: store.deliveryTerms,
+          notes: store.notes || undefined,
+          internalNotes: store.internalNotes || undefined,
+          freebiesNote: store.freebiesNote || undefined,
+        })
+      } else {
+        await createQuote({
+          client: {
+            company: store.client.company,
+            nip: store.client.nip,
+            contact: store.client.contact,
+            email: store.client.email,
+            phone: store.client.phone,
+            address: store.client.address,
+          },
+          items: itemsData,
+          validDays: store.validDays,
+          paymentTerms: store.paymentTerms,
+          deliveryTerms: store.deliveryTerms,
+          notes: store.notes || undefined,
+          internalNotes: store.internalNotes || undefined,
+          freebiesNote: store.freebiesNote || undefined,
+        })
+      }
+      // redirect happens in action
     })
   }
 
