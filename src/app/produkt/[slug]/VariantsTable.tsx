@@ -189,7 +189,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   attributeKeys: string[]
   rowIndex: number
   mounted: boolean
-  stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; availability: 'available' | 'on-order' | 'unavailable' }>
+  stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; availability: 'available' | 'on-order' | 'unavailable'; price?: number; ingramPrice?: number }>
   stockLoading: boolean
   addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string }) => void
   isInCart: (id: string) => boolean
@@ -213,9 +213,14 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
         </td>
       ))}
       <td className="px-3 py-3.5 text-sm font-semibold text-gray-900 whitespace-nowrap">
-        {variant.priceFrom
-          ? `${variant.priceFrom.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł`
-          : 'Na zapytanie'}
+        {stockLoading ? (
+          <span className="inline-block h-4 w-20 bg-gray-200 rounded animate-pulse" />
+        ) : (() => {
+          const livePrice = stock?.found && stock?.price ? stock.price : variant.priceFrom
+          return livePrice
+            ? `${livePrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł`
+            : 'Na zapytanie'
+        })()}
       </td>
       <td className="px-3 py-3.5">
         <StockCell stockPL={stock?.stockPL ?? 0} stockDE={stock?.stockDE ?? 0} loading={stockLoading} />
@@ -254,7 +259,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
   productImage?: string
   attributeKeys: string[]
   mounted: boolean
-  stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; availability: 'available' | 'on-order' | 'unavailable' }>
+  stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; availability: 'available' | 'on-order' | 'unavailable'; price?: number; ingramPrice?: number }>
   stockLoading: boolean
   addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string }) => void
   isInCart: (id: string) => boolean
@@ -308,16 +313,21 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
 
       <div className="flex items-center justify-between pt-2 border-t border-gray-100">
         <div>
-          {variant.priceFrom ? (
-            <div>
-              <span className="text-lg font-bold text-gray-900">
-                {variant.priceFrom.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
-              </span>
-              <span className="text-xs text-gray-500"> netto</span>
-            </div>
-          ) : (
-            <span className="text-sm text-gray-600">Cena na zapytanie</span>
-          )}
+          {stockLoading ? (
+            <span className="inline-block h-5 w-24 bg-gray-200 rounded animate-pulse" />
+          ) : (() => {
+            const livePrice = stock?.found && stock?.price ? stock.price : variant.priceFrom
+            return livePrice ? (
+              <div>
+                <span className="text-lg font-bold text-gray-900">
+                  {livePrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
+                </span>
+                <span className="text-xs text-gray-500"> netto</span>
+              </div>
+            ) : (
+              <span className="text-sm text-gray-600">Cena na zapytanie</span>
+            )
+          })()}
         </div>
         {isUnavailable ? (
           <NotifyButton partNumber={variant.partNumber} productName={`${productName} (${variant.partNumber})`} />

@@ -22,6 +22,7 @@ import RelatedProducts from './RelatedProducts'
 import VariantsTable from './VariantsTable'
 import StockInfo, { LiveAvailabilityBadge } from './StockInfo'
 import SmartPrice from './SmartPrice'
+import StickyPrice from './StickyPrice'
 import ComparisonTable from './ComparisonTable'
 import SpecsAccordion from './SpecsAccordion'
 
@@ -813,14 +814,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
       {/* Sticky mobile CTA */}
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 lg:hidden safe-bottom z-40">
         <div className="flex items-center gap-3">
-          {product.priceFrom && (
-            <div className="flex-shrink-0">
-              <span className="text-xl font-bold text-gray-900">
-                {product.priceFrom.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
-              </span>
-              <span className="text-xs text-gray-500 ml-1">netto</span>
-            </div>
-          )}
+          <StickyPrice product={product} />
           <div className="flex-1">
             <AddToRFQButton product={product} compact />
           </div>

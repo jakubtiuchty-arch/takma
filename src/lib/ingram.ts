@@ -11,7 +11,7 @@
 const INGRAM_API_URL = 'https://www.ingrammicro24.com/en/imapi/request'
 const INGRAM_API_KEY = process.env.INGRAM_API_KEY
 
-const MARGIN = 1.10 // 10% marży
+const MARGIN = 1.15 // 15% marży
 const VAT = 1.23    // 23% VAT
 
 // ============================================

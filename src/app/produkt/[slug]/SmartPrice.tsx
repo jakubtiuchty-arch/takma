@@ -82,8 +82,12 @@ export default function SmartPrice({ product }: SmartPriceProps) {
     )
   }
 
-  const price = displayed?.price || product.priceFrom!
   const pn = displayed?.partNumber
+
+  // Live cena z API dystrybutora — fallback na statyczną
+  const stock = pn ? stockData.get(pn) : null
+  const livePrice = (stock?.found && stock?.price) ? stock.price : null
+  const price = livePrice ?? displayed?.price ?? product.priceFrom!
 
   // Dla StockInfo przekaż tylko PN wyświetlanego wariantu — żeby status był spójny z ceną
   const displayedPn = pn ? [pn] : partNumbers
@@ -94,14 +98,22 @@ export default function SmartPrice({ product }: SmartPriceProps) {
         <p className="text-xs font-mono text-gray-500 mb-2">PN: {pn}</p>
       )}
       <div className="flex items-baseline gap-2">
-        <span className="text-3xl font-bold text-gray-900">
-          {price.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
-        </span>
+        {loading && !livePrice ? (
+          <span className="inline-block h-9 w-40 bg-gray-200 rounded animate-pulse" />
+        ) : (
+          <span className="text-3xl font-bold text-gray-900">
+            {price.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
+          </span>
+        )}
         <span className="text-sm text-gray-500">netto</span>
         {DEVICE_CATEGORIES.has(product.categoryId) && <PriceTooltip />}
       </div>
       <p className="text-sm text-gray-400 mt-1">
-        {(price * 1.23).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł brutto
+        {loading && !livePrice ? (
+          <span className="inline-block h-4 w-28 bg-gray-200 rounded animate-pulse" />
+        ) : (
+          <>{(price * 1.23).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł brutto</>
+        )}
       </p>
       {displayedPn.length > 0 && <StockInfo partNumbers={displayedPn} />}
     </div>

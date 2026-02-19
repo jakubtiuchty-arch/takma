@@ -50,6 +50,17 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
     return true
   })()
 
+  // Live cena z API — szukaj najtańszej dostępnej ceny z Ingram
+  const displayPrice = useMemo(() => {
+    if (stockLoading || !anyFound) return product.priceFrom
+    const livePrices = partNumbers
+      .map(pn => stockData.get(pn))
+      .filter((s): s is NonNullable<typeof s> => !!s?.found && !!s?.price)
+      .map(s => s.price!)
+      .sort((a, b) => a - b)
+    return livePrices[0] ?? product.priceFrom
+  }, [stockLoading, anyFound, partNumbers, stockData, product.priceFrom])
+
   const liveAvailability = !anyFound
     ? product.availability
     : isUnavailable ? 'unavailable' as const : 'available' as const
@@ -104,10 +115,12 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
           </div>
 
           <div className="flex items-center gap-3 flex-shrink-0">
-            {product.priceFrom ? (
+            {stockLoading ? (
+              <span className="inline-block h-5 w-24 bg-gray-200 rounded animate-pulse" />
+            ) : displayPrice ? (
               <div className="text-right">
                 <p className="text-lg font-bold text-gray-900 whitespace-nowrap">
-                  {product.priceFrom.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
+                  {displayPrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
                 </p>
                 <span className="text-xs text-gray-400">netto</span>
               </div>
@@ -150,9 +163,11 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
           </div>
         </Link>
         <div className="px-3 pb-3 flex items-center justify-between gap-2 mt-auto">
-          {product.priceFrom ? (
+          {stockLoading ? (
+            <span className="inline-block h-4 w-16 bg-gray-200 rounded animate-pulse" />
+          ) : displayPrice ? (
             <span className="text-sm font-bold text-gray-900">
-              {product.priceFrom.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+              {displayPrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
               <span className="text-xs font-normal text-gray-400 ml-0.5">zł</span>
             </span>
           ) : (
@@ -219,10 +234,14 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
 
         {/* Price & CTA */}
         <div className="mt-3 pt-3 border-t border-gray-100">
-          {product.priceFrom ? (
+          {stockLoading ? (
+            <div className="mb-2">
+              <span className="inline-block h-5 w-24 bg-gray-200 rounded animate-pulse" />
+            </div>
+          ) : displayPrice ? (
             <div className="mb-2">
               <span className="text-lg font-bold text-gray-900">
-                {product.priceFrom.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
+                {displayPrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
               </span>
               <span className="text-xs text-gray-400 ml-1">
                 {product.categoryId === 'materialy-eksploatacyjne' ? 'netto/rolka' : 'netto'}
