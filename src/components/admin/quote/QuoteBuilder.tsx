@@ -1,8 +1,8 @@
 'use client'
 
-import { useEffect, useTransition } from 'react'
+import { useEffect, useTransition, useRef } from 'react'
 import { useQuoteStore } from '@/store/quoteStore'
-import { createQuote } from '@/actions/admin-quotes'
+import { createQuote, updateQuoteStatus } from '@/actions/admin-quotes'
 import NipLookup from './NipLookup'
 import ProductSearch from './ProductSearch'
 import ManualItemForm from './ManualItemForm'
@@ -10,13 +10,65 @@ import PdfImport from './PdfImport'
 import QuoteItemsTable from './QuoteItemsTable'
 import QuoteSummary from './QuoteSummary'
 
-export default function QuoteBuilder() {
+interface RfqData {
+  rfqQuoteId: string
+  client: {
+    company: string
+    nip?: string
+    contact?: string
+    email?: string
+    phone?: string
+    address?: string
+  }
+  items: {
+    productId?: string
+    productName: string
+    partNumber?: string
+    description?: string
+    quantity: number
+  }[]
+}
+
+interface QuoteBuilderProps {
+  rfqData?: RfqData
+}
+
+export default function QuoteBuilder({ rfqData }: QuoteBuilderProps) {
   const store = useQuoteStore()
   const [isPending, startTransition] = useTransition()
+  const initialized = useRef(false)
 
-  // Reset store przy otwarciu nowej oferty
+  // Reset store przy otwarciu nowej oferty, lub załaduj dane z RFQ
   useEffect(() => {
+    if (initialized.current) return
+    initialized.current = true
+
     store.resetAll()
+
+    if (rfqData) {
+      // Załaduj dane klienta z zapytania
+      store.setClient({
+        company: rfqData.client.company,
+        nip: rfqData.client.nip,
+        contact: rfqData.client.contact,
+        email: rfqData.client.email,
+        phone: rfqData.client.phone,
+        address: rfqData.client.address,
+      })
+
+      // Załaduj pozycje z zapytania (ceny = 0, do uzupełnienia przez admina)
+      for (const item of rfqData.items) {
+        store.addItem({
+          source: 'catalog',
+          productId: item.productId,
+          productName: item.productName,
+          partNumber: item.partNumber,
+          description: item.description,
+          quantity: item.quantity,
+          priceNetto: 0,
+        })
+      }
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
@@ -31,6 +83,11 @@ export default function QuoteBuilder() {
     }
 
     startTransition(async () => {
+      // Jeśli konwersja z RFQ — oznacz oryginalne zapytanie jako przetworzone
+      if (rfqData?.rfqQuoteId) {
+        await updateQuoteStatus(rfqData.rfqQuoteId, 'DRAFT')
+      }
+
       await createQuote({
         client: {
           company: store.client.company,

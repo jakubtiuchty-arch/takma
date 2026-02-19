@@ -6,6 +6,7 @@ import clsx from 'clsx'
 import { QuoteStatus } from '@/generated/prisma/client'
 
 const statusLabels: Record<QuoteStatus, string> = {
+  REQUESTED: 'Wysłane zapytanie',
   DRAFT: 'Szkic',
   SENT: 'Wyslana',
   ACCEPTED: 'Zaakceptowana',
@@ -14,6 +15,7 @@ const statusLabels: Record<QuoteStatus, string> = {
 }
 
 const statusVariants: Record<QuoteStatus, string> = {
+  REQUESTED: 'bg-cyan-100 text-cyan-800',
   DRAFT: 'bg-gray-100 text-gray-700',
   SENT: 'bg-blue-100 text-blue-800',
   ACCEPTED: 'bg-green-100 text-green-800',
@@ -38,7 +40,7 @@ export default async function OfertyPage() {
       <div className="flex items-center justify-between mb-4">
         <h1 className="text-lg font-semibold text-gray-900">Moje oferty</h1>
         <Link
-          href="/kontakt"
+          href="/panel/oferty/nowe"
           className="px-3 py-1.5 bg-primary-600 text-white rounded-md text-[13px] font-medium hover:bg-primary-700 transition-colors flex items-center gap-1.5"
         >
           <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -68,7 +70,7 @@ export default async function OfertyPage() {
           </h3>
           <p className="text-sm text-gray-500 mb-3">Zapytaj o wycene!</p>
           <Link
-            href="/kontakt"
+            href="/panel/oferty/nowe"
             className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary-600 text-white rounded-md text-[13px] font-medium hover:bg-primary-700 transition-colors"
           >
             Zapytaj o wycene
@@ -120,10 +122,16 @@ export default async function OfertyPage() {
                           </span>
                         </td>
                         <td className="px-3 py-2.5 text-sm text-right font-medium tabular-nums">
-                          {(quote.totalBrutto / 100).toLocaleString('pl-PL', {
-                            minimumFractionDigits: 2,
-                          })}{' '}
-                          zl
+                          {quote.status === 'REQUESTED' ? (
+                            <span className="text-gray-400 text-xs font-normal">Oczekuje na wycenę</span>
+                          ) : (
+                            <>
+                              {(quote.totalBrutto / 100).toLocaleString('pl-PL', {
+                                minimumFractionDigits: 2,
+                              })}{' '}
+                              zl
+                            </>
+                          )}
                         </td>
                         <td className="px-3 py-2.5 text-center">
                           <span
@@ -137,23 +145,29 @@ export default async function OfertyPage() {
                         </td>
                         <td className="px-3 py-2.5 text-center">
                           <div className="flex items-center justify-center gap-2">
-                            {quote.status !== 'DRAFT' && (
-                              <a
-                                href={`/api/admin/quote-pdf?id=${quote.id}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="px-2.5 py-1 text-xs font-medium text-primary-600 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors"
-                              >
-                                Pobierz PDF
-                              </a>
+                            {quote.status === 'REQUESTED' ? (
+                              <span className="text-xs text-gray-400">Oczekuje na wycenę</span>
+                            ) : (
+                              <>
+                                {quote.status !== 'DRAFT' && (
+                                  <a
+                                    href={`/api/admin/quote-pdf?id=${quote.id}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="px-2.5 py-1 text-xs font-medium text-primary-600 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors"
+                                  >
+                                    Pobierz PDF
+                                  </a>
+                                )}
+                                <button
+                                  disabled
+                                  className="px-2.5 py-1 text-xs font-medium text-gray-400 bg-gray-50 rounded-lg cursor-not-allowed"
+                                  title="Wkrotce dostepne"
+                                >
+                                  Zamow z oferty
+                                </button>
+                              </>
                             )}
-                            <button
-                              disabled
-                              className="px-2.5 py-1 text-xs font-medium text-gray-400 bg-gray-50 rounded-lg cursor-not-allowed"
-                              title="Wkrotce dostepne"
-                            >
-                              Zamow z oferty
-                            </button>
                           </div>
                         </td>
                       </tr>
@@ -196,10 +210,16 @@ export default async function OfertyPage() {
                     <div className="flex justify-between">
                       <dt className="text-gray-500">Kwota brutto</dt>
                       <dd className="font-medium tabular-nums">
-                        {(quote.totalBrutto / 100).toLocaleString('pl-PL', {
-                          minimumFractionDigits: 2,
-                        })}{' '}
-                        zl
+                        {quote.status === 'REQUESTED' ? (
+                          <span className="text-gray-400 text-xs font-normal">Oczekuje na wycenę</span>
+                        ) : (
+                          <>
+                            {(quote.totalBrutto / 100).toLocaleString('pl-PL', {
+                              minimumFractionDigits: 2,
+                            })}{' '}
+                            zl
+                          </>
+                        )}
                       </dd>
                     </div>
                     <div className="flex justify-between">
@@ -216,23 +236,29 @@ export default async function OfertyPage() {
                   </dl>
 
                   <div className="mt-4 pt-3 border-t border-gray-100 flex gap-3">
-                    {quote.status !== 'DRAFT' && (
-                      <a
-                        href={`/api/admin/quote-pdf?id=${quote.id}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-3 py-1.5 text-sm font-medium text-primary-600 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors"
-                      >
-                        Pobierz PDF
-                      </a>
+                    {quote.status === 'REQUESTED' ? (
+                      <span className="text-xs text-gray-400">Oczekuje na wycenę</span>
+                    ) : (
+                      <>
+                        {quote.status !== 'DRAFT' && (
+                          <a
+                            href={`/api/admin/quote-pdf?id=${quote.id}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-3 py-1.5 text-sm font-medium text-primary-600 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors"
+                          >
+                            Pobierz PDF
+                          </a>
+                        )}
+                        <button
+                          disabled
+                          className="px-3 py-1.5 text-sm font-medium text-gray-400 bg-gray-50 rounded-lg cursor-not-allowed"
+                          title="Wkrotce dostepne"
+                        >
+                          Zamow z oferty
+                        </button>
+                      </>
                     )}
-                    <button
-                      disabled
-                      className="px-3 py-1.5 text-sm font-medium text-gray-400 bg-gray-50 rounded-lg cursor-not-allowed"
-                      title="Wkrotce dostepne"
-                    >
-                      Zamow z oferty
-                    </button>
                   </div>
                 </div>
               )

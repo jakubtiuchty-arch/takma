@@ -95,7 +95,7 @@ export async function createQuote(input: CreateQuoteInput) {
   redirect(`/admin/oferty/${quote.id}`)
 }
 
-export async function updateQuoteStatus(quoteId: string, status: 'DRAFT' | 'SENT' | 'ACCEPTED' | 'EXPIRED' | 'REJECTED') {
+export async function updateQuoteStatus(quoteId: string, status: 'REQUESTED' | 'DRAFT' | 'SENT' | 'ACCEPTED' | 'EXPIRED' | 'REJECTED') {
   await prisma.quote.update({
     where: { id: quoteId },
     data: {

@@ -32,6 +32,7 @@ enum PaymentMethod {
 }
 
 enum QuoteStatus {
+  REQUESTED
   DRAFT
   SENT
   ACCEPTED

@@ -83,7 +83,18 @@ export default function QuoteActions({ quoteId, status, hasEmail }: QuoteActions
         {/* Status controls */}
         <div className="pt-3 border-t border-gray-200 space-y-2">
           <p className="text-xs font-medium text-gray-500 uppercase">Zmień status</p>
-          {status === 'DRAFT' && (
+          {status === 'REQUESTED' && (
+            <a
+              href={`/admin/oferty/nowa?fromRfq=${quoteId}`}
+              className="w-full px-3 py-1.5 text-sm text-cyan-700 bg-cyan-50 rounded-lg hover:bg-cyan-100 flex items-center justify-center gap-1.5 font-medium"
+            >
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Z" />
+              </svg>
+              Wyceniaj zapytanie
+            </a>
+          )}
+          {(status === 'DRAFT' || status === 'REQUESTED') && (
             <button onClick={() => handleStatusChange('SENT')} disabled={isPending} className="w-full px-3 py-1.5 text-sm text-blue-700 bg-blue-50 rounded-lg hover:bg-blue-100 disabled:opacity-50">
               Oznacz jako wysłaną
             </button>

@@ -4,6 +4,7 @@ import clsx from 'clsx'
 import { QuoteStatus } from '@/generated/prisma/client'
 
 const statusLabels: Record<QuoteStatus, string> = {
+  REQUESTED: 'Zapytanie klienta',
   DRAFT: 'Szkic',
   SENT: 'Wysłana',
   ACCEPTED: 'Zaakceptowana',
@@ -12,6 +13,7 @@ const statusLabels: Record<QuoteStatus, string> = {
 }
 
 const statusColors: Record<QuoteStatus, string> = {
+  REQUESTED: 'bg-cyan-100 text-cyan-800 ring-1 ring-cyan-300',
   DRAFT: 'bg-gray-100 text-gray-700',
   SENT: 'bg-blue-100 text-blue-800',
   ACCEPTED: 'bg-green-100 text-green-800',
@@ -20,10 +22,17 @@ const statusColors: Record<QuoteStatus, string> = {
 }
 
 export default async function QuotesPage() {
-  const quotes = await prisma.quote.findMany({
+  const quotesRaw = await prisma.quote.findMany({
     include: { items: true },
     orderBy: { createdAt: 'desc' },
     take: 100,
+  })
+
+  // REQUESTED na górze listy (priorytet)
+  const quotes = quotesRaw.sort((a, b) => {
+    if (a.status === 'REQUESTED' && b.status !== 'REQUESTED') return -1
+    if (a.status !== 'REQUESTED' && b.status === 'REQUESTED') return 1
+    return 0
   })
 
   return (
