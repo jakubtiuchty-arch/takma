@@ -47,7 +47,7 @@ export default async function CustomerDashboard() {
       },
       devices: true,
       quotes: {
-        where: { status: 'SENT' },
+        where: { status: { in: ['REQUESTED', 'DRAFT', 'SENT'] } },
         select: { id: true },
       },
     },
@@ -73,7 +73,7 @@ export default async function CustomerDashboard() {
   ]
 
   return (
-    <div className="max-w-5xl">
+    <div>
       {/* Powitanie */}
       <div className="mb-5">
         <h1 className="text-lg font-semibold text-gray-900">
@@ -181,39 +181,6 @@ export default async function CustomerDashboard() {
         )}
       </div>
 
-      {/* Szybkie akcje */}
-      <div className="bg-white rounded-lg border border-gray-200 p-4">
-        <h2 className="text-sm font-semibold text-gray-900 mb-3">Szybkie akcje</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-          <Link
-            href="/kontakt"
-            className="flex items-center gap-2 px-3 py-2 rounded-md bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors font-medium text-[13px]"
-          >
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-            </svg>
-            Nowe zapytanie ofertowe
-          </Link>
-          <Link
-            href="/panel/urzadzenia"
-            className="flex items-center gap-2 px-3 py-2 rounded-md bg-purple-50 text-purple-700 hover:bg-purple-100 transition-colors font-medium text-[13px]"
-          >
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-            </svg>
-            Dodaj urządzenie
-          </Link>
-          <Link
-            href="/panel/zamowienia"
-            className="flex items-center gap-2 px-3 py-2 rounded-md bg-gray-50 text-gray-700 hover:bg-gray-100 transition-colors font-medium text-[13px]"
-          >
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182" />
-            </svg>
-            Zamów ponownie
-          </Link>
-        </div>
-      </div>
     </div>
   )
 }
