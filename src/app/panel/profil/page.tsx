@@ -143,8 +143,8 @@ export default function ProfilPage() {
   }
 
   return (
-    <div className="max-w-3xl mx-auto space-y-8">
-      <h1 className="text-2xl font-bold text-gray-900">Profil firmy</h1>
+    <div className="max-w-3xl mx-auto space-y-5">
+      <h1 className="text-lg font-semibold text-gray-900">Profil firmy</h1>
 
       {/* Komunikat */}
       {message && (
@@ -159,10 +159,10 @@ export default function ProfilPage() {
         </div>
       )}
 
-      <form onSubmit={handleSaveProfile} className="space-y-6">
+      <form onSubmit={handleSaveProfile} className="space-y-4">
         {/* Dane firmy (readonly) */}
-        <div className="bg-white rounded-xl border border-gray-200 p-6">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4">Dane firmy</h2>
+        <div className="bg-white rounded-lg border border-gray-200 p-4">
+          <h2 className="text-sm font-semibold text-gray-900 mb-3">Dane firmy</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Input
               label="Firma"
@@ -189,8 +189,8 @@ export default function ProfilPage() {
         </div>
 
         {/* Dane kontaktowe (edytowalne) */}
-        <div className="bg-white rounded-xl border border-gray-200 p-6">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4">Dane kontaktowe</h2>
+        <div className="bg-white rounded-lg border border-gray-200 p-4">
+          <h2 className="text-sm font-semibold text-gray-900 mb-3">Dane kontaktowe</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Input
               label="Imie"
@@ -217,8 +217,8 @@ export default function ProfilPage() {
         </div>
 
         {/* Adres siedziby */}
-        <div className="bg-white rounded-xl border border-gray-200 p-6">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4">Adres siedziby</h2>
+        <div className="bg-white rounded-lg border border-gray-200 p-4">
+          <h2 className="text-sm font-semibold text-gray-900 mb-3">Adres siedziby</h2>
           <Input
             label="Adres (ulica, numer, kod pocztowy, miasto)"
             value={address}
@@ -228,8 +228,8 @@ export default function ProfilPage() {
         </div>
 
         {/* Adres dostawy */}
-        <div className="bg-white rounded-xl border border-gray-200 p-6">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4">Adres dostawy</h2>
+        <div className="bg-white rounded-lg border border-gray-200 p-4">
+          <h2 className="text-sm font-semibold text-gray-900 mb-3">Adres dostawy</h2>
           <Checkbox
             label="Inny niz adres siedziby"
             checked={hasDifferentShipping}
@@ -253,8 +253,8 @@ export default function ProfilPage() {
       </form>
 
       {/* Zmiana hasla */}
-      <form onSubmit={handleChangePassword} className="bg-white rounded-xl border border-gray-200 p-6">
-        <h2 className="text-lg font-semibold text-gray-900 mb-4">Zmiana hasla</h2>
+      <form onSubmit={handleChangePassword} className="bg-white rounded-lg border border-gray-200 p-4">
+        <h2 className="text-sm font-semibold text-gray-900 mb-3">Zmiana hasla</h2>
 
         {passwordMessage && (
           <div

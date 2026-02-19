@@ -58,13 +58,13 @@ export default async function UrzadzeniaPage() {
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold text-gray-900">Moje urzadzenia</h1>
+      <div className="flex items-center justify-between mb-4">
+        <h1 className="text-lg font-semibold text-gray-900">Moje urzadzenia</h1>
         <Link
           href="/panel/urzadzenia/dodaj"
-          className="px-4 py-2.5 bg-primary-600 text-white rounded-lg text-sm font-medium hover:bg-primary-700 transition-colors flex items-center gap-2"
+          className="px-3 py-1.5 bg-primary-600 text-white rounded-md text-[13px] font-medium hover:bg-primary-700 transition-colors flex items-center gap-1.5"
         >
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
           </svg>
           Dodaj urzadzenie
@@ -72,9 +72,9 @@ export default async function UrzadzeniaPage() {
       </div>
 
       {devices.length === 0 ? (
-        <div className="bg-white rounded-xl border border-gray-200 p-12 text-center">
+        <div className="bg-white rounded-lg border border-gray-200 p-8 text-center">
           <svg
-            className="mx-auto h-12 w-12 text-gray-400 mb-4"
+            className="mx-auto h-8 w-8 text-gray-400 mb-3"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
@@ -86,24 +86,24 @@ export default async function UrzadzeniaPage() {
               d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
             />
           </svg>
-          <h3 className="text-lg font-semibold text-gray-900 mb-2">
+          <h3 className="text-sm font-semibold text-gray-900 mb-1">
             Nie dodales jeszcze zadnych urzadzen
           </h3>
-          <p className="text-gray-500 mb-6">
+          <p className="text-sm text-gray-500 mb-3">
             Dodaj swoje urzadzenia, aby sledzic gwarancje i kontrakty serwisowe.
           </p>
           <Link
             href="/panel/urzadzenia/dodaj"
-            className="inline-flex items-center gap-2 px-4 py-2.5 bg-primary-600 text-white rounded-lg text-sm font-medium hover:bg-primary-700 transition-colors"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary-600 text-white rounded-md text-[13px] font-medium hover:bg-primary-700 transition-colors"
           >
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
             </svg>
             Dodaj pierwsze urzadzenie
           </Link>
         </div>
       ) : (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
           {devices.map((device) => {
             const warranty = getWarrantyStatus(device.warrantyEnd)
             const oneCare = getWarrantyStatus(device.oneCareEnd)
@@ -111,20 +111,20 @@ export default async function UrzadzeniaPage() {
             return (
               <div
                 key={device.id}
-                className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow"
+                className="bg-white rounded-lg border border-gray-200 p-4 hover:bg-gray-50 transition-colors"
               >
                 {/* Header */}
-                <div className="flex items-start justify-between mb-4">
+                <div className="flex items-start justify-between mb-3">
                   <div>
                     {device.productSlug ? (
                       <Link
                         href={`/produkt/${device.productSlug}`}
-                        className="text-lg font-semibold text-primary-600 hover:underline"
+                        className="text-sm font-semibold text-primary-600 hover:underline"
                       >
                         {device.productName}
                       </Link>
                     ) : (
-                      <h3 className="text-lg font-semibold text-gray-900">
+                      <h3 className="text-sm font-semibold text-gray-900">
                         {device.productName}
                       </h3>
                     )}
@@ -204,7 +204,7 @@ export default async function UrzadzeniaPage() {
                 )}
 
                 {/* Actions */}
-                <div className="mt-4 pt-4 border-t border-gray-100 flex gap-3">
+                <div className="mt-3 pt-3 border-t border-gray-100 flex gap-2">
                   <Link
                     href={`/panel/urzadzenia/${device.id}`}
                     className="px-3 py-1.5 text-sm font-medium text-primary-600 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors"

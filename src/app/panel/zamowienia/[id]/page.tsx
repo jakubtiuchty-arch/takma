@@ -129,7 +129,7 @@ export default async function CustomerOrderDetailPage({ params }: PageProps) {
   return (
     <div>
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6">
+      <nav className="flex items-center gap-1.5 text-xs text-gray-500 mb-4">
         <Link href="/panel" className="hover:text-gray-900">Panel</Link>
         <span>/</span>
         <Link href="/panel/zamowienia" className="hover:text-gray-900">Zamówienia</Link>
@@ -138,23 +138,23 @@ export default async function CustomerOrderDetailPage({ params }: PageProps) {
       </nav>
 
       {/* Header */}
-      <div className="flex flex-wrap items-center gap-3 mb-8">
+      <div className="flex flex-wrap items-center gap-2 mb-5">
         <Link href="/panel/zamowienia" className="text-gray-400 hover:text-gray-600">
-          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
           </svg>
         </Link>
-        <h1 className="text-2xl font-bold text-gray-900">
+        <h1 className="text-lg font-semibold text-gray-900">
           Zamówienie {order.orderNumber}
         </h1>
-        <span className={clsx('px-3 py-1 rounded-full text-sm font-medium', statusColors[order.status])}>
+        <span className={clsx('px-2 py-0.5 rounded-full text-xs font-medium', statusColors[order.status])}>
           {statusLabels[order.status]}
         </span>
       </div>
 
       {/* Timeline */}
-      <div className="bg-white rounded-xl border border-gray-200 p-6 mb-6">
-        <h2 className="text-lg font-semibold text-gray-900 mb-6">Status zamówienia</h2>
+      <div className="bg-white rounded-lg border border-gray-200 p-4 mb-4">
+        <h2 className="text-sm font-semibold text-gray-900 mb-4">Status zamówienia</h2>
         <div className="flex items-start justify-between relative">
           {/* Connecting line */}
           <div className="absolute top-4 left-0 right-0 h-0.5 bg-gray-200" style={{ left: '2rem', right: '2rem' }} />
@@ -203,13 +203,13 @@ export default async function CustomerOrderDetailPage({ params }: PageProps) {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {/* Main content */}
-        <div className="lg:col-span-2 space-y-6">
+        <div className="lg:col-span-2 space-y-4">
           {/* Tracking */}
           {order.trackingNumber && (
-            <div className="bg-white rounded-xl border border-gray-200 p-6">
-              <h2 className="text-lg font-semibold text-gray-900 mb-4">Przesyłka</h2>
+            <div className="bg-white rounded-lg border border-gray-200 p-4">
+              <h2 className="text-sm font-semibold text-gray-900 mb-3">Przesyłka</h2>
               <div className="space-y-2 text-sm">
                 {order.carrierName && (
                   <div>
@@ -246,8 +246,8 @@ export default async function CustomerOrderDetailPage({ params }: PageProps) {
           )}
 
           {/* Items table */}
-          <div className="bg-white rounded-xl border border-gray-200 p-6">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">Pozycje zamówienia</h2>
+          <div className="bg-white rounded-lg border border-gray-200 p-4">
+            <h2 className="text-sm font-semibold text-gray-900 mb-3">Pozycje zamówienia</h2>
 
             {/* Desktop table */}
             <div className="hidden md:block">
@@ -320,7 +320,7 @@ export default async function CustomerOrderDetailPage({ params }: PageProps) {
                 <span className="text-gray-500">VAT 23%:</span>
                 <span className="tabular-nums w-28">{formatPLN(order.vatAmount)}</span>
               </div>
-              <div className="flex justify-end gap-8 text-lg font-bold pt-2">
+              <div className="flex justify-end gap-8 text-sm font-bold pt-2">
                 <span>Brutto:</span>
                 <span className="tabular-nums w-28">{formatPLN(order.totalBrutto)}</span>
               </div>
@@ -329,7 +329,7 @@ export default async function CustomerOrderDetailPage({ params }: PageProps) {
 
           {/* Customer notes */}
           {order.customerNotes && (
-            <div className="bg-white rounded-xl border border-gray-200 p-6">
+            <div className="bg-white rounded-lg border border-gray-200 p-4">
               <h2 className="text-lg font-semibold text-gray-900 mb-3">Notatki do zamówienia</h2>
               <p className="text-sm text-gray-700 bg-yellow-50 p-4 rounded-lg">
                 {order.customerNotes}
@@ -339,10 +339,10 @@ export default async function CustomerOrderDetailPage({ params }: PageProps) {
         </div>
 
         {/* Sidebar */}
-        <div className="space-y-6">
+        <div className="space-y-4">
           {/* Dates */}
-          <div className="bg-white rounded-xl border border-gray-200 p-6">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">Daty</h2>
+          <div className="bg-white rounded-lg border border-gray-200 p-4">
+            <h2 className="text-sm font-semibold text-gray-900 mb-3">Daty</h2>
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-2">
                 <svg className="w-4 h-4 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -390,8 +390,8 @@ export default async function CustomerOrderDetailPage({ params }: PageProps) {
           </div>
 
           {/* Payment info */}
-          <div className="bg-white rounded-xl border border-gray-200 p-6">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">Płatność</h2>
+          <div className="bg-white rounded-lg border border-gray-200 p-4">
+            <h2 className="text-sm font-semibold text-gray-900 mb-3">Płatność</h2>
             <div className="space-y-2 text-sm">
               <div>
                 <span className="text-gray-500">Metoda: </span>
@@ -416,8 +416,8 @@ export default async function CustomerOrderDetailPage({ params }: PageProps) {
           </div>
 
           {/* Actions */}
-          <div className="bg-white rounded-xl border border-gray-200 p-6">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">Akcje</h2>
+          <div className="bg-white rounded-lg border border-gray-200 p-4">
+            <h2 className="text-sm font-semibold text-gray-900 mb-3">Akcje</h2>
             <div className="space-y-2">
               <Link
                 href="/panel/zamowienia"

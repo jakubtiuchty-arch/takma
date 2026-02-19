@@ -47,22 +47,22 @@ export default function DodajUrzadzeniePage() {
 
   return (
     <div className="max-w-2xl mx-auto">
-      <div className="flex items-center gap-3 mb-6">
+      <div className="flex items-center gap-2 mb-4">
         <Link href="/panel/urzadzenia" className="text-gray-400 hover:text-gray-600">
-          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
           </svg>
         </Link>
-        <h1 className="text-2xl font-bold text-gray-900">Dodaj urzadzenie</h1>
+        <h1 className="text-lg font-semibold text-gray-900">Dodaj urzadzenie</h1>
       </div>
 
       {state?.error && (
-        <div className="rounded-lg px-4 py-3 text-sm font-medium bg-red-50 text-red-800 border border-red-200 mb-6">
+        <div className="rounded-md px-3 py-2 text-[13px] font-medium bg-red-50 text-red-800 border border-red-200 mb-4">
           {state.error}
         </div>
       )}
 
-      <form action={formAction} className="bg-white rounded-xl border border-gray-200 p-6 space-y-5">
+      <form action={formAction} className="bg-white rounded-lg border border-gray-200 p-4 space-y-4">
         {/* Nazwa produktu z autocomplete */}
         <div className="relative" ref={suggestionsRef}>
           <Input
