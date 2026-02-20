@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Button, Input, Textarea, Select, Checkbox } from '@/components/ui'
 import {
   ChevronRightIcon,
@@ -169,8 +170,8 @@ export default function ContactPage() {
               href="tel:+48607819688"
               className="group bg-white rounded-2xl shadow-lg hover:shadow-xl border border-gray-100 p-6 flex items-center gap-5 transition-all hover:-translate-y-0.5"
             >
-              <div className="w-14 h-14 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors flex-shrink-0">
-                <PhoneIcon size={28} />
+              <div className="w-14 h-14 flex-shrink-0">
+                <Image src="/images/ikony/telefon.png" alt="Ikona telefon" width={56} height={56} className="object-contain mix-blend-multiply" />
               </div>
               <div>
                 <p className="text-sm text-gray-500 mb-0.5">Zadzwoń do nas</p>
@@ -183,8 +184,8 @@ export default function ContactPage() {
               href="mailto:takma@takma.com.pl"
               className="group bg-white rounded-2xl shadow-lg hover:shadow-xl border border-gray-100 p-6 flex items-center gap-5 transition-all hover:-translate-y-0.5"
             >
-              <div className="w-14 h-14 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors flex-shrink-0">
-                <MailIcon size={28} />
+              <div className="w-14 h-14 flex-shrink-0">
+                <Image src="/images/ikony/email.png" alt="Ikona email" width={56} height={56} className="object-contain mix-blend-multiply" />
               </div>
               <div>
                 <p className="text-sm text-gray-500 mb-0.5">Napisz do nas</p>
@@ -194,8 +195,8 @@ export default function ContactPage() {
             </a>
 
             <div className="group bg-white rounded-2xl shadow-lg border border-gray-100 p-6 flex items-center gap-5">
-              <div className="w-14 h-14 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600 flex-shrink-0">
-                <LocationIcon size={28} />
+              <div className="w-[59px] h-[59px] flex-shrink-0">
+                <Image src="/images/ikony/lokalizacja.png" alt="Ikona lokalizacja" width={59} height={59} className="object-contain mix-blend-multiply" />
               </div>
               <div>
                 <p className="text-sm text-gray-500 mb-0.5">Odwiedź nas</p>

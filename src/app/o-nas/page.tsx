@@ -4,15 +4,8 @@ import Image from 'next/image'
 import { Button } from '@/components/ui'
 import {
   ChevronRightIcon,
-  CheckIcon,
-  WrenchIcon,
-  UserGroupIcon,
-  StarIcon,
-  BuildingOfficeIcon,
   PhoneIcon,
   MailIcon,
-  TruckIcon,
-  UserIcon,
 } from '@/components/ui/Icons'
 import AnimatedCounter from '@/components/about/AnimatedCounter'
 
@@ -71,7 +64,7 @@ const faqItems = [
 ]
 
 const partners = [
-  { name: 'Zebra Technologies', status: 'Premier Solution Partner', logo: '/images/partners/logo_zebra.png' },
+  { name: 'Zebra Technologies', status: 'Premier Solution Partner', logo: '/images/partners/logo_zebra.png', href: 'https://www.zebra.com/pl/pl/partners/partner-application-locator/partner-details.html?id=001i0000019OwOUAA0&viewType=nav' },
   { name: 'Honeywell', status: 'Autoryzowany partner', logo: '/images/partners/logo_honeywell.png' },
   { name: 'Datalogic', status: 'Autoryzowany partner', logo: '/images/partners/logo_datalogic.png' },
   { name: 'TSC', status: 'Autoryzowany partner', logo: '/images/partners/logo_tsc.png' },
@@ -84,22 +77,22 @@ const partners = [
 
 const industries = [
   {
-    icon: <TruckIcon size={28} />,
+    image: '/images/about/logistyka-magazynowanie.png',
     name: 'Logistyka i magazynowanie',
     desc: 'Drukarki etykiet wysyłkowych, skanery i terminale do zarządzania magazynem',
   },
   {
-    icon: <BuildingOfficeIcon size={28} />,
+    image: '/images/about/handel-retail.png',
     name: 'Handel i retail',
     desc: 'Metkownice, drukarki cenówek, skanery kasowe i systemy inwentaryzacji',
   },
   {
-    icon: <StarIcon size={28} />,
+    image: '/images/about/lesnictwo-srodowisko.png',
     name: 'Leśnictwo i środowisko',
     desc: 'Mobilne drukarki etykiet i terminale terenowe dla Lasów Państwowych',
   },
   {
-    icon: <BuildingOfficeIcon size={28} />,
+    image: '/images/about/sektor-publiczny.png',
     name: 'Sektor publiczny',
     desc: 'Zamówienia publiczne, przetargi PZP, dostawy dla administracji i służb mundurowych',
   },
@@ -229,37 +222,26 @@ export default function AboutPage() {
       />
 
       {/* S1: Hero */}
-      <section className="bg-gradient-hero text-white py-16 lg:py-24">
+      <section className="bg-indigo-50/80 border-b border-indigo-100 py-16 lg:py-24">
         <div className="container-main">
           {/* Breadcrumbs */}
-          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-primary-200 mb-8">
-            <Link href="/" className="hover:text-white transition-colors">
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-gray-400 mb-8">
+            <Link href="/" className="hover:text-gray-700 transition-colors">
               Strona główna
             </Link>
             <ChevronRightIcon size={16} />
-            <span className="text-white">O nas</span>
+            <span className="text-gray-600">O nas</span>
           </nav>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 text-sm font-medium text-primary-100 mb-6">
-                Autoryzowany partner Zebra Technologies od 2001
-              </span>
-              <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                Od 2001 roku pomagamy firmom automatyzować procesy
-              </h1>
-              <p className="text-xl text-primary-100 leading-relaxed">
-                TAKMA to rodzinna firma z Wrocławia, która od ponad 24 lat dostarcza drukarki
-                etykiet, skanery kodów kreskowych i terminale mobilne dla biznesu. Łączymy
-                doświadczenie z indywidualnym podejściem do każdego klienta.
-              </p>
-            </div>
-            <div className="bg-white/5 border-2 border-dashed border-white/20 rounded-2xl aspect-[4/3] flex items-center justify-center">
-              <div className="text-center">
-                <UserGroupIcon size={64} className="text-white/30 mx-auto mb-4" />
-                <p className="text-white/40 text-sm">Zdjęcie zespołu TAKMA</p>
-              </div>
-            </div>
+          <div className="max-w-3xl">
+            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              Od 2001 roku pomagamy firmom automatyzować procesy
+            </h1>
+            <p className="text-xl text-gray-600 leading-relaxed">
+              TAKMA to firma z Wrocławia, która od ponad 24 lat dostarcza drukarki
+              etykiet, skanery kodów kreskowych i terminale mobilne dla biznesu. Łączymy
+              doświadczenie z indywidualnym podejściem do każdego klienta.
+            </p>
           </div>
         </div>
       </section>
@@ -277,84 +259,13 @@ export default function AboutPage() {
                 key={stat.label}
                 className="bg-white rounded-xl shadow-lg p-6 text-center border border-gray-100"
               >
-                <div className="text-3xl lg:text-4xl font-bold text-primary-600 mb-1">
+                <div className="text-3xl lg:text-4xl font-bold text-gray-900 mb-1">
                   <AnimatedCounter end={stat.end} suffix={stat.suffix} />
                 </div>
                 <div className="text-gray-900 font-medium text-sm">{stat.label}</div>
                 <div className="text-gray-400 text-xs mt-0.5">{stat.sublabel}</div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* S3: Założyciel — Tadeusz Tiuchty */}
-      <section className="py-16 lg:py-24">
-        <div className="container-main">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-            {/* Placeholder zdjęcie */}
-            <div className="bg-gray-50 border-2 border-dashed border-gray-200 rounded-2xl aspect-[3/4] flex items-center justify-center max-w-sm mx-auto lg:mx-0">
-              <div className="text-center">
-                <UserIcon size={64} className="text-gray-300 mx-auto mb-4" />
-                <p className="text-gray-400 text-sm">Tadeusz Tiuchty</p>
-                <p className="text-gray-300 text-xs">Założyciel TAKMA</p>
-              </div>
-            </div>
-
-            {/* Bio */}
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
-                Tadeusz Tiuchty
-              </h2>
-              <p className="text-primary-600 font-medium mb-6">Założyciel i właściciel TAKMA</p>
-
-              <div className="space-y-4 text-gray-600 leading-relaxed">
-                <p>
-                  Absolwent <strong className="text-gray-900">Uniwersytetu Wrocławskiego</strong> (prawo)
-                  i <strong className="text-gray-900">Uniwersytetu Rolniczego w Krakowie</strong> (leśnictwo).
-                  Nietypowe połączenie wykształcenia, które okazało się kluczem do sukcesu — głębokie
-                  zrozumienie branży leśnej i jednoczesna znajomość prawa zamówień publicznych.
-                </p>
-                <p>
-                  W 2001 roku założył firmę TAKMA we Wrocławiu, początkowo dostarczając drukarki
-                  kodów kreskowych dla nadleśnictw i zakładów usług leśnych. Z biegiem lat firma
-                  rozrosła się, obsługując klientów z logistyki, handlu, produkcji i administracji.
-                </p>
-                <p>
-                  Przez <strong className="text-gray-900">8 lat pełnił funkcję sekretarza
-                  Stowarzyszenia Przedsiębiorców Leśnych</strong>, aktywnie wspierając rozwój
-                  technologiczny polskiego leśnictwa. Obecnie jest{' '}
-                  <strong className="text-gray-900">wykładowcą na Uniwersytecie Rolniczym
-                  w Krakowie</strong> (Wydział Leśny), gdzie prowadzi zajęcia z informatyzacji
-                  i automatycznej identyfikacji w leśnictwie.
-                </p>
-              </div>
-
-              {/* Callout cards */}
-              <div className="grid sm:grid-cols-2 gap-3 mt-8">
-                <div className="bg-primary-50 rounded-lg p-3 text-center">
-                  <div className="text-primary-700 font-semibold text-sm">Wykładowca</div>
-                  <div className="text-primary-600 text-xs">UR Kraków, Wydział Leśny</div>
-                </div>
-                <div className="bg-primary-50 rounded-lg p-3 text-center">
-                  <div className="text-primary-700 font-semibold text-sm">Sekretarz SPL</div>
-                  <div className="text-primary-600 text-xs">8 lat działalności</div>
-                </div>
-              </div>
-
-              {/* Cytat */}
-              <blockquote className="mt-8 border-l-4 border-primary-500 pl-6 py-2">
-                <p className="text-gray-700 italic leading-relaxed">
-                  &quot;Każda firma ma inne potrzeby. Naszą rolą jest nie tylko dostarczyć sprzęt,
-                  ale zrozumieć proces klienta i zaproponować rozwiązanie, które naprawdę działa.
-                  Po 24 latach wiem, że najlepsza technologia to ta, o której użytkownik nie musi
-                  myśleć — po prostu robi swoje.&quot;
-                </p>
-                <footer className="mt-2 text-sm text-gray-500">
-                  — Tadeusz Tiuchty, założyciel TAKMA
-                </footer>
-              </blockquote>
-            </div>
           </div>
         </div>
       </section>
@@ -374,8 +285,14 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Karta 1: Doświadczenie */}
             <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600 mb-4">
-                <StarIcon size={24} />
+              <div className="w-16 h-16 mb-4">
+                <Image
+                  src="/images/about/25-lat-doswiadczenia.png"
+                  alt="Ikona 25 lat doświadczenia TAKMA"
+                  width={64}
+                  height={64}
+                  className="object-contain mix-blend-multiply"
+                />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">25 lat doświadczenia</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -386,8 +303,14 @@ export default function AboutPage() {
 
             {/* Karta 2: Serwis */}
             <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600 mb-4">
-                <WrenchIcon size={24} />
+              <div className="w-16 h-16 mb-4">
+                <Image
+                  src="/images/about/autoryzowany-serwis-zebra.png"
+                  alt="Ikona autoryzowany serwis Zebra"
+                  width={64}
+                  height={64}
+                  className="object-contain mix-blend-multiply"
+                />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Autoryzowany serwis Zebra</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -407,20 +330,32 @@ export default function AboutPage() {
 
             {/* Karta 3: Przetargi */}
             <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600 mb-4">
-                <BuildingOfficeIcon size={24} />
+              <div className="w-16 h-16 mb-4">
+                <Image
+                  src="/images/about/przetargi-publiczne.png"
+                  alt="Ikona przetargi publiczne"
+                  width={64}
+                  height={64}
+                  className="object-contain mix-blend-multiply"
+                />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Przetargi publiczne</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Wieloletnie doświadczenie w zamówieniach publicznych — realizacje dla Lasów
-                Państwowych (RDLP Łódź, Wrocław, Zielona Góra). Znajomość procedur PZP.
+                Wieloletnie doświadczenie w zamówieniach publicznych — realizacje dla
+                Tauron, Poczta Polska, Lasy Państwowe i wielu innych. Znajomość procedur PZP.
               </p>
             </div>
 
             {/* Karta 4: Nagrody */}
             <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center text-yellow-600 mb-4">
-                <CheckIcon size={24} />
+              <div className="w-16 h-16 mb-4">
+                <Image
+                  src="/images/about/nagrody-i-wyroznienia.png"
+                  alt="Ikona nagrody i wyróżnienia"
+                  width={64}
+                  height={64}
+                  className="object-contain mix-blend-multiply"
+                />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Nagrody i wyróżnienia</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -432,8 +367,14 @@ export default function AboutPage() {
 
             {/* Karta 5: Zespół */}
             <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600 mb-4">
-                <UserGroupIcon size={24} />
+              <div className="w-16 h-16 mb-4">
+                <Image
+                  src="/images/about/certyfikowani-specjalisci.png"
+                  alt="Ikona certyfikowani specjaliści"
+                  width={64}
+                  height={64}
+                  className="object-contain mix-blend-multiply"
+                />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Certyfikowani specjaliści</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -444,58 +385,20 @@ export default function AboutPage() {
 
             {/* Karta 6: Podejście */}
             <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600 mb-4">
-                <UserIcon size={24} />
+              <div className="w-16 h-16 mb-4">
+                <Image
+                  src="/images/about/partnerskie-podejscie-b2b.png"
+                  alt="Ikona partnerskie podejście B2B"
+                  width={64}
+                  height={64}
+                  className="object-contain mix-blend-multiply"
+                />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Partnerskie podejście B2B</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 Nie jesteśmy sklepem — jesteśmy partnerem technologicznym. Pomagamy dobrać
                 rozwiązanie, wdrożyć je i serwisować przez cały cykl życia urządzenia.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* S5: Oś czasu (Timeline) */}
-      <section className="py-16 lg:py-24">
-        <div className="container-main">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Nasza historia
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Kluczowe momenty w rozwoju firmy TAKMA
-            </p>
-          </div>
-
-          <div className="max-w-3xl mx-auto">
-            <div className="relative">
-              {/* Line */}
-              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-200 lg:left-1/2 lg:-translate-x-1/2" />
-
-              {/* Items */}
-              <div className="space-y-8">
-                {milestones.map((milestone, index) => (
-                  <div
-                    key={milestone.year}
-                    className={`relative flex items-center gap-6 ${
-                      index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-                    }`}
-                  >
-                    <div className="flex-shrink-0 w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center text-white font-bold text-sm z-10">
-                      {milestone.year}
-                    </div>
-                    <div
-                      className={`flex-1 bg-white rounded-xl p-4 shadow-sm border border-gray-100 ${
-                        index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'
-                      }`}
-                    >
-                      <p className="text-gray-700 text-sm leading-relaxed">{milestone.event}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>
@@ -515,24 +418,29 @@ export default function AboutPage() {
 
           {/* Loga partnerów */}
           <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-4 mb-12">
-            {partners.map((partner) => (
-              <div
-                key={partner.name}
-                className="bg-white rounded-xl p-5 border border-gray-100 text-center hover:shadow-md transition-all group"
-              >
-                <div className="h-12 flex items-center justify-center mb-3 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all">
-                  <Image
-                    src={partner.logo}
-                    alt={`Logo ${partner.name} — partner TAKMA`}
-                    width={120}
-                    height={48}
-                    className="object-contain max-h-12"
-                  />
-                </div>
-                <h3 className="font-semibold text-gray-900 text-xs">{partner.name}</h3>
-                <p className="text-gray-500 text-[10px] mt-0.5">{partner.status}</p>
-              </div>
-            ))}
+            {partners.map((partner) => {
+              const Wrapper = partner.href ? 'a' : 'div'
+              const wrapperProps = partner.href ? { href: partner.href, target: '_blank', rel: 'noopener' } : {}
+              return (
+                <Wrapper
+                  key={partner.name}
+                  {...wrapperProps as any}
+                  className="bg-white rounded-xl p-5 border border-gray-100 text-center hover:shadow-md transition-all group"
+                >
+                  <div className="h-12 flex items-center justify-center mb-3 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all">
+                    <Image
+                      src={partner.logo}
+                      alt={`Logo ${partner.name} — partner TAKMA`}
+                      width={120}
+                      height={48}
+                      className="object-contain max-h-12"
+                    />
+                  </div>
+                  <h3 className="font-semibold text-gray-900 text-xs">{partner.name}</h3>
+                  <p className="text-gray-500 text-[10px] mt-0.5">{partner.status}</p>
+                </Wrapper>
+              )
+            })}
             <div className="bg-white rounded-xl p-5 border border-gray-100 text-center flex flex-col items-center justify-center">
               <div className="h-12 flex items-center justify-center mb-3">
                 <span className="text-gray-300 text-2xl font-light">+</span>
@@ -542,7 +450,7 @@ export default function AboutPage() {
           </div>
 
           {/* Certyfikaty Zebra — oficjalne loga */}
-          <div className="bg-white rounded-xl border border-gray-100 p-8">
+          <div className="bg-white rounded-xl border p-8" style={{ borderColor: '#A8F000' }}>
             <h3 className="text-center text-sm font-semibold text-gray-500 uppercase tracking-wider mb-6">
               Nasze certyfikaty Zebra Technologies
             </h3>
@@ -598,8 +506,14 @@ export default function AboutPage() {
                 key={industry.name}
                 className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600 mb-4">
-                  {industry.icon}
+                <div className="w-16 h-16 mb-4">
+                  <Image
+                    src={industry.image}
+                    alt={`Ikona ${industry.name}`}
+                    width={64}
+                    height={64}
+                    className="object-contain mix-blend-multiply"
+                  />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">{industry.name}</h3>
                 <p className="text-gray-600 text-sm">{industry.desc}</p>
@@ -672,12 +586,12 @@ export default function AboutPage() {
       </section>
 
       {/* S9: CTA kontaktowy */}
-      <section className="py-16 lg:py-24 bg-gradient-hero text-white">
+      <section className="py-16 lg:py-24 bg-indigo-50/80 border-t border-indigo-100">
         <div className="container-main text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Porozmawiajmy o Twoich potrzebach
           </h2>
-          <p className="text-lg text-primary-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
             Niezależnie czy szukasz jednej drukarki czy kompleksowego wdrożenia — chętnie
             doradzimy i przygotujemy indywidualną ofertę.
           </p>
@@ -686,14 +600,14 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
             <a
               href="tel:+48717817128"
-              className="flex items-center gap-2 text-primary-100 hover:text-white transition-colors"
+              className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
             >
               <PhoneIcon size={20} />
               <span className="font-medium">+48 71 781 71 28</span>
             </a>
             <a
               href="mailto:takma@takma.com.pl"
-              className="flex items-center gap-2 text-primary-100 hover:text-white transition-colors"
+              className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
             >
               <MailIcon size={20} />
               <span className="font-medium">takma@takma.com.pl</span>
@@ -703,10 +617,7 @@ export default function AboutPage() {
           {/* Buttony */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/kontakt">
-              <Button
-                size="lg"
-                className="!bg-white !text-primary-700 hover:!bg-primary-50"
-              >
+              <Button size="lg">
                 Wyślij zapytanie
               </Button>
             </Link>
@@ -714,7 +625,7 @@ export default function AboutPage() {
               <Button
                 size="lg"
                 variant="ghost"
-                className="text-white border-2 border-white/30 hover:bg-white/10"
+                className="text-gray-700 border-2 border-gray-300 hover:bg-gray-100"
               >
                 Przeglądaj produkty
               </Button>

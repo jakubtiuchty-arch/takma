@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 
@@ -58,9 +59,15 @@ export default function Sidebar() {
   return (
     <aside className="w-60 bg-slate-800 text-white min-h-screen flex flex-col flex-shrink-0">
       {/* Logo */}
-      <div className="px-5 py-5 border-b border-slate-700">
-        <Link href="/admin" className="text-lg font-bold tracking-wide">
-          TAKMA <span className="text-blue-400 text-sm font-normal">Admin</span>
+      <div className="px-5 py-2.5 border-b border-slate-700 flex justify-center">
+        <Link href="/admin">
+          <Image
+            src="/images/takma_logo.png"
+            alt="TAKMA"
+            width={140}
+            height={28}
+            className="brightness-0 invert"
+          />
         </Link>
       </div>
 

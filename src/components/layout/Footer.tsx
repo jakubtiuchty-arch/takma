@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { PhoneIcon, MailIcon } from '@/components/ui/Icons'
 
 const footerLinks = {
@@ -37,16 +38,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
           {/* Info o firmie */}
           <div className="lg:col-span-1">
-            <Link
-              href="/"
-              className="inline-flex items-center gap-2 font-bold text-xl text-white mb-4"
-            >
-              <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">T</span>
-              </div>
-              <span>TAKMA</span>
+            <Link href="/" className="inline-block mb-3">
+              <Image
+                src="/images/takma_logo.png"
+                alt="TAKMA — Centrum Systemów Mobilnych"
+                width={220}
+                height={44}
+                className="brightness-0 invert"
+              />
             </Link>
-            <p className="text-sm text-gray-400 mb-6">
+            <p className="text-sm text-gray-400 mb-5">
               Od 25 lat dostarczamy rozwiązania AutoID dla firm w całej Polsce.
               Drukarki etykiet, skanery kodów, terminale mobilne i systemy RFID.
             </p>

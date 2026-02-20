@@ -10900,6 +10900,28 @@ Wersja z łącznością LTE/GPS do pracy w terenie: Zebra MC2700. Szczegółowa 
           'Kamera': '13 Mpix',
         },
       },
+      {
+        partNumber: 'KT-MC220J-2A3S2RW',
+        name: 'MC2200, 2/16 GB + stacja dokująca',
+        priceFrom: 2539.71,
+        availability: 'unavailable' as const,
+        attributes: {
+          'Pamięć': '2 GB / 16 GB',
+          'Stacja dokująca': 'Tak',
+        },
+      },
+      {
+        partNumber: 'KT-MC220K-2B3S3RW',
+        name: 'MC2200, 3/32 GB, NFC, Kamera 13 MP + stacja dokująca',
+        priceFrom: 3010.07,
+        availability: 'unavailable' as const,
+        attributes: {
+          'Pamięć': '3 GB / 32 GB',
+          'NFC': 'Tak',
+          'Kamera': '13 Mpix',
+          'Stacja dokująca': 'Tak',
+        },
+      },
     ],
     faq: [
       { question: 'Ile kosztuje Zebra MC2200?', answer: 'Ceny Zebra MC2200 zaczynają się od ok. 2 261 zł netto za konfigurację bazową (2 GB/16 GB, bez kamery i NFC). Wersja rozszerzona z 3 GB/32 GB, kamerą 13 MP i NFC kosztuje ok. 2 821 zł netto. Ceny netto, dane z lutego 2026.' },
@@ -11062,6 +11084,28 @@ Wersja wyłącznie Wi-Fi (niższa cena, do pracy wewnątrz budynku): Zebra MC220
           'NFC': 'Tak',
           'Kamera': '13 Mpix',
           'eSIM': 'Tak',
+        },
+      },
+      {
+        partNumber: 'KT-MC27BJ-2A3S2RW',
+        name: 'MC2700, 2/16 GB, LTE + stacja dokująca',
+        priceFrom: 2868.93,
+        availability: 'unavailable' as const,
+        attributes: {
+          'Pamięć': '2 GB / 16 GB',
+          'Stacja dokująca': 'Tak',
+        },
+      },
+      {
+        partNumber: 'KT-MC27BK-2B3S3RW',
+        name: 'MC2700, 3/32 GB, NFC, Kamera 13 MP, LTE + stacja dokująca',
+        priceFrom: 3339.29,
+        availability: 'unavailable' as const,
+        attributes: {
+          'Pamięć': '3 GB / 32 GB',
+          'NFC': 'Tak',
+          'Kamera': '13 Mpix',
+          'Stacja dokująca': 'Tak',
         },
       },
     ],

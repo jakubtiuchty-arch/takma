@@ -3,10 +3,7 @@ import Image from 'next/image'
 import { Button } from '@/components/ui'
 import {
   ArrowRightIcon,
-  CheckIcon,
-  TruckIcon,
   WrenchIcon,
-  UserGroupIcon,
 } from '@/components/ui/Icons'
 import { ProductCard } from '@/components/product'
 import { categories, products } from '@/data/products'
@@ -15,9 +12,9 @@ import HeroCarousel from '@/components/home/HeroCarousel'
 const categoryIcons: Record<string, string> = {
   printer: '/images/drukarki-etykiet.png',
   scan: '/images/skanery-czytniki.png',
-  smartphone: '/images/terminale.png',
+  smartphone: '/images/terminale-mobilne.png',
   tablet: '/images/tablety.png',
-  tag: '/images/Materialy-eksploatacyjne.png',
+  tag: '/images/materialy-eksploatacyjne.png',
   package: '/images/akcesoria.png',
 }
 
@@ -56,13 +53,13 @@ export default function HomePage() {
                 href={`/${category.slug}`}
                 className={`bento-card group p-5 lg:p-6 flex flex-col items-start gap-4 reveal reveal-delay-${Math.min(i + 1, 5)}`}
               >
-                <div className="w-12 h-12 rounded-xl overflow-hidden group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 rounded-xl overflow-hidden group-hover:scale-110 transition-transform duration-300">
                   <Image
                     src={categoryIcons[category.icon] || '/images/icon-accessories.png'}
                     alt={category.name}
-                    width={96}
-                    height={96}
-                    className="w-full h-full object-cover"
+                    width={128}
+                    height={128}
+                    className="w-full h-full object-cover mix-blend-multiply"
                   />
                 </div>
                 <div>
@@ -153,22 +150,22 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               {
-                icon: <UserGroupIcon size={28} />,
-                title: '20 lat doświadczenia',
+                image: '/images/about/doswiadczenie.png',
+                title: '25 lat doświadczenia',
                 desc: 'Tysiące zrealizowanych projektów i zadowolonych klientów w całej Polsce',
               },
               {
-                icon: <TruckIcon size={28} />,
+                image: '/images/about/dostawa.png',
                 title: 'Szybka dostawa',
                 desc: 'Wysyłka 24-48h — większość produktów dostępna od ręki z magazynu',
               },
               {
-                icon: <WrenchIcon size={28} />,
+                image: '/images/about/serwis.png',
                 title: 'Autoryzowany serwis',
                 desc: 'Pełna obsługa gwarancyjna i pogwarancyjna urządzeń Zebra',
               },
               {
-                icon: <CheckIcon size={28} />,
+                image: '/images/about/doradztwo.png',
                 title: 'Doradztwo techniczne',
                 desc: 'Pomożemy dobrać rozwiązanie idealne dla Twojej branży i potrzeb',
               },
@@ -177,8 +174,8 @@ export default function HomePage() {
                 key={i}
                 className={`bento-card p-6 lg:p-7 flex flex-col reveal reveal-delay-${Math.min(i + 1, 5)}`}
               >
-                <div className="w-14 h-14 rounded-2xl bg-primary-50 flex items-center justify-center text-primary-600 mb-5">
-                  {item.icon}
+                <div className="w-[72px] h-[72px] mb-5">
+                  <Image src={item.image} alt={item.title} width={72} height={72} className="object-contain mix-blend-multiply" />
                 </div>
                 <h3 className="font-bold text-gray-900 text-base mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>

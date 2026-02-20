@@ -17,10 +17,11 @@ interface VariantsTableProps {
   manufacturerId?: string
 }
 
-const availabilityConfig = {
-  available: { label: 'Dostępny', variant: 'success' as const },
-  'on-order': { label: 'Na zamówienie', variant: 'warning' as const },
-  unavailable: { label: 'Niedostępny', variant: 'danger' as const },
+const availabilityConfig: Record<string, { label: string; variant: 'success' | 'warning' | 'danger' }> = {
+  available: { label: 'Dostępny', variant: 'success' },
+  check: { label: 'Na zamówienie', variant: 'warning' },
+  'on-order': { label: 'Na zamówienie', variant: 'warning' },
+  unavailable: { label: 'Niedostępny', variant: 'danger' },
 }
 
 function StockCell({ stockPL, stockDE, loading }: { stockPL: number; stockDE: number; loading: boolean }) {
@@ -200,7 +201,10 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   const avail = stock?.found
     ? availabilityConfig[stock.availability]
     : availabilityConfig[variant.availability]
-  const isUnavailable = !stockLoading && stock?.found && (stock.availability === 'unavailable' || stock.availability === 'on-order')
+  const isUnavailable = !stockLoading && (
+    (stock?.found && (stock.availability === 'unavailable' || stock.availability === 'on-order'))
+    || variant.availability === 'unavailable'
+  )
 
   return (
     <tr className={`${rowIndex % 2 === 0 ? 'bg-white' : 'bg-gray-50'} hover:bg-primary-50/50 transition-colors`}>
@@ -271,7 +275,10 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
   const avail = stock?.found
     ? availabilityConfig[stock.availability]
     : availabilityConfig[variant.availability]
-  const isUnavailable = !stockLoading && stock?.found && (stock.availability === 'unavailable' || stock.availability === 'on-order')
+  const isUnavailable = !stockLoading && (
+    (stock?.found && (stock.availability === 'unavailable' || stock.availability === 'on-order'))
+    || variant.availability === 'unavailable'
+  )
 
   return (
     <div className="bg-white border border-gray-200 rounded-xl p-4 space-y-3">
