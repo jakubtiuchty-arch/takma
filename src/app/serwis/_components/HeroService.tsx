@@ -27,7 +27,7 @@ export function HeroService() {
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a href="#serwis-zebra" className="w-full sm:w-auto">
-              <Button size="lg" className="w-full bg-[#0A1A2F] hover:bg-black text-[#A8F000] border-0 flex items-center justify-center gap-3 py-5 text-lg font-medium rounded-xl transition-all">
+              <Button size="lg" variant="ghost" className="w-full !bg-[#0A1A2F] hover:!bg-black !text-[#A8F000] border-0 flex items-center justify-center gap-3 py-5 text-lg font-medium rounded-xl transition-all">
                 Zgłoś naprawę ZEBRA
                 <ArrowRightIcon className="h-5 w-5" />
               </Button>

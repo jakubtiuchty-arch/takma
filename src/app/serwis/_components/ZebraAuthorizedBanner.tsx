@@ -57,7 +57,7 @@ export function ZebraAuthorizedBanner() {
                 className="w-full"
               >
                 {/* Dokładne odtworzenie przycisku: granatowe tło, limonkowy tekst, zaokrąglone rogi */}
-                <Button size="lg" className="w-full bg-[#0A1A2F] hover:bg-black text-[#A8F000] border-0 flex items-center justify-center gap-3 py-6 text-[18px] font-medium rounded-xl transition-all">
+                <Button size="lg" variant="ghost" className="w-full !bg-[#0A1A2F] hover:!bg-black !text-[#A8F000] border-0 flex items-center justify-center gap-3 py-6 text-[18px] font-medium rounded-xl transition-all">
                   Zgłoś naprawę ZEBRA
                   <ArrowRightIcon className="h-5 w-5" />
                 </Button>
