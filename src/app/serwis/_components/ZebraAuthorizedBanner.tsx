@@ -51,7 +51,7 @@ export function ZebraAuthorizedBanner() {
               <p className="text-xl font-bold text-gray-900 mb-6 text-center">Posiadasz urządzenie Zebra?</p>
               
               <a 
-                href="https://www.serwis-zebry.pl" 
+                href="https://www.serwis-zebry.pl/#formularz" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full"
