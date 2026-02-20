@@ -79,6 +79,7 @@ const navigation: NavItem[] = [
       { name: 'Gastronomia i HoReCa', href: '/drukarki-etykiet-gastronomia' },
     ],
   },
+  { name: 'Serwis', href: '/serwis' },
   { name: 'Kontakt', href: '/kontakt' },
 ]
 
@@ -151,8 +152,9 @@ export default function Navbar() {
             {/* Desktop navigation */}
             <div className="hidden lg:flex items-center justify-center flex-1 gap-6">
               {navigation.map((item) => {
-                const isActive = pathname === item.href || pathname.startsWith(item.href + '/')
-                  || (item.children?.some(c => pathname === c.href))
+                const isActive = item.href === '/' 
+                  ? pathname === item.href 
+                  : (pathname === item.href || pathname.startsWith(item.href + '/') || (item.children?.some(c => pathname === c.href)))
 
                 if (item.children) {
                   return (
@@ -273,8 +275,9 @@ export default function Navbar() {
             <nav className="container-main py-4">
               <ul className="space-y-1">
                 {navigation.map((item) => {
-                  const isActive = pathname === item.href || pathname.startsWith(item.href + '/')
-                    || (item.children?.some(c => pathname === c.href))
+                  const isActive = item.href === '/' 
+                    ? pathname === item.href 
+                    : (pathname === item.href || pathname.startsWith(item.href + '/') || (item.children?.some(c => pathname === c.href)))
                   const isExpanded = expandedMobileItem === item.name
 
                   return (
