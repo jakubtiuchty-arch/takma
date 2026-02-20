@@ -12,7 +12,7 @@ export function HeroService() {
           alt="Serwis urządzeń AutoID TAKMA" 
           fill
           priority
-          className="object-cover object-center opacity-30 mix-blend-multiply"
+          className="object-cover object-center opacity-40"
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/80 z-0"></div>
@@ -27,9 +27,9 @@ export function HeroService() {
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a href="#serwis-zebra" className="w-full sm:w-auto">
-              <Button size="lg" variant="zebra" className="w-full flex items-center justify-center gap-2">
+              <Button size="lg" className="w-full bg-[#0A1A2F] hover:bg-black text-[#A8F000] border-0 flex items-center justify-center gap-3 py-5 text-lg font-medium rounded-xl transition-all">
                 Zgłoś naprawę ZEBRA
-                <ArrowRightIcon className="h-4 w-4" />
+                <ArrowRightIcon className="h-5 w-5" />
               </Button>
             </a>
             <a href="#zgloszenie" className="w-full sm:w-auto">
