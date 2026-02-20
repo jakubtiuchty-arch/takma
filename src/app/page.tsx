@@ -10,11 +10,11 @@ import { categories, products } from '@/data/products'
 import HeroCarousel from '@/components/home/HeroCarousel'
 
 const categoryIcons: Record<string, string> = {
-  printer: '/images/drukarki-etykiet.png',
+  printer: '/images/ikony/drukarki-etykiet.jpeg',
   scan: '/images/skanery-czytniki.png',
-  smartphone: '/images/terminale-mobilne.png',
+  smartphone: '/images/ikony/terminale-mobilne.jpeg',
   tablet: '/images/tablety.png',
-  tag: '/images/materialy-eksploatacyjne.png',
+  tag: '/images/ikony/materialy-eksploatacyjne.jpeg',
   package: '/images/akcesoria.png',
 }
 
