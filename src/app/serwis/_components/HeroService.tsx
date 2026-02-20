@@ -6,16 +6,14 @@ import { ArrowRightIcon } from '@/components/ui/Icons'
 export function HeroService() {
   return (
     <section className="relative overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
-      <div className="absolute inset-0 z-0">
-        <Image 
-          src="/images/hero_serwis.jpeg" 
-          alt="Serwis urządzeń AutoID TAKMA" 
-          fill
-          priority
-          className="object-cover object-center opacity-40"
-        />
-      </div>
-      <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/80 z-0"></div>
+      <Image
+        src="/images/hero_serwis.jpeg"
+        alt="Serwis urządzeń AutoID TAKMA"
+        fill
+        priority
+        className="object-cover object-center opacity-50"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-gray-900/30"></div>
       
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
