@@ -1,4 +1,4 @@
-import { ChevronDownIcon, WrenchScrewdriverIcon } from '@/components/ui/Icons'
+import { ChevronDownIcon } from '@/components/ui/Icons'
 
 const issues = [
   {
@@ -28,7 +28,6 @@ export function CommonIssues() {
     <section className="bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3 mb-8">
-          <WrenchScrewdriverIcon className="h-8 w-8 text-primary-600" />
           <h2 className="text-3xl font-bold tracking-tight text-gray-900">
             Baza wiedzy: Rozwiązywanie problemów (Troubleshooting)
           </h2>

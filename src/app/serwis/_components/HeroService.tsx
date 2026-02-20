@@ -1,14 +1,23 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import Button from '@/components/ui/Button'
 import { ArrowRightIcon } from '@/components/ui/Icons'
 
 export function HeroService() {
   return (
     <section className="relative overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat opacity-20 mix-blend-multiply"></div>
-      <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/80"></div>
+      <div className="absolute inset-0 z-0">
+        <Image 
+          src="/images/hero_serwis.jpeg" 
+          alt="Serwis urządzeń AutoID TAKMA" 
+          fill
+          priority
+          className="object-cover object-center opacity-30 mix-blend-multiply"
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/80 z-0"></div>
       
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
             Kompleksowy Serwis Urządzeń AutoID i IT
@@ -17,7 +26,7 @@ export function HeroService() {
             Profesjonalna naprawa drukarek etykiet, terminali mobilnych, tabletów przemysłowych i skanerów kodów kreskowych. Minimalizujemy przestoje w Twojej firmie. Obsługujemy m.in. marki: Honeywell, Datalogic, Brother, M3 Mobile i Newland.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a href="https://www.serwis-zebry.pl" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+            <a href="#serwis-zebra" className="w-full sm:w-auto">
               <Button size="lg" variant="zebra" className="w-full flex items-center justify-center gap-2">
                 Zgłoś naprawę ZEBRA
                 <ArrowRightIcon className="h-4 w-4" />

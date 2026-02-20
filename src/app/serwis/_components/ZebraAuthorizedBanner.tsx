@@ -3,7 +3,7 @@ import Button from '@/components/ui/Button'
 
 export function ZebraAuthorizedBanner() {
   return (
-    <section className="bg-gray-50 py-16 sm:py-24">
+    <section id="serwis-zebra" className="bg-gray-50 py-16 sm:py-24 scroll-mt-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Kontener główny - cały w intensywnym odcieniu limonkowo-zielonym (#A8F000) gradientem wpadającym w ciemniejszą wibrację */}
@@ -56,10 +56,10 @@ export function ZebraAuthorizedBanner() {
                 rel="noopener noreferrer"
                 className="w-full"
               >
-                {/* Intensywnie granatowy/czarny przycisk z tekstem z pierwszego obrazka "Zgłoś naprawę ZEBRA" */}
-                <Button size="lg" className="w-full bg-[#0A1A2F] hover:bg-black text-[#A8F000] border-0 flex items-center justify-center gap-3 py-5 text-lg font-bold shadow-lg rounded-xl transition-all hover:scale-105">
+                {/* Dokładne odtworzenie przycisku: granatowe tło, limonkowy tekst, zaokrąglone rogi */}
+                <Button size="lg" className="w-full bg-[#0A1A2F] hover:bg-black text-[#A8F000] border-0 flex items-center justify-center gap-3 py-6 text-[18px] font-medium rounded-xl transition-all">
                   Zgłoś naprawę ZEBRA
-                  <ArrowRightIcon className="h-6 w-6" />
+                  <ArrowRightIcon className="h-5 w-5" />
                 </Button>
               </a>
               
