@@ -58,8 +58,8 @@ export function DeviceCategoriesAEO() {
               key={category.title} 
               className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 hover:shadow-lg transition-shadow duration-300"
             >
-              <div className="h-12 w-12 rounded-xl bg-primary-50 flex items-center justify-center mb-6">
-                <category.icon className="h-6 w-6 text-primary-600" />
+              <div className="h-14 w-14 rounded-2xl bg-blue-50/50 border border-blue-100 flex items-center justify-center mb-6">
+                <category.icon className="h-7 w-7 text-blue-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{category.title}</h3>
               <p className="text-gray-600 mb-6">{category.description}</p>
