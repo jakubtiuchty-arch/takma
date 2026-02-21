@@ -346,34 +346,28 @@ export default function HomePage() {
             <h3 className="text-center text-xs lg:text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4 lg:mb-6">
               Nasze certyfikaty Zebra Technologies
             </h3>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-5 sm:gap-12">
-              <div className="text-center">
-                <Image
-                  src="/images/certifications/zebra-premier-solution-partner.png"
-                  alt="Zebra Premier Solution Partner — oficjalny certyfikat TAKMA"
-                  width={220}
-                  height={48}
-                  className="mx-auto max-w-[160px] lg:max-w-[220px]"
-                />
-              </div>
-              <div className="text-center">
-                <Image
-                  src="/images/certifications/zebra-public-sector-specialist.png"
-                  alt="Zebra Public Sector Specialist — 1 z 4 firm w Polsce"
-                  width={220}
-                  height={48}
-                  className="mx-auto max-w-[160px] lg:max-w-[220px]"
-                />
-              </div>
-              <div className="text-center">
-                <Image
-                  src="/images/certifications/zebra-printer-repair-specialist.png"
-                  alt="Zebra Printer Repair Specialist — autoryzowany serwis TAKMA"
-                  width={220}
-                  height={48}
-                  className="mx-auto max-w-[160px] lg:max-w-[220px]"
-                />
-              </div>
+            <div className="flex items-center justify-center gap-4 md:gap-8 lg:gap-12">
+              <Image
+                src="/images/certifications/zebra-premier-solution-partner.png"
+                alt="Zebra Premier Solution Partner — oficjalny certyfikat TAKMA"
+                width={220}
+                height={48}
+                className="h-8 md:h-10 lg:h-12 w-auto object-contain"
+              />
+              <Image
+                src="/images/certifications/zebra-public-sector-specialist.png"
+                alt="Zebra Public Sector Specialist — 1 z 4 firm w Polsce"
+                width={220}
+                height={48}
+                className="h-8 md:h-10 lg:h-12 w-auto object-contain"
+              />
+              <Image
+                src="/images/certifications/zebra-printer-repair-specialist.png"
+                alt="Zebra Printer Repair Specialist — autoryzowany serwis TAKMA"
+                width={220}
+                height={48}
+                className="h-8 md:h-10 lg:h-12 w-auto object-contain"
+              />
             </div>
           </div>
         </div>
