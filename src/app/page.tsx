@@ -319,22 +319,22 @@ export default function HomePage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 mb-8 lg:mb-12">
             {[
               {
-                image: '/images/about/doswiadczenie.png',
+                image: '/images/ikony/25_lat.jpeg',
                 title: '25 lat doświadczenia',
                 desc: 'Tysiące zrealizowanych projektów i zadowolonych klientów w całej Polsce',
               },
               {
-                image: '/images/about/dostawa.png',
+                image: '/images/ikony/Szybka_dostawa.jpeg',
                 title: 'Szybka dostawa',
                 desc: 'Wysyłka 24–48h — większość produktów dostępna od ręki z magazynu',
               },
               {
-                image: '/images/about/serwis.png',
+                image: '/images/ikony/Autoryzowany.jpeg',
                 title: 'Autoryzowany serwis',
                 desc: 'Naprawy gwarancyjne i pogwarancyjne urządzeń Zebra, Honeywell, Datalogic i innych',
               },
               {
-                image: '/images/about/doradztwo.png',
+                image: '/images/ikony/Doradztwo.jpeg',
                 title: 'Doradztwo techniczne',
                 desc: 'Pomożemy dobrać rozwiązanie idealne dla Twojej branży i potrzeb',
               },
