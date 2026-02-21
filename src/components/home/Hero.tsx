@@ -7,42 +7,50 @@ import clsx from 'clsx'
 import { Button } from '@/components/ui'
 import { ArrowRightIcon } from '@/components/ui/Icons'
 
-const heroProducts = [
+interface ProductSlide {
+  type: 'product'
+  image: string
+  name: string
+  slug: string
+  priceFrom: number
+  imageClassName?: string
+}
+
+interface InfoSlide {
+  type: 'info'
+}
+
+type HeroSlide = InfoSlide | ProductSlide
+
+const slides: HeroSlide[] = [
+  { type: 'info' },
   {
+    type: 'product',
+    image: '/images/hero-zt411.jpeg',
     name: 'Zebra ZT411',
     slug: 'zebra-zt411',
-    image: '/images/hero-zt411.jpeg',
     priceFrom: 5132,
-    label: 'Drukarka przemysłowa',
-    imageClassName: 'object-contain scale-[1.15]',
+    imageClassName: 'object-contain scale-[1.3] translate-y-[3%]',
   },
   {
+    type: 'product',
+    image: '/images/products/zd421t_1.png',
     name: 'Zebra ZD421t',
     slug: 'zebra-zd421t',
-    image: '/images/products/zd421t_1.png',
     priceFrom: 1649,
-    label: 'Bestseller biurkowy',
-    imageClassName: 'object-contain',
+    imageClassName: 'object-contain scale-[0.85]',
   },
   {
+    type: 'product',
+    image: '/images/products/tc22_scanner_1.png',
     name: 'Zebra TC22',
     slug: 'zebra-tc22',
-    image: '/images/products/tc22_scanner_1.png',
     priceFrom: 2417,
-    label: 'Terminal mobilny',
-    imageClassName: 'object-contain',
-  },
-  {
-    name: 'Zebra ZQ620 Plus',
-    slug: 'zebra-zq620-plus',
-    image: '/images/products/zq620plus_1_s.png',
-    priceFrom: 3622,
-    label: 'Drukarka mobilna',
-    imageClassName: 'object-contain',
+    imageClassName: 'object-contain scale-[0.8]',
   },
 ]
 
-const INTERVAL = 5000
+const INTERVAL = 6000
 
 export default function Hero() {
   const [current, setCurrent] = useState(0)
@@ -54,11 +62,11 @@ export default function Hero() {
     setTimeout(() => {
       setCurrent(index)
       setTimeout(() => setIsTransitioning(false), 50)
-    }, 300)
+    }, 400)
   }, [current, isTransitioning])
 
   const next = useCallback(() => {
-    goTo((current + 1) % heroProducts.length)
+    goTo((current + 1) % slides.length)
   }, [current, goTo])
 
   useEffect(() => {
@@ -66,110 +74,125 @@ export default function Hero() {
     return () => clearInterval(timer)
   }, [next])
 
-  const product = heroProducts[current]
+  const slide = slides[current]
 
   return (
-    <section className="relative overflow-hidden bg-gray-950">
+    <section className="relative overflow-hidden w-full h-[340px] md:h-[420px] lg:h-[520px] bg-gray-950">
+      {/* Tło — gradient mesh dla info, obrazek dla produktu */}
       <div className="absolute inset-0 bg-gradient-mesh-dark" />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-500/20 to-transparent" />
 
-      <div className="container-main relative py-14 lg:py-24">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
-          {/* Lewa strona — tekst */}
-          <div className="lg:w-[55%] flex-shrink-0">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.06] border border-white/[0.08] text-sm text-[#A8F000] font-medium mb-6">
-              <span className="w-2 h-2 rounded-full bg-[#A8F000]" />
-              Od 2001 roku
-            </div>
-
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-6 text-balance leading-[1.1]">
-              Drukarki etykiet, terminale mobilne i&nbsp;skanery kodów kreskowych
-            </h1>
-
-            <p className="text-lg text-gray-400 max-w-xl mb-8 leading-relaxed">
-              Autoryzowany dystrybutor Zebra, Honeywell, Datalogic i&nbsp;innych czołowych marek.
-              Doradztwo, sprzedaż i&nbsp;serwis urządzeń AutoID dla firm w&nbsp;całej Polsce.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/kontakt">
-                <Button
-                  size="lg"
-                  className="!bg-[#A8F000] !text-gray-900 hover:!bg-[#9AE000] font-semibold px-8"
-                  rightIcon={<ArrowRightIcon size={18} />}
-                >
-                  Zamów indywidualną ofertę
-                </Button>
-              </Link>
-              <Link href="/katalog">
-                <Button
-                  size="lg"
-                  variant="ghost"
-                  className="!text-gray-300 hover:!text-white hover:!bg-white/[0.06] !border !border-white/[0.1]"
-                >
-                  Przeglądaj katalog
-                </Button>
-              </Link>
-            </div>
-          </div>
-
-          {/* Prawa strona — karuzela produktów */}
-          <div className="lg:w-[45%] mt-10 lg:mt-0">
-            <Link href={`/produkt/${product.slug}`} className="block group">
-              <div className="relative aspect-square max-w-[380px] mx-auto lg:max-w-none">
-                {/* Obrazek produktu */}
-                <div
-                  className={clsx(
-                    'relative w-full h-full transition-all duration-500 ease-in-out',
-                    isTransitioning ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
-                  )}
-                >
-                  <Image
-                    src={product.image}
-                    alt={product.name}
-                    fill
-                    className={clsx('drop-shadow-2xl', product.imageClassName)}
-                    priority={current === 0}
-                  />
-                </div>
-
-                {/* Info pod obrazkiem */}
-                <div
-                  className={clsx(
-                    'absolute bottom-0 left-0 right-0 text-center transition-all duration-400',
-                    isTransitioning ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'
-                  )}
-                >
-                  <span className="text-xs text-gray-500 uppercase tracking-wider">{product.label}</span>
-                  <p className="text-white font-bold text-lg mt-0.5 group-hover:text-[#A8F000] transition-colors">
-                    {product.name}
-                  </p>
-                  <p className="text-gray-400 text-sm">
-                    od <span className="text-white font-semibold">{product.priceFrom.toLocaleString('pl-PL')}&nbsp;zł</span> netto
-                  </p>
-                </div>
-              </div>
-            </Link>
-
-            {/* Dots */}
-            <div className="flex items-center justify-center gap-2.5 mt-6">
-              {heroProducts.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => goTo(i)}
-                  aria-label={`Produkt ${i + 1}`}
-                  className={clsx(
-                    'rounded-full transition-all duration-300',
-                    i === current
-                      ? 'w-8 h-2.5 bg-[#A8F000]'
-                      : 'w-2.5 h-2.5 bg-white/20 hover:bg-white/40'
-                  )}
-                />
-              ))}
-            </div>
-          </div>
+      {slide.type === 'product' && (
+        <div
+          className={clsx(
+            'absolute inset-0 transition-opacity duration-700 ease-in-out',
+            isTransitioning ? 'opacity-0' : 'opacity-100'
+          )}
+        >
+          <Image
+            src={slide.image}
+            alt={slide.name}
+            fill
+            className={clsx('brightness-[1.3] contrast-[1.05]', slide.imageClassName)}
+            priority={current <= 1}
+          />
         </div>
+      )}
+
+      {/* Gradienty na produkt */}
+      {slide.type === 'product' && (
+        <>
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-950 from-15% via-gray-950/60 via-35% to-transparent z-10" />
+          <div className="absolute inset-0 bg-gradient-to-l from-gray-950 from-10% via-gray-950/50 via-25% to-transparent z-10" />
+        </>
+      )}
+
+      {/* Content */}
+      <div className="container-main relative h-full flex items-center z-20">
+        <div
+          className={clsx(
+            'transition-all duration-500 ease-in-out max-w-2xl',
+            isTransitioning ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'
+          )}
+        >
+          {slide.type === 'info' ? (
+            <>
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.06] border border-white/[0.08] text-sm text-[#A8F000] font-medium mb-5">
+                <span className="w-2 h-2 rounded-full bg-[#A8F000]" />
+                Od 2001 roku
+              </div>
+
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-5 text-balance leading-[1.1]">
+                Drukarki etykiet, terminale mobilne i&nbsp;skanery kodów kreskowych
+              </h1>
+
+              <p className="text-base lg:text-lg text-gray-400 max-w-xl mb-7 leading-relaxed">
+                Autoryzowany dystrybutor Zebra, Honeywell, Datalogic i&nbsp;innych czołowych marek.
+                Doradztwo, sprzedaż i&nbsp;serwis urządzeń AutoID dla firm w&nbsp;całej Polsce.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link href="/kontakt">
+                  <Button
+                    size="md"
+                    className="!bg-[#A8F000] !text-gray-900 hover:!bg-[#9AE000] font-semibold px-6"
+                    rightIcon={<ArrowRightIcon size={16} />}
+                  >
+                    Zamów indywidualną ofertę
+                  </Button>
+                </Link>
+                <Link href="/katalog">
+                  <Button
+                    size="md"
+                    variant="ghost"
+                    className="!text-gray-300 hover:!text-white hover:!bg-white/[0.06] !border !border-white/[0.1]"
+                  >
+                    Przeglądaj katalog
+                  </Button>
+                </Link>
+              </div>
+            </>
+          ) : (
+            <>
+              <p className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-2">
+                {slide.name}
+              </p>
+              <div className="text-white/70 mb-5">
+                <span className="text-sm">od </span>
+                <span className="text-2xl lg:text-3xl font-bold text-white">
+                  {slide.priceFrom.toLocaleString('pl-PL')} zł
+                </span>
+                <span className="text-sm"> netto</span>
+              </div>
+              <Link href={`/produkt/${slide.slug}`}>
+                <Button
+                  size="md"
+                  variant="ghost"
+                  className="!bg-white !text-gray-900 hover:!bg-gray-100 font-semibold px-6"
+                  rightIcon={<ArrowRightIcon size={16} />}
+                >
+                  Zobacz więcej
+                </Button>
+              </Link>
+            </>
+          )}
+        </div>
+      </div>
+
+      {/* Dots */}
+      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2.5">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => goTo(i)}
+            aria-label={`Slajd ${i + 1}`}
+            className={clsx(
+              'rounded-full transition-all duration-300',
+              i === current
+                ? 'w-8 h-2.5 bg-[#A8F000]'
+                : 'w-2.5 h-2.5 bg-white/30 hover:bg-white/50'
+            )}
+          />
+        ))}
       </div>
     </section>
   )
