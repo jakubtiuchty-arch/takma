@@ -309,7 +309,7 @@ export default function HomePage() {
         <div className="container-main relative">
           <div className="text-center mb-8 lg:mb-12">
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight">
-              Dlaczego TAKMA?
+              TAKMA
             </h2>
             <p className="text-gray-500 mt-1.5 md:mt-2 max-w-lg mx-auto text-sm md:text-base">
               Kompleksowe rozwiązania AutoID z profesjonalnym wsparciem

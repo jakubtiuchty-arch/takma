@@ -8,7 +8,6 @@ const footerLinks = {
     { name: 'Terminale mobilne', href: '/terminale-mobilne' },
     { name: 'Materiały eksploatacyjne', href: '/materialy-eksploatacyjne' },
     { name: 'Akcesoria do drukarek', href: '/akcesoria-do-drukarek-etykiet' },
-    { name: 'Skanery kodów', href: '/skanery-kodow' },
   ],
   producenci: [
     { name: 'Zebra Technologies', href: '/katalog?producent=zebra' },

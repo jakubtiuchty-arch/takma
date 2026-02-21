@@ -386,7 +386,20 @@ function CatalogContent() {
             </div>
           </div>
 
-          <ProductGrid products={filteredProducts} variant={viewMode} columns={3} />
+          {filteredProducts.length === 0 && manufacturerParam ? (
+            <div className="text-center py-16 px-4">
+              <div className="text-4xl mb-4">🚧</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Produkty już wkrótce!</h3>
+              <p className="text-gray-500 max-w-md mx-auto mb-6">
+                Aktualnie uzupełniamy ofertę tego producenta. Zapraszamy niebawem lub skontaktuj się z nami — przygotujemy indywidualną ofertę.
+              </p>
+              <Link href="/kontakt">
+                <Button size="md">Zapytaj o ofertę</Button>
+              </Link>
+            </div>
+          ) : (
+            <ProductGrid products={filteredProducts} variant={viewMode} columns={3} />
+          )}
         </div>
       </div>
 

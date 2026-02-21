@@ -643,6 +643,22 @@ export const manufacturers: Manufacturer[] = [
     seoTitle: 'Produkty Datalogic | Terminale mobilne i skanery',
     seoDescription: 'Terminale mobilne i komputery przenośne Datalogic - Memor, Skorpio. Profesjonalne urządzenia do magazynu, logistyki i handlu. TAKMA - autoryzowany dystrybutor.'
   },
+  {
+    id: 'honeywell',
+    slug: 'honeywell',
+    name: 'Honeywell',
+    logo: '/images/manufacturers/honeywell.svg',
+    seoTitle: 'Produkty Honeywell | Drukarki etykiet, skanery i terminale',
+    seoDescription: 'Drukarki etykiet, skanery kodów i terminale mobilne Honeywell. TAKMA - autoryzowany dystrybutor urządzeń AutoID w Polsce.'
+  },
+  {
+    id: 'tsc',
+    slug: 'tsc',
+    name: 'TSC',
+    logo: '/images/manufacturers/tsc.svg',
+    seoTitle: 'Produkty TSC | Drukarki etykiet przemysłowe i biurkowe',
+    seoDescription: 'Drukarki etykiet TSC - modele biurkowe i przemysłowe. Wysoka jakość w przystępnej cenie. TAKMA - autoryzowany dystrybutor.'
+  },
 ]
 
 // ============================================

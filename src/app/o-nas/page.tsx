@@ -77,22 +77,22 @@ const partners = [
 
 const industries = [
   {
-    image: '/images/about/logistyka-magazynowanie.png',
+    image: '/images/ikony/Logistyka.jpeg',
     name: 'Logistyka i magazynowanie',
     desc: 'Drukarki etykiet wysyłkowych, skanery i terminale do zarządzania magazynem',
   },
   {
-    image: '/images/about/handel-retail.png',
+    image: '/images/ikony/Handel.jpeg',
     name: 'Handel i retail',
     desc: 'Metkownice, drukarki cenówek, skanery kasowe i systemy inwentaryzacji',
   },
   {
-    image: '/images/about/lesnictwo-srodowisko.png',
+    image: '/images/ikony/Leśnictwo.jpeg',
     name: 'Leśnictwo i środowisko',
     desc: 'Mobilne drukarki etykiet i terminale terenowe dla Lasów Państwowych',
   },
   {
-    image: '/images/about/sektor-publiczny.png',
+    image: '/images/ikony/Sektor.jpeg',
     name: 'Sektor publiczny',
     desc: 'Zamówienia publiczne, przetargi PZP, dostawy dla administracji i służb mundurowych',
   },
@@ -287,7 +287,7 @@ export default function AboutPage() {
             <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
               <div className="w-16 h-16 mb-4">
                 <Image
-                  src="/images/about/25-lat-doswiadczenia.png"
+                  src="/images/ikony/25_lat.jpeg"
                   alt="Ikona 25 lat doświadczenia TAKMA"
                   width={64}
                   height={64}
@@ -305,7 +305,7 @@ export default function AboutPage() {
             <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
               <div className="w-16 h-16 mb-4">
                 <Image
-                  src="/images/about/autoryzowany-serwis-zebra.png"
+                  src="/images/ikony/Autoryzowany.jpeg"
                   alt="Ikona autoryzowany serwis Zebra"
                   width={64}
                   height={64}
@@ -330,12 +330,12 @@ export default function AboutPage() {
 
             {/* Karta 3: Przetargi */}
             <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 mb-4">
+              <div className="w-[70px] h-[70px] mb-4">
                 <Image
-                  src="/images/about/przetargi-publiczne.png"
+                  src="/images/ikony/Przetargi.jpeg"
                   alt="Ikona przetargi publiczne"
-                  width={64}
-                  height={64}
+                  width={70}
+                  height={70}
                   className="object-contain mix-blend-multiply"
                 />
               </div>
@@ -350,7 +350,7 @@ export default function AboutPage() {
             <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
               <div className="w-16 h-16 mb-4">
                 <Image
-                  src="/images/about/nagrody-i-wyroznienia.png"
+                  src="/images/ikony/Nagrody.jpeg"
                   alt="Ikona nagrody i wyróżnienia"
                   width={64}
                   height={64}
@@ -369,7 +369,7 @@ export default function AboutPage() {
             <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
               <div className="w-16 h-16 mb-4">
                 <Image
-                  src="/images/about/certyfikowani-specjalisci.png"
+                  src="/images/ikony/Specjaliści.jpeg"
                   alt="Ikona certyfikowani specjaliści"
                   width={64}
                   height={64}
@@ -385,12 +385,12 @@ export default function AboutPage() {
 
             {/* Karta 6: Podejście */}
             <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 mb-4">
+              <div className="w-[70px] h-[70px] mb-4">
                 <Image
-                  src="/images/about/partnerskie-podejscie-b2b.png"
+                  src="/images/ikony/Podejście.jpeg"
                   alt="Ikona partnerskie podejście B2B"
-                  width={64}
-                  height={64}
+                  width={70}
+                  height={70}
                   className="object-contain mix-blend-multiply"
                 />
               </div>
@@ -504,7 +504,7 @@ export default function AboutPage() {
             {industries.map((industry) => (
               <div
                 key={industry.name}
-                className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <div className="w-16 h-16 mb-4">
                   <Image
