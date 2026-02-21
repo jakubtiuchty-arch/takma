@@ -201,10 +201,8 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   const avail = stock?.found
     ? availabilityConfig[stock.availability]
     : availabilityConfig[variant.availability]
-  const isUnavailable = !stockLoading && (
-    (stock?.found && (stock.availability === 'unavailable' || stock.availability === 'on-order'))
-    || variant.availability === 'unavailable'
-  )
+  const effectiveAvailability = stock?.found ? stock.availability : variant.availability
+  const isUnavailable = !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
 
   return (
     <tr className={`${rowIndex % 2 === 0 ? 'bg-white' : 'bg-gray-50'} hover:bg-primary-50/50 transition-colors`}>
@@ -275,10 +273,8 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
   const avail = stock?.found
     ? availabilityConfig[stock.availability]
     : availabilityConfig[variant.availability]
-  const isUnavailable = !stockLoading && (
-    (stock?.found && (stock.availability === 'unavailable' || stock.availability === 'on-order'))
-    || variant.availability === 'unavailable'
-  )
+  const effectiveAvailability = stock?.found ? stock.availability : variant.availability
+  const isUnavailable = !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
 
   return (
     <div className="bg-white border border-gray-200 rounded-xl p-4 space-y-3">
