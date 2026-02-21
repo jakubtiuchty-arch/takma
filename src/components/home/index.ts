@@ -1,2 +1,1 @@
-export { StorytellingHero } from './StorytellingHero'
-export { ProblemSolverHero } from './ProblemSolverHero'
+export { default as Hero } from './Hero'
