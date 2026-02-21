@@ -4,7 +4,8 @@ const categories = [
   {
     title: 'Serwis drukarek etykiet i opasek',
     icon: PrinterIcon,
-    description: 'Diagnostyka i naprawa drukarek termicznych i termotransferowych — Zebra, Citizen, Godex, SATO, TSC, Brother.',
+    description: 'Diagnostyka i naprawa drukarek termicznych i termotransferowych — biurkowych, przemysłowych i mobilnych.',
+    brands: ['Zebra', 'Citizen', 'Godex', 'SATO', 'TSC', 'Brother'],
     keywords: [
       'wymiana głowicy drukującej (printhead)',
       'wymiana wałka dociskowego (platen roller)',
@@ -16,7 +17,8 @@ const categories = [
   {
     title: 'Naprawa terminali mobilnych i tabletów',
     icon: SmartphoneIcon,
-    description: 'Przywracamy do życia terminale magazynowe PDA i tablety przemysłowe — Zebra TC/MC/EC, terminale Honeywell CT/CK/EDA, Datalogic Memor/Skorpio, M3 Mobile.',
+    description: 'Przywracamy do życia terminale magazynowe PDA i tablety przemysłowe po upadkach i zalaniach.',
+    brands: ['Zebra TC/MC/EC', 'Honeywell CT/CK/EDA', 'Datalogic Memor', 'M3 Mobile'],
     keywords: [
       'wymiana rozbitego ekranu dotykowego (digitizera)',
       'naprawa uszkodzonego złącza ładowania',
@@ -28,7 +30,8 @@ const categories = [
   {
     title: 'Serwis skanerów kodów kreskowych',
     icon: ScanIcon,
-    description: 'Naprawiamy skanery ręczne, bezprzewodowe i prezentacyjne — Zebra, skanery Honeywell Voyager/Xenon, Datalogic Gryphon, Newland HR.',
+    description: 'Naprawiamy czytniki ręczne, bezprzewodowe oraz stacjonarne skanery kodów.',
+    brands: ['Zebra', 'Honeywell Voyager/Xenon', 'Datalogic Gryphon', 'Newland HR'],
     keywords: [
       'naprawa przycisku spustu (triggera)',
       'wymiana uszkodzonego kabla komunikacyjnego',
@@ -56,14 +59,21 @@ export function DeviceCategoriesAEO() {
           {categories.map((category) => (
             <div 
               key={category.title} 
-              className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 hover:shadow-lg transition-shadow duration-300"
+              className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 sm:p-8 hover:shadow-lg transition-shadow duration-300"
             >
               <div className="h-14 w-14 rounded-2xl bg-blue-50/50 border border-blue-100 flex items-center justify-center mb-6">
                 <category.icon className="h-7 w-7 text-blue-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{category.title}</h3>
-              <p className="text-gray-600 mb-6">{category.description}</p>
-              
+              <p className="text-gray-600 mb-4">{category.description}</p>
+              <div className="flex flex-wrap gap-1.5 mb-6">
+                {category.brands.map((brand) => (
+                  <span key={brand} className="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600">
+                    {brand}
+                  </span>
+                ))}
+              </div>
+
               <div className="pt-6 border-t border-gray-100">
                 <h4 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Najczęstsze naprawy:</h4>
                 <ul className="space-y-3">

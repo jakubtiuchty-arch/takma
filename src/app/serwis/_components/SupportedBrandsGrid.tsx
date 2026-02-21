@@ -24,13 +24,13 @@ export function SupportedBrandsGrid() {
             Nasi certyfikowani inżynierowie serwisują pogwarancyjnie sprzęt AutoID wiodących producentów — terminale mobilne, skanery kodów i drukarki etykiet.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-6 md:grid-cols-5 lg:gap-8 items-start justify-items-center">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5 sm:gap-6 lg:gap-8 items-start justify-items-center">
           {brands.map((brand) => (
             <div
               key={brand.name}
               className="flex flex-col items-center text-center group"
             >
-              <div className="flex items-center justify-center h-16 w-36 md:h-20 md:w-44">
+              <div className="flex items-center justify-center h-12 w-28 sm:h-16 sm:w-36 md:h-20 md:w-44">
                 <div className="relative w-full h-full opacity-60 group-hover:opacity-100 grayscale group-hover:grayscale-0 transition-all duration-300">
                   <Image
                     src={brand.src}
@@ -41,7 +41,7 @@ export function SupportedBrandsGrid() {
                   />
                 </div>
               </div>
-              <p className="mt-2 text-xs text-gray-400 group-hover:text-gray-600 transition-colors leading-tight max-w-[160px]">
+              <p className="mt-1.5 text-[10px] sm:text-xs text-gray-400 group-hover:text-gray-600 transition-colors leading-tight max-w-[140px] sm:max-w-[160px]">
                 {brand.desc}
               </p>
             </div>

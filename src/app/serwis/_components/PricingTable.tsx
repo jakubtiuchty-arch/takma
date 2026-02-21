@@ -26,8 +26,8 @@ export function PricingTable() {
           <table className="w-full">
             <thead>
               <tr className="bg-gray-900 text-white">
-                <th className="px-6 py-4 text-left text-sm font-semibold">Usługa</th>
-                <th className="px-6 py-4 text-right text-sm font-semibold">Cena netto</th>
+                <th className="px-4 sm:px-6 py-3 sm:py-4 text-left text-xs sm:text-sm font-semibold">Usługa</th>
+                <th className="px-4 sm:px-6 py-3 sm:py-4 text-right text-xs sm:text-sm font-semibold">Cena netto</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-100">
@@ -38,10 +38,10 @@ export function PricingTable() {
                     service.highlight ? 'bg-lime-50' : ''
                   }`}
                 >
-                  <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                  <td className="px-4 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm text-gray-900 font-medium">
                     {service.name}
                   </td>
-                  <td className={`px-6 py-4 text-right text-sm font-bold whitespace-nowrap ${
+                  <td className={`px-4 sm:px-6 py-3 sm:py-4 text-right text-xs sm:text-sm font-bold whitespace-nowrap ${
                     service.highlight ? 'text-lime-700' : 'text-gray-900'
                   }`}>
                     {service.price}
@@ -53,7 +53,7 @@ export function PricingTable() {
         </div>
 
         <p className="mt-4 text-sm text-gray-500 text-center">
-          * Diagnostyka gratis przy zleceniu naprawy. Bez zlecenia naprawy: 99–195 PLN netto.
+          * Diagnostyka gratis przy zleceniu naprawy. Bez zlecenia naprawy: 99 PLN netto + koszty wysyłki.
           Ceny orientacyjne netto. Dokładna wycena po diagnostyce urządzenia.
         </p>
 
