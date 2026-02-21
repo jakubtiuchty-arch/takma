@@ -520,34 +520,41 @@ export default function HomePage() {
       {/* ── S9: FAQ ── */}
       <section className="py-14 lg:py-20 bg-gray-50">
         <div className="container-main">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight">
-              Najczęściej zadawane pytania
-            </h2>
-            <p className="text-gray-500 mt-2 max-w-lg mx-auto">
+          <details className="group max-w-3xl mx-auto">
+            <summary className="flex items-center justify-center gap-3 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight">
+                Najczęściej zadawane pytania
+              </h2>
+              <ChevronRightIcon
+                size={24}
+                className="text-gray-400 flex-shrink-0 transition-transform group-open:rotate-90 mt-1"
+              />
+            </summary>
+
+            <p className="text-gray-500 mt-2 mb-8 text-center">
               Odpowiedzi na pytania, które najczęściej słyszymy od klientów
             </p>
-          </div>
 
-          <div className="max-w-3xl mx-auto space-y-3">
-            {homepageFaq.map((item, index) => (
-              <details
-                key={index}
-                className="group bg-white rounded-xl border border-gray-100 overflow-hidden"
-              >
-                <summary className="flex items-center justify-between gap-4 p-5 cursor-pointer list-none font-medium text-gray-900 hover:bg-gray-50 transition-colors [&::-webkit-details-marker]:hidden">
-                  <span>{item.q}</span>
-                  <ChevronRightIcon
-                    size={20}
-                    className="text-gray-400 flex-shrink-0 transition-transform group-open:rotate-90"
-                  />
-                </summary>
-                <div className="px-5 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-50 pt-4">
-                  {item.a}
-                </div>
-              </details>
-            ))}
-          </div>
+            <div className="space-y-3">
+              {homepageFaq.map((item, index) => (
+                <details
+                  key={index}
+                  className="group/item bg-white rounded-xl border border-gray-100 overflow-hidden"
+                >
+                  <summary className="flex items-center justify-between gap-4 p-5 cursor-pointer list-none font-medium text-gray-900 hover:bg-gray-50 transition-colors [&::-webkit-details-marker]:hidden">
+                    <span>{item.q}</span>
+                    <ChevronRightIcon
+                      size={20}
+                      className="text-gray-400 flex-shrink-0 transition-transform group-open/item:rotate-90"
+                    />
+                  </summary>
+                  <div className="px-5 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-50 pt-4">
+                    {item.a}
+                  </div>
+                </details>
+              ))}
+            </div>
+          </details>
         </div>
       </section>
 
