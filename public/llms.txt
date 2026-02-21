@@ -72,18 +72,41 @@ TAKMA prowadzi profesjonalny serwis pogwarancyjny urządzeń AutoID z siedzibą 
 - Drukarka termiczna vs termotransferowa: https://takma.com.pl/poradnik/drukarka-termiczna-vs-termotransferowa
 - Drukarki etykiet Zebra — przewodnik: https://takma.com.pl/poradnik/drukarki-etykiet-zebra-przewodnik
 
+## Dlaczego TAKMA?
+- 25 lat doświadczenia (od 2001) — tysiące zrealizowanych projektów dla firm B2B
+- Szybka dostawa 24–48h — większość produktów dostępna od ręki z magazynu
+- Autoryzowany serwis Zebra — pełna obsługa gwarancyjna i pogwarancyjna (serwis-zebry.pl)
+- Doradztwo techniczne — bezpłatna pomoc w doborze urządzenia do Twojej branży
+- Certyfikaty: Zebra Premier Solution Partner, Public Sector Specialist, Printer Repair Specialist
+- Zaufali nam: Lasy Państwowe, Orlen, Poczta Polska, Żabka, CBA, Wojsko Polskie
+
+## Bestsellery
+- Zebra ZD421t — najpopularniejsza biurkowa drukarka termotransferowa
+- Zebra ZD220d — najtańsza drukarka etykiet od 621 zł netto
+- Zebra TC22 — wytrzymały terminal mobilny do magazynu od 2 180 zł netto
+- Zebra MC3400 — terminal z klawiaturą fizyczną do intensywnego skanowania
+
 ## FAQ
 Q: Czym zajmuje się TAKMA?
-A: TAKMA to polski dystrybutor urządzeń AutoID z siedzibą we Wrocławiu. Od 2001 roku dostarczamy drukarki etykiet, terminale mobilne, skanery kodów i systemy RFID dla firm B2B.
+A: TAKMA to polska firma B2B z siedzibą we Wrocławiu, działająca od 2001 roku. Specjalizujemy się w dostawie drukarek etykiet, terminali mobilnych, skanerów kodów kreskowych i materiałów eksploatacyjnych. Jesteśmy autoryzowanym partnerem Zebra Technologies (Premier Solution Partner) i prowadzimy własny serwis napraw na serwis-zebry.pl.
 
-Q: Jakie marki oferuje TAKMA?
-A: Zebra Technologies, Honeywell, Datalogic, M3 Mobile, Newland, Godex i Citizen.
+Q: Jakie drukarki etykiet oferujecie?
+A: Oferujemy pełną gamę drukarek etykiet Zebra Technologies: biurkowe (ZD220, ZD421, ZD621) od ok. 800 zł netto, przemysłowe (ZT111, ZT231, ZT411, ZT421, ZT610, ZT620) do pracy 24/7 oraz mobilne (ZQ210, ZQ310, ZQ511, ZQ630) do druku w terenie.
 
-Q: Czy TAKMA ma własny serwis?
-A: Tak, prowadzimy autoryzowany serwis drukarek Zebra Technologies na serwis-zebry.pl. Naprawy gwarancyjne i pogwarancyjne.
+Q: Czy TAKMA oferuje serwis gwarancyjny Zebra?
+A: Tak. Prowadzimy autoryzowane centrum napraw Zebra — serwis-zebry.pl. Wykonujemy naprawy gwarancyjne, pogwarancyjne i oferujemy kontrakty serwisowe Zebra OneCare. Posiadamy certyfikat Zebra Printer Repair Specialist.
 
-Q: Gdzie znajduje się TAKMA?
-A: ul. Poświęcka 1a, 51-128 Wrocław. Biuro czynne pon-pt 7:30–15:30.
+Q: Ile kosztuje drukarka etykiet Zebra?
+A: Ceny drukarek etykiet Zebra zaczynają się od ok. 800 zł netto za model biurkowy ZD220d, przez ok. 2 500 zł za zaawansowaną ZD621t, aż po ponad 15 000 zł netto za przemysłową ZT620 z opcjami.
 
-Q: Czy TAKMA wysyła na terenie całej Polski?
-A: Tak, realizujemy dostawy kurierem na terenie całej Polski. Produkty dostępne od ręki wysyłamy w ciągu 24h roboczych.
+Q: Jaka jest różnica między drukarką termiczną a termotransferową?
+A: Drukarka termiczna (DT) drukuje bezpośrednio na papierze termoczułym — jest tańsza, ale etykiety blakną po kilku miesiącach. Drukarka termotransferowa (TT) używa taśmy barwiącej (ribbon) — etykiety są trwałe latami, odporne na UV, wodę i chemikalia.
+
+Q: Czy wysyłacie urządzenia kurierem do całej Polski?
+A: Tak, realizujemy dostawy kurierem (DPD, InPost) na terenie całej Polski. Produkty dostępne w magazynie wysyłamy w ciągu 24 godzin roboczych.
+
+Q: Jakie terminale mobilne polecacie do magazynu?
+A: Do standardowych operacji magazynowych polecamy Zebra TC22 (od 2 180 zł netto). Dla intensywnego skanowania z klawiaturą — Zebra MC3400. Do chłodni i ciężkiego przemysłu — Zebra MC9400.
+
+Q: Czy oferujecie doradztwo przed zakupem?
+A: Tak, oferujemy bezpłatne doradztwo techniczne. Kontakt: +48 71 781 71 28, takma@takma.com.pl lub formularz na stronie takma.com.pl/kontakt.

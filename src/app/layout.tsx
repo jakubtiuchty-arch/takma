@@ -14,11 +14,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://takma.com.pl'),
   title: {
-    default: 'TAKMA - Urządzenia AutoID | Drukarki etykiet, Skanery, Terminale',
+    default: 'TAKMA — Drukarki etykiet, Terminale mobilne, Skanery | Sklep B2B AutoID',
     template: '%s | TAKMA',
   },
   description:
-    'TAKMA — 25+ lat doświadczenia na rynku AutoID. Drukarki etykiet, skanery kodów kreskowych, terminale mobilne, systemy RFID. Autoryzowany partner Zebra Technologies. Profesjonalne doradztwo i serwis w całej Polsce.',
+    'Sklep B2B z urządzeniami AutoID — drukarki etykiet, terminale mobilne, skanery kodów kreskowych. Ceny netto, dostawa 24h. Autoryzowany partner Zebra Technologies z 25-letnim doświadczeniem.',
   authors: [{ name: 'TAKMA' }],
   creator: 'TAKMA',
   robots: 'index, follow',
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'pl_PL',
     siteName: 'TAKMA',
-    title: 'TAKMA - Urządzenia AutoID',
-    description: 'Profesjonalne rozwiązania AutoID dla Twojej firmy',
+    title: 'TAKMA — Drukarki etykiet, Terminale mobilne, Skanery kodów',
+    description: 'Autoryzowany partner Zebra Technologies. Drukarki etykiet od 800 zł netto, terminale mobilne, skanery. Doradztwo, sprzedaż i serwis dla firm B2B w całej Polsce.',
     images: [{ url: '/images/takma-og.png', width: 1200, height: 630, alt: 'TAKMA — Autoryzowany dystrybutor urządzeń AutoID' }],
   },
   twitter: {

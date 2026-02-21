@@ -175,6 +175,22 @@
   }
 }
 
+/* Accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+  .reveal-delay-1,
+  .reveal-delay-2,
+  .reveal-delay-3,
+  .reveal-delay-4,
+  .reveal-delay-5 {
+    animation: none;
+  }
+}
+
 /* ── Industry page long description — lead paragraph ── */
 .long-desc > p:first-child {
   font-size: 1.125rem;
