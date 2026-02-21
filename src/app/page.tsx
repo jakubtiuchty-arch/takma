@@ -244,14 +244,14 @@ export default function HomePage() {
       {/* ── S2: Pasek logów producentów ── */}
       <section className="border-b border-gray-100 py-5 lg:py-6">
         <div className="container-main">
-          <div className="flex flex-wrap items-center justify-center gap-7 lg:gap-12">
+          <div className="flex items-center justify-between gap-4 overflow-x-auto scrollbar-hide">
             {partnerLogos.map((partner) => (
-              <div key={partner.name} className="h-8 lg:h-10 flex items-center grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+              <div key={partner.name} className="h-7 lg:h-8 flex-shrink-0 flex items-center grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
                 <Image
                   src={partner.logo}
                   alt={partner.name}
-                  width={132}
-                  height={40}
+                  width={110}
+                  height={32}
                   className="h-full w-auto object-contain"
                 />
               </div>
