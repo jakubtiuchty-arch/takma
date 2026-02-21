@@ -522,7 +522,7 @@ export default function HomePage() {
         <div className="container-main">
           <details className="group max-w-3xl mx-auto">
             <summary className="flex items-center justify-center gap-3 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-              <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight">
+              <h2 className="text-xl lg:text-2xl font-semibold text-gray-400 tracking-tight">
                 Najczęściej zadawane pytania
               </h2>
               <ChevronRightIcon
