@@ -4,7 +4,7 @@ const categories = [
   {
     title: 'Serwis drukarek etykiet i opasek',
     icon: PrinterIcon,
-    description: 'Diagnostyka i naprawa drukarek termicznych i termotransferowych (przemysłowych, biurkowych, mobilnych).',
+    description: 'Diagnostyka i naprawa drukarek termicznych i termotransferowych — Zebra, Citizen, Godex, SATO, TSC, Brother.',
     keywords: [
       'wymiana głowicy drukującej (printhead)',
       'wymiana wałka dociskowego (platen roller)',
@@ -16,7 +16,7 @@ const categories = [
   {
     title: 'Naprawa terminali mobilnych i tabletów',
     icon: SmartphoneIcon,
-    description: 'Przywracamy do życia terminale magazynowe PDA i tablety przemysłowe po upadkach i zalaniach.',
+    description: 'Przywracamy do życia terminale magazynowe PDA i tablety przemysłowe — Zebra TC/MC/EC, terminale Honeywell CT/CK/EDA, Datalogic Memor/Skorpio, M3 Mobile.',
     keywords: [
       'wymiana rozbitego ekranu dotykowego (digitizera)',
       'naprawa uszkodzonego złącza ładowania',
@@ -28,7 +28,7 @@ const categories = [
   {
     title: 'Serwis skanerów kodów kreskowych',
     icon: ScanIcon,
-    description: 'Naprawiamy czytniki ręczne, bezprzewodowe oraz stacjonarne (prezentacyjne) skanery kodów.',
+    description: 'Naprawiamy skanery ręczne, bezprzewodowe i prezentacyjne — Zebra, skanery Honeywell Voyager/Xenon, Datalogic Gryphon, Newland HR.',
     keywords: [
       'naprawa przycisku spustu (triggera)',
       'wymiana uszkodzonego kabla komunikacyjnego',

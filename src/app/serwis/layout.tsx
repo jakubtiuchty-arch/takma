@@ -25,32 +25,32 @@ export default function SerwisLayout({
       text: "Najczęstszą przyczyną jest rozkalibrowany czujnik przerw (gap sensor), zabrudzenie czujnika lub użycie niewłaściwych materiałów eksploatacyjnych. Wymaga to autokalibracji sprzętu lub interwencji serwisu w celu naprawy optyki czujnika."
     },
     {
-      name: "Terminal mobilny (np. Honeywell) nie ładuje baterii",
-      text: "Przyczyną może być uszkodzenie złącza ładowania, wyeksploatowanie pinów w stacji dokującej lub zużycie baterii. Serwis mierzy rezystancję złącza i w razie potrzeby przelutowuje moduł zasilania."
+      name: "Terminal Honeywell CT40/EDA51 nie ładuje baterii",
+      text: "W terminalach mobilnych Honeywell serii CT i EDA przyczyną może być uszkodzenie złącza ładowania, wyeksploatowanie pinów w stacji dokującej lub zużycie baterii. Serwis mierzy rezystancję złącza i przelutowuje moduł zasilania. Dotyczy również terminali Honeywell CK65, Dolphin i ScanPal."
     },
     {
-      name: "Skaner kodów pika, ale nie przesyła danych na ekran",
-      text: "Zazwyczaj problem konfiguracji — brakuje sufiksu (znaku przejścia do nowej linii). Można to naprawić skanując kod konfiguracyjny z instrukcji. W przypadku poważniejszych problemów z modułem komunikacji wymagany jest serwis."
+      name: "Skaner Datalogic Gryphon / Honeywell Voyager pika, ale nie przesyła danych",
+      text: "Zazwyczaj problem konfiguracji — brakuje sufiksu. W skanerach Datalogic Gryphon i Honeywell Voyager/Xenon można to naprawić skanując kod konfiguracyjny z instrukcji producenta. W przypadku poważniejszych problemów z modułem komunikacji wymagana jest diagnostyka serwisowa."
     },
     {
       name: "Drukarka wydrukowała etykietę z białymi, pionowymi pasami",
       text: "Pionowe nienadrukowane linie oznaczają wypalone punkty grzewcze na głowicy drukującej. Usterka wymaga fizycznej wymiany głowicy. Dobieramy i wymieniamy głowice do drukarek termicznych i termotransferowych."
     },
     {
-      name: "Ekran dotykowy w tablecie przemysłowym nie reaguje na dotyk",
-      text: "Uszkodzenie digitizera następuje w wyniku upadku lub ekstremalnych temperatur. Naprawa polega na wymianie panelu LCD + Digitizer z oceną szczelności obudowy."
+      name: "Ekran dotykowy terminala Datalogic Memor / M3 Mobile nie reaguje na dotyk",
+      text: "Uszkodzenie digitizera w terminalach Datalogic Memor 10/20/30/35, Skorpio X5 czy M3 Mobile następuje w wyniku upadku lub ekstremalnych temperatur. Naprawa polega na wymianie panelu LCD + Digitizer z oceną szczelności obudowy IP65/IP67."
     },
     {
-      name: "Drukarka etykiet grzeje się i wyłącza w trakcie druku",
-      text: "Przegrzewanie może wskazywać na uszkodzony zasilacz, zablokowany wentylator lub nieaktualny firmware. Sprawdzamy napięcie zasilania, drożność wentylacji i aktualizujemy oprogramowanie."
+      name: "Drukarka etykiet Godex / Citizen grzeje się i wyłącza w trakcie druku",
+      text: "Przegrzewanie drukarek Godex (G500, RT700) i Citizen (CL-S, CL-E) może wskazywać na uszkodzony zasilacz, zablokowany wentylator lub nieaktualny firmware. Sprawdzamy napięcie zasilania, drożność wentylacji i aktualizujemy oprogramowanie. Dotyczy również drukarek TSC i SATO."
     },
     {
       name: "Terminal mobilny nie łączy się z siecią Wi-Fi",
       text: "Problem może wynikać z uszkodzonego modułu WLAN, nieprawidłowej konfiguracji profilu sieci lub nieaktualnych sterowników radiowych. Diagnozujemy moduł antenowy i w razie potrzeby wymieniamy podzespół."
     },
     {
-      name: "Skaner kodów nie odczytuje kodów QR / 2D",
-      text: "Brak odczytu kodów 2D może wynikać z wyłączonej symbologii, zabrudzenia okna imager'a lub uszkodzenia modułu odczytującego. Diagnostyka serwisowa modułu imager."
+      name: "Skaner Newland HR / Honeywell Xenon nie odczytuje kodów QR / 2D",
+      text: "W skanerach Newland HR i Honeywell Xenon 1950/1900 brak odczytu kodów 2D (QR, DataMatrix) może wynikać z wyłączonej symbologii, zabrudzenia okna imager'a lub uszkodzenia modułu odczytującego. Diagnostyka serwisowa modułu imager."
     },
     {
       name: "Ile trwa naprawa terminala magazynowego w TAKMA?",

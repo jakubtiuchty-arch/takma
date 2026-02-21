@@ -75,15 +75,15 @@ export function FaqAEO() {
           ))}
         </div>
 
-        <div className="mt-12 rounded-xl bg-gray-50 p-6 border border-gray-200">
-          <p className="text-sm font-medium text-gray-900 mb-3">Powiązane strony:</p>
-          <ul className="flex flex-wrap gap-3 text-sm">
-            <li><Link href="/drukarki-etykiet" className="text-gray-600 hover:text-gray-900 underline underline-offset-2 transition-colors">Drukarki etykiet</Link></li>
-            <li><Link href="/terminale-mobilne" className="text-gray-600 hover:text-gray-900 underline underline-offset-2 transition-colors">Terminale mobilne</Link></li>
-            <li><Link href="/poradnik/jak-wybrac-drukarke-etykiet" className="text-gray-600 hover:text-gray-900 underline underline-offset-2 transition-colors">Jak wybrać drukarkę etykiet?</Link></li>
-            <li><Link href="/poradnik/drukarka-termiczna-vs-termotransferowa" className="text-gray-600 hover:text-gray-900 underline underline-offset-2 transition-colors">Termiczna vs termotransferowa</Link></li>
-            <li><a href="https://www.serwis-zebry.pl" rel="noopener" className="text-gray-600 hover:text-gray-900 underline underline-offset-2 transition-colors">Serwis drukarek Zebra</a></li>
-          </ul>
+        <div className="mt-12 flex flex-wrap justify-center gap-2">
+          <Link href="/drukarki-etykiet" className="inline-flex items-center rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 border border-gray-200 hover:bg-gray-200 transition-colors">Drukarki etykiet</Link>
+          <Link href="/terminale-mobilne" className="inline-flex items-center rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 border border-gray-200 hover:bg-gray-200 transition-colors">Terminale mobilne</Link>
+          <Link href="/poradnik/jak-wybrac-drukarke-etykiet" className="inline-flex items-center rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 border border-gray-200 hover:bg-gray-200 transition-colors">Jak wybrać drukarkę etykiet?</Link>
+          <Link href="/poradnik/drukarka-termiczna-vs-termotransferowa" className="inline-flex items-center rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 border border-gray-200 hover:bg-gray-200 transition-colors">Termiczna vs termotransferowa</Link>
+          <a href="https://www.serwis-zebry.pl" target="_blank" rel="noopener" className="inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 border border-gray-200 hover:bg-gray-200 transition-colors">
+            Serwis drukarek Zebra
+            <svg className="h-3.5 w-3.5 text-gray-400" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg>
+          </a>
         </div>
       </div>
     </section>
