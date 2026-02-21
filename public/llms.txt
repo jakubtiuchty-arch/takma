@@ -75,9 +75,9 @@ TAKMA prowadzi profesjonalny serwis pogwarancyjny urządzeń AutoID z siedzibą 
 ## Dlaczego TAKMA?
 - 25 lat doświadczenia (od 2001) — tysiące zrealizowanych projektów dla firm B2B
 - Szybka dostawa 24–48h — większość produktów dostępna od ręki z magazynu
-- Autoryzowany serwis Zebra — pełna obsługa gwarancyjna i pogwarancyjna (serwis-zebry.pl)
-- Doradztwo techniczne — bezpłatna pomoc w doborze urządzenia do Twojej branży
-- Certyfikaty: Zebra Premier Solution Partner, Public Sector Specialist, Printer Repair Specialist
+- Serwis urządzeń — naprawy gwarancyjne i pogwarancyjne Zebra, Honeywell, Datalogic i innych (serwis-zebry.pl)
+- Doradztwo techniczne — bezpłatna pomoc w doborze urządzenia niezależnie od producenta
+- 9 marek w ofercie: Zebra, Honeywell, Datalogic, TSC, Citizen, Godex, SATO, Newland, M3 Mobile
 - Zaufali nam: Lasy Państwowe, Orlen, Poczta Polska, Żabka, CBA, Wojsko Polskie
 
 ## Bestsellery
@@ -88,25 +88,25 @@ TAKMA prowadzi profesjonalny serwis pogwarancyjny urządzeń AutoID z siedzibą 
 
 ## FAQ
 Q: Czym zajmuje się TAKMA?
-A: TAKMA to polska firma B2B z siedzibą we Wrocławiu, działająca od 2001 roku. Specjalizujemy się w dostawie drukarek etykiet, terminali mobilnych, skanerów kodów kreskowych i materiałów eksploatacyjnych. Jesteśmy autoryzowanym partnerem Zebra Technologies (Premier Solution Partner) i prowadzimy własny serwis napraw na serwis-zebry.pl.
+A: TAKMA to polska firma B2B z siedzibą we Wrocławiu, działająca od 2001 roku. Specjalizujemy się w dostawie drukarek etykiet, terminali mobilnych, skanerów kodów kreskowych i materiałów eksploatacyjnych. Współpracujemy z 9 czołowymi producentami: Zebra, Honeywell, Datalogic, TSC, Citizen, Godex, SATO, Newland i M3 Mobile.
 
 Q: Jakie drukarki etykiet oferujecie?
-A: Oferujemy pełną gamę drukarek etykiet Zebra Technologies: biurkowe (ZD220, ZD421, ZD621) od ok. 800 zł netto, przemysłowe (ZT111, ZT231, ZT411, ZT421, ZT610, ZT620) do pracy 24/7 oraz mobilne (ZQ210, ZQ310, ZQ511, ZQ630) do druku w terenie.
+A: Oferujemy drukarki etykiet wielu marek: Zebra (ZD220, ZD421, ZD621, ZT411, ZT610), Honeywell (PC42, PD45), TSC (DA220, TE310), Godex (G500, EZ6250i) i Citizen (CL-S321). Biurkowe od ok. 800 zł netto, przemysłowe do pracy 24/7 oraz mobilne do druku w terenie.
 
-Q: Czy TAKMA oferuje serwis gwarancyjny Zebra?
-A: Tak. Prowadzimy autoryzowane centrum napraw Zebra — serwis-zebry.pl. Wykonujemy naprawy gwarancyjne, pogwarancyjne i oferujemy kontrakty serwisowe Zebra OneCare. Posiadamy certyfikat Zebra Printer Repair Specialist.
+Q: Czy TAKMA oferuje serwis urządzeń?
+A: Tak. Prowadzimy autoryzowane centrum napraw Zebra (serwis-zebry.pl) oraz serwisujemy urządzenia Honeywell, Datalogic, TSC, Citizen i innych producentów. Naprawy gwarancyjne, pogwarancyjne i kontrakty serwisowe.
 
-Q: Ile kosztuje drukarka etykiet Zebra?
-A: Ceny drukarek etykiet Zebra zaczynają się od ok. 800 zł netto za model biurkowy ZD220d, przez ok. 2 500 zł za zaawansowaną ZD621t, aż po ponad 15 000 zł netto za przemysłową ZT620 z opcjami.
+Q: Ile kosztuje drukarka etykiet?
+A: Ceny drukarek etykiet zaczynają się od ok. 600 zł netto za podstawowe modele biurkowe (np. TSC DA220), przez 800–2 500 zł za zaawansowane modele Zebra i Honeywell, aż po ponad 15 000 zł netto za przemysłowe drukarki 6-calowe.
 
 Q: Jaka jest różnica między drukarką termiczną a termotransferową?
-A: Drukarka termiczna (DT) drukuje bezpośrednio na papierze termoczułym — jest tańsza, ale etykiety blakną po kilku miesiącach. Drukarka termotransferowa (TT) używa taśmy barwiącej (ribbon) — etykiety są trwałe latami, odporne na UV, wodę i chemikalia.
+A: Drukarka termiczna (DT) drukuje bezpośrednio na papierze termoczułym — tańsza, ale etykiety blakną po kilku miesiącach. Termotransferowa (TT) używa taśmy barwiącej (ribbon) — etykiety trwałe latami, odporne na UV, wodę i chemikalia. Obie technologie oferują Zebra, Honeywell, TSC i Godex.
 
 Q: Czy wysyłacie urządzenia kurierem do całej Polski?
 A: Tak, realizujemy dostawy kurierem (DPD, InPost) na terenie całej Polski. Produkty dostępne w magazynie wysyłamy w ciągu 24 godzin roboczych.
 
 Q: Jakie terminale mobilne polecacie do magazynu?
-A: Do standardowych operacji magazynowych polecamy Zebra TC22 (od 2 180 zł netto). Dla intensywnego skanowania z klawiaturą — Zebra MC3400. Do chłodni i ciężkiego przemysłu — Zebra MC9400.
+A: Dobór zależy od środowiska pracy. Do standardowych operacji: Zebra TC22 lub Honeywell CT47. Z klawiaturą fizyczną: Zebra MC3400. Do chłodni i ciężkiego przemysłu: Zebra MC9400 lub Datalogic Skorpio X5. Pomagamy dobrać model do konkretnych potrzeb.
 
 Q: Czy oferujecie doradztwo przed zakupem?
-A: Tak, oferujemy bezpłatne doradztwo techniczne. Kontakt: +48 71 781 71 28, takma@takma.com.pl lub formularz na stronie takma.com.pl/kontakt.
+A: Tak, oferujemy bezpłatne doradztwo techniczne niezależnie od producenta. Kontakt: +48 71 781 71 28, takma@takma.com.pl lub formularz na stronie takma.com.pl/kontakt.

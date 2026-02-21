@@ -12,7 +12,7 @@ export default function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.06] border border-white/[0.08] text-sm text-[#A8F000] font-medium mb-6 reveal">
           <span className="w-2 h-2 rounded-full bg-[#A8F000]" />
-          Zebra Premier Solution Partner
+          25+ lat na rynku AutoID
         </div>
 
         {/* H1 — SEO-friendly, opisujący ofertę firmy */}
@@ -20,9 +20,9 @@ export default function Hero() {
           Drukarki etykiet, terminale mobilne i&nbsp;skanery kodów kreskowych
         </h1>
 
-        {/* Podtytuł — E-E-A-T + value proposition */}
+        {/* Podtytuł — E-E-A-T + value proposition, multi-brand */}
         <p className="text-lg lg:text-xl text-gray-400 max-w-2xl mb-10 leading-relaxed reveal reveal-delay-2">
-          Autoryzowany partner Zebra Technologies z&nbsp;25&#8209;letnim doświadczeniem.
+          Autoryzowany dystrybutor Zebra, Honeywell, Datalogic i&nbsp;innych czołowych marek.
           Doradztwo, sprzedaż i&nbsp;serwis urządzeń AutoID dla firm w&nbsp;całej Polsce.
         </p>
 

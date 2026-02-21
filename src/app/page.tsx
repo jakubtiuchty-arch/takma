@@ -17,13 +17,13 @@ import Hero from '@/components/home/Hero'
 export const metadata: Metadata = {
   title: 'TAKMA — Drukarki etykiet, Terminale mobilne, Skanery | Sklep B2B AutoID',
   description:
-    'Sklep B2B z urządzeniami AutoID — drukarki etykiet, terminale mobilne, skanery kodów kreskowych. Ceny netto, dostawa 24h. Autoryzowany partner Zebra Technologies z 25-letnim doświadczeniem. Wrocław, cała Polska.',
+    'Sklep B2B z urządzeniami AutoID — drukarki etykiet, terminale mobilne, skanery kodów kreskowych. Zebra, Honeywell, Datalogic, TSC i inne. Ceny netto, dostawa 24h, 25 lat doświadczenia. Wrocław, cała Polska.',
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'TAKMA — Drukarki etykiet, Terminale mobilne, Skanery kodów',
-    description: 'Autoryzowany partner Zebra Technologies. Drukarki etykiet od 800 zł netto, terminale mobilne, skanery. Doradztwo, sprzedaż i serwis dla firm B2B w całej Polsce.',
+    description: 'Drukarki etykiet od 800 zł netto, terminale mobilne, skanery. Zebra, Honeywell, Datalogic i inne marki. Doradztwo, sprzedaż i serwis dla firm B2B w całej Polsce.',
   },
 }
 
@@ -58,27 +58,27 @@ const clientLogos = [
   { src: '/images/clients/wosjko_logo.png', alt: 'Wojsko Polskie — klient TAKMA' },
 ]
 
-/* ── FAQ — zoptymalizowane pod AEO (Position Zero) ── */
+/* ── FAQ — zoptymalizowane pod AEO (Position Zero), multi-brand ── */
 const homepageFaq = [
   {
     q: 'Czym zajmuje się TAKMA?',
-    a: 'TAKMA to polska firma B2B z siedzibą we Wrocławiu, działająca od 2001 roku. Specjalizujemy się w dostawie drukarek etykiet, terminali mobilnych, skanerów kodów kreskowych i materiałów eksploatacyjnych. Jesteśmy autoryzowanym partnerem Zebra Technologies (Premier Solution Partner) i prowadzimy własny serwis napraw na serwis-zebry.pl.',
+    a: 'TAKMA to polska firma B2B z siedzibą we Wrocławiu, działająca od 2001 roku. Specjalizujemy się w dostawie drukarek etykiet, terminali mobilnych, skanerów kodów kreskowych i materiałów eksploatacyjnych. Współpracujemy z 9 czołowymi producentami: Zebra, Honeywell, Datalogic, TSC, Citizen, Godex, SATO, Newland i M3 Mobile. Prowadzimy również własny serwis napraw na serwis-zebry.pl.',
   },
   {
     q: 'Jakie drukarki etykiet oferujecie?',
-    a: 'Oferujemy pełną gamę drukarek etykiet Zebra Technologies: biurkowe (ZD220, ZD421, ZD621) od ok. 800 zł netto, przemysłowe (ZT111, ZT231, ZT411, ZT421, ZT610, ZT620) do pracy 24/7 oraz mobilne (ZQ210, ZQ310, ZQ511, ZQ630) do druku w terenie. Doradzamy w wyborze modelu dopasowanego do Twojego wolumenu i zastosowania.',
+    a: 'Oferujemy drukarki etykiet wielu marek: Zebra (ZD220, ZD421, ZD621, ZT411, ZT610), Honeywell (PC42, PD45), TSC (DA220, TE310), Godex (G500, EZ6250i) i Citizen (CL-S321). Biurkowe od ok. 800 zł netto, przemysłowe do pracy 24/7 oraz mobilne do druku w terenie. Pomagamy dobrać model dopasowany do Twojego wolumenu i zastosowania — niezależnie od marki.',
   },
   {
-    q: 'Czy TAKMA oferuje serwis gwarancyjny Zebra?',
-    a: 'Tak. Prowadzimy autoryzowane centrum napraw Zebra — serwis-zebry.pl. Wykonujemy naprawy gwarancyjne, pogwarancyjne i oferujemy kontrakty serwisowe Zebra OneCare. Posiadamy certyfikat Zebra Printer Repair Specialist. Czas naprawy to zazwyczaj 5–7 dni roboczych, a diagnostyka jest bezpłatna.',
+    q: 'Czy TAKMA oferuje serwis urządzeń?',
+    a: 'Tak. Prowadzimy autoryzowane centrum napraw Zebra (serwis-zebry.pl) oraz serwisujemy urządzenia Honeywell, Datalogic, TSC, Citizen i innych producentów. Wykonujemy naprawy gwarancyjne, pogwarancyjne i oferujemy kontrakty serwisowe. Czas naprawy to zazwyczaj 5–7 dni roboczych, a diagnostyka jest bezpłatna.',
   },
   {
-    q: 'Ile kosztuje drukarka etykiet Zebra?',
-    a: 'Ceny drukarek etykiet Zebra zaczynają się od ok. 800 zł netto za model biurkowy ZD220d, przez ok. 2 500 zł za zaawansowaną ZD621t, aż po ponad 15 000 zł netto za przemysłową ZT620 z opcjami. Wszystkie ceny w naszym sklepie podane są netto. Przygotowujemy też indywidualne oferty dla zamówień ilościowych.',
+    q: 'Ile kosztuje drukarka etykiet?',
+    a: 'Ceny drukarek etykiet zaczynają się od ok. 600 zł netto za podstawowe modele biurkowe (np. TSC DA220), przez ok. 800–2 500 zł za zaawansowane modele Zebra i Honeywell, aż po ponad 15 000 zł netto za przemysłowe drukarki 6-calowe. Wszystkie ceny w naszym sklepie podane są netto. Przygotowujemy też indywidualne oferty dla zamówień ilościowych.',
   },
   {
     q: 'Jaka jest różnica między drukarką termiczną a termotransferową?',
-    a: 'Drukarka termiczna (DT) drukuje bezpośrednio na papierze termoczułym — jest tańsza w eksploatacji, ale etykiety blakną po kilku miesiącach. Drukarka termotransferowa (TT) używa taśmy barwiącej (ribbon) i drukuje na dowolnym materiale — etykiety są trwałe latami, odporne na UV, wodę i chemikalia. Szczegółowe porównanie znajdziesz w naszym poradniku.',
+    a: 'Drukarka termiczna (DT) drukuje bezpośrednio na papierze termoczułym — jest tańsza w eksploatacji, ale etykiety blakną po kilku miesiącach. Drukarka termotransferowa (TT) używa taśmy barwiącej (ribbon) i drukuje na dowolnym materiale — etykiety są trwałe latami, odporne na UV, wodę i chemikalia. Obie technologie oferują wszyscy główni producenci: Zebra, Honeywell, TSC i Godex.',
   },
   {
     q: 'Czy wysyłacie urządzenia kurierem do całej Polski?',
@@ -86,11 +86,11 @@ const homepageFaq = [
   },
   {
     q: 'Jakie terminale mobilne polecacie do magazynu?',
-    a: 'Do standardowych operacji magazynowych polecamy Zebra TC22 — lekki, wytrzymały (IP68, upadki z 1,5 m) i w przystępnej cenie od ok. 2 180 zł netto. Dla intensywnego skanowania z klawiaturą fizyczną idealny jest Zebra MC3400. Do chłodni i ciężkiego przemysłu — Zebra MC9400 z IP65+IP68 i upadkami z 3,65 m.',
+    a: 'Dobór terminala zależy od środowiska pracy. Do standardowych operacji magazynowych polecamy Zebra TC22 lub Honeywell CT47 — lekkie, wytrzymałe i w przystępnej cenie. Dla intensywnego skanowania z klawiaturą fizyczną sprawdzi się Zebra MC3400. Do chłodni i ciężkiego przemysłu — Zebra MC9400 lub Datalogic Skorpio X5. Pomagamy dobrać model do konkretnych potrzeb.',
   },
   {
     q: 'Czy oferujecie doradztwo przed zakupem?',
-    a: 'Tak, oferujemy bezpłatne doradztwo techniczne. Nasi certyfikowani specjaliści pomogą dobrać urządzenie dopasowane do Twojej branży, wolumenu pracy i budżetu. Skontaktuj się z nami telefonicznie (+48 71 781 71 28), mailowo (takma@takma.com.pl) lub przez formularz na stronie kontaktowej.',
+    a: 'Tak, oferujemy bezpłatne doradztwo techniczne. Nasi certyfikowani specjaliści pomogą dobrać urządzenie dopasowane do Twojej branży, wolumenu pracy i budżetu — niezależnie od producenta. Skontaktuj się z nami telefonicznie (+48 71 781 71 28), mailowo (takma@takma.com.pl) lub przez formularz na stronie kontaktowej.',
   },
 ]
 
@@ -119,7 +119,7 @@ const jsonLdLocalBusiness = {
   email: 'takma@takma.com.pl',
   foundingDate: '2001-08-01',
   description:
-    'Autoryzowany partner Zebra Technologies. Drukarki etykiet, terminale mobilne, skanery kodów kreskowych i materiały eksploatacyjne dla firm B2B. 25+ lat doświadczenia, serwis, doradztwo.',
+    'Dystrybutor urządzeń AutoID: Zebra, Honeywell, Datalogic, TSC, Citizen, Godex i innych. Drukarki etykiet, terminale mobilne, skanery kodów kreskowych i materiały eksploatacyjne dla firm B2B. 25+ lat doświadczenia, serwis, doradztwo.',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'ul. Poświęcka 1a',
@@ -413,7 +413,7 @@ export default function HomePage() {
               {
                 image: '/images/about/serwis.png',
                 title: 'Autoryzowany serwis',
-                desc: 'Pełna obsługa gwarancyjna i pogwarancyjna urządzeń Zebra',
+                desc: 'Naprawy gwarancyjne i pogwarancyjne urządzeń Zebra, Honeywell, Datalogic i innych',
               },
               {
                 image: '/images/about/doradztwo.png',

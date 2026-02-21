@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: '%s | TAKMA',
   },
   description:
-    'Sklep B2B z urządzeniami AutoID — drukarki etykiet, terminale mobilne, skanery kodów kreskowych. Ceny netto, dostawa 24h. Autoryzowany partner Zebra Technologies z 25-letnim doświadczeniem.',
+    'Sklep B2B z urządzeniami AutoID — drukarki etykiet, terminale mobilne, skanery kodów kreskowych. Zebra, Honeywell, Datalogic, TSC i inne. Ceny netto, dostawa 24h, 25 lat doświadczenia.',
   authors: [{ name: 'TAKMA' }],
   creator: 'TAKMA',
   robots: 'index, follow',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     locale: 'pl_PL',
     siteName: 'TAKMA',
     title: 'TAKMA — Drukarki etykiet, Terminale mobilne, Skanery kodów',
-    description: 'Autoryzowany partner Zebra Technologies. Drukarki etykiet od 800 zł netto, terminale mobilne, skanery. Doradztwo, sprzedaż i serwis dla firm B2B w całej Polsce.',
+    description: 'Drukarki etykiet od 800 zł netto, terminale mobilne, skanery. Zebra, Honeywell, Datalogic i inne marki. Doradztwo, sprzedaż i serwis dla firm B2B w całej Polsce.',
     images: [{ url: '/images/takma-og.png', width: 1200, height: 630, alt: 'TAKMA — Autoryzowany dystrybutor urządzeń AutoID' }],
   },
   twitter: {
