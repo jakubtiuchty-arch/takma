@@ -469,7 +469,7 @@ export default function HomePage() {
                     alt=""
                     fill
                     className="object-cover opacity-[0.12] group-hover:opacity-[0.40] transition-opacity duration-500"
-                    style={{ objectPosition: ind.imagePos || 'center', transform: ind.imageScale ? `scale(${ind.imageScale})` : undefined }}
+                    style={{ objectPosition: ind.imagePos || 'center' }}
                   />
                 )}
                 <h3 className="relative font-semibold text-gray-900 group-hover:text-primary-600 transition-colors text-xs md:text-sm lg:text-base mb-1">
