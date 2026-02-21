@@ -242,25 +242,20 @@ export default function HomePage() {
       <Hero />
 
       {/* ── S2: Pasek logów producentów ── */}
-      <section className="relative z-10 -mt-6 pb-6">
+      <section className="border-b border-gray-100 py-5 lg:py-6">
         <div className="container-main">
-          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 px-6 py-5 lg:px-10 lg:py-6">
-            <p className="text-center text-xs font-medium text-gray-400 uppercase tracking-wider mb-4">
-              Autoryzowany dystrybutor
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-10">
-              {partnerLogos.map((partner) => (
-                <div key={partner.name} className="h-7 lg:h-9 flex items-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                  <Image
-                    src={partner.logo}
-                    alt={partner.name}
-                    width={120}
-                    height={36}
-                    className="h-full w-auto object-contain"
-                  />
-                </div>
-              ))}
-            </div>
+          <div className="flex flex-wrap items-center justify-center gap-7 lg:gap-12">
+            {partnerLogos.map((partner) => (
+              <div key={partner.name} className="h-8 lg:h-10 flex items-center grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <Image
+                  src={partner.logo}
+                  alt={partner.name}
+                  width={132}
+                  height={40}
+                  className="h-full w-auto object-contain"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
