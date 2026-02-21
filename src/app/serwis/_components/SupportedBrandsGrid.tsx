@@ -14,21 +14,21 @@ export function SupportedBrandsGrid() {
   ]
 
   return (
-    <section className="bg-white py-12 border-b border-gray-100">
+    <section className="bg-white py-16 sm:py-24 border-b border-gray-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8">
-          <h2 className="text-xl font-semibold text-gray-900">
-            Naprawa urządzeń AutoID – Pozostałe obsługiwane marki
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+            Które marki naprawiamy?
           </h2>
           <p className="mt-2 text-gray-500">
             Nasi certyfikowani inżynierowie z powodzeniem serwisują pogwarancyjnie sprzęt wiodących producentów branży AutoID.
           </p>
         </div>
-        <div className="flex flex-wrap justify-center gap-6 md:gap-12 items-center">
+        <div className="grid grid-cols-3 gap-8 sm:grid-cols-3 md:grid-cols-5 lg:gap-12 items-center justify-items-center">
           {brands.map((brand) => (
-            <div 
-              key={brand.name} 
-              className="flex items-center justify-center h-12 w-28 md:h-16 md:w-36"
+            <div
+              key={brand.name}
+              className="flex items-center justify-center h-16 w-36 md:h-20 md:w-44"
             >
               {brand.src ? (
                 <div className="relative w-full h-full opacity-60 hover:opacity-100 grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer">

@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Serwis urządzeń AutoID — naprawa drukarek etykiet, terminali, skanerów | TAKMA Wrocław',
-  description: 'Profesjonalny serwis pogwarancyjny urządzeń AutoID. Darmowa diagnostyka w 48h. Naprawiamy: Honeywell, Datalogic, Brother, M3 Mobile, Newland. Autoryzowany serwis Zebra. Obsługa kurierska w całej Polsce.',
+  title: 'Serwis drukarek etykiet, terminali i skanerów',
+  description: 'Serwis pogwarancyjny urządzeń AutoID. Darmowa diagnostyka 48h. Autoryzowany serwis Zebra. Honeywell, Datalogic, Brother, M3 Mobile. Cała Polska.',
   openGraph: {
-    title: 'Serwis urządzeń AutoID — naprawa drukarek etykiet, terminali, skanerów | TAKMA Wrocław',
-    description: 'Profesjonalny serwis pogwarancyjny urządzeń AutoID. Darmowa diagnostyka w 48h. Naprawiamy: Honeywell, Datalogic, Brother, M3 Mobile, Newland. Autoryzowany serwis Zebra. Obsługa kurierska w całej Polsce.',
+    title: 'Serwis drukarek etykiet, terminali i skanerów | TAKMA',
+    description: 'Serwis pogwarancyjny urządzeń AutoID. Darmowa diagnostyka 48h. Autoryzowany serwis Zebra. Honeywell, Datalogic, Brother, M3 Mobile. Cała Polska.',
     type: 'website',
     url: 'https://takma.com.pl/serwis',
   },
@@ -66,7 +66,7 @@ export default function SerwisLayout({
     },
     {
       name: "Czy naprawiacie urządzenia z całej Polski?",
-      text: "Tak, obsługujemy klientów z całej Polski. Urządzenie można dostarczyć osobiście do Wrocławia lub wysłać kurierem. Po naprawie odsyłamy sprzęt na nasz koszt (przy naprawach powyżej 200 PLN netto)."
+      text: "Tak, obsługujemy klientów z całej Polski — Warszawa, Kraków, Poznań, Łódź, Gdańsk, Katowice i inne miasta. Urządzenie można dostarczyć osobiście do Wrocławia lub wysłać kurierem. Po naprawie odsyłamy sprzęt na nasz koszt (przy naprawach powyżej 200 PLN netto)."
     },
     {
       name: "Czym różni się serwis gwarancyjny od pogwarancyjnego?",
@@ -91,11 +91,22 @@ export default function SerwisLayout({
         "name": "TAKMA Tadeusz Tiuchty",
         "alternateName": "TAKMA",
         "url": "https://takma.com.pl",
-        "logo": "https://takma.com.pl/images/logo.png",
+        "logo": "https://takma.com.pl/images/takma_logo.png",
         "image": "https://takma.com.pl/images/hero_serwis.jpeg",
         "description": "Profesjonalny serwis pogwarancyjny urządzeń AutoID — drukarek etykiet, terminali mobilnych i skanerów kodów kreskowych. Autoryzowany serwis Zebra Technologies.",
         "telephone": "+48607819688",
         "email": "takma@takma.com.pl",
+        "founder": {
+          "@type": "Person",
+          "name": "Tadeusz Tiuchty"
+        },
+        "employee": {
+          "@type": "Person",
+          "name": "Krzysztof Wójcik",
+          "jobTitle": "Service Manager",
+          "telephone": "+48601619898",
+          "email": "serwis@takma.com.pl"
+        },
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "ul. Poświęcka 1a",
@@ -115,10 +126,16 @@ export default function SerwisLayout({
           "opens": "07:30",
           "closes": "15:30"
         },
-        "areaServed": {
-          "@type": "Country",
-          "name": "Polska"
-        },
+        "areaServed": [
+          { "@type": "Country", "name": "Polska" },
+          { "@type": "City", "name": "Wrocław" },
+          { "@type": "City", "name": "Warszawa" },
+          { "@type": "City", "name": "Kraków" },
+          { "@type": "City", "name": "Poznań" },
+          { "@type": "City", "name": "Łódź" },
+          { "@type": "City", "name": "Gdańsk" },
+          { "@type": "City", "name": "Katowice" }
+        ],
         "knowsAbout": [
           "Naprawa drukarek etykiet",
           "Serwis terminali mobilnych",
@@ -132,10 +149,12 @@ export default function SerwisLayout({
           "credentialCategory": "Autoryzowany serwis",
           "recognizedBy": {
             "@type": "Organization",
-            "name": "Zebra Technologies"
+            "name": "Zebra Technologies",
+            "url": "https://www.zebra.com"
           }
         },
-        "priceRange": "PLN"
+        "priceRange": "PLN",
+        "foundingDate": "2001"
       },
       {
         "@type": "Service",
@@ -156,17 +175,17 @@ export default function SerwisLayout({
               "@type": "OfferCatalog",
               "name": "Naprawa drukarek etykiet",
               "itemListElement": [
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wymiana głowicy drukującej (biurkowe)", "description": "Wymiana głowicy w drukarkach biurkowych Zebra, Honeywell, Godex" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wymiana głowicy drukującej (przemysłowe)", "description": "Wymiana głowicy w drukarkach przemysłowych Zebra ZT, 105SL, Xi4" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wymiana wałka dociskowego", "description": "Wymiana platen roller w drukarkach termicznych i termotransferowych" } }
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wymiana głowicy drukującej (biurkowe)", "description": "Wymiana głowicy w drukarkach biurkowych Zebra, Honeywell, Godex" }, "priceSpecification": { "@type": "PriceSpecification", "price": "430", "priceCurrency": "PLN", "minPrice": "430", "description": "Cena netto od" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wymiana głowicy drukującej (przemysłowe)", "description": "Wymiana głowicy w drukarkach przemysłowych Zebra ZT, 105SL, Xi4" }, "priceSpecification": { "@type": "PriceSpecification", "price": "1600", "priceCurrency": "PLN", "minPrice": "1600", "description": "Cena netto od" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wymiana wałka dociskowego", "description": "Wymiana platen roller w drukarkach termicznych i termotransferowych" }, "priceSpecification": { "@type": "PriceSpecification", "price": "150", "priceCurrency": "PLN", "minPrice": "150", "description": "Cena netto od" } }
               ]
             },
             {
               "@type": "OfferCatalog",
               "name": "Naprawa terminali mobilnych",
               "itemListElement": [
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Naprawa ekranu terminala", "description": "Wymiana LCD i digitizera w terminalach Zebra TC, MC, Honeywell CT, CK" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wymiana baterii", "description": "Wymiana baterii w terminalach mobilnych wszystkich marek" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Naprawa ekranu terminala", "description": "Wymiana LCD i digitizera w terminalach Zebra TC, MC, Honeywell CT, CK" }, "priceSpecification": { "@type": "PriceSpecification", "price": "350", "priceCurrency": "PLN", "minPrice": "350", "description": "Cena netto od" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wymiana baterii", "description": "Wymiana baterii w terminalach mobilnych wszystkich marek" }, "priceSpecification": { "@type": "PriceSpecification", "price": "120", "priceCurrency": "PLN", "minPrice": "120", "description": "Cena netto od" } },
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Naprawa modułu Wi-Fi/WLAN", "description": "Diagnostyka i naprawa modułów komunikacji bezprzewodowej" } }
               ]
             },
@@ -175,11 +194,43 @@ export default function SerwisLayout({
               "name": "Naprawa skanerów kodów",
               "itemListElement": [
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Naprawa modułu skanującego", "description": "Wymiana modułu imager/laser w skanerach ręcznych i stacjonarnych" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Naprawa płyty głównej", "description": "Diagnostyka i naprawa elektroniki skanerów kodów kreskowych" } }
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Naprawa płyty głównej", "description": "Diagnostyka i naprawa elektroniki skanerów kodów kreskowych" }, "priceSpecification": { "@type": "PriceSpecification", "price": "300", "priceCurrency": "PLN", "minPrice": "300", "description": "Cena netto od" } }
               ]
             }
           ]
         }
+      },
+      {
+        "@type": "HowTo",
+        "name": "Jak zgłosić urządzenie do naprawy w TAKMA (proces RMA)",
+        "description": "Przejrzysty 4-krokowy proces zgłoszenia urządzenia AutoID do serwisu TAKMA.",
+        "totalTime": "P7D",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Zgłoszenie RMA",
+            "text": "Wypełnij formularz zgłoszeniowy na stronie serwisu, podając markę, model i opis usterki urządzenia. Otrzymasz numer zgłoszenia i dostęp do panelu serwisowego."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Odbiór sprzętu",
+            "text": "Serwis TAKMA zamawia kuriera pod odbiór sprzętu ze wskazanego adresu. Bezpieczny odbiór odbywa się zazwyczaj w ciągu 24 godzin."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Diagnoza i wycena",
+            "text": "Dostarczony sprzęt jest diagnozowany przez inżynierów w ciągu 48 godzin. Darmowa wycena naprawy jest przesyłana w panelu klienta. Płatność online lub pro forma."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Naprawa i odesłanie",
+            "text": "Po akceptacji kosztorysu przystępujemy do naprawy (5-7 dni roboczych). Naprawione urządzenie odsyłamy kurierem z gwarancją 3-6 miesięcy."
+          }
+        ]
       },
       {
         "@type": "BreadcrumbList",
@@ -200,6 +251,7 @@ export default function SerwisLayout({
       },
       {
         "@type": "FAQPage",
+        "dateModified": "2026-02-21",
         "mainEntity": faqEntries.map(faq => ({
           "@type": "Question",
           "name": faq.name,

@@ -18,7 +18,7 @@ export function ServiceContactForm() {
   }
 
   return (
-    <section id="zgloszenie" className="bg-white py-16 sm:py-24 border-t border-gray-100">
+    <section id="zgloszenie" className="bg-white py-16 sm:py-24 border-t border-gray-100 scroll-mt-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900">

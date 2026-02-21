@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { HeroService } from './_components/HeroService'
 import { TrustBar } from './_components/TrustBar'
 import { ZebraAuthorizedBanner } from './_components/ZebraAuthorizedBanner'
@@ -12,10 +13,21 @@ import { ServiceContactForm } from './_components/ServiceContactForm'
 export default function SerwisPage() {
   return (
     <main className="min-h-screen bg-white">
+      {/* Breadcrumbs */}
+      <nav aria-label="Breadcrumb" className="bg-gray-50 border-b border-gray-200">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
+          <ol className="flex items-center gap-2 text-sm text-gray-500">
+            <li><Link href="/" className="hover:text-gray-900 transition-colors">Strona główna</Link></li>
+            <li><span className="mx-1">/</span></li>
+            <li className="font-medium text-gray-900">Serwis</li>
+          </ol>
+        </div>
+      </nav>
+
       <HeroService />
       <TrustBar />
-      <DeviceCategoriesAEO />
       <SupportedBrandsGrid />
+      <DeviceCategoriesAEO />
       <PricingTable />
       <CommonIssues />
       <RmaProcessSteps />

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { ChevronDownIcon } from '@/components/ui/Icons'
 
 const faqs = [
@@ -31,7 +32,7 @@ const faqs = [
   },
   {
     question: "Czy naprawiacie urządzenia z całej Polski?",
-    answer: "Tak, obsługujemy klientów z całej Polski. Urządzenie można dostarczyć osobiście do naszego serwisu we Wrocławiu (ul. Poświęcka 1a) lub wysłać kurierem. Po naprawie odsyłamy sprzęt kurierem na nasz koszt (przy naprawach powyżej 200 PLN netto). Cały proces — od zgłoszenia po odbiór — koordynujemy zdalnie."
+    answer: "Tak, obsługujemy klientów z całej Polski — Warszawa, Kraków, Poznań, Łódź, Gdańsk, Katowice i inne miasta. Urządzenie można dostarczyć osobiście do naszego serwisu we Wrocławiu (ul. Poświęcka 1a) lub wysłać kurierem. Po naprawie odsyłamy sprzęt kurierem na nasz koszt (przy naprawach powyżej 200 PLN netto). Cały proces — od zgłoszenia po odbiór — koordynujemy zdalnie."
   },
   {
     question: "Czym różni się serwis gwarancyjny od pogwarancyjnego?",
@@ -72,6 +73,17 @@ export function FaqAEO() {
               </div>
             </details>
           ))}
+        </div>
+
+        <div className="mt-12 rounded-xl bg-gray-50 p-6 border border-gray-200">
+          <p className="text-sm font-medium text-gray-900 mb-3">Powiązane strony:</p>
+          <ul className="flex flex-wrap gap-3 text-sm">
+            <li><Link href="/drukarki-etykiet" className="text-gray-600 hover:text-gray-900 underline underline-offset-2 transition-colors">Drukarki etykiet</Link></li>
+            <li><Link href="/terminale-mobilne" className="text-gray-600 hover:text-gray-900 underline underline-offset-2 transition-colors">Terminale mobilne</Link></li>
+            <li><Link href="/poradnik/jak-wybrac-drukarke-etykiet" className="text-gray-600 hover:text-gray-900 underline underline-offset-2 transition-colors">Jak wybrać drukarkę etykiet?</Link></li>
+            <li><Link href="/poradnik/drukarka-termiczna-vs-termotransferowa" className="text-gray-600 hover:text-gray-900 underline underline-offset-2 transition-colors">Termiczna vs termotransferowa</Link></li>
+            <li><a href="https://www.serwis-zebry.pl" rel="noopener" className="text-gray-600 hover:text-gray-900 underline underline-offset-2 transition-colors">Serwis drukarek Zebra</a></li>
+          </ul>
         </div>
       </div>
     </section>
