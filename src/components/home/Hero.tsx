@@ -32,22 +32,6 @@ const slides: HeroSlide[] = [
     priceFrom: 5132,
     imageClassName: 'object-contain scale-[1.3] translate-y-[3%]',
   },
-  {
-    type: 'product',
-    image: '/images/products/zd421t_1.png',
-    name: 'Zebra ZD421t',
-    slug: 'zebra-zd421t',
-    priceFrom: 1649,
-    imageClassName: 'object-contain scale-[0.85]',
-  },
-  {
-    type: 'product',
-    image: '/images/products/tc22_scanner_1.png',
-    name: 'Zebra TC22',
-    slug: 'zebra-tc22',
-    priceFrom: 2417,
-    imageClassName: 'object-contain scale-[0.8]',
-  },
 ]
 
 const INTERVAL = 6000
