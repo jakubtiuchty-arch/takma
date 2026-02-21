@@ -8,7 +8,7 @@ import {
   ChevronRightIcon,
 } from '@/components/ui/Icons'
 import { ProductCard } from '@/components/product'
-import { categories, getBestsellers, getNewProducts } from '@/data/products'
+import { getBestsellers, getNewProducts } from '@/data/products'
 import { guides, guideCategoryLabels } from '@/data/guides'
 import Hero from '@/components/home/Hero'
 
@@ -25,27 +25,6 @@ export const metadata: Metadata = {
     description: 'Drukarki etykiet od 800 zł netto, terminale mobilne, skanery. Zebra, Honeywell, Datalogic i inne marki. Doradztwo, sprzedaż i serwis dla firm B2B w całej Polsce.',
   },
 }
-
-/* ── Ikony kategorii ── */
-const categoryIcons: Record<string, string> = {
-  printer: '/images/ikony/drukarki-etykiet.jpeg',
-  scan: '/images/skanery-czytniki.png',
-  smartphone: '/images/ikony/terminale-mobilne.jpeg',
-  tablet: '/images/tablety.png',
-  tag: '/images/ikony/materialy-eksploatacyjne.jpeg',
-  package: '/images/akcesoria.png',
-  code: '/images/ikony/drukarki-etykiet.jpeg',
-}
-
-/* ── 6 kategorii na HP ── */
-const homepageCategoryIds = [
-  'drukarki-etykiet',
-  'terminale-mobilne',
-  'materialy-eksploatacyjne',
-  'akcesoria',
-  'drukarki-kart',
-  'drukarki-opasek',
-]
 
 /* ── Loga producentów (reuse z /o-nas) ── */
 const partnerLogos = [
@@ -213,11 +192,6 @@ export default function HomePage() {
     })),
   }
 
-  // Kategorie do wyświetlenia
-  const homepageCategories = homepageCategoryIds
-    .map(id => categories.find(c => c.id === id)!)
-    .filter(Boolean)
-
   return (
     <>
       {/* JSON-LD Schema */}
@@ -260,56 +234,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── S3: Kategorie (Bento Grid — 6 kategorii) ── */}
-      <section className="py-10 lg:py-14 bg-gradient-mesh relative">
-        <div className="container-main">
-          <div className="flex items-end justify-between mb-10">
-            <div>
-              <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight">
-                Urządzenia AutoID — nasze kategorie
-              </h2>
-              <p className="text-gray-500 mt-2">Znajdź urządzenie idealne do Twoich potrzeb</p>
-            </div>
-            <Link
-              href="/katalog"
-              className="hidden md:flex items-center gap-1.5 text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors"
-            >
-              Cały katalog
-              <ArrowRightIcon size={16} />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:gap-4">
-            {homepageCategories.map((category, i) => (
-              <Link
-                key={category.id}
-                href={`/${category.slug}`}
-                className={`bento-card group p-5 lg:p-6 flex flex-col items-start gap-4 reveal reveal-delay-${Math.min(i + 1, 5)}`}
-              >
-                <div className="w-16 h-16 rounded-xl overflow-hidden group-hover:scale-110 transition-transform duration-300">
-                  <Image
-                    src={categoryIcons[category.icon] || '/images/icon-accessories.png'}
-                    alt={category.name}
-                    width={128}
-                    height={128}
-                    className="w-full h-full object-cover mix-blend-multiply"
-                  />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 group-hover:text-primary-600 transition-colors text-sm">
-                    {category.name}
-                  </h3>
-                  <p className="text-xs text-gray-400 mt-1 line-clamp-2 hidden lg:block">
-                    {category.description}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── S4: Bestsellery (dynamiczne) ── */}
+      {/* ── S3: Bestsellery (dynamiczne) ── */}
       <section className="py-10 lg:py-14">
         <div className="container-main">
           <div className="flex items-center justify-between mb-8">
@@ -333,7 +258,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── S5: Zaufali nam ── */}
+      {/* ── S4: Zaufali nam ── */}
       <section className="py-10 lg:py-14 bg-gray-50">
         <div className="container-main">
           <h2 className="text-center text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight mb-8">
@@ -358,7 +283,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── S6: Serwis-Zebry Banner (bez zmian) ── */}
+      {/* ── S5: Serwis-Zebry Banner ── */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary-700 via-primary-600 to-accent-600" />
         <div className="absolute inset-0 bg-gradient-mesh-dark opacity-50" />
@@ -391,7 +316,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── S7: Dlaczego TAKMA? + Certyfikaty Zebra ── */}
+      {/* ── S6: Dlaczego TAKMA? + Certyfikaty Zebra ── */}
       <section className="py-16 lg:py-24 bg-gray-50 relative">
         <div className="absolute inset-0 bg-gradient-mesh opacity-50" />
 
@@ -479,7 +404,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── S8: Poradniki i baza wiedzy ── */}
+      {/* ── S7: Poradniki i baza wiedzy ── */}
       <section className="py-14 lg:py-20">
         <div className="container-main">
           <div className="text-center mb-10">
@@ -517,7 +442,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── S9: FAQ ── */}
+      {/* ── S8: FAQ ── */}
       <section className="py-14 lg:py-20 bg-gray-50">
         <div className="container-main">
           <details className="group max-w-3xl mx-auto">
@@ -558,7 +483,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── S10: CTA ── */}
+      {/* ── S9: CTA ── */}
       <section className="relative overflow-hidden bg-gray-950 text-white">
         <div className="absolute inset-0 bg-gradient-mesh-dark" />
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-500/20 to-transparent" />
