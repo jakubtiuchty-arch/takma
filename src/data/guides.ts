@@ -53,7 +53,7 @@ export const guides: Guide[] = [
   category: 'poradnik',
   tags: ['drukarki-etykiet', 'poradnik', 'jak-wybrac'],
   publishedAt: '2026-02-13',
-  updatedAt: '2026-02-13',
+  updatedAt: '2026-02-21',
   readTime: '12 min',
   heroImage: '/images/guides/jak-wybrac-drukarke-etykiet.jpg',
 
@@ -587,7 +587,7 @@ export const guides: Guide[] = [
   category: 'porownanie',
   tags: ['termiczna', 'termotransferowa', 'porownanie'],
   publishedAt: '2026-02-13',
-  updatedAt: '2026-02-13',
+  updatedAt: '2026-02-21',
   readTime: '10 min',
   heroImage: '/images/guides/termiczna-vs-termotransferowa.jpg',
 
@@ -1003,7 +1003,7 @@ export const guides: Guide[] = [
   category: 'przewodnik',
   tags: ['zebra', 'zd-series', 'zt-series', 'drukarki-etykiet'],
   publishedAt: '2026-02-13',
-  updatedAt: '2026-02-13',
+  updatedAt: '2026-02-21',
   readTime: '15 min',
   heroImage: '/images/guides/drukarki-zebra-przewodnik.jpg',
 

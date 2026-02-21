@@ -40,13 +40,18 @@ export default function GuidePage({ guide }: GuidePageProps) {
     ],
   }
 
-  // JSON-LD: Article
+  // JSON-LD: Article (E-E-A-T: author = Person, publisher = Organization)
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: guide.title,
     description: guide.seoDescription,
-    author: { '@type': 'Organization', name: 'TAKMA', url: 'https://takma.com.pl' },
+    author: {
+      '@type': 'Person',
+      name: 'Jakub Tiuchty',
+      jobTitle: 'Specjalista AutoID',
+      worksFor: { '@type': 'Organization', name: 'TAKMA', url: 'https://takma.com.pl' },
+    },
     publisher: {
       '@type': 'Organization',
       name: 'TAKMA',
@@ -59,11 +64,26 @@ export default function GuidePage({ guide }: GuidePageProps) {
     image: guide.heroImage ? `https://takma.com.pl${guide.heroImage}` : undefined,
   }
 
+  // JSON-LD: FAQPage (rich snippets w Google)
+  const faqJsonLd = guide.faq.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: guide.faq.map(item => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  } : null
+
   return (
     <>
       {/* JSON-LD Schemas */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
 
       <div className="bg-white">
         {/* Breadcrumbs */}

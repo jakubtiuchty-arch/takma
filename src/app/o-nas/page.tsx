@@ -222,22 +222,30 @@ export default function AboutPage() {
       />
 
       {/* S1: Hero */}
-      <section className="bg-indigo-50/80 border-b border-indigo-100 py-16 lg:py-24">
-        <div className="container-main">
+      <section className="relative overflow-hidden py-16 lg:py-24" style={{ backgroundColor: '#1a1a1a' }}>
+        <Image
+          src="/images/hero_onas.jpeg"
+          alt="Widok z biura TAKMA na centrum Wrocławia"
+          fill
+          className="object-cover opacity-40"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-950/80 via-gray-950/50 to-transparent" />
+        <div className="container-main relative z-10">
           {/* Breadcrumbs */}
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-gray-400 mb-8">
-            <Link href="/" className="hover:text-gray-700 transition-colors">
+            <Link href="/" className="hover:text-white transition-colors">
               Strona główna
             </Link>
             <ChevronRightIcon size={16} />
-            <span className="text-gray-600">O nas</span>
+            <span className="text-gray-300">O nas</span>
           </nav>
 
           <div className="max-w-3xl">
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
               Od 2001 roku pomagamy firmom automatyzować procesy
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-xl text-gray-300 leading-relaxed">
               TAKMA to firma z Wrocławia, która od ponad 24 lat dostarcza drukarki
               etykiet, skanery kodów kreskowych i terminale mobilne dla biznesu. Łączymy
               doświadczenie z indywidualnym podejściem do każdego klienta.
@@ -259,7 +267,7 @@ export default function AboutPage() {
                 key={stat.label}
                 className="bg-white rounded-xl shadow-lg p-6 text-center border border-gray-100"
               >
-                <div className="text-3xl lg:text-4xl font-bold text-gray-900 mb-1">
+                <div className="text-3xl lg:text-4xl font-bold text-primary-600 mb-1">
                   <AnimatedCounter end={stat.end} suffix={stat.suffix} />
                 </div>
                 <div className="text-gray-900 font-medium text-sm">{stat.label}</div>
@@ -284,7 +292,7 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Karta 1: Doświadczenie */}
-            <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 mb-4">
                 <Image
                   src="/images/ikony/25_lat.jpeg"
@@ -302,7 +310,7 @@ export default function AboutPage() {
             </div>
 
             {/* Karta 2: Serwis */}
-            <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 mb-4">
                 <Image
                   src="/images/ikony/Autoryzowany.jpeg"
@@ -329,7 +337,7 @@ export default function AboutPage() {
             </div>
 
             {/* Karta 3: Przetargi */}
-            <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="w-[70px] h-[70px] mb-4">
                 <Image
                   src="/images/ikony/Przetargi.jpeg"
@@ -347,7 +355,7 @@ export default function AboutPage() {
             </div>
 
             {/* Karta 4: Nagrody */}
-            <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 mb-4">
                 <Image
                   src="/images/ikony/Nagrody.jpeg"
@@ -366,7 +374,7 @@ export default function AboutPage() {
             </div>
 
             {/* Karta 5: Zespół */}
-            <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 mb-4">
                 <Image
                   src="/images/ikony/Specjaliści.jpeg"
@@ -384,7 +392,7 @@ export default function AboutPage() {
             </div>
 
             {/* Karta 6: Podejście */}
-            <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="w-[70px] h-[70px] mb-4">
                 <Image
                   src="/images/ikony/Podejście.jpeg"
@@ -427,7 +435,7 @@ export default function AboutPage() {
                   {...wrapperProps as any}
                   className="bg-white rounded-xl p-5 border border-gray-100 text-center hover:shadow-md transition-all group"
                 >
-                  <div className="h-12 flex items-center justify-center mb-3 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all">
+                  <div className="h-12 flex items-center justify-center mb-3">
                     <Image
                       src={partner.logo}
                       alt={`Logo ${partner.name} — partner TAKMA`}
@@ -504,7 +512,7 @@ export default function AboutPage() {
             {industries.map((industry) => (
               <div
                 key={industry.name}
-                className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
+                className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
               >
                 <div className="w-16 h-16 mb-4">
                   <Image

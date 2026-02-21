@@ -309,11 +309,8 @@ export default function HomePage() {
         <div className="container-main relative">
           <div className="text-center mb-8 lg:mb-12">
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight">
-              TAKMA
+              Kompleksowe rozwiązania AutoID z&nbsp;profesjonalnym wsparciem
             </h2>
-            <p className="text-gray-500 mt-1.5 md:mt-2 max-w-lg mx-auto text-sm md:text-base">
-              Kompleksowe rozwiązania AutoID z profesjonalnym wsparciem
-            </p>
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 mb-8 lg:mb-12">
@@ -360,7 +357,7 @@ export default function HomePage() {
                 Certyfikaty Zebra
               </h3>
               <p className="text-sm sm:text-base text-[#0A1A2F]/80 font-medium leading-relaxed max-w-2xl mx-auto">
-                Jako jeden z nielicznych partnerów Zebra w Polsce posiadamy 3 oficjalne certyfikaty potwierdzające najwyższe kompetencje w sprzedaży i serwisie.
+                TAKMA jako jeden z nielicznych partnerów Zebra w Polsce posiada 3 oficjalne certyfikaty potwierdzające najwyższe kompetencje w sprzedaży i serwisie.
               </p>
             </div>
           </div>
