@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { Button } from '@/components/ui'
 import {
   ArrowRightIcon,
-  WrenchIcon,
   ChevronRightIcon,
 } from '@/components/ui/Icons'
 import { ProductCard } from '@/components/product'
@@ -258,65 +257,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── S4: Zaufali nam ── */}
-      <section className="py-10 lg:py-14 bg-gray-50">
-        <div className="container-main">
-          <h2 className="text-center text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight mb-8">
-            Zaufali nam
-          </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
-            {clientLogos.map((client) => (
-              <div
-                key={client.alt}
-                className="bg-white rounded-xl border border-gray-100 h-20 lg:h-24 relative group hover:shadow-md transition-all"
-              >
-                <Image
-                  src={client.src}
-                  alt={client.alt}
-                  fill
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
-                  className="object-contain p-4 lg:p-5 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── S5: Serwis-Zebry Banner ── */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-700 via-primary-600 to-accent-600" />
-        <div className="absolute inset-0 bg-gradient-mesh-dark opacity-50" />
-
-        <div className="container-main relative py-10 lg:py-14">
-          <a
-            href="https://serwis-zebry.pl"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col lg:flex-row items-center justify-between gap-6 group"
-          >
-            <div className="flex items-center gap-5">
-              <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center border border-white/10 group-hover:bg-white/15 transition-colors">
-                <WrenchIcon size={32} className="text-white" />
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-white tracking-tight">
-                  Serwis-Zebry.pl
-                </div>
-                <div className="text-primary-100 mt-1">
-                  Profesjonalna naprawa i serwis urządzeń Zebra — autoryzowany partner z 20-letnim doświadczeniem
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center gap-2.5 px-6 py-3 bg-white text-primary-700 font-semibold rounded-xl group-hover:bg-primary-50 transition-all duration-300 shadow-glass flex-shrink-0">
-              Sprawdź ofertę serwisu
-              <ArrowRightIcon size={18} className="group-hover:translate-x-0.5 transition-transform" />
-            </div>
-          </a>
-        </div>
-      </section>
-
-      {/* ── S6: Dlaczego TAKMA? + Certyfikaty Zebra ── */}
+      {/* ── S4: Dlaczego TAKMA? + Certyfikaty Zebra ── */}
       <section className="py-16 lg:py-24 bg-gray-50 relative">
         <div className="absolute inset-0 bg-gradient-mesh opacity-50" />
 
@@ -404,7 +345,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── S7: Poradniki i baza wiedzy ── */}
+      {/* ── S5: Poradniki i baza wiedzy ── */}
       <section className="py-14 lg:py-20">
         <div className="container-main">
           <div className="text-center mb-10">
@@ -437,6 +378,31 @@ export default function HomePage() {
                   <ArrowRightIcon size={14} className="group-hover:translate-x-0.5 transition-transform" />
                 </span>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── S7: Zaufali nam ── */}
+      <section className="py-10 lg:py-14 bg-gray-50">
+        <div className="container-main">
+          <h2 className="text-center text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight mb-8">
+            Zaufali nam
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+            {clientLogos.map((client) => (
+              <div
+                key={client.alt}
+                className="bg-white rounded-xl border border-gray-100 h-20 lg:h-24 relative group hover:shadow-md transition-all"
+              >
+                <Image
+                  src={client.src}
+                  alt={client.alt}
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                  className="object-contain p-4 lg:p-5 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                />
+              </div>
             ))}
           </div>
         </div>
