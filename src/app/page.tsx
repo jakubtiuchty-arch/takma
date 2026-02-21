@@ -236,7 +236,7 @@ export default function HomePage() {
             {[
               { end: 25, suffix: '+', label: 'lat na rynku', sublabel: 'od 2001 roku' },
               { end: 5000, suffix: '+', label: 'zrealizowanych projektów', sublabel: 'dla firm w całej Polsce' },
-              { end: 9, suffix: '', label: 'obsługiwanych marek', sublabel: 'Zebra, Honeywell, Datalogic…' },
+              { end: 2000, suffix: '+', label: 'zadowolonych klientów', sublabel: 'w całej Polsce' },
             ].map((stat) => (
               <div
                 key={stat.label}

@@ -12,7 +12,7 @@ export default function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.06] border border-white/[0.08] text-sm text-[#A8F000] font-medium mb-6 reveal">
           <span className="w-2 h-2 rounded-full bg-[#A8F000]" />
-          25+ lat na rynku AutoID
+          Autoryzowany dystrybutor AutoID
         </div>
 
         {/* H1 — SEO-friendly, opisujący ofertę firmy */}
