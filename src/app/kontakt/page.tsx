@@ -140,8 +140,17 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-hero text-white py-14 lg:py-20">
-        <div className="container-main">
+      <section className="relative overflow-hidden bg-gray-900 text-white py-14 lg:py-20">
+        <Image
+          src="/images/hero_kontakt.jpeg"
+          alt="Kontakt TAKMA — doradztwo i sprzedaż urządzeń AutoID"
+          fill
+          priority
+          className="object-cover opacity-40" style={{ objectPosition: '50% 20%' }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-gray-900/30" />
+
+        <div className="relative z-10 container-main">
           <nav className="flex items-center gap-2 text-sm text-primary-200 mb-8">
             <Link href="/" className="hover:text-white transition-colors">
               Strona główna
@@ -154,7 +163,7 @@ export default function ContactPage() {
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
               Porozmawiajmy o Twoim projekcie
             </h1>
-            <p className="text-lg sm:text-xl text-primary-100">
+            <p className="text-lg sm:text-xl text-gray-300">
               Potrzebujesz pomocy w doborze terminali, drukarek etykiet lub skanerów?
               Nasi specjaliści z 25-letnim doświadczeniem pomogą dobrać optymalne rozwiązanie.
             </p>
@@ -170,8 +179,8 @@ export default function ContactPage() {
               href="tel:+48607819688"
               className="group bg-white rounded-2xl shadow-lg hover:shadow-xl border border-gray-100 p-6 flex items-center gap-5 transition-all hover:-translate-y-0.5"
             >
-              <div className="w-14 h-14 flex-shrink-0">
-                <Image src="/images/ikony/telefon.png" alt="Ikona telefon" width={56} height={56} className="object-contain mix-blend-multiply" />
+              <div className="w-12 h-12 rounded-xl bg-primary-50 flex items-center justify-center flex-shrink-0">
+                <PhoneIcon size={24} className="text-primary-600" />
               </div>
               <div>
                 <p className="text-sm text-gray-500 mb-0.5">Zadzwoń do nas</p>
@@ -184,8 +193,8 @@ export default function ContactPage() {
               href="mailto:takma@takma.com.pl"
               className="group bg-white rounded-2xl shadow-lg hover:shadow-xl border border-gray-100 p-6 flex items-center gap-5 transition-all hover:-translate-y-0.5"
             >
-              <div className="w-14 h-14 flex-shrink-0">
-                <Image src="/images/ikony/email.png" alt="Ikona email" width={56} height={56} className="object-contain mix-blend-multiply" />
+              <div className="w-12 h-12 rounded-xl bg-primary-50 flex items-center justify-center flex-shrink-0">
+                <MailIcon size={24} className="text-primary-600" />
               </div>
               <div>
                 <p className="text-sm text-gray-500 mb-0.5">Napisz do nas</p>
@@ -195,8 +204,8 @@ export default function ContactPage() {
             </a>
 
             <div className="group bg-white rounded-2xl shadow-lg border border-gray-100 p-6 flex items-center gap-5">
-              <div className="w-[59px] h-[59px] flex-shrink-0">
-                <Image src="/images/ikony/lokalizacja.png" alt="Ikona lokalizacja" width={59} height={59} className="object-contain mix-blend-multiply" />
+              <div className="w-12 h-12 rounded-xl bg-primary-50 flex items-center justify-center flex-shrink-0">
+                <LocationIcon size={24} className="text-primary-600" />
               </div>
               <div>
                 <p className="text-sm text-gray-500 mb-0.5">Odwiedź nas</p>

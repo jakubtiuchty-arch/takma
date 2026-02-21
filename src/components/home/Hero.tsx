@@ -14,6 +14,8 @@ interface ProductSlide {
   slug: string
   priceFrom: number
   imageClassName?: string
+  /** 'lifestyle' = gradient od prawej, tekst po prawej; 'packshot' = gradient od lewej, tekst po lewej */
+  imageType?: 'lifestyle' | 'packshot'
 }
 
 interface InfoSlide {
@@ -26,11 +28,21 @@ const slides: HeroSlide[] = [
   { type: 'info' },
   {
     type: 'product',
+    image: '/images/hero_tc501.jpeg',
+    name: 'Zebra TC501',
+    slug: 'zebra-tc501',
+    priceFrom: 3730,
+    imageClassName: 'object-cover object-[70%_center]',
+    imageType: 'lifestyle',
+  },
+  {
+    type: 'product',
     image: '/images/hero-zt411.jpeg',
     name: 'Zebra ZT411',
     slug: 'zebra-zt411',
     priceFrom: 5132,
     imageClassName: 'object-contain scale-[1.3] translate-y-[3%]',
+    imageType: 'packshot',
   },
 ]
 
@@ -59,11 +71,30 @@ export default function Hero() {
   }, [next])
 
   const slide = slides[current]
+  const isLifestyle = slide.type === 'product' && slide.imageType === 'lifestyle'
 
   return (
-    <section className="relative overflow-hidden w-full h-[400px] md:h-[420px] lg:h-[520px] bg-gray-950">
-      {/* Tło — gradient mesh dla info, obrazek dla produktu */}
-      <div className="absolute inset-0 bg-gradient-mesh-dark" />
+    <section className="relative overflow-hidden w-full h-[400px] md:h-[420px] lg:h-[520px]" style={{ backgroundColor: '#0c1525' }}>
+      {/* Tło — gradient mesh (tylko gdy nie info slide) */}
+      {slide.type !== 'info' && <div className="absolute inset-0 bg-gradient-mesh-dark" />}
+
+      {/* Info slide — obraz po prawej, tło sekcji dopasowane do koloru tła obrazu */}
+      {slide.type === 'info' && (
+        <div
+          className={clsx(
+            'absolute top-0 right-0 bottom-0 w-[55%] hidden md:block transition-opacity duration-700 ease-in-out',
+            isTransitioning ? 'opacity-0' : 'opacity-100'
+          )}
+        >
+          <Image
+            src="/images/hero_prawa.jpeg"
+            alt="Drukarka etykiet Honeywell, terminal mobilny Zebra i skaner kodów Datalogic"
+            fill
+            className="object-contain object-right"
+            priority
+          />
+        </div>
+      )}
 
       {slide.type === 'product' && (
         <div
@@ -76,25 +107,41 @@ export default function Hero() {
             src={slide.image}
             alt={slide.name}
             fill
-            className={clsx('brightness-[1.3] contrast-[1.05]', slide.imageClassName)}
+            className={clsx(
+              isLifestyle ? '' : 'brightness-[1.3] contrast-[1.05]',
+              slide.imageClassName
+            )}
             priority={current <= 1}
           />
         </div>
       )}
 
-      {/* Gradienty na produkt */}
+      {/* Gradienty — różne dla lifestyle vs packshot */}
       {slide.type === 'product' && (
-        <>
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-950 from-15% via-gray-950/60 via-35% to-transparent z-10" />
-          <div className="absolute inset-0 bg-gradient-to-l from-gray-950 from-10% via-gray-950/50 via-25% to-transparent z-10" />
-        </>
+        isLifestyle ? (
+          /* Lifestyle: gradient od PRAWEJ — tekst po prawej, zdjęcie widoczne po lewej */
+          <>
+            <div className="absolute inset-0 bg-gradient-to-l from-gray-950 from-15% via-gray-950/80 via-45% to-transparent z-10" />
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-950/50 via-transparent to-transparent z-10" />
+          </>
+        ) : (
+          /* Packshot: gradient od LEWEJ — tekst po lewej */
+          <>
+            <div className="absolute inset-0 bg-gradient-to-r from-gray-950 from-15% via-gray-950/60 via-35% to-transparent z-10" />
+            <div className="absolute inset-0 bg-gradient-to-l from-gray-950 from-10% via-gray-950/50 via-25% to-transparent z-10" />
+          </>
+        )
       )}
 
       {/* Content */}
-      <div className="container-main relative h-full flex items-center z-20">
+      <div className={clsx(
+        'container-main relative h-full flex items-center z-20',
+        isLifestyle ? 'justify-end' : 'justify-start'
+      )}>
         <div
           className={clsx(
-            'transition-all duration-500 ease-in-out max-w-2xl',
+            'transition-all duration-500 ease-in-out',
+            isLifestyle ? 'max-w-md text-right translate-y-[10%]' : 'max-w-2xl',
             isTransitioning ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'
           )}
         >

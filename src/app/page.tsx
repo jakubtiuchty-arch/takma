@@ -54,31 +54,42 @@ const industries = [
     name: 'E-commerce i fulfillment',
     href: '/drukarki-etykiet-e-commerce',
     desc: 'Etykiety wysyłkowe, kompletacja zamówień, multi-order picking',
+    image: '/images/ecommerce.png',
+    imagePos: 'center 70%',
   },
   {
     name: 'Magazyn i dystrybucja',
     href: '/drukarki-etykiet-magazyn',
     desc: 'WMS, inwentaryzacja, przyjęcia i wydania towarów',
+    image: '/images/magazyn-dystrybucja.jpeg',
+    imagePos: 'center 30%',
   },
   {
     name: 'Produkcja',
     href: '/drukarki-etykiet-produkcja',
     desc: 'Oznaczanie na linii, śledzenie serii, kontrola jakości',
+    image: '/images/produkcja.jpeg',
+    imagePos: 'center 65%',
   },
   {
     name: 'Logistyka i transport',
     href: '/drukarki-etykiet-logistyka',
     desc: 'Etykiety przewozowe, śledzenie przesyłek, cross-docking',
+    image: '/images/logistyka-transport.jpeg',
+    imagePos: 'center 60%',
   },
   {
     name: 'Apteka i healthcare',
     href: '/drukarki-etykiet-apteka',
     desc: 'Opaski identyfikacyjne, etykiety na leki, próbki laboratoryjne',
+    image: '/images/apteka.jpeg',
   },
   {
     name: 'Gastronomia i HoReCa',
     href: '/drukarki-etykiet-gastronomia',
     desc: 'Etykiety żywnościowe, daty przydatności, HACCP',
+    image: '/images/gastronomia.jpeg',
+    imagePos: 'center 80%',
   },
 ]
 
@@ -341,34 +352,56 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Certyfikaty Zebra */}
-          <div className="bg-white rounded-xl border p-4 lg:p-8" style={{ borderColor: '#A8F000' }}>
-            <h3 className="text-center text-xs lg:text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4 lg:mb-6">
-              Nasze certyfikaty Zebra Technologies
-            </h3>
-            <div className="flex items-center justify-center gap-4 md:gap-8 lg:gap-12">
-              <Image
-                src="/images/certifications/zebra-premier-solution-partner.png"
-                alt="Zebra Premier Solution Partner — oficjalny certyfikat TAKMA"
-                width={220}
-                height={48}
-                className="h-8 md:h-10 lg:h-12 w-auto object-contain"
-              />
-              <Image
-                src="/images/certifications/zebra-public-sector-specialist.png"
-                alt="Zebra Public Sector Specialist — 1 z 4 firm w Polsce"
-                width={220}
-                height={48}
-                className="h-8 md:h-10 lg:h-12 w-auto object-contain"
-              />
-              <Image
-                src="/images/certifications/zebra-printer-repair-specialist.png"
-                alt="Zebra Printer Repair Specialist — autoryzowany serwis TAKMA"
-                width={220}
-                height={48}
-                className="h-8 md:h-10 lg:h-12 w-auto object-contain"
-              />
+          {/* Certyfikaty Zebra — zielony box */}
+          <div className="relative overflow-hidden rounded-2xl lg:rounded-3xl shadow-xl bg-gradient-to-br from-[#A8F000] to-[#8dbd00]">
+            <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:16px_16px]" />
+            <div className="relative z-10 px-5 py-4 sm:px-8 sm:py-5 lg:px-10 lg:py-6 text-center">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-[#0A1A2F] tracking-tight mb-2 lg:mb-3">
+                Certyfikaty Zebra
+              </h3>
+              <p className="text-sm sm:text-base text-[#0A1A2F]/80 font-medium leading-relaxed max-w-2xl mx-auto">
+                Jako jeden z nielicznych partnerów Zebra w Polsce posiadamy 3 oficjalne certyfikaty potwierdzające najwyższe kompetencje w sprzedaży i serwisie.
+              </p>
             </div>
+          </div>
+
+          {/* Loga certyfikatów pod boxem — z tooltipami dokumentów */}
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 lg:gap-6 mt-6 lg:mt-8">
+            {[
+              { badge: '/images/certyfikat-1-zebra.png', doc: '/images/Certyfikaty/Repair_Specialist.png', alt: 'Zebra Printer Repair Specialist — certyfikat autoryzowanego serwisu TAKMA', title: 'Certyfikat Printer Repair Specialist' },
+              { badge: '/images/certyfikat-2-zebra.png', doc: '/images/Certyfikaty/Public_sector_specialist.png', alt: 'Zebra Public Sector Specialist — certyfikat specjalisty sektora publicznego TAKMA', title: 'Certyfikat Public Sector Specialist' },
+              { badge: '/images/certyfikat-3-zebra.png', doc: '/images/Certyfikaty/Premier.png', alt: 'Zebra Premier Solution Partner — certyfikat partnerstwa TAKMA', title: 'Certyfikat Premier Solution Partner' },
+            ].map((cert) => (
+              <div key={cert.badge} className="group relative bg-white rounded-xl px-4 py-3 shadow-sm cursor-pointer" itemScope itemType="https://schema.org/EducationalOccupationalCredential">
+                <meta itemProp="credentialCategory" content="Autoryzacja producenta" />
+                <meta itemProp="name" content={cert.title} />
+                <span itemProp="recognizedBy" itemScope itemType="https://schema.org/Organization">
+                  <meta itemProp="name" content="Zebra Technologies" />
+                </span>
+                <Image
+                  src={cert.badge}
+                  alt={cert.alt}
+                  width={200}
+                  height={80}
+                  className="h-10 sm:h-12 lg:h-14 w-auto object-contain"
+                  itemProp="image"
+                />
+                {/* Tooltip z dokumentem certyfikatu — tylko desktop */}
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-[480px] hidden lg:block opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pointer-events-none">
+                  <div className="bg-white rounded-xl shadow-2xl border border-gray-200 p-3">
+                    <p className="text-sm font-semibold text-gray-700 mb-2 text-center">{cert.title}</p>
+                    <Image
+                      src={cert.doc}
+                      alt={`Dokument: ${cert.title}`}
+                      width={600}
+                      height={420}
+                      className="w-full h-auto rounded-lg"
+                    />
+                  </div>
+                  <div className="w-3 h-3 bg-white border-b border-r border-gray-200 rotate-45 absolute -bottom-1.5 left-1/2 -translate-x-1/2" />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -428,15 +461,24 @@ export default function HomePage() {
               <Link
                 key={ind.href}
                 href={ind.href}
-                className={`group bento-card p-4 lg:p-6 flex flex-col reveal reveal-delay-${Math.min(i + 1, 5)}`}
+                className={`group bento-card p-4 lg:p-6 flex flex-col relative overflow-hidden reveal reveal-delay-${Math.min(i + 1, 5)}`}
               >
-                <h3 className="font-semibold text-gray-900 group-hover:text-primary-600 transition-colors text-xs md:text-sm lg:text-base mb-1">
+                {ind.image && (
+                  <Image
+                    src={ind.image}
+                    alt=""
+                    fill
+                    className="object-cover opacity-[0.12] group-hover:opacity-[0.40] transition-opacity duration-500"
+                    style={{ objectPosition: ind.imagePos || 'center', transform: ind.imageScale ? `scale(${ind.imageScale})` : undefined }}
+                  />
+                )}
+                <h3 className="relative font-semibold text-gray-900 group-hover:text-primary-600 transition-colors text-xs md:text-sm lg:text-base mb-1">
                   {ind.name}
                 </h3>
-                <p className="text-[11px] md:text-xs lg:text-sm text-gray-500 leading-relaxed">
+                <p className="relative text-[11px] md:text-xs lg:text-sm text-gray-500 leading-relaxed">
                   {ind.desc}
                 </p>
-                <span className="text-xs font-medium text-primary-600 mt-3 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                <span className="relative text-xs font-medium text-primary-600 mt-3 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
                   Zobacz rozwiązania
                   <ArrowRightIcon size={12} />
                 </span>
@@ -447,7 +489,7 @@ export default function HomePage() {
       </section>
 
       {/* ── S7: Zaufali nam ── */}
-      <section className="py-8 lg:py-14 bg-gray-50">
+      <section className="py-8 lg:py-14 bg-white">
         <div className="container-main">
           <h2 className="text-center text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight mb-5 lg:mb-8">
             Zaufali nam
@@ -512,41 +554,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── S9: CTA ── */}
-      <section className="relative overflow-hidden bg-gray-950 text-white">
-        <div className="absolute inset-0 bg-gradient-mesh-dark" />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-500/20 to-transparent" />
-
-        <div className="container-main relative py-10 lg:py-24 text-center">
-          <h2 className="text-xl md:text-2xl lg:text-4xl font-bold tracking-tight mb-3 lg:mb-4 text-balance">
-            Doradzimy i dobierzemy urządzenie
-          </h2>
-          <p className="text-gray-400 max-w-lg mx-auto mb-6 lg:mb-8 leading-relaxed text-sm lg:text-base">
-            Bezpłatne doradztwo techniczne, 25&nbsp;lat doświadczenia i&nbsp;indywidualna oferta
-            dopasowana do Twoich potrzeb. Porozmawiajmy.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/kontakt">
-              <Button
-                size="lg"
-                variant="ghost"
-                className="!bg-white !text-gray-900 hover:!bg-gray-100 font-semibold px-8"
-              >
-                Porozmawiajmy
-              </Button>
-            </Link>
-            <Link href="/katalog">
-              <Button
-                size="lg"
-                variant="ghost"
-                className="!text-gray-300 hover:!text-white hover:!bg-white/[0.06] !border !border-white/[0.1]"
-              >
-                Przeglądaj produkty
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
     </>
   )
 }

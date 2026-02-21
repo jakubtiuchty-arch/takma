@@ -40,17 +40,17 @@ export function ZebraAuthorizedBanner() {
                 Jako oficjalny i autoryzowany serwis marki Zebra w Polsce, oferujemy najwyższy standard obsługi, oryginalne części zamienne oraz błyskawiczny czas reakcji.
               </p>
 
-              <div className="mt-6 sm:mt-8 flex flex-wrap gap-2 sm:gap-3">
-                <span className="inline-flex items-center rounded-full bg-[#0A1A2F]/10 px-3 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm font-bold text-[#0A1A2F] border border-[#0A1A2F]/20">
+              <div className="mt-6 sm:mt-8 grid grid-cols-2 sm:flex sm:flex-wrap gap-2 sm:gap-3">
+                <span className="inline-flex items-center justify-center rounded-full bg-[#0A1A2F]/10 px-3 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm font-bold text-[#0A1A2F] border border-[#0A1A2F]/20">
                   Naprawy gwarancyjne
                 </span>
-                <span className="inline-flex items-center rounded-full bg-[#0A1A2F]/10 px-3 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm font-bold text-[#0A1A2F] border border-[#0A1A2F]/20">
+                <span className="inline-flex items-center justify-center rounded-full bg-[#0A1A2F]/10 px-3 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm font-bold text-[#0A1A2F] border border-[#0A1A2F]/20">
                   Serwis pogwarancyjny
                 </span>
-                <span className="inline-flex items-center rounded-full bg-[#0A1A2F]/10 px-3 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm font-bold text-[#0A1A2F] border border-[#0A1A2F]/20">
+                <span className="inline-flex items-center justify-center rounded-full bg-[#0A1A2F]/10 px-3 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm font-bold text-[#0A1A2F] border border-[#0A1A2F]/20">
                   Oryginalne części
                 </span>
-                <span className="inline-flex items-center rounded-full bg-[#0A1A2F]/10 px-3 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm font-bold text-[#0A1A2F] border border-[#0A1A2F]/20">
+                <span className="inline-flex items-center justify-center rounded-full bg-[#0A1A2F]/10 px-3 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm font-bold text-[#0A1A2F] border border-[#0A1A2F]/20">
                   Kontrakty OneCare
                 </span>
               </div>
@@ -80,9 +80,9 @@ export function ZebraAuthorizedBanner() {
         </div>
 
         {/* Linki do artykułów serwis-zebry.pl — badge'e pod boxem */}
-        <div className="mt-8">
+        <div className="mt-8 text-center">
           <p className="text-sm font-medium text-gray-500 mb-4">Baza wiedzy Zebra na serwis-zebry.pl:</p>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <div className="flex flex-wrap justify-center gap-2">
             {zebraLinks.map((link) => (
               <a
                 key={link.href}
