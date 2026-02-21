@@ -82,28 +82,6 @@ const industries = [
   },
 ]
 
-/* ── Opinie klientów ── */
-const testimonials = [
-  {
-    quote: 'Współpracujemy z TAKMA od ponad 10 lat. Zawsze szybka dostawa, a doradztwo techniczne na najwyższym poziomie — pomagają dobrać rozwiązanie, nie tylko sprzedać sprzęt.',
-    author: 'Marek K.',
-    role: 'Kierownik IT',
-    company: 'Firma logistyczna, Wrocław',
-  },
-  {
-    quote: 'Przeszliśmy na drukarki Zebra z pomocą TAKMA. Serwis pogwarancyjny działa błyskawicznie — diagnostyka w 48h, naprawa w tydzień. Polecam każdej firmie.',
-    author: 'Anna S.',
-    role: 'Specjalista ds. magazynu',
-    company: 'Dystrybutor FMCG, Poznań',
-  },
-  {
-    quote: 'Potrzebowaliśmy terminali do inwentaryzacji w 200 sklepach. TAKMA dobrała sprzęt, skonfigurowała i dostarczyła w 3 dni. Profesjonalizm od A do Z.',
-    author: 'Tomasz W.',
-    role: 'Dyrektor operacyjny',
-    company: 'Sieć handlowa, Warszawa',
-  },
-]
-
 /* ── FAQ — zoptymalizowane pod AEO (Position Zero), multi-brand ── */
 const homepageFaq = [
   {
@@ -499,49 +477,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── S8: Opinie klientów ── */}
-      <section className="py-14 lg:py-20">
-        <div className="container-main">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight">
-              Co mówią nasi klienci
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {testimonials.map((t, i) => (
-              <div
-                key={i}
-                className={`bento-card p-6 lg:p-7 flex flex-col reveal reveal-delay-${Math.min(i + 1, 5)}`}
-              >
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, s) => (
-                    <svg key={s} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                <p className="text-sm text-gray-600 leading-relaxed mb-5 flex-1 italic">
-                  &ldquo;{t.quote}&rdquo;
-                </p>
-                <div>
-                  <p className="font-semibold text-gray-900 text-sm">{t.author}</p>
-                  <p className="text-xs text-gray-500">{t.role}, {t.company}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── S9: FAQ ── */}
+      {/* ── S8: FAQ ── */}
       <section className="py-14 lg:py-20 bg-gray-50">
         <div className="container-main">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl lg:text-2xl font-semibold text-gray-400 tracking-tight text-center mb-2">
-              Najczęściej zadawane pytania
-            </h2>
-            <p className="text-gray-500 mb-8 text-center">
+          <details className="group max-w-3xl mx-auto">
+            <summary className="flex items-center justify-center gap-3 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <h2 className="text-xl lg:text-2xl font-semibold text-gray-400 tracking-tight">
+                Najczęściej zadawane pytania
+              </h2>
+              <ChevronRightIcon
+                size={24}
+                className="text-gray-400 flex-shrink-0 transition-transform group-open:rotate-90 mt-1"
+              />
+            </summary>
+
+            <p className="text-gray-500 mt-2 mb-8 text-center">
               Odpowiedzi na pytania, które najczęściej słyszymy od klientów
             </p>
 
@@ -564,11 +514,11 @@ export default function HomePage() {
                 </details>
               ))}
             </div>
-          </div>
+          </details>
         </div>
       </section>
 
-      {/* ── S10: CTA ── */}
+      {/* ── S9: CTA ── */}
       <section className="relative overflow-hidden bg-gray-950 text-white">
         <div className="absolute inset-0 bg-gradient-mesh-dark" />
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-500/20 to-transparent" />
