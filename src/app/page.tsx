@@ -249,11 +249,11 @@ export default function HomePage() {
       <Hero />
 
       {/* ── S2: Pasek logów producentów ── */}
-      <section className="border-b border-gray-100 py-5 lg:py-6">
+      <section className="border-b border-gray-100 py-3 lg:py-6">
         <div className="container-main">
-          <div className="flex items-center justify-between gap-4 overflow-x-auto scrollbar-hide">
+          <div className="flex items-center justify-between gap-3 lg:gap-4 overflow-x-auto scrollbar-hide">
             {partnerLogos.map((partner) => (
-              <div key={partner.name} className="h-7 lg:h-8 flex-shrink-0 flex items-center grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+              <div key={partner.name} className="h-5 md:h-7 lg:h-8 flex-shrink-0 flex items-center grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
                 <Image
                   src={partner.logo}
                   alt={partner.name}
@@ -268,10 +268,10 @@ export default function HomePage() {
       </section>
 
       {/* ── S3: Bestsellery (dynamiczne) ── */}
-      <section className="py-10 lg:py-14">
+      <section className="py-8 lg:py-14">
         <div className="container-main">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight">
+          <div className="flex items-center justify-between mb-5 lg:mb-8">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight">
               Bestsellery
             </h2>
             <Link
@@ -283,7 +283,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
             {bestsellers.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
@@ -292,20 +292,20 @@ export default function HomePage() {
       </section>
 
       {/* ── S4: Dlaczego TAKMA? + Certyfikaty Zebra ── */}
-      <section className="py-16 lg:py-24 bg-gray-50 relative">
+      <section className="py-10 lg:py-24 bg-gray-50 relative">
         <div className="absolute inset-0 bg-gradient-mesh opacity-50" />
 
         <div className="container-main relative">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight">
+          <div className="text-center mb-8 lg:mb-12">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight">
               Dlaczego TAKMA?
             </h2>
-            <p className="text-gray-500 mt-2 max-w-lg mx-auto">
+            <p className="text-gray-500 mt-1.5 md:mt-2 max-w-lg mx-auto text-sm md:text-base">
               Kompleksowe rozwiązania AutoID z profesjonalnym wsparciem
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 mb-8 lg:mb-12">
             {[
               {
                 image: '/images/about/doswiadczenie.png',
@@ -330,30 +330,30 @@ export default function HomePage() {
             ].map((item, i) => (
               <div
                 key={i}
-                className={`bento-card p-6 lg:p-7 flex flex-col reveal reveal-delay-${Math.min(i + 1, 5)}`}
+                className={`bento-card p-4 lg:p-7 flex flex-col reveal reveal-delay-${Math.min(i + 1, 5)}`}
               >
-                <div className="w-[72px] h-[72px] mb-5">
-                  <Image src={item.image} alt={item.title} width={72} height={72} className="object-contain mix-blend-multiply" />
+                <div className="w-12 h-12 lg:w-[72px] lg:h-[72px] mb-3 lg:mb-5">
+                  <Image src={item.image} alt={item.title} width={72} height={72} className="w-full h-full object-contain mix-blend-multiply" />
                 </div>
-                <h3 className="font-bold text-gray-900 text-base mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+                <h3 className="font-bold text-gray-900 text-sm lg:text-base mb-1 lg:mb-2">{item.title}</h3>
+                <p className="text-xs lg:text-sm text-gray-500 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
 
           {/* Certyfikaty Zebra */}
-          <div className="bg-white rounded-xl border p-6 lg:p-8" style={{ borderColor: '#A8F000' }}>
-            <h3 className="text-center text-sm font-semibold text-gray-500 uppercase tracking-wider mb-6">
+          <div className="bg-white rounded-xl border p-4 lg:p-8" style={{ borderColor: '#A8F000' }}>
+            <h3 className="text-center text-xs lg:text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4 lg:mb-6">
               Nasze certyfikaty Zebra Technologies
             </h3>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-5 sm:gap-12">
               <div className="text-center">
                 <Image
                   src="/images/certifications/zebra-premier-solution-partner.png"
                   alt="Zebra Premier Solution Partner — oficjalny certyfikat TAKMA"
                   width={220}
                   height={48}
-                  className="mx-auto"
+                  className="mx-auto max-w-[160px] lg:max-w-[220px]"
                 />
               </div>
               <div className="text-center">
@@ -362,7 +362,7 @@ export default function HomePage() {
                   alt="Zebra Public Sector Specialist — 1 z 4 firm w Polsce"
                   width={220}
                   height={48}
-                  className="mx-auto"
+                  className="mx-auto max-w-[160px] lg:max-w-[220px]"
                 />
               </div>
               <div className="text-center">
@@ -371,7 +371,7 @@ export default function HomePage() {
                   alt="Zebra Printer Repair Specialist — autoryzowany serwis TAKMA"
                   width={220}
                   height={48}
-                  className="mx-auto"
+                  className="mx-auto max-w-[160px] lg:max-w-[220px]"
                 />
               </div>
             </div>
@@ -380,18 +380,18 @@ export default function HomePage() {
       </section>
 
       {/* ── S5: Poradniki i baza wiedzy ── */}
-      <section className="py-14 lg:py-20">
+      <section className="py-8 lg:py-20">
         <div className="container-main">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight">
+          <div className="text-center mb-6 lg:mb-10">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight">
               Poradniki i baza wiedzy
             </h2>
-            <p className="text-gray-500 mt-2 max-w-lg mx-auto">
+            <p className="text-gray-500 mt-1.5 md:mt-2 max-w-lg mx-auto text-sm md:text-base">
               Praktyczna wiedza o drukarkach etykiet, terminali i technologiach AutoID
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
             {guides.slice(0, 3).map((guide, i) => (
               <Link
                 key={guide.slug}
@@ -418,13 +418,13 @@ export default function HomePage() {
       </section>
 
       {/* ── S6: Rozwiązania branżowe ── */}
-      <section className="py-14 lg:py-20 bg-gray-50">
+      <section className="py-8 lg:py-20 bg-gray-50">
         <div className="container-main">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight">
+          <div className="text-center mb-6 lg:mb-10">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight">
               Rozwiązania dla Twojej branży
             </h2>
-            <p className="text-gray-500 mt-2 max-w-lg mx-auto">
+            <p className="text-gray-500 mt-1.5 md:mt-2 max-w-lg mx-auto text-sm md:text-base">
               Dobieramy urządzenia AutoID dopasowane do specyfiki Twojego sektora
             </p>
           </div>
@@ -434,12 +434,12 @@ export default function HomePage() {
               <Link
                 key={ind.href}
                 href={ind.href}
-                className={`group bento-card p-5 lg:p-6 flex flex-col reveal reveal-delay-${Math.min(i + 1, 5)}`}
+                className={`group bento-card p-4 lg:p-6 flex flex-col reveal reveal-delay-${Math.min(i + 1, 5)}`}
               >
-                <h3 className="font-semibold text-gray-900 group-hover:text-primary-600 transition-colors text-sm lg:text-base mb-1.5">
+                <h3 className="font-semibold text-gray-900 group-hover:text-primary-600 transition-colors text-xs md:text-sm lg:text-base mb-1">
                   {ind.name}
                 </h3>
-                <p className="text-xs lg:text-sm text-gray-500 leading-relaxed">
+                <p className="text-[11px] md:text-xs lg:text-sm text-gray-500 leading-relaxed">
                   {ind.desc}
                 </p>
                 <span className="text-xs font-medium text-primary-600 mt-3 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -453,23 +453,23 @@ export default function HomePage() {
       </section>
 
       {/* ── S7: Zaufali nam ── */}
-      <section className="py-10 lg:py-14 bg-gray-50">
+      <section className="py-8 lg:py-14 bg-gray-50">
         <div className="container-main">
-          <h2 className="text-center text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight mb-8">
+          <h2 className="text-center text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight mb-5 lg:mb-8">
             Zaufali nam
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="grid grid-cols-3 lg:grid-cols-6 gap-3 lg:gap-6">
             {clientLogos.map((client) => (
               <div
                 key={client.alt}
-                className="bg-white rounded-xl border border-gray-100 h-20 lg:h-24 relative group hover:shadow-md transition-all"
+                className="bg-white rounded-xl border border-gray-100 h-16 lg:h-24 relative group hover:shadow-md transition-all"
               >
                 <Image
                   src={client.src}
                   alt={client.alt}
                   fill
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
-                  className="object-contain p-4 lg:p-5 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                  sizes="(max-width: 640px) 33vw, (max-width: 1024px) 33vw, 16vw"
+                  className="object-contain p-3 lg:p-5 lg:grayscale lg:opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
                 />
               </div>
             ))}
@@ -478,11 +478,11 @@ export default function HomePage() {
       </section>
 
       {/* ── S8: FAQ ── */}
-      <section className="py-14 lg:py-20 bg-gray-50">
+      <section className="py-8 lg:py-20 bg-gray-50">
         <div className="container-main">
           <details className="group max-w-3xl mx-auto">
             <summary className="flex items-center justify-center gap-3 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-              <h2 className="text-xl lg:text-2xl font-semibold text-gray-400 tracking-tight">
+              <h2 className="text-lg lg:text-2xl font-semibold text-gray-400 tracking-tight">
                 Najczęściej zadawane pytania
               </h2>
               <ChevronRightIcon
@@ -501,14 +501,14 @@ export default function HomePage() {
                   key={index}
                   className="group/item bg-white rounded-xl border border-gray-100 overflow-hidden"
                 >
-                  <summary className="flex items-center justify-between gap-4 p-5 cursor-pointer list-none font-medium text-gray-900 hover:bg-gray-50 transition-colors [&::-webkit-details-marker]:hidden">
+                  <summary className="flex items-center justify-between gap-3 p-4 lg:p-5 cursor-pointer list-none font-medium text-gray-900 hover:bg-gray-50 transition-colors [&::-webkit-details-marker]:hidden text-sm lg:text-base">
                     <span>{item.q}</span>
                     <ChevronRightIcon
                       size={20}
                       className="text-gray-400 flex-shrink-0 transition-transform group-open/item:rotate-90"
                     />
                   </summary>
-                  <div className="px-5 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-50 pt-4">
+                  <div className="px-4 pb-4 lg:px-5 lg:pb-5 text-gray-600 text-xs lg:text-sm leading-relaxed border-t border-gray-50 pt-3 lg:pt-4">
                     {item.a}
                   </div>
                 </details>
@@ -523,11 +523,11 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-mesh-dark" />
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-500/20 to-transparent" />
 
-        <div className="container-main relative py-16 lg:py-24 text-center">
-          <h2 className="text-2xl lg:text-4xl font-bold tracking-tight mb-4 text-balance">
+        <div className="container-main relative py-10 lg:py-24 text-center">
+          <h2 className="text-xl md:text-2xl lg:text-4xl font-bold tracking-tight mb-3 lg:mb-4 text-balance">
             Doradzimy i dobierzemy urządzenie
           </h2>
-          <p className="text-gray-400 max-w-lg mx-auto mb-8 leading-relaxed">
+          <p className="text-gray-400 max-w-lg mx-auto mb-6 lg:mb-8 leading-relaxed text-sm lg:text-base">
             Bezpłatne doradztwo techniczne, 25&nbsp;lat doświadczenia i&nbsp;indywidualna oferta
             dopasowana do Twoich potrzeb. Porozmawiajmy.
           </p>

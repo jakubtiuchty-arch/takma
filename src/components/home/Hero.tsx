@@ -61,7 +61,7 @@ export default function Hero() {
   const slide = slides[current]
 
   return (
-    <section className="relative overflow-hidden w-full h-[340px] md:h-[420px] lg:h-[520px] bg-gray-950">
+    <section className="relative overflow-hidden w-full h-[300px] md:h-[420px] lg:h-[520px] bg-gray-950">
       {/* Tło — gradient mesh dla info, obrazek dla produktu */}
       <div className="absolute inset-0 bg-gradient-mesh-dark" />
 
@@ -100,16 +100,16 @@ export default function Hero() {
         >
           {slide.type === 'info' ? (
             <>
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.06] border border-white/[0.08] text-sm text-[#A8F000] font-medium mb-5">
-                <span className="w-2 h-2 rounded-full bg-[#A8F000]" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 md:px-4 md:py-1.5 rounded-full bg-white/[0.06] border border-white/[0.08] text-xs md:text-sm text-[#A8F000] font-medium mb-3 md:mb-5">
+                <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#A8F000]" />
                 Od 2001 roku
               </div>
 
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-5 text-balance leading-[1.1]">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-3 md:mb-5 text-balance leading-[1.15]">
                 Drukarki etykiet, terminale mobilne i&nbsp;skanery kodów kreskowych
               </h1>
 
-              <p className="text-base lg:text-lg text-gray-400 max-w-xl mb-7 leading-relaxed">
+              <p className="text-sm md:text-base lg:text-lg text-gray-400 max-w-xl mb-5 md:mb-7 leading-relaxed">
                 Autoryzowany dystrybutor Zebra, Honeywell, Datalogic i&nbsp;innych czołowych marek.
                 Doradztwo, sprzedaż i&nbsp;serwis urządzeń AutoID dla firm w&nbsp;całej Polsce.
               </p>
@@ -137,15 +137,15 @@ export default function Hero() {
             </>
           ) : (
             <>
-              <p className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-2">
+              <p className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-2">
                 {slide.name}
               </p>
-              <div className="text-white/70 mb-5">
-                <span className="text-sm">od </span>
-                <span className="text-2xl lg:text-3xl font-bold text-white">
+              <div className="text-white/70 mb-4 md:mb-5">
+                <span className="text-xs md:text-sm">od </span>
+                <span className="text-xl md:text-2xl lg:text-3xl font-bold text-white">
                   {slide.priceFrom.toLocaleString('pl-PL')} zł
                 </span>
-                <span className="text-sm"> netto</span>
+                <span className="text-xs md:text-sm"> netto</span>
               </div>
               <Link href={`/produkt/${slide.slug}`}>
                 <Button
