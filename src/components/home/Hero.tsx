@@ -61,7 +61,7 @@ export default function Hero() {
   const slide = slides[current]
 
   return (
-    <section className="relative overflow-hidden w-full h-[300px] md:h-[420px] lg:h-[520px] bg-gray-950">
+    <section className="relative overflow-hidden w-full h-[400px] md:h-[420px] lg:h-[520px] bg-gray-950">
       {/* Tło — gradient mesh dla info, obrazek dla produktu */}
       <div className="absolute inset-0 bg-gradient-mesh-dark" />
 
@@ -109,7 +109,7 @@ export default function Hero() {
                 Drukarki etykiet, terminale mobilne i&nbsp;skanery kodów kreskowych
               </h1>
 
-              <p className="text-sm md:text-base lg:text-lg text-gray-400 max-w-xl mb-5 md:mb-7 leading-relaxed">
+              <p className="text-sm md:text-base lg:text-lg text-gray-400 max-w-xl mb-4 md:mb-7 leading-relaxed">
                 Autoryzowany dystrybutor Zebra, Honeywell, Datalogic i&nbsp;innych czołowych marek.
                 Doradztwo, sprzedaż i&nbsp;serwis urządzeń AutoID dla firm w&nbsp;całej Polsce.
               </p>
@@ -163,7 +163,7 @@ export default function Hero() {
       </div>
 
       {/* Dots */}
-      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2.5">
+      <div className="absolute bottom-3 md:bottom-5 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2.5">
         {slides.map((_, i) => (
           <button
             key={i}
