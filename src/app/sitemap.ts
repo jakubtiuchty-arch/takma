@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/terminale-mobilne`, lastModified: lastUpdated },
     { url: `${baseUrl}/o-nas`, lastModified: new Date('2025-12-01') },
     { url: `${baseUrl}/kontakt`, lastModified: new Date('2025-12-01') },
+    { url: `${baseUrl}/serwis`, lastModified: lastUpdated },
     { url: `${baseUrl}/zapytanie`, lastModified: new Date('2025-12-01') },
     { url: `${baseUrl}/polityka-prywatnosci`, lastModified: new Date('2025-06-01') },
     { url: `${baseUrl}/regulamin`, lastModified: new Date('2026-02-17') },

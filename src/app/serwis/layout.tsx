@@ -1,13 +1,17 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Serwis drukarek etykiet i terminali AutoID | TAKMA',
-  description: 'Profesjonalny serwis urządzeń AutoID. Naprawa terminali mobilnych, skanerów i drukarek. Autoryzowany serwis Zebra. Obsługujemy Honeywell, Datalogic i inne.',
+  title: 'Serwis urządzeń AutoID — naprawa drukarek etykiet, terminali, skanerów | TAKMA Wrocław',
+  description: 'Profesjonalny serwis pogwarancyjny urządzeń AutoID. Darmowa diagnostyka w 48h. Naprawiamy: Honeywell, Datalogic, Brother, M3 Mobile, Newland. Autoryzowany serwis Zebra. Obsługa kurierska w całej Polsce.',
   openGraph: {
-    title: 'Serwis drukarek etykiet i terminali AutoID | TAKMA',
-    description: 'Profesjonalny serwis urządzeń AutoID. Naprawa terminali mobilnych, skanerów i drukarek. Autoryzowany serwis Zebra. Obsługujemy Honeywell, Datalogic i inne.',
+    title: 'Serwis urządzeń AutoID — naprawa drukarek etykiet, terminali, skanerów | TAKMA Wrocław',
+    description: 'Profesjonalny serwis pogwarancyjny urządzeń AutoID. Darmowa diagnostyka w 48h. Naprawiamy: Honeywell, Datalogic, Brother, M3 Mobile, Newland. Autoryzowany serwis Zebra. Obsługa kurierska w całej Polsce.',
     type: 'website',
-  }
+    url: 'https://takma.com.pl/serwis',
+  },
+  alternates: {
+    canonical: 'https://takma.com.pl/serwis',
+  },
 }
 
 export default function SerwisLayout({
@@ -15,55 +19,201 @@ export default function SerwisLayout({
 }: {
   children: React.ReactNode
 }) {
+  const faqEntries = [
+    {
+      name: "Dlaczego drukarka etykiet przepuszcza puste strony?",
+      text: "Najczęstszą przyczyną jest rozkalibrowany czujnik przerw (gap sensor), zabrudzenie czujnika lub użycie niewłaściwych materiałów eksploatacyjnych. Wymaga to autokalibracji sprzętu lub interwencji serwisu w celu naprawy optyki czujnika."
+    },
+    {
+      name: "Terminal mobilny (np. Honeywell) nie ładuje baterii",
+      text: "Przyczyną może być uszkodzenie złącza ładowania, wyeksploatowanie pinów w stacji dokującej lub zużycie baterii. Serwis mierzy rezystancję złącza i w razie potrzeby przelutowuje moduł zasilania."
+    },
+    {
+      name: "Skaner kodów pika, ale nie przesyła danych na ekran",
+      text: "Zazwyczaj problem konfiguracji — brakuje sufiksu (znaku przejścia do nowej linii). Można to naprawić skanując kod konfiguracyjny z instrukcji. W przypadku poważniejszych problemów z modułem komunikacji wymagany jest serwis."
+    },
+    {
+      name: "Drukarka wydrukowała etykietę z białymi, pionowymi pasami",
+      text: "Pionowe nienadrukowane linie oznaczają wypalone punkty grzewcze na głowicy drukującej. Usterka wymaga fizycznej wymiany głowicy. Dobieramy i wymieniamy głowice do drukarek termicznych i termotransferowych."
+    },
+    {
+      name: "Ekran dotykowy w tablecie przemysłowym nie reaguje na dotyk",
+      text: "Uszkodzenie digitizera następuje w wyniku upadku lub ekstremalnych temperatur. Naprawa polega na wymianie panelu LCD + Digitizer z oceną szczelności obudowy."
+    },
+    {
+      name: "Drukarka etykiet grzeje się i wyłącza w trakcie druku",
+      text: "Przegrzewanie może wskazywać na uszkodzony zasilacz, zablokowany wentylator lub nieaktualny firmware. Sprawdzamy napięcie zasilania, drożność wentylacji i aktualizujemy oprogramowanie."
+    },
+    {
+      name: "Terminal mobilny nie łączy się z siecią Wi-Fi",
+      text: "Problem może wynikać z uszkodzonego modułu WLAN, nieprawidłowej konfiguracji profilu sieci lub nieaktualnych sterowników radiowych. Diagnozujemy moduł antenowy i w razie potrzeby wymieniamy podzespół."
+    },
+    {
+      name: "Skaner kodów nie odczytuje kodów QR / 2D",
+      text: "Brak odczytu kodów 2D może wynikać z wyłączonej symbologii, zabrudzenia okna imager'a lub uszkodzenia modułu odczytującego. Diagnostyka serwisowa modułu imager."
+    },
+    {
+      name: "Ile trwa naprawa terminala magazynowego w TAKMA?",
+      text: "Standardowa diagnoza odbywa się w ciągu 48 godzin od dostarczenia urządzenia. Czas naprawy zależy od dostępności części, najczęściej nie przekracza 5-7 dni roboczych."
+    },
+    {
+      name: "Ile kosztuje naprawa drukarki etykiet?",
+      text: "Diagnostyka jest darmowa przy zleceniu naprawy. Orientacyjne ceny: wymiana głowicy biurkowej od 430 PLN netto, przemysłowej od 1 600 PLN netto, wałka dociskowego od 150 PLN netto, płyty głównej od 300 PLN netto."
+    },
+    {
+      name: "Czy naprawiacie urządzenia AutoID po gwarancji?",
+      text: "Tak, prowadzimy kompleksowe naprawy pogwarancyjne urządzeń marek Honeywell, Datalogic, Brother, M3 Mobile, Newland, Citizen i Godex. Jako autoryzowany serwis Zebra mamy bezpośredni dostęp do oryginalnych części."
+    },
+    {
+      name: "Czy naprawiacie urządzenia z całej Polski?",
+      text: "Tak, obsługujemy klientów z całej Polski. Urządzenie można dostarczyć osobiście do Wrocławia lub wysłać kurierem. Po naprawie odsyłamy sprzęt na nasz koszt (przy naprawach powyżej 200 PLN netto)."
+    },
+    {
+      name: "Czym różni się serwis gwarancyjny od pogwarancyjnego?",
+      text: "Serwis gwarancyjny pokrywa producent, my jako autoryzowany partner realizujemy naprawę. Serwis pogwarancyjny — klient pokrywa koszt naprawy i części, ale zyskuje naszą gwarancję 3-6 miesięcy."
+    },
+    {
+      name: "Jakie są najczęstsze usterki drukarek etykiet Zebra?",
+      text: "Najczęstsze usterki: zużyta głowica (białe pasy), rozkalibrowany czujnik przerw (puste etykiety), uszkodzony wałek dociskowy (nierówny nadruk), problem z zasilaczem i zużyte łożyska nawijaka taśmy."
+    },
+    {
+      name: "Co to jest kontrakt serwisowy Zebra OneCare?",
+      text: "Zebra OneCare to program rozszerzonych usług serwisowych producenta obejmujący naprawy gwarancyjne, wymianę urządzeń i wsparcie techniczne. Oferujemy sprzedaż i obsługę kontraktów OneCare Essential, Select i SV."
+    }
+  ]
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": ["LocalBusiness", "ProfessionalService"],
+        "@id": "https://takma.com.pl/#organization",
+        "name": "TAKMA Tadeusz Tiuchty",
+        "alternateName": "TAKMA",
+        "url": "https://takma.com.pl",
+        "logo": "https://takma.com.pl/images/logo.png",
+        "image": "https://takma.com.pl/images/hero_serwis.jpeg",
+        "description": "Profesjonalny serwis pogwarancyjny urządzeń AutoID — drukarek etykiet, terminali mobilnych i skanerów kodów kreskowych. Autoryzowany serwis Zebra Technologies.",
+        "telephone": "+48607819688",
+        "email": "takma@takma.com.pl",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ul. Poświęcka 1a",
+          "addressLocality": "Wrocław",
+          "postalCode": "51-128",
+          "addressRegion": "dolnośląskie",
+          "addressCountry": "PL"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 51.1385,
+          "longitude": 17.0578
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "07:30",
+          "closes": "15:30"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Polska"
+        },
+        "knowsAbout": [
+          "Naprawa drukarek etykiet",
+          "Serwis terminali mobilnych",
+          "Naprawa skanerów kodów kreskowych",
+          "Serwis urządzeń AutoID",
+          "Wymiana głowic drukujących",
+          "Kalibracja czujników drukarek"
+        ],
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Autoryzowany serwis",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Zebra Technologies"
+          }
+        },
+        "priceRange": "PLN"
+      },
+      {
         "@type": "Service",
         "serviceType": "Naprawa urządzeń AutoID i IT",
         "provider": {
-          "@type": "Organization",
-          "name": "TAKMA",
-          "url": "https://takma.pl"
+          "@id": "https://takma.com.pl/#organization"
         },
-        "areaServed": "PL",
-        "description": "Profesjonalny serwis pogwarancyjny drukarek etykiet, terminali mobilnych i skanerów kodów kreskowych (Honeywell, Datalogic, Brother, M3 Mobile)."
+        "areaServed": {
+          "@type": "Country",
+          "name": "Polska"
+        },
+        "description": "Profesjonalny serwis pogwarancyjny drukarek etykiet, terminali mobilnych i skanerów kodów kreskowych. Autoryzowany serwis Zebra Technologies. Naprawiamy: Honeywell, Datalogic, Brother, M3 Mobile, Newland, Citizen, Godex, TSC, Sato.",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Usługi serwisowe AutoID",
+          "itemListElement": [
+            {
+              "@type": "OfferCatalog",
+              "name": "Naprawa drukarek etykiet",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wymiana głowicy drukującej (biurkowe)", "description": "Wymiana głowicy w drukarkach biurkowych Zebra, Honeywell, Godex" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wymiana głowicy drukującej (przemysłowe)", "description": "Wymiana głowicy w drukarkach przemysłowych Zebra ZT, 105SL, Xi4" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wymiana wałka dociskowego", "description": "Wymiana platen roller w drukarkach termicznych i termotransferowych" } }
+              ]
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Naprawa terminali mobilnych",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Naprawa ekranu terminala", "description": "Wymiana LCD i digitizera w terminalach Zebra TC, MC, Honeywell CT, CK" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wymiana baterii", "description": "Wymiana baterii w terminalach mobilnych wszystkich marek" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Naprawa modułu Wi-Fi/WLAN", "description": "Diagnostyka i naprawa modułów komunikacji bezprzewodowej" } }
+              ]
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Naprawa skanerów kodów",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Naprawa modułu skanującego", "description": "Wymiana modułu imager/laser w skanerach ręcznych i stacjonarnych" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Naprawa płyty głównej", "description": "Diagnostyka i naprawa elektroniki skanerów kodów kreskowych" } }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Strona główna",
+            "item": "https://takma.com.pl"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Serwis",
+            "item": "https://takma.com.pl/serwis"
+          }
+        ]
       },
       {
         "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Dlaczego drukarka etykiet przepuszcza puste strony?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Najczęstszą przyczyną jest rozkalibrowany czujnik przerw (gap sensor) lub użycie niewłaściwych materiałów eksploatacyjnych. Wymaga to autokalibracji sprzętu lub interwencji serwisu w celu naprawy optyki czujnika."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Ile trwa naprawa terminala magazynowego w TAKMA?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Standardowa diagnoza sprzętu odbywa się w ciągu 48 godzin od dostarczenia urządzenia do naszego centrum serwisowego. Czas naprawy zależy od dostępności części, najczęściej nie przekracza 5-7 dni roboczych."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Czy naprawiacie urządzenia AutoID po gwarancji?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Tak, prowadzimy kompleksowe naprawy pogwarancyjne urządzeń marek takich jak Honeywell, Datalogic, Brother, M3 Mobile, Newland, Citizen i Godex."
-            }
+        "mainEntity": faqEntries.map(faq => ({
+          "@type": "Question",
+          "name": faq.name,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.text
           }
-        ]
+        }))
       }
     ]
   }
 
   return (
     <>
-      {/* Wstrzykiwanie danych strukturalnych dla AI i wyszukiwarek */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -52,9 +52,20 @@ TAKMA dostarcza rozwiązania AutoID dla przedsiębiorstw w całej Polsce:
 - Drukarki etykiet: https://takma.com.pl/drukarki-etykiet
 - Terminale mobilne: https://takma.com.pl/terminale-mobilne
 - Materiały eksploatacyjne: https://takma.com.pl/materialy-eksploatacyjne
+- Serwis i naprawa: https://takma.com.pl/serwis
 - Poradniki: https://takma.com.pl/poradnik
 - Kontakt: https://takma.com.pl/kontakt
 - O nas: https://takma.com.pl/o-nas
+
+## Serwis i naprawa urządzeń AutoID
+TAKMA prowadzi profesjonalny serwis pogwarancyjny urządzeń AutoID z siedzibą we Wrocławiu.
+- Autoryzowany serwis Zebra Technologies (serwis-zebry.pl)
+- Naprawiamy: Honeywell, Datalogic, Brother, M3 Mobile, Newland, Citizen, Godex, TSC, Sato
+- Darmowa diagnostyka w ciągu 48h od dostarczenia urządzenia
+- Standardowy czas naprawy: 5-7 dni roboczych
+- Gwarancja na naprawę: 3-6 miesięcy
+- Obsługa kurierska w całej Polsce
+- Cennik orientacyjny: diagnostyka gratis przy naprawie, wymiana głowicy biurkowej od 430 PLN, przemysłowej od 1600 PLN
 
 ## Poradniki
 - Jak wybrać drukarkę etykiet?: https://takma.com.pl/poradnik/jak-wybrac-drukarke-etykiet

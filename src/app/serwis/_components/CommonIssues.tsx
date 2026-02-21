@@ -20,6 +20,18 @@ const issues = [
   {
     question: "Ekran dotykowy w tablecie przemysłowym nie reaguje na dotyk",
     answer: "Uszkodzenie digitizera zazwyczaj następuje w wyniku upadku, uderzenia lub wystawienia na ekstremalne temperatury. Naprawa w naszym centrum serwisowym polega na wymianie przedniego panelu (LCD + Digitizer). Oceniamy również szczelność obudowy po wymianie."
+  },
+  {
+    question: "Drukarka etykiet grzeje się i wyłącza w trakcie druku",
+    answer: "Przegrzewanie drukarki może wskazywać na uszkodzony zasilacz, zablokowany wentylator chłodzący lub nieaktualny firmware powodujący nadmierne obciążenie procesora. W naszym serwisie sprawdzamy napięcie zasilania, drożność kanałów wentylacyjnych i aktualizujemy oprogramowanie urządzenia. W skrajnych przypadkach wymieniamy zasilacz lub moduł płyty głównej."
+  },
+  {
+    question: "Terminal mobilny nie łączy się z siecią Wi-Fi",
+    answer: "Problem z Wi-Fi w terminalu mobilnym może mieć kilka przyczyn: uszkodzony moduł WLAN, nieprawidłowa konfiguracja profilu sieci bezprzewodowej lub nieaktualne sterowniki radiowe. Zalecamy weryfikację ustawień w Fusion Settings (Zebra) lub WiFi Manager. Jeśli restart i rekonfiguracja nie pomagają, nasi inżynierowie diagnozują sprawność modułu antenowego i w razie potrzeby wymieniają podzespół."
+  },
+  {
+    question: "Skaner kodów nie odczytuje kodów QR / 2D",
+    answer: "Brak odczytu kodów 2D (QR, DataMatrix, PDF417) może wynikać z wyłączonej symbologii w konfiguracji skanera, zabrudzenia okna imager'a lub uszkodzenia samego modułu odczytującego. Najpierw sprawdź, czy dana symbologia jest aktywna w ustawieniach urządzenia. Jeśli czyszczenie okna skanera nie pomaga, wymagana jest diagnostyka serwisowa modułu imager."
   }
 ]
 
