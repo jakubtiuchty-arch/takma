@@ -10,7 +10,6 @@ import {
 import { ProductCard } from '@/components/product'
 import { categories, getBestsellers, getNewProducts } from '@/data/products'
 import { guides, guideCategoryLabels } from '@/data/guides'
-import AnimatedCounter from '@/components/about/AnimatedCounter'
 import Hero from '@/components/home/Hero'
 
 /* ── SEO Metadata ── */
@@ -46,6 +45,19 @@ const homepageCategoryIds = [
   'akcesoria',
   'drukarki-kart',
   'drukarki-opasek',
+]
+
+/* ── Loga producentów (reuse z /o-nas) ── */
+const partnerLogos = [
+  { name: 'Zebra Technologies', logo: '/images/partners/logo_zebra.png' },
+  { name: 'Honeywell', logo: '/images/partners/logo_honeywell.png' },
+  { name: 'Datalogic', logo: '/images/partners/logo_datalogic.png' },
+  { name: 'TSC', logo: '/images/partners/logo_tsc.png' },
+  { name: 'Citizen', logo: '/images/partners/logo_citizen.png' },
+  { name: 'Godex', logo: '/images/partners/logo-godex.png' },
+  { name: 'SATO', logo: '/images/partners/logo_sato.png' },
+  { name: 'Newland', logo: '/images/partners/logo_newland.png' },
+  { name: 'M3 Mobile', logo: '/images/partners/logo_m3mobile.png' },
 ]
 
 /* ── Loga klientów (reuse z /o-nas) ── */
@@ -229,26 +241,26 @@ export default function HomePage() {
       {/* ── S1: Hero ── */}
       <Hero />
 
-      {/* ── S2: Stats Bar ── */}
-      <section className="relative z-10 -mt-6 pb-8">
+      {/* ── S2: Pasek logów producentów ── */}
+      <section className="relative z-10 -mt-6 pb-6">
         <div className="container-main">
-          <div className="grid grid-cols-3 gap-3 lg:gap-5 max-w-3xl mx-auto">
-            {[
-              { end: 25, suffix: '+', label: 'lat na rynku', sublabel: 'od 2001 roku' },
-              { end: 5000, suffix: '+', label: 'zrealizowanych projektów', sublabel: 'dla firm w całej Polsce' },
-              { end: 9, suffix: '', label: 'marek w ofercie', sublabel: 'Zebra, Honeywell, Datalogic i inne' },
-            ].map((stat) => (
-              <div
-                key={stat.label}
-                className="bg-white rounded-2xl shadow-lg p-4 lg:p-6 text-center border border-gray-100"
-              >
-                <div className="text-2xl lg:text-4xl font-bold text-gray-900 mb-1">
-                  <AnimatedCounter end={stat.end} suffix={stat.suffix} />
+          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 px-6 py-5 lg:px-10 lg:py-6">
+            <p className="text-center text-xs font-medium text-gray-400 uppercase tracking-wider mb-4">
+              Autoryzowany dystrybutor
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-10">
+              {partnerLogos.map((partner) => (
+                <div key={partner.name} className="h-7 lg:h-9 flex items-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    width={120}
+                    height={36}
+                    className="h-full w-auto object-contain"
+                  />
                 </div>
-                <div className="text-gray-900 font-medium text-xs lg:text-sm">{stat.label}</div>
-                <div className="text-gray-400 text-[10px] lg:text-xs mt-0.5 hidden sm:block">{stat.sublabel}</div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
