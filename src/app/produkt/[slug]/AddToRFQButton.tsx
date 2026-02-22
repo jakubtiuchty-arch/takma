@@ -124,18 +124,29 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
 
   const inRFQ = mounted ? isInCart(product.id) : false
 
-  // Sprawdź czy produkt jest niedostępny wg Ingram
-  // Tylko jeśli Ingram faktycznie znalazł PN-y (found: true) — inaczej fallback na statyczną dostępność
-  const isUnavailable = !stockLoading && partNumbers.length > 0 && (() => {
-    let anyFound = false
-    for (const pn of partNumbers) {
-      const stock = stockData.get(pn)
-      if (stock?.found) {
-        anyFound = true
-        if (stock.totalStock > 0) return false
+  // Sprawdź czy produkt jest niedostępny
+  // 1. Jeśli Ingram znalazł PN (found: true) → użyj live danych (totalStock > 0 = available)
+  // 2. Jeśli Ingram NIE zna PN (found: false) i produkt BEZ wariantów → fallback na statyczną availability
+  // 3. Jeśli Ingram nie odpowiada i produkt MA warianty → pokaż koszyk (nie blokuj sprzedaży)
+  const hasVariants = product.variants && product.variants.length > 0
+  const isUnavailable = !stockLoading && (() => {
+    if (partNumbers.length > 0) {
+      let anyFound = false
+      for (const pn of partNumbers) {
+        const stock = stockData.get(pn)
+        if (stock?.found) {
+          anyFound = true
+          if (stock.totalStock > 0) return false
+        }
       }
+      if (anyFound) return true
     }
-    return anyFound
+    // Fallback na statyczną dostępność — tylko dla produktów bez wariantów (akcesoria)
+    // Produkty z wariantami mają osobną logikę w VariantsTable
+    if (!hasVariants) {
+      return product.availability === 'unavailable'
+    }
+    return false
   })()
 
   const handleAdd = () => {
