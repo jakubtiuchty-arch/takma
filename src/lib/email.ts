@@ -16,6 +16,7 @@ interface EmailOptions {
   to: string
   subject: string
   html: string
+  from?: string
   attachments?: { filename: string; content: Buffer }[]
 }
 
@@ -27,7 +28,7 @@ export async function sendEmail(options: EmailOptions): Promise<{ success: boole
 
   try {
     const { error } = await resend.emails.send({
-      from: 'TAKMA <zamowienia@takma.com.pl>',
+      from: options.from || 'TAKMA <takma@takma.com.pl>',
       to: options.to,
       subject: options.subject,
       html: options.html,
@@ -72,6 +73,7 @@ export async function sendOrderConfirmation(data: {
 }) {
   return sendEmail({
     to: data.customer.email,
+    from: 'TAKMA Zamówienia <zamowienia@takma.com.pl>',
     subject: `Potwierdzenie zamówienia ${data.orderNumber} — TAKMA`,
     html: buildOrderConfirmationEmail(data),
   })
@@ -80,6 +82,7 @@ export async function sendOrderConfirmation(data: {
 export async function sendProformaEmail(email: string, orderNumber: string, pdfBuffer: Buffer) {
   return sendEmail({
     to: email,
+    from: 'TAKMA Zamówienia <zamowienia@takma.com.pl>',
     subject: `Faktura pro forma ${orderNumber} — TAKMA`,
     html: buildProformaEmail({ orderNumber }),
     attachments: [{ filename: `proforma-${orderNumber}.pdf`, content: pdfBuffer }],
@@ -89,6 +92,7 @@ export async function sendProformaEmail(email: string, orderNumber: string, pdfB
 export async function sendShippingNotification(email: string, orderNumber: string, trackingNumber: string, carrierName: string) {
   return sendEmail({
     to: email,
+    from: 'TAKMA Zamówienia <zamowienia@takma.com.pl>',
     subject: `Zamówienie ${orderNumber} wysłane — TAKMA`,
     html: buildShippingNotificationEmail({ orderNumber, trackingNumber, carrierName }),
   })
@@ -117,6 +121,7 @@ export async function sendAdminNotification(data: {
   const adminEmail = process.env.ADMIN_EMAIL || 'takma@takma.com.pl'
   return sendEmail({
     to: adminEmail,
+    from: 'TAKMA Zamówienia <zamowienia@takma.com.pl>',
     subject: `[NOWE ZAMÓWIENIE] ${data.orderNumber} — ${data.totalBrutto.toFixed(2)} zł brutto`,
     html: buildAdminOrderNotificationEmail(data),
   })
