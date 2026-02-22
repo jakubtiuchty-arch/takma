@@ -1,21 +1,26 @@
 import { prisma } from './db'
 import { OrderStatus, PaymentMethod } from '@/generated/prisma/client'
 
-// Generate order number: TAK-2026-000001
+// Generate order number: YYYYMMDDHHmmss (e.g. 20260222220001)
 export async function generateOrderNumber(): Promise<string> {
-  const year = new Date().getFullYear()
-  const lastOrder = await prisma.order.findFirst({
-    where: { orderNumber: { startsWith: `TAK-${year}-` } },
-    orderBy: { createdAt: 'desc' },
-  })
+  const now = new Date()
+  const ts = [
+    now.getFullYear(),
+    String(now.getMonth() + 1).padStart(2, '0'),
+    String(now.getDate()).padStart(2, '0'),
+    String(now.getHours()).padStart(2, '0'),
+    String(now.getMinutes()).padStart(2, '0'),
+    String(now.getSeconds()).padStart(2, '0'),
+  ].join('')
 
-  let seq = 1
-  if (lastOrder) {
-    const lastSeq = parseInt(lastOrder.orderNumber.split('-')[2], 10)
-    seq = lastSeq + 1
+  // Sprawdź czy numer już istnieje (sekundy mogą się powtórzyć)
+  const existing = await prisma.order.findUnique({ where: { orderNumber: ts } })
+  if (existing) {
+    // Dodaj 1 sekundę
+    return ts.slice(0, -2) + String(parseInt(ts.slice(-2), 10) + 1).padStart(2, '0')
   }
 
-  return `TAK-${year}-${String(seq).padStart(6, '0')}`
+  return ts
 }
 
 // Find or create customer
