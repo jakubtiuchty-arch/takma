@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { ChevronRightIcon } from '@/components/ui/Icons'
 import { getIndustryPageBySlug, industryPages } from '@/data/industry-content'
 import { products } from '@/data/products'
@@ -135,12 +136,24 @@ export default function IndustryPage({ slug }: IndustryPageProps) {
         </nav>
 
         {/* Hero */}
-        <header className="bg-gradient-to-br from-primary-50 via-white to-primary-50/30 border-b border-gray-100">
-          <div className="container-main pt-8 pb-10">
-            <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-balance">
+        <header className={`relative border-b border-gray-100 overflow-hidden ${page.heroImage ? 'bg-gray-900' : 'bg-gradient-to-br from-primary-50 via-white to-primary-50/30'}`}>
+          {page.heroImage && (
+            <>
+              <Image
+                src={page.heroImage}
+                alt=""
+                fill
+                className="object-cover opacity-40" style={{ objectPosition: page.heroPosition || 'center center' }}
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-gray-900/70 to-gray-900/30" />
+            </>
+          )}
+          <div className="container-main pt-8 pb-10 relative z-10">
+            <h1 className={`text-3xl lg:text-4xl font-bold mb-4 text-balance ${page.heroImage ? 'text-white' : 'text-gray-900'}`}>
               {page.heroHeadline}
             </h1>
-            <p className="text-lg text-gray-600 max-w-3xl leading-relaxed">
+            <p className={`text-lg max-w-3xl leading-relaxed ${page.heroImage ? 'text-gray-200' : 'text-gray-600'}`}>
               {page.heroSubtext}
             </p>
           </div>

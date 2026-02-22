@@ -58,7 +58,7 @@ interface FormErrors {
 
 // ── Stale ────────────────────────────────────────────────────────
 
-const FREE_SHIPPING_THRESHOLD = 500 // netto PLN
+const FREE_SHIPPING_THRESHOLD = 1000 // netto PLN
 const SHIPPING_COST = 25 // netto PLN
 
 // ── Helpers ─────────────────────────────────────────────────────

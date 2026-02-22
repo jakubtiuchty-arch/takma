@@ -18,7 +18,7 @@ export function HeroService() {
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-3xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Kompleksowy Serwis Urządzeń AutoID i IT
+            Kompleksowy Serwis Urządzeń AutoID
           </h1>
           <p className="mt-4 inline-flex items-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 text-sm font-medium text-lime-300">
             Autoryzowany serwis Zebra Technologies | 25+ lat doświadczenia

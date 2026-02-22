@@ -274,6 +274,29 @@ export default function RFQDrawer() {
               </div>
             )}
 
+            {/* Darmowa dostawa */}
+            {subtotalNetto !== null && subtotalNetto >= 1000 ? (
+              <div className="flex items-center gap-2 text-sm text-green-700 bg-green-50 rounded-lg px-3 py-2">
+                <svg className="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="font-medium">Darmowa dostawa!</span>
+              </div>
+            ) : subtotalNetto !== null ? (
+              <div className="text-sm text-gray-600 pb-3 border-b border-gray-200">
+                <div className="flex justify-between mb-1.5">
+                  <span>Do darmowej dostawy brakuje</span>
+                  <span className="font-medium">{formatPrice(1000 - subtotalNetto)} zł</span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-1.5">
+                  <div
+                    className="bg-primary-600 h-1.5 rounded-full transition-all duration-300"
+                    style={{ width: `${Math.min((subtotalNetto / 1000) * 100, 100)}%` }}
+                  />
+                </div>
+              </div>
+            ) : null}
+
             <Link href="/zamowienie" onClick={closeDrawer}>
               <Button fullWidth rightIcon={<ArrowRightIcon size={18} />}>
                 Przejdź do zamówienia

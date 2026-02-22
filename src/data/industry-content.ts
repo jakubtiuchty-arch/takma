@@ -19,6 +19,8 @@ export interface IndustryPage {
   seoDescription: string
   heroHeadline: string
   heroSubtext: string
+  heroImage?: string
+  heroPosition?: string
   tags: ProductTag[] // which product tags to pull
   longDescription: string
   definition: { heading: string; content: string }
@@ -40,6 +42,8 @@ export const industryPages: IndustryPage[] = [
     seoDescription: 'Drukarki etykiet przemysłowych do produkcji 24/7. Zebra ZT411, ZT610, ZT620 z integracją MES/SAP. Praca 3-zmianowa, odporność na pył i wibracje. Od 2 081 zł netto.',
     heroHeadline: 'Drukarki etykiet do produkcji i linii produkcyjnych',
     heroSubtext: 'Przemysłowe drukarki etykiet Zebra zaprojektowane do pracy ciągłej 24/7 na liniach produkcyjnych. Integracja z MES, SAP i systemami SCADA. Odporność na pył, wibracje i temperatury od 5°C do 40°C. Szeroka gama modeli od kompaktowych ZT111 (od 2 081 zł netto) po high-endowe ZT620 (od 12 417 zł netto) z 6-calową głowicą drukującą.',
+    heroImage: '/images/produkcja.jpeg',
+    heroPosition: 'center 60%',
     tags: ['produkcja'] as ProductTag[],
     longDescription: `<p>Na linii produkcyjnej drukarka etykiet to element krytyczny — jej przestój zatrzymuje całą linię i obniża OEE. Dlatego drukarki Zebra z serii ZT zostały zaprojektowane do pracy ciągłej 24/7 w wymagających warunkach hali produkcyjnej.</p>
 <h3>Kluczowe wymagania produkcyjne</h3>
@@ -242,6 +246,8 @@ export const industryPages: IndustryPage[] = [
     seoDescription: 'Drukarki etykiet do sklepu internetowego i e-commerce: InPost, DPD, DHL, Allegro, Amazon. Zebra od 621 zł netto. Porównanie modeli, integracja z BaseLinker. Doradztwo TAKMA.',
     heroHeadline: 'Drukarki etykiet do sklepu internetowego i e-commerce',
     heroSubtext: 'Drukuj etykiety kurierskie InPost, DPD, DHL i UPS bezpośrednio z BaseLinker, Allegro i WMS. Modele Zebra od 621 zł netto — od małego sklepu internetowego po centra fulfillment obsługujące 10 000+ paczek dziennie.',
+    heroImage: '/images/ecommerce.png',
+    heroPosition: 'center 65%',
     tags: ['retail', 'logistyka'] as ProductTag[],
     longDescription: `<p>Drukarka etykiet to jedno z najbardziej opłacalnych urządzeń w sklepie internetowym — eliminuje drukowanie na A4, skraca pakowanie o 40–60% i redukuje błędy wysyłkowe. Każda paczka to co najmniej jedna etykieta, a przy zwrotach i fakturach ta liczba szybko rośnie.</p>
 <h3>Kluczowe wymagania sklepu internetowego i e-commerce</h3>
@@ -952,6 +958,8 @@ export const industryPages: IndustryPage[] = [
     seoDescription: 'Drukarki etykiet do magazynu i centrum logistycznego: integracja z WMS, pick-pack-ship, etykiety lokalizacyjne. Zebra od 621 zł netto. Wydajność 24/7 dla magazynów.',
     heroHeadline: 'Drukarki etykiet do magazynu i centrum logistycznego',
     heroSubtext: 'Przemysłowe i biurkowe drukarki etykiet Zebra do operacji magazynowych: etykiety lokalizacyjne, pick-lists, shipping labels, inwentaryzacja. Integracja z WMS, SAP EWM i systemami pick-by-label. Od kompaktowych ZD220d (621 zł netto) do high-performance ZT620 (12 417 zł) z wydajnością 24/7.',
+    heroImage: '/images/magazyn-dystrybucja.jpeg',
+    heroPosition: 'center 20%',
     tags: ['magazyn'] as ProductTag[],
     longDescription: `<p>Drukarka etykiet w magazynie to fundament sprawnej logistyki — od etykiet lokalizacyjnych i pick-listów, przez shipping labels kurierskie, po oznaczenia palet. W TAKMA oferujemy modele Zebra od 621 zł netto do 12 417 zł, z pełną integracją z WMS i ERP.</p>
 

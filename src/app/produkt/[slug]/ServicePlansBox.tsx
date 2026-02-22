@@ -1,9 +1,10 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import { PlusIcon, CheckIcon, ChevronDownIcon } from '@/components/ui/Icons'
 import { useCartStore } from '@/store/cartStore'
 import { ServicePlan } from '@/data/products'
+import { useStockData } from './StockInfo'
 
 interface ServicePlansBoxProps {
   plans: ServicePlan[]
@@ -11,10 +12,24 @@ interface ServicePlansBoxProps {
   productName: string
 }
 
+const MARGIN = 1.15
+
 export default function ServicePlansBox({ plans, productSlug, productName }: ServicePlansBoxProps) {
   const { addItem, isInCart } = useCartStore()
   const [mounted, setMounted] = useState(false)
   const [infoOpen, setInfoOpen] = useState(false)
+
+  const partNumbers = useMemo(() => plans.map(p => p.partNumber), [plans])
+  const { stockData, loading: priceLoading } = useStockData(partNumbers)
+
+  // Cena live z Ingram (ingramPrice × 1.15) lub fallback na statyczną
+  function getLivePrice(plan: ServicePlan): number {
+    const stock = stockData.get(plan.partNumber)
+    if (stock?.found && stock.ingramPrice) {
+      return Math.round(stock.ingramPrice * MARGIN * 100) / 100
+    }
+    return plan.priceNetto
+  }
 
   useEffect(() => {
     setMounted(true)
@@ -63,8 +78,8 @@ export default function ServicePlansBox({ plans, productSlug, productName }: Ser
               <div className="min-w-0">
                 <div className="flex items-baseline gap-2 flex-wrap">
                   <span className="text-xs font-semibold text-blue-700">{plan.duration}</span>
-                  <span className="text-lg font-bold text-gray-900">
-                    {plan.priceNetto.toLocaleString('pl-PL', { minimumFractionDigits: 2 })}
+                  <span className={`text-lg font-bold text-gray-900 ${priceLoading ? 'animate-pulse' : ''}`}>
+                    {getLivePrice(plan).toLocaleString('pl-PL', { minimumFractionDigits: 2 })}
                     <span className="text-xs font-normal text-gray-500 ml-1">zł netto</span>
                   </span>
                 </div>
@@ -99,8 +114,8 @@ export default function ServicePlansBox({ plans, productSlug, productName }: Ser
             return (
               <div key={plan.partNumber} className="bg-white rounded-lg border border-gray-200 p-3">
                 <p className="text-xs font-semibold text-blue-700 mb-0.5">{plan.duration}</p>
-                <p className="text-lg font-bold text-gray-900">
-                  {plan.priceNetto.toLocaleString('pl-PL', { minimumFractionDigits: 2 })}
+                <p className={`text-lg font-bold text-gray-900 ${priceLoading ? 'animate-pulse' : ''}`}>
+                  {getLivePrice(plan).toLocaleString('pl-PL', { minimumFractionDigits: 2 })}
                   <span className="text-xs font-normal text-gray-500 ml-1">zł netto</span>
                 </p>
                 <p className="text-xs text-gray-400 mb-2.5">{plan.partNumber}</p>

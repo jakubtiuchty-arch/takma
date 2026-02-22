@@ -1,11 +1,8 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Button } from '@/components/ui'
 import {
   ChevronRightIcon,
-  PhoneIcon,
-  MailIcon,
 } from '@/components/ui/Icons'
 import AnimatedCounter from '@/components/about/AnimatedCounter'
 
@@ -593,54 +590,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* S9: CTA kontaktowy */}
-      <section className="py-16 lg:py-24 bg-indigo-50/80 border-t border-indigo-100">
-        <div className="container-main text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Porozmawiajmy o Twoich potrzebach
-          </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Niezależnie czy szukasz jednej drukarki czy kompleksowego wdrożenia — chętnie
-            doradzimy i przygotujemy indywidualną ofertę.
-          </p>
-
-          {/* Kontakt bezpośredni */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
-            <a
-              href="tel:+48717817128"
-              className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
-            >
-              <PhoneIcon size={20} />
-              <span className="font-medium">+48 71 781 71 28</span>
-            </a>
-            <a
-              href="mailto:takma@takma.com.pl"
-              className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
-            >
-              <MailIcon size={20} />
-              <span className="font-medium">takma@takma.com.pl</span>
-            </a>
-          </div>
-
-          {/* Buttony */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/kontakt">
-              <Button size="lg">
-                Wyślij zapytanie
-              </Button>
-            </Link>
-            <Link href="/katalog">
-              <Button
-                size="lg"
-                variant="ghost"
-                className="text-gray-700 border-2 border-gray-300 hover:bg-gray-100"
-              >
-                Przeglądaj produkty
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
     </>
   )
 }
