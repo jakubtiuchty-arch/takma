@@ -395,17 +395,38 @@ export async function POST(request: NextRequest) {
 `
 
     // Wysyłka maili (nie blokuje odpowiedzi — fire and forget)
-    const emailItems = items.map(i => ({
-      name: i.productName,
-      quantity: i.quantity,
-      priceNetto: i.priceNetto,
-    }))
+    const emailData = {
+      orderNumber,
+      items: items.map(i => ({
+        name: i.productName,
+        partNumber: i.partNumber,
+        quantity: i.quantity,
+        priceNetto: i.priceNetto,
+        totalNetto: i.priceNetto * i.quantity,
+      })),
+      customer: {
+        firstName: customer.contactName?.split(' ')[0] || '',
+        lastName: customer.contactName?.split(' ').slice(1).join(' ') || '',
+        company: customer.company,
+        nip: customer.nip,
+        phone: customer.phone,
+        email: customer.email,
+        address: `${customer.street} ${customer.buildingNumber}, ${customer.postalCode} ${customer.city}`,
+        shippingAddress: null as string | null,
+      },
+      subtotalNetto,
+      vatAmount,
+      shippingNetto,
+      totalBrutto,
+      paymentMethod: 'PROFORMA',
+      customerNotes: notes || null,
+    }
 
-    sendOrderConfirmation(customer.email, orderNumber, emailItems, totalBrutto)
+    sendOrderConfirmation(emailData)
       .then(r => { if (!r.success) console.error('[Proforma] Błąd maila do klienta:', r.error) })
       .catch(err => console.error('[Proforma] Exception mail klient:', err))
 
-    sendAdminNotification(orderNumber, customer.email, totalBrutto, 'PROFORMA')
+    sendAdminNotification(emailData)
       .then(r => { if (!r.success) console.error('[Proforma] Błąd maila do admina:', r.error) })
       .catch(err => console.error('[Proforma] Exception mail admin:', err))
 

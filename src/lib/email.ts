@@ -50,11 +50,30 @@ export async function sendEmail(options: EmailOptions): Promise<{ success: boole
 }
 
 // Specific email functions
-export async function sendOrderConfirmation(email: string, orderNumber: string, items: { name: string; quantity: number; priceNetto: number }[], totalBrutto: number) {
+export async function sendOrderConfirmation(data: {
+  orderNumber: string
+  items: { name: string; partNumber?: string; quantity: number; priceNetto: number; totalNetto: number }[]
+  customer: {
+    firstName: string
+    lastName: string
+    company: string
+    nip?: string | null
+    phone?: string | null
+    email: string
+    address?: string | null
+    shippingAddress?: string | null
+  }
+  subtotalNetto: number
+  vatAmount: number
+  shippingNetto: number
+  totalBrutto: number
+  paymentMethod: string
+  customerNotes?: string | null
+}) {
   return sendEmail({
-    to: email,
-    subject: `Potwierdzenie zamówienia ${orderNumber} — TAKMA`,
-    html: buildOrderConfirmationEmail({ orderNumber, items, totalBrutto }),
+    to: data.customer.email,
+    subject: `Potwierdzenie zamówienia ${data.orderNumber} — TAKMA`,
+    html: buildOrderConfirmationEmail(data),
   })
 }
 
@@ -75,11 +94,30 @@ export async function sendShippingNotification(email: string, orderNumber: strin
   })
 }
 
-export async function sendAdminNotification(orderNumber: string, customerEmail: string, totalBrutto: number, paymentMethod: string) {
+export async function sendAdminNotification(data: {
+  orderNumber: string
+  customer: {
+    firstName: string
+    lastName: string
+    company: string
+    nip?: string | null
+    phone?: string | null
+    email: string
+    address?: string | null
+    shippingAddress?: string | null
+  }
+  items: { name: string; partNumber?: string; quantity: number; priceNetto: number; totalNetto: number }[]
+  subtotalNetto: number
+  vatAmount: number
+  shippingNetto: number
+  totalBrutto: number
+  paymentMethod: string
+  customerNotes?: string | null
+}) {
   const adminEmail = process.env.ADMIN_EMAIL || 'takma@takma.com.pl'
   return sendEmail({
     to: adminEmail,
-    subject: `[NOWE ZAMÓWIENIE] ${orderNumber} — ${totalBrutto.toFixed(2)} zł brutto`,
-    html: buildAdminOrderNotificationEmail({ orderNumber, customerEmail, totalBrutto, paymentMethod }),
+    subject: `[NOWE ZAMÓWIENIE] ${data.orderNumber} — ${data.totalBrutto.toFixed(2)} zł brutto`,
+    html: buildAdminOrderNotificationEmail(data),
   })
 }

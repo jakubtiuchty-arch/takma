@@ -46,25 +46,39 @@ export async function POST(request: NextRequest) {
         include: { items: true, customer: true },
       })
 
-      // Send confirmation email
-      await sendOrderConfirmation(
-        order.customer.email,
-        order.orderNumber,
-        order.items.map(i => ({
+      // Prepare email data
+      const emailData = {
+        orderNumber: order.orderNumber,
+        items: order.items.map(i => ({
           name: i.productName,
+          partNumber: i.partNumber,
           quantity: i.quantity,
           priceNetto: i.priceNetto / 100,
+          totalNetto: i.totalNetto / 100,
         })),
-        order.totalBrutto / 100
-      )
+        customer: {
+          firstName: order.customer.firstName,
+          lastName: order.customer.lastName,
+          company: order.customer.company,
+          nip: order.customer.nip,
+          phone: order.customer.phone,
+          email: order.customer.email,
+          address: order.customer.address,
+          shippingAddress: order.customer.shippingAddress,
+        },
+        subtotalNetto: order.subtotalNetto / 100,
+        vatAmount: order.vatAmount / 100,
+        shippingNetto: order.shippingNetto / 100,
+        totalBrutto: order.totalBrutto / 100,
+        paymentMethod: 'ONLINE',
+        customerNotes: order.customerNotes,
+      }
+
+      // Send confirmation email
+      await sendOrderConfirmation(emailData)
 
       // Notify admin
-      await sendAdminNotification(
-        order.orderNumber,
-        order.customer.email,
-        order.totalBrutto / 100,
-        'ONLINE'
-      )
+      await sendAdminNotification(emailData)
 
       // TODO: Trigger fulfillment via distributor API
       // await fulfillOrder(orderId)
