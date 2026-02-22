@@ -77,7 +77,7 @@ function emailHeader(opts: { title: string; subtitle?: string; accent: AccentCol
   return `
           <tr>
             <td align="center" style="padding:28px 32px 16px;background-color:#ffffff">
-              <img src="https://takma.com.pl/images/logo-takma.png" alt="TAKMA" width="180" style="display:block;max-width:180px;height:auto" />
+              <img src="https://takma.com.pl/images/takma_logo.png" alt="TAKMA" width="180" style="display:block;max-width:180px;height:auto" />
               <p style="margin:8px 0 0;font-size:13px;color:#6b7280;letter-spacing:0.3px">Autoryzowany dystrybutor urz&#261;dze&#324; AutoID</p>
             </td>
           </tr>
