@@ -110,6 +110,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
     description: subcategory.seoDescription,
     url: `https://takma.com.pl/${subcategory.slug}`,
     numberOfItems: products.length,
+    dateModified: '2026-02-22',
     mainEntity: {
       '@type': 'ItemList',
       itemListElement: products.map((p, i) => ({
@@ -118,6 +119,43 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
         url: `https://takma.com.pl/produkt/${p.slug}`,
       })),
     },
+  }
+
+  const faqJsonLd = content?.faq?.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: content.faq.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.answer,
+      },
+    })),
+  } : null
+
+  const howToJsonLd = content?.howToSteps?.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: `Jak wybrać i wdrożyć ${subcategory.name.toLowerCase()}`,
+    description: `Krok po kroku: wybór, konfiguracja i wdrożenie ${subcategory.name.toLowerCase()} w firmie.`,
+    step: content.howToSteps.map((step, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: step.name,
+      text: step.text,
+    })),
+  } : null
+
+  const speakableJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: subcategory.name,
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', '.definition-content', '.faq-section'],
+    },
+    url: `https://takma.com.pl/${subcategory.slug}`,
   }
 
   const productWord = products.length === 1
@@ -135,6 +173,22 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+      />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
+      {howToJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+        />
+      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
       />
 
       <div className="container-main py-8 lg:py-12">
@@ -288,7 +342,26 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                   </section>
                 )}
 
-                <section>
+                {content.howToSteps?.length > 0 && (
+                  <section>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Jak wybrać i wdrożyć {subcategory.name.toLowerCase()}?</h2>
+                    <ol className="space-y-4">
+                      {content.howToSteps.map((step, i) => (
+                        <li key={i} className="flex gap-4">
+                          <span className="flex-shrink-0 w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold mt-0.5">
+                            {i + 1}
+                          </span>
+                          <div>
+                            <h3 className="font-semibold text-gray-900 mb-1">{step.name}</h3>
+                            <p className="text-gray-600 text-sm leading-relaxed">{step.text}</p>
+                          </div>
+                        </li>
+                      ))}
+                    </ol>
+                  </section>
+                )}
+
+                <section className="faq-section">
                   <h2 className="text-2xl font-bold text-gray-900 mb-4">Najczęściej zadawane pytania</h2>
                   <div className="space-y-4">
                     {content.faq.map((f, i) => (
@@ -496,7 +569,26 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                     </section>
                   )}
 
-                  <section>
+                  {content.howToSteps?.length > 0 && (
+                    <section>
+                      <h2 className="text-2xl font-bold text-gray-900 mb-4">Jak wybrać i wdrożyć {subcategory.name.toLowerCase()}?</h2>
+                      <ol className="space-y-4">
+                        {content.howToSteps.map((step, i) => (
+                          <li key={i} className="flex gap-4">
+                            <span className="flex-shrink-0 w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold mt-0.5">
+                              {i + 1}
+                            </span>
+                            <div>
+                              <h3 className="font-semibold text-gray-900 mb-1">{step.name}</h3>
+                              <p className="text-gray-600 text-sm leading-relaxed">{step.text}</p>
+                            </div>
+                          </li>
+                        ))}
+                      </ol>
+                    </section>
+                  )}
+
+                  <section className="faq-section">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">Najczęściej zadawane pytania</h2>
                     <div className="space-y-4">
                       {content.faq.map((f, i) => (

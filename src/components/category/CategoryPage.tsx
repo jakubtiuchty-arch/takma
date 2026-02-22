@@ -62,6 +62,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
     description: category.seoDescription,
     url: `https://takma.com.pl/${category.slug}`,
     numberOfItems: products.length,
+    dateModified: '2026-02-22',
     mainEntity: {
       '@type': 'ItemList',
       itemListElement: products.map((p, i) => ({
@@ -70,6 +71,17 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
         url: `https://takma.com.pl/produkt/${p.slug}`,
       })),
     },
+  }
+
+  const speakableJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: category.name,
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', '.definition-content', '.faq-section'],
+    },
+    url: `https://takma.com.pl/${category.slug}`,
   }
 
   const productWord = products.length === 1
@@ -100,6 +112,10 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
         />
       )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
+      />
 
       <div className="container-main py-8 lg:py-12">
         {/* Breadcrumbs */}
@@ -195,7 +211,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
             {content && (
               <div className="mt-12 space-y-10">
                 {/* Definition */}
-                <section>
+                <section className="definition-content">
                   <h2 className="text-2xl font-bold text-gray-900 mb-3">{content.definition.heading}</h2>
                   <div className="text-gray-600 leading-relaxed space-y-3 sm:text-justify">
                     {content.definition.content.split('\n\n').map((paragraph, i) => (
@@ -308,7 +324,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
                 )}
 
                 {/* FAQ */}
-                <section>
+                <section className="faq-section">
                   <h2 className="text-2xl font-bold text-gray-900 mb-4">Najczęściej zadawane pytania</h2>
                   <div className="space-y-4">
                     {content.faq.map((f, i) => (

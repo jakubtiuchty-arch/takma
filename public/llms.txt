@@ -50,6 +50,11 @@ TAKMA dostarcza rozwiązania AutoID dla przedsiębiorstw w całej Polsce:
 ## Kluczowe strony
 - Strona główna: https://takma.com.pl
 - Drukarki etykiet: https://takma.com.pl/drukarki-etykiet
+  - Biurkowe drukarki etykiet: https://takma.com.pl/biurkowe-drukarki-etykiet
+  - Przemysłowe drukarki etykiet: https://takma.com.pl/przemyslowe-drukarki-etykiet
+  - Termotransferowe drukarki etykiet: https://takma.com.pl/termotransferowe-drukarki-etykiet
+  - Termiczne drukarki etykiet: https://takma.com.pl/termiczne-drukarki-etykiet
+  - Mobilne drukarki etykiet: https://takma.com.pl/mobilne-drukarki-etykiet
 - Terminale mobilne: https://takma.com.pl/terminale-mobilne
 - Materiały eksploatacyjne: https://takma.com.pl/materialy-eksploatacyjne
 - Serwis i naprawa: https://takma.com.pl/serwis
@@ -79,6 +84,45 @@ TAKMA prowadzi profesjonalny serwis pogwarancyjny urządzeń AutoID z siedzibą 
 - Doradztwo techniczne — bezpłatna pomoc w doborze urządzenia niezależnie od producenta
 - 9 marek w ofercie: Zebra, Honeywell, Datalogic, TSC, Citizen, Godex, SATO, Newland, M3 Mobile
 - Zaufali nam: Lasy Państwowe, Orlen, Poczta Polska, Żabka, CBA, Wojsko Polskie
+
+## Drukarki etykiet — pełna oferta (26 modeli)
+
+### Biurkowe drukarki etykiet (10 modeli, od 640 zł netto)
+- Zebra ZD220d (termiczna, entry-level, od 650 zł): https://takma.com.pl/produkt/zebra-zd220d
+- Zebra ZD220t (termotransferowa, entry-level, od 639 zł): https://takma.com.pl/produkt/zebra-zd220t
+- Zebra ZD230d (termiczna, 152 mm/s, Ethernet opcja, od 1 087 zł): https://takma.com.pl/produkt/zebra-zd230d
+- Zebra ZD230t (termotransferowa, 152 mm/s, taśma 300 m, od 1 135 zł): https://takma.com.pl/produkt/zebra-zd230t
+- Zebra ZD411d (termiczna, Link-OS, 300 dpi opcja, od 1 238 zł): https://takma.com.pl/produkt/zebra-zd411d
+- Zebra ZD411t (termotransferowa, Link-OS, 300 dpi opcja, od 1 686 zł): https://takma.com.pl/produkt/zebra-zd411t
+- Zebra ZD421d (termiczna, 300 dpi, Wi-Fi opcja, od 1 472 zł): https://takma.com.pl/produkt/zebra-zd421d
+- Zebra ZD421t (termotransferowa, 300 dpi, Wi-Fi opcja, od 1 649 zł): https://takma.com.pl/produkt/zebra-zd421t
+- Zebra ZD621d (termiczna, premium, kolorowy LCD, od 1 944 zł): https://takma.com.pl/produkt/zebra-zd621d
+- Zebra ZD621t (termotransferowa, premium, kolorowy LCD, od 2 264 zł): https://takma.com.pl/produkt/zebra-zd621t
+
+### Przemysłowe drukarki etykiet (7 modeli, od 2 081 zł netto)
+- Zebra ZT111 (entry-level, 203 dpi, 203 mm/s, od 2 081 zł): https://takma.com.pl/produkt/zebra-zt111
+- Zebra ZT231 (mid-range, 203/300 dpi, 305 mm/s, od 2 551 zł): https://takma.com.pl/produkt/zebra-zt231
+- Zebra ZT411 (4", 203-600 dpi, 356 mm/s, od 5 132 zł): https://takma.com.pl/produkt/zebra-zt411
+- Zebra ZT421 (6", 203/300 dpi, 305 mm/s, od 9 416 zł): https://takma.com.pl/produkt/zebra-zt421
+- Zebra ZT510 (4", 203/300 dpi, produkcja, od 8 490 zł): https://takma.com.pl/produkt/zebra-zt510
+- Zebra ZT610 (4", 203-600 dpi, premium, od 10 432 zł): https://takma.com.pl/produkt/zebra-zt610
+- Zebra ZT620 (6", 203/300 dpi, premium, od 12 417 zł): https://takma.com.pl/produkt/zebra-zt620
+
+### Mobilne drukarki etykiet (9 modeli, od 576 zł netto)
+- Zebra ZQ220 Plus (2", Bluetooth, od 576 zł): https://takma.com.pl/produkt/zebra-zq220-plus
+- Zebra ZQ210 (2", Bluetooth, od 999 zł): https://takma.com.pl/produkt/zebra-zq210
+- Zebra ZQ310 Plus (2", Wi-Fi + BT, IP54, od 1 496 zł): https://takma.com.pl/produkt/zebra-zq310-plus
+- Zebra ZQ320 Plus (3", Wi-Fi + BT, IP54, od 1 713 zł): https://takma.com.pl/produkt/zebra-zq320-plus
+- Zebra ZQ511 (3", IP65, MIL-STD-810H, od 2 288 zł): https://takma.com.pl/produkt/zebra-zq511
+- Zebra ZQ521 (4", IP65, MIL-STD-810H, od 2 979 zł): https://takma.com.pl/produkt/zebra-zq521
+- Zebra ZQ610 Plus (2", healthcare/retail, od 3 256 zł): https://takma.com.pl/produkt/zebra-zq610-plus
+- Zebra ZQ620 Plus (3", healthcare/retail, od 3 622 zł): https://takma.com.pl/produkt/zebra-zq620-plus
+- Zebra ZQ630 Plus (4", healthcare/retail, od 4 257 zł): https://takma.com.pl/produkt/zebra-zq630-plus
+
+### Technologie druku
+- Termiczna (DT) — druk bezpośredni na papierze termoczułym, tańsza eksploatacja, etykiety blakną po 6-12 miesiącach
+- Termotransferowa (TT) — druk z taśmą barwiącą (ribbon), etykiety trwałe latami, odporne na UV, wodę i chemikalia
+- Porównanie szczegółowe: https://takma.com.pl/poradnik/drukarka-termiczna-vs-termotransferowa
 
 ## Terminale mobilne — pełna oferta
 - Zebra TC22 (Wi-Fi 6E, entry-level, od 2 417 zł): https://takma.com.pl/produkt/zebra-tc22

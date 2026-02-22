@@ -2894,7 +2894,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Printers/Desktop%20Printers/zd230/spec-sheet/zd230-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2025-06-01',
-    sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd200-series/zd220.html',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd200-series/zd230.html',
   },
   {
     id: 'zebra-zd220t',
@@ -3455,6 +3455,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Printers/Desktop%20Printers/zd230/spec-sheet/zd230-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     createdAt: '2025-06-01',
+    sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd200-series/zd230.html',
   },
   // ---- Drukarka opasek identyfikacyjnych ----
   {
