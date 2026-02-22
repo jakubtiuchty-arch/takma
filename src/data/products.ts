@@ -7667,6 +7667,7 @@ const mobileComputers: Product[] = [
     id: 'zebra-mc3300x',
     slug: 'zebra-mc3300x',
     name: 'Zebra MC3300x',
+    sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc3300x-series.html',
     shortDescription: 'Terminal mobilny z klawiaturą fizyczną i skanerem dalekiego zasięgu — do magazynów wysokiego składowania',
     description: `Dla kogo? Zebra MC3300x to wytrzymały terminal mobilny z fizyczną klawiaturą, zaprojektowany dla operatorów magazynów wysokiego składowania, centrów dystrybucyjnych, linii produkcyjnych i zakładów cross-dockingowych — wszędzie tam, gdzie szybkie wprowadzanie danych (numery partii, kody lokalizacji, ilości) wymaga klawiszy zamiast klawiatury ekranowej, a skanowanie kodów z górnych regałów (do 21 metrów) wymaga skanera dalekiego zasięgu.
 
@@ -8796,6 +8797,8 @@ Pakiet Mobility DNA Professional (w cenie urządzenia): DataWedge (skanowanie be
 
 Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC27. Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
+    subcategoryIds: ['terminale-mobilne'],
+    sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc22-tc27.html',
     manufacturerId: 'zebra',
     priceFrom: 2417,
     images: [
@@ -8805,10 +8808,10 @@ Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC27. Szczegółowa d
       '/images/products/tc22_scanner_4.png',
     ],
     imageDescriptions: [
-      'Zebra TC22 — widok z przodu',
-      'Zebra TC22 — widok z tyłu',
-      'Zebra TC22 — widok pod kątem',
-      'Zebra TC22 — widok z boku',
+      'Zebra TC22 — widok z przodu, ekran 6 cali FHD+ z Corning Gorilla Glass i logo Zebra',
+      'Zebra TC22 — widok z tyłu, kamera 16 MP i okno skanera SE4710/SE55',
+      'Zebra TC22 — widok pod kątem, ergonomiczna obudowa IP68 z przyciskiem skanera',
+      'Zebra TC22 — widok z boku, profil 12,5 mm z portem USB-C SuperSpeed',
     ],
     tags: ['retail', 'magazyn', 'healthcare'],
     availability: 'available',
@@ -8917,7 +8920,7 @@ Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC27. Szczegółowa d
       },
     ],
     faq: [
-      { question: 'Ile kosztuje Zebra TC22?', answer: 'Ceny Zebra TC22 zaczynają się od ok. 2 180 zł netto za podstawową konfigurację (SE4710, 6/64 GB, bateria 3 800 mAh). Warianty z rozszerzonym skanerem SE55 kosztują od ok. 2 672 zł netto, a topowa konfiguracja (SE55, 8/128 GB, RFID-ready, BLE) to ok. 3 252 zł netto. Ceny netto, dane z lutego 2026.' },
+      { question: 'Ile kosztuje Zebra TC22?', answer: 'Ceny Zebra TC22 zaczynają się od ok. 2 417 zł netto za podstawową konfigurację (SE4710, 6/64 GB, bateria 3 800 mAh). Warianty z rozszerzonym skanerem SE55 kosztują od ok. 2 963 zł netto, a topowa konfiguracja (SE55, 8/128 GB, RFID-ready, BLE) to ok. 3 606 zł netto. Ceny netto, dane z lutego 2026.' },
       { question: 'Czym różni się Zebra TC22 od TC27?', answer: 'TC22 i TC27 to bliźniacze urządzenia — identyczny procesor, ekran, skanery, wytrzymałość i akcesoria. Jedyna różnica: TC22 ma wyłącznie Wi-Fi 6/6E, a TC27 dodaje łączność 5G/4G LTE, dual SIM (nano + eSIM) i GPS/GNSS. TC22 wystarczy do pracy wewnątrz budynku (magazyn, sklep, szpital). TC27 jest konieczny dla pracowników terenowych bez dostępu do Wi-Fi (kurierzy, serwisanci).' },
       { question: 'Czym różni się skaner SE4710 od SE55?', answer: 'SE4710 to standardowy skaner 1D/2D z zasięgiem do 35 cm — wystarczający do skanowania produktów na poziomie ręki (retail, inwentaryzacja, apteka). SE55 Advanced Range skanuje kody od 10 cm do 7,6 m — odczytuje etykiety na wysokich regałach magazynowych bez drabiny. SE55 kosztuje ok. 400–500 zł więcej, ale w dużym magazynie oszczędza czas i eliminuje ryzyko pracy na wysokości.' },
       { question: 'Czy Zebra TC22 jest wodoodporny?', answer: 'Tak. TC22 ma podwójną klasę ochrony IP68 (pełna pyłoszczelność + zanurzenie do 1 m na 30 min) oraz IP65 (ochrona przed strumieniem wody). Dodatkowo certyfikacja MIL-STD-810H obejmuje testy upadków z 1,5 m na beton (z etui), 500 tumble z 0,5 m, szok termiczny i wilgotność 95%. Corning Gorilla Glass chroni wyświetlacz i okienko skanera.' },
@@ -8958,6 +8961,56 @@ Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC27. Szczegółowa d
       { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-TC22XX-3C00', duration: '3 lata', priceNetto: 1025.02 },
       { name: 'Zebra OneCare Essential — 5 lat', partNumber: 'Z1AE-TC22XX-5C00', duration: '5 lat', priceNetto: 1708.39 },
     ],
+    comparison: {
+      title: 'Porównanie: Zebra TC22 vs TC27 vs TC53e',
+      models: [
+        {
+          name: 'Zebra TC22',
+          specs: {
+            'Łączność': 'Wi-Fi 6/6E',
+            'Procesor': 'Qualcomm 5430, 2.1 GHz',
+            'Ekran': '6" FHD+ (1080×2160)',
+            'Skaner': 'SE4710 lub SE55',
+            'Odporność': 'IP68/IP65, upadki 1,5 m',
+            'Bateria': '3 800 / 5 200 mAh',
+            'RAM / Flash': '6/64 lub 8/128 GB',
+            'Android': 'Do Android 16',
+            'Waga': '236 g',
+            'Cena od': '2 417 zł netto',
+          },
+        },
+        {
+          name: 'Zebra TC27',
+          specs: {
+            'Łączność': 'Wi-Fi 6/6E + 5G/LTE + GPS',
+            'Procesor': 'Qualcomm 5430, 2.1 GHz',
+            'Ekran': '6" FHD+ (1080×2160)',
+            'Skaner': 'SE4710 lub SE55',
+            'Odporność': 'IP68/IP65, upadki 1,5 m',
+            'Bateria': '3 800 / 5 200 mAh',
+            'RAM / Flash': '6/64 lub 8/128 GB',
+            'Android': 'Do Android 16',
+            'Waga': '236 g',
+            'Cena od': '2 690 zł netto',
+          },
+        },
+        {
+          name: 'Zebra TC53e',
+          specs: {
+            'Łączność': 'Wi-Fi 6E',
+            'Procesor': 'Qualcomm 4490, 2.4 GHz',
+            'Ekran': '6" FHD+ (1080×2160)',
+            'Skaner': 'SE4720 lub SE55',
+            'Odporność': 'IP68/IP65, upadki 1,5 m',
+            'Bateria': '4 680 / 7 000 mAh',
+            'RAM / Flash': '6/64 lub 8/128 GB',
+            'Android': 'Do Android 17',
+            'Waga': '291 g',
+            'Cena od': '~4 500 zł netto',
+          },
+        },
+      ],
+    },
     createdAt: '2024-06-01',
   },
   {
@@ -8979,6 +9032,8 @@ Obudowa IP68/IP65 z certyfikacją MIL-STD-810H: upadki z 1,5 m na beton (z etui)
 
 Pakiet Mobility DNA Professional w cenie: DataWedge, StageNow, Device Tracker, LifeGuard™. Wersja Wi-Fi-only bez 5G: Zebra TC22. Szczegółowa dokumentacja na zebra.com i serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
+    subcategoryIds: ['terminale-mobilne'],
+    sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc22-tc27.html',
     manufacturerId: 'zebra',
     priceFrom: 2690,
     images: [
@@ -8988,10 +9043,10 @@ Pakiet Mobility DNA Professional w cenie: DataWedge, StageNow, Device Tracker, L
       '/images/products/tc22_scanner_4.png',
     ],
     imageDescriptions: [
-      'Zebra TC27 — widok z przodu',
-      'Zebra TC27 — widok z tyłu',
-      'Zebra TC27 — widok pod kątem',
-      'Zebra TC27 — widok z boku',
+      'Zebra TC27 — widok z przodu, ekran 6 cali FHD+ z modułem 5G/LTE i GPS',
+      'Zebra TC27 — widok z tyłu, kamera 16 MP, okno skanera i slot nano SIM',
+      'Zebra TC27 — widok pod kątem, obudowa IP68 z ergonomicznym profilem 12,5 mm',
+      'Zebra TC27 — widok z boku, port USB-C SuperSpeed i przycisk skanera',
     ],
     tags: ['logistyka', 'outdoor', 'retail'],
     availability: 'available',
@@ -9103,7 +9158,7 @@ Pakiet Mobility DNA Professional w cenie: DataWedge, StageNow, Device Tracker, L
       },
     ],
     faq: [
-      { question: 'Ile kosztuje Zebra TC27?', answer: 'Ceny Zebra TC27 zaczynają się od ok. 2 426 zł netto (SE4710, 6/64 GB, bateria 3 800 mAh). Warianty z rozszerzonym skanerem SE55 kosztują od ok. 2 918 zł, a topowa konfiguracja (SE55, 8/128 GB, RFID-ready, BLE) to ok. 3 498 zł netto. TC27 kosztuje ok. 200–250 zł więcej niż odpowiedni wariant TC22 z powodu modułu 5G/LTE. Ceny netto, dane z lutego 2026.' },
+      { question: 'Ile kosztuje Zebra TC27?', answer: 'Ceny Zebra TC27 zaczynają się od ok. 2 690 zł netto (SE4710, 6/64 GB, bateria 3 800 mAh). Warianty z rozszerzonym skanerem SE55 kosztują od ok. 3 236 zł, a topowa konfiguracja (SE55, 8/128 GB, RFID-ready, BLE) to ok. 3 879 zł netto. TC27 kosztuje ok. 270 zł więcej niż odpowiedni wariant TC22 z powodu modułu 5G/LTE. Ceny netto, dane z lutego 2026.' },
       { question: 'Czym różni się Zebra TC27 od TC22?', answer: 'TC27 dodaje do TC22 trzy moduły: 1) 5G FR1 + 4G LTE-A — stała łączność z systemami firmowymi poza zasięgiem Wi-Fi, 2) Dual SIM (nano + eSIM) — dwie karty operatorów jednocześnie, 3) GPS/GLONASS/Galileo/BeiDou z dwuzakresowym GNSS (L1+L5) — precyzyjna lokalizacja w terenie. Pozostałe parametry (procesor, ekran, skaner, wytrzymałość, akcesoria) są identyczne. Jeśli terminal nigdy nie opuszcza budynku → TC22 wystarczy.' },
       { question: 'Czy Zebra TC27 obsługuje 5G?', answer: 'Tak. TC27 obsługuje 5G FR1 (Sub-6 GHz) w trybie NSA (Non-Standalone) i SA (Standalone) z carrier aggregation. Gigabit LTE-A jako fallback. Obsługuje także prywatne sieci 5G i CBRS (USA). Dual SIM/Dual Standby: 1 nano SIM + 1 eSIM — możliwość korzystania z dwóch operatorów jednocześnie (np. roaming). VoLTE do połączeń głosowych.' },
       { question: 'Czy Zebra TC27 ma GPS?', answer: 'Tak. TC27 ma wbudowany odbiornik GNSS obsługujący: GPS, GLONASS, Galileo, BeiDou, QZSS z dwuzakresowym odbiorem (L1/G1/E1/B1 + L5/E5a/B2a) — precyzyjna lokalizacja nawet w zabudowie miejskiej. Wsparcie A-GPS z XTRA dla szybkiego startu lokalizacji. Idealne do rejestrowania tras kurierskich, czasu spędzonego u klienta i raportowania wizyt w CRM.' },
@@ -9144,6 +9199,56 @@ Pakiet Mobility DNA Professional w cenie: DataWedge, StageNow, Device Tracker, L
       { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-TC27XX-3C00', duration: '3 lata', priceNetto: 1025.02 },
       { name: 'Zebra OneCare Essential — 5 lat', partNumber: 'Z1AE-TC27XX-5C00', duration: '5 lat', priceNetto: 1708.39 },
     ],
+    comparison: {
+      title: 'Porównanie terminali 5G/LTE Zebra — TC27 vs TC58e vs TC78',
+      models: [
+        {
+          name: 'Zebra TC27',
+          specs: {
+            'Klasa': 'Entry-level 5G',
+            'Procesor': 'Qualcomm 5430, 2.1 GHz',
+            'Ekran': '6" FHD+ (1080×2160)',
+            'Skaner': 'SE4710 lub SE55',
+            'Odporność': 'IP68/IP65, upadki 1,5 m',
+            'Bateria': '3 800 / 5 200 mAh',
+            'Łączność': '5G FR1 + Wi-Fi 6E + GPS',
+            'Android': 'Do Android 16',
+            'Waga': '236 g',
+            'Cena od': '2 690 zł netto',
+          },
+        },
+        {
+          name: 'Zebra TC58e',
+          specs: {
+            'Klasa': 'Mid-range 5G Essential',
+            'Procesor': 'Qualcomm 4490, 2.4 GHz',
+            'Ekran': '6" FHD+ (1080×2160)',
+            'Skaner': 'SE4720 lub SE55',
+            'Odporność': 'IP68/IP65, upadki 1,5 m',
+            'Bateria': '4 680 / 7 000 mAh',
+            'Łączność': '5G FR1 + Wi-Fi 6E + GPS',
+            'Android': 'Do Android 17',
+            'Waga': '300 g',
+            'Cena od': '~5 500 zł netto',
+          },
+        },
+        {
+          name: 'Zebra TC78',
+          specs: {
+            'Klasa': 'Ultra-rugged 5G',
+            'Procesor': 'Qualcomm 6490, 2.7 GHz',
+            'Ekran': '6" FHD+ (1080×2160)',
+            'Skaner': 'SE4770 lub SE55',
+            'Odporność': 'IP68, upadki 3 m',
+            'Bateria': '4 680 / 7 000 mAh',
+            'Łączność': '5G FR1 + Wi-Fi 6E + GPS',
+            'Android': 'Do Android 16',
+            'Waga': '347 g',
+            'Cena od': '~9 500 zł netto',
+          },
+        },
+      ],
+    },
     createdAt: '2024-06-01',
   },
   {
@@ -9879,6 +9984,7 @@ Bluetooth 5.3, NFC, WiFi 6E 2×2 MU-MIMO, kamera 16 MP (tył) i 8 MP (przód), U
     id: 'zebra-tc501',
     slug: 'zebra-tc501',
     name: 'Zebra TC501',
+    sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc501.html',
     shortDescription: 'Terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6" AMOLED 1500 nit — następca TC52/TC53',
     description: `Dla kogo? Zebra TC501 to flagowy terminal mobilny nowej generacji, zaprojektowany jako następca TC52/TC53 dla firm, które potrzebują najnowszej technologii AI, RFID i Wi-Fi 7 w jednym urządzeniu — od dużych magazynów i centrów logistycznych, przez sieci handlowe, po szpitale i zakłady produkcyjne.\n\nWydajność i AI na pierwszej linii. Procesor Qualcomm Dragonwing Q-6690 (8 rdzeni, do 2,9 GHz) z dedykowanym silnikiem AI (NPU) zapewnia 300% więcej mocy obliczeniowej niż TC53. Przetwarzanie AI odbywa się lokalnie — rozpoznawanie produktów, weryfikacja etykiet, OCR bez chmury, zgodnie z RODO. Pamięć 8 GB/128 GB lub 12 GB/256 GB (UFS 3.1) z opcją rozszerzenia microSD do 2 TB.\n\nEkran AMOLED — pierwszy w klasie enterprise. Wyświetlacz 6" Full HD+ (2160×1080) z matrycą AMOLED i jasnością 1500 nitów — 2,5× jaśniejszy niż IPS w TC53 (600 nit). Doskonale czytelny w pełnym słońcu, z głęboką czernią zmniejszającą zmęczenie oczu na długich zmianach. Szkło Corning Gorilla Glass Victus, panel dotykowy reagujący w rękawicach i z mokrymi palcami.\n\nZintegrowany RFID UHF — bez dodatkowych modułów. TC501 to pierwszy terminal z serii TC5x z wbudowanym czytnikiem RFID UHF w KAŻDEJ konfiguracji. Odczyt ponad 200 tagów na sekundę z zasięgu do 2 metrów. Do długiego zasięgu (9+ m) można podłączyć sled RFD40/RFD90. W TC53 RFID wymagał osobnego modułu — teraz jest w standardzie.\n\nTrzy silniki skanowania do każdego zadania. SR500 (Standard Range) — skanowanie z bliska, kasa, lada, kompletacja. SR560 — ulepszony finder 2D, szybsze dekodowanie uszkodzonych kodów. AC670 (Advanced Color) — zasięg do 30 m, kolorowy imager, skanuje kody na najwyższych regałach bez drabiny. Kamera tylna 50 MP z opcją ultrawide 13 MP do dokumentacji fotograficznej.\n\nŁączność przyszłości. Wi-Fi 7 (802.11be) z 2×2 MU-MIMO i MLO — przepustowość 2× wyższa niż Wi-Fi 6E, stabilność w gęstych środowiskach z setkami urządzeń. Bluetooth 6.0 z większym zasięgiem. NFC do identyfikacji pracowników i tagów. Wersje WAN (TC501G) dodają 5G Release 17, dual eSIM, CBRS i GPS z potrójną bandą GNSS.\n\nWytrzymałość klasy enterprise. Obudowa IP68+IP65 — pyłoszczelna, wodoodporna (zanurzenie + strumień pod ciśnieniem). Upadki z 2,4 m na beton (2,7 m z rugged boot) wg MIL-STD-810H. 2–4× więcej tumbles niż TC53. Temperatura pracy od -20°C do +50°C. Bateria 5000 mAh (standard) lub 7240 mAh (rozszerzona), wymienna hot-swap — szybkie ładowanie 0→70% w 45 minut.\n\nAndroid 15 z najdłuższym wsparciem. Gwarancja aktualizacji do 4 kolejnych wersji systemu. LifeGuard for Android — comiesięczne łatki bezpieczeństwa OTA. Mobility DNA w cenie: StageNow, Device Tracker, Enterprise Home Screen. Kompatybilny z MDM: SOTI, Intune, VMware, Zebra Cloud.\n\nSzczegółowa specyfikacja, karta katalogowa i instrukcja obsługi w języku polskim dostępne na stronie serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
@@ -10205,6 +10311,7 @@ Bluetooth 5.3, NFC, WiFi 6E 2×2 MU-MIMO, kamera 16 MP (tył) i 8 MP (przód), U
     id: 'zebra-tc701',
     slug: 'zebra-tc701',
     name: 'Zebra TC701',
+    sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc701.html',
     shortDescription: 'Ultra-wytrzymały terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6" AMOLED 1500 nit — następca TC72/TC77',
     description: `Dla kogo? Zebra TC701 to ultra-wytrzymały (ultra-rugged) terminal mobilny nowej generacji, zaprojektowany jako następca TC72/TC77 dla firm pracujących w najtrudniejszych warunkach — chłodnie, doki załadunkowe, magazyny mrożone, porty, kopalnie, budowy i praca outdoorowa w ekstremalnych temperaturach od -20°C do +50°C.
 
@@ -10514,6 +10621,7 @@ Wersja enterprise (lżejsza, upadki 2,4 m, tańsza): Zebra TC501. Szczegółowa 
     id: 'zebra-tc73',
     slug: 'zebra-tc73',
     name: 'Zebra TC73',
+    sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc73-tc78.html',
     shortDescription: 'Ultra-wytrzymały terminal mobilny WiFi 6E z procesorem Qualcomm 6490, ekranem 6" FHD+ i odpornością na upadki z 3 m — wersja ultra-rugged TC53',
     description: `Dla kogo? Zebra TC73 to ultra-wytrzymały terminal mobilny klasy ultra-rugged, zaprojektowany dla ciężkiej produkcji, doków załadunkowych, chłodni, magazynów mrożonych, warsztatów i prac outdoorowych, gdzie urządzenia narażone są na upadki, wibracje, skrajne temperatury i kontakt z wodą — z budżetem na urządzenie klasy premium o najwyższej wytrzymałości.
 
@@ -10671,6 +10779,7 @@ Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC78. Wersja enterpri
     id: 'zebra-tc78',
     slug: 'zebra-tc78',
     name: 'Zebra TC78',
+    sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc73-tc78.html',
     shortDescription: 'Ultra-wytrzymały terminal mobilny 5G/LTE z WiFi 6E, ekranem 6" FHD+ i odpornością na upadki z 3 m — wersja ultra-rugged TC58',
     description: `Dla kogo? Zebra TC78 to ultra-wytrzymały terminal mobilny z łącznością 5G/4G LTE klasy ultra-rugged, zaprojektowany dla serwisantów terenowych, kierowców, pracowników doków załadunkowych, inspektorów i operatorów logistycznych pracujących w ekstremalnych warunkach — na deszczu, w mrozie, na budowie — gdzie urządzenie musi wytrzymać upadki z dużej wysokości, wibracje i kontakt z wodą, a jednocześnie zapewniać łączność komórkową poza zasięgiem WiFi.
 
@@ -10852,6 +10961,7 @@ Wersja bliźniacza WiFi-only: Zebra TC73. Wersja enterprise (lżejsza, tańsza, 
     id: 'zebra-mc2200',
     slug: 'zebra-mc2200',
     name: 'Zebra MC2200',
+    sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc2200-mc2700.html',
     shortDescription: 'Kompaktowy terminal mobilny z klawiaturą fizyczną 34-key i skanerem SE4100 — Wi-Fi, IP65',
     description: `Dla kogo? Zebra MC2200 to wytrzymały terminal mobilny w formacie „brick" z klawiaturą fizyczną, zaprojektowany dla małych i średnich firm potrzebujących niezawodnego narzędzia do zbierania danych w magazynie, sklepie, aptece lub na linii produkcyjnej — w przystępnej cenie, ale z niezawodnością klasy enterprise i wieloletnią żywotnością.
 
@@ -11024,6 +11134,7 @@ Wersja z łącznością LTE/GPS do pracy w terenie: Zebra MC2700. Szczegółowa 
     id: 'zebra-mc2700',
     slug: 'zebra-mc2700',
     name: 'Zebra MC2700',
+    sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc2200-mc2700.html',
     shortDescription: 'Wytrzymały terminal mobilny z klawiaturą fizyczną, LTE Cat 6, GPS i skanerem SE4100',
     description: `Dla kogo? Zebra MC2700 to wytrzymały terminal mobilny w formacie „brick" z klawiaturą fizyczną i łącznością komórkową LTE, zaprojektowany dla firm potrzebujących zbierania danych w terenie — kurierzy, serwisanci, logistyka portowa, kontrola dostaw i praca w polach bez dostępu do Wi-Fi.
 

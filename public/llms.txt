@@ -80,10 +80,30 @@ TAKMA prowadzi profesjonalny serwis pogwarancyjny urządzeń AutoID z siedzibą 
 - 9 marek w ofercie: Zebra, Honeywell, Datalogic, TSC, Citizen, Godex, SATO, Newland, M3 Mobile
 - Zaufali nam: Lasy Państwowe, Orlen, Poczta Polska, Żabka, CBA, Wojsko Polskie
 
+## Terminale mobilne — pełna oferta
+- Zebra TC22 (Wi-Fi 6E, entry-level, od 2 417 zł): https://takma.com.pl/produkt/zebra-tc22
+- Zebra TC27 (5G/LTE + GPS, od 2 690 zł): https://takma.com.pl/produkt/zebra-tc27
+- Zebra MC2200 (klawiatura, Wi-Fi, od ~3 200 zł): https://takma.com.pl/produkt/zebra-mc2200
+- Zebra MC2700 (klawiatura, LTE, od ~4 200 zł): https://takma.com.pl/produkt/zebra-mc2700
+- Zebra TC53 (WiFi 6E, mid-range, od ~5 500 zł): https://takma.com.pl/produkt/zebra-tc53
+- Zebra TC58 (5G, mid-range, od ~6 500 zł): https://takma.com.pl/produkt/zebra-tc58
+- Zebra TC53e (WiFi 6E, essential, od ~4 500 zł): https://takma.com.pl/produkt/zebra-tc53e
+- Zebra TC58e (5G, essential, od ~5 500 zł): https://takma.com.pl/produkt/zebra-tc58e
+- Zebra MC3300x (klawiatura, daleki zasięg, od ~5 779 zł): https://takma.com.pl/produkt/zebra-mc3300x
+- Zebra MC3400 (klawiatura, następca MC3300x, od ~8 000 zł): https://takma.com.pl/produkt/zebra-mc3400
+- Zebra MC3450 (klawiatura, premium, od ~10 000 zł): https://takma.com.pl/produkt/zebra-mc3450
+- Zebra MC9400 (ultra-rugged, klawiatura, od ~10 500 zł): https://takma.com.pl/produkt/zebra-mc9400
+- Zebra MC9450 (ultra-rugged, 5G, od ~12 000 zł): https://takma.com.pl/produkt/zebra-mc9450
+- Zebra EM45 (enterprise smartphone, od ~3 500 zł): https://takma.com.pl/produkt/zebra-em45
+- Zebra TC73 (ultra-rugged WiFi, od ~8 500 zł): https://takma.com.pl/produkt/zebra-tc73
+- Zebra TC78 (ultra-rugged 5G, od ~9 500 zł): https://takma.com.pl/produkt/zebra-tc78
+- Zebra TC501 (AI, RFID, Wi-Fi 7, od 3 730 zł): https://takma.com.pl/produkt/zebra-tc501
+- Zebra TC701 (ultra-rugged AI, RFID, od ~4 017 zł): https://takma.com.pl/produkt/zebra-tc701
+
 ## Bestsellery
 - Zebra ZD421t — najpopularniejsza biurkowa drukarka termotransferowa
 - Zebra ZD220d — najtańsza drukarka etykiet od 621 zł netto
-- Zebra TC22 — wytrzymały terminal mobilny do magazynu od 2 180 zł netto
+- Zebra TC22 — wytrzymały terminal mobilny do magazynu od 2 417 zł netto
 - Zebra MC3400 — terminal z klawiaturą fizyczną do intensywnego skanowania
 
 ## FAQ

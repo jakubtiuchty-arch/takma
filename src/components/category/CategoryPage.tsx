@@ -20,6 +20,32 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
   const subcats = getSubcategoriesForCategory(category.id)
   const content = subcategoryContent[slug]
 
+  const faqJsonLd = content?.faq?.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: content.faq.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.answer,
+      },
+    })),
+  } : null
+
+  const howToJsonLd = content?.howToSteps?.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: `Jak wybrać i wdrożyć ${category.name.toLowerCase()}`,
+    description: `Krok po kroku: wybór, konfiguracja i wdrożenie ${category.name.toLowerCase()} w firmie.`,
+    step: content.howToSteps.map((step, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: step.name,
+      text: step.text,
+    })),
+  } : null
+
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -62,6 +88,18 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
+      {howToJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+        />
+      )}
 
       <div className="container-main py-8 lg:py-12">
         {/* Breadcrumbs */}
@@ -246,6 +284,26 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
                         </div>
                       ))}
                     </div>
+                  </section>
+                )}
+
+                {/* HowTo Steps */}
+                {content.howToSteps?.length > 0 && (
+                  <section>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Jak wybrać i wdrożyć {category.name.toLowerCase()}?</h2>
+                    <ol className="space-y-4">
+                      {content.howToSteps.map((step, i) => (
+                        <li key={i} className="flex gap-4">
+                          <span className="flex-shrink-0 w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold mt-0.5">
+                            {i + 1}
+                          </span>
+                          <div>
+                            <h3 className="font-semibold text-gray-900 mb-1">{step.name}</h3>
+                            <p className="text-gray-600 text-sm leading-relaxed">{step.text}</p>
+                          </div>
+                        </li>
+                      ))}
+                    </ol>
                   </section>
                 )}
 

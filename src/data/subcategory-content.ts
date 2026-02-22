@@ -1235,19 +1235,19 @@ Porównanie materiałów opasek Zebra Z-Band: Direct (polipropylen, najtańszy, 
   'terminale-mobilne': {
     definition: {
       heading: 'Co to jest terminal mobilny (kolektor danych)?',
-      content: 'Terminal mobilny (kolektor danych, ang. mobile computer / handheld terminal) to wytrzymały komputer przenośny z wbudowanym skanerem kodów kreskowych, zaprojektowany do profesjonalnej pracy w magazynie, logistyce, produkcji, handlu detalicznym i służbie zdrowia. W odróżnieniu od zwykłych smartfonów, terminale mobilne klasy enterprise posiadają: skanery 1D/2D klasy przemysłowej (SE4710, SE4770, SE55) skanujące zniszczone i zadrukowane kody z odległości do 60 cm, obudowy odporne na upadki z 1,2–2,4 m na beton i klasy ochrony IP65/IP67/IP68, wymienne baterie hot-swap (3 100–7 000 mAh) na 10–14 godzin pracy, oraz system Android klasy enterprise z 5–10-letnim wsparciem aktualizacji bezpieczeństwa (GMS/AOSP). Terminale mobilne obsługują Wi-Fi 6/6E, Bluetooth 5.1, NFC i opcjonalnie 4G LTE/5G. Zarządzanie flotą odbywa się przez MDM (Mobile Device Management) i OEMConfig. Ceny terminali mobilnych enterprise zaczynają się od ok. 3 000 zł netto za modele entry-level (Zebra TC22) do ponad 15 000 zł za urządzenia z klawiaturą fizyczną i rozszerzonym zasięgiem skanowania (Zebra MC3300).',
+      content: 'Terminal mobilny (kolektor danych, ang. mobile computer / handheld terminal) to wytrzymały komputer przenośny z wbudowanym skanerem kodów kreskowych, zaprojektowany do profesjonalnej pracy w magazynie, logistyce, produkcji, handlu detalicznym i służbie zdrowia. W odróżnieniu od zwykłych smartfonów, terminale mobilne klasy enterprise posiadają: skanery 1D/2D klasy przemysłowej (SE4710, SE4770, SE55) skanujące zniszczone i zadrukowane kody z odległości do 60 cm, obudowy odporne na upadki z 1,2–2,4 m na beton i klasy ochrony IP65/IP67/IP68, wymienne baterie hot-swap (3 100–7 000 mAh) na 10–14 godzin pracy, oraz system Android klasy enterprise z 5–10-letnim wsparciem aktualizacji bezpieczeństwa (GMS/AOSP). Terminale mobilne obsługują Wi-Fi 6/6E, Bluetooth 5.1, NFC i opcjonalnie 4G LTE/5G. Zarządzanie flotą odbywa się przez MDM (Mobile Device Management) i OEMConfig. Ceny terminali mobilnych enterprise zaczynają się od ok. 2 417 zł netto za modele entry-level (Zebra TC22) do ponad 15 000 zł za urządzenia z klawiaturą fizyczną i rozszerzonym zasięgiem skanowania (Zebra MC3400).',
     },
     buyingGuide: {
       heading: 'Jak wybrać terminal mobilny?',
       items: [
-        'Środowisko pracy — suchy magazyn z regałami → IP65, upadki z 1,2 m wystarczą (TC22/TC27). Chłodnia, rampa załadunkowa, praca na zewnątrz → IP67+, upadki z 1,8 m (TC52/TC57). Produkcja, agresywne środowiska → IP67/IP68, pełna klawiatura fizyczna (MC3300).',
+        'Środowisko pracy — suchy magazyn z regałami → IP68/IP65, upadki z 1,5 m wystarczą (TC22/TC27). Chłodnia, rampa załadunkowa, praca na zewnątrz → IP68, upadki z 1,5–2,4 m (TC53/TC58, TC501). Produkcja, agresywne środowiska → IP68, pełna klawiatura fizyczna (MC3400).',
         'Typ skanera — SE4710: standardowy imager 1D/2D, zasięg do 35 cm, idealna do magazynu. SE4770: rozszerzony zasięg do 60 cm, skanowanie z daleka (wysokie regały, palety). SE55: skaner nowej generacji z IntelliFocus — odczyt kodów od 10 cm do 7,6 m. Do prostych zastosowań (retail, inwentaryzacja) wystarczy SE4710.',
         'Dotykowy czy z klawiaturą fizyczną — ekran dotykowy (TC22, TC52): intuicyjny, lżejszy, szybszy onboarding pracowników. Klawiatura fizyczna (MC3300): niezbędna do intensywnego wprowadzania danych liczbowych (numery partii, ilości) — znacznie szybsza niż klawiatura ekranowa.',
         'Łączność — Wi-Fi 6/6E: standard do pracy wewnątrz magazynu/sklepu z infrastrukturą bezprzewodową. 4G LTE: konieczne dla pracowników terenowych (serwis, dostawy) bez dostępu do Wi-Fi. 5G: przyszłościowe, najniższe opóźnienia — dla automatyzacji i IoT.',
         'System operacyjny — Android 13/14 GMS (Google Mobile Services): pełny dostęp do Google Play, Chrome, Gmail. Android AOSP: bez usług Google, dla środowisk zamkniętych. Zawsze sprawdź Lifecycle — Zebra gwarantuje 5–10 lat wsparcia bezpieczeństwa.',
         'Bateria — modele entry (TC22): 3 100 mAh, ~10 h pracy. Modele enterprise (TC52/MC3300): 5 200–7 000 mAh, ~14 h. Kluczowe: wymienna bateria hot-swap — bez wyłączania urządzenia, ciągła praca na wielu zmianach.',
         'Zarządzanie flotą (MDM) — Zebra oferuje darmowe narzędzie LifeGuard™ do aktualizacji bezpieczeństwa i OEMConfig do zdalnej konfiguracji. Dla flot 50+ urządzeń MDM (SOTI, VMware, Microsoft Intune) to wymóg, nie opcja.',
-        'Budżet i TCO — entry-level (TC22, ~3 400 zł): mały i średni biznes, prosty skan + Wi-Fi. Mid-range (TC52, ~6 000 zł): duży magazyn, serwis, healthcare. Premium (MC3300, ~12 000 zł): produkcja, klawiatura, max wydajność. Pamiętaj o kosztach akcesoriów (stacje ładowania, baterie, etuia) — to 20–30% ceny urządzenia.',
+        'Budżet i TCO — entry-level (TC22, od 2 417 zł): mały i średni biznes, prosty skan + Wi-Fi. Mid-range (TC53, od ~5 500 zł): duży magazyn, serwis, healthcare. Premium (MC3400, od ~8 000 zł): produkcja, klawiatura, max wydajność. Pamiętaj o kosztach akcesoriów (stacje ładowania, baterie, etuia) — to 20–30% ceny urządzenia.',
       ],
     },
     expertAuthority: 'TAKMA to autoryzowany Premier Business Partner Zebra Technologies z ponad 25-letnim doświadczeniem w branży AutoID. Wdrożyliśmy setki terminali mobilnych w polskich magazynach, centrach dystrybucji, szpitalach i zakładach produkcyjnych — od firm z 5 urządzeniami po floty 500+ terminali zarządzanych centralnie przez MDM. Jako Printer Repair Specialist Zebra oferujemy nie tylko sprzedaż, ale także konfigurację, szkolenie pracowników, integrację z WMS/ERP i wieloletni serwis gwarancyjny i pogwarancyjny we współpracy z serwis-zebry.pl — największym centrum serwisowym Zebra w Polsce. Każda rekomendacja na tej stronie opiera się na realnych danych z wdrożeń, nie na kartach katalogowych.',
@@ -1291,7 +1291,7 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
       items: [
         {
           title: 'TCO terminala enterprise vs smartfona — terminal wygrywa po 18 miesiącach',
-          text: 'Smartfon konsumencki kosztuje 1 500 zł, ale wymaga wymiany co 12–18 miesięcy z powodu pęknięcia ekranu, awarii baterii lub braku aktualizacji. Terminal Zebra TC22 kosztuje 3 400 zł, ale służy 5+ lat z wymienną baterią i wsparciem bezpieczeństwa LifeGuard. W 3-letnim TCO (zakup + wymiana + akcesoria + przestoje) terminal jest tańszy o 30–50%. Dodaj do tego stratę czasu na wolniejszy skaner smartfona (2–4 s vs 0,3 s) — przy 500 skanowaniach dziennie to 30 minut straconego czasu na zmianę.',
+          text: 'Smartfon konsumencki kosztuje 1 500 zł, ale wymaga wymiany co 12–18 miesięcy z powodu pęknięcia ekranu, awarii baterii lub braku aktualizacji. Terminal Zebra TC22 kosztuje od 2 417 zł, ale służy 5+ lat z wymienną baterią i wsparciem bezpieczeństwa LifeGuard. W 3-letnim TCO (zakup + wymiana + akcesoria + przestoje) terminal jest tańszy o 30–50%. Dodaj do tego stratę czasu na wolniejszy skaner smartfona (2–4 s vs 0,3 s) — przy 500 skanowaniach dziennie to 30 minut straconego czasu na zmianę.',
         },
         {
           title: 'Android enterprise vs konsumencki — to zupełnie inny system',
@@ -1314,7 +1314,7 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
     faq: [
       {
         question: 'Ile kosztuje terminal mobilny (kolektor danych)?',
-        answer: 'Ceny terminali mobilnych enterprise zaczynają się od ok. 3 000–3 500 zł netto za modele entry-level (Zebra TC22) przez ok. 5 500–7 000 zł za mid-range (TC52, TC57) do 10 000–15 000 zł za modele premium z klawiaturą fizyczną (MC3300). Cena zależy od: skanera (SE4710 vs SE4770), łączności (Wi-Fi vs Wi-Fi + 4G LTE), rozmiaru baterii i wariantu obudowy. Ceny netto, dane z lutego 2026.',
+        answer: 'Ceny terminali mobilnych enterprise zaczynają się od ok. 2 417 zł netto za modele entry-level (Zebra TC22) przez ok. 5 500–7 000 zł za mid-range (TC53, TC58) do 10 000–15 000 zł za modele premium z klawiaturą fizyczną (MC3400). Cena zależy od: skanera (SE4710 vs SE55), łączności (Wi-Fi vs Wi-Fi + 5G/LTE), rozmiaru baterii i wariantu obudowy. Ceny netto, dane z lutego 2026.',
       },
       {
         question: 'Czym różni się terminal mobilny od zwykłego smartfona?',
@@ -1322,7 +1322,7 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
       },
       {
         question: 'Jaki terminal mobilny do magazynu?',
-        answer: 'Do magazynu rekomendujemy: mały magazyn (do 500 skanowań/dzień) → Zebra TC22 (Wi-Fi 6, SE4710, IP65, ~3 400 zł). Średni magazyn z WMS → TC52 (Wi-Fi 6, SE4770 z rozszerzonym zasięgiem 60 cm, IP67, wymienne baterie, ~6 000 zł). Duży magazyn z wysokimi regałami → TC52 z SE4770 lub MC3300 z SE4850 (zasięg do 7 m). Kluczowe: terminal musi obsługiwać język programowania Twojego WMS (ZPL, CPCL, SAP ITSmobile).',
+        answer: 'Do magazynu rekomendujemy: mały magazyn (do 500 skanowań/dzień) → Zebra TC22 (Wi-Fi 6E, SE4710, IP68, od 2 417 zł). Średni magazyn z WMS → TC53 (Wi-Fi 6E, SE55 z zasięgiem do 7,6 m, IP68, wymienne baterie, od ~5 500 zł). Duży magazyn z wysokimi regałami → TC53 z SE55 lub MC3400 z SE4850. Kluczowe: terminal musi obsługiwać język programowania Twojego WMS (ZPL, CPCL, SAP ITSmobile).',
       },
       {
         question: 'Jak wybrać kolektor danych do inwentaryzacji?',
@@ -1384,7 +1384,7 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
       },
       {
         title: 'Zebra TC22 vs TC52 — entry-level vs mid-range',
-        content: 'TC22: ekran 6", SE4710 (zasięg 35 cm), IP65, upadki 1,2 m, bateria 3 100 mAh, Wi-Fi 6, Android 14, cena ~3 400 zł. TC52: ekran 5", SE4770 (zasięg 60 cm), IP67, upadki 1,8 m, bateria 4 300/5 200 mAh (wymienna hot-swap), Wi-Fi 6, Android 13, cena ~6 000 zł. Rekomendacja: TC22 wystarczy do retailu, lekkiej inwentaryzacji, healthcare. TC52 do dużych magazynów z WMS, pracy wielozmianowej, wysokich regałów (SE4770), oraz środowisk wymagających IP67 (chłodnie, rampy).',
+        content: 'TC22: ekran 6", SE4710 lub SE55 (zasięg do 7,6 m), IP68/IP65, upadki 1,5 m, bateria 3 800/5 200 mAh, Wi-Fi 6E, Android do v16, cena od 2 417 zł. TC53: ekran 6", SE4720 lub SE55, IP68/IP65, upadki 1,5 m, bateria 4 680/7 000 mAh (wymienna hot-swap), Wi-Fi 6E, Android do v16, cena od ~5 500 zł. Rekomendacja: TC22 wystarczy do retailu, lekkiej inwentaryzacji, healthcare. TC53 do dużych magazynów z WMS, pracy wielozmianowej, wysokich regałów (SE55), oraz środowisk wymagających baterii na cały dzień.',
       },
       {
         title: 'Terminal dotykowy vs terminal z klawiaturą fizyczną',
