@@ -94,7 +94,6 @@ function emailHeader(opts: { title: string; subtitle?: string; accent: AccentCol
                   </td>
                 </tr>
               </table>
-              <p style="margin:10px 0 0;font-size:12px;color:rgba(255,255,255,0.6);letter-spacing:0.3px">Autoryzowany dystrybutor urz&#261;dze&#324; AutoID</p>
             </td>
           </tr>
           <tr>
@@ -124,9 +123,8 @@ function emailFooter(): string {
           </tr>
           <tr>
             <td align="center" style="padding:0 32px 24px;font-size:12px;color:#9ca3af;line-height:1.6">
-              <strong style="color:#6b7280">TAKMA</strong> &middot; Autoryzowany dystrybutor Zebra Technologies<br />
+              <strong style="color:#6b7280">TAKMA</strong><br />
               ul. Po&#347;wi&#281;cka 1a, 51-128 Wroc&#322;aw &middot; NIP: 915-100-43-77<br />
-              <a href="tel:+48607819688" style="color:#9ca3af;text-decoration:none">+48 607 819 688</a> &middot;
               <a href="mailto:takma@takma.com.pl" style="color:#9ca3af;text-decoration:none">takma@takma.com.pl</a> &middot;
               <a href="https://takma.com.pl" style="color:#9ca3af;text-decoration:none">takma.com.pl</a><br />
               &#169; ${new Date().getFullYear()} TAKMA &middot; Wiadomo&#347;&#263; wygenerowana automatycznie
@@ -152,7 +150,6 @@ function emailSignature(): string {
                   <td style="font-size:14px;color:#6b7280;line-height:1.6">
                     Z pozdrowieniami,<br />
                     <strong style="color:#374151">Zesp&#243;&#322; TAKMA</strong><br />
-                    <a href="tel:+48607819688" style="color:#2563eb;text-decoration:none">+48 607 819 688</a> &middot;
                     <a href="mailto:takma@takma.com.pl" style="color:#2563eb;text-decoration:none">takma@takma.com.pl</a>
                   </td>
                 </tr>
@@ -380,14 +377,13 @@ export function buildContactConfirmationEmail(data: {
   message: string
 }): string {
   return emailLayout({
-    preheader: 'Otrzymaliśmy Twoją wiadomość — odpowiemy w ciągu 1 godziny roboczej',
+    preheader: 'Otrzymaliśmy Twoją wiadomość — odpowiemy najszybciej jak to możliwe',
     content:
       emailHeader({ title: 'Dzi&#281;kujemy za wiadomo&#347;&#263;!', accent: 'blue' }) +
       emailBody(
         emailGreeting(data.name) +
-        emailText('Otrzymali&#347;my Twoj&#261; wiadomo&#347;&#263; i odpowiemy najszybciej jak to mo&#380;liwe &mdash; zwykle w ci&#261;gu <strong>1 godziny roboczej</strong>.') +
+        emailText('Otrzymali&#347;my Twoj&#261; wiadomo&#347;&#263; i odpowiemy najszybciej jak to mo&#380;liwe.') +
         emailInfoBlue(`<strong style="color:#1e40af">Twoja wiadomo&#347;&#263;:</strong><br /><span style="white-space:pre-wrap">${esc(data.message)}</span>`) +
-        emailText('<span style="color:#6b7280;font-size:14px">W razie pilnych spraw zadzwo&#324;: <a href="tel:+48607819688" style="color:#2563eb">+48 607 819 688</a></span>') +
         emailSignature()
       ),
   })
@@ -472,14 +468,13 @@ export function buildInquiryConfirmationEmail(data: {
   message: string
 }): string {
   return emailLayout({
-    preheader: `Otrzymaliśmy zapytanie o ${data.productName} — odpowiemy w ciągu 1h`,
+    preheader: `Otrzymaliśmy zapytanie o ${data.productName} — odpowiemy najszybciej jak to możliwe`,
     content:
       emailHeader({ title: 'Otrzymali&#347;my Twoje zapytanie!', accent: 'cyan' }) +
       emailBody(
         emailGreeting(data.name) +
-        emailText(`Dzi&#281;kujemy za zainteresowanie produktem <strong>${esc(data.productName)}</strong>. Odpowiemy najszybciej jak to mo&#380;liwe &mdash; zwykle w ci&#261;gu <strong>1 godziny roboczej</strong>.`) +
+        emailText(`Dzi&#281;kujemy za zainteresowanie produktem <strong>${esc(data.productName)}</strong>. Odpowiemy najszybciej jak to mo&#380;liwe.`) +
         emailInfoCyan(`<strong style="color:#0e7490">Twoje zapytanie:</strong><br /><span style="white-space:pre-wrap">${esc(data.message)}</span>`) +
-        emailText('<span style="color:#6b7280;font-size:14px">W razie pilnych spraw zadzwo&#324;: <a href="tel:+48607819688" style="color:#2563eb">+48 607 819 688</a></span>') +
         emailSignature()
       ),
   })
