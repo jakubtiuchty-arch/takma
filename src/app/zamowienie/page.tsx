@@ -283,7 +283,15 @@ export default function CheckoutPage() {
 
     setIsSubmitting(true)
 
-    const generatedOrderNumber = `TK-${Date.now().toString().slice(-6)}`
+    const now = new Date()
+    const generatedOrderNumber = [
+      now.getFullYear(),
+      String(now.getMonth() + 1).padStart(2, '0'),
+      String(now.getDate()).padStart(2, '0'),
+      String(now.getHours()).padStart(2, '0'),
+      String(now.getMinutes()).padStart(2, '0'),
+      String(now.getSeconds()).padStart(2, '0'),
+    ].join('')
 
     try {
       if (formData.paymentMethod === 'proforma') {
