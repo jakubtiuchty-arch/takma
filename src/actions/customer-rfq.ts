@@ -78,7 +78,7 @@ export async function submitRfq(data: {
     include: { items: true },
   })
 
-  const adminEmail = process.env.ADMIN_EMAIL || 'takma@takma.com.pl'
+  const adminEmail = process.env.ADMIN_EMAIL || 'jakub.tiuchty@takma.com.pl'
 
   await sendEmail({
     to: adminEmail,

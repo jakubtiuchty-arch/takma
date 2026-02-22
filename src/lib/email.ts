@@ -118,7 +118,7 @@ export async function sendAdminNotification(data: {
   paymentMethod: string
   customerNotes?: string | null
 }) {
-  const adminEmail = process.env.ADMIN_EMAIL || 'takma@takma.com.pl'
+  const adminEmail = process.env.ADMIN_EMAIL || 'jakub.tiuchty@takma.com.pl'
   return sendEmail({
     to: adminEmail,
     from: 'TAKMA Zamówienia <zamowienia@takma.com.pl>',

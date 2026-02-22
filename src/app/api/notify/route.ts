@@ -55,7 +55,7 @@ export async function POST(request: NextRequest) {
     notifications.push(entry)
     console.log(`[Notify] Nowa subskrypcja: ${email} → ${partNumber}`)
 
-    const adminEmail = process.env.ADMIN_EMAIL || 'takma@takma.com.pl'
+    const adminEmail = process.env.ADMIN_EMAIL || 'jakub.tiuchty@takma.com.pl'
     const displayName = productName || partNumber
 
     // Mail do klienta — potwierdzenie zapisu
