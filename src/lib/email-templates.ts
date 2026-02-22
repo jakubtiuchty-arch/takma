@@ -276,61 +276,76 @@ export function buildOrderConfirmationEmail(data: {
   paymentMethod: string
   customerNotes?: string | null
 }): string {
-  const rows = data.items.map((i, idx) => [
-    String(idx + 1),
-    `${esc(i.name)}${i.partNumber ? `<br /><span style="font-size:12px;color:#6b7280">PN: ${esc(i.partNumber)}</span>` : ''}`,
-    String(i.quantity),
-    `${fmtPLN(i.priceNetto)} z&#322;`,
-    `${fmtPLN(i.totalNetto)} z&#322;`,
-  ])
+  // Tabela produktów — kompaktowa, bez Lp.
+  const itemRows = data.items.map(i => {
+    const label = i.partNumber ? `${esc(i.name)} <span style="color:#6b7280">(${esc(i.partNumber)})</span>` : esc(i.name)
+    return `
+      <tr>
+        <td style="padding:10px 0;font-size:14px;color:#1e293b;border-bottom:1px solid #f3f4f6">${label}</td>
+        <td style="padding:10px 8px;font-size:14px;color:#374151;border-bottom:1px solid #f3f4f6;text-align:center">${i.quantity} szt.</td>
+        <td style="padding:10px 0;font-size:14px;font-weight:600;color:#1e293b;border-bottom:1px solid #f3f4f6;text-align:right">${fmtPLN(i.totalNetto)} z&#322;</td>
+      </tr>`
+  }).join('')
 
-  const paymentLabel = data.paymentMethod === 'ONLINE' ? 'Karta / przelew online (Stripe)' : 'Przelew bankowy (pro forma)'
-  const shippingLabel = data.shippingNetto > 0 ? `${fmtPLN(data.shippingNetto)} z&#322; netto` : 'Darmowa'
+  const paymentLabel = data.paymentMethod === 'ONLINE' ? 'Online (Stripe)' : 'Przelew (pro forma)'
+  const shippingLabel = data.shippingNetto > 0 ? `${fmtPLN(data.shippingNetto)} z&#322;` : 'Gratis'
   const deliveryAddress = data.customer.shippingAddress || data.customer.address || '&mdash;'
+  const c = data.customer
+
+  // Kompaktowy blok: zamawiający + dostawa
+  const buyerHtml = [
+    `<strong>${esc(c.company)}</strong>`,
+    c.nip ? `NIP: ${esc(c.nip)}` : '',
+    esc(`${c.firstName} ${c.lastName}`),
+    c.address ? esc(c.address) : '',
+    `<a href="mailto:${esc(c.email)}" style="color:#2563eb">${esc(c.email)}</a>`,
+    c.phone ? esc(c.phone) : '',
+  ].filter(Boolean).join('<br />')
+
+  const shippingHtml = [
+    `<strong>Adres dostawy</strong>`,
+    esc(deliveryAddress),
+    `<br /><strong>Wysy&#322;ka:</strong> ${shippingLabel}`,
+    `<strong>P&#322;atno&#347;&#263;:</strong> ${paymentLabel}`,
+  ].join('<br />')
 
   return emailLayout({
-    preheader: `Potwierdzenie zamówienia ${data.orderNumber} — dziękujemy za zakup!`,
+    preheader: `Zamówienie ${data.orderNumber} — ${fmtPLN(data.totalBrutto)} zł brutto`,
     content:
-      emailHeader({ title: 'Dzi&#281;kujemy za zam&#243;wienie!', subtitle: `Nr zam&#243;wienia: ${esc(data.orderNumber)}`, accent: 'blue' }) +
+      emailHeader({ title: 'Dzi&#281;kujemy za zam&#243;wienie!', subtitle: `Nr: ${esc(data.orderNumber)} &middot; ${fmtPLN(data.totalBrutto)} z&#322; brutto`, accent: 'blue' }) +
       emailBody(
-        emailGreeting(data.customer.firstName) +
-        emailText('Twoje zam&#243;wienie zosta&#322;o przyj&#281;te i jest w realizacji. Poni&#380;ej znajdziesz szczeg&#243;&#322;y:') +
+        // Tabela produktów
+        `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin:0 0 4px">
+          <thead><tr>
+            <th style="padding:10px 0;text-align:left;font-size:12px;font-weight:600;color:#6b7280;border-bottom:2px solid #e5e7eb;text-transform:uppercase;letter-spacing:0.5px">Produkt</th>
+            <th style="padding:10px 8px;text-align:center;font-size:12px;font-weight:600;color:#6b7280;border-bottom:2px solid #e5e7eb;text-transform:uppercase;letter-spacing:0.5px">Ilo&#347;&#263;</th>
+            <th style="padding:10px 0;text-align:right;font-size:12px;font-weight:600;color:#6b7280;border-bottom:2px solid #e5e7eb;text-transform:uppercase;letter-spacing:0.5px">Netto</th>
+          </tr></thead>
+          <tbody>${itemRows}</tbody>
+        </table>` +
 
-        emailSectionTitle('Zam&#243;wione produkty') +
-        emailTable(['Lp.', 'Produkt', 'Ilo&#347;&#263;', 'Cena netto', 'Razem netto'], rows) +
+        // Podsumowanie cenowe — kompaktowe
+        `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 20px">
+          <tr><td style="padding:8px 0;font-size:13px;color:#6b7280;text-align:right">Produkty netto</td><td style="padding:8px 0 8px 12px;font-size:13px;color:#1e293b;text-align:right;width:120px">${fmtPLN(data.subtotalNetto)} z&#322;</td></tr>
+          <tr><td style="padding:4px 0;font-size:13px;color:#6b7280;text-align:right">Dostawa</td><td style="padding:4px 0 4px 12px;font-size:13px;color:#1e293b;text-align:right">${shippingLabel}</td></tr>
+          <tr><td style="padding:4px 0;font-size:13px;color:#6b7280;text-align:right">VAT 23%</td><td style="padding:4px 0 4px 12px;font-size:13px;color:#1e293b;text-align:right">${fmtPLN(data.vatAmount)} z&#322;</td></tr>
+          <tr><td style="padding:10px 0 0;font-size:17px;font-weight:700;color:#1e293b;text-align:right;border-top:2px solid #1e40af">Do zap&#322;aty</td><td style="padding:10px 0 0 12px;font-size:17px;font-weight:700;color:#1e40af;text-align:right;border-top:2px solid #1e40af">${fmtPLN(data.totalBrutto)} z&#322;</td></tr>
+        </table>` +
 
-        emailTotalBox([
-          { label: 'Warto&#347;&#263; produkt&#243;w netto:', value: `${fmtPLN(data.subtotalNetto)} z&#322;` },
-          { label: 'Dostawa netto:', value: shippingLabel },
-          { label: 'VAT 23%:', value: `${fmtPLN(data.vatAmount)} z&#322;` },
-          { label: 'Razem brutto:', value: `${fmtPLN(data.totalBrutto)} z&#322;`, bold: true },
-        ]) +
+        // Dane: zamawiający | dostawa — dwa bloki obok siebie
+        `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 16px">
+          <tr>
+            <td valign="top" width="50%" style="padding:14px 12px 14px 16px;background-color:#f9fafb;border-radius:8px 0 0 8px;border:1px solid #e5e7eb;border-right:none;font-size:13px;line-height:1.7;color:#374151">${buyerHtml}</td>
+            <td valign="top" width="50%" style="padding:14px 16px 14px 12px;background-color:#f9fafb;border-radius:0 8px 8px 0;border:1px solid #e5e7eb;border-left:1px solid #e5e7eb;font-size:13px;line-height:1.7;color:#374151">${shippingHtml}</td>
+          </tr>
+        </table>` +
 
-        emailSectionTitle('Dane zamawiaj&#261;cego') +
-        emailDataTable([
-          { label: 'Firma', value: `<strong>${esc(data.customer.company)}</strong>` },
-          ...(data.customer.nip ? [{ label: 'NIP', value: esc(data.customer.nip) }] : []),
-          { label: 'Osoba', value: esc(`${data.customer.firstName} ${data.customer.lastName}`) },
-          { label: 'Email', value: `<a href="mailto:${esc(data.customer.email)}" style="color:#2563eb">${esc(data.customer.email)}</a>` },
-          ...(data.customer.phone ? [{ label: 'Telefon', value: esc(data.customer.phone) }] : []),
-          ...(data.customer.address ? [{ label: 'Adres', value: esc(data.customer.address) }] : []),
-        ]) +
-
-        emailSectionTitle('Dane do wysy&#322;ki') +
-        emailDataTable([
-          { label: 'Adres dostawy', value: esc(deliveryAddress) },
-          { label: 'Koszt dostawy', value: shippingLabel },
-        ]) +
-
-        emailSectionTitle('P&#322;atno&#347;&#263;') +
-        emailDataTable([
-          { label: 'Metoda', value: paymentLabel },
-        ]) +
+        // Pro forma — dane do przelewu
         (data.paymentMethod !== 'ONLINE' ? emailBankDetails(data.orderNumber) : '') +
 
-        (data.customerNotes ? emailInfoAmber(`<strong>Uwagi do zam&#243;wienia:</strong><br />${esc(data.customerNotes)}`) : '') +
+        // Uwagi klienta
+        (data.customerNotes ? emailInfoAmber(`<strong>Uwagi:</strong> ${esc(data.customerNotes)}`) : '') +
 
-        emailInfoBlue('Otrzymasz powiadomienie o wys&#322;ance z numerem przesy&#322;ki, gdy paczka zostanie nadana.') +
         emailSignature()
       ),
   })
