@@ -304,10 +304,13 @@ export function buildOrderConfirmationEmail(data: {
 
   const shippingHtml = [
     `<strong>Adres dostawy</strong>`,
+    `${esc(c.firstName)} ${esc(c.lastName)}`,
+    c.company ? esc(c.company) : '',
     esc(deliveryAddress),
+    c.phone ? `Tel: ${esc(c.phone)}` : '',
     `<br /><strong>Wysy&#322;ka:</strong> ${shippingLabel}`,
     `<strong>P&#322;atno&#347;&#263;:</strong> ${paymentLabel}`,
-  ].join('<br />')
+  ].filter(Boolean).join('<br />')
 
   return emailLayout({
     preheader: `Zamówienie ${data.orderNumber} — ${fmtPLN(data.totalBrutto)} zł brutto`,
