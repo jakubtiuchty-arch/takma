@@ -89,7 +89,7 @@ export async function sendProformaEmail(email: string, orderNumber: string, pdfB
           <div style="margin:20px 0;padding:16px;background:#fefce8;border:1px solid #fde68a;border-radius:8px">
             <strong>Dane do przelewu:</strong><br>
             TAKMA · NIP: 915-100-43-77<br>
-            Nr konta: <strong>[UZUPEŁNIĆ]</strong><br>
+            Nr konta: <strong>39 1020 5297 0000 1902 0283 3069</strong><br>
             Tytuł: <strong>${orderNumber}</strong>
           </div>
           <p style="color:#6b7280;font-size:14px">Pro forma ważna 7 dni od daty wystawienia.</p>

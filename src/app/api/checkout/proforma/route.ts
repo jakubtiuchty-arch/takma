@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { sendOrderConfirmation, sendAdminNotification } from '@/lib/email'
 
 interface ProformaItem {
   productName: string
@@ -392,6 +393,21 @@ export async function POST(request: NextRequest) {
 </body>
 </html>
 `
+
+    // Wysyłka maili (nie blokuje odpowiedzi — fire and forget)
+    const emailItems = items.map(i => ({
+      name: i.productName,
+      quantity: i.quantity,
+      priceNetto: i.priceNetto,
+    }))
+
+    sendOrderConfirmation(customer.email, orderNumber, emailItems, totalBrutto)
+      .then(r => { if (!r.success) console.error('[Proforma] Błąd maila do klienta:', r.error) })
+      .catch(err => console.error('[Proforma] Exception mail klient:', err))
+
+    sendAdminNotification(orderNumber, customer.email, totalBrutto, 'PROFORMA')
+      .then(r => { if (!r.success) console.error('[Proforma] Błąd maila do admina:', r.error) })
+      .catch(err => console.error('[Proforma] Exception mail admin:', err))
 
     return new NextResponse(html, {
       headers: {
