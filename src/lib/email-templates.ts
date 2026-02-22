@@ -315,7 +315,7 @@ export function buildOrderConfirmationEmail(data: {
   return emailLayout({
     preheader: `Zamówienie ${data.orderNumber} — ${fmtPLN(data.totalBrutto)} zł brutto`,
     content:
-      emailHeader({ title: 'Dzi&#281;kujemy za zam&#243;wienie!', subtitle: `Nr: ${esc(data.orderNumber)} &middot; ${fmtPLN(data.totalBrutto)} z&#322; brutto`, accent: 'blue' }) +
+      emailHeader({ title: 'Dzi&#281;kujemy za zam&#243;wienie!', subtitle: `Nr zam&#243;wienia: ${esc(data.orderNumber)}`, accent: 'blue' }) +
       emailBody(
         // Tabela produktów
         `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin:0 0 4px">
