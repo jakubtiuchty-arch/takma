@@ -29,6 +29,7 @@ const footerLinks = {
     { name: 'Poradniki', href: '/poradnik' },
     { name: 'Regulamin sklepu', href: '/regulamin' },
     { name: 'Polityka prywatności', href: '/polityka-prywatnosci' },
+    { name: 'Mapa strony', href: '/mapa-strony' },
   ],
 }
 
