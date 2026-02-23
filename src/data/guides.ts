@@ -1603,6 +1603,474 @@ export const guides: Guide[] = [
     { title: 'Taśmy termotransferowe', href: '/tasmy-termotransferowe' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]
+},
+// ============================================================
+// PORADNIK 4: Jak wybrać terminal mobilny
+// ============================================================
+{
+  slug: 'jak-wybrac-terminal-mobilny',
+  title: 'Jak wybrać terminal mobilny? Kompletny poradnik 2026',
+  seoTitle: 'Jak wybrać terminal mobilny? Poradnik 2026 — Zebra, Honeywell, Datalogic, Newland, M3',
+  seoDescription: 'Poradnik wyboru terminala mobilnego: 5 marek, 6 segmentów, porównanie TCO i parametrów. Zebra, Honeywell, Datalogic, Newland, M3 Mobile — ekspercki przewodnik.',
+  excerpt: 'Kompleksowy przewodnik po terminalach mobilnych na rok 2026 — od definicji i form faktorów, przez porównanie 5 marek (Zebra, Honeywell, Datalogic, Newland, M3 Mobile), kalkulację TCO, aż po konkretne rekomendacje dla 6 segmentów zastosowań. Opracowany na podstawie ponad 500 wdrożeń w polskich firmach.',
+  category: 'poradnik',
+  tags: ['terminale-mobilne', 'poradnik', 'jak-wybrac', 'zebra', 'honeywell', 'datalogic', 'newland', 'm3-mobile'],
+  publishedAt: '2026-02-23',
+  updatedAt: '2026-02-23',
+  readTime: '15 min',
+
+  sections: [
+    {
+      id: 'definicja',
+      heading: 'Co to jest terminal mobilny?',
+      content: `<p>Terminal mobilny (handheld mobile computer) to przenośne urządzenie komputerowe wyposażone w zintegrowany skaner kodów kreskowych, system operacyjny Android (lub rzadziej Windows), ekran dotykowy, moduł łączności bezprzewodowej (Wi-Fi, Bluetooth, opcjonalnie LTE/5G) oraz baterię zapewniającą co najmniej jedną pełną zmianę roboczą. W odróżnieniu od zwykłego smartfona, terminal mobilny jest projektowany do pracy w wymagających warunkach — ma wzmocnioną obudowę (klasa IP65–IP68), wytrzymuje upadki na beton z wysokości 1,2–3,0 m i pracuje w temperaturach od −20°C do +50°C.</p>
+
+<p>W praktyce biznesowej terminal mobilny służy do: skanowania kodów kreskowych 1D/2D przy przyjęciu i wydaniu towaru, inwentaryzacji stanów magazynowych, kompletacji zamówień (picking), zarządzania lokalizacjami w magazynie (WMS), weryfikacji cen i stanów na hali sprzedaży (retail), śledzenia przesyłek w logistyce, identyfikacji pacjentów w opiece zdrowotnej oraz obsługi serwisu w terenie (field service). To fundament mobilnej automatycznej identyfikacji (AutoID) w każdej firmie — od małego magazynu po wielooddziałowe centrum dystrybucyjne.</p>
+
+<p>Na polskim rynku dominuje pięć marek terminali mobilnych: <strong>Zebra Technologies</strong> (lider globalny, ~45% rynku), <strong>Honeywell</strong> (~25%), <strong>Datalogic</strong> (~10%), <strong>Newland</strong> (~8%, najszybciej rosnący) i <strong>M3 Mobile</strong> (~5%, popularny w retail). Wybór między nimi zależy od środowiska pracy, wymaganych funkcji, budżetu i ekosystemu oprogramowania — a te kluczowe kryteria omówimy szczegółowo w dalszej części poradnika.</p>`
+    },
+    {
+      id: 'form-faktory',
+      heading: 'Form faktory terminali mobilnych — brick, gun, wearable',
+      content: `<p>Pierwsza decyzja przy wyborze terminala mobilnego dotyczy formy obudowy (form factor). Każdy typ jest zoptymalizowany pod inne środowisko pracy — błędny dobór formy skutkuje niższą wydajnością operatora nawet o 15–25%.</p>
+
+<h3>Brick (touch) — kompaktowy dotykowy</h3>
+<p>Terminal w formie „cegiełki" — prostokątna obudowa z ekranem dotykowym, bez uchwytu pistoletowego. Wyglądem przypomina wzmocnionego smartfona. Lekki (200–320 g), łatwy do noszenia w dłoni lub kaburze. Skaner zintegrowany w górnej części obudowy — operator celuje całym urządzeniem.</p>
+<p><strong>Najlepszy do:</strong> retail (weryfikacja cen, etykietowanie), lekkie zadania magazynowe (do 300 skanów/zmianę), field service, healthcare, kurierzy.</p>
+<p><strong>Przykłady:</strong> Zebra TC22, TC53, Honeywell CT32, CT47, Datalogic Memor 35, Newland MT93 Megattera Pro, M3 Mobile SL20+.</p>
+
+<h3>Gun (pistoletowy) — intensywne skanowanie</h3>
+<p>Terminal z uchwytem pistoletowym i spustem skanera. Ergonomiczny chwyt zmniejsza zmęczenie nadgarstka przy intensywnym skanowaniu. Cięższy (400–600 g), ale znacznie wygodniejszy przy ponad 500 skanach na zmianę. Zasięg skanowania nawet do 21 m (modele ultra-rugged).</p>
+<p><strong>Najlepszy do:</strong> magazyn (picking, receiving, put-away), cross-docking, produkcja, centra dystrybucyjne.</p>
+<p><strong>Przykłady:</strong> Zebra MC3400, MC9400, Honeywell CK67, Datalogic Skorpio X5, M3 Mobile UL20/UL30.</p>
+
+<h3>Wearable — naręczny / ring scanner</h3>
+<p>Terminal noszony na przedramieniu lub nadgarstku, często ze skanerem pierścieniowym (ring scanner) na palcu. Obie ręce operatora pozostają wolne — kluczowe przy kompletacji zamówień w magazynie. Najwyższa wydajność picking (do 40% szybciej niż gun), ale wyższy koszt zestawu i konieczność przeszkolenia.</p>
+<p><strong>Najlepszy do:</strong> kompletacja zamówień (pick-by-scan), sorting, pakowanie, linie montażowe.</p>
+<p><strong>Przykłady:</strong> Zebra WT6300 + RS5100 ring scanner, Honeywell 8680i ring scanner.</p>
+
+<h3>Z klawiaturą fizyczną</h3>
+<p>Terminale z pełną klawiaturą fizyczną (numeryczną, alfanumeryczną lub funkcyjną) są niezbędne tam, gdzie operatorzy muszą szybko wprowadzać dane — numery partii, kody lokalizacji, ilości. Klawiatura podświetlana sprawdza się w chłodniach i ciemnych magazynach. Waga 480–550 g.</p>
+<p><strong>Najlepszy do:</strong> produkcja (rejestracja partii), chłodnie (obsługa w rękawicach), inwentaryzacja z dużą ilością wpisów ręcznych.</p>
+<p><strong>Przykłady:</strong> Zebra MC3400 (47-key), Honeywell CK67 (5 wariantów klawiatury), M3 Mobile UL20, M3 Mobile UL30.</p>
+
+<h3>Porównanie form faktorów</h3>
+<table style="width:100%">
+  <thead>
+    <tr>
+      <th>Cecha</th>
+      <th>Brick (touch)</th>
+      <th>Gun (pistoletowy)</th>
+      <th>Z klawiaturą</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Waga</td>
+      <td>200–320 g</td>
+      <td>400–600 g</td>
+      <td>480–550 g</td>
+    </tr>
+    <tr>
+      <td>Skany/zmianę</td>
+      <td>do 300</td>
+      <td>500–2 000+</td>
+      <td>500–1 500</td>
+    </tr>
+    <tr>
+      <td>Zasięg skanera</td>
+      <td>do 5 m</td>
+      <td>do 21 m</td>
+      <td>do 15 m</td>
+    </tr>
+    <tr>
+      <td>Ergonomia</td>
+      <td>Jedna ręka, lekki</td>
+      <td>Spust pistoletowy</td>
+      <td>Dwie ręce, stabilny</td>
+    </tr>
+    <tr>
+      <td>Wprowadzanie danych</td>
+      <td>Ekran dotykowy</td>
+      <td>Ekran + opcja klawiatury</td>
+      <td>Klawiatura fizyczna</td>
+    </tr>
+    <tr>
+      <td>Typowa cena</td>
+      <td>1 400–7 000 zł</td>
+      <td>4 500–9 000 zł</td>
+      <td>3 400–8 800 zł</td>
+    </tr>
+  </tbody>
+</table>`
+    },
+    {
+      id: 'kryteria',
+      heading: '7 kluczowych kryteriów wyboru terminala mobilnego',
+      content: `<p>Z naszego doświadczenia z ponad 500 wdrożeń wynika, że 7 parametrów decyduje o sukcesie lub porażce inwestycji w terminale mobilne. Poniżej omawiamy je w kolejności od najważniejszego.</p>
+
+<h3>1. Środowisko pracy i klasa ochrony (IP)</h3>
+<p>To absolutny fundament wyboru. Terminal do suchego magazynu (IP54 wystarczy) kosztuje o 30–50% mniej niż terminal do chłodni lub pracy na deszczu (IP67/IP68 wymagane). Klasa IP65 oznacza pełną ochronę przed pyłem i strumieniem wody — wystarczająca dla 80% zastosowań magazynowych. IP67 gwarantuje zanurzenie do 1 m na 30 minut — konieczne w przetwórstwie spożywczym i outdoor. IP68 (do 2 m) — dla ekstremalnych warunków (porty, kopalnie, praca podwodna).</p>
+
+<h3>2. Wytrzymałość na upadki (drop spec)</h3>
+<p>Terminale padają na beton — to kwestia czasu, nie „czy". Entry-level (1,2–1,5 m) wystarczy do retail i lekkiego magazynu. Mid-range (1,8–2,4 m) to standard dla intensywnej pracy magazynowej. Ultra-rugged (3,0 m+) jest niezbędny w chłodniach (mokra podłoga), ciężkim przemyśle i centrach dystrybucyjnych z wielopoziomowymi regałami.</p>
+
+<h3>3. Skaner kodów kreskowych</h3>
+<p>Rodzaj zintegrowanego skanera ma bezpośredni wpływ na wydajność operatora:</p>
+<ul>
+  <li><strong>Standard range (SR)</strong> — do 50 cm, wystarczający do skanowania etykiet na półkach i paczkach na wyciągnięcie ręki</li>
+  <li><strong>Extended range (ER)</strong> — do 5–8 m, idealne dla magazynów z regałami do 3 m</li>
+  <li><strong>Long range (LR)</strong> — do 12–21 m, konieczne w centrach dystrybucyjnych z wysokimi regałami</li>
+  <li><strong>Flex range</strong> — od 8 cm do 13 m, uniwersalne (np. Zebra SE58 FlexRange) — najlepsza opcja jeśli terminal pracuje w różnych strefach</li>
+</ul>
+<p>Kluczowe: każdy nowoczesny terminal skanuje zarówno kody 1D (EAN-13, Code 128, GS1-128) jak i 2D (QR Code, DataMatrix, PDF417). Różnice dotyczą zasięgu i szybkości dekodowania przy złych warunkach (uszkodzone, brudne, słabo wydrukowane kody).</p>
+
+<h3>4. Łączność bezprzewodowa</h3>
+<p>Wi-Fi 6/6E jest standardem w 2026 — zapewnia stabilne połączenie z WMS w dużych magazynach z wieloma AP. Bluetooth 5.x jest konieczne do parowania z drukarkami mobilnymi (np. Zebra ZQ521) i ring scannerami. LTE/5G jest potrzebne tylko w field service (serwis w terenie), logistyce last-mile (kurierzy) i pracy w magazynach bez infrastruktury Wi-Fi. 5G to premium — w Polsce pokrycie jest jeszcze ograniczone.</p>
+
+<h3>5. Bateria i czas pracy</h3>
+<p>Minimalne wymaganie: bateria musi wytrzymać pełną zmianę (8–10 h) intensywnej pracy. Standardowe pojemności: 3 600–4 680 mAh (entry-level/mid-range) i 5 200–7 000 mAh (gun/ultra-rugged). Hot-swap (wymiana baterii bez wyłączania) jest kluczowe w operacjach 24/7. PowerPrecision / PowerPrecision+ (Zebra) pokazują stan zdrowia baterii i przewidują wymianę — ważne przy flotach 50+ terminali.</p>
+
+<h3>6. System operacyjny i wsparcie</h3>
+<p>Android dominuje — 98% nowych terminali w 2026 pracuje na Androidzie. Kluczowy parametr to <strong>długość wsparcia bezpieczeństwa</strong>: Zebra oferuje do 10 lat (LifeGuard for Android), Honeywell 5–7 lat (Honeywell Sentinel), Datalogic 3–5 lat (EASEOFCARE), Newland 3–4 lata, M3 Mobile 3–5 lat. Dłuższe wsparcie = niższe TCO, bo nie musisz wymieniać terminali po 3 latach z powodu braku patchy bezpieczeństwa.</p>
+
+<h3>7. Ekosystem MDM i zarządzanie flotą</h3>
+<p>Przy flotach powyżej 10 terminali potrzebujesz MDM (Mobile Device Management) do zdalnej konfiguracji, aktualizacji i monitoringu. Zebra oferuje StageNow (darmowy) + SOTI/VMware/42Gears, Honeywell — UEM-ready, Datalogic — SureLock/SureMDM. Przy wyborze terminala sprawdź kompatybilność z Twoim obecnym MDM — migracja platformy to ukryty koszt rzędu 50–100 zł/urządzenie.</p>`
+    },
+    {
+      id: 'porownanie-marek',
+      heading: 'Porównanie 5 marek — Zebra, Honeywell, Datalogic, Newland, M3 Mobile',
+      content: `<p>Poniżej porównujemy pięć najważniejszych marek terminali mobilnych dostępnych na polskim rynku. Każda ma swoje mocne strony i optymalne segmenty zastosowań.</p>
+
+<h3>Zebra Technologies — lider rynku</h3>
+<p>Udział w rynku: ~45% globalnie, ~50% w Polsce. Najszersze portfolio (od entry-level TC22 za 2 417 zł po ultra-rugged MC9400 za 7 638 zł), najdłuższe wsparcie Androida (do 10 lat LifeGuard), najlepszy ekosystem MDM (StageNow, Mobility DNA). Unikalna przewaga: Mobility DNA — zestaw narzędzi (DataWedge, StageNow, WorryFree WiFi, PowerPrecision+) które obniżają TCO i upraszczają wdrożenie. Zebra jest najdroższa w zakupie, ale ma najniższe TCO na przestrzeni 5 lat.</p>
+
+<h3>Honeywell — solidna alternatywa</h3>
+<p>Udział: ~25%. Silna pozycja w logistyce i produkcji. Modele CT32 (entry-level, ~2 800 zł) i CT47 (mid-range, ~7 000 zł) konkurują cenowo z Zebrą. CK67 z 5 wariantami klawiatury to najlepszy wybór „z klawiaturą" na rynku. Dobre wsparcie Sentinel (5–7 lat patchy), solidny ekosystem MDM. Honeywell ma silne kanały dystrybucji w Polsce i dobrą dostępność serwisową.</p>
+
+<h3>Datalogic — weteran rynku</h3>
+<p>Udział: ~10%. Włoski producent z 50-letnim doświadczeniem. Memor 35 (6" FHD+, 5G, ~5 200 zł) to jeden z najnowocześniejszych terminali w segmencie mid-range. Skorpio X5 (gun, klawiatura, ~4 500 zł) jest popularny w magazynach. Mocna strona: optyka skanowania (tradycja w skanerach stacjonarnych). Słabsza strona: krótsze wsparcie Androida (3–5 lat) i mniejszy ekosystem MDM niż Zebra/Honeywell.</p>
+
+<h3>Newland — najlepszy stosunek cena/jakość</h3>
+<p>Udział: ~8%, najszybciej rosnący. Chiński producent z europejskim biurem (Holandia). MT93 Megattera Pro (~3 000 zł) oferuje IP67, angled shooter i 4G LTE w cenie entry-level konkurencji. Idealna marka dla firm, które potrzebują solidnych terminali przy ograniczonym budżecie. Słabsza strona: krótsze wsparcie Androida (3–4 lata), mniejsza sieć serwisowa w Polsce, brak rozbudowanego ekosystemu MDM.</p>
+
+<h3>M3 Mobile — król retail</h3>
+<p>Udział: ~5%. Koreański producent ceniony w retail i logistyce. SL20+ (~1 400–2 000 zł) to najtańszy terminal z Android 13 i IP67 — idealne do retail (weryfikacja cen, etykietowanie). Nowe modele UL30 (klawiatura, Android 14, 3 m drop) i SM30 (5G, IP68) z końca 2025 r. celują w segment premium. Dobra jakość wykonania, ale najmniejszy ekosystem i najkrótsze wsparcie w zestawieniu.</p>
+
+<h3>Porównanie marek — macierz decyzyjna</h3>
+<table style="width:100%">
+  <thead>
+    <tr>
+      <th>Kryterium</th>
+      <th>Zebra</th>
+      <th>Honeywell</th>
+      <th>Datalogic</th>
+      <th>Newland</th>
+      <th>M3 Mobile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cena zakupu</td>
+      <td>★★★</td>
+      <td>★★★★</td>
+      <td>★★★★</td>
+      <td>★★★★★</td>
+      <td>★★★★★</td>
+    </tr>
+    <tr>
+      <td>TCO 5-letnie</td>
+      <td>★★★★★</td>
+      <td>★★★★</td>
+      <td>★★★</td>
+      <td>★★★</td>
+      <td>★★★</td>
+    </tr>
+    <tr>
+      <td>Wsparcie Android</td>
+      <td>★★★★★ (10 lat)</td>
+      <td>★★★★ (5–7 lat)</td>
+      <td>★★★ (3–5 lat)</td>
+      <td>★★★ (3–4 lata)</td>
+      <td>★★★ (3–5 lat)</td>
+    </tr>
+    <tr>
+      <td>Ekosystem MDM</td>
+      <td>★★★★★</td>
+      <td>★★★★</td>
+      <td>★★★</td>
+      <td>★★</td>
+      <td>★★</td>
+    </tr>
+    <tr>
+      <td>Serwis w Polsce</td>
+      <td>★★★★★</td>
+      <td>★★★★</td>
+      <td>★★★</td>
+      <td>★★★</td>
+      <td>★★</td>
+    </tr>
+    <tr>
+      <td>Szerokość portfolio</td>
+      <td>★★★★★</td>
+      <td>★★★★</td>
+      <td>★★★</td>
+      <td>★★★</td>
+      <td>★★★</td>
+    </tr>
+  </tbody>
+</table>`
+    },
+    {
+      id: 'segmenty',
+      heading: 'Polecane terminale wg segmentu zastosowań',
+      content: `<p>Na podstawie ponad 500 wdrożeń w polskich firmach opracowaliśmy rekomendacje terminali dla 6 najczęstszych scenariuszy. Każda rekomendacja uwzględnia stosunek ceny do wydajności w danym segmencie.</p>
+
+<h3>Entry-level — retail, lekki magazyn, inwentaryzacja</h3>
+<p>Budżet: 1 400–3 200 zł/szt. Wymagania: IP65+, drop 1,2–1,5 m, Wi-Fi, BT, skaner SR, bateria 8h+.</p>
+<table style="width:100%">
+  <thead>
+    <tr><th>Model</th><th>Ekran</th><th>Waga</th><th>IP/Drop</th><th>Cena orientacyjna</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>M3 Mobile SL20+</td><td>5,45" HD</td><td>250 g</td><td>IP67 / 1,5 m</td><td>~1 400 zł</td></tr>
+    <tr><td>Zebra TC22</td><td>6" HD+</td><td>236 g</td><td>IP68 / 1,5 m</td><td>2 417 zł</td></tr>
+    <tr><td>Zebra TC27 (z LTE)</td><td>6" HD+</td><td>236 g</td><td>IP68 / 1,5 m</td><td>2 690 zł</td></tr>
+    <tr><td>Honeywell CT32</td><td>6" FHD</td><td>269 g</td><td>IP65/68 / 1,5 m</td><td>~2 800 zł</td></tr>
+    <tr><td>Newland MT93 Megattera Pro</td><td>5,5"</td><td>277 g</td><td>IP67 / 1,5 m</td><td>~3 000 zł</td></tr>
+  </tbody>
+</table>
+<p><strong>Nasza rekomendacja:</strong> Zebra TC22 — najlepszy balans cena/jakość/wsparcie (10 lat LifeGuard, IP68, Mobility DNA). Dla najniższego budżetu: M3 Mobile SL20+.</p>
+
+<h3>Mid-range — magazyn, logistyka, produkcja</h3>
+<p>Budżet: 4 500–7 500 zł/szt. Wymagania: IP65+, drop 1,8+ m, Wi-Fi 6, skaner ER/FlexRange, bateria 10h+.</p>
+<table style="width:100%">
+  <thead>
+    <tr><th>Model</th><th>Ekran</th><th>Waga</th><th>IP/Drop</th><th>Cena orientacyjna</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Datalogic Memor 35</td><td>6" FHD+</td><td>313 g</td><td>IP65/68 / 1,8 m</td><td>~5 200 zł</td></tr>
+    <tr><td>Zebra TC53</td><td>6" FHD+</td><td>301 g</td><td>IP68 / 2,4 m</td><td>6 418 zł</td></tr>
+    <tr><td>Honeywell CT47</td><td>5,5" FHD</td><td>314 g</td><td>IP65/68 / 2,45 m</td><td>~7 000 zł</td></tr>
+  </tbody>
+</table>
+<p><strong>Nasza rekomendacja:</strong> Zebra TC53 — najwyższy drop spec (2,4 m), FlexRange scanner SE55, Wi-Fi 6E, 10 lat wsparcia. Budżetowa alternatywa: Datalogic Memor 35 (5G, dobra optyka).</p>
+
+<h3>Z klawiaturą fizyczną — produkcja, chłodnie, inwentaryzacja</h3>
+<p>Budżet: 3 400–8 800 zł/szt. Wymagania: klawiatura fizyczna podświetlana, IP65+, drop 1,8+ m, obsługa w rękawicach.</p>
+<table style="width:100%">
+  <thead>
+    <tr><th>Model</th><th>Klawiatura</th><th>Waga</th><th>IP/Drop</th><th>Cena orientacyjna</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>M3 Mobile UL20</td><td>numeryczna/alfanum.</td><td>530 g</td><td>IP67 / 2,0 m</td><td>~3 400 zł</td></tr>
+    <tr><td>Zebra MC3400</td><td>29/47-key</td><td>490 g</td><td>IP64 / 1,8 m</td><td>4 561 zł</td></tr>
+    <tr><td>Honeywell CK67</td><td>5 wariantów</td><td>516 g</td><td>IP65 / 2,4 m</td><td>~7 200 zł</td></tr>
+    <tr><td>M3 Mobile UL30</td><td>numeryczna/alfanum.</td><td>~530 g</td><td>IP67 / 3,0 m</td><td>~b.d. (nowość 2025)</td></tr>
+  </tbody>
+</table>
+<p><strong>Nasza rekomendacja:</strong> Zebra MC3400 — sprawdzony model, wymienne moduły skanera, Android 11→14 upgrade. Dla intensywnej pracy w chłodniach: Honeywell CK67 (7 000 mAh, 2,4 m drop, 5 wariantów klawiatury).</p>
+
+<h3>Ultra-rugged — ciężki przemysł, chłodnie, centra dystrybucyjne</h3>
+<p>Budżet: 4 500–9 000 zł/szt. Wymagania: IP67+, drop 3,0 m, bateria 5 200+ mAh, hot-swap, skaner LR.</p>
+<table style="width:100%">
+  <thead>
+    <tr><th>Model</th><th>IP/Drop</th><th>Bateria</th><th>Skaner</th><th>Cena orientacyjna</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Datalogic Skorpio X5</td><td>IP65 / 1,8 m</td><td>3 500 mAh</td><td>do 15 m</td><td>~4 500 zł</td></tr>
+    <tr><td>Zebra MC9400</td><td>IP67 / 3,0 m</td><td>5 200 mAh</td><td>SE58 FlexRange</td><td>7 638 zł</td></tr>
+    <tr><td>Honeywell CK67</td><td>IP65 / 2,4 m</td><td>7 000 mAh</td><td>FlexRange</td><td>~7 200 zł</td></tr>
+  </tbody>
+</table>
+<p><strong>Nasza rekomendacja:</strong> Zebra MC9400 — flagowiec kategorii, 3 m drop, SE58 FlexRange (8 cm–13 m), hot-swap, do −30°C z opcją heated display. Standard branżowy w centrach dystrybucyjnych.</p>
+
+<h3>Field service (LTE/5G) — serwis w terenie, kurierzy, logistyka last-mile</h3>
+<p>Budżet: 2 600–8 000 zł/szt. Wymagania: LTE/5G, GPS, duży ekran (5,5"+), bateria 12h+ w terenie, aparat foto.</p>
+<table style="width:100%">
+  <thead>
+    <tr><th>Model</th><th>Łączność</th><th>Bateria</th><th>Ekran</th><th>Cena orientacyjna</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Zebra TC27</td><td>4G LTE</td><td>3 800 mAh</td><td>6" HD+</td><td>2 690 zł</td></tr>
+    <tr><td>Zebra TC58</td><td>5G</td><td>4 680 mAh</td><td>6" FHD+</td><td>6 751 zł</td></tr>
+    <tr><td>Honeywell CT47</td><td>5G</td><td>4 680 mAh</td><td>5,5" FHD</td><td>~7 500 zł</td></tr>
+    <tr><td>M3 Mobile SM30</td><td>5G</td><td>4 500 mAh</td><td>5,5" FHD</td><td>~b.d. (nowość 2025)</td></tr>
+  </tbody>
+</table>
+<p><strong>Nasza rekomendacja:</strong> Zebra TC27 (budżetowy LTE) lub TC58 (premium 5G). TC27 to najlepszy stosunek cena/łączność na rynku — IP68, Android 14, aparat 16 Mpx za 2 690 zł.</p>
+
+<h3>RFID — identyfikacja radiowa, inwentaryzacja masowa</h3>
+<p>Budżet: 2 900–8 600 zł/szt. Wymagania: zintegrowany czytnik RFID UHF, zasięg odczytu 3–10 m, wielotagowy (100+ tagów/s).</p>
+<table style="width:100%">
+  <thead>
+    <tr><th>Model</th><th>Zasięg RFID</th><th>Tagów/s</th><th>Form factor</th><th>Cena orientacyjna</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Zebra EM45</td><td>do 5 m</td><td>100+</td><td>Brick ze zintegrowaną anteną</td><td>2 951 zł</td></tr>
+    <tr><td>Zebra TC501</td><td>do 6 m</td><td>200+</td><td>Brick premium</td><td>3 730 zł</td></tr>
+  </tbody>
+</table>
+<p><strong>Nasza rekomendacja:</strong> Zebra EM45 dla podstawowej inwentaryzacji RFID. Zebra TC501 dla zaawansowanych wdrożeń (retail asset tracking, zarządzanie narzędziami, healthcare). Zebra dominuje segment RFID handheld — brak realnej konkurencji w tej klasie cenowej.</p>`
+    },
+    {
+      id: 'tco',
+      heading: 'Kalkulacja TCO — prawdziwy koszt terminala mobilnego',
+      content: `<p>Cena zakupu to zaledwie 30–40% całkowitego kosztu posiadania (TCO) terminala mobilnego na przestrzeni 5 lat. Reszta to akcesoria, serwis, wsparcie, baterie i czas IT. Poniżej przedstawiamy realistyczną kalkulację TCO dla dwóch scenariuszy.</p>
+
+<h3>Scenariusz 1: Flota 20 terminali — magazyn e-commerce</h3>
+<table style="width:100%">
+  <thead>
+    <tr><th>Pozycja kosztowa</th><th>Zebra TC53</th><th>Honeywell CT47</th><th>Newland MT93</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Zakup terminala (×20)</td><td>128 360 zł</td><td>~140 000 zł</td><td>~60 000 zł</td></tr>
+    <tr><td>Akcesoria (ładowarki, etui, kabury)</td><td>~18 000 zł</td><td>~16 000 zł</td><td>~10 000 zł</td></tr>
+    <tr><td>Baterie zapasowe (1 na terminal)</td><td>~8 000 zł</td><td>~7 000 zł</td><td>~4 000 zł</td></tr>
+    <tr><td>Wsparcie 5 lat (OneCare/Sentinel)</td><td>~24 000 zł</td><td>~22 000 zł</td><td>~0 (brak programu)</td></tr>
+    <tr><td>Wymiana baterii (rok 3–4)</td><td>~8 000 zł</td><td>~7 000 zł</td><td>~4 000 zł</td></tr>
+    <tr><td>Wymiana terminali (rok 4–5)*</td><td>0 zł</td><td>0 zł</td><td>~60 000 zł</td></tr>
+    <tr><td><strong>TCO 5 lat</strong></td><td><strong>~186 000 zł</strong></td><td><strong>~192 000 zł</strong></td><td><strong>~138 000 zł</strong></td></tr>
+    <tr><td><strong>TCO/terminal/rok</strong></td><td><strong>1 860 zł</strong></td><td><strong>1 920 zł</strong></td><td><strong>1 380 zł</strong></td></tr>
+  </tbody>
+</table>
+<p>* Newland MT93: krótsze wsparcie Android (3–4 lata) wymusza wymianę sprzętu w roku 4–5, co podwaja koszt zakupu.</p>
+
+<h3>Scenariusz 2: Flota 5 terminali — mały magazyn / retail</h3>
+<table style="width:100%">
+  <thead>
+    <tr><th>Pozycja kosztowa</th><th>Zebra TC22</th><th>M3 SL20+</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Zakup terminala (×5)</td><td>12 085 zł</td><td>~7 000 zł</td></tr>
+    <tr><td>Akcesoria</td><td>~3 000 zł</td><td>~2 000 zł</td></tr>
+    <tr><td>Baterie zapasowe</td><td>~2 000 zł</td><td>~1 500 zł</td></tr>
+    <tr><td>OneCare 5 lat</td><td>~6 000 zł</td><td>~0 zł</td></tr>
+    <tr><td><strong>TCO 5 lat</strong></td><td><strong>~23 000 zł</strong></td><td><strong>~10 500 zł</strong></td></tr>
+    <tr><td><strong>TCO/terminal/rok</strong></td><td><strong>920 zł</strong></td><td><strong>420 zł</strong></td></tr>
+  </tbody>
+</table>
+<p><strong>Wniosek:</strong> Przy małych flotach (do 10 szt.) i niskim budżecie M3 Mobile SL20+ daje najniższe TCO. Przy flotach 20+ terminali i wymaganiu 5-letniego wsparcia Zebra TC53 wygrywa per-terminal-per-year mimo wyższego kosztu zakupu, bo eliminuje wymianę sprzętu.</p>
+
+<h3>Ukryte koszty, o których zapominają kupujący</h3>
+<ul>
+  <li><strong>Czas IT na konfigurację</strong> — bez StageNow/MDM: ~30 min/terminal, z MDM: ~5 min (oszczędność 200+ godzin IT przy flocie 500 szt.)</li>
+  <li><strong>Przestoje z powodu awarii</strong> — koszt 1h przestoju operatora to 50–80 zł, terminal w naprawie = 3–5 dni bez operatora</li>
+  <li><strong>Szkolenie operatorów</strong> — zmiana marki = 2–4h szkolenia × liczba operatorów</li>
+  <li><strong>Certyfikacja aplikacji</strong> — Twoja aplikacja WMS musi działać na nowym terminalu (testy kompatybilności: 1–3 dni)</li>
+</ul>`
+    },
+    {
+      id: 'wdrozenie',
+      heading: 'Jak wdrożyć terminale mobilne — krok po kroku',
+      content: `<p>Prawidłowe wdrożenie terminali mobilnych to nie tylko zakup sprzętu. Z naszego doświadczenia wynika, że 70% problemów wynika z pominięcia etapu przygotowania. Oto sprawdzony proces w 6 krokach.</p>
+
+<h3>Krok 1: Audyt procesów i wymagań</h3>
+<p>Przed wyborem terminala zmapuj procesy, które mają być obsługiwane: ile skanów na zmianę, jakie kody (1D/2D, odległość skanowania), jakie warunki środowiskowe (temperatura, wilgotność, ryzyko upadków), ile terminali potrzebujesz (operatorzy + zapas 10–15%), jakie aplikacje mają działać (WMS, ERP, dedykowana apka).</p>
+
+<h3>Krok 2: Pilot (Proof of Concept)</h3>
+<p>Zamów 2–3 terminale do testów. Poproś dostawcę o urządzenia demonstracyjne (TAKMA oferuje piloty bezpłatnie). Testuj przez 2–4 tygodnie w realnych warunkach. Mierz: czas skanowania, ergonomię (komfort po 8h), żywotność baterii, zasięg Wi-Fi w Twoim magazynie, kompatybilność z Twoim WMS/ERP.</p>
+
+<h3>Krok 3: Konfiguracja i staging</h3>
+<p>Przy flotach 10+ terminali użyj narzędzi staging: Zebra StageNow (skanuj barcode = terminal skonfigurowany), Honeywell Provisioning, SOTI MobiControl. Konfiguracja obejmuje: Wi-Fi (SSID, certyfikaty), VPN, aplikacje, aktualizacje, polityki bezpieczeństwa (lockdown kiosk mode), DataWedge (profil skanera).</p>
+
+<h3>Krok 4: Infrastruktura sieciowa</h3>
+<p>Upewnij się, że Twoja sieć Wi-Fi jest gotowa: pokrycie -65 dBm minimum w każdym punkcie pracy, roaming bez przerw (802.11r/k/v), dedykowany VLAN dla terminali, bandwidth: min. 1 Mbps na terminal przy WMS. W dużych magazynach (5 000+ m²) rekomendujemy audyt Wi-Fi (heatmapa) przed wdrożeniem — koszt 2 000–5 000 zł, ale eliminuje 90% problemów z łącznością.</p>
+
+<h3>Krok 5: Szkolenie i rollout</h3>
+<p>Przeszkol operatorów: podstawowa obsługa (2h), skanowanie i aplikacja WMS (4h), rozwiązywanie problemów (wymiany baterii, restart, czyszczenie okna skanera). Wdrażaj etapami — najpierw 1 zmiana, potem rozszerzaj. Wyznacz „super-userów" (1 na 10 operatorów) jako pierwszą linię wsparcia.</p>
+
+<h3>Krok 6: Monitoring i optymalizacja</h3>
+<p>Po wdrożeniu monitoruj: stan baterii (PowerPrecision+ / EMM), liczbę awarii, czas skanowania vs. baseline, zużycie danych. Zebra VisibilityIQ Foresight daje dashboard z predykcjami awarii i rekomendacjami wymiany baterii — dostępne w ramach OneCare.</p>`
+    },
+    {
+      id: 'podsumowanie',
+      heading: 'Podsumowanie — który terminal wybrać?',
+      content: `<p>Wybór terminala mobilnego zależy od trzech głównych czynników: <strong>budżetu</strong>, <strong>środowiska pracy</strong> i <strong>skali floty</strong>. Oto nasze finalne rekomendacje:</p>
+
+<h3>Szybka ściągawka decyzyjna</h3>
+<table style="width:100%">
+  <thead>
+    <tr><th>Scenariusz</th><th>Rekomendacja #1</th><th>Alternatywa</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Retail, mały budżet</td><td>M3 Mobile SL20+</td><td>Zebra TC22</td></tr>
+    <tr><td>E-commerce, magazyn</td><td>Zebra TC22 / TC53</td><td>Honeywell CT32</td></tr>
+    <tr><td>Magazyn intensywny</td><td>Zebra TC53</td><td>Honeywell CT47</td></tr>
+    <tr><td>Produkcja z klawiaturą</td><td>Zebra MC3400</td><td>Honeywell CK67</td></tr>
+    <tr><td>Chłodnia / heavy-duty</td><td>Zebra MC9400</td><td>Honeywell CK67</td></tr>
+    <tr><td>Field service (LTE)</td><td>Zebra TC27</td><td>Zebra TC58 (5G)</td></tr>
+    <tr><td>RFID</td><td>Zebra EM45</td><td>Zebra TC501</td></tr>
+    <tr><td>Budżetowy, dobra jakość</td><td>Newland MT93</td><td>M3 Mobile SL20+</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Złota zasada:</strong> jeśli planujesz flotę 20+ terminali i potrzebujesz 5+ lat eksploatacji — wybierz Zebrę (najniższe TCO, najdłuższe wsparcie). Jeśli budżet jest priorytetem i flota jest mała (do 10 szt.) — Newland MT93 lub M3 Mobile SL20+ dadzą najlepszą wartość za pieniądze.</p>
+
+<p>Niezależnie od wybranej marki, kluczem do sukcesu jest prawidłowe wdrożenie: audyt procesów, pilot na 2–3 urządzeniach, staging z MDM i szkolenie operatorów. Zapraszamy do kontaktu — pomożemy dobrać terminale dopasowane do Twoich procesów, przeprowadzimy pilot i dostarczymy urządzenia z konfiguracją ready-to-use.</p>`
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Czym terminal mobilny różni się od smartfona?',
+      answer: 'Terminal mobilny ma wzmocnioną obudowę (IP65–IP68, upadki 1,2–3,0 m na beton), zintegrowany skaner kodów kreskowych klasy enterprise (skanuje uszkodzone, brudne i odległe kody, czego zwykły aparat nie potrafi), wymienną baterię z hot-swap, Android ze wsparciem bezpieczeństwa do 10 lat (vs. 3–4 lata w smartfonach) oraz narzędzia MDM do zarządzania flotą. Smartfon ze skanerem w etui to rozwiązanie tymczasowe — przy ponad 100 skanach dziennie terminal jest 3–5× szybszy i wielokrotnie trwalszy.'
+    },
+    {
+      question: 'Ile kosztuje terminal mobilny?',
+      answer: 'Ceny terminali mobilnych w Polsce w 2026 roku: entry-level (retail, lekki magazyn): 1 400–3 200 zł — np. M3 Mobile SL20+ (~1 400 zł), Zebra TC22 (2 417 zł), Honeywell CT32 (~2 800 zł). Mid-range (magazyn, logistyka): 4 500–7 500 zł — np. Zebra TC53 (6 418 zł), Honeywell CT47 (~7 000 zł). Ultra-rugged (chłodnie, ciężki przemysł): 7 000–9 000 zł — np. Zebra MC9400 (7 638 zł). RFID: 2 900–8 600 zł — np. Zebra EM45 (2 951 zł). Ceny netto. Do tego doliczyć akcesoria (ładowarka, etui, bateria zapasowa): 1 000–3 000 zł/terminal.'
+    },
+    {
+      question: 'Jak długo wytrzymuje bateria w terminalu mobilnym?',
+      answer: 'Czas pracy na jednym ładowaniu zależy od intensywności użytkowania i pojemności baterii. Entry-level (3 600–3 800 mAh): 8–10h przy umiarkowanym użytkowaniu (200–300 skanów/zmianę). Mid-range (4 680 mAh): 10–12h intensywnej pracy. Ultra-rugged (5 200–7 000 mAh): 12–16h. Przy operacjach 24/7 konieczna jest bateria zapasowa + ładowarka wielostanowiskowa (cradle). Baterie PowerPrecision+ (Zebra) pokazują stan zdrowia — wymiana zalecana gdy pojemność spadnie poniżej 80% (typowo po 18–24 miesiącach intensywnego użytkowania).'
+    },
+    {
+      question: 'Czy terminal mobilny wymaga sieci Wi-Fi?',
+      answer: 'Większość terminali pracuje przez Wi-Fi — to standard w magazynach i halach produkcyjnych. Jeśli operatorzy pracują w terenie (field service, kurierzy, inwentaryzacje u klienta) lub w lokalizacjach bez Wi-Fi, potrzebujesz terminala z modułem LTE/5G — np. Zebra TC27 (LTE, 2 690 zł) lub TC58 (5G, 6 751 zł). Część terminali (Zebra TC53, Honeywell CT47) jest dostępna w wariancie Wi-Fi-only i Wi-Fi+WWAN — wariant z LTE kosztuje 300–500 zł więcej. Bluetooth jest standardem we wszystkich terminalach i służy do łączności z drukarkami mobilnymi i ring scannerami.'
+    },
+    {
+      question: 'Jakie aplikacje działają na terminalach mobilnych?',
+      answer: 'Terminale mobilne pracują na Androidzie — obsługują wszystkie aplikacje z Google Play (choć często są zablokowane w trybie kiosku). Typowe aplikacje: systemy WMS (SAP EWM, Manhattan, Reflex, PWSK, Comarch WMS), ERP (SAP, Comarch ERP, Enova365), aplikacje kurierskie (InPost Manager, DPD Mobile), dedykowane apki firmowe. Zebra dostarcza DataWedge — narzędzie przekazujące dane ze skanera do dowolnej aplikacji (w tym do pola tekstowego w przeglądarce) bez programowania. Większość dostawców WMS oferuje gotowe wsparcie dla terminali Zebra i Honeywell.'
+    },
+    {
+      question: 'Czy mogę używać terminala mobilnego w chłodni?',
+      answer: 'Tak, ale nie każdy model. Do pracy w chłodniach (−20°C do −30°C) potrzebujesz terminala z rozszerzonym zakresem temperatur: Zebra MC9400 (−30°C do +50°C, opcja heated display eliminuje parowanie ekranu), Honeywell CK67 (−20°C, bateria 7 000 mAh wytrzymuje mróz). Kluczowe: wybierz model z ekranem obsługiwanym w rękawicach (capacitive touch with glove mode), baterię o zwiększonej pojemności (mróz skraca czas pracy o 20–30%) i obudowę z certyfikatem IP67 (kondensacja przy przejściach ciepło/zimno).'
+    },
+    {
+      question: 'Jak skanować kody kreskowe z daleka (np. z regałów wysokiego składowania)?',
+      answer: 'Potrzebujesz terminala z modułem skanera Extended Range (ER) lub Long Range (LR). Standard range (SR) skanuje do 50 cm — wystarczy do paczek na wyciągnięcie ręki. Extended range (5–8 m) — regały do 3 pięter. Long range / FlexRange (do 13–21 m) — magazyny wysokiego składowania. Rekomendowane modele: Zebra MC9400 z SE58 FlexRange (8 cm do 13 m — jeden skaner do wszystkiego), Zebra TC53 z SE55 FlexRange, Honeywell CT47 z FlexRange. Uwaga: skanowanie dalekozasięgne wymaga etykiet o odpowiednim rozmiarze (min. 50 mm dla 5+ m).'
+    },
+    {
+      question: 'Ile terminali potrzebuję dla mojego magazynu?',
+      answer: 'Zasada: 1 terminal na operatora na zmianę + 10–15% zapasu (naprawy, ładowanie, nowi pracownicy). Przykład: 20 operatorów, 2 zmiany = 40 terminali roboczych + 6 zapasowych = 46 terminali. Przy operacjach 24/7 z hot-swap baterii: 1 terminal na operatora + 2 baterie zapasowe. Bez hot-swap (ładowanie terminala): 1,5 terminala na operatora (zamiennie na ładowarce). Koszt infrastruktury ładowania (cradle wielostanowiskowy): 2 000–4 000 zł za moduł 4–8 stanowisk.'
+    },
+    {
+      question: 'Czy warto kupić kontrakt serwisowy (OneCare, Sentinel)?',
+      answer: 'Zdecydowanie tak — przy flotach powyżej 5 terminali kontrakt serwisowy się opłaca. Zebra OneCare Essential: ~1 200 zł/terminal/5 lat — obejmuje naprawy (w tym uszkodzenia przypadkowe), wymianę sprzętu i wsparcie techniczne. Bez kontraktu: sama naprawa rozbitego ekranu to 800–1 500 zł + 2–3 tygodnie oczekiwania. Z OneCare: naprawa w 3–5 dni roboczych, brak kosztów części. Przy flocie 20 terminali i 10% rocznym wskaźniku uszkodzeń oszczędzasz ~12 000 zł w ciągu 5 lat. Dodatkowa korzyść: gwarantowane aktualizacje bezpieczeństwa Androida przez cały okres kontraktu.'
+    },
+    {
+      question: 'Terminal mobilny Zebra czy Honeywell — co wybrać?',
+      answer: 'Zebra: lepsze TCO przy dużych flotach (50+), najdłuższe wsparcie Android (10 lat LifeGuard), najszerszy ekosystem MDM (Mobility DNA, StageNow, DataWedge), dominacja rynkowa (łatwiej o serwis i części w Polsce). Honeywell: niższe ceny zakupu w mid-range, lepsze opcje klawiatur fizycznych (CK67 — 5 wariantów), dobre wsparcie Sentinel (5–7 lat), silna pozycja w logistyce lotniczej i pharma. Nasza rekomendacja: Zebra dla magazynów, logistyki, flot 20+. Honeywell dla produkcji z klawiaturą, specjalistycznych zastosowań, firm z istniejącym ekosystemem Honeywell.'
+    },
+    {
+      question: 'Co to jest RFID w terminalu mobilnym i kiedy go potrzebuję?',
+      answer: 'RFID (Radio-Frequency Identification) to technologia bezstykowej identyfikacji — terminal odczytuje tagi RFID UHF z odległości do 5–10 m, nawet przez opakowanie. Jeden przejazd korytarzem = odczyt 100+ tagów na sekundę (vs. skanowanie kodów kreskowych jeden po drugim). Kiedy potrzebujesz RFID: inwentaryzacja dużych stanów (1 000+ SKU — RFID 10× szybszy), retail (śledzenie odzieży, zapobieganie kradzieżom), zarządzanie narzędziami/aktywami, healthcare (identyfikacja sprzętu medycznego). Polecane: Zebra EM45 (2 951 zł) dla podstawowych potrzeb, Zebra TC501 (3 730 zł) dla zaawansowanych wdrożeń.'
+    },
+    {
+      question: 'Jakie są alternatywy dla terminali mobilnych?',
+      answer: 'Alternatywy: (1) Smartfon z etui ze skanerem (np. Zebra TC22 vs. Samsung + etui Koamtac) — tańszy zakup, ale 2–3× wolniejsze skanowanie, krótsze wsparcie, brak MDM. Opłacalny do 50 skanów/dzień. (2) Tablet rugged (np. Zebra ET40/ET45) — duży ekran 10", ale ciężki (600+ g), nieporęczny do skanowania jedną ręką. Dobry do inwentaryzacji z dużą ilością danych wizualnych. (3) Voice picking (pick-by-voice) — terminal naręczny + słuchawka, operacje głosowe. Najwyższa wydajność w picking (obie ręce wolne), ale wyższy koszt wdrożenia (10 000–15 000 zł/stanowisko). (4) Skaner bezprzewodowy + laptop — najtańsza opcja do stanowiska stacjonarnego (pakowanie, weryfikacja).'
+    }
+  ],
+
+  relatedLinks: [
+    { title: 'Terminale mobilne — oferta', href: '/terminale-mobilne' },
+    { title: 'Zebra TC22', href: '/produkt/zebra-tc22' },
+    { title: 'Zebra TC53', href: '/produkt/zebra-tc53' },
+    { title: 'Zebra MC3400', href: '/produkt/zebra-mc3400' },
+    { title: 'Zebra MC9400', href: '/produkt/zebra-mc9400' },
+    { title: 'Drukarki mobilne', href: '/mobilne-drukarki-etykiet' },
+    { title: 'Kontakt i doradztwo', href: '/kontakt' },
+  ]
 }
 ]
 

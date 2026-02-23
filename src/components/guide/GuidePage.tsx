@@ -12,8 +12,9 @@ for (const p of products) {
 }
 
 // Bold + link product model names in HTML
+// Matches: ZD/ZT (printers), TC/MC/ZQ/EM (terminals/mobile printers), plus optional suffix
 function boldifyModels(html: string): string {
-  return html.replace(/(<[^>]*>)|(\b(?:Zebra\s+)?Z[DT]\d{3}[dDtT]?\b)/gi, (match, tag, model) => {
+  return html.replace(/(<[^>]*>)|(\b(?:Zebra\s+)?(?:Z[DT]\d{3}[dDtT]?|(?:TC|MC|ZQ|EM)\d{2,4}[a-z]?(?:\s+Plus)?)\b)/gi, (match, tag, model) => {
     if (tag) return tag
     const short = model.replace(/^Zebra\s+/i, '')
     const slug = productNameMap[short] || productNameMap[short.toUpperCase()]
@@ -189,26 +190,34 @@ export default function GuidePage({ guide }: GuidePageProps) {
               )}
 
               {/* CTA Section */}
-              <section className="mt-12 bg-gray-50 border border-gray-200 rounded-xl p-6 sm:p-8">
-                <h3 className="text-base font-bold text-gray-900 mb-2">Potrzebujesz pomocy w wyborze?</h3>
-                <p className="text-gray-600 text-sm mb-4">
-                  Nasi eksperci z ponad 25-letnim doświadczeniem pomogą dobrać drukarkę idealnie dopasowaną do Twoich potrzeb i budżetu.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <Link
-                    href="/kontakt"
-                    className="inline-flex items-center justify-center px-5 py-2.5 bg-primary-600 text-white text-sm font-semibold rounded-lg hover:bg-primary-700 transition-colors"
-                  >
-                    Skontaktuj się z nami
-                  </Link>
-                  <Link
-                    href="/drukarki-etykiet"
-                    className="inline-flex items-center justify-center px-5 py-2.5 border border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-100 transition-colors"
-                  >
-                    Przeglądaj drukarki
-                  </Link>
-                </div>
-              </section>
+              {(() => {
+                const isTerminal = guide.tags.includes('terminale-mobilne')
+                const ctaText = isTerminal ? 'urządzenie' : 'drukarkę'
+                const ctaHref = isTerminal ? '/terminale-mobilne' : '/drukarki-etykiet'
+                const ctaLabel = isTerminal ? 'Przeglądaj terminale' : 'Przeglądaj drukarki'
+                return (
+                  <section className="mt-12 bg-gray-50 border border-gray-200 rounded-xl p-6 sm:p-8">
+                    <h3 className="text-base font-bold text-gray-900 mb-2">Potrzebujesz pomocy w wyborze?</h3>
+                    <p className="text-gray-600 text-sm mb-4">
+                      Nasi eksperci z ponad 25-letnim doświadczeniem pomogą dobrać {ctaText} idealnie dopasowane do Twoich potrzeb i budżetu.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-3">
+                      <Link
+                        href="/kontakt"
+                        className="inline-flex items-center justify-center px-5 py-2.5 bg-primary-600 text-white text-sm font-semibold rounded-lg hover:bg-primary-700 transition-colors"
+                      >
+                        Skontaktuj się z nami
+                      </Link>
+                      <Link
+                        href={ctaHref}
+                        className="inline-flex items-center justify-center px-5 py-2.5 border border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-100 transition-colors"
+                      >
+                        {ctaLabel}
+                      </Link>
+                    </div>
+                  </section>
+                )
+              })()}
 
               {/* Related Links */}
               {guide.relatedLinks.length > 0 && (

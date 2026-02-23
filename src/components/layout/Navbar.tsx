@@ -65,6 +65,7 @@ const navigation: NavItem[] = [
       { name: 'Jak wybrać drukarkę etykiet', href: '/poradnik/jak-wybrac-drukarke-etykiet' },
       { name: 'Termiczna vs termotransferowa', href: '/poradnik/drukarka-termiczna-vs-termotransferowa' },
       { name: 'Przewodnik po drukarkach Zebra', href: '/poradnik/drukarki-etykiet-zebra-przewodnik' },
+      { name: 'Jak wybrać terminal mobilny', href: '/poradnik/jak-wybrac-terminal-mobilny' },
     ],
   },
   {
