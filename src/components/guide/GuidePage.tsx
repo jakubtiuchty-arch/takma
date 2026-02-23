@@ -12,17 +12,26 @@ for (const p of products) {
 }
 
 // Bold + link product model names in HTML
-// Matches: ZD/ZT (printers), TC/MC/ZQ/EM (terminals/mobile printers), plus optional suffix
+// Matches: Zebra ZD/ZT/TC/MC/ZQ/EM, Honeywell CT/CK, Datalogic Memor/Skorpio, Newland MT, M3 SL/UL/SM
 function boldifyModels(html: string): string {
-  return html.replace(/(<[^>]*>)|(\b(?:Zebra\s+)?(?:Z[DT]\d{3}[dDtT]?|(?:TC|MC|ZQ|EM)\d{2,4}[a-z]?(?:\s+Plus)?)\b)/gi, (match, tag, model) => {
-    if (tag) return tag
-    const short = model.replace(/^Zebra\s+/i, '')
-    const slug = productNameMap[short] || productNameMap[short.toUpperCase()]
-    if (slug) {
-      return `<strong><a href="/produkt/${slug}">${model}</a></strong>`
+  return html.replace(
+    /(<[^>]*>)|(\b(?:Zebra\s+)?(?:Z[DT]\d{3}[dDtT]?|(?:TC|MC|ZQ|EM)\d{2,4}[a-z]?(?:\s+Plus)?)(?=[\s,.<)]|\b))|(\b(?:Honeywell\s+)?(?:CT|CK)\d{2,3}\b)|(\bDatalogic\s+(?:Memor|Skorpio)\s+\w+\b)|(\bNewland\s+MT\d{2,3}\b)|(\bM3\s+(?:Mobile\s+)?(?:SL|UL|SM)\d{2}\+?\b)/gi,
+    (match, tag) => {
+      if (tag) return tag
+      // Check if it's a Zebra product we can link to
+      const zebraMatch = match.replace(/^Zebra\s+/i, '')
+      const slug = productNameMap[zebraMatch] || productNameMap[zebraMatch.toUpperCase()]
+      if (slug) {
+        return `<strong><a href="/produkt/${slug}">${match}</a></strong>`
+      }
+      // Check Datalogic products (stored as "Datalogic Skorpio X5" etc.)
+      const datalogicSlug = productNameMap[match] || productNameMap[match.replace(/^Datalogic\s+/i, '')]
+      if (datalogicSlug) {
+        return `<strong><a href="/produkt/${datalogicSlug}">${match}</a></strong>`
+      }
+      return `<strong>${match}</strong>`
     }
-    return `<strong>${model}</strong>`
-  })
+  )
 }
 
 interface GuidePageProps {
@@ -65,6 +74,29 @@ export default function GuidePage({ guide }: GuidePageProps) {
     image: guide.heroImage ? `https://takma.com.pl${guide.heroImage}` : undefined,
   }
 
+  // JSON-LD: HowTo (for step-by-step sections like "Jak wdrożyć...")
+  const howToSection = guide.sections.find(s => s.id === 'wdrozenie')
+  const howToJsonLd = howToSection ? (() => {
+    const stepMatches = howToSection.content.match(/<h3>Krok \d+:[^<]*<\/h3>\s*<p>([^<]*(?:<[^/][^>]*>[^<]*)*)<\/p>/g)
+    if (!stepMatches || stepMatches.length === 0) return null
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: howToSection.heading,
+      description: 'Krok po kroku: jak prawidłowo wdrożyć terminale mobilne w firmie — od audytu procesów po monitoring.',
+      step: stepMatches.map((match, i) => {
+        const nameMatch = match.match(/<h3>(Krok \d+:[^<]*)<\/h3>/)
+        const textMatch = match.match(/<p>([\s\S]*?)<\/p>/)
+        return {
+          '@type': 'HowToStep',
+          position: i + 1,
+          name: nameMatch ? nameMatch[1].replace(/<[^>]*>/g, '') : `Krok ${i + 1}`,
+          text: textMatch ? textMatch[1].replace(/<[^>]*>/g, '') : '',
+        }
+      }),
+    }
+  })() : null
+
   // JSON-LD: FAQPage (rich snippets w Google)
   const faqJsonLd = guide.faq.length > 0 ? {
     '@context': 'https://schema.org',
@@ -84,6 +116,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
       {/* JSON-LD Schemas */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      {howToJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />}
       {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
 
       <div className="bg-white">
@@ -188,6 +221,21 @@ export default function GuidePage({ guide }: GuidePageProps) {
                   </div>
                 </section>
               )}
+
+              {/* Author Box (E-E-A-T) */}
+              <section className="mt-12 flex items-start gap-4 bg-gray-50 rounded-xl p-5 border border-gray-100">
+                <div className="flex-shrink-0 w-12 h-12 bg-primary-100 text-primary-700 rounded-full flex items-center justify-center font-bold text-lg">
+                  JT
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 text-sm">Jakub Tiuchty</p>
+                  <p className="text-xs text-gray-500 mb-1.5">Specjalista AutoID, TAKMA</p>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    25 lat doświadczenia w doborze i wdrażaniu terminali mobilnych, drukarek etykiet i systemów AutoID.
+                    Współpraca z Lasami Państwowymi, Orlen, Poczta Polska. Autor poradników na takma.com.pl.
+                  </p>
+                </div>
+              </section>
 
               {/* CTA Section */}
               {(() => {

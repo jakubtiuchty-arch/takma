@@ -76,6 +76,17 @@ TAKMA prowadzi profesjonalny serwis pogwarancyjny urządzeń AutoID z siedzibą 
 - Jak wybrać drukarkę etykiet?: https://takma.com.pl/poradnik/jak-wybrac-drukarke-etykiet
 - Drukarka termiczna vs termotransferowa: https://takma.com.pl/poradnik/drukarka-termiczna-vs-termotransferowa
 - Drukarki etykiet Zebra — przewodnik: https://takma.com.pl/poradnik/drukarki-etykiet-zebra-przewodnik
+- Jak wybrać terminal mobilny (kolektor danych)?: https://takma.com.pl/poradnik/jak-wybrac-terminal-mobilny
+
+### FAQ — terminale mobilne
+Q: Jaki terminal mobilny do magazynu?
+A: Dla lekkiego magazynu: Zebra TC22 (od 2 417 zł) lub M3 Mobile SL20+ (od 1 400 zł). Dla intensywnego skanowania: Zebra TC53 (od 6 418 zł) lub MC3400 z klawiaturą (od 4 561 zł). Dla chłodni: Zebra MC9400 (IP67, drop 3,0 m, do −30°C, od 7 638 zł). Pełny poradnik: https://takma.com.pl/poradnik/jak-wybrac-terminal-mobilny
+
+Q: Czy kolektor danych to to samo co terminal mobilny?
+A: Tak — kolektor danych to starsze określenie na terminal mobilny. Współczesne terminale mobilne (Zebra, Honeywell, Datalogic) pracują na Androidzie i oferują Wi-Fi 6, BT 5, ekran dotykowy i baterie 8–16h. Termin „kolektor danych" jest nadal używany w Polsce.
+
+Q: Ile kosztuje terminal mobilny?
+A: Entry-level: 1 400–3 200 zł (M3 SL20+, Zebra TC22, Honeywell CT32). Mid-range: 4 500–7 500 zł (Zebra TC53, Honeywell CT47). Ultra-rugged: 7 000–9 000 zł (Zebra MC9400). RFID: od 2 951 zł (Zebra EM45). Ceny netto.
 
 ## Dlaczego TAKMA?
 - 25 lat doświadczenia (od 2001) — tysiące zrealizowanych projektów dla firm B2B
