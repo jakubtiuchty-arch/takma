@@ -46,8 +46,7 @@ export async function middleware(request: NextRequest) {
       'zebra-tc501', 'zebra-tc701', 'zebra-tc73', 'zebra-tc78',
       'datalogic-memor-11', 'datalogic-memor-12', 'datalogic-memor-17',
       'datalogic-memor-30', 'datalogic-memor-35', 'datalogic-skorpio-x5', 'datalogic-memor-k',
-      // RFID
-      'zebra-fx7500', 'zebra-fx9600', 'zebra-rfd40', 'zebra-rfd90',
+      // RFID — usunięte
       // Skanery
       'zebra-ds2208', 'zebra-ds2278', 'zebra-li4278', 'zebra-ds3608', 'zebra-ds8178',
       // Oprogramowanie
