@@ -1624,7 +1624,7 @@ export const guides: Guide[] = [
     {
       id: 'definicja',
       heading: 'Co to jest terminal mobilny?',
-      content: `<p><strong>W skrócie:</strong> Terminal mobilny (kolektor danych) to wzmocniony komputer przenośny ze zintegrowanym skanerem kodów kreskowych, stworzony do pracy w magazynach, produkcji i logistyce. W 2026 roku ceny zaczynają się od 1 400 zł (M3 Mobile SL20+) do 7 638 zł (Zebra MC9400). Kluczowe kryteria wyboru: klasa IP, wytrzymałość na upadki, typ skanera, łączność i długość wsparcia Android.</p>
+      content: `<p><strong>W skrócie:</strong> Terminal mobilny (kolektor danych) to wzmocniony komputer przenośny ze zintegrowanym skanerem kodów kreskowych, stworzony do pracy w magazynach, produkcji i logistyce. W 2026 roku ceny zaczynają się od 2 000 zł (M3 Mobile SL20+) do 7 638 zł (Zebra MC9400). Kluczowe kryteria wyboru: klasa IP, wytrzymałość na upadki, typ skanera, łączność i długość wsparcia Android.</p>
 
 <p>Terminal mobilny — nazywany również <strong>kolektorem danych</strong>, terminalem magazynowym, przenośnym komputerem przemysłowym (ang. handheld mobile computer, PDA) — to specjalistyczne urządzenie wyposażone w zintegrowany skaner kodów kreskowych, system operacyjny Android, ekran dotykowy, moduł łączności bezprzewodowej (Wi-Fi, Bluetooth, opcjonalnie LTE/5G) oraz baterię zapewniającą co najmniej jedną pełną zmianę roboczą. W odróżnieniu od zwykłego smartfona, terminal mobilny jest projektowany do pracy w wymagających warunkach — ma wzmocnioną obudowę (klasa <a href="https://pl.wikipedia.org/wiki/Stopie%C5%84_ochrony_IP" target="_blank" rel="noopener">IP65–IP68</a>), wytrzymuje upadki na beton z wysokości 1,2–3,0 m zgodnie ze standardem <a href="https://en.wikipedia.org/wiki/MIL-STD-810" target="_blank" rel="noopener">MIL-STD-810H</a> i pracuje w temperaturach od −20°C do +50°C.</p>
 
@@ -1706,7 +1706,7 @@ export const guides: Guide[] = [
     </tr>
     <tr>
       <td>Typowa cena</td>
-      <td>1 400–7 000 zł</td>
+      <td>2 000–7 000 zł</td>
       <td>4 500–9 000 zł</td>
       <td>3 400–8 800 zł</td>
       <td>5 000–12 000 zł</td>
@@ -1726,7 +1726,7 @@ export const guides: Guide[] = [
     <tr><td>Bateria wymienna</td><td>Tak (hot-swap)</td><td>Nie</td></tr>
     <tr><td>Wsparcie Android</td><td>3–10 lat</td><td>3–4 lata</td></tr>
     <tr><td>MDM/EMM</td><td>Pełne (StageNow, SOTI)</td><td>Ograniczone</td></tr>
-    <tr><td>Cena</td><td>1 400–9 000 zł</td><td>2 000–5 000 zł + etui 500 zł</td></tr>
+    <tr><td>Cena</td><td>2 000–9 000 zł</td><td>2 000–5 000 zł + etui 500 zł</td></tr>
     <tr><td>TCO 5 lat</td><td>Niższe przy 100+ skanów/dzień</td><td>Niższe przy &lt;50 skanów/dzień</td></tr>
   </tbody>
 </table>`
@@ -1792,7 +1792,7 @@ export const guides: Guide[] = [
 <p>Udział: ~8%, najszybciej rosnący. Chiński producent z europejskim biurem (Holandia). MT93 Megattera Pro (~3 000 zł) oferuje IP67, angled shooter i 4G LTE w cenie entry-level konkurencji. Idealna marka dla firm, które potrzebują solidnych terminali przy ograniczonym budżecie. Słabsza strona: krótsze wsparcie Androida (3–4 lata), mniejsza sieć serwisowa w Polsce, brak rozbudowanego ekosystemu MDM.</p>
 
 <h3>M3 Mobile — król retail</h3>
-<p>Udział: ~5%. Koreański producent ceniony w retail i logistyce. SL20+ (~1 400–2 000 zł) to najtańszy terminal z Android 13 i IP67 — idealne do retail (weryfikacja cen, etykietowanie). Nowe modele UL30 (klawiatura, Android 14, 3 m drop) i SM30 (5G, IP68) z końca 2025 r. celują w segment premium. Dobra jakość wykonania, ale najmniejszy ekosystem i najkrótsze wsparcie w zestawieniu.</p>
+<p>Udział: ~5%. Koreański producent ceniony w retail i logistyce. SL20+ (~2 000 zł) to najtańszy terminal z Android 13 i IP67 — idealne do retail (weryfikacja cen, etykietowanie). Nowe modele UL30 (klawiatura, Android 14, 3 m drop) i SM30 (5G, IP68) z końca 2025 r. celują w segment premium. Dobra jakość wykonania, ale najmniejszy ekosystem i najkrótsze wsparcie w zestawieniu.</p>
 
 <h3>Porównanie marek — macierz decyzyjna</h3>
 <table style="width:100%">
@@ -1864,13 +1864,13 @@ export const guides: Guide[] = [
       content: `<p>Ranking terminali mobilnych 2026: na podstawie ponad 500 wdrożeń realizowanych przez TAKMA w polskich firmach opracowaliśmy rekomendacje dla 6 najczęstszych scenariuszy. Każda rekomendacja uwzględnia stosunek ceny do wydajności w danym segmencie — TOP modele z cenami netto.</p>
 
 <h3>Entry-level — retail, lekki magazyn, inwentaryzacja</h3>
-<p>Budżet: 1 400–3 200 zł/szt. Wymagania: IP65+, drop 1,2–1,5 m, Wi-Fi, BT, skaner SR, bateria 8h+.</p>
+<p>Budżet: 2 000–3 200 zł/szt. Wymagania: IP65+, drop 1,2–1,5 m, Wi-Fi, BT, skaner SR, bateria 8h+.</p>
 <table style="width:100%">
   <thead>
     <tr><th>Model</th><th>Ekran</th><th>Waga</th><th>IP/Drop</th><th>Cena orientacyjna</th></tr>
   </thead>
   <tbody>
-    <tr><td>M3 Mobile SL20+</td><td>5,45" HD</td><td>250 g</td><td>IP67 / 1,5 m</td><td>~1 400 zł</td></tr>
+    <tr><td>M3 Mobile SL20+</td><td>5,45" HD</td><td>250 g</td><td>IP67 / 1,5 m</td><td>~2 000 zł</td></tr>
     <tr><td>Zebra TC22</td><td>6" HD+</td><td>236 g</td><td>IP68 / 1,5 m</td><td>2 417 zł</td></tr>
     <tr><td>Zebra TC27 (z LTE)</td><td>6" HD+</td><td>236 g</td><td>IP68 / 1,5 m</td><td>2 690 zł</td></tr>
     <tr><td>Honeywell CT32</td><td>6" FHD</td><td>269 g</td><td>IP65/68 / 1,5 m</td><td>~2 800 zł</td></tr>
@@ -1982,12 +1982,12 @@ export const guides: Guide[] = [
     <tr><th>Pozycja kosztowa</th><th>Zebra TC22</th><th>M3 SL20+</th></tr>
   </thead>
   <tbody>
-    <tr><td>Zakup terminala (×5)</td><td>12 085 zł</td><td>~7 000 zł</td></tr>
+    <tr><td>Zakup terminala (×5)</td><td>12 085 zł</td><td>~10 000 zł</td></tr>
     <tr><td>Akcesoria</td><td>~3 000 zł</td><td>~2 000 zł</td></tr>
     <tr><td>Baterie zapasowe</td><td>~2 000 zł</td><td>~1 500 zł</td></tr>
     <tr><td>OneCare 5 lat</td><td>~6 000 zł</td><td>~0 zł</td></tr>
-    <tr><td><strong>TCO 5 lat</strong></td><td><strong>~23 000 zł</strong></td><td><strong>~10 500 zł</strong></td></tr>
-    <tr><td><strong>TCO/terminal/rok</strong></td><td><strong>920 zł</strong></td><td><strong>420 zł</strong></td></tr>
+    <tr><td><strong>TCO 5 lat</strong></td><td><strong>~23 000 zł</strong></td><td><strong>~13 500 zł</strong></td></tr>
+    <tr><td><strong>TCO/terminal/rok</strong></td><td><strong>920 zł</strong></td><td><strong>540 zł</strong></td></tr>
   </tbody>
 </table>
 <p><strong>Wniosek:</strong> Przy małych flotach (do 10 szt.) i niskim budżecie M3 Mobile SL20+ daje najniższe TCO. Przy flotach 20+ terminali i wymaganiu 5-letniego wsparcia Zebra TC53 wygrywa per-terminal-per-year mimo wyższego kosztu zakupu, bo eliminuje wymianę sprzętu.</p>
@@ -2058,7 +2058,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Ile kosztuje terminal mobilny?',
-      answer: 'Ceny terminali mobilnych w Polsce w 2026 roku: entry-level (retail, lekki magazyn): 1 400–3 200 zł — np. M3 Mobile SL20+ (~1 400 zł), Zebra TC22 (2 417 zł), Honeywell CT32 (~2 800 zł). Mid-range (magazyn, logistyka): 4 500–7 500 zł — np. Zebra TC53 (6 418 zł), Honeywell CT47 (~7 000 zł). Ultra-rugged (chłodnie, ciężki przemysł): 7 000–9 000 zł — np. Zebra MC9400 (7 638 zł). RFID: 2 900–8 600 zł — np. Zebra EM45 (2 951 zł). Ceny netto. Do tego doliczyć akcesoria (ładowarka, etui, bateria zapasowa): 1 000–3 000 zł/terminal.'
+      answer: 'Ceny terminali mobilnych w Polsce w 2026 roku: entry-level (retail, lekki magazyn): 2 000–3 200 zł — np. M3 Mobile SL20+ (~2 000 zł), Zebra TC22 (2 417 zł), Honeywell CT32 (~2 800 zł). Mid-range (magazyn, logistyka): 4 500–7 500 zł — np. Zebra TC53 (6 418 zł), Honeywell CT47 (~7 000 zł). Ultra-rugged (chłodnie, ciężki przemysł): 7 000–9 000 zł — np. Zebra MC9400 (7 638 zł). RFID: 2 900–8 600 zł — np. Zebra EM45 (2 951 zł). Ceny netto. Do tego doliczyć akcesoria (ładowarka, etui, bateria zapasowa): 1 000–3 000 zł/terminal.'
     },
     {
       question: 'Jak długo wytrzymuje bateria w terminalu mobilnym?',
