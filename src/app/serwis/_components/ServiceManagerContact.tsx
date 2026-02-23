@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 export function ServiceManagerContact() {
   return (
     <section className="bg-gray-900 py-16 sm:py-24">
@@ -17,15 +15,9 @@ export function ServiceManagerContact() {
               usunięcie usterki — pracownik serwisu instruując użytkownika lepiej
               rozpoznaje i diagnozuje usterkę.
             </p>
-            <div className="mt-10">
-              <Image
-                src="/images/takma_logo.png"
-                alt="TAKMA — Centrum Systemów Mobilnych"
-                width={200}
-                height={60}
-                className="brightness-0 invert opacity-60"
-              />
-            </div>
+            <p className="mt-6 text-sm text-gray-500">
+              Kontakt bezpośredni z działem serwisu TAKMA — przed wysyłką sprzętu.
+            </p>
           </div>
 
           {/* Prawa kolumna — wizytówka */}
