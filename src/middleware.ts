@@ -17,6 +17,72 @@ export async function middleware(request: NextRequest) {
   requestHeaders.set('x-next-pathname', pathname)
 
   // -------------------------------------------------------------------------
+  // CATCH-ALL: Stare URLe WordPress → /produkt-przeniesiony
+  // Produkty bez odpowiednika na nowej stronie (Honeywell, Citizen, Brother,
+  // TSC, Unitech, M3, Custom, Elo, Newland, Sewoo, akcesoria itp.)
+  // Redirecty 1:1 dla Zebra/Datalogic są w next.config.mjs
+  // -------------------------------------------------------------------------
+  if (pathname.startsWith('/produkt/')) {
+    const slug = pathname.replace('/produkt/', '').replace(/\/$/, '')
+
+    // Lista slugów istniejących na nowej stronie (nie przekierowuj ich!)
+    const existingSlugs = new Set([
+      // Drukarki biurkowe
+      'zebra-zd220d', 'zebra-zd220t', 'zebra-zd230d', 'zebra-zd230t',
+      'zebra-zd411d', 'zebra-zd411t', 'zebra-zd421d', 'zebra-zd421t',
+      'zebra-zd510-hc', 'zebra-zd621d', 'zebra-zd621t',
+      // Drukarki przemysłowe
+      'zebra-zt111', 'zebra-zt231', 'zebra-zt411', 'zebra-zt421',
+      'zebra-zt510', 'zebra-zt610', 'zebra-zt620',
+      // Drukarki mobilne
+      'zebra-zq210', 'zebra-zq220-plus', 'zebra-zq310-plus', 'zebra-zq320-plus',
+      'zebra-zq511', 'zebra-zq521', 'zebra-zq610-plus', 'zebra-zq620-plus', 'zebra-zq630-plus',
+      // Drukarki kart
+      'zebra-zc100', 'zebra-zc300', 'zebra-zc350',
+      // Terminale
+      'zebra-mc2200', 'zebra-mc2700', 'zebra-mc3300x', 'zebra-mc3400', 'zebra-mc3450',
+      'zebra-mc9400', 'zebra-mc9450', 'zebra-em45',
+      'zebra-tc22', 'zebra-tc27', 'zebra-tc53', 'zebra-tc53e', 'zebra-tc58', 'zebra-tc58e',
+      'zebra-tc501', 'zebra-tc701', 'zebra-tc73', 'zebra-tc78',
+      'datalogic-memor-11', 'datalogic-memor-12', 'datalogic-memor-17',
+      'datalogic-memor-30', 'datalogic-memor-35', 'datalogic-skorpio-x5', 'datalogic-memor-k',
+      // RFID
+      'zebra-fx7500', 'zebra-fx9600', 'zebra-rfd40', 'zebra-rfd90',
+      // Skanery
+      'zebra-ds2208', 'zebra-ds2278', 'zebra-li4278', 'zebra-ds3608', 'zebra-ds8178',
+      // Oprogramowanie
+      'zebra-cardstudio',
+    ])
+
+    // Jeśli slug NIE istnieje na nowej stronie → redirect do strony przebudowy
+    if (!existingSlugs.has(slug)) {
+      // Sprawdź czy to nie jest slug z akcesoriami/etykietami (te mają dłuższe slugi)
+      // Nie matchuj jeśli to akcesoria na nowej stronie (sprawdzamy prefix)
+      const isNewSiteAccessory = slug.startsWith('glowica-') || slug.startsWith('walek-') ||
+        slug.startsWith('obcinak-') || slug.startsWith('odklejak-') || slug.startsWith('modul-') ||
+        slug.startsWith('bateria-') || slug.startsWith('zasilacz-') || slug.startsWith('etykiety-') ||
+        slug.startsWith('tasma-') || slug.startsWith('opaski-') || slug.startsWith('karta-') ||
+        slug.startsWith('stacja-') || slug.startsWith('ladowarka-') || slug.startsWith('uchwyt-') ||
+        slug.startsWith('etui-') || slug.startsWith('kabel-') || slug.startsWith('rysik-') ||
+        slug.startsWith('folia-') || slug.startsWith('pasek-') || slug.startsWith('egzoszkielet-') ||
+        slug.startsWith('kontrakt-')
+
+      if (!isNewSiteAccessory) {
+        return NextResponse.redirect(new URL('/produkt-przeniesiony', request.url), 301)
+      }
+    }
+  }
+
+  // Stare WordPress kategorie catch-all (te bez dopasowania w next.config.mjs)
+  if (pathname.startsWith('/kategoria/') && !pathname.startsWith('/kategoria/drukarki-etykiet') &&
+      !pathname.startsWith('/kategoria/terminale-mobilne') && !pathname.startsWith('/kategoria/materialy') &&
+      !pathname.startsWith('/kategoria/akcesoria') && !pathname.startsWith('/kategoria/skanery') &&
+      !pathname.startsWith('/kategoria/tablety') && !pathname.startsWith('/kategoria/oprogramowanie') &&
+      !pathname.startsWith('/kategoria/urzadzenia') && !pathname.startsWith('/kategoria/bez-kategorii')) {
+    return NextResponse.redirect(new URL('/produkt-przeniesiony', request.url), 301)
+  }
+
+  // -------------------------------------------------------------------------
   // Customer panel routes (/panel/*)
   // -------------------------------------------------------------------------
   if (pathname.startsWith('/panel')) {
