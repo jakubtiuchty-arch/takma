@@ -222,20 +222,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
                 </section>
               )}
 
-              {/* Author Box (E-E-A-T) */}
-              <section className="mt-12 flex items-start gap-4 bg-gray-50 rounded-xl p-5 border border-gray-100">
-                <div className="flex-shrink-0 w-12 h-12 bg-primary-100 text-primary-700 rounded-full flex items-center justify-center font-bold text-lg">
-                  JT
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900 text-sm">Jakub Tiuchty</p>
-                  <p className="text-xs text-gray-500 mb-1.5">Specjalista AutoID, TAKMA</p>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    25 lat doświadczenia w doborze i wdrażaniu terminali mobilnych, drukarek etykiet i systemów AutoID.
-                    Współpraca z Lasami Państwowymi, Orlen, Poczta Polska. Autor poradników na takma.com.pl.
-                  </p>
-                </div>
-              </section>
+              {/* Author data in JSON-LD Article schema only (E-E-A-T) — not rendered visually */}
 
               {/* CTA Section */}
               {(() => {
