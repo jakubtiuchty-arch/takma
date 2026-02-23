@@ -75,12 +75,26 @@ export async function POST(request: Request) {
       console.error('[REGISTER] Error updating profile:', profileError)
     }
 
+    // 4. Generate magic link token for auto-login on serwis-zebry.pl
+    let tokenHash: string | null = null
+    const { data: linkData, error: linkError } = await supabaseAdmin.auth.admin.generateLink({
+      type: 'magiclink',
+      email: validatedData.email,
+    })
+
+    if (linkError) {
+      console.error('[REGISTER] Magic link error:', linkError)
+    } else {
+      tokenHash = linkData.properties?.hashed_token || null
+    }
+
     return NextResponse.json({
       success: true,
       user: {
         id: authData.user.id,
         email: authData.user.email,
       },
+      tokenHash,
       message: 'Konto utworzone pomyslnie',
     })
   } catch (error) {
