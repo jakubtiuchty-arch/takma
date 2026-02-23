@@ -783,7 +783,7 @@ export function buildRepairSubmittedAdminEmail(data: {
         ]) +
         emailSectionTitle('Opis usterki') +
         emailMessageBox(esc(data.problemDescription)) +
-        emailButton('Otw&#243;rz w panelu admina', `https://www.serwis-zebry.pl/admin`)
+        emailButton('Otwórz w panelu admina', `https://www.serwis-zebry.pl/admin`)
       ),
   })
 }
