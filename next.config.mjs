@@ -32,17 +32,9 @@ const nextConfig = {
       // =====================================================
 
       // =====================================================
-      // ZEBRA TERMINALE — 1:1 i następcy
+      // ZEBRA TERMINALE — tylko zmiany slugów (stary → nowy model)
+      // Produkty z identycznym slugiem nie potrzebują redirectu
       // =====================================================
-      { source: '/produkt/zebra-mc9400/:path*', destination: '/produkt/zebra-mc9400', permanent: true },
-      { source: '/produkt/zebra-mc3300x/:path*', destination: '/produkt/zebra-mc3300x', permanent: true },
-      { source: '/produkt/zebra-mc3400/:path*', destination: '/produkt/zebra-mc3400', permanent: true },
-      { source: '/produkt/zebra-mc2200/:path*', destination: '/produkt/zebra-mc2200', permanent: true },
-      { source: '/produkt/zebra-tc22/:path*', destination: '/produkt/zebra-tc22', permanent: true },
-      { source: '/produkt/zebra-tc27/:path*', destination: '/produkt/zebra-tc27', permanent: true },
-      { source: '/produkt/zebra-tc58/:path*', destination: '/produkt/zebra-tc58', permanent: true },
-      { source: '/produkt/zebra-tc78/:path*', destination: '/produkt/zebra-tc78', permanent: true },
-      // Następcy (stary → nowy model)
       { source: '/produkt/zebra-mc9300/:path*', destination: '/produkt/zebra-mc9400', permanent: true },
       { source: '/produkt/zebra-mc2207/:path*', destination: '/produkt/zebra-mc2700', permanent: true },
       { source: '/produkt/zebra-tc21/:path*', destination: '/produkt/zebra-tc22', permanent: true },
@@ -52,7 +44,7 @@ const nextConfig = {
       { source: '/produkt/zebra-tc77/:path*', destination: '/produkt/zebra-tc78', permanent: true },
 
       // =====================================================
-      // ZEBRA DRUKARKI BIURKOWE — split d/t
+      // ZEBRA DRUKARKI BIURKOWE — split d/t (stary slug → domyślny wariant)
       // =====================================================
       { source: '/produkt/zebra-zd220/:path*', destination: '/produkt/zebra-zd220d', permanent: true },
       { source: '/produkt/zebra-zd230/:path*', destination: '/produkt/zebra-zd230d', permanent: true },
@@ -62,27 +54,16 @@ const nextConfig = {
       { source: '/produkt/zebra-zd621/:path*', destination: '/produkt/zebra-zd621t', permanent: true },
 
       // =====================================================
-      // ZEBRA DRUKARKI PRZEMYSŁOWE
+      // ZEBRA DRUKARKI PRZEMYSŁOWE — tylko zmiany slugów
       // =====================================================
-      { source: '/produkt/zebra-zt111/:path*', destination: '/produkt/zebra-zt111', permanent: true },
-      { source: '/produkt/zebra-zt231/:path*', destination: '/produkt/zebra-zt231', permanent: true },
-      { source: '/produkt/zebra-zt411/:path*', destination: '/produkt/zebra-zt411', permanent: true },
       { source: '/produkt/zebra-zt411-rfid/:path*', destination: '/produkt/zebra-zt411', permanent: true },
-      { source: '/produkt/zebra-zt421/:path*', destination: '/produkt/zebra-zt421', permanent: true },
-      { source: '/produkt/zebra-zt510/:path*', destination: '/produkt/zebra-zt510', permanent: true },
-      { source: '/produkt/zebra-zt610/:path*', destination: '/produkt/zebra-zt610', permanent: true },
       { source: '/produkt/zebra-zt620-2/:path*', destination: '/produkt/zebra-zt620', permanent: true },
-      // Następcy
       { source: '/produkt/zebra-zt220/:path*', destination: '/produkt/zebra-zt231', permanent: true },
       { source: '/produkt/zebra-zt230/:path*', destination: '/produkt/zebra-zt231', permanent: true },
 
       // =====================================================
-      // ZEBRA DRUKARKI MOBILNE
+      // ZEBRA DRUKARKI MOBILNE — tylko zmiany slugów (model → Plus)
       // =====================================================
-      { source: '/produkt/zebra-zq210/:path*', destination: '/produkt/zebra-zq210', permanent: true },
-      { source: '/produkt/zebra-zq310-plus/:path*', destination: '/produkt/zebra-zq310-plus', permanent: true },
-      { source: '/produkt/zebra-zq521/:path*', destination: '/produkt/zebra-zq521', permanent: true },
-      // Następcy (model → Plus)
       { source: '/produkt/zebra-zq220/:path*', destination: '/produkt/zebra-zq220-plus', permanent: true },
       { source: '/produkt/zebra-zq312-plus/:path*', destination: '/produkt/zebra-zq310-plus', permanent: true },
       { source: '/produkt/zebra-zq610/:path*', destination: '/produkt/zebra-zq610-plus', permanent: true },
@@ -90,14 +71,11 @@ const nextConfig = {
       { source: '/produkt/zebra-zq630/:path*', destination: '/produkt/zebra-zq630-plus', permanent: true },
 
       // =====================================================
-      // ZEBRA SKANERY — warianty → strona główna skanera
+      // ZEBRA SKANERY — warianty → strona główna skanera (tylko zmiana slugu)
       // =====================================================
-      { source: '/produkt/zebra-ds2208/:path*', destination: '/produkt/zebra-ds2208', permanent: true },
       { source: '/produkt/zebra-ds2208-hc/:path*', destination: '/produkt/zebra-ds2208', permanent: true },
-      { source: '/produkt/zebra-ds2278/:path*', destination: '/produkt/zebra-ds2278', permanent: true },
-      { source: '/produkt/zebra-li4278/:path*', destination: '/produkt/zebra-li4278', permanent: true },
-      // DS3608 family (wired + wireless DS3678 + 1D LI3608/LI3678)
-      { source: '/produkt/zebra-ds3608:path*', destination: '/produkt/zebra-ds3608', permanent: true },
+      // DS3608 family: warianty (-sr, -er, -hd, -hp, -dp) + DS3678 + LI3608/LI3678
+      { source: '/produkt/zebra-ds3608-:path+', destination: '/produkt/zebra-ds3608', permanent: true },
       { source: '/produkt/zebra-ds3678:path*', destination: '/produkt/zebra-ds3608', permanent: true },
       { source: '/produkt/zebra-li3608:path*', destination: '/produkt/zebra-ds3608', permanent: true },
       { source: '/produkt/zebra-li3678:path*', destination: '/produkt/zebra-ds3608', permanent: true },
@@ -111,12 +89,10 @@ const nextConfig = {
       { source: '/produkt/zebra-ls2208/:path*', destination: '/produkt/zebra-ds2208', permanent: true },
 
       // =====================================================
-      // DATALOGIC — z odpowiednikiem
+      // DATALOGIC — tylko zmiany slugów
       // =====================================================
       { source: '/produkt/datalogic-memor-1/:path*', destination: '/produkt/datalogic-memor-11', permanent: true },
       { source: '/produkt/datalogic-memor-20/:path*', destination: '/produkt/datalogic-memor-30', permanent: true },
-      { source: '/produkt/datalogic-memor-k/:path*', destination: '/produkt/datalogic-memor-k', permanent: true },
-      { source: '/produkt/datalogic-skorpio-x5/:path*', destination: '/produkt/datalogic-skorpio-x5', permanent: true },
 
       // =====================================================
       // KATEGORIE — stara → nowa struktura
