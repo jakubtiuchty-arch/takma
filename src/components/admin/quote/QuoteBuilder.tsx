@@ -2,7 +2,7 @@
 
 import { useEffect, useTransition, useRef } from 'react'
 import { useQuoteStore } from '@/store/quoteStore'
-import { createQuote, priceRfqQuote } from '@/actions/admin-quotes'
+import { createQuote, priceRfqQuote, updateQuote } from '@/actions/admin-quotes'
 import NipLookup from './NipLookup'
 import ProductSearch from './ProductSearch'
 import ManualItemForm from './ManualItemForm'
@@ -29,23 +29,92 @@ interface RfqData {
   }[]
 }
 
-interface QuoteBuilderProps {
-  rfqData?: RfqData
+export interface EditData {
+  quoteId: string
+  client: {
+    company: string
+    nip?: string
+    contact?: string
+    email?: string
+    phone?: string
+    address?: string
+  }
+  items: {
+    source: string
+    productId?: string
+    productName: string
+    partNumber?: string
+    description?: string
+    quantity: number
+    priceNetto: number
+    purchasePrice?: number
+    marginPercent?: number
+    discountPercent?: number
+    catalogPrice?: number
+  }[]
+  terms: {
+    validDays: number
+    paymentTerms: string
+    deliveryTerms: string
+    notes?: string
+    internalNotes?: string
+    freebiesNote?: string
+  }
 }
 
-export default function QuoteBuilder({ rfqData }: QuoteBuilderProps) {
+interface QuoteBuilderProps {
+  rfqData?: RfqData
+  editData?: EditData
+}
+
+export default function QuoteBuilder({ rfqData, editData }: QuoteBuilderProps) {
   const store = useQuoteStore()
   const [isPending, startTransition] = useTransition()
   const initialized = useRef(false)
 
-  // Reset store przy otwarciu nowej oferty, lub załaduj dane z RFQ
+  // Reset store przy otwarciu nowej oferty, lub załaduj dane z RFQ/edycji
   useEffect(() => {
     if (initialized.current) return
     initialized.current = true
 
     store.resetAll()
 
-    if (rfqData) {
+    if (editData) {
+      // Załaduj dane z istniejącej oferty do edycji
+      store.setClient({
+        company: editData.client.company,
+        nip: editData.client.nip,
+        contact: editData.client.contact,
+        email: editData.client.email,
+        phone: editData.client.phone,
+        address: editData.client.address,
+      })
+
+      for (const item of editData.items) {
+        store.addItem({
+          source: item.source as 'catalog' | 'manual' | 'import',
+          productId: item.productId,
+          productName: item.productName,
+          partNumber: item.partNumber,
+          description: item.description,
+          quantity: item.quantity,
+          priceNetto: item.priceNetto,
+          purchasePrice: item.purchasePrice,
+          marginPercent: item.marginPercent,
+          discountPercent: item.discountPercent,
+          catalogPrice: item.catalogPrice,
+        })
+      }
+
+      store.setTerms({
+        validDays: editData.terms.validDays,
+        paymentTerms: editData.terms.paymentTerms,
+        deliveryTerms: editData.terms.deliveryTerms,
+        notes: editData.terms.notes || '',
+        internalNotes: editData.terms.internalNotes || '',
+        freebiesNote: editData.terms.freebiesNote || '',
+      })
+    } else if (rfqData) {
       // Załaduj dane klienta z zapytania
       store.setClient({
         company: rfqData.client.company,
@@ -94,9 +163,28 @@ export default function QuoteBuilder({ rfqData }: QuoteBuilderProps) {
       marginPercent: item.marginPercent,
     }))
 
+    const commonPayload = {
+      client: {
+        company: store.client.company,
+        nip: store.client.nip,
+        contact: store.client.contact,
+        email: store.client.email,
+        phone: store.client.phone,
+        address: store.client.address,
+      },
+      items: itemsData,
+      validDays: store.validDays,
+      paymentTerms: store.paymentTerms,
+      deliveryTerms: store.deliveryTerms,
+      notes: store.notes || undefined,
+      internalNotes: store.internalNotes || undefined,
+      freebiesNote: store.freebiesNote || undefined,
+    }
+
     startTransition(async () => {
-      if (rfqData?.rfqQuoteId) {
-        // Aktualizuj istniejące zapytanie z cenami (nie twórz nowej oferty)
+      if (editData?.quoteId) {
+        await updateQuote(editData.quoteId, commonPayload)
+      } else if (rfqData?.rfqQuoteId) {
         await priceRfqQuote(rfqData.rfqQuoteId, {
           items: itemsData,
           validDays: store.validDays,
@@ -107,23 +195,7 @@ export default function QuoteBuilder({ rfqData }: QuoteBuilderProps) {
           freebiesNote: store.freebiesNote || undefined,
         })
       } else {
-        await createQuote({
-          client: {
-            company: store.client.company,
-            nip: store.client.nip,
-            contact: store.client.contact,
-            email: store.client.email,
-            phone: store.client.phone,
-            address: store.client.address,
-          },
-          items: itemsData,
-          validDays: store.validDays,
-          paymentTerms: store.paymentTerms,
-          deliveryTerms: store.deliveryTerms,
-          notes: store.notes || undefined,
-          internalNotes: store.internalNotes || undefined,
-          freebiesNote: store.freebiesNote || undefined,
-        })
+        await createQuote(commonPayload)
       }
       // redirect happens in action
     })
@@ -175,7 +247,7 @@ export default function QuoteBuilder({ rfqData }: QuoteBuilderProps) {
           disabled={isPending || store.items.length === 0 || !store.client.company}
           className="px-6 py-2.5 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 disabled:opacity-50"
         >
-          {isPending ? 'Zapisywanie...' : 'Zapisz ofertę'}
+          {isPending ? 'Zapisywanie...' : editData ? 'Zapisz zmiany' : 'Zapisz ofertę'}
         </button>
       </div>
     </div>

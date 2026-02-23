@@ -214,6 +214,75 @@ export async function priceRfqQuote(rfqQuoteId: string, input: {
   redirect(`/admin/oferty/${rfqQuoteId}`)
 }
 
+export async function updateQuote(quoteId: string, input: CreateQuoteInput) {
+  const existing = await prisma.quote.findUnique({ where: { id: quoteId } })
+  if (!existing) throw new Error('Oferta nie znaleziona')
+
+  const forbiddenStatuses = ['ACCEPTED', 'REQUESTED']
+  if (forbiddenStatuses.includes(existing.status)) {
+    throw new Error(`Nie można edytować oferty w statusie ${existing.status}`)
+  }
+
+  const totals = calculateQuoteTotals(input.items)
+
+  const validUntil = new Date()
+  validUntil.setDate(validUntil.getDate() + input.validDays)
+
+  // Usuń stare pozycje i wstaw nowe
+  await prisma.quoteItem.deleteMany({ where: { quoteId } })
+
+  // Try to find existing customer by email
+  let customerId: string | null = existing.customerId
+  if (input.client.email && input.client.email !== existing.clientEmail) {
+    const customer = await prisma.customer.findUnique({
+      where: { email: input.client.email },
+    })
+    customerId = customer?.id ?? null
+  }
+
+  await prisma.quote.update({
+    where: { id: quoteId },
+    data: {
+      status: 'DRAFT',
+      customerId,
+      clientCompany: input.client.company,
+      clientNip: input.client.nip,
+      clientContact: input.client.contact,
+      clientEmail: input.client.email,
+      clientPhone: input.client.phone,
+      clientAddress: input.client.address,
+      validUntil,
+      paymentTerms: input.paymentTerms,
+      deliveryTerms: input.deliveryTerms,
+      notes: input.notes,
+      internalNotes: input.internalNotes,
+      freebiesNote: input.freebiesNote,
+      subtotalNetto: totals.subtotalNetto,
+      vatAmount: totals.vatAmount,
+      totalBrutto: totals.totalBrutto,
+      items: {
+        create: input.items.map((item, index) => ({
+          position: index + 1,
+          source: item.source,
+          productId: item.productId,
+          productName: item.productName,
+          partNumber: item.partNumber,
+          description: item.description,
+          quantity: item.quantity,
+          purchasePrice: item.purchasePrice,
+          priceNetto: item.priceNetto,
+          totalNetto: item.priceNetto * item.quantity,
+          marginPercent: item.marginPercent,
+        })),
+      },
+    },
+  })
+
+  revalidatePath('/admin/oferty')
+  revalidatePath(`/admin/oferty/${quoteId}`)
+  redirect(`/admin/oferty/${quoteId}`)
+}
+
 export async function duplicateQuote(quoteId: string) {
   const original = await prisma.quote.findUnique({
     where: { id: quoteId },
