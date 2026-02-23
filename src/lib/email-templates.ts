@@ -695,3 +695,95 @@ export function buildAdminRfqEmail(data: {
       ),
   })
 }
+
+// #13 — Repair Submitted (Customer)
+export function buildRepairSubmittedEmail(data: {
+  customerName: string
+  repairNumber: string
+  deviceType: string
+  deviceModel: string
+  problemDescription: string
+  isWarranty: boolean
+}): string {
+  const deviceTypeText: Record<string, string> = {
+    drukarka: 'Drukarka etykiet',
+    terminal: 'Terminal mobilny',
+    skaner: 'Skaner kod&#243;w',
+    tablet: 'Tablet przemys&#322;owy',
+    akcesoria: 'Akcesoria',
+    inne: 'Urz&#261;dzenie',
+  }
+  const typeLabel = deviceTypeText[data.deviceType] || 'Urz&#261;dzenie'
+
+  return emailLayout({
+    preheader: `Zgloszenie naprawy ${data.deviceModel} #${data.repairNumber} przyjete`,
+    content:
+      emailHeader({ title: 'Zg&#322;oszenie naprawy przyj&#281;te!', subtitle: `Nr: ${esc(data.repairNumber)}`, accent: 'green' }) +
+      emailBody(
+        emailGreeting(data.customerName) +
+        emailText('Twoje zg&#322;oszenie serwisowe zosta&#322;o przyj&#281;te. Oto podsumowanie:') +
+        emailDataTable([
+          { label: 'Nr zg&#322;oszenia', value: `<strong>${esc(data.repairNumber)}</strong>` },
+          { label: 'Typ urz&#261;dzenia', value: typeLabel },
+          { label: 'Model', value: `<strong>${esc(data.deviceModel)}</strong>` },
+          { label: 'Gwarancja', value: data.isWarranty ? 'Tak' : 'Nie / Nie wiem' },
+        ]) +
+        emailSectionTitle('Opis usterki') +
+        emailMessageBox(esc(data.problemDescription)) +
+        emailInfoGreen(
+          '<strong>Co dalej?</strong><br />' +
+          '1. Kurier odbierze urz&#261;dzenie z podanego adresu<br />' +
+          '2. Przeprowadzimy diagnostyk&#281; w ci&#261;gu 48h<br />' +
+          '3. Otrzymasz wycen&#281; naprawy na email<br />' +
+          '4. Po akceptacji &mdash; naprawa i wysy&#322;ka zwrotna'
+        ) +
+        emailInfoBlue(
+          '&#346;led&#378; status naprawy i pisz z serwisem w <a href="https://www.serwis-zebry.pl/logowanie" style="color:#1e40af;font-weight:600">panelu klienta</a>.'
+        ) +
+        emailSignature()
+      ),
+  })
+}
+
+// #14 — Repair Submitted Admin Notification
+export function buildRepairSubmittedAdminEmail(data: {
+  repairNumber: string
+  customerName: string
+  customerEmail: string
+  customerPhone: string
+  deviceType: string
+  deviceModel: string
+  problemDescription: string
+  isWarranty: boolean
+  priority: string
+}): string {
+  const priorityLabels: Record<string, string> = {
+    normal: 'Zwyk&#322;y',
+    high: 'Wysoki',
+  }
+
+  const customerRows: { label: string; value: string }[] = [
+    { label: 'Klient', value: `<strong>${esc(data.customerName)}</strong>` },
+    { label: 'Email', value: `<a href="mailto:${esc(data.customerEmail)}" style="color:#2563eb">${esc(data.customerEmail)}</a>` },
+    { label: 'Telefon', value: esc(data.customerPhone) },
+  ]
+
+  return emailLayout({
+    preheader: `[TAKMA] Nowe zgloszenie naprawy #${data.repairNumber} - ${data.deviceModel}`,
+    content:
+      emailHeader({ title: 'Nowe zg&#322;oszenie naprawy', subtitle: `[TAKMA] Nr: ${esc(data.repairNumber)}`, accent: 'green' }) +
+      emailBody(
+        emailInfoCyan(customerRows.map(r => `<strong>${r.label}:</strong> ${r.value}`).join('<br />')) +
+        emailDataTable([
+          { label: 'Model', value: `<strong>${esc(data.deviceModel)}</strong>` },
+          { label: 'Typ', value: esc(data.deviceType) },
+          { label: 'Gwarancja', value: data.isWarranty ? '<strong style="color:#059669">Tak</strong>' : 'Nie' },
+          { label: 'Priorytet', value: priorityLabels[data.priority] || esc(data.priority) },
+          { label: '&#377;r&#243;d&#322;o', value: '<strong style="color:#1e40af">takma.com.pl</strong>' },
+        ]) +
+        emailSectionTitle('Opis usterki') +
+        emailMessageBox(esc(data.problemDescription)) +
+        emailButton('Otw&#243;rz w panelu admina', `https://www.serwis-zebry.pl/admin`)
+      ),
+  })
+}

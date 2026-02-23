@@ -8,7 +8,7 @@ import { CommonIssues } from './_components/CommonIssues'
 import { RmaProcessSteps } from './_components/RmaProcessSteps'
 import { FaqAEO } from './_components/FaqAEO'
 import { ServiceManagerContact } from './_components/ServiceManagerContact'
-import { ServiceContactForm } from './_components/ServiceContactForm'
+import RepairForm from './_components/RepairForm'
 
 export default function SerwisPage() {
   return (
@@ -33,7 +33,7 @@ export default function SerwisPage() {
       <ZebraAuthorizedBanner />
       <ServiceManagerContact />
       <FaqAEO />
-      <ServiceContactForm />
+      <RepairForm />
     </main>
   )
 }

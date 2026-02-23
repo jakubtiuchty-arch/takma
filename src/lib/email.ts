@@ -4,6 +4,8 @@ import {
   buildProformaEmail,
   buildShippingNotificationEmail,
   buildAdminOrderNotificationEmail,
+  buildRepairSubmittedEmail,
+  buildRepairSubmittedAdminEmail,
 } from './email-templates'
 
 if (!process.env.RESEND_API_KEY) {
@@ -125,4 +127,67 @@ export async function sendAdminNotification(data: {
     subject: `[NOWE ZAMÓWIENIE] ${data.orderNumber} — ${data.totalBrutto.toFixed(2)} zł brutto`,
     html: buildAdminOrderNotificationEmail(data),
   })
+}
+
+// Repair submitted — confirmation to customer
+export async function sendRepairSubmittedEmail(data: {
+  to: string
+  customerName: string
+  repairId: string
+  repairNumber: string
+  deviceType: string
+  deviceModel: string
+  problemDescription: string
+  isWarranty: boolean
+}) {
+  return sendEmail({
+    to: data.to,
+    from: 'TAKMA Serwis <serwis@takma.com.pl>',
+    subject: `Zgłoszenie naprawy przyjęte — ${data.deviceModel} #${data.repairNumber}`,
+    html: buildRepairSubmittedEmail({
+      customerName: data.customerName,
+      repairNumber: data.repairNumber,
+      deviceType: data.deviceType,
+      deviceModel: data.deviceModel,
+      problemDescription: data.problemDescription,
+      isWarranty: data.isWarranty,
+    }),
+  })
+}
+
+// Repair submitted — admin notification
+export async function sendRepairSubmittedAdminEmail(data: {
+  to: string[]
+  repairId: string
+  repairNumber: string
+  customerName: string
+  customerEmail: string
+  customerPhone: string
+  deviceType: string
+  deviceModel: string
+  problemDescription: string
+  isWarranty: boolean
+  priority: string
+}) {
+  const results = await Promise.allSettled(
+    data.to.map(email =>
+      sendEmail({
+        to: email,
+        from: 'TAKMA Serwis <serwis@takma.com.pl>',
+        subject: `[TAKMA] Nowe zgłoszenie naprawy #${data.repairNumber} — ${data.deviceModel}`,
+        html: buildRepairSubmittedAdminEmail({
+          repairNumber: data.repairNumber,
+          customerName: data.customerName,
+          customerEmail: data.customerEmail,
+          customerPhone: data.customerPhone,
+          deviceType: data.deviceType,
+          deviceModel: data.deviceModel,
+          problemDescription: data.problemDescription,
+          isWarranty: data.isWarranty,
+          priority: data.priority,
+        }),
+      })
+    )
+  )
+  return results
 }
