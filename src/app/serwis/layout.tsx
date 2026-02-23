@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Serwis drukarek etykiet, terminali i skanerów',
-  description: 'Serwis pogwarancyjny urządzeń AutoID. Darmowa diagnostyka 48h. Autoryzowany serwis Zebra. Honeywell, Datalogic, Brother, M3 Mobile. Cała Polska.',
+  title: 'Serwis i naprawa drukarek etykiet, terminali mobilnych i skanerów | TAKMA',
+  description: 'Profesjonalny serwis pogwarancyjny urządzeń AutoID — TAKMA Wrocław. Darmowa diagnostyka 48h. Autoryzowany serwis Zebra. Naprawiamy Honeywell, Datalogic, Brother, M3 Mobile, Newland, Citizen, Godex. Cała Polska.',
   openGraph: {
-    title: 'Serwis drukarek etykiet, terminali i skanerów | TAKMA',
-    description: 'Serwis pogwarancyjny urządzeń AutoID. Darmowa diagnostyka 48h. Autoryzowany serwis Zebra. Honeywell, Datalogic, Brother, M3 Mobile. Cała Polska.',
+    title: 'Serwis i naprawa drukarek etykiet, terminali i skanerów | TAKMA',
+    description: 'Profesjonalny serwis pogwarancyjny urządzeń AutoID — TAKMA Wrocław. Darmowa diagnostyka 48h. Autoryzowany serwis Zebra. Honeywell, Datalogic, Brother, M3 Mobile. Cała Polska.',
     type: 'website',
     url: 'https://takma.com.pl/serwis',
   },
@@ -78,7 +78,19 @@ export default function SerwisLayout({
     },
     {
       name: "Co to jest kontrakt serwisowy Zebra OneCare?",
-      text: "Zebra OneCare to program rozszerzonych usług serwisowych producenta obejmujący naprawy gwarancyjne, wymianę urządzeń i wsparcie techniczne. Oferujemy sprzedaż i obsługę kontraktów OneCare Essential, Select i SV."
+      text: "Zebra OneCare to program rozszerzonych usług serwisowych producenta obejmujący naprawy gwarancyjne, wymianę urządzeń i wsparcie techniczne. TAKMA jako autoryzowany partner Zebra oferuje sprzedaż i obsługę kontraktów OneCare Essential, Select i SV."
+    },
+    {
+      name: "Jak przebiega kalibracja drukarki etykiet?",
+      text: "Kalibracja drukarki etykiet w serwisie TAKMA obejmuje: regulację czujnika przerw (gap sensor) lub czarnego znaku (black mark), kalibrację głowicy drukującej (docisk, temperatura), ustawienie prowadnic nośnika i testowy wydruk kontrolny. Prawidłowa kalibracja eliminuje problemy z przepuszczaniem pustych etykiet, nierównym nadrukiem i błędami Media Out."
+    },
+    {
+      name: "Ile trwa wymiana ekranu w terminalu mobilnym?",
+      text: "Wymiana ekranu (LCD + digitizer) w terminalu mobilnym w serwisie TAKMA trwa zazwyczaj 5–7 dni roboczych od dostarczenia urządzenia. Na wymieniony ekran udzielamy 3 miesięcy gwarancji. Po naprawie weryfikujemy szczelność obudowy IP65/IP67."
+    },
+    {
+      name: "Czy TAKMA serwisuje drukarki etykiet innych marek niż Zebra?",
+      text: "Tak — oprócz autoryzowanego serwisu Zebra, TAKMA naprawia drukarki etykiet marek Honeywell, Citizen, Godex, TSC, Brother i SATO. Zakres napraw obejmuje wymianę głowic, wałków dociskowych, płyt głównych, zasilaczy oraz kalibrację czujników."
     }
   ]
 
@@ -154,7 +166,11 @@ export default function SerwisLayout({
           }
         },
         "priceRange": "PLN",
-        "foundingDate": "2001"
+        "foundingDate": "2001",
+        "sameAs": [
+          "https://www.serwis-zebry.pl",
+          "https://takma.com.pl"
+        ]
       },
       {
         "@type": "Service",
@@ -251,7 +267,7 @@ export default function SerwisLayout({
       },
       {
         "@type": "FAQPage",
-        "dateModified": "2026-02-21",
+        "dateModified": "2026-02-23",
         "mainEntity": faqEntries.map(faq => ({
           "@type": "Question",
           "name": faq.name,

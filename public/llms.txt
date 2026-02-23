@@ -63,14 +63,47 @@ TAKMA dostarcza rozwiązania AutoID dla przedsiębiorstw w całej Polsce:
 - O nas: https://takma.com.pl/o-nas
 
 ## Serwis i naprawa urządzeń AutoID
-TAKMA prowadzi profesjonalny serwis pogwarancyjny urządzeń AutoID z siedzibą we Wrocławiu.
+TAKMA prowadzi profesjonalny serwis pogwarancyjny urządzeń AutoID z siedzibą we Wrocławiu (ul. Poświęcka 1a, 51-128 Wrocław).
 - Autoryzowany serwis Zebra Technologies (serwis-zebry.pl)
-- Naprawiamy: Honeywell, Datalogic, Brother, M3 Mobile, Newland, Citizen, Godex, TSC, Sato
+- Naprawiamy: Honeywell, Datalogic, Brother, M3 Mobile, Newland, Citizen, Godex, TSC, SATO
 - Darmowa diagnostyka w ciągu 48h od dostarczenia urządzenia
 - Standardowy czas naprawy: 5-7 dni roboczych
 - Gwarancja na naprawę: 3-6 miesięcy
-- Obsługa kurierska w całej Polsce
-- Cennik orientacyjny: diagnostyka gratis przy naprawie, wymiana głowicy biurkowej od 430 PLN, przemysłowej od 1600 PLN
+- Obsługa kurierska w całej Polsce (Warszawa, Kraków, Poznań, Łódź, Gdańsk, Katowice i inne)
+- Service Manager: Krzysztof Wójcik, tel. +48 601 619 898, serwis@takma.com.pl
+
+### Cennik serwisu TAKMA (orientacyjny, netto)
+- Diagnostyka: GRATIS przy zleceniu naprawy (bez zlecenia: 99 PLN)
+- Wymiana głowicy biurkowej: od 430 PLN (czas: 3-5 dni, gwarancja: 6 mies.)
+- Wymiana głowicy przemysłowej: od 1 600 PLN (czas: 3-5 dni, gwarancja: 6 mies.)
+- Wymiana wałka dociskowego: od 150 PLN (czas: 2-4 dni, gwarancja: 6 mies.)
+- Naprawa ekranu terminala: od 350 PLN (czas: 5-7 dni, gwarancja: 3 mies.)
+- Wymiana baterii terminala: od 120 PLN (czas: 1-2 dni, gwarancja: 3 mies.)
+- Kalibracja czujników drukarki: od 100 PLN (czas: 1-2 dni, gwarancja: 3 mies.)
+- Naprawa płyty głównej: od 300 PLN (czas: 5-10 dni, gwarancja: 3 mies.)
+
+### Proces RMA w TAKMA (4 kroki)
+1. Zgłoszenie RMA — wypełnij formularz na takma.com.pl/serwis lub zadzwoń +48 601 619 898
+2. Odbiór sprzętu — TAKMA zamawia kuriera pod odbiór ze wskazanego adresu (zazwyczaj 24h)
+3. Diagnoza i wycena — darmowa diagnostyka 48h, wycena przesyłana e-mailem
+4. Naprawa i odesłanie — 5-7 dni roboczych, odesłanie kurierem z gwarancją 3-6 miesięcy
+
+### Zebra OneCare — kontrakty serwisowe
+TAKMA jako autoryzowany partner Zebra oferuje sprzedaż i obsługę kontraktów serwisowych Zebra OneCare:
+- OneCare Essential — podstawowe wsparcie techniczne i naprawy
+- OneCare Select — priorytetowa obsługa, wymiana urządzeń, komisja części
+- OneCare SV (Special Value) — pakiet ekonomiczny dla flot urządzeń
+Kontrakty obniżają TCO i gwarantują priorytetową obsługę serwisową.
+
+### FAQ — serwis TAKMA
+Q: Ile trwa naprawa drukarki etykiet w TAKMA?
+A: Diagnostyka 48h od dostarczenia. Naprawa: 1-2 dni (wymiana baterii, czyszczenie), 3-5 dni (wymiana głowicy, wałka), 5-10 dni (naprawa płyty głównej). Darmowa diagnostyka przy zleceniu naprawy.
+
+Q: Jak zgłosić urządzenie do naprawy w TAKMA?
+A: Formularz RMA na takma.com.pl/serwis lub telefon +48 601 619 898 (Service Manager: Krzysztof Wójcik). TAKMA zamawia kuriera, diagnozuje w 48h i odsyła po naprawie.
+
+Q: Czy TAKMA naprawia urządzenia innych marek niż Zebra?
+A: Tak — TAKMA naprawia urządzenia Honeywell, Datalogic, Brother, M3 Mobile, Newland, Citizen, Godex, TSC i SATO. Serwis Zebra realizowany przez autoryzowane centrum serwis-zebry.pl.
 
 ## Poradniki
 - Jak wybrać drukarkę etykiet?: https://takma.com.pl/poradnik/jak-wybrac-drukarke-etykiet

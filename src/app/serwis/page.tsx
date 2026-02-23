@@ -8,6 +8,7 @@ import { PricingTable } from './_components/PricingTable'
 import { CommonIssues } from './_components/CommonIssues'
 import { RmaProcessSteps } from './_components/RmaProcessSteps'
 import { FaqAEO } from './_components/FaqAEO'
+import { ServiceManagerContact } from './_components/ServiceManagerContact'
 import { ServiceContactForm } from './_components/ServiceContactForm'
 
 export default function SerwisPage() {
@@ -32,6 +33,7 @@ export default function SerwisPage() {
       <CommonIssues />
       <RmaProcessSteps />
       <ZebraAuthorizedBanner />
+      <ServiceManagerContact />
       <FaqAEO />
       <ServiceContactForm />
     </main>

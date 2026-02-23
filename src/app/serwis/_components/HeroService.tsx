@@ -18,13 +18,13 @@ export function HeroService() {
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-3xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Kompleksowy Serwis Urządzeń AutoID
+            Serwis i naprawa drukarek etykiet, terminali i skanerów
           </h1>
           <p className="mt-4 inline-flex items-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 text-sm font-medium text-lime-300">
             Autoryzowany serwis Zebra Technologies | 25+ lat doświadczenia
           </p>
           <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-gray-300">
-            Profesjonalna naprawa drukarek etykiet, terminali mobilnych, tabletów przemysłowych i skanerów kodów kreskowych. Minimalizujemy przestoje w Twojej firmie. Obsługujemy m.in. marki: Honeywell, Datalogic, Brother, M3 Mobile i Newland.
+            TAKMA to profesjonalny serwis pogwarancyjny urządzeń AutoID z&nbsp;siedzibą we&nbsp;Wrocławiu, działający od&nbsp;2001&nbsp;roku. Naprawiamy drukarki etykiet, terminale mobilne i&nbsp;skanery kodów kreskowych — Zebra, Honeywell, Datalogic, Brother, M3&nbsp;Mobile, Newland, Citizen i&nbsp;Godex. Darmowa diagnostyka w&nbsp;48h, gwarancja 3–6&nbsp;miesięcy na każdą naprawę.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a href="#serwis-zebra" className="w-full sm:w-auto">

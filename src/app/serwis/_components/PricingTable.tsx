@@ -1,33 +1,37 @@
 const services = [
-  { name: 'Diagnostyka usterki', price: 'GRATIS*', highlight: true },
-  { name: 'Wymiana głowicy (drukarki biurkowe)', price: 'od 430 PLN' },
-  { name: 'Wymiana głowicy (drukarki przemysłowe)', price: 'od 1 600 PLN' },
-  { name: 'Wymiana wałka dociskowego', price: 'od 150 PLN' },
-  { name: 'Naprawa ekranu terminala mobilnego', price: 'od 350 PLN' },
-  { name: 'Wymiana baterii terminala', price: 'od 120 PLN' },
-  { name: 'Czyszczenie / konserwacja urządzenia', price: 'od 150 PLN' },
-  { name: 'Naprawa płyty głównej', price: 'od 300 PLN' },
+  { name: 'Diagnostyka usterki', price: 'GRATIS*', time: '48h', warranty: '—', highlight: true },
+  { name: 'Wymiana głowicy (drukarki biurkowe)', price: 'od 430 PLN', time: '3–5 dni', warranty: '6 mies.' },
+  { name: 'Wymiana głowicy (drukarki przemysłowe)', price: 'od 1 600 PLN', time: '3–5 dni', warranty: '6 mies.' },
+  { name: 'Wymiana wałka dociskowego', price: 'od 150 PLN', time: '2–4 dni', warranty: '6 mies.' },
+  { name: 'Naprawa ekranu terminala mobilnego', price: 'od 350 PLN', time: '5–7 dni', warranty: '3 mies.' },
+  { name: 'Wymiana baterii terminala', price: 'od 120 PLN', time: '1–2 dni', warranty: '3 mies.' },
+  { name: 'Czyszczenie / konserwacja urządzenia', price: 'od 150 PLN', time: '1–2 dni', warranty: '—' },
+  { name: 'Naprawa płyty głównej', price: 'od 300 PLN', time: '5–10 dni', warranty: '3 mies.' },
+  { name: 'Kalibracja czujników drukarki', price: 'od 100 PLN', time: '1–2 dni', warranty: '3 mies.' },
+  { name: 'Naprawa modułu Wi-Fi / WLAN', price: 'od 250 PLN', time: '5–7 dni', warranty: '3 mies.' },
 ]
 
 export function PricingTable() {
   return (
     <section className="bg-gray-50 py-16 sm:py-24">
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900">
             Cennik orientacyjny napraw
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Przejrzyste ceny serwisu urządzeń AutoID. Dokładna wycena po diagnostyce.
+            Przejrzyste ceny serwisu urządzeń AutoID w TAKMA. Dokładna wycena po bezpłatnej diagnostyce.
           </p>
         </div>
 
-        <div className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
-          <table className="w-full">
+        <div className="overflow-x-auto rounded-xl border border-gray-200 bg-white shadow-sm">
+          <table className="w-full min-w-[540px]">
             <thead>
               <tr className="bg-gray-900 text-white">
                 <th className="px-4 sm:px-6 py-3 sm:py-4 text-left text-xs sm:text-sm font-semibold">Usługa</th>
                 <th className="px-4 sm:px-6 py-3 sm:py-4 text-right text-xs sm:text-sm font-semibold">Cena netto</th>
+                <th className="px-3 sm:px-5 py-3 sm:py-4 text-center text-xs sm:text-sm font-semibold">Czas realizacji</th>
+                <th className="px-3 sm:px-5 py-3 sm:py-4 text-center text-xs sm:text-sm font-semibold">Gwarancja</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-100">
@@ -46,6 +50,12 @@ export function PricingTable() {
                   }`}>
                     {service.price}
                   </td>
+                  <td className="px-3 sm:px-5 py-3 sm:py-4 text-center text-xs sm:text-sm text-gray-600 whitespace-nowrap">
+                    {service.time}
+                  </td>
+                  <td className="px-3 sm:px-5 py-3 sm:py-4 text-center text-xs sm:text-sm text-gray-600 whitespace-nowrap">
+                    {service.warranty}
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -54,7 +64,7 @@ export function PricingTable() {
 
         <p className="mt-4 text-sm text-gray-500 text-center">
           * Diagnostyka gratis przy zleceniu naprawy. Bez zlecenia naprawy: 99 PLN netto + koszty wysyłki.
-          Ceny orientacyjne netto. Dokładna wycena po diagnostyce urządzenia.
+          Ceny orientacyjne netto. Dokładna wycena po diagnostyce urządzenia. Aktualizacja: luty 2026.
         </p>
 
         <div className="mt-8 text-center">

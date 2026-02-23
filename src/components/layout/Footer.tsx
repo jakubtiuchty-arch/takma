@@ -24,6 +24,7 @@ const footerLinks = {
   ],
   firma: [
     { name: 'O nas', href: '/o-nas' },
+    { name: 'Serwis urządzeń', href: '/serwis' },
     { name: 'Kontakt', href: '/kontakt' },
     { name: 'Poradniki', href: '/poradnik' },
     { name: 'Regulamin sklepu', href: '/regulamin' },
