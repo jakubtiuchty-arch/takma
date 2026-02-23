@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { headers } from 'next/headers'
 import './globals.css'
 import LayoutShell from '@/components/layout/LayoutShell'
+import { Analytics } from '@vercel/analytics/next'
 
 const inter = Inter({
   subsets: ['latin', 'latin-ext'],
@@ -133,6 +134,7 @@ export default async function RootLayout({
         )}
       </head>
       <LayoutShell>{children}</LayoutShell>
+      <Analytics />
     </html>
   )
 }
