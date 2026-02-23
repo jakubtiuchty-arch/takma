@@ -70,10 +70,11 @@ export function RegistrationLightbox({
         throw new Error(data.error || 'Blad rejestracji')
       }
 
-      // Redirect na serwis-zebry.pl/logowanie z pre-filled email
+      // Redirect na serwis-zebry.pl/logowanie z pre-filled email i wymuszonym /panel
       const loginUrl = new URL('https://www.serwis-zebry.pl/logowanie')
       loginUrl.searchParams.set('email', userEmail)
       loginUrl.searchParams.set('from', 'takma')
+      loginUrl.searchParams.set('redirect', '/panel')
       window.location.href = loginUrl.toString()
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Wystapil blad')
