@@ -157,7 +157,7 @@ export default function Hero() {
               </h1>
 
               <p className="text-sm md:text-base lg:text-lg text-gray-400 max-w-xl mb-4 md:mb-7 leading-relaxed">
-                Autoryzowany dystrybutor Zebra, Honeywell, Datalogic i&nbsp;innych czołowych marek.
+                Autoryzowany partner Zebra, Honeywell, Datalogic i&nbsp;innych czołowych marek.
                 Doradztwo, sprzedaż i&nbsp;serwis urządzeń AutoID dla firm w&nbsp;całej Polsce.
               </p>
 
