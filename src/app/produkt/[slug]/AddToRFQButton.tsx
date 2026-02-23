@@ -175,9 +175,9 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
         fullWidth
         variant={inRFQ ? 'secondary' : activeVariant}
         onClick={handleAdd}
-        leftIcon={inRFQ ? <CheckIcon size={18} /> : <PlusIcon size={18} />}
+        leftIcon={inRFQ ? <CheckIcon size={16} /> : <PlusIcon size={16} />}
       >
-        {inRFQ ? 'W koszyku' : 'Dodaj do koszyka'}
+        {inRFQ ? 'Dodano' : 'Koszyk'}
       </Button>
     )
   }
