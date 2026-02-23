@@ -1,6 +1,6 @@
 const stats = [
-  { value: '25+', label: 'lat na rynku AutoID', accent: false },
-  { value: '48h', label: 'czas diagnostyki', accent: true },
+  { value: '25+', label: 'lat na rynku AutoID', accent: true },
+  { value: '48h', label: 'czas diagnostyki', accent: false },
   { value: '0 zł', label: 'diagnostyka przy naprawie', accent: false },
   { value: '3–6 mies.', label: 'gwarancja na naprawę', accent: false },
   { value: 'Cała Polska', label: 'obsługa kurierska', accent: false },

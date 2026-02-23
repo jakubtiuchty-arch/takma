@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { HeroService } from './_components/HeroService'
-import { TrustBar } from './_components/TrustBar'
 import { ZebraAuthorizedBanner } from './_components/ZebraAuthorizedBanner'
 import { SupportedBrandsGrid } from './_components/SupportedBrandsGrid'
 import { DeviceCategoriesAEO } from './_components/DeviceCategoriesAEO'
@@ -26,7 +25,6 @@ export default function SerwisPage() {
       </nav>
 
       <HeroService />
-      <TrustBar />
       <SupportedBrandsGrid />
       <DeviceCategoriesAEO />
       <PricingTable />
