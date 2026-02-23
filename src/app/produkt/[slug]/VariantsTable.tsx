@@ -281,12 +281,12 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
       <div className="flex items-start justify-between">
         <div>
           <span className="text-xs text-gray-500 uppercase tracking-wide">Part Number</span>
-          <p className="font-mono font-semibold text-gray-900">{variant.partNumber}</p>
+          <p className="text-sm font-mono font-semibold text-gray-900 break-all">{variant.partNumber}</p>
         </div>
         <Badge variant={avail.variant}>{avail.label}</Badge>
       </div>
 
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 xs:grid-cols-2 gap-2">
         {attributeKeys.map((key) => (
           <div key={key}>
             <span className="text-xs text-gray-500"><AttributeLabel label={key} extraTooltips={variantAttributeTooltips} /></span>
@@ -401,7 +401,7 @@ export default function VariantsTable({ productSlug, productName, productImage, 
       <h2 className="text-2xl font-bold text-gray-900 mb-4">Dostępne warianty</h2>
 
       {/* Desktop: tabela */}
-      <div className="hidden lg:block bg-gray-50 rounded-xl">
+      <div className="hidden md:block overflow-x-auto bg-gray-50 rounded-xl">
         <table className="w-full">
           <caption className="sr-only">Warianty i konfiguracje {productName}</caption>
           <thead>
@@ -461,7 +461,7 @@ export default function VariantsTable({ productSlug, productName, productImage, 
       </div>
 
       {/* Mobile: karty */}
-      <div className="lg:hidden space-y-3">
+      <div className="md:hidden space-y-3">
         {availableVariants.map((variant) => (
           <MobileCard key={variant.partNumber} variant={variant} {...sharedProps} />
         ))}

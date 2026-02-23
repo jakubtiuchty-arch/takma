@@ -88,7 +88,7 @@ export default function ProductGallery({ images, productName, imageDescriptions 
               key={index}
               onClick={() => setActiveIndex(index)}
               className={clsx(
-                'w-20 h-20 flex-shrink-0 bg-white rounded-lg overflow-hidden transition-all relative',
+                'w-16 h-16 xs:w-20 xs:h-20 flex-shrink-0 bg-white rounded-lg overflow-hidden transition-all relative',
                 index === activeIndex
                   ? 'opacity-100 ring-2 ring-primary-500'
                   : 'opacity-50 hover:opacity-80'
@@ -102,7 +102,7 @@ export default function ProductGallery({ images, productName, imageDescriptions 
                   alt={imageDescriptions?.[index] || `${productName} — miniatura ${index + 1}`}
                   fill
                   className="object-contain p-1"
-                  sizes="80px"
+                  sizes="(max-width: 374px) 64px, 80px"
                 />
               ) : (
                 <div className="w-full h-full flex items-center justify-center text-gray-400 text-xs">

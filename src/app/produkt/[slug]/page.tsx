@@ -395,10 +395,10 @@ export default async function ProductPage({ params }: ProductPageProps) {
             )}
 
             {/* Title */}
-            <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mt-1 mb-4">
+            <h1 className="text-2xl xs:text-3xl lg:text-4xl font-bold text-gray-900 mt-1 mb-4">
               {product.name}
               {(primarySubcategory || category) && (
-                <span className="block text-base lg:text-lg font-medium text-gray-500 mt-1">
+                <span className="block text-sm xs:text-base lg:text-lg font-medium text-gray-500 mt-1">
                   {primarySubcategory?.name || category?.name}
                 </span>
               )}
@@ -494,18 +494,18 @@ export default async function ProductPage({ params }: ProductPageProps) {
         {/* Tabs / Details */}
         <div className="mt-12 lg:mt-16">
           <div className="border-b border-gray-200">
-            <nav className="flex gap-4 sm:gap-6 -mb-px overflow-x-auto scrollbar-hide">
+            <nav className="flex gap-3 sm:gap-6 -mb-px overflow-x-auto scrollbar-hide">
               {product.variants && product.variants.length > 0 && (
                 <a
                   href="#warianty"
-                  className="px-3 py-4 text-sm font-medium text-primary-600 border-b-2 border-primary-600 whitespace-nowrap"
+                  className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-primary-600 border-b-2 border-primary-600 whitespace-nowrap"
                 >
                   Warianty
                 </a>
               )}
               <a
                 href="#opis"
-                className={`px-3 py-4 text-sm font-medium whitespace-nowrap ${
+                className={`px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium whitespace-nowrap ${
                   product.variants && product.variants.length > 0
                     ? 'text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300'
                     : 'text-primary-600 border-b-2 border-primary-600'
@@ -515,20 +515,20 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </a>
               <a
                 href="#specyfikacja"
-                className="px-3 py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
               >
                 Specyfikacja
               </a>
               <a
                 href="#zastosowania"
-                className="px-3 py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
               >
                 Zastosowania
               </a>
               {product.comparison && (
                 <a
                   href="#porownanie"
-                  className="px-3 py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   Porównanie
                 </a>
@@ -536,7 +536,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {product.faq && product.faq.length > 0 && (
                 <a
                   href="#faq"
-                  className="px-3 py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   FAQ
                 </a>
@@ -544,7 +544,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {product.downloads.length > 0 && (
                 <a
                   href="#pliki"
-                  className="px-3 py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   Do pobrania
                 </a>
@@ -552,7 +552,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {compatibleConsumables.length > 0 && (
                 <a
                   href="#etykiety-papierowe"
-                  className="px-3 py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   {product.categoryId === 'drukarki-kart' ? 'Taśmy' : product.categoryId === 'drukarki-opasek' ? 'Opaski' : product.subcategoryIds?.includes('termiczne-drukarki-etykiet') ? 'Etykiety termiczne' : 'Etykiety papierowe'}
                 </a>
@@ -560,7 +560,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {compatibleFoilLabels.length > 0 && (
                 <a
                   href="#etykiety-foliowe"
-                  className="px-3 py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   Etykiety foliowe
                 </a>
@@ -568,7 +568,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {relatedCards.length > 0 && (
                 <a
                   href="#karty-pcv"
-                  className="px-3 py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   Karty PCV
                 </a>
@@ -576,7 +576,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {relatedSoftware.length > 0 && (
                 <a
                   href="#oprogramowanie"
-                  className="px-3 py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   Oprogramowanie
                 </a>
@@ -584,7 +584,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {relatedAccessories.length > 0 && (
                 <a
                   href="#akcesoria"
-                  className="px-3 py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   {isDevice ? 'Akcesoria' : 'Powiązane produkty'}
                 </a>
@@ -682,11 +682,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
                       key={i}
                       className="group bg-gray-50 rounded-xl overflow-hidden"
                     >
-                      <summary className="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-gray-100 transition-colors">
+                      <summary className="flex items-center justify-between px-4 py-3 sm:px-6 sm:py-4 cursor-pointer hover:bg-gray-100 transition-colors">
                         <h3 className="text-sm font-semibold text-gray-900 pr-4">{item.question}</h3>
                         <ChevronRightIcon size={20} className="text-gray-400 flex-shrink-0 transition-transform group-open:rotate-90" />
                       </summary>
-                      <div className="px-6 pb-4">
+                      <div className="px-4 pb-3 sm:px-6 sm:pb-4">
                         <p className="text-sm text-gray-600 leading-relaxed">{item.answer}</p>
                       </div>
                     </details>
@@ -699,7 +699,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             {product.downloads.length > 0 && (
               <section id="pliki">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Pliki do pobrania</h2>
-                <div className="grid sm:grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
                   {product.downloads.map((download, i) => {
                     const isExternal = download.url.startsWith('http')
                     const isSerwisZebry = download.url.includes('serwis-zebry.pl')
@@ -709,9 +709,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
                         key={i}
                         href={download.url}
                         {...(isExternal ? { target: '_blank', rel: externalRel } : {})}
-                        className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group"
+                        className="flex items-center gap-3 p-3 sm:gap-4 sm:p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group"
                       >
-                        <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors">
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors">
                           <DownloadIcon size={24} />
                         </div>
                         <div className="flex-1 min-w-0">
@@ -812,8 +812,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
       </div>
 
       {/* Sticky mobile CTA */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 lg:hidden safe-bottom z-40">
-        <div className="flex items-center gap-3">
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-3 py-3 xs:p-4 lg:hidden safe-bottom z-40">
+        <div className="flex items-center gap-2 xs:gap-3">
           <StickyPrice product={product} />
           <div className="flex-1">
             <AddToRFQButton product={product} compact />

@@ -74,7 +74,7 @@ export default function ServicePlansBox({ plans, productSlug, productName }: Ser
           const itemId = `${productSlug}__onecare__${plan.partNumber}`
           const inRFQ = mounted ? isInCart(itemId) : false
           return (
-            <div className="bg-white rounded-lg border border-gray-200 p-3 flex items-center justify-between gap-4">
+            <div className="bg-white rounded-lg border border-gray-200 p-3 flex flex-col xs:flex-row xs:items-center justify-between gap-3 xs:gap-4">
               <div className="min-w-0">
                 <div className="flex items-baseline gap-2 flex-wrap">
                   <span className="text-xs font-semibold text-blue-700">{plan.duration}</span>

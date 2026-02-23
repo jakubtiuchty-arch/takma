@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: '375px',
+      },
       colors: {
         // TAKMA Brand Colors - niebieski w różnych odcieniach
         primary: {

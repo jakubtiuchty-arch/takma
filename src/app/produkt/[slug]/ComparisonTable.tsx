@@ -98,9 +98,9 @@ export default function ComparisonTable({ title, models }: ComparisonTableProps)
             </div>
             <dl className="space-y-2">
               {specKeys.map((key) => (
-                <div key={key} className="flex justify-between text-sm">
-                  <dt className="text-gray-500">{key}</dt>
-                  <dd className="font-medium text-gray-900 text-right">{m.specs[key]}</dd>
+                <div key={key} className="flex justify-between gap-3 text-sm">
+                  <dt className="text-gray-500 shrink-0 max-w-[45%]">{key}</dt>
+                  <dd className="font-medium text-gray-900 text-right min-w-0 break-words">{m.specs[key]}</dd>
                 </div>
               ))}
             </dl>

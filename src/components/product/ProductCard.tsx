@@ -155,7 +155,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
       <article className="card group overflow-hidden flex flex-col h-full">
         <Link href={`/produkt/${product.slug}`} className="p-3 flex flex-col flex-1">
           <span className="text-[11px] text-gray-400 font-medium leading-tight">{series}</span>
-          <span className="text-base font-bold text-gray-900 mt-0.5 group-hover:text-primary-600 transition-colors">{dimension}</span>
+          <span className="text-sm xs:text-base font-bold text-gray-900 mt-0.5 group-hover:text-primary-600 transition-colors">{dimension}</span>
           <span className="text-xs text-gray-500 mt-0.5">{qty}</span>
           <div className="flex items-center gap-1.5 mt-1.5">
             <span className={`w-1.5 h-1.5 rounded-full ${availDot[liveAvailability]}`} />
@@ -254,7 +254,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
           )}
 
           {showDualButtons ? (
-            <div className="flex items-center gap-2">
+            <div className="flex flex-col xs:flex-row items-stretch xs:items-center gap-2">
               {isUnavailable ? (
                 <Link
                   href={`/produkt/${product.slug}`}

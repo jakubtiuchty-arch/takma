@@ -38,7 +38,7 @@ export default function StickyPrice({ product }: StickyPriceProps) {
         <span className="inline-block h-6 w-24 bg-gray-200 rounded animate-pulse" />
       ) : (
         <>
-          <span className="text-xl font-bold text-gray-900">
+          <span className="text-base xs:text-xl font-bold text-gray-900 whitespace-nowrap">
             {displayPrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
           </span>
           <span className="text-xs text-gray-500 ml-1">netto</span>
