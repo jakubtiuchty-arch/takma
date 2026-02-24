@@ -4,6 +4,7 @@ import { headers } from 'next/headers'
 import './globals.css'
 import LayoutShell from '@/components/layout/LayoutShell'
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const inter = Inter({
   subsets: ['latin', 'latin-ext'],
@@ -135,6 +136,7 @@ export default async function RootLayout({
       </head>
       <LayoutShell>{children}</LayoutShell>
       <Analytics />
+      <SpeedInsights />
     </html>
   )
 }
