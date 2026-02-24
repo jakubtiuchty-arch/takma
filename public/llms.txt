@@ -56,7 +56,7 @@ TAKMA dostarcza rozwiązania AutoID dla przedsiębiorstw w całej Polsce:
   - Termiczne drukarki etykiet: https://takma.com.pl/termiczne-drukarki-etykiet
   - Mobilne drukarki etykiet: https://takma.com.pl/mobilne-drukarki-etykiet
 - Terminale mobilne: https://takma.com.pl/terminale-mobilne
-- Skanery kodów kreskowych: https://takma.com.pl/skanery-kodow
+- Skanery kodów kreskowych: https://takma.com.pl/skanery-kodow-kreskowych
   - Skanery przewodowe: https://takma.com.pl/skanery-przewodowe
   - Skanery bezprzewodowe: https://takma.com.pl/skanery-bezprzewodowe
   - Skanery prezentacyjne: https://takma.com.pl/skanery-prezentacyjne

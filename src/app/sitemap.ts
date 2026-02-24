@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/materialy-eksploatacyjne`, lastModified: lastUpdated },
     { url: `${baseUrl}/oprogramowanie`, lastModified: lastUpdated },
     { url: `${baseUrl}/terminale-mobilne`, lastModified: lastUpdated },
-    { url: `${baseUrl}/skanery-kodow`, lastModified: lastUpdated },
+    { url: `${baseUrl}/skanery-kodow-kreskowych`, lastModified: lastUpdated },
     { url: `${baseUrl}/o-nas`, lastModified: new Date('2025-12-01') },
     { url: `${baseUrl}/kontakt`, lastModified: new Date('2025-12-01') },
     { url: `${baseUrl}/serwis`, lastModified: lastUpdated },

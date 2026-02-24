@@ -1944,7 +1944,7 @@ Akcesoria Zebra mają RÓŻNE Part Numbery nawet w obrębie tej samej serii — 
       },
     ],
   },
-  'skanery-kodow': {
+  'skanery-kodow-kreskowych': {
     definition: {
       heading: 'Co to jest skaner kodów kreskowych?',
       content: 'Skaner kodów kreskowych (ang. barcode scanner) to urządzenie elektroniczne służące do automatycznego odczytu i dekodowania informacji zapisanych w kodach kreskowych 1D (liniowych) i 2D (dwuwymiarowych). Na rynku B2B dostępne są trzy główne kategorie: skanery przewodowe (USB, RS-232) zapewniające stałe połączenie bez baterii, skanery bezprzewodowe (Bluetooth, radio 2.4 GHz FHSS) dające swobodę ruchu operatora, oraz skanery prezentacyjne (hands-free) montowane na stanowiskach kasowych i recepcjach do automatycznego odczytu bez naciskania przycisku. Czołowi producenci — Zebra Technologies, Honeywell i Datalogic — oferują modele od budżetowych skanerów 1D (od ~200 zł netto) po zaawansowane imager 2D klasy przemysłowej z certyfikatem IP67 i zasięgiem do 7 metrów (od ~1 300 zł netto). Nowoczesne skanery odczytują kody EAN, Code 128, QR, Data Matrix, PDF417 oraz kody z ekranów smartfonów — kupony, bilety mobilne i karty lojalnościowe. To podstawowe narzędzie automatycznej identyfikacji w logistyce, handlu detalicznym, produkcji, farmacji i ochronie zdrowia.',

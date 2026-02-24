@@ -161,8 +161,8 @@ export const categories: Category[] = [
     productCount: 18,
   },
   {
-    id: 'skanery-kodow',
-    slug: 'skanery-kodow',
+    id: 'skanery-kodow-kreskowych',
+    slug: 'skanery-kodow-kreskowych',
     name: 'Skanery kodów kreskowych',
     description: 'Profesjonalne skanery i czytniki kodów kreskowych 1D i 2D — przewodowe, bezprzewodowe i prezentacyjne. Zebra, Datalogic i inne marki.',
     seoTitle: 'Skanery i czytniki kodów kreskowych — przewodowe, bezprzewodowe, prezentacyjne',
@@ -802,7 +802,7 @@ export const subcategories: Subcategory[] = [
     id: 'skanery-przewodowe',
     slug: 'skanery-przewodowe',
     name: 'Skanery przewodowe',
-    parentCategoryId: 'skanery-kodow',
+    parentCategoryId: 'skanery-kodow-kreskowych',
     description: 'Skanery kodów kreskowych przewodowe USB i RS-232 — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania.',
     seoTitle: 'Skanery kodów kreskowych przewodowe USB — Zebra, Datalogic',
     seoDescription: 'Skanery kodów kreskowych przewodowe USB od 352 zł netto. Zebra DS2208 — imager 2D, IP52, 5 lat gwarancji. Do kas, aptek, biur i magazynów. Autoryzowany partner Zebra — doradztwo i serwis.',
@@ -815,7 +815,7 @@ export const subcategories: Subcategory[] = [
     id: 'skanery-bezprzewodowe',
     slug: 'skanery-bezprzewodowe',
     name: 'Skanery bezprzewodowe',
-    parentCategoryId: 'skanery-kodow',
+    parentCategoryId: 'skanery-kodow-kreskowych',
     description: 'Skanery kodów kreskowych bezprzewodowe Bluetooth — swoboda ruchu, zasięg do 100 m, bateria na 50 000+ skanów.',
     seoTitle: 'Skanery kodów kreskowych bezprzewodowe Bluetooth — Zebra',
     seoDescription: 'Skanery bezprzewodowe Bluetooth od 890 zł netto. Zebra DS2278, LI4278, DS8178. Zasięg do 100 m, bateria 50 000+ skanów. Autoryzowany partner Zebra — doradztwo i serwis.',
@@ -828,7 +828,7 @@ export const subcategories: Subcategory[] = [
     id: 'skanery-prezentacyjne',
     slug: 'skanery-prezentacyjne',
     name: 'Skanery prezentacyjne',
-    parentCategoryId: 'skanery-kodow',
+    parentCategoryId: 'skanery-kodow-kreskowych',
     description: 'Skanery prezentacyjne (hands-free) do kas samoobsługowych i punktów sprzedaży — automatyczne skanowanie bez naciskania przycisku.',
     seoTitle: 'Skanery prezentacyjne (hands-free) do POS i kas',
     seoDescription: 'Skanery prezentacyjne do kas od 1 790 zł netto. Automatyczne skanowanie kodów 1D/2D bez przyciskania — idealne do retail, aptek, bibliotek. Zebra DS9308, DS9908. Doradztwo TAKMA.',
@@ -7711,7 +7711,7 @@ DS2208 spełnia wymagania dyrektywy antyfałszywkowej FMD (Falsified Medicines D
 Plug and Play: po podłączeniu kabla USB skaner emuluje klawiaturę (HID) i natychmiast „wpisuje" zeskanowany kod do aktywnego pola — działa z każdym programem kasowym, aptecznym, ERP i WMS bez instalacji sterowników. Zaawansowana konfiguracja przez aplikację Zebra 123Scan.
 
 Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie entry-level. Szczegółowa dokumentacja techniczna: zebra.com/ds2200-series.`,
-    categoryId: 'skanery-kodow',
+    categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-przewodowe'],
     manufacturerId: 'zebra',
     priceFrom: 352,
@@ -7864,7 +7864,7 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
 Komunikacja Bluetooth zapewnia zasięg do 10 m od bazy. Bateria wystarczająca na pełną zmianę roboczą.
 
 Wszystkie zalety DS2208 w wersji bezprzewodowej: odczyt kodów z ekranów, kodów uszkodzonych, technologia Plug and Play.`,
-    categoryId: 'skanery-kodow',
+    categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-bezprzewodowe'],
     manufacturerId: 'zebra',
     priceFrom: 990,
@@ -7900,7 +7900,7 @@ Wszystkie zalety DS2208 w wersji bezprzewodowej: odczyt kodów z ekranów, kodó
 Nowoczesna technologia linear imager pozwala na odczyt kodów ze standardowych etykiet i ekranów telefonów. Akumulator gwarantuje nieprzerwaną pracę nawet przez 72 godziny.
 
 Wyjątkowy zasięg radiowy do 100 metrów i norma szczelności IP53.`,
-    categoryId: 'skanery-kodow',
+    categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-bezprzewodowe'],
     manufacturerId: 'zebra',
     priceFrom: 890,
@@ -7936,7 +7936,7 @@ Wyjątkowy zasięg radiowy do 100 metrów i norma szczelności IP53.`,
 Potrafi odczytać niewyraźne, wyblakłe, uszkodzone lub zabrudzone kody. Świetnie radzi sobie z kodami na ekranach smartfonów, nawet słabo doświetlonych.
 
 Inteligentna bateria PowerPrecision Plus zapewnia do 24 godzin nieprzerwanej pracy. Wersja DS8178-HC dedykowana dla służby zdrowia z antybakteryjną powłoką.`,
-    categoryId: 'skanery-kodow',
+    categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-bezprzewodowe'],
     manufacturerId: 'zebra',
     priceFrom: 1790,

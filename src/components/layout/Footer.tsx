@@ -6,7 +6,7 @@ const footerLinks = {
   produkty: [
     { name: 'Drukarki etykiet', href: '/drukarki-etykiet' },
     { name: 'Terminale mobilne', href: '/terminale-mobilne' },
-    { name: 'Skanery kodów', href: '/skanery-kodow' },
+    { name: 'Skanery kodów', href: '/skanery-kodow-kreskowych' },
     { name: 'Materiały eksploatacyjne', href: '/materialy-eksploatacyjne' },
     { name: 'Akcesoria do drukarek', href: '/akcesoria-do-drukarek-etykiet' },
   ],

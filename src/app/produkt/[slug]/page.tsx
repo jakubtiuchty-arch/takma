@@ -140,7 +140,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   const relatedSoftware = allRelated.filter((p) => p!.categoryId === 'oprogramowanie')
   const relatedAccessories = allRelated.filter((p) => !p!.subcategoryIds?.includes('karty-pcv') && p!.categoryId !== 'oprogramowanie')
 
-  const isDevice = ['drukarki-etykiet', 'drukarki-kart', 'drukarki-opasek', 'terminale-mobilne', 'skanery-kodow', 'tablety'].includes(product.categoryId)
+  const isDevice = ['drukarki-etykiet', 'drukarki-kart', 'drukarki-opasek', 'terminale-mobilne', 'skanery-kodow-kreskowych', 'tablety'].includes(product.categoryId)
 
   // JSON-LD: Product schema
   const availabilitySchemaMap = {

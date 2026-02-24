@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { getCategoryById } from '@/data/products'
 import CategoryPage from '@/components/category/CategoryPage'
 
-const SLUG = 'skanery-kodow'
+const SLUG = 'skanery-kodow-kreskowych'
 
 export async function generateMetadata(): Promise<Metadata> {
   const cat = getCategoryById(SLUG)!
