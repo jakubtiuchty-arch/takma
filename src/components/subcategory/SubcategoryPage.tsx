@@ -36,6 +36,16 @@ function RichText({ text, className }: { text: string; className?: string }) {
   )
 }
 
+/** Filtr taśm per model: Szerokość + Długość + Format */
+const ribbonModelFilters: FilterDefinition[] = [
+  { specKey: 'Szerokość', label: 'Szerokość', sort: 'numeric' },
+  { specKey: 'Długość', label: 'Długość', sort: 'numeric' },
+  { specKey: 'Rdzeń', label: 'Format', sort: 'numeric', displayMap: {
+    '12.7 mm (0,5")': 'Desktop (12,7 mm)',
+    '25 mm (1")': 'Industrial (25 mm)',
+  }},
+]
+
 /** Konfiguracja filtrów w sidebarze per subcategory */
 const sidebarFilters: Record<string, FilterDefinition[]> = {
   'tasmy-termotransferowe': [
@@ -48,6 +58,12 @@ const sidebarFilters: Record<string, FilterDefinition[]> = {
     }},
     { specKey: 'Seria', label: 'Seria', sort: 'alpha' },
   ],
+  // Model-specific ribbon subcategories (key = slug)
+  'tasmy-2300-wax': ribbonModelFilters,
+  'tasmy-2100-wax': ribbonModelFilters,
+  'tasmy-3200-wax-resin': ribbonModelFilters,
+  'tasmy-3400-wax-resin': ribbonModelFilters,
+  'tasmy-5095-resin': ribbonModelFilters,
   'etykiety-termotransferowe-papierowe': [
     { specKey: 'Wymiar etykiety', label: 'Szerokość', sort: 'numeric', transform: 'extract-width', style: 'dropdown' },
     { specKey: 'Wymiar etykiety', label: 'Wysokość', sort: 'numeric', transform: 'extract-height', style: 'dropdown' },
