@@ -48,9 +48,9 @@ const navigation: NavItem[] = [
     href: '/skanery-kodow-kreskowych',
     children: [
       { name: 'Wszystkie skanery', href: '/skanery-kodow-kreskowych' },
-      { name: 'Skanery przewodowe', href: '/skanery-przewodowe' },
-      { name: 'Skanery bezprzewodowe', href: '/skanery-bezprzewodowe' },
-      { name: 'Skanery prezentacyjne', href: '/skanery-prezentacyjne' },
+      { name: 'Skanery przewodowe', href: '/skanery-kodow-kreskowych/przewodowe' },
+      { name: 'Skanery bezprzewodowe', href: '/skanery-kodow-kreskowych/bezprzewodowe' },
+      { name: 'Skanery prezentacyjne', href: '/skanery-kodow-kreskowych/prezentacyjne' },
     ],
   },
   {

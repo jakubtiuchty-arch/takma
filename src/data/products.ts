@@ -800,7 +800,7 @@ export const subcategories: Subcategory[] = [
   // --- Podkategorie: Skanery kodów kreskowych ---
   {
     id: 'skanery-przewodowe',
-    slug: 'skanery-przewodowe',
+    slug: 'skanery-kodow-kreskowych/przewodowe',
     name: 'Skanery przewodowe',
     parentCategoryId: 'skanery-kodow-kreskowych',
     description: 'Skanery kodów kreskowych przewodowe USB i RS-232 — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania.',
@@ -813,7 +813,7 @@ export const subcategories: Subcategory[] = [
   },
   {
     id: 'skanery-bezprzewodowe',
-    slug: 'skanery-bezprzewodowe',
+    slug: 'skanery-kodow-kreskowych/bezprzewodowe',
     name: 'Skanery bezprzewodowe',
     parentCategoryId: 'skanery-kodow-kreskowych',
     description: 'Skanery kodów kreskowych bezprzewodowe Bluetooth — swoboda ruchu, zasięg do 100 m, bateria na 50 000+ skanów.',
@@ -826,7 +826,7 @@ export const subcategories: Subcategory[] = [
   },
   {
     id: 'skanery-prezentacyjne',
-    slug: 'skanery-prezentacyjne',
+    slug: 'skanery-kodow-kreskowych/prezentacyjne',
     name: 'Skanery prezentacyjne',
     parentCategoryId: 'skanery-kodow-kreskowych',
     description: 'Skanery prezentacyjne (hands-free) do kas samoobsługowych i punktów sprzedaży — automatyczne skanowanie bez naciskania przycisku.',

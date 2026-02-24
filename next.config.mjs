@@ -106,7 +106,12 @@ const nextConfig = {
       { source: '/kategoria/terminale-mobilne/:path*', destination: '/terminale-mobilne', permanent: true },
       { source: '/kategoria/materialy-eksploatacyjne/:path*', destination: '/materialy-eksploatacyjne', permanent: true },
       { source: '/kategoria/akcesoria/:path*', destination: '/katalog', permanent: true },
-      { source: '/kategoria/skanery-kodow-kreskowych/:path*', destination: '/katalog', permanent: true },
+      { source: '/kategoria/skanery-kodow-kreskowych/:path*', destination: '/skanery-kodow-kreskowych', permanent: true },
+
+      // Stare flat URLe podkategorii skanerów → nowe zagnieżdżone
+      { source: '/skanery-przewodowe', destination: '/skanery-kodow-kreskowych/przewodowe', permanent: true },
+      { source: '/skanery-bezprzewodowe', destination: '/skanery-kodow-kreskowych/bezprzewodowe', permanent: true },
+      { source: '/skanery-prezentacyjne', destination: '/skanery-kodow-kreskowych/prezentacyjne', permanent: true },
       { source: '/kategoria/tablety-przemyslowe/:path*', destination: '/terminale-mobilne', permanent: true },
       { source: '/kategoria/oprogramowanie/:path*', destination: '/oprogramowanie', permanent: true },
       { source: '/kategoria/urzadzenia-fiskalne/:path*', destination: '/katalog', permanent: true },

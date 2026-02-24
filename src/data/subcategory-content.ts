@@ -2119,7 +2119,7 @@ Interfejsy: USB HID Keyboard (najpopularniejszy, plug-and-play), USB CDC/COM (po
       },
     ],
   },
-  'skanery-przewodowe': {
+  'skanery-kodow-kreskowych/przewodowe': {
     definition: {
       heading: 'Co to jest skaner kodów kreskowych przewodowy?',
       content: 'Przewodowy skaner kodów kreskowych (ang. wired barcode scanner) to urządzenie do automatycznego odczytu kodów 1D i 2D, podłączone bezpośrednio do komputera lub terminala POS za pomocą kabla USB, RS-232 lub keyboard wedge. W przeciwieństwie do modeli bezprzewodowych, skanery przewodowe zapewniają stałe zasilanie z hosta, nie wymagają baterii ani ładowania, a połączenie jest niezakłócone i niezawodne. Czołowi producenci – Zebra Technologies, Honeywell i Datalogic – oferują skanery przewodowe w wykonaniu standardowym i wzmocnionym (IP-rated), wyposażone w silniki skanujące obsługujące kody 1D liniowe (EAN, Code 128, ITF) oraz 2D obszarowe (QR, Data Matrix, PDF417, GS1 DataBar). Parametry techniczne to m.in. szybkość dekodowania do 1 000 skanowań/s, zasięg odczytu od kilku centymetrów do ponad 10 metrów w modelach dalekiego zasięgu oraz odporność IP41–IP67 w wersjach przemysłowych. To niezawodne i ekonomiczne rozwiązanie dla stałych stanowisk pracy: kas POS, rejestratorów produkcji, bibliotek i punktów przyjęcia towaru.',
@@ -2302,7 +2302,7 @@ Odporność mechaniczna: model standardowy – upadek z 1,0–1,5 m, brak uszcze
       },
     ],
   },
-  'skanery-bezprzewodowe': {
+  'skanery-kodow-kreskowych/bezprzewodowe': {
     definition: {
       heading: 'Co to jest bezprzewodowy skaner kodów kreskowych?',
       content: 'Bezprzewodowy skaner kodów kreskowych (ang. wireless barcode scanner) to urządzenie ręczne do odczytu kodów 1D i 2D, komunikujące się z systemem hosta bez użycia przewodu. Na rynku B2B funkcjonują dwie główne technologie łączności bezprzewodowej: Bluetooth (standardy 4.2, 5.0, 5.1 — zasięg do 10–15 m w trybie Classic, do 100 m w trybie Bluetooth Long Range) oraz zastrzeżone radio 2.4 GHz FHSS (Frequency Hopping Spread Spectrum) z zasięgiem do 100 m i opóźnieniami poniżej 1 ms. Systemy Bluetooth łączą się bezpośrednio z komputerami i tabletami bez stacji bazowej, natomiast skanery radiowe 2.4 GHz FHSS wymagają dedykowanej stacji bazowej (cradle lub USB dongle), co zapewnia niższe opóźnienia i możliwość parowania wielu urządzeń w jednej lokalizacji. Czołowi producenci — Zebra Technologies, Honeywell i Datalogic — oferują modele zarówno z Bluetooth, jak i z radiową 2.4 GHz FHSS, dostosowane do środowisk magazynowych, handlowych i medycznych.',
@@ -2487,7 +2487,7 @@ Tryb wsadowy (batch mode): gdy skaner jest poza zasięgiem, przechowuje do 1 000
       },
     ],
   },
-  'skanery-prezentacyjne': {
+  'skanery-kodow-kreskowych/prezentacyjne': {
     definition: {
       heading: 'Co to jest skaner prezentacyjny (hands-free)?',
       content: 'Skaner prezentacyjny (ang. presentation scanner, hands-free scanner) to stacjonarny skaner kodów kreskowych montowany na ladzie kasowej lub blacie stanowiska obsługi, który skanuje kody automatycznie — bez naciskania przycisku przez operatora. Wystarczy przesunąć produkt przez pole skanowania, a urządzenie samoczynnie wykrywa i dekoduje kod w ułamku sekundy. Nowoczesne skanery prezentacyjne stosują wielokierunkowe pole skanowania (omnidirectional scanning) oparte na imagerach 2D lub systemach wieloliniowych laserowych. Dzięki temu kod może być prezentowany pod dowolnym kątem — skaner sam go zlokalizuje i zdekoduje. Skanery prezentacyjne obsługują kody 1D (EAN-13, UPC-A, Code 128) oraz 2D (QR, DataMatrix, PDF417), a najnowsze modele odczytują kody z ekranów smartfonów — kupony, karty lojalnościowe i bilety mobilne. To standard w supermarketach, aptekach, bibliotekach i kasach samoobsługowych, gdzie liczy się przepustowość i ergonomia stanowiska.',
