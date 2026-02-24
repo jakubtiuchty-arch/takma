@@ -51,11 +51,13 @@ export default function GuidePage({ guide }: GuidePageProps) {
   }
 
   // JSON-LD: Article (E-E-A-T: author = Person, publisher = Organization)
+  const wordCount = guide.sections.reduce((acc, s) => acc + s.content.replace(/<[^>]*>/g, '').split(/\s+/).length, 0)
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: guide.title,
     description: guide.seoDescription,
+    wordCount,
     author: {
       '@type': 'Person',
       name: 'Jakub Tiuchty',
@@ -72,7 +74,32 @@ export default function GuidePage({ guide }: GuidePageProps) {
     dateModified: guide.updatedAt,
     mainEntityOfPage: `https://takma.com.pl/poradnik/${guide.slug}`,
     image: guide.heroImage ? `https://takma.com.pl${guide.heroImage}` : undefined,
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', `#${guide.sections[0]?.id} p:first-of-type`, '#faq'],
+    },
   }
+
+  // JSON-LD: ItemList (for ranking/comparison articles)
+  const isRanking = guide.tags.includes('ranking') || guide.tags.includes('top-10')
+  const itemListJsonLd = isRanking ? (() => {
+    // Extract product links from guide relatedLinks that point to /produkt/
+    const productLinks = guide.relatedLinks.filter(l => l.href.startsWith('/produkt/'))
+    if (productLinks.length === 0) return null
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: guide.title,
+      numberOfItems: productLinks.length,
+      itemListOrder: 'https://schema.org/ItemListOrderDescending',
+      itemListElement: productLinks.map((link, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: link.title.replace(/ — .*$/, ''),
+        url: `https://takma.com.pl${link.href}`,
+      })),
+    }
+  })() : null
 
   // JSON-LD: HowTo (for step-by-step sections like "Jak wdrożyć...")
   const howToSection = guide.sections.find(s => s.id === 'wdrozenie')
@@ -118,6 +145,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       {howToJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />}
       {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
+      {itemListJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />}
 
       <div className="bg-white">
         {/* Breadcrumbs */}
@@ -222,7 +250,14 @@ export default function GuidePage({ guide }: GuidePageProps) {
                 </section>
               )}
 
-              {/* Author data in JSON-LD Article schema only (E-E-A-T) — not rendered visually */}
+              {/* Author byline (E-E-A-T: visible author) */}
+              <div className="mt-10 pt-6 border-t border-gray-200 flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center text-primary-700 font-bold text-sm">JT</div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-900">Jakub Tiuchty</p>
+                  <p className="text-xs text-gray-500">Specjalista AutoID w TAKMA | 25 lat doświadczenia w AutoID</p>
+                </div>
+              </div>
 
               {/* CTA Section */}
               {(() => {

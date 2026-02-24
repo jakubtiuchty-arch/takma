@@ -15,6 +15,12 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Google-CloudVertexBot
+Allow: /
+
 # Block AI training-only crawlers
 User-agent: CCBot
 Disallow: /
