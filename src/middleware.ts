@@ -54,19 +54,12 @@ export async function middleware(request: NextRequest) {
     ])
 
     // Jeśli slug NIE istnieje na nowej stronie → redirect do strony przebudowy
+    // Slugi zebra-* / datalogic-* to produkty lub akcesoria na nowej stronie
+    // (stare WordPress URLe Zebra obsługiwane są redirectami w next.config.mjs PRZED middleware)
     if (!existingSlugs.has(slug)) {
-      // Sprawdź czy to nie jest slug z akcesoriami/etykietami (te mają dłuższe slugi)
-      // Nie matchuj jeśli to akcesoria na nowej stronie (sprawdzamy prefix)
-      const isNewSiteAccessory = slug.startsWith('glowica-') || slug.startsWith('walek-') ||
-        slug.startsWith('obcinak-') || slug.startsWith('odklejak-') || slug.startsWith('modul-') ||
-        slug.startsWith('bateria-') || slug.startsWith('zasilacz-') || slug.startsWith('etykiety-') ||
-        slug.startsWith('tasma-') || slug.startsWith('opaski-') || slug.startsWith('karta-') ||
-        slug.startsWith('stacja-') || slug.startsWith('ladowarka-') || slug.startsWith('uchwyt-') ||
-        slug.startsWith('etui-') || slug.startsWith('kabel-') || slug.startsWith('rysik-') ||
-        slug.startsWith('folia-') || slug.startsWith('pasek-') || slug.startsWith('egzoszkielet-') ||
-        slug.startsWith('kontrakt-')
+      const isNewSiteProduct = slug.startsWith('zebra-') || slug.startsWith('datalogic-')
 
-      if (!isNewSiteAccessory) {
+      if (!isNewSiteProduct) {
         return NextResponse.redirect(new URL('/produkt-przeniesiony', request.url), 301)
       }
     }
