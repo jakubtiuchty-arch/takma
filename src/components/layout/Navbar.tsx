@@ -44,6 +44,16 @@ const navigation: NavItem[] = [
     ],
   },
   {
+    name: 'Skanery',
+    href: '/skanery-kodow',
+    children: [
+      { name: 'Wszystkie skanery', href: '/skanery-kodow' },
+      { name: 'Skanery przewodowe', href: '/skanery-przewodowe' },
+      { name: 'Skanery bezprzewodowe', href: '/skanery-bezprzewodowe' },
+      { name: 'Skanery prezentacyjne', href: '/skanery-prezentacyjne' },
+    ],
+  },
+  {
     name: 'Materiały',
     href: '/materialy-eksploatacyjne',
     children: [

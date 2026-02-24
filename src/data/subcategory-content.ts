@@ -1944,4 +1944,726 @@ Akcesoria Zebra mają RÓŻNE Part Numbery nawet w obrębie tej samej serii — 
       },
     ],
   },
+  'skanery-kodow': {
+    definition: {
+      heading: 'Co to jest skaner kodów kreskowych?',
+      content: 'Skaner kodów kreskowych (ang. barcode scanner) to urządzenie elektroniczne służące do automatycznego odczytu i dekodowania informacji zapisanych w kodach kreskowych 1D (liniowych) i 2D (dwuwymiarowych). Na rynku B2B dostępne są trzy główne kategorie: skanery przewodowe (USB, RS-232) zapewniające stałe połączenie bez baterii, skanery bezprzewodowe (Bluetooth, radio 2.4 GHz FHSS) dające swobodę ruchu operatora, oraz skanery prezentacyjne (hands-free) montowane na stanowiskach kasowych i recepcjach do automatycznego odczytu bez naciskania przycisku. Czołowi producenci — Zebra Technologies, Honeywell i Datalogic — oferują modele od budżetowych skanerów 1D (od ~200 zł netto) po zaawansowane imager 2D klasy przemysłowej z certyfikatem IP67 i zasięgiem do 7 metrów (od ~1 300 zł netto). Nowoczesne skanery odczytują kody EAN, Code 128, QR, Data Matrix, PDF417 oraz kody z ekranów smartfonów — kupony, bilety mobilne i karty lojalnościowe. To podstawowe narzędzie automatycznej identyfikacji w logistyce, handlu detalicznym, produkcji, farmacji i ochronie zdrowia.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać skaner kodów kreskowych do firmy?',
+      items: [
+        'Typ kodów — 1D czy 2D: skanery 1D (laserowe, CCD) odczytują wyłącznie kody kreskowe liniowe (EAN, Code 128, ITF). Skanery 2D (area imager) obsługują zarówno kody 1D, jak i dwuwymiarowe (QR, Data Matrix, PDF417, GS1 DataBar). W 2026 roku różnica cenowa wynosi zaledwie 100–250 zł — warto od razu wybrać 2D.',
+        'Przewodowy vs bezprzewodowy: skaner przewodowy jest tańszy, prostszy i nie wymaga ładowania — idealny do stałego stanowiska (kasa, punkt przyjęcia towaru). Bezprzewodowy daje mobilność — niezbędny w magazynie, przy inwentaryzacji i w terenie.',
+        'Środowisko pracy i odporność: do biura i kasy wystarczy model standardowy (IP41). Do magazynu, produkcji i chłodni wybierz model wzmocniony (IP54–IP67) z odpornością na upadki z 1,5–1,8 m.',
+        'Zasięg skanowania: kasa POS — 5–55 cm. Magazyn z regałami — 0,5–1,5 m. Bramki sortujące — do 7 m (skanery dalekiego zasięgu).',
+        'Interfejs komunikacyjny: USB HID (plug-and-play, bez sterowników), RS-232 (starsze systemy POS i kasy fiskalne), Bluetooth (mobilność), radio 2.4 GHz FHSS (magazyn, niska latencja).',
+        'Ergonomia i tryb pracy: ręczny (handheld) — elastyczność; prezentacyjny (hands-free) — przepustowość na kasie; tryb podwójny — skaner z podstawką obsługuje oba tryby.',
+        'Gwarancja i serwis w Polsce: wybieraj urządzenia z autoryzowanym serwisem na terenie kraju. Zebra OneCare zapewnia naprawę lub wymianę, serwis-zebry.pl oferuje wsparcie w języku polskim.',
+      ],
+    },
+    expertAuthority: 'TAKMA to autoryzowany partner Zebra Technologies z ponad 25-letnim doświadczeniem we wdrożeniach systemów automatycznej identyfikacji na polskim rynku. Nasi certyfikowani inżynierowie wdrożyli tysiące skanerów kodów kreskowych — od pojedynczych stanowisk w aptekach po instalacje z setkami urządzeń w centrach logistycznych i sieciach handlowych. Specjalizujemy się w doborze skanerów do konkretnych procesów biznesowych: kompletacja zamówień, weryfikacja leków (FMD), obsługa kas POS, kontrola jakości na linii produkcyjnej. Jako właściciel serwisu serwis-zebry.pl zapewniamy pełne wsparcie od konfiguracji po naprawy gwarancyjne i pogwarancyjne. Każda rekomendacja na tej stronie jest poparta realnym doświadczeniem wdrożeniowym — nie opieramy się na folderach reklamowych producenta.',
+    technicalDeepDive: `Skanery kodów kreskowych dzielą się na trzy klasy technologiczne pod względem silnika skanującego.
+
+Skanery laserowe (1D): wiązka laserowa odbija się od kodu kreskowego; detektor mierzy intensywność odbitego światła. Prędkość: 100–500 skanowań/s. Ograniczenie: wyłącznie kody 1D. Zalety: niski koszt, duży zasięg (do 60 cm w modelach standardowych). Przykłady: Zebra LS2208, Honeywell Voyager 1250g.
+
+Skanery CCD/LED (1D): diody LED oświetlają kod, matryca CCD rejestruje obraz. Brak ruchomych elementów = wyższa trwałość. Ograniczenie: zasięg do 30 cm, tylko kody 1D. Stosowane w najtańszych modelach.
+
+Area Imager 2D (CMOS): kamera CMOS robi zdjęcie kodu i dekoduje je algorytmicznie. Obsługuje wszystkie typy kodów 1D i 2D, kody z ekranów, kody uszkodzone. Silniki: Zebra SE4770 (standard, do 700 skanowań/s), SE4850 (premium, zasięg do 7,3 m, 1D), SE2707 (ekonomiczny). Honeywell: N6603, N6703. To dominujący standard w 2026 roku.
+
+Parametry kluczowe przy porównywaniu: szybkość dekodowania (scans/sec), zasięg odczytu (min–max distance), pole widzenia (FoV), tolerancja ruchu (motion tolerance), rozdzielczość minimalna kodu (minimum element width w mil/mm), odporność IP i drop spec.
+
+Interfejsy: USB HID Keyboard (najpopularniejszy, plug-and-play), USB CDC/COM (port szeregowy przez USB), RS-232 (starsze systemy), Bluetooth Classic SPP/HID, Bluetooth Low Energy, radio 2.4 GHz FHSS (Zebra Cordless). Wybór interfejsu determinuje kompatybilność z systemem POS/WMS.`,
+    useCases: [
+      {
+        title: 'Kasa POS w handlu detalicznym — skanowanie produktów i kuponów',
+        description: 'Skaner prezentacyjny 2D (np. Zebra DS9308) lub ręczny z podstawką (Zebra DS2208) na kasie. Odczytuje kody EAN z produktów, kody lojalnościowe QR z telefonów klientów i kody kuponowe. Połączenie USB HID = zero konfiguracji. Przepustowość: 400–1 200 skanowań/godz. w zależności od modelu.',
+      },
+      {
+        title: 'Magazyn i logistyka — kompletacja zamówień i przyjęcie towaru',
+        description: 'Skaner bezprzewodowy 2D (Zebra DS2278 lub DS8178) z radio 2.4 GHz FHSS do mobilnej pracy na hali. Odczytuje kody GS1-128 z palet, numery seryjne SSCC i etykiety kurierskie. Tryb wsadowy (batch mode) pozwala skanować poza zasięgiem i synchronizować dane po powrocie do stacji.',
+      },
+      {
+        title: 'Apteka i szpital — weryfikacja leków (FMD) i identyfikacja pacjentów',
+        description: 'Skaner 2D healthcare (Zebra DS2208-HC) na ladzie aptecznej. Odczytuje kody Data Matrix z opakowań leków wymagane przez dyrektywę FMD i system KOWAL. Obudowa odporna na dezynfekcję IPA 70%. W szpitalu: skanowanie bransoletek pacjentów i leków przy łóżku.',
+      },
+      {
+        title: 'Produkcja — kontrola jakości i śledzenie komponentów (DPM)',
+        description: 'Skaner przemysłowy z trybem DPM (Zebra DS3608-DP) na stanowisku kontroli. Odczytuje kody Data Matrix wytrawione laserowo na metalowych komponentach z skutecznością >95%. Interfejs RS-232 do integracji ze starszymi systemami MES. IP67 dla odporności na olej i wilgoć.',
+      },
+      {
+        title: 'E-commerce i fulfillment — skanowanie etykiet kurierskich',
+        description: 'Skaner przewodowy 2D (Zebra DS2208) na stanowisku pakowania. Weryfikuje kod zamówienia, drukuje i skanuje etykietę kurierską (Code 128, PDF417). USB HID integruje się z dowolnym systemem WMS/OMS bez sterowników. Koszt wdrożenia: od ~590 zł netto za zestaw z uchwytem.',
+      },
+      {
+        title: 'Biblioteka i administracja — wypożyczenia i obieg dokumentów',
+        description: 'Budżetowy skaner 1D/2D na stanowisku bibliotekarza lub w biurze obsługi. Skanuje kody z kart czytelnika, grzbietów książek i dokumentów (PDF417 na dowodach osobistych). Tryb hands-free z podstawką przyspiesza obsługę kolejki. Wydajność: 200–400 pozycji/godz.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego sprzedawcy skanerów zwykle nie mówią',
+      items: [
+        {
+          title: 'Skaner "2D" to nie gwarancja dobrego odczytu 2D',
+          text: 'Tanie skanery no-name z silnikami 2D technicznie obsługują kody dwuwymiarowe, ale zawodzą przy kodach uszkodzonych, małych (<5 mm) lub niskokontrastowych. Silniki Zebra SE4770 i SE4850 mają wbudowane algorytmy korekcji błędów i multi-frame capture — odczytują kody, przy których budżetowe modele zwracają błąd.',
+        },
+        {
+          title: 'Kabel to element eksploatacyjny, nie jednorazowy',
+          text: 'W intensywnym użytkowaniu kabel skanera pęka przy złączu po 12–18 miesiącach. Producenci premium (Zebra, Honeywell) sprzedają kable wymienne za 30–90 zł. W tańszych markach kabel jest niewymienny — awaria oznacza zakup nowego skanera. Sprawdź dostępność kabli zamiennych przed zakupem.',
+        },
+        {
+          title: 'USB HID vs USB COM — ta sama wtyczka, inne zachowanie',
+          text: 'Skaner USB może pracować w trybie HID Keyboard (emulacja klawiatury, zero sterowników) lub USB CDC/COM (port szeregowy, wymaga sterownika). Nieodpowiedni tryb powoduje, że skaner "nie działa" z konkretnym oprogramowaniem POS lub WMS. Konfigurację zmieniasz skanując kody z instrukcji producenta.',
+        },
+        {
+          title: 'Zasięg "do 100 m" to zasięg w linii wzroku',
+          text: 'Producenci podają zasięg radiowy w idealnych warunkach (line of sight). W metalowym magazynie z regałami zasięg Bluetooth spada z 15 m do 5–8 m, a radio 2.4 GHz FHSS ze 100 m do 30–50 m. Przed zakupem floty skanerów wykonaj site survey — zmierz zasięg w docelowej lokalizacji.',
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Jaka jest różnica między skanerem 1D a 2D?',
+        answer: 'Skaner 1D odczytuje wyłącznie kody kreskowe liniowe (EAN-13, Code 128, ITF). Skaner 2D (area imager) odczytuje zarówno kody 1D, jak i dwuwymiarowe: QR Code, Data Matrix, PDF417. Skaner 2D potrafi też odczytywać kody z ekranów smartfonów. Różnica cenowa wynosi 100–250 zł — w większości przypadków warto od razu wybrać 2D.',
+      },
+      {
+        question: 'Skaner przewodowy czy bezprzewodowy — co wybrać?',
+        answer: 'Skaner przewodowy jest tańszy (o 30–60%), prostszy i nie wymaga ładowania — idealny do stałego stanowiska (kasa, punkt przyjęcia). Bezprzewodowy daje mobilność i jest niezbędny w magazynie, przy inwentaryzacji i w terenie. Na stałym stanowisku nie ma powodu dopłacać za bezprzewodowość.',
+      },
+      {
+        question: 'Jakie kody kreskowe obsługuje nowoczesny skaner?',
+        answer: 'Skaner 2D (area imager) obsługuje: kody 1D liniowe (EAN-8, EAN-13, UPC-A, Code 128, Code 39, ITF, GS1-128, GS1 DataBar), kody 2D (QR Code, Data Matrix, PDF417, Aztec Code, MaxiCode), oraz kody z ekranów smartfonów w trybie screen scanning.',
+      },
+      {
+        question: 'Jak podłączyć skaner do komputera?',
+        answer: 'Najprostszą opcją jest USB HID — wystarczy podłączyć kabel USB, a skaner działa jak klawiatura (plug-and-play, bez sterowników). Dane trafiają do aktywnego pola w dowolnej aplikacji. RS-232 wymaga konfiguracji portu szeregowego. Bluetooth wymaga sparowania z hostem.',
+      },
+      {
+        question: 'Jaka jest odporność skanerów na upadki i wilgoć?',
+        answer: 'Modele biurowe: IP41, upadek z 1,0–1,5 m. Modele przemysłowe: IP67 (pełna pyłoszczelność + zanurzenie 1 m/30 min), upadek z 1,8 m na beton. Do magazynu i produkcji minimum IP54 i odporność na upadek z 1,5 m.',
+      },
+      {
+        question: 'Czy skaner może odczytać kod z ekranu telefonu?',
+        answer: 'Tak — ale tylko skaner 2D (imager) z trybem screen scanning. Skanery laserowe 1D nie mają tej funkcji. Tryb screen scanning optymalizuje oświetlenie LED i algorytm dekodowania pod kąt podświetlanych ekranów. Minimum jasności ekranu: 100–150 nit.',
+      },
+      {
+        question: 'Ile kosztuje skaner kodów kreskowych?',
+        answer: 'Budżetowy skaner 1D: od ~200 zł netto. Skaner 2D standardowy (Zebra DS2208): od ~420 zł netto. Skaner 2D bezprzewodowy (Zebra DS2278): od ~900 zł netto. Skaner przemysłowy IP67 (Zebra DS3608): od ~1 300 zł netto. Skaner prezentacyjny (Zebra DS9308): od ~1 790 zł netto.',
+      },
+      {
+        question: 'Jaka jest gwarancja na skanery kodów kreskowych?',
+        answer: 'Standardowa gwarancja Zebra: 1–5 lat w zależności od modelu. Honeywell: 1–3 lata. Rozszerzony kontrakt Zebra OneCare zapewnia naprawy z gwarantowanym SLA i wymianę urządzenia. Dla flot powyżej 10 skanerów OneCare jest opłacalny — koszt jednej naprawy serwisowej często przekracza roczny koszt kontraktu.',
+      },
+      {
+        question: 'Jak zintegrować skaner z systemem POS lub WMS?',
+        answer: 'USB HID — skaner emuluje klawiaturę, dane trafiają do aktywnego pola bez sterowników. RS-232 — konfiguracja portu (9600 8N1) i oprogramowania odbierającego. Kluczowe: skonfiguruj terminator (Enter/CR), prefiksy/sufiksy i obsługiwane symbologie przez kody konfiguracyjne z instrukcji lub narzędzie Zebra 123Scan.',
+      },
+      {
+        question: 'Czym jest skanowanie DPM i kiedy jest potrzebne?',
+        answer: 'DPM (Direct Part Marking) to kody wytrawione laserowo lub igłowo bezpośrednio na metalowych/plastikowych komponentach. Standardowe skanery odczytują DPM ze skutecznością 20–40%. Dedykowane modele (Zebra DS3608-DP) z oświetleniem polaryzowanym osiągają >95%. DPM jest niezbędny w przemyśle motoryzacyjnym, lotniczym i elektronicznym.',
+      },
+      {
+        question: 'Jak czyścić skaner kodów kreskowych?',
+        answer: 'Okno optyczne: miękka ściereczka z IPA 70–99%. Obudowa: lekko wilgotna ściereczka. Modele Healthcare (Zebra DS2208-HC): dezynfekcja alkoholem i środkami na bazie amoniaku. Regularne czyszczenie (raz w tygodniu) wydłuża żywotność optyki i zapobiega pogorszeniu odczytu.',
+      },
+      {
+        question: 'Które skanery nadają się do apteki i szpitala?',
+        answer: 'Modele z certyfikatem IEC 60601-1 i odpornością na dezynfekcję: Zebra DS2208-HC, Honeywell Xenon 1900h. Cechy: jasnoszara obudowa, brak ostrych krawędzi, kabel z zaokrąglonym konektorem. W Polsce wymagane w systemach KOWAL (leki na receptę) i e-WUŚ (NFZ).',
+      },
+      {
+        question: 'Jakie są alternatywy dla skanera kodów kreskowych?',
+        answer: 'Terminal mobilny ze wbudowanym skanerem (Zebra TC22, Datalogic Memor 11): skanowanie + aplikacja WMS na jednym urządzeniu. System RFID (UHF): odczyt wielu tagów jednocześnie bez linii wzroku. Kamera smartfona z aplikacją: do sporadycznego użytku. Dla regularnej pracy B2B dedykowany skaner pozostaje optymalnym wyborem pod względem TCO.',
+      },
+    ],
+    comparisons: [
+      {
+        title: 'Skaner przewodowy vs bezprzewodowy — kiedy który?',
+        content: 'Przewodowy: tańszy o 30–60%, zero zarządzania bateriami, zerowe opóźnienie transmisji. Optymalny na stałym stanowisku (kasa, linia produkcyjna, recepcja). Bezprzewodowy: mobilność operatora, konieczny w magazynie i przy inwentaryzacji. Koszt dodatkowy: stacja ładująca (200–600 zł), zarządzanie bateriami. ROI bezprzewodowego: jeśli operator oszczędza 10 min/dzień dzięki mobilności, różnica 600 zł zwraca się w 12–14 tygodni.',
+      },
+      {
+        title: 'Skaner 1D (laser) vs 2D (imager) — co się opłaca?',
+        content: 'Skaner 1D: od ~200 zł, wyłącznie kody liniowe, brak odczytu z ekranów. Skaner 2D: od ~420 zł, wszystkie kody 1D i 2D, ekrany smartfonów, kody uszkodzone. Różnica 100–250 zł zwraca się natychmiast — nie ma powodu kupować skanera 1D do nowych wdrożeń w 2026 roku.',
+      },
+      {
+        title: 'Skaner ręczny vs prezentacyjny — ergonomia i wydajność',
+        content: 'Ręczny: elastyczny, może być używany w dłoni lub na podstawce. Przepustowość: 300–500 skanowań/godz. Prezentacyjny: automatyczny odczyt bez przycisku, hands-free. Przepustowość: 600–1 200 skanowań/godz. Przy kasie z wolumenem >400 skanowań/godz. skaner prezentacyjny zwraca różnicę ceny w 6–12 miesięcy.',
+      },
+      {
+        title: 'Skaner vs terminal mobilny ze skanerem',
+        content: 'Skaner kodów (200–1 900 zł) to specjalizowane urządzenie do odczytu — dane przesyła do komputera hosta. Terminal mobilny (3 000–8 000 zł) to komputer z Androidem i wbudowanym skanerem — obsługuje aplikację WMS bezpośrednio. Do stałego stanowiska: skaner. Do mobilnej pracy z aplikacją: terminal.',
+      },
+      {
+        title: 'Zebra vs Honeywell vs Datalogic — porównanie producentów',
+        content: 'Zebra Technologies: najszerszy ekosystem (DNA, 123Scan, OneCare), dominujący udział rynkowy, najlepszy serwis w Polsce. Honeywell: silne modele w segmencie healthcare i premium, Adaptus 7.0 — szybki algorytm dekodowania. Datalogic: mocna pozycja w skanerach prezentacyjnych (Magellan), dobre ceny w segmencie entry-level. Przy wyborze producenta sprawdź: dostępność serwisu lokalnie, kompatybilność z istniejącym ekosystemem, dostępność akcesoriów i kabli zamiennych.',
+      },
+    ],
+    howToSteps: [
+      {
+        name: 'Określ wymagania: typy kodów, środowisko i wolumen',
+        text: 'Przed zakupem odpowiedz na pytania: jakie kody będziesz skanować (1D, 2D, DPM)? W jakim środowisku (biuro, magazyn, produkcja, apteka)? Ile skanowań dziennie? Stałe stanowisko czy praca mobilna? Te odpowiedzi determinują klasę skanera.',
+      },
+      {
+        name: 'Wybierz typ skanera i interfejs komunikacyjny',
+        text: 'Stałe stanowisko + niski wolumen → skaner przewodowy USB HID. Stałe stanowisko + wysoki wolumen → skaner prezentacyjny. Praca mobilna → skaner bezprzewodowy (BT lub 2.4 GHz FHSS). Starszy system POS → sprawdź, czy potrzebujesz RS-232 lub IBM 46xx.',
+      },
+      {
+        name: 'Podłącz i skonfiguruj skaner',
+        text: 'USB HID: podłącz kabel, skaner gotowy (plug-and-play). Bluetooth: sparuj z hostem. Skonfiguruj parametry transmisji: terminator (CR/LF), prefix/suffix, obsługiwane symbologie. Użyj kodów konfiguracyjnych z instrukcji lub narzędzia Zebra 123Scan.',
+      },
+      {
+        name: 'Zintegruj z systemem POS/WMS/ERP',
+        text: 'Sprawdź, czy dane ze skanera trafiają poprawnie do pola w aplikacji. USB HID wysyła dane jak z klawiatury. USB COM i RS-232 wymagają konfiguracji portu w oprogramowaniu. Przetestuj z realnymi kodami z asortymentu.',
+      },
+      {
+        name: 'Przetestuj w środowisku docelowym i przeszkol operatorów',
+        text: 'Zeskanuj minimum 20 różnych kodów: standardowe, pod folią, zagięte, z ekranu telefonu. Sprawdź zasięg (bezprzewodowe), czas reakcji i poprawność danych. Przeszkol operatorów z wymiany kabla/baterii, czyszczenia okna optycznego i podstawowej konfiguracji.',
+      },
+    ],
+  },
+  'skanery-przewodowe': {
+    definition: {
+      heading: 'Co to jest skaner kodów kreskowych przewodowy?',
+      content: 'Przewodowy skaner kodów kreskowych (ang. wired barcode scanner) to urządzenie do automatycznego odczytu kodów 1D i 2D, podłączone bezpośrednio do komputera lub terminala POS za pomocą kabla USB, RS-232 lub keyboard wedge. W przeciwieństwie do modeli bezprzewodowych, skanery przewodowe zapewniają stałe zasilanie z hosta, nie wymagają baterii ani ładowania, a połączenie jest niezakłócone i niezawodne. Czołowi producenci – Zebra Technologies, Honeywell i Datalogic – oferują skanery przewodowe w wykonaniu standardowym i wzmocnionym (IP-rated), wyposażone w silniki skanujące obsługujące kody 1D liniowe (EAN, Code 128, ITF) oraz 2D obszarowe (QR, Data Matrix, PDF417, GS1 DataBar). Parametry techniczne to m.in. szybkość dekodowania do 1 000 skanowań/s, zasięg odczytu od kilku centymetrów do ponad 10 metrów w modelach dalekiego zasięgu oraz odporność IP41–IP67 w wersjach przemysłowych. To niezawodne i ekonomiczne rozwiązanie dla stałych stanowisk pracy: kas POS, rejestratorów produkcji, bibliotek i punktów przyjęcia towaru.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać przewodowy skaner kodów kreskowych?',
+      items: [
+        'Typ kodów – 1D czy 2D: jeśli skanujesz wyłącznie kody kreskowe liniowe (EAN-13, Code 128, ITF), wystarczy skaner 1D (liniowy). Do kodów 2D (QR, Data Matrix, GS1 DataBar) niezbędny jest skaner 2D z matrycą CCD lub CMOS (imager obszarowy). W nowoczesnym środowisku B2B, gdzie GS1 DataMatrix jest standardem w farmacji i elektronice, warto od razu wybrać 2D.',
+        'Interfejs połączenia: USB HID jest najprostszy – skaner działa jak klawiatura, bez sterowników. RS-232 jest wymagany przez starsze systemy POS i kasy fiskalne. Keyboard Wedge (PS/2) to rozwiązanie dla przestarzałych terminali. Sprawdź interfejs hosta przed zakupem – nie wszystkie kable są wymienne.',
+        'Zasięg skanowania: do kas POS wystarczy zasięg 10–30 cm. Do stanowisk wysokościowych, regałów i oznaczeń na odległość wybierz skaner dalekiego zasięgu (long-range imager) z zasięgiem 1–7 m. Do odczytu z ekranu telefonu (e-bilety, kupony) potrzebujesz skanera z funkcją digital scan.',
+        'Wydajność i środowisko pracy: dla stanowisk nieobciążonych (do 1 000 skanowań dziennie) wystarczy model standardowy. Przy intensywnym użytkowaniu (linia produkcyjna, logistyka) wybierz model wzmocniony z certyfikatem odporności na upadki z 1,5–2 m i uszczelnieniem IP54–IP67.',
+        'Uchwyt prezentacyjny (stand): zastanów się, czy skaner będzie trzymany w dłoni (handheld) czy ustawiony w uchwycie hands-free na stanowisku kasowym lub recepcji. Wiele modeli można kupić z uchwytem w zestawie lub dokupić go osobno.',
+        'Integracja z POS/WMS/ERP: sprawdź, czy Twój system obsługuje kody transmisji przez USB HID lub RS-232. Konfigurację (prefix/suffix, terminatory, format transmisji) wykonuje się przez zeskanowanie kodu z instrukcji – upewnij się, że masz dostęp do dokumentacji producenta.',
+        'Gwarancja i serwis w Polsce: wybieraj skanery od dostawców posiadających autoryzowany serwis na terenie kraju. W środowiskach aptecznych i szpitalnych upewnij się, że model ma certyfikat do środowisk medycznych.',
+      ],
+    },
+    expertAuthority: 'TAKMA to autoryzowany partner i dystrybutor Zebra Technologies w Polsce z ponad 25-letnim doświadczeniem we wdrażaniu rozwiązań AutoID. Nasi certyfikowani inżynierowie przeszkoleni przez Zebra i Honeywell wdrożyli setki systemów skanowania kodów kreskowych – od kas aptecznych po zautomatyzowane linie sortujące w centrach logistycznych. Jako właściciel serwisu serwis-zebry.pl oferujemy pełny cykl wsparcia: dobór modelu, konfigurację interfejsu i parametrów skanowania, integrację z WMS/ERP, serwis gwarancyjny i pogwarancyjny oraz wymianę podzespołów (okna skanera, kabli, uchwytów). Każda rekomendacja na tej stronie opiera się na realnych danych z wdrożeń – nie na ulotkach producenta.',
+    technicalDeepDive: `Silniki skanujące (scan engines) w nowoczesnych skanerach przewodowych dzielą się na trzy główne klasy technologiczne.
+
+Liniowe silniki laserowe i CCD (1D): stosowane w budżetowych modelach takich jak Zebra LS2208 czy Honeywell Voyager 1250g. Odczytują wyłącznie kody kreskowe 1D. Prędkość dekodowania: 100–300 skanowań/s. Zasięg: 5–65 cm. Plusy: bardzo niska cena, trwałość optyki. Minusy: brak obsługi kodów 2D.
+
+Obszarowe silniki imaging (2D imager): to standard w nowoczesnych urządzeniach. Silnik SE4770 (Zebra) jest stosowany w modelu DS2208 i odczytuje wszystkie kody 1D i 2D, w tym QR, Data Matrix i PDF417, z zasięgiem do 55 cm. Prędkość dekodowania: do 700 skanowań/s. Silnik SE4850 (Zebra) to zaawansowany imager dalekiego zasięgu używany w przemysłowych modelach DS3608-DP i DS3678 – osiąga zasięg odczytu kodów 1D do 7,3 m oraz 2D do 3,5 m przy rozdzielczości 1 280 × 800 px. Silniki Honeywell z serii N6603 (Xenon 1900) i N6703 dekodują z prędkością do 1 000 skanowań/s i mają wbudowany tryb omnidirektionalny.
+
+Kody DPM (Direct Part Marking): kody wytrawione laserowo lub igłowo na metalowych i plastikowych komponentach. Wymagają dedykowanego silnika z oświetleniem polaryzowanym – np. Zebra DS3608-DP z silnikiem SE4850-DP. Standardowe skanery odczytują DPM z efektywnością poniżej 40%; wyspecjalizowane modele osiągają ponad 95%.
+
+Interfejsy fizyczne: USB HID Keyboard (plug-and-play, kabel ok. 2 m), USB CDC/COM (do transmisji binarnej i konfiguracji zaawansowanej), RS-232 (wymagany przez starsze kasy, wymaga zewnętrznego zasilacza), Keyboard Wedge PS/2 (przestarzały). Długość kabla standardowo 1,5–2,5 m; opcjonalne przedłużacze do 4,5 m.
+
+Odporność mechaniczna: model standardowy – upadek z 1,0–1,5 m, brak uszczelnienia (IP41 max). Modele rugged jak Zebra DS3608 – upadek z 1,8 m, IP67. Zakres temperatur pracy: standardowe modele 0–50°C, wzmocnione do -30°C.`,
+    useCases: [
+      {
+        title: 'Kasa POS w sklepie detalicznym — 1D i 2D, praca hands-free',
+        description: 'Skaner 2D obszarowy (np. Zebra DS2208) ustawiony w uchwycie prezentacyjnym na ladzie. Odczytuje kody EAN-13, GS1-128 i kody lojalnościowe QR z telefonów klientów. Połączenie USB HID – zero konfiguracji, kompatybilność z każdym oprogramowaniem POS. Tryb ciągłego skanowania (presentation mode) reaguje automatycznie na towary w polu widzenia. Koszt zestawu (skaner + uchwyt): od ok. 590 zł netto.',
+      },
+      {
+        title: 'Przyjęcie towaru w magazynie — skanowanie numerów seryjnych i palet',
+        description: 'Skaner 2D dalekiego zasięgu (np. Zebra DS3608) podłączony przez USB do stacjonarnego terminala WMS. Odczytuje etykiety GS1-128 z numerem SSCC z odległości do 1,5 m bez potrzeby zbliżania się do etykiety. Odporność IP67 wytrzyma warunki chłodni (0°C) i kontakt z wilgocią. Wzmocniona obudowa przeżyje upadek z 1,8 m na beton.',
+      },
+      {
+        title: 'Linia produkcyjna — DPM na metalowych komponentach',
+        description: 'Skaner z silnikiem DPM (Zebra DS3608-DP) przymocowany na stałe do stanowiska kontroli jakości. Odczytuje kody Data Matrix wytrawione laserowo na obudowach silników i zaworach hydraulicznych. Integracja przez RS-232 ze starszym systemem MES. Skuteczność odczytu DPM powyżej 95% vs 30–40% dla standardowych imagerów.',
+      },
+      {
+        title: 'Apteka — recepty elektroniczne i kody GS1 na lekach',
+        description: 'Skaner 2D z kablem USB Healthcare (Zebra DS2208-HC). Zaokrąglone narożniki i obudowa bezbarwna, dezynfekcja środkami na bazie alkoholu. Odczytuje 2D kody DataMatrix z opakowań leków (GTIN, numer serii, data ważności) wymagane przez system KOWAL (PGF/Urząd Rejestracji). Połączenie USB HID – zgodność z każdym oprogramowaniem aptecznym.',
+      },
+      {
+        title: 'Biblioteka i wypożyczalnia — kody 1D na grzbietach książek',
+        description: 'Budżetowy skaner 1D lub 2D (np. Zebra DS2208) na uchwycie przy stanowisku bibliotekarza. Odczytuje kody kreskowe 1D nadrukowane na nalepkach lub grzbietach książek. Prędkość dekodowania 250+ skanowań/s. Połączenie USB, praca w trybie emulacji klawiatury – bezsterownikowa instalacja na każdym PC z systemem bibliotecznym.',
+      },
+      {
+        title: 'Logistyka kurierska — skanowanie etykiet przesyłek na bramce sortującej',
+        description: 'Stacjonarny skaner dalekiego zasięgu (Zebra DS3608) zamontowany nad taśmą sortującą. Odczytuje kody 1D Code 128 i 2D PDF417 z etykiet kurierskich z odległości 0,5–1,5 m. Połączenie USB do kontrolera sortującego. Wzmocniona obudowa IP67 wytrzyma zapylenie i wibracje typowe dla hali sortowni.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'To, czego dostawcy skanerów zwykle nie mówią',
+      items: [
+        {
+          title: 'Kabel to nie drobiazg — wymiana go potrafi kosztować więcej niż warto',
+          text: 'W intensywnym użytkowaniu (kasa POS, magazyn) kabel skanera pęka najczęściej przy złączu po 12–18 miesiącach. Producenci premium (Zebra, Honeywell) sprzedają kable wymienne za 30–90 zł. W tańszych markach kabel jest niewymienny lub niedostępny w Polsce, co wymusza zakup nowego skanera. Zawsze sprawdź dostępność kabli zamiennych przed zakupem.',
+        },
+        {
+          title: 'USB HID vs USB COM — ta sama wtyczka, zupełnie inne zachowanie',
+          text: 'Skaner z kablem USB może pracować w trybie HID Keyboard (emuluje klawiaturę – zero sterowników) lub USB CDC/COM (pojawia się jako port szeregowy – wymaga sterownika, ale umożliwia transmisję dwukierunkową). Sprzedawcy rzadko to tłumaczą, a nieodpowiedni tryb powoduje, że skaner "nie działa" z konkretnym oprogramowaniem POS lub WMS.',
+        },
+        {
+          title: 'Skaner "obsługujący 2D" to nie to samo co skaner "dobrze czytający 2D"',
+          text: 'Tanie skanery z silnikami 2D od niemarkowych producentów obsługują specyfikacje kodów 2D, ale w praktyce zawodzą przy uszkodzonych, słabo nadrukowanych lub małych kodach Data Matrix (poniżej 5 mm). Silniki SE4770 i SE4850 Zebra mają wbudowane algorytmy korekcji błędów i multi-frame image capture.',
+        },
+        {
+          title: 'Konfiguracja prefixów i sufixów jest krytyczna dla integracji z ERP',
+          text: 'Domyślnie skaner wysyła tylko surowe dane kodu. Systemy WMS/ERP często wymagają dodatkowego znaku CR (Enter) na końcu transmisji, prefiksu identyfikującego typ kodu lub konwersji formatu. Konfigurację wykonuje się przez zeskanowanie kodów z instrukcji producenta.',
+        },
+        {
+          title: 'Skanery "medyczne" mają homologację, która ma znaczenie prawne',
+          text: 'W aptekach, przychodniach i szpitalach modele z serii Healthcare (Zebra DS2208-HC) mają certyfikat zgodności z normą IEC 60601-1 i są dopuszczone do dezynfekcji alkoholem izopropylowym – standardowe modele pod wpływem dezynfekcji żółkną i tracą szczelność. Brak homologacji może być problemem podczas audytu sanitarnego.',
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Jakie są typy połączeń w skanerach przewodowych?',
+        answer: 'Przewodowe skanery oferują trzy główne interfejsy: USB HID Keyboard (plug-and-play bez sterowników, najczęściej stosowany), USB CDC/COM (port szeregowy przez USB – wymaga sterownika, stosowany przy konfiguracji zaawansowanej) oraz RS-232 (klasyczny port szeregowy – wymagany przez starsze kasy fiskalne i terminale POS). Rzadziej spotykany Keyboard Wedge (PS/2) to interfejs dla przestarzałych terminali.',
+      },
+      {
+        question: 'Jaki zasięg skanowania ma przewodowy skaner kodów?',
+        answer: 'Zasięg zależy od klasy skanera. Modele standardowe do kas POS (np. Zebra DS2208) odczytują kody z odległości 5–55 cm. Skanery dalekiego zasięgu klasy przemysłowej (np. Zebra DS3608 z silnikiem SE4850) odczytują kody 1D z odległości do 7,3 m, a 2D Data Matrix do 3,5 m.',
+      },
+      {
+        question: 'Jaka jest odporność IP skanerów przewodowych?',
+        answer: 'Skanery biurowe zazwyczaj spełniają IP41 (ochrona przed kurzem i pionowo padającą wodą). Modele przemysłowe jak Zebra DS3608 osiągają IP67 – pełna pyłoszczelność i odporność na zanurzenie w wodzie do 1 m przez 30 minut. Do środowisk z wilgocią lub zapyleniem wybierz minimum IP54.',
+      },
+      {
+        question: 'Czym różni się skaner 1D od skanera 2D?',
+        answer: 'Skaner 1D odczytuje wyłącznie kody liniowe: EAN-8, EAN-13, UPC-A, Code 128, Code 39, ITF. Skaner 2D odczytuje zarówno kody 1D, jak i dwuwymiarowe: QR Code, Data Matrix, PDF417. Różnica cenowa wynosi zaledwie 50–100 zł, więc warto od razu wybrać 2D.',
+      },
+      {
+        question: 'Jak czyścić przewodowy skaner kodów kreskowych?',
+        answer: 'Okno skanera czyść miękką szmatką nawilżoną izopropanolem (IPA) 70–99%. Obudowę przetrzyj lekko wilgotną ściereczką. W środowiskach medycznych stosuj wyłącznie środki dezynfekujące zgodne ze specyfikacją producenta. Regularne czyszczenie (raz w tygodniu) wydłuża żywotność optyki.',
+      },
+      {
+        question: 'Jaka jest gwarancja na przewodowy skaner kodów kreskowych?',
+        answer: 'Standardowa gwarancja wynosi 1–5 lat w zależności od modelu. Zebra Technologies oferuje do 5 lat w ramach programu OneCare. W przypadku zastosowań wymagających SLA warto wykupić kontrakt serwisowy obejmujący wymianę sprzętu następnego dnia roboczego.',
+      },
+      {
+        question: 'Jak zintegrować skaner przewodowy z systemem POS lub WMS?',
+        answer: 'USB HID: skaner działa jako klawiatura, dane trafiają do aktywnego pola w aplikacji bez sterowników. RS-232: wymaga konfiguracji portu (9600 8N1) i oprogramowania odbierającego. Kluczowa jest konfiguracja terminatora (Enter/CR/LF) i prefixów/sufixów – wykonywana przez kody z instrukcji lub oprogramowanie Zebra 123Scan.',
+      },
+      {
+        question: 'Jak długi kabel ma skaner przewodowy i czy można go przedłużyć?',
+        answer: 'Standardowe kable USB mają 1,5–2,5 m. Możliwe jest użycie przedłużaczy USB do łącznie 5 m (bez huba) lub aktywnych do 15–20 m. Dla RS-232 maksymalna odległość bez wzmacniacza to 15 m. Przy większych odległościach stosuje się konwertery RS-232 na Ethernet.',
+      },
+      {
+        question: 'Czy do skanera przewodowego można dokupić uchwyt lub podstawkę?',
+        answer: 'Tak – większość modeli jest kompatybilna z uchwytami prezentacyjnymi (stands). Uchwyt umożliwia tryb hands-free: skaner reaguje automatycznie na kod zbliżony do okna skanującego. Zebra DS2208 jest sprzedawany z uchwytem w zestawie lub osobno.',
+      },
+      {
+        question: 'Jakie skanery przewodowe nadają się do środowisk medycznych?',
+        answer: 'Do środowisk medycznych przeznaczone są skanery z certyfikatem IEC 60601-1 oraz odpornością na środki dezynfekujące. Zebra oferuje DS2208-HC (2D, USB, do apteki i szpitala). Cechy: jasnoszara obudowa, brak ostrych krawędzi, kabel z zaokrąglonym konektorem.',
+      },
+      {
+        question: 'Czy skaner przewodowy może odczytać kody DPM?',
+        answer: 'Standardowe skanery 2D mogą próbować odczytać kody DPM, ale skuteczność jest niska (20–40%). Do niezawodnego odczytu DPM wymagany jest dedykowany skaner z oświetleniem polaryzowanym – np. Zebra DS3608-DP z silnikiem SE4850-DP, który osiąga skuteczność powyżej 95%.',
+      },
+      {
+        question: 'Ile skanowań na sekundę wykonuje przewodowy skaner kodów?',
+        answer: 'Budżetowe skanery liniowe (CCD): 100–300 skanowań/s. Standardowe imagery 2D (Zebra DS2208 z SE4770): do 700 skanowań/s. Przemysłowe imagery dalekiego zasięgu (Zebra DS3608 z SE4850): do 1 000 skanowań/s. W praktyce różnica jest niezauważalna dla operatora — staje się istotna w trybie automatycznej bramki sortującej.',
+      },
+      {
+        question: 'Jaka jest różnica między Zebra DS2208 a Honeywell Voyager 1250g?',
+        answer: 'Zebra DS2208 to skaner 2D z silnikiem SE4770 odczytujący kody 1D i 2D z zasięgiem do 55 cm – cena od ok. 420 zł netto. Honeywell Voyager 1250g to skaner 1D laserowy z zasięgiem do 35 cm, wyłącznie kody 1D – cena od ok. 200 zł netto. DS2208 jest lepszą inwestycją w każdym środowisku wymagającym kodów 2D.',
+      },
+      {
+        question: 'Czy zamiast skanera przewodowego warto wybrać model bezprzewodowy?',
+        answer: 'Skanery bezprzewodowe dają swobodę ruchu, ale wymagają ładowania baterii i stacji bazowej, i są droższe o 30–60%. Na stałym stanowisku (kasa, recepcja, punkt przyjęcia towaru) skaner przewodowy jest prostszy i tańszy. Bezprzewodowy warto wybrać przy pracy w ruchu: magazyn, inwentaryzacja, teren.',
+      },
+    ],
+    comparisons: [
+      {
+        title: 'Zebra DS2208 vs Honeywell Voyager 1250g — budżetowy 2D kontra popularny 1D',
+        content: 'DS2208 to skaner 2D z silnikiem SE4770 obsługujący wszystkie kody 1D i 2D z zasięgiem 55 cm – cena od ok. 420 zł. Voyager 1250g to laser 1D z zasięgiem 35 cm – cena od ok. 200 zł. DS2208 jest lepszą inwestycją na każde stanowisko z choćby jednym kodem 2D. Voyager 1250g uzasadniony jedynie przy wyłącznie kodach 1D i ograniczonym budżecie.',
+      },
+      {
+        title: 'Skaner 1D laserowy vs skaner 2D imager — co wybrać?',
+        content: 'Skanery 1D laserowe są tańsze i sprawdzone w środowiskach z wyłącznie liniowymi kodami. Skanery 2D imager obsługują kody 1D i 2D, skanują z ekranów i odczytują kody podniszczone. Różnica cenowa 100–250 zł. Od 2024 roku sieci handlowe i systemy farmaceutyczne wymagają GS1 DataBar i DataMatrix, co praktycznie wyklucza skanery 1D w nowych wdrożeniach.',
+      },
+      {
+        title: 'Zebra DS3608 (przemysłowy) vs Zebra DS2208 (standardowy)',
+        content: 'DS2208 to skaner biurowy (IP41, upadek z 1,0 m, zasięg 55 cm) od ok. 420 zł. DS3608 to skaner przemysłowy (IP67, upadek z 1,8 m, zasięg do 7,3 m) od ok. 1 300 zł. DS3608 do linii produkcyjnych, chłodni i bramek sortujących. DS2208 do kasy, apteki i biura.',
+      },
+      {
+        title: 'Skaner prezentacyjny (hands-free) vs ręczny (handheld)',
+        content: 'Skanery prezentacyjne reagują automatycznie na kod — operator nie musi wciskać spustu. Idealne do kas POS z dużym natężeniem ruchu. Skanery ręczne wymagają naciśnięcia przycisku, ale dają elastyczność użycia w dłoni i w uchwycie. Modele jak DS2208 działają w obu trybach.',
+      },
+      {
+        title: 'Skaner przewodowy vs terminal mobilny ze skanerem',
+        content: 'Skaner przewodowy (200–1 300 zł): zero zarządzania bateriami, natychmiastowe połączenie, optymalny na stałym stanowisku. Terminal mobilny ze skanerem (3 000–6 000 zł): praca w dowolnym miejscu z aplikacją WMS na urządzeniu. Do stałych stanowisk – skaner. Do pracy w ruchu – terminal.',
+      },
+    ],
+    howToSteps: [
+      {
+        name: 'Podłącz kabel skanera do komputera lub terminala',
+        text: 'Wsuń wtyczkę USB (lub RS-232) skanera do odpowiedniego portu hosta. Przy USB HID skaner zostanie automatycznie rozpoznany jako klawiatura HID – bez instalacji sterowników. Przy RS-232 sprawdź, czy port COM jest aktywny i czy skaner otrzymuje zasilanie.',
+      },
+      {
+        name: 'Zainstaluj sterownik lub oprogramowanie konfiguracyjne (jeśli wymagane)',
+        text: 'USB HID nie wymaga sterownika. Dla USB CDC/COM pobierz sterownik Virtual COM Port ze strony producenta. Dla zaawansowanej konfiguracji pobierz narzędzie: Zebra 123Scan lub Honeywell EasyDL.',
+      },
+      {
+        name: 'Skonfiguruj interfejs i parametry transmisji',
+        text: 'Zeskanuj kody konfiguracyjne z dołączonego Programming Guide. Kluczowe: wybór interfejsu (USB HID / USB COM / RS-232), terminatory transmisji (CR, LF lub CR+LF), prefix/suffix, prędkość transmisji RS-232 (domyślnie 9600 baud, 8N1).',
+      },
+      {
+        name: 'Ustaw parametry skanowania pod docelowe kody',
+        text: 'Włącz lub wyłącz obsługę konkretnych symbologii. Ustaw czułość i czas odczytu w trybie prezentacyjnym. Skonfiguruj oświetlenie wspomagające dla słabo naświetlonych środowisk.',
+      },
+      {
+        name: 'Przetestuj odczyt kodów w środowisku docelowym',
+        text: 'Zeskanuj przykładowe kody z realnych produktów lub etykiet. Sprawdź poprawność transmisji w aplikacji docelowej. Przetestuj kody w różnych orientacjach, z różnych odległości i przy różnym oświetleniu. W przypadku problemów skorzystaj z dokumentacji na serwis-zebry.pl.',
+      },
+    ],
+  },
+  'skanery-bezprzewodowe': {
+    definition: {
+      heading: 'Co to jest bezprzewodowy skaner kodów kreskowych?',
+      content: 'Bezprzewodowy skaner kodów kreskowych (ang. wireless barcode scanner) to urządzenie ręczne do odczytu kodów 1D i 2D, komunikujące się z systemem hosta bez użycia przewodu. Na rynku B2B funkcjonują dwie główne technologie łączności bezprzewodowej: Bluetooth (standardy 4.2, 5.0, 5.1 — zasięg do 10–15 m w trybie Classic, do 100 m w trybie Bluetooth Long Range) oraz zastrzeżone radio 2.4 GHz FHSS (Frequency Hopping Spread Spectrum) z zasięgiem do 100 m i opóźnieniami poniżej 1 ms. Systemy Bluetooth łączą się bezpośrednio z komputerami i tabletami bez stacji bazowej, natomiast skanery radiowe 2.4 GHz FHSS wymagają dedykowanej stacji bazowej (cradle lub USB dongle), co zapewnia niższe opóźnienia i możliwość parowania wielu urządzeń w jednej lokalizacji. Czołowi producenci — Zebra Technologies, Honeywell i Datalogic — oferują modele zarówno z Bluetooth, jak i z radiową 2.4 GHz FHSS, dostosowane do środowisk magazynowych, handlowych i medycznych.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać bezprzewodowy skaner kodów kreskowych do firmy?',
+      items: [
+        'Technologia łączności bezprzewodowej — Bluetooth 5.0/5.1 sprawdzi się wszędzie tam, gdzie masz komputer lub tablet z BT (biuro, sklep, inwentaryzacja z tabletem). Zastrzeżone radio 2.4 GHz FHSS z cradle wybierz w magazynie lub na hali produkcyjnej — niższe opóźnienia, większy zasięg, brak problemów z parowaniem.',
+        'Zasięg roboczy — Bluetooth: 10–15 m (standard) lub do 100 m (BT Long Range). Radio 2.4 GHz FHSS: do 100 m w linii wzroku, w metalowym magazynie liczyć na 40–60 m. Zmierz odległość między stanowiskiem a stacją bazową i dobierz model z zapasem 30%.',
+        'Pojemność baterii i czas pracy — standard rynkowy to 2 000–3 400 mAh, wystarczające na 8–16 godzin skanowania. Jeśli pracujesz na 3 zmiany bez możliwości ładowania, wybierz skaner z baterią wymienną lub stacją bazową z ładowaniem przez odłożenie.',
+        'Opcje ładowania — cradle jednogniezdny przy stanowisku pracy to minimum. W magazynach wielostanowiskowych inwestuj w cradle 5-gniezdny lub 15-gniezdny — ładuje flotę skanerów przez noc i pełni funkcję stacji bazowej 2.4 GHz.',
+        'Klasy odczytu 1D vs 2D — skaner 1D (laser) jest tańszy i wystarczy do kodów EAN, Code 128, ITF. Skaner 2D (imager) odczyta dodatkowo QR, DataMatrix, PDF417 i kody uszkodzone — w nowoczesnym łańcuchu dostaw to standard.',
+        'Parowanie wielu skanerów z jedną stacją bazową — systemy 2.4 GHz FHSS obsługują do 7 skanerów na jednym USB dongle. Przy Bluetooth planuj jedno parowanie na hosta. Do dużych hal dobierz cradle z funkcją sieciową (Ethernet).',
+        'Odporność mechaniczna i sanitarna — do magazynu lub produkcji wybierz minimum IP42 i odporność na upadek z 1,5 m. Do środowisk medycznych sprawdź odporność obudowy na środki dezynfekujące.',
+      ],
+    },
+    expertAuthority: 'TAKMA to certyfikowany partner Zebra Technologies z ponad 25-letnim doświadczeniem we wdrożeniach automatycznej identyfikacji danych na polskim rynku. Nasi inżynierowie wdrożyli setki instalacji bezprzewodowych skanerów kodów w magazynach, centrach dystrybucyjnych, sieciach handlowych i szpitalach — od pojedynczych stanowisk po flotę 200+ urządzeń zarządzaną zdalnie przez Zebra DNA / Visibility Console. Specjalizujemy się w trudnych środowiskach: metalowe hale produkcyjne z zakłóceniami radiowymi, chłodnie i mroźnie (-20°C), sale operacyjne. Serwis pogwarancyjny zapewnia serwis-zebry.pl — autoryzowany serwis Zebra działający od 2001 roku. Każda rekomendacja na tej stronie pochodzi z realnych wdrożeń, nie z folderów producenta.',
+    technicalDeepDive: `Bezprzewodowe skanery kodów kreskowych klasy korporacyjnej wykorzystują dwie fundamentalnie różne technologie radiowe: Bluetooth (standardy od 4.2 do 5.1) oraz zastrzeżone sieci 2.4 GHz FHSS (Frequency Hopping Spread Spectrum).
+
+Bluetooth 5.0/5.1 oferuje transfer danych do 2 Mbit/s, zasięg do 10–15 m w standardowym środowisku biurowym i do 100 m w wariancie Long Range. Bluetooth Low Energy (BLE) przedłuża czas pracy baterii nawet trzykrotnie przy rzadkim skanowaniu. Wadą Bluetooth jest opóźnienie na poziomie 5–30 ms przy Classic i 10–20 ms przy BLE.
+
+Radio 2.4 GHz FHSS zmienia częstotliwość nośną nawet 1 600 razy na sekundę (frequency hopping), co zapewnia odporność na zakłócenia i opóźnienia poniżej 1 ms. Zasięg: do 100 m w linii wzroku, w środowisku magazynowym z metalowymi regałami typowo 40–70 m. System obsługuje do 7 skanerów na jeden dongle.
+
+Silniki skanujące: SE2707 (laser 1D, 100 skanów/s) w Zebra LI4278. SE4770 (imager 2D, 60°×40° pole widzenia, 60 klatek/s) w Zebra DS2278 i DS8178 — odczyta kody 1D, 2D, PDF417 i kody ekranowe ze smartfonów.
+
+Baterie: LI4278 i DS2278 — 2 400 mAh (12–14 godzin pracy). DS8178 — 3 350 mAh (do 60 000 skanów). Cradle SSC ładuje baterię w ~3 godziny.
+
+Normy środowiskowe: DS2278 — IP52, upadek z 1,5 m. DS8178 — IP52, upadek z 1,8 m. Dezynfekcja izopropanolem (70% IPA) — sprawdź listę kompatybilnych środków.
+
+Tryb wsadowy (batch mode): gdy skaner jest poza zasięgiem, przechowuje do 1 000 kodów w pamięci i wysyła je po powrocie do zasięgu — kluczowe przy inwentaryzacji w dużych obiektach.`,
+    useCases: [
+      {
+        title: 'Kompletacja zamówień w magazynie — mobilne picking bez kabla',
+        description: 'Operator z bezprzewodowym skanerem kompletuje zamówienia na hali. Radio 2.4 GHz FHSS z cradle zapewnia zasięg 60–80 m i natychmiastowe potwierdzenie skanu w systemie WMS. Brak kabla eliminuje ryzyko potknięcia. Zalecany model: Zebra DS2278 (2D, 2.4 GHz) lub DS8178 (premium).',
+      },
+      {
+        title: 'Obsługa kasy i przymierzalni w sklepie detalicznym',
+        description: 'Kasjer skanuje towary z odległości do 3 m od kasy, sprawdza ceny i stany magazynowe. Bluetooth 5.0 paruje skaner bezpośrednio z komputerem POS. Czas pracy baterii 12+ godz. obsługuje pełną zmianę. Skaner odkładany na cradle ładuje się automatycznie.',
+      },
+      {
+        title: 'Identyfikacja pacjenta i leków na oddziale szpitalnym',
+        description: 'Pielęgniarka skanuje bransoletkę pacjenta i opakowanie leku przy łóżku. Skaner z obudową odporną na dezynfekcję (70% IPA). Bluetooth paruje z tabletem klinicznym. DS8178 w białej obudowie to standard w środowiskach healthcare.',
+      },
+      {
+        title: 'Serwis terenowy i kontrola aktywów',
+        description: 'Technik skanuje tabliczki znamionowe i kody QR w terenie. Tryb wsadowy (batch mode) przechowuje kody gdy brak zasięgu i synchronizuje po powrocie do stacji. Skaner bezprzewodowy + tablet = mobilne stanowisko inspekcji.',
+      },
+      {
+        title: 'Roczna inwentaryzacja — szybkie liczenie i weryfikacja stanów',
+        description: 'Zespół 5–10 pracowników jednocześnie skanuje towary. Każdy skaner Bluetooth paruje z osobnym tabletem. Akumulator 3 350 mAh w DS8178 wystarcza na 10–12 godzin ciągłej pracy — przez cały dzień inwentaryzacyjny.',
+      },
+      {
+        title: 'Cross-docking i identyfikacja przesyłek przy rampie',
+        description: 'Pracownik przy rampie skanuje etykiety paczek bezprzewodowo. Radio 2.4 GHz FHSS zapewnia zasięg do 80 m. Szybki odczyt kodów 1D i 2D w DS8178 minimalizuje czas przetwarzania. Odporność IP52 chroni przed wilgocią podczas rozładunku.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego producenci i inni sprzedawcy nie piszą o skanerach bezprzewodowych',
+      items: [
+        {
+          title: 'Bateria degraduje się szybciej przy ciągłym ładowaniu w cradle',
+          text: 'Pozostawianie skanera w cradle przez całą dobę przyspiesza degradację ogniwa litowo-jonowego — po 18–24 miesiącach pojemność spada do 60–70%. Dobrą praktyką jest programowanie cradle na tryb podtrzymania (trickle charge) po pełnym naładowaniu lub wyjmowanie naładowanych skanerów.',
+        },
+        {
+          title: 'Metalowe regały drastycznie obcinają zasięg radiowy',
+          text: 'Producenci podają zasięg "w linii wzroku". W metalowym magazynie z regałami zasięg radia 2.4 GHz FHSS spada ze 100 m do 30–50 m, a Bluetooth z 15 m do 5–8 m. Przed zakupem flotą skanerów wykonaj site survey — zmierz rzeczywisty zasięg w docelowej lokalizacji. TAKMA oferuje bezpłatne testy pilotażowe.',
+        },
+        {
+          title: 'Cradle od różnych modeli skanerów Zebra NIE jest zamiennie kompatybilny',
+          text: 'Cradle od DS8178 nie naładuje DS2278 i odwrotnie, mimo że to skanery Zebra z podobnymi złączami. Przed rozszerzeniem floty weryfikuj kompatybilność — brak zgodności zmusza do zakupu nowych stacji ładowania (200–600 zł za gniazdo).',
+        },
+        {
+          title: 'Tryb wsadowy (batch mode) może być domyślnie wyłączony',
+          text: 'Skanery 2.4 GHz z trybem wsadowym fabrycznie często mają go wyłączonego ze względów bezpieczeństwa. Przed wdrożeniem w terenie sprawdź i włącz tryb wsadowy za pomocą kodu konfiguracyjnego z instrukcji lub narzędzia 123Scan.',
+        },
+        {
+          title: 'Bluetooth Classic vs BLE — to nie jest ten sam standard',
+          text: 'Wiele skanerów oferuje „Bluetooth", ale różni je profil: SPP (Classic) do emulacji portu szeregowego, HID do systemów bez sterownika, BLE do nowych aplikacji mobilnych. Wybierz skaner z profilem pasującym do systemu — zły profil = brak komunikacji.',
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Jaka jest różnica między skanerem Bluetooth a skanerem radiowym 2.4 GHz FHSS?',
+        answer: 'Bluetooth nie wymaga stacji bazowej — paruje się z każdym komputerem z BT. Radio 2.4 GHz FHSS wymaga USB dongle lub cradle, ale oferuje opóźnienia poniżej 1 ms, obsługę do 7 skanerów na jednej stacji i lepszą odporność na zakłócenia. Do magazynu wybierz FHSS, do biura i pracy z tabletem — Bluetooth.',
+      },
+      {
+        question: 'Jak długo działa bateria w bezprzewodowym skanerze kodów?',
+        answer: 'Zebra DS2278 i LI4278: 2 400 mAh, 12–14 godzin aktywnego skanowania. DS8178: 3 350 mAh, do 60 000 skanów na ładowaniu. Rzeczywisty czas zależy od częstotliwości skanowania i temperatury otoczenia. W trybie uśpienia bateria może wytrzymać kilka dni.',
+      },
+      {
+        question: 'Jaki jest zasięg bezprzewodowego skanera kodów kreskowych?',
+        answer: 'Bluetooth Classic: 10–15 m. Bluetooth Long Range: do 100 m w linii wzroku. Radio 2.4 GHz FHSS: do 100 m w linii wzroku, typowo 40–70 m w metalowym magazynie. W środowiskach z dużą ilością metalu zasięg jest wyraźnie krótszy.',
+      },
+      {
+        question: 'Jak sparować bezprzewodowy skaner z komputerem?',
+        answer: 'Bluetooth: zeskanuj kod "Włącz parowanie" z instrukcji, znajdź skaner na liście urządzeń BT w systemie i potwierdź. Radio 2.4 GHz FHSS: podłącz USB dongle — skaner łączy się automatycznie z przypisanym dongle po włączeniu.',
+      },
+      {
+        question: 'Czy bezprzewodowy skaner można naładować bez cradle — przez kabel USB?',
+        answer: 'Zależy od modelu. DS8178 obsługuje ładowanie przez micro-USB bezpośrednio. DS2278 i LI4278 ładują baterię wyłącznie przez cradle. Przy planowaniu sprawdź, czy potrzebujesz cradle przy każdym stanowisku.',
+      },
+      {
+        question: 'Ile skanerów można podłączyć do jednej stacji bazowej?',
+        answer: 'Systemy 2.4 GHz FHSS obsługują do 7 skanerów na jeden dongle. Optymalna liczba: 3–5. Przy większej flocie (10+) stosuje się wiele dongle lub cradle z interfejsem Ethernet.',
+      },
+      {
+        question: 'Jaki stopień ochrony IP mają bezprzewodowe skanery?',
+        answer: 'DS2278, LI4278 i DS8178: IP52 (odporność na kurz i krople wody). Do środowisk mokrych potrzebujesz IP65+ — w takim przypadku rozważ terminal mobilny ze skanerem wbudowanym.',
+      },
+      {
+        question: 'Jak szybko skanuje bezprzewodowy skaner 2D?',
+        answer: 'Silnik SE4770 (DS2278, DS8178): do 60 klatek/s, dekodowanie poniżej 100 ms. Dla typowego zastosowania magazynowego to szybkość w pełni wystarczająca.',
+      },
+      {
+        question: 'Czy skaner bezprzewodowy działa bez zasięgu (tryb wsadowy)?',
+        answer: 'Tak — tryb wsadowy (batch mode) przechowuje do 1 000 kodów w pamięci i wysyła je po powrocie do zasięgu. Szczególnie użyteczny przy inwentaryzacji w dużych obiektach. Uwaga: tryb bywa domyślnie wyłączony — aktywuj go kodem z instrukcji.',
+      },
+      {
+        question: 'Jak uniknąć zakłóceń radiowych w magazynie?',
+        answer: 'Rozwiązania: (1) użyj skanerów z FHSS — automatycznie unikają zajętych kanałów; (2) przestaw Wi-Fi na kanały 1, 6 lub 11; (3) ogranicz liczbę urządzeń BT blisko cradle; (4) przenieś Wi-Fi na pasmo 5 GHz jeśli możliwe.',
+      },
+      {
+        question: 'Czy bezprzewodowy skaner nadaje się do szpitala?',
+        answer: 'DS8178 w wersji Healthcare jest odporny na 70% IPA, chlorek amonu i H₂O₂. Standardowe modele znoszą czyszczenie IPA do 70%, ale nie wytrzymają silnych środków chlorowych. Do sal szpitalnych i SOR rekomendujemy modele HC.',
+      },
+      {
+        question: 'Co to jest tryb wsadowy i kiedy go stosować?',
+        answer: 'Tryb wsadowy (batch mode) gromadzi kody w pamięci skanera poza zasięgiem stacji bazowej i synchronizuje po powrocie. Stosuj przy: inwentaryzacji w dużym obiekcie, pracy w terenie, skanowaniu w pomieszczeniach z zakłóceniami. Zaleca się synchronizację co 30–60 minut.',
+      },
+      {
+        question: 'Jaka jest gwarancja na skanery Zebra i czy warto wykupić OneCare?',
+        answer: 'Standardowa gwarancja: DS2278 i DS8178 — 3 lata, LI4278 — 2 lata. OneCare Essential przedłuża do 5 lat z naprawami mechanicznymi i wymianą baterii. OneCare Select dodaje Next Business Day replacement. Dla floty 10+ skanerów OneCare jest opłacalny.',
+      },
+      {
+        question: 'Jakie są alternatywy dla skanerów bezprzewodowych Zebra?',
+        answer: 'Honeywell Xenon 1952 — Bluetooth 2D, zbliżona wydajność. Datalogic Gryphon 4500 — Bluetooth 2D, dobra ergonomia. Datalogic PowerScan 9500 — do środowisk przemysłowych. Zebra wyróżnia się integracją z Zebra DNA i szeroką siecią serwisową w Polsce.',
+      },
+    ],
+    comparisons: [
+      {
+        title: 'Bluetooth vs radio 2.4 GHz FHSS — który protokół wybrać?',
+        content: 'Bluetooth nie wymaga stacji bazowej, paruje się z każdym komputerem — idealny do biura i pracy z tabletem. Radio 2.4 GHz FHSS wymaga USB dongle, ale oferuje opóźnienia <1 ms, obsługę do 7 skanerów i lepszą odporność na zakłócenia w metalowych halach. Do magazynu — FHSS, do mobilnej pracy — Bluetooth.',
+      },
+      {
+        title: 'Zebra DS2278 vs Honeywell Xenon 1952 — budżetowy 2D',
+        content: 'DS2278: bateria 2 400 mAh, SE4770, radio 2.4 GHz FHSS lub BT, IP52, 3 lata gwarancji, Zebra DNA. Xenon 1952g: bateria 3 600 mAh, Adaptus 7.0, BT 5.0, lepsze dekodowanie uszkodzonych kodów. Zebra wygrywa ekosystemem zarządzania i serwisem w Polsce. Honeywell wygrywa pojemnością baterii.',
+      },
+      {
+        title: 'Zebra DS2278 (entry-level) vs DS8178 (premium)',
+        content: 'DS2278: ok. 900–1 100 zł, wystarczy do standardowych zastosowań. DS8178: ok. 1 500–1 900 zł, bateria 3 350 mAh, ładowanie micro-USB, upadek z 1,8 m, wersja Healthcare. Do pracy 3-zmianowej i healthcare — DS8178 zwraca różnicę w pierwszym roku.',
+      },
+      {
+        title: 'Skaner bezprzewodowy vs skaner przewodowy',
+        content: 'Przewodowy: tańszy o 30–50%, zero ładowania, zero opóźnień. Do stałego stanowiska. Bezprzewodowy: mobilność operatora. ROI: jeśli operator oszczędza 10 min/dzień, różnica 600 zł zwraca się w 12–14 tygodni.',
+      },
+      {
+        title: 'Skaner 1D (laser) vs 2D (imager) bezprzewodowy',
+        content: 'LI4278 (1D): ok. 700–900 zł, kody EAN/Code 128, zasięg 60 cm. DS2278 (2D): ok. 900–1 100 zł, wszystkie kody 1D + 2D + ekrany. Różnica 200–300 zł. W 2026 roku nie ma powodu kupować skanerów 1D do nowych wdrożeń.',
+      },
+    ],
+    howToSteps: [
+      {
+        name: 'Naładuj skaner przed pierwszym użyciem',
+        text: 'Umieść skaner w cradle i podłącz zasilacz. Dioda LED zmieni kolor z czerwonego na zielony po pełnym naładowaniu (2–3 godziny). Przy pierwszym uruchomieniu naładuj do 100% przed skanowaniem.',
+      },
+      {
+        name: 'Włącz tryb parowania w skanerze',
+        text: 'Bluetooth: zeskanuj kod "Włącz parowanie" z instrukcji lub przytrzymaj przycisk parowania 3–5 sekund. Radio 2.4 GHz FHSS: podłącz USB dongle — skaner łączy się automatycznie.',
+      },
+      {
+        name: 'Sparuj skaner z komputerem lub stacją bazową',
+        text: 'Bluetooth: znajdź skaner w ustawieniach BT systemu i kliknij "Połącz" (PIN: zazwyczaj 0000). Radio 2.4 GHz FHSS z cradle: parowanie działa z fabryki po podłączeniu dongle USB.',
+      },
+      {
+        name: 'Skonfiguruj skaner w oprogramowaniu',
+        text: 'Ustaw kursor w polu tekstowym i zeskanuj dowolny kod — powinien pojawić się w polu. Jeśli potrzebujesz USB COM, użyj 123Scan (Zebra) do konfiguracji protokołu transmisji i terminatora.',
+      },
+      {
+        name: 'Przetestuj odczyt z różnych kodów i odległości',
+        text: 'Zeskanuj kody 1D, 2D i ekranowe. Sprawdź odczyt pod różnymi kątami. Przetestuj zasięg do maksymalnej planowanej odległości od stacji bazowej.',
+      },
+    ],
+  },
+  'skanery-prezentacyjne': {
+    definition: {
+      heading: 'Co to jest skaner prezentacyjny (hands-free)?',
+      content: 'Skaner prezentacyjny (ang. presentation scanner, hands-free scanner) to stacjonarny skaner kodów kreskowych montowany na ladzie kasowej lub blacie stanowiska obsługi, który skanuje kody automatycznie — bez naciskania przycisku przez operatora. Wystarczy przesunąć produkt przez pole skanowania, a urządzenie samoczynnie wykrywa i dekoduje kod w ułamku sekundy. Nowoczesne skanery prezentacyjne stosują wielokierunkowe pole skanowania (omnidirectional scanning) oparte na imagerach 2D lub systemach wieloliniowych laserowych. Dzięki temu kod może być prezentowany pod dowolnym kątem — skaner sam go zlokalizuje i zdekoduje. Skanery prezentacyjne obsługują kody 1D (EAN-13, UPC-A, Code 128) oraz 2D (QR, DataMatrix, PDF417), a najnowsze modele odczytują kody z ekranów smartfonów — kupony, karty lojalnościowe i bilety mobilne. To standard w supermarketach, aptekach, bibliotekach i kasach samoobsługowych, gdzie liczy się przepustowość i ergonomia stanowiska.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać skaner prezentacyjny do kasy lub punktu obsługi?',
+      items: [
+        'Wolumen skanowań na godzinę — lekki sklep convenience (200–400 skanowań/godz.) poradzi sobie z modelem entry-level; supermarket przy intensywnym ruchu (600–1 200 skanowań/godz.) wymaga skanera o wysokiej szybkości dekodowania i agresywnym trybie skanowania.',
+        'Omnidirektywny vs liniowy — skanery omnidirektywne emitują wiązki w wielu płaszczyznach lub używają imagera 2D z szerokim polem widzenia. Przy kasie supermarketu wymagany jest skaner omnidirektywny; do prostych zastosowań wystarczy model liniowy z podstawką.',
+        'Kody 1D vs 2D — jeśli lojalność klientów opiera się na aplikacji mobilnej lub kuponach QR, albo musisz skanować kody DataMatrix na lekach (dyrektywa FMD), wybierz imager 2D. Skanery 1D nie odczytają kodów z ekranów smartfonów.',
+        'Skanowanie z ekranów smartfonów — sprawdź, czy skaner ma dedykowany tryb screen reading. Nie wszystkie modele radzą sobie z kodami na ekranach o wysokiej jasności i glossy powierzchni.',
+        'Opcje montażu — sprawdź, czy model oferuje montaż pionowy, poziomy lub regulowany kąt pochylenia. Niektóre modele mają zintegrowaną podstawkę, inne wymagają osobnego uchwytu.',
+        'Integracja z systemem POS — weryfikuj interfejsy: USB HID (plug-and-play), USB COM, RS-232 (starsze systemy POS), IBM 46xx (terminale Toshiba/IBM dla sieci handlowych).',
+        'Gwarancja i serwis — przy intensywnym użytkowaniu 12–16 godzin na dobę wybierz model z rozszerzoną gwarancją OneCare. Sprawdź dostępność serwisu w Polsce, np. serwis-zebry.pl dla urządzeń Zebra.',
+      ],
+    },
+    expertAuthority: 'TAKMA to autoryzowany dystrybutor i integrator rozwiązań AutoID z ponad 25-letnim doświadczeniem na polskim rynku. Jako certyfikowany partner Zebra Technologies wdrożyliśmy stanowiska kasowe w sieciach handlowych, aptekach, bibliotekach i biurach obsługi klienta — od pojedynczych punktów POS po centra samoobsługowe z dziesiątkami skanerów. Nasze doświadczenie obejmuje pełen cykl wdrożenia: dobór modelu do systemu kasowego, konfigurację interfejsów (USB HID, RS-232, IBM 46xx), programowanie parametrów dla integracji z POS, montaż i testy przepustowości. Serwis urządzeń Zebra świadczymy przez serwis-zebry.pl — autoryzowane centrum napraw z dostępem do oryginalnych części zamiennych.',
+    technicalDeepDive: `Silnik skanujący (scan engine) to serce skanera prezentacyjnego. Modele liniowe (single-line laser) stosują jedną wiązkę i wymagają skierowania kodu w osi skanera. Skanery omnidirektywne generują 5, 7, 14 lub więcej wiązek laserowych w różnych płaszczyznach (wzór asterisk), tworząc przestrzenne pole detekcji zdolne do odczytu kodu niezależnie od orientacji. Najnowsza klasa — imager 2D (area imager) — robi zdjęcie całego pola widzenia i dekoduje algorytmicznie. Imager 2D nie ma ruchomych elementów, jest odporniejszy na drgania i dekoduje kody z ekranów smartfonów.
+
+Szybkość dekodowania w trybie prezentacyjnym wynosi od 40 do ponad 100 skanowań na sekundę. Tryb aggressive scan automatycznie zwiększa moc emisji i częstotliwość próbkowania po wykryciu produktu — skraca czas do pierwszego odczytu (TTR) z 150 ms do poniżej 80 ms. Tolerancja ruchu (motion tolerance) to zdolność odczytu kodu z produktu przesuwanego z prędkością 1–3 m/s — kluczowy parametr w kasie supermarketu.
+
+Pole widzenia typowego skanera prezentacyjnego wynosi 20–25 cm w pionie i 30–40 cm w poziomie przy głębokości pola od 2 do 30 cm. Optymalny kąt montażu to 30–45° od pionu, co minimalizuje odblaski. Skanery obsługują technologię Digimarc — cyfrowy wodoznak wbudowany w opakowanie.
+
+Interfejsy: USB HID (plug-and-play bez sterowników), USB COM, RS-232 (standard w starszych kasach), IBM 46xx (wymagany przez terminale Toshiba SurePOS w sieciach handlowych). Wymiary mają znaczenie przy projektowaniu stanowiska — głębokość podstawki do 12 cm pozwala zmieścić skaner na wąskiej ladzie 40 cm.`,
+    useCases: [
+      {
+        title: 'Kasa supermarketu — 600–1 200 skanowań na godzinę',
+        description: 'Skaner prezentacyjny omnidirektywny 1D/2D z interfejsem USB HID lub IBM 46xx. Tryb aggressive scan redukuje czas obsługi klienta o 15–20%. Pole widzenia 30×25 cm obsługuje kartonowe opakowania i etykiety GS1-128. Tolerancja ruchu 2 m/s eliminuje konieczność zatrzymywania produktu.',
+      },
+      {
+        title: 'Apteka — weryfikacja kodów DataMatrix na lekach (FMD)',
+        description: 'Imager 2D na ladzie wydawniczej. Dyrektywa Falsified Medicines Directive wymaga weryfikacji kodu 2D DataMatrix na każdym opakowaniu leku recepturowego. Skaner prezentacyjny zintegrowany z systemem aptecznym obsługuje to automatycznie — farmaceuta podaje lek, skaner weryfikuje autentyczność w tle.',
+      },
+      {
+        title: 'Biblioteka — samoobsługowe wypożyczanie i zwrot książek',
+        description: 'Skaner prezentacyjny 1D na stanowisku samoobsługowym lub przy biurku bibliotekarza. Umożliwia błyskawiczne skanowanie stosu zwrotów bez celowania — bibliotekarz kładzie książkę, kod jest skanowany automatycznie. Wydajność: 200–400 pozycji/godz. wobec 80–100/godz. przy skanerze ręcznym.',
+      },
+      {
+        title: 'Restauracja fast food — skanowanie kuponów i zamówień mobilnych',
+        description: 'Kompaktowy skaner prezentacyjny 2D przy kasie lub kiosku. Klienci prezentują kupony QR w aplikacji mobilnej lub kody zamówień online. Tryb screen reading dekoduje kody z ekranów iPhone i Android. Czas skanowania poniżej 100 ms — kolejka nie tworzy się.',
+      },
+      {
+        title: 'Sklep odzieżowy — obsługa kart lojalnościowych i etykiet',
+        description: 'Skaner prezentacyjny 2D na kasie weryfikuje kody EAN na metce, skanuje karty lojalnościowe i kody z aplikacji mobilnej. Modele z certyfikatem IP52 wytrzymają przypadkowe zachlapania na ladzie.',
+      },
+      {
+        title: 'Biuro obsługi klienta — skanowanie dokumentów i dowodów osobistych',
+        description: 'Skaner prezentacyjny z trybem document scanning na recepcji. Odczytuje kody PDF417 z dowodów osobistych, kody ze skanowanych paragonów i dokumentów. Eliminuje ręczne przepisywanie danych — poprawność i szybkość obsługi wzrasta kilkakrotnie.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego producenci i sprzedawcy nie mówią o skanerach prezentacyjnych',
+      items: [
+        {
+          title: 'Czystość szyby skanera decyduje o przepustowości kasy',
+          text: 'Zabrudzony pleksi skanera to najczęstsza przyczyna trudnych odczytów. Tłuste ślady z dłoni obniżają skuteczność dekodowania o 20–40%. Codzienne czyszczenie szyby wilgotną ściereczką (30 sekund) przekłada się na płynną pracę przez cały dzień. Nie używaj alkoholu izopropylowego na szybę — może uszkodzić powłoki optyczne.',
+        },
+        {
+          title: 'Optymalny kąt montażu to 30–45 stopni, nie poziomo',
+          text: 'Wiele instalacji ustawia skaner płasko (0°) lub pionowo (90°) — oba skrajne kąty są błędem. Kąt 30–45° od pionu daje optymalne pokrycie pola i minimalizuje odblask od opakowań foliowych. Sprawdź w instrukcji producenta zalecany kąt.',
+        },
+        {
+          title: 'Skanery omnidirektywne tracą przewagę przy kodach pod folią',
+          text: 'Folia termokurczliwa z wypukłościami powoduje zniekształcenie kodu, z którym nie radzi sobie ani laser, ani imager. Rozwiązanie: skaner z trybem omni-area i algorytmem tolerującym odkształcenia (Zebra PRZM, Honeywell Adaptus).',
+        },
+        {
+          title: 'Skanowanie z ekranów telefonów ma limit jasności i kąta',
+          text: 'Producenci deklarują zgodność z "mobile phone display", ale nie informują o ograniczeniach. Ekrany AMOLED przy niskiej jasności mogą obniżyć skuteczność odczytu QR o 30–50%. Typowe minimum: 100 nit jasności, kąt ±30° od osi skanera.',
+        },
+        {
+          title: 'Nagrzewanie się skanera wpływa na parametry po 8+ godzinach',
+          text: 'Skanery prezentacyjne pracują nonstop w ciepłym środowisku kasy. Po kilku godzinach u tańszych modeli przesuwają się progi dekodowania. Modele premium mają termiczne zarządzanie elektroniką zachowujące stabilność w zakresie 0–50°C. Przed zakupem dla kasy 12h/dobę poproś o dane temperaturowe.',
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Czym różni się skaner prezentacyjny od ręcznego skanera kodów?',
+        answer: 'Skaner ręczny wymaga naciśnięcia przycisku i nakierowania na kod. Skaner prezentacyjny jest stacjonarny i skanuje automatycznie gdy kod znajdzie się w polu widzenia. Operator jedynie przesuwa produkt. Przepustowość: 600–1 200 skanowań/godz. wobec 300–500 przy skanerze ręcznym.',
+      },
+      {
+        question: 'Co to jest omnidirektywne skanowanie i dlaczego jest ważne?',
+        answer: 'Omnidirektywne skanowanie emituje wiązki w wielu kierunkach jednocześnie — kod może być pod dowolnym kątem. W kasie sklepowej towary rzadko mają idealnie zorientowane etykiety — skaner omnidirektywny dekoduje je z pierwszego przesunięcia bez przekręcania produktu.',
+      },
+      {
+        question: 'Czy skaner prezentacyjny 2D może skanować kody z ekranu telefonu?',
+        answer: 'Tak — ale tylko skanery 2D z trybem screen scanning. Skanery laserowe 1D nie mają tej funkcji. Ekran musi mieć minimum 100–150 nit jasności, kod wyświetlony pełnoekranowo, kąt trzymania telefonu ±30° od osi skanera.',
+      },
+      {
+        question: 'Jak skaner prezentacyjny integruje się z systemem POS?',
+        answer: 'Najprostszy interfejs to USB HID — skaner emuluje klawiaturę, system POS odbiera dane jak z klawiatury, bez sterowników. Starsze systemy wymagają RS-232 lub IBM 46xx. Przed zakupem zweryfikuj interfejs z dostawcą oprogramowania kasowego. TAKMA oferuje wsparcie konfiguracyjne.',
+      },
+      {
+        question: 'Jak często należy czyścić skaner prezentacyjny?',
+        answer: 'Szybę optyczną czyść codziennie lub po każdej zmianie — miękką ściereczką z mikrofibry zwilżoną wodą destylowaną. Nie stosuj alkoholu izopropylowego, acetonu ani agresywnych detergentów. Zabrudzony skaner traci nawet 30–40% skuteczności odczytu.',
+      },
+      {
+        question: 'Jak zamontować skaner prezentacyjny na stanowisku kasowym?',
+        answer: 'Optymalny kąt: 30–45° od pionu. Skaner po lewej stronie kasy (dla praworęcznych). Minimalna przestrzeń przed skanerem: 30 cm. Footprint modeli kompaktowych: ok. 12×12 cm. Skanery mogą być też montowane podpowierzchniowo (flush-mount).',
+      },
+      {
+        question: 'Jaka jest przepustowość skanera prezentacyjnego?',
+        answer: 'Skaner liniowy 1D: 300–500 skanowań/godz. Omnidirektywny 1D: 500–800 skanowań/godz. Imager 2D z aggressive scan: 800–1 200 skanowań/godz. Kluczowe parametry: TTR (Time To Read) — najlepsze modele poniżej 80 ms, tolerancja ruchu do 3 m/s.',
+      },
+      {
+        question: 'Czy skaner prezentacyjny nadaje się do kas samoobsługowych (self-checkout)?',
+        answer: 'Tak — idealny element self-checkout. Klienci trzymają produkty mniej precyzyjnie niż kasjerzy — omnidirektywny imager 2D z dużym polem widzenia minimalizuje problemy. Nowoczesne modele mają detekcję braku kodu i alerty dźwiękowe.',
+      },
+      {
+        question: 'Czym różni się skaner 1D od 2D przy zastosowaniu prezentacyjnym?',
+        answer: 'Skaner 1D: tańszy (800–1 500 zł), wyłącznie kody liniowe, brak odczytu z ekranów. Skaner 2D: 1 500–4 000 zł, wszystkie kody 1D i 2D, ekrany smartfonów, kody uszkodzone. Jeśli obsługujesz farmaceutyki, kupony mobilne lub planujesz rozbudowę — wybierz 2D.',
+      },
+      {
+        question: 'Ile waży i ile miejsca zajmuje skaner prezentacyjny?',
+        answer: 'Kompaktowe modele: 200–450 g z podstawką, footprint 10–14 cm × 10–14 cm, wysokość 12–20 cm. Modele z wbudowaną wagą (scanner-scale): 30–40 cm × 40–50 cm. Sprawdź wymiary w karcie katalogowej przed zamówieniem.',
+      },
+      {
+        question: 'Jakie sygnały zwrotne oferują skanery prezentacyjne?',
+        answer: 'Głośny beep (80–90 dB) i dioda LED (zielona/niebieska) przy udanym odczycie. Konfiguracja: zmiana tonu, głośności, wyłączenie dźwięku, różne dźwięki dla 1D vs 2D. Konfiguracja przez kody z podręcznika lub Zebra 123Scan.',
+      },
+      {
+        question: 'Czym jest kontrakt serwisowy OneCare?',
+        answer: 'Zebra OneCare to rozszerzony program wsparcia: naprawy z gwarantowanym SLA, advance exchange (wymiana z góry), wsparcie techniczne. Koszt: 8–15% wartości urządzenia rocznie — taniej niż jednorazowa naprawa (200–600 zł) i przestój zamkniętej kasy.',
+      },
+      {
+        question: 'Jak skaner radzi sobie z uszkodzonymi kodami?',
+        answer: 'Imager 2D z algorytmami Zebra PRZM lub Honeywell Adaptus: do 30% uszkodzeń kodu — bez problemu; 30–60% — tryb damaged barcode; powyżej 60% — wymaga przepakowania. Skanery laserowe 1D nie tolerują uszkodzeń. Dla artykułów spożywczych z mokrymi etykietami — imager 2D.',
+      },
+      {
+        question: 'Jakie są alternatywy dla skanera prezentacyjnego?',
+        answer: 'Skaner ręczny z podstawką hands-free (tańszy o 30–50% ale mniejsze pole skanowania). Skaner bezprzewodowy w trybie prezentacyjnym. Skaner tunelowy (skanuje ze wszystkich stron). System RFID (eliminuje skanowanie). W małym sklepie (<200 skanowań/godz.) wystarczy skaner ręczny z podstawką. Powyżej 400 skanowań/godz. — dedykowany prezentacyjny.',
+      },
+    ],
+    comparisons: [
+      {
+        title: 'Skaner prezentacyjny vs ręczny na stanowisku kasowym',
+        content: 'Ręczny (od ~590 zł) wymaga naciśnięcia przycisku i nakierowania. Prezentacyjny (od ~1 790 zł) działa automatycznie. Różnica w przepustowości: 30–60% więcej skanowań/godz. Ręczny z podstawką hands-free (~800–1 200 zł) to kompromis. Przy wolumenie >400 skanowań/godz. prezentacyjny zwraca różnicę w 6–12 miesięcy.',
+      },
+      {
+        title: 'Skaner omnidirektywny vs jednoliniowy przy kasie',
+        content: 'Jednoliniowy wymaga precyzyjnego ustawienia etykiety. Omnidirektywny dekoduje kod niezależnie od orientacji. W kasie spożywczej z 1 000 pozycji dziennie jednoliniowy generuje ~150–200 nieudanych prób (5–15 minut przestoju na zmianę). Omnidirektywny redukuje je o 70–80%.',
+      },
+      {
+        title: 'Skaner prezentacyjny 1D vs 2D (imager)',
+        content: '1D laserowy (800–1 500 zł): wyłącznie kody EAN, bez ekranów. 2D imager (1 500–4 000 zł): wszystkie kody + ekrany + kody uszkodzone. Wybierz 1D jeśli: wyłącznie artykuły FMCG z EAN. Wybierz 2D jeśli: farmaceutyki, kupony mobilne, program lojalnościowy.',
+      },
+      {
+        title: 'Skaner prezentacyjny budżetowy vs premium',
+        content: 'Budżetowy (800–1 500 zł): 40–60 skanowań/sek., pole 20×20 cm. Premium (2 500–5 000 zł): aggressive scan 80–100 skanowań/sek., pole 30×25 cm, tolerancja ruchu 3 m/s. W kasie supermarketu z 800+ skanowań/godz. premium to 10–20% mniej nieudanych odczytów.',
+      },
+      {
+        title: 'Wbudowany skaner (flush-mount) vs wolnostojący (standalone)',
+        content: 'Standalone: koszt montażu ~0 zł, wymiana w 5 minut. Embedded (flush-mount): koszt montażu 300–1 000 zł, estetyka i brak ryzyka strącenia. Standalone przy modernizacji istniejących kas, embedded przy projektowaniu nowych stanowisk od podstaw.',
+      },
+    ],
+    howToSteps: [
+      {
+        name: 'Wybierz miejsce montażu i sprawdź dostępność interfejsów',
+        text: 'Lewa strona kasy dla praworęcznych, prawa dla leworęcznych, centrum dla self-checkout. Sprawdź porty terminala POS: USB-A, RS-232 lub IBM 46xx. Zmierz przestrzeń na ladzie (footprint ~12×12 cm + 30 cm przed szybą).',
+      },
+      {
+        name: 'Zamontuj podstawkę i ustaw skaner pod kątem 30–45 stopni',
+        text: 'Podstawka na stabilnej powierzchni, najlepiej przyklejona lub przykręcona. Kąt 30–45° od pionu to optymalny kompromis — minimalizuje odblaski i maksymalizuje pole widzenia. Sprawdź czystość szyby skanera.',
+      },
+      {
+        name: 'Podłącz skaner do systemu POS i zweryfikuj interfejs',
+        text: 'USB HID: system automatycznie rozpozna skaner jako klawiaturę. RS-232: ustaw parametry portu (9600, 8N1). Uruchom system POS i zweryfikuj, że skanowanie kodu generuje poprawne dane w polu wyszukiwania.',
+      },
+      {
+        name: 'Skonfiguruj tryb skanowania i parametry specyficzne dla POS',
+        text: 'Zeskanuj kody konfiguracyjne z podręcznika: presentation mode, aggressive scan mode, prefix/suffix. Włącz obsługę QR i screen scanning jeśli potrzebna. Ustaw głośność beepa. Zapisz konfigurację do pamięci nieulotnej.',
+      },
+      {
+        name: 'Przetestuj skaner z asortymentem',
+        text: 'Testy z minimum 20 produktami: EAN prosty, pod folią, zagięty, na zakrzywionym opakowaniu, kod z ekranu telefonu. Zmierz TTR — powinien być poniżej 200 ms. Wyreguluj kąt montażu jeśli trudne kody sprawiały problem.',
+      },
+    ],
+  },
 }

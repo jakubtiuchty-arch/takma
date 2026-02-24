@@ -160,14 +160,17 @@ export const categories: Category[] = [
     icon: 'smartphone',
     productCount: 18,
   },
-  // {
-  //   id: 'skanery-kodow',
-  //   slug: 'skanery-kodow',
-  //   name: 'Skanery / Czytniki',
-  //   description: 'Skanery ręczne, prezentacyjne i przemysłowe do kodów 1D i 2D',
-  //   icon: 'scan',
-  //   productCount: 8,
-  // },
+  {
+    id: 'skanery-kodow',
+    slug: 'skanery-kodow',
+    name: 'Skanery kodów kreskowych',
+    description: 'Profesjonalne skanery kodów kreskowych 1D i 2D — przewodowe, bezprzewodowe i prezentacyjne. Zebra, Datalogic i inne marki.',
+    seoTitle: 'Skanery kodów kreskowych — przewodowe, bezprzewodowe, prezentacyjne | TAKMA',
+    seoDescription: 'Profesjonalne skanery kodów kreskowych 1D/2D od 590 zł netto. Zebra DS2208, DS2278, DS8178 i inne. Skanery przewodowe USB, bezprzewodowe Bluetooth i prezentacyjne. Autoryzowany partner Zebra.',
+    longDescription: 'Skanery kodów kreskowych to urządzenia elektroniczne służące do automatycznego odczytu informacji zakodowanych w kodach kreskowych — zarówno jednowymiarowych (1D), jak i dwuwymiarowych (2D, QR, DataMatrix, PDF417). Stanowią fundament systemów automatycznej identyfikacji (Auto-ID) w logistyce, handlu, produkcji, służbie zdrowia i administracji. Współczesne skanery odczytują kody drukowane na etykietach, wyświetlane na ekranach smartfonów, a najnowsze modele radzą sobie nawet z kodami zniszczonymi, zabrudzonymi lub słabo wydrukowanymi — dzięki zaawansowanym algorytmom dekodowania.\n\nNa rynku wyróżniamy trzy główne technologie skanowania. Skanery laserowe (laser scanners) emitują wiązkę laserową i odczytują wyłącznie kody 1D — są tanie i sprawdzone, ale powoli wypierane przez nowsze rozwiązania. Skanery z czytnikiem obrazowym (imager) wykonują zdjęcie kodu i dekodują je cyfrowo — obsługują zarówno kody 1D, jak i 2D, kody z ekranów oraz kody Direct Part Marking (DPM) grawerowane laserowo na metalach i tworzywach sztucznych. Skanery DPM (Direct Part Marking) to specjalistyczna kategoria przeznaczona do odczytu kodów nanoszonych bezpośrednio na powierzchnię komponentów przemysłowych — niezbędna w motoryzacji, lotnictwie i elektronice.\n\nPod względem łączności skanery dzielą się na przewodowe i bezprzewodowe. Skanery przewodowe łączą się z komputerem lub kasą fiskalną przez interfejs USB (emulacja klawiatury HID lub tryb COM) albo RS-232 — zapewniają zerowe opóźnienia, brak konieczności ładowania baterii i najniższy koszt zakupu. Skanery bezprzewodowe komunikują się przez Bluetooth (zasięg 10–100 m) lub Wi-Fi i oferują pełną swobodę ruchu — idealne dla pracowników magazynu, kurierów i w sytuacjach, gdzie kabel ogranicza ergonomię pracy. Niektóre modele bezprzewodowe działają w trybie batch (zbierają dane offline i synchronizują po powrocie do bazy).\n\nForma obudowy skanera zależy od zastosowania. Skanery ręczne (handheld) to najpopularniejsza kategoria — lekkie, ergonomiczne, przeznaczone do trzymania w jednej dłoni. Wersja pistoletowa (gun grip) sprawdza się przy intensywnym skanowaniu w magazynie, a kompaktowa — w handlu i biurze. Skanery prezentacyjne (presentation/hands-free) montowane na ladzie skanują automatycznie, gdy produkt pojawi się w polu widzenia — eliminują konieczność naciskania spustu i przyspieszają obsługę klienta. Skanery stacjonarne (fixed-mount) instalowane na linii produkcyjnej lub taśmociągu automatyzują kontrolę jakości i śledzenie produktów bez udziału operatora.\n\nKluczowe parametry techniczne przy wyborze skanera to: szybkość skanowania (wyrażana w skanach na sekundę — od 100 do ponad 1 000 skanów/s), zasięg odczytu (od kilku centymetrów do ponad 20 metrów w modelach dalekiego zasięgu), rozdzielczość optyczna (zdolność odczytu kodów o minimalnej szerokości modułu, np. 3 mil), kąt skanowania i pole widzenia (szczególnie istotne w skanerach prezentacyjnych), a także odporność mechaniczna — klasa IP (IP52 dla biura, IP65/IP67 dla przemysłu) i specyfikacja upadku (od 1,2 m w modelach biurkowych do 2,4 m w ultra-wytrzymałych).\n\nTemperatura pracy to parametr kluczowy w logistyce chłodniczej i na placach przeładunkowych. Modele przemysłowe, takie jak Zebra DS3608, działają w zakresie od -30°C do +50°C i spełniają normy IP67, co pozwala na ich stosowanie w mroźniach, na rampach załadunkowych i w warunkach zewnętrznych.\n\nW ofercie TAKMA znajdziesz skanery kodów kreskowych Zebra Technologies — od ekonomicznego modelu DS2208 (przewodowy imager 2D, idealny na kasy i stanowiska biurowe), przez bezprzewodowy DS2278 i flagowy DS8178 z baterią PowerPrecision Plus na 24 godziny pracy, aż po ultra-wytrzymały DS3608 do przemysłu ciężkiego. Jako autoryzowany partner Zebra zapewniamy pełne doradztwo techniczne przy doborze skanera — pomagamy dobrać model, interfejs i akcesoria do konkretnego zastosowania. Serwis gwarancyjny i pogwarancyjny realizujemy we współpracy z serwis-zebry.pl — oficjalnym serwisem Zebra w Polsce.',
+    icon: 'scan',
+    productCount: 5,
+  },
   // {
   //   id: 'tablety',
   //   slug: 'tablety',
@@ -622,6 +625,46 @@ export const subcategories: Subcategory[] = [
       'zebra-em45-usb-cable',
     ],
     productCount: 9,
+  },
+  // --- Podkategorie: Skanery kodów kreskowych ---
+  {
+    id: 'skanery-przewodowe',
+    slug: 'skanery-przewodowe',
+    name: 'Skanery przewodowe',
+    parentCategoryId: 'skanery-kodow',
+    description: 'Skanery kodów kreskowych przewodowe USB i RS-232 — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania.',
+    seoTitle: 'Skanery kodów kreskowych przewodowe USB — Zebra, Datalogic | TAKMA',
+    seoDescription: 'Skanery kodów kreskowych przewodowe USB od 590 zł netto. Zebra DS2208, DS3608 i inne. Imager 2D, IP67, do magazynu i retail. Autoryzowany partner Zebra — doradztwo i serwis.',
+    longDescription: 'Skanery przewodowe (corded scanners) to skanery kodów kreskowych połączone z komputerem, kasą fiskalną lub terminalem POS za pomocą kabla — najczęściej USB lub RS-232. Stanowią najpopularniejszą i najczęściej wybieraną kategorię skanerów w handlu detalicznym, biurach, aptekach i na stanowiskach przyjęcia towaru w magazynach. Ich główna zaleta to absolutna niezawodność połączenia — zerowe opóźnienia transmisji danych, brak ryzyka utraty łączności bezprzewodowej i brak konieczności ładowania baterii.\n\nInterfejs USB w trybie HID (Human Interface Device) pozwala na natychmiastowe podłączenie skanera do dowolnego komputera bez instalacji sterowników — skaner emuluje klawiaturę i „wpisuje" zeskanowany kod bezpośrednio do aktywnego pola tekstowego. Tryb USB COM (wirtualny port szeregowy) umożliwia zaawansowaną komunikację dwukierunkową z oprogramowaniem — przydatną w systemach WMS, ERP i aplikacjach kasowych. Interfejs RS-232 to klasyczne połączenie szeregowe stosowane w starszych systemach POS, wagach i urządzeniach przemysłowych — wciąż popularny w produkcji i logistyce.\n\nWspółczesne skanery przewodowe to niemal wyłącznie czytniki obrazowe (imager) 2D — odczytują zarówno tradycyjne kody kreskowe 1D (EAN-13, Code 128, GS1-128), jak i kody dwuwymiarowe (QR Code, DataMatrix, PDF417, Aztec). Zaawansowane modele, takie jak Zebra DS3608, obsługują dodatkowo kody DPM (Direct Part Marking) — oznaczenia grawerowane lub trawione bezpośrednio na powierzchni metalowych i plastikowych komponentów w przemyśle motoryzacyjnym, lotniczym i elektronicznym.\n\nKlasa ochrony IP determinuje środowisko pracy skanera. Modele biurowe i handlowe (np. Zebra DS2208 z IP52) chronione są przed pyłem i kroplami wody — wystarczające do pracy w sklepie, aptece czy biurze. Skanery przemysłowe (np. Zebra DS3608 z IP67) są w pełni pyłoszczelne i wodoszczelne — można je używać na rampach załadunkowych, w mroźniach, na liniach produkcyjnych i w warunkach zewnętrznych. Specyfikacja upadku od 1,5 m (modele biurowe) do 2,4 m (modele ultra-wytrzymałe) na beton zapewnia odporność na codzienną eksploatację.\n\nTypowe zastosowania skanerów przewodowych to: punkty kasowe w handlu detalicznym (POS), stanowiska przyjęcia i wydania towaru w magazynach, kontrola jakości na liniach produkcyjnych, inwentaryzacja z komputerem stacjonarnym, apteki i przychodnie (weryfikacja leków), biblioteki (wypożyczanie i zwroty) oraz biura (obieg dokumentów z kodami kreskowymi). Niższy koszt zakupu w porównaniu ze skanerami bezprzewodowymi (brak modułu Bluetooth, baterii i bazy ładującej) czyni je optymalnym wyborem wszędzie tam, gdzie operator pracuje w stałym miejscu.',
+    icon: 'scan',
+    productIds: ['zebra-ds2208', 'zebra-ds3608'],
+    productCount: 2,
+  },
+  {
+    id: 'skanery-bezprzewodowe',
+    slug: 'skanery-bezprzewodowe',
+    name: 'Skanery bezprzewodowe',
+    parentCategoryId: 'skanery-kodow',
+    description: 'Skanery kodów kreskowych bezprzewodowe Bluetooth — swoboda ruchu, zasięg do 100 m, bateria na 50 000+ skanów.',
+    seoTitle: 'Skanery kodów kreskowych bezprzewodowe Bluetooth — Zebra | TAKMA',
+    seoDescription: 'Skanery bezprzewodowe Bluetooth od 890 zł netto. Zebra DS2278, LI4278, DS8178. Zasięg do 100 m, bateria 50 000+ skanów. Autoryzowany partner Zebra — doradztwo i serwis.',
+    longDescription: 'Skanery bezprzewodowe (cordless/wireless scanners) to skanery kodów kreskowych komunikujące się z komputerem lub bazą ładującą za pośrednictwem technologii bezprzewodowej — najczęściej Bluetooth, rzadziej Wi-Fi lub zastrzeżonego protokołu radiowego producenta. Kluczową zaletą jest pełna swoboda ruchu operatora — brak kabla eliminuje ograniczenia zasięgu, ryzyko potknięcia się o przewód i uszkodzenia złącza, a także pozwala na skanowanie w trudno dostępnych miejscach (wysokie regały, wnętrza pojemników, pojazdy dostawcze).\n\nBluetooth to dominujący standard łączności w skanerach bezprzewodowych. Wersja Bluetooth 4.0 (Low Energy) zapewnia zasięg 10–30 m w typowych warunkach biurowych, natomiast klasyczne radio Bluetooth w modelach takich jak Zebra LI4278 osiąga imponujący zasięg do 100 metrów w otwartej przestrzeni — wystarczający do swobodnej pracy w dużych halach magazynowych. Skanery Wi-Fi (802.11) są rzadsze, ale oferują bezpośrednią integrację z siecią firmową bez potrzeby dedykowanej bazy — przydatne w rozbudowanych instalacjach z wieloma punktami dostępowymi.\n\nŻywotność baterii to jeden z najważniejszych parametrów skanerów bezprzewodowych. Współczesne modele wyposażone w akumulatory litowo-jonowe zapewniają od 50 000 do ponad 100 000 skanów na jednym ładowaniu, co przekłada się na 8–72 godzin ciągłej pracy (w zależności od modelu i intensywności użytkowania). Flagowy Zebra DS8178 z baterią PowerPrecision Plus oferuje do 24 godzin pracy, a Zebra LI4278 — nawet 72 godziny. Ładowanie odbywa się w bazie (cradle) podłączonej do komputera kablem USB — baza pełni jednocześnie funkcję stacji ładującej i punktu komunikacyjnego.\n\nParowanie skanera z komputerem odbywa się najczęściej przez zeskanowanie kodu kreskowego parowania (barcode pairing) lub przez tryb SSI (Simple Serial Interface) w przypadku skanerów Zebra. Niektóre modele obsługują parowanie NFC (zbliżenie skanera do bazy) oraz tryb multi-host — możliwość szybkiego przełączania między kilkoma urządzeniami bez ponownego parowania.\n\nKiedy wybrać skaner bezprzewodowy zamiast przewodowego? Bezprzewodowy sprawdzi się najlepiej, gdy operator musi się przemieszczać (inwentaryzacja, kompletacja zamówień, odbiór dostawy), gdy kabel utrudnia pracę (wąskie przejścia, stanowiska z ograniczoną przestrzenią), przy skanowaniu obiektów wielkogabarytowych (palety, kontenery) oraz w zastosowaniach mobilnych (dostawy, eventy, targi). Skaner przewodowy pozostaje lepszym wyborem na stałym stanowisku kasowym — jest tańszy, nie wymaga ładowania i zapewnia nieprzerwaną gotowość do pracy.\n\nW ofercie TAKMA znajdziesz skanery bezprzewodowe Zebra: DS2278 (bezprzewodowa wersja bestsellera DS2208, Bluetooth 4.0, imager 2D), LI4278 (linear imager 1D z rekordowym zasięgiem 100 m i 72h pracy na baterii) oraz DS8178 (skaner premium z baterią PowerPrecision Plus, 24h pracy, odczyt kodów uszkodzonych i z ekranów). Wszystkie modele objęte pełną gwarancją i serwisem we współpracy z serwis-zebry.pl.',
+    icon: 'scan',
+    productIds: ['zebra-ds2278', 'zebra-li4278', 'zebra-ds8178'],
+    productCount: 3,
+  },
+  {
+    id: 'skanery-prezentacyjne',
+    slug: 'skanery-prezentacyjne',
+    name: 'Skanery prezentacyjne',
+    parentCategoryId: 'skanery-kodow',
+    description: 'Skanery prezentacyjne (hands-free) do kas samoobsługowych i punktów sprzedaży — automatyczne skanowanie bez naciskania przycisku.',
+    seoTitle: 'Skanery prezentacyjne (hands-free) do POS i kas | TAKMA',
+    seoDescription: 'Skanery prezentacyjne do kas od 1 790 zł netto. Automatyczne skanowanie kodów 1D/2D bez przyciskania — idealne do retail, aptek, bibliotek. Zebra DS9308, DS9908. Doradztwo TAKMA.',
+    longDescription: 'Skanery prezentacyjne (presentation scanners, hands-free scanners) to stacjonarne skanery kodów kreskowych zaprojektowane do pracy bez udziału rąk operatora. Montowane na ladzie kasowej lub blacie stanowiska obsługi, skanują kody automatycznie w momencie, gdy produkt z etykietą pojawi się w ich polu widzenia. Operator nie musi naciskać żadnego przycisku ani celować w kod — wystarczy przesunąć produkt przed skanerem, a odczyt następuje natychmiast. To fundamentalna różnica w porównaniu ze skanerami ręcznymi, która przekłada się na wyraźnie wyższą ergonomię i szybkość obsługi klienta.\n\nZasada działania skanerów prezentacyjnych opiera się na wielokierunkowym polu skanowania (omnidirectional scanning field). Skaner emituje jednocześnie wiele linii skanujących w różnych kierunkach lub — w przypadku nowoczesnych imagerów 2D — wykonuje ciągłe zdjęcia szerokiego obszaru i analizuje je algorytmami rozpoznawania kodów. Dzięki temu kod może być prezentowany pod dowolnym kątem, bez konieczności precyzyjnego ustawienia — skaner sam znajdzie i zdekoduje kod w ułamku sekundy. Najnowsze modele obsługują tryb multi-code, odczytując jednocześnie kilka kodów na jednej etykiecie.\n\nGłówne zastosowania skanerów prezentacyjnych to punkty kasowe w supermarketach, hipermarketach i sklepach convenience — gdzie liczy się szybkość obsługi kolejki. W aptekach skanery prezentacyjne umożliwiają błyskawiczną weryfikację kodów 2D DataMatrix na opakowaniach leków (wymagane przez dyrektywę FMD). W bibliotekach przyspieszają wypożyczanie i zwracanie książek. W biurach obsługi klienta i na recepcjach służą do skanowania dokumentów i przepustek. Coraz częściej skanery prezentacyjne stanowią element kas samoobsługowych (self-checkout) — klient sam skanuje produkty, a skaner działa bez żadnego przeszkolenia użytkownika.\n\nKluczowe parametry skanerów prezentacyjnych to rozmiar pola skanowania (scan field), tolerancja ruchu produktu (motion tolerance — zdolność odczytu kodu z szybko przesuwanego produktu), szybkość dekodowania i zdolność odczytu kodów z ekranów smartfonów (kupony, bilety, karty lojalnościowe w aplikacjach). Ważna jest też konstrukcja — modele kompaktowe zajmują minimum miejsca na ladzie, a modele z wbudowaną wagą (scanner-scale) łączą funkcję skanowania i ważenia w jednym urządzeniu.\n\nAktualnie w ofercie TAKMA nie posiadamy skanerów prezentacyjnych — kategoria jest przygotowana pod rozbudowę asortymentu o modele Zebra DS9308 i DS9908. Jeśli potrzebujesz skanera prezentacyjnego już teraz, skontaktuj się z nami — doradzimy najlepsze rozwiązanie i przygotujemy indywidualną ofertę.',
+    icon: 'scan',
+    productIds: [],
+    productCount: 0,
   },
 ]
 
@@ -7482,7 +7525,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
 // SKANERY KODÓW KRESKOWYCH (TODO: odkomentować po uruchomieniu kategorii)
 // ============================================
 
-const scanners: Product[] = [ /* zakomentowane — skanery tymczasowo wyłączone
+const scanners: Product[] = [
   {
     id: 'zebra-ds2208',
     slug: 'zebra-ds2208',
@@ -7494,9 +7537,10 @@ Radzi sobie z odczytem kodów słabej jakości, uszkodzonych lub słabo wydrukow
 
 Technologia Plug and Play - gotowy do pracy natychmiast po podłączeniu. Idealny dla handlu detalicznego i obsługi dokumentów.`,
     categoryId: 'skanery-kodow',
+    subcategoryIds: ['skanery-przewodowe'],
     manufacturerId: 'zebra',
     priceFrom: 590,
-    images: ['/images/products/zebra-ds2208.jpg'],
+    images: ['/images/products/zebra-ds2208.png'],
     imageDescriptions: ['Zebra DS2208 — widok z przodu'],
     tags: ['retail', 'magazyn'],
     availability: 'available',
@@ -7529,9 +7573,10 @@ Komunikacja Bluetooth zapewnia zasięg do 10 m od bazy. Bateria wystarczająca n
 
 Wszystkie zalety DS2208 w wersji bezprzewodowej: odczyt kodów z ekranów, kodów uszkodzonych, technologia Plug and Play.`,
     categoryId: 'skanery-kodow',
+    subcategoryIds: ['skanery-bezprzewodowe'],
     manufacturerId: 'zebra',
     priceFrom: 990,
-    images: ['/images/products/zebra-ds2278.jpg'],
+    images: ['/images/products/zebra-ds2278.png'],
     imageDescriptions: ['Zebra DS2278 — widok z przodu'],
     tags: ['retail', 'magazyn'],
     availability: 'available',
@@ -7563,9 +7608,10 @@ Nowoczesna technologia linear imager pozwala na odczyt kodów ze standardowych e
 
 Wyjątkowy zasięg radiowy do 100 metrów i norma szczelności IP53.`,
     categoryId: 'skanery-kodow',
+    subcategoryIds: ['skanery-bezprzewodowe'],
     manufacturerId: 'zebra',
     priceFrom: 890,
-    images: ['/images/products/zebra-li4278.jpg'],
+    images: ['/images/products/zebra-li4278.png'],
     imageDescriptions: ['Zebra LI4278 — widok z przodu'],
     tags: ['retail', 'magazyn', 'logistyka'],
     availability: 'available',
@@ -7598,9 +7644,10 @@ Błyskawicznie przechwytuje kody 1D i 2D z odległości do 1.5 metra. Unikalny t
 
 Konstrukcja odporna na upadki z 2.4 m, klasa IP67, temperatura pracy od -30°C do +50°C.`,
     categoryId: 'skanery-kodow',
+    subcategoryIds: ['skanery-przewodowe'],
     manufacturerId: 'zebra',
     priceFrom: 2490,
-    images: ['/images/products/zebra-ds3608.jpg'],
+    images: ['/images/products/zebra-ds3608.png'],
     imageDescriptions: ['Zebra DS3608 — widok z przodu'],
     tags: ['produkcja', 'magazyn', 'logistyka', 'outdoor'],
     availability: 'available',
@@ -7633,9 +7680,10 @@ Potrafi odczytać niewyraźne, wyblakłe, uszkodzone lub zabrudzone kody. Świet
 
 Inteligentna bateria PowerPrecision Plus zapewnia do 24 godzin nieprzerwanej pracy. Wersja DS8178-HC dedykowana dla służby zdrowia z antybakteryjną powłoką.`,
     categoryId: 'skanery-kodow',
+    subcategoryIds: ['skanery-bezprzewodowe'],
     manufacturerId: 'zebra',
     priceFrom: 1790,
-    images: ['/images/products/zebra-ds8178.jpg'],
+    images: ['/images/products/zebra-ds8178.png'],
     imageDescriptions: ['Zebra DS8178 — widok z przodu'],
     tags: ['retail', 'healthcare', 'magazyn'],
     availability: 'available',
@@ -7657,7 +7705,7 @@ Inteligentna bateria PowerPrecision Plus zapewnia do 24 godzin nieprzerwanej pra
     ],
     createdAt: '2022-09-10',
   },
-*/ ]
+]
 
 // ============================================
 // TERMINALE MOBILNE
@@ -21131,7 +21179,7 @@ export const products: Product[] = [
   ...industrialLightPrinters,
   ...industrialPrinters,
   ...mobilePrinters,
-  // ...scanners, // TODO: odkomentować po uruchomieniu kategorii
+  ...scanners,
   ...mobileComputers,
   ...datalogicMobileComputers,
   ...rfidProducts,
