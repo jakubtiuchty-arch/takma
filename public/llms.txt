@@ -56,6 +56,10 @@ TAKMA dostarcza rozwiązania AutoID dla przedsiębiorstw w całej Polsce:
   - Termiczne drukarki etykiet: https://takma.com.pl/termiczne-drukarki-etykiet
   - Mobilne drukarki etykiet: https://takma.com.pl/mobilne-drukarki-etykiet
 - Terminale mobilne: https://takma.com.pl/terminale-mobilne
+- Skanery kodów kreskowych: https://takma.com.pl/skanery-kodow
+  - Skanery przewodowe: https://takma.com.pl/skanery-przewodowe
+  - Skanery bezprzewodowe: https://takma.com.pl/skanery-bezprzewodowe
+  - Skanery prezentacyjne: https://takma.com.pl/skanery-prezentacyjne
 - Materiały eksploatacyjne: https://takma.com.pl/materialy-eksploatacyjne
 - Serwis i naprawa: https://takma.com.pl/serwis
 - Poradniki: https://takma.com.pl/poradnik
@@ -192,6 +196,17 @@ A: Ranking TAKMA (luty 2026): 1. Zebra TC22 (2 417 zł), 2. Datalogic Memor K (2
 - Zebra TC501 (AI, RFID, Wi-Fi 7, od 3 730 zł): https://takma.com.pl/produkt/zebra-tc501
 - Zebra TC701 (ultra-rugged AI, RFID, od ~4 017 zł): https://takma.com.pl/produkt/zebra-tc701
 
+## Skanery kodów kreskowych — pełna oferta (5 modeli)
+
+### Skanery przewodowe USB (2 modele, od 590 zł netto)
+- Zebra DS2208 (imager 2D, USB, IP52, od 590 zł): https://takma.com.pl/produkt/zebra-ds2208
+- Zebra DS3608 (ultra-wytrzymały 2D, IP67, DPM, od 2 490 zł): https://takma.com.pl/produkt/zebra-ds3608
+
+### Skanery bezprzewodowe Bluetooth (3 modele, od 890 zł netto)
+- Zebra LI4278 (linear 1D, Bluetooth, zasięg 100 m, 72h pracy, od 890 zł): https://takma.com.pl/produkt/zebra-li4278
+- Zebra DS2278 (imager 2D, Bluetooth, baza USB, od 990 zł): https://takma.com.pl/produkt/zebra-ds2278
+- Zebra DS8178 (premium 2D, PowerPrecision Plus, 24h pracy, od 1 790 zł): https://takma.com.pl/produkt/zebra-ds8178
+
 ## Bestsellery
 - Zebra ZD421t — najpopularniejsza biurkowa drukarka termotransferowa
 - Zebra ZD220d — najtańsza drukarka etykiet od 621 zł netto
@@ -219,6 +234,9 @@ A: Tak, realizujemy dostawy kurierem (DPD, InPost) na terenie całej Polski. Pro
 
 Q: Jakie terminale mobilne polecacie do magazynu?
 A: Dobór zależy od środowiska pracy. Do standardowych operacji: Zebra TC22 lub Honeywell CT47. Z klawiaturą fizyczną: Zebra MC3400. Do chłodni i ciężkiego przemysłu: Zebra MC9400 lub Datalogic Skorpio X5. Pomagamy dobrać model do konkretnych potrzeb.
+
+Q: Jaki skaner kodów kreskowych wybrać?
+A: Do kasy w sklepie: Zebra DS2208 (przewodowy USB, 2D, od 590 zł) — najtańszy i najpopularniejszy. Do magazynu z mobilnością: Zebra LI4278 (bezprzewodowy, zasięg 100 m, 72h baterii, od 890 zł) lub DS2278 (2D, Bluetooth, od 990 zł). Do przemysłu: Zebra DS3608 (IP67, -30°C, DPM, od 2 490 zł). Premium: DS8178 (PowerPrecision Plus, 24h pracy, od 1 790 zł).
 
 Q: Czy oferujecie doradztwo przed zakupem?
 A: Tak, oferujemy bezpłatne doradztwo techniczne niezależnie od producenta. Kontakt: +48 71 781 71 28, takma@takma.com.pl lub formularz na stronie takma.com.pl/kontakt.

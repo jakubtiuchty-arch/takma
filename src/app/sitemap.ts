@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/materialy-eksploatacyjne`, lastModified: lastUpdated },
     { url: `${baseUrl}/oprogramowanie`, lastModified: lastUpdated },
     { url: `${baseUrl}/terminale-mobilne`, lastModified: lastUpdated },
+    { url: `${baseUrl}/skanery-kodow`, lastModified: lastUpdated },
     { url: `${baseUrl}/o-nas`, lastModified: new Date('2025-12-01') },
     { url: `${baseUrl}/kontakt`, lastModified: new Date('2025-12-01') },
     { url: `${baseUrl}/serwis`, lastModified: lastUpdated },
@@ -23,6 +24,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/polityka-prywatnosci`, lastModified: new Date('2025-06-01') },
     { url: `${baseUrl}/regulamin`, lastModified: new Date('2026-02-17') },
     { url: `${baseUrl}/mapa-strony`, lastModified: lastUpdated },
+    // Hub pages taśm per typ
+    { url: `${baseUrl}/tasmy-wax`, lastModified: lastUpdated },
+    { url: `${baseUrl}/tasmy-wax-resin`, lastModified: lastUpdated },
+    { url: `${baseUrl}/tasmy-resin`, lastModified: lastUpdated },
   ]
 
   const productPages: MetadataRoute.Sitemap = products.map((product) => ({

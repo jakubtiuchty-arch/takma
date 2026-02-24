@@ -13,6 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: cat.seoTitle,
       description: cat.seoDescription,
       url: `https://takma.com.pl/${cat.slug}`,
+      images: [{ url: '/images/takma-og.png', width: 1200, height: 630, alt: 'TAKMA — Autoryzowany dystrybutor urządzeń AutoID' }],
     },
     alternates: { canonical: `https://takma.com.pl/${cat.slug}` },
   }
