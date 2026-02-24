@@ -13,11 +13,17 @@ for (const p of products) {
 
 // Bold + link product model names in HTML
 // Matches: Zebra ZD/ZT/TC/MC/ZQ/EM, Honeywell CT/CK, Datalogic Memor/Skorpio, Newland MT, M3 SL/UL/SM
+// Tracks <a>...</a> nesting to avoid creating invalid nested anchor tags
 function boldifyModels(html: string): string {
+  let insideA = false
   return html.replace(
-    /(<[^>]*>)|(\b(?:Zebra\s+)?(?:Z[DT]\d{3}[dDtT]?|(?:TC|MC|ZQ|EM)\d{2,4}[a-z]?(?:\s+Plus)?)(?=[\s,.<)]|\b))|(\b(?:Honeywell\s+)?(?:CT|CK)\d{2,3}\b)|(\bDatalogic\s+(?:Memor|Skorpio)\s+\w+\b)|(\bNewland\s+MT\d{2,3}\b)|(\bM3\s+(?:Mobile\s+)?(?:SL|UL|SM)\d{2}\+?\b)/gi,
-    (match, tag) => {
+    /(<a\s[^>]*>)|(<\/a>)|(<[^>]*>)|(\b(?:Zebra\s+)?(?:Z[DT]\d{3}[dDtT]?|(?:TC|MC|ZQ|EM)\d{2,4}[a-z]?(?:\s+Plus)?)(?=[\s,.<)]|\b))|(\b(?:Honeywell\s+)?(?:CT|CK)\d{2,3}\b)|(\bDatalogic\s+(?:Memor|Skorpio)\s+\w+\b)|(\bNewland\s+MT\d{2,3}\b)|(\bM3\s+(?:Mobile\s+)?(?:SL|UL|SM)\d{2}\+?\b)/gi,
+    (match, openA, closeA, tag) => {
+      if (openA) { insideA = true; return openA }
+      if (closeA) { insideA = false; return closeA }
       if (tag) return tag
+      // Skip wrapping if already inside an <a> tag (prevents nested anchors → hydration error)
+      if (insideA) return `<strong>${match}</strong>`
       // Check if it's a Zebra product we can link to
       const zebraMatch = match.replace(/^Zebra\s+/i, '')
       const slug = productNameMap[zebraMatch] || productNameMap[zebraMatch.toUpperCase()]
