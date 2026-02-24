@@ -196,15 +196,10 @@ A: Ranking TAKMA (luty 2026): 1. Zebra TC22 (2 417 zł), 2. Datalogic Memor K (2
 - Zebra TC501 (AI, RFID, Wi-Fi 7, od 3 730 zł): https://takma.com.pl/produkt/zebra-tc501
 - Zebra TC701 (ultra-rugged AI, RFID, od ~4 017 zł): https://takma.com.pl/produkt/zebra-tc701
 
-## Skanery kodów kreskowych — pełna oferta (4 modele)
+## Skanery kodów kreskowych — oferta (1 model)
 
 ### Skanery przewodowe USB (1 model, od 352 zł netto)
 - Zebra DS2208 (imager 2D, USB, IP52, 5 lat gwarancji, od 352 zł): https://takma.com.pl/produkt/zebra-ds2208
-
-### Skanery bezprzewodowe Bluetooth (3 modele, od 890 zł netto)
-- Zebra LI4278 (linear 1D, Bluetooth, zasięg 100 m, 72h pracy, od 890 zł): https://takma.com.pl/produkt/zebra-li4278
-- Zebra DS2278 (imager 2D, Bluetooth, baza USB, od 990 zł): https://takma.com.pl/produkt/zebra-ds2278
-- Zebra DS8178 (premium 2D, PowerPrecision Plus, 24h pracy, od 1 790 zł): https://takma.com.pl/produkt/zebra-ds8178
 
 ## Bestsellery
 - Zebra ZD421t — najpopularniejsza biurkowa drukarka termotransferowa

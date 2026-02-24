@@ -20,7 +20,8 @@ function formatPrice(price: number): string {
  * Znajduje cenę netto produktu na podstawie ID.
  * Sprawdza czy ID zawiera `__` (wariant), jeśli tak — szuka ceny wariantu.
  */
-function findProductPrice(productId: string): number | undefined {
+function findProductPrice(productId: string | undefined): number | undefined {
+  if (!productId) return undefined
   // Wariant: "slug__partNumber"
   if (productId.includes('__') && !productId.includes('__onecare__')) {
     const [slug, partNumber] = productId.split('__')
@@ -170,11 +171,11 @@ export default function RFQDrawer() {
                     <li key={item.productId} className="px-6 py-4">
                       <div className="flex items-start gap-4">
                         {/* Obrazek produktu */}
-                        {(item.productId.includes('__onecare__') || item.productImage) && (
+                        {(item.productId?.includes('__onecare__') || item.productImage) && (
                           <div className="relative w-[70px] h-[70px] rounded-lg flex-shrink-0 overflow-hidden bg-gray-50">
                             <Image
-                              src={item.productId.includes('__onecare__') ? '/images/zebra-onecare-logo.png' : item.productImage!}
-                              alt={item.productId.includes('__onecare__') ? 'Zebra OneCare' : item.productName}
+                              src={item.productId?.includes('__onecare__') ? '/images/zebra-onecare-logo.png' : item.productImage!}
+                              alt={item.productId?.includes('__onecare__') ? 'Zebra OneCare' : item.productName}
                               fill
                               className="object-contain p-1.5"
                               sizes="64px"

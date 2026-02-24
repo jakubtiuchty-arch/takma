@@ -166,10 +166,10 @@ export const categories: Category[] = [
     name: 'Skanery kodów kreskowych',
     description: 'Profesjonalne skanery i czytniki kodów kreskowych 1D i 2D — przewodowe, bezprzewodowe i prezentacyjne. Zebra, Datalogic i inne marki.',
     seoTitle: 'Skanery i czytniki kodów kreskowych — przewodowe, bezprzewodowe, prezentacyjne',
-    seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 590 zł netto. Zebra DS2208, DS2278, DS8178 i inne. Skanery przewodowe USB, bezprzewodowe Bluetooth i prezentacyjne. Autoryzowany partner Zebra.',
-    longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Od ekonomicznego DS2208 do kas i aptek, przez bezprzewodowy DS2278 do magazynu, po premium DS8178 z baterią PowerPrecision Plus. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
+    seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 352 zł netto. Zebra DS2208 — imager 2D, USB, 5 lat gwarancji. Skanery przewodowe do kas, aptek i biur. Autoryzowany partner Zebra.',
+    longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 4,
+    productCount: 1,
   },
   // {
   //   id: 'tablety',
@@ -818,11 +818,11 @@ export const subcategories: Subcategory[] = [
     parentCategoryId: 'skanery-kodow-kreskowych',
     description: 'Skanery kodów kreskowych bezprzewodowe Bluetooth — swoboda ruchu, zasięg do 100 m, bateria na 50 000+ skanów.',
     seoTitle: 'Skanery kodów kreskowych bezprzewodowe Bluetooth — Zebra',
-    seoDescription: 'Skanery bezprzewodowe Bluetooth od 890 zł netto. Zebra DS2278, LI4278, DS8178. Zasięg do 100 m, bateria 50 000+ skanów. Autoryzowany partner Zebra — doradztwo i serwis.',
-    longDescription: 'Bezprzewodowe czytniki kodów kreskowych Bluetooth (skanery cordless) — pełna swoboda ruchu, zasięg do 100 m, bateria na 50 000+ skanów. Zebra DS2278 (imager 2D), LI4278 (zasięg 100 m, 72h pracy) i DS8178 (PowerPrecision Plus, 24h). Idealne do inwentaryzacji, kompletacji zamówień i pracy w magazynie.',
+    seoDescription: 'Skanery kodów kreskowych bezprzewodowe Bluetooth — zasięg do 100 m, bateria 50 000+ skanów. Kategoria w przygotowaniu. Autoryzowany partner Zebra.',
+    longDescription: 'Bezprzewodowe czytniki kodów kreskowych Bluetooth (skanery cordless) — pełna swoboda ruchu, zasięg do 100 m, bateria na 50 000+ skanów. Kategoria w przygotowaniu — skontaktuj się po indywidualną ofertę na skanery bezprzewodowe Zebra.',
     icon: 'scan',
-    productIds: ['zebra-ds2278', 'zebra-li4278', 'zebra-ds8178'],
-    productCount: 3,
+    productIds: [],
+    productCount: 0,
   },
   {
     id: 'skanery-prezentacyjne',
@@ -7836,12 +7836,12 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
         answer: 'Producent (Zebra Technologies) udziela gwarancji 60 miesięcy (5 lat) — jednej z najdłuższych w klasie entry-level. Dla porównania, większość konkurencyjnych skanerów oferuje 1–3 lata. TAKMA jako autoryzowany dystrybutor zapewnia serwis gwarancyjny i pogwarancyjny we współpracy z serwis-zebry.pl.',
       },
       {
-        question: 'Czym się różni DS2208 (przewodowy) od DS2278 (bezprzewodowy)?',
-        answer: 'DS2208 to wersja przewodowa USB — idealna na stałe stanowiska kasowe, gdzie kabel nie przeszkadza i urządzenie jest zawsze gotowe do pracy. DS2278 to wersja bezprzewodowa Bluetooth z bazą ładującą (od 990 zł netto) — lepsza do inwentaryzacji i stanowisk wymagających mobilności. Obie wersje mają identyczne możliwości skanowania.',
+        question: 'Czy istnieje bezprzewodowa wersja DS2208?',
+        answer: 'Tak — Zebra DS2278 to bezprzewodowa wersja z Bluetooth i bazą ładującą, idealna do inwentaryzacji i stanowisk wymagających mobilności. Obie wersje mają identyczny silnik skanujący SE4720. Skontaktuj się z nami po ofertę na DS2278.',
       },
       {
         question: 'Jak odporny jest Zebra DS2208?',
-        answer: 'DS2208 wytrzymuje wielokrotne upadki z wysokości 1,5 m na beton (warunki kasowe). Klasa IP52 chroni przed pyłem i kroplami wody. Temperatura pracy 0–50°C. To urządzenie biurowo-kasowe — do magazynów z trudnymi warunkami lepszy jest Zebra DS3608 (IP67, upadek 2,4 m) lub terminal mobilny.',
+        answer: 'DS2208 wytrzymuje wielokrotne upadki z wysokości 1,5 m na beton (warunki kasowe). Klasa IP52 chroni przed pyłem i kroplami wody. Temperatura pracy 0–50°C. To urządzenie biurowo-kasowe — do magazynów z trudnymi warunkami lepszy jest skaner przemysłowy IP67 lub terminal mobilny z wbudowanym skanerem.',
       },
       {
         question: 'Jakie są alternatywy dla Zebra DS2208?',
@@ -7853,114 +7853,6 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/General-Purpose-Scanners/Handheld-Scanners/DS2200-Series/spec-sheet/ds2200-series-spec-sheet-en-us.pdf', size: '0.5 MB' },
     ],
     createdAt: '2022-11-05',
-  },
-  {
-    id: 'zebra-ds2278',
-    slug: 'zebra-ds2278',
-    name: 'Zebra DS2278',
-    shortDescription: 'Bezprzewodowy skaner 2D z bazą ładującą',
-    description: `Zebra DS2278 to bezprzewodowa wersja popularnego skanera DS2208, łącząca mobilność z wysoką wydajnością.
-
-Komunikacja Bluetooth zapewnia zasięg do 10 m od bazy. Bateria wystarczająca na pełną zmianę roboczą.
-
-Wszystkie zalety DS2208 w wersji bezprzewodowej: odczyt kodów z ekranów, kodów uszkodzonych, technologia Plug and Play.`,
-    categoryId: 'skanery-kodow-kreskowych',
-    subcategoryIds: ['skanery-bezprzewodowe'],
-    manufacturerId: 'zebra',
-    priceFrom: 990,
-    images: ['/images/products/zebra-ds2278.png'],
-    imageDescriptions: ['Zebra DS2278 — widok z przodu'],
-    tags: ['retail', 'magazyn'],
-    availability: 'available',
-    isNew: false,
-    isBestseller: false,
-    specifications: [
-      { name: 'Typ skanera', value: 'Imager 2D bezprzewodowy' },
-      { name: 'Skanowane kody', value: '1D, 2D, kody z ekranów' },
-      { name: 'Łączność', value: 'Bluetooth 4.0, USB (baza)' },
-      { name: 'Zasięg bezprzewodowy', value: 'do 10 m' },
-      { name: 'Bateria', value: 'Li-Ion, pełna zmiana' },
-      { name: 'Odporność na upadki', value: '1.5 m na beton' },
-    ],
-    applications: ['Handel detaliczny', 'Inwentaryzacja mobilna', 'Magazyn', 'Recepcja'],
-    compatibleAccessories: [],
-    relatedAccessories: ['zebra-stand-ds22', 'zebra-cable-usb-ds22'],
-    downloads: [
-      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.0 MB' },
-    ],
-    createdAt: '2023-02-10',
-  },
-  {
-    id: 'zebra-li4278',
-    slug: 'zebra-li4278',
-    name: 'Zebra LI4278',
-    shortDescription: 'Bezprzewodowy skaner laserowy 1D z zasięgiem 100 m',
-    description: `Zebra Symbol LI4278 to bezprzewodowy czytnik kodów 1D komunikujący się za pośrednictwem Bluetooth.
-
-Nowoczesna technologia linear imager pozwala na odczyt kodów ze standardowych etykiet i ekranów telefonów. Akumulator gwarantuje nieprzerwaną pracę nawet przez 72 godziny.
-
-Wyjątkowy zasięg radiowy do 100 metrów i norma szczelności IP53.`,
-    categoryId: 'skanery-kodow-kreskowych',
-    subcategoryIds: ['skanery-bezprzewodowe'],
-    manufacturerId: 'zebra',
-    priceFrom: 890,
-    images: ['/images/products/zebra-li4278.png'],
-    imageDescriptions: ['Zebra LI4278 — widok z przodu'],
-    tags: ['retail', 'magazyn', 'logistyka'],
-    availability: 'available',
-    isNew: false,
-    isBestseller: false,
-    specifications: [
-      { name: 'Typ skanera', value: 'Linear Imager 1D bezprzewodowy' },
-      { name: 'Skanowane kody', value: '1D, kody z ekranów' },
-      { name: 'Łączność', value: 'Bluetooth, USB (baza)' },
-      { name: 'Zasięg bezprzewodowy', value: 'do 100 m' },
-      { name: 'Bateria', value: '72 godziny pracy' },
-      { name: 'Klasa IP', value: 'IP53' },
-      { name: 'Odporność na upadki', value: '1.8 m na beton' },
-    ],
-    applications: ['Magazyn', 'Logistyka', 'Handel', 'Inwentaryzacja'],
-    compatibleAccessories: [],
-    downloads: [
-      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '0.8 MB' },
-    ],
-    createdAt: '2022-06-15',
-  },
-  {
-    id: 'zebra-ds8178',
-    slug: 'zebra-ds8178',
-    name: 'Zebra DS8178',
-    shortDescription: 'Premium bezprzewodowy skaner 2D do wymagających zastosowań',
-    description: `Zebra DS8178 to bezprzewodowy czytnik premium klasy, błyskawicznie odczytujący kody 1D i 2D.
-
-Potrafi odczytać niewyraźne, wyblakłe, uszkodzone lub zabrudzone kody. Świetnie radzi sobie z kodami na ekranach smartfonów, nawet słabo doświetlonych.
-
-Inteligentna bateria PowerPrecision Plus zapewnia do 24 godzin nieprzerwanej pracy. Wersja DS8178-HC dedykowana dla służby zdrowia z antybakteryjną powłoką.`,
-    categoryId: 'skanery-kodow-kreskowych',
-    subcategoryIds: ['skanery-bezprzewodowe'],
-    manufacturerId: 'zebra',
-    priceFrom: 1790,
-    images: ['/images/products/zebra-ds8178.png'],
-    imageDescriptions: ['Zebra DS8178 — widok z przodu'],
-    tags: ['retail', 'healthcare', 'magazyn'],
-    availability: 'available',
-    isNew: false,
-    isBestseller: false,
-    specifications: [
-      { name: 'Typ skanera', value: 'Imager 2D bezprzewodowy premium' },
-      { name: 'Skanowane kody', value: '1D, 2D, kody z ekranów, kody uszkodzone' },
-      { name: 'Łączność', value: 'Bluetooth 4.0, USB (baza)' },
-      { name: 'Bateria', value: 'PowerPrecision Plus, do 24h pracy' },
-      { name: 'Odporność na upadki', value: '2.4 m na beton' },
-      { name: 'Klasa IP', value: 'IP52' },
-      { name: 'Wersja HC', value: 'Antybakteryjna powłoka dla healthcare' },
-    ],
-    applications: ['Apteki', 'Szpitale', 'Handel premium', 'Logistyka'],
-    compatibleAccessories: [],
-    downloads: [
-      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.2 MB' },
-    ],
-    createdAt: '2022-09-10',
   },
 ]
 
