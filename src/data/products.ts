@@ -7716,15 +7716,15 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
     manufacturerId: 'zebra',
     priceFrom: 352,
     images: [
-      '/images/products/zebra-ds2208.png',
       '/images/products/zebra-ds2208-2.png',
+      '/images/products/zebra-ds2208.png',
       '/images/products/zebra-ds2208-white-front.png',
       '/images/products/zebra-ds2208-white.png',
       '/images/products/zebra-ds2208-white-2.png',
     ],
     imageDescriptions: [
-      'Zebra DS2208 czarny — widok z przodu, okno skanera i uchwyt ergonomiczny',
       'Zebra DS2208 czarny — widok z boku, kompaktowa obudowa 115 g',
+      'Zebra DS2208 czarny — widok z przodu, okno skanera i uchwyt ergonomiczny',
       'Zebra DS2208 biały — widok z przodu, widoczna matryca CMOS area imager',
       'Zebra DS2208 biały — widok z boku, obudowa Nova White',
       'Zebra DS2208 biały — widok z drugiej strony, design ergonomiczny',
