@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { headers } from 'next/headers'
 import './globals.css'
 import LayoutShell from '@/components/layout/LayoutShell'
+import PostHogProvider from '@/components/PostHogProvider'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
@@ -134,7 +135,9 @@ export default async function RootLayout({
           </>
         )}
       </head>
-      <LayoutShell>{children}</LayoutShell>
+      <PostHogProvider>
+        <LayoutShell>{children}</LayoutShell>
+      </PostHogProvider>
       <Analytics />
       <SpeedInsights />
     </html>
