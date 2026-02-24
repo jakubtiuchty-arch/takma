@@ -48,7 +48,7 @@ export async function middleware(request: NextRequest) {
       'datalogic-memor-30', 'datalogic-memor-35', 'datalogic-skorpio-x5', 'datalogic-memor-k',
       // RFID — usunięte
       // Skanery
-      'zebra-ds2208', 'zebra-ds2278', 'zebra-li4278', 'zebra-ds3608', 'zebra-ds8178',
+      'zebra-ds2208', 'zebra-ds2278', 'zebra-li4278', 'zebra-ds8178',
       // Oprogramowanie
       'zebra-cardstudio',
     ])
