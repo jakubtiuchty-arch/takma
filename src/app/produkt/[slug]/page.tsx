@@ -639,6 +639,29 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </div>
             </section>
 
+            {/* Autoryzowany Partner Zebra — box (tylko urządzenia Zebra) */}
+            {product.manufacturerId === 'zebra' && isDevice && (
+              <div className="rounded-2xl overflow-hidden">
+                <div className="bg-[#A8F000] px-6 py-5 text-center">
+                  <h3 className="text-lg font-bold text-gray-900">Certyfikaty Zebra</h3>
+                  <p className="text-sm text-gray-800 mt-1">
+                    TAKMA jako jeden z nielicznych partnerów Zebra w Polsce posiada 3 oficjalne certyfikaty potwierdzające najwyższe kompetencje w sprzedaży i serwisie.
+                  </p>
+                </div>
+                <div className="bg-gray-50 px-6 py-4 flex items-center justify-center gap-4 sm:gap-6">
+                  <div className="bg-white rounded-xl px-3 py-2 shadow-sm">
+                    <img src="/images/certyfikat-1-zebra.png" alt="Zebra Premier Solution Partner — Printer Repair Specialist" className="h-10 sm:h-12 w-auto" />
+                  </div>
+                  <a href="https://www.zebra.com/pl/pl/partners/partner-application-locator/partner-details.html?id=001i0000019OwOUAA0&viewType=nav" target="_blank" rel="noopener" className="bg-white rounded-xl px-3 py-2 shadow-sm hover:shadow-md transition-shadow">
+                    <img src="/images/certyfikat-3-zebra.png" alt="Zebra Premier Solution Partner" className="h-10 sm:h-12 w-auto" />
+                  </a>
+                  <div className="bg-white rounded-xl px-3 py-2 shadow-sm">
+                    <img src="/images/certyfikat-2-zebra.png" alt="Zebra Premier Solution Partner — Public Sector Specialist" className="h-10 sm:h-12 w-auto" />
+                  </div>
+                </div>
+              </div>
+            )}
+
             {/* Specyfikacja */}
             {product.specifications.length > 0 && (
               <section id="specyfikacja">
