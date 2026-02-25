@@ -8,7 +8,7 @@
 - Adres: ul. Poświęcka 1a, 51-128 Wrocław, Polska
 - Telefon: +48 607 819 688
 - Email: takma@takma.com.pl
-- WWW: https://takma.com.pl
+- WWW: https://www.takma.com.pl
 - Serwis Zebra: https://www.serwis-zebry.pl
 - Godziny pracy: Pon-Pt 7:30–15:30
 
@@ -48,23 +48,23 @@ TAKMA dostarcza rozwiązania AutoID dla przedsiębiorstw w całej Polsce:
 - Leśnictwo (rejestratory leśniczego, drukarki mobilne, systemy GPS)
 
 ## Kluczowe strony
-- Strona główna: https://takma.com.pl
-- Drukarki etykiet: https://takma.com.pl/drukarki-etykiet
-  - Biurkowe drukarki etykiet: https://takma.com.pl/biurkowe-drukarki-etykiet
-  - Przemysłowe drukarki etykiet: https://takma.com.pl/przemyslowe-drukarki-etykiet
-  - Termotransferowe drukarki etykiet: https://takma.com.pl/termotransferowe-drukarki-etykiet
-  - Termiczne drukarki etykiet: https://takma.com.pl/termiczne-drukarki-etykiet
-  - Mobilne drukarki etykiet: https://takma.com.pl/mobilne-drukarki-etykiet
-- Terminale mobilne: https://takma.com.pl/terminale-mobilne
-- Skanery kodów kreskowych: https://takma.com.pl/skanery-kodow-kreskowych
-  - Skanery przewodowe: https://takma.com.pl/skanery-kodow-kreskowych/przewodowe
-  - Skanery bezprzewodowe: https://takma.com.pl/skanery-kodow-kreskowych/bezprzewodowe
-  - Skanery prezentacyjne: https://takma.com.pl/skanery-kodow-kreskowych/prezentacyjne
-- Materiały eksploatacyjne: https://takma.com.pl/materialy-eksploatacyjne
-- Serwis i naprawa: https://takma.com.pl/serwis
-- Poradniki: https://takma.com.pl/poradnik
-- Kontakt: https://takma.com.pl/kontakt
-- O nas: https://takma.com.pl/o-nas
+- Strona główna: https://www.takma.com.pl
+- Drukarki etykiet: https://www.takma.com.pl/drukarki-etykiet
+  - Biurkowe drukarki etykiet: https://www.takma.com.pl/biurkowe-drukarki-etykiet
+  - Przemysłowe drukarki etykiet: https://www.takma.com.pl/przemyslowe-drukarki-etykiet
+  - Termotransferowe drukarki etykiet: https://www.takma.com.pl/termotransferowe-drukarki-etykiet
+  - Termiczne drukarki etykiet: https://www.takma.com.pl/termiczne-drukarki-etykiet
+  - Mobilne drukarki etykiet: https://www.takma.com.pl/mobilne-drukarki-etykiet
+- Terminale mobilne: https://www.takma.com.pl/terminale-mobilne
+- Skanery kodów kreskowych: https://www.takma.com.pl/skanery-kodow-kreskowych
+  - Skanery przewodowe: https://www.takma.com.pl/skanery-kodow-kreskowych/przewodowe
+  - Skanery bezprzewodowe: https://www.takma.com.pl/skanery-kodow-kreskowych/bezprzewodowe
+  - Skanery prezentacyjne: https://www.takma.com.pl/skanery-kodow-kreskowych/prezentacyjne
+- Materiały eksploatacyjne: https://www.takma.com.pl/materialy-eksploatacyjne
+- Serwis i naprawa: https://www.takma.com.pl/serwis
+- Poradniki: https://www.takma.com.pl/poradnik
+- Kontakt: https://www.takma.com.pl/kontakt
+- O nas: https://www.takma.com.pl/o-nas
 
 ## Serwis i naprawa urządzeń AutoID
 TAKMA prowadzi profesjonalny serwis pogwarancyjny urządzeń AutoID z siedzibą we Wrocławiu (ul. Poświęcka 1a, 51-128 Wrocław).
@@ -110,15 +110,15 @@ Q: Czy TAKMA naprawia urządzenia innych marek niż Zebra?
 A: Tak — TAKMA naprawia urządzenia Honeywell, Datalogic, Brother, M3 Mobile, Newland, Citizen, Godex, TSC i SATO. Serwis Zebra realizowany przez autoryzowane centrum serwis-zebry.pl.
 
 ## Poradniki
-- Jak wybrać drukarkę etykiet?: https://takma.com.pl/poradnik/jak-wybrac-drukarke-etykiet
-- Drukarka termiczna vs termotransferowa: https://takma.com.pl/poradnik/drukarka-termiczna-vs-termotransferowa
-- Drukarki etykiet Zebra — przewodnik: https://takma.com.pl/poradnik/drukarki-etykiet-zebra-przewodnik
-- Jak wybrać terminal mobilny (kolektor danych)?: https://takma.com.pl/poradnik/jak-wybrac-terminal-mobilny
-- TOP 10 terminali mobilnych do magazynu i logistyki 2026 (ranking z cenami): https://takma.com.pl/poradnik/top-10-terminali-mobilnych-2026
+- Jak wybrać drukarkę etykiet?: https://www.takma.com.pl/poradnik/jak-wybrac-drukarke-etykiet
+- Drukarka termiczna vs termotransferowa: https://www.takma.com.pl/poradnik/drukarka-termiczna-vs-termotransferowa
+- Drukarki etykiet Zebra — przewodnik: https://www.takma.com.pl/poradnik/drukarki-etykiet-zebra-przewodnik
+- Jak wybrać terminal mobilny (kolektor danych)?: https://www.takma.com.pl/poradnik/jak-wybrac-terminal-mobilny
+- TOP 10 terminali mobilnych do magazynu i logistyki 2026 (ranking z cenami): https://www.takma.com.pl/poradnik/top-10-terminali-mobilnych-2026
 
 ### FAQ — terminale mobilne
 Q: Jaki terminal mobilny do magazynu?
-A: Dla lekkiego magazynu: Zebra TC22 (od 2 417 zł) lub M3 Mobile SL20+ (od 2 000 zł). Dla intensywnego skanowania: Zebra TC53 (od 6 418 zł) lub MC3400 z klawiaturą (od 4 561 zł). Dla chłodni: Zebra MC9400 (IP67, drop 3,0 m, do −30°C, od 7 638 zł). Pełny poradnik: https://takma.com.pl/poradnik/jak-wybrac-terminal-mobilny
+A: Dla lekkiego magazynu: Zebra TC22 (od 2 417 zł) lub M3 Mobile SL20+ (od 2 000 zł). Dla intensywnego skanowania: Zebra TC53 (od 6 418 zł) lub MC3400 z klawiaturą (od 4 561 zł). Dla chłodni: Zebra MC9400 (IP67, drop 3,0 m, do −30°C, od 7 638 zł). Pełny poradnik: https://www.takma.com.pl/poradnik/jak-wybrac-terminal-mobilny
 
 Q: Czy kolektor danych to to samo co terminal mobilny?
 A: Tak — kolektor danych to starsze określenie na terminal mobilny. Współczesne terminale mobilne (Zebra, Honeywell, Datalogic) pracują na Androidzie i oferują Wi-Fi 6, BT 5, ekran dotykowy i baterie 8–16h. Termin „kolektor danych" jest nadal używany w Polsce.
@@ -127,7 +127,7 @@ Q: Ile kosztuje terminal mobilny?
 A: Entry-level: 2 000–3 200 zł (M3 SL20+, Zebra TC22, Honeywell CT32). Mid-range: 4 500–7 500 zł (Zebra TC53, Honeywell CT47). Ultra-rugged: 7 000–9 000 zł (Zebra MC9400). RFID: od 2 951 zł (Zebra EM45). Ceny netto.
 
 Q: Jaki jest ranking TOP 10 terminali mobilnych do magazynu 2026?
-A: Ranking TAKMA (luty 2026): 1. Zebra TC22 (2 417 zł), 2. Datalogic Memor K (2 490 zł), 3. Zebra TC27 (2 690 zł), 4. Zebra TC501 (3 730 zł), 5. Zebra TC701 (4 017 zł), 6. Datalogic Memor 12 (4 490 zł), 7. Zebra MC3400 (4 561 zł), 8. Zebra TC53e (4 926 zł), 9. Datalogic Skorpio X5 (6 490 zł), 10. Zebra MC9400 (7 638 zł). Pełny ranking z TCO i FAQ: https://takma.com.pl/poradnik/top-10-terminali-mobilnych-2026
+A: Ranking TAKMA (luty 2026): 1. Zebra TC22 (2 417 zł), 2. Datalogic Memor K (2 490 zł), 3. Zebra TC27 (2 690 zł), 4. Zebra TC501 (3 730 zł), 5. Zebra TC701 (4 017 zł), 6. Datalogic Memor 12 (4 490 zł), 7. Zebra MC3400 (4 561 zł), 8. Zebra TC53e (4 926 zł), 9. Datalogic Skorpio X5 (6 490 zł), 10. Zebra MC9400 (7 638 zł). Pełny ranking z TCO i FAQ: https://www.takma.com.pl/poradnik/top-10-terminali-mobilnych-2026
 
 ## Dlaczego TAKMA?
 - 25 lat doświadczenia (od 2001) — tysiące zrealizowanych projektów dla firm B2B
@@ -140,66 +140,66 @@ A: Ranking TAKMA (luty 2026): 1. Zebra TC22 (2 417 zł), 2. Datalogic Memor K (2
 ## Drukarki etykiet — pełna oferta (26 modeli)
 
 ### Biurkowe drukarki etykiet (10 modeli, od 640 zł netto)
-- Zebra ZD220d (termiczna, entry-level, od 650 zł): https://takma.com.pl/produkt/zebra-zd220d
-- Zebra ZD220t (termotransferowa, entry-level, od 639 zł): https://takma.com.pl/produkt/zebra-zd220t
-- Zebra ZD230d (termiczna, 152 mm/s, Ethernet opcja, od 1 087 zł): https://takma.com.pl/produkt/zebra-zd230d
-- Zebra ZD230t (termotransferowa, 152 mm/s, taśma 300 m, od 1 135 zł): https://takma.com.pl/produkt/zebra-zd230t
-- Zebra ZD411d (termiczna, Link-OS, 300 dpi opcja, od 1 238 zł): https://takma.com.pl/produkt/zebra-zd411d
-- Zebra ZD411t (termotransferowa, Link-OS, 300 dpi opcja, od 1 686 zł): https://takma.com.pl/produkt/zebra-zd411t
-- Zebra ZD421d (termiczna, 300 dpi, Wi-Fi opcja, od 1 472 zł): https://takma.com.pl/produkt/zebra-zd421d
-- Zebra ZD421t (termotransferowa, 300 dpi, Wi-Fi opcja, od 1 649 zł): https://takma.com.pl/produkt/zebra-zd421t
-- Zebra ZD621d (termiczna, premium, kolorowy LCD, od 1 944 zł): https://takma.com.pl/produkt/zebra-zd621d
-- Zebra ZD621t (termotransferowa, premium, kolorowy LCD, od 2 264 zł): https://takma.com.pl/produkt/zebra-zd621t
+- Zebra ZD220d (termiczna, entry-level, od 650 zł): https://www.takma.com.pl/produkt/zebra-zd220d
+- Zebra ZD220t (termotransferowa, entry-level, od 639 zł): https://www.takma.com.pl/produkt/zebra-zd220t
+- Zebra ZD230d (termiczna, 152 mm/s, Ethernet opcja, od 1 087 zł): https://www.takma.com.pl/produkt/zebra-zd230d
+- Zebra ZD230t (termotransferowa, 152 mm/s, taśma 300 m, od 1 135 zł): https://www.takma.com.pl/produkt/zebra-zd230t
+- Zebra ZD411d (termiczna, Link-OS, 300 dpi opcja, od 1 238 zł): https://www.takma.com.pl/produkt/zebra-zd411d
+- Zebra ZD411t (termotransferowa, Link-OS, 300 dpi opcja, od 1 686 zł): https://www.takma.com.pl/produkt/zebra-zd411t
+- Zebra ZD421d (termiczna, 300 dpi, Wi-Fi opcja, od 1 472 zł): https://www.takma.com.pl/produkt/zebra-zd421d
+- Zebra ZD421t (termotransferowa, 300 dpi, Wi-Fi opcja, od 1 649 zł): https://www.takma.com.pl/produkt/zebra-zd421t
+- Zebra ZD621d (termiczna, premium, kolorowy LCD, od 1 944 zł): https://www.takma.com.pl/produkt/zebra-zd621d
+- Zebra ZD621t (termotransferowa, premium, kolorowy LCD, od 2 264 zł): https://www.takma.com.pl/produkt/zebra-zd621t
 
 ### Przemysłowe drukarki etykiet (7 modeli, od 2 081 zł netto)
-- Zebra ZT111 (entry-level, 203 dpi, 203 mm/s, od 2 081 zł): https://takma.com.pl/produkt/zebra-zt111
-- Zebra ZT231 (mid-range, 203/300 dpi, 305 mm/s, od 2 551 zł): https://takma.com.pl/produkt/zebra-zt231
-- Zebra ZT411 (4", 203-600 dpi, 356 mm/s, od 5 132 zł): https://takma.com.pl/produkt/zebra-zt411
-- Zebra ZT421 (6", 203/300 dpi, 305 mm/s, od 9 416 zł): https://takma.com.pl/produkt/zebra-zt421
-- Zebra ZT510 (4", 203/300 dpi, produkcja, od 8 490 zł): https://takma.com.pl/produkt/zebra-zt510
-- Zebra ZT610 (4", 203-600 dpi, premium, od 10 432 zł): https://takma.com.pl/produkt/zebra-zt610
-- Zebra ZT620 (6", 203/300 dpi, premium, od 12 417 zł): https://takma.com.pl/produkt/zebra-zt620
+- Zebra ZT111 (entry-level, 203 dpi, 203 mm/s, od 2 081 zł): https://www.takma.com.pl/produkt/zebra-zt111
+- Zebra ZT231 (mid-range, 203/300 dpi, 305 mm/s, od 2 551 zł): https://www.takma.com.pl/produkt/zebra-zt231
+- Zebra ZT411 (4", 203-600 dpi, 356 mm/s, od 5 132 zł): https://www.takma.com.pl/produkt/zebra-zt411
+- Zebra ZT421 (6", 203/300 dpi, 305 mm/s, od 9 416 zł): https://www.takma.com.pl/produkt/zebra-zt421
+- Zebra ZT510 (4", 203/300 dpi, produkcja, od 8 490 zł): https://www.takma.com.pl/produkt/zebra-zt510
+- Zebra ZT610 (4", 203-600 dpi, premium, od 10 432 zł): https://www.takma.com.pl/produkt/zebra-zt610
+- Zebra ZT620 (6", 203/300 dpi, premium, od 12 417 zł): https://www.takma.com.pl/produkt/zebra-zt620
 
 ### Mobilne drukarki etykiet (9 modeli, od 576 zł netto)
-- Zebra ZQ220 Plus (2", Bluetooth, od 576 zł): https://takma.com.pl/produkt/zebra-zq220-plus
-- Zebra ZQ210 (2", Bluetooth, od 999 zł): https://takma.com.pl/produkt/zebra-zq210
-- Zebra ZQ310 Plus (2", Wi-Fi + BT, IP54, od 1 496 zł): https://takma.com.pl/produkt/zebra-zq310-plus
-- Zebra ZQ320 Plus (3", Wi-Fi + BT, IP54, od 1 713 zł): https://takma.com.pl/produkt/zebra-zq320-plus
-- Zebra ZQ511 (3", IP65, MIL-STD-810H, od 2 288 zł): https://takma.com.pl/produkt/zebra-zq511
-- Zebra ZQ521 (4", IP65, MIL-STD-810H, od 2 979 zł): https://takma.com.pl/produkt/zebra-zq521
-- Zebra ZQ610 Plus (2", healthcare/retail, od 3 256 zł): https://takma.com.pl/produkt/zebra-zq610-plus
-- Zebra ZQ620 Plus (3", healthcare/retail, od 3 622 zł): https://takma.com.pl/produkt/zebra-zq620-plus
-- Zebra ZQ630 Plus (4", healthcare/retail, od 4 257 zł): https://takma.com.pl/produkt/zebra-zq630-plus
+- Zebra ZQ220 Plus (2", Bluetooth, od 576 zł): https://www.takma.com.pl/produkt/zebra-zq220-plus
+- Zebra ZQ210 (2", Bluetooth, od 999 zł): https://www.takma.com.pl/produkt/zebra-zq210
+- Zebra ZQ310 Plus (2", Wi-Fi + BT, IP54, od 1 496 zł): https://www.takma.com.pl/produkt/zebra-zq310-plus
+- Zebra ZQ320 Plus (3", Wi-Fi + BT, IP54, od 1 713 zł): https://www.takma.com.pl/produkt/zebra-zq320-plus
+- Zebra ZQ511 (3", IP65, MIL-STD-810H, od 2 288 zł): https://www.takma.com.pl/produkt/zebra-zq511
+- Zebra ZQ521 (4", IP65, MIL-STD-810H, od 2 979 zł): https://www.takma.com.pl/produkt/zebra-zq521
+- Zebra ZQ610 Plus (2", healthcare/retail, od 3 256 zł): https://www.takma.com.pl/produkt/zebra-zq610-plus
+- Zebra ZQ620 Plus (3", healthcare/retail, od 3 622 zł): https://www.takma.com.pl/produkt/zebra-zq620-plus
+- Zebra ZQ630 Plus (4", healthcare/retail, od 4 257 zł): https://www.takma.com.pl/produkt/zebra-zq630-plus
 
 ### Technologie druku
 - Termiczna (DT) — druk bezpośredni na papierze termoczułym, tańsza eksploatacja, etykiety blakną po 6-12 miesiącach
 - Termotransferowa (TT) — druk z taśmą barwiącą (ribbon), etykiety trwałe latami, odporne na UV, wodę i chemikalia
-- Porównanie szczegółowe: https://takma.com.pl/poradnik/drukarka-termiczna-vs-termotransferowa
+- Porównanie szczegółowe: https://www.takma.com.pl/poradnik/drukarka-termiczna-vs-termotransferowa
 
 ## Terminale mobilne — pełna oferta
-- Zebra TC22 (Wi-Fi 6E, entry-level, od 2 417 zł): https://takma.com.pl/produkt/zebra-tc22
-- Zebra TC27 (5G/LTE + GPS, od 2 690 zł): https://takma.com.pl/produkt/zebra-tc27
-- Zebra MC2200 (klawiatura, Wi-Fi, od ~3 200 zł): https://takma.com.pl/produkt/zebra-mc2200
-- Zebra MC2700 (klawiatura, LTE, od ~4 200 zł): https://takma.com.pl/produkt/zebra-mc2700
-- Zebra TC53 (WiFi 6E, mid-range, od ~5 500 zł): https://takma.com.pl/produkt/zebra-tc53
-- Zebra TC58 (5G, mid-range, od ~6 500 zł): https://takma.com.pl/produkt/zebra-tc58
-- Zebra TC53e (WiFi 6E, essential, od ~4 500 zł): https://takma.com.pl/produkt/zebra-tc53e
-- Zebra TC58e (5G, essential, od ~5 500 zł): https://takma.com.pl/produkt/zebra-tc58e
-- Zebra MC3300x (klawiatura, daleki zasięg, od ~5 779 zł): https://takma.com.pl/produkt/zebra-mc3300x
-- Zebra MC3400 (klawiatura, następca MC3300x, od ~8 000 zł): https://takma.com.pl/produkt/zebra-mc3400
-- Zebra MC3450 (klawiatura, premium, od ~10 000 zł): https://takma.com.pl/produkt/zebra-mc3450
-- Zebra MC9400 (ultra-rugged, klawiatura, od ~10 500 zł): https://takma.com.pl/produkt/zebra-mc9400
-- Zebra MC9450 (ultra-rugged, 5G, od ~12 000 zł): https://takma.com.pl/produkt/zebra-mc9450
-- Zebra EM45 (enterprise smartphone, od ~3 500 zł): https://takma.com.pl/produkt/zebra-em45
-- Zebra TC73 (ultra-rugged WiFi, od ~8 500 zł): https://takma.com.pl/produkt/zebra-tc73
-- Zebra TC78 (ultra-rugged 5G, od ~9 500 zł): https://takma.com.pl/produkt/zebra-tc78
-- Zebra TC501 (AI, RFID, Wi-Fi 7, od 3 730 zł): https://takma.com.pl/produkt/zebra-tc501
-- Zebra TC701 (ultra-rugged AI, RFID, od ~4 017 zł): https://takma.com.pl/produkt/zebra-tc701
+- Zebra TC22 (Wi-Fi 6E, entry-level, od 2 417 zł): https://www.takma.com.pl/produkt/zebra-tc22
+- Zebra TC27 (5G/LTE + GPS, od 2 690 zł): https://www.takma.com.pl/produkt/zebra-tc27
+- Zebra MC2200 (klawiatura, Wi-Fi, od ~3 200 zł): https://www.takma.com.pl/produkt/zebra-mc2200
+- Zebra MC2700 (klawiatura, LTE, od ~4 200 zł): https://www.takma.com.pl/produkt/zebra-mc2700
+- Zebra TC53 (WiFi 6E, mid-range, od ~5 500 zł): https://www.takma.com.pl/produkt/zebra-tc53
+- Zebra TC58 (5G, mid-range, od ~6 500 zł): https://www.takma.com.pl/produkt/zebra-tc58
+- Zebra TC53e (WiFi 6E, essential, od ~4 500 zł): https://www.takma.com.pl/produkt/zebra-tc53e
+- Zebra TC58e (5G, essential, od ~5 500 zł): https://www.takma.com.pl/produkt/zebra-tc58e
+- Zebra MC3300x (klawiatura, daleki zasięg, od ~5 779 zł): https://www.takma.com.pl/produkt/zebra-mc3300x
+- Zebra MC3400 (klawiatura, następca MC3300x, od ~8 000 zł): https://www.takma.com.pl/produkt/zebra-mc3400
+- Zebra MC3450 (klawiatura, premium, od ~10 000 zł): https://www.takma.com.pl/produkt/zebra-mc3450
+- Zebra MC9400 (ultra-rugged, klawiatura, od ~10 500 zł): https://www.takma.com.pl/produkt/zebra-mc9400
+- Zebra MC9450 (ultra-rugged, 5G, od ~12 000 zł): https://www.takma.com.pl/produkt/zebra-mc9450
+- Zebra EM45 (enterprise smartphone, od ~3 500 zł): https://www.takma.com.pl/produkt/zebra-em45
+- Zebra TC73 (ultra-rugged WiFi, od ~8 500 zł): https://www.takma.com.pl/produkt/zebra-tc73
+- Zebra TC78 (ultra-rugged 5G, od ~9 500 zł): https://www.takma.com.pl/produkt/zebra-tc78
+- Zebra TC501 (AI, RFID, Wi-Fi 7, od 3 730 zł): https://www.takma.com.pl/produkt/zebra-tc501
+- Zebra TC701 (ultra-rugged AI, RFID, od ~4 017 zł): https://www.takma.com.pl/produkt/zebra-tc701
 
 ## Skanery kodów kreskowych — oferta (1 model)
 
 ### Skanery przewodowe USB (1 model, od 352 zł netto)
-- Zebra DS2208 (imager 2D, USB, IP52, 5 lat gwarancji, od 352 zł): https://takma.com.pl/produkt/zebra-ds2208
+- Zebra DS2208 (imager 2D, USB, IP52, 5 lat gwarancji, od 352 zł): https://www.takma.com.pl/produkt/zebra-ds2208
 
 ## Bestsellery
 - Zebra ZD421t — najpopularniejsza biurkowa drukarka termotransferowa

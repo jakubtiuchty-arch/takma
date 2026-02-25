@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: 'Mapa strony — TAKMA',
   description:
     'Pełna mapa strony takma.com.pl — drukarki etykiet, terminale mobilne, skanery kodów, materiały eksploatacyjne i akcesoria.',
-  alternates: { canonical: 'https://takma.com.pl/mapa-strony' },
+  alternates: { canonical: 'https://www.takma.com.pl/mapa-strony' },
 }
 
 function SitemapSection({

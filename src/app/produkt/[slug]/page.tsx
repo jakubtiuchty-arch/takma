@@ -70,7 +70,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     : `${product.name} — ${product.shortDescription}. Sprawdź i zamów w TAKMA.`
 
   // OG image — pełny URL z domeną (nie relative path)
-  const ogImage = product.images[0] ? `https://takma.com.pl${product.images[0]}` : undefined
+  const ogImage = product.images[0] ? `https://www.takma.com.pl${product.images[0]}` : undefined
 
   return {
     title,
@@ -81,7 +81,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
       locale: 'pl_PL',
       siteName: 'TAKMA',
       images: ogImage ? [{ url: ogImage, width: 1200, height: 630, alt: product.name }] : undefined,
-      url: `https://takma.com.pl/produkt/${product.slug}`,
+      url: `https://www.takma.com.pl/produkt/${product.slug}`,
     },
     twitter: {
       card: 'summary_large_image',
@@ -90,7 +90,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
       images: ogImage ? [ogImage] : undefined,
     },
     alternates: {
-      canonical: `https://takma.com.pl/produkt/${product.slug}`,
+      canonical: `https://www.takma.com.pl/produkt/${product.slug}`,
     },
   }
 }
@@ -156,7 +156,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   const sellerOrg = {
     '@type': 'Organization',
     name: 'TAKMA',
-    url: 'https://takma.com.pl',
+    url: 'https://www.takma.com.pl',
   }
 
   // Extract model name from product name (e.g. "Zebra ZD230d" → "ZD230d")
@@ -187,16 +187,16 @@ export default async function ProductPage({ params }: ProductPageProps) {
   ].filter(Boolean).map((p) => ({
     '@type': 'Product' as const,
     name: p!.name,
-    url: `https://takma.com.pl/produkt/${p!.slug}`,
+    url: `https://www.takma.com.pl/produkt/${p!.slug}`,
   }))
 
   const productJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Product',
-    url: `https://takma.com.pl/produkt/${product.slug}`,
+    url: `https://www.takma.com.pl/produkt/${product.slug}`,
     name: product.name,
     description: product.shortDescription,
-    image: product.images.map((img) => `https://takma.com.pl${img}`),
+    image: product.images.map((img) => `https://www.takma.com.pl${img}`),
     brand: manufacturer ? { '@type': 'Brand', name: manufacturer.name } : undefined,
     manufacturer: manufacturer ? { '@type': 'Organization', name: manufacturer.id === 'zebra' ? 'Zebra Technologies' : manufacturer.name, ...(manufacturer.id === 'zebra' ? { url: 'https://www.zebra.com' } : {}) } : undefined,
     model: modelName,
@@ -220,7 +220,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
     offers: product.variants && product.variants.length > 0
       ? {
           '@type': 'AggregateOffer',
-          url: `https://takma.com.pl/produkt/${product.slug}`,
+          url: `https://www.takma.com.pl/produkt/${product.slug}`,
           lowPrice: Math.min(...product.variants.filter((v) => v.priceFrom).map((v) => v.priceFrom!)).toFixed(2),
           highPrice: Math.max(...product.variants.filter((v) => v.priceFrom).map((v) => v.priceFrom!)).toFixed(2),
           priceCurrency: 'PLN',
@@ -228,7 +228,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           availability: availabilitySchemaMap[product.availability],
           offers: product.variants.filter((v) => v.priceFrom).map((v) => ({
             '@type': 'Offer',
-            url: `https://takma.com.pl/produkt/${product.slug}`,
+            url: `https://www.takma.com.pl/produkt/${product.slug}`,
             sku: v.partNumber,
             mpn: v.partNumber,
             name: `${product.name} — ${v.name}`,
@@ -243,7 +243,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
       : product.priceFrom
         ? {
             '@type': 'Offer',
-            url: `https://takma.com.pl/produkt/${product.slug}`,
+            url: `https://www.takma.com.pl/produkt/${product.slug}`,
             price: product.priceFrom.toFixed(2),
             priceCurrency: 'PLN',
             availability: availabilitySchemaMap[product.availability],
@@ -261,17 +261,17 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
   // JSON-LD: BreadcrumbList
   const breadcrumbItems: { '@type': string; position: number; name: string; item: string }[] = [
-    { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://takma.com.pl' },
-    { '@type': 'ListItem', position: 2, name: 'Katalog', item: 'https://takma.com.pl/katalog' },
+    { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://www.takma.com.pl' },
+    { '@type': 'ListItem', position: 2, name: 'Katalog', item: 'https://www.takma.com.pl/katalog' },
   ]
   let pos = 3
   if (category) {
-    breadcrumbItems.push({ '@type': 'ListItem', position: pos++, name: category.name, item: `https://takma.com.pl/${category.slug}` })
+    breadcrumbItems.push({ '@type': 'ListItem', position: pos++, name: category.name, item: `https://www.takma.com.pl/${category.slug}` })
   }
   if (primarySubcategory) {
-    breadcrumbItems.push({ '@type': 'ListItem', position: pos++, name: primarySubcategory.name, item: `https://takma.com.pl/${primarySubcategory.slug}` })
+    breadcrumbItems.push({ '@type': 'ListItem', position: pos++, name: primarySubcategory.name, item: `https://www.takma.com.pl/${primarySubcategory.slug}` })
   }
-  breadcrumbItems.push({ '@type': 'ListItem', position: pos, name: product.name, item: `https://takma.com.pl/produkt/${product.slug}` })
+  breadcrumbItems.push({ '@type': 'ListItem', position: pos, name: product.name, item: `https://www.takma.com.pl/produkt/${product.slug}` })
 
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
@@ -287,13 +287,13 @@ export default async function ProductPage({ params }: ProductPageProps) {
     about: {
       '@type': 'Thing',
       name: product.name,
-      url: `https://takma.com.pl/produkt/${product.slug}`,
+      url: `https://www.takma.com.pl/produkt/${product.slug}`,
     },
     speakable: {
       '@type': 'SpeakableSpecification',
       cssSelector: ['#opis p:first-of-type', '#faq'],
     },
-    url: `https://takma.com.pl/produkt/${product.slug}`,
+    url: `https://www.takma.com.pl/produkt/${product.slug}`,
   }
 
   // JSON-LD: FAQPage — structured data for product FAQ

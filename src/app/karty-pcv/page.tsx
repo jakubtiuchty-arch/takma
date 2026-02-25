@@ -12,9 +12,9 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title: sub.seoTitle,
       description: sub.seoDescription,
-      url: `https://takma.com.pl/${sub.slug}`,
+      url: `https://www.takma.com.pl/${sub.slug}`,
     },
-    alternates: { canonical: `https://takma.com.pl/${sub.slug}` },
+    alternates: { canonical: `https://www.takma.com.pl/${sub.slug}` },
   }
 }
 

@@ -50,9 +50,9 @@ export default function GuidePage({ guide }: GuidePageProps) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://takma.com.pl' },
-      { '@type': 'ListItem', position: 2, name: 'Poradniki', item: 'https://takma.com.pl/poradnik' },
-      { '@type': 'ListItem', position: 3, name: guide.title, item: `https://takma.com.pl/poradnik/${guide.slug}` },
+      { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://www.takma.com.pl' },
+      { '@type': 'ListItem', position: 2, name: 'Poradniki', item: 'https://www.takma.com.pl/poradnik' },
+      { '@type': 'ListItem', position: 3, name: guide.title, item: `https://www.takma.com.pl/poradnik/${guide.slug}` },
     ],
   }
 
@@ -68,18 +68,18 @@ export default function GuidePage({ guide }: GuidePageProps) {
       '@type': 'Person',
       name: 'Jakub Tiuchty',
       jobTitle: 'Specjalista AutoID',
-      worksFor: { '@type': 'Organization', name: 'TAKMA', url: 'https://takma.com.pl' },
+      worksFor: { '@type': 'Organization', name: 'TAKMA', url: 'https://www.takma.com.pl' },
     },
     publisher: {
       '@type': 'Organization',
       name: 'TAKMA',
-      url: 'https://takma.com.pl',
-      logo: { '@type': 'ImageObject', url: 'https://takma.com.pl/images/takma_logo.png' },
+      url: 'https://www.takma.com.pl',
+      logo: { '@type': 'ImageObject', url: 'https://www.takma.com.pl/images/takma_logo.png' },
     },
     datePublished: guide.publishedAt,
     dateModified: guide.updatedAt,
-    mainEntityOfPage: `https://takma.com.pl/poradnik/${guide.slug}`,
-    image: guide.heroImage ? `https://takma.com.pl${guide.heroImage}` : undefined,
+    mainEntityOfPage: `https://www.takma.com.pl/poradnik/${guide.slug}`,
+    image: guide.heroImage ? `https://www.takma.com.pl${guide.heroImage}` : undefined,
     speakable: {
       '@type': 'SpeakableSpecification',
       cssSelector: ['h1', `#${guide.sections[0]?.id} p:first-of-type`, '#faq'],
@@ -102,7 +102,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
         '@type': 'ListItem',
         position: i + 1,
         name: link.title.replace(/ — .*$/, ''),
-        url: `https://takma.com.pl${link.href}`,
+        url: `https://www.takma.com.pl${link.href}`,
       })),
     }
   })() : null

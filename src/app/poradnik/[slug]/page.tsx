@@ -22,14 +22,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: guide.seoTitle,
       description: guide.seoDescription,
-      url: `https://takma.com.pl/poradnik/${guide.slug}`,
+      url: `https://www.takma.com.pl/poradnik/${guide.slug}`,
       type: 'article',
       publishedTime: guide.publishedAt,
       modifiedTime: guide.updatedAt,
       authors: ['TAKMA'],
-      ...(guide.heroImage ? { images: [{ url: `https://takma.com.pl${guide.heroImage}`, width: 1200, height: 630 }] } : {}),
+      ...(guide.heroImage ? { images: [{ url: `https://www.takma.com.pl${guide.heroImage}`, width: 1200, height: 630 }] } : {}),
     },
-    alternates: { canonical: `https://takma.com.pl/poradnik/${guide.slug}` },
+    alternates: { canonical: `https://www.takma.com.pl/poradnik/${guide.slug}` },
   }
 }
 

@@ -83,17 +83,17 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
 
   // Breadcrumbs: 3-level or 4-level depending on hierarchy
   const breadcrumbItems = [
-    { '@type': 'ListItem' as const, position: 1, name: 'Strona główna', item: 'https://takma.com.pl' },
-    { '@type': 'ListItem' as const, position: 2, name: parentCategory.name, item: `https://takma.com.pl/${parentCategory.slug}` },
+    { '@type': 'ListItem' as const, position: 1, name: 'Strona główna', item: 'https://www.takma.com.pl' },
+    { '@type': 'ListItem' as const, position: 2, name: parentCategory.name, item: `https://www.takma.com.pl/${parentCategory.slug}` },
   ]
   if (parentSubcategory) {
     breadcrumbItems.push(
-      { '@type': 'ListItem', position: 3, name: parentSubcategory.name, item: `https://takma.com.pl/${parentSubcategory.slug}` },
-      { '@type': 'ListItem', position: 4, name: subcategory.name, item: `https://takma.com.pl/${subcategory.slug}` },
+      { '@type': 'ListItem', position: 3, name: parentSubcategory.name, item: `https://www.takma.com.pl/${parentSubcategory.slug}` },
+      { '@type': 'ListItem', position: 4, name: subcategory.name, item: `https://www.takma.com.pl/${subcategory.slug}` },
     )
   } else {
     breadcrumbItems.push(
-      { '@type': 'ListItem', position: 3, name: subcategory.name, item: `https://takma.com.pl/${subcategory.slug}` },
+      { '@type': 'ListItem', position: 3, name: subcategory.name, item: `https://www.takma.com.pl/${subcategory.slug}` },
     )
   }
 
@@ -108,7 +108,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
     '@type': 'CollectionPage',
     name: subcategory.name,
     description: subcategory.seoDescription,
-    url: `https://takma.com.pl/${subcategory.slug}`,
+    url: `https://www.takma.com.pl/${subcategory.slug}`,
     numberOfItems: products.length,
     dateModified: '2026-02-22',
     mainEntity: {
@@ -116,7 +116,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
       itemListElement: products.map((p, i) => ({
         '@type': 'ListItem',
         position: i + 1,
-        url: `https://takma.com.pl/produkt/${p.slug}`,
+        url: `https://www.takma.com.pl/produkt/${p.slug}`,
       })),
     },
   }
@@ -155,7 +155,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
       '@type': 'SpeakableSpecification',
       cssSelector: ['h1', '.definition-content', '.faq-section'],
     },
-    url: `https://takma.com.pl/${subcategory.slug}`,
+    url: `https://www.takma.com.pl/${subcategory.slug}`,
   }
 
   const productWord = products.length === 1

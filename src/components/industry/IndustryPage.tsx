@@ -81,8 +81,8 @@ export default function IndustryPage({ slug }: IndustryPageProps) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://takma.com.pl' },
-      { '@type': 'ListItem', position: 2, name: page.name, item: `https://takma.com.pl/${page.slug}` },
+      { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://www.takma.com.pl' },
+      { '@type': 'ListItem', position: 2, name: page.name, item: `https://www.takma.com.pl/${page.slug}` },
     ],
   }
 
@@ -104,17 +104,17 @@ export default function IndustryPage({ slug }: IndustryPageProps) {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: page.heroHeadline,
-    author: { '@type': 'Organization', name: 'TAKMA', url: 'https://takma.com.pl' },
+    author: { '@type': 'Organization', name: 'TAKMA', url: 'https://www.takma.com.pl' },
     publisher: {
       '@type': 'Organization',
       name: 'TAKMA',
-      url: 'https://takma.com.pl',
-      logo: { '@type': 'ImageObject', url: 'https://takma.com.pl/images/takma_logo.png' },
+      url: 'https://www.takma.com.pl',
+      logo: { '@type': 'ImageObject', url: 'https://www.takma.com.pl/images/takma_logo.png' },
     },
     datePublished: '2026-02-13',
     dateModified: '2026-02-13',
     description: page.seoDescription,
-    mainEntityOfPage: `https://takma.com.pl/${page.slug}`,
+    mainEntityOfPage: `https://www.takma.com.pl/${page.slug}`,
   }
 
   return (

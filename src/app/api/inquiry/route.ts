@@ -52,7 +52,7 @@ export async function POST(request: NextRequest) {
     console.log(`[Inquiry] Nowe zapytanie od ${name} (${email}) o ${productName}`)
 
     const adminEmail = process.env.ADMIN_EMAIL || 'jakub.tiuchty@takma.com.pl'
-    const productLink = productSlug ? `https://takma.com.pl/produkt/${productSlug}` : ''
+    const productLink = productSlug ? `https://www.takma.com.pl/produkt/${productSlug}` : ''
 
     // Mail do admina — nowe zapytanie o produkt
     await sendEmail({

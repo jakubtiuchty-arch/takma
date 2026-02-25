@@ -49,4 +49,4 @@ Disallow: /
 User-agent: cohere-ai
 Disallow: /
 
-Sitemap: https://takma.com.pl/sitemap.xml
+Sitemap: https://www.takma.com.pl/sitemap.xml

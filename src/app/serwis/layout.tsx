@@ -7,10 +7,10 @@ export const metadata: Metadata = {
     title: 'Serwis i naprawa drukarek etykiet, terminali i skanerów | TAKMA',
     description: 'Profesjonalny serwis pogwarancyjny urządzeń AutoID — TAKMA Wrocław. Darmowa diagnostyka 48h. Autoryzowany serwis Zebra. Honeywell, Datalogic, Brother, M3 Mobile. Cała Polska.',
     type: 'website',
-    url: 'https://takma.com.pl/serwis',
+    url: 'https://www.takma.com.pl/serwis',
   },
   alternates: {
-    canonical: 'https://takma.com.pl/serwis',
+    canonical: 'https://www.takma.com.pl/serwis',
   },
 }
 
@@ -99,12 +99,12 @@ export default function SerwisLayout({
     "@graph": [
       {
         "@type": ["LocalBusiness", "ProfessionalService"],
-        "@id": "https://takma.com.pl/#organization",
+        "@id": "https://www.takma.com.pl/#organization",
         "name": "TAKMA Tadeusz Tiuchty",
         "alternateName": "TAKMA",
-        "url": "https://takma.com.pl",
-        "logo": "https://takma.com.pl/images/takma_logo.png",
-        "image": "https://takma.com.pl/images/hero_serwis.jpeg",
+        "url": "https://www.takma.com.pl",
+        "logo": "https://www.takma.com.pl/images/takma_logo.png",
+        "image": "https://www.takma.com.pl/images/hero_serwis.jpeg",
         "description": "Profesjonalny serwis pogwarancyjny urządzeń AutoID — drukarek etykiet, terminali mobilnych i skanerów kodów kreskowych. Autoryzowany serwis Zebra Technologies.",
         "telephone": "+48607819688",
         "email": "takma@takma.com.pl",
@@ -169,14 +169,14 @@ export default function SerwisLayout({
         "foundingDate": "2001",
         "sameAs": [
           "https://www.serwis-zebry.pl",
-          "https://takma.com.pl"
+          "https://www.takma.com.pl"
         ]
       },
       {
         "@type": "Service",
         "serviceType": "Naprawa urządzeń AutoID i IT",
         "provider": {
-          "@id": "https://takma.com.pl/#organization"
+          "@id": "https://www.takma.com.pl/#organization"
         },
         "areaServed": {
           "@type": "Country",
@@ -255,13 +255,13 @@ export default function SerwisLayout({
             "@type": "ListItem",
             "position": 1,
             "name": "Strona główna",
-            "item": "https://takma.com.pl"
+            "item": "https://www.takma.com.pl"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Serwis",
-            "item": "https://takma.com.pl/serwis"
+            "item": "https://www.takma.com.pl/serwis"
           }
         ]
       },

@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { products, getCategoryById, getManufacturerById } from '@/data/products'
 
-const SITE_URL = 'https://takma.com.pl'
+const SITE_URL = 'https://www.takma.com.pl'
 
 const availabilityMap: Record<string, string> = {
   available: 'in_stock',

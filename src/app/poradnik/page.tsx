@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Poradniki — drukarki etykiet, skanery, terminale | TAKMA',
     description: 'Eksperckie poradniki, porównania i przewodniki po drukarkach etykiet, skanerach kodów kreskowych i terminalach mobilnych.',
-    url: 'https://takma.com.pl/poradnik',
+    url: 'https://www.takma.com.pl/poradnik',
   },
-  alternates: { canonical: 'https://takma.com.pl/poradnik' },
+  alternates: { canonical: 'https://www.takma.com.pl/poradnik' },
 }
 
 export default function PoradnikiPage() {
@@ -19,8 +19,8 @@ export default function PoradnikiPage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://takma.com.pl' },
-      { '@type': 'ListItem', position: 2, name: 'Poradniki', item: 'https://takma.com.pl/poradnik' },
+      { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://www.takma.com.pl' },
+      { '@type': 'ListItem', position: 2, name: 'Poradniki', item: 'https://www.takma.com.pl/poradnik' },
     ],
   }
 
@@ -29,14 +29,14 @@ export default function PoradnikiPage() {
     '@type': 'CollectionPage',
     name: 'Poradniki TAKMA',
     description: 'Eksperckie poradniki o drukarkach etykiet, skanerach i terminalach mobilnych.',
-    url: 'https://takma.com.pl/poradnik',
+    url: 'https://www.takma.com.pl/poradnik',
     numberOfItems: guides.length,
     mainEntity: {
       '@type': 'ItemList',
       itemListElement: guides.map((g, i) => ({
         '@type': 'ListItem',
         position: i + 1,
-        url: `https://takma.com.pl/poradnik/${g.slug}`,
+        url: `https://www.takma.com.pl/poradnik/${g.slug}`,
         name: g.title,
       })),
     },

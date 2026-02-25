@@ -9,8 +9,8 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: page.seoTitle,
     description: page.seoDescription,
-    openGraph: { title: page.seoTitle, description: page.seoDescription, url: `https://takma.com.pl/${page.slug}` },
-    alternates: { canonical: `https://takma.com.pl/${page.slug}` },
+    openGraph: { title: page.seoTitle, description: page.seoDescription, url: `https://www.takma.com.pl/${page.slug}` },
+    alternates: { canonical: `https://www.takma.com.pl/${page.slug}` },
   }
 }
 

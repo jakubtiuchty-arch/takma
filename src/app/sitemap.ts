@@ -4,7 +4,7 @@ import { guides } from '@/data/guides'
 import { industryPages } from '@/data/industry-content'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://takma.com.pl'
+  const baseUrl = 'https://www.takma.com.pl'
   const lastUpdated = new Date('2026-02-15')
 
   const staticPages: MetadataRoute.Sitemap = [

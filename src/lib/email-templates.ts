@@ -126,7 +126,7 @@ function emailFooter(): string {
               <strong style="color:#6b7280">TAKMA</strong><br />
               ul. Po&#347;wi&#281;cka 1a, 51-128 Wroc&#322;aw &middot; NIP: 915-100-43-77<br />
               <a href="mailto:takma@takma.com.pl" style="color:#9ca3af;text-decoration:none">takma@takma.com.pl</a> &middot;
-              <a href="https://takma.com.pl" style="color:#9ca3af;text-decoration:none">takma.com.pl</a><br />
+              <a href="https://www.takma.com.pl" style="color:#9ca3af;text-decoration:none">takma.com.pl</a><br />
               &#169; ${new Date().getFullYear()} TAKMA &middot; Wiadomo&#347;&#263; wygenerowana automatycznie
             </td>
           </tr>
@@ -459,7 +459,7 @@ export function buildAdminOrderNotificationEmail(data: {
 
         (data.customerNotes ? emailInfoAmber(`<strong>Uwagi klienta:</strong><br />${esc(data.customerNotes)}`) : '') +
 
-        emailButton('Otw&#243;rz w panelu', `https://takma.com.pl/admin/zamowienia/${data.orderNumber}`)
+        emailButton('Otw&#243;rz w panelu', `https://www.takma.com.pl/admin/zamowienia/${data.orderNumber}`)
       ),
   })
 }
@@ -691,7 +691,7 @@ export function buildAdminRfqEmail(data: {
         emailInfoCyan(customerRows.map(r => `<strong>${r.label}:</strong> ${r.value}`).join('<br />')) +
         emailTable(['Lp.', 'Produkt', 'Ilo&#347;&#263;', 'Uwagi'], rows) +
         (data.message ? emailInfoAmber(`<strong>Wiadomo&#347;&#263; klienta:</strong><br />${esc(data.message)}`) : '') +
-        emailButton('Otw&#243;rz zapytanie w panelu', `https://takma.com.pl/admin/oferty/${data.quoteId}`, '#0891b2')
+        emailButton('Otw&#243;rz zapytanie w panelu', `https://www.takma.com.pl/admin/oferty/${data.quoteId}`, '#0891b2')
       ),
   })
 }

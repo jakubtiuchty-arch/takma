@@ -138,7 +138,7 @@ const jsonLdBreadcrumb = {
       '@type': 'ListItem',
       position: 1,
       name: 'Strona główna',
-      item: 'https://takma.com.pl/',
+      item: 'https://www.takma.com.pl/',
     },
   ],
 }
@@ -146,10 +146,10 @@ const jsonLdBreadcrumb = {
 const jsonLdLocalBusiness = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  '@id': 'https://takma.com.pl/#organization',
+  '@id': 'https://www.takma.com.pl/#organization',
   name: 'TAKMA Tadeusz Tiuchty',
   alternateName: 'TAKMA',
-  url: 'https://takma.com.pl',
+  url: 'https://www.takma.com.pl',
   telephone: '+48717817128',
   email: 'takma@takma.com.pl',
   foundingDate: '2001-08-01',
@@ -178,7 +178,7 @@ const jsonLdLocalBusiness = {
     { '@type': 'Country', name: 'Polska' },
   ],
   priceRange: '$$',
-  image: 'https://takma.com.pl/images/takma-og.png',
+  image: 'https://www.takma.com.pl/images/takma-og.png',
   hasCredential: [
     {
       '@type': 'EducationalOccupationalCredential',
@@ -231,7 +231,7 @@ export default function HomePage() {
     itemListElement: bestsellers.map((p, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: `https://takma.com.pl/produkt/${p.slug}`,
+      url: `https://www.takma.com.pl/produkt/${p.slug}`,
       name: p.name,
     })),
   }

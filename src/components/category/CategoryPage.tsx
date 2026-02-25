@@ -50,8 +50,8 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://takma.com.pl' },
-      { '@type': 'ListItem', position: 2, name: category.name, item: `https://takma.com.pl/${category.slug}` },
+      { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://www.takma.com.pl' },
+      { '@type': 'ListItem', position: 2, name: category.name, item: `https://www.takma.com.pl/${category.slug}` },
     ],
   }
 
@@ -60,7 +60,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
     '@type': 'CollectionPage',
     name: category.name,
     description: category.seoDescription,
-    url: `https://takma.com.pl/${category.slug}`,
+    url: `https://www.takma.com.pl/${category.slug}`,
     numberOfItems: products.length,
     dateModified: '2026-02-22',
     mainEntity: {
@@ -68,7 +68,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
       itemListElement: products.map((p, i) => ({
         '@type': 'ListItem',
         position: i + 1,
-        url: `https://takma.com.pl/produkt/${p.slug}`,
+        url: `https://www.takma.com.pl/produkt/${p.slug}`,
       })),
     },
   }
@@ -81,7 +81,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
       '@type': 'SpeakableSpecification',
       cssSelector: ['h1', '.definition-content', '.faq-section'],
     },
-    url: `https://takma.com.pl/${category.slug}`,
+    url: `https://www.takma.com.pl/${category.slug}`,
   }
 
   const productWord = products.length === 1

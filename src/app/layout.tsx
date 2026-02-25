@@ -15,7 +15,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://takma.com.pl'),
+  metadataBase: new URL('https://www.takma.com.pl'),
   title: {
     default: 'TAKMA — Drukarki etykiet, Terminale mobilne, Skanery | Sklep B2B AutoID',
     template: '%s | TAKMA',
@@ -45,8 +45,8 @@ const organizationJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'TAKMA',
-  url: 'https://takma.com.pl',
-  logo: { '@type': 'ImageObject', url: 'https://takma.com.pl/images/takma_logo.png', width: 300, height: 60 },
+  url: 'https://www.takma.com.pl',
+  logo: { '@type': 'ImageObject', url: 'https://www.takma.com.pl/images/takma_logo.png', width: 300, height: 60 },
   description: 'Profesjonalne rozwiązania AutoID — drukarki etykiet, skanery kodów kreskowych, terminale mobilne, systemy RFID. 25+ lat doświadczenia, autoryzowany partner Zebra Technologies.',
   address: {
     '@type': 'PostalAddress',
@@ -101,10 +101,10 @@ const websiteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'TAKMA',
-  url: 'https://takma.com.pl',
+  url: 'https://www.takma.com.pl',
   potentialAction: {
     '@type': 'SearchAction',
-    target: 'https://takma.com.pl/katalog?szukaj={search_term_string}',
+    target: 'https://www.takma.com.pl/katalog?szukaj={search_term_string}',
     'query-input': 'required name=search_term_string',
   },
 }

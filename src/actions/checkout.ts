@@ -64,7 +64,7 @@ export async function createCheckoutSession(
       product_data: {
         name: item.productName,
         metadata: { partNumber: item.partNumber, productId: item.productId },
-        ...(item.image && { images: [`https://takma.com.pl${item.image}`] }),
+        ...(item.image && { images: [`https://www.takma.com.pl${item.image}`] }),
       },
       unit_amount: toStripeAmount(item.priceNetto),
       tax_behavior: 'exclusive' as const,
@@ -93,8 +93,8 @@ export async function createCheckoutSession(
     },
 
     // Redirects
-    success_url: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://takma.com.pl'}/zamowienie/potwierdzenie?order=${order.orderNumber}&session_id={CHECKOUT_SESSION_ID}`,
-    cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://takma.com.pl'}/zamowienie?cancelled=true`,
+    success_url: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.takma.com.pl'}/zamowienie/potwierdzenie?order=${order.orderNumber}&session_id={CHECKOUT_SESSION_ID}`,
+    cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.takma.com.pl'}/zamowienie?cancelled=true`,
 
     // Session expires in 30 minutes
     expires_at: Math.floor(Date.now() / 1000) + 30 * 60,
