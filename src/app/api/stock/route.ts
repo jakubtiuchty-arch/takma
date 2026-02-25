@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { lookupStock as ingramLookup } from '@/lib/ingram'
 import { lookupStock as bluestarLookup } from '@/lib/bluestar'
 import type { StockInfo } from '@/lib/ingram'
-import { type BlueStarStockInfo, _lastDebug as bsDebug } from '@/lib/bluestar'
+import type { BlueStarStockInfo } from '@/lib/bluestar'
 
 const MARGIN = 1.15 // 15% marzy
 const VAT = 1.23    // 23% VAT
@@ -157,23 +157,10 @@ export async function GET(request: NextRequest) {
       }
     })
 
-    // Debug: status obu dystrybutorow
-    const _debug = {
-      ingram: ingramResult.status === 'fulfilled'
-        ? { ok: true, count: ingramData.length, foundCount: ingramData.filter(r => r.found).length }
-        : { ok: false, error: String(ingramResult.reason) },
-      bluestar: bluestarResult.status === 'fulfilled'
-        ? { ok: true, count: bluestarData.length, foundCount: bluestarData.filter(r => r.found).length,
-            sample: bluestarData[0] ? { pn: bluestarData[0].partNumber, found: bluestarData[0].found, inv: bluestarData[0].inventory, price: bluestarData[0].unitPrice } : null,
-            raw: bsDebug }
-        : { ok: false, error: String(bluestarResult.reason), raw: bsDebug },
-    }
-
     return NextResponse.json({
       results,
       count: results.length,
       found: results.filter(r => r.found).length,
-      _debug,
     }, {
       headers: {
         'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=7200',
