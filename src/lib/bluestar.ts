@@ -12,11 +12,16 @@ const BLUESTAR_TOKEN_URL =
   'https://login.microsoftonline.com/e15982ca-8761-4e60-958b-ea36b58ffa0c/oauth2/v2.0/token'
 const BLUESTAR_API_URL = 'https://api.bluestarinc-emea.com/v2/customeritemprice'
 
-const BLUESTAR_CLIENT_ID = process.env.BLUESTAR_CLIENT_ID
-const BLUESTAR_CLIENT_SECRET = process.env.BLUESTAR_CLIENT_SECRET
-const BLUESTAR_SCOPE = process.env.BLUESTAR_SCOPE
-const BLUESTAR_CUSTOMER_NO = process.env.BLUESTAR_CUSTOMER_NO
-const BLUESTAR_API_KEY = process.env.BLUESTAR_API_KEY
+// Env vars czytane wewnatrz funkcji (nie na top-level) — zabezpieczenie przed cold-start race
+function env() {
+  return {
+    clientId: process.env.BLUESTAR_CLIENT_ID,
+    clientSecret: process.env.BLUESTAR_CLIENT_SECRET,
+    scope: process.env.BLUESTAR_SCOPE,
+    customerNo: process.env.BLUESTAR_CUSTOMER_NO,
+    apiKey: process.env.BLUESTAR_API_KEY,
+  }
+}
 
 const MARGIN = 1.15 // 15% marży (standard TAKMA)
 const VAT = 1.23    // 23% VAT
@@ -77,17 +82,18 @@ async function getAccessToken(): Promise<string> {
     return cachedToken
   }
 
-  if (!BLUESTAR_CLIENT_ID || !BLUESTAR_CLIENT_SECRET || !BLUESTAR_SCOPE) {
+  const { clientId, clientSecret, scope } = env()
+  if (!clientId || !clientSecret || !scope) {
     throw new Error('Brak konfiguracji BlueStar OAuth (CLIENT_ID, CLIENT_SECRET, SCOPE)')
   }
 
   console.log('[BlueStar Auth] Pobieram nowy token OAuth 2.0...')
 
   const body = new URLSearchParams({
-    client_id: BLUESTAR_CLIENT_ID,
-    client_secret: BLUESTAR_CLIENT_SECRET,
+    client_id: clientId,
+    client_secret: clientSecret,
     grant_type: 'client_credentials',
-    scope: BLUESTAR_SCOPE,
+    scope: scope,
   })
 
   const response = await fetch(BLUESTAR_TOKEN_URL, {
@@ -117,8 +123,8 @@ async function getAccessToken(): Promise<string> {
 // ============================================
 
 const CACHE_TTL = 60 * 60 * 1000           // 1 godzina dla found: true
-const CACHE_TTL_NOT_FOUND = 5 * 60 * 1000  // 5 minut dla found: false
-const ERROR_COOLDOWN = 30 * 1000            // 30s po błędzie
+const CACHE_TTL_NOT_FOUND = 30 * 1000       // 30s dla found: false (krotko — retry szybko)
+const ERROR_COOLDOWN = 10 * 1000            // 10s po bledzie (bylo 30s)
 
 const stockCache = new Map<string, { data: BlueStarStockInfo; cachedAt: number }>()
 let lastErrorAt = 0
@@ -161,26 +167,23 @@ async function sendPriceRequest(partNumbers: string[]): Promise<BlueStarPriceIte
   try {
     const token = await getAccessToken()
 
-    if (!BLUESTAR_CUSTOMER_NO || !BLUESTAR_API_KEY) {
+    const { customerNo, apiKey } = env()
+    if (!customerNo || !apiKey) {
       throw new Error('Brak BLUESTAR_CUSTOMER_NO lub BLUESTAR_API_KEY')
     }
 
     const controller = new AbortController()
     const timeoutId = setTimeout(() => controller.abort(), 30000)
 
+    const makeBody = () => JSON.stringify({ customerNo, apiKey, itemList: partNumbers })
+    const makeHeaders = (t: string) => ({ 'Authorization': `Bearer ${t}`, 'Content-Type': 'application/json' })
+
     console.log(`[BlueStar Price] Wysyłam zapytanie o ${partNumbers.length} PN...`)
 
     let response = await fetch(BLUESTAR_API_URL, {
       method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${token}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        customerNo: BLUESTAR_CUSTOMER_NO,
-        apiKey: BLUESTAR_API_KEY,
-        itemList: partNumbers,
-      }),
+      headers: makeHeaders(token),
+      body: makeBody(),
       signal: controller.signal,
     })
 
@@ -190,15 +193,8 @@ async function sendPriceRequest(partNumbers: string[]): Promise<BlueStarPriceIte
       await new Promise(r => setTimeout(r, 3000))
       response = await fetch(BLUESTAR_API_URL, {
         method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          customerNo: BLUESTAR_CUSTOMER_NO,
-          apiKey: BLUESTAR_API_KEY,
-          itemList: partNumbers,
-        }),
+        headers: makeHeaders(token),
+        body: makeBody(),
         signal: controller.signal,
       })
     }
@@ -211,15 +207,8 @@ async function sendPriceRequest(partNumbers: string[]): Promise<BlueStarPriceIte
       const newToken = await getAccessToken()
       response = await fetch(BLUESTAR_API_URL, {
         method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${newToken}`,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          customerNo: BLUESTAR_CUSTOMER_NO,
-          apiKey: BLUESTAR_API_KEY,
-          itemList: partNumbers,
-        }),
+        headers: makeHeaders(newToken),
+        body: makeBody(),
         signal: controller.signal,
       })
     }
@@ -281,8 +270,9 @@ export async function lookupStock(partNumbers: string[]): Promise<BlueStarStockI
     return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now))
   }
 
-  // Sprawdź konfigurację
-  if (!BLUESTAR_CLIENT_ID || !BLUESTAR_CLIENT_SECRET) {
+  // Sprawdź konfigurację (czytane z process.env przy każdym wywołaniu)
+  const { clientId, clientSecret } = env()
+  if (!clientId || !clientSecret) {
     console.warn('[BlueStar] Brak konfiguracji (BLUESTAR_CLIENT_ID/SECRET)')
     for (const pn of uncached) {
       setCached(pn, makeEmptyResult(pn, now))

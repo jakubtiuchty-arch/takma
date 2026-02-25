@@ -207,6 +207,12 @@ export async function GET(request: NextRequest) {
     if (showDebug) {
       response._debug = {
         eurRate,
+        envPresent: {
+          BLUESTAR_CLIENT_ID: !!process.env.BLUESTAR_CLIENT_ID,
+          BLUESTAR_CLIENT_SECRET: !!process.env.BLUESTAR_CLIENT_SECRET,
+          BLUESTAR_CUSTOMER_NO: !!process.env.BLUESTAR_CUSTOMER_NO,
+          BLUESTAR_API_KEY: !!process.env.BLUESTAR_API_KEY,
+        },
         ingram: {
           status: ingramResult.status,
           count: ingramData.length,
