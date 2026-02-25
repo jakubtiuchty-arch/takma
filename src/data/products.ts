@@ -7922,6 +7922,8 @@ const mobileComputers: Product[] = [
     slug: 'zebra-mc3300x',
     name: 'Zebra MC3300x',
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc3300x-series.html',
+    seoTitle: 'Terminal mobilny Zebra MC3300x — klawiatura, skaner 21 m',
+    seoDescription: 'Zebra MC3300x — terminal mobilny z klawiaturą fizyczną i skanerem dalekiego zasięgu 21 m. MC3300x Zebra: magazyn wysokiego składowania, Gun/Straight Shooter, IP64. Kolektor danych Zebra MC3300x od 5 779 zł netto.',
     shortDescription: 'Terminal mobilny z klawiaturą fizyczną i skanerem dalekiego zasięgu — do magazynów wysokiego składowania',
     description: `Dla kogo? Zebra MC3300x to wytrzymały terminal mobilny z fizyczną klawiaturą, zaprojektowany dla operatorów magazynów wysokiego składowania, centrów dystrybucyjnych, linii produkcyjnych i zakładów cross-dockingowych — wszędzie tam, gdzie szybkie wprowadzanie danych (numery partii, kody lokalizacji, ilości) wymaga klawiszy zamiast klawiatury ekranowej, a skanowanie kodów z górnych regałów (do 21 metrów) wymaga skanera dalekiego zasięgu.
 
@@ -8130,6 +8132,8 @@ Pakiet Mobility DNA w cenie: DataWedge (skanowanie bez programowania), StageNow 
     id: 'zebra-mc3400',
     slug: 'zebra-mc3400',
     name: 'Zebra MC3400',
+    seoTitle: 'Terminal mobilny Zebra MC3400 — następca MC3300x, Wi-Fi 6E',
+    seoDescription: 'Zebra MC3400 — terminal mobilny z klawiaturą, następca MC3300x. MC3400 Zebra: Wi-Fi 6E, skaner 30 m, IP65/IP67, hot-swap. Komputer mobilny Zebra MC3400 od 4 561 zł netto.',
     shortDescription: 'Terminal mobilny z klawiaturą, Wi-Fi 6E, skaner do 30 m, IP65/IP67 — następca MC3300x',
     description: `Dla kogo? Zebra MC3400 to wytrzymały terminal mobilny nowej generacji z fizyczną klawiaturą, zaprojektowany dla operatorów magazynów, centrów dystrybucji, linii produkcyjnych i punktów cross-dockingu — wszędzie tam, gdzie szybkie wprowadzanie danych z klawiatury i niezawodne skanowanie kodów kreskowych decydują o wydajności operacji.
 
@@ -8305,6 +8309,8 @@ Pełna kompatybilność wsteczna z akcesoriami MC3300x: baterie, stacje dokując
     id: 'zebra-mc3450',
     slug: 'zebra-mc3450',
     name: 'Zebra MC3450',
+    seoTitle: 'Terminal mobilny Zebra MC3450 — 5G z klawiaturą i GPS',
+    seoDescription: 'Zebra MC3450 — terminal mobilny 5G z klawiaturą fizyczną i GPS. MC3450 Zebra: Wi-Fi 6E, skaner 30 m, IP65/IP67, dual SIM. Kolektor danych 5G Zebra MC3450 od 5 572 zł netto.',
     shortDescription: 'Terminal mobilny 5G z klawiaturą, Wi-Fi 6E, GPS, skaner do 30 m, IP65/IP67',
     description: `Dla kogo? Zebra MC3450 to wytrzymały terminal mobilny 5G nowej generacji z fizyczną klawiaturą, zaprojektowany dla operacji logistycznych wymagających łączności komórkowej poza zasięgiem Wi-Fi — yard management na placach kontenerowych, weryfikacja ładunków w portach, inwentaryzacja pojazdów na dużych placach, logistyka terenowa i zarządzanie dostawami last-mile.
 
@@ -8493,6 +8499,8 @@ Pełna kompatybilność wsteczna z akcesoriami MC3300x i MC3400: baterie, stacje
     id: 'zebra-mc9400',
     slug: 'zebra-mc9400',
     name: 'Zebra MC9400',
+    seoTitle: 'Terminal mobilny Zebra MC9400 — następca MC9300, ultra-rugged',
+    seoDescription: 'Zebra MC9400 — flagowy terminal ultra-rugged, następca MC9300. MC9400 Zebra: 7 klawiatur, skaner 30 m, IP68, upadki 3,65 m, mroźnia -30°C. Komputer mobilny Zebra MC9400 od 7 638 zł netto.',
     shortDescription: 'Flagowy terminal ultra-rugged z 7 klawiaturami, skanerem do 30 m, IP65+IP68, upadki 3,65 m — następca MC9300',
     description: `Dla kogo? Zebra MC9400 to flagowy terminal mobilny klasy ultra-rugged z siedmioma wymiennymi klawiaturami, zaprojektowany dla najbardziej wymagających środowisk przemysłowych — magazynów wysokiego składowania, chłodni (-30°C), portów, zakładów produkcyjnych, centrów logistycznych i dużych fabryk — wszędzie tam, gdzie wymagana jest bezwzględna niezawodność, skanowanie kodów na dystansie do 30 metrów i wielozmianowa praca w ekstremalnych warunkach temperaturowych.
 
@@ -8669,6 +8677,8 @@ Opcjonalna kamera tylna 13 MP do dokumentacji fotograficznej, OCR i skanowania d
     id: 'zebra-mc9450',
     slug: 'zebra-mc9450',
     name: 'Zebra MC9450',
+    seoTitle: 'Terminal mobilny Zebra MC9450 — ultra-rugged 5G z GPS',
+    seoDescription: 'Zebra MC9450 — flagowy terminal ultra-rugged 5G z GPS, następca MC9300. MC9450 Zebra: 7 klawiatur, IP68, upadki 3,65 m, dual SIM. Kolektor danych 5G Zebra MC9450 od 8 594 zł netto.',
     shortDescription: 'Flagowy terminal ultra-rugged 5G z GPS, 7 klawiaturami, skanerem do 30 m, IP65+IP68 — następca MC9300',
     description: `Dla kogo? Zebra MC9450 to flagowy terminal mobilny klasy ultra-rugged z 5G, GPS i wymiennymi klawiaturami, zaprojektowany dla operacji logistycznych wymagających łączności komórkowej poza zasięgiem Wi-Fi — zarządzanie placami kontenerowymi (yard management), porty morskie, inwentaryzacja pojazdów na dużych placach, logistyka terenowa, dystrybucja i operacje cross-dockingowe na zewnątrz budynków.
 
@@ -8846,6 +8856,8 @@ Pełna kompatybilność wsteczna z akcesoriami MC9300: baterie, stacje dokujące
     id: 'zebra-em45',
     slug: 'zebra-em45',
     name: 'Zebra EM45',
+    seoTitle: 'Zebra EM45 Enterprise Mobile — smartfon biznesowy 5G',
+    seoDescription: 'Zebra EM45 — enterprise mobile w formie smartfona, 5G, Wi-Fi 6E, 6,7" 120 Hz, NFC, AI (NPU). EM45 Zebra: COPE, aparat 50 MP, IP68. Komputer mobilny Zebra EM45 od 2 951 zł netto.',
     shortDescription: 'Enterprise mobile w formie smartfona — 6,7" FHD+ 120 Hz, 5G, Wi-Fi 6E, aparat 50 MP, NFC, AI (NPU), COPE',
     description: `Dla kogo? Zebra EM45 Enterprise Mobile to korporacyjny komputer mobilny nowej generacji w formie smukłego smartfona (10,7 mm grubości, 243 g), zaprojektowany dla menedżerów sklepów, sprzedawców, kurierów, serwisantów terenowych i koordynatorów logistyki — pracowników, którzy potrzebują jednego urządzenia łączącego niezawodność Zebra z estetyką i intuicyjnością konsumenckiego smartfona.
 
@@ -9036,6 +9048,8 @@ Zebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCo
     id: 'zebra-tc22',
     slug: 'zebra-tc22',
     name: 'Zebra TC22',
+    seoTitle: 'Terminal mobilny Zebra TC22 — następca TC21, Wi-Fi 6E',
+    seoDescription: 'Zebra TC22 — terminal mobilny, następca TC21. TC22 Zebra: Wi-Fi 6E, ekran 6", skaner 1D/2D, IP68, Android. Kolektor danych do inwentaryzacji Zebra TC22 od 2 417 zł netto.',
     shortDescription: 'Komputer mobilny Wi-Fi 6E z ekranem 6" i skanerem 1D/2D — następca TC21',
     description: `Dla kogo? Zebra TC22 to ekonomiczny terminal mobilny klasy enterprise, zaprojektowany dla małych i średnich firm szukających wytrzymałego urządzenia do pracy w sklepie, magazynie, aptece lub przychodni — w cenie zbliżonej do smartfona konsumenckiego, ale z wieloletnią żywotnością i profesjonalnym skanerem kodów kreskowych.
 
@@ -9271,6 +9285,8 @@ Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC27. Szczegółowa d
     id: 'zebra-tc27',
     slug: 'zebra-tc27',
     name: 'Zebra TC27',
+    seoTitle: 'Terminal mobilny Zebra TC27 — następca TC26, 5G z GPS',
+    seoDescription: 'Zebra TC27 — terminal mobilny 5G, następca TC26. TC27 Zebra: 5G/LTE, GPS, ekran 6", skaner 1D/2D, IP68. Komputer mobilny do pracy w terenie Zebra TC27 od 2 690 zł netto.',
     shortDescription: 'Komputer mobilny 5G/Wi-Fi 6E z GPS — następca TC26, do pracy w terenie',
     description: `Dla kogo? Zebra TC27 to terminal mobilny klasy enterprise z łącznością 5G/4G LTE i GPS, zaprojektowany dla pracowników terenowych — kurierów, serwisantów, przedstawicieli handlowych, inspektorów — którzy potrzebują wytrzymałego urządzenia ze skanerem kodów kreskowych i stałym dostępem do systemów firmowych poza zasięgiem Wi-Fi.
 
@@ -9509,6 +9525,8 @@ Pakiet Mobility DNA Professional w cenie: DataWedge, StageNow, Device Tracker, L
     id: 'zebra-tc53',
     slug: 'zebra-tc53',
     name: 'Zebra TC53',
+    seoTitle: 'Terminal mobilny Zebra TC53 — następca TC52, WiFi 6E',
+    seoDescription: 'Zebra TC53 — terminal mobilny, następca TC52. TC53 Zebra: WiFi 6E, Qualcomm 6490, ekran 6" FHD, IP68, skaner 12 m. Kolektor danych magazynowy Zebra TC53 od 6 418 zł netto.',
     shortDescription: 'Wydajny terminal mobilny z WiFi 6E, ekranem 6" FHD i procesorem Qualcomm 6490 — następca TC52',
     description: `Dla kogo? Zebra TC53 to flagowy terminal mobilny klasy enterprise, zaprojektowany dla dużych magazynów, centrów dystrybucyjnych, fabryk i sieci handlowych, które potrzebują maksymalnej wydajności skanowania, łączności WiFi 6E i wieloletniej niezawodności w warunkach intensywnej eksploatacji — z budżetem na urządzenie klasy premium.
 
@@ -9632,6 +9650,8 @@ Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC58. Szczegółowa d
     id: 'zebra-tc58',
     slug: 'zebra-tc58',
     name: 'Zebra TC58',
+    seoTitle: 'Terminal mobilny Zebra TC58 — następca TC57, 5G/LTE',
+    seoDescription: 'Zebra TC58 — terminal mobilny 5G, następca TC57. TC58 Zebra: 5G/LTE, GPS, WiFi 6E, Qualcomm 6490, ekran 6" FHD, IP68. Komputer mobilny 5G Zebra TC58 od 6 751 zł netto.',
     shortDescription: 'Terminal mobilny 5G z WiFi 6E, ekranem 6" FHD i procesorem Qualcomm 6490 — wersja TC53 z łącznością komórkową',
     description: `Dla kogo? Zebra TC58 to flagowy terminal mobilny z łącznością 5G/4G LTE, zaprojektowany dla firm kurierskich, serwisantów terenowych, pracowników magazynów rozproszonych i operatorów logistycznych, którzy potrzebują niezawodnej łączności komórkowej poza zasięgiem WiFi — z budżetem na urządzenie klasy enterprise.
 
@@ -9827,6 +9847,8 @@ Pakiet Mobility DNA Professional: DataWedge, StageNow, Device Tracker, LifeGuard
     id: 'zebra-tc53e',
     slug: 'zebra-tc53e',
     name: 'Zebra TC53e',
+    seoTitle: 'Terminal mobilny Zebra TC53e — RFID UHF, WiFi 6E, essential',
+    seoDescription: 'Zebra TC53e — terminal mobilny z RFID UHF i WiFi 6E, nowa generacja TC53. TC53e Zebra: Qualcomm 4490, ekran 6", IP68, EPEAT Gold. Kolektor danych RFID Zebra TC53e od 4 926 zł netto.',
     shortDescription: 'Terminal mobilny WiFi 6E z procesorem Qualcomm 4490, ekranem 6" FHD+ i opcjonalnym RFID UHF — następca TC53 w wersji ekonomicznej',
     description: `Dla kogo? Zebra TC53e to terminal mobilny klasy enterprise z WiFi 6E i opcjonalnym wbudowanym RFID UHF, zaprojektowany dla magazynów, centrów dystrybucyjnych, sieci handlowych i szpitali, które szukają niezawodnego urządzenia z długim cyklem życia — w przystępniejszej cenie niż flagowy TC53.
 
@@ -10027,6 +10049,8 @@ Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC58e. Akcesoria Shar
     id: 'zebra-tc58e',
     slug: 'zebra-tc58e',
     name: 'Zebra TC58e',
+    seoTitle: 'Terminal mobilny Zebra TC58e — 5G essential, WiFi 6E',
+    seoDescription: 'Zebra TC58e — terminal mobilny 5G essential z WiFi 6E. TC58e Zebra: 5G/LTE, GPS, Qualcomm 4490, ekran 6", IP68, barometr. Komputer mobilny 5G Zebra TC58e od 5 337 zł netto.',
     shortDescription: 'Terminal mobilny 5G z WiFi 6E, ekranem 6" FHD+ i procesorem Qualcomm 4490 — wersja TC53e z łącznością komórkową 5G/LTE',
     description: `Dla kogo? Zebra TC58e to terminal mobilny z łącznością 5G/4G LTE i WiFi 6E, zaprojektowany dla firm kurierskich, serwisantów terenowych, pracowników magazynów rozproszonych i operatorów logistycznych, którzy potrzebują niezawodnej łączności komórkowej poza zasięgiem WiFi — w przystępniejszej cenie niż flagowy TC58.
 
@@ -10239,6 +10263,8 @@ Bluetooth 5.3, NFC, WiFi 6E 2×2 MU-MIMO, kamera 16 MP (tył) i 8 MP (przód), U
     slug: 'zebra-tc501',
     name: 'Zebra TC501',
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc501.html',
+    seoTitle: 'Terminal mobilny Zebra TC501 — AI, RFID, Wi-Fi 7, AMOLED',
+    seoDescription: 'Zebra TC501 — terminal mobilny nowej generacji z AI, RFID UHF i Wi-Fi 7. TC501 Zebra: AMOLED 1500 nit, następca TC53, Android 15. Komputer mobilny Zebra TC501 od 3 730 zł netto.',
     shortDescription: 'Terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6" AMOLED 1500 nit — następca TC52/TC53',
     description: `Dla kogo? Zebra TC501 to flagowy terminal mobilny nowej generacji, zaprojektowany jako następca TC52/TC53 dla firm, które potrzebują najnowszej technologii AI, RFID i Wi-Fi 7 w jednym urządzeniu — od dużych magazynów i centrów logistycznych, przez sieci handlowe, po szpitale i zakłady produkcyjne.\n\nWydajność i AI na pierwszej linii. Procesor Qualcomm Dragonwing Q-6690 (8 rdzeni, do 2,9 GHz) z dedykowanym silnikiem AI (NPU) zapewnia 300% więcej mocy obliczeniowej niż TC53. Przetwarzanie AI odbywa się lokalnie — rozpoznawanie produktów, weryfikacja etykiet, OCR bez chmury, zgodnie z RODO. Pamięć 8 GB/128 GB lub 12 GB/256 GB (UFS 3.1) z opcją rozszerzenia microSD do 2 TB.\n\nEkran AMOLED — pierwszy w klasie enterprise. Wyświetlacz 6" Full HD+ (2160×1080) z matrycą AMOLED i jasnością 1500 nitów — 2,5× jaśniejszy niż IPS w TC53 (600 nit). Doskonale czytelny w pełnym słońcu, z głęboką czernią zmniejszającą zmęczenie oczu na długich zmianach. Szkło Corning Gorilla Glass Victus, panel dotykowy reagujący w rękawicach i z mokrymi palcami.\n\nZintegrowany RFID UHF — bez dodatkowych modułów. TC501 to pierwszy terminal z serii TC5x z wbudowanym czytnikiem RFID UHF w KAŻDEJ konfiguracji. Odczyt ponad 200 tagów na sekundę z zasięgu do 2 metrów. Do długiego zasięgu (9+ m) można podłączyć sled RFD40/RFD90. W TC53 RFID wymagał osobnego modułu — teraz jest w standardzie.\n\nTrzy silniki skanowania do każdego zadania. SR500 (Standard Range) — skanowanie z bliska, kasa, lada, kompletacja. SR560 — ulepszony finder 2D, szybsze dekodowanie uszkodzonych kodów. AC670 (Advanced Color) — zasięg do 30 m, kolorowy imager, skanuje kody na najwyższych regałach bez drabiny. Kamera tylna 50 MP z opcją ultrawide 13 MP do dokumentacji fotograficznej.\n\nŁączność przyszłości. Wi-Fi 7 (802.11be) z 2×2 MU-MIMO i MLO — przepustowość 2× wyższa niż Wi-Fi 6E, stabilność w gęstych środowiskach z setkami urządzeń. Bluetooth 6.0 z większym zasięgiem. NFC do identyfikacji pracowników i tagów. Wersje WAN (TC501G) dodają 5G Release 17, dual eSIM, CBRS i GPS z potrójną bandą GNSS.\n\nWytrzymałość klasy enterprise. Obudowa IP68+IP65 — pyłoszczelna, wodoodporna (zanurzenie + strumień pod ciśnieniem). Upadki z 2,4 m na beton (2,7 m z rugged boot) wg MIL-STD-810H. 2–4× więcej tumbles niż TC53. Temperatura pracy od -20°C do +50°C. Bateria 5000 mAh (standard) lub 7240 mAh (rozszerzona), wymienna hot-swap — szybkie ładowanie 0→70% w 45 minut.\n\nAndroid 15 z najdłuższym wsparciem. Gwarancja aktualizacji do 4 kolejnych wersji systemu. LifeGuard for Android — comiesięczne łatki bezpieczeństwa OTA. Mobility DNA w cenie: StageNow, Device Tracker, Enterprise Home Screen. Kompatybilny z MDM: SOTI, Intune, VMware, Zebra Cloud.\n\nSzczegółowa specyfikacja, karta katalogowa i instrukcja obsługi w języku polskim dostępne na stronie serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
@@ -10566,6 +10592,8 @@ Bluetooth 5.3, NFC, WiFi 6E 2×2 MU-MIMO, kamera 16 MP (tył) i 8 MP (przód), U
     slug: 'zebra-tc701',
     name: 'Zebra TC701',
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc701.html',
+    seoTitle: 'Terminal mobilny Zebra TC701 — ultra-rugged, AI, Wi-Fi 7',
+    seoDescription: 'Zebra TC701 — terminal ultra-rugged z AI i Wi-Fi 7, następca TC73. TC701 Zebra: RFID UHF, AMOLED 1500 nit, upadki 3 m, -20°C. Kolektor danych ultra-rugged Zebra TC701 od 4 017 zł netto.',
     shortDescription: 'Ultra-wytrzymały terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6" AMOLED 1500 nit — następca TC72/TC77',
     description: `Dla kogo? Zebra TC701 to ultra-wytrzymały (ultra-rugged) terminal mobilny nowej generacji, zaprojektowany jako następca TC72/TC77 dla firm pracujących w najtrudniejszych warunkach — chłodnie, doki załadunkowe, magazyny mrożone, porty, kopalnie, budowy i praca outdoorowa w ekstremalnych temperaturach od -20°C do +50°C.
 
@@ -10876,6 +10904,8 @@ Wersja enterprise (lżejsza, upadki 2,4 m, tańsza): Zebra TC501. Szczegółowa 
     slug: 'zebra-tc73',
     name: 'Zebra TC73',
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc73-tc78.html',
+    seoTitle: 'Terminal mobilny Zebra TC73 — ultra-rugged, upadki 3 m, WiFi 6E',
+    seoDescription: 'Zebra TC73 — terminal ultra-rugged WiFi 6E, upadki z 3 m na beton. TC73 Zebra: Qualcomm 6490, ekran 6" FHD, IP68, -20°C do +50°C. Komputer mobilny ultra-rugged Zebra TC73 od 7 044 zł netto.',
     shortDescription: 'Ultra-wytrzymały terminal mobilny WiFi 6E z procesorem Qualcomm 6490, ekranem 6" FHD+ i odpornością na upadki z 3 m — wersja ultra-rugged TC53',
     description: `Dla kogo? Zebra TC73 to ultra-wytrzymały terminal mobilny klasy ultra-rugged, zaprojektowany dla ciężkiej produkcji, doków załadunkowych, chłodni, magazynów mrożonych, warsztatów i prac outdoorowych, gdzie urządzenia narażone są na upadki, wibracje, skrajne temperatury i kontakt z wodą — z budżetem na urządzenie klasy premium o najwyższej wytrzymałości.
 
@@ -11034,6 +11064,8 @@ Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC78. Wersja enterpri
     slug: 'zebra-tc78',
     name: 'Zebra TC78',
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc73-tc78.html',
+    seoTitle: 'Terminal mobilny Zebra TC78 — ultra-rugged 5G, upadki 3 m',
+    seoDescription: 'Zebra TC78 — terminal ultra-rugged 5G z WiFi 6E, upadki z 3 m. TC78 Zebra: 5G/LTE, GPS, IP68, Qualcomm 6490, Qi charging. Kolektor danych 5G ultra-rugged Zebra TC78 od 7 742 zł netto.',
     shortDescription: 'Ultra-wytrzymały terminal mobilny 5G/LTE z WiFi 6E, ekranem 6" FHD+ i odpornością na upadki z 3 m — wersja ultra-rugged TC58',
     description: `Dla kogo? Zebra TC78 to ultra-wytrzymały terminal mobilny z łącznością 5G/4G LTE klasy ultra-rugged, zaprojektowany dla serwisantów terenowych, kierowców, pracowników doków załadunkowych, inspektorów i operatorów logistycznych pracujących w ekstremalnych warunkach — na deszczu, w mrozie, na budowie — gdzie urządzenie musi wytrzymać upadki z dużej wysokości, wibracje i kontakt z wodą, a jednocześnie zapewniać łączność komórkową poza zasięgiem WiFi.
 
@@ -11216,6 +11248,8 @@ Wersja bliźniacza WiFi-only: Zebra TC73. Wersja enterprise (lżejsza, tańsza, 
     slug: 'zebra-mc2200',
     name: 'Zebra MC2200',
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc2200-mc2700.html',
+    seoTitle: 'Terminal mobilny Zebra MC2200 — tani kolektor danych, Wi-Fi',
+    seoDescription: 'Zebra MC2200 — tani terminal mobilny z klawiaturą fizyczną i skanerem 2D. MC2200 Zebra: Wi-Fi, IP65, klawiatura 34-key, Android. Kolektor danych do inwentaryzacji Zebra MC2200 od 2 261 zł netto.',
     shortDescription: 'Kompaktowy terminal mobilny z klawiaturą fizyczną 34-key i skanerem SE4100 — Wi-Fi, IP65',
     description: `Dla kogo? Zebra MC2200 to wytrzymały terminal mobilny w formacie „brick" z klawiaturą fizyczną, zaprojektowany dla małych i średnich firm potrzebujących niezawodnego narzędzia do zbierania danych w magazynie, sklepie, aptece lub na linii produkcyjnej — w przystępnej cenie, ale z niezawodnością klasy enterprise i wieloletnią żywotnością.
 
@@ -11389,6 +11423,8 @@ Wersja z łącznością LTE/GPS do pracy w terenie: Zebra MC2700. Szczegółowa 
     slug: 'zebra-mc2700',
     name: 'Zebra MC2700',
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc2200-mc2700.html',
+    seoTitle: 'Terminal mobilny Zebra MC2700 — LTE z klawiaturą i GPS',
+    seoDescription: 'Zebra MC2700 — terminal mobilny LTE z klawiaturą fizyczną i GPS. MC2700 Zebra: LTE Cat 6, skaner 2D, IP65, Android. Komputer mobilny do pracy w terenie Zebra MC2700 od 2 680 zł netto.',
     shortDescription: 'Wytrzymały terminal mobilny z klawiaturą fizyczną, LTE Cat 6, GPS i skanerem SE4100',
     description: `Dla kogo? Zebra MC2700 to wytrzymały terminal mobilny w formacie „brick" z klawiaturą fizyczną i łącznością komórkową LTE, zaprojektowany dla firm potrzebujących zbierania danych w terenie — kurierzy, serwisanci, logistyka portowa, kontrola dostaw i praca w polach bez dostępu do Wi-Fi.
 
