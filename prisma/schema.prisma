@@ -251,3 +251,153 @@ model QuoteItem {
 
   marginPercent   Float?
 }
+
+// ---------------------------------------------------------------------------
+// SEO Agent — Enums
+// ---------------------------------------------------------------------------
+
+enum SeoReportStatus {
+  RUNNING
+  COMPLETED
+  FAILED
+}
+
+enum SeoAlertSeverity {
+  CRITICAL
+  WARNING
+  INFO
+}
+
+// ---------------------------------------------------------------------------
+// SEO Agent — SeoReport (główna tabela raportów)
+// ---------------------------------------------------------------------------
+
+model SeoReport {
+  id            String          @id @default(cuid())
+  generatedAt   DateTime        @default(now())
+  periodStart   DateTime
+  periodEnd     DateTime
+  status        SeoReportStatus @default(RUNNING)
+
+  scoreOverall  Int             @default(0)
+  scoreSeo      Int             @default(0)
+  scoreAeo      Int             @default(0)
+  scoreGeo      Int             @default(0)
+  scoreDelta    Int             @default(0)
+  alertsCount   Int             @default(0)
+
+  reportJson    Json?           // Pełny raport JSON (GSC + GA4 + scoring)
+  errorMessage  String?
+
+  metrics       SeoMetricsHistory[]
+  serpPositions SeoSerpPosition[]
+  competitors   SeoCompetitorSnapshot[]
+  alerts        SeoAlert[]
+
+  createdAt     DateTime        @default(now())
+
+  @@index([generatedAt(sort: Desc)])
+  @@index([status])
+}
+
+// ---------------------------------------------------------------------------
+// SEO Agent — SeoMetricsHistory (time-series do wykresów)
+// ---------------------------------------------------------------------------
+
+model SeoMetricsHistory {
+  id               String    @id @default(cuid())
+
+  report           SeoReport @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  reportId         String
+
+  date             DateTime
+  totalClicks      Int?
+  totalImpressions Int?
+  avgCtr           Float?
+  avgPosition      Float?
+  totalSessions    Int?
+  totalConversions Int?
+
+  createdAt        DateTime  @default(now())
+
+  @@index([reportId])
+  @@index([date(sort: Desc)])
+}
+
+// ---------------------------------------------------------------------------
+// SEO Agent — SeoSerpPosition (per keyword per report)
+// ---------------------------------------------------------------------------
+
+model SeoSerpPosition {
+  id                   String    @id @default(cuid())
+
+  report               SeoReport @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  reportId             String
+
+  keyword              String
+  keywordGroup         String?   // "brand", "generic", "comparison"
+  takmaPosition        Int?      // null = nie rankuje
+  competitorPositions  Json?     // {"bcmarket": 5, "aspekt": null, ...}
+  hasRichSnippet       Boolean   @default(false)
+  searchVolume         Int?
+
+  createdAt            DateTime  @default(now())
+
+  @@index([reportId])
+  @@index([keyword, createdAt(sort: Desc)])
+}
+
+// ---------------------------------------------------------------------------
+// SEO Agent — SeoCompetitorSnapshot
+// ---------------------------------------------------------------------------
+
+model SeoCompetitorSnapshot {
+  id              String    @id @default(cuid())
+
+  report          SeoReport @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  reportId        String
+
+  competitor      String
+  url             String
+  title           String?
+  metaDescription String?
+  contentLength   Int?
+  hasPrice        Boolean   @default(false)
+  price           String?
+  hasFaq          Boolean   @default(false)
+  faqCount        Int       @default(0)
+  hasSchema       Boolean   @default(false)
+  schemaTypes     String[]
+  contentHash     String?
+  contentChanged  Boolean   @default(false)
+
+  createdAt       DateTime  @default(now())
+
+  @@index([reportId])
+  @@index([competitor, contentHash])
+}
+
+// ---------------------------------------------------------------------------
+// SEO Agent — SeoAlert
+// ---------------------------------------------------------------------------
+
+model SeoAlert {
+  id          String           @id @default(cuid())
+
+  report      SeoReport        @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  reportId    String
+
+  severity    SeoAlertSeverity
+  category    String           // "ranking", "competitor", "technical", "content", "aeo"
+  title       String
+  description String?
+  action      String?
+
+  isRead      Boolean          @default(false)
+  isResolved  Boolean          @default(false)
+
+  createdAt   DateTime         @default(now())
+
+  @@index([reportId])
+  @@index([isRead, severity])
+}
