@@ -887,8 +887,8 @@ const desktopPrinters: Product[] = [
     slug: 'zebra-zd421t',
     name: 'Zebra ZD421t',
     shortDescription: 'Drukarka termotransferowa biurkowa 4" — następca GK420t',
-    seoTitle: 'Drukarka etykiet Zebra ZD421t | Termotransfer 4" Wi-Fi',
-    seoDescription: 'Zebra ZD421t — drukarka termotransferowa biurkowa 4", następca GK420t. ZD421t Zebra: 203/300 dpi, 152 mm/s, Ethernet, Wi-Fi, MCS. Drukarka Zebra ZD421t od 1 649 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZD421t — następca GK420t, WiFi',
+    seoDescription: 'Zebra ZD421t — termotransferowa drukarka etykiet biurkowa 4", następca GK420t. ZD421t Zebra: Wi-Fi, Ethernet, MCS, 203/300 dpi. Drukarka Zebra ZD421t od 1 649 zł netto.',
     description: `Zebra ZD421t to najlepszy wybór dla firm logistycznych, magazynów i e-commerce, które potrzebują niezawodnej biurkowej drukarki termotransferowej z możliwością rozbudowy o sieć Wi-Fi i Ethernet.
 
 Zebra ZD421t to kompaktowa drukarka biurkowa do etykiet 4-calowych, będąca bezpośrednim następcą popularnych modeli Zebra GK420t i ZD420t. Łączy sprawdzoną niezawodność serii Zebra z nowoczesną architekturą modularną Link-OS, oferując druk termotransferowy i termiczny bezpośredni w rozdzielczości do 300 dpi z prędkością 152 mm/s.
@@ -1195,8 +1195,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd421d',
     name: 'Zebra ZD421d',
     shortDescription: 'Biurkowa drukarka termiczna 4" direct thermal — następca GK420d. 203/300 dpi, do 152 mm/s, modułowa architektura MCS',
-    seoTitle: 'Drukarka etykiet Zebra ZD421d | Termiczna 4" MCS',
-    seoDescription: 'Zebra ZD421d — biurkowa drukarka termiczna 4" direct thermal, następca GK420d. ZD421d Zebra: 203/300 dpi, 152 mm/s, MCS. Drukarka Zebra ZD421d od 1 472 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZD421d — następca GK420d, WiFi',
+    seoDescription: 'Zebra ZD421d — biurkowa drukarka termiczna 4", następca GK420d. ZD421d Zebra: e-commerce, Wi-Fi, MCS, 203/300 dpi, 152 mm/s. Drukarka Zebra ZD421d od 1 472 zł netto.',
     description: `Zebra ZD421d to najlepszy wybór dla firm e-commerce, punktów nadawczych i magazynów, które potrzebują szybkiej biurkowej drukarki termicznej z modułową architekturą i niskim kosztem eksploatacji.
 
 Zebra ZD421d to biurkowa drukarka etykiet typu direct thermal (druk termiczny bezpośredni) — następca sprawdzonych modeli GK420d i ZD420d. Drukuje bez taśmy barwiącej (ribbona), co obniża koszty eksploatacji o 40–50% w porównaniu do modelu termotransferowego ZD421t. Dostępna w rozdzielczości 203 dpi (standard) lub 300 dpi (do bardzo małych kodów 2D), z prędkością druku do 152 mm/s (6 ips) — 50% szybciej niż budżetowy ZD220d.
@@ -1442,8 +1442,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd621t',
     name: 'Zebra ZD621t',
     shortDescription: 'Flagowa drukarka biurkowa 4" z kolorowym LCD, najszybsza w klasie (203 mm/s), obcinacz/odklejak/RFID',
-    seoTitle: 'Drukarka etykiet Zebra ZD621t | Flagowa 4" LCD 203 mm/s',
-    seoDescription: 'Zebra ZD621t — flagowa drukarka termotransferowa biurkowa 4" z LCD 4,3". ZD621t Zebra: 203 mm/s, 203/300 dpi, RFID. Drukarka Zebra ZD621t od 2 264 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZD621t — flagowa biurkowa LCD',
+    seoDescription: 'Zebra ZD621t — najlepsza biurkowa drukarka termotransferowa 4", następca GX420t/GX430t. ZD621t Zebra: flagowa, LCD dotykowy 4,3", RFID. Drukarka Zebra ZD621t od 2 264 zł netto.',
     description: `Zebra ZD621t to najlepszy wybór dla firm drukujących ponad 500 etykiet dziennie, które potrzebują najszybszej biurkowej drukarki termotransferowej z kolorowym ekranem LCD i wbudowanym Ethernet.
 
 Zebra ZD621t to flagowa, premium drukarka etykiet w segmencie biurkowym Zebra, zaprojektowana z myślą o firmach wymagających najwyższej wydajności, niezawodności i zaawansowanych funkcji zarządzania. Jako najszybsza 4-calowa drukarka biurkowa Zebra, ZD621t osiąga prędkość druku do 203 mm/s (8 cali na sekundę) — o 33% szybciej niż ZD421t (152 mm/s) i dwukrotnie szybciej niż budżetowy model ZD220t (102 mm/s). Rozdzielczość 203 dpi w wersji standardowej lub 300 dpi w wersji opcjonalnej zapewnia doskonałą jakość nawet przy bardzo małych kodach kreskowych 2D (QR Code, DataMatrix) i drobnym tekście. Drukarka obsługuje druk termotransferowy z użyciem taśmy barwiącej (ribbon) oraz druk termiczny bezpośredni (direct thermal), co czyni ją najbardziej wszechstronną drukarką biurkową w ofercie Zebra.
@@ -1848,8 +1848,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd621d',
     name: 'Zebra ZD621d',
     shortDescription: 'Najszybsza biurkowa drukarka termiczna Zebra (203 mm/s) z opcjonalnym LCD 4,3", drukiem linerless i modularnym MCS — następca ZD620d i GX420d',
-    seoTitle: 'Drukarka etykiet Zebra ZD621d | Termiczna 4" 203 mm/s',
-    seoDescription: 'Zebra ZD621d — najszybsza biurkowa drukarka termiczna 4", następca ZD620d. ZD621d Zebra: 203 mm/s, linerless, LCD 4,3". Drukarka Zebra ZD621d od 1 944 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZD621d — premium LCD 300 dpi',
+    seoDescription: 'Zebra ZD621d — premium biurkowa drukarka termiczna 4", następca GX420d. ZD621d Zebra: LCD dotykowy 4,3", 300 dpi, linerless, 203 mm/s. Drukarka Zebra ZD621d od 1 944 zł netto.',
     description: `Zebra ZD621d to najlepszy wybór dla firm e-commerce i centrów logistycznych drukujących ponad 500 etykiet dziennie, które potrzebują najszybszej biurkowej drukarki termicznej z kolorowym LCD i obsługą linerless.
 
 Zebra ZD621d to flagowa biurkowa drukarka etykiet pracująca wyłącznie w technologii druku termicznego bezpośredniego (direct thermal) — nie wymaga taśmy barwiącej (ribbona), co oznacza niższy koszt eksploatacji i prostszą obsługę. Jest to najszybsza 4-calowa biurkowa drukarka termiczna Zebra, osiągająca prędkość druku do 203 mm/s (8 cali na sekundę) — o 33% szybciej niż ZD421d (152 mm/s) i dwukrotnie szybciej niż budżetowy model ZD220d (102 mm/s). Rozdzielczość 203 dpi w wersji standardowej lub 300 dpi w wersji opcjonalnej zapewnia doskonałą jakość nawet przy bardzo małych kodach kreskowych 2D (QR Code, DataMatrix) i drobnym tekście na etykietach kurierskich, wysyłkowych i produktowych.
@@ -2183,8 +2183,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd411d',
     name: 'Zebra ZD411d',
     shortDescription: 'Kompaktowa drukarka termiczna 2" direct thermal — następca ZD410 i LP2824. 203/300 dpi, do 152 mm/s, modułowa architektura MCS, Wi-Fi 6',
-    seoTitle: 'Drukarka etykiet Zebra ZD411d | Termiczna 2" 203/300 dpi',
-    seoDescription: 'Zebra ZD411d — kompaktowa drukarka termiczna 2" direct thermal, następca ZD410 i LP2824. ZD411d Zebra: 203/300 dpi, MCS, Wi-Fi 6. Drukarka Zebra ZD411d od 1 238 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZD411d — kompaktowa 2" healthcare',
+    seoDescription: 'Zebra ZD411d — kompaktowa drukarka termiczna 2", apteka, laboratorium, healthcare. ZD411d Zebra: 203/300 dpi, Wi-Fi 6, MCS. Drukarka Zebra ZD411d od 1 238 zł netto.',
     description: `Zebra ZD411d to najlepszy wybór dla aptek, laboratoriów i jubilerów, którzy potrzebują kompaktowej 2-calowej drukarki termicznej do druku małych etykiet z kodami kreskowymi.
 
 Zebra ZD411d to najkompaktniejsza biurkowa drukarka etykiet w rodzinie Zebra — format 2 cale (56 mm szerokości druku) zajmuje na biurku jedynie 220 × 115 mm i waży zaledwie 1 kg. Jest to bezpośredni następca modeli Zebra ZD410 i LP2824 Plus, zaprojektowany do druku małych etykiet z kodami kreskowymi, cenówek, etykiet na fiolki, próbówki laboratoryjne i biżuterię. Drukarka wykorzystuje metodę druku termicznego bezpośredniego (direct thermal) — bez taśmy barwiącej (ribbona), co obniża koszty eksploatacji nawet o 50% w porównaniu do modeli termotransferowych. Dostępna w rozdzielczości 203 dpi (standard) lub 300 dpi (do bardzo małych kodów 2D na probówkach i komponentach elektronicznych), z prędkością druku do 152 mm/s (6 ips).
@@ -2422,8 +2422,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd411t',
     name: 'Zebra ZD411t',
     shortDescription: 'Kompaktowa drukarka termotransferowa 2" — następca TLP2824. 203/300 dpi, do 152 mm/s, trwałe etykiety jubilerskie i przemysłowe, Wi-Fi 6',
-    seoTitle: 'Drukarka etykiet Zebra ZD411t | Termotransfer 2" 300 dpi',
-    seoDescription: 'Zebra ZD411t — kompaktowa drukarka termotransferowa 2", następca TLP2824. ZD411t Zebra: 203/300 dpi, MCS, Wi-Fi 6, taśma żywiczna. Drukarka Zebra ZD411t od 1 686 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZD411t — termotransferowa 2" 300 dpi',
+    seoDescription: 'Zebra ZD411t — termotransferowa drukarka etykiet 2", laboratorium, biżuteria. ZD411t Zebra: 300 dpi, 203/300 dpi, MCS, Wi-Fi 6. Drukarka Zebra ZD411t od 1 686 zł netto.',
     description: `Zebra ZD411t to najlepszy wybór dla jubilerów, producentów elektroniki i firm telekomunikacyjnych, które potrzebują kompaktowej drukarki termotransferowej 2" do trwałych małych etykiet z taśmą żywiczną.
 
 Zebra ZD411t to kompaktowa biurkowa drukarka etykiet termotransferowa w formacie 2 cali (56 mm szerokości druku) — oficjalny następca legendarnego modelu Zebra TLP2824 Plus. Łączy sprawdzoną niezawodność Zebra z nowoczesną architekturą modularną i platformą Print DNA, oferując druk termotransferowy i termiczny bezpośredni w rozdzielczości do 300 dpi z prędkością do 152 mm/s. Jako drukarka termotransferowa, ZD411t drukuje z użyciem taśmy barwiącej (ribbona) — obraz jest przenoszony z taśmy na etykietę pod wpływem ciepła z głowicy, dzięki czemu wydruki są trwałe i odporne na ścieranie, wilgoć, UV i chemikalia.
@@ -2689,8 +2689,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd220d',
     name: 'Zebra ZD220d',
     shortDescription: 'Najtańsza 4-calowa drukarka termiczna Zebra — druk direct thermal bez taśmy barwiącej, idealnie do etykiet kurierskich i wysyłkowych',
-    seoTitle: 'Drukarka etykiet Zebra ZD220d | Termiczna 4" od 650 zł',
-    seoDescription: 'Zebra ZD220d — najtańsza drukarka termiczna 4" direct thermal. ZD220d Zebra: 203 dpi, 102 mm/s, USB, OpenACCESS. Drukarka Zebra ZD220d od 650 zł netto. Następca GC420d.',
+    seoTitle: 'Drukarka etykiet Zebra ZD220d — najtańsza termiczna 4"',
+    seoDescription: 'Zebra ZD220d — najtańsza drukarka etykiet termiczna 4", tania drukarka kodów kreskowych USB. ZD220d Zebra: 203 dpi, 102 mm/s. Drukarka Zebra ZD220d od 650 zł netto.',
     description: `Zebra ZD220d to najlepszy wybór dla małych firm i startupów szukających niezawodnej biurkowej drukarki etykiet termicznych w przystępnej cenie.
 
 Zebra ZD220d to biurkowa drukarka etykiet pracująca wyłącznie w technologii druku termicznego bezpośredniego (direct thermal). Jest to najtańsze urządzenie w ofercie Zebra Technologies drukujące etykiety o szerokości do 4 cali, zaprojektowane z myślą o firmach e-commerce, punktach nadawczych paczek, sklepach detalicznych i małych magazynach, gdzie dominującym zastosowaniem jest druk etykiet wysyłkowych, kurierskich i cenowych. W odróżnieniu od siostrzanego modelu ZD220t (wersja termotransferowa), ZD220d nie wymaga taśmy barwiącej (ribbona) — obraz powstaje bezpośrednio na papierze termicznym pod wpływem ciepła z głowicy drukującej. Eliminacja ribbona oznacza niższy koszt eksploatacji na etykietę, prostszą obsługę (jedynym materiałem eksploatacyjnym jest rolka etykiet) i szybszą wymianę mediów.
@@ -2886,8 +2886,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd230d',
     name: 'Zebra ZD230d',
     shortDescription: 'Drukarka termiczna 4" direct thermal — następca ZD220d z szybszym drukiem (152 mm/s), opcją gilotyny, odklejaka, Ethernet, Bluetooth i Wi-Fi',
-    seoTitle: 'Drukarka etykiet Zebra ZD230d | Termiczna 4" 152 mm/s',
-    seoDescription: 'Zebra ZD230d — drukarka termiczna 4" direct thermal, następca ZD220d. ZD230d Zebra: 152 mm/s, gilotyna, Ethernet, Wi-Fi. Drukarka Zebra ZD230d od 1 087 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZD230d — do paczek i kurierów',
+    seoDescription: 'Zebra ZD230d — drukarka etykiet kurierskich, do allegro, InPost, DPD, DHL. ZD230d Zebra: drukarka do listów przewozowych, Ethernet, 152 mm/s. Od 1 087 zł netto.',
     description: `Zebra ZD230d to najlepszy wybór dla firm e-commerce i sklepów detalicznych, które potrzebują szybkiej drukarki termicznej z opcją Ethernet i gilotyny w przystępnej cenie.
 
 Zebra ZD230d to biurkowa drukarka etykiet pracująca wyłącznie w technologii druku termicznego bezpośredniego (direct thermal) — oficjalny następca popularnego modelu Zebra ZD220d. W porównaniu do poprzednika, ZD230d oferuje o 50% wyższą prędkość druku (152 mm/s vs 102 mm/s), znacznie bogatszy wybór interfejsów komunikacyjnych (USB, Ethernet, Bluetooth, Wi-Fi) oraz opcje gilotyny (cutter) i odklejaka (peeler/dispenser), które wcześniej nie były dostępne w tej klasie cenowej. Drukarka termiczna ZD230d nie wymaga taśmy barwiącej (ribbona) — obraz powstaje bezpośrednio na papierze termicznym pod wpływem ciepła z głowicy drukującej. Eliminacja ribbona oznacza niższy koszt eksploatacji na etykietę, prostszą obsługę i szybszą wymianę mediów. ZD230d to idealne rozwiązanie do druku etykiet kurierskich, wysyłkowych i cenowych w firmach e-commerce, punktach nadawczych paczek, sklepach detalicznych i małych magazynach.
@@ -3133,8 +3133,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd220t',
     name: 'Zebra ZD220t',
     shortDescription: 'Najtańsza 4-calowa drukarka etykiet termotransferowa Zebra — następca GC420t',
-    seoTitle: 'Drukarka etykiet Zebra ZD220t | Termotransfer 4"',
-    seoDescription: 'Zebra ZD220t — najtańsza drukarka termotransferowa 4". ZD220t Zebra: 203 dpi, 102 mm/s, USB, ribbon 74 m. Drukarka Zebra ZD220t od 639 zł netto. Następca GC420t.',
+    seoTitle: 'Drukarka etykiet Zebra ZD220t — najtańsza termotransferowa',
+    seoDescription: 'Zebra ZD220t — najtańsza drukarka termotransferowa 4" USB. ZD220t Zebra: 203 dpi, tania drukarka termotransferowa, ribbon 74 m. Drukarka Zebra ZD220t od 639 zł netto.',
     description: `Zebra ZD220t to najlepszy wybór dla małych firm szukających najtańszej drukarki termotransferowej Zebra do trwałych etykiet produktowych i magazynowych.
 
 Zebra ZD220t to biurkowa drukarka etykiet termotransferowa, która stanowi oficjalnego następcę popularnego modelu Zebra GC420t. Jako najtańsza 4-calowa drukarka termotransferowa w ofercie Zebra, ZD220t łączy niezawodność i jakość wykonania charakterystyczną dla marki Zebra z ceną dostępną nawet dla najmniejszych firm. Drukarka obsługuje zarówno druk termotransferowy z użyciem taśmy barwiącej (woskowej, woskowo-żywicznej lub żywicznej), jak i druk termiczny bezpośredni — co czyni ją wszechstronnym narzędziem do tworzenia etykiet z kodami kreskowymi, etykiet kurierskich, metek produktowych i oznaczeń magazynowych.
@@ -3390,8 +3390,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd230t',
     name: 'Zebra ZD230t',
     shortDescription: 'Drukarka termotransferowa 4" — następca ZD220t z szybszym drukiem (152 mm/s), taśmą 300 m, opcją Ethernet, Bluetooth i Wi-Fi',
-    seoTitle: 'Drukarka etykiet Zebra ZD230t | Termotransfer 4" 300 m',
-    seoDescription: 'Zebra ZD230t — drukarka termotransferowa 4", następca ZD220t. ZD230t Zebra: 152 mm/s, ribbon 300 m, Ethernet, Wi-Fi, gilotyna. Drukarka Zebra ZD230t od 1 135 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZD230t — termotransferowa Ethernet',
+    seoDescription: 'Zebra ZD230t — drukarka termotransferowa biurkowa sieciowa 4", Ethernet. ZD230t Zebra: 203 dpi, ribbon 300 m, 152 mm/s. Drukarka Zebra ZD230t od 1 135 zł netto.',
     description: `Zebra ZD230t to najlepszy wybór dla firm szukających szybkiej drukarki termotransferowej z taśmą 300 m i opcją Ethernet w klasie cenowej poniżej 1500 zł.
 
 Zebra ZD230t to biurkowa drukarka etykiet termotransferowa — oficjalny następca popularnego modelu Zebra ZD220t. W porównaniu do poprzednika, ZD230t oferuje o 50% wyższą prędkość druku (152 mm/s vs 102 mm/s), czterokrotnie większą pojemność taśmy barwiącej (300 m vs 74 m na wałku 1 cala zamiast 0,5 cala), znacznie bogatszy wybór interfejsów komunikacyjnych (USB, Ethernet, Bluetooth, Wi-Fi) oraz opcje gilotyny (cutter) i odklejaka (peeler/dispenser). Jako drukarka termotransferowa, ZD230t drukuje z użyciem taśmy barwiącej (ribbona) — obraz jest przenoszony z taśmy na etykietę pod wpływem ciepła z głowicy drukującej, dzięki czemu wydruki są odporne na ścieranie, wilgoć, promienie UV i działanie chemikaliów. ZD230t obsługuje również tryb druku termicznego bezpośredniego (direct thermal) bez taśmy barwiącej, co czyni ją wszechstronnym narzędziem do każdego rodzaju etykiet.
@@ -3699,8 +3699,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd510-hc',
     name: 'Zebra ZD510-HC',
     shortDescription: 'Biurkowa drukarka opasek identyfikacyjnych 300 dpi — ZPL, Link-OS, Ethernet, zasilacz medyczny IEC 60601-1',
-    seoTitle: 'Drukarka opasek Zebra ZD510-HC | Szpitalna 300 dpi',
-    seoDescription: 'Zebra ZD510-HC — drukarka opasek identyfikacyjnych dla szpitali. ZD510-HC Zebra: 300 dpi, kartridże Z-Band, HIPAA, IEC 60601-1. Drukarka Zebra ZD510-HC od 2 674 zł netto.',
+    seoTitle: 'Drukarka opasek Zebra ZD510-HC — szpitalna 300 dpi',
+    seoDescription: 'Zebra ZD510-HC — drukarka opasek szpitalnych i identyfikacyjnych, drukarka opaski pacjenta. ZD510-HC Zebra: Z-Band, 300 dpi, healthcare. Od 2 674 zł netto.',
     description: `Zebra ZD510-HC to najlepszy wybór dla szpitali, klinik i laboratoriów, które potrzebują niezawodnej drukarki opasek identyfikacyjnych z certyfikatem medycznym i integracją z systemami ADT.
 
 Następca popularnego modelu HC100 — jedyna dedykowana drukarka opasek Zebra nowej generacji. Drukuje termicznie na opaski Z-Band Direct (dorosły, dziecko, niemowlę), Z-Band UltraSoft i Z-Band Fun w rozdzielczości 300 dpi z prędkością do 51 mm/s (healthcare) lub 102 mm/s (Z-Band Fun/eventy).
@@ -3897,8 +3897,8 @@ const industrialLightPrinters: Product[] = [
     slug: 'zebra-zt231',
     name: 'Zebra ZT231',
     shortDescription: 'Drukarka przemysłowa 4" z kolorowym ekranem dotykowym 4,3", metalową konstrukcją i opcjonalnym RFID UHF — następca ZT230',
-    seoTitle: 'Drukarka etykiet Zebra ZT231 | Przemysłowa 4" RFID LCD',
-    seoDescription: 'Zebra ZT231 — przemysłowa drukarka etykiet 4" z ekranem dotykowym 4,3", następca ZT230. ZT231 Zebra: 304 mm/s, RFID UHF. Drukarka Zebra ZT231 od 2 551 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZT231 — półprzemysłowa RFID LCD',
+    seoDescription: 'Zebra ZT231 — półprzemysłowa drukarka etykiet do logistyki, RFID, LCD dotykowy 4,3". ZT231 Zebra: 304 mm/s, ekran dotykowy. Drukarka Zebra ZT231 od 2 551 zł netto.',
     description: `Zebra ZT231 to najlepszy wybór dla firm produkcyjnych i magazynów przechodzących z drukarek biurkowych na przemysłowe, które potrzebują kompaktowej drukarki z ekranem dotykowym i metalową konstrukcją.
 
 Zebra ZT231 to drukarka przemysłowa klasy light-industrial zaprojektowana jako bezpośredni następca popularnego modelu ZT230. Łączy kompaktowe wymiary (432 × 241 × 279 mm) z wytrzymałą metalową ramą i metalowymi obudowami, zapewniając trwałość na poziomie klasy przemysłowej przy jednoczesnej oszczędności przestrzeni na stanowisku pracy. Dwuskrzydłowe drzwi mediów (bi-fold) wymagają jedynie 10 cm wolnej przestrzeni nad drukarką do otwarcia — idealne rozwiązanie do ciasnych pomieszczeń produkcyjnych i magazynowych.
@@ -4151,8 +4151,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zt111',
     name: 'Zebra ZT111',
     shortDescription: 'Przemysłowa drukarka etykiet entry-level 4" — metalowa konstrukcja, 254 mm/s, następca ZT220 i S4M. Idealna do magazynu i produkcji',
-    seoTitle: 'Drukarka etykiet Zebra ZT111 | Przemysłowa 4" entry',
-    seoDescription: 'Zebra ZT111 — przemysłowa drukarka etykiet entry-level 4", następca ZT220 i S4M. ZT111 Zebra: 254 mm/s, metalowa konstrukcja, Link-OS. Drukarka Zebra ZT111 od 2 081 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZT111 — najtańsza przemysłowa 4"',
+    seoDescription: 'Zebra ZT111 — najtańsza drukarka przemysłowa do małego magazynu, drukarka kodów kreskowych 203/300 dpi. ZT111 Zebra: metalowa, 254 mm/s. Drukarka Zebra ZT111 od 2 081 zł netto.',
     description: `Zebra ZT111 to najlepszy wybór dla firm przechodzących z drukarek biurkowych na przemysłowe, które potrzebują metalowej konstrukcji i prędkości 254 mm/s w przystępnej cenie.
 
 Zebra ZT111 to przemysłowa drukarka etykiet entry-level zaprojektowana jako pomost między drukarkami biurkowymi a pełnoprzemysłowymi. Metalowa rama i plastikowe obudowy zapewniają trwałość na poziomie klasy przemysłowej, a kompaktowe wymiary (432 × 241 × 279 mm) pozwalają zmieścić ją w przestrzeniach, gdzie większe drukarki przemysłowe nie wchodzą w grę. ZT111 jest bezpośrednim następcą modeli Zebra ZT220, S4M i S600, oferując pełną kompatybilność wsteczną z językami ZPL II i EPL2 — istniejące szablony etykiet działają bez zmian.
@@ -4391,8 +4391,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zt411',
     name: 'Zebra ZT411',
     shortDescription: 'Przemysłowa drukarka etykiet 4" z ekranem dotykowym 4,3" — następca ZT410. 203/300/600 dpi, do 356 mm/s, RFID opcja, Link-OS',
-    seoTitle: 'Drukarka etykiet Zebra ZT411 | 4" 356 mm/s RFID',
-    seoDescription: 'Zebra ZT411 — przemysłowa drukarka etykiet 4" z ekranem dotykowym, następca ZT410. ZT411 Zebra: 203/300/600 dpi, do 356 mm/s, RFID. Drukarka Zebra ZT411 od 5 132 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZT411 — następca ZT410, RFID 600 dpi',
+    seoDescription: 'Zebra ZT411 — drukarka przemysłowa, następca ZT410. ZT411 Zebra: RFID UHF, 600 dpi, linerless, do WMS, 356 mm/s. Drukarka etykiet Zebra ZT411 od 5 132 zł netto.',
     description: `Zebra ZT411 to najlepszy wybór dla zakładów produkcyjnych i centrów logistycznych wymagających wytrzymałej drukarki etykiet przemysłowej klasy z rozdzielczością 203/300/600 dpi.
 
 Zebra ZT411 to przemysłowa drukarka etykiet klasy mid-range z kolorowym ekranem dotykowym 4,3" — bezpośredni następca legendarnego modelu Zebra ZT410. Zaprojektowana do intensywnej pracy w magazynach, centrach dystrybucyjnych i na liniach produkcyjnych, ZT411 łączy wytrzymałą metalową konstrukcję z intuicyjnym interfejsem dotykowym i platformą zarządzania Link-OS. Dostępna w trzech rozdzielczościach: 203 dpi (standard logistyczny, 356 mm/s), 300 dpi (drobne kody 2D i etykiety cenowe, 254 mm/s) i 600 dpi (mikro-etykiety elektroniczne i jubilerskie, 152 mm/s).
@@ -4652,8 +4652,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zt421',
     name: 'Zebra ZT421',
     shortDescription: 'Przemysłowa drukarka etykiet 6" z ekranem dotykowym 4,3" — następca ZT420. 203/300 dpi, do 305 mm/s, RFID opcja, Link-OS',
-    seoTitle: 'Drukarka etykiet Zebra ZT421 | Przemysłowa 6" 305 mm/s',
-    seoDescription: 'Zebra ZT421 — przemysłowa drukarka etykiet 6" (168 mm), następca ZT420. ZT421 Zebra: 305 mm/s, etykiety paletowe GS1, RFID UHF. Drukarka Zebra ZT421 od 9 416 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZT421 — przemysłowa 6" RFID',
+    seoDescription: 'Zebra ZT421 — drukarka etykiet 6 cali do dużych etykiet i etykiet paletowych, RFID UHF. ZT421 Zebra: szerokie etykiety 168 mm, GS1. Drukarka Zebra ZT421 od 9 416 zł netto.',
     description: `Zebra ZT421 to najlepszy wybór dla centrów dystrybucyjnych i magazynów potrzebujących szerokoformatowej drukarki przemysłowej 6" do etykiet paletowych GS1-128 i oznaczeń compliance.
 
 Zebra ZT421 to przemysłowa drukarka etykiet klasy mid-range o szerokości druku 6,6" (168 mm) — bezpośredni następca modelu Zebra ZT420 i szersza wersja drukarki ZT411. Zaprojektowana do druku szerokich etykiet paletowych, logistycznych i compliance labels, ZT421 łączy wytrzymałą metalową konstrukcję z kolorowym ekranem dotykowym 4,3" i platformą zarządzania Link-OS. Dostępna w dwóch rozdzielczościach: 203 dpi (standard logistyczny, 305 mm/s) i 300 dpi (drobne kody 2D i etykiety produktowe, 305 mm/s).
@@ -4895,8 +4895,8 @@ const industrialPrinters: Product[] = [
     slug: 'zebra-zt510',
     name: 'Zebra ZT510',
     shortDescription: 'Przemysłowa drukarka etykiet 4" klasy ekonomicznej — następca 105SLPlus. 203/300 dpi, do 305 mm/s, NFC/Print Touch, Link-OS, praca 24/7',
-    seoTitle: 'Drukarka etykiet Zebra ZT510 | Przemysłowa 4" 24/7',
-    seoDescription: 'Zebra ZT510 — przemysłowa drukarka etykiet 4" 24/7, następca 105SLPlus. ZT510 Zebra: 305 mm/s, metalowa, NFC, Link-OS. Drukarka Zebra ZT510 od 8 490 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZT510 — przemysłowa 24/7 produkcja',
+    seoDescription: 'Zebra ZT510 — drukarka etykiet 24/7 do produkcji ciągłej, następca 105SLPlus. ZT510 Zebra: 305 mm/s, metalowa, NFC, Link-OS. Drukarka Zebra ZT510 od 8 490 zł netto.',
     description: `Zebra ZT510 to najlepszy wybór dla firm szukających ekonomicznej drukarki przemysłowej do pracy 24/7 jako następca kultowej 105SLPlus.
 
 Zebra ZT510 to przemysłowa drukarka etykiet klasy ekonomicznej, będąca bezpośrednim następcą kultowej drukarki 105SLPlus — jednej z najszerzej stosowanych drukarek przemysłowych w historii Zebra. ZT510 łączy sprawdzoną wytrzymałość metalowej konstrukcji z nowoczesną platformą Link-OS, technologią NFC/Print Touch i pamięcią 512 MB RAM / 2 GB Flash. Drukarka jest zaprojektowana do nieprzerwanej pracy 24/7 w środowiskach produkcyjnych, magazynowych i logistycznych, gdzie wymagana jest niezawodność przy optymalnym budżecie.
@@ -5128,8 +5128,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zt610',
     name: 'Zebra ZT610',
     shortDescription: 'Przemysłowa drukarka etykiet 4" klasy heavy-duty — następca 110Xi4. 203/300/600 dpi, do 356 mm/s, ekran dotykowy 4,3", RFID opcja, Link-OS, praca 24/7',
-    seoTitle: 'Drukarka etykiet Zebra ZT610 | Heavy-duty 4" 600 dpi RFID',
-    seoDescription: 'Zebra ZT610 — przemysłowa drukarka heavy-duty 4", następca 110Xi4. ZT610 Zebra: 203/300/600 dpi, 356 mm/s, RFID, LCD 4,3". Drukarka Zebra ZT610 od 10 432 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZT610 — heavy-duty 4" RFID 600 dpi',
+    seoDescription: 'Zebra ZT610 — najlepsza drukarka przemysłowa heavy-duty 4", drukarka RFID do fabryki. ZT610 Zebra: 600 dpi, 356 mm/s, LCD 4,3". Drukarka Zebra ZT610 od 10 432 zł netto.',
     description: `Zebra ZT610 to najlepszy wybór dla centrów dystrybucyjnych i linii produkcyjnych wymagających najwyższej klasy drukarki przemysłowej 4" z trwałością Xi i rozdzielczością do 600 dpi.
 
 Zebra ZT610 to przemysłowa drukarka etykiet klasy heavy-duty, będąca bezpośrednim następcą legendarnej serii 110Xi4 — jednej z najdłużej produkowanych i najszerzej stosowanych drukarek przemysłowych na świecie. ZT610 łączy sprawdzoną wytrzymałość metalowej konstrukcji Xi z nowoczesną platformą Link-OS, kolorowym ekranem dotykowym 4,3" i pamięcią 1 GB RAM / 2 GB Flash. Drukarka jest zaprojektowana do nieprzerwanej pracy 24/7 w najbardziej wymagających środowiskach produkcyjnych, magazynowych i logistycznych.
@@ -5367,8 +5367,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zt620',
     name: 'Zebra ZT620',
     shortDescription: 'Przemysłowa drukarka etykiet 6" klasy heavy-duty — następca 170Xi4. 203/300 dpi, do 305 mm/s, ekran dotykowy 4,3", RFID opcja, Link-OS, praca 24/7',
-    seoTitle: 'Drukarka etykiet Zebra ZT620 | Heavy-duty 6" 24/7',
-    seoDescription: 'Zebra ZT620 — przemysłowa drukarka heavy-duty 6" (168 mm), następca 170Xi4. ZT620 Zebra: 305 mm/s, RFID, LCD 4,3", etykiety paletowe GS1. Od 12 417 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZT620 — heavy-duty 6" przemysłowa',
+    seoDescription: 'Zebra ZT620 — heavy-duty drukarka przemysłowa szerokoformatowa 6", etykiety paletowe, RFID. ZT620 Zebra: 305 mm/s, LCD 4,3", GS1. Drukarka Zebra ZT620 od 12 417 zł netto.',
     description: `Zebra ZT620 to najlepszy wybór dla magazynów wysokiego składowania i centrów dystrybucji wymagających szerokoformatowej drukarki przemysłowej 6" klasy heavy-duty do pracy 24/7.
 
 Zebra ZT620 to przemysłowa drukarka etykiet klasy heavy-duty o szerokości druku 168 mm (6,6"), będąca bezpośrednim następcą legendarnej serii 170Xi4 — najszerzej stosowanej szerokoformatowej drukarki przemysłowej na świecie. ZT620 łączy sprawdzoną wytrzymałość metalowej konstrukcji Xi z nowoczesną platformą Link-OS, kolorowym ekranem dotykowym 4,3" i pamięcią 1 GB RAM / 2 GB Flash. Drukarka jest zaprojektowana do nieprzerwanej pracy 24/7 w centrach dystrybucji, magazynach wysokiego składowania i zakładach produkcyjnych, gdzie wymagane są szerokie etykiety paletowe, logistyczne i wysyłkowe.
@@ -5612,8 +5612,8 @@ const mobilePrinters: Product[] = [
     slug: 'zebra-zq511',
     name: 'Zebra ZQ511',
     shortDescription: 'Wzmocniona mobilna drukarka etykiet 3" — MIL-STD-810G, IP54, upadki z 2 m',
-    seoTitle: 'Drukarka mobilna Zebra ZQ511 | Wzmocniona 3" MIL-STD-810G',
-    seoDescription: 'Zebra ZQ511 — wzmocniona mobilna drukarka etykiet 3" (72 mm), MIL-STD-810G, IP54. ZQ511 Zebra: upadki z 2 m, -20°C, Wi-Fi+BT. Drukarka Zebra ZQ511 od 2 288 zł netto.',
+    seoTitle: 'Mobilna drukarka Zebra ZQ511 — wzmocniona 3" MIL-STD',
+    seoDescription: 'Zebra ZQ511 — wzmocniona mobilna drukarka etykiet 3" MIL-STD-810G, drukarka na wózek widłowy, IP54. ZQ511 Zebra: upadki 2 m, -20°C. Od 2 288 zł netto.',
     description: `Zebra ZQ511 to najlepszy wybór dla firm kurierskich i magazynów potrzebujących wzmocnionej mobilnej drukarki 3" do druku paragonów i etykiet w najtrudniejszych warunkach terenowych.
 
 Zebra ZQ511 to wzmocniona mobilna drukarka etykiet i paragonów o szerokości druku 3 cale (72 mm), zaprojektowana do najtrudniejszych warunków pracy w terenie, magazynie i dostawie. Następca modelu ZQ510.
@@ -5879,8 +5879,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zq521',
     name: 'Zebra ZQ521',
     shortDescription: 'Wzmocniona mobilna drukarka etykiet 4" — MIL-STD-810G, IP54, upadki z 2,1 m, etykiety wysyłkowe 100×150',
-    seoTitle: 'Drukarka mobilna Zebra ZQ521 | Wzmocniona 4" 100×150 mm',
-    seoDescription: 'Zebra ZQ521 — wzmocniona mobilna drukarka etykiet 4" (104 mm), MIL-STD-810G, IP54. ZQ521 Zebra: etykiety 100×150 mm, -20°C, Wi-Fi+BT. Od 2 979 zł netto.',
+    seoTitle: 'Mobilna drukarka Zebra ZQ521 — 4" etykiety 100×150 mm',
+    seoDescription: 'Zebra ZQ521 — mobilna drukarka etykiet 4" do etykiet 100×150 mm, MIL-STD-810G, IP54. ZQ521 Zebra: Wi-Fi+BT, -20°C. Mobilna drukarka Zebra ZQ521 od 2 979 zł netto.',
     description: `Zebra ZQ521 to najlepszy wybór dla firm kurierskich i logistycznych potrzebujących wzmocnionej mobilnej drukarki 4" do druku pełnowymiarowych etykiet wysyłkowych w terenie.
 
 Zebra ZQ521 to wzmocniona mobilna drukarka etykiet i paragonów o szerokości druku 4 cale (104 mm), zaprojektowana do profesjonalnego druku pełnowymiarowych etykiet wysyłkowych bezpośrednio w terenie. Następca modelu ZQ520 i starszy brat kompaktowej ZQ511.
@@ -6142,8 +6142,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zq610-plus',
     name: 'Zebra ZQ610 Plus',
     shortDescription: 'Kompaktowa mobilna drukarka etykiet 2" — kolorowy wyświetlacz LCD, Wi-Fi 5/6, IP54',
-    seoTitle: 'Drukarka mobilna Zebra ZQ610 Plus | Kompaktowa 2" Wi-Fi 6',
-    seoDescription: 'Zebra ZQ610 Plus — kompaktowa mobilna drukarka etykiet 2" (48 mm) z Wi-Fi 6 i Bluetooth 5.3. ZQ610 Plus Zebra: LCD, IP54, -20°C. Mobilna drukarka Zebra od 3 256 zł netto.',
+    seoTitle: 'Mobilna drukarka Zebra ZQ610 Plus — premium 2" Wi-Fi 6',
+    seoDescription: 'Zebra ZQ610 Plus — mobilna drukarka etykiet Wi-Fi 6 premium 2" (48 mm), Bluetooth 5.3, LCD, IP54. ZQ610 Plus Zebra: -20°C. Mobilna drukarka Zebra od 3 256 zł netto.',
     description: `Zebra ZQ610 Plus to najlepszy wybór dla handlu detalicznego i gastronomii potrzebujących kompaktowej mobilnej drukarki 2" do metek cenowych i potwierdzeń.
 
 Zebra ZQ610 Plus to kompaktowa mobilna drukarka etykiet i paragonów o szerokości druku 2 cale (48 mm) z serii ZQ600 Plus, zaprojektowana do szybkiego drukowania potwierdzeń, metek cenowych i etykiet produktowych w terenie.
@@ -6374,8 +6374,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zq620-plus',
     name: 'Zebra ZQ620 Plus',
     shortDescription: 'Mobilna drukarka etykiet 3" — Wi-Fi 5/6, kolorowy wyświetlacz LCD, IP54, linerless',
-    seoTitle: 'Drukarka mobilna Zebra ZQ620 Plus | 3" Wi-Fi 6 Linerless',
-    seoDescription: 'Zebra ZQ620 Plus — mobilna drukarka etykiet 3" (72 mm) z Wi-Fi 6 i Bluetooth 5.3. ZQ620 Plus Zebra: LCD, IP54, linerless. Mobilna drukarka Zebra od 3 622 zł netto.',
+    seoTitle: 'Mobilna drukarka Zebra ZQ620 Plus — 3" linerless WiFi 6',
+    seoDescription: 'Zebra ZQ620 Plus — mobilna drukarka etykiet 3" linerless WiFi 6, Bluetooth 5.3, LCD, IP54. ZQ620 Plus Zebra: druk bez podkładu. Mobilna drukarka Zebra od 3 622 zł netto.',
     description: `Zebra ZQ620 Plus to najlepszy wybór dla firm logistycznych i kurierskich potrzebujących mobilnej drukarki 3" nowej generacji z Wi-Fi 6E i Bluetooth 5.3.
 
 Zebra ZQ620 Plus to mobilna drukarka etykiet i paragonów o szerokości druku 3 cale (72 mm) z serii ZQ600 Plus, zaprojektowana do profesjonalnego drukowania etykiet wysyłkowych, metek cenowych i pokwitowań w terenie.
@@ -6623,8 +6623,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zq630-plus',
     name: 'Zebra ZQ630 Plus',
     shortDescription: 'Mobilna drukarka etykiet 4" — Wi-Fi 5/6, kolorowy LCD, IP54, bateria 6800 mAh, linerless',
-    seoTitle: 'Drukarka mobilna Zebra ZQ630 Plus | 4" Wi-Fi 6',
-    seoDescription: 'Zebra ZQ630 Plus — mobilna drukarka etykiet 4" (104 mm) z Wi-Fi 6, bateria 6800 mAh, IP54. ZQ630 Plus Zebra: etykiety 100×150 mm, linerless. Od 4 257 zł netto.',
+    seoTitle: 'Mobilna drukarka Zebra ZQ630 Plus — 4" WiFi 6 magazyn',
+    seoDescription: 'Zebra ZQ630 Plus — mobilna drukarka etykiet 4" WiFi 6 do magazynu, etykiety 100×150 mm, linerless, IP54. ZQ630 Plus Zebra: 6800 mAh. Drukarka Zebra ZQ630 Plus od 4 257 zł netto.',
     description: `Zebra ZQ630 Plus to najlepszy wybór dla firm kurierskich i logistycznych, które potrzebują mobilnego druku etykiet wysyłkowych 100×150 mm w terenie.
 
 Zebra ZQ630 Plus to najpotężniejsza mobilna drukarka etykiet z serii ZQ600 Plus — jedyna 4-calowa (do 104 mm szerokości druku) drukarka przenośna Zebra nowej generacji. Drukuje etykiety wysyłkowe 100×150 mm, etykiety paletowe i pokwitowania bez konieczności stacji biurkowej.
@@ -6872,8 +6872,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zq310-plus',
     name: 'Zebra ZQ310 Plus',
     shortDescription: 'Kompaktowa mobilna drukarka paragonów i etykiet 2" — IP54, Bluetooth 5.0, USB-C, 370 g',
-    seoTitle: 'Drukarka mobilna Zebra ZQ310 Plus | 2" 370 g USB-C',
-    seoDescription: 'Zebra ZQ310 Plus — kompaktowa mobilna drukarka etykiet 2" (48 mm), 370 g, Bluetooth 5.0, USB-C, IP54. ZQ310 Plus Zebra: ZPL, paragon/etykieta. Od 1 496 zł netto.',
+    seoTitle: 'Mobilna drukarka Zebra ZQ310 Plus — kompaktowa 2" USB-C',
+    seoDescription: 'Zebra ZQ310 Plus — kompaktowa mobilna drukarka etykiet 2" USB-C, 370 g, Bluetooth 5.0, IP54. ZQ310 Plus Zebra: ZPL, paragon i etykieta. Od 1 496 zł netto.',
     description: `Zebra ZQ310 Plus to najlepszy wybór dla handlu detalicznego i gastronomii szukających najlżejszej mobilnej drukarki Zebra z pełną obsługą ZPL.
 
 Zebra ZQ310 Plus to najlżejsza i najtańsza mobilna drukarka etykiet i paragonów Zebra z serii ZQ300 Plus — waży zaledwie 370 g z baterią i mieści się w dłoni. Szerokość druku 2 cale (48 mm) w rozdzielczości 203 dpi z prędkością do 100 mm/s. Następca oryginalnego modelu ZQ310 z istotnymi ulepszeniami: USB-C, Bluetooth 5.0 i kolorowy wyświetlacz LCD.
@@ -7103,8 +7103,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zq320-plus',
     name: 'Zebra ZQ320 Plus',
     shortDescription: 'Mobilna drukarka paragonów i etykiet 3" — IP54, Bluetooth 4.2, Wi-Fi opcja, USB-C, 430 g',
-    seoTitle: 'Drukarka mobilna Zebra ZQ320 Plus | 3" Wi-Fi USB-C 430 g',
-    seoDescription: 'Zebra ZQ320 Plus — mobilna drukarka paragonów i etykiet 3" (72 mm), 430 g, Bluetooth 4.2, Wi-Fi opcja, IP54, USB-C. ZQ320 Plus Zebra od 1 713 zł netto.',
+    seoTitle: 'Mobilna drukarka Zebra ZQ320 Plus — 3" outdoor USB-C',
+    seoDescription: 'Zebra ZQ320 Plus — mobilna drukarka etykiet 3" outdoor, Wi-Fi, Bluetooth, USB-C, IP54, 430 g. ZQ320 Plus Zebra: paragon i etykieta. Drukarka Zebra ZQ320 Plus od 1 713 zł netto.',
     description: `Zebra ZQ320 Plus to najlepszy wybór dla firm kurierskich i gastronomii potrzebujących mobilnej drukarki 3" z opcjonalnym Wi-Fi i pełną obsługą ZPL.
 
 Zebra ZQ320 Plus to mobilna drukarka paragonów i etykiet o szerokości druku 3 cale (72 mm) z nowej generacji ZQ300 Plus — następca popularnego modelu ZQ320. Waży zaledwie 430 g z baterią i oferuje opcjonalne Wi-Fi 802.11ac, którego brakuje w mniejszym modelu ZQ310 Plus.
@@ -7335,8 +7335,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zq220-plus',
     name: 'Zebra ZQ220 Plus',
     shortDescription: 'Budżetowa mobilna drukarka paragonów i etykiet 3" — IP54, Bluetooth 5.0, NFC, OLED, 390 g',
-    seoTitle: 'Drukarka mobilna Zebra ZQ220 Plus | Budżetowa 3" IP54',
-    seoDescription: 'Zebra ZQ220 Plus — budżetowa mobilna drukarka paragonów i etykiet 3" (72 mm), IP54, Bluetooth 5.0, NFC, OLED, 390 g. ZQ220 Plus Zebra od 576 zł netto.',
+    seoTitle: 'Mobilna drukarka Zebra ZQ220 Plus — budżetowa 3" kurier',
+    seoDescription: 'Zebra ZQ220 Plus — budżetowa mobilna drukarka etykiet do kuriera, 3" (72 mm), IP54, BT 5.0, NFC, OLED, 390 g. ZQ220 Plus Zebra od 576 zł netto.',
     description: `Zebra ZQ220 Plus to najlepszy wybór dla małych firm i punktów sprzedaży szukających najtańszej mobilnej drukarki Zebra 3" z wbudowaną odpornością IP54.
 
 Zebra ZQ220 Plus to budżetowa mobilna drukarka paragonów i etykiet o szerokości druku 3 cale (72 mm) — najtańsza drukarka mobilna Zebra z trzyCalowym drukiem. Waży zaledwie 390 g z baterią i oferuje wbudowane IP54 bez konieczności dokupowania futerału.
@@ -7539,7 +7539,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zq210',
     name: 'Zebra ZQ210',
     shortDescription: 'Najlżejsza mobilna drukarka paragonów i etykiet 2" — tylko 265 g, Bluetooth 4.1, NFC, OLED, IP43',
-    seoTitle: 'Drukarka mobilna Zebra ZQ210 | Najlżejsza 2" 265 g',
+    seoTitle: 'Mobilna drukarka Zebra ZQ210 — najlżejsza 2" 265 g',
     seoDescription: 'Zebra ZQ210 — najlżejsza mobilna drukarka etykiet i paragonów 2" (48 mm), tylko 265 g. ZQ210 Zebra: Bluetooth 4.1, NFC, OLED, IP43/IP54. Zebra ZQ210 od 999 zł netto.',
     description: `Zebra ZQ210 to najlepszy wybór dla firm szukających najlżejszej i najtańszej mobilnej drukarki etykiet 2" do prostych zastosowań w handlu i gastronomii.
 
@@ -20838,8 +20838,8 @@ const cardPrinters: Product[] = [
     slug: 'zebra-zc100',
     name: 'Zebra ZC100',
     shortDescription: 'Drukarka kart plastikowych entry-level — jednostronna, 300 dpi, termosublimacja, USB/Ethernet',
-    seoTitle: 'Drukarka kart Zebra ZC100 | Entry-level 300 dpi USB/LAN',
-    seoDescription: 'Zebra ZC100 — drukarka kart plastikowych entry-level, jednostronna, 300 dpi, termosublimacja. ZC100 Zebra: 150 kart/h, USB/Ethernet, CardStudio. Od 3 420 zł netto.',
+    seoTitle: 'Drukarka kart Zebra ZC100 — tania mono 300 dpi USB/LAN',
+    seoDescription: 'Zebra ZC100 — tania drukarka kart plastikowych mono, 300 dpi, termosublimacja. ZC100 Zebra: 150 kart/h, USB/Ethernet, CardStudio. Drukarka kart Zebra ZC100 od 3 420 zł netto.',
     description: `Dla kogo? Zebra ZC100 to kompaktowa drukarka kart plastikowych zaprojektowana dla małych biur, recepcji hotelowych, klubów fitness i sklepów — wszędzie tam, gdzie potrzebujesz drukować identyfikatory, karty lojalnościowe lub karty członkowskie w niewielkich nakładach (do 500 kart/rok).
 
 Drukuje pełnokolorowe karty PVC CR-80 w technologii termosublimacyjnej (dye-sublimation) z rozdzielczością 300 dpi. Prędkość: 150 kart/h w trybie kolorowym YMCKO (24 s/karta) lub 700 kart/h w trybie monochromatycznym (5 s/karta). Podajnik na 100 kart, odbiornik na 50 kart.
@@ -20957,8 +20957,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zc300',
     name: 'Zebra ZC300',
     shortDescription: 'Drukarka kart plastikowych mid-range — jedno-/dwustronna, 300 dpi, kodowanie RFID/NFC/magnetyczne, Wi-Fi',
-    seoTitle: 'Drukarka kart Zebra ZC300 | Mid-range RFID/NFC dwustronna',
-    seoDescription: 'Zebra ZC300 — drukarka kart plastikowych mid-range, jedno-/dwustronna, 300 dpi. ZC300 Zebra: RFID, NFC, pasek magnetyczny, Wi-Fi. Drukarka kart Zebra od 4 297 zł netto.',
+    seoTitle: 'Drukarka kart Zebra ZC300 — kolorowa RFID NFC pracownicze',
+    seoDescription: 'Zebra ZC300 — drukarka kart pracowniczych kolorowa, RFID, NFC, pasek magnetyczny. ZC300 Zebra: 300 dpi, jedno-/dwustronna, Wi-Fi. Drukarka kart Zebra ZC300 od 4 297 zł netto.',
     description: `Dla kogo? Zebra ZC300 to wszechstronna drukarka kart plastikowych zaprojektowana dla przedsiębiorstw, szkół, hoteli i organizacji — idealny wybór do identyfikatorów pracowniczych, e-legitymacji, kart dostępu RFID i kart hotelowych w nakładach od 500 do 5 000 kart/rok.
 
 Drukuje pełnokolorowe karty PVC CR-80 w technologii termosublimacyjnej z rozdzielczością 300 dpi. Dostępna w wersji jednostronnej (ZC31-xxx) i dwustronnej (ZC32-xxx). Prędkość: 140 kart/h kolorowo YMCKO lub do 900 kart/h monochromatycznie. Podajnik na 100 kart, odbiornik na 100 kart.
@@ -21084,8 +21084,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zc350',
     name: 'Zebra ZC350',
     shortDescription: 'Zaawansowana drukarka kart plastikowych — taśmy specialty (UV/holo/3D), RFID UHF, 225 kart/h, 3 lata gwarancji',
-    seoTitle: 'Drukarka kart Zebra ZC350 | UV/Holo RFID UHF 225 kart/h',
-    seoDescription: 'Zebra ZC350 — zaawansowana drukarka kart plastikowych z taśmami UV, holograficznymi i RFID UHF. ZC350 Zebra: 225 kart/h, 300 dpi, gwarancja 3 lata. Drukarka kart Zebra.',
+    seoTitle: 'Drukarka kart Zebra ZC350 — retransferowa UV hologram',
+    seoDescription: 'Zebra ZC350 — drukarka kart retransferowa z UV i hologramem, RFID UHF. ZC350 Zebra: 225 kart/h, 300 dpi, zabezpieczenia, gwarancja 3 lata. Drukarka kart Zebra ZC350.',
     description: `Dla kogo? Zebra ZC350 to zaawansowana drukarka kart plastikowych dla organizacji wymagających rozszerzonych opcji bezpieczeństwa i personalizacji — idealna do kart RFID UHF (np. kontrola dostępu na dużą odległość), kart wielowarstwowych z zabezpieczeniami UV/holograficznymi i kart inteligentnych z jednoczesnym kodowaniem wielu technologii.
 
 Drukuje pełnokolorowe karty PVC CR-80 w technologii termosublimacyjnej z rozdzielczością 300 dpi. Dostępna w wersji jednostronnej (ZC35-xxx) i dwustronnej (ZC36-xxx). Prędkość: 225 kart/h kolorowo YMCKO (jednostronnie) lub do 1 000 kart/h monochromatycznie — o 12% szybciej niż ZC300. Podajnik na 100 kart, odbiornik na 100 kart. Obsługuje karty o grubości 0,25–1,27 mm (10–50 mil).
