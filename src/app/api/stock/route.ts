@@ -52,6 +52,7 @@ async function getEurPlnRate(): Promise<number> {
  * Graceful fallback — jesli jeden dystrybutor padnie, dane z drugiego.
  */
 export async function GET(request: NextRequest) {
+  const showDebug = request.nextUrl.searchParams.get('debug') === '1'
   const pnParam = request.nextUrl.searchParams.get('pn')
 
   if (!pnParam) {
@@ -197,11 +198,32 @@ export async function GET(request: NextRequest) {
       }
     })
 
-    return NextResponse.json({
+    const response: Record<string, unknown> = {
       results,
       count: results.length,
       found: results.filter(r => r.found).length,
-    }, {
+    }
+
+    if (showDebug) {
+      response._debug = {
+        eurRate,
+        ingram: {
+          status: ingramResult.status,
+          count: ingramData.length,
+          foundCount: ingramData.filter(r => r.found).length,
+          error: ingramResult.status === 'rejected' ? String(ingramResult.reason) : undefined,
+        },
+        bluestar: {
+          status: bluestarResult.status,
+          count: bluestarData.length,
+          foundCount: bluestarData.filter(r => r.found).length,
+          items: bluestarData.map(b => ({ pn: b.partNumber, found: b.found, inv: b.inventory, eur: b.unitPrice })),
+          error: bluestarResult.status === 'rejected' ? String(bluestarResult.reason) : undefined,
+        },
+      }
+    }
+
+    return NextResponse.json(response, {
       headers: {
         'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600',
       },
