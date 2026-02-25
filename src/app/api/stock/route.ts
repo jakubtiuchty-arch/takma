@@ -7,12 +7,48 @@ import type { BlueStarStockInfo } from '@/lib/bluestar'
 const MARGIN = 1.15 // 15% marzy
 const VAT = 1.23    // 23% VAT
 
+// ============================================
+// KURS EUR/PLN z NBP API (cache 12h)
+// ============================================
+
+const EUR_RATE_FALLBACK = 4.30 // Awaryjny kurs gdyby NBP nie odpowiedzial
+const EUR_CACHE_TTL = 12 * 60 * 60 * 1000 // 12h
+
+let cachedEurRate: number | null = null
+let eurRateCachedAt = 0
+
+async function getEurPlnRate(): Promise<number> {
+  if (cachedEurRate && (Date.now() - eurRateCachedAt) < EUR_CACHE_TTL) {
+    return cachedEurRate
+  }
+
+  try {
+    const res = await fetch(
+      'https://api.nbp.pl/api/exchangerates/rates/a/eur/?format=json',
+      { signal: AbortSignal.timeout(5000) }
+    )
+    if (!res.ok) throw new Error(`NBP HTTP ${res.status}`)
+    const data = await res.json()
+    const rate = data.rates?.[0]?.mid
+    if (typeof rate === 'number' && rate > 0) {
+      cachedEurRate = rate
+      eurRateCachedAt = Date.now()
+      console.log(`[EUR/PLN] Kurs NBP: ${rate}`)
+      return rate
+    }
+    throw new Error('Brak kursu w odpowiedzi NBP')
+  } catch (error) {
+    console.warn(`[EUR/PLN] Blad NBP, fallback ${EUR_RATE_FALLBACK}:`, error)
+    return cachedEurRate ?? EUR_RATE_FALLBACK
+  }
+}
+
 /**
  * GET /api/stock?pn=ZD4A042-30EM00EZ,ZD4A042-30EE00EZ
  *
- * Unified stock API — Ingram Micro + BlueStar.
+ * Unified stock API — Ingram Micro (PLN) + BlueStar (EUR).
  * Stany EU sumowane (Ingram DE/HU/CZ + BlueStar inventory).
- * Cena = min(ingramPrice, bluestarUnitPrice) x 1.15 marzy.
+ * Cena: BlueStar EUR -> PLN po kursie NBP, potem min(ingram, bluestar) x 1.15.
  * Graceful fallback — jesli jeden dystrybutor padnie, dane z drugiego.
  */
 export async function GET(request: NextRequest) {
@@ -42,10 +78,11 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    // Rownolegle zapytania do obu dystrybutorow
-    const [ingramResult, bluestarResult] = await Promise.allSettled([
-      ingramLookup(partNumbers),
-      bluestarLookup(partNumbers),
+    // Rownolegle: oba dystrybutory + kurs EUR/PLN
+    const [ingramResult, bluestarResult, eurRate] = await Promise.all([
+      Promise.allSettled([ingramLookup(partNumbers)]).then(r => r[0]),
+      Promise.allSettled([bluestarLookup(partNumbers)]).then(r => r[0]),
+      getEurPlnRate(),
     ])
 
     const ingramData: StockInfo[] =
@@ -102,25 +139,28 @@ export async function GET(request: NextRequest) {
       const inDelivery = (ing?.inDelivery ?? 0) + (bsFound ? (bs!.qtyExpected ?? 0) : 0)
       const totalStock = stockPL + stockDE + inDelivery
 
-      // Cena: min(ingramPrice, bluestarUnitPrice) x 1.15
-      const ingramRaw = ingFound ? ing!.ingramPrice : undefined
-      const bluestarRaw = bsFound ? bs!.unitPrice : undefined
+      // Cena: porownanie w PLN
+      // Ingram: juz w PLN | BlueStar: EUR -> PLN po kursie NBP
+      const ingramPLN = ingFound ? ing!.ingramPrice : undefined
+      const bluestarPLN = (bsFound && bs!.unitPrice)
+        ? Math.round(bs!.unitPrice * eurRate * 100) / 100
+        : undefined
 
-      let bestRawPrice: number | undefined
-      if (ingramRaw != null && bluestarRaw != null) {
-        bestRawPrice = Math.min(ingramRaw, bluestarRaw)
+      let bestRawPricePLN: number | undefined
+      if (ingramPLN != null && bluestarPLN != null) {
+        bestRawPricePLN = Math.min(ingramPLN, bluestarPLN)
       } else {
-        bestRawPrice = ingramRaw ?? bluestarRaw
+        bestRawPricePLN = ingramPLN ?? bluestarPLN
       }
 
       let price: number | undefined
       let priceBrutto: number | undefined
       let ingramPrice: number | undefined
 
-      if (bestRawPrice != null && bestRawPrice > 0) {
-        price = Math.round(bestRawPrice * MARGIN * 100) / 100
+      if (bestRawPricePLN != null && bestRawPricePLN > 0) {
+        price = Math.round(bestRawPricePLN * MARGIN * 100) / 100
         priceBrutto = Math.round(price * VAT * 100) / 100
-        ingramPrice = bestRawPrice // Raw price from cheapest source
+        ingramPrice = bestRawPricePLN // Najlepsza cena zakupu PLN
       }
 
       // Availability & delivery text
