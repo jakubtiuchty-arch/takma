@@ -285,7 +285,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
     '@type': 'WebPage',
     name: product.name,
     about: {
-      '@type': 'Product',
+      '@type': 'Thing',
       name: product.name,
       url: `https://takma.com.pl/produkt/${product.slug}`,
     },
