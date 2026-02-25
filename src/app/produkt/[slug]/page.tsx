@@ -44,11 +44,9 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   const category = getCategoryById(product.categoryId)
   const manufacturer = getManufacturerById(product.manufacturerId)
 
-  const title = `${product.name}${category ? ` - ${category.name}` : ''}${product.priceFrom ? ` | ${product.priceFrom.toLocaleString('pl-PL')} zł` : ''}`
-
-  const priceText = product.priceFrom ? ` Od ${product.priceFrom.toLocaleString('pl-PL')} zł netto.` : ''
-  const variantsText = product.variants?.length ? ` ${product.variants.length} wariantów.` : ''
-  const fullDesc = `${product.name} — ${product.shortDescription}.${priceText}${variantsText} Doradztwo techniczne i serwis.`
+  // SEO: dedykowany tytuł lub fallback na dynamiczny
+  const title = product.seoTitle
+    ?? `${product.name}${category ? ` - ${category.name}` : ''}${product.priceFrom ? ` | ${product.priceFrom.toLocaleString('pl-PL')} zł` : ''}`
 
   // Smart truncation — ends at last sentence boundary (.) before 160 chars
   const smartTruncate = (text: string, maxLen: number): string => {
@@ -60,7 +58,11 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     return lastSpace > 0 ? truncated.slice(0, lastSpace) + '…' : truncated
   }
 
-  const metaDescription = smartTruncate(fullDesc, 160)
+  // SEO: dedykowany opis lub fallback na dynamiczny
+  const priceText = product.priceFrom ? ` Od ${product.priceFrom.toLocaleString('pl-PL')} zł netto.` : ''
+  const variantsText = product.variants?.length ? ` ${product.variants.length} wariantów.` : ''
+  const fallbackDesc = `${product.name} — ${product.shortDescription}.${priceText}${variantsText} Doradztwo techniczne i serwis.`
+  const metaDescription = product.seoDescription ?? smartTruncate(fallbackDesc, 160)
 
   // OG description — more engaging for social media
   const ogDescription = product.priceFrom
