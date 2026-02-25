@@ -157,10 +157,22 @@ export async function GET(request: NextRequest) {
       }
     })
 
+    // Debug: status obu dystrybutorow
+    const _debug = {
+      ingram: ingramResult.status === 'fulfilled'
+        ? { ok: true, count: ingramData.length, foundCount: ingramData.filter(r => r.found).length }
+        : { ok: false, error: String(ingramResult.reason) },
+      bluestar: bluestarResult.status === 'fulfilled'
+        ? { ok: true, count: bluestarData.length, foundCount: bluestarData.filter(r => r.found).length,
+            sample: bluestarData[0] ? { pn: bluestarData[0].partNumber, found: bluestarData[0].found, inv: bluestarData[0].inventory, price: bluestarData[0].unitPrice } : null }
+        : { ok: false, error: String(bluestarResult.reason) },
+    }
+
     return NextResponse.json({
       results,
       count: results.length,
       found: results.filter(r => r.found).length,
+      _debug,
     }, {
       headers: {
         'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=7200',
