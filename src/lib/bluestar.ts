@@ -158,10 +158,13 @@ function enqueue<T>(fn: () => Promise<T>): Promise<T> {
 // ============================================
 
 async function sendPriceRequest(partNumbers: string[]): Promise<BlueStarPriceItem[]> {
+  _lastDebug = { configPresent: !!(BLUESTAR_CLIENT_ID && BLUESTAR_CLIENT_SECRET && BLUESTAR_CUSTOMER_NO && BLUESTAR_API_KEY) }
   try {
     const token = await getAccessToken()
+    _lastDebug.tokenOk = true
 
     if (!BLUESTAR_CUSTOMER_NO || !BLUESTAR_API_KEY) {
+      _lastDebug.error = 'Brak BLUESTAR_CUSTOMER_NO lub BLUESTAR_API_KEY'
       throw new Error('Brak BLUESTAR_CUSTOMER_NO lub BLUESTAR_API_KEY')
     }
 
@@ -226,8 +229,11 @@ async function sendPriceRequest(partNumbers: string[]): Promise<BlueStarPriceIte
 
     clearTimeout(timeoutId)
 
+    _lastDebug.httpStatus = response.status
+
     if (!response.ok) {
       const errorText = await response.text()
+      _lastDebug.error = `HTTP ${response.status}: ${errorText.slice(0, 200)}`
       console.error(`[BlueStar Price] HTTP ${response.status}: ${errorText}`)
       lastErrorAt = Date.now()
       return []
@@ -236,23 +242,41 @@ async function sendPriceRequest(partNumbers: string[]): Promise<BlueStarPriceIte
     const data: BlueStarPriceResponse = await response.json()
 
     if (data.error || data.message) {
+      _lastDebug.error = `API: ${data.error || data.message}`
       console.warn(`[BlueStar Price] API error: ${data.error || data.message}`)
     }
 
     const items = data.items || []
+    _lastDebug.rawItemCount = items.length
+    _lastDebug.rawItems = items.slice(0, 3).map(i => ({ itemNo: i.itemNo, unitPrice: i.unitPrice, inventory: i.inventory }))
     console.log(`[BlueStar Price] Otrzymano ${items.length} produktów`)
     return items
 
   } catch (error) {
     if (error instanceof Error && error.name === 'AbortError') {
+      _lastDebug.error = 'Timeout 30s'
       console.error('[BlueStar Price] Timeout po 30s')
     } else {
+      _lastDebug.error = String(error)
       console.error('[BlueStar Price] Błąd:', error)
     }
     lastErrorAt = Date.now()
     return []
   }
 }
+
+// ============================================
+// DEBUG — tymczasowe logowanie do diagnostyki produkcji
+// ============================================
+
+export let _lastDebug: {
+  tokenOk?: boolean
+  httpStatus?: number
+  rawItemCount?: number
+  rawItems?: Array<{ itemNo: string; unitPrice: number; inventory: number }>
+  error?: string
+  configPresent?: boolean
+} = {}
 
 // ============================================
 // GŁÓWNA FUNKCJA — SPRAWDZANIE STANÓW
