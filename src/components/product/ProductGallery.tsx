@@ -28,7 +28,7 @@ export default function ProductGallery({ images, productName, imageDescriptions 
   return (
     <div className="space-y-4">
       {/* Main image */}
-      <figure className="relative aspect-square bg-white rounded-2xl overflow-hidden group">
+      <figure className="relative aspect-[4/3] sm:aspect-square bg-white rounded-2xl overflow-hidden group">
         {hasRealImages ? (
           <Image
             src={displayImages[activeIndex]}

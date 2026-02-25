@@ -380,12 +380,12 @@ export default async function ProductPage({ params }: ProductPageProps) {
         {/* Product main section */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Gallery */}
-          <div>
+          <div className="min-w-0">
             <ProductGallery images={product.images} productName={product.name} imageDescriptions={product.imageDescriptions} />
           </div>
 
           {/* Product info */}
-          <div className="lg:sticky lg:top-24 lg:self-start">
+          <div className="min-w-0 lg:sticky lg:top-24 lg:self-start">
             {/* Manufacturer */}
             {manufacturer && (
               <Link
@@ -483,7 +483,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   {product.specifications.slice(0, 5).map((spec) => (
                     <div key={spec.name}>
                       <dt className="text-sm text-gray-500">{spec.name}</dt>
-                      <dd className="font-medium text-gray-900">{spec.value}</dd>
+                      <dd className="font-medium text-gray-900 break-words">{spec.value}</dd>
                     </div>
                   ))}
                 </dl>

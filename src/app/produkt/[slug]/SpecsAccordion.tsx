@@ -26,7 +26,7 @@ export default function SpecsAccordion({ specs, productName }: { specs: Spec[]; 
               <th scope="row" className="px-3 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 w-2/5 sm:w-1/3 text-left">
                 {spec.name}
               </th>
-              <td className="px-4 sm:px-6 py-3 sm:py-4 text-sm text-gray-900">{spec.value}</td>
+              <td className="px-4 sm:px-6 py-3 sm:py-4 text-sm text-gray-900 break-words">{spec.value}</td>
             </tr>
           ))}
         </tbody>
