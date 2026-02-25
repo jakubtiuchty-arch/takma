@@ -59,8 +59,11 @@ export default async function SeoAgentPage() {
     }),
   ])
 
+  const runSecret = process.env.CRON_SECRET || ''
+
   return (
     <Dashboard
+      runSecret={runSecret}
       latestReport={latestReport ? {
         ...latestReport,
         generatedAt: latestReport.generatedAt.toISOString(),

@@ -28,6 +28,13 @@ export async function POST(request: NextRequest) {
     return runPipeline()
   }
 
+  // Auth: ADMIN_SECRET query param (for dashboard manual trigger)
+  const adminSecret = request.nextUrl.searchParams.get('secret')
+  const envAdminSecret = process.env.CRON_SECRET
+  if (envAdminSecret && adminSecret === envAdminSecret) {
+    return runPipeline()
+  }
+
   return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 }
 

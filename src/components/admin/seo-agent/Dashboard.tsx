@@ -40,12 +40,13 @@ interface Alert {
 }
 
 interface DashboardProps {
+  runSecret: string
   latestReport: LatestReport | null
   recentMetrics: MetricsEntry[]
   unreadAlerts: Alert[]
 }
 
-export default function Dashboard({ latestReport, recentMetrics, unreadAlerts }: DashboardProps) {
+export default function Dashboard({ runSecret, latestReport, recentMetrics, unreadAlerts }: DashboardProps) {
   const router = useRouter()
   const [running, setRunning] = useState(false)
   const [runResult, setRunResult] = useState<string | null>(null)
@@ -55,7 +56,7 @@ export default function Dashboard({ latestReport, recentMetrics, unreadAlerts }:
     setRunResult(null)
 
     try {
-      const res = await fetch('/api/admin/seo-agent/run', { method: 'POST' })
+      const res = await fetch(`/api/admin/seo-agent/run?secret=${runSecret}`, { method: 'POST' })
       const data = await res.json()
 
       if (res.ok) {
