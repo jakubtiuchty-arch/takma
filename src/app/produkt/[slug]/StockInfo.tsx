@@ -28,7 +28,7 @@ async function executeBatch() {
   if (allPNs.length === 0) return
 
   try {
-    const res = await fetch(`/api/ingram/stock?pn=${allPNs.join(',')}`)
+    const res = await fetch(`/api/stock?pn=${allPNs.join(',')}`)
     if (!res.ok) throw new Error('Fetch failed')
     const data = await res.json()
     const fullMap = new Map<string, StockInfoType>()
