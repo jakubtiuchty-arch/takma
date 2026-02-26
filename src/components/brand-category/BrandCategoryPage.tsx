@@ -13,6 +13,27 @@ import {
 import { brandCategoryContent } from '@/data/brand-category-content'
 import ServiceBanner from '@/components/ui/ServiceBanner'
 
+/** Renders text with markdown-style links [text](/url) or [text](https://...) */
+function LinkedText({ text }: { text: string }) {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/)
+  return (
+    <>
+      {parts.map((part, i) => {
+        const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
+        if (linkMatch) {
+          const [, label, href] = linkMatch
+          const isExternal = href.startsWith('http')
+          if (isExternal) {
+            return <a key={i} href={href} target="_blank" rel="noopener" className="text-primary-600 hover:text-primary-800 underline decoration-primary-300">{label}</a>
+          }
+          return <Link key={i} href={href} className="text-primary-600 hover:text-primary-800 underline decoration-primary-300">{label}</Link>
+        }
+        return <span key={i}>{part}</span>
+      })}
+    </>
+  )
+}
+
 /** Renders text with \n\n paragraph breaks */
 function RichText({ text, className }: { text: string; className?: string }) {
   const paragraphs = text.split('\n\n')
@@ -25,7 +46,7 @@ function RichText({ text, className }: { text: string; className?: string }) {
             {lines.map((line, j) => (
               <span key={j}>
                 {j > 0 && <br />}
-                {line}
+                <LinkedText text={line} />
               </span>
             ))}
           </p>
@@ -121,12 +142,24 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
     })),
   } : null
 
+  const speakableJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: bc.name,
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', '.definition-content', '.faq-section'],
+    },
+    url: `https://www.takma.com.pl/${bc.slug}`,
+  }
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }} />
       {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
       {howToJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }} />
 
       <div className="container-main py-8 lg:py-12">
         {/* Breadcrumbs */}
@@ -403,7 +436,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                           <span className="font-medium text-gray-900 pr-4">{f.question}</span>
                           <ChevronRightIcon size={18} className="text-gray-400 flex-shrink-0 transition-transform duration-200 group-open:rotate-90" />
                         </summary>
-                        <div className="px-5 pb-4 text-gray-600 leading-relaxed text-sm sm:text-justify">{f.answer}</div>
+                        <div className="px-5 pb-4 text-gray-600 leading-relaxed text-sm sm:text-justify"><LinkedText text={f.answer} /></div>
                       </details>
                     ))}
                   </div>
@@ -423,7 +456,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                           <span className="font-medium text-gray-900 pr-4">{f.question}</span>
                           <ChevronRightIcon size={18} className="text-gray-400 flex-shrink-0 transition-transform duration-200 group-open:rotate-90" />
                         </summary>
-                        <div className="px-5 pb-4 text-gray-600 leading-relaxed text-sm sm:text-justify">{f.answer}</div>
+                        <div className="px-5 pb-4 text-gray-600 leading-relaxed text-sm sm:text-justify"><LinkedText text={f.answer} /></div>
                       </details>
                     ))}
                   </div>

@@ -93,7 +93,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
           className="w-24 h-24 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center group relative overflow-hidden"
         >
           {hasRealImage ? (
-            <Image src={product.images[0]} alt={product.name} fill className="object-contain p-1" sizes="96px" />
+            <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-1" sizes="96px" />
           ) : (
             <span className="text-gray-300 text-sm group-hover:text-primary-500 transition-colors">IMG</span>
           )}
@@ -207,7 +207,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
         className="relative aspect-[4/3] bg-white flex items-center justify-center overflow-hidden"
       >
         {hasRealImage ? (
-          <Image src={product.images[0]} alt={product.name} fill className="object-contain p-3" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
+          <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-3" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
         ) : (
           <span className="text-gray-300 text-sm group-hover:text-primary-500 transition-colors">IMG</span>
         )}
