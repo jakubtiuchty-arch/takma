@@ -131,7 +131,14 @@ export default function SerpTable({ positions }: SerpTableProps) {
             </h4>
           </div>
           <div className="overflow-x-auto">
-            <table className="w-full text-sm">
+            <table className="w-full text-sm table-fixed">
+              <colgroup>
+                <col style={{ width: '40%' }} />
+                <col style={{ width: `${60 / (COMPETITORS.length + 1)}%` }} />
+                {COMPETITORS.map(c => (
+                  <col key={c} style={{ width: `${60 / (COMPETITORS.length + 1)}%` }} />
+                ))}
+              </colgroup>
               <thead>
                 <tr className="border-b border-gray-100">
                   <th className="text-left py-2 pl-4 pr-3 font-medium text-gray-500">Fraza</th>
@@ -146,7 +153,7 @@ export default function SerpTable({ positions }: SerpTableProps) {
               <tbody>
                 {items.map(pos => (
                   <tr key={pos.keyword} className="border-b border-gray-50 hover:bg-gray-50/50">
-                    <td className="py-1.5 pl-4 pr-3 text-gray-700 truncate max-w-[220px]" title={pos.keyword}>
+                    <td className="py-1.5 pl-4 pr-3 text-gray-700 truncate" title={pos.keyword}>
                       {pos.keyword}
                     </td>
                     <td className="py-1.5 px-2 text-center bg-blue-50/50">
