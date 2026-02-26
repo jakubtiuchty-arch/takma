@@ -379,7 +379,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
         </nav>
 
         {/* Product main section */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-12">
           {/* Gallery */}
           <div className="min-w-0">
             <ProductGallery images={product.images} productName={product.name} imageDescriptions={product.imageDescriptions} />
@@ -497,18 +497,18 @@ export default async function ProductPage({ params }: ProductPageProps) {
         {/* Tabs / Details */}
         <div className="mt-12 lg:mt-16">
           <div className="border-b border-gray-200">
-            <nav className="flex gap-3 sm:gap-6 -mb-px overflow-x-auto scrollbar-hide">
+            <nav className="flex gap-1 sm:gap-6 -mb-px overflow-x-auto scrollbar-hide">
               {product.variants && product.variants.length > 0 && (
                 <a
                   href="#warianty"
-                  className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-primary-600 border-b-2 border-primary-600 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-primary-600 border-b-2 border-primary-600 whitespace-nowrap"
                 >
                   Warianty
                 </a>
               )}
               <a
                 href="#opis"
-                className={`px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium whitespace-nowrap ${
+                className={`px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium whitespace-nowrap ${
                   product.variants && product.variants.length > 0
                     ? 'text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300'
                     : 'text-primary-600 border-b-2 border-primary-600'
@@ -518,20 +518,20 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </a>
               <a
                 href="#specyfikacja"
-                className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
               >
                 Specyfikacja
               </a>
               <a
                 href="#zastosowania"
-                className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
               >
                 Zastosowania
               </a>
               {product.comparison && (
                 <a
                   href="#porownanie"
-                  className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   Porównanie
                 </a>
@@ -539,7 +539,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {product.faq && product.faq.length > 0 && (
                 <a
                   href="#faq"
-                  className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   FAQ
                 </a>
@@ -547,7 +547,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {product.downloads.length > 0 && (
                 <a
                   href="#pliki"
-                  className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   Do pobrania
                 </a>
@@ -555,7 +555,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {compatibleConsumables.length > 0 && (
                 <a
                   href="#etykiety-papierowe"
-                  className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   {product.categoryId === 'drukarki-kart' ? 'Taśmy' : product.categoryId === 'drukarki-opasek' ? 'Opaski' : product.subcategoryIds?.includes('termiczne-drukarki-etykiet') ? 'Etykiety termiczne' : 'Etykiety papierowe'}
                 </a>
@@ -563,7 +563,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {compatibleFoilLabels.length > 0 && (
                 <a
                   href="#etykiety-foliowe"
-                  className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   Etykiety foliowe
                 </a>
@@ -571,7 +571,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {relatedCards.length > 0 && (
                 <a
                   href="#karty-pcv"
-                  className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   Karty PCV
                 </a>
@@ -579,7 +579,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {relatedSoftware.length > 0 && (
                 <a
                   href="#oprogramowanie"
-                  className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   Oprogramowanie
                 </a>
@@ -587,7 +587,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {relatedAccessories.length > 0 && (
                 <a
                   href="#akcesoria"
-                  className="px-2 py-3 sm:px-3 sm:py-4 text-xs sm:text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   {isDevice ? 'Akcesoria' : 'Powiązane produkty'}
                 </a>
@@ -833,10 +833,10 @@ export default async function ProductPage({ params }: ProductPageProps) {
       </div>
 
       {/* Sticky mobile CTA */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-3 py-3 xs:p-4 lg:hidden safe-bottom z-40">
-        <div className="flex items-center gap-2 xs:gap-3">
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-3 lg:hidden safe-bottom z-40">
+        <div className="flex items-center gap-2">
           <StickyPrice product={product} />
-          <div className="flex-1">
+          <div className="flex-1 min-w-0">
             <AddToRFQButton product={product} compact />
           </div>
           <AskAboutProductButton productName={product.name} productSlug={product.slug} compact />

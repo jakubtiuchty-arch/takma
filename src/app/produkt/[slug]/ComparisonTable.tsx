@@ -78,11 +78,11 @@ export default function ComparisonTable({ title, models }: ComparisonTableProps)
           <div
             key={m.name}
             className={clsx(
-              'rounded-xl p-4 border',
+              'rounded-xl p-3 sm:p-4 border',
               m.highlight ? 'border-primary-300 bg-primary-50/30' : 'border-gray-200 bg-white'
             )}
           >
-            <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center justify-between mb-2">
               <h3 className="font-bold text-gray-900">
                 {m.slug ? (
                   <Link href={`/produkt/${m.slug}`} className="hover:text-primary-600">

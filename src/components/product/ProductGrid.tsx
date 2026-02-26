@@ -54,13 +54,13 @@ export default function ProductGrid({
   }
 
   const gridCols = {
-    2: 'grid-cols-1 sm:grid-cols-2',
-    3: 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3',
-    4: 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4',
+    2: 'grid-cols-2 sm:grid-cols-2',
+    3: 'grid-cols-2 sm:grid-cols-2 lg:grid-cols-3',
+    4: 'grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4',
   }
 
   return (
-    <div className={clsx('grid gap-6', gridCols[columns])}>
+    <div className={clsx('grid gap-4 sm:gap-6', gridCols[columns])}>
       {products.map((product) => (
         <ProductCard key={product.id} product={product} variant="grid" showDualButtons={showDualButtons} />
       ))}

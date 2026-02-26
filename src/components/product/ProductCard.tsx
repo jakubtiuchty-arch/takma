@@ -215,7 +215,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
       </Link>
 
       {/* Content */}
-      <div className="p-3 flex flex-col flex-1">
+      <div className="p-2 sm:p-3 flex flex-col flex-1">
         <div className="flex-1">
           {manufacturer && (
             <span className="text-[11px] text-gray-400 uppercase tracking-wide font-medium">
@@ -223,7 +223,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
             </span>
           )}
           <Link href={`/produkt/${product.slug}`}>
-            <h3 className="font-semibold text-sm text-gray-900 hover:text-primary-600 transition-colors mt-0.5 line-clamp-2 leading-tight">
+            <h3 className="font-semibold text-xs sm:text-sm text-gray-900 hover:text-primary-600 transition-colors mt-0.5 line-clamp-2 leading-tight">
               {product.name}
             </h3>
           </Link>
@@ -240,10 +240,10 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
             </div>
           ) : displayPrice ? (
             <div className="mb-2">
-              <span className="text-lg font-bold text-gray-900">
+              <span className="text-sm sm:text-lg font-bold text-gray-900">
                 {displayPrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
               </span>
-              <span className="text-xs text-gray-400 ml-1">
+              <span className="text-[10px] sm:text-xs text-gray-400 ml-0.5 sm:ml-1">
                 {product.categoryId === 'materialy-eksploatacyjne' ? 'netto/rolka' : 'netto'}
               </span>
             </div>
@@ -254,11 +254,11 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
           )}
 
           {showDualButtons ? (
-            <div className="flex flex-col xs:flex-row items-stretch xs:items-center gap-2">
+            <div className="flex flex-col xs:flex-row items-stretch xs:items-center gap-1.5 sm:gap-2">
               {isUnavailable ? (
                 <Link
                   href={`/produkt/${product.slug}`}
-                  className="flex-1 flex items-center justify-center gap-1.5 text-sm font-medium text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200 rounded-lg px-3 py-2 transition-colors"
+                  className="flex-1 flex items-center justify-center gap-1 sm:gap-1.5 text-xs sm:text-sm font-medium text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200 rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 transition-colors"
                   onClick={(e) => e.stopPropagation()}
                 >
                   <BellIcon size={14} />
@@ -267,7 +267,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
               ) : (
                 <button
                   onClick={handleAddToCart}
-                  className={`flex-1 flex items-center justify-center gap-1.5 text-sm font-semibold rounded-lg px-3 py-2 transition-all active:scale-[0.98] ${
+                  className={`flex-1 flex items-center justify-center gap-1 sm:gap-1.5 text-xs sm:text-sm font-semibold rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 transition-all active:scale-[0.98] ${
                     inRFQ
                       ? 'text-primary-600 bg-white border-2 border-primary-600'
                       : product.manufacturerId === 'zebra'
@@ -281,7 +281,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
               )}
               <Link
                 href={`/produkt/${product.slug}`}
-                className="flex items-center justify-center text-sm font-medium text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-lg px-3 py-2 transition-colors whitespace-nowrap"
+                className="flex items-center justify-center text-xs sm:text-sm font-medium text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 transition-colors whitespace-nowrap"
               >
                 Więcej
               </Link>
@@ -289,7 +289,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
           ) : (
             <Link
               href={`/produkt/${product.slug}`}
-              className="w-full flex items-center justify-center text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-lg px-3 py-2.5 transition-colors"
+              className="w-full flex items-center justify-center text-xs sm:text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-lg px-2 py-2 sm:px-3 sm:py-2.5 transition-colors"
             >
               Zobacz więcej
             </Link>
