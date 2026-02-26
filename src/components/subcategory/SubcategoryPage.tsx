@@ -15,6 +15,7 @@ import {
 } from '@/data/products'
 import { subcategoryContent } from '@/data/subcategory-content'
 import ServiceBanner from '@/components/ui/ServiceBanner'
+import LinkedText from '@/components/ui/LinkedText'
 
 /** Renders text with \n\n paragraph breaks and \n line breaks within paragraphs */
 function RichText({ text, className }: { text: string; className?: string }) {
@@ -385,7 +386,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                           />
                         </summary>
                         <div className="px-5 pb-4 text-gray-600 leading-relaxed text-sm sm:text-justify">
-                          {f.answer}
+                          <LinkedText text={f.answer} />
                         </div>
                       </details>
                     ))}
@@ -624,7 +625,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                             />
                           </summary>
                           <div className="px-5 pb-4 text-gray-600 leading-relaxed text-sm sm:text-justify">
-                            {f.answer}
+                            <LinkedText text={f.answer} />
                           </div>
                         </details>
                       ))}

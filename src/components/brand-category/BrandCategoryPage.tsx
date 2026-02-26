@@ -12,27 +12,7 @@ import {
 } from '@/data/products'
 import { brandCategoryContent } from '@/data/brand-category-content'
 import ServiceBanner from '@/components/ui/ServiceBanner'
-
-/** Renders text with markdown-style links [text](/url) or [text](https://...) */
-function LinkedText({ text }: { text: string }) {
-  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/)
-  return (
-    <>
-      {parts.map((part, i) => {
-        const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
-        if (linkMatch) {
-          const [, label, href] = linkMatch
-          const isExternal = href.startsWith('http')
-          if (isExternal) {
-            return <a key={i} href={href} target="_blank" rel="noopener" className="text-primary-600 hover:text-primary-800 underline decoration-primary-300">{label}</a>
-          }
-          return <Link key={i} href={href} className="text-primary-600 hover:text-primary-800 underline decoration-primary-300">{label}</Link>
-        }
-        return <span key={i}>{part}</span>
-      })}
-    </>
-  )
-}
+import LinkedText from '@/components/ui/LinkedText'
 
 /** Renders text with \n\n paragraph breaks */
 function RichText({ text, className }: { text: string; className?: string }) {
@@ -245,7 +225,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
               <div className="mt-12 space-y-10">
                 <section className="definition-content">
                   <h2 className="text-2xl font-bold text-gray-900 mb-3">{content.definition.heading}</h2>
-                  <p className="text-gray-600 leading-relaxed sm:text-justify">{content.definition.content}</p>
+                  <RichText text={content.definition.content} className="text-gray-600 leading-relaxed sm:text-justify space-y-3" />
                 </section>
 
                 <section>
@@ -261,9 +241,9 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                             {hasDash ? (
                               <>
                                 <strong className="text-gray-900">{item.substring(0, dashIndex)}</strong>
-                                {item.substring(dashIndex)}
+                                <LinkedText text={item.substring(dashIndex)} />
                               </>
-                            ) : item}
+                            ) : <LinkedText text={item} />}
                           </span>
                         </li>
                       )
@@ -273,7 +253,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
 
                 <section className="bg-gray-50 rounded-xl p-6">
                   <h2 className="text-lg font-bold text-gray-900 mb-2">Dlaczego TAKMA?</h2>
-                  <p className="text-gray-600 leading-relaxed text-sm sm:text-justify">{content.expertAuthority}</p>
+                  <p className="text-gray-600 leading-relaxed text-sm sm:text-justify"><LinkedText text={content.expertAuthority} /></p>
                 </section>
 
                 <section>
@@ -309,7 +289,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                     return (
                       <>
                         {textLines[0] && (
-                          <p className="text-gray-600 leading-relaxed mb-4 sm:text-justify">{textLines[0]}</p>
+                          <p className="text-gray-600 leading-relaxed mb-4 sm:text-justify"><LinkedText text={textLines[0]} /></p>
                         )}
                         <div className="overflow-x-auto -mx-4 px-4 mb-6">
                           <table className="w-full text-sm border-collapse">
@@ -334,7 +314,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                           </table>
                         </div>
                         {textLines.slice(1).map((block, i) => (
-                          <p key={i} className="text-gray-600 leading-relaxed text-sm sm:text-justify mb-3">{block}</p>
+                          <p key={i} className="text-gray-600 leading-relaxed text-sm sm:text-justify mb-3"><LinkedText text={block} /></p>
                         ))}
 
                         {/* TCO comparisons from structured data */}
@@ -378,7 +358,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                     {content.useCases.map((uc, i) => (
                       <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">
                         <h3 className="font-semibold text-gray-900 mb-2 text-sm">{uc.title}</h3>
-                        <p className="text-gray-600 text-sm leading-relaxed">{uc.description}</p>
+                        <p className="text-gray-600 text-sm leading-relaxed"><LinkedText text={uc.description} /></p>
                       </div>
                     ))}
                   </div>
@@ -390,7 +370,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                     {content.uniqueInsights.items.map((item, i) => (
                       <div key={i}>
                         <h3 className="font-semibold text-gray-900 text-sm mb-1">{i + 1}. {item.title}</h3>
-                        <p className="text-gray-600 text-sm leading-relaxed">{item.text}</p>
+                        <p className="text-gray-600 text-sm leading-relaxed"><LinkedText text={item.text} /></p>
                       </div>
                     ))}
                   </div>
@@ -419,7 +399,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                           <span className="flex-shrink-0 w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold mt-0.5">{i + 1}</span>
                           <div>
                             <h3 className="font-semibold text-gray-900 mb-1">{step.name}</h3>
-                            <p className="text-gray-600 text-sm leading-relaxed">{step.text}</p>
+                            <p className="text-gray-600 text-sm leading-relaxed"><LinkedText text={step.text} /></p>
                           </div>
                         </li>
                       ))}

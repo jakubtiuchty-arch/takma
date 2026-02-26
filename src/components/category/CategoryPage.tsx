@@ -11,6 +11,7 @@ import {
 } from '@/data/products'
 import { subcategoryContent } from '@/data/subcategory-content'
 import ServiceBanner from '@/components/ui/ServiceBanner'
+import LinkedText from '@/components/ui/LinkedText'
 
 interface CategoryPageProps {
   slug: string
@@ -349,7 +350,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
                           />
                         </summary>
                         <div className="px-5 pb-4 text-gray-600 leading-relaxed text-sm sm:text-justify">
-                          {f.answer}
+                          <LinkedText text={f.answer} />
                         </div>
                       </details>
                     ))}
