@@ -183,7 +183,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 352 zł netto. Zebra DS2208 — imager 2D, USB, 5 lat gwarancji. Skanery przewodowe do kas, aptek i biur. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 2,
+    productCount: 3,
   },
   // {
   //   id: 'tablety',
@@ -822,8 +822,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Skanery kodów kreskowych przewodowe USB od 352 zł netto. Zebra DS2208 — imager 2D, IP52, 5 lat gwarancji. Do kas, aptek, biur i magazynów. Autoryzowany partner Zebra — doradztwo i serwis.',
     longDescription: 'Przewodowe czytniki kodów kreskowych (skanery USB / RS-232) — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania. Imager 2D odczytuje kody 1D, QR, DataMatrix i kody z ekranów. Zebra DS2208 (IP52, 5 lat gwarancji) — idealna na stałe stanowiska kasowe, apteki, przyjęcia towaru.',
     icon: 'scan',
-    productIds: ['zebra-ds2208', 'zebra-ds8208'],
-    productCount: 2,
+    productIds: ['zebra-ds2208', 'zebra-ds8208', 'zebra-li2208'],
+    productCount: 3,
   },
   {
     id: 'skanery-bezprzewodowe',
@@ -8039,6 +8039,151 @@ Gwarancja producenta 60 miesięcy (5 lat). Zebra DNA (123Scan, DataCapture DNA) 
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds8208/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/General-Purpose-Scanners/Handheld-Scanners/DS8200-Series/spec-sheet/ds82-series-spec-sheet-pl-pl.pdf', size: '0.4 MB' },
+    ],
+    createdAt: '2026-02-26',
+  },
+  {
+    id: 'zebra-li2208',
+    slug: 'zebra-li2208',
+    name: 'Zebra LI2208',
+    shortDescription: 'Ekonomiczny skaner liniowy 1D USB — następca LS2208',
+    description: `Dla kogo? Zebra LI2208 to przewodowy skaner liniowy 1D przeznaczony do kas fiskalnych, aptek, sklepów detalicznych, biur i bibliotek. Bezpośredni następca legendarnego laserowego LS2208 — w technologii imager (bez ruchomych części).
+
+Skaner liniowy z prędkością 547 skanów/s i zasięgiem do 51,8 cm odczytuje wszystkie popularne kody 1D: EAN-13, UPC-A/E, Code 128, Code 39, GS1-128 i GS1 DataBar. Technologia linear imager eliminuje ruchome części (lustro, silnik) znane z laserów — dłuższa żywotność, mniejsze zużycie energii, cichsza praca.
+
+Plug and Play: po podłączeniu kabla USB skaner emuluje klawiaturę (HID) i natychmiast wpisuje zeskanowany kod do aktywnego pola. Działa z każdym programem kasowym, aptecznym i ERP bez sterowników. Konfiguracja przez Zebra 123Scan lub kody z instrukcji.
+
+Kompatybilność z LS2208: LI2208 wykorzystuje te same kable, podstawki i uchwyty co LS2208 — upgrade bez wymiany infrastruktury. Waga 130 g, IP52, upadki z 1,5 m na beton. Gwarancja 60 miesięcy (5 lat).
+
+Uwaga: LI2208 odczytuje wyłącznie kody 1D. Jeśli potrzebujesz odczytu kodów 2D (QR, DataMatrix) lub kodów z ekranów — wybierz [Zebra DS2208](/produkt/zebra-ds2208) (od 352 zł) lub premium [Zebra DS8208](/produkt/zebra-ds8208) (od 1 027 zł). Dokumentacja: zebra.com/li2208.`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-przewodowe'],
+    manufacturerId: 'zebra',
+    priceFrom: 181,
+    images: [
+      '/images/products/zebra-li2208.png',
+      '/images/products/zebra-li2208-2.png',
+      '/images/products/zebra-li2208-white.png',
+      '/images/products/zebra-li2208-white-2.png',
+    ],
+    imageDescriptions: [
+      'Zebra LI2208 czarny — widok z boku, kompaktowy skaner liniowy 1D z ergonomicznym uchwytem',
+      'Zebra LI2208 czarny — widok z boku, okno skanera liniowego i logo Zebra',
+      'Zebra LI2208 biały (Nova White) — widok z boku, dwukolorowa obudowa',
+      'Zebra LI2208 biały (Nova White) — widok z drugiej strony, widoczne okno skanera',
+    ],
+    tags: ['retail', 'magazyn'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Typ skanera', value: 'Imager liniowy 1D (linear imager) przewodowy' },
+      { name: 'Skanowane kody', value: 'EAN-8, EAN-13, UPC-A/E, Code 39, Code 128, Code 93, I 2/5, GS1-128, GS1 DataBar, Codabar' },
+      { name: 'Odczyt kodów 2D', value: 'Nie — tylko kody 1D (liniowe)' },
+      { name: 'Szybkość skanowania', value: '547 skanów/s' },
+      { name: 'Zasięg skanowania', value: 'Do 51,8 cm (Code 39 20 mil)' },
+      { name: 'Interfejsy', value: 'USB HID, RS-232' },
+      { name: 'Klasa ochrony IP', value: 'IP52' },
+      { name: 'Odporność na upadki', value: '1,5 m na beton (wielokrotne)' },
+      { name: 'Temperatura pracy', value: '0°C do +50°C' },
+      { name: 'Wymiary', value: '164 × 65 × 95 mm' },
+      { name: 'Waga', value: '130 g (bez kabla)' },
+      { name: 'Gwarancja producenta', value: '60 miesięcy (5 lat)' },
+    ],
+    variants: [
+      {
+        partNumber: 'LI2208-SR00007ZZWW',
+        name: 'LI2208 czarny — sam skaner',
+        priceFrom: 181,
+        availability: 'available',
+        attributes: {
+          'Kolor': 'Czarny',
+        },
+      },
+      {
+        partNumber: 'LI2208-SR00006ZZWW',
+        name: 'LI2208 biały — sam skaner',
+        priceFrom: 181,
+        availability: 'available',
+        attributes: {
+          'Kolor': 'Biały',
+        },
+      },
+      {
+        partNumber: 'LI2208-SR7U2100AZW',
+        name: 'LI2208 czarny — kabel USB',
+        priceFrom: 195,
+        availability: 'available',
+        attributes: {
+          'Kabel USB': 'Tak',
+          'Kolor': 'Czarny',
+        },
+      },
+      {
+        partNumber: 'LI2208-SR6U2100AZW',
+        name: 'LI2208 biały — kabel USB',
+        priceFrom: 195,
+        availability: 'available',
+        attributes: {
+          'Kabel USB': 'Tak',
+          'Kolor': 'Biały',
+        },
+      },
+      {
+        partNumber: 'LI2208-SR7U2100SGW',
+        name: 'LI2208 czarny — kabel USB + podstawka',
+        priceFrom: 214,
+        availability: 'available',
+        attributes: {
+          'Kabel USB': 'Tak',
+          'Podstawka': 'Tak',
+          'Kolor': 'Czarny',
+        },
+      },
+      {
+        partNumber: 'LI2208-SR6U2100SGW',
+        name: 'LI2208 biały — kabel USB + podstawka',
+        priceFrom: 214,
+        availability: 'available',
+        attributes: {
+          'Kabel USB': 'Tak',
+          'Podstawka': 'Tak',
+          'Kolor': 'Biały',
+        },
+      },
+    ],
+    applications: ['Kasy fiskalne i POS', 'Apteki (kody 1D na lekach)', 'Biura i administracja', 'Biblioteki', 'Sklepy detaliczne', 'Magazyn — przyjęcie towaru (kody 1D)'],
+    compatibleAccessories: [],
+    relatedAccessories: [],
+    faq: [
+      {
+        question: 'Czym Zebra LI2208 różni się od LS2208?',
+        answer: 'LS2208 to skaner laserowy z ruchomym lustrem — szybki, ale podatny na zużycie mechaniczne. LI2208 to imager liniowy bez ruchomych części — cichszy, trwalszy, energooszczędny. Oba czytają tylko kody 1D. LI2208 jest szybszy (547 vs 100 skanów/s) i zachowuje pełną kompatybilność kabli i podstawek z LS2208.',
+      },
+      {
+        question: 'Czy LI2208 czyta kody QR i DataMatrix?',
+        answer: 'Nie — LI2208 to skaner liniowy 1D, odczytuje wyłącznie kody kreskowe (EAN, Code 128, Code 39 itd.). Do kodów 2D (QR, DataMatrix, PDF417) potrzebujesz skanera 2D: [Zebra DS2208](/produkt/zebra-ds2208) od 352 zł lub [Zebra DS8208](/produkt/zebra-ds8208) od 1 027 zł.',
+      },
+      {
+        question: 'Czy LI2208 nadaje się do apteki?',
+        answer: 'LI2208 odczytuje kody EAN i Code 128 na opakowaniach leków. Jednak dyrektywa FMD (Falsified Medicines Directive) wymaga odczytu kodów DataMatrix (2D) do weryfikacji w systemie KOWAL/NMVS. Do aptek z wymogiem FMD lepszy jest [DS2208](/produkt/zebra-ds2208) (2D, od 352 zł).',
+      },
+      {
+        question: 'Jaka jest gwarancja na Zebra LI2208?',
+        answer: 'Zebra udziela gwarancji 60 miesięcy (5 lat) — jednej z najdłuższych w klasie budżetowej. TAKMA zapewnia serwis gwarancyjny i pogwarancyjny we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra).',
+      },
+      {
+        question: 'Czym LI2208 różni się od DS2208?',
+        answer: '[DS2208](/produkt/zebra-ds2208) to imager 2D — czyta kody 1D i 2D (QR, DataMatrix) oraz kody z ekranów za ~352 zł. LI2208 to imager liniowy 1D — czyta tylko kody kreskowe za ~181 zł. Jeśli potrzebujesz wyłącznie kodów EAN/Code 128, LI2208 jest tańszym wyborem. Do QR i DataMatrix — DS2208.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Zebra LI2208?',
+        answer: 'W klasie 1D: Honeywell Voyager 1250g (laserowy, ~200 zł, gwarancja 3 lata), Datalogic QuickScan QD2500 (1D, ~250 zł). Jednak w 2026 r. rekomendujemy przejście na skaner 2D — [DS2208](/produkt/zebra-ds2208) od 352 zł czyta zarówno kody 1D, jak i QR/DataMatrix, a różnica cenowa to ok. 170 zł.',
+      },
+    ],
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-li2208/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/General-Purpose-Scanners/Handheld-Scanners/LI2208/spec-sheet/li2208-spec-sheet-en-us.pdf', size: '0.3 MB' },
     ],
     createdAt: '2026-02-26',
   },
