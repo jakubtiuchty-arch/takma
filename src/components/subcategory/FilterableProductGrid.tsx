@@ -213,7 +213,7 @@ export default function FilterableProductGrid({
                         }`}
                       >
                         {sub.name}
-                        <span className="text-gray-400 ml-1">({sub.productCount})</span>
+                        {sub.productCount > 0 && <span className="text-gray-400 ml-1">({sub.productCount})</span>}
                       </Link>
                     </li>
                   ))}

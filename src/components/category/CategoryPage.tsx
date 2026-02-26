@@ -7,6 +7,7 @@ import {
   getSubcategoriesForCategory,
   getChildSubcategories,
   categories,
+  brandCategories,
 } from '@/data/products'
 import { subcategoryContent } from '@/data/subcategory-content'
 
@@ -163,8 +164,18 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
                         {cat.name}
                         <span className="text-gray-400 ml-1">({cat.productCount})</span>
                       </Link>
-                      {isCurrent && subs.length > 0 && (
+                      {isCurrent && (brandCategories.filter(b => b.categoryId === cat.id).length > 0 || subs.length > 0) && (
                         <ul className="ml-3 mt-1 space-y-0.5">
+                          {brandCategories.filter(b => b.categoryId === cat.id).map((bc) => (
+                            <li key={bc.id}>
+                              <Link
+                                href={`/${bc.slug}`}
+                                className="block px-3 py-1.5 rounded-lg text-sm text-gray-500 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                              >
+                                {bc.name}
+                              </Link>
+                            </li>
+                          ))}
                           {subs.map((sub) => {
                             const children = getChildSubcategories(sub.id)
                             return (

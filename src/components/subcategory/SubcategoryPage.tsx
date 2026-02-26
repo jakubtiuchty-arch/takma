@@ -11,6 +11,7 @@ import {
   getChildSubcategories,
   subcategories,
   categories,
+  brandCategories,
 } from '@/data/products'
 import { subcategoryContent } from '@/data/subcategory-content'
 
@@ -240,21 +241,30 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
             filters={sidebarFilters[slug]}
             categoryNav={categories.map(cat => {
               const subs = getSubcategoriesForCategory(cat.id)
+              const catBrands = brandCategories.filter(b => b.categoryId === cat.id)
               const isParent = cat.id === subcategory.parentCategoryId
+              const brandChildren = catBrands.map(bc => ({
+                id: bc.id,
+                slug: bc.slug,
+                name: bc.name,
+                productCount: 0,
+                isCurrent: false,
+              }))
+              const subChildren = subs.map(sub => ({
+                id: sub.id,
+                slug: sub.slug,
+                name: sub.name,
+                productCount: sub.productCount,
+                isCurrent: sub.id === subcategory.id,
+              }))
               return {
                 id: cat.id,
                 slug: cat.slug,
                 name: cat.name,
                 productCount: cat.productCount,
                 isParent,
-                children: isParent && subs.length > 0
-                  ? subs.map(sub => ({
-                      id: sub.id,
-                      slug: sub.slug,
-                      name: sub.name,
-                      productCount: sub.productCount,
-                      isCurrent: sub.id === subcategory.id,
-                    }))
+                children: isParent && (brandChildren.length > 0 || subChildren.length > 0)
+                  ? [...brandChildren, ...subChildren]
                   : undefined,
               } satisfies CategoryNavItem
             })}
@@ -435,8 +445,18 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                           {cat.name}
                           <span className="text-gray-400 ml-1">({cat.productCount})</span>
                         </Link>
-                        {isParent && subs.length > 0 && (
+                        {isParent && (brandCategories.filter(b => b.categoryId === cat.id).length > 0 || subs.length > 0) && (
                           <ul className="ml-3 mt-1 space-y-0.5">
+                            {brandCategories.filter(b => b.categoryId === cat.id).map((bc) => (
+                              <li key={bc.id}>
+                                <Link
+                                  href={`/${bc.slug}`}
+                                  className="block px-3 py-1.5 rounded-lg text-sm text-gray-500 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                                >
+                                  {bc.name}
+                                </Link>
+                              </li>
+                            ))}
                             {subs.map((sub) => {
                               const children = getChildSubcategories(sub.id)
                               const isCurrentOrAncestor = sub.id === subcategory.id || sub.id === subcategory.parentSubcategoryId
