@@ -8389,7 +8389,7 @@ Dokumentacja: zebra.com/ds4608.`,
     name: 'Zebra DS3608-XR',
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-xr.html',
     seoTitle: 'Zebra DS3608-XR — skaner ultra-rugged, zasięg 32 m | od 2 417 zł',
-    seoDescription: 'Zebra DS3608-XR — ultra-wytrzymały skaner 2D dalekiego zasięgu (5 cm–32 m). IP65/IP68, upadki 3 m, -30°C. Magazyny wysokiego składowania, produkcja, outdoor. Cena od 2 417 zł netto.',
+    seoDescription: 'Zebra DS3608-XR (DS3608-XR60003VZWW, DS3608-XR3U4602ZVW) — ultra-wytrzymały skaner 2D dalekiego zasięgu (5 cm–32 m). IP65/IP68, upadki 3 m, -30°C. Magazyny wysokiego składowania, produkcja, outdoor. Cena od 2 417 zł netto.',
     shortDescription: 'Ultra-rugged skaner 2D dalekiego zasięgu 5 cm–32 m — magazyny, produkcja, outdoor',
     description: `Dla kogo? Zebra DS3608-XR to ultra-wytrzymały skaner ręczny 2D dalekiego zasięgu przeznaczony do magazynów wysokiego składowania, hal produkcyjnych, placów kontenerowych, doków przeładunkowych i mroźni. Następca DS3608-ER — z zasięgiem 40% większym (do 32 m) i 10% lżejszy.
 
@@ -8519,7 +8519,7 @@ Dokumentacja: zebra.com/ds3608.`,
     name: 'Zebra DS3608-HD',
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-hd.html',
     seoTitle: 'Zebra DS3608-HD — skaner ultra-rugged High Density, kody od 3 mil | od 1 808 zł',
-    seoDescription: 'Zebra DS3608-HD — ultra-wytrzymały skaner 2D do małych i gęstych kodów od 3 mil. IP65/IP68, upadki 3 m, -30°C. Elektronika, farmacja, produkcja precyzyjna. Cena od 1 808 zł netto.',
+    seoDescription: 'Zebra DS3608-HD (DS3608-HD20003VZWW, DS3608-HD3U4602VZW) — ultra-wytrzymały skaner 2D do małych i gęstych kodów od 3 mil. IP65/IP68, upadki 3 m, -30°C. Elektronika, farmacja, produkcja precyzyjna. Cena od 1 808 zł netto.',
     shortDescription: 'Ultra-rugged skaner 2D High Density do kodów od 3 mil — elektronika, farmacja, produkcja precyzyjna',
     description: `Dla kogo? Zebra DS3608-HD to ultra-wytrzymały skaner ręczny 2D w wersji High Density, zaprojektowany do odczytu bardzo małych i gęstych kodów kreskowych (od 3 mil) z bliskiej odległości. Idealny do linii produkcyjnych elektroniki, montażu PCB, kontroli jakości komponentów półprzewodnikowych, farmacji (fiolki, ampułki, blistry) i produkcji precyzyjnej.
 
@@ -8634,7 +8634,7 @@ Dokumentacja: zebra.com/ds3608.`,
     name: 'Zebra DS3608-SR',
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-sr.html',
     seoTitle: 'Zebra DS3608-SR — skaner ultra-rugged Standard Range, zasięg 152 cm | od 1 287 zł',
-    seoDescription: 'Zebra DS3608-SR — ultra-wytrzymały skaner 2D ogólnego przeznaczenia. IP65/IP68, upadki 3 m, -30°C. Magazyn, logistyka, produkcja. Cena od 1 287 zł netto.',
+    seoDescription: 'Zebra DS3608-SR (DS3608-SR00003VZWW, DS3608-SR3U4600VZW) — ultra-wytrzymały skaner 2D ogólnego przeznaczenia. IP65/IP68, upadki 3 m, -30°C. Magazyn, logistyka, produkcja. Cena od 1 287 zł netto.',
     shortDescription: 'Ultra-rugged skaner 2D Standard Range do 152 cm — magazyn, logistyka, produkcja',
     description: `Dla kogo? Zebra DS3608-SR to ultra-wytrzymały skaner ręczny 2D ogólnego przeznaczenia z serii DS3600 — najbardziej uniwersalny wariant, zaprojektowany do magazynów, centrów dystrybucyjnych, hal produkcyjnych, doków przeładunkowych i mroźni. Czyta standardowe kody 1D/2D od 5 mil na odległość do 152 cm.
 
@@ -8747,7 +8747,7 @@ Dokumentacja: zebra.com/ds3608.`,
     name: 'Zebra DS3608-HP',
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-hp.html',
     seoTitle: 'Zebra DS3608-HP — skaner ultra-rugged z OCR i document capture | od 1 654 zł',
-    seoDescription: 'Zebra DS3608-HP — ultra-wytrzymały skaner 2D High Performance z OCR, document capture i photo capture. IP65/IP68, upadki 3 m, zasięg do 2 m. Cena od 1 654 zł netto.',
+    seoDescription: 'Zebra DS3608-HP (DS3608-HP20003VZWW, DS3608-HP3U4602VZW) — ultra-wytrzymały skaner 2D High Performance z OCR, document capture i photo capture. IP65/IP68, upadki 3 m, zasięg do 2 m. Cena od 1 654 zł netto.',
     shortDescription: 'Ultra-rugged skaner 2D z OCR, document capture i photo capture — logistyka, transport, magazyn',
     description: `Dla kogo? Zebra DS3608-HP to ultra-wytrzymały skaner ręczny 2D High Performance z funkcjami document capture, OCR i photo capture — jedyny wariant serii DS3600 z możliwością przechwytywania dokumentów i tekstu. Zaprojektowany dla logistyki, transportu, magazynów i punktów odbioru — wszędzie tam, gdzie oprócz skanowania kodów trzeba fotografować dokumenty, odczytywać tekst drukowany lub przechwytywać podpisy.
 
