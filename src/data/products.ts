@@ -183,7 +183,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 352 zł netto. Zebra DS2208 — imager 2D, USB, 5 lat gwarancji. Skanery przewodowe do kas, aptek i biur. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 1,
+    productCount: 2,
   },
   // {
   //   id: 'tablety',
@@ -822,8 +822,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Skanery kodów kreskowych przewodowe USB od 352 zł netto. Zebra DS2208 — imager 2D, IP52, 5 lat gwarancji. Do kas, aptek, biur i magazynów. Autoryzowany partner Zebra — doradztwo i serwis.',
     longDescription: 'Przewodowe czytniki kodów kreskowych (skanery USB / RS-232) — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania. Imager 2D odczytuje kody 1D, QR, DataMatrix i kody z ekranów. Zebra DS2208 (IP52, 5 lat gwarancji) — idealna na stałe stanowiska kasowe, apteki, przyjęcia towaru.',
     icon: 'scan',
-    productIds: ['zebra-ds2208'],
-    productCount: 1,
+    productIds: ['zebra-ds2208', 'zebra-ds8208'],
+    productCount: 2,
   },
   {
     id: 'skanery-bezprzewodowe',
@@ -7921,6 +7921,122 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/General-Purpose-Scanners/Handheld-Scanners/DS2200-Series/spec-sheet/ds2200-series-spec-sheet-en-us.pdf', size: '0.5 MB' },
     ],
     createdAt: '2022-11-05',
+  },
+  {
+    id: 'zebra-ds8208',
+    slug: 'zebra-ds8208',
+    name: 'Zebra DS8208',
+    shortDescription: 'Premium skaner 2D z czujnikiem 2 MP — kasy, retail, EAS',
+    description: `Dla kogo? Zebra DS8208 to skaner ręczny klasy premium przeznaczony dla handlu detalicznego, supermarketów, sklepów wielkopowierzchniowych, aptek sieciowych i stanowisk obsługi zwrotów. Następca serii DS4608 — z 2-megapikselowym czujnikiem PRZM nowej generacji.
+
+Czujnik 2 MP (1600 × 1200 px) redefiniuje wydajność skanowania — odczytuje kody 1D i 2D z zasięgiem do 70 cm (UPC) i 104 cm (Code 39), nawet uszkodzone, słabo wydrukowane lub wyświetlane na ekranach. Szybkość dekodowania do 406 cm/s w trybie ręcznym eliminuje wąskie gardła na kasach o dużym natężeniu ruchu.
+
+Wbudowany dezaktywator EAS (Electronic Article Surveillance) w wariancie VCWW automatycznie wyłącza etykiety antykradzieżowe przy skanowaniu — bez dodatkowego urządzenia. Przycisk wielofunkcyjny umożliwia przypisanie najczęstszych operacji (przełączanie trybów, odczyt RFID) jednym kliknięciem.
+
+Konstrukcja odporna na upadki z 3 m na beton (MIL-STD) i 2000 wielokrotnych wstrząsów, klasa IP52. Bezstykowe ładowanie indukcyjne eliminuje zużycie złączy. Bateria PowerPrecision+ (3500 mAh) zapewnia do 100 000 skanów na ładowaniu w modelu bezprzewodowym DS8288. Alternatywnie: superkondensator PowerCap z pełnym ładowaniem w 35 sekund.
+
+Gwarancja producenta 60 miesięcy (5 lat). Zebra DNA (123Scan, DataCapture DNA) umożliwia masową konfigurację i zarządzanie flotą skanerów. Szczegółowa dokumentacja: zebra.com/ds82-series.`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-przewodowe'],
+    manufacturerId: 'zebra',
+    priceFrom: 1027,
+    images: [
+      '/images/products/zebra-ds8208.png',
+      '/images/products/zebra-ds8208-2.png',
+    ],
+    imageDescriptions: [
+      'Zebra DS8208 czarny — widok z boku, premium skaner 2D z czujnikiem 2 MP PRZM',
+      'Zebra DS8208 na stacji ładowania — bezstykowe ładowanie indukcyjne',
+    ],
+    tags: ['retail', 'magazyn'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Typ skanera', value: 'Imager 2D (area imager PRZM) przewodowy' },
+      { name: 'Skanowane kody 1D', value: 'EAN-8, EAN-13, UPC-A/E, Code 39, Code 128, Code 93, I 2/5, GS1-128, GS1 DataBar, Pharmacode' },
+      { name: 'Skanowane kody 2D', value: 'QR Code, DataMatrix, PDF417, Aztec, MaxiCode, MicroPDF417, GS1 Digital Link, Digimarc' },
+      { name: 'Odczyt z ekranów', value: 'Tak — smartfony, tablety, LCD' },
+      { name: 'OCR', value: 'OCR-A, OCR-B, MICR' },
+      { name: 'Szybkość skanowania', value: 'Do 406 cm/s (ręczny) / 102 cm/s (automatyczny)' },
+      { name: 'Rozdzielczość czujnika', value: '1600 × 1200 px (2 MP)' },
+      { name: 'Zasięg skanowania', value: 'Do 70 cm (UPC 13 mil) / do 104 cm (Code 39 20 mil)' },
+      { name: 'Pole widzenia', value: '48° (poziom) × 36° (pion)' },
+      { name: 'Źródło światła', value: 'Zielona dioda LED 524 nm' },
+      { name: 'Interfejsy', value: 'USB HID, RS-232' },
+      { name: 'EAS dezaktywator', value: 'Opcjonalny (wariant VCWW)' },
+      { name: 'Klasa ochrony IP', value: 'IP52' },
+      { name: 'Odporność na upadki', value: '3 m na beton (MIL-STD), 2000 wstrząsów 0,5 m' },
+      { name: 'Temperatura pracy', value: '0°C do +50°C' },
+      { name: 'Wymiary', value: '165 × 69 × 105 mm' },
+      { name: 'Waga', value: '176,5 g (bez kabla)' },
+      { name: 'Gwarancja producenta', value: '60 miesięcy (5 lat)' },
+    ],
+    variants: [
+      {
+        partNumber: 'DS8208-SR40004VZWW',
+        name: 'DS8208 — sam skaner (bez kabla)',
+        priceFrom: 1027,
+        availability: 'available',
+        attributes: {},
+      },
+      {
+        partNumber: 'DS8208-SR4U2104ZVW',
+        name: 'DS8208 — z kablem USB',
+        priceFrom: 1085,
+        availability: 'available',
+        attributes: {
+          'Kabel USB': 'Tak',
+        },
+      },
+      {
+        partNumber: 'DS8208-SR40004VCWW',
+        name: 'DS8208 — sam skaner + EAS dezaktywator',
+        priceFrom: 1131,
+        availability: 'available',
+        attributes: {
+          'EAS': 'Tak',
+        },
+      },
+    ],
+    applications: ['Kasy detaliczne i POS', 'Supermarkety i sklepy wielkopowierzchniowe', 'Apteki sieciowe', 'Obsługa zwrotów i reklamacji', 'Realizacja kuponów elektronicznych', 'Śledzenie towarów (magazyn zaplecza)'],
+    compatibleAccessories: [],
+    relatedAccessories: [],
+    faq: [
+      {
+        question: 'Czym Zebra DS8208 różni się od DS2208?',
+        answer: 'DS8208 to skaner klasy premium z czujnikiem 2 MP (vs 640×480 px w DS2208), zasięgiem do 70 cm (vs 37 cm), szybkością 406 cm/s (vs 220 cm/s), odpornością na upadki 3 m (vs 1,5 m) i opcjonalnym dezaktywatorem EAS. DS2208 od 352 zł to entry-level do lekkich zastosowań. DS8208 od 1 027 zł — do kas o dużym ruchu i retail.',
+      },
+      {
+        question: 'Co to jest dezaktywator EAS w DS8208?',
+        answer: 'EAS (Electronic Article Surveillance) to system antykradzieżowy stosowany w sklepach detalicznych. Wariant DS8208-SR40004VCWW ma wbudowany dezaktywator, który automatycznie wyłącza etykiety antykradzieżowe podczas skanowania kodu produktu — bez potrzeby dodatkowego urządzenia na kasie.',
+      },
+      {
+        question: 'Czy DS8208 wymaga specjalnych sterowników?',
+        answer: 'Nie — DS8208 w trybie USB HID emuluje klawiaturę i działa Plug and Play z każdym programem POS, ERP i WMS bez instalacji sterowników. Konfiguracja zaawansowana (prefiksy, sufiksy, symbologie) przez aplikację Zebra 123Scan lub skanowanie kodów konfiguracyjnych.',
+      },
+      {
+        question: 'Jaki jest zasięg skanowania DS8208?',
+        answer: 'DS8208 odczytuje kody UPC/EAN z odległości do 70 cm (28 cali), Code 39 do 104 cm (41 cali), a kody QR do 48 cm. Dzięki czujnikowi 2 MP i technologii PRZM skanuje nawet uszkodzone, słabo wydrukowane i wyblakłe kody.',
+      },
+      {
+        question: 'Czy istnieje wersja bezprzewodowa DS8208?',
+        answer: 'Tak — Zebra DS8288 to bezprzewodowy odpowiednik z Bluetooth i baterią PowerPrecision+ 3500 mAh (do 100 000 skanów) lub superkondensatorem PowerCap (ładowanie w 35 s). Dostępna jest też wersja RFID: DS8208-R i DS8288-R (od Q1 2026).',
+      },
+      {
+        question: 'Jaka jest gwarancja na Zebra DS8208?',
+        answer: 'Zebra udziela gwarancji 60 miesięcy (5 lat) na DS8208 — jednej z najdłuższych w klasie premium. Opcjonalnie: Zebra OneCare Select/Essential z rozszerzoną ochroną. TAKMA zapewnia serwis gwarancyjny i pogwarancyjny we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra).',
+      },
+      {
+        question: 'Jakie są alternatywy dla Zebra DS8208?',
+        answer: 'W segmencie premium: Honeywell Xenon Ultra 1962g (2D, USB, porównywalna klasa), Datalogic Magellan 1500i (prezentacyjny, do kas). W niższym segmencie: [Zebra DS2208](/produkt/zebra-ds2208) od 352 zł (entry-level 2D, 5 lat gwarancji). DS8208 wyróżnia się czujnikiem 2 MP, zasięgiem 70 cm i opcją EAS.',
+      },
+    ],
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds8208/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/General-Purpose-Scanners/Handheld-Scanners/DS8200-Series/spec-sheet/ds82-series-spec-sheet-pl-pl.pdf', size: '0.4 MB' },
+    ],
+    createdAt: '2026-02-26',
   },
 ]
 
