@@ -74,11 +74,16 @@ const nextConfig = {
       // ZEBRA SKANERY — warianty → strona główna skanera (tylko zmiana slugu)
       // =====================================================
       { source: '/produkt/zebra-ds2208-hc/:path*', destination: '/produkt/zebra-ds2208', permanent: true },
-      // DS3608 family: warianty (-sr, -er, -hd, -hp, -dp) + DS3678 + LI3608/LI3678
-      { source: '/produkt/zebra-ds3608-:path+', destination: '/produkt/zebra-ds3608', permanent: true },
-      { source: '/produkt/zebra-ds3678:path*', destination: '/produkt/zebra-ds3608', permanent: true },
-      { source: '/produkt/zebra-li3608:path*', destination: '/produkt/zebra-ds3608', permanent: true },
-      { source: '/produkt/zebra-li3678:path*', destination: '/produkt/zebra-ds3608', permanent: true },
+      // DS3608 legacy slugi → XR (aktualny model)
+      { source: '/produkt/zebra-ds3608', destination: '/produkt/zebra-ds3608-xr', permanent: true },
+      { source: '/produkt/zebra-ds3608-er/:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },
+      { source: '/produkt/zebra-ds3608-sr/:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },
+      { source: '/produkt/zebra-ds3608-hd/:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },
+      { source: '/produkt/zebra-ds3608-hp/:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },
+      { source: '/produkt/zebra-ds3608-dp/:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },
+      { source: '/produkt/zebra-ds3678:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },
+      { source: '/produkt/zebra-li3608:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },
+      { source: '/produkt/zebra-li3678:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },
       // DS8108/DS8178 family
       { source: '/produkt/zebra-ds8108/:path*', destination: '/produkt/zebra-ds8178', permanent: true },
       { source: '/produkt/czytnik-kodow-kreskowych-zebra-ds8108-hc/:path*', destination: '/produkt/zebra-ds8178', permanent: true },
