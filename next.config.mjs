@@ -78,7 +78,7 @@ const nextConfig = {
       { source: '/produkt/zebra-ds3608', destination: '/produkt/zebra-ds3608-xr', permanent: true },
       { source: '/produkt/zebra-ds3608-er/:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },
       { source: '/produkt/zebra-ds3608-sr/:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },
-      { source: '/produkt/zebra-ds3608-hd/:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },
+      // DS3608-HD ma własną stronę → redirect usunięty
       { source: '/produkt/zebra-ds3608-hp/:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },
       { source: '/produkt/zebra-ds3608-dp/:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },
       { source: '/produkt/zebra-ds3678:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },

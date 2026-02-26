@@ -183,7 +183,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208 — gwarancja 5 lat. Skanery przewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 5,
+    productCount: 6,
   },
   // {
   //   id: 'tablety',
@@ -822,8 +822,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Skanery kodów kreskowych przewodowe USB od 352 zł netto. Zebra DS2208 — imager 2D, IP52, 5 lat gwarancji. Do kas, aptek, biur i magazynów. Autoryzowany partner Zebra — doradztwo i serwis.',
     longDescription: 'Przewodowe czytniki kodów kreskowych (skanery USB / RS-232) — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania. Imager 2D odczytuje kody 1D, QR, DataMatrix i kody z ekranów. Zebra DS2208 (IP52, 5 lat gwarancji) — idealna na stałe stanowiska kasowe, apteki, przyjęcia towaru.',
     icon: 'scan',
-    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-li2208'],
-    productCount: 5,
+    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-li2208'],
+    productCount: 6,
   },
   {
     id: 'skanery-bezprzewodowe',
@@ -8510,6 +8510,121 @@ Dokumentacja: zebra.com/ds3608.`,
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds3608/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/DS3600-Series/spec-sheet/ds3600-xr-spec-sheet-en-us.pdf', size: '0.5 MB' },
+    ],
+    createdAt: '2026-02-26',
+  },
+  {
+    id: 'zebra-ds3608-hd',
+    slug: 'zebra-ds3608-hd',
+    name: 'Zebra DS3608-HD',
+    sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-hd.html',
+    seoTitle: 'Zebra DS3608-HD — skaner ultra-rugged High Density, kody od 3 mil | od 1 808 zł',
+    seoDescription: 'Zebra DS3608-HD — ultra-wytrzymały skaner 2D do małych i gęstych kodów od 3 mil. IP65/IP68, upadki 3 m, -30°C. Elektronika, farmacja, produkcja precyzyjna. Cena od 1 808 zł netto.',
+    shortDescription: 'Ultra-rugged skaner 2D High Density do kodów od 3 mil — elektronika, farmacja, produkcja precyzyjna',
+    description: `Dla kogo? Zebra DS3608-HD to ultra-wytrzymały skaner ręczny 2D w wersji High Density, zaprojektowany do odczytu bardzo małych i gęstych kodów kreskowych (od 3 mil) z bliskiej odległości. Idealny do linii produkcyjnych elektroniki, montażu PCB, kontroli jakości komponentów półprzewodnikowych, farmacji (fiolki, ampułki, blistry) i produkcji precyzyjnej.
+
+Sensor obrazu 1 280 × 960 px (1,2 Mpx) z optyką HD zoptymalizowaną do bliskiego pola — odczytuje kody Data Matrix 10 mil od 2,5 cm do 22,9 cm, a Code 128 od 3 mil (najgęstsza rozdzielczość w serii DS3600). Celownik laserowy 655 nm. Potwierdzenie odczytu: LED + dźwięk + wibracja (3-stopniowe).
+
+Multi-Code Data Formatting: jedno naciśnięcie spustu skanuje do 20 kodów jednocześnie — przyspieszenie inspekcji i weryfikacji na linii montażowej. Label Parse+ automatycznie ekstrahuje daty ważności, numery serii i dane GS1 z etykiet farmaceutycznych.
+
+Interfejsy: USB, RS-232, Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP — natywnie). IP65 + IP68, upadki z 3 m na beton, 7 500 obrotów w tumbler teście, praca od -30°C do +50°C. Waga 309 g. Gwarancja 36 miesięcy (3 lata).
+
+Dokumentacja: zebra.com/ds3608.`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-przewodowe'],
+    manufacturerId: 'zebra',
+    priceFrom: 1808,
+    images: [
+      '/images/products/zebra-ds3608-xr.png',
+      '/images/products/zebra-ds3608-xr-2.png',
+      '/images/products/zebra-ds3608-xr-3.png',
+    ],
+    imageDescriptions: [
+      'Zebra DS3608-HD zielony — widok z przodu, okno skanera z optyką High Density do małych kodów',
+      'Zebra DS3608-HD zielony — widok z boku, masywna obudowa ultra-rugged IP65/IP68',
+      'Zebra DS3608-HD zielony — widok z tyłu, ergonomiczny uchwyt z gumowaną nakładką',
+    ],
+    tags: ['produkcja', 'healthcare', 'logistyka'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Typ skanera', value: 'Area imager 2D ultra-rugged, High Density (bliski zasięg, kody od 3 mil)' },
+      { name: 'Sensor', value: '1 280 × 960 px (1,2 Mpx)' },
+      { name: 'Skanowane kody 1D', value: 'Code 39, Code 128, Code 93, EAN/UPC, GS1 DataBar, I 2/5, Codabar, MSI Plessey' },
+      { name: 'Skanowane kody 2D', value: 'QR Code, DataMatrix, PDF417, Aztec, MaxiCode, Micro QR, Han Xin' },
+      { name: 'Zasięg (Code 128 3 mil)', value: '5,1–7,6 cm (2,0–3,0 in.)' },
+      { name: 'Zasięg (Code 128 20 mil)', value: '5,6–66 cm (2,2–26 in.)' },
+      { name: 'Zasięg (DataMatrix 10 mil)', value: '2,5–22,9 cm (1,0–9,0 in.)' },
+      { name: 'Multi-Code', value: 'Tak — do 20 kodów na jedno naciśnięcie spustu' },
+      { name: 'Celownik', value: 'Laser 655 nm' },
+      { name: 'Interfejsy', value: 'USB, RS-232, Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP)' },
+      { name: 'Klasa szczelności', value: 'IP65 + IP68 (pyłoszczelny + zanurzalny)' },
+      { name: 'Odporność na upadki', value: '3,0 m na beton (wielokrotne)' },
+      { name: 'Tumble test', value: '7 500 obrotów (1,0 m)' },
+      { name: 'Temperatura pracy', value: '-30°C do +50°C' },
+      { name: 'Wymiary', value: '185 × 76 × 132 mm' },
+      { name: 'Waga', value: '309 g' },
+      { name: 'Gwarancja', value: '36 miesięcy (3 lata)' },
+    ],
+    variants: [
+      {
+        partNumber: 'DS3608-HD20003VZWW',
+        name: 'DS3608-HD — sam skaner',
+        priceFrom: 1808,
+        availability: 'available',
+        attributes: {},
+      },
+      {
+        partNumber: 'DS3608-HD3U4602VZW',
+        name: 'DS3608-HD — kabel USB',
+        priceFrom: 1916,
+        availability: 'available',
+        attributes: {
+          'Kabel USB': 'Tak',
+        },
+      },
+    ],
+    applications: ['Linie produkcyjne elektroniki i montaż PCB', 'Kontrola jakości komponentów półprzewodnikowych', 'Farmacja — weryfikacja fiolek, ampułek i blistrów', 'Produkcja precyzyjna — małe kody na częściach', 'Laboratoria i inspekcja jakości', 'Hale produkcyjne (od -30°C do +50°C)'],
+    compatibleAccessories: [],
+    relatedAccessories: ['zebra-stand-ds3608', 'zebra-cable-usb-ds3608', 'zebra-cable-usb-long-ds3608'],
+    faq: [
+      {
+        question: 'Do czego służy wariant HD (High Density) skanera DS3608?',
+        answer: 'Wariant HD jest zoptymalizowany do odczytu bardzo małych i gęstych kodów kreskowych — od 3 mil (0,076 mm). Idealny do elektroniki (kody Data Matrix na PCB), farmacji (małe kody na fiolkach i ampułkach) i produkcji precyzyjnej. Standardowy wariant SR czyta od 5 mil.',
+      },
+      {
+        question: 'Jaki jest zasięg skanowania DS3608-HD?',
+        answer: 'DS3608-HD skanuje z bliskiej odległości: Code 128 (3 mil) od 5,1 do 7,6 cm, Code 128 (20 mil) od 5,6 do 66 cm, DataMatrix 10 mil od 2,5 do 22,9 cm. Optyka HD jest zoptymalizowana pod kątem precyzji, nie zasięgu — do dalekiego zasięgu służy [DS3608-XR](/produkt/zebra-ds3608-xr) (do 32 m).',
+      },
+      {
+        question: 'Czy DS3608-HD działa w mroźni?',
+        answer: 'Tak — temperatura pracy od -30°C do +50°C. Podwójne uszczelnienie IP65 + IP68 chroni przed wilgocią i lodem. Skaner wytrzymuje wielokrotne przejścia między mroźnią a temperaturą pokojową.',
+      },
+      {
+        question: 'Ile kodów naraz skanuje DS3608-HD?',
+        answer: 'Funkcja Multi-Code Data Formatting skanuje do 20 kodów jednym naciśnięciem spustu. Na liniach produkcyjnych elektroniki przyspiesza inspekcję i weryfikację komponentów z wieloma kodami Data Matrix.',
+      },
+      {
+        question: 'Czym DS3608-HD różni się od DS3608-XR?',
+        answer: 'HD (High Density) czyta bardzo małe kody od 3 mil z bliskiej odległości (do 66 cm). [XR](/produkt/zebra-ds3608-xr) (Extended Range) to skaner dalekiego zasięgu do 32 m z podwójnym sensorem. HD wybierz do elektroniki i farmacji, XR do magazynów wysokiego składowania.',
+      },
+      {
+        question: 'Czy DS3608-HD obsługuje Industrial Ethernet?',
+        answer: 'Tak — natywnie, bez konwerterów. Obsługuje EtherNet/IP, Profinet i Modbus TCP. Do standardowej komunikacji wystarczy USB lub RS-232.',
+      },
+      {
+        question: 'Jaka jest gwarancja na DS3608-HD?',
+        answer: 'Zebra udziela gwarancji 36 miesięcy (3 lata) na skaner. TAKMA zapewnia serwis gwarancyjny i pogwarancyjny we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra). Dostępne plany serwisowe Zebra OneCare.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Zebra DS3608-HD?',
+        answer: 'W klasie ultra-rugged High Density: Honeywell Granit XP 1990iHD (kody od 3 mil), Datalogic PowerScan 9600-HD. W niższym segmencie HD: [Zebra DS4608](/produkt/zebra-ds4608) (od 1 178 zł, kody od 3 mil, IP52). DS3608-HD wyróżnia się IP65/IP68, upadkami z 3 m i zakresem -30°C do +50°C.',
+      },
+    ],
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds3608/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/DS3600-Series/spec-sheet/ds36x8-hd-spec-sheet-en-us.pdf', size: '0.5 MB' },
     ],
     createdAt: '2026-02-26',
   },
