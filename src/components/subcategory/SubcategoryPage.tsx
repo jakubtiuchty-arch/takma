@@ -14,6 +14,7 @@ import {
   brandCategories,
 } from '@/data/products'
 import { subcategoryContent } from '@/data/subcategory-content'
+import ServiceBanner from '@/components/ui/ServiceBanner'
 
 /** Renders text with \n\n paragraph breaks and \n line breaks within paragraphs */
 function RichText({ text, className }: { text: string; className?: string }) {
@@ -393,6 +394,8 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
               </div>
             )}
 
+            <ServiceBanner categoryId={subcategory.parentCategoryId} />
+
             {/* Cross-links */}
             {siblings.length > 0 && (
               <div className="mt-12 pt-8 border-t border-gray-200">
@@ -629,6 +632,8 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                   </section>
                 </div>
               )}
+
+              <ServiceBanner categoryId={subcategory.parentCategoryId} />
 
               {siblings.length > 0 && (
                 <div className="mt-12 pt-8 border-t border-gray-200">

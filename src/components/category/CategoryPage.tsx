@@ -10,6 +10,7 @@ import {
   brandCategories,
 } from '@/data/products'
 import { subcategoryContent } from '@/data/subcategory-content'
+import ServiceBanner from '@/components/ui/ServiceBanner'
 
 interface CategoryPageProps {
   slug: string
@@ -357,6 +358,8 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
 
               </div>
             )}
+
+            <ServiceBanner categoryId={category.id} />
           </div>
         </div>
       </div>

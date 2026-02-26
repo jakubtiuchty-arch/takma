@@ -11,6 +11,7 @@ import {
   brandCategories,
 } from '@/data/products'
 import { brandCategoryContent } from '@/data/brand-category-content'
+import ServiceBanner from '@/components/ui/ServiceBanner'
 
 /** Renders text with \n\n paragraph breaks */
 function RichText({ text, className }: { text: string; className?: string }) {
@@ -429,6 +430,8 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                 </section>
               </div>
             )}
+
+            <ServiceBanner categoryId={bc.categoryId} />
 
             {/* Cross-links */}
             <div className="mt-12 pt-8 border-t border-gray-200">
