@@ -46,7 +46,17 @@ export default async function SeoAgentPage() {
     }),
 
     prisma.seoAlert.findMany({
-      where: { isRead: false },
+      where: {
+        isRead: false,
+        // Filtruj stare URL-e WooCommerce
+        NOT: {
+          OR: [
+            { title: { contains: '/product/' } },
+            { title: { contains: '/shop/' } },
+            { title: { contains: '?p=' } },
+          ],
+        },
+      },
       orderBy: [{ severity: 'asc' }, { createdAt: 'desc' }],
       take: 10,
       select: {
