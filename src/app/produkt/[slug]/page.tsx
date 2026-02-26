@@ -15,6 +15,7 @@ import {
   DownloadIcon,
   CheckIcon,
 } from '@/components/ui/Icons'
+import LinkedText from '@/components/ui/LinkedText'
 import AddToRFQButton from './AddToRFQButton'
 import AskAboutProductButton from './AskAboutProductButton'
 import ServicePlansBox from './ServicePlansBox'
@@ -707,7 +708,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                         <ChevronRightIcon size={20} className="text-gray-400 flex-shrink-0 transition-transform group-open:rotate-90" />
                       </summary>
                       <div className="px-4 pb-3 sm:px-6 sm:pb-4">
-                        <p className="text-sm text-gray-600 leading-relaxed">{item.answer}</p>
+                        <p className="text-sm text-gray-600 leading-relaxed"><LinkedText text={item.answer} /></p>
                       </div>
                     </details>
                   ))}
