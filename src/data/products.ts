@@ -7943,10 +7943,14 @@ Gwarancja producenta 60 miesięcy (5 lat). Zebra DNA (123Scan, DataCapture DNA) 
     images: [
       '/images/products/zebra-ds8208.png',
       '/images/products/zebra-ds8208-2.png',
+      '/images/products/zebra-ds8208-3.png',
+      '/images/products/zebra-ds8208-4.png',
     ],
     imageDescriptions: [
-      'Zebra DS8208 czarny — widok z boku, premium skaner 2D z czujnikiem 2 MP PRZM',
-      'Zebra DS8208 na stacji ładowania — bezstykowe ładowanie indukcyjne',
+      'Zebra DS8208 czarny — widok z boku, okno skanera 2 MP PRZM i ergonomiczny uchwyt',
+      'Zebra DS8208 czarny — widok z przodu, widoczny czujnik 2 MP i przycisk wielofunkcyjny',
+      'Zebra DS8208 czarny — widok z boku, zielona dioda LED i port USB-C',
+      'Zebra DS8208 czarny — na podstawce gooseneck, tryb hands-free na kasie',
     ],
     tags: ['retail', 'magazyn'],
     availability: 'available',
