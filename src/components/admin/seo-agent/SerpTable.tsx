@@ -52,12 +52,22 @@ function PositionBadge({ position }: { position: number | null }) {
   )
 }
 
+function sortByTakmaPosition(a: SerpPosition, b: SerpPosition): number {
+  if (a.takmaPosition === null && b.takmaPosition === null) return 0
+  if (a.takmaPosition === null) return 1
+  if (b.takmaPosition === null) return -1
+  return a.takmaPosition - b.takmaPosition
+}
+
 export default function SerpTable({ positions }: SerpTableProps) {
   if (positions.length === 0) {
     return (
-      <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-        <h3 className="text-sm font-semibold text-gray-900 mb-3">Pozycje SERP</h3>
-        <p className="text-sm text-gray-500">Brak danych SERP. Dodaj zmienne GOOGLE_CSE_API_KEY i GOOGLE_CSE_ID.</p>
+      <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 text-center">
+        <svg className="w-10 h-10 text-gray-300 mx-auto mb-3" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5" />
+        </svg>
+        <h3 className="text-sm font-semibold text-gray-900 mb-1">Brak danych SERP</h3>
+        <p className="text-sm text-gray-500">Dodaj zmienną SERPER_API_KEY i uruchom pipeline.</p>
       </div>
     )
   }
@@ -70,62 +80,76 @@ export default function SerpTable({ positions }: SerpTableProps) {
     groups.set(pos.keywordGroup, group)
   }
 
+  // Sort each group by TAKMA position (best first, null last)
+  Array.from(groups.keys()).forEach(key => {
+    const items = groups.get(key)!
+    groups.set(key, items.sort(sortByTakmaPosition))
+  })
+
   // Stats
   const inTop3 = positions.filter(p => p.takmaPosition !== null && p.takmaPosition <= 3).length
   const inTop10 = positions.filter(p => p.takmaPosition !== null && p.takmaPosition <= 10).length
-  const inTop30 = positions.filter(p => p.takmaPosition !== null).length
+  const inTop30 = positions.filter(p => p.takmaPosition !== null && p.takmaPosition <= 30).length
 
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-      <div className="flex items-center justify-between mb-4">
-        <h3 className="text-sm font-semibold text-gray-900">
-          Pozycje SERP <span className="text-gray-400 font-normal">({positions.length} fraz)</span>
-        </h3>
-        <div className="flex items-center gap-3 text-xs">
-          <span className="flex items-center gap-1">
-            <span className="w-2 h-2 rounded-full bg-green-500" />
-            Top 3: {inTop3}
-          </span>
-          <span className="flex items-center gap-1">
-            <span className="w-2 h-2 rounded-full bg-yellow-500" />
-            Top 10: {inTop10}
-          </span>
-          <span className="flex items-center gap-1">
-            <span className="w-2 h-2 rounded-full bg-gray-400" />
-            Top 30: {inTop30}
-          </span>
+    <div className="space-y-4">
+      {/* Summary cards */}
+      <div className="grid grid-cols-3 gap-4">
+        <div className="bg-white rounded-lg border border-green-200 p-4">
+          <div className="flex items-center justify-between">
+            <span className="text-sm text-green-700 font-medium">Top 3</span>
+            <span className="w-2.5 h-2.5 rounded-full bg-green-500" />
+          </div>
+          <p className="text-3xl font-bold text-green-800 mt-1">{inTop3}</p>
+          <p className="text-xs text-green-600 mt-0.5">z {positions.length} fraz</p>
+        </div>
+        <div className="bg-white rounded-lg border border-yellow-200 p-4">
+          <div className="flex items-center justify-between">
+            <span className="text-sm text-yellow-700 font-medium">Top 10</span>
+            <span className="w-2.5 h-2.5 rounded-full bg-yellow-500" />
+          </div>
+          <p className="text-3xl font-bold text-yellow-800 mt-1">{inTop10}</p>
+          <p className="text-xs text-yellow-600 mt-0.5">z {positions.length} fraz</p>
+        </div>
+        <div className="bg-white rounded-lg border border-gray-200 p-4">
+          <div className="flex items-center justify-between">
+            <span className="text-sm text-gray-600 font-medium">Top 30</span>
+            <span className="w-2.5 h-2.5 rounded-full bg-gray-400" />
+          </div>
+          <p className="text-3xl font-bold text-gray-700 mt-1">{inTop30}</p>
+          <p className="text-xs text-gray-500 mt-0.5">z {positions.length} fraz</p>
         </div>
       </div>
 
-      <div className="overflow-x-auto">
-        <table className="w-full text-sm">
-          <thead>
-            <tr className="border-b border-gray-200">
-              <th className="text-left py-2 pr-4 font-medium text-gray-500">Fraza</th>
-              <th className="text-center py-2 px-2 font-medium text-blue-600">TAKMA</th>
-              {COMPETITORS.map(c => (
-                <th key={c} className="text-center py-2 px-2 font-medium text-gray-400" title={c}>
-                  {c.split('.')[0]}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {Array.from(groups.entries()).map(([group, items]) => (
-              <>
-                <tr key={`group-${group}`}>
-                  <td colSpan={COMPETITORS.length + 2} className="pt-3 pb-1">
-                    <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
-                      {GROUP_LABELS[group] || group}
-                    </span>
-                  </td>
+      {/* Group cards */}
+      {Array.from(groups.entries()).map(([group, items]) => (
+        <div key={group} className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+          <div className="px-4 py-3 bg-gray-50 border-b border-gray-200">
+            <h4 className="text-sm font-semibold text-gray-700">
+              {GROUP_LABELS[group] || group}
+              <span className="ml-2 text-gray-400 font-normal">({items.length})</span>
+            </h4>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-gray-100">
+                  <th className="text-left py-2 pl-4 pr-3 font-medium text-gray-500">Fraza</th>
+                  <th className="text-center py-2 px-2 font-medium text-blue-600 bg-blue-50/50">TAKMA</th>
+                  {COMPETITORS.map(c => (
+                    <th key={c} className="text-center py-2 px-2 font-medium text-gray-400" title={c}>
+                      {c.split('.')[0]}
+                    </th>
+                  ))}
                 </tr>
+              </thead>
+              <tbody>
                 {items.map(pos => (
-                  <tr key={pos.keyword} className="border-b border-gray-50 hover:bg-gray-50">
-                    <td className="py-1.5 pr-4 text-gray-700 truncate max-w-[200px]" title={pos.keyword}>
+                  <tr key={pos.keyword} className="border-b border-gray-50 hover:bg-gray-50/50">
+                    <td className="py-1.5 pl-4 pr-3 text-gray-700 truncate max-w-[220px]" title={pos.keyword}>
                       {pos.keyword}
                     </td>
-                    <td className="py-1.5 px-2 text-center">
+                    <td className="py-1.5 px-2 text-center bg-blue-50/50">
                       <PositionBadge position={pos.takmaPosition} />
                     </td>
                     {COMPETITORS.map(c => (
@@ -135,14 +159,14 @@ export default function SerpTable({ positions }: SerpTableProps) {
                     ))}
                   </tr>
                 ))}
-              </>
-            ))}
-          </tbody>
-        </table>
-      </div>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      ))}
 
       {/* Legend */}
-      <div className="mt-3 flex items-center gap-4 text-[11px] text-gray-400">
+      <div className="flex items-center gap-4 text-[11px] text-gray-400 px-1">
         <span className="flex items-center gap-1"><span className="inline-block w-3 h-3 rounded bg-green-100" /> 1-3</span>
         <span className="flex items-center gap-1"><span className="inline-block w-3 h-3 rounded bg-yellow-100" /> 4-10</span>
         <span className="flex items-center gap-1"><span className="inline-block w-3 h-3 rounded bg-gray-100" /> 11-30</span>

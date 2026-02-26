@@ -55,10 +55,13 @@ interface DashboardProps {
   serpPositions: SerpPosition[]
 }
 
+type Tab = 'pozycje' | 'alerty' | 'historia'
+
 export default function Dashboard({ runSecret, latestReport, recentMetrics, unreadAlerts, serpPositions }: DashboardProps) {
   const router = useRouter()
   const [running, setRunning] = useState(false)
   const [runResult, setRunResult] = useState<string | null>(null)
+  const [activeTab, setActiveTab] = useState<Tab>('pozycje')
 
   async function handleRunPipeline() {
     setRunning(true)
@@ -150,6 +153,7 @@ export default function Dashboard({ runSecret, latestReport, recentMetrics, unre
       {/* Score cards */}
       {latestReport && (
         <>
+          {/* Score cards — zawsze widoczne */}
           <div className="grid grid-cols-4 gap-4 mb-6">
             <ScoreCard label="Score" score={latestReport.scoreOverall} delta={latestReport.scoreDelta} />
             <ScoreCard label="SEO" score={latestReport.scoreSeo} delta={0} />
@@ -157,18 +161,52 @@ export default function Dashboard({ runSecret, latestReport, recentMetrics, unre
             <ScoreCard label="GEO" score={latestReport.scoreGeo} delta={0} />
           </div>
 
-          {/* Alerts */}
-          <div className="mb-6">
-            <AlertsList alerts={unreadAlerts} />
+          {/* Tabs */}
+          <div className="border-b border-gray-200 mb-6">
+            <nav className="flex gap-6">
+              {([
+                { id: 'pozycje' as Tab, label: 'Pozycje SERP', count: serpPositions.length },
+                { id: 'alerty' as Tab, label: 'Alerty', count: unreadAlerts.length },
+                { id: 'historia' as Tab, label: 'Historia', count: recentMetrics.length },
+              ]).map(tab => (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`pb-3 text-sm font-medium transition-colors relative ${
+                    activeTab === tab.id
+                      ? 'text-blue-600 border-b-2 border-blue-600'
+                      : 'text-gray-500 hover:text-gray-700'
+                  }`}
+                >
+                  {tab.label}
+                  {tab.count > 0 && (
+                    <span className={`ml-1.5 inline-flex items-center justify-center min-w-[20px] px-1.5 py-0.5 rounded-full text-[11px] font-medium ${
+                      activeTab === tab.id
+                        ? 'bg-blue-100 text-blue-700'
+                        : 'bg-gray-100 text-gray-500'
+                    }`}>
+                      {tab.count}
+                    </span>
+                  )}
+                </button>
+              ))}
+            </nav>
           </div>
 
-          {/* SERP Positions (Faza 2) */}
-          <div className="mb-6">
-            <SerpTable positions={serpPositions} />
-          </div>
+          {/* Tab content */}
+          {activeTab === 'pozycje' && (
+            <div className="mb-6">
+              <SerpTable positions={serpPositions} />
+            </div>
+          )}
 
-          {/* Metrics trend */}
-          {recentMetrics.length > 0 && (
+          {activeTab === 'alerty' && (
+            <div className="mb-6">
+              <AlertsList alerts={unreadAlerts} />
+            </div>
+          )}
+
+          {activeTab === 'historia' && recentMetrics.length > 0 && (
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
               <h3 className="text-sm font-semibold text-gray-900 mb-3">
                 Historia metryk <span className="text-gray-400 font-normal">({recentMetrics.length} raportów)</span>
@@ -207,6 +245,12 @@ export default function Dashboard({ runSecret, latestReport, recentMetrics, unre
                   </tbody>
                 </table>
               </div>
+            </div>
+          )}
+
+          {activeTab === 'historia' && recentMetrics.length === 0 && (
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 text-center">
+              <p className="text-sm text-gray-500">Brak historii metryk.</p>
             </div>
           )}
         </>
