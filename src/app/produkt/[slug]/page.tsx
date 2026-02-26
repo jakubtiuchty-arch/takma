@@ -751,14 +751,14 @@ export default async function ProductPage({ params }: ProductPageProps) {
             {product.manufacturerId === 'zebra' && (product.variants?.length || /głowic|wałek|wałk|obcinak|odklejak|cutter|dispenser|platen|printhead/i.test(product.name)) && (
               <section>
                 <a
-                  href={product.categoryId === 'terminale-mobilne' ? 'https://www.serwis-zebry.pl/serwis-terminali-zebra' : 'https://www.serwis-zebry.pl/serwis-drukarek-zebra'}
+                  href={product.categoryId === 'terminale-mobilne' ? 'https://www.serwis-zebry.pl/serwis-terminali-zebra' : product.categoryId === 'skanery-kodow-kreskowych' ? 'https://www.serwis-zebry.pl/serwis-skanerow-zebra' : 'https://www.serwis-zebry.pl/serwis-drukarek-zebra'}
                   target="_blank"
                   rel="noopener"
                   className="block relative rounded-xl overflow-hidden hover:shadow-lg transition-all group bg-gray-900 min-h-[160px]"
                 >
                   <img
                     src="/images/serwis-zebry-banner.jpg"
-                    alt={product.categoryId === 'terminale-mobilne' ? 'Serwis-Zebry.pl — autoryzowany serwis terminali Zebra' : 'Serwis-Zebry.pl — autoryzowany serwis drukarek Zebra'}
+                    alt={product.categoryId === 'terminale-mobilne' ? 'Serwis-Zebry.pl — autoryzowany serwis terminali Zebra' : product.categoryId === 'skanery-kodow-kreskowych' ? 'Serwis-Zebry.pl — autoryzowany serwis skanerów Zebra' : 'Serwis-Zebry.pl — autoryzowany serwis drukarek Zebra'}
                     className="absolute inset-0 w-full h-full object-cover object-[65%_28%]"
                   />
                   <div className="relative h-full flex items-center justify-between p-6">
