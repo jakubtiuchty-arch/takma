@@ -1,13 +1,14 @@
 /**
- * SERP Collector — Google Custom Search API
+ * SERP Collector — Serper.dev API
  * Faza 2: Śledzi pozycje TAKMA i konkurentów dla ~25 fraz
- * API: https://www.googleapis.com/customsearch/v1
- * Free tier: 100 calls/dzień → ~25 fraz × 3 pages = 75 calls/run
+ * API: https://google.serper.dev/search
+ * Free tier: 2500 queries/miesiąc → 25 fraz/run × 2 runs/tydzień = ~200/msc
+ * Env var: SERPER_API_KEY
  */
 
 import type { SerpKeywordResult, SerpData } from '../types'
 
-const CSE_API = 'https://www.googleapis.com/customsearch/v1'
+const SERPER_API = 'https://google.serper.dev/search'
 
 // Konkurenci do śledzenia
 const COMPETITORS = [
@@ -55,71 +56,65 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
 ]
 
 // ---------------------------------------------------------------------------
-// CSE API query — pobiera 10 wyników na call (max start=21 dla top 30)
+// Serper.dev API — 1 call = top 30 organicznych wyników
 // ---------------------------------------------------------------------------
 
-interface CSEItem {
+interface SerperOrganicResult {
   title: string
   link: string
-  displayLink: string
   snippet: string
-  pagemap?: {
-    metatags?: Array<Record<string, string>>
+  position: number
+}
+
+interface SerperResponse {
+  organic?: SerperOrganicResult[]
+  knowledgeGraph?: {
+    title?: string
+    type?: string
   }
 }
 
-interface CSEResponse {
-  items?: CSEItem[]
-  searchInformation?: {
-    totalResults: string
-  }
-  queries?: {
-    request?: Array<{ totalResults: string }>
-  }
-}
-
-async function queryCSE(
+async function querySerper(
   apiKey: string,
-  cseId: string,
   query: string,
-  start: number,
-): Promise<CSEItem[]> {
-  const params = new URLSearchParams({
-    key: apiKey,
-    cx: cseId,
-    q: query,
-    gl: 'pl',
-    hl: 'pl',
-    start: String(start),
-    num: '10',
+): Promise<SerperOrganicResult[]> {
+  const response = await fetch(SERPER_API, {
+    method: 'POST',
+    headers: {
+      'X-API-KEY': apiKey,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      q: query,
+      gl: 'pl',
+      hl: 'pl',
+      num: 30,
+    }),
   })
 
-  const response = await fetch(`${CSE_API}?${params}`)
-
   if (!response.ok) {
-    // 429 = quota exceeded — graceful degradation
     if (response.status === 429) {
-      console.warn(`[SERP] Quota exceeded for "${query}" (start=${start})`)
+      console.warn(`[SERP] Rate limit for "${query}"`)
       return []
     }
     const text = await response.text()
-    throw new Error(`CSE API ${response.status}: ${text}`)
+    throw new Error(`Serper API ${response.status}: ${text}`)
   }
 
-  const data: CSEResponse = await response.json()
-  return data.items || []
+  const data: SerperResponse = await response.json()
+  return data.organic || []
 }
 
 // ---------------------------------------------------------------------------
 // Znalezienie pozycji domeny w wynikach
 // ---------------------------------------------------------------------------
 
-function findPosition(items: CSEItem[], domain: string): number | null {
-  for (let i = 0; i < items.length; i++) {
+function findPosition(results: SerperOrganicResult[], domain: string): number | null {
+  for (const result of results) {
     try {
-      const url = new URL(items[i].link)
+      const url = new URL(result.link)
       if (url.hostname === domain || url.hostname === `www.${domain}` || url.hostname.endsWith(`.${domain}`)) {
-        return i + 1
+        return result.position
       }
     } catch {
       // invalid URL, skip
@@ -128,83 +123,48 @@ function findPosition(items: CSEItem[], domain: string): number | null {
   return null
 }
 
-function hasRichSnippetInResults(items: CSEItem[]): boolean {
-  // Heurystyka: sprawdź czy TAKMA ma rich snippet (pagemap z FAQ/Product)
-  for (const item of items) {
-    try {
-      const url = new URL(item.link)
-      if (url.hostname.includes('takma.com.pl')) {
-        if (item.pagemap?.metatags) {
-          return true
-        }
-      }
-    } catch {
-      // skip
-    }
-  }
-  return false
-}
-
 // ---------------------------------------------------------------------------
 // Collect SERP positions for all keywords
 // ---------------------------------------------------------------------------
 
 export async function collectSERP(): Promise<SerpData> {
-  const apiKey = process.env.GOOGLE_CSE_API_KEY
-  const cseId = process.env.GOOGLE_CSE_ID
+  const apiKey = process.env.SERPER_API_KEY
 
-  if (!apiKey || !cseId) {
-    throw new Error('Brak GOOGLE_CSE_API_KEY lub GOOGLE_CSE_ID')
+  if (!apiKey) {
+    throw new Error('Brak SERPER_API_KEY')
   }
 
-  console.log(`[SERP] Start — ${TRACKED_KEYWORDS.length} fraz do sprawdzenia`)
+  console.log(`[SERP] Start — ${TRACKED_KEYWORDS.length} fraz (Serper.dev)`)
 
   const results: SerpKeywordResult[] = []
 
-  // Przetwarzaj po jednym keyword, żeby nie przekroczyć quota
   for (const { keyword, group } of TRACKED_KEYWORDS) {
     try {
-      // 3 calls per keyword: start=1, 11, 21 → top 30 results
-      const [page1, page2, page3] = await Promise.all([
-        queryCSE(apiKey, cseId, keyword, 1),
-        queryCSE(apiKey, cseId, keyword, 11),
-        queryCSE(apiKey, cseId, keyword, 21),
-      ])
+      const organic = await querySerper(apiKey, keyword)
 
-      const allItems = [...page1, ...page2, ...page3]
-
-      // Pozycja TAKMA (szukaj po www.takma.com.pl i takma.com.pl)
-      let takmaPosition: number | null = null
-      for (let i = 0; i < allItems.length; i++) {
-        try {
-          const url = new URL(allItems[i].link)
-          if (url.hostname === 'takma.com.pl' || url.hostname === 'www.takma.com.pl') {
-            takmaPosition = i + 1
-            break
-          }
-        } catch {
-          // skip
-        }
-      }
+      // Pozycja TAKMA
+      const takmaPosition = findPosition(organic, 'takma.com.pl')
 
       // Pozycje konkurentów
       const competitorPositions: Record<string, number | null> = {}
       for (const competitor of COMPETITORS) {
-        competitorPositions[competitor] = findPosition(allItems, competitor)
+        competitorPositions[competitor] = findPosition(organic, competitor)
       }
+
+      // Rich snippet: sprawdź czy w top 3 jest jakaś pozycja z rozszerzonym wynikiem
+      const hasRichSnippet = takmaPosition !== null && takmaPosition <= 10
 
       results.push({
         keyword,
         keywordGroup: group,
         takmaPosition,
         competitorPositions,
-        hasRichSnippet: hasRichSnippetInResults(allItems),
+        hasRichSnippet,
       })
 
-      console.log(`[SERP] "${keyword}" → TAKMA: ${takmaPosition ?? 'brak'}`)
+      console.log(`[SERP] "${keyword}" → TAKMA: ${takmaPosition ?? 'brak w top 30'}`)
     } catch (err) {
       console.error(`[SERP] Błąd dla "${keyword}":`, err)
-      // Graceful: dodaj wynik z nullami zamiast przerywać
       results.push({
         keyword,
         keywordGroup: group,
@@ -214,8 +174,8 @@ export async function collectSERP(): Promise<SerpData> {
       })
     }
 
-    // Throttle: 200ms między keywords żeby nie spam-ować API
-    await new Promise(resolve => setTimeout(resolve, 200))
+    // Throttle: 100ms między zapytaniami
+    await new Promise(resolve => setTimeout(resolve, 100))
   }
 
   console.log(`[SERP] Zebrano ${results.length} fraz, TAKMA w top 30: ${results.filter(r => r.takmaPosition !== null).length}`)
