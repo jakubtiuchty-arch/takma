@@ -35,10 +35,10 @@ function isLegacyUrl(url: string): boolean {
 // Run pipeline
 // ---------------------------------------------------------------------------
 
-export async function runSeoAgentPipeline(): Promise<PipelineResult> {
+export async function runSeoAgentPipeline(force = false): Promise<PipelineResult> {
   const startTime = Date.now()
 
-  // Idempotency: skip if today's COMPLETED report exists
+  // Idempotency: skip if today's COMPLETED report exists (unless forced)
   const todayStart = new Date()
   todayStart.setHours(0, 0, 0, 0)
   const todayEnd = new Date()
@@ -51,7 +51,7 @@ export async function runSeoAgentPipeline(): Promise<PipelineResult> {
     },
   })
 
-  if (existing) {
+  if (existing && !force) {
     console.log(`[SEO Pipeline] Raport z dzisiaj już istnieje (${existing.id}), skip`)
     return {
       reportId: existing.id,

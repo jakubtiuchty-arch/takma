@@ -17,7 +17,8 @@ export async function POST(request: NextRequest) {
   if (sessionCookie) {
     const session = await verifySession(sessionCookie)
     if (session) {
-      return runPipeline()
+      const force = request.nextUrl.searchParams.get('force') === '1'
+      return runPipeline(force)
     }
   }
 
@@ -25,22 +26,23 @@ export async function POST(request: NextRequest) {
   const authHeader = request.headers.get('authorization')
   const cronSecret = process.env.CRON_SECRET
   if (cronSecret && authHeader === `Bearer ${cronSecret}`) {
-    return runPipeline()
+    return runPipeline(false)
   }
 
   // Auth: ADMIN_SECRET query param (for dashboard manual trigger)
   const adminSecret = request.nextUrl.searchParams.get('secret')
   const envAdminSecret = process.env.CRON_SECRET
   if (envAdminSecret && adminSecret === envAdminSecret) {
-    return runPipeline()
+    const force = request.nextUrl.searchParams.get('force') === '1'
+    return runPipeline(force)
   }
 
   return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 }
 
-async function runPipeline() {
+async function runPipeline(force: boolean) {
   try {
-    const result = await runSeoAgentPipeline()
+    const result = await runSeoAgentPipeline(force)
     return NextResponse.json(result, {
       status: result.status === 'completed' ? 200 : 500,
     })

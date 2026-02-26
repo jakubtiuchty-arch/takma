@@ -65,7 +65,7 @@ export default function Dashboard({ runSecret, latestReport, recentMetrics, unre
     setRunResult(null)
 
     try {
-      const res = await fetch(`/api/admin/seo-agent/run?secret=${runSecret}`, { method: 'POST' })
+      const res = await fetch(`/api/admin/seo-agent/run?secret=${runSecret}&force=1`, { method: 'POST' })
       const data = await res.json()
 
       if (res.ok) {
