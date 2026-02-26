@@ -6,7 +6,7 @@ import { SubcategoryRichContent } from './subcategory-content'
 export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
   'drukarki-etykiet-zebra': {
     definition: {
-      heading: 'Dlaczego drukarki etykiet Zebra? Lider rynku AutoID',
+      heading: 'Drukarki etykiet Zebra — ponad 50% rynku enterprise na świecie',
       content:
         'Zebra Technologies to niekwestionowany lider światowego rynku drukarek etykiet z kodami kreskowymi, posiadający ponad 50% udziału w segmencie enterprise. Drukarki etykiet Zebra są standardem branżowym — wykorzystują je największe firmy logistyczne, sieci handlowe, centra dystrybucyjne i zakłady produkcyjne na całym świecie. Platforma Link-OS umożliwia centralne zarządzanie flotą drukarek z dowolnego miejsca, a język programowania ZPL II (Zebra Programming Language) stał się de facto standardem integracji z systemami WMS, ERP i TMS. Oferta Zebra obejmuje pełne spektrum zastosowań: serie biurkowe ZD2xx (modele ekonomiczne ZD220, ZD230) i ZD4xx (średnia klasa ZD411, ZD421), premium desktop ZD6xx (ZD621), drukarki przemysłowe ZT1xx (entry-level ZT111), ZT2xx (ZT231), ZT4xx (zaawansowane ZT411, ZT421), ZT6xx (heavy-duty ZT610, ZT620) oraz mobilne ZQ2xx–ZQ6xx do pracy w terenie. Pakiet oprogramowania PrintDNA — w tym Print Station, Browser Print, Visibility Services i PDF Direct — zapewnia zerową konfigurację, zdalne aktualizacje firmware i monitoring stanu głowic w czasie rzeczywistym. Inwestycja w drukarkę Zebra to inwestycja w ekosystem, który skaluje się wraz z rozwojem firmy.',
     },
@@ -58,7 +58,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       },
     ],
     uniqueInsights: {
-      heading: 'Czego nie mówi konkurencja o drukarkach Zebra',
+      heading: 'Czego sprzedawcy drukarek nie powiedzą',
       items: [
         {
           title: 'Link-OS — zdalne zarządzanie flotą, którego nie ma nikt inny',
@@ -183,7 +183,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
 
   'terminale-mobilne-zebra': {
     definition: {
-      heading: 'Dlaczego terminale mobilne Zebra? Lider rynku komputerów przenośnych',
+      heading: 'Terminale mobilne Zebra — ponad 40% rynku komputerów przenośnych',
       content:
         'Zebra Technologies dominuje na globalnym rynku terminali mobilnych klasy enterprise z udziałem przekraczającym 40% w segmencie komputerów przenośnych do zastosowań biznesowych. Terminale mobilne Zebra (serie TC, MC, EM) to wytrzymałe komputery z systemem Android, zaprojektowane do pracy w magazynach, centrach dystrybucyjnych, sklepach detalicznych, na liniach produkcyjnych, w służbie zdrowia i w terenie. W odróżnieniu od smartfonów konsumenckich, terminale Zebra oferują dedykowane skanery kodów kreskowych klasy przemysłowej (SE4710, SE4770, SE55, SE58, AC670) dekodujące kody 1D i 2D w 0,3 sekundy z odległości do 30 metrów, obudowy certyfikowane MIL-STD-810H (upadki z 1,5–3,65 m na beton, IP65/IP67/IP68), wymienne baterie hot-swap umożliwiające ciągłą pracę wielozmianową oraz gwarancję aktualizacji bezpieczeństwa LifeGuard przez 5–10 lat. Platforma Mobility DNA — pakiet darmowych narzędzi enterprise (DataWedge, StageNow, Device Tracker, Workforce Connect, Enterprise Home Screen) — pozwala na masową konfigurację, zdalne zarządzanie flotą przez MDM i integrację z systemami WMS/ERP bez pisania kodu. Oferta Zebra obejmuje pełne spektrum zastosowań: entry-level TC22/TC27 (od 2 417 zł), mid-range TC53/TC58 i TC53e/TC58e, flagowe TC501/TC701 z Wi-Fi 7 i AI, ultra-rugged TC73/TC78 do ekstremalnych warunków, MC3300x/MC3400 z klawiaturą fizyczną, flagowe MC9400/MC9450 do magazynów wysokiego składowania, oraz EM45 — enterprise mobile w formie smartfona. Inwestycja w terminal Zebra to inwestycja w ekosystem, który chroni dane, zwiększa wydajność i skaluje się wraz z rozwojem firmy.',
     },
@@ -235,7 +235,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       },
     ],
     uniqueInsights: {
-      heading: 'Czego nie mówi konkurencja o terminalach mobilnych Zebra',
+      heading: 'Czego sprzedawcy terminali nie powiedzą',
       items: [
         {
           title: 'Mobility DNA — pakiet narzędzi enterprise, którego nie ma nikt inny',
@@ -360,7 +360,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
 
   'skanery-kodow-kreskowych-zebra': {
     definition: {
-      heading: 'Dlaczego skanery kodów kreskowych Zebra? Lider technologii imaging',
+      heading: 'Skanery kodów kreskowych Zebra — lider technologii imaging na świecie',
       content:
         'Zebra Technologies jest największym producentem profesjonalnych skanerów kodów kreskowych na świecie, z udziałem przekraczającym 35% w segmencie enterprise. Skanery Zebra (serie DS, LI, CS, SP, MP) to urządzenia klasy przemysłowej zaprojektowane do pracy w handlu detalicznym, aptekach, magazynach, na liniach produkcyjnych, w szpitalach i punktach logistycznych. Technologia PRZYM (Pattern Recognition for Intelligent Zero-Margin decoding) — autorska platforma obrazowania Zebra — zapewnia najszybsze w branży dekodowanie kodów 1D i 2D, w tym uszkodzonych, zabrudzonych i słabo wydrukowanych. Skanery Zebra obsługują wszystkie popularne symbologie: EAN-13, Code 128, QR Code, DataMatrix, PDF417, Aztec, GS1 DataBar — oraz kody wyświetlane na ekranach smartfonów i tabletów (e-paragony, kupony, bilety, e-recepty). Oferta Zebra obejmuje pełne spektrum: od ekonomicznego DS2208 (od 352 zł netto) z gwarancją 5 lat, przez skanery ultra-rugged DS3608/LI3608 do ekstremalnych warunków magazynowych, po prezentacyjne DS9308/MP7600 do kas hands-free. Platforma DataCapture DNA — pakiet darmowych narzędzi (123Scan, Scanner Management Service, Scan-to-Connect) — umożliwia masową konfigurację, zdalne zarządzanie flotą skanerów i integrację z dowolnym systemem POS/WMS/ERP bez pisania kodu.',
     },
@@ -412,7 +412,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       },
     ],
     uniqueInsights: {
-      heading: 'Czego nie mówi konkurencja o skanerach Zebra',
+      heading: 'Czego sprzedawcy skanerów nie powiedzą',
       items: [
         {
           title: 'PRZYM — technologia dekodowania, której nie ma nikt inny',
