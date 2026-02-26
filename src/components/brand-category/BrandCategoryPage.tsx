@@ -245,22 +245,28 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                 <section>
                   <h2 className="text-2xl font-bold text-gray-900 mb-4">Parametry techniczne i koszty</h2>
                   {(() => {
-                    const blocks = content.technicalDeepDive.split('\n\n').filter(Boolean)
-                    const bulletBlocks = blocks.filter(b => b.startsWith('• '))
-                    const textBlocks = blocks.filter(b => !b.startsWith('• '))
+                    // Split into individual lines, then group into bullets vs text
+                    const allLines = content.technicalDeepDive.split('\n').filter(Boolean)
+                    const bulletLines: string[] = []
+                    const textLines: string[] = []
+                    for (const line of allLines) {
+                      if (line.startsWith('• ')) {
+                        bulletLines.push(line)
+                      } else {
+                        textLines.push(line)
+                      }
+                    }
 
                     // Parse each bullet into structured row
-                    const rows = bulletBlocks.map(block => {
-                      const text = block.replace(/^• /, '')
+                    const rows = bulletLines.map(line => {
+                      const text = line.replace(/^• /, '')
                       const colonIdx = text.indexOf('):')
                       const model = colonIdx > 0 ? text.substring(0, colonIdx + 1) : ''
                       const rest = colonIdx > 0 ? text.substring(colonIdx + 2).trim() : text
                       const priceMatch = rest.match(/od\s+[\d\s]+zł(?:\s*netto)?/)
                       const price = priceMatch ? priceMatch[0].replace(' netto', '') : ''
-                      // Try to extract a short description after the last em-dash
                       const dashParts = rest.split(' — ')
                       const desc = dashParts.length > 1 ? dashParts[dashParts.length - 1].replace(/\.$/, '') : ''
-                      // Specs = everything before last em-dash, minus price
                       const specsPart = dashParts.length > 1 ? dashParts.slice(0, -1).join(' — ') : rest
                       const specs = specsPart.replace(/,?\s*od\s+[\d\s]+zł(?:\s*netto)?/, '').trim().replace(/\.$/, '')
                       return { model, specs, price, desc }
@@ -268,8 +274,8 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
 
                     return (
                       <>
-                        {textBlocks[0] && (
-                          <p className="text-gray-600 leading-relaxed mb-4 sm:text-justify">{textBlocks[0]}</p>
+                        {textLines[0] && (
+                          <p className="text-gray-600 leading-relaxed mb-4 sm:text-justify">{textLines[0]}</p>
                         )}
                         <div className="overflow-x-auto -mx-4 px-4 mb-6">
                           <table className="w-full text-sm border-collapse">
@@ -293,7 +299,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                             </tbody>
                           </table>
                         </div>
-                        {textBlocks.slice(1).map((block, i) => (
+                        {textLines.slice(1).map((block, i) => (
                           <p key={i} className="text-gray-600 leading-relaxed text-sm sm:text-justify mb-3">{block}</p>
                         ))}
                       </>
