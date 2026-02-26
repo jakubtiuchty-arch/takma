@@ -183,7 +183,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208 — gwarancja 5 lat. Skanery przewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 6,
+    productCount: 7,
   },
   // {
   //   id: 'tablety',
@@ -822,8 +822,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Skanery kodów kreskowych przewodowe USB od 352 zł netto. Zebra DS2208 — imager 2D, IP52, 5 lat gwarancji. Do kas, aptek, biur i magazynów. Autoryzowany partner Zebra — doradztwo i serwis.',
     longDescription: 'Przewodowe czytniki kodów kreskowych (skanery USB / RS-232) — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania. Imager 2D odczytuje kody 1D, QR, DataMatrix i kody z ekranów. Zebra DS2208 (IP52, 5 lat gwarancji) — idealna na stałe stanowiska kasowe, apteki, przyjęcia towaru.',
     icon: 'scan',
-    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-li2208'],
-    productCount: 6,
+    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-li2208'],
+    productCount: 7,
   },
   {
     id: 'skanery-bezprzewodowe',
@@ -8625,6 +8625,119 @@ Dokumentacja: zebra.com/ds3608.`,
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds3608/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/DS3600-Series/spec-sheet/ds36x8-hd-spec-sheet-en-us.pdf', size: '0.5 MB' },
+    ],
+    createdAt: '2026-02-26',
+  },
+  {
+    id: 'zebra-ds3608-sr',
+    slug: 'zebra-ds3608-sr',
+    name: 'Zebra DS3608-SR',
+    sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-sr.html',
+    seoTitle: 'Zebra DS3608-SR — skaner ultra-rugged Standard Range, zasięg 152 cm | od 1 287 zł',
+    seoDescription: 'Zebra DS3608-SR — ultra-wytrzymały skaner 2D ogólnego przeznaczenia. IP65/IP68, upadki 3 m, -30°C. Magazyn, logistyka, produkcja. Cena od 1 287 zł netto.',
+    shortDescription: 'Ultra-rugged skaner 2D Standard Range do 152 cm — magazyn, logistyka, produkcja',
+    description: `Dla kogo? Zebra DS3608-SR to ultra-wytrzymały skaner ręczny 2D ogólnego przeznaczenia z serii DS3600 — najbardziej uniwersalny wariant, zaprojektowany do magazynów, centrów dystrybucyjnych, hal produkcyjnych, doków przeładunkowych i mroźni. Czyta standardowe kody 1D/2D od 5 mil na odległość do 152 cm.
+
+Sensor obrazu 1 280 × 800 px z polem widzenia 42,8° × 28,8° — szerokie pole ułatwia celowanie i przyspiesza skanowanie seryjne. Zasięg Code 128 (20 mil) od 7,1 do 71,1 cm, DataMatrix 10 mil od 3,5 do 21,8 cm, Code 128 (40 mil) do 152,4 cm. Celownik LED 610 nm. Potwierdzenie odczytu: LED + dźwięk + wibracja (3-stopniowe).
+
+Multi-Code Data Formatting: jedno naciśnięcie spustu skanuje do 20 kodów jednocześnie — idealne do inwentaryzacji i przyjęcia towaru z etykietami GS1-128. Obsługa kodów z ekranów mobilnych (mGR). Digimarc — odczyt niewidocznych cyfrowych znaków wodnych w opakowaniach.
+
+Interfejsy: USB, RS-232, Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP — natywnie). IP65 + IP68, upadki z 3 m na beton, 7 500 obrotów w tumbler teście, praca od -30°C do +50°C. Waga 305 g. Gwarancja 36 miesięcy (3 lata).
+
+Dokumentacja: zebra.com/ds3608.`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-przewodowe'],
+    manufacturerId: 'zebra',
+    priceFrom: 1287,
+    images: [
+      '/images/products/zebra-ds3608-xr.png',
+      '/images/products/zebra-ds3608-xr-2.png',
+      '/images/products/zebra-ds3608-xr-3.png',
+    ],
+    imageDescriptions: [
+      'Zebra DS3608-SR zielony — widok z przodu, okno skanera z szerokim polem widzenia 42,8°',
+      'Zebra DS3608-SR zielony — widok z boku, masywna obudowa ultra-rugged IP65/IP68',
+      'Zebra DS3608-SR zielony — widok z tyłu, ergonomiczny uchwyt z gumowaną nakładką',
+    ],
+    tags: ['magazyn', 'logistyka', 'produkcja'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Typ skanera', value: 'Area imager 2D ultra-rugged, Standard Range (ogólnego przeznaczenia)' },
+      { name: 'Sensor', value: '1 280 × 800 px (mega-pixel)' },
+      { name: 'Pole widzenia', value: '42,8° (poziomo) × 28,8° (pionowo)' },
+      { name: 'Skanowane kody 1D', value: 'Code 39, Code 128, Code 93, EAN/UPC, GS1 DataBar, I 2/5, Codabar, MSI Plessey' },
+      { name: 'Skanowane kody 2D', value: 'QR Code, DataMatrix, PDF417, Aztec, MaxiCode, Micro QR, Han Xin, Digimarc' },
+      { name: 'Zasięg (Code 128 5 mil)', value: '3,3–17,0 cm' },
+      { name: 'Zasięg (Code 128 20 mil)', value: '7,1–71,1 cm' },
+      { name: 'Zasięg (Code 128 40 mil)', value: '4,4–152,4 cm' },
+      { name: 'Zasięg (DataMatrix 10 mil)', value: '3,5–21,8 cm' },
+      { name: 'Multi-Code', value: 'Tak — do 20 kodów na jedno naciśnięcie spustu' },
+      { name: 'Celownik', value: 'LED 610 nm' },
+      { name: 'Interfejsy', value: 'USB, RS-232, Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP)' },
+      { name: 'Klasa szczelności', value: 'IP65 + IP68 (pyłoszczelny + zanurzalny)' },
+      { name: 'Odporność na upadki', value: '3,0 m na beton (wielokrotne)' },
+      { name: 'Tumble test', value: '7 500 obrotów (1,0 m)' },
+      { name: 'Temperatura pracy', value: '-30°C do +50°C' },
+      { name: 'Wymiary', value: '185 × 76 × 132 mm' },
+      { name: 'Waga', value: '305 g' },
+      { name: 'Gwarancja', value: '36 miesięcy (3 lata)' },
+    ],
+    variants: [
+      {
+        partNumber: 'DS3608-SR00003VZWW',
+        name: 'DS3608-SR — sam skaner',
+        priceFrom: 1287,
+        availability: 'available',
+        attributes: {},
+      },
+      {
+        partNumber: 'DS3608-SR3U4600VZW',
+        name: 'DS3608-SR — kabel USB',
+        priceFrom: 1376,
+        availability: 'available',
+        attributes: {
+          'Kabel USB': 'Tak',
+        },
+      },
+    ],
+    applications: ['Magazyny i centra dystrybucyjne', 'Doki przeładunkowe i cross-docking', 'Hale produkcyjne i linie montażowe', 'Mroźnie i chłodnie (do -30°C)', 'Inwentaryzacja z Multi-Code (20 kodów/skan)', 'Przyjęcie towaru z etykietami GS1-128'],
+    compatibleAccessories: [],
+    relatedAccessories: ['zebra-stand-ds3608', 'zebra-cable-usb-ds3608', 'zebra-cable-usb-long-ds3608'],
+    faq: [
+      {
+        question: 'Jaki jest zasięg skanowania DS3608-SR?',
+        answer: 'DS3608-SR skanuje standardowe kody: Code 128 (5 mil) od 3,3 do 17 cm, Code 128 (20 mil) od 7,1 do 71,1 cm, Code 128 (40 mil) do 152,4 cm, DataMatrix 10 mil od 3,5 do 21,8 cm. Uniwersalny zasięg do większości zastosowań magazynowych i produkcyjnych.',
+      },
+      {
+        question: 'Czym DS3608-SR różni się od XR i HD?',
+        answer: 'SR (Standard Range) to uniwersalny wariant — czyta kody od 5 mil na odległość do 152 cm. [DS3608-XR](/produkt/zebra-ds3608-xr) (Extended Range) sięga do 32 m z podwójnym sensorem — do magazynów wysokiego składowania. [DS3608-HD](/produkt/zebra-ds3608-hd) (High Density) czyta bardzo małe kody od 3 mil — do elektroniki i farmacji. SR to najlepszy wybór ogólnego przeznaczenia.',
+      },
+      {
+        question: 'Czy DS3608-SR działa w mroźni?',
+        answer: 'Tak — temperatura pracy od -30°C do +50°C. Podwójne uszczelnienie IP65 + IP68 chroni przed wilgocią i lodem. Skaner wytrzymuje wielokrotne przejścia między mroźnią a temperaturą pokojową.',
+      },
+      {
+        question: 'Ile kodów naraz skanuje DS3608-SR?',
+        answer: 'Funkcja Multi-Code Data Formatting skanuje do 20 kodów jednym naciśnięciem spustu. Idealne do inwentaryzacji palet z wieloma etykietami i przyjęcia towaru z etykietami GS1-128.',
+      },
+      {
+        question: 'Czy DS3608-SR odczytuje kody z ekranów?',
+        answer: 'Tak — DS3608-SR obsługuje kody wyświetlane na ekranach smartfonów i tabletów (mGR). Dodatkowo obsługuje Digimarc — niewidoczne cyfrowe znaki wodne w opakowaniach produktów.',
+      },
+      {
+        question: 'Jaka jest gwarancja na DS3608-SR?',
+        answer: 'Zebra udziela gwarancji 36 miesięcy (3 lata) na skaner. TAKMA zapewnia serwis gwarancyjny i pogwarancyjny we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra). Dostępne plany serwisowe Zebra OneCare.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Zebra DS3608-SR?',
+        answer: 'W klasie ultra-rugged Standard Range: Honeywell Granit XP 1990iSR, Datalogic PowerScan 9600-SR. W niższym segmencie: [Zebra DS4608](/produkt/zebra-ds4608) (od 1 178 zł, IP52, lżejszy). DS3608-SR wyróżnia się IP65/IP68, upadkami z 3 m, zakresem -30°C do +50°C i Industrial Ethernet.',
+      },
+    ],
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds3608/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/DS3600-Series/spec-sheet/ds36x8-sr-spec-sheet-en-us.pdf', size: '0.5 MB' },
     ],
     createdAt: '2026-02-26',
   },
