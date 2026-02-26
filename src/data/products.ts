@@ -8061,14 +8061,14 @@ Uwaga: LI2208 odczytuje wyłącznie kody 1D. Jeśli potrzebujesz odczytu kodów 
     manufacturerId: 'zebra',
     priceFrom: 181,
     images: [
-      '/images/products/zebra-li2208.png',
       '/images/products/zebra-li2208-2.png',
+      '/images/products/zebra-li2208.png',
       '/images/products/zebra-li2208-white.png',
       '/images/products/zebra-li2208-white-2.png',
     ],
     imageDescriptions: [
-      'Zebra LI2208 czarny — widok z boku, kompaktowy skaner liniowy 1D z ergonomicznym uchwytem',
       'Zebra LI2208 czarny — widok z boku, okno skanera liniowego i logo Zebra',
+      'Zebra LI2208 czarny — widok z boku, kompaktowy skaner liniowy 1D z ergonomicznym uchwytem',
       'Zebra LI2208 biały (Nova White) — widok z boku, dwukolorowa obudowa',
       'Zebra LI2208 biały (Nova White) — widok z drugiej strony, widoczne okno skanera',
     ],
