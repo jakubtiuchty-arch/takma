@@ -52,7 +52,7 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'zebra zt231', group: 'produkty' },
   // Mobilne drukarki
   { keyword: 'drukarka mobilna zebra', group: 'mobilne' },
-  { keyword: 'zebra zq520', group: 'mobilne' },
+  { keyword: 'zebra zq521', group: 'mobilne' },
 ]
 
 // ---------------------------------------------------------------------------

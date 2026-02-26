@@ -21,6 +21,7 @@ const navigation: NavItem[] = [
     href: '/terminale-mobilne',
     children: [
       { name: 'Wszystkie terminale', href: '/terminale-mobilne' },
+      { name: 'Terminale Zebra', href: '/terminale-mobilne-zebra' },
       { name: 'Akcesoria do terminali', href: '/akcesoria-do-terminali' },
       { name: '— Baterie i akumulatory', href: '/baterie-do-terminali' },
       { name: '— Stacje dokujące i ładowarki', href: '/stacje-ladowarki-terminali' },
@@ -33,6 +34,7 @@ const navigation: NavItem[] = [
     href: '/drukarki-etykiet',
     children: [
       { name: 'Wszystkie drukarki', href: '/drukarki-etykiet' },
+      { name: 'Drukarki Zebra', href: '/drukarki-etykiet-zebra' },
       { name: 'Drukarki biurkowe', href: '/biurkowe-drukarki-etykiet' },
       { name: 'Drukarki przemysłowe', href: '/przemyslowe-drukarki-etykiet' },
       { name: 'Drukarki termotransferowe', href: '/termotransferowe-drukarki-etykiet' },
@@ -48,6 +50,7 @@ const navigation: NavItem[] = [
     href: '/skanery-kodow-kreskowych',
     children: [
       { name: 'Wszystkie skanery', href: '/skanery-kodow-kreskowych' },
+      { name: 'Skanery Zebra', href: '/skanery-kodow-kreskowych-zebra' },
       { name: 'Skanery przewodowe', href: '/skanery-kodow-kreskowych/przewodowe' },
       { name: 'Skanery bezprzewodowe', href: '/skanery-kodow-kreskowych/bezprzewodowe' },
       { name: 'Skanery prezentacyjne', href: '/skanery-kodow-kreskowych/prezentacyjne' },

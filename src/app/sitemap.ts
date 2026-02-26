@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-import { products, subcategories } from '@/data/products'
+import { products, subcategories, brandCategories } from '@/data/products'
 import { guides } from '@/data/guides'
 import { industryPages } from '@/data/industry-content'
 
@@ -53,5 +53,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: lastUpdated,
   }))
 
-  return [...staticPages, ...subcategoryPages, ...productPages, ...guidePages, ...industryLandingPages]
+  const brandCategoryPages: MetadataRoute.Sitemap = brandCategories.map((bc) => ({
+    url: `${baseUrl}/${bc.slug}`,
+    lastModified: lastUpdated,
+  }))
+
+  return [...staticPages, ...subcategoryPages, ...brandCategoryPages, ...productPages, ...guidePages, ...industryLandingPages]
 }

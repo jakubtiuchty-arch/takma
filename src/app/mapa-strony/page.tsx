@@ -4,6 +4,7 @@ import {
   products,
   categories,
   subcategories,
+  brandCategories,
   getManufacturerById,
 } from '@/data/products'
 import { guides } from '@/data/guides'
@@ -107,6 +108,9 @@ export default function MapaStrony() {
               const subs = subcategories.filter(
                 (s) => s.parentCategoryId === cat.id
               )
+              const bcs = brandCategories.filter(
+                (bc) => bc.categoryId === cat.id
+              )
               return (
                 <li key={cat.id}>
                   <Link
@@ -115,8 +119,15 @@ export default function MapaStrony() {
                   >
                     {cat.name}
                   </Link>
-                  {subs.length > 0 && (
+                  {(subs.length > 0 || bcs.length > 0) && (
                     <ul className="mt-1 ml-4 space-y-1">
+                      {bcs.map((bc) => (
+                        <SitemapLink
+                          key={bc.id}
+                          href={`/${bc.slug}`}
+                          label={bc.name}
+                        />
+                      ))}
                       {subs.map((sub) => (
                         <SitemapLink
                           key={sub.id}
