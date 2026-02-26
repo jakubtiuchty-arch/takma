@@ -183,7 +183,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208 — gwarancja 5 lat. Skanery przewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 4,
+    productCount: 5,
   },
   // {
   //   id: 'tablety',
@@ -822,8 +822,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Skanery kodów kreskowych przewodowe USB od 352 zł netto. Zebra DS2208 — imager 2D, IP52, 5 lat gwarancji. Do kas, aptek, biur i magazynów. Autoryzowany partner Zebra — doradztwo i serwis.',
     longDescription: 'Przewodowe czytniki kodów kreskowych (skanery USB / RS-232) — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania. Imager 2D odczytuje kody 1D, QR, DataMatrix i kody z ekranów. Zebra DS2208 (IP52, 5 lat gwarancji) — idealna na stałe stanowiska kasowe, apteki, przyjęcia towaru.',
     icon: 'scan',
-    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-li2208'],
-    productCount: 4,
+    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608', 'zebra-li2208'],
+    productCount: 5,
   },
   {
     id: 'skanery-bezprzewodowe',
@@ -8383,6 +8383,134 @@ Dokumentacja: zebra.com/ds4608.`,
     ],
     createdAt: '2026-02-26',
   },
+  {
+    id: 'zebra-ds3608',
+    slug: 'zebra-ds3608',
+    name: 'Zebra DS3608-XR',
+    sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-xr.html',
+    seoTitle: 'Zebra DS3608-XR — skaner ultra-rugged, zasięg 32 m | od 2 417 zł',
+    seoDescription: 'Zebra DS3608-XR — ultra-wytrzymały skaner 2D dalekiego zasięgu (5 cm–32 m). IP65/IP68, upadki 3 m, -30°C. Magazyny wysokiego składowania, produkcja, outdoor. Cena od 2 417 zł netto.',
+    shortDescription: 'Ultra-rugged skaner 2D dalekiego zasięgu 5 cm–32 m — magazyny, produkcja, outdoor',
+    description: `Dla kogo? Zebra DS3608-XR to ultra-wytrzymały skaner ręczny 2D dalekiego zasięgu przeznaczony do magazynów wysokiego składowania, hal produkcyjnych, placów kontenerowych, doków przeładunkowych i mroźni. Następca DS3608-ER — z zasięgiem 40% większym (do 32 m) i 10% lżejszy.
+
+Podwójny sensor — Near (1280 × 800 px) do kodów z bliska i Far (1920 × 1080 px) do odczytu z odległości do 32 m (Code 39 100 mil). Zielony celownik laserowy 520 nm widoczny 7× lepiej niż czerwony — działa zarówno w ciemnym magazynie, jak i w pełnym słońcu. IntelliFocus automatycznie przełącza tryb bliski/daleki.
+
+Multi-Code Data Formatting: jeden naciśnięcie spustu skanuje do 20 kodów jednocześnie — przyspieszenie inwentaryzacji i przyjęcia towaru. Label Parse+ automatycznie ekstrahuje daty ważności, numery partii i dane GS1 z etykiet logistycznych.
+
+Interfejsy: USB, RS-232, Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP — natywnie, bez konwerterów). IP65 + IP68 (pyłoszczelny + zanurzalny), upadki z 3 m na beton, 7 500 obrotów w tumbler teście, praca od -30°C do +50°C. Waga 308 g. Gwarancja 36 miesięcy (3 lata).
+
+Dokumentacja: zebra.com/ds3608.`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-przewodowe'],
+    manufacturerId: 'zebra',
+    priceFrom: 2417,
+    images: [
+      '/images/products/zebra-ds3608-xr.png',
+      '/images/products/zebra-ds3608-xr-2.png',
+    ],
+    imageDescriptions: [
+      'Zebra DS3608-XR zielony — widok z boku, ultra-wytrzymały skaner dalekiego zasięgu z celownikiem laserowym',
+      'Zebra DS3608-XR zielony — widok z drugiej strony, masywna obudowa IP65/IP68',
+    ],
+    tags: ['magazyn', 'logistyka', 'produkcja', 'outdoor'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Typ skanera', value: 'Area imager 2D ultra-rugged, dalekiego zasięgu (SE58)' },
+      { name: 'Sensor', value: 'Near: 1280 × 800 px | Far: 1920 × 1080 px (dual-mode)' },
+      { name: 'Skanowane kody 1D', value: 'Code 39, Code 128, Code 93, EAN/UPC, GS1 DataBar, I 2/5, Codabar, MSI Plessey' },
+      { name: 'Skanowane kody 2D', value: 'QR Code, DataMatrix, PDF417, Aztec, MaxiCode, Micro QR, Han Xin, Digimarc' },
+      { name: 'Zasięg (Code 39 100 mil)', value: '1,2–32 m (105 ft)' },
+      { name: 'Zasięg (UPC 13 mil)', value: '3,3 cm–3,7 m (12 ft)' },
+      { name: 'Zasięg (DataMatrix 10 mil)', value: '3,3 cm–1,7 m (5,5 ft)' },
+      { name: 'Multi-Code', value: 'Tak — do 20 kodów na jedno naciśnięcie spustu' },
+      { name: 'Celownik', value: 'Zielony laser 520 nm (7× widoczniejszy niż czerwony)' },
+      { name: 'Interfejsy', value: 'USB, RS-232, Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP)' },
+      { name: 'Klasa szczelności', value: 'IP65 + IP68 (pyłoszczelny + zanurzalny)' },
+      { name: 'Odporność na upadki', value: '3,0 m na beton (wielokrotne)' },
+      { name: 'Tumble test', value: '7 500 obrotów (1,0 m)' },
+      { name: 'Temperatura pracy', value: '-30°C do +50°C' },
+      { name: 'Wymiary', value: '185 × 76 × 132 mm' },
+      { name: 'Waga', value: '308 g' },
+      { name: 'Gwarancja', value: '36 miesięcy (3 lata)' },
+    ],
+    variants: [
+      {
+        partNumber: 'DS3608-XR60003VZWW',
+        name: 'DS3608-XR — sam skaner',
+        priceFrom: 2417,
+        availability: 'available',
+        attributes: {},
+      },
+      {
+        partNumber: 'DS3608-XR3U4602ZVW',
+        name: 'DS3608-XR — kabel USB',
+        priceFrom: 2525,
+        availability: 'available',
+        attributes: {
+          'Kabel USB': 'Tak',
+        },
+      },
+      {
+        partNumber: 'DS3608-XR3RF50AZVW',
+        name: 'DS3608-XR — kabel RS232',
+        priceFrom: 3610,
+        availability: 'available',
+        attributes: {
+          'Kabel RS232': 'Tak',
+        },
+      },
+      {
+        partNumber: 'DS3608-XR3RF50BZVW',
+        name: 'DS3608-XR — kabel RS232 + Profinet',
+        priceFrom: 3610,
+        availability: 'available',
+        attributes: {
+          'Kabel RS232': 'Tak',
+          'Profinet': 'Tak',
+        },
+      },
+    ],
+    applications: ['Magazyny wysokiego składowania (skanowanie z 32 m)', 'Hale produkcyjne i linie montażowe', 'Place kontenerowe i doki przeładunkowe', 'Mroźnie i chłodnie (do -30°C)', 'Inwentaryzacja z Multi-Code (20 kodów/skan)', 'Logistyka i cross-docking'],
+    compatibleAccessories: [],
+    relatedAccessories: ['zebra-stand-ds3608', 'zebra-cable-usb-ds3608', 'zebra-cable-usb-long-ds3608'],
+    faq: [
+      {
+        question: 'Jaki jest maksymalny zasięg skanowania DS3608-XR?',
+        answer: 'DS3608-XR skanuje kody od 5 cm do 32 m (105 ft) — Code 39 przy 100 mil. Standardowe kody UPC/EAN odczyta z odległości do 3,7 m, a DataMatrix 10 mil do 1,7 m. Zielony celownik laserowy jest widoczny na pełnym dystansie w pomieszczeniach.',
+      },
+      {
+        question: 'Czy DS3608-XR działa w mroźni?',
+        answer: 'Tak — temperatura pracy od -30°C do +50°C. Podwójne uszczelnienie IP65 + IP68 chroni przed wilgocią i lodem. Skaner wytrzymuje wielokrotne przejścia między mroźnią a temperaturą pokojową bez uszkodzeń.',
+      },
+      {
+        question: 'Czym DS3608-XR różni się od DS3608-ER?',
+        answer: 'XR to następca ER z 40% większym zasięgiem (32 m vs 21 m), 10% mniejszą wagą, 7× widoczniejszym zielonym celownikiem (vs czerwony) i funkcjami Multi-Code Data Formatting (20 kodów/skan) oraz Label Parse+.',
+      },
+      {
+        question: 'Ile kodów naraz skanuje DS3608-XR?',
+        answer: 'Funkcja Multi-Code Data Formatting pozwala skanować do 20 kodów jednym naciśnięciem spustu. Idealne do inwentaryzacji palet z wieloma etykietami i przyjęcia towaru z etykietami GS1-128.',
+      },
+      {
+        question: 'Czy DS3608-XR obsługuje Industrial Ethernet?',
+        answer: 'Tak — natywnie, bez konwerterów. Obsługuje EtherNet/IP, Profinet i Modbus TCP. Wariant DS3608-XR3RF50BZVW ma Profinet w zestawie. Do standardowej komunikacji wystarczy USB lub RS-232.',
+      },
+      {
+        question: 'Jaka jest gwarancja na DS3608-XR?',
+        answer: 'Zebra udziela gwarancji 36 miesięcy (3 lata) na skaner. TAKMA zapewnia serwis gwarancyjny i pogwarancyjny we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra). Dostępne plany serwisowe Zebra OneCare.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Zebra DS3608-XR?',
+        answer: 'W klasie ultra-rugged dalekiego zasięgu: Honeywell Granit XP 1990iXR (2D, zasięg do 25 m), Datalogic PowerScan 9600 (2D, IP67). W niższym segmencie: [Zebra DS8208](/produkt/zebra-ds8208) od 1 027 zł (zasięg 70 cm, retail). DS3608-XR wyróżnia się zasięgiem 32 m i podwójnym IP65/IP68.',
+      },
+    ],
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds3608/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/DS3600-Series/spec-sheet/ds3600-xr-spec-sheet-en-us.pdf', size: '0.5 MB' },
+    ],
+    createdAt: '2026-02-26',
+  },
 ]
 
 // ============================================
@@ -13898,6 +14026,92 @@ Możliwość łączenia wielu stacji dla dużych instalacji.`,
     compatibleAccessories: [],
     downloads: [],
     createdAt: '2023-03-01',
+  },
+  {
+    id: 'zebra-stand-ds3608',
+    slug: 'zebra-podstawka-ds3608',
+    name: 'Podstawka Zebra STND-AS0036-07',
+    shortDescription: 'Podstawka do skanerów DS3608, DS3678, LI3608, LI3678',
+    description: `Oryginalna podstawka Zebra (STND-AS0036-07) do skanerów ultra-rugged serii DS3600 i LI3600. Stabilna konstrukcja z regulacją kąta nachylenia.
+
+Kompatybilna z modelami: DS3608 (wszystkie warianty), DS3678, LI3608, LI3678. Umożliwia pracę w trybie hands-free na stanowisku produkcyjnym lub kontrolnym.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 247,
+    images: ['/images/products/STND-AS0036-07.png'],
+    imageDescriptions: ['Podstawka Zebra STND-AS0036-07 do skanerów ultra-rugged DS3608, DS3678, LI3608'],
+    tags: ['magazyn', 'produkcja'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'STND-AS0036-07' },
+      { name: 'Kompatybilność', value: 'DS3608, DS3678, LI3608, LI3678' },
+      { name: 'Tryb pracy', value: 'Hands-free / prezentacyjny' },
+      { name: 'Regulacja', value: 'Kąt nachylenia' },
+    ],
+    applications: ['Stanowisko kontroli jakości', 'Linia produkcyjna', 'Punkt kontrolny magazynu'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-26',
+  },
+  {
+    id: 'zebra-cable-usb-ds3608',
+    slug: 'zebra-kabel-usb-ds3608',
+    name: 'Kabel USB 2.1m Zebra CBA-U01-S07ZAR',
+    shortDescription: 'Kabel USB Type A do skanerów DS3608, DS3678, LI3608, LI3678',
+    description: `Oryginalny kabel USB Zebra (CBA-U01-S07ZAR) o długości 2,1 m (7 ft) z wtyczką Type A. Dedykowany do skanerów ultra-rugged serii DS3600 i LI3600.
+
+Plug and Play — automatyczne wykrywanie hosta. Uwaga: ten kabel NIE jest kompatybilny z DS2208/DS4608 (te używają CBA-U21-S07ZBR).`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 89,
+    images: ['/images/products/CBA-U01-S07ZAR.png'],
+    imageDescriptions: ['Kabel USB 2.1m Zebra CBA-U01-S07ZAR do skanerów ultra-rugged DS3608, DS3678'],
+    tags: ['magazyn', 'produkcja'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'CBA-U01-S07ZAR' },
+      { name: 'Typ złącza (host)', value: 'USB Type A' },
+      { name: 'Długość', value: '2,1 m (7 ft)' },
+      { name: 'Kompatybilność', value: 'DS3608, DS3678, LI3608, LI3678' },
+      { name: 'Wykrywanie hosta', value: 'Automatyczne' },
+    ],
+    applications: ['Stanowiska produkcyjne', 'Magazyny', 'Linie montażowe'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-26',
+  },
+  {
+    id: 'zebra-cable-usb-long-ds3608',
+    slug: 'zebra-kabel-usb-4-6m-ds3608',
+    name: 'Kabel USB 4.6m Zebra CBA-U09-C15ZAR',
+    shortDescription: 'Kabel USB Type A 4,6 m do skanerów DS3608, DS3678, LI3608, LI3678',
+    description: `Oryginalny kabel USB Zebra (CBA-U09-C15ZAR) o długości 4,6 m (15 ft) z wtyczką Type A. Dłuższa wersja do skanerów ultra-rugged serii DS3600 i LI3600 — do stanowisk z większą odległością między skanerem a komputerem.
+
+Uwaga: ten kabel NIE jest kompatybilny z DS2208/DS4608 (te używają CBA-U47-S15ZAR).`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 297,
+    images: ['/images/products/CBA-U09-C15ZAR.png'],
+    imageDescriptions: ['Kabel USB 4.6m Zebra CBA-U09-C15ZAR do skanerów ultra-rugged DS3608, DS3678'],
+    tags: ['magazyn', 'produkcja'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'CBA-U09-C15ZAR' },
+      { name: 'Typ złącza (host)', value: 'USB Type A' },
+      { name: 'Długość', value: '4,6 m (15 ft)' },
+      { name: 'Kompatybilność', value: 'DS3608, DS3678, LI3608, LI3678' },
+      { name: 'Wykrywanie hosta', value: 'Automatyczne' },
+    ],
+    applications: ['Stanowiska z oddalonym komputerem', 'Linie produkcyjne', 'Magazyny'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-26',
   },
   {
     id: 'zebra-stand-ds22',
