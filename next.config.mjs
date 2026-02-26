@@ -84,9 +84,8 @@ const nextConfig = {
       { source: '/produkt/czytnik-kodow-kreskowych-zebra-ds8108-hc/:path*', destination: '/produkt/zebra-ds8178', permanent: true },
       { source: '/produkt/czytnik-kodow-kreskowych-zebra-ds8178/:path*', destination: '/produkt/zebra-ds8178', permanent: true },
       { source: '/produkt/czytnik-kodow-kreskowych-zebra-ds8178-hc/:path*', destination: '/produkt/zebra-ds8178', permanent: true },
-      // Legacy 1D → 2D successor
-      { source: '/produkt/zebra-li2208/:path*', destination: '/produkt/zebra-ds2208', permanent: true },
-      { source: '/produkt/zebra-ls2208/:path*', destination: '/produkt/zebra-ds2208', permanent: true },
+      // Legacy 1D laser → LI2208 (imager successor)
+      { source: '/produkt/zebra-ls2208/:path*', destination: '/produkt/zebra-li2208', permanent: true },
 
       // =====================================================
       // DATALOGIC — tylko zmiany slugów
