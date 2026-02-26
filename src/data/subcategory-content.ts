@@ -21,6 +21,12 @@ export interface HowToStep {
   text: string
 }
 
+export interface TcoComparison {
+  title: string
+  variants: { label: string; items: { name: string; cost: string }[]; total: string }[]
+  conclusion?: string
+}
+
 export interface SubcategoryRichContent {
   definition: { heading: string; content: string }
   buyingGuide: { heading: string; items: string[] }
@@ -31,6 +37,7 @@ export interface SubcategoryRichContent {
   faq: SubcategoryFAQ[]
   comparisons: SubcategoryComparison[]
   howToSteps: HowToStep[]
+  tcoComparisons?: TcoComparison[]
 }
 
 export const subcategoryContent: Record<string, SubcategoryRichContent> = {

@@ -299,75 +299,40 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                             </tbody>
                           </table>
                         </div>
-                        {textLines.slice(1).map((block, i) => {
-                          // TCO lines → styled card with parsed cost table
-                          if (block.startsWith('Kalkulacja TCO')) {
-                            const colonIdx = block.indexOf(': ')
-                            const header = colonIdx > 0 ? block.substring(0, colonIdx) : 'Kalkulacja TCO'
-                            const body = colonIdx > 0 ? block.substring(colonIdx + 2) : block
+                        {textLines.slice(1).map((block, i) => (
+                          <p key={i} className="text-gray-600 leading-relaxed text-sm sm:text-justify mb-3">{block}</p>
+                        ))}
 
-                            // Split into cost comparisons (contain " = ") and conclusions
-                            const segments = body.split(/\.\s+/)
-                            const comparisons: { items: { name: string; cost: string }[]; total: string }[] = []
-                            const notes: string[] = []
-
-                            for (const seg of segments) {
-                              const s = seg.replace(/\.$/, '').trim()
-                              if (!s) continue
-                              if (s.includes(' = ') && s.includes(' + ')) {
-                                const eqParts = s.split(/\s*=\s*/)
-                                const itemsPart = eqParts[0]
-                                const total = eqParts.slice(1).join(' = ').trim()
-                                const itemStrings = itemsPart.split(/\s*\+\s*/)
-                                const items = itemStrings.map(it => {
-                                  const m = it.trim().match(/^(.+?)\s*\(([^)]+)\)\s*$/)
-                                  return m ? { name: m[1].trim(), cost: m[2].trim() } : { name: it.trim(), cost: '' }
-                                })
-                                comparisons.push({ items, total })
-                              } else {
-                                notes.push(s)
-                              }
-                            }
-
-                            return (
-                              <div key={i} className="bg-primary-50/60 border border-primary-100 rounded-xl p-5 mb-4">
-                                <h3 className="font-bold text-gray-900 mb-3">{header}</h3>
-                                {comparisons.length > 0 ? (
-                                  <div className={`grid gap-4 ${comparisons.length > 1 ? 'md:grid-cols-2' : ''}`}>
-                                    {comparisons.map((comp, ci) => (
-                                      <div key={ci} className="bg-white rounded-lg p-4 border border-gray-100">
-                                        <table className="w-full text-sm">
-                                          <tbody>
-                                            {comp.items.map((item, ii) => (
-                                              <tr key={ii} className="border-b border-gray-50">
-                                                <td className="py-1.5 text-gray-600 text-xs">{item.name}</td>
-                                                <td className="py-1.5 text-gray-900 text-xs font-medium text-right whitespace-nowrap">{item.cost}</td>
-                                              </tr>
-                                            ))}
-                                            <tr className="border-t border-gray-200">
-                                              <td className="pt-2 font-semibold text-gray-900 text-sm">RAZEM</td>
-                                              <td className="pt-2 font-bold text-primary-600 text-sm text-right whitespace-nowrap">{comp.total}</td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                      </div>
-                                    ))}
-                                  </div>
-                                ) : (
-                                  <p className="text-gray-600 text-sm leading-relaxed">{body}</p>
-                                )}
-                                {notes.length > 0 && (
-                                  <p className="text-gray-600 text-xs mt-3 leading-relaxed">{notes.join('. ')}.</p>
-                                )}
-                              </div>
-                            )
-                          }
-
-                          // Regular text lines
-                          return (
-                            <p key={i} className="text-gray-600 leading-relaxed text-sm sm:text-justify mb-3">{block}</p>
-                          )
-                        })}
+                        {/* TCO comparisons from structured data */}
+                        {content.tcoComparisons?.map((tco, ti) => (
+                          <div key={ti} className="bg-primary-50/60 border border-primary-100 rounded-xl p-5 mt-2">
+                            <h3 className="font-bold text-gray-900 mb-3">{tco.title}</h3>
+                            <div className={`grid gap-4 ${tco.variants.length > 1 ? 'md:grid-cols-2' : ''}`}>
+                              {tco.variants.map((v, vi) => (
+                                <div key={vi} className="bg-white rounded-lg p-4 border border-gray-100">
+                                  <p className="font-semibold text-gray-900 text-sm mb-2">{v.label}</p>
+                                  <table className="w-full text-sm">
+                                    <tbody>
+                                      {v.items.map((item, ii) => (
+                                        <tr key={ii} className="border-b border-gray-50">
+                                          <td className="py-1.5 text-gray-600 text-xs">{item.name}</td>
+                                          <td className="py-1.5 text-gray-900 text-xs font-medium text-right whitespace-nowrap">{item.cost}</td>
+                                        </tr>
+                                      ))}
+                                      <tr className="border-t border-gray-200">
+                                        <td className="pt-2 font-semibold text-gray-900 text-sm">RAZEM</td>
+                                        <td className="pt-2 font-bold text-primary-600 text-sm text-right whitespace-nowrap">{v.total}</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              ))}
+                            </div>
+                            {tco.conclusion && (
+                              <p className="text-gray-600 text-xs mt-3 leading-relaxed">{tco.conclusion}</p>
+                            )}
+                          </div>
+                        ))}
                       </>
                     )
                   })()}
