@@ -243,8 +243,42 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                 </section>
 
                 <section>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-3">Parametry techniczne i koszty</h2>
-                  <RichText text={content.technicalDeepDive} className="text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">Parametry techniczne i koszty</h2>
+                  {(() => {
+                    const blocks = content.technicalDeepDive.split('\n\n').filter(Boolean)
+                    const bulletBlocks = blocks.filter(b => b.startsWith('• '))
+                    const textBlocks = blocks.filter(b => !b.startsWith('• '))
+                    return (
+                      <>
+                        {textBlocks.length > 0 && textBlocks[0] && (
+                          <p className="text-gray-600 leading-relaxed mb-4 sm:text-justify">{textBlocks[0]}</p>
+                        )}
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
+                          {bulletBlocks.map((block, i) => {
+                            const text = block.replace(/^• /, '')
+                            const colonIdx = text.indexOf('):')
+                            const hasHeader = colonIdx > 0 && colonIdx < 80
+                            const title = hasHeader ? text.substring(0, colonIdx + 1) : ''
+                            const body = hasHeader ? text.substring(colonIdx + 2).trim() : text
+                            // Extract price if present
+                            const priceMatch = body.match(/od\s+[\d\s]+zł/)
+                            return (
+                              <div key={i} className="bg-white border border-gray-200 rounded-xl p-4 flex flex-col">
+                                {title && <h3 className="font-semibold text-gray-900 text-sm mb-1.5">{title}</h3>}
+                                <p className="text-gray-500 text-xs leading-relaxed flex-1">{body}</p>
+                                {priceMatch && (
+                                  <p className="text-primary-600 font-semibold text-sm mt-2">{priceMatch[0]} netto</p>
+                                )}
+                              </div>
+                            )
+                          })}
+                        </div>
+                        {textBlocks.slice(1).map((block, i) => (
+                          <p key={i} className="text-gray-600 leading-relaxed text-sm sm:text-justify mb-3">{block}</p>
+                        ))}
+                      </>
+                    )
+                  })()}
                 </section>
 
                 <section>
