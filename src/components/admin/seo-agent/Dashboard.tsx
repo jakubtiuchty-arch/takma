@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import ScoreCard from './ScoreCard'
 import AlertsList from './AlertsList'
+import SerpTable from './SerpTable'
 
 interface LatestReport {
   id: string
@@ -39,14 +40,22 @@ interface Alert {
   createdAt: string
 }
 
+interface SerpPosition {
+  keyword: string
+  keywordGroup: string
+  takmaPosition: number | null
+  competitorPositions: Record<string, number | null>
+}
+
 interface DashboardProps {
   runSecret: string
   latestReport: LatestReport | null
   recentMetrics: MetricsEntry[]
   unreadAlerts: Alert[]
+  serpPositions: SerpPosition[]
 }
 
-export default function Dashboard({ runSecret, latestReport, recentMetrics, unreadAlerts }: DashboardProps) {
+export default function Dashboard({ runSecret, latestReport, recentMetrics, unreadAlerts, serpPositions }: DashboardProps) {
   const router = useRouter()
   const [running, setRunning] = useState(false)
   const [runResult, setRunResult] = useState<string | null>(null)
@@ -153,7 +162,12 @@ export default function Dashboard({ runSecret, latestReport, recentMetrics, unre
             <AlertsList alerts={unreadAlerts} />
           </div>
 
-          {/* Metrics trend (basic table for Phase 1) */}
+          {/* SERP Positions (Faza 2) */}
+          <div className="mb-6">
+            <SerpTable positions={serpPositions} />
+          </div>
+
+          {/* Metrics trend */}
           {recentMetrics.length > 0 && (
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
               <h3 className="text-sm font-semibold text-gray-900 mb-3">

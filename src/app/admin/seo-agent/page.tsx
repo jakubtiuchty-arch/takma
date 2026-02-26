@@ -1,6 +1,7 @@
 /**
  * /admin/seo-agent — Dashboard Server Component
- * 3 parallel Prisma queries -> props for Client Components
+ * Parallel Prisma queries -> props for Client Components
+ * Faza 1 + 2 + 3: GSC metrics, alerts, SERP positions, scores
  */
 
 import { prisma } from '@/lib/db'
@@ -9,29 +10,30 @@ import Dashboard from '@/components/admin/seo-agent/Dashboard'
 export const dynamic = 'force-dynamic'
 
 export default async function SeoAgentPage() {
-  // 3 parallel queries
-  const [latestReport, recentMetrics, unreadAlerts] = await Promise.all([
-    prisma.seoReport.findFirst({
-      where: { status: 'COMPLETED' },
-      orderBy: { generatedAt: 'desc' },
-      select: {
-        id: true,
-        generatedAt: true,
-        periodStart: true,
-        periodEnd: true,
-        scoreOverall: true,
-        scoreSeo: true,
-        scoreAeo: true,
-        scoreGeo: true,
-        scoreDelta: true,
-        alertsCount: true,
-        status: true,
-      },
-    }),
+  // First: get latest report ID (needed for SERP query)
+  const latestReport = await prisma.seoReport.findFirst({
+    where: { status: 'COMPLETED' },
+    orderBy: { generatedAt: 'desc' },
+    select: {
+      id: true,
+      generatedAt: true,
+      periodStart: true,
+      periodEnd: true,
+      scoreOverall: true,
+      scoreSeo: true,
+      scoreAeo: true,
+      scoreGeo: true,
+      scoreDelta: true,
+      alertsCount: true,
+      status: true,
+    },
+  })
 
+  // Then: parallel queries for metrics, alerts, and SERP positions
+  const [recentMetrics, unreadAlerts, serpPositions] = await Promise.all([
     prisma.seoMetricsHistory.findMany({
       orderBy: { date: 'desc' },
-      take: 16, // 8 reports = 16 entries max
+      take: 16,
       select: {
         date: true,
         totalClicks: true,
@@ -57,6 +59,20 @@ export default async function SeoAgentPage() {
         createdAt: true,
       },
     }),
+
+    // SERP positions from latest report
+    latestReport
+      ? prisma.seoSerpPosition.findMany({
+          where: { reportId: latestReport.id },
+          orderBy: { keyword: 'asc' },
+          select: {
+            keyword: true,
+            keywordGroup: true,
+            takmaPosition: true,
+            competitorPositions: true,
+          },
+        })
+      : Promise.resolve([]),
   ])
 
   const runSecret = process.env.CRON_SECRET || ''
@@ -78,6 +94,11 @@ export default async function SeoAgentPage() {
         ...a,
         severity: a.severity as 'CRITICAL' | 'WARNING' | 'INFO',
         createdAt: a.createdAt.toISOString(),
+      }))}
+      serpPositions={serpPositions.map(s => ({
+        ...s,
+        keywordGroup: s.keywordGroup ?? '',
+        competitorPositions: s.competitorPositions as Record<string, number | null>,
       }))}
     />
   )

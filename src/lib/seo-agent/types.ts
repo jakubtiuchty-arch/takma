@@ -96,11 +96,75 @@ export interface PipelineResult {
 }
 
 // ---------------------------------------------------------------------------
+// SERP Collector (Faza 2)
+// ---------------------------------------------------------------------------
+
+export interface SerpKeywordResult {
+  keyword: string
+  keywordGroup: string
+  takmaPosition: number | null   // null = nie znaleziono w top 30
+  competitorPositions: Record<string, number | null> // domain → position
+  hasRichSnippet: boolean
+}
+
+export interface SerpData {
+  results: SerpKeywordResult[]
+  collectedAt: string
+}
+
+// ---------------------------------------------------------------------------
+// Competitor Collector (Faza 2)
+// ---------------------------------------------------------------------------
+
+export interface CompetitorPageSnapshot {
+  competitor: string
+  url: string
+  title: string
+  metaDescription: string
+  contentLength: number
+  hasPrice: boolean
+  price: number | null
+  hasFaq: boolean
+  faqCount: number
+  hasSchema: boolean
+  schemaTypes: string[]
+  contentHash: string
+}
+
+export interface CompetitorData {
+  snapshots: CompetitorPageSnapshot[]
+  collectedAt: string
+}
+
+// ---------------------------------------------------------------------------
+// Claude Scoring (Faza 3)
+// ---------------------------------------------------------------------------
+
+export interface PageScore {
+  url: string
+  scoreSeo: number    // 0-100
+  scoreAeo: number    // 0-100
+  scoreGeo: number    // 0-100
+  reasoning: string
+}
+
+export interface ScoringResult {
+  pages: PageScore[]
+  scoreOverall: number  // weighted avg
+  scoreSeo: number      // avg across pages
+  scoreAeo: number
+  scoreGeo: number
+}
+
+// ---------------------------------------------------------------------------
 // Collected data (merged for DB storage)
 // ---------------------------------------------------------------------------
 
 export interface CollectedData {
   gsc: GSCData | null
   ga4: GA4Data | null
+  serp: SerpData | null
+  competitors: CompetitorData | null
+  scoring: ScoringResult | null
   collectedAt: string
 }
