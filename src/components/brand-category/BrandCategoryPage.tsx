@@ -248,30 +248,50 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                     const blocks = content.technicalDeepDive.split('\n\n').filter(Boolean)
                     const bulletBlocks = blocks.filter(b => b.startsWith('• '))
                     const textBlocks = blocks.filter(b => !b.startsWith('• '))
+
+                    // Parse each bullet into structured row
+                    const rows = bulletBlocks.map(block => {
+                      const text = block.replace(/^• /, '')
+                      const colonIdx = text.indexOf('):')
+                      const model = colonIdx > 0 ? text.substring(0, colonIdx + 1) : ''
+                      const rest = colonIdx > 0 ? text.substring(colonIdx + 2).trim() : text
+                      const priceMatch = rest.match(/od\s+[\d\s]+zł(?:\s*netto)?/)
+                      const price = priceMatch ? priceMatch[0].replace(' netto', '') : ''
+                      // Try to extract a short description after the last em-dash
+                      const dashParts = rest.split(' — ')
+                      const desc = dashParts.length > 1 ? dashParts[dashParts.length - 1].replace(/\.$/, '') : ''
+                      // Specs = everything before last em-dash, minus price
+                      const specsPart = dashParts.length > 1 ? dashParts.slice(0, -1).join(' — ') : rest
+                      const specs = specsPart.replace(/,?\s*od\s+[\d\s]+zł(?:\s*netto)?/, '').trim().replace(/\.$/, '')
+                      return { model, specs, price, desc }
+                    })
+
                     return (
                       <>
-                        {textBlocks.length > 0 && textBlocks[0] && (
+                        {textBlocks[0] && (
                           <p className="text-gray-600 leading-relaxed mb-4 sm:text-justify">{textBlocks[0]}</p>
                         )}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
-                          {bulletBlocks.map((block, i) => {
-                            const text = block.replace(/^• /, '')
-                            const colonIdx = text.indexOf('):')
-                            const hasHeader = colonIdx > 0 && colonIdx < 80
-                            const title = hasHeader ? text.substring(0, colonIdx + 1) : ''
-                            const body = hasHeader ? text.substring(colonIdx + 2).trim() : text
-                            // Extract price if present
-                            const priceMatch = body.match(/od\s+[\d\s]+zł/)
-                            return (
-                              <div key={i} className="bg-white border border-gray-200 rounded-xl p-4 flex flex-col">
-                                {title && <h3 className="font-semibold text-gray-900 text-sm mb-1.5">{title}</h3>}
-                                <p className="text-gray-500 text-xs leading-relaxed flex-1">{body}</p>
-                                {priceMatch && (
-                                  <p className="text-primary-600 font-semibold text-sm mt-2">{priceMatch[0]} netto</p>
-                                )}
-                              </div>
-                            )
-                          })}
+                        <div className="overflow-x-auto -mx-4 px-4 mb-6">
+                          <table className="w-full text-sm border-collapse">
+                            <thead>
+                              <tr className="bg-gray-50 border-b border-gray-200">
+                                <th className="text-left px-3 py-2.5 font-semibold text-gray-900 whitespace-nowrap">Model</th>
+                                <th className="text-left px-3 py-2.5 font-semibold text-gray-900">Kluczowe parametry</th>
+                                <th className="text-left px-3 py-2.5 font-semibold text-gray-900 whitespace-nowrap">Cena netto</th>
+                                <th className="text-left px-3 py-2.5 font-semibold text-gray-900 hidden md:table-cell">Zastosowanie</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {rows.map((row, i) => (
+                                <tr key={i} className="border-b border-gray-100 hover:bg-gray-50/50">
+                                  <td className="px-3 py-2.5 font-medium text-gray-900 whitespace-nowrap align-top">{row.model}</td>
+                                  <td className="px-3 py-2.5 text-gray-500 text-xs leading-relaxed align-top">{row.specs}</td>
+                                  <td className="px-3 py-2.5 text-primary-600 font-semibold whitespace-nowrap align-top">{row.price || '—'}</td>
+                                  <td className="px-3 py-2.5 text-gray-600 text-xs hidden md:table-cell align-top">{row.desc || '—'}</td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
                         </div>
                         {textBlocks.slice(1).map((block, i) => (
                           <p key={i} className="text-gray-600 leading-relaxed text-sm sm:text-justify mb-3">{block}</p>
