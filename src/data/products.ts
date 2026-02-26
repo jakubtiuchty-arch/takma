@@ -8406,11 +8406,9 @@ Dokumentacja: zebra.com/ds3608.`,
     priceFrom: 2417,
     images: [
       '/images/products/zebra-ds3608-xr.png',
-      '/images/products/zebra-ds3608-xr-2.png',
     ],
     imageDescriptions: [
       'Zebra DS3608-XR zielony — widok z boku, ultra-wytrzymały skaner dalekiego zasięgu z celownikiem laserowym',
-      'Zebra DS3608-XR zielony — widok z drugiej strony, masywna obudowa IP65/IP68',
     ],
     tags: ['magazyn', 'logistyka', 'produkcja', 'outdoor'],
     availability: 'available',
