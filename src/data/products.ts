@@ -183,7 +183,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208 — gwarancja 5 lat. Skanery przewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 7,
+    productCount: 8,
   },
   // {
   //   id: 'tablety',
@@ -822,8 +822,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Skanery kodów kreskowych przewodowe USB od 352 zł netto. Zebra DS2208 — imager 2D, IP52, 5 lat gwarancji. Do kas, aptek, biur i magazynów. Autoryzowany partner Zebra — doradztwo i serwis.',
     longDescription: 'Przewodowe czytniki kodów kreskowych (skanery USB / RS-232) — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania. Imager 2D odczytuje kody 1D, QR, DataMatrix i kody z ekranów. Zebra DS2208 (IP52, 5 lat gwarancji) — idealna na stałe stanowiska kasowe, apteki, przyjęcia towaru.',
     icon: 'scan',
-    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-li2208'],
-    productCount: 7,
+    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208'],
+    productCount: 8,
   },
   {
     id: 'skanery-bezprzewodowe',
@@ -8738,6 +8738,121 @@ Dokumentacja: zebra.com/ds3608.`,
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds3608/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/DS3600-Series/spec-sheet/ds36x8-sr-spec-sheet-en-us.pdf', size: '0.5 MB' },
+    ],
+    createdAt: '2026-02-26',
+  },
+  {
+    id: 'zebra-ds3608-hp',
+    slug: 'zebra-ds3608-hp',
+    name: 'Zebra DS3608-HP',
+    sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-hp.html',
+    seoTitle: 'Zebra DS3608-HP — skaner ultra-rugged z OCR i document capture | od 1 654 zł',
+    seoDescription: 'Zebra DS3608-HP — ultra-wytrzymały skaner 2D High Performance z OCR, document capture i photo capture. IP65/IP68, upadki 3 m, zasięg do 2 m. Cena od 1 654 zł netto.',
+    shortDescription: 'Ultra-rugged skaner 2D z OCR, document capture i photo capture — logistyka, transport, magazyn',
+    description: `Dla kogo? Zebra DS3608-HP to ultra-wytrzymały skaner ręczny 2D High Performance z funkcjami document capture, OCR i photo capture — jedyny wariant serii DS3600 z możliwością przechwytywania dokumentów i tekstu. Zaprojektowany dla logistyki, transportu, magazynów i punktów odbioru — wszędzie tam, gdzie oprócz skanowania kodów trzeba fotografować dokumenty, odczytywać tekst drukowany lub przechwytywać podpisy.
+
+Sensor obrazu 1 280 × 960 px (wyższa rozdzielczość niż SR/XR — 1 280 × 800) z polem widzenia 31° × 23°. Zasięg Code 128 (20 mil) od 12,7 do 114,3 cm, Code 128 (40 mil) do 203 cm. DataMatrix 10 mil od 15,2 do 38,1 cm. Celownik laserowy 655 nm. Potwierdzenie odczytu: LED + dźwięk + wibracja (3-stopniowe).
+
+Intelligent Document Capture: automatyczne prostowanie (de-skew), rozjaśnianie i kadrowanie przechwyconych dokumentów. OCR: odczyt czcionek OCR-A, OCR-B, MICR-E13B i numerów seryjnych. Photo Capture: dokumentacja fotograficzna stanów towaru, uszkodzeń, etykiet. Signature Capture: przechwytywanie podpisów elektronicznych do potwierdzeń odbioru.
+
+Multi-Code Data Formatting: jedno naciśnięcie spustu skanuje do 20 kodów jednocześnie. Interfejsy: USB, RS-232, Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP — natywnie). IP65 + IP68, upadki z 3 m na beton, 7 500 obrotów w tumbler teście, praca od -20°C do +50°C. Waga 309 g. Gwarancja 36 miesięcy (3 lata).
+
+Dokumentacja: zebra.com/ds3608.`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-przewodowe'],
+    manufacturerId: 'zebra',
+    priceFrom: 1654,
+    images: [
+      '/images/products/zebra-ds3608-xr.png',
+      '/images/products/zebra-ds3608-xr-2.png',
+      '/images/products/zebra-ds3608-xr-3.png',
+    ],
+    imageDescriptions: [
+      'Zebra DS3608-HP zielony — widok z przodu, okno skanera z sensorem 1280×960 do document capture i OCR',
+      'Zebra DS3608-HP zielony — widok z boku, masywna obudowa ultra-rugged IP65/IP68',
+      'Zebra DS3608-HP zielony — widok z tyłu, ergonomiczny uchwyt z gumowaną nakładką',
+    ],
+    tags: ['logistyka', 'magazyn', 'produkcja'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Typ skanera', value: 'Area imager 2D ultra-rugged, High Performance (OCR + document capture)' },
+      { name: 'Sensor', value: '1 280 × 960 px (wyższa rozdzielczość — document capture)' },
+      { name: 'Pole widzenia', value: '31° (poziomo) × 23° (pionowo)' },
+      { name: 'Skanowane kody 1D', value: 'Code 39, Code 128, Code 93, EAN/UPC, GS1 DataBar, I 2/5, Codabar, MSI Plessey' },
+      { name: 'Skanowane kody 2D', value: 'QR Code, DataMatrix, PDF417, Aztec, MaxiCode, Micro QR, Han Xin' },
+      { name: 'OCR', value: 'OCR-A, OCR-B, MICR-E13B, numery seryjne' },
+      { name: 'Zasięg (Code 128 5 mil)', value: '15,2–35,6 cm' },
+      { name: 'Zasięg (Code 128 20 mil)', value: '12,7–114,3 cm' },
+      { name: 'Zasięg (Code 128 40 mil)', value: '7,1–203,2 cm' },
+      { name: 'Zasięg (DataMatrix 10 mil)', value: '15,2–38,1 cm' },
+      { name: 'Multi-Code', value: 'Tak — do 20 kodów na jedno naciśnięcie spustu' },
+      { name: 'Document Capture', value: 'Tak — prostowanie, rozjaśnianie, kadrowanie' },
+      { name: 'Celownik', value: 'Laser 655 nm' },
+      { name: 'Interfejsy', value: 'USB, RS-232, Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP)' },
+      { name: 'Klasa szczelności', value: 'IP65 + IP68 (pyłoszczelny + zanurzalny)' },
+      { name: 'Odporność na upadki', value: '3,0 m na beton (wielokrotne)' },
+      { name: 'Tumble test', value: '7 500 obrotów (1,0 m)' },
+      { name: 'Temperatura pracy', value: '-20°C do +50°C' },
+      { name: 'Wymiary', value: '185 × 76 × 132 mm' },
+      { name: 'Waga', value: '309 g' },
+      { name: 'Gwarancja', value: '36 miesięcy (3 lata)' },
+    ],
+    variants: [
+      {
+        partNumber: 'DS3608-HP20003VZWW',
+        name: 'DS3608-HP — sam skaner',
+        priceFrom: 1654,
+        availability: 'available',
+        attributes: {},
+      },
+      {
+        partNumber: 'DS3608-HP3U4602VZW',
+        name: 'DS3608-HP — kabel USB',
+        priceFrom: 1756,
+        availability: 'available',
+        attributes: {
+          'Kabel USB': 'Tak',
+        },
+      },
+    ],
+    applications: ['Logistyka i transport — dokumentacja fotograficzna przesyłek', 'Magazyny — skanowanie kodów + OCR numerów seryjnych', 'Punkty odbioru — przechwytywanie podpisów i dokumentów', 'Produkcja — odczyt oznaczeń OCR na częściach', 'Cross-docking — Multi-Code (20 kodów/skan)', 'Transport — potwierdzenia odbioru z signature capture'],
+    compatibleAccessories: [],
+    relatedAccessories: ['zebra-stand-ds3608', 'zebra-cable-usb-ds3608', 'zebra-cable-usb-long-ds3608'],
+    faq: [
+      {
+        question: 'Co potrafi DS3608-HP czego nie potrafią inne warianty DS3600?',
+        answer: 'DS3608-HP jako jedyny w serii DS3600 obsługuje: Intelligent Document Capture (fotografowanie dokumentów z automatycznym prostowaniem i rozjaśnianiem), OCR (odczyt tekstu OCR-A, OCR-B, MICR-E13B), Photo Capture (dokumentacja fotograficzna) i Signature Capture (przechwytywanie podpisów). Ma też wyższy sensor 1280×960 px (vs 1280×800 w SR/XR).',
+      },
+      {
+        question: 'Jaki jest zasięg skanowania DS3608-HP?',
+        answer: 'DS3608-HP skanuje: Code 128 (5 mil) od 15,2 do 35,6 cm, Code 128 (20 mil) od 12,7 do 114,3 cm, Code 128 (40 mil) do 203 cm, DataMatrix 10 mil od 15,2 do 38,1 cm. Zasięg większy niż [DS3608-HD](/produkt/zebra-ds3608-hd) (do 66 cm), ale mniejszy niż [DS3608-XR](/produkt/zebra-ds3608-xr) (do 32 m).',
+      },
+      {
+        question: 'Czym DS3608-HP różni się od SR, HD i XR?',
+        answer: 'HP (High Performance) = OCR + document capture + photo capture + signature capture. [DS3608-SR](/produkt/zebra-ds3608-sr) (Standard Range) to uniwersalny skaner do 152 cm. [DS3608-HD](/produkt/zebra-ds3608-hd) (High Density) czyta kody od 3 mil z bliska. [DS3608-XR](/produkt/zebra-ds3608-xr) (Extended Range) sięga do 32 m. HP wybierz, gdy oprócz kodów musisz odczytywać tekst lub dokumentować stany towaru.',
+      },
+      {
+        question: 'Czy DS3608-HP działa w mroźni?',
+        answer: 'DS3608-HP pracuje od -20°C do +50°C (inne warianty DS3600 od -30°C). Podwójne uszczelnienie IP65 + IP68 chroni przed wilgocią. W mroźniach poniżej -20°C lepszym wyborem jest [DS3608-SR](/produkt/zebra-ds3608-sr) lub [DS3608-XR](/produkt/zebra-ds3608-xr).',
+      },
+      {
+        question: 'Czy DS3608-HP odczytuje tekst drukowany (OCR)?',
+        answer: 'Tak — DS3608-HP obsługuje czcionki OCR-A, OCR-B, MICR-E13B i numery seryjne. Idealne do odczytu numerów seryjnych na częściach, kodów na dokumentach celnych, numerów banknotów i oznaczeń na komponentach bez kodów kreskowych.',
+      },
+      {
+        question: 'Jaka jest gwarancja na DS3608-HP?',
+        answer: 'Zebra udziela gwarancji 36 miesięcy (3 lata) na skaner. TAKMA zapewnia serwis gwarancyjny i pogwarancyjny we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra). Dostępne plany serwisowe Zebra OneCare.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Zebra DS3608-HP?',
+        answer: 'W klasie ultra-rugged z OCR/document capture: Honeywell Granit XP 1990i z licencją OCR, Datalogic PowerScan 9600 z pakietem Aladdin. W niższym segmencie z document capture: [Zebra DS4608](/produkt/zebra-ds4608) (od 1 178 zł, IP52, document capture w niektórych konfiguracjach). DS3608-HP wyróżnia się IP65/IP68, upadkami z 3 m i natywnym OCR.',
+      },
+    ],
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds3608/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/DS3600-Series/spec-sheet/ds36x8-hp-spec-sheet-en-us.pdf', size: '0.5 MB' },
     ],
     createdAt: '2026-02-26',
   },
