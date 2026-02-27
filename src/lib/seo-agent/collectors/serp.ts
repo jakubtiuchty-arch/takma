@@ -83,6 +83,7 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'skaner zebra ds3678-xr', group: 'skanery' },
   { keyword: 'skaner zebra ds3678-hd', group: 'skanery' },
   { keyword: 'skaner zebra ds3678-hp', group: 'skanery' },
+  { keyword: 'skaner zebra ds2278', group: 'skanery' },
 
   // =====================================================
   // TERMINALE — "terminal mobilny zebra X" (10)
