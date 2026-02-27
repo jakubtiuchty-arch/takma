@@ -11,9 +11,6 @@ const footerLinks = {
     { name: 'Akcesoria do drukarek', href: '/akcesoria-do-drukarek-etykiet' },
   ],
   producenci: [
-    { name: 'Drukarki Zebra', href: '/drukarki-etykiet-zebra' },
-    { name: 'Terminale Zebra', href: '/terminale-mobilne-zebra' },
-    { name: 'Skanery Zebra', href: '/skanery-kodow-kreskowych-zebra' },
     { name: 'Honeywell', href: '/katalog?producent=honeywell' },
     { name: 'Datalogic', href: '/katalog?producent=datalogic' },
     { name: 'TSC', href: '/katalog?producent=tsc' },
