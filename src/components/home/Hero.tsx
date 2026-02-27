@@ -50,7 +50,7 @@ const slides: HeroSlide[] = [
   },
   {
     type: 'product',
-    image: '/images/baner_strona_główna_ds82.png',
+    image: '/images/hero-ds8208.png',
     name: 'Zebra DS8208',
     slug: 'zebra-ds8208',
     priceFrom: 1027,
