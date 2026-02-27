@@ -9312,16 +9312,16 @@ Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Man
     id: 'zebra-li3608-er',
     slug: 'zebra-li3608-er',
     name: 'Zebra LI3608-ER',
-    seoTitle: 'Skaner 1D Zebra LI3608-ER — ultra-rugged, zasięg 21 m, IP65+IP68 | TAKMA',
-    seoDescription: 'Zebra LI3608-ER (LI3608-ER20003VZWW, LI3608-ER3U4600ZVW) — przemysłowy skaner liniowy 1D Extended Range, zasięg do 21,3 m. IP65+IP68, upadki 2,4 m, -30°C. Od 2 264 zł netto.',
-    shortDescription: 'Przemysłowy skaner liniowy 1D Extended Range — zasięg do 21,3 m, IP65+IP68, upadki 2,4 m, -30°C',
+    seoTitle: 'Skaner 1D Zebra LI3608-ER — ultra-rugged, zasięg 19,8 m, IP65+IP68 | TAKMA',
+    seoDescription: 'Zebra LI3608-ER (LI3608-ER20003VZWW, LI3608-ER3U4600ZVW) — przemysłowy skaner liniowy 1D Extended Range, zasięg do 19,8 m. IP65+IP68, upadki 2,4 m, -30°C. Od 2 264 zł netto.',
+    shortDescription: 'Przemysłowy skaner liniowy 1D Extended Range — zasięg do 19,8 m, IP65+IP68, upadki 2,4 m, -30°C (327 g)',
     description: `Dla kogo? Zebra LI3608-ER to przemysłowy skaner liniowy 1D dalekiego zasięgu (Extended Range) zaprojektowany dla magazynów wysokiego składowania, doków przeładunkowych, placów składowych i operacji outdoorowych. Jeśli kody kreskowe 1D (Code 39, Code 128, UPC/EAN) znajdują się na regałach powyżej 3 metrów — LI3608-ER odczyta je bez drabiny i bez wchodzenia na wózek widłowy.
 
-Zasięg skanowania: Code 39 (20 mil) do 4,3 m, Code 39 (40 mil) do 8,4 m, kody retrorefleksyjne (100 mil) do 21,3 m. Dla porównania: [LI3608-SR](/produkt/zebra-li3608-sr) (Standard Range) sięga maksymalnie 1,07 m. Extended Range oznacza 4–20× większy dystans odczytu — operator stojąc na poziomie podłogi skanuje etykiety na górnych regałach bez podnośnika.
+Zasięg skanowania: Code 39 (20 mil) do 3,6 m, Code 39 (55 mil) do 8,9 m, kody retrorefleksyjne (100 mil) do 19,8 m. Dla porównania: [LI3608-SR](/produkt/zebra-li3608-sr) (Standard Range) sięga maksymalnie 1,07 m. Extended Range oznacza 3–18× większy dystans odczytu — operator stojąc na poziomie podłogi skanuje etykiety na górnych regałach bez podnośnika.
 
 Podwójne uszczelnienie IP65 + IP68 — pyłoszczelny i zanurzalny do 30 minut. Upadki wielokrotne z 2,4 m na beton (MIL-STD), 7 500 obrotów w tumble teście z 1 m. Praca od -30°C do +50°C bez czasu rozgrzewania — natychmiastowe skanowanie po wejściu do mroźni lub na plac zimą.
 
-Sensor liniowy 1 500 px z laserowym celownikiem 655 nm — precyzyjne namierzanie kodów na dużej odległości nawet przy słabym oświetleniu. Waga 287 g — najlżejszy ultra-rugged dalekiego zasięgu na rynku. Interfejsy: USB, RS-232, Keyboard Wedge. Opcjonalnie Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP) przez adapter EA3600.
+Sensor liniowy 2 496 px z laserowym celownikiem 655 nm — 66% więcej pikseli niż LI3608-SR (1 500 px), co zapewnia precyzyjne dekodowanie na dużych odległościach. Waga 327 g (o 40 g więcej niż SR — koszt większego sensora). Interfejsy: USB, RS-232, Keyboard Wedge. Opcjonalnie Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP) przez adapter EA3600.
 
 Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Management Service (zdalne zarządzanie flotą skanerów), ScanSpeed Analytics (analiza wydajności skanowania). Gwarancja producenta 3 lata. Pełna dokumentacja i instrukcja obsługi po polsku na [serwis-zebry.pl](https://www.serwis-zebry.pl/instrukcje/zebra-li3608/instrukcja-po-polsku).`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -9358,13 +9358,14 @@ Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Man
     specifications: [
       { name: 'Part Number', value: 'LI3608-ER20003VZWW' },
       { name: 'Typ skanera', value: 'Liniowy 1D Extended Range (linear imager)' },
-      { name: 'Sensor', value: '1 500 px (liniowy)' },
-      { name: 'Źródło światła', value: '2× LED 617 nm + laser celowniczy 655 nm' },
-      { name: 'Zasięg (UPC 13 mil)', value: '7,6–172,7 cm' },
-      { name: 'Zasięg (Code 39 20 mil)', value: '10,2–426,7 cm (4,3 m)' },
-      { name: 'Zasięg (Code 39 40 mil)', value: '15,2–838,2 cm (8,4 m)' },
-      { name: 'Zasięg (100 mil retro)', value: '91,4–2 133,6 cm (21,3 m)' },
-      { name: 'Najgęstszy kod', value: '5 mil (Code 39)' },
+      { name: 'Sensor', value: '2 496 px (liniowy)' },
+      { name: 'Źródło światła', value: 'LED 660 nm + laser celowniczy 655 nm' },
+      { name: 'Zasięg (Code 39 7,5 mil)', value: '7,6–71,2 cm' },
+      { name: 'Zasięg (Code 39 20 mil)', value: '7,6–355,6 cm (3,6 m)' },
+      { name: 'Zasięg (Code 39 55 mil)', value: '15,2–889 cm (8,9 m)' },
+      { name: 'Zasięg (Code 39 100 mil)', value: '50,8–1 727 cm (17,3 m)' },
+      { name: 'Zasięg (100 mil retro)', value: '76,2–1 981 cm (19,8 m)' },
+      { name: 'Najgęstszy kod', value: '7,5 mil (Code 39)' },
       { name: 'Symbologie 1D', value: 'Code 39, Code 128, UPC/EAN, Interleaved 2/5, GS1 DataBar, Codabar, Code 93, Code 11, MSI Plessey' },
       { name: 'Interfejsy', value: 'USB, RS-232, Keyboard Wedge' },
       { name: 'Industrial Ethernet', value: 'EtherNet/IP, Profinet, Modbus TCP (adapter EA3600)' },
@@ -9374,7 +9375,7 @@ Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Man
       { name: 'ESD', value: '±25 kV (powietrzne), ±10 kV (bezpośrednie)' },
       { name: 'Temperatura pracy', value: '-30°C do +50°C' },
       { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
-      { name: 'Waga', value: '287 g' },
+      { name: 'Waga', value: '327 g' },
       { name: 'Wymiary', value: '185 × 76 × 132 mm' },
       { name: 'Gwarancja', value: '36 miesięcy (3 lata)' },
     ],
@@ -9390,12 +9391,12 @@ Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Man
           specs: {
             'Wariant': '1D Extended Range',
             'Kody': 'Tylko 1D',
-            'Sensor': '1 500 px (liniowy)',
-            'Zasięg maks.': '21,3 m (100 mil retro)',
+            'Sensor': '2 496 px (liniowy)',
+            'Zasięg maks.': '19,8 m (100 mil retro)',
             'Multi-Code': 'Nie',
             'IP / Upadki': 'IP65+IP68 / 2,4 m',
             'Temperatura': '-30°C do +50°C',
-            'Waga': '287 g',
+            'Waga': '327 g',
             'Cena od': '~2 264 zł',
             'Najlepszy do': 'Wysokie regały, outdoor, 1D',
           },
@@ -9437,11 +9438,11 @@ Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Man
     faq: [
       {
         question: 'Czym różni się Zebra LI3608-ER od LI3608-SR?',
-        answer: 'LI3608-ER to wersja Extended Range — skanuje kody 1D z odległości do 21,3 m (retrorefleksyjne 100 mil) lub 4,3 m (Code 39 20 mil). [LI3608-SR](/produkt/zebra-li3608-sr) (Standard Range) sięga maksymalnie 1,07 m. Obie wersje mają identyczną obudowę, wagę (287 g), IP65+IP68 i zakres temperatur -30°C do +50°C. ER jest droższy o ~920 zł, ale eliminuje potrzebę podnośników w magazynach wysokiego składowania.',
+        answer: 'LI3608-ER to wersja Extended Range — skanuje kody 1D z odległości do 19,8 m (retrorefleksyjne 100 mil) lub 3,6 m (Code 39 20 mil). [LI3608-SR](/produkt/zebra-li3608-sr) (Standard Range) sięga maksymalnie 1,07 m. ER ma sensor 2 496 px (vs 1 500 px w SR) i waży 327 g (vs 287 g). IP65+IP68 i zakres temperatur -30°C do +50°C są identyczne. ER jest droższy o ~920 zł, ale eliminuje potrzebę podnośników w magazynach wysokiego składowania.',
       },
       {
         question: 'Do jakiej wysokości regału sięga LI3608-ER?',
-        answer: 'Z poziomu podłogi (ok. 1,5 m wysokości trzymania skanera) LI3608-ER sięga: etykiety Code 39 (20 mil) na wysokości do ~5,8 m, etykiety (40 mil) do ~9,9 m, kody retrorefleksyjne (100 mil) do ~22,8 m. W praktyce wystarcza do 4–5 poziomu regałów standardowych (6–8 m).',
+        answer: 'Z poziomu podłogi (ok. 1,5 m wysokości trzymania skanera) LI3608-ER sięga: etykiety Code 39 (20 mil) na wysokości do ~5,1 m, Code 39 (55 mil) do ~10,4 m, kody retrorefleksyjne (100 mil) do ~21,3 m. W praktyce wystarcza do 4–5 poziomu regałów standardowych (6–8 m).',
       },
       {
         question: 'Czy LI3608-ER działa w mroźni?',
@@ -9449,7 +9450,7 @@ Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Man
       },
       {
         question: 'Czy LI3608-ER odczytuje kody 2D (QR, DataMatrix)?',
-        answer: 'Nie — LI3608-ER to skaner wyłącznie 1D (liniowy). Jeśli potrzebujesz skanowania kodów 2D z dużej odległości, wybierz [DS3608-XR](/produkt/zebra-ds3608-xr) (2D Extended Range, zasięg do 32 m). DS3608-XR jest droższy o ~150 zł i waży 308 g (o 21 g więcej).',
+        answer: 'Nie — LI3608-ER to skaner wyłącznie 1D (liniowy). Jeśli potrzebujesz skanowania kodów 2D z dużej odległości, wybierz [DS3608-XR](/produkt/zebra-ds3608-xr) (2D Extended Range, zasięg do 32 m). DS3608-XR jest droższy o ~150 zł, ale lżejszy (308 g vs 327 g) i obsługuje QR/DataMatrix.',
       },
       {
         question: 'Czy LI3608-ER przeżyje upadek z wózka widłowego?',
@@ -9461,11 +9462,11 @@ Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Man
       },
       {
         question: 'Ile waży LI3608-ER?',
-        answer: '287 g — identycznie jak LI3608-SR. Najlżejszy ultra-rugged skaner dalekiego zasięgu na rynku. Dla porównania: DS3608-XR waży 308 g, Honeywell Granit 1981i FR — 362 g.',
+        answer: '327 g — o 40 g więcej niż LI3608-SR (287 g), co wynika z większego sensora 2 496 px. Mimo to lżejszy od Honeywell Granit 1981i FR (362 g). Dla porównania: DS3608-XR waży 308 g.',
       },
       {
         question: 'Kiedy wybrać LI3608-ER zamiast DS3608-XR?',
-        answer: 'LI3608-ER gdy: (1) potrzebujesz wyłącznie kodów 1D, (2) zależy Ci na mniejszej wadze (287 g vs 308 g), (3) chcesz zaoszczędzić ~150 zł. DS3608-XR gdy: (1) musisz skanować 2D (QR, DataMatrix), (2) potrzebujesz multi-code (do 20 kodów jednocześnie), (3) potrzebujesz jeszcze dłuższego zasięgu (32 m vs 21,3 m).',
+        answer: 'LI3608-ER gdy: (1) potrzebujesz wyłącznie kodów 1D, (2) chcesz zaoszczędzić ~150 zł. DS3608-XR gdy: (1) musisz skanować 2D (QR, DataMatrix), (2) potrzebujesz multi-code (do 20 kodów jednocześnie), (3) potrzebujesz jeszcze dłuższego zasięgu (32 m vs 19,8 m), (4) zależy Ci na mniejszej wadze (308 g vs 327 g).',
       },
       {
         question: 'Jak zarządzać flotą skanerów LI3608-ER zdalnie?',
