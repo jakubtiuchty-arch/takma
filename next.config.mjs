@@ -82,8 +82,7 @@ const nextConfig = {
       // DS3608-HP ma własną stronę → redirect usunięty
       { source: '/produkt/zebra-ds3608-dp/:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },
       { source: '/produkt/zebra-ds3678:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },
-      // LI3608-SR ma własną stronę → redirect usunięty
-      { source: '/produkt/zebra-li3608-er:path*', destination: '/produkt/zebra-li3608-sr', permanent: true },
+      // LI3608-SR i LI3608-ER mają własne strony → redirecty usunięte
       { source: '/produkt/zebra-li3678:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },
       // DS8108/DS8178 family
       { source: '/produkt/zebra-ds8108/:path*', destination: '/produkt/zebra-ds8178', permanent: true },

@@ -183,7 +183,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208 — gwarancja 5 lat. Skanery przewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 9,
+    productCount: 10,
   },
   // {
   //   id: 'tablety',
@@ -822,8 +822,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Skanery kodów kreskowych przewodowe USB od 352 zł netto. Zebra DS2208 — imager 2D, IP52, 5 lat gwarancji. Do kas, aptek, biur i magazynów. Autoryzowany partner Zebra — doradztwo i serwis.',
     longDescription: 'Przewodowe czytniki kodów kreskowych (skanery USB / RS-232) — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania. Imager 2D odczytuje kody 1D, QR, DataMatrix i kody z ekranów. Zebra DS2208 (IP52, 5 lat gwarancji) — idealna na stałe stanowiska kasowe, apteki, przyjęcia towaru.',
     icon: 'scan',
-    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr'],
-    productCount: 9,
+    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er'],
+    productCount: 10,
   },
   {
     id: 'skanery-bezprzewodowe',
@@ -9305,6 +9305,180 @@ Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Man
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-li3608/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/LI3600-Series/spec-sheet/li36x8-sr-spec-sheet-en-us.pdf', size: '0.5 MB' },
+    ],
+    createdAt: '2026-02-27',
+  },
+  {
+    id: 'zebra-li3608-er',
+    slug: 'zebra-li3608-er',
+    name: 'Zebra LI3608-ER',
+    seoTitle: 'Skaner 1D Zebra LI3608-ER — ultra-rugged, zasięg 21 m, IP65+IP68 | TAKMA',
+    seoDescription: 'Zebra LI3608-ER (LI3608-ER20003VZWW, LI3608-ER3U4600ZVW) — przemysłowy skaner liniowy 1D Extended Range, zasięg do 21,3 m. IP65+IP68, upadki 2,4 m, -30°C. Od 2 264 zł netto.',
+    shortDescription: 'Przemysłowy skaner liniowy 1D Extended Range — zasięg do 21,3 m, IP65+IP68, upadki 2,4 m, -30°C',
+    description: `Dla kogo? Zebra LI3608-ER to przemysłowy skaner liniowy 1D dalekiego zasięgu (Extended Range) zaprojektowany dla magazynów wysokiego składowania, doków przeładunkowych, placów składowych i operacji outdoorowych. Jeśli kody kreskowe 1D (Code 39, Code 128, UPC/EAN) znajdują się na regałach powyżej 3 metrów — LI3608-ER odczyta je bez drabiny i bez wchodzenia na wózek widłowy.
+
+Zasięg skanowania: Code 39 (20 mil) do 4,3 m, Code 39 (40 mil) do 8,4 m, kody retrorefleksyjne (100 mil) do 21,3 m. Dla porównania: [LI3608-SR](/produkt/zebra-li3608-sr) (Standard Range) sięga maksymalnie 1,07 m. Extended Range oznacza 4–20× większy dystans odczytu — operator stojąc na poziomie podłogi skanuje etykiety na górnych regałach bez podnośnika.
+
+Podwójne uszczelnienie IP65 + IP68 — pyłoszczelny i zanurzalny do 30 minut. Upadki wielokrotne z 2,4 m na beton (MIL-STD), 7 500 obrotów w tumble teście z 1 m. Praca od -30°C do +50°C bez czasu rozgrzewania — natychmiastowe skanowanie po wejściu do mroźni lub na plac zimą.
+
+Sensor liniowy 1 500 px z laserowym celownikiem 655 nm — precyzyjne namierzanie kodów na dużej odległości nawet przy słabym oświetleniu. Waga 287 g — najlżejszy ultra-rugged dalekiego zasięgu na rynku. Interfejsy: USB, RS-232, Keyboard Wedge. Opcjonalnie Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP) przez adapter EA3600.
+
+Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Management Service (zdalne zarządzanie flotą skanerów), ScanSpeed Analytics (analiza wydajności skanowania). Gwarancja producenta 3 lata. Pełna dokumentacja i instrukcja obsługi po polsku na [serwis-zebry.pl](https://www.serwis-zebry.pl/instrukcje/zebra-li3608/instrukcja-po-polsku).`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-przewodowe'],
+    manufacturerId: 'zebra',
+    isNew: false,
+    isBestseller: false,
+    tags: ['magazyn', 'produkcja', 'logistyka', 'outdoor'],
+    applications: ['Magazyny wysokiego składowania', 'Doki przeładunkowe', 'Place składowe i outdoor', 'Centra dystrybucji FMCG', 'Hale produkcyjne', 'Mroźnie i chłodnie (do -30°C)'],
+    priceFrom: 2264,
+    availability: 'available',
+    images: ['/images/products/li3608_1.png', '/images/products/li3608_2.png'],
+    imageDescriptions: [
+      'Zebra LI3608-ER — skaner liniowy 1D Extended Range ultra-rugged, widok z przodu z laserowym celownikiem',
+      'Zebra LI3608-ER — widok z boku, obudowa pistoletowa z kablem USB',
+    ],
+    sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/li3600-series/li3600-er.html',
+    variants: [
+      {
+        name: 'LI3608-ER — sam skaner',
+        partNumber: 'LI3608-ER20003VZWW',
+        priceFrom: 2264,
+        availability: 'available',
+        attributes: {},
+      },
+      {
+        name: 'LI3608-ER — zestaw USB Kit',
+        partNumber: 'LI3608-ER3U4600ZVW',
+        priceFrom: 2375,
+        availability: 'available',
+        attributes: { 'Kabel USB': 'Tak' },
+      },
+    ],
+    specifications: [
+      { name: 'Part Number', value: 'LI3608-ER20003VZWW' },
+      { name: 'Typ skanera', value: 'Liniowy 1D Extended Range (linear imager)' },
+      { name: 'Sensor', value: '1 500 px (liniowy)' },
+      { name: 'Źródło światła', value: '2× LED 617 nm + laser celowniczy 655 nm' },
+      { name: 'Zasięg (UPC 13 mil)', value: '7,6–172,7 cm' },
+      { name: 'Zasięg (Code 39 20 mil)', value: '10,2–426,7 cm (4,3 m)' },
+      { name: 'Zasięg (Code 39 40 mil)', value: '15,2–838,2 cm (8,4 m)' },
+      { name: 'Zasięg (100 mil retro)', value: '91,4–2 133,6 cm (21,3 m)' },
+      { name: 'Najgęstszy kod', value: '5 mil (Code 39)' },
+      { name: 'Symbologie 1D', value: 'Code 39, Code 128, UPC/EAN, Interleaved 2/5, GS1 DataBar, Codabar, Code 93, Code 11, MSI Plessey' },
+      { name: 'Interfejsy', value: 'USB, RS-232, Keyboard Wedge' },
+      { name: 'Industrial Ethernet', value: 'EtherNet/IP, Profinet, Modbus TCP (adapter EA3600)' },
+      { name: 'Klasa ochrony (IP)', value: 'IP65 + IP68' },
+      { name: 'Odporność na upadki', value: '2,4 m na beton (wielokrotne)' },
+      { name: 'Tumble test', value: '7 500 obrotów z 1,0 m' },
+      { name: 'ESD', value: '±25 kV (powietrzne), ±10 kV (bezpośrednie)' },
+      { name: 'Temperatura pracy', value: '-30°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
+      { name: 'Waga', value: '287 g' },
+      { name: 'Wymiary', value: '185 × 76 × 132 mm' },
+      { name: 'Gwarancja', value: '36 miesięcy (3 lata)' },
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: ['zebra-stand-ds3608', 'zebra-cable-usb-ds3608', 'zebra-cable-usb-long-ds3608'],
+    comparison: {
+      title: 'Porównanie skanerów ultra-rugged Zebra: LI3608-ER vs LI3608-SR vs DS3608-XR',
+      models: [
+        {
+          name: 'LI3608-ER',
+          slug: 'zebra-li3608-er',
+          highlight: true,
+          specs: {
+            'Wariant': '1D Extended Range',
+            'Kody': 'Tylko 1D',
+            'Sensor': '1 500 px (liniowy)',
+            'Zasięg maks.': '21,3 m (100 mil retro)',
+            'Multi-Code': 'Nie',
+            'IP / Upadki': 'IP65+IP68 / 2,4 m',
+            'Temperatura': '-30°C do +50°C',
+            'Waga': '287 g',
+            'Cena od': '~2 264 zł',
+            'Najlepszy do': 'Wysokie regały, outdoor, 1D',
+          },
+        },
+        {
+          name: 'LI3608-SR',
+          slug: 'zebra-li3608-sr',
+          specs: {
+            'Wariant': '1D Standard Range',
+            'Kody': 'Tylko 1D',
+            'Sensor': '1 500 px (liniowy)',
+            'Zasięg maks.': '106,7 cm (Code 39 20 mil)',
+            'Multi-Code': 'Nie',
+            'IP / Upadki': 'IP65+IP68 / 2,4 m',
+            'Temperatura': '-30°C do +50°C',
+            'Waga': '287 g',
+            'Cena od': '~1 343 zł',
+            'Najlepszy do': 'Operacje 1D, budżet, mroźnie',
+          },
+        },
+        {
+          name: 'DS3608-XR',
+          slug: 'zebra-ds3608-xr',
+          specs: {
+            'Wariant': '2D Extended Range',
+            'Kody': '1D + 2D',
+            'Sensor': 'Near + Far (dual)',
+            'Zasięg maks.': '32 m (Code 39 100 mil)',
+            'Multi-Code': 'Tak (do 20)',
+            'IP / Upadki': 'IP65+IP68 / 3,0 m',
+            'Temperatura': '-30°C do +50°C',
+            'Waga': '308 g',
+            'Cena od': '~2 417 zł',
+            'Najlepszy do': 'Wysokie regały, 2D + 1D',
+          },
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Czym różni się Zebra LI3608-ER od LI3608-SR?',
+        answer: 'LI3608-ER to wersja Extended Range — skanuje kody 1D z odległości do 21,3 m (retrorefleksyjne 100 mil) lub 4,3 m (Code 39 20 mil). [LI3608-SR](/produkt/zebra-li3608-sr) (Standard Range) sięga maksymalnie 1,07 m. Obie wersje mają identyczną obudowę, wagę (287 g), IP65+IP68 i zakres temperatur -30°C do +50°C. ER jest droższy o ~920 zł, ale eliminuje potrzebę podnośników w magazynach wysokiego składowania.',
+      },
+      {
+        question: 'Do jakiej wysokości regału sięga LI3608-ER?',
+        answer: 'Z poziomu podłogi (ok. 1,5 m wysokości trzymania skanera) LI3608-ER sięga: etykiety Code 39 (20 mil) na wysokości do ~5,8 m, etykiety (40 mil) do ~9,9 m, kody retrorefleksyjne (100 mil) do ~22,8 m. W praktyce wystarcza do 4–5 poziomu regałów standardowych (6–8 m).',
+      },
+      {
+        question: 'Czy LI3608-ER działa w mroźni?',
+        answer: 'Tak — temperatura pracy od -30°C do +50°C (model przewodowy). Podwójne uszczelnienie IP65 + IP68 chroni przed wilgocią i lodem. Skaner wytrzymuje wielokrotne przejścia między mroźnią a temperaturą pokojową bez czasu rozgrzewania.',
+      },
+      {
+        question: 'Czy LI3608-ER odczytuje kody 2D (QR, DataMatrix)?',
+        answer: 'Nie — LI3608-ER to skaner wyłącznie 1D (liniowy). Jeśli potrzebujesz skanowania kodów 2D z dużej odległości, wybierz [DS3608-XR](/produkt/zebra-ds3608-xr) (2D Extended Range, zasięg do 32 m). DS3608-XR jest droższy o ~150 zł i waży 308 g (o 21 g więcej).',
+      },
+      {
+        question: 'Czy LI3608-ER przeżyje upadek z wózka widłowego?',
+        answer: 'Tak — testowany na upadki wielokrotne z 2,4 m na beton. Tumble test: 7 500 obrotów z 1,0 m (50% więcej niż Honeywell Granit: 5 000). IP68 oznacza przeżycie zanurzenia w wodzie do 30 minut.',
+      },
+      {
+        question: 'Jakie interfejsy ma LI3608-ER?',
+        answer: 'USB (host-powered), RS-232, Keyboard Wedge. Opcjonalnie Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP) przez adapter EA3600 — do bezpośredniej komunikacji z PLC Siemens (Profinet) i Rockwell (EtherNet/IP).',
+      },
+      {
+        question: 'Ile waży LI3608-ER?',
+        answer: '287 g — identycznie jak LI3608-SR. Najlżejszy ultra-rugged skaner dalekiego zasięgu na rynku. Dla porównania: DS3608-XR waży 308 g, Honeywell Granit 1981i FR — 362 g.',
+      },
+      {
+        question: 'Kiedy wybrać LI3608-ER zamiast DS3608-XR?',
+        answer: 'LI3608-ER gdy: (1) potrzebujesz wyłącznie kodów 1D, (2) zależy Ci na mniejszej wadze (287 g vs 308 g), (3) chcesz zaoszczędzić ~150 zł. DS3608-XR gdy: (1) musisz skanować 2D (QR, DataMatrix), (2) potrzebujesz multi-code (do 20 kodów jednocześnie), (3) potrzebujesz jeszcze dłuższego zasięgu (32 m vs 21,3 m).',
+      },
+      {
+        question: 'Jak zarządzać flotą skanerów LI3608-ER zdalnie?',
+        answer: 'Przez Zebra DataCapture DNA: 123Scan (konfiguracja przez kody kreskowe lub USB), Scanner Management Service (zdalne zarządzanie flotą), ScanSpeed Analytics (analiza wydajności skanowania — ile skanów, ile błędów, jaki czas).',
+      },
+      {
+        question: 'Jakie są alternatywy dla Zebra LI3608-ER?',
+        answer: 'W klasie ultra-rugged dalekiego zasięgu: [Zebra DS3608-XR](/produkt/zebra-ds3608-xr) (od ~2 417 zł, 2D + 1D, zasięg 32 m). Standard Range: [LI3608-SR](/produkt/zebra-li3608-sr) (od ~1 343 zł, zasięg 1,07 m). Konkurenci: Honeywell Granit 1981i FR (2D, zasięg do 15 m, IP65), Datalogic PowerScan PD9600-DPX (2D, dalekie skanowanie). Jeśli potrzebny tylko 1D z dużym zasięgiem — LI3608-ER jest optymalny wagowo.',
+      },
+    ],
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-li3608/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/LI3600-Series/spec-sheet/li36x8-er-spec-sheet-en-us.pdf', size: '0.5 MB' },
     ],
     createdAt: '2026-02-27',
   },
