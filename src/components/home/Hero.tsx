@@ -16,6 +16,10 @@ interface ProductSlide {
   imageClassName?: string
   /** 'lifestyle' = gradient od prawej, tekst po prawej; 'packshot' = gradient od lewej, tekst po lewej */
   imageType?: 'lifestyle' | 'packshot'
+  /** Baner — bez gradientów/overlay'ów, tło dopasowane do koloru obrazu */
+  noOverlay?: boolean
+  /** Kolor tła sekcji dopasowany do banera */
+  bgColor?: string
 }
 
 interface InfoSlide {
@@ -43,6 +47,17 @@ const slides: HeroSlide[] = [
     priceFrom: 5132,
     imageClassName: 'object-contain scale-[1.3] translate-y-[3%]',
     imageType: 'packshot',
+  },
+  {
+    type: 'product',
+    image: '/images/baner_strona_główna_ds82.png',
+    name: 'Zebra DS8208',
+    slug: 'zebra-ds8208',
+    priceFrom: 1027,
+    imageClassName: 'object-cover object-right',
+    imageType: 'packshot',
+    noOverlay: true,
+    bgColor: '#111214',
   },
 ]
 
@@ -72,11 +87,13 @@ export default function Hero() {
 
   const slide = slides[current]
   const isLifestyle = slide.type === 'product' && slide.imageType === 'lifestyle'
+  const isBanner = slide.type === 'product' && slide.noOverlay
+  const sectionBg = (slide.type === 'product' && slide.bgColor) ? slide.bgColor : '#0c1525'
 
   return (
-    <section className="relative overflow-hidden w-full h-[400px] md:h-[420px] lg:h-[520px]" style={{ backgroundColor: '#0c1525' }}>
-      {/* Tło — gradient mesh (tylko gdy nie info slide) */}
-      {slide.type !== 'info' && <div className="absolute inset-0 bg-gradient-mesh-dark" />}
+    <section className="relative overflow-hidden w-full h-[400px] md:h-[420px] lg:h-[520px]" style={{ backgroundColor: sectionBg }}>
+      {/* Tło — gradient mesh (nie dla info ani banner) */}
+      {slide.type !== 'info' && !isBanner && <div className="absolute inset-0 bg-gradient-mesh-dark" />}
 
       {/* Info slide — obraz po prawej, tło sekcji dopasowane do koloru tła obrazu */}
       {slide.type === 'info' && (
@@ -108,7 +125,7 @@ export default function Hero() {
             alt={slide.name}
             fill
             className={clsx(
-              isLifestyle ? '' : 'brightness-[1.3] contrast-[1.05]',
+              !isLifestyle && !isBanner ? 'brightness-[1.3] contrast-[1.05]' : '',
               slide.imageClassName
             )}
             priority={current <= 1}
@@ -116,8 +133,8 @@ export default function Hero() {
         </div>
       )}
 
-      {/* Gradienty — różne dla lifestyle vs packshot */}
-      {slide.type === 'product' && (
+      {/* Gradienty — różne dla lifestyle vs packshot (baner: bez overlay'ów) */}
+      {slide.type === 'product' && !isBanner && (
         isLifestyle ? (
           /* Lifestyle: gradient od PRAWEJ — tekst po prawej, zdjęcie widoczne po lewej */
           <>
