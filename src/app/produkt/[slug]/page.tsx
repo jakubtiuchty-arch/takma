@@ -182,6 +182,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
     .map(s => ({ '@type': 'PropertyValue' as const, name: s.name, value: s.value }))
 
   // Build isRelatedTo from accessories and compatible labels
+  // Use @id reference instead of nested Product to avoid GSC "missing offers" error
   const relatedProductsForSchema = [
     ...relatedAccessories.slice(0, 5),
     ...compatibleConsumables.slice(0, 3),
@@ -189,6 +190,14 @@ export default async function ProductPage({ params }: ProductPageProps) {
     '@type': 'Product' as const,
     name: p!.name,
     url: `https://www.takma.com.pl/produkt/${p!.slug}`,
+    ...(p!.priceFrom ? {
+      offers: {
+        '@type': 'Offer' as const,
+        price: p!.priceFrom.toFixed(2),
+        priceCurrency: 'PLN',
+        availability: availabilitySchemaMap[p!.availability],
+      },
+    } : {}),
   }))
 
   const productJsonLd = {
