@@ -15,12 +15,14 @@ const COMPETITORS = ['aspekt.net.pl', 'bcmarket.pl', 'zebrasklep.pl', 'strefadru
 
 const GROUP_LABELS: Record<string, string> = {
   brand: 'Brand',
-  drukarki: 'Drukarki',
-  terminale: 'Terminale',
+  'drukarki-biurkowe': 'Drukarki biurkowe',
+  'drukarki-przemyslowe': 'Drukarki przemysłowe',
+  'drukarki-mobilne': 'Drukarki mobilne',
   skanery: 'Skanery',
+  terminale: 'Terminale',
+  produkty: 'Produkty (model)',
+  generyczne: 'Generyczne',
   'long-tail': 'Long-tail',
-  produkty: 'Produkty',
-  mobilne: 'Mobilne',
 }
 
 function PositionBadge({ position }: { position: number | null }) {
@@ -133,10 +135,10 @@ export default function SerpTable({ positions }: SerpTableProps) {
           <div className="overflow-x-auto">
             <table className="w-full text-sm table-fixed">
               <colgroup>
-                <col style={{ width: '40%' }} />
-                <col style={{ width: `${60 / (COMPETITORS.length + 1)}%` }} />
+                <col style={{ width: '35%' }} />
+                <col style={{ width: `${65 / (COMPETITORS.length + 1)}%` }} />
                 {COMPETITORS.map(c => (
-                  <col key={c} style={{ width: `${60 / (COMPETITORS.length + 1)}%` }} />
+                  <col key={c} style={{ width: `${65 / (COMPETITORS.length + 1)}%` }} />
                 ))}
               </colgroup>
               <thead>

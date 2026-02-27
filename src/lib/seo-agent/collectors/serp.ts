@@ -1,8 +1,8 @@
 /**
  * SERP Collector — Serper.dev API
- * Faza 2: Śledzi pozycje TAKMA i konkurentów dla ~25 fraz
+ * Faza 2: Śledzi pozycje TAKMA i konkurentów dla fraz produktowych i generycznych
  * API: https://google.serper.dev/search
- * Free tier: 2500 queries/miesiąc → 25 fraz/run × 2 runs/tydzień = ~200/msc
+ * Free tier: 2500 queries/miesiąc → ~75 fraz × 8 runs/msc = ~600/msc
  * Env var: SERPER_API_KEY
  */
 
@@ -21,38 +21,113 @@ const COMPETITORS = [
 
 // Śledzone frazy z grupami
 const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
-  // Brand
+  // =====================================================
+  // BRAND (2)
+  // =====================================================
   { keyword: 'takma drukarki', group: 'brand' },
   { keyword: 'takma terminale', group: 'brand' },
-  // Drukarki
-  { keyword: 'drukarki etykiet zebra', group: 'drukarki' },
-  { keyword: 'drukarka etykiet', group: 'drukarki' },
-  { keyword: 'drukarka termiczna zebra', group: 'drukarki' },
-  { keyword: 'drukarka etykiet cena', group: 'drukarki' },
-  { keyword: 'drukarka kodów kreskowych', group: 'drukarki' },
-  { keyword: 'drukarki etykiet przemysłowe', group: 'drukarki' },
-  // Terminale
-  { keyword: 'terminal mobilny zebra', group: 'terminale' },
-  { keyword: 'zebra tc501', group: 'terminale' },
-  { keyword: 'zebra tc22', group: 'terminale' },
-  { keyword: 'zebra tc27', group: 'terminale' },
-  { keyword: 'terminal mobilny cena', group: 'terminale' },
-  // Skanery
-  { keyword: 'skaner kodów kreskowych zebra', group: 'skanery' },
-  { keyword: 'skanery kodów kreskowych', group: 'skanery' },
-  // Long-tail
+
+  // =====================================================
+  // DRUKARKI BIURKOWE — "drukarka etykiet zebra X" (11)
+  // =====================================================
+  { keyword: 'drukarka etykiet zebra zd220t', group: 'drukarki-biurkowe' },
+  { keyword: 'drukarka etykiet zebra zd220d', group: 'drukarki-biurkowe' },
+  { keyword: 'drukarka etykiet zebra zd230t', group: 'drukarki-biurkowe' },
+  { keyword: 'drukarka etykiet zebra zd230d', group: 'drukarki-biurkowe' },
+  { keyword: 'drukarka etykiet zebra zd411t', group: 'drukarki-biurkowe' },
+  { keyword: 'drukarka etykiet zebra zd411d', group: 'drukarki-biurkowe' },
+  { keyword: 'drukarka etykiet zebra zd421t', group: 'drukarki-biurkowe' },
+  { keyword: 'drukarka etykiet zebra zd421d', group: 'drukarki-biurkowe' },
+  { keyword: 'drukarka etykiet zebra zd621t', group: 'drukarki-biurkowe' },
+  { keyword: 'drukarka etykiet zebra zd621d', group: 'drukarki-biurkowe' },
+  { keyword: 'drukarka etykiet zebra zd510', group: 'drukarki-biurkowe' },
+
+  // =====================================================
+  // DRUKARKI PRZEMYSŁOWE — "drukarka etykiet zebra X" (7)
+  // =====================================================
+  { keyword: 'drukarka etykiet zebra zt111', group: 'drukarki-przemyslowe' },
+  { keyword: 'drukarka etykiet zebra zt231', group: 'drukarki-przemyslowe' },
+  { keyword: 'drukarka etykiet zebra zt411', group: 'drukarki-przemyslowe' },
+  { keyword: 'drukarka etykiet zebra zt421', group: 'drukarki-przemyslowe' },
+  { keyword: 'drukarka etykiet zebra zt510', group: 'drukarki-przemyslowe' },
+  { keyword: 'drukarka etykiet zebra zt610', group: 'drukarki-przemyslowe' },
+  { keyword: 'drukarka etykiet zebra zt620', group: 'drukarki-przemyslowe' },
+
+  // =====================================================
+  // DRUKARKI MOBILNE — "drukarka mobilna zebra X" (9)
+  // =====================================================
+  { keyword: 'drukarka mobilna zebra zq210', group: 'drukarki-mobilne' },
+  { keyword: 'drukarka mobilna zebra zq220', group: 'drukarki-mobilne' },
+  { keyword: 'drukarka mobilna zebra zq310', group: 'drukarki-mobilne' },
+  { keyword: 'drukarka mobilna zebra zq320', group: 'drukarki-mobilne' },
+  { keyword: 'drukarka mobilna zebra zq511', group: 'drukarki-mobilne' },
+  { keyword: 'drukarka mobilna zebra zq521', group: 'drukarki-mobilne' },
+  { keyword: 'drukarka mobilna zebra zq610', group: 'drukarki-mobilne' },
+  { keyword: 'drukarka mobilna zebra zq620', group: 'drukarki-mobilne' },
+  { keyword: 'drukarka mobilna zebra zq630', group: 'drukarki-mobilne' },
+
+  // =====================================================
+  // SKANERY — "skaner zebra X" (8)
+  // =====================================================
+  { keyword: 'skaner zebra ds2208', group: 'skanery' },
+  { keyword: 'skaner zebra ds4608', group: 'skanery' },
+  { keyword: 'skaner zebra ds8208', group: 'skanery' },
+  { keyword: 'skaner zebra ds3608', group: 'skanery' },
+  { keyword: 'skaner zebra ds3608 xr', group: 'skanery' },
+  { keyword: 'skaner zebra ds3608 hd', group: 'skanery' },
+  { keyword: 'skaner zebra ds3608 sr', group: 'skanery' },
+  { keyword: 'skaner zebra li2208', group: 'skanery' },
+
+  // =====================================================
+  // TERMINALE — "terminal mobilny zebra X" (10)
+  // =====================================================
+  { keyword: 'terminal mobilny zebra tc22', group: 'terminale' },
+  { keyword: 'terminal mobilny zebra tc27', group: 'terminale' },
+  { keyword: 'terminal mobilny zebra tc53', group: 'terminale' },
+  { keyword: 'terminal mobilny zebra tc58', group: 'terminale' },
+  { keyword: 'terminal mobilny zebra tc501', group: 'terminale' },
+  { keyword: 'terminal mobilny zebra tc701', group: 'terminale' },
+  { keyword: 'terminal mobilny zebra mc3300x', group: 'terminale' },
+  { keyword: 'terminal mobilny zebra mc3400', group: 'terminale' },
+  { keyword: 'terminal mobilny zebra mc9400', group: 'terminale' },
+  { keyword: 'terminal mobilny zebra em45', group: 'terminale' },
+
+  // =====================================================
+  // PRODUKTY — sam model (15)
+  // =====================================================
+  { keyword: 'zebra zd421t', group: 'produkty' },
+  { keyword: 'zebra zd421d', group: 'produkty' },
+  { keyword: 'zebra zd621t', group: 'produkty' },
+  { keyword: 'zebra zd621d', group: 'produkty' },
+  { keyword: 'zebra zt411', group: 'produkty' },
+  { keyword: 'zebra zt231', group: 'produkty' },
+  { keyword: 'zebra zt610', group: 'produkty' },
+  { keyword: 'zebra zd220', group: 'produkty' },
+  { keyword: 'zebra tc22', group: 'produkty' },
+  { keyword: 'zebra tc27', group: 'produkty' },
+  { keyword: 'zebra mc3400', group: 'produkty' },
+  { keyword: 'zebra mc9400', group: 'produkty' },
+  { keyword: 'zebra ds2208', group: 'produkty' },
+  { keyword: 'zebra ds4608', group: 'produkty' },
+  { keyword: 'zebra zq521', group: 'produkty' },
+
+  // =====================================================
+  // GENERYCZNE (5)
+  // =====================================================
+  { keyword: 'drukarka etykiet', group: 'generyczne' },
+  { keyword: 'drukarka etykiet cena', group: 'generyczne' },
+  { keyword: 'drukarka kodów kreskowych', group: 'generyczne' },
+  { keyword: 'skanery kodów kreskowych', group: 'generyczne' },
+  { keyword: 'terminal mobilny cena', group: 'generyczne' },
+
+  // =====================================================
+  // LONG-TAIL (5)
+  // =====================================================
   { keyword: 'drukarka termiczna vs termotransferowa', group: 'long-tail' },
   { keyword: 'jak wybrać drukarkę etykiet', group: 'long-tail' },
   { keyword: 'drukarka etykiet do magazynu', group: 'long-tail' },
-  // Produkty
-  { keyword: 'zebra zd421', group: 'produkty' },
-  { keyword: 'zebra zt411', group: 'produkty' },
-  { keyword: 'zebra zd621', group: 'produkty' },
-  { keyword: 'zebra zd220', group: 'produkty' },
-  { keyword: 'zebra zt231', group: 'produkty' },
-  // Mobilne drukarki
-  { keyword: 'drukarka mobilna zebra', group: 'mobilne' },
-  { keyword: 'zebra zq521', group: 'mobilne' },
+  { keyword: 'drukarki etykiet przemysłowe', group: 'long-tail' },
+  { keyword: 'drukarka etykiet do apteki', group: 'long-tail' },
 ]
 
 // ---------------------------------------------------------------------------
@@ -151,7 +226,7 @@ export async function collectSERP(): Promise<SerpData> {
         competitorPositions[competitor] = findPosition(organic, competitor)
       }
 
-      // Rich snippet: sprawdź czy w top 3 jest jakaś pozycja z rozszerzonym wynikiem
+      // Rich snippet: sprawdź czy w top 10 jest TAKMA
       const hasRichSnippet = takmaPosition !== null && takmaPosition <= 10
 
       results.push({
