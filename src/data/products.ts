@@ -183,7 +183,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208 — gwarancja 5 lat. Skanery przewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 8,
+    productCount: 9,
   },
   // {
   //   id: 'tablety',
@@ -822,8 +822,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Skanery kodów kreskowych przewodowe USB od 352 zł netto. Zebra DS2208 — imager 2D, IP52, 5 lat gwarancji. Do kas, aptek, biur i magazynów. Autoryzowany partner Zebra — doradztwo i serwis.',
     longDescription: 'Przewodowe czytniki kodów kreskowych (skanery USB / RS-232) — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania. Imager 2D odczytuje kody 1D, QR, DataMatrix i kody z ekranów. Zebra DS2208 (IP52, 5 lat gwarancji) — idealna na stałe stanowiska kasowe, apteki, przyjęcia towaru.',
     icon: 'scan',
-    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208'],
-    productCount: 8,
+    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr'],
+    productCount: 9,
   },
   {
     id: 'skanery-bezprzewodowe',
@@ -9135,6 +9135,178 @@ Dokumentacja: zebra.com/ds3608.`,
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/DS3600-Series/spec-sheet/ds36x8-hp-spec-sheet-en-us.pdf', size: '0.5 MB' },
     ],
     createdAt: '2026-02-26',
+  },
+  {
+    id: 'zebra-li3608-sr',
+    slug: 'zebra-li3608-sr',
+    name: 'Zebra LI3608-SR',
+    seoTitle: 'Skaner 1D Zebra LI3608-SR — ultra-rugged, IP65+IP68, -30°C | TAKMA',
+    seoDescription: 'Zebra LI3608-SR (LI3608-SR00003VZWW, LI3608-SR3U4600VZW) — przemysłowy skaner liniowy 1D, IP65+IP68, upadki 2,4 m, -30°C do +50°C. Najlżejszy ultra-rugged: 287 g. Od 1 343 zł netto.',
+    shortDescription: 'Przemysłowy skaner liniowy 1D, IP65+IP68, upadki 2,4 m, -30°C — najlżejszy ultra-rugged (287 g)',
+    description: `Dla kogo? Zebra LI3608-SR to przemysłowy skaner liniowy 1D zaprojektowany dla operacji, które korzystają wyłącznie z kodów kreskowych 1D (EAN/UPC, Code 128, GS1-128) — typowych w magazynach FMCG, centrach dystrybucji, na liniach produkcyjnych i w mroźniach. Jeśli nie potrzebujesz skanowania kodów 2D (QR, DataMatrix), LI3608-SR jest optymalnym wyborem pod względem ceny, wagi i wytrzymałości.
+
+Podwójne uszczelnienie IP65 + IP68 — jedyny ultra-rugged 1D na rynku z dwoma certyfikatami szczelności: pyłoszczelny (IP65) i zanurzalny do 30 minut (IP68). Honeywell Granit i Datalogic PowerScan oferują jedynie IP65 lub IP67 osobno. Upadki wielokrotne z 2,4 m na beton, 7 500 obrotów w tumble teście z 1 m (50% więcej niż Honeywell Granit: 5 000).
+
+Praca od -30°C bez rozgrzewania — natychmiastowe skanowanie po wejściu do mroźni. Zakres roboczy: UPC/EAN (13 mil) od 2,5 do 78,7 cm, Code 39 (20 mil) do 106,7 cm. Sensor liniowy 1 500 px z laserowym celownikiem 655 nm. Wibracja jako potwierdzenie odczytu — niezastąpione w hałaśliwych halach produkcyjnych.
+
+Najlżejszy ultra-rugged na rynku: 287 g — o 18 g lżejszy od [DS3608-SR](/produkt/zebra-ds3608-sr) (305 g) i o 53 g lżejszy od Honeywell Granit (340 g). Przy 5 000+ skanów dziennie każdy gram mniej to mniejsze zmęczenie nadgarstka. Interfejsy: USB, RS-232, Keyboard Wedge. Opcjonalnie Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP) przez adapter EA3600 — bezpośrednia integracja z PLC Siemens i Rockwell.
+
+Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Management Service (zdalne zarządzanie flotą skanerów), ScanSpeed Analytics (analiza wydajności skanowania). Gwarancja producenta 3 lata. Pełna dokumentacja i instrukcja obsługi po polsku na [serwis-zebry.pl](https://www.serwis-zebry.pl/instrukcje/zebra-li3608/instrukcja-po-polsku).`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-przewodowe'],
+    manufacturerId: 'zebra',
+    isNew: false,
+    isBestseller: false,
+    tags: ['magazyn', 'produkcja', 'logistyka'],
+    applications: ['Magazyny logistyczne', 'Centra dystrybucji FMCG', 'Hale produkcyjne', 'Mroźnie i chłodnie (do -30°C)', 'Doki przeładunkowe', 'Linie sortownicze i cross-docking'],
+    priceFrom: 1343,
+    availability: 'available',
+    images: ['/images/products/li3608_1.png', '/images/products/li3608_2.png'],
+    imageDescriptions: [
+      'Zebra LI3608-SR — skaner liniowy 1D ultra-rugged, widok z przodu z laserowym celownikiem',
+      'Zebra LI3608-SR — widok z boku, obudowa pistoletowa z kablem USB',
+    ],
+    sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/li3600-series/li3600-sr.html',
+    variants: [
+      {
+        name: 'LI3608-SR — sam skaner',
+        partNumber: 'LI3608-SR00003VZWW',
+        priceFrom: 1343,
+        availability: 'available',
+        attributes: {},
+      },
+      {
+        name: 'LI3608-SR — zestaw USB Kit',
+        partNumber: 'LI3608-SR3U4600VZW',
+        priceFrom: 1430,
+        availability: 'available',
+        attributes: { 'Kabel USB': 'Tak' },
+      },
+    ],
+    specifications: [
+      { name: 'Part Number', value: 'LI3608-SR00003VZWW' },
+      { name: 'Typ skanera', value: 'Liniowy 1D (linear imager)' },
+      { name: 'Sensor', value: '1 500 px (liniowy)' },
+      { name: 'Źródło światła', value: '2× LED 617 nm + laser celowniczy 655 nm' },
+      { name: 'Zasięg (UPC 13 mil)', value: '2,5–78,7 cm' },
+      { name: 'Zasięg (Code 39 20 mil)', value: 'do 106,7 cm' },
+      { name: 'Najgęstszy kod', value: '4 mil (Code 39)' },
+      { name: 'Symbologie 1D', value: 'Code 39, Code 128, UPC/EAN, Interleaved 2/5, GS1 DataBar, Codabar, Code 93, Code 11, MSI Plessey' },
+      { name: 'Interfejsy', value: 'USB, RS-232, Keyboard Wedge' },
+      { name: 'Industrial Ethernet', value: 'EtherNet/IP, Profinet, Modbus TCP (adapter EA3600)' },
+      { name: 'Klasa ochrony (IP)', value: 'IP65 + IP68' },
+      { name: 'Odporność na upadki', value: '2,4 m na beton (wielokrotne)' },
+      { name: 'Tumble test', value: '7 500 obrotów z 1,0 m' },
+      { name: 'ESD', value: '±25 kV (powietrzne), ±10 kV (bezpośrednie)' },
+      { name: 'Temperatura pracy', value: '-30°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
+      { name: 'Waga', value: '287 g' },
+      { name: 'Wymiary', value: '185 × 76 × 132 mm' },
+      { name: 'Gwarancja', value: '36 miesięcy (3 lata)' },
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: ['zebra-stand-ds3608', 'zebra-cable-usb-ds3608', 'zebra-cable-usb-long-ds3608'],
+    comparison: {
+      title: 'Porównanie skanerów ultra-rugged Zebra: LI3608-SR vs DS3608-SR vs DS3608-XR',
+      models: [
+        {
+          name: 'LI3608-SR',
+          slug: 'zebra-li3608-sr',
+          highlight: true,
+          specs: {
+            'Wariant': '1D Standard Range',
+            'Kody': 'Tylko 1D',
+            'Sensor': '1 500 px (liniowy)',
+            'Zasięg maks.': '106,7 cm (Code 39 20 mil)',
+            'Multi-Code': 'Nie',
+            'IP / Upadki': 'IP65+IP68 / 2,4 m',
+            'Temperatura': '-30°C do +50°C',
+            'Waga': '287 g',
+            'Cena od': '~1 343 zł',
+            'Najlepszy do': 'Operacje 1D, budżet, mroźnie',
+          },
+        },
+        {
+          name: 'DS3608-SR',
+          slug: 'zebra-ds3608-sr',
+          specs: {
+            'Wariant': '2D Standard Range',
+            'Kody': '1D + 2D (QR, DataMatrix)',
+            'Sensor': '1 280 × 800 px (matryca)',
+            'Zasięg maks.': '152 cm (Code 128 40 mil)',
+            'Multi-Code': 'Tak (do 20)',
+            'IP / Upadki': 'IP65+IP68 / 3,0 m',
+            'Temperatura': '-30°C do +50°C',
+            'Waga': '305 g',
+            'Cena od': '~1 287 zł',
+            'Najlepszy do': 'Uniwersalny 2D',
+          },
+        },
+        {
+          name: 'DS3608-XR',
+          slug: 'zebra-ds3608-xr',
+          specs: {
+            'Wariant': '2D Extended Range',
+            'Kody': '1D + 2D',
+            'Sensor': 'Near + Far (dual)',
+            'Zasięg maks.': '32 m (Code 39 100 mil)',
+            'Multi-Code': 'Tak (do 20)',
+            'IP / Upadki': 'IP65+IP68 / 3,0 m',
+            'Temperatura': '-30°C do +50°C',
+            'Waga': '308 g',
+            'Cena od': '~2 417 zł',
+            'Najlepszy do': 'Wysokie regały, outdoor',
+          },
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Czym różni się Zebra LI3608-SR od DS3608-SR?',
+        answer: 'LI3608-SR odczytuje wyłącznie kody 1D (liniowe) — EAN/UPC, Code 128, GS1 DataBar itp. [DS3608-SR](/produkt/zebra-ds3608-sr) to skaner 2D (area imager), który odczytuje również kody QR, DataMatrix i PDF417. LI3608-SR jest lżejszy o 18 g (287 vs 305 g) i tańszy. Jeśli operacja magazynowa korzysta wyłącznie z kodów 1D — LI3608-SR jest optymalnym wyborem.',
+      },
+      {
+        question: 'Czy LI3608-SR działa w mroźni?',
+        answer: 'Tak — temperatura pracy od -30°C do +50°C (model przewodowy). Podwójne uszczelnienie IP65 + IP68 chroni przed wilgocią i lodem. Skaner wytrzymuje wielokrotne przejścia między mroźnią a temperaturą pokojową bez czasu rozgrzewania.',
+      },
+      {
+        question: 'Jaki jest maksymalny zasięg skanowania LI3608-SR?',
+        answer: 'Code 39 (20 mil): do 106,7 cm. UPC/EAN (13 mil): do 78,7 cm. Code 39 (7,5 mil): do 48,3 cm. Najgęstszy odczytywany kod: 4 mil. Najkrótszy dystans: 2,5 cm od kodu.',
+      },
+      {
+        question: 'Czy LI3608-SR przeżyje upadek z wózka widłowego?',
+        answer: 'Tak — testowany na upadki wielokrotne z 2,4 m na beton. Tumble test: 7 500 obrotów z 1,0 m (50% więcej niż Honeywell Granit: 5 000). IP68 oznacza przeżycie zanurzenia w wodzie do 30 minut.',
+      },
+      {
+        question: 'Jakie interfejsy ma LI3608-SR?',
+        answer: 'USB (host-powered), RS-232, Keyboard Wedge. Opcjonalnie Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP) przez adapter EA3600 — do bezpośredniej komunikacji z PLC Siemens (Profinet) i Rockwell (EtherNet/IP).',
+      },
+      {
+        question: 'Ile waży LI3608-SR?',
+        answer: '287 g — najlżejszy ultra-rugged skaner na rynku. Dla porównania: DS3608-SR waży 305 g, Honeywell Granit 1980i — 340 g, Datalogic PowerScan PD9600 — 295 g. Przy 5 000+ skanów dziennie mniejsza waga oznacza mniej zmęczenia nadgarstka.',
+      },
+      {
+        question: 'Czy LI3608-SR odczyta kod z ekranu telefonu?',
+        answer: 'Tak — linear imager LI3608-SR odczytuje kody 1D wyświetlane na ekranach smartfonów i tabletów, nie tylko drukowane na etykietach.',
+      },
+      {
+        question: 'Jak zarządzać flotą skanerów LI3608-SR zdalnie?',
+        answer: 'Przez Zebra DataCapture DNA: 123Scan (konfiguracja przez kody kreskowe lub USB), Scanner Management Service (zdalne zarządzanie flotą), ScanSpeed Analytics (analiza wydajności skanowania — ile skanów, ile błędów, jaki czas).',
+      },
+      {
+        question: 'Jaka jest gwarancja na LI3608-SR?',
+        answer: 'Zebra udziela 36 miesięcy (3 lata) gwarancji. TAKMA zapewnia serwis gwarancyjny i pogwarancyjny we współpracy z serwis-zebry.pl. Dostępne plany serwisowe Zebra OneCare (Essential i Select).',
+      },
+      {
+        question: 'Jakie są alternatywy dla Zebra LI3608-SR?',
+        answer: 'W klasie ultra-rugged 2D: [Zebra DS3608-SR](/produkt/zebra-ds3608-sr) (od ~1 287 zł, 2D imager, IP65+IP68), [DS3608-XR](/produkt/zebra-ds3608-xr) (od ~2 417 zł, zasięg 32 m). Konkurenci: Honeywell Granit 1980i (2D, zasięg do 15 m, IP65), Datalogic PowerScan PD9600 (2D, IP67). Jeśli potrzebny tylko 1D — LI3608-SR jest optymalny cenowo i wagowo.',
+      },
+    ],
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-li3608/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/LI3600-Series/spec-sheet/li36x8-sr-spec-sheet-en-us.pdf', size: '0.5 MB' },
+    ],
+    createdAt: '2026-02-27',
   },
 ]
 

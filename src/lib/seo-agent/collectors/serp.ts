@@ -67,7 +67,7 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'drukarka mobilna zebra zq630', group: 'drukarki-mobilne' },
 
   // =====================================================
-  // SKANERY — "skaner zebra X" (8)
+  // SKANERY — "skaner zebra X" (9)
   // =====================================================
   { keyword: 'skaner zebra ds2208', group: 'skanery' },
   { keyword: 'skaner zebra ds4608', group: 'skanery' },
@@ -77,6 +77,7 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'skaner zebra ds3608 hd', group: 'skanery' },
   { keyword: 'skaner zebra ds3608 sr', group: 'skanery' },
   { keyword: 'skaner zebra li2208', group: 'skanery' },
+  { keyword: 'skaner zebra li3608', group: 'skanery' },
 
   // =====================================================
   // TERMINALE — "terminal mobilny zebra X" (10)
@@ -93,7 +94,7 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'terminal mobilny zebra em45', group: 'terminale' },
 
   // =====================================================
-  // PRODUKTY — sam model (15)
+  // PRODUKTY — sam model (16)
   // =====================================================
   { keyword: 'zebra zd421t', group: 'produkty' },
   { keyword: 'zebra zd421d', group: 'produkty' },
@@ -110,6 +111,7 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'zebra ds2208', group: 'produkty' },
   { keyword: 'zebra ds4608', group: 'produkty' },
   { keyword: 'zebra zq521', group: 'produkty' },
+  { keyword: 'zebra li3608', group: 'produkty' },
 
   // =====================================================
   // GENERYCZNE (5)

@@ -50,6 +50,7 @@ export async function middleware(request: NextRequest) {
       // Skanery
       'zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds8178', 'zebra-li2208',
       'zebra-ds3608-xr', 'zebra-ds3608-sr', 'zebra-ds3608-hd', 'zebra-ds3608-hp',
+      'zebra-li3608-sr',
       // Oprogramowanie
       'zebra-cardstudio',
     ])
