@@ -202,7 +202,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
     ? availabilityConfig[stock.availability]
     : availabilityConfig[variant.availability]
   const effectiveAvailability = stock?.found ? stock.availability : variant.availability
-  const isUnavailable = !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
+  const isUnavailable = !stockLoading && effectiveAvailability === 'unavailable'
 
   return (
     <tr className={`${rowIndex % 2 === 0 ? 'bg-white' : 'bg-gray-50'} hover:bg-primary-50/50 transition-colors`}>
@@ -274,7 +274,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
     ? availabilityConfig[stock.availability]
     : availabilityConfig[variant.availability]
   const effectiveAvailability = stock?.found ? stock.availability : variant.availability
-  const isUnavailable = !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
+  const isUnavailable = !stockLoading && effectiveAvailability === 'unavailable'
 
   return (
     <div className="bg-white border border-gray-200 rounded-xl p-4 space-y-3">
@@ -371,8 +371,8 @@ export default function VariantsTable({ productSlug, productName, productImage, 
     new Set(variants.flatMap((v) => Object.keys(v.attributes)))
   ), [variants])
 
-  // Podział na dostępne i niedostępne
-  // Gdy stock się ładuje, pokaż wszystko razem (bez podziału)
+  // Podział na dostępne/na zamówienie vs niedostępne
+  // on-order = można zamówić (widoczne), unavailable = wycofane (ukryte)
   const { availableVariants, unavailableVariants } = useMemo(() => {
     if (stockLoading) {
       return { availableVariants: variants, unavailableVariants: [] as ProductVariant[] }
@@ -382,12 +382,22 @@ export default function VariantsTable({ productSlug, productName, productImage, 
     for (const v of variants) {
       const stock = stockData.get(v.partNumber)
       const effectiveAvailability = stock?.found ? stock.availability : v.availability
-      if (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order') {
+      if (effectiveAvailability === 'unavailable') {
         unavailable.push(v)
       } else {
         available.push(v)
       }
     }
+    // Sortuj: available na górze, on-order na dole
+    available.sort((a, b) => {
+      const stockA = stockData.get(a.partNumber)
+      const stockB = stockData.get(b.partNumber)
+      const availA = stockA?.found ? stockA.availability : a.availability
+      const availB = stockB?.found ? stockB.availability : b.availability
+      if (availA === 'available' && availB !== 'available') return -1
+      if (availA !== 'available' && availB === 'available') return 1
+      return (a.priceFrom ?? 0) - (b.priceFrom ?? 0)
+    })
     return { availableVariants: available, unavailableVariants: unavailable }
   }, [variants, stockData, stockLoading])
 
