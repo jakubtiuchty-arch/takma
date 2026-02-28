@@ -55,7 +55,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-02-13',
   updatedAt: '2026-02-21',
   readTime: '12 min',
-  heroImage: '/images/guides/jak-wybrac-drukarke-etykiet.jpg',
+  heroImage: '/images/guides/hero_jak_wybrac_drukarke.png',
 
   sections: [
     {
