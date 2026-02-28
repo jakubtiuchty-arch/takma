@@ -181,9 +181,9 @@ export const categories: Category[] = [
     description: 'Profesjonalne skanery i czytniki kodów kreskowych 1D i 2D — przewodowe, bezprzewodowe i prezentacyjne. Zebra, Datalogic i inne marki.',
     seoTitle: 'Skanery i czytniki kodów kreskowych — przewodowe, bezprzewodowe, prezentacyjne',
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208, DS3678-SR — gwarancja 5 lat. Skanery przewodowe i bezprzewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
-    longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. DS3678-SR bezprzewodowy ultra-rugged do magazynów. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
+    longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. DS3678-SR bezprzewodowy ultra-rugged do magazynów. DS9908 hybrydowy prezentacyjny do kas POS. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 18,
+    productCount: 19,
   },
   // {
   //   id: 'tablety',
@@ -848,8 +848,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Skanery prezentacyjne do kas od 1 790 zł netto. Automatyczne skanowanie kodów 1D/2D bez przyciskania — idealne do retail, aptek, bibliotek. Zebra DS9308, DS9908. Doradztwo TAKMA.',
     longDescription: 'Prezentacyjne czytniki kodów kreskowych (skanery hands-free) do kas samoobsługowych, aptek i punktów POS. Automatyczny odczyt kodów 1D/2D bez naciskania przycisku — wystarczy przesunąć produkt przed skanerem. Wielokierunkowe pole skanowania, odczyt z ekranów smartfonów. Kategoria w przygotowaniu — skontaktuj się po indywidualną ofertę.',
     icon: 'scan',
-    productIds: [],
-    productCount: 0,
+    productIds: ['zebra-ds9908'],
+    productCount: 1,
   },
 ]
 
@@ -11254,6 +11254,266 @@ Dokumentacja: zebra.com/ds4600dpe.`,
     ],
     createdAt: '2026-02-28',
   },
+
+  // =====================================================
+  // SKANERY PREZENTACYJNE
+  // =====================================================
+
+  {
+    id: 'zebra-ds9908',
+    slug: 'zebra-ds9908',
+    name: 'Zebra DS9908',
+    sameAs: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-hands-free-scanners/ds9900-series/ds9908.html',
+    seoTitle: 'Skaner prezentacyjny Zebra DS9908 — hybrydowy hands-free, Digimarc, EAS | od 1 169 zł',
+    seoDescription: 'Zebra DS9908 — hybrydowy skaner prezentacyjny 2D do kas POS, aptek i retail. Tryb hands-free i ręczny, Digimarc, PRZM, megapikselowy sensor 1280×800, 5 lat gwarancji. Od 1 169 zł netto — TAKMA, autoryzowany partner Zebra.',
+    shortDescription: 'Hybrydowy skaner prezentacyjny 2D — hands-free + ręczny, Digimarc, EAS, IP52',
+    description: `Dla kogo? Zebra DS9908 to hybrydowy skaner prezentacyjny zaprojektowany od podstaw do pracy hands-free i ręcznej — nie jest to skaner ręczny z dostawioną podstawką, lecz urządzenie natywnie łączące oba tryby. Idealny do kas fiskalnych w handlu detalicznym, aptekach, bibliotekach, kas samoobsługowych i punktów usługowych.
+
+Automatyczne przełączanie trybów — po odłożeniu na podstawkę DS9908 ogranicza pole skanowania (aby nie odczytywać kodów z sąsiednich produktów), a po wzięciu do ręki rozszerza zasięg do 63 cm (UPC). Megapikselowy sensor 1280×800 z technologią PRZM Intelligent Imaging dekoduje zniszczone, wyblakłe, niskokontrastowe i błyszczące kody. Natywna obsługa Digimarc — niewidzialnych kodów kreskowych drukowanych na całym opakowaniu (standard wdrażany przez Walmart, P&G).
+
+Opcja EAS (Electronic Article Surveillance) — dezaktywacja plakietek antykradzieżowych Checkpoint bezpośrednio przy kasie. Wariant HD zoptymalizowany do małych kodów laboratoryjnych i farmaceutycznych (DataMatrix GS1 na opakowaniach leków). Interfejsy USB, RS-232, Keyboard Wedge i TGCS (IBM) 46xx RS485.
+
+Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacyjnych. Pełna dokumentacja w języku polskim dostępna na stronie serwis-zebry.pl.`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-prezentacyjne'],
+    manufacturerId: 'zebra',
+    priceFrom: 1169,
+    images: [
+      '/images/products/zebra-ds9908.png',
+      '/images/products/zebra-ds9908-2.png',
+      '/images/products/zebra-ds9908-3.png',
+    ],
+    imageDescriptions: [
+      'Zebra DS9908 — widok z przodu, kompaktowa obudowa prezentacyjna z oknem skanera 2D',
+      'Zebra DS9908 — widok pod kątem, tryb ręczny z ergonomicznym uchwytem',
+      'Zebra DS9908 — widok z boku, profil obudowy z podstawką Intellistand',
+    ],
+    tags: ['retail', 'healthcare'] as ProductTag[],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Model', value: 'DS9908' },
+      { name: 'Seria', value: 'DS9900' },
+      { name: 'Typ skanera', value: 'Hybrydowy prezentacyjny / ręczny' },
+      { name: 'Technologia skanowania', value: '2D Area Imager (PRZM Intelligent Imaging)' },
+      { name: 'Sensor', value: 'Megapikselowy 1280 × 800 px' },
+      { name: 'Procesor', value: '800 MHz' },
+      { name: 'Pole widzenia', value: '48° (poziom) × 30,6° (pion)' },
+      { name: 'Prędkość skanowania', value: 'do 610 cm/s (tryb automatyczny)' },
+      { name: 'Minimalna rozdzielczość', value: '3 mil (Code 39)' },
+      { name: 'Minimalny kontrast', value: '16% różnicy reflektancji' },
+      { name: 'Oświetlenie', value: 'Amber LED 617 nm (koliste) + 2× Red LED 645 nm' },
+      { name: 'Zasięg — UPC 13 mil', value: '0 – 62,7 cm' },
+      { name: 'Zasięg — Code 128 5 mil', value: '2,5 – 18 cm' },
+      { name: 'Zasięg — DataMatrix 10 mil', value: '3,3 – 23,6 cm' },
+      { name: 'Zasięg — QR 20 mil', value: '2,5 – 45,7 cm' },
+      { name: 'Kody 1D', value: 'Code 39, Code 128, Code 93, Codabar, UPC/EAN, I 2 z 5, GS1 DataBar' },
+      { name: 'Kody 2D', value: 'PDF417, Aztec, DataMatrix, MaxiCode, QR Code, Micro QR, Han Xin' },
+      { name: 'Digimarc', value: 'Tak' },
+      { name: 'OCR', value: 'OCR-A, OCR-B, MICR' },
+      { name: 'Interfejsy', value: 'USB, RS-232, Keyboard Wedge, TGCS (IBM) 46xx RS485' },
+      { name: 'Klasa szczelności', value: 'IP52' },
+      { name: 'Odporność na upadki', value: '1,5 m na beton (wielokrotne)' },
+      { name: 'Wstrząsy (tumble)', value: '2000 obrotów z 0,5 m' },
+      { name: 'ESD', value: '±15 kV (powietrze), ±8 kV (bezpośrednie)' },
+      { name: 'Temperatura pracy', value: '0°C do 50°C' },
+      { name: 'Wilgotność', value: '5–95% RH, bez kondensacji' },
+      { name: 'Zasilanie', value: '4,5–5,5 V DC (z hosta lub zewnętrzne)' },
+      { name: 'Pobór prądu', value: '321 mA (typowy)' },
+      { name: 'Wymiary', value: '203 × 94 × 132 mm' },
+      { name: 'Waga', value: '330 g' },
+      { name: 'Kolor', value: 'Midnight Black' },
+      { name: 'Gwarancja producenta', value: '60 miesięcy (5 lat)' },
+      { name: 'Oprogramowanie', value: 'DataCapture DNA: 123Scan, Scanner Management Service (SMS)' },
+    ],
+    applications: ['Kasy fiskalne (retail)', 'Apteki i farmacja (DataMatrix GS1)', 'Biblioteki i urzędy', 'Kasy samoobsługowe', 'Punkty usługowe (weryfikacja wieku)', 'Systemy POS i e-commerce fulfillment'],
+    variants: [
+      {
+        partNumber: 'DS9908-SR00004ZZWW',
+        name: 'DS9908 SR — sam skaner',
+        priceFrom: 1169,
+        availability: 'available',
+        attributes: {
+          'Imager': 'SR',
+        },
+      },
+      {
+        partNumber: 'DS9908-SR4U2100AZW',
+        name: 'DS9908 SR — zestaw z kablem USB',
+        priceFrom: 1229,
+        availability: 'available',
+        attributes: {
+          'Imager': 'SR',
+          'Kabel': 'USB',
+        },
+      },
+      {
+        partNumber: 'DS9908-HD4000WZZWW',
+        name: 'DS9908 HD — sam skaner',
+        priceFrom: 1216,
+        availability: 'available',
+        attributes: {
+          'Imager': 'HD',
+        },
+      },
+      {
+        partNumber: 'DS9908-SR00004ZCWW',
+        name: 'DS9908 SR + EAS — sam skaner',
+        priceFrom: 1235,
+        availability: 'unavailable',
+        attributes: {
+          'Imager': 'SR',
+          'EAS': 'Checkpoint',
+        },
+      },
+      {
+        partNumber: 'DS9908-SR4R0110AZE',
+        name: 'DS9908 SR — zestaw z kablem RS232 + zasilacz',
+        priceFrom: 1295,
+        availability: 'unavailable',
+        attributes: {
+          'Imager': 'SR',
+          'Kabel': 'RS232',
+          'Zasilacz': 'Tak',
+        },
+      },
+    ],
+    variantAttributeTooltips: {
+      'Imager': 'SR (Standard Range) — uniwersalny, do standardowych kodów 1D/2D na opakowaniach i etykietach. HD (High Density) — zoptymalizowany do małych, gęsto drukowanych kodów laboratoryjnych i farmaceutycznych (np. DataMatrix GS1 na ampułkach).',
+      'EAS': 'Electronic Article Surveillance — dezaktywacja plakietek antykradzieżowych Checkpoint bezpośrednio przy kasie. Wymaga modułu EAS w skanerze.',
+    },
+    compatibleAccessories: [],
+    relatedAccessories: ['zebra-bracket-ds9908', 'zebra-cable-usb-ds22', 'zebra-cable-usb-long', 'zebra-cable-rs232-short', 'zebra-cable-rs232-long'],
+    comparison: {
+      title: 'Porównanie: DS9908 vs DS4608 vs DS2208 vs DS8178',
+      models: [
+        {
+          name: 'DS9908',
+          slug: 'zebra-ds9908',
+          specs: {
+            'Typ': 'Prezentacyjny hybrydowy',
+            'Tryb hands-free': 'Natywny',
+            'Sensor': '1280×800 (megapikselowy)',
+            'Pole widzenia': '48° H',
+            'Bluetooth': 'Nie',
+            'RFID (opcja)': 'Tak (DS9908R)',
+            'Digimarc': 'Tak',
+            'EAS': 'Opcja',
+            'IP': 'IP52',
+            'Upadek': '1,5 m',
+            'Waga': '330 g',
+            'Gwarancja': '5 lat',
+            'Cena od': '1 169 zł',
+          },
+        },
+        {
+          name: 'DS4608',
+          slug: 'zebra-ds4608',
+          specs: {
+            'Typ': 'Ręczny + podstawka',
+            'Tryb hands-free': 'Z podstawką',
+            'Sensor': '1280×800 (megapikselowy)',
+            'Pole widzenia': '42° H',
+            'Bluetooth': 'Nie',
+            'RFID (opcja)': 'Nie',
+            'Digimarc': 'Tak',
+            'EAS': 'Opcja',
+            'IP': 'IP52',
+            'Upadek': '1,8 m',
+            'Waga': '162 g',
+            'Gwarancja': '5 lat',
+            'Cena od': '352 zł',
+          },
+        },
+        {
+          name: 'DS2208',
+          slug: 'zebra-ds2208',
+          specs: {
+            'Typ': 'Ręczny',
+            'Tryb hands-free': 'Z podstawką',
+            'Sensor': '752×480',
+            'Pole widzenia': '42° H',
+            'Bluetooth': 'Nie',
+            'RFID (opcja)': 'Nie',
+            'Digimarc': 'Nie',
+            'EAS': 'Nie',
+            'IP': 'IP40',
+            'Upadek': '1,5 m',
+            'Waga': '162 g',
+            'Gwarancja': '5 lat',
+            'Cena od': '352 zł',
+          },
+        },
+        {
+          name: 'DS8178',
+          slug: 'zebra-ds8178',
+          specs: {
+            'Typ': 'Bezprzewodowy',
+            'Tryb hands-free': 'Z bazą',
+            'Sensor': '1280×800 (megapikselowy)',
+            'Pole widzenia': '42° H',
+            'Bluetooth': 'BT 4.0',
+            'RFID (opcja)': 'Nie',
+            'Digimarc': 'Tak',
+            'EAS': 'Nie',
+            'IP': 'IP42',
+            'Upadek': '1,8 m',
+            'Waga': '235 g',
+            'Gwarancja': '5 lat',
+            'Cena od': '1 400 zł',
+          },
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Czym różni się Zebra DS9908 od DS9308?',
+        answer: 'DS9908 to model premium z szerszym polem widzenia (48° vs 42°), megapikselowym sensorem i natywnym trybem hybrydowym (ręczny + hands-free). DS9308 to model ekonomiczny — idealny na małe kasy. DS9908 oferuje wariant RFID (DS9908R) i parsowanie dokumentów tożsamości (DS9908-DL), niedostępne w DS9308.',
+      },
+      {
+        question: 'Czy DS9908 odczytuje kody z ekranu telefonu?',
+        answer: 'Tak — DS9908 skanuje kody 1D i 2D wyświetlane na ekranach smartfonów i tabletów (kupony mobilne, karty lojalnościowe, e-bilety, QR pay). Technologia PRZM Intelligent Imaging zapewnia niezawodny odczyt nawet przy niskiej jasności ekranu i pod kątem.',
+      },
+      {
+        question: 'Jakiego kabla potrzebuję do DS9908?',
+        answer: 'Do podłączenia USB: [CBA-U21-S07ZBR](/produkt/zebra-kabel-usb-ds22) (2,1 m) lub [CBA-U47-S15ZAR](/produkt/zebra-kabel-usb-4-6m) (4,6 m). Do RS-232: [CBA-R07-S07PAR](/produkt/zebra-kabel-rs232-2m) (2 m) lub [CBA-R21-S15PAR](/produkt/zebra-kabel-rs232-4-6m) (4,6 m). Zestawy „USB Kit" (DS9908-SR4U2100AZW) i „RS232 Kit" (DS9908-SR4R0110AZE) zawierają kabel w zestawie.',
+      },
+      {
+        question: 'Czy DS9908 nadaje się do apteki (skanowanie DataMatrix GS1)?',
+        answer: 'Tak — DS9908 odczytuje kody DataMatrix GS1 na opakowaniach leków (system KOWAL/SecurPharm). Wariant HD (DS9908-HD4000WZZWW) jest zoptymalizowany do małych, gęsto drukowanych kodów laboratoryjnych i farmaceutycznych (ampułki, fiolki). Dodatkowy wariant HC (Healthcare) ma białą obudowę odporną na środki dezynfekujące.',
+      },
+      {
+        question: 'Czym jest technologia Digimarc i czy warto?',
+        answer: 'Digimarc to „niewidzialne kody kreskowe" drukowane na całym opakowaniu produktu — skaner nie musi szukać kodu w konkretnym miejscu. DS9908 natywnie odczytuje Digimarc. Technologia jest wdrażana przez Walmart, Procter & Gamble i inne sieci — inwestycja w DS9908 przygotowuje sklep na przyszłość.',
+      },
+      {
+        question: 'Jak działa przełączanie między trybem ręcznym a hands-free?',
+        answer: 'DS9908 automatycznie wykrywa, czy jest na podstawce (tryb hands-free) czy w ręce operatora (tryb ręczny). W trybie hands-free ogranicza zasięg skanowania, aby nie odczytywać przypadkowych kodów z otoczenia. W trybie ręcznym rozszerza zasięg do ~63 cm (UPC). Przełączanie jest natychmiastowe — bez konfiguracji.',
+      },
+      {
+        question: 'Czy DS9908 obsługuje RFID?',
+        answer: 'Tak, ale wyłącznie model DS9908R (wariant z czytnikiem UHF RFID). Obsługuje standardy EPC Gen2 i ISO 18000-63, zasięg odczytu ~45 cm. Łączenie skanowania kodów kreskowych i RFID w jednej obudowie eliminuje potrzebę dwóch urządzeń przy kasie.',
+      },
+      {
+        question: 'Jaka jest gwarancja na DS9908?',
+        answer: 'Standardowa gwarancja Zebra na DS9908 wynosi 60 miesięcy (5 lat) od daty zakupu — najdłuższa w kategorii skanerów prezentacyjnych. Dodatkowo dostępne są kontrakty serwisowe Zebra OneCare z naprawą w 3 dni robocze.',
+      },
+      {
+        question: 'Czy DS9908 można zintegrować z kasą fiskalną i systemem POS?',
+        answer: 'Tak — DS9908 obsługuje 97 układów klawiatury międzynarodowych (w tym polski). Interfejs Keyboard Wedge emuluje klawiaturę (plug & play z każdą kasą fiskalną). USB i RS-232 zapewniają kompatybilność z systemami POS (Subiekt, WMS, SAP). Konfiguracja za pomocą 123Scan (narzędzie Zebra do szybkiego wdrażania wielu skanerów).',
+      },
+      {
+        question: 'Jakie są alternatywy dla Zebra DS9908?',
+        answer: 'Ekonomiczny prezentacyjny: Zebra DS9308 (od ~790 zł) — bez RFID i z węższym FOV. Ręczny uniwersalny: [DS4608](/produkt/zebra-ds4608) (od 352 zł) — lżejszy, ale bez natywnego hands-free. Bezprzewodowy z bazą: [DS8178](/produkt/zebra-ds8178) (od ~1 400 zł) — Bluetooth, ale bez Digimarc. Zewnętrzni konkurenci: Datalogic Magellan 1500i (tańsza, ale 3 lata gwarancji i brak trybu ręcznego), Honeywell Genesis XP 7680g.',
+      },
+    ],
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds9908/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/ds9908-ds9908r-spec-sheet-pl-pl.pdf', size: '0.5 MB' },
+    ],
+    createdAt: '2026-02-28',
+  },
 ]
 
 // ============================================
@@ -17129,6 +17389,35 @@ Bluetooth 5.2 BLE — parowanie i komunikacja z bazą. Stacja dołączona w wari
     createdAt: '2026-02-28',
   },
   {
+    id: 'zebra-bracket-ds9908',
+    slug: 'zebra-podstawka-ds9908',
+    name: 'Podstawka Zebra BRKT-MM0099C-04 do DS9908',
+    shortDescription: 'Wielozadaniowy uchwyt gooseneck Intellistand do skanera prezentacyjnego DS9908',
+    description: `Oryginalna podstawka Zebra (BRKT-MM0099C-04) do skanera prezentacyjnego DS9908. Wielozadaniowy uchwyt typu gooseneck Intellistand — pozwala ustawić skaner pod optymalnym kątem do pracy hands-free na kasie, ladzie aptecznej lub stanowisku obsługi klienta.
+
+Stabilna metalowa konstrukcja z regulowanym ramieniem — skaner automatycznie przełącza się w tryb hands-free po odłożeniu na podstawkę.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'zebra',
+    priceFrom: 49,
+    images: ['/images/products/BRKT-MM0099C-04.png'],
+    imageDescriptions: ['Podstawka Zebra BRKT-MM0099C-04 do skanera prezentacyjnego DS9908 — uchwyt Intellistand gooseneck'],
+    tags: ['retail'] as ProductTag[],
+    availability: 'unavailable' as const,
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'BRKT-MM0099C-04' },
+      { name: 'Typ', value: 'Podstawka Intellistand (gooseneck)' },
+      { name: 'Kompatybilność', value: 'Zebra DS9908, DS9908R' },
+      { name: 'Materiał', value: 'Metal + tworzywo' },
+      { name: 'Kolor', value: 'Midnight Black' },
+    ],
+    applications: ['Podstawka do DS9908 do kas POS, aptek i punktów obsługi'],
+    compatibleAccessories: [],
+    downloads: [],
+    createdAt: '2026-02-28',
+  },
+  {
     id: 'zebra-cradle-standard-cr8178',
     slug: 'zebra-baza-standardowa-cr8178',
     name: 'Baza standardowa Zebra CR8178-SC100F4WW do DS4678 / DS8178',
@@ -17219,10 +17508,10 @@ Stabilna konstrukcja z regulacją kąta nachylenia. Kompatybilna z seriami DS220
     id: 'zebra-cable-usb-ds22',
     slug: 'zebra-kabel-usb-ds22',
     name: 'Kabel USB 2.1m Zebra CBA-U21-S07ZBR',
-    shortDescription: 'Kabel USB Type A do skanerów DS2208, DS2278, DS4678, DS8178, DS9308',
+    shortDescription: 'Kabel USB Type A do skanerów DS2208, DS2278, DS4678, DS8178, DS9308, DS9908',
     description: `Oryginalny kabel USB Zebra (CBA-U21-S07ZBR) o długości 2,1 m z wtyczką Type A. Łączy skaner z komputerem, kasą fiskalną lub terminalem POS. Plug and Play — automatyczne wykrywanie hosta.
 
-Kompatybilny z modelami: DS2208, DS2278, DS4678, DS8178, DS8108, DS4608 i DS9308. Ekranowany, wytrzymały na wielokrotne zginanie.`,
+Kompatybilny z modelami: DS2208, DS2278, DS4678, DS8178, DS8108, DS4608, DS9308 i DS9908. Ekranowany, wytrzymały na wielokrotne zginanie.`,
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 88,
@@ -17248,10 +17537,10 @@ Kompatybilny z modelami: DS2208, DS2278, DS4678, DS8178, DS8108, DS4608 i DS9308
     id: 'zebra-cable-usb-long',
     slug: 'zebra-kabel-usb-4-6m',
     name: 'Kabel USB 4.6m Zebra CBA-U47-S15ZAR',
-    shortDescription: 'Kabel USB Type A 4,6 m do skanerów DS2208, DS4608, DS8178, DS9308',
+    shortDescription: 'Kabel USB Type A 4,6 m do skanerów DS2208, DS4608, DS8178, DS9308, DS9908',
     description: `Oryginalny ekranowany kabel USB Zebra (CBA-U47-S15ZAR) o długości 4,6 m (15 ft) z wtyczką Type A. Prosty (non-coiled). Dłuższa wersja standardowego kabla CBA-U21-S07ZBR — do stanowisk, gdzie odległość skanera od komputera przekracza 2 m.
 
-Plug and Play — automatyczne wykrywanie hosta. Kompatybilny z modelami: DS2208, DS2278, DS4608, DS8178, DS8108, DS9308, LI2208, LI4278 i innymi skanerami Zebra ze złączem modularnym.`,
+Plug and Play — automatyczne wykrywanie hosta. Kompatybilny z modelami: DS2208, DS2278, DS4608, DS8178, DS8108, DS9308, DS9908, LI2208, LI4278 i innymi skanerami Zebra ze złączem modularnym.`,
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 214,
@@ -17280,10 +17569,10 @@ Plug and Play — automatyczne wykrywanie hosta. Kompatybilny z modelami: DS2208
     id: 'zebra-cable-rs232-short',
     slug: 'zebra-kabel-rs232-2m',
     name: 'Kabel RS232 2m Zebra CBA-R07-S07PAR',
-    shortDescription: 'Kabel RS232 (serial) 2 m do skanerów DS2208, DS4608, DS8178, DS9308',
+    shortDescription: 'Kabel RS232 (serial) 2 m do skanerów DS2208, DS4608, DS8178, DS9308, DS9908',
     description: `Oryginalny kabel RS232 Zebra (CBA-R07-S07PAR) o długości 2 m (7 ft) z wtyczką DB9 Female. Do podłączenia skanera do kas fiskalnych, terminali POS i systemów z portem COM (serial).
 
-Kompatybilny z modelami: DS2208, DS2278, DS4608, DS8178, DS8108, DS9308 i innymi skanerami Zebra ze złączem modularnym. Wymaga zewnętrznego zasilacza (skaner nie pobiera zasilania z portu RS232).`,
+Kompatybilny z modelami: DS2208, DS2278, DS4608, DS8178, DS8108, DS9308, DS9908 i innymi skanerami Zebra ze złączem modularnym. Wymaga zewnętrznego zasilacza (skaner nie pobiera zasilania z portu RS232).`,
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 132,
@@ -17311,10 +17600,10 @@ Kompatybilny z modelami: DS2208, DS2278, DS4608, DS8178, DS8108, DS9308 i innymi
     id: 'zebra-cable-rs232-long',
     slug: 'zebra-kabel-rs232-4-6m',
     name: 'Kabel RS232 4.6m Zebra CBA-R21-S15PAR',
-    shortDescription: 'Kabel RS232 (serial) 4,6 m do skanerów DS2208, DS4608, DS8178, DS9308',
+    shortDescription: 'Kabel RS232 (serial) 4,6 m do skanerów DS2208, DS4608, DS8178, DS9308, DS9908',
     description: `Oryginalny kabel RS232 Zebra (CBA-R21-S15PAR) o długości 4,6 m (15 ft) z wtyczką DB9 Female. Dłuższa wersja kabla CBA-R07-S07PAR — do stanowisk z większą odległością między skanerem a kasą.
 
-Kompatybilny z modelami: DS2208, DS2278, DS4608, DS8178, DS8108, DS9308 i innymi skanerami Zebra ze złączem modularnym. Wymaga zewnętrznego zasilacza.`,
+Kompatybilny z modelami: DS2208, DS2278, DS4608, DS8178, DS8108, DS9308, DS9908 i innymi skanerami Zebra ze złączem modularnym. Wymaga zewnętrznego zasilacza.`,
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
     priceFrom: 264,
