@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { sendEmail } from '@/lib/email'
 import { buildAdminContactNotificationEmail, buildContactConfirmationEmail } from '@/lib/email-templates'
+import { checkSpam, getClientIp } from '@/lib/spam-protection'
 
 const REASON_LABELS: Record<string, string> = {
   quote: 'Zapytanie ofertowe',
@@ -13,6 +14,16 @@ const REASON_LABELS: Record<string, string> = {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
+
+    // Spam protection
+    const ip = getClientIp(request.headers)
+    const spam = checkSpam(ip, body)
+    if (spam.blocked) {
+      console.log(`[Contact SPAM] Blocked: ${spam.reason} from ${ip}`)
+      // Return 200 to not tip off bots
+      return NextResponse.json({ ok: true })
+    }
+
     const { name, email, phone, company, reason, message } = body
 
     if (!name || !email || !message) {

@@ -40,6 +40,7 @@ interface FormErrors {
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSuccess, setIsSuccess] = useState(false)
+  const [loadedAt] = useState(() => Date.now())
 
   const [formData, setFormData] = useState<FormData>({
     name: '',
@@ -91,7 +92,7 @@ export default function ContactPage() {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, _ts: loadedAt, _hp: '' }),
       })
 
       if (res.ok) {

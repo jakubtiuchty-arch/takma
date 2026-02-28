@@ -27,6 +27,7 @@ function InquiryModal({
   )
   const [consent, setConsent] = useState(false)
   const [status, setStatus] = useState<'idle' | 'sending' | 'done' | 'error'>('idle')
+  const [loadedAt] = useState(() => Date.now())
   const nameRef = useRef<HTMLInputElement>(null)
   const modalRef = useRef<HTMLDivElement>(null)
 
@@ -60,7 +61,7 @@ function InquiryModal({
       const res = await fetch('/api/inquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, phone, message, productName, productSlug }),
+        body: JSON.stringify({ name, email, phone, message, productName, productSlug, _ts: loadedAt, _hp: '' }),
       })
       if (res.ok) {
         setStatus('done')

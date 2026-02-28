@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { sendEmail } from '@/lib/email'
 import { buildAdminInquiryEmail, buildInquiryConfirmationEmail } from '@/lib/email-templates'
+import { checkSpam, getClientIp } from '@/lib/spam-protection'
 
 /**
  * POST /api/inquiry
@@ -22,6 +23,15 @@ const inquiries: {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
+
+    // Spam protection
+    const ip = getClientIp(request.headers)
+    const spam = checkSpam(ip, body)
+    if (spam.blocked) {
+      console.log(`[Inquiry SPAM] Blocked: ${spam.reason} from ${ip}`)
+      return NextResponse.json({ ok: true })
+    }
+
     const { name, email, phone, message, productName, productSlug } = body
 
     if (!name || !email || !message) {

@@ -8,6 +8,7 @@ import Textarea from '@/components/ui/Textarea'
 export function ServiceContactForm() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [errorMsg, setErrorMsg] = useState('')
+  const [loadedAt] = useState(() => Date.now())
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -46,6 +47,8 @@ export function ServiceContactForm() {
           phone,
           reason: 'service',
           message,
+          _ts: loadedAt,
+          _hp: '',
         }),
       })
 
