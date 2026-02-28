@@ -27094,7 +27094,7 @@ Tablet Zebra ET65 Windows to wersja 5G tabletu ET60 Windows. Bez 5G: Zebra ET60 
       'Zebra ET65 Windows — widok z góry, wzmocnione rogi i port USB-C',
     ],
     tags: ['magazyn', 'logistyka', 'outdoor', 'produkcja'],
-    availability: 'on-order',
+    availability: 'unavailable',
     isNew: true,
     isBestseller: false,
     specifications: [
@@ -27134,7 +27134,7 @@ Tablet Zebra ET65 Windows to wersja 5G tabletu ET60 Windows. Bez 5G: Zebra ET60 
         name: 'ET65 Windows 11 Pro 5G, bez skanera',
         partNumber: 'ET65WW-ES5DPS00A0-00',
         priceFrom: 13409,
-        availability: 'on-order',
+        availability: 'unavailable',
         attributes: {
           'Skaner': 'Brak',
         },
@@ -27143,7 +27143,7 @@ Tablet Zebra ET65 Windows to wersja 5G tabletu ET60 Windows. Bez 5G: Zebra ET60 
         name: 'ET65 Windows 11 Pro 5G, skaner 2D',
         partNumber: 'ET65WW-ES5DPSK0A0-00',
         priceFrom: 14497,
-        availability: 'on-order',
+        availability: 'unavailable',
         attributes: {
           'Skaner': '2D imager',
         },
