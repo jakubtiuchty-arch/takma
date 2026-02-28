@@ -11523,7 +11523,7 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
     seoTitle: 'Skaner prezentacyjny Zebra DS9308 — kompaktowy hands-free do kas POS | od 995 zł',
     seoDescription: 'Zebra DS9308 — kompaktowy skaner prezentacyjny 2D do kas fiskalnych, aptek i retail. Megapikselowy sensor 1280×800, FOV 52°, IP52, Digimarc opcja. Od 995 zł netto — TAKMA, autoryzowany partner Zebra.',
     shortDescription: 'Kompaktowy skaner prezentacyjny 2D — hands-free, FOV 52°, Digimarc opcja, IP52',
-    description: `Dla kogo? Zebra DS9308 to kompaktowy skaner prezentacyjny zaprojektowany do kas fiskalnych, aptek, bibliotek, restauracji i punktów usługowych. Pracuje wyłącznie w trybie hands-free — wystarczy przesunąć produkt przed oknem skanera. Ekonomiczna alternatywa dla hybrydowego [DS9908](/produkt/zebra-ds9908).
+    description: `Dla kogo? Zebra DS9308 to kompaktowy skaner prezentacyjny zaprojektowany do kas fiskalnych, aptek, bibliotek, restauracji i punktów usługowych. Pracuje wyłącznie w trybie hands-free — wystarczy przesunąć produkt przed oknem skanera. Ekonomiczna alternatywa dla hybrydowego DS9908.
 
 Najszersze pole widzenia w klasie — 52° w poziomie × 33° w pionie. Megapikselowy sensor 1280×800 z technologią PRZM Intelligent Imaging odczytuje zniszczone, wyblakłe i niskokontrastowe kody. Zakrzywione okno wyjściowe minimalizuje odblaski od ekranów smartfonów (kupony mobilne, karty lojalnościowe, QR pay). Prędkość odczytu do 305 cm/s.
 
