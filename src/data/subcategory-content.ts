@@ -2674,6 +2674,190 @@ Interfejsy: USB HID (plug-and-play bez sterowników), USB COM, RS-232 (standard 
     ],
   },
   // ===================================================================
+  // TABLETY PRZEMYSŁOWE (kategoria główna)
+  // ===================================================================
+  'tablety-przemyslowe': {
+    definition: {
+      heading: 'Co to jest tablet przemysłowy (rugged tablet)?',
+      content: 'Tablet przemysłowy (ang. rugged tablet) to mobilny komputer z hartowanym ekranem dotykowym, zaprojektowany do pracy w trudnych warunkach: magazynach, halach produkcyjnych, chłodniach, na budowach i w pojazdach. W odróżnieniu od tabletów konsumenckich (iPad, Samsung Galaxy), modele rugged mają certyfikaty IP65–IP68 (pyłoszczelność i odporność na wodę), wytrzymują upadki na beton z 1,2–1,8 m (norma MIL-STD-810H), oferują ekrany o jasności 500–1000 nit czytelne w pełnym słońcu i obsługują dotyk w rękawicach oraz w deszczu. Kluczowe cechy enterprise: wymieniana bateria z Hot Swap (zamiana bez wyłączania urządzenia), wbudowane skanery kodów kreskowych 1D/2D, opcjonalne moduły RFID UHF, wsparcie producenta przez 5–10 lat (aktualizacje bezpieczeństwa) i integracja z systemami MDM do zarządzania flotą. Na polskim rynku B2B dominują trzy marki: Zebra Technologies (seria ET — najszerszy ekosystem, Mobility DNA), Getac (fully rugged, tradycja military-grade) i Honeywell (integracja z Operational Intelligence). TAKMA jako autoryzowany dystrybutor oferuje tablety wszystkich trzech producentów z doradztwem technicznym, konfiguracją MDM i serwisem pogwarancyjnym.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać tablet przemysłowy? 7 kryteriów decyzyjnych',
+      items: [
+        'System operacyjny — Android (80% rynku enterprise) jest tańszy, szybszy we wdrożeniu MDM i ma dłuższe wsparcie (do A19 u Zebry). Windows 11 konieczny gdy masz oprogramowanie Windows-only (AutoCAD, SAP GUI for Windows, specjalistyczne MES/SCADA) lub potrzebujesz Thunderbolt do monitora 4K.',
+        'Wielkość ekranu — 8 cali do pracy w jednej ręce (inwentaryzacja, healthcare, retail). 10 cali to optymalny kompromis (magazyn WMS, kontrola jakości, mapy). 12 cali jako stacja robocza na wózku widłowym lub laptop zastępczy na linii produkcyjnej.',
+        'Klasa ochrony IP i odporność mechaniczna — IP65 (kurz + strumienie wody) do standardowych magazynów i retail. IP66 (silne strugi wody + mroźnia) do chłodni i outdoor. IP68 (zanurzenie 1,5 m/30 min) do mokrych środowisk produkcyjnych. Odporność na upadki: 1,2–1,8 m na beton (MIL-STD-810H).',
+        'Temperatura pracy — standardowe modele: -10°C do 50°C (magazyn, retail, produkcja). Modele do chłodni: -20°C do -30°C z podgrzewanym ekranem (Zebra ET60/ET65, Getac F110). Sprawdź ten parametr — tablet konsumencki zamarzający w -5°C zablokuje operację.',
+        'Łączność — Wi-Fi 6/6E/7 do budynków z infrastrukturą bezprzewodową. 5G/LTE do pracy w terenie (budowy, transport, inspekcje). Bluetooth 5.x do akcesoriów (słuchawki PTT, skanery zewnętrzne). NFC do identyfikacji.',
+        'Skaner kodów i RFID — wbudowany skaner 2D (SE4710 standardowy / SE55 premium do 12 m) eliminuje potrzebę osobnego urządzenia. Opcjonalny moduł RFID UHF (Zebra ET401) do odczytu znaczników z 3 m. Kamera tylna 13–16 MP do dokumentacji fotograficznej.',
+        'TCO (Total Cost of Ownership) — cena zakupu to 30–40% kosztu 5-letniego. Dolicz: baterie zapasowe, stacje ładowania, etui/uchwyty, kontrakt serwisowy, wymianę baterii co 2–3 lata, ewentualną wymianę floty przy krótkim wsparciu producenta. Tablet z 8-letnim wsparciem Android (Zebra ET401) ma o 20–30% niższy TCO niż model z 3-letnim wsparciem.',
+      ],
+    },
+    expertAuthority: 'TAKMA jest autoryzowanym dystrybutorem i integratorem tabletów przemysłowych Zebra Technologies, Getac i Honeywell z ponad 25-letnim doświadczeniem na polskim rynku AutoID. Nasi inżynierowie wdrożyli setki tabletów rugged w magazynach, chłodniach (-30°C), na liniach produkcyjnych, w flotach pojazdów i w szpitalach — od pojedynczych stanowisk po floty 200+ urządzeń zarządzanych przez SOTI, Airwatch i Zebra StageNow. Oferujemy pełne wsparcie: od doboru modelu i porównania producentów, przez konfigurację MDM i staging flotowy, po montaż na wózkach widłowych i pojazdach. Serwis gwarancyjny i pogwarancyjny zapewnia serwis-zebry.pl — autoryzowany serwis Zebra działający od 2001 roku.',
+    technicalDeepDive: `Rynek tabletów przemysłowych dzieli się na trzy segmenty: fully rugged (MIL-STD-810H, IP67/IP68, upadki 1,5–1,8 m), semi-rugged (IP65, upadki 1,0–1,2 m) i business rugged (IP54, upadki 0,7–1,0 m). W środowiskach magazynowych i produkcyjnych rekomendujemy minimum semi-rugged (IP65).
+
+Procesory: tablety enterprise używają platform Qualcomm (QCM6490, QCS8550) pod Androidem i Intel Core (i5/i7 12–13. generacji) pod Windows. Qualcomm QCS8550 w litografii 4 nm oferuje NPU 48 TOPS do zadań AI edge (wizualna kontrola jakości, OCR w czasie rzeczywistym). Intel Core i5-1245U (10C/12T) zapewnia wydajność porównywalną z laptopem biurowym.
+
+Ekrany: jasność 500 nit (czytelny w cieniu i przy oświetleniu sztucznym), 800 nit (czytelny przy bezpośrednim świetle dziennym), 1000 nit (czytelny w pełnym słońcu i przy zamgleniu mroźniczym). Technologia dotykowa: pojemnościowa z trybem mokrym (filtrowanie kropel wody) i rękawicowym (obsługa w rękawicach roboczych i mroźniczych). Gorilla Glass 5 (ET40) vs Gorilla Glass Victus 2 (ET401) — 2× wyższa odporność na zarysowania.
+
+Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy). Hot Swap (wymiana baterii bez wyłączania urządzenia) — dostępny w Zebra ET, brak w większości modeli Getac i Panasonic. Stacje ładowania: 1-gniazdowe (biurkowe) i 5-gniazdowe (flotowe). Zasilacze samochodowe do montażu w pojazdach.
+
+Łączność bezprzewodowa: Wi-Fi 6 (802.11ax, do 1,2 Gbit/s) → Wi-Fi 6E (6 GHz, do 2,4 Gbit/s) → Wi-Fi 7 (802.11be, do 5,8 Gbit/s). 5G Sub-6 GHz (do 1 Gbit/s w terenie) i mmWave (do 10 Gbit/s w linii wzroku). Bluetooth 5.2–5.4 do akcesoriów i IoT.`,
+    useCases: [
+      {
+        title: 'Magazyn WMS — kompletacja, przyjęcia, wydania',
+        description: 'Tablet 10 cali na wózku kompletacyjnym wyświetla mapę magazynu z trasą pickingu, listę pozycji i zdjęcia produktów. Wbudowany skaner weryfikuje kody na półkach. Wi-Fi 6E zapewnia łączność w każdym alejce. Integracja z SAP EWM, Oracle WMS, Comarch WMS. Szacowany wzrost wydajności: 15–25% vs papierowe listy.',
+      },
+      {
+        title: 'Chłodnia i mroźnia (-20°C do -30°C)',
+        description: 'Tablet z podgrzewanym ekranem (Zebra ET60/ET65, Getac F110) pracuje nieprzerwanie w mroźni. Ekran 1000 nit czytelny mimo zamglenia. Tryb rękawicowy obsługuje grube rękawice mroźnicze. Bateria rozszerzona wytrzymuje pełną zmianę mimo przyspieszonego rozładowania na mrozie. IP66 chroni przed kondensatem.',
+      },
+      {
+        title: 'Linia produkcyjna — kontrola jakości i MES',
+        description: 'Tablet na stanowisku kontroli: operator skanuje kod produktu, fotografuje defekty, wypełnia checklistę. Opcjonalny RFID UHF do traceability komponentów. Dane w MES w czasie rzeczywistym. NPU (AI edge) umożliwia wizyjną inspekcję jakości bez serwera.',
+      },
+      {
+        title: 'Inspekcje terenowe i serwis field service',
+        description: 'Tablet z 5G do raportowania w terenie bez Wi-Fi: budowy, instalacje OZE, stacje bazowe. GPS z dokładnością 1 m, kamera do dokumentacji, skaner do kodów asset management. Formularz offline synchronizuje się po powrocie do zasięgu. IP65+ na każdą pogodę.',
+      },
+      {
+        title: 'Opieka zdrowotna — identyfikacja pacjentów',
+        description: 'Tablet 8 cali w wersji Healthcare do skanowania opasek pacjentów i etykiet leków (weryfikacja „5 rights"), wyświetlania EHR/EMR i rejestracji parametrów. Dezynfekcja alkoholem izopropylowym 70%. Wymiana baterii bez przerywania pracy.',
+      },
+      {
+        title: 'Retail — asystent sprzedaży i self-service',
+        description: 'Tablet 8 cali jako mobilny POS i asystent sprzedaży: sprawdzanie stanów, wyświetlanie katalogu klientowi, skanowanie kart lojalnościowych. Na uchwycie przy ladzie — terminal self-service do weryfikacji cen. Integracja z systemami POS przez Enterprise Browser.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego producenci tabletów nie piszą na swoich stronach',
+      items: [
+        {
+          title: 'Tablet konsumencki w magazynie to fałszywa oszczędność',
+          text: 'iPad Pro czy Samsung Galaxy Tab S kosztują 3 000–5 000 zł — podobnie jak tablet rugged. Ale po 6–12 miesiącach pracy na magazynie ekran pęknie, bateria się rozładuje bez Hot Swap, brak skanera wymusi zakup osobnego urządzenia Bluetooth (300+ zł), a 3-letnie wsparcie systemu zmusi do wymiany floty. TCO 5-letnie tabletu konsumenckiego w środowisku enterprise jest 2–3× wyższe niż tabletu przemysłowego.',
+        },
+        {
+          title: 'Hot Swap baterii to cecha, która dzieli rynek na pół',
+          text: 'Zebra ET ma Hot Swap w każdym modelu — wymiana baterii w 10 sekund bez utraty sesji. Getac i Panasonic w większości modeli wymagają wyłączenia tabletu (restart 30–90 sekund, utrata sesji). W operacjach 24/7 z 3 zmianami to setki mikroprzestojów rocznie na flotę.',
+        },
+        {
+          title: 'Wsparcie Android to ukryty czynnik TCO — różnica 3 vs 8 lat',
+          text: 'Samsung: 3–4 lata aktualizacji. Honeywell: 4–5 lat. Zebra ET401: do A19, czyli 8+ lat. Po zakończeniu wsparcia tablet staje się podatny na ataki i może przestać spełniać wymogi compliance (PCI DSS, HIPAA). Krótsze wsparcie = wymiana floty co 3–4 lata vs co 8 lat.',
+        },
+        {
+          title: 'Porównanie marek: Zebra, Getac, Honeywell, Panasonic',
+          text: 'Zebra: najszerszy ekosystem (Mobility DNA, 30+ narzędzi w cenie), najdłuższe wsparcie Android, Hot Swap, integracja z drukarkami/skanerami Zebra. Getac: fully rugged z tradycją military-grade (MIL-STD-461G EMC), ekrany LumiBond, mocna pozycja w energetyce i obronności. Honeywell: Operational Intelligence, integracja z skanerami Honeywell, Velocity TE. Panasonic Toughbook: premium Windows, najwyższa klasa IP (IP68 w FZ-G2), dominacja w rządzie/wojsku. Dla magazynów i produkcji: Zebra. Dla energetyki i obronności: Getac. Dla Windows enterprise: Panasonic lub Zebra ET80.',
+        },
+        {
+          title: 'Stacja ładowania flotowa to inwestycja, nie koszt',
+          text: 'Ładowanie tabletów przez USB = chaos (kable, nierównomierne ładowanie). Stacja 5-gniazdowa = systematyczne ładowanie, podgląd poziomu baterii, automatyczne aktualizacje firmware w nocy. ROI: 6 miesięcy (mniej uszkodzonych kabli i baterii).',
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Czym tablet przemysłowy różni się od konsumenckiego?',
+        answer: 'Tablet przemysłowy (rugged) ma: certyfikat IP65–IP68, wytrzymałość na upadki 1,2–1,8 m (MIL-STD-810H), ekran 500–1000 nit do pracy na słońcu, tryb dotykowy w rękawicach i w deszczu, wymienną baterię z Hot Swap, wbudowany skaner kodów kreskowych 2D i wsparcie producenta 5–10 lat. Konsumencki tablet (iPad, Samsung Galaxy) nie ma skanera, Hot Swap, trybu rękawicowego i ma krótsze wsparcie (3–4 lata). W środowisku magazynowym/produkcyjnym tablet konsumencki ulega uszkodzeniu w ciągu 6–12 miesięcy.',
+      },
+      {
+        question: 'Ile kosztuje tablet przemysłowy?',
+        answer: 'Ceny tabletów przemysłowych w ofercie TAKMA (netto): Zebra ET40 8″ od ~3 250 zł (najtańszy), Zebra ET40 10″ od ~3 450 zł, Zebra ET401 (najnowszy, Wi-Fi 7) od ~3 810 zł, Zebra ET45 (5G) od ~3 800 zł, Zebra ET60 (chłodnia -30°C) od ~7 920 zł, Zebra ET80 (Windows 12″) od ~12 400 zł, Getac F110 (Windows 11,6″) od ~9 500 zł, Getac T800 (Android 8″) od ~6 500 zł. Do ceny tabletu dolicz akcesoria: bateria zapasowa (200–400 zł), stacja ładowania (600–2 000 zł), etui (200–500 zł).',
+      },
+      {
+        question: 'Jaki tablet przemysłowy do magazynu?',
+        answer: 'Do magazynu rekomendujemy Zebra ET40 10″ (od ~3 250 zł, Wi-Fi 6E, IP65, skaner SE4710) lub ET401 (od ~3 810 zł, Wi-Fi 7, IP68, SE55 z zasięgiem 12 m, wsparcie do A19). Do chłodni/mroźni: wyłącznie Zebra ET60 (podgrzewany ekran, -30°C). Na wózek widłowy: ET40/ET401 10″ lub ET80 12″ z klawiaturą. Skontaktuj się z TAKMA po indywidualną rekomendację.',
+      },
+      {
+        question: 'Android czy Windows — który system na tablet przemysłowy?',
+        answer: 'Android (80% rynku): szybsze uruchamianie (3–5 s), niższa cena (od ~3 250 zł), prostszy MDM, dłuższe wsparcie (do 8 lat u Zebry), szersza gama modeli. Windows 11 (20% rynku): pełna kompatybilność z oprogramowaniem PC, Thunderbolt, procesor Intel — konieczny gdy masz legacy software tylko na Windows (AutoCAD, SAP GUI for Windows). W każdym innym przypadku Android jest efektywniejszy.',
+      },
+      {
+        question: 'Czy tablet przemysłowy może zastąpić terminal mobilny?',
+        answer: 'W wielu scenariuszach tak. Tablety 10″ mają te same skanery (SE4710/SE55), ten sam Android z MDM i podobne klasy IP. Przewaga tabletu: duży ekran do map, katalogów i zdjęć. Przewaga terminala: kompaktowość (300 g vs 680 g), pistoletowy uchwyt do intensywnego skanowania (1000+ kodów/zmianę), wyższa wytrzymałość (IP68 w MC9400). Oba typy integrują się z tymi samymi systemami WMS/ERP.',
+      },
+      {
+        question: 'Jaki tablet do chłodni i mroźni (-20°C do -30°C)?',
+        answer: 'Do chłodni jedynym certyfikowanym rozwiązaniem są: Zebra ET60/ET65 (Android, 10″, -30°C, 1000 nit, podgrzewany ekran, od ~7 920 zł) i Getac F110 (Windows, 11,6″, -29°C, 1000 nit, LumiBond, od ~9 500 zł). Standardowe tablety (ET40, iPad) nie są certyfikowane poniżej -10°C — bateria degraduje się, ekran traci responsywność, kondensacja uszkadza elektronikę.',
+      },
+      {
+        question: 'Jak długo działa bateria w tablecie przemysłowym?',
+        answer: 'Czas pracy zależy od modelu i obciążenia: 8″ (4 680 mAh): 8–10 godzin, 10″ (8 920 mAh): 10–14 godzin, z baterią rozszerzoną (12 920 mAh): do 16 godzin, ET80 Windows (49 Wh): 8–10 godzin. Tablety Zebra obsługują Hot Swap — wymiana baterii w 10 sekund bez wyłączania urządzenia i utraty sesji aplikacji.',
+      },
+      {
+        question: 'Czy tablety przemysłowe działają z WMS (SAP, Oracle, Comarch)?',
+        answer: 'Tak — tablety z Androidem integrują się z każdym WMS/ERP: SAP EWM, Oracle WMS Cloud, Comarch WMS, Manhattan Active, Blue Yonder. Trzy metody: Enterprise Browser (klient HTML5, zero kodowania), natywna aplikacja Android, emulatory TE (Velocity, Wavelink). Tablety z Windows obsługują natywnie SAP GUI, Oracle Forms i oprogramowanie PC.',
+      },
+      {
+        question: 'Jaka jest gwarancja na tablety przemysłowe?',
+        answer: 'Standardowa gwarancja: 1–2 lata w zależności od producenta. Kontrakty serwisowe (Zebra OneCare, Getac Bumper-to-Bumper, Honeywell Service Plans): 3–5 lat obejmujące naprawy, wymianę urządzeń i wsparcie techniczne. TAKMA jako autoryzowany serwis Zebra wykonuje naprawy gwarancyjne i pogwarancyjne w Polsce — serwis-zebry.pl.',
+      },
+      {
+        question: 'Jakie systemy MDM obsługują tablety przemysłowe?',
+        answer: 'Wszystkie systemy MDM/EMM: SOTI MobiControl, VMware Workspace ONE (Airwatch), Microsoft Intune, Ivanti (MobileIron), Jamf, Samsung Knox. Tablety Zebra dodatkowo obsługują OEMConfig (konfiguracja skanera/Wi-Fi/baterii przez MDM) i StageNow (zero-touch staging — automatyczna konfiguracja nowego urządzenia po włączeniu).',
+      },
+      {
+        question: 'Czy mogę zamontować tablet na wózku widłowym?',
+        answer: 'Tak — producenci oferują dedykowane uchwyty do wózków widłowych z mocowaniem RAM lub VESA, złączem zasilania DC (ciągłe ładowanie z akumulatora wózka) i tłumieniem wibracji. Do wózka rekomendujemy tablet 10″ (ET40/ET401) lub 12″ (ET80 z klawiaturą). TAKMA wykonuje montaż w ramach wdrożenia.',
+      },
+      {
+        question: 'Zebra, Getac czy Honeywell — którego producenta wybrać?',
+        answer: 'Zebra: najszerszy ekosystem Mobility DNA (30+ narzędzi w cenie), najdłuższe wsparcie Android (do A19), Hot Swap w standardzie, integracja z drukarkami i skanerami Zebra — najlepsza opcja dla magazynów, retail i produkcji. Getac: fully rugged z certyfikatami wojskowymi (MIL-STD-461G EMC), ekrany LumiBond, mocna pozycja w energetyce, obronności i służbach mundurowych. Honeywell: integracja z Operational Intelligence, skanery Honeywell, Velocity TE — dobra opcja jeśli masz już ekosystem Honeywell. Skontaktuj się z TAKMA po porównanie konkretnych modeli.',
+      },
+      {
+        question: 'Czy tablet przemysłowy działa w deszczu?',
+        answer: 'Tak — tablety IP65+ mają tryb deszczowy (wet touch mode), który filtruje fałszywe dotknięcia od kropel wody. IP65: strumienie wody pod kątem. IP66: silne strugi wody pod ciśnieniem. IP68: zanurzenie do 1,5 m / 30 minut. Ekran Gorilla Glass / LumiBond odporny na zarysowania.',
+      },
+      {
+        question: 'Jakie są alternatywy dla tabletów przemysłowych?',
+        answer: 'Alternatywy w zależności od scenariusza: terminal mobilny 6″ (Zebra TC53/MC3400 od 3 286 zł) — kompaktowość i pistoletowy uchwyt. Laptop rugged (Getac S410, Dell Latitude Rugged) — pełna klawiatura i większy ekran 14″. Tablet konsumencki w etui rugged (iPad + OtterBox) — budżetowa opcja, ale bez skanera, Hot Swap i długiego wsparcia. Dla większości zastosowań B2B tablet przemysłowy oferuje najlepszy kompromis mobilności, wytrzymałości i TCO.',
+      },
+    ],
+    comparisons: [
+      {
+        title: 'Zebra ET40 vs Getac T800 — Android 10″ vs Android 8″',
+        content: 'Zebra ET40 10″: Qualcomm QCM6490, Wi-Fi 6E, skaner SE4710, IP65, Mobility DNA (30+ narzędzi w cenie), Hot Swap, Android do A17, od ~3 250 zł. Getac T800 8″: Qualcomm SDM660, Wi-Fi 6, opcjonalny skaner, IP67, LumiBond ekran, bez Hot Swap, Android do A13, od ~6 500 zł. ET40 wygrywa ceną, ekosystemem i wsparciem. T800 wygrywa IP67 i kompaktowością 8″.',
+      },
+      {
+        title: 'Tablet Android vs tablet Windows — kiedy który?',
+        content: 'Android (Zebra ET40/ET401, Getac ZX80, Honeywell EDA10A): szybszy start, prostszy MDM, niższa cena, dłuższe wsparcie. Do 80% zastosowań enterprise (WMS, MES, POS, healthcare). Windows 11 (Zebra ET80, Getac F110, Panasonic FZ-G2): pełna kompatybilność z oprogramowaniem PC, Thunderbolt, Intel Core. Konieczny gdy: AutoCAD, SAP GUI for Windows, legacy SCADA, specjalistyczne oprogramowanie przemysłowe. Reguła: jeśli możesz uruchomić aplikację w przeglądarce → Android. Jeśli musisz mieć .exe → Windows.',
+      },
+      {
+        title: 'Tablet przemysłowy vs terminal mobilny — co wybrać?',
+        content: 'Tablet 10″ (ET40 od ~3 450 zł): duży ekran do map i katalogów, IP65, 680 g. Terminal 6″ (TC53 od ~3 286 zł): kompaktowy, pistoletowy uchwyt, IP68, 303 g. Tablet gdy: potrzebujesz dużego ekranu (WMS z mapą, katalog zdjęć, kontrola jakości ze zdjęciami, self-service). Terminal gdy: intensywne skanowanie (1000+ kodów/zmianę), praca jedną ręką, wyższa wytrzymałość (IP68).',
+      },
+      {
+        title: 'Tablet rugged vs iPad/Samsung w etui ochronnym',
+        content: 'Tablet rugged (ET40 od ~3 250 zł): wbudowany skaner, Hot Swap, IP65, wsparcie 5–8 lat, MDM enterprise. iPad + OtterBox (od ~3 500 zł): brak skanera (+300 zł za zewnętrzny Bluetooth), brak Hot Swap (ładowanie 2h), IP68 tylko obudowa (nie akcesoria), wsparcie 4 lata. TCO 5-letni rugged: niższy o 30–40%. iPad uzasadniony jedynie w środowiskach biurowych bez intensywnego skanowania.',
+      },
+      {
+        title: 'Zebra ET60 vs Getac F110 — tablet do chłodni i outdoor',
+        content: 'ET60: Android, 10″, IP66, -30°C, 1000 nit, SE55 (12 m), Hot Swap, Mobility DNA, od ~7 920 zł. Getac F110: Windows 11, 11,6″, IP66, -29°C, 1000 nit, opcjonalny skaner, LumiBond, od ~9 500 zł. ET60 wygrywa ceną, ekosystemem Android i skanerem SE55 w standardzie. F110 wygrywa gdy potrzebujesz Windows, większego ekranu i certyfikatów wojskowych MIL-STD-461G.',
+      },
+    ],
+    howToSteps: [
+      {
+        name: 'Określ środowisko pracy i wymagania',
+        text: 'Odpowiedz na kluczowe pytania: jaka temperatura? (standard / chłodnia / outdoor), jaki system? (Android / Windows), jaka łączność? (Wi-Fi / 5G), jaki ekran? (8 / 10 / 12 cali), czy potrzebny skaner / RFID? Skontaktuj się z TAKMA po bezpłatną konsultację.',
+      },
+      {
+        name: 'Porównaj modele i producentów',
+        text: 'Magazyn Wi-Fi → Zebra ET40/ET401. Chłodnia → ET60/ET65 lub Getac F110. Teren 5G → ET45/ET65. Windows → ET80 lub Getac F110. Retail/healthcare → ET40 8″. TAKMA pomoże porównać warianty i wybrać optymalny model z akcesoriami.',
+      },
+      {
+        name: 'Zamów tablety z pełnym zestawem akcesoriów',
+        text: 'Tablet + bateria zapasowa (Hot Swap) + stacja ładowania (1-gn. lub 5-gn.) + etui/uchwyt + zasilacz. Przy flocie 10+ sztuk — zapytaj o rabat flotowy i usługę pre-stagingu (tablety skonfigurowane przed dostawą).',
+      },
+      {
+        name: 'Skonfiguruj MDM i zainstaluj aplikacje',
+        text: 'Zarejestruj tablety w MDM (SOTI, Airwatch, Intune). Zero-touch staging: profil konfiguracji stosuje się automatycznie po włączeniu. Zainstaluj aplikacje: Enterprise Browser (HTML5), natywna aplikacja WMS/MES lub emulator TE.',
+      },
+      {
+        name: 'Pilotaż i pełne wdrożenie',
+        text: 'Test pilotażowy na 3–5 urządzeniach: zasięg Wi-Fi, czas pracy baterii, wydajność skanera, ergonomia. Po pozytywnym pilocie — rollout na pełną flotę z szkoleniem operatorów. TAKMA zapewnia wsparcie wdrożeniowe i szkolenie.',
+      },
+    ],
+  },
+  // ===================================================================
   // TABLETY ZEBRA
   // ===================================================================
   'tablety-zebra': {
@@ -2694,7 +2878,19 @@ Interfejsy: USB HID (plug-and-play bez sterowników), USB COM, RS-232 (standard 
       ],
     },
     expertAuthority: 'TAKMA jest autoryzowanym Premier Solution Partnerem Zebra Technologies z ponad 25-letnim doświadczeniem we wdrożeniach rozwiązań AutoID na polskim rynku. Nasi inżynierowie wdrożyli setki tabletów przemysłowych w magazynach, chłodniach, na liniach produkcyjnych i w flotach pojazdów — od pojedynczych stanowisk po flotę 200+ urządzeń zarządzanych przez SOTI i Zebra StageNow. Specjalizujemy się w trudnych środowiskach: mroźnie do -30°C (ET60/ET65), hale produkcyjne z zapyleniem i wibracjami, pojazdy terenowe z montażem na desce rozdzielczej. Serwis gwarancyjny i pogwarancyjny zapewnia [serwis-zebry.pl](https://www.serwis-zebry.pl) — autoryzowany serwis Zebra działający od 2001 roku. Każda rekomendacja na tej stronie opiera się na danych z realnych wdrożeń i testów, nie na materiałach marketingowych.',
-    technicalDeepDive: `Tablety przemysłowe Zebra serii ET dzielą się na trzy generacje i cztery klasy zastosowań. Poniżej pełna macierz techniczna:\n\n• ET40 (8″/10″, Android 13→A17): Qualcomm QCM6490, 4/8 GB RAM, 64/128 GB Flash, Wi-Fi 6E ax, BT 5.2, SE4710 imager. IP65, upadki 1,2 m/1,5 m, temp. -10°C do 50°C. Bateria: 4 680 mAh (8″) / 8 920 mAh (10″). Hot Swap: tak. Od ~3 250 zł netto.\n\n• ET45 (8″/10″, Android 13→A17): identyczny jak ET40 + modem 5G Sub-6/mmWave (Qualcomm X55). GPS/GLONASS/Galileo. Dla pracy w terenie bez Wi-Fi. Od ~3 800 zł netto.\n\n• ET60 (10″, Android 13→A17): Qualcomm QCM6490, 4/8 GB RAM, 64/128 GB Flash, Wi-Fi 6E, BT 5.2, SE55 imager (1D/2D do 12 m). IP66, upadki 1,2 m, MIL-STD-810H. Ekran 1000 nit z podgrzewaniem do -30°C. Gorilla Glass, mokre/rękawicowe dotyk. Bateria: 8 920 mAh + rozszerzona 12 920 mAh. Od ~7 920 zł netto.\n\n• ET65 (10″, Android 13→A17): ET60 + modem 5G Sub-6/mmWave. Do pracy w chłodniach z łącznością LTE/5G. Od ~8 500 zł netto.\n\n• ET401 (10″, Android 14→A19): NAJNOWSZA generacja. Qualcomm QCS8550 (4 nm, NPU 48 TOPS dla AI edge), 8 GB RAM, 128/256 GB Flash. Wi-Fi 7 be (5,8 Gbit/s), BT 5.4. SE55 imager, opcjonalny RFID UHF. IP68 (zanurzenie 1,5 m/30 min), upadki 1,5 m. Temp. -20°C do 50°C. Gorilla Glass Victus 2. Ekran 800 nit. Bateria: 8 920 mAh. Wsparcie Android do A19 (8+ lat). Od ~3 810 zł netto.\n\n• ET80 (12,2″, Windows 11 Pro/IoT Enterprise): Intel Core i5-1245U (10C/12T), 8/16 GB RAM DDR5, 128/256/512 GB SSD NVMe. Wi-Fi 6E, BT 5.2. IP65, upadki 1,2 m. Ekran FHD+ 500 nit, dotyk rękawicowy i rysik Wacom. Odpinana klawiatura z podświetleniem — tryb 2-in-1. Thunderbolt 4 x2. Bateria: 49 Wh (8–10h). Od ~12 400 zł netto.\n\nWszystkie modele: Mobility DNA (StageNow, OEMConfig, Enterprise Browser, LifeGuard updates, PowerPrecision battery analytics, Device Tracker), akcesoria Zebra (stacje dokujące, uchwyty na wózki, baterie zapasowe, zasilacze samochodowe).`,
+    technicalDeepDive: `Seria ET obejmuje 6 modeli pokrywających pełne spektrum zastosowań enterprise. Zebra ET40 (8 lub 10 cali, Android 13 z aktualizacjami do A17) to podstawowy tablet z procesorem Qualcomm QCM6490, pamięcią 4 lub 8 GB RAM i dyskiem 64 lub 128 GB Flash. Łączność Wi-Fi 6E ax i Bluetooth 5.2 zapewnia stabilne połączenie w budynkach. Skaner SE4710 (imager 2D, zasięg do 60 cm) odczytuje kody 1D, QR i DataMatrix. IP65, upadki z 1,2 m (8 cali) lub 1,5 m (10 cali), praca od -10°C do 50°C. Bateria: 4 680 mAh w wersji 8-calowej, 8 920 mAh w 10-calowej. Hot Swap w standardzie. Cena od ok. 3 250 zł netto.
+
+Zebra ET45 to bliźniaczy model ET40 wzbogacony o modem 5G Sub-6 GHz i mmWave (Qualcomm X55) oraz GPS/GLONASS/Galileo/BeiDou. Przeznaczony do pracy w terenie — budowy, inspekcje OZE, transport, serwis field service. Cena od ok. 3 800 zł netto.
+
+Zebra ET60 (10 cali, Android 13→A17) to model ekstremalny — jedyny tablet Android na rynku certyfikowany do ciągłej pracy w temperaturze -30°C. Procesor QCM6490, pamięć 4/8 GB RAM, dysk 64/128 GB, Wi-Fi 6E, Bluetooth 5.2. Premium skaner SE55 (imager 2D, zasięg do 12 m, Multi-Code do 22 kodów jednocześnie). IP66, upadki z 1,2 m, MIL-STD-810H. Ekran 1000 nit z podgrzewaniem, Gorilla Glass, tryb mokry i rękawicowy. Bateria: 8 920 mAh standardowa lub 12 920 mAh rozszerzona. Cena od ok. 7 920 zł netto.
+
+Zebra ET65 to ET60 z dodanym modemem 5G Sub-6/mmWave — do chłodni i pracy w terenie z łącznością komórkową. Cena od ok. 8 500 zł netto.
+
+Zebra ET401 (10 cali, Android 14→A19) to najnowsza generacja z 2024/2025 roku. Procesor Qualcomm QCS8550 w litografii 4 nm z NPU 48 TOPS (AI edge), 8 GB RAM, 128 lub 256 GB Flash. Wi-Fi 7 be (przepustowość do 5,8 Gbit/s) i Bluetooth 5.4. Skaner SE55, opcjonalny moduł RFID UHF. IP68 — zanurzenie na 1,5 m przez 30 minut. Upadki z 1,5 m. Praca od -20°C do 50°C. Ekran Gorilla Glass Victus 2 o jasności 800 nit. Bateria 8 920 mAh. Wsparcie Android do A19 — ponad 8 lat aktualizacji bezpieczeństwa. Cena od ok. 3 810 zł netto.
+
+Zebra ET80 (12,2 cala, Windows 11 Pro lub IoT Enterprise) to tablet 2-in-1 z procesorem Intel Core i5-1245U (10 rdzeni/12 wątków), pamięcią 8 lub 16 GB RAM DDR5, dyskiem SSD NVMe 128/256/512 GB. Wi-Fi 6E, Bluetooth 5.2. IP65, upadki z 1,2 m. Ekran FHD+ 500 nit z dotykiem rękawicowym i rysikiem Wacom. Odpinana klawiatura z podświetleniem. 2 porty Thunderbolt 4 do monitora 4K i stacji dokującej. Bateria 49 Wh (8–10 godzin pracy). Cena od ok. 12 400 zł netto.
+
+Wszystkie modele Zebra ET zawierają pakiet Mobility DNA (StageNow, OEMConfig, Enterprise Browser, LifeGuard updates, PowerPrecision battery analytics, Device Tracker) oraz są kompatybilne z pełną gamą akcesoriów: stacje dokujące 1- i 5-gniazdowe, uchwyty na wózki widłowe, baterie zapasowe, zasilacze samochodowe.`,
     tcoComparisons: [
       {
         title: 'TCO 5 lat — flota 50 tabletów do magazynu WMS',
