@@ -26711,13 +26711,7 @@ ET60 dostępny z Androidem 13 (aktualizacje do A16, LifeGuard for Android) i Win
         },
       },
     ],
-    relatedAccessories: [
-      'zebra-battery-et4x-10',
-      'zebra-powerpack-et5x',
-      'zebra-exoskeleton-et4x-10',
-      'zebra-charger-et5x-4ppk',
-      'zebra-handstrap-et5x',
-    ],
+    relatedAccessories: [],
     compatibleAccessories: [],
     faq: [
       {
