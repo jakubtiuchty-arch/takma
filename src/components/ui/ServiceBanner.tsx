@@ -31,6 +31,12 @@ const serviceLinks: Record<string, { label: string; url: string; alt: string; su
     alt: 'Serwis-Zebry.pl — autoryzowany serwis skanerów kodów kreskowych Zebra',
     subtitle: 'Wymiana okien skanujących, naprawy gwarancyjne i pogwarancyjne z odbiorem kurierem',
   },
+  'tablety-przemyslowe': {
+    label: 'Serwis tabletów Zebra',
+    url: 'https://www.serwis-zebry.pl/serwis-tabletow-zebra',
+    alt: 'Serwis-Zebry.pl — autoryzowany serwis tabletów przemysłowych Zebra',
+    subtitle: 'Instrukcje po polsku, sterowniki, diagnostyka AI 24/7, naprawa z odbiorem kurierem',
+  },
 }
 
 interface ServiceBannerProps {
