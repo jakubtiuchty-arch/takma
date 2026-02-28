@@ -875,6 +875,14 @@ export const manufacturers: Manufacturer[] = [
     seoDescription: 'Terminale mobilne i komputery przenośne Datalogic - Memor, Skorpio. Profesjonalne urządzenia do magazynu, logistyki i handlu. TAKMA - autoryzowany dystrybutor.'
   },
   {
+    id: 'newland',
+    slug: 'newland',
+    name: 'Newland',
+    logo: '/images/manufacturers/newland.svg',
+    seoTitle: 'Produkty Newland AIDC | Terminale mobilne i skanery',
+    seoDescription: 'Terminale mobilne i kolektory danych Newland AIDC — MT90 Orca, N7 Cachalot, MT93 Megattera. Budżetowa alternatywa dla Zebry. TAKMA — dystrybutor AutoID w Polsce.'
+  },
+  {
     id: 'honeywell',
     slug: 'honeywell',
     name: 'Honeywell',
@@ -27789,6 +27797,28 @@ export const brandCategories: BrandCategory[] = [
       { question: 'Czym różni się skaner 1D od 2D?', answer: 'Skaner 1D czyta tylko kody kreskowe liniowe (EAN-13, Code 128). Skaner 2D (imager) czyta zarówno kody 1D jak i 2D (QR code, Data Matrix, PDF417) oraz kody z ekranów smartfonów. W 2026 rekomendujemy wyłącznie skanery 2D — różnica cenowa wynosi ok. 50–100 zł, a kody 2D (np. e-paragony, e-dokumenty) są coraz powszechniejsze.' },
       { question: 'Który skaner Zebra do apteki?', answer: 'Do apteki rekomendujemy Zebra [DS2208](/produkt/zebra-ds2208) (przewodowy, 352 zł) lub DS8108 (szybszy, odczyt Data Matrix na opakowaniach leków). Oba spełniają wymogi weryfikacji serializacji (Falsified Medicines Directive). Dla aptek z dużym ruchem — DS9308 prezentacyjny (hands-free).' },
       { question: 'Jakie są alternatywy dla skanerów Zebra?', answer: 'Główne alternatywy: Datalogic (QuickScan, Gryphon — porównywalny segment), Honeywell (Voyager, Hyperion — szeroka oferta), Newland (budżetowe skanery). Zebra wyróżnia się jakością [serwisu](https://www.serwis-zebry.pl/serwis-skanerow-zebra), gwarancją do 5 lat i szybkością dekodowania.' },
+    ],
+  },
+  {
+    id: 'terminale-newland',
+    slug: 'terminale-newland',
+    manufacturerId: 'newland',
+    categoryId: 'terminale-mobilne',
+    name: 'Terminale mobilne Newland',
+    seoTitle: 'Terminale mobilne Newland — kolektory danych Android od 1 948 zł | TAKMA',
+    seoDescription: 'Terminale Newland MT90 Orca III, N7 Cachalot Pro II, MT93 Megattera — wytrzymałe kolektory Android IP65–IP67. Porównanie z Zebrą, ceny netto, FAQ. TAKMA — dystrybutor AutoID.',
+    longDescription: 'Kompletna oferta terminali mobilnych Newland AIDC — od budżetowego MT37 Baiji (od ~1 948 zł netto) po flagowego MT95 Kambur Pro z 5G (od ~5 500 zł netto). Newland to chiński producent urządzeń AIDC założony w 1999 roku, obecny w Polsce poprzez sieć autoryzowanych dystrybutorów. Firma specjalizuje się w silnikach skanujących 2D (technologia Duo Near & Far — skanowanie z różnych odległości bez przełączania trybu) oraz budżetowych terminalach Android z certyfikatem Android Enterprise Recommended. Kluczowe przewagi Newland: najniższe ceny w segmencie enterprise (MT93 Megattera od ~1 770 zł netto), bezpłatny system MDM Ndevor do zarządzania flotą, oraz szeroka gama modeli od 4" z klawiaturą fizyczną (N7 Cachalot Pro II) po 6" dotykowe premium (MT95 Kambur Pro 5G). Newland gwarantuje minimum 3 lata aktualizacji bezpieczeństwa Android — optymalny wybór dla firm planujących cykl wymiany sprzętu co 3–4 lata. TAKMA oferuje doradztwo w doborze modelu, porównanie TCO z Zebrą i serwis pogwarancyjny.',
+    faq: [
+      { question: 'Ile kosztuje terminal mobilny Newland?', answer: 'Terminale Newland kosztują od ~1 948 zł netto (MT37 Baiji, podstawowy kolektor) do ~5 500 zł netto (MT95 Kambur Pro 5G). Najpopularniejsze modele: MT90 Orca III od ~2 400 zł, MT93 Megattera Standard od ~1 770 zł (najlepszy stosunek cena/parametry 2026), N7 Cachalot Pro II od ~3 000 zł (z klawiaturą fizyczną). Ceny netto, VAT 23% doliczany oddzielnie.' },
+      { question: 'Czym różni się Newland od Zebry?', answer: 'Główna różnica to czas wsparcia Android: Zebra LifeGuard zapewnia aktualizacje przez 5–10 lat, Newland — minimum 3 lata. Zebra oferuje rozbudowany ekosystem [Mobility DNA](/terminale-mobilne-zebra) (DataWedge, StageNow, Device Tracker). Newland kompensuje to niższą ceną (MT93 od ~1 770 zł vs [Zebra TC22](/produkt/zebra-tc22) od 2 417 zł) i bezpłatnym MDM Ndevor. Dla flot do 15 terminali z 3–4-letnim cyklem wymiany Newland jest ekonomicznie uzasadniony.' },
+      { question: 'Który Newland do magazynu — MT90, N7 czy MT93?', answer: 'MT93 Megattera Standard (od ~1 770 zł): najnowsza platforma Android 13, Wi-Fi 6/6E, IP65, 5 000 mAh — najlepszy stosunek cena/wydajność. N7 Cachalot Pro II (od ~3 000 zł): klawiatura fizyczna 29/38/47 klawiszy, bateria hot-swap 5 100 mAh, technologia Duo Near & Far — optymalny przy intensywnym ręcznym wprowadzaniu danych. MT90 Orca III (od ~2 400 zł): sprawdzony model 5", IP65, 4 500 mAh. Rekomendacja: MT93 do nowych wdrożeń, N7 gdy wymagana klawiatura fizyczna.' },
+      { question: 'Jak długo Newland wspiera system Android?', answer: 'Newland gwarantuje minimum 3 lata aktualizacji bezpieczeństwa Android od daty pierwszej wysyłki modelu, zgodnie z polityką Android Enterprise Recommended. Modele z certyfikatem AER (MT93, N7 Cachalot Pro II) otrzymują regularne patche. Dla porównania: Zebra LifeGuard — 5–10 lat, Honeywell Sentinel — 5–7 lat, Datalogic — 3–5 lat. Firmom planującym cykl sprzętowy 3–4 lata różnica praktyczna jest minimalna.' },
+      { question: 'Co to jest Ndevor MDM i czy zastępuje płatny MDM?', answer: 'Ndevor to bezpłatny system zarządzania flotą urządzeń (MDM) opracowany przez Newland AIDC. Oferuje: rejestrację urządzeń przez QR kod, masową instalację aplikacji, śledzenie GPS, zdalne czyszczenie danych i monitoring baterii. Ndevor zarządza wyłącznie urządzeniami Newland — dla flot mieszanych (Zebra + Newland) lepszy jest SOTI MobiControl lub Microsoft Intune. Dla firm wdrażających wyłącznie flotę Newland — Ndevor eliminuje koszt licencji MDM (~50 zł/urządzenie/miesiąc).' },
+      { question: 'Czy terminale Newland współpracują z systemami WMS i ERP?', answer: 'Tak — terminale Newland działają pod Androidem z certyfikatem Google Mobile Services (GMS) i Android Enterprise Recommended. Kompatybilne z platformami WMS: Comarch WMS, SAP Mobile, Microsoft Dynamics 365, Simple WMS, Qguar. Aplikacje instaluje się z Google Play lub przez MDM Ndevor. Newland oferuje SDK do integracji skanera z aplikacjami custom (Java/Kotlin). Wszystkie modele obsługują kody 1D/2D, GS1 DataBar, QR, PDF417 i Data Matrix.' },
+      { question: 'Jakie jest IP i wytrzymałość terminali Newland?', answer: 'Większość modeli enterprise Newland posiada IP65 (pełna ochrona przed pyłem + strumień wody) i testy upadkowe z 1,5 m (MT90, MT93) do 1,8 m (N7 Cachalot Pro II). MT95 Kambur Pro: IP67 (zanurzenie 1 m / 30 minut). Wszystkie modele przechodzą testy MIL-STD-810H na wstrząsy i wibracje. Dla porównania: [Zebra TC22](/produkt/zebra-tc22) — IP68 (1,5 m zanurzenia), [MC3400](/produkt/zebra-mc3400) — IP65/IP67, upadki 2,4 m.' },
+      { question: 'Czy TAKMA serwisuje terminale Newland?', answer: 'Tak — TAKMA oferuje serwis pogwarancyjny terminali Newland we Wrocławiu. Diagnostyka, naprawa, wymiana ekranów i baterii. Standardowa gwarancja producenta wynosi 12–24 miesiące. Czas naprawy: 5–7 dni roboczych. Dla urządzeń Zebra dostępny jest szybszy serwis autoryzowany przez [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-terminali-zebra) z naprawami na poziomie komponentów.' },
+      { question: 'Newland N7 Cachalot Pro II vs Zebra TC22 — co wybrać?', answer: 'N7 Cachalot Pro II wygrywa gdy: wymagana klawiatura fizyczna, skanowanie z różnych odległości (Duo Near & Far), bateria hot-swap 5 100 mAh, bezpłatny MDM Ndevor. [Zebra TC22](/produkt/zebra-tc22) wygrywa gdy: priorytet to 10-letnie wsparcie (LifeGuard), ekran 6" FHD+ (praca z aplikacjami), Wi-Fi 6E, IP68, wdrożenie na 5+ lat. Ceny zbliżone (N7 od ~3 000 zł, TC22 od 2 417 zł). TCO na 7 lat faworyzuje Zebrę ze względu na brak konieczności wymiany sprzętu.' },
+      { question: 'Jakie są alternatywy dla terminali Newland w podobnej cenie?', answer: 'W przedziale 1 500–4 000 zł netto konkurują: [Datalogic Memor K](/produkt/datalogic-memor-k) (~2 490 zł, Android 11, IP65), [Zebra MC2200](/produkt/zebra-mc2200) (od 2 180 zł, Mobility DNA), Urovo DT50 (~1 800–2 200 zł, Android 11), Point Mobile PM75 (~2 500–3 200 zł, IP67). Newland MT93 wyróżnia się certyfikatem Android Enterprise Recommended i najniższą ceną w klasie (~1 770 zł netto) — najtańszy terminal enterprise Android na polskim rynku w 2026.' },
     ],
   },
   {

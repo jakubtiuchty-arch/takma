@@ -415,6 +415,172 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
     ],
   },
 
+  'terminale-newland': {
+    definition: {
+      heading: 'Terminale mobilne Newland — budżetowa alternatywa enterprise z Androidem',
+      content:
+        'Newland AIDC (założony w 1999 roku w Fujian, Chiny) to producent urządzeń AutoID specjalizujący się w silnikach skanujących 2D i budżetowych terminalach mobilnych z Androidem. Firma jest obecna w Polsce poprzez sieć dystrybutorów autoryzowanych i oferuje urządzenia z certyfikatem Android Enterprise Recommended (AER) — gwarancją kompatybilności z Google Workspace, MDM i ekosystemem Android enterprise. Kluczowa technologia Newland to Duo Near & Far — silnik skanujący odczytujący kody 1D/2D zarówno z bliskiej odległości (5 cm) jak i dalekiej (10+ m) bez przełączania trybu. Portfolio obejmuje pełne spektrum zastosowań: kompaktowy MT37 Baiji (od ~1 948 zł netto) do lekkiej inwentaryzacji, MT65 Beluga V (ekran 5,5", Wi-Fi 6, 4G) do magazynu, MT90 Orca III (od ~2 400 zł, IP65, sprawdzony model) do logistyki, MT93 Megattera Standard (od ~1 770 zł, najnowsza platforma Android 13) — najtańszy terminal enterprise Android na polskim rynku w 2026, N7 Cachalot Pro II (od ~3 000 zł, klawiatura fizyczna 29/38/47 klawiszy, bateria hot-swap 5 100 mAh) do intensywnej pracy WMS, oraz MT95 Kambur Pro (5G, IP67, ekran 6,1") jako model premium. Newland gwarantuje minimum 3 lata aktualizacji bezpieczeństwa Android i oferuje bezpłatny system MDM Ndevor — eliminujący koszt licencji ~50 zł/urządzenie/miesiąc. Dla firm planujących cykl wymiany sprzętu co 3–4 lata, Newland oferuje najniższy CAPEX w segmencie enterprise z zachowaniem certyfikatów i IP65–IP67.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać terminal Newland? 6 kryteriów',
+      items: [
+        'Ekran dotykowy czy klawiatura fizyczna — modele dotykowe (MT90, MT93, MT95): lekkie, intuicyjne, szybszy onboarding pracowników. N7 Cachalot Pro II z klawiaturą fizyczną (29/38/47 klawiszy): 3–5× szybsze wpisywanie danych w rękawiczkach, niezbędny przy intensywnym ręcznym wprowadzaniu numerów partii, kodów lokalizacji i ilości w WMS.',
+        'Wytrzymałość i środowisko pracy — MT37 Baiji: IP54, upadki 1,2 m — biuro, lekka inwentaryzacja. MT90/MT93: IP65, upadki 1,5 m — standardowy magazyn. N7 Cachalot Pro II: IP65, upadki 1,8 m — ciężki magazyn. MT95 Kambur Pro: IP67, upadki 1,8 m — praca na zewnątrz, deszcz, warunki przemysłowe. Chłodnia (-20°C do -30°C)? Newland nie ma certyfikowanego modelu do mroźni — rozważ [Zebra MC9400](/produkt/zebra-mc9400) z baterią freezer.',
+        'Łączność — Wi-Fi 5/6/6E: standard dla pracy wewnątrz budynku. 4G LTE/5G (MT65, MT95 Kambur Pro): konieczne dla kurierów, serwisantów, inwentaryzacji w terenie. GPS/GLONASS: śledzenie floty i rejestracja tras. NFC: identyfikacja pracowników, logowanie, obsługa kart.',
+        'Bateria i praca wielozmianowa — MT90 Orca III: 4 500 mAh (~10 h), wymienna. N7 Cachalot Pro II: 5 100 mAh hot-swap (~12 h) — wymiana bez wyłączania urządzenia. MT93 Megattera: 5 000 mAh (~12 h). MT95 Kambur Pro: 4 850 mAh (~10 h). Dla pracy wielozmianowej: planuj 2 baterie na urządzenie + stację ładowania.',
+        'Cykl życia vs TCO — Newland gwarantuje 3 lata wsparcia Android. [Zebra](/terminale-mobilne-zebra) — 5–10 lat. Przy cyklu wymiany 3 lata: Newland MT93 (~1 770 zł) vs Zebra TC22 (2 417 zł) = oszczędność ~650 zł/terminal. Przy cyklu 6 lat: Zebra TC22 dalej wspierana, Newland wymaga wymiany na nowy model (~3 540 zł łącznie) — TCO Zebry niższy o ~1 100 zł. Reguła: flota do 15 szt. na 3–4 lata → Newland. Flota 20+ na 5+ lat → [Zebra](/terminale-mobilne-zebra).',
+        'Budżet i skalowalność — MT37 od ~1 948 zł: pilot, testy, pojedyncze stanowiska. MT93 od ~1 770 zł: best value 2026, nowe wdrożenia. MT90 od ~2 400 zł: sprawdzony model, dostępność u wielu dystrybutorów. N7 od ~3 000 zł: WMS z klawiaturą, intensywne skanowanie. MT95 od ~5 500 zł: premium z 5G i IP67. Akcesoria (baterie, stacje, etuia): 15–25% wartości terminala.',
+      ],
+    },
+    expertAuthority:
+      'TAKMA jest dystrybutorem urządzeń AutoID z ponad 25-letnim doświadczeniem na polskim rynku, oferującym terminale mobilne Newland AIDC obok flagowej oferty Zebra Technologies. Nasze doradztwo opiera się na obiektywnym porównaniu marek — pomagamy dobrać terminal dopasowany do budżetu, wymaganego cyklu życia i środowiska pracy, bez faworyzowania jednego producenta. Jako firma z własnym zapleczem serwisowym we Wrocławiu oferujemy serwis pogwarancyjny terminali Newland (diagnostyka, wymiana ekranów, baterii) oraz pełny serwis autoryzowany urządzeń Zebra przez [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-terminali-zebra). Każda rekomendacja na tej stronie opiera się na danych z realnych wdrożeń i porównań TCO, nie na materiałach marketingowych.',
+    technicalDeepDive: `Pełna macierz terminali mobilnych Newland AIDC — od budżetowych kolektorów danych po premium z 5G — pozwala dobrać urządzenie dopasowane do środowiska pracy i budżetu. Zestawienie kluczowych parametrów i orientacyjnych cen netto (luty 2026):\n\n• MT37 Baiji (entry-level): ekran 4" WVGA, Android 10, Wi-Fi 5, IP54, upadki 1,2 m, bateria 3 500 mAh, skaner 2D, od ~1 948 zł netto — podstawowy kolektor do lekkiej inwentaryzacji, biura, punktu sprzedaży.\n\n• MT65 Beluga V (mid-range kompaktowy): ekran 5,5" HD, Android 12/13, Wi-Fi 6, 4G LTE, IP65, upadki 1,5 m, bateria 4 500 mAh, skaner 2D Duo, od ~1 600–2 000 zł netto — kompaktowy terminal do magazynu i retailu z łącznością komórkową.\n\n• MT90 Orca III (mid-range mainstream): ekran 5" HD, Android 11/12, Wi-Fi 5/6, IP65, upadki 1,5 m, bateria 4 500 mAh, skaner 2D Duo, od ~2 400 zł netto — sprawdzony model obecny na rynku od 3 generacji, szeroka baza użytkowników w Polsce.\n\n• MT93 Megattera Standard (mid-range best value): ekran 5,5" HD, Android 13, Wi-Fi 6/6E, 4G LTE opcja, IP65, upadki 1,5 m, bateria 5 000 mAh, skaner 2D Duo Near & Far, od ~1 770 zł netto — najnowsza platforma z najlepszym stosunkiem ceny do parametrów w 2026.\n\n• MT93 Megattera Pro (mid-range rozszerzony): jak Standard + 6 GB RAM, 128 GB Flash, od ~3 500–4 500 zł netto — wersja rozszerzona do wymagających aplikacji WMS.\n\n• N7 Cachalot Pro II (rugged z klawiaturą): ekran 4" WVGA + klawiatura fizyczna 29/38/47 klawiszy, Android 12, Wi-Fi 5, IP65, upadki 1,8 m, bateria 5 100 mAh hot-swap, skaner 2D Duo Near & Far, od ~2 900–4 000 zł netto — jedyny model Newland z klawiaturą fizyczną i baterią wymienną bez wyłączania urządzenia.\n\n• MT95 Kambur Pro (premium 5G): ekran 6,1" FHD, Android 13, 5G/4G LTE, Wi-Fi 6, IP67, upadki 1,8 m, bateria 4 850 mAh, skaner 2D Duo, 6 GB RAM / 128 GB, od ~4 500–5 500 zł netto — flagowy model z łącznością 5G i najwyższą klasą szczelności.`,
+    useCases: [
+      {
+        title: 'Magazyn WMS — przyjęcie, kompletacja i wydanie towaru',
+        description:
+          'Terminal Newland MT93 Megattera (od ~1 770 zł netto) lub MT90 Orca III (od ~2 400 zł) do obsługi procesów magazynowych w systemie WMS. Skanowanie lokalizacji i produktu, potwierdzanie ilości, drukowanie etykiet (parowanie Bluetooth z drukarką mobilną). Wi-Fi 6/6E zapewnia stabilne połączenie w całym magazynie. IP65 chroni przed pyłem i wilgocią. Dla intensywnego ręcznego wprowadzania danych (kody lokalizacji, numery partii) — N7 Cachalot Pro II z klawiaturą fizyczną (od ~3 000 zł). Eliminacja papierowych list redukuje błędy kompletacji z 3–5% do poniżej 0,5%.',
+      },
+      {
+        title: 'Inwentaryzacja roczna i ciągła',
+        description:
+          'Terminal Newland MT90 Orca III (od ~2 400 zł) lub MT93 (od ~1 770 zł) do szybkiego skanowania asortymentu — 800–1 200 skanów/godzinę z czytnikiem 2D Duo. Lekki (265 g), ergonomiczny, bateria 4 500–5 000 mAh na cały dzień inwentaryzacji bez ładowania. Dla firm bez własnego sprzętu: zakup 3–5 terminali MT93 do inwentaryzacji rocznej kosztuje mniej niż wynajem kolektorów (~8 850–13 250 zł vs 1 500–2 500 zł/dzień za wynajem 5 szt.). Zwrot inwestycji w 3–5 dni inwentaryzacji. Kompatybilne z aplikacjami inwentaryzacyjnymi na Androida.',
+      },
+      {
+        title: 'Retail i POS — weryfikacja cen, etykietowanie, obsługa klienta',
+        description:
+          'Terminal Newland MT65 Beluga V (od ~1 600 zł) lub MT93 (od ~1 770 zł) do pracy na sali sprzedaży: skanowanie kodu produktu → weryfikacja ceny i stanu magazynowego → lokalizacja w sklepie. Ekran 5–5,5" czytelny w oświetleniu sklepowym. 4G LTE w MT65 — praca w punktach bez Wi-Fi (pop-up store, targi, eventy). NFC do obsługi kart lojalnościowych. Kompaktowe rozmiary i niska waga (~250 g) — wygodne do noszenia przez 8 h na zmianie.',
+      },
+      {
+        title: 'Logistyka i transport — skanowanie przesyłek, POD, śledzenie',
+        description:
+          'Terminal Newland MT95 Kambur Pro z 5G/4G LTE i GPS (od ~4 500 zł) lub MT65 Beluga V z 4G (od ~1 600 zł) do pracy w terenie: skanowanie przesyłek przy załadunku/rozładunku, rejestracja Proof of Delivery (POD) z podpisem na ekranie, śledzenie lokalizacji GPS w czasie rzeczywistym. IP67 (MT95) chroni przed deszczem i kurzem. Bateria 4 850 mAh na cały dzień trasy. Zarządzanie flotą przez Ndevor — monitoring baterii, status online/offline, lokalizacja pojazdów.',
+      },
+      {
+        title: 'Produkcja i kontrola jakości',
+        description:
+          'Terminal Newland N7 Cachalot Pro II z klawiaturą fizyczną (od ~3 000 zł) do śledzenia partii produkcyjnych, kontroli jakości i traceability. Klawiatura 38/47 klawiszy jest 3–5× szybsza od ekranu dotykowego przy wpisywaniu numerów partii i kodów wad. IP65 + upadki 1,8 m — odporność na warunki hali produkcyjnej. Bateria hot-swap 5 100 mAh — wymiana w 10 sekund bez przerywania sesji aplikacji. Skaner Duo Near & Far — odczyt etykiet na opakowaniach i paletach z różnych odległości.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego dystrybutorzy Newland nie powiedzą',
+      items: [
+        {
+          title: 'Ndevor MDM — bezpłatne zarządzanie flotą, którego nie oferuje Zebra ani Honeywell',
+          text: 'Newland Ndevor to jedyny bezpłatny system MDM w segmencie enterprise Android. Oferuje: rejestrację urządzeń przez QR kod, zarządzanie aplikacjami (masowa instalacja, aktualizacje, blokada), śledzenie GPS, zdalne czyszczenie danych i monitoring baterii. Alternatywy: SOTI MobiControl (~50 zł/urządzenie/miesiąc), VMware Workspace ONE (~35 zł/urządzenie/miesiąc), Microsoft Intune (~30 zł/urządzenie/miesiąc). Dla floty 20 terminali na 3 lata: Ndevor oszczędza ~36 000 zł (50 zł × 20 × 36 mies.) vs SOTI. Ograniczenie: Ndevor zarządza WYŁĄCZNIE urządzeniami Newland — dla flot mieszanych potrzebny jest komercyjny MDM.',
+        },
+        {
+          title: 'Duo Near & Far — skanowanie z różnych odległości bez przełączania trybu',
+          text: 'Technologia Duo Near & Far w skanerach Newland (zastosowana w N7 Cachalot Pro II, MT93, MT95) umożliwia skanowanie kodów zarówno z 5 cm (etykiety na produktach) jak i z 10–15 m (etykiety na wysokich regałach) — automatycznie, bez przełączania trybu. W terminalach Zebra porównywalną funkcjonalność oferują skanery SE55 (zasięg do 12 m, od modelu [TC53](/produkt/zebra-tc53)) i SE58 (do 30 m, w [MC9400](/produkt/zebra-mc9400)). Duo Near & Far jest kluczowy w magazynach z regałami od podłogi do sufitu — eliminuje konieczność podchodzenia do każdej etykiety.',
+        },
+        {
+          title: '3 lata wsparcia vs 10 lat — kiedy to faktycznie ma znaczenie?',
+          text: 'Newland gwarantuje 3 lata, Zebra do 10 lat. Ale: 68% firm wymienia terminale co 3–4 lata (zmiana technologii, zużycie fizyczne, nowe wymagania WMS). Przy cyklu 3 lata: Newland MT93 (1 770 zł) + wymiana po 3 latach (1 770 zł) = 3 540 zł. [Zebra TC22](/produkt/zebra-tc22) (2 417 zł) z 6-letnim wsparciem = 2 417 zł bez wymiany. Różnica: 1 123 zł na korzyść Zebry, ale rozłożona na 6 lat. Wniosek: jeśli firma planuje korzystać z terminala 5+ lat — Zebra. Jeśli 3 lata — Newland jest tańszy o 650 zł/szt., a za 3 lata kupujesz nowszy model z lepszym procesorem i Androidem.',
+        },
+        {
+          title: 'Android Enterprise Recommended — certyfikat, którego wielu producentów nie ma',
+          text: 'Modele Newland MT93 Megattera i N7 Cachalot Pro II posiadają certyfikat Google Android Enterprise Recommended (AER). Oznacza to: minimum 3 lata security patches, gwarantowaną kompatybilność z Google Workspace i enterprise MDM, sprzętowy chip bezpieczeństwa. Nie wszystkie chińskie terminale mają ten certyfikat — Urovo, Chainway, Point Mobile często go nie posiadają. AER jest wymagany przez wiele korporacji i instytucji publicznych jako warunek dopuszczenia urządzenia do sieci firmowej. Przy wyborze terminala budżetowego zawsze sprawdzaj AER — to różnica między enterprise a „tani Android z Chin".',
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Ile kosztuje terminal mobilny Newland w 2026 roku?',
+        answer:
+          'Terminale Newland w Polsce kosztują od ~1 770 zł netto (MT93 Megattera Standard — najtańszy terminal enterprise Android na rynku) do ~5 500 zł netto (MT95 Kambur Pro 5G). Popularne modele: MT37 Baiji od ~1 948 zł, MT65 Beluga V od ~1 600 zł, MT90 Orca III od ~2 400 zł, N7 Cachalot Pro II od ~3 000 zł (z klawiaturą fizyczną). Ceny netto, VAT 23% naliczany oddzielnie. Budżet akcesoriów (baterie, stacje, etuia): 15–25% wartości terminala.',
+      },
+      {
+        question: 'Jaki terminal Newland wybrać do magazynu z systemem WMS?',
+        answer:
+          'Do magazynu z WMS rekomendujemy: MT93 Megattera Standard (od ~1 770 zł) — najnowsza platforma Android 13, Wi-Fi 6/6E, IP65, skaner Duo 2D, best value 2026. Dla operatorów w rękawiczkach lub intensywnego wpisywania danych: N7 Cachalot Pro II (od ~3 000 zł) z klawiaturą fizyczną i baterią hot-swap. Dla prostszych zastosowań (skanuj-potwierdź): MT90 Orca III (od ~2 400 zł) — sprawdzony model z szeroką bazą użytkowników. Wszystkie modele kompatybilne z Comarch WMS, SAP, Microsoft Dynamics i innymi polskimi systemami WMS.',
+      },
+      {
+        question: 'Czym różni się Newland MT93 Megattera od MT90 Orca III?',
+        answer:
+          'MT93 Megattera Standard to nowsza platforma (Android 13 vs 11/12), z Wi-Fi 6/6E (vs Wi-Fi 5/6), większą baterią (5 000 vs 4 500 mAh), lepszym procesorem i — paradoksalnie — niższą ceną (od ~1 770 zł vs ~2 400 zł za MT90). MT90 Orca III ma przewagę dostępnością — jest na rynku od dłuższego czasu, wielu dystrybutorów ma go na magazynie. Dla nowych wdrożeń: MT93 Megattera jest lepszym wyborem pod każdym względem. MT90 warto rozważyć tylko jeśli jest dostępny natychmiast w promocji.',
+      },
+      {
+        question: 'Newland czy Zebra — który terminal mobilny wybrać?',
+        answer:
+          'Newland wygryw gdy: budżet jest kluczowy (MT93 od ~1 770 zł vs [Zebra TC22](/produkt/zebra-tc22) od 2 417 zł), flota do 15 terminali, cykl wymiany 3–4 lata, bezpłatny MDM Ndevor ważniejszy niż Mobility DNA. [Zebra](/terminale-mobilne-zebra) wygrywa gdy: wdrożenie na 5–10 lat (LifeGuard), flota 20+ urządzeń (StageNow do masowej konfiguracji), wymagany serwis autoryzowany w Polsce ([serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-terminali-zebra)), aplikacje wymagają zaawansowanego skanowania (SE55/SE58 do 30 m). Tabela decyzyjna: krótki cykl + mały budżet → Newland. Długi cykl + duża flota → Zebra.',
+      },
+      {
+        question: 'Jak działa system MDM Ndevor od Newland?',
+        answer:
+          'Ndevor to bezpłatny system MDM (Mobile Device Management) od Newland AIDC. Funkcje: rejestracja urządzeń przez QR kod (zero-touch deployment), masowa instalacja i aktualizacja aplikacji, śledzenie lokalizacji GPS, zdalne czyszczenie danych w przypadku kradzieży, monitoring stanu baterii, blokada funkcji (aparat, USB, Google Play). Ograniczenia: zarządza WYŁĄCZNIE urządzeniami Newland — nie obsługuje terminali Zebra, Honeywell ani Datalogic. Dla flot mieszanych: SOTI MobiControl lub Microsoft Intune. Konfiguracja: rejestracja na ndevor.newlandaidc.com → dodanie urządzeń → tworzenie grup i polityk.',
+      },
+      {
+        question: 'Czy terminal Newland wytrzyma upadek i deszcz?',
+        answer:
+          'Tak — modele enterprise Newland posiadają certyfikat MIL-STD-810H. MT90 Orca III: IP65, upadki 1,5 m na beton. N7 Cachalot Pro II: IP65, upadki 1,8 m. MT93 Megattera: IP65, upadki 1,5 m. MT95 Kambur Pro: IP67, upadki 1,8 m — najwytrzymalszy model, odporny na zanurzenie w wodzie (1 m / 30 min). IP65 = pełna pyłoszczelność + strumień wody z dowolnego kierunku. IP67 = zanurzenie w wodzie. Dla porównania: [Zebra TC22](/produkt/zebra-tc22) ma IP68 (1,5 m zanurzenia), [MC9400](/produkt/zebra-mc9400) — upadki 3,65 m.',
+      },
+      {
+        question: 'Ile lat wsparcia Android oferuje Newland i co to oznacza?',
+        answer:
+          'Newland gwarantuje minimum 3 lata aktualizacji bezpieczeństwa Android od daty pierwszej wysyłki modelu. W praktyce: terminal kupiony w 2026 będzie otrzymywał łatki bezpieczeństwa do ~2029. Po upływie wsparcia urządzenie nadal działa, ale nie otrzymuje nowych patchy — zwiększone ryzyko luk bezpieczeństwa. Dla porównania: [Zebra LifeGuard](/terminale-mobilne-zebra) — 5–10 lat, Honeywell Sentinel — 5–7 lat. Firmy z regulacjami (RODO, PCI DSS, healthcare) powinny uwzględnić datę EOL wsparcia przy planowaniu cyklu wymiany sprzętu.',
+      },
+      {
+        question: 'Czy TAKMA oferuje serwis terminali Newland w Polsce?',
+        answer:
+          'Tak — TAKMA oferuje serwis pogwarancyjny terminali Newland we Wrocławiu. Zakres: diagnostyka usterek, wymiana ekranów dotykowych, wymiana baterii, naprawa portów USB/ładowania, reinstalacja systemu. Czas naprawy: 5–7 dni roboczych. Standardowa gwarancja producenta: 12–24 miesiące (w zależności od modelu i dystrybutora). Dla urządzeń Zebra dostępny jest szybszy serwis autoryzowany przez [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-terminali-zebra) — naprawa na poziomie komponentów, czas 3–5 dni.',
+      },
+      {
+        question: 'Newland N7 Cachalot Pro II vs Zebra MC3400 — terminale z klawiaturą',
+        answer:
+          'N7 Cachalot Pro II (od ~3 000 zł): klawiatura 29/38/47 kl., ekran 4" WVGA, bateria hot-swap 5 100 mAh, IP65, upadki 1,8 m, Duo Near & Far 2D, Android 12, wsparcie 3 lata. [Zebra MC3400](/produkt/zebra-mc3400) (od 4 561 zł): klawiatura 29/38/47 kl., ekran 4" WVGA, bateria hot-swap 7 000 mAh, IP65/IP67, upadki 2,4 m, skaner SE55 (do 12 m), Android 14 do v18, Mobility DNA. MC3400 jest o ~50% droższa, ale oferuje dłuższe wsparcie (do v18 vs 3 lata), lepszą wytrzymałość (2,4 m vs 1,8 m), większą baterię (7 000 vs 5 100 mAh) i darmowy ekosystem Mobility DNA. N7 wygrywa ceną i bezpłatnym Ndevor MDM.',
+      },
+      {
+        question: 'Jakie są alternatywy dla terminali Newland w podobnej cenie?',
+        answer:
+          'W przedziale 1 500–4 000 zł netto: [Datalogic Memor K](/produkt/datalogic-memor-k) (~2 490 zł, Android 11, IP65) — włoska jakość, krótszy cykl życia. [Zebra MC2200](/produkt/zebra-mc2200) (od 2 180 zł, Mobility DNA, Wi-Fi) — ekosystem Zebra w cenie zbliżonej do Newland. Urovo DT50 (~1 800–2 200 zł, Android 11) — chiński, bez AER. Point Mobile PM75 (~2 500–3 200 zł, IP67) — koreański, wytrzymalszy. M3 Mobile SL20+ (~2 000 zł, Android 10) — koreański, starszy Android. Newland MT93 wyróżnia się certyfikatem AER, najniższą ceną (~1 770 zł) i bezpłatnym MDM Ndevor — najlepsza wartość w segmencie.',
+      },
+    ],
+    comparisons: [
+      {
+        title: 'Newland vs Zebra — porównanie terminali mobilnych enterprise',
+        content:
+          'Newland i Zebra to producenci z różnych segmentów cenowych, ale ich terminale często konkurują w tych samych projektach. Kluczowe różnice: **Cena**: Newland MT93 Megattera od ~1 770 zł netto vs [Zebra TC22](/produkt/zebra-tc22) od 2 417 zł — Newland jest o ~27% tańszy w zakupie. **Wsparcie Android**: Zebra LifeGuard 5–10 lat vs Newland 3 lata — Zebra jest 2–3× dłużej wspierana. **Ekosystem**: Zebra Mobility DNA (DataWedge, StageNow, Device Tracker, Enterprise Browser) — 12+ darmowych narzędzi enterprise. Newland oferuje Ndevor MDM (bezpłatny), ale bez odpowiednika DataWedge czy StageNow. **Serwis PL**: Zebra ma [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-terminali-zebra) (autoryzowany, naprawa komponentowa). Newland — serwis dystrybutorski. **Wytrzymałość**: Zebra TC22 IP68, upadki 1,5 m. Newland MT93 IP65, upadki 1,5 m — Zebra ma wyższą klasę szczelności. **Rekomendacja TAKMA**: Newland do flot 5–15 szt. z budżetem do 3 000 zł/terminal i cyklem 3 lata. Zebra do flot 15+ z planowanym użytkowaniem 5+ lat.',
+      },
+      {
+        title: 'Newland vs Datalogic — terminale mobilne w średnim segmencie',
+        content:
+          'Newland i [Datalogic](/terminale-mobilne) to producenci pozycjonowani jako tańsze alternatywy dla Zebry. Newland MT93 Megattera (od ~1 770 zł) vs [Datalogic Memor 12](/produkt/datalogic-memor-12) (~4 490 zł): Newland jest znacząco tańszy. Newland MT90 Orca III (~2 400 zł) vs [Datalogic Memor 30](/produkt/datalogic-memor-30) (~5 490 zł): ponownie Newland tańszy. Datalogic oferuje lepszą sieć serwisową w Europie (centrala we Włoszech), dłuższe wsparcie (5 lat) i wyższą jakość wykonania. Newland kompensuje ceną, Ndevor MDM i certyfikatem AER. Dla firm szukających najtańszego enterprise Android: Newland. Dla firm ceniących europejski serwis i 5-letnie wsparcie: Datalogic. Dla obu: [Zebra](/terminale-mobilne-zebra) gdy TCO 5+ lat jest priorytetem.',
+      },
+      {
+        title: 'Newland MT93 Megattera vs MT90 Orca III — który wybrać?',
+        content:
+          'MT93 Megattera Standard to nowsza generacja: Android 13 (vs 11/12), Wi-Fi 6/6E (vs 5/6), bateria 5 000 mAh (vs 4 500 mAh), ekran 5,5" HD (vs 5" HD), szybszy procesor octa-core 2,4 GHz (vs 2,0 GHz) — i paradoksalnie niższa cena (~1 770 vs ~2 400 zł). MT90 Orca III ma jedyną przewagę: jest na rynku od dłuższego czasu, co oznacza szeroką dostępność akcesoriów, sprawdzone oprogramowanie i doświadczenia użytkowników. Dla nowych wdrożeń w 2026: MT93 jest lepszym wyborem pod każdym mierzalnym parametrem. MT90 warto rozważyć tylko przy migracji z MT90 II / MT90 Pro (kompatybilność akcesoriów).',
+      },
+      {
+        title: 'Terminale z klawiaturą: Newland N7 vs Zebra MC3400 vs Datalogic Skorpio X5',
+        content:
+          'Trzy terminale z klawiaturą fizyczną do intensywnej pracy WMS: **Newland N7 Cachalot Pro II** (od ~3 000 zł): klawiatura 29/38/47 kl., 4" WVGA, 5 100 mAh hot-swap, IP65, 1,8 m upadki, Duo Near & Far, Android 12, 3 lata wsparcia, Ndevor MDM bezpłatny. **[Zebra MC3400](/produkt/zebra-mc3400)** (od 4 561 zł): klawiatura 29/38/47 kl., 4" WVGA, 7 000 mAh hot-swap, IP65/IP67, 2,4 m upadki, SE55/SE58 (do 30 m!), Android 14 do v18, Mobility DNA. **[Datalogic Skorpio X5](/produkt/datalogic-skorpio-x5)** (od ~6 490 zł): klawiatura 38/47 kl., 4,3" WVGA, 3 060 mAh, IP65, 1,8 m upadki, Android 11, 5 lat wsparcia. Ranking: MC3400 > N7 > Skorpio X5 pod względem TCO i wytrzymałości. N7 wygrywa ceną, MC3400 — skanowaniem na odległość i długim wsparciem.',
+      },
+    ],
+    howToSteps: [
+      {
+        name: 'Analiza potrzeb i środowiska pracy',
+        text: 'Zdefiniuj: Gdzie pracuje terminal? (magazyn, sklep, teren, produkcja). Ile skanowań dziennie? (<200 → MT37/MT65, 200–500 → MT93, >500 → N7 z klawiaturą). Czy potrzebna klawiatura fizyczna? (→ N7 Cachalot Pro II). Czy praca w terenie bez Wi-Fi? (→ MT65/MT95 z 4G/5G). Budżet na terminal? (<2 000 zł → MT93/MT65, 2 000–3 000 → MT90, >3 000 → N7/MT95). Skonsultuj się z doradcą TAKMA — porównamy Newland z Zebrą dla Twojego scenariusza.',
+      },
+      {
+        name: 'Wybór modelu i zamówienie',
+        text: 'Entry: MT37 Baiji (od ~1 948 zł) — pilot, testy. Best value: MT93 Megattera Standard (od ~1 770 zł) — nowe wdrożenie magazynowe. Mid-range: MT90 Orca III (od ~2 400 zł) — sprawdzony model. Klawiatura: N7 Cachalot Pro II (od ~3 000 zł) — WMS z ręcznym wpisywaniem. Premium 5G: MT95 Kambur Pro (od ~4 500 zł) — logistyka, serwis terenowy. Zamów akcesoria: baterie zapasowe, stacja ładowania, etuia ochronne (15–25% budżetu).',
+      },
+      {
+        name: 'Konfiguracja i wdrożenie Ndevor',
+        text: 'Zarejestruj urządzenia w Ndevor (ndevor.newlandaidc.com): skanowanie QR kodu na opakowaniu → automatyczna rejestracja w panelu MDM. Utwórz grupy urządzeń (magazyn, retail, teren). Skonfiguruj polityki: dozwolone aplikacje, Wi-Fi, blokada Google Play, monitoring baterii. Zainstaluj aplikację WMS/ERP z Ndevor lub Google Play. Skonfiguruj profil skanera (symbologie, prefiksy, dźwięk potwierdzenia). Ndevor jest darmowy — brak kosztów licencji.',
+      },
+      {
+        name: 'Szkolenie operatorów i pilotaż',
+        text: 'Przeszkol operatorów (0,5 dnia): obsługa skanera, nawigacja po WMS, wymiana baterii, podstawowa diagnostyka (restart, czyszczenie cache). Uruchom pilotaż na 3–5 urządzeniach przez 1–2 tygodnie: test zasięgu Wi-Fi, czas pracy baterii, ergonomia, wydajność skanowania. Po pozytywnym pilocie — rollout na pełną flotę. TAKMA oferuje wsparcie wdrożeniowe zdalne.',
+      },
+      {
+        name: 'Zarządzanie flotą i serwis',
+        text: 'Monitoring przez Ndevor: status online/offline, poziom baterii, lokalizacja GPS, historia instalacji aplikacji. Wymiana baterii co 12–18 miesięcy na podstawie stanu zdrowia (SoH) raportowanego przez Ndevor. Gwarancja producenta: 12–24 miesiące. Serwis pogwarancyjny: TAKMA Wrocław — diagnostyka, naprawa, wymiana ekranów i baterii. Planowany cykl życia terminala Newland: 3–4 lata (vs 5–7 lat dla Zebry). Po 3 latach: wymiana na nowy model z nowszym Androidem i lepszymi parametrami.',
+      },
+    ],
+  },
+
   'skanery-kodow-kreskowych-zebra': {
     definition: {
       heading: 'Skanery kodów kreskowych Zebra — lider technologii imaging na świecie',

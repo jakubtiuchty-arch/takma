@@ -22,6 +22,7 @@ const navigation: NavItem[] = [
     children: [
       { name: 'Wszystkie terminale', href: '/terminale-mobilne' },
       { name: 'Terminale Zebra', href: '/terminale-mobilne-zebra' },
+      { name: 'Terminale Newland', href: '/terminale-newland' },
       { name: 'Akcesoria do terminali', href: '/akcesoria-do-terminali' },
       { name: '— Baterie i akumulatory', href: '/baterie-do-terminali' },
       { name: '— Stacje dokujące i ładowarki', href: '/stacje-ladowarki-terminali' },
