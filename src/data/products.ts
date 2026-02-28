@@ -25975,10 +25975,16 @@ Pakiet Mobility DNA w cenie urządzenia: StageNow, OEMConfig, Enterprise Browser
     images: [
       '/images/products/ET4010A-001C1B0P-A6.png',
       '/images/products/ET4010A-001C1B0P-A6_2.png',
+      '/images/products/ET4010A-001C1B0P-A6_3.png',
+      '/images/products/ET4010A-001C1B0P-A6_4.png',
+      '/images/products/ET4010A-001C1B0P-A6_5.png',
     ],
     imageDescriptions: [
-      'Zebra ET401 — widok z przodu, ekran 10 cali WUXGA z Gorilla Glass 5 i skaner SE4100',
-      'Zebra ET401 — widok z tyłu, kamera 16 MP, moduł Wi-Fi 7 i wymienna bateria',
+      'Zebra ET401 — widok z przodu, ekran 10 cali w orientacji poziomej z zegarem na wyświetlaczu',
+      'Zebra ET401 — widok pod kątem z prawej strony, ekran dotykowy z Gorilla Glass 5',
+      'Zebra ET401 — widok pod kątem z lewej strony, widoczna konstrukcja obudowy IP68',
+      'Zebra ET401 — tył tabletu pod kątem z lewej, kamera 16 MP i logo Zebra',
+      'Zebra ET401 — tył tabletu pod kątem z prawej, moduł kamery i wymienne akcesoria',
     ],
     tags: ['magazyn', 'retail', 'produkcja', 'logistyka', 'healthcare'],
     availability: 'on-order',
