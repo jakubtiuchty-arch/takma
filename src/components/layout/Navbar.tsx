@@ -57,6 +57,14 @@ const navigation: NavItem[] = [
     ],
   },
   {
+    name: 'Tablety',
+    href: '/tablety-przemyslowe',
+    children: [
+      { name: 'Wszystkie tablety', href: '/tablety-przemyslowe' },
+      { name: 'Tablety Zebra', href: '/tablety-zebra' },
+    ],
+  },
+  {
     name: 'Materiały',
     href: '/materialy-eksploatacyjne',
     children: [

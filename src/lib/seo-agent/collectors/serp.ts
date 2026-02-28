@@ -125,6 +125,19 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'zebra li3608', group: 'produkty' },
 
   // =====================================================
+  // TABLETY — „tablet zebra X" (6)
+  // =====================================================
+  { keyword: 'tablet zebra et40', group: 'tablety' },
+  { keyword: 'tablet zebra et45', group: 'tablety' },
+  { keyword: 'tablet zebra et60', group: 'tablety' },
+  { keyword: 'tablet zebra et65', group: 'tablety' },
+  { keyword: 'tablet zebra et401', group: 'tablety' },
+  { keyword: 'tablet zebra et80', group: 'tablety' },
+  { keyword: 'tablet przemysłowy zebra', group: 'tablety' },
+  { keyword: 'tablet przemysłowy', group: 'tablety' },
+  { keyword: 'tablet rugged android', group: 'tablety' },
+
+  // =====================================================
   // GENERYCZNE (5)
   // =====================================================
   { keyword: 'drukarka etykiet', group: 'generyczne' },

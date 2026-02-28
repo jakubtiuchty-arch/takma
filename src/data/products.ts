@@ -185,14 +185,17 @@ export const categories: Category[] = [
     icon: 'scan',
     productCount: 20,
   },
-  // {
-  //   id: 'tablety',
-  //   slug: 'tablety',
-  //   name: 'Tablety',
-  //   description: 'Wytrzymałe tablety przemysłowe do pracy w trudnych warunkach',
-  //   icon: 'tablet',
-  //   productCount: 4,
-  // },
+  {
+    id: 'tablety-przemyslowe',
+    slug: 'tablety-przemyslowe',
+    name: 'Tablety przemysłowe',
+    description: 'Wytrzymałe tablety przemysłowe Android i Windows do magazynu, produkcji, chłodni, służby zdrowia i pracy w terenie. Zebra, Getac, Honeywell.',
+    seoTitle: 'Tablety przemysłowe — rugged Android i Windows | Zebra, Getac, Honeywell',
+    seoDescription: 'Tablety przemysłowe rugged od 3 250 zł netto: Zebra ET40/ET45/ET60/ET65/ET401/ET80, Getac F110/T800, Honeywell RT10A. IP65–IP68, ekrany 8–12″ 1000 nit, -30°C do +50°C. Porównanie modeli, TCO, doradztwo techniczne. TAKMA — autoryzowany partner.',
+    longDescription: 'Tablety przemysłowe (rugged tablets) to mobilne komputery z hartowanym ekranem dotykowym, klasą ochrony IP65–IP68, odpornością na upadki z 1,2–1,8 m i certyfikatem MIL-STD-810H. W ofercie TAKMA tablety trzech wiodących producentów: Zebra Technologies (seria ET — ET40, ET45, ET60, ET65, ET401, ET80), Getac (F110, T800, UX10, ZX80) i Honeywell (RT10A, EDA10A). Systemy: Android 13–15 (AOSP i GMS) oraz Windows 11 Pro/IoT Enterprise. Ekrany od 8 do 12,2 cala z jasnością 500–1000 nit do pracy na słońcu, pojemnościowe z obsługą w rękawicach i w deszczu. Zastosowania: magazyny WMS, linie produkcyjne MES, chłodnie i mroźnie (-30°C z podgrzewanym ekranem), inspekcje terenowe, floty pojazdów, opieka zdrowotna (z dezynfekcją i certyfikatem medycznym). Opcje: czytniki kodów 1D/2D, RFID UHF, skanery paszportów, Hot Swap baterii, stacje dokujące do pojazdów, klawiatury odpinane. TAKMA jako autoryzowany partner oferuje doradztwo, konfigurację MDM, staging flotowy i serwis pogwarancyjny (serwis-zebry.pl).',
+    icon: 'tablet',
+    productCount: 0,
+  },
   {
     id: 'materialy-eksploatacyjne',
     slug: 'materialy-eksploatacyjne',
@@ -851,6 +854,20 @@ export const subcategories: Subcategory[] = [
     productIds: ['zebra-ds9908', 'zebra-ds9308'],
     productCount: 2,
   },
+  // --- Podkategorie: Tablety przemysłowe ---
+  {
+    id: 'tablety-zebra',
+    slug: 'tablety-zebra',
+    name: 'Tablety Zebra',
+    parentCategoryId: 'tablety-przemyslowe',
+    description: 'Wytrzymałe tablety przemysłowe Zebra z Androidem i Windows — seria ET40, ET45, ET60, ET65, ET401, ET80 z IP65–IP68 i ekranami 8–12″.',
+    seoTitle: 'Tablety przemysłowe Zebra — ET40, ET45, ET60, ET65, ET401, ET80 | Rugged Android i Windows',
+    seoDescription: 'Tablety Zebra ET40/ET45 (8–10″, Android, IP65), ET60/ET65 (IP66, -30°C, 1000 nit), ET401 (IP68, Wi-Fi 7, RFID), ET80 (12″, Windows 11). Ceny od 3 250 zł netto. TAKMA — autoryzowany partner Zebra.',
+    longDescription: 'Tablety przemysłowe Zebra Technologies serii ET to pełne spektrum zastosowań korporacyjnych: od kompaktowego ET40 (8/10″, Android, IP65, od ~3 250 zł) przez wytrzymały ET60 (10″, IP66, podgrzewany ekran -30°C, 1000 nit) po profesjonalny ET80 (12″, Windows 11 Pro, 2-in-1). NOWOŚĆ 2025/2026: ET401 z IP68, Wi-Fi 7, opcjonalnym RFID UHF i AI-ready z NPU. Warianty 5G (ET45, ET65) do pracy w terenie bez Wi-Fi. Wszystkie tablety Zebra z ekosystemem Mobility DNA (30+ narzędzi), wsparciem Android do A17–A19, Hot Swap baterii i skanerem SE55 (zasięg do 12 m). TAKMA: doradztwo, konfiguracja MDM, staging flotowy, serwis (serwis-zebry.pl).',
+    icon: 'tablet',
+    productIds: [],
+    productCount: 0,
+  },
 ]
 
 // Producenci
@@ -886,6 +903,14 @@ export const manufacturers: Manufacturer[] = [
     logo: '/images/manufacturers/tsc.svg',
     seoTitle: 'Produkty TSC | Drukarki etykiet przemysłowe i biurkowe',
     seoDescription: 'Drukarki etykiet TSC - modele biurkowe i przemysłowe. Wysoka jakość w przystępnej cenie. TAKMA - autoryzowany dystrybutor.'
+  },
+  {
+    id: 'getac',
+    slug: 'getac',
+    name: 'Getac',
+    logo: '/images/manufacturers/getac.svg',
+    seoTitle: 'Produkty Getac | Tablety i laptopy rugged',
+    seoDescription: 'Tablety i laptopy przemysłowe Getac — fully rugged z MIL-STD-810H, IP65+, ekrany LumiBond do pracy na słońcu. TAKMA — autoryzowany dystrybutor.'
   },
 ]
 
@@ -26185,6 +26210,25 @@ export const brandCategories: BrandCategory[] = [
       { question: 'Czym różni się skaner 1D od 2D?', answer: 'Skaner 1D czyta tylko kody kreskowe liniowe (EAN-13, Code 128). Skaner 2D (imager) czyta zarówno kody 1D jak i 2D (QR code, Data Matrix, PDF417) oraz kody z ekranów smartfonów. W 2026 rekomendujemy wyłącznie skanery 2D — różnica cenowa wynosi ok. 50–100 zł, a kody 2D (np. e-paragony, e-dokumenty) są coraz powszechniejsze.' },
       { question: 'Który skaner Zebra do apteki?', answer: 'Do apteki rekomendujemy Zebra [DS2208](/produkt/zebra-ds2208) (przewodowy, 352 zł) lub DS8108 (szybszy, odczyt Data Matrix na opakowaniach leków). Oba spełniają wymogi weryfikacji serializacji (Falsified Medicines Directive). Dla aptek z dużym ruchem — DS9308 prezentacyjny (hands-free).' },
       { question: 'Jakie są alternatywy dla skanerów Zebra?', answer: 'Główne alternatywy: Datalogic (QuickScan, Gryphon — porównywalny segment), Honeywell (Voyager, Hyperion — szeroka oferta), Newland (budżetowe skanery). Zebra wyróżnia się jakością [serwisu](https://www.serwis-zebry.pl/serwis-skanerow-zebra), gwarancją do 5 lat i szybkością dekodowania.' },
+    ],
+  },
+  {
+    id: 'tablety-przemyslowe-zebra',
+    slug: 'tablety-przemyslowe-zebra',
+    manufacturerId: 'zebra',
+    categoryId: 'tablety-przemyslowe',
+    name: 'Tablety przemysłowe Zebra',
+    seoTitle: 'Tablety przemysłowe Zebra — ET40, ET45, ET60, ET65, ET401, ET80 | od 3 250 zł',
+    seoDescription: 'Tablety Zebra rugged: ET40/ET45 Android 8-10″, ET60/ET65 do chłodni -30°C, ET401 z Wi-Fi 7 i RFID, ET80 Windows 12″. Mobility DNA, Hot Swap, serwis w PL. TAKMA — autoryzowany partner Zebra.',
+    longDescription: 'Kompletna oferta tabletów przemysłowych Zebra Technologies serii ET — od kompaktowego ET40 (8/10″, Android, IP65, od ~3 250 zł netto) po profesjonalny ET80 (12,2″, Windows 11, 2-in-1, od ~12 400 zł). Zebra to lider rynku enterprise z ekosystemem Mobility DNA (30+ narzędzi), najdłuższym wsparciem Android (do A19) i zintegrowanym skanerem SE55 (1D/2D, zasięg 12 m). NOWOŚĆ: ET401 z IP68, Wi-Fi 7, opcjonalnym RFID UHF i modułem NPU do AI edge. Wszystkie tablety z Hot Swap baterii (zero downtime), trybem rękawicowym i deszczowym oraz certyfikatem MIL-STD-810H. TAKMA jako autoryzowany Premier Solution Partner Zebra oferuje pełne wsparcie: dobór tabletu, konfigurację MDM (SOTI, Airwatch, StageNow), staging flotowy, montaż na pojazdach oraz serwis gwarancyjny i pogwarancyjny (serwis-zebry.pl).',
+    faq: [
+      { question: 'Jaki jest najtańszy tablet Zebra?', answer: 'Najtańszy tablet Zebra to ET40 w wersji 8-calowej z Wi-Fi — cena od ~3 250 zł netto. To kompaktowy tablet z Androidem, IP65, upadki z 1,2 m, skaner SE4710 i Mobility DNA. Idealny do retail, lekkiego magazynu i inwentaryzacji. Wersja 10-calowa jest o ~200 zł droższa.' },
+      { question: 'Czym różni się ET40 od ET45?', answer: 'ET40 ma łączność Wi-Fi 6E + Bluetooth 5.2. ET45 dodaje modem 5G/4G LTE — to jedyna różnica. Oba modele mają identyczną obudowę, ekran, procesor i certyfikaty. Jeśli pracujesz w zasięgu Wi-Fi (magazyn, sklep, szpital), ET40 wystarczy. Jeśli potrzebujesz łączności poza Wi-Fi (teren, transport, inspekcje), wybierz ET45 z 5G.' },
+      { question: 'Który tablet Zebra do chłodni i mroźni?', answer: 'Do chłodni (-20°C do -30°C) jedynym wyborem jest Zebra ET60 (Wi-Fi) lub ET65 (5G). Mają podgrzewany ekran Gorilla Glass, pracują w temperaturze od -30°C do +50°C, IP66, upadki z 1,2 m na beton. Ekran 1000 nit widoczny nawet przy zamgleniu. ET40/ET45 pracują od -10°C — nie nadają się do mroźni.' },
+      { question: 'Czy tablety Zebra mają Hot Swap baterii?', answer: 'Tak — wszystkie tablety Zebra serii ET obsługują Hot Swap baterii. Możesz wymienić rozładowaną baterię na naładowaną bez wyłączania tabletu i utraty sesji aplikacji (wbudowana bateria podtrzymująca utrzymuje zasilanie przez ~60 sekund). To eliminuje przestoje na ładowanie i jest kluczowe w operacjach 24/7.' },
+      { question: 'Czy tablet Zebra może zastąpić terminal mobilny?', answer: 'W wielu scenariuszach tak. Tablety Zebra ET40/ET45 mają ten sam skaner SE4710/SE55, ten sam system Android z Mobility DNA i te same certyfikaty IP65. Przewaga tabletu: większy ekran do wyświetlania map magazynowych, list kompletacyjnych i zdjęć produktów. Przewaga terminala: kompaktowość, pistoletowy uchwyt do intensywnego skanowania (1000+ skanów/zmianę) i wytrzymałość (IP67/IP68 w MC9400).' },
+      { question: 'Jakie akcesoria są dostępne do tabletów Zebra?', answer: 'Pełen ekosystem: uchwyty do wózków widłowych i pojazdów, stacje dokujące 1- i 5-gniazdowe, klawiatury odpinane (ET80), uchwyty ręczne z paskiem, rysiki aktywne, etui ze zintegrowanym skanerem kodów kreskowych, moduły RFID UHF, czytniki paszportów, podstawki biurkowe. Wszystkie akcesoria w ofercie TAKMA z dostawą 24–48h.' },
+      { question: 'Jakie są alternatywy dla tabletów Zebra?', answer: 'Główne alternatywy: Getac (F110, T800 — fully rugged, Windows, popularne w wojsku i służbach), Honeywell (RT10A, EDA10A — Android, integracja z Velocity), Panasonic/Toughbook (FZ-G2 — premium Windows, najwyższy IP), Samsung Galaxy Tab Active (budżetowa opcja, krótsze wsparcie). Zebra wyróżnia się Mobility DNA (30+ narzędzi w cenie), najdłuższym wsparciem Android (do A19) i integracją z drukarkami/skanerami Zebra w jednym ekosystemie.' },
     ],
   },
 ]
