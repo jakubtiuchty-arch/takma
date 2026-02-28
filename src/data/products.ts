@@ -854,20 +854,6 @@ export const subcategories: Subcategory[] = [
     productIds: ['zebra-ds9908', 'zebra-ds9308'],
     productCount: 2,
   },
-  // --- Podkategorie: Tablety przemysłowe ---
-  {
-    id: 'tablety-zebra',
-    slug: 'tablety-zebra',
-    name: 'Tablety Zebra',
-    parentCategoryId: 'tablety-przemyslowe',
-    description: 'Wytrzymałe tablety przemysłowe Zebra z Androidem i Windows — seria ET40, ET45, ET60, ET65, ET401, ET80 z IP65–IP68 i ekranami 8–12″.',
-    seoTitle: 'Tablety przemysłowe Zebra — ET40, ET45, ET60, ET65, ET401, ET80 | Rugged Android i Windows',
-    seoDescription: 'Tablety Zebra ET40/ET45 (8–10″, Android, IP65), ET60/ET65 (IP66, -30°C, 1000 nit), ET401 (IP68, Wi-Fi 7, RFID), ET80 (12″, Windows 11). Ceny od 3 250 zł netto. TAKMA — autoryzowany partner Zebra.',
-    longDescription: 'Tablety przemysłowe Zebra Technologies serii ET to pełne spektrum zastosowań korporacyjnych: od kompaktowego ET40 (8/10″, Android, IP65, od ~3 250 zł) przez wytrzymały ET60 (10″, IP66, podgrzewany ekran -30°C, 1000 nit) po profesjonalny ET80 (12″, Windows 11 Pro, 2-in-1). NOWOŚĆ 2025/2026: ET401 z IP68, Wi-Fi 7, opcjonalnym RFID UHF i AI-ready z NPU. Warianty 5G (ET45, ET65) do pracy w terenie bez Wi-Fi. Wszystkie tablety Zebra z ekosystemem Mobility DNA (30+ narzędzi), wsparciem Android do A17–A19, Hot Swap baterii i skanerem SE55 (zasięg do 12 m). TAKMA: doradztwo, konfiguracja MDM, staging flotowy, serwis (serwis-zebry.pl).',
-    icon: 'tablet',
-    productIds: [],
-    productCount: 0,
-  },
 ]
 
 // Producenci
