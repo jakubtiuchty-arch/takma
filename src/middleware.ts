@@ -46,6 +46,8 @@ export async function middleware(request: NextRequest) {
       'zebra-tc501', 'zebra-tc701', 'zebra-tc73', 'zebra-tc78',
       'datalogic-memor-11', 'datalogic-memor-12', 'datalogic-memor-17',
       'datalogic-memor-30', 'datalogic-memor-35', 'datalogic-skorpio-x5', 'datalogic-memor-k',
+      // Newland
+      'newland-n7-cachalot-pro-ii', 'newland-cdn7-c', 'newland-pgn7-01',
       // RFID — usunięte
       // Skanery
       'zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds8178', 'zebra-li2208',

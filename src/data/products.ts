@@ -27543,6 +27543,185 @@ const tabletAccessories: Product[] = [
 ]
 
 // ============================================
+// NEWLAND - TERMINALE MOBILNE
+// ============================================
+
+const newlandMobileComputers: Product[] = [
+  {
+    id: 'newland-n7-cachalot-pro-ii',
+    slug: 'newland-n7-cachalot-pro-ii',
+    name: 'Newland N7 Cachalot Pro II',
+    shortDescription: 'Terminal z klawiaturą fizyczną, skanerem Duo Near & Far i baterią hot-swap 5100 mAh',
+    description: `Dla kogo? Newland N7 Cachalot Pro II to terminal mobilny stworzony dla magazynów, logistyki i produkcji, gdzie liczy się szybkość wprowadzania danych, niezawodne skanowanie z różnych odległości i praca bez przerw na ładowanie. Sprawdzi się wszędzie tam, gdzie operatorzy potrzebują fizycznej klawiatury — w kompletacji zamówień WMS, inwentaryzacji, na liniach produkcyjnych i przy identyfikacji towarów w trudnych warunkach oświetleniowych.
+
+Co wyróżnia N7 Cachalot Pro II? Terminal wyposażony jest w unikalny skaner Duo Near & Far firmy Newland, który łączy dwa silniki skanowania 2D w jednym module — jeden do odczytu kodów z bliskiej odległości (etykiety na opakowaniach, półkach), drugi do skanowania z kilku metrów (kody na regałach wysokiego składowania). Przełączanie między silnikami odbywa się automatycznie, bez interwencji operatora, co znacząco przyspiesza pracę w magazynie.
+
+Bateria 5 100 mAh z funkcją hot-swap to kolejna kluczowa przewaga: wymiana rozładowanego ogniwa trwa kilka sekund, bez zamykania aplikacji i bez utraty połączenia Wi-Fi. W magazynach pracujących 24/7 oznacza to zero przestojów związanych z ładowaniem. Fizyczna klawiatura dostępna jest w trzech wariantach: 29, 38 lub 47 klawiszy — każda z podświetleniem LED do pracy w słabo oświetlonych strefach.
+
+Ekran 4" IPS WVGA (480×800) ze szkłem Gorilla Glass 3 obsługuje dotyk w rękawiczkach i na mokrym ekranie. Norma IP65 i odporność na upadki z 1,8 m zapewniają niezawodne działanie w najtrudniejszych warunkach przemysłowych. Zakres temperatury pracy od -20°C do +55°C pozwala na pracę w chłodniach bez dodatkowego wyposażenia.
+
+System Android 11 z certyfikatem Google Android Enterprise Recommended (AER) gwarantuje aktualizacje bezpieczeństwa i kompatybilność z systemami MDM. Bezpłatny system Ndevor firmy Newland umożliwia zdalne zarządzanie flotą urządzeń. Szczegółowe informacje techniczne, instrukcje obsługi oraz narzędzia deweloperskie dostępne są w oficjalnej dokumentacji Newland AIDC na stronie newland-id.com.`,
+    categoryId: 'terminale-mobilne',
+    manufacturerId: 'newland',
+    subcategoryIds: [],
+    tags: ['magazyn', 'logistyka', 'produkcja', 'outdoor'],
+    images: [
+      '/images/products/N7-AER-7KJF-N_1.png',
+      '/images/products/N7-AER-7KJF-N_2.png',
+      '/images/products/N7-AER-7KJF-N_3.png',
+    ],
+    imageDescriptions: [
+      'Newland N7 Cachalot Pro II — widok z przodu, ekran 4 cale i klawiatura 29-klawiszowa',
+      'Newland N7 Cachalot Pro II — widok z tyłu, aparat 13 MP i okno skanera Duo Near & Far',
+      'Newland N7 Cachalot Pro II — widok z boku, profil z baterią hot-swap 5100 mAh',
+    ],
+    isBestseller: false,
+    seoTitle: 'Newland N7 Cachalot Pro II — terminal z klawiaturą i Duo Near & Far | TAKMA',
+    seoDescription: 'Terminal Newland N7 Cachalot Pro II: klawiatura 29/38/47 kl., skaner Duo Near & Far, hot-swap 5100 mAh, IP65, Android 11 AER, -20°C. Dla magazynu i produkcji. Cena netto — TAKMA.',
+    specifications: [
+      { name: 'System', value: 'Android 11 GMS, Android Enterprise Recommended (AER)' },
+      { name: 'Procesor', value: 'Ośmiordzeniowy (octa-core) 2,0 GHz' },
+      { name: 'Pamięć RAM', value: '3 GB / 4 GB (zależnie od wariantu)' },
+      { name: 'Pamięć Flash', value: '32 GB / 64 GB (zależnie od wariantu)' },
+      { name: 'Rozszerzenie pamięci', value: 'MicroSD/TF do 128 GB' },
+      { name: 'Ekran', value: '4,0" IPS WVGA 480×800, Gorilla Glass 3, 480 nit' },
+      { name: 'Ekran dotykowy', value: 'Pojemnościowy, obsługa w rękawiczkach i na mokrym ekranie' },
+      { name: 'Skaner', value: '2D CMOS 1280×800, 60 klatek/s, celownik laserowy' },
+      { name: 'Technologia skanowania', value: 'Duo Near & Far — dwa silniki 2D, auto-przełączanie bliski/daleki dystans' },
+      { name: 'Klawiatura', value: '29, 38 lub 47 klawiszy z podświetleniem LED' },
+      { name: 'Bateria', value: '3,8 V, 5 100 mAh Li-Ion, wymienna hot-swap' },
+      { name: 'Czas pracy', value: 'Ponad 15 godzin ciągłej pracy' },
+      { name: 'Ładowanie', value: 'USB-C Quick Charge' },
+      { name: 'Wi-Fi', value: '802.11 a/b/g/n/ac dual-band (2,4 + 5 GHz)' },
+      { name: 'Bluetooth', value: '5.0 BLE' },
+      { name: 'NFC', value: '13,56 MHz, ISO14443A/B, MIFARE, Felica' },
+      { name: 'GPS', value: 'GPS (AGPS), GLONASS, Galileo, BeiDou' },
+      { name: 'Łączność komórkowa', value: '4G LTE (zależnie od wariantu)' },
+      { name: 'Aparat', value: '13 MP PDAF z latarką LED' },
+      { name: 'Klasa szczelności', value: 'IP65' },
+      { name: 'Odporność na upadki', value: '1,8 m na beton (MIL-STD-810H)' },
+      { name: 'Temperatura pracy', value: '-20°C do +55°C' },
+      { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
+      { name: 'Wymiary', value: '200 × 70 × 29 mm (uchwyt pistoletowy 58 mm)' },
+      { name: 'Waga', value: '~360 g (z baterią)' },
+      { name: 'Interfejs', value: 'USB Type-C' },
+      { name: 'MDM', value: 'Ndevor (bezpłatny), SOTI, VMware, Intune, Android Zero-Touch' },
+    ],
+    applications: [
+      'Kompletacja zamówień w magazynach WMS',
+      'Inwentaryzacja roczna i ciągła',
+      'Produkcja — śledzenie partii, kontrola jakości',
+      'Logistyka — skanowanie przesyłek, cross-docking',
+      'Praca w chłodniach (do -20°C)',
+      'Retail — weryfikacja cen, przyjęcie towaru',
+    ],
+    availability: 'unavailable',
+    isNew: true,
+    variants: [
+      {
+        partNumber: 'N7-AER-7KJF-N',
+        name: 'N7 Cachalot Pro II — 29 klawiszy, Wi-Fi',
+        attributes: {
+          'Klawiatura': '29 klawiszy',
+          'RAM / Flash': '3 GB / 32 GB',
+        },
+        availability: 'unavailable',
+      },
+      {
+        partNumber: 'N7-AER-7KJF-F',
+        name: 'N7 Cachalot Pro II — 38 klawiszy, Wi-Fi',
+        attributes: {
+          'Klawiatura': '38 klawiszy',
+          'RAM / Flash': '3 GB / 32 GB',
+        },
+        availability: 'unavailable',
+      },
+      {
+        partNumber: 'N7-AER-7HJG-N',
+        name: 'N7 Cachalot Pro II — 29 klawiszy, 4G LTE, 4/64 GB',
+        attributes: {
+          'Klawiatura': '29 klawiszy',
+          '4G LTE': 'Tak',
+          'RAM / Flash': '4 GB / 64 GB',
+        },
+        availability: 'unavailable',
+      },
+    ],
+    relatedAccessories: ['newland-cdn7-c', 'newland-pgn7-01'],
+    compatibleAccessories: [],
+    faq: [
+      { question: 'Czym jest skaner Duo Near & Far w N7 Cachalot Pro II?', answer: 'Duo Near & Far to unikalna technologia Newland łącząca dwa silniki skanowania 2D w jednym module. Jeden silnik odczytuje kody z kilku centymetrów (etykiety na opakowaniach), drugi z kilku metrów (kody na regałach wysokiego składowania). Urządzenie przełącza się automatycznie — operator nie musi zmieniać trybu. To kluczowa przewaga w magazynach z regałami od podłogi do sufitu.' },
+      { question: 'Czy bateria hot-swap oznacza wymianę bez wyłączania terminala?', answer: 'Tak. Funkcja hot-swap pozwala wyjąć rozładowaną baterię 5 100 mAh i włożyć naładowaną bez zamykania systemu Android i bez utraty połączenia Wi-Fi. Terminal przez kilka sekund zasilany jest z kondensatora buforowego. To eliminuje przestoje w magazynach pracujących 24/7 na zmiany.' },
+      { question: 'Jaki wariant klawiatury wybrać: 29, 38 czy 47 klawiszy?', answer: '29 klawiszy (wariant N7-AER-7KJF-N) — cyfry i podstawowe funkcje, wystarczający do kompletacji i inwentaryzacji. 38 klawiszy (N7-AER-7KJF-F) — dodatkowe klawisze funkcyjne, przydatne w rozbudowanych aplikacjach WMS. 47 klawiszy — pełna alfanumeryczna, do intensywnego ręcznego wpisywania danych (numery partii, kody lokalizacji). Każda wersja ma podświetlenie LED.' },
+      { question: 'Czy N7 Cachalot Pro II sprawdzi się w chłodni lub mroźni?', answer: 'Tak — terminal pracuje w temperaturze od -20°C do +55°C, co obejmuje większość chłodni. Norma IP65 chroni przed wilgocią kondensacyjną. Do mroźni głębokich (-30°C i niżej) rekomendujemy [Zebra MC9400](/produkt/zebra-mc9400) z dedykowaną baterią freezer.' },
+      { question: 'Jaki jest czas pracy baterii N7 Cachalot Pro II?', answer: 'Producent deklaruje ponad 15 godzin ciągłej pracy na baterii 5 100 mAh. Przy typowej pracy magazynowej (skanowanie, Wi-Fi, jasność 50%) wystarcza na pełną 8- lub 12-godzinną zmianę. Bateria wymienna hot-swap — przy pracy zmianowej 24/7 wystarczą 2 baterie na terminal i stacja ładowania.' },
+      { question: 'Czy N7 Cachalot Pro II współpracuje z systemami WMS?', answer: 'Tak — Android 11 z certyfikatem AER (Android Enterprise Recommended) gwarantuje kompatybilność z systemami WMS: Comarch WMS, SAP Mobile, Microsoft Dynamics, Simple WMS, Qguar. Aplikacje instalowane z Google Play lub przez MDM Ndevor. Newland SDK umożliwia integrację skanera z aplikacjami custom (Java/Kotlin).' },
+      { question: 'Jak zarządzać flotą terminali N7 — jaki MDM?', answer: 'Newland oferuje bezpłatny system MDM Ndevor (ndevor.newlandaidc.com) — masowa instalacja aplikacji, śledzenie GPS, zdalne czyszczenie danych. Alternatywnie: SOTI MobiControl, VMware Workspace ONE, Microsoft Intune. Terminal wspiera Android Zero-Touch Enrollment do masowych wdrożeń bez ręcznej konfiguracji.' },
+      { question: 'Newland N7 Cachalot Pro II vs Zebra MC3400 — co wybrać?', answer: 'N7 Cachalot Pro II: klawiatura 29/38/47 kl., Duo Near & Far, hot-swap 5 100 mAh, IP65, 1,8 m upadki, Android 11, 3 lata wsparcia, Ndevor bezpłatny. [Zebra MC3400](/produkt/zebra-mc3400) (od 4 561 zł): SE55/SE58 (do 30 m!), hot-swap 7 000 mAh, IP65/IP67, 2,4 m upadki, Android 14 do v18, Mobility DNA. MC3400 jest droższa, ale oferuje dłuższe wsparcie, wyższą wytrzymałość i zasięg skanera do 30 m.' },
+      { question: 'Jakie kody kreskowe czyta N7 Cachalot Pro II?', answer: 'Wszystkie popularne kody 1D (Code 128, Code 39, EAN-8/13, UPC-A/E, Interleaved 2 of 5) i 2D (QR Code, Data Matrix, PDF417, Aztec, MaxiCode). Czujnik CMOS 1280×800, 60 klatek/s, celownik laserowy. Wersja Duo Near & Far skanuje kody słabo kontrastowe i uszkodzone z większych odległości.' },
+      { question: 'Jakie są alternatywy dla Newland N7 Cachalot Pro II?', answer: 'Terminale z klawiaturą fizyczną w zbliżonej cenie: [Zebra MC3400](/produkt/zebra-mc3400) (od 4 561 zł — dłuższe wsparcie, Mobility DNA, zasięg skanera 30 m), [Datalogic Skorpio X5](/produkt/datalogic-skorpio-x5) (~6 490 zł — IP65, 5 lat wsparcia), [Zebra MC2700](/produkt/zebra-mc2700) (od 2 670 zł — tańszy, ale bez hot-swap i mniejszy ekran). N7 wygrywa stosunkiem ceny do możliwości, szczególnie w wersji Duo Near & Far z hot-swap baterią.' },
+    ],
+    downloads: [],
+    createdAt: '2026-02-28',
+  },
+]
+
+// Akcesoria Newland N7
+const newlandN7Accessories: Product[] = [
+  {
+    id: 'newland-cdn7-c',
+    slug: 'newland-cdn7-c',
+    name: 'Newland CDN7-C — stacja dokująca do N7 Cachalot Pro II',
+    shortDescription: 'Stacja dokująca 1-gniazdowa z komunikacją i ładowaniem baterii zapasowej',
+    description: 'Stacja dokująca Newland CDN7-C do terminala N7 Cachalot Pro II. Umożliwia jednoczesne ładowanie terminala i zapasowej baterii. Komunikacja USB i Ethernet do synchronizacji danych i aktualizacji oprogramowania. Kompaktowa konstrukcja na biurko lub stanowisko magazynowe.',
+    categoryId: 'terminale-mobilne',
+    manufacturerId: 'newland',
+    tags: ['magazyn'],
+    images: [],
+    imageDescriptions: [],
+    seoTitle: 'Newland CDN7-C — stacja dokująca do N7 Cachalot Pro II | TAKMA',
+    seoDescription: 'Stacja dokująca Newland CDN7-C do terminala N7 Cachalot Pro II. Ładowanie terminala + baterii zapasowej, USB i Ethernet. Zamów w TAKMA.',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Kompatybilność', value: 'Newland N7 Cachalot Pro II' },
+      { name: 'Typ', value: 'Stacja dokująca 1-gniazdowa z komunikacją' },
+      { name: 'Ładowanie', value: 'Terminal + bateria zapasowa' },
+      { name: 'Interfejs', value: 'USB, Ethernet' },
+    ],
+    applications: ['Ładowanie terminala N7 i baterii zapasowej', 'Synchronizacja danych USB/Ethernet'],
+    availability: 'unavailable',
+    compatibleAccessories: [], relatedAccessories: [], downloads: [], faq: [],
+    createdAt: '2026-02-28',
+  },
+  {
+    id: 'newland-pgn7-01',
+    slug: 'newland-pgn7-01',
+    name: 'Newland PGN7-01 — uchwyt pistoletowy do N7 Cachalot Pro II',
+    shortDescription: 'Uchwyt pistoletowy (gun grip) do ergonomicznego skanowania i pracy wielogodzinnej',
+    description: 'Uchwyt pistoletowy Newland PGN7-01 do terminala N7 Cachalot Pro II. Forma pistoletowa redukuje zmęczenie nadgarstka przy intensywnym skanowaniu (500+ skanów na zmianę). Ergonomiczny spust skanowania, pewny chwyt w rękawiczkach. Dedykowany do pracy w magazynach, logistyce i na liniach produkcyjnych.',
+    categoryId: 'terminale-mobilne',
+    manufacturerId: 'newland',
+    tags: ['magazyn', 'logistyka'],
+    images: [],
+    imageDescriptions: [],
+    seoTitle: 'Newland PGN7-01 — uchwyt pistoletowy do N7 Cachalot Pro II | TAKMA',
+    seoDescription: 'Uchwyt pistoletowy (gun grip) Newland PGN7-01 do terminala N7 Cachalot Pro II. Ergonomiczne skanowanie w magazynie. Zamów w TAKMA.',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Kompatybilność', value: 'Newland N7 Cachalot Pro II' },
+      { name: 'Typ', value: 'Uchwyt pistoletowy (gun grip)' },
+      { name: 'Materiał', value: 'Tworzywo sztuczne, wzmocnione' },
+    ],
+    applications: ['Ergonomiczne skanowanie w magazynie i logistyce'],
+    availability: 'unavailable',
+    compatibleAccessories: [], relatedAccessories: [], downloads: [], faq: [],
+    createdAt: '2026-02-28',
+  },
+]
+
+// ============================================
 // EXPORT - WSZYSTKIE PRODUKTY
 // ============================================
 
@@ -27582,6 +27761,8 @@ export const products: Product[] = [
   ...zebraTablets,
   ...tabletAccessories,
   ...et6xAccessories,
+  ...newlandMobileComputers,
+  ...newlandN7Accessories,
 ]
 
 // Helper do pobrania produktu po slug
