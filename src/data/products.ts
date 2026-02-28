@@ -25981,7 +25981,7 @@ Pakiet Mobility DNA w cenie urządzenia: StageNow, OEMConfig, Enterprise Browser
       'Zebra ET401 — widok z tyłu, kamera 16 MP, moduł Wi-Fi 7 i wymienna bateria',
     ],
     tags: ['magazyn', 'retail', 'produkcja', 'logistyka', 'healthcare'],
-    availability: 'available',
+    availability: 'on-order',
     isNew: true,
     isBestseller: false,
     specifications: [
@@ -26024,7 +26024,7 @@ Pakiet Mobility DNA w cenie urządzenia: StageNow, OEMConfig, Enterprise Browser
         partNumber: 'ET4010A-00101B0P-A6',
         name: 'ET401 8″ Wi-Fi, bez skanera, 6/64 GB',
         priceFrom: 2410,
-        availability: 'available',
+        availability: 'on-order',
         attributes: {
           'Ekran': '8 cali',
           'Pamięć': '6 GB / 64 GB',
@@ -26034,7 +26034,7 @@ Pakiet Mobility DNA w cenie urządzenia: StageNow, OEMConfig, Enterprise Browser
         partNumber: 'ET4010A-001C1B0P-A6',
         name: 'ET401 8″ Wi-Fi, SE4100, 6/64 GB',
         priceFrom: 2537,
-        availability: 'available',
+        availability: 'on-order',
         attributes: {
           'Ekran': '8 cali',
           'Skaner': 'SE4100',
@@ -26045,7 +26045,7 @@ Pakiet Mobility DNA w cenie urządzenia: StageNow, OEMConfig, Enterprise Browser
         partNumber: 'ET4010A-001C2B0P-A6',
         name: 'ET401 8″ Wi-Fi, SE4100, 8/128 GB',
         priceFrom: 3171,
-        availability: 'available',
+        availability: 'on-order',
         attributes: {
           'Ekran': '8 cali',
           'Skaner': 'SE4100',
@@ -26067,7 +26067,7 @@ Pakiet Mobility DNA w cenie urządzenia: StageNow, OEMConfig, Enterprise Browser
         partNumber: 'ET401EA-301P1B2P-A6',
         name: 'ET401 8″ 5G, SR500, 6/64 GB',
         priceFrom: 3044,
-        availability: 'available',
+        availability: 'on-order',
         attributes: {
           'Ekran': '8 cali',
           'Skaner': 'SR500',
@@ -26079,7 +26079,7 @@ Pakiet Mobility DNA w cenie urządzenia: StageNow, OEMConfig, Enterprise Browser
         partNumber: 'ET401EA-301P2B2P-A6',
         name: 'ET401 8″ 5G, SR500, 8/128 GB',
         priceFrom: 3501,
-        availability: 'available',
+        availability: 'on-order',
         attributes: {
           'Ekran': '8 cali',
           'Skaner': 'SR500',
@@ -26091,7 +26091,7 @@ Pakiet Mobility DNA w cenie urządzenia: StageNow, OEMConfig, Enterprise Browser
         partNumber: 'ET4010B-00101B0P-A6',
         name: 'ET401 10″ Wi-Fi, bez skanera, 6/64 GB',
         priceFrom: 2754,
-        availability: 'available',
+        availability: 'on-order',
         attributes: {
           'Ekran': '10 cali',
           'Pamięć': '6 GB / 64 GB',
@@ -26101,7 +26101,7 @@ Pakiet Mobility DNA w cenie urządzenia: StageNow, OEMConfig, Enterprise Browser
         partNumber: 'ET4010B-001C1B0P-A6',
         name: 'ET401 10″ Wi-Fi, SE4100, 6/64 GB',
         priceFrom: 2899,
-        availability: 'available',
+        availability: 'on-order',
         attributes: {
           'Ekran': '10 cali',
           'Skaner': 'SE4100',
@@ -26112,7 +26112,7 @@ Pakiet Mobility DNA w cenie urządzenia: StageNow, OEMConfig, Enterprise Browser
         partNumber: 'ET4010B-001C2B0P-A6',
         name: 'ET401 10″ Wi-Fi, SE4100, 8/128 GB',
         priceFrom: 3624,
-        availability: 'available',
+        availability: 'on-order',
         attributes: {
           'Ekran': '10 cali',
           'Skaner': 'SE4100',
@@ -26123,7 +26123,7 @@ Pakiet Mobility DNA w cenie urządzenia: StageNow, OEMConfig, Enterprise Browser
         partNumber: 'ET401EB-301P1B2P-A6',
         name: 'ET401 10″ 5G, SR500, 6/64 GB',
         priceFrom: 3479,
-        availability: 'available',
+        availability: 'on-order',
         attributes: {
           'Ekran': '10 cali',
           'Skaner': 'SR500',
@@ -26135,7 +26135,7 @@ Pakiet Mobility DNA w cenie urządzenia: StageNow, OEMConfig, Enterprise Browser
         partNumber: 'ET401EB-301P2B2P-A6',
         name: 'ET401 10″ 5G, SR500, 8/128 GB',
         priceFrom: 4001,
-        availability: 'available',
+        availability: 'on-order',
         attributes: {
           'Ekran': '10 cali',
           'Skaner': 'SR500',
