@@ -52,7 +52,7 @@ export async function middleware(request: NextRequest) {
       'zebra-ds3608-xr', 'zebra-ds3608-sr', 'zebra-ds3608-hd', 'zebra-ds3608-hp',
       'zebra-li3608-sr', 'zebra-li3608-er', 'zebra-ds3678-sr', 'zebra-ds3678-xr', 'zebra-ds3678-hd', 'zebra-ds3678-hp', 'zebra-ds2278', 'zebra-ds8288', 'zebra-ds4678', 'zebra-ds4678-dpe', 'zebra-ds9908', 'zebra-ds9308',
       // Tablety
-      'zebra-et401', 'zebra-et40',
+      'zebra-et401', 'zebra-et40', 'zebra-et45',
       // Oprogramowanie
       'zebra-cardstudio',
     ])
