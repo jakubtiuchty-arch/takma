@@ -116,7 +116,7 @@ const nextConfig = {
       { source: '/skanery-przewodowe', destination: '/skanery-kodow-kreskowych/przewodowe', permanent: true },
       { source: '/skanery-bezprzewodowe', destination: '/skanery-kodow-kreskowych/bezprzewodowe', permanent: true },
       { source: '/skanery-prezentacyjne', destination: '/skanery-kodow-kreskowych/prezentacyjne', permanent: true },
-      { source: '/kategoria/tablety-przemyslowe/:path*', destination: '/terminale-mobilne', permanent: true },
+      { source: '/kategoria/tablety-przemyslowe/:path*', destination: '/tablety-przemyslowe', permanent: true },
       { source: '/kategoria/oprogramowanie/:path*', destination: '/oprogramowanie', permanent: true },
       { source: '/kategoria/urzadzenia-fiskalne/:path*', destination: '/katalog', permanent: true },
       { source: '/kategoria/bez-kategorii/:path*', destination: '/katalog', permanent: true },
@@ -150,12 +150,12 @@ const nextConfig = {
       { source: '/branze/:path*', destination: '/katalog', permanent: true },
 
       // =====================================================
-      // ZEBRA TABLETY — brak na nowej stronie → kategoria
+      // ZEBRA TABLETY — stare WordPress URLe → nowe strony
       // =====================================================
-      { source: '/produkt/zebra-et40/:path*', destination: '/terminale-mobilne', permanent: true },
-      { source: '/produkt/zebra-et45/:path*', destination: '/terminale-mobilne', permanent: true },
-      { source: '/produkt/zebra-et60-2/:path*', destination: '/terminale-mobilne', permanent: true },
-      { source: '/produkt/zebra-xslate-l10/:path*', destination: '/terminale-mobilne', permanent: true },
+      { source: '/produkt/zebra-et40/:path*', destination: '/produkt/zebra-et40', permanent: true },
+      { source: '/produkt/zebra-et45/:path*', destination: '/tablety-przemyslowe', permanent: true },
+      { source: '/produkt/zebra-et60-2/:path*', destination: '/tablety-przemyslowe', permanent: true },
+      { source: '/produkt/zebra-xslate-l10/:path*', destination: '/tablety-przemyslowe', permanent: true },
 
       // =====================================================
       // CATCH-ALL: pozostałe stare produkty → strona przebudowa
