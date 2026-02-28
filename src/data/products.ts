@@ -194,7 +194,7 @@ export const categories: Category[] = [
     seoDescription: 'Tablety przemysłowe rugged od 3 250 zł netto: Zebra ET40/ET45/ET60/ET65/ET401/ET80, Getac F110/T800, Honeywell RT10A. IP65–IP68, ekrany 8–12″ 1000 nit, -30°C do +50°C. Porównanie modeli, TCO, doradztwo techniczne. TAKMA — autoryzowany partner.',
     longDescription: 'Tablety przemysłowe (rugged tablets) to mobilne komputery z hartowanym ekranem dotykowym, klasą ochrony IP65–IP68, odpornością na upadki z 1,2–1,8 m i certyfikatem MIL-STD-810H. W ofercie TAKMA tablety trzech wiodących producentów: Zebra Technologies (seria ET — ET40, ET45, ET60, ET65, ET401, ET80), Getac (F110, T800, UX10, ZX80) i Honeywell (RT10A, EDA10A). Systemy: Android 13–15 (AOSP i GMS) oraz Windows 11 Pro/IoT Enterprise. Ekrany od 8 do 12,2 cala z jasnością 500–1000 nit do pracy na słońcu, pojemnościowe z obsługą w rękawicach i w deszczu. Zastosowania: magazyny WMS, linie produkcyjne MES, chłodnie i mroźnie (-30°C z podgrzewanym ekranem), inspekcje terenowe, floty pojazdów, opieka zdrowotna (z dezynfekcją i certyfikatem medycznym). Opcje: czytniki kodów 1D/2D, RFID UHF, skanery paszportów, Hot Swap baterii, stacje dokujące do pojazdów, klawiatury odpinane. TAKMA jako autoryzowany partner oferuje doradztwo, konfigurację MDM, staging flotowy i serwis pogwarancyjny (serwis-zebry.pl).',
     icon: 'tablet',
-    productCount: 5,
+    productCount: 7,
   },
   {
     id: 'materialy-eksploatacyjne',
@@ -26688,28 +26688,6 @@ ET60 dostępny z Androidem 13 (aktualizacje do A16, LifeGuard for Android) i Win
           'Skaner': 'Brak',
         },
       },
-      {
-        name: 'ET60 Windows 11 Pro, 16/256 GB',
-        partNumber: 'ET60WW-0S5DPS00A0-00',
-        priceFrom: 11597,
-        availability: 'available',
-        attributes: {
-          'System': 'Windows 11 Pro',
-          'Skaner': 'Brak',
-          'RAM/Dysk': '16 GB / 256 GB SSD',
-        },
-      },
-      {
-        name: 'ET60 Windows 11 Pro, skaner 2D, 16/256 GB',
-        partNumber: 'ET60WW-0S5DPSK0A0-00',
-        priceFrom: 12684,
-        availability: 'on-order',
-        attributes: {
-          'System': 'Windows 11 Pro',
-          'Skaner': '2D imager',
-          'RAM/Dysk': '16 GB / 256 GB SSD',
-        },
-      },
     ],
     relatedAccessories: [
       'zebra-battery-et6xa-36wh',
@@ -26740,7 +26718,7 @@ ET60 dostępny z Androidem 13 (aktualizacje do A16, LifeGuard for Android) i Win
       },
       {
         question: 'Czy ET60 jest dostępny z Windows?',
-        answer: 'Tak — wariant ET60WW z procesorem Intel Core i5-1345U, 16 GB DDR5 i 256 GB SSD NVMe, Windows 11 Pro lub IoT Enterprise LTSC. Obsługuje oprogramowanie Windows-only: SAP GUI, AutoCAD, SCADA, Oracle Forms. Cena od 11 597 zł netto. Warianty Windows mają ten sam korpus IP66, ten sam ekran 1000 nit i te same akcesoria.',
+        answer: 'Tak — osobna wersja Zebra ET60 Windows (ET60WW) z procesorem Intel Core i5-1345U, 16 GB DDR5 i 256 GB SSD NVMe, Windows 11 Pro lub IoT Enterprise LTSC. Obsługuje oprogramowanie Windows-only: SAP GUI, AutoCAD, SCADA, Oracle Forms. Cena od 11 597 zł netto. Warianty Windows mają ten sam korpus IP66, ten sam ekran 1000 nit i te same akcesoria. Zobacz osobną stronę ET60 Windows: takma.com.pl/produkt/zebra-et60w.',
       },
       {
         question: 'Jak działa Hot Swap baterii w ET60?',
@@ -26868,28 +26846,6 @@ Tablet Zebra ET65 to wersja 5G serii ET6x — jeśli pracujesz wyłącznie w zas
           'Bateria': '8 920 mAh',
         },
       },
-      {
-        name: 'ET65 Windows 11 Pro 5G, 16/256 GB',
-        partNumber: 'ET65WW-ES5DPS00A0-00',
-        priceFrom: 13409,
-        availability: 'unavailable',
-        attributes: {
-          'System': 'Windows 11 Pro + 5G',
-          'Skaner': 'Brak',
-          'RAM/Dysk': '16 GB / 256 GB SSD',
-        },
-      },
-      {
-        name: 'ET65 Windows 11 Pro 5G, skaner 2D, 16/256 GB',
-        partNumber: 'ET65WW-ES5DPSK0A0-00',
-        priceFrom: 14497,
-        availability: 'unavailable',
-        attributes: {
-          'System': 'Windows 11 Pro + 5G',
-          'Skaner': '2D imager',
-          'RAM/Dysk': '16 GB / 256 GB SSD',
-        },
-      },
     ],
     relatedAccessories: [
       'zebra-battery-et6xa-36wh',
@@ -26941,6 +26897,293 @@ Tablet Zebra ET65 to wersja 5G serii ET6x — jeśli pracujesz wyłącznie w zas
       {
         question: 'Jakie są alternatywy dla tabletu Zebra ET65?',
         answer: 'Zebra ET60 — identyczny tablet bez 5G, od 6 346 zł (tańszy jeśli masz Wi-Fi). Zebra ET45 — lżejszy tablet 5G do standardowych warunków (IP65, do -10°C), od 3 040 zł. Getac F110 G7 5G — Windows, IP66, -29°C, od ~15 000 zł (2× droższy). Panasonic FZ-G2 5G — Windows, IP65, bez certyfikacji -30°C. Do mroźni z 5G: ET65 nie ma konkurencji w tej cenie.',
+      },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa ET60/ET65 (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Tablets/ET60-ET65/spec-sheet/et60-et65-spec-sheet-pl-pl.pdf', size: 'PDF' },
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-et65/instrukcja-po-polsku', size: 'Online' },
+    ],
+    createdAt: '2026-02-28',
+  },
+  {
+    id: 'zebra-et60w',
+    slug: 'zebra-et60w',
+    name: 'Zebra ET60 Windows',
+    seoTitle: 'Tablet Zebra ET60 Windows — Intel Core i5, 16 GB DDR5, IP66, do chłodni -30°C',
+    seoDescription: 'Tablet Zebra ET60 Windows — wytrzymały tablet przemysłowy 10″ z Windows 11 Pro, Intel Core i5, 16 GB DDR5, 256 GB SSD. IP66, -30°C, podgrzewany ekran 1000 nit, skaner 2D. Od 11 597 zł netto. Tablet przemysłowy Zebra ET60W. TAKMA — autoryzowany partner Zebra.',
+    shortDescription: 'Wytrzymały tablet przemysłowy Windows 11 Pro do chłodni -30°C — Intel Core i5, 16 GB DDR5, IP66, 1000 nit',
+    description: `Dla kogo? Tablet Zebra ET60 Windows to wytrzymały tablet przemysłowy z pełnym systemem Windows 11 Pro na platformie Intel Core i5, zaprojektowany do pracy w najtrudniejszych warunkach przemysłowych: mroźnie do -30°C, chłodnie, doki załadunkowe, montaż na wózkach widłowych. Dla firm, które potrzebują obsługi oprogramowania Windows-only: SAP GUI, AutoCAD, SCADA, Oracle Forms, systemy WMS działające wyłącznie pod Windows.
+
+Procesor Intel Core i5-1345U (10 rdzeni / 12 wątków), 16 GB DDR5 i 256 GB SSD NVMe — pełna wydajność komputera w obudowie wytrzymałego tabletu. Windows 11 Pro i IoT Enterprise LTSC z długoterminowym wsparciem aktualizacji bezpieczeństwa.
+
+Ekran 10,1 cala WUXGA (1920×1200) o jasności 1000 nit z podgrzewaniem w stacji dokującej pojazdu — nie zaparuje w mroźni. Tryb rękawicowy do pracy w grubych rękawicach mroźniczkych. Gorilla Glass. Klasa ochrony IP66, upadki z 1,5 m na beton (MIL-STD-810H), praca od -30°C do +50°C.
+
+Opcjonalny skaner 2D imager do odczytu kodów kreskowych — wariant ze skanerem (ET60WW-0S5DPSK0A0-00) eliminuje potrzebę zewnętrznego czytnika. Hot Swap baterii z superkondensatorem — wymiana w trakcie pracy.
+
+Tablet Zebra ET60 Windows dzieli obudowę i akcesoria z wersją Android (Zebra ET60). Wersja z 5G i Windows: Zebra ET65 Windows. Do standardowych magazynów z Windows: rozważ Zebra ET80. Szczegóły w dokumentacji Zebra: zebra.com/et60.`,
+    categoryId: 'tablety-przemyslowe',
+    subcategoryIds: ['tablety-przemyslowe'],
+    sameAs: 'https://www.zebra.com/us/en/products/tablets/et6x-series/et60.html',
+    manufacturerId: 'zebra',
+    priceFrom: 11597,
+    images: [
+      '/images/products/ET60AW-0SQAGN00A0-A6.png',
+      '/images/products/ET60AW-0SQAGN00A0-A6_2.png',
+      '/images/products/ET60AW-0SQAGN00A0-A6_3.png',
+      '/images/products/ET60AW-0SQAGN00A0-A6_4.png',
+      '/images/products/ET60AW-0SQAGN00A0-A6_5.png',
+      '/images/products/ET60AW-0SQAGN00A0-A6_6.png',
+    ],
+    imageDescriptions: [
+      'Zebra ET60 Windows — widok z przodu, ekran 10 cali z systemem Windows 11 Pro',
+      'Zebra ET60 Windows — widok pod kątem, wzmocniona obudowa IP66 z gumowymi narożnikami',
+      'Zebra ET60 Windows — tył tabletu, kamera 16 MP z lampą LED i logo Zebra',
+      'Zebra ET60 Windows — widok z boku, przyciski boczne i szczelina kart',
+      'Zebra ET60 Windows — w stacji dokującej pojazdu z podgrzewanym ekranem',
+      'Zebra ET60 Windows — widok z góry, wzmocnione rogi i port USB-C',
+    ],
+    tags: ['magazyn', 'logistyka', 'produkcja', 'outdoor'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'System operacyjny', value: 'Windows 11 Pro / IoT Enterprise LTSC' },
+      { name: 'Procesor', value: 'Intel Core i5-1345U, 10 rdzeni / 12 wątków, do 4,7 GHz' },
+      { name: 'Pamięć RAM', value: '16 GB DDR5' },
+      { name: 'Pamięć wewnętrzna', value: '256 GB SSD NVMe' },
+      { name: 'Wyświetlacz', value: '10,1″ WUXGA 1920×1200, 1000 nit, Gorilla Glass' },
+      { name: 'Podgrzewany ekran', value: 'Tak (w stacji dokującej pojazdu)' },
+      { name: 'Tryb dotykowy', value: 'Rękawicowy + mokry (deszcz, kondensacja)' },
+      { name: 'Skaner kodów', value: '2D imager (opcja — wariant ze skanerem)' },
+      { name: 'Łączność bezprzewodowa', value: 'Wi-Fi 6E (802.11ax), Bluetooth 5.2, NFC' },
+      { name: 'Kamera tylna', value: '16 MP z autofokusem i lampą LED' },
+      { name: 'Kamera przednia', value: '8 MP z prywatną zaślepką' },
+      { name: 'Klasa ochrony', value: 'IP66 (pyłoszczelny, odporny na strumienie wody)' },
+      { name: 'Odporność na upadki', value: '1,5 m na beton (MIL-STD-810H)' },
+      { name: 'Temperatura pracy', value: '-30°C do +50°C' },
+      { name: 'Bateria', value: '8 920 mAh Li-Ion, Hot Swap z superkondensatorem' },
+      { name: 'GPS', value: 'Nie (dostępny w ET65 Windows z 5G)' },
+      { name: 'Wymiary', value: '274 × 180 × 19,9 mm' },
+      { name: 'Waga', value: 'ok. 1 100 g (z baterią)' },
+      { name: 'Certyfikaty', value: 'MIL-STD-810H, FIPS 140-2' },
+      { name: 'Gwarancja', value: '36 miesięcy, opcja Zebra OneCare do 8 lat' },
+      { name: 'Part Number', value: 'ET60WW-0S5DPS00A0-00' },
+    ],
+    applications: [
+      'Mroźnie i chłodnie z Windows (-30°C) — SAP, WMS, SCADA',
+      'Wózki widłowe — stacja dokująca z podgrzewaniem ekranu i klawiaturą',
+      'Produkcja — kontrola jakości z oprogramowaniem Windows-only',
+      'Logistyka outdoor — praca na zewnątrz w ekstremalnych warunkach',
+      'Energetyka i utilities — inspekcje z AutoCAD, GIS, systemami SCADA',
+      'Magazyny zimne (cold chain) — zarządzanie łańcuchem chłodniczym z Windows',
+    ],
+    variants: [
+      {
+        name: 'ET60 Windows 11 Pro, bez skanera',
+        partNumber: 'ET60WW-0S5DPS00A0-00',
+        priceFrom: 11597,
+        availability: 'available',
+        attributes: {
+          'Skaner': 'Brak',
+        },
+      },
+      {
+        name: 'ET60 Windows 11 Pro, skaner 2D',
+        partNumber: 'ET60WW-0S5DPSK0A0-00',
+        priceFrom: 12684,
+        availability: 'on-order',
+        attributes: {
+          'Skaner': '2D imager',
+        },
+      },
+    ],
+    relatedAccessories: [
+      'zebra-battery-et6xw-36wh',
+      'zebra-battery-et6xw-72wh',
+      'zebra-charger-et6x-2slot',
+      'zebra-handle-et6x',
+      'zebra-keyboard-et6x-qwerty',
+      'zebra-keyboard-case-et6x',
+      'zebra-charger-usbc-45w-et6x',
+      'zebra-stylus-et6x',
+    ],
+    compatibleAccessories: [],
+    faq: [
+      {
+        question: 'Czym Zebra ET60 Windows różni się od wersji Android?',
+        answer: 'Tablet Zebra ET60 Windows ma procesor Intel Core i5-1345U (10 rdzeni, do 4,7 GHz), 16 GB DDR5 i 256 GB SSD NVMe — to pełna platforma x86 z Windows 11 Pro. Wersja Android ma Qualcomm QCM6490 z 8 GB RAM i 128 GB Flash. Obudowa, ekran, IP66, -30°C, akcesoria i stacje dokujące są identyczne. Wybierz Windows gdy potrzebujesz SAP GUI, AutoCAD, SCADA lub innego oprogramowania Windows-only.',
+      },
+      {
+        question: 'Czy ET60 Windows obsługuje oprogramowanie SAP i SCADA?',
+        answer: 'Tak — pełny system Windows 11 Pro z procesorem Intel Core i5 i 16 GB RAM obsługuje wszystkie aplikacje Windows x86/x64 bez emulacji: SAP GUI, SAP Business One, Oracle Forms, AutoCAD, systemy SCADA (Wonderware, WinCC), WMS (Manhattan, Blue Yonder), systemy GIS (ArcGIS). Wersja IoT Enterprise LTSC zapewnia długoterminowe wsparcie bez wymuszonej aktualizacji funkcji.',
+      },
+      {
+        question: 'Ile kosztuje Zebra ET60 Windows?',
+        answer: 'Ceny ET60 Windows netto (luty 2026): bez skanera 11 597 zł, ze skanerem 2D 12 684 zł. Do porównania: wersja Android od 6 346 zł. Różnica wynika z procesora Intel Core i5, 16 GB DDR5 i 256 GB SSD NVMe — to pełna platforma komputerowa w wytrzymałej obudowie.',
+      },
+      {
+        question: 'Czy ET60 Windows nadaje się do mroźni -30°C?',
+        answer: 'Tak — ET60 Windows ma identyczną obudowę jak wersja Android: IP66, certyfikacja do -30°C, podgrzewany ekran w stacji dokującej pojazdu, Gorilla Glass, tryb rękawicowy i mokry. Jedyna różnica to platforma wewnętrzna (Intel vs Qualcomm).',
+      },
+      {
+        question: 'Czy ET60 Windows można zamontować na wózku widłowym?',
+        answer: 'Tak — ET60 Windows korzysta z tych samych stacji dokujących i akcesoriów co wersja Android. Stacja dokująca pojazdu (vehicle dock) z podgrzewaniem ekranu, zasilanie DC z akumulatora wózka, opcjonalna klawiatura QWERTY montowana w doku. Zamienia tablet w pełną stację roboczą Windows na wózku widłowym.',
+      },
+      {
+        question: 'Jak działa Hot Swap baterii w ET60 Windows?',
+        answer: 'Identycznie jak w wersji Android — superkondensator utrzymuje system przez 30 sekund po wyjęciu baterii. Wymiana trwa 10 sekund. UWAGA: baterie ET60 Windows mają inne numery katalogowe niż Android (BTRY-ET6XW vs BTRY-ET6XA) — nie są zamienne między wersjami.',
+      },
+      {
+        question: 'Jaka jest gwarancja na ET60 Windows?',
+        answer: '36 miesięcy gwarancji standardowej. Opcja Zebra OneCare do 8 lat — naprawy, wymiana, wsparcie. TAKMA jako autoryzowany serwis Zebra wykonuje naprawy gwarancyjne i pogwarancyjne w Polsce: serwis-zebry.pl.',
+      },
+      {
+        question: 'Czy ET60 Windows jest dostępny z 5G?',
+        answer: 'Tak — wersja z 5G to Zebra ET65 Windows (ET65WW). Dodaje moduł 5G Sub-6/mmWave i GPS/GLONASS/Galileo. Cena od 13 409 zł netto. Wszystkie inne parametry identyczne.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Zebra ET60 Windows?',
+        answer: 'Getac F110 G7 — Windows 11, 11,6″, IP66, -29°C, od ~15 000 zł (droższy, większy). Panasonic Toughbook FZ-G2 — Windows, 10,1″, IP65 (niższe), brak podgrzewanego ekranu. Zebra ET80 — Windows 11, 12″, 2-in-1 z odpinaną klawiaturą, od ok. 12 400 zł. Wersja z Androidem: Zebra ET60 (od 6 346 zł).',
+      },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa ET60/ET65 (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Tablets/ET60-ET65/spec-sheet/et60-et65-spec-sheet-pl-pl.pdf', size: 'PDF' },
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-et60/instrukcja-po-polsku', size: 'Online' },
+    ],
+    createdAt: '2026-02-28',
+  },
+  {
+    id: 'zebra-et65w',
+    slug: 'zebra-et65w',
+    name: 'Zebra ET65 Windows',
+    seoTitle: 'Tablet Zebra ET65 Windows 5G — Intel Core i5, 16 GB DDR5, IP66, GPS, do chłodni -30°C',
+    seoDescription: 'Tablet Zebra ET65 Windows 5G — wytrzymały tablet przemysłowy 10″ z Windows 11 Pro, Intel Core i5, 5G/LTE, GPS, 16 GB DDR5, 256 GB SSD. IP66, -30°C, ekran 1000 nit. Od 13 409 zł netto. Tablet przemysłowy Zebra ET65W z 5G. TAKMA — autoryzowany partner Zebra.',
+    shortDescription: 'Wytrzymały tablet przemysłowy Windows 11 Pro + 5G do chłodni -30°C — Intel Core i5, GPS, IP66, 1000 nit',
+    description: `Dla kogo? Tablet Zebra ET65 Windows to wytrzymały tablet przemysłowy z Windows 11 Pro, łącznością 5G/LTE i GPS, zaprojektowany do pracy w ekstremalnych warunkach poza zasięgiem Wi-Fi. Dla firm pracujących w mroźniach, chłodniach, na dokach załadunkowych i w terenie, które potrzebują oprogramowania Windows-only z pełną łącznością komórkową: SAP GUI, AutoCAD, SCADA, systemy GIS i fleet management.
+
+Procesor Intel Core i5-1345U (10 rdzeni / 12 wątków), 16 GB DDR5 i 256 GB SSD NVMe. Modem 5G Sub-6/mmWave (Qualcomm X55) z GPS/GLONASS/Galileo/BeiDou — pełna nawigacja i łączność w terenie bez zależności od Wi-Fi.
+
+Ekran 10,1 cala WUXGA (1920×1200) o jasności 1000 nit z podgrzewaniem w stacji dokującej pojazdu. Tryb rękawicowy i mokry. Gorilla Glass. IP66, upadki z 1,5 m (MIL-STD-810H), praca od -30°C do +50°C.
+
+Opcjonalny skaner 2D imager. Hot Swap baterii z superkondensatorem — wymiana bez wyłączania. Identyczna obudowa i akcesoria jak ET60 Windows i wersje Android.
+
+Tablet Zebra ET65 Windows to wersja 5G tabletu ET60 Windows. Bez 5G: Zebra ET60 Windows. Z Androidem: Zebra ET65. Szczegóły: zebra.com/et60-et65.`,
+    categoryId: 'tablety-przemyslowe',
+    subcategoryIds: ['tablety-przemyslowe'],
+    sameAs: 'https://www.zebra.com/us/en/products/tablets/et6x-series/et65.html',
+    manufacturerId: 'zebra',
+    priceFrom: 13409,
+    images: [
+      '/images/products/ET65AW-ESQAGS00A0-A6.png',
+      '/images/products/ET65AW-ESQAGS00A0-A6_2.png',
+      '/images/products/ET65AW-ESQAGS00A0-A6_3.png',
+      '/images/products/ET65AW-ESQAGS00A0-A6_4.png',
+      '/images/products/ET65AW-ESQAGS00A0-A6_5.png',
+      '/images/products/ET65AW-ESQAGS00A0-A6_6.png',
+    ],
+    imageDescriptions: [
+      'Tablet Zebra ET65 Windows — widok z przodu, ekran 10 cali z Windows 11 Pro',
+      'Tablet Zebra ET65 Windows — widok pod kątem, wzmocniona obudowa IP66 z modułem 5G',
+      'Zebra ET65 Windows — tył tabletu, kamera 16 MP z lampą LED i logo Zebra',
+      'Zebra ET65 Windows — widok z boku, szczelina kart SIM/5G i przyciski',
+      'Zebra ET65 Windows — w stacji dokującej pojazdu z podgrzewanym ekranem',
+      'Zebra ET65 Windows — widok z góry, wzmocnione rogi i port USB-C',
+    ],
+    tags: ['magazyn', 'logistyka', 'outdoor', 'produkcja'],
+    availability: 'on-order',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'System operacyjny', value: 'Windows 11 Pro / IoT Enterprise LTSC' },
+      { name: 'Procesor', value: 'Intel Core i5-1345U, 10 rdzeni / 12 wątków, do 4,7 GHz' },
+      { name: 'Pamięć RAM', value: '16 GB DDR5' },
+      { name: 'Pamięć wewnętrzna', value: '256 GB SSD NVMe' },
+      { name: 'Wyświetlacz', value: '10,1″ WUXGA 1920×1200, 1000 nit, Gorilla Glass' },
+      { name: 'Podgrzewany ekran', value: 'Tak (w stacji dokującej pojazdu)' },
+      { name: 'Tryb dotykowy', value: 'Rękawicowy + mokry (deszcz, kondensacja)' },
+      { name: 'Skaner kodów', value: '2D imager (opcja — wariant ze skanerem)' },
+      { name: 'Łączność komórkowa', value: '5G Sub-6/mmWave (Qualcomm X55), 4G LTE' },
+      { name: 'GPS', value: 'GPS / GLONASS / Galileo / BeiDou (dual-band GNSS)' },
+      { name: 'Łączność bezprzewodowa', value: 'Wi-Fi 6E (802.11ax), Bluetooth 5.2, NFC' },
+      { name: 'Kamera tylna', value: '16 MP z autofokusem i lampą LED' },
+      { name: 'Kamera przednia', value: '8 MP z prywatną zaślepką' },
+      { name: 'Klasa ochrony', value: 'IP66 (pyłoszczelny, odporny na strumienie wody)' },
+      { name: 'Odporność na upadki', value: '1,5 m na beton (MIL-STD-810H)' },
+      { name: 'Temperatura pracy', value: '-30°C do +50°C' },
+      { name: 'Bateria', value: '8 920 mAh Li-Ion, Hot Swap z superkondensatorem' },
+      { name: 'Wymiary', value: '274 × 180 × 19,9 mm' },
+      { name: 'Waga', value: 'ok. 1 130 g (z baterią i modułem 5G)' },
+      { name: 'Certyfikaty', value: 'MIL-STD-810H, FIPS 140-2, PTCRB, GCF' },
+      { name: 'Gwarancja', value: '36 miesięcy, opcja Zebra OneCare do 8 lat' },
+      { name: 'Part Number', value: 'ET65WW-ES5DPS00A0-00' },
+    ],
+    applications: [
+      'Mroźnie i chłodnie z 5G + Windows — SAP, WMS poza zasięgiem Wi-Fi',
+      'Inspekcje terenowe — AutoCAD, GIS, SCADA z 5G i GPS',
+      'Logistyka cold chain — śledzenie przesyłek z 5G, GPS i Windows',
+      'Wózki widłowe w mroźniach — stacja dokująca z podgrzewaniem, Windows',
+      'Fleet management — nawigacja GPS + aplikacje Windows w terenie',
+      'Energetyka i utilities — inspekcje z pełnym oprogramowaniem Windows',
+    ],
+    variants: [
+      {
+        name: 'ET65 Windows 11 Pro 5G, bez skanera',
+        partNumber: 'ET65WW-ES5DPS00A0-00',
+        priceFrom: 13409,
+        availability: 'on-order',
+        attributes: {
+          'Skaner': 'Brak',
+        },
+      },
+      {
+        name: 'ET65 Windows 11 Pro 5G, skaner 2D',
+        partNumber: 'ET65WW-ES5DPSK0A0-00',
+        priceFrom: 14497,
+        availability: 'on-order',
+        attributes: {
+          'Skaner': '2D imager',
+        },
+      },
+    ],
+    relatedAccessories: [
+      'zebra-battery-et6xw-36wh',
+      'zebra-battery-et6xw-72wh',
+      'zebra-charger-et6x-2slot',
+      'zebra-handle-et6x',
+      'zebra-keyboard-et6x-qwerty',
+      'zebra-keyboard-case-et6x',
+      'zebra-charger-usbc-45w-et6x',
+      'zebra-stylus-et6x',
+    ],
+    compatibleAccessories: [],
+    faq: [
+      {
+        question: 'Czym Zebra ET65 Windows różni się od ET60 Windows?',
+        answer: 'Tablet Zebra ET65 Windows to wersja ET60 Windows z dodatkowym modułem 5G Sub-6/mmWave i GPS/GLONASS/Galileo/BeiDou. Reszta identyczna: Intel Core i5, 16 GB DDR5, 256 GB SSD, IP66, -30°C, ekran 1000 nit. ET65 Windows waży ok. 30 g więcej. Różnica w cenie: ok. 1 812 zł za moduł 5G.',
+      },
+      {
+        question: 'Czy ET65 Windows obsługuje oprogramowanie SAP i SCADA?',
+        answer: 'Tak — pełny Windows 11 Pro z Intel Core i5 i 16 GB DDR5 obsługuje wszystkie aplikacje x86/x64 bez emulacji: SAP GUI, SCADA (Wonderware, WinCC), AutoCAD, Oracle Forms, systemy WMS i GIS. 5G zapewnia łączność poza zasięgiem Wi-Fi, GPS umożliwia śledzenie lokalizacji.',
+      },
+      {
+        question: 'Ile kosztuje Zebra ET65 Windows?',
+        answer: 'Ceny ET65 Windows netto (luty 2026): bez skanera 13 409 zł, ze skanerem 2D 14 497 zł. Wersja bez 5G (ET60 Windows) od 11 597 zł. Różnica ok. 1 812 zł za moduł 5G i GPS.',
+      },
+      {
+        question: 'Czy ET65 Windows nadaje się do mroźni -30°C?',
+        answer: 'Tak — identyczna obudowa IP66, certyfikacja -30°C, podgrzewany ekran, Gorilla Glass, tryb rękawicowy i mokry. Moduł 5G zapewnia łączność w mroźniach, gdzie Wi-Fi może być zawodne ze względu na metalowe ściany i izolację.',
+      },
+      {
+        question: 'Czy ET65 Windows korzysta z tych samych akcesoriów co ET60?',
+        answer: 'Tak — ET65 Windows, ET60 Windows, ET60 Android i ET65 Android mają identyczną obudowę i gniazda. Stacje dokujące, uchwyty, egzoszkielety i klawiatury są kompatybilne. UWAGA: baterie Windows (BTRY-ET6XW) mają inne numery niż Android (BTRY-ET6XA).',
+      },
+      {
+        question: 'Jaka jest gwarancja na ET65 Windows?',
+        answer: '36 miesięcy gwarancji. Opcja Zebra OneCare do 8 lat. TAKMA: autoryzowany serwis Zebra — serwis-zebry.pl.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Zebra ET65 Windows?',
+        answer: 'Getac F110 G7 z 4G LTE — Windows, 11,6″, IP66, -29°C, od ~16 000 zł (droższy, bez 5G). Panasonic Toughbook G2 z 5G — Windows, IP65, bez -30°C. Zebra ET80 z 5G — Windows 12″, 2-in-1 z klawiaturą. Bez 5G: Zebra ET60 Windows (od 11 597 zł). Z Androidem: Zebra ET65 (od 7 279 zł).',
       },
     ],
     downloads: [
