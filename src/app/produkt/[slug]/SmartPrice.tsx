@@ -12,7 +12,7 @@ interface SmartPriceProps {
 /** Kategorie urządzeń — tooltip "oferta projektowa" wyświetlany tylko dla nich */
 const DEVICE_CATEGORIES = new Set([
   'drukarki-etykiet', 'drukarki-kart', 'drukarki-opasek',
-  'terminale-mobilne', 'skanery-kodow-kreskowych', 'tablety',
+  'terminale-mobilne', 'skanery-kodow-kreskowych', 'tablety-przemyslowe',
 ])
 
 /**
