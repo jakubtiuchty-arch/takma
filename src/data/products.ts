@@ -11279,14 +11279,14 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
     manufacturerId: 'zebra',
     priceFrom: 1169,
     images: [
-      '/images/products/zebra-ds9908.png',
-      '/images/products/zebra-ds9908-2.png',
       '/images/products/zebra-ds9908-3.png',
+      '/images/products/zebra-ds9908-2.png',
+      '/images/products/zebra-ds9908.png',
     ],
     imageDescriptions: [
-      'Zebra DS9908 — widok z przodu, kompaktowa obudowa prezentacyjna z oknem skanera 2D',
-      'Zebra DS9908 — widok pod kątem, tryb ręczny z ergonomicznym uchwytem',
       'Zebra DS9908 — widok z boku, profil obudowy z podstawką Intellistand',
+      'Zebra DS9908 — widok pod kątem, tryb ręczny z ergonomicznym uchwytem',
+      'Zebra DS9908 — widok z przodu, kompaktowa obudowa prezentacyjna z oknem skanera 2D',
     ],
     tags: ['retail', 'healthcare'] as ProductTag[],
     availability: 'available',
@@ -11391,6 +11391,7 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
         {
           name: 'DS9908',
           slug: 'zebra-ds9908',
+          highlight: true,
           specs: {
             'Typ': 'Prezentacyjny hybrydowy',
             'Tryb hands-free': 'Natywny',
