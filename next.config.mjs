@@ -151,8 +151,8 @@ const nextConfig = {
 
       // =====================================================
       // ZEBRA TABLETY — stare WordPress URLe → nowe strony
+      // (ET40 ma własną stronę — nie potrzebuje redirectu)
       // =====================================================
-      { source: '/produkt/zebra-et40/:path*', destination: '/produkt/zebra-et40', permanent: true },
       { source: '/produkt/zebra-et45/:path*', destination: '/tablety-przemyslowe', permanent: true },
       { source: '/produkt/zebra-et60-2/:path*', destination: '/tablety-przemyslowe', permanent: true },
       { source: '/produkt/zebra-xslate-l10/:path*', destination: '/tablety-przemyslowe', permanent: true },
