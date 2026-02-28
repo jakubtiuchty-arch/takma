@@ -154,38 +154,80 @@ export default function GuidePage({ guide }: GuidePageProps) {
       {itemListJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />}
 
       <div className="bg-white">
-        {/* Breadcrumbs */}
-        <nav className="container-main pt-4 pb-2" aria-label="Breadcrumb">
-          <ol className="flex items-center gap-1.5 text-sm text-gray-500 flex-wrap">
-            <li><Link href="/" className="hover:text-primary-600 transition-colors">Strona główna</Link></li>
-            <li><ChevronRightIcon size={14} className="text-gray-400" /></li>
-            <li><Link href="/poradnik" className="hover:text-primary-600 transition-colors">Poradniki</Link></li>
-            <li><ChevronRightIcon size={14} className="text-gray-400" /></li>
-            <li className="text-gray-900 font-medium truncate max-w-[300px]">{guide.title}</li>
-          </ol>
-        </nav>
-
-        {/* Header */}
-        <header className="container-main pt-6 pb-8 border-b border-gray-100">
-          <div className="max-w-4xl">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-primary-100 text-primary-700">
-                {guideCategoryLabels[guide.category]}
-              </span>
-              <span className="text-sm text-gray-500">{guide.readTime} czytania</span>
-              <span className="text-sm text-gray-400">|</span>
-              <time className="text-sm text-gray-500" dateTime={guide.updatedAt}>
-                Aktualizacja: {new Date(guide.updatedAt).toLocaleDateString('pl-PL', { year: 'numeric', month: 'long', day: 'numeric' })}
-              </time>
+        {guide.heroImage ? (
+          <>
+            {/* Hero with background image */}
+            <div
+              className="relative bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: `url(${guide.heroImage})` }}
+            >
+              <div className="bg-black/40">
+                <nav className="container-main pt-4 pb-2" aria-label="Breadcrumb">
+                  <ol className="flex items-center gap-1.5 text-sm text-white/70 flex-wrap">
+                    <li><Link href="/" className="hover:text-white transition-colors">Strona główna</Link></li>
+                    <li><ChevronRightIcon size={14} className="text-white/40" /></li>
+                    <li><Link href="/poradnik" className="hover:text-white transition-colors">Poradniki</Link></li>
+                    <li><ChevronRightIcon size={14} className="text-white/40" /></li>
+                    <li className="text-white font-medium truncate max-w-[300px]">{guide.title}</li>
+                  </ol>
+                </nav>
+                <header className="container-main pt-6 pb-12">
+                  <div className="max-w-4xl">
+                    <div className="flex items-center gap-3 mb-4">
+                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-white/20 text-white backdrop-blur-sm">
+                        {guideCategoryLabels[guide.category]}
+                      </span>
+                      <span className="text-sm text-white/70">{guide.readTime} czytania</span>
+                      <span className="text-sm text-white/40">|</span>
+                      <time className="text-sm text-white/70" dateTime={guide.updatedAt}>
+                        Aktualizacja: {new Date(guide.updatedAt).toLocaleDateString('pl-PL', { year: 'numeric', month: 'long', day: 'numeric' })}
+                      </time>
+                    </div>
+                    <h1 className="text-3xl lg:text-4xl font-bold text-white leading-tight">
+                      {guide.title}
+                    </h1>
+                    <p className="mt-4 text-lg text-white/80 leading-relaxed">
+                      {guide.excerpt}
+                    </p>
+                  </div>
+                </header>
+              </div>
             </div>
-            <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-              {guide.title}
-            </h1>
-            <p className="mt-4 text-lg text-gray-600 leading-relaxed">
-              {guide.excerpt}
-            </p>
-          </div>
-        </header>
+          </>
+        ) : (
+          <>
+            {/* Default header without hero */}
+            <nav className="container-main pt-4 pb-2" aria-label="Breadcrumb">
+              <ol className="flex items-center gap-1.5 text-sm text-gray-500 flex-wrap">
+                <li><Link href="/" className="hover:text-primary-600 transition-colors">Strona główna</Link></li>
+                <li><ChevronRightIcon size={14} className="text-gray-400" /></li>
+                <li><Link href="/poradnik" className="hover:text-primary-600 transition-colors">Poradniki</Link></li>
+                <li><ChevronRightIcon size={14} className="text-gray-400" /></li>
+                <li className="text-gray-900 font-medium truncate max-w-[300px]">{guide.title}</li>
+              </ol>
+            </nav>
+            <header className="container-main pt-6 pb-8 border-b border-gray-100">
+              <div className="max-w-4xl">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-primary-100 text-primary-700">
+                    {guideCategoryLabels[guide.category]}
+                  </span>
+                  <span className="text-sm text-gray-500">{guide.readTime} czytania</span>
+                  <span className="text-sm text-gray-400">|</span>
+                  <time className="text-sm text-gray-500" dateTime={guide.updatedAt}>
+                    Aktualizacja: {new Date(guide.updatedAt).toLocaleDateString('pl-PL', { year: 'numeric', month: 'long', day: 'numeric' })}
+                  </time>
+                </div>
+                <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                  {guide.title}
+                </h1>
+                <p className="mt-4 text-lg text-gray-600 leading-relaxed">
+                  {guide.excerpt}
+                </p>
+              </div>
+            </header>
+          </>
+        )}
 
         {/* Table of Contents + Content */}
         <div className="container-main py-8 lg:py-12">
