@@ -194,7 +194,7 @@ export const categories: Category[] = [
     seoDescription: 'Tablety przemysłowe rugged od 3 250 zł netto: Zebra ET40/ET45/ET60/ET65/ET401/ET80, Getac F110/T800, Honeywell RT10A. IP65–IP68, ekrany 8–12″ 1000 nit, -30°C do +50°C. Porównanie modeli, TCO, doradztwo techniczne. TAKMA — autoryzowany partner.',
     longDescription: 'Tablety przemysłowe (rugged tablets) to mobilne komputery z hartowanym ekranem dotykowym, klasą ochrony IP65–IP68, odpornością na upadki z 1,2–1,8 m i certyfikatem MIL-STD-810H. W ofercie TAKMA tablety trzech wiodących producentów: Zebra Technologies (seria ET — ET40, ET45, ET60, ET65, ET401, ET80), Getac (F110, T800, UX10, ZX80) i Honeywell (RT10A, EDA10A). Systemy: Android 13–15 (AOSP i GMS) oraz Windows 11 Pro/IoT Enterprise. Ekrany od 8 do 12,2 cala z jasnością 500–1000 nit do pracy na słońcu, pojemnościowe z obsługą w rękawicach i w deszczu. Zastosowania: magazyny WMS, linie produkcyjne MES, chłodnie i mroźnie (-30°C z podgrzewanym ekranem), inspekcje terenowe, floty pojazdów, opieka zdrowotna (z dezynfekcją i certyfikatem medycznym). Opcje: czytniki kodów 1D/2D, RFID UHF, skanery paszportów, Hot Swap baterii, stacje dokujące do pojazdów, klawiatury odpinane. TAKMA jako autoryzowany partner oferuje doradztwo, konfigurację MDM, staging flotowy i serwis pogwarancyjny (serwis-zebry.pl).',
     icon: 'tablet',
-    productCount: 0,
+    productCount: 1,
   },
   {
     id: 'materialy-eksploatacyjne',
@@ -25945,6 +25945,258 @@ Kompatybilne z Windows 7/8/10/11. Obsługuje druk jedno- i dwustronny, kodowanie
 ]
 
 // ============================================
+// TABLETY PRZEMYSŁOWE ZEBRA
+// ============================================
+
+const zebraTablets: Product[] = [
+  {
+    id: 'zebra-et401',
+    slug: 'zebra-et401',
+    name: 'Zebra ET401',
+    seoTitle: 'Tablet przemysłowy Zebra ET401 — Wi-Fi 7, IP68, RFID UHF, Android 15',
+    seoDescription: 'Zebra ET401 — następca ET40. Wi-Fi 7, IP68, Qualcomm Dragonwing Q-6690, zintegrowany RFID UHF, Android 15→18. 8″ i 10″ od 2 410 zł netto. TAKMA — autoryzowany partner Zebra.',
+    shortDescription: 'Tablet przemysłowy nowej generacji — Wi-Fi 7, IP68, opcjonalny RFID UHF, Android 15→18',
+    description: `Dla kogo? Zebra ET401 to najnowsza generacja tabletu przemysłowego serii ET, zaprojektowana dla firm szukających wydajnego i wytrzymałego urządzenia do magazynu, produkcji, logistyki, retail, healthcare i pracy w terenie — z najdłuższym wsparciem Android na rynku (do A18, ~9 lat aktualizacji bezpieczeństwa).
+
+Następca bestsellerowej serii ET40/ET45 z procesorem Qualcomm Dragonwing Q-6690 (42% szybszym od poprzednika SM6375), pamięcią 6 lub 8 GB LPDDR5 i dyskiem 64/128 GB UFS. Wyświetlacz WUXGA 1920×1200 o jasności 600 nit z Corning Gorilla Glass 5 — czytelny w pełnym słońcu, z trybem mokrym i rękawicowym. Dostępny w rozmiarach 8 cali (480 g) i 10 cali (680 g).
+
+Konstrukcja IP68 (pyłoszczelna + zanurzenie), upadki z 1,2 m na beton (1,55 m z rugged boot), MIL-STD-810H, praca od -20°C do +50°C. Hot Swap baterii — wymiana w kilka sekund bez wyłączania tabletu i utraty sesji aplikacji. Tryb battery-free przez USB-C do instalacji stacjonarnych: kioski, wózki widłowe, stanowiska kontroli jakości.
+
+Wybierz skaner według potrzeb: SE4100 (imager 2D, standard) lub SR500 (imager 2D z żółtym celownikiem LED, wydłużony zasięg). NOWOŚĆ: opcjonalny zintegrowany moduł RFID UHF — odczyt ponad 90 tagów na sekundę w zasięgu do 1,2 m, bez potrzeby zewnętrznej przystawki RFD40/RFD90.
+
+Łączność Wi-Fi 7 (802.11be) tri-band 2,4/5/6 GHz z przepustowością do 5,8 Gbit/s, Bluetooth 6.0, NFC i opcjonalny modem 5G FR1 z dual SIM (nano + eSIM). Kamera 16 MP z tyłu (PDAF), opcjonalna ultra-wide 13 MP i 8 MP z przodu. Dual-band GNSS (GPS, GLONASS, Galileo, BeiDou).
+
+Pakiet Mobility DNA w cenie urządzenia: StageNow, OEMConfig, Enterprise Browser, LifeGuard (patche bezpieczeństwa do ~2034), PowerPrecision (analityka baterii), Device Tracker (lokalizacja zagubionego tabletu). Wsteczna kompatybilność z większością akcesoriów ET40/ET45 (stacje ładowania, uchwyty do wózków). Szczegółowa dokumentacja techniczna na zebra.com oraz instrukcja po polsku na [serwis-zebry.pl](https://www.serwis-zebry.pl/instrukcje/zebra-et401/instrukcja-po-polsku).`,
+    categoryId: 'tablety-przemyslowe',
+    subcategoryIds: ['tablety-przemyslowe'],
+    sameAs: 'https://www.zebra.com/us/en/products/tablets/et4x-series/et401.html',
+    manufacturerId: 'zebra',
+    priceFrom: 2410,
+    images: [
+      '/images/products/ET4010A-001C1B0P-A6.png',
+      '/images/products/ET4010A-001C1B0P-A6_2.png',
+    ],
+    imageDescriptions: [
+      'Zebra ET401 — widok z przodu, ekran 10 cali WUXGA z Gorilla Glass 5 i skaner SE4100',
+      'Zebra ET401 — widok z tyłu, kamera 16 MP, moduł Wi-Fi 7 i wymienna bateria',
+    ],
+    tags: ['magazyn', 'retail', 'produkcja', 'logistyka', 'healthcare'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'System operacyjny', value: 'Android 15 (aktualizacja do Android 18)' },
+      { name: 'Procesor', value: 'Qualcomm Dragonwing Q-6690, do 2.0 GHz' },
+      { name: 'Wyświetlacz 8″', value: '8.0" WUXGA 1920×1200, 600 nit, Gorilla Glass 5' },
+      { name: 'Wyświetlacz 10″', value: '10.1" WUXGA 1920×1200, 600 nit, Gorilla Glass 5' },
+      { name: 'Pamięć', value: '6 GB LPDDR5 / 64 GB UFS 2.2 lub 8 GB / 128 GB UFS 3.1 + microSD do 2 TB' },
+      { name: 'Skaner', value: 'SE4100 (standard 2D) lub SR500 (rozszerzony 2D) — opcja' },
+      { name: 'RFID', value: 'Opcjonalny zintegrowany UHF RFID (>90 tagów/s, zasięg 1,2 m)' },
+      { name: 'Kamera', value: '16 MP tylna PDAF + opcja 13 MP ultra-wide; 8 MP przednia' },
+      { name: 'Bateria 8″', value: '6 100 mAh (23,46 Wh), wymienna, Hot Swap' },
+      { name: 'Bateria 10″', value: '7 600 mAh (29,71 Wh), wymienna, Hot Swap' },
+      { name: 'Odporność', value: 'IP68, upadki z 1,2 m (1,55 m z rugged boot), MIL-STD-810H' },
+      { name: 'Łączność', value: 'Wi-Fi 7 (802.11be) tri-band, Bluetooth 6.0, NFC' },
+      { name: 'Łączność komórkowa', value: '5G FR1 + 4G/3G (opcja), dual SIM (nano + eSIM)' },
+      { name: 'GPS', value: 'Dual-band GNSS: GPS, GLONASS, Galileo, BeiDou' },
+      { name: 'Wymiary 8″', value: '212,7 × 134,4 × 11,4 mm' },
+      { name: 'Wymiary 10″', value: '256,1 × 162,7 × 11,4 mm' },
+      { name: 'Waga', value: '480 g (8″) / 680 g (10″)' },
+      { name: 'Temperatura pracy', value: '-20°C do +50°C' },
+      { name: 'Battery-free mode', value: 'Tak — zasilanie USB-C (kioski, wózki, pojazdy)' },
+    ],
+    applications: [
+      'Magazyn WMS — kompletacja, przyjęcia, wydania, inwentaryzacja',
+      'Linia produkcyjna — kontrola jakości, dokumentacja, MES/SCADA',
+      'Logistyka i transport — śledzenie przesyłek, POD, geolokalizacja',
+      'Retail — mobilny POS, asystent sprzedaży, weryfikator cen',
+      'Healthcare — identyfikacja pacjentów, EHR/EMR, e-recepty',
+      'Inwentaryzacja RFID — zintegrowany moduł UHF (opcja)',
+      'Kioski samoobsługowe i wózki widłowe (tryb battery-free)',
+      'Inspekcje terenowe i serwis field service (warianty 5G)',
+    ],
+    variantAttributeTooltips: {
+      'Skaner': 'SE4100 — imager 2D standardowego zasięgu, do skanowania na wyciągnięcie ręki (regał, lada, kompletacja).\n\nSR500 — imager 2D rozszerzonego zasięgu z żółtym celownikiem LED. Do skanowania z większej odległości i kodów gorzej widocznych.',
+      'Ekran': '8 cali — kompaktowy, do pracy w jednej ręce (retail, healthcare, inwentaryzacja). 480 g.\n\n10 cali — większa powierzchnia robocza do map WMS, list kompletacyjnych i zdjęć. 680 g.',
+    },
+    variants: [
+      {
+        partNumber: 'ET4010A-00101B0P-A6',
+        name: 'ET401 8″ Wi-Fi, bez skanera, 6/64 GB',
+        priceFrom: 2410,
+        availability: 'available',
+        attributes: {
+          'Ekran': '8 cali',
+          'Pamięć': '6 GB / 64 GB',
+        },
+      },
+      {
+        partNumber: 'ET4010A-001C1B0P-A6',
+        name: 'ET401 8″ Wi-Fi, SE4100, 6/64 GB',
+        priceFrom: 2537,
+        availability: 'available',
+        attributes: {
+          'Ekran': '8 cali',
+          'Skaner': 'SE4100',
+          'Pamięć': '6 GB / 64 GB',
+        },
+      },
+      {
+        partNumber: 'ET4010A-001C2B0P-A6',
+        name: 'ET401 8″ Wi-Fi, SE4100, 8/128 GB',
+        priceFrom: 3171,
+        availability: 'available',
+        attributes: {
+          'Ekran': '8 cali',
+          'Skaner': 'SE4100',
+          'Pamięć': '8 GB / 128 GB',
+        },
+      },
+      {
+        partNumber: 'ET401EA-3V101F2P-A6',
+        name: 'ET401 8″ 5G Essentials, bez skanera, 6/64 GB',
+        priceFrom: 2283,
+        availability: 'unavailable',
+        attributes: {
+          'Ekran': '8 cali',
+          'Pamięć': '6 GB / 64 GB',
+          '5G': 'Tak',
+        },
+      },
+      {
+        partNumber: 'ET401EA-301P1B2P-A6',
+        name: 'ET401 8″ 5G, SR500, 6/64 GB',
+        priceFrom: 3044,
+        availability: 'available',
+        attributes: {
+          'Ekran': '8 cali',
+          'Skaner': 'SR500',
+          'Pamięć': '6 GB / 64 GB',
+          '5G': 'Tak',
+        },
+      },
+      {
+        partNumber: 'ET401EA-301P2B2P-A6',
+        name: 'ET401 8″ 5G, SR500, 8/128 GB',
+        priceFrom: 3501,
+        availability: 'available',
+        attributes: {
+          'Ekran': '8 cali',
+          'Skaner': 'SR500',
+          'Pamięć': '8 GB / 128 GB',
+          '5G': 'Tak',
+        },
+      },
+      {
+        partNumber: 'ET4010B-00101B0P-A6',
+        name: 'ET401 10″ Wi-Fi, bez skanera, 6/64 GB',
+        priceFrom: 2754,
+        availability: 'available',
+        attributes: {
+          'Ekran': '10 cali',
+          'Pamięć': '6 GB / 64 GB',
+        },
+      },
+      {
+        partNumber: 'ET4010B-001C1B0P-A6',
+        name: 'ET401 10″ Wi-Fi, SE4100, 6/64 GB',
+        priceFrom: 2899,
+        availability: 'available',
+        attributes: {
+          'Ekran': '10 cali',
+          'Skaner': 'SE4100',
+          'Pamięć': '6 GB / 64 GB',
+        },
+      },
+      {
+        partNumber: 'ET4010B-001C2B0P-A6',
+        name: 'ET401 10″ Wi-Fi, SE4100, 8/128 GB',
+        priceFrom: 3624,
+        availability: 'available',
+        attributes: {
+          'Ekran': '10 cali',
+          'Skaner': 'SE4100',
+          'Pamięć': '8 GB / 128 GB',
+        },
+      },
+      {
+        partNumber: 'ET401EB-301P1B2P-A6',
+        name: 'ET401 10″ 5G, SR500, 6/64 GB',
+        priceFrom: 3479,
+        availability: 'available',
+        attributes: {
+          'Ekran': '10 cali',
+          'Skaner': 'SR500',
+          'Pamięć': '6 GB / 64 GB',
+          '5G': 'Tak',
+        },
+      },
+      {
+        partNumber: 'ET401EB-301P2B2P-A6',
+        name: 'ET401 10″ 5G, SR500, 8/128 GB',
+        priceFrom: 4001,
+        availability: 'available',
+        attributes: {
+          'Ekran': '10 cali',
+          'Skaner': 'SR500',
+          'Pamięć': '8 GB / 128 GB',
+          '5G': 'Tak',
+        },
+      },
+    ],
+    relatedAccessories: [],
+    compatibleAccessories: [],
+    downloads: [
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-et401/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/us/en/products/spec-sheets/tablets/et401.html', size: 'Online' },
+    ],
+    faq: [
+      {
+        question: 'Czym różni się Zebra ET401 od ET40?',
+        answer: 'ET401 to następca ET40 z procesorem Qualcomm Dragonwing Q-6690 (42% szybszym), Wi-Fi 7 (tri-band, do 5,8 Gbit/s), Bluetooth 6.0, IP68 (vs IP65 w ET40), opcjonalnym zintegrowanym RFID UHF, kamerą 16 MP (vs 13 MP), ekranem 600 nit (vs 500 nit) z Gorilla Glass 5 i Androidem 15→18 z wsparciem do ~2034 (vs Android 13→17 w ET40). Obudowa jest kompatybilna wstecz z większością akcesoriów ET40/ET45 (stacje ładowania, uchwyty do wózków).',
+      },
+      {
+        question: 'Czy Zebra ET401 ma zintegrowany czytnik RFID?',
+        answer: 'Tak — ET401 to pierwszy tablet Zebra z opcjonalnym zintegrowanym modułem RFID UHF. Odczytuje ponad 90 tagów na sekundę w zasięgu do 1,2 m. Eliminuje to potrzebę zewnętrznej przystawki RFD40/RFD90 (oszczędność ~2 000–3 000 zł na urządzeniu i prostsze zarządzanie flotą). Do inwentaryzacji RFID w magazynie, retail i asset management.',
+      },
+      {
+        question: 'Jaka jest cena tabletu Zebra ET401?',
+        answer: 'Cena Zebra ET401 w TAKMA zaczyna się od ok. 2 410 zł netto za wersję 8″ Wi-Fi bez skanera (6/64 GB) do ok. 4 001 zł netto za wersję 10″ 5G ze skanerem SR500 i 8/128 GB. Najpopularniejsza konfiguracja: ET401 8″ Wi-Fi z SE4100 i 6/64 GB za ok. 2 537 zł netto. Do ceny dolicz akcesoria: rugged boot (~350 zł), stacja ładowania (~1 000 zł), bateria zapasowa (~500 zł).',
+      },
+      {
+        question: 'Czy tablet Zebra ET401 nadaje się do magazynu WMS?',
+        answer: 'Tak — ET401 z IP68, upadkami z 1,2 m (1,55 m z rugged boot), Wi-Fi 7 tri-band i trybem rękawicowym to idealny tablet do magazynu. Skaner SE4100 lub SR500 odczytuje kody 1D/2D. Enterprise Browser uruchamia system WMS bez potrzeby natywnej aplikacji. Hot Swap baterii = zero przestojów na 3 zmianach. Tryb battery-free przez USB-C do montażu na wózkach widłowych.',
+      },
+      {
+        question: 'Czy Zebra ET401 działa bez baterii (tryb kiosk/pojazd)?',
+        answer: 'Tak — ET401 obsługuje tryb battery-free zasilany przez USB-C. Idealny do trwałych instalacji: kioski samoobsługowe, tablety na wózkach widłowych, stanowiska kontroli jakości. Eliminuje koszty zakupu i wymiany baterii w zastosowaniach stacjonarnych. Wymaga zasilacza USB-C PD (PWRWUA5V45W1XX).',
+      },
+      {
+        question: 'Jaki system operacyjny ma Zebra ET401 i jak długo będzie wspierany?',
+        answer: 'Android 15 z gwarantowaną ścieżką aktualizacji do Android 18. Zebra LifeGuard zapewnia comiesięczne patche bezpieczeństwa do ~2034 roku. Całkowity cykl życia: do 8 lat (4 lata sprzedaży + 4 lata rozszerzonego wsparcia z kontraktem OneCare). Dla porównania: Samsung Galaxy Tab Active — 3–4 lata wsparcia, Honeywell RT10A — 4–5 lat.',
+      },
+      {
+        question: 'Czym Zebra ET401 różni się od tabletu konsumenckiego (iPad, Samsung)?',
+        answer: 'ET401 ma IP68 (zanurzenie), upadki z 1,2 m na beton, Gorilla Glass 5, wymienną baterię z Hot Swap, zintegrowany skaner kodów i RFID, Android Enterprise z LifeGuard (patche do ~2034) i Mobility DNA (30+ narzędzi w cenie). Tablet konsumencki nie przeżyje pierwszego upadku w magazynie, nie skanuje kodów, nie ma wymiennej baterii i traci wsparcie po 2–3 latach. TCO 5-letni ET401 jest ~60% niższy niż iPad z etui rugged + sled skanera.',
+      },
+      {
+        question: 'Ile waży Zebra ET401 i jakie ma wymiary?',
+        answer: 'Wersja 8-calowa: 212,7 × 134,4 × 11,4 mm, 480 g. Wersja 10-calowa: 256,1 × 162,7 × 11,4 mm, 680 g. Grubość zaledwie 11,4 mm — porównywalna z tabletem konsumenckim, ale z pełną wytrzymałością IP68 i MIL-STD-810H.',
+      },
+      {
+        question: 'Czy akcesoria ET40/ET45 pasują do ET401?',
+        answer: 'Większość akcesoriów ET40/ET45 jest kompatybilna z ET401 — stacje ładowania 4-slotowe (CRD-ET4X), uchwyty do wózków, zasilacze samochodowe. WYJĄTEK: rugged booty/exoskelety są INNE — ET401 ma dedykowane modele SG-ET401-*. Przy migracji z ET40 na ET401 można zachować infrastrukturę ładowania i montażową.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Zebra ET401?',
+        answer: 'W segmencie tabletów enterprise: Samsung Galaxy Tab Active5 (tańsza, ale IP68 tylko z etui, brak zintegrowanego skanera i RFID, krótsze wsparcie), Honeywell RT10A (starszy procesor, Wi-Fi 6, brak RFID), Panasonic Toughpad FZ-A3 (IP65, 10″, brak skanera). ET401 jest jedynym tabletem z zintegrowanym RFID UHF — to kluczowy wyróżnik. Jeśli potrzebujesz Windows: Zebra ET80. Jeśli potrzebujesz pracy w -30°C: Zebra ET60/ET65.',
+      },
+    ],
+    createdAt: '2026-02-28',
+  },
+]
+
+// ============================================
 // EXPORT - WSZYSTKIE PRODUKTY
 // ============================================
 
@@ -25981,6 +26233,7 @@ export const products: Product[] = [
   ...cardRibbons,
   ...pvcCards,
   ...software,
+  ...zebraTablets,
 ]
 
 // Helper do pobrania produktu po slug
