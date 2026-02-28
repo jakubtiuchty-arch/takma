@@ -161,7 +161,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
               className="relative bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url(${guide.heroImage})` }}
             >
-              <div className="bg-black/40">
+              <div className="bg-gradient-to-r from-black/80 via-black/60 to-black/20">
                 <nav className="container-main pt-4 pb-2" aria-label="Breadcrumb">
                   <ol className="flex items-center gap-1.5 text-sm text-white/70 flex-wrap">
                     <li><Link href="/" className="hover:text-white transition-colors">Strona główna</Link></li>
