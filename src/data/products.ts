@@ -26572,7 +26572,7 @@ ET45 to wersja z 5G — jeśli pracujesz wyłącznie w zasięgu Wi-Fi, tańszym 
     seoTitle: 'Tablet przemysłowy Zebra ET60 — do chłodni -30°C, IP66, podgrzewany ekran 1000 nit',
     seoDescription: 'Tablet Zebra ET60 — ekstremalny tablet rugged 10″ do chłodni i mroźni (-30°C). Podgrzewany ekran 1000 nit, skaner SE55 (12 m), IP66, hot-swap baterii. Od 6 346 zł netto. Tablet przemysłowy Zebra ET60 Android/Windows. TAKMA — autoryzowany partner Zebra.',
     shortDescription: 'Ekstremalny tablet przemysłowy do chłodni -30°C — podgrzewany ekran 1000 nit, IP66, skaner SE55',
-    description: `Dla kogo? Tablet Zebra ET60 to ekstremalny tablet przemysłowy zaprojektowany do pracy w najtrudniejszych warunkach: mroźnie do -30°C, chłodnie, doki załadunkowe, praca na zewnątrz w deszczu i śniegu, a także montaż na wózkach widłowych w zimnych magazynach. To jedyny tablet Android na rynku certyfikowany do ciągłej pracy w temperaturach poniżej -20°C.
+    description: `Dla kogo? Tablet Zebra ET60 to wytrzymały tablet przemysłowy zaprojektowany do pracy w najtrudniejszych warunkach: mroźnie do -30°C, chłodnie, doki załadunkowe, praca na zewnątrz w deszczu i śniegu, a także montaż na wózkach widłowych w zimnych magazynach. To jedyny tablet Android na rynku certyfikowany do ciągłej pracy w temperaturach poniżej -20°C.
 
 Ekran 10,1 cala WUXGA (1920×1200) o jasności 1000 nit jest czytelny nawet w pełnym słońcu i w warunkach zamglenia w chłodniach. W stacji dokującej pojazdu ekran jest podgrzewany — nie zaparuje ani nie zamarznie. Tryb mokry filtruje fałszywe dotknięcia od kropel wody i kondensatu, tryb rękawicowy obsługuje grube rękawice mroźnicze. Gorilla Glass chroni przed zarysowaniami.
 
@@ -26776,7 +26776,7 @@ ET60 dostępny z Androidem 13 (aktualizacje do A16, LifeGuard for Android) i Win
     seoTitle: 'Tablet Zebra ET65 — 5G do chłodni -30°C, IP66, podgrzewany ekran 1000 nit',
     seoDescription: 'Tablet Zebra ET65 — ekstremalny tablet przemysłowy 5G 10″ do chłodni i mroźni (-30°C). Podgrzewany ekran 1000 nit, skaner SE55 (12 m), IP66, GPS, hot-swap baterii. Od 7 279 zł netto. Tablet przemysłowy Zebra ET65 z 5G/LTE. TAKMA — autoryzowany partner Zebra.',
     shortDescription: 'Ekstremalny tablet przemysłowy 5G do chłodni -30°C — podgrzewany ekran 1000 nit, IP66, GPS, skaner SE55',
-    description: `Dla kogo? Tablet Zebra ET65 to ekstremalny tablet przemysłowy z łącznością 5G/LTE, zaprojektowany do pracy w najtrudniejszych warunkach poza zasięgiem Wi-Fi: mroźnie do -30°C, chłodnie, inspekcje terenowe w ekstremalnych temperaturach, logistyka cold chain i praca na wózkach widłowych w zimnych magazynach. To wersja ET60 z pełną łącznością komórkową 5G Sub-6/mmWave i GPS.
+    description: `Dla kogo? Tablet Zebra ET65 to wytrzymały tablet przemysłowy z łącznością 5G/LTE, zaprojektowany do pracy w najtrudniejszych warunkach poza zasięgiem Wi-Fi: mroźnie do -30°C, chłodnie, inspekcje terenowe w ekstremalnych temperaturach, logistyka cold chain i praca na wózkach widłowych w zimnych magazynach. To wersja ET60 z pełną łącznością komórkową 5G Sub-6/mmWave i GPS.
 
 Ekran 10,1 cala WUXGA (1920×1200) o jasności 1000 nit z podgrzewaniem w stacji dokującej pojazdu — nie zaparuje ani nie zamarznie w mroźni. Tryb mokry i rękawicowy do pracy w rękawicach mroźniczych i w deszczu. Gorilla Glass chroni przed zarysowaniami.
 
@@ -26962,7 +26962,7 @@ const et6xAccessories: Product[] = [
     shortDescription: 'Bateria standardowa 36 Wh do tabletu Zebra ET60 i ET65 z systemem Android',
     description: 'Akumulator standardowy PowerPrecision 36 Wh (8 920 mAh) do tabletu Zebra ET60 i ET65 w wersji Android. Technologia hot-swap z superkondensatorem — wymiana baterii bez wyłączania tabletu. Na pełną zmianę w standardowych warunkach.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 369,
-    images: [], imageDescriptions: [],
+    images: ['/images/products/BTRY-ET6XA-18AH-01.png'], imageDescriptions: ['Akumulator standardowy 36 Wh do tabletów Zebra ET60 i ET65 Android'],
     tags: [], availability: 'available', isNew: false, isBestseller: false,
     specifications: [{ name: 'Part Number', value: 'BTRY-ET6XA-9AH-01' }],
     applications: ['Zapasowa bateria standardowa do ET60/ET65 Android'],
@@ -26974,7 +26974,7 @@ const et6xAccessories: Product[] = [
     shortDescription: 'Bateria standardowa 36 Wh do tabletu Zebra ET60 i ET65 z systemem Windows',
     description: 'Akumulator standardowy 36 Wh do tabletu Zebra ET60 i ET65 w wersji Windows 11 Pro. Technologia hot-swap z superkondensatorem — wymiana baterii bez wyłączania tabletu.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 362,
-    images: [], imageDescriptions: [],
+    images: ['/images/products/BTRY-ET6XA-18AH-01.png'], imageDescriptions: ['Akumulator standardowy 36 Wh do tabletów Zebra ET60 i ET65 Windows'],
     tags: [], availability: 'available', isNew: false, isBestseller: false,
     specifications: [{ name: 'Part Number', value: 'BTRY-ET6XW-5AH-01' }],
     applications: ['Zapasowa bateria standardowa do ET60/ET65 Windows'],
@@ -26986,7 +26986,7 @@ const et6xAccessories: Product[] = [
     shortDescription: 'Bateria rozszerzona 72 Wh do tabletu Zebra ET60 i ET65 Android — na dwie zmiany w mroźni',
     description: 'Akumulator rozszerzony PowerPrecision 72 Wh (17 840 mAh) do tabletu Zebra ET60 i ET65 w wersji Android. Podwójna pojemność — na dwie pełne zmiany w mroźni do -30°C. Hot-swap z superkondensatorem.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 664,
-    images: [], imageDescriptions: [],
+    images: ['/images/products/BTRY-ET6XA-18AH-01.png'], imageDescriptions: ['Akumulator rozszerzony 72 Wh PowerPrecision do tabletów Zebra ET60 i ET65 Android'],
     tags: [], availability: 'available', isNew: false, isBestseller: false,
     specifications: [{ name: 'Part Number', value: 'BTRY-ET6XA-18AH-01' }],
     applications: ['Bateria rozszerzona na dwie zmiany do ET60/ET65 Android'],
@@ -26998,7 +26998,7 @@ const et6xAccessories: Product[] = [
     shortDescription: 'Bateria rozszerzona 72 Wh do tabletu Zebra ET60 i ET65 Windows — na dwie zmiany',
     description: 'Akumulator rozszerzony 72 Wh do tabletu Zebra ET60 i ET65 w wersji Windows 11 Pro. Podwójna pojemność na dwie pełne zmiany. Hot-swap z superkondensatorem.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 630,
-    images: [], imageDescriptions: [],
+    images: ['/images/products/BTRY-ET6XA-18AH-01.png'], imageDescriptions: ['Akumulator rozszerzony 72 Wh do tabletów Zebra ET60 i ET65 Windows'],
     tags: [], availability: 'available', isNew: false, isBestseller: false,
     specifications: [{ name: 'Part Number', value: 'BTRY-ET6XW-9AH-01' }],
     applications: ['Bateria rozszerzona na dwie zmiany do ET60/ET65 Windows'],
@@ -27010,7 +27010,7 @@ const et6xAccessories: Product[] = [
     shortDescription: 'Ładowarka na 2 akumulatory do tabletu Zebra ET60 i ET65',
     description: 'Ładowarka 2-slotowa do akumulatorów tabletów Zebra ET60 i ET65. Ładuje jednocześnie 2 baterie zapasowe (standardowe lub rozszerzone) — idealna do pracy zmianowej.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 664,
-    images: [], imageDescriptions: [],
+    images: ['/images/products/SAC-ET6X-2SCHG-01.png'], imageDescriptions: ['Ładowarka 2-slotowa na akumulatory do tabletów Zebra ET60 i ET65'],
     tags: [], availability: 'on-order', isNew: false, isBestseller: false,
     specifications: [{ name: 'Part Number', value: 'SAC-ET6X-2SCHG-01' }],
     applications: ['Ładowanie zapasowych baterii do ET60/ET65'],
@@ -27022,7 +27022,7 @@ const et6xAccessories: Product[] = [
     shortDescription: 'Uchwyt / hand strap do tabletu Zebra ET60 i ET65',
     description: 'Uchwyt do noszenia (hand strap) do tabletu Zebra ET60 i ET65. Montowany z tyłu tabletu — zabezpiecza przed wyślizgnięciem się z ręki podczas pracy.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 251,
-    images: [], imageDescriptions: [],
+    images: ['/images/products/SG-ET8X-HANDLE1-01.png'], imageDescriptions: ['Uchwyt do noszenia (hand strap) do tabletu Zebra ET60 i ET65'],
     tags: [], availability: 'available', isNew: false, isBestseller: false,
     specifications: [{ name: 'Part Number', value: 'SG-ET8X-HANDLE1-01' }],
     applications: ['Noszenie tabletu ET60/ET65 podczas pracy'],
@@ -27034,7 +27034,7 @@ const et6xAccessories: Product[] = [
     shortDescription: 'Klawiatura QWERTY do montażu w stacji dokującej pojazdu ET60/ET65',
     description: 'Klawiatura przemysłowa QWERTY do tabletów Zebra ET60 i ET65. Montowana w stacji dokującej pojazdu — zamienia tablet w pełną stację roboczą na wózku widłowym. Podświetlane klawisze, odporność na rozlanie płynów.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 1963,
-    images: [], imageDescriptions: [],
+    images: ['/images/products/KYBD-QW-VC-01.png'], imageDescriptions: ['Klawiatura przemysłowa QWERTY do stacji dokującej pojazdu tabletów Zebra ET60 i ET65'],
     tags: [], availability: 'available', isNew: false, isBestseller: false,
     specifications: [{ name: 'Part Number', value: 'KYBD-QW-VC-01' }],
     applications: ['Wpisywanie danych na wózku widłowym z ET60/ET65'],
@@ -27058,7 +27058,7 @@ const et6xAccessories: Product[] = [
     shortDescription: 'Zasilacz sieciowy USB-C 15V 45W do tabletu Zebra ET60 i ET65',
     description: 'Zasilacz sieciowy USB-C 45 W (15V) do tabletów Zebra ET60 i ET65. Ładowanie tabletu przez port USB-C — kompaktowy zasilacz do biura i podróży.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 206,
-    images: [], imageDescriptions: [],
+    images: ['/images/products/PWR-BGA15V45W-UC2-WW.png'], imageDescriptions: ['Zasilacz sieciowy USB-C 45 W do tabletów Zebra ET60 i ET65'],
     tags: [], availability: 'on-order', isNew: false, isBestseller: false,
     specifications: [{ name: 'Part Number', value: 'PWR-BGA15V45W-UC2-WW' }],
     applications: ['Ładowanie tabletu ET60/ET65 przez USB-C'],
@@ -27070,7 +27070,7 @@ const et6xAccessories: Product[] = [
     shortDescription: 'Rysik aktywny do tabletu Zebra ET60, ET65, ET80',
     description: 'Rysik aktywny (stylus) do tabletów Zebra ET60, ET65, ET80 i ET85. Do precyzyjnej obsługi ekranu w rękawicach, podpisywania dokumentów i rysowania na ekranie dotykowym.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 473,
-    images: [], imageDescriptions: [],
+    images: ['/images/products/SG-ET8X-STYLUS1-01.png'], imageDescriptions: ['Rysik aktywny do tabletów Zebra ET60, ET65, ET80 i ET85'],
     tags: [], availability: 'available', isNew: false, isBestseller: false,
     specifications: [{ name: 'Part Number', value: 'SG-ET8X-STYLUS1-01' }],
     applications: ['Precyzyjna obsługa ekranu ET60/ET65/ET80 w rękawicach'],
