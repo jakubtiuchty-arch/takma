@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState, useMemo, useRef } from 'react'
+import { createPortal } from 'react-dom'
 import { Badge } from '@/components/ui'
 import { Button } from '@/components/ui'
 import { PlusIcon, CheckIcon, BellIcon, ChevronDownIcon } from '@/components/ui/Icons'
@@ -160,24 +161,42 @@ const attributeTooltips: Record<string, string> = {
 
 function AttributeLabel({ label, extraTooltips }: { label: string; extraTooltips?: Record<string, string> }) {
   const tooltip = extraTooltips?.[label] || attributeTooltips[label]
+  const [show, setShow] = useState(false)
+  const [pos, setPos] = useState<{ top: number; left: number } | null>(null)
+  const triggerRef = useRef<HTMLSpanElement>(null)
 
   if (!tooltip) return <>{label}</>
+
+  const handleEnter = () => {
+    if (triggerRef.current) {
+      const rect = triggerRef.current.getBoundingClientRect()
+      setPos({ top: rect.bottom + 8, left: rect.left + rect.width / 2 })
+    }
+    setShow(true)
+  }
 
   return (
     <span className="inline-flex items-center gap-1.5">
       {label}
-      <span className="relative group/tip">
+      <span
+        ref={triggerRef}
+        onMouseEnter={handleEnter}
+        onMouseLeave={() => setShow(false)}
+        className="inline-flex w-4 h-4 rounded-full bg-gray-300 text-white text-[10px] font-bold leading-none items-center justify-center cursor-help hover:bg-primary-500 transition-colors"
+        aria-label={`Wyjaśnienie: ${label}`}
+      >
+        ?
+      </span>
+      {show && pos && createPortal(
         <span
-          className="inline-flex w-4 h-4 rounded-full bg-gray-300 text-white text-[10px] font-bold leading-none items-center justify-center cursor-help hover:bg-primary-500 transition-colors"
-          aria-label={`Wyjaśnienie: ${label}`}
+          style={{ top: pos.top, left: pos.left }}
+          className="fixed -translate-x-1/2 w-72 px-3 py-2 bg-gray-900 text-white text-xs font-normal rounded-lg text-left leading-relaxed z-[9999] whitespace-pre-line shadow-lg"
         >
-          ?
-        </span>
-        <span className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-72 px-3 py-2 bg-gray-900 text-white text-xs font-normal rounded-lg text-left leading-relaxed z-50 whitespace-pre-line opacity-0 pointer-events-none group-hover/tip:opacity-100 transition-opacity shadow-lg">
           {tooltip}
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 border-4 border-transparent border-b-gray-900" />
-        </span>
-      </span>
+        </span>,
+        document.body
+      )}
     </span>
   )
 }
