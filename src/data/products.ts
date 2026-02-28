@@ -26927,6 +26927,7 @@ Tablet Zebra ET60 Windows dzieli obudowę i akcesoria z wersją Android (Zebra E
     manufacturerId: 'zebra',
     priceFrom: 11597,
     images: [
+      '/images/products/ET60WW-0S5DPS00A0-00.png',
       '/images/products/ET60AW-0SQAGN00A0-A6.png',
       '/images/products/ET60AW-0SQAGN00A0-A6_2.png',
       '/images/products/ET60AW-0SQAGN00A0-A6_3.png',
@@ -26935,7 +26936,8 @@ Tablet Zebra ET60 Windows dzieli obudowę i akcesoria z wersją Android (Zebra E
       '/images/products/ET60AW-0SQAGN00A0-A6_6.png',
     ],
     imageDescriptions: [
-      'Zebra ET60 Windows — widok z przodu, ekran 10 cali z systemem Windows 11 Pro',
+      'Zebra ET60 Windows — widok z przodu z klawiaturą 2-in-1 i ekranem Windows 11 Pro',
+      'Zebra ET60 Windows — widok z przodu, ekran 10 cali WUXGA 1000 nit',
       'Zebra ET60 Windows — widok pod kątem, wzmocniona obudowa IP66 z gumowymi narożnikami',
       'Zebra ET60 Windows — tył tabletu, kamera 16 MP z lampą LED i logo Zebra',
       'Zebra ET60 Windows — widok z boku, przyciski boczne i szczelina kart',
@@ -27074,6 +27076,7 @@ Tablet Zebra ET65 Windows to wersja 5G tabletu ET60 Windows. Bez 5G: Zebra ET60 
     manufacturerId: 'zebra',
     priceFrom: 13409,
     images: [
+      '/images/products/ET65WW-ES5DPS00A0-00.png',
       '/images/products/ET65AW-ESQAGS00A0-A6.png',
       '/images/products/ET65AW-ESQAGS00A0-A6_2.png',
       '/images/products/ET65AW-ESQAGS00A0-A6_3.png',
@@ -27082,7 +27085,8 @@ Tablet Zebra ET65 Windows to wersja 5G tabletu ET60 Windows. Bez 5G: Zebra ET60 
       '/images/products/ET65AW-ESQAGS00A0-A6_6.png',
     ],
     imageDescriptions: [
-      'Tablet Zebra ET65 Windows — widok z przodu, ekran 10 cali z Windows 11 Pro',
+      'Zebra ET65 Windows — widok z przodu z klawiaturą 2-in-1 i ekranem Windows 11 Pro',
+      'Tablet Zebra ET65 Windows — widok z przodu, ekran 10 cali WUXGA 1000 nit',
       'Tablet Zebra ET65 Windows — widok pod kątem, wzmocniona obudowa IP66 z modułem 5G',
       'Zebra ET65 Windows — tył tabletu, kamera 16 MP z lampą LED i logo Zebra',
       'Zebra ET65 Windows — widok z boku, szczelina kart SIM/5G i przyciski',
