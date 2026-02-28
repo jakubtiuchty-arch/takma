@@ -27551,16 +27551,16 @@ const newlandMobileComputers: Product[] = [
     id: 'newland-n7-cachalot-pro-ii',
     slug: 'newland-n7-cachalot-pro-ii',
     name: 'Newland N7 Cachalot Pro II',
-    shortDescription: 'Terminal z klawiaturą fizyczną, skanerem Duo Near & Far i baterią hot-swap 5100 mAh',
-    description: `Dla kogo? Newland N7 Cachalot Pro II to terminal mobilny stworzony dla magazynów, logistyki i produkcji, gdzie liczy się szybkość wprowadzania danych, niezawodne skanowanie z różnych odległości i praca bez przerw na ładowanie. Sprawdzi się wszędzie tam, gdzie operatorzy potrzebują fizycznej klawiatury — w kompletacji zamówień WMS, inwentaryzacji, na liniach produkcyjnych i przy identyfikacji towarów w trudnych warunkach oświetleniowych.
+    shortDescription: 'Terminal z klawiaturą fizyczną 29/38/47 kl., skanerem Standard 2D lub Duo Near & Far, baterią hot-swap 5100 mAh',
+    description: `Dla kogo? Newland N7 Cachalot Pro II to terminal mobilny stworzony dla magazynów, logistyki i produkcji, gdzie liczy się szybkość wprowadzania danych, niezawodne skanowanie i praca bez przerw na ładowanie. Sprawdzi się wszędzie tam, gdzie operatorzy potrzebują fizycznej klawiatury — w kompletacji zamówień WMS, inwentaryzacji, na liniach produkcyjnych i przy identyfikacji towarów w trudnych warunkach oświetleniowych.
 
-Co wyróżnia N7 Cachalot Pro II? Terminal wyposażony jest w unikalny skaner Duo Near & Far firmy Newland, który łączy dwa silniki skanowania 2D w jednym module — jeden do odczytu kodów z bliskiej odległości (etykiety na opakowaniach, półkach), drugi do skanowania z kilku metrów (kody na regałach wysokiego składowania). Przełączanie między silnikami odbywa się automatycznie, bez interwencji operatora, co znacząco przyspiesza pracę w magazynie.
+Co wyróżnia N7 Cachalot Pro II? Terminal dostępny jest w dwóch wersjach skanera: Standard 2D (warianty S) i Duo Near & Far (warianty E). Skaner Duo Near & Far to unikalna technologia Newland łącząca dwa silniki skanowania 2D w jednym module — jeden do odczytu kodów z bliskiej odległości (etykiety na opakowaniach, półkach), drugi do skanowania z kilku metrów (kody na regałach wysokiego składowania). Przełączanie między silnikami odbywa się automatycznie, bez interwencji operatora. Wariant Standard 2D wystarczy do typowej pracy magazynowej na krótkich dystansach.
 
 Bateria 5 100 mAh z funkcją hot-swap to kolejna kluczowa przewaga: wymiana rozładowanego ogniwa trwa kilka sekund, bez zamykania aplikacji i bez utraty połączenia Wi-Fi. W magazynach pracujących 24/7 oznacza to zero przestojów związanych z ładowaniem. Fizyczna klawiatura dostępna jest w trzech wariantach: 29, 38 lub 47 klawiszy — każda z podświetleniem LED do pracy w słabo oświetlonych strefach.
 
 Ekran 4" IPS WVGA (480×800) ze szkłem Gorilla Glass 3 obsługuje dotyk w rękawiczkach i na mokrym ekranie. Norma IP65 i odporność na upadki z 1,8 m zapewniają niezawodne działanie w najtrudniejszych warunkach przemysłowych. Zakres temperatury pracy od -20°C do +55°C pozwala na pracę w chłodniach bez dodatkowego wyposażenia.
 
-System Android 11 z certyfikatem Google Android Enterprise Recommended (AER) gwarantuje aktualizacje bezpieczeństwa i kompatybilność z systemami MDM. Bezpłatny system Ndevor firmy Newland umożliwia zdalne zarządzanie flotą urządzeń. Szczegółowe informacje techniczne, instrukcje obsługi oraz narzędzia deweloperskie dostępne są w oficjalnej dokumentacji Newland AIDC na stronie newland-id.com.`,
+N7 Cachalot Pro II dostępny jest z Androidem 11 lub 13 — oba z certyfikatem Google Android Enterprise Recommended (AER), gwarantującym aktualizacje bezpieczeństwa i kompatybilność z systemami MDM. Bezpłatny system Ndevor firmy Newland umożliwia zdalne zarządzanie flotą urządzeń. Wszystkie warianty wyposażone są w 4 GB RAM, 64 GB Flash, Wi-Fi ac, Bluetooth 5.0, 4G LTE, NFC i GPS. Szczegółowe informacje techniczne, instrukcje obsługi oraz narzędzia deweloperskie dostępne są w oficjalnej dokumentacji Newland AIDC na stronie newland-id.com.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'newland',
     subcategoryIds: [],
@@ -27577,17 +27577,17 @@ System Android 11 z certyfikatem Google Android Enterprise Recommended (AER) gwa
     ],
     isBestseller: false,
     seoTitle: 'Newland N7 Cachalot Pro II — terminal z klawiaturą i Duo Near & Far | TAKMA',
-    seoDescription: 'Terminal Newland N7 Cachalot Pro II: klawiatura 29/38/47 kl., skaner Duo Near & Far, hot-swap 5100 mAh, IP65, Android 11 AER, -20°C. Dla magazynu i produkcji. Cena netto — TAKMA.',
+    seoDescription: 'Terminal Newland N7 Cachalot Pro II: klawiatura 29/38/47 kl., skaner Standard 2D lub Duo Near & Far, hot-swap 5100 mAh, IP65, Android 11/13 AER, -20°C. 11 wariantów. Cena netto — TAKMA.',
     specifications: [
-      { name: 'System', value: 'Android 11 GMS, Android Enterprise Recommended (AER)' },
+      { name: 'System', value: 'Android 11 lub 13 GMS, Android Enterprise Recommended (AER)' },
       { name: 'Procesor', value: 'Ośmiordzeniowy (octa-core) 2,0 GHz' },
-      { name: 'Pamięć RAM', value: '3 GB / 4 GB (zależnie od wariantu)' },
-      { name: 'Pamięć Flash', value: '32 GB / 64 GB (zależnie od wariantu)' },
+      { name: 'Pamięć RAM', value: '4 GB' },
+      { name: 'Pamięć Flash', value: '64 GB' },
       { name: 'Rozszerzenie pamięci', value: 'MicroSD/TF do 128 GB' },
       { name: 'Ekran', value: '4,0" IPS WVGA 480×800, Gorilla Glass 3, 480 nit' },
       { name: 'Ekran dotykowy', value: 'Pojemnościowy, obsługa w rękawiczkach i na mokrym ekranie' },
-      { name: 'Skaner', value: '2D CMOS 1280×800, 60 klatek/s, celownik laserowy' },
-      { name: 'Technologia skanowania', value: 'Duo Near & Far — dwa silniki 2D, auto-przełączanie bliski/daleki dystans' },
+      { name: 'Skaner', value: 'Standard 2D (warianty S) lub Duo Near & Far (warianty E)' },
+      { name: 'Technologia skanowania', value: '2D CMOS 1280×800, 60 klatek/s, celownik laserowy; Duo Near & Far — dwa silniki 2D, auto-przełączanie bliski/daleki dystans' },
       { name: 'Klawiatura', value: '29, 38 lub 47 klawiszy z podświetleniem LED' },
       { name: 'Bateria', value: '3,8 V, 5 100 mAh Li-Ion, wymienna hot-swap' },
       { name: 'Czas pracy', value: 'Ponad 15 godzin ciągłej pracy' },
@@ -27596,7 +27596,7 @@ System Android 11 z certyfikatem Google Android Enterprise Recommended (AER) gwa
       { name: 'Bluetooth', value: '5.0 BLE' },
       { name: 'NFC', value: '13,56 MHz, ISO14443A/B, MIFARE, Felica' },
       { name: 'GPS', value: 'GPS (AGPS), GLONASS, Galileo, BeiDou' },
-      { name: 'Łączność komórkowa', value: '4G LTE (zależnie od wariantu)' },
+      { name: 'Łączność komórkowa', value: '4G LTE' },
       { name: 'Aparat', value: '13 MP PDAF z latarką LED' },
       { name: 'Klasa szczelności', value: 'IP65' },
       { name: 'Odporność na upadki', value: '1,8 m na beton (MIL-STD-810H)' },
@@ -27618,32 +27618,72 @@ System Android 11 z certyfikatem Google Android Enterprise Recommended (AER) gwa
     availability: 'unavailable',
     isNew: true,
     variants: [
+      // Standard 2D scanner (warianty S)
       {
-        partNumber: 'N7-AER-7KJF-N',
-        name: 'N7 Cachalot Pro II — 29 klawiszy, Wi-Fi',
-        attributes: {
-          'Klawiatura': '29 klawiszy',
-          'RAM / Flash': '3 GB / 32 GB',
-        },
+        partNumber: 'N7-Pro-W4-S2-A13',
+        name: 'N7 — 29 kl., Standard 2D, Android 13',
+        attributes: { 'Skaner': 'Standard 2D', 'Klawiatura': '29 klawiszy', 'Android': '13' },
         availability: 'unavailable',
       },
       {
-        partNumber: 'N7-AER-7KJF-F',
-        name: 'N7 Cachalot Pro II — 38 klawiszy, Wi-Fi',
-        attributes: {
-          'Klawiatura': '38 klawiszy',
-          'RAM / Flash': '3 GB / 32 GB',
-        },
+        partNumber: 'N7-Pro-W4-S3',
+        name: 'N7 — 38 kl., Standard 2D, Android 11',
+        attributes: { 'Skaner': 'Standard 2D', 'Klawiatura': '38 klawiszy', 'Android': '11' },
         availability: 'unavailable',
       },
       {
-        partNumber: 'N7-AER-7HJG-N',
-        name: 'N7 Cachalot Pro II — 29 klawiszy, 4G LTE, 4/64 GB',
-        attributes: {
-          'Klawiatura': '29 klawiszy',
-          '4G LTE': 'Tak',
-          'RAM / Flash': '4 GB / 64 GB',
-        },
+        partNumber: 'N7-Pro-W4-S3-A13',
+        name: 'N7 — 38 kl., Standard 2D, Android 13',
+        attributes: { 'Skaner': 'Standard 2D', 'Klawiatura': '38 klawiszy', 'Android': '13' },
+        availability: 'unavailable',
+      },
+      {
+        partNumber: 'N7-Pro-W4-S4',
+        name: 'N7 — 47 kl., Standard 2D, Android 11',
+        attributes: { 'Skaner': 'Standard 2D', 'Klawiatura': '47 klawiszy', 'Android': '11' },
+        availability: 'unavailable',
+      },
+      {
+        partNumber: 'N7-Pro-W4-S4-A13',
+        name: 'N7 — 47 kl., Standard 2D, Android 13',
+        attributes: { 'Skaner': 'Standard 2D', 'Klawiatura': '47 klawiszy', 'Android': '13' },
+        availability: 'unavailable',
+      },
+      // Duo Near & Far scanner (warianty E)
+      {
+        partNumber: 'N7-Pro-W4-E2',
+        name: 'N7 — 29 kl., Duo Near & Far, Android 11',
+        attributes: { 'Skaner': 'Duo Near & Far', 'Klawiatura': '29 klawiszy', 'Android': '11' },
+        availability: 'unavailable',
+      },
+      {
+        partNumber: 'N7-Pro-W4-E2-A13',
+        name: 'N7 — 29 kl., Duo Near & Far, Android 13',
+        attributes: { 'Skaner': 'Duo Near & Far', 'Klawiatura': '29 klawiszy', 'Android': '13' },
+        availability: 'unavailable',
+      },
+      {
+        partNumber: 'N7-Pro-W4-E3',
+        name: 'N7 — 38 kl., Duo Near & Far, Android 11',
+        attributes: { 'Skaner': 'Duo Near & Far', 'Klawiatura': '38 klawiszy', 'Android': '11' },
+        availability: 'unavailable',
+      },
+      {
+        partNumber: 'N7-Pro-W4-E3-A13',
+        name: 'N7 — 38 kl., Duo Near & Far, Android 13',
+        attributes: { 'Skaner': 'Duo Near & Far', 'Klawiatura': '38 klawiszy', 'Android': '13' },
+        availability: 'unavailable',
+      },
+      {
+        partNumber: 'N7-Pro-W4-E4',
+        name: 'N7 — 47 kl., Duo Near & Far, Android 11',
+        attributes: { 'Skaner': 'Duo Near & Far', 'Klawiatura': '47 klawiszy', 'Android': '11' },
+        availability: 'unavailable',
+      },
+      {
+        partNumber: 'N7-Pro-W4-E4-A13',
+        name: 'N7 — 47 kl., Duo Near & Far, Android 13',
+        attributes: { 'Skaner': 'Duo Near & Far', 'Klawiatura': '47 klawiszy', 'Android': '13' },
         availability: 'unavailable',
       },
     ],
@@ -27652,10 +27692,10 @@ System Android 11 z certyfikatem Google Android Enterprise Recommended (AER) gwa
     faq: [
       { question: 'Czym jest skaner Duo Near & Far w N7 Cachalot Pro II?', answer: 'Duo Near & Far to unikalna technologia Newland łącząca dwa silniki skanowania 2D w jednym module. Jeden silnik odczytuje kody z kilku centymetrów (etykiety na opakowaniach), drugi z kilku metrów (kody na regałach wysokiego składowania). Urządzenie przełącza się automatycznie — operator nie musi zmieniać trybu. To kluczowa przewaga w magazynach z regałami od podłogi do sufitu.' },
       { question: 'Czy bateria hot-swap oznacza wymianę bez wyłączania terminala?', answer: 'Tak. Funkcja hot-swap pozwala wyjąć rozładowaną baterię 5 100 mAh i włożyć naładowaną bez zamykania systemu Android i bez utraty połączenia Wi-Fi. Terminal przez kilka sekund zasilany jest z kondensatora buforowego. To eliminuje przestoje w magazynach pracujących 24/7 na zmiany.' },
-      { question: 'Jaki wariant klawiatury wybrać: 29, 38 czy 47 klawiszy?', answer: '29 klawiszy (wariant N7-AER-7KJF-N) — cyfry i podstawowe funkcje, wystarczający do kompletacji i inwentaryzacji. 38 klawiszy (N7-AER-7KJF-F) — dodatkowe klawisze funkcyjne, przydatne w rozbudowanych aplikacjach WMS. 47 klawiszy — pełna alfanumeryczna, do intensywnego ręcznego wpisywania danych (numery partii, kody lokalizacji). Każda wersja ma podświetlenie LED.' },
+      { question: 'Jaki wariant klawiatury wybrać: 29, 38 czy 47 klawiszy?', answer: '29 klawiszy (warianty S2/E2) — cyfry i podstawowe funkcje, wystarczający do kompletacji i inwentaryzacji. 38 klawiszy (S3/E3) — dodatkowe klawisze funkcyjne, przydatne w rozbudowanych aplikacjach WMS. 47 klawiszy (S4/E4) — pełna alfanumeryczna, do intensywnego ręcznego wpisywania danych (numery partii, kody lokalizacji). Każda wersja ma podświetlenie LED.' },
       { question: 'Czy N7 Cachalot Pro II sprawdzi się w chłodni lub mroźni?', answer: 'Tak — terminal pracuje w temperaturze od -20°C do +55°C, co obejmuje większość chłodni. Norma IP65 chroni przed wilgocią kondensacyjną. Do mroźni głębokich (-30°C i niżej) rekomendujemy [Zebra MC9400](/produkt/zebra-mc9400) z dedykowaną baterią freezer.' },
       { question: 'Jaki jest czas pracy baterii N7 Cachalot Pro II?', answer: 'Producent deklaruje ponad 15 godzin ciągłej pracy na baterii 5 100 mAh. Przy typowej pracy magazynowej (skanowanie, Wi-Fi, jasność 50%) wystarcza na pełną 8- lub 12-godzinną zmianę. Bateria wymienna hot-swap — przy pracy zmianowej 24/7 wystarczą 2 baterie na terminal i stacja ładowania.' },
-      { question: 'Czy N7 Cachalot Pro II współpracuje z systemami WMS?', answer: 'Tak — Android 11 z certyfikatem AER (Android Enterprise Recommended) gwarantuje kompatybilność z systemami WMS: Comarch WMS, SAP Mobile, Microsoft Dynamics, Simple WMS, Qguar. Aplikacje instalowane z Google Play lub przez MDM Ndevor. Newland SDK umożliwia integrację skanera z aplikacjami custom (Java/Kotlin).' },
+      { question: 'Czy N7 Cachalot Pro II współpracuje z systemami WMS?', answer: 'Tak — Android 11 lub 13 z certyfikatem AER (Android Enterprise Recommended) gwarantuje kompatybilność z systemami WMS: Comarch WMS, SAP Mobile, Microsoft Dynamics, Simple WMS, Qguar. Aplikacje instalowane z Google Play lub przez MDM Ndevor. Newland SDK umożliwia integrację skanera z aplikacjami custom (Java/Kotlin).' },
       { question: 'Jak zarządzać flotą terminali N7 — jaki MDM?', answer: 'Newland oferuje bezpłatny system MDM Ndevor (ndevor.newlandaidc.com) — masowa instalacja aplikacji, śledzenie GPS, zdalne czyszczenie danych. Alternatywnie: SOTI MobiControl, VMware Workspace ONE, Microsoft Intune. Terminal wspiera Android Zero-Touch Enrollment do masowych wdrożeń bez ręcznej konfiguracji.' },
       { question: 'Newland N7 Cachalot Pro II vs Zebra MC3400 — co wybrać?', answer: 'N7 Cachalot Pro II: klawiatura 29/38/47 kl., Duo Near & Far, hot-swap 5 100 mAh, IP65, 1,8 m upadki, Android 11, 3 lata wsparcia, Ndevor bezpłatny. [Zebra MC3400](/produkt/zebra-mc3400) (od 4 561 zł): SE55/SE58 (do 30 m!), hot-swap 7 000 mAh, IP65/IP67, 2,4 m upadki, Android 14 do v18, Mobility DNA. MC3400 jest droższa, ale oferuje dłuższe wsparcie, wyższą wytrzymałość i zasięg skanera do 30 m.' },
       { question: 'Jakie kody kreskowe czyta N7 Cachalot Pro II?', answer: 'Wszystkie popularne kody 1D (Code 128, Code 39, EAN-8/13, UPC-A/E, Interleaved 2 of 5) i 2D (QR Code, Data Matrix, PDF417, Aztec, MaxiCode). Czujnik CMOS 1280×800, 60 klatek/s, celownik laserowy. Wersja Duo Near & Far skanuje kody słabo kontrastowe i uszkodzone z większych odległości.' },
