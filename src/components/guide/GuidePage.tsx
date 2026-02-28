@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronRightIcon } from '@/components/ui/Icons'
 import { Guide, guideCategoryLabels } from '@/data/guides'
@@ -165,22 +164,6 @@ export default function GuidePage({ guide }: GuidePageProps) {
             <li className="text-gray-900 font-medium truncate max-w-[300px]">{guide.title}</li>
           </ol>
         </nav>
-
-        {/* Hero Image */}
-        {guide.heroImage && (
-          <div className="w-full bg-[#141422]">
-            <div className="container-main">
-              <Image
-                src={guide.heroImage}
-                alt={guide.title}
-                width={1400}
-                height={500}
-                className="w-full h-auto object-contain"
-                priority
-              />
-            </div>
-          </div>
-        )}
 
         {/* Header */}
         <header className="container-main pt-6 pb-8 border-b border-gray-100">
