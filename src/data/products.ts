@@ -25954,9 +25954,9 @@ const zebraTablets: Product[] = [
     slug: 'zebra-et401',
     name: 'Zebra ET401',
     seoTitle: 'Tablet przemysłowy Zebra ET401 — Wi-Fi 7, IP68, RFID UHF, Android 15',
-    seoDescription: 'Zebra ET401 — następca ET40. Wi-Fi 7, IP68, Qualcomm Dragonwing Q-6690, zintegrowany RFID UHF, Android 15→18. 8″ i 10″ od 2 410 zł netto. TAKMA — autoryzowany partner Zebra.',
+    seoDescription: 'Tablet Zebra ET401 — następca ET40. Wi-Fi 7, IP68, Qualcomm Dragonwing Q-6690, zintegrowany RFID UHF, Android 15→18. 8″ i 10″ od 2 410 zł netto. Tablet przemysłowy Zebra ET401 nowej generacji. TAKMA — autoryzowany partner Zebra.',
     shortDescription: 'Tablet przemysłowy nowej generacji — Wi-Fi 7, IP68, opcjonalny RFID UHF, Android 15→18',
-    description: `Dla kogo? Zebra ET401 to najnowsza generacja tabletu przemysłowego serii ET, zaprojektowana dla firm szukających wydajnego i wytrzymałego urządzenia do magazynu, produkcji, logistyki, retail, healthcare i pracy w terenie — z najdłuższym wsparciem Android na rynku (do A18, ~9 lat aktualizacji bezpieczeństwa).
+    description: `Dla kogo? Tablet Zebra ET401 to najnowsza generacja tabletu przemysłowego serii ET, zaprojektowana dla firm szukających wydajnego i wytrzymałego urządzenia do magazynu, produkcji, logistyki, retail, healthcare i pracy w terenie — z najdłuższym wsparciem Android na rynku (do A18, ~9 lat aktualizacji bezpieczeństwa).
 
 Następca bestsellerowej serii ET40/ET45 z procesorem Qualcomm Dragonwing Q-6690 (42% szybszym od poprzednika SM6375), pamięcią 6 lub 8 GB LPDDR5 i dyskiem 64/128 GB UFS. Wyświetlacz WUXGA 1920×1200 o jasności 600 nit z Corning Gorilla Glass 5 — czytelny w pełnym słońcu, z trybem mokrym i rękawicowym. Dostępny w rozmiarach 8 cali (480 g) i 10 cali (680 g).
 
@@ -26205,9 +26205,9 @@ Pakiet Mobility DNA w cenie urządzenia: StageNow, OEMConfig, Enterprise Browser
     slug: 'zebra-et40',
     name: 'Zebra ET40',
     seoTitle: 'Tablet przemysłowy Zebra ET40 — Wi-Fi 6, IP65, skaner kodów, Android',
-    seoDescription: 'Zebra ET40 — wzmocniony tablet firmowy 8″ i 10″ ze skanerem kodów kreskowych SE4100, Wi-Fi 6, IP65, MIL-STD-810H. Od 2 407 zł netto. TAKMA — autoryzowany partner Zebra.',
+    seoDescription: 'Tablet Zebra ET40 — wzmocniony tablet firmowy 8″ i 10″ ze skanerem kodów SE4710, Wi-Fi 6E, IP65, MIL-STD-810H. Od 2 407 zł netto. Tablet przemysłowy Zebra ET40 z hot-swap baterii. TAKMA — autoryzowany partner Zebra.',
     shortDescription: 'Wzmocniony tablet firmowy — Wi-Fi 6, IP65, wbudowany skaner, wymienialna bateria',
-    description: `Dla kogo? Zebra ET40 to wzmocniony tablet firmowy zaprojektowany dla handlu detalicznego, gastronomii, hotelarstwa, magazynu i logistyki wewnętrznej. Zastępuje konsumenckie iPady i tablety Samsung, oferując pełną wytrzymałość przemysłową, wbudowany skaner kodów kreskowych i gwarantowane wsparcie producenta.
+    description: `Dla kogo? Tablet Zebra ET40 to wzmocniony tablet firmowy zaprojektowany dla handlu detalicznego, gastronomii, hotelarstwa, magazynu i logistyki wewnętrznej. Zastępuje konsumenckie iPady i tablety Samsung, oferując pełną wytrzymałość przemysłową, wbudowany skaner kodów kreskowych i gwarantowane wsparcie producenta.
 
 Cienka i lekka konstrukcja (11,4 mm grubości, 485 g w wersji 8″) wygląda jak tablet konsumencki, ale oferuje klasę ochrony IP65, odporność na upadki z 1,2 m na beton (MIL-STD-810H) oraz pracę w temperaturach od -20°C do +50°C. Wymienialna bateria PowerPrecision z możliwością hot-swap — wymiana w kilka sekund bez wyłączania tabletu.
 
@@ -26379,9 +26379,9 @@ ET40 to wersja Wi-Fi only z serii ET4x — jeśli potrzebujesz łączności kom�
     slug: 'zebra-et45',
     name: 'Zebra ET45',
     seoTitle: 'Tablet przemysłowy Zebra ET45 — 5G, Wi-Fi 6, IP65, skaner kodów, Android',
-    seoDescription: 'Zebra ET45 — wzmocniony tablet firmowy 8″ i 10″ z 5G/LTE, skanerem kodów SE4710, Wi-Fi 6, IP65, MIL-STD-810H. Od 3 040 zł netto. TAKMA — autoryzowany partner Zebra.',
+    seoDescription: 'Tablet Zebra ET45 — wzmocniony tablet firmowy 8″ i 10″ z 5G/LTE, skanerem kodów SE4710, Wi-Fi 6, IP65, MIL-STD-810H. Od 3 040 zł netto. Tablet przemysłowy Zebra ET45 z GPS do pracy terenowej. TAKMA — autoryzowany partner Zebra.',
     shortDescription: 'Wzmocniony tablet firmowy z 5G/LTE — Wi-Fi 6, IP65, wbudowany skaner, wymienialna bateria',
-    description: `Dla kogo? Zebra ET45 to wzmocniony tablet firmowy z łącznością komórkową 5G/LTE, zaprojektowany dla pracowników terenowych, kurierów, serwisantów, kierowców flot i zespołów pracujących poza zasięgiem Wi-Fi. To wersja z modułem WWAN serii ET4x — identyczna konstrukcja, wytrzymałość i akcesoria jak ET40, ale z pełną łącznością mobilną.
+    description: `Dla kogo? Tablet Zebra ET45 to wzmocniony tablet firmowy z łącznością komórkową 5G/LTE, zaprojektowany dla pracowników terenowych, kurierów, serwisantów, kierowców flot i zespołów pracujących poza zasięgiem Wi-Fi. To wersja z modułem WWAN serii ET4x — identyczna konstrukcja, wytrzymałość i akcesoria jak ET40, ale z pełną łącznością mobilną.
 
 Cienka i lekka konstrukcja (11,4 mm grubości, 490 g w wersji 8″) z klasą ochrony IP65, odpornością na upadki z 1,2 m na beton (MIL-STD-810H) i pracą w temperaturach od -20°C do +50°C. Wymienialna bateria PowerPrecision z możliwością hot-swap — wymiana w kilka sekund bez wyłączania tabletu.
 
@@ -26570,9 +26570,9 @@ ET45 to wersja z 5G — jeśli pracujesz wyłącznie w zasięgu Wi-Fi, tańszym 
     slug: 'zebra-et60',
     name: 'Zebra ET60',
     seoTitle: 'Tablet przemysłowy Zebra ET60 — do chłodni -30°C, IP66, podgrzewany ekran 1000 nit',
-    seoDescription: 'Zebra ET60 — ekstremalny tablet rugged 10″ do chłodni i mroźni (-30°C). Podgrzewany ekran 1000 nit, skaner SE55 (12 m), IP66, hot-swap baterii, Android/Windows. Od 6 346 zł netto. TAKMA — autoryzowany partner Zebra.',
+    seoDescription: 'Tablet Zebra ET60 — ekstremalny tablet rugged 10″ do chłodni i mroźni (-30°C). Podgrzewany ekran 1000 nit, skaner SE55 (12 m), IP66, hot-swap baterii. Od 6 346 zł netto. Tablet przemysłowy Zebra ET60 Android/Windows. TAKMA — autoryzowany partner Zebra.',
     shortDescription: 'Ekstremalny tablet przemysłowy do chłodni -30°C — podgrzewany ekran 1000 nit, IP66, skaner SE55',
-    description: `Dla kogo? Zebra ET60 to ekstremalny tablet przemysłowy zaprojektowany do pracy w najtrudniejszych warunkach: mroźnie do -30°C, chłodnie, doki załadunkowe, praca na zewnątrz w deszczu i śniegu, a także montaż na wózkach widłowych w zimnych magazynach. To jedyny tablet Android na rynku certyfikowany do ciągłej pracy w temperaturach poniżej -20°C.
+    description: `Dla kogo? Tablet Zebra ET60 to ekstremalny tablet przemysłowy zaprojektowany do pracy w najtrudniejszych warunkach: mroźnie do -30°C, chłodnie, doki załadunkowe, praca na zewnątrz w deszczu i śniegu, a także montaż na wózkach widłowych w zimnych magazynach. To jedyny tablet Android na rynku certyfikowany do ciągłej pracy w temperaturach poniżej -20°C.
 
 Ekran 10,1 cala WUXGA (1920×1200) o jasności 1000 nit jest czytelny nawet w pełnym słońcu i w warunkach zamglenia w chłodniach. W stacji dokującej pojazdu ekran jest podgrzewany — nie zaparuje ani nie zamarznie. Tryb mokry filtruje fałszywe dotknięcia od kropel wody i kondensatu, tryb rękawicowy obsługuje grube rękawice mroźnicze. Gorilla Glass chroni przed zarysowaniami.
 
