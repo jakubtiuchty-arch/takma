@@ -54,7 +54,7 @@ export async function middleware(request: NextRequest) {
       'newland-mcd9350-01', 'newland-mcd9350-4b', 'newland-pg93-01', 'newland-mrb9350',
       // Skanery Newland
       'newland-hr23-dorada', 'newland-hr33-marlin', 'newland-hr11-aringa', 'newland-hr15-wahoo',
-      'newland-std23-33-sa', 'newland-std30i', 'newland-std20i',
+      'newland-std23-33-sa', 'newland-std30i', 'newland-std20i', 'newland-nvh300', 'newland-std300',
       // RFID — usunięte
       // Skanery
       'zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds8178', 'zebra-li2208',

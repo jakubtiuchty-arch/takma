@@ -183,7 +183,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208, DS3678-SR — gwarancja 5 lat. Skanery przewodowe i bezprzewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies i Newland — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Newland HR23 Dorada — ekonomiczny 2D z gwarancją 5 lat. DS3678-SR bezprzewodowy ultra-rugged do magazynów. DS9908 hybrydowy prezentacyjny do kas POS. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 24,
+    productCount: 25,
   },
   {
     id: 'tablety-przemyslowe',
@@ -825,8 +825,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Skanery kodów kreskowych przewodowe USB od 352 zł netto. Zebra DS2208 — imager 2D, IP52, 5 lat gwarancji. Do kas, aptek, biur i magazynów. Autoryzowany partner Zebra — doradztwo i serwis.',
     longDescription: 'Przewodowe czytniki kodów kreskowych (skanery USB / RS-232) — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania. Imager 2D odczytuje kody 1D, QR, DataMatrix i kody z ekranów. Zebra DS2208 (IP52, 5 lat gwarancji) — idealna na stałe stanowiska kasowe, apteki, przyjęcia towaru.',
     icon: 'scan',
-    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er', 'newland-hr23-dorada', 'newland-hr33-marlin', 'newland-hr11-aringa', 'newland-hr15-wahoo'],
-    productCount: 14,
+    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er', 'newland-hr23-dorada', 'newland-hr33-marlin', 'newland-hr11-aringa', 'newland-hr15-wahoo', 'newland-nvh300'],
+    productCount: 15,
   },
   {
     id: 'skanery-bezprzewodowe',
@@ -12345,6 +12345,141 @@ Gwarancja producenta 5 lat (60 miesięcy) — najdłuższa gwarancja wśród ska
     ],
     createdAt: '2026-03-01',
   },
+  // =====================================================
+  // Newland NVH300 Angler DP — przemysłowy skaner DPM
+  // =====================================================
+  {
+    id: 'newland-nvh300',
+    slug: 'newland-nvh300',
+    name: 'Newland NVH300 Angler DP',
+    sameAs: 'https://www.newland-id.com/en/products/handheld-scanners/nvh300-angler-dp',
+    shortDescription: 'Przemysłowy skaner DPM z megapikselowym sensorem 1280×960 — IP64, upadek z 1.8 m, 3-kolorowe LED, 5 lat gwarancji',
+    description: `Dla kogo? Newland NVH300 Angler DP to przemysłowy skaner kodów kreskowych DPM (Direct Part Marking) przeznaczony do odczytu kodów znakowanych bezpośrednio na częściach metalowych, plastikowych i szklanych — metodą dot peen (igłową), grawerowania laserowego, trawienia chemicznego, druku atramentowego i natrysku termicznego. Idealny dla produkcji motoryzacyjnej, lotniczej, elektronicznej, farmaceutycznej i metalurgicznej, gdzie wymagana jest pełna identyfikowalność (traceability) komponentów.
+
+Megapikselowy sensor CMOS 1280×960 pikseli z celownikiem laserowym 650 nm odczytuje kody DPM na najtrudniejszych powierzchniach — polerowanym metalu, aluminium, odlewach, PCB i elementach tłoczonych. Unikalne w tej klasie cenowej trójkolorowe oświetlenie LED (białe + czerwone + niebieskie) z automatycznym doborem koloru i kąta padania światła zapewnia najlepszy kontrast dla każdego typu znakowania. Pole widzenia 41° × 31°, tolerancja ruchu do 2 m/s.
+
+Porównanie cenowe: NVH300 kosztuje ok. 1 000 zł netto — to 3–5× mniej niż konkurencyjne skanery DPM: Zebra DS3608-DP (ok. 5 000 zł), Datalogic PowerScan 9600 DPX (ok. 4 500 zł), Honeywell Granit 1920i (ok. 4 000 zł). Przy tym NVH300 oferuje ten sam megapikselowy sensor co Zebra DS3608 i najdłuższą gwarancję w klasie (5 lat vs 3 lata u konkurencji).
+
+Obsługiwane kody: 1D (EAN-13, EAN-8, UPC-A/E, Code 128, Code 39, Code 93, GS1-128, GS1 DataBar, Codabar, ITF), 2D (QR Code, Micro QR, Data Matrix, PDF417, Micro PDF417, Aztec) oraz kody DPM na każdym typie podłoża. Minimalny kontrast 20% — odczytuje nawet wyblakłe i niskokontrastowe znakowania.
+
+Klasa ochrony IP64 (pyłoszczelny + bryzgi wody), odporność na upadek z 1,8 m na beton, ESD ±16 kV (powietrze) / ±8 kV (kontakt), temperatura pracy od -20°C do +50°C. Waga 245 g — najlżejszy skaner DPM na rynku (Zebra DS3608: 304 g, Datalogic: ~350 g).
+
+Interfejs USB lub RS-232. Kabel USB prosty 2 m w zestawie (złącze RJ45 po stronie skanera). Konfiguracja przez oprogramowanie NSet (EasySetEX) — zaawansowane ustawienia oświetlenia DPM, aktywacja symbologii, formaty danych. Sygnalizacja: buzzer, 2-kolorowa LED, wibracje.
+
+Kompromisy: IP64 (nie IP67 jak Zebra DS3608), upadek 1,8 m (nie 2,4 m), brak wersji bezprzewodowej, brak Ethernet przemysłowego (EtherNet/IP, Profinet). Jeśli potrzebujesz IP67, zasięgu BT lub integracji z siecią przemysłową — Zebra DS3608-DP lub DS3678-DP to bezpieczny, ale 5× droższy wybór.
+
+Opcjonalna podstawka STD300 (składana, auto-sense) do pracy prezentacyjnej hands-free. Pełna specyfikacja — w dokumentacji Newland EMEA.`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-przewodowe'],
+    manufacturerId: 'newland',
+    tags: ['produkcja', 'logistyka', 'magazyn'],
+    images: [],
+    imageDescriptions: [],
+    seoTitle: 'Newland NVH300 Angler DP — skaner DPM, 1280×960 CMOS, IP64 | TAKMA',
+    seoDescription: 'Przemysłowy skaner DPM Newland NVH300 Angler DP: megapikselowy CMOS 1280×960, 3-kolorowe LED, IP64, 1.8 m drop, 5 lat gwarancji. 3–5× tańszy od Zebra DS3608-DP. Cena i dostępność.',
+    isNew: true,
+    isBestseller: false,
+    availability: 'unavailable',
+    specifications: [
+      { name: 'Typ skanera', value: 'Imager 2D DPM (Direct Part Marking) przewodowy' },
+      { name: 'Sensor obrazowy', value: '1280 × 960 CMOS (megapikselowy)' },
+      { name: 'Celownik', value: 'Dioda laserowa 650 nm' },
+      { name: 'Oświetlenie', value: 'Białe LED bezpośrednie + czerwone i niebieskie pierścieniowe LED dyfuzyjne' },
+      { name: 'Rozdzielczość', value: '≥ 3,3 mil (Code 39), ≥ 5 mil (Data Matrix/QR)' },
+      { name: 'Minimalny kontrast', value: '20%' },
+      { name: 'Tolerancja ruchu', value: 'Do 2 m/s' },
+      { name: 'Skanowane kody 1D', value: 'EAN-13, EAN-8, UPC-A/E, Code 128, Code 39, Code 93, Code 11, GS1-128, GS1 DataBar (wszystkie), Codabar, ITF, Matrix 25, Industrial 25, MSI Plessey' },
+      { name: 'Skanowane kody 2D', value: 'QR Code, Micro QR, Data Matrix, PDF417, Micro PDF417, Aztec' },
+      { name: 'Kody DPM', value: 'Dot peen (igłowe), grawerowanie laserowe, trawienie chemiczne, inkjet, natrysk termiczny' },
+      { name: 'Zasięg Code 39 (5 mil)', value: '18–90 mm' },
+      { name: 'Zasięg Data Matrix (10 mil)', value: '0–90 mm' },
+      { name: 'Zasięg QR Code (10 mil)', value: '0–90 mm' },
+      { name: 'Pole widzenia', value: '41° (H) × 31° (V)' },
+      { name: 'Kąty odczytu', value: 'Pitch ±60°, Roll 360°, Skew ±55°' },
+      { name: 'Interfejs', value: 'USB (emulacja klawiatury / COM), RS-232' },
+      { name: 'Złącze skanera', value: 'RJ45' },
+      { name: 'Kabel w zestawie', value: 'USB prosty 2 m (CBL-RJUA-S20-4)' },
+      { name: 'Powiadomienia', value: 'Buzzer, 2-kolorowa LED, wibracje' },
+      { name: 'Wymiary', value: '76 × 107 × 185 mm' },
+      { name: 'Waga', value: '245 g (bez kabla)' },
+      { name: 'IP', value: 'IP64' },
+      { name: 'Odporność na upadek', value: '1,8 m na beton' },
+      { name: 'Temperatura pracy', value: '-20°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
+      { name: 'Wilgotność', value: '5% – 95% (bez kondensacji)' },
+      { name: 'ESD', value: '±8 kV (kontakt), ±16 kV (powietrze)' },
+      { name: 'Zasilanie', value: '5 V DC ±5%, 450 mA typowy / 475 mA maks.' },
+      { name: 'Certyfikaty', value: 'CE, FCC Part 15 Class B, RoHS' },
+      { name: 'Gwarancja', value: '5 lat (60 miesięcy)' },
+    ],
+    applications: [
+      'Produkcja motoryzacyjna — traceability części metalowych (dot peen, laser etch)',
+      'Przemysł lotniczy i obronny — identyfikacja komponentów (MIL-STD)',
+      'Produkcja elektroniczna — kody Data Matrix na PCB i komponentach SMD',
+      'Farmacja — kody 2D na opakowaniach i pojemnikach laboratoryjnych',
+      'Metalurgia i odlewnie — odczyt kodów na surowych odlewach i elementach tłoczonych',
+      'Logistyka przemysłowa — weryfikacja oznaczeń DPM na paletach i kontenerach',
+    ],
+    variants: [
+      {
+        partNumber: 'NLS-NVH300-D0',
+        name: 'NVH300 Angler DP — przewodowy, kabel USB 2 m, DPM',
+        availability: 'unavailable',
+        attributes: { 'Oświetlenie': 'Białe + czerwone + niebieskie LED' },
+      },
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: ['newland-std300'],
+    faq: [
+      {
+        question: 'Co to jest DPM i do czego służy skaner DPM?',
+        answer: 'DPM (Direct Part Marking) to technologia znakowania kodów bezpośrednio na powierzchni części — bez etykiet. Kody DPM są grawerowane laserowo, nabijane igłowo (dot peen), trawione chemicznie lub drukowane atramentowo na metalu, plastiku, szkle i ceramice. Skaner DPM jak NVH300 jest niezbędny w produkcji motoryzacyjnej, lotniczej i elektronicznej, gdzie wymagana jest pełna identyfikowalność (traceability) komponentów przez cały cykl życia.',
+      },
+      {
+        question: 'Jakie rodzaje kodów DPM odczytuje NVH300 Angler DP?',
+        answer: 'NVH300 czyta kody DPM znakowane metodami: dot peen (igłowe), grawerowanie laserowe, trawienie chemiczne, druk atramentowy (inkjet), odlew formowy i natrysk termiczny. Obsługuje kody 1D i 2D (Data Matrix, QR Code, PDF417, Aztec) na powierzchniach metalowych (stal, aluminium, odlewy), plastikowych, szklanych i ceramicznych. Trójkolorowe oświetlenie LED (białe + czerwone + niebieskie) automatycznie dobiera najlepszy kolor dla danego materiału.',
+      },
+      {
+        question: 'Czym różni się NVH300 od Zebra DS3608-DP?',
+        answer: 'NVH300 kosztuje ok. 1 000 zł netto — 3–5× mniej niż Zebra DS3608-DP (ok. 5 000 zł). Oba mają megapikselowy sensor (1280×960). NVH300 ma unikalne 3-kolorowe LED (biały + czerwony + niebieski), jest lżejszy (245 g vs 304 g) i ma dłuższą gwarancję (5 lat vs 3 lata). Zebra DS3608-DP oferuje wyższe IP67 (vs IP64), lepszą odporność na upadek (2,4 m vs 1,8 m), Ethernet przemysłowy (EtherNet/IP, Profinet) i wersję bezprzewodową DS3678-DP. Wybierz NVH300, gdy liczy się budżet. Wybierz Zebra DS3608-DP, gdy potrzebujesz IP67, BT lub integracji z siecią przemysłową.',
+      },
+      {
+        question: 'Jak działa trójkolorowe oświetlenie LED w NVH300?',
+        answer: 'NVH300 wyposażony jest w trzy kolory LED: białe bezpośrednie, czerwone pierścieniowe i niebieskie pierścieniowe. Oprogramowanie NSet automatycznie dobiera kolor i kąt padania światła dla optymalnego kontrastu na danym materiale — np. niebieskie LED lepiej wydobywają kody dot peen na polerowanym aluminium, czerwone na ciemnym metalu, białe na matowych powierzchniach. To unikalna cecha w tej klasie cenowej.',
+      },
+      {
+        question: 'Jaka jest klasa IP i wytrzymałość NVH300?',
+        answer: 'IP64 (pyłoszczelny + odporny na bryzgi wody), upadek z 1,8 m na beton, ESD ±16 kV (powietrze) / ±8 kV (kontakt), temperatura pracy od -20°C do +50°C. Solidna konstrukcja przemysłowa na hale produkcyjne i magazyny. Dla porównania: Zebra DS3608-DP ma IP67 i upadek 2,4 m, ale kosztuje 5× więcej.',
+      },
+      {
+        question: 'Czy NVH300 jest dostępny w wersji bezprzewodowej?',
+        answer: 'Nie — NVH300 Angler DP jest dostępny wyłącznie w wersji przewodowej (USB lub RS-232). Jeśli potrzebujesz skanera DPM bezprzewodowego — rozważ Zebra DS3678-DP (Bluetooth, ok. 5 500 zł netto) lub Datalogic PowerScan PM9600-DPX (bezprzewodowy STAR 433 MHz, ok. 5 000 zł). NVH300 to najlepszy wybór, gdy stałe połączenie kablowe nie jest ograniczeniem.',
+      },
+      {
+        question: 'Jak skonfigurować Newland NVH300?',
+        answer: 'Przez oprogramowanie NSet (dawniej EasySetEX) od Newland — zaawansowana konfiguracja parametrów DPM, oświetlenia (kolor, intensywność, kąt), aktywacja symbologii, ustawienia interfejsu i formaty danych. NSet pozwala też na inteligentny auto-tuning oświetlenia pod konkretny typ kodu DPM. Dostępne bezpłatnie na stronie Newland.',
+      },
+      {
+        question: 'Jaka jest gwarancja na NVH300 Angler DP?',
+        answer: 'Gwarancja producenta 5 lat (60 miesięcy) — najdłuższa gwarancja wśród skanerów DPM na rynku. Zebra DS3608-DP, Datalogic PowerScan 9600 DPX i Honeywell Granit 1920i mają standardową gwarancję 3 lata. Serwis w Polsce realizowany przez autoryzowanych partnerów Newland.',
+      },
+      {
+        question: 'Do jakich branż nadaje się NVH300?',
+        answer: 'Produkcja motoryzacyjna (traceability części), przemysł lotniczy i obronny (MIL-STD), elektronika (PCB, SMD), farmacja (pojemniki laboratoryjne), metalurgia i odlewnie (surowe odlewy), energetyka (turbiny, rurociągi). Wszędzie tam, gdzie kody są znakowane bezpośrednio na częściach — bez etykiet.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Newland NVH300 Angler DP?',
+        answer: 'W segmencie przemysłowym DPM: Zebra DS3608-DP (ok. 5 000 zł netto — IP67, Ethernet przemysłowy, BT w DS3678-DP), Datalogic PowerScan 9600 DPX (ok. 4 500 zł — IP67, bezprzewodowy STAR), Honeywell Granit 1920i (ok. 4 000 zł — IP65, BT opcja). NVH300 to jedyny skaner DPM w przedziale cenowym poniżej 1 100 zł netto z megapikselowym sensorem i 5-letnią gwarancją.',
+      },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa NVH300 Angler DP (EN)', type: 'datasheet', url: '/downloads/newland/NVH300-Angler-DP-Datasheet.pdf', size: '867 KB' },
+      { name: 'Instrukcja obsługi NVH300 (EN)', type: 'manual', url: '/downloads/newland/NVH300-User-Guide.pdf', size: '8,8 MB' },
+      { name: 'Sterownik OPOS Newland Scanner V1.2.0', type: 'software', url: '/downloads/newland/OPOS_Newland_Scanner_V1.2.0.zip', size: '1,1 MB' },
+      { name: 'NSet (EasySetEX) — oprogramowanie konfiguracyjne (strona producenta)', type: 'software', url: 'https://www.newland-id.com/en/software/easyset', size: 'Online' },
+    ],
+    createdAt: '2026-03-01',
+  },
 ]
 
 // Akcesoria Newland HR23
@@ -12436,6 +12571,43 @@ const newlandHR23Accessories: Product[] = [
         partNumber: 'NLS-STD20I-22',
         name: 'STD20i — podstawka Smartstand do HR15',
         availability: 'available',
+        attributes: {},
+      },
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: [],
+    faq: [],
+    downloads: [],
+    createdAt: '2026-03-01',
+  },
+  {
+    id: 'newland-std300',
+    slug: 'newland-std300',
+    name: 'Newland STD300 — podstawka składana do NVH300',
+    shortDescription: 'Składana podstawka auto-sense do skanera NVH300 Angler — tryb hands-free',
+    description: 'Podstawka Newland STD300 do skanera przemysłowego NVH300 Angler DP. Składana konstrukcja z regulowanym kątem. Tryb auto-sense wykrywa zbliżenie kodu i skanuje automatycznie bez naciskania przycisku. Do stałych stanowisk kontroli jakości i weryfikacji DPM.',
+    categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow'],
+    manufacturerId: 'newland',
+    tags: ['produkcja'],
+    images: [],
+    imageDescriptions: [],
+    seoTitle: 'Newland STD300 — podstawka do skanera NVH300 Angler | TAKMA',
+    seoDescription: 'Podstawka Newland STD300 do skanera przemysłowego NVH300 Angler DP. Składana, auto-sense, tryb hands-free.',
+    isNew: false,
+    isBestseller: false,
+    availability: 'unavailable',
+    specifications: [
+      { name: 'Part Number', value: 'NLS-STD300' },
+      { name: 'Kompatybilność', value: 'Newland NVH300 Angler DP' },
+      { name: 'Typ', value: 'Podstawka składana, auto-sense' },
+    ],
+    applications: [],
+    variants: [
+      {
+        partNumber: 'NLS-STD300',
+        name: 'STD300 — podstawka składana do NVH300',
+        availability: 'unavailable',
         attributes: {},
       },
     ],

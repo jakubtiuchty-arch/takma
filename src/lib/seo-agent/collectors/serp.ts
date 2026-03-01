@@ -230,6 +230,15 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'newland hr15 cena', group: 'skanery-newland' },
   { keyword: 'newland hr1550', group: 'skanery-newland' },
   { keyword: 'czytnik kodów 1d pdf417', group: 'skanery-newland' },
+  // NVH300 Angler DP (DPM)
+  { keyword: 'newland nvh300', group: 'skanery-newland' },
+  { keyword: 'skaner dpm newland nvh300', group: 'skanery-newland' },
+  { keyword: 'czytnik dpm newland', group: 'skanery-newland' },
+  { keyword: 'newland nvh300 cena', group: 'skanery-newland' },
+  { keyword: 'skaner dpm', group: 'skanery-newland' },
+  { keyword: 'czytnik kodów dpm przemysłowy', group: 'skanery-newland' },
+  { keyword: 'skaner kodów na metalu', group: 'skanery-newland' },
+  { keyword: 'tani skaner dpm', group: 'skanery-newland' },
   // Generyczne Newland skanery
   { keyword: 'skaner newland', group: 'skanery-newland' },
   { keyword: 'czytnik kodów kreskowych newland', group: 'skanery-newland' },
