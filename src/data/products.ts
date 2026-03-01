@@ -27896,6 +27896,94 @@ W zestawie: terminal, bateria 5 000 mAh, etui ochronne, folia na ekran, pasek na
     ],
     createdAt: '2026-03-01',
   },
+  {
+    id: 'newland-mt95-kambur-pro-ii',
+    slug: 'newland-mt95-kambur-pro-ii',
+    name: 'Newland MT95 Kambur Pro II',
+    shortDescription: 'Terminal mobilny 6.1" z Android 13, 5G, Wi-Fi 6, skanerem 2D DE5L, baterią 6000 mAh i IP67',
+    description: `Dla kogo? Newland MT95 Kambur Pro II to flagowy terminal mobilny Newland z 5G i Wi-Fi 6, zaprojektowany dla dużych operacji logistycznych, centrów dystrybucji, sieci retail i serwisu polowego — wszędzie tam, gdzie wymagana jest łączność 5G, duży ekran i całodzienna praca bez ładowania. Certyfikat Android Enterprise Recommended (AER) gwarantuje regularne aktualizacje bezpieczeństwa i pełną kompatybilność z systemami MDM enterprise.
+
+Czym wyróżnia się MT95 Kambur Pro II? To jedyny terminal Newland z łącznością 5G NR (pasma N1/N3/N5/N8/N28/N38/N41/N77/N78/N79) i jednocześnie Wi-Fi 6 (802.11ax). Dual SIM (2× nano) umożliwia korzystanie z dwóch operatorów — np. roaming bez zmiany karty. Pełna kompatybilność wsteczna z 4G LTE (FDD: B1/B2/B3/B5/B7/B8/B20/B28, TDD: B34/B38/B39/B40/B41), 3G i 2G na wypadek braku zasięgu 5G.
+
+Ekran 6.1" HD+ (720×1560) z wzmocnionym szkłem Gorilla Glass, jasność 500 nit — czytelny nawet w pełnym słońcu. 5-punktowy ekran pojemnościowy z obsługą w rękawiczkach. Konstrukcja smukła (15.5 mm) przy wadze 287 g — porównywalna z flagowymi smartfonami konsumenckimi, ale z obudową IP67 i certyfikatem upadku z 1.5 m na beton.
+
+Skaner 2D megapikselowy CMOS Newland DE5L z celownikiem laserowym i technologią AcuScan. Sensor CMOS o wysokiej rozdzielczości dekoduje kody 1D i 2D — nawet uszkodzone, zadrukowane lub wyświetlane na ekranie. Tryb pick-list AcuScan odczytuje wyłącznie kod wskazany laserem, ignorując sąsiednie etykiety. Zasięg: EAN-13 (13mil) 70–600 mm, Code 39 (5mil) 120–280 mm, QR (15mil) 55–400 mm, Data Matrix (10mil) 110–260 mm, PDF417 (6.7mil) 110–230 mm. Obsługiwane symbologie: Code 128, EAN-8/13, UPC-A/E, ITF, Codabar, Code 93, GS1 DataBar, QR, Micro QR, Data Matrix, PDF417, Aztec, Han Xin, MaxiCode, Composite.
+
+Procesor 2.4 GHz octa-core 64-bit z 6 GB RAM i 128 GB Flash zapewnia płynną pracę wielu aplikacji jednocześnie. System Android 13 GMS z certyfikatem AER — pełny dostęp do Google Play, Chrome i ekosystemu aplikacji enterprise. Kompatybilność z WMS: Comarch WMS, SAP Mobile, Microsoft Dynamics, Simple WMS, Qguar. Zarządzanie flotą: Newland Ndevor (bezpłatny), SOTI MobiControl, AirWatch, 42 Gears.
+
+Bateria 6 000 mAh Li-Ion (3.85V) — o 20% większa niż w MT93 — zapewnia całodzienny czas pracy bez ładowania. Szybkie ładowanie 18W USB Type-C. Bateria wymienna — do pracy zmianowej 24/7 wystarczą 2 baterie na stanowisko. Opcjonalna ładowarka 4-gniazdowa NLS-MCD95-4B do jednoczesnego ładowania 4 baterii zapasowych.
+
+Kamery: tylna 13 MP z autofokusem fazowym (PDAF) i lampą LED do dokumentacji fotograficznej towarów i uszkodzeń, przednia 8 MP do wideokonferencji i weryfikacji tożsamości. Bluetooth 5.2 BLE, NFC 13.56 MHz (ISO14443A/B, ISO15693, ISO18000-3, MIFARE, FeliCa — obsługa kart zbliżeniowych, tagów RFID HF i płatności mobilnych). GPS z AGPS, GLONASS, BeiDou i Galileo — cztery systemy nawigacyjne dla precyzyjnej lokalizacji w terenie.
+
+Obudowa IP67 — pełna pyłoszczelność i odporność na zanurzenie w wodzie do 1 m przez 30 minut. Upadki z 1.5 m na beton (6 stron). Temperatura pracy od -20°C do +50°C, przechowywania od -30°C do +60°C. ESD ±15 kV (powietrze) / ±8 kV (kontakt). Czujniki: zbliżeniowy, magnetometr, światła, akcelerometr, żyroskop.
+
+W zestawie: terminal, bateria 6 000 mAh, etui ochronne, folia na ekran, pasek na rękę, kabel USB-C, adapter z wieloma wtyczkami (EU/UK/US). Zarządzanie flotą przez bezpłatną platformę MDM Newland Ndevor. Gwarancja producenta 2 lata z opcją przedłużenia do 3 lub 5 lat (Comprehensive Service). Wersja ekonomiczna bez 5G: Newland MT93 Megattera Standard.`,
+    categoryId: 'terminale-mobilne',
+    subcategoryIds: ['terminale-newland'],
+    manufacturerId: 'newland',
+    tags: ['magazyn', 'logistyka', 'retail', 'outdoor'],
+    images: ['/images/products/NLS-MT9556-W5.png'],
+    imageDescriptions: ['Newland MT95 Kambur Pro II — terminal mobilny 6.1 cala z 5G, ekranem Android 13, skanerem 2D i żółtymi przyciskami skanowania'],
+    seoTitle: 'Newland MT95 Kambur Pro II — terminal mobilny 6.1" z 5G i Wi-Fi 6 | TAKMA',
+    seoDescription: 'Terminal mobilny Newland MT95 Kambur Pro II: Android 13 AER, 5G, Wi-Fi 6, 6 GB RAM, skaner 2D DE5L, bateria 6000 mAh, IP67. Cena i dostępność w TAKMA.',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'NLS-MT9556-W5' },
+      { name: 'System operacyjny', value: 'Android 13 GMS (AER)' },
+      { name: 'Procesor', value: 'Octa-core 64-bit, 2.4 GHz' },
+      { name: 'Pamięć RAM', value: '6 GB' },
+      { name: 'Pamięć Flash', value: '128 GB (microSD)' },
+      { name: 'Wyświetlacz', value: '6.1" HD+ (720×1560), 5-point capacitive, Gorilla Glass, 500 nit' },
+      { name: 'Skaner', value: '2D Megapixel CMOS DE5L, celownik laserowy, AcuScan' },
+      { name: 'Kamera tylna', value: '13 MP z autofokusem PDAF i lampą LED' },
+      { name: 'Kamera przednia', value: '8 MP' },
+      { name: '5G NR', value: 'N1, N3, N5, N8, N28, N38, N41, N77, N78, N79' },
+      { name: '4G LTE', value: 'FDD: B1/B2/B3/B5/B7/B8/B20/B28, TDD: B34/B38/B39/B40/B41' },
+      { name: 'Wi-Fi', value: '802.11 a/b/g/n/ac/ax (Wi-Fi 6), dual-band 2.4 + 5 GHz' },
+      { name: 'Bluetooth', value: '5.2 BLE' },
+      { name: 'NFC', value: '13.56 MHz (ISO14443A/B, ISO15693, ISO18000-3, MIFARE, FeliCa)' },
+      { name: 'GPS', value: 'AGPS, GLONASS, BeiDou, Galileo' },
+      { name: 'USB', value: 'Type-C 2.0 OTG' },
+      { name: 'Bateria', value: '6 000 mAh Li-Ion, wymienna, 3.85 V' },
+      { name: 'Szybkie ładowanie', value: '18W USB-C' },
+      { name: 'Klasa ochrony', value: 'IP67' },
+      { name: 'Upadki', value: '1.5 m na beton' },
+      { name: 'Temperatura pracy', value: '-20°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-30°C do +60°C' },
+      { name: 'Wymiary', value: '165 × 78.5 × 15.5 mm' },
+      { name: 'Waga', value: '287 g (z baterią)' },
+      { name: 'SIM', value: 'Dual nano SIM' },
+      { name: 'Sensory', value: 'Zbliżeniowy, magnetometr, światła, akcelerometr, żyroskop' },
+      { name: 'ESD', value: '±15 kV (powietrze), ±8 kV (kontakt)' },
+      { name: 'Certyfikaty', value: 'Android Enterprise Recommended (AER), GMS' },
+      { name: 'MDM', value: 'Newland Ndevor (bezpłatny), SOTI, AirWatch, 42 Gears' },
+      { name: 'Gwarancja', value: '2 lata (opcja +1 lub +3 lata)' },
+      { name: 'W zestawie', value: 'Etui, folia, pasek na rękę, kabel USB-C, adapter EU, bateria' },
+    ],
+    applications: ['Centrum logistyczne z infrastrukturą 5G', 'Sieć retail — obsługa klienta na hali sprzedaży', 'Dostawy last-mile i logistyka miejska', 'Serwis polowy z łącznością 5G', 'Inwentaryzacja w terenie z GPS', 'Hospitality i obsługa eventów'],
+    priceFrom: 3546,
+    availability: 'unavailable',
+    compatibleAccessories: [],
+    relatedAccessories: ['newland-mcd95-1c', 'newland-mcd95-4b', 'newland-mpg95-01', 'newland-rb95-01'],
+    faq: [
+      { question: 'Czym różni się MT95 Kambur Pro II od MT93 Megattera?', answer: 'MT95 to flagowy terminal Newland z 5G, większym ekranem (6.1" vs 5.5"), mocniejszym procesorem (2.4 vs 2.2 GHz), więcej RAM (6 vs 4 GB), więcej Flash (128 vs 64 GB), większą baterią (6000 vs 5000 mAh), lepszą kamerą przednią (8 vs 5 MP), IP67 (vs IP65 w Standard), certyfikatem AER i GPS z BeiDou/Galileo. MT93 jest tańszy o ok. 1 300 zł netto — wystarczy do większości zastosowań z Wi-Fi i 4G LTE.' },
+      { question: 'Czy MT95 Kambur Pro II ma 5G?', answer: 'Tak — MT95 Kambur Pro II ma wbudowany moduł 5G NR obsługujący pasma N1/N3/N5/N8/N28/N38/N41/N77/N78/N79. Wsteczna kompatybilność z 4G LTE, 3G i 2G. To jedyny terminal Newland z łącznością 5G. Dual nano SIM umożliwia korzystanie z dwóch operatorów jednocześnie.' },
+      { question: 'Czym różni się MT95 Kambur Pro II od starszego Pro?', answer: 'MT95 Kambur Pro II (NLS-MT9556-W5) to następca MT95 Kambur Pro (NLS-MT9555-W5, wycofany w 07/2024). Główne różnice: Android 13 (vs 11), procesor 2.4 GHz (vs 2.2 GHz), Wi-Fi 6 802.11ax (vs Wi-Fi 5 802.11ac). Reszta specyfikacji identyczna. Wiele sklepów wciąż sprzedaje starszego Pro — TAKMA oferuje wyłącznie najnowszą wersję Pro II.' },
+      { question: 'Jaki skaner ma MT95 Kambur Pro II?', answer: 'Skaner 2D megapikselowy CMOS Newland DE5L z celownikiem laserowym i technologią AcuScan (precyzyjny tryb pick-list). Zasięg: EAN-13 do 60 cm, QR do 40 cm, Data Matrix do 26 cm, PDF417 do 23 cm. Dekoduje kody 1D (Code 128, EAN, UPC, ITF, GS1 DataBar) i 2D (QR, Data Matrix, PDF417, Aztec, MaxiCode, Han Xin, Composite).' },
+      { question: 'Jak długo pracuje bateria 6000 mAh w MT95?', answer: 'Bateria 6 000 mAh zapewnia całodzienny czas pracy — przy typowym użyciu (skanowanie, Wi-Fi, jasność 50%) wystarcza na pełną 10–12-godzinną zmianę. Szybkie ładowanie 18W USB-C. Bateria wymienna — do pracy 24/7 wystarczą 2 baterie. Ładowarka 4-gniazdowa [NLS-MCD95-4B](/produkt/newland-mcd95-4b) ładuje 4 baterie jednocześnie.' },
+      { question: 'Czy MT95 ma certyfikat Android Enterprise Recommended?', answer: 'Tak — MT95 Kambur Pro II (Android 13) posiada certyfikat Google AER. Oznacza to regularne aktualizacje bezpieczeństwa (min. co 90 dni), gwarantowane wsparcie OS, zero-touch enrollment i pełną kompatybilność z EMM/MDM enterprise (SOTI, AirWatch, Intune, 42 Gears). Wersja MT93 Standard i Standard Plus NIE mają AER.' },
+      { question: 'Czy MT95 Kambur Pro II jest wodoodporny?', answer: 'Tak — obudowa IP67 oznacza pełną pyłoszczelność (6) i odporność na zanurzenie w wodzie na głębokość 1 m przez 30 minut (7). Upadki z 1.5 m na beton. Dla porównania: MT93 Standard ma IP65 (strugi wody, ale bez zanurzenia), MT93 Pro ma IP67. ESD ±15 kV powietrze / ±8 kV kontakt.' },
+      { question: 'Jakie akcesoria pasują do MT95 Kambur Pro II?', answer: 'Dedykowane akcesoria MT95: stacja ładowania [NLS-MCD95-1C](/produkt/newland-mcd95-1c), ładowarka 4 baterii [NLS-MCD95-4B](/produkt/newland-mcd95-4b), uchwyt pistoletowy [NLS-MPG95-01](/produkt/newland-mpg95-01), etui ochronne [NLS-RB95-01](/produkt/newland-rb95-01). Bateria zapasowa BTY-MT95 (6000 mAh). Uwaga: akcesoria MT95 NIE są kompatybilne z MT93 (inne wymiary obudowy).' },
+      { question: 'Czy MT95 współpracuje z systemami WMS i ERP?', answer: 'Tak — Android 13 GMS z Google Play zapewnia kompatybilność z popularnymi WMS: Comarch WMS, SAP Mobile, Microsoft Dynamics, Simple WMS, Qguar. Newland SDK (Java/Kotlin) do integracji skanera z aplikacjami custom. Android Zero-Touch Enrollment do masowego wdrażania floty.' },
+      { question: 'Jakie są alternatywy dla MT95 Kambur Pro II?', answer: 'W podobnej klasie: [Zebra TC27](/produkt/zebra-tc27) (6" FHD+, 5G/LTE, Wi-Fi 6E — ok. 3 000+ zł netto), [Zebra TC78](/produkt/zebra-tc78) (6", 5G, Wi-Fi 6E, IP68 — klasa premium), [Newland MT93 Standard Plus](/produkt/newland-mt93-megattera-standard-plus) (5.5", Wi-Fi 6E, 4G LTE, od 2 207 zł — ekonomiczna alternatywa bez 5G). MT95 wyróżnia się największą baterią (6000 mAh), certyfikatem AER i łącznością 5G w cenie poniżej 3 600 zł netto.' },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa MT95 (EN)', type: 'datasheet', url: 'https://scan2id.com/wp-content/uploads/2024/11/newland-mt95-kambur-pro-ii-datasheet.pdf', size: 'PDF' },
+      { name: 'Instrukcja obsługi MT95 (EN)', type: 'manual', url: 'https://www.newland-id.com/sites/default/files/documents/2024-05/mt95_kambur_pro_ii_user_guide.pdf', size: 'PDF' },
+    ],
+    createdAt: '2026-03-01',
+  },
 ]
 
 // Akcesoria Newland N7
@@ -28167,6 +28255,125 @@ const newlandMT93Accessories: Product[] = [
   },
 ]
 
+// Akcesoria Newland MT95
+const newlandMT95Accessories: Product[] = [
+  {
+    id: 'newland-mcd95-1c',
+    slug: 'newland-mcd95-1c',
+    name: 'Newland NLS-MCD95-1C — stacja ładowania do MT95 Kambur',
+    shortDescription: 'Stacja dokująca 1-gniazdowa z ładowaniem terminala MT95, modułowa (do 4 szt.)',
+    description: 'Stacja ładowania Newland NLS-MCD95-1C do terminala MT95 Kambur Pro II. Jednogniazdowa konstrukcja umożliwia ładowanie terminala. Modułowy design — łączenie do 4 stacji w szereg (daisy-chain) na jednym zasilaczu AD60-D-M. Zasilacz zamawiany osobno (ADP710 dla pojedynczej stacji lub AD60-D-M dla 2–4 stacji).',
+    categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-terminali'],
+    manufacturerId: 'newland',
+    tags: ['magazyn'],
+    images: ['/images/products/NLS-MCD95-1C.png'],
+    imageDescriptions: ['Stacja ładowania Newland NLS-MCD95-1C do terminala MT95 Kambur Pro II — widok z przodu, jednogniazdowa'],
+    seoTitle: 'Newland NLS-MCD95-1C — stacja ładowania do MT95 Kambur | TAKMA',
+    seoDescription: 'Stacja dokująca Newland NLS-MCD95-1C do terminala MT95 Kambur Pro II. Modułowa do 4 szt. Cena i dostępność w TAKMA.',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'NLS-MCD95-1C' },
+      { name: 'Kompatybilność', value: 'Newland MT95 Kambur Pro II' },
+      { name: 'Typ', value: 'Stacja ładowania 1-gniazdowa' },
+      { name: 'Daisy-chain', value: 'Do 4 stacji w łańcuchu' },
+      { name: 'Zasilacz', value: 'Zamawiany osobno (ADP710 lub AD60-D-M)' },
+    ],
+    applications: ['Ładowanie terminala MT95 na stanowisku', 'Modułowa stacja do wielu terminali'],
+    priceFrom: 348,
+    availability: 'unavailable',
+    compatibleAccessories: [], relatedAccessories: [], downloads: [], faq: [],
+    createdAt: '2026-03-01',
+  },
+  {
+    id: 'newland-mcd95-4b',
+    slug: 'newland-mcd95-4b',
+    name: 'Newland NLS-MCD95-4B — ładowarka 4 baterii do MT95 Kambur',
+    shortDescription: 'Ładowarka 4-gniazdowa do baterii BTY-MT95 terminala MT95 Kambur',
+    description: 'Ładowarka Newland NLS-MCD95-4B do jednoczesnego ładowania 4 baterii BTY-MT95 (6 000 mAh) terminala MT95 Kambur Pro II. Idealna do pracy zmianowej 24/7. W zestawie adapter z wieloma wtyczkami (EU/UK/US/IN). Diody LED sygnalizują stan ładowania.',
+    categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-terminali'],
+    manufacturerId: 'newland',
+    tags: ['magazyn', 'logistyka'],
+    images: ['/images/products/NLS-MCD95-4B.png'],
+    imageDescriptions: ['Ładowarka 4-gniazdowa Newland NLS-MCD95-4B do baterii terminala MT95 Kambur — widok z przodu z 4 gniazdami'],
+    seoTitle: 'Newland NLS-MCD95-4B — ładowarka 4 baterii do MT95 Kambur | TAKMA',
+    seoDescription: 'Ładowarka 4-gniazdowa Newland NLS-MCD95-4B do baterii terminala MT95 Kambur Pro II. Praca zmianowa 24/7. Zamów w TAKMA.',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'NLS-MCD95-4B' },
+      { name: 'Kompatybilność', value: 'Baterie BTY-MT95 do Newland MT95 Kambur' },
+      { name: 'Typ', value: 'Ładowarka 4-gniazdowa na baterie' },
+      { name: 'Gniazda', value: '4 baterie jednocześnie' },
+      { name: 'Zasilacz', value: 'W zestawie (multi-plug adapter EU/UK/US/IN)' },
+    ],
+    applications: ['Ładowanie 4 baterii MT95 jednocześnie', 'Praca zmianowa 24/7'],
+    priceFrom: 437,
+    availability: 'unavailable',
+    compatibleAccessories: [], relatedAccessories: [], downloads: [], faq: [],
+    createdAt: '2026-03-01',
+  },
+  {
+    id: 'newland-mpg95-01',
+    slug: 'newland-mpg95-01',
+    name: 'Newland NLS-MPG95-01 — uchwyt pistoletowy do MT95 Kambur',
+    shortDescription: 'Ergonomiczny uchwyt pistoletowy (gun grip) do intensywnego skanowania z MT95',
+    description: 'Uchwyt pistoletowy Newland NLS-MPG95-01 do terminala MT95 Kambur Pro II. Forma pistoletowa ze spustem skanowania redukuje zmęczenie nadgarstka przy intensywnym skanowaniu. Ergonomiczny chwyt w rękawiczkach, pewna pozycja celowania. Dedykowany do pracy w magazynach i logistyce.',
+    categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-terminali'],
+    manufacturerId: 'newland',
+    tags: ['magazyn', 'logistyka'],
+    images: ['/images/products/NLS-MPG95-01.png'],
+    imageDescriptions: ['Uchwyt pistoletowy Newland NLS-MPG95-01 do terminala MT95 Kambur — widok boczny, forma pistoletowa'],
+    seoTitle: 'Newland NLS-MPG95-01 — uchwyt pistoletowy do MT95 Kambur | TAKMA',
+    seoDescription: 'Uchwyt pistoletowy Newland NLS-MPG95-01 do terminala MT95 Kambur Pro II. Ergonomiczny gun grip. Zamów w TAKMA.',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'NLS-MPG95-01' },
+      { name: 'Kompatybilność', value: 'Newland MT95 Kambur Pro II' },
+      { name: 'Typ', value: 'Uchwyt pistoletowy (gun grip)' },
+      { name: 'Spust', value: 'Fizyczny przycisk skanowania' },
+    ],
+    applications: ['Intensywne skanowanie w magazynie', 'Ergonomiczna praca na hali'],
+    priceFrom: 299,
+    availability: 'unavailable',
+    compatibleAccessories: [], relatedAccessories: [], downloads: [], faq: [],
+    createdAt: '2026-03-01',
+  },
+  {
+    id: 'newland-rb95-01',
+    slug: 'newland-rb95-01',
+    name: 'Newland NLS-RB95-01 — etui ochronne do MT95 Kambur',
+    shortDescription: 'Etui ochronne (rubber boot) zwiększające odporność na upadki MT95',
+    description: 'Etui ochronne Newland NLS-RB95-01 do terminala MT95 Kambur Pro II. Gumowa obudowa absorbuje uderzenia, zwiększając odporność na upadki. Pełny dostęp do ekranu, przycisków, skanera, portów i kamery. Ochrona narożników i krawędzi.',
+    categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-terminali'],
+    manufacturerId: 'newland',
+    tags: ['magazyn'],
+    images: ['/images/products/NLS-RB95-01.png'],
+    imageDescriptions: ['Etui ochronne Newland NLS-RB95-01 do terminala MT95 Kambur — gumowa obudowa rubber boot'],
+    seoTitle: 'Newland NLS-RB95-01 — etui ochronne do MT95 Kambur | TAKMA',
+    seoDescription: 'Etui ochronne Newland NLS-RB95-01 do terminala MT95 Kambur Pro II. Ochrona przed upadkami. Zamów w TAKMA.',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'NLS-RB95-01' },
+      { name: 'Kompatybilność', value: 'Newland MT95 Kambur Pro II' },
+      { name: 'Typ', value: 'Etui ochronne (rubber boot)' },
+      { name: 'Materiał', value: 'Guma wzmocniona' },
+      { name: 'Dostęp', value: 'Ekran, przyciski, skaner, USB-C, kamera' },
+    ],
+    applications: ['Ochrona terminala MT95 przed upadkami'],
+    priceFrom: 56,
+    availability: 'unavailable',
+    compatibleAccessories: [], relatedAccessories: [], downloads: [], faq: [],
+    createdAt: '2026-03-01',
+  },
+]
+
 // ============================================
 // EXPORT - WSZYSTKIE PRODUKTY
 // ============================================
@@ -28210,6 +28417,7 @@ export const products: Product[] = [
   ...newlandMobileComputers,
   ...newlandN7Accessories,
   ...newlandMT93Accessories,
+  ...newlandMT95Accessories,
 ]
 
 // Helper do pobrania produktu po slug

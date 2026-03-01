@@ -115,8 +115,8 @@ function extractAttribute(xml: string, tag: string, attr: string): string | null
 function toIngramItemId(partNumber: string): string {
   const upper = partNumber.toUpperCase()
   if (upper.startsWith('ZB') || upper.startsWith('SB') || upper.startsWith('N1')) return upper
-  // Newland products (terminals N7-*, MT93-*, accessories NLS-*, TPUN7*, SPN7*, BTY7*)
-  if (upper.startsWith('N7-') || upper.startsWith('MT93') || upper.startsWith('NLS-') || upper.startsWith('TPUN7') || upper.startsWith('SPN7') || upper.startsWith('BTY7')) return 'N1' + upper
+  // Newland products (terminals N7-*, MT93-*, MT95-*, accessories NLS-*, TPUN7*, SPN7*, BTY7*, BTY-MT*, HS-MT*, SPMT*)
+  if (upper.startsWith('N7-') || upper.startsWith('MT93') || upper.startsWith('MT95') || upper.startsWith('NLS-') || upper.startsWith('TPUN7') || upper.startsWith('SPN7') || upper.startsWith('BTY7') || upper.startsWith('BTY-MT') || upper.startsWith('HS-MT') || upper.startsWith('SPMT')) return 'N1' + upper
   // Symbol-heritage products (terminale mobilne, skanery, akcesoria mobilne)
   const sbPrefixes = ['W', 'MC', 'TC', 'CC', 'EM', 'ET', 'DS', 'LI', 'CBA-', 'SG-', 'CRD-', 'SAC-', 'BTRY-', 'TRG-', 'CBL-', 'Z1A', '20-']
   for (const prefix of sbPrefixes) {
