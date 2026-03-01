@@ -48,7 +48,7 @@ export async function middleware(request: NextRequest) {
       'datalogic-memor-30', 'datalogic-memor-35', 'datalogic-skorpio-x5', 'datalogic-memor-k',
       // Newland
       'newland-n7-cachalot-pro-ii', 'newland-mt93-megattera', 'newland-mt93-megattera-standard-plus',
-      'newland-mt95-kambur-pro-ii',
+      'newland-mt95-kambur-pro-ii', 'newland-mt37-baiji',
       'newland-mcd95-1c', 'newland-mcd95-4b', 'newland-mpg95-01', 'newland-rb95-01',
       'newland-cdn7-c', 'newland-pgn7-02', 'newland-cdn7-4b', 'newland-tpun7pg', 'newland-spn7-hybrid',
       'newland-mcd9350-01', 'newland-mcd9350-4b', 'newland-pg93-01', 'newland-mrb9350',

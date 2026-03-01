@@ -27984,6 +27984,133 @@ W zestawie: terminal, bateria 6 000 mAh, etui ochronne, folia na ekran, pasek na
     ],
     createdAt: '2026-03-01',
   },
+  {
+    id: 'newland-mt37-baiji',
+    slug: 'newland-mt37-baiji',
+    name: 'Newland MT37 Baiji',
+    shortDescription: 'Kompaktowy terminal mobilny 2.83" z klawiaturą 24-klawiszową, skanerem 2D, 4G LTE, NFC i baterią 3300 mAh — najlżejszy terminal z klawiaturą fizyczną (155 g)',
+    description: `Dla kogo? Newland MT37 Baiji to kompaktowy i najlżejszy w swojej klasie terminal mobilny z klawiaturą fizyczną, stworzony dla firm szukających budżetowego urządzenia do prostych zadań skanowania, inwentaryzacji i rejestracji danych. Waży zaledwie 155 g — niemal o połowę mniej niż Zebra MC2200 (296 g) — co czyni go idealnym wyborem do wielogodzinnej pracy jednoręcznej w gastronomii, hotelach, magazynach i handlu detalicznym.
+
+Ekran dotykowy 2,83 cala (320×240 pikseli) pojemnościowy zapewnia wystarczającą powierzchnię roboczą do nawigacji po aplikacjach i wyświetlania wyników skanowania. Klawiatura numeryczna 24-klawiszowa z podświetleniem LED pozwala na szybkie wprowadzanie ilości, kodów i numerów dokumentów — nawet w ciemnych pomieszczeniach magazynowych czy na zapleczu restauracji. Dodatkowe klawisze nawigacyjne i programowalny przycisk skanowania umożliwiają obsługę bez dotykania ekranu.
+
+Zintegrowany skaner 2D szóstej generacji Newland obsługuje wszystkie najważniejsze kody kreskowe 1D i 2D — od EAN-13 i Code 128 po QR, Data Matrix i PDF417. Silnik dekodujący szybko odczytuje nawet uszkodzone, słabo wydrukowane lub zniekształcone etykiety, co jest kluczowe przy skanowaniu opakowań w magazynie lub na ladzie sklepowej.
+
+Łączność bezprzewodowa obejmuje Wi-Fi dual-band 802.11 a/b/g/n/ac (2,4 i 5 GHz), Bluetooth 5.0 BLE oraz 4G LTE (FDD: B1/B2/B3/B5/B8, TDD: B34/B38/B39/B40/B41) z fallbackiem na 3G WCDMA i 2G GSM. Moduł 4G pozwala na pracę w terenie bez dostępu do sieci Wi-Fi — dostawy, inwentaryzacje w oddziałach czy serwis polowy. GPS z wbudowaną anteną umożliwia śledzenie pozycji kurierów i serwisantów.
+
+Moduł NFC/RFID 13,56 MHz (ISO14443A/B, MIFARE, FeliCa, tagi NFC Forum, ISO15693) otwiera dodatkowe zastosowania: kontrola dostępu, weryfikacja tożsamości, odczyt kart lojalnościowych, logowanie pracowników przez przyłożenie identyfikatora. W hotelach i gastronomii NFC służy do szybkiej identyfikacji kelnerów i rejestracji zamówień.
+
+Bateria litowo-jonowa 3 300 mAh (3,8 V) zapewnia do 10 godzin ciągłej pracy na jednym ładowaniu. Ładowanie przez USB-C na spodzie urządzenia — kompatybilne ze standardowymi ładowarkami i kablami. Bateria jest niewymienna, co upraszcza konstrukcję i zmniejsza wagę, ale oznacza, że MT37 najlepiej sprawdza się na jednej zmianie.
+
+System Android 8.1 Go z procesorem czterordzeniowym 1,8 GHz i 1 GB RAM został zoptymalizowany pod kątem lekkości i szybkości działania prostych aplikacji. Pamięć wewnętrzna 8 GB Flash wystarczy na system, jedną aplikację WMS lub POS oraz dane robocze. Android Go oznacza mniejsze wymagania systemowe i dłuższy czas pracy na baterii, ale ogranicza multitasking — MT37 to urządzenie do jednej dedykowanej aplikacji, nie do jednoczesnej pracy z wieloma programami.
+
+Obudowa wytrzymuje upadki z wysokości 1,2 m na beton (6 stron). Zakres temperatury roboczej od -20°C do +50°C pozwala na pracę w chłodniach, magazynach nieogrzewanych i na zewnątrz. Odporność ESD ±12 kV (wyładowanie powietrzne) i ±8 kV (kontakt) chroni przed elektrycznością statyczną w środowisku przemysłowym. Wymiary 158 × 59 × 18,3 mm — urządzenie mieści się w kieszeni kurtki.
+
+Oprogramowanie Newland DCAPP od Kalipso to gotowa aplikacja do gromadzenia, przesyłania i eksportowania danych. Zawiera 5 wstępnie skonfigurowanych szablonów — można rozpocząć pracę natychmiast po rozpakowaniu. Synchronizacja z komputerem lub serwerem przez Wi-Fi lub USB. Zarządzanie flotą urządzeń przez platformę MDM Newland Ndevor — konfiguracja, aktualizacje i monitoring zdalnie.
+
+Gwarancja producenta 2 lata. W zestawie: terminal, smycz na nadgarstek, rękaw ochronny. Opcjonalnie dostępny zasilacz sieciowy USB-C. Jeśli potrzebujesz terminala z większym ekranem, nowszym Androidem i wymienną baterią — rozważ Newland MT93 Megattera Standard lub Zebra MC2200.`,
+    categoryId: 'terminale-mobilne',
+    subcategoryIds: ['terminale-newland'],
+    manufacturerId: 'newland',
+    tags: ['magazyn', 'logistyka', 'retail', 'healthcare'],
+    images: ['/images/products/NLS-MT3700-W4.png', '/images/products/NLS-MT3700-W4-2.png', '/images/products/NLS-MT3700-W4-3.png'],
+    imageDescriptions: [
+      'Newland MT37 Baiji — widok z przodu, ekran dotykowy 2.83 cala i klawiatura numeryczna 24-klawiszowa',
+      'Newland MT37 Baiji — widok z tyłu, etykieta znamionowa i głośnik',
+      'Newland MT37 Baiji — widok z obu boków, przycisk skanowania i głośnik',
+    ],
+    seoTitle: 'Newland MT37 Baiji — kompaktowy terminal mobilny z klawiaturą i 4G LTE | TAKMA',
+    seoDescription: 'Terminal mobilny Newland MT37 Baiji: najlżejszy (155 g) terminal z klawiaturą fizyczną, skaner 2D, 4G LTE, NFC, Wi-Fi dual-band, bateria 3300 mAh. Idealny do inwentaryzacji, gastronomii i retail.',
+    isNew: true,
+    isBestseller: false,
+    availability: 'unavailable',
+    specifications: [
+      { name: 'Part Number', value: 'NLS-MT3700-W4' },
+      { name: 'System operacyjny', value: 'Android 8.1 Go' },
+      { name: 'Procesor', value: 'Czterordzeniowy Quad-Core, 1.8 GHz' },
+      { name: 'Pamięć RAM', value: '1 GB' },
+      { name: 'Pamięć Flash', value: '8 GB' },
+      { name: 'Wyświetlacz', value: '2,83" pojemnościowy dotykowy, 320 × 240 px' },
+      { name: 'Klawiatura', value: '24 klawisze numeryczne z podświetleniem' },
+      { name: 'Skaner', value: '2D CMOS szóstej generacji Newland (1D i 2D)' },
+      { name: 'Wi-Fi', value: '802.11 a/b/g/n/ac, dual-band 2.4 + 5 GHz' },
+      { name: 'Bluetooth', value: '5.0 BLE' },
+      { name: 'WWAN', value: '4G LTE (FDD + TDD), 3G WCDMA, 2G GSM' },
+      { name: 'NFC/RFID', value: '13.56 MHz, ISO14443A/B, MIFARE, FeliCa, ISO15693' },
+      { name: 'GPS', value: 'Tak (wbudowany)' },
+      { name: 'USB', value: 'USB Type-C (na dole)' },
+      { name: 'Bateria', value: '3 300 mAh Li-Ion, 3.8 V (niewymienna)' },
+      { name: 'Czas pracy', value: 'Do 10 godzin' },
+      { name: 'Waga', value: '155 g (z baterią)' },
+      { name: 'Wymiary', value: '158 × 59 × 18.3 mm' },
+      { name: 'Odporność na upadek', value: '1.2 m na beton' },
+      { name: 'Temperatura pracy', value: '-20°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-30°C do +60°C' },
+      { name: 'Wilgotność', value: '5% – 95% (bez kondensacji)' },
+      { name: 'ESD', value: '±12 kV (powietrze), ±8 kV (kontakt)' },
+      { name: 'Audio', value: 'Głośnik + mikrofon' },
+      { name: 'Powiadomienia', value: 'Wibracja, głośnik, wielokolorowe diody LED' },
+      { name: 'SIM', value: 'Karta SIM (nano)' },
+      { name: 'MDM', value: 'Newland Ndevor' },
+      { name: 'Oprogramowanie', value: 'Newland DCAPP od Kalipso' },
+      { name: 'Gwarancja', value: '2 lata' },
+    ],
+    applications: [
+      'Inwentaryzacja i zarządzanie zapasami',
+      'Gastronomia i hotelarstwo (zamówienia, recepcja)',
+      'Retail — obsługa zamówień i weryfikacja cen',
+      'Magazyn — przyjęcia i wydania towaru',
+      'Logistyka — śledzenie przesyłek z GPS i 4G',
+      'Kontrola dostępu i weryfikacja NFC',
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: [],
+    faq: [
+      {
+        question: 'Ile kosztuje Newland MT37 Baiji?',
+        answer: 'Newland MT37 Baiji to jeden z najtańszych profesjonalnych terminali mobilnych z klawiaturą fizyczną na rynku. Aktualna cena zależy od konfiguracji i dostępności — skontaktuj się z nami po indywidualną wycenę.',
+      },
+      {
+        question: 'Czy Newland MT37 Baiji nadaje się do pracy w magazynie?',
+        answer: 'Tak, MT37 sprawdza się w magazynach do prostych zadań: przyjęcia i wydania towaru, inwentaryzacja, skanowanie etykiet. Wytrzymuje upadki z 1,2 m na beton i działa w temperaturach od -20°C do +50°C, więc można go używać w chłodniach i na rampach załadunkowych. Ograniczeniem jest 1 GB RAM — najlepiej sprawdza się z jedną dedykowaną aplikacją WMS.',
+      },
+      {
+        question: 'Ile waży Newland MT37 Baiji?',
+        answer: 'MT37 Baiji waży zaledwie 155 g z baterią — to najlżejszy terminal z klawiaturą fizyczną w swojej klasie. Dla porównania: Zebra MC2200 waży 296 g, a Datalogic Memor K — 260 g. Niska waga zmniejsza zmęczenie rąk podczas wielogodzinnej pracy.',
+      },
+      {
+        question: 'Czy 1 GB RAM w MT37 wystarczy?',
+        answer: 'System Android 8.1 Go został zoptymalizowany pod kątem urządzeń z 1 GB RAM — działa płynnie z jedną lub dwiema aplikacjami. MT37 najlepiej sprawdza się jako urządzenie do jednego zadania: skanowanie + aplikacja WMS/POS. Jeśli potrzebujesz multitaskingu i nowszych aplikacji, rozważ Newland MT93 Megattera z 4 GB RAM i Android 13.',
+      },
+      {
+        question: 'Czy Newland MT37 Baiji ma 4G LTE?',
+        answer: 'Tak, MT37 obsługuje sieci 4G LTE (FDD i TDD), 3G WCDMA oraz 2G GSM. Umożliwia to pracę w terenie bez Wi-Fi — dostawy, inwentaryzacje w oddziałach, serwis polowy. Wbudowany GPS pozwala na śledzenie pozycji urządzenia.',
+      },
+      {
+        question: 'Jak długo działa bateria w MT37?',
+        answer: 'Bateria 3 300 mAh zapewnia do 10 godzin ciągłej pracy na jednym ładowaniu. Ładowanie przez USB-C standardową ładowarką. Bateria jest niewymienna, więc MT37 najlepiej sprawdza się na jednej zmianie roboczej.',
+      },
+      {
+        question: 'Co to jest DCAPP i jak działa?',
+        answer: 'DCAPP (Data Collection APP) od firmy Kalipso to fabrycznie zainstalowane oprogramowanie do gromadzenia danych. Zawiera 5 gotowych szablonów — można zacząć pracę od razu po rozpakowaniu. Umożliwia skanowanie kodów, ręczne wprowadzanie danych i synchronizację z komputerem przez Wi-Fi lub USB. Idealne dla firm, które nie chcą tworzyć własnej aplikacji.',
+      },
+      {
+        question: 'Newland MT37 vs Zebra MC2200 — co wybrać?',
+        answer: 'MT37 Baiji to budżetowa alternatywa: waży 155 g (MC2200: 296 g), ma 4G LTE i NFC w standardzie (MC2200 nie ma LTE). Zebra MC2200 oferuje nowszy Android 11, 3 GB RAM, większy ekran 4" i lepszą odporność (IP65, 1.52 m drop). Wybierz MT37 jeśli liczy się niska cena, waga i LTE. Wybierz MC2200 jeśli potrzebujesz nowszego systemu i więcej RAM.',
+      },
+      {
+        question: 'Czy MT37 ma NFC?',
+        answer: 'Tak, MT37 ma wbudowany moduł NFC/RFID 13,56 MHz obsługujący standardy ISO14443A/B, MIFARE, FeliCa i tagi NFC Forum. Zastosowania: kontrola dostępu, logowanie pracowników, odczyt kart lojalnościowych, weryfikacja tożsamości.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Newland MT37 Baiji?',
+        answer: 'W segmencie kompaktowych terminali z klawiaturą fizyczną alternatywami są: Zebra MC2200 (Android 11, 3 GB RAM, bez LTE, ~2 300 zł netto), Zebra MC2700 (jak MC2200 + 4G LTE, ~2 800 zł netto), Datalogic Memor K (Android 11, 2 GB RAM, ~2 490 zł netto) oraz Newland MT93 Megattera Standard (Android 13, 4 GB RAM, ekran 5.5", ~2 200 zł netto). MT37 jest najtańszy, najlżejszy i ma 4G+NFC w standardzie, ale ma starszy Android i mniej RAM.',
+      },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa MT37 Baiji (PL)', type: 'datasheet', url: 'https://newland-id.com/sites/default/files/documents/2023-11/mt37_baiji_datasheet_pl.pdf', size: 'PDF' },
+    ],
+    createdAt: '2026-03-01',
+  },
 ]
 
 // Akcesoria Newland N7
