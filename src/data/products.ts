@@ -27724,15 +27724,23 @@ N7 Cachalot Pro II dostępny jest z Androidem 11 lub 13 — oba z certyfikatem G
     slug: 'newland-mt93-megattera',
     name: 'Newland MT93 Megattera Standard',
     shortDescription: 'Terminal mobilny 5.5" z Android 13, 4G LTE, skanerem 2D CM66 i baterią 5000 mAh — najtańszy terminal z wbudowanym LTE',
-    description: `**Dla kogo?** Newland MT93 Megattera Standard to terminal mobilny klasy enterprise w cenie urządzenia konsumenckiego. Wyposażony w wbudowany moduł **4G LTE** — jedyny w tej klasie cenowej — sprawdza się wszędzie tam, gdzie Wi-Fi nie sięga: dostawy, inwentaryzacja w terenie, serwis polowy, logistyka miejska.
+    description: `Dla kogo? Newland MT93 Megattera Standard to terminal mobilny klasy enterprise w cenie urządzenia konsumenckiego, stworzony dla firm, które potrzebują wytrzymałego urządzenia z wbudowanym 4G LTE bez płacenia za flagowe terminale. Sprawdza się w dostawach last-mile, inwentaryzacji w terenie, serwisie polowym, logistyce miejskiej, obsłudze eventów i na halach sprzedaży — wszędzie tam, gdzie Wi-Fi nie sięga lub jest niestabilne.
 
-Ekran 5.5" HD+ (720×1440) z Gorilla Glass, procesor MediaTek octa-core 2.2 GHz, 4 GB RAM / 64 GB Flash. Skaner 2D CMOS CM66 zamontowany pod kątem 45° — ergonomiczna pozycja skanowania zmniejsza zmęczenie nadgarstka przy intensywnej pracy (60 fps, celownik laserowy, technologia AcuScan do pick-listów).
+Co wyróżnia MT93 na tle konkurencji? Wbudowany moduł 4G LTE (FDD: B1/B2/B3/B5/B7/B8/B20/B28, TDD: B34/B38/B39/B40/B41) — jedyny terminal w cenie poniżej 2 500 zł netto z fabrycznie zainstalowanym modemem komórkowym. Obsługa Dual SIM (nano+nano) lub nano SIM + microSD do 256 GB. WWAN z pasmami 2G/3G/4G pokrywającymi całą Europę. Operator magazynowy pracujący w terenie ma pełny zasięg danych bez przenośnego routera Wi-Fi.
 
-**Bateria 5 000 mAh** — największa w klasie — zapewnia ponad 10 godzin ciągłej pracy. Wymienna bez narzędzi. Łączność: Wi-Fi 5 (ac) dual-band, Bluetooth 5.2 BLE, NFC 13.56 MHz, GPS/GLONASS. Obudowa IP65, upadki z 1.5 m na beton, zakres temperatur od -20°C do +55°C.
+Ekran 5.5" HD+ (720×1440) z wzmocnionym szkłem Gorilla Glass, jasność 380 nit, multi-point capacitive touch — obsługa w rękawiczkach. Konstrukcja lekka (277 g z baterią) i smukła (15.9 mm), z ergonomią smartfona konsumenckiego: operator nie męczy nadgarstka nawet przy 8-godzinnej zmianie. Fizyczne przyciski skanowania po obu stronach obudowy oraz przyciski nawigacyjne (Home, Back, Menu) ułatwiają jednostręczną obsługę.
 
-W zestawie: etui ochronne, folia na ekran, pasek na rękę, kabel USB-C, adapter EU — wszystko, co potrzebne od razu po wyjęciu z pudełka. Zarządzanie flotą przez bezpłatną platformę MDM Newland Ndevor.
+Skaner 2D megapikselowy CMOS zamontowany pod kątem 45° na górze urządzenia — naturalna pozycja point-and-shoot eliminuje konieczność przechylania nadgarstka. Sensor 1280×800 px, 60 fps, celownik laserowy. Technologia AcuScan to tryb pick-list: terminal odczytuje wyłącznie kod wskazany celownikiem, ignorując sąsiednie etykiety na regale. Dekoduje wszystkie popularne kody 1D (Code 128, EAN-13, UPC-A, ITF, GS1 DataBar) i 2D (QR, Data Matrix, PDF417, Aztec, MaxiCode). Zasięg: EAN-13 (13mil) 70–610 mm, Code 39 (5mil) 110–290 mm, QR (15mil) 55–410 mm, Data Matrix (10mil) 110–260 mm.
 
-Pełna specyfikacja i dokumentacja: [newland-id.com](https://www.newland-id.com/en/products/mobile-computers/mt93-megattera-standard).`,
+Procesor MediaTek MT8781 octa-core 64-bit (2× A76 @ 2.2 GHz + 6× A55 @ 2 GHz) z 4 GB RAM i 64 GB Flash zapewnia płynną pracę wielu aplikacji jednocześnie. System Android 13 z certyfikatem GMS (Google Mobile Services) — pełny dostęp do Google Play, Chrome, Gmail i ekosystemu aplikacji enterprise. Kompatybilność z popularnymi WMS: Comarch WMS, SAP Mobile, Microsoft Dynamics, Simple WMS, Qguar.
+
+Bateria 5 000 mAh Li-Ion (3.85V) — największa w klasie cenowej — zapewnia ponad 10 godzin ciągłej pracy przy typowym użyciu magazynowym. Wymienna bez narzędzi (swappable): do pracy zmianowej 24/7 wystarczą 2 baterie na stanowisko. Szybkie ładowanie 18W (AC100–240V, 50–60Hz).
+
+Łączność bezprzewodowa: Wi-Fi 5 (802.11 a/b/g/n/ac) dual-band 2.4 + 5 GHz, Bluetooth 5.2 BLE, NFC 13.56 MHz (ISO14443A/B, MIFARE, FeliCa, ISO15693 — obsługa kart zbliżeniowych i tagów RFID HF), GPS/AGPS z GLONASS. Kamera tylna 13 MP z autofokusem, lampą LED i trybem latarki, kamera przednia 5 MP. Głośnik 103 dB, podwójny mikrofon z redukcją szumów, wibrator, wielokolorowe diody LED powiadomień.
+
+Obudowa IP65 — pełna ochrona przed pyłem i strumieniami wody ze wszystkich kierunków. Upadki z 1.5 m na beton (6 stron, po jednym upadku na stronę). Temperatura pracy od -20°C do +55°C — praca w chłodniach bez dodatkowego wyposażenia. Temperatura przechowywania od -40°C do +70°C. Odporność na wyładowania elektrostatyczne ESD ±15 kV (powietrze) / ±8 kV (kontakt). Czujniki: światła, zbliżeniowy, akcelerometr, żyroskop, kompas elektroniczny.
+
+W zestawie: terminal MT93, bateria 5 000 mAh, etui ochronne, folia na ekran, pasek na rękę, kabel USB-C, adapter z wieloma wtyczkami (EU/UK/US) — kompletny zestaw do natychmiastowego uruchomienia. Opcjonalne akcesoria: dodatkowa bateria, adapter AC, pasek na rękę, etui ochronne wzmocnione, folia hartowana, stacja dokująca z ładowaniem, stacja ładowania 4 baterii. Zarządzanie flotą przez bezpłatną platformę MDM Newland Ndevor (zdalna konfiguracja, instalacja aplikacji, śledzenie GPS, czyszczenie danych). Gwarancja producenta 2 lata z opcją przedłużenia do 3 lub 5 lat (Comprehensive Service).`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-newland'],
     manufacturerId: 'newland',
@@ -27749,9 +27757,9 @@ Pełna specyfikacja i dokumentacja: [newland-id.com](https://www.newland-id.com/
       { name: 'Procesor', value: 'MediaTek MT8781, octa-core 64-bit, 2.2 GHz' },
       { name: 'Pamięć RAM', value: '4 GB' },
       { name: 'Pamięć Flash', value: '64 GB (microSD do 256 GB)' },
-      { name: 'Wyświetlacz', value: '5.5" HD+ (720×1440), pojemnościowy, Gorilla Glass, 400 nit' },
-      { name: 'Skaner', value: '2D Megapixel CMOS CM66, 1280×800, 60 fps, celownik laserowy, kąt 45°' },
-      { name: 'Technologia skanowania', value: 'AcuScan (precyzyjny odczyt z pick-list)' },
+      { name: 'Wyświetlacz', value: '5.5" HD+ (720×1440), multi-point capacitive touch, Gorilla Glass, 380 nit' },
+      { name: 'Skaner', value: '2D Megapixel CMOS, 1280×800, 60 fps, celownik laserowy, kąt 45°' },
+      { name: 'Technologia skanowania', value: 'AcuScan (precyzyjny pick-list)' },
       { name: 'Kamera tylna', value: '13 MP z autofokusem i lampą LED' },
       { name: 'Kamera przednia', value: '5 MP' },
       { name: 'Wi-Fi', value: '802.11 a/b/g/n/ac (Wi-Fi 5), dual-band 2.4 + 5 GHz' },
@@ -27767,8 +27775,13 @@ Pełna specyfikacja i dokumentacja: [newland-id.com](https://www.newland-id.com/
       { name: 'Temperatura pracy', value: '-20°C do +55°C' },
       { name: 'Wymiary', value: '159 × 74 × 15.9 mm' },
       { name: 'Waga', value: '277 g (z baterią)' },
-      { name: 'Audio', value: 'Jack 3.5 mm, głośnik, mikrofon' },
-      { name: 'Sensory', value: 'Światła, zbliżeniowy, akcelerometr, żyroskop, kompas' },
+      { name: 'Audio', value: 'Głośnik 103 dB, podwójny mikrofon z redukcją szumów, jack 3.5 mm' },
+      { name: 'Powiadomienia', value: 'Wibrator, wielokolorowe diody LED' },
+      { name: 'SIM', value: 'Dual nano SIM lub nano SIM + nano TF' },
+      { name: 'Sensory', value: 'Światła, zbliżeniowy, akcelerometr, żyroskop, kompas elektroniczny' },
+      { name: 'ESD', value: '±15 kV (powietrze), ±8 kV (kontakt)' },
+      { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
+      { name: 'Gwarancja', value: '2 lata (opcja +1 lub +3 lata)' },
       { name: 'MDM', value: 'Newland Ndevor (bezpłatny)' },
       { name: 'W zestawie', value: 'Etui, folia, pasek na rękę, kabel USB-C, adapter EU, bateria' },
     ],
