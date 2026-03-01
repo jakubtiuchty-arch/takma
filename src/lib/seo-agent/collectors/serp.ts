@@ -109,12 +109,15 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'terminal mobilny zebra em45', group: 'terminale' },
 
   // =====================================================
-  // TERMINALE NEWLAND (4)
+  // TERMINALE NEWLAND (7)
   // =====================================================
   { keyword: 'newland n7 cachalot pro ii', group: 'terminale-newland' },
   { keyword: 'terminal newland n7', group: 'terminale-newland' },
   { keyword: 'terminal mobilny newland', group: 'terminale-newland' },
   { keyword: 'newland n7 cachalot', group: 'terminale-newland' },
+  { keyword: 'newland mt93 megattera', group: 'terminale-newland' },
+  { keyword: 'terminal newland mt93', group: 'terminale-newland' },
+  { keyword: 'newland mt93 megattera standard', group: 'terminale-newland' },
 
   // =====================================================
   // TERMINALE DATALOGIC (4)
@@ -151,6 +154,7 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'zebra zq521', group: 'produkty' },
   { keyword: 'zebra li3608', group: 'produkty' },
   { keyword: 'newland n7', group: 'produkty' },
+  { keyword: 'newland mt93', group: 'produkty' },
   { keyword: 'zebra tc53e', group: 'produkty' },
   { keyword: 'zebra mc3450', group: 'produkty' },
   { keyword: 'zebra ds8178', group: 'produkty' },

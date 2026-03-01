@@ -27716,6 +27716,83 @@ N7 Cachalot Pro II dostępny jest z Androidem 11 lub 13 — oba z certyfikatem G
     downloads: [],
     createdAt: '2026-02-28',
   },
+  // ============================================
+  // Newland MT93 Megattera Standard
+  // ============================================
+  {
+    id: 'newland-mt93-megattera',
+    slug: 'newland-mt93-megattera',
+    name: 'Newland MT93 Megattera Standard',
+    shortDescription: 'Terminal mobilny 5.5" z Android 13, 4G LTE, skanerem 2D CM66 i baterią 5000 mAh — najtańszy terminal z wbudowanym LTE',
+    description: `**Dla kogo?** Newland MT93 Megattera Standard to terminal mobilny klasy enterprise w cenie urządzenia konsumenckiego. Wyposażony w wbudowany moduł **4G LTE** — jedyny w tej klasie cenowej — sprawdza się wszędzie tam, gdzie Wi-Fi nie sięga: dostawy, inwentaryzacja w terenie, serwis polowy, logistyka miejska.
+
+Ekran 5.5" HD+ (720×1440) z Gorilla Glass, procesor MediaTek octa-core 2.2 GHz, 4 GB RAM / 64 GB Flash. Skaner 2D CMOS CM66 zamontowany pod kątem 45° — ergonomiczna pozycja skanowania zmniejsza zmęczenie nadgarstka przy intensywnej pracy (60 fps, celownik laserowy, technologia AcuScan do pick-listów).
+
+**Bateria 5 000 mAh** — największa w klasie — zapewnia ponad 10 godzin ciągłej pracy. Wymienna bez narzędzi. Łączność: Wi-Fi 5 (ac) dual-band, Bluetooth 5.2 BLE, NFC 13.56 MHz, GPS/GLONASS. Obudowa IP65, upadki z 1.5 m na beton, zakres temperatur od -20°C do +55°C.
+
+W zestawie: etui ochronne, folia na ekran, pasek na rękę, kabel USB-C, adapter EU — wszystko, co potrzebne od razu po wyjęciu z pudełka. Zarządzanie flotą przez bezpłatną platformę MDM Newland Ndevor.
+
+Pełna specyfikacja i dokumentacja: [newland-id.com](https://www.newland-id.com/en/products/mobile-computers/mt93-megattera-standard).`,
+    categoryId: 'terminale-mobilne',
+    subcategoryIds: ['terminale-newland'],
+    manufacturerId: 'newland',
+    tags: ['magazyn', 'logistyka', 'retail', 'outdoor'],
+    images: ['/images/products/NLS-MT9300-W4-AS.png'],
+    imageDescriptions: ['Newland MT93 Megattera Standard — widok z przodu, ekran 5.5 cala z Android 13 i żółte przyciski boczne'],
+    seoTitle: 'Newland MT93 Megattera Standard — terminal mobilny 5.5" z 4G LTE | TAKMA',
+    seoDescription: 'Terminal mobilny Newland MT93 Megattera Standard: Android 13, 4G LTE, skaner 2D CM66, bateria 5000 mAh, IP65. Najtańszy terminal z wbudowanym LTE. Cena i dostępność w TAKMA.',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'NLS-MT9300-W4-AS' },
+      { name: 'System operacyjny', value: 'Android 13 GMS' },
+      { name: 'Procesor', value: 'MediaTek MT8781, octa-core 64-bit, 2.2 GHz' },
+      { name: 'Pamięć RAM', value: '4 GB' },
+      { name: 'Pamięć Flash', value: '64 GB (microSD do 256 GB)' },
+      { name: 'Wyświetlacz', value: '5.5" HD+ (720×1440), pojemnościowy, Gorilla Glass, 400 nit' },
+      { name: 'Skaner', value: '2D Megapixel CMOS CM66, 1280×800, 60 fps, celownik laserowy, kąt 45°' },
+      { name: 'Technologia skanowania', value: 'AcuScan (precyzyjny odczyt z pick-list)' },
+      { name: 'Kamera tylna', value: '13 MP z autofokusem i lampą LED' },
+      { name: 'Kamera przednia', value: '5 MP' },
+      { name: 'Wi-Fi', value: '802.11 a/b/g/n/ac (Wi-Fi 5), dual-band 2.4 + 5 GHz' },
+      { name: 'Bluetooth', value: '5.2 BLE' },
+      { name: '4G LTE', value: 'FDD: B1/B2/B3/B5/B7/B8/B20/B28, TDD: B34/B38/B39/B40/B41' },
+      { name: 'NFC', value: '13.56 MHz (ISO14443A/B, MIFARE, FeliCa, ISO15693)' },
+      { name: 'GPS', value: 'GPS/AGPS, GLONASS' },
+      { name: 'USB', value: 'Type-C' },
+      { name: 'Bateria', value: '5 000 mAh Li-Ion, wymienna, 3.85 V' },
+      { name: 'Czas pracy', value: 'Ponad 10 godzin ciągłej pracy' },
+      { name: 'Klasa ochrony', value: 'IP65' },
+      { name: 'Upadki', value: '1.5 m na beton' },
+      { name: 'Temperatura pracy', value: '-20°C do +55°C' },
+      { name: 'Wymiary', value: '159 × 74 × 15.9 mm' },
+      { name: 'Waga', value: '277 g (z baterią)' },
+      { name: 'Audio', value: 'Jack 3.5 mm, głośnik, mikrofon' },
+      { name: 'Sensory', value: 'Światła, zbliżeniowy, akcelerometr, żyroskop, kompas' },
+      { name: 'MDM', value: 'Newland Ndevor (bezpłatny)' },
+      { name: 'W zestawie', value: 'Etui, folia, pasek na rękę, kabel USB-C, adapter EU, bateria' },
+    ],
+    applications: ['Inwentaryzacja w terenie z 4G LTE', 'Dostawy i logistyka miejska', 'Serwis polowy i instalacje', 'Kompletacja zamówień w magazynie', 'Identyfikacja NFC i kontrola dostępu', 'Retail — obsługa klienta na hali sprzedaży'],
+    availability: 'unavailable',
+    compatibleAccessories: [],
+    relatedAccessories: [],
+    faq: [
+      { question: 'Czym różni się MT93 Standard od MT93 Pro?', answer: 'MT93 Standard ma Wi-Fi 5 (802.11ac), 4 GB RAM / 64 GB Flash i ochronę IP65. MT93 Pro oferuje Wi-Fi 6E (802.11ax), 6 GB RAM / 128 GB Flash, IP67 i certyfikat AER (Android Enterprise Recommended). Standard jest tańszy o ok. 500 zł netto i wystarcza do większości zastosowań magazynowych i logistycznych, gdzie nie jest wymagane zanurzenie w wodzie (IP67) ani Wi-Fi 6E.' },
+      { question: 'Czy Newland MT93 ma wbudowane 4G LTE?', answer: 'Tak — MT93 Megattera Standard ma wbudowany moduł 4G LTE (FDD/TDD, pasma europejskie B1/B3/B7/B8/B20/B28). To jedyny terminal mobilny w tej klasie cenowej z fabrycznie zainstalowanym modemem LTE. Slot na 2× nano SIM lub nano SIM + microSD. Idealne do pracy w terenie bez Wi-Fi.' },
+      { question: 'Jaki skaner ma MT93 Megattera i czym jest technologia AcuScan?', answer: 'MT93 ma skaner 2D CMOS CM66 zamontowany pod kątem 45° — naturalna pozycja skanowania zmniejsza zmęczenie nadgarstka. Sensor 1280×800 px, 60 fps, celownik laserowy. Technologia AcuScan to precyzyjny tryb pick-list — terminal odczytuje tylko kod wskazany celownikiem laserowym, ignorując sąsiednie. Przydatne przy gęsto ułożonych etykietach na regale.' },
+      { question: 'Jak długo pracuje bateria 5000 mAh w MT93?', answer: 'Producent deklaruje ponad 10 godzin ciągłej pracy. Przy typowym użyciu magazynowym (skanowanie, Wi-Fi, jasność 50%) wystarcza na pełną 8–10-godzinną zmianę. Bateria wymienna bez narzędzi — do pracy zmianowej 24/7 wystarczą 2 baterie (BTY95L) + ładowarka 4-gniazdowa (NLS-MCD9350-4B).' },
+      { question: 'Czy MT93 Megattera współpracuje z WMS i ERP?', answer: 'Tak — Android 13 GMS z Google Play zapewnia kompatybilność z popularnymi systemami WMS: Comarch WMS, SAP Mobile, Microsoft Dynamics, Simple WMS, Qguar. Aplikacje instalowane z Google Play lub przez MDM Ndevor. Newland SDK (Java/Kotlin) umożliwia integrację skanera z aplikacjami custom.' },
+      { question: 'Jakie kody kreskowe czyta MT93 Megattera?', answer: 'Wszystkie popularne kody 1D (Code 128, Code 39, EAN-8/13, UPC-A/E, ITF, Codabar, GS1 DataBar) i 2D (QR Code, Data Matrix, PDF417, Aztec, MaxiCode, DotCode, Micro QR/PDF417). Zasięg skanowania: EAN-13 do 61 cm, QR do 41 cm, Data Matrix do 26 cm.' },
+      { question: 'Czy MT93 nadaje się do pracy w chłodni?', answer: 'Tak — zakres temperatur pracy od -20°C do +55°C obejmuje większość chłodni. Norma IP65 chroni przed pyłem i strumieniem wody. Do mroźni głębokich (-30°C i niżej) rekomendujemy [Zebra MC9400](/produkt/zebra-mc9400) z dedykowaną baterią freezer.' },
+      { question: 'Co jest w zestawie z MT93 Megattera Standard?', answer: 'W pudełku: terminal MT93, bateria 5000 mAh, etui ochronne, folia na ekran, pasek na rękę, kabel USB-C, adapter z wieloma wtyczkami (EU/UK/US). To kompletny zestaw — w przeciwieństwie do Zebra TC22, gdzie etui i folia kupowane są osobno.' },
+      { question: 'Jak zarządzać flotą terminali MT93?', answer: 'Newland oferuje bezpłatną platformę MDM Ndevor — masowa instalacja aplikacji, śledzenie GPS, zdalne czyszczenie danych. Alternatywnie: SOTI MobiControl, VMware Workspace ONE, Microsoft Intune. Terminal wspiera Android Zero-Touch Enrollment.' },
+      { question: 'Jakie są alternatywy dla Newland MT93 Megattera?', answer: 'W podobnej klasie: [Zebra TC22](/produkt/zebra-tc22) (6" FHD+, Wi-Fi 6, ale bez LTE — ok. 2 400 zł netto), [Zebra TC27](/produkt/zebra-tc27) (jak TC22 + 5G/LTE — ok. 3 000+ zł netto), [Newland N7 Cachalot Pro II](/produkt/newland-n7-cachalot-pro-ii) (4", klawiatura fizyczna, od 3 346 zł netto). MT93 wyróżnia się najniższą ceną z wbudowanym 4G LTE i największą baterią (5 000 mAh) w klasie.' },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa MT93 (EN)', type: 'datasheet', url: 'https://scan2id.com/wp-content/uploads/2024/11/newland-mt93-megattera-standard-datasheet.pdf', size: 'PDF' },
+    ],
+    createdAt: '2026-03-01',
+  },
 ]
 
 // Akcesoria Newland N7
