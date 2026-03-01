@@ -21,17 +21,16 @@ const DEVICE_CATEGORIES = new Set([
  * Dzięki temu klient nie widzi "Niedostępny" i nie odchodzi — widzi alternatywę.
  */
 export default function SmartPrice({ product }: SmartPriceProps) {
-  // Zbierz wszystkie warianty z cenami i PN-ami
+  // Zbierz wszystkie warianty z PN-ami (nawet bez statycznej ceny — API ją dostarczy)
   const allVariants = useMemo(() => {
     if (product.variants && product.variants.length > 0) {
       return product.variants
-        .filter(v => v.priceFrom)
-        .map(v => ({ partNumber: v.partNumber, price: v.priceFrom!, name: v.name }))
-        .sort((a, b) => a.price - b.price)
+        .map(v => ({ partNumber: v.partNumber, price: v.priceFrom ?? null, name: v.name }))
+        .sort((a, b) => (a.price ?? Infinity) - (b.price ?? Infinity))
     }
     const pnSpec = product.specifications.find(s => s.name === 'Part Number')
-    if (pnSpec && product.priceFrom) {
-      return [{ partNumber: pnSpec.value, price: product.priceFrom, name: '' }]
+    if (pnSpec) {
+      return [{ partNumber: pnSpec.value, price: product.priceFrom ?? null, name: '' }]
     }
     return []
   }, [product])
@@ -39,42 +38,44 @@ export default function SmartPrice({ product }: SmartPriceProps) {
   const partNumbers = useMemo(() => allVariants.map(v => v.partNumber), [allVariants])
   const { stockData, loading } = useStockData(partNumbers)
 
-  // Znajdź najlepszy wariant do wyświetlenia
+  // Znajdź najlepszy wariant do wyświetlenia (uwzględniając ceny live z API)
   const displayed = useMemo(() => {
     if (allVariants.length === 0) return null
 
-    const cheapest = allVariants[0]
-
-    // Jeśli jeszcze ładuje — pokaż najtańszy
+    // Jeśli jeszcze ładuje — pokaż najtańszy ze statyczną ceną
     if (loading || stockData.size === 0) {
-      return { ...cheapest, fallback: false }
+      const withPrice = allVariants.filter(v => v.price !== null)
+      return withPrice.length > 0
+        ? { ...withPrice[0], fallback: false }
+        : { ...allVariants[0], fallback: false }
     }
 
-    // Sprawdź czy Ingram w ogóle zwrócił dane
+    // Zbuduj listę wariantów z cenami live (API) lub statycznymi
+    const withLivePrices = allVariants.map(v => {
+      const s = stockData.get(v.partNumber)
+      const livePrice = (s?.found && s?.price) ? s.price : null
+      return { ...v, effectivePrice: livePrice ?? v.price, hasStock: (s?.found && s.totalStock > 0) || false }
+    }).sort((a, b) => (a.effectivePrice ?? Infinity) - (b.effectivePrice ?? Infinity))
+
+    // Sprawdź czy API w ogóle zwróciło dane
     const anyFound = partNumbers.some(pn => stockData.get(pn)?.found)
     if (!anyFound) {
-      return { ...cheapest, fallback: false }
+      return { ...withLivePrices[0], fallback: false }
     }
 
-    // Sprawdź czy najtańszy jest dostępny
-    const cheapestStock = stockData.get(cheapest.partNumber)
-    if (cheapestStock?.found && cheapestStock.totalStock > 0) {
-      return { ...cheapest, fallback: false }
-    }
-
-    // Najtańszy niedostępny → szukaj najtańszego dostępnego
-    for (const v of allVariants) {
-      const stock = stockData.get(v.partNumber)
-      if (stock?.found && stock.totalStock > 0) {
-        return { ...v, fallback: true }
-      }
+    // Najtańszy dostępny
+    const cheapestAvailable = withLivePrices.find(v => v.hasStock)
+    if (cheapestAvailable) {
+      const isFirst = cheapestAvailable.partNumber === withLivePrices[0].partNumber
+      return { ...cheapestAvailable, fallback: !isFirst }
     }
 
     // Wszystkie niedostępne — pokaż najtańszy
-    return { ...cheapest, fallback: false }
+    return { ...withLivePrices[0], fallback: false }
   }, [allVariants, stockData, loading, partNumbers])
 
-  if (!displayed && !product.priceFrom) {
+  // Brak wariantów i brak PNa → "Cena na zapytanie"
+  if (!displayed && !product.priceFrom && allVariants.length === 0) {
     return (
       <div className="bg-gray-100 shadow-sm rounded-xl p-4 sm:p-6 mb-6">
         <p className="text-lg text-gray-600">Cena na zapytanie</p>
@@ -87,7 +88,7 @@ export default function SmartPrice({ product }: SmartPriceProps) {
   // Live cena z API dystrybutora — fallback na statyczną
   const stock = pn ? stockData.get(pn) : null
   const livePrice = (stock?.found && stock?.price) ? stock.price : null
-  const price = livePrice ?? displayed?.price ?? product.priceFrom!
+  const price = livePrice ?? displayed?.price ?? product.priceFrom
 
   // Dla StockInfo przekaż tylko PN wyświetlanego wariantu — żeby status był spójny z ceną
   const displayedPn = pn ? [pn] : partNumbers
@@ -98,7 +99,7 @@ export default function SmartPrice({ product }: SmartPriceProps) {
         <p className="text-xs font-mono text-gray-500 mb-2">PN: {pn}</p>
       )}
       <div className="flex items-baseline gap-2">
-        {loading && !livePrice ? (
+        {loading || !price ? (
           <span className="inline-block h-9 w-40 bg-gray-200 rounded animate-pulse" />
         ) : (
           <span className="text-2xl sm:text-3xl font-bold text-gray-900">
@@ -109,7 +110,7 @@ export default function SmartPrice({ product }: SmartPriceProps) {
         {DEVICE_CATEGORIES.has(product.categoryId) && <PriceTooltip />}
       </div>
       <p className="text-sm text-gray-400 mt-1">
-        {loading && !livePrice ? (
+        {loading || !price ? (
           <span className="inline-block h-4 w-28 bg-gray-200 rounded animate-pulse" />
         ) : (
           <>{(price * 1.23).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł brutto</>
