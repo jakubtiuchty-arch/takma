@@ -29882,8 +29882,8 @@ export const brandCategories: BrandCategory[] = [
     ],
   },
   {
-    id: 'skanery-newland',
-    slug: 'skanery-newland',
+    id: 'skanery-kodow-kreskowych-newland',
+    slug: 'skanery-kodow-kreskowych-newland',
     manufacturerId: 'newland',
     categoryId: 'skanery-kodow-kreskowych',
     name: 'Skanery kodów kreskowych Newland',
