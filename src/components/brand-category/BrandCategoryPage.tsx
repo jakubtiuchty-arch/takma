@@ -444,7 +444,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
               </div>
             )}
 
-            <ServiceBanner categoryId={bc.categoryId} />
+            <ServiceBanner categoryId={bc.categoryId} manufacturerId={bc.manufacturerId} />
 
             {/* Cross-links */}
             <div className="mt-12 pt-8 border-t border-gray-200">

@@ -41,9 +41,12 @@ const serviceLinks: Record<string, { label: string; url: string; alt: string; su
 
 interface ServiceBannerProps {
   categoryId: string
+  manufacturerId?: string
 }
 
-export default function ServiceBanner({ categoryId }: ServiceBannerProps) {
+export default function ServiceBanner({ categoryId, manufacturerId }: ServiceBannerProps) {
+  // Baner serwis-zebry.pl dotyczy tylko produktów Zebra
+  if (manufacturerId && manufacturerId !== 'zebra') return null
   const service = serviceLinks[categoryId]
   if (!service) return null
 

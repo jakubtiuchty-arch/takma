@@ -251,10 +251,17 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'newland hr33 marlin bluetooth', group: 'skanery-newland' },
   { keyword: 'newland hr33 bluetooth cena', group: 'skanery-newland' },
   { keyword: 'skaner bezprzewodowy megapikselowy bluetooth', group: 'skanery-newland' },
-  // Generyczne Newland skanery
+  // Generyczne / brandowe Newland skanery
   { keyword: 'skaner newland', group: 'skanery-newland' },
+  { keyword: 'skanery newland', group: 'skanery-newland' },
   { keyword: 'czytnik kodów kreskowych newland', group: 'skanery-newland' },
+  { keyword: 'czytniki newland', group: 'skanery-newland' },
   { keyword: 'newland skaner cena', group: 'skanery-newland' },
+  { keyword: 'newland skanery kodów kreskowych', group: 'skanery-newland' },
+  { keyword: 'skaner 2d newland', group: 'skanery-newland' },
+  { keyword: 'newland czytnik kodów', group: 'skanery-newland' },
+  { keyword: 'skanery newland polska', group: 'skanery-newland' },
+  { keyword: 'newland vs zebra skaner porównanie', group: 'skanery-newland' },
 
   // =====================================================
   // TERMINALE ZEBRA (42)
