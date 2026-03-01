@@ -27773,7 +27773,8 @@ Pełna specyfikacja i dokumentacja: [newland-id.com](https://www.newland-id.com/
       { name: 'W zestawie', value: 'Etui, folia, pasek na rękę, kabel USB-C, adapter EU, bateria' },
     ],
     applications: ['Inwentaryzacja w terenie z 4G LTE', 'Dostawy i logistyka miejska', 'Serwis polowy i instalacje', 'Kompletacja zamówień w magazynie', 'Identyfikacja NFC i kontrola dostępu', 'Retail — obsługa klienta na hali sprzedaży'],
-    availability: 'unavailable',
+    priceFrom: 2295,
+    availability: 'available',
     compatibleAccessories: [],
     relatedAccessories: [],
     faq: [
