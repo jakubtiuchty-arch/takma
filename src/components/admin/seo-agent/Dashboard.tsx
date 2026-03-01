@@ -69,6 +69,14 @@ export default function Dashboard({ runSecret, latestReport, recentMetrics, unre
 
     try {
       const res = await fetch(`/api/admin/seo-agent/run?secret=${runSecret}&force=1`, { method: 'POST' })
+      const contentType = res.headers.get('content-type') || ''
+
+      if (!contentType.includes('application/json')) {
+        const text = await res.text()
+        setRunResult(`Błąd serwera (${res.status}): ${text.slice(0, 120)}`)
+        return
+      }
+
       const data = await res.json()
 
       if (res.ok) {
@@ -78,7 +86,7 @@ export default function Dashboard({ runSecret, latestReport, recentMetrics, unre
         setRunResult(`Błąd: ${data.error || 'Unknown error'}`)
       }
     } catch (err) {
-      setRunResult(`Błąd połączenia: ${err}`)
+      setRunResult(`Błąd połączenia: ${err instanceof Error ? err.message : String(err)}`)
     } finally {
       setRunning(false)
     }
