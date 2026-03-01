@@ -29609,6 +29609,10 @@ Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CT70 (PD
       'Honeywell CT70 — widok pod kątem, obudowa IP65/IP68 z gumowym bootem ochronnym',
       'Honeywell CT70 — widok z tyłu, kamera 13 MP i okno skanera FlexRange',
     ],
+    variantAttributeTooltips: {
+      'Skaner': 'Standard Range (S057) — imager 1D/2D do skanowania kodów na etykietach i ekranach z typowej odległości roboczej (do ok. 50 cm). FlexRange (S058) — imager z podwójnym trybem pracy: bliski odczyt małych kodów + daleki zasięg do 12 m (np. kody na wysokich regałach). FlexRange zastępuje potrzebę dwóch skanerów.',
+      '5G': 'Moduł 5G Sub-6 GHz + eSIM zapewnia łączność komórkową poza zasięgiem Wi-Fi — np. w terenie, transporcie, magazynach bez infrastruktury bezprzewodowej. Warianty L0N = tylko Wi-Fi 7, warianty X1N = 5G + Wi-Fi 7 + GPS/GNSS.',
+    },
     variants: [
       {
         partNumber: 'CT70-L0N-057CS104G',
