@@ -183,7 +183,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208, DS3678-SR — gwarancja 5 lat. Skanery przewodowe i bezprzewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies i Newland — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Newland HR23 Dorada — ekonomiczny 2D z gwarancją 5 lat. DS3678-SR bezprzewodowy ultra-rugged do magazynów. DS9908 hybrydowy prezentacyjny do kas POS. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 21,
+    productCount: 22,
   },
   {
     id: 'tablety-przemyslowe',
@@ -825,8 +825,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Skanery kodów kreskowych przewodowe USB od 352 zł netto. Zebra DS2208 — imager 2D, IP52, 5 lat gwarancji. Do kas, aptek, biur i magazynów. Autoryzowany partner Zebra — doradztwo i serwis.',
     longDescription: 'Przewodowe czytniki kodów kreskowych (skanery USB / RS-232) — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania. Imager 2D odczytuje kody 1D, QR, DataMatrix i kody z ekranów. Zebra DS2208 (IP52, 5 lat gwarancji) — idealna na stałe stanowiska kasowe, apteki, przyjęcia towaru.',
     icon: 'scan',
-    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er', 'newland-hr23-dorada'],
-    productCount: 11,
+    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er', 'newland-hr23-dorada', 'newland-hr33-marlin'],
+    productCount: 12,
   },
   {
     id: 'skanery-bezprzewodowe',
@@ -11935,6 +11935,142 @@ W zestawie (wersja -S5): skaner i kabel USB spiralny. Wersja -SA dodatkowo zawie
     downloads: [
       { name: 'Karta katalogowa HR23 Dorada Corded (EN)', type: 'datasheet', url: 'https://www.newland-id.com/sites/default/files/documents/2025-01/hr23_dorada_corded_datasheet.pdf', size: 'PDF' },
       { name: 'Instrukcja obsługi HR23 Dorada Corded (EN)', type: 'manual', url: 'https://www.newland-id.com/sites/default/files/documents/2024-06/hr23_dorada_corded_user_guide_v1.0.1.pdf', size: 'PDF' },
+      { name: 'Skrócona instrukcja HR23/HR33 (EN)', type: 'manual', url: 'https://www.newland-id.com/sites/default/files/documents/2024-06/hr23-33_qs_2024.pdf', size: 'PDF' },
+      { name: 'EasySet — oprogramowanie konfiguracyjne', type: 'software', url: 'https://www.newland-id.com/en/software/easyset', size: 'Online' },
+    ],
+    createdAt: '2026-03-01',
+  },
+  {
+    id: 'newland-hr33-marlin',
+    slug: 'newland-hr33-marlin',
+    name: 'Newland HR33 Marlin',
+    sameAs: 'https://www.newland-id.com/en/products/handheld-scanners/hr33-marlin-corded',
+    shortDescription: 'Przewodowy skaner 2D z megapikselowym sensorem 1280×800, celownikiem laserowym i OCR — do wymagających środowisk retail i logistyki',
+    description: `Dla kogo? Newland HR33 Marlin Corded to przewodowy skaner kodów kreskowych klasy mid-range, zaprojektowany dla kas fiskalnych, stanowisk POS, aptek, sortowni pocztowych, magazynów i placówek medycznych — wszędzie tam, gdzie potrzebny jest szybki odczyt kodów 1D/2D, precyzyjne celowanie laserowe i opcjonalny OCR, ale budżet nie pozwala na skanery klasy premium.
+
+Co wyróżnia HR33 na tle tańszego HR23 Dorada? Przede wszystkim sensor megapikselowy CMOS 1280×800 (vs 640×480 w HR23), który odczytuje nawet uszkodzone, słabo wydrukowane i drobne kody od 3 mil. Celownik laserowy typu cross (krzyżyk) zastąpił diodę LED — precyzyjnie wskazuje wybrany kod nawet wśród wielu etykiet obok siebie. Zasięg odczytu EAN-13 (13 mil) wzrósł do 535 mm — prawie dwukrotnie dalej niż HR23 (280 mm).
+
+Technologia Acuscan to unikalna funkcja Newland: gdy kody są nadrukowane blisko siebie (np. na opakowaniach farmaceutycznych), celownik laserowy pozwala wybrać dokładnie ten kod, który chcesz zeskanować — bez przypadkowego odczytu sąsiedniego. To kluczowe w aptekach (FMD/KOWAL) i na liniach produkcyjnych.
+
+HR33 Marlin jako pierwszy w portfolio Newland obsługuje Advanced Scripting — programowanie zaawansowanych komend przetwarzania danych bezpośrednio w skanerze. Oprócz standardowej konfiguracji przez EasySet można tworzyć własne skrypty filtrowania, formatowania i walidacji odczytanych kodów. To funkcjonalność spotykana zazwyczaj w skanerach 2–3× droższych.
+
+Funkcja OCR (Optical Character Recognition) pozwala odczytywać tekst z paszportów, dowodów tożsamości i dokumentów podróżnych — bez dodatkowego oprogramowania. Przydatne w hotelach, na lotniskach, w urzędach i wszędzie tam, gdzie potrzebna jest szybka weryfikacja dokumentów.
+
+Obudowa HR33 Marlin jest ergonomiczna i dobrze wyważona — 140 g, wymiary 95×68×166 mm. Klasa ochrony IP52, upadki z 1.5 m na beton, zakres temperatur od -20°C do +60°C. Gwarancja producenta 5 lat (60 miesięcy) — najdłuższa w segmencie skanerów mid-range.
+
+Interfejs USB (KBW, CDC, HID-POS) z opcjonalnym RS232. W zestawie (wersja -S5): skaner i kabel USB spiralny. Wersja -SA dodatkowo zawiera podstawkę Smartstand z trybem auto-sense. Jeśli potrzebujesz wersji bezprzewodowej — dostępna będzie Newland HR33 Marlin Bluetooth.
+
+Porównanie z konkurencją: HR33 Marlin oferuje sensor megapikselowy 1280×800 — taki sam jak Zebra DS4608, ale w cenie o ~40% niższej. DS4608 wygrywa odpornością na upadek (1.8 m vs 1.5 m) i opcjami DPM/EAS, ale HR33 ma OCR w standardzie i technologię Acuscan. Jeśli szukasz tańszej alternatywy — Newland HR23 Dorada (sensor 640×480, od ~260 zł netto). Pełna specyfikacja i porównanie modeli — w dokumentacji Newland EMEA.`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-przewodowe'],
+    manufacturerId: 'newland',
+    tags: ['retail', 'magazyn', 'healthcare', 'logistyka'],
+    images: [],
+    imageDescriptions: [],
+    seoTitle: 'Newland HR33 Marlin — skaner 2D megapikselowy, OCR, laser | TAKMA',
+    seoDescription: 'Przewodowy skaner Newland HR33 Marlin: sensor 1280×800 CMOS, celownik laserowy, OCR, Acuscan, IP52, 5 lat gwarancji. Porównanie z Zebra DS4608 i HR23 Dorada.',
+    isNew: true,
+    isBestseller: false,
+    availability: 'available',
+    specifications: [
+      { name: 'Typ skanera', value: 'Imager 2D (area imager) przewodowy' },
+      { name: 'Sensor obrazowy', value: '1280 × 800 CMOS (megapiksel)' },
+      { name: 'Celownik', value: 'Laser krzyżowy (cross laser)' },
+      { name: 'Oświetlenie', value: 'Biała dioda LED' },
+      { name: 'Rozdzielczość', value: '≥ 3 mil' },
+      { name: 'Kontrast minimalny', value: '15%' },
+      { name: 'Skanowane kody 1D', value: 'Code 11, Code 128, Code 39, GS1-128, AIM 128, ISBT 128, Codabar, Code 93, UPC-A, UPC-E, Coupon, GS1 Composite, EAN-13, EAN-8, ISSN, ISBN, ITF-14, Standard 2 of 5, China Post 25, MSI-Plessey, Plessey, GS1 DataBar (RSS), Code 49, Code 16K' },
+      { name: 'Skanowane kody 2D', value: 'PDF417, QR Code, Micro QR, Data Matrix, Aztec, Maxi Code, Chinese Sensible Code, GM Code, Micro PDF417, Code One, Dotcode' },
+      { name: 'OCR', value: 'Passport OCR, Chinese ID Card, China Travel Permit OCR' },
+      { name: 'Zasięg EAN-13 (13 mil)', value: '40–535 mm' },
+      { name: 'Zasięg Code 39 (5 mil)', value: '50–230 mm' },
+      { name: 'Zasięg PDF417 (6.7 mil)', value: '45–215 mm' },
+      { name: 'Zasięg Data Matrix (10 mil)', value: '30–245 mm' },
+      { name: 'Pole widzenia', value: '48° (H) × 30° (V)' },
+      { name: 'Kąty odczytu', value: 'Roll 360°, Pitch ±60°, Skew ±60°' },
+      { name: 'Interfejs', value: 'USB (KBW, CDC, HID-POS), opcjonalnie RS232' },
+      { name: 'Powiadomienia', value: 'Dźwięk (beep), LED, wibracja' },
+      { name: 'Wymiary', value: '95 × 68 × 166 mm' },
+      { name: 'Waga', value: '140 g' },
+      { name: 'IP', value: 'IP52' },
+      { name: 'Odporność na upadek', value: '1.5 m na beton' },
+      { name: 'Temperatura pracy', value: '-20°C do +60°C' },
+      { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
+      { name: 'Wilgotność', value: '5% – 95% (bez kondensacji)' },
+      { name: 'ESD', value: '±15 kV (powietrze), ±8 kV (kontakt)' },
+      { name: 'Zasilanie', value: '5 V DC ±5%, 281 mA maks., standby 129 mA' },
+      { name: 'Certyfikaty', value: 'CE, FCC, RoHS 2.0, IEC62471, IEC60825, GS1 Ready' },
+      { name: 'Gwarancja', value: '5 lat' },
+    ],
+    applications: [
+      'Kasy fiskalne i POS (retail, gastronomia)',
+      'Apteki — dyrektywa FMD / KOWAL, skanowanie drobnych kodów 2D',
+      'Sortownie pocztowe i kurierskie',
+      'Magazyn — przyjęcia i wydania towaru, etykiety z dalszej odległości',
+      'Hotele i lotniska — OCR paszportów i dokumentów',
+      'Szpitale i przychodnie (opaski pacjentów, leki)',
+    ],
+    variants: [
+      {
+        partNumber: 'NLS-HR3300-S5',
+        name: 'HR33 Marlin — przewodowy, kabel USB spiralny',
+        availability: 'available',
+        attributes: { 'Łączność': 'USB (kabel spiralny)' },
+      },
+      {
+        partNumber: 'NLS-HR3300-SA',
+        name: 'HR33 Marlin — przewodowy, kabel USB spiralny + podstawka Smartstand',
+        availability: 'available',
+        attributes: { 'Łączność': 'USB (kabel spiralny)', 'Podstawka': 'Smartstand' },
+      },
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: ['newland-std23-33-sa', 'newland-std30i'],
+    faq: [
+      {
+        question: 'Czym różni się Newland HR33 Marlin od HR23 Dorada?',
+        answer: 'HR33 Marlin to wyższa klasa: sensor megapikselowy 1280×800 (vs 640×480 w HR23), celownik laserowy krzyżowy (vs LED), zasięg EAN-13 do 535 mm (vs 280 mm), funkcja OCR, technologia Acuscan do precyzyjnego celowania w gęste kody oraz Advanced Scripting. Obudowa, IP52 i gwarancja 5 lat — identyczne. HR33 jest o ok. 50% droższy od HR23.',
+      },
+      {
+        question: 'Czy HR33 Marlin czyta kody 2D (QR, Data Matrix)?',
+        answer: 'Tak, HR33 Marlin czyta wszystkie popularne kody 1D i 2D: QR Code, Data Matrix, PDF417, Aztec, Dotcode, Micro QR, EAN-13, Code 128, GS1-128 i wiele innych. Sensor megapikselowy 1280×800 odczytuje kody od 3 mil — nawet uszkodzone, słabo wydrukowane i bardzo małe.',
+      },
+      {
+        question: 'Co to jest Acuscan i kiedy się przydaje?',
+        answer: 'Acuscan to unikalna technologia Newland — celownik laserowy wskazuje dokładnie ten kod, który chcesz zeskanować, nawet gdy kody są nadrukowane bardzo blisko siebie. Niezastąpione w aptekach (opakowania z wieloma kodami FMD), na etykietach magazynowych i w produkcji.',
+      },
+      {
+        question: 'Czy HR33 obsługuje OCR (rozpoznawanie tekstu)?',
+        answer: 'Tak, HR33 Marlin odczytuje tekst OCR z paszportów, dowodów tożsamości i dokumentów podróżnych — bez dodatkowego oprogramowania. To jedyny skaner Newland w tej klasie cenowej z funkcją OCR w standardzie.',
+      },
+      {
+        question: 'Jaka jest gwarancja na Newland HR33 Marlin?',
+        answer: 'Producent Newland EMEA udziela 5 lat (60 miesięcy) gwarancji — najdłuższej w segmencie skanerów 2D mid-range. Dla porównania: Zebra DS4608 również 5 lat, ale w wyższej cenie.',
+      },
+      {
+        question: 'Czym różni się HR33 Marlin od Zebra DS4608?',
+        answer: 'Oba mają sensor megapikselowy 1280×800 CMOS. HR33 jest lżejszy (140 g vs 162 g), tańszy (o ok. 40%) i ma OCR w standardzie oraz Acuscan. DS4608 wygrywa odpornością (upadek z 1.8 m vs 1.5 m, test tumble 2000 obrotów) i opcjami DPM/EAS. HR33 to budżetowa alternatywa z porównywalnym sensorem.',
+      },
+      {
+        question: 'Jak skonfigurować HR33 Marlin?',
+        answer: 'Przez bezpłatne oprogramowanie Newland EasySet — zmiana trybów, interfejsów, klonowanie konfiguracji na wiele skanerów. HR33 jako pierwszy w portfolio Newland wspiera też Advanced Scripting — programowanie własnych skryptów filtrowania, formatowania i walidacji danych bezpośrednio w skanerze.',
+      },
+      {
+        question: 'Czy można używać HR33 w trybie hands-free?',
+        answer: 'Tak, z podstawką Smartstand (NLS-STD23-33-SA) skaner pracuje w trybie prezentacyjnym auto-sense — skanuje automatycznie po zbliżeniu kodu. Dostępna też podstawka gooseneck STD30i z elastycznym ramieniem. Obie pasują do HR23 i HR33.',
+      },
+      {
+        question: 'Jaki zasięg ma skaner HR33 Marlin?',
+        answer: 'Zasięg odczytu zależy od typu kodu: EAN-13 (13 mil) od 40 do 535 mm, Code 39 (5 mil) od 50 do 230 mm, Data Matrix (10 mil) od 30 do 245 mm, PDF417 (6.7 mil) od 45 do 215 mm. To prawie dwukrotnie dalej niż HR23 Dorada w przypadku EAN-13.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Newland HR33 Marlin?',
+        answer: 'W niższym segmencie: Newland HR23 Dorada (sensor 640×480, od ok. 260 zł netto, brak OCR/Acuscan). W segmencie premium: Zebra DS4608 (1.8 m drop, DPM/EAS), Zebra DS8208 (sensor 2 MP). HR33 Marlin to złoty środek — sensor megapikselowy i OCR w cenie niższej niż Zebra.',
+      },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa HR33 Marlin Corded (EN)', type: 'datasheet', url: 'https://www.newland-id.com/sites/default/files/documents/2025-01/hr33_marlin_corded_datasheet.pdf', size: 'PDF' },
+      { name: 'Instrukcja obsługi HR33 Marlin (EN)', type: 'manual', url: 'https://www.newland-id.com/sites/default/files/documents/2024-11/nls-hr3300-bt_user_guide_v1.0.0.pdf', size: 'PDF' },
       { name: 'Skrócona instrukcja HR23/HR33 (EN)', type: 'manual', url: 'https://www.newland-id.com/sites/default/files/documents/2024-06/hr23-33_qs_2024.pdf', size: 'PDF' },
       { name: 'EasySet — oprogramowanie konfiguracyjne', type: 'software', url: 'https://www.newland-id.com/en/software/easyset', size: 'Online' },
     ],

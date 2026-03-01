@@ -53,7 +53,7 @@ export async function middleware(request: NextRequest) {
       'newland-cdn7-c', 'newland-pgn7-02', 'newland-cdn7-4b', 'newland-tpun7pg', 'newland-spn7-hybrid',
       'newland-mcd9350-01', 'newland-mcd9350-4b', 'newland-pg93-01', 'newland-mrb9350',
       // Skanery Newland
-      'newland-hr23-dorada',
+      'newland-hr23-dorada', 'newland-hr33-marlin',
       'newland-std23-33-sa', 'newland-std30i',
       // RFID — usunięte
       // Skanery
