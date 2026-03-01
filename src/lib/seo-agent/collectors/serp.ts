@@ -239,6 +239,12 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'czytnik kodów dpm przemysłowy', group: 'skanery-newland' },
   { keyword: 'skaner kodów na metalu', group: 'skanery-newland' },
   { keyword: 'tani skaner dpm', group: 'skanery-newland' },
+  // HR23 Dorada Bluetooth
+  { keyword: 'newland hr23 bluetooth', group: 'skanery-newland' },
+  { keyword: 'skaner bezprzewodowy newland hr23', group: 'skanery-newland' },
+  { keyword: 'czytnik kodów kreskowych bezprzewodowy newland', group: 'skanery-newland' },
+  { keyword: 'newland hr23 bluetooth cena', group: 'skanery-newland' },
+  { keyword: 'skaner bezprzewodowy bluetooth 2d', group: 'skanery-newland' },
   // Generyczne Newland skanery
   { keyword: 'skaner newland', group: 'skanery-newland' },
   { keyword: 'czytnik kodów kreskowych newland', group: 'skanery-newland' },

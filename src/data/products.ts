@@ -183,7 +183,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208, DS3678-SR — gwarancja 5 lat. Skanery przewodowe i bezprzewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies i Newland — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Newland HR23 Dorada — ekonomiczny 2D z gwarancją 5 lat. DS3678-SR bezprzewodowy ultra-rugged do magazynów. DS9908 hybrydowy prezentacyjny do kas POS. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 25,
+    productCount: 26,
   },
   {
     id: 'tablety-przemyslowe',
@@ -838,8 +838,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Bezprzewodowe skanery kodów kreskowych Bluetooth — zasięg do 100 m, bateria 100 000+ skanów. Zebra DS3678-SR ultra-rugged IP65/IP68. Cena od 2 111 zł netto. Autoryzowany partner Zebra.',
     longDescription: 'Bezprzewodowe czytniki kodów kreskowych Bluetooth (skanery cordless) — pełna swoboda ruchu, zasięg do 100 m, bateria na 100 000+ skanów. Zebra DS3678-SR ultra-rugged — szyfrowanie FIPS 140-2, upadki z 3 m, IP65/IP68, Multi-Code do 20 kodów jednocześnie. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productIds: ['zebra-ds3678-sr', 'zebra-ds3678-xr', 'zebra-ds3678-hd', 'zebra-ds3678-hp', 'zebra-ds2278', 'zebra-ds8288', 'zebra-ds4678', 'zebra-ds4678-dpe'],
-    productCount: 8,
+    productIds: ['zebra-ds3678-sr', 'zebra-ds3678-xr', 'zebra-ds3678-hd', 'zebra-ds3678-hp', 'zebra-ds2278', 'zebra-ds8288', 'zebra-ds4678', 'zebra-ds4678-dpe', 'newland-hr23-dorada-bt'],
+    productCount: 9,
   },
   {
     id: 'skanery-prezentacyjne',
@@ -12346,6 +12346,148 @@ Gwarancja producenta 5 lat (60 miesięcy) — najdłuższa gwarancja wśród ska
     createdAt: '2026-03-01',
   },
   // =====================================================
+  // Newland HR23 Dorada Bluetooth — bezprzewodowy 2D
+  // =====================================================
+  {
+    id: 'newland-hr23-dorada-bt',
+    slug: 'newland-hr23-dorada-bt',
+    name: 'Newland HR23 Dorada Bluetooth',
+    sameAs: 'https://www.newland-id.com/en/products/handheld-scanners/hr23-dorada-bluetooth',
+    shortDescription: 'Bezprzewodowy skaner 2D CMOS Bluetooth 5.0 — zasięg 100 m, bateria 2600 mAh, pamięć 16 384 kodów, IP52, 5 lat gwarancji',
+    description: `Dla kogo? Newland HR23 Dorada Bluetooth to bezprzewodowa wersja popularnego skanera HR23 Dorada, przeznaczona dla magazynów, hal produkcyjnych, sklepów wielkopowierzchniowych, aptek sieciowych i punktów logistycznych — wszędzie tam, gdzie kabel ogranicza mobilność operatora. Bluetooth 5.0 z zasięgiem ponad 100 m w otwartej przestrzeni pozwala swobodnie poruszać się po hali bez utraty połączenia.
+
+Sensor obrazowy 640×480 CMOS z oświetleniem białą diodą LED i celownikiem czerwonym LED — identyczny jak w wersji przewodowej. Dekoduje wszystkie kody 1D (EAN-13, EAN-8, UPC-A/E, Code 128, Code 39, GS1-128, GS1 DataBar, Codabar, ITF) i 2D (QR Code, Data Matrix, PDF417, Aztec, Micro QR, Micro PDF417). Rozdzielczość od 3 mil, zasięg EAN-13: 50–280 mm, Data Matrix (10 mil): 30–125 mm. GS1 Ready — certyfikowany odczyt kodów GS1 w handlu, logistyce i farmacji.
+
+Bateria Li-Ion 2600 mAh (wymienna, latch-release) zapewnia ponad 16 godzin ciągłej pracy (1 skan co 6 sekund). Ładowanie przez stację dokującą w zestawie — czas ładowania do 6 godzin. Pamięć offline (tryb batch) na ponad 16 384 kody — skaner gromadzi dane nawet poza zasięgiem Bluetooth i przesyła je po powrocie do stacji.
+
+Trzy tryby komunikacji: synchroniczny (natychmiastowe przesyłanie po skanowaniu), asynchroniczny (buforowanie i przesyłanie w tle) i batch (gromadzenie offline, masowe przesyłanie). Tryb batch jest idealny do inwentaryzacji w magazynach bez Wi-Fi — skaner zapamiętuje kody i przesyła je po podłączeniu do stacji dokującej.
+
+Stacja dokująca w zestawie (wymiary 140 × 90 × 144,5 mm, waga 340,5 g, odporność na upadek z 1,2 m) łączy się z komputerem kablem USB i jednocześnie ładuje skaner. Interfejs USB (KBW, CDC, HID-POS) — plug-and-play bez sterowników.
+
+Konstrukcja IP52, odporność na upadek z 1,5 m na beton, ESD ±15 kV (powietrze) / ±8 kV (kontakt), temperatura pracy od -10°C do +50°C (węższa niż wersja przewodowa ze względu na baterię Li-Ion). Waga 209 g z baterią, wymiary 117,5 × 67,5 × 144 mm. Sygnalizacja: dźwięk (beep), LED, wibracja — potwierdzenie skanowania wyczuwalne nawet w głośnym otoczeniu fabrycznym.
+
+Porównanie z Zebra DS2278: HR23 BT ma Bluetooth 5.0 (vs 4.0), zasięg ponad 100 m (vs 10 m — DS2278 to Class 2!), lepsze IP52 (vs IP42), pamięć batch 16 384 kodów, wibrację w standardzie i gwarancję 5 lat (vs 3 lata) — przy cenie o ~40% niższej. Zebra DS2278 oferuje szerszą sieć serwisową i kompatybilność z akcesoriami Zebra.
+
+W zestawie: skaner + stacja dokująca + kabel USB + bateria 2600 mAh + Quick Start Guide. Opcjonalnie: bateria zapasowa NLS-BTY2333 i ładowarka 4-slotowa NLS-CD3233-4C do rotacyjnego ładowania baterii. Konfiguracja przez EasySet. Pełna specyfikacja — w dokumentacji Newland EMEA.`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-bezprzewodowe'],
+    manufacturerId: 'newland',
+    tags: ['retail', 'magazyn', 'healthcare', 'logistyka'],
+    images: [],
+    imageDescriptions: [],
+    seoTitle: 'Newland HR23 Dorada Bluetooth — skaner 2D bezprzewodowy BT 5.0, zasięg 100 m | TAKMA',
+    seoDescription: 'Bezprzewodowy skaner 2D Newland HR23 Dorada Bluetooth 5.0: CMOS 640×480, zasięg 100 m, bateria 2600 mAh (16 h), pamięć 16 384 kodów, IP52, 5 lat gwarancji. Tańszy niż Zebra DS2278.',
+    isNew: true,
+    isBestseller: false,
+    availability: 'available',
+    specifications: [
+      { name: 'Typ skanera', value: 'Imager 2D bezprzewodowy Bluetooth' },
+      { name: 'Sensor obrazowy', value: '640 × 480 CMOS' },
+      { name: 'Celownik', value: 'Czerwony LED' },
+      { name: 'Oświetlenie', value: 'Biała dioda LED' },
+      { name: 'Rozdzielczość', value: '≥ 3 mil' },
+      { name: 'Minimalny kontrast', value: '20%' },
+      { name: 'Skanowane kody 1D', value: 'EAN-13, EAN-8, UPC-A/E, Code 128, Code 39, GS1-128, Code 93, Codabar, ITF, GS1 DataBar (RSS), GS1 Composite, ISBT 128, ISBN, ISSN, MSI-Plessey' },
+      { name: 'Skanowane kody 2D', value: 'QR Code, Data Matrix, PDF417, Aztec, Micro PDF417, Micro QR' },
+      { name: 'Zasięg EAN-13 (13 mil)', value: '50–280 mm' },
+      { name: 'Zasięg Code 39 (5 mil)', value: '50–120 mm' },
+      { name: 'Zasięg PDF417 (6.7 mil)', value: '40–120 mm' },
+      { name: 'Zasięg Data Matrix (10 mil)', value: '30–125 mm' },
+      { name: 'Pole widzenia', value: '45° (H) × 34° (V)' },
+      { name: 'Kąty odczytu', value: 'Roll 360°, Pitch ±60°, Skew ±60°' },
+      { name: 'Bluetooth', value: '5.0' },
+      { name: 'Zasięg Bluetooth', value: '≥ 100 m (otwarta przestrzeń)' },
+      { name: 'Tryby komunikacji', value: 'Synchroniczny, asynchroniczny, batch' },
+      { name: 'Pamięć offline (batch)', value: '≥ 16 384 kodów (≥ 60 bajtów każdy)' },
+      { name: 'Bateria', value: 'Li-Ion 2600 mAh (wymienna, latch-release)' },
+      { name: 'Czas pracy', value: '≥ 16 h (1 skan / 6 s)' },
+      { name: 'Czas ładowania', value: '≤ 6 h' },
+      { name: 'Interfejs', value: 'USB (KBW, CDC, HID-POS) przez stację dokującą' },
+      { name: 'Powiadomienia', value: 'Dźwięk (beep), LED, wibracja' },
+      { name: 'Wymiary skanera', value: '117,5 × 67,5 × 144 mm' },
+      { name: 'Waga skanera', value: '209 g (z baterią)' },
+      { name: 'Wymiary stacji dokującej', value: '140 × 90 × 144,5 mm' },
+      { name: 'Waga stacji dokującej', value: '340,5 g' },
+      { name: 'IP', value: 'IP52' },
+      { name: 'Odporność na upadek (skaner)', value: '1,5 m na beton' },
+      { name: 'Odporność na upadek (stacja)', value: '1,2 m na beton' },
+      { name: 'Temperatura pracy', value: '-10°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
+      { name: 'Wilgotność', value: '5% – 95% (bez kondensacji)' },
+      { name: 'ESD', value: '±15 kV (powietrze), ±8 kV (kontakt)' },
+      { name: 'Certyfikaty', value: 'CE RED, FCC, RoHS 2.0, IEC62471, GS1 Ready' },
+      { name: 'Gwarancja', value: '5 lat (60 miesięcy)' },
+    ],
+    applications: [
+      'Magazyn — inwentaryzacja, przyjęcia i wydania towaru (tryb batch offline)',
+      'Hale produkcyjne — weryfikacja komponentów na stanowiskach bez kabli',
+      'Sklepy wielkopowierzchniowe — skanowanie na regałach z dala od kasy',
+      'Apteki sieciowe — skanowanie leków (FMD/KOWAL, GS1 Ready)',
+      'Logistyka i poczta — skanowanie przesyłek na rampach załadunkowych',
+      'Szpitale i przychodnie — mobilne skanowanie opasek pacjentów',
+    ],
+    variants: [
+      {
+        partNumber: 'NLS-HR2300-BT',
+        name: 'HR23 Dorada Bluetooth — zestaw ze stacją dokującą i kablem USB',
+        availability: 'available',
+        attributes: { 'Łączność': 'Bluetooth 5.0 + stacja dokująca USB' },
+      },
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: ['newland-bty2333', 'newland-cd3233-4c', 'newland-std23-33-sa', 'newland-std30i'],
+    faq: [
+      {
+        question: 'Czym różni się HR23 Dorada Bluetooth od wersji przewodowej?',
+        answer: 'Wersja Bluetooth ma: Bluetooth 5.0 z zasięgiem ponad 100 m, baterię Li-Ion 2600 mAh (ponad 16 h pracy), pamięć offline na 16 384 kodów (tryb batch), stację dokującą w zestawie i wibrację jako dodatkowe potwierdzenie skanowania. Jest nieco cięższa (209 g vs 137 g) i ma węższy zakres temperatury pracy (-10°C do +50°C vs -20°C do +60°C). Sensor, rozdzielczość, zasięgi skanowania i obsługiwane kody są identyczne.',
+      },
+      {
+        question: 'Jaki jest zasięg Bluetooth HR23 Dorada?',
+        answer: 'Zasięg Bluetooth 5.0 to ponad 100 m w otwartej przestrzeni (linii prostej). W warunkach magazynowych z przeszkodami (regały, ściany) zasięg wynosi typowo 30–50 m. Dla porównania: Zebra DS2278 ma zasięg tylko 10 m (Bluetooth 4.0 Class 2).',
+      },
+      {
+        question: 'Jak działa tryb batch (offline)?',
+        answer: 'W trybie batch skaner gromadzi zeskanowane kody w pamięci wewnętrznej (do 16 384 kodów po min. 60 bajtów każdy) — nawet gdy jest poza zasięgiem Bluetooth. Po powrocie do stacji dokującej lub nawiązaniu połączenia BT dane są automatycznie przesyłane do komputera. Idealny do inwentaryzacji w magazynach bez zasięgu sieci.',
+      },
+      {
+        question: 'Ile trwa ładowanie i jaki jest czas pracy?',
+        answer: 'Bateria Li-Ion 2600 mAh zapewnia ponad 16 godzin ciągłej pracy (przy 1 skanie co 6 sekund). Pełne ładowanie przez stację dokującą trwa do 6 godzin. Bateria jest wymienna (mechanizm latch-release) — można kupić zapasową NLS-BTY2333 i ładować rotacyjnie w ładowarce 4-slotowej NLS-CD3233-4C.',
+      },
+      {
+        question: 'Czy HR23 BT nadaje się do apteki (FMD/KOWAL)?',
+        answer: 'Tak — HR23 Dorada Bluetooth czyta kody Data Matrix wymagane przez dyrektywę FMD do weryfikacji autentyczności leków. Posiada certyfikat GS1 Ready. Wersja bezprzewodowa ułatwia skanowanie leków na regałach magazynowych apteki bez ciągnięcia kabla.',
+      },
+      {
+        question: 'Czym różni się HR23 BT od Zebra DS2278?',
+        answer: 'HR23 BT ma Bluetooth 5.0 (vs 4.0), zasięg ponad 100 m (vs 10 m — DS2278 to Class 2), lepsze IP52 (vs IP42), pamięć batch 16 384 kodów, wibrację w standardzie i gwarancję 5 lat (vs 3 lata) — przy cenie o ~40% niższej (ok. 437 zł vs 780 zł netto). Zebra DS2278 oferuje szerszą sieć serwisową i kompatybilność z ekosystemem Zebra.',
+      },
+      {
+        question: 'Co jest w zestawie HR23 Dorada Bluetooth?',
+        answer: 'W zestawie (NLS-HR2300-BT): skaner HR23 Dorada z baterią 2600 mAh, stacja dokująca (ładowanie + komunikacja USB), kabel USB i Quick Start Guide. Podstawka Smartstand (NLS-STD23-33-SA), bateria zapasowa (NLS-BTY2333) i ładowarka 4-slotowa (NLS-CD3233-4C) dostępne osobno.',
+      },
+      {
+        question: 'Jak skonfigurować HR23 Dorada Bluetooth?',
+        answer: 'Przez bezpłatne oprogramowanie EasySet od Newland — parowanie Bluetooth, ustawienia trybu komunikacji (synchroniczny/asynchroniczny/batch), aktywacja symbologii, prefiksy/sufiksy, formaty danych. Skaner paruje się ze stacją dokującą automatycznie po włożeniu do niej. Do parowania z innymi urządzeniami BT — skanowanie kodu parowania z instrukcji.',
+      },
+      {
+        question: 'Jaka jest gwarancja na HR23 Dorada Bluetooth?',
+        answer: 'Gwarancja producenta 5 lat (60 miesięcy) na skaner i stację dokującą — najdłuższa w segmencie bezprzewodowych skanerów 2D. Zebra DS2278 i DS8178 mają standardową gwarancję 3 lata. Bateria objęta gwarancją 1 rok.',
+      },
+      {
+        question: 'Jakie są alternatywy dla HR23 Dorada Bluetooth?',
+        answer: 'W segmencie bezprzewodowym 2D: Zebra DS2278 (od ok. 780 zł netto — BT 4.0, zasięg 10 m, IP42), Zebra DS8178 (od ok. 1 800 zł — premium, bateria 83 h), Zebra DS3678-SR (od ok. 2 100 zł — ultra-rugged IP65/IP68). HR23 BT to najlepszy stosunek ceny do jakości w segmencie bezprzewodowych skanerów 2D — BT 5.0, 100 m zasięgu i 5 lat gwarancji za ok. 437 zł netto.',
+      },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa HR23 Dorada Bluetooth (EN)', type: 'datasheet', url: '/downloads/newland/HR23-Dorada-Bluetooth-Datasheet.pdf', size: '931 KB' },
+      { name: 'Instrukcja obsługi HR23 Dorada Bluetooth (EN)', type: 'manual', url: '/downloads/newland/HR23-Dorada-Bluetooth-User-Guide.pdf', size: '14,5 MB' },
+      { name: 'Quick Start Guide HR23/HR33 BT (EN)', type: 'manual', url: '/downloads/newland/HR23-HR33-BT-Quick-Start-Guide.pdf', size: '2,2 MB' },
+      { name: 'Sterownik OPOS Newland Scanner V1.2.0', type: 'software', url: '/downloads/newland/OPOS_Newland_Scanner_V1.2.0.zip', size: '1,1 MB' },
+      { name: 'EasySet — oprogramowanie konfiguracyjne (strona producenta)', type: 'software', url: 'https://www.newland-id.com/en/software/easyset', size: 'Online' },
+    ],
+    createdAt: '2026-03-01',
+  },
+  // =====================================================
   // Newland NVH300 Angler DP — przemysłowy skaner DPM
   // =====================================================
   {
@@ -12610,6 +12752,82 @@ const newlandHR23Accessories: Product[] = [
       {
         partNumber: 'NLS-STD300',
         name: 'STD300 — podstawka składana do NVH300',
+        availability: 'unavailable',
+        attributes: {},
+      },
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: [],
+    faq: [],
+    downloads: [],
+    createdAt: '2026-03-01',
+  },
+  {
+    id: 'newland-bty2333',
+    slug: 'newland-bty2333',
+    name: 'Newland BTY2333 — bateria 2600 mAh do HR23/HR33 BT',
+    shortDescription: 'Wymienna bateria Li-Ion 2600 mAh do skanerów HR23 i HR33 Bluetooth',
+    description: 'Wymienna bateria Li-Ion 2600 mAh do bezprzewodowych skanerów Newland HR23 Dorada Bluetooth i HR33 Dorada II Bluetooth. Mechanizm latch-release — szybka wymiana bez narzędzi. Zapewnia ponad 16 h ciągłej pracy. Można ładować w ładowarce 4-slotowej NLS-CD3233-4C lub w stacji dokującej skanera.',
+    categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow'],
+    manufacturerId: 'newland',
+    tags: ['retail', 'magazyn'],
+    images: [],
+    imageDescriptions: [],
+    seoTitle: 'Newland BTY2333 — bateria 2600 mAh do HR23/HR33 Bluetooth | TAKMA',
+    seoDescription: 'Wymienna bateria Li-Ion 2600 mAh Newland BTY2333 do skanerów HR23 i HR33 Bluetooth. Ponad 16 h pracy, latch-release.',
+    isNew: false,
+    isBestseller: false,
+    availability: 'unavailable',
+    specifications: [
+      { name: 'Part Number', value: 'NLS-BTY2333' },
+      { name: 'Kompatybilność', value: 'Newland HR23 Dorada BT, HR33 Dorada II BT' },
+      { name: 'Typ', value: 'Li-Ion 2600 mAh, wymienna (latch-release)' },
+      { name: 'Czas pracy', value: '≥ 16 h (1 skan / 6 s)' },
+    ],
+    applications: [],
+    variants: [
+      {
+        partNumber: 'NLS-BTY2333',
+        name: 'BTY2333 — bateria 2600 mAh do HR23/HR33 BT',
+        availability: 'unavailable',
+        attributes: {},
+      },
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: [],
+    faq: [],
+    downloads: [],
+    createdAt: '2026-03-01',
+  },
+  {
+    id: 'newland-cd3233-4c',
+    slug: 'newland-cd3233-4c',
+    name: 'Newland CD3233-4C — ładowarka 4-slotowa do baterii HR23/HR33 BT',
+    shortDescription: 'Ładowarka 4-slotowa do baterii BTY2333 skanerów HR23 i HR33 Bluetooth',
+    description: 'Ładowarka 4-slotowa Newland CD3233-4C do jednoczesnego ładowania do 4 baterii BTY2333 (2600 mAh) z bezprzewodowych skanerów HR23 i HR33 Bluetooth. Idealna do wielozmianowej pracy w magazynach — rotacyjne ładowanie baterii zapewnia ciągłość pracy bez przestojów.',
+    categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow'],
+    manufacturerId: 'newland',
+    tags: ['magazyn', 'logistyka'],
+    images: [],
+    imageDescriptions: [],
+    seoTitle: 'Newland CD3233-4C — ładowarka 4-slotowa do baterii HR23/HR33 BT | TAKMA',
+    seoDescription: 'Ładowarka 4-slotowa Newland CD3233-4C do baterii BTY2333 skanerów HR23/HR33 Bluetooth. Jednoczesne ładowanie 4 baterii.',
+    isNew: false,
+    isBestseller: false,
+    availability: 'unavailable',
+    specifications: [
+      { name: 'Part Number', value: 'NLS-CD3233-4C' },
+      { name: 'Kompatybilność', value: 'Bateria NLS-BTY2333 (HR23 BT, HR33 BT)' },
+      { name: 'Typ', value: 'Ładowarka 4-slotowa' },
+      { name: 'Liczba slotów', value: '4' },
+    ],
+    applications: [],
+    variants: [
+      {
+        partNumber: 'NLS-CD3233-4C',
+        name: 'CD3233-4C — ładowarka 4-slotowa do baterii BTY2333',
         availability: 'unavailable',
         attributes: {},
       },
