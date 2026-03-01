@@ -27737,10 +27737,13 @@ const newlandN7Accessories: Product[] = [
     isNew: false,
     isBestseller: false,
     specifications: [
+      { name: 'Part Number', value: 'NLS-CDN7-C-HighV' },
       { name: 'Kompatybilność', value: 'Newland N7 Cachalot Pro II' },
       { name: 'Typ', value: 'Stacja dokująca 1-gniazdowa z komunikacją' },
       { name: 'Ładowanie', value: 'Terminal + bateria zapasowa' },
       { name: 'Interfejs', value: 'USB, Ethernet' },
+      { name: 'Zasilacz', value: 'Zamawiany osobno (AD60-D-M, 19-21V)' },
+      { name: 'Daisy-chain', value: 'Do 4 stacji w łańcuchu' },
     ],
     applications: ['Ładowanie terminala N7 i baterii zapasowej', 'Synchronizacja danych USB/Ethernet'],
     availability: 'unavailable',
@@ -27764,6 +27767,7 @@ const newlandN7Accessories: Product[] = [
     isNew: false,
     isBestseller: false,
     specifications: [
+      { name: 'Part Number', value: 'NLS-PGN7-02' },
       { name: 'Kompatybilność', value: 'Newland N7 Cachalot Pro II' },
       { name: 'Typ', value: 'Uchwyt pistoletowy (gun grip)' },
       { name: 'Generacja', value: 'Pro II (PGN7-02)' },
@@ -27790,6 +27794,7 @@ const newlandN7Accessories: Product[] = [
     isNew: false,
     isBestseller: false,
     specifications: [
+      { name: 'Part Number', value: 'NLS-BTY70' },
       { name: 'Kompatybilność', value: 'Newland N7 Cachalot Pro II' },
       { name: 'Typ', value: 'Bateria Li-Ion wymienna hot-swap' },
       { name: 'Pojemność', value: '5 100 mAh (19,38 Wh)' },
@@ -27817,6 +27822,7 @@ const newlandN7Accessories: Product[] = [
     isNew: false,
     isBestseller: false,
     specifications: [
+      { name: 'Part Number', value: 'NLS-CDN7-4B' },
       { name: 'Kompatybilność', value: 'Newland N7 Cachalot Pro II' },
       { name: 'Typ', value: 'Ładowarka 4-gniazdowa na baterie' },
       { name: 'Zasilacz', value: 'W zestawie (wtyczka EU)' },
@@ -27843,6 +27849,7 @@ const newlandN7Accessories: Product[] = [
     isNew: false,
     isBestseller: false,
     specifications: [
+      { name: 'Part Number', value: 'TPUN7' },
       { name: 'Kompatybilność', value: 'Newland N7 Cachalot Pro II (BEZ pistoletu)' },
       { name: 'Materiał', value: 'TPU (termoplastyczny poliuretan), czarny matowy' },
       { name: 'Typ', value: 'Etui ochronne standardowe' },
@@ -27869,6 +27876,7 @@ const newlandN7Accessories: Product[] = [
     isNew: false,
     isBestseller: false,
     specifications: [
+      { name: 'Part Number', value: 'TPUN7PG' },
       { name: 'Kompatybilność', value: 'Newland N7 Cachalot Pro II + uchwyt PGN7-02' },
       { name: 'Materiał', value: 'TPU (termoplastyczny poliuretan), czarny matowy' },
       { name: 'Typ', value: 'Etui ochronne kompatybilne z pistoletem' },
@@ -27895,6 +27903,7 @@ const newlandN7Accessories: Product[] = [
     isNew: false,
     isBestseller: false,
     specifications: [
+      { name: 'Part Number', value: 'NLS-HBN7' },
       { name: 'Kompatybilność', value: 'Newland N7 Cachalot Pro II (z/bez pistoletu)' },
       { name: 'Typ', value: 'Kabura na ramię i pasek' },
       { name: 'Noszenie', value: 'Pasek na ramię + klips na pasek' },
@@ -27921,6 +27930,7 @@ const newlandN7Accessories: Product[] = [
     isNew: false,
     isBestseller: false,
     specifications: [
+      { name: 'Part Number', value: 'SPN7 HYBRID' },
       { name: 'Kompatybilność', value: 'Newland N7 Cachalot Pro II (ekran 4")' },
       { name: 'Twardość', value: '9H' },
       { name: 'Materiał', value: 'Szkło hybrydowe + PET + klej silikonowy' },
