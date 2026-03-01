@@ -27563,6 +27563,7 @@ Ekran 4" IPS WVGA (480×800) ze szkłem Gorilla Glass 3 obsługuje dotyk w ręka
 N7 Cachalot Pro II dostępny jest z Androidem 11 lub 13 — oba z certyfikatem Google Android Enterprise Recommended (AER), gwarantującym aktualizacje bezpieczeństwa i kompatybilność z systemami MDM. Bezpłatny system Ndevor firmy Newland umożliwia zdalne zarządzanie flotą urządzeń. Wszystkie warianty wyposażone są w 4 GB RAM, 64 GB Flash, Wi-Fi ac, Bluetooth 5.0, 4G LTE, NFC i GPS. Szczegółowe informacje techniczne, instrukcje obsługi oraz narzędzia deweloperskie dostępne są w oficjalnej dokumentacji Newland AIDC na stronie newland-id.com.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'newland',
+    priceFrom: 3346,
     subcategoryIds: [],
     tags: ['magazyn', 'logistyka', 'produkcja', 'outdoor'],
     images: [
