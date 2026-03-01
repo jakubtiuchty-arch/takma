@@ -104,15 +104,19 @@ function extractAttribute(xml: string, tag: string, attr: string): string | null
 // ============================================
 
 /**
- * Konwertuje Part Number Zebra na Ingram ItemID.
+ * Konwertuje Part Number na Ingram ItemID.
  * Zebra printers (PN starts with Z, P, K) → prefix ZB (Zebra)
  * Symbol-heritage mobile/accessories (PN starts with W, MC, TC, CC, SG, CRD, SAC, BTRY, TRG, CBL) → prefix SB
+ * Newland (PN starts with N7-) → prefix N1
  * Np. ZD4A042-30EM00EZ → ZBZD4A042-30EM00EZ
  * Np. WLMT0-T22B6ABC2-A6 → SBWLMT0-T22B6ABC2-A6
+ * Np. N7-PRO-W4-E3 → N1N7-PRO-W4-E3
  */
 function toIngramItemId(partNumber: string): string {
   const upper = partNumber.toUpperCase()
-  if (upper.startsWith('ZB') || upper.startsWith('SB')) return upper
+  if (upper.startsWith('ZB') || upper.startsWith('SB') || upper.startsWith('N1')) return upper
+  // Newland products
+  if (upper.startsWith('N7-')) return 'N1' + upper
   // Symbol-heritage products (terminale mobilne, skanery, akcesoria mobilne)
   const sbPrefixes = ['W', 'MC', 'TC', 'CC', 'EM', 'ET', 'DS', 'LI', 'CBA-', 'SG-', 'CRD-', 'SAC-', 'BTRY-', 'TRG-', 'CBL-', 'Z1A', '20-']
   for (const prefix of sbPrefixes) {
@@ -363,8 +367,8 @@ export async function lookupStock(partNumbers: string[]): Promise<StockInfo[]> {
     }
     if (product.itemId) {
       byItemId.set(product.itemId.toUpperCase(), product)
-      // Mapuj też bez prefiksu ZB/SB
-      const noZb = product.itemId.toUpperCase().replace(/^(ZB|SB)/, '')
+      // Mapuj też bez prefiksu ZB/SB/N1
+      const noZb = product.itemId.toUpperCase().replace(/^(ZB|SB|N1)/, '')
       byItemId.set(noZb, product)
     }
   }
