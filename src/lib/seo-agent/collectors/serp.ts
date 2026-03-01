@@ -223,6 +223,13 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'czytnik kodów kreskowych newland hr11', group: 'skanery-newland' },
   { keyword: 'newland hr11 cena', group: 'skanery-newland' },
   { keyword: 'czytnik kodów 1d newland', group: 'skanery-newland' },
+  // HR15 Wahoo
+  { keyword: 'newland hr15 wahoo', group: 'skanery-newland' },
+  { keyword: 'skaner newland hr15', group: 'skanery-newland' },
+  { keyword: 'czytnik kodów kreskowych newland hr15', group: 'skanery-newland' },
+  { keyword: 'newland hr15 cena', group: 'skanery-newland' },
+  { keyword: 'newland hr1550', group: 'skanery-newland' },
+  { keyword: 'czytnik kodów 1d pdf417', group: 'skanery-newland' },
   // Generyczne Newland skanery
   { keyword: 'skaner newland', group: 'skanery-newland' },
   { keyword: 'czytnik kodów kreskowych newland', group: 'skanery-newland' },

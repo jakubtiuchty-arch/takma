@@ -183,7 +183,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208, DS3678-SR — gwarancja 5 lat. Skanery przewodowe i bezprzewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies i Newland — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Newland HR23 Dorada — ekonomiczny 2D z gwarancją 5 lat. DS3678-SR bezprzewodowy ultra-rugged do magazynów. DS9908 hybrydowy prezentacyjny do kas POS. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 23,
+    productCount: 24,
   },
   {
     id: 'tablety-przemyslowe',
@@ -825,8 +825,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Skanery kodów kreskowych przewodowe USB od 352 zł netto. Zebra DS2208 — imager 2D, IP52, 5 lat gwarancji. Do kas, aptek, biur i magazynów. Autoryzowany partner Zebra — doradztwo i serwis.',
     longDescription: 'Przewodowe czytniki kodów kreskowych (skanery USB / RS-232) — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania. Imager 2D odczytuje kody 1D, QR, DataMatrix i kody z ekranów. Zebra DS2208 (IP52, 5 lat gwarancji) — idealna na stałe stanowiska kasowe, apteki, przyjęcia towaru.',
     icon: 'scan',
-    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er', 'newland-hr23-dorada', 'newland-hr33-marlin', 'newland-hr11-aringa'],
-    productCount: 13,
+    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er', 'newland-hr23-dorada', 'newland-hr33-marlin', 'newland-hr11-aringa', 'newland-hr15-wahoo'],
+    productCount: 14,
   },
   {
     id: 'skanery-bezprzewodowe',
@@ -12204,6 +12204,138 @@ Porównanie z konkurencją: Zebra LI2208 (od ok. 265 zł netto) jest szybsza (54
     ],
     downloads: [
       { name: 'Karta katalogowa HR11 Aringa (EN)', type: 'datasheet', url: '/downloads/newland/HR11-Aringa-Datasheet.pdf', size: '678 KB' },
+      { name: 'Sterownik OPOS Newland Scanner V1.2.0', type: 'software', url: '/downloads/newland/OPOS_Newland_Scanner_V1.2.0.zip', size: '1,1 MB' },
+      { name: 'EasySet — oprogramowanie konfiguracyjne (strona producenta)', type: 'software', url: 'https://www.newland-id.com/en/software/easyset', size: 'Online' },
+    ],
+    createdAt: '2026-03-01',
+  },
+  // =====================================================
+  // Newland HR15 Wahoo Corded — budżetowy 1D CCD + PDF417
+  // =====================================================
+  {
+    id: 'newland-hr15-wahoo',
+    slug: 'newland-hr15-wahoo',
+    name: 'Newland HR15 Wahoo',
+    sameAs: 'https://www.newland-id.com/en/products/handheld-scanners/hr15-wahoo-corded',
+    shortDescription: 'Przewodowy czytnik 1D CCD + PDF417 — IP54, upadek z 1.5 m, gwarancja 5 lat, 152 g, USB',
+    description: `Dla kogo? Newland HR15 Wahoo to przewodowy czytnik kodów kreskowych 1D z sensorem CCD 2500 pikseli, przeznaczony dla kas fiskalnych, punktów obsługi klienta, aptek (kody EAN na opakowaniach), małych sklepów, bibliotek, biur i magazynów o niskim i średnim natężeniu skanowania. Najlepsze IP54 w klasie cenowej — jedyny skaner w segmencie budżetowym z ochroną przed pyłem i bryzgami wody.
+
+Sensor CCD 2500 pikseli z technologią UIMG dekoduje kody 1D (EAN-13, EAN-8, UPC-A/E, Code 128, Code 39, GS1-128, GS1 DataBar, Codabar, ITF, Code 93, ISBN) oraz — co wyróżnia HR15 na tle tańszych czytników CCD — kody stacked 2D: PDF417 i MicroPDF417 (do 255 bajtów). Odczyt PDF417 jest kluczowy przy skanowaniu polskich dowodów osobistych, praw jazdy i dokumentów logistycznych.
+
+Uwaga: HR15 Wahoo NIE czyta kodów 2D typu QR Code, Data Matrix ani Aztec. Jeśli potrzebujesz pełnego 2D — wybierz Newland HR23 Dorada (od ok. 260 zł netto, imager CMOS 640×480) lub Zebra DS2208 (od ok. 352 zł netto).
+
+Szybkość skanowania 300 odczytów/sekundę z rozdzielczością od 4 mil (0,1 mm) i zasięgiem EAN-13 do 465 mm. Pole widzenia 42° — szeroki kąt na krótkim dystansie ułatwia celowanie w kody na produktach i przesyłkach. Oświetlenie czerwonym LED 620–630 nm — przyjazne dla oczu przy długich zmianach.
+
+Klasa ochrony IP54 (pył + bryzgi wody) to najwyższe IP wśród skanerów budżetowych — dla porównania: Zebra DS2208 ma IP52, Newland HR23 ma IP52, Newland HR11 ma IP42. Odporność na upadek z 1,5 m na beton, zakres temperatury pracy od -10°C do +50°C, wilgotność 5–95% bez kondensacji, ESD ±15 kV (powietrze) / ±8 kV (kontakt).
+
+Waga 152 g (bez kabla) i wymiary 113,5 × 73 × 159 mm — kompaktowa ergonomiczna obudowa na wielogodzinne zmiany. Złącze RJ45 w skanerze — kabel USB spiralny 1,5 m w zestawie (wersja NLS-HR1550-35). Dostępna też wersja RS-232. Konfiguracja przez EasySet (bezpłatne oprogramowanie Newland) lub kody konfiguracyjne z instrukcji.
+
+Gwarancja producenta 5 lat (60 miesięcy) — najdłuższa gwarancja wśród skanerów 1D w tym segmencie cenowym. Porównanie z Zebra LI2208: HR15 Wahoo ma lepsze IP (IP54 vs IP52), czyta PDF417 (LI2208 nie), ale jest wolniejszy (300 vs 547 skanów/s) i ma krótszy zasięg (465 mm vs 790 mm). Pełna specyfikacja — w dokumentacji Newland EMEA.`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-przewodowe'],
+    manufacturerId: 'newland',
+    tags: ['retail', 'magazyn', 'logistyka'],
+    images: [],
+    imageDescriptions: [],
+    seoTitle: 'Newland HR15 Wahoo — czytnik kodów 1D CCD + PDF417, IP54, USB | TAKMA',
+    seoDescription: 'Przewodowy skaner 1D Newland HR15 Wahoo: CCD 2500 px, PDF417, IP54, 1.5 m drop, 5 lat gwarancji, 152 g. Porównanie z Zebra DS2208 i LI2208. Cena i dostępność online.',
+    isNew: true,
+    isBestseller: false,
+    availability: 'unavailable',
+    specifications: [
+      { name: 'Typ skanera', value: 'CCD Linear Imager (1D + PDF417) przewodowy' },
+      { name: 'Sensor', value: 'CCD 2500 pikseli' },
+      { name: 'Technologia dekodowania', value: 'UIMG' },
+      { name: 'Celownik', value: 'Czerwony LED 620–630 nm' },
+      { name: 'Rozdzielczość', value: '≥ 4 mil (0,1 mm)' },
+      { name: 'Minimalny kontrast', value: '25%' },
+      { name: 'Prędkość skanowania', value: '300 skanów/sekundę' },
+      { name: 'Skanowane kody 1D', value: 'Code 128, EAN-13, EAN-8, UPC-A/E, Code 39, Codabar, ITF 2/5, ISBN, Code 93, GS1-128, GS1 DataBar (RSS)' },
+      { name: 'Skanowane kody 2D (stacked)', value: 'PDF417 (do 255 bajtów), MicroPDF417 (do 255 bajtów)' },
+      { name: 'Zasięg EAN-13 (13 mil)', value: '31,5–465,5 mm' },
+      { name: 'Zasięg Code 128 (10 mil)', value: '26,3–351,5 mm' },
+      { name: 'Pole widzenia', value: '42° (poziom)' },
+      { name: 'Kąty odczytu', value: 'Pitch ±55°, Roll ±30°, Skew ±75°' },
+      { name: 'Interfejs', value: 'USB (emulacja klawiatury / COM port), RS-232' },
+      { name: 'Złącze skanera', value: 'RJ45' },
+      { name: 'Kabel w zestawie', value: 'USB spiralny 1,5 m' },
+      { name: 'Powiadomienia', value: 'Buzzer (dźwięk), dioda LED' },
+      { name: 'Wymiary', value: '113,5 × 73 × 159 mm' },
+      { name: 'Waga', value: '152 g (bez kabla)' },
+      { name: 'IP', value: 'IP54' },
+      { name: 'Odporność na upadek', value: '1,5 m na beton' },
+      { name: 'Temperatura pracy', value: '-10°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-20°C do +60°C' },
+      { name: 'Wilgotność', value: '5% – 95% (bez kondensacji)' },
+      { name: 'ESD', value: '±8 kV (kontakt), ±15 kV (powietrze)' },
+      { name: 'Zasilanie', value: '5 V DC ±5%, 135 mA typowy / 185 mA maks., standby 75 mA' },
+      { name: 'Certyfikaty', value: 'CE, FCC Part 15 Class B, RoHS' },
+      { name: 'Gwarancja', value: '5 lat (60 miesięcy)' },
+    ],
+    applications: [
+      'Kasy fiskalne i POS (retail, gastronomia)',
+      'Apteki — skanowanie kodów EAN na opakowaniach leków',
+      'Biblioteki i archiwa — kody na książkach i dokumentach',
+      'Magazyn — przyjęcia i wydania towaru, inwentaryzacja',
+      'Logistyka i poczta — skanowanie etykiet przesyłek',
+      'Biura — skanowanie dokumentów z kodami PDF417 (dowody osobiste, prawa jazdy)',
+    ],
+    variants: [
+      {
+        partNumber: 'NLS-HR1550-35',
+        name: 'HR15 Wahoo — przewodowy, kabel USB spiralny 1,5 m',
+        availability: 'unavailable',
+        attributes: { 'Łączność': 'USB (kabel spiralny 1,5 m)' },
+      },
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: ['newland-std23-33-sa', 'newland-std30i'],
+    faq: [
+      {
+        question: 'Co wyróżnia Newland HR15 Wahoo na tle innych skanerów budżetowych?',
+        answer: 'HR15 Wahoo to jedyny skaner w segmencie poniżej 250 zł netto z klasą ochrony IP54 (pył + bryzgi wody) — Zebra DS2208 i Newland HR23 mają IP52, a HR11 Aringa tylko IP42. Dodatkowo HR15 czyta kody PDF417 (dowody osobiste, prawa jazdy), czego nie potrafi tańszy HR11 Aringa. Gwarancja 5 lat, waga 152 g.',
+      },
+      {
+        question: 'Czy HR15 Wahoo czyta kody QR i Data Matrix?',
+        answer: 'Nie — HR15 Wahoo to skaner CCD liniowy (1D). Odczytuje kody 1D (EAN, Code 128, GS1 DataBar itp.) oraz stacked 2D: PDF417 i MicroPDF417 (do 255 bajtów). NIE obsługuje kodów macierzowych 2D: QR Code, Data Matrix ani Aztec. Jeśli potrzebujesz pełnego 2D — wybierz Newland HR23 Dorada (od ok. 260 zł netto) lub Zebra DS2208 (od ok. 352 zł netto).',
+      },
+      {
+        question: 'Jaki jest zasięg skanowania HR15 Wahoo?',
+        answer: 'Zasięg zależy od rozmiaru kodu: EAN-13 (13 mil) — 31,5–465,5 mm, Code 128 (10 mil) — 26,3–351,5 mm. Pole widzenia 42° (poziom). Celownik czerwony LED 620–630 nm widoczny zarówno w jasnym, jak i słabym oświetleniu.',
+      },
+      {
+        question: 'Czy HR15 Wahoo nadaje się do apteki (FMD/KOWAL)?',
+        answer: 'Częściowo — HR15 odczyta kody EAN-13 na opakowaniach leków, ale NIE odczyta kodów Data Matrix wymaganych przez dyrektywę FMD do weryfikacji autentyczności (serializacja). Do pełnej zgodności z FMD/KOWAL potrzebny jest skaner 2D: Newland HR23 Dorada lub Zebra DS2208. HR15 wystarczy jako dodatkowy czytnik do szybkiego skanowania EAN.',
+      },
+      {
+        question: 'Czym różni się HR15 Wahoo od HR11 Aringa?',
+        answer: 'Oba to skanery CCD 1D, ale HR15 ma kilka istotnych przewag: IP54 (vs IP42 w HR11), odczyt PDF417 (HR11 nie czyta PDF417), szersze pole widzenia 42° i dłuższy zasięg EAN-13 (465 mm vs 480 mm — porównywalne). HR11 jest lżejszy (120 g vs 152 g) i tańszy. Jeśli potrzebujesz IP54 lub PDF417 — wybierz HR15.',
+      },
+      {
+        question: 'Czym różni się HR15 Wahoo od Zebra LI2208?',
+        answer: 'Zebra LI2208 jest szybsza (547 vs 300 skanów/s) i ma dłuższy zasięg (790 mm vs 465 mm), ale jest droższa (od ok. 265 zł netto). HR15 Wahoo ma lepszą ochronę IP54 (vs IP52 w LI2208) i czyta PDF417 (LI2208 nie). HR15 działa od -10°C, LI2208 od 0°C. Jeśli potrzebujesz szybkości i zasięgu — LI2208. Jeśli IP54 i PDF417 — HR15.',
+      },
+      {
+        question: 'Jak skonfigurować Newland HR15 Wahoo?',
+        answer: 'Przez bezpłatne oprogramowanie EasySet od Newland — ustawienie prefiksów/sufiksów, formatów danych, trybu skanowania (trigger/presentation/auto-sense) i aktywacja/dezaktywacja symbologii. Alternatywnie: skanowanie kodów konfiguracyjnych z dołączonej instrukcji Quick Start Guide. Czytnik działa plug-and-play po podłączeniu kabla USB — emulacja klawiatury (HID) bez instalacji sterowników.',
+      },
+      {
+        question: 'Czy HR15 Wahoo ma podstawkę do skanowania hands-free?',
+        answer: 'HR15 jest kompatybilny z podstawką Newland Smartstand (NLS-STD23-33-SA) oraz Intellistand (NLS-STD30i). Podstawka umożliwia automatyczne skanowanie w trybie presentation mode — skaner wykrywa zbliżenie kodu i odczytuje go bez naciskania przycisku. Podstawki dostępne osobno jako akcesorium.',
+      },
+      {
+        question: 'Jaka jest gwarancja na HR15 Wahoo?',
+        answer: 'Gwarancja producenta 5 lat (60 miesięcy) na wersję przewodową — jedna z najdłuższych na rynku skanerów budżetowych. Wersja Bluetooth ma gwarancję 3 lata. Serwis w Polsce realizowany przez autoryzowanych partnerów Newland.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Newland HR15 Wahoo?',
+        answer: 'W segmencie 1D: Newland HR11 Aringa (tańszy, ale IP42, bez PDF417), Zebra LI2208 (szybszy, dłuższy zasięg, droższa). Upgrade do 2D: Newland HR23 Dorada (imager 2D od ok. 260 zł netto — czyta QR, DataMatrix, PDF417), Zebra DS2208 (standard branżowy 2D, od ok. 352 zł). HR15 Wahoo to najlepszy wybór gdy potrzebujesz IP54, PDF417 i 5 lat gwarancji za ok. 230 zł netto.',
+      },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa HR15 Wahoo Corded (EN)', type: 'datasheet', url: '/downloads/newland/HR15-Wahoo-Corded-Datasheet.pdf', size: '806 KB' },
+      { name: 'Instrukcja obsługi HR15 Wahoo (EN)', type: 'manual', url: '/downloads/newland/HR15-Wahoo-User-Guide.pdf', size: '2,4 MB' },
+      { name: 'Quick Start Guide HR23/HR33 (EN)', type: 'manual', url: '/downloads/newland/HR23-HR33-Quick-Start-Guide.pdf', size: '1,5 MB' },
       { name: 'Sterownik OPOS Newland Scanner V1.2.0', type: 'software', url: '/downloads/newland/OPOS_Newland_Scanner_V1.2.0.zip', size: '1,1 MB' },
       { name: 'EasySet — oprogramowanie konfiguracyjne (strona producenta)', type: 'software', url: 'https://www.newland-id.com/en/software/easyset', size: 'Online' },
     ],
