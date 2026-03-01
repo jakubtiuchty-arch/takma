@@ -29681,7 +29681,7 @@ Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CT70 (PD
       'Transport i field service — 5G, GPS, praca outdoor -20°C do +50°C',
       'Healthcare — dezynfekcja IP68, skanowanie leków FMD, identyfikacja pacjentów',
     ],
-    priceFrom: 6373,
+    priceFrom: 6168,
     availability: 'available',
     isNew: true,
     isBestseller: false,

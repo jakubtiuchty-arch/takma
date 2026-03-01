@@ -108,13 +108,17 @@ function extractAttribute(xml: string, tag: string, attr: string): string | null
  * Zebra printers (PN starts with Z, P, K) → prefix ZB (Zebra)
  * Symbol-heritage mobile/accessories (PN starts with W, MC, TC, CC, SG, CRD, SAC, BTRY, TRG, CBL) → prefix SB
  * Newland (PN starts with N7-, MT93, NLS-, TPUN7, SPN7, BTY7) → prefix N1
+ * Honeywell (PN starts with CT70) → prefix ON
  * Np. ZD4A042-30EM00EZ → ZBZD4A042-30EM00EZ
  * Np. WLMT0-T22B6ABC2-A6 → SBWLMT0-T22B6ABC2-A6
  * Np. N7-PRO-W4-E3 → N1N7-PRO-W4-E3
+ * Np. CT70-L0N-057CS104G → ONCT70-L0N-057CS104G
  */
 function toIngramItemId(partNumber: string): string {
   const upper = partNumber.toUpperCase()
-  if (upper.startsWith('ZB') || upper.startsWith('SB') || upper.startsWith('N1')) return upper
+  if (upper.startsWith('ZB') || upper.startsWith('SB') || upper.startsWith('N1') || upper.startsWith('ON')) return upper
+  // Honeywell products (CT70 terminals and accessories)
+  if (upper.startsWith('CT70')) return 'ON' + upper
   // Newland products (terminals N7-*, MT93-*, MT95-*, accessories NLS-*, TPUN7*, SPN7*, BTY7*, BTY-MT*, HS-MT*, SPMT*)
   if (upper.startsWith('N7-') || upper.startsWith('MT93') || upper.startsWith('MT95') || upper.startsWith('NLS-') || upper.startsWith('TPUN7') || upper.startsWith('SPN7') || upper.startsWith('BTY7') || upper.startsWith('BTY-MT') || upper.startsWith('HS-MT') || upper.startsWith('SPMT')) return 'N1' + upper
   // Symbol-heritage products (terminale mobilne, skanery, akcesoria mobilne)
