@@ -27619,71 +27619,82 @@ N7 Cachalot Pro II dostępny jest z Androidem 11 lub 13 — oba z certyfikatem G
     availability: 'unavailable',
     isNew: true,
     variants: [
-      // Standard 2D scanner (warianty S)
+      // Standard 2D scanner (warianty S) — Ingram ~2909 PLN × 1.15 = 3346 PLN
       {
         partNumber: 'N7-Pro-W4-S2-A13',
         name: 'N7 — 29 kl., Standard 2D, Android 13',
+        priceFrom: 3346,
         attributes: { 'Skaner': 'Standard 2D', 'Klawiatura': '29 klawiszy', 'Android': '13' },
         availability: 'unavailable',
       },
       {
         partNumber: 'N7-Pro-W4-S3',
         name: 'N7 — 38 kl., Standard 2D, Android 11',
+        priceFrom: 3346,
         attributes: { 'Skaner': 'Standard 2D', 'Klawiatura': '38 klawiszy', 'Android': '11' },
         availability: 'unavailable',
       },
       {
         partNumber: 'N7-Pro-W4-S3-A13',
         name: 'N7 — 38 kl., Standard 2D, Android 13',
+        priceFrom: 3346,
         attributes: { 'Skaner': 'Standard 2D', 'Klawiatura': '38 klawiszy', 'Android': '13' },
         availability: 'unavailable',
       },
       {
         partNumber: 'N7-Pro-W4-S4',
         name: 'N7 — 47 kl., Standard 2D, Android 11',
+        priceFrom: 3346,
         attributes: { 'Skaner': 'Standard 2D', 'Klawiatura': '47 klawiszy', 'Android': '11' },
         availability: 'unavailable',
       },
       {
         partNumber: 'N7-Pro-W4-S4-A13',
         name: 'N7 — 47 kl., Standard 2D, Android 13',
+        priceFrom: 3346,
         attributes: { 'Skaner': 'Standard 2D', 'Klawiatura': '47 klawiszy', 'Android': '13' },
         availability: 'unavailable',
       },
-      // Duo Near & Far scanner (warianty E)
+      // Duo Near & Far scanner (warianty E) — Ingram ~3138 PLN × 1.15 = 3608 PLN
       {
         partNumber: 'N7-Pro-W4-E2',
         name: 'N7 — 29 kl., Duo Near & Far, Android 11',
+        priceFrom: 3608,
         attributes: { 'Skaner': 'Duo Near & Far', 'Klawiatura': '29 klawiszy', 'Android': '11' },
         availability: 'unavailable',
       },
       {
         partNumber: 'N7-Pro-W4-E2-A13',
         name: 'N7 — 29 kl., Duo Near & Far, Android 13',
+        priceFrom: 3608,
         attributes: { 'Skaner': 'Duo Near & Far', 'Klawiatura': '29 klawiszy', 'Android': '13' },
         availability: 'unavailable',
       },
       {
         partNumber: 'N7-Pro-W4-E3',
         name: 'N7 — 38 kl., Duo Near & Far, Android 11',
+        priceFrom: 3608,
         attributes: { 'Skaner': 'Duo Near & Far', 'Klawiatura': '38 klawiszy', 'Android': '11' },
         availability: 'unavailable',
       },
       {
         partNumber: 'N7-Pro-W4-E3-A13',
         name: 'N7 — 38 kl., Duo Near & Far, Android 13',
+        priceFrom: 3608,
         attributes: { 'Skaner': 'Duo Near & Far', 'Klawiatura': '38 klawiszy', 'Android': '13' },
         availability: 'unavailable',
       },
       {
         partNumber: 'N7-Pro-W4-E4',
         name: 'N7 — 47 kl., Duo Near & Far, Android 11',
+        priceFrom: 3608,
         attributes: { 'Skaner': 'Duo Near & Far', 'Klawiatura': '47 klawiszy', 'Android': '11' },
         availability: 'unavailable',
       },
       {
         partNumber: 'N7-Pro-W4-E4-A13',
         name: 'N7 — 47 kl., Duo Near & Far, Android 13',
+        priceFrom: 3608,
         attributes: { 'Skaner': 'Duo Near & Far', 'Klawiatura': '47 klawiszy', 'Android': '13' },
         availability: 'unavailable',
       },
