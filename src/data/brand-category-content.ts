@@ -786,6 +786,244 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
     ],
   },
   // ===================================================================
+  // SKANERY KODÓW KRESKOWYCH NEWLAND
+  // ===================================================================
+  'skanery-newland': {
+    definition: {
+      heading: 'Skanery kodów kreskowych Newland — chiński lider z technologią UIMG i gwarancją 5 lat',
+      content:
+        'Newland AIDC (założony w 1999 roku w Fuzhou, Chiny) jest trzecim co do wielkości producentem skanerów kodów kreskowych na świecie, z ponad 50 milionami urządzeń sprzedanych w 60+ krajach [źródło: newland-id.com](https://www.newland-id.com/en/about-us). Opatentowana technologia dekodowania UIMG (Unified Imaging) — opracowana wewnętrznie przez Newland — zapewnia szybkie i niezawodne odczytywanie kodów 1D i 2D na czipie dekodera NLDC. Skanery Newland obsługują wszystkie popularne symbologie: EAN-13, Code 128, QR Code, DataMatrix, PDF417, Aztec, GS1 DataBar — oraz kody wyświetlane na ekranach (e-paragony, kupony, bilety, e-recepty). Oferta obejmuje pełne spektrum: od budżetowego [HR11 Aringa](/produkt/newland-hr11-aringa) (od ok. 181 zł netto, 1D CCD), przez uniwersalny [HR23 Dorada](/produkt/newland-hr23-dorada) (od ok. 271 zł, 2D CMOS, GS1 Ready), megapikselowy [HR33 Marlin](/produkt/newland-hr33-marlin) z celownikiem laserowym i OCR (od ok. 416 zł), po przemysłowy [NVH300 Angler DP](/produkt/newland-nvh300) z trójkolorowym oświetleniem DPM (od ok. 1 008 zł). Wersje bezprzewodowe Bluetooth 5.0 z zasięgiem ponad 100 m: [HR23 Dorada BT](/produkt/newland-hr23-dorada-bt) (od ok. 437 zł) i [HR33 Marlin BT](/produkt/newland-hr33-marlin-bt) (od ok. 688 zł) z trybem batch (do 16 384 kodów offline). Wszystkie skanery Newland objęte są gwarancją 5 lat (60 miesięcy) — najdłuższą w segmencie skanerów ręcznych. Konfiguracja przez bezpłatne oprogramowanie [EasySet](https://www.newland-id.com/en/software/easyset) — symbologie, prefiksy/sufiksy, formaty danych, Advanced Scripting (HR33, NVH300).',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać skaner kodów kreskowych Newland? 7 kryteriów',
+      items: [
+        'Typ kodów do odczytu — HR11 Aringa i HR15 Wahoo czytają tylko kody 1D (EAN-13, Code 128, Code 39, GS1 DataBar). HR15 dodatkowo PDF417 (polskie dokumenty, dowód osobisty). HR23 Dorada i HR33 Marlin czytają 1D + 2D (QR, DataMatrix, PDF417, Aztec, Micro QR) + kody z ekranów smartfonów. NVH300 Angler DP czyta 1D + 2D + kody DPM grawerowane na metalu. W 2026 rekomendujemy minimum skaner 2D — kody DataMatrix są obowiązkowe w aptekach (FMD/KOWAL) i coraz powszechniejsze w logistyce (GS1).',
+        'Przewodowy czy bezprzewodowy — przewodowy USB (HR23, HR33, HR11, HR15, NVH300): stałe stanowisko kasowe, apteka, biuro, linia produkcyjna — niezawodne połączenie, brak baterii, niższa cena. Bezprzewodowy Bluetooth 5.0 ([HR23 BT](/produkt/newland-hr23-dorada-bt), [HR33 BT](/produkt/newland-hr33-marlin-bt)): swoboda ruchu w promieniu 100+ m, tryb batch offline (16 384/15 000 kodów), bateria 2600 mAh na 15–16 h. Reguła: stałe stanowisko → przewodowy. Inwentaryzacja / praca mobilna → bezprzewodowy.',
+        'Rozdzielczość sensora — HR11/HR15: CCD 2500 pikseli (1D, zasięg do 280 mm). HR23 Dorada: CMOS 640×480 (2D, zasięg EAN-13 do 280 mm). HR33 Marlin: megapikselowy CMOS 1280×800 (2D, zasięg EAN-13 do 535 mm, prawie 2× dalej). NVH300: CMOS 1280×960 (DPM, zasięg EAN-13 do 360 mm). Więcej pikseli = dalszy zasięg i lepszy odczyt małych/gęstych kodów. Do kasy wystarczy HR23. Do magazynu z regałami — HR33 z laserem.',
+        'Wytrzymałość i klasa ochrony — HR11 Aringa (IP42, 1,5 m) i HR23 Dorada (IP52, 1,5 m): biuro, kasa, apteka. HR15 Wahoo (IP54, 1,5 m): lekki magazyn, linia produkcyjna. NVH300 Angler DP (IP64, 1,8 m): ciężkie warunki przemysłowe, kurz, zachlapania, upadki na beton. Wersje BT: IP52, 1,5 m (skaner), 1,2 m (stacja dokująca). Temperatura pracy: od -20°C (HR11/HR15/HR33 przewodowy) do -10°C (wersje BT) — BT wersje mają węższy zakres ze względu na baterię Li-Ion.',
+        'Celownik — HR11/HR15: linia LED czerwona — prosty celownik do bliskiego skanowania na kasie. HR23 Dorada: celownik LED czerwony — wystarczający do odległości do 28 cm. HR33 Marlin: celownik laserowy 650 nm — precyzyjne wskazanie celu z odległości 50+ cm, szybsza praca w magazynach. NVH300: celownik laserowy + specjalne oświetlenie DPM. Laser jest kluczowy gdy operator skanuje z daleka lub w warunkach słabego oświetlenia.',
+        'Dodatkowe funkcje — OCR Passport MRZ: tylko HR33 Marlin (wersja przewodowa i BT) — odczyt stref maszynowych w paszportach. Acuscan: HR33, NVH300 — automatyczna optymalizacja dekodowania. Advanced Scripting: HR33, NVH300 — programowalna logika walidacji danych w skanerze. Tryb batch offline: HR23 BT (16 384 kodów), HR33 BT (15 000 kodów) — inwentaryzacja bez sieci. Wibracja: tylko wersje BT — potwierdzenie skanowania w głośnym otoczeniu.',
+        'Budżet i TCO 5 lat — [HR11 Aringa](/produkt/newland-hr11-aringa) (od ~181 zł, 1D): najtańszy skaner z gwarancją 5 lat na rynku. [HR23 Dorada](/produkt/newland-hr23-dorada) (od ~271 zł, 2D): najlepsza wartość w segmencie 2D. [HR33 Marlin](/produkt/newland-hr33-marlin) (od ~416 zł, 2D mega, OCR): jedyny skaner z OCR i laserem poniżej 500 zł. [HR33 BT](/produkt/newland-hr33-marlin-bt) (od ~688 zł, BT 5.0): megapikselowy bezprzewodowy za połowę ceny Zebra DS8178 (1 800 zł). [NVH300](/produkt/newland-nvh300) (od ~1 008 zł, DPM): przemysłowy DPM za 1/5 ceny Zebra DS3608-DP (5 000 zł). Gwarancja 5 lat = 0 zł serwisu przez 5 lat.',
+      ],
+    },
+    expertAuthority:
+      'TAKMA jest autoryzowanym dystrybutorem skanerów Newland AIDC w Polsce. Oferujemy pełną gamę skanerów Newland — od budżetowych czytników 1D po megapikselowe skanery z OCR i przemysłowe DPM — z dostawą z magazynu centralnego Ingram Micro i BlueStar. Zapewniamy doradztwo techniczne (dobór modelu, porównanie z Zebra/Honeywell/Datalogic), konfigurację EasySet (symbologie, prefiksy, tryby komunikacji, Advanced Scripting), integrację z systemami POS/WMS/ERP, obsługę gwarancyjną 5 lat i serwis pogwarancyjny. Jako wieloletni partner Zebra Technologies i Newland AIDC znamy obydwa ekosystemy — doradzamy obiektywnie, bez faworyzowania marki. Skanery Zebra serwisujemy we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra).',
+    technicalDeepDive: `Pełne portfolio skanerów kodów kreskowych Newland — od budżetowych 1D CCD po przemysłowe megapikselowe DPM — pozwala dobrać skaner idealnie dopasowany do stanowiska pracy. Zestawienie kluczowych parametrów:\n\n• HR11 Aringa (handheld 1D, przewodowy): CCD 2500 px, 300 skanów/s, zasięg do 280 mm, kody 1D + ekrany, USB/RS232, IP42, upadki 1,5 m, 120 g, gwarancja 60 mies. (5 lat), od ok. 181 zł netto — najtańszy profesjonalny czytnik z 5-letnią gwarancją. Do prostych stanowisk z kodami 1D (biblioteka, biuro, szatnia).\n\n• HR15 Wahoo (handheld 1D + PDF417, przewodowy): CCD 2500 px, 300 skanów/s, 1D + PDF417/MicroPDF417, USB/RS232, IP54 (najwyższe w segmencie budżetowym), upadki 1,5 m, 152 g, od ok. 233 zł — jedyny czytnik budżetowy z IP54 i PDF417. Do aptek (kody na receptach), urzędów (dowody osobiste).\n\n• HR23 Dorada (handheld 2D, przewodowy): CMOS 640×480, kody 1D/2D + ekrany, USB/RS232, IP52, upadki 1,5 m, 137 g, GS1 Ready, od ok. 271 zł — uniwersalny 2D do kas, aptek, biur. Opcja z podstawką Smartstand.\n\n• HR23 Dorada Bluetooth (handheld 2D, bezprzewodowy): CMOS 640×480, BT 5.0, zasięg 100 m, bateria 2600 mAh (16 h), batch 16 384 kodów, IP52, 209 g, od ok. 437 zł — bezprzewodowy 2D z trybem offline do inwentaryzacji.\n\n• HR33 Marlin (handheld 2D megapikselowy, przewodowy): CMOS 1280×800, celownik laserowy 650 nm, OCR Passport MRZ, Acuscan, Advanced Scripting, 1D/2D + kody pocztowe + ekrany, USB/RS232, IP52, 140 g, zasięg EAN-13 do 535 mm, od ok. 416 zł — najlepsza wartość w segmencie megapikselowym z OCR.\n\n• HR33 Marlin Bluetooth (handheld 2D megapikselowy, bezprzewodowy): CMOS 1280×800, BT 5.0, zasięg 100 m, bateria 2600 mAh (15 h), batch 15 000 kodów, celownik laserowy, OCR, Acuscan, IP52, 210 g, od ok. 688 zł — megapikselowy bezprzewodowy z OCR za połowę ceny Zebra DS8178.\n\n• NVH300 Angler DP (handheld DPM, przewodowy): CMOS 1280×960, celownik laserowy, trójkolorowe LED (białe + czerwone + niebieskie) z automatycznym doborem, 1D/2D/DPM, USB/RS232, IP64, upadki 1,8 m, 245 g, od ok. 1 008 zł — przemysłowy DPM do produkcji, 5× tańszy od Zebra DS3608-DP.`,
+    tcoComparisons: [
+      {
+        title: 'TCO 5 lat — 10 stanowisk kasowych (skanery 2D)',
+        variants: [
+          {
+            label: '10× Newland HR23 Dorada',
+            items: [
+              { name: 'Skanery (271 zł × 10)', cost: '2 710 zł' },
+              { name: 'Podstawki Smartstand (148 zł × 10)', cost: '1 480 zł' },
+              { name: 'Serwis 5 lat', cost: '0 zł (gwarancja)' },
+            ],
+            total: '4 190 zł (~7 zł/mies./stanowisko)',
+          },
+          {
+            label: '10× Zebra DS2208',
+            items: [
+              { name: 'Skanery (352 zł × 10)', cost: '3 520 zł' },
+              { name: 'Podstawki (w zestawie)', cost: '0 zł' },
+              { name: 'Serwis 5 lat', cost: '0 zł (gwarancja)' },
+            ],
+            total: '3 520 zł (~6 zł/mies./stanowisko)',
+          },
+          {
+            label: '10× tani skaner chiński',
+            items: [
+              { name: 'Skanery (150 zł × 10)', cost: '1 500 zł' },
+              { name: '3 awarie/rok × 5 lat (wymiana)', cost: '2 250 zł' },
+              { name: 'Przestoje, rekonfiguracja', cost: 'trudne do oszacowania' },
+            ],
+            total: '~3 750 zł + ponowny zakup co 2 lata',
+          },
+        ],
+        conclusion: 'Newland HR23 Dorada oferuje 5 lat gwarancji za ~4 190 zł (z podstawkami) — porównywalny TCO z Zebrą DS2208 (3 520 zł bez podstawek). Tani skaner chiński wychodzi drożej z powodu częstych awarii i wymiany co 2 lata.',
+      },
+      {
+        title: 'TCO 5 lat — skaner bezprzewodowy (magazyn, 1 stanowisko)',
+        variants: [
+          {
+            label: 'Newland HR33 Marlin BT',
+            items: [
+              { name: 'Skaner + stacja dokująca', cost: '688 zł' },
+              { name: 'Bateria zapasowa BTY2333', cost: '92 zł' },
+              { name: 'Serwis 5 lat', cost: '0 zł (gwarancja)' },
+            ],
+            total: '780 zł (13 zł/mies.)',
+          },
+          {
+            label: 'Zebra DS8178',
+            items: [
+              { name: 'Skaner + stacja ładowania', cost: '1 800 zł' },
+              { name: 'Dodatkowa bateria', cost: '~100 zł' },
+              { name: 'Serwis 3 lata + OneCare 2 lata', cost: '~300 zł' },
+            ],
+            total: '~2 200 zł (37 zł/mies.)',
+          },
+        ],
+        conclusion: 'Newland HR33 Marlin BT to 65% niższy TCO niż Zebra DS8178 przy porównywalnej funkcjonalności (megapikselowy sensor, BT, batch). HR33 BT ma nawet lepszy BT 5.0 z zasięgiem 100 m (vs 10 m DS8178) i OCR w standardzie.',
+      },
+    ],
+    useCases: [
+      {
+        title: 'Kasa fiskalna i POS — HR23 Dorada / HR33 Marlin',
+        description:
+          'Skaner na kasie to podstawowe narzędzie w handlu detalicznym. [HR23 Dorada](/produkt/newland-hr23-dorada) (od 271 zł) — uniwersalny 2D obsługujący EAN-13, QR, DataMatrix, kody z ekranów (e-paragony, kupony), USB Plug&Play. Do kas wysokoobrotowych: [HR33 Marlin](/produkt/newland-hr33-marlin) (od 416 zł) z megapikselowym sensorem i celownikiem laserowym — szybszy odczyt z daleka, technologia Acuscan. Oba modele z opcjonalną podstawką Smartstand (NLS-STD23-33-SA) do trybu hands-free. Obsługują GS1 DataBar, kody lojalnościowe i e-kupony z telefonów. Gwarancja 5 lat = 0 zł serwisu.',
+      },
+      {
+        title: 'Apteka i weryfikacja leków FMD — HR23 Dorada',
+        description:
+          'Dyrektywa FMD wymaga weryfikacji kodu DataMatrix 2D na opakowaniu każdego leku w systemie KOWAL/NMVS. [HR23 Dorada](/produkt/newland-hr23-dorada) (od 271 zł) z certyfikatem GS1 Ready spełnia te wymogi — odczytuje DataMatrix na małych opakowaniach leków, działa z systemami aptecznymi (Kamsoft, Infofarm, Pharmindex) przez USB HID. Wersja [HR23 BT](/produkt/newland-hr23-dorada-bt) (od 437 zł) ułatwia skanowanie na regałach magazynowych bez ciągnięcia kabla. Tryb batch (16 384 kodów offline) — do inwentaryzacji stanów magazynowych apteki.',
+      },
+      {
+        title: 'Magazyn i inwentaryzacja — HR23 BT / HR33 BT (tryb batch)',
+        description:
+          'Do inwentaryzacji w magazynach bez zasięgu Wi-Fi: [HR23 Dorada BT](/produkt/newland-hr23-dorada-bt) (437 zł, batch 16 384 kodów) lub [HR33 Marlin BT](/produkt/newland-hr33-marlin-bt) (688 zł, batch 15 000 kodów, celownik laserowy). Operator skanuje kody, skaner zapamiętuje je w pamięci, po powrocie do stacji dokującej dane przesyłane są masowo do komputera. Bluetooth 5.0 z zasięgiem 100 m — zasięg 10× większy niż Zebra DS2278 (10 m, BT 4.0). Bateria 2600 mAh na 15–16 h pracy. Wymiana baterii (NLS-BTY2333) w sekundę — latch-release bez narzędzi.',
+      },
+      {
+        title: 'Produkcja DPM i traceability — NVH300 Angler DP',
+        description:
+          '[NVH300 Angler DP](/produkt/newland-nvh300) (od 1 008 zł) to przemysłowy skaner DPM do odczytu kodów znakowanych bezpośrednio na częściach: dot peen na aluminium, grawerowanie laserowe na stali, trawienie chemiczne na szkle, druk atramentowy na PCB. Unikalne trójkolorowe oświetlenie LED (białe + czerwone + niebieskie) z automatycznym doborem kąta i koloru — najlepszy kontrast na każdej powierzchni. IP64, upadki z 1,8 m, megapikselowy sensor 1280×960. Pełna identyfikowalność (traceability) komponentów w produkcji motoryzacyjnej, lotniczej, elektronicznej (ISO 9001, IATF 16949). Cena 5× niższa od Zebra DS3608-DP.',
+      },
+      {
+        title: 'Logistyka i poczta — HR33 Marlin / HR33 BT',
+        description:
+          'Na rampie załadunkowej i w centrum sortowniczym [HR33 Marlin](/produkt/newland-hr33-marlin) (od 416 zł) z megapikselowym sensorem i celownikiem laserowym skanuje etykiety z odległości do 535 mm — bez schylania się do paczek na podłodze. Wersja BT z trybem batch: kurier skanuje paczki w terenie offline, dane synchronizowane po powrocie do bazy. OCR Passport MRZ — do kontroli paszportowej bez dodatkowego sprzętu (lotniska, przejścia graniczne). Kody pocztowe (USPS Postnet, Royal Mail, KIX, Australian Postal) — obsługa międzynarodowa.',
+      },
+      {
+        title: 'Biblioteka, muzeum i punkt obsługi — HR11 Aringa / HR15 Wahoo',
+        description:
+          '[HR11 Aringa](/produkt/newland-hr11-aringa) (od ok. 181 zł) — najtańszy profesjonalny skaner z gwarancją 5 lat do skanowania ISBN na książkach, kodów na kartach bibliotecznych i biletach. [HR15 Wahoo](/produkt/newland-hr15-wahoo) (od ok. 233 zł) — dodatkowo czyta PDF417 z polskich dowodów osobistych (weryfikacja tożsamości w urzędach, na recepcji, w wypożyczalniach). Oba modele USB Plug&Play, lekkie (120–152 g), dzięki technologii NLDC czytają kody z ekranów smartfonów (e-bilety, potwierdzenia). IP42/IP54 — odpowiedni do warunków biurowych.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego sprzedawcy skanerów nie powiedzą o Newland',
+      items: [
+        {
+          title: 'Gwarancja 5 lat na KAŻDY model — bez wyjątków',
+          text: 'Newland jest jedynym dużym producentem, który daje gwarancję 5 lat (60 miesięcy) na wszystkie skanery ręczne — od najtańszego HR11 Aringa (181 zł) po najdroższy NVH300 (1 008 zł). Zebra ma 5 lat na DS2208/DS4608, ale już tylko 3 lata na DS3608/DS9308/CS6080. Honeywell: 3 lata. Datalogic: 3 lata. W przeliczeniu: HR23 Dorada (271 zł / 5 lat = 54 zł/rok) vs Zebra DS2208 (352 zł / 5 lat = 70 zł/rok) vs Datalogic QW2520 (300 zł / 3 lata = 100 zł/rok). Newland jest najtańszy w ujęciu rocznym.',
+        },
+        {
+          title: 'Bluetooth 5.0 z zasięgiem 100 m — 10× dalej niż Zebra',
+          text: 'Skanery bezprzewodowe Newland ([HR23 BT](/produkt/newland-hr23-dorada-bt), [HR33 BT](/produkt/newland-hr33-marlin-bt)) mają Bluetooth 5.0 z zasięgiem ponad 100 m w otwartej przestrzeni. Zebra DS2278: Bluetooth 4.0, 10 m (Class 2!). Zebra DS8178: Bluetooth 4.1, 10 m. Różnica 10× w zasięgu oznacza, że Newland BT można używać na całej hali magazynowej (30–50 m z przeszkodami) bez utraty połączenia. Zebra DS2278 traci sygnał już przy odejściu 5–8 m od stacji w typowym magazynie z regałami.',
+        },
+        {
+          title: 'NVH300 DPM — 5× tańszy od Zebra DS3608-DP',
+          text: 'Przemysłowy skaner DPM [NVH300 Angler DP](/produkt/newland-nvh300) kosztuje od ok. 1 008 zł netto. Zebra DS3608-DP z podobną funkcjonalnością (megapikselowy sensor, DPM, IP67) — od ok. 5 000 zł. Różnica 5:1 przy porównywalnej jakości odczytu na kodach dot peen, laser etch i inkjet. NVH300 ma unikalne trójkolorowe LED (białe + czerwone + niebieskie) z automatycznym doborem — Zebra DS3608-DP ma tylko białe/zielone. NVH300 to jedyna rozsądna opcja dla firm, które chcą wdrożyć DPM traceability bez inwestycji 50 000 zł+ na flotę skanerów.',
+        },
+        {
+          title: 'EasySet — darmowa konfiguracja zamiast licencji',
+          text: 'Skanery Newland konfiguruje się bezpłatnym oprogramowaniem [EasySet](https://www.newland-id.com/en/software/easyset) — odpowiednik Zebra 123Scan, ale z rozszerzonym Advanced Scripting (HR33, NVH300). EasySet pozwala programować logikę walidacji danych bezpośrednio w skanerze: parsowanie kodu GS1, walidacja sum kontrolnych, formatowanie output (dodawanie/usuwanie znaków, łączenie pól) — BEZ modyfikacji systemu POS/WMS. Honeywell wymaga płatnej licencji Remote MasterMind do zarządzania flotą. Zebra 123Scan jest darmowy, ale bez zaawansowanego scriptingu na poziomie EasySet.',
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Ile kosztuje skaner kodów kreskowych Newland?',
+        answer:
+          'Ceny skanerów Newland zaczynają się od ok. 181 zł netto za [HR11 Aringa](/produkt/newland-hr11-aringa) (przewodowy 1D CCD, gwarancja 5 lat). [HR15 Wahoo](/produkt/newland-hr15-wahoo) (1D + PDF417) — od ok. 233 zł. [HR23 Dorada](/produkt/newland-hr23-dorada) (2D CMOS) — od ok. 271 zł (przewodowy) i ok. 437 zł (Bluetooth). [HR33 Marlin](/produkt/newland-hr33-marlin) (megapikselowy 2D, OCR, laser) — od ok. 416 zł (przewodowy) i ok. 688 zł (Bluetooth). [NVH300 Angler DP](/produkt/newland-nvh300) (przemysłowy DPM) — od ok. 1 008 zł. Ceny aktualne, z marżą 15% od cen dystrybutorów Ingram Micro i BlueStar.',
+      },
+      {
+        question: 'Czym różnią się skanery Newland od Zebra?',
+        answer:
+          'Newland: gwarancja 5 lat na wszystko, ceny 30–50% niższe, BT 5.0 z zasięgiem 100 m (vs BT 4.0/4.1 i 10 m u Zebry), OCR w HR33 w standardzie. Zebra: lider enterprise (35%+ rynku), ekosystem DataCapture DNA (123Scan, SMS, Scan-to-Connect), technologia PRZYM dekodowania, największa sieć serwisowa w PL (we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra)), kompatybilność z drukarkami i terminalami Zebra. Dla firm z istniejącym ekosystemem Zebra → Zebra. Dla nowych wdrożeń z ograniczonym budżetem → Newland.',
+      },
+      {
+        question: 'Jaki skaner Newland do apteki?',
+        answer:
+          'Do apteki rekomendujemy [HR23 Dorada](/produkt/newland-hr23-dorada) (od 271 zł netto) — czyta kody DataMatrix 2D wymagane przez dyrektywę FMD do weryfikacji leków w KOWAL/NMVS, certyfikat GS1 Ready. Wersja [HR23 BT](/produkt/newland-hr23-dorada-bt) (437 zł) do skanowania na regałach. UWAGA: [HR15 Wahoo](/produkt/newland-hr15-wahoo) (233 zł) czyta PDF417 (polskie dokumenty), ale NIE czyta QR/DataMatrix — nie nadaje się do FMD. [HR11 Aringa](/produkt/newland-hr11-aringa) (181 zł) czyta tylko 1D — nie nadaje się do apteki. Minimum do apteki: skaner 2D = HR23 Dorada.',
+      },
+      {
+        question: 'Newland HR23 vs HR33 — co wybrać?',
+        answer:
+          'HR23 Dorada: sensor 640×480, celownik LED, zasięg EAN-13 do 280 mm, brak OCR. Od 271 zł (przewodowy), 437 zł (BT). HR33 Marlin: megapikselowy 1280×800 (3,3× więcej pikseli), celownik laserowy 650 nm, zasięg do 535 mm (2×), OCR Passport MRZ, Acuscan, Advanced Scripting, więcej symbologii. Od 416 zł (przewodowy), 688 zł (BT). Różnica cenowa 145 zł — za co? Laser, dalszy zasięg, OCR, szybsze dekodowanie. Kasa / apteka / biuro → HR23. Magazyn / logistyka / kontrola paszportów → HR33.',
+      },
+      {
+        question: 'Jaki skaner Newland do magazynu?',
+        answer:
+          'Lekki magazyn (kasa/biuro): [HR23 Dorada](/produkt/newland-hr23-dorada) przewodowy (271 zł) z podstawką Smartstand. Inwentaryzacja offline: [HR23 BT](/produkt/newland-hr23-dorada-bt) (437 zł) z trybem batch 16 384 kodów. Duże odległości skanowania: [HR33 Marlin BT](/produkt/newland-hr33-marlin-bt) (688 zł) — megapikselowy sensor, celownik laserowy, zasięg 535 mm. Ciężkie warunki przemysłowe: [NVH300 Angler DP](/produkt/newland-nvh300) (1 008 zł) — IP64, 1,8 m upadki, DPM. Dla dużego magazynu z WMS rozważ terminal mobilny z ekranem.',
+      },
+      {
+        question: 'Jaka jest gwarancja na skanery Newland?',
+        answer:
+          'Wszystkie skanery Newland: 5 lat (60 miesięcy) — najdłuższa w branży na każdy model. Baterie BT (BTY2333): 1 rok. Porównanie: Zebra DS2208/DS4608 — 5 lat, DS3608/DS9308 — 3 lata. Honeywell Voyager — 3 lata. Datalogic QuickScan — 3 lata. Newland HR23 za 271 zł z gwarancją 5 lat = 54 zł/rok. Tani skaner za 150 zł z gwarancją 1 rok = 150 zł/rok (3× drożej rocznie). TAKMA obsługuje reklamacje gwarancyjne skanerów Newland w Polsce.',
+      },
+      {
+        question: 'Czy skanery Newland czytają kody z ekranów?',
+        answer:
+          'Tak — wszystkie skanery Newland czytają kody z ekranów smartfonów i monitorów. Skanery 2D (HR23, HR33): QR Code, DataMatrix, PDF417, Aztec z ekranów. Skanery 1D (HR11, HR15): kody EAN-13, Code 128 z ekranów — dzięki technologii NLDC (sensor obrazowy CCD, nie laser). NLDC automatycznie adaptuje ekspozycję do jasności ekranu. Dotyczy: e-paragonów, kuponów rabatowych, biletów, kodów lojalnościowych, potwierdzeń rezerwacji, e-recept.',
+      },
+      {
+        question: 'Jak skonfigurować skaner Newland?',
+        answer:
+          'Przez bezpłatne oprogramowanie [EasySet](https://www.newland-id.com/en/software/easyset) (Windows): symbologie, prefiksy/sufiksy, formaty danych, tryby komunikacji BT, głośność bipa, wibracja. Alternatywnie: skanowanie kodów konfiguracyjnych z Quick Start Guide. Advanced Scripting (HR33, NVH300): programowanie logiki walidacji, parsowania GS1, formatowania output — bezpośrednio w skanerze. USB HID (emulacja klawiatury): Plug&Play bez sterowników — skaner „wpisuje" kod do aktywnego pola w programie kasowym.',
+      },
+      {
+        question: 'Newland vs Zebra vs Honeywell — porównanie',
+        answer:
+          'Newland: gwarancja 5 lat na wszystko, BT 5.0/100 m, OCR w HR33 w standardzie, ceny 30–50% niższe. Słabość: mniejsza sieć serwisowa, brak ekosystemu z drukarkami. Zebra: lider enterprise, DataCapture DNA, PRZYM dekodowanie, największa sieć serwisowa, ekosystem z drukarkami/terminalami. Słabość: ceny wyższe, BT 4.0/4.1 z zasięgiem 10 m. Honeywell: Adaptus dekodowanie, Remote MasterMind (płatny), szeroka oferta. Słabość: gwarancja 2–3 lata, wyższe ceny od Newland. Rekomendacja: budżet → Newland. Ekosystem → Zebra. Specyficzne modele → kontakt z doradcą TAKMA.',
+      },
+      {
+        question: 'Jakie są alternatywy dla skanerów Newland?',
+        answer:
+          'W segmencie budżetowym (do 400 zł): Zebra [DS2208](/produkt/zebra-ds2208) (od 352 zł, 2D, gwarancja 5 lat) — bezpośredni rywal HR23 Dorada. Datalogic QuickScan QW2520 (~300 zł, gwarancja 3 lata). W segmencie mid-range: Zebra [DS4608](/produkt/zebra-ds4608) (~900 zł, PRZYM, 1 280 skanów/s). W segmencie bezprzewodowym: Zebra DS2278 (~780 zł, BT 4.0, 10 m), DS8178 (~1 800 zł, bateria 83 h). W segmencie DPM: Zebra DS3608-DP (~5 000 zł). Newland oferuje najlepszą relację cena/jakość w każdym segmencie — z gwarancją 5 lat i BT 5.0/100 m.',
+      },
+    ],
+    comparisons: [
+      {
+        title: 'Newland HR23 Dorada vs Zebra DS2208 — pojedynek entry-level',
+        content:
+          '[HR23 Dorada](/produkt/newland-hr23-dorada) (od 271 zł, 2D CMOS 640×480) vs Zebra [DS2208](/produkt/zebra-ds2208) (od 352 zł, 2D CMOS). Newland: 81 zł tańszy, GS1 Ready, IP52, 1,5 m upadki, 137 g, gwarancja 5 lat. Zebra: platforma DataCapture DNA (123Scan, SMS), PRZYM dekodowanie (lepsze na uszkodzonych kodach), 220 skanów/s, 115 g, gwarancja 5 lat. Zasięg EAN-13: HR23 do 280 mm vs DS2208 do 368 mm — Zebra dalej. W testach na „czystych" kodach — oba porównywalne. Na kodach niskojakościowych — Zebra PRZYM dekoduje nieco więcej. Rekomendacja: budżet → HR23 Dorada. Duży ruch / niskojakościowe kody → DS2208.',
+      },
+      {
+        title: 'Newland HR33 Marlin BT vs Zebra DS8178 — bezprzewodowy premium',
+        content:
+          '[HR33 Marlin BT](/produkt/newland-hr33-marlin-bt) (od 688 zł, megapikselowy 1280×800, BT 5.0, OCR, laser) vs Zebra DS8178 (od ~1 800 zł, 2D imager, BT 4.1, PRZYM). Newland: 1 112 zł tańszy (!), BT 5.0 z zasięgiem 100 m (vs 10 m), OCR w standardzie (vs opcja PRZL), batch 15 000 kodów, gwarancja 5 lat (vs 3 lata). Zebra: bateria 83 h (vs 15 h), ekosystem DataCapture DNA, PRZYM dla uszkodzonych kodów, IP52/IP43. HR33 BT ma obiektywnie lepsze parametry bezprzewodowe (BT 5.0, 100 m, OCR) za 38% ceny Zebry. DS8178 wygrywa żywotnością baterii i ekosystemem.',
+      },
+      {
+        title: 'Newland NVH300 vs Zebra DS3608-DP — DPM przemysłowy',
+        content:
+          '[NVH300 Angler DP](/produkt/newland-nvh300) (od 1 008 zł, CMOS 1280×960, IP64, 1,8 m, tri-color LED) vs Zebra DS3608-DP (od ~5 000 zł, CMOS megapikselowy, IP67, 2,4 m, PRZYM DPM). Newland: 5× tańszy, unikalne 3-kolorowe LED (białe + czerwone + niebieskie) z automatycznym doborem, gwarancja 5 lat (vs 3 lata Zebra). Zebra: wyższe IP67 (vs IP64), większe upadki 2,4 m (vs 1,8 m), PRZYM DPM (najlepszy algorytm DPM na rynku), wersja bezprzewodowa DS3678-DP, szerszy ekosystem. NVH300 to rozsądny wybór dla firm wdrażających DPM — za 1 008 zł zamiast 5 000 zł.',
+      },
+      {
+        title: 'Newland przewodowy vs bezprzewodowy — kiedy się opłaca?',
+        content:
+          'Przewodowy HR23 Dorada (271 zł) vs bezprzewodowy HR23 BT (437 zł): różnica 166 zł. Za tę kwotę dostajesz: BT 5.0 z zasięgiem 100 m, baterię 2600 mAh (16 h), tryb batch offline (16 384 kodów), stację dokującą, wibrację. Bezprzewodowy opłaca się gdy: operator chodzi po sklepie/magazynie, robi inwentaryzację, skanuje na regałach/rampie. Przewodowy wystarczy gdy: stałe stanowisko (kasa, apteka, okienko). Przy flotach 10+ skanerów: warto kupić ładowarkę 4-slotową CD3233-4C (318 zł) do rotacyjnego ładowania baterii.',
+      },
+      {
+        title: 'Newland vs Datalogic vs Honeywell — porównanie marek budżetowych',
+        content:
+          'Newland HR23 Dorada (271 zł, 2D, IP52, 5 lat) vs Datalogic QuickScan QW2520 (~300 zł, 2D, IP42, 3 lata) vs Honeywell Voyager 1472g (~380 zł, 2D, IP42, 3 lata). Newland wygrywa: najniższa cena, najwyższe IP52, najdłuższa gwarancja 5 lat. Datalogic: konkurencyjna cena, włoska marka, słabsze IP42. Honeywell: najdroższa opcja, Adaptus dekodowanie, ale krótka gwarancja 3 lata i IP42. W segmencie budżetowym 2D Newland HR23 Dorada jest najlepszą wartością — najtańsza, najbardziej wytrzymała i z najdłuższą gwarancją.',
+      },
+    ],
+    howToSteps: [
+      {
+        name: 'Analiza potrzeb i stanowisk',
+        text: 'Zdefiniuj: ile stanowisk wymaga skanera? Jakie typy kodów (1D/2D/DPM/ekrany)? Stałe stanowisko czy praca mobilna? Warunki (biuro/magazyn/produkcja)? Ile skanowań dziennie? Jaki interfejs POS/WMS wymaga (USB/RS-232/Bluetooth)? Skonsultuj się z doradcą TAKMA — dopasujemy model Newland (lub Zebra, jeśli pasuje lepiej) do Twoich parametrów i budżetu.',
+      },
+      {
+        name: 'Wybór modelu i interfejsu',
+        text: 'Kasa / apteka / biuro: HR23 Dorada USB (271 zł). Kasa z dużym ruchem: HR33 Marlin USB (416 zł). Magazyn lekki: HR23 BT (437 zł) z trybem batch. Magazyn z regałami: HR33 BT (688 zł) z celownikiem laserowym. Produkcja DPM: NVH300 (1 008 zł). Budżet minimalny 1D: HR11 Aringa (181 zł). Biblioteka / urząd: HR15 Wahoo (233 zł) z PDF417. Wszystkie modele dostępne w TAKMA z dostawą z magazynu centralnego Ingram Micro / BlueStar.',
+      },
+      {
+        name: 'Konfiguracja EasySet i wdrożenie',
+        text: 'Podłącz skaner USB — działa natychmiast jako emulacja klawiatury (HID). Opcjonalna konfiguracja: pobierz EasySet (darmowy, Windows, newland-id.com). Wybierz symbologie, ustaw prefiksy/sufiksy, tryb ciągły/pojedynczy, głośność bipa. Advanced Scripting (HR33, NVH300): zaprogramuj walidację GS1, parsowanie danych, formatowanie output bezpośrednio w skanerze. Wersje BT: parowanie ze stacją dokującą automatyczne po włożeniu skanera.',
+      },
+      {
+        name: 'Integracja z systemem POS/WMS/ERP',
+        text: 'USB HID: skaner wpisuje kod do aktywnego pola — działa natychmiast z: Subiekt GT/nexo, Comarch ERP, WF-MAG, InsERT, PC-Market, SAP, Oracle. USB CDC (port COM): dla systemów wymagających komunikacji RS-232 przez USB. HID-POS: zaawansowany tryb dla systemów OPOS/JavaPOS. Przetestuj odczyt na próbce każdego typu kodu. Bluetooth: parowanie z komputerem, tabletem lub terminalem mobilnym (tryby synchroniczny/asynchroniczny/batch).',
+      },
+      {
+        name: 'Szkolenie i plan konserwacji',
+        text: 'Szkolenie operatorów (20 min): prawidłowy kąt skanowania, obsługa hands-free na podstawce, wymiana baterii BT (latch-release), rozpoznawanie błędów. Konserwacja: czyszczenie okna skanera alkoholem IPA 70% co tydzień. Sprawdzenie kabla USB co miesiąc. Firmware: aktualizacja przez EasySet. Gwarancja 5 lat = 0 zł serwisu. Serwis pogwarancyjny: TAKMA.',
+      },
+    ],
+  },
+  // ===================================================================
   // TABLETY PRZEMYSŁOWE ZEBRA
   // ===================================================================
   'tablety-przemyslowe-zebra': {
