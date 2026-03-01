@@ -58,6 +58,9 @@ export async function middleware(request: NextRequest) {
       'newland-hr23-dorada-bt', 'newland-hr33-marlin-bt', 'newland-bty2333', 'newland-cd3233-4c',
       // Honeywell
       'honeywell-ct70',
+      'honeywell-ct70-bateria-4775mah', 'honeywell-ct70-bateria-7692mah',
+      'honeywell-ct70-stacja-dokujaca-display', 'honeywell-ct70-ladowarka-4-baterie',
+      'honeywell-ct70-uchwyt-pistoletowy-booted', 'honeywell-ct70-uchwyt-pistoletowy',
       // RFID — usunięte
       // Skanery
       'zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds8178', 'zebra-li2208',
@@ -73,7 +76,7 @@ export async function middleware(request: NextRequest) {
     // Slugi zebra-* / datalogic-* to produkty lub akcesoria na nowej stronie
     // (stare WordPress URLe Zebra obsługiwane są redirectami w next.config.mjs PRZED middleware)
     if (!existingSlugs.has(slug)) {
-      const isNewSiteProduct = slug.startsWith('zebra-') || slug.startsWith('datalogic-') || slug.startsWith('newland-')
+      const isNewSiteProduct = slug.startsWith('zebra-') || slug.startsWith('datalogic-') || slug.startsWith('newland-') || slug.startsWith('honeywell-')
 
       if (!isNewSiteProduct) {
         return NextResponse.redirect(new URL('/produkt-przeniesiony', request.url), 301)
