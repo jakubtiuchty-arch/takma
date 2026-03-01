@@ -91,7 +91,7 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'skaner zebra ds9308', group: 'skanery' },
 
   // =====================================================
-  // TERMINALE — "terminal mobilny zebra X" (10)
+  // TERMINALE ZEBRA — "terminal mobilny zebra X" (14)
   // =====================================================
   { keyword: 'terminal mobilny zebra tc22', group: 'terminale' },
   { keyword: 'terminal mobilny zebra tc27', group: 'terminale' },
@@ -99,13 +99,40 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'terminal mobilny zebra tc58', group: 'terminale' },
   { keyword: 'terminal mobilny zebra tc501', group: 'terminale' },
   { keyword: 'terminal mobilny zebra tc701', group: 'terminale' },
+  { keyword: 'terminal mobilny zebra tc73', group: 'terminale' },
+  { keyword: 'terminal mobilny zebra tc78', group: 'terminale' },
+  { keyword: 'terminal mobilny zebra mc2200', group: 'terminale' },
+  { keyword: 'terminal mobilny zebra mc2700', group: 'terminale' },
   { keyword: 'terminal mobilny zebra mc3300x', group: 'terminale' },
   { keyword: 'terminal mobilny zebra mc3400', group: 'terminale' },
   { keyword: 'terminal mobilny zebra mc9400', group: 'terminale' },
   { keyword: 'terminal mobilny zebra em45', group: 'terminale' },
 
   // =====================================================
-  // PRODUKTY — sam model (16)
+  // TERMINALE NEWLAND (4)
+  // =====================================================
+  { keyword: 'newland n7 cachalot pro ii', group: 'terminale-newland' },
+  { keyword: 'terminal newland n7', group: 'terminale-newland' },
+  { keyword: 'terminal mobilny newland', group: 'terminale-newland' },
+  { keyword: 'newland n7 cachalot', group: 'terminale-newland' },
+
+  // =====================================================
+  // TERMINALE DATALOGIC (4)
+  // =====================================================
+  { keyword: 'terminal datalogic memor', group: 'terminale-datalogic' },
+  { keyword: 'datalogic skorpio x5', group: 'terminale-datalogic' },
+  { keyword: 'datalogic memor k', group: 'terminale-datalogic' },
+  { keyword: 'terminal mobilny datalogic', group: 'terminale-datalogic' },
+
+  // =====================================================
+  // DRUKARKI KART (3)
+  // =====================================================
+  { keyword: 'drukarka kart zebra zc100', group: 'drukarki-kart' },
+  { keyword: 'drukarka kart zebra zc300', group: 'drukarki-kart' },
+  { keyword: 'drukarka kart plastikowych', group: 'drukarki-kart' },
+
+  // =====================================================
+  // PRODUKTY — sam model (20)
   // =====================================================
   { keyword: 'zebra zd421t', group: 'produkty' },
   { keyword: 'zebra zd421d', group: 'produkty' },
@@ -123,6 +150,10 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'zebra ds4608', group: 'produkty' },
   { keyword: 'zebra zq521', group: 'produkty' },
   { keyword: 'zebra li3608', group: 'produkty' },
+  { keyword: 'newland n7', group: 'produkty' },
+  { keyword: 'zebra tc53e', group: 'produkty' },
+  { keyword: 'zebra mc3450', group: 'produkty' },
+  { keyword: 'zebra ds8178', group: 'produkty' },
 
   // =====================================================
   // TABLETY — „tablet zebra X" (6)
@@ -147,13 +178,17 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'terminal mobilny cena', group: 'generyczne' },
 
   // =====================================================
-  // LONG-TAIL (5)
+  // LONG-TAIL (9)
   // =====================================================
   { keyword: 'drukarka termiczna vs termotransferowa', group: 'long-tail' },
   { keyword: 'jak wybrać drukarkę etykiet', group: 'long-tail' },
   { keyword: 'drukarka etykiet do magazynu', group: 'long-tail' },
   { keyword: 'drukarki etykiet przemysłowe', group: 'long-tail' },
   { keyword: 'drukarka etykiet do apteki', group: 'long-tail' },
+  { keyword: 'jak wybrać terminal mobilny', group: 'long-tail' },
+  { keyword: 'terminal mobilny do magazynu', group: 'long-tail' },
+  { keyword: 'newland vs zebra terminal', group: 'long-tail' },
+  { keyword: 'top terminale mobilne 2026', group: 'long-tail' },
 ]
 
 // ---------------------------------------------------------------------------
