@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { getBrandCategoryBySlug } from '@/data/products'
 import BrandCategoryPage from '@/components/brand-category/BrandCategoryPage'
 
-const SLUG = 'skanery-newland'
+const SLUG = 'skanery-kodow-kreskowych-newland'
 
 export async function generateMetadata(): Promise<Metadata> {
   const bc = getBrandCategoryBySlug(SLUG)!
