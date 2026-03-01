@@ -788,7 +788,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
   // ===================================================================
   // SKANERY KODÓW KRESKOWYCH NEWLAND
   // ===================================================================
-  'skanery-newland': {
+  'skanery-kodow-kreskowych-newland': {
     definition: {
       heading: 'Skanery kodów kreskowych Newland',
       content:

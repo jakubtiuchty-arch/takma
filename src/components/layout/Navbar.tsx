@@ -52,7 +52,7 @@ const navigation: NavItem[] = [
     children: [
       { name: 'Wszystkie skanery', href: '/skanery-kodow-kreskowych' },
       { name: 'Skanery Zebra', href: '/skanery-kodow-kreskowych-zebra' },
-      { name: 'Skanery Newland', href: '/skanery-newland' },
+      { name: 'Skanery Newland', href: '/skanery-kodow-kreskowych-newland' },
       { name: 'Skanery przewodowe', href: '/skanery-kodow-kreskowych/przewodowe' },
       { name: 'Skanery bezprzewodowe', href: '/skanery-kodow-kreskowych/bezprzewodowe' },
       { name: 'Skanery prezentacyjne', href: '/skanery-kodow-kreskowych/prezentacyjne' },
