@@ -11805,14 +11805,14 @@ const newlandScanners: Product[] = [
     id: 'newland-hr23-dorada',
     slug: 'newland-hr23-dorada',
     name: 'Newland HR23 Dorada',
-    shortDescription: 'Skaner 2D CMOS z kablem USB lub Bluetooth — IP52, upadek z 1.5 m, gwarancja 5 lat, waga 137 g',
+    shortDescription: 'Przewodowy skaner 2D CMOS z kablem USB — IP52, upadek z 1.5 m, gwarancja 5 lat, waga 137 g',
     description: `Dla kogo? Newland HR23 Dorada to ekonomiczny skaner kodów kreskowych 1D i 2D klasy entry-level, zaprojektowany dla kas fiskalnych, aptek, punktów obsługi klienta, bibliotek i magazynów o niskim i średnim natężeniu skanowania. Oferuje wydajność skanowania porównywalną z droższymi modelami — przy cenie nawet o 30% niższej od konkurencyjnego Zebra DS2208.
 
 Sensor obrazowy 640×480 CMOS z oświetleniem białą diodą LED i celownikiem czerwonym LED dekoduje wszystkie popularne kody 1D (EAN-13, EAN-8, UPC-A/E, Code 128, Code 39, GS1-128, GS1 DataBar, ITF, Codabar) oraz 2D (QR Code, Data Matrix, PDF417, Aztec, Micro QR, Micro PDF417). Rozdzielczość od 3 mil — czyta nawet drobne kody na etykietach farmaceutycznych i etykietach zbiorczych. Zasięg skanowania EAN-13 (13 mil): 50–280 mm, Data Matrix (10 mil): 30–125 mm.
 
 Ergonomiczna obudowa o wadze zaledwie 137 g z antypoślizgowym uchwytem zmniejsza zmęczenie rąk podczas wielogodzinnej pracy. Kąt odczytu 360° roll, ±60° pitch i ±60° skew oznacza, że nie trzeba precyzyjnie celować — skaner czyta kody pod każdym kątem. Sygnalizacja: dźwięk (beep), dioda LED i wibracja — obsługa w głośnym otoczeniu produkcyjnym lub w cichej aptece.
 
-Interfejs USB (USB-KBW, USB-CDC, HID-POS) z opcjonalnym RS232 zapewnia kompatybilność z każdym systemem POS, WMS i ERP bez instalacji sterowników — podłącz i skanuj. Kabel USB spiralny (coiled) w zestawie nie plącze się na stanowisku kasowym. Wersja Bluetooth (NLS-HR2300-BT) ze stacją dokującą/nadajnikiem umożliwia skanowanie bezprzewodowe do 30 m od bazy — idealne do inwentaryzacji regałów i obsługi klientów na sali sprzedaży.
+Interfejs USB (USB-KBW, USB-CDC, HID-POS) z opcjonalnym RS232 zapewnia kompatybilność z każdym systemem POS, WMS i ERP bez instalacji sterowników — podłącz i skanuj. Kabel USB spiralny (coiled) w zestawie nie plącze się na stanowisku kasowym. Jeśli potrzebujesz wersji bezprzewodowej — dostępna jest osobna karta produktu Newland HR23 Dorada Bluetooth ze stacją dokującą.
 
 Konstrukcja IP52 chroni przed kurzem i kroplami wody. Odporność na upadek z 1,5 m na beton (6 stron) — solidna jak na skaner klasy biurowej. Zakres temperatury roboczej od -20°C do +60°C pozwala na pracę w chłodniach i magazynach nieogrzewanych. ESD ±15 kV (powietrze) / ±8 kV (kontakt).
 
@@ -11822,7 +11822,7 @@ Skaner HR23 Dorada posiada certyfikat GS1 Ready — gwarancja poprawnego odczytu
 
 Gwarancja producenta 5 lat — najdłuższa w segmencie ekonomicznych skanerów 2D. Dla porównania: Zebra DS2208 ma gwarancję standardową 36 miesięcy. Opcjonalnie dostępna podstawka Smartstand (regulowana, tryb auto-sense) lub podstawka gooseneck do skanowania prezentacyjnego hands-free.
 
-W zestawie (wersja -S5): skaner i kabel USB spiralny. Wersja -SA dodatkowo zawiera podstawkę Smartstand. Wersja Bluetooth (-BT) zawiera stację dokującą z nadajnikiem i kabel USB. Jeśli potrzebujesz skanera o wyższej odporności (IP65+) i większym zasięgu — rozważ Zebra DS4608 lub Zebra DS3608-SR.`,
+W zestawie (wersja -S5): skaner i kabel USB spiralny. Wersja -SA dodatkowo zawiera podstawkę Smartstand. Jeśli potrzebujesz wersji bezprzewodowej — dostępna jest Newland HR23 Dorada Bluetooth. Jeśli potrzebujesz skanera o wyższej odporności (IP65+) i większym zasięgu — rozważ Zebra DS4608 lub Zebra DS3608-SR.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-przewodowe'],
     manufacturerId: 'newland',
@@ -11830,13 +11830,13 @@ W zestawie (wersja -S5): skaner i kabel USB spiralny. Wersja -SA dodatkowo zawie
     tags: ['retail', 'magazyn', 'healthcare', 'logistyka'],
     images: [],
     imageDescriptions: [],
-    seoTitle: 'Newland HR23 Dorada — skaner 2D CMOS przewodowy i Bluetooth | TAKMA',
-    seoDescription: 'Skaner kodów kreskowych Newland HR23 Dorada: 2D CMOS, USB/Bluetooth, IP52, 1.5 m drop, gwarancja 5 lat, od 252 zł netto. GS1 Ready, EasySet. Porównanie z Zebra DS2208.',
+    seoTitle: 'Newland HR23 Dorada — przewodowy skaner 2D CMOS USB | TAKMA',
+    seoDescription: 'Przewodowy skaner kodów kreskowych Newland HR23 Dorada: 2D CMOS, USB, IP52, 1.5 m drop, gwarancja 5 lat, od 252 zł netto. GS1 Ready, EasySet. Porównanie z Zebra DS2208.',
     isNew: true,
     isBestseller: false,
     availability: 'available',
     specifications: [
-      { name: 'Typ skanera', value: 'Imager 2D (area imager) przewodowy / Bluetooth' },
+      { name: 'Typ skanera', value: 'Imager 2D (area imager) przewodowy' },
       { name: 'Sensor obrazowy', value: '640 × 480 CMOS' },
       { name: 'Celownik', value: 'Czerwony LED' },
       { name: 'Oświetlenie', value: 'Biała dioda LED' },
@@ -11886,20 +11886,13 @@ W zestawie (wersja -S5): skaner i kabel USB spiralny. Wersja -SA dodatkowo zawie
         availability: 'available',
         attributes: { 'Łączność': 'USB (kabel spiralny)', 'Podstawka': 'Smartstand' },
       },
-      {
-        partNumber: 'NLS-HR2300-BT',
-        name: 'HR23 Dorada Bluetooth — stacja dokująca + kabel USB',
-        priceFrom: 437,
-        availability: 'available',
-        attributes: { 'Łączność': 'Bluetooth', 'Stacja dokująca': 'Tak' },
-      },
     ],
     compatibleAccessories: [],
     relatedAccessories: ['newland-std23-33-sa', 'newland-std30i', 'newland-bty2333', 'newland-cbl-0188u'],
     faq: [
       {
         question: 'Ile kosztuje skaner Newland HR23 Dorada?',
-        answer: 'Newland HR23 Dorada w wersji przewodowej (USB, kabel spiralny) kosztuje od 252 zł netto. Wersja z podstawką Smartstand — 281 zł netto. Wersja Bluetooth ze stacją dokującą — 437 zł netto. To jeden z najtańszych profesjonalnych skanerów 2D na rynku.',
+        answer: 'Newland HR23 Dorada w wersji przewodowej (USB, kabel spiralny) kosztuje od 252 zł netto. Wersja z podstawką Smartstand — 281 zł netto. To jeden z najtańszych profesjonalnych skanerów 2D na rynku.',
       },
       {
         question: 'Czy HR23 Dorada czyta kody 2D (QR, Data Matrix)?',
@@ -11919,7 +11912,7 @@ W zestawie (wersja -S5): skaner i kabel USB spiralny. Wersja -SA dodatkowo zawie
       },
       {
         question: 'Czy HR23 ma wersję bezprzewodową (Bluetooth)?',
-        answer: 'Tak, wersja NLS-HR2300-BT to skaner Bluetooth ze stacją dokującą/nadajnikiem i kablem USB. Zasięg Bluetooth do 30 m. Stacja dokująca ładuje wbudowaną baterię i jednocześnie pełni funkcję nadajnika do komputera. Cena: 437 zł netto.',
+        answer: 'Tak, Newland HR23 Dorada jest dostępna również w wersji Bluetooth ze stacją dokującą/nadajnikiem — osobna karta produktu Newland HR23 Dorada Bluetooth. Zasięg Bluetooth do 30 m, idealna do inwentaryzacji i obsługi klienta na sali sprzedaży.',
       },
       {
         question: 'Jak skonfigurować HR23 Dorada?',
