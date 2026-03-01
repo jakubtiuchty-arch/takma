@@ -47,7 +47,7 @@ export async function middleware(request: NextRequest) {
       'datalogic-memor-11', 'datalogic-memor-12', 'datalogic-memor-17',
       'datalogic-memor-30', 'datalogic-memor-35', 'datalogic-skorpio-x5', 'datalogic-memor-k',
       // Newland
-      'newland-n7-cachalot-pro-ii', 'newland-cdn7-c', 'newland-pgn7-02', 'newland-bty70', 'newland-cdn7-4b', 'newland-tpun7', 'newland-tpun7pg', 'newland-hbn7', 'newland-spn7-hybrid',
+      'newland-n7-cachalot-pro-ii', 'newland-cdn7-c', 'newland-pgn7-02', 'newland-cdn7-4b', 'newland-tpun7pg', 'newland-spn7-hybrid',
       // RFID — usunięte
       // Skanery
       'zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds8178', 'zebra-li2208',
