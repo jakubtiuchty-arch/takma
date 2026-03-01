@@ -589,7 +589,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-02-13',
   updatedAt: '2026-02-21',
   readTime: '10 min',
-  heroImage: '/images/guides/termiczna-vs-termotransferowa.jpg',
+  heroImage: '/images/guides/drukarka-termiczna-vs-termotransferowa-porownanie.png',
 
   sections: [
     {
