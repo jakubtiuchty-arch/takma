@@ -57,6 +57,13 @@ export async function middleware(request: NextRequest) {
       'newland-std23-33-sa', 'newland-std30i', 'newland-std20i', 'newland-nvh300', 'newland-std300',
       'newland-hr23-dorada-bt', 'newland-hr33-marlin-bt', 'newland-bty2333', 'newland-cd3233-4c',
       // Honeywell
+      'honeywell-ct32',
+      'honeywell-ct32-bateria-4500mah', 'honeywell-ct32-bateria-rozszerzona',
+      'honeywell-ct32-stacja-dokujaca', 'honeywell-ct32-stacja-dokujaca-booted',
+      'honeywell-ct32-ladowarka-4-gniazdowa', 'honeywell-ct32-ladowarka-4-gniazdowa-booted',
+      'honeywell-ct32-obudowa-ochronna', 'honeywell-ct32-uchwyt-pistoletowy',
+      'honeywell-ct32-folia-ochronna', 'honeywell-ct32-pasek-na-reke',
+      'honeywell-ct32-pasek-na-nadgarstek', 'honeywell-ct32-ladowarka-baterii',
       'honeywell-ct70',
       'honeywell-ct70-bateria-4775mah', 'honeywell-ct70-bateria-7692mah',
       'honeywell-ct70-stacja-dokujaca-display', 'honeywell-ct70-ladowarka-4-baterie',
