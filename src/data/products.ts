@@ -172,7 +172,7 @@ export const categories: Category[] = [
     seoDescription: 'Terminale mobilne Zebra z Androidem: TC501, TC701, TC22, TC27, TC53, TC58, MC3400, MC3450, MC9400, MC9450, EM45. Wytrzymałe komputery mobilne IP68 do magazynu, logistyki, produkcji i retail. Ceny netto od 2 180 zł, doradztwo, serwis Zebra.',
     longDescription: 'Profesjonalne terminale mobilne (kolektory danych) Zebra klasy enterprise z systemem Android. NOWOŚĆ: TC501 — flagowy terminal z AI, RFID UHF w standardzie, Wi-Fi 7 i ekranem AMOLED 1500 nit, następca TC53. TC701 — ultra-wytrzymała wersja z upadkami z 3,66 m, szok termiczny, chłodnia/outdoor, następca TC73. Seria TC22/TC27 dla małych i średnich firm — lekkie, intuicyjne, w przystępnej cenie. TC53/TC58 dla wymagających środowisk magazynowych i logistycznych — IP68, upadki z 1,8 m, skaner SE55. MC3400/MC3450 z klawiaturą fizyczną do intensywnego skanowania w produkcji. MC9400/MC9450 ultra-rugged z 7 klawiaturami, IP65+IP68, upadki z 3,65 m i skaner do 30,5 m — do chłodni, portów i ciężkiego przemysłu. EM45 Enterprise Mobile — smukły komputer mobilny w formie smartfona z 5G, Wi-Fi 6E, aparatem 50 MP i NPU do AI, idealny dla retail, field sales i hospitality. Wszystkie modele z Wi-Fi 6/6E/7, Bluetooth 5.x/6.0 i zarządzaniem MDM.',
     icon: 'smartphone',
-    productCount: 18,
+    productCount: 19,
   },
   {
     id: 'skanery-kodow-kreskowych',
@@ -29578,6 +29578,137 @@ const newlandMT95Accessories: Product[] = [
 ]
 
 // ============================================
+// HONEYWELL — TERMINALE MOBILNE
+// ============================================
+
+const honeywellMobileComputers: Product[] = [
+  {
+    id: 'honeywell-ct70',
+    slug: 'honeywell-ct70',
+    name: 'Honeywell CT70',
+    shortDescription: 'Terminal mobilny 6" z Wi-Fi 7, BT 6.0, skanerem FlexRange i Qi — pierwszy enterprise z Wi-Fi 7',
+    description: `Dla kogo? Honeywell CT70 to terminal mobilny klasy enterprise z ekranem 6" FHD+ i procesorem Qualcomm QCM6690 (2,9 GHz, 8 rdzeni, NPU do AI na krawędzi), zaprojektowany dla wymagających operacji w magazynach, centrach logistycznych, na liniach produkcyjnych oraz w handlu detalicznym. CT70 jest pierwszym terminalem enterprise z Wi-Fi 7 (802.11be) i Bluetooth 6.0 — zapewniając najniższe opóźnienia i najwyższą przepustowość bezprzewodową w klasie rugged.
+
+Kluczowe przewagi CT70 nad konkurencją: Wi-Fi 7 z Multi-Link Operation (MLO) i tri-band 2,4/5/6 GHz — idealne dla gęstych sieci magazynowych z setkami urządzeń. Bluetooth 6.0 (Class 1.5 + BLE) zapewnia niezawodne połączenie z drukarkami etykiet, headsetami i skanerami ring. Gorilla Glass Victus na ekranie — najnowsze, najwytrzymalsze szkło ochronne dostępne w terminalu enterprise. Ładowanie bezprzewodowe Qi (bateria CT70-BTWC-001) — wystarczy położyć na ładowarce, bez stacji dokującej. Hot-swap baterii — wymiana bez wyłączania urządzenia, ciągłość pracy na zmianach 24/7.
+
+Warianty: CT70 dostępny jest z dwoma typami skanerów — Standard Range (S0703, laser czerwony, zasięg do 1 m) i FlexRange (S0803, laser zielony, zasięg do 5+ m). Wersje Wi-Fi only (L0N) oraz 5G + GPS + eSIM (X1N) z dual SIM (nano + eSIM), CBRS i LTE Advanced. Opcjonalnie: zintegrowany czytnik RFID UHF (warianty X1R). Wszystkie warianty: 8 GB RAM LPDDR5, 128 GB Flash UFS 3.1, microSD do 2 TB.
+
+Platforma Honeywell Mobility Edge gwarantuje wsparcie od Android 15 do Android 19 — do 5 generacji systemu operacyjnego bez wymiany sprzętu. Oprogramowanie Operational Intelligence monitoruje stan urządzeń, baterii i sieci w czasie rzeczywistym, a SmartTalk UC zapewnia komunikację Push-to-Talk. IP65/IP68, upadki z 2,4 m (z obudową ochronną) na beton w temperaturach od -20°C do +50°C, >3 000 tumble w testach wg MIL-STD-810H.
+
+Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CT70 (PDF w sekcji Dokumenty).`,
+    categoryId: 'terminale-mobilne',
+    manufacturerId: 'honeywell',
+    tags: ['magazyn', 'logistyka', 'retail', 'produkcja', 'outdoor'],
+    images: [
+      '/images/products/CT70-L0N-057CS104G.png',
+      '/images/products/CT70-L0N-057CS104G-2.png',
+      '/images/products/CT70-L0N-057CS104G-3.png',
+    ],
+    imageDescriptions: [
+      'Honeywell CT70 — widok z przodu, ekran 6 cali FHD+ z Gorilla Glass Victus',
+      'Honeywell CT70 — widok pod kątem, obudowa IP65/IP68 z gumowym bootem ochronnym',
+      'Honeywell CT70 — widok z tyłu, kamera 13 MP i okno skanera FlexRange',
+    ],
+    variants: [
+      {
+        partNumber: 'CT70-L0N-057CS104G',
+        name: 'CT70 Standard Range, Wi-Fi 7',
+        attributes: { 'Skaner': 'Standard Range' },
+        availability: 'available' as const,
+      },
+      {
+        partNumber: 'CT70-L0N-058CS104G',
+        name: 'CT70 FlexRange, Wi-Fi 7',
+        attributes: { 'Skaner': 'FlexRange' },
+        availability: 'available' as const,
+      },
+      {
+        partNumber: 'CT70-X1N-057CS104G',
+        name: 'CT70 Standard Range, 5G + Wi-Fi 7',
+        attributes: { 'Skaner': 'Standard Range', '5G': 'Tak' },
+        availability: 'available' as const,
+      },
+      {
+        partNumber: 'CT70-X1N-058CS104G',
+        name: 'CT70 FlexRange, 5G + Wi-Fi 7',
+        attributes: { 'Skaner': 'FlexRange', '5G': 'Tak' },
+        availability: 'available' as const,
+      },
+    ],
+    specifications: [
+      { name: 'Procesor', value: 'Qualcomm QCM6690, 8 rdzeni, 2,9 GHz, NPU (Edge AI)' },
+      { name: 'System operacyjny', value: 'Android 15 (wsparcie do Android 19, Mobility Edge)' },
+      { name: 'RAM', value: '8 GB LPDDR5' },
+      { name: 'Pamięć Flash', value: '128 GB UFS 3.1' },
+      { name: 'Karta microSD', value: 'Do 2 TB' },
+      { name: 'Wyświetlacz', value: '6,0″ FHD+ (2280 × 1080), 600 nitów, Gorilla Glass Victus' },
+      { name: 'Dotyk', value: 'Pojemnościowy, palec / rękawiczki / stylus / deszcz' },
+      { name: 'Skaner Standard Range', value: 'Honeywell S0703, 1D/2D, laser czerwony, zasięg do 1 m' },
+      { name: 'Skaner FlexRange', value: 'Honeywell S0803, 1D/2D/DPM, laser zielony, zasięg do 5+ m' },
+      { name: 'Kamera tylna', value: '13 MP, autofokus fazowy, lampa LED' },
+      { name: 'Kamera przednia', value: '8 MP' },
+      { name: 'Wi-Fi', value: 'Wi-Fi 7 (802.11be) + Wi-Fi 6E, 2×2 MU-MIMO, tri-band 2,4/5/6 GHz, MLO' },
+      { name: 'Bluetooth', value: 'v6.0 Class 1.5 + BLE' },
+      { name: '5G (warianty X1N)', value: 'FR1: n1-n79, LTE Advanced, CBRS' },
+      { name: 'SIM', value: 'Nano SIM + eSIM (dual SIM, warianty 5G)' },
+      { name: 'NFC', value: 'ISO 14443 A/B, 15693, MIFARE, FeliCa, ECP 2.0 (w wyświetlaczu)' },
+      { name: 'GPS', value: 'Dual-band GNSS: GPS, GLONASS, Galileo, BeiDou, NAVIC, QZSS' },
+      { name: 'USB', value: 'USB 3.1 Type-C' },
+      { name: 'Bateria standardowa', value: '4 775 mAh Li-ion, hot-swap' },
+      { name: 'Bateria rozszerzona', value: '7 692 mAh Li-ion (opcja)' },
+      { name: 'Bateria Qi wireless', value: '4 775 mAh Li-ion z ładowaniem bezprzewodowym (opcja)' },
+      { name: 'Ładowanie Qi', value: 'Tak (BPP + EPP)' },
+      { name: 'Push-to-Talk', value: 'Tak (SmartTalk UC)' },
+      { name: 'Audio', value: 'Głośnik 100 dB, 3 mikrofony z redukcją szumów' },
+      { name: 'Klasa ochrony', value: 'IP65 / IP68' },
+      { name: 'Upadki (z bootem)', value: '2,4 m na beton, MIL-STD-810H' },
+      { name: 'Upadki (bez boota)', value: '1,8 m na beton' },
+      { name: 'Tumble', value: '>3 000 obrotów (0,5 m), >2 000 obrotów (1 m z bootem)' },
+      { name: 'Temperatura pracy', value: '-20°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-30°C do +70°C' },
+      { name: 'Wymiary (bat. std.)', value: '170 × 78,6 × 16,7 mm' },
+      { name: 'Wymiary (bat. rozszerzona)', value: '170 × 78,6 × 22,3 mm' },
+      { name: 'Waga', value: '310 g (z baterią standardową)' },
+      { name: 'Oprogramowanie', value: 'Operational Intelligence, SmartTalk UC, Mobility Edge' },
+      { name: 'RFID (opcja)', value: 'Zintegrowany RAIN UHF RFID (warianty X1R)' },
+      { name: 'Gwarancja', value: '1 rok (opcja przedłużenia: Gold 3/5 lat, Platinum 3/5 lat)' },
+    ],
+    applications: [
+      'Magazyn i logistyka — kompletacja, przyjęcia/wydania, inwentaryzacja',
+      'Centrum dystrybucyjne — skanowanie FlexRange z odległości do 5 m',
+      'Handel detaliczny — zarządzanie asortymentem, click&collect, NFC',
+      'Produkcja — traceability, kontrola jakości, RFID UHF',
+      'Transport i field service — 5G, GPS, praca outdoor -20°C do +50°C',
+      'Healthcare — dezynfekcja IP68, skanowanie leków FMD, identyfikacja pacjentów',
+    ],
+    priceFrom: 6373,
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    compatibleAccessories: [],
+    relatedAccessories: [],
+    downloads: [
+      { name: 'Karta katalogowa CT70 (EN)', type: 'datasheet', url: '/downloads/honeywell/hon-ia-pss-ct70-mobile-computer-datasheet.pdf', size: '288 KB' },
+      { name: 'Skrócona instrukcja obsługi (PL)', type: 'manual', url: '/downloads/honeywell/hon-ia-pss-ct70-a-pl-qs.pdf', size: '962 KB' },
+      { name: 'Quick Start Guide (EN)', type: 'manual', url: '/downloads/honeywell/hon-ia-pss-ct70-a-en-qs.pdf', size: '956 KB' },
+    ],
+    faq: [
+      { question: 'Jaka jest cena Honeywell CT70?', answer: 'Ceny Honeywell CT70 zaczynają się od 6 373 zł netto (wariant Wi-Fi, Standard Range). Wariant FlexRange Wi-Fi: od 6 653 zł. Wersje 5G: od 6 793 zł (SR) i 7 073 zł (FlexRange). Ceny aktualne, z marżą 15% od cen dystrybutora BlueStar. CT70 jest w segmencie premium — porównywalnym z Zebra TC58/TC78, ale z Wi-Fi 7 i Bluetooth 6.0 w standardzie.' },
+      { question: 'Czym różni się Honeywell CT70 od Zebra TC58?', answer: 'CT70 oferuje Wi-Fi 7 (vs Wi-Fi 6E w TC58), Bluetooth 6.0 (vs 5.2), ładowanie bezprzewodowe Qi, opcjonalny RFID UHF, Gorilla Glass Victus i procesor QCM6690 (2,9 GHz vs 2,7 GHz). Zebra TC58 wygrywa lżejszą wagą (293 g vs 310 g), skanerem SE55 IntelliFocus (12+ m zasięgu vs 5 m FlexRange) i aparatem 16 MP (vs 13 MP). CT70 lepszy dla firm stawiających na przyszłościową łączność. TC58 lepszy dla skanowania z dużej odległości.' },
+      { question: 'Czym różni się skaner Standard Range od FlexRange w CT70?', answer: 'Standard Range (S0703): laser czerwony, zasięg do 1 m — do pracy na kasie, w aptece, na linii produkcyjnej. FlexRange (S0803): laser zielony, zasięg do 5+ m — do skanowania etykiet na wysokich regałach, paletach i kontenerach bez drabiny. FlexRange obsługuje też DPM (kody grawerowane na metalu). Różnica cenowa: ok. 280 zł netto. W magazynach z regałami >2 m rekomendujemy FlexRange.' },
+      { question: 'Czy Honeywell CT70 ma 5G?', answer: 'Tak — warianty CT70-X1N (5G + Wi-Fi 7) obsługują 5G FR1 (pasma n1-n79), LTE Advanced i CBRS (prywatne sieci 5G/LTE). Dual SIM: nano SIM + eSIM. GPS: dual-band GNSS (GPS, GLONASS, Galileo, BeiDou). Warianty CT70-L0N mają tylko Wi-Fi 7 (bez 5G/GPS/SIM) — tańsze o ok. 420 zł netto. 5G warto gdy: praca w terenie, field service, transport, brak Wi-Fi.' },
+      { question: 'Jak długo trzyma bateria w CT70?', answer: 'CT70 oferuje 3 typy baterii: standardowa 4 775 mAh (pełna zmiana 8-10 h), rozszerzona 7 692 mAh (12-16 h, grubsza obudowa +5,6 mm) i bezprzewodowa 4 775 mAh (Qi). Wszystkie z hot-swap — wymiana bez wyłączania urządzenia. Do pracy wielozmianowej: bateria zapasowa CT70-BTSC-001 + ładowarka 4-gniazdowa CT70-QBC-2. Honeywell oferuje też ładowarkę 16-gniazdową CT70-16BAY-BAT do dużych flot.' },
+      { question: 'Czy CT70 obsługuje ładowanie bezprzewodowe?', answer: 'Tak — z baterią CT70-BTWC-001 (4 775 mAh, Qi BPP + EPP). Wystarczy położyć terminal na dowolnej ładowarce Qi lub dedykowanym doku bezprzewodowym CT70-VD-WL-SPK. Ładowanie Qi eliminuje potrzebę stacji dokującej z pinami kontaktowymi — mniej zużycia mechanicznego, dłuższa żywotność. W wariantach z baterią standardową (CS) ładowanie Qi nie jest dostępne — wymaga baterii wireless (CW).' },
+      { question: 'Jaki system operacyjny ma CT70?', answer: 'Android 15 z gwarancją aktualizacji do Android 19 dzięki platformie Honeywell Mobility Edge. To do 5 generacji systemu operacyjnego bez wymiany sprzętu — najdłuższa ścieżka aktualizacji w klasie rugged. Mobility Edge zapewnia: wspólny BSP dla całej floty, LifeGuard security patches, zero-touch enrollment i kompatybilność z Google Mobile Services (GMS).' },
+      { question: 'Czy CT70 jest wodoodporny?', answer: 'Tak — IP65 (pyłoszczelny, strumień wody) + IP68 (zanurzenie). Upadki z 2,4 m na beton (z obudową ochronną CT70-PB-GRY) lub 1,8 m bez obudowy. >3 000 tumble w testach MIL-STD-810H. Temperatura pracy: -20°C do +50°C — nadaje się do chłodni (z baterią rozszerzoną) i pracy na zewnątrz w upale. Gorilla Glass Victus chroni ekran przed zarysowaniami i uderzeniami.' },
+      { question: 'Jakie akcesoria są dostępne do CT70?', answer: 'Baterie: standardowa CT70-BTSC-001 (4 775 mAh), rozszerzona CT70-BTEC-001 (7 692 mAh), bezprzewodowa CT70-BTWC-001. Stacje dokujące: 1-gniazdowa CT70-HB-UVX, Ethernet CT70-EB-UVX, 4-gniazdowa CT70-CB-UVX, 5-gniazdowa CT70-5CB-UVX. Ładowarki baterii: 4-gniazdowa CT70-QBC-2, 16-gniazdowa CT70-16BAY-BAT. Ochrona: boot CT70-PB-GRY, folia CT70-SP-1, holster CT70-HST-1. Ergonomia: scan handle CT70-SH-UVB, wearable kit CT70-WS-KIT. Dok samochodowy: CT70-VD-WD.' },
+      { question: 'Jakie są alternatywy dla Honeywell CT70?', answer: 'W segmencie premium rugged 6": Zebra TC58 (od ok. 4 500 zł, SE55 do 12+ m, lżejszy 293 g, ekosystem Mobility DNA) i Zebra TC78 (upadki 3,05 m, wariant chłodniczy). W segmencie budżetowym: Zebra TC53 (od ok. 3 200 zł, mniejszy ekosystem), Datalogic Memor 35 (od ok. 2 800 zł). W segmencie gun: Zebra MC9400 (SE58 do 30+ m, 3,5" ekran, 765 g). CT70 wyróżnia się Wi-Fi 7, BT 6.0, Qi i opcjonalnym RFID UHF — żaden konkurent nie oferuje tego zestawu.' },
+    ],
+    createdAt: '2026-03-01',
+  },
+]
+
+// ============================================
 // EXPORT - WSZYSTKIE PRODUKTY
 // ============================================
 
@@ -29623,6 +29754,7 @@ export const products: Product[] = [
   ...newlandN7Accessories,
   ...newlandMT93Accessories,
   ...newlandMT95Accessories,
+  ...honeywellMobileComputers,
 ]
 
 // Helper do pobrania produktu po slug

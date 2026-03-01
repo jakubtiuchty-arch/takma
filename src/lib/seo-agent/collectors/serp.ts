@@ -264,6 +264,18 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'newland vs zebra skaner porównanie', group: 'skanery-newland' },
 
   // =====================================================
+  // HONEYWELL CT70 (8)
+  // =====================================================
+  { keyword: 'honeywell ct70', group: 'terminale-honeywell' },
+  { keyword: 'honeywell ct70 cena', group: 'terminale-honeywell' },
+  { keyword: 'terminal honeywell ct70', group: 'terminale-honeywell' },
+  { keyword: 'honeywell ct70 dane techniczne', group: 'terminale-honeywell' },
+  { keyword: 'honeywell ct70 vs zebra tc58', group: 'terminale-honeywell' },
+  { keyword: 'honeywell ct70 flexrange', group: 'terminale-honeywell' },
+  { keyword: 'honeywell ct70 5g', group: 'terminale-honeywell' },
+  { keyword: 'terminal mobilny honeywell', group: 'terminale-honeywell' },
+
+  // =====================================================
   // TERMINALE ZEBRA (42)
   // 14 modeli × 3 warianty
   // =====================================================
