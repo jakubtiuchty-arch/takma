@@ -123,9 +123,6 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'newland mt95 kambur pro ii', group: 'terminale-newland' },
   { keyword: 'newland mt95 kambur', group: 'terminale-newland' },
   { keyword: 'terminal newland mt95', group: 'terminale-newland' },
-  { keyword: 'newland mt37 baiji', group: 'terminale-newland' },
-  { keyword: 'terminal newland mt37', group: 'terminale-newland' },
-  { keyword: 'newland mt37 cena', group: 'terminale-newland' },
 
   // =====================================================
   // TERMINALE DATALOGIC (4)
