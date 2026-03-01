@@ -183,7 +183,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208, DS3678-SR — gwarancja 5 lat. Skanery przewodowe i bezprzewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies i Newland — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Newland HR23 Dorada — ekonomiczny 2D z gwarancją 5 lat. DS3678-SR bezprzewodowy ultra-rugged do magazynów. DS9908 hybrydowy prezentacyjny do kas POS. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 26,
+    productCount: 27,
   },
   {
     id: 'tablety-przemyslowe',
@@ -838,8 +838,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Bezprzewodowe skanery kodów kreskowych Bluetooth — zasięg do 100 m, bateria 100 000+ skanów. Zebra DS3678-SR ultra-rugged IP65/IP68. Cena od 2 111 zł netto. Autoryzowany partner Zebra.',
     longDescription: 'Bezprzewodowe czytniki kodów kreskowych Bluetooth (skanery cordless) — pełna swoboda ruchu, zasięg do 100 m, bateria na 100 000+ skanów. Zebra DS3678-SR ultra-rugged — szyfrowanie FIPS 140-2, upadki z 3 m, IP65/IP68, Multi-Code do 20 kodów jednocześnie. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productIds: ['zebra-ds3678-sr', 'zebra-ds3678-xr', 'zebra-ds3678-hd', 'zebra-ds3678-hp', 'zebra-ds2278', 'zebra-ds8288', 'zebra-ds4678', 'zebra-ds4678-dpe', 'newland-hr23-dorada-bt'],
-    productCount: 9,
+    productIds: ['zebra-ds3678-sr', 'zebra-ds3678-xr', 'zebra-ds3678-hd', 'zebra-ds3678-hp', 'zebra-ds2278', 'zebra-ds8288', 'zebra-ds4678', 'zebra-ds4678-dpe', 'newland-hr23-dorada-bt', 'newland-hr33-marlin-bt'],
+    productCount: 10,
   },
   {
     id: 'skanery-prezentacyjne',
@@ -12486,6 +12486,158 @@ W zestawie: skaner + stacja dokująca + kabel USB + bateria 2600 mAh + Quick Sta
       { name: 'Instrukcja obsługi HR23 Dorada Bluetooth (EN)', type: 'manual', url: '/downloads/newland/HR23-Dorada-Bluetooth-User-Guide.pdf', size: '14,5 MB' },
       { name: 'Quick Start Guide HR23/HR33 BT (EN)', type: 'manual', url: '/downloads/newland/HR23-HR33-BT-Quick-Start-Guide.pdf', size: '2,2 MB' },
       { name: 'Sterownik OPOS Newland Scanner V1.2.0', type: 'software', url: '/downloads/newland/OPOS_Newland_Scanner_V1.2.0.zip', size: '1,1 MB' },
+      { name: 'EasySet — oprogramowanie konfiguracyjne (strona producenta)', type: 'software', url: 'https://www.newland-id.com/en/software/easyset', size: 'Online' },
+    ],
+    createdAt: '2026-03-01',
+  },
+  // =====================================================
+  // Newland HR33 Marlin Bluetooth — bezprzewodowy 2D megapikselowy
+  // =====================================================
+  {
+    id: 'newland-hr33-marlin-bt',
+    slug: 'newland-hr33-marlin-bt',
+    name: 'Newland HR33 Marlin Bluetooth',
+    sameAs: 'https://www.newland-id.com/en/products/handheld-scanners/hr33-marlin-bluetooth',
+    shortDescription: 'Bezprzewodowy skaner 2D megapikselowy 1280×800 CMOS, Bluetooth 5.0, celownik laserowy, OCR, batch 15 000 kodów, IP52, 5 lat gwarancji',
+    description: `Dla kogo? Newland HR33 Marlin Bluetooth to bezprzewodowa wersja skanera megapikselowego HR33 Marlin, przeznaczona dla magazynów wysokoregałowych, centrów dystrybucyjnych, linii produkcyjnych, punktów sprzedaży premium i placówek medycznych — wszędzie tam, gdzie wymagany jest bezkablowy odczyt kodów z dużych odległości i trudnych powierzchni. Bluetooth 5.0 z zasięgiem ponad 100 m pozwala swobodnie pracować na całej hali magazynowej bez utraty połączenia.
+
+Megapikselowy sensor CMOS 1280×800 pikseli — to 3,3× więcej pikseli niż w HR23 Dorada (640×480) — zapewnia wyższą rozdzielczość i większy zasięg skanowania. Celownik laserowy 650 nm (zamiast LED w HR23) precyzyjnie wskazuje cel nawet z kilkudziesięciu centymetrów, co przyspiesza pracę przy skanowaniu z odległości. Technologia Acuscan automatycznie optymalizuje parametry dekodowania w zależności od kodu i powierzchni — skraca czas pierwszego odczytu nawet o 30%.
+
+Dekoduje wszystkie kody 1D (EAN-13, EAN-8, UPC-A/E, Code 128, Code 39, GS1-128, GS1 DataBar, Codabar, ITF, Code 93, Code 11, MSI-Plessey) i 2D (QR Code, Data Matrix, PDF417, Aztec, Micro QR, Micro PDF417, MaxiCode, Han Xin, GM Code). Obsługa OCR (Passport MRZ, chińskie dokumenty ID) — jedyny skaner w tej klasie cenowej z OCR i Bluetooth. Rozdzielczość od 3 mil, zasięg EAN-13: 40–535 mm (vs 50–280 mm w HR23), Data Matrix (10 mil): 30–245 mm (vs 30–125 mm w HR23).
+
+Bateria Li-Ion 2600 mAh (wymienna, latch-release) — identyczna jak w HR23 BT (NLS-BTY2333). Zapewnia do 15 godzin ciągłej pracy (1 skan co 6 sekund). Ładowanie przez stację dokującą w zestawie — czas ładowania do 6 godzin. Pamięć offline (tryb batch) na ponad 15 000 kodów — skaner gromadzi dane poza zasięgiem Bluetooth i przesyła je po powrocie do stacji.
+
+Trzy tryby komunikacji: synchroniczny (natychmiastowe przesyłanie), asynchroniczny (buforowanie w tle) i batch (gromadzenie offline, masowe przesyłanie). Tryb batch idealny do inwentaryzacji w magazynach bez zasięgu sieci — skaner zapamiętuje kody i przesyła je po podłączeniu do stacji dokującej.
+
+Stacja dokująca w zestawie (wymiary 140 × 90 × 144,5 mm, waga 340,5 g, odporność na upadek z 1,2 m) łączy się z komputerem kablem USB i jednocześnie ładuje skaner. Interfejs USB (KBW, CDC, HID-POS) — plug-and-play bez sterowników. Advanced Scripting — możliwość programowania logiki walidacji, parsowania i formatowania danych bezpośrednio w skanerze.
+
+Konstrukcja IP52, odporność na upadek z 1,5 m na beton, ESD ±15 kV (powietrze) / ±8 kV (kontakt), temperatura pracy od -10°C do +50°C. Waga 210 g z baterią, wymiary 117,5 × 67,5 × 144 mm. Sygnalizacja: dźwięk (beep), LED, wibracja — potwierdzenie skanowania wyczuwalne nawet w głośnym otoczeniu fabrycznym.
+
+Porównanie z HR23 Dorada BT: HR33 BT ma megapikselowy sensor (1280×800 vs 640×480), celownik laserowy (vs LED), prawie 2× dłuższy zasięg EAN-13 (535 mm vs 280 mm), OCR, Acuscan, Advanced Scripting i więcej symbologii (MaxiCode, Han Xin, GM Code, Code 11). HR23 BT jest o ~35% tańszy — wystarczający, gdy nie potrzeba skanowania z dużych odległości ani OCR.
+
+Porównanie z Zebra DS8178: HR33 BT ma Bluetooth 5.0 (vs 4.1), zasięg 100 m (vs 10 m — DS8178 to Class 2), OCR w standardzie (vs opcja PRZL), pamięć batch 15 000+ kodów, gwarancję 5 lat (vs 3 lata) — w cenie ponad 2× niższej (ok. 688 zł vs 1 800 zł netto). DS8178 ma baterię 83 h i IP42/IP52.
+
+W zestawie: skaner + stacja dokująca + kabel USB + bateria 2600 mAh + Quick Start Guide. Akcesoria wspólne z HR23 BT: bateria zapasowa NLS-BTY2333 i ładowarka 4-slotowa NLS-CD3233-4C. Konfiguracja przez EasySet. Pełna specyfikacja — w dokumentacji Newland EMEA.`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-bezprzewodowe'],
+    manufacturerId: 'newland',
+    tags: ['retail', 'magazyn', 'healthcare', 'logistyka', 'produkcja'],
+    images: ['/images/products/NLS-HR3300-BT.png', '/images/products/NLS-HR3300-BT-2.png'],
+    imageDescriptions: [
+      'Newland HR33 Marlin Bluetooth — widok z przodu, czarna obudowa z niebieskim przyciskiem skanowania, okno megapikselowego sensora CMOS i celownik laserowy',
+      'Newland HR33 Marlin Bluetooth — widok z tyłu, logo Newland, diody LED statusu i niebieski pierścień na uchwycie',
+    ],
+    seoTitle: 'Newland HR33 Marlin Bluetooth — skaner 2D megapikselowy BT 5.0, OCR, laser | TAKMA',
+    seoDescription: 'Bezprzewodowy skaner Newland HR33 Marlin Bluetooth: megapikselowy CMOS 1280×800, celownik laserowy, OCR, BT 5.0, zasięg 100 m, batch 15 000 kodów, IP52, 5 lat gwarancji. Tańszy niż Zebra DS8178.',
+    isNew: true,
+    isBestseller: false,
+    availability: 'available',
+    specifications: [
+      { name: 'Typ skanera', value: 'Imager 2D bezprzewodowy Bluetooth' },
+      { name: 'Sensor obrazowy', value: '1280 × 800 CMOS megapikselowy' },
+      { name: 'Celownik', value: 'Laser 650 nm (klasa 2)' },
+      { name: 'Oświetlenie', value: 'Biała dioda LED' },
+      { name: 'Technologia dekodowania', value: 'Acuscan' },
+      { name: 'Rozdzielczość', value: '≥ 3 mil' },
+      { name: 'Minimalny kontrast', value: '15%' },
+      { name: 'Skanowane kody 1D', value: 'EAN-13, EAN-8, UPC-A/E, Code 128, Code 39, Code 93, Code 11, Code 49, Code 16K, GS1-128, AIM 128, ISBT 128, Codabar, ITF, ITF-6, ITF-14, GS1 DataBar (RSS), GS1 Composite, MSI-Plessey, Plessey, Industrial/Matrix/Standard 2 of 5, China Post 25, ISBN, ISSN' },
+      { name: 'Skanowane kody 2D', value: 'QR Code, Data Matrix, PDF417, Micro PDF417, Micro QR, Aztec, MaxiCode, Code One, Han Xin (Chinese Sensible), GM Code' },
+      { name: 'Kody pocztowe', value: 'USPS Postnet, USPS Intelligent Mail, USPS Planet, Royal Mail, KIX Post, Australian Postal' },
+      { name: 'OCR', value: 'Passport MRZ, Chinese ID Card, China Travel Permit' },
+      { name: 'Zasięg EAN-13 (13 mil)', value: '40–535 mm' },
+      { name: 'Zasięg Code 39 (5 mil)', value: '50–230 mm' },
+      { name: 'Zasięg PDF417 (6.7 mil)', value: '45–215 mm' },
+      { name: 'Zasięg Data Matrix (10 mil)', value: '30–245 mm' },
+      { name: 'Pole widzenia', value: '48° (H) × 30° (V)' },
+      { name: 'Kąty odczytu', value: 'Roll 360°, Pitch ±60°, Skew ±65°' },
+      { name: 'Bluetooth', value: '5.0' },
+      { name: 'Zasięg Bluetooth', value: '≥ 100 m (otwarta przestrzeń)' },
+      { name: 'Tryby komunikacji', value: 'Synchroniczny, asynchroniczny, batch' },
+      { name: 'Pamięć offline (batch)', value: '≥ 15 000 kodów (Code 128, 20 bajtów)' },
+      { name: 'Bateria', value: 'Li-Ion 2600 mAh (wymienna, latch-release)' },
+      { name: 'Czas pracy', value: '≥ 15 h (1 skan / 6 s)' },
+      { name: 'Czas ładowania', value: '≤ 6 h' },
+      { name: 'Interfejs', value: 'USB (KBW, CDC, HID-POS) przez stację dokującą' },
+      { name: 'Powiadomienia', value: 'Dźwięk (beep), LED, wibracja' },
+      { name: 'Wymiary skanera', value: '117,5 × 67,5 × 144 mm' },
+      { name: 'Waga skanera', value: '210 g (z baterią)' },
+      { name: 'Wymiary stacji dokującej', value: '140 × 90 × 144,5 mm' },
+      { name: 'Waga stacji dokującej', value: '340,5 g' },
+      { name: 'IP', value: 'IP52' },
+      { name: 'Odporność na upadek (skaner)', value: '1,5 m na beton' },
+      { name: 'Odporność na upadek (stacja)', value: '1,2 m na beton' },
+      { name: 'Temperatura pracy', value: '-10°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
+      { name: 'Temperatura ładowania', value: '0°C do +45°C' },
+      { name: 'Wilgotność', value: '5% – 95% (bez kondensacji)' },
+      { name: 'ESD', value: '±15 kV (powietrze), ±8 kV (kontakt)' },
+      { name: 'Certyfikaty', value: 'CE EMC Class B, FCC Part 15 Class B, RoHS' },
+      { name: 'Gwarancja', value: '5 lat (60 miesięcy)' },
+    ],
+    applications: [
+      'Magazyn wysokoregałowy — skanowanie etykiet z odległości 50 cm i więcej dzięki megapikselowemu sensorowi i celownikowi laserowemu',
+      'Centrum dystrybucyjne — inwentaryzacja offline (tryb batch 15 000+ kodów) bez zasięgu sieci',
+      'Linia produkcyjna — mobilna weryfikacja komponentów i WIP (work-in-progress) bez kabli',
+      'Retail premium i POS — szybki odczyt QR, EAN, GS1 DataBar z ekranów i etykiet',
+      'Apteki i szpitale — skanowanie leków FMD/KOWAL, opasek pacjentów, GS1 Ready',
+      'Kontrola paszportowa i dokumentów — OCR Passport MRZ bez dodatkowego sprzętu',
+    ],
+    variants: [
+      {
+        partNumber: 'NLS-HR3300-BT',
+        name: 'HR33 Marlin Bluetooth — zestaw ze stacją dokującą i kablem USB',
+        availability: 'available',
+        attributes: { 'Łączność': 'Bluetooth 5.0 + stacja dokująca USB' },
+      },
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: ['newland-bty2333', 'newland-cd3233-4c', 'newland-std23-33-sa', 'newland-std30i'],
+    faq: [
+      {
+        question: 'Czym różni się HR33 Marlin Bluetooth od wersji przewodowej?',
+        answer: 'Wersja Bluetooth ma: Bluetooth 5.0 z zasięgiem ponad 100 m, baterię Li-Ion 2600 mAh (do 15 h pracy), pamięć offline na 15 000+ kodów (tryb batch), stację dokującą w zestawie i wibrację jako dodatkowe potwierdzenie skanowania. Jest cięższa (210 g vs 140 g) i ma węższy zakres temperatury pracy (-10°C do +50°C vs -20°C do +60°C). Sensor megapikselowy 1280×800, celownik laserowy, OCR i Acuscan — identyczne w obu wersjach.',
+      },
+      {
+        question: 'Czym różni się HR33 BT od HR23 Dorada BT?',
+        answer: 'HR33 BT ma megapikselowy sensor 1280×800 (vs 640×480 w HR23), celownik laserowy (vs LED), prawie 2× dłuższy zasięg EAN-13 (535 mm vs 280 mm), OCR (Passport MRZ), technologię Acuscan, Advanced Scripting i więcej symbologii (MaxiCode, Han Xin, GM Code, Code 11, kody pocztowe). HR23 BT jest o ~35% tańszy — wystarczający, gdy nie potrzeba skanowania z dużych odległości ani OCR. Bateria, stacja dokująca i akcesoria (BTY2333, CD3233-4C) są wspólne.',
+      },
+      {
+        question: 'Jaki jest zasięg Bluetooth HR33 Marlin?',
+        answer: 'Zasięg Bluetooth 5.0 to ponad 100 m w otwartej przestrzeni (linii prostej). W warunkach magazynowych z przeszkodami (regały, ściany) zasięg wynosi typowo 30–50 m. Dla porównania: Zebra DS8178 ma zasięg tylko 10 m (Bluetooth 4.1 Class 2), a HR33 BT oferuje 10× większy zasięg za połowę ceny.',
+      },
+      {
+        question: 'Czy HR33 BT obsługuje OCR?',
+        answer: 'Tak — HR33 Marlin Bluetooth odczytuje OCR Passport MRZ (strefa do odczytu maszynowego w paszportach), chińskie dokumenty ID i China Travel Permit. Jest to jedyny skaner bezprzewodowy w segmencie poniżej 1 000 zł z wbudowaną obsługą OCR. Do porównania: Zebra DS8178 wymaga licencji PRZL za dodatkową opłatą.',
+      },
+      {
+        question: 'Jak działa tryb batch (offline) w HR33 BT?',
+        answer: 'W trybie batch skaner gromadzi zeskanowane kody w pamięci wewnętrznej (ponad 15 000 kodów Code 128 po 20 bajtów) — nawet gdy jest poza zasięgiem Bluetooth. Po powrocie do stacji dokującej lub nawiązaniu połączenia BT dane są automatycznie przesyłane do komputera. Idealny do inwentaryzacji w magazynach bez zasięgu sieci.',
+      },
+      {
+        question: 'Ile trwa ładowanie i jaki jest czas pracy HR33 BT?',
+        answer: 'Bateria Li-Ion 2600 mAh zapewnia do 15 godzin ciągłej pracy (przy 1 skanie co 6 sekund). Pełne ładowanie przez stację dokującą trwa do 6 godzin. Bateria jest wymienna (mechanizm latch-release) — można kupić zapasową NLS-BTY2333 i ładować rotacyjnie w ładowarce 4-slotowej NLS-CD3233-4C.',
+      },
+      {
+        question: 'Co jest w zestawie HR33 Marlin Bluetooth?',
+        answer: 'W zestawie (NLS-HR3300-BT): skaner HR33 Marlin z baterią 2600 mAh, stacja dokująca (ładowanie + komunikacja USB), kabel USB i Quick Start Guide. Opcjonalnie: bateria zapasowa NLS-BTY2333 (91,92 zł netto), ładowarka 4-slotowa NLS-CD3233-4C (318,47 zł), podstawka Smartstand NLS-STD23-33-SA.',
+      },
+      {
+        question: 'Czym różni się HR33 BT od Zebra DS8178?',
+        answer: 'HR33 BT ma Bluetooth 5.0 (vs 4.1), zasięg 100 m (vs 10 m — DS8178 to Class 2), OCR w standardzie (vs opcja PRZL), pamięć batch 15 000+ kodów, gwarancję 5 lat (vs 3 lata) — w cenie ponad 2× niższej (ok. 688 zł vs 1 800 zł netto). DS8178 ma baterię na 83 h i szerszy ekosystem akcesoriów Zebra. HR33 BT to lepszy wybór, gdy liczy się stosunek ceny do możliwości.',
+      },
+      {
+        question: 'Czy mogę używać akcesoriów z HR23 BT w HR33 BT?',
+        answer: 'Tak — bateria NLS-BTY2333 (2600 mAh) i ładowarka 4-slotowa NLS-CD3233-4C są w 100% kompatybilne między HR23 BT i HR33 BT. Stacja dokująca w zestawie jest dedykowana dla danego modelu, ale podstawka Smartstand NLS-STD23-33-SA pasuje do obu wersji (HR23 i HR33, przewodowych i bezprzewodowych).',
+      },
+      {
+        question: 'Jakie są alternatywy dla HR33 Marlin Bluetooth?',
+        answer: 'W segmencie bezprzewodowym megapikselowym: Zebra DS8178 (od ok. 1 800 zł — BT 4.1, bateria 83 h, IP42/IP52), Zebra DS4678 (od ok. 1 500 zł — BT 4.1, PRZL OCR opcja). W segmencie budżetowym: Newland HR23 Dorada BT (od ok. 437 zł — CMOS 640×480, bez OCR). HR33 BT to jedyny skaner bezprzewodowy z megapikselowym sensorem, OCR, BT 5.0 i zasięgiem 100 m w cenie poniżej 700 zł netto.',
+      },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa HR33 Marlin Bluetooth (EN)', type: 'datasheet', url: '/downloads/newland/HR33-Marlin-Bluetooth-Datasheet.pdf', size: '903 KB' },
+      { name: 'Instrukcja obsługi HR33 Marlin Bluetooth (EN)', type: 'manual', url: '/downloads/newland/HR33-Marlin-BT-User-Guide.pdf', size: '15 MB' },
+      { name: 'Quick Start Guide HR23/HR33 BT (EN)', type: 'manual', url: '/downloads/newland/HR33-Marlin-BT-Quick-Start-Guide.pdf', size: '2,2 MB' },
       { name: 'EasySet — oprogramowanie konfiguracyjne (strona producenta)', type: 'software', url: 'https://www.newland-id.com/en/software/easyset', size: 'Online' },
     ],
     createdAt: '2026-03-01',
