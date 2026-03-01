@@ -12373,8 +12373,11 @@ Opcjonalna podstawka STD300 (składana, auto-sense) do pracy prezentacyjnej hand
     subcategoryIds: ['skanery-przewodowe'],
     manufacturerId: 'newland',
     tags: ['produkcja', 'logistyka', 'magazyn'],
-    images: [],
-    imageDescriptions: [],
+    images: ['/images/products/NLS-NVH300-D0.png', '/images/products/NLS-NVH300-D0-2.png'],
+    imageDescriptions: [
+      'Newland NVH300 Angler DP — widok z przodu, czarno-pomarańczowa obudowa przemysłowa z szerokim oknem skanera DPM i pomarańczowym przyciskiem trigger',
+      'Newland NVH300 Angler DP — widok z tyłu, złącze RJ45, gumowany uchwyt z pomarańczowymi akcentami i otwory wentylacyjne',
+    ],
     seoTitle: 'Newland NVH300 Angler DP — skaner DPM, 1280×960 CMOS, IP64 | TAKMA',
     seoDescription: 'Przemysłowy skaner DPM Newland NVH300 Angler DP: megapikselowy CMOS 1280×960, 3-kolorowe LED, IP64, 1.8 m drop, 5 lat gwarancji. 3–5× tańszy od Zebra DS3608-DP. Cena i dostępność.',
     isNew: true,
