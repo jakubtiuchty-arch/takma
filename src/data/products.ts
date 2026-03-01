@@ -27807,6 +27807,95 @@ W zestawie: terminal MT93, bateria 5 000 mAh, etui ochronne, folia na ekran, pas
     ],
     createdAt: '2026-03-01',
   },
+  {
+    id: 'newland-mt93-megattera-standard-plus',
+    slug: 'newland-mt93-megattera-standard-plus',
+    name: 'Newland MT93 Megattera Standard Plus',
+    shortDescription: 'Terminal mobilny 5.5" z Android 13, Wi-Fi 6E, 4G LTE, skanerem 2D CM66 i baterią 5000 mAh',
+    description: `Dla kogo? Newland MT93 Megattera Standard Plus to ulepszona wersja terminala MT93 Standard z Wi-Fi 6E (802.11ax) zamiast Wi-Fi 5 (802.11ac). Przeznaczony dla magazynów, centrów logistycznych i hal produkcyjnych z gęstą siecią Wi-Fi 6E, gdzie większa przepustowość i niższe opóźnienia przekładają się na szybszą synchronizację danych WMS i płynniejszą pracę aplikacji enterprise. Wersja Standard Plus łączy niską cenę z łącznością nowej generacji.
+
+Czym różni się Standard Plus od Standard? Jedyną różnicą jest moduł Wi-Fi: Standard Plus obsługuje Wi-Fi 6E (802.11 a/b/g/n/ac/ax) z pasmem 6 GHz, podczas gdy Standard ma Wi-Fi 5 (802.11ac). Wi-Fi 6E zapewnia do 3× większą przepustowość, niższe opóźnienia (poniżej 5 ms) i lepszą wydajność w zatłoczonych sieciach z setkami urządzeń. Reszta specyfikacji — procesor, RAM, ekran, skaner, bateria, obudowa, łączność 4G/BT/NFC/GPS — jest identyczna.
+
+Wbudowany moduł 4G LTE (FDD: B1/B2/B3/B5/B7/B8/B20/B28, TDD: B34/B38/B39/B40/B41) z obsługą Dual SIM (nano+nano) lub nano SIM + microSD do 256 GB. Pasma 2G/3G/4G pokrywają całą Europę — operator pracujący w terenie ma pełny zasięg danych bez przenośnego routera Wi-Fi. Idealne do dostaw last-mile, inwentaryzacji w terenie i serwisu polowego.
+
+Ekran 5.5" HD+ (720×1440) z wzmocnionym szkłem Gorilla Glass, jasność 380 nit, multi-point capacitive touch z obsługą w rękawiczkach. Konstrukcja lekka (277 g z baterią) i smukła (15.9 mm). Fizyczne przyciski skanowania po obu stronach obudowy oraz przyciski nawigacyjne (Home, Back, Menu) do jednostręcznej obsługi.
+
+Skaner 2D megapikselowy CMOS zamontowany pod kątem 45° na górze urządzenia — naturalna pozycja point-and-shoot eliminuje przechylanie nadgarstka. Sensor 1280×800 px, 60 fps, celownik laserowy. Technologia AcuScan: tryb pick-list odczytuje wyłącznie kod wskazany celownikiem, ignorując sąsiednie etykiety. Dekoduje kody 1D (Code 128, EAN-13, UPC-A, ITF, GS1 DataBar) i 2D (QR, Data Matrix, PDF417, Aztec, MaxiCode). Zasięg: EAN-13 (13mil) 70–610 mm, QR (15mil) 55–410 mm, Data Matrix (10mil) 110–260 mm.
+
+Procesor MediaTek MT8781 octa-core 64-bit (2× A76 @ 2.2 GHz + 6× A55 @ 2 GHz) z 4 GB RAM i 64 GB Flash. System Android 13 GMS z pełnym dostępem do Google Play. Kompatybilność z WMS: Comarch WMS, SAP Mobile, Microsoft Dynamics, Simple WMS, Qguar. Newland SDK (Java/Kotlin) umożliwia integrację skanera z aplikacjami custom.
+
+Bateria 5 000 mAh Li-Ion (3.85V) zapewnia ponad 10 godzin ciągłej pracy. Wymienna bez narzędzi (swappable) — do pracy zmianowej 24/7 wystarczą 2 baterie na stanowisko. Szybkie ładowanie 18W. Opcjonalna ładowarka 4-gniazdowa NLS-MCD9350-4B umożliwia jednoczesne ładowanie 4 baterii zapasowych.
+
+Łączność: Bluetooth 5.2 BLE, NFC 13.56 MHz (ISO14443A/B, MIFARE, FeliCa, ISO15693), GPS/AGPS z GLONASS. Kamera tylna 13 MP z autofokusem i lampą LED, kamera przednia 5 MP. Głośnik 103 dB, podwójny mikrofon z redukcją szumów, wibrator, wielokolorowe diody LED powiadomień. USB Type-C.
+
+Obudowa IP65 — pełna ochrona przed pyłem i strumieniami wody ze wszystkich kierunków. Upadki z 1.5 m na beton (6 stron). Temperatura pracy od -20°C do +55°C — praca w chłodniach bez dodatkowego wyposażenia. Temperatura przechowywania od -40°C do +70°C. ESD ±15 kV (powietrze) / ±8 kV (kontakt).
+
+W zestawie: terminal, bateria 5 000 mAh, etui ochronne, folia na ekran, pasek na rękę, kabel USB-C, adapter z wieloma wtyczkami (EU/UK/US). Zarządzanie flotą przez bezpłatną platformę MDM Newland Ndevor. Gwarancja producenta 2 lata z opcją przedłużenia do 3 lub 5 lat. Wersja z IP67, Android Enterprise Recommended i 6 GB RAM: Newland MT93 Megattera Pro.`,
+    categoryId: 'terminale-mobilne',
+    subcategoryIds: ['terminale-newland'],
+    manufacturerId: 'newland',
+    tags: ['magazyn', 'logistyka', 'retail', 'outdoor'],
+    images: ['/images/products/NLS-MT9300-W4-SS.png'],
+    imageDescriptions: ['Newland MT93 Megattera Standard Plus — widok z przodu, ekran 5.5 cala z Android 13 i żółte przyciski boczne'],
+    seoTitle: 'Newland MT93 Megattera Standard Plus — terminal mobilny 5.5" z Wi-Fi 6E i 4G LTE | TAKMA',
+    seoDescription: 'Terminal mobilny Newland MT93 Megattera Standard Plus: Android 13, Wi-Fi 6E, 4G LTE, skaner 2D CM66, bateria 5000 mAh, IP65. Cena i dostępność w TAKMA.',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'NLS-MT9300-W4-SS' },
+      { name: 'System operacyjny', value: 'Android 13 GMS' },
+      { name: 'Procesor', value: 'MediaTek MT8781, octa-core 64-bit, 2.2 GHz' },
+      { name: 'Pamięć RAM', value: '4 GB' },
+      { name: 'Pamięć Flash', value: '64 GB (microSD do 256 GB)' },
+      { name: 'Wyświetlacz', value: '5.5" HD+ (720×1440), multi-point capacitive touch, Gorilla Glass, 380 nit' },
+      { name: 'Skaner', value: '2D Megapixel CMOS, 1280×800, 60 fps, celownik laserowy, kąt 45°' },
+      { name: 'Technologia skanowania', value: 'AcuScan (precyzyjny pick-list)' },
+      { name: 'Kamera tylna', value: '13 MP z autofokusem i lampą LED' },
+      { name: 'Kamera przednia', value: '5 MP' },
+      { name: 'Wi-Fi', value: '802.11 a/b/g/n/ac/ax (Wi-Fi 6E), dual-band 2.4 + 5 + 6 GHz' },
+      { name: 'Bluetooth', value: '5.2 BLE' },
+      { name: '4G LTE', value: 'FDD: B1/B2/B3/B5/B7/B8/B20/B28, TDD: B34/B38/B39/B40/B41' },
+      { name: 'NFC', value: '13.56 MHz (ISO14443A/B, MIFARE, FeliCa, ISO15693)' },
+      { name: 'GPS', value: 'GPS/AGPS, GLONASS' },
+      { name: 'USB', value: 'Type-C' },
+      { name: 'Bateria', value: '5 000 mAh Li-Ion, wymienna, 3.85 V' },
+      { name: 'Czas pracy', value: 'Ponad 10 godzin ciągłej pracy' },
+      { name: 'Klasa ochrony', value: 'IP65' },
+      { name: 'Upadki', value: '1.5 m na beton' },
+      { name: 'Temperatura pracy', value: '-20°C do +55°C' },
+      { name: 'Wymiary', value: '159 × 74 × 15.9 mm' },
+      { name: 'Waga', value: '277 g (z baterią)' },
+      { name: 'Audio', value: 'Głośnik 103 dB, podwójny mikrofon z redukcją szumów, jack 3.5 mm' },
+      { name: 'Powiadomienia', value: 'Wibrator, wielokolorowe diody LED' },
+      { name: 'SIM', value: 'Dual nano SIM lub nano SIM + nano TF' },
+      { name: 'Sensory', value: 'Światła, zbliżeniowy, akcelerometr, żyroskop, kompas elektroniczny' },
+      { name: 'ESD', value: '±15 kV (powietrze), ±8 kV (kontakt)' },
+      { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
+      { name: 'Gwarancja', value: '2 lata (opcja +1 lub +3 lata)' },
+      { name: 'W zestawie', value: 'Etui, folia, pasek na rękę, kabel USB-C, adapter EU, bateria' },
+    ],
+    applications: ['Magazyn z infrastrukturą Wi-Fi 6E', 'Centrum logistyczne z gęstą siecią WLAN', 'Dostawy i logistyka miejska z 4G LTE', 'Inwentaryzacja w terenie', 'Hala produkcyjna z setkami urządzeń w sieci', 'Retail — obsługa klienta na hali sprzedaży'],
+    priceFrom: 2207,
+    availability: 'available',
+    compatibleAccessories: [],
+    relatedAccessories: ['newland-mcd9350-01', 'newland-mcd9350-4b', 'newland-pg93-01', 'newland-mrb9350'],
+    faq: [
+      { question: 'Czym różni się MT93 Standard Plus od MT93 Standard?', answer: 'Jedyną różnicą jest moduł Wi-Fi: Standard Plus ma Wi-Fi 6E (802.11ax) z pasmem 6 GHz, Standard ma Wi-Fi 5 (802.11ac). Wi-Fi 6E zapewnia do 3× większą przepustowość, niższe opóźnienia i lepszą pracę w zatłoczonych sieciach. Reszta specyfikacji (procesor, RAM 4 GB, Flash 64 GB, ekran, skaner, bateria 5000 mAh, IP65, 4G LTE) jest identyczna. Różnica w cenie to ok. 100–200 zł netto.' },
+      { question: 'Czym różni się MT93 Standard Plus od MT93 Pro?', answer: 'MT93 Pro oferuje IP67 (vs IP65 w Standard Plus), certyfikat Android Enterprise Recommended (AER), i opcjonalnie 6 GB RAM / 128 GB Flash (wersja XE). Standard Plus ma tę samą łączność Wi-Fi 6E co Pro, ale niższą klasę ochrony i brak AER. Standard Plus jest tańszy o ok. 300–500 zł netto — wystarczy do większości zastosowań magazynowych, gdzie IP65 jest wystarczające.' },
+      { question: 'Czy warto dopłacić do Standard Plus za Wi-Fi 6E?', answer: 'Tak, jeśli Twój magazyn lub centrum logistyczne ma infrastrukturę Wi-Fi 6/6E (access pointy 802.11ax). Wi-Fi 6E zmniejsza opóźnienia w sieciach z dużą liczbą urządzeń (100+), przyspiesza synchronizację danych WMS i redukuje zrywanie połączeń. Jeśli korzystasz z Wi-Fi 5 (802.11ac) — Standard wystarczy, bo Wi-Fi 6E jest wstecznie kompatybilne, ale nie wykorzystasz pełnego potencjału.' },
+      { question: 'Czy MT93 Standard Plus ma wbudowane 4G LTE?', answer: 'Tak — MT93 Standard Plus, tak jak wersja Standard, ma wbudowany moduł 4G LTE (FDD/TDD, pasma europejskie B1/B3/B7/B8/B20/B28). Slot na 2× nano SIM lub nano SIM + microSD. Terminal działa jednocześnie na Wi-Fi 6E i 4G LTE z automatycznym przełączaniem.' },
+      { question: 'Jaki skaner ma MT93 Standard Plus?', answer: 'Skaner 2D megapikselowy CMOS zamontowany pod kątem 45° — naturalna pozycja point-and-shoot. Sensor 1280×800 px, 60 fps, celownik laserowy. Technologia AcuScan (tryb pick-list) odczytuje wyłącznie kod wskazany celownikiem. Zasięg: EAN-13 do 61 cm, QR do 41 cm, Data Matrix do 26 cm. Dekoduje wszystkie popularne kody 1D i 2D.' },
+      { question: 'Jak długo pracuje bateria w MT93 Standard Plus?', answer: 'Bateria 5 000 mAh zapewnia ponad 10 godzin ciągłej pracy. Wymienna bez narzędzi — do pracy 24/7 wystarczą 2 baterie na stanowisko. Ładowarka 4-gniazdowa [NLS-MCD9350-4B](/produkt/newland-mcd9350-4b) umożliwia jednoczesne ładowanie 4 baterii zapasowych.' },
+      { question: 'Czy MT93 Standard Plus nadaje się do chłodni?', answer: 'Tak — zakres temperatur pracy od -20°C do +55°C obejmuje chłodnie standardowe. IP65 chroni przed pyłem i strumieniami wody. Do mroźni głębokich (-30°C i niżej) rekomendujemy [Zebra MC9400](/produkt/zebra-mc9400) z dedykowaną baterią freezer.' },
+      { question: 'Czy MT93 Standard Plus współpracuje z WMS?', answer: 'Tak — Android 13 GMS z Google Play zapewnia kompatybilność z popularnymi WMS: Comarch WMS, SAP Mobile, Microsoft Dynamics, Simple WMS, Qguar. Newland SDK (Java/Kotlin) umożliwia integrację skanera z aplikacjami custom. Zarządzanie flotą przez bezpłatny MDM Newland Ndevor.' },
+      { question: 'Jakie akcesoria pasują do MT93 Standard Plus?', answer: 'Wszystkie akcesoria MT93 są wspólne dla całej serii: stacja ładowania [NLS-MCD9350-01](/produkt/newland-mcd9350-01), ładowarka 4 baterii [NLS-MCD9350-4B](/produkt/newland-mcd9350-4b), uchwyt pistoletowy [NLS-PG93-01](/produkt/newland-pg93-01), etui ochronne [NLS-MRB9350](/produkt/newland-mrb9350). Bateria zapasowa BTY95L (5000 mAh) — ta sama co w Standard i Pro.' },
+      { question: 'Jakie są alternatywy dla MT93 Standard Plus?', answer: 'W podobnej klasie: [Newland MT93 Standard](/produkt/newland-mt93-megattera) (Wi-Fi 5, od 2 295 zł — jeśli nie potrzebujesz Wi-Fi 6E), [Zebra TC22](/produkt/zebra-tc22) (6" FHD+, Wi-Fi 6/6E, bez LTE — ok. 2 400 zł), [Zebra TC27](/produkt/zebra-tc27) (jak TC22 + 5G/LTE — ok. 3 000+ zł), [Newland N7 Cachalot Pro II](/produkt/newland-n7-cachalot-pro-ii) (4", klawiatura fizyczna, od 3 346 zł). Standard Plus wyróżnia się najniższą ceną terminala z Wi-Fi 6E i 4G LTE jednocześnie.' },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa MT93 (EN)', type: 'datasheet', url: 'https://scan2id.com/wp-content/uploads/2024/11/newland-mt93-megattera-standard-datasheet.pdf', size: 'PDF' },
+    ],
+    createdAt: '2026-03-01',
+  },
 ]
 
 // Akcesoria Newland N7

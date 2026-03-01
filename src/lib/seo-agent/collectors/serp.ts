@@ -118,6 +118,8 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'newland mt93 megattera', group: 'terminale-newland' },
   { keyword: 'terminal newland mt93', group: 'terminale-newland' },
   { keyword: 'newland mt93 megattera standard', group: 'terminale-newland' },
+  { keyword: 'newland mt93 megattera standard plus', group: 'terminale-newland' },
+  { keyword: 'newland mt93 standard plus wifi 6e', group: 'terminale-newland' },
 
   // =====================================================
   // TERMINALE DATALOGIC (4)
