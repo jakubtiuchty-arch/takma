@@ -183,7 +183,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208, DS3678-SR — gwarancja 5 lat. Skanery przewodowe i bezprzewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies i Newland — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Newland HR23 Dorada — ekonomiczny 2D z gwarancją 5 lat. DS3678-SR bezprzewodowy ultra-rugged do magazynów. DS9908 hybrydowy prezentacyjny do kas POS. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 22,
+    productCount: 23,
   },
   {
     id: 'tablety-przemyslowe',
@@ -825,8 +825,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Skanery kodów kreskowych przewodowe USB od 352 zł netto. Zebra DS2208 — imager 2D, IP52, 5 lat gwarancji. Do kas, aptek, biur i magazynów. Autoryzowany partner Zebra — doradztwo i serwis.',
     longDescription: 'Przewodowe czytniki kodów kreskowych (skanery USB / RS-232) — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania. Imager 2D odczytuje kody 1D, QR, DataMatrix i kody z ekranów. Zebra DS2208 (IP52, 5 lat gwarancji) — idealna na stałe stanowiska kasowe, apteki, przyjęcia towaru.',
     icon: 'scan',
-    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er', 'newland-hr23-dorada', 'newland-hr33-marlin'],
-    productCount: 12,
+    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er', 'newland-hr23-dorada', 'newland-hr33-marlin', 'newland-hr11-aringa'],
+    productCount: 13,
   },
   {
     id: 'skanery-bezprzewodowe',
@@ -12072,6 +12072,130 @@ Porównanie z konkurencją: HR33 Marlin oferuje sensor megapikselowy 1280×800 �
       { name: 'Karta katalogowa HR33 Marlin Corded (EN)', type: 'datasheet', url: '/downloads/newland/HR33-Marlin-Corded-Datasheet.pdf', size: '747 KB' },
       { name: 'Instrukcja obsługi HR33 Marlin (EN)', type: 'manual', url: '/downloads/newland/HR33-Marlin-User-Guide.pdf', size: '15 MB' },
       { name: 'Skrócona instrukcja HR23/HR33 (EN)', type: 'manual', url: '/downloads/newland/HR23-HR33-Quick-Start-Guide.pdf', size: '1,5 MB' },
+      { name: 'EasySet — oprogramowanie konfiguracyjne (strona producenta)', type: 'software', url: 'https://www.newland-id.com/en/software/easyset', size: 'Online' },
+    ],
+    createdAt: '2026-03-01',
+  },
+  {
+    id: 'newland-hr11-aringa',
+    slug: 'newland-hr11-aringa',
+    name: 'Newland HR11 Aringa',
+    sameAs: 'https://www.newland-id.com/en/products/handheld-scanners/hr11-aringa',
+    shortDescription: 'Budżetowy przewodowy czytnik kodów 1D z sensorem CCD 2500 px — odczyt z papieru i ekranów, gwarancja 5 lat',
+    description: `Dla kogo? Newland HR11 Aringa to najtańszy przewodowy czytnik kodów kreskowych 1D w ofercie Newland, zaprojektowany dla małych sklepów, kas fiskalnych, aptek, drogerii, kiosków z tytoniem, bibliotek, biur i punktów biletowych — wszędzie tam, gdzie wystarczy odczyt kodów 1D (EAN, Code 128, GS1 DataBar) przy ograniczonym budżecie.
+
+Sensor CCD 2500 pikseli z technologią NLDC (Newland Decoder Chip) odczytuje kody 1D drukowane na papierze, etykietach i — co ważne — wyświetlane na ekranach smartfonów, tabletów i monitorów. Skanowanie kuponów mobilnych, biletów elektronicznych, e-recept i kodów z aplikacji lojalnościowych nie wymaga skanera 2D — HR11 sobie poradzi.
+
+Uwaga: HR11 Aringa czyta wyłącznie kody 1D (liniowe). Nie obsługuje kodów 2D takich jak QR Code, Data Matrix czy PDF417. Jeśli potrzebujesz odczytu kodów 2D — wybierz Newland HR23 Dorada (od ok. 260 zł netto) lub Zebra DS2208 (od 352 zł netto).
+
+Ergonomiczna obudowa o wadze zaledwie 120 g i wymiarach 101×68×145 mm sprawia, że HR11 jest jednym z najlżejszych czytników na rynku — ideał na wielogodzinne zmiany przy kasie. Oświetlenie czerwonym LED (620–630 nm) jest przyjazne dla oczu w warunkach sztucznego oświetlenia sklepowego.
+
+Klasa ochrony IP42, odporność na upadki z 1.5 m na twardą powierzchnię, zakres temperatur od -20°C do +60°C — HR11 działa nawet w nieogrzewanych magazynach zimą (dla porównania: Zebra LI2208 zaczyna od 0°C). Gwarancja producenta 5 lat (60 miesięcy) — najdłuższa w segmencie budżetowych czytników 1D.
+
+Interfejs USB (emulacja klawiatury, plug-and-play) lub RS-232. Konfiguracja przez bezpłatne oprogramowanie EasySet lub skanowanie kodów konfiguracyjnych z instrukcji. Opcjonalna składana podstawka smart stand umożliwia automatyczne skanowanie w trybie hands-free — skaner sam wykrywa zbliżenie kodu i odczytuje go bez naciskania przycisku.
+
+Porównanie z konkurencją: Zebra LI2208 (od ok. 265 zł netto) jest szybsza (547 vs 300 skan/s) i ma dłuższy zasięg (do 790 mm vs 480 mm), ale kosztuje o ~40% więcej i nie działa poniżej 0°C. HR11 Aringa to najlepszy stosunek ceny do jakości w segmencie czytników 1D — 5 lat gwarancji, odczyt z ekranów i waga 120 g za niespełna 170 zł netto. Pełna specyfikacja — w dokumentacji Newland EMEA.`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-przewodowe'],
+    manufacturerId: 'newland',
+    tags: ['retail', 'healthcare'],
+    images: [],
+    imageDescriptions: [],
+    seoTitle: 'Newland HR11 Aringa — czytnik kodów 1D CCD, USB, 5 lat gwarancji | TAKMA',
+    seoDescription: 'Budżetowy czytnik kodów 1D Newland HR11 Aringa: CCD 2500 px, USB, odczyt z ekranów (NLDC), IP42, 1.5 m drop, 5 lat gwarancji. Porównanie z Zebra LI2208.',
+    isNew: true,
+    isBestseller: false,
+    availability: 'unavailable',
+    specifications: [
+      { name: 'Typ skanera', value: 'CCD Linear Imager 1D przewodowy' },
+      { name: 'Sensor obrazowy', value: 'CCD 2500 pikseli' },
+      { name: 'Oświetlenie', value: 'Czerwony LED 620–630 nm' },
+      { name: 'Rozdzielczość', value: '≥ 3 mil' },
+      { name: 'Kontrast minimalny', value: '20%' },
+      { name: 'Skanowane kody 1D', value: 'AIM 128, Code 11, Code 32, Code 39, Code 93, Code 128, Codabar, COOP 25, Deutsche 12, Deutsche 14, EAN-8, EAN-13, Febraban, GS1-128, GS1 DataBar (RSS), ISBN, ISSN, ITF-6, ITF-14, MSI-Plessey, Plessey, UPC-A, UPC-E, Interleaved 2 of 5, Industrial 2 of 5, Matrix 2 of 5, Standard 2 of 5' },
+      { name: 'Kody 2D', value: 'Nie obsługuje (tylko 1D)' },
+      { name: 'Zasięg EAN-13 (13 mil)', value: '40–480 mm' },
+      { name: 'Zasięg Code 39 (5 mil)', value: '80–180 mm' },
+      { name: 'Pole widzenia', value: '53° ±2° (horyzontalnie)' },
+      { name: 'Kąty odczytu', value: 'Roll 360°, Pitch ±60°, Skew ±70°' },
+      { name: 'Interfejs', value: 'USB, RS-232' },
+      { name: 'Powiadomienia', value: 'Dźwięk (beep), LED' },
+      { name: 'Wymiary', value: '101 × 68 × 145 mm' },
+      { name: 'Waga', value: '120 g' },
+      { name: 'IP', value: 'IP42' },
+      { name: 'Odporność na upadek', value: '1.5 m' },
+      { name: 'Temperatura pracy', value: '-20°C do +60°C' },
+      { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
+      { name: 'Wilgotność', value: '5% – 95% (bez kondensacji)' },
+      { name: 'ESD', value: '±16 kV (powietrze), ±8 kV (kontakt)' },
+      { name: 'Zasilanie', value: '5 V DC ±5%, 96.8 mA maks., standby 57.6 mA' },
+      { name: 'Pobór mocy', value: '352 mW (typowo)' },
+      { name: 'Certyfikaty', value: 'FCC Part15 Class B, CE EMC Class B, RoHS' },
+      { name: 'Gwarancja', value: '5 lat' },
+    ],
+    applications: [
+      'Kasy fiskalne i POS (retail, mały handel)',
+      'Apteki i drogerie — kody EAN z opakowań',
+      'Kioski z tytoniem i punkty prasowe',
+      'Biblioteki i archiwa — kody ISBN',
+      'Biura — identyfikatory i dokumenty',
+      'Punkty biletowe — bilety papierowe i mobilne (odczyt z ekranów)',
+    ],
+    variants: [
+      {
+        partNumber: 'NLS-HR1150P-30',
+        name: 'HR11 Aringa — USB, auto-sense',
+        availability: 'unavailable',
+        attributes: { 'Łączność': 'USB' },
+      },
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: ['newland-std30i'],
+    faq: [
+      {
+        question: 'Czy Newland HR11 Aringa czyta kody QR i DataMatrix (2D)?',
+        answer: 'Nie — HR11 Aringa jest czytnikiem wyłącznie 1D (kody kreskowe liniowe: EAN, Code 128, GS1 DataBar itp.). Nie odczytuje kodów 2D takich jak QR, DataMatrix czy PDF417. Jeśli potrzebujesz skanera 2D, rekomendujemy Newland HR23 Dorada lub Zebra DS2208.',
+      },
+      {
+        question: 'Czy HR11 odczytuje kody z ekranów telefonów?',
+        answer: 'Tak — dzięki technologii NLDC (Newland Decoder Chip) czytnik odczytuje kody 1D zarówno z papierowych etykiet, jak i z ekranów LCD smartfonów, tabletów i monitorów. Skanowanie kuponów mobilnych, biletów elektronicznych i kodów z aplikacji lojalnościowych działa bez problemu.',
+      },
+      {
+        question: 'Czym różni się Newland HR11 od Zebra LI2208?',
+        answer: 'Oba są czytnikami 1D z 5-letnią gwarancją. HR11 jest tańszy (od ok. 167 zł vs ok. 265 zł netto), lżejszy (120 g vs 140 g) i działa w szerszym zakresie temperatur (-20°C do +60°C vs 0°C do +50°C). LI2208 jest szybsza (547 vs 300 skan/s) i ma dłuższy zasięg odczytu (do 790 mm vs 480 mm). HR11 to lepszy wybór budżetowy.',
+      },
+      {
+        question: 'Jaka jest gwarancja na Newland HR11 Aringa?',
+        answer: 'Producent Newland EMEA udziela 5 lat (60 miesięcy) gwarancji — najdłuższej w segmencie budżetowych czytników 1D. Zebra LI2208 również oferuje 5 lat, ale w wyższej cenie.',
+      },
+      {
+        question: 'Czy można używać HR11 w trybie hands-free?',
+        answer: 'Tak — z opcjonalną składaną podstawką smart stand (wersja NLS-HR1150P-30F) skaner przełącza się w tryb auto-sense i skanuje automatycznie po zbliżeniu kodu. Podstawka gooseneck STD30i (sprzedawana osobno) również jest kompatybilna.',
+      },
+      {
+        question: 'Jak skonfigurować Newland HR11 Aringa?',
+        answer: 'Przez bezpłatne oprogramowanie EasySet od Newland — ustawienie prefiksów/sufiksów, formatów danych, trybu skanowania (trigger/auto) i wybór symbologii. Alternatywnie: skanowanie kodów konfiguracyjnych z instrukcji. Czytnik działa plug-and-play po podłączeniu kabla USB — emulacja klawiatury bez instalacji sterowników.',
+      },
+      {
+        question: 'Czym różni się HR11 Aringa od HR23 Dorada?',
+        answer: 'HR11 Aringa to czytnik 1D (CCD liniowy) — tańszy, ale czyta wyłącznie kody kreskowe liniowe. HR23 Dorada to imager 2D (CMOS 640×480) — czyta kody 1D i 2D (QR, DataMatrix, PDF417), ma wyższy IP52 i celownik LED. Jeśli potrzebujesz tylko kodów EAN/Code 128 — HR11 wystarczy. Jeśli potrzebujesz QR/DataMatrix — wybierz HR23.',
+      },
+      {
+        question: 'Czy HR11 nadaje się do apteki (FMD/KOWAL)?',
+        answer: 'Częściowo — HR11 odczyta kody EAN-13 z opakowań leków, ale NIE odczyta kodów DataMatrix wymaganych przez dyrektywę FMD do weryfikacji autentyczności. Do pełnej zgodności z FMD/KOWAL potrzebny jest skaner 2D: Newland HR23 Dorada lub Zebra DS2208.',
+      },
+      {
+        question: 'Czy HR11 działa w niskich temperaturach?',
+        answer: 'Tak — zakres temperatur pracy to -20°C do +60°C, więc HR11 nadaje się do nieogrzewanych magazynów, chłodni i pracy na zewnątrz zimą. Dla porównania: Zebra LI2208 działa dopiero od 0°C.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Newland HR11 Aringa?',
+        answer: 'W segmencie 1D: Zebra LI2208 (od ok. 265 zł netto — szybszy, dłuższy zasięg, ale droższa). W segmencie 2D (upgrade): Newland HR23 Dorada (od ok. 260 zł netto — czyta też QR i DataMatrix), Zebra DS2208 (od 352 zł netto — IP52, standard branżowy). HR11 to najlepszy stosunek ceny do jakości gdy wystarczą kody 1D.',
+      },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa HR11 Aringa (EN)', type: 'datasheet', url: '/downloads/newland/HR11-Aringa-Datasheet.pdf', size: '678 KB' },
+      { name: 'Sterownik OPOS Newland Scanner V1.2.0', type: 'software', url: '/downloads/newland/OPOS_Newland_Scanner_V1.2.0.zip', size: '1,1 MB' },
       { name: 'EasySet — oprogramowanie konfiguracyjne (strona producenta)', type: 'software', url: 'https://www.newland-id.com/en/software/easyset', size: 'Online' },
     ],
     createdAt: '2026-03-01',

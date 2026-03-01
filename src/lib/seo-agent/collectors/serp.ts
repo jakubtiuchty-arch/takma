@@ -93,6 +93,8 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'skaner newland hr23', group: 'skanery' },
   { keyword: 'newland hr33 marlin', group: 'skanery' },
   { keyword: 'skaner newland hr33', group: 'skanery' },
+  { keyword: 'newland hr11 aringa', group: 'skanery' },
+  { keyword: 'skaner newland hr11', group: 'skanery' },
 
   // =====================================================
   // TERMINALE ZEBRA — "terminal mobilny zebra X" (14)
