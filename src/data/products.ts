@@ -30362,8 +30362,6 @@ Ultra-rugged do mroźni: CK67 w standardzie działa w temperaturach od -20°C do
 
 Platforma Mobility Edge: CK67 działa na Android 14 z gwarantowaną ścieżką aktualizacji do Android 18 (4 generacje OS). Honeywell Mobility Edge zapewnia wspólny BSP dla całej floty, regularne patche bezpieczeństwa (LifeGuard), zero-touch enrollment, kompatybilność z Google Mobile Services i integrację z MDM (SOTI, Ivanti, VMware). Oprogramowanie Operational Intelligence monitoruje stan urządzeń, baterii i sieci w czasie rzeczywistym — dział IT widzi cały park maszynowy na jednym dashboardzie.
 
-CK67 vs Zebra MC9400 — porównanie: MC9400 oferuje skaner SE58 z zasięgiem do 30+ m (vs 24 m FlexRange XLR w CK67), większy ekran 3,5" dotykowy + klawiatura i cięższy format gun (765 g vs 508 g). CK67 wygrywa lżejszą wagą (-257 g), dłuższym czasem pracy baterii (28 h vs 17 h), nowszą łącznością Wi-Fi 6E (vs Wi-Fi 6 w MC9400) i niższą ceną wejścia (7 765 zł vs ok. 9 500 zł). MC9400 lepszy do ultra-dalekiego skanowania i pracy z Android Mobility DNA. CK67 lepszy dla firm szukających lekkiego gun terminala z długim czasem pracy i Mobility Edge.
-
 Koszt posiadania (TCO): bateria 7 000 mAh hot-swap z deklarowanym czasem pracy do 28 godzin eliminuje konieczność posiadania dużego zapasu baterii w magazynach. Platforma Mobility Edge z gwarancją Android 14→18 — 4 generacje OS bez wymiany sprzętu. Waga 508 g (vs 765 g MC9400) redukuje zmęczenie pracowników przy wielogodzinnej pracy.
 
 Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CK67 na stronie producenta (honeywell.com).`,
@@ -31471,10 +31469,6 @@ Trzy opcje skanera: Standard Range S0703 (1D/2D, do 50 cm) — do kasy, lady, ko
 
 Bateria: standardowa 4 775 mAh (pełna zmiana 10-12 h), rozszerzona 7 692 mAh (16+ h). Obie z hot-swap — wymiana bez wyłączania terminala. Opcjonalnie bateria 4 680 mAh z ładowaniem bezprzewodowym Qi.
 
-CT47 vs Zebra TC53 — porównanie: TC53 oferuje ekran 6" (vs 5,5" w CT47), procesor Qualcomm 6490 (identyczny), Wi-Fi 6E, IP68 i skaner SE4720/SE55. CT47 wygrywa podwójną certyfikacją IP65+IP68, wyższym dropem z bootem (3,0 m vs 1,8 m w TC53), lżejszą wagą (314 g vs 301 g) i opcjonalnym 5G w standardowej ofercie. TC53 wygrywa ekosystemem Zebra Mobility DNA (DataWedge, StageNow, Device Tracker). CT47 lepszy dla firm ceniących wytrzymałość, 5G i Mobility Edge.
-
-CT47 vs CT32 — porównanie: CT32 to model budżetowy (od 3 389 zł, 269 g), CT47 to mid-premium (od 7 901 zł, 314 g). CT47 oferuje większy ekran (5,5" vs 6" CT32, ale wyższą rozdzielczość FHD+ vs FHD), podwójne IP65+IP68 (vs IP65 w CT32), wyższy drop (3,0 m vs 1,8 m) i 3 opcje skanera (SR/MR/LR vs 1 w CT32). CT32 lepszy gdy priorytetem jest cena i lekkość.
-
 Koszt posiadania (TCO): platforma Mobility Edge z gwarantowanymi aktualizacjami systemu Android — wieloletnie wsparcie bez wymiany sprzętu. Wspólna bateria 4 775 mAh / 7 692 mAh z CT40 i CT45 chroni inwestycję w zapas baterii. IP65+IP68 z dropem 3,0 m redukuje koszty napraw i wymian — średni czas życia terminala 5+ lat. Waga 314 g minimalizuje zmęczenie pracowników na długich zmianach.
 
 Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CT47 (PDF w sekcji Dokumenty).`,
@@ -31792,10 +31786,6 @@ Trzy opcje skanera: Model bazowy S0703 Standard Range (1D/2D, laser czerwony) do
 Klawiatury: CK62 dostępny z klawiaturą 47-klawiszową alfanumeryczną (pełne ABC — do wyszukiwania, tekstów, WMS) lub 38-klawiszową numeryczną z klawiszami funkcyjnymi (szybkie wprowadzanie ilości, kompletacja). Obie klawiatury podświetlane, z wyczuwalnym skokiem klawiszy do obsługi w rękawiczkach.
 
 Bateria 7 000 mAh z hot-swap: CK62 korzysta z tej samej baterii co CK67 (CK67-BTSC-001, 7 000 mAh). Producent deklaruje do 28 godzin pracy w typowym scenariuszu magazynowym. Technologia hot-swap — wymiana baterii bez wyłączania terminala. Ładowanie Quick Charge 3.0 w ok. 4 godziny. Dla flot wielozmianowych rekomendujemy ładowarkę 4-gniazdową CK6X-BC-4BAY-0 lub 16-gniazdową CK6X-BC-16BAY-0.
-
-CK62 vs CK67 — porównanie: CK67 to model ultra-rugged z IP65+IP68, upadkami z 2,4 m, 4 000 tumble i pracą do -30°C (cold storage). CK62 oferuje IP65, upadki z 1,8 m i 3 000 tumble — wystarczające dla typowych magazynów, ale bez ekstremalnych mroźni. CK62 wygrywa wagą (440 g vs 516 g CK67) i ceną (od 5 759 zł vs od 7 778 zł). CK67 lepszy do chłodni i ekstremalnych warunków. CK62 lepszy gdy priorytetem jest ergonomia i koszt.
-
-CK62 vs Zebra MC3400 — porównanie: MC3400 oferuje ekran 4" dotykowy z klawiaturą, skaner SE4770 (do 1,8 m) lub SE58 (do 24 m), wagę 490 g i Android z Zebra Mobility DNA (DataWedge, StageNow, Device Tracker). CK62 wygrywa lżejszą wagą (440 g), dłuższą baterią (7 000 mAh, 28h vs 5 200 mAh w MC3400), nowszą łącznością Wi-Fi 6E (vs Wi-Fi 6 w MC3400) i platformą Mobility Edge z gwarantowanym wsparciem Android 14→18. MC3400 lepszy w ekosystemie Zebra. CK62 lepszy jako terminal mid-range z priorytetem na baterię i wagę.
 
 Koszt posiadania (TCO): platforma Mobility Edge z gwarantowaną ścieżką aktualizacji Android 14→18 — 5 generacji OS bez wymiany sprzętu. Współdzielona bateria z CK67 (CK67-BTSC-001) i ładowarki CK6X — floty mieszane CK62+CK67 korzystają z tej samej infrastruktury ładowania. Waga 440 g (najlżejszy terminal gun w klasie) redukuje zmęczenie pracowników i koszty wypadków przy pracy w długich zmianach.
 
