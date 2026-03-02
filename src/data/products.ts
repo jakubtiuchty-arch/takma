@@ -13403,8 +13403,8 @@ Pełna kompatybilność wsteczna z akcesoriami MC3300x: baterie, stacje dokując
     id: 'zebra-mc3450',
     slug: 'zebra-mc3450',
     name: 'Zebra MC3450',
-    seoTitle: 'Terminal mobilny Zebra MC3450 — 5G z klawiaturą i GPS',
-    seoDescription: 'Zebra MC3450 (MC345B) — terminal mobilny 5G z klawiaturą i GPS. MC3450 Zebra: Wi-Fi 6E, skaner 30 m, IP67, dual SIM. MC345B-3S1J52SS-A6 od 5 572 zł netto.',
+    seoTitle: 'Zebra MC3450 — kolektor danych 5G z klawiaturą i GPS | od 5 572 zł',
+    seoDescription: 'Zebra MC3450 (MC345B) — kolektor danych 5G z klawiaturą do logistyki terenowej, yard management i portów. Skaner SE58 do 30 m, IP67, GPS, dual SIM, Android 14→18. 23 konfiguracje od 5 572 zł netto.',
     shortDescription: 'Zebra MC3450 — terminal mobilny 5G z klawiaturą, Wi-Fi 6E, GPS, skaner do 30 m, IP65/IP67',
     description: `Dla kogo? Zebra MC3450 to wytrzymały terminal mobilny 5G nowej generacji z fizyczną klawiaturą, zaprojektowany dla operacji logistycznych wymagających łączności komórkowej poza zasięgiem Wi-Fi — yard management na placach kontenerowych, weryfikacja ładunków w portach, inwentaryzacja pojazdów na dużych placach, logistyka terenowa i zarządzanie dostawami last-mile.
 
@@ -13414,7 +13414,9 @@ Cztery opcje skanerów: SE4770 Standard Range (indoor/outdoor z celownikiem lase
 
 Podwójna klasa ochrony IP65/IP67 — pełna wodoodporność: deszcz, mycie pod bieżącą wodą, zanurzenie. Upadki z 2,4 m na beton, 4 000 cykli tumble z 1 m. Bateria 7 000 mAh z hot-swap — pełna zmiana 10–14 h. Android 14 z gwarancją aktualizacji do Android 18. Zebra Identity Guardian — biometryczne logowanie rozpoznawaniem twarzy.
 
-Pełna kompatybilność wsteczna z akcesoriami MC3300x i MC3400: baterie, stacje dokujące, ładowarki — migracja bez wymiany infrastruktury. Wersja wyłącznie Wi-Fi (bez 5G/GPS): Zebra MC3400. Pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, Enterprise Home Screen, LifeGuard™. Szczegółowa dokumentacja techniczna na zebra.com i serwis-zebry.pl.`,
+Pełna kompatybilność wsteczna z akcesoriami MC3300x i MC3400: baterie, stacje dokujące, ładowarki — migracja bez wymiany infrastruktury. Wersja wyłącznie Wi-Fi (bez 5G/GPS): Zebra MC3400. Pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, Enterprise Home Screen, LifeGuard™.
+
+Koszt posiadania (TCO): pełna kompatybilność wsteczna z akcesoriami MC3300x i MC3400 — baterie, stacje dokujące, ładowarki, holstery pasują bez zmian. Migracja z MC3300x na MC3450 nie wymaga wymiany infrastruktury ładowania — oszczędność do 40% kosztów wdrożenia w porównaniu z zakupem nowego ekosystemu. Android 14 z gwarancją aktualizacji do Android 18 (4 generacje) = minimum 10 lat wsparcia od Zebra LifeGuard™. Szczegółowa dokumentacja techniczna na zebra.com i serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -13508,6 +13510,10 @@ Pełna kompatybilność wsteczna z akcesoriami MC3300x i MC3400: baterie, stacje
       { question: 'Jaka bateria pasuje do MC3450?', answer: 'MC3450 używa tej samej baterii 7 000 mAh (25,2 Wh) co MC3400 i MC3300x — pełna kompatybilność. Technologia hot-swap pozwala na wymianę baterii bez wyłączania urządzenia. Pełna zmiana pracy: 10–14 godzin. Baterie PowerPrecision+ z chipem diagnostycznym: BTRY-MC33-70MA-01, BTRY-MC3X-70MA-01, BTRY-MC3X-7BLE-01 (z BLE Beacon).' },
       { question: 'Czy akcesoria MC3300x i MC3400 pasują do MC3450?', answer: 'Tak — pełna kompatybilność wsteczna. Baterie, stacje dokujące (1/4/5-gniazdowe), ładowarki baterii (4/20-gniazdowe), holstery, kable USB i zasilacze z serii MC3300x i MC3400 pasują do MC3450 bez żadnych zmian. Jedyne nowe akcesoria to obudowy gumowe MC34 (SG-MC34-RBTG-01 / SG-MC34-RBTS-01) i holster sztywny (SG-MC34-RDHLST-01).' },
       { question: 'Czym się różni MC3450 od Zebra TC58?', answer: 'MC3450 to terminal z fizyczną klawiaturą (29/38/47 klawiszy), ekranem 4" i 5G — do intensywnego wprowadzania danych w magazynie i terenie. TC58 to terminal dotykowy z ekranem 6" FHD, 5G i procesorem Qualcomm 6490. MC3450 wygrywa dzięki klawiaturze i skanerowi SE58 do 30,5 m. TC58 wygrywa ekranem dotykowym i nowszą platformą. MC3450 od 5 572 zł, TC58 od ~7 500 zł netto.' },
+      { question: 'Jaki system Android ma Zebra MC3450 i ile lat aktualizacji?', answer: 'MC3450 fabrycznie dostarcza Android 14 (GMS) z gwarancją aktualizacji do Android 18 w ramach Zebra LifeGuard™. To 4 generacje systemu i minimum 10 lat wsparcia bezpieczeństwa — najdłuższy cykl wsparcia w klasie terminali z klawiaturą. Aktualizacje LifeGuard™ obejmują łatki bezpieczeństwa, poprawki stabilności i nowe funkcje Mobility DNA. MC3450 obsługuje zarządzanie MDM (SOTI, VMware, Microsoft Intune) i Zebra StageNow do masowej konfiguracji.' },
+      { question: 'Gdzie serwisować Zebra MC3450 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne MC3450, wymiana ekranów, klawiatur, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 139 zł netto/3 lata) dostępna jest naprawa priorytetowa. Serwis obsługuje również starsze modele MC3400, MC3300x i MC3200 — migracja z pełnym wsparciem serwisowym.' },
+      { question: 'Co to jest Mobility DNA i DataWedge w Zebra MC3450?', answer: 'Mobility DNA to pakiet oprogramowania Zebra dołączony w cenie każdego MC3450. Kluczowe narzędzia: DataWedge — uniwersalny moduł skanowania integrujący się z każdą aplikacją WMS/ERP bez kodowania (konfiguracja przez profile), StageNow — masowe wdrożenie i konfiguracja urządzeń przez kody QR lub NFC, Device Tracker — lokalizacja zgubionych terminali na Wi-Fi lub 5G, Enterprise Home Screen — blokada urządzenia do wybranych aplikacji, LifeGuard™ — aktualizacje bezpieczeństwa przez 10+ lat. Mobility DNA eliminuje potrzebę zakupu dodatkowych licencji MDM.' },
+      { question: 'Którą klawiaturę wybrać do MC3450 — 29, 38 czy 47 klawiszy?', answer: '29 klawiszy (numeryczna) — szybkie wpisywanie liczb i ilości, gdy dane tekstowe wprowadzasz skanowaniem. 38 klawiszy (funkcyjna z kalkulatorem) — klawisze numeryczne + funkcyjne (Tab, Enter, strzałki); rekomendowana dla WMS i yard management. 47 klawiszy (alfanumeryczna A-Z) — pełna klawiatura, konieczna gdy operator ręcznie wpisuje kody tekstowe lub numery seryjne. Klawisze są 20% większe niż w MC3300x — łatwiejsze do obsługi w rękawicach. Najczęściej wybierana: 38-klawiszowa.' },
       { question: 'Jakie są alternatywy dla Zebra MC3450?', answer: 'W portfolio Zebra: MC3400 (identyczny bez 5G — tańszy o ~1 000 zł), TC58/TC58e (dotykowy 5G, większy ekran, bez klawiatury), MC9450 (klasa premium 5G, większy ekran, RFID opcja). Konkurencja: Honeywell CT37 (5G, Android), Datalogic Skorpio X5 (gun + 2D, IP65). MC3450 to jedyny terminal z klawiaturą i 5G w cenie poniżej 6 543 zł netto.' },
     ],
     applications: [
@@ -13539,6 +13545,8 @@ Pełna kompatybilność wsteczna z akcesoriami MC3300x i MC3400: baterie, stacje
     ],
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-mc3450/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa MC3400/MC3450 (EN)', type: 'datasheet', url: 'https://www.zebra.com/us/en/products/spec-sheets/mobile-computers/handheld/mc3400-mc3450.html', size: 'Online' },
+      { name: 'Strona produktu Zebra MC3450 (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc3400-series.html', size: 'Online' },
     ],
     servicePlans: [
       { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-MC34XX-3C00', duration: '3 lata', priceNetto: 1139.43 },
