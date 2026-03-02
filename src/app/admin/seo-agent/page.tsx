@@ -70,11 +70,12 @@ export default async function SeoAgentPage() {
       },
     }),
 
-    // SERP positions from latest report
+    // SERP positions — najnowsze per fraza (z rotacji grup)
+    // Distinct na keyword, sortowane po dacie desc → zawsze najświeższe dane
     latestReport
       ? prisma.seoSerpPosition.findMany({
-          where: { reportId: latestReport.id },
-          orderBy: { keyword: 'asc' },
+          orderBy: { createdAt: 'desc' },
+          distinct: ['keyword'],
           select: {
             keyword: true,
             keywordGroup: true,

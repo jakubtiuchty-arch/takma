@@ -497,7 +497,34 @@ function findPosition(results: SerperOrganicResult[], domain: string): number | 
 }
 
 // ---------------------------------------------------------------------------
-// Collect SERP positions for all keywords
+// Rotacja grup — max ~75 fraz per run (mieści się w timeout + budżet Serper)
+// Grupy rotowane codziennie. Przy 2 runach/tydzień = pełne pokrycie co ~2 tyg.
+// ---------------------------------------------------------------------------
+
+const GROUP_ROTATION: string[][] = [
+  // Batch 0 — Sun: brand + generyczne + long-tail (34 fraz)
+  ['brand', 'generyczne', 'long-tail'],
+  // Batch 1 — Mon: drukarki biurkowe + kart (42 fraz)
+  ['drukarki-biurkowe', 'drukarki-kart'],
+  // Batch 2 — Tue: drukarki przemysłowe + mobilne (54 fraz)
+  ['drukarki-przemyslowe', 'drukarki-mobilne'],
+  // Batch 3 — Wed: skanery Zebra (60 fraz)
+  ['skanery'],
+  // Batch 4 — Thu: skanery Newland + tablety (53 fraz)
+  ['skanery-newland', 'tablety'],
+  // Batch 5 — Fri: terminale Zebra (42 fraz)
+  ['terminale'],
+  // Batch 6 — Sat: terminale inne (Honeywell, Newland, Datalogic) (35 fraz)
+  ['terminale-honeywell', 'terminale-newland', 'terminale-datalogic'],
+]
+
+function getTodaysBatch(): string[] {
+  const dayOfWeek = new Date().getDay() // 0=Sun, 1=Mon, ...
+  return GROUP_ROTATION[dayOfWeek] || GROUP_ROTATION[0]
+}
+
+// ---------------------------------------------------------------------------
+// Collect SERP positions for today's keyword batch
 // ---------------------------------------------------------------------------
 
 export async function collectSERP(): Promise<SerpData> {
@@ -507,11 +534,14 @@ export async function collectSERP(): Promise<SerpData> {
     throw new Error('Brak SERPER_API_KEY')
   }
 
-  console.log(`[SERP] Start — ${TRACKED_KEYWORDS.length} fraz (Serper.dev)`)
+  const todayGroups = getTodaysBatch()
+  const todayKeywords = TRACKED_KEYWORDS.filter(kw => todayGroups.includes(kw.group))
+
+  console.log(`[SERP] Start — ${todayKeywords.length}/${TRACKED_KEYWORDS.length} fraz (grupy: ${todayGroups.join(', ')})`)
 
   const results: SerpKeywordResult[] = []
 
-  for (const { keyword, group } of TRACKED_KEYWORDS) {
+  for (const { keyword, group } of todayKeywords) {
     try {
       const organic = await querySerper(apiKey, keyword)
 
@@ -557,4 +587,13 @@ export async function collectSERP(): Promise<SerpData> {
     results,
     collectedAt: new Date().toISOString(),
   }
+}
+
+// Eksportuj listę wszystkich grup (dla dashboardu)
+export function getAllKeywordGroups(): string[] {
+  return Array.from(new Set(TRACKED_KEYWORDS.map(kw => kw.group)))
+}
+
+export function getTotalKeywordCount(): number {
+  return TRACKED_KEYWORDS.length
 }
