@@ -68,13 +68,18 @@ export async function middleware(request: NextRequest) {
       'honeywell-ct70-bateria-4775mah', 'honeywell-ct70-bateria-7692mah',
       'honeywell-ct70-stacja-dokujaca-display', 'honeywell-ct70-ladowarka-4-baterie',
       'honeywell-ct70-uchwyt-pistoletowy-booted', 'honeywell-ct70-uchwyt-pistoletowy',
-      'honeywell-ck67',
+      'honeywell-ck67', 'honeywell-ck62',
       'honeywell-ck67-bateria-7000mah', 'honeywell-ck67-obudowa-ochronna',
       'honeywell-ck67-uchwyt-pistoletowy', 'honeywell-ck67-stacja-ladowania-non-booted',
       'honeywell-ck67-stacja-ladowania-booted', 'honeywell-ck67-ladowarka-4-baterii',
       'honeywell-ck67-folia-ochronna', 'honeywell-ck67-kabura',
       'honeywell-ck67-charging-cup-booted', 'honeywell-ck67-charging-cup-nonbooted',
       'honeywell-ck67-bateria-cold-storage', 'honeywell-ck67-stacja-ladowania-4-gniazdowa',
+      // CK62 + akcesoria
+      'honeywell-ck62-uchwyt-pistoletowy', 'honeywell-ck62-stacja-ladowania-1-gniazdowa',
+      'honeywell-ck62-stacja-ladowania-4-gniazdowa', 'honeywell-ck62-stacja-ladowania-5-z-bateriami',
+      'honeywell-ck62-pasek-na-reke', 'honeywell-ck62-folia-ochronna',
+      'honeywell-ck6x-ladowarka-4-baterii', 'honeywell-ck6x-ladowarka-16-baterii',
       // RFID — usunięte
       // Skanery
       'zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds8178', 'zebra-li2208',
