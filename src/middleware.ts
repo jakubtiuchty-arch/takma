@@ -68,6 +68,12 @@ export async function middleware(request: NextRequest) {
       'honeywell-ct70-bateria-4775mah', 'honeywell-ct70-bateria-7692mah',
       'honeywell-ct70-stacja-dokujaca-display', 'honeywell-ct70-ladowarka-4-baterie',
       'honeywell-ct70-uchwyt-pistoletowy-booted', 'honeywell-ct70-uchwyt-pistoletowy',
+      'honeywell-ck67',
+      'honeywell-ck67-bateria-7000mah', 'honeywell-ck67-obudowa-ochronna',
+      'honeywell-ck67-uchwyt-pistoletowy', 'honeywell-ck67-stacja-ladowania-non-booted',
+      'honeywell-ck67-stacja-ladowania-booted', 'honeywell-ck67-ladowarka-4-baterii',
+      'honeywell-ck67-folia-ochronna', 'honeywell-ck67-kabura',
+      'honeywell-ck67-charging-cup-booted', 'honeywell-ck67-charging-cup-nonbooted',
       // RFID — usunięte
       // Skanery
       'zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds8178', 'zebra-li2208',

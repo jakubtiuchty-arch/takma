@@ -117,8 +117,8 @@ function extractAttribute(xml: string, tag: string, attr: string): string | null
 function toIngramItemId(partNumber: string): string {
   const upper = partNumber.toUpperCase()
   if (upper.startsWith('ZB') || upper.startsWith('SB') || upper.startsWith('N1') || upper.startsWith('ON')) return upper
-  // Honeywell products (CT70, CT32, EDA52 terminals and accessories, batteries 50xxx)
-  if (upper.startsWith('CT7') || upper.startsWith('CT3') || upper.startsWith('EDA') || upper.startsWith('501')) return 'ON' + upper
+  // Honeywell products (CT70, CT32, CK67, EDA52 terminals and accessories, batteries 50xxx)
+  if (upper.startsWith('CT7') || upper.startsWith('CT3') || upper.startsWith('CK') || upper.startsWith('EDA') || upper.startsWith('501')) return 'ON' + upper
   // Newland products (terminals N7-*, MT93-*, MT95-*, accessories NLS-*, TPUN7*, SPN7*, BTY7*, BTY-MT*, HS-MT*, SPMT*)
   if (upper.startsWith('N7-') || upper.startsWith('MT93') || upper.startsWith('MT95') || upper.startsWith('NLS-') || upper.startsWith('TPUN7') || upper.startsWith('SPN7') || upper.startsWith('BTY7') || upper.startsWith('BTY-MT') || upper.startsWith('HS-MT') || upper.startsWith('SPMT')) return 'N1' + upper
   // Symbol-heritage products (terminale mobilne, skanery, akcesoria mobilne)
