@@ -13009,8 +13009,8 @@ const mobileComputers: Product[] = [
     slug: 'zebra-mc3300x',
     name: 'Zebra MC3300x',
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc3300x-series.html',
-    seoTitle: 'Terminal mobilny Zebra MC3300x — klawiatura, skaner 21 m',
-    seoDescription: 'Zebra MC3300x (MC330L) — terminal mobilny z klawiaturą i skanerem 21 m. MC3300x Zebra: Gun/Straight Shooter, IP64. Kolektor danych MC330L-SL2EG4RW od 5 779 zł netto.',
+    seoTitle: 'Zebra MC3300x — kolektor danych / terminal mobilny z klawiaturą | od 5 779 zł',
+    seoDescription: 'Zebra MC3300x (MC330L) — kolektor danych z klawiaturą do magazynów i produkcji. Gun/Straight/Rotating, skaner SE4850 do 21 m, IP64, Android. 33 konfiguracje od 5 779 zł netto.',
     shortDescription: 'Zebra MC3300x — terminal mobilny z klawiaturą fizyczną i skanerem dalekiego zasięgu, do magazynów wysokiego składowania',
     description: `Dla kogo? Zebra MC3300x to wytrzymały terminal mobilny z fizyczną klawiaturą, zaprojektowany dla operatorów magazynów wysokiego składowania, centrów dystrybucyjnych, linii produkcyjnych i zakładów cross-dockingowych — wszędzie tam, gdzie szybkie wprowadzanie danych (numery partii, kody lokalizacji, ilości) wymaga klawiszy zamiast klawiatury ekranowej, a skanowanie kodów z górnych regałów (do 21 metrów) wymaga skanera dalekiego zasięgu.
 
@@ -13022,7 +13022,9 @@ Wybierz skaner według środowiska pracy: SE965 (laser 1D) do tradycyjnych kodó
 
 Konstrukcja IP64 z certyfikacją MIL-STD-810H: upadki z 1,8 m na beton, 500 upadków z 0,5 m w teście tumble, zakres temperatur od -20°C do +50°C. Wymienne baterie PowerPrecision+: 5 200 mAh (standard, ~10 h) lub 7 000 mAh (rozszerzona, ~14 h). Łączność Wi-Fi 802.11ac 2×2 MU-MIMO, Bluetooth 5.0, NFC.
 
-Pakiet Mobility DNA w cenie: DataWedge (skanowanie bez programowania), StageNow (masowa konfiguracja floty), Device Tracker (lokalizacja zgubionych terminali), LifeGuard™ (łatki bezpieczeństwa). Wersja dotykowa bez klawiatury: Zebra TC53. Szczegółowa dokumentacja techniczna na zebra.com i serwis-zebry.pl.`,
+Pakiet Mobility DNA w cenie: DataWedge (skanowanie bez programowania), StageNow (masowa konfiguracja floty), Device Tracker (lokalizacja zgubionych terminali), LifeGuard™ (łatki bezpieczeństwa). Wersja dotykowa bez klawiatury: Zebra TC53.
+
+Koszt posiadania (TCO): baterie PowerPrecision+, stacje dokujące, ładowarki i holstery MC3300x są w pełni kompatybilne z następcą MC3400 — migracja na nowszą generację nie wymaga wymiany infrastruktury ładowania. Inwestycja w akcesoria MC3300x chroni budżet przy przyszłym upgrade. MC3300x to jeden z najczęściej wdrażanych kolektorów danych Zebra w polskich magazynach — sprawdzona platforma z szeroką bazą akcesoriów i serwisem w Polsce (serwis-zebry.pl).`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -13135,7 +13137,10 @@ Pakiet Mobility DNA w cenie: DataWedge (skanowanie bez programowania), StageNow 
       { question: 'Jaki system Android obsługuje MC3300x?', answer: 'MC3300x pracuje pod kontrolą Android 11 z Google Mobile Services (GMS). Zebra zapewnia aktualizacje zabezpieczeń LifeGuard™ przez cały cykl życia produktu. Pakiet Mobility DNA Professional (DataWedge, StageNow, Device Tracker, Enterprise Browser) jest wliczony w cenę. Zarządzanie flotą przez MDM: SOTI, VMware Workspace ONE, Microsoft Intune, Zebra DNA Cloud.' },
       { question: 'Czy MC3300x ma kamerę?', answer: 'MC3300x jest dostępny w wariantach z kamerą tylną 13 MP i bez kamery. Warianty z kamerą identyfikujesz po Part Number: litery C (1D+kamera), A (2D+kamera), M (DPM+kamera), G (ER+kamera) w pozycji skanera. Kamera przydaje się do dokumentacji fotograficznej, OCR i skanowania dowodów dostawy. W większości zastosowań magazynowych kamera nie jest potrzebna.' },
       { question: 'Czym się różni MC3300x od Zebra TC53?', answer: 'MC3300x to terminal z fizyczną klawiaturą (29/38/47 klawiszy) i ekranem 4" WVGA, zaprojektowany do intensywnego wprowadzania danych w magazynie. TC53 to terminal dotykowy z ekranem 6" FHD+, procesorem Qualcomm 6490 i Wi-Fi 6E. MC3300x wygrywa w magazynach dzięki klawiaturze i skanerowi dalekiego zasięgu SE4850 (do 21 m). TC53 wygrywa ergonomią, ekranem i żywotnością platformy (do Android 16). MC3300x od 5 779 zł, TC53 od 6 418 zł netto.' },
-      { question: 'Jakie są alternatywy dla Zebra MC3300x?', answer: 'W portfolio Zebra: TC53/TC53e (dotykowy, Wi-Fi 6E, nowsza platforma Android), MC9300/MC9400 (klasa premium z klawiaturą, IP65/67). Konkurencja: Datalogic Skorpio X5 (klawiatura + 2D, IP65), Honeywell CK65 (klawiatura + ER, Android). MC3300x to optymalny wybór, gdy potrzebujesz fizycznej klawiatury w budżecie do 8 100 zł netto i nie wymagasz IP65+.' },
+      { question: 'Gdzie serwisować Zebra MC3300x w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne MC3300x, wymiana ekranów, klawiatur, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 095 zł netto/3 lata) dostępna jest naprawa priorytetowa. Serwis obsługuje również starsze modele MC3300, MC3200 i MC3190 — migracja na MC3400 z pełnym wsparciem serwisowym.' },
+      { question: 'Co to jest Mobility DNA i DataWedge w Zebra MC3300x?', answer: 'Mobility DNA to pakiet oprogramowania Zebra dołączony w cenie każdego MC3300x. Kluczowe narzędzia: DataWedge — uniwersalny moduł skanowania integrujący się z każdą aplikacją WMS/ERP bez kodowania (konfiguracja przez profile), StageNow — masowe wdrożenie i konfiguracja urządzeń przez kody QR lub NFC, Device Tracker — lokalizacja zgubionych terminali w sieci Wi-Fi, LifeGuard™ — aktualizacje bezpieczeństwa. Mobility DNA eliminuje potrzebę zakupu dodatkowych licencji MDM do podstawowego zarządzania flotą terminali.' },
+      { question: 'Czy akcesoria MC3300x pasują do MC3400?', answer: 'Tak — Zebra zaprojektowała MC3400 jako bezpośredniego następcę MC3300x z pełną kompatybilnością wsteczną. Baterie PowerPrecision+ (BTRY-MC33-52MA-01, BTRY-MC33-70MA-01), stacje dokujące (CRD-MC33-*), ładowarki baterii (SAC-MC33-*) i holstery pasują do obu modeli. Migracja z MC3300x na MC3400 nie wymaga wymiany infrastruktury ładowania — oszczędność do 40% kosztów wdrożenia.' },
+      { question: 'Jakie są alternatywy dla Zebra MC3300x?', answer: 'W portfolio Zebra: MC3400/MC3450 (następca z Wi-Fi 6E i Android 14→18), TC53/TC53e (dotykowy, Wi-Fi 6E, nowsza platforma Android), MC9400 (klasa ultra-rugged premium z 7 klawiaturami i IP68). Konkurencja: Datalogic Skorpio X5 (klawiatura + 2D, IP65), Honeywell CK65/CK67 (klawiatura + ER, Android). MC3300x to optymalny wybór, gdy potrzebujesz fizycznej klawiatury w budżecie do 8 100 zł netto i nie wymagasz IP65+.' },
     ],
     applications: [
       'Magazyn wysokiego składowania — skanowanie etykiet z regałów do 21 m',
@@ -13166,6 +13171,8 @@ Pakiet Mobility DNA w cenie: DataWedge (skanowanie bez programowania), StageNow 
     ],
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-mc3300x/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa MC3300x (EN)', type: 'datasheet', url: 'https://www.zebra.com/us/en/products/spec-sheets/mobile-computers/handheld/mc3300x.html', size: 'Online' },
+      { name: 'Strona produktu Zebra MC3300x (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc3300x-series.html', size: 'Online' },
     ],
     servicePlans: [
       { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-MC33XX-3C00', duration: '3 lata', priceNetto: 1095.13 },
