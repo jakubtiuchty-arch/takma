@@ -173,17 +173,17 @@ export default function GuidePage({ guide }: GuidePageProps) {
                 </nav>
                 <header className="container-main pt-6 pb-12">
                   <div className="max-w-4xl">
-                    <div className="flex items-center gap-3 mb-4">
+                    <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4">
                       <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-white/20 text-white backdrop-blur-sm">
                         {guideCategoryLabels[guide.category]}
                       </span>
                       <span className="text-sm text-white/70">{guide.readTime} czytania</span>
-                      <span className="text-sm text-white/40">|</span>
+                      <span className="text-sm text-white/40 hidden sm:inline">|</span>
                       <time className="text-sm text-white/70" dateTime={guide.updatedAt}>
                         Aktualizacja: {new Date(guide.updatedAt).toLocaleDateString('pl-PL', { year: 'numeric', month: 'long', day: 'numeric' })}
                       </time>
                     </div>
-                    <h1 className="text-3xl lg:text-4xl font-bold text-white leading-tight">
+                    <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">
                       {guide.title}
                     </h1>
                     <p className="mt-4 text-lg text-white/80 leading-relaxed">
@@ -208,17 +208,17 @@ export default function GuidePage({ guide }: GuidePageProps) {
             </nav>
             <header className="container-main pt-6 pb-8 border-b border-gray-100">
               <div className="max-w-4xl">
-                <div className="flex items-center gap-3 mb-4">
+                <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4">
                   <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-primary-100 text-primary-700">
                     {guideCategoryLabels[guide.category]}
                   </span>
                   <span className="text-sm text-gray-500">{guide.readTime} czytania</span>
-                  <span className="text-sm text-gray-400">|</span>
+                  <span className="text-sm text-gray-400 hidden sm:inline">|</span>
                   <time className="text-sm text-gray-500" dateTime={guide.updatedAt}>
                     Aktualizacja: {new Date(guide.updatedAt).toLocaleDateString('pl-PL', { year: 'numeric', month: 'long', day: 'numeric' })}
                   </time>
                 </div>
-                <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
                   {guide.title}
                 </h1>
                 <p className="mt-4 text-lg text-gray-600 leading-relaxed">
@@ -271,7 +271,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
                   <section key={section.id} id={section.id}>
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">{section.heading}</h2>
                     <div
-                      className="prose prose-gray max-w-none text-justify prose-headings:text-gray-900 prose-headings:text-left prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline prose-table:text-sm prose-th:bg-gray-50 prose-th:text-left prose-th:font-semibold prose-td:border-t prose-td:border-gray-100 prose-img:rounded-xl"
+                      className="prose prose-gray max-w-none sm:text-justify prose-headings:text-gray-900 prose-headings:text-left prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline prose-table:text-sm prose-th:bg-gray-50 prose-th:text-left prose-th:font-semibold prose-td:border-t prose-td:border-gray-100 prose-img:rounded-xl [&_table]:block [&_table]:overflow-x-auto [&_table]:whitespace-nowrap sm:[&_table]:whitespace-normal [&_table]:-mx-4 sm:[&_table]:mx-0 [&_table]:px-4 sm:[&_table]:px-0"
                       dangerouslySetInnerHTML={{ __html: boldifyModels(section.content) }}
                     />
                   </section>
