@@ -228,11 +228,15 @@ export default async function ProductPage({ params }: ProductPageProps) {
     ...(relatedProductsForSchema.length > 0 ? { isRelatedTo: relatedProductsForSchema } : {}),
     ...(product.gtin13 ? { gtin13: product.gtin13 } : {}),
     offers: product.variants && product.variants.length > 0
-      ? {
-          '@type': 'AggregateOffer',
+      ? (() => {
+          const variantPrices = product.variants.filter((v) => v.priceFrom).map((v) => v.priceFrom!)
+          const lowPrice = variantPrices.length > 0 ? Math.min(...variantPrices) : product.priceFrom
+          const highPrice = variantPrices.length > 0 ? Math.max(...variantPrices) : product.priceFrom
+          return {
+          '@type': 'AggregateOffer' as const,
           url: `https://www.takma.com.pl/produkt/${product.slug}`,
-          lowPrice: Math.min(...product.variants.filter((v) => v.priceFrom).map((v) => v.priceFrom!)).toFixed(2),
-          highPrice: Math.max(...product.variants.filter((v) => v.priceFrom).map((v) => v.priceFrom!)).toFixed(2),
+          ...(lowPrice ? { lowPrice: lowPrice.toFixed(2) } : {}),
+          ...(highPrice ? { highPrice: highPrice.toFixed(2) } : {}),
           priceCurrency: 'PLN',
           offerCount: product.variants.length,
           availability: availabilitySchemaMap[product.availability],
@@ -250,6 +254,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             seller: sellerOrg,
           })),
         }
+        })()
       : product.priceFrom
         ? {
             '@type': 'Offer',
