@@ -90,6 +90,7 @@ const navigation: NavItem[] = [
       { name: 'Przewodnik po drukarkach Zebra', href: '/poradnik/drukarki-etykiet-zebra-przewodnik' },
       { name: 'Jak wybrać terminal mobilny', href: '/poradnik/jak-wybrac-terminal-mobilny' },
       { name: 'TOP 10 terminali mobilnych 2026', href: '/poradnik/top-10-terminali-mobilnych-2026' },
+      { name: 'Zebra vs Honeywell — porównanie', href: '/poradnik/zebra-vs-honeywell-terminale-mobilne' },
     ],
   },
   {

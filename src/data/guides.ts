@@ -2610,6 +2610,403 @@ export const guides: Guide[] = [
     { title: 'Wszystkie terminale mobilne', href: '/terminale-mobilne' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]
+},
+// ============================================
+// PORADNIK 6: Zebra vs Honeywell — porównanie terminali mobilnych 2026
+// ============================================
+{
+  slug: 'zebra-vs-honeywell-terminale-mobilne',
+  title: 'Zebra vs Honeywell — porównanie terminali mobilnych 2026',
+  seoTitle: 'Zebra vs Honeywell — porównanie terminali mobilnych 2026',
+  seoDescription: 'Zebra vs Honeywell — szczegółowe porównanie terminali mobilnych 2026: TC22 vs CT32, TC53 vs CT47, MC9400 vs CK67. Ceny, specyfikacje, TCO, serwis w Polsce. Obiektywny przewodnik od autoryzowanego partnera.',
+  excerpt: 'Który producent terminali mobilnych wybrać w 2026 roku — Zebra Technologies czy Honeywell? Porównanie 5 par modeli z cenami netto, analizą TCO i rekomendacjami wg branży. Pierwszy tak szczegółowy poradnik w języku polskim.',
+  category: 'porownanie' as const,
+  tags: ['terminale-mobilne', 'porownanie', 'zebra', 'honeywell', 'ranking', 'tco'],
+  publishedAt: '2026-03-02',
+  updatedAt: '2026-03-02',
+  readTime: '18 min',
+  sections: [
+    {
+      id: 'podsumowanie',
+      heading: 'Zebra vs Honeywell — kto wygrywa w 2026 roku?',
+      content: `<p><strong>Zebra Technologies i Honeywell to dwaj najwięksi producenci terminali mobilnych na świecie — łącznie kontrolują ponad 70% globalnego rynku enterprise mobility (dane VDC Research 2025).</strong> Zebra (~45% udziału) dominuje w segmencie magazynowym i logistycznym, oferując najdłuższe wsparcie Android (do 10 lat LifeGuard™) i najszerszy ekosystem akcesoriów. Honeywell (~25% udziału) odpowiada innowacjami — jako pierwszy wprowadził Wi-Fi 7 i Bluetooth 6.0 do terminali enterprise (model CT70).</p>
+
+<p>Poniższa tabela pokazuje, który producent wygrywa w kluczowych kategoriach — na podstawie naszego doświadczenia z ponad 500 wdrożeń terminali mobilnych w polskich firmach:</p>
+
+<table>
+<thead><tr><th>Kryterium</th><th>Zebra Technologies</th><th>Honeywell</th><th>Wygrywa</th></tr></thead>
+<tbody>
+<tr><td><strong>Wsparcie Android</strong></td><td>Do 10 lat (LifeGuard™)</td><td>5–7 lat (Sentinel)</td><td>Zebra</td></tr>
+<tr><td><strong>Cena entry-level</strong></td><td>od 2 417 zł (TC22)</td><td>od 3 389 zł (CT32)</td><td>Zebra</td></tr>
+<tr><td><strong>Najnowsza łączność</strong></td><td>Wi-Fi 6E, BT 5.3</td><td>Wi-Fi 7, BT 6.0 (CT70)</td><td>Honeywell</td></tr>
+<tr><td><strong>Skaner dalekiego zasięgu</strong></td><td>SE58: do 30 m</td><td>FlexRange XLR: do 24 m</td><td>Zebra</td></tr>
+<tr><td><strong>Waga terminala gun</strong></td><td>765 g (MC9400)</td><td>508 g (CK67)</td><td>Honeywell</td></tr>
+<tr><td><strong>Ekosystem akcesoriów</strong></td><td>Najszerszy na rynku</td><td>Szeroki, kompatybilność wsteczna</td><td>Zebra</td></tr>
+<tr><td><strong>Serwis w Polsce</strong></td><td>Autoryzowany serwis (serwis-zebry.pl)</td><td>Serwis przez dystrybutorów</td><td>Zebra</td></tr>
+<tr><td><strong>Platforma zarządzania</strong></td><td>Mobility DNA (DataWedge, StageNow)</td><td>Mobility Edge (Operational Intelligence)</td><td>Remis</td></tr>
+</tbody>
+</table>
+
+<p>W dalszej części artykułu porównujemy 5 par bezpośrednich konkurentów model vs model — z cenami netto PLN, specyfikacjami technicznymi i rekomendacjami „wybierz, jeśli…". Wszystkie ceny są aktualne na marzec 2026 roku i pochodzą z naszej oferty hurtowej.</p>`
+    },
+    {
+      id: 'producenci',
+      heading: 'Zebra Technologies vs Honeywell — kim są producenci?',
+      content: `<p><strong>Zebra Technologies to wyspecjalizowany producent rozwiązań AutoID z siedzibą w Lincolnshire (Illinois, USA), notowany na NASDAQ.</strong> Zebra koncentruje się wyłącznie na segmencie enterprise asset intelligence — terminale mobilne, skanery kodów, drukarki etykiet, RFID, oprogramowanie do zarządzania flotą. Według danych VDC Research, Zebra posiada około 45% globalnego rynku terminali mobilnych, co czyni ją niekwestionowanym liderem.</p>
+
+<h3>Zebra Technologies — kluczowe fakty</h3>
+<ul>
+<li><strong>Specjalizacja</strong>: 100% AutoID i enterprise mobility — terminale, skanery, drukarki etykiet, RFID</li>
+<li><strong>Wsparcie Android</strong>: LifeGuard™ for Android — do 10 lat comiesięcznych łatek bezpieczeństwa OTA</li>
+<li><strong>Oprogramowanie</strong>: Mobility DNA (DataWedge, StageNow, Device Tracker, Enterprise Home Screen, Workforce Connect)</li>
+<li><strong>Serwis w Polsce</strong>: autoryzowany serwis przez <a href="https://www.serwis-zebry.pl/serwis-terminali-zebra">serwis-zebry.pl</a> — naprawy na poziomie komponentów</li>
+<li><strong>Certyfikat partnera</strong>: TAKMA jest Autoryzowanym Partnerem Zebra Technologies</li>
+</ul>
+
+<p><strong>Honeywell to globalny konglomerat technologiczny z siedzibą w Charlotte (Karolina Północna, USA), notowany na NYSE.</strong> Honeywell produkuje terminale mobilne w ramach dywizji Productivity Solutions (dawniej Intermec + Honeywell Scanning & Mobility). Firma posiada około 25% globalnego rynku terminali mobilnych i jest głównym rywalem Zebry we wszystkich segmentach — od entry-level po ultra-rugged.</p>
+
+<h3>Honeywell — kluczowe fakty</h3>
+<ul>
+<li><strong>Specjalizacja</strong>: szeroki konglomerat (lotnictwo, automatyka budynkowa, przemysł, mobility solutions)</li>
+<li><strong>Wsparcie Android</strong>: Honeywell Sentinel — 5–7 lat wsparcia (np. Android 14→18 w CT32, Android 15→19 w CT70)</li>
+<li><strong>Oprogramowanie</strong>: Mobility Edge (Operational Intelligence, SmartTalk, Enterprise Provisioner, Honeywell Launcher)</li>
+<li><strong>Serwis w Polsce</strong>: serwis przez autoryzowanych dystrybutorów</li>
+<li><strong>Innowacje</strong>: pierwszy terminal enterprise z Wi-Fi 7 i BT 6.0 (Honeywell CT70, 2025)</li>
+</ul>
+
+<p>Kluczowa różnica: <strong>Zebra to firma w 100% skoncentrowana na AutoID</strong> — każdy dział (R&D, wsparcie, serwis) pracuje wyłącznie nad rozwiązaniami do automatycznej identyfikacji. Honeywell to konglomerat z wieloma dywizjami — dział mobility solutions jest jednym z wielu. W praktyce oznacza to, że ekosystem Zebra (akcesoria, oprogramowanie, integracje) jest głębszy, a wsparcie Android dłuższe (do 10 lat vs 5–7 lat).</p>`
+    },
+    {
+      id: 'modele',
+      heading: 'Porównanie modeli: 5 par Zebra vs Honeywell',
+      content: `<p><strong>Poniżej porównujemy 5 par terminali mobilnych — po jednym z każdego segmentu rynkowego.</strong> Każde porównanie zawiera tabelę specyfikacji, ceny netto PLN z naszej oferty hurtowej (marzec 2026) oraz rekomendację „wybierz, jeśli…".</p>
+
+<h3>1. Entry-level: Zebra TC22 vs Honeywell CT32</h3>
+
+<p><strong>Zebra TC22 (od 2 417 zł netto) to najtańszy terminal enterprise na rynku polskim, podczas gdy Honeywell CT32 (od 3 389 zł netto) oferuje nowszą łączność Wi-Fi 6E w standardzie.</strong> Oba urządzenia są następcami popularnych modeli (TC21 i EDA52) i celują w retail, lekki magazyn i healthcare.</p>
+
+<table>
+<thead><tr><th>Parametr</th><th>Zebra TC22</th><th>Honeywell CT32</th></tr></thead>
+<tbody>
+<tr><td><strong>Cena od (netto PLN)</strong></td><td>2 417 zł</td><td>3 389 zł</td></tr>
+<tr><td><strong>Procesor</strong></td><td>Qualcomm 5430, 2,1 GHz</td><td>Qualcomm QCS4490, 2,4 GHz</td></tr>
+<tr><td><strong>Ekran</strong></td><td>6" FHD+ (1080×2160)</td><td>6" FHD (1080×2160)</td></tr>
+<tr><td><strong>RAM / Flash</strong></td><td>6–8 GB / 64–128 GB</td><td>6–8 GB / 128 GB</td></tr>
+<tr><td><strong>Skaner</strong></td><td>SE4710 (35 cm) / SE55 (7,6 m)</td><td>S0703 SR / S0803 FlexRange (11 m)</td></tr>
+<tr><td><strong>Wi-Fi</strong></td><td>Wi-Fi 6/6E</td><td>Wi-Fi 6E</td></tr>
+<tr><td><strong>5G</strong></td><td>Nie (patrz TC27)</td><td>Opcjonalnie (CT32 X1N)</td></tr>
+<tr><td><strong>Bateria</strong></td><td>3 800 / 5 200 mAh, hot-swap</td><td>4 000 mAh</td></tr>
+<tr><td><strong>Odporność</strong></td><td>IP68, upadki 1,5 m, MIL-STD</td><td>IP65/68, upadki 1,8 m (z bootem)</td></tr>
+<tr><td><strong>Waga</strong></td><td>236 g</td><td>269 g</td></tr>
+<tr><td><strong>Android</strong></td><td>do Android 16</td><td>Android 14→18</td></tr>
+<tr><td><strong>Wsparcie LifeGuard/Sentinel</strong></td><td>Do 10 lat</td><td>5 lat (do Android 18)</td></tr>
+</tbody>
+</table>
+
+<p><strong>Wybierz <a href="/produkt/zebra-tc22">Zebra TC22</a>, jeśli:</strong> zależy Ci na najniższej cenie wejścia (2 417 zł vs 3 389 zł), najdłuższym wsparciu Android (do 10 lat LifeGuard) i dostępie do autoryzowanego serwisu Zebra w Polsce.</p>
+
+<p><strong>Wybierz <a href="/produkt/honeywell-ct32">Honeywell CT32</a>, jeśli:</strong> potrzebujesz 5G + GPS w tej samej obudowie (wariant X1N), cenisz kompatybilność z akcesoriami EDA52 lub preferujesz skaner FlexRange S0803 z zasięgiem do 11 m.</p>
+
+<h3>2. Mid-range: Zebra TC53 vs Honeywell CT47</h3>
+
+<p><strong>Zebra TC53 (od 6 418 zł netto) to flagowy terminal dotykowy Zebry z procesorem Qualcomm 6490, podczas gdy Honeywell CT47 (od 7 901 zł netto) oferuje kompaktowy format 5,5" z dropem 3,0 m i skaner FlexRange XLR do 24 m.</strong></p>
+
+<table>
+<thead><tr><th>Parametr</th><th>Zebra TC53</th><th>Honeywell CT47</th></tr></thead>
+<tbody>
+<tr><td><strong>Cena od (netto PLN)</strong></td><td>6 418 zł</td><td>7 901 zł</td></tr>
+<tr><td><strong>Procesor</strong></td><td>Qualcomm 6490, 2,7 GHz</td><td>Qualcomm 6490, 2,7 GHz</td></tr>
+<tr><td><strong>Ekran</strong></td><td>6" FHD (1080×2160), 600 nit</td><td>5,5" FHD (2160×1080), 550 nit</td></tr>
+<tr><td><strong>RAM / Flash</strong></td><td>4–8 GB / 64–128 GB</td><td>6–8 GB / 128 GB</td></tr>
+<tr><td><strong>Skaner</strong></td><td>SE4720 / SE55 (do 12 m)</td><td>S0703 / FlexRange / XLR (do 24 m)</td></tr>
+<tr><td><strong>Wi-Fi</strong></td><td>Wi-Fi 6E (triband)</td><td>Wi-Fi 6E (triband)</td></tr>
+<tr><td><strong>5G</strong></td><td>Nie (patrz TC58)</td><td>Opcjonalnie (wariant X1N)</td></tr>
+<tr><td><strong>Bateria</strong></td><td>4 680 / 7 000 mAh, warm/hot swap</td><td>4 775 / 7 692 mAh, hot-swap</td></tr>
+<tr><td><strong>Odporność</strong></td><td>IP68, upadki 1,8 m, MIL-STD</td><td>IP65/68, upadki 3,0 m (z bootem)</td></tr>
+<tr><td><strong>Waga</strong></td><td>293 g</td><td>314 g</td></tr>
+<tr><td><strong>Android</strong></td><td>do Android 16</td><td>Mobility Edge (wieloletnie)</td></tr>
+</tbody>
+</table>
+
+<p><strong>Wybierz <a href="/produkt/zebra-tc53">Zebra TC53</a>, jeśli:</strong> cenisz większy ekran 6", niższą cenę (o ~1 500 zł taniej), ekosystem Mobility DNA z DataWedge i wspólne baterie z TC58/TC73/TC78.</p>
+
+<p><strong>Wybierz <a href="/produkt/honeywell-ct47">Honeywell CT47</a>, jeśli:</strong> potrzebujesz skanera dalekiego zasięgu FlexRange XLR (24 m) w kompaktowej obudowie dotykowej, 5G w jednym urządzeniu (bez osobnego modelu) lub wyższej odporności na upadki (3,0 m z bootem).</p>
+
+<h3>3. Gun warehouse: Zebra MC3400 vs Honeywell CK62</h3>
+
+<p><strong>Zebra MC3400 (od 4 561 zł netto) to następca bestsellerowego MC3300x z skanerem SE58 do 30 m, podczas gdy Honeywell CK62 (od 5 759 zł netto) to nowy, lekki terminal gun z FlexRange XLR do 24 m i współdzieloną baterią z CK67.</strong></p>
+
+<table>
+<thead><tr><th>Parametr</th><th>Zebra MC3400</th><th>Honeywell CK62</th></tr></thead>
+<tbody>
+<tr><td><strong>Cena od (netto PLN)</strong></td><td>4 561 zł</td><td>5 759 zł</td></tr>
+<tr><td><strong>Procesor</strong></td><td>Qualcomm QCS4490, 2,4 GHz</td><td>Qualcomm QCS4490, 2,4 GHz</td></tr>
+<tr><td><strong>Ekran</strong></td><td>4" WVGA (800×480)</td><td>4" WVGA (800×480)</td></tr>
+<tr><td><strong>RAM / Flash</strong></td><td>4–6 GB / 64–128 GB</td><td>6 GB / 128 GB</td></tr>
+<tr><td><strong>Klawiatury</strong></td><td>29 / 38 / 47 klawiszy</td><td>38 / 47 klawiszy</td></tr>
+<tr><td><strong>Skaner max.</strong></td><td>SE58 Extended Range (do 30 m)</td><td>FlexRange XLR (do 24 m)</td></tr>
+<tr><td><strong>Wi-Fi</strong></td><td>Wi-Fi 6E</td><td>Wi-Fi 6E</td></tr>
+<tr><td><strong>5G</strong></td><td>Nie (patrz MC3450)</td><td>Nie</td></tr>
+<tr><td><strong>Bateria</strong></td><td>7 000 mAh, hot-swap</td><td>7 000 mAh, hot-swap (CK67-BTSC)</td></tr>
+<tr><td><strong>Odporność</strong></td><td>IP65/67, upadki 2,4 m, 4 000 tumble</td><td>IP65/67, upadki 2,4 m, 3 000 tumble</td></tr>
+<tr><td><strong>Waga</strong></td><td>~540 g (z baterią)</td><td>440 g</td></tr>
+<tr><td><strong>Android</strong></td><td>do Android 18</td><td>Android 14→18</td></tr>
+</tbody>
+</table>
+
+<p><strong>Wybierz <a href="/produkt/zebra-mc3400">Zebra MC3400</a>, jeśli:</strong> potrzebujesz skanera SE58 o zasięgu 30 m (najdalszy na rynku), niższej ceny wejścia (o ~1 200 zł taniej), kompatybilności wstecznej z akcesoriami MC3300x lub wariantu 5G (MC3450).</p>
+
+<p><strong>Wybierz <a href="/produkt/honeywell-ck62">Honeywell CK62</a>, jeśli:</strong> priorytetem jest niska waga (440 g — o 100 g lżejszy), współdzielona bateria i infrastruktura ładowania z CK67, lub planujesz mieszaną flotę CK62+CK67 na jednym ekosystemie akcesoriów.</p>
+
+<h3>4. Ultra-rugged gun: Zebra MC9400 vs Honeywell CK67</h3>
+
+<p><strong>Zebra MC9400 (od 7 638 zł netto) to flagowy ultra-rugged terminal z 7 wymiennymi klawiaturami i skanerem SE58 do 30 m, podczas gdy Honeywell CK67 (od 7 778 zł netto) oferuje lżejszą konstrukcję (508 g vs 765 g) i dłuższy czas pracy baterii (28 h vs 17 h).</strong></p>
+
+<table>
+<thead><tr><th>Parametr</th><th>Zebra MC9400</th><th>Honeywell CK67</th></tr></thead>
+<tbody>
+<tr><td><strong>Cena od (netto PLN)</strong></td><td>7 638 zł</td><td>7 778 zł</td></tr>
+<tr><td><strong>Procesor</strong></td><td>Qualcomm QCS4490, 2,4 GHz</td><td>Qualcomm QCS4490, 2,4 GHz</td></tr>
+<tr><td><strong>Ekran</strong></td><td>4,3" WVGA (800×480), 600 nit</td><td>4,3" WVGA (800×480)</td></tr>
+<tr><td><strong>RAM / Flash</strong></td><td>6 GB / 128 GB</td><td>6 GB / 128 GB</td></tr>
+<tr><td><strong>Klawiatury</strong></td><td>7 wariantów (29–58 kl.), hot-swap</td><td>5 wariantów (30–53 kl.)</td></tr>
+<tr><td><strong>Skaner max.</strong></td><td>SE58 Extended Range (do 30 m)</td><td>FlexRange XLR (do 24 m)</td></tr>
+<tr><td><strong>Wi-Fi</strong></td><td>Wi-Fi 6E</td><td>Wi-Fi 6E</td></tr>
+<tr><td><strong>5G</strong></td><td>Nie (patrz MC9450)</td><td>Opcjonalnie (X1N)</td></tr>
+<tr><td><strong>Bateria</strong></td><td>7 000 mAh, warm-swap</td><td>7 000 mAh, hot-swap</td></tr>
+<tr><td><strong>Czas pracy</strong></td><td>~17 h</td><td>~28 h (deklarowany)</td></tr>
+<tr><td><strong>Odporność</strong></td><td>IP65/68, upadki 3,65 m, 6 000 tumble</td><td>IP65/68, upadki 2,4 m, 4 000 tumble</td></tr>
+<tr><td><strong>Waga</strong></td><td>765 g</td><td>508 g</td></tr>
+<tr><td><strong>Mroźnia</strong></td><td>Do -30°C (bateria freezer)</td><td>Do -30°C (wersja Cold Storage)</td></tr>
+<tr><td><strong>Android</strong></td><td>do Android 17</td><td>Android 14→18</td></tr>
+</tbody>
+</table>
+
+<p><strong>Wybierz <a href="/produkt/zebra-mc9400">Zebra MC9400</a>, jeśli:</strong> potrzebujesz najdalszego zasięgu skanera (SE58, 30 m), najwyższej odporności na upadki (3,65 m — rekord w klasie), 7 wymiennych klawiatur lub ekosystemu Mobility DNA z DataWedge.</p>
+
+<p><strong>Wybierz <a href="/produkt/honeywell-ck67">Honeywell CK67</a>, jeśli:</strong> priorytetem jest niska waga (-257 g lżejszy), dłuższy czas pracy na baterii (28 h vs 17 h), potrzebujesz 5G w terminalu gun (CK67 X1N) lub planujesz flotę z CK62 na wspólnych bateriach i ładowarkach.</p>
+
+<h3>5. Premium touch: Zebra TC78 vs Honeywell CT70</h3>
+
+<p><strong>Honeywell CT70 (od 6 383 zł netto) to pierwszy terminal enterprise z Wi-Fi 7 i Bluetooth 6.0, podczas gdy Zebra TC78 (od 7 742 zł netto) oferuje najwyższą odporność na upadki w klasie dotykowej (3,05 m) i współdzielone baterie z TC53/TC58/TC73.</strong></p>
+
+<table>
+<thead><tr><th>Parametr</th><th>Zebra TC78</th><th>Honeywell CT70</th></tr></thead>
+<tbody>
+<tr><td><strong>Cena od (netto PLN)</strong></td><td>7 742 zł</td><td>6 383 zł</td></tr>
+<tr><td><strong>Procesor</strong></td><td>Qualcomm 6490, 2,7 GHz</td><td>Qualcomm QCM6690, 2,9 GHz + NPU</td></tr>
+<tr><td><strong>Ekran</strong></td><td>6" FHD+ (1080×2160)</td><td>6" FHD+ (1080×2340)</td></tr>
+<tr><td><strong>RAM / Flash</strong></td><td>4–8 GB / 64–128 GB</td><td>8 GB / 128 GB</td></tr>
+<tr><td><strong>Skaner</strong></td><td>SE4770 / SE55 (do 12 m)</td><td>S0703 SR / FlexRange (5 m)</td></tr>
+<tr><td><strong>Wi-Fi</strong></td><td>Wi-Fi 6E (802.11ax)</td><td>Wi-Fi 7 (802.11be)</td></tr>
+<tr><td><strong>5G</strong></td><td>Tak (dual SIM, GPS)</td><td>Opcjonalnie (X1N)</td></tr>
+<tr><td><strong>Bateria</strong></td><td>4 680 / 7 000 mAh, warm swap</td><td>4 000 / 6 400 mAh</td></tr>
+<tr><td><strong>Qi (bezprzewodowe)</strong></td><td>Opcjonalnie (wariant Premium)</td><td>Tak, w standardzie</td></tr>
+<tr><td><strong>Odporność</strong></td><td>IP68, upadki 3,05 m, 2 000 tumble</td><td>IP65/68, upadki 2,4 m (z bootem)</td></tr>
+<tr><td><strong>Waga</strong></td><td>349 g</td><td>~320 g</td></tr>
+<tr><td><strong>AI / NPU</strong></td><td>Nie</td><td>Tak (Qualcomm AI Engine)</td></tr>
+<tr><td><strong>Android</strong></td><td>do Android 16</td><td>Android 15→19</td></tr>
+</tbody>
+</table>
+
+<p><strong>Wybierz <a href="/produkt/zebra-tc78">Zebra TC78</a>, jeśli:</strong> potrzebujesz najwyższej odporności na upadki w klasie dotykowej (3,05 m na beton), wspólnego pool baterii z TC53/TC58/TC73 i 5G w standardzie (każdy wariant).</p>
+
+<p><strong>Wybierz <a href="/produkt/honeywell-ct70">Honeywell CT70</a>, jeśli:</strong> inwestujesz w infrastrukturę Wi-Fi 7 (przyszłościowe), cenisz wbudowany NPU do AI na krawędzi, niższą cenę wejścia (o ~1 350 zł taniej) i ładowanie bezprzewodowe Qi w standardzie.</p>`
+    },
+    {
+      id: 'ekosystemy',
+      heading: 'Porównanie ekosystemów: Mobility DNA vs Mobility Edge',
+      content: `<p><strong>Ekosystem oprogramowania to jeden z kluczowych czynników przy wyborze producenta terminali mobilnych — decyduje o kosztach wdrożenia, utrzymania i migracji w perspektywie 5–10 lat.</strong> Zebra i Honeywell oferują własne platformy, które różnią się podejściem do zarządzania flotą, aktualizacji i integracji.</p>
+
+<h3>Zebra Mobility DNA</h3>
+<p>Mobility DNA to zestaw narzędzi dołączanych do każdego terminala Zebra bez dodatkowych opłat:</p>
+<ul>
+<li><strong>DataWedge</strong> — skanowanie kodów bez programowania, automatyczna integracja z dowolną aplikacją Android (WMS, ERP, POS). Konfiguracja przez profile — zmiana symbologii, prefiksu/sufiksu bez modyfikacji kodu aplikacji.</li>
+<li><strong>StageNow</strong> — masowa konfiguracja floty: od setek do tysięcy terminali z jednego punktu (barcode staging, NFC staging, cloud staging). Średni czas konfiguracji jednego urządzenia: &lt;60 sekund.</li>
+<li><strong>LifeGuard™ for Android</strong> — comiesięczne łatki bezpieczeństwa OTA. Do 10 lat wsparcia — najdłuższy okres na rynku terminali mobilnych.</li>
+<li><strong>Device Tracker</strong> — lokalizacja zagubionych/skradzionych terminali na planie magazynu (BLE, Wi-Fi, GPS).</li>
+<li><strong>Enterprise Home Screen</strong> — blokowanie terminala do konkretnych aplikacji (kiosk mode), bez MDM.</li>
+</ul>
+
+<h3>Honeywell Mobility Edge</h3>
+<p>Mobility Edge to platforma sprzętowo-programowa gwarantująca wspólny BSP (Board Support Package) dla całej floty Honeywell:</p>
+<ul>
+<li><strong>Operational Intelligence</strong> — dashboard monitorujący stan urządzeń, baterii, sieci i aplikacji w czasie rzeczywistym. Alertowanie proaktywne (np. „bateria poniżej 30% zdrowia — zamów wymianę").</li>
+<li><strong>SmartTalk</strong> — komunikacja Push-to-Talk i Unified Communications bezpośrednio na terminalu.</li>
+<li><strong>Enterprise Provisioner</strong> — zero-touch enrollment i masowe wdrożenia (Android Zero-Touch, Samsung Knox).</li>
+<li><strong>Honeywell Sentinel</strong> — 5–7 lat wsparcia Android z łatkami bezpieczeństwa.</li>
+<li><strong>Wspólny BSP</strong> — ta sama wersja Android i łatki na wszystkich modelach Mobility Edge (CT32, CT47, CK62, CK67, CT70). Ułatwia zarządzanie flotą mieszaną.</li>
+</ul>
+
+<h3>Porównanie platform</h3>
+<table>
+<thead><tr><th>Funkcja</th><th>Zebra Mobility DNA</th><th>Honeywell Mobility Edge</th></tr></thead>
+<tbody>
+<tr><td><strong>Skanowanie bez kodu</strong></td><td>DataWedge (zaawansowany)</td><td>Honeywell SDK (wymaga konfiguracji)</td></tr>
+<tr><td><strong>Masowe wdrożenie</strong></td><td>StageNow (NFC/barcode/cloud)</td><td>Enterprise Provisioner + Zero-Touch</td></tr>
+<tr><td><strong>Wsparcie Android</strong></td><td>Do 10 lat (LifeGuard)</td><td>5–7 lat (Sentinel)</td></tr>
+<tr><td><strong>Monitoring floty</strong></td><td>DNA Cloud + Device Tracker</td><td>Operational Intelligence</td></tr>
+<tr><td><strong>Komunikacja PTT</strong></td><td>Workforce Connect (opcja)</td><td>SmartTalk (w cenie)</td></tr>
+<tr><td><strong>Wspólny BSP</strong></td><td>Nie (różne BSP per seria)</td><td>Tak (wspólny BSP Mobility Edge)</td></tr>
+<tr><td><strong>MDM</strong></td><td>SOTI, VMware, Intune, DNA Cloud</td><td>SOTI, Ivanti, VMware, Intune</td></tr>
+</tbody>
+</table>
+
+<p><strong>Werdykt:</strong> Zebra Mobility DNA wygrywa głębokością integracji (DataWedge jest de facto standardem branżowym) i długością wsparcia (10 lat). Honeywell Mobility Edge wygrywa wspólnym BSP dla całej floty i bardziej rozbudowanym dashboardem monitoringu (Operational Intelligence). Dla firm z flotą mieszaną wielu modeli Honeywell może być łatwiejszy w zarządzaniu.</p>`
+    },
+    {
+      id: 'tco',
+      heading: 'Całkowity koszt posiadania (TCO) — porównanie 5-letnie',
+      content: `<p><strong>Cena zakupu terminala to zaledwie 30–40% całkowitego kosztu posiadania (TCO) w perspektywie 5 lat.</strong> Reszta to serwis, wymiana baterii, akcesoria, wsparcie oprogramowania i ewentualna wymiana urządzenia. Poniżej porównujemy szacunkowe TCO dla pary mid-range: Zebra TC53 vs Honeywell CT47.</p>
+
+<h3>Szacunkowe TCO 5-letnie: TC53 vs CT47 (1 urządzenie)</h3>
+
+<table>
+<thead><tr><th>Składnik kosztu</th><th>Zebra TC53</th><th>Honeywell CT47</th></tr></thead>
+<tbody>
+<tr><td><strong>Zakup terminala</strong></td><td>6 418 zł</td><td>7 901 zł</td></tr>
+<tr><td><strong>Bateria zapasowa (1 szt.)</strong></td><td>~220 zł</td><td>~250 zł</td></tr>
+<tr><td><strong>Etui ochronne</strong></td><td>~180 zł</td><td>~63 zł</td></tr>
+<tr><td><strong>Stacja ładowania (1-slot)</strong></td><td>~800 zł</td><td>~900 zł</td></tr>
+<tr><td><strong>OneCare / serwis 3 lata</strong></td><td>~1 500 zł (OneCare Essential)</td><td>~1 200 zł (Honeywell Service)</td></tr>
+<tr><td><strong>Wsparcie Android (lata)</strong></td><td>Do 10 lat (brak wymuszonej wymiany)</td><td>5–7 lat</td></tr>
+<tr><td><strong>Wymiana po 5 latach</strong></td><td>Nie (jeszcze wspierane)</td><td>Prawdopodobnie nie (jeśli Android 18 wystarczy)</td></tr>
+<tr><td><strong>Szacunkowe TCO 5 lat</strong></td><td>~9 118 zł</td><td>~10 314 zł</td></tr>
+</tbody>
+</table>
+
+<p><strong>Kluczowe wnioski TCO:</strong></p>
+<ul>
+<li><strong>Zebra jest tańsza w zakupie</strong> — różnica ~1 500 zł na terminalu w segmencie mid-range, ~1 200 zł w gun warehouse</li>
+<li><strong>Honeywell ma niższe koszty obudów ochronnych</strong> — rubber boot CT47 od 63 zł vs ~180 zł za etui Zebra</li>
+<li><strong>Zebra wygrywa TCO 5-letnie</strong> dzięki niższej cenie zakupu i dłuższemu wsparciu Android</li>
+<li><strong>Honeywell wygrywa przy flotach mieszanych</strong> — wspólne baterie CK62+CK67, wspólny BSP, mniej wariantów do zarządzania</li>
+<li><strong>Baterie hot-swap w obu ekosystemach</strong> eliminują potrzebę zapasowego terminala na czas ładowania</li>
+</ul>
+
+<p>Z naszego doświadczenia z ponad 500 wdrożeń terminali w polskich firmach wynika, że <strong>największy wpływ na TCO ma nie cena zakupu, a żywotność urządzenia</strong>. Terminal wytrzymujący 5+ lat bez wymiany (dzięki długiemu wsparciu Android i solidnej konstrukcji) jest tańszy niż dwa tańsze urządzenia wymieniane co 2,5 roku. Obu producentom udaje się osiągnąć ten próg — przy odpowiednim doborze etui ochronnego i regularnej wymianie baterii.</p>`
+    },
+    {
+      id: 'serwis',
+      heading: 'Serwis i wsparcie techniczne w Polsce',
+      content: `<p><strong>Dostępność serwisu w Polsce to kluczowy czynnik przy wyborze terminala mobilnego — przestój urządzenia oznacza realne straty w wydajności magazynu.</strong> Oba producenci oferują serwis w Polsce, ale z istotnymi różnicami w modelu obsługi.</p>
+
+<h3>Serwis Zebra w Polsce</h3>
+<p>Zebra Technologies posiada rozbudowaną sieć serwisową w Polsce. <a href="https://www.serwis-zebry.pl/serwis-terminali-zebra">Serwis-zebry.pl</a> oferuje autoryzowane naprawy na poziomie komponentów — wymiana ekranów, skanerów, portów ładowania, płyt głównych. Średni czas naprawy: 3–7 dni roboczych. Dostępne kontrakty serwisowe Zebra OneCare (Essential, Select, Premier) z gwarancją SLA i naprawą priorytetową.</p>
+<ul>
+<li><strong>Autoryzowany serwis komponentowy</strong> — naprawy na poziomie płyty głównej</li>
+<li><strong>Zebra OneCare Essential</strong> — od ~500 zł netto/rok z priorytetem naprawy</li>
+<li><strong>Wymiana ekranów, skanerów, baterii</strong> — dostępne części zamienne w Polsce</li>
+<li><strong>Diagnostyka zdalna</strong> — Device Tracker + LifeGuard OTA</li>
+</ul>
+
+<h3>Serwis Honeywell w Polsce</h3>
+<p>Honeywell realizuje serwis przez autoryzowanych dystrybutorów i partnerów serwisowych. Model obsługi jest bardziej scentralizowany — w większości przypadków urządzenie jest wysyłane do centrum serwisowego Honeywell w Europie (Holandia lub Czechy).</p>
+<ul>
+<li><strong>Serwis przez dystrybutorów</strong> — wysyłka do centrum serwisowego w Europie</li>
+<li><strong>Honeywell Service Plans</strong> — kontrakty serwisowe z gwarancją SLA</li>
+<li><strong>Czas naprawy</strong>: 7–14 dni roboczych (ze względu na wysyłkę zagraniczną)</li>
+<li><strong>Monitoring proaktywny</strong> — Operational Intelligence wykrywa problemy sprzętowe przed awarią</li>
+</ul>
+
+<h3>Porównanie serwisu</h3>
+<table>
+<thead><tr><th>Kryterium</th><th>Zebra</th><th>Honeywell</th></tr></thead>
+<tbody>
+<tr><td><strong>Serwis komponentowy w PL</strong></td><td>Tak (serwis-zebry.pl)</td><td>Ograniczony (dystrybucja)</td></tr>
+<tr><td><strong>Czas naprawy</strong></td><td>3–7 dni</td><td>7–14 dni</td></tr>
+<tr><td><strong>Części zamienne w PL</strong></td><td>Tak (ekrany, skanery, baterie)</td><td>Ograniczone</td></tr>
+<tr><td><strong>Kontrakty SLA</strong></td><td>OneCare (3 poziomy)</td><td>Service Plans</td></tr>
+<tr><td><strong>Diagnostyka zdalna</strong></td><td>Device Tracker</td><td>Operational Intelligence</td></tr>
+</tbody>
+</table>
+
+<p><strong>Werdykt:</strong> Zebra ma wyraźną przewagę serwisową w Polsce dzięki autoryzowanemu serwisowi komponentowemu z krótszym czasem naprawy. Honeywell nadrabia proaktywnym monitoringiem (Operational Intelligence), ale czas naprawy jest dłuższy ze względu na model serwisu oparty na centrach europejskich.</p>`
+    },
+    {
+      id: 'zastosowania',
+      heading: 'Który producent lepszy w Twojej branży?',
+      content: `<p><strong>Wybór między Zebra a Honeywell zależy przede wszystkim od specyfiki Twojej branży i warunków pracy.</strong> Poniżej rekomendacje oparte na naszym doświadczeniu z wdrożeń w polskich firmach:</p>
+
+<h3>Magazyn i logistyka</h3>
+<p><strong>Rekomendacja: Zebra.</strong> Ekosystem Zebra dominuje w polskich magazynach — większość systemów WMS (SAP EWM, Oracle WMS, Comarch WMS, Consafe Astro) ma gotowe integracje z DataWedge. <a href="/produkt/zebra-mc3400">MC3400</a> z klawiaturą i skanerem SE58 (30 m) to standard dla kompletacji w magazynach wysokiego składowania. Dla lżejszych operacji — <a href="/produkt/zebra-tc53">TC53</a> z dużym ekranem dotykowym.</p>
+
+<h3>Handel detaliczny (retail)</h3>
+<p><strong>Rekomendacja: remis.</strong> W retail liczy się lekkość i cena. <a href="/produkt/zebra-tc22">Zebra TC22</a> (2 417 zł, 236 g) i <a href="/produkt/honeywell-ct32">Honeywell CT32</a> (3 389 zł, 269 g) to porównywalne urządzenia. Zebra wygrywa ceną, Honeywell — wbudowanym 5G w tym samym modelu (bez potrzeby kupowania osobnej wersji).</p>
+
+<h3>Produkcja</h3>
+<p><strong>Rekomendacja: Zebra.</strong> W środowisku produkcyjnym krytyczne są upadki, pył i olej. <a href="/produkt/zebra-mc9400">Zebra MC9400</a> z dropem 3,65 m i 7 wymiennymi klawiaturami (w tym emulacja VT i IBM 5250) najlepiej integruje się z legacy systemami produkcyjnymi.</p>
+
+<h3>Chłodnia i mroźnia</h3>
+<p><strong>Rekomendacja: oba producenci.</strong> Zarówno <a href="/produkt/zebra-mc9400">MC9400</a> (bateria freezer -30°C) jak i <a href="/produkt/honeywell-ck67">CK67</a> (wersja Cold Storage -30°C) sprawdzą się w mroźniach. CK67 wygrywa wagą (508 g vs 765 g) — istotne przy wielogodzinnej pracy w rękawicach.</p>
+
+<h3>Transport i kurier</h3>
+<p><strong>Rekomendacja: Honeywell CT32/CT47.</strong> Dla kurierów kluczowe jest 5G + GPS w jednym urządzeniu. <a href="/produkt/honeywell-ct47">Honeywell CT47</a> z 5G, FlexRange i IP68 jest idealny do field service. Alternatywa Zebra: <a href="/produkt/zebra-tc27">TC27</a> (5G, 2 690 zł — tańszy, ale bez dalekiego zasięgu skanera).</p>
+
+<h3>Apteki i healthcare</h3>
+<p><strong>Rekomendacja: Zebra.</strong> Zebra oferuje dedykowane wersje healthcare (TC22-HC, TC52-HC) z obudową odporną na środki dezynfekujące. Honeywell nie ma dedykowanej linii healthcare w aktualnej ofercie.</p>`
+    },
+    {
+      id: 'werdykt',
+      heading: 'Podsumowanie — Zebra czy Honeywell w 2026 roku?',
+      content: `<p><strong>Zebra Technologies wygrywa w 6 na 8 analizowanych kategorii — cena entry-level, zasięg skanera, ekosystem akcesoriów, wsparcie Android, serwis w Polsce i TCO 5-letnie.</strong> Honeywell wygrywa najnowszą łącznością (Wi-Fi 7, BT 6.0 w CT70) i wagą terminali gun (CK67 jest o 257 g lżejszy od MC9400).</p>
+
+<h3>Wybierz Zebra, jeśli:</h3>
+<ul>
+<li>Budujesz flotę od zera i chcesz <strong>najszerszy ekosystem akcesoriów</strong></li>
+<li>Potrzebujesz <strong>najdłuższego wsparcia Android</strong> (do 10 lat LifeGuard)</li>
+<li>Twój WMS jest zintegrowany z <strong>DataWedge</strong> (standard branżowy)</li>
+<li>Priorytetem jest <strong>serwis w Polsce</strong> z krótkim czasem naprawy (3–7 dni)</li>
+<li>Szukasz <strong>najniższej ceny wejścia</strong> w segmencie entry-level</li>
+</ul>
+
+<h3>Wybierz Honeywell, jeśli:</h3>
+<ul>
+<li>Potrzebujesz <strong>5G i Wi-Fi w jednym modelu</strong> (CT32 X1N, CT47 X1N) bez kupowania osobnej wersji</li>
+<li>Cenisz <strong>lżejsze terminale gun</strong> (CK67: 508 g vs MC9400: 765 g)</li>
+<li>Inwestujesz w <strong>infrastrukturę Wi-Fi 7</strong> (CT70 — pierwszy enterprise z Wi-Fi 7)</li>
+<li>Planujesz <strong>flotę mieszaną wielu modeli</strong> na wspólnym BSP Mobility Edge</li>
+<li>Potrzebujesz <strong>AI na krawędzi</strong> (NPU w Qualcomm QCM6690 w CT70)</li>
+</ul>
+
+<p><strong>Nasz werdykt:</strong> Dla większości polskich firm — szczególnie w segmencie magazynowym, logistycznym i produkcyjnym — <strong>Zebra pozostaje bezpieczniejszym wyborem w 2026 roku</strong> dzięki niższym cenom, dłuższemu wsparciu i lepszemu serwisowi w Polsce. Honeywell jest silną alternatywą dla firm potrzebujących najnowszej łączności (Wi-Fi 7, 5G w każdym modelu) lub lekkich terminali gun do wielogodzinnej pracy ręcznej.</p>
+
+<p>Potrzebujesz pomocy w doborze terminala? <strong>TAKMA jest Autoryzowanym Partnerem Zebra Technologies i dystrybutorem Honeywell.</strong> Sprzedajemy terminale obu producentów — doradzimy obiektywnie, który model najlepiej pasuje do Twojego magazynu. <a href="/kontakt">Skontaktuj się z nami</a> — bezpłatna konsultacja.</p>`
+    }
+  ],
+  faq: [
+    { question: 'Czy terminal Zebra jest lepszy od Honeywell do pracy w magazynie?', answer: 'W typowym magazynie z Wi-Fi i systemem WMS <strong>Zebra jest częściej wybierana</strong> — ze względu na niższe ceny wejścia (TC22 od 2 417 zł vs CT32 od 3 389 zł), dłuższe wsparcie Android (do 10 lat LifeGuard) i głębszą integrację z WMS przez DataWedge. Honeywell wygrywa w magazynach wymagających lekkich terminali gun (CK67: 508 g vs MC9400: 765 g) lub łączności 5G w terenie.' },
+    { question: 'Ile kosztuje terminal mobilny Zebra vs Honeywell w 2026 roku?', answer: 'Ceny netto PLN (marzec 2026): entry-level — <a href="/produkt/zebra-tc22">Zebra TC22</a> od 2 417 zł, <a href="/produkt/honeywell-ct32">Honeywell CT32</a> od 3 389 zł. Mid-range — <a href="/produkt/zebra-tc53">TC53</a> od 6 418 zł, <a href="/produkt/honeywell-ct47">CT47</a> od 7 901 zł. Ultra-rugged — <a href="/produkt/zebra-mc9400">MC9400</a> od 7 638 zł, <a href="/produkt/honeywell-ck67">CK67</a> od 7 778 zł. Zebra jest tańsza w 4 na 5 segmentów.' },
+    { question: 'Który producent oferuje dłuższe wsparcie oprogramowania Android?', answer: '<strong>Zebra Technologies oferuje do 10 lat wsparcia bezpieczeństwa Android</strong> (program LifeGuard for Android) — comiesięczne łatki OTA przez cały okres. Honeywell Sentinel zapewnia 5–7 lat wsparcia (np. Android 14→18 w CT32, Android 15→19 w CT70). Dłuższe wsparcie Zebry oznacza niższe TCO — terminal nie wymaga wymiany z powodu końca wsparcia.' },
+    { question: 'Czy terminale Zebra są bardziej wytrzymałe od Honeywell?', answer: 'To zależy od modelu. <strong>Zebra MC9400 ma najwyższy drop w branży: 3,65 m na beton</strong> i 6 000 cykli tumble. Zebra TC78 wytrzymuje upadki z 3,05 m. Honeywell CT47 oferuje 3,0 m (z bootem), a CK67 — 2,4 m. Oba producenci certyfikują terminale wg MIL-STD-810H. Zebra generalnie wygrywa w testach upadkowych, Honeywell kompensuje lżejszą wagą.' },
+    { question: 'Jaki terminal mobilny wybrać do małego magazynu — Zebra czy Honeywell?', answer: 'Dla małego magazynu z budżetem do 3 000 zł na terminal rekomendujemy <a href="/produkt/zebra-tc22">Zebra TC22</a> (od 2 417 zł) — najniższa cena wejścia, 10 lat wsparcia Android, duży ekran 6" FHD. Alternatywa Honeywell: <a href="/produkt/honeywell-ct32">CT32</a> (od 3 389 zł) — droższy, ale z opcją 5G+GPS w tym samym modelu.' },
+    { question: 'Czy można używać terminali Zebra i Honeywell w jednej firmie?', answer: 'Tak, ale <strong>zwiększa to koszty zarządzania flotą</strong>. Każdy producent wymaga osobnego ekosystemu akcesoriów (ładowarki, baterie, etui) i osobnej konfiguracji MDM. Jeśli musisz mieszać, rekomendujemy Zebra w magazynie (DataWedge + WMS) i Honeywell w terenie (5G + GPS), zarządzane przez uniwersalny MDM jak SOTI MobiControl.' },
+    { question: 'Który producent ma lepszą ofertę serwisową w Polsce?', answer: '<strong>Zebra ma przewagę serwisową w Polsce</strong> dzięki autoryzowanemu serwisowi komponentowemu (<a href="https://www.serwis-zebry.pl/serwis-terminali-zebra">serwis-zebry.pl</a>) z czasem naprawy 3–7 dni. Honeywell realizuje serwis głównie przez europejskie centra (Holandia, Czechy) z czasem 7–14 dni. Zebra oferuje też kontrakty OneCare z gwarancją SLA.' },
+    { question: 'Ile lat działa terminal mobilny Zebra vs Honeywell?', answer: 'Przy prawidłowym użytkowaniu <strong>terminale obu producentów działają 5–7 lat</strong>. Kluczowe czynniki: regularna wymiana baterii (co 2–3 lata), użycie etui ochronnego, aktualizacje Android. Zebra z 10-letnim LifeGuard pozwala na dłuższą eksploatację bez ryzyka luk bezpieczeństwa. Honeywell z 5–7-letnim Sentinel wymaga wcześniejszego planowania wymiany.' },
+    { question: 'Czy Honeywell jest tańszy od Zebra?', answer: '<strong>W większości segmentów Zebra jest tańsza.</strong> Entry: TC22 (2 417 zł) vs CT32 (3 389 zł). Mid: TC53 (6 418 zł) vs CT47 (7 901 zł). Gun: MC3400 (4 561 zł) vs CK62 (5 759 zł). Wyjątek: premium touch — <a href="/produkt/honeywell-ct70">Honeywell CT70</a> (6 383 zł) jest o ~1 350 zł tańszy od <a href="/produkt/zebra-tc78">Zebra TC78</a> (7 742 zł).' },
+    { question: 'Jaki jest całkowity koszt posiadania (TCO) terminala Zebra vs Honeywell?', answer: 'Szacunkowe TCO 5-letnie (mid-range, 1 terminal): <strong>Zebra TC53: ~9 100 zł</strong> (terminal + bateria + etui + stacja + serwis). <strong>Honeywell CT47: ~10 300 zł</strong>. Różnica wynika głównie z niższej ceny zakupu Zebry. Honeywell nadrabia niższymi kosztami obudów ochronnych (63 zł vs ~180 zł) i wspólnymi bateriami w ekosystemie CK62/CK67.' },
+    { question: 'Który terminal mobilny lepiej integruje się z systemem WMS?', answer: '<strong>Zebra z DataWedge jest de facto standardem integracji z WMS</strong> — SAP EWM, Oracle WMS, Comarch WMS, Consafe Astro i większość polskich systemów ma gotowe profile DataWedge. Honeywell wymaga konfiguracji SDK lub użycia dedykowanego drivera skanera. Jeśli Twój WMS już działa z Zebra — migracja na Honeywell wymaga pracy programistycznej.' },
+    { question: 'Czym różni się Mobility DNA od Mobility Edge?', answer: '<strong>Mobility DNA</strong> (Zebra) to zestaw narzędzi programowych: DataWedge (skanowanie bez kodu), StageNow (masowa konfiguracja), LifeGuard (10 lat łatek), Device Tracker (lokalizacja). <strong>Mobility Edge</strong> (Honeywell) to platforma sprzętowo-programowa: wspólny BSP dla całej floty, Operational Intelligence (monitoring), SmartTalk (PTT), Sentinel (5–7 lat wsparcia). Zebra = głębsze narzędzia skanowania, Honeywell = lepszy monitoring floty.' },
+    { question: 'Czy warto kupić Honeywell CT70 z Wi-Fi 7?', answer: '<a href="/produkt/honeywell-ct70">Honeywell CT70</a> to pierwszy terminal enterprise z Wi-Fi 7 (802.11be) — oferuje do 4× wyższą przepustowość i niższe opóźnienia niż Wi-Fi 6E. Warto, jeśli: (1) Twoja infrastruktura sieciowa jest lub będzie Wi-Fi 7, (2) potrzebujesz NPU do AI na krawędzi, (3) planujesz wdrożenie na 5+ lat. Jeśli masz Wi-Fi 6/6E — <a href="/produkt/zebra-tc53">Zebra TC53</a> będzie tańszym wyborem o podobnej wydajności.' },
+    { question: 'Który terminal gun jest lepszy do magazynu wysokiego składowania?', answer: 'Do magazynów wysokiego składowania (regały 12+ metrów) rekomendujemy: <strong><a href="/produkt/zebra-mc9400">Zebra MC9400</a> ze skanerem SE58</strong> (zasięg do 30 m, najdalszy na rynku) lub <strong><a href="/produkt/honeywell-ck67">Honeywell CK67</a> z FlexRange XLR</strong> (do 24 m). MC9400 skanuje dalej, CK67 jest o 257 g lżejszy i pracuje dłużej na baterii (28 h vs 17 h). Dla regałów do 12 m wystarczy <a href="/produkt/zebra-mc3400">MC3400</a> lub <a href="/produkt/honeywell-ck62">CK62</a>.' },
+    { question: 'Jakie są alternatywy dla terminali Zebra i Honeywell?', answer: 'Główne alternatywy na polskim rynku: <strong>Datalogic</strong> (Memor 12, Skorpio X5 — konkurencyjne ceny, węższy ekosystem), <strong>Newland</strong> (N7 Cachalot Pro II, MT93 Megattera — budżetowe terminale z dobrymi skanerami), <strong>M3 Mobile</strong> (SL21K — niszowy, Korea). TAKMA oferuje terminale wszystkich tych producentów — <a href="/kontakt">skontaktuj się</a>, a pomożemy dobrać model do budżetu i wymagań.' }
+  ],
+  relatedLinks: [
+    { title: 'Zebra TC22 — entry-level', href: '/produkt/zebra-tc22' },
+    { title: 'Zebra TC53 — mid-range', href: '/produkt/zebra-tc53' },
+    { title: 'Zebra MC3400 — gun warehouse', href: '/produkt/zebra-mc3400' },
+    { title: 'Zebra MC9400 — ultra-rugged', href: '/produkt/zebra-mc9400' },
+    { title: 'Zebra TC78 — premium touch 5G', href: '/produkt/zebra-tc78' },
+    { title: 'Honeywell CT32 — entry-level', href: '/produkt/honeywell-ct32' },
+    { title: 'Honeywell CT47 — mid-range', href: '/produkt/honeywell-ct47' },
+    { title: 'Honeywell CK62 — gun warehouse', href: '/produkt/honeywell-ck62' },
+    { title: 'Honeywell CK67 — ultra-rugged gun', href: '/produkt/honeywell-ck67' },
+    { title: 'Honeywell CT70 — premium Wi-Fi 7', href: '/produkt/honeywell-ct70' },
+    { title: 'Jak wybrać terminal mobilny — poradnik', href: '/poradnik/jak-wybrac-terminal-mobilny' },
+    { title: 'TOP 10 terminali mobilnych 2026', href: '/poradnik/top-10-terminali-mobilnych-2026' },
+    { title: 'Wszystkie terminale mobilne', href: '/terminale-mobilne' },
+    { title: 'Kontakt i doradztwo', href: '/kontakt' },
+  ]
 }
 ]
 
