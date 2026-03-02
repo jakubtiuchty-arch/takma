@@ -918,8 +918,8 @@ const desktopPrinters: Product[] = [
     slug: 'zebra-zd421t',
     name: 'Zebra ZD421t',
     shortDescription: 'Zebra ZD421t — drukarka termotransferowa biurkowa 4", następca GK420t',
-    seoTitle: 'Zebra ZD421 — drukarka etykiet termotransferowa, następca GK420t',
-    seoDescription: 'Zebra ZD421 (ZD4A042) — termotransferowa 4", następca GK420t. Wi-Fi, Ethernet, MCS, 203/300 dpi. ZD4A042-30EM00EZ od 1 649 zł netto. Porównanie wariantów ZD421t i ZD421d.',
+    seoTitle: 'Drukarka etykiet Zebra ZD421t — termotransferowa MCS | od 1 648 zł',
+    seoDescription: 'Zebra ZD421t — termotransferowa 4" dla magazynów, logistyki i e-commerce. Wi-Fi, MCS, 203/300 dpi. ZD4A042-30EM00EZ od 1 648 zł netto.',
     description: `Zebra ZD421t to najlepszy wybór dla firm logistycznych, magazynów i e-commerce, które potrzebują niezawodnej biurkowej drukarki termotransferowej z możliwością rozbudowy o sieć Wi-Fi i Ethernet.
 
 Zebra ZD421t to kompaktowa drukarka biurkowa do etykiet 4-calowych, będąca bezpośrednim następcą popularnych modeli Zebra GK420t i ZD420t. Łączy sprawdzoną niezawodność serii Zebra z nowoczesną architekturą modularną Link-OS, oferując druk termotransferowy i termiczny bezpośredni w rozdzielczości do 300 dpi z prędkością 152 mm/s.
@@ -933,6 +933,8 @@ ZD421t obsługuje szeroką gamę materiałów: etykiety papierowe, syntetyczne (
 Drukarka obsługuje praktycznie wszystkie popularne symbole kodów kreskowych 1D (Code 39, Code 128, EAN-13, EAN-8, UPC-A, ITF-14, GS1-128) oraz 2D (QR Code, DataMatrix, PDF417, Aztec), co czyni ją uniwersalnym narzędziem do etykietowania w dowolnej branży. Programowanie odbywa się w językach ZPL II i EPL2 z pełną kompatybilnością wsteczną.
 
 Zebra ZD421t jest objęta 36-miesięczną gwarancją producenta na drukarkę oraz 12-miesięczną gwarancją na głowicę drukującą, co potwierdza najwyższą jakość wykonania i trwałość urządzenia.
+
+Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -1143,6 +1145,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'Najtańsza jest wersja ZD4A042-30EM00EZ (203 dpi, USB, bez Wi-Fi) w cenie od 1637,70 zł netto. Do większości zastosowań magazynowych i e-commerce ta wersja w pełni wystarcza. Moduły Wi-Fi i Ethernet można dokupić później.',
       },
       {
+        question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
+        answer: 'Serwis drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę wałków, kalibrację i aktualizację firmware. Czas naprawy standardowej to 3–5 dni roboczych, dostępna jest również naprawa ekspresowa i wysyłkowa w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZD421t?',
         answer: 'Alternatywami są: Zebra ZD621t (wyższa klasa z LCD i kolorowym ekranem), Honeywell PC43t, TSC TE310, SATO WS412.',
       },
@@ -1226,8 +1232,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd421d',
     name: 'Zebra ZD421d',
     shortDescription: 'Zebra ZD421d — biurkowa drukarka termiczna 4" direct thermal, następca GK420d. 203/300 dpi, do 152 mm/s, modułowa architektura MCS',
-    seoTitle: 'Zebra ZD421d — drukarka termiczna direct thermal, WiFi',
-    seoDescription: 'Zebra ZD421d (ZD4A042-D0) — biurkowa termiczna 4" direct thermal, następca GK420d. E-commerce, Wi-Fi, MCS, 203/300 dpi. ZD4A042-D0EM00EZ od 1 472 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZD421d — termiczna direct thermal | od 1 472 zł',
+    seoDescription: 'Zebra ZD421d — termiczna 4" DT dla e-commerce, nadawczych i magazynów. Brak ribbona, MCS, Wi-Fi. ZD4A042-D0EM00EZ od 1 472 zł netto.',
     description: `Zebra ZD421d to najlepszy wybór dla firm e-commerce, punktów nadawczych i magazynów, które potrzebują szybkiej biurkowej drukarki termicznej z modułową architekturą i niskim kosztem eksploatacji.
 
 Zebra ZD421d to biurkowa drukarka etykiet typu direct thermal (druk termiczny bezpośredni) — następca sprawdzonych modeli GK420d i ZD420d. Drukuje bez taśmy barwiącej (ribbona), co obniża koszty eksploatacji o 40–50% w porównaniu do modelu termotransferowego ZD421t. Dostępna w rozdzielczości 203 dpi (standard) lub 300 dpi (do bardzo małych kodów 2D), z prędkością druku do 152 mm/s (6 ips) — 50% szybciej niż budżetowy ZD220d.
@@ -1239,6 +1245,8 @@ Platforma Link-OS umożliwia zdalne zarządzanie flotą drukarek z poziomu Print
 ZD421d obsługuje języki programowania ZPL II i EPL2 z pełną kompatybilnością wsteczną — istniejące szablony etykiet z GK420d, ZD420d i innych drukarek Zebra działają bez zmian. Drukarka współpracuje z systemami WMS, ERP i TMS (SAP, Comarch, enova, Subiekt) oraz platformami e-commerce (Allegro, Amazon, Shopify, BaseLinker) i systemami kurierskimi InPost, DPD, DHL, GLS i UPS.
 
 ZD421d jest idealnym wyborem dla firm drukujących 200–1000 etykiet dziennie, które potrzebują niskich kosztów eksploatacji (brak ribbona), modułowej łączności sieciowej i możliwości zdalnego zarządzania. Do zastosowań wymagających trwałych, odpornych etykiet (produktowe, magazynowe długoterminowe) polecamy model termotransferowy ZD421t. Drukarka dostępna jest również w wersji healthcare (ZD421d-HC) z obudową odporną na środki dezynfekujące i zasilaczem IEC 60601-1.
+
+Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -1402,6 +1410,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'ZD421d w wersji podstawowej łączy się przez USB. Do połączenia sieciowego masz dwie opcje: 1) Moduł Ethernet (P1112640-015) — instalacja beznarzędziowa w gnieździe MCS z tyłu drukarki, 2) Moduł Wi-Fi + Bluetooth (P1112640-017C) — również instalacja w gnieździe MCS. Możesz też kupić wariant z fabrycznie zainstalowanym interfejsem: ZD4A042-D0EE00EZ (USB + Ethernet, 1 691 zł) lub ZD4A042-D0EW02EZ (USB + Wi-Fi + BT, 1 885 zł).',
       },
       {
+        question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
+        answer: 'Serwis drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę wałków, kalibrację i aktualizację firmware. Czas naprawy standardowej to 3–5 dni roboczych, dostępna jest również naprawa ekspresowa i wysyłkowa w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZD421d?',
         answer: 'Alternatywami są: Zebra ZD621d (wyższa klasa), Honeywell PC43d, TSC DA320.',
       },
@@ -1473,8 +1485,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd621t',
     name: 'Zebra ZD621t',
     shortDescription: 'Zebra ZD621t — flagowa drukarka biurkowa 4" z kolorowym LCD, najszybsza w klasie (203 mm/s), obcinacz/odklejak/RFID',
-    seoTitle: 'Zebra ZD621 — flagowa drukarka etykiet LCD 4,3 cale',
-    seoDescription: 'Zebra ZD621 (ZD6A042) — najlepsza biurkowa termotransferowa 4", następca GX420t/GX430t. LCD 4,3", RFID, 203/300 dpi. ZD6A042-30EF00EZ od 2 264 zł netto. Porównanie ZD621t i ZD621d.',
+    seoTitle: 'Drukarka etykiet Zebra ZD621t — flagowa LCD 4,3" RFID | od 2 264 zł',
+    seoDescription: 'Zebra ZD621t — flagowa biurkowa 4" TT dla produkcji, pharma i retail. LCD 4,3", RFID, 203/300 dpi. ZD6A042-30EF00EZ od 2 264 zł netto.',
     description: `Zebra ZD621t to najlepszy wybór dla firm drukujących ponad 500 etykiet dziennie, które potrzebują najszybszej biurkowej drukarki termotransferowej z kolorowym ekranem LCD i wbudowanym Ethernet.
 
 Zebra ZD621t to flagowa, premium drukarka etykiet w segmencie biurkowym Zebra, zaprojektowana z myślą o firmach wymagających najwyższej wydajności, niezawodności i zaawansowanych funkcji zarządzania. Jako najszybsza 4-calowa drukarka biurkowa Zebra, ZD621t osiąga prędkość druku do 203 mm/s (8 cali na sekundę) — o 33% szybciej niż ZD421t (152 mm/s) i dwukrotnie szybciej niż budżetowy model ZD220t (102 mm/s). Rozdzielczość 203 dpi w wersji standardowej lub 300 dpi w wersji opcjonalnej zapewnia doskonałą jakość nawet przy bardzo małych kodach kreskowych 2D (QR Code, DataMatrix) i drobnym tekście. Drukarka obsługuje druk termotransferowy z użyciem taśmy barwiącej (ribbon) oraz druk termiczny bezpośredni (direct thermal), co czyni ją najbardziej wszechstronną drukarką biurkową w ofercie Zebra.
@@ -1484,6 +1496,8 @@ Wyróżniającą cechą ZD621t jest kolorowy dotykowy wyświetlacz LCD 4,3 cala 
 Modułowa architektura ZD621t oparta na systemie MCS (Modular Connectivity Slot) pozwala na elastyczną rozbudowę łączności — od standardowej konfiguracji z portami USB 2.0, USB Host, Ethernet (LAN) i RS-232, po opcjonalny moduł podwójnego radia bezprzewodowego Bluetooth 4.1 i Wi-Fi 802.11ac, który można doinstalować fabrycznie lub w terenie bez narzędzi. Platforma Link-OS umożliwia zdalne zarządzanie całą flotą drukarek z jednego miejsca za pomocą Printer Profile Manager Enterprise — aktualizacje firmware, konfiguracja, diagnostyka i zabezpieczenia realizowane są zdalnie, w chmurze, bez konieczności fizycznego dostępu do urządzenia. Funkcja PrintSecure chroni dane druku przed nieautoryzowanym dostępem, a Print DNA dostarcza pakiet narzędzi programistycznych i diagnostycznych klasy enterprise. Opcjonalnie dostępny jest obcinacz (cutter) do automatycznego cięcia etykiet i przywieszek, odklejak (peeler/dispenser) do automatycznego odrywania etykiet od podłoża, a także wersja ZD621R z wbudowanym koderem RFID UHF (moduł Zebra RE40) obsługującym standardy EPC Gen 2 V2, ISO/IEC 18000-63 i RAIN RFID.
 
 ZD621t to drukarka stworzona do środowisk o wysokim nakładzie druku, w których liczy się szybkość, ciągłość pracy i łatwość zarządzania. W porównaniu do ZD421t oferuje szybszy druk, kolorowy wyświetlacz dotykowy i wbudowany port Ethernet w standardzie. W porównaniu do ZD220t jest to skok o dwie klasy wyżej — od prostego urządzenia USB do w pełni sieciowej, zarządzanej platformy druku etykiet. Drukarka obsługuje języki programowania ZPL II i EPL2 z pełną kompatybilnością wsteczną, co ułatwia migrację z wcześniejszych modeli Zebra. ZD621t jest dostępna również w wersji healthcare (ZD621t-HC) z obudową odporną na środki dezynfekujące i zasilaczem zgodnym z IEC 60601-1. Producent udziela standardowej gwarancji, którą można rozszerzyć do 3 lat w ramach kontraktu Zebra OneCare.
+
+Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -1879,8 +1893,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd621d',
     name: 'Zebra ZD621d',
     shortDescription: 'Zebra ZD621d — najszybsza biurkowa drukarka termiczna Zebra (203 mm/s) z opcjonalnym LCD 4,3", drukiem linerless i modularnym MCS, następca ZD620d i GX420d',
-    seoTitle: 'Zebra ZD621d — drukarka termiczna premium LCD, 300 dpi',
-    seoDescription: 'Zebra ZD621d (ZD6A042-D0) — premium biurkowa termiczna 4" direct thermal, następca GX420d. LCD 4,3", 300 dpi, linerless. ZD6A042-D0EF00EZ od 1 944 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZD621d — premium DT LCD linerless | od 1 943 zł',
+    seoDescription: 'Zebra ZD621d — premium DT 4" dla logistyki i retail. LCD 4,3", linerless, 300 dpi. ZD6A042-D0EF00EZ od 1 943 zł netto.',
     description: `Zebra ZD621d to najlepszy wybór dla firm e-commerce i centrów logistycznych drukujących ponad 500 etykiet dziennie, które potrzebują najszybszej biurkowej drukarki termicznej z kolorowym LCD i obsługą linerless.
 
 Zebra ZD621d to flagowa biurkowa drukarka etykiet pracująca wyłącznie w technologii druku termicznego bezpośredniego (direct thermal) — nie wymaga taśmy barwiącej (ribbona), co oznacza niższy koszt eksploatacji i prostszą obsługę. Jest to najszybsza 4-calowa biurkowa drukarka termiczna Zebra, osiągająca prędkość druku do 203 mm/s (8 cali na sekundę) — o 33% szybciej niż ZD421d (152 mm/s) i dwukrotnie szybciej niż budżetowy model ZD220d (102 mm/s). Rozdzielczość 203 dpi w wersji standardowej lub 300 dpi w wersji opcjonalnej zapewnia doskonałą jakość nawet przy bardzo małych kodach kreskowych 2D (QR Code, DataMatrix) i drobnym tekście na etykietach kurierskich, wysyłkowych i produktowych.
@@ -1892,6 +1906,8 @@ Unikatową cechą ZD621d w segmencie biurkowym jest obsługa druku etykiet liner
 Modułowa architektura oparta na systemie MCS (Modular Connectivity Slot) pozwala na elastyczną rozbudowę łączności — od standardowej konfiguracji z portami USB 2.0, USB Host, Ethernet (LAN) i RS-232, po opcjonalny moduł podwójnego radia Bluetooth 4.1 i Wi-Fi 802.11ac, który można doinstalować fabrycznie lub w terenie bez narzędzi. Platforma Link-OS umożliwia zdalne zarządzanie całą flotą drukarek z jednego miejsca za pomocą Printer Profile Manager Enterprise — aktualizacje firmware, konfiguracja, diagnostyka i zabezpieczenia realizowane są zdalnie, w chmurze. Funkcja PrintSecure chroni dane druku przed nieautoryzowanym dostępem, a Print DNA dostarcza pakiet narzędzi programistycznych i diagnostycznych klasy enterprise.
 
 W porównaniu do termotransferowego bliźniaka ZD621t, model ZD621d eliminuje koszt taśm barwiących i upraszcza wymianę materiałów eksploatacyjnych — jedynym materiałem jest rolka etykiet termicznych. Jest to optymalny wybór wszędzie tam, gdzie wydruki nie muszą być odporne na ścieranie, wilgoć czy działanie chemikaliów: etykiety kurierskie, wysyłkowe, cenowe, gastronomiczne, magazynowe i inwentaryzacyjne. Drukarka obsługuje języki programowania ZPL II i EPL 2 z pełną kompatybilnością wsteczną, co ułatwia migrację z wcześniejszych modeli Zebra (ZD620d, GK420d, GC420d). ZD621d jest dostępna również w wersji healthcare (ZD621d-HC) z obudową odporną na środki dezynfekujące.
+
+Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -2142,6 +2158,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'ZD621d wykorzystuje platformę Link-OS z narzędziem Printer Profile Manager Enterprise (PPME). PPME umożliwia zdalne zarządzanie konfiguracją, aktualizację firmware, diagnostykę i zabezpieczenia całej floty drukarek z jednej konsoli webowej. Funkcja PrintSecure wymusza uwierzytelnianie przed zmianą ustawień. Obsługiwane protokoły: SNMP, HTTP/HTTPS, FTP, Zebra Link-OS API (REST/JSON).',
       },
       {
+        question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
+        answer: 'Serwis drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę wałków, kalibrację i aktualizację firmware. Czas naprawy standardowej to 3–5 dni roboczych, dostępna jest również naprawa ekspresowa i wysyłkowa w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZD621d?',
         answer: 'Alternatywami są: Zebra ZD621t (wersja TT), Honeywell PC45d.',
       },
@@ -2214,8 +2234,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd411d',
     name: 'Zebra ZD411d',
     shortDescription: 'Zebra ZD411d — kompaktowa drukarka termiczna 2" direct thermal, następca ZD410 i LP2824. 203/300 dpi, do 152 mm/s, modułowa architektura MCS, Wi-Fi 6',
-    seoTitle: 'Drukarka etykiet Zebra ZD411d — kompaktowa 2" healthcare',
-    seoDescription: 'Zebra ZD411d (ZD4A022) — kompaktowa drukarka termiczna 2", apteka, laboratorium, healthcare. ZD411d Zebra: 203/300 dpi, Wi-Fi 6. ZD4A022-D0EM00EZ od 1 238 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZD411d — kompaktowa 2" healthcare | od 1 237 zł',
+    seoDescription: 'Zebra ZD411d — kompaktowa DT 2" dla aptek, laboratoriów i healthcare. Wi-Fi 6, 203/300 dpi. ZD4A022-D0EM00EZ od 1 237 zł netto.',
     description: `Zebra ZD411d to najlepszy wybór dla aptek, laboratoriów i jubilerów, którzy potrzebują kompaktowej 2-calowej drukarki termicznej do druku małych etykiet z kodami kreskowymi.
 
 Zebra ZD411d to najkompaktniejsza biurkowa drukarka etykiet w rodzinie Zebra — format 2 cale (56 mm szerokości druku) zajmuje na biurku jedynie 220 × 115 mm i waży zaledwie 1 kg. Jest to bezpośredni następca modeli Zebra ZD410 i LP2824 Plus, zaprojektowany do druku małych etykiet z kodami kreskowymi, cenówek, etykiet na fiolki, próbówki laboratoryjne i biżuterię. Drukarka wykorzystuje metodę druku termicznego bezpośredniego (direct thermal) — bez taśmy barwiącej (ribbona), co obniża koszty eksploatacji nawet o 50% w porównaniu do modeli termotransferowych. Dostępna w rozdzielczości 203 dpi (standard) lub 300 dpi (do bardzo małych kodów 2D na probówkach i komponentach elektronicznych), z prędkością druku do 152 mm/s (6 ips).
@@ -2227,6 +2247,8 @@ Modułowa architektura MCS (Modular Connectivity Slot) pozwala rozbudować łąc
 Platforma Zebra Print DNA zapewnia zestaw narzędzi diagnostycznych i zarządzających: Browser Print (druk z przeglądarki), Visibility Services (monitoring statusu), Printer Profile Manager (klonowanie konfiguracji) oraz Link-OS SDK do integracji z systemami WMS, ERP i platformami e-commerce. Drukarka jest kompatybilna z językami ZPL II i EPL2, co gwarantuje pełną kompatybilność wsteczną z istniejącymi szablonami etykiet z ZD410, LP2824 i TLP2824.
 
 Dla kogo jest Zebra ZD411d? To optymalny wybór dla firm potrzebujących kompaktowej drukarki do małych etykiet: jubilerzy (cenówki na biżuterię), apteki (etykiety na recepturę), laboratoria (próbówki, fiolki), szpitale (opaski pacjentów — dostępna wersja healthcare ZD411d-HC z certyfikatem IEC 60601-1), sklepy detaliczne (małe cenówki półkowe), branża elektroniczna (etykiety na komponenty SMD) i e-commerce (małe etykiety zwrotne). Gwarancja producenta na drukarkę i 6 miesięcy na głowicę drukującą. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies.
+
+Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -2382,6 +2404,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'ZD411d objęta jest standardową gwarancją producenta. Gwarancja na głowicę drukującą wynosi 6 miesięcy. Gwarancję można rozszerzyć w ramach kontraktów serwisowych Zebra OneCare Essential lub Select. Serwis autoryzowany w Polsce: serwis-zebry.pl.',
       },
       {
+        question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
+        answer: 'Serwis drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę wałków, kalibrację i aktualizację firmware. Czas naprawy standardowej to 3–5 dni roboczych, dostępna jest również naprawa ekspresowa i wysyłkowa w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZD411d?',
         answer: 'ZD411d jest jedyną 2-calową drukarką termiczną Zebra w aktualnej ofercie. Alternatywą w ramach Zebra jest ZD411t (wersja termotransferowa z trwalszymi wydrukami). Spoza marki Zebra: Honeywell PC23d, TSC TDP-225, Brother TD-2120N.',
       },
@@ -2453,8 +2479,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd411t',
     name: 'Zebra ZD411t',
     shortDescription: 'Zebra ZD411t — kompaktowa drukarka termotransferowa 2", następca TLP2824. 203/300 dpi, do 152 mm/s, trwałe etykiety jubilerskie i przemysłowe, Wi-Fi 6',
-    seoTitle: 'Drukarka etykiet Zebra ZD411t — termotransferowa 2" 300 dpi',
-    seoDescription: 'Zebra ZD411t (ZD4A022-T0) — termotransferowa 2", laboratorium, biżuteria. ZD411t Zebra: 203/300 dpi, MCS, Wi-Fi 6. ZD4A022-T0EM00EZ od 1 686 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZD411t — termotransferowa 2" lab | od 1 686 zł',
+    seoDescription: 'Zebra ZD411t — TT 2" dla laboratoriów, biżuterii i pharma. MCS, Wi-Fi 6, 203/300 dpi. ZD4A022-T0EM00EZ od 1 686 zł netto.',
     description: `Zebra ZD411t to najlepszy wybór dla jubilerów, producentów elektroniki i firm telekomunikacyjnych, które potrzebują kompaktowej drukarki termotransferowej 2" do trwałych małych etykiet z taśmą żywiczną.
 
 Zebra ZD411t to kompaktowa biurkowa drukarka etykiet termotransferowa w formacie 2 cali (56 mm szerokości druku) — oficjalny następca legendarnego modelu Zebra TLP2824 Plus. Łączy sprawdzoną niezawodność Zebra z nowoczesną architekturą modularną i platformą Print DNA, oferując druk termotransferowy i termiczny bezpośredni w rozdzielczości do 300 dpi z prędkością do 152 mm/s. Jako drukarka termotransferowa, ZD411t drukuje z użyciem taśmy barwiącej (ribbona) — obraz jest przenoszony z taśmy na etykietę pod wpływem ciepła z głowicy, dzięki czemu wydruki są trwałe i odporne na ścieranie, wilgoć, UV i chemikalia.
@@ -2466,6 +2492,8 @@ Modułowa architektura MCS (Modular Connectivity Slot) pozwala rozbudować łąc
 Opcjonalnie dostępny odklejak/peeler (P1117258-230) do automatycznego oddzielania etykiet od podłoża i gilotyna/cutter (P1117258-231) do automatycznego cięcia — oba montowane w terenie bez narzędzi. ZD411t drukuje również w trybie termicznym bezpośrednim (direct thermal) bez ribbona.
 
 Dla kogo jest Zebra ZD411t? To optymalny wybór dla firm potrzebujących trwałych małych etykiet: jubilerzy (cenówki odporne na ścieranie — taśma żywiczna na etykiecie syntetycznej), branża elektroniczna (etykiety na komponenty, PCB, SMD z rozdzielczością 300 dpi), telekomunikacja (etykiety flagowe na kable), producenci (oznaczenia trwałe na częściach), farmacja i kosmetyka (małe etykiety produktowe). Gwarancja producenta na drukarkę i 6 miesięcy na głowicę. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies.
+
+Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -2649,6 +2677,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'ZD411t objęta jest standardową gwarancją producenta Zebra. Gwarancja na głowicę drukującą wynosi 6 miesięcy. Gwarancję można rozszerzyć w ramach Zebra OneCare Essential lub Select. Autoryzowany serwis w Polsce: serwis-zebry.pl.',
       },
       {
+        question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
+        answer: 'Serwis drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę wałków, kalibrację i aktualizację firmware. Czas naprawy standardowej to 3–5 dni roboczych, dostępna jest również naprawa ekspresowa i wysyłkowa w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZD411t?',
         answer: 'ZD411t jest jedyną 2-calową drukarką termotransferową Zebra w aktualnej ofercie. Alternatywą w Zebra jest ZD411d (wersja DT, tańsza w eksploatacji). Spoza Zebra: Honeywell PC23t, TSC TTP-225, Brother TD-2130N.',
       },
@@ -2720,8 +2752,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd220d',
     name: 'Zebra ZD220d',
     shortDescription: 'Zebra ZD220d — najtańsza 4-calowa drukarka termiczna Zebra, druk direct thermal bez taśmy barwiącej, idealnie do etykiet kurierskich i wysyłkowych',
-    seoTitle: 'Zebra ZD220d — najtańsza drukarka termiczna USB od 650 zł',
-    seoDescription: 'Zebra ZD220d (ZD22042) — najtańsza drukarka etykiet termiczna 4" direct thermal, tania drukarka kodów kreskowych USB. 203 dpi. ZD22042-D0EG00EZ od 650 zł netto.',
+    seoTitle: 'Zebra ZD220d — najtańsza drukarka termiczna USB | od 649 zł',
+    seoDescription: 'Zebra ZD220d — najtańsza DT 4" USB dla e-commerce, kurierów i małych firm. 203 dpi, plug&play. ZD22042-D0EG00EZ od 649 zł netto.',
     description: `Zebra ZD220d to najlepszy wybór dla małych firm i startupów szukających niezawodnej biurkowej drukarki etykiet termicznych w przystępnej cenie.
 
 Zebra ZD220d to biurkowa drukarka etykiet pracująca wyłącznie w technologii druku termicznego bezpośredniego (direct thermal). Jest to najtańsze urządzenie w ofercie Zebra Technologies drukujące etykiety o szerokości do 4 cali, zaprojektowane z myślą o firmach e-commerce, punktach nadawczych paczek, sklepach detalicznych i małych magazynach, gdzie dominującym zastosowaniem jest druk etykiet wysyłkowych, kurierskich i cenowych. W odróżnieniu od siostrzanego modelu ZD220t (wersja termotransferowa), ZD220d nie wymaga taśmy barwiącej (ribbona) — obraz powstaje bezpośrednio na papierze termicznym pod wpływem ciepła z głowicy drukującej. Eliminacja ribbona oznacza niższy koszt eksploatacji na etykietę, prostszą obsługę (jedynym materiałem eksploatacyjnym jest rolka etykiet) i szybszą wymianę mediów.
@@ -2731,6 +2763,8 @@ Drukarka oferuje rozdzielczość 203 dpi (8 punktów/mm), prędkość druku do 1
 Zebra ZD220d komunikuje się z komputerem za pośrednictwem interfejsu USB 2.0 i jest wyposażona w 256 MB pamięci Flash oraz 128 MB SDRAM. Drukarka obsługuje języki programowania ZPL II i EPL 2, co zapewnia pełną kompatybilność z istniejącymi szablonami etykiet z wcześniejszych modeli Zebra, w tym GK420d i GC420d. Obsługiwane kody kreskowe 1D obejmują: Code 39, Code 128, EAN-13, EAN-8, UPC-A, UPC-E, ITF, Codabar i Code 93. Kody 2D: QR Code, DataMatrix, PDF417, Aztec i MaxiCode — dzięki czemu ZD220d spełnia wymagania standardów GS1 i etykiet kurierskich wszystkich głównych przewoźników (InPost, DPD, DHL, UPS, GLS, Pocztex). Opcjonalnie dostępna jest wersja z odklejakiem (dyspenserem) do automatycznego oddzielania etykiety od podłoża, co przyspiesza ręczne naklejanie etykiet na paczki.
 
 ZD220d to optymalny wybór, gdy drukujesz wyłącznie etykiety o ograniczonej trwałości — wysyłkowe, kurierskie, cenowe, tymczasowe oznaczenia magazynowe — i nie potrzebujesz wydruków odpornych na ścieranie, wilgoć czy działanie chemikaliów (do tego służy model termotransferowy ZD220t). Koszty eksploatacji ZD220d są niższe niż ZD220t, ponieważ jedynym materiałem eksploatacyjnym jest papier termiczny — nie kupujesz taśm barwiących. Producent udziela 24-miesięcznej gwarancji na urządzenie. Drukarka jest dostarczana z zasilaczem sieciowym, kablem zasilającym, skróconą instrukcją obsługi oraz płytą CD ze sterownikami (sterowniki dostępne także online na serwis-zebry.pl/sterowniki).
+
+Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -2843,6 +2877,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'ZD220d to najtańsza drukarka termiczna Zebra (od 620,95 zł netto). W porównaniu: ZD421d (ok. 1 890 zł) oferuje szybszy druk (152 mm/s vs 102 mm/s), więcej interfejsów (Ethernet, Wi-Fi, Bluetooth jako opcje), modularność i rozdzielczość do 300 dpi. ZD220d wystarczy, gdy drukujesz do kilkuset etykiet dziennie, korzystasz z jednego stanowiska USB i nie potrzebujesz łączności sieciowej. ZD421d warto wybrać przy dużym wolumenie, potrzebie zdalnego zarządzania lub pracy w sieci.',
       },
       {
+        question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
+        answer: 'Serwis drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę wałków, kalibrację i aktualizację firmware. Czas naprawy standardowej to 3–5 dni roboczych, dostępna jest również naprawa ekspresowa i wysyłkowa w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZD220d?',
         answer: 'Alternatywami są: Zebra ZD421d (wyższa klasa z LCD), Honeywell PC42d, Brother TD-4520DN, TSC DA220. W ramach Zebra — ZD230d oferuje tę samą funkcjonalność w niższej cenie.',
       },
@@ -2917,8 +2955,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd230d',
     name: 'Zebra ZD230d',
     shortDescription: 'Zebra ZD230d — drukarka termiczna 4" direct thermal, następca ZD220d z szybszym drukiem (152 mm/s), opcją gilotyny, odklejaka, Ethernet, Bluetooth i Wi-Fi',
-    seoTitle: 'Drukarka etykiet Zebra ZD230d — do paczek i kurierów',
-    seoDescription: 'Zebra ZD230d (ZD23042) — drukarka etykiet kurierskich, do allegro, InPost, DPD, DHL. ZD230d Zebra: Ethernet, 152 mm/s. ZD23042-D0EG00EZ od 1 087 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZD230d — do paczek i kurierów | od 1 087 zł',
+    seoDescription: 'Zebra ZD230d — DT 4" do etykiet kurierskich InPost, DPD, DHL i Allegro. Ethernet, 152 mm/s. ZD23042-D0EG00EZ od 1 087 zł netto.',
     description: `Zebra ZD230d to najlepszy wybór dla firm e-commerce i sklepów detalicznych, które potrzebują szybkiej drukarki termicznej z opcją Ethernet i gilotyny w przystępnej cenie.
 
 Zebra ZD230d to biurkowa drukarka etykiet pracująca wyłącznie w technologii druku termicznego bezpośredniego (direct thermal) — oficjalny następca popularnego modelu Zebra ZD220d. W porównaniu do poprzednika, ZD230d oferuje o 50% wyższą prędkość druku (152 mm/s vs 102 mm/s), znacznie bogatszy wybór interfejsów komunikacyjnych (USB, Ethernet, Bluetooth, Wi-Fi) oraz opcje gilotyny (cutter) i odklejaka (peeler/dispenser), które wcześniej nie były dostępne w tej klasie cenowej. Drukarka termiczna ZD230d nie wymaga taśmy barwiącej (ribbona) — obraz powstaje bezpośrednio na papierze termicznym pod wpływem ciepła z głowicy drukującej. Eliminacja ribbona oznacza niższy koszt eksploatacji na etykietę, prostszą obsługę i szybszą wymianę mediów. ZD230d to idealne rozwiązanie do druku etykiet kurierskich, wysyłkowych i cenowych w firmach e-commerce, punktach nadawczych paczek, sklepach detalicznych i małych magazynach.
@@ -2930,6 +2968,8 @@ Zebra ZD230d jest dostępna w sześciu wariantach, które różnią się interfe
 ZD230d to następca ZD220d i optymalny wybór dla firm, które potrzebują szybszego druku niż oferuje ZD220d, ale nie chcą inwestować w droższego ZD421d. Obsługiwane kody kreskowe 1D obejmują: Code 39, Code 128, EAN-13, EAN-8, UPC-A, UPC-E, ITF, Codabar i Code 93. Kody 2D: QR Code, DataMatrix, PDF417, Aztec i MaxiCode — dzięki czemu ZD230d spełnia wymagania standardów GS1 i etykiet kurierskich wszystkich głównych przewoźników (InPost, DPD, DHL, UPS, GLS, Pocztex). Koszty eksploatacji ZD230d są niższe niż drukarek termotransferowych, ponieważ jedynym materiałem eksploatacyjnym jest papier termiczny. Producent udziela 24-miesięcznej gwarancji na urządzenie. Drukarka jest dostarczana z zasilaczem sieciowym, kablem zasilającym i skróconą instrukcją obsługi. Sterowniki i oprogramowanie konfiguracyjne dostępne są na serwis-zebry.pl/sterowniki.
 
 Podsumowanie: Dla kogo jest Zebra ZD230d? To optymalny wybór dla firm drukujących do 500 etykiet dziennie, które potrzebują szybszej drukarki niż ZD220d (152 vs 102 mm/s) i opcji łączności sieciowej (Ethernet, Wi-Fi), ale nie chcą inwestować w droższego ZD421d. Idealna do etykiet kurierskich (InPost, DPD, DHL), cenowych i magazynowych. Cena od 1 081 zł netto. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies z 20-letnim doświadczeniem w branży AutoID.
+
+Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -3082,6 +3122,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'Zebra ZD230d jest dostępna w TAKMA — autoryzowanym partnerze Zebra Technologies z ponad 20-letnim doświadczeniem w branży AutoID. Oferujemy pełne doradztwo techniczne przy wyborze wariantu (USB, Ethernet, Wi-Fi, gilotyna, odklejak), pomoc w doborze etykiet i konfiguracji drukarki. Zapewniamy dostawę kurierem na terenie całej Polski, gwarancję producenta oraz serwis gwarancyjny i pogwarancyjny przez serwis-zebry.pl. Aby złożyć zamówienie, dodaj wybrany wariant do koszyka zapytaniowego lub skontaktuj się z nami telefonicznie.',
       },
       {
+        question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
+        answer: 'Serwis drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę wałków, kalibrację i aktualizację firmware. Czas naprawy standardowej to 3–5 dni roboczych, dostępna jest również naprawa ekspresowa i wysyłkowa w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZD230d?',
         answer: 'Alternatywami są: Zebra ZD421d (wyższa klasa z LCD), Honeywell PC42d, Brother TD-4520DN, TSC DA220. W ramach Zebra — ZD230d oferuje tę samą funkcjonalność w niższej cenie.',
       },
@@ -3164,8 +3208,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd220t',
     name: 'Zebra ZD220t',
     shortDescription: 'Zebra ZD220t — najtańsza 4-calowa drukarka etykiet termotransferowa Zebra, następca GC420t',
-    seoTitle: 'Zebra ZD220 — najtańsza drukarka etykiet od 639 zł',
-    seoDescription: 'Zebra ZD220 (ZD22042-T0) — najtańsza drukarka etykiet termotransferowa 4" USB. 203 dpi, ribbon 74 m. ZD22042-T0EG00EZ od 639 zł netto. Porównanie ZD220t i ZD220d.',
+    seoTitle: 'Zebra ZD220t — najtańsza drukarka termotransferowa USB | od 639 zł',
+    seoDescription: 'Zebra ZD220t — najtańsza TT 4" USB dla biur, produkcji i retail. 203 dpi, ribbon 74 m. ZD22042-T0EG00EZ od 639 zł netto.',
     description: `Zebra ZD220t to najlepszy wybór dla małych firm szukających najtańszej drukarki termotransferowej Zebra do trwałych etykiet produktowych i magazynowych.
 
 Zebra ZD220t to biurkowa drukarka etykiet termotransferowa, która stanowi oficjalnego następcę popularnego modelu Zebra GC420t. Jako najtańsza 4-calowa drukarka termotransferowa w ofercie Zebra, ZD220t łączy niezawodność i jakość wykonania charakterystyczną dla marki Zebra z ceną dostępną nawet dla najmniejszych firm. Drukarka obsługuje zarówno druk termotransferowy z użyciem taśmy barwiącej (woskowej, woskowo-żywicznej lub żywicznej), jak i druk termiczny bezpośredni — co czyni ją wszechstronnym narzędziem do tworzenia etykiet z kodami kreskowymi, etykiet kurierskich, metek produktowych i oznaczeń magazynowych.
@@ -3175,6 +3219,8 @@ Pomimo budżetowego pozycjonowania, Zebra ZD220t wyróżnia się solidną konstr
 Zebra ZD220t obsługuje języki programowania ZPL II i EPL II, dzięki czemu migracja z modelu GC420t jest bezproblemowa — istniejące szablony etykiet i konfiguracje zadziałają bez zmian. Taśmy barwiące używane w GC420t i GT800 są w pełni kompatybilne z ZD220t (wałek 0,5 cala, do 74 m). Drukarka komunikuje się z komputerem za pośrednictwem interfejsu USB 2.0, a pamięć 256 MB Flash i 128 MB SDRAM zapewnia sprawne przetwarzanie nawet bardziej złożonych projektów etykiet. Opcjonalnie dostępny jest odklejak (dyspenser) do automatycznego oddzielania etykiet od podłoża.
 
 ZD220t to doskonały wybór dla firm szukających niezawodnej drukarki etykiet bez konieczności inwestowania w droższe modele z rozbudowaną funkcjonalnością sieciową. Sprawdzi się wszędzie tam, gdzie drukarka jest podłączona do jednego stanowiska komputerowego i dzienny nakład druku wynosi do kilkuset etykiet. Producent udziela 24-miesięcznej gwarancji na urządzenie, co potwierdza zaufanie Zebry do trwałości tego modelu.
+
+Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -3347,6 +3393,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'Tak, taśmy barwiące (ribbony) używane w drukarkach Zebra GC420t i GT800 są w pełni kompatybilne z ZD220t. Wszystkie trzy modele używają taśm na wałku 0,5 cala (12,7 mm) o maksymalnej długości 74 m. Dzięki temu migracja z GC420t na ZD220t nie wymaga zmiany materiałów eksploatacyjnych.',
       },
       {
+        question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
+        answer: 'Serwis drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę wałków, kalibrację i aktualizację firmware. Czas naprawy standardowej to 3–5 dni roboczych, dostępna jest również naprawa ekspresowa i wysyłkowa w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZD220t?',
         answer: 'Alternatywami są: Zebra ZD421t (wyższa klasa), Honeywell PC42t, Brother TD-4520TN, TSC TE210. ZD230t to ulepszona wersja ZD220t.',
       },
@@ -3421,8 +3471,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd230t',
     name: 'Zebra ZD230t',
     shortDescription: 'Zebra ZD230t — drukarka termotransferowa 4", następca ZD220t z szybszym drukiem (152 mm/s), taśmą 300 m, opcją Ethernet, Bluetooth i Wi-Fi',
-    seoTitle: 'Drukarka etykiet Zebra ZD230t — termotransferowa Ethernet',
-    seoDescription: 'Zebra ZD230t (ZD23042) — drukarka termotransferowa biurkowa sieciowa 4", Ethernet. ZD230t Zebra: 203 dpi, ribbon 300 m. ZD23042-30EG00EZ od 1 135 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZD230t — termotransferowa Ethernet | od 1 135 zł',
+    seoDescription: 'Zebra ZD230t — TT 4" Ethernet dla biur, magazynów i produkcji. 203 dpi, ribbon 300 m. ZD23042-30EG00EZ od 1 135 zł netto.',
     description: `Zebra ZD230t to najlepszy wybór dla firm szukających szybkiej drukarki termotransferowej z taśmą 300 m i opcją Ethernet w klasie cenowej poniżej 1500 zł.
 
 Zebra ZD230t to biurkowa drukarka etykiet termotransferowa — oficjalny następca popularnego modelu Zebra ZD220t. W porównaniu do poprzednika, ZD230t oferuje o 50% wyższą prędkość druku (152 mm/s vs 102 mm/s), czterokrotnie większą pojemność taśmy barwiącej (300 m vs 74 m na wałku 1 cala zamiast 0,5 cala), znacznie bogatszy wybór interfejsów komunikacyjnych (USB, Ethernet, Bluetooth, Wi-Fi) oraz opcje gilotyny (cutter) i odklejaka (peeler/dispenser). Jako drukarka termotransferowa, ZD230t drukuje z użyciem taśmy barwiącej (ribbona) — obraz jest przenoszony z taśmy na etykietę pod wpływem ciepła z głowicy drukującej, dzięki czemu wydruki są odporne na ścieranie, wilgoć, promienie UV i działanie chemikaliów. ZD230t obsługuje również tryb druku termicznego bezpośredniego (direct thermal) bez taśmy barwiącej, co czyni ją wszechstronnym narzędziem do każdego rodzaju etykiet.
@@ -3434,6 +3484,8 @@ Zebra ZD230t jest dostępna w kilku wariantach, które różnią się interfejsa
 ZD230t to następca ZD220t i optymalny wybór dla firm, które potrzebują trwałych etykiet termotransferowych, szybszego druku niż oferuje ZD220t, ale nie chcą inwestować w droższego ZD421t. Kluczowa przewaga nad ZD220t to pojemność taśmy barwiącej — 300 m zamiast 74 m oznacza czterokrotnie rzadszą wymianę ribbona i znacznie niższy koszt druku per etykieta. Obsługiwane kody kreskowe 1D obejmują: Code 39, Code 128, EAN-13, EAN-8, UPC-A, UPC-E, ITF, Codabar i Code 93. Kody 2D: QR Code, DataMatrix, PDF417, Aztec i MaxiCode — dzięki czemu ZD230t spełnia wymagania standardów GS1 i etykiet w każdej branży. Producent udziela 36-miesięcznej gwarancji na urządzenie i 12-miesięcznej na głowicę drukującą. Drukarka jest dostarczana z zasilaczem sieciowym, kablem zasilającym i skróconą instrukcją obsługi. Sterowniki i oprogramowanie konfiguracyjne dostępne są na serwis-zebry.pl/sterowniki.
 
 Podsumowanie: Dla kogo jest Zebra ZD230t? To optymalny wybór dla firm drukujących trwałe etykiety termotransferowe w nakładzie do 500 sztuk dziennie, które potrzebują szybszej drukarki niż ZD220t (152 vs 102 mm/s), dłuższej taśmy (300 vs 74 m) i opcji łączności sieciowej (Ethernet, Wi-Fi), ale nie chcą inwestować w droższego ZD421t. Idealna do etykiet produktowych, inwentaryzacyjnych, na środki trwałe, oznaczeń trwałych w produkcji i handlu. Cena od 1 069 zł netto. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies z 25-letnim doświadczeniem w branży AutoID.
+
+Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -3647,6 +3699,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'Zebra ZD230t jest dostępna w TAKMA — autoryzowanym partnerze Zebra Technologies z ponad 25-letnim doświadczeniem w branży AutoID. Oferujemy pełne doradztwo techniczne przy wyborze wariantu (USB, Ethernet, Wi-Fi, odklejak), pomoc w doborze taśm barwiących i etykiet oraz konfiguracji drukarki. Zapewniamy dostawę kurierem na terenie całej Polski, gwarancję producenta oraz serwis gwarancyjny i pogwarancyjny przez serwis-zebry.pl. Aby złożyć zamówienie, dodaj wybrany wariant do koszyka zapytaniowego lub skontaktuj się z nami telefonicznie.',
       },
       {
+        question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
+        answer: 'Serwis drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę wałków, kalibrację i aktualizację firmware. Czas naprawy standardowej to 3–5 dni roboczych, dostępna jest również naprawa ekspresowa i wysyłkowa w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZD230t?',
         answer: 'Alternatywami są: Zebra ZD421t (wyższa klasa), Honeywell PC42t, Brother TD-4520TN, TSC TE210. ZD230t to ulepszona wersja ZD220t.',
       },
@@ -3730,8 +3786,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd510-hc',
     name: 'Zebra ZD510-HC',
     shortDescription: 'Zebra ZD510-HC — biurkowa drukarka opasek identyfikacyjnych 300 dpi, ZPL, Link-OS, Ethernet, zasilacz medyczny IEC 60601-1',
-    seoTitle: 'Drukarka opasek Zebra ZD510-HC — szpitalna 300 dpi',
-    seoDescription: 'Zebra ZD510-HC (ZD51013) — drukarka opasek szpitalnych i identyfikacyjnych, drukarka opaski pacjenta. ZD510-HC Zebra: Z-Band, 300 dpi. ZD51013-D0EE00FZ od 2 674 zł netto.',
+    seoTitle: 'Drukarka opasek Zebra ZD510-HC — szpitalna HIPAA 300 dpi | od 2 674 zł',
+    seoDescription: 'Zebra ZD510-HC — drukarka opasek pacjenta dla szpitali i klinik. Z-Band, HIPAA, IEC 60601-1, 300 dpi. ZD51013-D0EE00FZ od 2 674 zł netto.',
     description: `Zebra ZD510-HC to najlepszy wybór dla szpitali, klinik i laboratoriów, które potrzebują niezawodnej drukarki opasek identyfikacyjnych z certyfikatem medycznym i integracją z systemami ADT.
 
 Następca popularnego modelu HC100 — jedyna dedykowana drukarka opasek Zebra nowej generacji. Drukuje termicznie na opaski Z-Band Direct (dorosły, dziecko, niemowlę), Z-Band UltraSoft i Z-Band Fun w rozdzielczości 300 dpi z prędkością do 51 mm/s (healthcare) lub 102 mm/s (Z-Band Fun/eventy).
@@ -3743,6 +3799,8 @@ Zasilacz klasy medycznej IEC 60601-1 w zestawie. Obudowa odporna na dezynfekcję
 Platforma Link-OS z Zebra DNA: zdalne zarządzanie (Printer Profile Manager Enterprise), integracja z SOTI Connect i VMware Workspace ONE. Funkcja PrintSecure zapewnia zgodność z HIPAA. Programowanie w ZPL/ZPL II i XML z pełnym wsparciem Unicode.
 
 Interfejsy standardowe: USB 2.0, USB Host, Ethernet 10/100 i Bluetooth Low Energy (BLE). Opcjonalnie: Wi-Fi 802.11ac + Bluetooth 4.1 (wariant ZD51013-D0EB02FZ). Gwarancja producenta 2 lata (głowica 12 miesięcy).
+
+Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-opasek',
@@ -3867,6 +3925,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'Wymiana głowicy (P1100266-003, 300 dpi) i wałka (P1100266-008) jest beznarzędziowa (tool-less) — wystarczy otworzyć pokrywę i wymienić element w kilka sekund. Głowica ma 12 miesięcy gwarancji. Element Energy Equalizer (E3) optymalizuje dystrybucję energii i wydłuża żywotność głowicy.',
       },
       {
+        question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
+        answer: 'Serwis drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę wałków, kalibrację i aktualizację firmware. Czas naprawy standardowej to 3–5 dni roboczych, dostępna jest również naprawa ekspresowa i wysyłkowa w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZD510-HC?',
         answer: 'Alternatywami są: starsza Zebra HC100 (wycofywana z produkcji, tylko EPL2), a w konkurencji praktycznie nie ma dedykowanych drukarek opasek — rynek jest zdominowany przez Zebra. Niektóre szpitale używają drukarek Brother TD-2130NHC z adapterem opasek, ale to rozwiązanie kompromisowe bez systemu kartridżowego.',
       },
@@ -3928,8 +3990,8 @@ const industrialLightPrinters: Product[] = [
     slug: 'zebra-zt231',
     name: 'Zebra ZT231',
     shortDescription: 'Zebra ZT231 — drukarka przemysłowa 4" z kolorowym ekranem dotykowym 4,3", metalową konstrukcją i opcjonalnym RFID UHF, następca ZT230',
-    seoTitle: 'Drukarka etykiet Zebra ZT231 — półprzemysłowa RFID LCD',
-    seoDescription: 'Zebra ZT231 (ZT23142) — półprzemysłowa drukarka etykiet do logistyki, RFID, LCD dotykowy 4,3". ZT231 Zebra: 304 mm/s. ZT23142-D0E000FZ od 2 551 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZT231 — półprzemysłowa RFID LCD | od 2 551 zł',
+    seoDescription: 'Zebra ZT231 — półprzemysłowa 4" RFID dla logistyki, magazynów i dystrybucji. LCD 4,3", 304 mm/s. ZT23142-D0E000FZ od 2 551 zł netto.',
     description: `Zebra ZT231 to najlepszy wybór dla firm produkcyjnych i magazynów przechodzących z drukarek biurkowych na przemysłowe, które potrzebują kompaktowej drukarki z ekranem dotykowym i metalową konstrukcją.
 
 Zebra ZT231 to drukarka przemysłowa klasy light-industrial zaprojektowana jako bezpośredni następca popularnego modelu ZT230. Łączy kompaktowe wymiary (432 × 241 × 279 mm) z wytrzymałą metalową ramą i metalowymi obudowami, zapewniając trwałość na poziomie klasy przemysłowej przy jednoczesnej oszczędności przestrzeni na stanowisku pracy. Dwuskrzydłowe drzwi mediów (bi-fold) wymagają jedynie 10 cm wolnej przestrzeni nad drukarką do otwarcia — idealne rozwiązanie do ciasnych pomieszczeń produkcyjnych i magazynowych.
@@ -3945,6 +4007,8 @@ Standardowe interfejsy: USB 2.0, RS-232, Ethernet 10/100, USB Host i Bluetooth L
 Platforma Zebra Print DNA zapewnia kompletny zestaw narzędzi IT: Printer Profile Manager Enterprise do zdalnego zarządzania flotą, PrintSecure do ochrony przed cyberatakami, Visibility Services do monitoringu statusu i Cloud Connect do integracji z chmurą. Analityka on-board oraz wykrywanie uszkodzonych elementów głowicy (printhead element out detection) pomagają planować konserwację predykcyjną. Certyfikat ENERGY STAR potwierdza niskie zużycie energii.
 
 Kluczowa przewaga ZT231 nad modelem ZT111: kolorowy ekran dotykowy 4,3" (vs monochromatyczny LCD), metalowe obudowy (vs plastikowe w ZT111), wyższa prędkość druku 304 mm/s (vs 254 mm/s), obsługa opcjonalnego kodowania RFID UHF i emulacja drukarek EPL/EPL2. ZT231 jest idealnym wyborem dla firm produkcyjnych, logistycznych i magazynowych, które potrzebują niezawodnej drukarki przemysłowej o kompaktowych wymiarach i intuicyjnej obsłudze — bez kompromisów w zakresie prędkości, jakości druku i możliwości rozbudowy.
+
+Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -4123,6 +4187,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'ZT411 to drukarka klasy mid-range industrial z wyższą prędkością druku (356 mm/s vs 304 mm/s), większą pamięcią (512 MB SDRAM vs 256 MB), obsługą rolek mediów do 254 mm OD (vs 203 mm) i opcjonalną rozdzielczością 600 dpi. ZT411 jest przeznaczona do intensywnych zastosowań przemysłowych z dużym wolumenem druku. ZT231 to ekonomiczniejsza alternatywa z doskonałym stosunkiem ceny do możliwości.',
       },
       {
+        question: 'Gdzie serwisować drukarki Zebra przemysłowe w Polsce?',
+        answer: 'Serwis przemysłowych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra z doświadczeniem w naprawach serii ZT. Oferuje naprawę głowic, wymianę wałków dociskowych, czyszczenie toru mediów i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis na miejscu u klienta (on-site) na terenie całej Polski.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZT231?',
         answer: 'Alternatywami są: Zebra ZT411 (pełna przemysłowa), Honeywell PM45, TSC MH241T.',
       },
@@ -4182,8 +4250,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zt111',
     name: 'Zebra ZT111',
     shortDescription: 'Zebra ZT111 — przemysłowa drukarka etykiet entry-level 4", metalowa konstrukcja, 254 mm/s, następca ZT220 i S4M. Idealna do magazynu i produkcji',
-    seoTitle: 'Drukarka etykiet Zebra ZT111 — najtańsza przemysłowa 4"',
-    seoDescription: 'Zebra ZT111 (ZT11142) — najtańsza drukarka przemysłowa do małego magazynu, 203/300 dpi. ZT111 Zebra: metalowa, 254 mm/s. ZT11142-D0E000FZ od 2 081 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZT111 — najtańsza przemysłowa 4" | od 2 081 zł',
+    seoDescription: 'Zebra ZT111 — najtańsza przemysłowa 4" dla małych magazynów i produkcji. Metalowa, 203/300 dpi, 254 mm/s. ZT11142-D0E000FZ od 2 081 zł netto.',
     description: `Zebra ZT111 to najlepszy wybór dla firm przechodzących z drukarek biurkowych na przemysłowe, które potrzebują metalowej konstrukcji i prędkości 254 mm/s w przystępnej cenie.
 
 Zebra ZT111 to przemysłowa drukarka etykiet entry-level zaprojektowana jako pomost między drukarkami biurkowymi a pełnoprzemysłowymi. Metalowa rama i plastikowe obudowy zapewniają trwałość na poziomie klasy przemysłowej, a kompaktowe wymiary (432 × 241 × 279 mm) pozwalają zmieścić ją w przestrzeniach, gdzie większe drukarki przemysłowe nie wchodzą w grę. ZT111 jest bezpośrednim następcą modeli Zebra ZT220, S4M i S600, oferując pełną kompatybilność wsteczną z językami ZPL II i EPL2 — istniejące szablony etykiet działają bez zmian.
@@ -4195,6 +4263,8 @@ ZT111 obsługuje rolki mediów o średnicy do 203 mm (8") na rdzeniu 76 mm (3") 
 Standardowe interfejsy to USB 2.0, RS-232, Ethernet 10/100, USB Host i Bluetooth Low Energy (do konfiguracji mobilnej). Opcjonalnie dostępna karta Wi-Fi 802.11ac i dodatkowy port Ethernet. Platforma Zebra Print DNA zapewnia narzędzia do zdalnego zarządzania, monitoringu i diagnostyki: Printer Profile Manager Enterprise (klonowanie konfiguracji), Visibility Services (monitoring statusu) i PrintSecure (ochrona przed cyberatakami). Analityka on-board oraz wykrywanie zużycia głowicy (printhead element out detection) pomagają planować konserwację z wyprzedzeniem.
 
 Dla kogo jest Zebra ZT111? To optymalny wybór dla firm przechodzących z drukarek biurkowych na klasy przemysłowej — magazyny, centra dystrybucyjne, lekka produkcja, logistyka, healthcare (etykiety laboratoryjne, apteczne) i retail (etykiety wysyłkowe, cenowe). ZT111 oferuje przemysłową trwałość i wydajność w cenie zbliżonej do drukarek biurkowych premium.
+
+Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -4351,6 +4421,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'ZT111 objęta jest 1-roczną gwarancją producenta na wady materiałowe i wykonanie. Gwarancję można rozszerzyć w ramach kontraktów Zebra OneCare Essential lub Select. Autoryzowany serwis w Polsce: serwis-zebry.pl.',
       },
       {
+        question: 'Gdzie serwisować drukarki Zebra przemysłowe w Polsce?',
+        answer: 'Serwis przemysłowych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra z doświadczeniem w naprawach serii ZT. Oferuje naprawę głowic, wymianę wałków dociskowych, czyszczenie toru mediów i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis na miejscu u klienta (on-site) na terenie całej Polski.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZT111?',
         answer: 'Alternatywami są: Zebra ZT231 (wyższa klasa), Honeywell PM45, TSC MH261T. ZT111 to najtańsza drukarka przemysłowa Zebra.',
       },
@@ -4422,8 +4496,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zt411',
     name: 'Zebra ZT411',
     shortDescription: 'Zebra ZT411 — przemysłowa drukarka etykiet 4" z ekranem dotykowym 4,3", następca ZT410. 203/300/600 dpi, do 356 mm/s, RFID opcja, Link-OS',
-    seoTitle: 'Drukarka etykiet Zebra ZT411 — następca ZT410, RFID 600 dpi',
-    seoDescription: 'Zebra ZT411 (ZT41142) — drukarka przemysłowa, następca ZT410. ZT411 Zebra: RFID UHF, 600 dpi, linerless, 356 mm/s. ZT41142-T0E0000Z od 5 132 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZT411 — przemysłowa RFID 600 dpi | od 5 131 zł',
+    seoDescription: 'Zebra ZT411 — przemysłowa 4" RFID UHF dla produkcji, logistyki i pharma. 600 dpi, linerless. ZT41142-T0E0000Z od 5 131 zł netto.',
     description: `Zebra ZT411 to najlepszy wybór dla zakładów produkcyjnych i centrów logistycznych wymagających wytrzymałej drukarki etykiet przemysłowej klasy z rozdzielczością 203/300/600 dpi.
 
 Zebra ZT411 to przemysłowa drukarka etykiet klasy mid-range z kolorowym ekranem dotykowym 4,3" — bezpośredni następca legendarnego modelu Zebra ZT410. Zaprojektowana do intensywnej pracy w magazynach, centrach dystrybucyjnych i na liniach produkcyjnych, ZT411 łączy wytrzymałą metalową konstrukcję z intuicyjnym interfejsem dotykowym i platformą zarządzania Link-OS. Dostępna w trzech rozdzielczościach: 203 dpi (standard logistyczny, 356 mm/s), 300 dpi (drobne kody 2D i etykiety cenowe, 254 mm/s) i 600 dpi (mikro-etykiety elektroniczne i jubilerskie, 152 mm/s).
@@ -4437,6 +4511,8 @@ Platforma Link-OS umożliwia zdalne zarządzanie flotą drukarek z poziomu Print
 Opcje obsługi mediów: odklejak (peeler) do automatycznego odklejania etykiet od podłoża, gilotyna (cutter) do automatycznego cięcia, nawijak podkładu (liner takeup) i nawijak etykiet (full rewind). Wersje D9E wyposażone są w gilotynę linerless do druku etykiet bez podkładu. Dwuskrzydłowe drzwi mediów z dużym przezroczystym oknem ułatwiają załadunek i kontrolę poziomu materiałów.
 
 Podsumowanie: Dla kogo jest Zebra ZT411? To optymalny wybór dla firm potrzebujących drukarki przemysłowej z dotykowym ekranem, RFID i trzema rozdzielczościami — magazyny z dużym wolumenem etykiet (10 000+/dzień), centra dystrybucyjne, linie produkcyjne z etykietowaniem inline, farmacja i healthcare (etykiety laboratoryjne, banku krwi), retail (etykiety cenowe, compliance). Cena od 5 131 zł netto. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies z 20-letnim doświadczeniem w branży AutoID.
+
+Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -4616,6 +4692,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'TAKMA jest autoryzowanym partnerem Zebra Technologies z 20-letnim doświadczeniem w branży AutoID. Oferujemy: doradztwo w doborze konfiguracji (rozdzielczość, opcje), konfigurację i uruchomienie drukarki, szkolenie operatorów, serwis gwarancyjny i pogwarancyjny w Polsce, rozszerzenie gwarancji Zebra OneCare. Kontakt: takma.com.pl lub formularz zapytania na stronie produktu.',
       },
       {
+        question: 'Gdzie serwisować drukarki Zebra przemysłowe w Polsce?',
+        answer: 'Serwis przemysłowych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra z doświadczeniem w naprawach serii ZT. Oferuje naprawę głowic, wymianę wałków dociskowych, czyszczenie toru mediów i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis na miejscu u klienta (on-site) na terenie całej Polski.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZT411?',
         answer: 'Alternatywami są: Zebra ZT421 (szersza, 6"), Honeywell PX940, TSC MH361T, SATO CL4NX Plus.',
       },
@@ -4683,8 +4763,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zt421',
     name: 'Zebra ZT421',
     shortDescription: 'Zebra ZT421 — przemysłowa drukarka etykiet 6" z ekranem dotykowym 4,3", następca ZT420. 203/300 dpi, do 305 mm/s, RFID opcja, Link-OS',
-    seoTitle: 'Drukarka etykiet Zebra ZT421 — przemysłowa 6" RFID',
-    seoDescription: 'Zebra ZT421 (ZT42162) — drukarka etykiet 6 cali do dużych etykiet i etykiet paletowych, RFID UHF. ZT421 Zebra: 168 mm, GS1. ZT42162-T0E0000Z od 9 416 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZT421 — przemysłowa 6" RFID | od 9 416 zł',
+    seoDescription: 'Zebra ZT421 — przemysłowa 6" RFID UHF do etykiet paletowych i logistyki GS1. 168 mm, ZT42162-T0E0000Z od 9 416 zł netto.',
     description: `Zebra ZT421 to najlepszy wybór dla centrów dystrybucyjnych i magazynów potrzebujących szerokoformatowej drukarki przemysłowej 6" do etykiet paletowych GS1-128 i oznaczeń compliance.
 
 Zebra ZT421 to przemysłowa drukarka etykiet klasy mid-range o szerokości druku 6,6" (168 mm) — bezpośredni następca modelu Zebra ZT420 i szersza wersja drukarki ZT411. Zaprojektowana do druku szerokich etykiet paletowych, logistycznych i compliance labels, ZT421 łączy wytrzymałą metalową konstrukcję z kolorowym ekranem dotykowym 4,3" i platformą zarządzania Link-OS. Dostępna w dwóch rozdzielczościach: 203 dpi (standard logistyczny, 305 mm/s) i 300 dpi (drobne kody 2D i etykiety produktowe, 305 mm/s).
@@ -4698,6 +4778,8 @@ Platforma Link-OS umożliwia zdalne zarządzanie flotą drukarek z poziomu Print
 Opcje obsługi mediów: odklejak (peeler) z nawijakiem etykiet (full rewind) do automatycznego odklejania i nawijania, gilotyna (cutter) do automatycznego cięcia z tacką zbierającą. Dwuskrzydłowe drzwi mediów z dużym przezroczystym oknem ułatwiają załadunek rolek o szerokości do 178 mm.
 
 Podsumowanie: Dla kogo jest Zebra ZT421? To optymalny wybór gdy potrzebujesz szerokich etykiet powyżej 104 mm — etykiety paletowe GS1-128 (150×100 mm), oznaczenia A5, szerokie etykiety compliance, etykiety na duże produkty i opakowania zbiorcze. Magazyny z etykietowaniem palet (SSCC/GS1), centra dystrybucyjne, logistyka 3PL, produkcja z dużymi opakowaniami, retail (oznaczenia regałowe). Cena od 9 416 zł netto. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies z 20-letnim doświadczeniem w branży AutoID.
+
+Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -4865,6 +4947,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'TAKMA jest autoryzowanym partnerem Zebra Technologies z 20-letnim doświadczeniem w branży AutoID. Oferujemy: doradztwo w doborze konfiguracji (rozdzielczość, opcje mediów), konfigurację i uruchomienie drukarki, szkolenie operatorów, serwis gwarancyjny i pogwarancyjny w Polsce, rozszerzenie gwarancji Zebra OneCare. Kontakt: takma.com.pl lub formularz zapytania na stronie produktu.',
       },
       {
+        question: 'Gdzie serwisować drukarki Zebra przemysłowe w Polsce?',
+        answer: 'Serwis przemysłowych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra z doświadczeniem w naprawach serii ZT. Oferuje naprawę głowic, wymianę wałków dociskowych, czyszczenie toru mediów i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis na miejscu u klienta (on-site) na terenie całej Polski.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZT421?',
         answer: 'Alternatywami są: Zebra ZT411 (węższa, 4"), Honeywell PX940 Wide, TSC MH641T.',
       },
@@ -4926,8 +5012,8 @@ const industrialPrinters: Product[] = [
     slug: 'zebra-zt510',
     name: 'Zebra ZT510',
     shortDescription: 'Zebra ZT510 — przemysłowa drukarka etykiet 4" klasy ekonomicznej, następca 105SLPlus. 203/300 dpi, do 305 mm/s, NFC/Print Touch, Link-OS, praca 24/7',
-    seoTitle: 'Drukarka etykiet Zebra ZT510 — przemysłowa 24/7 produkcja',
-    seoDescription: 'Zebra ZT510 (ZT51042) — drukarka etykiet 24/7 do produkcji ciągłej, następca 105SLPlus. ZT510 Zebra: 305 mm/s, metalowa, NFC. ZT51042-T0E0000Z od 8 490 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZT510 — przemysłowa 24/7 produkcja | od 8 489 zł',
+    seoDescription: 'Zebra ZT510 — przemysłowa 4" 24/7 dla produkcji i logistyki. Metalowa, NFC, 305 mm/s. ZT51042-T0E0000Z od 8 489 zł netto.',
     description: `Zebra ZT510 to najlepszy wybór dla firm szukających ekonomicznej drukarki przemysłowej do pracy 24/7 jako następca kultowej 105SLPlus.
 
 Zebra ZT510 to przemysłowa drukarka etykiet klasy ekonomicznej, będąca bezpośrednim następcą kultowej drukarki 105SLPlus — jednej z najszerzej stosowanych drukarek przemysłowych w historii Zebra. ZT510 łączy sprawdzoną wytrzymałość metalowej konstrukcji z nowoczesną platformą Link-OS, technologią NFC/Print Touch i pamięcią 512 MB RAM / 2 GB Flash. Drukarka jest zaprojektowana do nieprzerwanej pracy 24/7 w środowiskach produkcyjnych, magazynowych i logistycznych, gdzie wymagana jest niezawodność przy optymalnym budżecie.
@@ -4939,6 +5025,8 @@ ZT510 jest dostępna w dwóch rozdzielczościach: 203 dpi (standard do etykiet l
 Podświetlany wieloliniowy wyświetlacz LCD z intuicyjnym menu i fizycznymi przyciskami nawigacyjnymi zapewnia prostą obsługę bez potrzeby szkolenia. Technologia NFC/Print Touch umożliwia szybkie parowanie i konfigurację za pomocą smartfona — wystarczy przyłożyć telefon do drukarki. Link-OS z pakietem Zebra Print DNA obejmuje: PrintSecure (szyfrowanie komunikacji), Profile Manager Enterprise (centralne zarządzanie flotą drukarek), Virtual Devices (emulacja starszych modeli) oraz Alert (system powiadomień o zdarzeniach). Opcjonalny ZBI 2.0 (Zebra BASIC Interpreter) pozwala na autonomiczne aplikacje bez komputera.
 
 Zebra ZT510 to idealna drukarka dla firm, które potrzebują przemysłowej wytrzymałości i pracy 24/7, ale nie wymagają kolorowego ekranu dotykowego czy rozdzielczości 600 dpi — oferowanych przez droższą serię ZT600. Zastępuje model 105SLPlus z pełną kompatybilnością wsteczną szablonów ZPL — migracja nie wymaga modyfikacji oprogramowania. W porównaniu z ZT610: ZT510 ma mniejszą pamięć RAM (512 MB vs 1 GB), monochromatyczny LCD zamiast kolorowego dotykowego, ale taką samą prędkość druku, metalową konstrukcję i niezawodność 24/7 — w niższej cenie.
+
+Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -5106,6 +5194,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'ZT510 waży 22,7 kg i ma wymiary 512 × 268 × 396 mm (D×S×W). To taka sama waga jak ZT610, ponieważ obie drukarki mają pełną metalową konstrukcję klasy przemysłowej. Do porównania: ZT411 (mid-range) waży 12,5 kg.',
       },
       {
+        question: 'Gdzie serwisować drukarki Zebra przemysłowe w Polsce?',
+        answer: 'Serwis przemysłowych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra z doświadczeniem w naprawach serii ZT. Oferuje naprawę głowic, wymianę wałków dociskowych, czyszczenie toru mediów i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis na miejscu u klienta (on-site) na terenie całej Polski.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZT510?',
         answer: 'Alternatywami są: Zebra ZT610 (wyższa klasa z ekranem dotykowym), Zebra ZT411 (mid-range z RFID), Honeywell PM45, TSC MH261T.',
       },
@@ -5159,8 +5251,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zt610',
     name: 'Zebra ZT610',
     shortDescription: 'Zebra ZT610 — przemysłowa drukarka etykiet 4" klasy heavy-duty, następca 110Xi4. 203/300/600 dpi, do 356 mm/s, ekran dotykowy 4,3", RFID opcja, Link-OS, praca 24/7',
-    seoTitle: 'Drukarka etykiet Zebra ZT610 — heavy-duty 4" RFID 600 dpi',
-    seoDescription: 'Zebra ZT610 (ZT61042) — najlepsza drukarka przemysłowa heavy-duty 4", RFID do fabryki. ZT610 Zebra: 600 dpi, 356 mm/s, LCD 4,3". ZT61042-T0E0100Z od 10 432 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZT610 — heavy-duty 4" RFID 600 dpi | od 10 431 zł',
+    seoDescription: 'Zebra ZT610 — heavy-duty 4" RFID UHF dla fabryk i przemysłu. 600 dpi, 356 mm/s, LCD 4,3". ZT61042-T0E0100Z od 10 431 zł netto.',
     description: `Zebra ZT610 to najlepszy wybór dla centrów dystrybucyjnych i linii produkcyjnych wymagających najwyższej klasy drukarki przemysłowej 4" z trwałością Xi i rozdzielczością do 600 dpi.
 
 Zebra ZT610 to przemysłowa drukarka etykiet klasy heavy-duty, będąca bezpośrednim następcą legendarnej serii 110Xi4 — jednej z najdłużej produkowanych i najszerzej stosowanych drukarek przemysłowych na świecie. ZT610 łączy sprawdzoną wytrzymałość metalowej konstrukcji Xi z nowoczesną platformą Link-OS, kolorowym ekranem dotykowym 4,3" i pamięcią 1 GB RAM / 2 GB Flash. Drukarka jest zaprojektowana do nieprzerwanej pracy 24/7 w najbardziej wymagających środowiskach produkcyjnych, magazynowych i logistycznych.
@@ -5174,6 +5266,8 @@ Kolorowy dotykowy wyświetlacz 4,3" (opcja — wersja bazowa ma wyświetlacz mon
 Łączność standardowa obejmuje USB 2.0, RS-232 Serial, Gigabit Ethernet (10/100/1000) i Bluetooth 4.1 oraz dwa porty USB Host do integracji plug-and-play z czytnikami kodów i pamięciami USB. Dwa otwarte sloty komunikacyjne pozwalają na rozbudowę o Wi-Fi 802.11ac, port równoległy (LPT) lub dodatkowy interfejs Ethernet. RFID UHF (EPC Gen 2 V2, ISO 18000-63) jest instalowany w terenie w zaledwie 5 minut — bez konieczności wysyłki do serwisu.
 
 Zebra ZT610 to idealna drukarka dla zakładów produkcyjnych, centrów dystrybucji, magazynów wysokiego składowania i firm logistycznych, które potrzebują niezawodnego druku 24/7 z opcją 600 dpi do specjalistycznych zastosowań. Zastępuje modele 110Xi4 i ZM400 z pełną kompatybilnością wsteczną szablonów ZPL — migracja nie wymaga modyfikacji oprogramowania.
+
+Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -5347,6 +5441,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'ZT610 waży 22,7 kg i ma wymiary 505 × 268 × 396 mm (D×S×W). To solidna drukarka klasy heavy-duty z całkowicie metalową obudową. Do porównania: ZT411 (mid-range) waży 12,5 kg, a ZT620 (6") 26 kg.',
       },
       {
+        question: 'Gdzie serwisować drukarki Zebra przemysłowe w Polsce?',
+        answer: 'Serwis przemysłowych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra z doświadczeniem w naprawach serii ZT. Oferuje naprawę głowic, wymianę wałków dociskowych, czyszczenie toru mediów i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis na miejscu u klienta (on-site) na terenie całej Polski.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZT610?',
         answer: 'Alternatywami są: Zebra ZT620 (szersza, 6"), Honeywell PX940, SATO CL6NX Plus.',
       },
@@ -5398,8 +5496,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zt620',
     name: 'Zebra ZT620',
     shortDescription: 'Zebra ZT620 — przemysłowa drukarka etykiet 6" klasy heavy-duty, następca 170Xi4. 203/300 dpi, do 305 mm/s, ekran dotykowy 4,3", RFID opcja, Link-OS, praca 24/7',
-    seoTitle: 'Drukarka etykiet Zebra ZT620 — heavy-duty 6" przemysłowa',
-    seoDescription: 'Zebra ZT620 (ZT62062) — heavy-duty drukarka przemysłowa szerokoformatowa 6", etykiety paletowe, RFID. ZT620 Zebra: 305 mm/s, LCD 4,3". ZT62062-T0E0100Z od 12 417 zł netto.',
+    seoTitle: 'Drukarka etykiet Zebra ZT620 — heavy-duty 6" RFID | od 12 416 zł',
+    seoDescription: 'Zebra ZT620 — heavy-duty 6" RFID do etykiet paletowych i przemysłu. 305 mm/s, LCD 4,3". ZT62062-T0E0100Z od 12 416 zł netto.',
     description: `Zebra ZT620 to najlepszy wybór dla magazynów wysokiego składowania i centrów dystrybucji wymagających szerokoformatowej drukarki przemysłowej 6" klasy heavy-duty do pracy 24/7.
 
 Zebra ZT620 to przemysłowa drukarka etykiet klasy heavy-duty o szerokości druku 168 mm (6,6"), będąca bezpośrednim następcą legendarnej serii 170Xi4 — najszerzej stosowanej szerokoformatowej drukarki przemysłowej na świecie. ZT620 łączy sprawdzoną wytrzymałość metalowej konstrukcji Xi z nowoczesną platformą Link-OS, kolorowym ekranem dotykowym 4,3" i pamięcią 1 GB RAM / 2 GB Flash. Drukarka jest zaprojektowana do nieprzerwanej pracy 24/7 w centrach dystrybucji, magazynach wysokiego składowania i zakładach produkcyjnych, gdzie wymagane są szerokie etykiety paletowe, logistyczne i wysyłkowe.
@@ -5411,6 +5509,8 @@ ZT620 jest dostępna w dwóch rozdzielczościach: 203 dpi (standard do etykiet l
 Kolorowy dotykowy wyświetlacz 4,3" (opcja — wersja bazowa ma kolorowy LCD) zmienia kolor na czerwony podczas błędów, co pozwala operatorom zidentyfikować problem z odległości kilku metrów. Uproszczona nawigacja ikonowa grupuje funkcje logicznie, eliminując potrzebę szkolenia. Link-OS z pakietem Zebra Print DNA obejmuje: PrintSecure (szyfrowanie komunikacji), Cloud Connect (integracja z chmurą), Profile Manager (centralne zarządzanie flotą) oraz Visibility Services (monitorowanie stanu drukarek w czasie rzeczywistym). Opcjonalny ZBI 2.0 (Zebra BASIC Interpreter) pozwala na autonomiczne aplikacje — drukarka może pobierać dane z plików, baz danych lub czytników i drukować bez komputera.
 
 Zebra ZT620 to idealna drukarka dla centrów dystrybucji, magazynów cross-docking, zakładów chemicznych (etykiety GHS) i firm logistycznych 3PL, które potrzebują niezawodnego druku szerokich etykiet 24/7. Zastępuje modele 170Xi4 i ZM600 z pełną kompatybilnością wsteczną szablonów ZPL — migracja nie wymaga modyfikacji oprogramowania.
+
+Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -5586,6 +5686,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'ZT620 jest bezpośrednim następcą 170Xi4. Obsługuje ten sam język ZPL/ZPL II, więc istniejące szablony etykiet będą działać bez zmian. Szerokość druku pozostaje 6" (168 mm). Zmieniły się part numbery akcesoriów (głowice, obcinacze). Ethernet jest teraz standardem, Wi-Fi jest opcją. Migracja nie wymaga zmian w systemie WMS/ERP — wystarczy zainstalować nowe sterowniki.',
       },
       {
+        question: 'Gdzie serwisować drukarki Zebra przemysłowe w Polsce?',
+        answer: 'Serwis przemysłowych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra z doświadczeniem w naprawach serii ZT. Oferuje naprawę głowic, wymianę wałków dociskowych, czyszczenie toru mediów i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis na miejscu u klienta (on-site) na terenie całej Polski.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZT620?',
         answer: 'Alternatywami są: Zebra ZT610 (węższa, 4"), Honeywell PX940 Wide, TSC MH641T.',
       },
@@ -5643,8 +5747,8 @@ const mobilePrinters: Product[] = [
     slug: 'zebra-zq511',
     name: 'Zebra ZQ511',
     shortDescription: 'Zebra ZQ511 — wzmocniona mobilna drukarka etykiet 3", MIL-STD-810G, IP54, upadki z 2 m',
-    seoTitle: 'Mobilna drukarka Zebra ZQ511 — wzmocniona 3" MIL-STD',
-    seoDescription: 'Zebra ZQ511 (ZQ51-BUE) — wzmocniona mobilna drukarka etykiet 3" MIL-STD-810G, na wózek widłowy, IP54. ZQ511 Zebra: -20°C. ZQ51-BUE001E-00 od 2 288 zł netto.',
+    seoTitle: 'Mobilna drukarka Zebra ZQ511 — wzmocniona 3" MIL-STD | od 2 287 zł',
+    seoDescription: 'Zebra ZQ511 — mobilna 3" MIL-STD dla kurierów, magazynów i serwisu. IP54, -20°C, BT+Wi-Fi. ZQ51-BUE001E-00 od 2 287 zł netto.',
     description: `Zebra ZQ511 to najlepszy wybór dla firm kurierskich i magazynów potrzebujących wzmocnionej mobilnej drukarki 3" do druku paragonów i etykiet w najtrudniejszych warunkach terenowych.
 
 Zebra ZQ511 to wzmocniona mobilna drukarka etykiet i paragonów o szerokości druku 3 cale (72 mm), zaprojektowana do najtrudniejszych warunków pracy w terenie, magazynie i dostawie. Następca modelu ZQ510.
@@ -5664,6 +5768,8 @@ Konstrukcja odporna na upadki z 2 metrów na beton (3 m z egzoszkieletem), 1300 
 Bateria PowerPrecision+ Li-Ion 3250 mAh (opcjonalnie 6500 mAh) z technologią monitorowania stanu baterii. Dual-radio: Bluetooth 4.1 (EDR + LE) i Wi-Fi 802.11ac (2,4/5 GHz) z jednoczesną pracą obu interfejsów. NFC (Zebra Print Touch) do parowania jednym dotknięciem. USB 2.0 OTG do serwisu.
 
 Zebra ZQ511 zastępuje model ZQ510. Baterie PowerPrecision+ i ładowarki są współdzielone w ramach serii ZQ5x0 (ZQ511, ZQ521), natomiast etui i egzoszkielety mają dedykowane wersje dla modelu 3" (ZQ511) i 4" (ZQ521). Dostępna w wersjach Bluetooth-only i Bluetooth + Wi-Fi, z opcją druku etykiet bez podkładu (linerless) i wersją RFID (ZQ511R).
+
+Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -5888,6 +5994,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'Tak — ZQ511 działa na systemie Link-OS, który umożliwia zdalne zarządzanie flotą: aktualizacja firmware, konfiguracja ustawień, monitorowanie stanu baterii i głowicy, diagnostyka błędów, wysyłanie szablonów etykiet. Dostępne przez Zebra Profile Manager (chmura) lub Zebra Printer Management (on-premise). Obsługa SNMP do integracji z istniejącymi narzędziami IT.',
       },
       {
+        question: 'Gdzie serwisować mobilne drukarki Zebra w Polsce?',
+        answer: 'Serwis mobilnych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę baterii i modułów komunikacyjnych, kalibrację i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis wysyłkowy w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZQ511?',
         answer: 'Alternatywami są: Zebra ZQ521 (szersza, 4"), Honeywell RP4f, Brother RJ-3250WBL.',
       },
@@ -5910,8 +6020,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zq521',
     name: 'Zebra ZQ521',
     shortDescription: 'Zebra ZQ521 — wzmocniona mobilna drukarka etykiet 4", MIL-STD-810G, IP54, upadki z 2,1 m, etykiety wysyłkowe 100×150',
-    seoTitle: 'Mobilna drukarka Zebra ZQ521 — 4" etykiety 100×150 mm',
-    seoDescription: 'Zebra ZQ521 (ZQ52-BUE) — mobilna drukarka etykiet 4" do etykiet 100×150 mm, MIL-STD-810G, IP54. ZQ521 Zebra: Wi-Fi+BT, -20°C. ZQ52-BUE001E-00 od 2 979 zł netto.',
+    seoTitle: 'Mobilna drukarka Zebra ZQ521 — 4" etykiety 100×150 mm | od 2 979 zł',
+    seoDescription: 'Zebra ZQ521 — mobilna 4" do etykiet 100×150 mm dla kurierów i logistyki. IP54, -20°C. ZQ52-BUE001E-00 od 2 979 zł netto.',
     description: `Zebra ZQ521 to najlepszy wybór dla firm kurierskich i logistycznych potrzebujących wzmocnionej mobilnej drukarki 4" do druku pełnowymiarowych etykiet wysyłkowych w terenie.
 
 Zebra ZQ521 to wzmocniona mobilna drukarka etykiet i paragonów o szerokości druku 4 cale (104 mm), zaprojektowana do profesjonalnego druku pełnowymiarowych etykiet wysyłkowych bezpośrednio w terenie. Następca modelu ZQ520 i starszy brat kompaktowej ZQ511.
@@ -5933,6 +6043,8 @@ Konstrukcja odporna na upadki z 2,1 metra na beton, 1300 upadków obrotowych z 1
 Bateria PowerPrecision+ Li-Ion 3250 mAh (opcjonalnie 6500 mAh) z technologią monitorowania stanu baterii. Dual-radio: Bluetooth 4.1 (EDR + LE) i Wi-Fi 802.11ac (2,4/5 GHz) z jednoczesną pracą obu interfejsów. NFC (Zebra Print Touch) do parowania jednym dotknięciem. USB 2.0 OTG do serwisu.
 
 Zebra ZQ521 zastępuje model ZQ520. Baterie PowerPrecision+ i ładowarki są współdzielone w ramach serii ZQ5x0 (ZQ511, ZQ521), natomiast etui i egzoszkielety mają dedykowane wersje dla modelu 3-calowego (ZQ511) i 4-calowego (ZQ521). Dostępna w wersjach Bluetooth-only i Bluetooth + Wi-Fi, z opcją druku etykiet bez podkładu (linerless) i wersją RFID (ZQ521R).
+
+Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -6151,6 +6263,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'Tak — ZQ521 działa na systemie Link-OS, który umożliwia zdalne zarządzanie flotą: aktualizacja firmware, konfiguracja ustawień, monitorowanie stanu baterii i głowicy, diagnostyka błędów, wysyłanie szablonów etykiet. Dostępne przez Zebra Profile Manager (chmura) lub Zebra Printer Management (on-premise). Idealne dla firm z 10+ drukarkami mobilnymi.',
       },
       {
+        question: 'Gdzie serwisować mobilne drukarki Zebra w Polsce?',
+        answer: 'Serwis mobilnych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę baterii i modułów komunikacyjnych, kalibrację i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis wysyłkowy w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZQ521?',
         answer: 'Alternatywami są: Zebra ZQ511 (węższa, 3"), Honeywell RP4f, Brother RJ-4250WB.',
       },
@@ -6173,8 +6289,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zq610-plus',
     name: 'Zebra ZQ610 Plus',
     shortDescription: 'Zebra ZQ610 Plus — kompaktowa mobilna drukarka etykiet 2", kolorowy wyświetlacz LCD, Wi-Fi 5/6, IP54',
-    seoTitle: 'Mobilna drukarka Zebra ZQ610 Plus — premium 2" Wi-Fi 6',
-    seoDescription: 'Zebra ZQ610 Plus (ZQ61-AUF) — mobilna drukarka etykiet Wi-Fi 6 premium 2" (48 mm), BT 5.3, LCD, IP54. ZQ610 Plus Zebra: -20°C. ZQ61-AUFAE14-00 od 3 256 zł netto.',
+    seoTitle: 'Mobilna drukarka Zebra ZQ610 Plus — premium 2" Wi-Fi 6 | od 3 256 zł',
+    seoDescription: 'Zebra ZQ610 Plus — mobilna 2" Wi-Fi 6 dla retail, HoReCa i serwisu. BT 5.3, LCD, IP54. ZQ61-AUFAE14-00 od 3 256 zł netto.',
     description: `Zebra ZQ610 Plus to najlepszy wybór dla handlu detalicznego i gastronomii potrzebujących kompaktowej mobilnej drukarki 2" do metek cenowych i potwierdzeń.
 
 Zebra ZQ610 Plus to kompaktowa mobilna drukarka etykiet i paragonów o szerokości druku 2 cale (48 mm) z serii ZQ600 Plus, zaprojektowana do szybkiego drukowania potwierdzeń, metek cenowych i etykiet produktowych w terenie.
@@ -6192,6 +6308,8 @@ Kolorowy wyświetlacz LCD (288×240 px) pokazuje stan baterii, łączność, kol
 Pamięć 512 MB Flash (128 MB dla użytkownika) obsługuje złożone formaty etykiet z kodami 1D/2D, grafiką i logotypami. Języki programowania: CPCL, ZPL, EPL i ZBI 2.0. Czujniki przerwy i czarnej linii w pozycji centralnej.
 
 Baterie PowerPrecision+ (3250 mAh i 6500 mAh) oraz ładowarki 1- i 3-gniazdowe są współdzielone w ramach serii ZQ500/ZQ600. Akcesoria ochronne (futerały, klipsy) mają dedykowane wersje dla serii ZQ610.
+
+Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -6384,6 +6502,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'Przy 150 pokwitowaniach dziennie (3 300/mies.): rolki papierowe ~100 zł/mies., amortyzacja baterii ~20 zł/mies., amortyzacja głowicy ~15 zł/mies. = ok. 135 zł/mies. Druk termiczny bezpośredni nie wymaga taśmy barwiącej. Koszt pojedynczego wydruku: 0,02–0,04 zł.',
       },
       {
+        question: 'Gdzie serwisować mobilne drukarki Zebra w Polsce?',
+        answer: 'Serwis mobilnych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę baterii i modułów komunikacyjnych, kalibrację i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis wysyłkowy w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZQ610 Plus?',
         answer: 'Alternatywami są: Zebra ZQ620 Plus (szersza), Honeywell RP2f, Bixolon SPP-L310.',
       },
@@ -6405,8 +6527,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zq620-plus',
     name: 'Zebra ZQ620 Plus',
     shortDescription: 'Zebra ZQ620 Plus — mobilna drukarka etykiet 3", Wi-Fi 5/6, kolorowy wyświetlacz LCD, IP54, linerless',
-    seoTitle: 'Mobilna drukarka Zebra ZQ620 Plus — 3" linerless WiFi 6',
-    seoDescription: 'Zebra ZQ620 Plus (ZQ62-AUF) — mobilna drukarka etykiet 3" linerless WiFi 6, BT 5.3, LCD, IP54. ZQ620 Plus Zebra: druk bez podkładu. ZQ62-AUFAE14-00 od 3 622 zł netto.',
+    seoTitle: 'Mobilna drukarka Zebra ZQ620 Plus — 3" linerless Wi-Fi 6 | od 3 621 zł',
+    seoDescription: 'Zebra ZQ620 Plus — mobilna 3" linerless Wi-Fi 6 dla logistyki i kurierów. BT 5.3, LCD, IP54. ZQ62-AUFAE14-00 od 3 621 zł netto.',
     description: `Zebra ZQ620 Plus to najlepszy wybór dla firm logistycznych i kurierskich potrzebujących mobilnej drukarki 3" nowej generacji z Wi-Fi 6E i Bluetooth 5.3.
 
 Zebra ZQ620 Plus to mobilna drukarka etykiet i paragonów o szerokości druku 3 cale (72 mm) z serii ZQ600 Plus, zaprojektowana do profesjonalnego drukowania etykiet wysyłkowych, metek cenowych i pokwitowań w terenie.
@@ -6424,6 +6546,8 @@ Kolorowy wyświetlacz LCD (288×240 px) pokazuje stan baterii, łączność, kol
 Pamięć 512 MB Flash (128 MB dla użytkownika) obsługuje złożone formaty etykiet z kodami 1D/2D, grafiką i logotypami. Języki programowania: CPCL, ZPL, EPL i ZBI 2.0. Czujniki przerwy i czarnej linii w pozycji centralnej.
 
 Baterie PowerPrecision+ (3250 mAh i 6500 mAh) oraz ładowarki 1- i 3-gniazdowe są współdzielone w ramach serii ZQ500/ZQ600. Futerał ochronny P1031365-029 jest dedykowany dla ZQ620/ZQ620 Plus (3-calowy format).
+
+Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -6633,6 +6757,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'Przy 200 pokwitowaniach dziennie (4 400/mies.): rolki papierowe ~130 zł/mies., amortyzacja baterii ~25 zł/mies., amortyzacja głowicy ~20 zł/mies. = ok. 175 zł/mies. Druk termiczny bezpośredni nie wymaga taśmy barwiącej. Koszt pojedynczego wydruku: 0,03–0,04 zł.',
       },
       {
+        question: 'Gdzie serwisować mobilne drukarki Zebra w Polsce?',
+        answer: 'Serwis mobilnych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę baterii i modułów komunikacyjnych, kalibrację i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis wysyłkowy w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZQ620 Plus?',
         answer: 'Alternatywami są: Zebra ZQ630 Plus (najszersza), Honeywell RP4f, Bixolon SPP-L410.',
       },
@@ -6654,8 +6782,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zq630-plus',
     name: 'Zebra ZQ630 Plus',
     shortDescription: 'Zebra ZQ630 Plus — mobilna drukarka etykiet 4", Wi-Fi 5/6, kolorowy LCD, IP54, bateria 6800 mAh, linerless',
-    seoTitle: 'Mobilna drukarka Zebra ZQ630 Plus — 4" WiFi 6 magazyn',
-    seoDescription: 'Zebra ZQ630 Plus (ZQ63-AUF) — mobilna drukarka etykiet 4" WiFi 6 do magazynu, 100×150 mm, linerless, IP54. ZQ630 Plus Zebra: 6800 mAh. ZQ63-AUFAE14-00 od 4 257 zł netto.',
+    seoTitle: 'Mobilna drukarka Zebra ZQ630 Plus — 4" Wi-Fi 6 magazyn | od 4 257 zł',
+    seoDescription: 'Zebra ZQ630 Plus — mobilna 4" Wi-Fi 6 do magazynów i logistyki. 100×150 mm, linerless, 6800 mAh. ZQ63-AUFAE14-00 od 4 257 zł netto.',
     description: `Zebra ZQ630 Plus to najlepszy wybór dla firm kurierskich i logistycznych, które potrzebują mobilnego druku etykiet wysyłkowych 100×150 mm w terenie.
 
 Zebra ZQ630 Plus to najpotężniejsza mobilna drukarka etykiet z serii ZQ600 Plus — jedyna 4-calowa (do 104 mm szerokości druku) drukarka przenośna Zebra nowej generacji. Drukuje etykiety wysyłkowe 100×150 mm, etykiety paletowe i pokwitowania bez konieczności stacji biurkowej.
@@ -6671,6 +6799,8 @@ Zebra ZQ630 Plus to jedyna mobilna drukarka 4-calowa z serii ZQ600 Plus, łącz�
 Kolorowy wyświetlacz LCD (288×240 px) informuje o stanie baterii, łączności, kolejce wydruków i diagnostyce. Bateria 6800 mAh (4-cell) zapewnia druk setek dużych etykiet na jednym ładowaniu — ponad 2× więcej niż baterie 3250 mAh w mniejszych modelach ZQ610/ZQ620 Plus.
 
 Waga 1,113 kg z baterią to o 383 g więcej niż ZQ620 Plus (730 g), ale wciąż poniżej 1,2 kg — akceptowalna dla pracy mobilnej z paskiem na ramię lub klipsem do paska. Pamięć 512 MB Flash (128 MB dla użytkownika) i 256 MB RAM obsługuje złożone formaty etykiet z kodami 1D/2D, grafiką i logotypami.
+
+Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -6881,6 +7011,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'Ceny ZQ630 Plus zaczynają się od 4 257 zł netto za wariant Bluetooth (ZQ63-AUFAE14-00). Z Wi-Fi 5: 4 789 zł, z Wi-Fi 6: 4 789 zł. Wariant linerless z Wi-Fi 5: 5 057 zł. Wszystkie warianty mają baterię 6800 mAh, kolorowy LCD i IP54. Wi-Fi 6 zapewnia szybszy roaming i lepszą łączność w dużych magazynach.',
       },
       {
+        question: 'Gdzie serwisować mobilne drukarki Zebra w Polsce?',
+        answer: 'Serwis mobilnych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę baterii i modułów komunikacyjnych, kalibrację i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis wysyłkowy w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZQ630 Plus?',
         answer: 'Alternatywami są: Zebra ZQ620 Plus (węższa), Honeywell RP4f, Brother RJ-4250WB.',
       },
@@ -6903,8 +7037,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zq310-plus',
     name: 'Zebra ZQ310 Plus',
     shortDescription: 'Zebra ZQ310 Plus — kompaktowa mobilna drukarka paragonów i etykiet 2", IP54, Bluetooth 5.0, USB-C, 370 g',
-    seoTitle: 'Mobilna drukarka Zebra ZQ310 Plus — kompaktowa 2" USB-C',
-    seoDescription: 'Zebra ZQ310 Plus (ZQ31-A0E) — kompaktowa mobilna drukarka etykiet 2" USB-C, 370 g, BT 5.0, IP54. ZQ310 Plus Zebra: ZPL. ZQ31-A0E04TE-00 od 1 496 zł netto.',
+    seoTitle: 'Mobilna drukarka Zebra ZQ310 Plus — kompaktowa 2" USB-C | od 1 496 zł',
+    seoDescription: 'Zebra ZQ310 Plus — kompaktowa mobilna 2" dla retail i gastronomii. USB-C, BT 5.0, IP54, 370 g. ZQ31-A0E04TE-00 od 1 496 zł netto.',
     description: `Zebra ZQ310 Plus to najlepszy wybór dla handlu detalicznego i gastronomii szukających najlżejszej mobilnej drukarki Zebra z pełną obsługą ZPL.
 
 Zebra ZQ310 Plus to najlżejsza i najtańsza mobilna drukarka etykiet i paragonów Zebra z serii ZQ300 Plus — waży zaledwie 370 g z baterią i mieści się w dłoni. Szerokość druku 2 cale (48 mm) w rozdzielczości 203 dpi z prędkością do 100 mm/s. Następca oryginalnego modelu ZQ310 z istotnymi ulepszeniami: USB-C, Bluetooth 5.0 i kolorowy wyświetlacz LCD.
@@ -6918,6 +7052,8 @@ Bateria PowerPrecision+ Li-Ion 2280 mAh wystarcza na pełną zmianę przy umiark
 Pamięć 128 MB RAM i 256 MB Flash (48 MB dostępne dla użytkownika) obsługuje szablony etykiet z kodami 1D/2D (Code 128, EAN-13, QR, DataMatrix) i logotypami. Języki programowania CPCL i ZPL gwarantują kompatybilność z systemami WMS, ERP i POS. Platforma Link-OS z pakietem Print DNA umożliwia zdalne zarządzanie flotą drukarek. Kolorowy wyświetlacz LCD informuje o stanie baterii, łączności i statusie mediów.
 
 Zebra ZQ310 Plus to następca modelu ZQ310 z serii ZQ300 — nowa generacja entry-level mobilnych drukarek Zebra z USB-C zamiast Micro-USB i Bluetooth 5.0 zamiast 4.0. Dostępna w wariantach: receipt (paragony ciągłe), receipt + label (z czujnikiem etykiet) i linerless (etykiety bez podkładu). Akcesoria (baterie, ładowarki, futerały) z rodziny MPM są współdzielone z modelem ZQ320 Plus.
+
+Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -7112,6 +7248,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'Ceny ZQ310 Plus zaczynają się od 1 496 zł netto za wariant Bluetooth receipt (ZQ31-A0E04TE-00). Wariant linerless: 1 694 zł. Wariant receipt + label z czujnikiem etykiet: 1 817 zł. Wszystkie warianty mają Bluetooth 5.0, IP54, baterię 2280 mAh, USB-C i kolorowy LCD. ZQ310 Plus to najtańsza mobilna drukarka Zebra — idealna jako pierwsza drukarka mobilna dla firmy.',
       },
       {
+        question: 'Gdzie serwisować mobilne drukarki Zebra w Polsce?',
+        answer: 'Serwis mobilnych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę baterii i modułów komunikacyjnych, kalibrację i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis wysyłkowy w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZQ310 Plus?',
         answer: 'Alternatywami są: Zebra ZQ320 Plus (szersza, 3"), Zebra ZQ210 (budżetowa), Bixolon SPP-R210.',
       },
@@ -7134,8 +7274,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zq320-plus',
     name: 'Zebra ZQ320 Plus',
     shortDescription: 'Zebra ZQ320 Plus — mobilna drukarka paragonów i etykiet 3", IP54, Bluetooth 4.2, Wi-Fi opcja, USB-C, 430 g',
-    seoTitle: 'Mobilna drukarka Zebra ZQ320 Plus — 3" outdoor USB-C',
-    seoDescription: 'Zebra ZQ320 Plus (ZQ32-A0E) — mobilna drukarka etykiet 3" outdoor, Wi-Fi, BT, USB-C, IP54, 430 g. ZQ320 Plus Zebra: paragon i etykieta. ZQ32-A0E04TE-00 od 1 713 zł netto.',
+    seoTitle: 'Mobilna drukarka Zebra ZQ320 Plus — 3" outdoor USB-C | od 1 712 zł',
+    seoDescription: 'Zebra ZQ320 Plus — mobilna 3" outdoor Wi-Fi dla kurierów i gastronomii. USB-C, BT, IP54, 430 g. ZQ32-A0E04TE-00 od 1 712 zł netto.',
     description: `Zebra ZQ320 Plus to najlepszy wybór dla firm kurierskich i gastronomii potrzebujących mobilnej drukarki 3" z opcjonalnym Wi-Fi i pełną obsługą ZPL.
 
 Zebra ZQ320 Plus to mobilna drukarka paragonów i etykiet o szerokości druku 3 cale (72 mm) z nowej generacji ZQ300 Plus — następca popularnego modelu ZQ320. Waży zaledwie 430 g z baterią i oferuje opcjonalne Wi-Fi 802.11ac, którego brakuje w mniejszym modelu ZQ310 Plus.
@@ -7149,6 +7289,8 @@ Bateria PowerPrecision+ Li-Ion 2280 mAh z inteligentnym zarządzaniem energią (
 Pamięć 128 MB RAM i 256 MB Flash obsługuje szablony etykiet z kodami 1D/2D, grafiką i logotypami. CPCL i ZPL zapewniają kompatybilność z istniejącymi systemami. Link-OS z Print DNA umożliwia zdalne zarządzanie flotą, aktualizacje firmware OTA i diagnostykę.
 
 Zebra ZQ320 Plus to upgrade modelu ZQ320: USB-C zamiast Micro-USB, ulepszona elektronika, nowy firmware z Print DNA. Akcesoria (baterie, ładowarki, futerały) z rodziny MPM są współdzielone z modelem ZQ310 Plus. Wariant receipt+label (03RE) z czujnikiem etykiet do druku etykiet samoprzylepnych obok paragonów.
+
+Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -7344,6 +7486,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'Ceny ZQ320 Plus zaczynają się od 1 713 zł netto za wariant Bluetooth receipt (ZQ32-A0E04TE-00). Z Wi-Fi 802.11ac receipt: 1 947 zł. Z Wi-Fi + czujnik etykiet (receipt+label): 2 083 zł. Wszystkie warianty mają IP54, baterię 2280 mAh, NFC i USB-C. ZQ320 Plus to najtańsza mobilna drukarka Zebra 3" — o 25% tańsza od ZQ511.',
       },
       {
+        question: 'Gdzie serwisować mobilne drukarki Zebra w Polsce?',
+        answer: 'Serwis mobilnych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę baterii i modułów komunikacyjnych, kalibrację i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis wysyłkowy w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZQ320 Plus?',
         answer: 'Alternatywami są: Zebra ZQ310 Plus (węższa, 2"), Zebra ZQ220 Plus (budżetowa 3"), Honeywell RP2f.',
       },
@@ -7366,8 +7512,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zq220-plus',
     name: 'Zebra ZQ220 Plus',
     shortDescription: 'Zebra ZQ220 Plus — budżetowa mobilna drukarka paragonów i etykiet 3", IP54, Bluetooth 5.0, NFC, OLED, 390 g',
-    seoTitle: 'Mobilna drukarka Zebra ZQ220 Plus — budżetowa 3" kurier',
-    seoDescription: 'Zebra ZQ220 Plus (ZQ22-B16) — budżetowa mobilna drukarka etykiet do kuriera, 3" (72 mm), IP54, BT 5.0, NFC, OLED. ZQ22-B16B1KE-00 od 576 zł netto.',
+    seoTitle: 'Mobilna drukarka Zebra ZQ220 Plus — budżetowa 3" kurier | od 576 zł',
+    seoDescription: 'Zebra ZQ220 Plus — najtańsza mobilna 3" BT dla kurierów i małych firm. IP54, NFC, OLED. ZQ22-B16B1KE-00 od 576 zł netto.',
     description: `Zebra ZQ220 Plus to najlepszy wybór dla małych firm i punktów sprzedaży szukających najtańszej mobilnej drukarki Zebra 3" z wbudowaną odpornością IP54.
 
 Zebra ZQ220 Plus to budżetowa mobilna drukarka paragonów i etykiet o szerokości druku 3 cale (72 mm) — najtańsza drukarka mobilna Zebra z trzyCalowym drukiem. Waży zaledwie 390 g z baterią i oferuje wbudowane IP54 bez konieczności dokupowania futerału.
@@ -7381,6 +7527,8 @@ Bateria Li-Ion 2500 mAh (7,4 V) wystarcza na min. 500 etykiet na jedno ładowani
 Pamięć 8 MB SDRAM i 16 MB Flash obsługuje szablony z kodami 1D/2D. Języki programowania CPCL i ESC/POS (podzbiór) zapewniają kompatybilność z istniejącymi systemami POS. Czarno-biały wyświetlacz OLED informuje o stanie baterii, łączności Bluetooth i typie nośnika.
 
 Zebra ZQ220 Plus to idealna drukarka dla handlu detalicznego, gastronomii, kurierów i małych firm — tam, gdzie potrzebna jest prosta, lekka i tania mobilna drukarka paragonów 3". W zestawie: drukarka, bateria, kabel USB i klips do paska. Zasilacz sieciowy wymagany osobno.
+
+Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -7548,6 +7696,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'Zebra ZQ220 Plus kosztuje od 576 zł netto (ZQ22-B16B1KE-00) — to najtańsza mobilna drukarka 3" Zebra, 3× tańsza od ZQ320 Plus (1 713 zł). Idealna jako pierwsza mobilna drukarka dla firmy lub do prostych zastosowań w handlu i gastronomii.',
       },
       {
+        question: 'Gdzie serwisować mobilne drukarki Zebra w Polsce?',
+        answer: 'Serwis mobilnych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę baterii i modułów komunikacyjnych, kalibrację i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis wysyłkowy w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZQ220 Plus?',
         answer: 'Alternatywami są: Zebra ZQ320 Plus (wyższa klasa z ZPL i Wi-Fi), Zebra ZQ210 (budżetowa 2"), Bixolon SPP-R310.',
       },
@@ -7570,8 +7722,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zq210',
     name: 'Zebra ZQ210',
     shortDescription: 'Zebra ZQ210 — najlżejsza mobilna drukarka paragonów i etykiet 2", tylko 265 g, Bluetooth 4.1, NFC, OLED, IP43',
-    seoTitle: 'Mobilna drukarka Zebra ZQ210 — najlżejsza 2" 265 g',
-    seoDescription: 'Zebra ZQ210 (ZQ21-A0E) — najlżejsza mobilna drukarka etykiet i paragonów 2" (48 mm), tylko 265 g. ZQ210 Zebra: BT 4.1, NFC, OLED, IP43. ZQ21-A0E01KE-00 od 999 zł netto.',
+    seoTitle: 'Mobilna drukarka Zebra ZQ210 — najlżejsza 2" 265 g | od 999 zł',
+    seoDescription: 'Zebra ZQ210 — najlżejsza mobilna 2" dla HoReCa i retail. BT 4.1, NFC, OLED, IP43, 265 g. ZQ21-A0E01KE-00 od 999 zł netto.',
     description: `Zebra ZQ210 to najlepszy wybór dla firm szukających najlżejszej i najtańszej mobilnej drukarki etykiet 2" do prostych zastosowań w handlu i gastronomii.
 
 Zebra ZQ210 to najlżejsza i najtańsza mobilna drukarka etykiet i paragonów Zebra — waży zaledwie 265 g z baterią (mniej niż smartphone). Szerokość druku 2 cale (48 mm) w rozdzielczości 203 dpi z prędkością do 60 mm/s. Obsługuje nośniki o szerokości 58, 50,8, 40 i 30 mm dzięki wymiennym rozpórkom.
@@ -7583,6 +7735,8 @@ Klasa ochrony IP43 standardowo, IP54 z opcjonalnym futerałem (SG-MPV-SC21-01). 
 Bluetooth 4.1 (Classic + BLE) zapewnia stabilne połączenie z telefonem Android/iOS i terminalem mobilnym. Certyfikat MFi dla urządzeń Apple. Pasywny tag NFC umożliwia parowanie jednym dotknięciem. Wyświetlacz OLED pokazuje status Bluetooth, mediów i ustawienia ciemności druku. Języki programowania CPCL i ESC/POS (podzbiór) gwarantują kompatybilność z popularnymi systemami POS i aplikacjami mobilnymi.
 
 Zebra ZQ210 to drukarka dla handlu detalicznego, gastronomii, targów i eventów — tam, gdzie liczy się niska cena, minimalna waga i prostota obsługi. Dostępna w dwóch wariantach: linered (standardowe paragony i etykiety) i linerless (etykiety bez podkładu). W zestawie: drukarka, bateria, kabel USB i klips do paska.
+
+Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -7761,6 +7915,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'Zebra ZQ210 jest dostępna w dwóch wariantach: linered (ZQ21-A0E01KE-00) za 999 zł netto i linerless (ZQ21-A0E12KE-00) za 1 121 zł netto. Wariant linerless kosztuje ok. 12% więcej, ale daje 40–60% więcej etykiet na rolce dzięki eliminacji podkładu.',
       },
       {
+        question: 'Gdzie serwisować mobilne drukarki Zebra w Polsce?',
+        answer: 'Serwis mobilnych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę baterii i modułów komunikacyjnych, kalibrację i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis wysyłkowy w całej Polsce.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZQ210?',
         answer: 'Alternatywami są: Zebra ZQ310 Plus (wyższa klasa z ZPL), Zebra ZQ220 Plus (3", tańsza), Bixolon SPP-R210.',
       },
@@ -7788,6 +7946,9 @@ const scanners: Product[] = [
     id: 'zebra-ds2208',
     slug: 'zebra-ds2208',
     name: 'Zebra DS2208',
+    sameAs: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-handheld-scanners/ds2200-series.html',
+    seoTitle: 'Skaner kodów Zebra DS2208 — 2D imager, USB, gwarancja 5 lat | od 352 zł',
+    seoDescription: 'Zebra DS2208 (DS2208-SR00007ZZWW) — przewodowy skaner 2D USB, następca LS2208. Czyta QR, DataMatrix, e-recepty. Kasy, apteki, biura. IP52, 5 lat gwarancji. Cena od 352 zł netto.',
     shortDescription: 'Zebra DS2208 — przewodowy czytnik kodów 1D/2D USB, następca LS2208',
     description: `Dla kogo? Zebra DS2208 to uniwersalny czytnik (skaner) kodów kreskowych 1D i 2D przeznaczony do kas fiskalnych, aptek, biur, bibliotek i lekkich stanowisk magazynowych. Bezpośredni następca legendarnego LS2208 — z pełną kompatybilnością kabli i podstawek.
 
@@ -7796,6 +7957,8 @@ Imager 2D z matrycą CMOS odczytuje wszystkie popularne formaty kodów: EAN-13, 
 DS2208 spełnia wymagania dyrektywy antyfałszywkowej FMD (Falsified Medicines Directive) — odczytuje kody DataMatrix na opakowaniach leków do weryfikacji w systemie KOWAL/NMVS. Wersja DS2208-HC z antybakteryjną obudową dedykowana jest dla placówek medycznych.
 
 Plug and Play: po podłączeniu kabla USB skaner emuluje klawiaturę (HID) i natychmiast „wpisuje" zeskanowany kod do aktywnego pola — działa z każdym programem kasowym, aptecznym, ERP i WMS bez instalacji sterowników. Zaawansowana konfiguracja przez aplikację Zebra 123Scan.
+
+Koszt posiadania (TCO): skaner Zebra DS2208 z gwarancją 5 lat i odpornością IP52 na wielokrotne upadki z 1,5 m minimalizuje koszty napraw i wymiany — w 5-letnim cyklu TCO jest niższy niż tańsze skanery z gwarancją 1–2 lata. Serwis w Polsce: serwis-zebry.pl.
 
 Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie entry-level. Szczegółowa dokumentacja techniczna: zebra.com/ds2200-series.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -7931,6 +8094,10 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
         answer: 'DS2208 wytrzymuje wielokrotne upadki z wysokości 1,5 m na beton (warunki kasowe). Klasa IP52 chroni przed pyłem i kroplami wody. Temperatura pracy 0–50°C. To urządzenie biurowo-kasowe — do magazynów z trudnymi warunkami lepszy jest skaner przemysłowy IP67 lub terminal mobilny z wbudowanym skanerem.',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra DS2208 w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów DS2208, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra DS2208?',
         answer: 'W zbliżonej klasie cenowej: Honeywell Voyager 1470g (2D, USB, ~500–600 zł, gwarancja 3 lata) i Datalogic Gryphon GD4320 (2D, USB, ~550–650 zł, gwarancja 3 lata). DS2208 wyróżnia się 5-letnią gwarancją, kompatybilnością z akcesoriami LS2208 oraz szeroką bazą serwisową Zebra w Polsce.',
       },
@@ -7938,6 +8105,7 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds2208/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/General-Purpose-Scanners/Handheld-Scanners/DS2200-Series/spec-sheet/ds2200-series-spec-sheet-en-us.pdf', size: '0.5 MB' },
+      { name: 'Strona produktu Zebra DS2208 (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-handheld-scanners/ds2200-series.html', size: 'Online' },
     ],
     createdAt: '2022-11-05',
   },
@@ -7945,6 +8113,8 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
     id: 'zebra-ds8208',
     slug: 'zebra-ds8208',
     name: 'Zebra DS8208',
+    seoTitle: 'Skaner kodów Zebra DS8208 — 2 MP PRZM, EAS, zasięg 70 cm | od 1 027 zł',
+    seoDescription: 'Zebra DS8208 — przewodowy skaner 2D premium z sensorem 2 MP PRZM, zasięg 70 cm, EAS dezaktywator, gwarancja 5 lat, IP52, OCR. Kasy, retail, apteki. Cena od 1 027 zł netto.',
     shortDescription: 'Zebra DS8208 — Premium skaner 2D z czujnikiem 2 MP, kasy, retail, EAS',
     description: `Dla kogo? Zebra DS8208 to skaner ręczny klasy premium przeznaczony dla handlu detalicznego, supermarketów, sklepów wielkopowierzchniowych, aptek sieciowych i stanowisk obsługi zwrotów. Następca serii DS4608 — z 2-megapikselowym czujnikiem PRZM nowej generacji.
 
@@ -7953,6 +8123,8 @@ Czujnik 2 MP (1600 × 1200 px) redefiniuje wydajność skanowania — odczytuje 
 Wbudowany dezaktywator EAS (Electronic Article Surveillance) w wariancie VCWW automatycznie wyłącza etykiety antykradzieżowe przy skanowaniu — bez dodatkowego urządzenia. Przycisk wielofunkcyjny umożliwia przypisanie najczęstszych operacji (przełączanie trybów, odczyt RFID) jednym kliknięciem.
 
 Konstrukcja odporna na upadki z 3 m na beton (MIL-STD) i 2000 wielokrotnych wstrząsów, klasa IP52. Bezstykowe ładowanie indukcyjne eliminuje zużycie złączy. Bateria PowerPrecision+ (3500 mAh) zapewnia do 100 000 skanów na ładowaniu w modelu bezprzewodowym DS8288. Alternatywnie: superkondensator PowerCap z pełnym ładowaniem w 35 sekund.
+
+Koszt posiadania (TCO): skaner Zebra DS8208 z gwarancją 5 lat i odpornością na upadki z 3 m (MIL-STD) radykalnie zmniejsza koszty napraw na kasach o dużym ruchu — IP52 i 2000 wstrząsów eliminują przestoje. Serwis w Polsce: serwis-zebry.pl.
 
 Gwarancja producenta 60 miesięcy (5 lat). Zebra DNA (123Scan, DataCapture DNA) umożliwia masową konfigurację i zarządzanie flotą skanerów. Szczegółowa dokumentacja: zebra.com/ds82-series.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -8051,6 +8223,10 @@ Gwarancja producenta 60 miesięcy (5 lat). Zebra DNA (123Scan, DataCapture DNA) 
         answer: 'Zebra udziela gwarancji 60 miesięcy (5 lat) na DS8208 — jednej z najdłuższych w klasie premium. Opcjonalnie: Zebra OneCare Select/Essential z rozszerzoną ochroną. TAKMA zapewnia serwis gwarancyjny i pogwarancyjny we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra).',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra DS8208 w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów DS8208, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra DS8208?',
         answer: 'W segmencie premium: Honeywell Xenon Ultra 1962g (2D, USB, porównywalna klasa), Datalogic Magellan 1500i (prezentacyjny, do kas). W niższym segmencie: [Zebra DS2208](/produkt/zebra-ds2208) od 352 zł (entry-level 2D, 5 lat gwarancji). DS8208 wyróżnia się czujnikiem 2 MP, zasięgiem 70 cm i opcją EAS.',
       },
@@ -8058,6 +8234,7 @@ Gwarancja producenta 60 miesięcy (5 lat). Zebra DNA (123Scan, DataCapture DNA) 
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds8208/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/General-Purpose-Scanners/Handheld-Scanners/DS8200-Series/spec-sheet/ds82-series-spec-sheet-pl-pl.pdf', size: '0.4 MB' },
+      { name: 'Strona produktu Zebra DS8208 (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-handheld-scanners/ds82-series.html', size: 'Online' },
     ],
     createdAt: '2026-02-26',
   },
@@ -8065,6 +8242,9 @@ Gwarancja producenta 60 miesięcy (5 lat). Zebra DNA (123Scan, DataCapture DNA) 
     id: 'zebra-li2208',
     slug: 'zebra-li2208',
     name: 'Zebra LI2208',
+    sameAs: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-handheld-scanners/li2208.html',
+    seoTitle: 'Skaner kodów Zebra LI2208 — 1D imager USB, 547 skan/s, gwarancja 5 lat | od 181 zł',
+    seoDescription: 'Zebra LI2208 — przewodowy skaner liniowy 1D USB, następca LS2208. Kasy, apteki, biura. 547 skan/s, zasięg 52 cm, IP52, 5 lat gwarancji. Kolor czarny i biały. Cena od 181 zł netto.',
     shortDescription: 'Zebra LI2208 — ekonomiczny skaner liniowy 1D USB, następca LS2208',
     description: `Dla kogo? Zebra LI2208 to przewodowy skaner liniowy 1D przeznaczony do kas fiskalnych, aptek, sklepów detalicznych, biur i bibliotek. Bezpośredni następca legendarnego laserowego LS2208 — w technologii imager (bez ruchomych części).
 
@@ -8073,6 +8253,8 @@ Skaner liniowy z prędkością 547 skanów/s i zasięgiem do 51,8 cm odczytuje w
 Plug and Play: po podłączeniu kabla USB skaner emuluje klawiaturę (HID) i natychmiast wpisuje zeskanowany kod do aktywnego pola. Działa z każdym programem kasowym, aptecznym i ERP bez sterowników. Konfiguracja przez Zebra 123Scan lub kody z instrukcji.
 
 Kompatybilność z LS2208: LI2208 wykorzystuje te same kable, podstawki i uchwyty co LS2208 — upgrade bez wymiany infrastruktury. Waga 130 g, IP52, upadki z 1,5 m na beton. Gwarancja 60 miesięcy (5 lat).
+
+Koszt posiadania (TCO): skaner Zebra LI2208 z gwarancją 5 lat i odpornością IP52 na wielokrotne upadki z 1,5 m to najniższy TCO w klasie skanerów 1D — brak ruchomych części (vs laser) eliminuje kosztowne naprawy mechaniczne. Serwis w Polsce: serwis-zebry.pl.
 
 Uwaga: LI2208 odczytuje wyłącznie kody 1D. Jeśli potrzebujesz odczytu kodów 2D (QR, DataMatrix) lub kodów z ekranów — wybierz [Zebra DS2208](/produkt/zebra-ds2208) (od 352 zł) lub premium [Zebra DS8208](/produkt/zebra-ds8208) (od 1 027 zł). Dokumentacja: zebra.com/li2208.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -8196,6 +8378,10 @@ Uwaga: LI2208 odczytuje wyłącznie kody 1D. Jeśli potrzebujesz odczytu kodów 
         answer: '[DS2208](/produkt/zebra-ds2208) to imager 2D — czyta kody 1D i 2D (QR, DataMatrix) oraz kody z ekranów za ~352 zł. LI2208 to imager liniowy 1D — czyta tylko kody kreskowe za ~181 zł. Jeśli potrzebujesz wyłącznie kodów EAN/Code 128, LI2208 jest tańszym wyborem. Do QR i DataMatrix — DS2208.',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra LI2208 w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów LI2208, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra LI2208?',
         answer: 'W klasie 1D: Honeywell Voyager 1250g (laserowy, ~200 zł, gwarancja 3 lata), Datalogic QuickScan QD2500 (1D, ~250 zł). Jednak w 2026 r. rekomendujemy przejście na skaner 2D — [DS2208](/produkt/zebra-ds2208) od 352 zł czyta zarówno kody 1D, jak i QR/DataMatrix, a różnica cenowa to ok. 170 zł.',
       },
@@ -8203,6 +8389,7 @@ Uwaga: LI2208 odczytuje wyłącznie kody 1D. Jeśli potrzebujesz odczytu kodów 
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-li2208/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/General-Purpose-Scanners/Handheld-Scanners/LI2208/spec-sheet/li2208-spec-sheet-en-us.pdf', size: '0.3 MB' },
+      { name: 'Strona produktu Zebra LI2208 (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-handheld-scanners/li2208.html', size: 'Online' },
     ],
     createdAt: '2026-02-26',
   },
@@ -8221,6 +8408,8 @@ Sensor 1 MP z procesorem 800 MHz zapewnia natychmiastowy odczyt kodów 1D i 2D �
 Dwa warianty optyki: SR (Standard Range) — uniwersalny do kas i magazynów; HD (High Density) — do jubilerstwa, elektroniki, farmacji, gdzie kody są miniaturowe (2 mil Code 39, 4 mil DataMatrix). Wariant HD z dezaktywatorem EAS Checkpoint (PN: -ZCWW) eliminuje fałszywe alarmy antykradzieżowe — skanowanie i dezaktywacja w jednym ruchu.
 
 Interfejsy: USB (HID, Plug and Play), RS-232 (do kas fiskalnych i systemów POS), RS-485 (IBM/Toshiba 46XX). Konfiguracja przez Zebra 123Scan lub kody z instrukcji. Waga 162 g, IP52, upadki z 1,8 m na beton, 2 000 obrotów w tumbler teście. Gwarancja 60 miesięcy (5 lat).
+
+Koszt posiadania (TCO): skaner Zebra DS4608 z gwarancją 5 lat i odpornością IP52 na wielokrotne upadki z 1,8 m zapewnia niski TCO w środowiskach retail i HoReCa. Brak ruchomych części i serwis w Polsce minimalizują przestoje. Serwis w Polsce: serwis-zebry.pl.
 
 Dokumentacja: zebra.com/ds4608.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -8392,6 +8581,10 @@ Dokumentacja: zebra.com/ds4608.`,
         answer: 'Tak — DS4608 obsługuje interfejs RS-485 (TGCS/IBM 46XX), stosowany w kasach IBM SurePOS i Toshiba. Wymaga kabla IBM dedykowanego (zamawiany osobno).',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra DS4608 w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów DS4608, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra DS4608?',
         answer: 'W klasie mid-range: Honeywell Xenon XP 1950g (2D, USB, porównywalna cena), Datalogic Gryphon GD4590 (2D, lekki). W segmencie niższym: [Zebra DS2208](/produkt/zebra-ds2208) od 352 zł (entry-level 2D, brak EAS). W segmencie premium: [Zebra DS8208](/produkt/zebra-ds8208) od 1 027 zł (sensor 2 MP, zasięg 70 cm).',
       },
@@ -8399,6 +8592,7 @@ Dokumentacja: zebra.com/ds4608.`,
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds4608/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/General-Purpose-Scanners/Handheld-Scanners/DS4600-Series/spec-sheet/ds4608-sr-spec-sheet-en-us.pdf', size: '0.4 MB' },
+      { name: 'Strona produktu Zebra DS4608 (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-handheld-scanners/ds4600-series.html', size: 'Online' },
     ],
     createdAt: '2026-02-26',
   },
@@ -8417,6 +8611,8 @@ Podwójny sensor — Near (1280 × 800 px) do kodów z bliska i Far (1920 × 108
 Multi-Code Data Formatting: jeden naciśnięcie spustu skanuje do 20 kodów jednocześnie — przyspieszenie inwentaryzacji i przyjęcia towaru. Label Parse+ automatycznie ekstrahuje daty ważności, numery partii i dane GS1 z etykiet logistycznych.
 
 Interfejsy: USB, RS-232, Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP — natywnie, bez konwerterów). IP65 + IP68 (pyłoszczelny + zanurzalny), upadki z 3 m na beton, 7 500 obrotów w tumbler teście, praca od -30°C do +50°C. Waga 308 g. Gwarancja 36 miesięcy (3 lata).
+
+Koszt posiadania (TCO): skaner Zebra DS3608-XR z gwarancją 3 lata (dostępny OneCare do 5 lat). Konstrukcja IP65+IP68 i upadki z 3 m minimalizują koszty napraw w magazynach wysokiego składowania — eliminuje potrzebę drabiny do skanowania z 32 m. Serwis w Polsce: serwis-zebry.pl.
 
 Dokumentacja: zebra.com/ds3608.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -8592,6 +8788,10 @@ Dokumentacja: zebra.com/ds3608.`,
         answer: 'Zebra udziela gwarancji 36 miesięcy (3 lata) na skaner. TAKMA zapewnia serwis gwarancyjny i pogwarancyjny we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra). Dostępne plany serwisowe Zebra OneCare.',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra DS3608-XR w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów DS3608-XR, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra DS3608-XR?',
         answer: 'W klasie ultra-rugged dalekiego zasięgu: Honeywell Granit XP 1990iXR (2D, zasięg do 25 m), Datalogic PowerScan 9600 (2D, IP67). W niższym segmencie: [Zebra DS8208](/produkt/zebra-ds8208) od 1 027 zł (zasięg 70 cm, retail). DS3608-XR wyróżnia się zasięgiem 32 m i podwójnym IP65/IP68.',
       },
@@ -8599,6 +8799,7 @@ Dokumentacja: zebra.com/ds3608.`,
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds3608/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/DS3600-Series/spec-sheet/ds3600-xr-spec-sheet-en-us.pdf', size: '0.5 MB' },
+      { name: 'Strona produktu Zebra DS3608-XR (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-xr.html', size: 'Online' },
     ],
     createdAt: '2026-02-26',
   },
@@ -8617,6 +8818,8 @@ Sensor obrazu 1 280 × 960 px (1,2 Mpx) z optyką HD zoptymalizowaną do bliskie
 Multi-Code Data Formatting: jedno naciśnięcie spustu skanuje do 20 kodów jednocześnie — przyspieszenie inspekcji i weryfikacji na linii montażowej. Label Parse+ automatycznie ekstrahuje daty ważności, numery serii i dane GS1 z etykiet farmaceutycznych.
 
 Interfejsy: USB, RS-232, Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP — natywnie). IP65 + IP68, upadki z 3 m na beton, 7 500 obrotów w tumbler teście, praca od -30°C do +50°C. Waga 309 g. Gwarancja 36 miesięcy (3 lata).
+
+Koszt posiadania (TCO): skaner Zebra DS3608-HD z gwarancją 3 lata (dostępny OneCare do 5 lat). Konstrukcja IP65+IP68 i upadki z 3 m eliminują koszty napraw na liniach produkcyjnych elektroniki i farmacji. Serwis w Polsce: serwis-zebry.pl.
 
 Dokumentacja: zebra.com/ds3608.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -8777,6 +8980,10 @@ Dokumentacja: zebra.com/ds3608.`,
         answer: 'Zebra udziela gwarancji 36 miesięcy (3 lata) na skaner. TAKMA zapewnia serwis gwarancyjny i pogwarancyjny we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra). Dostępne plany serwisowe Zebra OneCare.',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra DS3608-HD w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów DS3608-HD, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra DS3608-HD?',
         answer: 'W klasie ultra-rugged High Density: Honeywell Granit XP 1990iHD (kody od 3 mil), Datalogic PowerScan 9600-HD. W niższym segmencie HD: [Zebra DS4608](/produkt/zebra-ds4608) (od 1 178 zł, kody od 3 mil, IP52). DS3608-HD wyróżnia się IP65/IP68, upadkami z 3 m i zakresem -30°C do +50°C.',
       },
@@ -8784,6 +8991,7 @@ Dokumentacja: zebra.com/ds3608.`,
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds3608/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/DS3600-Series/spec-sheet/ds36x8-hd-spec-sheet-en-us.pdf', size: '0.5 MB' },
+      { name: 'Strona produktu Zebra DS3608-HD (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-hd.html', size: 'Online' },
     ],
     createdAt: '2026-02-26',
   },
@@ -8802,6 +9010,8 @@ Sensor obrazu 1 280 × 800 px z polem widzenia 42,8° × 28,8° — szerokie pol
 Multi-Code Data Formatting: jedno naciśnięcie spustu skanuje do 20 kodów jednocześnie — idealne do inwentaryzacji i przyjęcia towaru z etykietami GS1-128. Obsługa kodów z ekranów mobilnych (mGR). Digimarc — odczyt niewidocznych cyfrowych znaków wodnych w opakowaniach.
 
 Interfejsy: USB, RS-232, Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP — natywnie). IP65 + IP68, upadki z 3 m na beton, 7 500 obrotów w tumbler teście, praca od -30°C do +50°C. Waga 305 g. Gwarancja 36 miesięcy (3 lata).
+
+Koszt posiadania (TCO): skaner Zebra DS3608-SR z gwarancją 3 lata (dostępny OneCare do 5 lat). Konstrukcja IP65+IP68 i upadki z 3 m minimalizują koszty napraw w magazynach i centrach dystrybucji — amortyzuje się po ok. 18 miesiącach vs tańsze skanery IP52. Serwis w Polsce: serwis-zebry.pl.
 
 Dokumentacja: zebra.com/ds3608.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -8960,6 +9170,10 @@ Dokumentacja: zebra.com/ds3608.`,
         answer: 'Zebra udziela gwarancji 36 miesięcy (3 lata) na skaner. TAKMA zapewnia serwis gwarancyjny i pogwarancyjny we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra). Dostępne plany serwisowe Zebra OneCare.',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra DS3608-SR w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów DS3608-SR, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra DS3608-SR?',
         answer: 'W klasie ultra-rugged Standard Range: Honeywell Granit XP 1990iSR, Datalogic PowerScan 9600-SR. W niższym segmencie: [Zebra DS4608](/produkt/zebra-ds4608) (od 1 178 zł, IP52, lżejszy). DS3608-SR wyróżnia się IP65/IP68, upadkami z 3 m, zakresem -30°C do +50°C i Industrial Ethernet.',
       },
@@ -8967,6 +9181,7 @@ Dokumentacja: zebra.com/ds3608.`,
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds3608/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/DS3600-Series/spec-sheet/ds36x8-sr-spec-sheet-en-us.pdf', size: '0.5 MB' },
+      { name: 'Strona produktu Zebra DS3608-SR (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-sr.html', size: 'Online' },
     ],
     createdAt: '2026-02-26',
   },
@@ -8985,6 +9200,8 @@ Sensor obrazu 1 280 × 960 px (wyższa rozdzielczość niż SR/XR — 1 280 × 8
 Intelligent Document Capture: automatyczne prostowanie (de-skew), rozjaśnianie i kadrowanie przechwyconych dokumentów. OCR: odczyt czcionek OCR-A, OCR-B, MICR-E13B i numerów seryjnych. Photo Capture: dokumentacja fotograficzna stanów towaru, uszkodzeń, etykiet. Signature Capture: przechwytywanie podpisów elektronicznych do potwierdzeń odbioru.
 
 Multi-Code Data Formatting: jedno naciśnięcie spustu skanuje do 20 kodów jednocześnie. Interfejsy: USB, RS-232, Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP — natywnie). IP65 + IP68, upadki z 3 m na beton, 7 500 obrotów w tumbler teście, praca od -20°C do +50°C. Waga 309 g. Gwarancja 36 miesięcy (3 lata).
+
+Koszt posiadania (TCO): skaner Zebra DS3608-HP z gwarancją 3 lata (dostępny OneCare do 5 lat). Eliminuje potrzebę osobnego aparatu do dokumentacji — document capture, OCR i signature capture w jednym urządzeniu IP65+IP68. Serwis w Polsce: serwis-zebry.pl.
 
 Dokumentacja: zebra.com/ds3608.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -9145,6 +9362,10 @@ Dokumentacja: zebra.com/ds3608.`,
         answer: 'Zebra udziela gwarancji 36 miesięcy (3 lata) na skaner. TAKMA zapewnia serwis gwarancyjny i pogwarancyjny we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra). Dostępne plany serwisowe Zebra OneCare.',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra DS3608-HP w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów DS3608-HP, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra DS3608-HP?',
         answer: 'W klasie ultra-rugged z OCR/document capture: Honeywell Granit XP 1990i z licencją OCR, Datalogic PowerScan 9600 z pakietem Aladdin. W niższym segmencie z document capture: [Zebra DS4608](/produkt/zebra-ds4608) (od 1 178 zł, IP52, document capture w niektórych konfiguracjach). DS3608-HP wyróżnia się IP65/IP68, upadkami z 3 m i natywnym OCR.',
       },
@@ -9152,6 +9373,7 @@ Dokumentacja: zebra.com/ds3608.`,
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds3608/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/DS3600-Series/spec-sheet/ds36x8-hp-spec-sheet-en-us.pdf', size: '0.5 MB' },
+      { name: 'Strona produktu Zebra DS3608-HP (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-hp.html', size: 'Online' },
     ],
     createdAt: '2026-02-26',
   },
@@ -9159,7 +9381,7 @@ Dokumentacja: zebra.com/ds3608.`,
     id: 'zebra-li3608-sr',
     slug: 'zebra-li3608-sr',
     name: 'Zebra LI3608-SR',
-    seoTitle: 'Skaner 1D Zebra LI3608-SR — ultra-rugged, IP65+IP68, -30°C | TAKMA',
+    seoTitle: 'Skaner 1D Zebra LI3608-SR — ultra-rugged, IP65+IP68, -30°C | od 1 343 zł',
     seoDescription: 'Zebra LI3608-SR (LI3608-SR00003VZWW, LI3608-SR3U4600VZW) — przemysłowy skaner liniowy 1D, IP65+IP68, upadki 2,4 m, -30°C do +50°C. Najlżejszy ultra-rugged: 287 g. Od 1 343 zł netto.',
     shortDescription: 'Zebra LI3608-SR — przemysłowy skaner liniowy 1D, IP65+IP68, upadki 2,4 m, -30°C, najlżejszy ultra-rugged (287 g)',
     description: `Dla kogo? Zebra LI3608-SR to przemysłowy skaner liniowy 1D zaprojektowany dla operacji, które korzystają wyłącznie z kodów kreskowych 1D (EAN/UPC, Code 128, GS1-128) — typowych w magazynach FMCG, centrach dystrybucji, na liniach produkcyjnych i w mroźniach. Jeśli nie potrzebujesz skanowania kodów 2D (QR, DataMatrix), LI3608-SR jest optymalnym wyborem pod względem ceny, wagi i wytrzymałości.
@@ -9169,6 +9391,8 @@ Podwójne uszczelnienie IP65 + IP68 — jedyny ultra-rugged 1D na rynku z dwoma 
 Praca od -30°C bez rozgrzewania — natychmiastowe skanowanie po wejściu do mroźni. Zakres roboczy: UPC/EAN (13 mil) od 2,5 do 78,7 cm, Code 39 (20 mil) do 106,7 cm. Sensor liniowy 1 500 px z laserowym celownikiem 655 nm. Wibracja jako potwierdzenie odczytu — niezastąpione w hałaśliwych halach produkcyjnych.
 
 Najlżejszy ultra-rugged na rynku: 287 g — o 18 g lżejszy od [DS3608-SR](/produkt/zebra-ds3608-sr) (305 g) i o 53 g lżejszy od Honeywell Granit (340 g). Przy 5 000+ skanów dziennie każdy gram mniej to mniejsze zmęczenie nadgarstka. Interfejsy: USB, RS-232, Keyboard Wedge. Opcjonalnie Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP) przez adapter EA3600 — bezpośrednia integracja z PLC Siemens i Rockwell.
+
+Koszt posiadania (TCO): skaner Zebra LI3608-SR z gwarancją 3 lata (dostępny OneCare do 5 lat). Konstrukcja IP65+IP68 i upadki z 2,4 m — najlżejszy ultra-rugged 287 g minimalizuje zmęczenie operatora przy 5000+ skanach dziennie i koszty napraw. Serwis w Polsce: serwis-zebry.pl.
 
 Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Management Service (zdalne zarządzanie flotą skanerów), ScanSpeed Analytics (analiza wydajności skanowania). Gwarancja producenta 3 lata. Pełna dokumentacja i instrukcja obsługi po polsku na [serwis-zebry.pl](https://www.serwis-zebry.pl/instrukcje/zebra-li3608/instrukcja-po-polsku).`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -9317,6 +9541,10 @@ Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Man
         answer: 'Zebra udziela 36 miesięcy (3 lata) gwarancji. TAKMA zapewnia serwis gwarancyjny i pogwarancyjny we współpracy z serwis-zebry.pl. Dostępne plany serwisowe Zebra OneCare (Essential i Select).',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra LI3608-SR w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów LI3608-SR, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra LI3608-SR?',
         answer: 'W klasie ultra-rugged 2D: [Zebra DS3608-SR](/produkt/zebra-ds3608-sr) (od ~1 287 zł, 2D imager, IP65+IP68), [DS3608-XR](/produkt/zebra-ds3608-xr) (od ~2 417 zł, zasięg 32 m). Konkurenci: Honeywell Granit 1980i (2D, zasięg do 15 m, IP65), Datalogic PowerScan PD9600 (2D, IP67). Jeśli potrzebny tylko 1D — LI3608-SR jest optymalny cenowo i wagowo.',
       },
@@ -9324,6 +9552,7 @@ Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Man
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-li3608/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/LI3600-Series/spec-sheet/li36x8-sr-spec-sheet-en-us.pdf', size: '0.5 MB' },
+      { name: 'Strona produktu Zebra LI3608-SR (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/li3600-series/li3600-sr.html', size: 'Online' },
     ],
     createdAt: '2026-02-27',
   },
@@ -9331,7 +9560,7 @@ Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Man
     id: 'zebra-li3608-er',
     slug: 'zebra-li3608-er',
     name: 'Zebra LI3608-ER',
-    seoTitle: 'Skaner 1D Zebra LI3608-ER — ultra-rugged, zasięg 19,8 m, IP65+IP68 | TAKMA',
+    seoTitle: 'Skaner 1D Zebra LI3608-ER — ultra-rugged, zasięg 19,8 m, IP65+IP68 | od 2 264 zł',
     seoDescription: 'Zebra LI3608-ER (LI3608-ER20003VZWW, LI3608-ER3U4600ZVW) — przemysłowy skaner liniowy 1D Extended Range, zasięg do 19,8 m. IP65+IP68, upadki 2,4 m, -30°C. Od 2 264 zł netto.',
     shortDescription: 'Zebra LI3608-ER — przemysłowy skaner liniowy 1D Extended Range, zasięg do 19,8 m, IP65+IP68, upadki 2,4 m, -30°C (327 g)',
     description: `Dla kogo? Zebra LI3608-ER to przemysłowy skaner liniowy 1D dalekiego zasięgu (Extended Range) zaprojektowany dla magazynów wysokiego składowania, doków przeładunkowych, placów składowych i operacji outdoorowych. Jeśli kody kreskowe 1D (Code 39, Code 128, UPC/EAN) znajdują się na regałach powyżej 3 metrów — LI3608-ER odczyta je bez drabiny i bez wchodzenia na wózek widłowy.
@@ -9341,6 +9570,8 @@ Zasięg skanowania: Code 39 (20 mil) do 3,6 m, Code 39 (55 mil) do 8,9 m, kody r
 Podwójne uszczelnienie IP65 + IP68 — pyłoszczelny i zanurzalny do 30 minut. Upadki wielokrotne z 2,4 m na beton (MIL-STD), 7 500 obrotów w tumble teście z 1 m. Praca od -30°C do +50°C bez czasu rozgrzewania — natychmiastowe skanowanie po wejściu do mroźni lub na plac zimą.
 
 Sensor liniowy 2 496 px z laserowym celownikiem 655 nm — 66% więcej pikseli niż LI3608-SR (1 500 px), co zapewnia precyzyjne dekodowanie na dużych odległościach. Waga 327 g (o 40 g więcej niż SR — koszt większego sensora). Interfejsy: USB, RS-232, Keyboard Wedge. Opcjonalnie Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP) przez adapter EA3600.
+
+Koszt posiadania (TCO): skaner Zebra LI3608-ER z gwarancją 3 lata (dostępny OneCare do 5 lat). Konstrukcja IP65+IP68 i zasięg 19,8 m — eliminuje potrzebę podnośników do skanowania na wysokich regałach, obniżając koszt operacyjny magazynu. Serwis w Polsce: serwis-zebry.pl.
 
 Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Management Service (zdalne zarządzanie flotą skanerów), ScanSpeed Analytics (analiza wydajności skanowania). Gwarancja producenta 3 lata. Pełna dokumentacja i instrukcja obsługi po polsku na [serwis-zebry.pl](https://www.serwis-zebry.pl/instrukcje/zebra-li3608/instrukcja-po-polsku).`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -9492,6 +9723,10 @@ Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Man
         answer: 'Przez Zebra DataCapture DNA: 123Scan (konfiguracja przez kody kreskowe lub USB), Scanner Management Service (zdalne zarządzanie flotą), ScanSpeed Analytics (analiza wydajności skanowania — ile skanów, ile błędów, jaki czas).',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra LI3608-ER w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów LI3608-ER, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra LI3608-ER?',
         answer: 'W klasie ultra-rugged dalekiego zasięgu: [Zebra DS3608-XR](/produkt/zebra-ds3608-xr) (od ~2 417 zł, 2D + 1D, zasięg 32 m). Standard Range: [LI3608-SR](/produkt/zebra-li3608-sr) (od ~1 343 zł, zasięg 1,07 m). Konkurenci: Honeywell Granit 1981i FR (2D, zasięg do 15 m, IP65), Datalogic PowerScan PD9600-DPX (2D, dalekie skanowanie). Jeśli potrzebny tylko 1D z dużym zasięgiem — LI3608-ER jest optymalny wagowo.',
       },
@@ -9499,6 +9734,7 @@ Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Man
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-li3608/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/LI3600-Series/spec-sheet/li36x8-er-spec-sheet-en-us.pdf', size: '0.5 MB' },
+      { name: 'Strona produktu Zebra LI3608-ER (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/li3600-series/li3600-er.html', size: 'Online' },
     ],
     createdAt: '2026-02-27',
   },
@@ -9522,6 +9758,8 @@ Bluetooth 4.0 LE Class 1 — zasięg do 100 m w linii prostej. Szyfrowanie FIPS 
 Bateria Li-Ion PowerPrecision+ 3100 mAh — do 100 000 skanów na jednym ładowaniu. Ładowanie przez zasilacz: 3h, przez USB: 10h. Bateria wymienialna — zapas BTRY-36IAB0E-00.
 
 Multi-Code Data Formatting: jedno naciśnięcie spustu skanuje do 20 kodów jednocześnie. Digimarc — odczyt niewidocznych cyfrowych znaków wodnych w opakowaniach. IP65 + IP68, upadki z 3 m na beton, 7 500 obrotów w tumbler teście, praca od -20°C do +50°C. Waga 407 g (z baterią). Gwarancja: skaner 36 miesięcy, bateria 12 miesięcy.
+
+Koszt posiadania (TCO): skaner Zebra DS3678-SR z gwarancją 3 lata (dostępny OneCare do 5 lat). Bateria wymienialna 100 000 skanów + IP65+IP68 minimalizują przestoje w magazynach. Serwis w Polsce: serwis-zebry.pl.
 
 Dokumentacja: zebra.com/ds3678.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -9684,6 +9922,10 @@ Dokumentacja: zebra.com/ds3678.`,
         answer: 'Tak — DS3678-SR obsługuje kody wyświetlane na ekranach smartfonów i tabletów (mGR). Dodatkowo obsługuje Digimarc — niewidoczne cyfrowe znaki wodne w opakowaniach produktów.',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra DS3678-SR w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów DS3678-SR, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra DS3678-SR?',
         answer: 'W klasie bezprzewodowych ultra-rugged: Honeywell Granit 1982i, Datalogic PowerScan PM9600. Wersja przewodowa: [DS3608-SR](/produkt/zebra-ds3608-sr) (od 1 287 zł) — identyczne skanowanie, niższa cena, ale wymaga kabla. Tańszy bezprzewodowy: [Zebra DS8178](/produkt/zebra-ds8178) (IP52, do retail).',
       },
@@ -9691,6 +9933,7 @@ Dokumentacja: zebra.com/ds3678.`,
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds3678/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/DS3600-Series/spec-sheet/ds36x8-sr-spec-sheet-en-us.pdf', size: '0.5 MB' },
+      { name: 'Strona produktu Zebra DS3678-SR (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-sr.html', size: 'Online' },
     ],
     createdAt: '2026-02-27',
   },
@@ -9711,6 +9954,8 @@ Bluetooth 4.0 LE Class 1 — zasięg do 100 m w linii prostej. Szyfrowanie FIPS 
 Bateria Li-Ion PowerPrecision+ 3100 mAh — do 80 000 skanów (23+ godzin ciągłej pracy). Mniej niż DS3678-SR (100 000 skanów), bo podwójny sensor XR zużywa więcej energii. Bateria wymienialna — zapas BTRY-36IAB0E-00.
 
 Multi-Code Data Formatting: jedno naciśnięcie spustu skanuje do 20 kodów jednocześnie. Label Parse+ automatycznie ekstrahuje daty ważności, numery partii i dane GS1 z etykiet logistycznych. IP65 + IP68, upadki z 3 m na beton, 7 500 obrotów w tumbler teście, praca od -20°C do +50°C. Waga 410 g (z baterią). Gwarancja: skaner 36 miesięcy, bateria 12 miesięcy.
+
+Koszt posiadania (TCO): skaner Zebra DS3678-XR z gwarancją 3 lata (dostępny OneCare do 5 lat). Konstrukcja IP65+IP68 i odporność na upadki z 3 m minimalizuje koszty napraw w trudnych warunkach magazynowych. Serwis w Polsce: serwis-zebry.pl.
 
 Dokumentacja: zebra.com/ds3678.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -9900,6 +10145,10 @@ Dokumentacja: zebra.com/ds3678.`,
         answer: 'Tak — DS3678-XR obsługuje kody wyświetlane na ekranach smartfonów i tabletów. Dodatkowo obsługuje Digimarc — niewidoczne cyfrowe znaki wodne w opakowaniach. IUID parsing do odczytu etykiet identyfikacyjnych.',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra DS3678-XR w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów DS3678-XR, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra DS3678-XR?',
         answer: 'W klasie bezprzewodowych dalekiego zasięgu: Honeywell Granit XP 1991iXR, Datalogic PowerScan PM9600. Wersja przewodowa: [DS3608-XR](/produkt/zebra-ds3608-xr) (od 2 417 zł) — identyczne skanowanie, lżejszy, od -30°C. Standard Range bezprzewodowy: [DS3678-SR](/produkt/zebra-ds3678-sr) (od 2 111 zł) — do 152 cm, 100 000 skanów.',
       },
@@ -9907,6 +10156,7 @@ Dokumentacja: zebra.com/ds3678.`,
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds3678/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/DS3600-Series/spec-sheet/ds36x8-xr-spec-sheet-en-us.pdf', size: '0.5 MB' },
+      { name: 'Strona produktu Zebra DS3678-XR (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-xr.html', size: 'Online' },
     ],
     createdAt: '2026-02-27',
   },
@@ -9927,6 +10177,8 @@ Bluetooth 4.0 LE Class 1 — zasięg do 100 m w linii prostej. Szyfrowanie FIPS 
 Bateria Li-Ion PowerPrecision+ 3100 mAh — do 100 000 skanów na jednym ładowaniu. Ładowanie przez zasilacz: 3h, przez USB: 10h. Bateria wymienialna — zapas BTRY-36IAB0E-00.
 
 Multi-Code Data Formatting: jedno naciśnięcie spustu skanuje do 20 kodów jednocześnie. Label Parse+ automatycznie ekstrahuje daty ważności, numery partii i dane GS1 z etykiet farmaceutycznych. IP65 + IP68, upadki z 3 m na beton, 7 500 obrotów w tumbler teście, praca od -20°C do +50°C. Waga 411 g (z baterią). Gwarancja: skaner 36 miesięcy, bateria 12 miesięcy.
+
+Koszt posiadania (TCO): skaner Zebra DS3678-HD z gwarancją 3 lata (dostępny OneCare do 5 lat). Konstrukcja IP65+IP68 i odporność na upadki z 3 m chroni inwestycję w wymagających środowiskach produkcyjnych i farmaceutycznych. Serwis w Polsce: serwis-zebry.pl.
 
 Dokumentacja: zebra.com/ds3678.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -10110,6 +10362,10 @@ Dokumentacja: zebra.com/ds3678.`,
         answer: 'Standardowa STB3678-C100F3WW — ta sama co do DS3678-SR/XR. Komunikacja z komputerem przez USB lub RS-232 + ładowanie baterii. Do pracy hands-free: FLB3678-C100F3WW. Stacja dołączona w zestawie USB Kit (PN: DS3678-HD3U42A0SFW).',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra DS3678-HD w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów DS3678-HD, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra DS3678-HD?',
         answer: 'W klasie bezprzewodowych HD ultra-rugged: Honeywell Granit XP 1990iHD, Datalogic PowerScan PM9600-HD. Wersja przewodowa: [DS3608-HD](/produkt/zebra-ds3608-hd) (od 1 808 zł) — identyczne skanowanie, niższa cena. Standard Range bezprzewodowy: [DS3678-SR](/produkt/zebra-ds3678-sr) (od 2 111 zł) — szersze pole, dalszy zasięg, ale kody od 5 mil.',
       },
@@ -10117,6 +10373,7 @@ Dokumentacja: zebra.com/ds3678.`,
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds3678/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/DS3600-Series/spec-sheet/ds36x8-hd-spec-sheet-en-us.pdf', size: '0.5 MB' },
+      { name: 'Strona produktu Zebra DS3678-HD (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-hd.html', size: 'Online' },
     ],
     createdAt: '2026-02-27',
   },
@@ -10139,6 +10396,8 @@ Wydajność skanowania — sensor 1280×960 px odczytuje kody 1D od 5 mil (Code 
 Łączność bezprzewodowa — Bluetooth 4.0 LE z zasięgiem do 100 m, szyfrowanie FIPS 140-2 (AES). Virtual Tether ostrzega alarmem po oddaleniu od stacji. Komunikacja z PC przez stację dokującą STB3678 (USB lub RS-232 w zestawie).
 
 Ultra-rugged — obudowa IP65 + IP68 (2 m zanurzenie), upadki z 2,4 m na beton, 7 500 upadków z 0,5 m (tumble test). Zakres temperatury pracy: −20°C do +50°C. Bateria 3 100 mAh — do 100 000 skanów lub 17 h ciągłej pracy.
+
+Koszt posiadania (TCO): skaner Zebra DS3678-HP z gwarancją 3 lata (dostępny OneCare do 5 lat). Unikalne możliwości OCR, Document Capture i Signature Capture eliminują dodatkowe urządzenia skanujące — niższy TCO niż skaner + aparat/tablet. Serwis w Polsce: serwis-zebry.pl.
 
 Pełna specyfikacja i certyfikaty dostępne na zebra.com/ds3678-hp.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -10325,6 +10584,10 @@ Pełna specyfikacja i certyfikaty dostępne na zebra.com/ds3678-hp.`,
         answer: 'Tak — bateria BTRY-36IAB0E-00 jest wymienna przez użytkownika (hot-swap). Zapas baterii i ładowarka 4-slotowa SAC3600-4001CR zapewniają pracę ciągłą 24/7. Skaner informuje o poziomie naładowania przez PowerPrecision+ — możesz planować wymianę przed rozładowaniem.',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra DS3678-HP w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów DS3678-HP, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra DS3678-HP?',
         answer: 'Wersja przewodowa: [DS3608-HP](/produkt/zebra-ds3608-hp) (od 2 111 zł) — identyczne możliwości OCR/Document Capture, ale bez baterii i Bluetooth, niższa cena. Standard Range bezprzewodowy bez OCR: [DS3678-SR](/produkt/zebra-ds3678-sr) (od 2 111 zł). Extended Range: [DS3678-XR](/produkt/zebra-ds3678-xr) (od 3 237 zł) — zasięg skanowania do 24,4 m. High Density: [DS3678-HD](/produkt/zebra-ds3678-hd) (od 2 620 zł) — kody od 3 mil.',
       },
@@ -10332,6 +10595,7 @@ Pełna specyfikacja i certyfikaty dostępne na zebra.com/ds3678-hp.`,
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds3678/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/Ultra-Rugged-Scanners/DS3600-Series/spec-sheet/ds36x8-hp-spec-sheet-en-us.pdf', size: '0.5 MB' },
+      { name: 'Strona produktu Zebra DS3678-HP (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-hp.html', size: 'Online' },
     ],
     createdAt: '2026-02-27',
   },
@@ -10356,6 +10620,8 @@ Bateria Li-Ion 2400 mAh — do 14 h ciągłej pracy lub 110 000 skanów na jedny
 Baza prezentacyjna CR2278 — automatyczne przełączanie między trybem ręcznym a hands-free (IntelliStand). Skaner odłożony do bazy skanuje automatycznie, podniesiony — wraca do trybu ręcznego. Baza jednocześnie ładuje baterię i komunikuje się z komputerem.
 
 IP52, upadki z 1,5 m na beton, zakres pracy 0°C do +50°C, waga 214 g. Wariant Healthcare (DS2278-HC) w białej obudowie do dezynfekcji. Gwarancja: 36 miesięcy (skaner), 12 miesięcy (bateria).
+
+Koszt posiadania (TCO): skaner Zebra DS2278 z gwarancją 3 lata (dostępny OneCare do 5 lat). Bateria wymienialna i sprawna sieć serwisowa minimalizują przestoje — czas naprawy w Polsce 3–5 dni. Serwis w Polsce: serwis-zebry.pl.
 
 Pełna specyfikacja i certyfikaty na zebra.com/ds2278.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -10543,6 +10809,10 @@ Pełna specyfikacja i certyfikaty na zebra.com/ds2278.`,
         answer: 'Standardowa gwarancja producenta: skaner 36 miesięcy (3 lata), baza CR2278 36 miesięcy, bateria 12 miesięcy. Zebra oferuje rozszerzone kontrakty OneCare Essential (naprawa) lub Select (wymiana) na 3 lub 5 lat. Serwis gwarancyjny i pogwarancyjny w Polsce: [serwis-zebry.pl](https://www.serwis-zebry.pl).',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra DS2278 w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów DS2278, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra DS2278?',
         answer: 'Wersja przewodowa: [DS2208](/produkt/zebra-ds2208) (od 181 zł) — identyczne skanowanie, bez baterii i Bluetooth, niższa cena. Premium bezprzewodowy: [DS8178](/produkt/zebra-ds8178) (od 1 180 zł) — sensor megapixelowy, szersze pole, Digimarc. Ultra-rugged bezprzewodowy: [DS3678-SR](/produkt/zebra-ds3678-sr) (od 2 111 zł) — IP65/IP68, upadki 2,4 m, praca od −20°C.',
       },
@@ -10550,6 +10820,7 @@ Pełna specyfikacja i certyfikaty na zebra.com/ds2278.`,
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds2278/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/ds2200-series-spec-sheet-en-us.pdf', size: '0.5 MB' },
+      { name: 'Strona produktu Zebra DS2278 (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-handheld-scanners/ds2200-series.html', size: 'Online' },
     ],
     createdAt: '2026-02-27',
   },
@@ -10574,6 +10845,8 @@ Bluetooth 5.2 BLE — zasięg do 100 m (Class 1) z szyfrowaniem FIPS 140-3. Virt
 Ładowanie indukcyjne (bezkontaktowe) — brak fizycznych styków, koniec problemów ze zużywaniem się kontaktów. Dwie stacje: standardowa CR8288-SC (skaner na boku) i prezentacyjna CR8288-PC (hands-free IntelliStand). Zielony celownik LED 524 nm — 7× lepiej widoczny niż czerwony. Przycisk wielofunkcyjny — programowalny skrót (kasa, zwroty, RFID).
 
 Digimarc, Digital Link (GS1), OCR (OCR-A/B, MICR), SecurPharm — pełna obsługa nowych standardów handlu. IP52, upadki z 3,0 m (MIL-STD) + 54× z 1,8 m, tumble 2 000×0,5 m. Gwarancja 36 miesięcy. Wersja RFID (DS8288-R) od Q1 2026.
+
+Koszt posiadania (TCO): skaner Zebra DS8288 z gwarancją 3 lata. Indukcyjne ładowanie bezkontaktowe eliminuje koszty wymiany zużytych styków, a opcja PowerCap (20+ lat bez wymiany) minimalizuje koszty akumulatorów w punktach POS z bazą. Serwis w Polsce: serwis-zebry.pl.
 
 Pełna specyfikacja na zebra.com/ds8288.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -10818,6 +11091,10 @@ Pełna specyfikacja na zebra.com/ds8288.`,
         answer: 'Bateria 3500 mAh: pełne ładowanie 3,5 h (zasilacz zewn. 5V), 5 h (USB-C), 13 h (USB standardowe). Gotowy do pracy po 25 min (zasilacz) lub 90 min (USB). PowerCap: pełne ładowanie 15 min (BC1.2 USB), 14 min (USB-C), 60 min (USB std.). Ultraszybki start: 100 skanów po 35 sekundach!',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra DS8288 w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów DS8288, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra DS8288?',
         answer: 'Poprzednia generacja: Zebra DS8178 (od 1 180 zł) — sensor 1,2 MP, BT 4.0, do wygaśnięcia zapasów. Budżetowy bezprzewodowy: [DS2278](/produkt/zebra-ds2278) (od 449 zł) — sensor 0,3 MP, wystarczający do niskiego wolumenu. Przewodowy z podobnym sensorem: [DS4608](/produkt/zebra-ds4608) (od 605 zł) — bez baterii, niższa cena. Przewodowy premium: [DS8208](/produkt/zebra-ds8208) (od 1 027 zł) — ten sam sensor 2 MP, ale kablowy.',
       },
@@ -10825,6 +11102,7 @@ Pełna specyfikacja na zebra.com/ds8288.`,
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds8288/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/ds82-series-spec-sheet-pl-pl.pdf', size: '0.4 MB' },
+      { name: 'Strona produktu Zebra DS8288 (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-handheld-scanners/ds82-series.html', size: 'Online' },
     ],
     createdAt: '2026-02-28',
   },
@@ -10845,6 +11123,8 @@ Bluetooth 5.2 BLE Class 1 — zasięg do 100 m ze stacją CR8178, Wi-Fi Friendly
 Bateria PowerPrecision+ 2500 mAh — ponad 50 000 skanów i 13+ godzin ciągłej pracy na jednym ładowaniu. Stacja CR8178 z technologią Connect+ — bezstykowe ładowanie eliminuje korozję pinów, gwarantując niezawodność przez cały okres eksploatacji.
 
 IP52, upadki z 1,8 m na beton (wielokrotne), 2000 obrotów w tumblerze. Waga zaledwie 225 g — lżejszy niż DS3678-SR o 180 g, komfortowy przy całodziennej pracy. Wariant DPM (DS4678-DPE) — odczyt kodów wygrawerowanych na metalowych i plastikowych elementach elektroniki i przemysłu.
+
+Koszt posiadania (TCO): skaner Zebra DS4678 z gwarancją 3 lata (dostępny OneCare do 5 lat). Technologia Connect+ (ładowanie bezstykowe) eliminuje koszty wymiany korodujących pinów w stacji — niższy TCO od skanerów ze stykami kontaktowymi. Serwis w Polsce: serwis-zebry.pl.
 
 Dokumentacja i karta katalogowa: zebra.com/ds4600.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -11046,6 +11326,10 @@ Dokumentacja i karta katalogowa: zebra.com/ds4600.`,
         answer: 'Virtual Tether to alarm zapobiegający zgubieniu skanera. Gdy DS4678 oddali się od stacji bazowej CR8178 ponad ustawiony dystans, skaner i stacja emitują alarm dźwiękowy i wizualny. Przycisk Paging na stacji pozwala zlokalizować skaner — włącza sygnał dźwiękowy na skanerze.',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra DS4678 w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów DS4678, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra DS4678?',
         answer: 'Tańszy bezprzewodowy: [DS2278](/produkt/zebra-ds2278) (od 449 zł) — sensor 0,3 MP, BT 4.0, IP42, do niskiego wolumenu. Premium: [DS8288](/produkt/zebra-ds8288) (od 2 243 zł) — sensor 2 MP, ładowanie indukcyjne, FIPS 140-3. Ultra-rugged: [DS3678-SR](/produkt/zebra-ds3678-sr) (od 2 111 zł) — IP67, 2,4 m drop, do magazynu. Przewodowa wersja: [DS4608](/produkt/zebra-ds4608) (od 605 zł) — identyczny sensor, bez baterii.',
       },
@@ -11053,6 +11337,7 @@ Dokumentacja i karta katalogowa: zebra.com/ds4600.`,
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds4678/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/ds4600-series-retail-spec-sheet-pl-pl.pdf', size: '0.5 MB' },
+      { name: 'Strona produktu Zebra DS4678 (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/scanners/general-purpose-handheld-scanners/ds4600-series/ds4678.html', size: 'Online' },
     ],
     createdAt: '2026-02-28',
   },
@@ -11073,6 +11358,8 @@ Sensor megapikselowy 1280×800 z PRZM Intelligent Imaging i procesorem 800 MHz �
 Bluetooth 5.2 BLE Class 1 — zasięg do 100 m. Virtual Tether i Wi-Fi Friendly Mode. Sygnalizacja wibracyjna — na głośnych liniach produkcyjnych, gdzie dźwięk jest niesłyszalny, operator czuje potwierdzenie odczytu w dłoni.
 
 Bateria PowerPrecision+ 2500 mAh — 50 000+ skanów, 13+ h pracy. Stacja CR8178 z Connect+ (bezstykowe ładowanie). IP52, upadki z 1,8 m, 2000 obrotów w tumblerze. Waga 225 g.
+
+Koszt posiadania (TCO): skaner Zebra DS4678-DPE z gwarancją 3 lata (dostępny OneCare do 5 lat). Zastępuje osobny skaner DPM i standardowy skaner 2D — jeden skaner zamiast dwóch urządzeń obniża całkowity TCO. Connect+ eliminuje koszty korodujących pinów. Serwis w Polsce: serwis-zebry.pl.
 
 Dokumentacja: zebra.com/ds4600dpe.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -11263,6 +11550,10 @@ Dokumentacja: zebra.com/ds4600dpe.`,
         answer: 'DataMatrix 4 mil: 0,5–7,1 cm. DataMatrix 5 mil: 0–8,6 cm. DataMatrix 10 mil: 0–12,2 cm. DS4678-DPE ma krótszy zasięg niż DS4678-SR (do 29 cm dla 10 mil), ale jest zoptymalizowany pod kątem odczytu z bliskiej odległości na trudnych powierzchniach — tam, gdzie SR zawodzi.',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra DS4678-DPE w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów DS4678-DPE, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra DS4678-DPE?',
         answer: 'Standardowy retail: [DS4678-SR](/produkt/zebra-ds4678) (od 1 126 zł) — ten sam skaner bez optyki DPM. Ultra-rugged DPM: Zebra DS3678-HD — IP67, do mroźni i ciężkiego magazynu. Przewodowy DPM: Zebra DS4608-DPE — ten sam sensor DPM, bez baterii, tańszy. Premium bezprzewodowy: [DS8288](/produkt/zebra-ds8288) (od 2 243 zł) — sensor 2 MP, ale bez dedykowanej optyki DPM.',
       },
@@ -11270,6 +11561,7 @@ Dokumentacja: zebra.com/ds4600dpe.`,
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds4678-dpe/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa DPE (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/ds4600-dpe-spec-sheet-pl-pl.pdf', size: '0.4 MB' },
+      { name: 'Strona produktu Zebra DS4678-DPE (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/scanners/general-purpose-handheld-scanners/ds4600-series/ds4678.html', size: 'Online' },
     ],
     createdAt: '2026-02-28',
   },
@@ -11291,6 +11583,8 @@ Dokumentacja: zebra.com/ds4600dpe.`,
 Automatyczne przełączanie trybów — po odłożeniu na podstawkę DS9908 ogranicza pole skanowania (aby nie odczytywać kodów z sąsiednich produktów), a po wzięciu do ręki rozszerza zasięg do 63 cm (UPC). Megapikselowy sensor 1280×800 z technologią PRZM Intelligent Imaging dekoduje zniszczone, wyblakłe, niskokontrastowe i błyszczące kody. Natywna obsługa Digimarc — niewidzialnych kodów kreskowych drukowanych na całym opakowaniu (standard wdrażany przez Walmart, P&G).
 
 Opcja EAS (Electronic Article Surveillance) — dezaktywacja plakietek antykradzieżowych Checkpoint bezpośrednio przy kasie. Wariant HD zoptymalizowany do małych kodów laboratoryjnych i farmaceutycznych (DataMatrix GS1 na opakowaniach leków). Interfejsy USB, RS-232, Keyboard Wedge i TGCS (IBM) 46xx RS485.
+
+Koszt posiadania (TCO): skaner Zebra DS9908 z gwarancją 5 lat — najdłuższa w kategorii skanerów prezentacyjnych. Natywny tryb hybrydowy eliminuje potrzebę osobnego skanera ręcznego i prezentacyjnego. Serwis w Polsce: serwis-zebry.pl.
 
 Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacyjnych. Pełna dokumentacja w języku polskim dostępna na stronie serwis-zebry.pl.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -11524,6 +11818,10 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
         answer: 'Tak — DS9908 obsługuje 97 układów klawiatury międzynarodowych (w tym polski). Interfejs Keyboard Wedge emuluje klawiaturę (plug & play z każdą kasą fiskalną). USB i RS-232 zapewniają kompatybilność z systemami POS (Subiekt, WMS, SAP). Konfiguracja za pomocą 123Scan (narzędzie Zebra do szybkiego wdrażania wielu skanerów).',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra DS9908 w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów DS9908, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra DS9908?',
         answer: 'Ekonomiczny prezentacyjny: [DS9308](/produkt/zebra-ds9308) (od 995 zł) — kompaktowy, szersze FOV, ale bez trybu ręcznego i RFID. Ręczny uniwersalny: [DS4608](/produkt/zebra-ds4608) (od 352 zł) — lżejszy, ale bez natywnego hands-free. Bezprzewodowy z bazą: [DS8178](/produkt/zebra-ds8178) (od ~1 400 zł) — Bluetooth, ale bez Digimarc. Zewnętrzni konkurenci: Datalogic Magellan 1500i (tańsza, ale 3 lata gwarancji i brak trybu ręcznego), Honeywell Genesis XP 7680g.',
       },
@@ -11531,6 +11829,7 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds9908/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/ds9908-ds9908r-spec-sheet-pl-pl.pdf', size: '0.5 MB' },
+      { name: 'Strona produktu Zebra DS9908 (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-hands-free-scanners/ds9900-series/ds9908.html', size: 'Online' },
     ],
     createdAt: '2026-02-28',
   },
@@ -11548,7 +11847,9 @@ Najszersze pole widzenia w klasie — 52° w poziomie × 33° w pionie. Megapiks
 
 4-pozycyjny mechanizm ratchet pozwala ustawić skaner pod kątem 15–45° — optymalnym do prezentacyjnego skanowania. Dostępny w dwóch kolorach: Midnight Black i Alpine White. Opcja Digimarc (wariant SRD) — obsługa niewidzialnych kodów kreskowych. Opcja EAS (wariant ZC) — dezaktywacja plakietek antykradzieżowych Checkpoint.
 
-Interfejsy USB, RS-232, Keyboard Wedge i TGCS (IBM) 46xx RS485. IP52, upadki z 1,5 m na beton. Gwarancja 36 miesięcy (3 lata). Pełna dokumentacja w języku polskim na serwis-zebry.pl.`,
+Interfejsy USB, RS-232, Keyboard Wedge i TGCS (IBM) 46xx RS485. IP52, upadki z 1,5 m na beton. Gwarancja 36 miesięcy (3 lata). Pełna dokumentacja w języku polskim na serwis-zebry.pl.
+
+Koszt posiadania (TCO): skaner Zebra DS9308 z gwarancją 3 lata (dostępny OneCare do 5 lat). Kompaktowa obudowa bez ruchomych mechanizmów minimalizuje ryzyko uszkodzeń mechanicznych. Serwis w Polsce: serwis-zebry.pl.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-prezentacyjne'],
     manufacturerId: 'zebra',
@@ -11784,6 +12085,10 @@ Interfejsy USB, RS-232, Keyboard Wedge i TGCS (IBM) 46xx RS485. IP52, upadki z 1
         answer: 'Standardowa gwarancja Zebra na DS9308 wynosi 36 miesięcy (3 lata). To krócej niż 5 lat oferowane przez [DS9908](/produkt/zebra-ds9908), [DS4608](/produkt/zebra-ds4608) czy [DS2208](/produkt/zebra-ds2208). Gwarancję można przedłużyć kontraktem Zebra OneCare Essential lub Select.',
       },
       {
+        question: 'Gdzie serwisować skaner Zebra DS9308 w Polsce?',
+        answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów DS9308, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra DS9308?',
         answer: 'Premium prezentacyjny: [DS9908](/produkt/zebra-ds9908) (od 1 169 zł) — hybrydowy z trybem ręcznym, RFID i 5 lat gwarancji. Ręczny uniwersalny: [DS4608](/produkt/zebra-ds4608) (od 352 zł) — z opcjonalną podstawką. Budżetowy ręczny: [DS2208](/produkt/zebra-ds2208) (od 352 zł). Zewnętrzni konkurenci: Datalogic Magellan 1500i (podobna cena, ale 3 lata gwarancji), Honeywell Genesis 7580g.',
       },
@@ -11791,6 +12096,7 @@ Interfejsy USB, RS-232, Keyboard Wedge i TGCS (IBM) 46xx RS485. IP52, upadki z 1
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds9308/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/ds9308-spec-sheet-pl-pl.pdf', size: '0.4 MB' },
+      { name: 'Strona produktu Zebra DS9308 (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-hands-free-scanners/ds9300-series.html', size: 'Online' },
     ],
     createdAt: '2026-02-28',
   },
