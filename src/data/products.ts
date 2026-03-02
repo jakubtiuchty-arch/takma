@@ -30081,8 +30081,8 @@ Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CT70 (PD
     seoTitle: 'Honeywell CT70 — terminal mobilny 6" Wi-Fi 7, BT 6.0, FlexRange | od 6 168 zł',
     seoDescription: 'Terminal Honeywell CT70 do magazynów i logistyki: Wi-Fi 7, BT 6.0, FlexRange 5+ m, Qi, IP65/68, Android 15→19. 4 warianty. Pierwszy enterprise z Wi-Fi 7. Od 6 168 zł netto.',
     variantAttributeTooltips: {
-      'Skaner': 'Standard Range (S057) — imager 1D/2D do skanowania kodów na etykietach i ekranach z typowej odległości roboczej (do ok. 50 cm). FlexRange (S058) — imager z podwójnym trybem pracy: bliski odczyt małych kodów + daleki zasięg do 12 m (np. kody na wysokich regałach). FlexRange zastępuje potrzebę dwóch skanerów.',
-      '5G': 'Moduł 5G Sub-6 GHz + eSIM zapewnia łączność komórkową poza zasięgiem Wi-Fi — np. w terenie, transporcie, magazynach bez infrastruktury bezprzewodowej. Warianty L0N = tylko Wi-Fi 7, warianty X1N = 5G + Wi-Fi 7 + GPS/GNSS.',
+      'Skaner': 'Standard Range — 1D/2D, do 50 cm.\n\nFlexRange — bliski + daleki zasięg do 12 m.',
+      '5G': 'L0N = tylko Wi-Fi 7.\n\nX1N = 5G + Wi-Fi 7 + GPS + eSIM.',
     },
     variants: [
       {
@@ -30225,7 +30225,7 @@ Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CT32 (PD
     seoTitle: 'Honeywell CT32 — terminal mobilny 6" Wi-Fi 6E, FlexRange, Android 14→18 | od 3 389 zł',
     seoDescription: 'Terminal Honeywell CT32 do retail, magazynów i logistyki: Wi-Fi 6E, 5G (opcja), FlexRange 11 m, hot-swap, IP65/68. 4 warianty. Następca EDA52. Od 3 389 zł netto.',
     variantAttributeTooltips: {
-      '5G': 'Moduł 5G Sub-6 GHz + eSIM zapewnia łączność komórkową poza zasięgiem Wi-Fi — np. w terenie, transporcie, magazynach bez infrastruktury bezprzewodowej. Warianty X0N = tylko Wi-Fi 6E, warianty X1N = 5G + Wi-Fi 6E + GPS/GNSS.',
+      '5G': 'X0N = tylko Wi-Fi 6E.\n\nX1N = 5G + Wi-Fi 6E + GPS + eSIM.',
     },
     variants: [
       {
@@ -30377,8 +30377,8 @@ Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CK67 na 
       'Honeywell CK67 — widok z przodu, ekran 4,3 cale z klawiaturą 51-klawiszową',
     ],
     variantAttributeTooltips: {
-      'Skaner': 'S0703 Standard Range — imager 1D/2D do skanowania z typowej odległości roboczej (do ok. 1 m). FlexRange — podwójny tryb pracy: bliski odczyt + daleki zasięg do 5 m (regały średniej wysokości). FlexRange XLR — flagowy skaner Honeywell z zasięgiem do 24 m (najwyższe regały, kontenery).',
-      '5G': 'Moduł 5G NR SA/NSA + dual SIM (nano + eSIM) + GPS/GLONASS/Galileo/BeiDou. Warianty X0N = tylko Wi-Fi 6E, warianty X1N = 5G + Wi-Fi 6E + GPS/GNSS. 5G rekomendowane do pracy w terenie, transporcie i lokalizacjach bez infrastruktury Wi-Fi.',
+      'Skaner': 'S0703 (SR) — 1D/2D, do 1 m.\n\nFlexRange — bliski + daleki zasięg do 5 m.\n\nFlexRange XLR — do 24 m (najwyższe regały).',
+      '5G': 'X0N = tylko Wi-Fi 6E.\n\nX1N = 5G + Wi-Fi 6E + GPS + dual SIM.',
     },
     variants: [
       {
@@ -31496,8 +31496,8 @@ Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CK62 (PD
     seoTitle: 'Honeywell CK62 — kolektor danych / terminal mobilny gun z FlexRange XLR | od 5 759 zł',
     seoDescription: 'Honeywell CK62 — lekki terminal mobilny gun (440 g) z Wi-Fi 6E, klawiaturą 38/47, FlexRange XLR do 24 m, bateria 7000 mAh (28 h), Android 14→18. 3 warianty od 5 759 zł netto. Darmowa dostawa B2B.',
     variantAttributeTooltips: {
-      'Skaner': 'S0703 Standard Range — imager 1D/2D do skanowania z typowej odległości roboczej (do ok. 50 cm). FlexRange XLR (S0E03) — flagowy skaner Honeywell z zasięgiem od 8 cm do 24 m, do najwyższych regałów magazynowych.',
-      'Klawiatura': '47-klawiszowa alfanumeryczna z pełnym ABC — do wyszukiwania, tekstów, WMS. 38-klawiszowa numeryczna z F-keys — do szybkiego wprowadzania ilości, kompletacji zamówień.',
+      'Skaner': 'Standard Range — 1D/2D, do 50 cm.\n\nFlexRange XLR — do 24 m (najwyższe regały).',
+      'Klawiatura': '47 kl. — alfanumeryczna (ABC), do WMS.\n\n38 kl. — numeryczna z F-keys, do kompletacji.',
     },
     variants: [
       {
