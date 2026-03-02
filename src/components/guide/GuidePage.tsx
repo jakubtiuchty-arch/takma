@@ -271,7 +271,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
                   <section key={section.id} id={section.id}>
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">{section.heading}</h2>
                     <div
-                      className="prose prose-gray max-w-none sm:text-justify prose-headings:text-gray-900 prose-headings:text-left prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline prose-table:text-sm prose-th:bg-gray-50 prose-th:text-left prose-th:font-semibold prose-td:border-t prose-td:border-gray-100 prose-img:rounded-xl [&_table]:block [&_table]:overflow-x-auto [&_table]:whitespace-nowrap sm:[&_table]:whitespace-normal [&_table]:-mx-4 sm:[&_table]:mx-0 [&_table]:px-4 sm:[&_table]:px-0"
+                      className="prose prose-gray max-w-none sm:text-justify prose-headings:text-gray-900 prose-headings:text-left prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline prose-table:text-sm prose-th:bg-gray-800 prose-th:text-white prose-th:text-left prose-th:font-semibold prose-td:border-t prose-td:border-gray-100 prose-img:rounded-xl [&_table]:block [&_table]:overflow-x-auto [&_table]:whitespace-nowrap sm:[&_table]:whitespace-normal [&_table]:-mx-4 sm:[&_table]:mx-0 [&_table]:px-4 sm:[&_table]:px-0"
                       dangerouslySetInnerHTML={{ __html: boldifyModels(section.content) }}
                     />
                   </section>
