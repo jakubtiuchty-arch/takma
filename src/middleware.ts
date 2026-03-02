@@ -74,6 +74,7 @@ export async function middleware(request: NextRequest) {
       'honeywell-ck67-stacja-ladowania-booted', 'honeywell-ck67-ladowarka-4-baterii',
       'honeywell-ck67-folia-ochronna', 'honeywell-ck67-kabura',
       'honeywell-ck67-charging-cup-booted', 'honeywell-ck67-charging-cup-nonbooted',
+      'honeywell-ck67-bateria-cold-storage', 'honeywell-ck67-stacja-ladowania-4-gniazdowa',
       // RFID — usunięte
       // Skanery
       'zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds8178', 'zebra-li2208',
