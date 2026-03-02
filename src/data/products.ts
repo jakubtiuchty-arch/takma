@@ -31663,7 +31663,7 @@ const ct47Accessories: Product[] = [
     categoryId: 'akcesoria',
     manufacturerId: 'honeywell',
     tags: ['magazyn', 'logistyka', 'produkcja'],
-    images: ['/images/products/CT47-X0N-37D100G-4.png'],
+    images: ['/images/products/CT47-PB-1.png'],
     imageDescriptions: ['Obudowa ochronna Honeywell CT47-PB-1 rubber boot do terminala CT47'],
     specifications: [
       { name: 'Part Number', value: 'CT47-PB-1' },
@@ -31691,8 +31691,8 @@ const ct47Accessories: Product[] = [
     categoryId: 'akcesoria',
     manufacturerId: 'honeywell',
     tags: ['magazyn', 'logistyka', 'outdoor'],
-    images: ['/images/products/CT47-X0N-37D100G-5.png'],
-    imageDescriptions: ['Obudowa ochronna Hi-Vis żółta Honeywell CT47-PB-2 do terminala CT47'],
+    images: ['/images/products/CT40-HB-UVN-2.png'],
+    imageDescriptions: ['Obudowa ochronna Hi-Vis żółta Honeywell CT40-HB-UVN-2 do terminala CT47'],
     specifications: [
       { name: 'Part Number', value: 'CT47-PB-2' },
       { name: 'Typ', value: 'Obudowa ochronna Hi-Vis (rubber boot)' },
@@ -31719,8 +31719,8 @@ const ct47Accessories: Product[] = [
     categoryId: 'akcesoria',
     manufacturerId: 'honeywell',
     tags: ['logistyka', 'outdoor'],
-    images: ['/images/products/CT47-X0N-37D100G-2.png'],
-    imageDescriptions: ['Pasek na rękę Honeywell CT47-HS-FM do terminala CT47 — zestaw 3 sztuk'],
+    images: ['/images/products/CT47-HS-3PK.png'],
+    imageDescriptions: ['Pasek na rękę Honeywell CT47-HS-3PK do terminala CT47 — zestaw 3 sztuk'],
     specifications: [
       { name: 'Part Number', value: 'CT47-HS-FM' },
       { name: 'Ilość w zestawie', value: '3 sztuki' },
@@ -31747,8 +31747,8 @@ const ct47Accessories: Product[] = [
     categoryId: 'akcesoria',
     manufacturerId: 'honeywell',
     tags: ['magazyn', 'logistyka'],
-    images: ['/images/products/CT47-X0N-37D100G-3.png'],
-    imageDescriptions: ['Folia ochronna Honeywell CT47-SP-1PK-1 na ekran 5,5 cala terminala CT47'],
+    images: ['/images/products/CT47-SP-1PK.png'],
+    imageDescriptions: ['Folia ochronna Honeywell CT47-SP-1PK na ekran 5,5 cala terminala CT47'],
     specifications: [
       { name: 'Part Number', value: 'CT47-SP-1PK-1' },
       { name: 'Typ', value: 'Folia ochronna na ekran 5,5"' },
