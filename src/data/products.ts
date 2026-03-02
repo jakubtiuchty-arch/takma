@@ -12128,6 +12128,8 @@ Skaner HR23 Dorada posiada certyfikat GS1 Ready — gwarancja poprawnego odczytu
 
 Gwarancja producenta 5 lat — najdłuższa w segmencie ekonomicznych skanerów 2D. Dla porównania: Zebra DS2208 ma gwarancję standardową 36 miesięcy. Opcjonalnie dostępna podstawka Smartstand (regulowana, tryb auto-sense) lub podstawka gooseneck do skanowania prezentacyjnego hands-free.
 
+Koszt posiadania (TCO): gwarancja producenta 5 lat w standardzie — najdłuższa w branży skanerów 2D entry-level. Konstrukcja IP52 minimalizuje koszty napraw spowodowanych pyłem i bryzgami wody. Waga 137 g i plug-and-play USB redukują czas szkolenia i wdrożenia.
+
 W zestawie (wersja -S5): skaner i kabel USB spiralny. Wersja -SA dodatkowo zawiera podstawkę Smartstand. Jeśli potrzebujesz wersji bezprzewodowej — dostępna jest Newland HR23 Dorada Bluetooth. Jeśli potrzebujesz skanera o wyższej odporności (IP65+) i większym zasięgu — rozważ Zebra DS4608 lub Zebra DS3608-SR.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-przewodowe'],
@@ -12139,8 +12141,8 @@ W zestawie (wersja -S5): skaner i kabel USB spiralny. Wersja -SA dodatkowo zawie
       'Newland HR23 Dorada — widok z tyłu, logo Newland i diody LED sygnalizacyjne',
       'Newland HR23 Dorada — widok z boku, ergonomiczny uchwyt z niebieskim akcentem i kabel spiralny',
     ],
-    seoTitle: 'Newland HR23 Dorada — przewodowy skaner 2D CMOS USB | TAKMA',
-    seoDescription: 'Przewodowy skaner kodów kreskowych Newland HR23 Dorada: 2D CMOS, USB, IP52, 1.5 m drop, gwarancja 5 lat. GS1 Ready, EasySet. Porównanie z Zebra DS2208.',
+    seoTitle: 'Newland HR23 Dorada — skaner 2D CMOS USB, 5 lat gwarancji | TAKMA',
+    seoDescription: 'Skaner 2D Newland HR23 Dorada do kas, aptek i magazynów: CMOS 640×480, USB, IP52, 1,5 m drop, 5 lat gwarancji. 2 konfiguracje. GS1 Ready. Porównanie z Zebra DS2208.',
     isNew: true,
     isBestseller: false,
     availability: 'available',
@@ -12234,6 +12236,10 @@ W zestawie (wersja -S5): skaner i kabel USB spiralny. Wersja -SA dodatkowo zawie
         answer: 'HR23 Dorada waży 137 g — to jeden z najlżejszych skanerów 2D na rynku. Dla porównania: Zebra DS2208 waży 115 g (lżejszy), Honeywell Voyager 1472g — 155 g (cięższy). Waga 137 g zapewnia komfort podczas wielogodzinnej pracy.',
       },
       {
+        question: 'Gdzie serwisować skaner Newland HR23 Dorada w Polsce?',
+        answer: 'Autoryzowany serwis Newland w Polsce: serwis jest realizowany przez dystrybutora. Czas naprawy: 5–10 dni roboczych w ramach gwarancji producenta (standardowo 5 lat na skanery). Zgłoszenia serwisowe przez formularz kontaktowy na takma.com.pl lub telefonicznie.',
+      },
+      {
         question: 'Jakie są alternatywy dla Newland HR23 Dorada?',
         answer: 'W segmencie ekonomicznych skanerów 2D przewodowych alternatywami są: Zebra DS2208 (od 352 zł, IP52, gwarancja 3 lata), Honeywell Voyager 1472g (od 290 zł, IP42), Datalogic QuickScan QD2500 (od 320 zł, IP52). HR23 wyróżnia się najdłuższą gwarancją (5 lat) i najniższą ceną w segmencie.',
       },
@@ -12266,7 +12272,9 @@ Obudowa HR33 Marlin jest ergonomiczna i dobrze wyważona — 140 g, wymiary 95×
 
 Interfejs USB (KBW, CDC, HID-POS) z opcjonalnym RS232. W zestawie (wersja -S5): skaner i kabel USB spiralny. Wersja -SA dodatkowo zawiera podstawkę Smartstand z trybem auto-sense. Jeśli potrzebujesz wersji bezprzewodowej — dostępna będzie Newland HR33 Marlin Bluetooth.
 
-Porównanie z konkurencją: HR33 Marlin oferuje sensor megapikselowy 1280×800 — taki sam jak Zebra DS4608, ale w cenie o ~40% niższej. DS4608 wygrywa odpornością na upadek (1.8 m vs 1.5 m) i opcjami DPM/EAS, ale HR33 ma OCR w standardzie i technologię Acuscan. Jeśli szukasz tańszej alternatywy — Newland HR23 Dorada (sensor 640×480, od ~260 zł netto). Pełna specyfikacja i porównanie modeli — w dokumentacji Newland EMEA.`,
+Porównanie z konkurencją: HR33 Marlin oferuje sensor megapikselowy 1280×800 — taki sam jak Zebra DS4608, ale w cenie o ~40% niższej. DS4608 wygrywa odpornością na upadek (1.8 m vs 1.5 m) i opcjami DPM/EAS, ale HR33 ma OCR w standardzie i technologię Acuscan. Jeśli szukasz tańszej alternatywy — Newland HR23 Dorada (sensor 640×480, od ~260 zł netto).
+
+Koszt posiadania (TCO): gwarancja producenta 5 lat w standardzie — najdłuższa w branży skanerów 2D mid-range. Konstrukcja IP52 minimalizuje koszty napraw. Sensor megapikselowy 1280×800 zapewnia pewny odczyt nawet słabo wydrukowanych kodów — mniej błędów skanowania, niższe koszty operacyjne. Pełna specyfikacja i porównanie modeli — w dokumentacji Newland EMEA.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-przewodowe'],
     manufacturerId: 'newland',
@@ -12278,8 +12286,8 @@ Porównanie z konkurencją: HR33 Marlin oferuje sensor megapikselowy 1280×800 �
       'Newland HR33 Marlin — widok z boku, ergonomiczny uchwyt z niebieskim akcentem i kabel spiralny',
       'Newland HR33 Marlin — widok z boku (prawy profil), antypoślizgowy uchwyt i celownik laserowy',
     ],
-    seoTitle: 'Newland HR33 Marlin — skaner 2D megapikselowy, OCR, laser | TAKMA',
-    seoDescription: 'Przewodowy skaner Newland HR33 Marlin: sensor 1280×800 CMOS, celownik laserowy, OCR, Acuscan, IP52, 5 lat gwarancji. Porównanie z Zebra DS4608 i HR23 Dorada.',
+    seoTitle: 'Newland HR33 Marlin — skaner 2D 1280×800, OCR, laser, 5 lat gwarancji | TAKMA',
+    seoDescription: 'Skaner 2D Newland HR33 Marlin do retail, logistyki i aptek: sensor 1280×800 CMOS, laser, OCR, Acuscan, IP52, 5 lat gwarancji. 2 konfiguracje. Tańszy niż Zebra DS4608.',
     isNew: true,
     isBestseller: false,
     availability: 'available',
@@ -12375,6 +12383,10 @@ Porównanie z konkurencją: HR33 Marlin oferuje sensor megapikselowy 1280×800 �
         answer: 'Zasięg odczytu zależy od typu kodu: EAN-13 (13 mil) od 40 do 535 mm, Code 39 (5 mil) od 50 do 230 mm, Data Matrix (10 mil) od 30 do 245 mm, PDF417 (6.7 mil) od 45 do 215 mm. To prawie dwukrotnie dalej niż HR23 Dorada w przypadku EAN-13.',
       },
       {
+        question: 'Gdzie serwisować skaner Newland HR33 Marlin w Polsce?',
+        answer: 'Autoryzowany serwis Newland w Polsce: serwis jest realizowany przez dystrybutora. Czas naprawy: 5–10 dni roboczych w ramach gwarancji producenta (standardowo 5 lat na skanery). Zgłoszenia serwisowe przez formularz kontaktowy na takma.com.pl lub telefonicznie.',
+      },
+      {
         question: 'Jakie są alternatywy dla Newland HR33 Marlin?',
         answer: 'W niższym segmencie: Newland HR23 Dorada (sensor 640×480, od ok. 260 zł netto, brak OCR/Acuscan). W segmencie premium: Zebra DS4608 (1.8 m drop, DPM/EAS), Zebra DS8208 (sensor 2 MP). HR33 Marlin to złoty środek — sensor megapikselowy i OCR w cenie niższej niż Zebra.',
       },
@@ -12405,7 +12417,9 @@ Klasa ochrony IP42, odporność na upadki z 1.5 m na twardą powierzchnię, zakr
 
 Interfejs USB (emulacja klawiatury, plug-and-play) lub RS-232. Konfiguracja przez bezpłatne oprogramowanie EasySet lub skanowanie kodów konfiguracyjnych z instrukcji. Opcjonalna składana podstawka smart stand umożliwia automatyczne skanowanie w trybie hands-free — skaner sam wykrywa zbliżenie kodu i odczytuje go bez naciskania przycisku.
 
-Porównanie z konkurencją: Zebra LI2208 (od ok. 265 zł netto) jest szybsza (547 vs 300 skan/s) i ma dłuższy zasięg (do 790 mm vs 480 mm), ale kosztuje o ~40% więcej i nie działa poniżej 0°C. HR11 Aringa to najlepszy stosunek ceny do jakości w segmencie czytników 1D — 5 lat gwarancji, odczyt z ekranów i waga 120 g za niespełna 170 zł netto. Pełna specyfikacja — w dokumentacji Newland EMEA.`,
+Porównanie z konkurencją: Zebra LI2208 (od ok. 265 zł netto) jest szybsza (547 vs 300 skan/s) i ma dłuższy zasięg (do 790 mm vs 480 mm), ale kosztuje o ~40% więcej i nie działa poniżej 0°C. HR11 Aringa to najlepszy stosunek ceny do jakości w segmencie czytników 1D — 5 lat gwarancji, odczyt z ekranów i waga 120 g za niespełna 170 zł netto.
+
+Koszt posiadania (TCO): gwarancja producenta 5 lat w standardzie — najdłuższa w segmencie budżetowych czytników 1D CCD. Zakres temperatury -20°C do +60°C eliminuje koszty ogrzewania lub specjalnych obudów do pracy w nieogrzewanych magazynach. Plug-and-play USB bez sterowników redukuje koszt wdrożenia. Pełna specyfikacja — w dokumentacji Newland EMEA.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-przewodowe'],
     manufacturerId: 'newland',
@@ -12416,8 +12430,8 @@ Porównanie z konkurencją: Zebra LI2208 (od ok. 265 zł netto) jest szybsza (54
       'Newland HR11 Aringa — widok z boku, ergonomiczny uchwyt pistoletowy z antypoślizgową fakturą i kabel USB',
       'Newland HR11 Aringa — widok z tyłu, kompaktowa obudowa 120 g z logo Newland i wyjściem kabla',
     ],
-    seoTitle: 'Newland HR11 Aringa — czytnik kodów 1D CCD, USB, 5 lat gwarancji | TAKMA',
-    seoDescription: 'Budżetowy czytnik kodów 1D Newland HR11 Aringa: CCD 2500 px, USB, odczyt z ekranów (NLDC), IP42, 1.5 m drop, 5 lat gwarancji. Porównanie z Zebra LI2208.',
+    seoTitle: 'Newland HR11 Aringa — czytnik 1D CCD, USB, IP42, 5 lat gwarancji | TAKMA',
+    seoDescription: 'Czytnik kodów 1D Newland HR11 Aringa do kas i retail: CCD 2500 px, USB, odczyt z ekranów, IP42, 1,5 m drop, 5 lat gwarancji. 1 konfiguracja. Tańszy niż Zebra LI2208.',
     isNew: true,
     isBestseller: false,
     availability: 'unavailable',
@@ -12504,6 +12518,10 @@ Porównanie z konkurencją: Zebra LI2208 (od ok. 265 zł netto) jest szybsza (54
         answer: 'Tak — zakres temperatur pracy to -20°C do +60°C, więc HR11 nadaje się do nieogrzewanych magazynów, chłodni i pracy na zewnątrz zimą. Dla porównania: Zebra LI2208 działa dopiero od 0°C.',
       },
       {
+        question: 'Gdzie serwisować czytnik Newland HR11 Aringa w Polsce?',
+        answer: 'Autoryzowany serwis Newland w Polsce: serwis jest realizowany przez dystrybutora. Czas naprawy: 5–10 dni roboczych w ramach gwarancji producenta (standardowo 5 lat na skanery). Zgłoszenia serwisowe przez formularz kontaktowy na takma.com.pl lub telefonicznie.',
+      },
+      {
         question: 'Jakie są alternatywy dla Newland HR11 Aringa?',
         answer: 'W segmencie 1D: Zebra LI2208 (od ok. 265 zł netto — szybszy, dłuższy zasięg, ale droższa). W segmencie 2D (upgrade): Newland HR23 Dorada (od ok. 260 zł netto — czyta też QR i DataMatrix), Zebra DS2208 (od 352 zł netto — IP52, standard branżowy). HR11 to najlepszy stosunek ceny do jakości gdy wystarczą kody 1D.',
       },
@@ -12536,7 +12554,9 @@ Klasa ochrony IP54 (pył + bryzgi wody) to najwyższe IP wśród skanerów budż
 
 Waga 152 g (bez kabla) i wymiary 113,5 × 73 × 159 mm — kompaktowa ergonomiczna obudowa na wielogodzinne zmiany. Złącze RJ45 w skanerze — kabel USB spiralny 1,5 m w zestawie (wersja NLS-HR1550-35). Dostępna też wersja RS-232. Konfiguracja przez EasySet (bezpłatne oprogramowanie Newland) lub kody konfiguracyjne z instrukcji.
 
-Gwarancja producenta 5 lat (60 miesięcy) — najdłuższa gwarancja wśród skanerów 1D w tym segmencie cenowym. Porównanie z Zebra LI2208: HR15 Wahoo ma lepsze IP (IP54 vs IP52), czyta PDF417 (LI2208 nie), ale jest wolniejszy (300 vs 547 skanów/s) i ma krótszy zasięg (465 mm vs 790 mm). Pełna specyfikacja — w dokumentacji Newland EMEA.`,
+Gwarancja producenta 5 lat (60 miesięcy) — najdłuższa gwarancja wśród skanerów 1D w tym segmencie cenowym. Porównanie z Zebra LI2208: HR15 Wahoo ma lepsze IP (IP54 vs IP52), czyta PDF417 (LI2208 nie), ale jest wolniejszy (300 vs 547 skanów/s) i ma krótszy zasięg (465 mm vs 790 mm).
+
+Koszt posiadania (TCO): gwarancja producenta 5 lat w standardzie — najdłuższa w branży skanerów 1D. Klasa IP54 (najwyższa w segmencie budżetowym) minimalizuje koszty napraw spowodowanych pyłem i bryzgami wody w środowiskach produkcyjnych i logistycznych. Pełna specyfikacja — w dokumentacji Newland EMEA.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-przewodowe'],
     manufacturerId: 'newland',
@@ -12547,8 +12567,8 @@ Gwarancja producenta 5 lat (60 miesięcy) — najdłuższa gwarancja wśród ska
       'Newland HR15 Wahoo — widok z boku, ergonomiczny uchwyt pistoletowy z żółtym triggerem i kabel USB',
       'Newland HR15 Wahoo — widok z tyłu, logo Newland, głośnik buzzera i wyjście kabla',
     ],
-    seoTitle: 'Newland HR15 Wahoo — czytnik kodów 1D CCD + PDF417, IP54, USB | TAKMA',
-    seoDescription: 'Przewodowy skaner 1D Newland HR15 Wahoo: CCD 2500 px, PDF417, IP54, 1.5 m drop, 5 lat gwarancji, 152 g. Porównanie z Zebra DS2208 i LI2208. Cena i dostępność online.',
+    seoTitle: 'Newland HR15 Wahoo — czytnik 1D CCD + PDF417, IP54, 5 lat gwarancji | TAKMA',
+    seoDescription: 'Czytnik kodów 1D+PDF417 Newland HR15 Wahoo do magazynów i retail: IP54, CCD 2500 px, 1,5 m drop, 5 lat gwarancji. 1 konfiguracja. Porównanie z Zebra DS2208 i LI2208.',
     isNew: true,
     isBestseller: false,
     availability: 'unavailable',
@@ -12638,6 +12658,10 @@ Gwarancja producenta 5 lat (60 miesięcy) — najdłuższa gwarancja wśród ska
         answer: 'Gwarancja producenta 5 lat (60 miesięcy) na wersję przewodową — jedna z najdłuższych na rynku skanerów budżetowych. Wersja Bluetooth ma gwarancję 3 lata. Serwis w Polsce realizowany przez autoryzowanych partnerów Newland.',
       },
       {
+        question: 'Gdzie serwisować czytnik Newland HR15 Wahoo w Polsce?',
+        answer: 'Autoryzowany serwis Newland w Polsce: serwis jest realizowany przez dystrybutora. Czas naprawy: 5–10 dni roboczych w ramach gwarancji producenta (standardowo 5 lat na skanery). Zgłoszenia serwisowe przez formularz kontaktowy na takma.com.pl lub telefonicznie.',
+      },
+      {
         question: 'Jakie są alternatywy dla Newland HR15 Wahoo?',
         answer: 'W segmencie 1D: Newland HR11 Aringa (tańszy, ale IP42, bez PDF417), Zebra LI2208 (szybszy, dłuższy zasięg, droższa). Upgrade do 2D: Newland HR23 Dorada (imager 2D od ok. 260 zł netto — czyta QR, DataMatrix, PDF417), Zebra DS2208 (standard branżowy 2D, od ok. 352 zł). HR15 Wahoo to najlepszy wybór gdy potrzebujesz IP54, PDF417 i 5 lat gwarancji za ok. 230 zł netto.',
       },
@@ -12674,7 +12698,9 @@ Konstrukcja IP52, odporność na upadek z 1,5 m na beton, ESD ±15 kV (powietrze
 
 Porównanie z Zebra DS2278: HR23 BT ma Bluetooth 5.0 (vs 4.0), zasięg ponad 100 m (vs 10 m — DS2278 to Class 2!), lepsze IP52 (vs IP42), pamięć batch 16 384 kodów, wibrację w standardzie i gwarancję 5 lat (vs 3 lata) — przy cenie o ~40% niższej. Zebra DS2278 oferuje szerszą sieć serwisową i kompatybilność z akcesoriami Zebra.
 
-W zestawie: skaner + stacja dokująca + kabel USB + bateria 2600 mAh + Quick Start Guide. Opcjonalnie: bateria zapasowa NLS-BTY2333 i ładowarka 4-slotowa NLS-CD3233-4C do rotacyjnego ładowania baterii. Konfiguracja przez EasySet. Pełna specyfikacja — w dokumentacji Newland EMEA.`,
+W zestawie: skaner + stacja dokująca + kabel USB + bateria 2600 mAh + Quick Start Guide. Opcjonalnie: bateria zapasowa NLS-BTY2333 i ładowarka 4-slotowa NLS-CD3233-4C do rotacyjnego ładowania baterii. Konfiguracja przez EasySet.
+
+Koszt posiadania (TCO): gwarancja producenta 5 lat w standardzie — najdłuższa w segmencie bezprzewodowych skanerów 2D. Bateria wymienna przez użytkownika bez narzędzi eliminuje koszty serwisu przy wymianie ogniwa. Pełna specyfikacja — w dokumentacji Newland EMEA.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-bezprzewodowe'],
     manufacturerId: 'newland',
@@ -12684,8 +12710,8 @@ W zestawie: skaner + stacja dokująca + kabel USB + bateria 2600 mAh + Quick Sta
       'Newland HR23 Dorada Bluetooth — widok z przodu, czarna obudowa z niebieskim przyciskiem skanowania i oknem sensora CMOS 2D',
       'Newland HR23 Dorada Bluetooth — widok z tyłu, logo Newland, diody LED statusu i niebieski pierścień na uchwycie',
     ],
-    seoTitle: 'Newland HR23 Dorada Bluetooth — skaner 2D bezprzewodowy BT 5.0, zasięg 100 m | TAKMA',
-    seoDescription: 'Bezprzewodowy skaner 2D Newland HR23 Dorada Bluetooth 5.0: CMOS 640×480, zasięg 100 m, bateria 2600 mAh (16 h), pamięć 16 384 kodów, IP52, 5 lat gwarancji. Tańszy niż Zebra DS2278.',
+    seoTitle: 'Newland HR23 Dorada Bluetooth — skaner 2D BT 5.0, zasięg 100 m, 5 lat gwarancji | TAKMA',
+    seoDescription: 'Skaner 2D Newland HR23 Dorada BT do magazynów i logistyki: Bluetooth 5.0, zasięg 100 m, bateria 16 h, batch 16 384 kodów, IP52, 5 lat gwarancji. 1 konfiguracja. Tańszy niż Zebra DS2278.',
     isNew: true,
     isBestseller: false,
     availability: 'available',
@@ -12783,6 +12809,10 @@ W zestawie: skaner + stacja dokująca + kabel USB + bateria 2600 mAh + Quick Sta
         answer: 'Gwarancja producenta 5 lat (60 miesięcy) na skaner i stację dokującą — najdłuższa w segmencie bezprzewodowych skanerów 2D. Zebra DS2278 i DS8178 mają standardową gwarancję 3 lata. Bateria objęta gwarancją 1 rok.',
       },
       {
+        question: 'Gdzie serwisować skaner Newland HR23 Dorada Bluetooth w Polsce?',
+        answer: 'Autoryzowany serwis Newland w Polsce: serwis jest realizowany przez dystrybutora. Czas naprawy: 5–10 dni roboczych w ramach gwarancji producenta (standardowo 5 lat na skanery). Zgłoszenia serwisowe przez formularz kontaktowy na takma.com.pl lub telefonicznie.',
+      },
+      {
         question: 'Jakie są alternatywy dla HR23 Dorada Bluetooth?',
         answer: 'W segmencie bezprzewodowym 2D: Zebra DS2278 (od ok. 780 zł netto — BT 4.0, zasięg 10 m, IP42), Zebra DS8178 (od ok. 1 800 zł — premium, bateria 83 h), Zebra DS3678-SR (od ok. 2 100 zł — ultra-rugged IP65/IP68). HR23 BT to najlepszy stosunek ceny do jakości w segmencie bezprzewodowych skanerów 2D — BT 5.0, 100 m zasięgu i 5 lat gwarancji za ok. 437 zł netto.',
       },
@@ -12823,7 +12853,9 @@ Porównanie z HR23 Dorada BT: HR33 BT ma megapikselowy sensor (1280×800 vs 640�
 
 Porównanie z Zebra DS8178: HR33 BT ma Bluetooth 5.0 (vs 4.1), zasięg 100 m (vs 10 m — DS8178 to Class 2), OCR w standardzie (vs opcja PRZL), pamięć batch 15 000+ kodów, gwarancję 5 lat (vs 3 lata) — w cenie ponad 2× niższej (ok. 688 zł vs 1 800 zł netto). DS8178 ma baterię 83 h i IP42/IP52.
 
-W zestawie: skaner + stacja dokująca + kabel USB + bateria 2600 mAh + Quick Start Guide. Akcesoria wspólne z HR23 BT: bateria zapasowa NLS-BTY2333 i ładowarka 4-slotowa NLS-CD3233-4C. Konfiguracja przez EasySet. Pełna specyfikacja — w dokumentacji Newland EMEA.`,
+W zestawie: skaner + stacja dokująca + kabel USB + bateria 2600 mAh + Quick Start Guide. Akcesoria wspólne z HR23 BT: bateria zapasowa NLS-BTY2333 i ładowarka 4-slotowa NLS-CD3233-4C. Konfiguracja przez EasySet.
+
+Koszt posiadania (TCO): gwarancja producenta 5 lat w standardzie — najdłuższa w segmencie bezprzewodowych skanerów 2D megapikselowych. Bateria wymienna przez użytkownika. Sensor 1280×800 zapewnia pewny odczyt nawet przy uszkodzonych lub niskokontrastowych kodach — mniej błędów i przepisywania danych, niższe koszty operacyjne. Pełna specyfikacja — w dokumentacji Newland EMEA.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-bezprzewodowe'],
     manufacturerId: 'newland',
@@ -12833,8 +12865,8 @@ W zestawie: skaner + stacja dokująca + kabel USB + bateria 2600 mAh + Quick Sta
       'Newland HR33 Marlin Bluetooth — widok z przodu, czarna obudowa z niebieskim przyciskiem skanowania, okno megapikselowego sensora CMOS i celownik laserowy',
       'Newland HR33 Marlin Bluetooth — widok z tyłu, logo Newland, diody LED statusu i niebieski pierścień na uchwycie',
     ],
-    seoTitle: 'Newland HR33 Marlin Bluetooth — skaner 2D megapikselowy BT 5.0, OCR, laser | TAKMA',
-    seoDescription: 'Bezprzewodowy skaner Newland HR33 Marlin Bluetooth: megapikselowy CMOS 1280×800, celownik laserowy, OCR, BT 5.0, zasięg 100 m, batch 15 000 kodów, IP52, 5 lat gwarancji. Tańszy niż Zebra DS8178.',
+    seoTitle: 'Newland HR33 Marlin Bluetooth — skaner 2D 1280×800, BT 5.0, OCR, laser | TAKMA',
+    seoDescription: 'Skaner 2D BT Newland HR33 Marlin do magazynów i logistyki: 1280×800 CMOS, laser, OCR, BT 5.0, 100 m, batch 15 000 kodów, IP52, 5 lat gwarancji. 1 konfiguracja. Tańszy niż DS8178.',
     isNew: true,
     isBestseller: false,
     availability: 'available',
@@ -12936,6 +12968,10 @@ W zestawie: skaner + stacja dokująca + kabel USB + bateria 2600 mAh + Quick Sta
         answer: 'Tak — bateria NLS-BTY2333 (2600 mAh) i ładowarka 4-slotowa NLS-CD3233-4C są w 100% kompatybilne między HR23 BT i HR33 BT. Stacja dokująca w zestawie jest dedykowana dla danego modelu, ale podstawka Smartstand NLS-STD23-33-SA pasuje do obu wersji (HR23 i HR33, przewodowych i bezprzewodowych).',
       },
       {
+        question: 'Gdzie serwisować skaner Newland HR33 Marlin Bluetooth w Polsce?',
+        answer: 'Autoryzowany serwis Newland w Polsce: serwis jest realizowany przez dystrybutora. Czas naprawy: 5–10 dni roboczych w ramach gwarancji producenta (standardowo 5 lat na skanery). Zgłoszenia serwisowe przez formularz kontaktowy na takma.com.pl lub telefonicznie.',
+      },
+      {
         question: 'Jakie są alternatywy dla HR33 Marlin Bluetooth?',
         answer: 'W segmencie bezprzewodowym megapikselowym: Zebra DS8178 (od ok. 1 800 zł — BT 4.1, bateria 83 h, IP42/IP52), Zebra DS4678 (od ok. 1 500 zł — BT 4.1, PRZL OCR opcja). W segmencie budżetowym: Newland HR23 Dorada BT (od ok. 437 zł — CMOS 640×480, bez OCR). HR33 BT to jedyny skaner bezprzewodowy z megapikselowym sensorem, OCR, BT 5.0 i zasięgiem 100 m w cenie poniżej 700 zł netto.',
       },
@@ -12971,7 +13007,9 @@ Interfejs USB lub RS-232. Kabel USB prosty 2 m w zestawie (złącze RJ45 po stro
 
 Kompromisy: IP64 (nie IP67 jak Zebra DS3608), upadek 1,8 m (nie 2,4 m), brak wersji bezprzewodowej, brak Ethernet przemysłowego (EtherNet/IP, Profinet). Jeśli potrzebujesz IP67, zasięgu BT lub integracji z siecią przemysłową — Zebra DS3608-DP lub DS3678-DP to bezpieczny, ale 5× droższy wybór.
 
-Opcjonalna podstawka STD300 (składana, auto-sense) do pracy prezentacyjnej hands-free. Pełna specyfikacja — w dokumentacji Newland EMEA.`,
+Opcjonalna podstawka STD300 (składana, auto-sense) do pracy prezentacyjnej hands-free.
+
+Koszt posiadania (TCO): gwarancja producenta 5 lat w standardzie — najdłuższa w branży skanerów DPM (konkurencja: 3 lata). Klasa IP64 i odporność na upadek z 1,8 m minimalizują koszty napraw w środowiskach przemysłowych. Cena 3–5× niższa od Zebra DS3608-DP i Datalogic PowerScan 9600 DPX przy tym samym sensorze megapikselowym. Pełna specyfikacja — w dokumentacji Newland EMEA.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-przewodowe'],
     manufacturerId: 'newland',
@@ -12981,8 +13019,8 @@ Opcjonalna podstawka STD300 (składana, auto-sense) do pracy prezentacyjnej hand
       'Newland NVH300 Angler DP — widok z przodu, czarno-pomarańczowa obudowa przemysłowa z szerokim oknem skanera DPM i pomarańczowym przyciskiem trigger',
       'Newland NVH300 Angler DP — widok z tyłu, złącze RJ45, gumowany uchwyt z pomarańczowymi akcentami i otwory wentylacyjne',
     ],
-    seoTitle: 'Newland NVH300 Angler DP — skaner DPM, 1280×960 CMOS, IP64 | TAKMA',
-    seoDescription: 'Przemysłowy skaner DPM Newland NVH300 Angler DP: megapikselowy CMOS 1280×960, 3-kolorowe LED, IP64, 1.8 m drop, 5 lat gwarancji. 3–5× tańszy od Zebra DS3608-DP. Cena i dostępność.',
+    seoTitle: 'Newland NVH300 Angler DP — skaner DPM 1280×960 CMOS, IP64, 5 lat gwarancji | TAKMA',
+    seoDescription: 'Przemysłowy skaner DPM Newland NVH300 do produkcji i logistyki: CMOS 1280×960, 3-kolorowe LED, IP64, 1,8 m drop, 5 lat gwarancji. 1 konfiguracja. 3–5× tańszy niż Zebra DS3608-DP.',
     isNew: true,
     isBestseller: false,
     availability: 'unavailable',
@@ -13072,6 +13110,10 @@ Opcjonalna podstawka STD300 (składana, auto-sense) do pracy prezentacyjnej hand
       {
         question: 'Do jakich branż nadaje się NVH300?',
         answer: 'Produkcja motoryzacyjna (traceability części), przemysł lotniczy i obronny (MIL-STD), elektronika (PCB, SMD), farmacja (pojemniki laboratoryjne), metalurgia i odlewnie (surowe odlewy), energetyka (turbiny, rurociągi). Wszędzie tam, gdzie kody są znakowane bezpośrednio na częściach — bez etykiet.',
+      },
+      {
+        question: 'Gdzie serwisować skaner Newland NVH300 Angler DP w Polsce?',
+        answer: 'Autoryzowany serwis Newland w Polsce: serwis jest realizowany przez dystrybutora. Czas naprawy: 5–10 dni roboczych w ramach gwarancji producenta (standardowo 5 lat na skanery). Zgłoszenia serwisowe przez formularz kontaktowy na takma.com.pl lub telefonicznie.',
       },
       {
         question: 'Jakie są alternatywy dla Newland NVH300 Angler DP?',
@@ -29169,7 +29211,9 @@ Bateria 5 100 mAh z funkcją hot-swap to kolejna kluczowa przewaga: wymiana roz�
 
 Ekran 4" IPS WVGA (480×800) ze szkłem Gorilla Glass 3 obsługuje dotyk w rękawiczkach i na mokrym ekranie. Norma IP65 i odporność na upadki z 1,8 m zapewniają niezawodne działanie w najtrudniejszych warunkach przemysłowych. Zakres temperatury pracy od -20°C do +55°C pozwala na pracę w chłodniach bez dodatkowego wyposażenia.
 
-N7 Cachalot Pro II dostępny jest z Androidem 11 lub 13 — oba z certyfikatem Google Android Enterprise Recommended (AER), gwarantującym aktualizacje bezpieczeństwa i kompatybilność z systemami MDM. Bezpłatny system Ndevor firmy Newland umożliwia zdalne zarządzanie flotą urządzeń. Wszystkie warianty wyposażone są w 4 GB RAM, 64 GB Flash, Wi-Fi ac, Bluetooth 5.0, 4G LTE, NFC i GPS. Szczegółowe informacje techniczne, instrukcje obsługi oraz narzędzia deweloperskie dostępne są w oficjalnej dokumentacji Newland AIDC na stronie newland-id.com.`,
+N7 Cachalot Pro II dostępny jest z Androidem 11 lub 13 — oba z certyfikatem Google Android Enterprise Recommended (AER), gwarantującym aktualizacje bezpieczeństwa i kompatybilność z systemami MDM. Bezpłatny system Ndevor firmy Newland umożliwia zdalne zarządzanie flotą urządzeń. Wszystkie warianty wyposażone są w 4 GB RAM, 64 GB Flash, Wi-Fi ac, Bluetooth 5.0, 4G LTE, NFC i GPS.
+
+Koszt posiadania (TCO): Android 11 lub 13 z aktualizacjami bezpieczeństwa w ramach platformy AER. Bateria 5 100 mAh wymienialna przez użytkownika — brak kosztów serwisu przy wymianie ogniwa. Bezpłatny MDM Ndevor eliminuje koszt licencji na zarządzanie flotą. Szczegółowe informacje techniczne, instrukcje obsługi oraz narzędzia deweloperskie dostępne są w oficjalnej dokumentacji Newland AIDC na stronie newland-id.com.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'newland',
     priceFrom: 3346,
@@ -29186,8 +29230,8 @@ N7 Cachalot Pro II dostępny jest z Androidem 11 lub 13 — oba z certyfikatem G
       'Newland N7 Cachalot Pro II — widok z boku, profil z baterią hot-swap 5100 mAh',
     ],
     isBestseller: false,
-    seoTitle: 'Newland N7 Cachalot Pro II — terminal z klawiaturą i Duo Near & Far | TAKMA',
-    seoDescription: 'Terminal Newland N7 Cachalot Pro II: klawiatura 29/38/47 kl., skaner Standard 2D lub Duo Near & Far, hot-swap 5100 mAh, IP65, Android 11/13 AER, -20°C. 11 wariantów. Cena netto — TAKMA.',
+    seoTitle: 'Newland N7 Cachalot Pro II — terminal z klawiaturą i skanerem Duo Near & Far | od 3 346 zł',
+    seoDescription: 'Terminal mobilny Newland N7 z klawiaturą do magazynów i logistyki: klawiatura 29/38/47 kl., Duo Near & Far, hot-swap 5100 mAh, IP65, Android 11/13 AER. 11 wariantów. Od 3 346 zł netto.',
     specifications: [
       { name: 'System', value: 'Android 11 lub 13 GMS, Android Enterprise Recommended (AER)' },
       { name: 'Procesor', value: 'Ośmiordzeniowy (octa-core) 2,0 GHz' },
@@ -29320,9 +29364,14 @@ N7 Cachalot Pro II dostępny jest z Androidem 11 lub 13 — oba z certyfikatem G
       { question: 'Jak zarządzać flotą terminali N7 — jaki MDM?', answer: 'Newland oferuje bezpłatny system MDM Ndevor (ndevor.newlandaidc.com) — masowa instalacja aplikacji, śledzenie GPS, zdalne czyszczenie danych. Alternatywnie: SOTI MobiControl, VMware Workspace ONE, Microsoft Intune. Terminal wspiera Android Zero-Touch Enrollment do masowych wdrożeń bez ręcznej konfiguracji.' },
       { question: 'Newland N7 Cachalot Pro II vs Zebra MC3400 — co wybrać?', answer: 'N7 Cachalot Pro II: klawiatura 29/38/47 kl., Duo Near & Far, hot-swap 5 100 mAh, IP65, 1,8 m upadki, Android 11, 3 lata wsparcia, Ndevor bezpłatny. [Zebra MC3400](/produkt/zebra-mc3400) (od 4 561 zł): SE55/SE58 (do 30 m!), hot-swap 7 000 mAh, IP65/IP67, 2,4 m upadki, Android 14 do v18, Mobility DNA. MC3400 jest droższa, ale oferuje dłuższe wsparcie, wyższą wytrzymałość i zasięg skanera do 30 m.' },
       { question: 'Jakie kody kreskowe czyta N7 Cachalot Pro II?', answer: 'Wszystkie popularne kody 1D (Code 128, Code 39, EAN-8/13, UPC-A/E, Interleaved 2 of 5) i 2D (QR Code, Data Matrix, PDF417, Aztec, MaxiCode). Czujnik CMOS 1280×800, 60 klatek/s, celownik laserowy. Wersja Duo Near & Far skanuje kody słabo kontrastowe i uszkodzone z większych odległości.' },
+      { question: 'Gdzie serwisować terminal Newland N7 Cachalot Pro II w Polsce?', answer: 'Autoryzowany serwis Newland w Polsce: serwis jest realizowany przez dystrybutora. Czas naprawy: 5–10 dni roboczych w ramach gwarancji producenta (standardowo 2 lata na terminale). Zgłoszenia serwisowe przez formularz kontaktowy na takma.com.pl lub telefonicznie.' },
       { question: 'Jakie są alternatywy dla Newland N7 Cachalot Pro II?', answer: 'Terminale z klawiaturą fizyczną w zbliżonej cenie: [Zebra MC3400](/produkt/zebra-mc3400) (od 4 561 zł — dłuższe wsparcie, Mobility DNA, zasięg skanera 30 m), [Datalogic Skorpio X5](/produkt/datalogic-skorpio-x5) (~6 490 zł — IP65, 5 lat wsparcia), [Zebra MC2700](/produkt/zebra-mc2700) (od 2 670 zł — tańszy, ale bez hot-swap i mniejszy ekran). N7 wygrywa stosunkiem ceny do możliwości, szczególnie w wersji Duo Near & Far z hot-swap baterią.' },
     ],
-    downloads: [],
+    downloads: [
+      { name: 'Karta katalogowa N7 Cachalot Pro II (EN)', type: 'datasheet', url: 'https://www.newland-id.com/en/products/mobile-computers/n7-cachalot-pro-ii', size: 'Online' },
+      { name: 'Ndevor — bezpłatna platforma MDM Newland', type: 'software', url: 'https://ndevor.newlandaidc.com', size: 'Online' },
+      { name: 'Strona producenta Newland N7 Cachalot Pro II', type: 'manual', url: 'https://www.newland-id.com/en/products/mobile-computers/n7-cachalot-pro-ii', size: 'Online' },
+    ],
     createdAt: '2026-02-28',
   },
   // ============================================
@@ -29349,6 +29398,8 @@ Bateria 5 000 mAh Li-Ion (3.85V) — największa w klasie cenowej — zapewnia p
 
 Obudowa IP65 — pełna ochrona przed pyłem i strumieniami wody ze wszystkich kierunków. Upadki z 1.5 m na beton (6 stron, po jednym upadku na stronę). Temperatura pracy od -20°C do +55°C — praca w chłodniach bez dodatkowego wyposażenia. Temperatura przechowywania od -40°C do +70°C. Odporność na wyładowania elektrostatyczne ESD ±15 kV (powietrze) / ±8 kV (kontakt). Czujniki: światła, zbliżeniowy, akcelerometr, żyroskop, kompas elektroniczny.
 
+Koszt posiadania (TCO): Android 13 GMS z aktualizacjami bezpieczeństwa. Bateria 5 000 mAh wymienialna przez użytkownika bez narzędzi — brak przestojów przy wymianie. Bezpłatny MDM Ndevor eliminuje koszt licencji na zarządzanie flotą. Gwarancja 2 lata z opcją przedłużenia do 5 lat (Comprehensive Service).
+
 W zestawie: terminal MT93, bateria 5 000 mAh, etui ochronne, folia na ekran, pasek na rękę, kabel USB-C, adapter z wieloma wtyczkami (EU/UK/US) — kompletny zestaw do natychmiastowego uruchomienia. Opcjonalne akcesoria: dodatkowa bateria, adapter AC, pasek na rękę, etui ochronne wzmocnione, folia hartowana, stacja dokująca z ładowaniem, stacja ładowania 4 baterii. Zarządzanie flotą przez bezpłatną platformę MDM Newland Ndevor (zdalna konfiguracja, instalacja aplikacji, śledzenie GPS, czyszczenie danych). Gwarancja producenta 2 lata z opcją przedłużenia do 3 lub 5 lat (Comprehensive Service).`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-newland'],
@@ -29356,8 +29407,8 @@ W zestawie: terminal MT93, bateria 5 000 mAh, etui ochronne, folia na ekran, pas
     tags: ['magazyn', 'logistyka', 'retail', 'outdoor'],
     images: ['/images/products/NLS-MT9300-W4-AS.png'],
     imageDescriptions: ['Newland MT93 Megattera Standard — terminal mobilny 5.5 cala z ekranem Android 13, skanerem 2D pod kątem 45° i żółtymi przyciskami skanowania'],
-    seoTitle: 'Newland MT93 Megattera Standard — terminal mobilny 5.5" z 4G LTE | TAKMA',
-    seoDescription: 'Terminal mobilny Newland MT93 Megattera Standard: Android 13, 4G LTE, skaner 2D CM66, bateria 5000 mAh, IP65. Najtańszy terminal z wbudowanym LTE. Cena i dostępność w TAKMA.',
+    seoTitle: 'Newland MT93 Megattera Standard — terminal 5.5" z 4G LTE | od 2 295 zł',
+    seoDescription: 'Terminal mobilny Newland MT93 do magazynów, logistyki i dostaw: Android 13, 4G LTE, skaner 2D, 5000 mAh, IP65, -20°C. 1 wariant. Najtańszy terminal z LTE. Od 2 295 zł netto.',
     isNew: true,
     isBestseller: false,
     specifications: [
@@ -29409,10 +29460,12 @@ W zestawie: terminal MT93, bateria 5 000 mAh, etui ochronne, folia na ekran, pas
       { question: 'Czy MT93 nadaje się do pracy w chłodni?', answer: 'Tak — zakres temperatur pracy od -20°C do +55°C obejmuje większość chłodni. Norma IP65 chroni przed pyłem i strumieniem wody. Do mroźni głębokich (-30°C i niżej) rekomendujemy [Zebra MC9400](/produkt/zebra-mc9400) z dedykowaną baterią freezer.' },
       { question: 'Co jest w zestawie z MT93 Megattera Standard?', answer: 'W pudełku: terminal MT93, bateria 5000 mAh, etui ochronne, folia na ekran, pasek na rękę, kabel USB-C, adapter z wieloma wtyczkami (EU/UK/US). To kompletny zestaw — w przeciwieństwie do Zebra TC22, gdzie etui i folia kupowane są osobno.' },
       { question: 'Jak zarządzać flotą terminali MT93?', answer: 'Newland oferuje bezpłatną platformę MDM Ndevor — masowa instalacja aplikacji, śledzenie GPS, zdalne czyszczenie danych. Alternatywnie: SOTI MobiControl, VMware Workspace ONE, Microsoft Intune. Terminal wspiera Android Zero-Touch Enrollment.' },
+      { question: 'Gdzie serwisować terminal Newland MT93 Megattera w Polsce?', answer: 'Autoryzowany serwis Newland w Polsce: serwis jest realizowany przez dystrybutora. Czas naprawy: 5–10 dni roboczych w ramach gwarancji producenta (standardowo 2 lata na terminale). Zgłoszenia serwisowe przez formularz kontaktowy na takma.com.pl lub telefonicznie.' },
       { question: 'Jakie są alternatywy dla Newland MT93 Megattera?', answer: 'W podobnej klasie: [Zebra TC22](/produkt/zebra-tc22) (6" FHD+, Wi-Fi 6, ale bez LTE — ok. 2 400 zł netto), [Zebra TC27](/produkt/zebra-tc27) (jak TC22 + 5G/LTE — ok. 3 000+ zł netto), [Newland N7 Cachalot Pro II](/produkt/newland-n7-cachalot-pro-ii) (4", klawiatura fizyczna, od 3 346 zł netto). MT93 wyróżnia się najniższą ceną z wbudowanym 4G LTE i największą baterią (5 000 mAh) w klasie.' },
     ],
     downloads: [
       { name: 'Karta katalogowa MT93 (EN)', type: 'datasheet', url: 'https://scan2id.com/wp-content/uploads/2024/11/newland-mt93-megattera-standard-datasheet.pdf', size: 'PDF' },
+      { name: 'Strona producenta Newland MT93 Megattera', type: 'manual', url: 'https://www.newland-id.com/en/products/mobile-computers/mt93-megattera', size: 'Online' },
     ],
     createdAt: '2026-03-01',
   },
@@ -29439,15 +29492,17 @@ Bateria 5 000 mAh Li-Ion (3.85V) zapewnia ponad 10 godzin ciągłej pracy. Wymie
 
 Obudowa IP65 — pełna ochrona przed pyłem i strumieniami wody ze wszystkich kierunków. Upadki z 1.5 m na beton (6 stron). Temperatura pracy od -20°C do +55°C — praca w chłodniach bez dodatkowego wyposażenia. Temperatura przechowywania od -40°C do +70°C. ESD ±15 kV (powietrze) / ±8 kV (kontakt).
 
-W zestawie: terminal, bateria 5 000 mAh, etui ochronne, folia na ekran, pasek na rękę, kabel USB-C, adapter z wieloma wtyczkami (EU/UK/US). Zarządzanie flotą przez bezpłatną platformę MDM Newland Ndevor. Gwarancja producenta 2 lata z opcją przedłużenia do 3 lub 5 lat. Wersja z IP67, Android Enterprise Recommended i 6 GB RAM: Newland MT93 Megattera Pro.`,
+W zestawie: terminal, bateria 5 000 mAh, etui ochronne, folia na ekran, pasek na rękę, kabel USB-C, adapter z wieloma wtyczkami (EU/UK/US). Zarządzanie flotą przez bezpłatną platformę MDM Newland Ndevor. Gwarancja producenta 2 lata z opcją przedłużenia do 3 lub 5 lat. Wersja z IP67, Android Enterprise Recommended i 6 GB RAM: Newland MT93 Megattera Pro.
+
+Koszt posiadania (TCO): Android 13 GMS z aktualizacjami bezpieczeństwa. Bateria 5 000 mAh wymienialna przez użytkownika bez narzędzi. Wi-Fi 6E zwiększa przepustowość i redukuje zrywanie połączeń w gęstych sieciach — niższe koszty operacyjne WMS. Bezpłatny MDM Ndevor eliminuje koszt licencji.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-newland'],
     manufacturerId: 'newland',
     tags: ['magazyn', 'logistyka', 'retail', 'outdoor'],
     images: ['/images/products/NLS-MT9300-W4-SS.png'],
     imageDescriptions: ['Newland MT93 Megattera Standard Plus — terminal mobilny 5.5 cala z Wi-Fi 6E, ekranem Android 13, skanerem 2D i żółtymi przyciskami skanowania'],
-    seoTitle: 'Newland MT93 Megattera Standard Plus — terminal mobilny 5.5" z Wi-Fi 6E i 4G LTE | TAKMA',
-    seoDescription: 'Terminal mobilny Newland MT93 Megattera Standard Plus: Android 13, Wi-Fi 6E, 4G LTE, skaner 2D CM66, bateria 5000 mAh, IP65. Cena i dostępność w TAKMA.',
+    seoTitle: 'Newland MT93 Megattera Standard Plus — terminal 5.5" Wi-Fi 6E i 4G LTE | od 2 207 zł',
+    seoDescription: 'Terminal mobilny Newland MT93 do magazynów z Wi-Fi 6E i 4G LTE: Android 13, skaner 2D, 5000 mAh, IP65, -20°C. 1 wariant. Najtańszy terminal z Wi-Fi 6E i LTE. Od 2 207 zł netto.',
     isNew: true,
     isBestseller: false,
     specifications: [
@@ -29498,10 +29553,12 @@ W zestawie: terminal, bateria 5 000 mAh, etui ochronne, folia na ekran, pasek na
       { question: 'Czy MT93 Standard Plus nadaje się do chłodni?', answer: 'Tak — zakres temperatur pracy od -20°C do +55°C obejmuje chłodnie standardowe. IP65 chroni przed pyłem i strumieniami wody. Do mroźni głębokich (-30°C i niżej) rekomendujemy [Zebra MC9400](/produkt/zebra-mc9400) z dedykowaną baterią freezer.' },
       { question: 'Czy MT93 Standard Plus współpracuje z WMS?', answer: 'Tak — Android 13 GMS z Google Play zapewnia kompatybilność z popularnymi WMS: Comarch WMS, SAP Mobile, Microsoft Dynamics, Simple WMS, Qguar. Newland SDK (Java/Kotlin) umożliwia integrację skanera z aplikacjami custom. Zarządzanie flotą przez bezpłatny MDM Newland Ndevor.' },
       { question: 'Jakie akcesoria pasują do MT93 Standard Plus?', answer: 'Wszystkie akcesoria MT93 są wspólne dla całej serii: stacja ładowania [NLS-MCD9350-01](/produkt/newland-mcd9350-01), ładowarka 4 baterii [NLS-MCD9350-4B](/produkt/newland-mcd9350-4b), uchwyt pistoletowy [NLS-PG93-01](/produkt/newland-pg93-01), etui ochronne [NLS-MRB9350](/produkt/newland-mrb9350). Bateria zapasowa BTY95L (5000 mAh) — ta sama co w Standard i Pro.' },
+      { question: 'Gdzie serwisować terminal Newland MT93 Standard Plus w Polsce?', answer: 'Autoryzowany serwis Newland w Polsce: serwis jest realizowany przez dystrybutora. Czas naprawy: 5–10 dni roboczych w ramach gwarancji producenta (standardowo 2 lata na terminale). Zgłoszenia serwisowe przez formularz kontaktowy na takma.com.pl lub telefonicznie.' },
       { question: 'Jakie są alternatywy dla MT93 Standard Plus?', answer: 'W podobnej klasie: [Newland MT93 Standard](/produkt/newland-mt93-megattera) (Wi-Fi 5, od 2 295 zł — jeśli nie potrzebujesz Wi-Fi 6E), [Zebra TC22](/produkt/zebra-tc22) (6" FHD+, Wi-Fi 6/6E, bez LTE — ok. 2 400 zł), [Zebra TC27](/produkt/zebra-tc27) (jak TC22 + 5G/LTE — ok. 3 000+ zł), [Newland N7 Cachalot Pro II](/produkt/newland-n7-cachalot-pro-ii) (4", klawiatura fizyczna, od 3 346 zł). Standard Plus wyróżnia się najniższą ceną terminala z Wi-Fi 6E i 4G LTE jednocześnie.' },
     ],
     downloads: [
       { name: 'Karta katalogowa MT93 (EN)', type: 'datasheet', url: 'https://scan2id.com/wp-content/uploads/2024/11/newland-mt93-megattera-standard-datasheet.pdf', size: 'PDF' },
+      { name: 'Strona producenta Newland MT93 Megattera', type: 'manual', url: 'https://www.newland-id.com/en/products/mobile-computers/mt93-megattera', size: 'Online' },
     ],
     createdAt: '2026-03-01',
   },
@@ -29526,15 +29583,17 @@ Kamery: tylna 13 MP z autofokusem fazowym (PDAF) i lampą LED do dokumentacji fo
 
 Obudowa IP67 — pełna pyłoszczelność i odporność na zanurzenie w wodzie do 1 m przez 30 minut. Upadki z 1.5 m na beton (6 stron). Temperatura pracy od -20°C do +50°C, przechowywania od -30°C do +60°C. ESD ±15 kV (powietrze) / ±8 kV (kontakt). Czujniki: zbliżeniowy, magnetometr, światła, akcelerometr, żyroskop.
 
-W zestawie: terminal, bateria 6 000 mAh, etui ochronne, folia na ekran, pasek na rękę, kabel USB-C, adapter z wieloma wtyczkami (EU/UK/US). Zarządzanie flotą przez bezpłatną platformę MDM Newland Ndevor. Gwarancja producenta 2 lata z opcją przedłużenia do 3 lub 5 lat (Comprehensive Service). Wersja ekonomiczna bez 5G: Newland MT93 Megattera Standard.`,
+W zestawie: terminal, bateria 6 000 mAh, etui ochronne, folia na ekran, pasek na rękę, kabel USB-C, adapter z wieloma wtyczkami (EU/UK/US). Zarządzanie flotą przez bezpłatną platformę MDM Newland Ndevor. Gwarancja producenta 2 lata z opcją przedłużenia do 3 lub 5 lat (Comprehensive Service). Wersja ekonomiczna bez 5G: Newland MT93 Megattera Standard.
+
+Koszt posiadania (TCO): Android 13 AER z aktualizacjami bezpieczeństwa i gwarantowaną kompatybilnością z MDM enterprise. Bateria 6 000 mAh (o 20% większa niż MT93) wymienialna przez użytkownika — całodzienna praca bez przerwy na ładowanie. IP67 eliminuje ryzyko uszkodzenia przez wodę. Bezpłatny MDM Ndevor i 5G przyszłościowe połączenie bez wymiany sprzętu.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-newland'],
     manufacturerId: 'newland',
     tags: ['magazyn', 'logistyka', 'retail', 'outdoor'],
     images: ['/images/products/NLS-MT9556-W5.png', '/images/products/NLS-MT9556-W5-2.png'],
     imageDescriptions: ['Newland MT95 Kambur Pro II — widok z przodu, ekran 6.1 cala z Android 13 i wzmocniona obudowa IP67', 'Newland MT95 Kambur Pro II — widok z tyłu, kamera 13 MP, okno skanera 2D DE5L i moduł NFC'],
-    seoTitle: 'Newland MT95 Kambur Pro II — terminal mobilny 6.1" z 5G i Wi-Fi 6 | TAKMA',
-    seoDescription: 'Terminal mobilny Newland MT95 Kambur Pro II: Android 13 AER, 5G, Wi-Fi 6, 6 GB RAM, skaner 2D DE5L, bateria 6000 mAh, IP67. Cena i dostępność w TAKMA.',
+    seoTitle: 'Newland MT95 Kambur Pro II — terminal 6.1" 5G i Wi-Fi 6, IP67 | od 3 546 zł',
+    seoDescription: 'Terminal mobilny Newland MT95 z 5G do logistyki i retail: Android 13 AER, 5G, Wi-Fi 6, 6 GB RAM, skaner 2D DE5L, bateria 6000 mAh, IP67. 1 wariant. Od 3 546 zł netto.',
     isNew: true,
     isBestseller: false,
     specifications: [
@@ -29585,11 +29644,13 @@ W zestawie: terminal, bateria 6 000 mAh, etui ochronne, folia na ekran, pasek na
       { question: 'Czy MT95 Kambur Pro II jest wodoodporny?', answer: 'Tak — obudowa IP67 oznacza pełną pyłoszczelność (6) i odporność na zanurzenie w wodzie na głębokość 1 m przez 30 minut (7). Upadki z 1.5 m na beton. Dla porównania: MT93 Standard ma IP65 (strugi wody, ale bez zanurzenia), MT93 Pro ma IP67. ESD ±15 kV powietrze / ±8 kV kontakt.' },
       { question: 'Jakie akcesoria pasują do MT95 Kambur Pro II?', answer: 'Dedykowane akcesoria MT95: stacja ładowania [NLS-MCD95-1C](/produkt/newland-mcd95-1c), ładowarka 4 baterii [NLS-MCD95-4B](/produkt/newland-mcd95-4b), uchwyt pistoletowy [NLS-MPG95-01](/produkt/newland-mpg95-01), etui ochronne [NLS-RB95-01](/produkt/newland-rb95-01). Bateria zapasowa BTY-MT95 (6000 mAh). Uwaga: akcesoria MT95 NIE są kompatybilne z MT93 (inne wymiary obudowy).' },
       { question: 'Czy MT95 współpracuje z systemami WMS i ERP?', answer: 'Tak — Android 13 GMS z Google Play zapewnia kompatybilność z popularnymi WMS: Comarch WMS, SAP Mobile, Microsoft Dynamics, Simple WMS, Qguar. Newland SDK (Java/Kotlin) do integracji skanera z aplikacjami custom. Android Zero-Touch Enrollment do masowego wdrażania floty.' },
+      { question: 'Gdzie serwisować terminal Newland MT95 Kambur Pro II w Polsce?', answer: 'Autoryzowany serwis Newland w Polsce: serwis jest realizowany przez dystrybutora. Czas naprawy: 5–10 dni roboczych w ramach gwarancji producenta (standardowo 2 lata na terminale). Zgłoszenia serwisowe przez formularz kontaktowy na takma.com.pl lub telefonicznie.' },
       { question: 'Jakie są alternatywy dla MT95 Kambur Pro II?', answer: 'W podobnej klasie: [Zebra TC27](/produkt/zebra-tc27) (6" FHD+, 5G/LTE, Wi-Fi 6E — ok. 3 000+ zł netto), [Zebra TC78](/produkt/zebra-tc78) (6", 5G, Wi-Fi 6E, IP68 — klasa premium), [Newland MT93 Standard Plus](/produkt/newland-mt93-megattera-standard-plus) (5.5", Wi-Fi 6E, 4G LTE, od 2 207 zł — ekonomiczna alternatywa bez 5G). MT95 wyróżnia się największą baterią (6000 mAh), certyfikatem AER i łącznością 5G w cenie poniżej 3 600 zł netto.' },
     ],
     downloads: [
       { name: 'Karta katalogowa MT95 (EN)', type: 'datasheet', url: 'https://scan2id.com/wp-content/uploads/2024/11/newland-mt95-kambur-pro-ii-datasheet.pdf', size: 'PDF' },
       { name: 'Instrukcja obsługi MT95 (EN)', type: 'manual', url: 'https://www.newland-id.com/sites/default/files/documents/2024-05/mt95_kambur_pro_ii_user_guide.pdf', size: 'PDF' },
+      { name: 'Strona producenta Newland MT95 Kambur Pro II', type: 'manual', url: 'https://www.newland-id.com/en/products/mobile-computers/mt95-kambur-pro-ii', size: 'Online' },
     ],
     createdAt: '2026-03-01',
   },
@@ -30001,6 +30062,8 @@ Warianty: CT70 dostępny jest z dwoma typami skanerów — Standard Range (S0703
 
 Platforma Honeywell Mobility Edge gwarantuje wsparcie od Android 15 do Android 19 — do 5 generacji systemu operacyjnego bez wymiany sprzętu. Oprogramowanie Operational Intelligence monitoruje stan urządzeń, baterii i sieci w czasie rzeczywistym, a SmartTalk UC zapewnia komunikację Push-to-Talk. IP65/IP68, upadki z 2,4 m (z obudową ochronną) na beton w temperaturach od -20°C do +50°C, >3 000 tumble w testach wg MIL-STD-810H.
 
+Koszt posiadania (TCO): platforma Mobility Edge z gwarantowanymi aktualizacjami od Android 15 do Android 19 — 5 generacji OS bez wymiany sprzętu. Ładowanie bezprzewodowe Qi eliminuje zużycie mechaniczne złącza USB. Operational Intelligence monitoruje stan baterii w czasie rzeczywistym, redukując koszty awarii.
+
 Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CT70 (PDF w sekcji Dokumenty).`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'honeywell',
@@ -30015,6 +30078,8 @@ Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CT70 (PD
       'Honeywell CT70 — widok pod kątem, obudowa IP65/IP68 z gumowym bootem ochronnym',
       'Honeywell CT70 — widok z tyłu, kamera 13 MP i okno skanera FlexRange',
     ],
+    seoTitle: 'Honeywell CT70 — terminal mobilny 6" Wi-Fi 7, BT 6.0, FlexRange | od 6 168 zł',
+    seoDescription: 'Terminal Honeywell CT70 do magazynów i logistyki: Wi-Fi 7, BT 6.0, FlexRange 5+ m, Qi, IP65/68, Android 15→19. 4 warianty. Pierwszy enterprise z Wi-Fi 7. Od 6 168 zł netto.',
     variantAttributeTooltips: {
       'Skaner': 'Standard Range (S057) — imager 1D/2D do skanowania kodów na etykietach i ekranach z typowej odległości roboczej (do ok. 50 cm). FlexRange (S058) — imager z podwójnym trybem pracy: bliski odczyt małych kodów + daleki zasięg do 12 m (np. kody na wysokich regałach). FlexRange zastępuje potrzebę dwóch skanerów.',
       '5G': 'Moduł 5G Sub-6 GHz + eSIM zapewnia łączność komórkową poza zasięgiem Wi-Fi — np. w terenie, transporcie, magazynach bez infrastruktury bezprzewodowej. Warianty L0N = tylko Wi-Fi 7, warianty X1N = 5G + Wi-Fi 7 + GPS/GNSS.',
@@ -30119,6 +30184,7 @@ Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CT70 (PD
       { question: 'Jaki system operacyjny ma CT70?', answer: 'Android 15 z gwarancją aktualizacji do Android 19 dzięki platformie Honeywell Mobility Edge. To do 5 generacji systemu operacyjnego bez wymiany sprzętu — najdłuższa ścieżka aktualizacji w klasie rugged. Mobility Edge zapewnia: wspólny BSP dla całej floty, LifeGuard security patches, zero-touch enrollment i kompatybilność z Google Mobile Services (GMS).' },
       { question: 'Czy CT70 jest wodoodporny?', answer: 'Tak — IP65 (pyłoszczelny, strumień wody) + IP68 (zanurzenie). Upadki z 2,4 m na beton (z obudową ochronną CT70-PB-GRY) lub 1,8 m bez obudowy. >3 000 tumble w testach MIL-STD-810H. Temperatura pracy: -20°C do +50°C — nadaje się do chłodni (z baterią rozszerzoną) i pracy na zewnątrz w upale. Gorilla Glass Victus chroni ekran przed zarysowaniami i uderzeniami.' },
       { question: 'Jakie akcesoria są dostępne do CT70?', answer: 'Baterie: standardowa CT70-BTSC-001 (4 775 mAh), rozszerzona CT70-BTEC-001 (7 692 mAh), bezprzewodowa CT70-BTWC-001. Stacje dokujące: 1-gniazdowa CT70-HB-UVX, Ethernet CT70-EB-UVX, 4-gniazdowa CT70-CB-UVX, 5-gniazdowa CT70-5CB-UVX. Ładowarki baterii: 4-gniazdowa CT70-QBC-2, 16-gniazdowa CT70-16BAY-BAT. Ochrona: boot CT70-PB-GRY, folia CT70-SP-1, holster CT70-HST-1. Ergonomia: scan handle CT70-SH-UVB, wearable kit CT70-WS-KIT. Dok samochodowy: CT70-VD-WD.' },
+      { question: 'Gdzie serwisować Honeywell CT70 w Polsce?', answer: 'Serwis Honeywell w Polsce realizowany jest przez autoryzowane centra serwisowe. Czas naprawy: 5–10 dni roboczych. Dla klientów z kontraktem serwisowym dostępna jest naprawa priorytetowa.' },
       { question: 'Jakie są alternatywy dla Honeywell CT70?', answer: 'W segmencie premium rugged 6": Zebra TC58 (od ok. 4 500 zł, SE55 do 12+ m, lżejszy 293 g, ekosystem Mobility DNA) i Zebra TC78 (upadki 3,05 m, wariant chłodniczy). W segmencie budżetowym: Zebra TC53 (od ok. 3 200 zł, mniejszy ekosystem), Datalogic Memor 35 (od ok. 2 800 zł). W segmencie gun: Zebra MC9400 (SE58 do 30+ m, 3,5" ekran, 765 g). CT70 wyróżnia się Wi-Fi 7, BT 6.0, Qi i opcjonalnym RFID UHF — żaden konkurent nie oferuje tego zestawu.' },
     ],
     createdAt: '2026-03-01',
@@ -30136,6 +30202,8 @@ Warianty: CT32 dostępny jest w konfiguracjach Wi-Fi only (X0N) oraz 5G + Wi-Fi 
 
 Platforma Honeywell Mobility Edge gwarantuje bezpieczeństwo i długi cykl życia: regularne patche bezpieczeństwa, ISASecure SDLA 3.0.0, zero-touch enrollment. Oprogramowanie Operational Intelligence monitoruje flotę w czasie rzeczywistym, a SmartTalk zapewnia komunikację Push-to-Talk. IP65/IP68, upadki z 1,8 m (z bootem TPU) na beton, >1 000 tumble z 0,5 m wg IEC 60068-2-32. Temperatura pracy: -20°C do +50°C. Kompatybilność wsteczna z akcesoriami EDA52 (Universal Dock Platform).
 
+Koszt posiadania (TCO): platforma Mobility Edge z gwarancją aktualizacji Android 14→18 — 5 lat bez wymiany sprzętu. Kompatybilność z akcesoriami EDA52 chroni inwestycję w infrastrukturę stacji dokujących. Waga 269 g (najlżejszy terminal 6" w klasie) redukuje zmęczenie pracowników i koszty wypadków przy pracy.
+
 Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CT32 (PDF w sekcji Dokumenty).`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'honeywell',
@@ -30150,6 +30218,8 @@ Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CT32 (PD
       'Honeywell CT32 — widok pod kątem, smukła obudowa 13,9 mm z bootem TPU',
       'Honeywell CT32 — widok z tyłu, kamera 13 MP i okno skanera',
     ],
+    seoTitle: 'Honeywell CT32 — terminal mobilny 6" Wi-Fi 6E, FlexRange, Android 14→18 | od 3 389 zł',
+    seoDescription: 'Terminal Honeywell CT32 do retail, magazynów i logistyki: Wi-Fi 6E, 5G (opcja), FlexRange 11 m, hot-swap, IP65/68. 4 warianty. Następca EDA52. Od 3 389 zł netto.',
     variantAttributeTooltips: {
       '5G': 'Moduł 5G Sub-6 GHz + eSIM zapewnia łączność komórkową poza zasięgiem Wi-Fi — np. w terenie, transporcie, magazynach bez infrastruktury bezprzewodowej. Warianty X0N = tylko Wi-Fi 6E, warianty X1N = 5G + Wi-Fi 6E + GPS/GNSS.',
     },
@@ -30256,6 +30326,7 @@ Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CT32 (PD
       { question: 'Jaki skaner ma Honeywell CT32?', answer: 'CT32 w standardzie wyposażony jest w skaner Honeywell S0703 Standard Range — imager 1D/2D do skanowania z typowej odległości roboczej. Opcjonalnie: FlexRange S0803 z zielonym laserem (lepiej widoczny w jasnym świetle) i zasięgiem do 11 m (35 stóp) — do skanowania etykiet na wysokich regałach bez drabiny. FlexRange obsługuje kody DPM (grawerowane). Warianty z FlexRange oznaczone innym sufiksem PN.' },
       { question: 'Czy CT32 jest wodoodporny?', answer: 'Tak — IP65 (pyłoszczelny, strumień wody) + IP68 (zanurzenie). Upadki z 1,8 m na beton (z bootem TPU CT32-PB-STD) lub 1,5 m bez boota. 1 000 tumble z 0,5 m wg IEC 60068-2-32. Temperatura pracy: -20°C do +50°C — nadaje się do chłodni i pracy na zewnątrz. Gorilla Glass 5 chroni ekran. Opcjonalna folia CT32-SP-10PK (10 szt.) dla dodatkowej ochrony w ekstremalnych warunkach.' },
       { question: 'Jakie akcesoria są dostępne do CT32?', answer: 'Baterie: standardowa 50172021-001 (4 500 mAh), rozszerzona 50183310-001. Stacje dokujące: 1-gniazdowa CT32-HB-UVN-0 (non-booted) i CT32-HB-UVB-0 (booted). Ładowarki 4-gniazdowe: CT32-CB-UVN-0 (non-booted), CT32-CB-UVB-0 (booted). Ochrona: boot TPU CT32-PB-STD, folia CT32-SP-10PK, scan handle CT32-SH-UVN. Ergonomia: hand strap EDA52-HS-10PK, wrist strap EDA52-WS-10PK. Ładowarka baterii: EDA52-QBC-1 (4 sloty). Akcesoria EDA52 kompatybilne wstecznie (Universal Dock Platform).' },
+      { question: 'Gdzie serwisować Honeywell CT32 w Polsce?', answer: 'Serwis Honeywell w Polsce realizowany jest przez autoryzowane centra serwisowe. Czas naprawy: 5–10 dni roboczych. Dla klientów z kontraktem serwisowym dostępna jest naprawa priorytetowa.' },
       { question: 'Jakie są alternatywy dla Honeywell CT32?', answer: 'W segmencie performance 6": Zebra TC22 (od 2 417 zł, SE55 do 7,6 m, 236 g, Mobility DNA), Zebra TC27 (5G, od 3 254 zł, 248 g). W segmencie premium: Honeywell CT70 (od 6 168 zł, Wi-Fi 7, BT 6.0, RFID opcja), Zebra TC53 (od 3 200 zł, SE4720). W segmencie budżetowym: Datalogic Memor 12 (od ok. 2 200 zł, 5,5"). CT32 wyróżnia się FlexRange do 11 m, kompatybilnością z EDA52 i najdłuższą ścieżką Android (14→18).' },
     ],
     createdAt: '2026-03-01',
@@ -30284,6 +30355,8 @@ Ultra-rugged do mroźni: CK67 w standardzie działa w temperaturach od -20°C do
 Platforma Mobility Edge: CK67 działa na Android 14 z gwarantowaną ścieżką aktualizacji do Android 18 (4 generacje OS). Honeywell Mobility Edge zapewnia wspólny BSP dla całej floty, regularne patche bezpieczeństwa (LifeGuard), zero-touch enrollment, kompatybilność z Google Mobile Services i integrację z MDM (SOTI, Ivanti, VMware). Oprogramowanie Operational Intelligence monitoruje stan urządzeń, baterii i sieci w czasie rzeczywistym — dział IT widzi cały park maszynowy na jednym dashboardzie.
 
 CK67 vs Zebra MC9400 — porównanie: MC9400 oferuje skaner SE58 z zasięgiem do 30+ m (vs 24 m FlexRange XLR w CK67), większy ekran 3,5" dotykowy + klawiatura i cięższy format gun (765 g vs 508 g). CK67 wygrywa lżejszą wagą (-257 g), dłuższym czasem pracy baterii (28 h vs 17 h), nowszą łącznością Wi-Fi 6E (vs Wi-Fi 6 w MC9400) i niższą ceną wejścia (7 765 zł vs ok. 9 500 zł). MC9400 lepszy do ultra-dalekiego skanowania i pracy z Android Mobility DNA. CK67 lepszy dla firm szukających lekkiego gun terminala z długim czasem pracy i Mobility Edge.
+
+Koszt posiadania (TCO): bateria 7 000 mAh hot-swap z deklarowanym czasem pracy do 28 godzin eliminuje konieczność posiadania dużego zapasu baterii w magazynach. Platforma Mobility Edge z gwarancją Android 14→18 — 4 generacje OS bez wymiany sprzętu. Waga 508 g (vs 765 g MC9400) redukuje zmęczenie pracowników przy wielogodzinnej pracy.
 
 Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CK67 na stronie producenta (honeywell.com).`,
     categoryId: 'terminale-mobilne',
