@@ -917,7 +917,7 @@ const desktopPrinters: Product[] = [
     id: 'zebra-zd421t',
     slug: 'zebra-zd421t',
     name: 'Zebra ZD421t',
-    shortDescription: 'Drukarka termotransferowa biurkowa 4" — następca GK420t',
+    shortDescription: 'Zebra ZD421t — drukarka termotransferowa biurkowa 4", następca GK420t',
     seoTitle: 'Zebra ZD421 — drukarka etykiet termotransferowa, następca GK420t',
     seoDescription: 'Zebra ZD421 (ZD4A042) — termotransferowa 4", następca GK420t. Wi-Fi, Ethernet, MCS, 203/300 dpi. ZD4A042-30EM00EZ od 1 649 zł netto. Porównanie wariantów ZD421t i ZD421d.',
     description: `Zebra ZD421t to najlepszy wybór dla firm logistycznych, magazynów i e-commerce, które potrzebują niezawodnej biurkowej drukarki termotransferowej z możliwością rozbudowy o sieć Wi-Fi i Ethernet.
@@ -1225,7 +1225,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zd421d',
     slug: 'zebra-zd421d',
     name: 'Zebra ZD421d',
-    shortDescription: 'Biurkowa drukarka termiczna 4" direct thermal — następca GK420d. 203/300 dpi, do 152 mm/s, modułowa architektura MCS',
+    shortDescription: 'Zebra ZD421d — biurkowa drukarka termiczna 4" direct thermal, następca GK420d. 203/300 dpi, do 152 mm/s, modułowa architektura MCS',
     seoTitle: 'Zebra ZD421d — drukarka termiczna direct thermal, WiFi',
     seoDescription: 'Zebra ZD421d (ZD4A042-D0) — biurkowa termiczna 4" direct thermal, następca GK420d. E-commerce, Wi-Fi, MCS, 203/300 dpi. ZD4A042-D0EM00EZ od 1 472 zł netto.',
     description: `Zebra ZD421d to najlepszy wybór dla firm e-commerce, punktów nadawczych i magazynów, które potrzebują szybkiej biurkowej drukarki termicznej z modułową architekturą i niskim kosztem eksploatacji.
@@ -1472,7 +1472,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zd621t',
     slug: 'zebra-zd621t',
     name: 'Zebra ZD621t',
-    shortDescription: 'Flagowa drukarka biurkowa 4" z kolorowym LCD, najszybsza w klasie (203 mm/s), obcinacz/odklejak/RFID',
+    shortDescription: 'Zebra ZD621t — flagowa drukarka biurkowa 4" z kolorowym LCD, najszybsza w klasie (203 mm/s), obcinacz/odklejak/RFID',
     seoTitle: 'Zebra ZD621 — flagowa drukarka etykiet LCD 4,3 cale',
     seoDescription: 'Zebra ZD621 (ZD6A042) — najlepsza biurkowa termotransferowa 4", następca GX420t/GX430t. LCD 4,3", RFID, 203/300 dpi. ZD6A042-30EF00EZ od 2 264 zł netto. Porównanie ZD621t i ZD621d.',
     description: `Zebra ZD621t to najlepszy wybór dla firm drukujących ponad 500 etykiet dziennie, które potrzebują najszybszej biurkowej drukarki termotransferowej z kolorowym ekranem LCD i wbudowanym Ethernet.
@@ -1878,7 +1878,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zd621d',
     slug: 'zebra-zd621d',
     name: 'Zebra ZD621d',
-    shortDescription: 'Najszybsza biurkowa drukarka termiczna Zebra (203 mm/s) z opcjonalnym LCD 4,3", drukiem linerless i modularnym MCS — następca ZD620d i GX420d',
+    shortDescription: 'Zebra ZD621d — najszybsza biurkowa drukarka termiczna Zebra (203 mm/s) z opcjonalnym LCD 4,3", drukiem linerless i modularnym MCS, następca ZD620d i GX420d',
     seoTitle: 'Zebra ZD621d — drukarka termiczna premium LCD, 300 dpi',
     seoDescription: 'Zebra ZD621d (ZD6A042-D0) — premium biurkowa termiczna 4" direct thermal, następca GX420d. LCD 4,3", 300 dpi, linerless. ZD6A042-D0EF00EZ od 1 944 zł netto.',
     description: `Zebra ZD621d to najlepszy wybór dla firm e-commerce i centrów logistycznych drukujących ponad 500 etykiet dziennie, które potrzebują najszybszej biurkowej drukarki termicznej z kolorowym LCD i obsługą linerless.
@@ -2213,7 +2213,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zd411d',
     slug: 'zebra-zd411d',
     name: 'Zebra ZD411d',
-    shortDescription: 'Kompaktowa drukarka termiczna 2" direct thermal — następca ZD410 i LP2824. 203/300 dpi, do 152 mm/s, modułowa architektura MCS, Wi-Fi 6',
+    shortDescription: 'Zebra ZD411d — kompaktowa drukarka termiczna 2" direct thermal, następca ZD410 i LP2824. 203/300 dpi, do 152 mm/s, modułowa architektura MCS, Wi-Fi 6',
     seoTitle: 'Drukarka etykiet Zebra ZD411d — kompaktowa 2" healthcare',
     seoDescription: 'Zebra ZD411d (ZD4A022) — kompaktowa drukarka termiczna 2", apteka, laboratorium, healthcare. ZD411d Zebra: 203/300 dpi, Wi-Fi 6. ZD4A022-D0EM00EZ od 1 238 zł netto.',
     description: `Zebra ZD411d to najlepszy wybór dla aptek, laboratoriów i jubilerów, którzy potrzebują kompaktowej 2-calowej drukarki termicznej do druku małych etykiet z kodami kreskowymi.
@@ -2452,7 +2452,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zd411t',
     slug: 'zebra-zd411t',
     name: 'Zebra ZD411t',
-    shortDescription: 'Kompaktowa drukarka termotransferowa 2" — następca TLP2824. 203/300 dpi, do 152 mm/s, trwałe etykiety jubilerskie i przemysłowe, Wi-Fi 6',
+    shortDescription: 'Zebra ZD411t — kompaktowa drukarka termotransferowa 2", następca TLP2824. 203/300 dpi, do 152 mm/s, trwałe etykiety jubilerskie i przemysłowe, Wi-Fi 6',
     seoTitle: 'Drukarka etykiet Zebra ZD411t — termotransferowa 2" 300 dpi',
     seoDescription: 'Zebra ZD411t (ZD4A022-T0) — termotransferowa 2", laboratorium, biżuteria. ZD411t Zebra: 203/300 dpi, MCS, Wi-Fi 6. ZD4A022-T0EM00EZ od 1 686 zł netto.',
     description: `Zebra ZD411t to najlepszy wybór dla jubilerów, producentów elektroniki i firm telekomunikacyjnych, które potrzebują kompaktowej drukarki termotransferowej 2" do trwałych małych etykiet z taśmą żywiczną.
@@ -2719,7 +2719,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zd220d',
     slug: 'zebra-zd220d',
     name: 'Zebra ZD220d',
-    shortDescription: 'Najtańsza 4-calowa drukarka termiczna Zebra — druk direct thermal bez taśmy barwiącej, idealnie do etykiet kurierskich i wysyłkowych',
+    shortDescription: 'Zebra ZD220d — najtańsza 4-calowa drukarka termiczna Zebra, druk direct thermal bez taśmy barwiącej, idealnie do etykiet kurierskich i wysyłkowych',
     seoTitle: 'Zebra ZD220d — najtańsza drukarka termiczna USB od 650 zł',
     seoDescription: 'Zebra ZD220d (ZD22042) — najtańsza drukarka etykiet termiczna 4" direct thermal, tania drukarka kodów kreskowych USB. 203 dpi. ZD22042-D0EG00EZ od 650 zł netto.',
     description: `Zebra ZD220d to najlepszy wybór dla małych firm i startupów szukających niezawodnej biurkowej drukarki etykiet termicznych w przystępnej cenie.
@@ -2916,7 +2916,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zd230d',
     slug: 'zebra-zd230d',
     name: 'Zebra ZD230d',
-    shortDescription: 'Drukarka termiczna 4" direct thermal — następca ZD220d z szybszym drukiem (152 mm/s), opcją gilotyny, odklejaka, Ethernet, Bluetooth i Wi-Fi',
+    shortDescription: 'Zebra ZD230d — drukarka termiczna 4" direct thermal, następca ZD220d z szybszym drukiem (152 mm/s), opcją gilotyny, odklejaka, Ethernet, Bluetooth i Wi-Fi',
     seoTitle: 'Drukarka etykiet Zebra ZD230d — do paczek i kurierów',
     seoDescription: 'Zebra ZD230d (ZD23042) — drukarka etykiet kurierskich, do allegro, InPost, DPD, DHL. ZD230d Zebra: Ethernet, 152 mm/s. ZD23042-D0EG00EZ od 1 087 zł netto.',
     description: `Zebra ZD230d to najlepszy wybór dla firm e-commerce i sklepów detalicznych, które potrzebują szybkiej drukarki termicznej z opcją Ethernet i gilotyny w przystępnej cenie.
@@ -3163,7 +3163,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zd220t',
     slug: 'zebra-zd220t',
     name: 'Zebra ZD220t',
-    shortDescription: 'Najtańsza 4-calowa drukarka etykiet termotransferowa Zebra — następca GC420t',
+    shortDescription: 'Zebra ZD220t — najtańsza 4-calowa drukarka etykiet termotransferowa Zebra, następca GC420t',
     seoTitle: 'Zebra ZD220 — najtańsza drukarka etykiet od 639 zł',
     seoDescription: 'Zebra ZD220 (ZD22042-T0) — najtańsza drukarka etykiet termotransferowa 4" USB. 203 dpi, ribbon 74 m. ZD22042-T0EG00EZ od 639 zł netto. Porównanie ZD220t i ZD220d.',
     description: `Zebra ZD220t to najlepszy wybór dla małych firm szukających najtańszej drukarki termotransferowej Zebra do trwałych etykiet produktowych i magazynowych.
@@ -3420,7 +3420,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zd230t',
     slug: 'zebra-zd230t',
     name: 'Zebra ZD230t',
-    shortDescription: 'Drukarka termotransferowa 4" — następca ZD220t z szybszym drukiem (152 mm/s), taśmą 300 m, opcją Ethernet, Bluetooth i Wi-Fi',
+    shortDescription: 'Zebra ZD230t — drukarka termotransferowa 4", następca ZD220t z szybszym drukiem (152 mm/s), taśmą 300 m, opcją Ethernet, Bluetooth i Wi-Fi',
     seoTitle: 'Drukarka etykiet Zebra ZD230t — termotransferowa Ethernet',
     seoDescription: 'Zebra ZD230t (ZD23042) — drukarka termotransferowa biurkowa sieciowa 4", Ethernet. ZD230t Zebra: 203 dpi, ribbon 300 m. ZD23042-30EG00EZ od 1 135 zł netto.',
     description: `Zebra ZD230t to najlepszy wybór dla firm szukających szybkiej drukarki termotransferowej z taśmą 300 m i opcją Ethernet w klasie cenowej poniżej 1500 zł.
@@ -3729,7 +3729,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zd510-hc',
     slug: 'zebra-zd510-hc',
     name: 'Zebra ZD510-HC',
-    shortDescription: 'Biurkowa drukarka opasek identyfikacyjnych 300 dpi — ZPL, Link-OS, Ethernet, zasilacz medyczny IEC 60601-1',
+    shortDescription: 'Zebra ZD510-HC — biurkowa drukarka opasek identyfikacyjnych 300 dpi, ZPL, Link-OS, Ethernet, zasilacz medyczny IEC 60601-1',
     seoTitle: 'Drukarka opasek Zebra ZD510-HC — szpitalna 300 dpi',
     seoDescription: 'Zebra ZD510-HC (ZD51013) — drukarka opasek szpitalnych i identyfikacyjnych, drukarka opaski pacjenta. ZD510-HC Zebra: Z-Band, 300 dpi. ZD51013-D0EE00FZ od 2 674 zł netto.',
     description: `Zebra ZD510-HC to najlepszy wybór dla szpitali, klinik i laboratoriów, które potrzebują niezawodnej drukarki opasek identyfikacyjnych z certyfikatem medycznym i integracją z systemami ADT.
@@ -3927,7 +3927,7 @@ const industrialLightPrinters: Product[] = [
     id: 'zebra-zt231',
     slug: 'zebra-zt231',
     name: 'Zebra ZT231',
-    shortDescription: 'Drukarka przemysłowa 4" z kolorowym ekranem dotykowym 4,3", metalową konstrukcją i opcjonalnym RFID UHF — następca ZT230',
+    shortDescription: 'Zebra ZT231 — drukarka przemysłowa 4" z kolorowym ekranem dotykowym 4,3", metalową konstrukcją i opcjonalnym RFID UHF, następca ZT230',
     seoTitle: 'Drukarka etykiet Zebra ZT231 — półprzemysłowa RFID LCD',
     seoDescription: 'Zebra ZT231 (ZT23142) — półprzemysłowa drukarka etykiet do logistyki, RFID, LCD dotykowy 4,3". ZT231 Zebra: 304 mm/s. ZT23142-D0E000FZ od 2 551 zł netto.',
     description: `Zebra ZT231 to najlepszy wybór dla firm produkcyjnych i magazynów przechodzących z drukarek biurkowych na przemysłowe, które potrzebują kompaktowej drukarki z ekranem dotykowym i metalową konstrukcją.
@@ -4181,7 +4181,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zt111',
     slug: 'zebra-zt111',
     name: 'Zebra ZT111',
-    shortDescription: 'Przemysłowa drukarka etykiet entry-level 4" — metalowa konstrukcja, 254 mm/s, następca ZT220 i S4M. Idealna do magazynu i produkcji',
+    shortDescription: 'Zebra ZT111 — przemysłowa drukarka etykiet entry-level 4", metalowa konstrukcja, 254 mm/s, następca ZT220 i S4M. Idealna do magazynu i produkcji',
     seoTitle: 'Drukarka etykiet Zebra ZT111 — najtańsza przemysłowa 4"',
     seoDescription: 'Zebra ZT111 (ZT11142) — najtańsza drukarka przemysłowa do małego magazynu, 203/300 dpi. ZT111 Zebra: metalowa, 254 mm/s. ZT11142-D0E000FZ od 2 081 zł netto.',
     description: `Zebra ZT111 to najlepszy wybór dla firm przechodzących z drukarek biurkowych na przemysłowe, które potrzebują metalowej konstrukcji i prędkości 254 mm/s w przystępnej cenie.
@@ -4421,7 +4421,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zt411',
     slug: 'zebra-zt411',
     name: 'Zebra ZT411',
-    shortDescription: 'Przemysłowa drukarka etykiet 4" z ekranem dotykowym 4,3" — następca ZT410. 203/300/600 dpi, do 356 mm/s, RFID opcja, Link-OS',
+    shortDescription: 'Zebra ZT411 — przemysłowa drukarka etykiet 4" z ekranem dotykowym 4,3", następca ZT410. 203/300/600 dpi, do 356 mm/s, RFID opcja, Link-OS',
     seoTitle: 'Drukarka etykiet Zebra ZT411 — następca ZT410, RFID 600 dpi',
     seoDescription: 'Zebra ZT411 (ZT41142) — drukarka przemysłowa, następca ZT410. ZT411 Zebra: RFID UHF, 600 dpi, linerless, 356 mm/s. ZT41142-T0E0000Z od 5 132 zł netto.',
     description: `Zebra ZT411 to najlepszy wybór dla zakładów produkcyjnych i centrów logistycznych wymagających wytrzymałej drukarki etykiet przemysłowej klasy z rozdzielczością 203/300/600 dpi.
@@ -4682,7 +4682,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zt421',
     slug: 'zebra-zt421',
     name: 'Zebra ZT421',
-    shortDescription: 'Przemysłowa drukarka etykiet 6" z ekranem dotykowym 4,3" — następca ZT420. 203/300 dpi, do 305 mm/s, RFID opcja, Link-OS',
+    shortDescription: 'Zebra ZT421 — przemysłowa drukarka etykiet 6" z ekranem dotykowym 4,3", następca ZT420. 203/300 dpi, do 305 mm/s, RFID opcja, Link-OS',
     seoTitle: 'Drukarka etykiet Zebra ZT421 — przemysłowa 6" RFID',
     seoDescription: 'Zebra ZT421 (ZT42162) — drukarka etykiet 6 cali do dużych etykiet i etykiet paletowych, RFID UHF. ZT421 Zebra: 168 mm, GS1. ZT42162-T0E0000Z od 9 416 zł netto.',
     description: `Zebra ZT421 to najlepszy wybór dla centrów dystrybucyjnych i magazynów potrzebujących szerokoformatowej drukarki przemysłowej 6" do etykiet paletowych GS1-128 i oznaczeń compliance.
@@ -4925,7 +4925,7 @@ const industrialPrinters: Product[] = [
     id: 'zebra-zt510',
     slug: 'zebra-zt510',
     name: 'Zebra ZT510',
-    shortDescription: 'Przemysłowa drukarka etykiet 4" klasy ekonomicznej — następca 105SLPlus. 203/300 dpi, do 305 mm/s, NFC/Print Touch, Link-OS, praca 24/7',
+    shortDescription: 'Zebra ZT510 — przemysłowa drukarka etykiet 4" klasy ekonomicznej, następca 105SLPlus. 203/300 dpi, do 305 mm/s, NFC/Print Touch, Link-OS, praca 24/7',
     seoTitle: 'Drukarka etykiet Zebra ZT510 — przemysłowa 24/7 produkcja',
     seoDescription: 'Zebra ZT510 (ZT51042) — drukarka etykiet 24/7 do produkcji ciągłej, następca 105SLPlus. ZT510 Zebra: 305 mm/s, metalowa, NFC. ZT51042-T0E0000Z od 8 490 zł netto.',
     description: `Zebra ZT510 to najlepszy wybór dla firm szukających ekonomicznej drukarki przemysłowej do pracy 24/7 jako następca kultowej 105SLPlus.
@@ -5158,7 +5158,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zt610',
     slug: 'zebra-zt610',
     name: 'Zebra ZT610',
-    shortDescription: 'Przemysłowa drukarka etykiet 4" klasy heavy-duty — następca 110Xi4. 203/300/600 dpi, do 356 mm/s, ekran dotykowy 4,3", RFID opcja, Link-OS, praca 24/7',
+    shortDescription: 'Zebra ZT610 — przemysłowa drukarka etykiet 4" klasy heavy-duty, następca 110Xi4. 203/300/600 dpi, do 356 mm/s, ekran dotykowy 4,3", RFID opcja, Link-OS, praca 24/7',
     seoTitle: 'Drukarka etykiet Zebra ZT610 — heavy-duty 4" RFID 600 dpi',
     seoDescription: 'Zebra ZT610 (ZT61042) — najlepsza drukarka przemysłowa heavy-duty 4", RFID do fabryki. ZT610 Zebra: 600 dpi, 356 mm/s, LCD 4,3". ZT61042-T0E0100Z od 10 432 zł netto.',
     description: `Zebra ZT610 to najlepszy wybór dla centrów dystrybucyjnych i linii produkcyjnych wymagających najwyższej klasy drukarki przemysłowej 4" z trwałością Xi i rozdzielczością do 600 dpi.
@@ -5397,7 +5397,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zt620',
     slug: 'zebra-zt620',
     name: 'Zebra ZT620',
-    shortDescription: 'Przemysłowa drukarka etykiet 6" klasy heavy-duty — następca 170Xi4. 203/300 dpi, do 305 mm/s, ekran dotykowy 4,3", RFID opcja, Link-OS, praca 24/7',
+    shortDescription: 'Zebra ZT620 — przemysłowa drukarka etykiet 6" klasy heavy-duty, następca 170Xi4. 203/300 dpi, do 305 mm/s, ekran dotykowy 4,3", RFID opcja, Link-OS, praca 24/7',
     seoTitle: 'Drukarka etykiet Zebra ZT620 — heavy-duty 6" przemysłowa',
     seoDescription: 'Zebra ZT620 (ZT62062) — heavy-duty drukarka przemysłowa szerokoformatowa 6", etykiety paletowe, RFID. ZT620 Zebra: 305 mm/s, LCD 4,3". ZT62062-T0E0100Z od 12 417 zł netto.',
     description: `Zebra ZT620 to najlepszy wybór dla magazynów wysokiego składowania i centrów dystrybucji wymagających szerokoformatowej drukarki przemysłowej 6" klasy heavy-duty do pracy 24/7.
@@ -5642,7 +5642,7 @@ const mobilePrinters: Product[] = [
     id: 'zebra-zq511',
     slug: 'zebra-zq511',
     name: 'Zebra ZQ511',
-    shortDescription: 'Wzmocniona mobilna drukarka etykiet 3" — MIL-STD-810G, IP54, upadki z 2 m',
+    shortDescription: 'Zebra ZQ511 — wzmocniona mobilna drukarka etykiet 3", MIL-STD-810G, IP54, upadki z 2 m',
     seoTitle: 'Mobilna drukarka Zebra ZQ511 — wzmocniona 3" MIL-STD',
     seoDescription: 'Zebra ZQ511 (ZQ51-BUE) — wzmocniona mobilna drukarka etykiet 3" MIL-STD-810G, na wózek widłowy, IP54. ZQ511 Zebra: -20°C. ZQ51-BUE001E-00 od 2 288 zł netto.',
     description: `Zebra ZQ511 to najlepszy wybór dla firm kurierskich i magazynów potrzebujących wzmocnionej mobilnej drukarki 3" do druku paragonów i etykiet w najtrudniejszych warunkach terenowych.
@@ -5909,7 +5909,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zq521',
     slug: 'zebra-zq521',
     name: 'Zebra ZQ521',
-    shortDescription: 'Wzmocniona mobilna drukarka etykiet 4" — MIL-STD-810G, IP54, upadki z 2,1 m, etykiety wysyłkowe 100×150',
+    shortDescription: 'Zebra ZQ521 — wzmocniona mobilna drukarka etykiet 4", MIL-STD-810G, IP54, upadki z 2,1 m, etykiety wysyłkowe 100×150',
     seoTitle: 'Mobilna drukarka Zebra ZQ521 — 4" etykiety 100×150 mm',
     seoDescription: 'Zebra ZQ521 (ZQ52-BUE) — mobilna drukarka etykiet 4" do etykiet 100×150 mm, MIL-STD-810G, IP54. ZQ521 Zebra: Wi-Fi+BT, -20°C. ZQ52-BUE001E-00 od 2 979 zł netto.',
     description: `Zebra ZQ521 to najlepszy wybór dla firm kurierskich i logistycznych potrzebujących wzmocnionej mobilnej drukarki 4" do druku pełnowymiarowych etykiet wysyłkowych w terenie.
@@ -6172,7 +6172,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zq610-plus',
     slug: 'zebra-zq610-plus',
     name: 'Zebra ZQ610 Plus',
-    shortDescription: 'Kompaktowa mobilna drukarka etykiet 2" — kolorowy wyświetlacz LCD, Wi-Fi 5/6, IP54',
+    shortDescription: 'Zebra ZQ610 Plus — kompaktowa mobilna drukarka etykiet 2", kolorowy wyświetlacz LCD, Wi-Fi 5/6, IP54',
     seoTitle: 'Mobilna drukarka Zebra ZQ610 Plus — premium 2" Wi-Fi 6',
     seoDescription: 'Zebra ZQ610 Plus (ZQ61-AUF) — mobilna drukarka etykiet Wi-Fi 6 premium 2" (48 mm), BT 5.3, LCD, IP54. ZQ610 Plus Zebra: -20°C. ZQ61-AUFAE14-00 od 3 256 zł netto.',
     description: `Zebra ZQ610 Plus to najlepszy wybór dla handlu detalicznego i gastronomii potrzebujących kompaktowej mobilnej drukarki 2" do metek cenowych i potwierdzeń.
@@ -6404,7 +6404,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zq620-plus',
     slug: 'zebra-zq620-plus',
     name: 'Zebra ZQ620 Plus',
-    shortDescription: 'Mobilna drukarka etykiet 3" — Wi-Fi 5/6, kolorowy wyświetlacz LCD, IP54, linerless',
+    shortDescription: 'Zebra ZQ620 Plus — mobilna drukarka etykiet 3", Wi-Fi 5/6, kolorowy wyświetlacz LCD, IP54, linerless',
     seoTitle: 'Mobilna drukarka Zebra ZQ620 Plus — 3" linerless WiFi 6',
     seoDescription: 'Zebra ZQ620 Plus (ZQ62-AUF) — mobilna drukarka etykiet 3" linerless WiFi 6, BT 5.3, LCD, IP54. ZQ620 Plus Zebra: druk bez podkładu. ZQ62-AUFAE14-00 od 3 622 zł netto.',
     description: `Zebra ZQ620 Plus to najlepszy wybór dla firm logistycznych i kurierskich potrzebujących mobilnej drukarki 3" nowej generacji z Wi-Fi 6E i Bluetooth 5.3.
@@ -6653,7 +6653,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zq630-plus',
     slug: 'zebra-zq630-plus',
     name: 'Zebra ZQ630 Plus',
-    shortDescription: 'Mobilna drukarka etykiet 4" — Wi-Fi 5/6, kolorowy LCD, IP54, bateria 6800 mAh, linerless',
+    shortDescription: 'Zebra ZQ630 Plus — mobilna drukarka etykiet 4", Wi-Fi 5/6, kolorowy LCD, IP54, bateria 6800 mAh, linerless',
     seoTitle: 'Mobilna drukarka Zebra ZQ630 Plus — 4" WiFi 6 magazyn',
     seoDescription: 'Zebra ZQ630 Plus (ZQ63-AUF) — mobilna drukarka etykiet 4" WiFi 6 do magazynu, 100×150 mm, linerless, IP54. ZQ630 Plus Zebra: 6800 mAh. ZQ63-AUFAE14-00 od 4 257 zł netto.',
     description: `Zebra ZQ630 Plus to najlepszy wybór dla firm kurierskich i logistycznych, które potrzebują mobilnego druku etykiet wysyłkowych 100×150 mm w terenie.
@@ -6902,7 +6902,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zq310-plus',
     slug: 'zebra-zq310-plus',
     name: 'Zebra ZQ310 Plus',
-    shortDescription: 'Kompaktowa mobilna drukarka paragonów i etykiet 2" — IP54, Bluetooth 5.0, USB-C, 370 g',
+    shortDescription: 'Zebra ZQ310 Plus — kompaktowa mobilna drukarka paragonów i etykiet 2", IP54, Bluetooth 5.0, USB-C, 370 g',
     seoTitle: 'Mobilna drukarka Zebra ZQ310 Plus — kompaktowa 2" USB-C',
     seoDescription: 'Zebra ZQ310 Plus (ZQ31-A0E) — kompaktowa mobilna drukarka etykiet 2" USB-C, 370 g, BT 5.0, IP54. ZQ310 Plus Zebra: ZPL. ZQ31-A0E04TE-00 od 1 496 zł netto.',
     description: `Zebra ZQ310 Plus to najlepszy wybór dla handlu detalicznego i gastronomii szukających najlżejszej mobilnej drukarki Zebra z pełną obsługą ZPL.
@@ -7133,7 +7133,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zq320-plus',
     slug: 'zebra-zq320-plus',
     name: 'Zebra ZQ320 Plus',
-    shortDescription: 'Mobilna drukarka paragonów i etykiet 3" — IP54, Bluetooth 4.2, Wi-Fi opcja, USB-C, 430 g',
+    shortDescription: 'Zebra ZQ320 Plus — mobilna drukarka paragonów i etykiet 3", IP54, Bluetooth 4.2, Wi-Fi opcja, USB-C, 430 g',
     seoTitle: 'Mobilna drukarka Zebra ZQ320 Plus — 3" outdoor USB-C',
     seoDescription: 'Zebra ZQ320 Plus (ZQ32-A0E) — mobilna drukarka etykiet 3" outdoor, Wi-Fi, BT, USB-C, IP54, 430 g. ZQ320 Plus Zebra: paragon i etykieta. ZQ32-A0E04TE-00 od 1 713 zł netto.',
     description: `Zebra ZQ320 Plus to najlepszy wybór dla firm kurierskich i gastronomii potrzebujących mobilnej drukarki 3" z opcjonalnym Wi-Fi i pełną obsługą ZPL.
@@ -7365,7 +7365,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zq220-plus',
     slug: 'zebra-zq220-plus',
     name: 'Zebra ZQ220 Plus',
-    shortDescription: 'Budżetowa mobilna drukarka paragonów i etykiet 3" — IP54, Bluetooth 5.0, NFC, OLED, 390 g',
+    shortDescription: 'Zebra ZQ220 Plus — budżetowa mobilna drukarka paragonów i etykiet 3", IP54, Bluetooth 5.0, NFC, OLED, 390 g',
     seoTitle: 'Mobilna drukarka Zebra ZQ220 Plus — budżetowa 3" kurier',
     seoDescription: 'Zebra ZQ220 Plus (ZQ22-B16) — budżetowa mobilna drukarka etykiet do kuriera, 3" (72 mm), IP54, BT 5.0, NFC, OLED. ZQ22-B16B1KE-00 od 576 zł netto.',
     description: `Zebra ZQ220 Plus to najlepszy wybór dla małych firm i punktów sprzedaży szukających najtańszej mobilnej drukarki Zebra 3" z wbudowaną odpornością IP54.
@@ -7569,7 +7569,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zq210',
     slug: 'zebra-zq210',
     name: 'Zebra ZQ210',
-    shortDescription: 'Najlżejsza mobilna drukarka paragonów i etykiet 2" — tylko 265 g, Bluetooth 4.1, NFC, OLED, IP43',
+    shortDescription: 'Zebra ZQ210 — najlżejsza mobilna drukarka paragonów i etykiet 2", tylko 265 g, Bluetooth 4.1, NFC, OLED, IP43',
     seoTitle: 'Mobilna drukarka Zebra ZQ210 — najlżejsza 2" 265 g',
     seoDescription: 'Zebra ZQ210 (ZQ21-A0E) — najlżejsza mobilna drukarka etykiet i paragonów 2" (48 mm), tylko 265 g. ZQ210 Zebra: BT 4.1, NFC, OLED, IP43. ZQ21-A0E01KE-00 od 999 zł netto.',
     description: `Zebra ZQ210 to najlepszy wybór dla firm szukających najlżejszej i najtańszej mobilnej drukarki etykiet 2" do prostych zastosowań w handlu i gastronomii.
@@ -7788,7 +7788,7 @@ const scanners: Product[] = [
     id: 'zebra-ds2208',
     slug: 'zebra-ds2208',
     name: 'Zebra DS2208',
-    shortDescription: 'Przewodowy czytnik kodów 1D/2D USB — następca LS2208',
+    shortDescription: 'Zebra DS2208 — przewodowy czytnik kodów 1D/2D USB, następca LS2208',
     description: `Dla kogo? Zebra DS2208 to uniwersalny czytnik (skaner) kodów kreskowych 1D i 2D przeznaczony do kas fiskalnych, aptek, biur, bibliotek i lekkich stanowisk magazynowych. Bezpośredni następca legendarnego LS2208 — z pełną kompatybilnością kabli i podstawek.
 
 Imager 2D z matrycą CMOS odczytuje wszystkie popularne formaty kodów: EAN-13, Code 128, QR Code, DataMatrix, PDF417 i Aztec — w tym kody z ekranów smartfonów i tabletów (kupony, bilety, e-recepty). Szybkość dekodowania 220 skanów/s i zasięg do 36,8 cm zapewniają komfort pracy nawet przy intensywnym ruchu klientów.
@@ -7945,7 +7945,7 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
     id: 'zebra-ds8208',
     slug: 'zebra-ds8208',
     name: 'Zebra DS8208',
-    shortDescription: 'Premium skaner 2D z czujnikiem 2 MP — kasy, retail, EAS',
+    shortDescription: 'Zebra DS8208 — Premium skaner 2D z czujnikiem 2 MP, kasy, retail, EAS',
     description: `Dla kogo? Zebra DS8208 to skaner ręczny klasy premium przeznaczony dla handlu detalicznego, supermarketów, sklepów wielkopowierzchniowych, aptek sieciowych i stanowisk obsługi zwrotów. Następca serii DS4608 — z 2-megapikselowym czujnikiem PRZM nowej generacji.
 
 Czujnik 2 MP (1600 × 1200 px) redefiniuje wydajność skanowania — odczytuje kody 1D i 2D z zasięgiem do 70 cm (UPC) i 104 cm (Code 39), nawet uszkodzone, słabo wydrukowane lub wyświetlane na ekranach. Szybkość dekodowania do 406 cm/s w trybie ręcznym eliminuje wąskie gardła na kasach o dużym natężeniu ruchu.
@@ -8065,7 +8065,7 @@ Gwarancja producenta 60 miesięcy (5 lat). Zebra DNA (123Scan, DataCapture DNA) 
     id: 'zebra-li2208',
     slug: 'zebra-li2208',
     name: 'Zebra LI2208',
-    shortDescription: 'Ekonomiczny skaner liniowy 1D USB — następca LS2208',
+    shortDescription: 'Zebra LI2208 — ekonomiczny skaner liniowy 1D USB, następca LS2208',
     description: `Dla kogo? Zebra LI2208 to przewodowy skaner liniowy 1D przeznaczony do kas fiskalnych, aptek, sklepów detalicznych, biur i bibliotek. Bezpośredni następca legendarnego laserowego LS2208 — w technologii imager (bez ruchomych części).
 
 Skaner liniowy z prędkością 547 skanów/s i zasięgiem do 51,8 cm odczytuje wszystkie popularne kody 1D: EAN-13, UPC-A/E, Code 128, Code 39, GS1-128 i GS1 DataBar. Technologia linear imager eliminuje ruchome części (lustro, silnik) znane z laserów — dłuższa żywotność, mniejsze zużycie energii, cichsza praca.
@@ -8213,7 +8213,7 @@ Uwaga: LI2208 odczytuje wyłącznie kody 1D. Jeśli potrzebujesz odczytu kodów 
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-handheld-scanners/ds4600-series.html',
     seoTitle: 'Zebra DS4608 — skaner 2D 1 MP, PRZM, EAS | od 814 zł netto',
     seoDescription: 'Zebra DS4608 (DS4608-SR/HD) — skaner ręczny 2D z sensorem 1 MP PRZM, IP52, upadki 1.8 m, gwarancja 5 lat. Warianty SR i HD, opcja EAS Checkpoint. Cena od 814 zł netto. Następca DS4308.',
-    shortDescription: 'Skaner 2D klasy mid-range z sensorem 1 MP PRZM — retail, apteki, EAS',
+    shortDescription: 'Zebra DS4608 — skaner 2D klasy mid-range z sensorem 1 MP PRZM, retail, apteki, EAS',
     description: `Dla kogo? Zebra DS4608 to przewodowy skaner ręczny 2D klasy mid-range przeznaczony dla handlu detalicznego, supermarketów, aptek sieciowych, stanowisk POS i magazynów. Następca serii DS4308 — z megapikselowym sensorem PRZM Intelligent Imaging (1280 × 800 px).
 
 Sensor 1 MP z procesorem 800 MHz zapewnia natychmiastowy odczyt kodów 1D i 2D — w tym uszkodzonych, słabo wydrukowanych i wyświetlanych na ekranach smartfonów. Zasięg do 112 cm (Code 39 20 mil) w wariancie SR i odczyt kodów od 2 mil w wariancie HD.
@@ -8409,7 +8409,7 @@ Dokumentacja: zebra.com/ds4608.`,
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-xr.html',
     seoTitle: 'Zebra DS3608-XR — skaner ultra-rugged, zasięg 32 m | od 2 417 zł',
     seoDescription: 'Zebra DS3608-XR (DS3608-XR60003VZWW, DS3608-XR3U4602ZVW) — ultra-wytrzymały skaner 2D dalekiego zasięgu (5 cm–32 m). IP65/IP68, upadki 3 m, -30°C. Magazyny wysokiego składowania, produkcja, outdoor. Cena od 2 417 zł netto.',
-    shortDescription: 'Ultra-rugged skaner 2D dalekiego zasięgu 5 cm–32 m — magazyny, produkcja, outdoor',
+    shortDescription: 'Zebra DS3608-XR — ultra-rugged skaner 2D dalekiego zasięgu 5 cm–32 m, magazyny, produkcja, outdoor',
     description: `Dla kogo? Zebra DS3608-XR to ultra-wytrzymały skaner ręczny 2D dalekiego zasięgu przeznaczony do magazynów wysokiego składowania, hal produkcyjnych, placów kontenerowych, doków przeładunkowych i mroźni. Następca DS3608-ER — z zasięgiem 40% większym (do 32 m) i 10% lżejszy.
 
 Podwójny sensor — Near (1280 × 800 px) do kodów z bliska i Far (1920 × 1080 px) do odczytu z odległości do 32 m (Code 39 100 mil). Zielony celownik laserowy 520 nm widoczny 7× lepiej niż czerwony — działa zarówno w ciemnym magazynie, jak i w pełnym słońcu. IntelliFocus automatycznie przełącza tryb bliski/daleki.
@@ -8609,7 +8609,7 @@ Dokumentacja: zebra.com/ds3608.`,
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-hd.html',
     seoTitle: 'Zebra DS3608-HD — skaner ultra-rugged High Density, kody od 3 mil | od 1 808 zł',
     seoDescription: 'Zebra DS3608-HD (DS3608-HD20003VZWW, DS3608-HD3U4602VZW) — ultra-wytrzymały skaner 2D do małych i gęstych kodów od 3 mil. IP65/IP68, upadki 3 m, -30°C. Elektronika, farmacja, produkcja precyzyjna. Cena od 1 808 zł netto.',
-    shortDescription: 'Ultra-rugged skaner 2D High Density do kodów od 3 mil — elektronika, farmacja, produkcja precyzyjna',
+    shortDescription: 'Zebra DS3608-HD — ultra-rugged skaner 2D High Density do kodów od 3 mil, elektronika, farmacja, produkcja precyzyjna',
     description: `Dla kogo? Zebra DS3608-HD to ultra-wytrzymały skaner ręczny 2D w wersji High Density, zaprojektowany do odczytu bardzo małych i gęstych kodów kreskowych (od 3 mil) z bliskiej odległości. Idealny do linii produkcyjnych elektroniki, montażu PCB, kontroli jakości komponentów półprzewodnikowych, farmacji (fiolki, ampułki, blistry) i produkcji precyzyjnej.
 
 Sensor obrazu 1 280 × 960 px (1,2 Mpx) z optyką HD zoptymalizowaną do bliskiego pola — odczytuje kody Data Matrix 10 mil od 2,5 cm do 22,9 cm, a Code 128 od 3 mil (najgęstsza rozdzielczość w serii DS3600). Celownik laserowy 655 nm. Potwierdzenie odczytu: LED + dźwięk + wibracja (3-stopniowe).
@@ -8794,7 +8794,7 @@ Dokumentacja: zebra.com/ds3608.`,
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-sr.html',
     seoTitle: 'Zebra DS3608-SR — skaner ultra-rugged Standard Range, zasięg 152 cm | od 1 287 zł',
     seoDescription: 'Zebra DS3608-SR (DS3608-SR00003VZWW, DS3608-SR3U4600VZW) — ultra-wytrzymały skaner 2D ogólnego przeznaczenia. IP65/IP68, upadki 3 m, -30°C. Magazyn, logistyka, produkcja. Cena od 1 287 zł netto.',
-    shortDescription: 'Ultra-rugged skaner 2D Standard Range do 152 cm — magazyn, logistyka, produkcja',
+    shortDescription: 'Zebra DS3608-SR — ultra-rugged skaner 2D Standard Range do 152 cm, magazyn, logistyka, produkcja',
     description: `Dla kogo? Zebra DS3608-SR to ultra-wytrzymały skaner ręczny 2D ogólnego przeznaczenia z serii DS3600 — najbardziej uniwersalny wariant, zaprojektowany do magazynów, centrów dystrybucyjnych, hal produkcyjnych, doków przeładunkowych i mroźni. Czyta standardowe kody 1D/2D od 5 mil na odległość do 152 cm.
 
 Sensor obrazu 1 280 × 800 px z polem widzenia 42,8° × 28,8° — szerokie pole ułatwia celowanie i przyspiesza skanowanie seryjne. Zasięg Code 128 (20 mil) od 7,1 do 71,1 cm, DataMatrix 10 mil od 3,5 do 21,8 cm, Code 128 (40 mil) do 152,4 cm. Celownik LED 610 nm. Potwierdzenie odczytu: LED + dźwięk + wibracja (3-stopniowe).
@@ -8977,7 +8977,7 @@ Dokumentacja: zebra.com/ds3608.`,
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-hp.html',
     seoTitle: 'Zebra DS3608-HP — skaner ultra-rugged z OCR i document capture | od 1 654 zł',
     seoDescription: 'Zebra DS3608-HP (DS3608-HP20003VZWW, DS3608-HP3U4602VZW) — ultra-wytrzymały skaner 2D High Performance z OCR, document capture i photo capture. IP65/IP68, upadki 3 m, zasięg do 2 m. Cena od 1 654 zł netto.',
-    shortDescription: 'Ultra-rugged skaner 2D z OCR, document capture i photo capture — logistyka, transport, magazyn',
+    shortDescription: 'Zebra DS3608-HP — ultra-rugged skaner 2D z OCR, document capture i photo capture, logistyka, transport, magazyn',
     description: `Dla kogo? Zebra DS3608-HP to ultra-wytrzymały skaner ręczny 2D High Performance z funkcjami document capture, OCR i photo capture — jedyny wariant serii DS3600 z możliwością przechwytywania dokumentów i tekstu. Zaprojektowany dla logistyki, transportu, magazynów i punktów odbioru — wszędzie tam, gdzie oprócz skanowania kodów trzeba fotografować dokumenty, odczytywać tekst drukowany lub przechwytywać podpisy.
 
 Sensor obrazu 1 280 × 960 px (wyższa rozdzielczość niż SR/XR — 1 280 × 800) z polem widzenia 31° × 23°. Zasięg Code 128 (20 mil) od 12,7 do 114,3 cm, Code 128 (40 mil) do 203 cm. DataMatrix 10 mil od 15,2 do 38,1 cm. Celownik laserowy 655 nm. Potwierdzenie odczytu: LED + dźwięk + wibracja (3-stopniowe).
@@ -9161,7 +9161,7 @@ Dokumentacja: zebra.com/ds3608.`,
     name: 'Zebra LI3608-SR',
     seoTitle: 'Skaner 1D Zebra LI3608-SR — ultra-rugged, IP65+IP68, -30°C | TAKMA',
     seoDescription: 'Zebra LI3608-SR (LI3608-SR00003VZWW, LI3608-SR3U4600VZW) — przemysłowy skaner liniowy 1D, IP65+IP68, upadki 2,4 m, -30°C do +50°C. Najlżejszy ultra-rugged: 287 g. Od 1 343 zł netto.',
-    shortDescription: 'Przemysłowy skaner liniowy 1D, IP65+IP68, upadki 2,4 m, -30°C — najlżejszy ultra-rugged (287 g)',
+    shortDescription: 'Zebra LI3608-SR — przemysłowy skaner liniowy 1D, IP65+IP68, upadki 2,4 m, -30°C, najlżejszy ultra-rugged (287 g)',
     description: `Dla kogo? Zebra LI3608-SR to przemysłowy skaner liniowy 1D zaprojektowany dla operacji, które korzystają wyłącznie z kodów kreskowych 1D (EAN/UPC, Code 128, GS1-128) — typowych w magazynach FMCG, centrach dystrybucji, na liniach produkcyjnych i w mroźniach. Jeśli nie potrzebujesz skanowania kodów 2D (QR, DataMatrix), LI3608-SR jest optymalnym wyborem pod względem ceny, wagi i wytrzymałości.
 
 Podwójne uszczelnienie IP65 + IP68 — jedyny ultra-rugged 1D na rynku z dwoma certyfikatami szczelności: pyłoszczelny (IP65) i zanurzalny do 30 minut (IP68). Honeywell Granit i Datalogic PowerScan oferują jedynie IP65 lub IP67 osobno. Upadki wielokrotne z 2,4 m na beton, 7 500 obrotów w tumble teście z 1 m (50% więcej niż Honeywell Granit: 5 000).
@@ -9333,7 +9333,7 @@ Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Man
     name: 'Zebra LI3608-ER',
     seoTitle: 'Skaner 1D Zebra LI3608-ER — ultra-rugged, zasięg 19,8 m, IP65+IP68 | TAKMA',
     seoDescription: 'Zebra LI3608-ER (LI3608-ER20003VZWW, LI3608-ER3U4600ZVW) — przemysłowy skaner liniowy 1D Extended Range, zasięg do 19,8 m. IP65+IP68, upadki 2,4 m, -30°C. Od 2 264 zł netto.',
-    shortDescription: 'Przemysłowy skaner liniowy 1D Extended Range — zasięg do 19,8 m, IP65+IP68, upadki 2,4 m, -30°C (327 g)',
+    shortDescription: 'Zebra LI3608-ER — przemysłowy skaner liniowy 1D Extended Range, zasięg do 19,8 m, IP65+IP68, upadki 2,4 m, -30°C (327 g)',
     description: `Dla kogo? Zebra LI3608-ER to przemysłowy skaner liniowy 1D dalekiego zasięgu (Extended Range) zaprojektowany dla magazynów wysokiego składowania, doków przeładunkowych, placów składowych i operacji outdoorowych. Jeśli kody kreskowe 1D (Code 39, Code 128, UPC/EAN) znajdują się na regałach powyżej 3 metrów — LI3608-ER odczyta je bez drabiny i bez wchodzenia na wózek widłowy.
 
 Zasięg skanowania: Code 39 (20 mil) do 3,6 m, Code 39 (55 mil) do 8,9 m, kody retrorefleksyjne (100 mil) do 19,8 m. Dla porównania: [LI3608-SR](/produkt/zebra-li3608-sr) (Standard Range) sięga maksymalnie 1,07 m. Extended Range oznacza 3–18× większy dystans odczytu — operator stojąc na poziomie podłogi skanuje etykiety na górnych regałach bez podnośnika.
@@ -9512,7 +9512,7 @@ Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Man
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-sr.html',
     seoTitle: 'Zebra DS3678-SR — bezprzewodowy skaner ultra-rugged Bluetooth, zasięg 100 m | od 2 111 zł',
     seoDescription: 'Zebra DS3678-SR (DS3678-SR0F003VZWW, DS3678-SR3U42A0SFW) — bezprzewodowy ultra-wytrzymały skaner 2D Bluetooth 4.0, zasięg 100 m. IP65/IP68, upadki 3 m, bateria 100 000 skanów. Cena od 2 111 zł netto.',
-    shortDescription: 'Bezprzewodowy ultra-rugged skaner 2D Bluetooth — zasięg 100 m, bateria 100 000 skanów, IP65/IP68',
+    shortDescription: 'Zebra DS3678-SR — bezprzewodowy ultra-rugged skaner 2D Bluetooth, zasięg 100 m, bateria 100 000 skanów, IP65/IP68',
     description: `Dla kogo? Zebra DS3678-SR to bezprzewodowa wersja ultra-wytrzymałego skanera DS3608-SR — z Bluetooth 4.0 LE, baterią PowerPrecision+ na 100 000+ skanów i zasięgiem bezprzewodowym do 100 m. Zaprojektowany do magazynów, centrów dystrybucyjnych, hal produkcyjnych, doków przeładunkowych i wszędzie tam, gdzie kabel ogranicza mobilność operatora.
 
 Sensor obrazu 1 280 × 800 px z polem widzenia 42° × 28° — identyczny jak w przewodowym DS3608-SR. Zasięg Code 128 (20 mil) od 7,1 do 71,1 cm, DataMatrix 10 mil od 3,5 do 21,8 cm, Code 128 (40 mil) do 152,4 cm. Celownik LED 610 nm. Potwierdzenie odczytu: LED + dźwięk + wibracja.
@@ -9701,7 +9701,7 @@ Dokumentacja: zebra.com/ds3678.`,
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-xr.html',
     seoTitle: 'Zebra DS3678-XR — bezprzewodowy skaner ultra-rugged, zasięg 32 m, Bluetooth 100 m | od 3 237 zł',
     seoDescription: 'Zebra DS3678-XR (DS3678-XR6F003VZWW, DS3678-XR3U42A2SVW) — bezprzewodowy ultra-wytrzymały skaner 2D dalekiego zasięgu 5 cm–32 m. Bluetooth 4.0, IP65/IP68, upadki 3 m, bateria 80 000 skanów. Cena od 3 237 zł netto.',
-    shortDescription: 'Bezprzewodowy ultra-rugged skaner 2D dalekiego zasięgu 5 cm–32 m — Bluetooth 100 m, bateria 80 000 skanów',
+    shortDescription: 'Zebra DS3678-XR — bezprzewodowy ultra-rugged skaner 2D dalekiego zasięgu 5 cm–32 m, Bluetooth 100 m, bateria 80 000 skanów',
     description: `Dla kogo? Zebra DS3678-XR to bezprzewodowa wersja ultra-wytrzymałego skanera dalekiego zasięgu DS3608-XR — z Bluetooth 4.0 LE (100 m), baterią PowerPrecision+ na 80 000+ skanów i podwójnym sensorem skanującym od 5 cm do 32 m. Zaprojektowany do magazynów wysokiego składowania, wózków widłowych, placów kontenerowych i doków przeładunkowych — wszędzie tam, gdzie trzeba czytać kody z dużych odległości bez ograniczeń kablem.
 
 Podwójny sensor — Near (1 280 × 800 px, FoV 42°) do kodów z bliska i Far (1 920 × 1 080 px, FoV 14°) do odczytu z odległości do 32 m (Code 39 100 mil). IntelliFocus automatycznie przełącza tryb bliski/daleki — operator nie musi nic konfigurować. Zielony celownik laserowy 520 nm widoczny 7× lepiej niż czerwony — działa zarówno w ciemnym magazynie, jak i w pełnym słońcu.
@@ -9917,7 +9917,7 @@ Dokumentacja: zebra.com/ds3678.`,
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-hd.html',
     seoTitle: 'Zebra DS3678-HD — bezprzewodowy skaner ultra-rugged High Density, kody od 3 mil | od 2 620 zł',
     seoDescription: 'Zebra DS3678-HD (DS3678-HD2F003VZWW, DS3678-HD3U42A0SFW) — bezprzewodowy ultra-wytrzymały skaner 2D High Density do małych kodów od 3 mil. Bluetooth 4.0, IP65/IP68, upadki 3 m, bateria 100 000 skanów. Cena od 2 620 zł netto.',
-    shortDescription: 'Bezprzewodowy ultra-rugged skaner 2D High Density — kody od 3 mil, Bluetooth 100 m, IP65/IP68',
+    shortDescription: 'Zebra DS3678-HD — bezprzewodowy ultra-rugged skaner 2D High Density, kody od 3 mil, Bluetooth 100 m, IP65/IP68',
     description: `Dla kogo? Zebra DS3678-HD to bezprzewodowa wersja ultra-wytrzymałego skanera DS3608-HD — z Bluetooth 4.0 LE (100 m), baterią PowerPrecision+ na 100 000+ skanów i sensorem High Density 1 280 × 960 px zoptymalizowanym do odczytu bardzo małych i gęstych kodów od 3 mil. Zaprojektowany do elektroniki, farmacji, PCB, laboratoriów i linii montażowych — wszędzie tam, gdzie kody są mikroskopijne, a kabel ogranicza mobilność.
 
 Sensor obrazu 1 280 × 960 px (wyższa rozdzielczość niż SR/XR — 1 280 × 800) z polem widzenia 31° × 23° — węższe pole zapewnia lepszą precyzję na małych kodach. Code 128 (3 mil) od 5,1 do 7,6 cm, Code 128 (20 mil) od 5,6 do 66 cm, DataMatrix 10 mil od 2,5 do 22,9 cm, PDF417 5 mil od 5,1 do 15,2 cm. Celownik laserowy 655 nm.
@@ -10129,7 +10129,7 @@ Dokumentacja: zebra.com/ds3678.`,
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-hp.html',
     seoTitle: 'Zebra DS3678-HP — bezprzewodowy skaner ultra-rugged z OCR i Document Capture | od 2 577 zł',
     seoDescription: 'Zebra DS3678-HP (DS3678-HP2F003VZWW, DS3678-HP3U42A0SFW) — bezprzewodowy ultra-rugged skaner 2D z OCR, Document Capture i Signature Capture. Bluetooth 4.0, 100 m, IP65/IP68, 100 000 skanów. Cena od 2 577 zł netto.',
-    shortDescription: 'Bezprzewodowy skaner kodów 1D/2D ultra-rugged z OCR, Document Capture i Signature Capture — Bluetooth 4.0 LE, zasięg 100 m, bateria 100 000 skanów, FIPS 140-2, IP65/IP68.',
+    shortDescription: 'Zebra DS3678-HP — bezprzewodowy skaner kodów 1D/2D ultra-rugged z OCR, Document Capture i Signature Capture, Bluetooth 4.0 LE, zasięg 100 m, bateria 100 000 skanów, FIPS 140-2, IP65/IP68.',
     description: `Dla kogo? DS3678-HP to bezprzewodowy skaner ultra-rugged dla aplikacji wymagających nie tylko skanowania kodów, ale również rozpoznawania tekstu (OCR), skanowania dokumentów i przechwytywania podpisów. Farmacja, logistyka kontraktowa, kontrola jakości w produkcji, laboratoria — wszędzie tam, gdzie oprócz kodów kreskowych trzeba digitalizować numery seryjne, daty ważności, tekst na etykietach i dokumenty papierowe.
 
 OCR i Document Capture — wbudowany moduł OCR odczytuje fonty OCR-A, OCR-B oraz MICR E-13B (czeki bankowe). Tryb Document Capture zamienia skaner w aparat — fotografuje etykiety, protokoły i formularze. Signature Capture przechwytuje odręczne podpisy wprost do systemu.
@@ -10344,7 +10344,7 @@ Pełna specyfikacja i certyfikaty dostępne na zebra.com/ds3678-hp.`,
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-handheld-scanners/ds2200-series.html',
     seoTitle: 'Zebra DS2278 — bezprzewodowy skaner kodów 2D Bluetooth | od 449 zł',
     seoDescription: 'Zebra DS2278 (DS2278-SR00007ZZWW) — bezprzewodowy skaner 2D Bluetooth 4.0 BLE do kas, aptek i biur. Bateria 14 h / 110 000 skanów, Scan-to-Connect, IP52. Cena od 449 zł netto.',
-    shortDescription: 'Bezprzewodowy skaner kodów 1D/2D Bluetooth 4.0 BLE — 14 h pracy, 110 000 skanów, Scan-to-Connect, IP52, baza prezentacyjna CR2278.',
+    shortDescription: 'Zebra DS2278 — bezprzewodowy skaner kodów 1D/2D Bluetooth 4.0 BLE, 14 h pracy, 110 000 skanów, Scan-to-Connect, IP52, baza prezentacyjna CR2278.',
     description: `Dla kogo? Zebra DS2278 to bezprzewodowa wersja popularnego skanera DS2208 — z Bluetooth 4.0 BLE, baterią na 14 godzin pracy i technologią Scan-to-Connect. Zaprojektowany do kas sklepowych, aptek, biur, punktów obsługi klienta i wszędzie tam, gdzie kabel ogranicza swobodę pracy operatora.
 
 Sensor 640×480 px z polem widzenia 32,8°×24,8° odczytuje wszystkie kody 1D (EAN, Code 128, Code 39, GS1 DataBar) i 2D (QR Code, DataMatrix, PDF417, Aztec, MaxiCode). Odczytuje kody z ekranów smartfonów, tabletów i monitorów — kupony mobilne, bilety elektroniczne, karty lojalnościowe. Zasięg: UPC/EAN 13 mil do 36,8 cm, DataMatrix 10 mil do 15,7 cm.
@@ -10562,7 +10562,7 @@ Pełna specyfikacja i certyfikaty na zebra.com/ds2278.`,
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-handheld-scanners/ds82-series.html',
     seoTitle: 'Zebra DS8288 — bezprzewodowy skaner 2D 2 MP, Bluetooth 5.2, PowerCap | od 2 243 zł',
     seoDescription: 'Zebra DS8288 — NOWOŚĆ 2026. Bezprzewodowy skaner 2D, sensor 2 MP, Bluetooth 5.2, 100 000 skanów lub PowerCap (100 skanów w 35 s!). IP52, FIPS 140-3. Od 2 243 zł netto.',
-    shortDescription: 'NOWOŚĆ 2026 — bezprzewodowy skaner premium 2D z sensorem 2 MP, Bluetooth 5.2, baterią 100 000 skanów lub superkondensatorem PowerCap, ładowaniem indukcyjnym, FIPS 140-3, IP52.',
+    shortDescription: 'Zebra DS8288 — NOWOŚĆ 2026, bezprzewodowy skaner premium 2D z sensorem 2 MP, Bluetooth 5.2, baterią 100 000 skanów lub superkondensatorem PowerCap, ładowaniem indukcyjnym, FIPS 140-3, IP52.',
     description: `Dla kogo? Zebra DS8288 to najnowszy bezprzewodowy skaner premium 2D — następca DS8178 z gruntownie ulepszonym sensorem 2 MP (1600×1200), Bluetooth 5.2, szyfrowaniem FIPS 140-3 i indukcyjnym ładowaniem bezkontaktowym. Zaprojektowany do wymagających punktów sprzedaży (POS), aptek, placówek medycznych, sieci handlowych, click & collect i wszędzie tam, gdzie liczy się najwyższa wydajność skanowania i niezawodność.
 
 Sensor 2 MP (1600×1200) z technologią PRZM Intelligent Imaging — o 56% więcej pikseli niż DS8178. Zasięg UPC/EAN do 70 cm, QR Code do 48 cm, Code 128 5 mil od 3,3 do 27,9 cm, DataMatrix 10 mil od 1,8 do 30 cm. Tolerancja ruchu 406 cm/s — skanuje kody przesuwane z prędkością ponad 4 m/s na kasie bez zatrzymywania. Minimalny kontrast 16% — odczytuje uszkodzone i słabo wydrukowane etykiety.
@@ -10835,7 +10835,7 @@ Pełna specyfikacja na zebra.com/ds8288.`,
     sameAs: 'https://www.zebra.com/us/en/products/scanners/general-purpose-handheld-scanners/ds4600-series/ds4678.html',
     seoTitle: 'Skaner bezprzewodowy Zebra DS4678 — BT 5.2, Connect+, 50 000 skanów | od 1 126 zł',
     seoDescription: 'Zebra DS4678 — bezprzewodowy skaner 2D Bluetooth 5.2 BLE z technologią Connect+ (bezstykowe ładowanie). Sensor 1280×800, PRZM, 50 000+ skanów, IP52, Virtual Tether. Warianty SR i DPM. Cena od 1 126 zł netto.',
-    shortDescription: 'Bezprzewodowy skaner kodów 1D/2D Bluetooth 5.2 BLE — Connect+ (ładowanie bezstykowe), PRZM, 50 000+ skanów, Virtual Tether, Wi-Fi Friendly, IP52, warianty SR i DPM.',
+    shortDescription: 'Zebra DS4678 — bezprzewodowy skaner kodów 1D/2D Bluetooth 5.2 BLE, Connect+ (ładowanie bezstykowe), PRZM, 50 000+ skanów, Virtual Tether, Wi-Fi Friendly, IP52, warianty SR i DPM.',
     description: `Dla kogo? Zebra DS4678 to bezprzewodowy skaner z serii DS4600 zaprojektowany dla handlu detalicznego, aptek, gastronomii i punktów obsługi klienta. Łączy wydajność przewodowego DS4608 z pełną swobodą bezprzewodowej pracy Bluetooth 5.2 BLE i technologią Connect+ — bezstykowe ładowanie bez korozji kontaktów.
 
 Sensor megapikselowy 1280×800 z technologią PRZM Intelligent Imaging i procesorem 800 MHz — natychmiastowe skanowanie kodów 1D/2D z etykiet, ekranów telefonów, dokumentów tożsamości i opakowań. Zasięg UPC do 71 cm (28"), tolerancja kąta ±60° w każdej osi. Multi-Code Data Formatting (MDF) — skanowanie wielu kodów jednym naciśnięciem przycisku.
@@ -11063,7 +11063,7 @@ Dokumentacja i karta katalogowa: zebra.com/ds4600.`,
     sameAs: 'https://www.zebra.com/us/en/products/scanners/general-purpose-handheld-scanners/ds4600-series/ds4678.html',
     seoTitle: 'Skaner DPM Zebra DS4678-DPE — kody wygrawerowane, Direct Part Marking | od 1 268 zł',
     seoDescription: 'Zebra DS4678-DPE — bezprzewodowy skaner DPM (Direct Part Marking) do kodów wygrawerowanych laserowo na metalowych i plastikowych elementach. BT 5.2, Connect+, zielony celownik 528 nm, PRZM. Od 1 268 zł netto.',
-    shortDescription: 'Bezprzewodowy skaner DPM do kodów wygrawerowanych — zielony celownik 528 nm, dyfuzor oświetlenia, BT 5.2, Connect+, PRZM, 50 000+ skanów, IP52.',
+    shortDescription: 'Zebra DS4678-DPE — bezprzewodowy skaner DPM do kodów wygrawerowanych, zielony celownik 528 nm, dyfuzor oświetlenia, BT 5.2, Connect+, PRZM, 50 000+ skanów, IP52.',
     description: `Dla kogo? Zebra DS4678-DPE to bezprzewodowy skaner zaprojektowany specjalnie dla branży elektronicznej i lekkiej produkcji przemysłowej. Odczytuje kody DPM (Direct Part Marking) — wygrawerowane laserowo, wytłaczane, nadrukowane atramentowo, wytrawione chemicznie i nanoszone dot-peenem bezpośrednio na metalowe i plastikowe elementy. Idealny do montażu, kontroli jakości, śledzenia komponentów i zarządzania zapasami.
 
 Specjalnie opracowana konstrukcja silnika tylnego z wbudowanym dyfuzorem — optymalne oświetlenie na błyszczących i odbijających powierzchniach. Oświetlenie pośrednie do oznaczeń drukowanych, bezpośrednie do kodów o niskim kontraście i oznaczeń wytrawianych laserowo. Zielony celownik LED 528 nm (True Green) — lepiej widoczny na ciemnych i kolorowych powierzchniach niż czerwony lub bursztynowy celownik skanerów standardowych.
@@ -11285,7 +11285,7 @@ Dokumentacja: zebra.com/ds4600dpe.`,
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-hands-free-scanners/ds9900-series/ds9908.html',
     seoTitle: 'Skaner prezentacyjny Zebra DS9908 — hybrydowy hands-free, Digimarc, EAS | od 1 169 zł',
     seoDescription: 'Zebra DS9908 — hybrydowy skaner prezentacyjny 2D do kas POS, aptek i retail. Tryb hands-free i ręczny, Digimarc, PRZM, megapikselowy sensor 1280×800, 5 lat gwarancji. Od 1 169 zł netto — TAKMA, autoryzowany partner Zebra.',
-    shortDescription: 'Hybrydowy skaner prezentacyjny 2D — hands-free + ręczny, Digimarc, EAS, IP52',
+    shortDescription: 'Zebra DS9908 — hybrydowy skaner prezentacyjny 2D, hands-free + ręczny, Digimarc, EAS, IP52',
     description: `Dla kogo? Zebra DS9908 to hybrydowy skaner prezentacyjny zaprojektowany od podstaw do pracy hands-free i ręcznej — nie jest to skaner ręczny z dostawioną podstawką, lecz urządzenie natywnie łączące oba tryby. Idealny do kas fiskalnych w handlu detalicznym, aptekach, bibliotekach, kas samoobsługowych i punktów usługowych.
 
 Automatyczne przełączanie trybów — po odłożeniu na podstawkę DS9908 ogranicza pole skanowania (aby nie odczytywać kodów z sąsiednich produktów), a po wzięciu do ręki rozszerza zasięg do 63 cm (UPC). Megapikselowy sensor 1280×800 z technologią PRZM Intelligent Imaging dekoduje zniszczone, wyblakłe, niskokontrastowe i błyszczące kody. Natywna obsługa Digimarc — niewidzialnych kodów kreskowych drukowanych na całym opakowaniu (standard wdrażany przez Walmart, P&G).
@@ -11541,7 +11541,7 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-hands-free-scanners/ds9300-series.html',
     seoTitle: 'Skaner prezentacyjny Zebra DS9308 — kompaktowy hands-free do kas POS | od 995 zł',
     seoDescription: 'Zebra DS9308 — kompaktowy skaner prezentacyjny 2D do kas fiskalnych, aptek i retail. Megapikselowy sensor 1280×800, FOV 52°, IP52, Digimarc opcja. Od 995 zł netto — TAKMA, autoryzowany partner Zebra.',
-    shortDescription: 'Kompaktowy skaner prezentacyjny 2D — hands-free, FOV 52°, Digimarc opcja, IP52',
+    shortDescription: 'Zebra DS9308 — kompaktowy skaner prezentacyjny 2D, hands-free, FOV 52°, Digimarc opcja, IP52',
     description: `Dla kogo? Zebra DS9308 to kompaktowy skaner prezentacyjny zaprojektowany do kas fiskalnych, aptek, bibliotek, restauracji i punktów usługowych. Pracuje wyłącznie w trybie hands-free — wystarczy przesunąć produkt przed oknem skanera. Ekonomiczna alternatywa dla hybrydowego DS9908.
 
 Najszersze pole widzenia w klasie — 52° w poziomie × 33° w pionie. Megapikselowy sensor 1280×800 z technologią PRZM Intelligent Imaging odczytuje zniszczone, wyblakłe i niskokontrastowe kody. Zakrzywione okno wyjściowe minimalizuje odblaski od ekranów smartfonów (kupony mobilne, karty lojalnościowe, QR pay). Prędkość odczytu do 305 cm/s.
@@ -11805,7 +11805,7 @@ const newlandScanners: Product[] = [
     id: 'newland-hr23-dorada',
     slug: 'newland-hr23-dorada',
     name: 'Newland HR23 Dorada',
-    shortDescription: 'Przewodowy skaner 2D CMOS z kablem USB — IP52, upadek z 1.5 m, gwarancja 5 lat, waga 137 g',
+    shortDescription: 'Newland HR23 Dorada — przewodowy skaner 2D CMOS z kablem USB, IP52, upadek z 1.5 m, gwarancja 5 lat, waga 137 g',
     description: `Dla kogo? Newland HR23 Dorada to ekonomiczny skaner kodów kreskowych 1D i 2D klasy entry-level, zaprojektowany dla kas fiskalnych, aptek, punktów obsługi klienta, bibliotek i magazynów o niskim i średnim natężeniu skanowania. Oferuje wydajność skanowania porównywalną z droższymi modelami — przy cenie nawet o 30% niższej od konkurencyjnego Zebra DS2208.
 
 Sensor obrazowy 640×480 CMOS z oświetleniem białą diodą LED i celownikiem czerwonym LED dekoduje wszystkie popularne kody 1D (EAN-13, EAN-8, UPC-A/E, Code 128, Code 39, GS1-128, GS1 DataBar, ITF, Codabar) oraz 2D (QR Code, Data Matrix, PDF417, Aztec, Micro QR, Micro PDF417). Rozdzielczość od 3 mil — czyta nawet drobne kody na etykietach farmaceutycznych i etykietach zbiorczych. Zasięg skanowania EAN-13 (13 mil): 50–280 mm, Data Matrix (10 mil): 30–125 mm.
@@ -11945,7 +11945,7 @@ W zestawie (wersja -S5): skaner i kabel USB spiralny. Wersja -SA dodatkowo zawie
     slug: 'newland-hr33-marlin',
     name: 'Newland HR33 Marlin',
     sameAs: 'https://www.newland-id.com/en/products/handheld-scanners/hr33-marlin-corded',
-    shortDescription: 'Przewodowy skaner 2D z megapikselowym sensorem 1280×800, celownikiem laserowym i OCR — do wymagających środowisk retail i logistyki',
+    shortDescription: 'Newland HR33 Marlin — przewodowy skaner 2D z megapikselowym sensorem 1280×800, celownikiem laserowym i OCR, do wymagających środowisk retail i logistyki',
     description: `Dla kogo? Newland HR33 Marlin Corded to przewodowy skaner kodów kreskowych klasy mid-range, zaprojektowany dla kas fiskalnych, stanowisk POS, aptek, sortowni pocztowych, magazynów i placówek medycznych — wszędzie tam, gdzie potrzebny jest szybki odczyt kodów 1D/2D, precyzyjne celowanie laserowe i opcjonalny OCR, ale budżet nie pozwala na skanery klasy premium.
 
 Co wyróżnia HR33 na tle tańszego HR23 Dorada? Przede wszystkim sensor megapikselowy CMOS 1280×800 (vs 640×480 w HR23), który odczytuje nawet uszkodzone, słabo wydrukowane i drobne kody od 3 mil. Celownik laserowy typu cross (krzyżyk) zastąpił diodę LED — precyzyjnie wskazuje wybrany kod nawet wśród wielu etykiet obok siebie. Zasięg odczytu EAN-13 (13 mil) wzrósł do 535 mm — prawie dwukrotnie dalej niż HR23 (280 mm).
@@ -12086,7 +12086,7 @@ Porównanie z konkurencją: HR33 Marlin oferuje sensor megapikselowy 1280×800 �
     slug: 'newland-hr11-aringa',
     name: 'Newland HR11 Aringa',
     sameAs: 'https://www.newland-id.com/en/products/handheld-scanners/hr11-aringa',
-    shortDescription: 'Budżetowy przewodowy czytnik kodów 1D z sensorem CCD 2500 px — odczyt z papieru i ekranów, gwarancja 5 lat',
+    shortDescription: 'Newland HR11 Aringa — budżetowy przewodowy czytnik kodów 1D z sensorem CCD 2500 px, odczyt z papieru i ekranów, gwarancja 5 lat',
     description: `Dla kogo? Newland HR11 Aringa to najtańszy przewodowy czytnik kodów kreskowych 1D w ofercie Newland, zaprojektowany dla małych sklepów, kas fiskalnych, aptek, drogerii, kiosków z tytoniem, bibliotek, biur i punktów biletowych — wszędzie tam, gdzie wystarczy odczyt kodów 1D (EAN, Code 128, GS1 DataBar) przy ograniczonym budżecie.
 
 Sensor CCD 2500 pikseli z technologią NLDC (Newland Decoder Chip) odczytuje kody 1D drukowane na papierze, etykietach i — co ważne — wyświetlane na ekranach smartfonów, tabletów i monitorów. Skanowanie kuponów mobilnych, biletów elektronicznych, e-recept i kodów z aplikacji lojalnościowych nie wymaga skanera 2D — HR11 sobie poradzi.
@@ -12217,7 +12217,7 @@ Porównanie z konkurencją: Zebra LI2208 (od ok. 265 zł netto) jest szybsza (54
     slug: 'newland-hr15-wahoo',
     name: 'Newland HR15 Wahoo',
     sameAs: 'https://www.newland-id.com/en/products/handheld-scanners/hr15-wahoo-corded',
-    shortDescription: 'Przewodowy czytnik 1D CCD + PDF417 — IP54, upadek z 1.5 m, gwarancja 5 lat, 152 g, USB',
+    shortDescription: 'Newland HR15 Wahoo — przewodowy czytnik 1D CCD + PDF417, IP54, upadek z 1.5 m, gwarancja 5 lat, 152 g, USB',
     description: `Dla kogo? Newland HR15 Wahoo to przewodowy czytnik kodów kreskowych 1D z sensorem CCD 2500 pikseli, przeznaczony dla kas fiskalnych, punktów obsługi klienta, aptek (kody EAN na opakowaniach), małych sklepów, bibliotek, biur i magazynów o niskim i średnim natężeniu skanowania. Najlepsze IP54 w klasie cenowej — jedyny skaner w segmencie budżetowym z ochroną przed pyłem i bryzgami wody.
 
 Sensor CCD 2500 pikseli z technologią UIMG dekoduje kody 1D (EAN-13, EAN-8, UPC-A/E, Code 128, Code 39, GS1-128, GS1 DataBar, Codabar, ITF, Code 93, ISBN) oraz — co wyróżnia HR15 na tle tańszych czytników CCD — kody stacked 2D: PDF417 i MicroPDF417 (do 255 bajtów). Odczyt PDF417 jest kluczowy przy skanowaniu polskich dowodów osobistych, praw jazdy i dokumentów logistycznych.
@@ -12353,7 +12353,7 @@ Gwarancja producenta 5 lat (60 miesięcy) — najdłuższa gwarancja wśród ska
     slug: 'newland-hr23-dorada-bt',
     name: 'Newland HR23 Dorada Bluetooth',
     sameAs: 'https://www.newland-id.com/en/products/handheld-scanners/hr23-dorada-bluetooth',
-    shortDescription: 'Bezprzewodowy skaner 2D CMOS Bluetooth 5.0 — zasięg 100 m, bateria 2600 mAh, pamięć 16 384 kodów, IP52, 5 lat gwarancji',
+    shortDescription: 'Newland HR23 Dorada Bluetooth — bezprzewodowy skaner 2D CMOS Bluetooth 5.0, zasięg 100 m, bateria 2600 mAh, pamięć 16 384 kodów, IP52, 5 lat gwarancji',
     description: `Dla kogo? Newland HR23 Dorada Bluetooth to bezprzewodowa wersja popularnego skanera HR23 Dorada, przeznaczona dla magazynów, hal produkcyjnych, sklepów wielkopowierzchniowych, aptek sieciowych i punktów logistycznych — wszędzie tam, gdzie kabel ogranicza mobilność operatora. Bluetooth 5.0 z zasięgiem ponad 100 m w otwartej przestrzeni pozwala swobodnie poruszać się po hali bez utraty połączenia.
 
 Sensor obrazowy 640×480 CMOS z oświetleniem białą diodą LED i celownikiem czerwonym LED — identyczny jak w wersji przewodowej. Dekoduje wszystkie kody 1D (EAN-13, EAN-8, UPC-A/E, Code 128, Code 39, GS1-128, GS1 DataBar, Codabar, ITF) i 2D (QR Code, Data Matrix, PDF417, Aztec, Micro QR, Micro PDF417). Rozdzielczość od 3 mil, zasięg EAN-13: 50–280 mm, Data Matrix (10 mil): 30–125 mm. GS1 Ready — certyfikowany odczyt kodów GS1 w handlu, logistyce i farmacji.
@@ -12498,7 +12498,7 @@ W zestawie: skaner + stacja dokująca + kabel USB + bateria 2600 mAh + Quick Sta
     slug: 'newland-hr33-marlin-bt',
     name: 'Newland HR33 Marlin Bluetooth',
     sameAs: 'https://www.newland-id.com/en/products/handheld-scanners/hr33-marlin-bluetooth',
-    shortDescription: 'Bezprzewodowy skaner 2D megapikselowy 1280×800 CMOS, Bluetooth 5.0, celownik laserowy, OCR, batch 15 000 kodów, IP52, 5 lat gwarancji',
+    shortDescription: 'Newland HR33 Marlin Bluetooth — bezprzewodowy skaner 2D megapikselowy 1280×800 CMOS, Bluetooth 5.0, celownik laserowy, OCR, batch 15 000 kodów, IP52, 5 lat gwarancji',
     description: `Dla kogo? Newland HR33 Marlin Bluetooth to bezprzewodowa wersja skanera megapikselowego HR33 Marlin, przeznaczona dla magazynów wysokoregałowych, centrów dystrybucyjnych, linii produkcyjnych, punktów sprzedaży premium i placówek medycznych — wszędzie tam, gdzie wymagany jest bezkablowy odczyt kodów z dużych odległości i trudnych powierzchni. Bluetooth 5.0 z zasięgiem ponad 100 m pozwala swobodnie pracować na całej hali magazynowej bez utraty połączenia.
 
 Megapikselowy sensor CMOS 1280×800 pikseli — to 3,3× więcej pikseli niż w HR23 Dorada (640×480) — zapewnia wyższą rozdzielczość i większy zasięg skanowania. Celownik laserowy 650 nm (zamiast LED w HR23) precyzyjnie wskazuje cel nawet z kilkudziesięciu centymetrów, co przyspiesza pracę przy skanowaniu z odległości. Technologia Acuscan automatycznie optymalizuje parametry dekodowania w zależności od kodu i powierzchni — skraca czas pierwszego odczytu nawet o 30%.
@@ -12650,7 +12650,7 @@ W zestawie: skaner + stacja dokująca + kabel USB + bateria 2600 mAh + Quick Sta
     slug: 'newland-nvh300',
     name: 'Newland NVH300 Angler DP',
     sameAs: 'https://www.newland-id.com/en/products/handheld-scanners/nvh300-angler-dp',
-    shortDescription: 'Przemysłowy skaner DPM z megapikselowym sensorem 1280×960 — IP64, upadek z 1.8 m, 3-kolorowe LED, 5 lat gwarancji',
+    shortDescription: 'Newland NVH300 Angler DP — przemysłowy skaner DPM z megapikselowym sensorem 1280×960, IP64, upadek z 1.8 m, 3-kolorowe LED, 5 lat gwarancji',
     description: `Dla kogo? Newland NVH300 Angler DP to przemysłowy skaner kodów kreskowych DPM (Direct Part Marking) przeznaczony do odczytu kodów znakowanych bezpośrednio na częściach metalowych, plastikowych i szklanych — metodą dot peen (igłową), grawerowania laserowego, trawienia chemicznego, druku atramentowego i natrysku termicznego. Idealny dla produkcji motoryzacyjnej, lotniczej, elektronicznej, farmaceutycznej i metalurgicznej, gdzie wymagana jest pełna identyfikowalność (traceability) komponentów.
 
 Megapikselowy sensor CMOS 1280×960 pikseli z celownikiem laserowym 650 nm odczytuje kody DPM na najtrudniejszych powierzchniach — polerowanym metalu, aluminium, odlewach, PCB i elementach tłoczonych. Unikalne w tej klasie cenowej trójkolorowe oświetlenie LED (białe + czerwone + niebieskie) z automatycznym doborem koloru i kąta padania światła zapewnia najlepszy kontrast dla każdego typu znakowania. Pole widzenia 41° × 31°, tolerancja ruchu do 2 m/s.
@@ -12788,7 +12788,7 @@ const newlandHR23Accessories: Product[] = [
     id: 'newland-std23-33-sa',
     slug: 'newland-std23-33-sa',
     name: 'Newland STD23-33-SA — podstawka Smartstand do HR23/HR33',
-    shortDescription: 'Regulowana podstawka auto-sense do skanerów HR23 i HR33 — tryb hands-free',
+    shortDescription: 'Newland STD23-33-SA — regulowana podstawka auto-sense do skanerów HR23 i HR33, tryb hands-free',
     description: 'Podstawka Newland STD23-33-SA typu Smartstand do skanerów HR23 Dorada i HR33 Dorada II. Regulowany kąt — z pozycji pionowej do płaskiej. Tryb auto-sense wykrywa zbliżenie kodu i skanuje automatycznie. Kompatybilna z blatem i montażem ściennym.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-skanerow'],
@@ -12817,7 +12817,7 @@ const newlandHR23Accessories: Product[] = [
     id: 'newland-std30i',
     slug: 'newland-std30i',
     name: 'Newland STD30i — podstawka gooseneck do HR11x/HR2x/HR3x',
-    shortDescription: 'Elastyczna podstawka gooseneck z auto-sense do skanerów Newland',
+    shortDescription: 'Newland STD30i — elastyczna podstawka gooseneck z auto-sense do skanerów Newland',
     description: 'Podstawka Newland STD30i typu gooseneck (gęsia szyja) do skanerów Newland HR11x, HR2x i HR3x. Elastyczne ramię pozwala na precyzyjne ustawienie kąta i odległości skanowania. Tryb auto-sense — skanowanie automatyczne po zbliżeniu kodu.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-skanerow'],
@@ -12846,7 +12846,7 @@ const newlandHR23Accessories: Product[] = [
     id: 'newland-std20i',
     slug: 'newland-std20i',
     name: 'Newland STD20i — podstawka Smartstand do HR15 Wahoo',
-    shortDescription: 'Składana podstawka z auto-sense do skanera HR15 Wahoo — tryb hands-free',
+    shortDescription: 'Newland STD20i — składana podstawka z auto-sense do skanera HR15 Wahoo, tryb hands-free',
     description: 'Podstawka Newland STD20i typu Smartstand do skanera Newland HR15 Wahoo. Składana konstrukcja z regulowanym kątem — od pozycji pionowej do prezentacyjnej. Tryb auto-sense wykrywa zbliżenie kodu i skanuje automatycznie bez naciskania przycisku. Idealna na stałe stanowiska kasowe, apteki, biblioteki — skaner zawsze gotowy do pracy w trybie hands-free. Montaż na blacie.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-skanerow'],
@@ -12884,7 +12884,7 @@ const newlandHR23Accessories: Product[] = [
     id: 'newland-std300',
     slug: 'newland-std300',
     name: 'Newland STD300 — podstawka składana do NVH300',
-    shortDescription: 'Składana podstawka auto-sense do skanera NVH300 Angler — tryb hands-free',
+    shortDescription: 'Newland STD300 — składana podstawka auto-sense do skanera NVH300 Angler, tryb hands-free',
     description: 'Podstawka Newland STD300 do skanera przemysłowego NVH300 Angler DP. Składana konstrukcja z regulowanym kątem. Tryb auto-sense wykrywa zbliżenie kodu i skanuje automatycznie bez naciskania przycisku. Do stałych stanowisk kontroli jakości i weryfikacji DPM.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-skanerow'],
@@ -12921,7 +12921,7 @@ const newlandHR23Accessories: Product[] = [
     id: 'newland-bty2333',
     slug: 'newland-bty2333',
     name: 'Newland BTY2333 — bateria 2600 mAh do HR23/HR33 BT',
-    shortDescription: 'Wymienna bateria Li-Ion 2600 mAh do skanerów HR23 i HR33 Bluetooth',
+    shortDescription: 'Newland BTY2333 — wymienna bateria Li-Ion 2600 mAh do skanerów HR23 i HR33 Bluetooth',
     description: 'Wymienna bateria Li-Ion 2600 mAh do bezprzewodowych skanerów Newland HR23 Dorada Bluetooth i HR33 Dorada II Bluetooth. Mechanizm latch-release — szybka wymiana bez narzędzi. Zapewnia ponad 16 h ciągłej pracy. Można ładować w ładowarce 4-slotowej NLS-CD3233-4C lub w stacji dokującej skanera.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-skanerow'],
@@ -12961,7 +12961,7 @@ const newlandHR23Accessories: Product[] = [
     id: 'newland-cd3233-4c',
     slug: 'newland-cd3233-4c',
     name: 'Newland CD3233-4C — ładowarka 4-slotowa do baterii HR23/HR33 BT',
-    shortDescription: 'Ładowarka 4-slotowa do baterii BTY2333 skanerów HR23 i HR33 Bluetooth',
+    shortDescription: 'Newland CD3233-4C — ładowarka 4-slotowa do baterii BTY2333 skanerów HR23 i HR33 Bluetooth',
     description: 'Ładowarka 4-slotowa Newland CD3233-4C do jednoczesnego ładowania do 4 baterii BTY2333 (2600 mAh) z bezprzewodowych skanerów HR23 i HR33 Bluetooth. Idealna do wielozmianowej pracy w magazynach — rotacyjne ładowanie baterii zapewnia ciągłość pracy bez przestojów.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-skanerow'],
@@ -13011,7 +13011,7 @@ const mobileComputers: Product[] = [
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc3300x-series.html',
     seoTitle: 'Terminal mobilny Zebra MC3300x — klawiatura, skaner 21 m',
     seoDescription: 'Zebra MC3300x (MC330L) — terminal mobilny z klawiaturą i skanerem 21 m. MC3300x Zebra: Gun/Straight Shooter, IP64. Kolektor danych MC330L-SL2EG4RW od 5 779 zł netto.',
-    shortDescription: 'Terminal mobilny z klawiaturą fizyczną i skanerem dalekiego zasięgu — do magazynów wysokiego składowania',
+    shortDescription: 'Zebra MC3300x — terminal mobilny z klawiaturą fizyczną i skanerem dalekiego zasięgu, do magazynów wysokiego składowania',
     description: `Dla kogo? Zebra MC3300x to wytrzymały terminal mobilny z fizyczną klawiaturą, zaprojektowany dla operatorów magazynów wysokiego składowania, centrów dystrybucyjnych, linii produkcyjnych i zakładów cross-dockingowych — wszędzie tam, gdzie szybkie wprowadzanie danych (numery partii, kody lokalizacji, ilości) wymaga klawiszy zamiast klawiatury ekranowej, a skanowanie kodów z górnych regałów (do 21 metrów) wymaga skanera dalekiego zasięgu.
 
 Następca bestsellerowej serii MC3200, MC3300x bazuje na ośmiordzeniowym procesorze Qualcomm Snapdragon 660 (2,2 GHz) z 4 GB RAM i 32 GB Flash (MicroSD do 512 GB SDXC). Wyświetlacz 4" WVGA (800×480) z Gorilla Glass obsługuje dotyk palcem i w rękawicach roboczych. System Android 11 z pakietem Mobility DNA i gwarancją aktualizacji zabezpieczeń LifeGuard™.
@@ -13221,7 +13221,7 @@ Pakiet Mobility DNA w cenie: DataWedge (skanowanie bez programowania), StageNow 
     name: 'Zebra MC3400',
     seoTitle: 'Terminal mobilny Zebra MC3400 — następca MC3300x, Wi-Fi 6E',
     seoDescription: 'Zebra MC3400 (MC3401) — terminal mobilny z klawiaturą, następca MC3300x. MC3400 Zebra: Wi-Fi 6E, skaner 30 m, IP67, hot-swap. MC3401-0G1K42SS-A6 od 4 561 zł netto.',
-    shortDescription: 'Terminal mobilny z klawiaturą, Wi-Fi 6E, skaner do 30 m, IP65/IP67 — następca MC3300x',
+    shortDescription: 'Zebra MC3400 — terminal mobilny z klawiaturą, Wi-Fi 6E, skaner do 30 m, IP65/IP67, następca MC3300x',
     description: `Dla kogo? Zebra MC3400 to wytrzymały terminal mobilny nowej generacji z fizyczną klawiaturą, zaprojektowany dla operatorów magazynów, centrów dystrybucji, linii produkcyjnych i punktów cross-dockingu — wszędzie tam, gdzie szybkie wprowadzanie danych z klawiatury i niezawodne skanowanie kodów kreskowych decydują o wydajności operacji.
 
 Następca bestsellerowej serii MC3300x: procesor Qualcomm 4490 (2,4 GHz) dostarcza 2,5-krotnie większą moc obliczeniową niż Snapdragon 660 w MC3300x, przy jednoczesnym wzroście pamięci RAM do 6 GB i Flash do 128 GB. Wi-Fi 6E (triband 2,4/5/6 GHz) zapewnia do 3× szybszy transfer niż Wi-Fi 5 w poprzedniku — krytyczne w magazynach z 200+ urządzeniami w sieci.
@@ -13398,7 +13398,7 @@ Pełna kompatybilność wsteczna z akcesoriami MC3300x: baterie, stacje dokując
     name: 'Zebra MC3450',
     seoTitle: 'Terminal mobilny Zebra MC3450 — 5G z klawiaturą i GPS',
     seoDescription: 'Zebra MC3450 (MC345B) — terminal mobilny 5G z klawiaturą i GPS. MC3450 Zebra: Wi-Fi 6E, skaner 30 m, IP67, dual SIM. MC345B-3S1J52SS-A6 od 5 572 zł netto.',
-    shortDescription: 'Terminal mobilny 5G z klawiaturą, Wi-Fi 6E, GPS, skaner do 30 m, IP65/IP67',
+    shortDescription: 'Zebra MC3450 — terminal mobilny 5G z klawiaturą, Wi-Fi 6E, GPS, skaner do 30 m, IP65/IP67',
     description: `Dla kogo? Zebra MC3450 to wytrzymały terminal mobilny 5G nowej generacji z fizyczną klawiaturą, zaprojektowany dla operacji logistycznych wymagających łączności komórkowej poza zasięgiem Wi-Fi — yard management na placach kontenerowych, weryfikacja ładunków w portach, inwentaryzacja pojazdów na dużych placach, logistyka terenowa i zarządzanie dostawami last-mile.
 
 Identyczne parametry jak MC3400 (procesor Qualcomm 4490, 2,4 GHz — 2,5× szybszy niż MC3300x) plus moduł 5G/LTE: obsługa sieci publicznych i prywatnych 5G (CBRS/FR1), dual SIM (nano SIM + eSIM), nawigacja satelitarna GPS/GLONASS/Galileo/BeiDou. MC3450 to jedyny terminal Zebra z fizyczną klawiaturą i łącznością 5G — gdy operator musi pracować na zewnątrz budynku, gdzie Wi-Fi nie sięga.
@@ -13588,7 +13588,7 @@ Pełna kompatybilność wsteczna z akcesoriami MC3300x i MC3400: baterie, stacje
     name: 'Zebra MC9400',
     seoTitle: 'Terminal mobilny Zebra MC9400 — następca MC9300, ultra-rugged',
     seoDescription: 'Zebra MC9400 (MC9401) — flagowy terminal ultra-rugged, następca MC9300. MC9400 Zebra: 7 klawiatur, IP68, upadki 3,65 m, mroźnia -30°C. MC9401-0G1J6HSS-A6 od 7 638 zł netto.',
-    shortDescription: 'Flagowy terminal ultra-rugged z 7 klawiaturami, skanerem do 30 m, IP65+IP68, upadki 3,65 m — następca MC9300',
+    shortDescription: 'Zebra MC9400 — flagowy terminal ultra-rugged z 7 klawiaturami, skanerem do 30 m, IP65+IP68, upadki 3,65 m, następca MC9300',
     description: `Dla kogo? Zebra MC9400 to flagowy terminal mobilny klasy ultra-rugged z siedmioma wymiennymi klawiaturami, zaprojektowany dla najbardziej wymagających środowisk przemysłowych — magazynów wysokiego składowania, chłodni (-30°C), portów, zakładów produkcyjnych, centrów logistycznych i dużych fabryk — wszędzie tam, gdzie wymagana jest bezwzględna niezawodność, skanowanie kodów na dystansie do 30 metrów i wielozmianowa praca w ekstremalnych warunkach temperaturowych.
 
 Następca serii MC9300: procesor Qualcomm QCS4490 octa-core 2,4 GHz dostarcza 2× większą moc obliczeniową niż poprzednik, z 6 GB RAM i 128 GB Flash UFS (microSD do 2 TB). Wyświetlacz 4,3" WVGA (800×480) z Gorilla Glass o jasności 600 nit — czytelny w pełnym słońcu i w chłodniach z parującymi okularami. Dotyk w rękawicach roboczych i mokrych dłoniach. Wi-Fi 6E (triband 2,4/5/6 GHz), Bluetooth 5.3, NFC. Android 14 z gwarancją aktualizacji do Android 17.
@@ -13766,7 +13766,7 @@ Opcjonalna kamera tylna 13 MP do dokumentacji fotograficznej, OCR i skanowania d
     name: 'Zebra MC9450',
     seoTitle: 'Terminal mobilny Zebra MC9450 — ultra-rugged 5G z GPS',
     seoDescription: 'Zebra MC9450 (MC945B) — flagowy terminal ultra-rugged 5G z GPS, następca MC9300. MC9450 Zebra: 7 klawiatur, IP68, upadki 3,65 m. MC945B-3G1J6BSS-A6 od 8 594 zł netto.',
-    shortDescription: 'Flagowy terminal ultra-rugged 5G z GPS, 7 klawiaturami, skanerem do 30 m, IP65+IP68 — następca MC9300',
+    shortDescription: 'Zebra MC9450 — flagowy terminal ultra-rugged 5G z GPS, 7 klawiaturami, skanerem do 30 m, IP65+IP68, następca MC9300',
     description: `Dla kogo? Zebra MC9450 to flagowy terminal mobilny klasy ultra-rugged z 5G, GPS i wymiennymi klawiaturami, zaprojektowany dla operacji logistycznych wymagających łączności komórkowej poza zasięgiem Wi-Fi — zarządzanie placami kontenerowymi (yard management), porty morskie, inwentaryzacja pojazdów na dużych placach, logistyka terenowa, dystrybucja i operacje cross-dockingowe na zewnątrz budynków.
 
 Identyczne parametry jak MC9400 (procesor Qualcomm QCS4490 octa-core 2,4 GHz, 6 GB RAM, 128 GB Flash UFS, Wi-Fi 6E, ekran 4,3" WVGA 600 nit) plus moduł 5G NR Sub-6: obsługa sieci publicznych i prywatnych 5G (CBRS/FR1), dual SIM (nano SIM + eSIM), nawigacja satelitarna GPS/GLONASS/Galileo/BeiDou/NavIC. MC9450 to jedyny ultra-rugged terminal Zebra z klawiaturą, 5G i GPS — gdy operator musi pracować na zewnątrz, gdzie Wi-Fi nie sięga, a lokalizacja GPS jest kluczowa.
@@ -13945,7 +13945,7 @@ Pełna kompatybilność wsteczna z akcesoriami MC9300: baterie, stacje dokujące
     name: 'Zebra EM45',
     seoTitle: 'Zebra EM45 Enterprise Mobile — smartfon biznesowy 5G',
     seoDescription: 'Zebra EM45 (EM45B1) — enterprise mobile w formie smartfona, 5G, Wi-Fi 6E, 6,7" 120 Hz, AI (NPU). EM45 Zebra: COPE, IP68. EM45B1-3T106B0-A6 od 2 951 zł netto.',
-    shortDescription: 'Enterprise mobile w formie smartfona — 6,7" FHD+ 120 Hz, 5G, Wi-Fi 6E, aparat 50 MP, NFC, AI (NPU), COPE',
+    shortDescription: 'Zebra EM45 — enterprise mobile w formie smartfona, 6,7" FHD+ 120 Hz, 5G, Wi-Fi 6E, aparat 50 MP, NFC, AI (NPU), COPE',
     description: `Dla kogo? Zebra EM45 Enterprise Mobile to korporacyjny komputer mobilny nowej generacji w formie smukłego smartfona (10,7 mm grubości, 243 g), zaprojektowany dla menedżerów sklepów, sprzedawców, kurierów, serwisantów terenowych i koordynatorów logistyki — pracowników, którzy potrzebują jednego urządzenia łączącego niezawodność Zebra z estetyką i intuicyjnością konsumenckiego smartfona.
 
 EM45 wyposażono w procesor Qualcomm 5430 octa-core (2,2 GHz) z dedykowanym NPU (Neural Processing Unit) do zadań AI na urządzeniu — tłumaczenia, transkrypcja, analiza wizualna półek i etykiet. Wyświetlacz 6,7" Full HD+ (2400 × 1080) z odświeżaniem 120 Hz, oleofobową powłoką i obsługą rękawic zapewnia komfort pracy w każdych warunkach. Aparat tylny 50 MP z OIS (optyczna stabilizacja) i nagrywaniem 4K@30 fps umożliwia dokumentację fotograficzną usterek, produktów i dokumentów w jakości profesjonalnej — najlepszy aparat w historii urządzeń Zebra.
@@ -14137,7 +14137,7 @@ Zebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCo
     name: 'Zebra TC22',
     seoTitle: 'Terminal mobilny Zebra TC22 — następca TC21, Wi-Fi 6E',
     seoDescription: 'Zebra TC22 (WLMT0-T22) — terminal mobilny, następca TC21. TC22 Zebra: Wi-Fi 6E, ekran 6", skaner 1D/2D, IP68. WLMT0-T22B6ABC2-A6 od 2 417 zł netto.',
-    shortDescription: 'Komputer mobilny Wi-Fi 6E z ekranem 6" i skanerem 1D/2D — następca TC21',
+    shortDescription: 'Zebra TC22 — komputer mobilny Wi-Fi 6E z ekranem 6" i skanerem 1D/2D, następca TC21',
     description: `Dla kogo? Zebra TC22 to ekonomiczny terminal mobilny klasy enterprise, zaprojektowany dla małych i średnich firm szukających wytrzymałego urządzenia do pracy w sklepie, magazynie, aptece lub przychodni — w cenie zbliżonej do smartfona konsumenckiego, ale z wieloletnią żywotnością i profesjonalnym skanerem kodów kreskowych.
 
 Trzecia generacja bestsellerowej serii TC2x (następca Zebra TC21) oferuje duży 6-calowy wyświetlacz FHD+ (1080×2160) z Corning Gorilla Glass, wydajny procesor Qualcomm 5430 hex-core 2.1 GHz z 6 lub 8 GB RAM, oraz system Android z gwarancją aktualizacji do Androida 16. Dwukrotnie wyższa wydajność obliczeniowa w porównaniu z poprzednią generacją TC21.
@@ -14374,7 +14374,7 @@ Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC27. Szczegółowa d
     name: 'Zebra TC27',
     seoTitle: 'Terminal mobilny Zebra TC27 — następca TC26, 5G z GPS',
     seoDescription: 'Zebra TC27 (WCMTB-T27) — terminal mobilny 5G, następca TC26. TC27 Zebra: 5G/LTE, GPS, ekran 6", IP68. WCMTB-T27B6ABC2-A6 od 2 690 zł netto.',
-    shortDescription: 'Komputer mobilny 5G/Wi-Fi 6E z GPS — następca TC26, do pracy w terenie',
+    shortDescription: 'Zebra TC27 — komputer mobilny 5G/Wi-Fi 6E z GPS, następca TC26, do pracy w terenie',
     description: `Dla kogo? Zebra TC27 to terminal mobilny klasy enterprise z łącznością 5G/4G LTE i GPS, zaprojektowany dla pracowników terenowych — kurierów, serwisantów, przedstawicieli handlowych, inspektorów — którzy potrzebują wytrzymałego urządzenia ze skanerem kodów kreskowych i stałym dostępem do systemów firmowych poza zasięgiem Wi-Fi.
 
 Bliźniacze urządzenie do Zebra TC22 (identyczny procesor, ekran, skanery, wytrzymałość), rozszerzone o moduł 5G FR1 z Gigabit LTE-A, dual SIM (nano + eSIM) oraz lokalizację GPS/GLONASS/Galileo/BeiDou z dwuzakresowym GNSS. TC27 łączy stylistykę i cenę smartfona z funkcjami biznesowymi klasy enterprise.
@@ -14614,7 +14614,7 @@ Pakiet Mobility DNA Professional w cenie: DataWedge, StageNow, Device Tracker, L
     name: 'Zebra TC53',
     seoTitle: 'Terminal mobilny Zebra TC53 — następca TC52, WiFi 6E',
     seoDescription: 'Zebra TC53 (TC5301) — terminal mobilny, następca TC52. TC53 Zebra: WiFi 6E, Qualcomm 6490, ekran 6" FHD, IP68, skaner 12 m. TC5301-0T1E4B1000-A6 od 6 418 zł netto.',
-    shortDescription: 'Wydajny terminal mobilny z WiFi 6E, ekranem 6" FHD i procesorem Qualcomm 6490 — następca TC52',
+    shortDescription: 'Zebra TC53 — wydajny terminal mobilny z WiFi 6E, ekranem 6" FHD i procesorem Qualcomm 6490, następca TC52',
     description: `Dla kogo? Zebra TC53 to flagowy terminal mobilny klasy enterprise, zaprojektowany dla dużych magazynów, centrów dystrybucyjnych, fabryk i sieci handlowych, które potrzebują maksymalnej wydajności skanowania, łączności WiFi 6E i wieloletniej niezawodności w warunkach intensywnej eksploatacji — z budżetem na urządzenie klasy premium.
 
 Następca bestsellerowej serii TC52/TC52x: procesor Qualcomm 6490 octa-core 2,7 GHz (o 60% szybszy od TC52x), 6-calowy wyświetlacz Full HD (1080×2160) o jasności 600 nitów z obsługą rękawiczek i odrzucaniem kropel wody, od 4 do 8 GB RAM i do 128 GB pamięci Flash (UFS). System Android z gwarancją aktualizacji do Androida 16.
@@ -14739,7 +14739,7 @@ Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC58. Szczegółowa d
     name: 'Zebra TC58',
     seoTitle: 'Terminal mobilny Zebra TC58 — następca TC57, 5G/LTE',
     seoDescription: 'Zebra TC58 (TC58B1) — terminal mobilny 5G, następca TC57. TC58 Zebra: 5G/LTE, GPS, WiFi 6E, Qualcomm 6490, IP68. TC58B1-3T1E4B1080-A6 od 6 751 zł netto.',
-    shortDescription: 'Terminal mobilny 5G z WiFi 6E, ekranem 6" FHD i procesorem Qualcomm 6490 — wersja TC53 z łącznością komórkową',
+    shortDescription: 'Zebra TC58 — terminal mobilny 5G z WiFi 6E, ekranem 6" FHD i procesorem Qualcomm 6490, wersja TC53 z łącznością komórkową',
     description: `Dla kogo? Zebra TC58 to flagowy terminal mobilny z łącznością 5G/4G LTE, zaprojektowany dla firm kurierskich, serwisantów terenowych, pracowników magazynów rozproszonych i operatorów logistycznych, którzy potrzebują niezawodnej łączności komórkowej poza zasięgiem WiFi — z budżetem na urządzenie klasy enterprise.
 
 Wersja bliźniacza Zebra TC53 z pełną łącznością komórkową: 5G FR1 (n1/n3/n5/n7/n8/n20/n28/n38/n40/n41/n66/n71/n77/n78) + 4G LTE + 3G + 2G. Obsługa nano SIM + eSIM — możliwość pracy na dwóch operatorach jednocześnie. Dual-Band GNSS (GPS L1+L5) z a-GPS zapewnia precyzyjną lokalizację do 1 metra na zewnątrz budynków.
@@ -14936,7 +14936,7 @@ Pakiet Mobility DNA Professional: DataWedge, StageNow, Device Tracker, LifeGuard
     name: 'Zebra TC53e',
     seoTitle: 'Terminal mobilny Zebra TC53e — RFID UHF, WiFi 6E, essential',
     seoDescription: 'Zebra TC53e (TC530E) — terminal mobilny z RFID UHF i WiFi 6E, nowa generacja TC53. TC53e Zebra: Qualcomm 4490, IP68, EPEAT Gold. TC530E-0T1E1B1000-A6 od 4 926 zł netto.',
-    shortDescription: 'Terminal mobilny WiFi 6E z procesorem Qualcomm 4490, ekranem 6" FHD+ i opcjonalnym RFID UHF — następca TC53 w wersji ekonomicznej',
+    shortDescription: 'Zebra TC53e — terminal mobilny WiFi 6E z procesorem Qualcomm 4490, ekranem 6" FHD+ i opcjonalnym RFID UHF, następca TC53 w wersji ekonomicznej',
     description: `Dla kogo? Zebra TC53e to terminal mobilny klasy enterprise z WiFi 6E i opcjonalnym wbudowanym RFID UHF, zaprojektowany dla magazynów, centrów dystrybucyjnych, sieci handlowych i szpitali, które szukają niezawodnego urządzenia z długim cyklem życia — w przystępniejszej cenie niż flagowy TC53.
 
 Następca linii TC53 w wersji "essential": procesor Qualcomm 4490 octa-core 2,4 GHz (nowszy i bardziej energooszczędny od 6490), 6-calowy wyświetlacz Full HD+ (1080×2160) o jasności 600 nitów z obsługą rękawiczek i odrzucaniem kropel wody, od 6 do 8 GB RAM i do 128 GB pamięci Flash (UFS). System Android 13 z gwarancją aktualizacji do Androida 17 — o jedną wersję dłużej niż TC53.
@@ -15138,7 +15138,7 @@ Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC58e. Akcesoria Shar
     name: 'Zebra TC58e',
     seoTitle: 'Terminal mobilny Zebra TC58e — 5G essential, WiFi 6E',
     seoDescription: 'Zebra TC58e (TC58BE) — terminal mobilny 5G essential z WiFi 6E. TC58e Zebra: 5G/LTE, GPS, Qualcomm 4490, IP68, barometr. TC58BE-3T1E1B1A80-A6 od 5 337 zł netto.',
-    shortDescription: 'Terminal mobilny 5G z WiFi 6E, ekranem 6" FHD+ i procesorem Qualcomm 4490 — wersja TC53e z łącznością komórkową 5G/LTE',
+    shortDescription: 'Zebra TC58e — terminal mobilny 5G z WiFi 6E, ekranem 6" FHD+ i procesorem Qualcomm 4490, wersja TC53e z łącznością komórkową 5G/LTE',
     description: `Dla kogo? Zebra TC58e to terminal mobilny z łącznością 5G/4G LTE i WiFi 6E, zaprojektowany dla firm kurierskich, serwisantów terenowych, pracowników magazynów rozproszonych i operatorów logistycznych, którzy potrzebują niezawodnej łączności komórkowej poza zasięgiem WiFi — w przystępniejszej cenie niż flagowy TC58.
 
 Wersja bliźniacza Zebra TC53e z pełną łącznością komórkową: 5G FR1 Gen 2 (n1/n2/n3/n5/n7/n8/n12/n20/n26/n28/n38/n40/n41/n66/n71/n77/n78) + 4G LTE + 3G + 2G. Obsługa nano SIM + eSIM — możliwość pracy na dwóch operatorach jednocześnie. Dual-Band GNSS (GPS L1+L5, GLONASS, Galileo, BeiDou) z a-GPS zapewnia precyzyjną lokalizację do 1 metra na zewnątrz budynków.
@@ -15352,7 +15352,7 @@ Bluetooth 5.3, NFC, WiFi 6E 2×2 MU-MIMO, kamera 16 MP (tył) i 8 MP (przód), U
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc501.html',
     seoTitle: 'Terminal mobilny Zebra TC501 — AI, RFID, Wi-Fi 7, AMOLED',
     seoDescription: 'Zebra TC501 (TC5010) — terminal mobilny z AI, RFID UHF i Wi-Fi 7. TC501 Zebra: AMOLED 1500 nit, następca TC53, Android 15. TC5010-021A1A0001-A6 od 3 730 zł netto.',
-    shortDescription: 'Terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6" AMOLED 1500 nit — następca TC52/TC53',
+    shortDescription: 'Zebra TC501 — terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6" AMOLED 1500 nit, następca TC52/TC53',
     description: `Dla kogo? Zebra TC501 to flagowy terminal mobilny nowej generacji, zaprojektowany jako następca TC52/TC53 dla firm, które potrzebują najnowszej technologii AI, RFID i Wi-Fi 7 w jednym urządzeniu — od dużych magazynów i centrów logistycznych, przez sieci handlowe, po szpitale i zakłady produkcyjne.\n\nWydajność i AI na pierwszej linii. Procesor Qualcomm Dragonwing Q-6690 (8 rdzeni, do 2,9 GHz) z dedykowanym silnikiem AI (NPU) zapewnia 300% więcej mocy obliczeniowej niż TC53. Przetwarzanie AI odbywa się lokalnie — rozpoznawanie produktów, weryfikacja etykiet, OCR bez chmury, zgodnie z RODO. Pamięć 8 GB/128 GB lub 12 GB/256 GB (UFS 3.1) z opcją rozszerzenia microSD do 2 TB.\n\nEkran AMOLED — pierwszy w klasie enterprise. Wyświetlacz 6" Full HD+ (2160×1080) z matrycą AMOLED i jasnością 1500 nitów — 2,5× jaśniejszy niż IPS w TC53 (600 nit). Doskonale czytelny w pełnym słońcu, z głęboką czernią zmniejszającą zmęczenie oczu na długich zmianach. Szkło Corning Gorilla Glass Victus, panel dotykowy reagujący w rękawicach i z mokrymi palcami.\n\nZintegrowany RFID UHF — bez dodatkowych modułów. TC501 to pierwszy terminal z serii TC5x z wbudowanym czytnikiem RFID UHF w KAŻDEJ konfiguracji. Odczyt ponad 200 tagów na sekundę z zasięgu do 2 metrów. Do długiego zasięgu (9+ m) można podłączyć sled RFD40/RFD90. W TC53 RFID wymagał osobnego modułu — teraz jest w standardzie.\n\nTrzy silniki skanowania do każdego zadania. SR500 (Standard Range) — skanowanie z bliska, kasa, lada, kompletacja. SR560 — ulepszony finder 2D, szybsze dekodowanie uszkodzonych kodów. AC670 (Advanced Color) — zasięg do 30 m, kolorowy imager, skanuje kody na najwyższych regałach bez drabiny. Kamera tylna 50 MP z opcją ultrawide 13 MP do dokumentacji fotograficznej.\n\nŁączność przyszłości. Wi-Fi 7 (802.11be) z 2×2 MU-MIMO i MLO — przepustowość 2× wyższa niż Wi-Fi 6E, stabilność w gęstych środowiskach z setkami urządzeń. Bluetooth 6.0 z większym zasięgiem. NFC do identyfikacji pracowników i tagów. Wersje WAN (TC501G) dodają 5G Release 17, dual eSIM, CBRS i GPS z potrójną bandą GNSS.\n\nWytrzymałość klasy enterprise. Obudowa IP68+IP65 — pyłoszczelna, wodoodporna (zanurzenie + strumień pod ciśnieniem). Upadki z 2,4 m na beton (2,7 m z rugged boot) wg MIL-STD-810H. 2–4× więcej tumbles niż TC53. Temperatura pracy od -20°C do +50°C. Bateria 5000 mAh (standard) lub 7240 mAh (rozszerzona), wymienna hot-swap — szybkie ładowanie 0→70% w 45 minut.\n\nAndroid 15 z najdłuższym wsparciem. Gwarancja aktualizacji do 4 kolejnych wersji systemu. LifeGuard for Android — comiesięczne łatki bezpieczeństwa OTA. Mobility DNA w cenie: StageNow, Device Tracker, Enterprise Home Screen. Kompatybilny z MDM: SOTI, Intune, VMware, Zebra Cloud.\n\nSzczegółowa specyfikacja, karta katalogowa i instrukcja obsługi w języku polskim dostępne na stronie serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
@@ -15681,7 +15681,7 @@ Bluetooth 5.3, NFC, WiFi 6E 2×2 MU-MIMO, kamera 16 MP (tył) i 8 MP (przód), U
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc701.html',
     seoTitle: 'Terminal mobilny Zebra TC701 — ultra-rugged, AI, Wi-Fi 7',
     seoDescription: 'Zebra TC701 (TC7010) — terminal ultra-rugged z AI i Wi-Fi 7, następca TC73. TC701 Zebra: RFID UHF, AMOLED 1500 nit, upadki 3 m. TC7010-021B1A0001-A6 od 4 017 zł netto.',
-    shortDescription: 'Ultra-wytrzymały terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6" AMOLED 1500 nit — następca TC72/TC77',
+    shortDescription: 'Zebra TC701 — ultra-wytrzymały terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6" AMOLED 1500 nit, następca TC72/TC77',
     description: `Dla kogo? Zebra TC701 to ultra-wytrzymały (ultra-rugged) terminal mobilny nowej generacji, zaprojektowany jako następca TC72/TC77 dla firm pracujących w najtrudniejszych warunkach — chłodnie, doki załadunkowe, magazyny mrożone, porty, kopalnie, budowy i praca outdoorowa w ekstremalnych temperaturach od -20°C do +50°C.
 
 Najwyższa wytrzymałość w klasie. Obudowa IP68+IP65 certyfikowana MIL-STD-810H z przetrwalnością upadków z 3,66 m (12 ft) na beton — 50% więcej niż TC501 (2,4 m). Test tumble 3 500 cykli z 1 m (3,5× więcej niż TC53). Test szoku termicznego — cykl mrożenie/nagrzewanie bez restartu. Gorilla Glass Victus na wyświetlaczu i okienku skanera. Waga zaledwie 284 g z baterią standardową — lżejszy od poprzednika TC73 (349 g).
@@ -15993,7 +15993,7 @@ Wersja enterprise (lżejsza, upadki 2,4 m, tańsza): Zebra TC501. Szczegółowa 
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc73-tc78.html',
     seoTitle: 'Terminal mobilny Zebra TC73 — ultra-rugged, upadki 3 m, WiFi 6E',
     seoDescription: 'Zebra TC73 (TC7301) — terminal ultra-rugged WiFi 6E, upadki z 3 m na beton. TC73 Zebra: Qualcomm 6490, IP68, -20°C do +50°C. TC7301-0T1J4B1000-A6 od 7 044 zł netto.',
-    shortDescription: 'Ultra-wytrzymały terminal mobilny WiFi 6E z procesorem Qualcomm 6490, ekranem 6" FHD+ i odpornością na upadki z 3 m — wersja ultra-rugged TC53',
+    shortDescription: 'Zebra TC73 — ultra-wytrzymały terminal mobilny WiFi 6E z procesorem Qualcomm 6490, ekranem 6" FHD+ i odpornością na upadki z 3 m, wersja ultra-rugged TC53',
     description: `Dla kogo? Zebra TC73 to ultra-wytrzymały terminal mobilny klasy ultra-rugged, zaprojektowany dla ciężkiej produkcji, doków załadunkowych, chłodni, magazynów mrożonych, warsztatów i prac outdoorowych, gdzie urządzenia narażone są na upadki, wibracje, skrajne temperatury i kontakt z wodą — z budżetem na urządzenie klasy premium o najwyższej wytrzymałości.
 
 TC73 jest bliźniaczym modelem TC53 (ten sam procesor, RAM, skanery, WiFi) — ale w obudowie ultra-rugged: odporność na upadki z 3,05 m na beton (vs 1,8 m w TC53), tumble test 2000×1,0 m (vs 1000×0,5 m), uchwyt o 20% cieńszy niż poprzedni TC72 przy zachowaniu ekstremalnej wytrzymałości. Procesor Qualcomm 6490 octa-core 2,7 GHz, 6-calowy wyświetlacz Full HD+ (1080×2160) z Gorilla Glass i obsługą rękawiczek.
@@ -16153,7 +16153,7 @@ Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC78. Wersja enterpri
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc73-tc78.html',
     seoTitle: 'Terminal mobilny Zebra TC78 — ultra-rugged 5G, upadki 3 m',
     seoDescription: 'Zebra TC78 (TC78B1) — terminal ultra-rugged 5G z WiFi 6E, upadki z 3 m. TC78 Zebra: 5G/LTE, GPS, IP68, Qi charging. TC78B1-3T1J4B1A80-A6 od 7 742 zł netto.',
-    shortDescription: 'Ultra-wytrzymały terminal mobilny 5G/LTE z WiFi 6E, ekranem 6" FHD+ i odpornością na upadki z 3 m — wersja ultra-rugged TC58',
+    shortDescription: 'Zebra TC78 — ultra-wytrzymały terminal mobilny 5G/LTE z WiFi 6E, ekranem 6" FHD+ i odpornością na upadki z 3 m, wersja ultra-rugged TC58',
     description: `Dla kogo? Zebra TC78 to ultra-wytrzymały terminal mobilny z łącznością 5G/4G LTE klasy ultra-rugged, zaprojektowany dla serwisantów terenowych, kierowców, pracowników doków załadunkowych, inspektorów i operatorów logistycznych pracujących w ekstremalnych warunkach — na deszczu, w mrozie, na budowie — gdzie urządzenie musi wytrzymać upadki z dużej wysokości, wibracje i kontakt z wodą, a jednocześnie zapewniać łączność komórkową poza zasięgiem WiFi.
 
 TC78 jest bliźniaczym modelem TC73 z dodatkową łącznością 5G Sub-6 + 4G LTE, dual SIM (nano + eSIM), GPS/GNSS i opcją ładowania bezprzewodowego (Qi). Ten sam procesor Qualcomm 6490 octa-core 2,7 GHz, 6-calowy wyświetlacz FHD+ z Gorilla Glass i ta sama obudowa ultra-rugged z odpornością na upadki z 3,05 m na beton.
@@ -16337,7 +16337,7 @@ Wersja bliźniacza WiFi-only: Zebra TC73. Wersja enterprise (lżejsza, tańsza, 
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc2200-mc2700.html',
     seoTitle: 'Terminal mobilny Zebra MC2200 — tani kolektor danych, Wi-Fi',
     seoDescription: 'Zebra MC2200 (MC220J) — tani terminal mobilny z klawiaturą i skanerem 2D. MC2200 Zebra: Wi-Fi, IP65, klawiatura 34-key. MC220J-2A3S2RW od 2 261 zł netto.',
-    shortDescription: 'Kompaktowy terminal mobilny z klawiaturą fizyczną 34-key i skanerem SE4100 — Wi-Fi, IP65',
+    shortDescription: 'Zebra MC2200 — kompaktowy terminal mobilny z klawiaturą fizyczną 34-key i skanerem SE4100, Wi-Fi, IP65',
     description: `Dla kogo? Zebra MC2200 to wytrzymały terminal mobilny w formacie „brick" z klawiaturą fizyczną, zaprojektowany dla małych i średnich firm potrzebujących niezawodnego narzędzia do zbierania danych w magazynie, sklepie, aptece lub na linii produkcyjnej — w przystępnej cenie, ale z niezawodnością klasy enterprise i wieloletnią żywotnością.
 
 Terminal oferuje procesor Qualcomm Snapdragon 660 (8 rdzeni, 1.8 GHz), 4-calowy wyświetlacz WVGA (800×480) z Corning Gorilla Glass oraz klawiaturę 34-key z podświetleniem, umożliwiającą szybkie wprowadzanie danych liczbowych bez konieczności dotykania ekranu. Dwie konfiguracje pamięci: 2 GB/16 GB (bazowa) lub 3 GB/32 GB (rozszerzona z kamerą 13 MP i NFC).
@@ -16512,7 +16512,7 @@ Wersja z łącznością LTE/GPS do pracy w terenie: Zebra MC2700. Szczegółowa 
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc2200-mc2700.html',
     seoTitle: 'Terminal mobilny Zebra MC2700 — LTE z klawiaturą i GPS',
     seoDescription: 'Zebra MC2700 (MC27BJ) — terminal mobilny LTE z klawiaturą i GPS. MC2700 Zebra: LTE Cat 6, skaner 2D, IP65. MC27BJ-2A3S2RW od 2 680 zł netto.',
-    shortDescription: 'Wytrzymały terminal mobilny z klawiaturą fizyczną, LTE Cat 6, GPS i skanerem SE4100',
+    shortDescription: 'Zebra MC2700 — wytrzymały terminal mobilny z klawiaturą fizyczną, LTE Cat 6, GPS i skanerem SE4100',
     description: `Dla kogo? Zebra MC2700 to wytrzymały terminal mobilny w formacie „brick" z klawiaturą fizyczną i łącznością komórkową LTE, zaprojektowany dla firm potrzebujących zbierania danych w terenie — kurierzy, serwisanci, logistyka portowa, kontrola dostaw i praca w polach bez dostępu do Wi-Fi.
 
 Identyczna konstrukcja jak MC2200 (wspólna platforma MC2x), ale z dodatkowym modułem WWAN LTE Cat 6, nawigacją GPS/GLONASS/Galileo/BeiDou i slotem Nano SIM (lub eSIM w wariancie MC27BK-4B3S3RW). Procesor Qualcomm Snapdragon 660 (8 rdzeni, 1.8 GHz), 4-calowy wyświetlacz WVGA z Gorilla Glass i klawiatura 34-key z podświetleniem.
@@ -16702,7 +16702,7 @@ const mc33Accessories: Product[] = [
     id: 'zebra-mc33-battery-7000',
     slug: 'zebra-mc33-battery-7000',
     name: 'Akumulator 7000 mAh do Zebra MC3300x / MC3400',
-    shortDescription: 'Bateria rozszerzona PowerPrecision+ 7000 mAh — do 14 godzin pracy',
+    shortDescription: 'Akumulator 7000 mAh do Zebra MC3300x / MC3400 — bateria rozszerzona PowerPrecision+ 7000 mAh, do 14 godzin pracy',
     description: 'Oryginalna bateria rozszerzona Zebra PowerPrecision+ o pojemności 7 000 mAh do terminali MC3300x i MC3400. Zapewnia do 14 godzin ciągłej pracy na jednym ładowaniu. Wbudowany chip diagnostyczny monitoruje stan zdrowia baterii i prognozuje konieczność wymiany. Wymiana w trybie warm swap — bez wyłączania urządzenia.',
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
@@ -16729,7 +16729,7 @@ const mc33Accessories: Product[] = [
     id: 'zebra-mc33-rubber-boot-gun',
     slug: 'zebra-mc33-rubber-boot-gun',
     name: 'Gumowe etui ochronne do Zebra MC3300x / MC3400 (Gun)',
-    shortDescription: 'Bumper ochronny dla konfiguracji z uchwytem pistoletowym',
+    shortDescription: 'Gumowe etui ochronne do Zebra MC3300x / MC3400 (Gun) — bumper ochronny dla konfiguracji z uchwytem pistoletowym',
     description: 'Gumowe etui ochronne (bumper) do terminali Zebra MC3300x i MC3400 w konfiguracji z uchwytem pistoletowym (Gun). Absorbuje wstrząsy i chroni urządzenie przed uszkodzeniami mechanicznymi. Nie ogranicza dostępu do klawiatury, ekranu ani portów.',
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -16755,7 +16755,7 @@ const mc33Accessories: Product[] = [
     id: 'zebra-mc33-rubber-boot-straight',
     slug: 'zebra-mc33-rubber-boot-straight',
     name: 'Gumowe etui ochronne do Zebra MC3300x / MC3400 (Straight)',
-    shortDescription: 'Bumper ochronny dla konfiguracji prostej',
+    shortDescription: 'Gumowe etui ochronne do Zebra MC3300x / MC3400 (Straight) — bumper ochronny dla konfiguracji prostej',
     description: 'Gumowe etui ochronne (bumper) do terminali Zebra MC3300x i MC3400 w konfiguracji prostej (Straight Shooter). Absorbuje wstrząsy i chroni urządzenie przed uszkodzeniami mechanicznymi. Nie ogranicza dostępu do klawiatury, ekranu ani portów.',
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -16781,7 +16781,7 @@ const mc33Accessories: Product[] = [
     id: 'zebra-mc33-holster',
     slug: 'zebra-mc33-holster',
     name: 'Kabura do paska do Zebra MC3300x / MC3400',
-    shortDescription: 'Kabura z mocowaniem na pasek do noszenia terminala',
+    shortDescription: 'Kabura do paska do Zebra MC3300x / MC3400 — kabura z mocowaniem na pasek do noszenia terminala',
     description: 'Kabura (holster) do terminali Zebra MC3300x i MC3400 z mocowaniem na pasek. Umożliwia wygodne noszenie terminala przy pasku podczas pracy. Szybki dostęp do urządzenia jedną ręką.',
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -16807,7 +16807,7 @@ const mc33Accessories: Product[] = [
     id: 'zebra-mc33-usb-cable',
     slug: 'zebra-mc33-usb-cable',
     name: 'Kabel USB do ładowania Zebra MC3300x / MC3400',
-    shortDescription: 'Kabel USB do ładowania i synchronizacji terminala',
+    shortDescription: 'Kabel USB do ładowania Zebra MC3300x / MC3400 — kabel USB do ładowania i synchronizacji terminala',
     description: 'Oryginalny kabel USB do ładowania i synchronizacji danych terminali Zebra MC3300x i MC3400. Umożliwia ładowanie urządzenia bezpośrednio z portu USB bez stacji dokującej. Przydatny jako rozwiązanie awaryjne lub do pojedynczych stanowisk.',
     categoryId: 'akcesoria',
     subcategoryIds: ['kable-zasilacze-terminali'],
@@ -16833,7 +16833,7 @@ const mc33Accessories: Product[] = [
     id: 'zebra-mc33-cradle-1slot',
     slug: 'zebra-mc33-cradle-1slot',
     name: 'Stacja ładująca 1-slotowa do Zebra MC3300x / MC3400',
-    shortDescription: 'Pojedyncza stacja dokująca USB do ładowania terminala',
+    shortDescription: 'Stacja ładująca 1-slotowa do Zebra MC3300x / MC3400 — pojedyncza stacja dokująca USB do ładowania terminala',
     description: 'Pojedyncza stacja ładująca (cradle) USB do terminali Zebra MC3300x i MC3400. Ładuje terminal i umożliwia transfer danych przez USB. Kompaktowa konstrukcja do pojedynczych stanowisk. Zasilacz kupowany osobno.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -16860,7 +16860,7 @@ const mc33Accessories: Product[] = [
     id: 'zebra-mc33-battery-charger-4slot',
     slug: 'zebra-mc33-battery-charger-4slot',
     name: 'Ładowarka 4 akumulatorów do Zebra MC3300x / MC3400',
-    shortDescription: 'Ładowarka na 4 baterie zapasowe',
+    shortDescription: 'Ładowarka 4 akumulatorów do Zebra MC3300x / MC3400 — ładowarka na 4 baterie zapasowe',
     description: 'Ładowarka na 4 akumulatory do terminali Zebra MC3300x i MC3400. Umożliwia jednoczesne ładowanie 4 baterii zapasowych. Idealna do flot urządzeń pracujących na zmiany — baterie ładują się w nocy, rano są gotowe do pracy.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -16887,7 +16887,7 @@ const mc33Accessories: Product[] = [
     id: 'zebra-mc33-cradle-5slot',
     slug: 'zebra-mc33-cradle-5slot',
     name: 'Stacja ładująca 5-slotowa do Zebra MC3300x / MC3400',
-    shortDescription: 'Stacja dokująca na 5 terminali — ładowanie floty',
+    shortDescription: 'Stacja ładująca 5-slotowa do Zebra MC3300x / MC3400 — stacja dokująca na 5 terminali, ładowanie floty',
     description: 'Stacja ładująca na 5 terminali Zebra MC3300x / MC3400. Ładuje jednocześnie 5 urządzeń. Idealna do centrów dystrybucyjnych i magazynów z flotą terminali. Zasilacz kupowany osobno.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -16914,7 +16914,7 @@ const mc33Accessories: Product[] = [
     id: 'zebra-mc33-cradle-4slot-4battery',
     slug: 'zebra-mc33-cradle-4slot-4battery',
     name: 'Stacja ładująca 4+4 do Zebra MC3300x / MC3400',
-    shortDescription: 'Stacja na 4 terminale + 4 akumulatory zapasowe',
+    shortDescription: 'Stacja ładująca 4+4 do Zebra MC3300x / MC3400 — stacja na 4 terminale + 4 akumulatory zapasowe',
     description: 'Stacja ładująca na 4 terminale i 4 akumulatory zapasowe do Zebra MC3300x / MC3400. Połączenie stacji dokującej i ładowarki baterii w jednym urządzeniu. Oszczędza miejsce na stanowisku ładowania.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -16941,7 +16941,7 @@ const mc33Accessories: Product[] = [
     id: 'zebra-mc33-cradle-5slot-ethernet',
     slug: 'zebra-mc33-cradle-5slot-ethernet',
     name: 'Stacja ładująca 5-slotowa z Ethernetem do Zebra MC3300x / MC3400',
-    shortDescription: 'Stacja na 5 terminali z komunikacją Ethernet',
+    shortDescription: 'Stacja ładująca 5-slotowa z Ethernetem do Zebra MC3300x / MC3400 — stacja na 5 terminali z komunikacją Ethernet',
     description: 'Stacja ładująca na 5 terminali Zebra MC3300x / MC3400 z wbudowanym portem Ethernet. Oprócz ładowania umożliwia komunikację sieciową terminali przez przewód — przydatne do masowego wgrywania aktualizacji oprogramowania i konfiguracji bez Wi-Fi.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -16969,7 +16969,7 @@ const mc33Accessories: Product[] = [
     id: 'zebra-mc33-cradle-4slot-4battery-ethernet',
     slug: 'zebra-mc33-cradle-4slot-4battery-ethernet',
     name: 'Stacja ładująca 4+4 z Ethernetem do Zebra MC3300x / MC3400',
-    shortDescription: 'Stacja na 4 terminale + 4 baterie z komunikacją Ethernet',
+    shortDescription: 'Stacja ładująca 4+4 z Ethernetem do Zebra MC3300x / MC3400 — stacja na 4 terminale + 4 baterie z komunikacją Ethernet',
     description: 'Stacja ładująca na 4 terminale i 4 akumulatory zapasowe z wbudowanym Ethernetem do Zebra MC3300x / MC3400. Kompleksowe rozwiązanie: ładowanie terminali, ładowanie baterii zapasowych i komunikacja sieciowa w jednym urządzeniu.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -16997,7 +16997,7 @@ const mc33Accessories: Product[] = [
     id: 'zebra-mc33-battery-charger-20slot',
     slug: 'zebra-mc33-battery-charger-20slot',
     name: 'Ładowarka 20 akumulatorów do Zebra MC3300x / MC3400',
-    shortDescription: 'Ładowarka na 20 baterii — do dużych flot terminali',
+    shortDescription: 'Ładowarka 20 akumulatorów do Zebra MC3300x / MC3400 — ładowarka na 20 baterii, do dużych flot terminali',
     description: 'Ładowarka na 20 akumulatorów do terminali Zebra MC3300x i MC3400. Przeznaczona do dużych wdrożeń (50+ terminali) pracujących na zmiany. Ładuje jednocześnie 20 baterii zapasowych, zapewniając ciągłość pracy floty.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -17024,7 +17024,7 @@ const mc33Accessories: Product[] = [
     id: 'zebra-mc33-dc-cable-388',
     slug: 'zebra-mc33-dc-cable-388',
     name: 'Kabel DC do zasilacza 50W Zebra (CBL-DC-388A1-01)',
-    shortDescription: 'Kabel zasilający DC do stacji 1-slotowych i ładowarek 4-bateryjnych',
+    shortDescription: 'Kabel DC do zasilacza 50W Zebra (CBL-DC-388A1-01) — kabel zasilający DC do stacji 1-slotowych i ładowarek 4-bateryjnych',
     description: 'Oryginalny kabel DC (grounded, 3-wire) łączący zasilacz 50W (PWR-BGA12V50W0WW) ze stacją ładującą lub ładowarką baterii. Wymagany do zasilania stacji 1-slotowej CRD-MC33-2SUCHG-01 i ładowarki 4-bateryjnej SAC-MC33-4SCHG-01.',
     categoryId: 'akcesoria',
     subcategoryIds: ['kable-zasilacze-terminali'],
@@ -17051,7 +17051,7 @@ const mc33Accessories: Product[] = [
     id: 'zebra-mc33-dc-cable-382',
     slug: 'zebra-mc33-dc-cable-382',
     name: 'Kabel DC do zasilacza 108W Zebra (CBL-DC-382A1-01)',
-    shortDescription: 'Kabel zasilający DC do stacji wieloslotowych i ładowarek 20-bateryjnych',
+    shortDescription: 'Kabel DC do zasilacza 108W Zebra (CBL-DC-382A1-01) — kabel zasilający DC do stacji wieloslotowych i ładowarek 20-bateryjnych',
     description: 'Oryginalny kabel DC (grounded, 3-wire) łączący zasilacz 108W (PWR-BGA12V108W0WW) ze stacją ładującą wieloslotową lub ładowarką 20-bateryjną. Wymagany do zasilania stacji 5-slotowych, 4+4 i ładowarki SAC-MC33-20SCHG-01.',
     categoryId: 'akcesoria',
     subcategoryIds: ['kable-zasilacze-terminali'],
@@ -17085,7 +17085,7 @@ const mc94Accessories: Product[] = [
     id: 'zebra-mc94-battery-7000',
     slug: 'zebra-bateria-7000mah-mc9400-mc9450',
     name: 'Akumulator 7000 mAh do Zebra MC9400 / MC9450',
-    shortDescription: 'Bateria standardowa PowerPrecision 7000 mAh — do 14 godzin pracy',
+    shortDescription: 'Akumulator 7000 mAh do Zebra MC9400 / MC9450 — bateria standardowa PowerPrecision 7000 mAh, do 14 godzin pracy',
     description: 'Oryginalna bateria Zebra PowerPrecision o pojemności 7 000 mAh do terminali MC9400, MC9450 i MC9300. Zakres temperatur pracy od -20°C do +50°C. Wbudowany chip diagnostyczny monitoruje stan zdrowia i prognozuje konieczność wymiany. Wymiana w trybie warm-swap — bez restartu urządzenia.',
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
@@ -17113,7 +17113,7 @@ const mc94Accessories: Product[] = [
     id: 'zebra-mc94-battery-freezer',
     slug: 'zebra-bateria-7000mah-freezer-mc9400-mc9450',
     name: 'Akumulator 7000 mAh Freezer do Zebra MC9400 / MC9450',
-    shortDescription: 'Bateria certyfikowana do pracy w mroźniach do -30°C',
+    shortDescription: 'Akumulator 7000 mAh Freezer do Zebra MC9400 / MC9450 — bateria certyfikowana do pracy w mroźniach do -30°C',
     description: 'Oryginalna bateria Zebra Freezer o pojemności 7 000 mAh certyfikowana do pracy w temperaturach od -30°C do +50°C. Przeznaczona do terminali MC9400 i MC9450 używanych w chłodniach, mroźniach i magazynach cold chain. Wbudowany chip diagnostyczny. Wymiana warm-swap.',
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
@@ -17141,7 +17141,7 @@ const mc94Accessories: Product[] = [
     id: 'zebra-mc94-cradle-1slot-usb',
     slug: 'zebra-stacja-1slot-usb-mc9400-mc9450',
     name: 'Stacja dokująca 1-gniazdowa USB do Zebra MC9400 / MC9450',
-    shortDescription: 'Stacja ładująca i komunikacyjna — 1 terminal, USB',
+    shortDescription: 'Stacja dokująca 1-gniazdowa USB do Zebra MC9400 / MC9450 — stacja ładująca i komunikacyjna, 1 terminal, USB',
     description: 'Jednogniazdowa stacja dokująca Zebra z portem USB do terminali MC9400, MC9450 i MC9300. Ładuje terminal i zapewnia komunikację USB z komputerem lub siecią. Idealna na stanowisko pracy pojedynczego operatora.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -17167,7 +17167,7 @@ const mc94Accessories: Product[] = [
     id: 'zebra-mc94-cradle-4slot',
     slug: 'zebra-stacja-4slot-mc9400-mc9450',
     name: 'Stacja dokująca 4-gniazdowa do Zebra MC9400 / MC9450',
-    shortDescription: 'Stacja ładująca 4 terminale jednocześnie',
+    shortDescription: 'Stacja dokująca 4-gniazdowa do Zebra MC9400 / MC9450 — stacja ładująca 4 terminale jednocześnie',
     description: 'Czterogniazdowa stacja dokująca Zebra do terminali MC9400, MC9450 i MC9300. Ładuje 4 terminale jednocześnie. Oszczędza miejsce na stole i upraszcza zarządzanie flotą. Wymaga zasilacza 108W (osobno).',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -17193,7 +17193,7 @@ const mc94Accessories: Product[] = [
     id: 'zebra-mc94-cradle-4slot-ethernet',
     slug: 'zebra-stacja-4slot-ethernet-mc9400-mc9450',
     name: 'Stacja dokująca 4-gniazdowa Ethernet do Zebra MC9400 / MC9450',
-    shortDescription: 'Stacja ładująca 4 terminale z portem Ethernet',
+    shortDescription: 'Stacja dokująca 4-gniazdowa Ethernet do Zebra MC9400 / MC9450 — stacja ładująca 4 terminale z portem Ethernet',
     description: 'Czterogniazdowa stacja dokująca Zebra z portem Ethernet do terminali MC9400, MC9450 i MC9300. Ładuje 4 terminale jednocześnie z komunikacją sieciową Ethernet — do zarządzania flotą i synchronizacji danych przez sieć LAN.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -17219,7 +17219,7 @@ const mc94Accessories: Product[] = [
     id: 'zebra-mc94-battery-charger-4slot',
     slug: 'zebra-ladowarka-baterii-4slot-mc9400-mc9450',
     name: 'Ładowarka baterii 4-gniazdowa do Zebra MC9400 / MC9450',
-    shortDescription: 'Ładuje 4 baterie jednocześnie — bez terminali',
+    shortDescription: 'Ładowarka baterii 4-gniazdowa do Zebra MC9400 / MC9450 — ładuje 4 baterie jednocześnie, bez terminali',
     description: 'Czterogniazdowa ładowarka baterii Zebra do terminali MC9400, MC9450 i MC9300. Ładuje 4 baterie jednocześnie bez konieczności wkładania terminali. Idealna do rotacyjnego ładowania zapasu baterii na wielozmianowych operacjach magazynowych.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -17245,7 +17245,7 @@ const mc94Accessories: Product[] = [
     id: 'zebra-mc94-battery-charger-16slot',
     slug: 'zebra-ladowarka-baterii-16slot-mc9400-mc9450',
     name: 'Ładowarka baterii 16-gniazdowa do Zebra MC9400 / MC9450',
-    shortDescription: 'Ładuje 16 baterii jednocześnie — do dużych flot',
+    shortDescription: 'Ładowarka baterii 16-gniazdowa do Zebra MC9400 / MC9450 — ładuje 16 baterii jednocześnie, do dużych flot',
     description: 'Szesnastogniazdowa ładowarka baterii Zebra do terminali MC9400, MC9450 i MC9300. Ładuje 16 baterii jednocześnie — przeznaczona do dużych flot z wielozmianowym trybem pracy. Montaż na ścianie lub na stole.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -17271,7 +17271,7 @@ const mc94Accessories: Product[] = [
     id: 'zebra-mc94-rubber-boot',
     slug: 'zebra-obudowa-gumowa-mc9400-mc9450',
     name: 'Gumowe etui ochronne do Zebra MC9400 / MC9450 (Gun)',
-    shortDescription: 'Bumper ochronny dla konfiguracji pistoletowej',
+    shortDescription: 'Gumowe etui ochronne do Zebra MC9400 / MC9450 (Gun) — bumper ochronny dla konfiguracji pistoletowej',
     description: 'Gumowe etui ochronne (bumper) do terminali Zebra MC9400 i MC9450 w konfiguracji pistoletowej (Gun). Absorbuje wstrząsy i chroni urządzenie przed uszkodzeniami mechanicznymi. Nie ogranicza dostępu do klawiatury, ekranu ani portów.',
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -17297,7 +17297,7 @@ const mc94Accessories: Product[] = [
     id: 'zebra-mc94-holster',
     slug: 'zebra-kabura-mc9400-mc9450',
     name: 'Kabura do Zebra MC9400 / MC9450',
-    shortDescription: 'Kabura na pas do noszenia terminala na biodrze',
+    shortDescription: 'Kabura do Zebra MC9400 / MC9450 — kabura na pas do noszenia terminala na biodrze',
     description: 'Oryginalna kabura Zebra do terminali MC9400, MC9450 i MC9300. Mocowanie na pas — terminal zawsze pod ręką. Ochrona ekranu i klawiatury podczas transportu. Szybki dostęp jedną ręką.',
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -17323,7 +17323,7 @@ const mc94Accessories: Product[] = [
     id: 'zebra-mc94-usb-cable',
     slug: 'zebra-kabel-usb-mc9400-mc9450',
     name: 'Kabel USB snap-on do Zebra MC9400 / MC9450',
-    shortDescription: 'Kabel do ładowania i komunikacji USB — podłączenie bezpośrednie',
+    shortDescription: 'Kabel USB snap-on do Zebra MC9400 / MC9450 — kabel do ładowania i komunikacji USB, podłączenie bezpośrednie',
     description: 'Oryginalny kabel USB Zebra typu snap-on do terminali MC9400, MC9450 i MC9300. Zapewnia ładowanie i komunikację USB bez stacji dokującej — podłączenie bezpośrednie do komputera lub zasilacza.',
     categoryId: 'akcesoria',
     subcategoryIds: ['kable-zasilacze-terminali'],
@@ -17356,7 +17356,7 @@ const em45Accessories: Product[] = [
     id: 'zebra-em45-exoskeleton',
     slug: 'zebra-etui-ochronne-em45',
     name: 'Etui ochronne (Exoskeleton) do Zebra EM45',
-    shortDescription: 'Wzmocnione etui Zebra — ochrona przy upadkach z 1,5 m na beton',
+    shortDescription: 'Etui ochronne (Exoskeleton) do Zebra EM45 — wzmocnione etui Zebra, ochrona przy upadkach z 1,5 m na beton',
     description: 'Oryginalne etui ochronne Zebra (Exoskeleton) do komputera mobilnego EM45 Enterprise Mobile. Wzmacnia konstrukcję urządzenia, zapewniając ochronę przy upadkach z 1,5 m na beton zgodnie z MIL-STD-810H. Etui nie ogranicza dostępu do ekranu, portów USB-C, aparatu ani przycisków programowalnych. Wypustki absorbują wstrząsy — chroni rogi i krawędzie urządzenia. Przeznaczone do intensywnej pracy w terenie, sklepie i magazynie.',
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -17382,7 +17382,7 @@ const em45Accessories: Product[] = [
     id: 'zebra-em45-screen-protector',
     slug: 'zebra-szklo-hartowane-em45',
     name: 'Szkło hartowane na ekran do Zebra EM45',
-    shortDescription: 'Oryginalna folia ochronna Zebra — chroni wyświetlacz 6,7" przed zarysowaniami',
+    shortDescription: 'Szkło hartowane na ekran do Zebra EM45 — oryginalna folia ochronna Zebra, chroni wyświetlacz 6,7" przed zarysowaniami',
     description: 'Oryginalne szkło hartowane (tempered glass) Zebra na ekran komputera mobilnego EM45 Enterprise Mobile. Chroni wyświetlacz 6,7" FHD+ przed zarysowaniami, odpryskami i uderzeniami. Zachowuje pełną czułość panelu dotykowego — obsługa rękawic i mokrych palców bez ograniczeń. Powłoka oleofobowa redukuje odciski palców.',
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -17408,7 +17408,7 @@ const em45Accessories: Product[] = [
     id: 'zebra-em45-usb-cable',
     slug: 'zebra-kabel-usb-c-em45',
     name: 'Kabel USB-C do Zebra EM45',
-    shortDescription: 'Kabel SuperSpeed USB-C do ładowania i komunikacji z komputerem',
+    shortDescription: 'Kabel USB-C do Zebra EM45 — kabel SuperSpeed USB-C do ładowania i komunikacji z komputerem',
     description: 'Oryginalny kabel Zebra USB-C SuperSpeed USB 3.1 do komputera mobilnego EM45 Enterprise Mobile. Zapewnia szybkie ładowanie i transfer danych z komputerem lub zasilaczem — bez potrzeby stacji dokującej. Wzmocniony wtyk i kabel odporny na wielokrotne zginanie.',
     categoryId: 'akcesoria',
     subcategoryIds: ['kable-zasilacze-terminali'],
@@ -17440,7 +17440,7 @@ const tc501Accessories: Product[] = [
     id: 'zebra-tc501-battery-standard',
     slug: 'zebra-tc501-bateria-standardowa',
     name: 'Bateria standardowa 5000 mAh do Zebra TC501/TC701',
-    shortDescription: 'Bateria PowerPrecision+ 5000 mAh z ładowaniem bezprzewodowym Qi do TC501 i TC701',
+    shortDescription: 'Bateria standardowa 5000 mAh do Zebra TC501/TC701 — bateria PowerPrecision+ 5000 mAh z ładowaniem bezprzewodowym Qi do TC501 i TC701',
     description: 'Oryginalna bateria Zebra PowerPrecision+ o pojemności 5000 mAh (19,45 Wh) do terminali TC501 i TC701. Wymienna hot-swap — wymiana bez wyłączania urządzenia w ok. 5 sekund. Obsługuje ładowanie bezprzewodowe Qi. Szybkie ładowanie 0→70% w 45 minut. Technologia PowerPrecision+ monitoruje stan baterii w czasie rzeczywistym: cykle ładowania, temperaturę, pojemność resztkową. Waga: 55 g.',
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
@@ -17469,7 +17469,7 @@ const tc501Accessories: Product[] = [
     id: 'zebra-tc501-exoskeleton',
     slug: 'zebra-tc501-egzoszkielet',
     name: 'Egzoszkielet (Rugged Boot) do Zebra TC501',
-    shortDescription: 'Obudowa ochronna zwiększająca odporność TC501 na upadki z 2,4 m do 2,7 m',
+    shortDescription: 'Egzoszkielet (Rugged Boot) do Zebra TC501 — obudowa ochronna zwiększająca odporność TC501 na upadki z 2,4 m do 2,7 m',
     description: 'Egzoszkielet Zebra (Exoskeleton Rugged Boot) do terminala TC501. Zwiększa specyfikację upadków z 2,4 m do 2,7 m (9 ft) na beton wg MIL-STD-810H. Elastyczny materiał absorbujący wstrząsy, precyzyjne wycięcia na kamerę, skaner, USB-C i przyciski boczne. Nie blokuje ładowania bezprzewodowego Qi.',
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -17496,7 +17496,7 @@ const tc501Accessories: Product[] = [
     id: 'zebra-tc501-trigger',
     slug: 'zebra-tc501-uchwyt-pistoletowy',
     name: 'Elektroniczny uchwyt pistoletowy do Zebra TC501',
-    shortDescription: 'Trigger handle z elektronicznym spustem do intensywnego skanowania na TC501',
+    shortDescription: 'Elektroniczny uchwyt pistoletowy do Zebra TC501 — trigger handle z elektronicznym spustem do intensywnego skanowania na TC501',
     description: 'Elektroniczny uchwyt pistoletowy (Electronic Trigger Handle) do terminala Zebra TC501. Ergonomiczny chwyt w kształcie pistoletu z elektronicznym przyciskiem skanowania — idealny do intensywnego skanowania w magazynie, przy kompletacji zamówień i inwentaryzacji. Pewny chwyt zmniejsza zmęczenie ręki podczas wielogodzinnych zmian. Kompatybilny z rugged boot (exoskeleton).',
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -17523,7 +17523,7 @@ const tc501Accessories: Product[] = [
     id: 'zebra-tc501-screen-protector',
     slug: 'zebra-tc501-folia-ochronna',
     name: 'Folia ochronna na ekran Zebra TC501/TC701',
-    shortDescription: 'Folia tempered glass na ekran 6" TC501 i TC701',
+    shortDescription: 'Folia ochronna na ekran Zebra TC501/TC701 — folia tempered glass na ekran 6" TC501 i TC701',
     description: 'Oryginalna folia ochronna Zebra na ekran terminala TC501 i TC701. Chroni wyświetlacz 6" AMOLED przed zarysowaniami i uderzeniami. Zachowuje pełną czułość dotyku, w tym obsługę w rękawicach i z mokrymi palcami. Nie wpływa na jasność i czytelność ekranu.',
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -17549,7 +17549,7 @@ const tc501Accessories: Product[] = [
     id: 'zebra-tc501-hand-strap',
     slug: 'zebra-tc501-pasek-na-reke',
     name: 'Pasek na rękę do Zebra TC501/TC701',
-    shortDescription: 'Hand strap zabezpieczający terminal TC501/TC701 przed upuszczeniem',
+    shortDescription: 'Pasek na rękę do Zebra TC501/TC701 — Hand strap zabezpieczający terminal TC501/TC701 przed upuszczeniem',
     description: 'Oryginalny pasek na rękę Zebra (Hand Strap) do terminali TC501 i TC701. Mocowany z tyłu urządzenia, zabezpiecza przed przypadkowym upuszczeniem podczas pracy. Regulowana długość, komfortowy materiał na wielogodzinne użytkowanie.',
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -17575,7 +17575,7 @@ const tc501Accessories: Product[] = [
     id: 'zebra-tc501-cradle-1slot-ethernet',
     slug: 'zebra-tc501-stacja-dokujaca-1slot-ethernet',
     name: 'Stacja dokująca 1-slot Ethernet do Zebra TC501',
-    shortDescription: 'ShareCradle 1-gniazdowa z Ethernet i bootem do TC501',
+    shortDescription: 'Stacja dokująca 1-slot Ethernet do Zebra TC501 — ShareCradle 1-gniazdowa z Ethernet i bootem do TC501',
     description: 'Stacja dokująca Zebra ShareCradle 1-gniazdowa z Ethernet do terminala TC501 (w wersji z bootem). Ładowanie terminala + podłączenie do sieci LAN przez Ethernet. Ładowanie 0→90% w ok. 1,5h. Kompatybilna z urządzeniem w rugged boot (exoskeleton).',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -17603,7 +17603,7 @@ const tc501Accessories: Product[] = [
     id: 'zebra-tc501-cradle-2slot-1battery',
     slug: 'zebra-tc501-stacja-dokujaca-2slot-1bateria',
     name: 'Stacja dokująca 1-slot + 1 bateria do Zebra TC501',
-    shortDescription: 'ShareCradle do TC501 — 1 terminal + 1 bateria zapasowa',
+    shortDescription: 'Stacja dokująca 1-slot + 1 bateria do Zebra TC501 — ShareCradle do TC501, 1 terminal + 1 bateria zapasowa',
     description: 'Stacja dokująca Zebra ShareCradle do terminala TC501 (w wersji z bootem) — ładowanie jednego terminala i jednej baterii zapasowej jednocześnie. Idealna na stanowisko pracy: terminal ładuje się w stacji, bateria zapasowa jest zawsze gotowa do hot-swap.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -17630,7 +17630,7 @@ const tc501Accessories: Product[] = [
     id: 'zebra-tc501-cradle-2slot-ethernet-1battery',
     slug: 'zebra-tc501-stacja-dokujaca-2slot-ethernet-1bateria',
     name: 'Stacja dokująca 1-slot Ethernet + 1 bateria do Zebra TC501',
-    shortDescription: 'ShareCradle z Ethernet do TC501 — 1 terminal + 1 bateria zapasowa',
+    shortDescription: 'Stacja dokująca 1-slot Ethernet + 1 bateria do Zebra TC501 — ShareCradle z Ethernet do TC501, 1 terminal + 1 bateria zapasowa',
     description: 'Stacja dokująca Zebra ShareCradle z Ethernet do terminala TC501 (w wersji z bootem) — ładowanie terminala z podłączeniem do sieci LAN + ładowanie jednej baterii zapasowej. Najpełniejsze rozwiązanie dla stanowiska pracy: terminal online przez Ethernet, bateria zapasowa zawsze gotowa.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -17665,7 +17665,7 @@ const tc701Accessories: Product[] = [
     id: 'zebra-tc701-trigger',
     slug: 'zebra-tc701-trigger',
     name: 'Zebra TC701 — uchwyt pistoletowy elektroniczny',
-    shortDescription: 'Elektroniczny trigger handle do TC701 z wygodnym chwytem pistoletowym i przyciskiem skanowania',
+    shortDescription: 'Zebra TC701 — elektroniczny trigger handle z wygodnym chwytem pistoletowym i przyciskiem skanowania',
     description: 'Oryginalny elektroniczny uchwyt pistoletowy Zebra do terminala TC701. Ergonomiczna konstrukcja z wygodnym chwytem redukuje zmęczenie dłoni przy intensywnym skanowaniu na zmianie. Przycisk spustowy zapewnia naturalną pozycję skanowania — szybsze i dokładniejsze celowanie w kody na regałach. Kompatybilny wyłącznie z Zebra TC701.',
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -17693,7 +17693,7 @@ const tc701Accessories: Product[] = [
     id: 'zebra-tc701-cradle-2slot-1battery',
     slug: 'zebra-tc701-cradle-2slot-1battery',
     name: 'Zebra TC701 — stacja dokująca 2-slot + ładowarka baterii',
-    shortDescription: 'Stacja ShareCradle 2-slot z ładowarką 1 baterii do terminali TC701',
+    shortDescription: 'Zebra TC701 — stacja ShareCradle 2-slot z ładowarką 1 baterii do terminali TC701',
     description: 'Oryginalna stacja dokująca Zebra ShareCradle do terminali TC701. Dwa sloty na terminale + osobny slot na ładowanie zapasowej baterii. Ładowanie przez kontakty POGO — wystarczy odłożyć terminal. Idealna dla stanowisk, gdzie pracuje 2 operatorów na zmianę z rotacją baterii.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -17729,7 +17729,7 @@ const mc2xAccessories: Product[] = [
     id: 'zebra-mc2x-battery-3500',
     slug: 'zebra-bateria-3500mah-mc2200-mc2700',
     name: 'Akumulator 3500 mAh do Zebra MC2200 / MC2700',
-    shortDescription: 'Oryginalna bateria PowerPrecision 3500 mAh — wymienna Warm Swap',
+    shortDescription: 'Akumulator 3500 mAh do Zebra MC2200 / MC2700 — oryginalna bateria PowerPrecision 3500 mAh, wymienna Warm Swap',
     description: `Oryginalna bateria zapasowa Zebra PowerPrecision Li-Ion 3500 mAh (12.60 Wh) do terminali mobilnych MC2200 i MC2700. Zapewnia ok. 12 godzin typowej pracy (Wi-Fi + skanowanie). Wymienna w technologii Warm Swap — wymiana bez wyłączania urządzenia. Technologia PowerPrecision monitoruje stan zdrowia baterii w czasie rzeczywistym.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
@@ -17756,7 +17756,7 @@ const mc2xAccessories: Product[] = [
     id: 'zebra-mc2x-battery-4900',
     slug: 'zebra-bateria-4900mah-mc2200-mc2700',
     name: 'Akumulator 4900 mAh do Zebra MC2200 / MC2700',
-    shortDescription: 'Bateria rozszerzona PowerPrecision 4900 mAh — do 17 h pracy',
+    shortDescription: 'Akumulator 4900 mAh do Zebra MC2200 / MC2700 — bateria rozszerzona PowerPrecision 4900 mAh, do 17 h pracy',
     description: `Oryginalna bateria rozszerzona Zebra PowerPrecision Li-Ion 4900 mAh (17.64 Wh) do MC2200 i MC2700. Zapewnia ok. 17 godzin pracy na jednym ładowaniu — pełna zmiana bez wymiany. Rekomendowana dla kurierów i pracowników terenowych z MC2700 (moduł LTE zużywa więcej energii). Wymienna Warm Swap.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
@@ -17783,7 +17783,7 @@ const mc2xAccessories: Product[] = [
     id: 'zebra-mc2x-cradle-1slot',
     slug: 'zebra-stacja-dokujaca-1slot-mc2200-mc2700',
     name: 'Stacja dokująca 1-gniazdowa USB do Zebra MC2200 / MC2700',
-    shortDescription: 'Pojedyncza stacja dokująca USB-C — ładowanie + komunikacja',
+    shortDescription: 'Stacja dokująca 1-gniazdowa USB do Zebra MC2200 / MC2700 — pojedyncza stacja dokująca USB-C, ładowanie + komunikacja',
     description: `Pojedyncza stacja dokująca Zebra USB-C do MC2200/MC2700. Ładuje terminal i umożliwia komunikację danych przez USB. Kompaktowa konstrukcja na biurko lub ladę sklepową. Wymaga zasilacza PWR-BGA12V50W0WW (sprzedawany osobno).`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -17810,7 +17810,7 @@ const mc2xAccessories: Product[] = [
     id: 'zebra-mc2x-cradle-1slot-battery',
     slug: 'zebra-stacja-dokujaca-1slot-bateria-mc2200-mc2700',
     name: 'Stacja dokująca 1 terminal + 1 bateria do Zebra MC2200 / MC2700',
-    shortDescription: 'Stacja ładująca terminal i zapasową baterię jednocześnie',
+    shortDescription: 'Stacja dokująca 1 terminal + 1 bateria do Zebra MC2200 / MC2700 — stacja ładująca terminal i zapasową baterię jednocześnie',
     description: `Stacja ładowania Zebra na 1 terminal + 1 baterię zapasową do MC2200/MC2700. Ładuje urządzenie i jednocześnie przygotowuje baterię zapasową — idealne rozwiązanie do pracy wielozmianowej. Komunikacja danych przez USB. Wymaga zasilacza (sprzedawany osobno).`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -17837,7 +17837,7 @@ const mc2xAccessories: Product[] = [
     id: 'zebra-mc2x-cradle-5slot',
     slug: 'zebra-stacja-ladowania-5slot-mc2200-mc2700',
     name: 'Stacja ładowania 5-gniazdowa do Zebra MC2200 / MC2700',
-    shortDescription: 'Stacja ładowania na 5 terminali jednocześnie (ShareCradle)',
+    shortDescription: 'Stacja ładowania 5-gniazdowa do Zebra MC2200 / MC2700 — stacja ładowania na 5 terminali jednocześnie (ShareCradle)',
     description: `Stacja ładowania Zebra ShareCradle na 5 terminali MC2200/MC2700 jednocześnie. Oszczędza miejsce i eliminuje plątaninę kabli przy większych flotach. Tylko ładowanie (bez komunikacji danych). Montaż na biurku, ścianie lub w racku. Wymaga zasilacza PWR-BGA12V108W0WW.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -17863,7 +17863,7 @@ const mc2xAccessories: Product[] = [
     id: 'zebra-mc2x-cradle-4slot-4battery',
     slug: 'zebra-stacja-ladowania-4slot-4baterie-mc2200-mc2700',
     name: 'Stacja ładowania 4 terminale + 4 baterie do Zebra MC2200 / MC2700',
-    shortDescription: 'Stacja na 4 terminale i 4 baterie zapasowe jednocześnie',
+    shortDescription: 'Stacja ładowania 4 terminale + 4 baterie do Zebra MC2200 / MC2700 — stacja na 4 terminale i 4 baterie zapasowe jednocześnie',
     description: `Stacja ładowania Zebra na 4 terminale MC2200/MC2700 i 4 baterie zapasowe jednocześnie. Idealne rozwiązanie dla flot wielozmianowych — 4 terminale ładują się, a 4 baterie zapasowe są gotowe do wymiany na początku kolejnej zmiany. Wymaga zasilacza PWR-BGA12V108W0WW.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -17889,7 +17889,7 @@ const mc2xAccessories: Product[] = [
     id: 'zebra-mc2x-battery-charger-4slot',
     slug: 'zebra-ladowarka-4-baterie-mc2200-mc2700',
     name: 'Ładowarka 4 baterii do Zebra MC2200 / MC2700',
-    shortDescription: 'Ładowarka na 4 baterie zapasowe jednocześnie',
+    shortDescription: 'Ładowarka 4 baterii do Zebra MC2200 / MC2700 — ładowarka na 4 baterie zapasowe jednocześnie',
     description: `Ładowarka Zebra na 4 baterie zapasowe do MC2200/MC2700 jednocześnie. Pozwala przygotować zapas naładowanych baterii na cały dzień pracy wielozmianowej. Kompatybilna z bateriami standardowymi 3500 mAh i rozszerzonymi 4900 mAh. Wymaga zasilacza PWR-BGA12V108W0WW.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -17915,7 +17915,7 @@ const mc2xAccessories: Product[] = [
     id: 'zebra-mc2x-trigger',
     slug: 'zebra-uchwyt-pistoletowy-mc2200-mc2700',
     name: 'Uchwyt pistoletowy (trigger handle) do Zebra MC2200 / MC2700',
-    shortDescription: 'Snap-on trigger handle — konwersja terminala do formy pistoletu skanującego',
+    shortDescription: 'Uchwyt pistoletowy (trigger handle) do Zebra MC2200 / MC2700 — snap-on trigger handle, konwersja terminala do formy pistoletu skanującego',
     description: `Oryginalny uchwyt pistoletowy Zebra do MC2200/MC2700. Montowany na terminalu typu snap-on (zatrzaskowy) — konwertuje kompaktowy terminal w ergonomiczny pistolet skanujący. Testowany na 3 miliony cykli naciśnięć spustu. Idealny do intensywnego skanowania w magazynie, kompletacji zamówień i inwentaryzacji.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -17942,7 +17942,7 @@ const mc2xAccessories: Product[] = [
     id: 'zebra-mc2x-rubber-boot',
     slug: 'zebra-gumowe-etui-mc2200-mc2700',
     name: 'Gumowe etui ochronne do Zebra MC2200 / MC2700',
-    shortDescription: 'Rubber boot — dodatkowa ochrona terminala przed upadkami',
+    shortDescription: 'Gumowe etui ochronne do Zebra MC2200 / MC2700 — rubber boot, dodatkowa ochrona terminala przed upadkami',
     description: `Gumowe etui ochronne (rubber boot) Zebra do MC2200/MC2700. Dodatkowa warstwa amortyzacji przy upadkach. Przeznaczone do terminala BEZ uchwytu pistoletowego. Kompatybilne z kaburą SG-MC2X-HLSTR-01.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -17969,7 +17969,7 @@ const mc2xAccessories: Product[] = [
     id: 'zebra-mc2x-rubber-boot-trigger',
     slug: 'zebra-gumowe-etui-trigger-mc2200-mc2700',
     name: 'Gumowe etui ochronne z trigger handle do Zebra MC2200 / MC2700',
-    shortDescription: 'Rubber boot do terminala z uchwytem pistoletowym',
+    shortDescription: 'Gumowe etui ochronne z trigger handle do Zebra MC2200 / MC2700 — rubber boot do terminala z uchwytem pistoletowym',
     description: `Gumowe etui ochronne (rubber boot) Zebra do MC2200/MC2700 z zamontowanym uchwytem pistoletowym (trigger handle TRG-MC2X-SNP1-01). Dodatkowa warstwa amortyzacji dopasowana do kształtu terminala z triggerem.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -17996,7 +17996,7 @@ const mc2xAccessories: Product[] = [
     id: 'zebra-mc2x-holster',
     slug: 'zebra-kabura-mc2200-mc2700',
     name: 'Kabura do paska do Zebra MC2200 / MC2700',
-    shortDescription: 'Tekstylna kabura z klipsem na pasek — szybki dostęp do terminala',
+    shortDescription: 'Kabura do paska do Zebra MC2200 / MC2700 — tekstylna kabura z klipsem na pasek, szybki dostęp do terminala',
     description: `Kabura tekstylna Zebra z klipsem na pasek do MC2200/MC2700. Umożliwia wygodne noszenie terminala na biodrze z szybkim dostępem. Kompatybilna z terminalem w gumowym etui SG-MC2X-RB1-01 (bez trigger handle).`,
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -18022,7 +18022,7 @@ const mc2xAccessories: Product[] = [
     id: 'zebra-mc2x-handstrap',
     slug: 'zebra-pasek-na-reke-mc2200-mc2700',
     name: 'Pasek na rękę do Zebra MC2200 / MC2700',
-    shortDescription: 'Hand strap zapobiegający upuszczeniu terminala',
+    shortDescription: 'Pasek na rękę do Zebra MC2200 / MC2700 — Hand strap zapobiegający upuszczeniu terminala',
     description: `Pasek na rękę (hand strap) Zebra do MC2200/MC2700. Zabezpiecza terminal przed przypadkowym upuszczeniem podczas pracy jednoręcznej. Wersja do terminala BEZ uchwytu pistoletowego.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -18057,7 +18057,7 @@ const datalogicMobileComputers: Product[] = [] /* [
     id: 'datalogic-memor-11',
     slug: 'datalogic-memor-11',
     name: 'Datalogic Memor 11',
-    shortDescription: 'Kompaktowy terminal mobilny 5" z bezprzewodowym ładowaniem',
+    shortDescription: 'Datalogic Memor 11 — kompaktowy terminal mobilny 5" z bezprzewodowym ładowaniem',
     description: `Datalogic Memor 11 to sprawdzony w praktyce kompaktowy komputer mobilny z 5-calowym ekranem HD, zaprojektowany z myślą o codziennej pracy w handlu, magazynie i logistyce.
 
 Wyposażony w wydajny procesor ośmiordzeniowy 2.0 GHz, 4 GB RAM i system Android 11 z możliwością aktualizacji do Android 15, zapewnia płynne działanie przez lata. Wbudowany skaner 2D z technologią Green Spot potwierdza poprawny odczyt wizualnym sygnałem — eliminuje błędy i przyspiesza pracę.
@@ -18096,7 +18096,7 @@ Bateria 4100 mAh z technologią SafeSwap umożliwia wymianę bez wyłączania ur
     id: 'datalogic-memor-12',
     slug: 'datalogic-memor-12',
     name: 'Datalogic Memor 12',
-    shortDescription: 'Smukły terminal mobilny 6" z Wi-Fi 6E i skanerem 2D',
+    shortDescription: 'Datalogic Memor 12 — smukły terminal mobilny 6" z Wi-Fi 6E i skanerem 2D',
     description: `Datalogic Memor 12 to nowoczesny terminal mobilny o smukłej, smartfonowej konstrukcji z zaledwie 13.5 mm grubości. Duży 6-calowy ekran FHD+ z Gorilla Glass 7 zapewnia doskonałą czytelność i wygodę obsługi.
 
 Platforma Qualcomm QCx4490 z 6 GB RAM i systemem Android 13 (z gwarancją aktualizacji do Android 18) zapewnia najwyższą wydajność i długoterminowe wsparcie. Zaawansowany skaner Halogen DE2121 z technologią DeepSight i Green Spot odczytuje nawet uszkodzone i słabo wydrukowane kody.
@@ -18135,7 +18135,7 @@ Wersja Wi-Fi-only — idealna do pracy wewnątrz budynków: magazynów, sklepów
     id: 'datalogic-memor-17',
     slug: 'datalogic-memor-17',
     name: 'Datalogic Memor 17',
-    shortDescription: 'Terminal mobilny 6" z łącznością 5G i skanerem DeepSight',
+    shortDescription: 'Datalogic Memor 17 — terminal mobilny 6" z łącznością 5G i skanerem DeepSight',
     description: `Datalogic Memor 17 to flagowy terminal mobilny z łącznością 5G, stworzony dla firm wymagających błyskawicznej komunikacji w terenie i wewnątrz obiektów. Smukła, smartfonowa obudowa o grubości zaledwie 13.5 mm mieści się wygodnie w dłoni i kieszeni.
 
 Ekran 6" FHD+ z Gorilla Glass 7, procesor Qualcomm QCx4490 i 6 GB RAM zapewniają komfort pracy z najwymagającymi aplikacjami. Skaner Halogen DE2121 z technologią DeepSight i Green Spot odczytuje kody 1D/2D natychmiastowo — nawet te uszkodzone lub wyświetlane na ekranach.
@@ -18174,7 +18174,7 @@ Ekran 6" FHD+ z Gorilla Glass 7, procesor Qualcomm QCx4490 i 6 GB RAM zapewniaj�
     id: 'datalogic-memor-30',
     slug: 'datalogic-memor-30',
     name: 'Datalogic Memor 30',
-    shortDescription: 'Wytrzymały terminal mobilny 6" z IP68 i skanerem dalekiego zasięgu',
+    shortDescription: 'Datalogic Memor 30 — wytrzymały terminal mobilny 6" z IP68 i skanerem dalekiego zasięgu',
     description: `Datalogic Memor 30 to wytrzymały terminal mobilny nowej generacji, zaprojektowany do najbardziej wymagających środowisk pracy. Klasa ochrony IP65/IP68 oznacza pełną wodoszczelność — urządzenie wytrzymuje zanurzenie poniżej 1 metra przez ponad 30 minut.
 
 Wyposażony w procesor Qualcomm QCx4490, do 8 GB RAM i 128 GB pamięci wewnętrznej, obsługuje nawet najbardziej rozbudowane aplikacje magazynowe i produkcyjne. Opcjonalny skaner dalekiego zasięgu (model X) odczytuje kody z odległości do 10 metrów — idealny do skanowania etykiet na wysokich regałach.
@@ -18213,7 +18213,7 @@ Bateria 4680 mAh z technologią SafeSwap i bezprzewodowym ładowaniem Qi zapewni
     id: 'datalogic-memor-35',
     slug: 'datalogic-memor-35',
     name: 'Datalogic Memor 35',
-    shortDescription: 'Wytrzymały terminal mobilny 6" z 5G, IP68 i skanerem do 10 m',
+    shortDescription: 'Datalogic Memor 35 — wytrzymały terminal mobilny 6" z 5G, IP68 i skanerem do 10 m',
     description: `Datalogic Memor 35 to najwyżej wyposażony model z rodziny Memor 30/35, łączący ekstremalną wytrzymałość IP68 z łącznością 5G i CBRS. Stworzony dla przedsiębiorstw wymagających niezawodnej komunikacji bezprzewodowej w każdych warunkach.
 
 Łączność 5G i obsługa prywatnych sieci LTE (CBRS) zapewniają ultraszybki transfer danych nawet w rozległych obiektach logistycznych i produkcyjnych. Procesor Qualcomm QCx4490 z 8 GB RAM i 128 GB pamięci obsługuje zaawansowane systemy WMS, ERP i aplikacje analityczne w czasie rzeczywistym.
@@ -18252,7 +18252,7 @@ Opcjonalny skaner dalekiego zasięgu (model X) odczytuje kody z dystansu do 10 m
     id: 'datalogic-skorpio-x5',
     slug: 'datalogic-skorpio-x5',
     name: 'Datalogic Skorpio X5',
-    shortDescription: 'Terminal z uchwytem pistoletowym i skanerem dalekiego zasięgu do 20 m',
+    shortDescription: 'Datalogic Skorpio X5 — terminal z uchwytem pistoletowym i skanerem dalekiego zasięgu do 20 m',
     description: `Datalogic Skorpio X5 to wytrzymały terminal mobilny z uchwytem pistoletowym, wyposażony w największy w swojej klasie ekran 4.3" i fizyczną klawiaturę. Stworzony do intensywnej pracy w magazynach wysokiego składowania, na liniach produkcyjnych i w centrach logistycznych.
 
 Unikalny skaner Extra-Long Range (XLR) odczytuje kody kreskowe z odległości do 20 metrów — umożliwia skanowanie etykiet na najwyższych regałach bez potrzeby podnoszenia się na wózku widłowym. Procesor Qualcomm Snapdragon 660 i 4 GB RAM zapewniają płynną obsługę aplikacji WMS.
@@ -18291,7 +18291,7 @@ Dostępny w trzech wariantach klawiatury: 47-klawiszowa alfanumeryczna, 38-klawi
     id: 'datalogic-memor-k',
     slug: 'datalogic-memor-k',
     name: 'Datalogic Memor K',
-    shortDescription: 'Kompaktowy terminal z klawiaturą 24-klawiszową i skanerem 2D',
+    shortDescription: 'Datalogic Memor K — kompaktowy terminal z klawiaturą 24-klawiszową i skanerem 2D',
     description: `Datalogic Memor K to kompaktowy i ekonomiczny terminal mobilny z fizyczną klawiaturą 24-klawiszową, zaprojektowany dla firm szukających niezawodnego urządzenia w przystępnej cenie. Przy wadze zaledwie 268 g i grubości 17 mm jest jednym z najlżejszych terminali na rynku.
 
 Ekran 4" z hartowanym szkłem Dragontrail w połączeniu z podświetlaną klawiaturą zapewnia wygodną obsługę nawet w słabym oświetleniu. Skaner 2D z technologią Green Spot odczytuje kody 1D i 2D szybko i bezbłędnie. System Android 9 z Google Mobile Services.
@@ -18486,7 +18486,7 @@ const accessories: Product[] = [
     id: 'zebra-cradle-tc52',
     slug: 'zebra-stacja-dokujaca-tc52',
     name: 'Stacja dokująca Zebra TC52/TC57 (5-stanowiskowa)',
-    shortDescription: '5-portowa stacja ładowania z Ethernet',
+    shortDescription: 'Stacja dokująca Zebra TC52/TC57 (5-stanowiskowa) — 5-portowa stacja ładowania z Ethernet',
     description: `Stacja dokująca Zebra do jednoczesnego ładowania 5 terminali TC52/TC57 z funkcją komunikacji Ethernet.
 
 Idealna do stanowisk dystrybucji urządzeń i nocnego ładowania floty terminali.
@@ -18517,7 +18517,7 @@ Możliwość łączenia wielu stacji dla dużych instalacji.`,
     id: 'zebra-stand-ds3608',
     slug: 'zebra-podstawka-ds3608',
     name: 'Podstawka Zebra STND-AS0036-07',
-    shortDescription: 'Podstawka do skanerów DS3608, DS3678, LI3608, LI3678',
+    shortDescription: 'Podstawka Zebra STND-AS0036-07 — podstawka do skanerów DS3608, DS3678, LI3608, LI3678',
     description: `Oryginalna podstawka Zebra (STND-AS0036-07) do skanerów ultra-rugged serii DS3600 i LI3600. Stabilna konstrukcja z regulacją kąta nachylenia.
 
 Kompatybilna z modelami: DS3608 (wszystkie warianty), DS3678, LI3608, LI3678. Umożliwia pracę w trybie hands-free na stanowisku produkcyjnym lub kontrolnym.`,
@@ -18545,7 +18545,7 @@ Kompatybilna z modelami: DS3608 (wszystkie warianty), DS3678, LI3608, LI3678. Um
     id: 'zebra-cable-usb-ds3608',
     slug: 'zebra-kabel-usb-ds3608',
     name: 'Kabel USB 2.1m Zebra CBA-U01-S07ZAR',
-    shortDescription: 'Kabel USB Type A do skanerów DS3608, DS3678, LI3608, LI3678',
+    shortDescription: 'Kabel USB 2.1m Zebra CBA-U01-S07ZAR — kabel USB Type A do skanerów DS3608, DS3678, LI3608, LI3678',
     description: `Oryginalny kabel USB Zebra (CBA-U01-S07ZAR) o długości 2,1 m (7 ft) z wtyczką Type A. Dedykowany do skanerów ultra-rugged serii DS3600 i LI3600.
 
 Plug and Play — automatyczne wykrywanie hosta. Uwaga: ten kabel NIE jest kompatybilny z DS2208/DS4608 (te używają CBA-U21-S07ZBR).`,
@@ -18574,7 +18574,7 @@ Plug and Play — automatyczne wykrywanie hosta. Uwaga: ten kabel NIE jest kompa
     id: 'zebra-cable-usb-long-ds3608',
     slug: 'zebra-kabel-usb-4-6m-ds3608',
     name: 'Kabel USB 4.6m Zebra CBA-U09-C15ZAR',
-    shortDescription: 'Kabel USB Type A 4,6 m do skanerów DS3608, DS3678, LI3608, LI3678',
+    shortDescription: 'Kabel USB 4.6m Zebra CBA-U09-C15ZAR — kabel USB Type A 4,6 m do skanerów DS3608, DS3678, LI3608, LI3678',
     description: `Oryginalny kabel USB Zebra (CBA-U09-C15ZAR) o długości 4,6 m (15 ft) z wtyczką Type A. Dłuższa wersja do skanerów ultra-rugged serii DS3600 i LI3600 — do stanowisk z większą odległością między skanerem a komputerem.
 
 Uwaga: ten kabel NIE jest kompatybilny z DS2208/DS4608 (te używają CBA-U47-S15ZAR).`,
@@ -18606,7 +18606,7 @@ Uwaga: ten kabel NIE jest kompatybilny z DS2208/DS4608 (te używają CBA-U47-S15
     id: 'zebra-cradle-ds3678',
     slug: 'zebra-stacja-ladujaca-ds3678',
     name: 'Stacja ładująco-komunikacyjna Zebra STB3678',
-    shortDescription: 'Cradle do skanera DS3678 — ładowanie baterii + komunikacja USB/RS-232',
+    shortDescription: 'Stacja ładująco-komunikacyjna Zebra STB3678 — cradle do skanera DS3678, ładowanie baterii + komunikacja USB/RS-232',
     description: `Oryginalna stacja dokująca (cradle) Zebra STB3678-C100F3WW do bezprzewodowego skanera DS3678-SR. Łączy funkcję ładowarki baterii i interfejsu komunikacyjnego — podłącza skaner do komputera przez USB lub RS-232 i jednocześnie ładuje baterię.
 
 Ładowanie: 3h z zasilaczem, 10h przez USB. Kabel USB i zasilacz sprzedawane osobno lub w zestawie DS3678-SR3U42A0SFW.`,
@@ -18635,7 +18635,7 @@ Uwaga: ten kabel NIE jest kompatybilny z DS2208/DS4608 (te używają CBA-U47-S15
     id: 'zebra-cradle-presentation-ds3678',
     slug: 'zebra-stacja-prezentacyjna-ds3678',
     name: 'Stacja prezentacyjna Zebra FLB3678',
-    shortDescription: 'Cradle prezentacyjny do DS3678 — skanowanie hands-free + ładowanie',
+    shortDescription: 'Stacja prezentacyjna Zebra FLB3678 — cradle prezentacyjny do DS3678, skanowanie hands-free + ładowanie',
     description: `Oryginalna stacja prezentacyjna (cradle hands-free) Zebra FLB3678-C100F3WW do skanera DS3678-SR. Umożliwia skanowanie bezdotykowe — skaner w stacji automatycznie odczytuje kody prezentowane przed oknem skanera.
 
 Jednocześnie ładuje baterię i zapewnia komunikację z komputerem (USB/RS-232). Idealna do stanowisk kasowych, punktów POS i stanowisk weryfikacji.`,
@@ -18664,7 +18664,7 @@ Jednocześnie ładuje baterię i zapewnia komunikację z komputerem (USB/RS-232)
     id: 'zebra-battery-ds3678',
     slug: 'zebra-bateria-ds3678',
     name: 'Bateria PowerPrecision+ 3100 mAh do Zebra DS3678',
-    shortDescription: 'Bateria zapasowa Li-Ion 3100 mAh do skanera bezprzewodowego DS3678',
+    shortDescription: 'Bateria PowerPrecision+ 3100 mAh do Zebra DS3678 — bateria zapasowa Li-Ion 3100 mAh do skanera bezprzewodowego DS3678',
     description: `Oryginalna bateria zapasowa Zebra PowerPrecision+ (BTRY-36IAB0E-00) o pojemności 3100 mAh do bezprzewodowego skanera DS3678-SR. Wystarcza na ponad 100 000 skanów. Gwarancja 12 miesięcy.
 
 Wymienialna bez narzędzi — zapewnia ciągłą pracę: jedna bateria w skanerze, druga na ładowarce.`,
@@ -18694,7 +18694,7 @@ Wymienialna bez narzędzi — zapewnia ciągłą pracę: jedna bateria w skanerz
     id: 'zebra-charger-4slot-ds3600',
     slug: 'zebra-ladowarka-4slot-ds3600',
     name: 'Ładowarka 4-slotowa baterii Zebra SAC3600-4001CR',
-    shortDescription: 'Ładowarka 4 baterii jednocześnie do skanerów DS3678',
+    shortDescription: 'Ładowarka 4-slotowa baterii Zebra SAC3600-4001CR — ładowarka 4 baterii jednocześnie do skanerów DS3678',
     description: `Oryginalna 4-gniazdowa ładowarka baterii Zebra (SAC3600-4001CR) do skanerów bezprzewodowych serii DS3600/DS3678. Ładuje jednocześnie 4 baterie BTRY-36IAB0E-00.
 
 Idealna do flotowego zarządzania bateriami — zawsze gotowe zapasy do natychmiastowej wymiany. Zasilacz sprzedawany osobno.`,
@@ -18723,7 +18723,7 @@ Idealna do flotowego zarządzania bateriami — zawsze gotowe zapasy do natychmi
     id: 'zebra-cradle-ds2278',
     slug: 'zebra-baza-prezentacyjna-ds2278',
     name: 'Baza prezentacyjna Zebra CR2278-PC10004WW',
-    shortDescription: 'Baza ładująco-komunikacyjna Bluetooth do skanera DS2278 — USB/RS232, tryb hands-free IntelliStand',
+    shortDescription: 'Baza prezentacyjna Zebra CR2278-PC10004WW — baza ładująco-komunikacyjna Bluetooth do skanera DS2278, USB/RS232, tryb hands-free IntelliStand',
     description: `Oryginalna baza prezentacyjna Zebra CR2278-PC10004WW do skanera bezprzewodowego DS2278. Pełni trzy funkcje: stacja ładująca (ładuje baterię skanera), nadajnik Bluetooth Class 1 (zasięg do 100 m) oraz podstawka hands-free z IntelliStand — skaner odłożony do bazy automatycznie przełącza się w tryb prezentacyjny.
 
 Komunikacja z komputerem przez kabel USB (CBA-U21-S07ZBR) lub RS232 (CBA-R07-S07PAR). Wymiary bazy: 72 × 94 × 122 mm, waga 151 g. Gwarancja 36 miesięcy.`,
@@ -18755,7 +18755,7 @@ Komunikacja z komputerem przez kabel USB (CBA-U21-S07ZBR) lub RS232 (CBA-R07-S07
     id: 'zebra-battery-ds2278',
     slug: 'zebra-akumulator-ds2278',
     name: 'Akumulator Zebra BTRY-DS22EAB0E-00 do DS2278',
-    shortDescription: 'Oryginalna bateria zamienna Li-Ion 2400 mAh do skanera bezprzewodowego DS2278',
+    shortDescription: 'Akumulator Zebra BTRY-DS22EAB0E-00 do DS2278 — oryginalna bateria zamienna Li-Ion 2400 mAh do skanera bezprzewodowego DS2278',
     description: `Oryginalna bateria zamienna Zebra (BTRY-DS22EAB0E-00) do skanera bezprzewodowego DS2278. Li-Ion 2400 mAh — zapewnia do 14 godzin ciągłej pracy lub 110 000 skanów na jednym ładowaniu. Wymiana baterii przez użytkownika (user-replaceable). Gwarancja 12 miesięcy.`,
     categoryId: 'akcesoria',
     manufacturerId: 'zebra',
@@ -18781,7 +18781,7 @@ Komunikacja z komputerem przez kabel USB (CBA-U21-S07ZBR) lub RS232 (CBA-R07-S07
     id: 'zebra-cradle-presentation-ds8288',
     slug: 'zebra-baza-prezentacyjna-ds8288',
     name: 'Baza prezentacyjna Zebra CR8288-PC100F4WW do DS8288',
-    shortDescription: 'Stacja dokująca prezentacyjna z ładowaniem indukcyjnym i trybem hands-free IntelliStand do skanera DS8288',
+    shortDescription: 'Baza prezentacyjna Zebra CR8288-PC100F4WW do DS8288 — stacja dokująca prezentacyjna z ładowaniem indukcyjnym i trybem hands-free IntelliStand do skanera DS8288',
     description: `Oryginalna stacja dokująca prezentacyjna Zebra CR8288-PC100F4WW do skanera bezprzewodowego DS8288. Ładowanie indukcyjne (bezkontaktowe) — brak fizycznych styków, koniec problemów ze zużywaniem się kontaktów i korozją.
 
 Skaner odłożony do bazy automatycznie przełącza się w tryb hands-free IntelliStand — skanuje kody przesuwane przed sensorem. Podniesiony wraca do trybu ręcznego. Komunikacja z hostem przez USB lub RS232 (zasilacz AC w zestawie).
@@ -18813,7 +18813,7 @@ Bluetooth 5.2 BLE — parowanie i komunikacja z bazą. Stacja dołączona w wari
     id: 'zebra-cradle-standard-ds8288',
     slug: 'zebra-baza-standardowa-ds8288',
     name: 'Baza standardowa Zebra CR8288-SC100F4WW do DS8288',
-    shortDescription: 'Stacja dokująca standardowa z ładowaniem indukcyjnym — skaner leży na boku, do biurka obok kasy',
+    shortDescription: 'Baza standardowa Zebra CR8288-SC100F4WW do DS8288 — stacja dokująca standardowa z ładowaniem indukcyjnym, skaner leży na boku, do biurka obok kasy',
     description: `Oryginalna stacja dokująca standardowa Zebra CR8288-SC100F4WW do skanera bezprzewodowego DS8288. Ładowanie indukcyjne (bezkontaktowe) — brak fizycznych styków, koniec problemów ze zużywaniem się kontaktów i korozją.
 
 Kompaktowa konstrukcja — skaner leży na boku, idealna do biurek i stanowisk kasowych z ograniczoną przestrzenią. Komunikacja z hostem przez USB lub RS232 (zasilacz AC w zestawie).
@@ -18845,7 +18845,7 @@ Bluetooth 5.2 BLE — parowanie i komunikacja z bazą. Stacja dołączona w wari
     id: 'zebra-battery-ds8288',
     slug: 'zebra-akumulator-ds8288',
     name: 'Akumulator Zebra BTRY-DS82EAB0E-00 do DS8288',
-    shortDescription: 'Oryginalna bateria zamienna Li-Ion 3500 mAh do skanera bezprzewodowego DS8288 — 100 000 skanów',
+    shortDescription: 'Akumulator Zebra BTRY-DS82EAB0E-00 do DS8288 — oryginalna bateria zamienna Li-Ion 3500 mAh do skanera bezprzewodowego DS8288, 100 000 skanów',
     description: `Oryginalna bateria zamienna Zebra (BTRY-DS82EAB0E-00) do skanera bezprzewodowego DS8288. Li-Ion 3500 mAh — zapewnia do 100 000 skanów lub 108 godzin pracy w trybie standby na jednym ładowaniu. Wymiana baterii przez użytkownika (user-replaceable).
 
 Ładowanie indukcyjne — bateria ładuje się bezkontaktowo w stacji CR8288. Gwarancja producenta 12 miesięcy.`,
@@ -18875,7 +18875,7 @@ Bluetooth 5.2 BLE — parowanie i komunikacja z bazą. Stacja dołączona w wari
     id: 'zebra-bracket-ds9908',
     slug: 'zebra-podstawka-ds9908',
     name: 'Podstawka Zebra BRKT-MM0099C-04 do DS9908',
-    shortDescription: 'Wielozadaniowy uchwyt gooseneck Intellistand do skanera prezentacyjnego DS9908',
+    shortDescription: 'Podstawka Zebra BRKT-MM0099C-04 do DS9908 — wielozadaniowy uchwyt gooseneck Intellistand do skanera prezentacyjnego DS9908',
     description: `Oryginalna podstawka Zebra (BRKT-MM0099C-04) do skanera prezentacyjnego DS9908. Wielozadaniowy uchwyt typu gooseneck Intellistand — pozwala ustawić skaner pod optymalnym kątem do pracy hands-free na kasie, ladzie aptecznej lub stanowisku obsługi klienta.
 
 Stabilna metalowa konstrukcja z regulowanym ramieniem — skaner automatycznie przełącza się w tryb hands-free po odłożeniu na podstawkę.`,
@@ -18904,7 +18904,7 @@ Stabilna metalowa konstrukcja z regulowanym ramieniem — skaner automatycznie p
     id: 'zebra-cradle-standard-cr8178',
     slug: 'zebra-baza-standardowa-cr8178',
     name: 'Baza standardowa Zebra CR8178-SC100F4WW do DS4678 / DS8178',
-    shortDescription: 'Stacja dokująca standardowa z Connect+ (bezstykowe ładowanie) — do skanerów DS4678 i DS8178',
+    shortDescription: 'Baza standardowa Zebra CR8178-SC100F4WW do DS4678 / DS8178 — stacja dokująca standardowa z Connect+ (bezstykowe ładowanie), do skanerów DS4678 i DS8178',
     description: `Oryginalna stacja dokująca standardowa Zebra CR8178-SC100F4WW do skanerów bezprzewodowych DS4678 i DS8178. Technologia Connect+ — bezstykowe ładowanie bez fizycznych pinów, eliminacja korozji kontaktów.
 
 Komunikacja z hostem przez USB, RS-232 lub Keyboard Wedge (wymaga odpowiedniego kabla). Bluetooth Class 1 — zasięg do 100 m. Kompaktowa konstrukcja do montażu na ścianie lub postawienia przy stanowisku kasowym.`,
@@ -18933,7 +18933,7 @@ Komunikacja z hostem przez USB, RS-232 lub Keyboard Wedge (wymaga odpowiedniego 
     id: 'zebra-cradle-presentation-cr8178',
     slug: 'zebra-baza-prezentacyjna-cr8178',
     name: 'Baza prezentacyjna Zebra CR8178-PC100F4WW do DS4678 / DS8178',
-    shortDescription: 'Stacja prezentacyjna z Connect+ i trybem hands-free IntelliStand — do skanerów DS4678 i DS8178',
+    shortDescription: 'Baza prezentacyjna Zebra CR8178-PC100F4WW do DS4678 / DS8178 — stacja prezentacyjna z Connect+ i trybem hands-free IntelliStand, do skanerów DS4678 i DS8178',
     description: `Oryginalna stacja prezentacyjna Zebra CR8178-PC100F4WW do skanerów bezprzewodowych DS4678 i DS8178. Technologia Connect+ — bezstykowe ładowanie bez fizycznych pinów, eliminacja korozji kontaktów.
 
 Tryb hands-free IntelliStand — skaner odłożony do bazy automatycznie przełącza się w tryb prezentacyjny (skanowanie przesuwanych kodów). Podniesiony wraca do trybu ręcznego. Komunikacja z hostem przez USB, RS-232 lub Keyboard Wedge.`,
@@ -18962,7 +18962,7 @@ Tryb hands-free IntelliStand — skaner odłożony do bazy automatycznie przeł�
     id: 'zebra-stand-ds22',
     slug: 'zebra-podstawka-ds22',
     name: 'Podstawka gooseneck Zebra 20-71043-04R',
-    shortDescription: 'Podstawka hands-free do skanerów DS2208, DS2278, DS4308, DS8108',
+    shortDescription: 'Podstawka gooseneck Zebra 20-71043-04R — podstawka hands-free do skanerów DS2208, DS2278, DS4308, DS8108',
     description: `Oryginalna podstawka Zebra typu gooseneck (20-71043-04R) umożliwiająca pracę ze skanerem w trybie hands-free — prezentacyjnym. Operator przesuwa produkt przed skanerem zamiast podnosić skaner do kodu.
 
 Stabilna konstrukcja z regulacją kąta nachylenia. Kompatybilna z seriami DS2208, DS2278, DS4308, DS8108 i DS4608. Idealna do stanowisk kasowych, aptek i punktów obsługi klienta.`,
@@ -18991,7 +18991,7 @@ Stabilna konstrukcja z regulacją kąta nachylenia. Kompatybilna z seriami DS220
     id: 'zebra-cable-usb-ds22',
     slug: 'zebra-kabel-usb-ds22',
     name: 'Kabel USB 2.1m Zebra CBA-U21-S07ZBR',
-    shortDescription: 'Kabel USB Type A do skanerów DS2208, DS2278, DS4678, DS8178, DS9308, DS9908',
+    shortDescription: 'Kabel USB 2.1m Zebra CBA-U21-S07ZBR — kabel USB Type A do skanerów DS2208, DS2278, DS4678, DS8178, DS9308, DS9908',
     description: `Oryginalny kabel USB Zebra (CBA-U21-S07ZBR) o długości 2,1 m z wtyczką Type A. Łączy skaner z komputerem, kasą fiskalną lub terminalem POS. Plug and Play — automatyczne wykrywanie hosta.
 
 Kompatybilny z modelami: DS2208, DS2278, DS4678, DS8178, DS8108, DS4608, DS9308 i DS9908. Ekranowany, wytrzymały na wielokrotne zginanie.`,
@@ -19020,7 +19020,7 @@ Kompatybilny z modelami: DS2208, DS2278, DS4678, DS8178, DS8108, DS4608, DS9308 
     id: 'zebra-cable-usb-long',
     slug: 'zebra-kabel-usb-4-6m',
     name: 'Kabel USB 4.6m Zebra CBA-U47-S15ZAR',
-    shortDescription: 'Kabel USB Type A 4,6 m do skanerów DS2208, DS4608, DS8178, DS9308, DS9908',
+    shortDescription: 'Kabel USB 4.6m Zebra CBA-U47-S15ZAR — kabel USB Type A 4,6 m do skanerów DS2208, DS4608, DS8178, DS9308, DS9908',
     description: `Oryginalny ekranowany kabel USB Zebra (CBA-U47-S15ZAR) o długości 4,6 m (15 ft) z wtyczką Type A. Prosty (non-coiled). Dłuższa wersja standardowego kabla CBA-U21-S07ZBR — do stanowisk, gdzie odległość skanera od komputera przekracza 2 m.
 
 Plug and Play — automatyczne wykrywanie hosta. Kompatybilny z modelami: DS2208, DS2278, DS4608, DS8178, DS8108, DS9308, DS9908, LI2208, LI4278 i innymi skanerami Zebra ze złączem modularnym.`,
@@ -19052,7 +19052,7 @@ Plug and Play — automatyczne wykrywanie hosta. Kompatybilny z modelami: DS2208
     id: 'zebra-cable-rs232-short',
     slug: 'zebra-kabel-rs232-2m',
     name: 'Kabel RS232 2m Zebra CBA-R07-S07PAR',
-    shortDescription: 'Kabel RS232 (serial) 2 m do skanerów DS2208, DS4608, DS8178, DS9308, DS9908',
+    shortDescription: 'Kabel RS232 2m Zebra CBA-R07-S07PAR — kabel RS232 (serial) 2 m do skanerów DS2208, DS4608, DS8178, DS9308, DS9908',
     description: `Oryginalny kabel RS232 Zebra (CBA-R07-S07PAR) o długości 2 m (7 ft) z wtyczką DB9 Female. Do podłączenia skanera do kas fiskalnych, terminali POS i systemów z portem COM (serial).
 
 Kompatybilny z modelami: DS2208, DS2278, DS4608, DS8178, DS8108, DS9308, DS9908 i innymi skanerami Zebra ze złączem modularnym. Wymaga zewnętrznego zasilacza (skaner nie pobiera zasilania z portu RS232).`,
@@ -19083,7 +19083,7 @@ Kompatybilny z modelami: DS2208, DS2278, DS4608, DS8178, DS8108, DS9308, DS9908 
     id: 'zebra-cable-rs232-long',
     slug: 'zebra-kabel-rs232-4-6m',
     name: 'Kabel RS232 4.6m Zebra CBA-R21-S15PAR',
-    shortDescription: 'Kabel RS232 (serial) 4,6 m do skanerów DS2208, DS4608, DS8178, DS9308, DS9908',
+    shortDescription: 'Kabel RS232 4.6m Zebra CBA-R21-S15PAR — kabel RS232 (serial) 4,6 m do skanerów DS2208, DS4608, DS8178, DS9308, DS9908',
     description: `Oryginalny kabel RS232 Zebra (CBA-R21-S15PAR) o długości 4,6 m (15 ft) z wtyczką DB9 Female. Dłuższa wersja kabla CBA-R07-S07PAR — do stanowisk z większą odległością między skanerem a kasą.
 
 Kompatybilny z modelami: DS2208, DS2278, DS4608, DS8178, DS8108, DS9308, DS9908 i innymi skanerami Zebra ze złączem modularnym. Wymaga zewnętrznego zasilacza.`,
@@ -19114,7 +19114,7 @@ Kompatybilny z modelami: DS2208, DS2278, DS4608, DS8178, DS8108, DS9308, DS9908 
     id: 'zebra-cable-usb-li2208',
     slug: 'zebra-kabel-usb-li2208',
     name: 'Kabel USB 2.1m Zebra CBA-U21-S07ZAR',
-    shortDescription: 'Kabel USB Type A do skanerów LI2208, LS2208, DS2208, DS8178',
+    shortDescription: 'Kabel USB 2.1m Zebra CBA-U21-S07ZAR — kabel USB Type A do skanerów LI2208, LS2208, DS2208, DS8178',
     description: `Oryginalny ekranowany kabel USB Zebra (CBA-U21-S07ZAR) o długości 2,1 m (7 ft) z wtyczką Type A. Prosty (non-coiled), 24 AWG. Plug and Play — automatyczne wykrywanie hosta (HID keyboard emulation).
 
 Kompatybilny z modelami: LI2208, LS2208, DS2208, DS2278, DS8178, DS8108, DS4608, DS9308, LI4278 i innymi skanerami Zebra ze złączem modularnym. Zastępowany przez CBA-U21-S07ZBR (identyczny funkcjonalnie, nowszy PN).`,
@@ -19148,7 +19148,7 @@ Kompatybilny z modelami: LI2208, LS2208, DS2208, DS2278, DS8178, DS8108, DS4608,
     id: 'zebra-stand-li2208',
     slug: 'zebra-podstawka-li2208',
     name: 'Podstawka gooseneck Zebra 20-61022-04R',
-    shortDescription: 'Intellistand hands-free do skanerów LI2208 i LS2208',
+    shortDescription: 'Podstawka gooseneck Zebra 20-61022-04R — intellistand hands-free do skanerów LI2208 i LS2208',
     description: `Oryginalna podstawka Zebra typu gooseneck Intellistand (20-61022-04R) do skanerów LI2208 i LS2208. Elastyczne ramię pozwala ustawić skaner pod optymalnym kątem do pracy hands-free (prezentacyjnej).
 
 Funkcja Intellistand: po włożeniu skanera do uchwytu automatycznie przełącza tryb na prezentacyjny, po wyjęciu — z powrotem na ręczny. Stabilna podstawa z obciążnikiem. Kolor: czarny.
@@ -19181,7 +19181,7 @@ Uwaga: ta podstawka pasuje TYLKO do LI2208 i LS2208. Do skanerów DS2208, DS4308
     id: 'zebra-charger-4slot',
     slug: 'zebra-ladowarka-4-baterie',
     name: 'Ładowarka 4-stanowiskowa do baterii TC/MC',
-    shortDescription: 'Ładowarka do 4 baterii terminali Zebra',
+    shortDescription: 'Ładowarka 4-stanowiskowa do baterii TC/MC — ładowarka do 4 baterii terminali Zebra',
     description: `Ładowarka Zebra do jednoczesnego ładowania 4 baterii terminali serii TC i MC.
 
 Indywidualne wskaźniki LED dla każdego stanowiska. Szybkie ładowanie i diagnostyka baterii.`,
@@ -19210,7 +19210,7 @@ Indywidualne wskaźniki LED dla każdego stanowiska. Szybkie ładowanie i diagno
     id: 'zebra-antenna-an440',
     slug: 'zebra-antena-rfid-an440',
     name: 'Antena RFID Zebra AN440',
-    shortDescription: 'Antena RFID UHF do czytników stacjonarnych',
+    shortDescription: 'Antena RFID Zebra AN440 — antena RFID UHF do czytników stacjonarnych',
     description: `Antena RFID Zebra AN440 do czytników stacjonarnych FX7500 i FX9600.
 
 Szeroki kąt odczytu idealny do bramek i punktów kontrolnych. Wytrzymała konstrukcja przemysłowa.`,
@@ -19246,7 +19246,7 @@ const printerAccessories: Product[] = [
     id: 'zebra-printhead-zd421t-203',
     slug: 'zebra-glowica-203dpi-zd421t',
     name: 'Głowica 203dpi do drukarki Zebra ZD421t',
-    shortDescription: 'Oryginalna głowica drukująca 203 dpi do drukarki Zebra ZD421t',
+    shortDescription: 'Głowica 203dpi do drukarki Zebra ZD421t — oryginalna głowica drukująca 203 dpi do drukarki Zebra ZD421t',
     description: `Oryginalna głowica drukująca Zebra 203 dpi do drukarki termotransferowej ZD421t. Zapewnia ostrą, wyraźną jakość druku kodów kreskowych i tekstu w standardowej rozdzielczości.
 
 Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotność drukarki. Zalecana w przypadku widocznego spadku jakości druku lub uszkodzenia mechanicznego.`,
@@ -19274,7 +19274,7 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     id: 'zebra-printhead-zd421t-300',
     slug: 'zebra-glowica-300dpi-zd421t',
     name: 'Głowica 300dpi do drukarki Zebra ZD421t',
-    shortDescription: 'Oryginalna głowica drukująca 300 dpi do drukarki Zebra ZD421t',
+    shortDescription: 'Głowica 300dpi do drukarki Zebra ZD421t — oryginalna głowica drukująca 300 dpi do drukarki Zebra ZD421t',
     description: `Oryginalna głowica drukująca Zebra 300 dpi do drukarki termotransferowej ZD421t. Wyższa rozdzielczość zapewnia doskonałą jakość druku małych kodów kreskowych i drobnego tekstu.
 
 Zalecana wymiana po widocznym spadku jakości druku lub uszkodzeniu mechanicznym.`,
@@ -19302,7 +19302,7 @@ Zalecana wymiana po widocznym spadku jakości druku lub uszkodzeniu mechanicznym
     id: 'zebra-platen-roller-zd421t-203',
     slug: 'zebra-walek-dociskowy-203dpi-zd421t',
     name: 'Wałek dociskowy (dla głowic 203dpi) do drukarek Zebra ZD421t',
-    shortDescription: 'Oryginalny wałek dociskowy do drukarki Zebra ZD421t z głowicą 203 dpi',
+    shortDescription: 'Wałek dociskowy (dla głowic 203dpi) do drukarek Zebra ZD421t — oryginalny wałek dociskowy do drukarki Zebra ZD421t z głowicą 203 dpi',
     description: `Oryginalny wałek dociskowy Zebra przeznaczony do drukarek ZD421t wyposażonych w głowicę 203 dpi. Zapewnia równomierny docisk materiału do głowicy drukującej, co przekłada się na wysoką jakość wydruku.
 
 Wymiana wałka zalecana w przypadku widocznych śladów zużycia lub nierównomiernego druku.`,
@@ -19329,7 +19329,7 @@ Wymiana wałka zalecana w przypadku widocznych śladów zużycia lub nierównomi
     id: 'zebra-platen-roller-zd421t-300',
     slug: 'zebra-walek-dociskowy-300dpi-zd421t',
     name: 'Wałek dociskowy (dla głowic 300dpi) do drukarek Zebra ZD421t',
-    shortDescription: 'Oryginalny wałek dociskowy do drukarki Zebra ZD421t z głowicą 300 dpi',
+    shortDescription: 'Wałek dociskowy (dla głowic 300dpi) do drukarek Zebra ZD421t — oryginalny wałek dociskowy do drukarki Zebra ZD421t z głowicą 300 dpi',
     description: `Oryginalny wałek dociskowy Zebra przeznaczony do drukarek ZD421t wyposażonych w głowicę 300 dpi. Zapewnia równomierny docisk materiału do głowicy drukującej.
 
 Wymiana wałka zalecana w przypadku widocznych śladów zużycia lub nierównomiernego druku.`,
@@ -19356,7 +19356,7 @@ Wymiana wałka zalecana w przypadku widocznych śladów zużycia lub nierównomi
     id: 'zebra-cutter-zd421t',
     slug: 'zebra-gilotyna-zd421t',
     name: 'Gilotyna do drukarki Zebra ZD421t',
-    shortDescription: 'Moduł gilotyny do automatycznego odcinania etykiet w drukarce ZD421t',
+    shortDescription: 'Gilotyna do drukarki Zebra ZD421t — moduł gilotyny do automatycznego odcinania etykiet w drukarce ZD421t',
     description: `Moduł gilotyny Zebra do drukarki ZD421t. Automatycznie odcina etykiety po wydrukowaniu, usprawniając pracę i eliminując konieczność ręcznego odrywania.
 
 Prosty montaż — wystarczy wymienić przednią pokrywę drukarki na moduł z gilotyną.`,
@@ -19384,7 +19384,7 @@ Prosty montaż — wystarczy wymienić przednią pokrywę drukarki na moduł z g
     id: 'zebra-dispenser-zd421t',
     slug: 'zebra-dyspenser-zd421t',
     name: 'Dyspenser do drukarki Zebra ZD421t',
-    shortDescription: 'Moduł odklejaka (dyspensera) etykiet do drukarki ZD421t',
+    shortDescription: 'Dyspenser do drukarki Zebra ZD421t — moduł odklejaka (dyspensera) etykiet do drukarki ZD421t',
     description: `Moduł dyspensera (odklejaka) Zebra do drukarki ZD421t. Automatycznie odkleja etykietę od podkładu po wydrukowaniu, gotową do natychmiastowego naklejenia.
 
 Znacząco przyspiesza proces etykietowania — operator pobiera już odklejoną etykietę i od razu ją aplikuje.`,
@@ -19412,7 +19412,7 @@ Znacząco przyspiesza proces etykietowania — operator pobiera już odklejoną 
     id: 'zebra-battery-zd420',
     slug: 'zebra-bateria-zd410-zd420-zd620',
     name: 'Bateria do drukarki Zebra ZD421, ZD621',
-    shortDescription: 'Oryginalna bateria umożliwiająca mobilną pracę drukarki',
+    shortDescription: 'Bateria do drukarki Zebra ZD421, ZD621 — oryginalna bateria umożliwiająca mobilną pracę drukarki',
     description: `Oryginalna bateria Zebra umożliwiająca mobilną pracę drukarek ZD410, ZD420d, ZD420t, ZD421t, ZD620d, ZD620t i ZD621t bez podłączenia do zasilania sieciowego.
 
 Wymaga dodatkowego modułu na baterię (P1080383-600) do zainstalowania w drukarce.`,
@@ -19439,7 +19439,7 @@ Wymaga dodatkowego modułu na baterię (P1080383-600) do zainstalowania w drukar
     id: 'zebra-battery-module-zd420t',
     slug: 'zebra-modul-baterie-zd420t-zd620t',
     name: 'Moduł na baterię do drukarki Zebra ZD421t, ZD621t',
-    shortDescription: 'Moduł umożliwiający zamontowanie baterii w drukarce ZD421t / ZD621t',
+    shortDescription: 'Moduł na baterię do drukarki Zebra ZD421t, ZD621t — moduł umożliwiający zamontowanie baterii w drukarce ZD421t / ZD621t',
     description: `Moduł Zebra umożliwiający zamontowanie baterii (P1080383-603) w drukarkach ZD420t, ZD421t, ZD620t i ZD621t. Wymagany do pracy drukarki na baterii.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -19464,7 +19464,7 @@ Wymaga dodatkowego modułu na baterię (P1080383-600) do zainstalowania w drukar
     id: 'zebra-module-ethernet-zd421',
     slug: 'zebra-interfejs-ethernet-zd411-zd421',
     name: 'Interfejs Ethernet do drukarki Zebra ZD411d, ZD411t, ZD421d, ZD421t',
-    shortDescription: 'Moduł rozszerzający łączność o Ethernet 10/100',
+    shortDescription: 'Interfejs Ethernet do drukarki Zebra ZD411d, ZD411t, ZD421d, ZD421t — moduł rozszerzający łączność o Ethernet 10/100',
     description: `Moduł Ethernet Zebra umożliwiający podłączenie drukarki do sieci przewodowej LAN. Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi.
 
 Idealne rozwiązanie dla drukarek zakupionych w wersji bazowej (tylko USB), które wymagają rozszerzenia o łączność sieciową.`,
@@ -19493,7 +19493,7 @@ Idealne rozwiązanie dla drukarek zakupionych w wersji bazowej (tylko USB), któ
     id: 'zebra-module-rs232-zd421',
     slug: 'zebra-interfejs-rs232-zd411-zd421',
     name: 'Interfejs RS-232 do drukarek Zebra ZD411d, ZD411t, ZD421d, ZD421t',
-    shortDescription: 'Moduł interfejsu szeregowego RS-232 do drukarek ZD411 i ZD421',
+    shortDescription: 'Interfejs RS-232 do drukarek Zebra ZD411d, ZD411t, ZD421d, ZD421t — moduł interfejsu szeregowego RS-232 do drukarek ZD411 i ZD421',
     description: `Moduł interfejsu szeregowego RS-232 Zebra do drukarek ZD411d, ZD411t, ZD421d i ZD421t. Umożliwia podłączenie drukarki do urządzeń i systemów wykorzystujących komunikację szeregową.
 
 Instalacja w slocie modularnym drukarki.`,
@@ -19522,7 +19522,7 @@ Instalacja w slocie modularnym drukarki.`,
     id: 'zebra-module-wifi-zd421',
     slug: 'zebra-modul-wifi-zd411-zd421-zd621',
     name: 'Moduł Wi-Fi do drukarek Zebra ZD411d, ZD411t, ZD421d, ZD421t, ZD621d',
-    shortDescription: 'Moduł bezprzewodowy Wi-Fi do drukarek ZD411, ZD421 i ZD621',
+    shortDescription: 'Moduł Wi-Fi do drukarek Zebra ZD411d, ZD411t, ZD421d, ZD421t, ZD621d — moduł bezprzewodowy Wi-Fi do drukarek ZD411, ZD421 i ZD621',
     description: `Moduł bezprzewodowy Wi-Fi Zebra do drukarek ZD411d, ZD411t, ZD421d, ZD421t i ZD621d. Prosta instalacja w slocie modularnym.
 
 Umożliwia druk bezprzewodowy z komputerów, tabletów i smartfonów przez sieć Wi-Fi.`,
@@ -19551,7 +19551,7 @@ Umożliwia druk bezprzewodowy z komputerów, tabletów i smartfonów przez sieć
     id: 'zebra-dispenser-zd421d',
     slug: 'zebra-odklejak-zd421d-zd621d',
     name: 'Dyspenser (odklejak) do drukarki Zebra ZD421d, ZD621d',
-    shortDescription: 'Moduł odklejaka do automatycznego odrywania etykiet od podłoża',
+    shortDescription: 'Dyspenser (odklejak) do drukarki Zebra ZD421d, ZD621d — moduł odklejaka do automatycznego odrywania etykiet od podłoża',
     description: `Dyspenser (odklejak/peeler) Zebra do drukarek ZD421d i ZD621d. Automatycznie odrywa etykietę od podłoża i podaje ją gotową do naklejenia. Czujnik label taken sensor wykrywa pobranie etykiety i uruchamia druk kolejnej.
 
 Montaż w terenie bez narzędzi — wystarczy wymienić standardową pokrywę na moduł odklejaka.`,
@@ -19580,7 +19580,7 @@ Montaż w terenie bez narzędzi — wystarczy wymienić standardową pokrywę na
     id: 'zebra-battery-module-zd421d',
     slug: 'zebra-modul-baterii-zd421d-zd621d',
     name: 'Moduł na baterię do drukarki Zebra ZD421d, ZD621d',
-    shortDescription: 'Moduł baterii do mobilnego drukowania bez kabla zasilającego',
+    shortDescription: 'Moduł na baterię do drukarki Zebra ZD421d, ZD621d — moduł baterii do mobilnego drukowania bez kabla zasilającego',
     description: `Moduł baterii Zebra do drukarek ZD421d i ZD621d. Umożliwia mobilne drukowanie bez podłączenia do zasilania sieciowego — idealny na stanowiska bez stałego dostępu do gniazdka.
 
 Bateria montowana bezpośrednio w drukarce, zapewnia kilka godzin pracy na jednym ładowaniu.`,
@@ -19608,7 +19608,7 @@ Bateria montowana bezpośrednio w drukarce, zapewnia kilka godzin pracy na jedny
     id: 'zebra-printhead-zd421d-203',
     slug: 'zebra-glowica-203dpi-zd421d',
     name: 'Oryginalna głowica 203 dpi do drukarki Zebra ZD421d',
-    shortDescription: 'Głowica drukująca 203 dpi do drukarek Zebra ZD421d',
+    shortDescription: 'Oryginalna głowica 203 dpi do drukarki Zebra ZD421d — głowica drukująca 203 dpi do drukarek Zebra ZD421d',
     description: `Oryginalna głowica drukująca Zebra 203 dpi do drukarek termicznych ZD421d. Zapewnia ostrą, wyraźną jakość druku kodów kreskowych, tekstu i grafiki w standardowej rozdzielczości.
 
 Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotność drukarki. Zalecana w przypadku widocznego spadku jakości druku lub uszkodzenia mechanicznego.`,
@@ -19636,7 +19636,7 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     id: 'zebra-printhead-zd421d-300',
     slug: 'zebra-glowica-300dpi-zd421d',
     name: 'Oryginalna głowica 300 dpi do drukarki Zebra ZD421d',
-    shortDescription: 'Głowica drukująca 300 dpi do drukarek Zebra ZD421d',
+    shortDescription: 'Oryginalna głowica 300 dpi do drukarki Zebra ZD421d — głowica drukująca 300 dpi do drukarek Zebra ZD421d',
     description: `Oryginalna głowica drukująca Zebra 300 dpi do drukarek termicznych ZD421d. Zapewnia najwyższą jakość druku — idealna do bardzo małych kodów 2D (QR Code, DataMatrix), drobnego tekstu i grafiki o wysokiej szczegółowości.
 
 Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotność drukarki.`,
@@ -19664,7 +19664,7 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     id: 'zebra-platen-roller-zd421d-203',
     slug: 'zebra-walek-dociskowy-203dpi-zd421d-zd621d',
     name: 'Wałek dociskowy (203 dpi) do drukarki Zebra ZD421d, ZD621d',
-    shortDescription: 'Wałek dociskowy do głowicy 203 dpi w drukarkach ZD421d i ZD621d',
+    shortDescription: 'Wałek dociskowy (203 dpi) do drukarki Zebra ZD421d, ZD621d — wałek dociskowy do głowicy 203 dpi w drukarkach ZD421d i ZD621d',
     description: `Oryginalny wałek dociskowy (platen roller) Zebra do drukarek ZD421d i ZD621d wyposażonych w głowicę 203 dpi. Zapewnia równomierny docisk etykiety do głowicy drukującej.
 
 Wymiana wałka zalecana w przypadku nierównomiernego druku lub widocznego zużycia.`,
@@ -19692,7 +19692,7 @@ Wymiana wałka zalecana w przypadku nierównomiernego druku lub widocznego zuży
     id: 'zebra-platen-roller-zd421d-300',
     slug: 'zebra-walek-dociskowy-300dpi-zd421d-zd621d',
     name: 'Wałek dociskowy (300 dpi) do drukarki Zebra ZD421d, ZD621d',
-    shortDescription: 'Wałek dociskowy do głowicy 300 dpi w drukarkach ZD421d i ZD621d',
+    shortDescription: 'Wałek dociskowy (300 dpi) do drukarki Zebra ZD421d, ZD621d — wałek dociskowy do głowicy 300 dpi w drukarkach ZD421d i ZD621d',
     description: `Oryginalny wałek dociskowy (platen roller) Zebra do drukarek ZD421d i ZD621d wyposażonych w głowicę 300 dpi. Zapewnia równomierny docisk etykiety do głowicy drukującej.
 
 Wymiana wałka zalecana w przypadku nierównomiernego druku lub widocznego zużycia.`,
@@ -19720,7 +19720,7 @@ Wymiana wałka zalecana w przypadku nierównomiernego druku lub widocznego zuży
     id: 'zebra-printhead-zd220t-203',
     slug: 'zebra-glowica-203dpi-zd220t',
     name: 'Głowica 203dpi do drukarki Zebra ZD220t / ZD230t',
-    shortDescription: 'Oryginalna głowica drukująca 203 dpi do drukarek Zebra ZD220t i ZD230t',
+    shortDescription: 'Głowica 203dpi do drukarki Zebra ZD220t / ZD230t — oryginalna głowica drukująca 203 dpi do drukarek Zebra ZD220t i ZD230t',
     description: `Oryginalna głowica drukująca Zebra 203 dpi do drukarek termotransferowych ZD220t i ZD230t. Zapewnia ostrą, wyraźną jakość druku kodów kreskowych i tekstu w standardowej rozdzielczości.
 
 Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotność drukarki. Zalecana w przypadku widocznego spadku jakości druku lub uszkodzenia mechanicznego.`,
@@ -19748,7 +19748,7 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     id: 'zebra-platen-roller-zd220t-203',
     slug: 'zebra-walek-dociskowy-203dpi-zd220t',
     name: 'Wałek dociskowy (dla głowicy 203dpi) do drukarki Zebra ZD220t / ZD230t',
-    shortDescription: 'Oryginalny wałek dociskowy do drukarek Zebra ZD220t i ZD230t z głowicą 203 dpi',
+    shortDescription: 'Wałek dociskowy (dla głowicy 203dpi) do drukarki Zebra ZD220t / ZD230t — oryginalny wałek dociskowy do drukarek Zebra ZD220t i ZD230t z głowicą 203 dpi',
     description: `Oryginalny wałek dociskowy Zebra przeznaczony do drukarek ZD220t i ZD230t wyposażonych w głowicę 203 dpi. Zapewnia równomierny docisk materiału do głowicy drukującej, co przekłada się na wysoką jakość wydruku.
 
 Wymiana wałka dociskowego zalecana jest w przypadku widocznego zużycia powierzchni lub nierównego jakości druku.`,
@@ -19775,7 +19775,7 @@ Wymiana wałka dociskowego zalecana jest w przypadku widocznego zużycia powierz
     id: 'zebra-power-supply-zd220',
     slug: 'zebra-zasilacz-zd220',
     name: 'Zasilacz sieciowy do drukarki Zebra ZD220 / ZD230',
-    shortDescription: 'Oryginalny zasilacz sieciowy 24V do drukarek Zebra ZD220d, ZD220t, ZD230d, ZD230t',
+    shortDescription: 'Zasilacz sieciowy do drukarki Zebra ZD220 / ZD230 — oryginalny zasilacz sieciowy 24V do drukarek Zebra ZD220d, ZD220t, ZD230d, ZD230t',
     description: `Oryginalny zasilacz sieciowy Zebra do drukarek biurkowych serii ZD220 i ZD230. Parametry wyjściowe 24V / 2,5A (60W) zapewniają stabilne zasilanie drukarki.
 
 Zasilacz jest kompatybilny z modelami ZD220d, ZD220t, ZD230d i ZD230t. Zalecany jako zamiennik uszkodzonego zasilacza lub jako zapasowy do drugiego stanowiska.`,
@@ -19804,7 +19804,7 @@ Zasilacz jest kompatybilny z modelami ZD220d, ZD220t, ZD230d i ZD230t. Zalecany 
     id: 'zebra-printhead-zd220d-203',
     slug: 'zebra-glowica-203dpi-zd220d',
     name: 'Głowica 203dpi do drukarki Zebra ZD220d / ZD230d',
-    shortDescription: 'Oryginalna głowica drukująca 203 dpi do drukarek Zebra ZD220d i ZD230d',
+    shortDescription: 'Głowica 203dpi do drukarki Zebra ZD220d / ZD230d — oryginalna głowica drukująca 203 dpi do drukarek Zebra ZD220d i ZD230d',
     description: `Oryginalna głowica drukująca Zebra 203 dpi do drukarek termicznych bezpośrednich ZD220d i ZD230d. Zapewnia ostrą, wyraźną jakość druku kodów kreskowych i tekstu w standardowej rozdzielczości.
 
 Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotność drukarki. Zalecana w przypadku widocznego spadku jakości druku lub uszkodzenia mechanicznego.`,
@@ -19832,7 +19832,7 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     id: 'zebra-platen-roller-zd220d-203',
     slug: 'zebra-walek-dociskowy-203dpi-zd220d',
     name: 'Wałek dociskowy (dla głowicy 203dpi) do drukarki Zebra ZD220d / ZD230d',
-    shortDescription: 'Oryginalny wałek dociskowy do drukarek Zebra ZD220d i ZD230d z głowicą 203 dpi',
+    shortDescription: 'Wałek dociskowy (dla głowicy 203dpi) do drukarki Zebra ZD220d / ZD230d — oryginalny wałek dociskowy do drukarek Zebra ZD220d i ZD230d z głowicą 203 dpi',
     description: `Oryginalny wałek dociskowy Zebra przeznaczony do drukarek ZD220d i ZD230d wyposażonych w głowicę 203 dpi. Zapewnia równomierny docisk materiału do głowicy drukującej, co przekłada się na wysoką jakość wydruku.
 
 Wymiana wałka dociskowego zalecana jest w przypadku widocznego zużycia powierzchni lub nierównego jakości druku.`,
@@ -19866,7 +19866,7 @@ const printerAccessoriesZD621: Product[] = [
     id: 'zebra-printhead-zd621d-203',
     slug: 'zebra-glowica-203dpi-zd621d',
     name: 'Głowica 203 dpi do drukarki Zebra ZD621d',
-    shortDescription: 'Oryginalna głowica drukująca 203 dpi do drukarki Zebra ZD621d',
+    shortDescription: 'Głowica 203 dpi do drukarki Zebra ZD621d — oryginalna głowica drukująca 203 dpi do drukarki Zebra ZD621d',
     description: `Oryginalna głowica drukująca Zebra 203 dpi do drukarki termicznej ZD621d. Zapewnia ostrą, wyraźną jakość druku kodów kreskowych, tekstu i grafiki w standardowej rozdzielczości.
 
 Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotność drukarki. Zalecana w przypadku widocznego spadku jakości druku lub uszkodzenia mechanicznego. Uwaga: głowica ZD621d (P1112640-050) jest inna niż głowica ZD621t (P1112640-240).`,
@@ -19894,7 +19894,7 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     id: 'zebra-printhead-zd621d-300',
     slug: 'zebra-glowica-300dpi-zd621d',
     name: 'Głowica 300 dpi do drukarki Zebra ZD621d',
-    shortDescription: 'Oryginalna głowica drukująca 300 dpi do drukarki Zebra ZD621d',
+    shortDescription: 'Głowica 300 dpi do drukarki Zebra ZD621d — oryginalna głowica drukująca 300 dpi do drukarki Zebra ZD621d',
     description: `Oryginalna głowica drukująca Zebra 300 dpi do drukarki termicznej ZD621d. Zapewnia najwyższą jakość druku — idealna do bardzo małych kodów 2D (QR Code, DataMatrix), drobnego tekstu i grafiki o wysokiej szczegółowości.
 
 Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotność drukarki. Uwaga: głowica ZD621d (P1112640-051) jest inna niż głowica ZD621t (P1112640-241).`,
@@ -19922,7 +19922,7 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     id: 'zebra-printhead-zd621t-203',
     slug: 'zebra-glowica-203dpi-zd621t',
     name: 'Głowica 203dpi do drukarki Zebra ZD621t',
-    shortDescription: 'Oryginalna głowica drukująca 203 dpi do drukarki Zebra ZD621t',
+    shortDescription: 'Głowica 203dpi do drukarki Zebra ZD621t — oryginalna głowica drukująca 203 dpi do drukarki Zebra ZD621t',
     description: `Oryginalna głowica drukująca Zebra 203 dpi do drukarki termotransferowej ZD621t. Zapewnia ostrą, wyraźną jakość druku kodów kreskowych i tekstu w standardowej rozdzielczości.
 
 Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotność drukarki. Zalecana w przypadku widocznego spadku jakości druku lub uszkodzenia mechanicznego.`,
@@ -19950,7 +19950,7 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     id: 'zebra-printhead-zd621t-300',
     slug: 'zebra-glowica-300dpi-zd621t',
     name: 'Głowica 300dpi do drukarki Zebra ZD621t',
-    shortDescription: 'Oryginalna głowica drukująca 300 dpi do drukarki Zebra ZD621t',
+    shortDescription: 'Głowica 300dpi do drukarki Zebra ZD621t — oryginalna głowica drukująca 300 dpi do drukarki Zebra ZD621t',
     description: `Oryginalna głowica drukująca Zebra 300 dpi do drukarki termotransferowej ZD621t. Wyższa rozdzielczość zapewnia doskonałą jakość druku małych kodów kreskowych, drobnego tekstu i grafik.
 
 Zalecana wymiana po widocznym spadku jakości druku lub uszkodzeniu mechanicznym.`,
@@ -19978,7 +19978,7 @@ Zalecana wymiana po widocznym spadku jakości druku lub uszkodzeniu mechanicznym
     id: 'zebra-platen-roller-zd621t-203',
     slug: 'zebra-walek-dociskowy-203dpi-zd621t',
     name: 'Wałek dociskowy (dla głowicy 203dpi) do drukarki Zebra ZD621t',
-    shortDescription: 'Oryginalny wałek dociskowy do drukarki Zebra ZD621t z głowicą 203 dpi',
+    shortDescription: 'Wałek dociskowy (dla głowicy 203dpi) do drukarki Zebra ZD621t — oryginalny wałek dociskowy do drukarki Zebra ZD621t z głowicą 203 dpi',
     description: `Oryginalny wałek dociskowy Zebra przeznaczony do drukarek ZD621t wyposażonych w głowicę 203 dpi. Zapewnia równomierny docisk materiału do głowicy drukującej, co przekłada się na wysoką jakość wydruku.
 
 Wymiana wałka zalecana w przypadku widocznych śladów zużycia lub nierównomiernego druku.`,
@@ -20005,7 +20005,7 @@ Wymiana wałka zalecana w przypadku widocznych śladów zużycia lub nierównomi
     id: 'zebra-platen-roller-zd621t-300',
     slug: 'zebra-walek-dociskowy-300dpi-zd621t',
     name: 'Wałek dociskowy (dla głowicy 300dpi) do drukarki Zebra ZD621t',
-    shortDescription: 'Oryginalny wałek dociskowy do drukarki Zebra ZD621t z głowicą 300 dpi',
+    shortDescription: 'Wałek dociskowy (dla głowicy 300dpi) do drukarki Zebra ZD621t — oryginalny wałek dociskowy do drukarki Zebra ZD621t z głowicą 300 dpi',
     description: `Oryginalny wałek dociskowy Zebra przeznaczony do drukarek ZD621t wyposażonych w głowicę 300 dpi. Zapewnia równomierny docisk materiału do głowicy drukującej.
 
 Wymiana wałka zalecana w przypadku widocznych śladów zużycia lub nierównomiernego druku.`,
@@ -20032,7 +20032,7 @@ Wymiana wałka zalecana w przypadku widocznych śladów zużycia lub nierównomi
     id: 'zebra-cutter-zd621t',
     slug: 'zebra-gilotyna-zd621t',
     name: 'Gilotyna do drukarki Zebra ZD621t',
-    shortDescription: 'Moduł gilotyny do automatycznego odcinania etykiet w drukarce ZD621t',
+    shortDescription: 'Gilotyna do drukarki Zebra ZD621t — moduł gilotyny do automatycznego odcinania etykiet w drukarce ZD621t',
     description: `Moduł gilotyny Zebra do drukarki ZD621t. Automatycznie odcina etykiety po wydrukowaniu, usprawniając pracę i eliminując konieczność ręcznego odrywania.
 
 Prosty montaż — wystarczy wymienić przednią pokrywę drukarki na moduł z gilotyną.`,
@@ -20060,7 +20060,7 @@ Prosty montaż — wystarczy wymienić przednią pokrywę drukarki na moduł z g
     id: 'zebra-dispenser-zd621t',
     slug: 'zebra-dyspenser-zd621t',
     name: 'Dyspenser do drukarki Zebra ZD421c, ZD621t',
-    shortDescription: 'Moduł odklejaka (dyspensera) etykiet do drukarek ZD421c i ZD621t',
+    shortDescription: 'Dyspenser do drukarki Zebra ZD421c, ZD621t — moduł odklejaka (dyspensera) etykiet do drukarek ZD421c i ZD621t',
     description: `Moduł dyspensera (odklejaka) Zebra do drukarek ZD421c i ZD621t. Automatycznie odkleja etykietę od podkładu po wydrukowaniu, gotową do natychmiastowego naklejenia.
 
 Znacząco przyspiesza proces etykietowania — operator pobiera już odklejoną etykietę i od razu ją aplikuje.`,
@@ -20088,7 +20088,7 @@ Znacząco przyspiesza proces etykietowania — operator pobiera już odklejoną 
     id: 'zebra-module-ethernet-rs232-zd621',
     slug: 'zebra-modul-ethernet-rs232-zd621t',
     name: 'Moduł Ethernet i RS-232 do drukarki Zebra ZD621t',
-    shortDescription: 'Moduł rozszerzający łączność o Ethernet 10/100 i RS-232',
+    shortDescription: 'Moduł Ethernet i RS-232 do drukarki Zebra ZD621t — moduł rozszerzający łączność o Ethernet 10/100 i RS-232',
     description: `Moduł Ethernet i RS-232 Zebra do drukarki ZD621t. Umożliwia jednoczesne podłączenie drukarki do sieci LAN i komunikację szeregową RS-232.
 
 Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi.`,
@@ -20117,7 +20117,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi.`,
     id: 'zebra-module-wifi-zd621t',
     slug: 'zebra-modul-wifi-zd421c-zd621t',
     name: 'Moduł WiFi do drukarki Zebra ZD421c, ZD621t',
-    shortDescription: 'Moduł bezprzewodowy Wi-Fi do drukarek ZD421c i ZD621t',
+    shortDescription: 'Moduł WiFi do drukarki Zebra ZD421c, ZD621t — moduł bezprzewodowy Wi-Fi do drukarek ZD421c i ZD621t',
     description: `Moduł bezprzewodowy Wi-Fi Zebra do drukarek ZD421c i ZD621t. Prosta instalacja w slocie modularnym.
 
 Umożliwia druk bezprzewodowy z komputerów, tabletów i smartfonów przez sieć Wi-Fi.`,
@@ -20146,7 +20146,7 @@ Umożliwia druk bezprzewodowy z komputerów, tabletów i smartfonów przez sieć
     id: 'zebra-power-supply-zd421-zd621',
     slug: 'zebra-zasilacz-zd411-zd421-zd621',
     name: 'Zasilacz sieciowy do drukarki Zebra ZD411, ZD421, ZD621',
-    shortDescription: 'Oryginalny zasilacz sieciowy do drukarek Zebra ZD411, ZD421 i ZD621',
+    shortDescription: 'Zasilacz sieciowy do drukarki Zebra ZD411, ZD421, ZD621 — oryginalny zasilacz sieciowy do drukarek Zebra ZD411, ZD421 i ZD621',
     description: `Oryginalny zasilacz sieciowy Zebra do drukarek biurkowych serii ZD411, ZD421 i ZD621. Zapewnia stabilne zasilanie drukarki.
 
 Zalecany jako zamiennik uszkodzonego zasilacza lub jako zapasowy do drugiego stanowiska.`,
@@ -20175,7 +20175,7 @@ Zalecany jako zamiennik uszkodzonego zasilacza lub jako zapasowy do drugiego sta
     id: 'zebra-printhead-zt111-203',
     slug: 'zebra-glowica-203dpi-zt111-zt231',
     name: 'Głowica 203 dpi do drukarki Zebra ZT111, ZT231',
-    shortDescription: 'Oryginalna głowica drukująca 203 dpi do drukarek Zebra ZT111 i ZT231',
+    shortDescription: 'Głowica 203 dpi do drukarki Zebra ZT111, ZT231 — oryginalna głowica drukująca 203 dpi do drukarek Zebra ZT111 i ZT231',
     description: `Oryginalna głowica drukująca Zebra 203 dpi do drukarek przemysłowych ZT111 i ZT231. Zapewnia ostrą, wyraźną jakość druku kodów kreskowych i tekstu w standardowej rozdzielczości.
 
 Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotność drukarki. Zalecana w przypadku widocznego spadku jakości druku lub uszkodzenia mechanicznego.`,
@@ -20203,7 +20203,7 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     id: 'zebra-printhead-zt111-300',
     slug: 'zebra-glowica-300dpi-zt111-zt231',
     name: 'Głowica 300 dpi do drukarki Zebra ZT111, ZT231',
-    shortDescription: 'Oryginalna głowica drukująca 300 dpi do drukarek Zebra ZT111 i ZT231',
+    shortDescription: 'Głowica 300 dpi do drukarki Zebra ZT111, ZT231 — oryginalna głowica drukująca 300 dpi do drukarek Zebra ZT111 i ZT231',
     description: `Oryginalna głowica drukująca Zebra 300 dpi do drukarek przemysłowych ZT111 i ZT231. Wyższa rozdzielczość zapewnia doskonałą jakość druku małych kodów kreskowych, drobnego tekstu i grafik.
 
 Zalecana wymiana po widocznym spadku jakości druku lub uszkodzeniu mechanicznym.`,
@@ -20231,7 +20231,7 @@ Zalecana wymiana po widocznym spadku jakości druku lub uszkodzeniu mechanicznym
     id: 'zebra-platen-roller-zt111',
     slug: 'zebra-walek-dociskowy-zt220-zt230-zt231',
     name: 'Wałek dociskowy do drukarki Zebra ZT220, ZT230, ZT231',
-    shortDescription: 'Oryginalny wałek dociskowy do drukarek Zebra ZT220, ZT230 i ZT231',
+    shortDescription: 'Wałek dociskowy do drukarki Zebra ZT220, ZT230, ZT231 — oryginalny wałek dociskowy do drukarek Zebra ZT220, ZT230 i ZT231',
     description: `Oryginalny wałek dociskowy (platen roller) Zebra do drukarek przemysłowych ZT220, ZT230 i ZT231. Zapewnia równomierny docisk materiału do głowicy drukującej, co przekłada się na wysoką jakość wydruku.
 
 Wymiana wałka zalecana w przypadku widocznych śladów zużycia lub nierównomiernego druku.`,
@@ -20258,7 +20258,7 @@ Wymiana wałka zalecana w przypadku widocznych śladów zużycia lub nierównomi
     id: 'zebra-cutter-zt111',
     slug: 'zebra-gilotyna-zt111-zt231',
     name: 'Gilotyna do drukarki Zebra ZT111, ZT231',
-    shortDescription: 'Moduł gilotyny do automatycznego odcinania etykiet w drukarkach ZT111 i ZT231',
+    shortDescription: 'Gilotyna do drukarki Zebra ZT111, ZT231 — moduł gilotyny do automatycznego odcinania etykiet w drukarkach ZT111 i ZT231',
     description: `Moduł gilotyny Zebra do drukarek przemysłowych ZT111 i ZT231. Automatycznie odcina etykiety po wydrukowaniu, usprawniając pracę i eliminując konieczność ręcznego odrywania.
 
 Idealny do zastosowań wymagających precyzyjnego cięcia etykiet o różnych długościach.`,
@@ -20285,7 +20285,7 @@ Idealny do zastosowań wymagających precyzyjnego cięcia etykiet o różnych d�
     id: 'zebra-dispenser-zt111',
     slug: 'zebra-dyspenser-zt111-zt231',
     name: 'Dyspenser (odklejak) do drukarki Zebra ZT111, ZT231',
-    shortDescription: 'Moduł odklejaka do automatycznego odrywania etykiet od podłoża',
+    shortDescription: 'Dyspenser (odklejak) do drukarki Zebra ZT111, ZT231 — moduł odklejaka do automatycznego odrywania etykiet od podłoża',
     description: `Dyspenser (odklejak/peeler) Zebra do drukarek przemysłowych ZT111 i ZT231. Automatycznie odkleja etykietę od podkładu po wydrukowaniu, gotową do natychmiastowego naklejenia.
 
 Znacząco przyspiesza proces etykietowania — operator pobiera już odklejoną etykietę i od razu ją aplikuje.`,
@@ -20312,7 +20312,7 @@ Znacząco przyspiesza proces etykietowania — operator pobiera już odklejoną 
     id: 'zebra-module-wifi-zt111',
     slug: 'zebra-modul-wifi-zt111-zt231-zt411-zt421-zt510-zt610-zt620',
     name: 'Interfejs Wi-Fi do drukarek Zebra ZT111, ZT231, ZT411, ZT421, ZT510, ZT610, ZT620',
-    shortDescription: 'Moduł bezprzewodowy Wi-Fi do drukarek przemysłowych Zebra',
+    shortDescription: 'Interfejs Wi-Fi do drukarek Zebra ZT111, ZT231, ZT411, ZT421, ZT510, ZT610, ZT620 — moduł bezprzewodowy Wi-Fi do drukarek przemysłowych Zebra',
     description: `Moduł bezprzewodowy Wi-Fi Zebra do drukarek przemysłowych ZT111, ZT231, ZT411, ZT421, ZT510, ZT610 i ZT620. Prosta instalacja w slocie modularnym drukarki.
 
 Umożliwia druk bezprzewodowy z komputerów, tabletów i smartfonów przez sieć Wi-Fi.`,
@@ -20340,7 +20340,7 @@ Umożliwia druk bezprzewodowy z komputerów, tabletów i smartfonów przez sieć
     id: 'zebra-module-ethernet-zt111',
     slug: 'zebra-modul-ethernet-zt111-zt231-zt411',
     name: 'Interfejs Ethernet do drukarek Zebra ZT111, ZT231, ZT411',
-    shortDescription: 'Moduł rozszerzający łączność o Ethernet 10/100',
+    shortDescription: 'Interfejs Ethernet do drukarek Zebra ZT111, ZT231, ZT411 — moduł rozszerzający łączność o Ethernet 10/100',
     description: `Moduł Ethernet Zebra do drukarek przemysłowych ZT111, ZT231 i ZT411. Umożliwia podłączenie drukarki do sieci przewodowej LAN.
 
 Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealne dla drukarek zakupionych w wersji bazowej wymagających rozszerzenia o łączność sieciową.`,
@@ -20368,7 +20368,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-printhead-zt411-203',
     slug: 'zebra-glowica-203dpi-zt411',
     name: 'Głowica 203 dpi do drukarki Zebra ZT411, ZT411R',
-    shortDescription: 'Oryginalna głowica drukująca 203 dpi do drukarek Zebra ZT411 i ZT411R',
+    shortDescription: 'Głowica 203 dpi do drukarki Zebra ZT411, ZT411R — oryginalna głowica drukująca 203 dpi do drukarek Zebra ZT411 i ZT411R',
     description: 'Oryginalna głowica drukująca Zebra 203 dpi (8 dots/mm) do drukarek przemysłowych ZT411 i ZT411R. Technologia E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła i ostry nadruk. Żywotność ok. 50–150 km druku.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20394,7 +20394,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-printhead-zt411-300',
     slug: 'zebra-glowica-300dpi-zt411',
     name: 'Głowica 300 dpi do drukarki Zebra ZT411, ZT411R',
-    shortDescription: 'Oryginalna głowica drukująca 300 dpi do drukarek Zebra ZT411 i ZT411R',
+    shortDescription: 'Głowica 300 dpi do drukarki Zebra ZT411, ZT411R — oryginalna głowica drukująca 300 dpi do drukarek Zebra ZT411 i ZT411R',
     description: 'Oryginalna głowica drukująca Zebra 300 dpi (12 dots/mm) do drukarek przemysłowych ZT411 i ZT411R. Do drobnych kodów 2D i etykiet cenowych.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20420,7 +20420,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-printhead-zt411-600',
     slug: 'zebra-glowica-600dpi-zt411',
     name: 'Głowica 600 dpi do drukarki Zebra ZT411, ZT411R',
-    shortDescription: 'Oryginalna głowica drukująca 600 dpi do drukarek Zebra ZT411 i ZT411R',
+    shortDescription: 'Głowica 600 dpi do drukarki Zebra ZT411, ZT411R — oryginalna głowica drukująca 600 dpi do drukarek Zebra ZT411 i ZT411R',
     description: 'Oryginalna głowica drukująca Zebra 600 dpi (24 dots/mm) do drukarek ZT411 i ZT411R. Do mikro-etykiet elektronicznych i jubilerskich.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20446,7 +20446,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-platen-zt411',
     slug: 'zebra-walek-dociskowy-zt410-zt411',
     name: 'Wałek dociskowy do drukarki Zebra ZT410, ZT411',
-    shortDescription: 'Oryginalny wałek dociskowy (platen roller) do drukarek Zebra ZT410 i ZT411',
+    shortDescription: 'Wałek dociskowy do drukarki Zebra ZT410, ZT411 — oryginalny wałek dociskowy (platen roller) do drukarek Zebra ZT410 i ZT411',
     description: 'Oryginalny wałek dociskowy Zebra do drukarek ZT410 i ZT411. Zapewnia równomierny docisk mediów do głowicy drukującej.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20471,7 +20471,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-cutter-zt411',
     slug: 'zebra-gilotyna-zt410-zt411',
     name: 'Gilotyna (cutter) do drukarki Zebra ZT410, ZT411',
-    shortDescription: 'Moduł gilotyny do automatycznego odcinania etykiet w drukarkach ZT410 i ZT411',
+    shortDescription: 'Gilotyna (cutter) do drukarki Zebra ZT410, ZT411 — moduł gilotyny do automatycznego odcinania etykiet w drukarkach ZT410 i ZT411',
     description: 'Oryginalny moduł gilotyny Zebra do drukarek przemysłowych ZT410 i ZT411. Automatyczne odcinanie etykiet po wydruku. Montaż w terenie.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20496,7 +20496,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-dispenser-zt411',
     slug: 'zebra-dyspenser-zt411-zt421',
     name: 'Dyspenser (odklejak) do drukarki Zebra ZT411, ZT421',
-    shortDescription: 'Moduł odklejaka do automatycznego odrywania etykiet od podłoża',
+    shortDescription: 'Dyspenser (odklejak) do drukarki Zebra ZT411, ZT421 — moduł odklejaka do automatycznego odrywania etykiet od podłoża',
     description: 'Oryginalny moduł dyspensera Zebra do drukarek ZT411 i ZT421. Automatycznie oddziela etykietę od podłoża (liner) podczas druku.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20521,7 +20521,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-rewind-zt411',
     slug: 'zebra-nawijak-podkladu-zt410-zt411',
     name: 'Nawijak podkładu do drukarki Zebra ZT410, ZT411',
-    shortDescription: 'Moduł nawijaka podkładu (liner takeup) do drukarek ZT410 i ZT411',
+    shortDescription: 'Nawijak podkładu do drukarki Zebra ZT410, ZT411 — moduł nawijaka podkładu (liner takeup) do drukarek ZT410 i ZT411',
     description: 'Oryginalny nawijak podkładu Zebra do drukarek ZT410 i ZT411. Nawija zużyty liner po odklejeniu etykiety, utrzymując porządek na stanowisku.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20546,7 +20546,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-resolution-converter-zt411',
     slug: 'zebra-konwerter-rozdzielczosci-zt410-zt411',
     name: 'Konwerter rozdzielczości 203/600→300 dpi do Zebra ZT410, ZT411',
-    shortDescription: 'Zestaw konwersji rozdzielczości z 203 lub 600 dpi na 300 dpi',
+    shortDescription: 'Konwerter rozdzielczości 203/600→300 dpi do Zebra ZT410, ZT411 — zestaw konwersji rozdzielczości z 203 lub 600 dpi na 300 dpi',
     description: 'Oryginalny zestaw konwersji rozdzielczości Zebra do drukarek ZT410 i ZT411. Pozwala zmienić rozdzielczość drukarki z 203 dpi lub 600 dpi na 300 dpi.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20572,7 +20572,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-keyboard-zkdu',
     slug: 'zebra-klawiatura-zkdu-001-00',
     name: 'Klawiatura do drukarek Zebra (ZKDU-001-00)',
-    shortDescription: 'Zewnętrzna klawiatura do drukarek przemysłowych Zebra — standalone printing',
+    shortDescription: 'Klawiatura do drukarek Zebra (ZKDU-001-00) — zewnętrzna klawiatura do drukarek przemysłowych Zebra, standalone printing',
     description: 'Klawiatura Zebra ZKDU-001-00 do drukarek przemysłowych. Umożliwia druk bez komputera — bezpośredni wybór formatu etykiet i wprowadzanie zmiennych danych.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20596,7 +20596,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-lpt-zt411',
     slug: 'zebra-interfejs-lpt-zt410-zt411-zt420-zt421',
     name: 'Interfejs LPT (równoległy) do Zebra ZT410, ZT411, ZT420, ZT421',
-    shortDescription: 'Moduł rozszerzający o port LPT (Centronics) do drukarek przemysłowych Zebra',
+    shortDescription: 'Interfejs LPT (równoległy) do Zebra ZT410, ZT411, ZT420, ZT421 — moduł rozszerzający o port LPT (Centronics) do drukarek przemysłowych Zebra',
     description: 'Moduł interfejsu równoległego LPT Zebra do drukarek ZT410, ZT411, ZT420 i ZT421. Instalacja w slocie modularnym.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20622,7 +20622,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-rfid-zt411',
     slug: 'zebra-modul-rfid-zt410-zt411-zt420-zt421',
     name: 'Moduł RFID UHF do Zebra ZT410, ZT411, ZT420, ZT421',
-    shortDescription: 'Moduł RFID UHF do kodowania tagów RFID podczas druku',
+    shortDescription: 'Moduł RFID UHF do Zebra ZT410, ZT411, ZT420, ZT421 — moduł RFID UHF do kodowania tagów RFID podczas druku',
     description: 'Moduł RFID UHF Zebra do drukarek ZT410, ZT411, ZT420 i ZT421. Kodowanie tagów RFID EPC Gen 2 V2 / ISO 18000-6C bezpośrednio podczas druku etykiet. Adaptacyjna technologia kalibracji.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20649,7 +20649,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-printhead-zt421-203',
     slug: 'zebra-glowica-203dpi-zt421',
     name: 'Głowica 203 dpi do drukarki Zebra ZT420, ZT421',
-    shortDescription: 'Oryginalna głowica drukująca 203 dpi do drukarek Zebra ZT420 i ZT421 (6")',
+    shortDescription: 'Głowica 203 dpi do drukarki Zebra ZT420, ZT421 — oryginalna głowica drukująca 203 dpi do drukarek Zebra ZT420 i ZT421 (6")',
     description: 'Oryginalna głowica drukująca Zebra 203 dpi (8 dots/mm) do drukarek przemysłowych ZT420 i ZT421 (seria 6"). Technologia E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła na całej szerokości 168 mm. Żywotność ok. 50–150 km druku.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20676,7 +20676,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-printhead-zt421-300',
     slug: 'zebra-glowica-300dpi-zt421',
     name: 'Głowica 300 dpi do drukarki Zebra ZT420, ZT421',
-    shortDescription: 'Oryginalna głowica drukująca 300 dpi do drukarek Zebra ZT420 i ZT421 (6")',
+    shortDescription: 'Głowica 300 dpi do drukarki Zebra ZT420, ZT421 — oryginalna głowica drukująca 300 dpi do drukarek Zebra ZT420 i ZT421 (6")',
     description: 'Oryginalna głowica drukująca Zebra 300 dpi (12 dots/mm) do drukarek przemysłowych ZT420 i ZT421 (seria 6"). Do drobnych kodów 2D i szczegółowych etykiet na szerokich mediach 168 mm.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20703,7 +20703,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-platen-zt421',
     slug: 'zebra-walek-dociskowy-zt420-zt421',
     name: 'Wałek dociskowy do drukarki Zebra ZT420, ZT421',
-    shortDescription: 'Oryginalny wałek dociskowy (platen roller) do drukarek Zebra ZT420 i ZT421 (6")',
+    shortDescription: 'Wałek dociskowy do drukarki Zebra ZT420, ZT421 — oryginalny wałek dociskowy (platen roller) do drukarek Zebra ZT420 i ZT421 (6")',
     description: 'Oryginalny wałek dociskowy Zebra do drukarek ZT420 i ZT421 (seria 6"). Zapewnia równomierny docisk mediów do głowicy drukującej na całej szerokości 168 mm.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20728,7 +20728,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-ethernet-zt421',
     slug: 'zebra-modul-ethernet-zt411-zt421',
     name: 'Interfejs Ethernet do drukarek Zebra ZT411, ZT421',
-    shortDescription: 'Moduł rozszerzający łączność o Ethernet 10/100 do drukarek ZT411 i ZT421',
+    shortDescription: 'Interfejs Ethernet do drukarek Zebra ZT411, ZT421 — moduł rozszerzający łączność o Ethernet 10/100 do drukarek ZT411 i ZT421',
     description: 'Moduł Ethernet Zebra do drukarek przemysłowych ZT411 i ZT421. Umożliwia podłączenie drukarki do sieci przewodowej LAN. Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20753,7 +20753,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-cutter-zt421',
     slug: 'zebra-gilotyna-zt421',
     name: 'Gilotyna (cutter) do drukarki Zebra ZT421',
-    shortDescription: 'Moduł gilotyny do automatycznego odcinania etykiet w drukarce ZT421 (6")',
+    shortDescription: 'Gilotyna (cutter) do drukarki Zebra ZT421 — moduł gilotyny do automatycznego odcinania etykiet w drukarce ZT421 (6")',
     description: 'Oryginalny moduł gilotyny Zebra do drukarki przemysłowej ZT421 (6"). Automatyczne odcinanie etykiet po wydruku. Montaż w terenie — nie wymaga serwisu fabrycznego.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20778,7 +20778,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-resolution-converter-zt421',
     slug: 'zebra-konwerter-rozdzielczosci-zt420-zt421',
     name: 'Konwerter rozdzielczości 203→300 dpi do Zebra ZT420, ZT421',
-    shortDescription: 'Zestaw konwersji rozdzielczości z 203 dpi na 300 dpi do drukarek ZT420 i ZT421',
+    shortDescription: 'Konwerter rozdzielczości 203→300 dpi do Zebra ZT420, ZT421 — zestaw konwersji rozdzielczości z 203 dpi na 300 dpi do drukarek ZT420 i ZT421',
     description: 'Oryginalny zestaw konwersji rozdzielczości Zebra do drukarek ZT420 i ZT421 (6"). Pozwala zmienić rozdzielczość drukarki z 203 dpi na 300 dpi. Zawiera głowicę 300 dpi i wałek dociskowy.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20805,7 +20805,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-printhead-zt610-203',
     slug: 'zebra-glowica-203dpi-zt610',
     name: 'Głowica 203 dpi do drukarki Zebra ZT610, ZT610R',
-    shortDescription: 'Oryginalna głowica drukująca 203 dpi do drukarek Zebra ZT610 i ZT610R',
+    shortDescription: 'Głowica 203 dpi do drukarki Zebra ZT610, ZT610R — oryginalna głowica drukująca 203 dpi do drukarek Zebra ZT610 i ZT610R',
     description: 'Oryginalna głowica drukująca Zebra 203 dpi (8 dots/mm) do drukarek przemysłowych ZT610 i ZT610R. Technologia E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła. Żywotność ok. 50–150 km druku.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20831,7 +20831,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-printhead-zt610-300',
     slug: 'zebra-glowica-300dpi-zt610',
     name: 'Głowica 300 dpi do drukarki Zebra ZT510, ZT610, ZT610R',
-    shortDescription: 'Oryginalna głowica drukująca 300 dpi do drukarek Zebra ZT510, ZT610 i ZT610R',
+    shortDescription: 'Głowica 300 dpi do drukarki Zebra ZT510, ZT610, ZT610R — oryginalna głowica drukująca 300 dpi do drukarek Zebra ZT510, ZT610 i ZT610R',
     description: 'Oryginalna głowica drukująca Zebra 300 dpi (12 dots/mm) do drukarek przemysłowych ZT510, ZT610 i ZT610R. Do drobnych kodów 2D, cenówek i szczegółowych etykiet.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20857,7 +20857,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-printhead-zt610-600',
     slug: 'zebra-glowica-600dpi-zt610',
     name: 'Głowica 600 dpi do drukarki Zebra ZT610, ZT610R',
-    shortDescription: 'Oryginalna głowica drukująca 600 dpi do drukarek Zebra ZT610 i ZT610R',
+    shortDescription: 'Głowica 600 dpi do drukarki Zebra ZT610, ZT610R — oryginalna głowica drukująca 600 dpi do drukarek Zebra ZT610 i ZT610R',
     description: 'Oryginalna głowica drukująca Zebra 600 dpi (24 dots/mm) do drukarek ZT610 i ZT610R. Do mikro-etykiet elektronicznych, jubilerskich i farmaceutycznych.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20883,7 +20883,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-platen-zt610',
     slug: 'zebra-walek-dociskowy-zt610',
     name: 'Wałek dociskowy do drukarki Zebra ZT610, ZT610R',
-    shortDescription: 'Oryginalny wałek dociskowy (platen roller) do drukarek Zebra ZT610 i ZT610R',
+    shortDescription: 'Wałek dociskowy do drukarki Zebra ZT610, ZT610R — oryginalny wałek dociskowy (platen roller) do drukarek Zebra ZT610 i ZT610R',
     description: 'Oryginalny wałek dociskowy Zebra do drukarek przemysłowych ZT610 i ZT610R. Zapewnia równomierny docisk mediów do głowicy drukującej.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20908,7 +20908,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-cutter-zt610',
     slug: 'zebra-gilotyna-zt610',
     name: 'Gilotyna (cutter) do drukarki Zebra ZT610, ZT610R',
-    shortDescription: 'Moduł gilotyny do automatycznego odcinania etykiet w drukarkach ZT610 i ZT610R',
+    shortDescription: 'Gilotyna (cutter) do drukarki Zebra ZT610, ZT610R — moduł gilotyny do automatycznego odcinania etykiet w drukarkach ZT610 i ZT610R',
     description: 'Oryginalny moduł gilotyny Zebra do drukarek przemysłowych ZT610 i ZT610R. Automatyczne odcinanie etykiet po wydruku. Montaż w terenie — nie wymaga serwisu fabrycznego.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20933,7 +20933,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-rewind-zt610',
     slug: 'zebra-nawijak-wewnetrzny-zt610',
     name: 'Wewnętrzny nawijak do drukarki Zebra ZT610, ZT610R',
-    shortDescription: 'Moduł nawijaka wewnętrznego do drukarek Zebra ZT610 i ZT610R',
+    shortDescription: 'Wewnętrzny nawijak do drukarki Zebra ZT610, ZT610R — moduł nawijaka wewnętrznego do drukarek Zebra ZT610 i ZT610R',
     description: 'Oryginalny moduł nawijaka wewnętrznego Zebra do drukarek ZT610 i ZT610R. Nawija gotowe etykiety wewnątrz drukarki po odklejeniu od podkładu.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20959,7 +20959,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-printhead-zt620-203',
     slug: 'zebra-glowica-203dpi-zt620',
     name: 'Głowica 203 dpi do drukarki Zebra ZT620, ZT620R',
-    shortDescription: 'Oryginalna głowica drukująca 203 dpi do drukarek Zebra ZT620 i ZT620R',
+    shortDescription: 'Głowica 203 dpi do drukarki Zebra ZT620, ZT620R — oryginalna głowica drukująca 203 dpi do drukarek Zebra ZT620 i ZT620R',
     description: 'Oryginalna głowica drukująca Zebra 203 dpi (8 dots/mm) do drukarek przemysłowych ZT620 i ZT620R. Technologia E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła na całej szerokości 168 mm. Żywotność ok. 50–150 km druku.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -20985,7 +20985,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-printhead-zt620-300',
     slug: 'zebra-glowica-300dpi-zt620',
     name: 'Głowica 300 dpi do drukarki Zebra ZT620, ZT620R',
-    shortDescription: 'Oryginalna głowica drukująca 300 dpi do drukarek Zebra ZT620 i ZT620R',
+    shortDescription: 'Głowica 300 dpi do drukarki Zebra ZT620, ZT620R — oryginalna głowica drukująca 300 dpi do drukarek Zebra ZT620 i ZT620R',
     description: 'Oryginalna głowica drukująca Zebra 300 dpi (12 dots/mm) do drukarek przemysłowych ZT620 i ZT620R. Do drobnych kodów 2D, cenówek i szczegółowych etykiet produktowych na szerokim formacie 6".',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -21011,7 +21011,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-platen-zt620',
     slug: 'zebra-walek-dociskowy-zt620',
     name: 'Wałek dociskowy do drukarki Zebra ZT620, ZT620R',
-    shortDescription: 'Oryginalny wałek dociskowy (platen roller) do drukarek Zebra ZT620 i ZT620R',
+    shortDescription: 'Wałek dociskowy do drukarki Zebra ZT620, ZT620R — oryginalny wałek dociskowy (platen roller) do drukarek Zebra ZT620 i ZT620R',
     description: 'Oryginalny wałek dociskowy Zebra do drukarek przemysłowych ZT620 i ZT620R. Zapewnia równomierny docisk szerokich mediów do głowicy drukującej na całej szerokości 168 mm.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -21036,7 +21036,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-cutter-zt620',
     slug: 'zebra-gilotyna-zt620',
     name: 'Gilotyna (cutter) do drukarki Zebra ZT620, ZT620R',
-    shortDescription: 'Moduł gilotyny do automatycznego odcinania etykiet w drukarkach ZT620 i ZT620R',
+    shortDescription: 'Gilotyna (cutter) do drukarki Zebra ZT620, ZT620R — moduł gilotyny do automatycznego odcinania etykiet w drukarkach ZT620 i ZT620R',
     description: 'Oryginalny moduł gilotyny Zebra do drukarek przemysłowych ZT620 i ZT620R. Automatyczne odcinanie szerokich etykiet po wydruku. Montaż w terenie — nie wymaga serwisu fabrycznego.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -21060,7 +21060,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-rewind-zt620',
     slug: 'zebra-nawijak-wewnetrzny-zt620',
     name: 'Wewnętrzny nawijak do drukarki Zebra ZT620, ZT620R',
-    shortDescription: 'Moduł nawijaka wewnętrznego do drukarek Zebra ZT620 i ZT620R',
+    shortDescription: 'Wewnętrzny nawijak do drukarki Zebra ZT620, ZT620R — moduł nawijaka wewnętrznego do drukarek Zebra ZT620 i ZT620R',
     description: 'Oryginalny moduł nawijaka wewnętrznego Zebra do drukarek ZT620 i ZT620R. Nawija gotowe etykiety wewnątrz drukarki po odklejeniu od podkładu.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -21087,7 +21087,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-printhead-zt510-203',
     slug: 'zebra-glowica-zt510-203dpi',
     name: 'Głowica drukująca 203 dpi do drukarki Zebra ZT510',
-    shortDescription: 'Oryginalna głowica termiczna 203 dpi (8 pkt/mm) do drukarek Zebra ZT510',
+    shortDescription: 'Głowica drukująca 203 dpi do drukarki Zebra ZT510 — oryginalna głowica termiczna 203 dpi (8 pkt/mm) do drukarek Zebra ZT510',
     description: 'Oryginalna głowica drukująca Zebra o rozdzielczości 203 dpi (8 punktów/mm) do drukarek przemysłowych ZT510. Głowica jest częścią eksploatacyjną — zalecana wymiana po 50–150 km wydruku lub w przypadku pogorszenia jakości druku. Regularne czyszczenie alkoholem izopropylowym co zmianę roboczą wydłuża żywotność głowicy.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -21113,7 +21113,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-platen-zt510',
     slug: 'zebra-walek-dociskowy-zt510',
     name: 'Wałek dociskowy (platen roller) do drukarki Zebra ZT510',
-    shortDescription: 'Oryginalny wałek dociskowy do drukarek Zebra ZT510',
+    shortDescription: 'Wałek dociskowy (platen roller) do drukarki Zebra ZT510 — oryginalny wałek dociskowy do drukarek Zebra ZT510',
     description: 'Oryginalny wałek dociskowy (platen roller) Zebra do drukarek przemysłowych ZT510. Wałek odpowiada za równomierne dociskanie materiału do głowicy drukującej, zapewniając powtarzalną jakość wydruku. Zalecana wymiana przy widocznym zużyciu lub pogorszeniu jakości druku.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -21145,7 +21145,7 @@ const mobilePrinterAccessories: Product[] = [
     id: 'zebra-battery-zq5-standard',
     slug: 'zebra-bateria-3250mah-zq511-zq521',
     name: 'Bateria 3250 mAh do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 Plus',
-    shortDescription: 'Oryginalna bateria PowerPrecision+ 3250 mAh do drukarek mobilnych Zebra',
+    shortDescription: 'Bateria 3250 mAh do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 Plus — oryginalna bateria PowerPrecision+ 3250 mAh do drukarek mobilnych Zebra',
     description: `Oryginalna bateria zapasowa Zebra PowerPrecision+ Li-Ion 3250 mAh do mobilnych drukarek etykiet ZQ511, ZQ521, ZQ610, ZQ620 i ZQ630. Technologia PowerPrecision+ monitoruje stan baterii i informuje o konieczności wymiany.
 
 Wymienna hot-swap — wymiana w 5 sekund bez wyłączania drukarki. Jedna bateria wystarcza na 800–1000 etykiet standardowego rozmiaru. Czas ładowania: 2,5–3 godziny.`,
@@ -21174,7 +21174,7 @@ Wymienna hot-swap — wymiana w 5 sekund bez wyłączania drukarki. Jedna bateri
     id: 'zebra-battery-zq5-extended',
     slug: 'zebra-bateria-6500mah-zq511-zq521',
     name: 'Bateria wzmocniona 6500 mAh do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 Plus',
-    shortDescription: 'Bateria rozszerzona PowerPrecision+ 6500 mAh — podwójna żywotność',
+    shortDescription: 'Bateria wzmocniona 6500 mAh do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 Plus — bateria rozszerzona PowerPrecision+ 6500 mAh, podwójna żywotność',
     description: `Oryginalna bateria rozszerzona Zebra PowerPrecision+ Li-Ion 6500 mAh — podwójna pojemność w porównaniu ze standardową baterią 3250 mAh. Zapewnia druk 1600–2000 etykiet na jednym ładowaniu, wystarczający na pełną zmianę intensywnej pracy.
 
 Kompatybilna z drukarkami ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Technologia PowerPrecision+ z monitorowaniem stanu baterii. Wymienna hot-swap.`,
@@ -21203,7 +21203,7 @@ Kompatybilna z drukarkami ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Technologia PowerPr
     id: 'zebra-charger-1slot-zq5',
     slug: 'zebra-ladowarka-1-gniazdowa-zq5-zq6',
     name: 'Ładowarka 1-gniazdowa do baterii Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus',
-    shortDescription: 'Ładowarka pojedyncza do baterii PowerPrecision+ serii ZQ500/ZQ600 Plus',
+    shortDescription: 'Ładowarka 1-gniazdowa do baterii Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus — ładowarka pojedyncza do baterii PowerPrecision+ serii ZQ500/ZQ600 Plus',
     description: `Oryginalna ładowarka Zebra 1-gniazdowa do baterii PowerPrecision+ drukarek mobilnych ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Kontrolowane ładowanie wydłuża żywotność baterii o 30% w porównaniu z ładowaniem przez USB.
 
 Czas ładowania baterii 3250 mAh: ok. 2,5–3 godziny. Zawiera zasilacz sieciowy EU. Idealna do pojedynczych stanowisk roboczych.`,
@@ -21232,7 +21232,7 @@ Czas ładowania baterii 3250 mAh: ok. 2,5–3 godziny. Zawiera zasilacz sieciowy
     id: 'zebra-charger-3slot-zq5',
     slug: 'zebra-ladowarka-3-gniazdowa-zq5-zq6',
     name: 'Ładowarka 3-gniazdowa do baterii Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus',
-    shortDescription: 'Ładowarka 3-gniazdowa do baterii PowerPrecision+ serii ZQ500/ZQ600 Plus — do flot mobilnych',
+    shortDescription: 'Ładowarka 3-gniazdowa do baterii Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus — ładowarka 3-gniazdowa do baterii PowerPrecision+ serii ZQ500/ZQ600 Plus, do flot mobilnych',
     description: `Oryginalna ładowarka Zebra 3-gniazdowa do jednoczesnego ładowania 3 baterii PowerPrecision+ drukarek mobilnych ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Kontrolowane ładowanie wydłuża żywotność baterii.
 
 Idealna do flot mobilnych — wystarczy jedna ładowarka na 3 stanowiska. Zawiera zasilacz sieciowy EU. Kompaktowa konstrukcja na blat lub regał.`,
@@ -21261,7 +21261,7 @@ Idealna do flot mobilnych — wystarczy jedna ładowarka na 3 stanowiska. Zawier
     id: 'zebra-ac-adapter-zq5',
     slug: 'zebra-zasilacz-ac-zq5-zq6',
     name: 'Zasilacz AC do drukarki Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus',
-    shortDescription: 'Zasilacz sieciowy AC do drukarek mobilnych Zebra serii ZQ/QLn',
+    shortDescription: 'Zasilacz AC do drukarki Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus — zasilacz sieciowy AC do drukarek mobilnych Zebra serii ZQ/QLn',
     description: `Oryginalny zasilacz sieciowy Zebra AC do drukarek mobilnych ZQ511, ZQ521, ZQ610, ZQ620, ZQ630, QLn220, QLn320, QLn420. Umożliwia jednoczesne zasilanie drukarki i ładowanie baterii z gniazdka sieciowego.
 
 Przydatny przy pracy stacjonarnej (np. punkt serwisowy, recepcja) lub jako zapasowy zasilacz na stanowisko ładowania.`,
@@ -21289,7 +21289,7 @@ Przydatny przy pracy stacjonarnej (np. punkt serwisowy, recepcja) lub jako zapas
     id: 'zebra-soft-case-zq5',
     slug: 'zebra-etui-pasek-zq511',
     name: 'Etui z paskiem na ramię do Zebra ZQ511',
-    shortDescription: 'Miękkie etui ochronne z paskiem na ramię do drukarki ZQ510/ZQ511',
+    shortDescription: 'Etui z paskiem na ramię do Zebra ZQ511 — miękkie etui ochronne z paskiem na ramię do drukarki ZQ510/ZQ511',
     description: `Oryginalne etui ochronne Zebra z paskiem na ramię do mobilnej drukarki ZQ510/ZQ511. Chroni drukarkę przed zarysowaniami i drobnymi uderzeniami. Pasek na ramię odciąża biodra i zmniejsza zmęczenie przy wielogodzinnej pracy.
 
 Etui umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia dostęp do wydrukowanych etykiet.`,
@@ -21317,7 +21317,7 @@ Etui umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia do
     id: 'zebra-exoskeleton-zq5',
     slug: 'zebra-egzoszkielet-zq511',
     name: 'Egzoszkielet ochronny do Zebra ZQ511',
-    shortDescription: 'Obudowa wzmocniona — podnosi IP do IP65 i drop spec do 3 m',
+    shortDescription: 'Egzoszkielet ochronny do Zebra ZQ511 — obudowa wzmocniona, podnosi IP do IP65 i drop spec do 3 m',
     description: `Egzoszkielet ochronny Zebra do drukarki mobilnej ZQ510/ZQ511. Podnosi klasę ochrony z IP54 do IP65 (pełna ochrona przed pyłem i strumieniem wody) oraz odporność na upadki z 2 m do 3 m na beton.
 
 Niezbędny do pracy na zewnątrz (deszcz, śnieg), na rampach załadunkowych i w środowiskach o podwyższonym ryzyku upadków. Nie utrudnia wymiany baterii ani rolek etykiet.`,
@@ -21347,7 +21347,7 @@ Niezbędny do pracy na zewnątrz (deszcz, śnieg), na rampach załadunkowych i w
     id: 'zebra-usb-cable-zq5',
     slug: 'zebra-kabel-usb-twist-lock-zq5-zq6',
     name: 'Kabel USB z Twist Lock do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus',
-    shortDescription: 'Kabel USB Micro-B z blokadą Twist Lock do drukarek mobilnych Zebra serii ZQ500/ZQ600',
+    shortDescription: 'Kabel USB z Twist Lock do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus — kabel USB Micro-B z blokadą Twist Lock do drukarek mobilnych Zebra serii ZQ500/ZQ600',
     description: `Oryginalny kabel USB Zebra z blokadą Twist Lock do drukarek mobilnych ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Blokada Twist Lock zapobiega przypadkowemu odłączeniu kabla podczas pracy.
 
 Używany do serwisu, aktualizacji firmware i konfiguracji drukarki z komputera.`,
@@ -21375,7 +21375,7 @@ Używany do serwisu, aktualizacji firmware i konfiguracji drukarki z komputera.`
     id: 'zebra-usb-adapter-zq5',
     slug: 'zebra-adapter-usb-zq5-zq6',
     name: 'Adapter USB Micro A/B do USB-A do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus',
-    shortDescription: 'Krótki adapter USB OTG do drukarek mobilnych Zebra serii ZQ500/ZQ600',
+    shortDescription: 'Adapter USB Micro A/B do USB-A do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus — krótki adapter USB OTG do drukarek mobilnych Zebra serii ZQ500/ZQ600',
     description: `Adapter USB Micro A/B do USB-A (15 cm) do drukarek mobilnych Zebra ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Umożliwia podłączenie standardowych urządzeń USB (pendrive, czytnik kart) do portu USB OTG drukarki.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -21402,7 +21402,7 @@ Używany do serwisu, aktualizacji firmware i konfiguracji drukarki z komputera.`
     id: 'zebra-battery-zq630',
     slug: 'zebra-bateria-6800mah-zq630-plus',
     name: 'Bateria 6800 mAh (4-cell) do Zebra ZQ630 Plus',
-    shortDescription: 'Oryginalna bateria PowerPrecision+ 6800 mAh 4-cell — dedykowana do ZQ630 Plus',
+    shortDescription: 'Bateria 6800 mAh (4-cell) do Zebra ZQ630 Plus — oryginalna bateria PowerPrecision+ 6800 mAh 4-cell, dedykowana do ZQ630 Plus',
     description: `Oryginalna bateria zapasowa Zebra PowerPrecision+ Li-Ion 6800 mAh (4-cell) dedykowana do mobilnej drukarki etykiet ZQ630 Plus. Większa pojemność niż standardowe baterie 3250/6500 mAh z serii ZQ500/ZQ600 — zapewnia najdłuższy czas pracy w całej rodzinie drukarek mobilnych Zebra.
 
 Technologia PowerPrecision+ monitoruje stan baterii, informuje o konieczności wymiany i optymalizuje ładowanie. Wymienna hot-swap — wymiana baterii bez wyłączania drukarki. Napięcie 7,4 VDC, pojemność nominalna 6600 mAh / minimalna 6,8 Ah.
@@ -21434,7 +21434,7 @@ Jedna bateria wystarcza na 1200–1500 etykiet standardowego rozmiaru (100×150 
     id: 'zebra-soft-case-zq521',
     slug: 'zebra-etui-pasek-zq521',
     name: 'Etui z paskiem na ramię do Zebra ZQ521',
-    shortDescription: 'Miękkie etui ochronne z paskiem na ramię do drukarki ZQ520/ZQ521 (4")',
+    shortDescription: 'Etui z paskiem na ramię do Zebra ZQ521 — miękkie etui ochronne z paskiem na ramię do drukarki ZQ520/ZQ521 (4")',
     description: `Oryginalne etui ochronne Zebra z paskiem na ramię do mobilnej drukarki ZQ520/ZQ521 (4-calowej). Chroni drukarkę przed zarysowaniami i drobnymi uderzeniami. Pasek na ramię odciąża biodra i zmniejsza zmęczenie przy wielogodzinnej pracy kuriera.
 
 Etui umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia dostęp do wydrukowanych etykiet. Wersja dedykowana do drukarek 4-calowych (ZQ520/ZQ521).`,
@@ -21462,7 +21462,7 @@ Etui umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia do
     id: 'zebra-exoskeleton-zq521',
     slug: 'zebra-egzoszkielet-zq521',
     name: 'Egzoszkielet ochronny do Zebra ZQ521',
-    shortDescription: 'Obudowa wzmocniona 4" — podnosi IP do IP65 i drop spec do 3 m',
+    shortDescription: 'Egzoszkielet ochronny do Zebra ZQ521 — obudowa wzmocniona 4", podnosi IP do IP65 i drop spec do 3 m',
     description: `Egzoszkielet ochronny Zebra do drukarki mobilnej ZQ520/ZQ521 (4-calowej). Podnosi klasę ochrony z IP54 do IP65 (pełna ochrona przed pyłem i strumieniem wody) oraz odporność na upadki z 2,1 m do 3 m na beton.
 
 Niezbędny do pracy na zewnątrz (deszcz, śnieg), na rampach załadunkowych i w środowiskach o podwyższonym ryzyku upadków. Wersja dedykowana do drukarek 4-calowych (ZQ520/ZQ521). Nie utrudnia wymiany baterii ani rolek etykiet.`,
@@ -21493,7 +21493,7 @@ Niezbędny do pracy na zewnątrz (deszcz, śnieg), na rampach załadunkowych i w
     id: 'zebra-soft-case-zq610',
     slug: 'zebra-futerał-zq610',
     name: 'Futerał ochronny do Zebra ZQ610 Plus',
-    shortDescription: 'Miękki futerał z paskiem do mobilnej drukarki ZQ610/ZQ610 Plus',
+    shortDescription: 'Futerał ochronny do Zebra ZQ610 Plus — miękki futerał z paskiem do mobilnej drukarki ZQ610/ZQ610 Plus',
     description: `Oryginalny miękki futerał ochronny Zebra do mobilnej drukarki ZQ610/ZQ610 Plus. Chroni drukarkę przed zarysowaniami, bryzgami i drobnymi uderzeniami. Pasek na ramię i klips do paska w zestawie.
 
 Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia dostęp do wydrukowanych etykiet i pokwitowań. Dedykowany do drukarek 2-calowych serii ZQ610.`,
@@ -21521,7 +21521,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
     id: 'zebra-soft-case-zq620',
     slug: 'zebra-futeral-zq620',
     name: 'Futerał ochronny do Zebra ZQ620 Plus',
-    shortDescription: 'Miękki futerał z paskiem do mobilnej drukarki ZQ620/ZQ620 Plus (3")',
+    shortDescription: 'Futerał ochronny do Zebra ZQ620 Plus — miękki futerał z paskiem do mobilnej drukarki ZQ620/ZQ620 Plus (3")',
     description: `Oryginalny miękki futerał ochronny Zebra do mobilnej drukarki ZQ620/ZQ620 Plus (3-calowej) oraz QLn320. Chroni drukarkę przed zarysowaniami, bryzgami i drobnymi uderzeniami. Pasek na ramię i klips do paska w zestawie.
 
 Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia dostęp do wydrukowanych etykiet i pokwitowań. Dedykowany do drukarek 3-calowych serii ZQ620 i QLn320.`,
@@ -21549,7 +21549,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
     id: 'zebra-belt-clip-zq610',
     slug: 'zebra-klips-paska-zq610',
     name: 'Klips do paska do Zebra ZQ610 / ZQ620 / ZQ630 Plus',
-    shortDescription: 'Klips montażowy do paska — mocowanie drukarki mobilnej na biodrze',
+    shortDescription: 'Klips do paska do Zebra ZQ610 / ZQ620 / ZQ630 Plus — klips montażowy do paska, mocowanie drukarki mobilnej na biodrze',
     description: `Oryginalny klips Zebra do mocowania mobilnej drukarki ZQ610/ZQ620/ZQ630 (Plus) na pasku. Umożliwia noszenie drukarki na biodrze bez użycia futerału — szybki dostęp do urządzenia i wygodna praca jednoręczna.
 
 Solidna metalowa konstrukcja z mechanizmem szybkiego zwalniania. Pasuje do standardowych pasków o szerokości do 50 mm.`,
@@ -21577,7 +21577,7 @@ Solidna metalowa konstrukcja z mechanizmem szybkiego zwalniania. Pasuje do stand
     id: 'zebra-usb-cable-zq610',
     slug: 'zebra-kabel-usb-zq610',
     name: 'Kabel USB do Zebra ZQ610 / ZQ620 / ZQ630 Plus',
-    shortDescription: 'Kabel USB Micro-B do drukarek mobilnych serii ZQ600/ZQ600 Plus',
+    shortDescription: 'Kabel USB do Zebra ZQ610 / ZQ620 / ZQ630 Plus — kabel USB Micro-B do drukarek mobilnych serii ZQ600/ZQ600 Plus',
     description: `Oryginalny kabel USB Zebra do drukarek mobilnych serii ZQ610/ZQ620/ZQ630 (Plus). Złącze USB 2.0 Micro-B do podłączenia drukarki do komputera w celu konfiguracji, aktualizacji firmware i serwisu.
 
 Kabel z blokadą zapobiega przypadkowemu odłączeniu podczas pracy.`,
@@ -21605,7 +21605,7 @@ Kabel z blokadą zapobiega przypadkowemu odłączeniu podczas pracy.`,
     id: 'zebra-cable-db9-zq610',
     slug: 'zebra-kabel-db9-zq610',
     name: 'Kabel RS-232 DB9 do Zebra ZQ610 / QLn220',
-    shortDescription: 'Kabel szeregowy RS-232C z wtyczką DB9 do drukarek mobilnych Zebra',
+    shortDescription: 'Kabel RS-232 DB9 do Zebra ZQ610 / QLn220 — kabel szeregowy RS-232C z wtyczką DB9 do drukarek mobilnych Zebra',
     description: `Oryginalny kabel szeregowy RS-232C Zebra z wtyczką DB9 do drukarek mobilnych ZQ610, ZQ610 Plus, QLn220. Umożliwia komunikację z systemami POS, wagami i innymi urządzeniami z interfejsem RS-232.
 
 Długość kabla zapewnia wygodne podłączenie drukarki na stanowisku roboczym. Przydatny w integracji ze starszymi systemami kasowymi i wagowymi.`,
@@ -21633,7 +21633,7 @@ Długość kabla zapewnia wygodne podłączenie drukarki na stanowisku roboczym.
     id: 'zebra-car-charger-zq5',
     slug: 'zebra-zasilacz-samochodowy-zq5',
     name: 'Zasilacz samochodowy (zapalniczka) do Zebra ZQ511 / ZQ610 / ZQ630 Plus',
-    shortDescription: 'Zasilacz 12/24V do gniazda zapalniczki — ładowanie drukarki mobilnej w pojeździe',
+    shortDescription: 'Zasilacz samochodowy (zapalniczka) do Zebra ZQ511 / ZQ610 / ZQ630 Plus — zasilacz 12/24V do gniazda zapalniczki, ładowanie drukarki mobilnej w pojeździe',
     description: `Oryginalny zasilacz samochodowy Zebra do gniazda zapalniczki (12/24V DC). Umożliwia ładowanie baterii i zasilanie mobilnej drukarki etykiet bezpośrednio w pojeździe — podczas trasy kurierskiej, na rampie załadunkowej lub w samochodzie serwisowym.
 
 Kompatybilny z drukarkami ZQ511, ZQ521, ZQ610, ZQ620 i ZQ630 (Plus). Automatyczne wykrywanie napięcia 12V/24V.`,
@@ -21662,7 +21662,7 @@ Kompatybilny z drukarkami ZQ511, ZQ521, ZQ610, ZQ620 i ZQ630 (Plus). Automatyczn
     id: 'zebra-battery-zq3',
     slug: 'zebra-bateria-2280mah-zq310-zq320-plus',
     name: 'Bateria 2280 mAh do Zebra ZQ310 Plus / ZQ320 Plus',
-    shortDescription: 'Oryginalna bateria PowerPrecision+ 2280 mAh do drukarek mobilnych Zebra serii ZQ300 Plus',
+    shortDescription: 'Bateria 2280 mAh do Zebra ZQ310 Plus / ZQ320 Plus — oryginalna bateria PowerPrecision+ 2280 mAh do drukarek mobilnych Zebra serii ZQ300 Plus',
     description: `Oryginalna bateria zapasowa Zebra PowerPrecision+ Li-Ion 2280 mAh do mobilnych drukarek ZQ310 Plus i ZQ320 Plus. Technologia PowerPrecision+ monitoruje stan baterii i informuje o konieczności wymiany.
 
 Wymienna — wymiana w kilka sekund bez narzędzi. Jedna bateria wystarcza na 300–500 paragonów przy umiarkowanym obciążeniu. Czas ładowania: ~2,5 godziny w ładowarce 1-gniazdowej.`,
@@ -21691,7 +21691,7 @@ Wymienna — wymiana w kilka sekund bez narzędzi. Jedna bateria wystarcza na 30
     id: 'zebra-cradle-zq3',
     slug: 'zebra-stacja-dokujaca-zq310-zq320-plus',
     name: 'Stacja dokująca 1-gniazdowa do Zebra ZQ310 Plus / ZQ320 Plus',
-    shortDescription: 'Stacja dokująca z ładowaniem — ładuje drukarkę i zapasową baterię jednocześnie',
+    shortDescription: 'Stacja dokująca 1-gniazdowa do Zebra ZQ310 Plus / ZQ320 Plus — stacja dokująca z ładowaniem, ładuje drukarkę i zapasową baterię jednocześnie',
     description: `Oryginalna stacja dokująca Zebra 1-gniazdowa do drukarek mobilnych ZQ310 Plus i ZQ320 Plus. Ładuje baterię w drukarce i jednocześnie zapasową baterię w dodatkowym gnieździe.
 
 Idealna do biura, magazynu lub stanowiska kurierskiego — drukarka wraca na stację po zmianie, rano jest naładowana i gotowa do pracy. Zawiera zasilacz sieciowy EU.`,
@@ -21720,7 +21720,7 @@ Idealna do biura, magazynu lub stanowiska kurierskiego — drukarka wraca na sta
     id: 'zebra-charger-1slot-zq3',
     slug: 'zebra-ladowarka-1-gniazdowa-zq310-zq320-plus',
     name: 'Ładowarka 1-gniazdowa do baterii Zebra ZQ310 Plus / ZQ320 Plus',
-    shortDescription: 'Ładowarka pojedyncza do baterii PowerPrecision+ serii ZQ300',
+    shortDescription: 'Ładowarka 1-gniazdowa do baterii Zebra ZQ310 Plus / ZQ320 Plus — ładowarka pojedyncza do baterii PowerPrecision+ serii ZQ300',
     description: `Oryginalna ładowarka Zebra 1-gniazdowa do baterii PowerPrecision+ 2280 mAh drukarek mobilnych ZQ310 Plus i ZQ320 Plus. Kontrolowane ładowanie wydłuża żywotność baterii.
 
 Czas ładowania baterii 2280 mAh: ~2,5 godziny. Zawiera zasilacz sieciowy EU. Idealna do pojedynczych stanowisk roboczych.`,
@@ -21749,7 +21749,7 @@ Czas ładowania baterii 2280 mAh: ~2,5 godziny. Zawiera zasilacz sieciowy EU. Id
     id: 'zebra-charger-3slot-zq3',
     slug: 'zebra-ladowarka-3-gniazdowa-zq310-zq320-plus',
     name: 'Ładowarka 3-gniazdowa do baterii Zebra ZQ310 Plus / ZQ320 Plus',
-    shortDescription: 'Ładowarka 3-gniazdowa do baterii PowerPrecision+ serii ZQ300 — do flot mobilnych',
+    shortDescription: 'Ładowarka 3-gniazdowa do baterii Zebra ZQ310 Plus / ZQ320 Plus — ładowarka 3-gniazdowa do baterii PowerPrecision+ serii ZQ300, do flot mobilnych',
     description: `Oryginalna ładowarka Zebra 3-gniazdowa do jednoczesnego ładowania 3 baterii PowerPrecision+ 2280 mAh drukarek mobilnych ZQ310 Plus i ZQ320 Plus.
 
 Idealna do flot kurierskich i mobilnych — wystarczy jedna ładowarka na 3 stanowiska. Zawiera zasilacz sieciowy EU. Kompaktowa konstrukcja na blat lub regał.`,
@@ -21778,7 +21778,7 @@ Idealna do flot kurierskich i mobilnych — wystarczy jedna ładowarka na 3 stan
     id: 'zebra-belt-clip-zq3',
     slug: 'zebra-klips-paska-zq310-zq320-plus',
     name: 'Klips do paska do Zebra ZQ310 Plus / ZQ320 Plus',
-    shortDescription: 'Klips montażowy do paska — mocowanie drukarki mobilnej ZQ300 na biodrze',
+    shortDescription: 'Klips do paska do Zebra ZQ310 Plus / ZQ320 Plus — klips montażowy do paska, mocowanie drukarki mobilnej ZQ300 na biodrze',
     description: `Oryginalny klips Zebra do mocowania mobilnej drukarki ZQ310 Plus lub ZQ320 Plus na pasku. Umożliwia noszenie drukarki na biodrze bez użycia futerału — szybki dostęp do urządzenia i wygodna praca jednoręczna.
 
 Solidna konstrukcja z mechanizmem szybkiego zwalniania. Pasuje do standardowych pasków.`,
@@ -21806,7 +21806,7 @@ Solidna konstrukcja z mechanizmem szybkiego zwalniania. Pasuje do standardowych 
     id: 'zebra-soft-case-zq310',
     slug: 'zebra-futeral-zq310',
     name: 'Futerał ochronny do Zebra ZQ310 Plus',
-    shortDescription: 'Miękki futerał z paskiem do mobilnej drukarki ZQ310 Plus (2")',
+    shortDescription: 'Futerał ochronny do Zebra ZQ310 Plus — miękki futerał z paskiem do mobilnej drukarki ZQ310 Plus (2")',
     description: `Oryginalny miękki futerał ochronny Zebra do mobilnej drukarki ZQ310 Plus (2-calowej). Chroni drukarkę przed zarysowaniami, bryzgami i drobnymi uderzeniami. Pasek na ramię w zestawie.
 
 Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia dostęp do wydrukowanych paragonów i etykiet. Dedykowany do drukarek 2-calowych ZQ310 Plus.`,
@@ -21834,7 +21834,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
     id: 'zebra-soft-case-zq320',
     slug: 'zebra-futeral-zq320-plus',
     name: 'Futerał ochronny do Zebra ZQ320 Plus',
-    shortDescription: 'Miękki futerał z paskiem do mobilnej drukarki ZQ320 Plus (3")',
+    shortDescription: 'Futerał ochronny do Zebra ZQ320 Plus — miękki futerał z paskiem do mobilnej drukarki ZQ320 Plus (3")',
     description: `Oryginalny miękki futerał ochronny Zebra do mobilnej drukarki ZQ320 Plus (3-calowej). Chroni drukarkę przed zarysowaniami, bryzgami i drobnymi uderzeniami. Pasek na ramię w zestawie.
 
 Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia dostęp do wydrukowanych paragonów i etykiet. Dedykowany do drukarek 3-calowych ZQ320 Plus.`,
@@ -21863,7 +21863,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
     id: 'zebra-battery-zq220plus',
     slug: 'zebra-bateria-2500mah-zq220-plus',
     name: 'Bateria 2500 mAh do Zebra ZQ220 Plus',
-    shortDescription: 'Oryginalna bateria Li-Ion 2500 mAh do drukarki mobilnej Zebra ZQ220 Plus',
+    shortDescription: 'Bateria 2500 mAh do Zebra ZQ220 Plus — oryginalna bateria Li-Ion 2500 mAh do drukarki mobilnej Zebra ZQ220 Plus',
     description: `Oryginalna bateria zapasowa Zebra Li-Ion 2500 mAh (7,4 V) do mobilnej drukarki ZQ220 Plus, ZQ120 Plus i ZR138. Wymienna przez operatora — wymiana w kilka sekund bez narzędzi. Jedna bateria wystarcza na min. 500 etykiet standardowego rozmiaru. Ładowanie przez USB-C: poniżej 4 godzin.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -21891,7 +21891,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
     id: 'zebra-battery-zq210',
     slug: 'zebra-bateria-1500mah-zq210',
     name: 'Bateria 1500 mAh do Zebra ZQ210',
-    shortDescription: 'Oryginalna bateria Li-Ion 1500 mAh do drukarki mobilnej Zebra ZQ210',
+    shortDescription: 'Bateria 1500 mAh do Zebra ZQ210 — oryginalna bateria Li-Ion 1500 mAh do drukarki mobilnej Zebra ZQ210',
     description: `Oryginalna bateria zapasowa Zebra Li-Ion 1500 mAh (7,4 V) do mobilnej drukarki ZQ210, ZQ220 (starsza generacja) i ZQ112. Wymienna przez operatora. Ładowanie przez USB-C z dowolnej ładowarki USB.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -21918,7 +21918,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
     id: 'zebra-belt-clip-zq2',
     slug: 'zebra-klips-do-paska-zq210-zq220',
     name: 'Klips do paska do Zebra ZQ210 / ZQ220 Plus (5 szt.)',
-    shortDescription: 'Oryginalny klips do paska (5 szt.) do drukarek mobilnych Zebra ZQ210, ZQ220 Plus, ZQ310, ZQ320',
+    shortDescription: 'Klips do paska do Zebra ZQ210 / ZQ220 Plus (5 szt.) — oryginalny klips do paska (5 szt.) do drukarek mobilnych Zebra ZQ210, ZQ220 Plus, ZQ310, ZQ320',
     description: `Oryginalny klips do paska Zebra (opakowanie 5 sztuk) kompatybilny z drukarkami mobilnymi ZQ210, ZQ220, ZQ220 Plus, ZQ310, ZQ320. Pozwala nosić drukarkę na pasku podczas pracy w terenie.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -21944,7 +21944,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
     id: 'zebra-soft-case-zq210',
     slug: 'zebra-futeral-zq210',
     name: 'Futerał ochronny do Zebra ZQ210',
-    shortDescription: 'Miękki futerał z paskiem na ramię do drukarki ZQ210 — podnosi IP do IP54',
+    shortDescription: 'Futerał ochronny do Zebra ZQ210 — miękki futerał z paskiem na ramię do drukarki ZQ210, podnosi IP do IP54',
     description: `Oryginalny miękki futerał ochronny Zebra do mobilnej drukarki ZQ210 (2-calowej) z paskiem na ramię. Podnosi klasę ochrony drukarki z IP43 do IP54. Otwarta góra umożliwia drukowanie bez wyjmowania.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -21970,7 +21970,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
     id: 'zebra-soft-case-zq220plus',
     slug: 'zebra-futeral-zq220-plus',
     name: 'Futerał ochronny do Zebra ZQ220 Plus',
-    shortDescription: 'Miękki futerał z paskiem na ramię do drukarki ZQ220 Plus (3")',
+    shortDescription: 'Futerał ochronny do Zebra ZQ220 Plus — miękki futerał z paskiem na ramię do drukarki ZQ220 Plus (3")',
     description: `Oryginalny miękki futerał ochronny Zebra do mobilnej drukarki ZQ220 Plus (3-calowej) z paskiem na ramię. Chroni drukarkę przed zarysowaniami i uderzeniami. Otwarta góra umożliwia drukowanie bez wyjmowania.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -21996,7 +21996,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
     id: 'zebra-charger-zq220plus',
     slug: 'zebra-ladowarka-1slot-zq220-plus',
     name: 'Ładowarka baterii 1-gniazdowa do Zebra ZQ220 Plus',
-    shortDescription: 'Ładowarka 1-slot do baterii drukarki mobilnej Zebra ZQ220 Plus',
+    shortDescription: 'Ładowarka baterii 1-gniazdowa do Zebra ZQ220 Plus — ładowarka 1-slot do baterii drukarki mobilnej Zebra ZQ220 Plus',
     description: `Oryginalna ładowarka baterii Zebra 1-gniazdowa do mobilnej drukarki ZQ220 Plus, ZQ120 Plus i ZR138. LED informuje o stanie ładowania (czerwony = ładowanie, zielony = pełna). Zasilacz i kabel USB-C w zestawie.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
@@ -22029,7 +22029,7 @@ const tc22Accessories: Product[] = [
     id: 'zebra-battery-tc2-standard',
     slug: 'zebra-bateria-3800mah-tc22-tc27',
     name: 'Akumulator 3800 mAh do Zebra TC22 / TC27',
-    shortDescription: 'Oryginalna bateria PowerPrecision 3800 mAh — wymienna hot-swap',
+    shortDescription: 'Akumulator 3800 mAh do Zebra TC22 / TC27 — oryginalna bateria PowerPrecision 3800 mAh, wymienna hot-swap',
     description: `Oryginalna bateria zapasowa Zebra PowerPrecision Li-Ion 3800 mAh do terminali mobilnych TC22 i TC27. Zapewnia ok. 10 godzin typowej pracy (Wi-Fi + skanowanie). Wymienna hot-swap — wymiana w 5 sekund bez wyłączania urządzenia. Technologia PowerPrecision monitoruje stan baterii w czasie rzeczywistym.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
@@ -22056,7 +22056,7 @@ const tc22Accessories: Product[] = [
     id: 'zebra-battery-tc2-ble',
     slug: 'zebra-bateria-3800mah-ble-tc22-tc27',
     name: 'Akumulator 3800 mAh BLE do Zebra TC22 / TC27',
-    shortDescription: 'Bateria PowerPrecision 3800 mAh z BLE do śledzenia lokalizacji',
+    shortDescription: 'Akumulator 3800 mAh BLE do Zebra TC22 / TC27 — bateria PowerPrecision 3800 mAh z BLE do śledzenia lokalizacji',
     description: `Oryginalna bateria Zebra PowerPrecision Li-Ion 3800 mAh z wbudowanym nadajnikiem Bluetooth Low Energy (BLE). Umożliwia śledzenie lokalizacji terminala nawet gdy jest wyłączony — administrator widzi pozycję urządzenia w aplikacji Zebra Device Tracker. Wymienna hot-swap, kompatybilna z TC22 i TC27.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
@@ -22083,7 +22083,7 @@ const tc22Accessories: Product[] = [
     id: 'zebra-battery-tc2-extended',
     slug: 'zebra-bateria-5200mah-tc22-tc27',
     name: 'Akumulator 5200 mAh do Zebra TC22 / TC27',
-    shortDescription: 'Bateria rozszerzona PowerPrecision 5200 mAh — do 14h pracy',
+    shortDescription: 'Akumulator 5200 mAh do Zebra TC22 / TC27 — bateria rozszerzona PowerPrecision 5200 mAh, do 14h pracy',
     description: `Oryginalna bateria rozszerzona Zebra PowerPrecision Li-Ion 5200 mAh do TC22 i TC27. Zapewnia ok. 14 godzin pracy na jednym ładowaniu — pełna zmiana bez konieczności wymiany. Rekomendowana dla kurierów i pracowników terenowych z TC27 (moduł 5G zużywa więcej energii). Wymienna hot-swap.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
@@ -22110,7 +22110,7 @@ const tc22Accessories: Product[] = [
     id: 'zebra-cradle-tc2-1slot',
     slug: 'zebra-stacja-dokujaca-1slot-tc22-tc27',
     name: 'Stacja dokująca 1-gniazdowa do Zebra TC22 / TC27',
-    shortDescription: 'Pojedyncza stacja dokująca — ładowanie terminala',
+    shortDescription: 'Stacja dokująca 1-gniazdowa do Zebra TC22 / TC27 — pojedyncza stacja dokująca, ładowanie terminala',
     description: `Pojedyncza stacja dokująca Zebra do TC22/TC27. Ładuje terminal i baterię jednocześnie. Kompaktowa konstrukcja na biurko lub ladę sklepową.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -22136,7 +22136,7 @@ const tc22Accessories: Product[] = [
     id: 'zebra-cradle-tc2-1slot-ethernet',
     slug: 'zebra-stacja-dokujaca-ethernet-tc22-tc27',
     name: 'Stacja dokująca Ethernet do Zebra TC22 / TC27',
-    shortDescription: 'Stacja dokująca z portem Ethernet — ładowanie + sieć przewodowa',
+    shortDescription: 'Stacja dokująca Ethernet do Zebra TC22 / TC27 — stacja dokująca z portem Ethernet, ładowanie + sieć przewodowa',
     description: `Pojedyncza stacja dokująca Zebra z wbudowanym portem Ethernet do TC22/TC27. Ładuje terminal i jednocześnie zapewnia połączenie z siecią LAN. Idealna na stanowiskach stacjonarnych wymagających stabilnego połączenia przewodowego.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -22162,7 +22162,7 @@ const tc22Accessories: Product[] = [
     id: 'zebra-cradle-tc2-1slot-1battery',
     slug: 'zebra-stacja-ladowania-1terminal-1bateria-tc22-tc27',
     name: 'Stacja ładowania 1 terminal + 1 bateria do Zebra TC22 / TC27',
-    shortDescription: 'Stacja ładująca terminal i zapasową baterię jednocześnie',
+    shortDescription: 'Stacja ładowania 1 terminal + 1 bateria do Zebra TC22 / TC27 — stacja ładująca terminal i zapasową baterię jednocześnie',
     description: `Stacja ładowania Zebra na 1 terminal + 1 baterię zapasową do TC22/TC27. Ładuje urządzenie i jednocześnie przygotowuje baterię zapasową — idealne rozwiązanie do pracy wielozmianowej.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -22188,7 +22188,7 @@ const tc22Accessories: Product[] = [
     id: 'zebra-cradle-tc2-5slot',
     slug: 'zebra-stacja-ladowania-5slot-tc22-tc27',
     name: 'Stacja ładowania 5-gniazdowa do Zebra TC22 / TC27',
-    shortDescription: 'Stacja ładowania na 5 terminali jednocześnie',
+    shortDescription: 'Stacja ładowania 5-gniazdowa do Zebra TC22 / TC27 — stacja ładowania na 5 terminali jednocześnie',
     description: `Stacja ładowania Zebra na 5 terminali TC22/TC27 jednocześnie. Oszczędza miejsce i eliminuje plątaninę kabli przy większych flotach. Montaż na biurku lub ścianie.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -22214,7 +22214,7 @@ const tc22Accessories: Product[] = [
     id: 'zebra-cradle-tc2-5slot-ethernet',
     slug: 'zebra-stacja-ladowania-5slot-ethernet-tc22-tc27',
     name: 'Stacja ładowania Ethernet 5-gniazdowa do Zebra TC22 / TC27',
-    shortDescription: 'Stacja 5-gniazdowa z Ethernet — ładowanie + sieć dla całej floty',
+    shortDescription: 'Stacja ładowania Ethernet 5-gniazdowa do Zebra TC22 / TC27 — stacja 5-gniazdowa z Ethernet, ładowanie + sieć dla całej floty',
     description: `Stacja ładowania Zebra na 5 terminali TC22/TC27 z wbudowanym switchem Ethernet. Każde gniazdo zapewnia ładowanie i połączenie LAN. Rozwiązanie dla dużych flot wymagających nocnego synchronizowania danych.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -22240,7 +22240,7 @@ const tc22Accessories: Product[] = [
     id: 'zebra-charger-tc2-4battery',
     slug: 'zebra-ladowarka-4-akumulatory-tc22-tc27',
     name: 'Ładowarka na 4 akumulatory do Zebra TC22 / TC27',
-    shortDescription: 'Ładowarka 4-gniazdowa na baterie TC22/TC27',
+    shortDescription: 'Ładowarka na 4 akumulatory do Zebra TC22 / TC27 — ładowarka 4-gniazdowa na baterie TC22/TC27',
     description: `Ładowarka Zebra na 4 akumulatory TC22/TC27 jednocześnie. LED wskaźnik stanu ładowania dla każdego gniazda. Idealna do pracy wielozmianowej — przygotowuje zapas naładowanych baterii na cały dzień.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -22266,7 +22266,7 @@ const tc22Accessories: Product[] = [
     id: 'zebra-cup-tc2-battery',
     slug: 'zebra-adapter-ladowarki-akumulatorow-tc22-tc27',
     name: 'Adapter stacji na ładowarkę akumulatorów TC22 / TC27',
-    shortDescription: 'Zamiennik gniazda stacji dokującej na ładowarkę baterii',
+    shortDescription: 'Adapter stacji na ładowarkę akumulatorów TC22 / TC27 — zamiennik gniazda stacji dokującej na ładowarkę baterii',
     description: `Adapter Zebra zamieniający gniazdo stacji dokującej CRD-TC2L na ładowarkę akumulatorów TC22/TC27. Pozwala ładować 4 baterie w stacji 5-gniazdowej zamiast terminali.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -22291,7 +22291,7 @@ const tc22Accessories: Product[] = [
     id: 'zebra-psu-50w',
     slug: 'zebra-zasilacz-50w',
     name: 'Zasilacz sieciowy 50W Zebra',
-    shortDescription: 'Zasilacz 12V/50W do stacji dokujących Zebra',
+    shortDescription: 'Zasilacz sieciowy 50W Zebra — zasilacz 12V/50W do stacji dokujących Zebra',
     description: `Oryginalny zasilacz sieciowy Zebra 12V 50W do pojedynczych stacji dokujących TC22/TC27. Kabel zasilający sprzedawany osobno (CBL-DC-388A1-01).`,
     categoryId: 'akcesoria',
     subcategoryIds: ['kable-zasilacze-terminali'],
@@ -22316,7 +22316,7 @@ const tc22Accessories: Product[] = [
     id: 'zebra-psu-108w',
     slug: 'zebra-zasilacz-108w',
     name: 'Zasilacz sieciowy 108W Zebra',
-    shortDescription: 'Zasilacz 12V/108W do stacji wielogniazdowych Zebra',
+    shortDescription: 'Zasilacz sieciowy 108W Zebra — zasilacz 12V/108W do stacji wielogniazdowych Zebra',
     description: `Oryginalny zasilacz sieciowy Zebra 12V 108W do stacji ładowania wielogniazdowych (5-slot) TC22/TC27. Kabel zasilający sprzedawany osobno (CBL-DC-381A1-01).`,
     categoryId: 'akcesoria',
     subcategoryIds: ['kable-zasilacze-terminali'],
@@ -22341,7 +22341,7 @@ const tc22Accessories: Product[] = [
     id: 'zebra-cable-dc-388',
     slug: 'zebra-kabel-zasilajacy-388',
     name: 'Kabel do zasilacza sieciowego Zebra (CBL-DC-388A1-01)',
-    shortDescription: 'Kabel zasilający AC do zasilacza 50W Zebra',
+    shortDescription: 'Kabel do zasilacza sieciowego Zebra (CBL-DC-388A1-01) — kabel zasilający AC do zasilacza 50W Zebra',
     description: `Kabel zasilający AC do zasilacza sieciowego Zebra PWR-BGA12V50W0WW (50W). Do stacji dokujących 1-gniazdowych TC22/TC27.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['kable-zasilacze-terminali'],
@@ -22366,7 +22366,7 @@ const tc22Accessories: Product[] = [
     id: 'zebra-cable-dc-381',
     slug: 'zebra-kabel-zasilajacy-381',
     name: 'Kabel do zasilacza sieciowego Zebra (CBL-DC-381A1-01)',
-    shortDescription: 'Kabel zasilający AC do zasilacza 108W Zebra',
+    shortDescription: 'Kabel do zasilacza sieciowego Zebra (CBL-DC-381A1-01) — kabel zasilający AC do zasilacza 108W Zebra',
     description: `Kabel zasilający AC do zasilacza sieciowego Zebra PWR-BGA12V108W0WW (108W). Do stacji ładowania 5-gniazdowych TC22/TC27.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['kable-zasilacze-terminali'],
@@ -22391,7 +22391,7 @@ const tc22Accessories: Product[] = [
     id: 'zebra-trigger-tc2',
     slug: 'zebra-uchwyt-pistoletowy-tc22-tc27',
     name: 'Uchwyt pistoletowy do Zebra TC22 / TC27',
-    shortDescription: 'Trigger handle — ergonomiczny uchwyt do intensywnego skanowania',
+    shortDescription: 'Uchwyt pistoletowy do Zebra TC22 / TC27 — trigger handle, ergonomiczny uchwyt do intensywnego skanowania',
     description: `Uchwyt pistoletowy Zebra (trigger handle) do TC22/TC27. Ergonomiczny kształt zmniejsza zmęczenie nadgarstka przy wielogodzinnym skanowaniu. Spust umożliwia skanowanie jedną ręką. Montaż bez narzędzi — terminal wkłada się i zatrzaskuje.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -22417,7 +22417,7 @@ const tc22Accessories: Product[] = [
     id: 'zebra-boot-tc2',
     slug: 'zebra-etui-gumowe-tc22-tc27',
     name: 'Gumowe etui ochronne do Zebra TC22 / TC27',
-    shortDescription: 'Etui ochronne (boot case) — dodatkowa ochrona przed upadkami',
+    shortDescription: 'Gumowe etui ochronne do Zebra TC22 / TC27 — etui ochronne (boot case), dodatkowa ochrona przed upadkami',
     description: `Oryginalne gumowe etui ochronne Zebra do TC22/TC27. Amortyzuje upadki, chroni narożniki i krawędzie urządzenia. Podnosi odporność na upadki z 1,5 m do 1,8 m na beton. Otwory na przyciski, kamerę, skaner i port USB-C.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -22443,7 +22443,7 @@ const tc22Accessories: Product[] = [
     id: 'zebra-holster-tc2',
     slug: 'zebra-kabura-do-paska-tc22-tc27',
     name: 'Kabura do paska do Zebra TC22 / TC27',
-    shortDescription: 'Kabura na pas — wygodne noszenie terminala',
+    shortDescription: 'Kabura do paska do Zebra TC22 / TC27 — kabura na pas, wygodne noszenie terminala',
     description: `Kabura Zebra do noszenia TC22/TC27 na pasku. Obrotowy klips umożliwia szybkie wyjmowanie terminala jedną ręką. Zabezpieczenie przed wypadnięciem. Kompatybilna z terminalem w etui ochronnym SG-TC2L-BOOT-01.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -22469,7 +22469,7 @@ const tc22Accessories: Product[] = [
     id: 'zebra-lanyard-tc2',
     slug: 'zebra-smyczka-tc22-tc27',
     name: 'Smyczka do Zebra TC22 / TC27',
-    shortDescription: 'Smyczka na nadgarstek — zabezpieczenie przed upuszczeniem',
+    shortDescription: 'Smyczka do Zebra TC22 / TC27 — smyczka na nadgarstek, zabezpieczenie przed upuszczeniem',
     description: `Smyczka Zebra na nadgarstek do TC22/TC27. Zabezpiecza terminal przed przypadkowym upuszczeniem podczas pracy. Regulowana długość.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -26140,7 +26140,7 @@ const tc53Accessories: Product[] = [
     id: 'zebra-tc53-battery-4680',
     slug: 'zebra-bateria-4680mah-tc53-tc58',
     name: 'Akumulator 4680 mAh do Zebra TC53 / TC58',
-    shortDescription: 'Oryginalna bateria PowerPrecision+ 4680 mAh — wymienna warm/hot swap',
+    shortDescription: 'Akumulator 4680 mAh do Zebra TC53 / TC58 — oryginalna bateria PowerPrecision+ 4680 mAh, wymienna warm/hot swap',
     description: `Oryginalna bateria zapasowa Zebra PowerPrecision+ Li-Ion 4680 mAh (18,01 Wh) do terminali mobilnych TC53 i TC58. Zapewnia ok. 12 godzin typowej pracy (WiFi 6E + skanowanie). Wymienna warm/hot swap — wymiana bez wyłączania urządzenia i utraty sesji. Technologia PowerPrecision+ monitoruje stan i kondycję baterii w czasie rzeczywistym.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
@@ -26167,7 +26167,7 @@ const tc53Accessories: Product[] = [
     id: 'zebra-tc53-battery-7000',
     slug: 'zebra-bateria-7000mah-tc53-tc58',
     name: 'Akumulator rozszerzony 7000 mAh do Zebra TC53 / TC58',
-    shortDescription: 'Oryginalna bateria PowerPrecision+ 7000 mAh — wydłużony czas pracy do 18 h',
+    shortDescription: 'Akumulator rozszerzony 7000 mAh do Zebra TC53 / TC58 — oryginalna bateria PowerPrecision+ 7000 mAh, wydłużony czas pracy do 18 h',
     description: `Oryginalna bateria rozszerzona Zebra PowerPrecision+ Li-Ion 7000 mAh (26,95 Wh) do terminali mobilnych TC53 i TC58. Zapewnia ok. 18 godzin intensywnej pracy — idealna do wielozmianowych operacji magazynowych. Wymienna warm/hot swap — wymiana bez wyłączania urządzenia. Technologia PowerPrecision+ monitoruje kondycję baterii i prognozuje pozostały czas pracy.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
@@ -26194,7 +26194,7 @@ const tc53Accessories: Product[] = [
     id: 'zebra-tc53-rugged-boot',
     slug: 'zebra-etui-ochronne-tc53',
     name: 'Etui ochronne Rugged Boot do Zebra TC53 / TC58',
-    shortDescription: 'Gumowy egzoszkielet zwiększający odporność na upadki — podnosi tumble do 1000×1,0 m',
+    shortDescription: 'Etui ochronne Rugged Boot do Zebra TC53 / TC58 — gumowy egzoszkielet zwiększający odporność na upadki, podnosi tumble do 1000×1,0 m',
     description: `Oryginalne etui ochronne Zebra Rugged Boot do terminali TC53 i TC58. Gumowy egzoszkielet absorbuje uderzenia i zwiększa odporność na upadki: tumble test rośnie z 1000×0,5 m do 1000×1,0 m. Precyzyjne wycięcia na skaner, kamery, porty USB i przyciski — pełna funkcjonalność bez zdejmowania etui.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -26220,7 +26220,7 @@ const tc53Accessories: Product[] = [
     id: 'zebra-tc53-trigger-handle',
     slug: 'zebra-uchwyt-spust-tc53',
     name: 'Uchwyt ze spustem Trigger Handle do Zebra TC53 / TC58',
-    shortDescription: 'Ergonomiczny uchwyt pistoletowy ze spustem — szybsze skanowanie w magazynie',
+    shortDescription: 'Uchwyt ze spustem Trigger Handle do Zebra TC53 / TC58 — ergonomiczny uchwyt pistoletowy ze spustem, szybsze skanowanie w magazynie',
     description: `Oryginalny uchwyt ze spustem Zebra Trigger Handle do terminali TC53 i TC58. Przekształca terminal w ergonomiczny skaner pistoletowy — naturalny chwyt redukuje zmęczenie dłoni podczas wielogodzinnego skanowania. Fizyczny spust aktywuje skaner jednym kliknięciem. Idealny do kompletacji zamówień, inwentaryzacji i pracy w magazynie wysokiego składowania.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -26246,7 +26246,7 @@ const tc53Accessories: Product[] = [
     id: 'zebra-tc53-battery-4680-ble',
     slug: 'zebra-bateria-4680mah-ble-tc53-tc58',
     name: 'Akumulator 4680 mAh BLE do Zebra TC53 / TC58',
-    shortDescription: 'Bateria PowerPrecision+ 4680 mAh z modułem Bluetooth Low Energy do śledzenia lokalizacji',
+    shortDescription: 'Akumulator 4680 mAh BLE do Zebra TC53 / TC58 — bateria PowerPrecision+ 4680 mAh z modułem Bluetooth Low Energy do śledzenia lokalizacji',
     description: `Oryginalna bateria Zebra PowerPrecision+ Li-Ion 4680 mAh z wbudowanym nadajnikiem Bluetooth Low Energy (BLE). Umożliwia lokalizowanie terminala TC53/TC58 nawet po wyjęciu z uchwytu — sygnał BLE pozwala namierzyć urządzenie w aplikacji Device Tracker. Identyczna pojemność i czas pracy jak bateria standardowa (~12 h), wymienna warm/hot swap.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
@@ -26272,7 +26272,7 @@ const tc53Accessories: Product[] = [
     id: 'zebra-tc53-trigger-lanyard',
     slug: 'zebra-smycz-uchwyt-pistoletowy-tc53-tc58',
     name: 'Smycz do uchwytu pistoletowego Zebra TC53 / TC58',
-    shortDescription: 'Smycz zabezpieczająca uchwyt pistoletowy przed upuszczeniem',
+    shortDescription: 'Smycz do uchwytu pistoletowego Zebra TC53 / TC58 — smycz zabezpieczająca uchwyt pistoletowy przed upuszczeniem',
     description: `Oryginalna smycz Zebra do uchwytu pistoletowego terminali TC53 i TC58. Zapobiega upuszczeniu terminala z uchwytem podczas intensywnej pracy — smycz mocowana na nadgarstku lub szyi. Lekka i wytrzymała, nie ogranicza ruchomości.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -26297,7 +26297,7 @@ const tc53Accessories: Product[] = [
     id: 'zebra-tc53-stylus',
     slug: 'zebra-rysik-ekran-tc53-tc58',
     name: 'Rysik do ekranu Zebra TC53 / TC58',
-    shortDescription: 'Metalowy rysik capacitive do precyzyjnej obsługi ekranu dotykowego',
+    shortDescription: 'Rysik do ekranu Zebra TC53 / TC58 — metalowy rysik capacitive do precyzyjnej obsługi ekranu dotykowego',
     description: `Oryginalny metalowy rysik Zebra do ekranów dotykowych terminali TC53, TC58 i innych urządzeń Zebra z ekranem pojemnościowym. Precyzyjne wprowadzanie danych, podpisy, nawigacja po interfejsie — szczególnie przydatny przy pracy w rękawicach ochronnych.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -26322,7 +26322,7 @@ const tc53Accessories: Product[] = [
     id: 'zebra-tc53-hand-strap',
     slug: 'zebra-pasek-na-reke-tc53-tc58',
     name: 'Pasek na rękę do Zebra TC53 / TC58',
-    shortDescription: 'Ergonomiczny pasek na rękę zabezpieczający terminal podczas pracy',
+    shortDescription: 'Pasek na rękę do Zebra TC53 / TC58 — ergonomiczny pasek na rękę zabezpieczający terminal podczas pracy',
     description: `Oryginalny pasek na rękę Zebra do terminali TC53, TC58, TC73 i TC78. Pewny chwyt bez ryzyka upuszczenia — elastyczny pasek mocowany z tyłu obudowy. Kompatybilny z etui ochronnym Rugged Boot.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -26347,7 +26347,7 @@ const tc53Accessories: Product[] = [
     id: 'zebra-tc53-holster',
     slug: 'zebra-kabura-do-paska-tc53-tc58',
     name: 'Kabura do paska do Zebra TC53 / TC58',
-    shortDescription: 'Skórzana kabura na pasek — szybki dostęp do terminala',
+    shortDescription: 'Kabura do paska do Zebra TC53 / TC58 — skórzana kabura na pasek, szybki dostęp do terminala',
     description: `Oryginalna kabura Zebra do noszenia na pasku terminali TC53 i TC58. Obrotowy klips zapewnia szybki dostęp i pewne mocowanie. Terminal umieszczany ekranem do ciała — ochrona wyświetlacza. Kompatybilna z baterią standardową i rozszerzoną.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -26372,7 +26372,7 @@ const tc53Accessories: Product[] = [
     id: 'zebra-tc53-vehicle-cradle',
     slug: 'zebra-uchwyt-samochodowy-tc73-tc78',
     name: 'Uchwyt samochodowy do Zebra TC73 / TC78',
-    shortDescription: 'Uchwyt samochodowy bez ładowania — montaż w wózku widłowym lub pojeździe',
+    shortDescription: 'Uchwyt samochodowy do Zebra TC73 / TC78 — uchwyt samochodowy bez ładowania, montaż w wózku widłowym lub pojeździe',
     description: `Oryginalny uchwyt samochodowy Zebra do terminali TC73 i TC78. Mocowanie w wózku widłowym, pojeździe dostawczym lub kabinie maszyny. Nie wymaga zasilania — terminal pracuje na baterii. Kompatybilny z ramionami montażowymi RAM Mount.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -26397,7 +26397,7 @@ const tc53Accessories: Product[] = [
     id: 'zebra-tc53-cradle-1slot-eth',
     slug: 'zebra-stacja-ladujaca-1-slot-ethernet-tc53-tc58',
     name: 'Stacja ładująca 1-slot z Ethernet do Zebra TC53 / TC58',
-    shortDescription: 'Stacja ładująca terminal + akumulator zapasowy z Ethernet i zasilaczem',
+    shortDescription: 'Stacja ładująca 1-slot z Ethernet do Zebra TC53 / TC58 — stacja ładująca terminal + akumulator zapasowy z Ethernet i zasilaczem',
     description: `Oryginalna stacja ładująca Zebra ShareCradle do terminali TC53 i TC58. Jednocześnie ładuje terminal i zapasowy akumulator. Port Ethernet zapewnia przewodowe połączenie sieciowe. Zasilacz w zestawie. Idealna na biurko lub stanowisko odbiorów.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -26424,7 +26424,7 @@ const tc53Accessories: Product[] = [
     id: 'zebra-tc53-cradle-1slot',
     slug: 'zebra-stacja-ladujaca-1-slot-tc53-tc58',
     name: 'Stacja ładująca 1-slot do Zebra TC53 / TC58',
-    shortDescription: 'Stacja ładująca terminal + akumulator zapasowy z zasilaczem',
+    shortDescription: 'Stacja ładująca 1-slot do Zebra TC53 / TC58 — stacja ładująca terminal + akumulator zapasowy z zasilaczem',
     description: `Oryginalna stacja ładująca Zebra ShareCradle do terminali TC53 i TC58. Jednocześnie ładuje terminal i zapasowy akumulator. Kompaktowa konstrukcja na biurko. Zasilacz w zestawie. Wersja bez portu Ethernet.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -26451,7 +26451,7 @@ const tc53Accessories: Product[] = [
     id: 'zebra-tc53-cradle-5slot-eth',
     slug: 'zebra-stacja-ladujaca-5-slot-ethernet-tc53-tc58',
     name: 'Stacja ładująca 5-slot z Ethernet do Zebra TC53 / TC58',
-    shortDescription: 'Stacja ładująca na 5 terminali z Ethernet i zasilaczem — do floty urządzeń',
+    shortDescription: 'Stacja ładująca 5-slot z Ethernet do Zebra TC53 / TC58 — stacja ładująca na 5 terminali z Ethernet i zasilaczem, do floty urządzeń',
     description: `Oryginalna wielostanowiskowa stacja ładująca Zebra ShareCradle na 5 terminali TC53/TC58 jednocześnie. Każdy slot z portem Ethernet — idealna do nocnego ładowania i synchronizacji floty urządzeń. Zasilacz w zestawie. Dedykowana do centrów dystrybucyjnych i dużych magazynów.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -26485,7 +26485,7 @@ const zd510Accessories: Product[] = [
     id: 'zebra-printhead-zd510-hc',
     slug: 'zebra-printhead-zd510-hc',
     name: 'Głowica drukująca Zebra ZD510-HC (300 dpi)',
-    shortDescription: 'Oryginalna głowica drukująca 300 dpi do drukarki opasek Zebra ZD510-HC — P1100266-003',
+    shortDescription: 'Głowica drukująca Zebra ZD510-HC (300 dpi) — oryginalna głowica drukująca 300 dpi do drukarki opasek Zebra ZD510-HC, P1100266-003',
     description: `Oryginalna głowica drukująca Zebra P1100266-003 do drukarki opasek identyfikacyjnych ZD510-HC. Rozdzielczość 300 dpi (12 dots/mm). Wymiana bez narzędzi (tool-less) — Element Energy Equalizer (E3) wydłuża żywotność głowicy.
 
 Zalecana wymiana co ok. 50 000–100 000 opasek w zależności od intensywności użytkowania i typu materiału Z-Band. Gwarancja producenta 12 miesięcy pod warunkiem stosowania oryginalnych materiałów Zebra Z-Band.
@@ -26523,7 +26523,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-platen-roller-zd510-hc',
     slug: 'zebra-platen-roller-zd510-hc',
     name: 'Wałek dociskowy Zebra ZD510-HC (platen roller)',
-    shortDescription: 'Oryginalny wałek dociskowy do drukarki opasek Zebra ZD510-HC — P1100266-008',
+    shortDescription: 'Wałek dociskowy Zebra ZD510-HC (platen roller) — oryginalny wałek dociskowy do drukarki opasek Zebra ZD510-HC, P1100266-008',
     description: `Oryginalny wałek dociskowy (platen roller) Zebra P1100266-008 do drukarki opasek identyfikacyjnych ZD510-HC. Wymiana bez narzędzi (tool-less) — wałek dociskowy zapewnia równomierny docisk opaski do głowicy drukującej.
 
 Zalecana wymiana przy pogorszeniu jakości druku lub nierównym nadruku. Gwarancja producenta 12 miesięcy.
@@ -26566,7 +26566,7 @@ const cardPrinters: Product[] = [
     id: 'zebra-zc100',
     slug: 'zebra-zc100',
     name: 'Zebra ZC100',
-    shortDescription: 'Drukarka kart plastikowych entry-level — jednostronna, 300 dpi, termosublimacja, USB/Ethernet',
+    shortDescription: 'Zebra ZC100 — drukarka kart plastikowych entry-level, jednostronna, 300 dpi, termosublimacja, USB/Ethernet',
     seoTitle: 'Drukarka kart Zebra ZC100 — tania mono 300 dpi USB/LAN',
     seoDescription: 'Zebra ZC100 (ZC11) — tania drukarka kart plastikowych mono, 300 dpi, termosublimacja. ZC100 Zebra: 150 kart/h, USB/Ethernet. ZC11-0000000EM00 od 3 420 zł netto.',
     description: `Dla kogo? Zebra ZC100 to kompaktowa drukarka kart plastikowych zaprojektowana dla małych biur, recepcji hotelowych, klubów fitness i sklepów — wszędzie tam, gdzie potrzebujesz drukować identyfikatory, karty lojalnościowe lub karty członkowskie w niewielkich nakładach (do 500 kart/rok).
@@ -26685,7 +26685,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zc300',
     slug: 'zebra-zc300',
     name: 'Zebra ZC300',
-    shortDescription: 'Drukarka kart plastikowych mid-range — jedno-/dwustronna, 300 dpi, kodowanie RFID/NFC/magnetyczne, Wi-Fi',
+    shortDescription: 'Zebra ZC300 — drukarka kart plastikowych mid-range, jedno-/dwustronna, 300 dpi, kodowanie RFID/NFC/magnetyczne, Wi-Fi',
     seoTitle: 'Drukarka kart Zebra ZC300 — kolorowa RFID NFC pracownicze',
     seoDescription: 'Zebra ZC300 (ZC31) — drukarka kart pracowniczych kolorowa, RFID, NFC, pasek magnetyczny. ZC300 Zebra: 300 dpi, jedno-/dwustronna. ZC31-000C000EM00 od 4 297 zł netto.',
     description: `Dla kogo? Zebra ZC300 to wszechstronna drukarka kart plastikowych zaprojektowana dla przedsiębiorstw, szkół, hoteli i organizacji — idealny wybór do identyfikatorów pracowniczych, e-legitymacji, kart dostępu RFID i kart hotelowych w nakładach od 500 do 5 000 kart/rok.
@@ -26812,7 +26812,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zc350',
     slug: 'zebra-zc350',
     name: 'Zebra ZC350',
-    shortDescription: 'Zaawansowana drukarka kart plastikowych — taśmy specialty (UV/holo/3D), RFID UHF, 225 kart/h, 3 lata gwarancji',
+    shortDescription: 'Zebra ZC350 — zaawansowana drukarka kart plastikowych, taśmy specialty (UV/holo/3D), RFID UHF, 225 kart/h, 3 lata gwarancji',
     seoTitle: 'Drukarka kart Zebra ZC350 — retransferowa UV hologram',
     seoDescription: 'Zebra ZC350 (ZC35) — drukarka kart retransferowa z UV i hologramem, RFID UHF. ZC350 Zebra: 225 kart/h, 300 dpi, zabezpieczenia, 3 lata gwarancji. ZC35-000C000EM00.',
     description: `Dla kogo? Zebra ZC350 to zaawansowana drukarka kart plastikowych dla organizacji wymagających rozszerzonych opcji bezpieczeństwa i personalizacji — idealna do kart RFID UHF (np. kontrola dostępu na dużą odległość), kart wielowarstwowych z zabezpieczeniami UV/holograficznymi i kart inteligentnych z jednoczesnym kodowaniem wielu technologii.
@@ -26944,7 +26944,7 @@ const cardRibbons: Product[] = [
     id: 'zebra-ribbon-ymcko-zc',
     slug: 'zebra-tasma-ymcko-zc100-zc300',
     name: 'Taśma kolorowa YMCKO Zebra ZC100/ZC300',
-    shortDescription: 'Kolorowa taśma barwiąca YMCKO do drukarek kart Zebra ZC100, ZC300 — 200 wydruków pełnokolorowych',
+    shortDescription: 'Taśma kolorowa YMCKO Zebra ZC100/ZC300 — kolorowa taśma barwiąca YMCKO do drukarek kart Zebra ZC100, ZC300, 200 wydruków pełnokolorowych',
     description: `Oryginalna taśma barwiąca YMCKO (Yellow-Magenta-Cyan-blacK-Overlay) do drukarek kart plastikowych Zebra ZC100 i ZC300. Każda taśma wystarcza na 200 pełnokolorowych wydruków jednostronnych z warstwą ochronną Overlay (UV). Panele YMCK drukują pełnokolorowe zdjęcia, logo i grafikę, a panel O nakłada przezroczystą warstwę chroniącą nadruk przed zarysowaniami, blaknięciem i promieniowaniem UV. Kompatybilna z drukarkami Zebra ZC100 i ZC300/ZC350 (wszystkie warianty). Part Number: 800300-250EM.`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tasmy-do-drukarek-kart'],
@@ -26976,7 +26976,7 @@ const cardRibbons: Product[] = [
     id: 'zebra-ribbon-black-zc',
     slug: 'zebra-tasma-czarna-zc100-zc300',
     name: 'Taśma czarna mono Zebra ZC100/ZC300',
-    shortDescription: 'Czarna taśma monochromatyczna do drukarek kart Zebra ZC100, ZC300 — 1500 wydruków',
+    shortDescription: 'Taśma czarna mono Zebra ZC100/ZC300 — czarna taśma monochromatyczna do drukarek kart Zebra ZC100, ZC300, 1500 wydruków',
     description: `Oryginalna monochromatyczna taśma czarna (K — blacK) do drukarek kart plastikowych Zebra ZC100 i ZC300. Wystarcza na 1 500 wydruków jednostronnych — idealna do dużych nakładów kart z tekstem, kodami kreskowymi i QR. Koszt wydruku: ok. 0,05 zł/karta (sama taśma). Kompatybilna z drukarkami Zebra ZC100, ZC300, ZC350. Part Number: 800300-301.`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tasmy-do-drukarek-kart'],
@@ -27003,7 +27003,7 @@ const cardRibbons: Product[] = [
     id: 'zebra-ribbon-white-zc',
     slug: 'zebra-tasma-biala-zc100-zc300',
     name: 'Taśma biała Zebra ZC100/ZC300',
-    shortDescription: 'Biała taśma barwiąca do drukarek kart Zebra ZC100, ZC300 — 1500 wydruków na ciemnych kartach',
+    shortDescription: 'Taśma biała Zebra ZC100/ZC300 — biała taśma barwiąca do drukarek kart Zebra ZC100, ZC300, 1500 wydruków na ciemnych kartach',
     description: `Oryginalna biała taśma barwiąca (W — White) do drukarek kart plastikowych Zebra ZC100 i ZC300. Wystarcza na 1 500 wydruków jednostronnych. Służy do nadruku białego tekstu, logo i grafiki na ciemnych lub kolorowych kartach PVC. Kompatybilna z drukarkami Zebra ZC100, ZC300, ZC350. Part Number: 800300-309EM.`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tasmy-do-drukarek-kart'],
@@ -27037,7 +27037,7 @@ const pvcCards: Product[] = [
     id: 'zebra-cards-premier-025',
     slug: 'zebra-karty-pcv-premier-025',
     name: 'Karty PCV Zebra Premier 0,25 mm',
-    shortDescription: 'Karty plastikowe Zebra Premier PVC CR-80, grubość 0,25 mm (10 mil) — opakowanie 500 szt.',
+    shortDescription: 'Karty PCV Zebra Premier 0,25 mm — karty plastikowe Zebra Premier PVC CR-80, grubość 0,25 mm (10 mil), opakowanie 500 szt.',
     description: `Oryginalne karty plastikowe Zebra Premier PVC w standardowym formacie CR-80 (85,6 × 54 mm) o grubości 0,25 mm (10 mil). Cieńsze od standardowych kart 0,76 mm — idealne do kart tymczasowych, identyfikatorów gości i kart lojalnościowych. Białe, dwustronne, do druku termosublimacyjnego. Opakowanie: 500 szt. Part Number: 104523-210. Kompatybilne z drukarkami Zebra ZC100, ZC300, ZC350, ZXP Series 7.`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['karty-pcv'],
@@ -27067,7 +27067,7 @@ const pvcCards: Product[] = [
     id: 'zebra-cards-premier-076',
     slug: 'zebra-karty-pcv-premier-076',
     name: 'Karty PCV Zebra Premier 0,76 mm',
-    shortDescription: 'Karty plastikowe Zebra Premier PVC CR-80, grubość 0,76 mm (30 mil) — opakowanie 500 szt.',
+    shortDescription: 'Karty PCV Zebra Premier 0,76 mm — karty plastikowe Zebra Premier PVC CR-80, grubość 0,76 mm (30 mil), opakowanie 500 szt.',
     description: `Oryginalne karty plastikowe Zebra Premier PVC w standardowym formacie CR-80 (85,6 × 54 mm) o standardowej grubości 0,76 mm (30 mil). Najpopularniejsza grubość — identyczna jak karty bankowe i kredytowe. Białe, dwustronne, do druku termosublimacyjnego. Opakowanie: 500 szt. Part Number: 104523-111. Kompatybilne z drukarkami Zebra ZC100, ZC300, ZC350, ZXP Series 7.`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['karty-pcv'],
@@ -27104,7 +27104,7 @@ const software: Product[] = [
     id: 'zebra-cardstudio',
     slug: 'zebra-cardstudio',
     name: 'Zebra CardStudio 2.0',
-    shortDescription: 'Oprogramowanie do projektowania i drukowania kart plastikowych — 4 wersje: Classic, Standard, Professional, Enterprise',
+    shortDescription: 'Zebra CardStudio 2.0 — oprogramowanie do projektowania i drukowania kart plastikowych, 4 wersje: Classic, Standard, Professional, Enterprise',
     description: `Zebra CardStudio 2.0 to profesjonalne oprogramowanie do projektowania i drukowania kart plastikowych na drukarkach Zebra ZC100, ZC300, ZC350 i ZXP Series. Intuicyjny interfejs drag-and-drop pozwala szybko tworzyć układy kart z elementami: zdjęcie, logo, tekst, kod kreskowy 1D/2D, QR code.
 
 Dostępne w 4 wersjach:
@@ -27166,7 +27166,7 @@ const zebraTablets: Product[] = [
     name: 'Zebra ET401',
     seoTitle: 'Tablet przemysłowy Zebra ET401 — Wi-Fi 7, IP68, RFID UHF, Android 15',
     seoDescription: 'Tablet Zebra ET401 — następca ET40. Wi-Fi 7, IP68, Qualcomm Dragonwing Q-6690, zintegrowany RFID UHF, Android 15→18. 8″ i 10″ od 2 410 zł netto. Tablet przemysłowy Zebra ET401 nowej generacji. TAKMA — autoryzowany partner Zebra.',
-    shortDescription: 'Tablet przemysłowy nowej generacji — Wi-Fi 7, IP68, opcjonalny RFID UHF, Android 15→18',
+    shortDescription: 'Zebra ET401 — tablet przemysłowy nowej generacji, Wi-Fi 7, IP68, opcjonalny RFID UHF, Android 15→18',
     description: `Dla kogo? Tablet Zebra ET401 to najnowsza generacja tabletu przemysłowego serii ET, zaprojektowana dla firm szukających wydajnego i wytrzymałego urządzenia do magazynu, produkcji, logistyki, retail, healthcare i pracy w terenie — z najdłuższym wsparciem Android na rynku (do A18, ~9 lat aktualizacji bezpieczeństwa).
 
 Następca bestsellerowej serii ET40/ET45 z procesorem Qualcomm Dragonwing Q-6690 (42% szybszym od poprzednika SM6375), pamięcią 6 lub 8 GB LPDDR5 i dyskiem 64/128 GB UFS. Wyświetlacz WUXGA 1920×1200 o jasności 600 nit z Corning Gorilla Glass 5 — czytelny w pełnym słońcu, z trybem mokrym i rękawicowym. Dostępny w rozmiarach 8 cali (480 g) i 10 cali (680 g).
@@ -27417,7 +27417,7 @@ Pakiet Mobility DNA w cenie urządzenia: StageNow, OEMConfig, Enterprise Browser
     name: 'Zebra ET40',
     seoTitle: 'Tablet przemysłowy Zebra ET40 — Wi-Fi 6, IP65, skaner kodów, Android',
     seoDescription: 'Tablet Zebra ET40 — wzmocniony tablet firmowy 8″ i 10″ ze skanerem kodów SE4710, Wi-Fi 6E, IP65, MIL-STD-810H. Od 2 407 zł netto. Tablet przemysłowy Zebra ET40 z hot-swap baterii. TAKMA — autoryzowany partner Zebra.',
-    shortDescription: 'Wzmocniony tablet firmowy — Wi-Fi 6, IP65, wbudowany skaner, wymienialna bateria',
+    shortDescription: 'Zebra ET40 — wzmocniony tablet firmowy, Wi-Fi 6, IP65, wbudowany skaner, wymienialna bateria',
     description: `Dla kogo? Tablet Zebra ET40 to wzmocniony tablet firmowy zaprojektowany dla handlu detalicznego, gastronomii, hotelarstwa, magazynu i logistyki wewnętrznej. Zastępuje konsumenckie iPady i tablety Samsung, oferując pełną wytrzymałość przemysłową, wbudowany skaner kodów kreskowych i gwarantowane wsparcie producenta.
 
 Cienka i lekka konstrukcja (11,4 mm grubości, 485 g w wersji 8″) wygląda jak tablet konsumencki, ale oferuje klasę ochrony IP65, odporność na upadki z 1,2 m na beton (MIL-STD-810H) oraz pracę w temperaturach od -20°C do +50°C. Wymienialna bateria PowerPrecision z możliwością hot-swap — wymiana w kilka sekund bez wyłączania tabletu.
@@ -27591,7 +27591,7 @@ ET40 to wersja Wi-Fi only z serii ET4x — jeśli potrzebujesz łączności kom�
     name: 'Zebra ET45',
     seoTitle: 'Tablet przemysłowy Zebra ET45 — 5G, Wi-Fi 6, IP65, skaner kodów, Android',
     seoDescription: 'Tablet Zebra ET45 — wzmocniony tablet firmowy 8″ i 10″ z 5G/LTE, skanerem kodów SE4710, Wi-Fi 6, IP65, MIL-STD-810H. Od 3 040 zł netto. Tablet przemysłowy Zebra ET45 z GPS do pracy terenowej. TAKMA — autoryzowany partner Zebra.',
-    shortDescription: 'Wzmocniony tablet firmowy z 5G/LTE — Wi-Fi 6, IP65, wbudowany skaner, wymienialna bateria',
+    shortDescription: 'Zebra ET45 — wzmocniony tablet firmowy z 5G/LTE, Wi-Fi 6, IP65, wbudowany skaner, wymienialna bateria',
     description: `Dla kogo? Tablet Zebra ET45 to wzmocniony tablet firmowy z łącznością komórkową 5G/LTE, zaprojektowany dla pracowników terenowych, kurierów, serwisantów, kierowców flot i zespołów pracujących poza zasięgiem Wi-Fi. To wersja z modułem WWAN serii ET4x — identyczna konstrukcja, wytrzymałość i akcesoria jak ET40, ale z pełną łącznością mobilną.
 
 Cienka i lekka konstrukcja (11,4 mm grubości, 490 g w wersji 8″) z klasą ochrony IP65, odpornością na upadki z 1,2 m na beton (MIL-STD-810H) i pracą w temperaturach od -20°C do +50°C. Wymienialna bateria PowerPrecision z możliwością hot-swap — wymiana w kilka sekund bez wyłączania tabletu.
@@ -27782,7 +27782,7 @@ ET45 to wersja z 5G — jeśli pracujesz wyłącznie w zasięgu Wi-Fi, tańszym 
     name: 'Zebra ET60',
     seoTitle: 'Tablet przemysłowy Zebra ET60 — do chłodni -30°C, IP66, podgrzewany ekran 1000 nit',
     seoDescription: 'Tablet Zebra ET60 — ekstremalny tablet rugged 10″ do chłodni i mroźni (-30°C). Podgrzewany ekran 1000 nit, skaner SE55 (12 m), IP66, hot-swap baterii. Od 6 346 zł netto. Tablet przemysłowy Zebra ET60 Android/Windows. TAKMA — autoryzowany partner Zebra.',
-    shortDescription: 'Ekstremalny tablet przemysłowy do chłodni -30°C — podgrzewany ekran 1000 nit, IP66, skaner SE55',
+    shortDescription: 'Zebra ET60 — ekstremalny tablet przemysłowy do chłodni -30°C, podgrzewany ekran 1000 nit, IP66, skaner SE55',
     description: `Dla kogo? Tablet Zebra ET60 to wytrzymały tablet przemysłowy zaprojektowany do pracy w najtrudniejszych warunkach: mroźnie do -30°C, chłodnie, doki załadunkowe, praca na zewnątrz w deszczu i śniegu, a także montaż na wózkach widłowych w zimnych magazynach. To jedyny tablet Android na rynku certyfikowany do ciągłej pracy w temperaturach poniżej -20°C.
 
 Ekran 10,1 cala WUXGA (1920×1200) o jasności 1000 nit jest czytelny nawet w pełnym słońcu i w warunkach zamglenia w chłodniach. W stacji dokującej pojazdu ekran jest podgrzewany — nie zaparuje ani nie zamarznie. Tryb mokry filtruje fałszywe dotknięcia od kropel wody i kondensatu, tryb rękawicowy obsługuje grube rękawice mroźnicze. Gorilla Glass chroni przed zarysowaniami.
@@ -27964,7 +27964,7 @@ ET60 dostępny z Androidem 13 (aktualizacje do A16, LifeGuard for Android) i Win
     name: 'Zebra ET65',
     seoTitle: 'Tablet Zebra ET65 — 5G do chłodni -30°C, IP66, podgrzewany ekran 1000 nit',
     seoDescription: 'Tablet Zebra ET65 — ekstremalny tablet przemysłowy 5G 10″ do chłodni i mroźni (-30°C). Podgrzewany ekran 1000 nit, skaner SE55 (12 m), IP66, GPS, hot-swap baterii. Od 7 279 zł netto. Tablet przemysłowy Zebra ET65 z 5G/LTE. TAKMA — autoryzowany partner Zebra.',
-    shortDescription: 'Ekstremalny tablet przemysłowy 5G do chłodni -30°C — podgrzewany ekran 1000 nit, IP66, GPS, skaner SE55',
+    shortDescription: 'Zebra ET65 — ekstremalny tablet przemysłowy 5G do chłodni -30°C, podgrzewany ekran 1000 nit, IP66, GPS, skaner SE55',
     description: `Dla kogo? Tablet Zebra ET65 to wytrzymały tablet przemysłowy z łącznością 5G/LTE, zaprojektowany do pracy w najtrudniejszych warunkach poza zasięgiem Wi-Fi: mroźnie do -30°C, chłodnie, inspekcje terenowe w ekstremalnych temperaturach, logistyka cold chain i praca na wózkach widłowych w zimnych magazynach. To wersja ET60 z pełną łącznością komórkową 5G Sub-6/mmWave i GPS.
 
 Ekran 10,1 cala WUXGA (1920×1200) o jasności 1000 nit z podgrzewaniem w stacji dokującej pojazdu — nie zaparuje ani nie zamarznie w mroźni. Tryb mokry i rękawicowy do pracy w rękawicach mroźniczych i w deszczu. Gorilla Glass chroni przed zarysowaniami.
@@ -28122,7 +28122,7 @@ Tablet Zebra ET65 to wersja 5G serii ET6x — jeśli pracujesz wyłącznie w zas
     name: 'Zebra ET60 Windows',
     seoTitle: 'Tablet Zebra ET60 Windows — Intel Core i5, 16 GB DDR5, IP66, do chłodni -30°C',
     seoDescription: 'Tablet Zebra ET60 Windows — wytrzymały tablet przemysłowy 10″ z Windows 11 Pro, Intel Core i5, 16 GB DDR5, 256 GB SSD. IP66, -30°C, podgrzewany ekran 1000 nit, skaner 2D. Od 11 597 zł netto. Tablet przemysłowy Zebra ET60W. TAKMA — autoryzowany partner Zebra.',
-    shortDescription: 'Wytrzymały tablet przemysłowy Windows 11 Pro do chłodni -30°C — Intel Core i5, 16 GB DDR5, IP66, 1000 nit',
+    shortDescription: 'Zebra ET60 Windows — wytrzymały tablet przemysłowy Windows 11 Pro do chłodni -30°C, Intel Core i5, 16 GB DDR5, IP66, 1000 nit',
     description: `Dla kogo? Tablet Zebra ET60 Windows to wytrzymały tablet przemysłowy z pełnym systemem Windows 11 Pro na platformie Intel Core i5, zaprojektowany do pracy w najtrudniejszych warunkach przemysłowych: mroźnie do -30°C, chłodnie, doki załadunkowe, montaż na wózkach widłowych. Dla firm, które potrzebują obsługi oprogramowania Windows-only: SAP GUI, AutoCAD, SCADA, Oracle Forms, systemy WMS działające wyłącznie pod Windows.
 
 Procesor Intel Core i5-1345U (10 rdzeni / 12 wątków), 16 GB DDR5 i 256 GB SSD NVMe — pełna wydajność komputera w obudowie wytrzymałego tabletu. Windows 11 Pro i IoT Enterprise LTSC z długoterminowym wsparciem aktualizacji bezpieczeństwa.
@@ -28271,7 +28271,7 @@ Tablet Zebra ET60 Windows dzieli obudowę i akcesoria z wersją Android (Zebra E
     name: 'Zebra ET65 Windows',
     seoTitle: 'Tablet Zebra ET65 Windows 5G — Intel Core i5, 16 GB DDR5, IP66, GPS, do chłodni -30°C',
     seoDescription: 'Tablet Zebra ET65 Windows 5G — wytrzymały tablet przemysłowy 10″ z Windows 11 Pro, Intel Core i5, 5G/LTE, GPS, 16 GB DDR5, 256 GB SSD. IP66, -30°C, ekran 1000 nit. Od 13 409 zł netto. Tablet przemysłowy Zebra ET65W z 5G. TAKMA — autoryzowany partner Zebra.',
-    shortDescription: 'Wytrzymały tablet przemysłowy Windows 11 Pro + 5G do chłodni -30°C — Intel Core i5, GPS, IP66, 1000 nit',
+    shortDescription: 'Zebra ET65 Windows — wytrzymały tablet przemysłowy Windows 11 Pro + 5G do chłodni -30°C, Intel Core i5, GPS, IP66, 1000 nit',
     description: `Dla kogo? Tablet Zebra ET65 Windows to wytrzymały tablet przemysłowy z Windows 11 Pro, łącznością 5G/LTE i GPS, zaprojektowany do pracy w ekstremalnych warunkach poza zasięgiem Wi-Fi. Dla firm pracujących w mroźniach, chłodniach, na dokach załadunkowych i w terenie, które potrzebują oprogramowania Windows-only z pełną łącznością komórkową: SAP GUI, AutoCAD, SCADA, systemy GIS i fleet management.
 
 Procesor Intel Core i5-1345U (10 rdzeni / 12 wątków), 16 GB DDR5 i 256 GB SSD NVMe. Modem 5G Sub-6/mmWave (Qualcomm X55) z GPS/GLONASS/Galileo/BeiDou — pełna nawigacja i łączność w terenie bez zależności od Wi-Fi.
@@ -28417,7 +28417,7 @@ const et6xAccessories: Product[] = [
   {
     id: 'zebra-battery-et6xa-36wh', slug: 'zebra-battery-et6xa-36wh',
     name: 'Akumulator 36 Wh (8 920 mAh) do ET60/ET65 Android',
-    shortDescription: 'Bateria standardowa 36 Wh do tabletu Zebra ET60 i ET65 z systemem Android',
+    shortDescription: 'Akumulator 36 Wh (8 920 mAh) do ET60/ET65 Android — bateria standardowa 36 Wh do tabletu Zebra ET60 i ET65 z systemem Android',
     description: 'Akumulator standardowy PowerPrecision 36 Wh (8 920 mAh) do tabletu Zebra ET60 i ET65 w wersji Android. Technologia hot-swap z superkondensatorem — wymiana baterii bez wyłączania tabletu. Na pełną zmianę w standardowych warunkach.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 369,
     images: ['/images/products/BTRY-ET6XA-18AH-01.png'], imageDescriptions: ['Akumulator standardowy 36 Wh do tabletów Zebra ET60 i ET65 Android'],
@@ -28429,7 +28429,7 @@ const et6xAccessories: Product[] = [
   {
     id: 'zebra-battery-et6xw-36wh', slug: 'zebra-battery-et6xw-36wh',
     name: 'Akumulator 36 Wh do ET60/ET65 Windows',
-    shortDescription: 'Bateria standardowa 36 Wh do tabletu Zebra ET60 i ET65 z systemem Windows',
+    shortDescription: 'Akumulator 36 Wh do ET60/ET65 Windows — bateria standardowa 36 Wh do tabletu Zebra ET60 i ET65 z systemem Windows',
     description: 'Akumulator standardowy 36 Wh do tabletu Zebra ET60 i ET65 w wersji Windows 11 Pro. Technologia hot-swap z superkondensatorem — wymiana baterii bez wyłączania tabletu.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 362,
     images: ['/images/products/BTRY-ET6XA-18AH-01.png'], imageDescriptions: ['Akumulator standardowy 36 Wh do tabletów Zebra ET60 i ET65 Windows'],
@@ -28441,7 +28441,7 @@ const et6xAccessories: Product[] = [
   {
     id: 'zebra-battery-et6xa-72wh', slug: 'zebra-battery-et6xa-72wh',
     name: 'Akumulator rozszerzony 72 Wh (17 840 mAh) do ET60/ET65 Android',
-    shortDescription: 'Bateria rozszerzona 72 Wh do tabletu Zebra ET60 i ET65 Android — na dwie zmiany w mroźni',
+    shortDescription: 'Akumulator rozszerzony 72 Wh (17 840 mAh) do ET60/ET65 Android — bateria rozszerzona 72 Wh do tabletu Zebra ET60 i ET65 Android, na dwie zmiany w mroźni',
     description: 'Akumulator rozszerzony PowerPrecision 72 Wh (17 840 mAh) do tabletu Zebra ET60 i ET65 w wersji Android. Podwójna pojemność — na dwie pełne zmiany w mroźni do -30°C. Hot-swap z superkondensatorem.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 664,
     images: ['/images/products/BTRY-ET6XA-18AH-01.png'], imageDescriptions: ['Akumulator rozszerzony 72 Wh PowerPrecision do tabletów Zebra ET60 i ET65 Android'],
@@ -28453,7 +28453,7 @@ const et6xAccessories: Product[] = [
   {
     id: 'zebra-battery-et6xw-72wh', slug: 'zebra-battery-et6xw-72wh',
     name: 'Akumulator rozszerzony 72 Wh do ET60/ET65 Windows',
-    shortDescription: 'Bateria rozszerzona 72 Wh do tabletu Zebra ET60 i ET65 Windows — na dwie zmiany',
+    shortDescription: 'Akumulator rozszerzony 72 Wh do ET60/ET65 Windows — bateria rozszerzona 72 Wh do tabletu Zebra ET60 i ET65 Windows, na dwie zmiany',
     description: 'Akumulator rozszerzony 72 Wh do tabletu Zebra ET60 i ET65 w wersji Windows 11 Pro. Podwójna pojemność na dwie pełne zmiany. Hot-swap z superkondensatorem.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 630,
     images: ['/images/products/BTRY-ET6XA-18AH-01.png'], imageDescriptions: ['Akumulator rozszerzony 72 Wh do tabletów Zebra ET60 i ET65 Windows'],
@@ -28465,7 +28465,7 @@ const et6xAccessories: Product[] = [
   {
     id: 'zebra-charger-et6x-2slot', slug: 'zebra-charger-et6x-2slot',
     name: 'Ładowarka 2-slotowa na baterie ET60/ET65',
-    shortDescription: 'Ładowarka na 2 akumulatory do tabletu Zebra ET60 i ET65',
+    shortDescription: 'Ładowarka 2-slotowa na baterie ET60/ET65 — ładowarka na 2 akumulatory do tabletu Zebra ET60 i ET65',
     description: 'Ładowarka 2-slotowa do akumulatorów tabletów Zebra ET60 i ET65. Ładuje jednocześnie 2 baterie zapasowe (standardowe lub rozszerzone) — idealna do pracy zmianowej.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 664,
     images: ['/images/products/SAC-ET6X-2SCHG-01.png'], imageDescriptions: ['Ładowarka 2-slotowa na akumulatory do tabletów Zebra ET60 i ET65'],
@@ -28477,7 +28477,7 @@ const et6xAccessories: Product[] = [
   {
     id: 'zebra-handle-et6x', slug: 'zebra-handle-et6x',
     name: 'Uchwyt do noszenia ET60/ET65',
-    shortDescription: 'Uchwyt / hand strap do tabletu Zebra ET60 i ET65',
+    shortDescription: 'Uchwyt do noszenia ET60/ET65 — uchwyt / hand strap do tabletu Zebra ET60 i ET65',
     description: 'Uchwyt do noszenia (hand strap) do tabletu Zebra ET60 i ET65. Montowany z tyłu tabletu — zabezpiecza przed wyślizgnięciem się z ręki podczas pracy.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 251,
     images: ['/images/products/SG-ET8X-HANDLE1-01.png'], imageDescriptions: ['Uchwyt do noszenia (hand strap) do tabletu Zebra ET60 i ET65'],
@@ -28489,7 +28489,7 @@ const et6xAccessories: Product[] = [
   {
     id: 'zebra-keyboard-et6x-qwerty', slug: 'zebra-keyboard-et6x-qwerty',
     name: 'Klawiatura przemysłowa QWERTY do ET60/ET65',
-    shortDescription: 'Klawiatura QWERTY do montażu w stacji dokującej pojazdu ET60/ET65',
+    shortDescription: 'Klawiatura przemysłowa QWERTY do ET60/ET65 — klawiatura QWERTY do montażu w stacji dokującej pojazdu ET60/ET65',
     description: 'Klawiatura przemysłowa QWERTY do tabletów Zebra ET60 i ET65. Montowana w stacji dokującej pojazdu — zamienia tablet w pełną stację roboczą na wózku widłowym. Podświetlane klawisze, odporność na rozlanie płynów.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 1963,
     images: ['/images/products/KYBD-QW-VC-01.png'], imageDescriptions: ['Klawiatura przemysłowa QWERTY do stacji dokującej pojazdu tabletów Zebra ET60 i ET65'],
@@ -28501,7 +28501,7 @@ const et6xAccessories: Product[] = [
   {
     id: 'zebra-keyboard-case-et6x', slug: 'zebra-keyboard-case-et6x',
     name: 'Etui z klawiaturą 2-in-1 do ET60/ET65',
-    shortDescription: 'Odpinane etui z klawiaturą zamieniające tablet w laptop',
+    shortDescription: 'Etui z klawiaturą 2-in-1 do ET60/ET65 — odpinane etui z klawiaturą zamieniające tablet w laptop',
     description: 'Etui z odpinaną klawiaturą 2-in-1 do tabletów Zebra ET60 i ET65. Zamienia tablet w laptop — klawiatura na zawiasach z trybem stojącym. Idealne do pracy biurowej i inspekcji terenowych.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 2570,
     images: [], imageDescriptions: [],
@@ -28513,7 +28513,7 @@ const et6xAccessories: Product[] = [
   {
     id: 'zebra-charger-usbc-45w-et6x', slug: 'zebra-charger-usbc-45w-et6x',
     name: 'Zasilacz USB-C 45 W do ET60/ET65',
-    shortDescription: 'Zasilacz sieciowy USB-C 15V 45W do tabletu Zebra ET60 i ET65',
+    shortDescription: 'Zasilacz USB-C 45 W do ET60/ET65 — zasilacz sieciowy USB-C 15V 45W do tabletu Zebra ET60 i ET65',
     description: 'Zasilacz sieciowy USB-C 45 W (15V) do tabletów Zebra ET60 i ET65. Ładowanie tabletu przez port USB-C — kompaktowy zasilacz do biura i podróży.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 206,
     images: ['/images/products/PWR-BGA15V45W-UC2-WW.png'], imageDescriptions: ['Zasilacz sieciowy USB-C 45 W do tabletów Zebra ET60 i ET65'],
@@ -28525,7 +28525,7 @@ const et6xAccessories: Product[] = [
   {
     id: 'zebra-stylus-et6x', slug: 'zebra-stylus-et6x',
     name: 'Rysik aktywny do ET60/ET65',
-    shortDescription: 'Rysik aktywny do tabletu Zebra ET60, ET65, ET80',
+    shortDescription: 'Rysik aktywny do ET60/ET65 — rysik aktywny do tabletu Zebra ET60, ET65, ET80',
     description: 'Rysik aktywny (stylus) do tabletów Zebra ET60, ET65, ET80 i ET85. Do precyzyjnej obsługi ekranu w rękawicach, podpisywania dokumentów i rysowania na ekranie dotykowym.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 473,
     images: ['/images/products/SG-ET8X-STYLUS1-01.png'], imageDescriptions: ['Rysik aktywny do tabletów Zebra ET60, ET65, ET80 i ET85'],
@@ -28537,7 +28537,7 @@ const et6xAccessories: Product[] = [
   {
     id: 'zebra-power-regulator-et6x', slug: 'zebra-power-regulator-et6x',
     name: 'Regulator napięcia 24V–90V do ET60/ET65',
-    shortDescription: 'Regulator napięcia wejściowego 24V–90V do stacji dokującej pojazdu ET60/ET65',
+    shortDescription: 'Regulator napięcia 24V–90V do ET60/ET65 — regulator napięcia wejściowego 24V–90V do stacji dokującej pojazdu ET60/ET65',
     description: 'Regulator napięcia 24V–90V do stacji dokującej pojazdu tabletów Zebra ET60 i ET65. Stabilizuje napięcie z akumulatora wózka widłowego — chroni tablet przed skokami napięcia.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 1727,
     images: [], imageDescriptions: [],
@@ -28549,7 +28549,7 @@ const et6xAccessories: Product[] = [
   {
     id: 'zebra-cigarette-charger-et6x', slug: 'zebra-cigarette-charger-et6x',
     name: 'Zasilacz 12V do gniazda zapalniczki ET60/ET65',
-    shortDescription: 'Zasilacz samochodowy 12V do stacji dokującej pojazdu ET60/ET65',
+    shortDescription: 'Zasilacz 12V do gniazda zapalniczki ET60/ET65 — zasilacz samochodowy 12V do stacji dokującej pojazdu ET60/ET65',
     description: 'Zasilacz 12V do gniazda zapalniczki samochodowej do tabletów Zebra ET60 i ET65. Zasilanie tabletu w pojeździe osobowym lub dostawczym.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 106,
     images: [], imageDescriptions: [],
@@ -28561,7 +28561,7 @@ const et6xAccessories: Product[] = [
   {
     id: 'zebra-dock-power-supply-et6x', slug: 'zebra-dock-power-supply-et6x',
     name: 'Zasilacz do stacji dokującej ET60/ET65',
-    shortDescription: 'Zasilacz sieciowy do stacji dokującej pojazdu Zebra ET60/ET65',
+    shortDescription: 'Zasilacz do stacji dokującej ET60/ET65 — zasilacz sieciowy do stacji dokującej pojazdu Zebra ET60/ET65',
     description: 'Zasilacz do stacji dokującej pojazdu tabletów Zebra ET60 i ET65. Zasilanie stacji dokującej z gniazdka sieciowego — do testów, konfiguracji i stanowisk stacjonarnych.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 310,
     images: [], imageDescriptions: [],
@@ -28573,7 +28573,7 @@ const et6xAccessories: Product[] = [
   {
     id: 'zebra-dock-cable-et6x', slug: 'zebra-dock-cable-et6x',
     name: 'Kabel zasilający do stacji dokującej ET60/ET65',
-    shortDescription: 'Kabel zasilający DC do stacji dokującej pojazdu ET60/ET65',
+    shortDescription: 'Kabel zasilający do stacji dokującej ET60/ET65 — kabel zasilający DC do stacji dokującej pojazdu ET60/ET65',
     description: 'Kabel zasilający do stacji dokującej pojazdu tabletów Zebra ET60 i ET65. Łączy zasilacz lub akumulator pojazdu ze stacją dokującą.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 318,
     images: [], imageDescriptions: [],
@@ -28585,7 +28585,7 @@ const et6xAccessories: Product[] = [
   {
     id: 'zebra-power-converter-9v60v-et6x', slug: 'zebra-power-converter-9v60v-et6x',
     name: 'Konwerter napięcia 9V–60V do ET60/ET65',
-    shortDescription: 'Konwerter napięcia wejściowego 9V–60V do stacji dokującej pojazdu',
+    shortDescription: 'Konwerter napięcia 9V–60V do ET60/ET65 — konwerter napięcia wejściowego 9V–60V do stacji dokującej pojazdu',
     description: 'Konwerter napięcia 9V–60V do stacji dokującej pojazdu tabletów Zebra ET60 i ET65. Do pojazdów z napięciem 12V/24V/48V.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 999,
     images: [], imageDescriptions: [],
@@ -28597,7 +28597,7 @@ const et6xAccessories: Product[] = [
   {
     id: 'zebra-installation-kit-et6x', slug: 'zebra-installation-kit-et6x',
     name: 'Zestaw kabli instalacyjnych ET60/ET65',
-    shortDescription: 'Zestaw kabli do instalacji stacji dokującej ET60/ET65 w pojeździe',
+    shortDescription: 'Zestaw kabli instalacyjnych ET60/ET65 — zestaw kabli do instalacji stacji dokującej ET60/ET65 w pojeździe',
     description: 'Zestaw kabli instalacyjnych do montażu stacji dokującej pojazdu tabletów Zebra ET60 i ET65. Zawiera okablowanie do podłączenia zasilania i sygnału w pojeździe.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 79,
     images: [], imageDescriptions: [],
@@ -28616,7 +28616,7 @@ const tabletAccessories: Product[] = [
   {
     id: 'zebra-dock-et4x-1slot', slug: 'zebra-dock-et4x-1slot',
     name: 'Stacja dokująca 1-slotowa ET40/ET45',
-    shortDescription: 'Stacja ładowania i synchronizacji do tabletu Zebra ET40 i ET45',
+    shortDescription: 'Stacja dokująca 1-slotowa ET40/ET45 — stacja ładowania i synchronizacji do tabletu Zebra ET40 i ET45',
     description: 'Pojedyncza stacja dokująca do tabletu Zebra ET40 i ET45. Ładowanie tabletu przez pogo piny — szybkie i niezawodne połączenie bez zużywania portu USB-C. Kompatybilna z modelami 8″ i 10″.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 833,
     images: ['/images/products/CRD-ET4X-1SCG1-01.png'],
@@ -28629,7 +28629,7 @@ const tabletAccessories: Product[] = [
   {
     id: 'zebra-dock-et4x-4slot-8', slug: 'zebra-dock-et4x-4slot-8',
     name: 'Stacja dokująca 4-slotowa 8″ ET40/ET45',
-    shortDescription: 'Stacja ładowania 4 tabletów 8 cali Zebra ET40/ET45 jednocześnie',
+    shortDescription: 'Stacja dokująca 4-slotowa 8″ ET40/ET45 — stacja ładowania 4 tabletów 8 cali Zebra ET40/ET45 jednocześnie',
     description: 'Stacja dokująca na 4 tablety 8 cali Zebra ET40 i ET45. Jednoczesne ładowanie czterech urządzeń — idealna do zaplecza sklepu, magazynu lub hotelu.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 2475,
     images: ['/images/products/CRD-ET4X-4S8I1-01.png', '/images/products/CRD-ET4X-4S8I1-01_2.png'],
@@ -28642,7 +28642,7 @@ const tabletAccessories: Product[] = [
   {
     id: 'zebra-dock-et4x-4slot-10', slug: 'zebra-dock-et4x-4slot-10',
     name: 'Stacja dokująca 4-slotowa 10″ ET40/ET45',
-    shortDescription: 'Stacja ładowania 4 tabletów 10 cali Zebra ET40/ET45 jednocześnie',
+    shortDescription: 'Stacja dokująca 4-slotowa 10″ ET40/ET45 — stacja ładowania 4 tabletów 10 cali Zebra ET40/ET45 jednocześnie',
     description: 'Stacja dokująca na 4 tablety 10 cali Zebra ET40 i ET45. Jednoczesne ładowanie czterech urządzeń — idealna do zaplecza sklepu, magazynu lub hotelu.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 2436,
     images: ['/images/products/CRD-ET4X-4S10I1-01.png', '/images/products/CRD-ET4X-4S10I1-01_2.png'],
@@ -28655,7 +28655,7 @@ const tabletAccessories: Product[] = [
   {
     id: 'zebra-battery-et4x-8', slug: 'zebra-battery-et4x-8',
     name: 'Akumulator 6100 mAh do ET40/ET45 8″',
-    shortDescription: 'Bateria zamienna 6100 mAh do tabletu Zebra ET40 i ET45 8 cali',
+    shortDescription: 'Akumulator 6100 mAh do ET40/ET45 8″ — bateria zamienna 6100 mAh do tabletu Zebra ET40 i ET45 8 cali',
     description: 'Zapasowy akumulator PowerPrecision 6100 mAh do tabletu Zebra ET40 i ET45 w wersji 8-calowej. Technologia hot-swap z PowerPack — wymiana baterii bez wyłączania tabletu.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 384,
     images: ['/images/products/BTRY-ET4X-8IN1-01.png'],
@@ -28668,7 +28668,7 @@ const tabletAccessories: Product[] = [
   {
     id: 'zebra-battery-et4x-10', slug: 'zebra-battery-et4x-10',
     name: 'Akumulator 7600 mAh do ET40/ET45 10″',
-    shortDescription: 'Bateria zamienna 7600 mAh do tabletu Zebra ET40 i ET45 10 cali',
+    shortDescription: 'Akumulator 7600 mAh do ET40/ET45 10″ — bateria zamienna 7600 mAh do tabletu Zebra ET40 i ET45 10 cali',
     description: 'Zapasowy akumulator PowerPrecision 7600 mAh do tabletu Zebra ET40 i ET45 w wersji 10-calowej. Technologia hot-swap z PowerPack — wymiana baterii bez wyłączania tabletu.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 443,
     images: ['/images/products/BTRY-ET4X-10IN1-01.png'],
@@ -28681,7 +28681,7 @@ const tabletAccessories: Product[] = [
   {
     id: 'zebra-powerpack-et5x', slug: 'zebra-powerpack-et5x',
     name: 'PowerPack 3400 mAh do ET40/ET45',
-    shortDescription: 'Dodatkowy akumulator PowerPack z hot-swap do tabletu Zebra ET40/ET45',
+    shortDescription: 'PowerPack 3400 mAh do ET40/ET45 — dodatkowy akumulator PowerPack z hot-swap do tabletu Zebra ET40/ET45',
     description: 'PowerPack 3400 mAh do tabletu Zebra ET40 i ET45. Montowany w expansion back — umożliwia wymianę głównej baterii w locie (hot-swap) bez wyłączania tabletu i utraty sesji.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 778,
     images: ['/images/products/BTRY-ET5X-PRPK2-01.png'],
@@ -28694,7 +28694,7 @@ const tabletAccessories: Product[] = [
   {
     id: 'zebra-exoskeleton-et4x-8', slug: 'zebra-exoskeleton-et4x-8',
     name: 'Etui Exoskeleton 8″ ET40/ET45',
-    shortDescription: 'Gumowe etui ochronne zwiększające odporność na upadek do 1.55 m',
+    shortDescription: 'Etui Exoskeleton 8″ ET40/ET45 — gumowe etui ochronne zwiększające odporność na upadek do 1.55 m',
     description: 'Rugged boot / exoskeleton do tabletu Zebra ET40 i ET45 w wersji 8-calowej. Zwiększa odporność na upadek z 1,2 m do 1,55 m na beton. Gumowa konstrukcja pochłaniająca wstrząsy.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 313,
     images: ['/images/products/SG-ET4X-8EXOSKL1-01.png'],
@@ -28707,7 +28707,7 @@ const tabletAccessories: Product[] = [
   {
     id: 'zebra-exoskeleton-et4x-10', slug: 'zebra-exoskeleton-et4x-10',
     name: 'Etui Exoskeleton 10″ ET40/ET45',
-    shortDescription: 'Gumowe etui ochronne zwiększające odporność na upadek do 1.55 m',
+    shortDescription: 'Etui Exoskeleton 10″ ET40/ET45 — gumowe etui ochronne zwiększające odporność na upadek do 1.55 m',
     description: 'Rugged boot / exoskeleton do tabletu Zebra ET40 i ET45 w wersji 10-calowej. Zwiększa odporność na upadek z 1,2 m do 1,55 m na beton. Gumowa konstrukcja pochłaniająca wstrząsy.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 318,
     images: ['/images/products/SG-ET4X-10EXOSKL1-01.png'],
@@ -28720,7 +28720,7 @@ const tabletAccessories: Product[] = [
   {
     id: 'zebra-charger-et5x-4ppk', slug: 'zebra-charger-et5x-4ppk',
     name: 'Ładowarka 4-slotowa na baterie ET40/ET45',
-    shortDescription: 'Ładowarka na 4 akumulatory PowerPack do tabletu Zebra ET40/ET45',
+    shortDescription: 'Ładowarka 4-slotowa na baterie ET40/ET45 — ładowarka na 4 akumulatory PowerPack do tabletu Zebra ET40/ET45',
     description: 'Ładowarka 4-slotowa do akumulatorów PowerPack tabletów Zebra ET40 i ET45. Ładuje jednocześnie 4 baterie zapasowe — idealna do pracy zmianowej na dużej flocie tabletów.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 488,
     images: ['/images/products/SAC-ET5X-4PPK1-01.png'],
@@ -28733,7 +28733,7 @@ const tabletAccessories: Product[] = [
   {
     id: 'zebra-handstrap-et5x', slug: 'zebra-handstrap-et5x',
     name: 'Uchwyt do noszenia ET40/ET45',
-    shortDescription: 'Pasek na rękę do noszenia tabletu Zebra ET40/ET45',
+    shortDescription: 'Uchwyt do noszenia ET40/ET45 — pasek na rękę do noszenia tabletu Zebra ET40/ET45',
     description: 'Uchwyt / pasek na rękę (hand strap) do tabletu Zebra ET40 i ET45. Ułatwia noszenie tabletu podczas pracy — zapobiega wyślizgnięciu się z ręki.',
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 73,
     images: ['/images/products/SG-ET5X-HNDSTP-01.png'],
@@ -28754,7 +28754,7 @@ const newlandMobileComputers: Product[] = [
     id: 'newland-n7-cachalot-pro-ii',
     slug: 'newland-n7-cachalot-pro-ii',
     name: 'Newland N7 Cachalot Pro II',
-    shortDescription: 'Terminal z klawiaturą fizyczną 29/38/47 kl., skanerem Standard 2D lub Duo Near & Far, baterią hot-swap 5100 mAh',
+    shortDescription: 'Newland N7 Cachalot Pro II — terminal z klawiaturą fizyczną 29/38/47 kl., skanerem Standard 2D lub Duo Near & Far, baterią hot-swap 5100 mAh',
     description: `Dla kogo? Newland N7 Cachalot Pro II to terminal mobilny stworzony dla magazynów, logistyki i produkcji, gdzie liczy się szybkość wprowadzania danych, niezawodne skanowanie i praca bez przerw na ładowanie. Sprawdzi się wszędzie tam, gdzie operatorzy potrzebują fizycznej klawiatury — w kompletacji zamówień WMS, inwentaryzacji, na liniach produkcyjnych i przy identyfikacji towarów w trudnych warunkach oświetleniowych.
 
 Co wyróżnia N7 Cachalot Pro II? Terminal dostępny jest w dwóch wersjach skanera: Standard 2D (warianty S) i Duo Near & Far (warianty E). Skaner Duo Near & Far to unikalna technologia Newland łącząca dwa silniki skanowania 2D w jednym module — jeden do odczytu kodów z bliskiej odległości (etykiety na opakowaniach, półkach), drugi do skanowania z kilku metrów (kody na regałach wysokiego składowania). Przełączanie między silnikami odbywa się automatycznie, bez interwencji operatora. Wariant Standard 2D wystarczy do typowej pracy magazynowej na krótkich dystansach.
@@ -28926,7 +28926,7 @@ N7 Cachalot Pro II dostępny jest z Androidem 11 lub 13 — oba z certyfikatem G
     id: 'newland-mt93-megattera',
     slug: 'newland-mt93-megattera',
     name: 'Newland MT93 Megattera Standard',
-    shortDescription: 'Terminal mobilny 5.5" z Android 13, 4G LTE, skanerem 2D CM66 i baterią 5000 mAh — najtańszy terminal z wbudowanym LTE',
+    shortDescription: 'Newland MT93 Megattera Standard — terminal mobilny 5.5" z Android 13, 4G LTE, skanerem 2D CM66 i baterią 5000 mAh, najtańszy terminal z wbudowanym LTE',
     description: `Dla kogo? Newland MT93 Megattera Standard to terminal mobilny klasy enterprise w cenie urządzenia konsumenckiego, stworzony dla firm, które potrzebują wytrzymałego urządzenia z wbudowanym 4G LTE bez płacenia za flagowe terminale. Sprawdza się w dostawach last-mile, inwentaryzacji w terenie, serwisie polowym, logistyce miejskiej, obsłudze eventów i na halach sprzedaży — wszędzie tam, gdzie Wi-Fi nie sięga lub jest niestabilne.
 
 Co wyróżnia MT93 na tle konkurencji? Wbudowany moduł 4G LTE (FDD: B1/B2/B3/B5/B7/B8/B20/B28, TDD: B34/B38/B39/B40/B41) — jedyny terminal w cenie poniżej 2 500 zł netto z fabrycznie zainstalowanym modemem komórkowym. Obsługa Dual SIM (nano+nano) lub nano SIM + microSD do 256 GB. WWAN z pasmami 2G/3G/4G pokrywającymi całą Europę. Operator magazynowy pracujący w terenie ma pełny zasięg danych bez przenośnego routera Wi-Fi.
@@ -29014,7 +29014,7 @@ W zestawie: terminal MT93, bateria 5 000 mAh, etui ochronne, folia na ekran, pas
     id: 'newland-mt93-megattera-standard-plus',
     slug: 'newland-mt93-megattera-standard-plus',
     name: 'Newland MT93 Megattera Standard Plus',
-    shortDescription: 'Terminal mobilny 5.5" z Android 13, Wi-Fi 6E, 4G LTE, skanerem 2D CM66 i baterią 5000 mAh',
+    shortDescription: 'Newland MT93 Megattera Standard Plus — terminal mobilny 5.5" z Android 13, Wi-Fi 6E, 4G LTE, skanerem 2D CM66 i baterią 5000 mAh',
     description: `Dla kogo? Newland MT93 Megattera Standard Plus to ulepszona wersja terminala MT93 Standard z Wi-Fi 6E (802.11ax) zamiast Wi-Fi 5 (802.11ac). Przeznaczony dla magazynów, centrów logistycznych i hal produkcyjnych z gęstą siecią Wi-Fi 6E, gdzie większa przepustowość i niższe opóźnienia przekładają się na szybszą synchronizację danych WMS i płynniejszą pracę aplikacji enterprise. Wersja Standard Plus łączy niską cenę z łącznością nowej generacji.
 
 Czym różni się Standard Plus od Standard? Jedyną różnicą jest moduł Wi-Fi: Standard Plus obsługuje Wi-Fi 6E (802.11 a/b/g/n/ac/ax) z pasmem 6 GHz, podczas gdy Standard ma Wi-Fi 5 (802.11ac). Wi-Fi 6E zapewnia do 3× większą przepustowość, niższe opóźnienia (poniżej 5 ms) i lepszą wydajność w zatłoczonych sieciach z setkami urządzeń. Reszta specyfikacji — procesor, RAM, ekran, skaner, bateria, obudowa, łączność 4G/BT/NFC/GPS — jest identyczna.
@@ -29103,7 +29103,7 @@ W zestawie: terminal, bateria 5 000 mAh, etui ochronne, folia na ekran, pasek na
     id: 'newland-mt95-kambur-pro-ii',
     slug: 'newland-mt95-kambur-pro-ii',
     name: 'Newland MT95 Kambur Pro II',
-    shortDescription: 'Terminal mobilny 6.1" z Android 13, 5G, Wi-Fi 6, skanerem 2D DE5L, baterią 6000 mAh i IP67',
+    shortDescription: 'Newland MT95 Kambur Pro II — terminal mobilny 6.1" z Android 13, 5G, Wi-Fi 6, skanerem 2D DE5L, baterią 6000 mAh i IP67',
     description: `Dla kogo? Newland MT95 Kambur Pro II to flagowy terminal mobilny Newland z 5G i Wi-Fi 6, zaprojektowany dla dużych operacji logistycznych, centrów dystrybucji, sieci retail i serwisu polowego — wszędzie tam, gdzie wymagana jest łączność 5G, duży ekran i całodzienna praca bez ładowania. Certyfikat Android Enterprise Recommended (AER) gwarantuje regularne aktualizacje bezpieczeństwa i pełną kompatybilność z systemami MDM enterprise.
 
 Czym wyróżnia się MT95 Kambur Pro II? To jedyny terminal Newland z łącznością 5G NR (pasma N1/N3/N5/N8/N28/N38/N41/N77/N78/N79) i jednocześnie Wi-Fi 6 (802.11ax). Dual SIM (2× nano) umożliwia korzystanie z dwóch operatorów — np. roaming bez zmiany karty. Pełna kompatybilność wsteczna z 4G LTE (FDD: B1/B2/B3/B5/B7/B8/B20/B28, TDD: B34/B38/B39/B40/B41), 3G i 2G na wypadek braku zasięgu 5G.
@@ -29195,7 +29195,7 @@ const newlandN7Accessories: Product[] = [
     id: 'newland-cdn7-c',
     slug: 'newland-cdn7-c',
     name: 'Newland CDN7-C — stacja dokująca do N7 Cachalot Pro II',
-    shortDescription: 'Stacja dokująca 1-gniazdowa z komunikacją i ładowaniem baterii zapasowej',
+    shortDescription: 'Newland CDN7-C — stacja dokująca 1-gniazdowa z komunikacją i ładowaniem baterii zapasowej',
     description: 'Stacja dokująca Newland CDN7-C do terminala N7 Cachalot Pro II. Umożliwia jednoczesne ładowanie terminala i zapasowej baterii. Komunikacja USB i Ethernet do synchronizacji danych i aktualizacji oprogramowania. Kompaktowa konstrukcja na biurko lub stanowisko magazynowe.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-terminali'],
@@ -29226,7 +29226,7 @@ const newlandN7Accessories: Product[] = [
     id: 'newland-pgn7-02',
     slug: 'newland-pgn7-02',
     name: 'Newland PGN7-02 — uchwyt pistoletowy do N7 Cachalot Pro II',
-    shortDescription: 'Uchwyt pistoletowy (gun grip) ergonomiczny do intensywnego skanowania',
+    shortDescription: 'Newland PGN7-02 — uchwyt pistoletowy (gun grip) ergonomiczny do intensywnego skanowania',
     description: 'Uchwyt pistoletowy Newland NLS-PGN7-02 do terminala N7 Cachalot Pro II. Forma pistoletowa redukuje zmęczenie nadgarstka przy intensywnym skanowaniu (500+ skanów na zmianę). Ergonomiczny spust skanowania, pewny chwyt w rękawiczkach. Dedykowany do pracy w magazynach, logistyce i na liniach produkcyjnych. Wersja PGN7-02 przeznaczona specjalnie do modelu Cachalot Pro II (druga generacja).',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-terminali'],
@@ -29254,7 +29254,7 @@ const newlandN7Accessories: Product[] = [
     id: 'newland-cdn7-4b',
     slug: 'newland-cdn7-4b',
     name: 'Newland CDN7-4B — ładowarka 4-bateryjnych do N7',
-    shortDescription: 'Ładowarka na 4 baterie N7 jednocześnie, z zasilaczem w zestawie',
+    shortDescription: 'Newland CDN7-4B — ładowarka na 4 baterie N7 jednocześnie, z zasilaczem w zestawie',
     description: 'Ładowarka Newland NLS-CDN7-4B na 4 baterie terminala N7 Cachalot Pro II jednocześnie. Zasilacz sieciowy (wtyczka EU) w zestawie. Idealna dla magazynów z pracą zmianową — ładowanie pełnego zestawu baterii zapasowych w jednym miejscu.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-terminali'],
@@ -29282,7 +29282,7 @@ const newlandN7Accessories: Product[] = [
     id: 'newland-tpun7pg',
     slug: 'newland-tpun7pg',
     name: 'Newland TPUN7PG — etui ochronne TPU do N7 z pistoletem',
-    shortDescription: 'Ochronne etui TPU na terminal N7 — wersja kompatybilna z uchwytem pistoletowym',
+    shortDescription: 'Newland TPUN7PG — ochronne etui TPU na terminal N7, wersja kompatybilna z uchwytem pistoletowym',
     description: 'Etui ochronne Newland TPUN7PG z elastycznego TPU do terminala N7 Cachalot Pro II z zamontowanym uchwytem pistoletowym PGN7-02. Czarny, matowy materiał TPU absorbuje wstrząsy i chroni obudowę. Zaprojektowane specjalnie do pracy z pistoletem — otwór na spust skanowania.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-terminali'],
@@ -29310,7 +29310,7 @@ const newlandN7Accessories: Product[] = [
     id: 'newland-spn7-hybrid',
     slug: 'newland-spn7-hybrid',
     name: 'Newland SPN7 HYBRID — folia ochronna na ekran N7',
-    shortDescription: 'Hybrydowa folia ochronna 9H na ekran 4" terminala N7',
+    shortDescription: 'Newland SPN7 HYBRID — hybrydowa folia ochronna 9H na ekran 4" terminala N7',
     description: 'Hybrydowa folia ochronna Newland SPN7 HYBRID na ekran 4" terminala N7 Cachalot Pro II. Twardość 9H (szkło + PET + klej silikonowy). Chroni wyświetlacz przed zarysowaniami, nie wpływa na czułość ekranu dotykowego — obsługa w rękawiczkach działa bez zmian.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-terminali'],
@@ -29342,7 +29342,7 @@ const newlandMT93Accessories: Product[] = [
     id: 'newland-mcd9350-01',
     slug: 'newland-mcd9350-01',
     name: 'Newland NLS-MCD9350-01 — stacja ładowania do MT93 Megattera',
-    shortDescription: 'Stacja dokująca 1-gniazdowa z ładowaniem terminala, modułowa (do 4 szt.)',
+    shortDescription: 'Newland NLS-MCD9350-01 — stacja dokująca 1-gniazdowa z ładowaniem terminala, modułowa (do 4 szt.)',
     description: 'Stacja ładowania Newland NLS-MCD9350-01 do terminala MT93 Megattera. Jednogniazdowa konstrukcja umożliwia ładowanie terminala. Modułowy design pozwala na łączenie do 4 stacji w szereg (daisy-chain) na jednym zasilaczu AD60-D-M. Kompaktowe wymiary — zajmuje minimum miejsca na biurku lub stanowisku magazynowym. Zasilacz zamawiany osobno (ADP710 dla pojedynczej stacji lub AD60-D-M dla 2–4 stacji).',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-terminali'],
@@ -29372,7 +29372,7 @@ const newlandMT93Accessories: Product[] = [
     id: 'newland-mcd9350-4b',
     slug: 'newland-mcd9350-4b',
     name: 'Newland NLS-MCD9350-4B — ładowarka 4 baterii do MT93 Megattera',
-    shortDescription: 'Ładowarka 4-gniazdowa do baterii BTY95L terminala MT93 Megattera',
+    shortDescription: 'Newland NLS-MCD9350-4B — ładowarka 4-gniazdowa do baterii BTY95L terminala MT93 Megattera',
     description: 'Ładowarka Newland NLS-MCD9350-4B do jednoczesnego ładowania 4 baterii BTY95L (5 000 mAh) terminala MT93 Megattera. Idealna do pracy zmianowej 24/7 — naładowane baterie zawsze gotowe do wymiany. W zestawie zasilacz AD60-D-M (19V/3.2A). Diody LED sygnalizują stan ładowania każdego gniazda.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-terminali'],
@@ -29402,7 +29402,7 @@ const newlandMT93Accessories: Product[] = [
     id: 'newland-pg93-01',
     slug: 'newland-pg93-01',
     name: 'Newland NLS-PG93-01 — uchwyt pistoletowy do MT93 Megattera',
-    shortDescription: 'Ergonomiczny uchwyt pistoletowy (gun grip) do intensywnego skanowania',
+    shortDescription: 'Newland NLS-PG93-01 — ergonomiczny uchwyt pistoletowy (gun grip) do intensywnego skanowania',
     description: 'Uchwyt pistoletowy Newland NLS-PG93-01 do terminala MT93 Megattera. Forma pistoletowa ze spustem skanowania redukuje zmęczenie nadgarstka przy intensywnym skanowaniu (500+ skanów na zmianę). Ergonomiczny chwyt w rękawiczkach, pewna pozycja celowania. Dedykowany do pracy w magazynach, logistyce i na liniach produkcyjnych.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-terminali'],
@@ -29431,7 +29431,7 @@ const newlandMT93Accessories: Product[] = [
     id: 'newland-mrb9350',
     slug: 'newland-mrb9350',
     name: 'Newland NLS-MRB9350 — etui ochronne do MT93 Megattera',
-    shortDescription: 'Etui ochronne (rubber boot) zwiększające odporność na upadki',
+    shortDescription: 'Newland NLS-MRB9350 — etui ochronne (rubber boot) zwiększające odporność na upadki',
     description: 'Etui ochronne Newland NLS-MRB9350 (rubber boot) do terminala MT93 Megattera Standard. Gumowa obudowa absorbuje uderzenia, zwiększając odporność na upadki. Pełny dostęp do ekranu, przycisków, skanera, portów i kamery. Ochrona narożników i krawędzi — najczęściej uszkadzanych przy upadku. Kompatybilne z MT93 Standard (Straight Shooter).',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-terminali'],
@@ -29464,7 +29464,7 @@ const newlandMT95Accessories: Product[] = [
     id: 'newland-mcd95-1c',
     slug: 'newland-mcd95-1c',
     name: 'Newland NLS-MCD95-1C — stacja ładowania do MT95 Kambur',
-    shortDescription: 'Stacja dokująca 1-gniazdowa z ładowaniem terminala MT95, modułowa (do 4 szt.)',
+    shortDescription: 'Newland NLS-MCD95-1C — stacja dokująca 1-gniazdowa z ładowaniem terminala MT95, modułowa (do 4 szt.)',
     description: 'Stacja ładowania Newland NLS-MCD95-1C do terminala MT95 Kambur Pro II. Jednogniazdowa konstrukcja umożliwia ładowanie terminala. Modułowy design — łączenie do 4 stacji w szereg (daisy-chain) na jednym zasilaczu AD60-D-M. Zasilacz zamawiany osobno (ADP710 dla pojedynczej stacji lub AD60-D-M dla 2–4 stacji).',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-terminali'],
@@ -29493,7 +29493,7 @@ const newlandMT95Accessories: Product[] = [
     id: 'newland-mcd95-4b',
     slug: 'newland-mcd95-4b',
     name: 'Newland NLS-MCD95-4B — ładowarka 4 baterii do MT95 Kambur',
-    shortDescription: 'Ładowarka 4-gniazdowa do baterii BTY-MT95 terminala MT95 Kambur',
+    shortDescription: 'Newland NLS-MCD95-4B — ładowarka 4-gniazdowa do baterii BTY-MT95 terminala MT95 Kambur',
     description: 'Ładowarka Newland NLS-MCD95-4B do jednoczesnego ładowania 4 baterii BTY-MT95 (6 000 mAh) terminala MT95 Kambur Pro II. Idealna do pracy zmianowej 24/7. W zestawie adapter z wieloma wtyczkami (EU/UK/US/IN). Diody LED sygnalizują stan ładowania.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-terminali'],
@@ -29522,7 +29522,7 @@ const newlandMT95Accessories: Product[] = [
     id: 'newland-mpg95-01',
     slug: 'newland-mpg95-01',
     name: 'Newland NLS-MPG95-01 — uchwyt pistoletowy do MT95 Kambur',
-    shortDescription: 'Ergonomiczny uchwyt pistoletowy (gun grip) do intensywnego skanowania z MT95',
+    shortDescription: 'Newland NLS-MPG95-01 — ergonomiczny uchwyt pistoletowy (gun grip) do intensywnego skanowania z MT95',
     description: 'Uchwyt pistoletowy Newland NLS-MPG95-01 do terminala MT95 Kambur Pro II. Forma pistoletowa ze spustem skanowania redukuje zmęczenie nadgarstka przy intensywnym skanowaniu. Ergonomiczny chwyt w rękawiczkach, pewna pozycja celowania. Dedykowany do pracy w magazynach i logistyce.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-terminali'],
@@ -29550,7 +29550,7 @@ const newlandMT95Accessories: Product[] = [
     id: 'newland-rb95-01',
     slug: 'newland-rb95-01',
     name: 'Newland NLS-RB95-01 — etui ochronne do MT95 Kambur',
-    shortDescription: 'Etui ochronne (rubber boot) zwiększające odporność na upadki MT95',
+    shortDescription: 'Newland NLS-RB95-01 — etui ochronne (rubber boot) zwiększające odporność na upadki MT95',
     description: 'Etui ochronne Newland NLS-RB95-01 do terminala MT95 Kambur Pro II. Gumowa obudowa absorbuje uderzenia, zwiększając odporność na upadki. Pełny dostęp do ekranu, przycisków, skanera, portów i kamery. Ochrona narożników i krawędzi.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-terminali'],
@@ -29586,7 +29586,7 @@ const honeywellMobileComputers: Product[] = [
     id: 'honeywell-ct70',
     slug: 'honeywell-ct70',
     name: 'Honeywell CT70',
-    shortDescription: 'Terminal mobilny 6" z Wi-Fi 7, BT 6.0, skanerem FlexRange i Qi — pierwszy enterprise z Wi-Fi 7',
+    shortDescription: 'Honeywell CT70 — terminal mobilny 6" z Wi-Fi 7, BT 6.0, skanerem FlexRange i Qi, pierwszy enterprise z Wi-Fi 7',
     description: `Dla kogo? Honeywell CT70 to terminal mobilny klasy enterprise z ekranem 6" FHD+ i procesorem Qualcomm QCM6690 (2,9 GHz, 8 rdzeni, NPU do AI na krawędzi), zaprojektowany dla wymagających operacji w magazynach, centrach logistycznych, na liniach produkcyjnych oraz w handlu detalicznym. CT70 jest pierwszym terminalem enterprise z Wi-Fi 7 (802.11be) i Bluetooth 6.0 — zapewniając najniższe opóźnienia i najwyższą przepustowość bezprzewodową w klasie rugged.
 
 Kluczowe przewagi CT70 nad konkurencją: Wi-Fi 7 z Multi-Link Operation (MLO) i tri-band 2,4/5/6 GHz — idealne dla gęstych sieci magazynowych z setkami urządzeń. Bluetooth 6.0 (Class 1.5 + BLE) zapewnia niezawodne połączenie z drukarkami etykiet, headsetami i skanerami ring. Gorilla Glass Victus na ekranie — najnowsze, najwytrzymalsze szkło ochronne dostępne w terminalu enterprise. Ładowanie bezprzewodowe Qi (bateria CT70-BTWC-001) — wystarczy położyć na ładowarce, bez stacji dokującej. Hot-swap baterii — wymiana bez wyłączania urządzenia, ciągłość pracy na zmianach 24/7.
@@ -29721,7 +29721,7 @@ Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CT70 (PD
     id: 'honeywell-ct32',
     slug: 'honeywell-ct32',
     name: 'Honeywell CT32',
-    shortDescription: 'Terminal mobilny 6" z Wi-Fi 6E, 5G, skanerem FlexRange i Android 14→18 — następca EDA52',
+    shortDescription: 'Honeywell CT32 — terminal mobilny 6" z Wi-Fi 6E, 5G, skanerem FlexRange i Android 14→18, następca EDA52',
     description: `Dla kogo? Honeywell CT32 to lekki terminal mobilny klasy enterprise z ekranem 6" FHD i procesorem Qualcomm QCS4490 (2,4 GHz, 8 rdzeni), zaprojektowany dla pracowników pierwszej linii w handlu detalicznym, logistyce, magazynach i produkcji. CT32 jest następcą popularnego EDA52 — oferuje nowszą platformę Mobility Edge z gwarancją aktualizacji od Android 14 do Android 18, wydłużając cykl życia urządzenia do 5+ lat.
 
 Kluczowe przewagi CT32: waga zaledwie 269 g przy grubości 13,9 mm — jednoręczna obsługa przez cały dzień bez zmęczenia. Wi-Fi 6E (802.11ax, tri-band 2,4/5/6 GHz, 2×2 MU-MIMO) zapewnia najwyższą przepustowość w gęstych sieciach korporacyjnych. Bluetooth 5.3 z BLE do komunikacji z drukarkami etykiet i headsetami. Ekran 6" FHD (1080 × 2160) z Gorilla Glass 5 — jasność 450 nitów, dotyk w rękawiczkach i deszczu. Bateria 4 500 mAh z hot-swap — wymiana bez wyłączania, 12+ godzin pracy na jednym ładowaniu.
@@ -29860,7 +29860,7 @@ Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CT32 (PD
     name: 'Honeywell CK67',
     seoTitle: 'Terminal mobilny Honeywell CK67 — ultra-rugged, 5G, FlexRange XLR',
     seoDescription: 'Honeywell CK67 — ultra-wytrzymały terminal mobilny z 5G, Wi-Fi 6E, skaner FlexRange XLR do 24 m, bateria 7000 mAh hot-swap. CK67 od 7 765 zł netto.',
-    shortDescription: 'Ultra-rugged terminal mobilny z 5G, Wi-Fi 6E i skanerem FlexRange XLR do 24 m',
+    shortDescription: 'Honeywell CK67 — ultra-rugged terminal gun do magazynów wysokiego składowania, skaner FlexRange XLR do 24 m, 5G, Wi-Fi 6E',
     description: `Dla kogo? Honeywell CK67 to ultra-wytrzymały terminal mobilny klasy gun z klawiaturą fizyczną, zaprojektowany dla najtrudniejszych warunków pracy w magazynach wysokiego składowania, centrach logistycznych, na liniach produkcyjnych, w mroźniach (-30°C) i w środowiskach outdoor. CK67 jest następcą legendarnego CK65 — zachowuje sprawdzony format gun z klawiaturą fizyczną, ale oferuje nowoczesną platformę Honeywell Mobility Edge z procesorem Qualcomm QCS4490 (2,4 GHz, 8 rdzeni z AI Engine), gwarancją aktualizacji od Android 14 do Android 18 i łącznością Wi-Fi 6E + opcjonalnym 5G.
 
 Dlaczego CK67? W segmencie ultra-rugged gun terminali mobilnych CK67 wyróżnia się trzema kluczowymi cechami: skaner FlexRange XLR z zasięgiem do 24 metrów (najdalszy w klasie gun), fizyczna klawiatura w 5 wariantach (30/38/42/51/53 klawisze) i odporność IP65+IP68 z certyfikacją upadków z 2,4 m na beton oraz 4 000 obrotów tumble z 1 metra. To jedyny terminal gun z tak szerokim wyborem klawiatur — od numerycznej 30-klawiszowej po pełną alfanumeryczną 53-klawiszową — co pozwala dopasować urządzenie do konkretnych procesów bez kompromisów ergonomicznych.
@@ -30059,7 +30059,7 @@ const ct32Accessories: Product[] = [
     id: 'honeywell-ct32-battery-standard',
     slug: 'honeywell-ct32-bateria-4500mah',
     name: 'Bateria 4500 mAh do Honeywell CT32',
-    shortDescription: 'Oryginalna bateria standardowa Li-Ion 4500 mAh z hot-swap — 12+ godzin pracy',
+    shortDescription: 'Bateria 4500 mAh do Honeywell CT32 — oryginalna bateria standardowa Li-Ion 4500 mAh z hot-swap, 12+ godzin pracy',
     description: 'Oryginalna bateria standardowa Honeywell Li-Ion 4 500 mAh do terminala CT32. Napięcie nominalne 3,8 V. Wymienna w trybie hot-swap — terminal nie wyłącza się podczas wymiany baterii. Kompatybilna z ładowarką 4-gniazdową EDA52-QBC-1 i wszystkimi stacjami dokującymi CT32. Zintegrowana diagnostyka baterii z Operational Intelligence.',
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
@@ -30089,7 +30089,7 @@ const ct32Accessories: Product[] = [
     id: 'honeywell-ct32-battery-extended',
     slug: 'honeywell-ct32-bateria-rozszerzona',
     name: 'Bateria rozszerzona do Honeywell CT32',
-    shortDescription: 'Bateria o zwiększonej pojemności do pracy wielozmianowej',
+    shortDescription: 'Bateria rozszerzona do Honeywell CT32 — bateria o zwiększonej pojemności do pracy wielozmianowej',
     description: 'Bateria rozszerzona Honeywell do terminala CT32 o zwiększonej pojemności dla wydłużonego czasu pracy. Wymienna w trybie hot-swap. Idealna do pracy wielozmianowej i zastosowań wymagających ciągłej dostępności urządzenia. Kompatybilna ze stacjami dokującymi CT32 i ładowarką EDA52-QBC-1.',
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
@@ -30117,7 +30117,7 @@ const ct32Accessories: Product[] = [
     id: 'honeywell-ct32-home-base-non-booted',
     slug: 'honeywell-ct32-stacja-dokujaca',
     name: 'Stacja dokująca do Honeywell CT32 (non-booted)',
-    shortDescription: 'Home Base 1-gniazdowa — ładowanie i komunikacja USB/Ethernet',
+    shortDescription: 'Stacja dokująca do Honeywell CT32 (non-booted) — Home Base 1-gniazdowa, ładowanie i komunikacja USB/Ethernet',
     description: 'Stacja dokująca Honeywell Home Base do terminala CT32 w wersji non-booted (bez obudowy ochronnej). Umożliwia ładowanie terminala oraz komunikację przez USB i opcjonalnie Ethernet. Kompatybilna z platformą Universal Dock — wymaga jedynie odpowiedniego cup-a dla danego modelu. Idealna na stanowiska stacjonarne, biurka i recepcje.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-dokujace'],
@@ -30147,7 +30147,7 @@ const ct32Accessories: Product[] = [
     id: 'honeywell-ct32-home-base-booted',
     slug: 'honeywell-ct32-stacja-dokujaca-booted',
     name: 'Stacja dokująca do Honeywell CT32 (booted)',
-    shortDescription: 'Home Base 1-gniazdowa — ładowanie CT32 z obudową ochronną',
+    shortDescription: 'Stacja dokująca do Honeywell CT32 (booted) — Home Base 1-gniazdowa, ładowanie CT32 z obudową ochronną',
     description: 'Stacja dokująca Honeywell Home Base do terminala CT32 w wersji booted — akceptuje terminal z założoną obudową ochronną TPU (CT32-PB-STD). Nie trzeba zdejmować boota przed ładowaniem. Umożliwia ładowanie i komunikację USB/Ethernet. Universal Dock Platform zapewnia kompatybilność z wieloma modelami Honeywell.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-dokujace'],
@@ -30177,7 +30177,7 @@ const ct32Accessories: Product[] = [
     id: 'honeywell-ct32-charging-base-non-booted',
     slug: 'honeywell-ct32-ladowarka-4-gniazdowa',
     name: 'Ładowarka 4-gniazdowa do Honeywell CT32 (non-booted)',
-    shortDescription: 'Quad Charging Base — ładowanie 4 terminali jednocześnie',
+    shortDescription: 'Ładowarka 4-gniazdowa do Honeywell CT32 (non-booted) — Quad Charging Base, ładowanie 4 terminali jednocześnie',
     description: 'Ładowarka 4-gniazdowa Honeywell do terminala CT32 w wersji non-booted. Umożliwia jednoczesne ładowanie do 4 terminali. Idealna do zarządzania flotą urządzeń na zmianach — wystarczy wstawić terminale po pracy. Universal Dock Platform zapewnia kompatybilność z przyszłymi modelami Honeywell po wymianie cup-a.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-dokujace'],
@@ -30207,7 +30207,7 @@ const ct32Accessories: Product[] = [
     id: 'honeywell-ct32-charging-base-booted',
     slug: 'honeywell-ct32-ladowarka-4-gniazdowa-booted',
     name: 'Ładowarka 4-gniazdowa do Honeywell CT32 (booted)',
-    shortDescription: 'Quad Charging Base — ładowanie 4 terminali z obudową ochronną',
+    shortDescription: 'Ładowarka 4-gniazdowa do Honeywell CT32 (booted) — Quad Charging Base, ładowanie 4 terminali z obudową ochronną',
     description: 'Ładowarka 4-gniazdowa Honeywell do terminala CT32 w wersji booted — akceptuje terminale z założonym bootem TPU. Jednoczesne ładowanie do 4 urządzeń bez zdejmowania obudów ochronnych. Universal Dock Platform. Idealna dla dużych flot pracujących w warunkach magazynowych i przemysłowych.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-dokujace'],
@@ -30237,7 +30237,7 @@ const ct32Accessories: Product[] = [
     id: 'honeywell-ct32-tpu-boot',
     slug: 'honeywell-ct32-obudowa-ochronna',
     name: 'Obudowa ochronna TPU do Honeywell CT32',
-    shortDescription: 'Boot TPU — ochrona przed upadkami z 1,8 m i wstrząsami',
+    shortDescription: 'Obudowa ochronna TPU do Honeywell CT32 — ochrona przed upadkami z 1,8 m i wstrząsami',
     description: 'Obudowa ochronna TPU (termoplastyczny poliuretan) do terminala Honeywell CT32. Zwiększa odporność na upadki z 1,5 m do 1,8 m na beton. Lekka i elastyczna — nie utrudnia codziennej obsługi. Kompatybilna ze stacjami dokującymi w wersji booted (CT32-HB-UVB-0, CT32-CB-UVB-0). Niezbędna w środowiskach magazynowych i produkcyjnych.',
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -30266,7 +30266,7 @@ const ct32Accessories: Product[] = [
     id: 'honeywell-ct32-scan-handle',
     slug: 'honeywell-ct32-uchwyt-pistoletowy',
     name: 'Uchwyt pistoletowy do Honeywell CT32',
-    shortDescription: 'Scan Handle z triggerem — ergonomiczne skanowanie pistoletowe',
+    shortDescription: 'Uchwyt pistoletowy do Honeywell CT32 — Scan Handle z triggerem, ergonomiczne skanowanie pistoletowe',
     description: 'Ergonomiczny uchwyt pistoletowy Honeywell ze spustem skanera do terminala CT32. Przekształca CT32 w pistoletowy skaner kodów — idealne do intensywnego skanowania w magazynach i centrach dystrybucyjnych. Montaż bez narzędzi. Trigger na spuście zapewnia jednoręczne skanowanie. Kompatybilny z terminalem bez obudowy ochronnej (non-booted).',
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -30296,7 +30296,7 @@ const ct32Accessories: Product[] = [
     id: 'honeywell-ct32-screen-protector',
     slug: 'honeywell-ct32-folia-ochronna',
     name: 'Folia ochronna do Honeywell CT32 (10 szt.)',
-    shortDescription: 'Screen Protector 10-pack — dodatkowa ochrona ekranu 6" FHD',
+    shortDescription: 'Folia ochronna do Honeywell CT32 (10 szt.) — Screen Protector 10-pack, dodatkowa ochrona ekranu 6" FHD',
     description: 'Zestaw 10 folii ochronnych do ekranu terminala Honeywell CT32. Chroni wyświetlacz 6" FHD z Gorilla Glass 5 przed zarysowaniami i uszkodzeniami mechanicznymi. Przeznaczona do środowisk o intensywnym użytkowaniu — magazyny, produkcja, retail. Łatwa aplikacja bez bąbelków. Zachowuje pełną responsywność dotyku (palec, rękawiczki, stylus).',
     categoryId: 'akcesoria',
     subcategoryIds: ['folie-ochronne'],
@@ -30324,7 +30324,7 @@ const ct32Accessories: Product[] = [
     id: 'honeywell-ct32-hand-strap',
     slug: 'honeywell-ct32-pasek-na-reke',
     name: 'Pasek na rękę do Honeywell CT32 (10 szt.)',
-    shortDescription: 'Hand Strap 10-pack — zabezpieczenie przed upuszczeniem terminala',
+    shortDescription: 'Pasek na rękę do Honeywell CT32 (10 szt.) — Hand Strap 10-pack, zabezpieczenie przed upuszczeniem terminala',
     description: 'Zestaw 10 pasków na rękę (hand strap) do terminali Honeywell CT32 i EDA52. Zabezpiecza terminal przed przypadkowym upuszczeniem — pracownik może puścić urządzenie bez ryzyka upadku. Regulowana długość. Kompatybilny wstecznie z EDA52 (Universal Dock Platform). Idealny do pracy w magazynie, na hali produkcyjnej i w handlu.',
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -30352,7 +30352,7 @@ const ct32Accessories: Product[] = [
     id: 'honeywell-ct32-wrist-strap',
     slug: 'honeywell-ct32-pasek-na-nadgarstek',
     name: 'Pasek na nadgarstek do Honeywell CT32 (10 szt.)',
-    shortDescription: 'Wrist Strap 10-pack — smycz zabezpieczająca na nadgarstek',
+    shortDescription: 'Pasek na nadgarstek do Honeywell CT32 (10 szt.) — Wrist Strap 10-pack, smycz zabezpieczająca na nadgarstek',
     description: 'Zestaw 10 pasków na nadgarstek (wrist strap) do terminali Honeywell CT32 i EDA52. Smycz mocowana do terminala — zapobiega upuszczeniu i kradzieży. Lekka i wygodna w codziennym użytkowaniu. Kompatybilna z EDA52. Idealna dla pracowników obsługujących terminal jedną ręką — np. podczas kompletacji zamówień.',
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -30380,7 +30380,7 @@ const ct32Accessories: Product[] = [
     id: 'honeywell-ct32-quad-battery-charger',
     slug: 'honeywell-ct32-ladowarka-baterii',
     name: 'Ładowarka baterii 4-gniazdowa do Honeywell CT32',
-    shortDescription: 'Quad Battery Charger — ładowanie 4 baterii jednocześnie',
+    shortDescription: 'Ładowarka baterii 4-gniazdowa do Honeywell CT32 — Quad Battery Charger, ładowanie 4 baterii jednocześnie',
     description: 'Ładowarka 4-gniazdowa do baterii terminala Honeywell CT32 i EDA52. Umożliwia jednoczesne ładowanie 4 baterii zapasowych — niezbędna przy pracy wielozmianowej i dużych flotach. Bateria naładowana w mniej niż 3,5 h. Kompatybilna z bateriami 50172021-001 (standardowa) i 50183310-001 (rozszerzona). Montaż na biurku lub w szafie technicznej.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-dokujace'],
@@ -30416,7 +30416,7 @@ const ct70Accessories: Product[] = [
     id: 'honeywell-ct70-battery-standard',
     slug: 'honeywell-ct70-bateria-4775mah',
     name: 'Bateria 4775 mAh do Honeywell CT70',
-    shortDescription: 'Oryginalna bateria standardowa Li-Ion 4775 mAh z hot-swap — pełna zmiana robocza',
+    shortDescription: 'Bateria 4775 mAh do Honeywell CT70 — oryginalna bateria standardowa Li-Ion 4775 mAh z hot-swap, pełna zmiana robocza',
     description: 'Oryginalna bateria standardowa Honeywell Li-Ion 4775 mAh (18,27 Wh) do terminala CT70. Konfiguracja 1S1P, napięcie nominalne 3,87 V. Wymienna w trybie hot-swap — terminal nie wyłącza się podczas wymiany baterii. Wymiary uchwytu z baterią standardową: 170 × 78,6 × 16,7 mm. Kompatybilna z ładowarką 4-gniazdową CT70-QBC i wszystkimi stacjami dokującymi CT70.',
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
@@ -30449,7 +30449,7 @@ const ct70Accessories: Product[] = [
     id: 'honeywell-ct70-battery-extended',
     slug: 'honeywell-ct70-bateria-7692mah',
     name: 'Bateria rozszerzona 7692 mAh do Honeywell CT70',
-    shortDescription: 'Bateria rozszerzona Li-Ion 7692 mAh — do 16 h pracy, hot-swap',
+    shortDescription: 'Bateria rozszerzona 7692 mAh do Honeywell CT70 — bateria rozszerzona Li-Ion 7692 mAh, do 16 h pracy, hot-swap',
     description: 'Bateria rozszerzona Honeywell Li-Ion 7692 mAh (29,3 Wh) do terminala CT70. Konfiguracja 1S2P (2 ogniwa równolegle), napięcie nominalne 3,87 V. Zapewnia 12-16 h pracy na jednym ładowaniu — idealna do pracy wielozmianowej i zastosowań w chłodniach. Wymiary uchwytu z baterią rozszerzoną: 170 × 78,6 × 22,3 mm (+5,6 mm vs standardowa). Wymienna hot-swap bez wyłączania terminala.',
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
@@ -30483,7 +30483,7 @@ const ct70Accessories: Product[] = [
     id: 'honeywell-ct70-display-dock',
     slug: 'honeywell-ct70-stacja-dokujaca-display',
     name: 'Stacja dokująca Display Dock do Honeywell CT70',
-    shortDescription: 'Stacja 1-gniazdowa z wyjściem HDMI, Ethernet i USB — zamienia CT70 w desktop',
+    shortDescription: 'Stacja dokująca Display Dock do Honeywell CT70 — stacja 1-gniazdowa z wyjściem HDMI, Ethernet i USB, zamienia CT70 w desktop',
     description: 'Stacja dokująca Honeywell Display Dock do terminala CT70 — zamienia terminal mobilny w komputer biurkowy. Ładuje CT70, jednocześnie udostępniając wyjście HDMI na monitor zewnętrzny, porty USB na klawiaturę, mysz i audio oraz port Ethernet. Uniwersalna miska kompatybilna z CT70 w obudowie ochronnej i bez niej, z baterią standardową i rozszerzoną. Zasilacz w zestawie, kabel zasilający zamawiany osobno (sufiks -0 = bez kabla, -2 = kabel EU).',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -30516,7 +30516,7 @@ const ct70Accessories: Product[] = [
     id: 'honeywell-ct70-quad-battery-charger',
     slug: 'honeywell-ct70-ladowarka-4-baterie',
     name: 'Ładowarka 4-gniazdowa do baterii Honeywell CT70',
-    shortDescription: 'Quad Battery Charger — ładuje 4 baterie CT70 jednocześnie',
+    shortDescription: 'Ładowarka 4-gniazdowa do baterii Honeywell CT70 — Quad Battery Charger, ładuje 4 baterie CT70 jednocześnie',
     description: 'Ładowarka 4-gniazdowa Honeywell do baterii terminala CT70. Ładuje jednocześnie do 4 baterii — kompatybilna z baterią standardową CT70-BTSC, rozszerzoną CT70-BTEC i bezprzewodową CT70-BTWC. Idealna do flot wielozmianowych — zapewnia ciągły zapas naładowanych baterii. Zasilacz w zestawie, kabel zasilający zamawiany osobno (sufiks -0 = bez kabla).',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
@@ -30547,7 +30547,7 @@ const ct70Accessories: Product[] = [
     id: 'honeywell-ct70-scan-handle-booted',
     slug: 'honeywell-ct70-uchwyt-pistoletowy-booted',
     name: 'Uchwyt pistoletowy do Honeywell CT70 (z obudową)',
-    shortDescription: 'Scan Handle z triggerem — do CT70 w obudowie ochronnej',
+    shortDescription: 'Uchwyt pistoletowy do Honeywell CT70 (z obudową) — Scan Handle z triggerem, do CT70 w obudowie ochronnej',
     description: 'Ergonomiczny uchwyt pistoletowy Honeywell ze spustem skanera do terminala CT70 w obudowie ochronnej (boot). Przekształca CT70 w pistoletowy skaner kodów — komfortowe skanowanie przy dużej liczbie odczytów. Montaż bez narzędzi. Kompatybilny z baterią standardową i rozszerzoną. Obudowa ochronna (boot) wymagana — zamawiaj osobno.',
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -30578,7 +30578,7 @@ const ct70Accessories: Product[] = [
     id: 'honeywell-ct70-scan-handle-non-booted',
     slug: 'honeywell-ct70-uchwyt-pistoletowy',
     name: 'Uchwyt pistoletowy do Honeywell CT70 (bez obudowy)',
-    shortDescription: 'Scan Handle z triggerem — bezpośrednio na CT70, smukły profil',
+    shortDescription: 'Uchwyt pistoletowy do Honeywell CT70 (bez obudowy) — Scan Handle z triggerem, bezpośrednio na CT70, smukły profil',
     description: 'Ergonomiczny uchwyt pistoletowy Honeywell ze spustem skanera do terminala CT70 bez obudowy ochronnej. Montuje się bezpośrednio na urządzenie — smuklejszy i lżejszy profil niż wariant booted. Przekształca CT70 w pistoletowy skaner kodów do szybkiego skanowania. Montaż bez narzędzi. Kompatybilny z baterią standardową i rozszerzoną.',
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
@@ -30616,7 +30616,7 @@ const ck67Accessories: Product[] = [
     id: 'honeywell-ck67-battery',
     slug: 'honeywell-ck67-bateria-7000mah',
     name: 'Bateria 7000 mAh do Honeywell CK67',
-    shortDescription: 'Oryginalna bateria Li-Ion 7000 mAh z hot-swap i Quick Charge 3.0 — do 28 godzin pracy',
+    shortDescription: 'Bateria 7000 mAh do Honeywell CK67 — oryginalna bateria Li-Ion 7000 mAh z hot-swap i Quick Charge 3.0, do 28 godzin pracy',
     description: 'Oryginalna bateria Honeywell CK67-BTSC-001 o pojemności 7 000 mAh Li-Ion do terminala mobilnego CK67. Technologia hot-swap — wymiana baterii bez wyłączania urządzenia, kluczowa na zmianach 24/7 w magazynach i centrach logistycznych. Ładowanie Quick Charge 3.0 w ok. 4 godziny. Kompatybilna z ładowarką 4-gniazdową CK6X-UCBC-4B. Zintegrowana diagnostyka baterii z oprogramowaniem Operational Intelligence — monitoring stanu zdrowia i cykli ładowania w czasie rzeczywistym.',
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
@@ -30646,7 +30646,7 @@ const ck67Accessories: Product[] = [
     id: 'honeywell-ck67-boot',
     slug: 'honeywell-ck67-obudowa-ochronna',
     name: 'Obudowa ochronna do Honeywell CK67',
-    shortDescription: 'Gumowa obudowa ochronna (rubber boot) zwiększająca odporność na upadki',
+    shortDescription: 'Obudowa ochronna do Honeywell CK67 — gumowa obudowa ochronna (rubber boot) zwiększająca odporność na upadki',
     description: 'Oryginalna obudowa ochronna Honeywell CK67-PB-1 (rubber boot) do terminala CK67. Wykonana z wytrzymałej gumy TPU, zwiększa odporność na upadki i chroni narożniki urządzenia. Kompatybilna z uchwytem pistoletowym CK67-SCH i stacjami ładowania w wersji booted. Nie utrudnia dostępu do klawiatury, skanera ani portów. Rekomendowana do środowisk z częstymi upadkami — magazyn, produkcja, transport.',
     categoryId: 'akcesoria',
     manufacturerId: 'honeywell',
@@ -30673,7 +30673,7 @@ const ck67Accessories: Product[] = [
     id: 'honeywell-ck67-scan-handle',
     slug: 'honeywell-ck67-uchwyt-pistoletowy',
     name: 'Uchwyt pistoletowy do Honeywell CK67',
-    shortDescription: 'Ergonomiczny uchwyt pistoletowy (scan handle) do intensywnego skanowania',
+    shortDescription: 'Uchwyt pistoletowy do Honeywell CK67 — ergonomiczny uchwyt pistoletowy (scan handle) do intensywnego skanowania',
     description: 'Oryginalny uchwyt pistoletowy Honeywell CK67-SCH do terminala CK67. Ergonomiczny design z wygodnym spustem do intensywnego skanowania — redukuje zmęczenie nadgarstka podczas wielogodzinnej pracy w magazynie. Konstrukcja „snap-on" — montaż bez narzędzi. Kompatybilny z terminalem w obudowie ochronnej (booted) i bez. Idealny do kompletacji zamówień, inwentaryzacji i skanowania kodów na regałach.',
     categoryId: 'akcesoria',
     manufacturerId: 'honeywell',
@@ -30701,7 +30701,7 @@ const ck67Accessories: Product[] = [
     id: 'honeywell-ck67-home-base-nb',
     slug: 'honeywell-ck67-stacja-ladowania-non-booted',
     name: 'Stacja ładowania CK67 Non-Booted z Ethernet',
-    shortDescription: '1-gniazdowa stacja dokująca z Ethernet do CK67 bez obudowy ochronnej',
+    shortDescription: 'Stacja ładowania CK67 Non-Booted z Ethernet — 1-gniazdowa stacja dokująca z Ethernet do CK67 bez obudowy ochronnej',
     description: 'Stacja ładowania Honeywell CK67-HB-UVN-0 (Home Base) do terminala CK67 bez obudowy ochronnej. 1-gniazdowa stacja dokująca z portem Ethernet RJ-45 do synchronizacji danych i aktualizacji oprogramowania przez sieć przewodową. Ładowanie terminala i dodatkowej baterii jednocześnie. Kompaktowa konstrukcja na biurko. Zasilacz sprzedawany osobno lub w zestawie.',
     categoryId: 'akcesoria',
     manufacturerId: 'honeywell',
@@ -30730,7 +30730,7 @@ const ck67Accessories: Product[] = [
     id: 'honeywell-ck67-home-base-b',
     slug: 'honeywell-ck67-stacja-ladowania-booted',
     name: 'Stacja ładowania CK67 Booted',
-    shortDescription: '1-gniazdowa stacja dokująca do CK67 z obudową ochronną',
+    shortDescription: 'Stacja ładowania CK67 Booted — 1-gniazdowa stacja dokująca do CK67 z obudową ochronną',
     description: 'Stacja ładowania Honeywell CK67-HB-UVB-0 (Home Base) do terminala CK67 z zamontowaną obudową ochronną (rubber boot CK67-PB-1). 1-gniazdowa stacja dokująca — nie trzeba zdejmować boota przed ładowaniem. Ładowanie terminala i dodatkowej baterii jednocześnie. Dedykowana do środowisk, w których terminal jest zawsze w obudowie ochronnej (magazyn, produkcja).',
     categoryId: 'akcesoria',
     manufacturerId: 'honeywell',
@@ -30758,7 +30758,7 @@ const ck67Accessories: Product[] = [
     id: 'honeywell-ck67-battery-cup-4',
     slug: 'honeywell-ck67-ladowarka-4-baterii',
     name: 'Ładowarka 4 baterii CK6X',
-    shortDescription: '4-gniazdowa ładowarka baterii do terminali Honeywell CK65/CK67',
+    shortDescription: 'Ładowarka 4 baterii CK6X — 4-gniazdowa ładowarka baterii do terminali Honeywell CK65/CK67',
     description: 'Ładowarka Honeywell CK6X-UCBC-4B na 4 baterie do terminali CK65 i CK67. Jednoczesne ładowanie 4 baterii 7 000 mAh — kluczowe akcesorium do pracy wielozmianowej w magazynach i centrach logistycznych. Kompaktowa konstrukcja na biurko lub ścianę. LED status ładowania dla każdego gniazdka. Kompatybilna z bateriami CK67-BTSC-001 i bateriami CK65.',
     categoryId: 'akcesoria',
     manufacturerId: 'honeywell',
@@ -30786,7 +30786,7 @@ const ck67Accessories: Product[] = [
     id: 'honeywell-ck67-screen-protector',
     slug: 'honeywell-ck67-folia-ochronna',
     name: 'Folia ochronna na ekran CK67',
-    shortDescription: 'Oryginalna folia ochronna na wyświetlacz 4,3" terminala CK67',
+    shortDescription: 'Folia ochronna na ekran CK67 — oryginalna folia ochronna na wyświetlacz 4,3" terminala CK67',
     description: 'Oryginalna folia ochronna Honeywell CK67-SP-1PK na ekran 4,3" terminala CK67. Chroni wyświetlacz Gorilla Glass 7 przed zarysowaniami, odciskami palców i zabrudzeniami. Precyzyjne wycięcie — nie zakłóca dotykowej obsługi ekranu ani czytnika kodów. Rekomendowana do środowisk o intensywnym użytkowaniu (magazyn, produkcja, transport).',
     categoryId: 'akcesoria',
     manufacturerId: 'honeywell',
@@ -30814,7 +30814,7 @@ const ck67Accessories: Product[] = [
     id: 'honeywell-ck67-holster',
     slug: 'honeywell-ck67-kabura',
     name: 'Kabura na pasek do Honeywell CK67',
-    shortDescription: 'Kabura na pasek do noszenia terminala CK67 przy ciele',
+    shortDescription: 'Kabura na pasek do Honeywell CK67 — kabura na pasek do noszenia terminala CK67 przy ciele',
     description: 'Kabura Honeywell 815-087-001 na pasek do terminala CK67. Umożliwia wygodne noszenie terminala gun przy biodrze — wolne ręce do pracy z towarami, dokumentami i na wózkach widłowych. Trwała konstrukcja z klipsem na pasek i zabezpieczeniem przed wypadnięciem. Kompatybilna z CK67 z obudową ochronną i bez.',
     categoryId: 'akcesoria',
     manufacturerId: 'honeywell',
@@ -30842,7 +30842,7 @@ const ck67Accessories: Product[] = [
     id: 'honeywell-ck67-cup-booted',
     slug: 'honeywell-ck67-charging-cup-booted',
     name: 'Charging Cup CK67 Booted',
-    shortDescription: 'Wkładka ładująca do stacji dokujących — wersja z obudową ochronną',
+    shortDescription: 'Charging Cup CK67 Booted — wkładka ładująca do stacji dokujących, wersja z obudową ochronną',
     description: 'Wkładka ładująca (charging cup) Honeywell CK67-UCP-B do terminala CK67 z zamontowaną obudową ochronną CK67-PB-1. Kompatybilna ze stacjami dokującymi CK67 w wersji booted. Umożliwia ładowanie terminala bez zdejmowania rubber boota — oszczędza czas na zmianach. Wykonana z trwałego tworzywa z precyzyjnymi stykami ładowania.',
     categoryId: 'akcesoria',
     manufacturerId: 'honeywell',
@@ -30870,7 +30870,7 @@ const ck67Accessories: Product[] = [
     id: 'honeywell-ck67-cup-nonbooted',
     slug: 'honeywell-ck67-charging-cup-nonbooted',
     name: 'Charging Cup CK67 Non-Booted',
-    shortDescription: 'Wkładka ładująca do stacji dokujących — wersja bez obudowy ochronnej',
+    shortDescription: 'Charging Cup CK67 Non-Booted — wkładka ładująca do stacji dokujących, wersja bez obudowy ochronnej',
     description: 'Wkładka ładująca (charging cup) Honeywell CK67-UCP-N do terminala CK67 bez obudowy ochronnej. Kompatybilna ze stacjami dokującymi CK67 w wersji non-booted. Precyzyjne styki ładowania zapewniają niezawodny kontakt z terminalem. Dedykowana do środowisk, w których terminal używany jest bez rubber boota (biuro, lekka logistyka).',
     categoryId: 'akcesoria',
     manufacturerId: 'honeywell',
