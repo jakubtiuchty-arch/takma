@@ -13586,8 +13586,8 @@ Pełna kompatybilność wsteczna z akcesoriami MC3300x i MC3400: baterie, stacje
     id: 'zebra-mc9400',
     slug: 'zebra-mc9400',
     name: 'Zebra MC9400',
-    seoTitle: 'Terminal mobilny Zebra MC9400 — następca MC9300, ultra-rugged',
-    seoDescription: 'Zebra MC9400 (MC9401) — flagowy terminal ultra-rugged, następca MC9300. MC9400 Zebra: 7 klawiatur, IP68, upadki 3,65 m, mroźnia -30°C. MC9401-0G1J6HSS-A6 od 7 638 zł netto.',
+    seoTitle: 'Zebra MC9400 — kolektor danych / terminal mobilny ultra-rugged | od 7 638 zł',
+    seoDescription: 'Zebra MC9400 (MC9401) — kolektor danych ultra-rugged do magazynów, chłodni i produkcji. Następca MC9300: 7 klawiatur, skaner SE58 do 30 m, IP68, -30°C. Cena od 7 638 zł netto. 20 konfiguracji.',
     shortDescription: 'Zebra MC9400 — flagowy terminal ultra-rugged z 7 klawiaturami, skanerem do 30 m, IP65+IP68, upadki 3,65 m, następca MC9300',
     description: `Dla kogo? Zebra MC9400 to flagowy terminal mobilny klasy ultra-rugged z siedmioma wymiennymi klawiaturami, zaprojektowany dla najbardziej wymagających środowisk przemysłowych — magazynów wysokiego składowania, chłodni (-30°C), portów, zakładów produkcyjnych, centrów logistycznych i dużych fabryk — wszędzie tam, gdzie wymagana jest bezwzględna niezawodność, skanowanie kodów na dystansie do 30 metrów i wielozmianowa praca w ekstremalnych warunkach temperaturowych.
 
@@ -13599,7 +13599,9 @@ Dwa skanery: SE4770 Standard Range — imager 2D do skanowania na krótkim i śr
 
 Konstrukcja ultra-rugged IP65 + IP68 z certyfikacją MIL-STD-810H: upadki z 3,65 m na beton (najwyższy w klasie), 6 000 cykli tumble z 1 m, zakres temperatur od -20°C do +50°C (standardowa bateria) i od -30°C do +50°C (bateria freezer). Trzy opcje baterii: 7 000 mAh standardowa, 7 000 mAh BLE (z beaconem do lokalizacji w magazynie) i 5 000 mAh freezer (certyfikowana do pracy w mroźniach -30°C). Warm-swap — wymiana baterii bez restartu urządzenia.
 
-Opcjonalna kamera tylna 13 MP do dokumentacji fotograficznej, OCR i skanowania dowodów dostawy. Zebra Identity Guardian — biometryczne logowanie rozpoznawaniem twarzy. Wersja z 5G/LTE i GPS: Zebra MC9450. Pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, LifeGuard™. Szczegółowa dokumentacja techniczna na zebra.com i serwis-zebry.pl.`,
+Opcjonalna kamera tylna 13 MP do dokumentacji fotograficznej, OCR i skanowania dowodów dostawy. Zebra Identity Guardian — biometryczne logowanie rozpoznawaniem twarzy. Wersja z 5G/LTE i GPS: Zebra MC9450. Pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, LifeGuard™.
+
+Koszt posiadania (TCO): pełna kompatybilność wsteczna z akcesoriami MC9300 — baterie, stacje dokujące, ładowarki, holstery pasują bez zmian. Migracja z MC9300 na MC9400 nie wymaga wymiany infrastruktury ładowania — oszczędność do 40% kosztów wdrożenia w porównaniu z zakupem kompletnie nowego ekosystemu. Android z gwarancją aktualizacji do wersji 17 (3 generacje) = minimum 8 lat wsparcia od Zebra LifeGuard™. Szczegółowa dokumentacja techniczna na zebra.com i serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -13681,6 +13683,9 @@ Opcjonalna kamera tylna 13 MP do dokumentacji fotograficznej, OCR i skanowania d
       { question: 'Czy akcesoria MC9300 pasują do MC9400?', answer: 'Tak — pełna kompatybilność wsteczna. Baterie (BTRY-MC93-STN-01), stacje dokujące (CRD-MC93-2SUCHG-01, CRD-MC93-4SCHG-01, CRD-MC93-4SETH-01), ładowarki baterii (SAC-MC93-4SCHG-01, SAC-MC93-16SCHG-01), obudowy gumowe (SG-MC93-RBTG-01), holstery (SG-MC9X-SHLSTG-01) — wszystko pasuje do MC9400. Migracja z MC9300 nie wymaga wymiany infrastruktury ładowania.' },
       { question: 'Czy MC9400 obsługuje 5G?', answer: 'Nie — MC9400 to wersja wyłącznie Wi-Fi 6E + Bluetooth 5.3 + NFC. Jeśli potrzebujesz łączności komórkowej 5G/LTE i nawigacji GPS do pracy na zewnątrz (plac kontenerowy, yard management, logistyka terenowa), wybierz Zebra MC9450 — identyczny terminal z modułem 5G NR Sub-6 (publiczne + prywatne CBRS), dual SIM i GPS/GLONASS/Galileo/BeiDou.' },
       { question: 'Czym się różni MC9400 od MC3400?', answer: 'MC9400 to klasa ultra-rugged premium: upadki z 3,65 m (vs 2,4 m), 6 000 tumble (vs 4 000), IP65+IP68 (vs IP65/IP67), 7 klawiatur (vs 3), skaner SE58 do 30,5 m (vs 30,5 m — oba SE58), 128 GB Flash (vs 64–128 GB), Android do 17 (vs do 18). MC3400 lżejszy (528 g vs 743 g) i tańszy (od 4 561 zł vs 7 638 zł). MC3400 do standardowych magazynów, MC9400 do ekstremalnych warunków: chłodnie, porty, ciężki przemysł.' },
+      { question: 'Jaki system Android ma Zebra MC9400 i ile lat aktualizacji?', answer: 'MC9400 fabrycznie dostarcza Android 14 (GMS) z gwarancją aktualizacji do Android 17 w ramach Zebra LifeGuard™. To 3 generacje systemu i minimum 8 lat wsparcia bezpieczeństwa — najdłuższy cykl wsparcia wśród terminali ultra-rugged na rynku. Aktualizacje LifeGuard™ obejmują łatki bezpieczeństwa, poprawki stabilności i nowe funkcje Mobility DNA. MC9400 obsługuje zarządzanie MDM (VMware, SOTI, 42Gears) i Zebra StageNow do masowej konfiguracji bez dotykania każdego urządzenia.' },
+      { question: 'Gdzie serwisować Zebra MC9400 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne, wymiana ekranów, klawiatur, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 490 zł netto/3 lata) dostępna jest naprawa priorytetowa z urządzeniem zastępczym. Serwis obsługuje również starsze modele MC9300, MC9200 i MC9190 — migracja na MC9400 z pełnym wsparciem serwisowym.' },
+      { question: 'Co to jest Mobility DNA i DataWedge w Zebra MC9400?', answer: 'Mobility DNA to pakiet oprogramowania Zebra dołączony w cenie każdego MC9400. Kluczowe narzędzia: DataWedge — uniwersalny moduł skanowania integrujący się z każdą aplikacją WMS/ERP bez kodowania (konfiguracja drag-and-drop), StageNow — masowe wdrożenie i konfiguracja urządzeń przez kody QR, Device Tracker — lokalizacja zgubionych terminali na Wi-Fi, LifeGuard™ — aktualizacje bezpieczeństwa przez 8+ lat. Mobility DNA eliminuje potrzebę zakupu dodatkowych licencji MDM do podstawowego zarządzania flotą.' },
       { question: 'Jakie są alternatywy dla Zebra MC9400?', answer: 'W portfolio Zebra: MC9450 (identyczny + 5G/GPS), MC3400/MC3450 (lżejsze, tańsze, 3 klawiatury), TC53/TC53e (dotykowe, bez klawiatury). Konkurencja: Honeywell CK65/CK67 (klawiatura + ER, Android), Datalogic Skorpio X5 (gun, IP65). MC9400 to jedyny terminal na rynku z 7 wymiennymi klawiaturami, IP68, upadkami z 3,65 m i skanerem do 30,5 m — bezkonkurencyjny w klasie ultra-rugged.' },
     ],
     applications: [
@@ -13710,6 +13715,8 @@ Opcjonalna kamera tylna 13 MP do dokumentacji fotograficznej, OCR i skanowania d
     ],
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-mc9400/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Karta katalogowa MC9400/MC9450 (EN)', type: 'datasheet', url: 'https://www.zebra.com/us/en/products/spec-sheets/mobile-computers/handheld/mc9400-mc9450.html', size: 'Online' },
+      { name: 'Strona produktu Zebra MC9400 (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc9400-series.html', size: 'Online' },
     ],
     servicePlans: [
       { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-MC94XX-3C00', duration: '3 lata', priceNetto: 1489.50 },
@@ -13764,8 +13771,8 @@ Opcjonalna kamera tylna 13 MP do dokumentacji fotograficznej, OCR i skanowania d
     id: 'zebra-mc9450',
     slug: 'zebra-mc9450',
     name: 'Zebra MC9450',
-    seoTitle: 'Terminal mobilny Zebra MC9450 — ultra-rugged 5G z GPS',
-    seoDescription: 'Zebra MC9450 (MC945B) — flagowy terminal ultra-rugged 5G z GPS, następca MC9300. MC9450 Zebra: 7 klawiatur, IP68, upadki 3,65 m. MC945B-3G1J6BSS-A6 od 8 594 zł netto.',
+    seoTitle: 'Zebra MC9450 — kolektor danych 5G z GPS / terminal ultra-rugged | od 8 594 zł',
+    seoDescription: 'Zebra MC9450 (MC945B) — kolektor danych ultra-rugged 5G z GPS do placów, portów i logistyki terenowej. Następca MC9300: 7 klawiatur, skaner SE58 do 30 m, IP68, -30°C. Cena od 8 594 zł netto.',
     shortDescription: 'Zebra MC9450 — flagowy terminal ultra-rugged 5G z GPS, 7 klawiaturami, skanerem do 30 m, IP65+IP68, następca MC9300',
     description: `Dla kogo? Zebra MC9450 to flagowy terminal mobilny klasy ultra-rugged z 5G, GPS i wymiennymi klawiaturami, zaprojektowany dla operacji logistycznych wymagających łączności komórkowej poza zasięgiem Wi-Fi — zarządzanie placami kontenerowymi (yard management), porty morskie, inwentaryzacja pojazdów na dużych placach, logistyka terenowa, dystrybucja i operacje cross-dockingowe na zewnątrz budynków.
 
