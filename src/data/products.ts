@@ -35483,6 +35483,22 @@ export const brandCategories: BrandCategory[] = [
       { question: 'Czy TAKMA serwisuje skanery Newland?', answer: 'Tak — TAKMA zapewnia pełne wsparcie techniczne skanerów Newland w Polsce: doradztwo przedsprzedażowe (dobór modelu, porównanie z Zebra/Honeywell), konfigurację EasySet (symbologie, prefiksy/sufiksy, tryby komunikacji), wsparcie integracyjne (POS, WMS, ERP), obsługę gwarancyjną (5 lat) oraz serwis pogwarancyjny. Skanery Zebra serwisowane dodatkowo przez serwis-zebry.pl. Kontakt: formularz na stronie lub e-mail.' },
     ],
   },
+  {
+    id: 'skanery-honeywell',
+    slug: 'skanery-honeywell',
+    manufacturerId: 'honeywell',
+    categoryId: 'skanery-kodow-kreskowych',
+    name: 'Skanery kodów kreskowych Honeywell',
+    seoTitle: 'Skanery kodów kreskowych Honeywell — Voyager, Xenon, Granit | od 358 zł netto',
+    seoDescription: 'Skanery Honeywell: Voyager XP 1470g/1472g (POS), Xenon Ultra 1960g/1962 (retail), Granit XP/Ultra (przemysłowe, XLR 24 m, AI). Przewodowe i Bluetooth. Od 358 zł. TAKMA — autoryzowany dystrybutor.',
+    longDescription: 'Kompletna oferta skanerów kodów kreskowych Honeywell — od ekonomicznego Voyager XP 1470g (od 358 zł netto) po flagowego Granit Ultra 2100i z dekodowaniem AI (od 1 760 zł). Honeywell to drugi co do wielkości producent skanerów enterprise na świecie. Trzy serie pokrywają pełne spektrum zastosowań: Voyager XP (entry-level POS, apteki, biura), Xenon Ultra (mid-range retail, healthcare z green-dot LED), Granit XP/Ultra (ultra-rugged magazyny, chłodnie -30°C, produkcja). Technologie wyróżniające: FlexRange XLR — skanowanie kodów z odległości do 24 m w skanerze ręcznym (jedyne takie rozwiązanie na rynku). AI-based decoding w Granit Ultra — o 45% szybsze dekodowanie trudnych kodów. 12 modeli: 6 przewodowych USB (358–2 417 zł) + 6 bezprzewodowych Bluetooth (775–2 997 zł). IP52–IP68, upadki 1,5–3 m, gwarancja 3–5 lat. TAKMA jako autoryzowany dystrybutor Honeywell oferuje doradztwo, konfigurację EZConfig i serwis w Polsce.',
+    faq: [
+      { question: 'Ile kosztuje skaner Honeywell?', answer: 'Ceny skanerów Honeywell zaczynają się od 358 zł netto za Voyager XP 1470g (przewodowy 2D do kas POS). Bezprzewodowy Voyager XP 1472g — od 775 zł. Xenon Ultra 1960g (przewodowy, gwarancja 5 lat) — od 1 218 zł. Przemysłowe Granit XP: od 1 726 zł (1990iSR) do 2 997 zł (1991iXLR bezprzewodowy z zasięgiem 24 m). Flagowy Granit Ultra 2100i z AI — od 1 760 zł.' },
+      { question: 'Czym różnią się serie Voyager, Xenon i Granit?', answer: 'Voyager XP (1470g, 1472g): entry-level do kas POS, aptek, biur — lekkie 130–210 g, IP52, ceny 358–1 004 zł. Xenon Ultra (1960g, 1962): mid-range do retail i healthcare — green-dot LED, 370 skanów/s, IP52, ceny 1 218–2 907 zł. Granit XP/Ultra (1990i, 1991i, 2100i, 2105i): ultra-rugged do magazynów i chłodni — IP65/IP67/IP68, upadki 3 m, -30°C, zasięg do 24 m (XLR), AI decoding, ceny 1 726–2 997 zł.' },
+      { question: 'Honeywell vs Zebra — który skaner wybrać?', answer: 'Honeywell wygrywa: FlexRange XLR 24 m w skanerze ręcznym (Zebra max 6 m w DS3608-ER), AI decoding (+45% szybciej). Zebra wygrywa: ekosystem DataCapture DNA (123Scan, SMS) w standardzie, dłuższe gwarancje (5 lat DS2208 vs 3 lata Granit), serwis serwis-zebry.pl. Dla magazynów wysokiego składowania → Honeywell XLR. Dla ekosystemu Zebra → Zebra.' },
+      { question: 'Jakie są alternatywy dla skanerów Honeywell?', answer: 'Główne alternatywy: Zebra (DS2208, DS4608, DS3608 — lider rynku, ekosystem DataCapture DNA, gwarancja 5 lat). Newland (HR23 Dorada, HR33 Marlin — budżetowe, BT 5.0, ceny 30–50% niższe). Datalogic (QuickScan, Gryphon, PowerScan — włoska jakość). Honeywell wyróżnia się technologią FlexRange XLR 24 m, AI decoding i szeroką gamą wariantów zasięgu.' },
+    ],
+  },
 ]
 
 // Brand category helpers

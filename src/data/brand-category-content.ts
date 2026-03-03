@@ -1352,4 +1352,263 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       },
     ],
   },
+  // ===================================================================
+  // SKANERY KODÓW KRESKOWYCH HONEYWELL
+  // ===================================================================
+  'skanery-honeywell': {
+    definition: {
+      heading: 'Skanery kodów kreskowych Honeywell — #2 na świecie, FlexRange XLR do 24 m',
+      content:
+        'Honeywell (dawniej Honeywell Safety and Productivity Solutions) to drugi co do wielkości producent profesjonalnych skanerów kodów kreskowych na świecie, z udziałem ok. 20% w segmencie enterprise [źródło: automation.honeywell.com](https://automation.honeywell.com). Skanery Honeywell (serie Voyager, Xenon, Granit) to urządzenia klasy enterprise zaprojektowane do pracy w handlu detalicznym, aptekach, magazynach, na liniach produkcyjnych, w szpitalach, chłodniach i na dokach załadunkowych. Kluczowa technologia wyróżniająca: FlexRange XLR (eXtra Long Range) — opatentowane rozwiązanie umożliwiające skanowanie kodów z odległości od kontaktu do 24 metrów w jednym skanerze ręcznym, bez przełączania trybów. Żaden inny producent nie oferuje takiego zasięgu w formie handheld. Seria [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) / [2105i](/produkt/honeywell-granit-ultra-2105i) wprowadza dekodowanie oparte na AI — algorytmy sztucznej inteligencji przyspieszają skanowanie trudnych kodów o 45% w porównaniu z poprzednią generacją. Oferta obejmuje 12 modeli: entry-level [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (od 358 zł netto, POS/apteka), mid-range [Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960g) (od 1 218 zł, retail/healthcare z green-dot LED), ultra-rugged [Granit XP 1990i](/produkt/honeywell-granit-xp-1990isr) / [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (od 1 726 zł, magazyny/chłodnie/produkcja). Wersje bezprzewodowe Bluetooth: [Voyager XP 1472g](/produkt/honeywell-voyager-xp-1472g) (od 775 zł), [Xenon Ultra 1962](/produkt/honeywell-xenon-ultra-1962) (od 2 907 zł, superkondensator/Li-ion), [Granit XP 1991i](/produkt/honeywell-granit-xp-1991isr) / [Granit Ultra 2105i](/produkt/honeywell-granit-ultra-2105i) (od 2 499 zł). Zarządzanie flotą: Honeywell Scanner Management Utility (SMU) — zdalne wdrażanie firmware i konfiguracji, EZConfig-Scanning — darmowe narzędzie konfiguracyjne, Scanner Edge — konfiguracja z telefonu przez Bluetooth.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać skaner kodów kreskowych Honeywell? 7 kryteriów',
+      items: [
+        'Seria i zastosowanie — Voyager XP ([1470g](/produkt/honeywell-voyager-xp-1470g) od 358 zł, [1472g](/produkt/honeywell-voyager-xp-1472g) od 775 zł): kasy POS, apteki, biura — lekkie (130–210 g), ekonomiczne, gwarancja 5 lat. Xenon Ultra ([1960g](/produkt/honeywell-xenon-ultra-1960g) od 1 218 zł, [1962](/produkt/honeywell-xenon-ultra-1962) od 2 907 zł): kasy wysokoobrotowe, retail, healthcare — green-dot LED ułatwia celowanie, 370 skanów/s. Granit XP/Ultra ([1990i](/produkt/honeywell-granit-xp-1990isr) od 1 726 zł, [2100i](/produkt/honeywell-granit-ultra-2100i) od 1 760 zł): magazyny, chłodnie, produkcja — IP65–IP68, upadki 3 m, -30°C, zasięg do 24 m.',
+        'Przewodowy czy bezprzewodowy — przewodowy USB/RS-232: stałe stanowisko kasowe, apteka, biuro — niezawodne połączenie, brak baterii, niższa cena (Voyager 1470g od 358 zł vs 1472g BT od 775 zł). Bezprzewodowy Bluetooth: praca mobilna — inwentaryzacja, kompletacja, skanowanie na rampie. Zasięg BT: 30 m (Voyager 1472g), 10 m (Granit XP 1991i z bazą), 100 m (Granit Ultra 2105i Class 1). Bateria na 50 000–100 000 skanów. Reguła: stałe stanowisko → przewodowy. Operator chodzi → bezprzewodowy.',
+        'Zasięg skanowania — Voyager XP 1470g/1472g: do 41 cm (kasa POS). Xenon Ultra 1960g/1962: do 63 cm (retail). Granit XP 1990iSR: do 100 cm (magazyn standard). Granit XP 1990iXR FlexRange: od kontaktu do 10 m (magazyn średni). Granit XP 1990iXLR: od kontaktu do 24 m (magazyn wysokiego składowania — skanowanie z poziomu podłogi). Granit Ultra 2100i XLR: do 30 m (następna generacja). Jeśli potrzebujesz skanować regały powyżej 5 m → FlexRange XLR.',
+        'Wytrzymałość i klasa ochrony — biuro/kasa (IP52): Voyager XP, Xenon Ultra — upadki 1,5–1,8 m, warunki łagodne. Magazyn/dock (IP65/IP67): Granit XP 1990i/1991i — upadki 3 m na beton, 7 000 tumble (1 m), pyłoszczelny, strumienioodporny. Chłodnia/outdoor (IP65/IP68): Granit Ultra 2100i/2105i — zanurzenie 1 m, praca -30°C do +50°C. Granit to jeden z najwytrzymalszych skanerów na rynku — porównywalny z Zebra DS3608.',
+        'Technologia dekodowania — Voyager XP: Adaptus 6.0 imaging — szybki odczyt 1D/2D i ekranów, wystarczający do POS. Xenon Ultra: Adaptus 7.0 + Adaptive Scanning — automatyczne dostosowanie parametrów do rodzaju kodu i odległości. Granit XP: dual-sensor (bliski + daleki) w wariantach XR/XLR — dwa niezależne sensory przełączane automatycznie. Granit Ultra: AI-based decoding + dual-sensor — uczenie maszynowe optymalizuje parametry na bieżąco, +45% szybciej na kodach trudnych.',
+        'Interfejsy i integracja — USB HID (emulacja klawiatury): Plug&Play z każdym programem kasowym (Subiekt, Comarch, SAP) — bez sterowników. RS-232 (port COM): starsze systemy POS. Keyboard Wedge (PS/2): legacy terminale. Bluetooth HID/SPP: parowanie z PC, tabletem, terminalem. Konfiguracja: EZConfig-Scanning (darmowy, Windows), kody konfiguracyjne z Quick Start Guide, Scanner Edge (aplikacja mobilna). Zarządzanie flotą: SMU (Scanner Management Utility) — zdalna aktualizacja firmware i ustawień.',
+        'Budżet i gwarancja — [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (358 zł, 5 lat gwarancji): najtańszy entry-level z 5-letnią gwarancją — 72 zł/rok. [Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960g) (1 218 zł, 5 lat): mid-range z green-dot LED — 244 zł/rok. [Granit XP 1990iSR](/produkt/honeywell-granit-xp-1990isr) (1 726 zł, 3 lata): ultra-rugged entry — 575 zł/rok (ale przetrwa 5–7 lat eksploatacji). [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (1 760 zł, 3 lata): AI + ultra-rugged — najlepsza wartość w segmencie przemysłowym. Opcjonalnie: Honeywell SVC (Service Plans) — wydłużona gwarancja z ochroną uszkodzeń.',
+      ],
+    },
+    expertAuthority:
+      'TAKMA jest autoryzowanym dystrybutorem skanerów Honeywell w Polsce z ponad 25-letnim doświadczeniem na rynku AutoID. Oferujemy pełną gamę skanerów Honeywell — od entry-level Voyager po ultra-rugged Granit — z dostawą z magazynu centralnego Ingram Micro i BlueStar. Zapewniamy doradztwo techniczne (dobór modelu, porównanie z [Zebra](/skanery-kodow-kreskowych-zebra) i [Newland](/skanery-kodow-kreskowych-newland)), konfigurację EZConfig (symbologie, prefiksy/sufiksy, tryby komunikacji), integrację z systemami POS/WMS/ERP, obsługę gwarancyjną (3–5 lat) oraz serwis pogwarancyjny. Jako wieloletni partner zarówno Zebra Technologies, jak i Honeywell — doradzamy obiektywnie, bez faworyzowania marki. Skanery Zebra serwisujemy dodatkowo we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra).',
+    technicalDeepDive: `Pełne portfolio skanerów kodów kreskowych Honeywell — od ekonomicznych Voyager po ultra-rugged Granit z AI i FlexRange XLR — pozwala dobrać skaner idealnie dopasowany do stanowiska pracy. Zestawienie 12 modeli:\n\n• Voyager XP 1470g (handheld 2D, przewodowy): imager 2D, 310 skanów/s, zasięg do 41 cm, USB/RS-232, IP52, upadki 1,5 m, 130 g, gwarancja 5 lat, od 358 zł netto — uniwersalny entry-level do kas POS, aptek, biur, punktów nadawania paczek.\n\n• Voyager XP 1472g (handheld 2D, bezprzewodowy BT): imager 2D, BT 4.2, zasięg BT 30 m, baza CCB01 w zestawie, bateria 2 400 mAh (50 000 skanów, 14 h), IP52, upadki 1,8 m, 210 g, gwarancja 5 lat (skaner), od 775 zł netto — bezprzewodowy POS z bazą ładująco-komunikacyjną, wersja HC (antybakteryjna) do aptek.\n\n• Xenon Ultra 1960g (handheld 2D, przewodowy): imager Adaptus 7.0, 370 skanów/s, green-dot LED, zasięg do 63 cm, USB/RS-232/KBW, IP52, upadki 1,8 m, 190 g, gwarancja 5 lat, od 1 218 zł netto — mid-range do retail (kasy wysokoobrotowe), healthcare (wersja HC), biblioteki.\n\n• Xenon Ultra 1962 (handheld 2D, bezprzewodowy): imager Adaptus 7.0, BT 5.0, superkondensator (ładowanie 10 s!) lub Li-ion, ładowanie indukcyjne Qi, zasięg BT 10 m (Class 2), IP52, upadki 1,8 m, 190–234 g, gwarancja 5 lat (skaner), od 2 907 zł netto — premium bezprzewodowy z natychmiastowym ładowaniem (superkondensator).\n\n• Granit XP 1990iSR (handheld 2D, przewodowy, ultra-rugged): imager 1280×800, 1D/2D/DPM/OCR, zasięg SR do 100 cm, IP67+IP65, upadki 3 m, 7 000 tumble, -30°C do +50°C, 360 g, gwarancja 3 lata, od 1 726 zł netto — standard range do magazynów, doków załadunkowych, produkcji.\n\n• Granit XP 1990iXR (handheld 2D, przewodowy, FlexRange): dual sensor, zasięg od kontaktu do 10 m, IP67+IP65, upadki 3 m, -30°C, od 1 985 zł netto — automatyczne przełączanie bliski/daleki zasięg bez zmiany trybu.\n\n• Granit XP 1990iXLR (handheld 2D, przewodowy, XLR): dual sensor Near+Far 1920×800, zasięg od kontaktu do 24 m na kody 100 mil, IP67+IP65, upadki 3 m, -30°C, od 2 417 zł netto — najdalszy zasięg w skanerze ręcznym na rynku, do magazynów wysokiego składowania.\n\n• Granit Ultra 2100i (handheld 2D, przewodowy, AI): sensor 1280×1080, AI-based decoding (+45%), Multi-Code, OCR, DPM, mGR (ekrany), 4 warianty (SR/XR/XLR/HD), IP65/IP68, upadki 3 m, -30°C, od 1 760 zł netto — następca Granit XP z AI, najnowsza generacja.\n\n• Granit Ultra 2105i (handheld 2D, bezprzewodowy, AI): jak 2100i + BT Class 1 (100 m), bateria 3 300 mAh (100 000 skanów), IP65/IP68, upadki 3 m, 405 g, od 2 574 zł netto — bezprzewodowy Granit Ultra z AI i najdłuższym zasięgiem BT.\n\n• Granit XP 1991iSR (handheld 2D, bezprzewodowy, ultra-rugged): jak 1990iSR + BT 4.2, bateria 2 450 mAh (50 000 skanów), IP67+IP65, upadki 3 m, od 2 499 zł netto — bezprzewodowy ultra-rugged standard range.\n\n• Granit XP 1991iXR (handheld 2D, bezprzewodowy, FlexRange): jak 1990iXR + BT 4.2, FlexRange do 10 m, bateria 2 450 mAh, od 2 873 zł netto — bezprzewodowy FlexRange do magazynów.\n\n• Granit XP 1991iXLR (handheld 2D, bezprzewodowy, XLR 24 m): jak 1990iXLR + BT 4.2, zasięg 24 m bezprzewodowo, bateria 2 450 mAh (50 000 skanów), od 2 997 zł netto — mobilny skaner dalekiego zasięgu do magazynów wysokiego składowania.\nWszystkie skanery Honeywell obsługują pełny zakres symbologii: EAN-13, Code 128, Code 39, QR Code, DataMatrix, PDF417, Aztec, GS1 DataBar, Composite, Digimarc, DotCode oraz kody z ekranów. Granit XP/Ultra dodatkowo: DPM (dot peen, laser etch, chemical etch), OCR (OCR-A, OCR-B, MICR E-13B, Passport MRZ), Multi-Code (odczyt wielu kodów jednocześnie). Honeywell Total Freedom SDK umożliwia programowanie logiki walidacji i formatowania danych bezpośrednio w skanerze — bez modyfikacji aplikacji na komputerze.`,
+    tcoComparisons: [
+      {
+        title: 'TCO 5 lat — kasa POS (Honeywell vs Zebra)',
+        variants: [
+          {
+            label: 'Honeywell Voyager XP 1470g',
+            items: [
+              { name: 'Skaner + kabel USB', cost: '358 zł' },
+              { name: 'Serwis 5 lat', cost: '0 zł (gwarancja)' },
+              { name: 'Konfiguracja EZConfig', cost: '0 zł (darmowe)' },
+            ],
+            total: '358 zł (6 zł/mies.)',
+          },
+          {
+            label: 'Zebra DS2208',
+            items: [
+              { name: 'Skaner + kabel USB', cost: '352 zł' },
+              { name: 'Serwis 5 lat', cost: '0 zł (gwarancja)' },
+              { name: 'Konfiguracja 123Scan', cost: '0 zł (darmowe)' },
+            ],
+            total: '352 zł (6 zł/mies.)',
+          },
+        ],
+        conclusion: 'Praktycznie identyczny TCO. Honeywell 1470g i Zebra DS2208 to dwa najlepsze skanery entry-level 2D z 5-letnią gwarancją na rynku. Wybór zależy od istniejącego ekosystemu w firmie.',
+      },
+      {
+        title: 'TCO 3 lata — magazyn (przewodowy ultra-rugged)',
+        variants: [
+          {
+            label: 'Honeywell Granit XP 1990iXLR',
+            items: [
+              { name: 'Skaner przewodowy XLR (24 m)', cost: '2 417 zł' },
+              { name: 'Kabel USB 3 m', cost: '~130 zł' },
+              { name: 'Serwis 3 lata', cost: '0 zł (gwarancja)' },
+            ],
+            total: '~2 547 zł (71 zł/mies.)',
+          },
+          {
+            label: 'Zebra DS3608-ER (6 m)',
+            items: [
+              { name: 'Skaner przewodowy ER (6 m)', cost: '~2 500 zł' },
+              { name: 'Kabel USB', cost: '~0 zł (w zestawie)' },
+              { name: 'Serwis 3 lata', cost: '0 zł (gwarancja)' },
+            ],
+            total: '~2 500 zł (69 zł/mies.)',
+          },
+        ],
+        conclusion: 'Porównywalny TCO, ale Honeywell XLR skanuje z 24 m (vs 6 m Zebra) — eliminuje potrzebę drabin w magazynach wysokiego składowania, co oszczędza czas i zwiększa bezpieczeństwo.',
+      },
+    ],
+    useCases: [
+      {
+        title: 'Kasa fiskalna i POS — Voyager XP 1470g / 1472g',
+        description:
+          '[Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (358 zł, przewodowy) — entry-level 2D z 5-letnią gwarancją, USB Plug&Play, odczyt EAN-13, QR, DataMatrix, kody z ekranów. Działa z każdym programem kasowym (Subiekt, Comarch, SAP) bez sterowników. [Voyager XP 1472g](/produkt/honeywell-voyager-xp-1472g) (775 zł, Bluetooth) — bezprzewodowy do skanowania na ladzie i regałach, zasięg BT 30 m, baza ładująca CCB01 w zestawie. Wersja HC (healthcare) z obudową antybakteryjną do aptek. Obie wersje obsługują GS1 DataBar, kody lojalnościowe i e-kupony.',
+      },
+      {
+        title: 'Apteka i weryfikacja leków FMD — Voyager XP 1470g / Xenon 1960g',
+        description:
+          'Dyrektywa FMD wymaga weryfikacji kodu DataMatrix 2D na opakowaniu każdego leku w systemie KOWAL/NMVS. [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (358 zł) spełnia te wymogi — odczytuje DataMatrix na małych opakowaniach, USB HID, 5 lat gwarancji. [Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960g) (1 218 zł) z green-dot LED przyspiesza celowanie na małych etykietach leków, wersja HC odporna na dezynfekcję (IPA, chlorheksydyna). Do aptek szpitalnych z wymaganiami mobilności: [Xenon Ultra 1962](/produkt/honeywell-xenon-ultra-1962) z superkondensatorem — pełne naładowanie w 10 sekund.',
+      },
+      {
+        title: 'Magazyn wysokiego składowania — Granit XP 1990iXLR / 1991iXLR',
+        description:
+          'Magazyny z regałami 10–24 m — skaner [Granit XP 1990iXLR](/produkt/honeywell-granit-xp-1990ixlr) (2 417 zł, przewodowy) eliminuje drabiny i wózki podnośnikowe: operator skanuje kody z poziomu podłogi z odległości do 24 m. Wersja bezprzewodowa [Granit XP 1991iXLR](/produkt/honeywell-granit-xp-1991ixlr) (2 997 zł) z baterią na 50 000 skanów do pracy mobilnej. IP67, upadki 3 m na beton, -30°C. Dual sensor (bliski + daleki) automatycznie rozpoznaje odległość — skanowanie z 1 cm i z 24 m tym samym skanerem. Analogi: Zebra DS3608-ER sięga max 6 m, [Zebra MC9400](/produkt/zebra-mc9400) z SE58 — do 30 m, ale to terminal (8 594 zł).',
+      },
+      {
+        title: 'Chłodnia i mroźnia (-30°C) — Granit Ultra 2100i',
+        description:
+          '[Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (1 760 zł, przewodowy) z AI decoding i IP68 — do pracy w chłodniach i mroźniach od -30°C do +50°C. AI-based decoding radzi sobie z etykietami pokrytymi szronem i kondensatem — gdzie standardowe skanery mają problemy z „no read". Obudowa wytrzymuje cykle zamrażania-rozmrażania. Wariant HD (High Density) czyta mikroskopijne kody 2 mil na produktach farmaceutycznych przechowywanych w chłodniach. Bezprzewodowa wersja [Granit Ultra 2105i](/produkt/honeywell-granit-ultra-2105i) (2 574 zł) z BT 100 m do mobilnej pracy w komorach mroźniczych.',
+      },
+      {
+        title: 'Produkcja i traceability — Granit XP 1990iSR / Ultra 2100i',
+        description:
+          'Na liniach produkcyjnych skanery weryfikują kody komponentów, rejestrują numery serii i kontrolują traceability (ISO 9001, IATF 16949, GS1). [Granit XP 1990iSR](/produkt/honeywell-granit-xp-1990isr) (1 726 zł) z odczytem DPM (dot peen, laser etch) na metalowych częściach. [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (1 760 zł) z AI i Multi-Code — odczyt wielu kodów w polu widzenia jednocześnie, dane sortowane przez Data Format Editor automatycznie. OCR w standardzie (OCR-A, OCR-B, MICR, MRZ) — odczyt tekstu maszynowego bez dodatkowej licencji. Tolerancja ruchu do 4 000 mm/s — skanowanie na linii produkcyjnej bez zatrzymywania.',
+      },
+      {
+        title: 'Logistyka i przyjęcie towaru — Granit XP 1991i BT',
+        description:
+          'Na rampie załadunkowej i w strefie przyjęć: [Granit XP 1991iSR](/produkt/honeywell-granit-xp-1991isr) (2 499 zł, bezprzewodowy) — IP67, upadki 3 m, -30°C, bateria 50 000 skanów. Operator skanuje etykiety paletowe, listy przewozowe i kody przesyłek z odległości do 1 m bez ciągnięcia kabla. Praca w deszczu i kurzu na placu. [Granit XP 1991iXR](/produkt/honeywell-granit-xp-1991ixr) (2 873 zł) z FlexRange do 10 m — skanowanie palet na wózku widłowym z kabiny. Integracja z WMS przez Bluetooth SPP/HID: zeskanowany kod automatycznie przypisuje dostawę do lokalizacji.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego sprzedawcy skanerów nie powiedzą',
+      items: [
+        {
+          title: 'FlexRange XLR — 24 m w skanerze ręcznym, którego nie ma nikt inny',
+          text: 'FlexRange XLR to jedyna technologia na rynku umożliwiająca skanowanie kodów z odległości do 24 metrów w formie skanera ręcznego (handheld). Dual sensor (bliski + daleki 1920×800) automatycznie przełącza się w zależności od odległości — operator nie musi zmieniać trybu. Zebra oferuje podobny zasięg (30 m z SE58), ale wyłącznie w terminalu mobilnym [MC9400](/produkt/zebra-mc9400) (od 7 638 zł) — nie w skanerze ręcznym. Honeywell [Granit XP 1990iXLR](/produkt/honeywell-granit-xp-1990ixlr) daje te same 24 m za 2 417 zł. Dla magazynów wysokiego składowania to oszczędność 5 221 zł na urządzeniu.',
+        },
+        {
+          title: 'AI decoding — skaner, który uczy się Twoich kodów',
+          text: 'Granit Ultra [2100i](/produkt/honeywell-granit-ultra-2100i) / [2105i](/produkt/honeywell-granit-ultra-2105i) to pierwsze skanery ręczne z wbudowanym dekodowaniem AI. Algorytmy analizują wzorce kodów spotykanych w danym środowisku i dynamicznie optymalizują parametry obrazowania. Efekt: im dłużej skaner pracuje w magazynie, tym szybciej dekoduje lokalne kody. W testach Honeywell: +45% szybsze skanowanie kodów trudnych (zabrudzonych, uszkodzonych, pokrytych folią stretch) vs Granit XP. Zebra PRZYM (Pattern Recognition for Intelligent Zero-Margin) w DS4608 to porównywalna technologia, ale bez elementu uczenia maszynowego — parametry są stałe.',
+        },
+        {
+          title: 'Superkondensator w Xenon Ultra 1962 — pełne ładowanie w 10 sekund',
+          text: '[Xenon Ultra 1962](/produkt/honeywell-xenon-ultra-1962) z superkondensatorem to rewolucja w skanerach bezprzewodowych. Zamiast baterii Li-ion (ładowanie 2–4 h) — superkondensator ładuje się do pełna w 10 sekund po odłożeniu na bazę indukcyjną. Zero przestojów na ładowanie. Superkondensator nie degraduje się — żywotność 10+ lat (vs 2–3 lata bateria Li-ion). Opcjonalnie: wersja z baterią Li-ion 550 mAh do pracy 16 h. Żaden inny producent nie oferuje superkondensatora w skanerze ręcznym.',
+        },
+        {
+          title: 'Kompatybilność Granit XP ↔ Granit Ultra — upgrade bez wymiany infrastruktury',
+          text: 'Honeywell zaprojektował Granit Ultra 2100i/2105i jako drop-in replacement dla Granit XP 1990i/1991i. [Kable USB](/produkt/honeywell-cbl-500-300-s00), [kable RS-232](/produkt/honeywell-cbl-020-300-c00), [bazy ładujące](/produkt/honeywell-ccb23-100bt-07n) i [kabury](/produkt/honeywell-holster-industrial) są kompatybilne między generacjami. Przy upgrade z Granit XP na Ultra wymieniasz tylko skaner — cała infrastruktura kabli i uchwytów zostaje. [Baterie](/produkt/honeywell-bat-scn11) BAT-SCN11 (3 300 mAh) pasują do 2100i i 2105i. Przy flocie 50+ skanerów to oszczędność tysięcy złotych na akcesoriach.',
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Ile kosztuje skaner kodów kreskowych Honeywell?',
+        answer:
+          'Ceny skanerów Honeywell zaczynają się od 358 zł netto za [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (przewodowy 2D, 5 lat gwarancji). Bezprzewodowy [Voyager XP 1472g](/produkt/honeywell-voyager-xp-1472g) z bazą BT — od 775 zł. [Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960g) (przewodowy mid-range, green-dot LED) — od 1 218 zł. Bezprzewodowy [Xenon Ultra 1962](/produkt/honeywell-xenon-ultra-1962) z superkondensatorem — od 2 907 zł. Przemysłowe: [Granit XP 1990iSR](/produkt/honeywell-granit-xp-1990isr) od 1 726 zł, [1990iXLR](/produkt/honeywell-granit-xp-1990ixlr) (24 m) od 2 417 zł. Flagowy [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) z AI — od 1 760 zł. Bezprzewodowy [Granit Ultra 2105i](/produkt/honeywell-granit-ultra-2105i) z AI + BT 100 m — od 2 574 zł. Ceny aktualizowane codziennie z hurtowni Ingram Micro i BlueStar.',
+      },
+      {
+        question: 'Jaka jest gwarancja na skanery Honeywell?',
+        answer:
+          'Gwarancja zależy od serii: [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g)/[1472g](/produkt/honeywell-voyager-xp-1472g) — 5 lat (60 mies.). [Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960g)/[1962](/produkt/honeywell-xenon-ultra-1962) — 5 lat. Granit XP [1990i](/produkt/honeywell-granit-xp-1990isr)/[1991i](/produkt/honeywell-granit-xp-1991isr) — 3 lata (36 mies.). Granit Ultra [2100i](/produkt/honeywell-granit-ultra-2100i)/[2105i](/produkt/honeywell-granit-ultra-2105i) — 3 lata. Baterie do modeli bezprzewodowych — 1 rok. Porównanie: [Zebra DS2208](/produkt/zebra-ds2208) — 5 lat, [Newland HR23](/produkt/newland-hr23-dorada) — 5 lat. Opcjonalnie Honeywell SVC (Service Plans) przedłuża gwarancję z ochroną przed uszkodzeniami przypadkowymi.',
+      },
+      {
+        question: 'Czym różnią się serie Voyager XP, Xenon Ultra i Granit XP/Ultra?',
+        answer:
+          'Voyager XP ([1470g](/produkt/honeywell-voyager-xp-1470g), [1472g](/produkt/honeywell-voyager-xp-1472g)): entry-level do kas POS, aptek, biur — lekkie (130–210 g), IP52, upadki 1,5–1,8 m, ceny 358–1 004 zł, gwarancja 5 lat. Xenon Ultra ([1960g](/produkt/honeywell-xenon-ultra-1960g), [1962](/produkt/honeywell-xenon-ultra-1962)): mid-range do retail i healthcare — green-dot LED (celownik widoczny w słabym oświetleniu), Adaptive Scanning, 370 skanów/s, IP52, 190–234 g, ceny 1 218–2 907 zł, gwarancja 5 lat. Granit XP/Ultra ([1990i](/produkt/honeywell-granit-xp-1990isr), [1991i](/produkt/honeywell-granit-xp-1991isr), [2100i](/produkt/honeywell-granit-ultra-2100i), [2105i](/produkt/honeywell-granit-ultra-2105i)): ultra-rugged do magazynów, chłodni, produkcji — IP65/IP67/IP68, upadki 3 m na beton, praca -30°C, zasięg do 24 m (XLR), AI decoding (Ultra), ceny 1 726–2 997 zł, gwarancja 3 lata.',
+      },
+      {
+        question: 'Co to jest technologia FlexRange i FlexRange XLR Honeywell?',
+        answer:
+          'FlexRange to opatentowana technologia Honeywell z dual sensorem (bliski + daleki) — automatycznie przełącza parametry skanowania w zależności od odległości, bez interwencji operatora. FlexRange (XR): od kontaktu do 10 m — dostępne w [Granit XP 1990iXR](/produkt/honeywell-granit-xp-1990ixr) (1 985 zł) i [1991iXR](/produkt/honeywell-granit-xp-1991ixr) (2 873 zł). FlexRange XLR (eXtra Long Range): od kontaktu do 24 m — dostępne w [Granit XP 1990iXLR](/produkt/honeywell-granit-xp-1990ixlr) (2 417 zł) i [1991iXLR](/produkt/honeywell-granit-xp-1991ixlr) (2 997 zł). W [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) XLR zasięg sięga 30 m. Zastosowanie: magazyny wysokiego składowania — skanowanie etykiet na najwyższych regałach z poziomu podłogi, bez drabiny.',
+      },
+      {
+        question: 'Honeywell vs Zebra — który producent skanerów jest lepszy?',
+        answer:
+          'Honeywell wygrywa: FlexRange XLR 24 m w skanerze ręcznym (Zebra max 6 m w DS3608-ER), AI-based decoding w Granit Ultra (+45% szybciej), superkondensator w [Xenon 1962](/produkt/honeywell-xenon-ultra-1962) (ładowanie 10 s), 4 warianty zasięgu na model (SR/XR/XLR/HD). [Zebra](/skanery-kodow-kreskowych-zebra) wygrywa: ekosystem DataCapture DNA (123Scan, SMS, Scan-to-Connect) w standardzie — Honeywell Remote MasterMind jest płatny, niższa cena entry-level ([DS2208](/produkt/zebra-ds2208) 352 zł vs [1470g](/produkt/honeywell-voyager-xp-1470g) 358 zł), dłuższa gwarancja DS2208 (5 lat vs 3 lata Granit), autoryzowany serwis [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra). Rekomendacja: magazyn wysokiego składowania → Honeywell XLR. Istniejący ekosystem Zebra → Zebra. Entry-level POS → oba porównywalne.',
+      },
+      {
+        question: 'Który skaner Honeywell do apteki?',
+        answer:
+          'Do apteki rekomendujemy [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (358 zł, przewodowy) — odczytuje DataMatrix 2D wymagany przez dyrektywę FMD/KOWAL, USB Plug&Play, 130 g, gwarancja 5 lat. Dla aptek z obsługą na regałach: [Voyager XP 1472g](/produkt/honeywell-voyager-xp-1472g) (775 zł, BT 30 m, wersja HC antybakteryjna). Dla aptek szpitalnych z dezynfekcją: [Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960g) (1 218 zł, obudowa odporna na IPA, chlorheksydynę, Oxivir). Alternatywy: [Zebra DS2208-HC](/produkt/zebra-ds2208) (352 zł), [Newland HR23 Dorada](/produkt/newland-hr23-dorada) (271 zł).',
+      },
+      {
+        question: 'Który skaner Honeywell do magazynu?',
+        answer:
+          'Lekki magazyn (kasa/biuro, <500 skanów/dzień): [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (358 zł). Średni magazyn z regałami 3–10 m: [Granit XP 1990iXR](/produkt/honeywell-granit-xp-1990ixr) (1 985 zł, FlexRange do 10 m). Magazyn wysokiego składowania 10–24 m: [Granit XP 1990iXLR](/produkt/honeywell-granit-xp-1990ixlr) (2 417 zł, XLR do 24 m). Chłodnia/mroźnia (-30°C): [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (1 760 zł, IP68, AI). Praca mobilna: [Granit XP 1991iXLR](/produkt/honeywell-granit-xp-1991ixlr) (2 997 zł, BT, XLR 24 m, 50 000 skanów). Alternatywa: terminal mobilny [Honeywell CK67](/produkt/honeywell-ck67) z FlexRange XLR + ekran WMS.',
+      },
+      {
+        question: 'Jak skonfigurować skaner Honeywell?',
+        answer:
+          'Trzy metody konfiguracji: 1) EZConfig-Scanning (darmowy, Windows) — pełna konfiguracja symbologii, prefiksów/sufiksów, trybów pracy, Data Format Editor, eksport/import profili. 2) Kody konfiguracyjne z Quick Start Guide — skanowanie kodów konfiguracyjnych z wydruku, bez komputera. 3) Scanner Edge (aplikacja mobilna iOS/Android) — konfiguracja przez Bluetooth z telefonu, idealna do konfiguracji w terenie. Zarządzanie flotą: Scanner Management Utility (SMU) — zdalne wdrażanie firmware, ustawień i profili na wszystkich skanerach jednocześnie. Honeywell Total Freedom SDK — programowanie logiki walidacji danych bezpośrednio w skanerze.',
+      },
+      {
+        question: 'Co to jest AI decoding w Granit Ultra 2100i/2105i?',
+        answer:
+          'AI-based decoding to wbudowane algorytmy sztucznej inteligencji w [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (przewodowy) i [2105i](/produkt/honeywell-granit-ultra-2105i) (bezprzewodowy). AI analizuje obraz kodu i dynamicznie optymalizuje ekspozycję, oświetlenie i parametry dekodowania w czasie rzeczywistym. Wynik: +45% szybsze skanowanie kodów trudnych — uszkodzonych, zabrudzonych, pokrytych folią stretch, wydrukowanych na niestandardowych podłożach. AI uczy się wzorców kodów specyficznych dla danego środowiska — im dłużej skaner pracuje, tym szybciej skanuje lokalne kody. Granit Ultra 2100i to najnowsza generacja skanerów Honeywell, następca serii Granit XP 1990i.',
+      },
+      {
+        question: 'Honeywell Granit XP 1990i vs Granit Ultra 2100i — co wybrać?',
+        answer:
+          '[Granit XP 1990i](/produkt/honeywell-granit-xp-1990isr) (od 1 726 zł): sprawdzona seria ultra-rugged, IP67+IP65, upadki 3 m, -30°C, 4 warianty (SR/XR/XLR/HD), sensor 1280×800 (SR). [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (od 1 760 zł): następca z AI decoding (+45%), lepszy sensor 1280×1080 (SR), Multi-Code, OCR w standardzie, mGR (ekrany). Różnica cenowa minimalna (~34 zł). Kompatybilne kable i akcesoria. Rekomendacja: nowe wdrożenia → Granit Ultra 2100i (nowsza generacja, AI, lepszy sensor). Rozbudowa floty Granit XP → pozostanie przy XP (pełna kompatybilność, identyczna konfiguracja).',
+      },
+      {
+        question: 'Czy skanery Honeywell działają w mroźni (-30°C)?',
+        answer:
+          'Tak — serie Granit XP (1990i/1991i) i Granit Ultra (2100i/2105i) pracują w temperaturach od -30°C do +50°C. IP67 (Granit XP) i IP65/IP68 (Granit Ultra) zapewnia pyłoszczelność i wodoodporność. Modele bezprzewodowe: bateria Li-ion traci ok. 30% pojemności w -30°C. Rekomendacja do pracy wyłącznie w mroźni: przewodowy [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (brak problemu z baterią). Granit Ultra z AI decoding lepiej radzi sobie z etykietami pokrytymi szronem i kondensatem. Alternatywa: [Zebra DS3608-SR](/skanery-kodow-kreskowych-zebra) (IP67, -30°C, od ~2 500 zł).',
+      },
+      {
+        question: 'Jakie akcesoria są dostępne do skanerów Honeywell?',
+        answer:
+          'Pełna gama oryginalnych akcesoriów w TAKMA: [kabel USB 3 m](/produkt/honeywell-cbl-500-300-s00) (prosty, Type A), [kabel RS-232 3 m](/produkt/honeywell-cbl-020-300-c00) (krętny, DB9), [bateria BAT-SCN11](/produkt/honeywell-bat-scn11) (3 300 mAh, Granit Ultra 2100i/2105i, 100 000 skanów), [bateria BAT-SCN05](/produkt/honeywell-bat-scn05) (2 450 mAh, Granit XP 1991i, 50 000 skanów), [baza ładująco-komunikacyjna CCB23](/produkt/honeywell-ccb23-100bt-07n) (BT Class 1, 100 m, Granit Ultra), [ładowarka 4-slotowa MB4-BAT-SCN11](/produkt/honeywell-mb4-bat-scn11) (4 baterie w 4 h), [kabura przemysłowa](/produkt/honeywell-holster-industrial) na pasek (Granit). Kable i bazy kompatybilne między Granit XP i Granit Ultra.',
+      },
+      {
+        question: 'Honeywell Voyager XP 1470g vs Zebra DS2208 — porównanie entry-level',
+        answer:
+          '[Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (358 zł): 2D imager, USB, 130 g, IP52, upadki 1,5 m, gwarancja 5 lat, 310 skanów/s, zasięg do 41 cm. [Zebra DS2208](/produkt/zebra-ds2208) (352 zł): 2D imager, USB, 115 g, IP52, upadki 1,5 m, gwarancja 5 lat, 220 skanów/s, zasięg do 37 cm. Praktycznie identyczne parametry i cena (różnica 6 zł). Voyager 1470g: szybszy (310 vs 220 skanów/s), dalszy zasięg (41 vs 37 cm). DS2208: lżejszy o 15 g, ekosystem DataCapture DNA (123Scan). Rekomendacja: istniejąca flota Honeywell → 1470g. Istniejąca flota Zebra → DS2208. Nowy zakup → oba równie dobre.',
+      },
+      {
+        question: 'Honeywell Xenon Ultra 1960g vs 1962 — przewodowy czy bezprzewodowy?',
+        answer:
+          '[Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960g) (1 218 zł, przewodowy): USB/RS-232/KBW, 190 g, green-dot LED, gwarancja 5 lat. [Xenon Ultra 1962](/produkt/honeywell-xenon-ultra-1962) (2 907 zł, bezprzewodowy): BT 5.0, superkondensator (10 s ładowania!) lub Li-ion, indukcyjne Qi, 190–234 g. Różnica cenowa: 1 689 zł. Kiedy 1962? Gdy operator potrzebuje mobilności (inwentaryzacja, regały), superkondensator eliminuje przestoje. Kiedy 1960g? Stałe stanowisko kasowe — tańszy, niezawodny kabel, zero ładowania. Obie wersje z Adaptive Scanning i green-dot LED.',
+      },
+      {
+        question: 'Czy TAKMA serwisuje skanery Honeywell w Polsce?',
+        answer:
+          'Tak — TAKMA oferuje pełne wsparcie skanerów Honeywell: doradztwo przedsprzedażowe (dobór modelu, porównanie z [Zebra](/skanery-kodow-kreskowych-zebra) i [Newland](/skanery-kodow-kreskowych-newland)), konfigurację EZConfig i Scanner Edge, integrację z systemami POS/WMS/ERP (Subiekt, Comarch, SAP), obsługę gwarancyjną (3–5 lat) i serwis pogwarancyjny. Czas naprawy: 5–7 dni roboczych. Dla skanerów Zebra dostępny jest szybszy serwis autoryzowany przez [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra). TAKMA jest autoryzowanym dystrybutorem zarówno Honeywell, jak i Zebra — doradzamy obiektywnie.',
+      },
+      {
+        question: 'Jakie są alternatywy dla skanerów kodów kreskowych Honeywell?',
+        answer:
+          'Główne alternatywy: [Zebra](/skanery-kodow-kreskowych-zebra) ([DS2208](/produkt/zebra-ds2208) od 352 zł, DS4608, DS3608 — lider rynku, ekosystem DataCapture DNA, gwarancja do 5 lat, autoryzowany serwis [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra)). [Newland](/skanery-kodow-kreskowych-newland) ([HR23 Dorada](/produkt/newland-hr23-dorada) od 271 zł, [HR33 Marlin](/produkt/newland-hr33-marlin) z OCR — budżetowe, gwarancja 5 lat, BT 5.0 z zasięgiem 100 m, ceny 30–50% niższe od Honeywell). Datalogic (QuickScan, Gryphon, PowerScan — włoska jakość, silna pozycja w retail i produkcji). Honeywell wyróżnia się FlexRange XLR (24 m w skanerze ręcznym), AI decoding i superkondensatorem w Xenon 1962. W TAKMA oferujemy wszystkie marki — pomagamy wybrać optymalny model dla konkretnego zastosowania.',
+      },
+    ],
+    comparisons: [
+      {
+        title: 'Honeywell vs Zebra — dwaj liderzy rynku skanerów',
+        content:
+          'Honeywell i Zebra kontrolują łącznie ponad 55% globalnego rynku skanerów enterprise. Entry-level: [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (358 zł, 5 lat) vs [Zebra DS2208](/produkt/zebra-ds2208) (352 zł, 5 lat) — praktycznie identyczne parametry. Mid-range: [Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960g) (1 218 zł) vs Zebra DS4608 (~900 zł) — Xenon droższy, ale z green-dot LED i Adaptive Scanning. Ultra-rugged: [Granit XP 1990iXLR](/produkt/honeywell-granit-xp-1990ixlr) (2 417 zł, zasięg 24 m) vs Zebra DS3608-ER (~2 500 zł, zasięg 6 m) — Honeywell 4× dalszy zasięg za porównywalną cenę. AI/next-gen: [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (1 760 zł, AI +45%) — Zebra nie ma bezpośredniego odpowiednika z AI w skanerze ręcznym. Kluczowa różnica: Zebra oferuje DataCapture DNA (123Scan, SMS) w standardzie — Honeywell wymaga licencji na Remote MasterMind. Dla firm z ekosystemem Zebra (drukarki + terminale) → wspólna platforma zarządzania to decydujący argument.',
+      },
+      {
+        title: 'Honeywell vs Newland — premium kontra budżet',
+        content:
+          '[Newland](/skanery-kodow-kreskowych-newland) pozycjonuje się jako budżetowa alternatywa z 5-letnią gwarancją. [HR23 Dorada](/produkt/newland-hr23-dorada) (271 zł, 2D) vs [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (358 zł) — Newland tańszy o 87 zł z identyczną gwarancją. [HR33 Marlin BT](/produkt/newland-hr33-marlin-bt) (688 zł, megapikselowy, OCR, BT 5.0, zasięg 100 m) vs [Voyager XP 1472g](/produkt/honeywell-voyager-xp-1472g) (775 zł, BT 4.2, zasięg 30 m) — HR33 tańszy, dalszy BT, OCR w standardzie. [NVH300 DPM](/produkt/newland-nvh300) (1 008 zł) vs Granit XP 1990iSR (1 726 zł) — Newland 42% tańszy w segmencie DPM. Honeywell wygrywa: FlexRange XLR 24 m (Newland max ~1 m), ultra-rugged IP67 (Newland max IP64), AI decoding, praca -30°C. Rekomendacja: kasa/apteka z budżetem → Newland. Magazyn/chłodnia/produkcja → Honeywell.',
+      },
+      {
+        title: 'Granit XP 1990i vs Granit Ultra 2100i — stara vs nowa generacja',
+        content:
+          '[Granit XP 1990i](/produkt/honeywell-granit-xp-1990isr) (2019): sprawdzona seria, sensor 1280×800 (SR), IP67+IP65, upadki 3 m, -30°C, od 1 726 zł. [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (2024): AI decoding (+45% szybciej), sensor 1280×1080 (+35% pikseli), Multi-Code, OCR w standardzie, mGR (ekrany), IP65/IP68, od 1 760 zł. Różnica cenowa: zaledwie 34 zł (SR vs SR). Kable, bazy, kabury kompatybilne — zero dodatkowych kosztów przy migracji. Granit Ultra 2100i XLR sięga 30 m (vs 24 m w XP). Jedyny powód dla Granit XP: rozbudowa istniejącej floty XP (identyczna konfiguracja, firmware, zachowanie). Nowe zakupy → zawsze Ultra 2100i.',
+      },
+      {
+        title: 'Skaner Honeywell vs terminal mobilny ze skanerem — kiedy co wybrać?',
+        content:
+          'Skaner ręczny (Voyager, Xenon, Granit): dekoduje kod i wysyła do komputera/kasy. Brak ekranu, brak aplikacji. Cena: 358–2 997 zł. Zalety: prosty, niezawodny, tani, 3–5 lat gwarancji. Terminal mobilny ([CT32](/produkt/honeywell-ct32), [CK67](/produkt/honeywell-ck67)): komputer Android + skaner + ekran + klawiatura. Cena: 3 389–7 765 zł. Kiedy skaner: operator skanuje na kasie/stanowisku z monitorem PC — dane wyświetlane na PC. Kiedy terminal: operator chodzi po magazynie i potrzebuje widzieć dane WMS na swoim urządzeniu. Hybrydowy model: skaner [Granit XP 1991i](/produkt/honeywell-granit-xp-1991isr) Bluetooth + komputer stacjonarny — mobilne skanowanie, dane na ekranie PC.',
+      },
+      {
+        title: 'Voyager XP 1472g vs Xenon Ultra 1962 — bezprzewodowe porównanie',
+        content:
+          '[Voyager XP 1472g](/produkt/honeywell-voyager-xp-1472g) (775 zł): BT 4.2, zasięg 30 m, bateria 2 400 mAh (50 000 skanów, 14 h), baza CCB01, IP52, 210 g, gwarancja 5 lat. [Xenon Ultra 1962](/produkt/honeywell-xenon-ultra-1962) (2 907 zł): BT 5.0, superkondensator (ładowanie 10 s) lub Li-ion, ładowanie indukcyjne Qi, green-dot LED, Adaptive Scanning, IP52, 190–234 g, gwarancja 5 lat. Różnica: 2 132 zł. Voyager 1472g: najlepsza wartość BT do POS, wystarczający do aptek i sklepów. Xenon 1962: premium z superkondensatorem do środowisk z zerową tolerancją przestojów (kasy supermarketów, sortownie paczek) — 10-sekundowe ładowanie = brak przestojów na ładowanie.',
+      },
+    ],
+    howToSteps: [
+      {
+        name: 'Zdefiniuj wymagania stanowiskowe',
+        text: 'Określ: ile stanowisk potrzebuje skanera? Stałe (kasa, apteka) czy mobilne (magazyn, inwentaryzacja)? Jakie typy kodów (1D/2D/ekrany/DPM)? Jakie warunki (biuro/magazyn/chłodnia)? Jaka maksymalna odległość skanowania (kasa: 30 cm, magazyn standard: 1–5 m, regały wysokie: 10–24 m)? Ile skanowań dziennie? Skontaktuj się z doradcą TAKMA — dobierzemy model Honeywell na podstawie tych parametrów.',
+      },
+      {
+        name: 'Wybierz serię i model',
+        text: 'Kasa/apteka/biuro: [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (358 zł, przewodowy) lub [1472g](/produkt/honeywell-voyager-xp-1472g) (775 zł, BT). Retail/healthcare: [Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960g) (1 218 zł) lub [1962](/produkt/honeywell-xenon-ultra-1962) (2 907 zł). Magazyn standard: [Granit XP 1990iSR](/produkt/honeywell-granit-xp-1990isr) (1 726 zł). Magazyn wysoki: [1990iXLR](/produkt/honeywell-granit-xp-1990ixlr) (2 417 zł). Chłodnia/AI: [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (1 760 zł). Praca mobilna: dodaj „bezprzewodowy" — 1991i lub 2105i.',
+      },
+      {
+        name: 'Skonfiguruj skaner (EZConfig / Scanner Edge)',
+        text: 'Podłącz USB — działa od razu jako emulacja klawiatury (HID). Opcjonalnie: pobierz EZConfig-Scanning (darmowy, Windows). Skonfiguruj: symbologie (włącz/wyłącz), prefiksy/sufiksy (dodaj Enter po kodzie, prefix identyfikujący typ kodu), Data Format Editor (parsowanie, walidacja, formatowanie GS1). Eksportuj profil → zaimportuj na pozostałe skanery. Alternatywnie: Scanner Edge (iOS/Android) — konfiguracja przez Bluetooth z telefonu w 5 minut.',
+      },
+      {
+        name: 'Zintegruj z systemem POS/WMS/ERP',
+        text: 'USB HID: skaner wpisuje kod do aktywnego pola — działa natychmiast z: Subiekt GT/nexo, Comarch ERP Optima/XL, WF-MAG, InsERT, PC-Market, SAP, Oracle, Comarch WMS. RS-232: ustaw port COM w aplikacji kasowej (baud rate 9600, 8-N-1). Bluetooth SPP: parowanie z komputerem PC lub terminalem Honeywell [CT32](/produkt/honeywell-ct32)/[CK67](/produkt/honeywell-ck67). Przetestuj odczyt na próbce każdego typu kodu (EAN-13, Code 128, QR, DataMatrix). Scanner Management Utility (SMU): zdalne wdrażanie firmware na flotę.',
+      },
+      {
+        name: 'Szkolenie operatorów i plan konserwacji',
+        text: 'Szkolenie (30 min): prawidłowy kąt skanowania (15–30° od prostego), optymalna odległość (zależy od modelu), wymiana baterii (modele BT), rozpoznawanie błędów „no read" (wyczyść okno, sprawdź jakość kodu). Konserwacja: czyszczenie okna skanera alkoholem izopropylowym (IPA 70%) co tydzień. Sprawdzenie kabla USB co miesiąc. Aktualizacja firmware co 6 miesięcy (EZConfig). Gwarancja Voyager/Xenon = 5 lat, Granit = 3 lata — bez dodatkowych kosztów serwisu. Serwis pogwarancyjny: TAKMA.',
+      },
+    ],
+  },
 }
