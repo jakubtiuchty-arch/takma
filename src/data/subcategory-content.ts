@@ -2857,4 +2857,361 @@ Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy)
       },
     ],
   },
+
+  // ============================================
+  // AKCESORIA DO SKANERÓW
+  // ============================================
+
+  'akcesoria-do-skanerow': {
+    definition: {
+      heading: 'Czym są akcesoria do skanerów kodów kreskowych?',
+      content: 'Akcesoria do skanerów kodów kreskowych to oryginalne komponenty i urządzenia peryferyjne zaprojektowane przez producentów (Honeywell, Newland) specjalnie do profesjonalnych skanerów 1D/2D. Obejmują pięć głównych grup: baterie zapasowe Li-ion (2 450–3 300 mAh) do pracy wielozmianowej, bazy ładująco-komunikacyjne Bluetooth z zasięgiem do 100 m, ładowarki wieloslotowe do zarządzania flotą baterii, podstawki hands-free z auto-sense do stałych stanowisk oraz kable komunikacyjne USB i RS-232. Każde akcesorium jest certyfikowane przez producenta i objęte pełną gwarancją.',
+    },
+    buyingGuide: {
+      heading: 'Jak dobrać akcesoria do skanera kodów kreskowych?',
+      items: [
+        'Kompatybilność z modelem — każda seria skanerów ma dedykowane akcesoria o różnych Part Number. Bateria BAT-SCN11 pasuje do Granit Ultra 2105i, ale NIE do starszego Granit XP 1991i (ten wymaga BAT-SCN05).',
+        'Baterie — dobierz pojemność do trybu pracy: BAT-SCN11 (3 300 mAh, 100 000 skanów) do intensywnej pracy magazynowej, BAT-SCN05 (2 450 mAh, 50 000 skanów) do standardowej pracy, BTY2333 (2 600 mAh, 16 h) do skanerów Newland BT.',
+        'Baza komunikacyjna — CCB23-100BT-07N zapewnia Bluetooth Class 1 (100 m zasięgu) + ładowanie kontaktowe. Kable komunikacyjne (USB/RS-232/KBW) sprzedawane oddzielnie.',
+        'Podstawka — Smartstand (STD23/STD20i) do kas i aptek, gooseneck (STD30i) gdy potrzebujesz elastycznego ustawienia kąta, składana (STD300) do stanowisk kontroli jakości.',
+        'Kable — USB (CBL-500-300-S00) do standardowego podłączenia, RS-232 (CBL-020-300-C00) do terminali POS i sterowników PLC z portem szeregowym.',
+      ],
+    },
+    expertAuthority: 'TAKMA od 25 lat dostarcza kompletne ekosystemy skanerów kodów kreskowych dla firm handlowych, magazynów i linii produkcyjnych w Polsce. Jako autoryzowany partner Honeywell i Newland doradzamy w doborze akcesoriów pod konkretne scenariusze — od pojedynczego stanowiska kasowego po flotę 50+ skanerów w centrum dystrybucyjnym. Każda rekomendacja opiera się na doświadczeniu z ponad 500 wdrożeń AutoID.',
+    technicalDeepDive: `Baterie Honeywell BAT-SCN11 (3 300 mAh / 12 Wh, 3,7 V) — do 100 000 skanów na jednym ładowaniu lub 14 h ciągłej pracy. Wymiary: 94,7 × 22,2 × 27,1 mm, waga ok. 137 g. Kompatybilna z Granit Ultra 2105i/2100i i Xenon Ultra 1962/1960.
+
+Baterie Honeywell BAT-SCN05 (2 450 mAh, 3,7 V) — smart battery z monitorowaniem stanu naładowania, do 50 000 skanów lub 14 h pracy. Dedykowana do Granit XP 1991i (XLR/SR/XR). UWAGA: BAT-SCN11 i BAT-SCN05 NIE są zamienne — różne złącza i elektronika.
+
+Baterie Newland BTY2333 (2 600 mAh Li-Ion) — mechanizm latch-release (szybka wymiana bez narzędzi), ponad 16 h pracy przy 1 skan/6 s. Do HR23/HR33 Bluetooth.
+
+Baza CCB23-100BT-07N — Bluetooth Class 1 (100 m w linii prostej), do 7 sparowanych skanerów, kontaktowe ładowanie drop-in, montaż desktop/pionowy/na pojeździe, obudowa anty-mikrobowa, IP65. Interfejsy USB/RS-232/KBW (kable oddzielnie).`,
+    useCases: [
+      {
+        title: 'Magazyn e-commerce — flota 10 skanerów Granit Ultra 2105i',
+        description: 'Baza CCB23-100BT-07N na każdym stanowisku pakowania + ładowarka 4-slot MB4-BAT-SCN11 + 10 zapasowych baterii BAT-SCN11 na drugą zmianę. Budżet akcesoriów: ~400–600 zł/skaner.',
+      },
+      {
+        title: 'Sieć handlowa — 5 skanerów Newland HR23 na sklep',
+        description: 'Podstawka STD23-33-SA na każdą kasę (tryb hands-free), bateria BTY2333 jako zapas, ładowarka CD3233-4C na zapleczu. Budżet: ~200–350 zł/skaner.',
+      },
+      {
+        title: 'Apteka — skaner Newland HR15 Wahoo',
+        description: 'Podstawka STD20i Smartstand do skanowania recept i kodów leków w trybie hands-free. Minimalne akcesoria, budżet: ~100–150 zł.',
+      },
+      {
+        title: 'Linia produkcyjna — skaner Granit XP 1991i',
+        description: 'Kabura HOLSTER-INDUSTRIAL na pasek operatora + 2 baterie BAT-SCN05 na zmianę. Skaner noszony na biodrze, szybki dostęp do skanowania DPM/kodów laserowych. Budżet: ~450–700 zł/skaner.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego producenci akcesoriów nie powiedzą',
+      items: [
+        {
+          title: 'BAT-SCN11 i BAT-SCN05 to RÓŻNE baterie',
+          text: 'Mimo podobnych nazw i tego samego producenta, baterie BAT-SCN11 (Granit Ultra) i BAT-SCN05 (Granit XP) mają różne złącza i elektronikę. Zamówienie niewłaściwej baterii = zwrot i opóźnienie. Zawsze sprawdzaj model skanera przed zamówieniem.',
+        },
+        {
+          title: 'Starsza baza CCB22 NIE pasuje do nowych skanerów Ultra',
+          text: 'Baza CCB22-100BT-03N (do Granit 1911i/1991i) NIE jest kompatybilna z serią Ultra 2105i/2100i. Nowe skanery wymagają bazy CCB23-100BT-07N z innym mechanizmem ładowania kontaktowego.',
+        },
+        {
+          title: 'Kabel RS-232 wymaga zewnętrznego zasilacza',
+          text: 'W przeciwieństwie do USB, port RS-232 NIE zasila skanera. Przy podłączeniu kablem CBL-020-300-C00 potrzebujesz dodatkowego zasilacza sieciowego — bez niego skaner się nie włączy.',
+        },
+      ],
+    },
+    faq: [
+      { question: 'Jakie akcesoria są dostępne do skanerów Honeywell Granit Ultra 2105i?', answer: 'Do Granit Ultra 2105i: bateria BAT-SCN11 (3 300 mAh), baza ładująco-komunikacyjna CCB23-100BT-07N (Bluetooth 100 m), ładowarka 4-slot MB4-BAT-SCN11, kabel USB CBL-500-300-S00 (3 m), kabel RS-232 CBL-020-300-C00 (3 m), kabura HOLSTER-INDUSTRIAL.' },
+      { question: 'Czy bateria BAT-SCN11 pasuje do skanera Granit XP 1991i?', answer: 'Nie — BAT-SCN11 jest dedykowana do serii Granit Ultra (2105i, 2100i) i Xenon Ultra (1962, 1960). Do Granit XP 1991i potrzebujesz baterii BAT-SCN05 (2 450 mAh). Baterie mają różne złącza i nie są zamienne.' },
+      { question: 'Ile baterii zapasowych potrzebuję na skaner bezprzewodowy?', answer: 'Zależy od trybu pracy: przy 1 zmianie (8 h) — bateria w skanerze wystarczy, 0 zapasowych. Przy 2 zmianach — 1 zapasowa na skaner (ładuje się między zmianami). Przy 3 zmianach (24/7) — 2 zapasowe. Dla floty 10+ skanerów polecamy ładowarkę 4-slot (MB4-BAT-SCN11 lub CD3233-4C).' },
+      { question: 'Jaką podstawkę wybrać do skanera Newland?', answer: 'STD23-33-SA (Smartstand) — do HR23 i HR33, regulowany kąt, auto-sense. STD30i (gooseneck) — elastyczne ramię, do HR11x/HR2x/HR3x. STD20i (Smartstand) — dedykowana do HR15 Wahoo. STD300 (składana) — do przemysłowego NVH300 Angler. Wszystkie wspierają tryb auto-sense (skanowanie bez przycisku).' },
+      { question: 'Czy baza CCB23-100BT-07N wymaga kabla USB?', answer: 'Tak — baza CCB23 to stacja ładująco-komunikacyjna, ale kable komunikacyjne (USB, RS-232, KBW) sprzedawane są oddzielnie. Do podłączenia bazy do komputera najczęściej używa się kabla USB CBL-500-300-S00 (3 m).' },
+      { question: 'Jaka jest różnica między kablem USB a RS-232 do skanera?', answer: 'USB (CBL-500-300-S00): prosty 3 m, zasilanie 5V z hosta, plug-and-play. RS-232 (CBL-020-300-C00): krętny 3 m, DB9 Female, wymaga zewnętrznego zasilacza. USB do 90% zastosowań (komputery, kasy POS). RS-232 do starszych terminali POS, sterowników PLC i komputerów przemysłowych.' },
+      { question: 'Gdzie kupić oryginalne akcesoria do skanerów Honeywell i Newland?', answer: 'TAKMA jest autoryzowanym partnerem Honeywell i Newland w Polsce — oferujemy pełen asortyment oryginalnych akcesoriów w cenach B2B netto z dostawą 24–48 h. Gwarantujemy autentyczność i pełną gwarancję producenta na każdy produkt.' },
+    ],
+    comparisons: [
+      { title: 'Baterie Honeywell BAT-SCN11 vs BAT-SCN05', content: 'BAT-SCN11 (3 300 mAh, 12 Wh): do Granit Ultra 2105i/2100i i Xenon Ultra, do 100 000 skanów. BAT-SCN05 (2 450 mAh): smart battery do Granit XP 1991i, do 50 000 skanów. BAT-SCN11 ma wyższą pojemność, ale NIE jest kompatybilna z Granit XP. Zawsze sprawdzaj model skanera.' },
+      { title: 'Podstawka Smartstand vs gooseneck', content: 'Smartstand (STD23/STD20i): stabilna, regulowany kąt od pionu do poziomu, idealna na stałe stanowiska kasowe. Gooseneck (STD30i): elastyczne ramię, pełna swoboda ustawienia kąta i odległości, lepsza gdy potrzebujesz nietypowej pozycji skanera (np. nad taśmą produkcyjną).' },
+      { title: 'Kabel USB vs RS-232 do skanera', content: 'USB (CBL-500-300-S00): prosty kabel 3 m, zasilanie z hosta, plug-and-play, do 90% zastosowań. RS-232 (CBL-020-300-C00): krętny 3 m, wymaga zasilacza, do starszych terminali POS i sterowników PLC. Cena podobna (~70–73 zł netto). Przy nowych instalacjach zawsze wybieraj USB.' },
+    ],
+    howToSteps: [
+      { name: 'Zidentyfikuj model skanera', text: 'Sprawdź dokładny Part Number skanera (np. 2105i-BF, 1991iXLR, HR23-S0) — akcesoria są dedykowane do konkretnych modeli i serii.' },
+      { name: 'Określ tryb pracy', text: 'Czy skaner pracuje na stałym stanowisku (kasa, apteka) czy mobilnie (magazyn, produkcja)? To determinuje wybór między podstawką a kaburą, i ile baterii zapasowych potrzebujesz.' },
+      { name: 'Dobierz baterię i ładowanie', text: 'Przy pracy bezprzewodowej wielozmianowej — 1 zapasowa bateria na skaner + ładowarka 4-slot do rotacyjnego zarządzania. Przy 1 zmianie — wystarczy baza ładująca CCB23.' },
+      { name: 'Wybierz podstawkę lub kaburę', text: 'Stałe stanowisko → podstawka Smartstand/gooseneck z auto-sense. Praca mobilna → kabura HOLSTER-INDUSTRIAL na pasek.' },
+      { name: 'Zamów kabel komunikacyjny', text: 'USB do standardowego podłączenia (komputer, kasa), RS-232 do urządzeń z portem szeregowym. Kable do bazy CCB23 sprzedawane oddzielnie.' },
+    ],
+  },
+
+  'baterie-do-skanerow': {
+    definition: {
+      heading: 'Baterie zapasowe do skanerów kodów kreskowych',
+      content: 'Oryginalne baterie Li-ion do bezprzewodowych skanerów Honeywell i Newland. Zapasowe akumulatory umożliwiają pracę wielozmianową bez przestojów — podczas gdy jedna bateria pracuje w skanerze, druga ładuje się w ładowarce. Każda bateria jest certyfikowana przez producenta i objęta gwarancją 12 miesięcy.',
+    },
+    buyingGuide: {
+      heading: 'Jak dobrać baterię do skanera?',
+      items: [
+        'Sprawdź model skanera — BAT-SCN11 do Granit Ultra 2105i/2100i i Xenon Ultra, BAT-SCN05 do Granit XP 1991i, BTY2333 do Newland HR23/HR33 BT. Baterie NIE są zamienne między seriami.',
+        'Oblicz potrzebną liczbę — 1 zmiana: 0 zapasowych, 2 zmiany: 1 na skaner, 3 zmiany (24/7): 2 na skaner.',
+        'Rozważ ładowarkę wieloslotową — przy flocie 5+ skanerów ładowarka 4-slot (MB4-BAT-SCN11 lub CD3233-4C) jest efektywniejsza niż ładowanie w bazach.',
+      ],
+    },
+    expertAuthority: 'TAKMA dostarcza oryginalne baterie z gwarancją producenta. Doradzamy w doborze ilości baterii pod model pracy klienta — od pojedynczego stanowiska po flotę 100+ skanerów w operacjach 24/7.',
+    technicalDeepDive: `Honeywell BAT-SCN11: Li-ion 3 300 mAh / 3,7 V / 12 Wh. Do 100 000 skanów lub 14 h ciągłej pracy. Wymiary 94,7 × 22,2 × 27,1 mm, waga ~137 g. Czas ładowania w bazie CCB23: ok. 4 h.
+
+Honeywell BAT-SCN05: Li-ion 2 450 mAh / 3,7 V. Smart battery z chipem diagnostycznym — monitorowanie SoH i cykli. Do 50 000 skanów lub 14 h pracy. Dedykowana do Granit XP 1991i.
+
+Newland BTY2333: Li-Ion 2 600 mAh. Mechanizm latch-release — wymiana bez narzędzi w 3 sekundy. Ponad 16 h pracy przy 1 skan/6 s. Ładowanie w CD3233-4C lub w stacji dokującej skanera.`,
+    useCases: [
+      {
+        title: 'Magazyn 2-zmianowy — 10 skanerów Granit Ultra 2105i',
+        description: '10 baterii BAT-SCN11 w skanerach + 10 zapasowych w ładowarce MB4-BAT-SCN11 (3 ładowarki × 4 sloty). Wymiana na przerwie między zmianami.',
+      },
+      {
+        title: 'Sieć sklepów — 20 skanerów Newland HR23 BT',
+        description: '20 baterii BTY2333 w skanerach + 10 zapasowych (1 na 2 skanery). Ładowarki CD3233-4C na zapleczu każdego sklepu.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego nie powiedzą o bateriach do skanerów',
+      items: [
+        {
+          title: 'Zamienniki mogą uszkodzić skaner',
+          text: 'Nieoryginalne baterie nie mają certyfikacji producenta — brak kontroli temperatury ładowania może prowadzić do przegrzania i uszkodzenia portu ładowania skanera, co unieważnia gwarancję.',
+        },
+        {
+          title: 'Smart battery BAT-SCN05 monitoruje degradację',
+          text: 'BAT-SCN05 ma wbudowany chip diagnostyczny — skaner wyświetla stan zdrowia baterii (SoH) i liczbę cykli. Pozwala to planować wymianę zanim spadek pojemności wpłynie na czas pracy.',
+        },
+      ],
+    },
+    faq: [
+      { question: 'Czy bateria BAT-SCN11 pasuje do wszystkich skanerów Honeywell?', answer: 'Nie — BAT-SCN11 pasuje tylko do: Granit Ultra 2105i, Granit Ultra 2100i, Xenon Ultra 1962, Xenon Ultra 1960. Nie pasuje do Granit XP 1991i (wymaga BAT-SCN05) ani do starszych modeli (Voyager 1202g, Xenon 1902 — wymagają BAT-SCN01A).' },
+      { question: 'Ile cykli ładowania wytrzymuje bateria?', answer: 'Oryginalne baterie Honeywell: 500–1000 pełnych cykli do 80% pojemności nominalnej. Newland BTY2333: ok. 500 cykli. Przy 1 cyklu dziennie to 2–3 lata eksploatacji.' },
+      { question: 'Jak szybko ładuje się bateria BAT-SCN11?', answer: 'W bazie CCB23-100BT-07N: ok. 4 h do pełnego naładowania. W ładowarce 4-slot MB4-BAT-SCN11: ok. 4 h (wszystkie 4 baterie jednocześnie).' },
+    ],
+    comparisons: [
+      { title: 'BAT-SCN11 vs BAT-SCN05 vs BTY2333', content: 'BAT-SCN11 (3 300 mAh): najwyższa pojemność, 100k skanów, do Granit Ultra. BAT-SCN05 (2 450 mAh): smart battery, 50k skanów, do Granit XP. BTY2333 (2 600 mAh): latch-release, 16h pracy, do Newland HR23/HR33 BT. Wybór zależy od modelu skanera — baterie NIE są zamienne.' },
+    ],
+    howToSteps: [
+      { name: 'Sprawdź model skanera', text: 'Odczytaj Part Number z etykiety na skanerze. Granit Ultra 2105i → BAT-SCN11. Granit XP 1991i → BAT-SCN05. Newland HR23/HR33 BT → BTY2333.' },
+      { name: 'Oblicz liczbę baterii', text: '1 zmiana: 0 zapasowych. 2 zmiany: 1 na skaner. 3 zmiany: 2 na skaner. Dodaj 10% zapasu na wymianę zużytych.' },
+      { name: 'Dobierz ładowarkę', text: 'Do 4 skanerów: ładowanie w bazach. 5+ skanerów: ładowarka 4-slot (MB4-BAT-SCN11 lub CD3233-4C) jest bardziej efektywna.' },
+    ],
+  },
+
+  'stacje-ladowarki-skanerow': {
+    definition: {
+      heading: 'Stacje ładujące i ładowarki do skanerów kodów kreskowych',
+      content: 'Bazy ładująco-komunikacyjne Bluetooth i ładowarki wieloslotowe do skanerów bezprzewodowych Honeywell i Newland. Baza CCB23 łączy funkcję ładowania skanera z komunikacją Bluetooth (zasięg 100 m). Ładowarki 4-slot (MB4-BAT-SCN11, CD3233-4C) umożliwiają jednoczesne ładowanie 4 baterii — kluczowe w operacjach wielozmianowych z flotą skanerów.',
+    },
+    buyingGuide: {
+      heading: 'Jak dobrać stację ładującą do skanera?',
+      items: [
+        'Baza CCB23-100BT-07N — gdy potrzebujesz ładowania + komunikacji BT na jednym stanowisku (np. wózek widłowy). Ładuje skaner kontaktowo, zapewnia Bluetooth 100 m.',
+        'Ładowarka 4-slot — gdy zarządzasz flotą baterii (5+ skanerów, 2+ zmiany). Rotacyjne ładowanie baterii eliminuje przestoje.',
+        'Kable do bazy CCB23 — USB lub RS-232 sprzedawane oddzielnie. Zamów razem z bazą, żeby nie czekać na drugą dostawę.',
+      ],
+    },
+    expertAuthority: 'TAKMA wdraża systemy skanerów Honeywell w magazynach i centrach dystrybucyjnych od 25 lat. Pomagamy zaplanować infrastrukturę ładowania pod konkretny model pracy — od 1 stanowiska po flotę 50+ skanerów.',
+    technicalDeepDive: `Honeywell CCB23-100BT-07N: Bluetooth Class 1 (100 m LOS), do 7 sparowanych skanerów, kontaktowe ładowanie drop-in, montaż desktop/pionowy/na pojeździe, obudowa anty-mikrobowa, IP65. Interfejsy: USB, RS-232, Keyboard Wedge (kable oddzielnie). Czas ładowania skanera: ok. 4 h.
+
+Honeywell MB4-BAT-SCN11: 4 sloty na baterie BAT-SCN11, jednoczesne ładowanie w ok. 4 h, diody LED statusu per slot, montaż biurkowy. Zasilacz w zestawie.
+
+Newland CD3233-4C: 4 sloty na baterie BTY2333 (2 600 mAh), diody LED statusu, kompaktowa obudowa desktop.`,
+    useCases: [
+      {
+        title: 'Centrum dystrybucyjne — bazy na wózkach widłowych',
+        description: 'CCB23-100BT-07N zamontowana na każdym wózku — skaner ładuje się podczas jazdy, Bluetooth utrzymuje komunikację z systemem WMS. Ładowarka 4-slot MB4-BAT-SCN11 na zapleczu do zapasowych baterii.',
+      },
+      {
+        title: 'Sieć handlowa — rotacyjne ładowanie baterii Newland',
+        description: 'CD3233-4C na zapleczu sklepu — 4 baterie BTY2333 ładują się nocą, rano gotowe do wymiany. Eliminuje potrzebę kupowania bazy do każdego skanera.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego nie powiedzą o ładowarkach do skanerów',
+      items: [
+        {
+          title: 'Kable do bazy CCB23 sprzedawane oddzielnie',
+          text: 'Baza CCB23-100BT-07N NIE zawiera kabla komunikacyjnego w zestawie. Bez kabla USB (CBL-500-300-S00) lub RS-232 baza ładuje skaner, ale nie komunikuje się z komputerem. Zamów kabel razem z bazą.',
+        },
+        {
+          title: 'Ładowarka 4-slot jest tańsza niż 4 bazy',
+          text: 'MB4-BAT-SCN11 (~887 zł) ładuje 4 baterie jednocześnie. Cztery bazy CCB23 to 4 × 1 179 zł = 4 716 zł. Przy zarządzaniu bateriami (nie skanerami) ładowarka 4-slot jest 5× tańsza.',
+        },
+      ],
+    },
+    faq: [
+      { question: 'Czy baza CCB23 jest kompatybilna ze starszymi skanerami Honeywell?', answer: 'Nie — CCB23-100BT-07N jest przeznaczona dla serii Granit Ultra (2105i, 2100i). Starsze skanery Granit 1911i/1991i wymagają bazy CCB22-100BT-03N (inna konstrukcja mechaniczna).' },
+      { question: 'Ile baterii ładuje jednocześnie MB4-BAT-SCN11?', answer: '4 baterie BAT-SCN11 jednocześnie w ok. 4 godzin. Diody LED wskazują status ładowania każdego slotu (ładowanie/pełne/błąd).' },
+      { question: 'Czy ładowarka CD3233-4C ładuje baterie z skanerów Honeywell?', answer: 'Nie — CD3233-4C ładuje wyłącznie baterie Newland BTY2333 do skanerów HR23/HR33 Bluetooth. Baterie Honeywell (BAT-SCN11, BAT-SCN05) wymagają ładowarki MB4-BAT-SCN11 lub bazy CCB23.' },
+    ],
+    comparisons: [
+      { title: 'Baza CCB23 vs ładowarka 4-slot MB4', content: 'CCB23 (~1 179 zł): ładowanie skanera + komunikacja BT 100 m, montaż na pojeździe, 1 skaner na bazę. MB4-BAT-SCN11 (~887 zł): ładowanie 4 baterii jednocześnie, bez komunikacji, na zapleczu. Przy 1–3 skanerach: bazy CCB23. Przy 5+ skanerach: ładowarka 4-slot + bazy na kluczowych stanowiskach.' },
+    ],
+    howToSteps: [
+      { name: 'Określ liczbę skanerów i zmian', text: 'Policz ile skanerów bezprzewodowych pracuje jednocześnie i na ile zmian. To determinuje czy potrzebujesz baz (każdy skaner) czy ładowarki baterii (rotacja).' },
+      { name: 'Wybierz bazę lub ładowarkę', text: 'Baza CCB23 — gdy potrzebujesz ładowania + BT na stanowisku. Ładowarka 4-slot — gdy zarządzasz flotą baterii między zmianami.' },
+      { name: 'Zamów kable komunikacyjne', text: 'Do bazy CCB23: kabel USB (CBL-500-300-S00) lub RS-232 (CBL-020-300-C00) — sprzedawane oddzielnie.' },
+    ],
+  },
+
+  'podstawki-do-skanerow': {
+    definition: {
+      heading: 'Podstawki do skanerów kodów kreskowych',
+      content: 'Podstawki Newland z trybem auto-sense umożliwiają pracę hands-free — skaner automatycznie odczytuje kod po zbliżeniu produktu, bez naciskania przycisku. Dostępne w trzech wariantach: Smartstand (regulowany kąt), gooseneck (elastyczne ramię) i składana (kompaktowa). Idealne na stałe stanowiska kasowe, w aptekach, bibliotekach i na stanowiskach kontroli jakości.',
+    },
+    buyingGuide: {
+      heading: 'Jak dobrać podstawkę do skanera Newland?',
+      items: [
+        'STD23-33-SA (Smartstand) — do HR23 i HR33, regulowany kąt od pionu do poziomu, montaż na blacie. Najlepsza na kasy i apteki.',
+        'STD30i (gooseneck) — elastyczne ramię, do HR11x/HR2x/HR3x, precyzyjne ustawienie kąta. Do stanowisk z nietypową geometrią.',
+        'STD20i (Smartstand) — dedykowana do HR15 Wahoo, składana, kompaktowa. Do małych stanowisk.',
+        'STD300 (składana) — do przemysłowego NVH300 Angler DP, kontrola jakości i weryfikacja DPM.',
+      ],
+    },
+    expertAuthority: 'TAKMA jako autoryzowany partner Newland w Polsce pomaga dobrać podstawki pod konkretne stanowisko pracy klienta — od kasy w aptece po linię kontroli jakości w fabryce.',
+    technicalDeepDive: `Tryb auto-sense: wbudowany czujnik podczerwieni wykrywa zbliżenie przedmiotu na odległość 5–15 cm i automatycznie aktywuje skanowanie. Bez naciskania przycisku — operator trzyma obiema rękami produkt lub receptę.
+
+STD23-33-SA: regulowany kąt 0°–90° (od poziomu do pionu), montaż na blacie, waga ~200 g, kompatybilna z HR23 Dorada i HR33 Dorada II.
+
+STD30i: gooseneck z elastycznym ramieniem o długości ~20 cm, pełna swoboda ustawienia w 3 osiach, montaż na blacie, kompatybilna z HR11x, HR2x, HR3x.
+
+STD20i: składana konstrukcja z regulowanym kątem, dedykowana do HR15 Wahoo, montaż na blacie.
+
+STD300: podstawka składana do NVH300 Angler DP (skaner przemysłowy DPM), stabilna konstrukcja do stanowisk kontroli jakości.`,
+    useCases: [
+      {
+        title: 'Apteka — skanowanie recept i kodów leków',
+        description: 'STD23-33-SA lub STD20i na ladzie apteki — farmaceuta zbliża opakowanie leku do skanera, kod odczytywany automatycznie. Obie ręce wolne do obsługi klienta.',
+      },
+      {
+        title: 'Kasa POS w sklepie — tryb hands-free',
+        description: 'STD23-33-SA na kasie — kasjer przesuwa produkty przed skanerem HR23. Szybkość obsługi porównywalna ze skanerami prezentacyjnymi, ale w niższej cenie.',
+      },
+      {
+        title: 'Kontrola jakości — weryfikacja kodów DPM',
+        description: 'STD300 z NVH300 Angler na stanowisku inspekcji — operator zbliża część z kodem DPM do skanera, odczyt automatyczny. Stabilna pozycja skanera zapewnia powtarzalność.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego nie powiedzą o podstawkach',
+      items: [
+        {
+          title: 'Podstawka zastępuje droższy skaner prezentacyjny',
+          text: 'Skaner Newland HR23 (~350 zł) + podstawka STD23-33-SA (~80 zł) = ~430 zł. Dedykowany skaner prezentacyjny Zebra DS9308 to ~1 000 zł. Przy 10 stanowiskach kasowych oszczędzasz ~5 700 zł.',
+        },
+        {
+          title: 'Gooseneck lepszy nad taśmą produkcyjną',
+          text: 'Na linii produkcyjnej, gdzie produkty przesuwają się na różnych wysokościach, elastyczne ramię STD30i pozwala precyzyjnie ustawić kąt skanera. Smartstand ma stały punkt obrotu i nie zawsze dotrze.',
+        },
+      ],
+    },
+    faq: [
+      { question: 'Czy podstawka STD23-33-SA pasuje do skanera HR15 Wahoo?', answer: 'Nie — STD23-33-SA jest dedykowana do HR23 i HR33. Do HR15 Wahoo potrzebujesz podstawki STD20i. Każdy model skanera Newland ma dedykowaną podstawkę z dopasowanym uchwytem.' },
+      { question: 'Co to jest tryb auto-sense?', answer: 'Auto-sense to funkcja automatycznego skanowania — wbudowany czujnik podczerwieni wykrywa zbliżenie przedmiotu i aktywuje odczyt kodu bez naciskania przycisku. Operator zbliża produkt obiema rękami, skaner odczytuje kod automatycznie.' },
+      { question: 'Czy podstawki Newland pasują do skanerów Honeywell?', answer: 'Nie — podstawki STD23/STD30i/STD20i/STD300 są zaprojektowane wyłącznie pod skanery Newland. Do skanerów Honeywell Granit zalecamy kaburę HOLSTER-INDUSTRIAL (do noszenia na pasku) lub bazę CCB23 (stacja stacjonarna z ładowaniem).' },
+    ],
+    comparisons: [
+      { title: 'Smartstand vs gooseneck', content: 'Smartstand (STD23/STD20i): stabilna pozycja, regulowany kąt, kompaktowa — do kas, aptek, biur. Gooseneck (STD30i): elastyczne ramię, pełna swoboda ustawienia — do nietypowych stanowisk, linii produkcyjnych, stanowisk z ograniczoną przestrzenią. Oba wspierają auto-sense.' },
+    ],
+    howToSteps: [
+      { name: 'Sprawdź model skanera Newland', text: 'HR23/HR33 → STD23-33-SA. HR15 Wahoo → STD20i. HR11x/HR2x/HR3x → STD30i. NVH300 → STD300.' },
+      { name: 'Wybierz typ mocowania', text: 'Smartstand na blat (kasa, apteka). Gooseneck na blat z elastycznym ramieniem (produkcja, niestandardowe stanowisko).' },
+      { name: 'Skonfiguruj auto-sense', text: 'Po zamontowaniu skanera w podstawce, tryb auto-sense aktywuje się automatycznie. Czułość i zasięg detekcji konfiguruje się przez kody programujące skanera.' },
+    ],
+  },
+
+  'kable-do-skanerow': {
+    definition: {
+      heading: 'Kable komunikacyjne do skanerów kodów kreskowych',
+      content: 'Oryginalne kable USB i RS-232 do skanerów Honeywell. Kabel USB CBL-500-300-S00 (prosty, 3 m) — uniwersalne podłączenie do komputera lub kasy POS z zasilaniem z portu hosta. Kabel RS-232 CBL-020-300-C00 (krętny, 3 m) — do starszych terminali POS, sterowników PLC i komputerów przemysłowych z portem szeregowym.',
+    },
+    buyingGuide: {
+      heading: 'Jak dobrać kabel do skanera Honeywell?',
+      items: [
+        'USB (CBL-500-300-S00) — do 90% zastosowań: komputer, kasa POS, terminal z USB. Zasilanie 5V z hosta, plug-and-play.',
+        'RS-232 (CBL-020-300-C00) — do urządzeń z portem szeregowym: starsze terminale POS, sterowniki PLC, komputery przemysłowe. Wymaga zewnętrznego zasilacza skanera.',
+        'Do bazy CCB23 — kabel USB lub RS-232 sprzedawany oddzielnie. Bez kabla baza ładuje, ale nie komunikuje.',
+      ],
+    },
+    expertAuthority: 'TAKMA od 25 lat wdraża systemy skanerów Honeywell i doradza w doborze kabli pod konkretne interfejsy i środowiska pracy.',
+    technicalDeepDive: `CBL-500-300-S00: USB Type A, prosty (straight), 3 m (9,8 ft), zasilanie 5V host power, czarny. Kompatybilny z szeroką gamą skanerów: Granit Ultra 2100i, Granit XP 1990i/1991i, Granit 1980i/1910i, Xenon 1900g/1902g, Voyager 1200g/1250g, Hyperion 1300g.
+
+CBL-020-300-C00: RS-232, krętny (coiled), 3 m (9,8 ft), DB9 Female, sygnały 5V. Kabel krętny zapobiega plątaniu i rozciąga się elastycznie. Wymaga zewnętrznego zasilacza — port RS-232 NIE zasila skanera. Kompatybilność identyczna z CBL-500-300-S00.`,
+    useCases: [
+      {
+        title: 'Stanowisko kasowe — USB',
+        description: 'CBL-500-300-S00 do podłączenia skanera Granit 2100i lub Voyager 1470g do komputera kasowego. Plug-and-play, zasilanie z USB.',
+      },
+      {
+        title: 'Linia produkcyjna — RS-232',
+        description: 'CBL-020-300-C00 do podłączenia skanera Granit XP 1990i do sterownika PLC z portem szeregowym. Kabel krętny nie plącze się na stanowisku.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Co warto wiedzieć o kablach do skanerów',
+      items: [
+        {
+          title: 'RS-232 wymaga zasilacza',
+          text: 'Port RS-232 nie dostarcza zasilania skanerowi (w przeciwieństwie do USB). Przy podłączeniu kablem CBL-020-300-C00 musisz osobno zasilić skaner zasilaczem sieciowym.',
+        },
+        {
+          title: 'Krętny kabel RS-232 oszczędza miejsce',
+          text: 'Kabel CBL-020-300-C00 jest krętny (coiled) — w spoczynku ma ~50 cm, rozciąga się do 3 m. Nie plącze się na stanowisku i nie wchodzi pod nogi operatora.',
+        },
+      ],
+    },
+    faq: [
+      { question: 'Czy kabel USB CBL-500-300-S00 pasuje do skanera Voyager 1470g?', answer: 'Tak — CBL-500-300-S00 jest uniwersalnym kablem USB do większości skanerów Honeywell, w tym Voyager XP 1470g, Granit Ultra 2100i, Granit XP 1990i, Xenon Ultra 1960 i wielu innych.' },
+      { question: 'Dlaczego skaner nie działa po podłączeniu kablem RS-232?', answer: 'Port RS-232 NIE dostarcza zasilania. Podłącz zewnętrzny zasilacz sieciowy do skanera. Przy kablu USB (CBL-500-300-S00) ten problem nie występuje — USB zasila skaner z portu hosta.' },
+    ],
+    comparisons: [
+      { title: 'USB vs RS-232', content: 'USB (CBL-500-300-S00): prosty 3 m, zasilanie z hosta, plug-and-play, ~72 zł. RS-232 (CBL-020-300-C00): krętny 3 m, wymaga zasilacza, ~73 zł. Cena praktycznie identyczna. Przy nowych instalacjach zawsze wybieraj USB — prostsze i nie wymaga zasilacza. RS-232 tylko gdy urządzenie docelowe nie ma USB.' },
+    ],
+    howToSteps: [
+      { name: 'Sprawdź port urządzenia docelowego', text: 'USB Type A → CBL-500-300-S00. DB9 (RS-232) → CBL-020-300-C00. Jeśli urządzenie ma oba porty — wybierz USB (prostsze).' },
+      { name: 'Zamów zasilacz przy RS-232', text: 'Przy kablu RS-232 musisz osobno zamówić zasilacz sieciowy do skanera. Przy USB zasilacz nie jest potrzebny.' },
+    ],
+  },
+
+  'etui-kabury-skanerow': {
+    definition: {
+      heading: 'Etui i kabury do skanerów kodów kreskowych',
+      content: 'Kabury przemysłowe do skanerów Honeywell Granit — noszenie skanera na pasku, obie ręce wolne do pracy. Honeywell HOLSTER-INDUSTRIAL z zintegrowanym klipsem na pasek zapewnia pewne mocowanie skanera na biodrze. Zaprojektowana do środowisk magazynowych i produkcyjnych.',
+    },
+    buyingGuide: {
+      heading: 'Jak dobrać kaburę do skanera?',
+      items: [
+        'HOLSTER-INDUSTRIAL — do skanerów Granit Ultra 2105i, 2100i, Granit XP 1990i, 1991i, 1980i, 1981i. Zintegrowany klips na pasek.',
+        'Dobierz do środowiska — w magazynie kabura na pasek daje szybki dostęp do skanera przy kompletowaniu zamówień i obsłudze wózka widłowego.',
+      ],
+    },
+    expertAuthority: 'TAKMA od 25 lat wyposaża magazyny i centra logistyczne w kompletne zestawy skanerów z akcesoriami ergonomicznymi.',
+    technicalDeepDive: 'Honeywell HOLSTER-INDUSTRIAL: kabura przemysłowa na pasek z zintegrowanym klipsem. Pasuje do skanerów Granit Ultra 2105i (bezprzewodowy), Granit Ultra 2100i, Granit XP 1990i/1991i, Granit 1980i/1981i. Czarna, trwała konstrukcja zaprojektowana do intensywnego użytkowania w środowiskach przemysłowych.',
+    useCases: [
+      {
+        title: 'Magazyn — kompletowanie zamówień',
+        description: 'Operator nosi skaner na biodrze, skanuje kody na półkach, odkłada skaner do kabury i przenosi towar obiema rękami. Szybki dostęp, wolne ręce między skanowaniami.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Praktyczne porady dotyczące kabur',
+      items: [
+        {
+          title: 'Kabura chroni skaner przed upadkami',
+          text: 'Skaner noszony w kaburze na biodrze jest zabezpieczony przed przypadkowym upuszczeniem z wysokości stołu roboczego (80–120 cm). Mniejsze ryzyko uszkodzenia niż odkładanie na blat.',
+        },
+      ],
+    },
+    faq: [
+      { question: 'Czy kabura HOLSTER-INDUSTRIAL pasuje do Voyager 1470g?', answer: 'Kabura HOLSTER-INDUSTRIAL jest zaprojektowana do większych skanerów serii Granit (pistoletowa obudowa). Voyager 1470g jest mniejszy i może się nie trzymać pewnie. Do Voyagera zalecamy kabel USB 3 m i odkładanie na biurko lub podstawkę.' },
+    ],
+    comparisons: [],
+    howToSteps: [
+      { name: 'Sprawdź kompatybilność', text: 'HOLSTER-INDUSTRIAL pasuje do: Granit Ultra 2105i, 2100i, Granit XP 1990i, 1991i, 1980i, 1981i.' },
+      { name: 'Załóż kaburę na pasek', text: 'Przełóż klips kabury przez pasek operatora. Zintegrowany mechanizm klipsa zapewnia pewne mocowanie bez dodatkowych pasków.' },
+    ],
+  },
 }
