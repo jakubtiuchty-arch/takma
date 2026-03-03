@@ -1151,4 +1151,205 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       },
     ],
   },
+  'terminale-honeywell': {
+    definition: {
+      heading: 'Terminale mobilne Honeywell — platforma Mobility Edge i technologia FlexRange',
+      content:
+        'Honeywell Technologies (dawniej Honeywell Sensing & Safety Technologies, od 2025 roku Solstice, ale marka Honeywell na urządzeniach enterprise) to drugi co do wielkości producent terminali mobilnych klasy enterprise na świecie, z ponad 20-letnim doświadczeniem w segmencie kolektorów danych. Terminale mobilne Honeywell serii CT (Compact Touch — [CT32](/produkt/honeywell-ct32), [CT47](/produkt/honeywell-ct47), [CT70](/produkt/honeywell-ct70)) oraz CK (Compact Keyboard — [CK62](/produkt/honeywell-ck62), [CK67](/produkt/honeywell-ck67)) to wytrzymałe komputery przenośne z systemem Android, certyfikowane MIL-STD-810H, przeznaczone do pracy w magazynach, centrach logistycznych, na liniach produkcyjnych, w chłodniach (-30°C) i w terenie. Kluczowa przewaga technologiczna Honeywell to platforma Mobility Edge — wspólny hardware (procesory Qualcomm), wspólny BSP (Board Support Package) i gwarantowane aktualizacje Android przez 4–5 generacji systemu operacyjnego. Dzięki temu firma wdrażająca flotę terminali Honeywell testuje aplikację raz na jednej wersji platformy — i ma pewność, że działa identycznie na wszystkich modelach z tej samej generacji. Druga kluczowa technologia to skanery FlexRange i FlexRange XLR — patentowane przez Honeywell rozwiązanie z podwójnym trybem pracy: precyzyjny odczyt małych kodów 2D z bliska (8 cm) + daleki zasięg do 24 metrów z jednym skanerem, bez przełączania trybu. FlexRange XLR (dostępny w [CK67](/produkt/honeywell-ck67), [CK62](/produkt/honeywell-ck62) i [CT47](/produkt/honeywell-ct47)) to odpowiedź Honeywell na Zebra SE58 Extended Range — przy niższej cenie i dostępności w większej liczbie formfactorów. Oprogramowanie Operational Intelligence monitoruje stan urządzeń, baterii i sieci w czasie rzeczywistym, a SmartTalk UC zapewnia komunikację Push-to-Talk na terminalach. TAKMA oferuje kompletną linię terminali Honeywell z doradztwem wdrożeniowym, porównaniem TCO z [Zebrą](/terminale-mobilne-zebra) i serwisem w Polsce.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać terminal mobilny Honeywell? 7 kryteriów',
+      items: [
+        'Dotykowy czy z klawiaturą — seria CT (dotykowa): [CT32](/produkt/honeywell-ct32) (6", od 3 389 zł), [CT47](/produkt/honeywell-ct47) (5,5", od 7 901 zł), [CT70](/produkt/honeywell-ct70) (6", od 6 168 zł) — lekkie (269–314 g), intuicyjne, szybki onboarding pracowników. Seria CK (klawiatura gun): [CK62](/produkt/honeywell-ck62) (4", od 5 759 zł, 440 g), [CK67](/produkt/honeywell-ck67) (4", od 7 765 zł, 516 g) — klawiatura fizyczna 3–5× szybsza niż wirtualna przy wpisywaniu numerów partii, ilości i kodów lokalizacji.',
+        'Zasięg skanera — Standard Range S0703: do 50 cm, kasowy, ladowy, kompletacja bliska (CT32, CK62 base). FlexRange S0803: do 5 m, podwójny tryb bliski+daleki, regały średniej wysokości (CT47, CT70). FlexRange XLR S0E03: do 24 m, magazyny wysokiego składowania — skanowanie kodów na najwyższych regałach bez drabiny ([CK67](/produkt/honeywell-ck67), [CK62](/produkt/honeywell-ck62) XLR, [CT47](/produkt/honeywell-ct47) XLR). To unikalna przewaga Honeywell — FlexRange XLR w 3 formfactorach.',
+        'Łączność — Wi-Fi 6E (802.11ax, tri-band 2,4/5/6 GHz): standard w [CT32](/produkt/honeywell-ct32), [CK67](/produkt/honeywell-ck67), [CK62](/produkt/honeywell-ck62) — wystarczający do pracy w budynku z siecią bezprzewodową. Wi-Fi 7 (802.11be): dostępny w [CT70](/produkt/honeywell-ct70) — najniższe opóźnienia, MLO. 5G + GPS: warianty X1N w CT47, CT70, CK67 — do kurierów, serwisantów, yard management.',
+        'Bateria i praca wielozmianowa — [CT32](/produkt/honeywell-ct32): 4 500 mAh (~12 h). [CT47](/produkt/honeywell-ct47): 4 775 / 7 692 mAh (~10–16 h). [CT70](/produkt/honeywell-ct70): pojemność zależy od wariantu, ładowanie Qi. [CK62](/produkt/honeywell-ck62) i [CK67](/produkt/honeywell-ck67): wspólna bateria 7 000 mAh (~28 h!). Wszystkie modele hot-swap — wymiana baterii bez wyłączania urządzenia w 5 sekund.',
+        'Wytrzymałość — [CT32](/produkt/honeywell-ct32): IP65/IP68, drop 1,8 m (z boot). [CT47](/produkt/honeywell-ct47): IP65+IP68, drop 3,0 m (z boot), 2 000 tumble. [CT70](/produkt/honeywell-ct70): IP65/IP68, drop 2,4 m, >3 000 tumble. [CK62](/produkt/honeywell-ck62): IP65/IP67, drop 1,8 m. [CK67](/produkt/honeywell-ck67): IP65+IP68, drop 2,4 m, 4 000 tumble — najwytrzymalszy Honeywell. Chłodnia -30°C: CK67 Cold Storage.',
+        'System Android i cykl życia — [CT32](/produkt/honeywell-ct32), [CK67](/produkt/honeywell-ck67), [CK62](/produkt/honeywell-ck62): Android 14→18 (4 generacje). [CT70](/produkt/honeywell-ct70): Android 15→19 (5 generacji, najdłuższe wsparcie). Honeywell Sentinel zapewnia comiesięczne łatki bezpieczeństwa OTA. Dla porównania: [Zebra TC501](/terminale-mobilne-zebra) — Android 15→19 (identyczne), [Newland](/terminale-newland) — min. 3 lata.',
+        'Budżet i TCO — Entry-level [CT32](/produkt/honeywell-ct32) (od 3 389 zł): retail, lekka inwentaryzacja. Mid-range [CK62](/produkt/honeywell-ck62) (od 5 759 zł): magazyn z klawiaturą, lekki gun. Premium [CT70](/produkt/honeywell-ct70) (od 6 168 zł): Wi-Fi 7, AI, najnowsza platforma. Ultra-rugged [CK67](/produkt/honeywell-ck67) (od 7 765 zł): ciężki magazyn, chłodnia, 24/7. Pamiętaj o kosztach akcesoriów (baterie, stacje, etuia) — to 15–25% wartości terminala.',
+      ],
+    },
+    expertAuthority:
+      'TAKMA jest autoryzowanym dystrybutorem terminali mobilnych Honeywell z ponad 25-letnim doświadczeniem w branży AutoID na polskim rynku. Wdrożyliśmy setki terminali w magazynach, centrach dystrybucji, sieciach handlowych i zakładach produkcyjnych. Jako certyfikowany serwis terminali mobilnych oferujemy nie tylko sprzedaż i doradztwo, ale także konfigurację urządzeń, szkolenie operatorów, integrację z WMS/ERP oraz serwis gwarancyjny i pogwarancyjny. Każda rekomendacja na tej stronie opiera się na realnym doświadczeniu z wdrożeń — znamy zarówno mocne strony terminali Honeywell (FlexRange XLR, Mobility Edge, bateria 28 h), jak i aspekty wymagające uwagi (mniejsza sieć serwisowa w PL vs Zebra). Pomagamy wybrać optymalny model niezależnie od marki — w ofercie mamy również [terminale Zebra](/terminale-mobilne-zebra) i [Newland](/terminale-newland).',
+    technicalDeepDive: `Pełna macierz terminali mobilnych Honeywell — od kompaktowego entry-level CT32 po ultra-rugged gun CK67 — pozwala dobrać urządzenie idealnie dopasowane do środowiska pracy, wymagań skanowania i budżetu. Zestawienie kluczowych parametrów i cen (netto, marzec 2026):\n\n• CT32 (entry-level, dotykowy): ekran 6" FHD, Qualcomm QCS4490 2,4 GHz, 6/128 lub 8/128 GB, skaner S0703 SR lub FlexRange S0803 (do 11 m), IP65/IP68, upadki 1,8 m (z boot), bateria 4 500 mAh hot-swap, Wi-Fi 6E, Android 14→18, od 3 389 zł netto — następca EDA52, najlżejszy terminal 6" w klasie (269 g), idealny do retailu, lekkiego magazynu.\n\n• CK62 (mid-range, klawiatura gun): ekran 4" WVGA, Qualcomm QCS4490, 6/128 GB, klawiatura 38 lub 47 kl., skaner SR lub FlexRange XLR (do 24 m), IP65/IP67, upadki 1,8 m, bateria 7 000 mAh hot-swap (28 h!), Wi-Fi 6E, BT 5.3, Android 14→18, od 5 759 zł netto — najlżejszy terminal gun w klasie (440 g), współdzielona bateria z CK67.\n\n• CT70 (premium, dotykowy): ekran 6" FHD+, Qualcomm QCM6690 2,9 GHz z NPU AI, 8/128 GB, skaner SR lub FlexRange, IP65/IP68, upadki 2,4 m, Wi-Fi 7 (802.11be!) + BT 6.0, ładowanie Qi, Android 15→19, od 6 168 zł netto — pierwszy enterprise z Wi-Fi 7, Gorilla Glass Victus, platforma najnowszej generacji.\n\n• CK67 (ultra-rugged, klawiatura gun): ekran 4" WVGA, Qualcomm QCS4490, 6/128 GB, klawiatura 30/38/42/51/53 kl., skaner SR lub FlexRange XLR (do 24 m!), IP65+IP68, upadki 2,4 m, 4 000 tumble, bateria 7 000 mAh (28 h), Wi-Fi 6E + opcja 5G+GPS, Android 14→18, od 7 765 zł netto — następca CK65, do ciężkich magazynów i chłodni (-30°C).\n\n• CT47 (premium, dotykowy 5G): ekran 5,5" FHD+, Qualcomm QCM6490 2,7 GHz, 6/128 GB, skaner SR/FlexRange/FlexRange XLR (do 24 m), IP65+IP68, upadki 3,0 m (z boot), bateria 4 775/7 692 mAh hot-swap, Wi-Fi 6E + 5G + GPS, Android z Mobility Edge, od 7 901 zł netto — do logistyki, transportu, field service.\nWszystkie terminale Honeywell z platformą Mobility Edge korzystają z tego samego BSP (Board Support Package) — aplikacja przetestowana na CT32 działa bez zmian na CK67. To kluczowa zaleta przy flotach mieszanych.`,
+    tcoComparisons: [
+      {
+        title: 'TCO 3 lata — Honeywell CK67 vs Zebra MC9400 (flota 20 szt.)',
+        variants: [
+          {
+            label: '20× Honeywell CK67',
+            items: [
+              { name: 'Terminale (7 765 zł × 20)', cost: '155 300 zł' },
+              { name: 'Baterie zapasowe (350 zł × 20)', cost: '7 000 zł' },
+              { name: 'Ładowarki 4-gn. (2 000 zł × 5)', cost: '10 000 zł' },
+              { name: 'Holstery + folie (250 zł × 20)', cost: '5 000 zł' },
+              { name: 'Serwis SVC 3 lata', cost: '~20 000 zł' },
+            ],
+            total: '~197 300 zł (~274 zł/mies./terminal)',
+          },
+          {
+            label: '20× Zebra MC9400',
+            items: [
+              { name: 'Terminale (7 638 zł × 20)', cost: '152 760 zł' },
+              { name: 'Baterie zapasowe (350 zł × 40)', cost: '14 000 zł' },
+              { name: 'Stacje 5-gn. (3 500 zł × 4)', cost: '14 000 zł' },
+              { name: 'Etuia + trigger (400 zł × 20)', cost: '8 000 zł' },
+              { name: 'OneCare 3 lata', cost: '~18 000 zł' },
+            ],
+            total: '~206 760 zł (~287 zł/mies./terminal)',
+          },
+        ],
+        conclusion: 'TCO jest zbliżony. CK67 oszczędza na bateriach zapasowych (28 h pracy = mniej rotacji baterii). MC9400 wygrywa odpornością na upadki (3,65 vs 2,4 m) i dalszym skanerem SE58 (30 vs 24 m). Wybór zależy od priorytetów: waga i bateria → CK67; wytrzymałość i zasięg → MC9400.',
+      },
+    ],
+    useCases: [
+      {
+        title: 'Magazyn WMS — kompletacja, przyjęcie i wydanie towaru',
+        description:
+          'Terminal Honeywell zintegrowany z systemem WMS prowadzi operatora: skanowanie lokalizacji → skanowanie produktu → potwierdzenie ilości → wydruk etykiety (Bluetooth z drukarką mobilną). [CT32](/produkt/honeywell-ct32) (od 3 389 zł) wystarczy do magazynów z 300–500 skanowaniami/dzień. [CK62](/produkt/honeywell-ck62) z FlexRange XLR (od 5 759 zł) skanuje kody na regałach do 24 m bez drabiny. [CK67](/produkt/honeywell-ck67) (od 7 765 zł) z klawiaturą i baterią 28 h — do ciężkiej pracy 24/7.',
+      },
+      {
+        title: 'Chłodnia i mroźnia (-30°C) — praca w ekstremalnych temperaturach',
+        description:
+          '[CK67](/produkt/honeywell-ck67) Cold Storage to jedyny terminal Honeywell certyfikowany do -30°C — wyświetlacz pozostaje czytelny, bateria zachowuje >70% pojemności, klawiatura obsługiwana w grubych rękawiczkach. Konkurencja: [Zebra MC9400](/produkt/zebra-mc9400) z baterią freezer (również do -30°C, ale cięższa: 765 g vs 516 g CK67). Dla chłodni 0–5°C wystarczą standardowe modele (CT32, CT47, CT70 — praca od -20°C).',
+      },
+      {
+        title: 'Retail i POS — weryfikacja cen, inwentaryzacja, Click & Collect',
+        description:
+          '[CT32](/produkt/honeywell-ct32) (od 3 389 zł) to idealny terminal dla handlu detalicznego: lekki (269 g), ekran 6" FHD, Wi-Fi 6E, IP65/IP68. Pracownik skanuje kod produktu i widzi cenę, stan, lokalizację. Inwentaryzacja RFID: [CT70](/produkt/honeywell-ct70) z opcjonalnym modułem UHF RFID — skanowanie 200+ tagów/s. NFC w każdym modelu — karty lojalnościowe, identyfikacja pracowników. Android z GMS — aplikacje retailowe z Google Play.',
+      },
+      {
+        title: 'Logistyka i transport — skanowanie przesyłek, POD, fleet management',
+        description:
+          'Kierowca skanuje każdą przesyłkę przy załadunku/rozładunku — system TMS rejestruje czas, GPS i podpis klienta na ekranie. [CT47](/produkt/honeywell-ct47) z 5G i GPS (od 7 901 zł) — stały dostęp do TMS bez Wi-Fi. [CK67](/produkt/honeywell-ck67) z 5G (wariant X1N) — do cross-dockingu i yard management. FlexRange XLR skanuje kody na kontenerach i ciężarówkach z odległości do 24 m.',
+      },
+      {
+        title: 'Produkcja — śledzenie partii, kontrola jakości, traceability',
+        description:
+          '[CK67](/produkt/honeywell-ck67) z klawiaturą fizyczną (51 kl.) do szybkiego wpisywania numerów partii, ilości i kodów wad. [CK62](/produkt/honeywell-ck62) (440 g) do lekkich operacji kontroli jakości — jednoręczna obsługa, cały dzień bez zmęczenia. IP65+IP68 chroni przed pyłem, olejem i rozbryzgami na hali produkcyjnej. Mobility Edge gwarantuje stabilność aplikacji przez 4–5 generacji Android.',
+      },
+      {
+        title: 'Field service — serwis terenowy, utrzymanie ruchu, inwentaryzacja',
+        description:
+          'Technik serwisowy skanuje kody aktywów, rejestruje czynności w CMMS i dokumentuje usterki kamerą. [CT47](/produkt/honeywell-ct47) z 5G/LTE i GPS (od 7 901 zł) — dostęp do systemu z dowolnego miejsca. [CT70](/produkt/honeywell-ct70) z Wi-Fi 7 i Qi (od 6 168 zł) — do operacji w zasięgu sieci firmowej. Bateria hot-swap 4 775–7 692 mAh gwarantuje pełną zmianę bez przerwy na ładowanie.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego sprzedawcy terminali Honeywell nie powiedzą',
+      items: [
+        {
+          title: 'FlexRange XLR — jedyna technologia skanera do 24 m w 3 formfactorach',
+          text: 'Konkurencja (Zebra SE58 Extended Range do 30 m) oferuje daleki zasięg skanera wyłącznie w jednym modelu — [MC9400](/produkt/zebra-mc9400) (od 7 638 zł, 765 g). Honeywell udostępnia FlexRange XLR (do 24 m) w trzech zupełnie różnych obudowach: dotykowy [CT47](/produkt/honeywell-ct47) (314 g), lekki gun [CK62](/produkt/honeywell-ck62) (440 g) i ultra-rugged gun [CK67](/produkt/honeywell-ck67) (516 g). Jeśli potrzebujesz dalekiego skanera, ale nie chcesz ciężkiego MC9400 — Honeywell jest jedyną opcją.',
+        },
+        {
+          title: 'Bateria 7 000 mAh wspólna dla CK62 i CK67 — oszczędność na infrastrukturze',
+          text: '[CK62](/produkt/honeywell-ck62) i [CK67](/produkt/honeywell-ck67) korzystają z identycznej baterii CK67-BTSC-001 (7 000 mAh) i tych samych ładowarek CK6X. Floty mieszane (np. CK62 na hali + CK67 w chłodni) potrzebują tylko jednego typu zapasu baterii i ładowarek — redukcja kosztów infrastruktury o 30–40% vs zakup osobnego ekosystemu akcesorium. U Zebry MC3400 i MC9400 mają różne baterie.',
+        },
+        {
+          title: 'Mobility Edge ≠ marketing — realne oszczędności na testowaniu aplikacji',
+          text: 'Bez Mobility Edge: firma ma flotę 100 terminali (3 modele, 3 wersje Android) → musi testować aplikację WMS na 9 konfiguracjach przy każdej aktualizacji. Z Mobility Edge: [CT32](/produkt/honeywell-ct32), [CK62](/produkt/honeywell-ck62) i [CK67](/produkt/honeywell-ck67) korzystają z identycznego BSP i tej samej wersji Android (14→18) → 1 test zamiast 9. Oszczędność: 40–80 roboczogodzin QA rocznie dla floty 50+ terminali. Zebra [LifeGuard](/terminale-mobilne-zebra) oferuje analogiczne korzyści, ale każdy model ma indywidualny harmonogram aktualizacji.',
+        },
+        {
+          title: 'Wi-Fi 7 w CT70 — przewaga 2 lat nad konkurencją',
+          text: '[CT70](/produkt/honeywell-ct70) jest pierwszym terminalem enterprise z Wi-Fi 7 (802.11be) na rynku. Wi-Fi 7 oferuje Multi-Link Operation (MLO) — jednoczesne połączenie na 2,4/5/6 GHz — co eliminuje mikro-przerwy w transmisji przy roamingu między access pointami. W magazynie z 50+ access pointami różnica jest odczuwalna: 0 utraconych połączeń WMS vs sporadyczne „connection lost" na Wi-Fi 6E. Zebra wprowadzi Wi-Fi 7 w TC501/TC701, ale CT70 był pierwszy.',
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Ile kosztuje terminal mobilny Honeywell w Polsce?',
+        answer:
+          'Ceny terminali Honeywell w TAKMA: [CT32](/produkt/honeywell-ct32) (entry-level 6" dotykowy) od 3 389 zł netto. [CK62](/produkt/honeywell-ck62) (lekki gun z klawiaturą) od 5 759 zł. [CT70](/produkt/honeywell-ct70) (premium Wi-Fi 7) od 6 168 zł. [CK67](/produkt/honeywell-ck67) (ultra-rugged gun) od 7 765 zł. [CT47](/produkt/honeywell-ct47) (premium 5G) od 7 901 zł. Ceny netto, aktualizowane codziennie z hurtowni Ingram Micro i BlueStar (najlepsza cena + 15% marży). VAT 23% doliczany oddzielnie.',
+      },
+      {
+        question: 'Honeywell czy Zebra — który terminal mobilny wybrać do magazynu?',
+        answer:
+          'Zależy od priorytetów. Honeywell wygrywa: FlexRange XLR do 24 m w 3 formfactorach (gun i dotykowy), bateria 28 h w CK67, Wi-Fi 7 w CT70, lżejszy gun CK67 (516 g vs 765 g MC9400). [Zebra](/terminale-mobilne-zebra) wygrywa: ekosystem Mobility DNA (30+ darmowych narzędzi), serwis w Polsce ([serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-terminali-zebra)), dalszy skaner SE58 (30 m), wyższa odporność MC9400 (drop 3,65 m). Cenowo porównywalne: CK67 7 765 zł vs MC9400 7 638 zł. Pełne porównanie: [Zebra vs Honeywell — porównanie](/poradnik/zebra-vs-honeywell-terminale-mobilne).',
+      },
+      {
+        question: 'Co to jest platforma Honeywell Mobility Edge?',
+        answer:
+          'Mobility Edge to strategia Honeywell gwarantująca wspólne CPU (Qualcomm), wspólny BSP Android i wieloletnie aktualizacje dla całej floty. CT32, CK62 i CK67 — Android 14→18 (4 generacje). CT70 — Android 15→19 (5 generacji). Korzyści: 1) Test aplikacji raz — działa na wszystkich modelach z platformy. 2) Regularne patche bezpieczeństwa OTA (Honeywell Sentinel). 3) Zero-touch enrollment przez MDM. 4) Niższy TCO — dłuższy cykl życia sprzętu bez wymiany. Porównywalne z Zebra LifeGuard, przewyższa Datalogic (3–5 lat) i Newland (3 lata).',
+      },
+      {
+        question: 'Jak działa skaner FlexRange XLR w terminalach Honeywell?',
+        answer:
+          'FlexRange XLR (S0E03) to flagowa technologia skanera Honeywell z automatycznym przełączaniem bliski/daleki: odczyt małego kodu DataMatrix z 8 cm (precyzja komponentów elektronicznych) do dużego kodu 1D z odległości 24 metrów (etykiety na najwyższych regałach) — bez ręcznego przełączania trybu. Zielony laser widoczny nawet w pełnym słońcu. Dostępny w: [CK67](/produkt/honeywell-ck67), [CK62](/produkt/honeywell-ck62) i [CT47](/produkt/honeywell-ct47). Konkurencja: Zebra SE58 (do 30 m, ale tylko w MC9400), Zebra SE55/AC670 (do 7,6–30 m, ale inny mechanizm). Honeywell FlexRange XLR jest dostępny w 3 formfactorach — to unikalna elastyczność.',
+      },
+      {
+        question: 'Który terminal Honeywell do chłodni i mroźni (-30°C)?',
+        answer:
+          '[CK67](/produkt/honeywell-ck67) w wersji Cold Storage — jedyny terminal Honeywell certyfikowany do ciągłej pracy w -30°C. Podgrzewany wyświetlacz, bateria 7 000 mAh zachowująca >70% pojemności w mroźni, klawiatura obsługiwana w grubych rękawiczkach. Alternatywa: [Zebra MC9400](/produkt/zebra-mc9400) z baterią freezer 5 000 mAh (również -30°C, ale 765 g vs 516 g CK67). Standardowe terminale Honeywell (CT32, CT47, CT70, CK62) pracują od -20°C do +50°C — do chłodni 0–5°C wystarczą w wersji standardowej.',
+      },
+      {
+        question: 'Ile trzyma bateria w terminalu Honeywell?',
+        answer:
+          '[CT32](/produkt/honeywell-ct32): 4 500 mAh, ~12 h pracy. [CT47](/produkt/honeywell-ct47): 4 775 mAh (~10–12 h) lub 7 692 mAh (~16+ h). [CT70](/produkt/honeywell-ct70): zależy od wariantu, ładowanie Qi. [CK62](/produkt/honeywell-ck62) i [CK67](/produkt/honeywell-ck67): 7 000 mAh, do 28 h pracy (!) — najdłuższy czas pracy w klasie gun. Wszystkie baterie hot-swap — wymiana w 5 sekund bez wyłączania terminala. Dla porównania: [Zebra MC9400](/produkt/zebra-mc9400) 7 000 mAh ~16 h, [TC22](/produkt/zebra-tc22) 5 200 mAh ~14 h.',
+      },
+      {
+        question: 'Czy terminale Honeywell działają z polskimi systemami WMS?',
+        answer:
+          'Tak — terminale Honeywell pracują pod Androidem z Google Mobile Services i są kompatybilne ze wszystkimi systemami WMS/ERP: SAP EWM, Oracle WMS, Manhattan, Comarch WMS, Asseco WAPRO, Simple WMS, Qguar. Integracja: Honeywell Enterprise Browser (web-WMS), natywne aplikacje Android, emulatory TE (Velocity by Ivanti, StayLinked). Mobility Edge zapewnia stabilność — aplikacja przetestowana na CT32 działa identycznie na CK67 bez rekompilacji.',
+      },
+      {
+        question: 'Jak zarządzać flotą terminali Honeywell?',
+        answer:
+          'Honeywell Operational Intelligence: monitoring stanu baterii, sieci, lokalizacji GPS i aktywności urządzeń. Integracja z MDM: SOTI MobiControl, VMware Workspace ONE, Microsoft Intune. Zero-touch enrollment: terminal automatycznie rejestruje się w MDM po pierwszym włączeniu. SmartTalk UC: komunikacja Push-to-Talk na terminalach (zamiennik krótkofalówek). Dla porównania: [Zebra](/terminale-mobilne-zebra) oferuje Mobility DNA z DataWedge, StageNow i Device Tracker — bardziej rozbudowany ekosystem, ale wymagający ekosystemu Zebra.',
+      },
+      {
+        question: 'CK67 vs CK62 — który terminal gun wybrać?',
+        answer:
+          '[CK67](/produkt/honeywell-ck67) (od 7 765 zł): 516 g, 5 opcji klawiatury (30–53 kl.), IP65+IP68, drop 2,4 m, 4 000 tumble, opcja 5G, Cold Storage -30°C. [CK62](/produkt/honeywell-ck62) (od 5 759 zł): 440 g (o 76 g lżejszy!), 2 opcje klawiatury (38/47 kl.), IP65/IP67, drop 1,8 m, brak opcji 5G i Cold Storage. Wspólne: identyczna bateria 7 000 mAh (28 h), FlexRange XLR do 24 m, Android 14→18. Reguła: standardowy magazyn → CK62 (tańszy, lżejszy). Ciężki magazyn, chłodnia, 24/7 → CK67.',
+      },
+      {
+        question: 'Jaka jest gwarancja terminali Honeywell w Polsce?',
+        answer:
+          'Standardowa gwarancja Honeywell: 1–2 lata. Opcjonalne kontrakty SVC (Service): 3 lub 5 lat z naprawą obejmującą wady produkcyjne. Comprehensive Coverage (odpowiednik Zebra OneCare Select): ochrona przed uszkodzeniami przypadkowymi. Serwis w Polsce: TAKMA oferuje diagnostykę, naprawę i wymianę ekranów/baterii terminali Honeywell. Czas naprawy: 5–7 dni roboczych. Uwaga: sieć serwisowa Honeywell w Polsce jest mniejsza niż Zebra — autoryzowany serwis Zebra [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-terminali-zebra) oferuje naprawy na poziomie komponentów w 3–5 dni.',
+      },
+      {
+        question: 'Jakie są alternatywy dla terminali Honeywell?',
+        answer:
+          '[Zebra](/terminale-mobilne-zebra) (TC22, TC53, MC3400, MC9400 — lider rynku 40%+, ekosystem Mobility DNA, LifeGuard do 10 lat). Datalogic (Memor 30/35, Skorpio X5 — włoska jakość, niższe ceny o 10–15%). [Newland](/terminale-newland) (MT93, N7 Cachalot — budżetowe, 3 lata wsparcia). Honeywell wyróżnia się FlexRange XLR (24 m w 3 formfactorach), Wi-Fi 7 w CT70, Mobility Edge i wsparciem Cold Storage. TAKMA oferuje wszystkie marki — pomagamy dobrać model do konkretnego zastosowania, nie do marki.',
+      },
+    ],
+    comparisons: [
+      {
+        title: 'Honeywell vs Zebra — dwie filozofie terminali mobilnych',
+        content:
+          'Honeywell i Zebra to dwaj najwięksi producenci terminali enterprise, kontrolujący łącznie 60%+ rynku globalnego. Honeywell stawia na: platformę Mobility Edge (1 BSP dla wielu modeli), technologię FlexRange XLR (24 m w 3 formfactorach — [CK67](/produkt/honeywell-ck67), [CK62](/produkt/honeywell-ck62), [CT47](/produkt/honeywell-ct47)), Wi-Fi 7 jako pierwszy ([CT70](/produkt/honeywell-ct70)) i ergonomię (CK67 waży 516 g, MC9400 — 765 g). [Zebra](/terminale-mobilne-zebra) stawia na: ekosystem Mobility DNA (DataWedge, StageNow, Device Tracker — 30+ darmowych narzędzi), najdłuższy LifeGuard (do 10 lat), najwyższą wytrzymałość (MC9400: drop 3,65 m, 6 000 tumble) i sieć serwisową w Polsce ([serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-terminali-zebra)). Cenowo porównywalne w każdym segmencie. Pełne porównanie head-to-head: [Zebra vs Honeywell — porównanie terminali mobilnych](/poradnik/zebra-vs-honeywell-terminale-mobilne).',
+      },
+      {
+        title: 'Honeywell CT32 vs Zebra TC22 — porównanie entry-level',
+        content:
+          '[CT32](/produkt/honeywell-ct32) (od 3 389 zł): 269 g, 6" FHD, QCS4490, Wi-Fi 6E, 4 500 mAh, IP65/IP68, drop 1,8 m (z boot), Android 14→18, następca EDA52, kompatybilny z akcesoriami EDA52. [TC22](/produkt/zebra-tc22) (od 2 417 zł): 236 g, 6" FHD+, Qualcomm 5430, Wi-Fi 6E, 3 800/5 200 mAh, IP65/IP68, drop 1,5 m, Android do v16, Mobility DNA (DataWedge, StageNow w cenie). TC22 jest o 972 zł tańszy i 33 g lżejszy. CT32 ma dłuższe gwarantowane wsparcie Android (14→18 = 4 generacje). Rekomendacja TAKMA: TC22 gdy decyduje budżet lub istniejący ekosystem Zebra. CT32 gdy priorytetem jest 5-letni cykl życia i kompatybilność z infrastrukturą EDA52.',
+      },
+      {
+        title: 'Honeywell CK67 vs Zebra MC9400 — flagowce gun',
+        content:
+          '[CK67](/produkt/honeywell-ck67) (od 7 765 zł): 516 g, FlexRange XLR do 24 m, 5 klawiatur (30–53 kl.), bateria 7 000 mAh (do 28 h!), IP65+IP68, drop 2,4 m, 4 000 tumble, Android 14→18, Cold Storage -30°C. [MC9400](/produkt/zebra-mc9400) (od 7 638 zł): 765 g, SE58 ER do 30 m, 7 klawiatur wymiennych, bateria 7 000 mAh (do 16 h), IP65+IP68, drop 3,65 m, 6 000 tumble, Android 14→17, freezer -30°C. CK67 = lżejszy (o 249 g!), dłuższa bateria (28 vs 16 h), dłuższe wsparcie OS (v18 vs v17). MC9400 = wytrzymalszy (drop 3,65 vs 2,4 m, 6K vs 4K tumble), dalszy skaner (30 vs 24 m), więcej klawiatur (7 vs 5). Ceny niemal identyczne — różnica 127 zł.',
+      },
+    ],
+    howToSteps: [
+      {
+        name: 'Określ środowisko pracy i wymagania',
+        text: 'Zdefiniuj: typ magazynu (suchy, chłodnia, mroźnia), dzienną liczbę skanowań, odległość skanowania (bliski, regały, wysokie składowanie), potrzebę klawiatury fizycznej, łączność (Wi-Fi / 5G), planowany cykl użytkowania (3/5/7 lat).',
+      },
+      {
+        name: 'Wybierz formfactor i model',
+        text: 'Dotykowy entry-level → [CT32](/produkt/honeywell-ct32) (od 3 389 zł). Dotykowy premium Wi-Fi 7 → [CT70](/produkt/honeywell-ct70) (od 6 168 zł). Dotykowy 5G → [CT47](/produkt/honeywell-ct47) (od 7 901 zł). Gun lekki → [CK62](/produkt/honeywell-ck62) (od 5 759 zł). Gun ultra-rugged → [CK67](/produkt/honeywell-ck67) (od 7 765 zł). Nie wiesz? Skontaktuj się z TAKMA — porównamy TCO z [Zebrą](/terminale-mobilne-zebra).',
+      },
+      {
+        name: 'Zaplanuj akcesoria i infrastrukturę',
+        text: 'Baterie zapasowe (1–2 na terminal przy pracy wielozmianowej). Ładowarki baterii: CK6X 4-gniazdowa dla CK62/CK67 (wspólna!). Stacje dokujące: CT32 Universal Dock (kompatybilny z EDA52). Obudowy ochronne: boot TPU zwiększa odporność o 0,3–0,6 m. Folie ochronne na ekran: przedłużają żywotność o 1–2 lata.',
+      },
+      {
+        name: 'Skonfiguruj MDM i aplikacje',
+        text: 'Zero-touch enrollment: terminal rejestruje się w MDM (SOTI, Ivanti, Intune) po pierwszym włączeniu Wi-Fi. Instalacja aplikacji WMS/ERP przez MDM. Konfiguracja profilu skanera (Honeywell SDK lub DataCollection API). Polityki bezpieczeństwa: blokada USB, Google Play, ustawień systemowych. Honeywell Operational Intelligence: monitoring stanu floty.',
+      },
+      {
+        name: 'Pilotaż i pełne wdrożenie',
+        text: 'Test pilotażowy (3–5 urządzeń, 2 tygodnie): zasięg Wi-Fi, czas pracy baterii, ergonomia, wydajność WMS. Po pozytywnym pilocie — rollout na pełną flotę z szkoleniem operatorów. TAKMA zapewnia wsparcie wdrożeniowe: konfigurację, szkolenie i serwis.',
+      },
+    ],
+  },
 }
