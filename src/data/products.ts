@@ -184,7 +184,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208, DS3678-SR — gwarancja 5 lat. Skanery przewodowe i bezprzewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies i Newland — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Newland HR23 Dorada — ekonomiczny 2D z gwarancją 5 lat. DS3678-SR bezprzewodowy ultra-rugged do magazynów. DS9908 hybrydowy prezentacyjny do kas POS. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 32,
+    productCount: 29,
   },
   {
     id: 'tablety-przemyslowe',
@@ -826,8 +826,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Skanery kodów kreskowych przewodowe USB od 352 zł netto. Zebra DS2208 — imager 2D, IP52, 5 lat gwarancji. Do kas, aptek, biur i magazynów. Autoryzowany partner Zebra — doradztwo i serwis.',
     longDescription: 'Przewodowe czytniki kodów kreskowych (skanery USB / RS-232) — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania. Imager 2D odczytuje kody 1D, QR, DataMatrix i kody z ekranów. Zebra DS2208 (IP52, 5 lat gwarancji) — idealna na stałe stanowiska kasowe, apteki, przyjęcia towaru.',
     icon: 'scan',
-    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er', 'newland-hr23-dorada', 'newland-hr33-marlin', 'newland-hr11-aringa', 'newland-hr15-wahoo', 'newland-nvh300', 'honeywell-granit-ultra-2100i', 'honeywell-granit-xp-1990ixlr', 'honeywell-cbl-500-300-s00', 'honeywell-cbl-020-300-c00', 'honeywell-holster-industrial'],
-    productCount: 20,
+    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er', 'newland-hr23-dorada', 'newland-hr33-marlin', 'newland-hr11-aringa', 'newland-hr15-wahoo', 'newland-nvh300', 'honeywell-granit-ultra-2100i', 'honeywell-granit-xp-1990ixlr'],
+    productCount: 17,
   },
   {
     id: 'skanery-bezprzewodowe',
@@ -13634,9 +13634,9 @@ Dokumentacja: automation.honeywell.com/granit-ultra-2100i.`,
     slug: 'honeywell-granit-xp-1990ixlr',
     name: 'Honeywell Granit XP 1990iXLR',
     sameAs: 'https://automation.honeywell.com/us/en/products/productivity-solutions/barcode-scanners/rugged-handheld/granit-xp-1990ixlr-scanner',
-    seoTitle: 'Honeywell Granit XP 1990iXLR — skaner dalekiego zasięgu 24 m, ultra-rugged IP67 | przewodowy',
-    seoDescription: 'Honeywell Granit XP 1990iXLR — skaner kodów kreskowych przemysłowy dalekiego zasięgu do 24 m (100 mil). IP67+IP65, upadki 3 m, -30°C do +50°C, 7 000 obrotów. Czytnik do magazynu wysokiego składowania. Dual sensor XLR+Near.',
-    shortDescription: 'Honeywell Granit XP 1990iXLR — skaner przewodowy ultra-rugged dalekiego zasięgu do 24 m, dual sensor 1920×1080+1280×800, IP67+IP65, upadki 3 m, -30°C do +50°C',
+    seoTitle: 'Honeywell Granit XP 1990iXLR — skaner dalekiego zasięgu 24 m, ultra-rugged IP67 | od 2 417 zł',
+    seoDescription: 'Honeywell Granit XP 1990iXLR — skaner kodów kreskowych przemysłowy dalekiego zasięgu do 24 m (100 mil). IP67+IP65, upadki 3 m, -30°C do +50°C, 7 000 obrotów. Czytnik do magazynu wysokiego składowania. Cena od 2 417 zł netto.',
+    shortDescription: 'Honeywell Granit XP 1990iXLR — skaner przewodowy ultra-rugged dalekiego zasięgu do 24 m, dual sensor, IP67+IP65, upadki 3 m, -30°C, od 2 417 zł',
     description: `Dla kogo? Honeywell Granit XP 1990iXLR to ultra-wytrzymały skaner kodów kreskowych dalekiego zasięgu (XLR — eXtra Long Range) — zaprojektowany do magazynów wysokiego składowania, centrów dystrybucyjnych, doków przeładunkowych i hal produkcyjnych. Jeśli potrzebujesz czytnika kodów kreskowych, który odczyta etykiety paletowe na wysokości 24 metrów (100 mil Code 39) — Granit XP 1990iXLR jest jednym z niewielu skanerów przemysłowych o takim zasięgu na rynku.
 
 Podwójny sensor (dual imager): Far — 1920×1080 px Rolling Shutter do skanowania dalekiego zasięgu, Near — 1280×800 px Global Shutter do bliskiego pola (czytanie etykiet kurierskich, kodów z ekranów i dokumentów). Dzięki technologii XLR skanuje kody UPC 13 mil do 2,24 m i 100 mil rack labels do 24 m — bez przełączania trybów, automatyczny wybór sensora. Tolerancja ruchu 4 500 mm/s — najszybsza w klasie skanerów przemysłowych Honeywell.
@@ -13655,6 +13655,7 @@ Gwarancja producenta 3 lata. Wymiary 192 × 76 × 100 mm, waga 320 g. Dokumentac
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-przewodowe'],
     manufacturerId: 'honeywell',
+    priceFrom: 2417,
     images: [
       '/images/products/honeywell-granit-xp-1990ixlr.png',
       '/images/products/honeywell-granit-xp-1990ixlr-2.png',
@@ -13664,7 +13665,7 @@ Gwarancja producenta 3 lata. Wymiary 192 × 76 × 100 mm, waga 320 g. Dokumentac
       'Honeywell Granit XP 1990iXLR — widok z boku, ergonomiczny uchwyt pistoletowy z triggerem i kabel przemysłowy',
     ],
     tags: ['magazyn', 'logistyka', 'produkcja'],
-    availability: 'on-order',
+    availability: 'available',
     isNew: false,
     isBestseller: false,
     specifications: [
@@ -13707,38 +13708,21 @@ Gwarancja producenta 3 lata. Wymiary 192 × 76 × 100 mm, waga 320 g. Dokumentac
     ],
     variants: [
       {
-        partNumber: '1990IXLR-3USB-N',
-        name: 'Granit XP 1990iXLR — zestaw USB z wibracją, kabel industrial',
-        availability: 'on-order',
-        attributes: {
-          'Zestaw': 'USB Kit (industrial)',
-          'Wibracja': 'Tak',
-        },
-      },
-      {
         partNumber: '1990IXLR-3USB-R',
         name: 'Granit XP 1990iXLR — zestaw USB',
-        availability: 'on-order',
+        priceFrom: 2590,
+        availability: 'available',
         attributes: {
           'Zestaw': 'USB Kit',
         },
       },
       {
-        partNumber: '1990IXLR-3SER-N',
-        name: 'Granit XP 1990iXLR — zestaw RS-232 z wibracją',
-        availability: 'on-order',
+        partNumber: '1990IXLR-3SER-R',
+        name: 'Granit XP 1990iXLR — zestaw RS-232',
+        priceFrom: 2417,
+        availability: 'available',
         attributes: {
           'Zestaw': 'RS-232 Kit',
-          'Wibracja': 'Tak',
-        },
-      },
-      {
-        partNumber: '1990IXLR-3-N',
-        name: 'Granit XP 1990iXLR — sam skaner z wibracją',
-        availability: 'on-order',
-        attributes: {
-          'Zestaw': 'Sam skaner',
-          'Wibracja': 'Tak',
         },
       },
       {
@@ -13838,8 +13822,8 @@ Gwarancja producenta 3 lata. Wymiary 192 × 76 × 100 mm, waga 320 g. Dokumentac
         answer: 'XLR (eXtra Long Range) — zasięg do 24 m na kodach 100 mil, idealny do magazynów wysokiego składowania. XR (eXtended Range) — zasięg do 11,26 m na 100 mil i do 1,55 m na UPC, do magazynów średniego składowania. SR (Standard Range) — zasięg do 88 cm na 20 mil Code 39, do kas, przyjęcia towaru i stanowisk kompletacji. Wszystkie warianty mają identyczną wytrzymałość: IP67+IP65, upadki z 3 m, 7 000 obrotów tumble.',
       },
       {
-        question: 'Czy Granit XP 1990iXLR ma wibrację (vibration feedback)?',
-        answer: 'Warianty z sufiksem -N (np. 1990IXLR-3USB-N, 1990IXLR-3-N) mają wbudowany silnik wibracyjny z regulacją intensywności — potwierdzenie odczytu wibracja + dźwięk + LED. Warianty -R nie mają wibracji, potwierdzenie tylko dźwięk + LED. Wibracja jest kluczowa w hałaśliwych środowiskach (hale produkcyjne, doki), gdzie sygnał dźwiękowy jest niesłyszalny.',
+        question: 'Ile kosztuje Honeywell Granit XP 1990iXLR?',
+        answer: 'Cena skanera Honeywell Granit XP 1990iXLR w TAKMA zaczyna się od 2 417 zł netto (wariant RS-232 z kablem — 1990IXLR-3SER-R). Wariant USB z kablem (1990IXLR-3USB-R) kosztuje od 2 590 zł netto. Wariant sam skaner bez kabla (1990IXLR-3-R) — cena na zapytanie. Ceny netto, aktualizowane na bieżąco z hurtowni.',
       },
       {
         question: 'Jak Granit XP 1990iXLR wypada na tle Zebra DS3608-XR?',
@@ -13880,7 +13864,6 @@ const honeywellScannerAccessories: Product[] = [
 
 Kompatybilny z szeroką gamą skanerów Honeywell: Granit Ultra 2100i, Granit XP 1990i/1991i, Granit 1980i/1910i, Xenon 1900g/1902g, Voyager 1200g/1250g, Hyperion 1300g. Kabel jest dołączany do zestawów USB (-3USBE) — ten sam kabel dostępny jako zamiennik lub zapas.`,
     categoryId: 'skanery-kodow-kreskowych',
-    subcategoryIds: ['skanery-przewodowe'],
     manufacturerId: 'honeywell',
     priceFrom: 72,
     images: ['/images/products/CBL-500-300-S00.png'],
@@ -13914,7 +13897,6 @@ Kompatybilny z szeroką gamą skanerów Honeywell: Granit Ultra 2100i, Granit XP
 
 Kabel krętny zapobiega plątaniu się na stanowisku pracy i rozciąga się elastycznie. Wymaga zewnętrznego zasilacza (skaner nie jest zasilany z portu RS-232). Kompatybilny ze skanerami: Granit Ultra 2100i, Granit XP 1990i/1991i, Granit 1980i/1910i, Xenon 1900g/1902g, Voyager 1200g/1250g.`,
     categoryId: 'skanery-kodow-kreskowych',
-    subcategoryIds: ['skanery-przewodowe'],
     manufacturerId: 'honeywell',
     priceFrom: 73,
     images: ['/images/products/CBL-020-300-C00.png'],
@@ -13948,7 +13930,6 @@ Kabel krętny zapobiega plątaniu się na stanowisku pracy i rozciąga się elas
 
 Zaprojektowana do środowisk magazynowych i produkcyjnych. Zintegrowany klips na pasek zapewnia pewne mocowanie. Kompatybilna ze skanerami Honeywell Granit Ultra 2100i, Granit XP 1990i, 1991i (bezprzewodowy), 1980i, 1981i.`,
     categoryId: 'skanery-kodow-kreskowych',
-    subcategoryIds: ['skanery-przewodowe'],
     manufacturerId: 'honeywell',
     priceFrom: 282,
     images: ['/images/products/HOLSTER-INDUSTRIAL.png'],
