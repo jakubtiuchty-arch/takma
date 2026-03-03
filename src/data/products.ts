@@ -14640,7 +14640,8 @@ Gwarancja producenta 3 lata (skaner), 1 rok (bateria). Wymiary 192 × 76 × 100 
         name: 'Granit XP 1991iXLR — zestaw USB (skaner + baza + kabel)',
         availability: 'unavailable',
         attributes: {
-          'Zestaw': 'USB Kit (skaner + baza CCB22 + kabel USB)',
+          'Baza ładująca': 'Tak',
+          'Kabel USB': 'Tak',
         },
       },
       {
@@ -14648,9 +14649,7 @@ Gwarancja producenta 3 lata (skaner), 1 rok (bateria). Wymiary 192 × 76 × 100 
         name: 'Granit XP 1991iXLR — sam skaner',
         priceFrom: 2997,
         availability: 'available',
-        attributes: {
-          'Zestaw': 'Sam skaner (bez bazy i kabla)',
-        },
+        attributes: {},
       },
     ],
     comparison: {
@@ -14842,7 +14841,8 @@ Gwarancja producenta 3 lata (skaner), 1 rok (bateria). Wymiary 192 × 76 × 100 
         priceFrom: 3054,
         availability: 'available',
         attributes: {
-          'Zestaw': 'USB Kit (skaner + baza CCB22 + kabel USB)',
+          'Baza ładująca': 'Tak',
+          'Kabel USB': 'Tak',
         },
       },
       {
@@ -14850,9 +14850,7 @@ Gwarancja producenta 3 lata (skaner), 1 rok (bateria). Wymiary 192 × 76 × 100 
         name: 'Granit XP 1991iSR — sam skaner',
         priceFrom: 2499,
         availability: 'available',
-        attributes: {
-          'Zestaw': 'Sam skaner (bez bazy i kabla)',
-        },
+        attributes: {},
       },
     ],
     comparison: {
@@ -15046,7 +15044,8 @@ Gwarancja producenta 3 lata (skaner), 1 rok (bateria). Wymiary 192 × 76 × 100 
         priceFrom: 3513,
         availability: 'available',
         attributes: {
-          'Zestaw': 'USB Kit (skaner + baza CCB22 + kabel USB)',
+          'Baza ładująca': 'Tak',
+          'Kabel USB': 'Tak',
         },
       },
       {
@@ -15054,9 +15053,7 @@ Gwarancja producenta 3 lata (skaner), 1 rok (bateria). Wymiary 192 × 76 × 100 
         name: 'Granit XP 1991iXR — sam skaner',
         priceFrom: 2873,
         availability: 'available',
-        attributes: {
-          'Zestaw': 'Sam skaner (bez bazy i kabla)',
-        },
+        attributes: {},
       },
     ],
     comparison: {
