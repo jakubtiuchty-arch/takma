@@ -558,6 +558,14 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   FAQ
                 </a>
               )}
+              {product.videoUrl && (
+                <a
+                  href="#video"
+                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                >
+                  Wideo
+                </a>
+              )}
               {product.downloads.length > 0 && (
                 <a
                   href="#pliki"
@@ -650,6 +658,23 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 </span>
               </div>
             </section>
+
+            {/* Video — embed Vidyard/YouTube */}
+            {product.videoUrl && (
+              <section id="video">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">Wideo produktowe</h2>
+                <div className="aspect-video rounded-xl overflow-hidden bg-gray-100">
+                  <iframe
+                    src={product.videoUrl}
+                    className="w-full h-full"
+                    allowFullScreen
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    title={`Wideo produktowe — ${product.name}`}
+                    loading="lazy"
+                  />
+                </div>
+              </section>
+            )}
 
             {/* Autoryzowany Partner Zebra — box (tylko urządzenia Zebra) */}
             {product.manufacturerId === 'zebra' && isDevice && (

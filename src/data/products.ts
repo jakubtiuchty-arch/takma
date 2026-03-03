@@ -49,6 +49,7 @@ export interface Product {
   createdAt: string
   updatedAt?: string
   sameAs?: string
+  videoUrl?: string
 }
 
 export interface ProductVariant {
@@ -183,7 +184,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208, DS3678-SR — gwarancja 5 lat. Skanery przewodowe i bezprzewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies i Newland — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Newland HR23 Dorada — ekonomiczny 2D z gwarancją 5 lat. DS3678-SR bezprzewodowy ultra-rugged do magazynów. DS9908 hybrydowy prezentacyjny do kas POS. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 27,
+    productCount: 28,
   },
   {
     id: 'tablety-przemyslowe',
@@ -825,8 +826,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Skanery kodów kreskowych przewodowe USB od 352 zł netto. Zebra DS2208 — imager 2D, IP52, 5 lat gwarancji. Do kas, aptek, biur i magazynów. Autoryzowany partner Zebra — doradztwo i serwis.',
     longDescription: 'Przewodowe czytniki kodów kreskowych (skanery USB / RS-232) — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania. Imager 2D odczytuje kody 1D, QR, DataMatrix i kody z ekranów. Zebra DS2208 (IP52, 5 lat gwarancji) — idealna na stałe stanowiska kasowe, apteki, przyjęcia towaru.',
     icon: 'scan',
-    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er', 'newland-hr23-dorada', 'newland-hr33-marlin', 'newland-hr11-aringa', 'newland-hr15-wahoo', 'newland-nvh300'],
-    productCount: 15,
+    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er', 'newland-hr23-dorada', 'newland-hr33-marlin', 'newland-hr11-aringa', 'newland-hr15-wahoo', 'newland-nvh300', 'honeywell-granit-ultra-2100i'],
+    productCount: 16,
   },
   {
     id: 'skanery-bezprzewodowe',
@@ -13344,6 +13345,278 @@ const newlandHR23Accessories: Product[] = [
     faq: [],
     downloads: [],
     createdAt: '2026-03-01',
+  },
+]
+
+// ============================================
+// SKANERY HONEYWELL
+// ============================================
+
+const honeywellScanners: Product[] = [
+  {
+    id: 'honeywell-granit-ultra-2100i',
+    slug: 'honeywell-granit-ultra-2100i',
+    name: 'Honeywell Granit Ultra 2100i',
+    sameAs: 'https://automation.honeywell.com/us/en/products/productivity-solutions/barcode-scanners/rugged-handheld/granit-ultra-2100i',
+    seoTitle: 'Honeywell Granit Ultra 2100i — ultra-rugged skaner 2D z AI, SR/XR do 10,85 m | od 1 760 zł',
+    seoDescription: 'Honeywell Granit Ultra 2100i (2100ISR, 2100IXR) — ultra-rugged skaner area imager z AI decoding. IP65/IP68, upadki 3 m, -30°C. SR do 1 m, XR do 10,85 m. Red Dot 2025. Cena od 1 760 zł netto.',
+    shortDescription: 'Honeywell Granit Ultra 2100i — ultra-rugged skaner 2D area imager z AI decoding, IP65/IP68, upadki 3 m, -30°C do +50°C',
+    description: `Dla kogo? Honeywell Granit Ultra 2100i to ultra-wytrzymały przewodowy skaner 2D area imager nowej generacji — następca serii Granit XP 1990i, zaprojektowany do najtrudniejszych środowisk: magazynów, centrów dystrybucyjnych, hal produkcyjnych, mroźni i doków przeładunkowych. Pierwszy skaner przemysłowy z wbudowanym dekodowaniem opartym na AI — algorytmy sztucznej inteligencji przyspieszają skanowanie o 45% w porównaniu z poprzednią generacją (Granit XP).
+
+Dostępny w 4 wariantach zasięgu: SR (Standard Range) — od kontaktu do 1 m, odczyt UPC/EAN13 do 63,4 cm. XR (Expanded Range) — od kontaktu do 10,85 m na kody 100 mil Code 39 i do 2,8 m na Code 128 20 mil — idealny do magazynów średniego składowania, doków i cross-dockingu. HD (High Density) — kody od 2 mil 1D i 2 mil 2D, do elektroniki i farmacji. XLR (Ultra Long Range) — zasięg do 30 m na kody 100 mil, do magazynów wysokiego składowania i outdoor.
+
+Sensor area imager 1 280 × 1 080 px (SR/HD) lub Near+Far 1 280 × 1 080 px (XR) albo 1 920 × 800 px (XLR). Pole widzenia: SR — 28° × 36°, XR Near — 42° × 36°, XLR Near — 45° × 19,6°. Tolerancja ruchu do 4 000 mm/s — skanowanie z ręki na linii produkcyjnej bez zatrzymywania. Odczyt kodów z ekranów (mGR), DPM (Direct Part Mark), Digimarc, OCR (OCR-A, OCR-B, MICR E-13B, SEMI Font). Multi-Code — odczyt wielu kodów w polu widzenia jednocześnie, z organizacją danych przez Data Format Editor.
+
+Interfejsy: USB (2.0), RS-232, Keyboard Wedge (PS/2 TTL). Kable z kabelem zasilania +/−12V do konwersji. IP65 + IP68 (pyłoszczelny + zanurzalny), upadki z 3 m na beton (MIL-STD-810G), 2,5 m z 20 upadków od -30°C do +50°C, 2 m z 50 upadków od -30°C do +50°C przy niekontrolowanej wilgotności. 7 500 obrotów w tumbler teście. Wibracje 5G peak (5–300 Hz). Trigger przetestowany na 3 000 000 cykli. Kable na 500 000 cykli zgięć. Waga 330 g. Wymiary 194,8 × 75,8 × 139,5 mm.
+
+Nagroda Red Dot Design Award 2025 za ergonomię i wzornictwo. Gwarancja producenta 3 lata. Zarządzanie flotą: Honeywell Scanner Management Utility (SMU), EZConfig, Total Freedom, Scanner Edge, SDK.
+
+Koszt posiadania (TCO): Granit Ultra 2100i z gwarancją 3 lata, IP65/IP68, upadkami z 3 m i 3 mln cykli triggera — skaner projektowany na 5+ lat intensywnej pracy. W porównaniu z tańszymi skanerami IP42/IP52 amortyzuje się po ok. 14–18 miesiącach dzięki braku kosztów napraw i przestojów.
+
+Dokumentacja: automation.honeywell.com/granit-ultra-2100i.`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-przewodowe'],
+    manufacturerId: 'honeywell',
+    priceFrom: 1760,
+    images: [
+      '/images/products/honeywell-granit-ultra-2100i.png',
+      '/images/products/honeywell-granit-ultra-2100i-2.png',
+      '/images/products/honeywell-granit-ultra-2100i-3.png',
+    ],
+    imageDescriptions: [
+      'Honeywell Granit Ultra 2100i — widok z przodu, czerwono-czarna obudowa ultra-rugged z oknem skanera area imager',
+      'Honeywell Granit Ultra 2100i — widok z boku, ergonomiczny uchwyt z triggerem i kabel USB',
+      'Honeywell Granit Ultra 2100i — widok z tyłu, masywna konstrukcja IP65/IP68 z zieloną diodą celownika',
+    ],
+    tags: ['magazyn', 'logistyka', 'produkcja'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Typ skanera', value: 'Area imager 2D ultra-rugged, przewodowy' },
+      { name: 'Dekodowanie AI', value: 'Tak — algorytmy AI, 45% szybciej niż Granit XP' },
+      { name: 'Sensor (SR/HD)', value: 'Area imager 1 280 × 1 080 px' },
+      { name: 'Sensor (XR)', value: 'Near and Far: Area imager 1 280 × 1 080 px' },
+      { name: 'Pole widzenia (SR)', value: '28° (poziomo) × 36° (pionowo)' },
+      { name: 'Pole widzenia (XR Near)', value: '42° (poziomo) × 36° (pionowo)' },
+      { name: 'Celownik (SR/HD)', value: 'Zielony LED 525 nm' },
+      { name: 'Celownik (XR/XLR)', value: 'Zielony laser klasy 2, 520 nm' },
+      { name: 'Skanowane kody 1D', value: 'Code 39, Code 128, Code 93, Code 11, Code 32, EAN/UPC, Codabar, China Post, GS1 DataBar, Pharmaceutical' },
+      { name: 'Skanowane kody 2D', value: 'QR Code, Data Matrix, Aztec, Micro QR, PDF417, DotCode, Maxicode, Chinese Sensible (Han Xin), Postal, Digimarc' },
+      { name: 'OCR', value: 'OCR-A, OCR-B, MICR E-13B, SEMI Font (6–60 punktów)' },
+      { name: 'DPM (Direct Part Mark)', value: 'Tak' },
+      { name: 'Zasięg SR (13 mil UPC)', value: '0–63,4 cm' },
+      { name: 'Zasięg SR (20 mil Code 128)', value: '0–103,3 cm' },
+      { name: 'Zasięg SR (10 mil DataMatrix)', value: '5 mm – 26,1 cm' },
+      { name: 'Zasięg XR (13 mil UPC)', value: '0–178,0 cm' },
+      { name: 'Zasięg XR (20 mil Code 128)', value: '0–281,2 cm' },
+      { name: 'Zasięg XR (100 mil Code 39)', value: '0–10,85 m (1 085 cm)' },
+      { name: 'Zasięg XR (10 mil DataMatrix)', value: '5 mm – 26,1 cm' },
+      { name: 'Zasięg XR (100 mil DataMatrix)', value: '0–5,33 m (533 cm)' },
+      { name: 'Tolerancja ruchu', value: 'Do 4 000 mm/s' },
+      { name: 'Multi-Code', value: 'Tak — wiele kodów w polu widzenia jednocześnie' },
+      { name: 'Min. rozdzielczość kodów (SR/XR)', value: '2,5 mil 1D, 5 mil 2D' },
+      { name: 'Min. rozdzielczość kodów (HD)', value: '2 mil 1D, 2 mil 2D' },
+      { name: 'Image Capture', value: 'Do 109 PPI na dokumencie A4' },
+      { name: 'Kontrast druku', value: 'Od 15%' },
+      { name: 'Tolerancja obrotu/pochylenia', value: '±/−360°, ±/−65°, ±/−65°' },
+      { name: 'Oświetlenie otoczenia', value: '0–100 000 lux' },
+      { name: 'Interfejsy', value: 'USB 2.0, RS-232, Keyboard Wedge (PS/2 TTL)' },
+      { name: 'Zasilanie', value: '4,0–5,5 VDC; USB 2,15 W (430 mA), inne 2,75 W (550 mA)' },
+      { name: 'Klasa szczelności', value: 'IP65 + IP68 (pyłoszczelny + zanurzalny)' },
+      { name: 'Odporność na upadki', value: '3,0 m na beton (MIL-STD-810G, 25°C)' },
+      { name: 'Tumble test', value: '7 500 obrotów (1,0 m)' },
+      { name: 'Wibracje', value: '5G peak, 5–300 Hz' },
+      { name: 'Cykle triggera', value: '3 000 000 cykli' },
+      { name: 'Cykle zgięć kabla', value: '500 000 cykli' },
+      { name: 'Temperatura pracy', value: '-30°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
+      { name: 'Wilgotność', value: 'Do 95% RH, bez kondensacji' },
+      { name: 'Wymiary', value: '194,8 × 75,8 × 139,5 mm' },
+      { name: 'Waga', value: '330 g' },
+      { name: 'Gwarancja', value: '36 miesięcy (3 lata)' },
+      { name: 'Nagrody', value: 'Red Dot Design Award 2025' },
+    ],
+    variants: [
+      {
+        partNumber: '2100ISR-3USBE',
+        name: 'Granit 2100i SR — zestaw USB (Standard Range)',
+        priceFrom: 1760,
+        availability: 'available',
+        attributes: {
+          'Zasięg': 'SR (Standard Range)',
+          'Kabel USB': 'Tak',
+        },
+      },
+      {
+        partNumber: '2100ISR-3E',
+        name: 'Granit 2100i SR — sam skaner (Standard Range)',
+        priceFrom: 1794,
+        availability: 'on-order',
+        attributes: {
+          'Zasięg': 'SR (Standard Range)',
+        },
+      },
+      {
+        partNumber: '2100IXR-3USBE',
+        name: 'Granit 2100i XR — zestaw USB (Expanded Range)',
+        priceFrom: 2025,
+        availability: 'available',
+        attributes: {
+          'Zasięg': 'XR (Expanded Range)',
+          'Kabel USB': 'Tak',
+        },
+      },
+      {
+        partNumber: '2100IXR-3E',
+        name: 'Granit 2100i XR — sam skaner (Expanded Range)',
+        priceFrom: 2063,
+        availability: 'on-order',
+        attributes: {
+          'Zasięg': 'XR (Expanded Range)',
+        },
+      },
+      {
+        partNumber: '2100IXR-3SERE',
+        name: 'Granit 2100i XR — zestaw RS-232 (Expanded Range)',
+        priceFrom: 2124,
+        availability: 'on-order',
+        attributes: {
+          'Zasięg': 'XR (Expanded Range)',
+          'Kabel RS-232': 'Tak',
+        },
+      },
+    ],
+    comparison: {
+      title: 'Porównanie skanerów ultra-rugged: Honeywell Granit Ultra 2100i vs Zebra DS3608',
+      models: [
+        {
+          name: 'Granit 2100i SR',
+          slug: 'honeywell-granit-ultra-2100i',
+          highlight: true,
+          specs: {
+            'Wariant': 'Standard Range (ogólny)',
+            'Sensor': '1280×1080 px',
+            'Zasięg maks. (20 mil C128)': '103 cm',
+            'AI Decoding': 'Tak (+45%)',
+            'DPM / OCR': 'Tak / Tak',
+            'IP / Upadki': 'IP65+IP68 / 3,0 m',
+            'Temperatura pracy': '-30°C do +50°C',
+            'Waga': '330 g',
+            'Cena od': '1 760 zł',
+            'Najlepszy do': 'Magazyn, logistyka, produkcja',
+          },
+        },
+        {
+          name: 'Granit 2100i XR',
+          slug: 'honeywell-granit-ultra-2100i',
+          specs: {
+            'Wariant': 'Expanded Range (daleki zasięg)',
+            'Sensor': '1280×1080 px (Near+Far)',
+            'Zasięg maks. (20 mil C128)': '281 cm',
+            'AI Decoding': 'Tak (+45%)',
+            'DPM / OCR': 'Tak / Tak',
+            'IP / Upadki': 'IP65+IP68 / 3,0 m',
+            'Temperatura pracy': '-30°C do +50°C',
+            'Waga': '330 g',
+            'Cena od': '2 025 zł',
+            'Najlepszy do': 'Magazyn średniego składowania, doki',
+          },
+        },
+        {
+          name: 'Zebra DS3608-SR',
+          slug: 'zebra-ds3608-sr',
+          specs: {
+            'Wariant': 'Standard Range (ogólny)',
+            'Sensor': '1280×800 px',
+            'Zasięg maks. (20 mil C128)': '71 cm',
+            'AI Decoding': 'Nie',
+            'DPM / OCR': 'Nie / Nie',
+            'IP / Upadki': 'IP65+IP68 / 3,0 m',
+            'Temperatura pracy': '-30°C do +50°C',
+            'Waga': '305 g',
+            'Cena od': '1 287 zł',
+            'Najlepszy do': 'Magazyn, logistyka (bez DPM)',
+          },
+        },
+        {
+          name: 'Zebra DS3608-XR',
+          slug: 'zebra-ds3608-xr',
+          specs: {
+            'Wariant': 'Extended Range (daleki zasięg)',
+            'Sensor': 'Near 1280×800 + Far 1920×1080 (dual)',
+            'Zasięg maks. (20 mil C128)': '1 040 cm',
+            'AI Decoding': 'Nie',
+            'DPM / OCR': 'Nie / Nie',
+            'IP / Upadki': 'IP65+IP68 / 3,0 m',
+            'Temperatura pracy': '-30°C do +50°C',
+            'Waga': '308 g',
+            'Cena od': '2 417 zł',
+            'Najlepszy do': 'Magazyn wysokiego składowania, outdoor',
+          },
+        },
+      ],
+    },
+    applications: [
+      'Magazyny i centra dystrybucyjne',
+      'Doki przeładunkowe i cross-docking',
+      'Hale produkcyjne i linie montażowe',
+      'Mroźnie i chłodnie (do -30°C)',
+      'Retail — kasy samoobsługowe i stanowiska kasowe',
+      'Logistyka i transport — skanowanie palet i kontenerów',
+      'Elektronika i farmacja (wariant HD — kody od 2 mil)',
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: [],
+    faq: [
+      {
+        question: 'Co to jest AI decoding w Granit Ultra 2100i?',
+        answer: 'Honeywell Granit Ultra 2100i to pierwszy skaner przemysłowy z wbudowanym dekodowaniem opartym na sztucznej inteligencji (AI). Algorytmy AI integrują szybkie przetwarzanie obrazu z zaawansowanymi technikami dekodowania — według testów Honeywell na 6 kolekcjach kodów referencyjnych skaner jest o 45% szybszy niż poprzednia generacja (Granit XP). W praktyce oznacza to natychmiastowy odczyt nawet uszkodzonych, zabrudzonych i słabo wydrukowanych kodów.',
+      },
+      {
+        question: 'Czym różni się Granit Ultra 2100i SR od XR?',
+        answer: 'SR (Standard Range) czyta kody od kontaktu do ok. 1 m (UPC 13 mil do 63 cm, Code 128 20 mil do 103 cm) — uniwersalny wariant na stanowiska kasowe, przyjęcie towaru i kompletowanie zamówień. XR (Expanded Range) sięga do 10,85 m na kodach 100 mil Code 39 i do 2,8 m na Code 128 20 mil — idealny do magazynów średniego składowania i doków. Oba mają identyczną wytrzymałość IP65/IP68 i upadki z 3 m.',
+      },
+      {
+        question: 'Czy Granit Ultra 2100i działa w mroźni?',
+        answer: 'Tak — temperatura pracy od -30°C do +50°C. Podwójne uszczelnienie IP65 + IP68 chroni przed wilgocią, lodem i kondensacją. Skaner jest testowany na 20 upadków z 2,5 m w temperaturach od -30°C do +50°C przy 55% wilgotności — zaprojektowany do ciągłej pracy w mroźniach i chłodniach.',
+      },
+      {
+        question: 'Czy Granit Ultra 2100i odczytuje kody DPM i OCR?',
+        answer: 'Tak — Granit Ultra 2100i obsługuje Direct Part Mark (DPM), czyli kody naniesione bezpośrednio na metal, plastik, szkło i ceramikę (dot peen, laser etch, inkjet). Dodatkowo ma wbudowany OCR: OCR-A, OCR-B, MICR E-13B i SEMI Font (6–60 punktów) — do odczytu tekstu drukowanego na etykietach, tabliczkach znamionowych i dokumentach.',
+      },
+      {
+        question: 'Ile kodów naraz skanuje Granit Ultra 2100i?',
+        answer: 'Granit Ultra 2100i obsługuje Multi-Code — odczyt wielu kodów w polu widzenia jednym naciśnięciem spustu. Honeywell Data Format Editor (DFE) pozwala zorganizować odczytane dane w predefiniowanej kolejności i przesłać je do systemu WMS/ERP. Idealne do inwentaryzacji palet z wieloma etykietami.',
+      },
+      {
+        question: 'Czy Granit Ultra 2100i odczyta kody z ekranów?',
+        answer: 'Tak — Granit Ultra 2100i czyta kody 1D i 2D wyświetlane na ekranach smartfonów, tabletów i komputerów (mGR — mobile screen reading). Dodatkowo obsługuje Digimarc — niewidoczne cyfrowe znaki wodne w opakowaniach produktów.',
+      },
+      {
+        question: 'Jaka jest żywotność kabla i triggera Granit Ultra 2100i?',
+        answer: 'Kabel Granit Ultra 2100i jest testowany na 500 000 cykli zgięć — to ponad 3× więcej niż typowe skanery (150 000 cykli). Trigger jest przetestowany na 3 000 000 cykli naciśnięć. Przy 2 000 skanów dziennie kabel wytrzyma ponad 250 dni ciągłej pracy, a trigger ponad 4 lata — eliminując najczęstszą przyczynę awarii skanerów przemysłowych.',
+      },
+      {
+        question: 'Czym Granit Ultra 2100i różni się od Zebra DS3608?',
+        answer: 'Granit Ultra 2100i ma AI decoding (+45% szybciej), DPM i OCR w standardzie, sensor 1280×1080 px (vs 1280×800 w DS3608-SR), tolerancję ruchu 4 000 mm/s i trigger na 3 mln cykli. [Zebra DS3608-SR](/produkt/zebra-ds3608-sr) (od 1 287 zł) jest tańsza, lżejsza (305 g vs 330 g) i ma Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP) — czego Granit nie ma. Granit wygrywa na funkcjonalności, Zebra na cenie i łączności przemysłowej.',
+      },
+      {
+        question: 'Jakie interfejsy ma Granit Ultra 2100i?',
+        answer: 'USB 2.0, RS-232 i Keyboard Wedge (PS/2 TTL). Kable z opcją zasilania +/−12V do konwersji. Uwaga: Granit Ultra 2100i NIE ma Industrial Ethernet (EtherNet/IP, Profinet) — jeśli potrzebujesz integracji z PLC, rozważ [Zebra DS3608](/produkt/zebra-ds3608-sr) z natywnym Ethernet przemysłowym.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Honeywell Granit Ultra 2100i?',
+        answer: 'W klasie ultra-rugged SR: [Zebra DS3608-SR](/produkt/zebra-ds3608-sr) (od 1 287 zł, IP65/IP68, lżejsza, Industrial Ethernet). W klasie XR: [Zebra DS3608-XR](/produkt/zebra-ds3608-xr) (od 2 417 zł, zasięg do 32 m z podwójnym sensorem). W klasie HD: [Zebra DS3608-HD](/produkt/zebra-ds3608-hd) (od 1 808 zł, kody od 3 mil). Granit Ultra 2100i wyróżnia się AI decoding, DPM/OCR w standardzie i nagrodą Red Dot 2025 za ergonomię.',
+      },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://automation.honeywell.com/content/dam/sps/en/documents/productivity/hon-ia-pss-granit-ultra-2100i-datasheet-2.pdf', size: '0.6 MB' },
+      { name: 'Skrócona instrukcja obsługi (EN)', type: 'manual', url: '/docs/sps-ppr-2100-en-qs.pdf', size: '0.3 MB' },
+      { name: 'Strona produktu Honeywell Granit Ultra 2100i (EN)', type: 'manual', url: 'https://automation.honeywell.com/us/en/products/productivity-solutions/barcode-scanners/rugged-handheld/granit-ultra-2100i', size: 'Online' },
+    ],
+    videoUrl: 'https://play.vidyard.com/7892AioiLPseLy3kV242NY',
+    createdAt: '2026-03-03',
   },
 ]
 
@@ -32150,6 +32423,7 @@ export const products: Product[] = [
   ...mobilePrinters,
   ...scanners,
   ...newlandScanners,
+  ...honeywellScanners,
   ...newlandHR23Accessories,
   ...mobileComputers,
   ...datalogicMobileComputers,
