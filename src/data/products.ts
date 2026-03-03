@@ -184,7 +184,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208, DS3678-SR — gwarancja 5 lat. Skanery przewodowe i bezprzewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies i Newland — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Newland HR23 Dorada — ekonomiczny 2D z gwarancją 5 lat. DS3678-SR bezprzewodowy ultra-rugged do magazynów. DS9908 hybrydowy prezentacyjny do kas POS. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 31,
+    productCount: 32,
   },
   {
     id: 'tablety-przemyslowe',
@@ -826,8 +826,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Skanery kodów kreskowych przewodowe USB od 352 zł netto. Zebra DS2208 — imager 2D, IP52, 5 lat gwarancji. Do kas, aptek, biur i magazynów. Autoryzowany partner Zebra — doradztwo i serwis.',
     longDescription: 'Przewodowe czytniki kodów kreskowych (skanery USB / RS-232) — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania. Imager 2D odczytuje kody 1D, QR, DataMatrix i kody z ekranów. Zebra DS2208 (IP52, 5 lat gwarancji) — idealna na stałe stanowiska kasowe, apteki, przyjęcia towaru.',
     icon: 'scan',
-    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er', 'newland-hr23-dorada', 'newland-hr33-marlin', 'newland-hr11-aringa', 'newland-hr15-wahoo', 'newland-nvh300', 'honeywell-granit-ultra-2100i', 'honeywell-cbl-500-300-s00', 'honeywell-cbl-020-300-c00', 'honeywell-holster-industrial'],
-    productCount: 19,
+    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er', 'newland-hr23-dorada', 'newland-hr33-marlin', 'newland-hr11-aringa', 'newland-hr15-wahoo', 'newland-nvh300', 'honeywell-granit-ultra-2100i', 'honeywell-granit-xp-1990ixlr', 'honeywell-cbl-500-300-s00', 'honeywell-cbl-020-300-c00', 'honeywell-holster-industrial'],
+    productCount: 20,
   },
   {
     id: 'skanery-bezprzewodowe',
@@ -13627,6 +13627,236 @@ Dokumentacja: automation.honeywell.com/granit-ultra-2100i.`,
       { name: 'Strona produktu Honeywell Granit Ultra 2100i (EN)', type: 'manual', url: 'https://automation.honeywell.com/us/en/products/productivity-solutions/barcode-scanners/rugged-handheld/granit-ultra-2100i', size: 'Online' },
     ],
     videoUrl: 'https://play.vidyard.com/7892AioiLPseLy3kV242NY',
+    createdAt: '2026-03-03',
+  },
+  {
+    id: 'honeywell-granit-xp-1990ixlr',
+    slug: 'honeywell-granit-xp-1990ixlr',
+    name: 'Honeywell Granit XP 1990iXLR',
+    sameAs: 'https://automation.honeywell.com/us/en/products/productivity-solutions/barcode-scanners/rugged-handheld/granit-xp-1990ixlr-scanner',
+    seoTitle: 'Honeywell Granit XP 1990iXLR — skaner dalekiego zasięgu 24 m, ultra-rugged IP67 | przewodowy',
+    seoDescription: 'Honeywell Granit XP 1990iXLR — skaner kodów kreskowych przemysłowy dalekiego zasięgu do 24 m (100 mil). IP67+IP65, upadki 3 m, -30°C do +50°C, 7 000 obrotów. Czytnik do magazynu wysokiego składowania. Dual sensor XLR+Near.',
+    shortDescription: 'Honeywell Granit XP 1990iXLR — skaner przewodowy ultra-rugged dalekiego zasięgu do 24 m, dual sensor 1920×1080+1280×800, IP67+IP65, upadki 3 m, -30°C do +50°C',
+    description: `Dla kogo? Honeywell Granit XP 1990iXLR to ultra-wytrzymały skaner kodów kreskowych dalekiego zasięgu (XLR — eXtra Long Range) — zaprojektowany do magazynów wysokiego składowania, centrów dystrybucyjnych, doków przeładunkowych i hal produkcyjnych. Jeśli potrzebujesz czytnika kodów kreskowych, który odczyta etykiety paletowe na wysokości 24 metrów (100 mil Code 39) — Granit XP 1990iXLR jest jednym z niewielu skanerów przemysłowych o takim zasięgu na rynku.
+
+Podwójny sensor (dual imager): Far — 1920×1080 px Rolling Shutter do skanowania dalekiego zasięgu, Near — 1280×800 px Global Shutter do bliskiego pola (czytanie etykiet kurierskich, kodów z ekranów i dokumentów). Dzięki technologii XLR skanuje kody UPC 13 mil do 2,24 m i 100 mil rack labels do 24 m — bez przełączania trybów, automatyczny wybór sensora. Tolerancja ruchu 4 500 mm/s — najszybsza w klasie skanerów przemysłowych Honeywell.
+
+Trzy warianty zasięgu w jednej rodzinie: XLR Extended Range (24 m), XR Extended Range (11,26 m na 100 mil), SR Standard Range (do 88 cm na 20 mil Code 39). Wariant XLR czyta 20 mil Code 39 do 5,94 m — idealne do skanowania z wózka widłowego i z rampy przeładunkowej.
+
+Wytrzymałość klasy ultra-rugged: upadki z 3 m na beton (MIL-STD-810G), 2,4 m z 20 upadków, 1,8 m z 50 upadków od -30°C do +50°C. IP67 + IP65 (pyłoszczelny, odporny na krótkotrwałe zanurzenie). 7 000 obrotów w tumbler teście (1 m). Małe, głęboko osadzone okno skanera odporne na zarysowania i uderzenia — kluczowy element uszczelnienia chroniący przed pyłem i wilgocią.
+
+Interfejsy: USB, RS-232 TTL, Keyboard Wedge (PS/2 TTL). Zasilanie 4,0–5,5 VDC, pobór mocy 2,35 W (470 mA @ 5 VDC). Dekodowanie: standardowe kody 1D (Code 39, Code 128, UPC/EAN, GS1 DataBar), 2D (QR Code, Data Matrix, Aztec, PDF417), Postal, Digimarc, DOT Code, OCR. Roll ±360°, Pitch ±45°, Skew ±65°.
+
+Zarządzanie flotą: Honeywell Scanner Management Utility (SMU) — centralne wdrażanie firmware, konfiguracji i aktualizacji na skanerach w całym magazynie. Honeywell Operational Intelligence — analityka skanowania w czasie rzeczywistym, statystyki wydajności operatorów.
+
+Porównanie z następcą: [Honeywell Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (nowa generacja) ma AI decoding (+45% szybciej), IP68 (zanurzalny, vs IP67 w 1990iXLR), 7 500 vs 7 000 obrotów tumble, ale 1990iXLR oferuje szybszą tolerancję ruchu (4 500 vs 4 000 mm/s) i jest lżejszy (320 vs 330 g). Granit XP 1990iXLR to sprawdzony model z historią udanych wdrożeń w największych centrach logistycznych.
+
+Gwarancja producenta 3 lata. Wymiary 192 × 76 × 100 mm, waga 320 g. Dokumentacja: automation.honeywell.com/granit-xp-1990ixlr-scanner.`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-przewodowe'],
+    manufacturerId: 'honeywell',
+    images: [],
+    imageDescriptions: [],
+    tags: ['magazyn', 'logistyka', 'produkcja'],
+    availability: 'on-order',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Typ skanera', value: 'Area imager 2D ultra-rugged, przewodowy, daleki zasięg (XLR)' },
+      { name: 'Sensor Far (XLR)', value: '1920×1080 px, Rolling Shutter' },
+      { name: 'Sensor Near', value: '1280×800 px, Global Shutter' },
+      { name: 'Zasięg XLR (100 mil Code 39)', value: '24 m (79 ft)' },
+      { name: 'Zasięg XLR (100 mil DataMatrix)', value: '11,4 m (37,4 ft)' },
+      { name: 'Zasięg XLR (20 mil Code 39)', value: '15 mm – 5 944 mm (5,9 m)' },
+      { name: 'Zasięg XLR (13 mil UPC)', value: '11 mm – 2 244 mm (2,24 m)' },
+      { name: 'Zasięg XLR (10 mil Code 128)', value: '48 mm – 2 202 mm (2,2 m)' },
+      { name: 'Zasięg XLR (10 mil DataMatrix)', value: '89 mm – 393 mm' },
+      { name: 'Zasięg XLR (5 mil Code 39)', value: '87 mm – 370 mm' },
+      { name: 'Zasięg XR (100 mil Code 39)', value: '11,26 m (37 ft)' },
+      { name: 'Zasięg XR (13 mil UPC)', value: '0 – 1 548 mm (1,55 m)' },
+      { name: 'Zasięg XR (20 mil Code 39)', value: '0 – 2 368 mm (2,37 m)' },
+      { name: 'Zasięg SR (13 mil UPC)', value: '0 – 517 mm' },
+      { name: 'Zasięg SR (20 mil Code 39)', value: '0 – 883 mm' },
+      { name: 'Tolerancja ruchu', value: 'Do 4 500 mm/s (177 in/s)' },
+      { name: 'Skanowane kody 1D', value: 'Code 39, Code 128, Code 93, Code 11, EAN/UPC, Codabar, GS1 DataBar, Postal' },
+      { name: 'Skanowane kody 2D', value: 'QR Code, Data Matrix, Aztec, PDF417, Maxicode, DOT Code, Digimarc' },
+      { name: 'OCR', value: 'Tak (OCR symbologies)' },
+      { name: 'Kontrast druku', value: 'Od 20%' },
+      { name: 'Tolerancja obrotu/pochylenia', value: '±360° roll, ±45° pitch, ±65° skew' },
+      { name: 'Oświetlenie otoczenia', value: '0–100 000 lux' },
+      { name: 'Interfejsy', value: 'USB, RS-232 TTL, Keyboard Wedge' },
+      { name: 'Zasilanie', value: '4,0–5,5 VDC; 2,35 W (470 mA @ 5 VDC)' },
+      { name: 'Pobór mocy standby', value: '0,5 W (100 mA @ 5 VDC)' },
+      { name: 'Klasa szczelności', value: 'IP67 + IP65' },
+      { name: 'Odporność na upadki', value: '3,0 m na beton (MIL-STD-810G), 2,4 m (20×), 1,8 m (50× od -30°C do +50°C)' },
+      { name: 'Tumble test', value: '7 000 obrotów (1,0 m), IEC 60068-2-32' },
+      { name: 'ESD', value: '±20 kV (powietrze), ±8 kV (kontakt)' },
+      { name: 'Temperatura pracy', value: '-30°C do +50°C (z kablem industrial-grade)' },
+      { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
+      { name: 'Wilgotność', value: 'Do 95% RH, bez kondensacji' },
+      { name: 'Wymiary (D × S × W)', value: '192 × 76 × 100 mm' },
+      { name: 'Waga', value: '320 g' },
+      { name: 'Wskaźniki', value: 'Dioda LED dobrego odczytu, sygnał dźwiękowy (regulowany), wibracja (regulowana)' },
+      { name: 'Gwarancja', value: '36 miesięcy (3 lata)' },
+    ],
+    variants: [
+      {
+        partNumber: '1990IXLR-3USB-N',
+        name: 'Granit XP 1990iXLR — zestaw USB z wibracją, kabel industrial',
+        availability: 'on-order',
+        attributes: {
+          'Zestaw': 'USB Kit (industrial)',
+          'Wibracja': 'Tak',
+        },
+      },
+      {
+        partNumber: '1990IXLR-3USB-R',
+        name: 'Granit XP 1990iXLR — zestaw USB',
+        availability: 'on-order',
+        attributes: {
+          'Zestaw': 'USB Kit',
+        },
+      },
+      {
+        partNumber: '1990IXLR-3SER-N',
+        name: 'Granit XP 1990iXLR — zestaw RS-232 z wibracją',
+        availability: 'on-order',
+        attributes: {
+          'Zestaw': 'RS-232 Kit',
+          'Wibracja': 'Tak',
+        },
+      },
+      {
+        partNumber: '1990IXLR-3-N',
+        name: 'Granit XP 1990iXLR — sam skaner z wibracją',
+        availability: 'on-order',
+        attributes: {
+          'Zestaw': 'Sam skaner',
+          'Wibracja': 'Tak',
+        },
+      },
+      {
+        partNumber: '1990IXLR-3-R',
+        name: 'Granit XP 1990iXLR — sam skaner',
+        availability: 'on-order',
+        attributes: {
+          'Zestaw': 'Sam skaner',
+        },
+      },
+    ],
+    comparison: {
+      title: 'Porównanie skanerów dalekiego zasięgu: Granit XP 1990iXLR vs Granit Ultra 2100i vs Zebra DS3608-XR',
+      models: [
+        {
+          name: 'Granit XP 1990iXLR',
+          slug: 'honeywell-granit-xp-1990ixlr',
+          highlight: true,
+          specs: {
+            'Zasięg maks.': '24 m (100 mil Code 39)',
+            'Sensor': 'Dual: Far 1920×1080 + Near 1280×800',
+            'AI Decoding': 'Nie',
+            'Tolerancja ruchu': '4 500 mm/s',
+            'IP / Upadki': 'IP67+IP65 / 3,0 m',
+            'Tumble': '7 000 obrotów',
+            'Temperatura pracy': '-30°C do +50°C',
+            'Waga': '320 g',
+            'Najlepszy do': 'Magazyn WS, doki, daleki zasięg',
+          },
+        },
+        {
+          name: 'Granit Ultra 2100i XR',
+          slug: 'honeywell-granit-ultra-2100i',
+          specs: {
+            'Zasięg maks.': '10,85 m (100 mil Code 39)',
+            'Sensor': '1280×1080 px (Near+Far)',
+            'AI Decoding': 'Tak (+45%)',
+            'Tolerancja ruchu': '4 000 mm/s',
+            'IP / Upadki': 'IP65+IP68 / 3,0 m',
+            'Tumble': '7 500 obrotów',
+            'Temperatura pracy': '-30°C do +50°C',
+            'Waga': '330 g',
+            'Najlepszy do': 'Magazyn ogólny, DPM, uszkodzone kody',
+          },
+        },
+        {
+          name: 'Zebra DS3608-XR',
+          slug: 'zebra-ds3608-xr',
+          specs: {
+            'Zasięg maks.': '32 m (100 mil Code 39)',
+            'Sensor': 'Dual: Near 1280×800 + Far 1920×1080',
+            'AI Decoding': 'Nie',
+            'Tolerancja ruchu': '—',
+            'IP / Upadki': 'IP65+IP68 / 3,0 m',
+            'Tumble': '5 000 obrotów',
+            'Temperatura pracy': '-30°C do +50°C',
+            'Waga': '308 g',
+            'Najlepszy do': 'Outdoor, magazyn WS, Industrial Ethernet',
+          },
+        },
+      ],
+    },
+    applications: [
+      'Magazyny wysokiego składowania — skanowanie etykiet paletowych na 24 m',
+      'Centra dystrybucyjne i cross-docking',
+      'Doki przeładunkowe — odczyt z rampy i wózka widłowego',
+      'Hale produkcyjne i linie montażowe',
+      'Mroźnie i chłodnie (do -30°C)',
+      'Logistyka i transport — skanowanie kontenerów i palet',
+      'Inwentaryzacja na dużych powierzchniach',
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: ['honeywell-cbl-500-300-s00', 'honeywell-cbl-020-300-c00', 'honeywell-holster-industrial'],
+    faq: [
+      {
+        question: 'Jaki jest maksymalny zasięg skanera Honeywell Granit XP 1990iXLR?',
+        answer: 'Granit XP 1990iXLR w trybie XLR (eXtra Long Range) odczytuje kody 100 mil Code 39 na odległość do 24 m (79 ft) oraz 100 mil Data Matrix do 11,4 m. Kody UPC 13 mil — do 2,24 m, Code 128 10 mil — do 2,2 m. To jeden z najdłuższych zasięgów wśród przewodowych skanerów przemysłowych — idealny do magazynów wysokiego składowania.',
+      },
+      {
+        question: 'Czym różni się Granit XP 1990iXLR od Granit Ultra 2100i?',
+        answer: '[Honeywell Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) to następca serii Granit XP — ma AI decoding (+45% szybsze skanowanie), lepszą klasę IP65+IP68 (zanurzalny) vs IP67+IP65 w 1990iXLR i 7 500 vs 7 000 obrotów tumble. Natomiast 1990iXLR ma szybszą tolerancję ruchu (4 500 vs 4 000 mm/s), jest lżejszy (320 vs 330 g) i bardziej kompaktowy (100 vs 139,5 mm wysokości). W trybie XLR oba skanery czytają do 24 m.',
+      },
+      {
+        question: 'Czy Granit XP 1990iXLR działa w mroźni?',
+        answer: 'Tak — temperatura pracy od -30°C do +50°C (z kablem industrial-grade). Uszczelnienie IP67 + IP65 chroni przed wilgocią, lodem i kondensacją. Skaner jest testowany na 50 upadków z 1,8 m w temperaturach od -30°C do +50°C. Do ciągłej pracy w mroźniach i chłodniach bez konieczności aklimatyzacji.',
+      },
+      {
+        question: 'Jakie interfejsy ma Granit XP 1990iXLR?',
+        answer: 'USB, RS-232 TTL i Keyboard Wedge (PS/2 TTL). Warianty z sufiksem -3USB zawierają kabel USB w zestawie, -3SER kabel RS-232. Warianty -3-N i -3-R to sam skaner bez kabla — kabel trzeba dokupić osobno (np. CBL-500-300-S00 do USB lub CBL-020-300-C00 do RS-232).',
+      },
+      {
+        question: 'Co oznacza dual sensor w Granit XP 1990iXLR?',
+        answer: 'Granit XP 1990iXLR ma dwa sensory obrazowania: Far — matryca 1920×1080 px (Rolling Shutter) do skanowania na duże odległości (do 24 m) oraz Near — matryca 1280×800 px (Global Shutter) do bliskiego pola i skanowania kodów z ekranów. Skaner automatycznie przełącza się między sensorami w zależności od odległości — nie trzeba ręcznie zmieniać trybu.',
+      },
+      {
+        question: 'Czym różnią się warianty XLR, XR i SR w rodzinie Granit XP 1990i?',
+        answer: 'XLR (eXtra Long Range) — zasięg do 24 m na kodach 100 mil, idealny do magazynów wysokiego składowania. XR (eXtended Range) — zasięg do 11,26 m na 100 mil i do 1,55 m na UPC, do magazynów średniego składowania. SR (Standard Range) — zasięg do 88 cm na 20 mil Code 39, do kas, przyjęcia towaru i stanowisk kompletacji. Wszystkie warianty mają identyczną wytrzymałość: IP67+IP65, upadki z 3 m, 7 000 obrotów tumble.',
+      },
+      {
+        question: 'Czy Granit XP 1990iXLR ma wibrację (vibration feedback)?',
+        answer: 'Warianty z sufiksem -N (np. 1990IXLR-3USB-N, 1990IXLR-3-N) mają wbudowany silnik wibracyjny z regulacją intensywności — potwierdzenie odczytu wibracja + dźwięk + LED. Warianty -R nie mają wibracji, potwierdzenie tylko dźwięk + LED. Wibracja jest kluczowa w hałaśliwych środowiskach (hale produkcyjne, doki), gdzie sygnał dźwiękowy jest niesłyszalny.',
+      },
+      {
+        question: 'Jak Granit XP 1990iXLR wypada na tle Zebra DS3608-XR?',
+        answer: '[Zebra DS3608-XR](/produkt/zebra-ds3608-xr) ma nieco dłuższy zasięg (do 32 m vs 24 m na 100 mil Code 39), IP65+IP68 (lepsza wodoodporność) i Industrial Ethernet (Profinet, EtherNet/IP) — czego Granit nie ma. Granit XP 1990iXLR oferuje szybszą tolerancję ruchu (4 500 mm/s) i więcej obrotów tumble (7 000 vs 5 000). Oba skanery mają dual sensor i upadki z 3 m (MIL-STD-810G).',
+      },
+      {
+        question: 'Jaka jest wytrzymałość skanera Granit XP 1990iXLR?',
+        answer: 'Upadki: 3 m na beton (MIL-STD-810G, 25°C), 2,4 m z 20 upadków (25°C, 55% RH), 1,8 m z 50 upadków od -30°C do +50°C. Tumble: 7 000 obrotów (1 m) wg IEC 60068-2-32. IP67 (krótkotrwałe zanurzenie 1 m/30 min) + IP65 (strumień wody). ESD ±20 kV (powietrze), ±8 kV (kontakt). Głęboko osadzone okno skanera odporne na zarysowania.',
+      },
+      {
+        question: 'Czy Granit XP 1990iXLR skanuje kody z ekranów i Digimarc?',
+        answer: 'Tak — sensor Near (1280×800 px, Global Shutter) odczytuje kody 1D i 2D z ekranów smartfonów, tabletów i monitorów (mGR). Skaner obsługuje także Digimarc (niewidoczne znaki wodne cyfrowe) i DOT Code. Dekodowanie standardowe obejmuje 1D, PDF417, 2D, Postal i OCR.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Honeywell Granit XP 1990iXLR?',
+        answer: 'W klasie ultra-long range: [Zebra DS3608-XR](/produkt/zebra-ds3608-xr) (do 32 m, Industrial Ethernet, IP65+IP68). Nowsza generacja: [Honeywell Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (AI decoding +45%, IP68, wariant XLR do 30 m). W klasie standard range ultra-rugged: [Zebra DS3608-SR](/produkt/zebra-ds3608-sr) (od 1 287 zł, do 3,7 m). Granit XP 1990iXLR wyróżnia się sprawdzoną historią wdrożeń, dual sensor i tolerancją ruchu 4 500 mm/s.',
+      },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: '/docs/sps-ppr-granit-xp-1990ixlr-scanner-data-sheet-en-a4.pdf', size: '0.1 MB' },
+      { name: 'Skrócona instrukcja obsługi (EN)', type: 'manual', url: '/docs/sps-ppr-1990-en-qs.pdf', size: '0.5 MB' },
+      { name: 'Strona produktu Honeywell Granit XP 1990iXLR (EN)', type: 'manual', url: 'https://automation.honeywell.com/us/en/products/productivity-solutions/barcode-scanners/rugged-handheld/granit-xp-1990ixlr-scanner', size: 'Online' },
+    ],
     createdAt: '2026-03-03',
   },
 ]
