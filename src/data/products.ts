@@ -14306,8 +14306,6 @@ Gwarancja producenta 3 lata (bateria 1 rok). Zarządzanie flotą: Honeywell SMU,
 
 Koszt posiadania (TCO): Granit Ultra 2105i z baterią na 100 000 skanów, gwarancją 3 lata, IP65/IP68 i upadkami z 3 m — skaner projektowany na 5+ lat intensywnej pracy bez kabla. W porównaniu z bezprzewodowymi skanerami IP42/IP52 amortyzuje się po ok. 12–16 miesiącach dzięki eliminacji kosztów napraw, wymiany kabli i przestojów.
 
-Różnica vs Granit Ultra 2100i (przewodowy): 2105i to bezprzewodowa wersja z Bluetooth 4.2 i baterią 3 300 mAh. Skaner waży 425 g (vs 330 g), temperatura pracy -20°C (vs -30°C u 2100i). Pozostałe parametry — sensor, AI decoding, IP65/IP68, upadki 3 m, odczyt DPM/OCR — identyczne. Do zastosowań wymagających pracy w mroźni poniżej -20°C zalecamy przewodowy [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i).
-
 Dokumentacja: automation.honeywell.com/granit-ultra-2105i.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-bezprzewodowe'],
