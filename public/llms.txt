@@ -201,13 +201,14 @@ A: Ranking TAKMA (luty 2026): 1. Zebra TC22 (2 417 zł), 2. Datalogic Memor K (2
 - Zebra TC501 (AI, RFID, Wi-Fi 7, od 3 730 zł): https://www.takma.com.pl/produkt/zebra-tc501
 - Zebra TC701 (ultra-rugged AI, RFID, od ~4 017 zł): https://www.takma.com.pl/produkt/zebra-tc701
 
-## Skanery kodów kreskowych — oferta (4 modele)
+## Skanery kodów kreskowych — oferta (5 modeli)
 
-### Skanery przewodowe USB (4 modele, od 352 zł netto)
+### Skanery przewodowe USB (5 modeli, od 352 zł netto)
 - Zebra DS2208 (imager 2D, USB, IP52, 5 lat gwarancji, od 352 zł): https://www.takma.com.pl/produkt/zebra-ds2208
 - Honeywell Granit Ultra 2100i (ultra-rugged 2D z AI, IP65/IP68, 3 m, -30°C, SR/XR do 10,85 m, Red Dot 2025, od 1 760 zł): https://www.takma.com.pl/produkt/honeywell-granit-ultra-2100i
 - Honeywell Granit XP 1990iXLR (ultra-rugged daleki zasięg 24 m, dual sensor, IP67+IP65, 3 m, -30°C, 7 000 tumble): https://www.takma.com.pl/produkt/honeywell-granit-xp-1990ixlr
 - Honeywell Granit XP 1990iSR (ultra-rugged standardowy zasięg 84 cm, single sensor 1280×800, IP67+IP65, 3 m, -30°C, od 1 726 zł): https://www.takma.com.pl/produkt/honeywell-granit-xp-1990isr
+- Honeywell Granit XP 1990iXR (ultra-rugged FlexRange od kontaktu do 10 m, single sensor 1280×800, IP67+IP65, 3 m, -30°C, 7 000 tumble, od 1 985 zł): https://www.takma.com.pl/produkt/honeywell-granit-xp-1990ixr
 
 ## Bestsellery
 - Zebra ZD421t — najpopularniejsza biurkowa drukarka termotransferowa

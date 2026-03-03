@@ -184,7 +184,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208, DS3678-SR — gwarancja 5 lat. Skanery przewodowe i bezprzewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies i Newland — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Newland HR23 Dorada — ekonomiczny 2D z gwarancją 5 lat. DS3678-SR bezprzewodowy ultra-rugged do magazynów. DS9908 hybrydowy prezentacyjny do kas POS. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 30,
+    productCount: 31,
   },
   {
     id: 'tablety-przemyslowe',
@@ -826,8 +826,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Skanery kodów kreskowych przewodowe USB od 352 zł netto. Zebra DS2208 — imager 2D, IP52, 5 lat gwarancji. Do kas, aptek, biur i magazynów. Autoryzowany partner Zebra — doradztwo i serwis.',
     longDescription: 'Przewodowe czytniki kodów kreskowych (skanery USB / RS-232) — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania. Imager 2D odczytuje kody 1D, QR, DataMatrix i kody z ekranów. Zebra DS2208 (IP52, 5 lat gwarancji) — idealna na stałe stanowiska kasowe, apteki, przyjęcia towaru.',
     icon: 'scan',
-    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er', 'newland-hr23-dorada', 'newland-hr33-marlin', 'newland-hr11-aringa', 'newland-hr15-wahoo', 'newland-nvh300', 'honeywell-granit-ultra-2100i', 'honeywell-granit-xp-1990ixlr', 'honeywell-granit-xp-1990isr'],
-    productCount: 18,
+    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er', 'newland-hr23-dorada', 'newland-hr33-marlin', 'newland-hr11-aringa', 'newland-hr15-wahoo', 'newland-nvh300', 'honeywell-granit-ultra-2100i', 'honeywell-granit-xp-1990ixlr', 'honeywell-granit-xp-1990isr', 'honeywell-granit-xp-1990ixr'],
+    productCount: 19,
   },
   {
     id: 'skanery-bezprzewodowe',
@@ -14049,6 +14049,236 @@ Gwarancja producenta 3 lata. Wymiary 192 × 76 × 100 mm, waga 320 g. Dokumentac
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: '/docs/sps-ppr-granit-xp-1990isr-scanner-data-sheet-en-a4.pdf', size: '0.2 MB' },
       { name: 'Skrócona instrukcja obsługi (EN)', type: 'manual', url: '/docs/sps-ppr-1990-en-qs.pdf', size: '0.5 MB' },
       { name: 'Strona produktu Honeywell Granit XP 1990iSR (EN)', type: 'manual', url: 'https://automation.honeywell.com/us/en/products/productivity-solutions/barcode-scanners/rugged-handheld/granit-1990isr-ultra-rugged-standard-range-scanner', size: 'Online' },
+    ],
+    createdAt: '2026-03-03',
+  },
+  {
+    id: 'honeywell-granit-xp-1990ixr',
+    slug: 'honeywell-granit-xp-1990ixr',
+    name: 'Honeywell Granit XP 1990iXR',
+    seoTitle: 'Honeywell Granit XP 1990iXR — skaner FlexRange ultra-rugged | od kontaktu do 10 m | od 1 985 zł',
+    seoDescription: 'Skaner Honeywell Granit XP 1990iXR FlexRange — czyta kody od kontaktu do 10 m bez przełączania trybów. IP67+IP65, upadek 3 m, 7 000 tumble, -30°C. Imager 2D 1280×800 px, 1D/2D/QR/OCR/DotCode. Od 1 985 zł netto w TAKMA.',
+    shortDescription: 'Skaner ultra-rugged FlexRange — od kontaktu do 10 m, IP67+IP65, 3 m drop, 7 000 tumble, -30°C do +50°C, imager 1280×800, USB/RS-232',
+    description: `Dla kogo? Honeywell Granit XP 1990iXR to „złoty środek" serii Granit XP — skaner FlexRange łączący bliski odczyt (od kontaktu) z rozszerzonym zasięgiem do 10 m na dużych etykietach regałowych. Jeden skaner zamiast dwóch: nie potrzebujesz osobnego czytnika bliskiego pola i dalekiego zasięgu.
+
+Technologia FlexRange: Platforma obrazowania nowej generacji z sensorem 1280×800 px automatycznie dostosowuje ogniskową — czytasz kody 5 mil Code 39 z 2 cm, kody UPC 13 mil do 1,5 m, a etykiety regałowe 100 mil (2,54 mm) z dystansu do 10 m (33 ft). Tolerancja ruchu do 4 500 mm/s pozwala skanować z ręki bez zatrzymywania — idealne na wózkach widłowych i stanowiskach pick & pack.
+
+Wytrzymałość ultra-rugged: IP67 (zanurzenie 1 m/30 min) + IP65 (strumień wody), upadki z 3 m na beton (MIL-STD-810G), 7 000 przetaczań z 1 m oraz praca od -30°C do +50°C. Głęboko osadzone okno skanera minimalizuje uszkodzenia mechaniczne — wytrzymuje upadki z doków, wózków widłowych i kontenerów.
+
+Symbologie: 1D (Code 128, EAN/UPC, Code 39, GS1 DataBar, ITF), 2D (QR, Data Matrix, PDF417, Aztec, MaxiCode, DotCode), OCR, Digimarc. Czyta kody uszkodzone, zamazane, słabo wydrukowane i pokryte brudem.
+
+Interfejsy: USB HID (plug-and-play), RS-232 TTL (5V), Keyboard Wedge. Kompatybilny z systemami WMS, ERP (SAP, Subiekt GT), kasami POS i terminalami. Zarządzanie flotą przez Honeywell Scanner Management Utility (SMU).
+
+Porównanie z rodziną Granit XP: 1990iSR (Standard Range, do 84 cm) → 1990iXR FlexRange (do 10 m) → 1990iXLR (eXtra Long Range, do 24 m). Wszystkie mają identyczną obudowę ultra-rugged (IP67, 3 m, 7 000 tumble). Dla 90% operacji magazynowych FlexRange (XR) to optymalny wybór — skanuje od kontaktu do 10 m, co pokrywa większość wysokości regałów.
+
+Pełna specyfikacja techniczna w karcie katalogowej Honeywell: wymiary, zasięgi skanowania, symbologie, certyfikaty.`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-przewodowe'],
+    manufacturerId: 'honeywell',
+    priceFrom: 1985,
+    images: [
+      '/images/products/honeywell-granit-xp-1990ixr.png',
+      '/images/products/honeywell-granit-xp-1990ixr-2.png',
+    ],
+    imageDescriptions: [
+      'Honeywell Granit XP 1990iXR — widok z przodu, skaner FlexRange ultra-rugged z kablem USB',
+      'Honeywell Granit XP 1990iXR — widok z boku, głęboko osadzone okno skanera i uchwyt ergonomiczny',
+    ],
+    tags: ['magazyn', 'logistyka', 'produkcja'] as ProductTag[],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: '1990IXR-3USB-R / 1990IXR-3SER-R / 1990IXR-3-R' },
+      { name: 'Producent', value: 'Honeywell' },
+      { name: 'Seria', value: 'Granit XP 1990i' },
+      { name: 'Wariant', value: 'XR — FlexRange (od kontaktu do 10 m)' },
+      { name: 'Typ skanera', value: 'Ręczny, przewodowy' },
+      { name: 'Technologia', value: 'Area imager (CMOS)' },
+      { name: 'Sensor', value: '1280 × 800 px' },
+      { name: 'Pole widzenia', value: '40° (H) × 30° (V)' },
+      { name: 'Symbologie 1D', value: 'Code 128, Code 39, Code 93, UPC/EAN, Codabar, ITF, GS1 DataBar, MSI, Plessey' },
+      { name: 'Symbologie 2D', value: 'QR Code, Data Matrix, PDF417, Aztec, MaxiCode, Micro QR, Micro PDF417, DotCode' },
+      { name: 'Dodatkowe formaty', value: 'OCR-A/B, Digimarc, kody pocztowe' },
+      { name: 'Zasięg — UPC 13 mil', value: 'Od kontaktu do 1,52 m (5 ft)' },
+      { name: 'Zasięg — Code 39 5 mil', value: '20 mm – 220 mm' },
+      { name: 'Zasięg — Code 39 20 mil', value: 'Od kontaktu do 2,24 m' },
+      { name: 'Zasięg — Code 39 100 mil', value: 'Do 10 m (33 ft)' },
+      { name: 'Zasięg — Code 128 10.4 mil', value: '3 mm – 343 mm' },
+      { name: 'Zasięg — Code 128 70 mil', value: '136 mm – 7 240 mm (7,2 m)' },
+      { name: 'Zasięg — Data Matrix 10 mil', value: '30 mm – 220 mm' },
+      { name: 'Zasięg — QR Code 20 mil', value: 'Od kontaktu do 484 mm' },
+      { name: 'Tolerancja ruchu', value: 'Do 4 500 mm/s (177 in/s)' },
+      { name: 'Kąty skanowania', value: 'Skew ±65°, Pitch ±45°, Roll 360°' },
+      { name: 'Min. kontrast druku', value: '20% różnica reflektancji' },
+      { name: 'Jasność otoczenia', value: '0 – 100 000 lux' },
+      { name: 'Interfejsy', value: 'USB HID, RS-232 TTL, Keyboard Wedge' },
+      { name: 'IP', value: 'IP67 + IP65' },
+      { name: 'Upadki', value: '3 m na beton (MIL-STD-810G); 50× z 2 m od -30°C do +50°C' },
+      { name: 'Tumble', value: '7 000 × 1 m (IEC 60068-2-32)' },
+      { name: 'ESD', value: '±20 kV (powietrze), ±8 kV (kontakt)' },
+      { name: 'Temperatura pracy', value: '-30°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
+      { name: 'Wilgotność', value: 'Do 95% RH (bez kondensacji)' },
+      { name: 'Zasilanie', value: '2,35 W (470 mA @ 5 VDC), standby 0,5 W' },
+      { name: 'Wymiary', value: '192 × 76 × 100 mm' },
+      { name: 'Waga', value: '320 g (bez kabla)' },
+      { name: 'Gwarancja', value: '3 lata (producent)' },
+    ],
+    variants: [
+      {
+        name: 'Granit XP 1990iXR — zestaw USB (kabel 3 m)',
+        partNumber: '1990IXR-3USB-R',
+        priceFrom: 1985,
+        availability: 'available' as const,
+        attributes: {
+          'Interfejs': 'USB',
+          'Kabel': 'Prosty 3 m',
+        },
+      },
+      {
+        name: 'Granit XP 1990iXR — zestaw RS-232 (kabel 3 m)',
+        partNumber: '1990IXR-3SER-R',
+        priceFrom: 2083,
+        availability: 'available' as const,
+        attributes: {
+          'Interfejs': 'RS-232',
+          'Kabel': 'Spiralny 3 m',
+        },
+      },
+      {
+        name: 'Granit XP 1990iXR — sam skaner (bez kabla)',
+        partNumber: '1990IXR-3-R',
+        priceFrom: 2023,
+        availability: 'available' as const,
+        attributes: {
+          'Interfejs': 'Multi-IF (USB/RS-232/KBW)',
+          'Kabel': 'Brak — zamów osobno',
+        },
+      },
+    ],
+    comparison: {
+      title: 'Porównanie skanerów ultra-rugged Honeywell Granit: 1990iXR vs 1990iSR vs 1990iXLR vs Ultra 2100i',
+      models: [
+        {
+          name: 'Granit XP 1990iXR',
+          slug: 'honeywell-granit-xp-1990ixr',
+          highlight: true,
+          specs: {
+            'Zasięg': 'FlexRange — od kontaktu do 10 m',
+            'Sensor': '1280×800 px (single)',
+            'AI Decoding': 'Nie',
+            'Tolerancja ruchu': '4 500 mm/s',
+            'IP / Upadki': 'IP67+IP65 / 3,0 m',
+            'Tumble': '7 000 obrotów',
+            'Waga': '320 g',
+            'Cena od': '1 985 zł',
+            'Najlepszy do': 'Magazyn — bliski + średni zasięg',
+          },
+        },
+        {
+          name: 'Granit XP 1990iSR',
+          slug: 'honeywell-granit-xp-1990isr',
+          specs: {
+            'Zasięg': 'SR — do 84 cm (20 mil)',
+            'Sensor': '1280×800 px (single)',
+            'AI Decoding': 'Nie',
+            'Tolerancja ruchu': '4 500 mm/s',
+            'IP / Upadki': 'IP67+IP65 / 3,0 m',
+            'Tumble': '7 000 obrotów',
+            'Waga': '320 g',
+            'Cena od': '1 726 zł',
+            'Najlepszy do': 'Kasy, przyjęcie towaru, bliski zasięg',
+          },
+        },
+        {
+          name: 'Granit XP 1990iXLR',
+          slug: 'honeywell-granit-xp-1990ixlr',
+          specs: {
+            'Zasięg': 'XLR — do 24 m (100 mil)',
+            'Sensor': 'Dual: Far 1920×1080 + Near 1280×800',
+            'AI Decoding': 'Nie',
+            'Tolerancja ruchu': '4 500 mm/s',
+            'IP / Upadki': 'IP67+IP65 / 3,0 m',
+            'Tumble': '7 000 obrotów',
+            'Waga': '320 g',
+            'Cena od': '2 417 zł',
+            'Najlepszy do': 'Magazyn WS, doki, daleki zasięg',
+          },
+        },
+        {
+          name: 'Granit Ultra 2100i SR',
+          slug: 'honeywell-granit-ultra-2100i',
+          specs: {
+            'Zasięg': 'SR — do 103 cm (20 mil C128)',
+            'Sensor': '1280×1080 px',
+            'AI Decoding': 'Tak (+45%)',
+            'Tolerancja ruchu': '4 000 mm/s',
+            'IP / Upadki': 'IP65+IP68 / 3,0 m',
+            'Tumble': '7 500 obrotów',
+            'Waga': '330 g',
+            'Cena od': '1 760 zł',
+            'Najlepszy do': 'DPM, uszkodzone kody, AI decoding',
+          },
+        },
+      ],
+    },
+    applications: [
+      'Magazyny i centra dystrybucyjne — od kontaktu do regałów 10 m',
+      'Wózki widłowe i kompletacyjne — skanowanie etykiet regałowych z dystansu',
+      'Hale produkcyjne — kontrola jakości i śledzenie serii na linii montażowej',
+      'Mroźnie i chłodnie — praca ciągła do -30°C bez aklimatyzacji',
+      'Doki przeładunkowe i cross-docking — skanowanie palet i kontenerów',
+      'Logistyka i transport — odczyt kodów na paczkach z różnych odległości',
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: ['honeywell-cbl-500-300-s00', 'honeywell-cbl-020-300-c00', 'honeywell-holster-industrial'],
+    faq: [
+      {
+        question: 'Czym jest technologia FlexRange w skanerze Honeywell Granit XP 1990iXR?',
+        answer: 'FlexRange (XR) to platforma obrazowania Honeywell, która automatycznie dostosowuje ogniskową — jeden skaner czyta kody od kontaktu (2 cm) do 10 m na dużych etykietach regałowych (100 mil / 2,54 mm). Nie trzeba przełączać trybów ani używać dwóch skanerów. Granit XP 1990iXR czyta UPC 13 mil do 1,5 m, Code 39 20 mil do 2,24 m i Code 39 100 mil do 10 m (33 ft). Dla porównania: [1990iSR](/produkt/honeywell-granit-xp-1990isr) (Standard Range) sięga do 84 cm, a [1990iXLR](/produkt/honeywell-granit-xp-1990ixlr) (eXtra Long Range) do 24 m.',
+      },
+      {
+        question: 'Jaki jest zasięg skanowania Honeywell Granit XP 1990iXR?',
+        answer: 'Zasięgi FlexRange: UPC 13 mil od kontaktu do 1,52 m, Code 39 20 mil do 2,24 m, Code 128 70 mil do 7,24 m, Code 39 100 mil do 10 m (33 ft). Kody 2D: Data Matrix 10 mil do 22 cm, QR Code 20 mil do 48 cm. Minimalna rozdzielczość: 5 mil (1D Code 39), 10 mil (2D Data Matrix). Tolerancja ruchu do 4 500 mm/s — skanowanie z wózka widłowego bez zatrzymywania.',
+      },
+      {
+        question: 'Czym różni się Honeywell Granit 1990iSR, 1990iXR i 1990iXLR?',
+        answer: 'Wszystkie trzy mają identyczną obudowę ultra-rugged (IP67+IP65, 3 m upadki, 7 000 tumble, -30°C). Różnica w optyce: [1990iSR](/produkt/honeywell-granit-xp-1990isr) (Standard Range) — pojedynczy sensor 1280×800, zasięg do 84 cm, od 1 726 zł. 1990iXR (FlexRange) — ten sam sensor, zasięg od kontaktu do 10 m, od 1 985 zł. [1990iXLR](/produkt/honeywell-granit-xp-1990ixlr) (eXtra Long Range) — podwójny sensor 1920×1080 + 1280×800, zasięg do 24 m, od 2 417 zł. Dla 90% operacji magazynowych FlexRange (XR) to optymalny wybór.',
+      },
+      {
+        question: 'Czy Honeywell Granit 1990iXR działa w mroźni i chłodni?',
+        answer: 'Tak — temperatura pracy od -30°C do +50°C (z kablem industrial-grade). IP67 + IP65 chroni przed wilgocią, lodem i kondensacją. Skaner testowany na 50 upadków z 2 m w zakresie -30°C do +50°C. Głęboko osadzone okno skanera nie zaparowuje. Do ciągłej pracy w mroźniach i chłodniach bez konieczności aklimatyzacji.',
+      },
+      {
+        question: 'Honeywell Granit 1990iXR vs Zebra DS3608 — który skaner wybrać?',
+        answer: 'Granit 1990iXR: FlexRange do 10 m, tumble 7 000 (vs 5 000 Zebra), IP67 z zanurzeniem, 40–60% tańszy (od 1 985 zł vs [DS3608-SR](/produkt/zebra-ds3608-sr) od 1 287 zł, ale [DS3608-HP](/produkt/zebra-ds3608-hp) od 2 583 zł). Zebra DS3608: IP68 (ciśnienie), Industrial Ethernet, wariant DPM do kodów grawerowanych. Granit XR to najlepszy stosunek ceny do wytrzymałości w klasie ultra-rugged FlexRange.',
+      },
+      {
+        question: 'Ile kosztuje Honeywell Granit XP 1990iXR?',
+        answer: 'Cena w TAKMA: zestaw USB (1990IXR-3USB-R) od 1 985 zł netto, zestaw RS-232 (1990IXR-3SER-R) od 2 083 zł netto, sam skaner bez kabla (1990IXR-3-R) od 2 023 zł netto. Ceny aktualizowane na bieżąco z hurtowni. W porównaniu: [1990iSR](/produkt/honeywell-granit-xp-1990isr) od 1 726 zł, [1990iXLR](/produkt/honeywell-granit-xp-1990ixlr) od 2 417 zł, [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) od 1 760 zł.',
+      },
+      {
+        question: 'Czy Granit XP 1990iXR czyta uszkodzone i słabo wydrukowane kody?',
+        answer: 'Tak — platforma obrazowania nowej generacji z sensorem 1280×800 px dekoduje kody niskiej jakości, uszkodzone, zamazane, pokryte brudem, folią stretch i kurzem. Obsługuje symbologie OCR-A/B i cyfrowe znaki wodne Digimarc. Min. kontrast druku: 20% różnica reflektancji. Jasność pracy: 0–100 000 lux (pełne nasłonecznienie).',
+      },
+      {
+        question: 'Jaka jest wytrzymałość skanera Granit XP 1990iXR?',
+        answer: 'Upadki: 3 m na beton (MIL-STD-810G), 2,4 m z 20 upadków (25°C, 55% RH), 2 m z 50 upadków od -30°C do +50°C. Tumble: 7 000 obrotów z 1 m (IEC 60068-2-32). IP67 (zanurzenie 1 m/30 min) + IP65 (strumień wody). ESD ±20 kV (powietrze), ±8 kV (kontakt). Głęboko osadzone okno skanera odporne na zarysowania i uderzenia mechaniczne.',
+      },
+      {
+        question: 'Jak podłączyć Honeywell Granit 1990iXR do systemu WMS/ERP?',
+        answer: 'Granit XP 1990iXR podłączasz przez USB HID (plug-and-play — komputer rozpoznaje skaner jako klawiaturę), RS-232 TTL (do terminali POS i legacy) lub Keyboard Wedge (PS/2). Kompatybilny z SAP, WMS (np. iWMS, Comarch WMS), Subiekt GT, Macrologic, kasami fiskalnymi. Zarządzanie flotą skanerów: Honeywell Scanner Management Utility (SMU) — zdalna konfiguracja i aktualizacja firmware.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Honeywell Granit XP 1990iXR?',
+        answer: 'Tańszy bliski zasięg: [Granit XP 1990iSR](/produkt/honeywell-granit-xp-1990isr) (od 1 726 zł, SR do 84 cm). Dalszy zasięg: [Granit XP 1990iXLR](/produkt/honeywell-granit-xp-1990ixlr) (od 2 417 zł, do 24 m). Z AI decoding: [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (od 1 760 zł, +45% szybciej, DPM/OCR, IP68). Zebra: [DS3608-SR](/produkt/zebra-ds3608-sr) (od 1 287 zł, IP68, Ethernet) lub [LI3608-ER](/produkt/zebra-li3608-er) (1D do 17,1 m, od 1 345 zł). Granit XP 1990iXR FlexRange to najlepszy kompromis ceny, zasięgu i wytrzymałości.',
+      },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: '/docs/sps-ppr-granit-xp-1990ixr-scanner-data-sheet-en-a4.pdf', size: '0.2 MB' },
+      { name: 'Skrócona instrukcja obsługi (EN)', type: 'manual', url: '/docs/sps-ppr-1990-en-qs.pdf', size: '0.5 MB' },
+      { name: 'Strona produktu Honeywell Granit XP 1990iXR (EN)', type: 'manual', url: 'https://automation.honeywell.com/us/en/products/productivity-solutions/barcode-scanners/rugged-handheld/granit-1990ixr-ultra-rugged-flexrange-scanner', size: 'Online' },
     ],
     createdAt: '2026-03-03',
   },
