@@ -871,8 +871,15 @@ export const subcategories: Subcategory[] = [
       'honeywell-bat-scn11', 'honeywell-bat-scn05', 'honeywell-ccb23-100bt-07n', 'honeywell-mb4-bat-scn11',
       'newland-std23-33-sa', 'newland-std30i', 'newland-std20i', 'newland-std300',
       'newland-bty2333', 'newland-cd3233-4c',
+      'zebra-stand-ds3608', 'zebra-stand-ds22', 'zebra-stand-li2208', 'zebra-bracket-ds9908',
+      'zebra-cable-usb-ds3608', 'zebra-cable-usb-long-ds3608', 'zebra-cable-usb-ds22',
+      'zebra-cable-usb-long', 'zebra-cable-rs232-short', 'zebra-cable-rs232-long', 'zebra-cable-usb-li2208',
+      'zebra-cradle-ds3678', 'zebra-cradle-presentation-ds3678', 'zebra-cradle-ds2278',
+      'zebra-cradle-presentation-ds8288', 'zebra-cradle-standard-ds8288',
+      'zebra-cradle-standard-cr8178', 'zebra-cradle-presentation-cr8178', 'zebra-charger-4slot-ds3600',
+      'zebra-battery-ds3678', 'zebra-battery-ds2278', 'zebra-battery-ds8288',
     ],
-    productCount: 13,
+    productCount: 35,
   },
   {
     id: 'baterie-do-skanerow',
@@ -885,8 +892,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Oryginalne baterie zapasowe do skanerów Honeywell Granit Ultra 2105i (BAT-SCN11, 3 300 mAh), Granit XP 1991i (BAT-SCN05, 2 450 mAh) i Newland HR23/HR33 BT (BTY2333, 2 600 mAh). Ceny netto B2B.',
     longDescription: 'Zapasowe baterie Li-ion do bezprzewodowych skanerów kodów kreskowych Honeywell i Newland. Honeywell BAT-SCN11 (3 300 mAh / 12 Wh) — do 100 000 skanów, kompatybilna z Granit Ultra 2105i/2100i i Xenon Ultra 1962/1960. Honeywell BAT-SCN05 (2 450 mAh) — smart battery do Granit XP 1991i, do 50 000 skanów. Newland BTY2333 (2 600 mAh) — wymienna bateria latch-release do HR23/HR33 Bluetooth, ponad 16 h pracy. Oryginalne akumulatory z gwarancją producenta.',
     icon: 'battery',
-    productIds: ['honeywell-bat-scn11', 'honeywell-bat-scn05', 'newland-bty2333'],
-    productCount: 3,
+    productIds: ['honeywell-bat-scn11', 'honeywell-bat-scn05', 'newland-bty2333', 'zebra-battery-ds3678', 'zebra-battery-ds2278', 'zebra-battery-ds8288'],
+    productCount: 6,
   },
   {
     id: 'stacje-ladowarki-skanerow',
@@ -899,8 +906,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Bazy ładująco-komunikacyjne Bluetooth i ładowarki 4-slotowe do skanerów Honeywell Granit Ultra 2105i i Newland HR23/HR33 BT. Ceny netto B2B.',
     longDescription: 'Stacje ładująco-komunikacyjne i ładowarki baterii do skanerów bezprzewodowych. Honeywell CCB23-100BT-07N — baza Bluetooth Class 1 z zasięgiem 100 m, kontaktowe ładowanie skanera Granit Ultra 2105i, interfejsy USB/RS-232/KBW. Honeywell MB4-BAT-SCN11 — ładowarka 4-slotowa do jednoczesnego ładowania 4 baterii BAT-SCN11 w ok. 4 h. Newland CD3233-4C — ładowarka 4-slotowa do baterii BTY2333 skanerów HR23/HR33 Bluetooth. Oryginalne akcesoria z gwarancją producenta.',
     icon: 'zap',
-    productIds: ['honeywell-ccb23-100bt-07n', 'honeywell-mb4-bat-scn11', 'newland-cd3233-4c'],
-    productCount: 3,
+    productIds: ['honeywell-ccb23-100bt-07n', 'honeywell-mb4-bat-scn11', 'newland-cd3233-4c', 'zebra-cradle-ds3678', 'zebra-cradle-presentation-ds3678', 'zebra-cradle-ds2278', 'zebra-cradle-presentation-ds8288', 'zebra-cradle-standard-ds8288', 'zebra-cradle-standard-cr8178', 'zebra-cradle-presentation-cr8178', 'zebra-charger-4slot-ds3600'],
+    productCount: 11,
   },
   {
     id: 'podstawki-do-skanerow',
@@ -913,8 +920,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Podstawki do skanerów Newland — Smartstand STD23/STD20i z auto-sense, gooseneck STD30i, składana STD300. Tryb hands-free do kas, aptek, stanowisk kontroli. Ceny netto B2B.',
     longDescription: 'Podstawki do skanerów kodów kreskowych Newland z trybem auto-sense (automatyczne skanowanie po zbliżeniu kodu). Newland STD23-33-SA — regulowana podstawka Smartstand do HR23/HR33, od pozycji pionowej do płaskiej. STD30i — gooseneck z elastycznym ramieniem do precyzyjnego ustawienia kąta. STD20i — składana Smartstand do HR15 Wahoo. STD300 — podstawka składana do przemysłowego skanera NVH300 Angler DP. Idealne na stałe stanowiska kasowe, apteki, biblioteki i kontrolę jakości.',
     icon: 'monitor',
-    productIds: ['newland-std23-33-sa', 'newland-std30i', 'newland-std20i', 'newland-std300'],
-    productCount: 4,
+    productIds: ['newland-std23-33-sa', 'newland-std30i', 'newland-std20i', 'newland-std300', 'zebra-stand-ds3608', 'zebra-stand-ds22', 'zebra-stand-li2208', 'zebra-bracket-ds9908'],
+    productCount: 8,
   },
   {
     id: 'kable-do-skanerow',
@@ -927,8 +934,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Oryginalne kable do skanerów Honeywell: CBL-500-300-S00 USB prosty 3 m i CBL-020-300-C00 RS-232 krętny 3 m. Do Granit 2100i, Xenon 1960, Voyager 1470g. Ceny netto B2B.',
     longDescription: 'Oryginalne kable komunikacyjne do skanerów kodów kreskowych Honeywell. CBL-500-300-S00 — kabel USB prosty (straight) 3 m z wtyczką USB Type A i zasilaniem 5V z portu hosta, uniwersalny do podłączenia skanera do komputera lub kasy POS. CBL-020-300-C00 — kabel RS-232 krętny (coiled) 3 m z wtyczką DB9 Female, do urządzeń z portem szeregowym (terminale POS, sterowniki PLC). Kompatybilne ze skanerami: Granit Ultra 2100i, Granit XP 1990i, Xenon Ultra 1960, Voyager XP 1470g.',
     icon: 'cable',
-    productIds: ['honeywell-cbl-500-300-s00', 'honeywell-cbl-020-300-c00'],
-    productCount: 2,
+    productIds: ['honeywell-cbl-500-300-s00', 'honeywell-cbl-020-300-c00', 'zebra-cable-usb-ds3608', 'zebra-cable-usb-long-ds3608', 'zebra-cable-usb-ds22', 'zebra-cable-usb-long', 'zebra-cable-rs232-short', 'zebra-cable-rs232-long', 'zebra-cable-usb-li2208'],
+    productCount: 9,
   },
   {
     id: 'etui-kabury-skanerow',
@@ -8286,7 +8293,7 @@ Gwarancja producenta 60 miesięcy (5 lat). Zebra DNA (123Scan, DataCapture DNA) 
     ],
     applications: ['Kasy detaliczne i POS', 'Supermarkety i sklepy wielkopowierzchniowe', 'Apteki sieciowe', 'Obsługa zwrotów i reklamacji', 'Realizacja kuponów elektronicznych', 'Śledzenie towarów (magazyn zaplecza)'],
     compatibleAccessories: [],
-    relatedAccessories: [],
+    relatedAccessories: ['zebra-stand-ds22', 'zebra-cable-usb-ds22', 'zebra-cable-usb-long', 'zebra-cable-rs232-short', 'zebra-cable-rs232-long'],
     faq: [
       {
         question: 'Czym Zebra DS8208 różni się od DS2208?',
@@ -21753,6 +21760,7 @@ Możliwość łączenia wielu stacji dla dużych instalacji.`,
 
 Kompatybilna z modelami: DS3608 (wszystkie warianty), DS3678, LI3608, LI3678. Umożliwia pracę w trybie hands-free na stanowisku produkcyjnym lub kontrolnym.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'podstawki-do-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 247,
     images: ['/images/products/STND-AS0036-07.png'],
@@ -21781,6 +21789,7 @@ Kompatybilna z modelami: DS3608 (wszystkie warianty), DS3678, LI3608, LI3678. Um
 
 Plug and Play — automatyczne wykrywanie hosta. Uwaga: ten kabel NIE jest kompatybilny z DS2208/DS4608 (te używają CBA-U21-S07ZBR).`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'kable-do-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 89,
     images: ['/images/products/CBA-U01-S07ZAR.png'],
@@ -21810,6 +21819,7 @@ Plug and Play — automatyczne wykrywanie hosta. Uwaga: ten kabel NIE jest kompa
 
 Uwaga: ten kabel NIE jest kompatybilny z DS2208/DS4608 (te używają CBA-U47-S15ZAR).`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'kable-do-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 297,
     images: ['/images/products/CBA-U09-C15ZAR.png'],
@@ -21842,6 +21852,7 @@ Uwaga: ten kabel NIE jest kompatybilny z DS2208/DS4608 (te używają CBA-U47-S15
 
 Ładowanie: 3h z zasilaczem, 10h przez USB. Kabel USB i zasilacz sprzedawane osobno lub w zestawie DS3678-SR3U42A0SFW.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'stacje-ladowarki-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 943,
     images: ['/images/products/STB3678-C100F3WW.png'],
@@ -21871,6 +21882,7 @@ Uwaga: ten kabel NIE jest kompatybilny z DS2208/DS4608 (te używają CBA-U47-S15
 
 Jednocześnie ładuje baterię i zapewnia komunikację z komputerem (USB/RS-232). Idealna do stanowisk kasowych, punktów POS i stanowisk weryfikacji.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'stacje-ladowarki-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 1077,
     images: ['/images/products/FLB3678-C100F3WW.png'],
@@ -21900,6 +21912,7 @@ Jednocześnie ładuje baterię i zapewnia komunikację z komputerem (USB/RS-232)
 
 Wymienialna bez narzędzi — zapewnia ciągłą pracę: jedna bateria w skanerze, druga na ładowarce.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'baterie-do-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 261,
     images: ['/images/products/BTRY-36IAB0E-00.png'],
@@ -21930,6 +21943,7 @@ Wymienialna bez narzędzi — zapewnia ciągłą pracę: jedna bateria w skanerz
 
 Idealna do flotowego zarządzania bateriami — zawsze gotowe zapasy do natychmiastowej wymiany. Zasilacz sprzedawany osobno.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'stacje-ladowarki-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 871,
     images: ['/images/products/SAC3600-4001CR.png'],
@@ -21959,6 +21973,7 @@ Idealna do flotowego zarządzania bateriami — zawsze gotowe zapasy do natychmi
 
 Komunikacja z komputerem przez kabel USB (CBA-U21-S07ZBR) lub RS232 (CBA-R07-S07PAR). Wymiary bazy: 72 × 94 × 122 mm, waga 151 g. Gwarancja 36 miesięcy.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'stacje-ladowarki-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 373,
     images: ['/images/products/CR2278-PC10004WW.png'],
@@ -21989,6 +22004,7 @@ Komunikacja z komputerem przez kabel USB (CBA-U21-S07ZBR) lub RS232 (CBA-R07-S07
     shortDescription: 'Akumulator Zebra BTRY-DS22EAB0E-00 do DS2278 — oryginalna bateria zamienna Li-Ion 2400 mAh do skanera bezprzewodowego DS2278',
     description: `Oryginalna bateria zamienna Zebra (BTRY-DS22EAB0E-00) do skanera bezprzewodowego DS2278. Li-Ion 2400 mAh — zapewnia do 14 godzin ciągłej pracy lub 110 000 skanów na jednym ładowaniu. Wymiana baterii przez użytkownika (user-replaceable). Gwarancja 12 miesięcy.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'baterie-do-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 142,
     images: ['/images/products/BTRY-DS22EAB0E-00.png'],
@@ -22019,6 +22035,7 @@ Skaner odłożony do bazy automatycznie przełącza się w tryb hands-free Intel
 
 Bluetooth 5.2 BLE — parowanie i komunikacja z bazą. Stacja dołączona w wariantach z kodem U2104 i U210P.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'stacje-ladowarki-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 833,
     images: ['/images/products/CR8288-PC100F4WW.png'],
@@ -22051,6 +22068,7 @@ Kompaktowa konstrukcja — skaner leży na boku, idealna do biurek i stanowisk k
 
 Bluetooth 5.2 BLE — parowanie i komunikacja z bazą. Stacja dołączona w wariantach z kodem U2104 i U210P.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'stacje-ladowarki-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 833,
     images: ['/images/products/CR8288-SC100F4WW.png'],
@@ -22081,6 +22099,7 @@ Bluetooth 5.2 BLE — parowanie i komunikacja z bazą. Stacja dołączona w wari
 
 Ładowanie indukcyjne — bateria ładuje się bezkontaktowo w stacji CR8288. Gwarancja producenta 12 miesięcy.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'baterie-do-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 262,
     images: ['/images/products/BTRY-DS82EAB0E-00.png'],
@@ -22111,6 +22130,7 @@ Bluetooth 5.2 BLE — parowanie i komunikacja z bazą. Stacja dołączona w wari
 
 Stabilna metalowa konstrukcja z regulowanym ramieniem — skaner automatycznie przełącza się w tryb hands-free po odłożeniu na podstawkę.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'podstawki-do-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 49,
     images: ['/images/products/BRKT-MM0099C-04.png'],
@@ -22140,6 +22160,7 @@ Stabilna metalowa konstrukcja z regulowanym ramieniem — skaner automatycznie p
 
 Komunikacja z hostem przez USB, RS-232 lub Keyboard Wedge (wymaga odpowiedniego kabla). Bluetooth Class 1 — zasięg do 100 m. Kompaktowa konstrukcja do montażu na ścianie lub postawienia przy stanowisku kasowym.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'stacje-ladowarki-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 833,
     images: ['/images/products/CR8178-SC100F4WW.png'],
@@ -22169,6 +22190,7 @@ Komunikacja z hostem przez USB, RS-232 lub Keyboard Wedge (wymaga odpowiedniego 
 
 Tryb hands-free IntelliStand — skaner odłożony do bazy automatycznie przełącza się w tryb prezentacyjny (skanowanie przesuwanych kodów). Podniesiony wraca do trybu ręcznego. Komunikacja z hostem przez USB, RS-232 lub Keyboard Wedge.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'stacje-ladowarki-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 833,
     images: ['/images/products/CR8178-PC100F4WW.png'],
@@ -22198,6 +22220,7 @@ Tryb hands-free IntelliStand — skaner odłożony do bazy automatycznie przeł�
 
 Stabilna konstrukcja z regulacją kąta nachylenia. Kompatybilna z seriami DS2208, DS2278, DS4308, DS8108 i DS4608. Idealna do stanowisk kasowych, aptek i punktów obsługi klienta.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'podstawki-do-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 121,
     images: ['/images/products/20-71043-04R.png'],
@@ -22227,6 +22250,7 @@ Stabilna konstrukcja z regulacją kąta nachylenia. Kompatybilna z seriami DS220
 
 Kompatybilny z modelami: DS2208, DS2278, DS4678, DS8178, DS8108, DS4608, DS9308 i DS9908. Ekranowany, wytrzymały na wielokrotne zginanie.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'kable-do-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 88,
     images: ['/images/products/CBA-U21-S07ZBR.png'],
@@ -22256,6 +22280,7 @@ Kompatybilny z modelami: DS2208, DS2278, DS4678, DS8178, DS8108, DS4608, DS9308 
 
 Plug and Play — automatyczne wykrywanie hosta. Kompatybilny z modelami: DS2208, DS2278, DS4608, DS8178, DS8108, DS9308, DS9908, LI2208, LI4278 i innymi skanerami Zebra ze złączem modularnym.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'kable-do-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 214,
     images: ['/images/products/CBA-U47-S15ZAR.png'],
@@ -22288,6 +22313,7 @@ Plug and Play — automatyczne wykrywanie hosta. Kompatybilny z modelami: DS2208
 
 Kompatybilny z modelami: DS2208, DS2278, DS4608, DS8178, DS8108, DS9308, DS9908 i innymi skanerami Zebra ze złączem modularnym. Wymaga zewnętrznego zasilacza (skaner nie pobiera zasilania z portu RS232).`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'kable-do-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 132,
     images: ['/images/products/CBA-R07-S07PAR.png'],
@@ -22319,6 +22345,7 @@ Kompatybilny z modelami: DS2208, DS2278, DS4608, DS8178, DS8108, DS9308, DS9908 
 
 Kompatybilny z modelami: DS2208, DS2278, DS4608, DS8178, DS8108, DS9308, DS9908 i innymi skanerami Zebra ze złączem modularnym. Wymaga zewnętrznego zasilacza.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'kable-do-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 264,
     images: ['/images/products/CBA-R21-S15PAR.png'],
@@ -22350,6 +22377,7 @@ Kompatybilny z modelami: DS2208, DS2278, DS4608, DS8178, DS8108, DS9308, DS9908 
 
 Kompatybilny z modelami: LI2208, LS2208, DS2208, DS2278, DS8178, DS8108, DS4608, DS9308, LI4278 i innymi skanerami Zebra ze złączem modularnym. Zastępowany przez CBA-U21-S07ZBR (identyczny funkcjonalnie, nowszy PN).`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'kable-do-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 79,
     images: ['/images/products/CBA-U21-S07ZAR.png'],
@@ -22386,6 +22414,7 @@ Funkcja Intellistand: po włożeniu skanera do uchwytu automatycznie przełącza
 
 Uwaga: ta podstawka pasuje TYLKO do LI2208 i LS2208. Do skanerów DS2208, DS4308 i DS8108 potrzebna jest podstawka 20-71043-04R.`,
     categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-skanerow', 'podstawki-do-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 132,
     images: ['/images/products/20-61022-04R.png'],
