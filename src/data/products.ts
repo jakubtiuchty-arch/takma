@@ -14563,6 +14563,7 @@ Dokumentacja: automation.honeywell.com/granit-ultra-2105i.`,
       { name: 'Skrócona instrukcja obsługi Granit 2100/2105 (EN)', type: 'manual', url: '/docs/sps-ppr-2100-en-qs.pdf', size: '0.3 MB' },
       { name: 'Strona produktu Honeywell Granit Ultra 2105i (EN)', type: 'manual', url: 'https://automation.honeywell.com/us/en/products/productivity-solutions/barcode-scanners/rugged-handheld/granit-ultra-2105i-scanner', size: 'Online' },
     ],
+    videoUrl: 'https://play.vidyard.com/YffF6c8irDCxTMVxBesFJN',
     createdAt: '2026-03-03',
   },
 ]
