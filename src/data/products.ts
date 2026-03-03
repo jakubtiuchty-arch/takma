@@ -13358,10 +13358,10 @@ const honeywellScanners: Product[] = [
     slug: 'honeywell-granit-ultra-2100i',
     name: 'Honeywell Granit Ultra 2100i',
     sameAs: 'https://automation.honeywell.com/us/en/products/productivity-solutions/barcode-scanners/rugged-handheld/granit-ultra-2100i',
-    seoTitle: 'Honeywell Granit Ultra 2100i — ultra-rugged skaner 2D z AI, SR/XR do 10,85 m | od 1 760 zł',
-    seoDescription: 'Honeywell Granit Ultra 2100i (2100ISR, 2100IXR) — ultra-rugged skaner area imager z AI decoding. IP65/IP68, upadki 3 m, -30°C. SR do 1 m, XR do 10,85 m. Red Dot 2025. Cena od 1 760 zł netto.',
-    shortDescription: 'Honeywell Granit Ultra 2100i — ultra-rugged skaner 2D area imager z AI decoding, IP65/IP68, upadki 3 m, -30°C do +50°C',
-    description: `Dla kogo? Honeywell Granit Ultra 2100i to ultra-wytrzymały przewodowy skaner 2D area imager nowej generacji — następca serii Granit XP 1990i, zaprojektowany do najtrudniejszych środowisk: magazynów, centrów dystrybucyjnych, hal produkcyjnych, mroźni i doków przeładunkowych. Pierwszy skaner przemysłowy z wbudowanym dekodowaniem opartym na AI — algorytmy sztucznej inteligencji przyspieszają skanowanie o 45% w porównaniu z poprzednią generacją (Granit XP).
+    seoTitle: 'Honeywell Granit Ultra 2100i — czytnik kodów kreskowych 2D z AI, przewodowy | od 1 760 zł',
+    seoDescription: 'Honeywell Granit 2100i — skaner kodów kreskowych przemysłowy przewodowy 2D z AI decoding (+45%). IP65/IP68, upadki 3 m, -30°C. Czytnik do magazynu i mroźni. Cena od 1 760 zł netto.',
+    shortDescription: 'Honeywell Granit Ultra 2100i — skaner przewodowy 2D do magazynu z AI decoding, IP65/IP68, upadki 3 m, -30°C do +50°C, od 1 760 zł',
+    description: `Dla kogo? Honeywell Granit Ultra 2100i to ultra-wytrzymały przewodowy czytnik kodów kreskowych 2D (skaner kodów kreskowych przemysłowy) nowej generacji — następca serii Granit XP 1990i, zaprojektowany do najtrudniejszych środowisk: magazynów, centrów dystrybucyjnych, hal produkcyjnych, mroźni i doków przeładunkowych. Jeśli szukasz skanera do magazynu, który wytrzyma upadki, mróz i intensywną eksploatację 24/7 — Granit 2100i to czytnik Honeywell klasy premium. Pierwszy skaner przemysłowy z wbudowanym dekodowaniem opartym na AI — algorytmy sztucznej inteligencji przyspieszają skanowanie o 45% w porównaniu z poprzednią generacją (Granit XP).
 
 Dostępny w 4 wariantach zasięgu: SR (Standard Range) — od kontaktu do 1 m, odczyt UPC/EAN13 do 63,4 cm. XR (Expanded Range) — od kontaktu do 10,85 m na kody 100 mil Code 39 i do 2,8 m na Code 128 20 mil — idealny do magazynów średniego składowania, doków i cross-dockingu. HD (High Density) — kody od 2 mil 1D i 2 mil 2D, do elektroniki i farmacji. XLR (Ultra Long Range) — zasięg do 30 m na kody 100 mil, do magazynów wysokiego składowania i outdoor.
 
@@ -13371,7 +13371,9 @@ Interfejsy: USB (2.0), RS-232, Keyboard Wedge (PS/2 TTL). Kable z kabelem zasila
 
 Nagroda Red Dot Design Award 2025 za ergonomię i wzornictwo. Gwarancja producenta 3 lata. Zarządzanie flotą: Honeywell Scanner Management Utility (SMU), EZConfig, Total Freedom, Scanner Edge, SDK.
 
-Koszt posiadania (TCO): Granit Ultra 2100i z gwarancją 3 lata, IP65/IP68, upadkami z 3 m i 3 mln cykli triggera — skaner projektowany na 5+ lat intensywnej pracy. W porównaniu z tańszymi skanerami IP42/IP52 amortyzuje się po ok. 14–18 miesiącach dzięki braku kosztów napraw i przestojów.
+Koszt posiadania (TCO): Granit Ultra 2100i z gwarancją 3 lata, IP65/IP68, upadkami z 3 m i 3 mln cykli triggera — skaner projektowany na 5+ lat intensywnej pracy. W porównaniu z tańszymi skanerami IP42/IP52 amortyzuje się po ok. 14–18 miesiącach dzięki braku kosztów napraw i przestojów. Cena czytnika kodów Honeywell Granit 2100i zaczyna się od 1 760 zł netto (wariant SR z kablem USB) — konkurencyjna w klasie skanerów przewodowych 2D ultra-rugged.
+
+Skaner do mroźni i chłodni: dzięki zakresowi pracy od -30°C do +50°C i podwójnemu uszczelnieniu IP65+IP68, Granit 2100i to jeden z niewielu czytników kodów kreskowych Honeywell przystosowanych do ciągłej pracy w temperaturach ujemnych — bez konieczności aklimatyzacji przed skanowaniem.
 
 Dokumentacja: automation.honeywell.com/granit-ultra-2100i.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -13558,13 +13560,14 @@ Dokumentacja: automation.honeywell.com/granit-ultra-2100i.`,
       ],
     },
     applications: [
-      'Magazyny i centra dystrybucyjne',
+      'Magazyny i centra dystrybucyjne — skaner do magazynu',
       'Doki przeładunkowe i cross-docking',
-      'Hale produkcyjne i linie montażowe',
-      'Mroźnie i chłodnie (do -30°C)',
+      'Hale produkcyjne i linie montażowe — skanowanie DPM',
+      'Mroźnie i chłodnie (do -30°C) — skaner do mroźni',
       'Retail — kasy samoobsługowe i stanowiska kasowe',
       'Logistyka i transport — skanowanie palet i kontenerów',
       'Elektronika i farmacja (wariant HD — kody od 2 mil)',
+      'Inwentaryzacja z Multi-Code — wiele kodów jednym skanem',
     ],
     compatibleAccessories: [],
     relatedAccessories: ['honeywell-cbl-500-300-s00', 'honeywell-cbl-020-300-c00', 'honeywell-holster-industrial'],
@@ -13604,6 +13607,14 @@ Dokumentacja: automation.honeywell.com/granit-ultra-2100i.`,
       {
         question: 'Jakie interfejsy ma Granit Ultra 2100i?',
         answer: 'USB 2.0, RS-232 i Keyboard Wedge (PS/2 TTL). Kable z opcją zasilania +/−12V do konwersji. Uwaga: Granit Ultra 2100i NIE ma Industrial Ethernet (EtherNet/IP, Profinet) — jeśli potrzebujesz integracji z PLC, rozważ [Zebra DS3608](/produkt/zebra-ds3608-sr) z natywnym Ethernet przemysłowym.',
+      },
+      {
+        question: 'Ile kosztuje skaner Honeywell Granit 2100i?',
+        answer: 'Cena czytnika kodów Honeywell Granit 2100i w TAKMA zaczyna się od 1 760 zł netto (wariant SR z kablem USB — 2100ISR-3USBE). Wariant XR (Expanded Range) z kablem USB kosztuje od 2 025 zł netto (2100IXR-3USBE). Sam skaner bez kabla: SR od 1 794 zł, XR od 2 063 zł. Wariant XR z kablem RS-232 (2100IXR-3SERE) od 2 124 zł. Ceny netto, aktualizowane na bieżąco z hurtowni.',
+      },
+      {
+        question: 'Jaki skaner kodów kreskowych do magazynu wybrać — Honeywell czy Zebra?',
+        answer: 'To zależy od potrzeb. Honeywell Granit 2100i (od 1 760 zł) ma AI decoding, DPM/OCR w standardzie i 3 mln cykli triggera — lepszy do uszkodzonych kodów i znakowania DPM na metalach. [Zebra DS3608-SR](/produkt/zebra-ds3608-sr) (od 1 287 zł) jest tańsza, lżejsza i ma Industrial Ethernet (Profinet, EtherNet/IP) — lepsza do integracji z PLC na liniach produkcyjnych. Oba skanery przewodowe 2D mają IP65/IP68 i upadki z 3 m. Do standardowego magazynu z kodami QR i EAN — oba sprawdzą się równie dobrze.',
       },
       {
         question: 'Jakie są alternatywy dla Honeywell Granit Ultra 2100i?',
