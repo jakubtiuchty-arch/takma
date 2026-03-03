@@ -636,15 +636,25 @@ export default async function ProductPage({ params }: ProductPageProps) {
               <div className="prose prose-gray max-w-none">
                 {product.description.split('\n\n').map((paragraph, i) => {
                   const linkMatch = paragraph.match(/(.*sekcji )(Powiązane produkty|Akcesoria)( poniżej.*)/)
+                  if (linkMatch) {
+                    return (
+                      <p key={i} className="text-gray-600 mb-4 sm:text-justify">
+                        {linkMatch[1]}
+                        <a href="#akcesoria" className="text-primary-600 font-semibold hover:underline">{linkMatch[2]}</a>
+                        {linkMatch[3]}
+                      </p>
+                    )
+                  }
+                  // Parse markdown links [text](url)
+                  const parts = paragraph.split(/(\[[^\]]+\]\([^)]+\))/)
+                  const hasLinks = parts.length > 1
                   return (
                     <p key={i} className="text-gray-600 mb-4 sm:text-justify">
-                      {linkMatch ? (
-                        <>
-                          {linkMatch[1]}
-                          <a href="#akcesoria" className="text-primary-600 font-semibold hover:underline">{linkMatch[2]}</a>
-                          {linkMatch[3]}
-                        </>
-                      ) : paragraph}
+                      {hasLinks ? parts.map((part, j) => {
+                        const md = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
+                        if (md) return <a key={j} href={md[2]} className="text-primary-600 hover:underline">{md[1]}</a>
+                        return <span key={j}>{part}</span>
+                      }) : paragraph}
                     </p>
                   )
                 })}
