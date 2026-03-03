@@ -14293,21 +14293,11 @@ Pełna specyfikacja techniczna w karcie katalogowej Honeywell: wymiary, zasięgi
     seoTitle: 'Honeywell Granit Ultra 2105i — skaner bezprzewodowy 2D Bluetooth z AI, ultra-rugged | od 2 574 zł',
     seoDescription: 'Honeywell Granit Ultra 2105i — bezprzewodowy skaner kodów kreskowych 2D z AI decoding (+45%). Bluetooth 4.2, zasięg 100 m, 100 000 skanów/ładowanie. IP65/IP68, upadki 3 m, -20°C do +50°C. Cena od 2 574 zł netto.',
     shortDescription: 'Honeywell Granit Ultra 2105i — bezprzewodowy skaner 2D Bluetooth z AI decoding, 100 m zasięgu, 100 000 skanów/ładowanie, IP65/IP68, upadki 3 m, od 2 574 zł',
-    description: `Dla kogo? Honeywell Granit Ultra 2105i to bezprzewodowa wersja ultra-wytrzymałego skanera kodów kreskowych 2D nowej generacji — następca Granit XP w wersji cordless. Zaprojektowany do najtrudniejszych środowisk: magazynów, centrów dystrybucyjnych, hal produkcyjnych, doków przeładunkowych i logistyki outdoor. Jeśli szukasz skanera bezprzewodowego do magazynu, który wytrzyma upadki, mróz i intensywną eksploatację 24/7 bez kabla — Granit Ultra 2105i to czytnik Honeywell klasy premium z technologią AI.
+    description: `Dla kogo? Honeywell Granit Ultra 2105i to bezprzewodowy skaner ultra-rugged nowej generacji z AI — następca serii Granit XP w wersji cordless. Dla magazynów, centrów dystrybucyjnych, hal produkcyjnych, doków przeładunkowych i logistyki outdoor, gdzie skaner musi przetrwać upadki, mróz i intensywną eksploatację 24/7 bez kabla.
 
-Łączność Bluetooth 4.2 (Class 1) zapewnia zasięg do 100 m w linii prostej z bazą komunikacyjno-ładującą Honeywell. Bateria Li-ion 3 300 mAh — do 100 000 skanów na jednym ładowaniu lub 14 godzin ciągłej pracy (2 skany/s). Ładowanie przez bazę: 4 godziny (USB BC1.2 / zasilacz) lub ładowarka 4-slotowa MB4-BAT-SCN11. Pierwszy bezprzewodowy skaner przemysłowy z wbudowanym dekodowaniem AI — algorytmy sztucznej inteligencji przyspieszają skanowanie o 45% w porównaniu z Granit XP.
+Pierwszy bezprzewodowy skaner przemysłowy z dekodowaniem AI — o 45% szybsze skanowanie niż Granit XP, nawet na uszkodzonych i zabrudzonych kodach. Bluetooth 4.2 z zasięgiem 100 m i bateria na 100 000 skanów (14 h pracy) eliminują przestoje związane z kablami i ładowaniem w trakcie zmiany.
 
-Dostępny w wariantach zasięgu: SR (Standard Range) — od kontaktu do ~1 m na UPC 13 mil (63,4 cm), idealny do stanowisk kompletacji i przyjęcia towaru. XR (Expanded Range / FlexRange) — od kontaktu do 10,85 m na kody 100 mil Code 39 i do 2,8 m na Code 128 20 mil — do magazynów średniego składowania, doków i cross-dockingu. Warianty dostępne jako sam skaner (CLE) lub zestaw z bazą komunikacyjno-ładującą i kablem USB/RS-232 (CLHE).
-
-Sensor area imager 1 280 × 1 080 px (SR) lub Near+Far (XR). Pole widzenia: SR — 42° × 36°, XR Near — 42° × 36°, XR Far — 16° × 14°. Tolerancja ruchu do 4 000 mm/s — skanowanie w ruchu bez zatrzymywania. Odczyt kodów 1D/2D, z ekranów (mGR), DPM (Direct Part Mark), Digimarc, OCR (OCR-A, OCR-B, MICR E-13B, SEMI Font). Multi-Code — odczyt wielu kodów w polu widzenia jednocześnie.
-
-Baza komunikacyjno-ładująca (w zestawach CLHE): łatwe wkładanie skanera do ładowania, mechanizm zatrzaskowy do montażu pionowego lub na pojeździe. Wymiary bazy: 250,1 × 102 × 80,7 mm, waga 357 g. Interfejsy bazy: USB, RS-232, Keyboard Wedge.
-
-IP65 + IP68 (skaner), IP65 (baza). Upadki z 3 m na beton (MIL-STD-810G, 25°C), 2,5 m z 20 upadków od -20°C do 50°C, 2 m z 50 upadków od -30°C do +50°C. 7 500 obrotów w tumbler teście. Wibracje 5G peak (5–300 Hz). Trigger przetestowany na 3 000 000 cykli. Waga skanera 425 g. Wymiary skanera 194,8 × 75,8 × 139,5 mm. Temperatura pracy: -20°C do +50°C.
-
-Gwarancja producenta 3 lata (bateria 1 rok). Zarządzanie flotą: Honeywell SMU, EZConfig, Total Freedom, Scanner Edge, SDK.
-
-Koszt posiadania (TCO): Granit Ultra 2105i z baterią na 100 000 skanów, gwarancją 3 lata, IP65/IP68 i upadkami z 3 m — skaner projektowany na 5+ lat intensywnej pracy bez kabla. W porównaniu z bezprzewodowymi skanerami IP42/IP52 amortyzuje się po ok. 12–16 miesiącach dzięki eliminacji kosztów napraw, wymiany kabli i przestojów.
+Wariant SR do kompletacji i przyjęcia towaru, XR (FlexRange) do skanowania z odległości do 10 m na regałach i dokach. Odczyt 1D/2D, DPM na metalach, OCR, kody z ekranów i Multi-Code (wiele kodów jednym skanem). Baza komunikacyjno-ładująca z mechanizmem zatrzaskowym — montaż na biurku, ścianie lub wózku widłowym.
 
 Dokumentacja: automation.honeywell.com/granit-ultra-2105i.`,
     categoryId: 'skanery-kodow-kreskowych',
