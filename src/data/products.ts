@@ -184,7 +184,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208, DS3678-SR — gwarancja 5 lat. Skanery przewodowe i bezprzewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies i Newland — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Newland HR23 Dorada — ekonomiczny 2D z gwarancją 5 lat. DS3678-SR bezprzewodowy ultra-rugged do magazynów. DS9908 hybrydowy prezentacyjny do kas POS. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 31,
+    productCount: 32,
   },
   {
     id: 'tablety-przemyslowe',
@@ -839,8 +839,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Bezprzewodowe skanery kodów kreskowych Bluetooth — zasięg do 100 m, bateria 100 000+ skanów. Zebra DS3678-SR ultra-rugged IP65/IP68. Cena od 2 111 zł netto. Autoryzowany partner Zebra.',
     longDescription: 'Bezprzewodowe czytniki kodów kreskowych Bluetooth (skanery cordless) — pełna swoboda ruchu, zasięg do 100 m, bateria na 100 000+ skanów. Zebra DS3678-SR ultra-rugged — szyfrowanie FIPS 140-2, upadki z 3 m, IP65/IP68, Multi-Code do 20 kodów jednocześnie. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productIds: ['zebra-ds3678-sr', 'zebra-ds3678-xr', 'zebra-ds3678-hd', 'zebra-ds3678-hp', 'zebra-ds2278', 'zebra-ds8288', 'zebra-ds4678', 'zebra-ds4678-dpe', 'newland-hr23-dorada-bt', 'newland-hr33-marlin-bt'],
-    productCount: 10,
+    productIds: ['zebra-ds3678-sr', 'zebra-ds3678-xr', 'zebra-ds3678-hd', 'zebra-ds3678-hp', 'zebra-ds2278', 'zebra-ds8288', 'zebra-ds4678', 'zebra-ds4678-dpe', 'newland-hr23-dorada-bt', 'newland-hr33-marlin-bt', 'honeywell-granit-ultra-2105i'],
+    productCount: 11,
   },
   {
     id: 'skanery-prezentacyjne',
@@ -14279,6 +14279,291 @@ Pełna specyfikacja techniczna w karcie katalogowej Honeywell: wymiary, zasięgi
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: '/docs/sps-ppr-granit-xp-1990ixr-scanner-data-sheet-en-a4.pdf', size: '0.2 MB' },
       { name: 'Skrócona instrukcja obsługi (EN)', type: 'manual', url: '/docs/sps-ppr-1990-en-qs.pdf', size: '0.5 MB' },
       { name: 'Strona produktu Honeywell Granit XP 1990iXR (EN)', type: 'manual', url: 'https://automation.honeywell.com/us/en/products/productivity-solutions/barcode-scanners/rugged-handheld/granit-1990ixr-ultra-rugged-flexrange-scanner', size: 'Online' },
+    ],
+    createdAt: '2026-03-03',
+  },
+  {
+    id: 'honeywell-granit-ultra-2105i',
+    slug: 'honeywell-granit-ultra-2105i',
+    name: 'Honeywell Granit Ultra 2105i',
+    sameAs: 'https://automation.honeywell.com/us/en/products/productivity-solutions/barcode-scanners/rugged-handheld/granit-ultra-2105i-scanner',
+    seoTitle: 'Honeywell Granit Ultra 2105i — skaner bezprzewodowy 2D Bluetooth z AI, ultra-rugged | od 2 574 zł',
+    seoDescription: 'Honeywell Granit Ultra 2105i — bezprzewodowy skaner kodów kreskowych 2D z AI decoding (+45%). Bluetooth 4.2, zasięg 100 m, 100 000 skanów/ładowanie. IP65/IP68, upadki 3 m, -20°C do +50°C. Cena od 2 574 zł netto.',
+    shortDescription: 'Honeywell Granit Ultra 2105i — bezprzewodowy skaner 2D Bluetooth z AI decoding, 100 m zasięgu, 100 000 skanów/ładowanie, IP65/IP68, upadki 3 m, od 2 574 zł',
+    description: `Dla kogo? Honeywell Granit Ultra 2105i to bezprzewodowa wersja ultra-wytrzymałego skanera kodów kreskowych 2D nowej generacji — następca Granit XP w wersji cordless. Zaprojektowany do najtrudniejszych środowisk: magazynów, centrów dystrybucyjnych, hal produkcyjnych, doków przeładunkowych i logistyki outdoor. Jeśli szukasz skanera bezprzewodowego do magazynu, który wytrzyma upadki, mróz i intensywną eksploatację 24/7 bez kabla — Granit Ultra 2105i to czytnik Honeywell klasy premium z technologią AI.
+
+Łączność Bluetooth 4.2 (Class 1) zapewnia zasięg do 100 m w linii prostej z bazą komunikacyjno-ładującą Honeywell. Bateria Li-ion 3 300 mAh — do 100 000 skanów na jednym ładowaniu lub 14 godzin ciągłej pracy (2 skany/s). Ładowanie przez bazę: 4 godziny (USB BC1.2 / zasilacz) lub ładowarka 4-slotowa MB4-BAT-SCN11. Pierwszy bezprzewodowy skaner przemysłowy z wbudowanym dekodowaniem AI — algorytmy sztucznej inteligencji przyspieszają skanowanie o 45% w porównaniu z Granit XP.
+
+Dostępny w wariantach zasięgu: SR (Standard Range) — od kontaktu do ~1 m na UPC 13 mil (63,4 cm), idealny do stanowisk kompletacji i przyjęcia towaru. XR (Expanded Range / FlexRange) — od kontaktu do 10,85 m na kody 100 mil Code 39 i do 2,8 m na Code 128 20 mil — do magazynów średniego składowania, doków i cross-dockingu. Warianty dostępne jako sam skaner (CLE) lub zestaw z bazą komunikacyjno-ładującą i kablem USB/RS-232 (CLHE).
+
+Sensor area imager 1 280 × 1 080 px (SR) lub Near+Far (XR). Pole widzenia: SR — 42° × 36°, XR Near — 42° × 36°, XR Far — 16° × 14°. Tolerancja ruchu do 4 000 mm/s — skanowanie w ruchu bez zatrzymywania. Odczyt kodów 1D/2D, z ekranów (mGR), DPM (Direct Part Mark), Digimarc, OCR (OCR-A, OCR-B, MICR E-13B, SEMI Font). Multi-Code — odczyt wielu kodów w polu widzenia jednocześnie.
+
+Baza komunikacyjno-ładująca (w zestawach CLHE): łatwe wkładanie skanera do ładowania, mechanizm zatrzaskowy do montażu pionowego lub na pojeździe. Wymiary bazy: 250,1 × 102 × 80,7 mm, waga 357 g. Interfejsy bazy: USB, RS-232, Keyboard Wedge.
+
+IP65 + IP68 (skaner), IP65 (baza). Upadki z 3 m na beton (MIL-STD-810G, 25°C), 2,5 m z 20 upadków od -20°C do 50°C, 2 m z 50 upadków od -30°C do +50°C. 7 500 obrotów w tumbler teście. Wibracje 5G peak (5–300 Hz). Trigger przetestowany na 3 000 000 cykli. Waga skanera 425 g. Wymiary skanera 194,8 × 75,8 × 139,5 mm. Temperatura pracy: -20°C do +50°C.
+
+Gwarancja producenta 3 lata (bateria 1 rok). Zarządzanie flotą: Honeywell SMU, EZConfig, Total Freedom, Scanner Edge, SDK.
+
+Koszt posiadania (TCO): Granit Ultra 2105i z baterią na 100 000 skanów, gwarancją 3 lata, IP65/IP68 i upadkami z 3 m — skaner projektowany na 5+ lat intensywnej pracy bez kabla. W porównaniu z bezprzewodowymi skanerami IP42/IP52 amortyzuje się po ok. 12–16 miesiącach dzięki eliminacji kosztów napraw, wymiany kabli i przestojów.
+
+Różnica vs Granit Ultra 2100i (przewodowy): 2105i to bezprzewodowa wersja z Bluetooth 4.2 i baterią 3 300 mAh. Skaner waży 425 g (vs 330 g), temperatura pracy -20°C (vs -30°C u 2100i). Pozostałe parametry — sensor, AI decoding, IP65/IP68, upadki 3 m, odczyt DPM/OCR — identyczne. Do zastosowań wymagających pracy w mroźni poniżej -20°C zalecamy przewodowy [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i).
+
+Dokumentacja: automation.honeywell.com/granit-ultra-2105i.`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-bezprzewodowe'],
+    manufacturerId: 'honeywell',
+    priceFrom: 2574,
+    images: [
+      '/images/products/honeywell-granit-ultra-2105i.png',
+      '/images/products/honeywell-granit-ultra-2105i-2.png',
+      '/images/products/honeywell-granit-ultra-2105i-3.png',
+    ],
+    imageDescriptions: [
+      'Honeywell Granit Ultra 2105i — widok z przodu, bezprzewodowy skaner ultra-rugged z czerwono-czarną obudową i oknem skanera',
+      'Honeywell Granit Ultra 2105i z bazą komunikacyjno-ładującą — zestaw bezprzewodowy gotowy do pracy',
+      'Honeywell Granit Ultra 2105i — widok z tyłu, masywna konstrukcja IP65/IP68 z komorą baterii Li-ion',
+    ],
+    tags: ['magazyn', 'logistyka', 'produkcja'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Typ skanera', value: 'Area imager 2D ultra-rugged, bezprzewodowy (Bluetooth)' },
+      { name: 'Dekodowanie AI', value: 'Tak — algorytmy AI, 45% szybciej niż Granit XP' },
+      { name: 'Łączność bezprzewodowa', value: 'Bluetooth 4.2, Class 1, 2,4–2,5 GHz ISM, Adaptive Frequency Hopping' },
+      { name: 'Zasięg Bluetooth', value: 'Do 100 m (330 ft) w linii prostej z bazą Honeywell' },
+      { name: 'Bateria', value: 'Li-ion 3 300 mAh' },
+      { name: 'Skanów na ładowaniu', value: 'Do 100 000 skanów' },
+      { name: 'Czas pracy', value: '14 godzin (2 skany/s)' },
+      { name: 'Czas ładowania', value: '4 h (USB BC1.2 / zasilacz 5V 3A), <12 h (USB 2.0)' },
+      { name: 'Sensor (SR)', value: 'Area imager 1 280 × 1 080 px' },
+      { name: 'Sensor (XR)', value: 'Near and Far: Area imager 1 280 × 1 080 px' },
+      { name: 'Pole widzenia (SR)', value: '42° (poziomo) × 36° (pionowo)' },
+      { name: 'Pole widzenia (XR Near)', value: '42° (poziomo) × 36° (pionowo)' },
+      { name: 'Pole widzenia (XR Far)', value: '16° (poziomo) × 14° (pionowo)' },
+      { name: 'Celownik (SR)', value: 'Zielony LED 525 nm' },
+      { name: 'Celownik (XR)', value: 'Zielony laser klasy 2, 520 nm' },
+      { name: 'Skanowane kody 1D', value: 'Code 39, Code 128, Code 93, Code 11, Code 32, EAN/UPC, Codabar, China Post, GS1 DataBar' },
+      { name: 'Skanowane kody 2D', value: 'QR Code, Data Matrix, Aztec, Micro QR, PDF417, DotCode, Maxicode, Chinese Sensible (Han Xin), Postal, Digimarc' },
+      { name: 'OCR', value: 'OCR-A, OCR-B, MICR E-13B, SEMI Font (6–60 punktów)' },
+      { name: 'DPM (Direct Part Mark)', value: 'Tak' },
+      { name: 'Zasięg SR (13 mil UPC)', value: '0–63,4 cm' },
+      { name: 'Zasięg SR (20 mil Code 128)', value: '0–103,3 cm' },
+      { name: 'Zasięg SR (10 mil DataMatrix)', value: '5 mm – 26,1 cm' },
+      { name: 'Zasięg XR (13 mil UPC)', value: '0–178,0 cm' },
+      { name: 'Zasięg XR (20 mil Code 128)', value: '0–281,2 cm' },
+      { name: 'Zasięg XR (100 mil Code 39)', value: '0–10,85 m (1 085 cm)' },
+      { name: 'Zasięg XR (100 mil DataMatrix)', value: '0–5,33 m (533 cm)' },
+      { name: 'Tolerancja ruchu', value: 'Do 4 000 mm/s' },
+      { name: 'Multi-Code', value: 'Tak — wiele kodów w polu widzenia jednocześnie' },
+      { name: 'Min. rozdzielczość kodów (SR/XR)', value: '2,5 mil 1D, 5 mil 2D' },
+      { name: 'Image Capture', value: 'Do 109 PPI na dokumencie A4' },
+      { name: 'Kontrast druku', value: 'Od 15%' },
+      { name: 'Tolerancja obrotu/pochylenia', value: '±360°, ±65°, ±65°' },
+      { name: 'Oświetlenie otoczenia', value: '0–100 000 lux' },
+      { name: 'Interfejsy bazy', value: 'USB, RS-232, Keyboard Wedge (PS/2 TTL)' },
+      { name: 'Klasa szczelności', value: 'IP65 + IP68 (skaner), IP65 (baza)' },
+      { name: 'Odporność na upadki', value: '3,0 m na beton (MIL-STD-810G, 25°C)' },
+      { name: 'Upadki w temp. ekstr.', value: '2,5 m × 20 upadków (-20°C do +50°C), 2 m × 50 upadków (-30°C do +50°C)' },
+      { name: 'Tumble test', value: '7 500 obrotów (1,0 m)' },
+      { name: 'Wibracje', value: '5G peak, 5–300 Hz' },
+      { name: 'Cykle triggera', value: '3 000 000 cykli' },
+      { name: 'Temperatura pracy', value: '-20°C do +50°C' },
+      { name: 'Temperatura ładowania', value: '5°C do 35°C' },
+      { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
+      { name: 'Wilgotność', value: 'Do 95% RH, bez kondensacji' },
+      { name: 'Wymiary skanera', value: '194,8 × 75,8 × 139,5 mm' },
+      { name: 'Wymiary bazy', value: '250,1 × 102 × 80,7 mm' },
+      { name: 'Waga skanera', value: '425 g' },
+      { name: 'Waga bazy', value: '357 g' },
+      { name: 'ESD', value: '±20 kV (powietrze), ±8 kV (kontakt)' },
+      { name: 'Gwarancja', value: '36 miesięcy / 3 lata (bateria 12 miesięcy)' },
+    ],
+    variants: [
+      {
+        partNumber: '2105ISR-3-CLE',
+        name: 'Granit 2105i SR — sam skaner (Standard Range)',
+        priceFrom: 2574,
+        availability: 'available',
+        attributes: {
+          'Zasięg': 'SR (Standard Range)',
+        },
+      },
+      {
+        partNumber: '2105IXR-3-CLE',
+        name: 'Granit 2105i XR — sam skaner (Expanded Range)',
+        priceFrom: 2960,
+        availability: 'available',
+        attributes: {
+          'Zasięg': 'XR (Expanded Range)',
+        },
+      },
+      {
+        partNumber: '2105ISR-3USB-CLHE',
+        name: 'Granit 2105i SR — zestaw USB z bazą (Standard Range)',
+        priceFrom: 3055,
+        availability: 'available',
+        attributes: {
+          'Zasięg': 'SR (Standard Range)',
+          'Baza ładująca': 'Tak',
+          'Kabel USB': 'Tak',
+        },
+      },
+      {
+        partNumber: '2105IXR-3USB-CLHE',
+        name: 'Granit 2105i XR — zestaw USB z bazą (Expanded Range)',
+        priceFrom: 3618,
+        availability: 'unavailable',
+        attributes: {
+          'Zasięg': 'XR (Expanded Range)',
+          'Baza ładująca': 'Tak',
+          'Kabel USB': 'Tak',
+        },
+      },
+      {
+        partNumber: '2105IXR-3SER-CLHE',
+        name: 'Granit 2105i XR — zestaw RS-232 z bazą (Expanded Range)',
+        priceFrom: 3797,
+        availability: 'available',
+        attributes: {
+          'Zasięg': 'XR (Expanded Range)',
+          'Baza ładująca': 'Tak',
+          'Kabel RS-232': 'Tak',
+        },
+      },
+    ],
+    comparison: {
+      title: 'Porównanie skanerów bezprzewodowych ultra-rugged: Honeywell Granit Ultra 2105i vs Zebra DS3678',
+      models: [
+        {
+          name: 'Granit 2105i SR',
+          slug: 'honeywell-granit-ultra-2105i',
+          highlight: true,
+          specs: {
+            'Typ': 'Bezprzewodowy (Bluetooth 4.2)',
+            'Zasięg skanowania': 'SR do 103 cm (20 mil)',
+            'Zasięg Bluetooth': '100 m',
+            'AI Decoding': 'Tak (+45%)',
+            'Bateria': '3 300 mAh, 100 000 skanów',
+            'DPM / OCR': 'Tak / Tak',
+            'IP / Upadki': 'IP65+IP68 / 3,0 m',
+            'Temperatura pracy': '-20°C do +50°C',
+            'Waga': '425 g',
+            'Cena od': '2 574 zł',
+          },
+        },
+        {
+          name: 'Granit 2105i XR',
+          slug: 'honeywell-granit-ultra-2105i',
+          specs: {
+            'Typ': 'Bezprzewodowy (Bluetooth 4.2)',
+            'Zasięg skanowania': 'XR do 10,85 m (100 mil)',
+            'Zasięg Bluetooth': '100 m',
+            'AI Decoding': 'Tak (+45%)',
+            'Bateria': '3 300 mAh, 100 000 skanów',
+            'DPM / OCR': 'Tak / Tak',
+            'IP / Upadki': 'IP65+IP68 / 3,0 m',
+            'Temperatura pracy': '-20°C do +50°C',
+            'Waga': '425 g',
+            'Cena od': '2 960 zł',
+          },
+        },
+        {
+          name: 'Zebra DS3678-SR',
+          slug: 'zebra-ds3678-sr',
+          specs: {
+            'Typ': 'Bezprzewodowy (Bluetooth 4.0)',
+            'Zasięg skanowania': 'SR do 71 cm (20 mil)',
+            'Zasięg Bluetooth': '100 m',
+            'AI Decoding': 'Nie',
+            'Bateria': '3 100 mAh, 75 000 skanów',
+            'DPM / OCR': 'Nie / Nie',
+            'IP / Upadki': 'IP65+IP68 / 3,0 m',
+            'Temperatura pracy': '-30°C do +50°C',
+            'Waga': '404 g (z baterią)',
+            'Cena od': '2 111 zł',
+          },
+        },
+        {
+          name: 'Granit 2100i SR',
+          slug: 'honeywell-granit-ultra-2100i',
+          specs: {
+            'Typ': 'Przewodowy (USB/RS-232)',
+            'Zasięg skanowania': 'SR do 103 cm (20 mil)',
+            'Zasięg Bluetooth': '—',
+            'AI Decoding': 'Tak (+45%)',
+            'Bateria': '—',
+            'DPM / OCR': 'Tak / Tak',
+            'IP / Upadki': 'IP65+IP68 / 3,0 m',
+            'Temperatura pracy': '-30°C do +50°C',
+            'Waga': '330 g',
+            'Cena od': '1 760 zł',
+          },
+        },
+      ],
+    },
+    applications: [
+      'Magazyny i centra dystrybucyjne — bezprzewodowy skaner do magazynu',
+      'Doki przeładunkowe i cross-docking — swoboda ruchu bez kabla',
+      'Hale produkcyjne i linie montażowe — skanowanie DPM na metalach',
+      'Logistyka i transport — skanowanie palet i kontenerów na terenie otwartym',
+      'Inwentaryzacja z Multi-Code — wiele kodów jednym skanem, Bluetooth 100 m',
+      'Stanowiska kompletacji zamówień — bezprzewodowy zasięg do 100 m',
+      'Pojazdy magazynowe (wózki widłowe) — montaż bazy na pojeździe',
+      'Operacje outdoor (place ładunkowe, terminale kontenerowe)',
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: ['honeywell-cbl-500-300-s00', 'honeywell-cbl-020-300-c00', 'honeywell-holster-industrial'],
+    faq: [
+      {
+        question: 'Czym Honeywell Granit Ultra 2105i różni się od 2100i?',
+        answer: 'Granit Ultra 2105i to bezprzewodowa (cordless) wersja Granit Ultra 2100i. Kluczowe różnice: 2105i ma Bluetooth 4.2 z zasięgiem 100 m, baterię Li-ion 3 300 mAh (100 000 skanów na ładowaniu, 14 h pracy) i bazę komunikacyjno-ładującą. Waży 425 g (vs 330 g przewodowy 2100i). Temperatura pracy: -20°C do +50°C (vs -30°C do +50°C w 2100i). Pozostałe parametry — sensor, AI decoding +45%, IP65/IP68, upadki 3 m, odczyt DPM/OCR — identyczne. Do mroźni poniżej -20°C wybierz przewodowy [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i).',
+      },
+      {
+        question: 'Jaki zasięg Bluetooth ma Granit Ultra 2105i?',
+        answer: 'Bluetooth 4.2 Class 1 — zasięg do 100 m (330 ft) w linii prostej z bazą komunikacyjno-ładującą Honeywell. W warunkach magazynowych z regałami metalowymi realny zasięg to 30–60 m. Adaptive Frequency Hopping minimalizuje zakłócenia od sieci Wi-Fi i innych urządzeń 2,4 GHz.',
+      },
+      {
+        question: 'Ile skanów wytrzymuje bateria Granit Ultra 2105i?',
+        answer: 'Bateria Li-ion 3 300 mAh zapewnia do 100 000 skanów na jednym ładowaniu lub 14 godzin ciągłej pracy przy 2 skanach na sekundę. Przy typowym użyciu magazynowym (1 skan co 5–10 s) bateria wystarczy na pełną zmianę 8–12 h bez doładowywania.',
+      },
+      {
+        question: 'Jak długo ładuje się bateria Granit Ultra 2105i?',
+        answer: 'Czas ładowania zależy od źródła: USB BC1.2 lub zasilacz 5V 3A — 4 godziny. USB 2.0 — do 12 godzin. Dostępna jest też ładowarka 4-slotowa MB4-BAT-SCN11 (ładuje 4 baterie jednocześnie w 4 h) — idealna do zarządzania flotą skanerów na wielu zmianach.',
+      },
+      {
+        question: 'Czy Granit Ultra 2105i działa w mroźni i chłodni?',
+        answer: 'Temperatura pracy -20°C do +50°C — nadaje się do chłodni (0°C do -20°C) i gorących hal produkcyjnych. Uwaga: do mroźni głębokiego mrożenia (poniżej -20°C) zalecamy przewodowy [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) z zakresem od -30°C. Skaner jest testowany na 50 upadków z 2 m w temperaturach od -30°C do +50°C, co potwierdza odporność na szoki termiczne.',
+      },
+      {
+        question: 'Co to jest AI decoding w Granit Ultra 2105i?',
+        answer: 'Honeywell Granit Ultra 2105i to bezprzewodowy skaner z wbudowanym dekodowaniem AI (Artificial Intelligence). Algorytmy sztucznej inteligencji integrują szybkie przetwarzanie obrazu z zaawansowanymi technikami dekodowania — w testach Honeywell na 6 kolekcjach kodów referencyjnych skaner jest o 45% szybszy niż poprzednia generacja (Granit XP). W praktyce oznacza to natychmiastowy odczyt nawet uszkodzonych, zabrudzonych i słabo wydrukowanych kodów.',
+      },
+      {
+        question: 'Czym różni się wariant SR od XR w Granit Ultra 2105i?',
+        answer: 'SR (Standard Range): czyta kody od kontaktu do ok. 1 m (UPC 13 mil do 63 cm, Code 128 20 mil do 103 cm) — uniwersalny wariant na kompletację, przyjęcie towaru i stanowiska kasowe. XR (Expanded Range / FlexRange): sięga do 10,85 m na kodach 100 mil Code 39 i do 2,8 m na Code 128 20 mil — idealny do magazynów średniego składowania i doków przeładunkowych. Oba warianty mają identyczną wytrzymałość, baterię i łączność Bluetooth.',
+      },
+      {
+        question: 'Czy Granit Ultra 2105i odczytuje kody DPM i OCR?',
+        answer: 'Tak — Granit Ultra 2105i obsługuje Direct Part Mark (DPM), czyli kody naniesione bezpośrednio na metal, plastik, szkło i ceramikę (dot peen, laser etch, inkjet). Dodatkowo ma wbudowany OCR: OCR-A, OCR-B, MICR E-13B i SEMI Font (6–60 punktów) — do odczytu tekstu drukowanego na tabliczkach znamionowych, etykietach i dokumentach. Digimarc (cyfrowe znaki wodne) również w standardzie.',
+      },
+      {
+        question: 'Ile kosztuje skaner Honeywell Granit Ultra 2105i?',
+        answer: 'Cena w TAKMA: sam skaner SR (2105ISR-3-CLE) od 2 574 zł netto, sam skaner XR (2105IXR-3-CLE) od 2 960 zł. Zestaw SR z bazą ładującą i kablem USB (2105ISR-3USB-CLHE) od 3 055 zł. Zestaw XR z bazą i kablem USB (2105IXR-3USB-CLHE) od 3 618 zł. Zestaw XR z bazą i RS-232 (2105IXR-3SER-CLHE) od 3 797 zł. Ceny netto, aktualizowane na bieżąco. Dla porównania: przewodowy [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) od 1 760 zł, bezprzewodowy [Zebra DS3678-SR](/produkt/zebra-ds3678-sr) od 2 111 zł.',
+      },
+      {
+        question: 'Honeywell Granit Ultra 2105i vs Zebra DS3678-SR — który skaner wybrać?',
+        answer: 'Granit 2105i: AI decoding (+45%), DPM/OCR w standardzie, 100 000 skanów/ładowanie (vs 75 000 DS3678), Bluetooth 4.2, sensor 1280×1080 px (vs 1280×800), Multi-Code. [Zebra DS3678-SR](/produkt/zebra-ds3678-sr): tańsza (od 2 111 zł vs 2 574 zł), temperatura pracy -30°C (vs -20°C), szyfrowanie FIPS 140-2, szersza baza instalacyjna w Polsce. Granit 2105i wygrywa na technologii dekodowania i żywotności baterii, Zebra DS3678 na cenie i pracy w skrajnym mrozie.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Honeywell Granit Ultra 2105i?',
+        answer: 'Przewodowy odpowiednik z AI: [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (od 1 760 zł, -30°C, lżejszy). Zebra bezprzewodowy: [DS3678-SR](/produkt/zebra-ds3678-sr) (od 2 111 zł, IP65/IP68, FIPS 140-2, -30°C). Zebra bezprzewodowy XR: [DS3678-XR](/produkt/zebra-ds3678-xr) (od 3 059 zł, zasięg do 21,3 m). Honeywell poprzednia gen.: Granit XP 1991i (cordless, bez AI). Granit 2105i to jedyny bezprzewodowy ultra-rugged z AI decoding i DPM/OCR na rynku.',
+      },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa Granit Ultra 2105i (EN)', type: 'datasheet', url: '/docs/hon-ia-pss-granit-ultra-2105i-datasheet.pdf', size: '0.6 MB' },
+      { name: 'Skrócona instrukcja obsługi Granit 2100/2105 (EN)', type: 'manual', url: '/docs/sps-ppr-2100-en-qs.pdf', size: '0.3 MB' },
+      { name: 'Strona produktu Honeywell Granit Ultra 2105i (EN)', type: 'manual', url: 'https://automation.honeywell.com/us/en/products/productivity-solutions/barcode-scanners/rugged-handheld/granit-ultra-2105i-scanner', size: 'Online' },
     ],
     createdAt: '2026-03-03',
   },
