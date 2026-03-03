@@ -184,7 +184,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto. Zebra LI2208, DS2208, DS4608, DS8208, DS3678-SR — gwarancja 5 lat. Skanery przewodowe i bezprzewodowe do kas, aptek i magazynów. Autoryzowany partner Zebra.',
     longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D Zebra Technologies i Newland — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Zebra DS2208 do kas, aptek i biur z gwarancją 60 miesięcy. Newland HR23 Dorada — ekonomiczny 2D z gwarancją 5 lat. DS3678-SR bezprzewodowy ultra-rugged do magazynów. DS9908 hybrydowy prezentacyjny do kas POS. Autoryzowany partner Zebra — doradztwo, konfiguracja i serwis w Polsce.',
     icon: 'scan',
-    productCount: 29,
+    productCount: 30,
   },
   {
     id: 'tablety-przemyslowe',
@@ -826,8 +826,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Skanery kodów kreskowych przewodowe USB od 352 zł netto. Zebra DS2208 — imager 2D, IP52, 5 lat gwarancji. Do kas, aptek, biur i magazynów. Autoryzowany partner Zebra — doradztwo i serwis.',
     longDescription: 'Przewodowe czytniki kodów kreskowych (skanery USB / RS-232) — niezawodne połączenie, zerowe opóźnienia, brak baterii do ładowania. Imager 2D odczytuje kody 1D, QR, DataMatrix i kody z ekranów. Zebra DS2208 (IP52, 5 lat gwarancji) — idealna na stałe stanowiska kasowe, apteki, przyjęcia towaru.',
     icon: 'scan',
-    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er', 'newland-hr23-dorada', 'newland-hr33-marlin', 'newland-hr11-aringa', 'newland-hr15-wahoo', 'newland-nvh300', 'honeywell-granit-ultra-2100i', 'honeywell-granit-xp-1990ixlr'],
-    productCount: 17,
+    productIds: ['zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds3608-xr', 'zebra-ds3608-hd', 'zebra-ds3608-sr', 'zebra-ds3608-hp', 'zebra-li2208', 'zebra-li3608-sr', 'zebra-li3608-er', 'newland-hr23-dorada', 'newland-hr33-marlin', 'newland-hr11-aringa', 'newland-hr15-wahoo', 'newland-nvh300', 'honeywell-granit-ultra-2100i', 'honeywell-granit-xp-1990ixlr', 'honeywell-granit-xp-1990isr'],
+    productCount: 18,
   },
   {
     id: 'skanery-bezprzewodowe',
@@ -13846,6 +13846,209 @@ Gwarancja producenta 3 lata. Wymiary 192 × 76 × 100 mm, waga 320 g. Dokumentac
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: '/docs/sps-ppr-granit-xp-1990ixlr-scanner-data-sheet-en-a4.pdf', size: '0.1 MB' },
       { name: 'Skrócona instrukcja obsługi (EN)', type: 'manual', url: '/docs/sps-ppr-1990-en-qs.pdf', size: '0.5 MB' },
       { name: 'Strona produktu Honeywell Granit XP 1990iXLR (EN)', type: 'manual', url: 'https://automation.honeywell.com/us/en/products/productivity-solutions/barcode-scanners/rugged-handheld/granit-xp-1990ixlr-scanner', size: 'Online' },
+    ],
+    createdAt: '2026-03-03',
+  },
+  {
+    id: 'honeywell-granit-xp-1990isr',
+    slug: 'honeywell-granit-xp-1990isr',
+    name: 'Honeywell Granit XP 1990iSR',
+    sameAs: 'https://automation.honeywell.com/us/en/products/productivity-solutions/barcode-scanners/rugged-handheld/granit-1990isr-ultra-rugged-standard-range-scanner',
+    seoTitle: 'Honeywell Granit XP 1990iSR — skaner ultra-rugged 2D, IP67, upadki 3 m | od 1 726 zł',
+    seoDescription: 'Honeywell Granit XP 1990iSR — skaner kodów kreskowych przemysłowy przewodowy 2D. IP67+IP65, upadki 3 m, -30°C do +50°C, 7 000 obrotów. Czytnik do magazynu, produkcji i mroźni. Cena od 1 726 zł netto.',
+    shortDescription: 'Honeywell Granit XP 1990iSR — skaner przewodowy ultra-rugged 2D, IP67+IP65, upadki 3 m, -30°C, sensor 1280×800, od 1 726 zł',
+    description: `Dla kogo? Honeywell Granit XP 1990iSR to ultra-wytrzymały przewodowy skaner kodów kreskowych 2D standard range — zaprojektowany do magazynów, centrów dystrybucyjnych, hal produkcyjnych, mroźni i doków przeładunkowych. Wariant SR (Standard Range) z serii Granit XP — idealne połączenie ekstremalnej wytrzymałości i wydajnego skanowania bliskiego zasięgu (do 84 cm na kodach 20 mil).
+
+Sensor area imager 1 280 × 800 px z algorytmami dekodowania nowej generacji — szybki odczyt nawet uszkodzonych, zabrudzonych i słabo wydrukowanych kodów 1D i 2D. Kąt skanowania: 40° (poziomo) × 30° (pionowo). Tolerancja ruchu 4 500 mm/s — skanowanie z ręki na linii produkcyjnej bez zatrzymywania. Minimalna rozdzielczość: 3 mil (1D Code 39), 6 mil (2D Data Matrix). Odczyt: standardowe 1D, 2D, PDF417, Postal, Digimarc, DOT Code, OCR.
+
+Wytrzymałość klasy ultra-rugged: upadki z 3 m na beton (MIL-STD-810G), 2,4 m z 20 upadków, 2 m z 50 upadków od -30°C do +50°C. IP67 + IP65 (pyłoszczelny, odporny na krótkotrwałe zanurzenie). 7 000 obrotów w tumbler teście (1 m). Małe, głęboko osadzone okno skanera odporne na zarysowania — kluczowy element uszczelnienia chroniący przed pyłem i wilgocią.
+
+Interfejsy: USB, RS-232 TTL, Keyboard Wedge (PS/2 TTL). Zasilanie 4,0–5,5 VDC, pobór mocy 2,35 W (470 mA @ 5 VDC). Roll ±360°, Pitch ±45°, Skew ±65°. Oświetlenie: 0–100 000 lux. ESD ±20 kV (powietrze), ±8 kV (kontakt).
+
+Zarządzanie flotą: Honeywell Scanner Management Utility (SMU) — centralne wdrażanie firmware, konfiguracji i aktualizacji. Honeywell Operational Intelligence — analityka skanowania w czasie rzeczywistym.
+
+Porównanie z innymi modelami Granit: wariant SR jest tańszy i lżejszy niż [Granit XP 1990iXLR](/produkt/honeywell-granit-xp-1990ixlr) (od 2 417 zł, zasięg 24 m) — idealny wybór jeśli nie potrzebujesz skanowania dalekiego zasięgu. Jeśli szukasz nowej generacji z AI decoding (+45% szybciej) i IP68 — rozważ [Honeywell Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (od 1 760 zł).
+
+Koszt posiadania (TCO): gwarancja 3 lata, IP67, upadki z 3 m i 7 000 obrotów tumble — skaner projektowany na 5+ lat intensywnej pracy. Cena od 1 726 zł netto (zestaw USB) — jeden z najtańszych skanerów ultra-rugged IP67 na rynku.
+
+Gwarancja producenta 3 lata. Wymiary 192 × 76 × 100 mm, waga 320 g. Dokumentacja: automation.honeywell.com/granit-1990isr.`,
+    categoryId: 'skanery-kodow-kreskowych',
+    subcategoryIds: ['skanery-przewodowe'],
+    manufacturerId: 'honeywell',
+    priceFrom: 1726,
+    images: [
+      '/images/products/honeywell-granit-xp-1990isr.png',
+      '/images/products/honeywell-granit-xp-1990isr-2.png',
+    ],
+    imageDescriptions: [
+      'Honeywell Granit XP 1990iSR — widok z przodu, czerwono-czarna obudowa ultra-rugged z oknem skanera area imager 2D',
+      'Honeywell Granit XP 1990iSR — widok z boku, ergonomiczny uchwyt pistoletowy z triggerem i kabel przemysłowy',
+    ],
+    tags: ['magazyn', 'logistyka', 'produkcja'],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    specifications: [
+      { name: 'Typ skanera', value: 'Area imager 2D ultra-rugged, przewodowy, standard range (SR)' },
+      { name: 'Sensor', value: '1280×800 px, area imager' },
+      { name: 'Kąt skanowania', value: '40° (poziomo) × 30° (pionowo)' },
+      { name: 'Zasięg (5 mil Code 39)', value: '20 mm – 220 mm' },
+      { name: 'Zasięg (13 mil UPC)', value: '0 – 504 mm' },
+      { name: 'Zasięg (20 mil Code 39)', value: '0 – 837 mm' },
+      { name: 'Zasięg (6,7 mil PDF 417)', value: '20 mm – 209 mm' },
+      { name: 'Zasięg (10 mil DataMatrix)', value: '30 mm – 220 mm' },
+      { name: 'Zasięg (20 mil QR Code)', value: '33 mm – 475 mm' },
+      { name: 'Min. rozdzielczość 1D', value: '3 mil (0,076 mm) — Code 39' },
+      { name: 'Min. rozdzielczość 2D', value: '6 mil (0,152 mm) — Data Matrix' },
+      { name: 'Tolerancja ruchu', value: 'Do 4 500 mm/s (177 in/s)' },
+      { name: 'Skanowane kody 1D', value: 'Code 39, Code 128, Code 93, EAN/UPC, Codabar, GS1 DataBar, Postal' },
+      { name: 'Skanowane kody 2D', value: 'QR Code, Data Matrix, Aztec, PDF417, DOT Code, Digimarc' },
+      { name: 'OCR', value: 'Tak (OCR symbologies)' },
+      { name: 'Kontrast druku', value: 'Od 20%' },
+      { name: 'Tolerancja obrotu/pochylenia', value: '±360° roll, ±45° pitch, ±65° skew' },
+      { name: 'Oświetlenie otoczenia', value: '0–100 000 lux' },
+      { name: 'Interfejsy', value: 'USB, RS-232 TTL, Keyboard Wedge' },
+      { name: 'Zasilanie', value: '4,0–5,5 VDC; 2,35 W (470 mA @ 5 VDC)' },
+      { name: 'Pobór mocy standby', value: '0,5 W (100 mA @ 5 VDC)' },
+      { name: 'Klasa szczelności', value: 'IP67 + IP65' },
+      { name: 'Odporność na upadki', value: '3,0 m na beton (MIL-STD-810G), 2,4 m (20×), 2 m (50× od -30°C do +50°C)' },
+      { name: 'Tumble test', value: '7 000 obrotów (1,0 m)' },
+      { name: 'ESD', value: '±20 kV (powietrze), ±8 kV (kontakt)' },
+      { name: 'Temperatura pracy', value: '-30°C do +50°C (z kablem industrial-grade)' },
+      { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
+      { name: 'Wilgotność', value: 'Do 95% RH, bez kondensacji' },
+      { name: 'Wymiary (D × S × W)', value: '192 × 76 × 100 mm' },
+      { name: 'Waga', value: '320 g' },
+      { name: 'Wskaźniki', value: 'Dioda LED dobrego odczytu, sygnał dźwiękowy (regulowany), wibracja (regulowana)' },
+      { name: 'Gwarancja', value: '36 miesięcy (3 lata)' },
+    ],
+    variants: [
+      {
+        partNumber: '1990ISR-3USB-R',
+        name: 'Granit XP 1990iSR — zestaw USB',
+        priceFrom: 1726,
+        availability: 'available',
+        attributes: {
+          'Zestaw': 'USB Kit',
+        },
+      },
+      {
+        partNumber: '1990ISR-3-R',
+        name: 'Granit XP 1990iSR — sam skaner',
+        priceFrom: 1759,
+        availability: 'available',
+        attributes: {
+          'Zestaw': 'Sam skaner',
+        },
+      },
+    ],
+    comparison: {
+      title: 'Porównanie skanerów ultra-rugged Honeywell Granit: 1990iSR vs 1990iXLR vs Ultra 2100i',
+      models: [
+        {
+          name: 'Granit XP 1990iSR',
+          slug: 'honeywell-granit-xp-1990isr',
+          highlight: true,
+          specs: {
+            'Zasięg': 'SR — do 84 cm (20 mil)',
+            'Sensor': '1280×800 px (single)',
+            'AI Decoding': 'Nie',
+            'Tolerancja ruchu': '4 500 mm/s',
+            'IP / Upadki': 'IP67+IP65 / 3,0 m',
+            'Tumble': '7 000 obrotów',
+            'Waga': '320 g',
+            'Cena od': '1 726 zł',
+            'Najlepszy do': 'Magazyn, kasy, przyjęcie towaru',
+          },
+        },
+        {
+          name: 'Granit XP 1990iXLR',
+          slug: 'honeywell-granit-xp-1990ixlr',
+          specs: {
+            'Zasięg': 'XLR — do 24 m (100 mil)',
+            'Sensor': 'Dual: Far 1920×1080 + Near 1280×800',
+            'AI Decoding': 'Nie',
+            'Tolerancja ruchu': '4 500 mm/s',
+            'IP / Upadki': 'IP67+IP65 / 3,0 m',
+            'Tumble': '7 000 obrotów',
+            'Waga': '320 g',
+            'Cena od': '2 417 zł',
+            'Najlepszy do': 'Magazyn WS, doki, daleki zasięg',
+          },
+        },
+        {
+          name: 'Granit Ultra 2100i SR',
+          slug: 'honeywell-granit-ultra-2100i',
+          specs: {
+            'Zasięg': 'SR — do 103 cm (20 mil C128)',
+            'Sensor': '1280×1080 px',
+            'AI Decoding': 'Tak (+45%)',
+            'Tolerancja ruchu': '4 000 mm/s',
+            'IP / Upadki': 'IP65+IP68 / 3,0 m',
+            'Tumble': '7 500 obrotów',
+            'Waga': '330 g',
+            'Cena od': '1 760 zł',
+            'Najlepszy do': 'Magazyn, DPM, uszkodzone kody',
+          },
+        },
+      ],
+    },
+    applications: [
+      'Magazyny i centra dystrybucyjne — przyjęcie towaru, kompletowanie zamówień',
+      'Doki przeładunkowe i cross-docking',
+      'Hale produkcyjne i linie montażowe',
+      'Mroźnie i chłodnie (do -30°C)',
+      'Stanowiska kasowe i POS w trudnych warunkach',
+      'Logistyka i transport — skanowanie paczek i palet',
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: ['honeywell-cbl-500-300-s00', 'honeywell-cbl-020-300-c00', 'honeywell-holster-industrial'],
+    faq: [
+      {
+        question: 'Czym różni się Granit XP 1990iSR od 1990iXLR?',
+        answer: '1990iSR (Standard Range) ma pojedynczy sensor 1280×800 px i zasięg do 84 cm na kodach 20 mil — idealny do bliskiego pola (kasy, przyjęcie towaru, kompletacja). [1990iXLR](/produkt/honeywell-granit-xp-1990ixlr) (eXtra Long Range) ma podwójny sensor (1920×1080 + 1280×800) i czyta do 24 m na kodach 100 mil — do magazynów wysokiego składowania. Wytrzymałość identyczna: IP67+IP65, 3 m upadki, 7 000 tumble. Różnica w cenie: 1990iSR od 1 726 zł vs 1990iXLR od 2 417 zł.',
+      },
+      {
+        question: 'Czy Granit XP 1990iSR działa w mroźni?',
+        answer: 'Tak — temperatura pracy od -30°C do +50°C (z kablem industrial-grade). Uszczelnienie IP67 + IP65 chroni przed wilgocią, lodem i kondensacją. Skaner testowany na 50 upadków z 2 m od -30°C do +50°C. Do ciągłej pracy w mroźniach i chłodniach bez aklimatyzacji.',
+      },
+      {
+        question: 'Jaki jest zasięg skanera Honeywell Granit XP 1990iSR?',
+        answer: 'Granit XP 1990iSR (Standard Range): 13 mil UPC do 50,4 cm, 20 mil Code 39 do 83,7 cm, 10 mil Data Matrix do 22 cm, 20 mil QR Code do 47,5 cm. Minimalna rozdzielczość: 3 mil 1D (Code 39), 6 mil 2D (Data Matrix). Tolerancja ruchu 4 500 mm/s — skanowanie z ręki bez zatrzymywania.',
+      },
+      {
+        question: 'Ile kosztuje Honeywell Granit XP 1990iSR?',
+        answer: 'Cena skanera Honeywell Granit XP 1990iSR w TAKMA zaczyna się od 1 726 zł netto (zestaw USB — 1990ISR-3USB-R). Sam skaner bez kabla (1990ISR-3-R) od 1 759 zł netto. Ceny aktualizowane na bieżąco z hurtowni. Granit XP 1990iSR to jeden z najtańszych skanerów ultra-rugged IP67 na rynku.',
+      },
+      {
+        question: 'Czy Granit XP 1990iSR czyta uszkodzone i słabo wydrukowane kody?',
+        answer: 'Tak — Granit XP jest zbudowany na platformie obrazowania nowej generacji Honeywell z zaawansowanymi algorytmami dekodowania. Sensor 1280×800 px z szybkim przetwarzaniem odczytuje uszkodzone, zamazane, pomięte i słabo wydrukowane kody kreskowe — eliminując wąskie gardła na liniach przyjęcia towaru i kompletacji.',
+      },
+      {
+        question: 'Jakie interfejsy ma Granit XP 1990iSR?',
+        answer: 'USB, RS-232 TTL i Keyboard Wedge (PS/2 TTL). Wariant 1990ISR-3USB-R zawiera kabel USB w zestawie. Wariant 1990ISR-3-R to sam skaner — kabel trzeba dokupić osobno (np. CBL-500-300-S00 do USB lub CBL-020-300-C00 do RS-232).',
+      },
+      {
+        question: 'Czym Granit XP 1990iSR różni się od Granit Ultra 2100i?',
+        answer: '[Honeywell Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (od 1 760 zł) to nowa generacja — ma AI decoding (+45% szybciej), sensor 1280×1080 px (vs 1280×800), IP68 (zanurzalny, vs IP67), 7 500 tumble (vs 7 000), DPM i OCR w standardzie. 1990iSR jest tańszy (od 1 726 zł), lżejszy o 10 g i ma szybszą tolerancję ruchu (4 500 vs 4 000 mm/s). Dla standardowych zastosowań magazynowych oba są doskonałym wyborem.',
+      },
+      {
+        question: 'Jak Granit XP 1990iSR wypada na tle Zebra DS3608-SR?',
+        answer: '[Zebra DS3608-SR](/produkt/zebra-ds3608-sr) (od 1 287 zł) jest tańsza, ma Industrial Ethernet (Profinet, EtherNet/IP) i sensor 1280×800 px — ale 5 000 obrotów tumble (vs 7 000 w Granit). Granit XP 1990iSR ma wibrację potwierdzającą odczyt, 7 000 tumble i 50 upadków z 2 m w zakresie -30°C do +50°C. Oba mają IP67+IP65 i upadki z 3 m. DS3608-SR lepsza do PLC/Ethernet, Granit do najtrudniejszych środowisk mechanicznych.',
+      },
+      {
+        question: 'Jaka jest wytrzymałość skanera Granit XP 1990iSR?',
+        answer: 'Upadki: 3 m na beton (MIL-STD-810G), 2,4 m z 20 upadków (25°C, 55% RH), 2 m z 50 upadków od -30°C do +50°C. Tumble: 7 000 obrotów (1 m). IP67 (krótkotrwałe zanurzenie 1 m/30 min) + IP65 (strumień wody). ESD ±20 kV (powietrze), ±8 kV (kontakt). Głęboko osadzone okno skanera odporne na zarysowania.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Honeywell Granit XP 1990iSR?',
+        answer: 'W klasie ultra-rugged SR: [Zebra DS3608-SR](/produkt/zebra-ds3608-sr) (od 1 287 zł, Industrial Ethernet, IP65+IP68). Z AI decoding: [Honeywell Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (od 1 760 zł, +45% szybciej, DPM/OCR, IP68). Z dalszym zasięgiem: [Granit XP 1990iXLR](/produkt/honeywell-granit-xp-1990ixlr) (od 2 417 zł, do 24 m). Granit XP 1990iSR wyróżnia się najlepszym stosunkiem ceny do wytrzymałości w klasie IP67.',
+      },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: '/docs/sps-ppr-granit-xp-1990isr-scanner-data-sheet-en-a4.pdf', size: '0.2 MB' },
+      { name: 'Skrócona instrukcja obsługi (EN)', type: 'manual', url: '/docs/sps-ppr-1990-en-qs.pdf', size: '0.5 MB' },
+      { name: 'Strona produktu Honeywell Granit XP 1990iSR (EN)', type: 'manual', url: 'https://automation.honeywell.com/us/en/products/productivity-solutions/barcode-scanners/rugged-handheld/granit-1990isr-ultra-rugged-standard-range-scanner', size: 'Online' },
     ],
     createdAt: '2026-03-03',
   },
