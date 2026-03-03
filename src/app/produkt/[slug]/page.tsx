@@ -434,16 +434,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
                       })()
                 }
               />
-              <StockInfo
-                partNumbers={
-                  product.variants && product.variants.length > 0
-                    ? product.variants.map(v => v.partNumber)
-                    : (() => {
-                        const pnSpec = product.specifications.find(s => s.name === 'Part Number')
-                        return pnSpec ? [pnSpec.value] : []
-                      })()
-                }
-              />
             </div>
 
             {/* Variants link */}
