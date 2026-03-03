@@ -13655,8 +13655,14 @@ Gwarancja producenta 3 lata. Wymiary 192 × 76 × 100 mm, waga 320 g. Dokumentac
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-przewodowe'],
     manufacturerId: 'honeywell',
-    images: [],
-    imageDescriptions: [],
+    images: [
+      '/images/products/honeywell-granit-xp-1990ixlr.png',
+      '/images/products/honeywell-granit-xp-1990ixlr-2.png',
+    ],
+    imageDescriptions: [
+      'Honeywell Granit XP 1990iXLR — widok z przodu, czerwono-czarna obudowa ultra-rugged z oknem skanera dual imager',
+      'Honeywell Granit XP 1990iXLR — widok z boku, ergonomiczny uchwyt pistoletowy z triggerem i kabel przemysłowy',
+    ],
     tags: ['magazyn', 'logistyka', 'produkcja'],
     availability: 'on-order',
     isNew: false,
