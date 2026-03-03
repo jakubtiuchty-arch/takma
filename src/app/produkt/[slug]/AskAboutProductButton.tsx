@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { createPortal } from 'react-dom'
 import { MailIcon, CloseIcon, CheckIcon } from '@/components/ui/Icons'
+import Turnstile from '@/components/Turnstile'
 
 interface AskAboutProductButtonProps {
   productName: string
@@ -28,6 +29,7 @@ function InquiryModal({
   const [consent, setConsent] = useState(false)
   const [status, setStatus] = useState<'idle' | 'sending' | 'done' | 'error'>('idle')
   const [loadedAt] = useState(() => Date.now())
+  const [turnstileToken, setTurnstileToken] = useState('')
   const nameRef = useRef<HTMLInputElement>(null)
   const modalRef = useRef<HTMLDivElement>(null)
 
@@ -61,7 +63,7 @@ function InquiryModal({
       const res = await fetch('/api/inquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, phone, message, productName, productSlug, _ts: loadedAt, _hp: '' }),
+        body: JSON.stringify({ name, email, phone, message, productName, productSlug, _ts: loadedAt, _hp: '', turnstileToken }),
       })
       if (res.ok) {
         setStatus('done')
@@ -223,10 +225,12 @@ function InquiryModal({
               <p className="text-sm text-red-600">Wystąpił błąd. Spróbuj ponownie lub napisz na takma@takma.com.pl.</p>
             )}
 
+            <Turnstile onVerify={setTurnstileToken} />
+
             {/* Submit */}
             <button
               type="submit"
-              disabled={status === 'sending' || !consent}
+              disabled={status === 'sending' || !consent || !turnstileToken}
               className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 active:scale-[0.98]"
             >
               {status === 'sending' ? (

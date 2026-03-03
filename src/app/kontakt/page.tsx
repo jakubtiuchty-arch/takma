@@ -11,6 +11,7 @@ import {
   LocationIcon,
   CheckIcon,
 } from '@/components/ui/Icons'
+import Turnstile from '@/components/Turnstile'
 
 const contactReasons = [
   { value: 'quote', label: 'Zapytanie ofertowe' },
@@ -41,6 +42,7 @@ export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSuccess, setIsSuccess] = useState(false)
   const [loadedAt] = useState(() => Date.now())
+  const [turnstileToken, setTurnstileToken] = useState('')
 
   const [formData, setFormData] = useState<FormData>({
     name: '',
@@ -92,7 +94,7 @@ export default function ContactPage() {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...formData, _ts: loadedAt, _hp: '' }),
+        body: JSON.stringify({ ...formData, _ts: loadedAt, _hp: '', turnstileToken }),
       })
 
       if (res.ok) {
@@ -304,7 +306,9 @@ export default function ContactPage() {
                   error={errors.consent}
                 />
 
-                <Button type="submit" size="lg" isLoading={isSubmitting} className="w-full sm:w-auto">
+                <Turnstile onVerify={setTurnstileToken} />
+
+                <Button type="submit" size="lg" isLoading={isSubmitting} disabled={!turnstileToken} className="w-full sm:w-auto">
                   Wyślij wiadomość
                 </Button>
               </form>

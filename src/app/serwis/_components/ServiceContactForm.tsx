@@ -4,11 +4,13 @@ import { useState } from 'react'
 import Button from '@/components/ui/Button'
 import Input from '@/components/ui/Input'
 import Textarea from '@/components/ui/Textarea'
+import Turnstile from '@/components/Turnstile'
 
 export function ServiceContactForm() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [errorMsg, setErrorMsg] = useState('')
   const [loadedAt] = useState(() => Date.now())
+  const [turnstileToken, setTurnstileToken] = useState('')
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -49,6 +51,7 @@ export function ServiceContactForm() {
           message,
           _ts: loadedAt,
           _hp: '',
+          turnstileToken,
         }),
       })
 
@@ -162,8 +165,10 @@ export function ServiceContactForm() {
               </div>
             </div>
 
+            <Turnstile onVerify={setTurnstileToken} />
+
             <div className="pt-4 flex justify-end">
-              <Button type="submit" size="lg" disabled={status === 'loading'} className="w-full md:w-auto">
+              <Button type="submit" size="lg" disabled={status === 'loading' || !turnstileToken} className="w-full md:w-auto">
                 {status === 'loading' ? 'Wysyłanie...' : 'Wyślij zgłoszenie RMA'}
               </Button>
             </div>
