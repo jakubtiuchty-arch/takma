@@ -2865,106 +2865,124 @@ Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy)
   'akcesoria-do-skanerow': {
     definition: {
       heading: 'Czym są akcesoria do skanerów kodów kreskowych?',
-      content: 'Akcesoria do skanerów kodów kreskowych to oryginalne komponenty i urządzenia peryferyjne zaprojektowane przez producentów (Honeywell, Newland) specjalnie do profesjonalnych skanerów 1D/2D. Obejmują pięć głównych grup: baterie zapasowe Li-ion (2 450–3 300 mAh) do pracy wielozmianowej, bazy ładująco-komunikacyjne Bluetooth z zasięgiem do 100 m, ładowarki wieloslotowe do zarządzania flotą baterii, podstawki hands-free z auto-sense do stałych stanowisk oraz kable komunikacyjne USB i RS-232. Każde akcesorium jest certyfikowane przez producenta i objęte pełną gwarancją.',
+      content: 'Akcesoria do skanerów kodów kreskowych to oryginalne komponenty i urządzenia peryferyjne zaprojektowane przez producentów (Zebra, Honeywell, Newland) specjalnie do profesjonalnych skanerów 1D/2D. Obejmują pięć głównych grup: stacje dokujące i bazy ładująco-komunikacyjne (Zebra STB3678, CR8288, CR8178, CR2278; Honeywell CCB23), baterie zapasowe Li-ion (Zebra PowerPrecision+ 2 400–3 500 mAh, Honeywell BAT-SCN 2 450–3 300 mAh, Newland BTY 2 600 mAh), podstawki gooseneck i Smartstand z auto-sense do pracy hands-free, kable komunikacyjne USB i RS-232 (2,1–4,6 m) oraz kabury przemysłowe. Każde akcesorium jest certyfikowane przez producenta i objęte pełną gwarancją.',
     },
     buyingGuide: {
       heading: 'Jak dobrać akcesoria do skanera kodów kreskowych?',
       items: [
-        'Kompatybilność z modelem — każda seria skanerów ma dedykowane akcesoria o różnych Part Number. Bateria BAT-SCN11 pasuje do Granit Ultra 2105i, ale NIE do starszego Granit XP 1991i (ten wymaga BAT-SCN05).',
-        'Baterie — dobierz pojemność do trybu pracy: BAT-SCN11 (3 300 mAh, 100 000 skanów) do intensywnej pracy magazynowej, BAT-SCN05 (2 450 mAh, 50 000 skanów) do standardowej pracy, BTY2333 (2 600 mAh, 16 h) do skanerów Newland BT.',
-        'Baza komunikacyjna — CCB23-100BT-07N zapewnia Bluetooth Class 1 (100 m zasięgu) + ładowanie kontaktowe. Kable komunikacyjne (USB/RS-232/KBW) sprzedawane oddzielnie.',
-        'Podstawka — Smartstand (STD23/STD20i) do kas i aptek, gooseneck (STD30i) gdy potrzebujesz elastycznego ustawienia kąta, składana (STD300) do stanowisk kontroli jakości.',
-        'Kable — USB (CBL-500-300-S00) do standardowego podłączenia, RS-232 (CBL-020-300-C00) do terminali POS i sterowników PLC z portem szeregowym.',
+        'Kompatybilność z modelem — każda seria skanerów ma dedykowane akcesoria o różnych Part Number. Kable Zebra CBA-U21-S07ZBR pasują do DS2208/DS4608, ale NIE do DS3608 (ten wymaga CBA-U01-S07ZAR). Bateria BAT-SCN11 pasuje do Granit Ultra 2105i, ale NIE do Granit XP 1991i.',
+        'Stacje dokujące Zebra — STB3678 (cradle USB/RS-232 do DS3678), CR8288 (ładowanie indukcyjne do DS8288), CR8178 Connect+ (bezstykowe do DS4678/DS8178), CR2278 (baza BT z IntelliStand do DS2278). Honeywell CCB23 (BT 100 m do Granit Ultra 2105i).',
+        'Baterie — Zebra PowerPrecision+ do DS3678 (3 100 mAh, 100k skanów), DS8288 (3 500 mAh, indukcyjne), DS2278 (2 400 mAh). Honeywell BAT-SCN11 (3 300 mAh) i BAT-SCN05 (2 450 mAh). Newland BTY2333 (2 600 mAh, 16 h).',
+        'Podstawki — Zebra gooseneck 20-71043-04R (DS2208, DS4608), STND-AS0036-07 (DS3608/DS3678), 20-61022-04R IntelliStand (LI2208), BRKT-MM0099C-04 (DS9908). Newland Smartstand STD23/STD20i, gooseneck STD30i.',
+        'Kable — Zebra USB: CBA-U21 (2,1 m), CBA-U47 (4,6 m). Zebra RS-232: CBA-R07 (2 m), CBA-R21 (4,6 m). Honeywell: CBL-500 USB 3 m, CBL-020 RS-232 3 m. RS-232 zawsze wymaga zewnętrznego zasilacza.',
       ],
     },
-    expertAuthority: 'TAKMA od 25 lat dostarcza kompletne ekosystemy skanerów kodów kreskowych dla firm handlowych, magazynów i linii produkcyjnych w Polsce. Jako autoryzowany partner Honeywell i Newland doradzamy w doborze akcesoriów pod konkretne scenariusze — od pojedynczego stanowiska kasowego po flotę 50+ skanerów w centrum dystrybucyjnym. Każda rekomendacja opiera się na doświadczeniu z ponad 500 wdrożeń AutoID.',
-    technicalDeepDive: `Baterie Honeywell BAT-SCN11 (3 300 mAh / 12 Wh, 3,7 V) — do 100 000 skanów na jednym ładowaniu lub 14 h ciągłej pracy. Wymiary: 94,7 × 22,2 × 27,1 mm, waga ok. 137 g. Kompatybilna z Granit Ultra 2105i/2100i i Xenon Ultra 1962/1960.
+    expertAuthority: 'TAKMA od 25 lat dostarcza kompletne ekosystemy skanerów kodów kreskowych dla firm handlowych, magazynów i linii produkcyjnych w Polsce. Jako autoryzowany partner Zebra, Honeywell i Newland doradzamy w doborze akcesoriów pod konkretne scenariusze — od pojedynczego stanowiska kasowego po flotę 50+ skanerów w centrum dystrybucyjnym. Każda rekomendacja opiera się na doświadczeniu z ponad 500 wdrożeń AutoID.',
+    technicalDeepDive: `Stacje dokujące Zebra: STB3678-C100F3WW — cradle do DS3678, ładowanie 3 h (z zasilaczem) / 10 h (USB), interfejsy USB/RS-232. CR8288-PC/SC — bazy do DS8288 z ładowaniem indukcyjnym (bezkontaktowym) i IntelliStand, Bluetooth 5.2 BLE. CR8178-PC/SC — bazy Connect+ (bezstykowe) do DS4678/DS8178, BT Class 1 (100 m). CR2278-PC — baza prezentacyjna do DS2278, BT Class 1, IntelliStand auto-przełączanie ręczny/hands-free.
 
-Baterie Honeywell BAT-SCN05 (2 450 mAh, 3,7 V) — smart battery z monitorowaniem stanu naładowania, do 50 000 skanów lub 14 h pracy. Dedykowana do Granit XP 1991i (XLR/SR/XR). UWAGA: BAT-SCN11 i BAT-SCN05 NIE są zamienne — różne złącza i elektronika.
+Baterie Zebra PowerPrecision+: BTRY-36IAB0E-00 (3 100 mAh) do DS3678 — 100 000+ skanów, wymienialna bez narzędzi. BTRY-DS82EAB0E-00 (3 500 mAh) do DS8288 — ładowanie indukcyjne, 100 000 skanów / 108 h standby. BTRY-DS22EAB0E-00 (2 400 mAh) do DS2278 — 14 h / 110 000 skanów. Ładowarka SAC3600-4001CR — 4 sloty do baterii DS3678.
 
-Baterie Newland BTY2333 (2 600 mAh Li-Ion) — mechanizm latch-release (szybka wymiana bez narzędzi), ponad 16 h pracy przy 1 skan/6 s. Do HR23/HR33 Bluetooth.
+Baterie Honeywell: BAT-SCN11 (3 300 mAh / 12 Wh) — 100 000 skanów, do Granit Ultra 2105i/2100i i Xenon Ultra. BAT-SCN05 (2 450 mAh) — smart battery do Granit XP 1991i. UWAGA: NIE są zamienne. Baza CCB23-100BT-07N — BT Class 1 (100 m), do 7 sparowanych skanerów, IP65. Ładowarka MB4-BAT-SCN11 — 4 sloty, 4 h.
 
-Baza CCB23-100BT-07N — Bluetooth Class 1 (100 m w linii prostej), do 7 sparowanych skanerów, kontaktowe ładowanie drop-in, montaż desktop/pionowy/na pojeździe, obudowa anty-mikrobowa, IP65. Interfejsy USB/RS-232/KBW (kable oddzielnie).`,
+Baterie Newland: BTY2333 (2 600 mAh) — latch-release, 16 h pracy. Ładowarka CD3233-4C — 4 sloty.
+
+Kable Zebra: CBA-U21-S07ZBR (USB 2,1 m) do DS2208/DS4608/DS9308 — plug-and-play. CBA-U47-S15ZAR (USB 4,6 m) — dłuższa wersja. CBA-R07/R21-S07/S15PAR (RS-232 2/4,6 m) — wymaga zasilacza. CBA-U01/U09 — dedykowane do DS3608/DS3678 (inny konektor).`,
     useCases: [
       {
-        title: 'Magazyn e-commerce — flota 10 skanerów Granit Ultra 2105i',
-        description: 'Baza CCB23-100BT-07N na każdym stanowisku pakowania + ładowarka 4-slot MB4-BAT-SCN11 + 10 zapasowych baterii BAT-SCN11 na drugą zmianę. Budżet akcesoriów: ~400–600 zł/skaner.',
+        title: 'Magazyn e-commerce — flota 10 skanerów Zebra DS3678',
+        description: 'Stacja dokująca STB3678 na każdym stanowisku pakowania + ładowarka 4-slot SAC3600-4001CR + 10 zapasowych baterii BTRY-36IAB0E-00 (PowerPrecision+). Komunikacja Bluetooth/USB przez cradle, wymiana baterii między zmianami. Budżet akcesoriów: ~500–800 zł/skaner.',
       },
       {
         title: 'Sieć handlowa — 5 skanerów Newland HR23 na sklep',
         description: 'Podstawka STD23-33-SA na każdą kasę (tryb hands-free), bateria BTY2333 jako zapas, ładowarka CD3233-4C na zapleczu. Budżet: ~200–350 zł/skaner.',
       },
       {
-        title: 'Apteka — skaner Newland HR15 Wahoo',
-        description: 'Podstawka STD20i Smartstand do skanowania recept i kodów leków w trybie hands-free. Minimalne akcesoria, budżet: ~100–150 zł.',
+        title: 'Centrum dystrybucyjne — skanery Honeywell Granit Ultra 2105i',
+        description: 'Baza CCB23-100BT-07N na wózkach widłowych (BT 100 m) + ładowarka 4-slot MB4-BAT-SCN11 + 10 baterii BAT-SCN11 na drugą zmianę. Kabura HOLSTER-INDUSTRIAL do pracy pieszej. Budżet: ~600–900 zł/skaner.',
       },
       {
-        title: 'Linia produkcyjna — skaner Granit XP 1991i',
-        description: 'Kabura HOLSTER-INDUSTRIAL na pasek operatora + 2 baterie BAT-SCN05 na zmianę. Skaner noszony na biodrze, szybki dostęp do skanowania DPM/kodów laserowych. Budżet: ~450–700 zł/skaner.',
+        title: 'Kasa samoobsługowa — skaner Zebra DS9308/DS9908',
+        description: 'Podstawka BRKT-MM0099C-04 do montażu w kiosku + kabel USB CBA-U21-S07ZBR (2,1 m). Skaner prezentacyjny w trybie hands-free, klient sam skanuje produkty. Budżet: ~200–300 zł/stanowisko.',
+      },
+      {
+        title: 'Apteka — skaner Newland HR15 Wahoo',
+        description: 'Podstawka STD20i Smartstand do skanowania recept i kodów leków w trybie hands-free. Minimalne akcesoria, budżet: ~100–150 zł.',
       },
     ],
     uniqueInsights: {
       heading: 'Czego producenci akcesoriów nie powiedzą',
       items: [
         {
-          title: 'BAT-SCN11 i BAT-SCN05 to RÓŻNE baterie',
-          text: 'Mimo podobnych nazw i tego samego producenta, baterie BAT-SCN11 (Granit Ultra) i BAT-SCN05 (Granit XP) mają różne złącza i elektronikę. Zamówienie niewłaściwej baterii = zwrot i opóźnienie. Zawsze sprawdzaj model skanera przed zamówieniem.',
+          title: 'Kable Zebra NIE są uniwersalne między seriami',
+          text: 'Kabel CBA-U21-S07ZBR pasuje do DS2208/DS4608/DS9308, ale NIE do DS3608/DS3678 — te wymagają CBA-U01-S07ZAR z innym konektorem. Zamówienie złego kabla = zwrot i opóźnienie. Zawsze sprawdzaj Part Number skanera.',
         },
         {
-          title: 'Starsza baza CCB22 NIE pasuje do nowych skanerów Ultra',
-          text: 'Baza CCB22-100BT-03N (do Granit 1911i/1991i) NIE jest kompatybilna z serią Ultra 2105i/2100i. Nowe skanery wymagają bazy CCB23-100BT-07N z innym mechanizmem ładowania kontaktowego.',
+          title: 'BAT-SCN11 i BAT-SCN05 to RÓŻNE baterie Honeywell',
+          text: 'Mimo podobnych nazw, baterie BAT-SCN11 (Granit Ultra) i BAT-SCN05 (Granit XP) mają różne złącza i elektronikę. Zamówienie niewłaściwej = zwrot i opóźnienie. Analogicznie w Zebra: bateria DS3678 (BTRY-36IAB0E-00) nie pasuje do DS2278 (BTRY-DS22EAB0E-00).',
+        },
+        {
+          title: 'Stacja Zebra CR8288 ładuje indukcyjnie — bez styków',
+          text: 'CR8288 do DS8288 wykorzystuje ładowanie indukcyjne (bezstykowe). To eliminuje zużycie pinów kontaktowych i korozję w środowiskach przemysłowych. Honeywell CCB23 i starsze bazy Zebra STB3678 ładują kontaktowo.',
         },
         {
           title: 'Kabel RS-232 wymaga zewnętrznego zasilacza',
-          text: 'W przeciwieństwie do USB, port RS-232 NIE zasila skanera. Przy podłączeniu kablem CBL-020-300-C00 potrzebujesz dodatkowego zasilacza sieciowego — bez niego skaner się nie włączy.',
+          text: 'W przeciwieństwie do USB, port RS-232 NIE zasila skanera — dotyczy to zarówno kabli Zebra (CBA-R07/R21), jak i Honeywell (CBL-020-300-C00). Bez zasilacza skaner się nie włączy.',
         },
       ],
     },
     faq: [
+      { question: 'Jakie akcesoria są dostępne do skanerów Zebra DS2208 i DS4608?', answer: 'Do DS2208/DS4608: podstawka gooseneck 20-71043-04R, kabel USB CBA-U21-S07ZBR (2,1 m), kabel USB długi CBA-U47-S15ZAR (4,6 m), kabel RS-232 CBA-R07-M15ZBR (2 m) lub CBA-R21-S15PAR (4,6 m). Skanery przewodowe — nie wymagają baterii ani stacji ładujących.' },
+      { question: 'Jakie akcesoria potrzebuję do bezprzewodowego Zebra DS3678?', answer: 'DS3678 wymaga: stacji dokującej STB3678-C100F3WW (cradle USB/RS-232), bateria BTRY-36IAB0E-00 (3 100 mAh, w zestawie), ładowarka 4-slot SAC3600-4001CR (przy flocie), podstawka STND-AS0036-07 (opcjonalna, do pracy hands-free), kable osobno.' },
       { question: 'Jakie akcesoria są dostępne do skanerów Honeywell Granit Ultra 2105i?', answer: 'Do Granit Ultra 2105i: bateria BAT-SCN11 (3 300 mAh), baza ładująco-komunikacyjna CCB23-100BT-07N (Bluetooth 100 m), ładowarka 4-slot MB4-BAT-SCN11, kabel USB CBL-500-300-S00 (3 m), kabel RS-232 CBL-020-300-C00 (3 m), kabura HOLSTER-INDUSTRIAL.' },
-      { question: 'Czy bateria BAT-SCN11 pasuje do skanera Granit XP 1991i?', answer: 'Nie — BAT-SCN11 jest dedykowana do serii Granit Ultra (2105i, 2100i) i Xenon Ultra (1962, 1960). Do Granit XP 1991i potrzebujesz baterii BAT-SCN05 (2 450 mAh). Baterie mają różne złącza i nie są zamienne.' },
-      { question: 'Ile baterii zapasowych potrzebuję na skaner bezprzewodowy?', answer: 'Zależy od trybu pracy: przy 1 zmianie (8 h) — bateria w skanerze wystarczy, 0 zapasowych. Przy 2 zmianach — 1 zapasowa na skaner (ładuje się między zmianami). Przy 3 zmianach (24/7) — 2 zapasowe. Dla floty 10+ skanerów polecamy ładowarkę 4-slot (MB4-BAT-SCN11 lub CD3233-4C).' },
-      { question: 'Jaką podstawkę wybrać do skanera Newland?', answer: 'STD23-33-SA (Smartstand) — do HR23 i HR33, regulowany kąt, auto-sense. STD30i (gooseneck) — elastyczne ramię, do HR11x/HR2x/HR3x. STD20i (Smartstand) — dedykowana do HR15 Wahoo. STD300 (składana) — do przemysłowego NVH300 Angler. Wszystkie wspierają tryb auto-sense (skanowanie bez przycisku).' },
-      { question: 'Czy baza CCB23-100BT-07N wymaga kabla USB?', answer: 'Tak — baza CCB23 to stacja ładująco-komunikacyjna, ale kable komunikacyjne (USB, RS-232, KBW) sprzedawane są oddzielnie. Do podłączenia bazy do komputera najczęściej używa się kabla USB CBL-500-300-S00 (3 m).' },
-      { question: 'Jaka jest różnica między kablem USB a RS-232 do skanera?', answer: 'USB (CBL-500-300-S00): prosty 3 m, zasilanie 5V z hosta, plug-and-play. RS-232 (CBL-020-300-C00): krętny 3 m, DB9 Female, wymaga zewnętrznego zasilacza. USB do 90% zastosowań (komputery, kasy POS). RS-232 do starszych terminali POS, sterowników PLC i komputerów przemysłowych.' },
-      { question: 'Gdzie kupić oryginalne akcesoria do skanerów Honeywell i Newland?', answer: 'TAKMA jest autoryzowanym partnerem Honeywell i Newland w Polsce — oferujemy pełen asortyment oryginalnych akcesoriów w cenach B2B netto z dostawą 24–48 h. Gwarantujemy autentyczność i pełną gwarancję producenta na każdy produkt.' },
+      { question: 'Ile baterii zapasowych potrzebuję na skaner bezprzewodowy?', answer: 'Zależy od trybu pracy: przy 1 zmianie (8 h) — bateria w skanerze wystarczy, 0 zapasowych. Przy 2 zmianach — 1 zapasowa na skaner. Przy 3 zmianach (24/7) — 2 zapasowe. Dotyczy zarówno Zebra (DS3678, DS2278, DS8288), jak i Honeywell (Granit Ultra). Dla floty 5+ skanerów polecamy ładowarkę 4-slot.' },
+      { question: 'Jaką podstawkę wybrać — Zebra czy Newland?', answer: 'Zebra: gooseneck 20-71043-04R (DS2208/DS4608), STND-AS0036-07 (DS3608/DS3678), IntelliStand 20-61022-04R (LI2208), BRKT-MM0099C-04 (DS9908). Newland: STD23-33-SA (HR23/HR33), STD30i (HR11x/HR2x/HR3x), STD20i (HR15 Wahoo). Podstawki NIE są zamienne między markami.' },
+      { question: 'Czy kable Zebra pasują do skanerów Honeywell?', answer: 'Nie — kable mają różne konektory. Kable Zebra CBA-U21/CBA-R07 pasują wyłącznie do skanerów Zebra. Kable Honeywell CBL-500/CBL-020 pasują wyłącznie do skanerów Honeywell. Zamów kabel odpowiedni do marki i modelu skanera.' },
+      { question: 'Jaka jest różnica między kablem USB a RS-232 do skanera?', answer: 'USB: zasilanie 5V z hosta, plug-and-play, do 90% zastosowań. RS-232: wymaga zewnętrznego zasilacza, do starszych terminali POS i sterowników PLC. Dotyczy zarówno kabli Zebra (CBA-U21 vs CBA-R07), jak i Honeywell (CBL-500 vs CBL-020). Przy nowych instalacjach zawsze wybieraj USB.' },
+      { question: 'Gdzie kupić oryginalne akcesoria do skanerów Zebra, Honeywell i Newland?', answer: 'TAKMA jest autoryzowanym partnerem Zebra, Honeywell i Newland w Polsce — oferujemy pełen asortyment oryginalnych akcesoriów w cenach B2B netto z dostawą 24–48 h. Ponad 35 akcesoriów do skanerów od 3 producentów z pełną gwarancją.' },
     ],
     comparisons: [
-      { title: 'Baterie Honeywell BAT-SCN11 vs BAT-SCN05', content: 'BAT-SCN11 (3 300 mAh, 12 Wh): do Granit Ultra 2105i/2100i i Xenon Ultra, do 100 000 skanów. BAT-SCN05 (2 450 mAh): smart battery do Granit XP 1991i, do 50 000 skanów. BAT-SCN11 ma wyższą pojemność, ale NIE jest kompatybilna z Granit XP. Zawsze sprawdzaj model skanera.' },
-      { title: 'Podstawka Smartstand vs gooseneck', content: 'Smartstand (STD23/STD20i): stabilna, regulowany kąt od pionu do poziomu, idealna na stałe stanowiska kasowe. Gooseneck (STD30i): elastyczne ramię, pełna swoboda ustawienia kąta i odległości, lepsza gdy potrzebujesz nietypowej pozycji skanera (np. nad taśmą produkcyjną).' },
-      { title: 'Kabel USB vs RS-232 do skanera', content: 'USB (CBL-500-300-S00): prosty kabel 3 m, zasilanie z hosta, plug-and-play, do 90% zastosowań. RS-232 (CBL-020-300-C00): krętny 3 m, wymaga zasilacza, do starszych terminali POS i sterowników PLC. Cena podobna (~70–73 zł netto). Przy nowych instalacjach zawsze wybieraj USB.' },
+      { title: 'Stacje dokujące Zebra — STB3678 vs CR8288 vs CR8178 vs CR2278', content: 'STB3678: cradle USB/RS-232 do DS3678, ładowanie kontaktowe 3 h. CR8288: ładowanie indukcyjne (bezstykowe) do DS8288, BT 5.2 BLE. CR8178 Connect+: bezstykowe do DS4678/DS8178, BT Class 1 (100 m). CR2278: baza prezentacyjna do DS2278, IntelliStand auto-przełączanie. Każda dedykowana do konkretnego modelu skanera.' },
+      { title: 'Baterie Zebra PowerPrecision+ vs Honeywell BAT-SCN', content: 'Zebra: BTRY-36IAB0E-00 (3 100 mAh, DS3678), BTRY-DS82EAB0E-00 (3 500 mAh, DS8288, indukcyjne), BTRY-DS22EAB0E-00 (2 400 mAh, DS2278). Honeywell: BAT-SCN11 (3 300 mAh, Granit Ultra), BAT-SCN05 (2 450 mAh, Granit XP). Zebra oferuje technologię PowerPrecision+ z diagnostyką stanu; Honeywell BAT-SCN05 ma chip smart battery. Nie są zamienne międzymarkowo.' },
+      { title: 'Podstawki Zebra gooseneck vs Newland Smartstand', content: 'Zebra gooseneck (20-71043-04R): elastyczne ramię, montaż na blacie, do DS2208/DS4608 — mocne i trwałe. Newland Smartstand (STD23-33-SA): regulowany kąt 0°–90°, auto-sense, do HR23/HR33 — tańsza opcja z auto-skanowaniem. Oba typy na stałe stanowiska, ale podstawki NIE są zamienne między markami.' },
+      { title: 'Kabel USB vs RS-232 do skanera', content: 'USB: zasilanie z hosta, plug-and-play, do 90% zastosowań. RS-232: wymaga zasilacza, do starszych terminali POS i sterowników PLC. Dotyczy Zebra (CBA-U21 ~92 zł vs CBA-R07 ~131 zł) i Honeywell (CBL-500 ~72 zł vs CBL-020 ~73 zł). Przy nowych instalacjach zawsze USB.' },
     ],
     howToSteps: [
-      { name: 'Zidentyfikuj model skanera', text: 'Sprawdź dokładny Part Number skanera (np. 2105i-BF, 1991iXLR, HR23-S0) — akcesoria są dedykowane do konkretnych modeli i serii.' },
-      { name: 'Określ tryb pracy', text: 'Czy skaner pracuje na stałym stanowisku (kasa, apteka) czy mobilnie (magazyn, produkcja)? To determinuje wybór między podstawką a kaburą, i ile baterii zapasowych potrzebujesz.' },
-      { name: 'Dobierz baterię i ładowanie', text: 'Przy pracy bezprzewodowej wielozmianowej — 1 zapasowa bateria na skaner + ładowarka 4-slot do rotacyjnego zarządzania. Przy 1 zmianie — wystarczy baza ładująca CCB23.' },
-      { name: 'Wybierz podstawkę lub kaburę', text: 'Stałe stanowisko → podstawka Smartstand/gooseneck z auto-sense. Praca mobilna → kabura HOLSTER-INDUSTRIAL na pasek.' },
-      { name: 'Zamów kabel komunikacyjny', text: 'USB do standardowego podłączenia (komputer, kasa), RS-232 do urządzeń z portem szeregowym. Kable do bazy CCB23 sprzedawane oddzielnie.' },
+      { name: 'Zidentyfikuj model skanera', text: 'Sprawdź markę i Part Number skanera — Zebra DS2208, DS3678, DS8288, DS4608; Honeywell Granit Ultra 2105i, Voyager 1470g; Newland HR23, HR15. Akcesoria są dedykowane do konkretnych modeli.' },
+      { name: 'Określ tryb pracy', text: 'Stałe stanowisko (kasa, apteka) → podstawka/gooseneck + kabel. Praca mobilna bezprzewodowa (magazyn) → stacja dokująca + baterie zapasowe. Praca mobilna przewodowa → kabura + kabel.' },
+      { name: 'Dobierz baterię i ładowanie', text: 'Zebra bezprzewodowe: bateria PowerPrecision+ + cradle (STB3678/CR8288) lub ładowarka 4-slot (SAC3600). Honeywell: BAT-SCN + baza CCB23 lub MB4-BAT-SCN11. Newland: BTY2333 + CD3233-4C.' },
+      { name: 'Wybierz podstawkę lub kaburę', text: 'Zebra: gooseneck 20-71043-04R (DS2208/DS4608), STND-AS0036-07 (DS3608). Newland: STD23-33-SA (HR23), STD20i (HR15). Kabura HOLSTER-INDUSTRIAL (Honeywell Granit).' },
+      { name: 'Zamów kabel komunikacyjny', text: 'Zebra: CBA-U21 USB 2,1 m lub CBA-U47 USB 4,6 m. Honeywell: CBL-500 USB 3 m. RS-232 wymaga zasilacza. Kable do baz sprzedawane oddzielnie.' },
     ],
   },
 
   'baterie-do-skanerow': {
     definition: {
       heading: 'Baterie zapasowe do skanerów kodów kreskowych',
-      content: 'Oryginalne baterie Li-ion do bezprzewodowych skanerów Honeywell i Newland. Zapasowe akumulatory umożliwiają pracę wielozmianową bez przestojów — podczas gdy jedna bateria pracuje w skanerze, druga ładuje się w ładowarce. Każda bateria jest certyfikowana przez producenta i objęta gwarancją 12 miesięcy.',
+      content: 'Oryginalne baterie Li-ion do bezprzewodowych skanerów Zebra, Honeywell i Newland. Zebra PowerPrecision+ (2 400–3 500 mAh) do DS3678, DS8288, DS2278 z diagnostyką stanu. Honeywell BAT-SCN (2 450–3 300 mAh) do Granit Ultra i Granit XP. Newland BTY2333 (2 600 mAh) do HR23/HR33. Zapasowe akumulatory umożliwiają pracę wielozmianową — podczas gdy jedna bateria pracuje w skanerze, druga ładuje się. Każda certyfikowana przez producenta z gwarancją 12 mies.',
     },
     buyingGuide: {
       heading: 'Jak dobrać baterię do skanera?',
       items: [
-        'Sprawdź model skanera — BAT-SCN11 do Granit Ultra 2105i/2100i i Xenon Ultra, BAT-SCN05 do Granit XP 1991i, BTY2333 do Newland HR23/HR33 BT. Baterie NIE są zamienne między seriami.',
+        'Sprawdź model skanera — Zebra: BTRY-36IAB0E-00 do DS3678, BTRY-DS82EAB0E-00 do DS8288, BTRY-DS22EAB0E-00 do DS2278. Honeywell: BAT-SCN11 do Granit Ultra 2105i/Xenon Ultra, BAT-SCN05 do Granit XP 1991i. Newland: BTY2333 do HR23/HR33 BT. Baterie NIE są zamienne między modelami ani markami.',
         'Oblicz potrzebną liczbę — 1 zmiana: 0 zapasowych, 2 zmiany: 1 na skaner, 3 zmiany (24/7): 2 na skaner.',
-        'Rozważ ładowarkę wieloslotową — przy flocie 5+ skanerów ładowarka 4-slot (MB4-BAT-SCN11 lub CD3233-4C) jest efektywniejsza niż ładowanie w bazach.',
+        'Rozważ ładowarkę wieloslotową — Zebra SAC3600-4001CR (4 sloty do DS3678), Honeywell MB4-BAT-SCN11, Newland CD3233-4C. Przy flocie 5+ skanerów ładowarka 4-slot jest efektywniejsza niż ładowanie w bazach.',
       ],
     },
-    expertAuthority: 'TAKMA dostarcza oryginalne baterie z gwarancją producenta. Doradzamy w doborze ilości baterii pod model pracy klienta — od pojedynczego stanowiska po flotę 100+ skanerów w operacjach 24/7.',
-    technicalDeepDive: `Honeywell BAT-SCN11: Li-ion 3 300 mAh / 3,7 V / 12 Wh. Do 100 000 skanów lub 14 h ciągłej pracy. Wymiary 94,7 × 22,2 × 27,1 mm, waga ~137 g. Czas ładowania w bazie CCB23: ok. 4 h.
+    expertAuthority: 'TAKMA jako autoryzowany partner Zebra, Honeywell i Newland dostarcza oryginalne baterie PowerPrecision+ i BAT-SCN z pełną gwarancją producenta. Doradzamy w doborze ilości baterii pod model pracy — od pojedynczego stanowiska po flotę 100+ skanerów w operacjach 24/7.',
+    technicalDeepDive: `Zebra PowerPrecision+: BTRY-36IAB0E-00 (3 100 mAh, 3,6 V) do DS3678 — 100 000+ skanów, wymiana bez narzędzi, diagnostyka stanu w Zebra 123Scan. BTRY-DS82EAB0E-00 (3 500 mAh) do DS8288 — ładowanie indukcyjne (bezstykowe) w bazie CR8288, 100 000 skanów / 108 h standby. BTRY-DS22EAB0E-00 (2 400 mAh) do DS2278 — 14 h pracy / 110 000 skanów. Ładowarka SAC3600-4001CR — 4 sloty, jednoczesne ładowanie baterii DS3678.
 
-Honeywell BAT-SCN05: Li-ion 2 450 mAh / 3,7 V. Smart battery z chipem diagnostycznym — monitorowanie SoH i cykli. Do 50 000 skanów lub 14 h pracy. Dedykowana do Granit XP 1991i.
+Honeywell BAT-SCN11: Li-ion 3 300 mAh / 3,7 V / 12 Wh. Do 100 000 skanów lub 14 h ciągłej pracy. Wymiary 94,7 × 22,2 × 27,1 mm, waga ~137 g. Czas ładowania w bazie CCB23: ok. 4 h.
+
+Honeywell BAT-SCN05: Li-ion 2 450 mAh / 3,7 V. Smart battery z chipem diagnostycznym — monitorowanie SoH i cykli. Do 50 000 skanów / 14 h. Dedykowana do Granit XP 1991i.
 
 Newland BTY2333: Li-Ion 2 600 mAh. Mechanizm latch-release — wymiana bez narzędzi w 3 sekundy. Ponad 16 h pracy przy 1 skan/6 s. Ładowanie w CD3233-4C lub w stacji dokującej skanera.`,
     useCases: [
       {
-        title: 'Magazyn 2-zmianowy — 10 skanerów Granit Ultra 2105i',
+        title: 'Magazyn 3-zmianowy — flota 15 skanerów Zebra DS3678',
+        description: '15 baterii BTRY-36IAB0E-00 w skanerach + 30 zapasowych (2 na skaner). 4 ładowarki SAC3600-4001CR (4 sloty × 4 = 16 baterii jednocześnie). Rotacja co zmianę bez przestojów.',
+      },
+      {
+        title: 'Centrum dystrybucyjne — 10 skanerów Honeywell Granit Ultra 2105i',
         description: '10 baterii BAT-SCN11 w skanerach + 10 zapasowych w ładowarce MB4-BAT-SCN11 (3 ładowarki × 4 sloty). Wymiana na przerwie między zmianami.',
       },
       {
@@ -2976,8 +2994,12 @@ Newland BTY2333: Li-Ion 2 600 mAh. Mechanizm latch-release — wymiana bez narz�
       heading: 'Czego nie powiedzą o bateriach do skanerów',
       items: [
         {
+          title: 'Zebra PowerPrecision+ ma diagnostykę stanu',
+          text: 'Baterie Zebra z technologią PowerPrecision+ raportują stan zdrowia (SoH), liczbę cykli i temperaturę przez narzędzie 123Scan. Pozwala to proaktywnie wymieniać baterie zanim spadek pojemności wpłynie na czas pracy — kluczowe przy flotach 10+ skanerów.',
+        },
+        {
           title: 'Zamienniki mogą uszkodzić skaner',
-          text: 'Nieoryginalne baterie nie mają certyfikacji producenta — brak kontroli temperatury ładowania może prowadzić do przegrzania i uszkodzenia portu ładowania skanera, co unieważnia gwarancję.',
+          text: 'Nieoryginalne baterie nie mają certyfikacji producenta — brak kontroli temperatury ładowania może prowadzić do przegrzania i uszkodzenia portu ładowania skanera, co unieważnia gwarancję. Dotyczy zarówno Zebra, Honeywell, jak i Newland.',
         },
         {
           title: 'Smart battery BAT-SCN05 monitoruje degradację',
@@ -2986,193 +3008,248 @@ Newland BTY2333: Li-Ion 2 600 mAh. Mechanizm latch-release — wymiana bez narz�
       ],
     },
     faq: [
-      { question: 'Czy bateria BAT-SCN11 pasuje do wszystkich skanerów Honeywell?', answer: 'Nie — BAT-SCN11 pasuje tylko do: Granit Ultra 2105i, Granit Ultra 2100i, Xenon Ultra 1962, Xenon Ultra 1960. Nie pasuje do Granit XP 1991i (wymaga BAT-SCN05) ani do starszych modeli (Voyager 1202g, Xenon 1902 — wymagają BAT-SCN01A).' },
-      { question: 'Ile cykli ładowania wytrzymuje bateria?', answer: 'Oryginalne baterie Honeywell: 500–1000 pełnych cykli do 80% pojemności nominalnej. Newland BTY2333: ok. 500 cykli. Przy 1 cyklu dziennie to 2–3 lata eksploatacji.' },
-      { question: 'Jak szybko ładuje się bateria BAT-SCN11?', answer: 'W bazie CCB23-100BT-07N: ok. 4 h do pełnego naładowania. W ładowarce 4-slot MB4-BAT-SCN11: ok. 4 h (wszystkie 4 baterie jednocześnie).' },
+      { question: 'Jakie baterie zapasowe są dostępne do skanerów Zebra?', answer: 'Zebra PowerPrecision+: BTRY-36IAB0E-00 (3 100 mAh) do DS3678, BTRY-DS82EAB0E-00 (3 500 mAh) do DS8288 (indukcyjne), BTRY-DS22EAB0E-00 (2 400 mAh) do DS2278. Każda bateria jest dedykowana do konkretnego modelu — NIE są zamienne.' },
+      { question: 'Czy bateria BAT-SCN11 pasuje do wszystkich skanerów Honeywell?', answer: 'Nie — BAT-SCN11 pasuje tylko do: Granit Ultra 2105i, Granit Ultra 2100i, Xenon Ultra 1962, Xenon Ultra 1960. Nie pasuje do Granit XP 1991i (wymaga BAT-SCN05) ani do starszych modeli.' },
+      { question: 'Ile cykli ładowania wytrzymuje bateria?', answer: 'Zebra PowerPrecision+: 500–1000 cykli z diagnostyką stanu w 123Scan. Honeywell BAT-SCN: 500–1000 cykli do 80% pojemności. Newland BTY2333: ok. 500 cykli. Przy 1 cyklu dziennie to 2–3 lata eksploatacji.' },
+      { question: 'Jak szybko ładuje się bateria do skanera?', answer: 'Zebra BTRY-36IAB0E-00: ok. 3 h w cradle STB3678, ok. 4 h w ładowarce SAC3600. Honeywell BAT-SCN11: ok. 4 h w bazie CCB23 lub ładowarce MB4. Newland BTY2333: ok. 4 h w CD3233-4C.' },
     ],
     comparisons: [
-      { title: 'BAT-SCN11 vs BAT-SCN05 vs BTY2333', content: 'BAT-SCN11 (3 300 mAh): najwyższa pojemność, 100k skanów, do Granit Ultra. BAT-SCN05 (2 450 mAh): smart battery, 50k skanów, do Granit XP. BTY2333 (2 600 mAh): latch-release, 16h pracy, do Newland HR23/HR33 BT. Wybór zależy od modelu skanera — baterie NIE są zamienne.' },
+      { title: 'Baterie Zebra PowerPrecision+ vs Honeywell BAT-SCN vs Newland BTY', content: 'Zebra BTRY-36IAB0E-00 (3 100 mAh): do DS3678, PowerPrecision+ z diagnostyką, 100k skanów. Honeywell BAT-SCN11 (3 300 mAh): do Granit Ultra, 100k skanów. BAT-SCN05 (2 450 mAh): smart battery, 50k skanów, do Granit XP. Newland BTY2333 (2 600 mAh): latch-release, 16 h pracy. Każda bateria dedykowana do konkretnego modelu — NIE są zamienne międzymarkowo.' },
     ],
     howToSteps: [
-      { name: 'Sprawdź model skanera', text: 'Odczytaj Part Number z etykiety na skanerze. Granit Ultra 2105i → BAT-SCN11. Granit XP 1991i → BAT-SCN05. Newland HR23/HR33 BT → BTY2333.' },
+      { name: 'Sprawdź model skanera', text: 'Odczytaj Part Number z etykiety. Zebra: DS3678 → BTRY-36IAB0E-00, DS8288 → BTRY-DS82EAB0E-00, DS2278 → BTRY-DS22EAB0E-00. Honeywell: Granit Ultra → BAT-SCN11, Granit XP → BAT-SCN05. Newland HR23/HR33 BT → BTY2333.' },
       { name: 'Oblicz liczbę baterii', text: '1 zmiana: 0 zapasowych. 2 zmiany: 1 na skaner. 3 zmiany: 2 na skaner. Dodaj 10% zapasu na wymianę zużytych.' },
-      { name: 'Dobierz ładowarkę', text: 'Do 4 skanerów: ładowanie w bazach. 5+ skanerów: ładowarka 4-slot (MB4-BAT-SCN11 lub CD3233-4C) jest bardziej efektywna.' },
+      { name: 'Dobierz ładowarkę', text: 'Do 4 skanerów: ładowanie w bazach/cradle. 5+ skanerów: ładowarka 4-slot — Zebra SAC3600-4001CR, Honeywell MB4-BAT-SCN11 lub Newland CD3233-4C.' },
     ],
   },
 
   'stacje-ladowarki-skanerow': {
     definition: {
       heading: 'Stacje ładujące i ładowarki do skanerów kodów kreskowych',
-      content: 'Bazy ładująco-komunikacyjne Bluetooth i ładowarki wieloslotowe do skanerów bezprzewodowych Honeywell i Newland. Baza CCB23 łączy funkcję ładowania skanera z komunikacją Bluetooth (zasięg 100 m). Ładowarki 4-slot (MB4-BAT-SCN11, CD3233-4C) umożliwiają jednoczesne ładowanie 4 baterii — kluczowe w operacjach wielozmianowych z flotą skanerów.',
+      content: 'Stacje dokujące i ładowarki wieloslotowe do skanerów bezprzewodowych Zebra, Honeywell i Newland. Zebra oferuje 4 typy baz: STB3678 (cradle USB/RS-232), CR8288 (ładowanie indukcyjne), CR8178 Connect+ (bezstykowe BT), CR2278 (prezentacyjna z IntelliStand) oraz ładowarkę 4-slot SAC3600-4001CR. Honeywell: baza CCB23 (BT 100 m) i ładowarka MB4-BAT-SCN11. Newland: ładowarka CD3233-4C. Kluczowe w operacjach wielozmianowych z flotą skanerów.',
     },
     buyingGuide: {
       heading: 'Jak dobrać stację ładującą do skanera?',
       items: [
-        'Baza CCB23-100BT-07N — gdy potrzebujesz ładowania + komunikacji BT na jednym stanowisku (np. wózek widłowy). Ładuje skaner kontaktowo, zapewnia Bluetooth 100 m.',
-        'Ładowarka 4-slot — gdy zarządzasz flotą baterii (5+ skanerów, 2+ zmiany). Rotacyjne ładowanie baterii eliminuje przestoje.',
-        'Kable do bazy CCB23 — USB lub RS-232 sprzedawane oddzielnie. Zamów razem z bazą, żeby nie czekać na drugą dostawę.',
+        'Stacje Zebra — STB3678 (cradle do DS3678, ładowanie + USB/RS-232), CR8288 (indukcyjne do DS8288), CR8178 Connect+ (bezstykowe BT do DS4678/DS8178), CR2278 (baza BT z IntelliStand do DS2278). Każda dedykowana do konkretnego modelu.',
+        'Ładowarki 4-slot — Zebra SAC3600-4001CR (do baterii DS3678), Honeywell MB4-BAT-SCN11, Newland CD3233-4C. Przy flocie 5+ skanerów ładowarka wieloslotowa jest efektywniejsza niż ładowanie w bazach.',
+        'Baza Honeywell CCB23-100BT-07N — ładowanie + komunikacja BT 100 m na jednym stanowisku (np. wózek widłowy). Kable USB/RS-232 sprzedawane oddzielnie.',
       ],
     },
-    expertAuthority: 'TAKMA wdraża systemy skanerów Honeywell w magazynach i centrach dystrybucyjnych od 25 lat. Pomagamy zaplanować infrastrukturę ładowania pod konkretny model pracy — od 1 stanowiska po flotę 50+ skanerów.',
-    technicalDeepDive: `Honeywell CCB23-100BT-07N: Bluetooth Class 1 (100 m LOS), do 7 sparowanych skanerów, kontaktowe ładowanie drop-in, montaż desktop/pionowy/na pojeździe, obudowa anty-mikrobowa, IP65. Interfejsy: USB, RS-232, Keyboard Wedge (kable oddzielnie). Czas ładowania skanera: ok. 4 h.
+    expertAuthority: 'TAKMA jako autoryzowany partner Zebra, Honeywell i Newland wdraża systemy skanerów w magazynach i centrach dystrybucyjnych od 25 lat. Pomagamy zaplanować infrastrukturę ładowania pod konkretny model pracy — od 1 stanowiska po flotę 50+ skanerów.',
+    technicalDeepDive: `Zebra STB3678-C100F3WW: cradle do DS3678, ładowanie kontaktowe 3 h (z zasilaczem) / 10 h (USB), interfejsy USB/RS-232. Montaż desktop. Zebra CR8288-PC/SC: baza do DS8288 z ładowaniem indukcyjnym (bezstykowym), eliminuje zużycie styków kontaktowych, Bluetooth 5.2 BLE, IntelliStand. Zebra CR8178-PC/SC: bazy Connect+ (bezstykowe) do DS4678/DS8178, BT Class 1 (100 m). Zebra CR2278-PC: baza prezentacyjna do DS2278, BT Class 1, IntelliStand auto-przełączanie ręczny/hands-free. Zebra SAC3600-4001CR: 4 sloty na baterie DS3678, jednoczesne ładowanie.
 
-Honeywell MB4-BAT-SCN11: 4 sloty na baterie BAT-SCN11, jednoczesne ładowanie w ok. 4 h, diody LED statusu per slot, montaż biurkowy. Zasilacz w zestawie.
+Honeywell CCB23-100BT-07N: Bluetooth Class 1 (100 m LOS), do 7 sparowanych skanerów, kontaktowe ładowanie drop-in, montaż desktop/pionowy/na pojeździe, obudowa anty-mikrobowa, IP65. Kable oddzielnie. Czas ładowania: ok. 4 h.
 
-Newland CD3233-4C: 4 sloty na baterie BTY2333 (2 600 mAh), diody LED statusu, kompaktowa obudowa desktop.`,
+Honeywell MB4-BAT-SCN11: 4 sloty na BAT-SCN11, jednoczesne ładowanie ok. 4 h, diody LED statusu per slot. Zasilacz w zestawie.
+
+Newland CD3233-4C: 4 sloty na BTY2333, diody LED statusu, kompaktowa obudowa desktop.`,
     useCases: [
       {
-        title: 'Centrum dystrybucyjne — bazy na wózkach widłowych',
-        description: 'CCB23-100BT-07N zamontowana na każdym wózku — skaner ładuje się podczas jazdy, Bluetooth utrzymuje komunikację z systemem WMS. Ładowarka 4-slot MB4-BAT-SCN11 na zapleczu do zapasowych baterii.',
+        title: 'Magazyn — flota skanerów Zebra DS3678',
+        description: 'STB3678 cradle na każdym stanowisku kompletacji + ładowarka SAC3600-4001CR na zapleczu do rotacyjnego ładowania zapasowych baterii. Cradle zapewnia ładowanie + komunikację USB z WMS.',
+      },
+      {
+        title: 'Centrum dystrybucyjne — bazy Honeywell na wózkach',
+        description: 'CCB23-100BT-07N zamontowana na każdym wózku — skaner ładuje się podczas jazdy, Bluetooth 100 m utrzymuje komunikację z WMS. Ładowarka 4-slot MB4-BAT-SCN11 na zapleczu.',
       },
       {
         title: 'Sieć handlowa — rotacyjne ładowanie baterii Newland',
-        description: 'CD3233-4C na zapleczu sklepu — 4 baterie BTY2333 ładują się nocą, rano gotowe do wymiany. Eliminuje potrzebę kupowania bazy do każdego skanera.',
+        description: 'CD3233-4C na zapleczu sklepu — 4 baterie BTY2333 ładują się nocą, rano gotowe do wymiany. Tańsze niż baza do każdego skanera.',
       },
     ],
     uniqueInsights: {
       heading: 'Czego nie powiedzą o ładowarkach do skanerów',
       items: [
         {
-          title: 'Kable do bazy CCB23 sprzedawane oddzielnie',
-          text: 'Baza CCB23-100BT-07N NIE zawiera kabla komunikacyjnego w zestawie. Bez kabla USB (CBL-500-300-S00) lub RS-232 baza ładuje skaner, ale nie komunikuje się z komputerem. Zamów kabel razem z bazą.',
+          title: 'Zebra CR8288 ładuje indukcyjnie — zero styków',
+          text: 'Stacja CR8288 do DS8288 wykorzystuje ładowanie indukcyjne (bezstykowe). Eliminuje zużycie pinów kontaktowych i korozję — kluczowe w środowiskach przemysłowych z kurzem i wilgocią. STB3678 i CCB23 ładują kontaktowo.',
+        },
+        {
+          title: 'Kable do baz sprzedawane oddzielnie',
+          text: 'Zarówno Zebra STB3678, jak i Honeywell CCB23 NIE zawierają kabli komunikacyjnych w zestawie. Bez kabla baza ładuje skaner, ale nie komunikuje się z komputerem. Zamów kabel razem z bazą.',
         },
         {
           title: 'Ładowarka 4-slot jest tańsza niż 4 bazy',
-          text: 'MB4-BAT-SCN11 (~887 zł) ładuje 4 baterie jednocześnie. Cztery bazy CCB23 to 4 × 1 179 zł = 4 716 zł. Przy zarządzaniu bateriami (nie skanerami) ładowarka 4-slot jest 5× tańsza.',
+          text: 'SAC3600-4001CR lub MB4-BAT-SCN11 ładuje 4 baterie jednocześnie za ułamek ceny 4 stacji dokujących. Przy zarządzaniu bateriami (nie skanerami bezpośrednio) ładowarka wieloslotowa jest 3–5× tańsza.',
         },
       ],
     },
     faq: [
+      { question: 'Jakie stacje dokujące są dostępne do skanerów Zebra?', answer: 'STB3678-C100F3WW (cradle USB/RS-232 do DS3678), CR8288-PC/SC (indukcyjne do DS8288), CR8178-PC/SC (Connect+ bezstykowe do DS4678/DS8178), CR2278-PC (baza prezentacyjna BT do DS2278), SAC3600-4001CR (ładowarka 4-slot na baterie DS3678). Każda dedykowana do konkretnego modelu skanera.' },
       { question: 'Czy baza CCB23 jest kompatybilna ze starszymi skanerami Honeywell?', answer: 'Nie — CCB23-100BT-07N jest przeznaczona dla serii Granit Ultra (2105i, 2100i). Starsze skanery Granit 1911i/1991i wymagają bazy CCB22-100BT-03N (inna konstrukcja mechaniczna).' },
-      { question: 'Ile baterii ładuje jednocześnie MB4-BAT-SCN11?', answer: '4 baterie BAT-SCN11 jednocześnie w ok. 4 godzin. Diody LED wskazują status ładowania każdego slotu (ładowanie/pełne/błąd).' },
-      { question: 'Czy ładowarka CD3233-4C ładuje baterie z skanerów Honeywell?', answer: 'Nie — CD3233-4C ładuje wyłącznie baterie Newland BTY2333 do skanerów HR23/HR33 Bluetooth. Baterie Honeywell (BAT-SCN11, BAT-SCN05) wymagają ładowarki MB4-BAT-SCN11 lub bazy CCB23.' },
+      { question: 'Czy ładowarki baterii są zamienne między markami?', answer: 'Nie — SAC3600-4001CR ładuje wyłącznie baterie Zebra DS3678. MB4-BAT-SCN11 wyłącznie Honeywell BAT-SCN11. CD3233-4C wyłącznie Newland BTY2333. Baterie i ładowarki mają różne konektory i napięcia.' },
+      { question: 'Co to jest ładowanie indukcyjne w Zebra CR8288?', answer: 'CR8288 ładuje DS8288 bezstykowe — przez pole elektromagnetyczne, bez fizycznego kontaktu pinów. Eliminuje zużycie styków, korozję i problemy z niedokładnym umieszczeniem skanera. Szczególnie przydatne w środowiskach przemysłowych z kurzem.' },
     ],
     comparisons: [
-      { title: 'Baza CCB23 vs ładowarka 4-slot MB4', content: 'CCB23 (~1 179 zł): ładowanie skanera + komunikacja BT 100 m, montaż na pojeździe, 1 skaner na bazę. MB4-BAT-SCN11 (~887 zł): ładowanie 4 baterii jednocześnie, bez komunikacji, na zapleczu. Przy 1–3 skanerach: bazy CCB23. Przy 5+ skanerach: ładowarka 4-slot + bazy na kluczowych stanowiskach.' },
+      { title: 'Stacje Zebra — STB3678 vs CR8288 vs CR8178 vs CR2278', content: 'STB3678: cradle USB/RS-232 do DS3678, kontaktowe, 3 h ładowania. CR8288: indukcyjne do DS8288, BT 5.2. CR8178: Connect+ bezstykowe do DS4678/DS8178, BT 100 m. CR2278: baza prezentacyjna do DS2278, IntelliStand. Każda do innego modelu skanera.' },
+      { title: 'Zebra STB3678 vs Honeywell CCB23', content: 'STB3678 (~500–700 zł): cradle do DS3678, USB/RS-232, ładowanie kontaktowe 3 h. CCB23 (~1 179 zł): baza do Granit Ultra 2105i, BT 100 m, IP65, do 7 skanerów, montaż na pojeździe. CCB23 droższa, ale z Bluetooth i IP65 — idealna na wózki widłowe.' },
     ],
     howToSteps: [
-      { name: 'Określ liczbę skanerów i zmian', text: 'Policz ile skanerów bezprzewodowych pracuje jednocześnie i na ile zmian. To determinuje czy potrzebujesz baz (każdy skaner) czy ładowarki baterii (rotacja).' },
-      { name: 'Wybierz bazę lub ładowarkę', text: 'Baza CCB23 — gdy potrzebujesz ładowania + BT na stanowisku. Ładowarka 4-slot — gdy zarządzasz flotą baterii między zmianami.' },
-      { name: 'Zamów kable komunikacyjne', text: 'Do bazy CCB23: kabel USB (CBL-500-300-S00) lub RS-232 (CBL-020-300-C00) — sprzedawane oddzielnie.' },
+      { name: 'Określ model skanera i potrzeby', text: 'Zebra DS3678 → STB3678 lub SAC3600. Zebra DS8288 → CR8288. Zebra DS2278 → CR2278. Honeywell Granit Ultra → CCB23 lub MB4. Newland HR23 BT → CD3233-4C.' },
+      { name: 'Wybierz stację lub ładowarkę', text: 'Stacja dokująca — gdy potrzebujesz ładowania + komunikacji na stanowisku. Ładowarka 4-slot — gdy zarządzasz flotą baterii między zmianami (5+ skanerów).' },
+      { name: 'Zamów kable komunikacyjne', text: 'Do STB3678: kabel USB lub RS-232 (Zebra CBA-U01/CBA-R01). Do CCB23: kabel USB CBL-500-300-S00 lub RS-232. Kable sprzedawane oddzielnie.' },
     ],
   },
 
   'podstawki-do-skanerow': {
     definition: {
       heading: 'Podstawki do skanerów kodów kreskowych',
-      content: 'Podstawki Newland z trybem auto-sense umożliwiają pracę hands-free — skaner automatycznie odczytuje kod po zbliżeniu produktu, bez naciskania przycisku. Dostępne w trzech wariantach: Smartstand (regulowany kąt), gooseneck (elastyczne ramię) i składana (kompaktowa). Idealne na stałe stanowiska kasowe, w aptekach, bibliotekach i na stanowiskach kontroli jakości.',
+      content: 'Podstawki i stojaki do skanerów Zebra i Newland umożliwiające pracę hands-free na stałych stanowiskach. Zebra oferuje gooseneck (20-71043-04R do DS2208/DS4608), IntelliStand (20-61022-04R do LI2208), stojak do DS3608/DS3678 (STND-AS0036-07) i bracket do DS9908 (BRKT-MM0099C-04). Newland: Smartstand z auto-sense (STD23-33-SA, STD20i), gooseneck STD30i i składana STD300. Idealne na stanowiska kasowe, apteki i linie produkcyjne.',
     },
     buyingGuide: {
-      heading: 'Jak dobrać podstawkę do skanera Newland?',
+      heading: 'Jak dobrać podstawkę do skanera?',
       items: [
-        'STD23-33-SA (Smartstand) — do HR23 i HR33, regulowany kąt od pionu do poziomu, montaż na blacie. Najlepsza na kasy i apteki.',
-        'STD30i (gooseneck) — elastyczne ramię, do HR11x/HR2x/HR3x, precyzyjne ustawienie kąta. Do stanowisk z nietypową geometrią.',
-        'STD20i (Smartstand) — dedykowana do HR15 Wahoo, składana, kompaktowa. Do małych stanowisk.',
-        'STD300 (składana) — do przemysłowego NVH300 Angler DP, kontrola jakości i weryfikacja DPM.',
+        'Zebra gooseneck 20-71043-04R — do DS2208 i DS4608, elastyczne ramię, montaż na blacie. Uniwersalna podstawka do najpopularniejszych skanerów Zebra.',
+        'Zebra STND-AS0036-07 — do DS3608/DS3678 (ultra-wytrzymałe), stabilna pozycja na stałych stanowiskach magazynowych.',
+        'Zebra IntelliStand 20-61022-04R — do LI2208, auto-przełączanie trybu ręczny/hands-free po umieszczeniu w podstawce.',
+        'Zebra BRKT-MM0099C-04 — bracket montażowy do DS9908, do integracji z kioskami samoobsługowymi i kasami.',
+        'Newland STD23-33-SA (Smartstand) — do HR23/HR33, regulowany kąt 0°–90°, auto-sense. Najlepsza na kasy i apteki.',
+        'Newland STD30i (gooseneck) — elastyczne ramię, do HR11x/HR2x/HR3x. Do stanowisk z nietypową geometrią.',
+        'Newland STD20i — dedykowana do HR15 Wahoo, składana, kompaktowa.',
+        'Newland STD300 — do przemysłowego NVH300 Angler DP, kontrola jakości.',
       ],
     },
-    expertAuthority: 'TAKMA jako autoryzowany partner Newland w Polsce pomaga dobrać podstawki pod konkretne stanowisko pracy klienta — od kasy w aptece po linię kontroli jakości w fabryce.',
-    technicalDeepDive: `Tryb auto-sense: wbudowany czujnik podczerwieni wykrywa zbliżenie przedmiotu na odległość 5–15 cm i automatycznie aktywuje skanowanie. Bez naciskania przycisku — operator trzyma obiema rękami produkt lub receptę.
+    expertAuthority: 'TAKMA jako autoryzowany partner Zebra i Newland w Polsce pomaga dobrać podstawki pod konkretne stanowisko pracy klienta — od kasy w aptece, przez stanowisko kasowe z DS2208, po linię kontroli jakości z DS3608.',
+    technicalDeepDive: `Zebra 20-71043-04R: gooseneck z elastycznym ramieniem, montaż na blacie, kompatybilna z DS2208 i DS4608. Skaner osadzony na ramię — pełna swoboda ustawienia kąta.
 
-STD23-33-SA: regulowany kąt 0°–90° (od poziomu do pionu), montaż na blacie, waga ~200 g, kompatybilna z HR23 Dorada i HR33 Dorada II.
+Zebra STND-AS0036-07: stojak do DS3608/DS3678 (skanery ultra-wytrzymałe), stabilna baza do ciężkich skanerów przemysłowych, montaż na blacie.
 
-STD30i: gooseneck z elastycznym ramieniem o długości ~20 cm, pełna swoboda ustawienia w 3 osiach, montaż na blacie, kompatybilna z HR11x, HR2x, HR3x.
+Zebra 20-61022-04R IntelliStand: do LI2208, auto-przełączanie — po umieszczeniu skanera w stojaku aktywuje tryb hands-free, po wyjęciu wraca do trybu ręcznego.
 
-STD20i: składana konstrukcja z regulowanym kątem, dedykowana do HR15 Wahoo, montaż na blacie.
+Zebra BRKT-MM0099C-04: bracket montażowy do DS9908 (skaner prezentacyjny), do integracji w kiosku lub kasie samoobsługowej.
 
-STD300: podstawka składana do NVH300 Angler DP (skaner przemysłowy DPM), stabilna konstrukcja do stanowisk kontroli jakości.`,
+Newland STD23-33-SA: regulowany kąt 0°–90°, montaż na blacie, waga ~200 g, z auto-sense (IR czujnik 5–15 cm). Do HR23 Dorada i HR33 Dorada II.
+
+Newland STD30i: gooseneck ~20 cm ramię, pełna swoboda w 3 osiach, do HR11x/HR2x/HR3x.
+
+Newland STD20i: składana, regulowany kąt, dedykowana do HR15 Wahoo. STD300: składana do NVH300 Angler DP.`,
     useCases: [
       {
-        title: 'Apteka — skanowanie recept i kodów leków',
-        description: 'STD23-33-SA lub STD20i na ladzie apteki — farmaceuta zbliża opakowanie leku do skanera, kod odczytywany automatycznie. Obie ręce wolne do obsługi klienta.',
+        title: 'Stanowisko kasowe — skaner Zebra DS2208 w gooseneck',
+        description: 'Podstawka 20-71043-04R na ladzie kasowej — skaner DS2208 w trybie hands-free, kasjer przesuwa produkty przed oknem skanera. Kabel USB CBA-U21 do komputera kasowego.',
       },
       {
-        title: 'Kasa POS w sklepie — tryb hands-free',
-        description: 'STD23-33-SA na kasie — kasjer przesuwa produkty przed skanerem HR23. Szybkość obsługi porównywalna ze skanerami prezentacyjnymi, ale w niższej cenie.',
+        title: 'Magazyn — skaner Zebra DS3678 na stojaku',
+        description: 'STND-AS0036-07 na stanowisku kompletacji — DS3678 skanuje kody na paczkach bez trzymania. Między skanowaniami skaner odpoczywa na stojaku i ładuje się przez cradle STB3678.',
       },
       {
-        title: 'Kontrola jakości — weryfikacja kodów DPM',
-        description: 'STD300 z NVH300 Angler na stanowisku inspekcji — operator zbliża część z kodem DPM do skanera, odczyt automatyczny. Stabilna pozycja skanera zapewnia powtarzalność.',
+        title: 'Apteka — skaner Newland HR23 w Smartstand',
+        description: 'STD23-33-SA na ladzie apteki — farmaceuta zbliża opakowanie leku do skanera, kod odczytywany automatycznie przez auto-sense. Obie ręce wolne do obsługi klienta.',
+      },
+      {
+        title: 'Kiosk samoobsługowy — Zebra DS9908 z bracket',
+        description: 'BRKT-MM0099C-04 montuje DS9908 w kiosku — klient sam skanuje produkty. Bracket zapewnia stabilną pozycję skanera pod optymalnym kątem.',
       },
     ],
     uniqueInsights: {
       heading: 'Czego nie powiedzą o podstawkach',
       items: [
         {
-          title: 'Podstawka zastępuje droższy skaner prezentacyjny',
-          text: 'Skaner Newland HR23 (~350 zł) + podstawka STD23-33-SA (~80 zł) = ~430 zł. Dedykowany skaner prezentacyjny Zebra DS9308 to ~1 000 zł. Przy 10 stanowiskach kasowych oszczędzasz ~5 700 zł.',
+          title: 'Zebra IntelliStand auto-przełącza tryb skanowania',
+          text: '20-61022-04R do LI2208 automatycznie przełącza skaner w tryb hands-free po umieszczeniu w stojaku, i wraca do trybu ręcznego po wyjęciu. Nie trzeba programować — zmiana trybu jest natychmiastowa.',
         },
         {
-          title: 'Gooseneck lepszy nad taśmą produkcyjną',
-          text: 'Na linii produkcyjnej, gdzie produkty przesuwają się na różnych wysokościach, elastyczne ramię STD30i pozwala precyzyjnie ustawić kąt skanera. Smartstand ma stały punkt obrotu i nie zawsze dotrze.',
+          title: 'Podstawka + skaner ręczny tańsze niż skaner prezentacyjny',
+          text: 'Newland HR23 (~350 zł) + STD23-33-SA (~80 zł) = ~430 zł. Zebra DS2208 (~380 zł) + gooseneck (~150 zł) = ~530 zł. Dedykowany skaner prezentacyjny Zebra DS9308 to ~1 000 zł. Przy 10 stanowiskach różnica sięga 4 700–5 700 zł.',
+        },
+        {
+          title: 'Podstawki Zebra i Newland NIE są zamienne',
+          text: 'Uchwyty i mocowania są dopasowane do konkretnych modeli — gooseneck 20-71043-04R pasuje do DS2208/DS4608, ale NIE do DS3608 (wymaga STND-AS0036-07). Analogicznie STD23-33-SA tylko do HR23/HR33.',
         },
       ],
     },
     faq: [
-      { question: 'Czy podstawka STD23-33-SA pasuje do skanera HR15 Wahoo?', answer: 'Nie — STD23-33-SA jest dedykowana do HR23 i HR33. Do HR15 Wahoo potrzebujesz podstawki STD20i. Każdy model skanera Newland ma dedykowaną podstawkę z dopasowanym uchwytem.' },
-      { question: 'Co to jest tryb auto-sense?', answer: 'Auto-sense to funkcja automatycznego skanowania — wbudowany czujnik podczerwieni wykrywa zbliżenie przedmiotu i aktywuje odczyt kodu bez naciskania przycisku. Operator zbliża produkt obiema rękami, skaner odczytuje kod automatycznie.' },
-      { question: 'Czy podstawki Newland pasują do skanerów Honeywell?', answer: 'Nie — podstawki STD23/STD30i/STD20i/STD300 są zaprojektowane wyłącznie pod skanery Newland. Do skanerów Honeywell Granit zalecamy kaburę HOLSTER-INDUSTRIAL (do noszenia na pasku) lub bazę CCB23 (stacja stacjonarna z ładowaniem).' },
+      { question: 'Jakie podstawki są dostępne do skanerów Zebra?', answer: 'Gooseneck 20-71043-04R (DS2208, DS4608), STND-AS0036-07 (DS3608/DS3678), IntelliStand 20-61022-04R (LI2208), BRKT-MM0099C-04 (DS9908). Każda dedykowana do konkretnego modelu — sprawdź kompatybilność przed zamówieniem.' },
+      { question: 'Czy podstawka STD23-33-SA pasuje do skanera HR15 Wahoo?', answer: 'Nie — STD23-33-SA jest dedykowana do HR23/HR33. Do HR15 Wahoo potrzebujesz STD20i. Każdy model Newland ma dedykowaną podstawkę z dopasowanym uchwytem.' },
+      { question: 'Co to jest tryb auto-sense?', answer: 'Auto-sense (Newland) i IntelliStand (Zebra) to funkcje automatycznego skanowania hands-free. Wbudowany czujnik wykrywa zbliżenie przedmiotu i aktywuje odczyt kodu bez naciskania przycisku. Operator zbliża produkt, skaner odczytuje automatycznie.' },
+      { question: 'Czy podstawki Zebra pasują do skanerów Newland lub Honeywell?', answer: 'Nie — podstawki Zebra (gooseneck, IntelliStand, bracket) pasują wyłącznie do skanerów Zebra. Podstawki Newland (STD23/STD30i/STD20i) wyłącznie do Newland. Do Honeywell Granit zalecamy kaburę HOLSTER-INDUSTRIAL lub bazę CCB23.' },
     ],
     comparisons: [
-      { title: 'Smartstand vs gooseneck', content: 'Smartstand (STD23/STD20i): stabilna pozycja, regulowany kąt, kompaktowa — do kas, aptek, biur. Gooseneck (STD30i): elastyczne ramię, pełna swoboda ustawienia — do nietypowych stanowisk, linii produkcyjnych, stanowisk z ograniczoną przestrzenią. Oba wspierają auto-sense.' },
+      { title: 'Zebra gooseneck vs Newland Smartstand', content: 'Zebra 20-71043-04R: elastyczne ramię, do DS2208/DS4608, wytrzymała metalowa konstrukcja. Newland STD23-33-SA: regulowany kąt 0°–90°, auto-sense IR, do HR23/HR33, lżejsza plastikowa konstrukcja. Oba na stałe stanowiska, ale NIE zamienne między markami.' },
+      { title: 'Smartstand vs gooseneck (Newland)', content: 'Smartstand (STD23/STD20i): stabilna pozycja, regulowany kąt, kompaktowa — do kas, aptek, biur. Gooseneck (STD30i): elastyczne ramię, pełna swoboda ustawienia — do nietypowych stanowisk i linii produkcyjnych. Oba wspierają auto-sense.' },
     ],
     howToSteps: [
-      { name: 'Sprawdź model skanera Newland', text: 'HR23/HR33 → STD23-33-SA. HR15 Wahoo → STD20i. HR11x/HR2x/HR3x → STD30i. NVH300 → STD300.' },
-      { name: 'Wybierz typ mocowania', text: 'Smartstand na blat (kasa, apteka). Gooseneck na blat z elastycznym ramieniem (produkcja, niestandardowe stanowisko).' },
-      { name: 'Skonfiguruj auto-sense', text: 'Po zamontowaniu skanera w podstawce, tryb auto-sense aktywuje się automatycznie. Czułość i zasięg detekcji konfiguruje się przez kody programujące skanera.' },
+      { name: 'Sprawdź model skanera', text: 'Zebra: DS2208/DS4608 → 20-71043-04R, DS3608/DS3678 → STND-AS0036-07, LI2208 → 20-61022-04R, DS9908 → BRKT-MM0099C-04. Newland: HR23/HR33 → STD23-33-SA, HR15 → STD20i, HR11x/HR2x/HR3x → STD30i, NVH300 → STD300.' },
+      { name: 'Wybierz typ mocowania', text: 'Gooseneck/elastyczne ramię — gdy potrzebujesz swobody ustawienia. Smartstand/stojak — gdy potrzebujesz stabilnej pozycji. Bracket — do montażu w kiosku.' },
+      { name: 'Skonfiguruj tryb hands-free', text: 'Zebra IntelliStand: auto-przełączanie po umieszczeniu w stojaku. Newland auto-sense: aktywuje się automatycznie w podstawce. Czułość konfiguruj przez kody programujące skanera.' },
     ],
   },
 
   'kable-do-skanerow': {
     definition: {
       heading: 'Kable komunikacyjne do skanerów kodów kreskowych',
-      content: 'Oryginalne kable USB i RS-232 do skanerów Honeywell. Kabel USB CBL-500-300-S00 (prosty, 3 m) — uniwersalne podłączenie do komputera lub kasy POS z zasilaniem z portu hosta. Kabel RS-232 CBL-020-300-C00 (krętny, 3 m) — do starszych terminali POS, sterowników PLC i komputerów przemysłowych z portem szeregowym.',
+      content: 'Oryginalne kable USB i RS-232 do skanerów Zebra i Honeywell. Zebra: CBA-U21-S07ZBR (USB 2,1 m) i CBA-U47-S15ZAR (USB 4,6 m) do DS2208/DS4608/DS9308, CBA-U01-S07ZAR (USB do DS3608/DS3678, inny konektor), CBA-R07-M15ZBR i CBA-R21-S15PAR (RS-232). Honeywell: CBL-500-300-S00 (USB 3 m) i CBL-020-300-C00 (RS-232 3 m) do Granit/Xenon/Voyager. Kable Zebra i Honeywell NIE są zamienne.',
     },
     buyingGuide: {
-      heading: 'Jak dobrać kabel do skanera Honeywell?',
+      heading: 'Jak dobrać kabel do skanera?',
       items: [
-        'USB (CBL-500-300-S00) — do 90% zastosowań: komputer, kasa POS, terminal z USB. Zasilanie 5V z hosta, plug-and-play.',
-        'RS-232 (CBL-020-300-C00) — do urządzeń z portem szeregowym: starsze terminale POS, sterowniki PLC, komputery przemysłowe. Wymaga zewnętrznego zasilacza skanera.',
-        'Do bazy CCB23 — kabel USB lub RS-232 sprzedawany oddzielnie. Bez kabla baza ładuje, ale nie komunikuje.',
+        'Zebra USB krótki CBA-U21-S07ZBR (2,1 m) — do DS2208, DS4608, DS9308, LI2208. Standardowy kabel na stanowisko kasowe.',
+        'Zebra USB długi CBA-U47-S15ZAR (4,6 m) — do DS2208, DS4608. Dłuższa wersja gdy odległość od komputera > 2 m.',
+        'Zebra USB do DS3608/DS3678 CBA-U01-S07ZAR — INNY konektor niż CBA-U21. NIE zamienne! Sprawdź model skanera.',
+        'Zebra RS-232: CBA-R07-M15ZBR (2 m) lub CBA-R21-S15PAR (4,6 m) — do sterowników PLC, starszych terminali POS. Wymaga zasilacza.',
+        'Honeywell USB CBL-500-300-S00 (3 m) — uniwersalny do Granit, Xenon, Voyager. Plug-and-play.',
+        'Honeywell RS-232 CBL-020-300-C00 (3 m, krętny) — do urządzeń z portem szeregowym. Wymaga zasilacza.',
       ],
     },
-    expertAuthority: 'TAKMA od 25 lat wdraża systemy skanerów Honeywell i doradza w doborze kabli pod konkretne interfejsy i środowiska pracy.',
-    technicalDeepDive: `CBL-500-300-S00: USB Type A, prosty (straight), 3 m (9,8 ft), zasilanie 5V host power, czarny. Kompatybilny z szeroką gamą skanerów: Granit Ultra 2100i, Granit XP 1990i/1991i, Granit 1980i/1910i, Xenon 1900g/1902g, Voyager 1200g/1250g, Hyperion 1300g.
+    expertAuthority: 'TAKMA jako autoryzowany partner Zebra i Honeywell od 25 lat wdraża systemy skanerów i doradza w doborze kabli pod konkretne interfejsy i środowiska pracy — od stanowiska kasowego po linię produkcyjną.',
+    technicalDeepDive: `Zebra CBA-U21-S07ZBR: USB Type A, prosty, 2,1 m, zasilanie host power. Do DS2208, DS4608, DS9308, LI2208, LI3608-ER. Standard na stanowiska kasowe.
 
-CBL-020-300-C00: RS-232, krętny (coiled), 3 m (9,8 ft), DB9 Female, sygnały 5V. Kabel krętny zapobiega plątaniu i rozciąga się elastycznie. Wymaga zewnętrznego zasilacza — port RS-232 NIE zasila skanera. Kompatybilność identyczna z CBL-500-300-S00.`,
+Zebra CBA-U47-S15ZAR: USB Type A, prosty, 4,6 m. Dłuższa wersja CBA-U21 — gdy komputer daleko od skanera. Kompatybilność identyczna.
+
+Zebra CBA-U01-S07ZAR: USB do DS3608/DS3678 — UWAGA: inny konektor (10-pin modular) niż CBA-U21 (RJ45-style). NIE zamienne z CBA-U21.
+
+Zebra CBA-R07-M15ZBR: RS-232, 2 m, DB9 Female. CBA-R21-S15PAR: RS-232, 4,6 m. Oba wymagają zewnętrznego zasilacza — port RS-232 NIE zasila skanera.
+
+Honeywell CBL-500-300-S00: USB Type A, prosty, 3 m, zasilanie 5V host power. Do Granit Ultra 2100i, Granit XP 1990i/1991i, Xenon Ultra/XP, Voyager 1470g/1200g.
+
+Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny kabel zapobiega plątaniu. Wymaga zasilacza.`,
     useCases: [
       {
-        title: 'Stanowisko kasowe — USB',
-        description: 'CBL-500-300-S00 do podłączenia skanera Granit 2100i lub Voyager 1470g do komputera kasowego. Plug-and-play, zasilanie z USB.',
+        title: 'Stanowisko kasowe — Zebra DS2208 + USB',
+        description: 'CBA-U21-S07ZBR (2,1 m) do podłączenia DS2208 do komputera kasowego. Plug-and-play, zasilanie z USB. Przy dłuższej odległości — CBA-U47-S15ZAR (4,6 m).',
       },
       {
-        title: 'Linia produkcyjna — RS-232',
-        description: 'CBL-020-300-C00 do podłączenia skanera Granit XP 1990i do sterownika PLC z portem szeregowym. Kabel krętny nie plącze się na stanowisku.',
+        title: 'Magazyn — Honeywell Voyager 1470g + USB',
+        description: 'CBL-500-300-S00 (3 m) do podłączenia skanera do terminala magazynowego. Uniwersalny kabel do większości skanerów Honeywell.',
+      },
+      {
+        title: 'Linia produkcyjna — RS-232 do sterownika PLC',
+        description: 'Zebra CBA-R21-S15PAR (4,6 m) lub Honeywell CBL-020-300-C00 (3 m, krętny) do podłączenia skanera do sterownika PLC z portem szeregowym. Wymaga zasilacza sieciowego.',
       },
     ],
     uniqueInsights: {
       heading: 'Co warto wiedzieć o kablach do skanerów',
       items: [
         {
-          title: 'RS-232 wymaga zasilacza',
-          text: 'Port RS-232 nie dostarcza zasilania skanerowi (w przeciwieństwie do USB). Przy podłączeniu kablem CBL-020-300-C00 musisz osobno zasilić skaner zasilaczem sieciowym.',
+          title: 'Kable Zebra do DS3608 mają INNY konektor',
+          text: 'CBA-U21-S07ZBR pasuje do DS2208/DS4608, ale NIE do DS3608/DS3678 — te wymagają CBA-U01-S07ZAR z innym konektorem (10-pin modular). Zamówienie złego kabla = zwrot. Zawsze sprawdź model skanera przed zamówieniem.',
         },
         {
-          title: 'Krętny kabel RS-232 oszczędza miejsce',
-          text: 'Kabel CBL-020-300-C00 jest krętny (coiled) — w spoczynku ma ~50 cm, rozciąga się do 3 m. Nie plącze się na stanowisku i nie wchodzi pod nogi operatora.',
+          title: 'RS-232 wymaga zasilacza — dotyczy Zebra i Honeywell',
+          text: 'Port RS-232 nie dostarcza zasilania skanerowi (w przeciwieństwie do USB). Dotyczy zarówno Zebra CBA-R07/R21, jak i Honeywell CBL-020. Musisz osobno zasilić skaner zasilaczem sieciowym.',
+        },
+        {
+          title: 'Kable Zebra i Honeywell NIE są zamienne',
+          text: 'Konektory po stronie skanera są różne. Kabel Zebra CBA-U21 nie pasuje do Honeywell Granit i odwrotnie — CBL-500 nie pasuje do Zebra DS2208. Zawsze dobieraj kabel tej samej marki co skaner.',
         },
       ],
     },
     faq: [
-      { question: 'Czy kabel USB CBL-500-300-S00 pasuje do skanera Voyager 1470g?', answer: 'Tak — CBL-500-300-S00 jest uniwersalnym kablem USB do większości skanerów Honeywell, w tym Voyager XP 1470g, Granit Ultra 2100i, Granit XP 1990i, Xenon Ultra 1960 i wielu innych.' },
-      { question: 'Dlaczego skaner nie działa po podłączeniu kablem RS-232?', answer: 'Port RS-232 NIE dostarcza zasilania. Podłącz zewnętrzny zasilacz sieciowy do skanera. Przy kablu USB (CBL-500-300-S00) ten problem nie występuje — USB zasila skaner z portu hosta.' },
+      { question: 'Jaki kabel USB dobrać do skanera Zebra DS2208?', answer: 'CBA-U21-S07ZBR (2,1 m) — standardowa długość na stanowisko kasowe. Przy większej odległości od komputera: CBA-U47-S15ZAR (4,6 m). Oba USB Type A, plug-and-play, zasilanie z hosta.' },
+      { question: 'Czy kabel CBA-U21 pasuje do skanera DS3608?', answer: 'NIE — DS3608/DS3678 wymagają kabla CBA-U01-S07ZAR z innym konektorem (10-pin modular). CBA-U21 pasuje do DS2208, DS4608, DS9308, LI2208, LI3608-ER.' },
+      { question: 'Czy kabel USB Honeywell CBL-500 pasuje do Voyager 1470g?', answer: 'Tak — CBL-500-300-S00 jest uniwersalnym kablem USB do większości skanerów Honeywell, w tym Voyager XP 1470g, Granit Ultra 2100i, Granit XP 1990i, Xenon Ultra 1960.' },
+      { question: 'Dlaczego skaner nie działa po podłączeniu kablem RS-232?', answer: 'Port RS-232 NIE dostarcza zasilania — dotyczy zarówno Zebra (CBA-R07/R21), jak i Honeywell (CBL-020). Podłącz zewnętrzny zasilacz sieciowy do skanera. Przy USB ten problem nie występuje.' },
     ],
     comparisons: [
-      { title: 'USB vs RS-232', content: 'USB (CBL-500-300-S00): prosty 3 m, zasilanie z hosta, plug-and-play, ~72 zł. RS-232 (CBL-020-300-C00): krętny 3 m, wymaga zasilacza, ~73 zł. Cena praktycznie identyczna. Przy nowych instalacjach zawsze wybieraj USB — prostsze i nie wymaga zasilacza. RS-232 tylko gdy urządzenie docelowe nie ma USB.' },
+      { title: 'Kable Zebra USB — CBA-U21 vs CBA-U47 vs CBA-U01', content: 'CBA-U21 (2,1 m, ~92 zł): standard do DS2208/DS4608/DS9308/LI2208. CBA-U47 (4,6 m): dłuższa wersja. CBA-U01: do DS3608/DS3678, inny konektor! Wybieraj wg modelu skanera i potrzebnej długości.' },
+      { title: 'Kable Zebra vs Honeywell', content: 'Zebra CBA-U21 (USB 2,1 m, ~92 zł) i CBA-R07 (RS-232 2 m, ~131 zł). Honeywell CBL-500 (USB 3 m, ~72 zł) i CBL-020 (RS-232 3 m, ~73 zł). Honeywell tańsze i dłuższe, ale pasują TYLKO do skanerów Honeywell. Kable NIE są zamienne między markami.' },
+      { title: 'USB vs RS-232', content: 'USB: zasilanie z hosta, plug-and-play, do 90% zastosowań. RS-232: wymaga zasilacza, do starszych terminali POS i sterowników PLC. Przy nowych instalacjach zawsze USB — prostsze i tańsze w utrzymaniu. RS-232 tylko gdy urządzenie nie ma USB.' },
     ],
     howToSteps: [
-      { name: 'Sprawdź port urządzenia docelowego', text: 'USB Type A → CBL-500-300-S00. DB9 (RS-232) → CBL-020-300-C00. Jeśli urządzenie ma oba porty — wybierz USB (prostsze).' },
-      { name: 'Zamów zasilacz przy RS-232', text: 'Przy kablu RS-232 musisz osobno zamówić zasilacz sieciowy do skanera. Przy USB zasilacz nie jest potrzebny.' },
+      { name: 'Sprawdź markę i model skanera', text: 'Zebra DS2208/DS4608 → CBA-U21 lub CBA-U47. Zebra DS3608/DS3678 → CBA-U01 (inny konektor!). Honeywell → CBL-500 lub CBL-020. Kable NIE są zamienne między markami.' },
+      { name: 'Wybierz interfejs: USB lub RS-232', text: 'USB do 90% zastosowań (komputer, kasa POS). RS-232 tylko do urządzeń z portem szeregowym (sterowniki PLC, starsze terminale).' },
+      { name: 'Dobierz długość', text: 'Zebra USB: 2,1 m (CBA-U21) lub 4,6 m (CBA-U47). Zebra RS-232: 2 m (CBA-R07) lub 4,6 m (CBA-R21). Honeywell: 3 m (USB i RS-232).' },
     ],
   },
 
