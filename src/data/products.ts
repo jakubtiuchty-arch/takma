@@ -13570,7 +13570,7 @@ Dokumentacja: automation.honeywell.com/granit-ultra-2100i.`,
       'Inwentaryzacja z Multi-Code — wiele kodów jednym skanem',
     ],
     compatibleAccessories: [],
-    relatedAccessories: ['honeywell-cbl-500-300-s00', 'honeywell-cbl-020-300-c00', 'honeywell-holster-industrial', 'honeywell-bat-scn11', 'honeywell-ccb23-100bt-07n', 'honeywell-mb4-bat-scn11'],
+    relatedAccessories: ['honeywell-cbl-500-300-s00', 'honeywell-cbl-020-300-c00', 'honeywell-holster-industrial'],
     faq: [
       {
         question: 'Co to jest AI decoding w Granit Ultra 2100i?',
