@@ -108,7 +108,7 @@ function extractAttribute(xml: string, tag: string, attr: string): string | null
  * Zebra printers (PN starts with Z, P, K) → prefix ZB (Zebra)
  * Symbol-heritage mobile/accessories (PN starts with W, MC, TC, CC, SG, CRD, SAC, BTRY, TRG, CBL) → prefix SB
  * Newland (PN starts with N7-, MT93, NLS-, TPUN7, SPN7, BTY7) → prefix N1
- * Honeywell (PN starts with CT, EDA, 50) → prefix ON
+ * Honeywell (PN starts with CT, CK, EDA, 50, 1990, 1991, 2100, 2105) → prefix ON
  * Np. ZD4A042-30EM00EZ → ZBZD4A042-30EM00EZ
  * Np. WLMT0-T22B6ABC2-A6 → SBWLMT0-T22B6ABC2-A6
  * Np. N7-PRO-W4-E3 → N1N7-PRO-W4-E3
@@ -117,8 +117,8 @@ function extractAttribute(xml: string, tag: string, attr: string): string | null
 function toIngramItemId(partNumber: string): string {
   const upper = partNumber.toUpperCase()
   if (upper.startsWith('ZB') || upper.startsWith('SB') || upper.startsWith('N1') || upper.startsWith('ON')) return upper
-  // Honeywell products (CT70, CT32, CK67, EDA52 terminals, scanners 2100/2105/1990, accessories, batteries 50xxx)
-  if (upper.startsWith('CT7') || upper.startsWith('CT3') || upper.startsWith('CK') || upper.startsWith('EDA') || upper.startsWith('501') || upper.startsWith('2105') || upper.startsWith('2100') || upper.startsWith('1990')) return 'ON' + upper
+  // Honeywell products (CT70, CT32, CK67, EDA52 terminals, scanners 2100/2105/1990/1991, accessories, batteries 50xxx)
+  if (upper.startsWith('CT7') || upper.startsWith('CT3') || upper.startsWith('CK') || upper.startsWith('EDA') || upper.startsWith('501') || upper.startsWith('2105') || upper.startsWith('2100') || upper.startsWith('1990') || upper.startsWith('1991') || upper.startsWith('1962')) return 'ON' + upper
   // Newland products (terminals N7-*, MT93-*, MT95-*, accessories NLS-*, TPUN7*, SPN7*, BTY7*, BTY-MT*, HS-MT*, SPMT*)
   if (upper.startsWith('N7-') || upper.startsWith('MT93') || upper.startsWith('MT95') || upper.startsWith('NLS-') || upper.startsWith('TPUN7') || upper.startsWith('SPN7') || upper.startsWith('BTY7') || upper.startsWith('BTY-MT') || upper.startsWith('HS-MT') || upper.startsWith('SPMT')) return 'N1' + upper
   // Symbol-heritage products (terminale mobilne, skanery, akcesoria mobilne)
