@@ -62,13 +62,13 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   // SEO: dedykowany opis lub fallback na dynamiczny
   const priceText = product.priceFrom ? ` Od ${product.priceFrom.toLocaleString('pl-PL')} zł netto.` : ''
   const variantsText = product.variants?.length ? ` ${product.variants.length} wariantów.` : ''
-  const fallbackDesc = `${product.name} — ${product.shortDescription}.${priceText}${variantsText} Doradztwo techniczne i serwis.`
+  const fallbackDesc = `${product.shortDescription}.${priceText}${variantsText} Doradztwo techniczne i serwis.`
   const metaDescription = product.seoDescription ?? smartTruncate(fallbackDesc, 160)
 
   // OG description — more engaging for social media
   const ogDescription = product.priceFrom
-    ? `${product.name} — ${product.shortDescription}. Od ${product.priceFrom.toLocaleString('pl-PL')} zł netto. Sprawdź warianty i zamów w TAKMA.`
-    : `${product.name} — ${product.shortDescription}. Sprawdź i zamów w TAKMA.`
+    ? `${product.shortDescription}. Od ${product.priceFrom.toLocaleString('pl-PL')} zł netto. Sprawdź warianty i zamów w TAKMA.`
+    : `${product.shortDescription}. Sprawdź i zamów w TAKMA.`
 
   // OG image — pełny URL z domeną (nie relative path)
   const ogImage = product.images[0] ? `https://www.takma.com.pl${product.images[0]}` : undefined
