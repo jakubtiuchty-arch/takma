@@ -190,7 +190,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
     '@type': 'Product' as const,
     name: p!.name,
     url: `https://www.takma.com.pl/produkt/${p!.slug}`,
-    ...(p!.priceFrom ? {
+    ...(p!.priceFrom && p!.priceFrom > 0 ? {
       offers: {
         '@type': 'Offer' as const,
         price: p!.priceFrom.toFixed(2),
@@ -199,6 +199,10 @@ export default async function ProductPage({ params }: ProductPageProps) {
       },
     } : {}),
   }))
+
+  // Check if product has any valid price (> 0) at product or variant level
+  const hasValidPrice = (product.priceFrom && product.priceFrom > 0) ||
+    (product.variants?.some(v => v.priceFrom && v.priceFrom > 0))
 
   const productJsonLd = {
     '@context': 'https://schema.org',
@@ -227,51 +231,47 @@ export default async function ProductPage({ params }: ProductPageProps) {
     })(),
     ...(relatedProductsForSchema.length > 0 ? { isRelatedTo: relatedProductsForSchema } : {}),
     ...(product.gtin13 ? { gtin13: product.gtin13 } : {}),
-    offers: product.variants && product.variants.length > 0
-      ? (() => {
-          const variantPrices = product.variants.filter((v) => v.priceFrom).map((v) => v.priceFrom!)
-          const lowPrice = variantPrices.length > 0 ? Math.min(...variantPrices) : product.priceFrom
-          const highPrice = variantPrices.length > 0 ? Math.max(...variantPrices) : product.priceFrom
-          return {
-          '@type': 'AggregateOffer' as const,
-          url: `https://www.takma.com.pl/produkt/${product.slug}`,
-          ...(lowPrice ? { lowPrice: lowPrice.toFixed(2) } : {}),
-          ...(highPrice ? { highPrice: highPrice.toFixed(2) } : {}),
-          priceCurrency: 'PLN',
-          offerCount: product.variants.length,
-          availability: availabilitySchemaMap[product.availability],
-          offers: product.variants.filter((v) => v.priceFrom).map((v) => ({
-            '@type': 'Offer',
+    // Only include offers when product has valid pricing — prevents GSC schema errors
+    ...(hasValidPrice ? {
+      offers: product.variants && product.variants.length > 0
+        ? (() => {
+            const variantPrices = product.variants.filter((v) => v.priceFrom && v.priceFrom > 0).map((v) => v.priceFrom!)
+            const lowPrice = variantPrices.length > 0 ? Math.min(...variantPrices) : (product.priceFrom && product.priceFrom > 0 ? product.priceFrom : undefined)
+            const highPrice = variantPrices.length > 0 ? Math.max(...variantPrices) : (product.priceFrom && product.priceFrom > 0 ? product.priceFrom : undefined)
+            return {
+            '@type': 'AggregateOffer' as const,
             url: `https://www.takma.com.pl/produkt/${product.slug}`,
-            sku: v.partNumber,
-            mpn: v.partNumber,
-            name: `${product.name} — ${v.name}`,
-            price: v.priceFrom!.toFixed(2),
+            lowPrice: lowPrice!.toFixed(2),
+            highPrice: (highPrice || lowPrice)!.toFixed(2),
             priceCurrency: 'PLN',
-            availability: availabilitySchemaMap[v.availability],
-            itemCondition: 'https://schema.org/NewCondition',
-            priceValidUntil,
-            seller: sellerOrg,
-          })),
-        }
-        })()
-      : product.priceFrom
-        ? {
-            '@type': 'Offer',
-            url: `https://www.takma.com.pl/produkt/${product.slug}`,
-            price: product.priceFrom.toFixed(2),
-            priceCurrency: 'PLN',
+            offerCount: product.variants.length,
             availability: availabilitySchemaMap[product.availability],
-            itemCondition: 'https://schema.org/NewCondition',
-            priceValidUntil,
-            seller: sellerOrg,
+            offers: product.variants.filter((v) => v.priceFrom && v.priceFrom > 0).map((v) => ({
+              '@type': 'Offer',
+              url: `https://www.takma.com.pl/produkt/${product.slug}`,
+              sku: v.partNumber,
+              mpn: v.partNumber,
+              name: `${product.name} — ${v.name}`,
+              price: v.priceFrom!.toFixed(2),
+              priceCurrency: 'PLN',
+              availability: availabilitySchemaMap[v.availability],
+              itemCondition: 'https://schema.org/NewCondition',
+              priceValidUntil,
+              seller: sellerOrg,
+            })),
           }
+          })()
         : {
-            '@type': 'Offer',
-            availability: availabilitySchemaMap[product.availability],
-            priceCurrency: 'PLN',
-            seller: sellerOrg,
-          },
+              '@type': 'Offer',
+              url: `https://www.takma.com.pl/produkt/${product.slug}`,
+              price: product.priceFrom!.toFixed(2),
+              priceCurrency: 'PLN',
+              availability: availabilitySchemaMap[product.availability],
+              itemCondition: 'https://schema.org/NewCondition',
+              priceValidUntil,
+              seller: sellerOrg,
+            },
+    } : {}),
   }
 
   // JSON-LD: BreadcrumbList
