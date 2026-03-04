@@ -33,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const productPages: MetadataRoute.Sitemap = products.map((product) => ({
     url: `${baseUrl}/produkt/${product.slug}`,
-    lastModified: new Date(product.createdAt),
+    lastModified: new Date(product.updatedAt || product.createdAt),
   }))
 
   const subcategoryPages: MetadataRoute.Sitemap = subcategories.map((sub) => ({

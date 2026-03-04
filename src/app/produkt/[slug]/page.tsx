@@ -218,10 +218,10 @@ export default async function ProductPage({ params }: ProductPageProps) {
     sku: product.variants?.[0]?.partNumber || product.id,
     mpn: product.variants?.[0]?.partNumber || product.id,
     datePublished: product.createdAt,
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: product.updatedAt || product.createdAt,
     inLanguage: 'pl-PL',
     ...(product.sameAs ? { sameAs: product.sameAs } : {}),
-    ...(weightSpec ? { weight: { '@type': 'QuantitativeValue', value: parseFloat(weightSpec.value.replace(',', '.')) || weightSpec.value, unitCode: 'GRM' } } : {}),
+    ...(weightSpec ? { weight: { '@type': 'QuantitativeValue', value: parseFloat(weightSpec.value.replace(',', '.')) || weightSpec.value, unitCode: weightSpec.value.includes('kg') ? 'KGM' : 'GRM' } } : {}),
     ...(() => {
       const props = [
         ...(dimensionsSpec ? [{ '@type': 'PropertyValue' as const, name: 'Wymiary', value: dimensionsSpec.value }] : []),
