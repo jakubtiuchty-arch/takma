@@ -14,6 +14,11 @@ import { brandCategoryContent } from '@/data/brand-category-content'
 import ServiceBanner from '@/components/ui/ServiceBanner'
 import LinkedText from '@/components/ui/LinkedText'
 
+/** Strip Markdown links from text for schema JSON-LD (Google doesn't parse Markdown) */
+function stripMarkdownLinks(text: string): string {
+  return text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+}
+
 /** Renders text with \n\n paragraph breaks */
 function RichText({ text, className }: { text: string; className?: string }) {
   const paragraphs = text.split('\n\n')
@@ -105,20 +110,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
     mainEntity: faqItems.map(f => ({
       '@type': 'Question',
       name: f.question,
-      acceptedAnswer: { '@type': 'Answer', text: f.answer },
-    })),
-  } : null
-
-  const howToJsonLd = content?.howToSteps?.length ? {
-    '@context': 'https://schema.org',
-    '@type': 'HowTo',
-    name: `Jak wybrać i wdrożyć ${bc.name.toLowerCase()}`,
-    description: `Krok po kroku: wybór, konfiguracja i wdrożenie ${bc.name.toLowerCase()} w firmie.`,
-    step: content.howToSteps.map((step, i) => ({
-      '@type': 'HowToStep',
-      position: i + 1,
-      name: step.name,
-      text: step.text,
+      acceptedAnswer: { '@type': 'Answer', text: stripMarkdownLinks(f.answer) },
     })),
   } : null
 
@@ -138,7 +130,6 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }} />
       {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
-      {howToJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }} />
 
       <div className="container-main py-8 lg:py-12">

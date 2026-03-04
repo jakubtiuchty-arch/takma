@@ -35489,7 +35489,7 @@ export const brandCategories: BrandCategory[] = [
     manufacturerId: 'honeywell',
     categoryId: 'skanery-kodow-kreskowych',
     name: 'Skanery kodów kreskowych Honeywell',
-    seoTitle: 'Skanery kodów kreskowych Honeywell — Voyager, Xenon, Granit | od 358 zł netto',
+    seoTitle: 'Skanery kodów kreskowych Honeywell — Voyager, Xenon, Granit',
     seoDescription: 'Skanery Honeywell: Voyager XP 1470g/1472g (POS), Xenon Ultra 1960g/1962 (retail), Granit XP/Ultra (przemysłowe, XLR 24 m, AI). Przewodowe i Bluetooth. Od 358 zł. TAKMA — autoryzowany dystrybutor.',
     longDescription: 'Kompletna oferta skanerów kodów kreskowych Honeywell — od ekonomicznego Voyager XP 1470g (od 358 zł netto) po flagowego Granit Ultra 2100i z dekodowaniem AI (od 1 760 zł). Honeywell to drugi co do wielkości producent skanerów enterprise na świecie. Trzy serie pokrywają pełne spektrum zastosowań: Voyager XP (entry-level POS, apteki, biura), Xenon Ultra (mid-range retail, healthcare z green-dot LED), Granit XP/Ultra (ultra-rugged magazyny, chłodnie -30°C, produkcja). Technologie wyróżniające: FlexRange XLR — skanowanie kodów z odległości do 24 m w skanerze ręcznym (jedyne takie rozwiązanie na rynku). AI-based decoding w Granit Ultra — o 45% szybsze dekodowanie trudnych kodów. 12 modeli: 6 przewodowych USB (358–2 417 zł) + 6 bezprzewodowych Bluetooth (775–2 997 zł). IP52–IP68, upadki 1,5–3 m, gwarancja 3–5 lat. TAKMA jako autoryzowany dystrybutor Honeywell oferuje doradztwo, konfigurację EZConfig i serwis w Polsce.',
     faq: [
