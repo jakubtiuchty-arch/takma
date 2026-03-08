@@ -217,7 +217,7 @@ export const categories: Category[] = [
     seoDescription: 'Oryginalne akcesoria Zebra - baterie, ładowarki wielostanowiskowe, uchwyty, etui. Części zamienne do drukarek, skanerów i terminali.',
     longDescription: 'Oryginalne akcesoria Zebra: baterie standardowe i rozszerzone, ładowarki jedno- i wielostanowiskowe, uchwyty samochodowe i biurkowe, etui ochronne, paski na rękę. Pełna kompatybilność i gwarancja producenta.',
     icon: 'package',
-    productCount: 171,
+    productCount: 176,
   },
   {
     id: 'oprogramowanie',
@@ -361,8 +361,11 @@ export const subcategories: Subcategory[] = [
       'zebra-charger-zq220plus',
       // Akcesoria ZD510-HC (drukarka opasek)
       'zebra-printhead-zd510-hc', 'zebra-platen-roller-zd510-hc',
+      // Akcesoria Honeywell PC45d
+      'honeywell-printhead-pc45-203', 'honeywell-printhead-pc45-300',
+      'honeywell-platen-roller-pc45d', 'honeywell-dispenser-pc45d', 'honeywell-cutter-pc45d',
     ],
-    productCount: 103,
+    productCount: 108,
   },
   // --- Podkategorie: Materiały eksploatacyjne ---
   {
@@ -4179,7 +4182,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Honeywell PC45 (źródło: a
       'Etykiety linerless (bez podkładu) w gastronomii i logistyce',
       'Druk opasek identyfikacyjnych w szpitalach (wariant healthcare)',
     ],
-    relatedAccessories: [],
+    relatedAccessories: ['honeywell-printhead-pc45-203', 'honeywell-printhead-pc45-300', 'honeywell-platen-roller-pc45d', 'honeywell-dispenser-pc45d', 'honeywell-cutter-pc45d'],
     compatibleAccessories: [],
     downloads: [
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/ppr/zh-cn/public/products/printers/desktop/pc45/documents/pc45-direct-thermal-and-thermal-transfer-desktop-printer-datasheet-en.pdf', size: 'PDF' },
@@ -24693,6 +24696,163 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
 ]
 
 // ============================================
+// AKCESORIA DO DRUKAREK HONEYWELL PC45
+// ============================================
+
+const honeywellPrinterAccessories: Product[] = [
+  {
+    id: 'honeywell-printhead-pc45-203',
+    slug: 'honeywell-glowica-203dpi-pc45',
+    name: 'Głowica drukująca 203 dpi do Honeywell PC45d / PC45t',
+    shortDescription: 'Głowica drukująca Honeywell 203 dpi (8 dots/mm) — oryginalna głowica do drukarek PC45d, PC45t, PC43d, PC43t, PD43. Część zamienna 225-783-001.',
+    description: `Oryginalna głowica drukująca Honeywell o rozdzielczości 203 dpi (8 dots/mm) do drukarek biurkowych serii PC45 i PC43. Głowica jest elementem eksploatacyjnym — wymiana zalecana po 50–150 km druku w zależności od stosowanego nośnika.
+
+Kompatybilna z modelami: Honeywell PC45d, PC45t, PC43d, PC43t oraz PD43. Montaż narzędziowy w kilka minut — wystarczy podnieść pokrywę drukarki i wymienić moduł.`,
+    categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
+    manufacturerId: 'honeywell',
+    priceFrom: 517.97,
+    images: ['/images/products/225-783-001.png'],
+    imageDescriptions: ['Głowica drukująca 203 dpi Honeywell 225-783-001 — widok od dołu, elementy grzejne i styki'],
+    tags: ['magazyn', 'logistyka', 'produkcja'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: '225-783-001' },
+      { name: 'Typ', value: 'Głowica drukująca (printhead)' },
+      { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm)' },
+      { name: 'Kompatybilność', value: 'Honeywell PC45d, PC45t, PC43d, PC43t, PD43' },
+    ],
+    applications: ['Wymiana zużytej głowicy', 'Serwis drukarki Honeywell PC45'],
+    compatibleAccessories: [],
+    relatedAccessories: ['honeywell-printhead-pc45-300', 'honeywell-platen-roller-pc45d'],
+    downloads: [],
+    createdAt: '2026-03-08',
+  },
+  {
+    id: 'honeywell-printhead-pc45-300',
+    slug: 'honeywell-glowica-300dpi-pc45',
+    name: 'Głowica drukująca 300 dpi do Honeywell PC45d / PC45t',
+    shortDescription: 'Głowica drukująca Honeywell 300 dpi (12 dots/mm) — oryginalna głowica do drukarek PC45d, PC45t, PC43d, PC43t, PD43. Część zamienna 225-784-001.',
+    description: `Oryginalna głowica drukująca Honeywell o rozdzielczości 300 dpi (12 dots/mm) do drukarek biurkowych serii PC45 i PC43. Wyższa rozdzielczość zapewnia ostrzejszy druk — szczególnie istotne przy małych etykietach i kodach 2D (QR, DataMatrix).
+
+Kompatybilna z modelami: Honeywell PC45d, PC45t, PC43d, PC43t oraz PD43. Głowica jest elementem eksploatacyjnym — wymiana zalecana po 50–150 km druku.`,
+    categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
+    manufacturerId: 'honeywell',
+    priceFrom: 796.49,
+    images: ['/images/products/225-784-001.png'],
+    imageDescriptions: ['Głowica drukująca 300 dpi Honeywell 225-784-001 — widok od dołu, elementy grzejne i styki'],
+    tags: ['magazyn', 'logistyka', 'produkcja'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: '225-784-001' },
+      { name: 'Typ', value: 'Głowica drukująca (printhead)' },
+      { name: 'Rozdzielczość', value: '300 dpi (12 dots/mm)' },
+      { name: 'Kompatybilność', value: 'Honeywell PC45d, PC45t, PC43d, PC43t, PD43' },
+    ],
+    applications: ['Wymiana zużytej głowicy', 'Upgrade rozdzielczości', 'Druk kodów 2D i małych etykiet'],
+    compatibleAccessories: [],
+    relatedAccessories: ['honeywell-printhead-pc45-203', 'honeywell-platen-roller-pc45d'],
+    downloads: [],
+    createdAt: '2026-03-08',
+  },
+  {
+    id: 'honeywell-platen-roller-pc45d',
+    slug: 'honeywell-walek-dociskowy-pc45d',
+    name: 'Wałek dociskowy do Honeywell PC45d',
+    shortDescription: 'Wałek dociskowy Honeywell PC45d (205-187-002) — oryginalny platen roller, element eksploatacyjny do wymiany okresowej.',
+    description: `Oryginalny wałek dociskowy (platen roller) do drukarki Honeywell PC45d. Wałek odpowiada za transport i precyzyjne pozycjonowanie nośnika podczas druku — jest elementem eksploatacyjnym wymagającym okresowej wymiany.
+
+Wymiana wałka przywraca jakość druku i zapobiega problemom z podawaniem etykiet. Montaż bez narzędzi w kilka minut.`,
+    categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
+    manufacturerId: 'honeywell',
+    priceFrom: 97.96,
+    images: ['/images/products/205-187-002.png'],
+    imageDescriptions: ['Wałek dociskowy Honeywell 205-187-002 do drukarki PC45d — gumowy wałek z metalowymi uchwytami'],
+    tags: ['magazyn', 'logistyka'],
+    availability: 'unavailable',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: '205-187-002' },
+      { name: 'Typ', value: 'Wałek dociskowy (platen roller)' },
+      { name: 'Kompatybilność', value: 'Honeywell PC45d (Direct Thermal)' },
+    ],
+    applications: ['Wymiana zużytego wałka', 'Serwis drukarki Honeywell PC45d'],
+    compatibleAccessories: [],
+    relatedAccessories: ['honeywell-printhead-pc45-203', 'honeywell-printhead-pc45-300'],
+    downloads: [],
+    createdAt: '2026-03-08',
+  },
+  {
+    id: 'honeywell-dispenser-pc45d',
+    slug: 'honeywell-odklejak-pc45d',
+    name: 'Odklejak z czujnikiem pobrania etykiety do Honeywell PC45d',
+    shortDescription: 'Odklejak (self-strip) Honeywell PC45d (205-187-001) — moduł do automatycznego odklejania etykiet z podkładu, z czujnikiem pobrania etykiety.',
+    description: `Oryginalny moduł odklejaka (self-strip / dispenser) z czujnikiem pobrania etykiety do drukarki Honeywell PC45d. Automatycznie oddziela etykietę samoprzylepną od podkładu (linera) po wydruku.
+
+Czujnik Label Taken Sensor wykrywa, czy operator zabrał etykietę — drukarka czeka z następnym wydrukiem do momentu pobrania. Idealny do stanowisk pakowania i etykietowania w magazynie.`,
+    categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
+    manufacturerId: 'honeywell',
+    priceFrom: 140.81,
+    images: ['/images/products/205-187-001.png'],
+    imageDescriptions: ['Odklejak (self-strip) Honeywell 205-187-001 do drukarki PC45d — dwa moduły, widoczny mechanizm separacji linera'],
+    tags: ['magazyn', 'logistyka', 'produkcja'],
+    availability: 'unavailable',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: '205-187-001' },
+      { name: 'Typ', value: 'Odklejak (self-strip / dispenser)' },
+      { name: 'Czujnik', value: 'Label Taken Sensor (czujnik pobrania etykiety)' },
+      { name: 'Kompatybilność', value: 'Honeywell PC45d (Direct Thermal)' },
+    ],
+    applications: ['Automatyczne odklejanie etykiet', 'Stanowisko pakowania', 'Etykietowanie na linii produkcyjnej'],
+    compatibleAccessories: [],
+    relatedAccessories: ['honeywell-cutter-pc45d'],
+    downloads: [],
+    createdAt: '2026-03-08',
+  },
+  {
+    id: 'honeywell-cutter-pc45d',
+    slug: 'honeywell-gilotyna-pc45d',
+    name: 'Gilotyna z czujnikiem obecności nośnika do Honeywell PC45d',
+    shortDescription: 'Gilotyna (cutter) Honeywell PC45d (205-187-006) — moduł do automatycznego cięcia etykiet i nośnika ciągłego, z czujnikiem obecności nośnika.',
+    description: `Oryginalny moduł gilotyny (cutter) z czujnikiem obecności nośnika do drukarki Honeywell PC45d. Automatycznie tnie etykiety niesamoprzylepne i nośnik ciągły po każdym wydruku.
+
+Czujnik Media Present Sensor wykrywa obecność nośnika w gilotynie. Minimalna długość cięcia: 12,5 mm. Przeznaczony do pracy z materiałami ciągłymi — paragony, bilety, etykiety bez podkładu.`,
+    categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
+    manufacturerId: 'honeywell',
+    priceFrom: 979.41,
+    images: ['/images/products/205-187-006.png'],
+    imageDescriptions: ['Gilotyna (cutter) Honeywell 205-187-006 do drukarki PC45d — moduł z prowadnicą i nożem tnącym'],
+    tags: ['magazyn', 'logistyka', 'produkcja'],
+    availability: 'unavailable',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: '205-187-006' },
+      { name: 'Typ', value: 'Gilotyna (cutter)' },
+      { name: 'Czujnik', value: 'Media Present Sensor (czujnik obecności nośnika)' },
+      { name: 'Minimalne cięcie', value: '12,5 mm' },
+      { name: 'Kompatybilność', value: 'Honeywell PC45d (Direct Thermal)' },
+    ],
+    applications: ['Automatyczne cięcie etykiet', 'Druk paragonów i biletów', 'Nośniki ciągłe bez podkładu'],
+    compatibleAccessories: [],
+    relatedAccessories: ['honeywell-dispenser-pc45d'],
+    downloads: [],
+    createdAt: '2026-03-08',
+  },
+]
+
+// ============================================
 // AKCESORIA DO MOBILNYCH DRUKAREK ZQ500/ZQ600
 // ============================================
 
@@ -35265,6 +35425,7 @@ export const products: Product[] = [
   ...accessories,
   ...printerAccessories,
   ...printerAccessoriesZD621,
+  ...honeywellPrinterAccessories,
   ...mobilePrinterAccessories,
   ...tc22Accessories,
   ...tc53Accessories,

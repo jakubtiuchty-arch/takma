@@ -84,8 +84,10 @@ export async function middleware(request: NextRequest) {
       'honeywell-ck62-pasek-na-reke', 'honeywell-ck62-folia-ochronna',
       'honeywell-ck6x-ladowarka-4-baterii', 'honeywell-ck6x-ladowarka-16-baterii',
       // RFID — usunięte
-      // Drukarki Honeywell
+      // Drukarki Honeywell + akcesoria
       'honeywell-pc45d',
+      'honeywell-glowica-203dpi-pc45', 'honeywell-glowica-300dpi-pc45',
+      'honeywell-walek-dociskowy-pc45d', 'honeywell-odklejak-pc45d', 'honeywell-gilotyna-pc45d',
       // Skanery
       'zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds8178', 'zebra-li2208',
       'zebra-ds3608-xr', 'zebra-ds3608-sr', 'zebra-ds3608-hd', 'zebra-ds3608-hp',
