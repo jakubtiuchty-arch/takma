@@ -1,6 +1,7 @@
 'use client'
 
-import { useMemo, useState, useRef, useEffect } from 'react'
+import { useMemo, useState, useRef, useEffect, useCallback } from 'react'
+import { createPortal } from 'react-dom'
 import { Product } from '@/data/products'
 import { useStockData } from './StockInfo'
 import StockInfo from './StockInfo'
@@ -96,7 +97,10 @@ export default function SmartPrice({ product }: SmartPriceProps) {
   return (
     <div className="bg-gray-100 shadow-sm rounded-xl p-4 sm:p-6 mb-6">
       {pn && (
-        <p className="text-xs font-mono text-gray-500 mb-2">PN: {pn}</p>
+        <p className="text-xs font-mono text-gray-500 mb-2 flex items-center gap-1.5">
+          PN: {pn}
+          {displayed?.name && <PNVariantTooltip variantName={displayed.name} />}
+        </p>
       )}
       <div className="flex items-baseline gap-2">
         {loading || !price ? (
@@ -118,6 +122,45 @@ export default function SmartPrice({ product }: SmartPriceProps) {
       </p>
       {displayedPn.length > 0 && <StockInfo partNumbers={displayedPn} />}
     </div>
+  )
+}
+
+function PNVariantTooltip({ variantName }: { variantName: string }) {
+  const [show, setShow] = useState(false)
+  const [pos, setPos] = useState<{ top: number; left: number } | null>(null)
+  const triggerRef = useRef<HTMLSpanElement>(null)
+
+  const handleEnter = useCallback(() => {
+    if (triggerRef.current) {
+      const rect = triggerRef.current.getBoundingClientRect()
+      setPos({ top: rect.bottom + 8, left: rect.left + rect.width / 2 })
+    }
+    setShow(true)
+  }, [])
+
+  return (
+    <>
+      <span
+        ref={triggerRef}
+        onMouseEnter={handleEnter}
+        onMouseLeave={() => setShow(false)}
+        onClick={() => setShow(s => !s)}
+        className="inline-flex w-4 h-4 rounded-full bg-gray-300 text-white text-[10px] font-bold leading-none items-center justify-center cursor-help hover:bg-primary-500 transition-colors shrink-0"
+        aria-label={`Wariant: ${variantName}`}
+      >
+        ?
+      </span>
+      {show && pos && createPortal(
+        <span
+          style={{ top: pos.top, left: pos.left }}
+          className="fixed -translate-x-1/2 w-72 px-3 py-2 bg-gray-900 text-white text-xs font-normal rounded-lg text-left leading-relaxed z-[9999] whitespace-pre-line shadow-lg pointer-events-none"
+        >
+          {variantName}
+          <span className="absolute bottom-full left-1/2 -translate-x-1/2 border-4 border-transparent border-b-gray-900" />
+        </span>,
+        document.body
+      )}
+    </>
   )
 }
 
