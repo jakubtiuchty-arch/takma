@@ -6,6 +6,7 @@ import LayoutShell from '@/components/layout/LayoutShell'
 import PostHogProvider from '@/components/PostHogProvider'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import Script from 'next/script'
 
 const inter = Inter({
   subsets: ['latin', 'latin-ext'],
@@ -140,6 +141,17 @@ export default async function RootLayout({
       </PostHogProvider>
       <Analytics />
       <SpeedInsights />
+      {!isAdmin && !isPanel && (
+        <>
+          <Script id="skapiec-dlapi-init" strategy="afterInteractive">
+            {`dlApi = { cmd: [] };`}
+          </Script>
+          <Script
+            src="https://lib.onet.pl/s.csr/build/dlApi/minit.boot.min.js"
+            strategy="afterInteractive"
+          />
+        </>
+      )}
     </html>
   )
 }
