@@ -6747,7 +6747,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Honeywell PM45/PM45C (źród
   {
     id: 'honeywell-pm65',
     slug: 'honeywell-pm65',
-    name: 'Honeywell PM65',
+    name: 'Drukarka etykiet Honeywell PM65',
     shortDescription: 'Honeywell PM65 — przemysłowa drukarka etykiet 6″, do 300 mm/s, Wi-Fi 6, BT 5.2, Printer Edge',
     description: `Dla kogo? Honeywell PM65 to 6-calowa drukarka przemysłowa zaprojektowana dla centrów dystrybucji, operatorów logistycznych 3PL i linii produkcyjnych, gdzie wymagane jest drukowanie szerokich etykiet paletowych GS1-128/SSCC, etykiet GHS na pojemniki z chemikaliami oraz oznaczeń kartonów zbiorczych do 178 mm szerokości.
 
