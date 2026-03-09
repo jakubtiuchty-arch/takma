@@ -4,8 +4,8 @@
 export async function verifyTurnstile(token: string): Promise<boolean> {
   const secret = process.env.TURNSTILE_SECRET_KEY
   if (!secret) {
-    console.warn('[Turnstile] TURNSTILE_SECRET_KEY not configured — skipping verification')
-    return true
+    console.warn('[Turnstile] TURNSTILE_SECRET_KEY not configured — blocking request (fail-closed)')
+    return false
   }
 
   try {

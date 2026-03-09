@@ -1,11 +1,21 @@
 import { NextResponse } from 'next/server'
 import { getCustomerFromCookie, hashPassword, verifyPassword } from '@/lib/customer-auth'
+import { checkPasswordChangeRateLimit, getClientIp } from '@/lib/spam-protection'
 import { prisma } from '@/lib/db'
 
 export async function POST(request: Request) {
   const session = await getCustomerFromCookie()
   if (!session) {
     return NextResponse.json({ error: 'Brak autoryzacji' }, { status: 401 })
+  }
+
+  const ip = getClientIp(request.headers)
+  const rateLimit = checkPasswordChangeRateLimit(ip)
+  if (rateLimit.blocked) {
+    return NextResponse.json(
+      { error: `Zbyt wiele prób zmiany hasła. Spróbuj ponownie za ${Math.ceil((rateLimit.retryAfterSeconds || 3600) / 60)} min.` },
+      { status: 429 }
+    )
   }
 
   try {

@@ -2,6 +2,8 @@
 
 import { prisma } from '@/lib/db'
 import { verifyPassword, createSession, setSessionCookie, clearSessionCookie } from '@/lib/auth'
+import { checkLoginRateLimit, getClientIp } from '@/lib/spam-protection'
+import { headers } from 'next/headers'
 import { redirect } from 'next/navigation'
 
 export async function loginAdmin(
@@ -13,6 +15,13 @@ export async function loginAdmin(
 
   if (!email || !password) {
     return { error: 'Podaj email i hasło' }
+  }
+
+  const headersList = await headers()
+  const ip = getClientIp(headersList)
+  const rateLimit = checkLoginRateLimit(ip)
+  if (rateLimit.blocked) {
+    return { error: `Zbyt wiele prób logowania. Spróbuj ponownie za ${Math.ceil((rateLimit.retryAfterSeconds || 900) / 60)} min.` }
   }
 
   try {

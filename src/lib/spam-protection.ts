@@ -84,3 +84,73 @@ export function getClientIp(headers: Headers): string {
     'unknown'
   )
 }
+
+// ---- Login rate limiter (stricter: 5 attempts / 15 min) ----
+
+const loginRateLimitMap = new Map<string, { count: number; resetAt: number }>()
+const LOGIN_RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000 // 15 min
+const LOGIN_RATE_LIMIT_MAX = 5
+
+function cleanupLoginRateLimit() {
+  const now = Date.now()
+  loginRateLimitMap.forEach((entry, ip) => {
+    if (entry.resetAt < now) loginRateLimitMap.delete(ip)
+  })
+}
+
+setInterval(cleanupLoginRateLimit, 5 * 60 * 1000)
+
+/**
+ * Rate limit for login endpoints — max 5 attempts per 15 minutes per IP.
+ * Returns { blocked: false } if OK, { blocked: true, retryAfterSeconds } if rate limited.
+ */
+export function checkLoginRateLimit(ip: string): { blocked: boolean; retryAfterSeconds?: number } {
+  const now = Date.now()
+  const entry = loginRateLimitMap.get(ip)
+
+  if (!entry || entry.resetAt < now) {
+    loginRateLimitMap.set(ip, { count: 1, resetAt: now + LOGIN_RATE_LIMIT_WINDOW_MS })
+    return { blocked: false }
+  }
+
+  entry.count++
+  if (entry.count > LOGIN_RATE_LIMIT_MAX) {
+    const retryAfterSeconds = Math.ceil((entry.resetAt - now) / 1000)
+    return { blocked: true, retryAfterSeconds }
+  }
+
+  return { blocked: false }
+}
+
+// ---- Password change rate limiter (stricter: 3 attempts / 60 min) ----
+
+const passwordChangeRateLimitMap = new Map<string, { count: number; resetAt: number }>()
+const PASSWORD_CHANGE_WINDOW_MS = 60 * 60 * 1000 // 60 min
+const PASSWORD_CHANGE_MAX = 3
+
+function cleanupPasswordChangeRateLimit() {
+  const now = Date.now()
+  passwordChangeRateLimitMap.forEach((entry, ip) => {
+    if (entry.resetAt < now) passwordChangeRateLimitMap.delete(ip)
+  })
+}
+
+setInterval(cleanupPasswordChangeRateLimit, 5 * 60 * 1000)
+
+export function checkPasswordChangeRateLimit(ip: string): { blocked: boolean; retryAfterSeconds?: number } {
+  const now = Date.now()
+  const entry = passwordChangeRateLimitMap.get(ip)
+
+  if (!entry || entry.resetAt < now) {
+    passwordChangeRateLimitMap.set(ip, { count: 1, resetAt: now + PASSWORD_CHANGE_WINDOW_MS })
+    return { blocked: false }
+  }
+
+  entry.count++
+  if (entry.count > PASSWORD_CHANGE_MAX) {
+    const retryAfterSeconds = Math.ceil((entry.resetAt - now) / 1000)
+    return { blocked: true, retryAfterSeconds }
+  }
+
+  return { blocked: false }
+}

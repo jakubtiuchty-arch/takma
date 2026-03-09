@@ -1,0 +1,4 @@
+Contact: mailto:kontakt@takma.com.pl
+Preferred-Languages: pl, en
+Canonical: https://www.takma.com.pl/.well-known/security.txt
+Expires: 2027-03-09T00:00:00.000Z

@@ -2,7 +2,7 @@ import { SignJWT, jwtVerify } from 'jose'
 import { cookies } from 'next/headers'
 
 const SECRET = new TextEncoder().encode(
-  process.env.ADMIN_JWT_SECRET || 'takma-admin-secret-change-in-production-2026'
+  process.env.ADMIN_JWT_SECRET || ''
 )
 
 const COOKIE_NAME = 'admin-session'

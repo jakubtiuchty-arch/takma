@@ -2,11 +2,11 @@ import { NextRequest, NextResponse } from 'next/server'
 import { jwtVerify } from 'jose'
 
 const ADMIN_SECRET = new TextEncoder().encode(
-  process.env.ADMIN_JWT_SECRET || 'takma-admin-secret-change-in-production-2026'
+  process.env.ADMIN_JWT_SECRET || ''
 )
 
 const CUSTOMER_SECRET = new TextEncoder().encode(
-  process.env.CUSTOMER_JWT_SECRET || 'takma-customer-secret-2026'
+  process.env.CUSTOMER_JWT_SECRET || ''
 )
 
 export async function middleware(request: NextRequest) {

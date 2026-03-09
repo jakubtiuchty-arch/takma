@@ -5,7 +5,7 @@ import { cookies } from 'next/headers'
 export { hashPassword, verifyPassword } from '@/lib/auth'
 
 const SECRET = new TextEncoder().encode(
-  process.env.CUSTOMER_JWT_SECRET || 'takma-customer-secret-2026'
+  process.env.CUSTOMER_JWT_SECRET || ''
 )
 
 const COOKIE_NAME = 'customer-session'
