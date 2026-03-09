@@ -57,3 +57,11 @@ export async function addOrderTracking(orderId: string, trackingNumber: string, 
 
   return { success: true }
 }
+
+export async function deleteOrder(orderId: string) {
+  await prisma.orderItem.deleteMany({ where: { orderId } })
+  await prisma.order.delete({ where: { id: orderId } })
+
+  revalidatePath('/admin/zamowienia')
+  return { success: true }
+}

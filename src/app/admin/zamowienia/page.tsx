@@ -2,6 +2,7 @@ import { prisma } from '@/lib/db'
 import Link from 'next/link'
 import clsx from 'clsx'
 import { OrderStatus } from '@/generated/prisma/client'
+import DeleteOrderButton from './DeleteOrderButton'
 
 const statusLabels: Record<OrderStatus, string> = {
   PENDING_PAYMENT: 'Oczekuje na płatność',
@@ -102,12 +103,13 @@ export default async function OrdersPage({ searchParams }: PageProps) {
                 <th className="px-4 py-3 text-right text-xs font-medium text-gray-500 uppercase">Kwota brutto</th>
                 <th className="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">Status</th>
                 <th className="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">Płatność</th>
+                <th className="px-4 py-3 w-10"></th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-100">
               {orders.length === 0 ? (
                 <tr>
-                  <td colSpan={6} className="px-4 py-12 text-center text-gray-500">
+                  <td colSpan={7} className="px-4 py-12 text-center text-gray-500">
                     Brak zamówień
                   </td>
                 </tr>
@@ -136,6 +138,9 @@ export default async function OrdersPage({ searchParams }: PageProps) {
                     </td>
                     <td className="px-4 py-3 text-center text-sm text-gray-600">
                       {order.paymentMethod === 'ONLINE' ? 'Stripe' : 'Proforma'}
+                    </td>
+                    <td className="px-4 py-3 text-center">
+                      <DeleteOrderButton orderId={order.id} orderNumber={order.orderNumber} />
                     </td>
                   </tr>
                 ))
