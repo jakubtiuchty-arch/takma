@@ -4086,7 +4086,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'honeywell-pc45d',
     name: 'Drukarka etykiet Honeywell PC45d',
     shortDescription: 'Drukarka Honeywell PC45d — drukarka biurkowa termiczna 4" z ekranem LCD 3,5" i Wi-Fi 6, następca PC42d/PC43d',
-    seoTitle: 'Drukarka etykiet Honeywell PC45d | Drukarka biurkowa termiczna PC45d',
+    seoTitle: 'Drukarka etykiet Honeywell PC45d | Biurkowa drukarka termiczna',
     seoDescription: 'Drukarka etykiet Honeywell PC45d — drukarka biurkowa Honeywell PC45d, drukarka termiczna Honeywell PC45d 4" z ekranem LCD 3,5", Wi-Fi 6, Bluetooth 5.2, 203 dpi, do 203 mm/s. PC45d Honeywell — następca PC42d i PC43d. Drukarka Honeywell biurkowa od 1 518 zł netto. Warianty USB, BT+WiFi, linerless.',
     description: `Dla kogo? Honeywell PC45d to biurkowa drukarka termiczna przeznaczona dla magazynów, centrów logistycznych, punktów sprzedaży (POS), aptek i zakładów produkcyjnych, które potrzebują kompaktowego urządzenia do druku etykiet wysyłkowych, cenowych, kodów kreskowych i etykiet produktowych bez konieczności stosowania taśm barwiących (ribbonów).
 
