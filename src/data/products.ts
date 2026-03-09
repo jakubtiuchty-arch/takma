@@ -6968,17 +6968,19 @@ Emulacja wielu języków — PM65 obsługuje ZSim2 (emulacja ZPL-II), DPL, IPL, 
 
 Kluczowa przewaga — całkowicie metalowa obudowa i magnetyczna technologia QuickMount wyróżniają PX45 na tle konkurencji. Wymiana głowicy trwa około 30 sekund bez narzędzi, co minimalizuje przestoje serwisowe. PX45 obsługuje rozdzielczości 203, 300 i 406 dpi — wariant 406 dpi idealny do mikro-etykiet farmaceutycznych i oznaczeń komponentów elektronicznych.
 
-Inteligentny druk — PX45 może hostować standalone aplikacje w C# i Fingerprint, eliminując potrzebę zewnętrznego PC. Obsługuje emulacje ZSim2 (ZPL-II), DPL, IPL, Fingerprint i Direct Protocol — migracja z drukarek Zebra, Datamax czy Intermec nie wymaga przepisywania szablonów etykiet.
+Zastosowania — etykiety produktowe i logistyczne na liniach pakowania, etykiety wysyłkowe GS1-128/SSCC w centrach dystrybucyjnych, oznakowanie komponentów i PCB w przemyśle elektronicznym (406 dpi), etykiety GHS na pojemniki z chemikaliami, etykiety na opony i części samochodowe w branży automotive, etykiety identyfikacyjne na produkty spożywcze i farmaceutyczne zgodne z regulacjami FDA.
+
+Inteligentny druk — PX45 może hostować standalone aplikacje w C# i Fingerprint, eliminując potrzebę zewnętrznego PC. Obsługuje emulacje ZSim2 (ZPL-II), DPL, IPL, Fingerprint, Direct Protocol, XML i PDF — migracja z drukarek Zebra, Datamax czy Intermec nie wymaga przepisywania szablonów etykiet. Platforma Honeywell Operational Intelligence umożliwia zdalne zarządzanie flotą drukarek z poziomu przeglądarki.
 
 Pełna specyfikacja techniczna zgodna z oficjalną kartą katalogową Honeywell ([źródło](https://automation.honeywell.com/us/en/products/productivity-solutions/printers/industrial-printers/px45-industrial-printer)).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'honeywell',
     priceFrom: 10508.30,
-    images: ['/images/products/PX45_1.png', '/images/products/PX45_2.png', '/images/products/PX45_3.png'],
+    images: ['/images/products/PX45_2.png', '/images/products/PX45_1.png', '/images/products/PX45_3.png'],
     imageDescriptions: [
-      'Honeywell PX45 — drukarka przemysłowa premium, widok z przodu z wyświetlaczem LCD i klawiaturą',
       'Honeywell PX45 — widok z boku, metalowa obudowa i mechanizm druku',
+      'Honeywell PX45 — drukarka przemysłowa premium, widok z przodu z wyświetlaczem LCD i klawiaturą',
       'Honeywell PX45 — widok z otwartą pokrywą, magnetyczna głowica QuickMount',
     ],
     tags: ['magazyn', 'logistyka', 'produkcja'] as ProductTag[],
