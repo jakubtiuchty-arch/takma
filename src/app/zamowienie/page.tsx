@@ -16,6 +16,7 @@ import {
 } from '@/components/ui/Icons'
 import { useCartStore, type CartItem } from '@/store/cartStore'
 import { products, type Product } from '@/data/products'
+import { createCheckoutSession, createProformaOrder } from '@/actions/checkout'
 
 // ── Typy ────────────────────────────────────────────────────────
 
@@ -147,10 +148,19 @@ export default function CheckoutPage() {
   })
 
   const [errors, setErrors] = useState<FormErrors>({})
+  const [submitError, setSubmitError] = useState('')
 
   useEffect(() => {
     setMounted(true)
     document.title = 'Zamówienie | TAKMA'
+
+    // Obsługa powrotu ze Stripe po anulowaniu płatności
+    const params = new URLSearchParams(window.location.search)
+    if (params.get('cancelled') === 'true') {
+      setSubmitError('Płatność została anulowana. Możesz spróbować ponownie lub wybrać płatność pro forma.')
+      // Wyczyść parametr z URL
+      window.history.replaceState({}, '', '/zamowienie')
+    }
   }, [])
 
   // ── Ceny (dynamiczne, jak w drawerze) ─────────────────────────
@@ -282,20 +292,46 @@ export default function CheckoutPage() {
     }
 
     setIsSubmitting(true)
-
-    const now = new Date()
-    const generatedOrderNumber = [
-      now.getFullYear(),
-      String(now.getMonth() + 1).padStart(2, '0'),
-      String(now.getDate()).padStart(2, '0'),
-      String(now.getHours()).padStart(2, '0'),
-      String(now.getMinutes()).padStart(2, '0'),
-      String(now.getSeconds()).padStart(2, '0'),
-    ].join('')
+    setSubmitError('')
 
     try {
+      // Build checkout items from cart
+      const checkoutItems = items.map((item) => ({
+        productId: item.productId,
+        productName: item.productName,
+        productSlug: item.productSlug,
+        partNumber: item.partNumber || '',
+        quantity: item.quantity,
+        priceNetto: itemPrices.get(item.productId) ?? 0,
+        image: item.productImage,
+        note: item.note || undefined,
+      }))
+
+      const customerData = {
+        email: formData.email,
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        company: formData.company,
+        nip: formData.nip || undefined,
+        phone: formData.phone,
+        address: formData.street,
+        postalCode: formData.postalCode,
+        city: formData.city,
+        shippingAddress: formData.differentShipping
+          ? `${formData.shippingStreet}, ${formData.shippingPostalCode} ${formData.shippingCity}`
+          : undefined,
+      }
+
       if (formData.paymentMethod === 'proforma') {
-        // Generuj pro formę HTML i otwórz w nowym oknie
+        // 1. Save order to database
+        const result = await createProformaOrder(
+          checkoutItems,
+          customerData,
+          shippingNetto,
+          formData.notes || undefined
+        )
+
+        // 2. Generate proforma HTML and open in new tab
         const proformaItems = items.map((item) => ({
           productName: item.productName,
           partNumber: item.partNumber,
@@ -323,7 +359,7 @@ export default function CheckoutPage() {
             shippingNetto,
             vatAmount,
             totalBrutto,
-            orderNumber: generatedOrderNumber,
+            orderNumber: result.orderNumber,
             notes: formData.notes || undefined,
           }),
         })
@@ -334,18 +370,34 @@ export default function CheckoutPage() {
         const blob = new Blob([html], { type: 'text/html' })
         const blobUrl = URL.createObjectURL(blob)
         window.open(blobUrl, '_blank')
-      } else {
-        // TODO: Integracja ze Stripe
-        await new Promise((resolve) => setTimeout(resolve, 1500))
-      }
 
-      setOrderNumber(generatedOrderNumber)
-      setIsSubmitting(false)
-      setIsSuccess(true)
-      clearAll()
-      window.scrollTo({ top: 0, behavior: 'instant' })
+        setOrderNumber(result.orderNumber)
+        setIsSubmitting(false)
+        setIsSuccess(true)
+        clearAll()
+        window.scrollTo({ top: 0, behavior: 'instant' })
+      } else {
+        // Online payment — Stripe
+        const result = await createCheckoutSession(
+          checkoutItems,
+          customerData,
+          shippingNetto,
+          formData.notes || undefined
+        )
+
+        // Clear cart before redirecting to Stripe
+        clearAll()
+
+        // Redirect to Stripe Checkout
+        window.location.href = result.url
+      }
     } catch (error) {
       console.error('Checkout error:', error)
+      setSubmitError(
+        error instanceof Error
+          ? error.message
+          : 'Wystąpił błąd podczas składania zamówienia. Spróbuj ponownie.'
+      )
       setIsSubmitting(false)
     }
   }
@@ -821,6 +873,11 @@ export default function CheckoutPage() {
                 onChange={(e) => { setFormData((prev) => ({ ...prev, consent: e.target.checked })); if (errors.consent) { setErrors((prev) => ({ ...prev, consent: undefined })) } }}
                 error={errors.consent}
               />
+              {submitError && (
+                <div className="bg-red-50 border border-red-200 rounded-lg p-3 text-sm text-red-700">
+                  {submitError}
+                </div>
+              )}
               <Button type="submit" fullWidth size="lg" isLoading={isSubmitting} disabled={items.length === 0}>
                 {formData.paymentMethod === 'online' ? `Zapłać ${formatPrice(totalBrutto)} zl` : `Złóż zamówienie (${formatPrice(totalBrutto)} zl)`}
               </Button>

@@ -72,6 +72,7 @@ interface CreateOrderInput {
     ingramPrice?: number // raw Ingram price PLN
   }[]
   paymentMethod: 'ONLINE' | 'PROFORMA'
+  shippingNetto?: number // PLN (not grosze)
   customerNotes?: string
 }
 
@@ -82,8 +83,9 @@ export async function createOrder(input: CreateOrderInput) {
   const subtotalNetto = input.items.reduce((sum, item) =>
     sum + Math.round(item.priceNetto * 100) * item.quantity, 0
   )
-  const vatAmount = Math.round(subtotalNetto * 0.23)
-  const totalBrutto = subtotalNetto + vatAmount
+  const shippingNettoGrosze = Math.round((input.shippingNetto ?? 0) * 100)
+  const vatAmount = Math.round((subtotalNetto + shippingNettoGrosze) * 0.23)
+  const totalBrutto = subtotalNetto + shippingNettoGrosze + vatAmount
 
   const order = await prisma.order.create({
     data: {
@@ -92,6 +94,7 @@ export async function createOrder(input: CreateOrderInput) {
       customerId: customer.id,
       subtotalNetto,
       vatAmount,
+      shippingNetto: shippingNettoGrosze,
       totalBrutto,
       paymentMethod: input.paymentMethod as PaymentMethod,
       customerNotes: input.customerNotes,

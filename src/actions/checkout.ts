@@ -1,6 +1,5 @@
 'use server'
 
-import { redirect } from 'next/navigation'
 import { stripe, toStripeAmount } from '@/lib/stripe'
 import { createOrder } from '@/lib/orders'
 
@@ -31,8 +30,13 @@ interface CustomerData {
 export async function createCheckoutSession(
   items: CheckoutItem[],
   customer: CustomerData,
+  shippingNetto: number,
   notes?: string
-) {
+): Promise<{ url: string; orderNumber: string }> {
+  if (!stripe) {
+    throw new Error('Stripe nie jest skonfigurowany. Skontaktuj się z obsługą.')
+  }
+
   // 1. Create order in DB with status PENDING_PAYMENT
   const order = await createOrder({
     customer: {
@@ -54,11 +58,20 @@ export async function createCheckoutSession(
       note: item.note,
     })),
     paymentMethod: 'ONLINE',
+    shippingNetto,
     customerNotes: notes,
   })
 
   // 2. Build Stripe line items
-  const lineItems = items.map(item => ({
+  const lineItems: Array<{
+    price_data: {
+      currency: string
+      product_data: { name: string; metadata?: Record<string, string>; images?: string[] }
+      unit_amount: number
+      tax_behavior: 'exclusive'
+    }
+    quantity: number
+  }> = items.map(item => ({
     price_data: {
       currency: 'pln',
       product_data: {
@@ -71,6 +84,19 @@ export async function createCheckoutSession(
     },
     quantity: item.quantity,
   }))
+
+  // Add shipping line item
+  if (shippingNetto > 0) {
+    lineItems.push({
+      price_data: {
+        currency: 'pln',
+        product_data: { name: 'Dostawa kurierska' },
+        unit_amount: toStripeAmount(shippingNetto),
+        tax_behavior: 'exclusive' as const,
+      },
+      quantity: 1,
+    })
+  }
 
   // 3. Create Stripe Checkout Session
   const session = await stripe.checkout.sessions.create({
@@ -106,15 +132,16 @@ export async function createCheckoutSession(
     data: { stripeSessionId: session.id },
   })
 
-  // 5. Redirect to Stripe
-  redirect(session.url!)
+  // 5. Return URL for client-side redirect
+  return { url: session.url!, orderNumber: order.orderNumber }
 }
 
 export async function createProformaOrder(
   items: CheckoutItem[],
   customer: CustomerData,
+  shippingNetto: number,
   notes?: string
-) {
+): Promise<{ orderNumber: string }> {
   // 1. Create order in DB with status AWAITING_PAYMENT
   const order = await createOrder({
     customer: {
@@ -136,18 +163,9 @@ export async function createProformaOrder(
       note: item.note,
     })),
     paymentMethod: 'PROFORMA',
+    shippingNetto,
     customerNotes: notes,
   })
-
-  // TODO: Generate pro forma PDF
-  // const pdfBuffer = await generateProformaPDF(order)
-  // Upload PDF, update order.proformaUrl
-
-  // TODO: Send proforma email
-  // await sendProformaEmail(customer.email, order.orderNumber, pdfBuffer)
-
-  // TODO: Send admin notification
-  // await sendAdminNotification(order.orderNumber, customer.email, order.totalBrutto / 100, 'PROFORMA')
 
   return { orderNumber: order.orderNumber }
 }
