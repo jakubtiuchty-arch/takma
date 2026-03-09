@@ -96,6 +96,11 @@ export async function middleware(request: NextRequest) {
       'honeywell-pm45-glowica-203dpi', 'honeywell-pm45-glowica-300dpi',
       'honeywell-pm45-glowica-406dpi', 'honeywell-pm45-glowica-600dpi',
       'honeywell-pm45-walek-dociskowy', 'honeywell-pm45-odklejak', 'honeywell-pm45-nawijak',
+      'honeywell-pm45-gilotyna', 'honeywell-pm45-modul-rfid',
+      'honeywell-pm45-prowadnica-mediow', 'honeywell-pm45-skladany-rdzen',
+      'honeywell-pm45-adapter-rdzeni', 'honeywell-pm45-modul-wifi-bt',
+      'honeywell-pm45-interfejs-aplikatora', 'honeywell-pm45-interfejs-przemyslowy',
+      'honeywell-pm45c-odklejak-kit', 'honeywell-pm45c-mega-door-kit',
       // Skanery
       'zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds8178', 'zebra-li2208',
       'zebra-ds3608-xr', 'zebra-ds3608-sr', 'zebra-ds3608-hd', 'zebra-ds3608-hp',
