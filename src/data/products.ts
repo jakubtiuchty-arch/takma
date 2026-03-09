@@ -6749,13 +6749,13 @@ Specyfikacja zgodna z oficjalną kartą katalogową Honeywell PM45/PM45C (źród
     slug: 'honeywell-pm65',
     name: 'Honeywell PM65',
     shortDescription: 'Honeywell PM65 — przemysłowa drukarka etykiet 6″, do 300 mm/s, Wi-Fi 6, BT 5.2, Printer Edge',
-    description: `**Dla kogo?** Honeywell PM65 to 6-calowa drukarka przemysłowa zaprojektowana dla centrów dystrybucji, operatorów logistycznych 3PL i linii produkcyjnych, gdzie wymagane jest drukowanie szerokich etykiet paletowych GS1-128/SSCC, etykiet GHS na pojemniki z chemikaliami oraz oznaczeń kartonów zbiorczych do 178 mm szerokości.
+    description: `Dla kogo? Honeywell PM65 to 6-calowa drukarka przemysłowa zaprojektowana dla centrów dystrybucji, operatorów logistycznych 3PL i linii produkcyjnych, gdzie wymagane jest drukowanie szerokich etykiet paletowych GS1-128/SSCC, etykiet GHS na pojemniki z chemikaliami oraz oznaczeń kartonów zbiorczych do 178 mm szerokości.
 
-**Kluczowa przewaga:** PM65 to najnowsza generacja 6-calowych drukarek Honeywell z platformą Printer Edge do zdalnego zarządzania flotą, Wi-Fi 6 (802.11ax) i Bluetooth 5.2. Całkowicie metalowy mechanizm druku zapewnia niezawodność w trybie pracy ciągłej, a beznarzędziowa wymiana głowicy i wałka minimalizuje przestoje serwisowe na linii produkcyjnej.
+Kluczowa przewaga — PM65 to najnowsza generacja 6-calowych drukarek Honeywell z platformą Printer Edge do zdalnego zarządzania flotą, Wi-Fi 6 (802.11ax) i Bluetooth 5.2. Całkowicie metalowy mechanizm druku zapewnia niezawodność w trybie pracy ciągłej, a beznarzędziowa wymiana głowicy i wałka minimalizuje przestoje serwisowe na linii produkcyjnej.
 
-**Zastosowania:** Etykiety paletowe i logistyczne SSCC/GS1-128 w centrach dystrybucyjnych, oznakowanie kartonów zbiorczych i kontenerów, etykiety GHS na beczki i pojemniki z substancjami chemicznymi, szerokie etykiety wysyłkowe w branży e-commerce i 3PL, etykiety identyfikacyjne na duże komponenty w przemyśle automotive i elektronicznym, etykiety RFID UHF na palety i zasoby.
+Zastosowania — etykiety paletowe i logistyczne SSCC/GS1-128 w centrach dystrybucyjnych, oznakowanie kartonów zbiorczych i kontenerów, etykiety GHS na beczki i pojemniki z substancjami chemicznymi, szerokie etykiety wysyłkowe w branży e-commerce i 3PL, etykiety identyfikacyjne na duże komponenty w przemyśle automotive i elektronicznym, etykiety RFID UHF na palety i zasoby.
 
-**Emulacja wielu języków:** PM65 obsługuje ZSim2 (emulacja ZPL-II), DPL, IPL, Fingerprint, Direct Protocol, C# Smart Printing, XML i PDF — migracja z Zebra, Datamax czy Intermec nie wymaga przepisywania szablonów etykiet. Pełna specyfikacja zgodna z oficjalną kartą katalogową Honeywell ([źródło](https://automation.honeywell.com/us/en/products/productivity-solutions/printers/industrial-printers/pm65-industrial-printer)).`,
+Emulacja wielu języków — PM65 obsługuje ZSim2 (emulacja ZPL-II), DPL, IPL, Fingerprint, Direct Protocol, C# Smart Printing, XML i PDF — migracja z Zebra, Datamax czy Intermec nie wymaga przepisywania szablonów etykiet. Pełna specyfikacja zgodna z oficjalną kartą katalogową Honeywell ([źródło](https://automation.honeywell.com/us/en/products/productivity-solutions/printers/industrial-printers/pm65-industrial-printer)).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'honeywell',
