@@ -89,6 +89,9 @@ export async function middleware(request: NextRequest) {
       'honeywell-glowica-203dpi-pc45', 'honeywell-glowica-300dpi-pc45',
       'honeywell-walek-dociskowy-pc45d', 'honeywell-odklejak-pc45d', 'honeywell-gilotyna-pc45d',
       'honeywell-walek-dociskowy-pc45t', 'honeywell-odklejak-pc45t', 'honeywell-gilotyna-pc45t',
+      'honeywell-pc42e-t',
+      'honeywell-glowica-203dpi-pc42e-t', 'honeywell-glowica-300dpi-pc42e-t',
+      'honeywell-walek-dociskowy-pc42e-t', 'honeywell-odklejak-pc42e-t', 'honeywell-gilotyna-pc42e-t',
       // Skanery
       'zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds8178', 'zebra-li2208',
       'zebra-ds3608-xr', 'zebra-ds3608-sr', 'zebra-ds3608-hd', 'zebra-ds3608-hp',
