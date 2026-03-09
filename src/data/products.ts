@@ -6773,6 +6773,9 @@ Emulacja wielu języków — PM65 obsługuje ZSim2 (emulacja ZPL-II), DPL, IPL, 
       szerokoscDruku: '167,4 mm (6,59″)',
       szerokoscEtykiet: '50,8–178 mm',
     },
+    variantAttributeTooltips: {
+      'Druk': 'TT+DT — druk termotransferowy (z taśmą ribbon) i termiczny bezpośredni. Tylko DT — wyłącznie druk termiczny (bez taśmy), tańszy w eksploatacji, ale wydruk mniej trwały.',
+    },
     seoTitle: 'Honeywell PM65 — drukarka przemysłowa 6″ | Cena, warianty, specyfikacja',
     seoDescription: 'Honeywell PM65 — 6-calowa drukarka przemysłowa do etykiet paletowych GS1, GHS. Do 300 mm/s, Wi-Fi 6, BT 5.2, RFID opcja, emulacja ZPL. Ceny od 5 554 zł netto. 14 wariantów.',
     variants: [
