@@ -22,7 +22,7 @@ const nextConfig = {
           { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
           { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
           { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
-          { key: 'Content-Security-Policy', value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://lib.onet.pl https://*.posthog.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.posthog.com https://challenges.cloudflare.com https://va.vercel-scripts.com; frame-src https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'" },
+          { key: 'Content-Security-Policy', value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://lib.onet.pl https://*.posthog.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.posthog.com https://challenges.cloudflare.com https://va.vercel-scripts.com; frame-src https://challenges.cloudflare.com https://play.vidyard.com; object-src 'none'; base-uri 'self'" },
           { key: 'X-Permitted-Cross-Domain-Policies', value: 'none' },
         ],
       },
