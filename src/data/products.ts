@@ -7560,7 +7560,7 @@ Pełną dokumentację techniczną, przewodniki konfiguracji i materiały eksploa
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: '/downloads/sps-ppr-px940-industrial-printer-data-sheet-en-a4.pdf', size: 'PDF, 273 KB' },
       { name: 'Quick Start Guide (EN)', type: 'manual', url: '/downloads/sps-ppr-px940-quick-start-guide.pdf', size: 'PDF, 7,5 MB' },
     ],
-    relatedProducts: ['honeywell-px45', 'honeywell-px65', 'zebra-zt610', 'honeywell-pm45', 'honeywell-pm65'],
+    relatedProducts: ['honeywell-px45', 'zebra-zt610', 'honeywell-pm45', 'zebra-zt411', 'honeywell-pd45s'],
     createdAt: '2026-03-10',
     updatedAt: '2026-03-10',
     sameAs: 'https://automation.honeywell.com/us/en/products/productivity-solutions/printers/industrial-printers/px940-industrial-printer',
