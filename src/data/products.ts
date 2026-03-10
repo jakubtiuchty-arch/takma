@@ -9872,7 +9872,7 @@ Platforma Honeywell Printer Edge umożliwia zdalne zarządzanie flotą drukarek 
     downloads: [
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: '/datasheets/honeywell-rpf-datasheet.pdf', size: 'PDF' },
     ],
-    relatedProducts: ['honeywell-rp4f', 'zebra-zq310-plus', 'zebra-zq610-plus', 'zebra-zq220-plus'],
+    relatedProducts: ['zebra-zq310-plus', 'zebra-zq610-plus', 'zebra-zq220-plus', 'zebra-zq210'],
     createdAt: '2026-03-10',
     updatedAt: '2026-03-10',
     sameAs: 'https://automation.honeywell.com/us/en/products/productivity-solutions/printers/mobile-printers/rp2f-mobile-printer',
@@ -9968,7 +9968,7 @@ Natywna obsługa ZPL II (ZSim2), CPCL, DPL i IPL eliminuje koszty migracji z dru
     downloads: [
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: '/datasheets/honeywell-rpf-datasheet.pdf', size: 'PDF' },
     ],
-    relatedProducts: ['honeywell-rp2f', 'zebra-zq620-plus', 'zebra-zq630-plus', 'zebra-zq511'],
+    relatedProducts: ['zebra-zq630-plus', 'zebra-zq521'],
     createdAt: '2026-03-10',
     updatedAt: '2026-03-10',
     sameAs: 'https://automation.honeywell.com/us/en/products/productivity-solutions/printers/mobile-printers/rp4f-mobile-printer',
