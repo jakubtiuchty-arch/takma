@@ -9,6 +9,26 @@ const availabilityMap: Record<string, number> = {
   'on-order': 3,
 }
 
+// GPSR — EU responsible person per manufacturer
+const gpsr: Record<string, { responsible: string; safety: string }> = {
+  zebra: {
+    responsible: 'Zebra Technologies Europe Limited, Dukes Meadow, Millboard Road, Bourne End, Buckinghamshire SL8 5XF, United Kingdom, contact.emea@zebra.com',
+    safety: 'Produkt zgodny z dyrektywami UE. Certyfikaty: CE, FCC, RoHS. Deklaracja zgodności dostępna na stronie producenta zebra.com.',
+  },
+  honeywell: {
+    responsible: 'Honeywell International s.r.o., V Parku 2326/18, 148 00 Praha 4, Czech Republic, www.honeywell.com',
+    safety: 'Produkt zgodny z dyrektywami UE. Certyfikaty: CE, FCC, RoHS, cUL. Deklaracja zgodności dostępna na stronie producenta honeywell.com.',
+  },
+  datalogic: {
+    responsible: 'Datalogic S.p.A., Via Candini 2, 40012 Lippo di Calderara di Reno (BO), Italy, corporate.communication@datalogic.com',
+    safety: 'Produkt zgodny z dyrektywami UE. Certyfikaty: CE, FCC, RoHS. Deklaracja zgodności dostępna na stronie producenta datalogic.com.',
+  },
+  newland: {
+    responsible: 'Newland EMEA BV, Rolweg 25, 4104 AV Culemborg, The Netherlands, info@newland-id.com',
+    safety: 'Produkt zgodny z dyrektywami UE. Certyfikaty: CE, FCC, RoHS. Deklaracja zgodności dostępna na stronie producenta newland-id.com.',
+  },
+}
+
 function cdata(str: string): string {
   return `<![CDATA[${str.replace(/]]>/g, ']]]]><![CDATA[>')}]]>`
 }
@@ -26,7 +46,6 @@ function getCategoryPath(categoryId: string, subcategoryIds?: string[]): string 
   if (!category) return ''
 
   if (subcategoryIds?.length) {
-    // Use first non-accessory subcategory for path
     const sub = subcategoryIds
       .map(id => getSubcategoryById(id))
       .find(s => s && !s.id.startsWith('akcesoria'))
@@ -43,13 +62,24 @@ function getWeight(specs: Array<{ name: string; value: string }>): string | null
   const value = parseFloat(weightSpec.value.replace(',', '.'))
   if (isNaN(value)) return null
 
-  // Convert to kg if in grams
   if (weightSpec.value.includes('kg')) return value.toFixed(2)
   return (value / 1000).toFixed(2)
 }
 
 function stripMarkdown(text: string): string {
   return text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+}
+
+/** Truncate description to max chars, respecting word boundaries */
+function truncateDesc(text: string, max: number): string {
+  if (text.length <= max) return text
+  const cut = text.lastIndexOf(' ', max)
+  return (cut > 0 ? text.slice(0, cut) : text.slice(0, max)) + '...'
+}
+
+function getCertificates(specs: Array<{ name: string; value: string }>): string {
+  const certSpec = specs.find(s => s.name === 'Certyfikaty' || s.name === 'Normy')
+  return certSpec?.value || ''
 }
 
 function buildOffer(opts: {
@@ -63,7 +93,10 @@ function buildOffer(opts: {
   desc: string
   images: string[]
   manufacturer: string
+  manufacturerId: string
   partNumber: string
+  ean?: string
+  certs: string
 }): string {
   const weightAttr = opts.weight ? ` weight="${opts.weight}"` : ''
   const lines = [
@@ -87,6 +120,22 @@ function buildOffer(opts: {
   lines.push('    <attrs>')
   lines.push(`      <a name="Producent">${cdata(opts.manufacturer)}</a>`)
   lines.push(`      <a name="Part Number">${cdata(opts.partNumber)}</a>`)
+
+  // EAN
+  if (opts.ean) {
+    lines.push(`      <a name="EAN">${cdata(opts.ean)}</a>`)
+  }
+
+  // GPSR — Producent odpowiedzialny
+  const gpsrData = gpsr[opts.manufacturerId]
+  if (gpsrData) {
+    lines.push(`      <a name="Producent odpowiedzialny">${cdata(gpsrData.responsible)}</a>`)
+    const safetyInfo = opts.certs
+      ? `Produkt zgodny z dyrektywami UE. Certyfikaty: ${opts.certs}. Deklaracja zgodności dostępna na stronie producenta.`
+      : gpsrData.safety
+    lines.push(`      <a name="Informacje o bezpieczeństwie">${cdata(safetyInfo)}</a>`)
+  }
+
   lines.push('    </attrs>')
 
   lines.push('  </o>')
@@ -103,7 +152,16 @@ export async function GET() {
     const link = `${SITE_URL}/produkt/${product.slug}`
     const cat = getCategoryPath(product.categoryId, product.subcategoryIds)
     const weight = getWeight(product.specifications)
-    const desc = stripMarkdown(product.shortDescription)
+    const certs = getCertificates(product.specifications)
+
+    // Full description: description (stripped of markdown) > shortDescription fallback
+    const fullDesc = product.description
+      ? truncateDesc(stripMarkdown(product.description), 5000)
+      : stripMarkdown(product.shortDescription)
+
+    // EAN from specifications if available
+    const eanSpec = product.specifications.find(s => s.name === 'EAN' || s.name === 'GTIN')
+    const ean = eanSpec?.value
 
     // Skip products without images or prices
     if (imageLinks.length === 0 || !product.priceFrom || product.priceFrom <= 0) continue
@@ -127,10 +185,13 @@ export async function GET() {
             weight,
             cat,
             name: `${product.name} — ${variant.name}`,
-            desc,
+            desc: fullDesc,
             images: imageLinks,
             manufacturer: brand,
+            manufacturerId: product.manufacturerId,
             partNumber: variant.partNumber,
+            ean,
+            certs,
           })
         )
       }
@@ -146,10 +207,13 @@ export async function GET() {
           weight,
           cat,
           name: product.name,
-          desc,
+          desc: fullDesc,
           images: imageLinks,
           manufacturer: brand,
-          partNumber: product.id,
+          manufacturerId: product.manufacturerId,
+          partNumber: product.specifications.find(s => s.name === 'Part Number')?.value || product.id,
+          ean,
+          certs,
         })
       )
     }
