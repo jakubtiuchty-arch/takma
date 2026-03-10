@@ -143,6 +143,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
   const relatedSoftware = allRelated.filter((p) => p!.categoryId === 'oprogramowanie')
   const relatedAccessories = allRelated.filter((p) => !p!.subcategoryIds?.includes('karty-pcv') && p!.categoryId !== 'oprogramowanie')
 
+  // Podobne drukarki (relatedProducts)
+  const relatedProductsList = (product.relatedProducts || [])
+    .map((id) => products.find((p) => p.id === id))
+    .filter(Boolean)
+
   const isDevice = ['drukarki-etykiet', 'drukarki-kart', 'drukarki-opasek', 'terminale-mobilne', 'skanery-kodow-kreskowych', 'tablety'].includes(product.categoryId)
 
   // JSON-LD: Product schema
@@ -614,6 +619,14 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   {isDevice ? 'Akcesoria' : 'Powiązane produkty'}
                 </a>
               )}
+              {relatedProductsList.length > 0 && (
+                <a
+                  href="#podobne-drukarki"
+                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                >
+                  Podobne drukarki
+                </a>
+              )}
             </nav>
           </div>
 
@@ -875,6 +888,16 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 products={relatedAccessories as typeof products}
                 initialLimit={4}
                 showDualButtons
+              />
+            )}
+
+            {/* Podobne drukarki */}
+            {relatedProductsList.length > 0 && (
+              <RelatedProducts
+                id="podobne-drukarki"
+                title="Podobne drukarki"
+                products={relatedProductsList as typeof products}
+                initialLimit={4}
               />
             )}
           </div>
