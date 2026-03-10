@@ -469,177 +469,6 @@ export const subcategories: Subcategory[] = [
     productIds: ['zebra-ribbon-02300gs08407','zebra-ribbon-02300gs11007','zebra-ribbon-02300gs06407','zebra-ribbon-02300bk06030','zebra-ribbon-02300bk06045','zebra-ribbon-02300bk08330','zebra-ribbon-02300bk08345','zebra-ribbon-02300bk11030','zebra-ribbon-02300bk11045','zebra-ribbon-02100bk04045','zebra-ribbon-02100bk06045','zebra-ribbon-02100bk08045','zebra-ribbon-02100bk08945','zebra-ribbon-02100bk10245','zebra-ribbon-03200gs06407','zebra-ribbon-03200gs08407','zebra-ribbon-03200gs11007','zebra-ribbon-03200bk06030','zebra-ribbon-03200bk06045','zebra-ribbon-03400bk04045','zebra-ribbon-03400bk06045','zebra-ribbon-05095gs06407','zebra-ribbon-05095gs08407','zebra-ribbon-05095gs11007'],
     productCount: 24,
   },
-  // --- WAX model subcategories ---
-  {
-    id: 'tasmy-wax-2300',
-    slug: 'tasmy-2300-wax',
-    name: 'Taśmy woskowe Zebra 2300 Standard Wax',
-    parentCategoryId: 'materialy-eksploatacyjne',
-    parentSubcategoryId: 'tasmy-termotransferowe',
-    description: 'Zebra 2300 Standard Wax — najpopularniejsza taśma woskowa do standardowych etykiet papierowych',
-    seoTitle: 'Taśmy woskowe Zebra 2300 Standard Wax | Ribbon WAX',
-    seoDescription: 'Taśmy woskowe Zebra 2300 Standard Wax — bestseller w kategorii WAX. Formaty desktop (74 m) i industrial (300–450 m). Do etykiet papierowych powlekanych i niepowlekanych. BPA-free, halogen-free. Ceny netto od 5,80 zł.',
-    longDescription: 'Zebra 2300 Standard Wax to najpopularniejsza taśma woskowa na polskim rynku B2B. Formulacja na bazie wosku zapewnia wyraźny nadruk na standardowych etykietach papierowych — powlekanych i niepowlekanych. Dostępna w formatach desktop (rdzeń 12,7 mm / 0,5", nawój IN, 74 m) i industrial (rdzeń 25 mm / 1", nawój OUT, 300–450 m). Prędkość druku do 304 mm/s (12 ips). Certyfikaty: BPA-free, halogen-free, latex-free, FDA, REACH. Idealna do etykiet wysyłkowych, adresowych, magazynowych i logistycznych, gdzie nie jest wymagana odporność na chemikalia ani wilgoć.',
-    icon: 'tag',
-    productIds: ['zebra-ribbon-02300gs08407','zebra-ribbon-02300gs11007','zebra-ribbon-02300gs06407','zebra-ribbon-02300bk06030','zebra-ribbon-02300bk06045','zebra-ribbon-02300bk08330','zebra-ribbon-02300bk08345','zebra-ribbon-02300bk11030','zebra-ribbon-02300bk11045'],
-    productCount: 9,
-  },
-  {
-    id: 'tasmy-wax-2100',
-    slug: 'tasmy-2100-wax',
-    name: 'Taśmy woskowe Zebra 2100 High Performance Wax',
-    parentCategoryId: 'materialy-eksploatacyjne',
-    parentSubcategoryId: 'tasmy-termotransferowe',
-    description: 'Zebra 2100 High Performance Wax — wzmocniona żywicą taśma woskowa do szybkich drukarek przemysłowych',
-    seoTitle: 'Taśmy woskowe Zebra 2100 High Performance Wax | Ribbon WAX HP',
-    seoDescription: 'Taśmy woskowe Zebra 2100 High Performance Wax — wzmocniona formulacja żywicą. Prędkość do 355 mm/s (14 ips). Format industrial 450 m. Lepsza odporność na ścieranie. Ceny netto od 17,89 zł.',
-    longDescription: 'Zebra 2100 High Performance Wax to taśma woskowa wzmocniona żywicą — zapewnia lepszą odporność na ścieranie i wyższą prędkość druku (do 355 mm/s / 14 ips) w porównaniu do standardowej serii 2300. Formulacja o grubości 7,5 µm jest cieńsza niż 2300 (8,0 µm), co przekłada się na więcej metrów na rolce i niższy koszt per etykieta. Dostępna wyłącznie w formacie industrial (rdzeń 25 mm / 1", nawój OUT, 450 m). Idealna do zautomatyzowanych linii pakujących i dużych wolumenów w magazynach i centrach logistycznych.',
-    icon: 'tag',
-    productIds: ['zebra-ribbon-02100bk04045','zebra-ribbon-02100bk06045','zebra-ribbon-02100bk08045','zebra-ribbon-02100bk08945','zebra-ribbon-02100bk10245'],
-    productCount: 5,
-  },
-  {
-    id: 'tasmy-wax-1600',
-    slug: 'tasmy-1600-wax',
-    name: 'Taśmy woskowe Zebra 1600 Economy Wax',
-    parentCategoryId: 'materialy-eksploatacyjne',
-    parentSubcategoryId: 'tasmy-termotransferowe',
-    description: 'Zebra 1600 Economy Wax — ekonomiczna taśma woskowa do podstawowych zastosowań',
-    seoTitle: 'Taśmy woskowe Zebra 1600 Economy Wax | Ribbon WAX Economy',
-    seoDescription: 'Taśmy woskowe Zebra 1600 Economy Wax — najtańsza seria woskowa do etykiet papierowych. Ekonomiczne rozwiązanie do dużych wolumenów o niskich wymaganiach jakościowych.',
-    longDescription: 'Zebra 1600 Economy Wax to ekonomiczna taśma woskowa przeznaczona do podstawowych zastosowań etykietowania na etykietach papierowych niepowlekanych. Najniższy koszt per etykieta w portfolio Zebra — idealna do dużych wolumenów druku, gdzie priorytetem jest cena, a nie trwałość nadruku. Sprawdza się do etykiet tymczasowych, oznaczeń wewnętrznych i etykiet wysyłkowych o krótkim cyklu życia.',
-    icon: 'tag',
-    productIds: [],
-    productCount: 0,
-  },
-  {
-    id: 'tasmy-wax-5319',
-    slug: 'tasmy-5319-wax',
-    name: 'Taśmy woskowe Zebra 5319 Performance Wax',
-    parentCategoryId: 'materialy-eksploatacyjne',
-    parentSubcategoryId: 'tasmy-termotransferowe',
-    description: 'Zebra 5319 Performance Wax — taśma woskowa premium z szerokim zakresem kompatybilności',
-    seoTitle: 'Taśmy woskowe Zebra 5319 Performance Wax | Ribbon WAX Performance',
-    seoDescription: 'Taśmy woskowe Zebra 5319 Performance Wax — premium woskowa z szerokim zakresem kompatybilności materiałów. Dostępna w kolorach. Doskonała jakość druku kodów kreskowych.',
-    longDescription: 'Zebra 5319 Performance Wax to taśma woskowa klasy premium oferująca doskonałą jakość druku kodów kreskowych na szerokim zakresie materiałów papierowych. Wyróżnia się dostępnością w kolorach (nie tylko czarnym) — idealna do etykiet kolorowych, oznaczeń ostrzegawczych i brandingu. Szersza kompatybilność materiałowa niż seria 2300, z zachowaniem atrakcyjnej ceny.',
-    icon: 'tag',
-    productIds: [],
-    productCount: 0,
-  },
-  // --- WAX-RESIN model subcategories ---
-  {
-    id: 'tasmy-wax-resin-3200',
-    slug: 'tasmy-3200-wax-resin',
-    name: 'Taśmy woskowo-żywiczne Zebra 3200 Premium Wax/Resin',
-    parentCategoryId: 'materialy-eksploatacyjne',
-    parentSubcategoryId: 'tasmy-termotransferowe',
-    description: 'Zebra 3200 Premium Wax/Resin — uniwersalna taśma woskowo-żywiczna z certyfikatem UL',
-    seoTitle: 'Taśmy woskowo-żywiczne Zebra 3200 Premium Wax/Resin | Ribbon WAX/RESIN',
-    seoDescription: 'Taśmy woskowo-żywiczne Zebra 3200 Premium Wax/Resin z certyfikatem UL. Desktop (74 m) i industrial (300–450 m). Odporność na chemikalia, wilgoć i ścieranie. Ceny netto od 10,81 zł.',
-    longDescription: 'Zebra 3200 Premium Wax/Resin to najpopularniejsza taśma woskowo-żywiczna Zebra — złoty standard w aplikacjach wymagających odporności chemicznej. Certyfikat UL potwierdza trwałość nadruku w testach ścierania i ekspozycji na chemikalia — wymagany np. dla etykiet GHS na pojemnikach chemicznych. Grubość 7,0 µm, prędkość druku do 254 mm/s (10 ips). Dostępna w formatach desktop (rdzeń 12,7 mm, nawój IN, 74 m) i industrial (rdzeń 25 mm, nawój OUT, 300–450 m). Materiały docelowe: papier powlekany, syntetyki matowe.',
-    icon: 'tag',
-    productIds: ['zebra-ribbon-03200gs06407','zebra-ribbon-03200gs08407','zebra-ribbon-03200gs11007','zebra-ribbon-03200bk06030','zebra-ribbon-03200bk06045'],
-    productCount: 5,
-  },
-  {
-    id: 'tasmy-wax-resin-3300',
-    slug: 'tasmy-3300-wax-resin',
-    name: 'Taśmy woskowo-żywiczne Zebra 3300 Standard Wax/Resin',
-    parentCategoryId: 'materialy-eksploatacyjne',
-    parentSubcategoryId: 'tasmy-termotransferowe',
-    description: 'Zebra 3300 Standard Wax/Resin — uniwersalna taśma woskowo-żywiczna do szerokiego zakresu materiałów',
-    seoTitle: 'Taśmy woskowo-żywiczne Zebra 3300 Standard Wax/Resin | Ribbon WAX/RESIN',
-    seoDescription: 'Taśmy woskowo-żywiczne Zebra 3300 Standard Wax/Resin — uniwersalna do papieru powlekanego i syntetyków matowych. Doskonała jakość druku w standardowych zastosowaniach przemysłowych.',
-    longDescription: 'Zebra 3300 Standard Wax/Resin to uniwersalna taśma woskowo-żywiczna przeznaczona do druku na papierze powlekanym i syntetykach matowych. Zapewnia dobrą odporność na ścieranie i chemikalia w standardowych warunkach przemysłowych. Sprawdza się do etykiet produktowych, oznaczeń magazynowych i etykiet narażonych na wilgoć.',
-    icon: 'tag',
-    productIds: [],
-    productCount: 0,
-  },
-  {
-    id: 'tasmy-wax-resin-3400',
-    slug: 'tasmy-3400-wax-resin',
-    name: 'Taśmy woskowo-żywiczne Zebra 3400 High Performance Wax/Resin',
-    parentCategoryId: 'materialy-eksploatacyjne',
-    parentSubcategoryId: 'tasmy-termotransferowe',
-    description: 'Zebra 3400 High Performance Wax/Resin — najwyższa klasa woskowo-żywiczna do rotowanych kodów kreskowych',
-    seoTitle: 'Taśmy woskowo-żywiczne Zebra 3400 HP Wax/Resin | Ribbon WAX/RESIN HP',
-    seoDescription: 'Taśmy woskowo-żywiczne Zebra 3400 High Performance Wax/Resin — najwyższa klasa przemysłowa. Lepsza jakość rotowanych kodów kreskowych, certyfikat UL recognized. Format industrial 450 m.',
-    longDescription: 'Zebra 3400 High Performance Wax/Resin to taśma woskowo-żywiczna najwyższej klasy w portfolio Zebra. Oferuje lepszą jakość druku rotowanych kodów kreskowych (obróconych o 90°) niż seria 3200, co jest kluczowe w aplikacjach z drukowanymi kodami w orientacji pionowej. Certyfikat UL recognized. Grubość 7,0 µm, prędkość druku do 200 mm/s (8 ips). Dostępna wyłącznie w formacie industrial (rdzeń 25 mm, nawój OUT, 450 m). Materiały docelowe: papier powlekany, syntetyki matowe.',
-    icon: 'tag',
-    productIds: ['zebra-ribbon-03400bk04045','zebra-ribbon-03400bk06045'],
-    productCount: 2,
-  },
-  {
-    id: 'tasmy-wax-resin-5555',
-    slug: 'tasmy-5555-wax-resin',
-    name: 'Taśmy woskowo-żywiczne Zebra 5555 Enhanced Wax/Resin',
-    parentCategoryId: 'materialy-eksploatacyjne',
-    parentSubcategoryId: 'tasmy-termotransferowe',
-    description: 'Zebra 5555 Enhanced Wax/Resin — zaawansowana taśma woskowo-żywiczna do drukarek flat head i near-edge',
-    seoTitle: 'Taśmy woskowo-żywiczne Zebra 5555 Enhanced Wax/Resin | Ribbon WAX/RESIN',
-    seoDescription: 'Taśmy woskowo-żywiczne Zebra 5555 Enhanced Wax/Resin — zaawansowana formulacja do drukarek flat head i near-edge. Doskonała odporność na ścieranie i rozpuszczalniki.',
-    longDescription: 'Zebra 5555 Enhanced Wax/Resin to zaawansowana taśma woskowo-żywiczna zaprojektowana do pracy zarówno z drukarkami typu flat head, jak i near-edge. Oferuje doskonałą odporność na ścieranie, rozpuszczalniki i temperaturę. Idealna do zastosowań wymagających wyższej trwałości niż standardowa seria 3200, ale nie wymagających pełnej odporności chemicznej taśm żywicznych.',
-    icon: 'tag',
-    productIds: [],
-    productCount: 0,
-  },
-  // --- RESIN model subcategories ---
-  {
-    id: 'tasmy-resin-4800',
-    slug: 'tasmy-4800-resin',
-    name: 'Taśmy żywiczne Zebra 4800 Economy Resin',
-    parentCategoryId: 'materialy-eksploatacyjne',
-    parentSubcategoryId: 'tasmy-termotransferowe',
-    description: 'Zebra 4800 Economy Resin — ekonomiczna taśma żywiczna do podstawowych zastosowań na syntetykach',
-    seoTitle: 'Taśmy żywiczne Zebra 4800 Economy Resin | Ribbon RESIN Economy',
-    seoDescription: 'Taśmy żywiczne Zebra 4800 Economy Resin — najtańsza taśma żywiczna do etykiet syntetycznych PP, PE. Ekonomiczne rozwiązanie do trwałych oznaczeń na materiałach foliowych.',
-    longDescription: 'Zebra 4800 Economy Resin to ekonomiczna taśma żywiczna przeznaczona do druku na etykietach syntetycznych — polipropylen (PP) i polietylen (PE). Najniższy koszt wśród taśm żywicznych Zebra, zapewniając jednocześnie dobrą odporność na ścieranie i chemikalia. Sprawdza się do podstawowych oznaczeń na materiałach foliowych, gdzie wymagana jest trwałość nadruku, ale nie ekstremalna odporność chemiczna.',
-    icon: 'tag',
-    productIds: [],
-    productCount: 0,
-  },
-  {
-    id: 'tasmy-resin-5095',
-    slug: 'tasmy-5095-resin',
-    name: 'Taśmy żywiczne Zebra 5095 High Performance Resin',
-    parentCategoryId: 'materialy-eksploatacyjne',
-    parentSubcategoryId: 'tasmy-termotransferowe',
-    description: 'Zebra 5095 High Performance Resin — standard do etykiet GHS z certyfikatem UL/cUL',
-    seoTitle: 'Taśmy żywiczne Zebra 5095 High Performance Resin | Ribbon RESIN',
-    seoDescription: 'Taśmy żywiczne Zebra 5095 High Performance Resin z certyfikatem UL/cUL — standard do etykiet GHS. Desktop (74 m) i industrial. Na syntetyki PP, PE, PET. Ceny netto od 17,65 zł.',
-    longDescription: 'Zebra 5095 High Performance Resin to taśma żywiczna będąca standardem branżowym do druku etykiet GHS (Globally Harmonized System) na pojemnikach chemicznych. Certyfikat UL/cUL potwierdza trwałość nadruku w testach ekstremalnych — ścieranie, chemikalia, temperatura, promieniowanie UV. Grubość 6,5 µm, prędkość druku do 203 mm/s (8 ips). W połączeniu z etykietami Z-Ultimate 2500T zapewnia zgodność z normami BS5609 Part 2 i 3 (oznaczenia morskie). Materiały docelowe: syntetyki PP, PE, PET — matowe i błyszczące. Dostępna w formatach desktop (rdzeń 12,7 mm, nawój IN, 74 m) i industrial.',
-    icon: 'tag',
-    productIds: ['zebra-ribbon-05095gs06407','zebra-ribbon-05095gs08407','zebra-ribbon-05095gs11007'],
-    productCount: 3,
-  },
-  {
-    id: 'tasmy-resin-5100',
-    slug: 'tasmy-5100-resin',
-    name: 'Taśmy żywiczne Zebra 5100 Premium Resin',
-    parentCategoryId: 'materialy-eksploatacyjne',
-    parentSubcategoryId: 'tasmy-termotransferowe',
-    description: 'Zebra 5100 Premium Resin — premium taśma żywiczna o zwiększonej odporności chemicznej',
-    seoTitle: 'Taśmy żywiczne Zebra 5100 Premium Resin | Ribbon RESIN Premium',
-    seoDescription: 'Taśmy żywiczne Zebra 5100 Premium Resin — zwiększona odporność na chemikalia i temperaturę. Do etykiet syntetycznych w ekstremalnych warunkach. Tabliczki znamionowe, oznaczenia PCB.',
-    longDescription: 'Zebra 5100 Premium Resin to zaawansowana taśma żywiczna oferująca zwiększoną odporność chemiczną i temperaturową w porównaniu do serii 5095. Przeznaczona do etykiet syntetycznych (PP, PE, PET) w ekstremalnych warunkach — ekspozycja na agresywne chemikalia, wysokie temperatury i intensywne ścieranie mechaniczne. Idealna do tabliczek znamionowych, oznaczeń PCB, etykiet na kable i przewody oraz etykiet laboratoryjnych.',
-    icon: 'tag',
-    productIds: [],
-    productCount: 0,
-  },
-  {
-    id: 'tasmy-resin-chemresist',
-    slug: 'tasmy-chemresist-resin',
-    name: 'Taśmy żywiczne Zebra ChemResist Resin',
-    parentCategoryId: 'materialy-eksploatacyjne',
-    parentSubcategoryId: 'tasmy-termotransferowe',
-    description: 'Zebra ChemResist Resin — ekstremalna odporność chemiczna do oznaczeń GHS i laboratoryjnych',
-    seoTitle: 'Taśmy żywiczne Zebra ChemResist Resin | Ribbon chemicznie odporny',
-    seoDescription: 'Taśmy żywiczne Zebra ChemResist Resin — maksymalna odporność na chemikalia, rozpuszczalniki i kwasy. Do etykiet GHS, laboratoryjnych i oznaczeń chemicznych.',
-    longDescription: 'Zebra ChemResist Resin to taśma żywiczna o najwyższej odporności chemicznej w portfolio Zebra. Specjalnie zaprojektowana do środowisk, w których etykiety są narażone na kontakt z agresywnymi rozpuszczalnikami, kwasami, zasadami i innymi substancjami chemicznymi. Nadruk zachowuje czytelność nawet po długotrwałej ekspozycji. Standard do etykiet GHS na pojemnikach z substancjami niebezpiecznymi, oznaczeniach laboratoryjnych i chemicznych.',
-    icon: 'tag',
-    productIds: [],
-    productCount: 0,
-  },
   {
     id: 'opaski-identyfikacyjne',
     slug: 'opaski-identyfikacyjne',
@@ -23864,21 +23693,6 @@ const ribbonFaq: Record<string, { question: string; answer: string }[]> = {
   ],
 }
 
-// Map series → model-specific subcategory ID
-const ribbonSeriesSubcategoryMap: Record<string, string> = {
-  '2300': 'tasmy-wax-2300',
-  '2100': 'tasmy-wax-2100',
-  '1600': 'tasmy-wax-1600',
-  '5319': 'tasmy-wax-5319',
-  '3200': 'tasmy-wax-resin-3200',
-  '3300': 'tasmy-wax-resin-3300',
-  '3400': 'tasmy-wax-resin-3400',
-  '5555': 'tasmy-wax-resin-5555',
-  '4800': 'tasmy-resin-4800',
-  '5095': 'tasmy-resin-5095',
-  '5100': 'tasmy-resin-5100',
-}
-
 const ribbons: Product[] = ribbonSpecs.map(r => ({
   id: `zebra-ribbon-${r.pn.toLowerCase()}`,
   slug: `zebra-tasma-${r.typePL.replace(/ż/g,'z').replace(/ó/g,'o')}-${r.width}mm-x-${r.length}m-${r.series}`,
@@ -23886,7 +23700,7 @@ const ribbons: Product[] = ribbonSpecs.map(r => ({
   shortDescription: `Taśma ${r.typePL} (${r.typeShort}) ${r.width}mm × ${r.length}m, rdzeń ${r.core} mm, nawój ${r.winding}. Seria ${r.seriesName}. Do drukarek ${r.format === 'desktop' ? 'biurkowych' : 'przemysłowych'}.`,
   description: `Oryginalna taśma termotransferowa Zebra ${r.seriesName} (${r.typeShort}) o szerokości ${r.width} mm i długości ${r.length} m.\n\nRdzeń: ${r.core} mm (${r.core === 12.7 ? '0,5"' : '1"'}). Nawój: ${r.winding} (${r.winding === 'IN' ? 'wewnętrzny' : 'zewnętrzny'}). Max prędkość druku: ${r.maxSpeed}.\n\nMateriały docelowe: ${r.materials}. ${r.certifications ? `Certyfikaty: ${r.certifications}.` : ''}`,
   categoryId: 'materialy-eksploatacyjne',
-  subcategoryIds: ['tasmy-termotransferowe', ribbonSeriesSubcategoryMap[r.series]].filter(Boolean),
+  subcategoryIds: ['tasmy-termotransferowe'],
   manufacturerId: 'zebra',
   priceFrom: r.price,
   images: ['/images/products/zebra-ribbon-wymiary.png'],
@@ -39009,29 +38823,6 @@ export function getProductsByTag(tag: ProductTag): Product[] {
 // Pobiera produkty po wielu tagach (OR — dowolny z podanych)
 export function getProductsByTags(tags: ProductTag[]): Product[] {
   return products.filter(p => tags.some(t => p.tags.includes(t)))
-}
-
-// Helper: typ nadrzędny taśmy (do breadcrumbów i hub pages)
-export type RibbonParentType = 'wax' | 'wax-resin' | 'resin'
-
-const ribbonParentTypeMap: Record<string, RibbonParentType> = {
-  'tasmy-wax-2300': 'wax', 'tasmy-wax-2100': 'wax', 'tasmy-wax-1600': 'wax', 'tasmy-wax-5319': 'wax',
-  'tasmy-wax-resin-3200': 'wax-resin', 'tasmy-wax-resin-3300': 'wax-resin', 'tasmy-wax-resin-3400': 'wax-resin', 'tasmy-wax-resin-5555': 'wax-resin',
-  'tasmy-resin-4800': 'resin', 'tasmy-resin-5095': 'resin', 'tasmy-resin-5100': 'resin', 'tasmy-resin-chemresist': 'resin',
-}
-
-export function getRibbonParentType(subcategoryId: string): RibbonParentType | undefined {
-  return ribbonParentTypeMap[subcategoryId]
-}
-
-// Helper: pobiera subcategorie ribbonów pogrupowane po typie
-export function getRibbonModelSubcategories(): { wax: Subcategory[]; waxResin: Subcategory[]; resin: Subcategory[] } {
-  const children = getChildSubcategories('tasmy-termotransferowe')
-  return {
-    wax: children.filter(s => ribbonParentTypeMap[s.id] === 'wax'),
-    waxResin: children.filter(s => ribbonParentTypeMap[s.id] === 'wax-resin'),
-    resin: children.filter(s => ribbonParentTypeMap[s.id] === 'resin'),
-  }
 }
 
 // ============================================
