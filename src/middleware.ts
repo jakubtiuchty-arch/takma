@@ -112,7 +112,7 @@ export async function middleware(request: NextRequest) {
       'honeywell-px940-interfejs-rownolegl', 'honeywell-px940-interfejs-przemyslowy',
       'honeywell-px940-interfejs-aplikatora', 'honeywell-px940-modul-wifi',
       // Drukarki mobilne Honeywell + akcesoria
-      'honeywell-rp2f', 'honeywell-rp4f',
+      'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3',
       'honeywell-rpf-bateria-2500mah', 'honeywell-rpf-etui-ochronne',
       'honeywell-rpf-battery-eliminator', 'honeywell-rpf-zasilacz-ac-eu',
       'honeywell-rpf-klips-do-paska', 'honeywell-rpf-kabel-zapalniczka',
