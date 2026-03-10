@@ -214,7 +214,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   mounted: boolean
   stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; availability: 'available' | 'on-order' | 'unavailable'; price?: number; ingramPrice?: number }>
   stockLoading: boolean
-  addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string }) => void
+  addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string; priceNetto?: number }) => void
   isInCart: (id: string) => boolean
   manufacturerId?: string
 }) {
@@ -225,6 +225,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
     : availabilityConfig[variant.availability]
   const effectiveAvailability = stock?.found ? stock.availability : variant.availability
   const isUnavailable = !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
+  const livePrice = stock?.found && stock?.price ? stock.price : variant.priceFrom
 
   return (
     <tr className={`${rowIndex % 2 === 0 ? 'bg-white' : 'bg-gray-50'} hover:bg-primary-50/50 transition-colors`}>
@@ -239,12 +240,10 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
       <td className="px-3 py-3.5 text-sm font-semibold text-gray-900 whitespace-nowrap">
         {stockLoading ? (
           <span className="inline-block h-4 w-20 bg-gray-200 rounded animate-pulse" />
-        ) : (() => {
-          const livePrice = stock?.found && stock?.price ? stock.price : variant.priceFrom
-          return livePrice
+        ) : livePrice
             ? `${livePrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł`
             : 'Na zapytanie'
-        })()}
+        }
       </td>
       <td className="px-3 py-3.5">
         <StockCell stockPL={stock?.stockPL ?? 0} stockDE={stock?.stockDE ?? 0} loading={stockLoading} />
@@ -265,6 +264,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
               slug: productSlug,
               image: productImage,
               partNumber: variant.partNumber,
+              priceNetto: livePrice,
             })}
             leftIcon={inRFQ ? <CheckIcon size={14} /> : <PlusIcon size={14} />}
           >
@@ -285,7 +285,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
   mounted: boolean
   stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; availability: 'available' | 'on-order' | 'unavailable'; price?: number; ingramPrice?: number }>
   stockLoading: boolean
-  addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string }) => void
+  addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string; priceNetto?: number }) => void
   isInCart: (id: string) => boolean
   variantAttributeTooltips?: Record<string, string>
   manufacturerId?: string
@@ -297,6 +297,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
     : availabilityConfig[variant.availability]
   const effectiveAvailability = stock?.found ? stock.availability : variant.availability
   const isUnavailable = !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
+  const livePrice = stock?.found && stock?.price ? stock.price : variant.priceFrom
 
   return (
     <div className="bg-white border border-gray-200 rounded-xl p-4 space-y-3">
@@ -340,9 +341,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
         <div>
           {stockLoading ? (
             <span className="inline-block h-5 w-24 bg-gray-200 rounded animate-pulse" />
-          ) : (() => {
-            const livePrice = stock?.found && stock?.price ? stock.price : variant.priceFrom
-            return livePrice ? (
+          ) : livePrice ? (
               <div>
                 <span className="text-lg font-bold text-gray-900">
                   {livePrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
@@ -352,7 +351,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
             ) : (
               <span className="text-sm text-gray-600">Cena na zapytanie</span>
             )
-          })()}
+          }
         </div>
         {isUnavailable ? (
           <NotifyButton partNumber={variant.partNumber} productName={`${productName} (${variant.partNumber})`} />
@@ -366,6 +365,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
               slug: productSlug,
               image: productImage,
               partNumber: variant.partNumber,
+              priceNetto: livePrice,
             })}
             leftIcon={inRFQ ? <CheckIcon size={16} /> : <PlusIcon size={16} />}
           >

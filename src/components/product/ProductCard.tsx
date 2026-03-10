@@ -82,6 +82,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
       slug: product.slug,
       image: product.images[0],
       partNumber: product.variants?.[0]?.partNumber || product.specifications.find(s => s.name === 'Part Number')?.value,
+      priceNetto: displayPrice,
     })
   }
 

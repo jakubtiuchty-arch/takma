@@ -420,6 +420,7 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
                         )}
                         {result.price && (
                           <span className="text-sm font-semibold text-gray-900 tabular-nums">
+                            <span className="text-xs font-normal text-gray-400">od </span>
                             {result.price.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
                           </span>
                         )}

@@ -6,8 +6,9 @@ import clsx from 'clsx'
 import Image from 'next/image'
 import { CloseIcon, TrashIcon, MinusIcon, PlusIcon, ArrowRightIcon } from '@/components/ui/Icons'
 import { Button } from '@/components/ui'
-import { useCartStore } from '@/store/cartStore'
+import { useCartStore, type CartItem } from '@/store/cartStore'
 import { products } from '@/data/products'
+import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 
 function formatPrice(price: number): string {
   return price.toLocaleString('pl-PL', {
@@ -17,12 +18,11 @@ function formatPrice(price: number): string {
 }
 
 /**
- * Znajduje cenę netto produktu na podstawie ID.
- * Sprawdza czy ID zawiera `__` (wariant), jeśli tak — szuka ceny wariantu.
+ * Statyczny fallback — szuka ceny w products.ts (używany gdy live API nie zwróci wyniku)
  */
-function findProductPrice(productId: string | undefined): number | undefined {
+function findStaticPrice(productId: string | undefined): number | undefined {
   if (!productId) return undefined
-  // Wariant: "slug__partNumber"
+  if (productId.includes('__onecare__')) return undefined
   if (productId.includes('__') && !productId.includes('__onecare__')) {
     const [slug, partNumber] = productId.split('__')
     const product = products.find((p) => p.slug === slug)
@@ -32,13 +32,26 @@ function findProductPrice(productId: string | undefined): number | undefined {
     }
     return product?.priceFrom
   }
-
-  // OneCare — brak ceny w drawer
-  if (productId.includes('__onecare__')) return undefined
-
-  // Zwykły produkt
   const product = products.find((p) => p.id === productId)
   return product?.priceFrom
+}
+
+/**
+ * Zwraca cenę dla elementu koszyka: live API > zapisana w cart > statyczny fallback
+ */
+function getItemPrice(
+  item: CartItem,
+  stockData: Map<string, { found: boolean; price?: number }>
+): number | undefined {
+  // 1. Live cena z API (najświeższa)
+  if (item.partNumber) {
+    const stock = stockData.get(item.partNumber)
+    if (stock?.found && stock?.price) return stock.price
+  }
+  // 2. Cena zapisana w koszyku przy dodawaniu
+  if (item.priceNetto) return item.priceNetto
+  // 3. Statyczny fallback z products.ts
+  return findStaticPrice(item.productId)
 }
 
 export default function RFQDrawer() {
@@ -74,14 +87,23 @@ export default function RFQDrawer() {
     return () => window.removeEventListener('keydown', handleEscape)
   }, [closeDrawer])
 
-  // Oblicz ceny dla elementów w koszyku
+  // Pobierz part numbery z koszyka do live API
+  const cartPartNumbers = useMemo(() => {
+    return items
+      .map(item => item.partNumber)
+      .filter((pn): pn is string => !!pn)
+  }, [items])
+
+  const { stockData, loading: priceLoading } = useStockData(cartPartNumbers)
+
+  // Oblicz ceny dla elementów w koszyku (live API > zapisane > static)
   const itemPrices = useMemo(() => {
     const prices = new Map<string, number | undefined>()
     for (const item of items) {
-      prices.set(item.productId, findProductPrice(item.productId))
+      prices.set(item.productId, getItemPrice(item, stockData))
     }
     return prices
-  }, [items])
+  }, [items, stockData])
 
   // Suma netto (tylko elementy z ceną)
   const subtotalNetto = useMemo(() => {
@@ -198,12 +220,14 @@ export default function RFQDrawer() {
                           )}
 
                           {/* Cena jednostkowa */}
-                          {unitPrice && (
+                          {priceLoading && item.partNumber ? (
+                            <span className="inline-block h-4 w-20 bg-gray-200 rounded animate-pulse mt-1" />
+                          ) : unitPrice ? (
                             <p className="text-sm font-semibold text-gray-900 mt-1">
                               {formatPrice(unitPrice)} zł
                               <span className="text-xs font-normal text-gray-400 ml-1">netto</span>
                             </p>
-                          )}
+                          ) : null}
 
                           {/* Quantity controls */}
                           <div className="flex items-center gap-2 mt-2">

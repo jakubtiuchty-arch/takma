@@ -16,6 +16,7 @@ import {
 } from '@/components/ui/Icons'
 import { useCartStore, type CartItem } from '@/store/cartStore'
 import { products, type Product } from '@/data/products'
+import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import { createCheckoutSession, createProformaOrder } from '@/actions/checkout'
 
 // ── Typy ────────────────────────────────────────────────────────
@@ -163,15 +164,30 @@ export default function CheckoutPage() {
     }
   }, [])
 
-  // ── Ceny (dynamiczne, jak w drawerze) ─────────────────────────
+  // ── Ceny (live z API > zapisane > static fallback) ────────────
+
+  const cartPartNumbers = useMemo(() => {
+    return items.map(item => item.partNumber).filter((pn): pn is string => !!pn)
+  }, [items])
+
+  const { stockData, loading: priceLoading } = useStockData(cartPartNumbers)
 
   const itemPrices = useMemo(() => {
     const prices = new Map<string, number | undefined>()
     for (const item of items) {
+      // 1. Live cena z API
+      if (item.partNumber) {
+        const stock = stockData.get(item.partNumber)
+        if (stock?.found && stock?.price) {
+          prices.set(item.productId, stock.price)
+          continue
+        }
+      }
+      // 2. Cena zapisana w koszyku > 3. Static fallback
       prices.set(item.productId, item.priceNetto ?? findProductPrice(item.productId))
     }
     return prices
-  }, [items])
+  }, [items, stockData])
 
   const subtotalNetto = useMemo(() => {
     if (!mounted) return 0
@@ -601,6 +617,7 @@ export default function CheckoutPage() {
                   <CartItemRow
                     key={item.productId}
                     item={item}
+                    livePrice={itemPrices.get(item.productId)}
                     onRemove={removeItem}
                     onUpdateQuantity={updateQuantity}
                   />
@@ -900,14 +917,16 @@ export default function CheckoutPage() {
 
 function CartItemRow({
   item,
+  livePrice,
   onRemove,
   onUpdateQuantity,
 }: {
   item: CartItem
+  livePrice?: number
   onRemove: (id: string) => void
   onUpdateQuantity: (id: string, qty: number) => void
 }) {
-  const unitPrice = item.priceNetto ?? findProductPrice(item.productId)
+  const unitPrice = livePrice ?? item.priceNetto ?? findProductPrice(item.productId)
   const lineTotal = unitPrice ? unitPrice * item.quantity : null
 
   return (
