@@ -122,7 +122,7 @@ export async function GET() {
           buildOffer({
             id: variant.partNumber,
             url: link,
-            price: variant.priceFrom,
+            price: variant.priceFrom * 1.23,
             avail,
             weight,
             cat,
@@ -141,7 +141,7 @@ export async function GET() {
         buildOffer({
           id: product.id,
           url: link,
-          price: product.priceFrom,
+          price: product.priceFrom * 1.23,
           avail,
           weight,
           cat,
