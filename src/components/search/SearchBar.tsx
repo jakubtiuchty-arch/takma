@@ -6,6 +6,7 @@ import Image from 'next/image'
 import clsx from 'clsx'
 import { SearchIcon, CloseIcon, ArrowRightIcon } from '@/components/ui/Icons'
 import { products, categories, manufacturers, type Product, type Category } from '@/data/products'
+import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 
 interface SearchBarProps {
   fullWidth?: boolean
@@ -25,6 +26,7 @@ interface SearchResult {
   parentProduct?: string
   availability?: 'available' | 'on-order' | 'unavailable'
   categoryId?: string
+  partNumber?: string // PN do live price lookup
 }
 
 // Buduj indeks wyszukiwania raz
@@ -143,8 +145,11 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
             parentProduct: product.name,
             availability: product.availability,
             categoryId: product.categoryId,
+            partNumber: matchedVariant.partNumber,
           })
         } else {
+          // Dla produktu — weź PN pierwszego wariantu (do live price lookup)
+          const firstVariantPN = product.variants?.[0]?.partNumber
           const category = categories.find((c) => c.id === product.categoryId)
           found.push({
             _score: score,
@@ -159,6 +164,7 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
             image: product.images[0],
             availability: product.availability,
             categoryId: product.categoryId,
+            partNumber: firstVariantPN,
           })
         }
       }
@@ -195,6 +201,15 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
     const timer = setTimeout(() => search(query), 150)
     return () => clearTimeout(timer)
   }, [query, search])
+
+  // Part numbery z wyników do live price fetch
+  const resultPartNumbers = useMemo(() => {
+    return results
+      .map(r => r.partNumber)
+      .filter((pn): pn is string => !!pn)
+  }, [results])
+
+  const { stockData } = useStockData(resultPartNumbers)
 
   // Zamknij przy kliknięciu poza
   useEffect(() => {
@@ -273,6 +288,15 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
     }
   }, [activeIndex])
 
+  // Helper: pobierz live cenę dla wyniku (live API > static fallback)
+  const getResultPrice = useCallback((result: SearchResult): number | undefined => {
+    if (result.partNumber) {
+      const stock = stockData.get(result.partNumber)
+      if (stock?.found && stock?.price) return stock.price
+    }
+    return result.price
+  }, [stockData])
+
   return (
     <div ref={wrapperRef} className={clsx('relative', fullWidth ? 'w-full' : 'w-96')}>
       <form onSubmit={handleSubmit}>
@@ -338,7 +362,9 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
                 id="search-suggestions"
                 className="overflow-y-auto flex-1"
               >
-                {results.map((result, i) => (
+                {results.map((result, i) => {
+                  const displayPrice = getResultPrice(result)
+                  return (
                   <li
                     key={result.id}
                     id={`search-item-${i}`}
@@ -418,16 +444,16 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
                               : (result.categoryId === 'drukarki-etykiet' ? 'Niedostępna' : 'Niedostępny')}
                           </span>
                         )}
-                        {result.price && (
+                        {displayPrice && (
                           <span className="text-sm font-semibold text-gray-900 tabular-nums">
-                            <span className="text-xs font-normal text-gray-400">od </span>
-                            {result.price.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
+                            {displayPrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
                           </span>
                         )}
                       </div>
                     </button>
                   </li>
-                ))}
+                  )
+                })}
               </ul>
 
               {/* Footer */}
