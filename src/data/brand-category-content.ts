@@ -1611,4 +1611,254 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       },
     ],
   },
+
+  'drukarki-etykiet-honeywell': {
+    definition: {
+      heading: 'Drukarki etykiet Honeywell — od biurkowych PC45 po przemysłowe PX940 z weryfikatorem',
+      content:
+        'Honeywell to drugi największy producent drukarek etykiet na świecie, obecny w segmencie enterprise od ponad 40 lat — najpierw jako Intermec (przejęty w 2013) i Datamax O\'Neil, a od 2018 roku pod jednolitą marką Honeywell Productivity Solutions. Oferta Honeywell obejmuje pełne spektrum zastosowań druku etykiet: biurkowe drukarki [PC45d](/produkt/honeywell-pc45d) (termiczna od 1 518 zł) i [PC45t](/produkt/honeywell-pc45t) (termotransferowa) z ekranem LCD 3,5" i Wi-Fi 6 — jedne z najlepiej wyposażonych biurkowych na rynku; ekonomiczną [PC42E-T](/produkt/honeywell-pc42e-t) z trybem ECO i zerową konfiguracją; półprzemysłowe [PD45](/produkt/honeywell-pd45) i [PD45S](/produkt/honeywell-pd45s) z metalową obudową do średnich wolumenów; przemysłowe [PM45](/produkt/honeywell-pm45) (4") i [PM65](/produkt/honeywell-pm65) (6") z rozdzielczością do 600 dpi, Gigabit Ethernet i opcją LTE; oraz flagowe [PX45](/produkt/honeywell-px45), [PX65](/produkt/honeywell-px65) i [PX940](/produkt/honeywell-px940) z wbudowanym weryfikatorem kodów 1D/2D — jedynym takim rozwiązaniem na rynku drukarek przemysłowych. Kluczowa przewaga technologiczna Honeywell to emulacja ZPL II (ZSim) we wszystkich aktualnych modelach — migracja z floty drukarek Zebra bez zmiany szablonów etykiet i integracji z WMS/ERP. Platforma [Printer Edge](https://automation.honeywell.com/us/en/campaigns/productivity-solutions/honeywell-printer-edge) zapewnia zdalne zarządzanie flotą: konfiguracja, monitoring, aktualizacje firmware i innowacyjna funkcja Smart Parse do modyfikacji formatu etykiet bez zmian w systemie IT. TAKMA oferuje pełne wsparcie: dobór modelu, konfigurację, integrację z systemami magazynowymi, szkolenia operatorów i serwis w Polsce.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać drukarkę etykiet Honeywell? 7 kryteriów',
+      items: [
+        'Dzienny wolumen druku — do 500 etykiet/dzień wystarczy drukarka biurkowa: [PC42E-T](/produkt/honeywell-pc42e-t) (od ~1 700 zł, ekonomiczna, USB+Ethernet) lub [PC45t](/produkt/honeywell-pc45t) (od ~2 200 zł, LCD, Wi-Fi 6). Przy 500–2 000 etykiet/dzień wybierz półprzemysłową [PD45](/produkt/honeywell-pd45) (od 3 400 zł) lub [PD45S](/produkt/honeywell-pd45s) z ekranem dotykowym. Powyżej 2 000 etykiet/dzień: przemysłowa [PM45](/produkt/honeywell-pm45) (350 mm/s, od 4 823 zł) lub premium [PX45](/produkt/honeywell-px45).',
+        'Technologia druku — druk termiczny (model [PC45d](/produkt/honeywell-pc45d)) nie wymaga taśmy barwiącej — tańszy w eksploatacji, ale wydruk blaknie w 6–12 mies. Druk termotransferowy ([PC45t](/produkt/honeywell-pc45t), [PD45](/produkt/honeywell-pd45), [PM45](/produkt/honeywell-pm45), [PX940](/produkt/honeywell-px940)) z taśmą woskową, woskowo-żywiczną lub żywiczną daje etykiety trwałe latami — niezbędny do etykiet produktowych, chemicznie odpornych i magazynowych. Więcej: [Termiczna vs termotransferowa](/poradnik/drukarka-termiczna-vs-termotransferowa).',
+        'Rozdzielczość druku — 203 dpi: standard do etykiet logistycznych i adresowych (kody 1D, tekst powyżej 8 pkt). 300 dpi: kody 2D (DataMatrix, QR) poniżej 10 mm i tekst 6 pkt — dostępne w [PM45](/produkt/honeywell-pm45), [PX45](/produkt/honeywell-px45), [PX940](/produkt/honeywell-px940). 406 dpi: mikroetykiety farmaceutyczne i jubilerskie (tylko [PM45](/produkt/honeywell-pm45) 406 dpi). 600 dpi: najdrobniejsze oznaczenia elektroniczne i UDI — [PM45](/produkt/honeywell-pm45) 600 dpi, najwyższa rozdzielczość w klasie 4-calowej.',
+        'Prędkość druku — od 150 mm/s ([PC42E-T](/produkt/honeywell-pc42e-t), wystarczająca do 300 etykiet/dzień) przez 200 mm/s ([PC45](/produkt/honeywell-pc45t), [PD45](/produkt/honeywell-pd45)) do 250 mm/s ([PD45S](/produkt/honeywell-pd45s)) i 300–350 mm/s ([PM45](/produkt/honeywell-pm45), [PX940](/produkt/honeywell-px940)). Przy 2 000+ etykiet/dzień różnica między 200 a 350 mm/s to ponad 25 minut oszczędności dziennie.',
+        'Łączność i integracja — USB jest standardem we wszystkich modelach. Ethernet 10/100 w [PC45](/produkt/honeywell-pc45t), Gigabit Ethernet w [PM45](/produkt/honeywell-pm45). Wi-Fi 6 (802.11ax) w [PC45](/produkt/honeywell-pc45t) — jedyna biurkowa na rynku z Wi-Fi 6 w standardzie. Wi-Fi 6 + BT 5.2 opcjonalnie w [PM45](/produkt/honeywell-pm45), [PM65](/produkt/honeywell-pm65), [PX940](/produkt/honeywell-px940). Opcja LTE (sieć komórkowa) w PM45 — do zastosowań bez infrastruktury sieciowej. [Printer Edge](https://automation.honeywell.com/us/en/campaigns/productivity-solutions/honeywell-printer-edge) zapewnia zdalne zarządzanie flotą.',
+        'Opcje dodatkowe — RFID encoder UHF w [PM45](/produkt/honeywell-pm45) z modułem RFID (do etykiet logistycznych i inwentaryzacyjnych). Wbudowany weryfikator kodów 1D/2D w [PX940](/produkt/honeywell-px940) — jedyny na rynku (compliance farmaceutyczny, motoryzacyjny). Gilotyna automatyczna, odklejak/dyspenser, nawijak wewnętrzny — jako moduły dołączane w terenie (field-installable) do [PM45](/produkt/honeywell-pm45), [PM65](/produkt/honeywell-pm65), [PX940](/produkt/honeywell-px940).',
+        'Całkowity koszt posiadania (TCO) — biurkowa [PC42E-T](/produkt/honeywell-pc42e-t) (~1 700 zł) ma głowicę wytrzymującą ok. 50 km taśmy (wymiana ~350 zł). Przemysłowa [PM45](/produkt/honeywell-pm45) (4 823 zł) z głowicą na 150–200 km. Po 3 latach intensywnego użytkowania TCO przemysłowej może być niższy mimo wyższej ceny zakupu — szybszy druk, mniej wymian głowic, niższy koszt przestojów. Porównanie z Zebrą: [ZD421](/produkt/zebra-zd421t) vs [PC45t](/produkt/honeywell-pc45t) — porównywalne TCO, różnice w ekosystemie software.',
+      ],
+    },
+    expertAuthority:
+      'TAKMA działa na polskim rynku AutoID od ponad 25 lat — doradzamy w doborze drukarek etykiet, konfigurujemy integracje z systemami WMS/ERP i zapewniamy serwis pogwarancyjny. Nasz zespół techniczny, dostępny pod adresem [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-drukarek-zebra), serwisuje drukarki wielu producentów, w tym Honeywell — od wymiany głowic termicznych, przez regulację mechanizmów podających, po diagnostykę elektroniki. Każda rekomendacja na tej stronie opiera się na danych z tysięcy realnych wdrożeń i serwisów, nie na materiałach marketingowych. Pomagamy wybrać model idealnie dopasowany do Twojego wolumenu, środowiska pracy i budżetu.',
+    technicalDeepDive: `Pełna macierz modeli drukarek etykiet Honeywell — od ekonomicznych biurkowych po flagowe przemysłowe z weryfikatorem — pozwala dobrać urządzenie idealnie dopasowane do wolumenu, prędkości i wymagań materiałowych. Zestawienie kluczowych parametrów i cen (netto, marzec 2026):\n\n• PC42E-T (biurkowa ekonomiczna): 150 mm/s, 203/300 dpi, 4" szerokości, USB + Ethernet, tryb ECO (oszczędność energii), od ~1 700 zł netto — najprostsza drukarka Honeywell, idealna do punktu nadania paczek lub apteki.\n• PC45d (biurkowa termiczna): 200 mm/s, 203/300 dpi, LCD 3,5" z nawigacją, Wi-Fi 6, USB + Ethernet, od 1 518 zł netto — jedyna biurkowa na rynku z Wi-Fi 6 w standardzie.\n• PC45t (biurkowa termotransferowa): 200 mm/s, 203/300 dpi, LCD 3,5", Wi-Fi 6, USB + Ethernet, od ~2 200 zł netto — wszechstronna biurkowa do etykiet trwałych.\n• PD45 (półprzemysłowa): 200 mm/s, 203/300 dpi, metalowa obudowa, 3 opcje wyświetlacza (brak/ikony/kolorowy LCD), USB + Ethernet, od ~3 400 zł netto — następca legendarnego PD43, do magazynów o średnim wolumenie.\n• PD45S (półprzemysłowa z ekranem): 250 mm/s, 203/300 dpi, ekran dotykowy 3,5", 256 MB RAM, USB + Ethernet, od ~3 700 zł netto — wersja premium PD45 z dotykowym LCD i wyższą prędkością.\n• PM45 (przemysłowa 4"): 350 mm/s, 203/300/406/600 dpi, Gigabit Ethernet, opcja LTE/Wi-Fi 6/BT 5.2/RFID, 1 GB RAM, metalowa obudowa, od 4 823 zł netto — flagowa drukarka przemysłowa Honeywell, zastępuje PM43.\n• PM65 (przemysłowa 6"): 300 mm/s, 203/300 dpi, Wi-Fi 6 + BT 5.2 opcjonalnie, 6-calowe pole druku (152,4 mm), od ~7 500 zł netto — do etykiet szerokoformatowych na palety, kontenery i opakowania zbiorcze.\n• PX45 (premium 4"): 300 mm/s, 203/300 dpi, metalowa obudowa QuickMount (montaż z boku stołu), od ~4 900 zł netto — modular/premium, następca PX4ie/Intermec.\n• PX65 (premium 6"): 300 mm/s, 203/300 dpi, QuickMount, 6-calowe pole druku, IP64, od ~6 200 zł netto — heavy-duty do ciężkich zastosowań przemysłowych.\n• PX940 (premium z weryfikatorem): 350 mm/s, 203/300 dpi, opcjonalny wbudowany weryfikator kodów 1D/2D (ISO/IEC 15416/15415), precyzja pozycjonowania ±0,2 mm, od ~8 500 zł netto — jedyna drukarka na rynku z zintegrowaną weryfikacją wydruku w czasie rzeczywistym.\n\nŻywotność głowicy termicznej w drukarkach biurkowych Honeywell wynosi typowo 50–100 km taśmy (300 000–600 000 etykiet standardowych 100×50 mm). W modelach przemysłowych (PM45, PX45, PX940) głowice wytrzymują 150–300 km (1–2 mln etykiet). Głowice Honeywell są wymieniane bez narzędzi (tool-free replacement) — operator wymienia głowicę samodzielnie w 2 minuty.`,
+    tcoComparisons: [
+      {
+        title: 'TCO 3 lata — 500 etykiet/dzień (100×50 mm, termotransfer)',
+        variants: [
+          {
+            label: 'Biurkowa PC45t',
+            items: [
+              { name: 'Drukarka PC45t', cost: '~2 200 zł' },
+              { name: 'Etykiety (36 mies.)', cost: '~6 480 zł' },
+              { name: 'Taśmy woskowe (36 mies.)', cost: '~1 980 zł' },
+              { name: '2× wymiana głowicy', cost: '~700 zł' },
+            ],
+            total: '~11 360 zł',
+          },
+          {
+            label: 'Przemysłowa PM45',
+            items: [
+              { name: 'Drukarka PM45', cost: '4 823 zł' },
+              { name: 'Etykiety (36 mies.)', cost: '~5 760 zł' },
+              { name: 'Taśmy woskowe (36 mies.)', cost: '~1 800 zł' },
+              { name: '1× wymiana głowicy', cost: '~1 200 zł' },
+            ],
+            total: '~13 583 zł',
+          },
+        ],
+        conclusion: 'Przy 500 etykiet/dzień biurkowa PC45t jest tańsza o 2 200 zł w TCO 3-letnim. Ale PM45 drukuje 75% szybciej (350 vs 200 mm/s) i jest gotowa na skalowanie do 5 000+ etykiet/dzień. Przy >1 000 etykiet/dzień TCO się wyrównuje — przemysłowa PM45 jest lepszą inwestycją długoterminową.',
+      },
+    ],
+    useCases: [
+      {
+        title: 'Magazyn i logistyka WMS — PM45 / PD45',
+        description:
+          'Drukarki przemysłowe Honeywell do intensywnej pracy w magazynach z systemem WMS. [PM45](/produkt/honeywell-pm45) (350 mm/s, Gigabit Ethernet, od 4 823 zł) do centrów dystrybucyjnych drukujących 2 000–5 000+ etykiet lokalizacyjnych i produktowych dziennie. [PD45](/produkt/honeywell-pd45) (200 mm/s, od 3 400 zł) do magazynów o średnim wolumenie. Oba modele z emulacją ZPL II do integracji z SAP WM, Oracle WMS, Comarch WMS, Manhattan WMS. Opcja LTE w PM45 do magazynów bez infrastruktury sieciowej.',
+      },
+      {
+        title: 'Produkcja i linie montażowe — PX940 / PM45 600 dpi',
+        description:
+          '[PX940](/produkt/honeywell-px940) z wbudowanym weryfikatorem kodów (ISO 15416/15415) zapewnia 100% kontrolę jakości wydruku na linii produkcyjnej — każdy kod jest weryfikowany w czasie rzeczywistym, wadliwe etykiety odrzucane automatycznie. Kluczowe w motoryzacji (AIAG), elektronice (IPC) i farmacji (FMD/UDI). [PM45](/produkt/honeywell-pm45) z rozdzielczością 600 dpi drukuje mikroetykiety na komponenty elektroniczne, podzespoły i kable — tekst 4 pkt czytelny pod lupą.',
+      },
+      {
+        title: 'Farmacja i healthcare — PX940V / PM45 406 dpi',
+        description:
+          '[PX940](/produkt/honeywell-px940) w wersji z weryfikatorem kodów jest standardem w farmacji — weryfikuje kody GS1 DataMatrix i UDI (Unique Device Identification) zgodnie z Dyrektywą FMD/MDR. [PM45](/produkt/honeywell-pm45) z rozdzielczością 406 dpi drukuje mikroetykiety na małe opakowania leków, fiolki i strzykawki. [PC45t](/produkt/honeywell-pc45t) na stanowiskach recepturowych w aptekach szpitalnych — Wi-Fi 6 umożliwia elastyczne rozmieszczenie bez okablowania.',
+      },
+      {
+        title: 'E-commerce i fulfillment — PC45d / PC42E-T',
+        description:
+          'Drukarki biurkowe Honeywell do etykiet kurierskich i wysyłkowych. [PC45d](/produkt/honeywell-pc45d) (termiczna, 200 mm/s, od 1 518 zł) obsłuży sklep wysyłający 100–500 paczek dziennie. [PC42E-T](/produkt/honeywell-pc42e-t) (~1 700 zł) to najtańsza opcja Honeywell z Ethernetem — tryb ECO redukuje zużycie energii. Obie obsługują etykiety 4-calowe kurierów InPost, DPD, DHL, UPS, GLS. Emulacja ZPL II = kompatybilne z systemami, które pracowały z Zebrą.',
+      },
+      {
+        title: 'Etykiety szerokoformatowe — PM65 / PX65 (6 cali)',
+        description:
+          '[PM65](/produkt/honeywell-pm65) (300 mm/s, 6" pole druku, od 7 500 zł) i [PX65](/produkt/honeywell-px65) (od 6 200 zł) drukują etykiety o szerokości do 152,4 mm — na palety, kontenery, opakowania zbiorcze i duże kody GS1-128/SSCC. PM65 z opcją Wi-Fi 6 i RFID. PX65 z obudową QuickMount do montażu na ścianie lub z boku stołu. Konkurencja: [Zebra ZT620](/produkt/zebra-zt620) (168 mm, od 8 950 zł) — Honeywell tańszy o ok. 20%.',
+      },
+      {
+        title: 'Migracja z Intermec / Datamax — PC45 / PM45 / PX45',
+        description:
+          'Firmy z flotą starszych drukarek Intermec (PD41/PD43, PM42/PM43, PX4ie/PX6ie) lub Datamax (M-Class, I-Class, H-Class) mogą bezboleśnie przejść na nowe modele Honeywell. [PC45](/produkt/honeywell-pc45t) zastępuje PC42/PC43, [PD45](/produkt/honeywell-pd45) zastępuje PD41/PD43, [PM45](/produkt/honeywell-pm45) zastępuje PM42/PM43, [PX45](/produkt/honeywell-px45) zastępuje PX4ie. Emulacja DPL, IPL i Fingerprint zapewnia kompatybilność wsteczną z istniejącymi szablonami — nie trzeba przerabiać integracji z WMS/ERP.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego nie powiedzą Ci inni sprzedawcy drukarek Honeywell',
+      items: [
+        {
+          title: 'Emulacja ZPL II — migracja z Zebry w 15 minut',
+          text: 'Wszystkie aktualne drukarki Honeywell ([PC45](/produkt/honeywell-pc45t), [PD45](/produkt/honeywell-pd45), [PM45](/produkt/honeywell-pm45), [PX940](/produkt/honeywell-px940)) obsługują emulację ZPL II (ZSim — Zebra Simulator). Oznacza to, że szablony etykiet zaprojektowane dla drukarek Zebra działają bez zmian — wystarczy podłączyć drukarkę Honeywell do tej samej sieci i wysłać te same polecenia ZPL. Nie trzeba przerabiać integracji z WMS, ERP ani BaseLinker. To najważniejszy argument przy migracji z Zebry na Honeywella — i odwrotnie. Żaden inny producent (TSC, SATO, Citizen) nie oferuje tak pełnej emulacji ZPL.',
+        },
+        {
+          title: 'PX940 — jedyna drukarka z wbudowanym weryfikatorem kodów',
+          text: '[Honeywell PX940](/produkt/honeywell-px940) z modułem weryfikatora (PX940V) to jedyna drukarka etykiet na rynku z zintegrowaną weryfikacją kodów 1D i 2D w czasie rzeczywistym — zgodnie z ISO/IEC 15416 (1D) i 15415 (2D). Każdy wydrukowany kod jest natychmiast skanowany i oceniany (grade A–F). Wadliwe etykiety są automatycznie odrzucane i ponownie drukowane. W farmacji (FMD), motoryzacji (AIAG) i elektronice (IPC) weryfikacja jakości kodów jest wymagana regulacjami — PX940V eliminuje potrzebę osobnego weryfikatora stacjonarnego (koszt 5 000–15 000 zł).',
+        },
+        {
+          title: 'Printer Edge vs Link-OS — Honeywell nadrabia dystans',
+          text: 'Platforma [Printer Edge](https://automation.honeywell.com/us/en/campaigns/productivity-solutions/honeywell-printer-edge) to odpowiedź Honeywella na Link-OS od Zebry. Oferuje zdalne zarządzanie flotą drukarek, monitoring stanu, aktualizacje firmware OTA i innowacyjną funkcję Smart Parse — modyfikacja formatu etykiet (dodanie pola, zmiana czcionki, przesunięcie elementu) bez zmian w systemie IT. Smart Parse parsuje strumień danych z WMS i modyfikuje go „w locie" w drukarce. Zebra nie ma odpowiednika Smart Parse — w Link-OS trzeba zmienić szablon po stronie systemu. Dla firm z dużą flotą i częstymi zmianami formatu etykiet to realna oszczędność czasu IT.',
+        },
+        {
+          title: 'Głowice 406 i 600 dpi — Honeywell PM45 jedyny taki w klasie 4"',
+          text: '[PM45](/produkt/honeywell-pm45) jest jedyną drukarką przemysłową 4-calową na rynku oferującą CZTERY rozdzielczości: 203, 300, 406 i 600 dpi (wymienne głowice). Zebra [ZT411](/produkt/zebra-zt411) oferuje 203/300/600 dpi (bez 406). TSC MH series — max 600 dpi ale w węższym zakresie prędkości. Rozdzielczość 406 dpi to „sweet spot" dla etykiet farmaceutycznych i jubilerskich — wystarczająco wysoka do mikrotekstów, ale szybsza niż 600 dpi (350 vs 200 mm/s). Głowice wymieniane bez narzędzi — zmiana rozdzielczości zajmuje 5 minut.',
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Jakie serie drukarek etykiet ma Honeywell?',
+        answer:
+          'Honeywell oferuje 4 serie drukarek etykiet: **PC** (biurkowe): [PC45d](/produkt/honeywell-pc45d) termiczna, [PC45t](/produkt/honeywell-pc45t) termotransferowa, [PC42E-T](/produkt/honeywell-pc42e-t) ekonomiczna. **PD** (półprzemysłowe): [PD45](/produkt/honeywell-pd45), [PD45S](/produkt/honeywell-pd45s) z ekranem dotykowym. **PM** (przemysłowe): [PM45](/produkt/honeywell-pm45) (4", do 600 dpi), [PM65](/produkt/honeywell-pm65) (6"). **PX** (premium/high-end): [PX45](/produkt/honeywell-px45), [PX65](/produkt/honeywell-px65), [PX940](/produkt/honeywell-px940) z weryfikatorem. Razem 10 modeli pokrywających pełne spektrum zastosowań.',
+      },
+      {
+        question: 'Czym różnią się drukarki biurkowe Honeywell PC45d i PC45t?',
+        answer:
+          '[PC45d](/produkt/honeywell-pc45d) — druk termiczny bezpośredni (bez taśmy): tańsza eksploatacja, etykiety tymczasowe blaknące w 6–12 mies. Idealna do etykiet kurierskich, cenowych, wagowych. [PC45t](/produkt/honeywell-pc45t) — druk termotransferowy z taśmą (ribbon): etykiety trwałe latami, odporne na UV, wilgoć i chemikalia. Niezbędna do etykiet produktowych, magazynowych, GS1-128, oznaczeń kabli. Oba modele mają identyczny hardware (LCD 3,5", Wi-Fi 6, 200 mm/s) — różnica tylko w mechanizmie druku. Porównanie technologii: [Termiczna vs termotransferowa](/poradnik/drukarka-termiczna-vs-termotransferowa).',
+      },
+      {
+        question: 'Ile kosztuje drukarka etykiet Honeywell w Polsce?',
+        answer:
+          'Ceny drukarek Honeywell (netto, marzec 2026): biurkowe od 1 518 zł ([PC45d](/produkt/honeywell-pc45d)) do ~2 200 zł ([PC45t](/produkt/honeywell-pc45t)). Ekonomiczna [PC42E-T](/produkt/honeywell-pc42e-t) od ~1 700 zł. Półprzemysłowe [PD45](/produkt/honeywell-pd45)/[PD45S](/produkt/honeywell-pd45s): 3 400–3 700 zł. Przemysłowe [PM45](/produkt/honeywell-pm45): od 4 823 zł (203 dpi) do ~12 000 zł (600 dpi + Wi-Fi + RFID). [PM65](/produkt/honeywell-pm65) (6"): od 7 500 zł. Premium [PX45](/produkt/honeywell-px45)/[PX65](/produkt/honeywell-px65): 4 900–6 200 zł. Flagowy [PX940](/produkt/honeywell-px940) z weryfikatorem: od ~8 500 zł. Ceny aktualizowane codziennie na podstawie notowań Ingram Micro i BlueStar.',
+      },
+      {
+        question: 'Czy drukarki Honeywell obsługują język ZPL (Zebra)?',
+        answer:
+          'Tak — wszystkie aktualne modele Honeywell obsługują emulację ZPL II (ZSim — Zebra Simulator). Szablony etykiet zaprojektowane dla drukarek Zebra działają bez zmian: wystarczy podłączyć drukarkę Honeywell i wysłać te same polecenia. Nie trzeba przerabiać integracji z WMS/ERP. Honeywell obsługuje też natywne języki: DPL (Datamax), IPL (Intermec), EPL2 oraz PDF Direct do drukowania gotowych plików PDF bez konwersji. To ważne przy migracji z floty Zebra na Honeywell — lub odwrotnie.',
+      },
+      {
+        question: 'Honeywell PC45 vs Zebra ZD421 — która drukarka biurkowa lepsza?',
+        answer:
+          '[PC45t](/produkt/honeywell-pc45t): LCD 3,5" z nawigacją, Wi-Fi 6 (802.11ax) w standardzie, procesor 792 MHz, 200 mm/s, 203/300 dpi. [ZD421t](/produkt/zebra-zd421t): wskaźniki LED lub opcjonalny LCD 2,6", Wi-Fi 802.11ac opcjonalnie, 152 mm/s, 203/300 dpi, Link-OS + PrintDNA. PC45 ma lepszy hardware (ekran, Wi-Fi, prędkość). ZD421 ma lepszy ekosystem software (Link-OS, PrintDNA, [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-drukarek-zebra)). Cenowo zbliżone (PC45t ~2 200 zł, ZD421t od 1 472 zł). Więcej porównań: [Jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).',
+      },
+      {
+        question: 'Honeywell PM45 vs Zebra ZT411 — która drukarka przemysłowa lepsza?',
+        answer:
+          '[PM45](/produkt/honeywell-pm45): 350 mm/s, 203/300/406/600 dpi (4 rozdzielczości!), Gigabit Ethernet, opcja LTE, 1 GB RAM, Printer Edge. [ZT411](/produkt/zebra-zt411): 356 mm/s, 203/300/600 dpi, Link-OS + PrintDNA, opcja RFID w standardzie, serwis [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-drukarek-zebra). PM45 wygrywa: rozdzielczość 406 dpi (jedyna w klasie), Gigabit Ethernet, opcja LTE, Smart Parse. ZT411 wygrywa: Link-OS (najlepszy fleet management), RFID natywnie, szerszy serwis w PL. Cenowo: PM45 od 4 823 zł, ZT411 od 5 132 zł — porównywalne.',
+      },
+      {
+        question: 'Co to jest Honeywell Printer Edge?',
+        answer:
+          '[Printer Edge](https://automation.honeywell.com/us/en/campaigns/productivity-solutions/honeywell-printer-edge) to platforma Honeywell do zdalnego zarządzania flotą drukarek — odpowiednik Link-OS od Zebry. Funkcje: monitoring stanu drukarek (online/offline, poziom mediów, stan głowicy), zdalna konfiguracja i aktualizacje firmware OTA, alerty o problemach, raportowanie. Unikalna funkcja Smart Parse: modyfikacja formatu etykiet bezpośrednio w drukarce bez zmian w systemie WMS/ERP. Printer Edge dostępny dla: [PC45](/produkt/honeywell-pc45t), [PD45](/produkt/honeywell-pd45), [PM45](/produkt/honeywell-pm45), [PM65](/produkt/honeywell-pm65), [PX45](/produkt/honeywell-px45), [PX65](/produkt/honeywell-px65), [PX940](/produkt/honeywell-px940).',
+      },
+      {
+        question: 'Czy Honeywell PX940 ma wbudowany weryfikator kodów?',
+        answer:
+          'Tak — [PX940](/produkt/honeywell-px940) jest dostępny w wersji PX940V z zintegrowanym weryfikatorem kodów 1D (ISO/IEC 15416) i 2D (ISO/IEC 15415). Weryfikator skanuje każdy wydrukowany kod w czasie rzeczywistym i przypisuje mu ocenę jakości (grade A–F). Wadliwe etykiety są automatycznie odrzucane i ponownie drukowane. Jest to jedyna drukarka na rynku z wbudowaną weryfikacją — eliminuje potrzebę osobnego weryfikatora stacjonarnego (koszt 5 000–15 000 zł). Kluczowe w farmacji (FMD/UDI), motoryzacji (AIAG B-17), elektronice (IPC-1066) i żywności (GS1 DataMatrix).',
+      },
+      {
+        question: 'Który model Honeywell zastępuje starszą drukarkę Intermec lub Datamax?',
+        answer:
+          'Tabela migracji: Intermec PC42/PC43 → [PC45](/produkt/honeywell-pc45t). Intermec PD41/PD43 → [PD45](/produkt/honeywell-pd45)/[PD45S](/produkt/honeywell-pd45s). Intermec PM42/PM43 → [PM45](/produkt/honeywell-pm45). Intermec PM43c (kompaktowa) → PM45C. Intermec PX4ie → [PX45](/produkt/honeywell-px45). Intermec PX6ie → [PX65](/produkt/honeywell-px65). Datamax M-Class → [PD45](/produkt/honeywell-pd45). Datamax I-Class → [PM45](/produkt/honeywell-pm45). Datamax H-Class → [PX940](/produkt/honeywell-px940). Honeywell gwarantuje kompatybilność wsteczną emulacji DPL i IPL — stare szablony etykiet działają na nowych drukarkach.',
+      },
+      {
+        question: 'Jakie drukarki Honeywell obsługują RFID?',
+        answer:
+          '[PM45](/produkt/honeywell-pm45) z modułem RFID UHF (EPC Class 1 Gen2 / ISO 18000-63) — kodowanie etykiet RFID jednocześnie z drukiem grafiki. Moduł RFID jest montowany w terenie (field-installable) — można go dodać do istniejącej drukarki PM45. [PM65](/produkt/honeywell-pm65) z opcją RFID (6-calowe etykiety RFID na palety). Drukarki biurkowe PC45 i półprzemysłowe PD45 NIE mają opcji RFID. Porównanie: Zebra oferuje RFID w [ZT411R](/produkt/zebra-zt411) i ZD621R — szerszy wybór modeli z RFID niż Honeywell.',
+      },
+      {
+        question: 'Jaka jest żywotność głowicy drukarki Honeywell?',
+        answer:
+          'Biurkowe [PC45](/produkt/honeywell-pc45t)/[PC42E-T](/produkt/honeywell-pc42e-t): 50–100 km taśmy (~300 000–600 000 etykiet 100×50 mm). Półprzemysłowe [PD45](/produkt/honeywell-pd45): 100–150 km. Przemysłowe [PM45](/produkt/honeywell-pm45)/[PX45](/produkt/honeywell-px45)/[PX940](/produkt/honeywell-px940): 150–300 km (~1–2 mln etykiet). Żywotność zależy od: jakości etykiet (certyfikowane materiały wydłużają o 30–50%), regulacji ciemności druku (darkness) i czyszczenia głowicy alkoholem izopropylowym co 1 000 etykiet. Głowice wymienne bez narzędzi — operator wymienia samodzielnie w 2 minuty.',
+      },
+      {
+        question: 'Jak przejść z drukarki Zebra na Honeywell?',
+        answer:
+          'Drukarki Honeywell obsługują ZPL II (ZSim) — szablony etykiet z Zebry działają bez zmian. Nie trzeba przerabiać integracji z WMS/ERP. Krok 1: Podłącz drukarkę Honeywell do sieci. Krok 2: Włącz emulację ZPL w menu drukarki (domyślnie aktywna w PC45/PM45/PX940). Krok 3: Wyślij te same polecenia ZPL co do Zebry. Różnice do uwzględnienia: inny software zarządzający (Printer Edge zamiast Link-OS), inne PN części zamiennych, inne koszyki do montażu w rack. W TAKMA pomagamy zaplanować i przeprowadzić migrację — od doboru modeli przez konfigurację po szkolenie operatorów.',
+      },
+      {
+        question: 'Ile kosztuje utrzymanie drukarki Honeywell rocznie (TCO)?',
+        answer:
+          'Biurkowa [PC45t](/produkt/honeywell-pc45t) (500 etykiet/dzień): ~800–1 200 zł/rok (etykiety ~400 zł + taśma ~250 zł + 1 głowica co 18 mies. ~350 zł amortyzowane). Półprzemysłowa [PD45](/produkt/honeywell-pd45) (1 000 etykiet/dzień): ~1 500–2 500 zł/rok. Przemysłowa [PM45](/produkt/honeywell-pm45) (2 000 etykiet/dzień): ~2 000–4 000 zł/rok (etykiety + taśma + głowica co 12–18 mies.). TCO zależy od wolumenu, rozdzielczości (600 dpi zużywa głowicę szybciej) i jakości materiałów. Porównywalny z TCO drukarek [Zebra](/drukarki-etykiet-zebra) w tym samym segmencie.',
+      },
+      {
+        question: 'Czym się różnią serie PD45 i PM45 Honeywell?',
+        answer:
+          '[PD45](/produkt/honeywell-pd45): półprzemysłowa, 200–250 mm/s, 203/300 dpi, kompaktowa metalowa obudowa, od ~3 400 zł — do średnich wolumenów (500–2 000 etykiet/dzień), biur logistycznych, sklepów z zapleczem. [PM45](/produkt/honeywell-pm45): przemysłowa, 350 mm/s, do 600 dpi, Gigabit Ethernet, opcja LTE/Wi-Fi 6/RFID, 1 GB RAM, od 4 823 zł — do dużych wolumenów (2 000–10 000+ etykiet/dzień) i pracy 24/7 na liniach produkcyjnych i w centrach dystrybucyjnych. Kluczowa różnica: PM45 oferuje rozdzielczość 406/600 dpi i łączność LTE — PD45 nie.',
+      },
+      {
+        question: 'Jakie interfejsy komunikacyjne mają drukarki Honeywell?',
+        answer:
+          'Standard we wszystkich modelach: USB 2.0 + Ethernet 10/100 (Gigabit w [PM45](/produkt/honeywell-pm45)). Opcje bezprzewodowe: Wi-Fi 6 (802.11ax) + Bluetooth 5.0/5.2 — w standardzie w [PC45](/produkt/honeywell-pc45t), opcjonalnie w PM45/PM65/PX940. LTE (sieć komórkowa) — opcja w PM45, jedyna drukarka z LTE w ofercie! RS-232 serial — we wszystkich modelach półprzemysłowych i przemysłowych. Interfejs równoległy IEEE 1284 — opcja w [PX940](/produkt/honeywell-px940). GPIO/UART (interfejs przemysłowy) — opcja w PM45 i PX940 do integracji z automatyką i PLC.',
+      },
+      {
+        question: 'Jaka drukarka Honeywell do etykiet farmaceutycznych?',
+        answer:
+          'Trzy rekomendacje w zależności od wymagań: 1) [PX940V](/produkt/honeywell-px940) z weryfikatorem — compliance FMD/MDR, GS1 DataMatrix, weryfikacja ISO 15415 w czasie rzeczywistym, od ~8 500 zł. 2) [PM45](/produkt/honeywell-pm45) z głowicą 406 dpi — mikroetykiety na małe opakowania, fiolki, strzykawki, od ~6 000 zł. 3) [PC45t](/produkt/honeywell-pc45t) — stanowiska recepturowe w aptekach szpitalnych, kompaktowa z Wi-Fi 6, od ~2 200 zł. Wszystkie obsługują kody GS1-128, GS1 DataMatrix, HIBC i UDI.',
+      },
+      {
+        question: 'Honeywell czy Zebra — który producent drukarek etykiet lepszy?',
+        answer:
+          'Zależy od priorytetów. **[Zebra](/drukarki-etykiet-zebra) wygrywa gdy**: zależy Ci na ekosystemie software (Link-OS, PrintDNA — 30+ narzędzi w cenie), szerokim serwisie w Polsce ([serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-drukarek-zebra)), najniższej cenie entry-level ([ZD220](/produkt/zebra-zd220d) od 639 zł). **Honeywell wygrywa gdy**: potrzebujesz weryfikatora kodów ([PX940](/produkt/honeywell-px940) — jedyny na rynku), rozdzielczości 406 dpi ([PM45](/produkt/honeywell-pm45)), Wi-Fi 6 w biurkowej ([PC45](/produkt/honeywell-pc45t)), LTE w przemysłowej (PM45), Smart Parse (Printer Edge). Cenowo porównywalne w segmencie mid-range i premium.',
+      },
+      {
+        question: 'Czy TAKMA oferuje serwis drukarek Honeywell?',
+        answer:
+          'Tak — TAKMA zapewnia pełne wsparcie: sprzedaż, dobór modelu do zastosowania, konfigurację, integrację z WMS/ERP, szkolenie operatorów oraz serwis gwarancyjny i pogwarancyjny drukarek Honeywell w Polsce. Nasz zespół techniczny ([serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-drukarek-zebra)) serwisuje drukarki wielu marek — wymiana głowic, regulacja mechanizmów, diagnostyka elektroniki. Oryginalne części zamienne Honeywell (głowice, wałki, gilotyny, moduły RFID, interfejsy) dostępne z dostawą 24–48h. Kontakt: formularz na stronie lub e-mail kontakt@takma.com.pl.',
+      },
+      {
+        question: 'Jakie są alternatywy dla drukarek etykiet Honeywell?',
+        answer:
+          'Główne alternatywy: **[Drukarki Zebra](/drukarki-etykiet-zebra)** (lider rynku 50%+, Link-OS, PrintDNA, od 639 zł, najszerszy serwis w PL) — porównanie: [Zebra vs Honeywell](/poradnik/jak-wybrac-drukarke-etykiet). **TSC** (tańsze o 20–30%, dobry stosunek ceny do jakości, krótszy cykl życia). **SATO** (niszowe, silna pozycja w Japonii i Australii, słaba dystrybucja w PL). **Citizen** (kompaktowe biurkowe, popularne w retail). Dla firm z istniejącą flotą Honeywell (lub Intermec/Datamax) rekomendujemy pozostanie przy marce — emulacja DPL/IPL, kompatybilne materiały i Printer Edge.',
+      },
+    ],
+    comparisons: [
+      {
+        title: 'Drukarki Honeywell vs Zebra — porównanie marek',
+        content:
+          'Honeywell i [Zebra](/drukarki-etykiet-zebra) to dwaj najwięksi producenci drukarek etykiet na świecie. Zebra dominuje z ponad 50% udziałem w segmencie enterprise, głównie dzięki platformie [Link-OS](https://www.zebra.com/us/en/software/printer-software/link-os.html) i ekosystemowi PrintDNA (30+ darmowych narzędzi). Honeywell ma mocną pozycję w segmencie przemysłowym high-end — [PM45](/produkt/honeywell-pm45) z rozdzielczością 406 i 600 dpi, [PX940](/produkt/honeywell-px940) z wbudowanym weryfikatorem kodów (jedynym na rynku), oraz LTE w drukarce przemysłowej. Zebra oferuje lepsze zdalne zarządzanie flotą (Link-OS vs Printer Edge — Link-OS jest bardziej dojrzały), szerszy wybór modeli w segmencie ekonomicznym ([ZD220](/produkt/zebra-zd220d) od 639 zł — Honeywell zaczyna od ~1 500 zł) i znacznie lepszą dostępność [serwisu w Polsce](https://www.serwis-zebry.pl/serwis-drukarek-zebra). Honeywell wyróżnia się hardware: metalowa konstrukcja w PD45/PM45/PX, ekran LCD 3,5" w biurkowej PC45 (Zebra ZD421 ma tylko LED lub mały LCD 2,6"), Wi-Fi 6 w standardzie i Smart Parse do modyfikacji etykiet bez zmian w IT. Cenowo porównywalnie w segmencie mid-range i premium. Rekomendacja: Zebra dla budowania floty od zera; Honeywell dla specyficznych wymagań (weryfikator, 406 dpi, LTE) lub firm z istniejącym ekosystemem Intermec/Honeywell.',
+      },
+      {
+        title: 'Drukarki biurkowe vs przemysłowe Honeywell — kiedy zmienić klasę?',
+        content:
+          'Drukarki biurkowe Honeywell ([PC45](/produkt/honeywell-pc45t), [PC42E-T](/produkt/honeywell-pc42e-t)) drukują do 200 mm/s, obsługują rolki do 127 mm średnicy i mają plastikową obudowę — wystarczające do 1 000 etykiet dziennie w biurze, na zapleczu sklepu lub w aptece. Drukarki przemysłowe ([PM45](/produkt/honeywell-pm45), [PX940](/produkt/honeywell-px940)) drukują 300–350 mm/s, obsługują rolki do 203 mm, mają metalową konstrukcję i są przystosowane do pracy 24/7. Półprzemysłowe [PD45](/produkt/honeywell-pd45) to „złoty środek" — metalowa obudowa, 200–250 mm/s, do 2 000 etykiet dziennie. Kiedy przejść na wyższą klasę? Gdy: drukujesz >1 000 etykiet/dzień, pracujesz na więcej niż jedną zmianę, potrzebujesz rozdzielczości 406/600 dpi, opcji RFID lub weryfikatora kodów, albo drukarka stoi na hali (pył, wilgoć, wibracje).',
+      },
+      {
+        title: 'Honeywell PM45 vs PM65 — 4 cale vs 6 cali',
+        content:
+          '[PM45](/produkt/honeywell-pm45) (4"): max szerokość etykiety 104 mm (4,09"), prędkość 350 mm/s, rozdzielczości 203/300/406/600 dpi, opcja LTE/RFID, od 4 823 zł. [PM65](/produkt/honeywell-pm65) (6"): max szerokość 152,4 mm (6"), prędkość 300 mm/s, rozdzielczości 203/300 dpi, opcja Wi-Fi 6/RFID, od ~7 500 zł. PM65 jest niezbędny do: etykiet paletowych GS1-128/SSCC (standard logistyczny), oznaczeń kartonów zbiorczych, szerokich etykiet na kontenery i regały. PM45 wystarczy do: etykiet produktowych, adresowych, lokalizacyjnych, kod 2D, kabli. Konkurencja: [Zebra ZT421](/produkt/zebra-zt421) (6") od ~6 780 zł, [ZT620](/produkt/zebra-zt620) (6,6") od 8 950 zł — Honeywell PM65 to środek cenowy.',
+      },
+      {
+        title: 'Honeywell PX940 vs PX45 — weryfikator czy standard?',
+        content:
+          '[PX940](/produkt/honeywell-px940) (od ~8 500 zł): 350 mm/s, 203/300 dpi, opcjonalny wbudowany weryfikator kodów 1D/2D (ISO 15416/15415), precyzja ±0,2 mm, metalowa obudowa. [PX45](/produkt/honeywell-px45) (od ~4 900 zł): 300 mm/s, 203/300 dpi, QuickMount (montaż z boku stołu), metalowa obudowa. PX940 z weryfikatorem jest niezbędny w: farmacji (FMD/MDR — weryfikacja GS1 DataMatrix na opakowaniach leków), motoryzacji (AIAG B-17 — weryfikacja kodów na częściach), elektronice (IPC-1066 — weryfikacja kodów na PCB), oraz wszędzie gdzie regulacje wymagają udokumentowanej jakości kodu. Bez wymagań weryfikacyjnych: PX45 oferuje 80% możliwości PX940 za 58% ceny.',
+      },
+      {
+        title: 'Honeywell PC45 vs PC42E-T — która biurkowa?',
+        content:
+          '[PC45t](/produkt/honeywell-pc45t) (~2 200 zł): LCD 3,5", Wi-Fi 6 w standardzie, 200 mm/s, 203/300 dpi, modułowa (gilotyna, odklejak). [PC42E-T](/produkt/honeywell-pc42e-t) (~1 700 zł): bez wyświetlacza (LED), USB+Ethernet (bez Wi-Fi), 150 mm/s, 203/300 dpi, tryb ECO. PC42E-T to wybór budżetowy — najtańsza Honeywell z Ethernetem, wystarczająca do 200–300 etykiet/dzień w prostym scenariuszu. PC45t to inwestycja w komfort i przyszłość — LCD ułatwia diagnostykę, Wi-Fi 6 daje elastyczność rozmieszczenia, wyższa prędkość skraca czas druku o 25%. Obie obsługują ZPL II, DPL, IPL, EPL2.',
+      },
+    ],
+    howToSteps: [
+      {
+        name: 'Dobór modelu i konfiguracji Honeywell',
+        text: 'Określ dzienny wolumen druku, technologię (termiczna PC45d / termotransferowa PC45t, PD45, PM45, PX940), rozdzielczość (203/300/406/600 dpi), łączność (USB/Ethernet/Wi-Fi 6/LTE) i opcje dodatkowe (RFID, weryfikator, gilotyna, odklejak). Skonsultuj się z doradcą TAKMA — pomagamy dobrać optymalny model na podstawie parametrów i budżetu, uwzględniając istniejącą infrastrukturę (flota Zebra/Intermec/Datamax?) i plan rozwoju.',
+      },
+      {
+        name: 'Instalacja fizyczna i podłączenie',
+        text: 'Ustaw drukarkę na stabilnej powierzchni. Podłącz kabel zasilający i interfejs komunikacyjny: USB (plug & play), Ethernet (DHCP lub statyczny IP), Wi-Fi 6 (konfiguracja przez USB Setup Wizard lub panel LCD w PC45/PM45). Zainstaluj sterownik Honeywell z pakietu PrintSet lub użyj sterownika Windows Generic. Załaduj rolkę etykiet i (opcjonalnie) taśmę barwiącą wg instrukcji modelu.',
+      },
+      {
+        name: 'Konfiguracja i kalibracja',
+        text: 'Przeprowadź kalibrację czujnika mediów — automatyczna (Feed + Pause) lub przez menu LCD (PC45, PM45, PX940). Ustaw parametry: prędkość, ciemność (darkness/heat), tryb wydruku (tear-off/peel-off/cutter), emulację języka (ZPL, DPL, IPL, EPL2, PDF Direct). W modelach z LCD konfiguracja z panelu drukarki. W modelach bez LCD (PC42E-T, PD45 bez ekranu) — przez oprogramowanie PrintSet 5 (USB/sieć) lub komendy konfiguracyjne.',
+      },
+      {
+        name: 'Integracja z systemem WMS/ERP',
+        text: 'Skonfiguruj szablony etykiet w języku ZPL II (kompatybilnym z Zebrą) lub DPL/IPL (natywne Honeywell). Integracja przez sterownik druku, bezpośredni socket TCP (port 9100) lub Printer Edge API. Przetestuj druk próbnych etykiet ze wszystkimi kodami (EAN-13, GS1-128, DataMatrix, QR). Kompatybilność z: SAP WM, Oracle WMS, Comarch WMS, Manhattan, Blue Yonder, BaseLinker, Shoper, PrestaShop — przez standardowy protokół druku.',
+      },
+      {
+        name: 'Szkolenie operatorów i plan konserwacji',
+        text: 'Przeszkol operatorów z: wymiany etykiet i taśmy, kalibracji (Feed+Pause), czyszczenia głowicy alkoholem izopropylowym co 1 000 etykiet, rozpoznawania błędów (media out, ribbon out, head open). Plan konserwacji: czyszczenie wałka co tydzień, czujników co miesiąc, przegląd serwisowy co 12 miesięcy. Zarejestruj drukarkę w TAKMA — zapewniamy wsparcie techniczne, oryginalne części zamienne i serwis. Kontakt: [kontakt](/kontakt) lub e-mail kontakt@takma.com.pl.',
+      },
+    ],
+  },
 }

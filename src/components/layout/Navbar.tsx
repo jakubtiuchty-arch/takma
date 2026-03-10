@@ -37,6 +37,7 @@ const navigation: NavItem[] = [
     children: [
       { name: 'Wszystkie drukarki', href: '/drukarki-etykiet' },
       { name: 'Drukarki Zebra', href: '/drukarki-etykiet-zebra' },
+      { name: 'Drukarki Honeywell', href: '/drukarki-etykiet-honeywell' },
       { name: 'Drukarki biurkowe', href: '/biurkowe-drukarki-etykiet' },
       { name: 'Drukarki przemysłowe', href: '/przemyslowe-drukarki-etykiet' },
       { name: 'Drukarki termotransferowe', href: '/termotransferowe-drukarki-etykiet' },
