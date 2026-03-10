@@ -116,6 +116,7 @@ export async function middleware(request: NextRequest) {
       'honeywell-rpf-bateria-2500mah', 'honeywell-rpf-etui-ochronne',
       'honeywell-rpf-battery-eliminator', 'honeywell-rpf-zasilacz-ac-eu',
       'honeywell-rpf-klips-do-paska', 'honeywell-rpf-kabel-zapalniczka',
+      'honeywell-rp4f-bateria-4900mah', 'honeywell-rp4f-etui-ochronne', 'honeywell-rp4f-battery-eliminator',
       // Skanery
       'zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds8178', 'zebra-li2208',
       'zebra-ds3608-xr', 'zebra-ds3608-sr', 'zebra-ds3608-hd', 'zebra-ds3608-hp',
