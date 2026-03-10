@@ -112,7 +112,7 @@ export async function middleware(request: NextRequest) {
       'honeywell-px940-interfejs-rownolegl', 'honeywell-px940-interfejs-przemyslowy',
       'honeywell-px940-interfejs-aplikatora', 'honeywell-px940-modul-wifi',
       // Drukarki mobilne Honeywell
-      'honeywell-rp2',
+      'honeywell-rp2', 'honeywell-rp2f', 'honeywell-rp4f',
       // Skanery
       'zebra-ds2208', 'zebra-ds4608', 'zebra-ds8208', 'zebra-ds8178', 'zebra-li2208',
       'zebra-ds3608-xr', 'zebra-ds3608-sr', 'zebra-ds3608-hd', 'zebra-ds3608-hp',
