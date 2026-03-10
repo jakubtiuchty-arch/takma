@@ -9852,12 +9852,6 @@ Natywna obsługa CPCL, ZPL II, DPL (Datamax), IPL (Intermec) i XML z automatyczn
         priceFrom: 3109.78,
         availability: 'unavailable' as const,
       },
-      {
-        partNumber: 'RP2A0000C30',
-        name: 'RP2 Bluetooth + Wi-Fi + NFC — standard',
-        attributes: { 'Wi-Fi': 'Tak' },
-        availability: 'unavailable' as const,
-      },
     ],
     faq: [
       { question: 'Czy Honeywell RP2 jest odporna na upadki i warunki zewnętrzne?', answer: 'Tak — Honeywell RP2 wytrzymuje upadki z 2 m na beton, 1000 upadków obrotowych z 0,5 m i spełnia normę IP54 (ochrona przed pyłem i bryzgami wody). Działa w temperaturze od -20°C do +55°C, co pozwala na pracę w chłodniach, na rampach załadunkowych i w pełnym słońcu. To najwyższy drop spec i najszerszy zakres temperatury w klasie mobilnych drukarek 2-calowych.' },
