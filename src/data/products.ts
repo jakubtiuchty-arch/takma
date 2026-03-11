@@ -34106,7 +34106,7 @@ const honeywellTablets: Product[] = [
     id: 'honeywell-eda10a',
     slug: 'honeywell-eda10a',
     createdAt: '2026-03-11',
-    name: 'Honeywell EDA10A',
+    name: 'Tablet Honeywell EDA10A',
     seoTitle: 'Honeywell EDA10A — tablet przemysłowy 10" z hot-swap baterii | TAKMA',
     seoDescription: 'Honeywell EDA10A ScanPal — tablet przemysłowy 10,1" FHD, Android 12-14, skaner S0703 1D/2D, IP65, bateria 8000 mAh hot-swap. Wi-Fi 6 lub 5G. Do magazynu, retailu i serwisu terenowego. Cena B2B od 4 071 zł netto.',
     shortDescription: 'Honeywell EDA10A — tablet przemysłowy 10,1" FHD ze skanerem 1D/2D, IP65, bateria 8000 mAh hot-swap, Wi-Fi 6 lub 5G',
