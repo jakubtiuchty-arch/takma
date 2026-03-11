@@ -24063,7 +24063,6 @@ Wersja Wi-Fi-only z łącznością Wi-Fi 6/6E, Bluetooth 5.3 i NFC Multi-Side. S
       {
         partNumber: '944950001',
         name: 'Memor 12 Wi-Fi 6E, 6/64 GB, Android 13',
-        price: 2687,
         priceFrom: 2687,
         availability: 'available' as const,
         attributes: {},
