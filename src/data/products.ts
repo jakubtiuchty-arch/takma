@@ -34444,6 +34444,132 @@ Pełna specyfikacja techniczna, warianty konfiguracyjne i ceny B2B dostępne pon
       },
     ],
   },
+  {
+    id: 'honeywell-rt10w',
+    slug: 'honeywell-rt10w',
+    createdAt: '2026-03-11',
+    name: 'Tablet Honeywell RT10W',
+    seoTitle: 'Honeywell RT10W — tablet przemysłowy 10" z Windows IoT Enterprise | TAKMA',
+    seoDescription: 'Honeywell RT10W tablet rugged z Windows 10 IoT Enterprise LTSC: ekran 800 nit, skaner 1D/2D, Intel Pentium N4200, 8 GB RAM, 128 GB SSD, IP65, hot-swap bateria. Do magazynu i produkcji. Cena B2B od 12 024 zł netto.',
+    shortDescription: 'Honeywell RT10W — tablet przemysłowy 10,1" z Windows 10 IoT Enterprise, ekran 800 nit, skaner 1D/2D, 8/128 GB, IP65',
+    description: `Honeywell RT10W to wersja Windows tabletu przemysłowego RT10 — dla firm, które potrzebują pełnej kompatybilności z aplikacjami Windows na wytrzymałym urządzeniu mobilnym. System Windows 10 IoT Enterprise LTSC 2021 z procesorem Intel Pentium N4200 (x86, quad-core) pozwala uruchamiać standardowe aplikacje Windows, w tym legacy WMS, ERP, SAP i oprogramowanie przemysłowe — bez emulacji i portowania.
+
+Honeywell RT10W dzieli obudowę z [wersją Android RT10A](/produkt/honeywell-rt10a) — ten sam najjaśniejszy ekran 800 nit w klasie, IP65, MIL-STD-810G i bateria hot-swap. Kluczowe różnice to procesor Intel x86 (zamiast ARM), 8 GB RAM, 128 GB SSD i system Windows. Wbudowany skaner Honeywell N6703 odczytuje kody 1D i 2D na wyrobach, paletach i etykietach logistycznych.
+
+Typowe zastosowania Honeywell RT10W to magazyny i hale produkcyjne, w których pracownicy potrzebują dostępu do aplikacji Windows na mobilnym urządzeniu z dużym ekranem i skanerem. Bateria hot-swap 5 900 mAh (do 12h) lub rozszerzona 10 280 mAh (do 20h) eliminuje przestoje przy pracy wielozmianowej.
+
+Pełna specyfikacja techniczna i ceny B2B dostępne poniżej. Dodatkowe informacje w [dokumentacji producenta](https://automation.honeywell.com/us/en/products/productivity-solutions/mobile-computers/tablets/rt10-rugged-tablet-windows).`,
+    categoryId: 'tablety-przemyslowe',
+    subcategoryIds: ['tablety-przemyslowe'],
+    sameAs: 'https://automation.honeywell.com/us/en/products/productivity-solutions/mobile-computers/tablets/rt10-rugged-tablet-windows',
+    manufacturerId: 'honeywell',
+    priceFrom: 12024.35,
+    images: [
+      '/images/products/RT10W-1.png',
+      '/images/products/RT10W-2.png',
+    ],
+    imageDescriptions: [
+      'Honeywell RT10W — widok z przodu, ekran 10,1 cala 800 nit z interfejsem Windows 10 IoT',
+      'Honeywell RT10W — widok z tyłu, kamera 8 MP, gniazdo baterii hot-swap i rysik',
+    ],
+    tags: ['magazyn', 'produkcja', 'logistyka'] as ProductTag[],
+    availability: 'available',
+    isNew: false,
+    isBestseller: false,
+    applications: [
+      'Magazyn z legacy WMS — pełna kompatybilność z aplikacjami Windows bez portowania',
+      'Produkcja i kontrola jakości — dostęp do oprogramowania przemysłowego (SAP, SCADA)',
+      'Logistyka i cross-docking — duży ekran 800 nit do weryfikacji dokumentacji',
+      'Stanowisko stacjonarne — dock biurkowy RT10-CD z Ethernet, VGA, USB',
+    ],
+    specifications: [
+      { name: 'System operacyjny', value: 'Windows 10 IoT Enterprise LTSC 2021 (64-bit)' },
+      { name: 'Procesor', value: 'Intel Pentium N4200 Apollo Lake, quad-core, 1,1 GHz (boost 2,5 GHz)' },
+      { name: 'Pamięć RAM', value: '8 GB' },
+      { name: 'Pamięć wewnętrzna', value: '128 GB SSD' },
+      { name: 'Slot kart pamięci', value: 'microSDXC do 512 GB' },
+      { name: 'Wyświetlacz', value: '10,1" IPS, 1920 × 1200 (WUXGA), 800 nit, optically bonded' },
+      { name: 'Dotyk', value: 'Pojemnościowy multi-touch, obsługa rękawic (do 2 mm)' },
+      { name: 'Skaner', value: 'Honeywell N6703, 1D/2D Standard Range' },
+      { name: 'Kamera tylna', value: '8 MP z autofocusem i LED flash' },
+      { name: 'Kamera przednia', value: '2 MP' },
+      { name: 'Bateria standardowa', value: '5 900 mAh Li-Polymer, hot-swap, do 12h pracy' },
+      { name: 'Bateria rozszerzona', value: '10 280 mAh Li-Polymer, hot-swap, do 20h pracy' },
+      { name: 'Klasa ochrony', value: 'IP65 (pyłoszczelny + strumienie wody)' },
+      { name: 'Odporność na upadki', value: '1,2 m na beton, MIL-STD-810G' },
+      { name: 'Wi-Fi', value: '802.11 a/b/g/n/ac (Wi-Fi 5), 2×2 MIMO' },
+      { name: 'Bluetooth', value: '5.0 z BLE' },
+      { name: 'NFC', value: 'Tak (wbudowane)' },
+      { name: 'USB', value: 'USB 3.0 Type-C + USB 3.0 Type-A' },
+      { name: 'Wyjście wideo', value: 'Micro HDMI' },
+      { name: 'Audio', value: '3,5 mm combo jack' },
+      { name: 'Slot Kensington', value: 'Tak' },
+      { name: 'Wymiary', value: '271,9 × 198,3 × 19,5 mm' },
+      { name: 'Waga', value: '1 200 g (z baterią standardową)' },
+      { name: 'Temperatura pracy', value: '-10°C do +50°C (bateria)' },
+      { name: 'Gwarancja', value: '3 lata' },
+    ],
+    variants: [
+      {
+        partNumber: 'RT10W-L00-17C12S0E',
+        name: 'Wi-Fi, Standard Range, 8/128 GB, Windows 10 IoT',
+        priceFrom: 12024.35,
+        availability: 'available',
+        attributes: {
+          'Skaner': 'N6703 Standard Range',
+          'Bateria': '5 900 mAh',
+        },
+      },
+    ],
+    relatedAccessories: [
+      'honeywell-rt10a-bateria-standardowa',
+      'honeywell-rt10a-bateria-rozszerzona',
+      'honeywell-rt10a-ladowarka-baterii',
+      'honeywell-rt10a-hand-strap',
+      'honeywell-rt10a-folia-ochronna',
+      'honeywell-rt10a-zasilacz',
+    ],
+    compatibleAccessories: [],
+    downloads: [],
+    faq: [
+      {
+        question: 'Jaki system operacyjny ma Honeywell RT10W?',
+        answer: 'Honeywell RT10W działa na Windows 10 IoT Enterprise LTSC 2021 (64-bit) z procesorem Intel Pentium N4200 (x86). Wersja LTSC zapewnia długi cykl wsparcia i stabilność — bez wymuszonych aktualizacji funkcyjnych Windows.',
+      },
+      {
+        question: 'Czym różni się Honeywell RT10W od RT10A?',
+        answer: 'RT10W to wersja Windows, [RT10A](/produkt/honeywell-rt10a) to Android. Obudowa, ekran 800 nit, IP65 i baterie hot-swap są identyczne. RT10W ma procesor Intel x86 (8 GB RAM, 128 GB SSD), RT10A — Qualcomm ARM (4 GB RAM, 32 GB). RT10W jest droższy, ale uruchamia natywne aplikacje Windows. RT10A ma lepsze aparaty (13 MP vs 8 MP) i ścieżkę aktualizacji Android 9→14.',
+      },
+      {
+        question: 'Ile trwa praca na baterii Honeywell RT10W?',
+        answer: 'Bateria standardowa 5 900 mAh zapewnia do 12 godzin pracy, rozszerzona 10 280 mAh — do 20 godzin. Obie są wymienne w trybie hot-swap bez wyłączania tabletu. Baterie są wspólne z wersją [RT10A](/produkt/honeywell-rt10a).',
+      },
+      {
+        question: 'Czy Honeywell RT10W uruchamia standardowe aplikacje Windows?',
+        answer: 'Tak — procesor Intel x86 pozwala uruchamiać pełne aplikacje Windows (ERP, WMS, SAP, SCADA, Office, przeglądarki) natywnie, bez emulacji. To kluczowa przewaga nad tabletami ARM z Android lub Windows on ARM.',
+      },
+      {
+        question: 'Jaka jest wytrzymałość tabletu Honeywell RT10W?',
+        answer: 'Honeywell RT10W posiada certyfikat IP65 (pyłoszczelność + strumienie wody) i wytrzymuje upadki z 1,2 m na beton (MIL-STD-810G). Ekran 800 nit z optically bonded jest czytelny w pełnym słońcu i obsługuje rękawice do 2 mm.',
+      },
+      {
+        question: 'Jakie akcesoria pasują do Honeywell RT10W?',
+        answer: 'RT10W i RT10A dzielą tę samą obudowę — wszystkie akcesoria RT10 są kompatybilne: baterie (RT10-BAT-STD1, RT10-BAT-EXT1), ładowarka 2-gniazdowa (RT10-BC-2), dock biurkowy (RT10-CD), doki pojazdowe (RT10-VD, RT10-EVD), uchwyty VESA, hand strap (RT10-HS-1) i zasilacz (RT10-PWR).',
+      },
+      {
+        question: 'Czy Honeywell RT10W nadaje się do pracy na wózku widłowym?',
+        answer: 'Tak — dostępne są doki pojazdowe RT10-VD (9-36V) i RT10-EVD (10-60V) z Ethernet, USB, RS-232 i mocowaniem VESA 75×75. Wbudowany skaner N6703 skanuje kody 1D/2D z kilku metrów.',
+      },
+      {
+        question: 'Czy Honeywell RT10W ma wyjście wideo na zewnętrzny monitor?',
+        answer: 'Tak — RT10W posiada port Micro HDMI do podłączenia monitora zewnętrznego. Dodatkowo dock biurkowy RT10-CD ma wyjście VGA. Idealne do pracy w trybie stacji roboczej z klawiaturą i myszą.',
+      },
+      {
+        question: 'Jakie są alternatywy dla tabletu Honeywell RT10W z Windows?',
+        answer: 'Alternatywy z Windows: Getac F110 (11,6", IP66, Intel Core), Panasonic Toughbook G2 (10,1", IP65, Intel Core), Zebra XSLATE L10 (10,1", IP65, Intel). Jeśli Android wystarczy — [Honeywell RT10A](/produkt/honeywell-rt10a) (ta sama obudowa, niższa cena) lub [Honeywell EDA10A](/produkt/honeywell-eda10a) (entry-level, Wi-Fi 6, 5G).',
+      },
+    ],
+  },
 ]
 
 // ============================================
