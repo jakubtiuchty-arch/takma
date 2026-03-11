@@ -47,7 +47,7 @@ function RichText({ text, className }: { text: string; className?: string }) {
                   <thead>
                     <tr className="bg-gray-50 border-b border-gray-200">
                       {table.header.map((h, hi) => (
-                        <th key={hi} className="text-left px-3 py-2 font-semibold text-gray-900 whitespace-nowrap text-xs">{h}</th>
+                        <th key={hi} className="text-left px-3 py-2 font-semibold text-gray-900 whitespace-nowrap text-xs"><LinkedText text={h} /></th>
                       ))}
                     </tr>
                   </thead>
@@ -286,7 +286,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
 
                 <section className="bg-gray-50 rounded-xl p-6">
                   <h2 className="text-lg font-bold text-gray-900 mb-2">Dlaczego TAKMA?</h2>
-                  <p className="text-gray-600 leading-relaxed text-sm sm:text-justify"><LinkedText text={content.expertAuthority} /></p>
+                  <RichText text={content.expertAuthority} className="text-gray-600 leading-relaxed text-sm sm:text-justify space-y-2" />
                 </section>
 
                 <section>
@@ -337,8 +337,8 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                             <tbody>
                               {rows.map((row, i) => (
                                 <tr key={i} className="border-b border-gray-100 hover:bg-gray-50/50">
-                                  <td className="px-3 py-2.5 font-medium text-gray-900 whitespace-nowrap align-top">{row.model}</td>
-                                  <td className="px-3 py-2.5 text-gray-500 text-xs leading-relaxed align-top">{row.specs}</td>
+                                  <td className="px-3 py-2.5 font-medium text-gray-900 whitespace-nowrap align-top"><LinkedText text={row.model} /></td>
+                                  <td className="px-3 py-2.5 text-gray-500 text-xs leading-relaxed align-top"><LinkedText text={row.specs} /></td>
                                   <td className="px-3 py-2.5 text-primary-600 font-semibold whitespace-nowrap align-top">{row.price || '—'}</td>
                                   <td className="px-3 py-2.5 text-gray-600 text-xs hidden md:table-cell align-top">{row.desc || '—'}</td>
                                 </tr>
