@@ -1,6 +1,22 @@
 import Link from 'next/link'
 
-/** Renders text with markdown-style links [text](/url) or [text](https://...) */
+/** Renders inline text with bold (**text**) support */
+function BoldText({ text }: { text: string }) {
+  const parts = text.split(/(\*\*[^*]+\*\*)/)
+  return (
+    <>
+      {parts.map((part, i) => {
+        const boldMatch = part.match(/^\*\*([^*]+)\*\*$/)
+        if (boldMatch) {
+          return <strong key={i} className="font-semibold text-gray-900">{boldMatch[1]}</strong>
+        }
+        return <span key={i}>{part}</span>
+      })}
+    </>
+  )
+}
+
+/** Renders text with markdown-style links [text](/url) and **bold** */
 export default function LinkedText({ text }: { text: string }) {
   const parts = text.split(/(\[[^\]]+\]\([^)]+\))/)
   return (
@@ -15,7 +31,7 @@ export default function LinkedText({ text }: { text: string }) {
           }
           return <Link key={i} href={href} className="text-primary-600 hover:text-primary-800 underline decoration-primary-300">{label}</Link>
         }
-        return <span key={i}>{part}</span>
+        return <BoldText key={i} text={part} />
       })}
     </>
   )

@@ -19,12 +19,54 @@ function stripMarkdownLinks(text: string): string {
   return text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
 }
 
-/** Renders text with \n\n paragraph breaks */
+/** Parse a markdown table block into header + rows */
+function parseMarkdownTable(block: string) {
+  const lines = block.split('\n').filter(l => l.trim().startsWith('|'))
+  if (lines.length < 3) return null // need header + separator + at least 1 row
+  const parse = (line: string) => line.split('|').slice(1, -1).map(c => c.trim())
+  const header = parse(lines[0])
+  // lines[1] is separator (|---|---|)
+  const rows = lines.slice(2).map(parse)
+  return { header, rows }
+}
+
+/** Renders text with \n\n paragraph breaks and markdown table support */
 function RichText({ text, className }: { text: string; className?: string }) {
   const paragraphs = text.split('\n\n')
   return (
     <div className={className}>
       {paragraphs.map((para, i) => {
+        // Check if this paragraph is a markdown table
+        const trimmed = para.trim()
+        if (trimmed.startsWith('|') && trimmed.includes('|---|')) {
+          const table = parseMarkdownTable(trimmed)
+          if (table) {
+            return (
+              <div key={i} className="overflow-x-auto -mx-4 px-4 my-2">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="bg-gray-50 border-b border-gray-200">
+                      {table.header.map((h, hi) => (
+                        <th key={hi} className="text-left px-3 py-2 font-semibold text-gray-900 whitespace-nowrap text-xs">{h}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {table.rows.map((row, ri) => (
+                      <tr key={ri} className="border-b border-gray-100 hover:bg-gray-50/50">
+                        {row.map((cell, ci) => (
+                          <td key={ci} className={`px-3 py-2 text-xs align-top ${ci === 0 ? 'font-medium text-gray-900 whitespace-nowrap' : 'text-gray-600'}`}>
+                            <LinkedText text={cell} />
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )
+          }
+        }
         const lines = para.split('\n')
         return (
           <p key={i}>
