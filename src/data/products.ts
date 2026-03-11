@@ -34262,12 +34262,10 @@ Pełna specyfikacja techniczna, warianty konfiguracyjne i ceny B2B dostępne pon
     images: [
       '/images/products/RT10A-1.png',
       '/images/products/RT10A-2.png',
-      '/images/products/RT10A-3.png',
     ],
     imageDescriptions: [
-      'Honeywell RT10A — widok z przodu, ekran 10,1 cala 800 nit z interfejsem Android',
-      'Honeywell RT10A — widok z tyłu, kamera 13 MP i logo Honeywell',
-      'Honeywell RT10A — widok perspektywiczny, wzmocniona obudowa IP65',
+      'Honeywell RT10A — widok z przodu, ekran 10,1 cala 800 nit z interfejsem Android i czerwonym paskiem nawigacji',
+      'Honeywell RT10A — widok z tyłu, kamera 13 MP, rysik, wymienne gniazdo baterii hot-swap',
     ],
     tags: ['magazyn', 'retail', 'produkcja', 'logistyka', 'outdoor'] as ProductTag[],
     availability: 'available',
