@@ -128,7 +128,7 @@ export async function middleware(request: NextRequest) {
       'honeywell-eda10a-stacja-ladujaca', 'honeywell-eda10a-ladowarka-baterii', 'honeywell-eda10a-folia-ochronna',
       'honeywell-rt10a',
       'honeywell-rt10a-bateria-standardowa', 'honeywell-rt10a-bateria-rozszerzona',
-      'honeywell-rt10a-ladowarka-baterii', 'honeywell-rt10a-hand-strap', 'honeywell-rt10a-folia-ochronna',
+      'honeywell-rt10a-ladowarka-baterii', 'honeywell-rt10a-hand-strap', 'honeywell-rt10a-folia-ochronna', 'honeywell-rt10a-zasilacz',
       // Oprogramowanie
       'zebra-cardstudio',
     ])
