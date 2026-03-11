@@ -34192,7 +34192,7 @@ Honeywell EDA10A łączy duży ekran tabletu z odpornością, baterią i skanere
       'honeywell-eda10a-ladowarka-baterii',
       'honeywell-eda10a-folia-ochronna',
     ],
-    relatedProducts: ['zebra-et40', 'zebra-et45', 'zebra-et401'],
+    relatedProducts: ['honeywell-rt10a', 'honeywell-rt10w', 'zebra-et40', 'zebra-et45', 'zebra-et401'],
     downloads: [
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/ppr/en-us/public/products/mobile-computers/tablets/eda10a/documents/sps-ppr-scanpal-eda10a-tablet-data-sheet-en-row.pdf', size: 'PDF' },
     ],
@@ -34391,6 +34391,7 @@ Pełna specyfikacja techniczna, warianty konfiguracyjne i ceny B2B dostępne pon
       'Bateria': 'Standardowa 5 900 mAh (12h) lub rozszerzona 10 280 mAh (20h) — obie hot-swap',
       'GMS': 'Google Mobile Services — dostęp do Google Play, Maps, Chrome. Warianty bez GMS dla sieci zamkniętych',
     },
+    relatedProducts: ['honeywell-rt10w', 'honeywell-eda10a', 'zebra-et40', 'zebra-et45'],
     relatedAccessories: [
       'honeywell-rt10a-bateria-standardowa',
       'honeywell-rt10a-bateria-rozszerzona',
@@ -34521,6 +34522,7 @@ Pełna specyfikacja techniczna i ceny B2B dostępne poniżej. Dodatkowe informac
         },
       },
     ],
+    relatedProducts: ['honeywell-rt10a', 'honeywell-eda10a', 'zebra-et40', 'zebra-et45'],
     relatedAccessories: [
       'honeywell-rt10a-bateria-standardowa',
       'honeywell-rt10a-bateria-rozszerzona',
