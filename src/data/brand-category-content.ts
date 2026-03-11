@@ -1028,7 +1028,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
   // ===================================================================
   'tablety-honeywell': {
     definition: {
-      heading: 'Tablety przemysłowe Honeywell — Android i Windows 10,1" z FlexRange do 10,7 m',
+      heading: 'Tablety przemysłowe Honeywell — Android i Windows 10,1"',
       content: 'Honeywell to drugi co do wielkości producent urządzeń enterprise na świecie. Oferta obejmuje trzy tablety 10,1" na odmienne scenariusze:\n\n[ScanPal EDA10A](/produkt/honeywell-eda10a) — entry-level Android. Snapdragon SM4350, Wi-Fi 6, opcja 5G, **674 g**, od **4 071 zł**. Do retailu, e-commerce i pracy terenowej.\n\n[RT10A](/produkt/honeywell-rt10a) — enterprise Android z Mobility Edge. **FlexRange N6803** skanujący od 10 cm do 10,7 m, ekran **800 nit**, od **11 229 zł**. Do montażu na wózkach widłowych w magazynach wysokiego składowania.\n\n[RT10W](/produkt/honeywell-rt10w) — enterprise Windows (LTSC 2021, wsparcie do 2032). **Intel Pentium N4200**, 8 GB RAM, 128 GB SSD, od **12 024 zł**. Natywnie uruchamia SAP GUI, Comarch WMS, SCADA, AutoCAD — bez emulacji.\n\nKluczowe przewagi: **FlexRange N6803** (dual-lens, jedyny tablet skanujący z 10+ m), **Mobility Edge** (aktualizacje Android przez 4–5 generacji), **Operational Intelligence** (monitoring upadków z pomiarem wysokości), hot-swap baterii we wszystkich modelach, IP65/MIL-STD-810G/H. TAKMA oferuje kompletną linię z doradztwem, porównaniem TCO z [tabletami Zebra](/tablety-przemyslowe-zebra) i serwisem w Polsce.',
     },
     buyingGuide: {

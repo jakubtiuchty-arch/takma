@@ -310,12 +310,12 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                       const colonIdx = text.indexOf('):')
                       const model = colonIdx > 0 ? text.substring(0, colonIdx + 1) : ''
                       const rest = colonIdx > 0 ? text.substring(colonIdx + 2).trim() : text
-                      const priceMatch = rest.match(/od\s+[\d\s]+zł(?:\s*netto)?/)
+                      const priceMatch = rest.match(/[Oo]d\s+[\d\s]+zł(?:\s*netto)?/)
                       const price = priceMatch ? priceMatch[0].replace(' netto', '') : ''
                       const dashParts = rest.split(' — ')
                       const desc = dashParts.length > 1 ? dashParts[dashParts.length - 1].replace(/\.$/, '') : ''
                       const specsPart = dashParts.length > 1 ? dashParts.slice(0, -1).join(' — ') : rest
-                      const specs = specsPart.replace(/,?\s*od\s+[\d\s]+zł(?:\s*netto)?/, '').trim().replace(/\.$/, '')
+                      const specs = specsPart.replace(/,?\s*[Oo]d\s+[\d\s]+zł(?:\s*netto)?/, '').trim().replace(/\.$/, '')
                       return { model, specs, price, desc }
                     })
 
