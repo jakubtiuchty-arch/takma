@@ -116,7 +116,9 @@ function extractAttribute(xml: string, tag: string, attr: string): string | null
  */
 function toIngramItemId(partNumber: string): string {
   const upper = partNumber.toUpperCase()
-  if (upper.startsWith('ZB') || upper.startsWith('SB') || upper.startsWith('N1') || upper.startsWith('ON')) return upper
+  if (upper.startsWith('ZB') || upper.startsWith('SB') || upper.startsWith('N1') || upper.startsWith('ON') || upper.startsWith('DT')) return upper
+  // Datalogic products (terminals/scanners 94xxxx, 99xxxx)
+  if (upper.startsWith('94') || upper.startsWith('99')) return 'DT' + upper
   // Honeywell products (terminals CT/CK/EDA, printers PX/PM/PD/PC, scanners 14xx/19xx/21xx, accessories/batteries 50xxx/225xxx)
   if (upper.startsWith('CT7') || upper.startsWith('CT3') || upper.startsWith('CT4') || upper.startsWith('CK') || upper.startsWith('EDA') || upper.startsWith('RT') || upper.startsWith('PX') || upper.startsWith('PM') || upper.startsWith('PD') || upper.startsWith('PC4') || upper.startsWith('RP') || upper.startsWith('LNX') || upper.startsWith('501') || upper.startsWith('225') || upper.startsWith('211') || upper.startsWith('220') || upper.startsWith('280') || upper.startsWith('510') || upper.startsWith('750') || upper.startsWith('2105') || upper.startsWith('2100') || upper.startsWith('1990') || upper.startsWith('1991') || upper.startsWith('1962') || upper.startsWith('1960') || upper.startsWith('1470') || upper.startsWith('1472')) return 'ON' + upper
   // Newland products (terminals N7-*, MT93-*, MT95-*, accessories NLS-*, TPUN7*, SPN7*, BTY7*, BTY-MT*, HS-MT*, SPMT*)
@@ -371,8 +373,8 @@ export async function lookupStock(partNumbers: string[]): Promise<StockInfo[]> {
     }
     if (product.itemId) {
       byItemId.set(product.itemId.toUpperCase(), product)
-      // Mapuj też bez prefiksu ZB/SB/N1
-      const noZb = product.itemId.toUpperCase().replace(/^(ZB|SB|N1)/, '')
+      // Mapuj też bez prefiksu ZB/SB/N1/ON/DT
+      const noZb = product.itemId.toUpperCase().replace(/^(ZB|SB|N1|ON|DT)/, '')
       byItemId.set(noZb, product)
     }
   }
