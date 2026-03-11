@@ -34337,7 +34337,7 @@ const honeywellTabletAccessories: Product[] = [
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-tabletow'],
     manufacturerId: 'honeywell',
-    images: ['/images/products/EDA10A-SC-R.png'],
+    images: ['/images/products/EDA10A-DB-2.png'],
     imageDescriptions: ['Stacja dokująco-ładująca do tabletu Honeywell EDA10A'],
     tags: ['magazyn', 'retail'] as ProductTag[],
     availability: 'available',
