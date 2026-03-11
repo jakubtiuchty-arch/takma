@@ -24000,8 +24000,7 @@ const mc2xAccessories: Product[] = [
 // DATALOGIC - TERMINALE MOBILNE
 // ============================================
 
-// TODO: Datalogic tymczasowo wyłączony
-const datalogicMobileComputers: Product[] = [] /* [
+const datalogicMobileComputers: Product[] = [
   {
     id: 'datalogic-memor-11',
     slug: 'datalogic-memor-11',
@@ -24045,38 +24044,136 @@ Bateria 4100 mAh z technologią SafeSwap umożliwia wymianę bez wyłączania ur
     id: 'datalogic-memor-12',
     slug: 'datalogic-memor-12',
     name: 'Datalogic Memor 12',
-    shortDescription: 'Datalogic Memor 12 — smukły terminal mobilny 6" z Wi-Fi 6E i skanerem 2D',
-    description: `Datalogic Memor 12 to nowoczesny terminal mobilny o smukłej, smartfonowej konstrukcji z zaledwie 13.5 mm grubości. Duży 6-calowy ekran FHD+ z Gorilla Glass 7 zapewnia doskonałą czytelność i wygodę obsługi.
+    seoTitle: 'Datalogic Memor 12 — terminal mobilny 6" Wi-Fi 6E | od 2 687 zł netto',
+    seoDescription: 'Datalogic Memor 12 (944950001) — najsmuklejszy terminal mobilny enterprise: 13,5 mm, 245 g. Skaner Halogen 2D z Green Spot, Android 13→18, Wi-Fi 6E, IP65/IP67. SafeSwap hot-swap baterii, ładowanie Qi. Cena od 2 687 zł netto. Dostawa 2–5 dni.',
+    shortDescription: 'Datalogic Memor 12 — najsmuklejszy terminal mobilny 6" z Wi-Fi 6E, skanerem Halogen 2D i SafeSwap',
+    description: `Dla kogo? Datalogic Memor 12 to terminal mobilny klasy enterprise o najsmuklejszej obudowie w swojej kategorii — zaledwie 13,5 mm grubości i 245 g wagi. Idealny dla sieci handlowych, aptek, magazynów e-commerce i placówek medycznych, które potrzebują wytrzymałego urządzenia o ergonomii zbliżonej do smartfona.
 
-Platforma Qualcomm QCx4490 z 6 GB RAM i systemem Android 13 (z gwarancją aktualizacji do Android 18) zapewnia najwyższą wydajność i długoterminowe wsparcie. Zaawansowany skaner Halogen DE2121 z technologią DeepSight i Green Spot odczytuje nawet uszkodzone i słabo wydrukowane kody.
+Skaner Halogen DE2121-DL z technologią DeepSight i Green Spot odczytuje kody 1D/2D natychmiastowo — nawet uszkodzone, słabo wydrukowane lub wyświetlane na ekranie. Wizualny sygnał Green Spot potwierdza poprawny odczyt zielonym punktem na kodzie, eliminując błędy przy kompletacji zamówień. Technologia GS1 Digital Link-readiness przygotowuje firmę na nowy standard kodów 2D zastępujący tradycyjne kody kreskowe.
 
-Wersja Wi-Fi-only — idealna do pracy wewnątrz budynków: magazynów, sklepów, szpitali. Bateria 4000 mAh z bezprzewodowym ładowaniem Qi i technologią SafeSwap pozwala na wymianę baterii bez przerywania pracy. Klasa ochrony IP65/IP67.`,
+Unikalna technologia SafeSwap pozwala na wymianę baterii 4000 mAh bez wyłączania terminala — wewnętrzna bateria buforowa podtrzymuje zasilanie podczas wymiany. Trzy metody ładowania: szybkie USB-C, stacja dokująca z Ethernet lub bezprzewodowe Qi 7W. Bateria wystarcza na pełną zmianę roboczą (8+ godzin intensywnego skanowania).
+
+Wersja Wi-Fi-only z łącznością Wi-Fi 6/6E, Bluetooth 5.3 i NFC Multi-Side. System Android 13 z gwarancją aktualizacji do Android 18 (4+4 lata wsparcia sprzętowego i software'owego) — najdłuższy lifecycle w segmencie cenowym do 3 000 PLN. Pełna dokumentacja techniczna dostępna na stronie producenta datalogic.com.`,
     categoryId: 'terminale-mobilne',
+    subcategoryIds: ['terminale-mobilne'],
+    sameAs: 'https://www.datalogic.com/eng/retail-transportation-logistics-healthcare-gs1-digital-link/mobile-computers/memor-12-17-pd-1102.html',
     manufacturerId: 'datalogic',
-    priceFrom: 4490,
-    images: ['/images/products/datalogic-memor-12.jpg'],
-    imageDescriptions: ['Datalogic Memor 12 — widok z przodu'],
+    priceFrom: 2687,
+    images: [
+      '/images/products/944950001.png',
+      '/images/products/944950001_2.png',
+      '/images/products/944950001_3.png',
+    ],
+    imageDescriptions: [
+      'Datalogic Memor 12 — widok z przodu, ekran 6 cali FHD+ z Gorilla Glass 7 i skaner Halogen',
+      'Datalogic Memor 12 — widok z tyłu, kamera 13 MP i smukła obudowa 13,5 mm',
+      'Datalogic Memor 12 — widok pod kątem, profil smartfonowy z przyciskami skanowania',
+    ],
     tags: ['retail', 'magazyn', 'healthcare', 'logistyka'],
     availability: 'available',
     isNew: true,
     isBestseller: false,
     specifications: [
-      { name: 'System operacyjny', value: 'Android 13 (aktualizacja do Android 18)' },
+      { name: 'System operacyjny', value: 'Android 13 GMS (aktualizacja do Android 18)' },
       { name: 'Procesor', value: 'Qualcomm QCx4490 Octa-core 2.4 GHz' },
-      { name: 'Wyświetlacz', value: '6.0" FHD+ LTPS (1080x2160), Gorilla Glass 7' },
-      { name: 'Pamięć', value: '6 GB RAM, 64 GB Flash' },
-      { name: 'Skaner', value: 'Halogen DE2121-DL 2D z Green Spot i DeepSight' },
-      { name: 'Kamera', value: '13 MP tył, 8 MP przód' },
-      { name: 'Bateria', value: '4000 mAh Li-Ion, SafeSwap, ładowanie Qi' },
-      { name: 'Odporność', value: 'IP65/IP67, upadki z 1.3 m (1.5 m z etui), MIL-STD-810H' },
-      { name: 'Łączność', value: 'Wi-Fi 6/6E, Bluetooth 5.3, NFC' },
-      { name: 'Waga', value: '242 g z baterią' },
-      { name: 'Wymiary', value: '165 x 76.7 x 13.5 mm' },
+      { name: 'Wyświetlacz', value: '6.0" FHD+ LTPS 18:9 (1080×2160), 450 nit, Corning Gorilla Glass 7' },
+      { name: 'Pamięć', value: '6 GB RAM (+2 GB SWAP), 64 GB UFS Flash, microSD do 2 TB' },
+      { name: 'Skaner', value: 'Halogen DE2121-DL 1D/2D z Green Spot i DeepSight, GS1 Digital Link' },
+      { name: 'Kamera', value: '13 MP tył (autofokus, LED flash), 8 MP przód (stały fokus)' },
+      { name: 'Bateria', value: '4000 mAh Li-Ion, SafeSwap hot-swap, Qi EPP 7W, ~8h pracy' },
+      { name: 'Odporność', value: 'IP65/IP67, upadki 1,3 m (1,5 m z rubber boot), 500 tumble 0,5 m, MIL-STD-810H' },
+      { name: 'Łączność', value: 'Wi-Fi 6/6E (802.11ax) 2×2 MIMO WPA3, Bluetooth 5.3, NFC Multi-Side' },
+      { name: 'Lokalizacja', value: 'A-GPS, GPS Dual Band, Galileo Dual Band, BeiDou' },
+      { name: 'Sensory', value: 'Akcelerometr 3-osiowy, żyroskop, czujnik oświetlenia, zbliżenia, magnetometr' },
+      { name: 'Interfejsy', value: 'USB 3.2 Gen1 Type-C (Host + Client), USB 2.0 (Bottom I/O)' },
+      { name: 'Klawisze', value: '2 boczne skanera, PTT, Power, Volume Up/Down, 3 przyciski Android' },
+      { name: 'Temperatura pracy', value: '-10°C do +50°C (przechowywanie: -40°C do +70°C)' },
+      { name: 'ESD', value: '15 kV wyładowanie powietrzne / 8 kV kontaktowe' },
+      { name: 'Waga', value: '245 g z baterią' },
+      { name: 'Wymiary', value: '165 × 76,7 × 13,5 mm' },
     ],
-    applications: ['Sklepy internetowe — kompletacja', 'Zarządzanie magazynem', 'Inwentaryzacja', 'Obsługa pacjentów'],
+    applications: [
+      'Retail — weryfikacja cen, inwentaryzacja, obsługa klienta',
+      'Apteki i sieci apteczne — skanowanie DataMatrix na lekach',
+      'Magazyn e-commerce — kompletacja zamówień WMS',
+      'Healthcare — identyfikacja pacjentów, dokumentacja NFC',
+      'Logistyka — przyjęcia i wydania towarów',
+      'Gastronomia — zarządzanie zapasami i HACCP',
+    ],
+    comparison: {
+      title: 'Porównanie Datalogic Memor 12 z podobnymi terminalami',
+      models: [
+        {
+          name: 'Datalogic Memor 12',
+          slug: 'datalogic-memor-12',
+          highlight: true,
+          specs: {
+            'Cena od': '2 687 zł',
+            'Ekran': '6" FHD+ GG7',
+            'Procesor': 'QCx4490 2,4 GHz',
+            'RAM / Flash': '6 GB / 64 GB',
+            'Skaner': 'Halogen DE2121',
+            'Bateria': '4000 mAh SafeSwap',
+            'Ładowanie Qi': 'Tak (7W EPP)',
+            'Łączność': 'Wi-Fi 6E, BT 5.3',
+            'IP / Drop': 'IP67 / 1,3 m',
+            'Android': '13 → 18',
+            'Waga': '245 g',
+          },
+        },
+        {
+          name: 'Zebra TC22',
+          slug: 'zebra-tc22',
+          specs: {
+            'Cena od': '2 417 zł',
+            'Ekran': '6" HD+ GG5',
+            'Procesor': 'QC 5430 2,1 GHz',
+            'RAM / Flash': '6 GB / 64 GB',
+            'Skaner': 'SE4710 / SE55',
+            'Bateria': '3800 mAh wymiana',
+            'Ładowanie Qi': 'Nie',
+            'Łączność': 'Wi-Fi 6E, BT 5.2',
+            'IP / Drop': 'IP68 / 1,5 m',
+            'Android': '14 → 16',
+            'Waga': '236 g',
+          },
+        },
+        {
+          name: 'Datalogic Memor 17',
+          slug: 'datalogic-memor-17',
+          specs: {
+            'Cena od': '5 890 zł',
+            'Ekran': '6" FHD+ GG7',
+            'Procesor': 'QCx4490 2,4 GHz',
+            'RAM / Flash': '6 GB / 64 GB',
+            'Skaner': 'Halogen DE2121',
+            'Bateria': '4000 mAh SafeSwap',
+            'Ładowanie Qi': 'Tak (7W EPP)',
+            'Łączność': 'Wi-Fi 6E, BT 5.3, 5G',
+            'IP / Drop': 'IP67 / 1,3 m',
+            'Android': '13 → 18',
+            'Waga': '245 g',
+          },
+        },
+      ],
+    },
     compatibleAccessories: [],
+    relatedAccessories: [],
+    faq: [
+      { question: 'Ile kosztuje Datalogic Memor 12?', answer: 'Datalogic Memor 12 (PN: 944950001) kosztuje od 2 687 PLN netto w konfiguracji Wi-Fi 6E, 6 GB RAM, 64 GB Flash. Całkowity koszt posiadania (TCO) na 5 lat — z uwzględnieniem stacji dokującej (~1 200 PLN), baterii zapasowej (~350 PLN) i etui ochronnego (~250 PLN) — wynosi ok. 4 500 PLN, czyli ~75 PLN/miesiąc na terminal.' },
+      { question: 'Czym różni się Datalogic Memor 12 od Memor 17?', answer: 'Datalogic Memor 12 to wersja Wi-Fi-only — idealna do pracy wewnątrz budynków. Datalogic Memor 17 dodaje łączność komórkową 5G/4G LTE z obsługą nano-SIM i eSIM, GPS z nawigacją i barometr — przeznaczony dla kurierów, serwisantów i pracowników terenowych. Oba modele mają identyczną obudowę (13,5 mm, 245 g), ekran, skaner Halogen DE2121, baterię 4000 mAh z SafeSwap i wsparcie Android 13→18. Różnica w cenie: Memor 12 od 2 687 PLN vs Memor 17 od 5 890 PLN netto.' },
+      { question: 'Czy Datalogic Memor 12 obsługuje wymianę baterii bez wyłączania (hot-swap)?', answer: 'Tak — Datalogic Memor 12 wyposażony jest w technologię SafeSwap. Wewnętrzna bateria buforowa podtrzymuje zasilanie podczas wymiany głównej baterii 4000 mAh, więc terminal nie wymaga restartu. Sesja aplikacji i połączenie Wi-Fi zostają zachowane. Czas wymiany: ~10 sekund. To unikalna cecha Datalogic — konkurencyjny Zebra TC22 nie obsługuje hot-swap i wymaga restartu przy wymianie baterii.' },
+      { question: 'Jak długo działa bateria Datalogic Memor 12?', answer: 'Bateria Li-Ion 4000 mAh (14,98 Wh) zapewnia ok. 8 godzin intensywnej pracy ze skanowaniem. Trzy metody ładowania: szybkie USB-C (kabel w zestawie), stacja dokująca z Ethernet (przewodowa lub bezprzewodowa) lub bezprzewodowe Qi EPP 7W. Pełne ładowanie przez USB-C: ok. 3 godziny. Bateria jest wymienna (SafeSwap) — z zapasową baterią terminal pracuje non-stop przez cały dzień na dwie zmiany.' },
+      { question: 'Czy Datalogic Memor 12 ma ładowanie bezprzewodowe?', answer: 'Tak — Datalogic Memor 12 obsługuje ładowanie bezprzewodowe Qi EPP o mocy 7W. Wystarczy położyć terminal na dedykowanej stacji dokującej Datalogic (opcja bezprzewodowa) lub na dowolnej ładowarce Qi. Bezprzewodowe ładowanie eliminuje zużycie złącza USB-C i ułatwia obsługę floty urządzeń — pracownik odkłada terminal na podstawkę bez podłączania kabla.' },
+      { question: 'Czy Datalogic Memor 12 jest wodoodporny?', answer: 'Datalogic Memor 12 ma podwójną certyfikację IP65 (pyłoszczelny, strumień wody) i IP67 (zanurzenie do 1 m na 30 minut). Wytrzymuje upadki z 1,3 m na beton (1,5 m z gumowym bootem ochronnym) oraz 500 tumble z 0,5 m wg IEC 60068-2-32. Certyfikacja MIL-STD-810H potwierdza odporność na wibracje, szok termiczny i wilgotność. Ekran Gorilla Glass 7 z optical bonding chroni przed zarysowaniami i odrzuca krople wody.' },
+      { question: 'Do jakiej wersji Androida można zaktualizować Memor 12?', answer: 'Datalogic Memor 12 pracuje na systemie Android 13 GMS (Google Mobile Services) z gwarancją aktualizacji do Android 18. To oznacza 4+4 lata wsparcia: 4 lata aktualizacji systemu + 4 lata łatek bezpieczeństwa. Datalogic Mobility Suite (Shield, Scan2Deploy, OEMConfig) zapewnia zarządzanie flotą, zdalną konfigurację i Enterprise QR Code Enrollment. Terminal jest kompatybilny z MDM: SOTI MobiControl, VMware Workspace ONE, Microsoft Intune.' },
+      { question: 'Jakie akcesoria są dostępne do Datalogic Memor 12?', answer: 'Główne akcesoria Datalogic Memor 12: stacja dokująca z Ethernet (przewodowa lub bezprzewodowa), 4-slotowa stacja ładowania, wielogniazdowa ładowarka baterii, ładowarka samochodowa, etui z paskiem na rękę (belt holster), uchwyt pistoletowy (trigger handle), opaska na przedramię (wearable holder). Stację dokującą i baterię zapasową kupuje się osobno — nie są w zestawie z terminalem. Wszystkie akcesoria są wspólne dla Memor 12 i Memor 17.' },
+      { question: 'Datalogic Memor 12 vs Zebra TC22 — który wybrać?', answer: 'Datalogic Memor 12 wygrywa: SafeSwap hot-swap baterii (TC22 wymaga restartu), ładowanie bezprzewodowe Qi (TC22 nie ma), ekran FHD+ z Gorilla Glass 7 (TC22 ma HD+ z GG5), dłuższe wsparcie Android 13→18 (TC22: 14→16). Zebra TC22 wygrywa: niższa cena (od 2 417 PLN vs 2 687 PLN), wyższa odporność IP68 (vs IP67), większy ekosystem akcesoriów Zebra, skaner SE55 z zasięgiem do 7,6 m (Halogen DE2121 do ~1 m). Rekomendacja: Memor 12 dla aptek i retailu (ergonomia, Qi, SafeSwap). TC22 dla magazynów z istniejącą infrastrukturą Zebra.' },
+      { question: 'Gdzie serwisować Datalogic Memor 12 w Polsce?', answer: 'Serwis Datalogic w Polsce realizowany jest przez autoryzowane centra serwisowe. Standardowa gwarancja producenta: 12 miesięcy. Dostępne kontrakty Datalogic Shield na 1, 3 lub 5 lat — obejmują naprawy sprzętu, wymianę części i wsparcie techniczne. Czas naprawy: 5–10 dni roboczych. Dla klientów TAKMA oferujemy wsparcie w obsłudze gwarancji i organizacji serwisu.' },
+      { question: 'Jakie są alternatywy dla Datalogic Memor 12?', answer: 'Alternatywy w segmencie cenowym 2 000–4 000 PLN netto: Zebra TC22 (od 2 417 PLN — tańszy, IP68, ekosystem Zebra), Zebra TC27 (od 2 690 PLN — z 5G/LTE i GPS, bliźniak TC22), Datalogic Memor 17 (od 5 890 PLN — identyczny jak Memor 12 ale z 5G), Datalogic Memor 30 (od 5 490 PLN — wytrzymalszy, IP68, bateria 4680 mAh, opcja skanera dalekiego zasięgu). Dla niższego budżetu: Zebra TC22 w konfiguracji SE4710 od 2 417 PLN. Dla większej wytrzymałości: Datalogic Memor 30 z IP68.' },
+    ],
     downloads: [
-      { name: 'Karta katalogowa', type: 'datasheet', url: '#', size: '1.8 MB' },
+      { name: 'Karta katalogowa Memor 12/17 (EN)', type: 'datasheet', url: 'https://www.jarltech.com/sites/default/files/documents/product/datasheet/de/Memor_12_17_EN.pdf', size: '280 KB' },
     ],
     createdAt: '2025-01-15',
   },
@@ -24277,7 +24374,7 @@ Idealny do małych i średnich sklepów internetowych, punktów sprzedaży detal
     ],
     createdAt: '2024-03-20',
   },
-] */
+]
 
 // ============================================
 // RFID
