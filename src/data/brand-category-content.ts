@@ -1024,6 +1024,97 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
     ],
   },
   // ===================================================================
+  // TABLETY PRZEMYSŁOWE HONEYWELL
+  // ===================================================================
+  'tablety-przemyslowe-honeywell': {
+    definition: {
+      heading: 'Tablety przemysłowe Honeywell — Android i Windows do magazynu i logistyki',
+      content: 'Honeywell oferuje trzy modele tabletów przemysłowych 10,1": lekki [ScanPal EDA10A](/produkt/honeywell-eda10a) (Android, Wi-Fi 6, od 4 071 zł) do retail i pracy terenowej, flagowy [RT10A](/produkt/honeywell-rt10a) z podwójnym obiektywem FlexRange skanującym od 10 cm do 10,7 m (idealny do wózków widłowych i regałów high-bay) oraz [RT10W](/produkt/honeywell-rt10w) z Windows 10 IoT Enterprise LTSC 2021 — dla firm z aplikacjami legacy. Wszystkie modele spełniają MIL-STD-810G, IP65 i obsługują wymianę baterii hot-swap bez wyłączania urządzenia.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać tablet Honeywell? 5 kryteriów',
+      items: [
+        '**System operacyjny** — [EDA10A](/produkt/honeywell-eda10a) i [RT10A](/produkt/honeywell-rt10a): Android (natywne apki, Chrome). [RT10W](/produkt/honeywell-rt10w): Windows IoT Enterprise — do legacy WMS/ERP działających wyłącznie pod Windows.',
+        '**Zasięg skanera** — EDA10A: skaner S0703 do kilku metrów (retail, inwentaryzacja). RT10A/RT10W: FlexRange S6803 od 10 cm do 10,7 m — skanowanie z wózka widłowego na najwyższe regały.',
+        '**Waga i mobilność** — EDA10A waży 674 g (łatwy do noszenia). RT10A/RT10W: 1 200 g — cięższe, ale przeznaczone głównie do montażu na wózku lub stacji dokującej.',
+        '**Bateria** — EDA10A: 8 000 mAh hot-swap. RT10A/RT10W: standardowa 5 900 mAh (12h) lub rozszerzona 10 280 mAh (20h), obie hot-swap.',
+        '**Budżet** — EDA10A od 4 071 zł (entry-level). RT10A od 11 229 zł (enterprise z FlexRange). RT10W od 12 024 zł (Windows + Intel x86).',
+      ],
+    },
+    expertAuthority: 'TAKMA jako autoryzowany partner Honeywell oferuje pełne doradztwo przy wyborze tabletu, konfigurację MDM, staging flotowy i wsparcie posprzedażowe. Wszystkie tablety Honeywell obejmuje 3-letnia gwarancja producenta.',
+    technicalDeepDive: `Porównanie tabletów Honeywell:\n\n| Model | System | Procesor | RAM/Flash | Skaner | Bateria | Waga | Cena od |\n|---|---|---|---|---|---|---|---|\n| **EDA10A** | Android 12-14 | Snapdragon SM4350 | 4/64 lub 8/128 GB | S0703 SR | 8 000 mAh | 674 g | 4 071 zł |\n| **RT10A** | Android 9-14 | Snapdragon SDM660 | 4/32 GB | S6703 SR / S6803 FlexRange | 5 900 / 10 280 mAh | 1 200 g | 11 229 zł |\n| **RT10W** | Windows IoT LTSC 2021 | Intel N4200 | 8/128 GB SSD | N6703 SR | 5 900 / 10 280 mAh | 1 200 g | 12 024 zł |\n\nWszystkie modele: IP65, MIL-STD-810G (upadki 1,2 m), ekran 10,1" IPS 1920×1200, NFC, Bluetooth 5.0, USB-C. RT10A/RT10W dodatkowo USB-A i ekran 800 nit.`,
+    useCases: [
+      {
+        title: 'Magazyn high-bay — RT10A z FlexRange',
+        description: 'Operator wózka widłowego skanuje kody z odległości do 10,7 m bez schodzenia z maszyny. Dock pojazdowy RT10-VD/EVD z zasilaniem 9-60V i VESA 75×75 zapewnia stabilny montaż na kabinie. Bateria hot-swap 10 280 mAh na 20h pracy.',
+      },
+      {
+        title: 'Retail i e-commerce — EDA10A',
+        description: 'Lekki tablet (674 g) do weryfikacji cen, inwentaryzacji i mobilnego POS. Wi-Fi 6, opcja 5G, bateria 8 000 mAh hot-swap. Gorilla Glass 5 i etui ochronne zwiększają odporność na upadki do 2 m.',
+      },
+      {
+        title: 'Legacy WMS/ERP — RT10W z Windows',
+        description: 'Firmy z systemami WMS lub ERP działającymi wyłącznie pod Windows (Comarch, SAP GUI, IFS) uruchamiają je natywnie na procesorze Intel x86 — bez emulacji. Micro HDMI i dock RT10-CD z VGA pozwalają używać tabletu jako stacji roboczej.',
+      },
+      {
+        title: 'Serwis terenowy — EDA10A z 5G',
+        description: 'Model z 5G i GPS zapewnia dostęp do dokumentacji, raportowanie i nawigację poza zasięgiem Wi-Fi. Skaner S0703 odczytuje kody na wyrobach i instalacjach w terenie.',
+      },
+    ],
+    uniqueInsights: {
+      heading: '3 przewagi tabletów Honeywell nad konkurencją',
+      items: [
+        { title: 'FlexRange do 10,7 m — jedyny taki zasięg w klasie', text: 'RT10A/RT10W z podwójnym obiektywem S6803 skanują od 10 cm do 10,7 m. Zebra ET40/ET45 oferuje maksymalnie ~2 m. To kluczowa przewaga w magazynach z regałami powyżej 6 m.' },
+        { title: 'Windows IoT Enterprise w RT10W', text: 'Jedyny tablet rugged w tej klasie cenowej z pełnym Windows x86. Firmy z legacy aplikacjami Windows nie muszą ich portować na Android — RT10W uruchamia je natywnie.' },
+        { title: 'Ekran 800 nit — najjaśniejszy w segmencie', text: 'RT10A i RT10W mają ekran 800 nit (Zebra ET40/ET45: 500 nit). Czytelny w pełnym słońcu na rampie załadunkowej i w terenie.' },
+      ],
+    },
+    comparisons: [
+      {
+        title: 'Honeywell EDA10A vs Zebra ET40 — który tablet entry-level?',
+        content: 'EDA10A: 674 g, Android 12-14, Wi-Fi 6, 5G opcja, 8 000 mAh hot-swap, S0703 1D/2D, od 4 071 zł.\nZebra ET40: 690 g, Android 11-14, Wi-Fi 6E, SE4710 1D/2D, Mobility DNA, od 3 250 zł.\nEDA10A lepszy: hot-swap 8 000 mAh, opcja 5G bez wymiany modelu. Zebra lepsza: tańsza, Mobility DNA (StageNow, OEMConfig), Wi-Fi 6E.',
+      },
+      {
+        title: 'Honeywell RT10A vs Zebra ET45 — enterprise z 5G/LTE',
+        content: 'RT10A: 1 200 g, FlexRange do 10,7 m, 800 nit, USB-A + USB-C, 4G LTE, od 11 229 zł.\nZebra ET45: 690 g, SE4710/SE55, 500 nit, USB-C, 5G, od 3 800 zł.\nRT10A lepszy: FlexRange (regały high-bay), 800 nit (outdoor), USB-A. Zebra lepsza: 3× lżejsza, 5G, znacznie tańsza, Mobility DNA.',
+      },
+    ],
+    faq: [
+      { question: 'Czym różni się Honeywell EDA10A od RT10A?', answer: '[EDA10A](/produkt/honeywell-eda10a) to lżejszy tablet entry-level (674 g, od 4 071 zł) z Wi-Fi 6 i opcją 5G — do retail, e-commerce i pracy terenowej. [RT10A](/produkt/honeywell-rt10a) to model enterprise (1 200 g, od 11 229 zł) z FlexRange do 10,7 m i ekranem 800 nit — do magazynów high-bay i wózków widłowych.' },
+      { question: 'Czym jest FlexRange i dlaczego ma znaczenie w magazynie?', answer: 'FlexRange to podwójny obiektyw skanera 2D w tabletach RT10A i RT10W, skanujący kody z odległości od 10 cm do 10,7 m. Operator wózka widłowego nie musi schodzić z maszyny — skanuje kody na najwyższych regałach z siedzenia. Żaden tablet Zebra nie oferuje takiego zasięgu.' },
+      { question: 'Jaki jest Honeywell RT10W i kto powinien go wybrać?', answer: '[RT10W](/produkt/honeywell-rt10w) to wersja Windows tabletu RT10 — ta sama obudowa (IP65, MIL-STD-810G, 800 nit) z procesorem Intel x86, 8 GB RAM i 128 GB SSD. Dla firm z WMS/ERP działającym wyłącznie pod Windows. Cena od 12 024 zł netto.' },
+      { question: 'Czy tablety Honeywell działają z polskimi systemami WMS i ERP?', answer: 'Tak. RT10A i EDA10A (Android) obsługują apki przez przeglądarkę lub natywnie. RT10W z Windows IoT Enterprise uruchamia Comarch WMS, SAP GUI, IFS, Asseco i inne aplikacje Windows bez emulacji.' },
+      { question: 'Czy tablety Honeywell mają wymienną baterię hot-swap?', answer: 'Tak — wszystkie 3 modele. RT10A/RT10W: 5 900 mAh (12h) lub 10 280 mAh (20h). EDA10A: 8 000 mAh. Wymiana bez wyłączania tabletu i przerywania sesji aplikacji.' },
+      { question: 'Czy tablet Honeywell można zamontować na wózku widłowym?', answer: 'RT10A i RT10W mają doki pojazdowe RT10-VD (9-36V) i RT10-EVD (10-60V) z Ethernet, USB, RS-232 i VESA 75×75. FlexRange pozwala skanować kody z odległości do 10,7 m bez schodzenia z wózka.' },
+      { question: 'Jak tablety Honeywell wypadają vs Zebra ET40/ET45?', answer: 'RT10A/RT10W: FlexRange do 10,7 m (Zebra ~2 m), ekran 800 nit (Zebra 500 nit), ale cięższe (1 200 g vs 690 g) i droższe. EDA10A (od 4 071 zł) cenowo konkuruje z ET40 (od 3 250 zł) — z przewagą hot-swap 8 000 mAh i opcją 5G.' },
+      { question: 'Jaką klasę szczelności mają tablety Honeywell?', answer: 'Wszystkie 3 modele: IP65 (pyłoszczelność + strumienie wody), MIL-STD-810G (upadki 1,2 m na beton, wibracje, temperatury skrajne). Obsługa rękawic do 2 mm.' },
+      { question: 'Który tablet Honeywell do pracy w chłodni?', answer: 'RT10A i RT10W pracują od -20°C (zasilanie AC). EDA10A od -10°C. Do mroźni poniżej -20°C rekomendujemy [Zebra ET60](/produkt/zebra-et60)/[ET65](/produkt/zebra-et65) (do -30°C).' },
+      { question: 'Ile kosztuje najtańszy tablet Honeywell?', answer: 'Najtańszy to [EDA10A](/produkt/honeywell-eda10a) w wersji Wi-Fi 4/64 GB — od 4 071 zł netto. [RT10A](/produkt/honeywell-rt10a) od 11 229 zł, [RT10W](/produkt/honeywell-rt10w) od 12 024 zł.' },
+    ],
+    howToSteps: [
+      {
+        name: 'Analiza wymagań i dobór modelu',
+        text: 'Określ system operacyjny (Android vs Windows), wymagany zasięg skanera (retail do kilku metrów → EDA10A, magazyn high-bay do 10,7 m → RT10A/RT10W), łączność (Wi-Fi 6, 5G, Bluetooth 5.0), pojemność baterii (8 000 mAh EDA10A vs 5 900/10 280 mAh RT10) i budżet. Skontaktuj się z doradcą TAKMA — pomożemy dobrać optymalny wariant i akcesoria.',
+      },
+      {
+        name: 'Zamówienie i konfiguracja wstępna',
+        text: 'Złóż zamówienie w TAKMA — dostarczamy tablety z pre-stagingiem (konfiguracja Wi-Fi, MDM enrollment, instalacja aplikacji). Dla RT10A/RT10W dobierz akcesoria: dock pojazdowy RT10-VD/EVD, baterię rozszerzoną 10 280 mAh, etui ochronne. Dla EDA10A: etui, pasek na rękę, stację ładującą.',
+      },
+      {
+        name: 'Montaż i integracja z infrastrukturą',
+        text: 'RT10A/RT10W na wózku widłowym: zamontuj dock pojazdowy VESA 75×75, podłącz zasilanie 9-60V. EDA10A: stacja ładująca na biurku lub przy kasie. Skonfiguruj łączność Wi-Fi/5G, zarejestruj urządzenia w MDM (SOTI, Airwatch, Honeywell Mobility Edge). Zintegruj z WMS/ERP przez przeglądarkę lub natywną aplikację Android/Windows.',
+      },
+      {
+        name: 'Szkolenie i wdrożenie operacyjne',
+        text: 'Przeszkol operatorów z obsługi skanera (FlexRange: skanowanie z odległości do 10,7 m), wymiany baterii hot-swap, trybu rękawicowego i reakcji na alerty MDM. Przetestuj scenariusze operacyjne: picking, inwentaryzacja, weryfikacja dostaw. Ustal harmonogram ładowania baterii zapasowych i plan konserwacji (czyszczenie ekranu, okna skanera).',
+      },
+      {
+        name: 'Wsparcie posprzedażowe i serwis',
+        text: 'Zarejestruj tablety w programie Honeywell Service Made Simple (gwarancja 3 lata). TAKMA zapewnia wsparcie techniczne, wymianę uszkodzonych urządzeń i pomoc przy aktualizacjach firmware. W razie awarii — kontakt z serwisem TAKMA w ciągu 24h roboczych.',
+      },
+    ],
+  },
+  // ===================================================================
   // TABLETY PRZEMYSŁOWE ZEBRA
   // ===================================================================
   'tablety-przemyslowe-zebra': {

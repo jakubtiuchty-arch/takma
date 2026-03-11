@@ -67,6 +67,7 @@ const navigation: NavItem[] = [
     children: [
       { name: 'Wszystkie tablety', href: '/tablety-przemyslowe' },
       { name: 'Tablety Zebra', href: '/tablety-przemyslowe-zebra' },
+      { name: 'Tablety Honeywell', href: '/tablety-honeywell' },
     ],
   },
   {
