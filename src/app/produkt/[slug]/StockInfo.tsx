@@ -18,6 +18,8 @@ let batchTimer: ReturnType<typeof setTimeout> | null = null
 
 const BATCH_DELAY = 80 // ms — czekaj na zebranie PNów ze wszystkich komponentów
 
+const CHUNK_SIZE = 50 // API limit: max 50 PNów na request
+
 async function executeBatch() {
   const allPNs = Array.from(batchPNs)
   const callbacks = [...batchCallbacks]
@@ -28,12 +30,25 @@ async function executeBatch() {
   if (allPNs.length === 0) return
 
   try {
-    const res = await fetch(`/api/stock?pn=${allPNs.join(',')}`)
-    if (!res.ok) throw new Error('Fetch failed')
-    const data = await res.json()
+    // Podziel na chunki po 50 (limit API)
+    const chunks: string[][] = []
+    for (let i = 0; i < allPNs.length; i += CHUNK_SIZE) {
+      chunks.push(allPNs.slice(i, i + CHUNK_SIZE))
+    }
+
+    const responses = await Promise.all(
+      chunks.map(async (chunk) => {
+        const res = await fetch(`/api/stock?pn=${chunk.join(',')}`)
+        if (!res.ok) throw new Error('Fetch failed')
+        return res.json()
+      })
+    )
+
     const fullMap = new Map<string, StockInfoType>()
-    for (const item of data.results) {
-      fullMap.set(item.partNumber, item)
+    for (const data of responses) {
+      for (const item of data.results) {
+        fullMap.set(item.partNumber, item)
+      }
     }
     for (const { pns, resolve } of callbacks) {
       const filtered = new Map<string, StockInfoType>()
