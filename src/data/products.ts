@@ -19142,10 +19142,10 @@ Koszt posiadania (TCO): pełna kompatybilność wsteczna z akcesoriami MC3300x �
       // --- SE4770 Standard Range, 6/64 GB (Expanded) ---
       { partNumber: 'MC3401-0G1J52SS-A6', name: 'MC3400 Gun, SE4770, 29 kl., 6/64 GB', priceFrom: 4871.69, availability: 'available', attributes: { 'Skaner': 'SE4770', 'Klawiatura': '29 klawiszy', 'Pamięć': '6/64 GB' } },
       { partNumber: 'MC3401-0G1J53SS-A6', name: 'MC3400 Gun, SE4770, 38 kl., 6/64 GB', priceFrom: 5066.56, availability: 'available', attributes: { 'Skaner': 'SE4770', 'Klawiatura': '38 klawiszy', 'Pamięć': '6/64 GB' } },
-      { partNumber: 'MC3401-0G1J54SS-A6', name: 'MC3400 Gun, SE4770, 47 kl., 6/64 GB', priceFrom: 4871.69, availability: 'available', attributes: { 'Skaner': 'SE4770', 'Klawiatura': '47 klawiszy', 'Pamięć': '6/64 GB' } },
+      { partNumber: 'MC3401-0G1J54SS-A6', name: 'MC3400 Gun, SE4770, 47 kl., 6/64 GB', priceFrom: 5041.91, availability: 'available', attributes: { 'Skaner': 'SE4770', 'Klawiatura': '47 klawiszy', 'Pamięć': '6/64 GB' } },
       // --- SE58 Extended Range, 6/64 GB (Expanded) ---
-      { partNumber: 'MC3401-0G1M52SS-A6', name: 'MC3400 Gun, SE58, 29 kl., 6/64 GB', priceFrom: 5260.69, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '29 klawiszy', 'Pamięć': '6/64 GB' } },
-      { partNumber: 'MC3401-0G1M53SS-A6', name: 'MC3400 Gun, SE58, 38 kl., 6/64 GB', priceFrom: 5260.69, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '38 klawiszy', 'Pamięć': '6/64 GB' } },
+      { partNumber: 'MC3401-0G1M52SS-A6', name: 'MC3400 Gun, SE58, 29 kl., 6/64 GB', priceFrom: 5444.46, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '29 klawiszy', 'Pamięć': '6/64 GB' } },
+      { partNumber: 'MC3401-0G1M53SS-A6', name: 'MC3400 Gun, SE58, 38 kl., 6/64 GB', priceFrom: 5444.46, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '38 klawiszy', 'Pamięć': '6/64 GB' } },
       { partNumber: 'MC3401-0G1M54SS-A6', name: 'MC3400 Gun, SE58, 47 kl., 6/64 GB', priceFrom: 5471.11, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '47 klawiszy', 'Pamięć': '6/64 GB' } },
       // --- SE4770 Standard Range, 6/128 GB + Kamera (Full) ---
       { partNumber: 'MC3401-0G1P62SS-A6', name: 'MC3400 Gun, SE4770, 29 kl., 6/128 GB, Kamera', priceFrom: 5329.48, availability: 'available', attributes: { 'Skaner': 'SE4770', 'Klawiatura': '29 klawiszy', 'Pamięć': '6/128 GB', 'Kamera': '13+5 MP' } },
@@ -19154,7 +19154,7 @@ Koszt posiadania (TCO): pełna kompatybilność wsteczna z akcesoriami MC3300x �
       // --- SE58 Extended Range, 6/128 GB + Kamera (Full) ---
       { partNumber: 'MC3401-0G1R62SS-A6', name: 'MC3400 Gun, SE58, 29 kl., 6/128 GB, Kamera', priceFrom: 5734.04, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '29 klawiszy', 'Pamięć': '6/128 GB', 'Kamera': '13+5 MP' } },
       { partNumber: 'MC3401-0G1R63SS-A6', name: 'MC3400 Gun, SE58, 38 kl., 6/128 GB, Kamera', priceFrom: 5734.04, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '38 klawiszy', 'Pamięć': '6/128 GB', 'Kamera': '13+5 MP' } },
-      { partNumber: 'MC3401-0G1R64SS-A6', name: 'MC3400 Gun, SE58, 47 kl., 6/128 GB, Kamera', priceFrom: 5514.55, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '47 klawiszy', 'Pamięć': '6/128 GB', 'Kamera': '13+5 MP' } },
+      { partNumber: 'MC3401-0G1R64SS-A6', name: 'MC3400 Gun, SE58, 47 kl., 6/128 GB, Kamera', priceFrom: 5706.14, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '47 klawiszy', 'Pamięć': '6/128 GB', 'Kamera': '13+5 MP' } },
     ],
     faq: [
       { question: 'Ile kosztuje Zebra MC3400?', answer: 'Ceny Zebra MC3400 zaczynają się od 4 561 zł netto za wariant Gun ze skanerem SE55 Advanced Range i klawiaturą 29-klawiszową (MC3401-0G1K42SS-A6). Warianty z imagerem SE4770 2D: od 4 872 zł netto. Konfiguracje z SE58 Extended Range (zasięg 30,5 m): od 5 261 zł netto. Topowa wersja Full z SE58 ER, kamerą 13+5 MP i 128 GB Flash: 5 734 zł netto. Przy zakupie 5+ sztuk oferujemy ceny projektowe — kliknij „Zapytaj o produkt".' },
@@ -19530,10 +19530,10 @@ Koszt posiadania (TCO): pełna kompatybilność wsteczna z akcesoriami MC9300 �
       // --- SE58 Extended Range, bez kamery (M) ---
       { partNumber: 'MC9401-0G1M6ASS-A6', name: 'MC9400, SE58, 29 kl.', priceFrom: 8116.34, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '29 klawiszy' } },
       { partNumber: 'MC9401-0G1M6BSS-A6', name: 'MC9400, SE58, 34 kl.', priceFrom: 8116.34, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '34 klawisze' } },
-      { partNumber: 'MC9401-0G1M6CSS-A6', name: 'MC9400, SE58, 43 kl.', priceFrom: 7804.18, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '43 klawisze' } },
+      { partNumber: 'MC9401-0G1M6CSS-A6', name: 'MC9400, SE58, 43 kl.', priceFrom: 8101.51, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '43 klawisze' } },
       { partNumber: 'MC9401-0G1M6DSS-A6', name: 'MC9400, SE58, 53 kl.', priceFrom: 8116.34, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '53 klawisze' } },
       { partNumber: 'MC9401-0G1M6ESS-A6', name: 'MC9400, SE58, 53 kl. VT', priceFrom: 8116.34, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '53 kl. VT' } },
-      { partNumber: 'MC9401-0G1M6GSS-A6', name: 'MC9400, SE58, 53 kl. 5250', priceFrom: 7804.18, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '53 kl. 5250' } },
+      { partNumber: 'MC9401-0G1M6GSS-A6', name: 'MC9400, SE58, 53 kl. 5250', priceFrom: 8101.51, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '53 kl. 5250' } },
       { partNumber: 'MC9401-0G1M6HSS-A6', name: 'MC9400, SE58, 58 kl.', priceFrom: 8116.34, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '58 klawiszy' } },
       // --- SE58 Extended Range, z kamerą 13 MP (R) ---
       { partNumber: 'MC9401-0G1R6ASS-A6', name: 'MC9400, SE58, 29 kl., Kamera', priceFrom: 8295.62, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '29 klawiszy', 'Kamera': '13 MP' } },

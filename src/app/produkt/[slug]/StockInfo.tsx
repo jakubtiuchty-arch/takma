@@ -5,6 +5,14 @@ import { Badge } from '@/components/ui'
 import type { StockInfo as StockInfoType } from '@/lib/ingram'
 
 // ============================================
+// GLOBAL STOCK CACHE
+// Wspólne źródło cen dla WSZYSTKICH komponentów (VariantsTable, SearchBar, ServicePlansBox).
+// Gwarantuje że ten sam PN = ta sama cena na całej stronie.
+// ============================================
+
+const globalStockCache = new Map<string, StockInfoType>()
+
+// ============================================
 // CLIENT-SIDE REQUEST BATCHER
 // Zbiera wszystkie PNy ze strony (ProductCard, VariantsTable, LiveBadge, StockInfo)
 // i wysyła je w JEDNYM requescie do API zamiast 15+ osobnych.
@@ -50,10 +58,16 @@ async function executeBatch() {
         fullMap.set(item.partNumber, item)
       }
     }
+
+    // Merge do globalnego cache — SearchBar i VariantsTable zawsze widzą tę samą cenę
+    for (const [pn, item] of fullMap) {
+      globalStockCache.set(pn, item)
+    }
+
     for (const { pns, resolve } of callbacks) {
       const filtered = new Map<string, StockInfoType>()
       for (const pn of pns) {
-        const item = fullMap.get(pn)
+        const item = globalStockCache.get(pn)
         if (item) filtered.set(pn, item)
       }
       resolve(filtered)
@@ -81,13 +95,26 @@ function fetchStockBatched(partNumbers: string[]): Promise<Map<string, StockInfo
 
 /**
  * Hook do pobierania danych magazynowych w innych komponentach (np. VariantsTable, ProductCard).
- * Używa batchera — wszystkie komponenty na stronie zbierają PNy w jedno zapytanie.
+ * Sprawdza globalny cache PRZED wysłaniem requesta — eliminuje rozbieżność cen
+ * między SearchBar a VariantsTable (oba czytają z tego samego źródła).
  */
 export function useStockData(partNumbers: string[]) {
-  const [stockData, setStockData] = useState<Map<string, StockInfoType>>(new Map())
-  const [loading, setLoading] = useState(true)
+  const [stockData, setStockData] = useState<Map<string, StockInfoType>>(() => {
+    // Inicjalizuj z globalnego cache (np. SearchBar dostaje dane z VariantsTable bez nowego requesta)
+    const cached = new Map<string, StockInfoType>()
+    for (const pn of partNumbers) {
+      const item = globalStockCache.get(pn)
+      if (item) cached.set(pn, item)
+    }
+    return cached
+  })
+  const [loading, setLoading] = useState(() => {
+    if (partNumbers.length === 0) return false
+    return !partNumbers.every(pn => globalStockCache.has(pn))
+  })
 
   const key = partNumbers.join(',')
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const stablePartNumbers = useMemo(() => partNumbers, [key])
 
   useEffect(() => {
@@ -96,9 +123,31 @@ export function useStockData(partNumbers: string[]) {
       return
     }
 
-    fetchStockBatched(stablePartNumbers)
-      .then(setStockData)
-      .finally(() => setLoading(false))
+    // Sprawdź które PNy nie są jeszcze w cache
+    const uncached = stablePartNumbers.filter(pn => !globalStockCache.has(pn))
+
+    if (uncached.length === 0) {
+      // Wszystko w cache — użyj cached danych (zero requestów!)
+      const cached = new Map<string, StockInfoType>()
+      for (const pn of stablePartNumbers) {
+        const item = globalStockCache.get(pn)
+        if (item) cached.set(pn, item)
+      }
+      setStockData(cached)
+      setLoading(false)
+      return
+    }
+
+    setLoading(true)
+    fetchStockBatched(uncached).then(() => {
+      // Po fetchu — buduj wynik z globalnego cache (zawiera i stare i nowe dane)
+      const result = new Map<string, StockInfoType>()
+      for (const pn of stablePartNumbers) {
+        const item = globalStockCache.get(pn)
+        if (item) result.set(pn, item)
+      }
+      setStockData(result)
+    }).finally(() => setLoading(false))
   }, [stablePartNumbers])
 
   return { stockData, loading }
