@@ -3005,6 +3005,316 @@ export const guides: Guide[] = [
     { title: 'Wszystkie terminale mobilne', href: '/terminale-mobilne' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]
+},
+{
+  slug: 'zebra-tc27-vs-tc58e',
+  title: 'Zebra TC27 vs TC58e — porównanie terminali mobilnych z 5G',
+  seoTitle: 'Zebra TC27 vs TC58e — porównanie terminali 5G | ceny, specyfikacje, TCO',
+  seoDescription: 'Czym różni się Zebra TC27 od TC58e? Porównanie specyfikacji, wydajności, wytrzymałości i ceny. Który terminal z 5G wybrać do magazynu, logistyki i pracy w terenie? Ceny od 2 690 zł netto.',
+  excerpt: 'Czym różni się Zebra TC27 od TC58e? Porównanie specyfikacji, wydajności, wytrzymałości i ceny. Który terminal z 5G wybrać do magazynu, logistyki i pracy w terenie?',
+  category: 'porownanie' as const,
+  tags: ['terminale-mobilne', 'porownanie', 'zebra', 'tc27', 'tc58e', '5g', 'tco'],
+  publishedAt: '2026-03-12',
+  updatedAt: '2026-03-12',
+  readTime: '12 min',
+  sections: [
+    {
+      id: 'intro',
+      heading: 'TC27 i TC58e — dwa terminale, dwie klasy',
+      content: `<p><strong>Zebra TC27 i Zebra TC58e to dwa najnowsze terminale mobilne Zebra z łącznością 5G — ale celujące w zupełnie różne segmenty rynku.</strong> TC27 (od ok. 2 690 zł netto) to następca TC26: ekonomiczny komputer mobilny 5G z GPS, skierowany do kurierów, serwisantów i przedstawicieli handlowych. TC58e (od ok. 5 337 zł netto) to wersja „essential" flagowego TC58 — terminal klasy premium z procesorem octa-core, baterią 4 680 mAh, odpornością na upadki z 1,8 m i pracą w temperaturach do -20°C.</p>
+
+<p>Oba urządzenia mają 6-calowe ekrany, obsługują 5G FR1, dual SIM (nano + eSIM), GPS/GNSS dual-band i pracują pod kontrolą Androida z wieloletnim wsparciem LifeGuard™. Różnice sprowadzają się do: procesora, jasności ekranu, wytrzymałości obudowy, baterii, zakresu temperatur, skanerów i długości wsparcia Android. Cena TC58e jest niemal dwukrotnie wyższa od TC27 — pytanie brzmi: kiedy ta różnica jest uzasadniona?</p>
+
+<p>W tym porównaniu analizujemy obie maszyny parametr po parametrze, kalkulujemy TCO na 5 lat i podajemy jasne rekomendacje — który terminal wybrać w zależności od branży, środowiska pracy i budżetu. Wszystkie ceny netto PLN — aktualne na marzec 2026, z oferty <a href="/terminale-mobilne">TAKMA</a>.</p>`
+    },
+    {
+      id: 'specyfikacja-tabela',
+      heading: 'Specyfikacja — tabela porównawcza TC27 vs TC58e',
+      content: `<p>Poniższa tabela zestawia kluczowe parametry obu terminali. Wartości pochodzą z oficjalnych kart katalogowych Zebra i naszej oferty cenowej.</p>
+
+<table>
+<thead><tr><th>Parametr</th><th>Zebra TC27</th><th>Zebra TC58e</th></tr></thead>
+<tbody>
+<tr><td><strong>Procesor</strong></td><td>Qualcomm 5430 hexa-core, 2,1 GHz</td><td>Qualcomm 4490 octa-core, 2,4 GHz</td></tr>
+<tr><td><strong>Ekran</strong></td><td>6" FHD+ (1080x2160), 450 nit, Gorilla Glass</td><td>6" FHD+ (1080x2160), 600 nit, Gorilla Glass</td></tr>
+<tr><td><strong>Skaner</strong></td><td>SE4710 (standard) / SE55 (do 7,6 m)</td><td>SE4720 / SE4770 (indoor/outdoor) / SE55 (do 12 m)</td></tr>
+<tr><td><strong>Pamięć</strong></td><td>6/64 GB lub 8/128 GB + microSD 2 TB</td><td>6/64 GB lub 8/128 GB + microSD 2 TB</td></tr>
+<tr><td><strong>Bateria</strong></td><td>3 800 mAh / 5 200 mAh — Warm Swap</td><td>4 680 mAh / 7 000 mAh — Warm Swap</td></tr>
+<tr><td><strong>Odporność IP</strong></td><td>IP68 / IP65</td><td>IP68 / IP65</td></tr>
+<tr><td><strong>Upadki</strong></td><td>1,5 m na beton (MIL-STD-810H)</td><td>1,8 m na beton; 2,4 m z etui (MIL-STD-810H)</td></tr>
+<tr><td><strong>Tumble</strong></td><td>500x z 0,5 m</td><td>1 000x z 0,5 m; 1 000x z 1,0 m z etui</td></tr>
+<tr><td><strong>Temperatura pracy</strong></td><td>-10°C do +50°C</td><td>-20°C do +50°C</td></tr>
+<tr><td><strong>Wi-Fi</strong></td><td>Wi-Fi 6/6E</td><td>Wi-Fi 6E, 2x2 MU-MIMO, tri-band</td></tr>
+<tr><td><strong>Bluetooth</strong></td><td>5.2</td><td>5.3</td></tr>
+<tr><td><strong>5G</strong></td><td>FR1 (NSA/SA)</td><td>FR1 Gen 2 (NSA/SA)</td></tr>
+<tr><td><strong>Android</strong></td><td>Android 14 → aktualizacja do 16</td><td>Android 13 → aktualizacja do 17</td></tr>
+<tr><td><strong>Kamera</strong></td><td>16 MP tył / 5 MP przód</td><td>16 MP tył / 8 MP przód</td></tr>
+<tr><td><strong>Wymiary</strong></td><td>165 x 76,3 x 12,5 mm</td><td>164,8 x 77,35 x 16,75 mm</td></tr>
+<tr><td><strong>Waga</strong></td><td>236 g</td><td>282 g</td></tr>
+<tr><td><strong>Barometr</strong></td><td>Nie</td><td>Tak</td></tr>
+<tr><td><strong>Security Chip</strong></td><td>Nie</td><td>Tak (wybrane SKU)</td></tr>
+<tr><td><strong>Cena od</strong></td><td><a href="/produkt/zebra-tc27">2 690 zł netto</a></td><td><a href="/produkt/zebra-tc58e">5 337 zł netto</a></td></tr>
+</tbody>
+</table>
+
+<p><strong>Podsumowanie tabeli:</strong> TC58e wygrywa w 10 z 18 kategorii (procesor, ekran, skaner, bateria, upadki, tumble, temperatura, Bluetooth, Android, dodatkowe czujniki). TC27 wygrywa w 2 (waga, cena) i remisuje w 6 (pamięć, IP, Wi-Fi, 5G, wymiary, kamera tylna). Różnica ceny: 2 647 zł netto — prawie 100% więcej za TC58e.</p>`
+    },
+    {
+      id: 'procesor',
+      heading: 'Procesor i wydajność',
+      content: `<p><strong>Zebra TC27</strong> pracuje na procesorze Qualcomm 5430 — to sześciordzeniowy (hexa-core) układ o taktowaniu 2,1 GHz, zaprojektowany z myślą o energooszczędności i wystarczającej wydajności dla standardowych aplikacji WMS, ERP, CRM. W codziennym użyciu (skanowanie kodów, aktualizacja stanów magazynowych, raportowanie wizyt) TC27 działa płynnie. Dwukrotnie szybszy od poprzednika TC26.</p>
+
+<p><strong>Zebra TC58e</strong> ma procesor Qualcomm 4490 — ośmiordzeniowy (octa-core) układ o taktowaniu 2,4 GHz. Dwa dodatkowe rdzenie i wyższe taktowanie oznaczają o ok. 30–40% wyższą wydajność wielowątkową. Różnica jest odczuwalna przy: jednoczesnej pracy wielu aplikacji w tle, obsłudze ciężkich plików graficznych, przetwarzaniu dużych baz danych produktowych offline oraz uruchamianiu funkcji Dimensioning (pomiar paczek kamerą).</p>
+
+<p><strong>Kiedy to ma znaczenie?</strong> Jeśli operator korzysta z jednej aplikacji WMS + skaner — TC27 wystarczy w 100%. Jeśli terminal ma jednocześnie obsługiwać WMS + VoIP + nawigację + kamerę do dokumentowania szkód — TC58e zapewni płynniejszą pracę bez przycięć.</p>`
+    },
+    {
+      id: 'ekran',
+      heading: 'Ekran — 450 nit vs 600 nit',
+      content: `<p>Oba terminale mają ten sam rozmiar ekranu: 6 cali w rozdzielczości Full HD+ (1080x2160) z ochronnym szkłem Corning Gorilla Glass. Różnica leży w jasności i dodatkowych funkcjach dotykowych.</p>
+
+<p><strong>Zebra TC27: 450 nitów</strong> — to wystarczająca jasność do pracy wewnątrz magazynu, sklepu czy biura. W pełnym słońcu (np. rampa załadunkowa, plac manewrowy) czytelność jest ograniczona — operator musi chronić ekran przed bezpośrednim światłem. Obsługa jednym palcem lub w rękawiczkach standardowych.</p>
+
+<p><strong>Zebra TC58e: 600 nitów</strong> — o 33% jaśniejszy ekran z obsługą mokrych palców (wet-touch) i rękawiczek. 600 nit to próg, powyżej którego ekran pozostaje czytelny na dworze w jasny dzień. Wet-touch oznacza, że ekran poprawnie rozpoznaje dotyk nawet gdy palce operatora lub szybka są mokre — kluczowe dla kurierów pracujących w deszczu lub pracowników myjni/produkcji spożywczej.</p>
+
+<p><strong>Rekomendacja:</strong> Jeśli terminal pracuje wyłącznie wewnątrz budynku — 450 nit TC27 to absolutnie wystarczający poziom. Jeśli operator często pracuje na zewnątrz (rampa, plac, teren klienta) lub w mokrym środowisku — 600 nit TC58e z wet-touch to znacząca przewaga komfortu pracy.</p>`
+    },
+    {
+      id: 'skaner',
+      heading: 'Skaner i zasięg skanowania',
+      content: `<p>Dobór skanera jest jedną z najważniejszych decyzji przy zakupie terminala mobilnego. Oba modele oferują skanery Zebra z rodziny SE, ale z różnym zakresem opcji.</p>
+
+<h3>Zebra TC27 — SE4710 lub SE55</h3>
+<p><strong>SE4710</strong> to skaner standardowego zasięgu (do 66 cm) z czerwoną kropką celowniczą — sprawdza się przy skanowaniu na wyciągnięcie ręki: kasa, lada, kompletacja na niskich regałach. <strong>SE55 Advanced Range</strong> skanuje od 10 cm do 7,6 m — pozwala zeskanować kod na najwyższych półkach magazynowych bez drabiny. TC27 z SE55 kosztuje od 3 236 zł netto.</p>
+
+<h3>Zebra TC58e — SE4720, SE4770 lub SE55</h3>
+<p>TC58e ma trzy opcje skanera: <strong>SE4720</strong> (standard, do skanowania na wyciągnięcie ręki), <strong>SE4770</strong> (indoor/outdoor — doskonała czytelność w pełnym słońcu, idealna dla kurierów i serwisantów), oraz <strong>SE55</strong> (advanced range, do 12 m — magazyny wysokiego składowania). Dodatkowy skaner SE4770 to kluczowa przewaga TC58e dla pracowników terenowych: tam, gdzie SE4710 TC27 ma problemy z odczytem kodu na paczce w pełnym słońcu, SE4770 radzi sobie bez wysiłku.</p>
+
+<h3>Porównanie zasięgu skanerów</h3>
+<table>
+<thead><tr><th>Skaner</th><th>Zasięg</th><th>Dostępny w</th><th>Scenariusz</th></tr></thead>
+<tbody>
+<tr><td>SE4710</td><td>do 66 cm</td><td>TC27</td><td>Kasa, lada, kompletacja</td></tr>
+<tr><td>SE4720</td><td>do 66 cm</td><td>TC58e</td><td>Kasa, lada, kompletacja</td></tr>
+<tr><td>SE4770</td><td>do 2 m (outdoor)</td><td>TC58e</td><td>Kurier, serwis, praca w słońcu</td></tr>
+<tr><td>SE55</td><td>do 7,6–12 m</td><td>TC27 / TC58e</td><td>Magazyn wysokiego składowania</td></tr>
+</tbody>
+</table>
+
+<p><strong>Werdykt:</strong> Jeśli terminal pracuje wyłącznie w pomieszczeniu — SE4710 (TC27) lub SE4720 (TC58e) wystarczy. Jeśli praca odbywa się na zewnątrz w zmiennym oświetleniu — SE4770 w TC58e to najlepszy wybór. Jeśli potrzebujesz dalekiego zasięgu — SE55 jest dostępny w obu modelach, ale w TC58e osiąga zasięg do 12 m (vs 7,6 m w TC27).</p>`
+    },
+    {
+      id: 'bateria',
+      heading: 'Bateria — pojemność i czas pracy',
+      content: `<p><strong>Bateria to jedno z kluczowych kryteriów przy wyborze terminala do pracy zmianowej.</strong> TC27 i TC58e różnią się zarówno pojemnością standardowych baterii, jak i dostępnością opcji rozszerzonych.</p>
+
+<h3>Zebra TC27 — 3 800 mAh lub 5 200 mAh</h3>
+<p>Bateria standardowa 3 800 mAh PowerPrecision zapewnia ok. 8–10 godzin pracy z aktywnym 5G i skanowaniem. Bateria rozszerzona 5 200 mAh wydłuża czas pracy do ok. 12–14 godzin. Wymiana baterii w trybie <strong>Warm Swap</strong> — terminal przechodzi w tryb uśpienia na czas wymiany, co oznacza restart sesji Wi-Fi/5G i aplikacji (~30–60 sekund przestoju).</p>
+
+<h3>Zebra TC58e — 4 680 mAh lub 7 000 mAh</h3>
+<p>Bateria standardowa 4 680 mAh PowerPrecision+ zapewnia ok. 13–15 godzin pracy z 5G — o 50% dłużej niż TC27 z baterią 3 800 mAh. Bateria rozszerzona 7 000 mAh — nawet 18–22 godzin. Wymiana baterii również w trybie <strong>Warm Swap</strong> — terminal przechodzi w tryb uśpienia. Technologia PowerPrecision+ oferuje diagnostykę kondycji baterii w czasie rzeczywistym przez Bluetooth — z poziomu stacji ładowania widać stan zdrowia każdej baterii we flocie.</p>
+
+<h3>Porównanie czasu pracy</h3>
+<table>
+<thead><tr><th>Konfiguracja</th><th>TC27</th><th>TC58e</th></tr></thead>
+<tbody>
+<tr><td>Bateria standardowa</td><td>3 800 mAh / ~8–10 h</td><td>4 680 mAh / ~13–15 h</td></tr>
+<tr><td>Bateria rozszerzona</td><td>5 200 mAh / ~12–14 h</td><td>7 000 mAh / ~18–22 h</td></tr>
+<tr><td>Wymiana baterii</td><td>Warm Swap (~30–60 s przestoju)</td><td>Warm Swap (~30–60 s przestoju)</td></tr>
+</tbody>
+</table>
+
+<p><strong>Kluczowy wniosek:</strong> TC58e z baterią 7 000 mAh spokojnie pokrywa dwie zmiany (16 h) bez wymiany baterii. TC27 z baterią 3 800 mAh wystarczy na jedną zmianę (8 h). Dla operacji dwuzmianowych TC58e z baterią 7 000 mAh eliminuje konieczność wymiany baterii w trakcie dnia — to mniej logistyki akcesorii i mniej przestojów.</p>`
+    },
+    {
+      id: 'wytrzymalosc',
+      heading: 'Wytrzymałość i zakres temperatur',
+      content: `<p>Oba terminale są certyfikowane MIL-STD-810H i mają klasę ochrony IP68/IP65 — ale TC58e jest znacznie bardziej wytrzymały w ekstremalnych warunkach.</p>
+
+<h3>Upadki i tumble</h3>
+<p><strong>TC27</strong> wytrzymuje upadki z 1,5 m na beton i 500 przetumblowań z 0,5 m. To solidny wynik dla pracy w sklepie, lekkim magazynie czy w terenie — pod warunkiem, że terminal jest noszony w etui ochronnym.</p>
+
+<p><strong>TC58e</strong> wytrzymuje upadki z 1,8 m na beton (2,4 m z etui Rugged Boot) i 1 000 przetumblowań z 0,5 m (1 000 z 1,0 m z etui). To dwukrotnie lepszy wynik tumble — co przekłada się na niższy wskaźnik uszkodzeń w ciężkim środowisku magazynowym, gdzie terminale regularnie spadają z regałów, wózków widłowych i przenośników.</p>
+
+<h3>Temperatura pracy</h3>
+<p><strong>TC27: -10°C do +50°C</strong> — wystarczające dla pracy wewnątrz budynku i na zewnątrz w klimacie umiarkowanym. Ale uwaga: -10°C to za mało do pracy w chłodni (+2°C do -5°C jest OK, ale nie chłodnia głębokiego mrożenia) i zdecydowanie za mało do mroźni (-20°C i niżej).</p>
+
+<p><strong>TC58e: -20°C do +50°C</strong> — dolna granica -20°C pozwala na pracę w chłodniach i mroźniach standardowych. Terminal działa poprawnie przy inwentaryzacji towarów mrożonych, kompletacji zamówień w strefie mrozu czy obsłudze cold chain w logistyce żywności i farmacji.</p>
+
+<p><strong>To jest decydujący parametr:</strong> jeśli Twoja firma ma chłodnię, mroźnię lub strefę mrozu — TC27 odpada automatycznie. TC58e jest jedynym wyborem z tych dwóch terminali do pracy w temperaturach poniżej -10°C.</p>`
+    },
+    {
+      id: 'unikalne-tc58e',
+      heading: 'Unikalne funkcje TC58e',
+      content: `<p>TC58e oferuje kilka funkcji, których TC27 nie posiada w ogóle. Te dodatkowe możliwości mogą być kluczowe w określonych scenariuszach:</p>
+
+<h3>1. Security Chip (wybrane SKU)</h3>
+<p>Sprzętowy moduł kryptograficzny (Secure Element + Security Chip) chroni klucze szyfrowania i dane biometryczne na poziomie hardware. Wymagany w sektorach o podwyższonych wymaganiach bezpieczeństwa: finanse, administracja publiczna, obronność, ochrona zdrowia (HIPAA). TC27 nie oferuje Security Chip w żadnej konfiguracji.</p>
+
+<h3>2. Barometr (czujnik ciśnienia atmosferycznego)</h3>
+<p>TC58e ma wbudowany barometr — przydatny do określania piętra w budynkach wielokondygnacyjnych (lokalizacja wewnątrzbudynkowa z Wi-Fi + barometr daje dokładność do 1–2 pięter). TC27 nie ma barometru.</p>
+
+<h3>3. Bluetooth 5.3 (vs 5.2 w TC27)</h3>
+<p>Bluetooth 5.3 w TC58e obsługuje nowe profile LE Audio i Auracast — przyszłościowe standardy dla słuchawek enterprise i komunikacji zespołowej. TC27 z BT 5.2 jest o jedną generację starszy.</p>
+
+<h3>4. Jaśniejszy ekran 600 nit z wet-touch</h3>
+<p>O 33% jaśniejszy ekran z obsługą mokrych palców — szczegółowe porównanie w sekcji <em>Ekran</em> powyżej.</p>
+
+<h3>5. Dłuższe wsparcie Android: do wersji 17</h3>
+<p>TC58e (Android 13→17) ma gwarancję 4 generacji aktualizacji systemu — minimum 5 lat wsparcia LifeGuard™. TC27 (Android 14→16) ma gwarancję 2 generacji — minimum 3–4 lata. Dłuższe wsparcie = dłuższa żywotność urządzenia bez konieczności wymiany z powodu braku łatek bezpieczeństwa.</p>
+
+<h3>6. Kompatybilność akcesoriów z całą rodziną TC5x/TC7x</h3>
+<p>TC58e jest kompatybilny z ekosystemem akcesoriów ShareCradle używanym przez TC53, TC58, TC73 i TC78. Jeśli firma ma flotę mieszaną z tych modeli — stacje ładowania, uchwyty i baterie są współdzielone. TC27 ma osobny ekosystem akcesoriów (platforma TC2L — wspólna z TC22).</p>
+
+<h3>7. Certyfikat EPEAT Gold</h3>
+<p>TC58e posiada certyfikat EPEAT Gold — potwierdzenie spełnienia standardów środowiskowych (25% plastiku z recyklingu, energooszczędny procesor). Wymagany w wielu przetargach publicznych i korporacyjnych politykach zakupowych. TC27 nie ma certyfikatu EPEAT.</p>`
+    },
+    {
+      id: 'tco',
+      heading: 'TCO na 5 lat — ile naprawdę kosztuje każdy terminal?',
+      content: `<p>Cena zakupu terminala to zaledwie 40–60% całkowitego kosztu posiadania (TCO). Doliczyć trzeba: baterię zapasową, etui ochronne, stację ładowania, kontrakt serwisowy i koszt ewentualnej wymiany urządzenia po zakończeniu wsparcia Android.</p>
+
+<h3>Kalkulacja TCO — Zebra TC27 (cykl 4 lata)</h3>
+<table>
+<thead><tr><th>Pozycja</th><th>Koszt netto</th></tr></thead>
+<tbody>
+<tr><td>Terminal TC27 SE4710, 6/64 GB</td><td>2 690 zł</td></tr>
+<tr><td>Bateria zapasowa 3 800 mAh</td><td>~300 zł</td></tr>
+<tr><td>Etui ochronne (rubber boot)</td><td>~200 zł</td></tr>
+<tr><td>Stacja ładowania 1-slot</td><td>~600 zł</td></tr>
+<tr><td>OneCare Essential 3 lata</td><td>1 025 zł</td></tr>
+<tr><td><strong>RAZEM</strong></td><td><strong>~4 815 zł</strong></td></tr>
+<tr><td><strong>Koszt miesięczny (4 lata)</strong></td><td><strong>~100 zł/mies.</strong></td></tr>
+</tbody>
+</table>
+
+<h3>Kalkulacja TCO — Zebra TC58e (cykl 5 lat)</h3>
+<table>
+<thead><tr><th>Pozycja</th><th>Koszt netto</th></tr></thead>
+<tbody>
+<tr><td>Terminal TC58e SE4720, 6/64 GB</td><td>5 337 zł</td></tr>
+<tr><td>Bateria zapasowa 4 680 mAh</td><td>~450 zł</td></tr>
+<tr><td>Etui ochronne (Rugged Boot)</td><td>~250 zł</td></tr>
+<tr><td>Stacja ładowania 1-slot Ethernet</td><td>~800 zł</td></tr>
+<tr><td>OneCare Essential 5 lat</td><td>1 890 zł</td></tr>
+<tr><td><strong>RAZEM</strong></td><td><strong>~8 727 zł</strong></td></tr>
+<tr><td><strong>Koszt miesięczny (5 lat)</strong></td><td><strong>~145 zł/mies.</strong></td></tr>
+</tbody>
+</table>
+
+<h3>TCO per rok — porównanie</h3>
+<table>
+<thead><tr><th>Wskaźnik</th><th>TC27 (4 lata)</th><th>TC58e (5 lat)</th></tr></thead>
+<tbody>
+<tr><td>TCO całkowity</td><td>~4 815 zł</td><td>~8 727 zł</td></tr>
+<tr><td>TCO / rok</td><td>~1 204 zł</td><td>~1 745 zł</td></tr>
+<tr><td>TCO / miesiąc</td><td>~100 zł</td><td>~145 zł</td></tr>
+<tr><td>Cykl życia (Android support)</td><td>~4 lata (do Android 16)</td><td>~5 lat (do Android 17)</td></tr>
+</tbody>
+</table>
+
+<p><strong>Wnioski z analizy TCO:</strong> TC27 jest tańszy o ok. 45% miesięcznie (100 vs 145 zł). Ale TC58e ma o rok dłuższy cykl życia, wyższą odporność na upadki (mniej wymian z tytułu uszkodzeń) i większą baterię (mniej logistyki baterii zapasowych). Przy flocie 50 terminali na 5 lat: TC27 = ~240 750 zł, TC58e = ~436 350 zł — różnica 195 600 zł. Pytanie: czy wyższa produktywność, dłuższa żywotność i mniejsza awaryjność TC58e zwracają tę różnicę? W ciężkim magazynie 2-zmianowym — tak. W pracy terenowej z niskim ryzykiem uszkodzeń — TC27 jest wystarczający.</p>`
+    },
+    {
+      id: 'rekomendacje',
+      heading: 'Który wybrać? Rekomendacje wg scenariusza',
+      content: `<p>Poniższe rekomendacje oparte są na parametrach technicznych i doświadczeniach z wdrożeń terminali Zebra w polskich firmach.</p>
+
+<h3>Wybierz Zebra TC27, gdy:</h3>
+<ul>
+<li><strong>Budżet jest priorytetem</strong> — TC27 od 2 690 zł to najtańszy terminal Zebra z 5G. Przy flocie 50 szt. oszczędzasz ~132 350 zł vs TC58e (sam terminal).</li>
+<li><strong>Praca terenowa jednozmianowa</strong> — kurierzy, serwisanci, przedstawiciele handlowi z jedną zmianą 8 h. Bateria 3 800 mAh wystarczy, a 5 200 mAh daje zapas.</li>
+<li><strong>Retail i lekki magazyn</strong> — sklepy, punkty odbioru, magazyn z niskim regalingiem. SE4710 w zupełności wystarczy.</li>
+<li><strong>Krótszy cykl wymiany</strong> — firma planuje wymianę terminali co 3–4 lata i nie potrzebuje wsparcia Android do wersji 17.</li>
+<li><strong>Mała flota (do 20 szt.)</strong> — łatwiejsze zarządzanie, mniejszy koszt wejścia.</li>
+<li><strong>Terminal ma zastąpić telefon służbowy</strong> — VoLTE + Google Play + skaner enterprise = jedno urządzenie zamiast dwóch.</li>
+</ul>
+
+<h3>Wybierz Zebra TC58e, gdy:</h3>
+<ul>
+<li><strong>Praca 2–3 zmianowa</strong> — bateria 4 680 mAh (13–15 h) lub 7 000 mAh (18–22 h) pokrywa dwie zmiany bez wymiany.</li>
+<li><strong>Chłodnia lub mroźnia</strong> — TC58e pracuje do -20°C. TC27 odpada poniżej -10°C.</li>
+<li><strong>Ciężkie środowisko magazynowe</strong> — upadki z 1,8 m i tumble 1 000x oznaczają mniej uszkodzeń na linii produkcyjnej, w centrum dystrybucyjnym czy na rampie załadunkowej.</li>
+<li><strong>Praca na zewnątrz w zmiennym oświetleniu</strong> — ekran 600 nit z wet-touch jest czytelny w pełnym słońcu i w deszczu.</li>
+<li><strong>Bezpieczeństwo danych jest kluczowe</strong> — Security Chip w wybranych wariantach TC58e dla sektora finansowego, publicznego, zdrowotnego.</li>
+<li><strong>Duża flota z długim cyklem życia</strong> — Android do wersji 17 (5 lat wsparcia), kompatybilność z flotą TC53/TC58/TC73/TC78.</li>
+<li><strong>Magazyn wysokiego składowania</strong> — SE55 w TC58e skanuje do 12 m (vs 7,6 m w TC27).</li>
+<li><strong>Przetargi publiczne</strong> — certyfikat EPEAT Gold wymagany w wielu zamówieniach publicznych.</li>
+</ul>
+
+<h3>Szybka reguła decyzyjna</h3>
+<p>Odpowiedz na 3 pytania:</p>
+<ol>
+<li>Czy terminal pracuje w temperaturze poniżej -10°C? → <strong>TC58e</strong> (jedyna opcja)</li>
+<li>Czy terminal pracuje na 2+ zmianach dziennie? → <strong>TC58e</strong> (bateria 7 000 mAh)</li>
+<li>Czy budżet na terminal < 4 000 zł netto? → <strong>TC27</strong> (od 2 690 zł)</li>
+</ol>
+<p>Jeśli odpowiedź na wszystkie 3 pytania brzmi „nie" — oba terminale spełnią wymagania. Decyzja zależy od priorytetów: cena (TC27) vs trwałość i długi cykl życia (TC58e).</p>`
+    },
+    {
+      id: 'alternatywy',
+      heading: 'Alternatywy — inne terminale 5G w ofercie TAKMA',
+      content: `<p>TC27 i TC58e to nie jedyne terminale 5G w ofercie TAKMA. Oto najciekawsze alternatywy z naszego katalogu:</p>
+
+<h3>Tańsze — gdy TC27 to za dużo</h3>
+<ul>
+<li><strong><a href="/produkt/zebra-tc22">Zebra TC22</a></strong> (od 2 417 zł netto) — bliźniacze urządzenie TC27, ale bez 5G i GPS. Wyłącznie Wi-Fi 6/6E. Idealne do pracy wewnątrz budynku, gdzie Wi-Fi wystarczy. Oszczędność ~270 zł/szt. vs TC27.</li>
+<li><strong><a href="/produkt/datalogic-memor-17">Datalogic Memor 17</a></strong> (od ~2 991 zł netto) — 6" FHD+, 5G, Android 13→18, SafeSwap, ładowanie indukcyjne Qi 7W. Konkurent TC27 z dłuższym wsparciem Android.</li>
+</ul>
+
+<h3>Droższe — gdy TC58e to za mało</h3>
+<ul>
+<li><strong><a href="/produkt/zebra-tc58">Zebra TC58</a></strong> (od ok. 6 751 zł netto) — mocniejszy procesor Qualcomm 6490, wyższe taktowanie. Dla firm, które potrzebują maksymalnej wydajności obliczeniowej.</li>
+<li><strong><a href="/produkt/zebra-tc78">Zebra TC78</a></strong> (od ok. 8 199 zł netto) — ultra-rugged z 5G, upadki z 3,05 m, temperatura -30°C do +50°C. Dla ekstremalnych warunków (mroźnia, plac budowy, kopalnia).</li>
+<li><strong><a href="/produkt/honeywell-ct47">Honeywell CT47</a></strong> (od ok. 5 929 zł netto) — 5G, FlexRange XLR do 24 m, IP68, upadki z 2,4 m. Główny rywal TC58e od Honeywell.</li>
+</ul>
+
+<h3>Inna klasa — z klawiaturą</h3>
+<ul>
+<li><strong><a href="/produkt/zebra-mc3450">Zebra MC3450</a></strong> (od ok. 6 543 zł netto) — terminal gun z klawiaturą fizyczną i 5G/GPS. Dla operatorów, którzy wolą klawiaturę od ekranu dotykowego.</li>
+<li><strong><a href="/produkt/zebra-mc9450">Zebra MC9450</a></strong> (od ok. 9 918 zł netto) — ultra-rugged gun z 5G, 7 wariantów klawiatury, upadki z 3,65 m. Najwytrzymalszy terminal Zebra z łącznością komórkową.</li>
+</ul>
+
+<p>Potrzebujesz pomocy w doborze terminala? <a href="/kontakt">Skontaktuj się z TAKMA</a> — pomożemy dobrać model do budżetu, środowiska pracy i skali floty.</p>`
+    }
+  ],
+  faq: [
+    { question: 'Ile kosztuje Zebra TC27?', answer: 'Ceny Zebra TC27 zaczynają się od ok. 2 690 zł netto za wariant SE4710, 6/64 GB, bateria 3 800 mAh. Wersja z rozszerzonym skanerem SE55 kosztuje od ok. 3 236 zł, a topowa konfiguracja (SE55, 8/128 GB, RFID-ready, BLE) to ok. 3 879 zł netto. Ceny netto, dane z marca 2026. Aktualna oferta: <a href="/produkt/zebra-tc27">strona produktu TC27</a>.' },
+    { question: 'Ile kosztuje Zebra TC58e?', answer: 'Ceny Zebra TC58e zaczynają się od ok. 5 337 zł netto za wariant SE4720, 6/64 GB. Konfiguracja SE4770 z Security Chip to ok. 5 492 zł, SE55 8/128 GB ok. 5 552 zł, a topowy wariant SE55 z Security Chip ok. 5 943 zł netto. Ceny netto, dane z marca 2026. Aktualna oferta: <a href="/produkt/zebra-tc58e">strona produktu TC58e</a>.' },
+    { question: 'Czym różni się Zebra TC27 od TC58e?', answer: 'Kluczowe różnice: TC58e ma szybszy procesor (octa-core 2,4 GHz vs hexa-core 2,1 GHz), jaśniejszy ekran (600 vs 450 nit), większą baterię (4 680/7 000 vs 3 800/5 200 mAh), wyższe upadki (1,8 m vs 1,5 m), szerszy zakres temperatur (-20°C vs -10°C), dłuższe wsparcie Android (do v17 vs v16), Bluetooth 5.3 vs 5.2, trzy skanery do wyboru (vs dwa), Security Chip i barometr. TC27 jest lżejszy (236 vs 282 g) i dwukrotnie tańszy (2 690 vs 5 337 zł).' },
+    { question: 'Co to jest Warm Swap baterii?', answer: 'Warm Swap to tryb wymiany baterii, w którym terminal przechodzi w tryb uśpienia (hibernacja) na czas wymiany. Po włożeniu nowej baterii urządzenie wybudza się i wznawia sesję — ale wymaga ponownego połączenia Wi-Fi/5G i restartu niektórych aplikacji. Przestój: ok. 30–60 sekund. Oba terminale — TC27 i TC58e — obsługują Warm Swap. Alternatywą jest True Hot Swap (np. w Zebra TC58/TC78), gdzie wewnętrzny bufor utrzymuje terminal w pełnym działaniu podczas wymiany — zero przestoju.' },
+    { question: 'Który terminal Zebra z 5G jest najtańszy?', answer: 'Najtańszy terminal Zebra z łącznością 5G to <a href="/produkt/zebra-tc27">Zebra TC27</a> — od ok. 2 690 zł netto. Następny w kolejności: TC58e od 5 337 zł, TC58 od ok. 6 751 zł, MC3450 od ok. 6 543 zł, TC78 od ok. 8 199 zł, MC9450 od ok. 9 918 zł. TC27 jest jedynym terminalem Zebra 5G w cenie poniżej 3 000 zł.' },
+    { question: 'Czy Zebra TC27 działa w chłodni?', answer: 'TC27 ma zakres temperatury pracy od -10°C do +50°C — działa w chłodni o temperaturze +2°C do -5°C, ale NIE działa w mroźni (-18°C i niżej). Dla pracy w mroźni potrzebujesz <a href="/produkt/zebra-tc58e">Zebra TC58e</a> (zakres do -20°C) lub <a href="/produkt/zebra-tc78">Zebra TC78</a> (zakres do -30°C).' },
+    { question: 'Co to jest skaner SE55 i jaki ma zasięg?', answer: 'SE55 Advanced Range to skaner dalekiego zasięgu Zebra z IntelliFocus — automatycznym doborem ostrości. Skanuje kody 1D i 2D od odległości 10 cm do 7,6 m (w TC27) lub 12 m (w TC58e). Zielona kropka celownicza ułatwia celowanie na duże odległości. Idealny do magazynów wysokiego składowania — operator skanuje kody na najwyższych półkach bez drabiny i bez podnośnika.' },
+    { question: 'Jak długo działa bateria TC27?', answer: 'Bateria standardowa 3 800 mAh zapewnia ok. 8–10 godzin pracy z aktywnym 5G i skanowaniem. Bateria rozszerzona 5 200 mAh wydłuża czas do ok. 12–14 godzin. Dla pracowników z jedną zmianą 8 h — bateria 3 800 mAh wystarczy. Dla całodniowej pracy terenowej (kurierzy, serwisanci) rekomendujemy 5 200 mAh lub baterię zapasową.' },
+    { question: 'Jak długo działa bateria TC58e?', answer: 'Bateria standardowa 4 680 mAh PowerPrecision+ zapewnia ok. 13–15 godzin pracy z 5G — wystarczy na całą zmianę z zapasem. Bateria rozszerzona 7 000 mAh wydłuża czas do 18–22 godzin — pokrywa dwie pełne zmiany bez wymiany. Technologia PowerPrecision+ monitoruje kondycję baterii przez Bluetooth w czasie rzeczywistym.' },
+    { question: 'Czy TC27 ma NFC do płatności mobilnych?', answer: 'TC27 ma moduł NFC (ISO 14443 A/B, FeliCa, ISO 15693) do odczytu tagów i kart, ale NIE posiada Secure Element (sprzętowego modułu kryptograficznego) wymaganego do płatności mobilnych. TC58e w wariantach z Security Chip ma Secure Element — może służyć jako mobilny terminal płatniczy (mPOS) po zainstalowaniu odpowiedniej aplikacji płatniczej.' },
+    { question: 'Do jakiej wersji Androida zaktualizuję TC27?', answer: 'Zebra TC27 startuje z Android 14 i ma gwarancję aktualizacji do Android 16 — to ok. 3–4 lata wsparcia LifeGuard™ (comiesięczne łatki bezpieczeństwa OTA). Po zakończeniu wsparcia terminal nadal działa, ale nie otrzymuje łatek bezpieczeństwa — co może być problemem w sektorach regulowanych.' },
+    { question: 'Do jakiej wersji Androida zaktualizuję TC58e?', answer: 'Zebra TC58e startuje z Android 13 i ma gwarancję aktualizacji do Android 17 — to ok. 5 lat wsparcia LifeGuard™ (comiesięczne łatki bezpieczeństwa OTA). To o rok dłużej niż TC27 (Android 14→16). Dłuższy cykl wsparcia = dłuższy bezpieczny cykl życia urządzenia i lepszy zwrot z inwestycji.' },
+    { question: 'Jaki skaner wybrać do TC27?', answer: 'TC27 ma dwa skanery do wyboru: SE4710 (standard, do 66 cm) — do skanowania na wyciągnięcie ręki (kasa, lada, kompletacja). SE55 (advanced range, do 7,6 m) — do magazynów z regałami powyżej 3 m. Wariant z SE4710 kosztuje od 2 690 zł, z SE55 od 3 236 zł — różnica 546 zł. Jeśli nie masz regałów wysokiego składowania, SE4710 wystarczy.' },
+    { question: 'Jaki skaner wybrać do TC58e?', answer: 'TC58e ma trzy skanery: SE4720 (standard) — praca w pomieszczeniach. SE4770 (indoor/outdoor) — najlepszy dla kurierów i serwisantów terenowych, doskonała czytelność w pełnym słońcu. SE55 (do 12 m) — magazyny wysokiego składowania. Rekomendacja: praca wewnątrz → SE4720 (od 5 337 zł), praca na zewnątrz → SE4770 (od 5 492 zł), wysokie regały → SE55 (od 5 552 zł).' },
+    { question: 'TC27 vs TC22 — jaka różnica?', answer: 'TC27 i TC22 to bliźniacze urządzenia z identycznym procesorem, ekranem, skanerem i wytrzymałością. Jedyna różnica: TC27 dodaje 5G/4G LTE + dual SIM + GPS/GNSS. <a href="/produkt/zebra-tc22">TC22</a> kosztuje od 2 417 zł (oszczędność ~270 zł). Jeśli terminal pracuje wyłącznie w budynku z Wi-Fi → TC22 wystarczy. Jeśli wyjeżdża w teren → TC27 jest konieczny.' },
+    { question: 'TC58e vs TC53e — jaka różnica?', answer: 'TC58e i <a href="/produkt/zebra-tc53e">TC53e</a> to bliźniacze urządzenia — identyczny procesor, ekran, wytrzymałość. TC58e dodaje: 5G/4G LTE (nano SIM + eSIM), GPS/GNSS dual-band i barometr. TC53e ma wyłącznie WiFi 6E. TC58e jest o ok. 400 zł droższy. Reguła: terminal w budynku z WiFi → TC53e. Terminal w terenie → TC58e.' },
+    { question: 'Czy Zebra TC27 wystarczy do magazynu?', answer: 'Tak — TC27 wystarczy do lekkiego magazynu z jedną zmianą, temperaturą powyżej -10°C i regałami do 4 m. SE4710 skanuje do 66 cm (kompletacja z niskich półek), SE55 do 7,6 m (wysokie regały). Ale: w ciężkim magazynie 2-zmianowym, w chłodni lub z intensywnymi upadkami — lepiej wybrać <a href="/produkt/zebra-tc58e">TC58e</a> (większa bateria, -20°C, upadki z 1,8 m).' },
+    { question: 'Jaki jest koszt posiadania (TCO) TC27 na 5 lat?', answer: 'TCO na 4 lata (cykl życia TC27 z Android do v16): terminal ~2 690 zł + bateria zapasowa ~300 zł + etui ~200 zł + stacja ładowania ~600 zł + OneCare 3 lata ~1 025 zł = ok. 4 815 zł netto. To ~100 zł/miesiąc na terminal. TCO TC58e na 5 lat: ~8 727 zł (~145 zł/miesiąc). TC27 jest o 45% tańszy miesięcznie.' },
+    { question: 'Czy TAKMA konfiguruje i wdraża terminale Zebra?', answer: 'Tak. TAKMA oferuje pełną usługę wdrożeniową: staging (prekonfiguracja terminali przez StageNow/EMM), integracja z systemem WMS/ERP, konfiguracja Wi-Fi/5G/VPN, instalacja aplikacji, przypisanie profili MDM. Wspieramy też migrację z poprzednich generacji (TC26→TC27, TC52→TC58e). <a href="/kontakt">Skontaktuj się</a> — przygotujemy ofertę na terminale z konfiguracją.' },
+    { question: 'Jakie są alternatywy dla TC27 i TC58e?', answer: 'Tańsza alternatywa: <a href="/produkt/zebra-tc22">Zebra TC22</a> (od 2 417 zł, Wi-Fi only). Konkurenci TC27: <a href="/produkt/datalogic-memor-17">Datalogic Memor 17</a> (od ~2 991 zł, 5G, SafeSwap). Konkurenci TC58e: <a href="/produkt/honeywell-ct47">Honeywell CT47</a> (od ~5 929 zł, 5G, FlexRange), <a href="/produkt/zebra-tc58">Zebra TC58</a> (od ~6 751 zł, mocniejszy procesor). Ultra-rugged: <a href="/produkt/zebra-tc78">Zebra TC78</a> (od ~8 199 zł, upadki 3,05 m, -30°C).' }
+  ],
+  relatedLinks: [
+    { title: 'Zebra TC27 — strona produktu', href: '/produkt/zebra-tc27' },
+    { title: 'Zebra TC58e — strona produktu', href: '/produkt/zebra-tc58e' },
+    { title: 'Zebra TC22 — entry-level Wi-Fi', href: '/produkt/zebra-tc22' },
+    { title: 'Zebra TC53e — mid-range Wi-Fi', href: '/produkt/zebra-tc53e' },
+    { title: 'Zebra TC58 — flagowy 5G', href: '/produkt/zebra-tc58' },
+    { title: 'Zebra TC78 — ultra-rugged 5G', href: '/produkt/zebra-tc78' },
+    { title: 'Honeywell CT47 — konkurent 5G', href: '/produkt/honeywell-ct47' },
+    { title: 'Datalogic Memor 17 — budżetowy 5G', href: '/produkt/datalogic-memor-17' },
+    { title: 'Jak wybrać terminal mobilny — poradnik', href: '/poradnik/jak-wybrac-terminal-mobilny' },
+    { title: 'TOP 10 terminali mobilnych 2026', href: '/poradnik/top-10-terminali-mobilnych-2026' },
+    { title: 'Zebra vs Honeywell — porównanie', href: '/poradnik/zebra-vs-honeywell-terminale-mobilne' },
+    { title: 'Wszystkie terminale mobilne', href: '/terminale-mobilne' },
+    { title: 'Kontakt i doradztwo', href: '/kontakt' },
+  ]
 }
 ]
 

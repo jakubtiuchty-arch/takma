@@ -310,4 +310,278 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       { title: 'Drukarka termiczna vs termotransferowa — porównanie', href: '/poradnik/drukarka-termiczna-vs-termotransferowa' },
     ],
   },
+
+  // ============================================
+  // HONEYWELL
+  // ============================================
+  honeywell: {
+    heroText: 'Drukarki etykiet, terminale mobilne, skanery kodów kreskowych i tablety przemysłowe — pełna oferta Honeywell z cenami netto i dostawą z magazynu w Polsce.',
+
+    categoryTiles: [
+      {
+        categoryId: 'drukarki-etykiet',
+        name: 'Drukarki etykiet',
+        href: '/drukarki-etykiet-honeywell',
+        description: 'Biurkowe PC, półprzemysłowe PD, przemysłowe PM/PX. Od 1 518 zł netto.',
+      },
+      {
+        categoryId: 'terminale-mobilne',
+        name: 'Terminale mobilne',
+        href: '/terminale-honeywell',
+        description: 'Serie CT i CK z Androidem. Wi-Fi 6E, 5G, IP65–IP68.',
+      },
+      {
+        categoryId: 'skanery-kodow-kreskowych',
+        name: 'Skanery kodów',
+        href: '/skanery-honeywell',
+        description: 'Voyager, Xenon, Granit. Od 358 zł netto.',
+      },
+      {
+        categoryId: 'tablety-przemyslowe',
+        name: 'Tablety przemysłowe',
+        href: '/tablety-honeywell',
+        description: 'RT10A i EDA10A. Android, Windows. IP65.',
+      },
+    ],
+
+    featuredSlugs: [
+      'honeywell-pd45',
+      'honeywell-pm45',
+      'honeywell-px940',
+      'honeywell-ck67',
+      'honeywell-ct47',
+      'honeywell-xenon-ultra-1960g',
+      'honeywell-granit-xp-1990ixr',
+      'honeywell-voyager-xp-1470g',
+    ],
+
+    // ────────────────────────────────
+    // TECHNOLOGIE
+    // ────────────────────────────────
+    technologies: [
+      {
+        name: 'Mobility Edge',
+        badge: 'Terminale',
+        description: 'Zunifikowana platforma hardware+software. Jeden obraz systemu na wszystkie formaty (handheld, gun, tablet, vehicle-mount). Gwarantowane wsparcie przez 5 generacji Androida. Jedyny producent z tak długim cyklem na jednej platformie.',
+      },
+      {
+        name: 'Honeywell Sentinel',
+        badge: 'Bezpieczeństwo',
+        description: 'Patche bezpieczeństwa Android przez 5 lat po zakończeniu oficjalnego wsparcia Google. Terminal kupiony z Android 13 dostanie patche do 2030 roku. To nie marketing — Honeywell publikuje harmonogram z datami.',
+      },
+      {
+        name: 'Vocollect Voice',
+        badge: 'Voice picking',
+        description: 'Technologia kompletacji głosowej (hands-free/eyes-free). Headset + terminal na pasku + oprogramowanie rozpoznające mowę. Wyniki: do 30% wzrost wydajności, dokładność 99,99%. Standard w magazynach Amazon, DHL, Żabka Logistyka.',
+      },
+      {
+        name: 'Operational Intelligence',
+        badge: 'Analytics',
+        description: 'Dane z urządzeń, aplikacji, pracowników i sieci w jednym dashboardzie. Automatyczne wykrywanie wąskich gardeł, raporty wydajności floty. ROI z wdrożonych terminali widoczny w liczbach, nie w domysłach.',
+      },
+      {
+        name: 'Honeywell Forge',
+        badge: 'IoT/Cloud',
+        description: 'Platforma chmurowa do zarządzania flotami urządzeń i procesami. Zdalna konfiguracja, monitoring baterii, alerty o awariach. Integracja z Mobility Edge i systemami WMS/ERP.',
+      },
+      {
+        name: 'Smart Printer',
+        badge: 'Drukarki',
+        description: 'Drukarki przemysłowe PX45/PX65/PX940 z wbudowanym językiem C# i Fingerprint (wewnętrzna logika bez komputera). Smart Printing: drukarka sama pobiera dane z ERP, formatuje etykietę i drukuje — bez pośrednictwa PC.',
+      },
+    ],
+
+    // ────────────────────────────────
+    // BRANŻE
+    // ────────────────────────────────
+    industries: [
+      {
+        name: 'Magazyn i logistyka',
+        description: 'Terminale gun z klawiaturą do pracy w rękawicach. FlexRange XLR — skaner do 24 m bez drabiny. Voice picking Vocollect w kompletacji zamówień.',
+        products: '[CK67](/produkt/honeywell-ck67), [CK62](/produkt/honeywell-ck62), [PM45](/produkt/honeywell-pm45)',
+      },
+      {
+        name: 'Retail i e-commerce',
+        description: 'Skanery Voyager i Xenon na kasie (gwarancja 5 lat). Terminale dotykowe CT do inwentaryzacji. Drukarki biurkowe PC do etykiet cenowych i wysyłkowych.',
+        products: '[Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g), [Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960g), [PC42e-t](/produkt/honeywell-pc42e-t)',
+      },
+      {
+        name: 'Produkcja',
+        description: 'Drukarki przemysłowe PX z weryfikacją nadruku (precyzja ±0,2 mm). Skanery Granit XP IP67 — czytają brudne i uszkodzone kody. Terminale odporne na oleje i chemikalia.',
+        products: '[PX940](/produkt/honeywell-px940), [Granit XP 1990iSR](/produkt/honeywell-granit-xp-1990isr), [CT47](/produkt/honeywell-ct47)',
+      },
+      {
+        name: 'Ochrona zdrowia',
+        description: 'Skanery healthcare z obudową odporną na środki dezynfekcyjne. Terminale z certyfikacją UL/IEC do środowisk medycznych. Druk opasek identyfikacyjnych pacjentów.',
+        products: '[Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960g), [CT32](/produkt/honeywell-ct32)',
+      },
+      {
+        name: 'Transport i serwis terenowy',
+        description: 'Terminale z 5G/LTE i GPS do pracy w terenie. Drukarki mobilne RP na pasku kuriera. Tablety RT10A z FlexRange do skanowania na rampie.',
+        products: '[CT47](/produkt/honeywell-ct47), [CT70](/produkt/honeywell-ct70), [RT10A](/produkt/honeywell-rt10a)',
+      },
+    ],
+
+    // ────────────────────────────────
+    // TIMELINE
+    // ────────────────────────────────
+    timeline: [
+      { year: '1966', event: 'Powstaje Intermec w Lynnwood, Washington — firma, która stworzy standardy kodów kreskowych Code 39 (1974) i Code 93. Przez 47 lat będzie niezależnym liderem AutoID.' },
+      { year: '1969', event: 'David Knowles zakłada Metrologic Instruments w Blackwood, New Jersey. Ponad 600 patentów z zakresu skanowania laserowego i imaging — technologia, na której do dziś bazują skanery Honeywell.' },
+      { year: '1987', event: 'Larry Sweeney zakłada Vocollect w Pittsburgh. Technologia voice picking — pracownik słyszy instrukcje w słuchawce, potwierdza głosem, ręce ma wolne. Do dziś standard w dużych magazynach.' },
+      { year: '2007', event: 'Honeywell przejmuje Hand Held Products za 390 mln USD. Wchodzi w rynek skanerów kodów kreskowych — portfolio Voyager, Xenon i Granit trafia pod skrzydła Honeywell.' },
+      { year: '2008', event: 'Przejęcie Metrologic Instruments za 720 mln USD. Honeywell konsoliduje rynek skanerów — łącznie 1,11 mld USD zainwestowane w skanery w 2 lata.' },
+      { year: '2013', event: 'Przejęcie Intermec za 600 mln USD. Honeywell zyskuje terminale mobilne (serie CK, CN), drukarki etykiet (PM, PX) i technologię RFID. Vocollect (kupiony przez Intermec w 2011 za 190 mln USD) przechodzi do Honeywell.' },
+      { year: '2015', event: 'Przejęcie Datamax-O\'Neil za 185 mln USD. Portfolio drukarek rośnie o drukarki mobilne (seria RP) i przemysłowe. Łączna wartość przejęć AutoID Honeywell: 2,58 mld USD.' },
+      { year: '2024', event: 'Przychód SPS (Safety & Productivity Solutions): 10,05 mld USD. Honeywell ogłasza podział na 3 spółki (realizacja 2026) — segment AutoID trafia do Honeywell Automation (~18 mld USD przychodu).' },
+    ],
+
+    // ────────────────────────────────
+    // O FIRMIE
+    // ────────────────────────────────
+    aboutParagraphs: [
+      'Honeywell to amerykański konglomerat technologiczny z siedzibą w Charlotte, Karolina Północna. Firma zatrudnia 101 000 pracowników w 70+ krajach, a jej łączny przychód w 2024 roku wyniósł 38,5 mld USD. Segment Safety & Productivity Solutions (SPS), odpowiedzialny za urządzenia AutoID, generuje ok. 10 mld USD rocznie — dwukrotnie więcej niż cała Zebra Technologies.',
+      'Portfolio AutoID Honeywell powstało z przejęć: Intermec (terminale i drukarki, 2013), Metrologic i Hand Held Products (skanery, 2007–2008), Datamax-O\'Neil (drukarki mobilne, 2015) i Vocollect (voice picking, przez Intermec). Każda z tych firm była liderem w swoim segmencie — Honeywell połączył je w jeden ekosystem z platformą [Mobility Edge](https://automation.honeywell.com) i programem [Sentinel](https://automation.honeywell.com) zapewniającym najdłuższe wsparcie Android w branży.',
+      'TAKMA oferuje pełną gamę produktów Honeywell AutoID: drukarki etykiet od [PC42e-t](/produkt/honeywell-pc42e-t) (od 1 518 zł) po przemysłowe [PX940](/produkt/honeywell-px940), terminale mobilne od [CT32](/produkt/honeywell-ct32) (od 3 389 zł) po ultra-rugged [CK67](/produkt/honeywell-ck67) z 5G, skanery od [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (od 358 zł) po przemysłowe [Granit XP](/produkt/honeywell-granit-xp-1990ixr). Ceny netto z dystrybucji Ingram Micro i BlueStar, dostawa z magazynu w Polsce.',
+    ],
+
+    // ────────────────────────────────
+    // PARTNERSTWO
+    // ────────────────────────────────
+    partnership: [
+      'Honeywell prowadzi program [Performance Partner Program](https://productivity.honeywell.com/partners/English/) z trzema poziomami: Silver (reseller), Gold (integrator z lokalną ekspertyzą) i Platinum (regionalny ekspert z certyfikacjami i rozbudowanym supportem). Platinum Elite to najwyższy poziom — dla autoryzowanych resellerów Vocollect Voice. Awans wymaga minimalnego przychodu, planu biznesowego i ukończonych szkoleń.',
+      'TAKMA dystrybuuje produkty Honeywell AutoID z hurtowni Ingram Micro i BlueStar — dwóch największych dystrybutorów Honeywell w Europie. Ceny netto aktualizowane codziennie, stany magazynowe w czasie rzeczywistym. Doradzamy przy wyborze urządzeń, konfigurujemy floty i integrujemy z WMS/ERP.',
+    ],
+
+    // ────────────────────────────────
+    // SERWIS
+    // ────────────────────────────────
+    service: [
+      'Serwis urządzeń Honeywell w Polsce realizowany jest przez autoryzowane centra serwisowe, m.in. Aspekt, Etisoft (Platinum Partner + autoryzowany serwis drukarek) i IBCS Service. Standardowa gwarancja producenta: 12–24 miesięcy w zależności od kategorii. Naprawy obejmują terminale (ekrany, baterie, porty), drukarki (głowice, wałki, moduły) i skanery (okna, kable, podstawki).',
+      'Dla terminali i drukarek dostępne są kontrakty Honeywell Service Plans — rozszerzona gwarancja z naprawą uszkodzeń przypadkowych i wsparciem technicznym. Ceny kontraktów widoczne na kartach produktów w naszym sklepie. Czas naprawy: 5–10 dni roboczych. TAKMA pomaga w organizacji serwisu i obsłudze gwarancji.',
+    ],
+
+    // ────────────────────────────────
+    // PORÓWNANIE
+    // ────────────────────────────────
+    comparisonIntro: 'Honeywell, Zebra i Datalogic to trzy największe marki urządzeń AutoID dostępne w Polsce. Honeywell wyróżnia się najdłuższym cyklem życia urządzeń (Mobility Edge + Sentinel), technologią voice picking (Vocollect) i drukarkami z wbudowaną weryfikacją nadruku.',
+    comparison: [
+      { aspect: 'Drukarki etykiet', honeywell: 'PC42e, PD45, PM45, PX940. Emulacja ZPL.', zebra: 'Lider rynku — ZD, ZT, ZQ. Najszersza gama.', datalogic: 'Brak w ofercie.' },
+      { aspect: 'Terminale mobilne', honeywell: 'CT, CK — Mobility Edge, FlexRange XLR.', zebra: 'TC, MC — najszersza gama enterprise.', datalogic: 'Memor, Skorpio — najlepsza cena.' },
+      { aspect: 'Skanery kodów', honeywell: 'Voyager, Xenon, Granit — modularność.', zebra: 'DS, LI — prędkość, zasięg do 24 m.', datalogic: 'QuickScan, Gryphon — best value.' },
+      { aspect: 'Ekosystem software', honeywell: 'Mobility Edge, Sentinel, Vocollect, Forge.', zebra: '30+ narzędzi Mobility DNA / Print DNA.', datalogic: 'Datalogic Mobility Suite.' },
+      { aspect: 'Wsparcie Android', honeywell: 'Sentinel — 5 gen. + 5 lat extra.', zebra: 'LifeGuard — do A19, 8–10 lat.', datalogic: '3–5 lat.' },
+      { aspect: 'Voice picking', honeywell: 'Vocollect (własne, lider rynku).', zebra: 'Integracja z zewnętrznymi.', datalogic: 'Brak.' },
+      { aspect: 'Pozycja cenowa', honeywell: 'Premium.', zebra: 'Premium.', datalogic: 'Mid-range.' },
+    ],
+
+    // ────────────────────────────────
+    // DLACZEGO TAKMA
+    // ────────────────────────────────
+    whyBuyItems: [
+      {
+        title: 'Ceny z dystrybucji',
+        text: 'Ceny netto z hurtowni Ingram Micro i BlueStar — dwóch największych dystrybutorów Honeywell w Europie. Minimalna marża, aktualne stany magazynowe.',
+      },
+      {
+        title: 'Najdłuższy cykl życia',
+        text: 'Mobility Edge + Sentinel = 10+ lat wsparcia Android na jednym terminalu. Mniej migracji, niższy TCO.',
+      },
+      {
+        title: 'Doradztwo i konfiguracja',
+        text: 'Staging flotowy, konfiguracja MDM (SOTI, Intune), integracja z WMS/ERP. 25 lat na rynku AutoID.',
+      },
+      {
+        title: 'Kompletna oferta',
+        text: 'Od skanera za 358 zł po terminal 5G za 7 765 zł. Drukarki, terminale, skanery, tablety, akcesoria i kontrakty serwisowe.',
+      },
+    ],
+
+    // ────────────────────────────────
+    // FAQ (18 pytań)
+    // ────────────────────────────────
+    faq: [
+      {
+        question: 'Gdzie kupić urządzenia Honeywell w Polsce?',
+        answer: 'TAKMA oferuje pełną gamę produktów Honeywell AutoID: [drukarki etykiet](/drukarki-etykiet-honeywell), [terminale mobilne](/terminale-honeywell), [skanery kodów](/skanery-honeywell) i [tablety przemysłowe](/tablety-honeywell). Produkty z dystrybucji Ingram Micro i BlueStar — ceny netto aktualizowane codziennie, stany magazynowe w czasie rzeczywistym. Wysyłka z magazynu PL (24h) lub EU (2–3 dni). Siedziba we Wrocławiu, 25 lat na rynku AutoID.',
+      },
+      {
+        question: 'Ile kosztuje najtańsze urządzenie Honeywell?',
+        answer: 'Najtańszy skaner: [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) od 358 zł netto. Najtańsza drukarka: [PC42e-t](/produkt/honeywell-pc42e-t) od 1 518 zł netto. Najtańszy terminal: [CT32](/produkt/honeywell-ct32) od 3 389 zł netto. Najtańszy tablet: [EDA10A](/produkt/honeywell-eda10a) od 4 071 zł netto. Ceny netto z dystrybucji, aktualizowane codziennie.',
+      },
+      {
+        question: 'Czym różnią się serie drukarek PC, PD, PM i PX?',
+        answer: 'PC ([PC42e-t](/produkt/honeywell-pc42e-t)) — biurkowe, entry-level, druk termiczny i termotransferowy, do etykiet wysyłkowych i cenowych. PD ([PD45](/produkt/honeywell-pd45), PD45S) — półprzemysłowe, metalowa rama, opcja RFID, do linii produkcyjnych i średnich magazynów. PM ([PM45](/produkt/honeywell-pm45), PM65) — przemysłowe 24/7, pełna metalowa obudowa, emulacja ZPL II (ZSim2), do centrów logistycznych. PX ([PX940](/produkt/honeywell-px940), PX45, PX65) — premium z wbudowaną weryfikacją nadruku, język C#/Fingerprint, Smart Printing bez pośrednictwa PC.',
+      },
+      {
+        question: 'Który terminal Honeywell do magazynu?',
+        answer: '[CK67](/produkt/honeywell-ck67) (od 7 765 zł) — klawiatura + gun, 5G, FlexRange XLR do 24 m, bateria 7000 mAh hot-swap, praca do -30°C. Optymalny do magazynów wysokiego składowania i chłodni. [CK62](/produkt/honeywell-ck62) (od 5 385 zł) — poprzednia generacja, tańsza, sprawdzona w tysiącach wdrożeń. [CT47](/produkt/honeywell-ct47) (od 5 929 zł) — dotykowy z 5G, IP68, dla lekkiego magazynu i pracy mieszanej (magazyn + biuro). Porównanie w [poradniku terminali](/poradnik/jak-wybrac-terminal-mobilny).',
+      },
+      {
+        question: 'Jaki skaner Honeywell do kasy lub apteki?',
+        answer: '[Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (od 358 zł) — ręczny 2D USB, retail i apteka, gwarancja 5 lat. [Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960g) (od 569 zł) — szybszy imaging, wersja healthcare z obudową odporną na dezynfekcję. [Genesis XP 7680g](/produkt/honeywell-genesis-xp-7680g) — prezentacyjny hands-free, skanuje do 15 kodów jednocześnie. Do apteki z recepturą elektroniczną: Xenon Ultra (czyta kody 2D na ekranach telefonów).',
+      },
+      {
+        question: 'Czym różnią się skanery Voyager, Xenon i Granit?',
+        answer: 'Voyager = entry-level, retail, gwarancja 5 lat, od 358 zł. Solidny i tani — do kas, aptek, biur. Xenon = wydajność, healthcare, szybszy imaging, od 569 zł. Wersje healthcare z dezynfekowalną obudową. Granit XP = ultra-rugged IP67, upadki z 3 m na beton, praca do -30°C, magazyn i produkcja, od 755 zł. Warianty FlexRange (SR/XR/XLR) — zasięg od 5 cm do 24 m bez zmiany skanera.',
+      },
+      {
+        question: 'Czy drukarki Honeywell obsługują język ZPL?',
+        answer: 'Tak. Drukarki przemysłowe [PM45](/produkt/honeywell-pm45), PX45 i [PX940](/produkt/honeywell-px940) mają wbudowaną emulację ZPL II (ZSim2) — można je postawić w miejsce drukarek Zebra bez zmiany szablonów etykiet. Emulacja jest pełna: komendy, czcionki, grafiki. Półprzemysłowe [PD45](/produkt/honeywell-pd45) również obsługują ZSim2. Drukarki biurkowe [PC42e-t](/produkt/honeywell-pc42e-t) obsługują ESim (emulacja EPL). Migracja z Zebry na Honeywell (i odwrotnie) jest bezproblemowa.',
+      },
+      {
+        question: 'Co to jest Honeywell Mobility Edge?',
+        answer: 'Mobility Edge to zunifikowana platforma łącząca hardware, oprogramowanie i bezpieczeństwo. Gwarantowane wsparcie przez 5 generacji Androida na jednej platformie — ten sam obraz systemu na terminale CT, CK, tablety RT i komputery pokładowe. Raz napisana aplikacja działa na [CT47](/produkt/honeywell-ct47), [CK67](/produkt/honeywell-ck67), [RT10A](/produkt/honeywell-rt10a) i vehicle-mount bez modyfikacji. Mniej wersji oprogramowania = niższe koszty IT i szybsze wdrożenia.',
+      },
+      {
+        question: 'Czym różni się Honeywell Sentinel od Zebra LifeGuard?',
+        answer: 'Sentinel to patche bezpieczeństwa Android przez 5 lat PO zakończeniu oficjalnego wsparcia Google. LifeGuard to comiesięczne patche PODCZAS aktywnego wsparcia Google. Sentinel przedłuża życie terminala o 5 dodatkowych lat — łącznie 10+ lat bezpiecznej pracy. LifeGuard działa w ramach cyklu Google (zwykle 5–7 lat). W praktyce: terminal Honeywell kupiony w 2024 z Android 13 dostanie patche do 2030+. Oba programy są bezpłatne — wliczone w cenę urządzenia.',
+      },
+      {
+        question: 'Co to jest Vocollect Voice i do czego służy?',
+        answer: 'Vocollect to technologia kompletacji głosowej — pracownik słyszy instrukcje w słuchawce, potwierdza głosem. Ręce i oczy wolne — może jednocześnie skanować, pakować, prowadzić wózek. Wyniki: do 30% wzrost wydajności, dokładność do 99,99%. Standard w magazynach Amazon, DHL, Żabka Logistyka. Honeywell jest jedynym producentem terminali z własną technologią voice picking — inni (w tym Zebra) integrują zewnętrzne rozwiązania.',
+      },
+      {
+        question: 'Honeywell vs Zebra — co wybrać?',
+        answer: 'Honeywell wygrywa: najdłuższy cykl życia (Mobility Edge + Sentinel = 10+ lat), Vocollect voice picking (jedyny z własną technologią), drukarki z weryfikacją nadruku ([PX940](/produkt/honeywell-px940)), FlexRange XLR do 24 m. Zebra wygrywa: najszersza oferta produktów, ekosystem 30+ narzędzi Mobility DNA, serwis w Polsce przez [serwis-zebry.pl](https://www.serwis-zebry.pl). Cenowo porównywalne. Honeywell do magazynów z voice picking i długim cyklem. Zebra do firm z istniejącą infrastrukturą Zebra. Szczegóły: [porównanie terminali](/poradnik/zebra-vs-honeywell-terminale-mobilne).',
+      },
+      {
+        question: 'Czy urządzenia Honeywell mają serwis w Polsce?',
+        answer: 'Tak. Serwis Honeywell w Polsce realizują autoryzowane centra: Aspekt (terminale, skanery, drukarki), Etisoft (Platinum Partner + autoryzowany serwis drukarek, Gliwice). Standardowa gwarancja: 12–24 miesięcy. Kontrakty Honeywell Service Plans rozszerzają gwarancję do 5 lat z naprawą uszkodzeń przypadkowych. Czas naprawy: 5–10 dni roboczych. TAKMA pomaga w organizacji serwisu i obsłudze gwarancji.',
+      },
+      {
+        question: 'Jak przenieść się z Intermec na nowe Honeywell?',
+        answer: 'Wiele firm w Polsce nadal używa terminali Intermec CK3, CK71, CN51. Migracja jest prosta: nowe terminale CK65/[CK67](/produkt/honeywell-ck67) mają kompatybilne akcesoria (holster, ładowarki), Android z Mobility Edge zastępuje Windows Mobile/CE, a DataWedge-like profile skanowania konfiguruje się przez OEMConfig. TAKMA pomaga w migracji — testujemy kompatybilność aplikacji, konfigurujemy MDM i szkolimy operatorów.',
+      },
+      {
+        question: 'Jaki terminal Honeywell z 5G?',
+        answer: '[CT47](/produkt/honeywell-ct47) (od 5 929 zł) — dotykowy 5,5", IP68, upadki 2,4 m, bateria 4775 mAh. Optymalny do pracy mieszanej: magazyn + teren. [CK67](/produkt/honeywell-ck67) (od 7 765 zł) — gun z klawiaturą, FlexRange XLR do 24 m, bateria 7000 mAh hot-swap, praca do -30°C. Do magazynów wysokiego składowania. [CT70](/produkt/honeywell-ct70) — najnowszy, 5G + RFID wbudowane (premiera Q1 2026). Wszystkie z platformą Mobility Edge.',
+      },
+      {
+        question: 'Co to jest FlexRange i jakie skanery go mają?',
+        answer: 'FlexRange to technologia skanowania Honeywell z automatycznym przełączaniem zasięgu — od 5 cm (kody na dłoni) do 24 m (kody na regałach). Warianty: FlexRange SR (standard, do 2 m), FlexRange XR (rozszerzony, do 10 m), FlexRange XLR (do 24 m). Terminal [CK67](/produkt/honeywell-ck67) i skaner [Granit XP 1990iXLR](/produkt/honeywell-granit-xp-1990ixlr) mają XLR. Eliminuje potrzebę drabiny w magazynach wysokiego składowania — operator skanuje kody na najwyższych półkach stojąc na posadzce.',
+      },
+      {
+        question: 'Czy tablety Honeywell pracują w terenie?',
+        answer: '[RT10A](/produkt/honeywell-rt10a) — 10,1" Android, IP65, upadki 1,2 m, FlexRange, ekran 800 nit (czytelny w słońcu), Mobility Edge. Do ramp załadunkowych, serwisu terenowego, vehicle-mount na wózku. [EDA10A](/produkt/honeywell-eda10a) — 10,1" Android, lżejszy, wersja budżetowa od 4 071 zł. Oba tablety z opcją uchwytu na wózek widłowy, stacji dokującej na biurko i czytnika kart.',
+      },
+      {
+        question: 'Ile kosztuje kontrakt serwisowy Honeywell?',
+        answer: 'Ceny zależą od kategorii urządzenia i długości kontraktu. Orientacyjne przedziały netto: skanery — 80–200 zł/rok, drukarki biurkowe — 200–500 zł/rok, terminale mobilne — 400–1 200 zł/rok, drukarki przemysłowe — 600–1 800 zł/rok. Kontrakty wykupujesz przy zakupie urządzenia lub w ciągu 30 dni. Ceny Honeywell Service Plans widoczne na kartach produktów w naszym sklepie.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Honeywell?',
+        answer: 'Zebra Technologies — najszersza oferta, ekosystem Mobility DNA, serwis [serwis-zebry.pl](https://www.serwis-zebry.pl). Oferta: [drukarki Zebra](/drukarki-etykiet-zebra), [terminale Zebra](/terminale-mobilne-zebra), [skanery Zebra](/skanery-kodow-kreskowych-zebra). Datalogic — niższe ceny, produkcja we Włoszech: [Memor 12](/produkt/datalogic-memor-12) od 2 687 zł, [Memor 30](/produkt/datalogic-memor-30) od 4 869 zł. Newland — budżetowe skanery od 389 zł. Porównanie marek: [strona Zebra](/zebra).',
+      },
+    ],
+
+    guideLinks: [
+      { title: 'Jak wybrać drukarkę etykiet — poradnik kupującego', href: '/poradnik/jak-wybrac-drukarke-etykiet' },
+      { title: 'Jak wybrać terminal mobilny — poradnik kupującego', href: '/poradnik/jak-wybrac-terminal-mobilny' },
+      { title: 'Zebra vs Honeywell — porównanie terminali mobilnych', href: '/poradnik/zebra-vs-honeywell-terminale-mobilne' },
+      { title: 'Top 10 terminali mobilnych 2026 — ranking z cenami', href: '/poradnik/top-10-terminali-mobilnych-2026' },
+      { title: 'Drukarka termiczna vs termotransferowa — porównanie', href: '/poradnik/drukarka-termiczna-vs-termotransferowa' },
+      { title: 'Drukarki etykiet Zebra — przewodnik po seriach ZD i ZT', href: '/poradnik/drukarki-etykiet-zebra-przewodnik' },
+    ],
+  },
 }

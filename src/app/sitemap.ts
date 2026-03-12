@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Brand pillar pages
   const brandPillarPages: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/zebra`, lastModified: new Date('2026-03-12') },
+    { url: `${baseUrl}/honeywell`, lastModified: new Date('2026-03-12') },
   ]
 
   const staticPages: MetadataRoute.Sitemap = [

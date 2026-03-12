@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 /* ── Loga producentów (reuse z /o-nas) ── */
 const partnerLogos: { name: string; logo: string; href?: string }[] = [
   { name: 'Zebra Technologies', logo: '/images/partners/logo_zebra.png', href: '/zebra' },
-  { name: 'Honeywell', logo: '/images/partners/logo_honeywell.png' },
+  { name: 'Honeywell', logo: '/images/partners/logo_honeywell.png', href: '/honeywell' },
   { name: 'Datalogic', logo: '/images/partners/logo_datalogic.png' },
   { name: 'TSC', logo: '/images/partners/logo_tsc.png' },
   { name: 'Citizen', logo: '/images/partners/logo_citizen.png' },
