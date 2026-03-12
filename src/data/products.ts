@@ -41408,3 +41408,7 @@ export function getProductsByBrandCategory(bc: BrandCategory): Product[] {
 export function getBrandCategoriesForManufacturer(manufacturerId: string): BrandCategory[] {
   return brandCategories.filter(bc => bc.manufacturerId === manufacturerId)
 }
+
+export function getProductsByManufacturer(manufacturerId: string): Product[] {
+  return products.filter(p => p.manufacturerId === manufacturerId)
+}

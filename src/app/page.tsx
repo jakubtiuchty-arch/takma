@@ -26,8 +26,8 @@ export const metadata: Metadata = {
 }
 
 /* ── Loga producentów (reuse z /o-nas) ── */
-const partnerLogos = [
-  { name: 'Zebra Technologies', logo: '/images/partners/logo_zebra.png' },
+const partnerLogos: { name: string; logo: string; href?: string }[] = [
+  { name: 'Zebra Technologies', logo: '/images/partners/logo_zebra.png', href: '/zebra' },
   { name: 'Honeywell', logo: '/images/partners/logo_honeywell.png' },
   { name: 'Datalogic', logo: '/images/partners/logo_datalogic.png' },
   { name: 'TSC', logo: '/images/partners/logo_tsc.png' },
@@ -263,8 +263,8 @@ export default function HomePage() {
       <section className="border-b border-gray-100 py-3 lg:py-6">
         <div className="container-main">
           <div className="flex items-center justify-between gap-3 lg:gap-4 overflow-x-auto scrollbar-hide">
-            {partnerLogos.map((partner) => (
-              <div key={partner.name} className="h-5 md:h-7 lg:h-8 flex-shrink-0 flex items-center grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            {partnerLogos.map((partner) => {
+              const inner = (
                 <Image
                   src={partner.logo}
                   alt={partner.name}
@@ -272,8 +272,18 @@ export default function HomePage() {
                   height={32}
                   className="h-full w-auto object-contain"
                 />
-              </div>
-            ))}
+              )
+              const className = "h-5 md:h-7 lg:h-8 flex-shrink-0 flex items-center grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+              return partner.href ? (
+                <Link key={partner.name} href={partner.href} className={className} title={`Produkty ${partner.name}`}>
+                  {inner}
+                </Link>
+              ) : (
+                <div key={partner.name} className={className}>
+                  {inner}
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>

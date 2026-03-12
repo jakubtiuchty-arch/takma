@@ -7,6 +7,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.takma.com.pl'
   const lastUpdated = new Date('2026-02-15')
 
+  // Brand pillar pages
+  const brandPillarPages: MetadataRoute.Sitemap = [
+    { url: `${baseUrl}/zebra`, lastModified: new Date('2026-03-12') },
+  ]
+
   const staticPages: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: lastUpdated },
     { url: `${baseUrl}/katalog`, lastModified: lastUpdated },
@@ -59,5 +64,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: lastUpdated,
   }))
 
-  return [...staticPages, ...subcategoryPages, ...brandCategoryPages, ...productPages, ...guidePages, ...industryLandingPages]
+  return [...staticPages, ...brandPillarPages, ...subcategoryPages, ...brandCategoryPages, ...productPages, ...guidePages, ...industryLandingPages]
 }
