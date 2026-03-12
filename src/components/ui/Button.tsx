@@ -60,10 +60,10 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         active:bg-red-800
       `,
       zebra: `
-        bg-primary-600 text-white
-        hover:bg-primary-700
-        focus:ring-primary-500
-        active:bg-primary-800
+        bg-[#A8F000] text-gray-900
+        hover:bg-[#96d800]
+        focus:ring-[#A8F000]
+        active:bg-[#85c000]
       `,
     }
 

@@ -290,7 +290,11 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
           ) : (
             <Link
               href={`/produkt/${product.slug}`}
-              className="w-full flex items-center justify-center text-xs sm:text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-lg px-2 py-2 sm:px-3 sm:py-2.5 transition-colors"
+              className={`w-full flex items-center justify-center text-xs sm:text-sm font-semibold rounded-lg px-2 py-2 sm:px-3 sm:py-2.5 transition-colors ${
+                product.manufacturerId === 'zebra'
+                  ? 'text-gray-900 bg-[#A8F000] hover:bg-[#96d800]'
+                  : 'text-white bg-primary-600 hover:bg-primary-700'
+              }`}
             >
               Zobacz więcej
             </Link>
