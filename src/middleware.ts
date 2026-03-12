@@ -44,7 +44,7 @@ export async function middleware(request: NextRequest) {
       'zebra-mc9400', 'zebra-mc9450', 'zebra-em45',
       'zebra-tc22', 'zebra-tc27', 'zebra-tc53', 'zebra-tc53e', 'zebra-tc58', 'zebra-tc58e',
       'zebra-tc501', 'zebra-tc701', 'zebra-tc73', 'zebra-tc78',
-      'datalogic-memor-12', 'datalogic-memor-17', 'datalogic-memor-30',
+      'datalogic-memor-12', 'datalogic-memor-17', 'datalogic-memor-30', 'datalogic-memor-35',
       'datalogic-smartdock-memor-30', 'datalogic-charger-4slot-memor-30', 'datalogic-battery-memor-30',
       'datalogic-boot-memor-30', 'datalogic-pistolgrip-memor-30', 'datalogic-handstrap-memor-30', 'datalogic-screenprotector-memor-30',
       // Newland
