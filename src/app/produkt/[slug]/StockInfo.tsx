@@ -60,9 +60,9 @@ async function executeBatch() {
     }
 
     // Merge do globalnego cache — SearchBar i VariantsTable zawsze widzą tę samą cenę
-    for (const [pn, item] of fullMap) {
+    fullMap.forEach((item, pn) => {
       globalStockCache.set(pn, item)
-    }
+    })
 
     for (const { pns, resolve } of callbacks) {
       const filtered = new Map<string, StockInfoType>()
