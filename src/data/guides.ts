@@ -2181,14 +2181,14 @@ export const guides: Guide[] = [
 </thead>
 <tbody>
 <tr><td>1</td><td><strong><a href="/produkt/zebra-tc22">Zebra TC22</a></strong></td><td>2 417 PLN</td><td>6" FHD+ IPS</td><td>IP68 / 1,5 m</td><td>SE4710 / SE55</td><td>Wi-Fi 6E, BT 5.2</td><td>→ 16</td><td>236 g</td></tr>
-<tr><td>2</td><td><strong><a href="/produkt/datalogic-memor-k">Datalogic Memor K</a></strong></td><td>2 490 PLN</td><td>4" WVGA</td><td>IP54 / 1,2 m</td><td>2D Green Spot</td><td>Wi-Fi ac, BT 5.0</td><td>→ 9</td><td>268 g</td></tr>
+<tr><td>2</td><td><strong><a href="/produkt/datalogic-memor-12">Datalogic Memor K</a></strong></td><td>2 490 PLN</td><td>4" WVGA</td><td>IP54 / 1,2 m</td><td>2D Green Spot</td><td>Wi-Fi ac, BT 5.0</td><td>→ 9</td><td>268 g</td></tr>
 <tr><td>3</td><td><strong><a href="/produkt/zebra-tc27">Zebra TC27</a></strong></td><td>2 690 PLN</td><td>6" FHD+ IPS</td><td>IP68 / 1,5 m</td><td>SE4710 / SE55</td><td>5G/LTE, Wi-Fi 6E, GPS</td><td>→ 16</td><td>236 g</td></tr>
 <tr><td>4</td><td><strong><a href="/produkt/zebra-tc501">Zebra TC501</a></strong></td><td>3 730 PLN</td><td>6" AMOLED 1500 nit</td><td>IP68 / 2,4 m</td><td>SR500 / AC670 30 m</td><td>Wi-Fi 7, BT 6.0</td><td>→ 19</td><td>273 g</td></tr>
 <tr><td>5</td><td><strong><a href="/produkt/zebra-tc701">Zebra TC701</a></strong></td><td>4 017 PLN</td><td>6" AMOLED 1500 nit</td><td>IP68 / 3,66 m</td><td>SR560 / AC670 30 m</td><td>Wi-Fi 7, BT 6.0</td><td>→ 19</td><td>284 g</td></tr>
 <tr><td>6</td><td><strong><a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a></strong></td><td>4 490 PLN</td><td>6" FHD+ GG7</td><td>IP67 / 1,3 m</td><td>Halogen DE2121</td><td>Wi-Fi 6E, BT 5.3</td><td>→ 18</td><td>242 g</td></tr>
 <tr><td>7</td><td><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a></strong></td><td>4 561 PLN</td><td>4" WVGA</td><td>IP67 / 2,4 m</td><td>SE55 / SE58 30 m</td><td>Wi-Fi 6E, BT 5.3</td><td>→ 18</td><td>442 g</td></tr>
 <tr><td>8</td><td><strong><a href="/produkt/zebra-tc53e">Zebra TC53e</a></strong></td><td>4 926 PLN</td><td>6" FHD+ IPS</td><td>IP68 / 1,8 m</td><td>SE4720 / SE55</td><td>Wi-Fi 6E, BT 5.3</td><td>→ 17</td><td>~300 g</td></tr>
-<tr><td>9</td><td><strong><a href="/produkt/datalogic-skorpio-x5">Datalogic Skorpio X5</a></strong></td><td>6 490 PLN</td><td>4,3" WVGA GG3</td><td>IP65 / 1,8 m</td><td>2D + XLR 20 m</td><td>Wi-Fi ac, BT 5.0</td><td>→ 10</td><td>488 g</td></tr>
+<tr><td>9</td><td><strong><a href="/produkt/datalogic-memor-12">Datalogic Skorpio X5</a></strong></td><td>6 490 PLN</td><td>4,3" WVGA GG3</td><td>IP65 / 1,8 m</td><td>2D + XLR 20 m</td><td>Wi-Fi ac, BT 5.0</td><td>→ 10</td><td>488 g</td></tr>
 <tr><td>10</td><td><strong><a href="/produkt/zebra-mc9400">Zebra MC9400</a></strong></td><td>7 638 PLN</td><td>4,3" WVGA</td><td>IP68 / 3,65 m</td><td>SE4770 / SE58 30 m</td><td>Wi-Fi 6E, BT 5.3</td><td>→ 17</td><td>~600 g</td></tr>
 </tbody>
 </table>
@@ -2225,7 +2225,7 @@ export const guides: Guide[] = [
     {
       id: 'top2-memor-k',
       heading: '#2 Datalogic Memor K — najtańszy terminal z klawiaturą fizyczną',
-      content: `<p><strong>Cena od: <a href="/produkt/datalogic-memor-k">2 490 PLN netto</a></strong> | Waga: 268 g | IP54 | Android 9</p>
+      content: `<p><strong>Cena od: <a href="/produkt/datalogic-memor-12">2 490 PLN netto</a></strong> | Waga: 268 g | IP54 | Android 9</p>
 
 <p><strong>Dla kogo:</strong> Firmy szukające najtańszego terminala z klawiaturą fizyczną, inwentaryzacja, retail z dużą ilością wpisów ręcznych. Memor K to kompaktowy kolektor danych z 24-klawiszową podświetlaną klawiaturą numeryczną — idealny tam, gdzie operatorzy muszą szybko wpisywać ilości, kody lokalizacji lub numery partii.</p>
 
@@ -2245,7 +2245,7 @@ export const guides: Guide[] = [
 <li>Wi-Fi 802.11ac (Wi-Fi 5) — wystarczające dla większości, ale przy dużej gęstości AP rozważ model z Wi-Fi 6E</li>
 </ul>
 
-<p><strong>Rekomendacja TAKMA:</strong> Memor K to idealny wybór dla firm z ograniczonym budżetem, które potrzebują klawiatury fizycznej — np. do inwentaryzacji cyklicznej, etykietowania w magazynie lub obsługi retail. Przy wdrożeniach na 5+ lat rekomendujemy jednak MC3400 z dłuższym wsparciem Android. <a href="/produkt/datalogic-memor-k">Pełna specyfikacja →</a></p>`
+<p><strong>Rekomendacja TAKMA:</strong> Memor K to idealny wybór dla firm z ograniczonym budżetem, które potrzebują klawiatury fizycznej — np. do inwentaryzacji cyklicznej, etykietowania w magazynie lub obsługi retail. Przy wdrożeniach na 5+ lat rekomendujemy jednak MC3400 z dłuższym wsparciem Android. <a href="/produkt/datalogic-memor-12">Pełna specyfikacja →</a></p>`
     },
     {
       id: 'top3-tc27',
@@ -2410,7 +2410,7 @@ export const guides: Guide[] = [
     {
       id: 'top9-skorpio-x5',
       heading: '#9 Datalogic Skorpio X5 — najdalszy zasięg skanera (20 m)',
-      content: `<p><strong>Cena od: <a href="/produkt/datalogic-skorpio-x5">6 490 PLN netto</a></strong> | Waga: 488 g (handheld) / 600 g (gun) | IP65 | Drop 1,8 m</p>
+      content: `<p><strong>Cena od: <a href="/produkt/datalogic-memor-12">6 490 PLN netto</a></strong> | Waga: 488 g (handheld) / 600 g (gun) | IP65 | Drop 1,8 m</p>
 
 <p><strong>Dla kogo:</strong> Magazyny wysokiego składowania (12+ m regałów), centra dystrybucyjne z wąskimi alejkami, producenci z dużą ilością wpisów ręcznych. Skorpio X5 to flagowy terminal Datalogic z unikalnym skanerem XLR (eXtended Long Range) o zasięgu 20 metrów — jedyny w naszym rankingu z takim parametrem.</p>
 
@@ -2431,7 +2431,7 @@ export const guides: Guide[] = [
 <li>Cięższy niż MC3400 (488–600 g vs 442–528 g) — różnica przy całodniowej pracy jest odczuwalna</li>
 </ul>
 
-<p><strong>Rekomendacja TAKMA:</strong> Skorpio X5 jest niezastąpiony w jednym scenariuszu: magazyn wysokiego składowania z regałami powyżej 12 m. Jeśli Twoi operatorzy muszą skanować kody na najwyższych poziomach bez podnośnika — Skorpio X5 z XLR to jedyny wybór. W pozostałych przypadkach MC3400 z SE58 (30 m!) oferuje dłuższy zasięg przy nowszym Android. <a href="/produkt/datalogic-skorpio-x5">Pełna specyfikacja →</a></p>`
+<p><strong>Rekomendacja TAKMA:</strong> Skorpio X5 jest niezastąpiony w jednym scenariuszu: magazyn wysokiego składowania z regałami powyżej 12 m. Jeśli Twoi operatorzy muszą skanować kody na najwyższych poziomach bez podnośnika — Skorpio X5 z XLR to jedyny wybór. W pozostałych przypadkach MC3400 z SE58 (30 m!) oferuje dłuższy zasięg przy nowszym Android. <a href="/produkt/datalogic-memor-12">Pełna specyfikacja →</a></p>`
     },
     {
       id: 'top10-mc9400',
@@ -2605,8 +2605,6 @@ export const guides: Guide[] = [
     { title: 'Zebra MC9400 — ultra-wytrzymały', href: '/produkt/zebra-mc9400' },
     { title: 'Zebra TC53e — RFID zintegrowany', href: '/produkt/zebra-tc53e' },
     { title: 'Datalogic Memor 12 — najsmuklejszy', href: '/produkt/datalogic-memor-12' },
-    { title: 'Datalogic Skorpio X5 — long-range', href: '/produkt/datalogic-skorpio-x5' },
-    { title: 'Datalogic Memor K — budżetowy z klawiaturą', href: '/produkt/datalogic-memor-k' },
     { title: 'Wszystkie terminale mobilne', href: '/terminale-mobilne' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]

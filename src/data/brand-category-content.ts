@@ -532,7 +532,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       {
         question: 'Jakie są alternatywy dla terminali Newland w podobnej cenie?',
         answer:
-          'W przedziale 1 500–4 000 zł netto: [Datalogic Memor K](/produkt/datalogic-memor-k) (~2 490 zł, Android 11, IP65) — włoska jakość, krótszy cykl życia. [Zebra MC2200](/produkt/zebra-mc2200) (od 2 180 zł, Mobility DNA, Wi-Fi) — ekosystem Zebra w cenie zbliżonej do Newland. Urovo DT50 (~1 800–2 200 zł, Android 11) — chiński, bez AER. Point Mobile PM75 (~2 500–3 200 zł, IP67) — koreański, wytrzymalszy. M3 Mobile SL20+ (~2 000 zł, Android 10) — koreański, starszy Android. Newland MT93 wyróżnia się certyfikatem AER, najniższą ceną (~1 770 zł) i bezpłatnym MDM Ndevor — najlepsza wartość w segmencie.',
+          'W przedziale 1 500–4 000 zł netto: [Datalogic Memor 12](/produkt/datalogic-memor-12) (od 2 687 zł, Android 13, IP67) — włoska jakość, SafeSwap hot-swap. [Zebra MC2200](/produkt/zebra-mc2200) (od 2 180 zł, Mobility DNA, Wi-Fi) — ekosystem Zebra w cenie zbliżonej do Newland. Urovo DT50 (~1 800–2 200 zł, Android 11) — chiński, bez AER. Point Mobile PM75 (~2 500–3 200 zł, IP67) — koreański, wytrzymalszy. M3 Mobile SL20+ (~2 000 zł, Android 10) — koreański, starszy Android. Newland MT93 wyróżnia się certyfikatem AER, najniższą ceną (~1 770 zł) i bezpłatnym MDM Ndevor — najlepsza wartość w segmencie.',
       },
     ],
     comparisons: [
@@ -544,7 +544,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       {
         title: 'Newland vs Datalogic — terminale mobilne w średnim segmencie',
         content:
-          'Newland i [Datalogic](/terminale-mobilne) to producenci pozycjonowani jako tańsze alternatywy dla Zebry. Newland MT93 Megattera (od ~1 770 zł) vs [Datalogic Memor 12](/produkt/datalogic-memor-12) (~4 490 zł): Newland jest znacząco tańszy. Newland MT90 Orca III (~2 400 zł) vs [Datalogic Memor 30](/produkt/datalogic-memor-30) (~5 490 zł): ponownie Newland tańszy. Datalogic oferuje lepszą sieć serwisową w Europie (centrala we Włoszech), dłuższe wsparcie (5 lat) i wyższą jakość wykonania. Newland kompensuje ceną, Ndevor MDM i certyfikatem AER. Dla firm szukających najtańszego enterprise Android: Newland. Dla firm ceniących europejski serwis i 5-letnie wsparcie: Datalogic. Dla obu: [Zebra](/terminale-mobilne-zebra) gdy TCO 5+ lat jest priorytetem.',
+          'Newland i [Datalogic](/terminale-mobilne) to producenci pozycjonowani jako tańsze alternatywy dla Zebry. Newland MT93 Megattera (od ~1 770 zł) vs [Datalogic Memor 12](/produkt/datalogic-memor-12) (~4 490 zł): Newland jest znacząco tańszy. Newland MT90 Orca III (~2 400 zł) vs Datalogic Memor 30 (~5 490 zł): ponownie Newland tańszy. Datalogic oferuje lepszą sieć serwisową w Europie (centrala we Włoszech), dłuższe wsparcie (5 lat) i wyższą jakość wykonania. Newland kompensuje ceną, Ndevor MDM i certyfikatem AER. Dla firm szukających najtańszego enterprise Android: Newland. Dla firm ceniących europejski serwis i 5-letnie wsparcie: Datalogic. Dla obu: [Zebra](/terminale-mobilne-zebra) gdy TCO 5+ lat jest priorytetem.',
       },
       {
         title: 'Newland MT93 Megattera vs MT90 Orca III — który wybrać?',
@@ -554,7 +554,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       {
         title: 'Terminale z klawiaturą: Newland N7 vs Zebra MC3400 vs Datalogic Skorpio X5',
         content:
-          'Trzy terminale z klawiaturą fizyczną do intensywnej pracy WMS: Newland N7 Cachalot Pro II (od ~3 000 zł) — klawiatura 29/38/47 kl., 4" WVGA, 5 100 mAh hot-swap, IP65, 1,8 m upadki, Duo Near & Far, Android 12, 3 lata wsparcia, Ndevor MDM bezpłatny. [Zebra MC3400](/produkt/zebra-mc3400) (od 4 561 zł) — klawiatura 29/38/47 kl., 4" WVGA, 7 000 mAh hot-swap, IP65/IP67, 2,4 m upadki, SE55/SE58 (do 30 m!), Android 14 do v18, Mobility DNA. [Datalogic Skorpio X5](/produkt/datalogic-skorpio-x5) (od ~6 490 zł) — klawiatura 38/47 kl., 4,3" WVGA, 3 060 mAh, IP65, 1,8 m upadki, Android 11, 5 lat wsparcia. Ranking: MC3400 > N7 > Skorpio X5 pod względem TCO i wytrzymałości. N7 wygrywa ceną, MC3400 — skanowaniem na odległość i długim wsparciem.',
+          'Trzy terminale z klawiaturą fizyczną do intensywnej pracy WMS: Newland N7 Cachalot Pro II (od ~3 000 zł) — klawiatura 29/38/47 kl., 4" WVGA, 5 100 mAh hot-swap, IP65, 1,8 m upadki, Duo Near & Far, Android 12, 3 lata wsparcia, Ndevor MDM bezpłatny. [Zebra MC3400](/produkt/zebra-mc3400) (od 4 561 zł) — klawiatura 29/38/47 kl., 4" WVGA, 7 000 mAh hot-swap, IP65/IP67, 2,4 m upadki, SE55/SE58 (do 30 m!), Android 14 do v18, Mobility DNA. Datalogic Skorpio X5 (od ~6 490 zł) — klawiatura 38/47 kl., 4,3" WVGA, 3 060 mAh, IP65, 1,8 m upadki, Android 11, 5 lat wsparcia. Ranking: MC3400 > N7 > Skorpio X5 pod względem TCO i wytrzymałości. N7 wygrywa ceną, MC3400 — skanowaniem na odległość i długim wsparciem.',
       },
     ],
     howToSteps: [
