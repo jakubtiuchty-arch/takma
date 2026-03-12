@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { ChevronRightIcon, ArrowRightIcon } from '@/components/ui/Icons'
 import { ProductGrid } from '@/components/product'
 import {
@@ -9,170 +8,9 @@ import {
   categories,
   type Product,
 } from '@/data/products'
+import { brandPillarContent } from '@/data/brand-pillar-content'
 import ServiceBanner from '@/components/ui/ServiceBanner'
 import LinkedText from '@/components/ui/LinkedText'
-
-// ============================================
-// BRAND PILLAR CONTENT
-// ============================================
-
-interface CategoryTile {
-  categoryId: string
-  name: string
-  href: string
-  description: string
-}
-
-interface BrandPillarData {
-  heroText: string
-  categoryTiles: CategoryTile[]
-  featuredSlugs: string[]
-  aboutHeading: string
-  aboutParagraphs: string[]
-  whyBuyItems: { title: string; text: string }[]
-  faq: { question: string; answer: string }[]
-  guideLinks: { title: string; href: string }[]
-}
-
-const brandPillarData: Record<string, BrandPillarData> = {
-  zebra: {
-    heroText: 'Kompletna oferta Zebra Technologies z cenami netto i dostawą z magazynu w Polsce. Drukarki etykiet, terminale mobilne, skanery, tablety, materiały eksploatacyjne i akcesoria.',
-    categoryTiles: [
-      {
-        categoryId: 'drukarki-etykiet',
-        name: 'Drukarki etykiet',
-        href: '/drukarki-etykiet-zebra',
-        description: 'Biurkowe ZD, przemysłowe ZT, mobilne ZQ. Od 576 zł netto.',
-      },
-      {
-        categoryId: 'terminale-mobilne',
-        name: 'Terminale mobilne',
-        href: '/terminale-mobilne-zebra',
-        description: 'Serie TC i MC z Androidem. Wi-Fi 6E, IP65–IP68.',
-      },
-      {
-        categoryId: 'skanery-kodow-kreskowych',
-        name: 'Skanery kodów',
-        href: '/skanery-kodow-kreskowych-zebra',
-        description: 'Ręczne, bezprzewodowe, prezentacyjne. Od 181 zł netto.',
-      },
-      {
-        categoryId: 'tablety-przemyslowe',
-        name: 'Tablety przemysłowe',
-        href: '/tablety-przemyslowe',
-        description: 'Seria ET: 8″ i 10″. Android i Windows. IP65/IP66.',
-      },
-      {
-        categoryId: 'drukarki-kart',
-        name: 'Drukarki kart',
-        href: '/drukarki-kart',
-        description: 'Seria ZC — druk kart plastikowych i identyfikatorów.',
-      },
-      {
-        categoryId: 'materialy-eksploatacyjne',
-        name: 'Materiały eksploatacyjne',
-        href: '/materialy-eksploatacyjne',
-        description: 'Etykiety termiczne i termotransferowe, taśmy barwiące.',
-      },
-    ],
-    featuredSlugs: [
-      'zebra-zd421t',
-      'zebra-zt231',
-      'zebra-zq511',
-      'zebra-tc22',
-      'zebra-mc3400',
-      'zebra-ds2208',
-      'zebra-ds4608',
-      'zebra-et40',
-    ],
-    aboutHeading: 'O Zebra Technologies',
-    aboutParagraphs: [
-      'Zebra Technologies to amerykański producent urządzeń Auto-ID z siedzibą w Vernon Hills pod Chicago. Firma działa od 1969 roku — najpierw jako producent drukarek etykiet, a od 2014 roku (po przejęciu działu Enterprise od Motorola Solutions za 3,45 mld USD) również jako producent terminali mobilnych, skanerów i tabletów przemysłowych.',
-      'Na świecie Zebra ma ponad 50% udziału w rynku drukarek etykiet i porównywalną pozycję w segmencie terminali enterprise. W Polsce to najczęściej wybierana marka w magazynach, centrach logistycznych, sieciach handlowych i na liniach produkcyjnych. Platformy Link-OS (drukarki) i Mobility DNA (terminale) to branżowy standard.',
-      'TAKMA jest autoryzowanym [Premier Solution Partner Zebra Technologies](https://www.zebra.com/pl/pl/partners/partner-application-locator/partner-details.html?id=001i0000019OwOUAA0&viewType=nav) i widnieje w oficjalnym rejestrze partnerów na zebra.com. Serwis gwarancyjny i pogwarancyjny drukarek, terminali i skanerów Zebra realizujemy we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl) — autoryzowanym centrum serwisowym.',
-    ],
-    whyBuyItems: [
-      {
-        title: 'Autoryzowane partnerstwo',
-        text: 'Premier Solution Partner Zebra z oficjalnym wpisem na zebra.com. Nie szary import — pełna gwarancja producenta.',
-      },
-      {
-        title: 'Ceny z dystrybucji',
-        text: 'Ceny netto aktualizowane codziennie bezpośrednio z hurtowni Ingram Micro i BlueStar. Bez pośredników.',
-      },
-      {
-        title: 'Serwis w Polsce',
-        text: 'Naprawy gwarancyjne i pogwarancyjne przez serwis-zebry.pl. Części zamienne na miejscu, czas naprawy 3–5 dni.',
-      },
-      {
-        title: '25 lat na rynku',
-        text: 'Działamy od 2002 roku. Znamy te urządzenia od podszewki — doradzamy, konfigurujemy, integrujemy z WMS/ERP.',
-      },
-    ],
-    faq: [
-      {
-        question: 'Gdzie kupić urządzenia Zebra w Polsce?',
-        answer: 'TAKMA jest autoryzowanym [Premier Solution Partner Zebra Technologies](https://www.zebra.com/pl/pl/partners/partner-application-locator/partner-details.html?id=001i0000019OwOUAA0&viewType=nav) — widniejemy w oficjalnym rejestrze partnerów na zebra.com. Sprzedajemy drukarki etykiet, terminale, skanery, tablety i akcesoria Zebra z cenami netto aktualizowanymi codziennie. Wysyłka z magazynu PL (24h) lub EU (2–3 dni). Siedziba we Wrocławiu.',
-      },
-      {
-        question: 'Ile kosztuje najtańsze urządzenie Zebra?',
-        answer: 'Najtańszy produkt Zebra w naszej ofercie to skaner [LI2208](/produkt/zebra-li2208) od 181 zł netto. Najtańsza drukarka etykiet: [ZD220t](/produkt/zebra-zd220t) od 639 zł. Najtańszy terminal: [MC2200](/produkt/zebra-mc2200) od 2 261 zł. Najtańszy tablet: [ET40](/produkt/zebra-et40) od 2 407 zł. Ceny netto, aktualizowane codziennie.',
-      },
-      {
-        question: 'Czym różnią się serie drukarek ZD, ZT i ZQ?',
-        answer: 'ZD (np. [ZD421](/produkt/zebra-zd421t), [ZD621](/produkt/zebra-zd621t)) to drukarki biurkowe — kompaktowe, do biura, apteki, e-commerce. ZT (np. [ZT231](/produkt/zebra-zt231), [ZT411](/produkt/zebra-zt411), ZT610) to drukarki przemysłowe — metalowa obudowa, praca 24/7, duże rolki. ZQ (np. [ZQ511](/produkt/zebra-zq511), [ZQ620 Plus](/produkt/zebra-zq620-plus)) to drukarki mobilne — na pasku/w pojeździe, zasilanie bateryjne, Bluetooth. Szczegóły w [poradniku](/poradnik/jak-wybrac-drukarke-etykiet).',
-      },
-      {
-        question: 'Który terminal Zebra do magazynu?',
-        answer: 'Zależy od warunków i budżetu. [MC3400](/produkt/zebra-mc3400) (od 4 561 zł) — klawiatura + uchwyt pistoletowy, Wi-Fi 6E, optymalny do typowego magazynu. [MC9400](/produkt/zebra-mc9400) (od 7 638 zł) — ultra-rugged, chłodnie, porty, upadki 3 m. [TC22](/produkt/zebra-tc22) (od 2 417 zł) — dotykowy, lekki, dobry do retail i lekkiego magazynu. Porównanie modeli: [poradnik terminali](/poradnik/jak-wybrac-terminal-mobilny).',
-      },
-      {
-        question: 'Jaki skaner Zebra do kasy?',
-        answer: '[DS2208](/produkt/zebra-ds2208) (od 352 zł) — ręczny imager 2D, USB, gwarancja 5 lat. Czyta kody z ekranów smartfonów. Do apteki lub kasy z dużym ruchem: [DS9308](/produkt/zebra-ds9308) prezentacyjny (hands-free) lub [DS4608](/produkt/zebra-ds4608) z szybszym dekodowaniem.',
-      },
-      {
-        question: 'Czy urządzenia Zebra mają serwis w Polsce?',
-        answer: 'Tak. TAKMA współpracuje z [serwis-zebry.pl](https://www.serwis-zebry.pl) — autoryzowanym centrum serwisowym Zebra. Naprawa drukarek, terminali i skanerów, części zamienne na miejscu. Czas naprawy: 3–5 dni roboczych. Dodatkowo dostępne kontrakty Zebra OneCare — rozszerzona gwarancja do 5 lat z naprawą uszkodzeń przypadkowych.',
-      },
-      {
-        question: 'Jak długo Zebra wspiera Android na terminalach?',
-        answer: 'Zebra oferuje najdłuższe wsparcie Android w branży. Najnowsze modele ([TC501](/produkt/zebra-tc501), [TC701](/produkt/zebra-tc701)) mają wsparcie do Android 19 — to 8–10 lat aktualizacji bezpieczeństwa (program LifeGuard). Starsze modele (TC22, TC53) wspierane do A16–A17. Dla porównania: Honeywell Sentinel — 5–7 lat, Datalogic — 3–5 lat, Newland — 3 lata.',
-      },
-      {
-        question: 'Czy drukarki Zebra działają z systemami WMS i ERP?',
-        answer: 'Tak, bez wyjątku. Drukarki Zebra obsługują ZPL II i EPL2 (branżowy standard), łączą się przez USB, Ethernet i Wi-Fi. Kompatybilne z SAP, Oracle, Comarch WMS, BaseLinker, Shoper, PrestaShop i każdym systemem wysyłającym etykiety. Platforma Link-OS umożliwia zdalne zarządzanie flotą drukarek. TAKMA pomaga w konfiguracji.',
-      },
-      {
-        question: 'Co to jest Zebra OneCare?',
-        answer: 'Zebra OneCare to oficjalny program kontraktów serwisowych. Obejmuje naprawę uszkodzeń przypadkowych (rozbity ekran, pęknięta obudowa), wymianę urządzenia i wsparcie techniczne. Dostępne warianty: Essential (3 dni), Select (priorytet), Premier (next-day). Kontrakty 1–5 lat, wykupujesz w ciągu 30 dni od zakupu. Ceny OneCare widoczne na stronach produktów.',
-      },
-      {
-        question: 'Zebra vs Honeywell — co wybrać?',
-        answer: 'Zebra dominuje ekosystemem software (Link-OS, Mobility DNA, DataWedge) i serwisem w Polsce ([serwis-zebry.pl](https://www.serwis-zebry.pl)). Honeywell wygrywa w niektórych niszach hardware: PX940 z weryfikatorem kodów, PM45 z emulacją ZPL. Cenowo porównywalne. Jeśli masz już flotę Zebra — zostań przy Zebrze (kompatybilność). Nowa flota? [Porównanie terminali](/poradnik/zebra-vs-honeywell-terminale-mobilne), [porównanie drukarek](/poradnik/jak-wybrac-drukarke-etykiet).',
-      },
-      {
-        question: 'Jakie etykiety pasują do drukarek Zebra?',
-        answer: 'Do drukarek termicznych (ZD220d, ZD421d): etykiety termiczne Z-Select 2000D lub Z-Perform 2000D. Do termotransferowych (ZD421t, ZT231, ZT411): etykiety papierowe Z-Perform 1000T / Z-Select 2000T + taśma woskowa 2300 Wax. Do etykiet trwałych (chemia, outdoor): Z-Ultimate 3000T (folia poliester) + taśma żywiczna 5095 Resin. Pełna oferta w kategorii [materiały eksploatacyjne](/materialy-eksploatacyjne).',
-      },
-      {
-        question: 'Czy tablety Zebra ET pracują w chłodniach?',
-        answer: 'Tak. [Zebra ET60](/produkt/zebra-et60) i [ET65](/produkt/zebra-et65) działają w temperaturach od -20°C do +50°C (z opcją podgrzewanego ekranu). Ekran pojemnościowy działa w rękawicach. Bateria hot-swap pozwala na wymianę bez wyłączania tabletu. IP66 chroni przed pyłem i strumieniem wody. Do standardowego magazynu: [ET40](/produkt/zebra-et40) lub [ET45](/produkt/zebra-et45) (IP65, 8-calowy ekran).',
-      },
-    ],
-    guideLinks: [
-      { title: 'Jak wybrać drukarkę etykiet — poradnik kupującego', href: '/poradnik/jak-wybrac-drukarke-etykiet' },
-      { title: 'Drukarki etykiet Zebra — przewodnik po seriach ZD i ZT', href: '/poradnik/drukarki-etykiet-zebra-przewodnik' },
-      { title: 'Jak wybrać terminal mobilny — poradnik kupującego', href: '/poradnik/jak-wybrac-terminal-mobilny' },
-      { title: 'Zebra vs Honeywell — porównanie terminali mobilnych', href: '/poradnik/zebra-vs-honeywell-terminale-mobilne' },
-      { title: 'Top 10 terminali mobilnych 2026 — ranking z cenami', href: '/poradnik/top-10-terminali-mobilnych-2026' },
-      { title: 'Drukarka termiczna vs termotransferowa — porównanie', href: '/poradnik/drukarka-termiczna-vs-termotransferowa' },
-    ],
-  },
-}
-
-// ============================================
-// COMPONENT
-// ============================================
 
 interface BrandPillarPageProps {
   manufacturerId: string
@@ -180,7 +18,7 @@ interface BrandPillarPageProps {
 
 export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps) {
   const manufacturer = getManufacturerById(manufacturerId)!
-  const data = brandPillarData[manufacturerId]!
+  const data = brandPillarContent[manufacturerId]!
   const allProducts = getProductsByManufacturer(manufacturerId)
   const brandCats = getBrandCategoriesForManufacturer(manufacturerId)
 
@@ -189,11 +27,6 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
   for (const cat of categories) {
     categoryCounts[cat.id] = allProducts.filter(p => p.categoryId === cat.id).length
   }
-
-  // Device products (exclude accessories and consumables for total count)
-  const deviceCount = allProducts.filter(
-    p => p.categoryId !== 'akcesoria' && p.categoryId !== 'materialy-eksploatacyjne'
-  ).length
 
   // Featured products
   const featuredProducts = data.featuredSlugs
@@ -330,7 +163,7 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
 
         {/* About section */}
         <section className="about-section mb-14">
-          <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">{data.aboutHeading}</h2>
+          <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">O {manufacturer.name} Technologies</h2>
           <div className="prose prose-gray max-w-none">
             {data.aboutParagraphs.map((para, i) => (
               <p key={i} className="text-gray-600 leading-relaxed mb-4 last:mb-0 sm:text-justify">
@@ -339,6 +172,86 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
             ))}
           </div>
         </section>
+
+        {/* Timeline */}
+        {data.timeline.length > 0 && (
+          <section className="mb-14">
+            <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-6">Historia {manufacturer.name} Technologies</h2>
+            <div className="relative">
+              {/* Vertical line */}
+              <div className="absolute left-[23px] top-2 bottom-2 w-px bg-gray-200 hidden sm:block" />
+              <div className="space-y-4 sm:space-y-5">
+                {data.timeline.map((entry, i) => (
+                  <div key={i} className="flex gap-4 sm:gap-5">
+                    <div className="flex-shrink-0 relative z-10">
+                      <div className="w-12 h-7 flex items-center justify-center bg-primary-50 border border-primary-100 rounded text-xs font-bold text-primary-700">
+                        {entry.year}
+                      </div>
+                    </div>
+                    <p className="text-sm text-gray-600 leading-relaxed pt-0.5">{entry.event}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Technologies */}
+        {data.technologies.length > 0 && (
+          <section className="mb-14">
+            <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">Ekosystem oprogramowania {manufacturer.name}</h2>
+            <p className="text-gray-500 text-sm mb-6 max-w-2xl">
+              Każde urządzenie {manufacturer.name} ma wbudowane oprogramowanie, które odróżnia je od konsumenckich tabletów i telefonów. Oto kluczowe platformy.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {data.technologies.map((tech, i) => (
+                <div key={i} className="bg-white border border-gray-200 rounded-xl p-5 hover:border-gray-300 transition-colors">
+                  <div className="flex items-center gap-2.5 mb-3">
+                    <h3 className="font-semibold text-gray-900">{tech.name}</h3>
+                    <span className="text-[11px] font-medium px-2 py-0.5 bg-gray-100 text-gray-500 rounded-full">{tech.badge}</span>
+                  </div>
+                  <p className="text-sm text-gray-600 leading-relaxed">{tech.description}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Industries */}
+        {data.industries.length > 0 && (
+          <section className="mb-14">
+            <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">{manufacturer.name} w branżach</h2>
+            <p className="text-gray-500 text-sm mb-6 max-w-2xl">
+              Konkretne zastosowania i rekomendowane modele dla każdego środowiska pracy.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {data.industries.map((ind, i) => (
+                <div key={i} className="bg-gray-50 border border-gray-100 rounded-xl p-5">
+                  <h3 className="font-semibold text-gray-900 mb-2">{ind.name}</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed mb-3">{ind.description}</p>
+                  <div className="text-sm text-gray-500">
+                    <span className="text-xs font-medium text-gray-400 uppercase tracking-wide">Polecane: </span>
+                    <LinkedText text={ind.products} />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Partnership */}
+        {data.partnership.length > 0 && (
+          <section className="mb-14">
+            <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">TAKMA jako Premier Solution Partner</h2>
+            <div className="bg-primary-50/50 border border-primary-100 rounded-xl p-6">
+              {data.partnership.map((para, i) => (
+                <p key={i} className="text-sm text-gray-700 leading-relaxed mb-3 last:mb-0">
+                  <LinkedText text={para} />
+                </p>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Why buy from TAKMA */}
         <section className="mb-14">
@@ -354,6 +267,50 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
             ))}
           </div>
         </section>
+
+        {/* Service */}
+        {data.service.length > 0 && (
+          <section className="mb-14">
+            <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">Serwis urządzeń {manufacturer.name}</h2>
+            <div className="prose prose-gray max-w-none">
+              {data.service.map((para, i) => (
+                <p key={i} className="text-gray-600 leading-relaxed mb-4 last:mb-0 text-sm sm:text-base">
+                  <LinkedText text={para} />
+                </p>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Comparison table */}
+        {data.comparison.length > 0 && (
+          <section className="mb-14">
+            <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">{manufacturer.name} vs Honeywell vs Datalogic</h2>
+            <p className="text-gray-500 text-sm mb-6 max-w-2xl">{data.comparisonIntro}</p>
+            <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+              <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
+                <thead>
+                  <tr className="bg-gray-50">
+                    <th className="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200 w-[18%]">Kategoria</th>
+                    <th className="text-left px-4 py-3 font-semibold text-primary-700 border-b border-gray-200 w-[27%] bg-primary-50/40">Zebra</th>
+                    <th className="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200 w-[27%]">Honeywell</th>
+                    <th className="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200 w-[27%]">Datalogic</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {data.comparison.map((row, i) => (
+                    <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}>
+                      <td className="px-4 py-3 font-medium text-gray-900 border-b border-gray-100">{row.aspect}</td>
+                      <td className="px-4 py-3 text-gray-600 border-b border-gray-100 bg-primary-50/20">{row.zebra}</td>
+                      <td className="px-4 py-3 text-gray-600 border-b border-gray-100">{row.honeywell}</td>
+                      <td className="px-4 py-3 text-gray-600 border-b border-gray-100">{row.datalogic}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        )}
 
         {/* Brand category quick links */}
         {brandCats.length > 0 && (
