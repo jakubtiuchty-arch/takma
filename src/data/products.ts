@@ -24349,7 +24349,6 @@ Pełna dokumentacja techniczna na stronie producenta datalogic.com.`,
     priceFrom: 4869.49,
     variantAttributeTooltips: {
       'Skaner': 'SR (Standard Range) — zasięg do ~1 m, do codziennej pracy przy półce. LR (Long Range) — Halogen DE2121-ER z DeepSight, zasięg od 5 cm do 10 m, do kodów na wysokich regałach bez drabiny.',
-      '5G/GPS': '5G/LTE + GPS — warianty Memor 35/35X z łącznością komórkową 5G Sub-6, 4G LTE (nano-SIM + eSIM) i nawigacją A-GPS. Do pracy w terenie: kurier, serwisant, transport.',
     },
     variants: [
       {
@@ -24360,22 +24359,12 @@ Pełna dokumentacja techniczna na stronie producenta datalogic.com.`,
         attributes: { 'Skaner': 'SR' },
       },
       {
-        partNumber: '944850002',
-        name: 'Memor 35 SR Wi-Fi 6E + 5G/LTE, 6/128 GB',
-        priceFrom: 5775.44,
-        availability: 'available' as const,
-        attributes: { 'Skaner': 'SR', '5G/GPS': 'Tak' },
-      },
-      {
         partNumber: '944850004',
         name: 'Memor 30X LR Wi-Fi 6E, 6/128 GB',
         priceFrom: 5379.09,
         availability: 'available' as const,
         attributes: { 'Skaner': 'LR (do 10 m)' },
       },
-      {
-        partNumber: '944850005',
-        name: 'Memor 35X LR Wi-Fi 6E + 5G/LTE, 6/128 GB',
         priceFrom: 6228.41,
         availability: 'on-order' as const,
         attributes: { 'Skaner': 'LR (do 10 m)', '5G/GPS': 'Tak' },
