@@ -211,7 +211,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       },
       {
         title: 'Ceny z dystrybucji',
-        text: 'Ceny netto aktualizowane codziennie bezpośrednio z hurtowni Ingram Micro i BlueStar. Bez pośredników, bez narzutów.',
+        text: 'Ceny netto pobierane codziennie z hurtowni Ingram Micro i BlueStar — dwóch największych dystrybutorów Zebra w Europie. Minimalna marża, aktualne stany magazynowe.',
       },
       {
         title: 'Serwis w Polsce',
