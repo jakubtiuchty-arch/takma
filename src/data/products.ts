@@ -24348,7 +24348,7 @@ Pełna dokumentacja techniczna na stronie producenta datalogic.com.`,
     manufacturerId: 'datalogic',
     priceFrom: 4869.49,
     variantAttributeTooltips: {
-      'Skaner': 'SR (Standard Range) — zasięg do ~1 m, do codziennej pracy przy półce. LR (Long Range) — Halogen DE2121-ER z DeepSight, zasięg od 5 cm do 10 m, do kodów na wysokich regałach bez drabiny.',
+      'Skaner': 'SR (Standard Range) — zasięg do ~1 m, do codziennej pracy przy półce.\n\nLR (Long Range) — Halogen DE2121-ER z DeepSight, zasięg od 5 cm do 10 m, do kodów na wysokich regałach bez drabiny.',
     },
     variants: [
       {
