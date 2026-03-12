@@ -101,24 +101,21 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
       {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }} />
 
-      {/* Hero z obrazem w tle */}
-      <section className="relative w-full min-h-[280px] sm:min-h-[340px] lg:min-h-[400px] flex items-end overflow-hidden"
-        style={{ backgroundImage: `url(/images/brand-pillar/${manufacturer.slug}-hero.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-        <div className="container-main relative z-10 pb-8 lg:pb-10 pt-16">
-          <nav className="flex items-center gap-2 text-sm text-white/70 mb-4">
-            <Link href="/" className="hover:text-white transition-colors">Strona główna</Link>
-            <ChevronRightIcon size={14} className="flex-shrink-0 text-white/50" />
-            <span className="text-white font-medium">{manufacturer.name} Technologies</span>
-          </nav>
-          <h1 className="text-3xl lg:text-4xl font-bold text-white mb-3">{manufacturer.name} Technologies</h1>
-          <p className="hero-text text-white/85 leading-relaxed max-w-3xl">{data.heroText}</p>
-          <p className="text-white/50 text-sm mt-3">{allProducts.length} produktów w ofercie</p>
-        </div>
-      </section>
-
       <div className="container-main py-8 lg:py-12">
+
+        {/* Breadcrumbs */}
+        <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6">
+          <Link href="/" className="hover:text-primary-600 transition-colors">Strona główna</Link>
+          <ChevronRightIcon size={14} className="flex-shrink-0 text-gray-400" />
+          <span className="text-gray-900 font-medium">{manufacturer.name} Technologies</span>
+        </nav>
+
+        {/* H1 + hero */}
+        <div className="mb-10">
+          <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{manufacturer.name} Technologies</h1>
+          <p className="hero-text text-gray-600 leading-relaxed max-w-3xl">{data.heroText}</p>
+          <p className="text-gray-400 text-sm mt-3">{allProducts.length} produktów w ofercie</p>
+        </div>
 
         {/* Category tiles */}
         <section className="mb-14">
