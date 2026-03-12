@@ -24129,6 +24129,10 @@ Wersja Wi-Fi-only z łącznością Wi-Fi 6/6E, Bluetooth 5.3 i NFC Multi-Side. S
     },
     compatibleAccessories: [],
     relatedAccessories: [],
+    servicePlans: [
+      { name: 'Datalogic Comprehensive 3-Day — 3 lata', partNumber: 'ZSC3MEM1731', duration: '3 lata', priceNetto: 632.57 },
+      { name: 'Datalogic Comprehensive 3-Day — 5 lat', partNumber: 'ZSC3MEM1751', duration: '5 lat', priceNetto: 1051.09 },
+    ],
     faq: [
       { question: 'Ile kosztuje Datalogic Memor 12?', answer: 'Datalogic Memor 12 (PN: 944950001) kosztuje od 2 687 PLN netto w konfiguracji Wi-Fi 6E, 6 GB RAM, 64 GB Flash. Całkowity koszt posiadania (TCO) na 5 lat — z uwzględnieniem stacji dokującej (~1 200 PLN), baterii zapasowej (~350 PLN) i etui ochronnego (~250 PLN) — wynosi ok. 4 500 PLN, czyli ~75 PLN/miesiąc na terminal.' },
       { question: 'Czym różni się Datalogic Memor 12 od Memor 17?', answer: 'Datalogic Memor 12 to wersja Wi-Fi-only — idealna do pracy wewnątrz budynków. Datalogic Memor 17 dodaje łączność komórkową 5G/4G LTE z obsługą nano-SIM i eSIM, GPS z nawigacją i barometr — przeznaczony dla kurierów, serwisantów i pracowników terenowych. Oba modele mają identyczną obudowę (13,5 mm, 245 g), ekran, skaner Halogen DE2121, baterię 4000 mAh z SafeSwap i wsparcie Android 13→18. Różnica w cenie: Memor 12 od 2 687 PLN vs Memor 17 od 5 890 PLN netto.' },
