@@ -466,6 +466,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 plans={product.servicePlans}
                 productSlug={product.slug}
                 productName={product.name}
+                manufacturerId={product.manufacturerId}
               />
             )}
 

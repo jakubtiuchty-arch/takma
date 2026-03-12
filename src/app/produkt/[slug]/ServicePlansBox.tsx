@@ -10,11 +10,36 @@ interface ServicePlansBoxProps {
   plans: ServicePlan[]
   productSlug: string
   productName: string
+  manufacturerId?: string
+}
+
+const SERVICE_INFO: Record<string, { title: string; subtitle: string; tooltip: string }> = {
+  zebra: {
+    title: 'Zebra OneCare — kontrakt serwisowy',
+    subtitle: 'Rozszerzona ochrona z naprawą i wymianą urządzenia',
+    tooltip: 'Zebra OneCare Essential (Comprehensive) — oficjalny program serwisowy Zebra Technologies. Obejmuje naprawę uszkodzeń przypadkowych (rozbity ekran, pęknięta obudowa), wymianę urządzenia oraz wsparcie techniczne 8×5. Czas naprawy: 3 dni robocze. Kontrakt można wykupić w ciągu 30 dni od daty zakupu urządzenia.',
+  },
+  datalogic: {
+    title: 'Datalogic EaseOfCare — kontrakt serwisowy',
+    subtitle: 'Kompleksowa ochrona z naprawą w 3 dni robocze',
+    tooltip: 'Datalogic EaseOfCare (Comprehensive) — oficjalny program serwisowy Datalogic. Obejmuje naprawę uszkodzeń przypadkowych, wymianę podzespołów oraz wsparcie techniczne. Czas naprawy: 3 dni robocze (opcja Overnight Replacement dla najszybszego zwrotu). Kontrakt dostępny w wariantach 1, 3 i 5 lat.',
+  },
+  honeywell: {
+    title: 'Honeywell Service Plan — kontrakt serwisowy',
+    subtitle: 'Rozszerzona ochrona z naprawą i wsparciem technicznym',
+    tooltip: 'Honeywell Service Plan — oficjalny program serwisowy Honeywell. Obejmuje naprawę uszkodzeń, wymianę urządzenia oraz wsparcie techniczne. Czas naprawy zależny od poziomu kontraktu.',
+  },
+  _default: {
+    title: 'Kontrakt serwisowy',
+    subtitle: 'Rozszerzona ochrona z naprawą urządzenia',
+    tooltip: 'Kontrakt serwisowy producenta. Obejmuje naprawę uszkodzeń i wsparcie techniczne. Szczegóły zależne od wybranego planu.',
+  },
 }
 
 const MARGIN = 1.15
 
-export default function ServicePlansBox({ plans, productSlug, productName }: ServicePlansBoxProps) {
+export default function ServicePlansBox({ plans, productSlug, productName, manufacturerId }: ServicePlansBoxProps) {
+  const info = SERVICE_INFO[manufacturerId || ''] || SERVICE_INFO._default
   const { addItem, isInCart } = useCartStore()
   const [mounted, setMounted] = useState(false)
   const [infoOpen, setInfoOpen] = useState(false)
@@ -41,12 +66,12 @@ export default function ServicePlansBox({ plans, productSlug, productName }: Ser
     <div className="mt-6 border border-blue-100 bg-blue-50 rounded-xl p-4">
       <div className="mb-3">
         <div className="flex items-center gap-2">
-          <p className="text-sm font-semibold text-gray-900">Zebra OneCare — kontrakt serwisowy</p>
+          <p className="text-sm font-semibold text-gray-900">{info.title}</p>
           {/* Desktop: tooltip hover */}
           <span className="relative group/tip hidden sm:inline-flex">
             <span className="inline-flex w-4 h-4 rounded-full bg-gray-300 text-white text-[10px] font-bold leading-none items-center justify-center cursor-help hover:bg-primary-500 transition-colors">?</span>
             <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-72 px-3 py-2 bg-gray-900 text-white text-xs font-normal rounded-lg text-left leading-relaxed z-50 whitespace-normal opacity-0 pointer-events-none group-hover/tip:opacity-100 transition-opacity">
-              Zebra OneCare Essential (Comprehensive) — oficjalny program serwisowy Zebra Technologies. Obejmuje naprawę uszkodzeń przypadkowych (rozbity ekran, pęknięta obudowa), wymianę urządzenia oraz wsparcie techniczne 8×5. Czas naprawy: 3 dni robocze. Kontrakt można wykupić w ciągu 30 dni od daty zakupu urządzenia.
+              {info.tooltip}
               <span className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-900" />
             </span>
           </span>
@@ -58,11 +83,11 @@ export default function ServicePlansBox({ plans, productSlug, productName }: Ser
             ?
           </button>
         </div>
-        <p className="text-xs text-gray-500">Rozszerzona ochrona z naprawą i wymianą urządzenia</p>
+        <p className="text-xs text-gray-500">{info.subtitle}</p>
         {/* Mobile: expanded info */}
         {infoOpen && (
           <div className="sm:hidden mt-2 px-3 py-2 bg-gray-900 text-white text-xs font-normal rounded-lg leading-relaxed">
-            Zebra OneCare Essential (Comprehensive) — oficjalny program serwisowy Zebra Technologies. Obejmuje naprawę uszkodzeń przypadkowych (rozbity ekran, pęknięta obudowa), wymianę urządzenia oraz wsparcie techniczne 8×5. Czas naprawy: 3 dni robocze. Kontrakt można wykupić w ciągu 30 dni od daty zakupu urządzenia.
+            {info.tooltip}
           </div>
         )}
       </div>
