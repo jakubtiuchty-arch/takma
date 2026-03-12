@@ -24347,6 +24347,10 @@ Pełna dokumentacja techniczna na stronie producenta datalogic.com.`,
     sameAs: 'https://www.datalogic.com/eng/retail-transportation-logistics-healthcare-gs1-digital-link/mobile-computers/memor-30-35-pd-1104.html',
     manufacturerId: 'datalogic',
     priceFrom: 4869.49,
+    variantAttributeTooltips: {
+      'Skaner': 'SR (Standard Range) — zasięg do ~1 m, do codziennej pracy przy półce. LR (Long Range) — Halogen DE2121-ER z DeepSight, zasięg od 5 cm do 10 m, do kodów na wysokich regałach bez drabiny.',
+      '5G/GPS': '5G/LTE + GPS — warianty Memor 35/35X z łącznością komórkową 5G Sub-6, 4G LTE (nano-SIM + eSIM) i nawigacją A-GPS. Do pracy w terenie: kurier, serwisant, transport.',
+    },
     variants: [
       {
         partNumber: '944850001',
