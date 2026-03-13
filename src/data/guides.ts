@@ -3774,6 +3774,490 @@ export const guides: Guide[] = [
     { title: 'Terminale mobilne Zebra — pełna oferta', href: '/terminale-mobilne-zebra' },
     { title: 'Serwis terminali Zebra w Polsce', href: 'https://www.serwis-zebry.pl/serwis-terminali-zebra' },
   ]
+},
+// ============================================================
+// 8. Zebra MC3400 vs MC9400 — porównanie terminali z klawiaturą
+// ============================================================
+{
+  slug: 'zebra-mc3400-vs-mc9400',
+  title: 'Zebra MC3400 vs MC9400 — który terminal z klawiaturą wybrać?',
+  seoTitle: 'Zebra MC3400 vs MC9400 — porównanie terminali z klawiaturą 2026 | TAKMA',
+  seoDescription: 'Porównanie Zebra MC3400 vs MC9400: tabela specyfikacji, klawiatury, skanery SE55/SE58, wytrzymałość IP67 vs IP68, praca w chłodniach -30°C, ceny od 4 561 zł, TCO 3/5 lat. Który terminal z klawiaturą do magazynu?',
+  excerpt: 'MC3400 od 4 561 zł z 3 klawiaturami i IP67. MC9400 od 7 638 zł z 7 klawiaturami, IP68 i chłodnią -30°C. Porównanie specyfikacji, cen i TCO — który terminal Zebra z klawiaturą do Twojego magazynu?',
+  category: 'porownanie',
+  tags: ['Zebra MC3400', 'Zebra MC9400', 'porównanie terminali', 'terminal z klawiaturą', 'kolektor danych', 'magazyn', 'chłodnia', 'MC3400 vs MC9400', 'terminal mobilny Zebra', 'SE58 Extended Range'],
+  publishedAt: '2026-03-13',
+  updatedAt: '2026-03-13',
+  readTime: '18 min',
+  heroImage: '/images/products/zebra-mc3400_1.png',
+  sections: [
+    {
+      id: 'podsumowanie',
+      heading: 'MC3400 vs MC9400 — podsumowanie w 60 sekund',
+      content: `<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
+<div style="flex:1;min-width:260px;text-align:center">
+<img src="/images/products/zebra-mc3400_1.png" alt="Zebra MC3400 — terminal mobilny z klawiaturą 38-klawiszową i ekranem 4 cale" style="max-height:280px;object-fit:contain" loading="lazy" />
+<p style="margin-top:8px;font-weight:600">Zebra MC3400 — od 4 561 zł netto</p>
+</div>
+<div style="flex:1;min-width:260px;text-align:center">
+<img src="/images/products/zebra-mc9400_1.png" alt="Zebra MC9400 — terminal ultra-rugged z klawiaturą 53-klawiszową i ekranem 4,3 cala" style="max-height:280px;object-fit:contain" loading="lazy" />
+<p style="margin-top:8px;font-weight:600">Zebra MC9400 — od 7 638 zł netto</p>
+</div>
+</div>
+
+<p><strong>Zebra MC3400</strong> i <strong>Zebra MC9400</strong> to dwa flagowe terminale mobilne Zebra z fizyczną klawiaturą, ale zaprojektowane do różnych warunków pracy. Oba mają ten sam procesor Qualcomm QCS4490 (2,4 GHz), Wi-Fi 6E, Bluetooth 5.3 i skanery SE58 Extended Range do 30,5 m. Różni je klasa wytrzymałości, liczba klawiatur, zakres temperatur i cena.</p>
+
+<div style="background:#f0fdf4;border-left:4px solid #16a34a;padding:16px;border-radius:8px;margin:16px 0">
+<p style="margin:0;font-weight:600">Szybka odpowiedź:</p>
+<ul style="margin:8px 0 0 0">
+<li><strong>MC3400</strong> — standardowy magazyn z Wi-Fi, temperatura powyżej -20°C, budżet do 5 734 zł. 3 klawiatury, IP65/IP67, upadki z 2,4 m, 528 g (Gun). Lżejszy, tańszy, wystarczający do 90% operacji magazynowych.</li>
+<li><strong>MC9400</strong> — chłodnia do -30°C, ciężki przemysł, port/plac, systemy legacy (VT/5250). 7 klawiatur, IP65+IP68, upadki z 3,65 m, 743 g. Najwytrzymalszy terminal Zebra z klawiaturą.</li>
+</ul>
+</div>`
+    },
+    {
+      id: 'tabela-porownawcza',
+      heading: 'Tabela porównawcza MC3400 vs MC9400',
+      content: `<table style="width:100%;border-collapse:collapse;font-size:14px">
+<thead>
+<tr style="background:#1e293b;color:#fff">
+<th style="padding:10px;text-align:left;border:1px solid #334155">Parametr</th>
+<th style="padding:10px;text-align:center;border:1px solid #334155">Zebra MC3400</th>
+<th style="padding:10px;text-align:center;border:1px solid #334155">Zebra MC9400</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Cena od</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">4 561 zł netto</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">7 638 zł netto</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Procesor</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center" colspan="2">Qualcomm QCS4490 octa-core, 2,4 GHz</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Wyświetlacz</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">4" WVGA, 350–600 nit</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">4,3" WVGA, 600 nit</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">RAM / Flash</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">4–6 GB / 64–128 GB</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">6 GB / 128 GB</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Klawiatury</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">3 opcje (29/38/47 kl.)</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">7 wymiennych (29–58 kl.)</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Skanery</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">SE55 / SE4770 / SE58</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">SE4770 / SE58</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Zasięg skanera</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center" colspan="2">SE58: do 30,5 m | SE4770: do 1,5 m | SE55: do 12,2 m</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Obudowy</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">Gun / Straight Shooter</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">Tylko Gun</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Klasa ochrony</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP65/IP67</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">IP65+IP68</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Upadki na beton</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">2,4 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">3,65 m (+52%)</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Tumble</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">4 000× z 1 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">6 000× z 1 m (+50%)</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Temperatura pracy</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">-20°C do +50°C</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">-30°C do +50°C (freezer)</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Bateria</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">7 000 mAh, hot-swap</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">7 000 / 5 000 mAh, warm-swap</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Waga (Gun)</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">528 g</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">743 g</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Android</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">14 → 18 (4 generacje)</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">14 → 17 (3 generacje)</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Wariant 5G</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center"><a href="/produkt/zebra-mc3450">MC3450</a></td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center"><a href="/produkt/zebra-mc9450">MC9450</a></td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">OneCare 3 lata</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">1 139 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">1 490 zł</td></tr>
+</tbody>
+</table>
+
+<p style="margin-top:12px">Oba terminale mają identyczny procesor, Wi-Fi 6E i skanery SE58 do 30,5 m. Różnią się klasą wytrzymałości (MC9400 to klasa ultra-rugged), liczbą klawiatur (7 vs 3), zakresem temperatur (-30°C vs -20°C) i ceną (MC9400 kosztuje o 67% więcej).</p>`
+    },
+    {
+      id: 'klawiatury',
+      heading: 'Klawiatury — 3 vs 7 opcji',
+      content: `<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
+<div style="flex:1;min-width:260px;text-align:center">
+<img src="/images/products/zebra-mc3400_3.png" alt="Zebra MC3400 — widok z prawego boku, uchwyt pistoletowy i przycisk skanowania" style="max-height:240px;object-fit:contain" loading="lazy" />
+<p style="margin-top:8px;font-size:13px">MC3400 — klawiatura 38-klawiszowa</p>
+</div>
+<div style="flex:1;min-width:260px;text-align:center">
+<img src="/images/products/zebra-mc9400_4.png" alt="Zebra MC9400 — widok z góry, wymienna klawiatura i slot baterii warm-swap" style="max-height:240px;object-fit:contain" loading="lazy" />
+<p style="margin-top:8px;font-size:13px">MC9400 — klawiatura 53-klawiszowa (wymienna)</p>
+</div>
+</div>
+
+<h3>MC3400 — 3 klawiatury (wybór przy zakupie)</h3>
+<ul>
+<li><strong>29 klawiszy</strong> (numeryczna) — szybkie wpisywanie ilości i kodów EAN. Wystarczająca, gdy dane tekstowe wprowadzasz skanem.</li>
+<li><strong>38 klawiszy</strong> (funkcyjna z kalkulatorem) — numeryczna + Tab, Enter, strzałki i F1-F8. Najpopularniejsza w WMS.</li>
+<li><strong>47 klawiszy</strong> (alfanumeryczna A-Z) — pełna klawiatura do ręcznego wpisywania kodów tekstowych i numerów seryjnych.</li>
+</ul>
+<p>Klawiaturę w MC3400 wybiera się <strong>przy zakupie</strong> — nie można jej wymienić w terenie. Klawisze są 20% większe niż w MC3300x, podświetlane, zoptymalizowane do pracy w rękawicach.</p>
+
+<h3>MC9400 — 7 klawiatur (hot-swap bez narzędzi)</h3>
+<ul>
+<li><strong>29 klawiszy</strong> — numeryczna</li>
+<li><strong>34 klawisze</strong> — numeryczna rozszerzona z Tab i strzałkami</li>
+<li><strong>43 klawisze</strong> — funkcyjna z F1-F12</li>
+<li><strong>53 klawisze STD</strong> — standardowa pełna (najpopularniejsza w WMS)</li>
+<li><strong>53 kl. VT</strong> — emulacja terminala VT do aplikacji terminalowych</li>
+<li><strong>53 kl. 5250</strong> — emulacja IBM AS/400 i iSeries</li>
+<li><strong>58 klawiszy</strong> — pełna alfanumeryczna A-Z</li>
+</ul>
+<p>Klawiatury MC9400 wymienia się <strong>w terenie bez narzędzi (hot-swap)</strong> — ten sam terminal może obsługiwać różne procesy: rano kompletacja (53 kl.), po południu inwentaryzacja (29 kl.).</p>
+
+<div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px;border-radius:8px;margin:16px 0">
+<p style="margin:0;font-weight:600">Kiedy 7 klawiatur robi różnicę?</p>
+<p style="margin:8px 0 0 0">Jeśli używasz systemu legacy <strong>IBM AS/400</strong> lub <strong>emulacji terminala VT</strong>, MC9400 z klawiaturą 53 kl. 5250 lub 53 kl. VT jest jedynym rozwiązaniem — MC3400 nie ma tych opcji. W nowoczesnych środowiskach WMS (SAP, Oracle WMS, Manhattan) klawiatura 38 kl. MC3400 jest w pełni wystarczająca.</p>
+</div>`
+    },
+    {
+      id: 'wytrzymalosc',
+      heading: 'Wytrzymałość — rugged vs ultra-rugged',
+      content: `<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:16px">
+<thead>
+<tr style="background:#1e293b;color:#fff">
+<th style="padding:10px;text-align:left;border:1px solid #334155">Test</th>
+<th style="padding:10px;text-align:center;border:1px solid #334155">MC3400</th>
+<th style="padding:10px;text-align:center;border:1px solid #334155">MC9400</th>
+<th style="padding:10px;text-align:center;border:1px solid #334155">Różnica</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #e2e8f0">Upadki na beton</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">2,4 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;font-weight:600">3,65 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a">+52%</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">Tumble</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">4 000×</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;font-weight:600">6 000×</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a">+50%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0">Klasa IP</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP65/IP67</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;font-weight:600">IP65+IP68</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP68 vs IP67</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">Temperatura min.</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">-20°C</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;font-weight:600">-30°C (freezer)</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a">-10°C</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0">Certyfikacja</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center" colspan="2">MIL-STD-810H</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">—</td></tr>
+</tbody>
+</table>
+
+<p><strong>MC3400 (IP65/IP67)</strong> — odporny na strumień wody i zanurzenie do 1 m na 30 min. Można go myć pod bieżącą wodą. Upadki z 2,4 m na beton to więcej niż wysokość typowego stołu pakowego (90 cm). Wystarczający do standardowych magazynów, hal produkcyjnych i logistyki wewnętrznej.</p>
+
+<p><strong>MC9400 (IP65+IP68)</strong> — zanurzenie do 1,5 m na 30 min (vs 1 m w MC3400). Upadki z 3,65 m na beton — przeżyje spadnięcie z wózka widłowego na pełnej wysokości podnoszenia. 6 000 cykli tumble vs 4 000 — żywotność mechaniczna o 50% dłuższa.</p>
+
+<div style="background:#fef3c7;border-left:4px solid #f59e0b;padding:16px;border-radius:8px;margin:16px 0">
+<p style="margin:0;font-weight:600">Chłodnia i mroźnia — tylko MC9400</p>
+<p style="margin:8px 0 0 0">MC3400 działa od -20°C — nie nadaje się do mroźni (-25°C do -30°C). MC9400 z baterią freezer (BTRY-MC93-FZ-01, 5 000 mAh) pracuje do <strong>-30°C</strong>. Wyświetlacz 600 nit z ogrzewaniem zapobiega parowaniu przy przejściach chłodnia↔hala. Jeśli masz operacje w chłodni, MC9400 to jedyny wybór.</p>
+</div>`
+    },
+    {
+      id: 'skanery',
+      heading: 'Skanery — SE55, SE4770 i SE58',
+      content: `<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
+<div style="flex:1;min-width:260px;text-align:center">
+<img src="/images/products/zebra-mc3400_2.png" alt="Zebra MC3400 Gun — widok z tyłu, obudowa pistoletowa z oknem skanera" style="max-height:240px;object-fit:contain" loading="lazy" />
+<p style="margin-top:8px;font-size:13px">MC3400 — okno skanera SE55/SE4770/SE58</p>
+</div>
+<div style="flex:1;min-width:260px;text-align:center">
+<img src="/images/products/zebra-mc9400_2.png" alt="Zebra MC9400 — widok z tyłu, uchwyt pistoletowy z oknem skanera SE58 Extended Range" style="max-height:240px;object-fit:contain" loading="lazy" />
+<p style="margin-top:8px;font-size:13px">MC9400 — okno skanera SE4770/SE58</p>
+</div>
+</div>
+
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:16px">
+<thead>
+<tr style="background:#1e293b;color:#fff">
+<th style="padding:10px;text-align:left;border:1px solid #334155">Skaner</th>
+<th style="padding:10px;text-align:center;border:1px solid #334155">Zasięg</th>
+<th style="padding:10px;text-align:center;border:1px solid #334155">MC3400</th>
+<th style="padding:10px;text-align:center;border:1px solid #334155">MC9400</th>
+<th style="padding:10px;text-align:left;border:1px solid #334155">Zastosowanie</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">SE55 Advanced Range</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">do 12,2 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">✅</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">❌</td><td style="padding:8px;border:1px solid #e2e8f0">Regały średniego składowania</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">SE4770 Standard Range</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">do 1,5 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">✅</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">✅</td><td style="padding:8px;border:1px solid #e2e8f0">Retail, logistyka bliskiego zasięgu</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">SE58 Extended Range</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">do 30,5 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">✅</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">✅</td><td style="padding:8px;border:1px solid #e2e8f0">Magazyn wysokiego składowania</td></tr>
+</tbody>
+</table>
+
+<p><strong>MC3400 ma przewagę w skanerach</strong> — oferuje 3 opcje vs 2 w MC9400. Skaner <strong>SE55 Advanced Range</strong> (zasięg do 12,2 m) jest dostępny wyłącznie w MC3400 i stanowi idealny kompromis cenowy — tańszy niż SE58, a do regałów średniego składowania (do 8 m) w pełni wystarczający.</p>
+
+<p>Oba terminale mają <strong>SE58 Extended Range</strong> z zielonym laserem IntelliFocus — skanowanie etykiet z najwyższych regałów (do 30,5 m) bez drabiny i wózka widłowego. Laser IntelliFocus jest 7× bardziej widoczny niż tradycyjny, co przyspiesza celowanie o 30%.</p>
+
+<p><strong>Który skaner wybrać?</strong> SE55 (od 4 561 zł z MC3400) — jeśli regały mają do 8 m. SE58 — jeśli regały przekraczają 10 m lub operacje obejmują plac kontenerowy. SE4770 — tylko jeśli skanowanie jest na dystansie ręki (retail, apteka, produkcja).</p>`
+    },
+    {
+      id: 'bateria-obudowa',
+      heading: 'Bateria i ergonomia',
+      content: `<h3>Bateria — hot-swap vs warm-swap</h3>
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:16px">
+<thead>
+<tr style="background:#1e293b;color:#fff">
+<th style="padding:10px;text-align:left;border:1px solid #334155">Cecha</th>
+<th style="padding:10px;text-align:center;border:1px solid #334155">MC3400</th>
+<th style="padding:10px;text-align:center;border:1px solid #334155">MC9400</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #e2e8f0">Bateria standardowa</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">7 000 mAh</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">7 000 mAh</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">Bateria freezer</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">—</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;font-weight:600">5 000 mAh (-30°C)</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0">Bateria BLE</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">—</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">7 000 mAh + beacon</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">Wymiana baterii</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">Hot-swap (0 s)</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">Warm-swap (~5 s)</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0">Czas pracy</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center" colspan="2">10–14 h (zależnie od intensywności)</td></tr>
+</tbody>
+</table>
+
+<p><strong>MC3400 hot-swap</strong> — wymiana baterii bez wyłączania urządzenia, bez przerwy w aplikacji WMS. Operator zdejmuje baterię, wkłada nową — zero przestoju.</p>
+<p><strong>MC9400 warm-swap</strong> — wymiana w ~5 sekund, system przechodzi w stan uśpienia na czas wymiany i budzi się automatycznie. Aplikacja WMS wraca do ostatniego ekranu.</p>
+
+<h3>Ergonomia — waga i obudowy</h3>
+<p><strong>MC3400</strong>: 442 g (Straight Shooter) / 528 g (Gun). Dwie obudowy: prosta (do noszenia w holsterze) i pistoletowa (do intensywnego skanowania). Wymiary Gun: 208,5 × 73,5 × 165,3 mm.</p>
+<p><strong>MC9400</strong>: 743 g — tylko obudowa pistoletowa (Gun). Wymiary: 240 × 88 × 189 mm. Większy i cięższy (+40%), ale zaprojektowany do intensywnej pracy w rękawicach w ekstremalnych warunkach.</p>
+
+<div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px;border-radius:8px;margin:16px 0">
+<p style="margin:0;font-weight:600">Kompatybilność wsteczna z poprzednikami</p>
+<p style="margin:8px 0 0 0">MC3400 używa baterii i akcesoriów <strong>MC3300x</strong>. MC9400 używa baterii i akcesoriów <strong>MC9300</strong>. W obu przypadkach migracja z poprzednika nie wymaga wymiany infrastruktury ładowania — stacje, ładowarki i holstery pasują bez zmian.</p>
+</div>`
+    },
+    {
+      id: 'warianty-ceny',
+      heading: 'Warianty i ceny — marzec 2026',
+      content: `<h3>Zebra MC3400 — 14 konfiguracji</h3>
+<table style="width:100%;border-collapse:collapse;font-size:13px;margin-bottom:16px">
+<thead>
+<tr style="background:#1e293b;color:#fff">
+<th style="padding:8px;text-align:left;border:1px solid #334155">Skaner</th>
+<th style="padding:8px;text-align:center;border:1px solid #334155">Klawiatura</th>
+<th style="padding:8px;text-align:center;border:1px solid #334155">Pamięć</th>
+<th style="padding:8px;text-align:right;border:1px solid #334155">Cena netto</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0">SE55</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 38 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">4/64 GB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right;font-weight:600;color:#16a34a">od 4 561 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0">SE4770</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 38 / 47 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">6/64 GB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 4 872 zł</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0">SE58</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 38 / 47 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">6/64 GB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 5 444 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0">SE4770 + Kamera</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 38 / 47 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">6/128 GB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 5 329 zł</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0">SE58 + Kamera</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 38 / 47 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">6/128 GB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 5 706 zł</td></tr>
+</tbody>
+</table>
+
+<h3>Zebra MC9400 — 20 konfiguracji</h3>
+<table style="width:100%;border-collapse:collapse;font-size:13px;margin-bottom:16px">
+<thead>
+<tr style="background:#1e293b;color:#fff">
+<th style="padding:8px;text-align:left;border:1px solid #334155">Skaner</th>
+<th style="padding:8px;text-align:center;border:1px solid #334155">Klawiatura</th>
+<th style="padding:8px;text-align:center;border:1px solid #334155">Kamera</th>
+<th style="padding:8px;text-align:right;border:1px solid #334155">Cena netto</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0">SE4770</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">34 / 43 / 53 / 53-VT / 53-5250 / 58 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">—</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 7 638 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0">SE4770</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">53 / 53-5250 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">13 MP</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 7 817 zł</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0">SE58</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 34 / 43 / 53 / 53-VT / 53-5250 / 58 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">—</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 8 102 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0">SE58</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 34 / 43 / 53 / 53-5250 / 58 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">13 MP</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 7 977 zł</td></tr>
+</tbody>
+</table>
+
+<p>Wszystkie warianty MC9400 mają <strong>6 GB RAM i 128 GB Flash</strong> — nie trzeba dopłacać za pamięć. MC3400 oferuje 3 poziomy pamięci: Standard (4/64 GB), Expanded (6/64 GB) i Full (6/128 GB + kamera).</p>
+
+<p style="font-size:13px;color:#64748b">Ceny netto PLN z oferty hurtowej Ingram Micro, marzec 2026. Przy zakupie 5+ sztuk oferujemy ceny projektowe — <a href="/zapytanie">zapytaj o ofertę</a>.</p>`
+    },
+    {
+      id: 'tco',
+      heading: 'TCO — koszt posiadania na 3 i 5 lat',
+      content: `<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:16px">
+<thead>
+<tr style="background:#1e293b;color:#fff">
+<th style="padding:10px;text-align:left;border:1px solid #334155">Pozycja</th>
+<th style="padding:10px;text-align:right;border:1px solid #334155">MC3400 (3 lata)</th>
+<th style="padding:10px;text-align:right;border:1px solid #334155">MC9400 (3 lata)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #e2e8f0">Terminal (SE58, 6/128 GB)</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">5 734 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">7 977 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">Obudowa ochronna</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~250 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~350 zł</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0">Bateria zapasowa</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~350 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~450 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">OneCare Essential 3 lata</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">1 139 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">1 490 zł</td></tr>
+<tr style="font-weight:700;background:#f0fdf4"><td style="padding:10px;border:1px solid #e2e8f0">TCO / sztuka (3 lata)</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:right;color:#16a34a">~7 473 zł</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:right">~10 267 zł</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Różnica</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right" colspan="2">MC9400 kosztuje <strong>~2 794 zł więcej</strong> na 3 lata (+37%)</td></tr>
+</tbody>
+</table>
+
+<div style="background:#fef3c7;border-left:4px solid #f59e0b;padding:16px;border-radius:8px;margin:16px 0">
+<p style="margin:0;font-weight:600">Flota 50 terminali — oszczędność MC3400 vs MC9400 na 3 lata:</p>
+<p style="margin:8px 0 0 0;font-size:20px;font-weight:700">~139 700 zł netto</p>
+<p style="margin:4px 0 0 0">Jeśli warunki pracy nie wymagają IP68, -30°C ani klawiatur VT/5250, MC3400 to znacząco tańsza opcja z identycznym skanerem SE58 i procesorem.</p>
+</div>
+
+<p><strong>Kiedy MC9400 zwraca się mimo wyższego TCO?</strong> Gdy środowisko pracy powoduje uszkodzenia terminali — MC9400 z upadkami 3,65 m i 6 000 tumble ma statystycznie mniejszy wskaźnik awarii w ciężkim przemyśle. Koszt pojedynczej naprawy ekranu/skanera (800–1 500 zł) może szybko przewyższyć różnicę w cenie zakupu.</p>`
+    },
+    {
+      id: 'drzewo-decyzyjne',
+      heading: 'Drzewo decyzyjne — MC3400 czy MC9400?',
+      content: `<div style="background:#f8fafc;border:2px solid #e2e8f0;border-radius:12px;padding:24px;margin:16px 0">
+
+<p style="font-weight:700;font-size:16px;margin:0 0 16px 0">Odpowiedz na 4 pytania:</p>
+
+<div style="margin-bottom:16px;padding:12px;background:#fff;border-radius:8px;border-left:4px solid #3b82f6">
+<p style="margin:0;font-weight:600">1. Czy praca obejmuje chłodnię/mroźnię poniżej -20°C?</p>
+<p style="margin:4px 0 0 0">TAK → <strong>MC9400</strong> z baterią freezer. MC3400 nie pracuje poniżej -20°C.</p>
+<p style="margin:4px 0 0 0">NIE → pytanie 2</p>
+</div>
+
+<div style="margin-bottom:16px;padding:12px;background:#fff;border-radius:8px;border-left:4px solid #3b82f6">
+<p style="margin:0;font-weight:600">2. Czy używasz systemu legacy IBM AS/400, VT lub 5250?</p>
+<p style="margin:4px 0 0 0">TAK → <strong>MC9400</strong> z klawiaturą 53 kl. 5250 lub VT. MC3400 nie ma tych klawiatur.</p>
+<p style="margin:4px 0 0 0">NIE → pytanie 3</p>
+</div>
+
+<div style="margin-bottom:16px;padding:12px;background:#fff;border-radius:8px;border-left:4px solid #3b82f6">
+<p style="margin:0;font-weight:600">3. Czy środowisko to ciężki przemysł (stalownia, port, kopalnia)?</p>
+<p style="margin:4px 0 0 0">TAK → <strong>MC9400</strong>. IP68 + 3,65 m upadki + 6 000 tumble dla ekstremalnych warunków.</p>
+<p style="margin:4px 0 0 0">NIE → pytanie 4</p>
+</div>
+
+<div style="padding:12px;background:#fff;border-radius:8px;border-left:4px solid #16a34a">
+<p style="margin:0;font-weight:600">4. Standardowy magazyn / logistyka / produkcja?</p>
+<p style="margin:4px 0 0 0">→ <strong><a href="/produkt/zebra-mc3400">MC3400</a></strong>. Identyczny procesor, Wi-Fi 6E, SE58 do 30,5 m, IP67, upadki 2,4 m — wystarczające do 90% operacji. Oszczędność ~3 077 zł na sztuce.</p>
+</div>
+
+</div>
+
+<p><strong>Zasada ogólna:</strong> MC3400 to optymalny wybór dla standardowych magazynów. MC9400 kupuj tylko gdy masz konkretną potrzebę: chłodnia, legacy system lub ekstremalnie agresywne środowisko. Nie przepłacaj za wytrzymałość, której nie wykorzystasz.</p>`
+    },
+    {
+      id: 'migracja',
+      heading: 'Migracja z MC3300x i MC9300',
+      content: `<h3>Z MC3300x → MC3400</h3>
+<ul>
+<li><strong>Baterie</strong> — pełna kompatybilność (BTRY-MC33-70MA, BTRY-MC3X-70MA)</li>
+<li><strong>Stacje dokujące</strong> — pasują bez zmian (CRD-MC33-2SUCHG, CRD-MC33-5SCHG)</li>
+<li><strong>Ładowarki baterii</strong> — pasują (SAC-MC33-4SCHG, SAC-MC33-20SCHG)</li>
+<li><strong>Holstery i kable</strong> — kompatybilne (CBL-MC33-USBCHG)</li>
+<li><strong>Aplikacje WMS</strong> — migracja Android 11→14 wymaga testów, ale DataWedge zapewnia kompatybilność skanera</li>
+</ul>
+
+<h3>Z MC9300 → MC9400</h3>
+<ul>
+<li><strong>Baterie</strong> — pełna kompatybilność (BTRY-MC93-STN-01, BTRY-MC93-FZ-01)</li>
+<li><strong>Stacje dokujące</strong> — pasują (CRD-MC93-2SUCHG-01, CRD-MC93-4SCHG-01)</li>
+<li><strong>Ładowarki baterii</strong> — pasują (SAC-MC93-4SCHG-01, SAC-MC93-16SCHG-01)</li>
+<li><strong>Obudowy i holstery</strong> — kompatybilne (SG-MC93-RBTG-01, SG-MC9X-SHLSTG-01)</li>
+<li><strong>Klawiatury MC9300</strong> — wymienne klawiatury pasują do MC9400</li>
+</ul>
+
+<div style="background:#f0fdf4;border-left:4px solid #16a34a;padding:16px;border-radius:8px;margin:16px 0">
+<p style="margin:0;font-weight:600">Oszczędność na migracji</p>
+<p style="margin:8px 0 0 0">Pełna kompatybilność wsteczna z akcesoriami poprzedników oznacza, że migracja wymaga zakupu <strong>tylko nowych terminali</strong>. Stacje dokujące, ładowarki, baterie i holstery zostają. Oszczędność: <strong>30–40% kosztów wdrożenia</strong> w porównaniu z zakupem kompletnie nowego ekosystemu.</p>
+</div>`
+    },
+    {
+      id: 'warianty-5g',
+      heading: 'Warianty 5G — MC3450 i MC9450',
+      content: `<p>Oba terminale mają wersje z modułem 5G/LTE i GPS do pracy poza zasięgiem Wi-Fi:</p>
+
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:16px">
+<thead>
+<tr style="background:#1e293b;color:#fff">
+<th style="padding:10px;text-align:left;border:1px solid #334155">Cecha</th>
+<th style="padding:10px;text-align:center;border:1px solid #334155"><a href="/produkt/zebra-mc3450" style="color:#93c5fd">MC3450</a></th>
+<th style="padding:10px;text-align:center;border:1px solid #334155"><a href="/produkt/zebra-mc9450" style="color:#93c5fd">MC9450</a></th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #e2e8f0">Cena od</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">5 572 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">8 594 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">Dopłata vs Wi-Fi</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">+1 011 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">+956 zł</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0">5G</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center" colspan="2">5G NR Sub-6 (publiczne + prywatne CBRS)</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">SIM</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center" colspan="2">nano SIM + eSIM (dual SIM)</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0">GPS</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center" colspan="2">GPS / GLONASS / Galileo / BeiDou</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">Zastosowanie</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">Plac, logistyka terenowa</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">Port, yard management</td></tr>
+</tbody>
+</table>
+
+<p>Dopłata za 5G wynosi ~1 000 zł. Wybieraj wariant 5G, jeśli operator pracuje na zewnątrz budynku poza zasięgiem Wi-Fi, potrzebuje GPS do śledzenia lokalizacji lub operuje na placu kontenerowym/porcie morskim.</p>`
+    },
+    {
+      id: 'alternatywy',
+      heading: 'Alternatywy — co zamiast MC3400 i MC9400?',
+      content: `<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:16px">
+<thead>
+<tr style="background:#1e293b;color:#fff">
+<th style="padding:10px;text-align:left;border:1px solid #334155">Terminal</th>
+<th style="padding:10px;text-align:center;border:1px solid #334155">Klawiatura</th>
+<th style="padding:10px;text-align:center;border:1px solid #334155">Skaner</th>
+<th style="padding:10px;text-align:center;border:1px solid #334155">IP</th>
+<th style="padding:10px;text-align:right;border:1px solid #334155">Cena od</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-mc3400">Zebra MC3400</a></td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">29/38/47</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">SE55/4770/58</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP67</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">4 561 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-mc9400">Zebra MC9400</a></td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">7 wymiennych</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">SE4770/SE58</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP68</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">7 638 zł</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Honeywell CK65</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">52 / alfa</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">S0703 / EX20</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP65</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~5 500 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Honeywell CK67</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">numeryczna</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">FlexRange XLR</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP65</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~6 200 zł</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Datalogic Skorpio X5</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">38/47</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">Star SE5500</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP65</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~4 800 zł</td></tr>
+</tbody>
+</table>
+
+<p><strong>Honeywell CK65/CK67</strong> — dobra alternatywa z klawiaturą i skanerem Extended Range, ale IP65 (nie IP67/IP68) i brak hot-swap klawiatur. CK67 z FlexRange XLR do 24 m — vs SE58 do 30,5 m w Zebra.</p>
+
+<p><strong>Datalogic Skorpio X5</strong> — tańszy, ale starszy (Android 10), IP65 i brak certyfikacji freezer. Do standardowych magazynów z ograniczonym budżetem.</p>
+
+<p><strong>Terminal dotykowy (bez klawiatury)?</strong> Jeśli operatorzy nie muszą wpisywać danych z klawiatury, rozważ <a href="/produkt/zebra-tc22">Zebra TC22</a> (od 2 417 zł) lub <a href="/produkt/zebra-tc52">TC52</a> — dotykowe, lżejsze, tańsze. Szczegółowe porównanie: <a href="/poradnik/jak-wybrac-terminal-mobilny">Jak wybrać terminal mobilny?</a></p>`
+    },
+    {
+      id: 'serwis',
+      heading: 'Serwis i OneCare w Polsce',
+      content: `<p>Autoryzowany serwis Zebra w Polsce: <a href="https://www.serwis-zebry.pl/serwis-terminali-zebra" rel="noopener">serwis-zebry.pl</a> we Wrocławiu — naprawy gwarancyjne i pogwarancyjne MC3400 i MC9400 na poziomie komponentów (wymiana ekranów, skanerów, klawiatur, płyt głównych). Czas naprawy: 3–5 dni roboczych. Oryginalne części Zebra.</p>
+
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:16px">
+<thead>
+<tr style="background:#1e293b;color:#fff">
+<th style="padding:10px;text-align:left;border:1px solid #334155">Kontrakt</th>
+<th style="padding:10px;text-align:center;border:1px solid #334155">MC3400</th>
+<th style="padding:10px;text-align:center;border:1px solid #334155">MC9400</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #e2e8f0">OneCare Essential — 3 lata</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">1 139 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">1 490 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">OneCare Essential — 5 lat</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">1 899 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">2 482 zł</td></tr>
+</tbody>
+</table>
+
+<p>Kontrakt OneCare Essential obejmuje: naprawy sprzętu (bez uszkodzeń mechanicznych), aktualizacje LifeGuard™, wsparcie techniczne Zebra i wymianę urządzenia w razie niemożliwości naprawy. Rekomendujemy OneCare przy flotach powyżej 10 terminali — koszt jednej naprawy ekranu (800–1 500 zł) często przewyższa koszt całego kontraktu.</p>`
+    },
+    {
+      id: 'podsumowanie-koncowe',
+      heading: 'Podsumowanie — MC3400 vs MC9400',
+      content: `<div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:16px">
+<div style="flex:1;min-width:280px;background:#f0fdf4;border:2px solid #16a34a;border-radius:12px;padding:20px">
+<h3 style="margin:0 0 12px 0;color:#16a34a">✅ Wybierz MC3400 gdy:</h3>
+<ul style="margin:0;padding-left:20px">
+<li>Standardowy magazyn z Wi-Fi</li>
+<li>Temperatura powyżej -20°C</li>
+<li>Nowoczesny WMS (SAP, Oracle, Manhattan)</li>
+<li>Budżet do 5 734 zł na terminal</li>
+<li>Potrzebujesz skanera SE55 (12 m) — najtańsza opcja</li>
+<li>Obudowa Straight Shooter bez pistoletu</li>
+</ul>
+<p style="margin:12px 0 0 0"><a href="/produkt/zebra-mc3400" style="font-weight:600">→ Zebra MC3400 — od 4 561 zł</a></p>
+</div>
+<div style="flex:1;min-width:280px;background:#eff6ff;border:2px solid #3b82f6;border-radius:12px;padding:20px">
+<h3 style="margin:0 0 12px 0;color:#3b82f6">✅ Wybierz MC9400 gdy:</h3>
+<ul style="margin:0;padding-left:20px">
+<li>Chłodnia / mroźnia do -30°C</li>
+<li>Ciężki przemysł, port, kopalnia</li>
+<li>System legacy IBM AS/400 lub VT</li>
+<li>Potrzebujesz 7 wymiennych klawiatur</li>
+<li>Wymagana najwyższa odporność (3,65 m, IP68)</li>
+<li>Wielozmianowa praca w ekstremalnych warunkach</li>
+</ul>
+<p style="margin:12px 0 0 0"><a href="/produkt/zebra-mc9400" style="font-weight:600">→ Zebra MC9400 — od 7 638 zł</a></p>
+</div>
+</div>
+
+<p><strong>90% magazynów w Polsce</strong> nie potrzebuje klasy ultra-rugged MC9400. MC3400 z tym samym procesorem, Wi-Fi 6E i skanerem SE58 do 30,5 m jest wystarczający — i oszczędza ~3 077 zł na sztuce. MC9400 to terminal dla wyjątkowych warunków: chłodnia, ciężki przemysł, systemy legacy.</p>
+
+<p>Potrzebujesz pomocy w doborze? <a href="/zapytanie">Napisz do nas</a> — dobierzemy konfigurację do Twoich procesów logistycznych. Serwis i wsparcie: <a href="https://www.serwis-zebry.pl/serwis-terminali-zebra" rel="noopener">serwis-zebry.pl</a>.</p>`
+    },
+  ],
+  faq: [
+    { question: 'Czym się różni Zebra MC3400 od MC9400?', answer: 'MC3400 i MC9400 mają identyczny procesor Qualcomm QCS4490 (2,4 GHz), Wi-Fi 6E, Bluetooth 5.3 i skanery SE58 Extended Range do 30,5 m. Główne różnice: MC9400 ma 7 wymiennych klawiatur (vs 3 w MC3400), IP65+IP68 (vs IP65/IP67), upadki z 3,65 m (vs 2,4 m), pracuje do -30°C z baterią freezer (vs -20°C) i kosztuje od 7 638 zł (vs 4 561 zł). MC3400 jest lżejszy (528 g vs 743 g) i ma dłuższe wsparcie Android (do 18 vs 17).' },
+    { question: 'Ile kosztuje Zebra MC3400 vs MC9400?', answer: 'Zebra MC3400 kosztuje od 4 561 zł netto (SE55, 29 kl., 4/64 GB) do 5 734 zł (SE58, kamera, 6/128 GB). Zebra MC9400 kosztuje od 7 638 zł netto (SE4770, 58 kl.) do 8 296 zł (SE58, kamera). Różnica cen: MC9400 jest o 67% droższy w najtańszych wariantach. Na flocie 50 terminali oszczędność na MC3400 vs MC9400 wynosi ~139 700 zł netto na 3 lata (z OneCare).' },
+    { question: 'Który terminal do chłodni — MC3400 czy MC9400?', answer: 'Do chłodni i mroźni tylko MC9400. MC3400 działa od -20°C — nie nadaje się do mroźni (-25°C do -30°C). MC9400 z baterią freezer (BTRY-MC93-FZ-01, 5 000 mAh) pracuje do -30°C. Wyświetlacz 600 nit z ogrzewaniem zapobiega parowaniu przy przejściach chłodnia↔hala. IP65+IP68 chroni przed wilgocią i kondensatem w zmiennych temperaturach.' },
+    { question: 'Jaką klawiaturę wybrać w MC3400?', answer: 'MC3400 oferuje 3 klawiatury: 29 kl. (numeryczna — szybkie ilości), 38 kl. (funkcyjna z Tab/Enter/strzałkami — najpopularniejsza w WMS, rekomendowana), 47 kl. (alfanumeryczna A-Z — gdy operator wpisuje kody tekstowe). Klawiaturę wybiera się przy zakupie — nie można jej wymienić w terenie. Klawisze są 20% większe niż w MC3300x i zoptymalizowane do pracy w rękawicach.' },
+    { question: 'Czy MC9400 ma wymienne klawiatury?', answer: 'Tak — MC9400 ma 7 wymiennych klawiatur hot-swap (wymiana bez narzędzi w terenie): 29 kl. (numeryczna), 34 kl. (rozszerzona), 43 kl. (funkcyjna F1-F12), 53 kl. STD (najpopularniejsza w WMS), 53 kl. VT (emulacja terminala), 53 kl. 5250 (IBM AS/400), 58 kl. (alfanumeryczna). Ten sam terminal może obsługiwać różne procesy: rano kompletacja (53 kl.), po południu inwentaryzacja (29 kl.).' },
+    { question: 'Jaki skaner do magazynu wysokiego składowania — SE55 czy SE58?', answer: 'SE55 Advanced Range (zasięg do 12,2 m) — wystarczający do regałów średniego składowania (do 8 m), dostępny tylko w MC3400, najtańsza opcja z zielonym laserem IntelliFocus. SE58 Extended Range (do 30,5 m) — do magazynów z regałami powyżej 10 m, eliminuje potrzebę drabiny. SE58 jest 7× bardziej widoczny niż tradycyjny laser. Oba skanery są dostępne w MC3400, w MC9400 tylko SE4770 i SE58.' },
+    { question: 'Czy akcesoria MC3300x pasują do MC3400?', answer: 'Tak — pełna kompatybilność wsteczna. Baterie (BTRY-MC33-70MA, BTRY-MC3X-70MA), stacje dokujące (CRD-MC33-2SUCHG, CRD-MC33-5SCHG), ładowarki baterii (SAC-MC33-4SCHG, SAC-MC33-20SCHG), kable USB (CBL-MC33-USBCHG) — wszystko pasuje do MC3400. Migracja z MC3300x nie wymaga wymiany infrastruktury ładowania.' },
+    { question: 'Czy akcesoria MC9300 pasują do MC9400?', answer: 'Tak — pełna kompatybilność wsteczna. Baterie (BTRY-MC93-STN-01, BTRY-MC93-FZ-01), stacje dokujące, ładowarki, obudowy gumowe (SG-MC93-RBTG-01), holstery (SG-MC9X-SHLSTG-01) i wymienne klawiatury MC9300 — wszystko pasuje do MC9400 bez zmian. Oszczędność 30–40% kosztów wdrożenia.' },
+    { question: 'Jaki jest koszt posiadania (TCO) MC3400 vs MC9400 na 3 lata?', answer: 'TCO na 3 lata (terminal SE58 + obudowa + bateria zapasowa + OneCare Essential): MC3400 ~7 473 zł/szt., MC9400 ~10 267 zł/szt. Różnica: ~2 794 zł na sztuce (+37%). Na flocie 50 terminali oszczędność MC3400: ~139 700 zł netto. MC9400 zwraca się w ciężkim przemyśle, gdzie mniejszy wskaźnik awarii (3,65 m vs 2,4 m upadki) redukuje koszty napraw.' },
+    { question: 'Czy MC3400 i MC9400 obsługują 5G?', answer: 'Nie — MC3400 i MC9400 to wersje wyłącznie Wi-Fi 6E. Warianty z 5G/LTE i GPS: Zebra MC3450 (od 5 572 zł, dopłata ~1 011 zł) i Zebra MC9450 (od 8 594 zł, dopłata ~956 zł). Oba 5G obsługują sieci publiczne i prywatne (CBRS/FR1), dual SIM (nano + eSIM) i nawigację satelitarną GPS/GLONASS/Galileo/BeiDou.' },
+    { question: 'Jaki Android mają MC3400 i MC9400?', answer: 'Oba terminale mają fabrycznie Android 14 (GMS). MC3400 z 6 GB RAM: upgrade do Android 18 (4 generacje). MC9400: upgrade do Android 17 (3 generacje). Zebra LifeGuard™ zapewnia regularne łatki bezpieczeństwa przez cały cykl życia. Pakiet Mobility DNA (DataWedge, StageNow, Device Tracker) jest wliczony w cenę obu terminali.' },
+    { question: 'Czym się różni hot-swap od warm-swap baterii?', answer: 'Hot-swap (MC3400) — wymiana baterii bez wyłączania urządzenia, zero przestoju, aplikacja WMS działa nieprzerwanie. Warm-swap (MC9400) — system przechodzi w stan uśpienia na ~5 sekund podczas wymiany baterii, po czym budzi się automatycznie i wraca do ostatniego ekranu. W praktyce różnica jest minimalna — obie metody zapewniają ciągłość pracy bez restartu.' },
+    { question: 'Gdzie serwisować Zebra MC3400 i MC9400 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl we Wrocławiu — naprawy gwarancyjne i pogwarancyjne, wymiana ekranów, skanerów, klawiatur i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Kontrakty OneCare Essential: MC3400 od 1 139 zł/3 lata, MC9400 od 1 490 zł/3 lata. Serwis obsługuje również MC3300x, MC9300, MC9200.' },
+    { question: 'MC3400 czy MC9400 do systemu SAP WMS?', answer: 'Do SAP WMS oba terminale nadają się doskonale — identyczny procesor (QCS4490), Wi-Fi 6E i DataWedge integrują się z SAP bez dodatkowego programowania. MC3400 z klawiaturą 38 kl. to optymalny wybór dla standardowego magazynu SAP. MC9400 z klawiaturą 53 kl. STD rekomendujemy dla dużych centrów dystrybucji z operacjami w chłodni lub ciężkim przemyśle.' },
+    { question: 'Jakie są alternatywy dla MC3400 i MC9400?', answer: 'Konkurencja: Honeywell CK65/CK67 (klawiatura + Extended Range, IP65, od ~5 500 zł), Datalogic Skorpio X5 (klawiatura, IP65, starszy Android, od ~4 800 zł). W portfolio Zebra: MC3450/MC9450 (wersje 5G+GPS), TC53/TC53e (dotykowe, bez klawiatury). MC3400 wyróżnia się skanerem SE55 (12 m) w najniższej cenie. MC9400 jest bezkonkurencyjny w klasie ultra-rugged z 7 klawiaturami i -30°C.' },
+  ],
+  relatedLinks: [
+    { title: 'Zebra MC3400 — karta produktu', href: '/produkt/zebra-mc3400' },
+    { title: 'Zebra MC9400 — karta produktu', href: '/produkt/zebra-mc9400' },
+    { title: 'Zebra MC3450 — wersja 5G', href: '/produkt/zebra-mc3450' },
+    { title: 'Zebra MC9450 — wersja 5G', href: '/produkt/zebra-mc9450' },
+    { title: 'Jak wybrać terminal mobilny? Poradnik 2026', href: '/poradnik/jak-wybrac-terminal-mobilny' },
+    { title: 'Zebra TC22 vs TC27 — porównanie', href: '/poradnik/zebra-tc22-vs-tc27' },
+    { title: 'Top 10 terminali mobilnych 2026', href: '/poradnik/top-10-terminali-mobilnych-2026' },
+    { title: 'Terminale mobilne Zebra — pełna oferta', href: '/terminale-mobilne-zebra' },
+    { title: 'Serwis terminali Zebra w Polsce', href: 'https://www.serwis-zebry.pl/serwis-terminali-zebra' },
+  ]
 }
 ]
 
