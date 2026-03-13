@@ -211,7 +211,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       },
       {
         title: 'Ceny z dystrybucji',
-        text: 'Ceny netto pobierane codziennie z hurtowni Ingram Micro i BlueStar — dwóch największych dystrybutorów Zebra w Europie. Minimalna marża, aktualne stany magazynowe.',
+        text: 'Ceny netto pobierane codziennie z hurtowni Ingram Micro i BlueStar — dwóch największych dystrybutorów Zebra w Europie. Aktualne stany magazynowe.',
       },
       {
         title: 'Serwis w Polsce',
@@ -481,7 +481,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
     whyBuyItems: [
       {
         title: 'Ceny z dystrybucji',
-        text: 'Ceny netto z hurtowni Ingram Micro i BlueStar — dwóch największych dystrybutorów Honeywell w Europie. Minimalna marża, aktualne stany magazynowe.',
+        text: 'Ceny netto z hurtowni Ingram Micro i BlueStar — dwóch największych dystrybutorów Honeywell w Europie. Aktualne stany magazynowe.',
       },
       {
         title: 'Najdłuższy cykl życia',
@@ -707,7 +707,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
     // PARTNERSTWO
     // ────────────────────────────────
     partnership: [
-      'Newland AIDC dystrybuuje swoje produkty w Europie przez sieć partnerów i hurtownie IT. Głównym dystrybutorem na rynek EMEA jest [Ingram Micro](https://www.ingrammicro.com) — największa hurtownia IT na świecie. TAKMA jako autoryzowany reseller pobiera ceny hurtowe i utrzymuje minimalne marże — klient dostaje cenę zbliżoną do dystrybutorskiej.',
+      'Newland AIDC dystrybuuje swoje produkty w Europie przez sieć partnerów i hurtownie IT. Głównym dystrybutorem na rynek EMEA jest [Ingram Micro](https://www.ingrammicro.com) — największa hurtownia IT na świecie. TAKMA jako autoryzowany reseller oferuje ceny netto aktualizowane codziennie z aktualnymi stanami magazynowymi.',
       'Biuro Newland EMEA w Warszawie (od lipca 2023) oznacza lokalne wsparcie techniczne w języku polskim, szybszy dostęp do nowości produktowych i możliwość organizacji demo. TAKMA współpracuje bezpośrednio z zespołem Newland EMEA — pomagamy w doborze modelu, konfiguracji EasySet i organizacji serwisu.',
     ],
 
@@ -740,7 +740,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
     whyBuyItems: [
       {
         title: 'Najniższe ceny enterprise',
-        text: 'Skanery od 181 zł, terminale od 2 295 zł — ceny netto z dystrybucji Ingram Micro. Minimalna marża, aktualne stany magazynowe.',
+        text: 'Skanery od 181 zł, terminale od 2 295 zł — ceny netto z dystrybucji Ingram Micro. Aktualne stany magazynowe.',
       },
       {
         title: '5 lat gwarancji na skanery',

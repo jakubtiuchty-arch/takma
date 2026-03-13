@@ -110,7 +110,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       {
         question: 'Ile kosztuje drukarka etykiet Zebra?',
         answer:
-          'Ceny drukarek etykiet Zebra zaczynają się od 639 zł netto za model biurkowy [ZD220d](/produkt/zebra-zd220d) (termiczny bezpośredni). Drukarki biurkowe termotransferowe kosztują od 1 472 zł ([ZD421t](/produkt/zebra-zd421t)) do 1 944 zł ([ZD621t](/produkt/zebra-zd621t)). Modele przemysłowe zaczynają się od 2 081 zł ([ZT111](/produkt/zebra-zt111)) i sięgają 8 950 zł ([ZT620](/produkt/zebra-zt620) wide-format). Ceny w TAKMA zawierają 15% marży od najlepszej ceny dystrybutorskiej i są aktualizowane codziennie na podstawie notowań hurtowych.',
+          'Ceny drukarek etykiet Zebra zaczynają się od 639 zł netto za model biurkowy [ZD220d](/produkt/zebra-zd220d) (termiczny bezpośredni). Drukarki biurkowe termotransferowe kosztują od 1 472 zł ([ZD421t](/produkt/zebra-zd421t)) do 1 944 zł ([ZD621t](/produkt/zebra-zd621t)). Modele przemysłowe zaczynają się od 2 081 zł ([ZT111](/produkt/zebra-zt111)) i sięgają 8 950 zł ([ZT620](/produkt/zebra-zt620) wide-format). Ceny netto w TAKMA są aktualizowane codziennie na podstawie notowań hurtowych.',
       },
       {
         question: 'Jaka jest różnica między drukarką termiczną a termotransferową Zebra?',
@@ -316,7 +316,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       {
         question: 'Ile kosztuje terminal mobilny Zebra?',
         answer:
-          'Ceny terminali mobilnych Zebra zaczynają się od 2 417 zł netto za model entry-level [TC22](/produkt/zebra-tc22) (Wi-Fi 6E, skaner SE4710) i 2 690 zł za [TC27](/produkt/zebra-tc27) (5G/LTE+GPS). Terminal w formie smartfona [EM45](/produkt/zebra-em45) kosztuje od 2 951 zł. Modele flagowe z Wi-Fi 7 i AI: [TC501](/produkt/zebra-tc501) od 3 730 zł (5G) lub 5 688 zł (WiFi), [TC701](/produkt/zebra-tc701) ultra-rugged od 4 017 zł (5G). Terminale z klawiaturą: [MC3400](/produkt/zebra-mc3400) od 4 561 zł, [MC3300x](/produkt/zebra-mc3300x) od 5 779 zł. Seria premium: [TC53](/produkt/zebra-tc53) od 6 418 zł, [TC58](/produkt/zebra-tc58) od 6 751 zł, [TC73](/produkt/zebra-tc73) ultra-rugged od 7 044 zł. Flagowe [MC9400](/produkt/zebra-mc9400) od 7 638 zł, [MC9450](/produkt/zebra-mc9450) z 5G od 8 594 zł. Ceny w TAKMA zawierają 15% marży od najlepszej ceny dystrybutorskiej i są aktualizowane codziennie.',
+          'Ceny terminali mobilnych Zebra zaczynają się od 2 417 zł netto za model entry-level [TC22](/produkt/zebra-tc22) (Wi-Fi 6E, skaner SE4710) i 2 690 zł za [TC27](/produkt/zebra-tc27) (5G/LTE+GPS). Terminal w formie smartfona [EM45](/produkt/zebra-em45) kosztuje od 2 951 zł. Modele flagowe z Wi-Fi 7 i AI: [TC501](/produkt/zebra-tc501) od 3 730 zł (5G) lub 5 688 zł (WiFi), [TC701](/produkt/zebra-tc701) ultra-rugged od 4 017 zł (5G). Terminale z klawiaturą: [MC3400](/produkt/zebra-mc3400) od 4 561 zł, [MC3300x](/produkt/zebra-mc3300x) od 5 779 zł. Seria premium: [TC53](/produkt/zebra-tc53) od 6 418 zł, [TC58](/produkt/zebra-tc58) od 6 751 zł, [TC73](/produkt/zebra-tc73) ultra-rugged od 7 044 zł. Flagowe [MC9400](/produkt/zebra-mc9400) od 7 638 zł, [MC9450](/produkt/zebra-mc9450) z 5G od 8 594 zł. Ceny netto w TAKMA są aktualizowane codziennie.',
       },
       {
         question: 'Jak długo Zebra aktualizuje system Android w terminalach mobilnych?',
@@ -687,7 +687,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       {
         question: 'Ile kosztuje skaner kodów kreskowych Zebra?',
         answer:
-          'Ceny skanerów kodów kreskowych Zebra zaczynają się od 352 zł netto za model [DS2208](/produkt/zebra-ds2208) (przewodowy 2D imager, USB, gwarancja 5 lat). Skanery mid-range (DS4608, DS8108) kosztują 700–1 200 zł. Modele ultra-rugged do magazynów (DS3608, LI3608) — 1 800–3 000 zł. Skanery prezentacyjne hands-free (DS9308) — od ok. 1 800 zł. Skanery wbudowane (SP7208) i multi-plane (MP7600) — 3 000–5 000 zł. Ceny w TAKMA zawierają 15% marży od najlepszej ceny dystrybutorskiej.',
+          'Ceny skanerów kodów kreskowych Zebra zaczynają się od 352 zł netto za model [DS2208](/produkt/zebra-ds2208) (przewodowy 2D imager, USB, gwarancja 5 lat). Skanery mid-range (DS4608, DS8108) kosztują 700–1 200 zł. Modele ultra-rugged do magazynów (DS3608, LI3608) — 1 800–3 000 zł. Skanery prezentacyjne hands-free (DS9308) — od ok. 1 800 zł. Skanery wbudowane (SP7208) i multi-plane (MP7600) — 3 000–5 000 zł. Ceny netto w TAKMA aktualizowane codziennie.',
       },
       {
         question: 'Czym różni się skaner 1D od 2D i który wybrać?',
@@ -925,7 +925,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       {
         question: 'Ile kosztuje skaner kodów kreskowych Newland?',
         answer:
-          'Ceny skanerów Newland zaczynają się od 181 zł netto za [HR11 Aringa](/produkt/newland-hr11-aringa) (przewodowy 1D CCD, gwarancja 5 lat). [HR15 Wahoo](/produkt/newland-hr15-wahoo) (1D + PDF417) — od ok. 233 zł. [HR23 Dorada](/produkt/newland-hr23-dorada) (2D CMOS) — od ok. 271 zł (przewodowy) i ok. 437 zł (Bluetooth). [HR33 Marlin](/produkt/newland-hr33-marlin) (megapikselowy 2D, OCR, laser) — od ok. 416 zł (przewodowy) i ok. 688 zł (Bluetooth). [NVH300 Angler DP](/produkt/newland-nvh300) (przemysłowy DPM) — od ok. 1 008 zł. Ceny aktualne, z marżą 15% od cen dystrybutorów Ingram Micro i BlueStar.',
+          'Ceny skanerów Newland zaczynają się od 181 zł netto za [HR11 Aringa](/produkt/newland-hr11-aringa) (przewodowy 1D CCD, gwarancja 5 lat). [HR15 Wahoo](/produkt/newland-hr15-wahoo) (1D + PDF417) — od ok. 233 zł. [HR23 Dorada](/produkt/newland-hr23-dorada) (2D CMOS) — od ok. 271 zł (przewodowy) i ok. 437 zł (Bluetooth). [HR33 Marlin](/produkt/newland-hr33-marlin) (megapikselowy 2D, OCR, laser) — od ok. 416 zł (przewodowy) i ok. 688 zł (Bluetooth). [NVH300 Angler DP](/produkt/newland-nvh300) (przemysłowy DPM) — od ok. 1 008 zł. Ceny netto z dystrybucji Ingram Micro i BlueStar, aktualizowane codziennie.',
       },
       {
         question: 'Czym różnią się skanery Newland od Zebra?',
@@ -1176,7 +1176,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       },
     ],
     faq: [
-      { question: 'Ile kosztuje tablet przemysłowy Honeywell w Polsce?', answer: '[EDA10A](/produkt/honeywell-eda10a) od 4 071 zł netto. [RT10A](/produkt/honeywell-rt10a) od 11 229 zł. [RT10W](/produkt/honeywell-rt10w) od 12 024 zł. Ceny z hurtowni Ingram Micro/BlueStar + 15% marży, aktualizowane codziennie. Dla flot 10+ szt. — rabat flotowy.' },
+      { question: 'Ile kosztuje tablet przemysłowy Honeywell w Polsce?', answer: '[EDA10A](/produkt/honeywell-eda10a) od 4 071 zł netto. [RT10A](/produkt/honeywell-rt10a) od 11 229 zł. [RT10W](/produkt/honeywell-rt10w) od 12 024 zł. Ceny netto z dystrybucji Ingram Micro/BlueStar, aktualizowane codziennie. Dla flot 10+ szt. — rabat flotowy.' },
       { question: 'Czym różni się Honeywell EDA10A od RT10A?', answer: '[EDA10A](/produkt/honeywell-eda10a): lżejszy (674 g), tańszy (od 4 071 zł), skaner S0703 do ~50 cm, Wi-Fi 6, opcja 5G. Do retailu i lekkiego magazynu. [RT10A](/produkt/honeywell-rt10a): cięższy (1 200 g), droższy (od 11 229 zł), FlexRange N6803 do 10,7 m, ekran 800 nit, dock pojazdowy. Do wózków widłowych i high-bay.' },
       { question: 'Co to jest FlexRange i dlaczego ma znaczenie?', answer: 'FlexRange N6803 = podwójny obiektyw (dual-lens) z momentalnym przełączaniem bliski/daleki. Skanuje od 10 cm (DataMatrix) do 10,7 m (kody na regałach). Sensor 1920×800 px, 60 fps, laser 650 nm. Dostępny w [RT10A](/produkt/honeywell-rt10a) i [RT10W](/produkt/honeywell-rt10w). Żaden tablet Zebra nie skanuje z 10+ m.' },
       { question: 'Kto powinien wybrać Honeywell RT10W?', answer: '[RT10W](/produkt/honeywell-rt10w): Windows 10 IoT LTSC 2021, Intel Pentium N4200, 8 GB RAM, 128 GB SSD. Natywnie uruchamia Win32/.NET/SCADA/SAP GUI. LTSC = wsparcie do 2032. Micro HDMI + dock RT10-CD (VGA). Dla firm z WMS/ERP działającym WYŁĄCZNIE pod Windows. Od 12 024 zł.' },
@@ -1452,7 +1452,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       {
         question: 'Ile kosztuje terminal mobilny Honeywell w Polsce?',
         answer:
-          'Ceny terminali Honeywell w TAKMA: [CT32](/produkt/honeywell-ct32) (entry-level 6" dotykowy) od 3 389 zł netto. [CK62](/produkt/honeywell-ck62) (lekki gun z klawiaturą) od 5 759 zł. [CT70](/produkt/honeywell-ct70) (premium Wi-Fi 7) od 6 168 zł. [CK67](/produkt/honeywell-ck67) (ultra-rugged gun) od 7 765 zł. [CT47](/produkt/honeywell-ct47) (premium 5G) od 7 901 zł. Ceny netto, aktualizowane codziennie z hurtowni Ingram Micro i BlueStar (najlepsza cena + 15% marży). VAT 23% doliczany oddzielnie.',
+          'Ceny terminali Honeywell w TAKMA: [CT32](/produkt/honeywell-ct32) (entry-level 6" dotykowy) od 3 389 zł netto. [CK62](/produkt/honeywell-ck62) (lekki gun z klawiaturą) od 5 759 zł. [CT70](/produkt/honeywell-ct70) (premium Wi-Fi 7) od 6 168 zł. [CK67](/produkt/honeywell-ck67) (ultra-rugged gun) od 7 765 zł. [CT47](/produkt/honeywell-ct47) (premium 5G) od 7 901 zł. Ceny netto, aktualizowane codziennie z hurtowni Ingram Micro i BlueStar (najlepsza cena netto). VAT 23% doliczany oddzielnie.',
       },
       {
         question: 'Honeywell czy Zebra — który terminal mobilny wybrać do magazynu?',
