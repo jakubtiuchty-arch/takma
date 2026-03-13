@@ -34,7 +34,7 @@ const partnerLogos: { name: string; logo: string; href?: string }[] = [
   { name: 'Citizen', logo: '/images/partners/logo_citizen.png' },
   { name: 'Godex', logo: '/images/partners/logo-godex.png' },
   { name: 'SATO', logo: '/images/partners/logo_sato.png' },
-  { name: 'Newland', logo: '/images/partners/logo_newland.png' },
+  { name: 'Newland', logo: '/images/partners/logo_newland.png', href: '/newland' },
   { name: 'M3 Mobile', logo: '/images/partners/logo_m3mobile.png' },
 ]
 
