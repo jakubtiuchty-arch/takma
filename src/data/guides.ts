@@ -4258,6 +4258,364 @@ export const guides: Guide[] = [
     { title: 'Terminale mobilne Zebra — pełna oferta', href: '/terminale-mobilne-zebra' },
     { title: 'Serwis terminali Zebra w Polsce', href: 'https://www.serwis-zebry.pl/serwis-terminali-zebra' },
   ]
+},
+// ============================================================
+// 9. Skanery kodów kreskowych Zebra — przewodnik kupującego 2026
+// ============================================================
+{
+  slug: 'skanery-kodow-kreskowych-zebra-przewodnik',
+  title: 'Skanery kodów kreskowych Zebra — jak wybrać? Przewodnik 2026',
+  seoTitle: 'Skanery Zebra — przewodnik kupującego 2026 | DS2208, DS3608, DS9308, DS8208 | TAKMA',
+  seoDescription: 'Porównanie skanerów Zebra 2026: DS2208 od 352 zł, DS4608, DS8208, DS9308, DS9908, DS3608-SR/XR. Kasa, apteka, magazyn, przemysł — tabela, ceny, TCO, FAQ 15+. Który skaner Zebra do Twojego biznesu?',
+  excerpt: 'DS2208 od 352 zł do kasy, DS3608-XR do 32 m w magazynie, DS9308 hands-free do apteki. Pełne porównanie 10+ skanerów Zebra — specyfikacja, ceny, TCO i drzewo decyzyjne.',
+  category: 'przewodnik',
+  tags: ['skaner Zebra', 'skaner kodów kreskowych', 'DS2208', 'DS3608', 'DS9308', 'DS8208', 'DS4608', 'DS9908', 'skaner do apteki', 'skaner do magazynu', 'skaner do kasy', 'czytnik kodów', 'skaner 2D', 'skaner ultra-rugged'],
+  publishedAt: '2026-03-13',
+  updatedAt: '2026-03-13',
+  readTime: '22 min',
+  heroImage: '/images/products/zebra-ds2208-2.png',
+  sections: [
+    {
+      id: 'podsumowanie',
+      heading: 'Dobierz skaner Zebra w 30 sekund',
+      content: `<p><strong>Zebra Technologies</strong> oferuje ponad 10 modeli skanerów kodów kreskowych — od kasowego DS2208 za 352 zł po ultra-rugged DS3608-XR z zasięgiem 32 m za 2 417 zł. Który wybrać? To zależy od trzech rzeczy: <strong>gdzie skanujesz</strong> (kasa, apteka, magazyn, chłodnia), <strong>z jakiej odległości</strong> (5 cm–32 m) i <strong>czy potrzebujesz kabla</strong> (przewodowy vs Bluetooth).</p>
+
+<div style="background:#f0fdf4;border-left:4px solid #16a34a;padding:16px;border-radius:8px;margin:16px 0">
+<p style="margin:0;font-weight:600">Szybki dobór:</p>
+<ul style="margin:8px 0 0 0">
+<li><strong>Kasa / apteka / biuro</strong> → <a href="/produkt/zebra-ds2208">DS2208</a> od 352 zł (przewodowy) lub <a href="/produkt/zebra-ds2278">DS2278</a> od 449 zł (Bluetooth)</li>
+<li><strong>Retail premium / supermarket</strong> → <a href="/produkt/zebra-ds4608">DS4608</a> od 814 zł (1 MP) lub <a href="/produkt/zebra-ds8208">DS8208</a> od 1 027 zł (2 MP, EAS)</li>
+<li><strong>Hands-free na kasie</strong> → <a href="/produkt/zebra-ds9308">DS9308</a> od 995 zł (prezentacyjny) lub <a href="/produkt/zebra-ds9908">DS9908</a> od 1 169 zł (hybrydowy)</li>
+<li><strong>Magazyn / produkcja</strong> → <a href="/produkt/zebra-ds3608-sr">DS3608-SR</a> od 1 287 zł (Standard Range, IP68)</li>
+<li><strong>Magazyn wysokiego składowania</strong> → <a href="/produkt/zebra-ds3608-xr">DS3608-XR</a> od 2 417 zł (zasięg 32 m, IP68)</li>
+<li><strong>Chłodnia / mroźnia (-30°C)</strong> → <a href="/produkt/zebra-ds3608-sr">DS3608-SR</a> lub <a href="/produkt/zebra-ds3608-xr">DS3608-XR</a> (oba -30°C do +50°C)</li>
+</ul>
+</div>`
+    },
+    {
+      id: 'tabela-porownawcza',
+      heading: 'Tabela porównawcza — wszystkie skanery Zebra',
+      content: `<table style="width:100%;border-collapse:collapse;font-size:12px;overflow-x:auto">
+<thead>
+<tr style="background:#1e293b;color:#fff">
+<th style="padding:8px;text-align:left;border:1px solid #334155">Model</th>
+<th style="padding:8px;text-align:center;border:1px solid #334155">Typ</th>
+<th style="padding:8px;text-align:center;border:1px solid #334155">Sensor</th>
+<th style="padding:8px;text-align:center;border:1px solid #334155">Zasięg</th>
+<th style="padding:8px;text-align:center;border:1px solid #334155">IP</th>
+<th style="padding:8px;text-align:center;border:1px solid #334155">Upadki</th>
+<th style="padding:8px;text-align:center;border:1px solid #334155">Temp.</th>
+<th style="padding:8px;text-align:center;border:1px solid #334155">Gwarancja</th>
+<th style="padding:8px;text-align:right;border:1px solid #334155">Cena od</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds2208">DS2208</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Ręczny USB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">640×480</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">36,8 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">IP52</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1,5 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">0–50°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">5 lat</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right;font-weight:600;color:#16a34a">352 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds2278">DS2278</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">BT bezprzew.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">640×480</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">36,8 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">IP52</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1,5 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">0–50°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">3 lata</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">449 zł</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds4608">DS4608</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Ręczny USB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1 MP PRZM</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">112 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">IP52</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1,8 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">0–50°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">5 lat</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">814 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds9308">DS9308</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Prezentacyjny</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1 MP PRZM</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">22,4 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">IP52</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1,5 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">0–50°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">3 lata</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">995 zł</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds8208">DS8208</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Ręczny USB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">2 MP PRZM</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">70 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">IP52</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">3,0 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">0–50°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">5 lat</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">1 027 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds9908">DS9908</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Hybrydowy</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1 MP PRZM</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">62,7 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">IP52</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1,5 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">0–50°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">5 lat</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">1 169 zł</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds3608-sr">DS3608-SR</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Ultra-rugged</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1 MP</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">152 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">IP68</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">3,0 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">-30°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">3 lata</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">1 287 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds3608-xr">DS3608-XR</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Ultra-rugged ER</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Dual 2 MP</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">32 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">IP68</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">3,0 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">-30°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">3 lata</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">2 417 zł</td></tr>
+</tbody>
+</table>
+
+<p style="margin-top:12px;font-size:13px;color:#64748b">Ceny netto PLN z oferty hurtowej Ingram Micro, marzec 2026. Wszystkie modele czytają kody 1D i 2D (QR, DataMatrix, PDF417).</p>`
+    },
+    {
+      id: 'kasa-apteka',
+      heading: 'Kasa i apteka — DS2208 i DS2278',
+      content: `<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
+<div style="flex:1;min-width:260px;text-align:center">
+<img src="/images/products/zebra-ds2208-2.png" alt="Zebra DS2208 czarny — kompaktowy skaner 2D USB do kas i aptek" style="max-height:240px;object-fit:contain" loading="lazy" />
+<p style="margin-top:8px;font-weight:600">DS2208 — od 352 zł (przewodowy)</p>
+</div>
+<div style="flex:1;min-width:260px;text-align:center">
+<img src="/images/products/zebra-ds2278.png" alt="Zebra DS2278 — bezprzewodowy skaner 2D Bluetooth" style="max-height:240px;object-fit:contain" loading="lazy" />
+<p style="margin-top:8px;font-weight:600">DS2278 — od 449 zł (Bluetooth)</p>
+</div>
+</div>
+
+<p><strong>Zebra DS2208</strong> to najpopularniejszy skaner Zebra na rynku i bezpośredni następca legendarnego LS2208. Za 352 zł netto dostajesz imager 2D z USB, 5-letnią gwarancją i kompatybilnością z akcesoriami LS2208 (kable, podstawki). Plug and Play — podłączasz kabel USB, skaner emuluje klawiaturę i natychmiast „wpisuje" kody do każdego programu kasowego, aptecznego i ERP.</p>
+
+<p><strong>Do apteki:</strong> DS2208 spełnia wymagania dyrektywy FMD — odczytuje kody DataMatrix na opakowaniach leków do weryfikacji w systemie KOWAL/NMVS. Wersja DS2208-HC z antybakteryjną obudową do dezynfekcji. Zasięg DataMatrix 10 mil: 1,5–20,3 cm.</p>
+
+<p><strong>Zebra DS2278</strong> to bezprzewodowa wersja z Bluetooth 4.0 BLE. Bateria 2 400 mAh na 14 h pracy / 110 000 skanów. Baza prezentacyjna CR2278 automatycznie przełącza tryb ręczny ↔ hands-free. Dopłata 97 zł za wolność od kabla.</p>
+
+<div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px;border-radius:8px;margin:16px 0">
+<p style="margin:0;font-weight:600">DS2208 vs DS2278 — który wybrać?</p>
+<p style="margin:8px 0 0 0"><strong>DS2208</strong> (352 zł) — stała kasa z miejscem na kabel. Brak baterii = zero ładowania, zero przestojów. 5 lat gwarancji.</p>
+<p style="margin:4px 0 0 0"><strong>DS2278</strong> (449 zł) — inwentaryzacja, stanowiska z ograniczonym miejscem, operatorzy chodzący od kasy do zaplecza. 3 lata gwarancji.</p>
+</div>`
+    },
+    {
+      id: 'retail-premium',
+      heading: 'Retail premium — DS4608 i DS8208',
+      content: `<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
+<div style="flex:1;min-width:260px;text-align:center">
+<img src="/images/products/zebra-ds4608.png" alt="Zebra DS4608 — skaner 2D mid-range z sensorem 1 MP PRZM" style="max-height:240px;object-fit:contain" loading="lazy" />
+<p style="margin-top:8px;font-weight:600">DS4608 — od 814 zł (1 MP)</p>
+</div>
+<div style="flex:1;min-width:260px;text-align:center">
+<img src="/images/products/zebra-ds8208-2.png" alt="Zebra DS8208 — premium skaner 2D z czujnikiem 2 MP PRZM" style="max-height:240px;object-fit:contain" loading="lazy" />
+<p style="margin-top:8px;font-weight:600">DS8208 — od 1 027 zł (2 MP)</p>
+</div>
+</div>
+
+<p><strong>Zebra DS4608</strong> (od 814 zł) — klasa mid-range z megapikselowym sensorem PRZM (1 280×800 px). Zasięg do 112 cm (Code 39), gwarancja 5 lat, IP52, upadki 1,8 m. Wariant HD do miniaturowych kodów (2 mil) + opcja EAS Checkpoint. Następca DS4308.</p>
+
+<p><strong>Zebra DS8208</strong> (od 1 027 zł) — klasa premium z sensorem 2 MP (1 600×1 200 px). Zasięg do 70 cm (UPC) / 104 cm (Code 39). Szybkość 406 cm/s — najszybszy skaner ręczny Zebra. Upadki z 3 m na beton (MIL-STD), zielona dioda LED 524 nm, wbudowany EAS dezaktywator (wariant VCWW). Gwarancja 5 lat.</p>
+
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0">
+<thead>
+<tr style="background:#1e293b;color:#fff">
+<th style="padding:8px;text-align:left;border:1px solid #334155">Cecha</th>
+<th style="padding:8px;text-align:center;border:1px solid #334155">DS2208</th>
+<th style="padding:8px;text-align:center;border:1px solid #334155">DS4608</th>
+<th style="padding:8px;text-align:center;border:1px solid #334155">DS8208</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600">Sensor</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">640×480</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1 MP PRZM</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">2 MP PRZM</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600">Zasięg UPC</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">36,8 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">71 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">70 cm</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600">Szybkość</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">220 skan/s</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">100 skan/s</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">406 cm/s</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600">EAS</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">—</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Opcja HD</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">Tak (VCWW)</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600">Upadki</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1,5 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1,8 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">3,0 m</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600">Cena od</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">352 zł</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">814 zł</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1 027 zł</td></tr>
+</tbody>
+</table>
+
+<p><strong>Rekomendacja:</strong> DS2208 do kas z małym ruchem. DS4608 do kas ze średnim ruchem i aptek z małymi kodami (wariant HD). DS8208 do supermarketów z dużym ruchem, zwrotów i stanowisk wymagających EAS — najszybszy sensor i najwyższa odporność w klasie kasowej.</p>`
+    },
+    {
+      id: 'skanery-prezentacyjne',
+      heading: 'Skanery prezentacyjne — DS9308 i DS9908',
+      content: `<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
+<div style="flex:1;min-width:260px;text-align:center">
+<img src="/images/products/zebra-ds9308.png" alt="Zebra DS9308 — kompaktowy skaner prezentacyjny hands-free" style="max-height:240px;object-fit:contain" loading="lazy" />
+<p style="margin-top:8px;font-weight:600">DS9308 — od 995 zł (hands-free)</p>
+</div>
+<div style="flex:1;min-width:260px;text-align:center">
+<img src="/images/products/zebra-ds9908-3.png" alt="Zebra DS9908 — hybrydowy skaner prezentacyjny hands-free i ręczny" style="max-height:240px;object-fit:contain" loading="lazy" />
+<p style="margin-top:8px;font-weight:600">DS9908 — od 1 169 zł (hybrydowy)</p>
+</div>
+</div>
+
+<p><strong>Zebra DS9308</strong> (od 995 zł) — kompaktowy skaner prezentacyjny wyłącznie hands-free. Najszersze pole widzenia w klasie: 52° w poziomie. Megapikselowy sensor PRZM, zakrzywione okno minimalizujące odblaski od ekranów. Regulacja kąta 15–45° (ratchet). Kolory: czarny i biały. Opcja Digimarc i EAS.</p>
+
+<p><strong>Zebra DS9908</strong> (od 1 169 zł) — hybrydowy: natywny tryb hands-free + ręczny. Automatyczne przełączanie — po odłożeniu ogranicza pole, po wzięciu do ręki rozszerza zasięg do 63 cm. Digimarc natywnie, opcja EAS, wariant HD do farmacji, wariant RFID (DS9908R). Gwarancja 5 lat vs 3 lata w DS9308.</p>
+
+<div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px;border-radius:8px;margin:16px 0">
+<p style="margin:0;font-weight:600">DS9308 vs DS9908 — który wybrać?</p>
+<p style="margin:8px 0 0 0"><strong>DS9308</strong> — kasa z wąskim blatem, apteka, restauracja. Tylko hands-free, kompaktowy (145×86×83 mm). Tańszy o 174 zł.</p>
+<p style="margin:4px 0 0 0"><strong>DS9908</strong> — supermarket z dużymi produktami (od czasu do czasu trzeba wziąć skaner do ręki), apteka sieciowa (ręczny tryb do weryfikacji recept). Dłuższa gwarancja (5 lat), Digimarc natywnie.</p>
+</div>`
+    },
+    {
+      id: 'magazyn-przemysl',
+      heading: 'Magazyn i przemysł — seria DS3608 ultra-rugged',
+      content: `<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
+<div style="flex:1;min-width:260px;text-align:center">
+<img src="/images/products/zebra-ds3608-xr.png" alt="Zebra DS3608-XR — ultra-rugged skaner 2D dalekiego zasięgu do 32 m" style="max-height:240px;object-fit:contain" loading="lazy" />
+<p style="margin-top:8px;font-weight:600">DS3608-XR — od 2 417 zł (zasięg 32 m)</p>
+</div>
+<div style="flex:1;min-width:260px;text-align:center">
+<img src="/images/products/zebra-ds3608-xr-2.png" alt="Zebra DS3608 — boczny widok obudowy ultra-rugged IP65+IP68" style="max-height:240px;object-fit:contain" loading="lazy" />
+<p style="margin-top:8px;font-size:13px">Obudowa IP65+IP68 — upadki z 3 m, -30°C</p>
+</div>
+</div>
+
+<p>Seria <strong>DS3608</strong> to ultra-rugged skanery z klasą ochrony <strong>IP65+IP68</strong>, upadkami z 3 m na beton, 7 500 obrotów tumble i pracą od <strong>-30°C do +50°C</strong>. Cztery warianty optyki:</p>
+
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0">
+<thead>
+<tr style="background:#1e293b;color:#fff">
+<th style="padding:8px;text-align:left;border:1px solid #334155">Wariant</th>
+<th style="padding:8px;text-align:center;border:1px solid #334155">Zasięg</th>
+<th style="padding:8px;text-align:center;border:1px solid #334155">Min. kod</th>
+<th style="padding:8px;text-align:left;border:1px solid #334155">Najlepszy do</th>
+<th style="padding:8px;text-align:right;border:1px solid #334155">Cena od</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds3608-sr">DS3608-SR</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">152 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">5 mil</td><td style="padding:6px 8px;border:1px solid #e2e8f0">Uniwersalny: magazyn, logistyka, produkcja</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right;color:#16a34a;font-weight:600">1 287 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds3608-hp">DS3608-HP</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">203 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">5 mil</td><td style="padding:6px 8px;border:1px solid #e2e8f0">Logistyka, OCR, dokumenty, podpisy</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">1 654 zł</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds3608-hd">DS3608-HD</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">66 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">3 mil</td><td style="padding:6px 8px;border:1px solid #e2e8f0">Elektronika, farmacja, PCB, małe kody</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">1 808 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds3608-xr">DS3608-XR</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">32 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">5 mil</td><td style="padding:6px 8px;border:1px solid #e2e8f0">Magazyn wysokiego skład., outdoor, plac</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">2 417 zł</td></tr>
+</tbody>
+</table>
+
+<p>Wszystkie DS3608 obsługują <strong>Multi-Code Data Formatting</strong> — skanowanie do 20 kodów jednym naciśnięciem spustu. Interfejsy: USB, RS-232 i <strong>Industrial Ethernet</strong> (EtherNet/IP, Profinet, Modbus TCP) natywnie, bez konwerterów. Bezprzewodowe wersje: <a href="/produkt/zebra-ds3678-sr">DS3678-SR</a>, <a href="/produkt/zebra-ds3678-xr">DS3678-XR</a>, DS3678-HD, DS3678-HP z Bluetooth i bazą ładującą.</p>
+
+<div style="background:#fef3c7;border-left:4px solid #f59e0b;padding:16px;border-radius:8px;margin:16px 0">
+<p style="margin:0;font-weight:600">DS3608-XR — skanowanie z 32 m bez drabiny</p>
+<p style="margin:8px 0 0 0">Podwójny sensor (Near 1280×800 + Far 1920×1080) z zielonym celownikiem laserowym 520 nm (7× widoczniejszy niż czerwony). IntelliFocus automatycznie przełącza tryb bliski/daleki. Eliminuje potrzebę drabiny, podnośnika i wózka widłowego w magazynach wysokiego składowania — oszczędność czasu 60–70% przy inwentaryzacji górnych regałów.</p>
+</div>`
+    },
+    {
+      id: 'drzewo-decyzyjne',
+      heading: 'Drzewo decyzyjne — który skaner Zebra?',
+      content: `<div style="background:#f8fafc;border:2px solid #e2e8f0;border-radius:12px;padding:24px;margin:16px 0">
+
+<p style="font-weight:700;font-size:16px;margin:0 0 16px 0">Odpowiedz na 5 pytań:</p>
+
+<div style="margin-bottom:16px;padding:12px;background:#fff;border-radius:8px;border-left:4px solid #3b82f6">
+<p style="margin:0;font-weight:600">1. Gdzie będzie używany skaner?</p>
+<p style="margin:4px 0 0 0"><strong>Kasa / apteka / biuro</strong> → pytanie 2</p>
+<p style="margin:4px 0 0 0"><strong>Magazyn / produkcja / chłodnia</strong> → pytanie 4</p>
+</div>
+
+<div style="margin-bottom:16px;padding:12px;background:#fff;border-radius:8px;border-left:4px solid #3b82f6">
+<p style="margin:0;font-weight:600">2. Tryb pracy na kasie?</p>
+<p style="margin:4px 0 0 0"><strong>Hands-free (prezentacyjny)</strong> → <a href="/produkt/zebra-ds9308">DS9308</a> (995 zł) lub <a href="/produkt/zebra-ds9908">DS9908</a> (1 169 zł, hybrydowy)</p>
+<p style="margin:4px 0 0 0"><strong>Ręczny</strong> → pytanie 3</p>
+</div>
+
+<div style="margin-bottom:16px;padding:12px;background:#fff;border-radius:8px;border-left:4px solid #3b82f6">
+<p style="margin:0;font-weight:600">3. Budżet i natężenie ruchu?</p>
+<p style="margin:4px 0 0 0"><strong>Budżetowy / mały ruch</strong> → <a href="/produkt/zebra-ds2208">DS2208</a> (352 zł) lub <a href="/produkt/zebra-ds2278">DS2278</a> (449 zł, BT)</p>
+<p style="margin:4px 0 0 0"><strong>Średni ruch / apteka z małymi kodami</strong> → <a href="/produkt/zebra-ds4608">DS4608</a> (814 zł)</p>
+<p style="margin:4px 0 0 0"><strong>Duży ruch / supermarket / EAS</strong> → <a href="/produkt/zebra-ds8208">DS8208</a> (1 027 zł)</p>
+</div>
+
+<div style="margin-bottom:16px;padding:12px;background:#fff;border-radius:8px;border-left:4px solid #3b82f6">
+<p style="margin:0;font-weight:600">4. Z jakiej odległości skanujesz?</p>
+<p style="margin:4px 0 0 0"><strong>Do 1,5 m (regały niskie / bliski zasięg)</strong> → <a href="/produkt/zebra-ds3608-sr">DS3608-SR</a> (1 287 zł)</p>
+<p style="margin:4px 0 0 0"><strong>2–32 m (regały wysokie, plac)</strong> → <a href="/produkt/zebra-ds3608-xr">DS3608-XR</a> (2 417 zł)</p>
+</div>
+
+<div style="padding:12px;background:#fff;border-radius:8px;border-left:4px solid #16a34a">
+<p style="margin:0;font-weight:600">5. Przewodowy czy bezprzewodowy?</p>
+<p style="margin:4px 0 0 0"><strong>Stała stacja (kasa, linia)</strong> → wersja przewodowa (DS2208, DS3608)</p>
+<p style="margin:4px 0 0 0"><strong>Inwentaryzacja / mobilność</strong> → wersja BT (<a href="/produkt/zebra-ds2278">DS2278</a>, <a href="/produkt/zebra-ds3678-sr">DS3678</a>)</p>
+</div>
+
+</div>`
+    },
+    {
+      id: 'tco',
+      heading: 'TCO — koszt posiadania na 5 lat',
+      content: `<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:16px">
+<thead>
+<tr style="background:#1e293b;color:#fff">
+<th style="padding:8px;text-align:left;border:1px solid #334155">Pozycja</th>
+<th style="padding:8px;text-align:right;border:1px solid #334155">DS2208</th>
+<th style="padding:8px;text-align:right;border:1px solid #334155">DS4608</th>
+<th style="padding:8px;text-align:right;border:1px solid #334155">DS3608-SR</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0">Skaner + kabel USB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">388 zł</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">814 zł</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">1 287 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0">Podstawka</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">~50 zł</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">~80 zł</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">~150 zł</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0">Wymiana (aw. co 3 lata IP52)</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">+388 zł</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">+814 zł</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">0 zł (IP68)</td></tr>
+<tr style="background:#f8fafc;font-weight:700"><td style="padding:8px;border:1px solid #e2e8f0">TCO / 5 lat</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~826 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~1 708 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right;color:#16a34a">~1 437 zł</td></tr>
+</tbody>
+</table>
+
+<div style="background:#f0fdf4;border-left:4px solid #16a34a;padding:16px;border-radius:8px;margin:16px 0">
+<p style="margin:0;font-weight:600">DS3608-SR tańszy niż DS4608 na 5 lat!</p>
+<p style="margin:8px 0 0 0">Paradoks: DS3608-SR (1 287 zł) jest droższy na starcie, ale IP65+IP68 i upadki z 3 m oznaczają, że w magazynie przeżyje 5+ lat bez wymiany. DS4608 z IP52 w agresywnym środowisku magazynowym średnio wymaga wymiany co 2,5–3 lata. Na 5-letnim horyzoncie DS3608-SR jest tańszy o ~271 zł na stanowisko.</p>
+</div>
+
+<p><strong>Dla kas z małym ruchem</strong> DS2208 za 388 zł z 5-letnią gwarancją to najtańszy TCO na rynku — jeden skaner na 5+ lat bez dodatkowych kosztów. W klasie skanerów do kas Zebra oferuje najdłuższą gwarancję producenta (5 lat vs typowe 1–3 lata u konkurencji).</p>`
+    },
+    {
+      id: 'oprogramowanie',
+      heading: 'DataCapture DNA — oprogramowanie w cenie',
+      content: `<p>Każdy skaner Zebra zawiera pakiet <strong>DataCapture DNA</strong> — zestaw narzędzi do konfiguracji, zarządzania i integracji skanerów:</p>
+
+<ul>
+<li><strong>123Scan</strong> — graficzny konfigurator skanerów (Windows). Tworzy pliki konfiguracyjne i kody do skanowania masowej konfiguracji. Ustawienia: prefiksy/sufiksy, typy kodów, dźwięki, tryby pracy.</li>
+<li><strong>Scanner Management Service (SMS)</strong> — centralne zarządzanie flotą skanerów przez sieć (firmware update, monitoring stanu, zdalne konfiguracje).</li>
+<li><strong>PRZM Intelligent Imaging</strong> — algorytm dekodowania uszkodzonych, wyblakłych i niskokontrastowych kodów (DS4608, DS8208, DS9308, DS9908).</li>
+<li><strong>Multi-Code Data Formatting</strong> — skanowanie wielu kodów jednym naciśnięciem spustu (seria DS3608).</li>
+</ul>
+
+<p>DataCapture DNA jest <strong>darmowy i wliczony w cenę</strong> każdego skanera Zebra — nie wymaga dodatkowych licencji. Konfiguracja Plug and Play: podłącz kabel USB → skaner emuluje klawiaturę (HID) → zeskanowany kod „wpisuje się" do aktywnego pola w dowolnym programie (Subiekt GT, Comarch ERP, SAP, WMS, Excel).</p>`
+    },
+    {
+      id: 'serwis',
+      heading: 'Serwis i gwarancja w Polsce',
+      content: `<p>Autoryzowany serwis Zebra w Polsce: <a href="https://www.serwis-zebry.pl/serwis-skanerow-zebra" rel="noopener">serwis-zebry.pl</a> we Wrocławiu — naprawy gwarancyjne i pogwarancyjne wszystkich skanerów Zebra. Wymiana okien skanujących, modułów, kabli i obudów z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.</p>
+
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0">
+<thead>
+<tr style="background:#1e293b;color:#fff">
+<th style="padding:8px;text-align:left;border:1px solid #334155">Model</th>
+<th style="padding:8px;text-align:center;border:1px solid #334155">Gwarancja</th>
+<th style="padding:8px;text-align:center;border:1px solid #334155">OneCare opcja</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0">DS2208, DS4608, DS8208, DS9908</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">5 lat</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">—</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0">DS2278, DS9308</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">3 lata</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">do 5 lat</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0">DS3608, DS3678</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">3 lata</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">do 5 lat</td></tr>
+</tbody>
+</table>
+
+<p>5-letnia gwarancja na DS2208, DS4608, DS8208 i DS9908 — najdłuższa w swoich klasach. Dla skanerów z 3-letnią gwarancją dostępne są kontrakty OneCare przedłużające ochronę do 5 lat.</p>`
+    },
+    {
+      id: 'podsumowanie-koncowe',
+      heading: 'Podsumowanie — którego skanera Zebra potrzebujesz?',
+      content: `<div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px">
+<div style="flex:1;min-width:220px;background:#f0fdf4;border:2px solid #16a34a;border-radius:12px;padding:16px">
+<h4 style="margin:0 0 8px 0;color:#16a34a">Kasa / apteka</h4>
+<p style="margin:0;font-size:14px"><a href="/produkt/zebra-ds2208">DS2208</a> — od 352 zł</p>
+<p style="margin:2px 0 0 0;font-size:12px;color:#64748b">Przewodowy USB, 5 lat gwarancji, FMD</p>
+</div>
+<div style="flex:1;min-width:220px;background:#eff6ff;border:2px solid #3b82f6;border-radius:12px;padding:16px">
+<h4 style="margin:0 0 8px 0;color:#3b82f6">Retail premium</h4>
+<p style="margin:0;font-size:14px"><a href="/produkt/zebra-ds8208">DS8208</a> — od 1 027 zł</p>
+<p style="margin:2px 0 0 0;font-size:12px;color:#64748b">2 MP, 3 m upadki, EAS, 5 lat</p>
+</div>
+<div style="flex:1;min-width:220px;background:#fef3c7;border:2px solid #f59e0b;border-radius:12px;padding:16px">
+<h4 style="margin:0 0 8px 0;color:#d97706">Hands-free</h4>
+<p style="margin:0;font-size:14px"><a href="/produkt/zebra-ds9308">DS9308</a> — od 995 zł</p>
+<p style="margin:2px 0 0 0;font-size:12px;color:#64748b">Prezentacyjny, FOV 52°, kompaktowy</p>
+</div>
+<div style="flex:1;min-width:220px;background:#fce7f3;border:2px solid #ec4899;border-radius:12px;padding:16px">
+<h4 style="margin:0 0 8px 0;color:#be185d">Magazyn</h4>
+<p style="margin:0;font-size:14px"><a href="/produkt/zebra-ds3608-sr">DS3608-SR</a> — od 1 287 zł</p>
+<p style="margin:2px 0 0 0;font-size:12px;color:#64748b">IP68, 3 m upadki, -30°C, 152 cm</p>
+</div>
+</div>
+
+<p><strong>Zasada ogólna:</strong> kupuj najtańszy skaner, który spełnia wymagania środowiska. DS2208 za 352 zł z 5-letnią gwarancją jest wystarczający dla 70% kas i aptek w Polsce. Przepłacanie za IP68 na kasie to marnotrawstwo — ale używanie IP52 w magazynie to ryzyko awarii co 2 lata.</p>
+
+<p>Potrzebujesz pomocy w doborze skanerów do swojego biznesu? <a href="/zapytanie">Napisz do nas</a> — dobierzemy model i konfigurację. Serwis: <a href="https://www.serwis-zebry.pl/serwis-skanerow-zebra" rel="noopener">serwis-zebry.pl</a>.</p>`
+    },
+  ],
+  faq: [
+    { question: 'Jaki skaner Zebra do apteki?', answer: 'Do apteki rekomendujemy Zebra DS2208 (od 352 zł netto, przewodowy USB) — odczytuje kody DataMatrix na lekach do weryfikacji FMD/KOWAL/NMVS, kody QR e-recept, GS1 DataBar. Wersja DS2208-HC z antybakteryjną obudową do dezynfekcji. Alternatywnie: DS9308 (995 zł) jako prezentacyjny hands-free do apteki z dużym ruchem.' },
+    { question: 'Jaki skaner Zebra do magazynu?', answer: 'Do standardowego magazynu: Zebra DS3608-SR (od 1 287 zł) — IP65+IP68, upadki z 3 m na beton, -30°C, zasięg do 152 cm. Do magazynu wysokiego składowania: DS3608-XR (od 2 417 zł) — zasięg do 32 m z podwójnym sensorem i zielonym celownikiem laserowym. Oba obsługują Multi-Code (20 kodów/skan) i Industrial Ethernet.' },
+    { question: 'Jaki skaner Zebra do kasy fiskalnej?', answer: 'Najtańsza opcja: Zebra DS2208 (od 352 zł) — przewodowy USB, Plug and Play, 5 lat gwarancji. Premium z EAS: DS8208 (od 1 027 zł) — sensor 2 MP, 3 m upadki. Hands-free: DS9308 (od 995 zł) — prezentacyjny z polem widzenia 52°. Hybrydowy: DS9908 (od 1 169 zł) — ręczny + hands-free, Digimarc, 5 lat gwarancji.' },
+    { question: 'Ile kosztuje najtańszy skaner Zebra?', answer: 'Najtańszy skaner Zebra to DS2208 od 352 zł netto (sam skaner z podstawką) lub 388 zł z kablem USB i podstawką (DS2208-SR7U2100SGW). To imager 2D czytający kody 1D i 2D (EAN, QR, DataMatrix), z 5-letnią gwarancją producenta i odpornością IP52 na upadki z 1,5 m. Ceny netto PLN, marzec 2026.' },
+    { question: 'Czym się różni DS2208 od DS4608?', answer: 'DS2208 (352 zł) to entry-level z sensorem 640×480 px, zasięgiem 36,8 cm. DS4608 (814 zł) to mid-range z megapikselowym sensorem PRZM (1280×800), zasięgiem 112 cm, szybszym dekodowaniem uszkodzonych kodów i opcją EAS Checkpoint. Oba mają gwarancję 5 lat i IP52. DS4608 opłaca się przy dużym ruchu kasowym i gdy kody są uszkodzone/wyblakłe.' },
+    { question: 'Czym się różni DS3608-SR od DS3608-XR?', answer: 'DS3608-SR (1 287 zł) to Standard Range z zasięgiem do 152 cm — uniwersalny do magazynów z regałami do poziomu oka. DS3608-XR (2 417 zł) to Extended Range z zasięgiem do 32 m — podwójny sensor (Near+Far) i zielony celownik laserowy do regałów wysokiego składowania. Oba mają IP65+IP68, upadki 3 m, -30°C. Różnica: zasięg i cena.' },
+    { question: 'Czy skaner Zebra czyta kody z ekranów telefonów?', answer: 'Tak — wszystkie skanery Zebra z matrycą 2D (area imager) odczytują kody z ekranów smartfonów, tabletów i monitorów: QR Code, DataMatrix, PDF417, Aztec. Obsługują kupony mobilne, bilety elektroniczne, e-recepty, karty lojalnościowe i QR pay. Modele z sensorem PRZM (DS4608, DS8208, DS9308, DS9908) radzą sobie lepiej z odblaskami ekranów.' },
+    { question: 'Jaka jest gwarancja na skanery Zebra?', answer: 'DS2208, DS4608, DS8208 i DS9908 mają gwarancję 60 miesięcy (5 lat) — najdłuższą w swoich klasach. DS2278, DS9308 i seria DS3608/DS3678 mają gwarancję 36 miesięcy (3 lata) z opcją przedłużenia do 5 lat (OneCare). Serwis gwarancyjny w Polsce: serwis-zebry.pl we Wrocławiu.' },
+    { question: 'Co to jest Digimarc w skanerach Zebra?', answer: 'Digimarc to technologia niewidzialnych kodów kreskowych drukowanych na całym opakowaniu produktu — skaner nie musi szukać kodu w konkretnym miejscu. Wystarczy przesunąć dowolną część opakowania przed oknem skanera. Standard wdrażany przez Walmart i P&G. Obsługują: DS9908 (natywnie), DS9308 i DS3608 (opcja wariant SRD), DS4608 i DS8208.' },
+    { question: 'Czy DS3608 działa w chłodni i mroźni?', answer: 'Tak — cała seria DS3608 pracuje od -30°C do +50°C. Podwójne uszczelnienie IP65+IP68 chroni przed wilgocią, lodem i kondensatem. Skaner wytrzymuje wielokrotne przejścia między mroźnią a halą (+20°C) bez uszkodzeń. Do mroźni rekomendujemy DS3608-SR (1 287 zł) — uniwersalny zasięg i najniższa cena w klasie ultra-rugged.' },
+    { question: 'Jaki skaner Zebra bezprzewodowy?', answer: 'Entry-level: Zebra DS2278 (od 449 zł) — Bluetooth 4.0, 14 h bateria, baza CR2278. Magazynowy: DS3678-SR (bezprzewodowy DS3608-SR, IP68, -30°C), DS3678-XR (zasięg 32 m). Retail premium: DS8288 (bezprzewodowy DS8208, 2 MP, PowerPrecision+). Zasięg BT: 10 m (Class 2) lub do 100 m z bazą (Class 1).' },
+    { question: 'Co to jest Industrial Ethernet w DS3608?', answer: 'Seria DS3608 natywnie obsługuje protokoły przemysłowe: EtherNet/IP, Profinet i Modbus TCP — bez konwerterów. Skaner podłącza się bezpośrednio do sterownika PLC lub systemu SCADA kablem Ethernet. Idealne do linii produkcyjnych, zautomatyzowanych stanowisk kontroli jakości i systemów sortowania.' },
+    { question: 'Jak podłączyć skaner Zebra do komputera?', answer: 'Podłącz kabel USB — skaner emuluje klawiaturę (tryb HID) i natychmiast wpisuje zeskanowany kod do aktywnego pola tekstowego. Plug and Play: działa z każdym programem (Subiekt GT, Comarch ERP, SAP, WMS, Excel, mMedica) bez instalacji sterowników. Zaawansowana konfiguracja: aplikacja Zebra 123Scan (Windows) lub skanowanie kodów z instrukcji.' },
+    { question: 'Gdzie serwisować skanery Zebra w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl we Wrocławiu — naprawy gwarancyjne i pogwarancyjne wszystkich skanerów Zebra (DS2208, DS4608, DS8208, DS3608, DS9308, DS9908 i inne). Wymiana okien skanujących, modułów, kabli z oryginalnych części. Czas naprawy: 3–5 dni roboczych.' },
+    { question: 'Jakie są alternatywy dla skanerów Zebra?', answer: 'Entry-level: Honeywell Voyager 1470g (od ~500 zł, 3 lata gwarancji), Newland HR11/HR23 (od 181 zł, 5 lat). Retail: Honeywell Xenon Ultra 1960g (2D, USB). Ultra-rugged: Honeywell Granit XP 1990iXR (zasięg do 25 m), Datalogic PowerScan 9600. Zebra wyróżnia się 5-letnią gwarancją (DS2208), Industrial Ethernet (DS3608) i serwisem w Polsce (serwis-zebry.pl).' },
+  ],
+  relatedLinks: [
+    { title: 'Zebra DS2208 — karta produktu', href: '/produkt/zebra-ds2208' },
+    { title: 'Zebra DS4608 — karta produktu', href: '/produkt/zebra-ds4608' },
+    { title: 'Zebra DS8208 — karta produktu', href: '/produkt/zebra-ds8208' },
+    { title: 'Zebra DS9308 — karta produktu', href: '/produkt/zebra-ds9308' },
+    { title: 'Zebra DS3608-SR — karta produktu', href: '/produkt/zebra-ds3608-sr' },
+    { title: 'Zebra DS3608-XR — karta produktu', href: '/produkt/zebra-ds3608-xr' },
+    { title: 'Skanery kodów kreskowych — pełna oferta', href: '/skanery-kodow-kreskowych' },
+    { title: 'Skanery Zebra — oferta', href: '/skanery-kodow-zebra' },
+    { title: 'Jak wybrać terminal mobilny? Poradnik', href: '/poradnik/jak-wybrac-terminal-mobilny' },
+    { title: 'Serwis skanerów Zebra w Polsce', href: 'https://www.serwis-zebry.pl/serwis-skanerow-zebra' },
+  ]
 }
 ]
 
