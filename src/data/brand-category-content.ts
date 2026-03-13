@@ -1660,7 +1660,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
         },
         {
           title: 'Europejski serwis centralny — szybciej niż z Azji',
-          text: 'Datalogic ma europejskie centrum serwisowe w Bolonii (Włochy) — czas naprawy gwarancyjnej: 10–15 dni roboczych door-to-door z Polski. Dla porównania: Newland (serwis w Chinach) — 15–25 dni. Zebra ma centrum serwisowe w Wieliczce (Polska) — 3–5 dni ([serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-terminali-zebra) — najszybszy w branży). Honeywell — centrum w Niemczech, 7–14 dni. Kontrakty EaseOfCare Datalogic (rozszerzona gwarancja + priorytetowy serwis) mogą skrócić czas do 7–10 dni.',
+          text: 'Datalogic ma europejskie centrum serwisowe w Bolonii (Włochy) — czas naprawy gwarancyjnej: 10–15 dni roboczych door-to-door z Polski. Dla porównania: Newland (serwis w Chinach) — 15–25 dni. Zebra ma serwis autoryzowany we Wrocławiu — 3–5 dni ([serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-terminali-zebra) — najszybszy w branży). Honeywell — centrum w Niemczech, 7–14 dni. Kontrakty EaseOfCare Datalogic (rozszerzona gwarancja + priorytetowy serwis) mogą skrócić czas do 7–10 dni.',
         },
         {
           title: 'Android 11 w Skorpio X5 — kiedy to faktycznie problem?',
