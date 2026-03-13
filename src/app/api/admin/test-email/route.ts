@@ -6,18 +6,32 @@ import { jwtVerify } from 'jose'
 import { sendEmail } from '@/lib/email'
 
 export async function GET(request: NextRequest) {
-  // Admin-only — verify JWT
-  const cookieStore = await cookies()
-  const token = cookieStore.get('admin_token')?.value
-  if (!token) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  // Auth: admin cookie OR ?secret= query param matching ADMIN_JWT_SECRET
+  const { searchParams } = new URL(request.url)
+  const querySecret = searchParams.get('secret')
+  const adminSecret = process.env.ADMIN_JWT_SECRET || ''
+
+  let authorized = false
+
+  // Method 1: query param
+  if (querySecret && adminSecret && querySecret === adminSecret) {
+    authorized = true
   }
 
-  try {
-    const secret = process.env.ADMIN_JWT_SECRET || ''
-    await jwtVerify(token, new TextEncoder().encode(secret))
-  } catch {
-    return NextResponse.json({ error: 'Invalid token' }, { status: 401 })
+  // Method 2: admin cookie
+  if (!authorized) {
+    const cookieStore = await cookies()
+    const token = cookieStore.get('admin_token')?.value
+    if (token) {
+      try {
+        await jwtVerify(token, new TextEncoder().encode(adminSecret))
+        authorized = true
+      } catch { /* invalid token */ }
+    }
+  }
+
+  if (!authorized) {
+    return NextResponse.json({ error: 'Unauthorized. Use ?secret=YOUR_ADMIN_JWT_SECRET' }, { status: 401 })
   }
 
   const adminEmail = process.env.ADMIN_EMAIL || 'jakub.tiuchty@takma.com.pl'
