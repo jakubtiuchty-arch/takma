@@ -1548,9 +1548,9 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
 
   'terminale-datalogic': {
     definition: {
-      heading: 'Terminale mobilne Datalogic — włoska precyzja AutoID od 1972 roku',
+      heading: 'Terminale mobilne Datalogic — Green Spot, SafeSwap i skan do 20 m',
       content:
-        'Datalogic S.p.A. to włoski producent AIDC z Bolonii, założony w 1972 roku — ponad 50 lat doświadczenia w automatycznej identyfikacji. Oferta terminali mobilnych obejmuje serię Memor (dotykowe: [Memor 12](/produkt/datalogic-memor-12), [Memor 17](/produkt/datalogic-memor-17), [Memor 30](/produkt/datalogic-memor-30), [Memor 35](/produkt/datalogic-memor-35)) oraz [Skorpio X5](/produkt/datalogic-skorpio-x5) z klawiaturą fizyczną. Trzy technologie wyróżniające Datalogic: **Green Spot** — wizualna konfirmacja odczytu zielonym punktem na etykiecie (redukcja błędów o 22%), **SafeSwap** — wymiana baterii bez wyłączania terminala (~90 s backup), **Halogen DE2121** — silnik skanujący z algorytmem DeepSight do trudnych kodów. Ceny od 2 687 zł netto ([Memor 12](/produkt/datalogic-memor-12)) do 6 586 zł ([Skorpio X5](/produkt/datalogic-skorpio-x5) XLR).',
+        'Seria Memor ([Memor 12](/produkt/datalogic-memor-12), [17](/produkt/datalogic-memor-17), [30](/produkt/datalogic-memor-30), [35](/produkt/datalogic-memor-35)) i [Skorpio X5](/produkt/datalogic-skorpio-x5) z klawiaturą — 5 modeli od 2 687 zł netto. Technologie wyróżniające: **Green Spot** — zielony punkt na zeskanowanej etykiecie potwierdza odczyt bez patrzenia na ekran (redukcja błędów kompletacji o 22%). **SafeSwap** — wymiana baterii w 10 s bez wyłączania terminala i utraty sesji WMS. **Halogen DE2121** z algorytmem DeepSight — odczyt uszkodzonych, zabrudzonych i trudnych kodów z odległości do 20 m (XLR).',
     },
     buyingGuide: {
       heading: 'Jak wybrać terminal mobilny Datalogic? 6 kryteriów',
