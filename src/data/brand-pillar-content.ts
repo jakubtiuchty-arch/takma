@@ -315,7 +315,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
   // HONEYWELL
   // ============================================
   honeywell: {
-    heroText: 'Drukarki etykiet, terminale mobilne, skanery kodów kreskowych i tablety przemysłowe — pełna oferta Honeywell z cenami netto i dostawą z magazynu w Polsce.',
+    heroText: 'Drukarki etykiet od 1 518 zł, terminale mobilne z 5G i voice picking Vocollect, skanery kodów Voyager/Xenon/Granit z FlexRange do 24 m i tablety przemysłowe — pełna oferta Honeywell AutoID z cenami netto z dystrybucji Ingram Micro i BlueStar. Platforma Mobility Edge gwarantuje najdłuższy cykl życia urządzeń w branży (do 10 lat wsparcia Android). Dostawa z magazynu w Polsce 24h lub EU 2–3 dni.',
 
     categoryTiles: [
       {
