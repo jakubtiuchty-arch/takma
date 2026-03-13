@@ -36,6 +36,11 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
   // Brand full name — only Zebra has "Technologies" in its name
   const brandName = manufacturerId === 'zebra' ? 'Zebra Technologies' : manufacturer.name
 
+  // Brand accent colors
+  const accent = manufacturerId === 'honeywell'
+    ? { color: '#EE3124', bg: '#EE3124/10', light: 'rgba(238,49,36,0.08)', border: 'rgba(238,49,36,0.25)', text: '#EE3124', hover: '#D42B1F' }
+    : { color: '#2563EB', bg: 'primary-50', light: 'rgba(37,99,235,0.08)', border: 'rgba(37,99,235,0.25)', text: '#2563EB', hover: '#1D4ED8' }
+
   // Schema JSON-LD
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
@@ -131,16 +136,17 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
                 <Link
                   key={tile.categoryId}
                   href={tile.href}
-                  className="group bg-white border border-gray-200 rounded-xl p-5 hover:border-primary-300 hover:shadow-sm transition-all"
+                  className="group bg-white border border-gray-200 rounded-xl p-5 hover:shadow-sm transition-all"
+                  style={{ ['--accent' as string]: accent.color }}
                 >
                   <div className="flex items-start justify-between mb-2">
-                    <h3 className="font-semibold text-gray-900 group-hover:text-primary-600 transition-colors">
+                    <h3 className="font-semibold text-gray-900 transition-colors" style={{ color: undefined }}>
                       {tile.name}
                     </h3>
                     <span className="text-xs text-gray-400 bg-gray-50 px-2 py-0.5 rounded-full">{count}</span>
                   </div>
                   <p className="text-sm text-gray-500 leading-relaxed">{tile.description}</p>
-                  <div className="flex items-center gap-1 text-primary-600 text-sm font-medium mt-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="flex items-center gap-1 text-sm font-medium mt-3 opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: accent.text }}>
                     Zobacz <ArrowRightIcon size={14} />
                   </div>
                 </Link>
@@ -177,12 +183,15 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
             <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-6">Historia {brandName}</h2>
             <div className="relative">
               {/* Vertical line */}
-              <div className="absolute left-[23px] top-2 bottom-2 w-px bg-gray-200 hidden sm:block" />
+              <div className="absolute left-[23px] top-2 bottom-2 w-px hidden sm:block" style={{ backgroundColor: accent.border }} />
               <div className="space-y-4 sm:space-y-5">
                 {data.timeline.map((entry, i) => (
                   <div key={i} className="flex gap-4 sm:gap-5">
                     <div className="flex-shrink-0 relative z-10">
-                      <div className="w-12 h-7 flex items-center justify-center bg-primary-50 border border-primary-100 rounded text-xs font-bold text-primary-700">
+                      <div
+                        className="w-12 h-7 flex items-center justify-center rounded text-xs font-bold"
+                        style={{ backgroundColor: accent.light, borderWidth: 1, borderColor: accent.border, color: accent.text }}
+                      >
                         {entry.year}
                       </div>
                     </div>
@@ -206,7 +215,7 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
                 <div key={i} className="bg-white border border-gray-200 rounded-xl p-5 hover:border-gray-300 transition-colors">
                   <div className="flex items-center gap-2.5 mb-3">
                     <h3 className="font-semibold text-gray-900">{tech.name}</h3>
-                    <span className="text-[11px] font-medium px-2 py-0.5 bg-gray-100 text-gray-500 rounded-full">{tech.badge}</span>
+                    <span className="text-[11px] font-medium px-2 py-0.5 rounded-full" style={{ backgroundColor: accent.light, color: accent.text }}>{tech.badge}</span>
                   </div>
                   <p className="text-sm text-gray-600 leading-relaxed">{tech.description}</p>
                 </div>
@@ -243,7 +252,7 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
             <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">
               {manufacturerId === 'zebra' ? 'TAKMA jako Premier Solution Partner' : `TAKMA — partner ${manufacturer.name} AutoID`}
             </h2>
-            <div className="bg-primary-50/50 border border-primary-100 rounded-xl p-6">
+            <div className="rounded-xl p-6" style={{ backgroundColor: accent.light, borderWidth: 1, borderColor: accent.border }}>
               {data.partnership.map((para, i) => (
                 <p key={i} className="text-sm text-gray-700 leading-relaxed mb-3 last:mb-0">
                   <LinkedText text={para} />
@@ -285,15 +294,17 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
         {/* Comparison table */}
         {data.comparison.length > 0 && (
           <section className="mb-14">
-            <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">{manufacturer.name} vs Honeywell vs Datalogic</h2>
+            <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">
+              {manufacturerId === 'zebra' ? 'Zebra vs Honeywell vs Datalogic' : 'Honeywell vs Zebra vs Datalogic'}
+            </h2>
             <p className="text-gray-500 text-sm mb-6 max-w-2xl">{data.comparisonIntro}</p>
             <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
               <table className="w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
                 <thead>
                   <tr className="bg-gray-50">
                     <th className="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200 w-[18%]">Kategoria</th>
-                    <th className="text-left px-4 py-3 font-semibold text-primary-700 border-b border-gray-200 w-[27%] bg-primary-50/40">Zebra</th>
-                    <th className="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200 w-[27%]">Honeywell</th>
+                    <th className="text-left px-4 py-3 font-semibold border-b border-gray-200 w-[27%]" style={manufacturerId === 'zebra' ? { color: accent.text, backgroundColor: accent.light } : undefined}>Zebra</th>
+                    <th className="text-left px-4 py-3 font-semibold border-b border-gray-200 w-[27%]" style={manufacturerId === 'honeywell' ? { color: accent.text, backgroundColor: accent.light } : undefined}>Honeywell</th>
                     <th className="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200 w-[27%]">Datalogic</th>
                   </tr>
                 </thead>
@@ -301,8 +312,8 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
                   {data.comparison.map((row, i) => (
                     <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}>
                       <td className="px-4 py-3 font-medium text-gray-900 border-b border-gray-100">{row.aspect}</td>
-                      <td className="px-4 py-3 text-gray-600 border-b border-gray-100 bg-primary-50/20">{row.zebra}</td>
-                      <td className="px-4 py-3 text-gray-600 border-b border-gray-100">{row.honeywell}</td>
+                      <td className="px-4 py-3 text-gray-600 border-b border-gray-100" style={manufacturerId === 'zebra' ? { backgroundColor: accent.light } : undefined}>{row.zebra}</td>
+                      <td className="px-4 py-3 text-gray-600 border-b border-gray-100" style={manufacturerId === 'honeywell' ? { backgroundColor: accent.light } : undefined}>{row.honeywell}</td>
                       <td className="px-4 py-3 text-gray-600 border-b border-gray-100">{row.datalogic}</td>
                     </tr>
                   ))}
@@ -321,7 +332,7 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
                 <Link
                   key={bc.id}
                   href={`/${bc.slug}`}
-                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm text-gray-700 hover:border-primary-300 hover:text-primary-600 transition-colors"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm text-gray-700 transition-colors hover:shadow-sm"
                 >
                   {bc.name}
                   <ArrowRightIcon size={12} className="text-gray-400" />
@@ -363,7 +374,7 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
                 <Link
                   key={i}
                   href={guide.href}
-                  className="flex items-center gap-3 px-4 py-3 bg-white border border-gray-200 rounded-lg hover:border-primary-300 hover:shadow-sm transition-all group"
+                  className="flex items-center gap-3 px-4 py-3 bg-white border border-gray-200 rounded-lg hover:shadow-sm transition-all group"
                 >
                   <span className="text-sm text-gray-700 group-hover:text-primary-600 transition-colors">{guide.title}</span>
                   <ArrowRightIcon size={14} className="flex-shrink-0 text-gray-400 ml-auto" />
@@ -378,7 +389,7 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
           <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
             <h2 className="font-semibold text-gray-900 mb-3">Inne marki w ofercie TAKMA</h2>
             <div className="flex flex-wrap gap-2">
-              {['Honeywell', 'Datalogic', 'Newland', 'TSC'].map(brand => (
+              {['Zebra', 'Honeywell', 'Datalogic', 'Newland', 'TSC'].filter(b => b !== manufacturer.name).map(brand => (
                 <span
                   key={brand}
                   className="inline-flex items-center px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600"
