@@ -457,7 +457,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
     // SERWIS
     // ────────────────────────────────
     service: [
-      'Serwis urządzeń Honeywell w Polsce realizowany jest przez autoryzowane centra serwisowe, m.in. Aspekt, Etisoft (Platinum Partner + autoryzowany serwis drukarek) i IBCS Service. Standardowa gwarancja producenta: 12–24 miesięcy w zależności od kategorii. Naprawy obejmują terminale (ekrany, baterie, porty), drukarki (głowice, wałki, moduły) i skanery (okna, kable, podstawki).',
+      'Serwis urządzeń Honeywell w Polsce realizowany jest przez sieć autoryzowanych centrów serwisowych producenta. Standardowa gwarancja: 12–24 miesięcy w zależności od kategorii. Naprawy obejmują terminale (ekrany, baterie, porty), drukarki (głowice, wałki, moduły) i skanery (okna, kable, podstawki). TAKMA pomaga w organizacji serwisu — przyjmujemy zgłoszenia i koordynujemy naprawę z serwisem producenta.',
       'Dla terminali i drukarek dostępne są kontrakty Honeywell Service Plans — rozszerzona gwarancja z naprawą uszkodzeń przypadkowych i wsparciem technicznym. Ceny kontraktów widoczne na kartach produktów w naszym sklepie. Czas naprawy: 5–10 dni roboczych. TAKMA pomaga w organizacji serwisu i obsłudze gwarancji.',
     ],
 
@@ -547,7 +547,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       },
       {
         question: 'Czy urządzenia Honeywell mają serwis w Polsce?',
-        answer: 'Tak. Serwis Honeywell w Polsce realizują autoryzowane centra: Aspekt (terminale, skanery, drukarki), Etisoft (Platinum Partner + autoryzowany serwis drukarek, Gliwice). Standardowa gwarancja: 12–24 miesięcy. Kontrakty Honeywell Service Plans rozszerzają gwarancję do 5 lat z naprawą uszkodzeń przypadkowych. Czas naprawy: 5–10 dni roboczych. TAKMA pomaga w organizacji serwisu i obsłudze gwarancji.',
+        answer: 'Tak. Serwis Honeywell w Polsce realizuje sieć autoryzowanych centrów serwisowych producenta. Standardowa gwarancja: 12–24 miesięcy. Kontrakty Honeywell Service Plans rozszerzają gwarancję do 5 lat z naprawą uszkodzeń przypadkowych. Czas naprawy: 5–10 dni roboczych. TAKMA pomaga w organizacji serwisu i obsłudze gwarancji — przyjmujemy zgłoszenia i koordynujemy naprawę.',
       },
       {
         question: 'Jak przenieść się z Intermec na nowe Honeywell?',
