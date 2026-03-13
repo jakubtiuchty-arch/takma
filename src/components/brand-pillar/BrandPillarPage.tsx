@@ -39,6 +39,8 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
   // Brand accent colors
   const accent = manufacturerId === 'honeywell'
     ? { color: '#EE3124', bg: '#EE3124/10', light: 'rgba(238,49,36,0.08)', border: 'rgba(238,49,36,0.25)', text: '#EE3124', hover: '#D42B1F' }
+    : manufacturerId === 'newland'
+    ? { color: '#009B3A', bg: 'green-50', light: 'rgba(0,155,58,0.08)', border: 'rgba(0,155,58,0.25)', text: '#009B3A', hover: '#007A2E' }
     : { color: '#2563EB', bg: 'primary-50', light: 'rgba(37,99,235,0.08)', border: 'rgba(37,99,235,0.25)', text: '#2563EB', hover: '#1D4ED8' }
 
   // Schema JSON-LD
@@ -58,7 +60,7 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
     description: data.heroText,
     url: `https://www.takma.com.pl/${manufacturer.slug}`,
     numberOfItems: allProducts.length,
-    dateModified: '2026-03-12',
+    dateModified: new Date().toISOString().split('T')[0],
     provider: {
       '@type': 'Organization',
       name: 'TAKMA',
@@ -299,10 +301,16 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
         )}
 
         {/* Comparison table */}
-        {data.comparison.length > 0 && (
+        {data.comparison.length > 0 && (() => {
+          const compCols = manufacturerId === 'newland'
+            ? [{ key: 'newland' as const, label: 'Newland' }, { key: 'zebra' as const, label: 'Zebra' }, { key: 'honeywell' as const, label: 'Honeywell' }]
+            : manufacturerId === 'honeywell'
+            ? [{ key: 'honeywell' as const, label: 'Honeywell' }, { key: 'zebra' as const, label: 'Zebra' }, { key: 'datalogic' as const, label: 'Datalogic' }]
+            : [{ key: 'zebra' as const, label: 'Zebra' }, { key: 'honeywell' as const, label: 'Honeywell' }, { key: 'datalogic' as const, label: 'Datalogic' }]
+          return (
           <section className="mb-14">
             <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">
-              {manufacturerId === 'zebra' ? 'Zebra vs Honeywell vs Datalogic' : 'Honeywell vs Zebra vs Datalogic'}
+              {compCols.map(c => c.label).join(' vs ')}
             </h2>
             <p className="text-gray-500 text-sm mb-6 max-w-2xl">{data.comparisonIntro}</p>
             <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
@@ -310,25 +318,26 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
                 <thead>
                   <tr className="bg-gray-50">
                     <th className="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200 w-[18%]">Kategoria</th>
-                    <th className="text-left px-4 py-3 font-semibold border-b border-gray-200 w-[27%]" style={manufacturerId === 'zebra' ? { color: accent.text, backgroundColor: accent.light } : undefined}>Zebra</th>
-                    <th className="text-left px-4 py-3 font-semibold border-b border-gray-200 w-[27%]" style={manufacturerId === 'honeywell' ? { color: accent.text, backgroundColor: accent.light } : undefined}>Honeywell</th>
-                    <th className="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200 w-[27%]">Datalogic</th>
+                    {compCols.map(col => (
+                      <th key={col.key} className="text-left px-4 py-3 font-semibold border-b border-gray-200 w-[27%]" style={col.key === manufacturerId ? { color: accent.text, backgroundColor: accent.light } : undefined}>{col.label}</th>
+                    ))}
                   </tr>
                 </thead>
                 <tbody>
                   {data.comparison.map((row, i) => (
                     <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}>
                       <td className="px-4 py-3 font-medium text-gray-900 border-b border-gray-100">{row.aspect}</td>
-                      <td className="px-4 py-3 text-gray-600 border-b border-gray-100" style={manufacturerId === 'zebra' ? { backgroundColor: accent.light } : undefined}>{row.zebra}</td>
-                      <td className="px-4 py-3 text-gray-600 border-b border-gray-100" style={manufacturerId === 'honeywell' ? { backgroundColor: accent.light } : undefined}>{row.honeywell}</td>
-                      <td className="px-4 py-3 text-gray-600 border-b border-gray-100">{row.datalogic}</td>
+                      {compCols.map(col => (
+                        <td key={col.key} className="px-4 py-3 text-gray-600 border-b border-gray-100" style={col.key === manufacturerId ? { backgroundColor: accent.light } : undefined}>{row[col.key] || ''}</td>
+                      ))}
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
           </section>
-        )}
+          )
+        })()}
 
         {/* Brand category quick links */}
         {brandCats.length > 0 && (
@@ -396,16 +405,23 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
           <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
             <h2 className="font-semibold text-gray-900 mb-3">Inne marki w ofercie TAKMA</h2>
             <div className="flex flex-wrap gap-2">
-              {['Zebra', 'Honeywell', 'Datalogic', 'Newland', 'TSC'].filter(b => b !== manufacturer.name).map(brand => (
-                <span
-                  key={brand}
-                  className="inline-flex items-center px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600"
+              {[
+                { name: 'Zebra', href: '/zebra' },
+                { name: 'Honeywell', href: '/honeywell' },
+                { name: 'Newland', href: '/newland' },
+                { name: 'Datalogic', href: '/katalog' },
+                { name: 'TSC', href: '/katalog' },
+              ].filter(b => b.name !== manufacturer.name).map(brand => (
+                <Link
+                  key={brand.name}
+                  href={brand.href}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-gray-300 hover:shadow-sm transition-all"
                 >
-                  {brand}
-                </span>
+                  {brand.name}
+                  <ArrowRightIcon size={12} className="text-gray-400" />
+                </Link>
               ))}
             </div>
-            <p className="text-xs text-gray-400 mt-3">Strony producentów Honeywell, Datalogic i Newland — wkrótce.</p>
           </div>
         </section>
 

@@ -20,7 +20,7 @@ export interface BrandPillarData {
   partnership: string[]
   service: string[]
   comparisonIntro: string
-  comparison: { aspect: string; zebra: string; honeywell: string; datalogic: string }[]
+  comparison: { aspect: string; zebra: string; honeywell: string; datalogic: string; newland?: string }[]
   whyBuyItems: { title: string; text: string }[]
   faq: { question: string; answer: string }[]
   guideLinks: { title: string; href: string }[]
@@ -582,6 +582,251 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       { title: 'Top 10 terminali mobilnych 2026 — ranking z cenami', href: '/poradnik/top-10-terminali-mobilnych-2026' },
       { title: 'Drukarka termiczna vs termotransferowa — porównanie', href: '/poradnik/drukarka-termiczna-vs-termotransferowa' },
       { title: 'Drukarki etykiet Zebra — przewodnik po seriach ZD i ZT', href: '/poradnik/drukarki-etykiet-zebra-przewodnik' },
+    ],
+  },
+
+  // ============================================
+  // NEWLAND AIDC
+  // ============================================
+  newland: {
+    heroText: 'Skanery kodów kreskowych od 181 zł netto, terminale mobilne z klawiaturą fizyczną i baterią hot-swap, akcesoria i podstawki — pełna oferta Newland AIDC z cenami netto z dystrybucji Ingram Micro i BlueStar. Własny chip dekodujący UIMG 6. generacji (120+ patentów), gwarancja producenta 5 lat na skanery, bezpłatny MDM Ndevor do zarządzania flotą. Biuro europejskie w Warszawie od 2023. Dostawa z magazynu w Polsce 24h lub EU 2–3 dni.',
+
+    categoryTiles: [
+      {
+        categoryId: 'skanery-kodow-kreskowych',
+        name: 'Skanery kodów',
+        href: '/skanery-kodow-kreskowych-newland',
+        description: 'HR11 Aringa, HR23 Dorada, HR33 Marlin, NVH300. Od 181 zł netto.',
+      },
+      {
+        categoryId: 'terminale-mobilne',
+        name: 'Terminale mobilne',
+        href: '/terminale-newland',
+        description: 'N7 Cachalot, MT93 Megattera, MT95 Kambur. Od 2 295 zł netto.',
+      },
+    ],
+
+    featuredSlugs: [
+      'newland-hr23-dorada',
+      'newland-hr33-marlin',
+      'newland-nvh300',
+      'newland-hr23-dorada-bt',
+      'newland-n7-cachalot-pro-ii',
+      'newland-mt93-megattera',
+      'newland-mt95-kambur-pro-ii',
+      'newland-hr33-marlin-bt',
+    ],
+
+    // ────────────────────────────────
+    // TECHNOLOGIE
+    // ────────────────────────────────
+    technologies: [
+      {
+        name: 'UIMG 6. generacji',
+        badge: 'Skanowanie',
+        description: 'Newland jest jednym z niewielu producentów na świecie z własnym chipem dekodującym kody kreskowe — UIMG (Ultra Intelligent Mega-pixel Imaging). Szósta generacja (2024) dekoduje 1D i 2D z prędkością >120 fps, czyta uszkodzone, brudne i słabo wydrukowane kody. 120+ patentów. Chip wbudowany w każdy skaner i terminal Newland.',
+      },
+      {
+        name: 'Duo Near & Far',
+        badge: 'Skanowanie',
+        description: 'Technologia dwóch silników skanujących w jednym module: bliski zasięg (etykiety na opakowaniach) i daleki zasięg (kody na regałach). Przełączanie automatyczne — operator nie zmienia trybu. Dostępna w terminalach [N7 Cachalot Pro II](/produkt/newland-n7-cachalot-pro-ii). Odpowiedź Newland na Zebra SE58 i Honeywell FlexRange.',
+      },
+      {
+        name: 'Ndevor MDM',
+        badge: 'Zarządzanie',
+        description: 'Bezpłatna platforma MDM (Mobile Device Management) do zarządzania flotą terminali Newland. Rejestracja przez QR, masowa instalacja aplikacji, śledzenie GPS, zdalne czyszczenie danych, monitoring baterii. Eliminuje koszt licencji MDM (~50 zł/urządzenie/miesiąc). Zarządza wyłącznie urządzeniami Newland — dla flot mieszanych rekomendujemy SOTI lub Intune.',
+      },
+      {
+        name: 'EasySet',
+        badge: 'Konfiguracja',
+        description: 'Oprogramowanie do konfiguracji skanerów Newland — zmiana trybów skanowania, ustawień interfejsu, aktualizacja firmware. Klonowanie konfiguracji między urządzeniami przez USB lub QR. Dostępne bezpłatnie na stronie Newland. Odpowiednik Zebra 123Scan i Honeywell EZConfig.',
+      },
+      {
+        name: 'nSHIELD',
+        badge: 'Healthcare',
+        description: 'Powłoka antybakteryjna stosowana w skanerach healthcare. Obudowa odporna na środki dezynfekcyjne (alkohol izopropylowy, nadtlenek wodoru). Certyfikat ISO 22196. Dla aptek, szpitali i laboratoriów, gdzie urządzenia muszą być regularnie dezynfekowane bez uszkodzenia plastiku.',
+      },
+    ],
+
+    // ────────────────────────────────
+    // BRANŻE
+    // ────────────────────────────────
+    industries: [
+      {
+        name: 'Magazyn i logistyka',
+        description: 'Terminale z klawiaturą fizyczną i baterią hot-swap do pracy 24/7. Skanery 2D do WMS. Technologia Duo Near & Far — skanowanie z bliska i z daleka bez zmiany trybu.',
+        products: '[N7 Cachalot Pro II](/produkt/newland-n7-cachalot-pro-ii), [MT93 Megattera](/produkt/newland-mt93-megattera), [HR23 Dorada](/produkt/newland-hr23-dorada)',
+      },
+      {
+        name: 'Retail i POS',
+        description: 'Skanery do kas fiskalnych z gwarancją 5 lat. Czytniki od 181 zł — najniższy koszt wdrożenia w branży. Odczyt kodów z ekranów smartfonów (kupony, e-bilety).',
+        products: '[HR11 Aringa](/produkt/newland-hr11-aringa), [HR23 Dorada](/produkt/newland-hr23-dorada), [HR33 Marlin](/produkt/newland-hr33-marlin)',
+      },
+      {
+        name: 'Produkcja',
+        description: 'Skanery przemysłowe DPM do odczytu kodów grawerowanych, wtłaczanych i drukowanych bezpośrednio na metalowych i plastikowych częściach. IP65, upadki z 2 m.',
+        products: '[NVH300 Angler DP](/produkt/newland-nvh300), [HR33 Marlin](/produkt/newland-hr33-marlin)',
+      },
+      {
+        name: 'Ochrona zdrowia',
+        description: 'Skanery z powłoką nSHIELD — antybakteryjna obudowa do dezynfekcji. Odczyt kodów GS1 DataMatrix na lekach (FMD/KOWAL). Gwarancja 5 lat, certyfikat GS1 Ready.',
+        products: '[HR23 Dorada](/produkt/newland-hr23-dorada), [HR33 Marlin](/produkt/newland-hr33-marlin)',
+      },
+      {
+        name: 'Transport i serwis terenowy',
+        description: 'Terminale z 4G LTE i 5G do pracy poza zasięgiem Wi-Fi. GPS, bateria 5000–6000 mAh, obudowa IP65–IP67. Kompletny zestaw w pudełku — bez dodatkowych zakupów.',
+        products: '[MT93 Megattera](/produkt/newland-mt93-megattera), [MT95 Kambur Pro II](/produkt/newland-mt95-kambur-pro-ii)',
+      },
+    ],
+
+    // ────────────────────────────────
+    // TIMELINE
+    // ────────────────────────────────
+    timeline: [
+      { year: '1994', event: 'Założenie Newland Technology Group w Fuzhou, prowincja Fujian, Chiny. Początkowo firma koncentruje się na terminalach POS i systemach płatniczych.' },
+      { year: '1999', event: 'Newland wprowadza pierwszy własny czytnik kodów kreskowych. Początek dywizji AIDC (Automatic Identification and Data Capture), która stanie się globalnym graczem.' },
+      { year: '2003', event: 'Premiera pierwszego autorskiego chipu dekodującego UIMG (Ultra Intelligent Mega-pixel Imaging). Newland staje się jednym z kilku producentów na świecie z własną technologią dekodowania — obok Zebra i Honeywell.' },
+      { year: '2010', event: 'IPO na giełdzie w Shenzhen (ticker: 000997). Przychody: ok. 200 mln USD. Ponad 3 000 pracowników. Ekspansja na rynki europejskie i azjatyckie.' },
+      { year: '2013', event: 'Newland zostaje nr 1 na świecie w segmencie skanerów POS i terminali płatniczych pod względem wolumenu sprzedaży. Ponad 10 milionów urządzeń rocznie.' },
+      { year: '2017', event: 'Premiera UIMG 5. generacji z prędkością dekodowania >60 fps. Portfel patentów przekracza 100. Wejście w segment terminali mobilnych enterprise (seria MT90 Orca).' },
+      { year: '2020', event: 'Przejęcie Chiyu Technology (kontrola dostępu i IoT). Przychody grupy: ok. 600 mln USD. Ponad 5 000 pracowników w 8 biurach na świecie.' },
+      { year: '2023', event: 'Otwarcie biura europejskiego Newland EMEA w Warszawie (lipiec 2023). Dystrybucja AIDC przez Ingram Micro EMEA. Newland buduje obecność na rynku polskim.' },
+      { year: '2024', event: 'UIMG 6. generacji (>120 fps). Premiera terminali MT93 Megattera i MT95 Kambur Pro II z 5G. Szacowane przychody grupy: ok. 800 mln USD. Pozycja #4 AIDC globalnie (za Zebra, Honeywell, Datalogic).' },
+    ],
+
+    // ────────────────────────────────
+    // O FIRMIE
+    // ────────────────────────────────
+    aboutParagraphs: [
+      'Newland Technology Group to chiński producent urządzeń AIDC i systemów POS z siedzibą w Fuzhou (prowincja Fujian). Firma działa od 1994 roku, zatrudnia ponad 5 500 pracowników i jest notowana na giełdzie w Shenzhen (ticker: 000997). Newland jest czwartym co do wielkości producentem urządzeń AIDC na świecie — za Zebrą, Honeywell i Datalogic — oraz numerem jeden w segmencie skanerów POS i terminali płatniczych pod względem wolumenu sprzedaży.',
+      'Kluczową przewagą technologiczną Newland jest własny chip dekodujący UIMG (Ultra Intelligent Mega-pixel Imaging), rozwijany od 2003 roku. Szósta generacja (2024) dekoduje kody 1D i 2D z prędkością ponad 120 fps — porównywalną z topowymi silnikami Zebra SE55 i Honeywell N7. Newland posiada ponad 120 patentów z zakresu imaging i dekodowania. Dywizja AIDC obejmuje skanery ręczne (serie HR, NVH), terminale mobilne (serie MT, N7) i akcesoria.',
+      'Od lipca 2023 roku Newland EMEA ma biuro w Warszawie — jedyne w tej części Europy. Dystrybucja odbywa się przez [Ingram Micro EMEA](https://www.ingrammicro.com) — jednego z największych dystrybutorów IT w Europie. TAKMA oferuje pełną gamę skanerów i terminali Newland z cenami netto aktualizowanymi codziennie, doradztwo przy wyborze modelu, konfigurację EasySet i serwis pogwarancyjny.',
+    ],
+
+    // ────────────────────────────────
+    // PARTNERSTWO
+    // ────────────────────────────────
+    partnership: [
+      'Newland AIDC dystrybuuje swoje produkty w Europie przez sieć partnerów i hurtownie IT. Głównym dystrybutorem na rynek EMEA jest [Ingram Micro](https://www.ingrammicro.com) — największa hurtownia IT na świecie. TAKMA jako autoryzowany reseller pobiera ceny hurtowe i utrzymuje minimalne marże — klient dostaje cenę zbliżoną do dystrybutorskiej.',
+      'Biuro Newland EMEA w Warszawie (od lipca 2023) oznacza lokalne wsparcie techniczne w języku polskim, szybszy dostęp do nowości produktowych i możliwość organizacji demo. TAKMA współpracuje bezpośrednio z zespołem Newland EMEA — pomagamy w doborze modelu, konfiguracji EasySet i organizacji serwisu.',
+    ],
+
+    // ────────────────────────────────
+    // SERWIS
+    // ────────────────────────────────
+    service: [
+      'Serwis skanerów Newland objęty jest 5-letnią gwarancją producenta (60 miesięcy) — najdłuższą w branży skanerów ręcznych. Terminale mają standardową gwarancję 24 miesiące z opcją przedłużenia do 3 lub 5 lat (Comprehensive Service). Naprawy gwarancyjne realizowane są przez dystrybutora w Europie. Czas naprawy: 5–10 dni roboczych.',
+      'TAKMA oferuje serwis pogwarancyjny urządzeń Newland we Wrocławiu — diagnostyka, wymiana ekranów, baterii i modułów skanujących. Dla porównania: serwis drukarek i terminali Zebra realizujemy we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl) — autoryzowanym centrum serwisowym z naprawami na poziomie komponentów w 3–5 dni.',
+    ],
+
+    // ────────────────────────────────
+    // PORÓWNANIE
+    // ────────────────────────────────
+    comparisonIntro: 'Newland, Zebra i Honeywell to trzy z czterech największych marek urządzeń AIDC dostępnych w Polsce. Newland wyróżnia się najniższymi cenami, własnym chipem dekodującym i 5-letnią gwarancją na skanery. Zebra i Honeywell oferują szerszy ekosystem i dłuższe wsparcie Android.',
+    comparison: [
+      { aspect: 'Skanery kodów', newland: 'HR, NVH — własny chip UIMG, gwarancja 5 lat.', zebra: 'DS, LI — prędkość, zasięg do 24 m.', honeywell: 'Voyager, Xenon, Granit — modularność.', datalogic: '' },
+      { aspect: 'Terminale mobilne', newland: 'MT, N7 — najniższa cena enterprise.', zebra: 'TC, MC — najszersza gama, Mobility DNA.', honeywell: 'CT, CK — Mobility Edge, FlexRange XLR.', datalogic: '' },
+      { aspect: 'Drukarki etykiet', newland: 'Brak w ofercie.', zebra: 'Lider rynku — ZD, ZT, ZQ.', honeywell: 'PC, PD, PM, PX. Emulacja ZPL.', datalogic: '' },
+      { aspect: 'Własny chip skanujący', newland: 'UIMG 6. gen (>120 fps, 120+ patentów).', zebra: 'SE (np. SE4710, SE55, SE58 ER).', honeywell: 'N-series (N7, N6700).', datalogic: '' },
+      { aspect: 'Ekosystem software', newland: 'Ndevor MDM (bezpłatny), EasySet.', zebra: '30+ narzędzi Mobility DNA / Print DNA.', honeywell: 'Mobility Edge, Sentinel, Vocollect.', datalogic: '' },
+      { aspect: 'Wsparcie Android', newland: 'Min. 3 lata (AER).', zebra: 'LifeGuard — do A19, 8–10 lat.', honeywell: 'Sentinel — 5–7 lat.', datalogic: '' },
+      { aspect: 'Gwarancja skanerów', newland: '5 lat (60 miesięcy) — najdłuższa.', zebra: '3 lata (36 miesięcy).', honeywell: '5 lat (Voyager/Xenon).', datalogic: '' },
+      { aspect: 'Pozycja cenowa', newland: 'Budget / mid-range.', zebra: 'Premium.', honeywell: 'Premium.', datalogic: '' },
+    ],
+
+    // ────────────────────────────────
+    // DLACZEGO TAKMA
+    // ────────────────────────────────
+    whyBuyItems: [
+      {
+        title: 'Najniższe ceny enterprise',
+        text: 'Skanery od 181 zł, terminale od 2 295 zł — ceny netto z dystrybucji Ingram Micro. Minimalna marża, aktualne stany magazynowe.',
+      },
+      {
+        title: '5 lat gwarancji na skanery',
+        text: 'Najdłuższa gwarancja w branży skanerów ręcznych — 60 miesięcy od producenta w standardzie, bez dopłat.',
+      },
+      {
+        title: 'Doradztwo i porównanie z Zebrą',
+        text: 'Mamy w ofercie Zebrę, Honeywell i Newland. Porównujemy modele, liczymy TCO — doradzamy obiektywnie, nie jedną markę.',
+      },
+      {
+        title: 'Serwis i wsparcie w Polsce',
+        text: 'Serwis pogwarancyjny we Wrocławiu. Konfiguracja EasySet, staging flotowy. Współpraca z biurem Newland EMEA w Warszawie.',
+      },
+    ],
+
+    // ────────────────────────────────
+    // FAQ (15 pytań)
+    // ────────────────────────────────
+    faq: [
+      {
+        question: 'Gdzie kupić urządzenia Newland w Polsce?',
+        answer: 'TAKMA oferuje pełną gamę skanerów i terminali Newland AIDC: [skanery kodów](/skanery-kodow-kreskowych-newland) od 181 zł netto i [terminale mobilne](/terminale-newland) od 2 295 zł netto. Produkty z dystrybucji Ingram Micro — ceny netto aktualizowane codziennie. Wysyłka z magazynu PL (24h) lub EU (2–3 dni). Siedziba we Wrocławiu, 25 lat na rynku AutoID.',
+      },
+      {
+        question: 'Ile kosztuje najtańsze urządzenie Newland?',
+        answer: 'Najtańszy skaner: [HR11 Aringa](/produkt/newland-hr11-aringa) od 181 zł netto (1D CCD). Najtańszy skaner 2D: [HR23 Dorada](/produkt/newland-hr23-dorada) od 271 zł netto. Najtańszy terminal: [MT93 Megattera](/produkt/newland-mt93-megattera) od 2 295 zł netto. Ceny netto z dystrybucji, aktualizowane codziennie.',
+      },
+      {
+        question: 'Czym różnią się skanery HR11, HR23, HR33 i NVH300?',
+        answer: '[HR11 Aringa](/produkt/newland-hr11-aringa) (od 181 zł) — budżetowy 1D CCD, retail, apteki. [HR23 Dorada](/produkt/newland-hr23-dorada) (od 271 zł) — uniwersalny 2D, najlepszy stosunek ceny do jakości. [HR33 Marlin](/produkt/newland-hr33-marlin) (od 416 zł) — megapikselowy 2D z celownikiem laserowym i OCR, do logistyki i produkcji. [NVH300](/produkt/newland-nvh300) (od 1 008 zł) — przemysłowy DPM do kodów grawerowanych i bezpośrednio oznakowanych. Wszystkie z gwarancją 5 lat.',
+      },
+      {
+        question: 'Co to jest technologia UIMG i dlaczego ma znaczenie?',
+        answer: 'UIMG (Ultra Intelligent Mega-pixel Imaging) to autorski chip dekodujący kody kreskowe, projektowany i produkowany przez Newland od 2003 roku. Szósta generacja (2024) dekoduje z prędkością >120 fps, rozpoznaje uszkodzone i brudne kody. Ponad 120 patentów. Na świecie tylko kilku producentów ma własne chipy skanujące — Newland, Zebra (silniki SE) i Honeywell (silniki N-series). Własna technologia = niższe koszty produkcji = niższe ceny dla klienta.',
+      },
+      {
+        question: 'Czy skanery Newland mają gwarancję 5 lat?',
+        answer: 'Tak — wszystkie skanery ręczne Newland (HR11, HR23, HR33, HR15, NVH300) mają gwarancję producenta 60 miesięcy (5 lat) w standardzie. To najdłuższa gwarancja w branży skanerów ręcznych. Dla porównania: Zebra DS2208 — 36 miesięcy, Honeywell Voyager — 60 miesięcy, Datalogic QuickScan — 36 miesięcy.',
+      },
+      {
+        question: 'Co to jest Ndevor MDM i ile kosztuje?',
+        answer: 'Ndevor to bezpłatna platforma MDM (Mobile Device Management) opracowana przez Newland. Funkcje: rejestracja urządzeń przez QR, masowa instalacja aplikacji, śledzenie GPS, zdalne czyszczenie danych, monitoring baterii. Ndevor zarządza wyłącznie urządzeniami Newland — dla flot mieszanych (Zebra + Newland) rekomendujemy SOTI MobiControl lub Microsoft Intune. Eliminuje koszt licencji MDM — ok. 50 zł/urządzenie/miesiąc.',
+      },
+      {
+        question: 'Jaki terminal Newland do magazynu?',
+        answer: '[MT93 Megattera](/produkt/newland-mt93-megattera) (od 2 295 zł) — najlepszy stosunek ceny do jakości, 4G LTE, Wi-Fi 5, 5000 mAh, IP65. Do standardowego magazynu z WMS. [N7 Cachalot Pro II](/produkt/newland-n7-cachalot-pro-ii) (od 3 346 zł) — klawiatura fizyczna, bateria hot-swap, Duo Near & Far. Gdy operatorzy często wpisują dane ręcznie. [MT95 Kambur Pro II](/produkt/newland-mt95-kambur-pro-ii) (od 3 546 zł) — flagowy z 5G i IP67. Do dużych operacji z infrastrukturą 5G.',
+      },
+      {
+        question: 'Newland vs Zebra — co wybrać?',
+        answer: 'Newland wygrywa ceną (MT93 od 2 295 zł vs [TC22](/produkt/zebra-tc22) od 2 417 zł), gwarancją skanerów (5 vs 3 lata) i bezpłatnym MDM. Zebra wygrywa ekosystemem (Mobility DNA — 30+ narzędzi), wsparciem Android (LifeGuard do 10 lat vs 3 lata), serwisem w Polsce ([serwis-zebry.pl](https://www.serwis-zebry.pl)) i szerokością oferty (drukarki, tablety, RFID). Newland = floty do 20 terminali z cyklem 3–4 lata. Zebra = wdrożenia 5+ lat z rozbudowanym IT. TAKMA ma obie marki — porównujemy obiektywnie.',
+      },
+      {
+        question: 'Newland vs Honeywell — porównanie',
+        answer: 'Newland wygrywa ceną (HR23 od 271 zł vs [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) od 358 zł) i wbudowanym chipem UIMG. Honeywell wygrywa ekosystemem (Mobility Edge, Sentinel, Vocollect), długością wsparcia Android (5–7 lat vs 3 lata) i zasięgiem skanera FlexRange XLR (do 24 m). Dla budżetowych wdrożeń POS/retail — Newland. Dla dużych magazynów i voice picking — Honeywell.',
+      },
+      {
+        question: 'Czy skanery Newland działają z systemami POS i WMS?',
+        answer: 'Tak — skanery Newland łączą się przez USB (emulacja klawiatury, plug-and-play) lub Bluetooth. Kompatybilne z każdym systemem POS, WMS i ERP: Comarch WMS, SAP, Oracle, BaseLinker, Shoper, PrestaShop, Subiekt GT. Nie wymagają instalacji sterowników. Terminale Newland z Androidem GMS obsługują Google Play i wszystkie popularne aplikacje enterprise.',
+      },
+      {
+        question: 'Czy Newland ma biuro w Polsce?',
+        answer: 'Tak — od lipca 2023 roku Newland EMEA ma biuro w Warszawie. Jest to jedyne biuro Newland AIDC w tej części Europy. Zapewnia lokalne wsparcie techniczne, pomoc w doborze modelu i organizację demonstracji urządzeń. TAKMA współpracuje bezpośrednio z zespołem Newland EMEA.',
+      },
+      {
+        question: 'Czy skanery Newland czytają kody z ekranów smartfonów?',
+        answer: 'Tak — wszystkie skanery 2D Newland (HR23, HR33, NVH300) i nawet budżetowy 1D [HR11 Aringa](/produkt/newland-hr11-aringa) czytają kody z ekranów smartfonów, tabletów i monitorów. Dotyczy to kuponów mobilnych, e-biletów, e-recept, kodów z aplikacji lojalnościowych i płatności mobilnych.',
+      },
+      {
+        question: 'Co to jest Duo Near & Far i jakie urządzenia to mają?',
+        answer: 'Duo Near & Far to technologia Newland łącząca dwa silniki skanowania 2D w jednym module — bliski zasięg (etykiety) i daleki zasięg (kody na regałach). Przełączanie automatyczne, bez interwencji operatora. Dostępna w terminalach [N7 Cachalot Pro II](/produkt/newland-n7-cachalot-pro-ii) (warianty E). Odpowiedź Newland na Honeywell FlexRange i Zebra SE58 Extended Range.',
+      },
+      {
+        question: 'Czy TAKMA serwisuje urządzenia Newland?',
+        answer: 'Tak — TAKMA oferuje serwis pogwarancyjny urządzeń Newland we Wrocławiu: diagnostyka, wymiana ekranów, baterii i modułów skanujących. Skanery objęte 5-letnią gwarancją producenta. Terminale — 24 miesiące z opcją przedłużenia do 5 lat. Dla porównania: urządzenia Zebra serwisujemy we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl) — autoryzowane centrum serwisowe z naprawami w 3–5 dni.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Newland?',
+        answer: '[Zebra Technologies](/zebra) — lider rynku, najszerszy ekosystem, najdłuższe wsparcie Android. Skanery od 181 zł ([LI2208](/produkt/zebra-li2208)), terminale od 2 417 zł ([TC22](/produkt/zebra-tc22)). [Honeywell](/honeywell) — Mobility Edge, FlexRange XLR, Vocollect voice picking. Skanery od 358 zł. [Datalogic](/terminale-mobilne) — włoska jakość, niższe ceny. TAKMA ma w ofercie wszystkie marki — porównujemy i doradzamy obiektywnie.',
+      },
+    ],
+
+    guideLinks: [
+      { title: 'Jak wybrać terminal mobilny — poradnik kupującego', href: '/poradnik/jak-wybrac-terminal-mobilny' },
+      { title: 'Top 10 terminali mobilnych 2026 — ranking z cenami', href: '/poradnik/top-10-terminali-mobilnych-2026' },
+      { title: 'Zebra vs Honeywell — porównanie terminali mobilnych', href: '/poradnik/zebra-vs-honeywell-terminale-mobilne' },
+      { title: 'Jak wybrać drukarkę etykiet — poradnik kupującego', href: '/poradnik/jak-wybrac-drukarke-etykiet' },
     ],
   },
 }
