@@ -120,9 +120,16 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
 
         {/* H1 + hero */}
         <div className="mb-10">
-          <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{brandName}</h1>
+          <div className="flex items-center gap-3 mb-4">
+            <h1 className="text-3xl lg:text-4xl font-bold text-gray-900">{brandName}</h1>
+            <div className="h-8 w-1 rounded-full" style={{ backgroundColor: accent.color }} />
+          </div>
           <p className="hero-text text-gray-600 leading-relaxed">{data.heroText}</p>
-          <p className="text-gray-400 text-sm mt-3">{allProducts.length} produktów w ofercie</p>
+          <p className="text-sm mt-3">
+            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium" style={{ backgroundColor: accent.light, color: accent.text }}>
+              {allProducts.length} produktów w ofercie
+            </span>
+          </p>
         </div>
 
         {/* Category tiles */}
