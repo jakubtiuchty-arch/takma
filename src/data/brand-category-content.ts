@@ -1545,6 +1545,232 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       },
     ],
   },
+
+  'terminale-datalogic': {
+    definition: {
+      heading: 'Terminale mobilne Datalogic — włoska precyzja AutoID od 1972 roku',
+      content:
+        'Datalogic S.p.A. to włoski producent urządzeń automatycznej identyfikacji z siedzibą w Bolonii (Lippo di Calderara), założony w 1972 roku przez Romana Gardellę — jeden z najstarszych producentów AIDC na świecie, notowany na giełdzie STAR w Mediolanie (DAL.MI). Firma produkuje terminale mobilne, skanery kodów kreskowych, sensory i systemy wizyjne dla logistyki, retail, produkcji i healthcare. Portfolio terminali mobilnych Datalogic obejmuje dwie serie: seria Memor (dotykowe smartfony enterprise — [Memor 12](/produkt/datalogic-memor-12), [Memor 17](/produkt/datalogic-memor-17), [Memor 30](/produkt/datalogic-memor-30), [Memor 35](/produkt/datalogic-memor-35)) oraz seria Skorpio (rugged z klawiaturą fizyczną — [Skorpio X5](/produkt/datalogic-skorpio-x5)). Kluczowe technologie wyróżniające Datalogic na rynku: **SafeSwap** — wymiana baterii hot-swap bez wyłączania terminala i utraty sesji aplikacji (wbudowana bateria backup podtrzymuje zasilanie ~90 sekund). **Green Spot** — wizualna konfirmacja odczytu kodu zielonym punktem bezpośrednio na etykiecie, unikalna technologia Datalogic redukująca błędy kompletacji o 22%. **Halogen DE2121** — autorski silnik skanujący z algorytmem DeepSight do odczytu uszkodzonych, zabrudzonych i słabo wydrukowanych kodów. Wszystkie terminale Datalogic pracują pod Androidem z certyfikatem Google Mobile Services (GMS) i Android Enterprise Recommended, zapewniając kompatybilność z enterprise MDM i aplikacjami WMS/ERP. Datalogic oferuje też bezpłatny SDK (Datalogic SDK) do integracji skanera z aplikacjami Android, oraz oprogramowanie Wavelink Velocity do emulacji terminali TE (Telnet). Oferta cenowa: od 2 687 zł netto ([Memor 12](/produkt/datalogic-memor-12)) do 6 586 zł ([Skorpio X5](/produkt/datalogic-skorpio-x5) w wersji XLR) — pozycjonowana między budżetowym [Newland](/terminale-newland) a premium [Zebrą](/terminale-mobilne-zebra) i [Honeywell](/terminale-honeywell).',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać terminal mobilny Datalogic? 6 kryteriów',
+      items: [
+        'Dotykowy czy z klawiaturą — seria Memor (dotykowa): [Memor 12](/produkt/datalogic-memor-12) (6", od 2 687 zł), [Memor 17](/produkt/datalogic-memor-17) (6", od 2 991 zł), [Memor 30](/produkt/datalogic-memor-30) (6", od 4 869 zł), [Memor 35](/produkt/datalogic-memor-35) (6", od 5 775 zł) — lekkie (270–275 g), intuicyjne, szybki onboarding. [Skorpio X5](/produkt/datalogic-skorpio-x5) (4,3", klawiatura 28/38/47 kl., od 4 858 zł, 488 g w wersji gun) — 3–5× szybsze wpisywanie danych w rękawiczkach, niezbędny przy intensywnym ręcznym wprowadzaniu numerów partii i lokalizacji w WMS.',
+        'Wytrzymałość i środowisko pracy — [Memor 12](/produkt/datalogic-memor-12) i [Memor 17](/produkt/datalogic-memor-17): IP67 (zanurzenie 1 m / 30 min), upadki 1,8 m — standardowy magazyn, retail. [Memor 30](/produkt/datalogic-memor-30) i [Memor 35](/produkt/datalogic-memor-35): IP68 (zanurzenie 1,5 m), upadki 1,8 m + 1 000 tumble — ciężki magazyn, outdoor, chłodnia. [Skorpio X5](/produkt/datalogic-skorpio-x5): IP65, upadki 1,8 m — produkcja, logistyka z klawiaturą. Chłodnia poniżej -20°C? Datalogic nie ma modelu Cold Storage — rozważ [Zebra MC9400](/produkt/zebra-mc9400) lub [Honeywell CK67](/produkt/honeywell-ck67) Cold Storage.',
+        'Łączność — Wi-Fi 6E: standard w Memor 12, 17, 30, 35 (wystarczający do pracy wewnątrz budynku). 5G/4G LTE: [Memor 17](/produkt/datalogic-memor-17) i [Memor 35](/produkt/datalogic-memor-35) — konieczne dla kurierów, serwisantów i logistyki terenowej. GPS/GLONASS: w modelach LTE/5G — śledzenie floty. NFC: wszystkie modele Memor — identyfikacja pracowników, logowanie, karta płatnicza. Bluetooth 5.1: parowanie z drukarką mobilną, skanerami ring.',
+        'Bateria i praca wielozmianowa — seria Memor: bateria 4 100 mAh z SafeSwap (wymiana bez wyłączania) — ~12 h pracy intensywnej. Dla pracy wielozmianowej: 2 baterie na urządzenie + ładowarka baterii wielostanowiskowa (4-slot). [Skorpio X5](/produkt/datalogic-skorpio-x5): bateria 3 060 mAh (~10 h) — planuj 2 baterie na zmianę. [Memor 30](/produkt/datalogic-memor-30) oferuje ładowanie bezprzewodowe Qi — wygodne na stanowisku biurkowym.',
+        'Zasięg skanowania — [Memor 12](/produkt/datalogic-memor-12) i [Memor 17](/produkt/datalogic-memor-17): skaner 2D do ~3 m (standardowy). [Memor 30](/produkt/datalogic-memor-30) i [Memor 35](/produkt/datalogic-memor-35): skaner Halogen DE2121 do 10 m — skanowanie kodów na wysokich regałach bez drabiny. [Skorpio X5](/produkt/datalogic-skorpio-x5) w wersji XLR: do 20+ m — porównywalny z [Zebra SE55](/terminale-mobilne-zebra) (12 m) i [Honeywell FlexRange XLR](/terminale-honeywell) (24 m). Green Spot w każdym modelu potwierdza wizualnie, który dokładnie kod został zeskanowany.',
+        'Budżet i TCO — [Memor 12](/produkt/datalogic-memor-12) (od 2 687 zł): best value entry-level z IP67 i SafeSwap. [Memor 17](/produkt/datalogic-memor-17) (od 2 991 zł): +5G za niewielką dopłatę. [Memor 30](/produkt/datalogic-memor-30) (od 4 869 zł): premium z IP68, Qi i skanerem 10 m. [Memor 35](/produkt/datalogic-memor-35) (od 5 775 zł): pełne wyposażenie z 5G. [Skorpio X5](/produkt/datalogic-skorpio-x5) (od 4 858 zł): klawiatura + gun. Akcesoria (baterie, doki, etui): 15–20% wartości terminala. Kontrakty EaseOfCare (rozszerzona gwarancja): 10–15% rocznie od ceny urządzenia.',
+      ],
+    },
+    expertAuthority:
+      'TAKMA jest dystrybutorem urządzeń AutoID z ponad 25-letnim doświadczeniem na polskim rynku, oferującym terminale mobilne Datalogic obok flagowej oferty Zebra Technologies, Honeywell i Newland. Nasze doradztwo opiera się na obiektywnym porównaniu czterech marek — pomagamy dobrać terminal dopasowany do budżetu, wymaganego cyklu życia, środowiska pracy i specyfiki wdrożenia, bez faworyzowania jednego producenta. Jako firma z własnym zapleczem serwisowym we Wrocławiu oferujemy serwis pogwarancyjny terminali Datalogic (diagnostyka, wymiana ekranów, baterii, reinstalacja systemu) oraz pełny serwis autoryzowany urządzeń Zebra przez [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-terminali-zebra). Każda rekomendacja na tej stronie opiera się na danych z realnych wdrożeń i porównań TCO, nie na materiałach marketingowych producenta.',
+    technicalDeepDive: `Pełna macierz terminali mobilnych Datalogic — od dotykowych smartfonów enterprise po rugged z klawiaturą — pozwala dobrać urządzenie dopasowane do środowiska pracy i budżetu. Zestawienie kluczowych parametrów i cen netto (marzec 2026):\n\n• Memor 12 (dotykowy entry-level): ekran 6" FHD+ IPS, Android 13 GMS, Qualcomm SD 6125, Wi-Fi 6E, Bluetooth 5.1, NFC, IP67, upadki 1,8 m / 1 000 tumble, bateria 4 100 mAh SafeSwap, skaner 2D Green Spot, 270 g, od 2 687 zł netto — optymalny do magazynu, retail, inwentaryzacji. Najlepszy stosunek cena/parametry w ofercie Datalogic.\n\n• Memor 17 (dotykowy z 5G): ekran 6" FHD+ IPS, Android 13 GMS, Qualcomm SD 6125, Wi-Fi 6E + 5G/4G LTE, Bluetooth 5.1, NFC, GPS/GLONASS, IP67, upadki 1,8 m / 1 000 tumble, bateria 4 100 mAh SafeSwap, skaner 2D Green Spot, 275 g, od 2 991 zł netto — jak Memor 12 ale z łącznością 5G i GPS do pracy w terenie.\n\n• Memor 30 (dotykowy premium): ekran 6" FHD+ IPS 1000 nit, Android 13 GMS, Qualcomm SD 6125, Wi-Fi 6E, Bluetooth 5.1, NFC, IP68 (1,5 m zanurzenia), upadki 1,8 m / 1 000 tumble, bateria 4 100 mAh SafeSwap, ładowanie Qi, skaner Halogen DE2121 do 10 m, Green Spot, 275 g, od 4 869 zł netto — premium do ciężkiego magazynu, outdoor, chłodni.\n\n• Memor 35 (dotykowy premium z 5G): ekran 6" FHD+ IPS 1000 nit, Android 13 GMS, Qualcomm SD 6125, Wi-Fi 6E + 5G/4G LTE, Bluetooth 5.1, NFC, GPS, IP68, upadki 1,8 m / 1 000 tumble, bateria 4 100 mAh SafeSwap, skaner Halogen DE2121 do 10 m, Green Spot, 280 g, od 5 775 zł netto — pełne wyposażenie do logistyki terenowej, serwisu polowego i transportu.\n\n• Skorpio X5 (rugged z klawiaturą): ekran 4,3" WVGA z Gorilla Glass 5 + klawiatura fizyczna 28/38/47 klawiszy, Android 11 GMS, Qualcomm SD 660, Wi-Fi 5, Bluetooth 5.0, NFC, IP65, upadki 1,8 m / 1 000 tumble, bateria 3 060 mAh (wymienna), skanery 1D/2D SR/2D XLR (do 20+ m), Green Spot, obudowa handheld (360 g) lub pistol grip (488 g), od 4 858 zł netto — jedyny model Datalogic z klawiaturą fizyczną, do intensywnej pracy WMS z ręcznym wpisywaniem danych.\n\nWszystkie terminale Datalogic obsługują kody 1D (EAN-13, Code 128, GS1-128) i 2D (QR, DataMatrix, PDF417, Aztec, GS1 Digital Link). Silnik Green Spot wyświetla zielony punkt konfirmacyjny bezpośrednio na zeskanowanej etykiecie — unikalny w branży.`,
+    tcoComparisons: [
+      {
+        title: 'TCO 3 lata — flota 10 terminali magazynowych (dotykowe)',
+        variants: [
+          {
+            label: '10× Datalogic Memor 12',
+            items: [
+              { name: 'Terminale (2 687 zł × 10)', cost: '26 870 zł' },
+              { name: 'Baterie zapasowe (10 szt.)', cost: '~3 000 zł' },
+              { name: 'Stacje dokujące (5 szt.)', cost: '~5 000 zł' },
+              { name: 'EaseOfCare 3 lata', cost: '~8 060 zł' },
+            ],
+            total: '~42 930 zł (4 293 zł/terminal)',
+          },
+          {
+            label: '10× Zebra TC22',
+            items: [
+              { name: 'Terminale (2 417 zł × 10)', cost: '24 170 zł' },
+              { name: 'Baterie zapasowe (10 szt.)', cost: '~2 800 zł' },
+              { name: 'Stacje dokujące (5 szt.)', cost: '~4 500 zł' },
+              { name: 'OneCare Essential 3 lata', cost: '~7 250 zł' },
+            ],
+            total: '~38 720 zł (3 872 zł/terminal)',
+          },
+        ],
+        conclusion: 'Zebra TC22 jest o ~10% tańsza w 3-letnim TCO dzięki niższej cenie urządzenia. Datalogic Memor 12 oferuje IP67 (vs IP68 TC22), Green Spot i SafeSwap w cenie — przewaga jakościowa skanowania.',
+      },
+      {
+        title: 'TCO 3 lata — terminal z klawiaturą do WMS',
+        variants: [
+          {
+            label: 'Datalogic Skorpio X5',
+            items: [
+              { name: 'Terminal Skorpio X5 (2D SR)', cost: '4 858 zł' },
+              { name: '2× bateria zapasowa', cost: '~400 zł' },
+              { name: 'Stacja dokująca 1-slot', cost: '~1 591 zł' },
+              { name: 'EaseOfCare 3 lata', cost: '~1 460 zł' },
+            ],
+            total: '~8 309 zł',
+          },
+          {
+            label: 'Zebra MC3400',
+            items: [
+              { name: 'Terminal MC3400 (SE4770)', cost: '3 590 zł' },
+              { name: '2× bateria zapasowa', cost: '~600 zł' },
+              { name: 'Stacja dokująca 1-slot', cost: '~1 200 zł' },
+              { name: 'OneCare Essential 3 lata', cost: '~1 077 zł' },
+            ],
+            total: '~6 467 zł',
+          },
+        ],
+        conclusion: 'Zebra MC3400 jest o ~22% tańsza w TCO z nowszym Androidem (14 vs 11) i dłuższym wsparciem (do A18). Skorpio X5 wyróżnia się Green Spot i większym ekranem 4,3" (vs 4" MC3400).',
+      },
+    ],
+    useCases: [
+      {
+        title: 'Magazyn WMS — przyjęcie, kompletacja, wydanie',
+        description:
+          'Terminal Datalogic [Memor 12](/produkt/datalogic-memor-12) (od 2 687 zł) do standardowych operacji magazynowych: skanowanie lokalizacji, produktu, potwierdzanie ilości, kompletacja zamówień. Wi-Fi 6E zapewnia stabilne połączenie w całym magazynie. IP67 chroni przed pyłem i wilgocią. SafeSwap umożliwia wymianę baterii bez przerywania pracy — kluczowe przy 2-zmianowej operacji. Green Spot potwierdza wizualnie każdy skan — błędy kompletacji spadają o 22%. Dla intensywnego wpisywania danych (numery partii, kody lokalizacji): [Skorpio X5](/produkt/datalogic-skorpio-x5) z klawiaturą 38/47 kl. (od 4 858 zł). Kompatybilne z WMS: SAP, Comarch, Oracle, Manhattan, Blue Yonder.',
+      },
+      {
+        title: 'Magazyn wysokiego składowania — daleki skan',
+        description:
+          'Terminal Datalogic [Memor 30](/produkt/datalogic-memor-30) (od 4 869 zł) z silnikiem Halogen DE2121 skanuje kody z odległości do 10 m — bez drabiny i bez wchodzenia na regały. IP68 (zanurzenie 1,5 m) i 1 000 tumble (obrotów w bębnie) — wytrzymałość na ciężkie warunki. Ładowanie bezprzewodowe Qi na stanowisku biurkowym. Dla jeszcze dalszego skanowania (20+ m): [Skorpio X5](/produkt/datalogic-skorpio-x5) w wersji XLR lub rozważ [Honeywell CK67](/produkt/honeywell-ck67) z FlexRange XLR do 24 m.',
+      },
+      {
+        title: 'Logistyka i transport — 5G + GPS',
+        description:
+          'Terminal Datalogic [Memor 35](/produkt/datalogic-memor-35) (od 5 775 zł) z 5G/4G LTE, GPS/GLONASS i IP68 do pracy kurierów, serwisantów i kierowców: skanowanie przesyłek, rejestracja Proof of Delivery (POD), śledzenie trasy GPS, weryfikacja stanu towaru. Ekran 6" FHD+ czytelny w słońcu (1 000 nit). Bateria 4 100 mAh SafeSwap na cały dzień trasy. Green Spot przy rozładunku — wizualna konfirmacja każdego zeskanowanego kodu bez spoglądania na ekran. Tańsza alternatywa bez 5G: [Memor 17](/produkt/datalogic-memor-17) (od 2 991 zł) z LTE.',
+      },
+      {
+        title: 'Retail — inwentaryzacja, weryfikacja cen, obsługa klienta',
+        description:
+          'Terminal Datalogic [Memor 12](/produkt/datalogic-memor-12) (od 2 687 zł) lub [Memor 17](/produkt/datalogic-memor-17) (od 2 991 zł z LTE) na sali sprzedaży: skanowanie kodu → weryfikacja ceny i stanu → lokalizacja w sklepie. Lekki (270 g), intuicyjny Android 13, ekran 6" czytelny w oświetleniu sklepowym. NFC do obsługi kart lojalnościowych i identyfikacji pracowników. Green Spot eliminuje błędy — sprzedawca widzi na etykiecie, który produkt zeskanował, bez patrzenia na ekran. SafeSwap: wymiana baterii w 10 s bez wyłączania terminala.',
+      },
+      {
+        title: 'Produkcja — traceability i kontrola jakości',
+        description:
+          'Terminal Datalogic [Skorpio X5](/produkt/datalogic-skorpio-x5) z klawiaturą 38/47 kl. (od 4 858 zł) do śledzenia partii produkcyjnych, rejestracji numerów serii i kontroli jakości na linii montażowej. Klawiatura fizyczna: 3–5× szybsze wpisywanie numerów partii i kodów wad niż klawiatura ekranowa. IP65 chroni przed zapyleniem i olejami na hali produkcyjnej. Green Spot na etykiecie komponentu potwierdza wizualnie odczyt — bez ryzyka pomyłki na linii o dużej szybkości. Silnik skanujący z algorytmem DeepSight odczytuje uszkodzone i trudne kody DPM.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego dystrybutorzy Datalogic nie powiedzą',
+      items: [
+        {
+          title: 'Green Spot — jedyna wizualna konfirmacja odczytu w branży',
+          text: 'Technologia Green Spot Datalogic wyświetla zielony punkt bezpośrednio na zeskanowanej etykiecie — operator widzi od razu, KTÓRY konkretny kod został odczytany, bez odwracania wzroku na ekran terminala. Żaden inny producent (Zebra, Honeywell, Newland) nie oferuje odpowiednika — wszyscy polegają na dźwięku bip i wibracji, które nie identyfikują konkretnej etykiety. Badania Datalogic wykazują redukcję błędów kompletacji o 22% dzięki Green Spot. W praktyce: przy 500 kompletacjach dziennie, 22% mniej błędów = ~110 mniej pomyłek = mniej zwrotów, reklamacji i kosztów korekt.',
+        },
+        {
+          title: 'SafeSwap — prawdziwy hot-swap vs marketingowy',
+          text: 'SafeSwap Datalogic zapewnia ~90 sekund podtrzymania zasilania przez wbudowaną baterię backup. To prawdziwy hot-swap — operator wyjmuje baterię, wkłada naładowaną, terminal działa bez przerwy. Porównanie: Zebra PowerPrecision+ — hot-swap we wszystkich TC/MC (również ~90 s). Honeywell — hot-swap w CK62/CK67 (identyczny mechanizm). Newland — hot-swap TYLKO w N7 Cachalot Pro II. Tańsze terminale chińskie (Urovo, Chainway) zazwyczaj nie mają hot-swap — wymiana baterii = restart = utrata sesji WMS = 30–60 s przestoju. Przy 3 wymianach/dzień na flotę 20 terminali: hot-swap oszczędza ~30 min/dzień vs restart.',
+        },
+        {
+          title: 'Europejski serwis centralny — szybciej niż z Azji',
+          text: 'Datalogic ma europejskie centrum serwisowe w Bolonii (Włochy) — czas naprawy gwarancyjnej: 10–15 dni roboczych door-to-door z Polski. Dla porównania: Newland (serwis w Chinach) — 15–25 dni. Zebra ma centrum serwisowe w Wieliczce (Polska) — 3–5 dni ([serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-terminali-zebra) — najszybszy w branży). Honeywell — centrum w Niemczech, 7–14 dni. Kontrakty EaseOfCare Datalogic (rozszerzona gwarancja + priorytetowy serwis) mogą skrócić czas do 7–10 dni.',
+        },
+        {
+          title: 'Android 11 w Skorpio X5 — kiedy to faktycznie problem?',
+          text: '[Skorpio X5](/produkt/datalogic-skorpio-x5) pracuje na Androidzie 11 — starszym niż Android 13 w seriach Memor i Android 14+ u konkurencji (Zebra, Honeywell). W praktyce: Android 11 nadal otrzymuje łatki bezpieczeństwa od Datalogic. Firmy z restrykcyjnymi politykami IT (PCI DSS, RODO, healthcare) mogą wymagać nowszego Androida — weryfikuj z działem compliance. Dla standardowego WMS/ERP: Android 11 jest w pełni funkcjonalny, obsługuje Google Play, enterprise MDM i wszystkie aplikacje magazynowe. Następca Skorpio X5 (prawdopodobnie Skorpio X6 z Androidem 14+) nie został jeszcze ogłoszony — Skorpio X5 to jedyna opcja z klawiaturą Datalogic.',
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Ile kosztuje terminal mobilny Datalogic w 2026 roku?',
+        answer:
+          'Terminale Datalogic w Polsce kosztują od 2 687 zł netto ([Memor 12](/produkt/datalogic-memor-12) — entry-level 6" Wi-Fi 6E, IP67) do 6 586 zł netto ([Skorpio X5](/produkt/datalogic-skorpio-x5) XLR). Seria Memor: 12 od 2 687 zł, 17 od 2 991 zł (z 5G), 30 od 4 869 zł (IP68 + Qi), 35 od 5 775 zł (5G + GPS). Skorpio X5 z klawiaturą od 4 858 zł. Ceny netto z hurtowni Ingram Micro, aktualizowane codziennie. Budżet na akcesoria (baterie, doki, etui): 15–20% wartości terminala.',
+      },
+      {
+        question: 'Jaki terminal Datalogic wybrać do magazynu z WMS?',
+        answer:
+          'Do standardowego magazynu: [Memor 12](/produkt/datalogic-memor-12) (od 2 687 zł) — Wi-Fi 6E, IP67, SafeSwap, Green Spot. Best value. Do magazynu z wysokimi regałami: [Memor 30](/produkt/datalogic-memor-30) (od 4 869 zł) — skaner Halogen do 10 m, IP68. Z klawiaturą fizyczną: [Skorpio X5](/produkt/datalogic-skorpio-x5) (od 4 858 zł) — 28/38/47 kl., pistoletowy uchwyt. Wszystkie kompatybilne z SAP, Comarch WMS, Oracle, Manhattan, Blue Yonder. Green Spot we wszystkich modelach redukuje błędy kompletacji o 22%.',
+      },
+      {
+        question: 'Czym różni się Datalogic Memor 12 od Memor 30?',
+        answer:
+          '[Memor 12](/produkt/datalogic-memor-12) (od 2 687 zł): IP67, skaner 2D do ~3 m, bateria 4 100 mAh SafeSwap, 270 g. [Memor 30](/produkt/datalogic-memor-30) (od 4 869 zł): IP68 (zanurzenie 1,5 m!), skaner Halogen DE2121 do 10 m, ładowanie Qi, bateria 4 100 mAh SafeSwap, 275 g. Kluczowe różnice: IP68 vs IP67, zasięg skanera 10 m vs 3 m, ładowanie bezprzewodowe Qi. Reguła: standardowy magazyn/retail → Memor 12. Ciężkie warunki, daleki skan, outdoor → Memor 30.',
+      },
+      {
+        question: 'Datalogic vs Zebra — który terminal mobilny wybrać?',
+        answer:
+          '[Zebra](/terminale-mobilne-zebra) wygrywa ekosystemem Mobility DNA (30+ narzędzi: DataWedge, StageNow, Device Tracker), najdłuższym wsparciem Android (LifeGuard do 10 lat) i siecią serwisową w PL ([serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-terminali-zebra)). Datalogic wygrywa Green Spot (wizualna konfirmacja odczytu), europejskim serwisem (Bolonia), lepszą jakością skanowania trudnych kodów (DeepSight). Cenowo: [Memor 12](/produkt/datalogic-memor-12) (2 687 zł) vs [Zebra TC22](/produkt/zebra-tc22) (2 417 zł) — zbliżone. Rekomendacja: duża flota 20+ na 5+ lat → Zebra. Priorytet jakość skanowania i europejski serwis → Datalogic.',
+      },
+      {
+        question: 'Datalogic vs Newland — porównanie terminali mobilnych',
+        answer:
+          '[Newland](/terminale-newland) jest tańszy: MT93 od 1 770 zł vs [Datalogic Memor 12](/produkt/datalogic-memor-12) od 2 687 zł. Ale Datalogic oferuje: IP67/IP68 (vs IP65 Newland), Green Spot (brak u Newland), SafeSwap (vs hot-swap tylko w N7), lepszy serwis europejski (Bolonia vs Chiny), dłuższe wsparcie Android (3–5 lat vs 3 lata Newland). Newland ma przewagę: bezpłatny MDM Ndevor (Datalogic nie ma bezpłatnego MDM), najniższą cenę na rynku (MT93 1 770 zł). Reguła: minimalny budżet → Newland. Lepsza jakość i wytrzymałość → Datalogic.',
+      },
+      {
+        question: 'Jak działa technologia Green Spot Datalogic?',
+        answer:
+          'Green Spot to autorska technologia Datalogic wyświetlająca zielony punkt bezpośrednio na zeskanowanej etykiecie — natychmiast po odczycie kodu. Operator widzi fizycznie na produkcie, który dokładnie kod został odczytany, bez odwracania wzroku na ekran terminala. Technologia wykorzystuje dodatkową diodę LED w skanerze. Efekt: redukcja błędów kompletacji o 22% vs sam sygnał dźwiękowy. Dostępna we wszystkich terminalach Datalogic (Memor 12, 17, 30, 35, Skorpio X5). Żaden konkurent (Zebra, Honeywell, Newland) nie oferuje odpowiednika.',
+      },
+      {
+        question: 'Co to jest SafeSwap i czy to samo co hot-swap?',
+        answer:
+          'SafeSwap to nazwa marketingowa Datalogic na technologię hot-swap baterii — wymiana baterii bez wyłączania terminala i utraty sesji aplikacji. Wbudowana bateria backup podtrzymuje zasilanie ~90 sekund. Mechanizm identyczny jak: Zebra PowerPrecision+ (hot-swap we wszystkich TC/MC), Honeywell hot-swap (CK62/CK67). Dostępne w: [Memor 12](/produkt/datalogic-memor-12), [Memor 17](/produkt/datalogic-memor-17), [Memor 30](/produkt/datalogic-memor-30), [Memor 35](/produkt/datalogic-memor-35). [Skorpio X5](/produkt/datalogic-skorpio-x5) ma wymienną baterię, ale bez backup — wyłączenie przy wymianie.',
+      },
+      {
+        question: 'Ile lat wsparcia Android oferuje Datalogic?',
+        answer:
+          'Datalogic zapewnia 3–5 lat aktualizacji bezpieczeństwa Android. Seria Memor (Android 13): ~3–4 lata wsparcia. Skorpio X5 (Android 11): wsparcie do ~2026. Dla porównania: [Zebra LifeGuard](/terminale-mobilne-zebra) — 5–10 lat, [Honeywell Mobility Edge](/terminale-honeywell) — 4–5 generacji Android, [Newland](/terminale-newland) — 3 lata. Firmom planującym cykl wymiany sprzętu co 3–4 lata wsparcie Datalogic jest wystarczające. Przy cyklu 5+ lat: rozważ [Zebrę](/terminale-mobilne-zebra) z LifeGuard.',
+      },
+      {
+        question: 'Czy terminale Datalogic działają z polskimi systemami WMS?',
+        answer:
+          'Tak — terminale Datalogic pracują pod Androidem z certyfikatem Google Mobile Services (GMS) i Android Enterprise Recommended. Kompatybilne z: Comarch WMS, SAP EWM, Oracle WMS, Microsoft Dynamics 365, Manhattan, Blue Yonder, Simple WMS, Qguar, Asseco WAPRO. Integracja: natywne aplikacje Android (Google Play), przeglądarka enterprise, emulator TE Wavelink Velocity (Ivanti). Datalogic SDK umożliwia integrację skanera z aplikacjami custom (Java/Kotlin). Wszystkie modele obsługują kody 1D/2D, GS1 DataBar i GS1 Digital Link.',
+      },
+      {
+        question: 'Czy TAKMA oferuje serwis terminali Datalogic w Polsce?',
+        answer:
+          'Tak — TAKMA oferuje serwis pogwarancyjny terminali Datalogic we Wrocławiu. Zakres: diagnostyka, wymiana ekranów, baterii, portów USB/ładowania, reinstalacja systemu. Standardowa gwarancja producenta: 1 rok (rozszerzalna kontraktami EaseOfCare do 3–5 lat). Datalogic ma europejskie centrum serwisowe w Bolonii (Włochy) — serwis gwarancyjny door-to-door 10–15 dni. Dla terminali Zebra: szybszy serwis autoryzowany przez [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-terminali-zebra) — 3–5 dni, naprawa na poziomie komponentów.',
+      },
+      {
+        question: 'Jakie są alternatywy dla terminali Datalogic?',
+        answer:
+          'Główne alternatywy: [Zebra](/terminale-mobilne-zebra) (TC22 od 2 417 zł, MC3400 od 3 590 zł — lider rynku, Mobility DNA, LifeGuard do 10 lat). [Honeywell](/terminale-honeywell) (CT32 od 3 389 zł, CK67 od 7 765 zł — FlexRange XLR 24 m, Mobility Edge). [Newland](/terminale-newland) (MT93 od 1 770 zł — budżetowy, Ndevor MDM). Datalogic wyróżnia się Green Spot, SafeSwap, włoską jakością i europejskim serwisem. W TAKMA oferujemy wszystkie 4 marki — porównujemy TCO i dobieramy optymalny model.',
+      },
+    ],
+    comparisons: [
+      {
+        title: 'Datalogic Memor 12 vs Zebra TC22 — porównanie entry-level',
+        content:
+          '[Memor 12](/produkt/datalogic-memor-12) (od 2 687 zł): 6" FHD+, Android 13, Wi-Fi 6E, IP67, upadki 1,8 m, 270 g, SafeSwap, Green Spot, bateria 4 100 mAh, wsparcie ~3–4 lata. [Zebra TC22](/produkt/zebra-tc22) (od 2 417 zł): 6" FHD+, Android do v16, Wi-Fi 6E, IP68, upadki 1,5 m, 236 g, Mobility DNA (DataWedge, StageNow), bateria 3 800/5 200 mAh, wsparcie ~6 lat. TC22 jest tańsza (o 270 zł), lżejsza (o 34 g), z lepszym IP68 i dłuższym wsparciem. Memor 12 ma Green Spot, SafeSwap, lepszą wytrzymałość na upadki (1,8 vs 1,5 m) i IP67. Rekomendacja: ekosystem Zebra i długi cykl → TC22. Jakość skanowania i europejski serwis → Memor 12.',
+      },
+      {
+        title: 'Datalogic Memor 30 vs Zebra TC27 — terminale premium dotykowe',
+        content:
+          '[Memor 30](/produkt/datalogic-memor-30) (od 4 869 zł): 6" FHD+, Android 13, Wi-Fi 6E, IP68, upadki 1,8 m, skaner Halogen do 10 m, SafeSwap, Green Spot, Qi, 275 g. [Zebra TC27](/produkt/zebra-tc27) (od 3 020 zł): 6" FHD+, Android do v16, Wi-Fi 6E + 5G, IP68, upadki 1,5 m, SE55 skaner do 12 m, Mobility DNA, bateria 3 800/5 200 mAh, 236 g. TC27 jest znacznie tańsza (o 1 849 zł!), lżejsza, z 5G w standardzie i dłuższym wsparciem. Memor 30 ma Green Spot, Qi charging i SafeSwap. Cenowo TC27 dominuje — Memor 30 warto rozważyć tylko gdy Green Spot i europejski serwis są kluczowe.',
+      },
+      {
+        title: 'Datalogic Skorpio X5 vs Zebra MC3400 vs Honeywell CK67 — terminale z klawiaturą',
+        content:
+          '[Skorpio X5](/produkt/datalogic-skorpio-x5) (od 4 858 zł): 4,3" WVGA, klawiatura 28/38/47 kl., Android 11, Wi-Fi 5, IP65, upadki 1,8 m, 488 g gun, 3 060 mAh, Green Spot, wsparcie ~3 lata. [Zebra MC3400](/produkt/zebra-mc3400) (od 3 590 zł): 4" WVGA, klawiatura 29/38/47 kl., Android 14, Wi-Fi 6E, IP65/IP67, upadki 2,4 m, 650 g gun, 7 000 mAh hot-swap, Mobility DNA, wsparcie do A18 (~8 lat). [Honeywell CK67](/produkt/honeywell-ck67) (od 7 765 zł): 4" WVGA, klawiatura 30–53 kl., Android 14, Wi-Fi 6E, IP65/IP68, upadki 2,4 m, 516 g, 7 000 mAh hot-swap, FlexRange XLR do 24 m, wsparcie do A18. Ranking TCO: MC3400 (najtańsza, najdłuższe wsparcie) > Skorpio X5 (środek, Green Spot) > CK67 (najdroższa, ale FlexRange XLR 24 m). MC3400 — najlepsza wartość. CK67 — najdalszy skan. Skorpio X5 — kompromis z Green Spot.',
+      },
+      {
+        title: 'Datalogic vs Newland — terminale mobilne w średnim segmencie',
+        content:
+          '[Datalogic Memor 12](/produkt/datalogic-memor-12) (od 2 687 zł) vs Newland MT93 Megattera (od ~1 770 zł): Newland o 917 zł tańszy, ale z niższym IP65 (vs IP67 Datalogic), bez Green Spot, bez SafeSwap. Newland oferuje bezpłatny MDM Ndevor. Datalogic [Skorpio X5](/produkt/datalogic-skorpio-x5) (od 4 858 zł) vs [Newland N7 Cachalot Pro II](/terminale-newland) (od ~3 000 zł): Newland znacznie tańszy, z baterią hot-swap 5 100 mAh (vs 3 060 mAh Skorpio). Skorpio ma Green Spot, większy ekran 4,3", lepsze skanowanie XLR. Reguła: budżet jest priorytetem → Newland. Jakość skanowania i wytrzymałość IP67/IP68 → Datalogic.',
+      },
+    ],
+    howToSteps: [
+      {
+        name: 'Analiza potrzeb i środowiska pracy',
+        text: 'Zdefiniuj: Gdzie pracuje terminal? (magazyn, sklep, teren, produkcja). Ile skanowań dziennie? (<300 → Memor 12, 300–500 → Memor 30, >500 z klawiaturą → Skorpio X5). Czy potrzebna łączność 5G/LTE? (→ Memor 17 lub Memor 35). Czy daleki skan z regałów? (→ Memor 30 do 10 m, Skorpio X5 XLR do 20+ m). Budżet na terminal? (<3 000 zł → Memor 12, 3 000–5 000 → Memor 30/Skorpio X5, >5 500 → Memor 35). Skonsultuj się z doradcą TAKMA — porównamy Datalogic z Zebrą i Honeywell dla Twojego scenariusza.',
+      },
+      {
+        name: 'Wybór modelu i zamówienie',
+        text: 'Entry-level: [Memor 12](/produkt/datalogic-memor-12) (od 2 687 zł) — magazyn, retail, inwentaryzacja. Z 5G: [Memor 17](/produkt/datalogic-memor-17) (od 2 991 zł) — logistyka terenowa. Premium: [Memor 30](/produkt/datalogic-memor-30) (od 4 869 zł) — ciężki magazyn, IP68, skan 10 m. Premium 5G: [Memor 35](/produkt/datalogic-memor-35) (od 5 775 zł) — transport, serwis polowy. Z klawiaturą: [Skorpio X5](/produkt/datalogic-skorpio-x5) (od 4 858 zł) — WMS z ręcznym wpisywaniem. Zamów akcesoria: baterie SafeSwap, stacje dokujące, etui (15–20% budżetu).',
+      },
+      {
+        name: 'Konfiguracja i wdrożenie MDM',
+        text: 'Datalogic nie oferuje bezpłatnego MDM (jak Newland Ndevor). Do zarządzania flotą terminali Datalogic użyj: SOTI MobiControl (~50 zł/urządzenie/miesiąc), Microsoft Intune (~30 zł/urządzenie/miesiąc), VMware Workspace ONE, lub Google Android Management API (bezpłatne, podstawowe funkcje). Konfiguracja skanera: Datalogic SDK (Android) lub DXU (Datalogic Configuration Utility) — ustawienie symbologii, prefiksów/sufiksów, trybu skanowania, Green Spot. Instalacja aplikacji WMS z Google Play lub MDM.',
+      },
+      {
+        name: 'Szkolenie operatorów i pilotaż',
+        text: 'Przeszkol operatorów (0,5 dnia): obsługa skanera (Green Spot — celuj i potwierdź wizualnie), wymiana baterii SafeSwap (10 sekund), nawigacja po WMS na Android, podstawowa diagnostyka (restart, czyszczenie cache). Uruchom pilotaż na 3–5 urządzeniach przez 1–2 tygodnie: test zasięgu Wi-Fi, czas pracy baterii, ergonomia, skuteczność Green Spot. Po pozytywnym pilocie — rollout na pełną flotę. TAKMA oferuje zdalne wsparcie wdrożeniowe.',
+      },
+      {
+        name: 'Eksploatacja, serwis i cykl życia',
+        text: 'Monitoring floty: przez MDM (SOTI/Intune) — status baterii, lokalizacja, aplikacje. Wymiana baterii SafeSwap: co 12–18 miesięcy na podstawie degradacji pojemności (>80% → wymiana). Standardowa gwarancja: 1 rok. Opcjonalnie: kontrakty EaseOfCare (3 lub 5 lat) — rozszerzona gwarancja z priorytetowym serwisem, ochrona przed upadkiem (Comprehensive Coverage). Serwis pogwarancyjny: TAKMA Wrocław (5–7 dni) lub centrum Datalogic w Bolonii (10–15 dni). Planowany cykl życia: 3–5 lat (krótszy niż Zebra 5–10 lat, dłuższy niż Newland 3 lata).',
+      },
+    ],
+  },
+
   // ===================================================================
   // SKANERY KODÓW KRESKOWYCH HONEYWELL
   // ===================================================================

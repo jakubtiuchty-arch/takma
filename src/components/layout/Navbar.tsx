@@ -24,6 +24,7 @@ const navigation: NavItem[] = [
       { name: 'Terminale Zebra', href: '/terminale-mobilne-zebra' },
       { name: 'Terminale Newland', href: '/terminale-newland' },
       { name: 'Terminale Honeywell', href: '/terminale-honeywell' },
+      { name: 'Terminale Datalogic', href: '/terminale-datalogic' },
       { name: 'Akcesoria do terminali', href: '/akcesoria-do-terminali' },
       { name: '— Baterie i akumulatory', href: '/baterie-do-terminali' },
       { name: '— Stacje dokujące i ładowarki', href: '/stacje-ladowarki-terminali' },
