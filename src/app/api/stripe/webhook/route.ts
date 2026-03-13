@@ -74,14 +74,20 @@ export async function POST(request: NextRequest) {
         customerNotes: order.customerNotes,
       }
 
-      // Send confirmation email
-      await sendOrderConfirmation(emailData)
+      // Send emails with proper error logging
+      console.log(`[Stripe Webhook] Order ${order.orderNumber} PAID — sending emails...`)
+      console.log(`[Stripe Webhook] RESEND_API_KEY set: ${!!process.env.RESEND_API_KEY}`)
 
-      // Notify admin
-      await sendAdminNotification(emailData)
+      try {
+        const confirmResult = await sendOrderConfirmation(emailData)
+        console.log(`[Stripe Webhook] Customer email (${order.customer.email}):`, confirmResult)
 
-      // TODO: Trigger fulfillment via distributor API
-      // await fulfillOrder(orderId)
+        const adminResult = await sendAdminNotification(emailData)
+        console.log(`[Stripe Webhook] Admin email:`, adminResult)
+      } catch (emailErr) {
+        console.error(`[Stripe Webhook] Email sending crashed:`, emailErr)
+        // Don't fail the webhook — order is already PAID
+      }
 
       break
     }

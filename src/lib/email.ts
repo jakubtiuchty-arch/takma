@@ -8,11 +8,19 @@ import {
   buildRepairSubmittedAdminEmail,
 } from './email-templates'
 
-if (!process.env.RESEND_API_KEY) {
-  console.warn('RESEND_API_KEY not set — emails will be logged to console')
+// Lazy-init Resend client — read env at call-time, not module-load time
+// Fixes Vercel cold-start issue where env vars may not be available at top-level
+let _resend: Resend | null = null
+function getResend(): Resend | null {
+  if (_resend) return _resend
+  const key = process.env.RESEND_API_KEY
+  if (!key) {
+    console.warn('[Email] RESEND_API_KEY not set — emails will be logged to console')
+    return null
+  }
+  _resend = new Resend(key)
+  return _resend
 }
-
-const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
 
 interface EmailOptions {
   to: string
@@ -23,9 +31,10 @@ interface EmailOptions {
 }
 
 export async function sendEmail(options: EmailOptions): Promise<{ success: boolean; error?: string }> {
+  const resend = getResend()
   if (!resend) {
-    console.log('[Email Mock]', { to: options.to, subject: options.subject })
-    return { success: true }
+    console.log('[Email Mock] No RESEND_API_KEY —', { to: options.to, subject: options.subject })
+    return { success: false, error: 'RESEND_API_KEY not configured' }
   }
 
   try {
