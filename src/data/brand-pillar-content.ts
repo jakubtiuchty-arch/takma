@@ -715,8 +715,8 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
     // SERWIS
     // ────────────────────────────────
     service: [
-      'Serwis skanerów Newland objęty jest 5-letnią gwarancją producenta (60 miesięcy) — najdłuższą w branży skanerów ręcznych. Terminale mają standardową gwarancję 24 miesiące z opcją przedłużenia do 3 lub 5 lat (Comprehensive Service). Naprawy gwarancyjne realizowane są przez dystrybutora w Europie. Czas naprawy: 5–10 dni roboczych.',
-      'TAKMA oferuje serwis pogwarancyjny urządzeń Newland we Wrocławiu — diagnostyka, wymiana ekranów, baterii i modułów skanujących. Dla porównania: serwis drukarek i terminali Zebra realizujemy we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl) — autoryzowanym centrum serwisowym z naprawami na poziomie komponentów w 3–5 dni.',
+      'Skanery Newland objęte są 5-letnią gwarancją producenta (60 miesięcy). Terminale mają standardową gwarancję 24 miesiące z opcją przedłużenia do 3 lub 5 lat (Comprehensive Service). Naprawy gwarancyjne realizowane są przez dystrybutora w Europie. Czas naprawy: 5–10 dni roboczych.',
+      'TAKMA oferuje serwis pogwarancyjny urządzeń Newland we Wrocławiu — diagnostyka, wymiana ekranów, baterii i modułów skanujących. Zgłoszenia serwisowe przez formularz kontaktowy na [takma.com.pl](/kontakt) lub telefonicznie.',
     ],
 
     // ────────────────────────────────
