@@ -740,7 +740,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
     whyBuyItems: [
       {
         title: 'Najniższe ceny enterprise',
-        text: 'Skanery od 181 zł, terminale od 2 295 zł — ceny netto z dystrybucji Ingram Micro. Aktualne stany magazynowe.',
+        text: 'Skanery od 181 zł netto, terminale od 2 295 zł netto. Ceny aktualizowane codziennie, aktualne stany magazynowe.',
       },
       {
         title: '5 lat gwarancji na skanery',
