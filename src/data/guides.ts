@@ -3020,8 +3020,8 @@ export const guides: Guide[] = [
   sections: [
     {
       id: 'intro',
-      heading: 'TC27 i TC58e — dwa terminale, dwie klasy',
-      content: `<div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem;padding:1.5rem;background:#f9fafb;border-radius:1rem;border:1px solid #e5e7eb">
+      heading: 'Zebra TC27 vs TC58e — czym się różnią i który wybrać?',
+      content: `<div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem;padding:1.5rem;background:#ffffff;border-radius:1rem;border:1px solid #e5e7eb">
 <div style="text-align:center">
 <img src="/images/products/tc22_scanner_1.png" alt="Zebra TC27 — widok z przodu, terminal mobilny 5G z ekranem 6 cali" style="max-height:280px;margin:0 auto;object-fit:contain" loading="lazy" />
 <p style="margin-top:0.75rem;font-weight:700;font-size:1.1rem">Zebra TC27</p>
@@ -3097,9 +3097,9 @@ export const guides: Guide[] = [
       heading: 'Skaner i zasięg skanowania',
       content: `<p>Dobór skanera jest jedną z najważniejszych decyzji przy zakupie terminala mobilnego. Oba modele oferują skanery Zebra z rodziny SE, ale z różnym zakresem opcji.</p>
 
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0">
-<figure style="text-align:center;margin:0"><img src="/images/products/tc22_scanner_2.png" alt="Zebra TC27 — widok ze skanerem SE55, terminal trzymany w ręce" style="max-height:220px;margin:0 auto;object-fit:contain;border-radius:0.75rem" loading="lazy" /><figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.5rem">TC27 ze skanerem SE55</figcaption></figure>
-<figure style="text-align:center;margin:0"><img src="/images/products/zebra-tc53_2.png" alt="Zebra TC58e — widok ze skanerem, terminal mobilny" style="max-height:220px;margin:0 auto;object-fit:contain;border-radius:0.75rem" loading="lazy" /><figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.5rem">TC58e ze skanerem SE4770</figcaption></figure>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0;padding:1rem;background:#ffffff;border-radius:0.75rem;border:1px solid #e5e7eb">
+<figure style="text-align:center;margin:0"><img src="/images/products/tc22_scanner_2.png" alt="Zebra TC27 — widok ze skanerem SE55, terminal trzymany w ręce" style="max-height:220px;margin:0 auto;object-fit:contain" loading="lazy" /><figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.5rem">TC27 ze skanerem SE55</figcaption></figure>
+<figure style="text-align:center;margin:0"><img src="/images/products/zebra-tc53_2.png" alt="Zebra TC58e — widok ze skanerem, terminal mobilny" style="max-height:220px;margin:0 auto;object-fit:contain" loading="lazy" /><figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.5rem">TC58e ze skanerem SE4770</figcaption></figure>
 </div>
 
 <h3>Zebra TC27 — SE4710 lub SE55</h3>
@@ -3149,7 +3149,7 @@ export const guides: Guide[] = [
       heading: 'Wytrzymałość i zakres temperatur',
       content: `<p>Oba terminale są certyfikowane MIL-STD-810H i mają klasę ochrony IP68/IP65 — ale TC58e jest znacznie bardziej wytrzymały w ekstremalnych warunkach.</p>
 
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0;padding:1rem;background:#f9fafb;border-radius:0.75rem;border:1px solid #e5e7eb">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0;padding:1rem;background:#ffffff;border-radius:0.75rem;border:1px solid #e5e7eb">
 <figure style="text-align:center;margin:0"><img src="/images/products/tc22_scanner_3.png" alt="Zebra TC27 — widok z tyłu, obudowa IP68" style="max-height:200px;margin:0 auto;object-fit:contain" loading="lazy" /><figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.5rem">TC27 — upadki 1,5 m, -10°C</figcaption></figure>
 <figure style="text-align:center;margin:0"><img src="/images/products/zebra-tc53_3.png" alt="Zebra TC58e — widok z tyłu, obudowa IP68" style="max-height:200px;margin:0 auto;object-fit:contain" loading="lazy" /><figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.5rem">TC58e — upadki 1,8 m, -20°C</figcaption></figure>
 </div>
