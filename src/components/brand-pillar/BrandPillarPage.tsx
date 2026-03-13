@@ -116,7 +116,7 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
         {/* H1 + hero */}
         <div className="mb-10">
           <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{brandName}</h1>
-          <p className="hero-text text-gray-600 leading-relaxed max-w-3xl">{data.heroText}</p>
+          <p className="hero-text text-gray-600 leading-relaxed">{data.heroText}</p>
           <p className="text-gray-400 text-sm mt-3">{allProducts.length} produktów w ofercie</p>
         </div>
 
