@@ -241,7 +241,7 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
         {data.partnership.length > 0 && (
           <section className="mb-14">
             <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">
-              {manufacturerId === 'zebra' ? 'TAKMA jako Premier Solution Partner' : `TAKMA — dystrybutor ${manufacturer.name} AutoID`}
+              {manufacturerId === 'zebra' ? 'TAKMA jako Premier Solution Partner' : `TAKMA — partner ${manufacturer.name} AutoID`}
             </h2>
             <div className="bg-primary-50/50 border border-primary-100 rounded-xl p-6">
               {data.partnership.map((para, i) => (
