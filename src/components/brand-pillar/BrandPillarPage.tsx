@@ -33,20 +33,23 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
     .map(slug => allProducts.find(p => p.slug === slug))
     .filter((p): p is Product => !!p)
 
+  // Brand full name — only Zebra has "Technologies" in its name
+  const brandName = manufacturerId === 'zebra' ? 'Zebra Technologies' : manufacturer.name
+
   // Schema JSON-LD
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://www.takma.com.pl' },
-      { '@type': 'ListItem', position: 2, name: manufacturer.name + ' Technologies', item: `https://www.takma.com.pl/${manufacturer.slug}` },
+      { '@type': 'ListItem', position: 2, name: brandName, item: `https://www.takma.com.pl/${manufacturer.slug}` },
     ],
   }
 
   const collectionJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: `Produkty ${manufacturer.name} Technologies`,
+    name: `Produkty ${brandName}`,
     description: data.heroText,
     url: `https://www.takma.com.pl/${manufacturer.slug}`,
     numberOfItems: allProducts.length,
@@ -58,7 +61,7 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
     },
     brand: {
       '@type': 'Brand',
-      name: `${manufacturer.name} Technologies`,
+      name: `${brandName}`,
     },
     mainEntity: {
       '@type': 'ItemList',
@@ -86,7 +89,7 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
   const speakableJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: `Produkty ${manufacturer.name} Technologies`,
+    name: `Produkty ${brandName}`,
     speakable: {
       '@type': 'SpeakableSpecification',
       cssSelector: ['h1', '.hero-text', '.about-section', '.faq-section'],
@@ -107,12 +110,12 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
         <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6">
           <Link href="/" className="hover:text-primary-600 transition-colors">Strona główna</Link>
           <ChevronRightIcon size={14} className="flex-shrink-0 text-gray-400" />
-          <span className="text-gray-900 font-medium">{manufacturer.name} Technologies</span>
+          <span className="text-gray-900 font-medium">{brandName}</span>
         </nav>
 
         {/* H1 + hero */}
         <div className="mb-10">
-          <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{manufacturer.name} Technologies</h1>
+          <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{brandName}</h1>
           <p className="hero-text text-gray-600 leading-relaxed max-w-3xl">{data.heroText}</p>
           <p className="text-gray-400 text-sm mt-3">{allProducts.length} produktów w ofercie</p>
         </div>
@@ -158,7 +161,7 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
 
         {/* About section */}
         <section className="about-section mb-14">
-          <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">O {manufacturer.name} Technologies</h2>
+          <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">O {brandName}</h2>
           <div className="prose prose-gray max-w-none">
             {data.aboutParagraphs.map((para, i) => (
               <p key={i} className="text-gray-600 leading-relaxed mb-4 last:mb-0 sm:text-justify">
@@ -171,7 +174,7 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
         {/* Timeline */}
         {data.timeline.length > 0 && (
           <section className="mb-14">
-            <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-6">Historia {manufacturer.name} Technologies</h2>
+            <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-6">Historia {brandName}</h2>
             <div className="relative">
               {/* Vertical line */}
               <div className="absolute left-[23px] top-2 bottom-2 w-px bg-gray-200 hidden sm:block" />
