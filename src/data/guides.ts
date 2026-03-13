@@ -3021,7 +3021,20 @@ export const guides: Guide[] = [
     {
       id: 'intro',
       heading: 'TC27 i TC58e — dwa terminale, dwie klasy',
-      content: `<p><strong>Zebra TC27 i Zebra TC58e to dwa najnowsze terminale mobilne Zebra z łącznością 5G — ale celujące w zupełnie różne segmenty rynku.</strong> TC27 (od ok. 2 690 zł netto) to następca TC26: ekonomiczny komputer mobilny 5G z GPS, skierowany do kurierów, serwisantów i przedstawicieli handlowych. TC58e (od ok. 5 337 zł netto) to wersja „essential" flagowego TC58 — terminal klasy premium z procesorem octa-core, baterią 4 680 mAh, odpornością na upadki z 1,8 m i pracą w temperaturach do -20°C.</p>
+      content: `<div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem;padding:1.5rem;background:#f9fafb;border-radius:1rem;border:1px solid #e5e7eb">
+<div style="text-align:center">
+<img src="/images/products/tc22_scanner_1.png" alt="Zebra TC27 — widok z przodu, terminal mobilny 5G z ekranem 6 cali" style="max-height:280px;margin:0 auto;object-fit:contain" loading="lazy" />
+<p style="margin-top:0.75rem;font-weight:700;font-size:1.1rem">Zebra TC27</p>
+<p style="color:#6b7280;font-size:0.875rem">od 2 690 zł netto</p>
+</div>
+<div style="text-align:center">
+<img src="/images/products/zebra-tc53_1.png" alt="Zebra TC58e — widok z przodu, terminal mobilny 5G z ekranem 6 cali" style="max-height:280px;margin:0 auto;object-fit:contain" loading="lazy" />
+<p style="margin-top:0.75rem;font-weight:700;font-size:1.1rem">Zebra TC58e</p>
+<p style="color:#6b7280;font-size:0.875rem">od 5 337 zł netto</p>
+</div>
+</div>
+
+<p><strong>Zebra TC27 i Zebra TC58e to dwa najnowsze terminale mobilne Zebra z łącznością 5G — ale celujące w zupełnie różne segmenty rynku.</strong> TC27 (od ok. 2 690 zł netto) to następca TC26: ekonomiczny komputer mobilny 5G z GPS, skierowany do kurierów, serwisantów i przedstawicieli handlowych. TC58e (od ok. 5 337 zł netto) to wersja „essential" flagowego TC58 — terminal klasy premium z procesorem octa-core, baterią 4 680 mAh, odpornością na upadki z 1,8 m i pracą w temperaturach do -20°C.</p>
 
 <p>Oba urządzenia mają 6-calowe ekrany, obsługują 5G FR1, dual SIM (nano + eSIM), GPS/GNSS dual-band i pracują pod kontrolą Androida z wieloletnim wsparciem LifeGuard™. Różnice sprowadzają się do: procesora, jasności ekranu, wytrzymałości obudowy, baterii, zakresu temperatur, skanerów i długości wsparcia Android. Cena TC58e jest niemal dwukrotnie wyższa od TC27 — pytanie brzmi: kiedy ta różnica jest uzasadniona?</p>
 
@@ -3084,6 +3097,11 @@ export const guides: Guide[] = [
       heading: 'Skaner i zasięg skanowania',
       content: `<p>Dobór skanera jest jedną z najważniejszych decyzji przy zakupie terminala mobilnego. Oba modele oferują skanery Zebra z rodziny SE, ale z różnym zakresem opcji.</p>
 
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0">
+<figure style="text-align:center;margin:0"><img src="/images/products/tc22_scanner_2.png" alt="Zebra TC27 — widok ze skanerem SE55, terminal trzymany w ręce" style="max-height:220px;margin:0 auto;object-fit:contain;border-radius:0.75rem" loading="lazy" /><figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.5rem">TC27 ze skanerem SE55</figcaption></figure>
+<figure style="text-align:center;margin:0"><img src="/images/products/zebra-tc53_2.png" alt="Zebra TC58e — widok ze skanerem, terminal mobilny" style="max-height:220px;margin:0 auto;object-fit:contain;border-radius:0.75rem" loading="lazy" /><figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.5rem">TC58e ze skanerem SE4770</figcaption></figure>
+</div>
+
 <h3>Zebra TC27 — SE4710 lub SE55</h3>
 <p><strong>SE4710</strong> to skaner standardowego zasięgu (do 66 cm) z czerwoną kropką celowniczą — sprawdza się przy skanowaniu na wyciągnięcie ręki: kasa, lada, kompletacja na niskich regałach. <strong>SE55 Advanced Range</strong> skanuje od 10 cm do 7,6 m — pozwala zeskanować kod na najwyższych półkach magazynowych bez drabiny. TC27 z SE55 kosztuje od 3 236 zł netto.</p>
 
@@ -3130,6 +3148,11 @@ export const guides: Guide[] = [
       id: 'wytrzymalosc',
       heading: 'Wytrzymałość i zakres temperatur',
       content: `<p>Oba terminale są certyfikowane MIL-STD-810H i mają klasę ochrony IP68/IP65 — ale TC58e jest znacznie bardziej wytrzymały w ekstremalnych warunkach.</p>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0;padding:1rem;background:#f9fafb;border-radius:0.75rem;border:1px solid #e5e7eb">
+<figure style="text-align:center;margin:0"><img src="/images/products/tc22_scanner_3.png" alt="Zebra TC27 — widok z tyłu, obudowa IP68" style="max-height:200px;margin:0 auto;object-fit:contain" loading="lazy" /><figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.5rem">TC27 — upadki 1,5 m, -10°C</figcaption></figure>
+<figure style="text-align:center;margin:0"><img src="/images/products/zebra-tc53_3.png" alt="Zebra TC58e — widok z tyłu, obudowa IP68" style="max-height:200px;margin:0 auto;object-fit:contain" loading="lazy" /><figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.5rem">TC58e — upadki 1,8 m, -20°C</figcaption></figure>
+</div>
 
 <h3>Upadki i tumble</h3>
 <p><strong>TC27</strong> wytrzymuje upadki z 1,5 m na beton i 500 przetumblowań z 0,5 m. To solidny wynik dla pracy w sklepie, lekkim magazynie czy w terenie — pod warunkiem, że terminal jest noszony w etui ochronnym.</p>
