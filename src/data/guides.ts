@@ -3363,7 +3363,7 @@ export const guides: Guide[] = [
 <p><strong><a href="/produkt/zebra-tc22">Zebra TC22</a></strong><br/>Wi-Fi 6E · od 2 417 zł netto</p>
 </div>
 <div style="min-width:200px;text-align:center">
-<img src="/images/products/tc22_scanner_2.png" alt="Kolektor danych Zebra TC27 — terminal mobilny 5G z GPS i dual SIM, widok z tyłu" style="max-height:180px;margin:0 auto" loading="lazy" />
+<img src="/images/products/tc22_front.png" alt="Kolektor danych Zebra TC27 — terminal mobilny 5G z GPS i dual SIM, widok z przodu (identyczny wygląd jak TC22)" style="max-height:180px;margin:0 auto" loading="lazy" />
 <p><strong><a href="/produkt/zebra-tc27">Zebra TC27</a></strong><br/>5G + Wi-Fi 6E + GPS · od 2 690 zł netto</p>
 </div>
 </div>
