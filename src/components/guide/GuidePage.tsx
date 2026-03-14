@@ -269,7 +269,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
                           className="text-sm text-gray-600 hover:text-[#A8F000] transition-colors flex gap-2"
                         >
                           <span className="text-gray-400 font-medium">{i + 1}.</span>
-                          <span>{section.heading}</span>
+                          <span>{section.heading.split(' — ')[0]}</span>
                         </a>
                       </li>
                     ))}
