@@ -1643,12 +1643,12 @@ export const guides: Guide[] = [
   slug: 'jak-wybrac-terminal-mobilny',
   title: 'Jak wybrać terminal mobilny? Kompletny poradnik 2026',
   seoTitle: 'Jak wybrać terminal mobilny (kolektor danych)? Poradnik 2026',
-  seoDescription: 'Poradnik wyboru terminala mobilnego: 5 marek, 6 segmentów, porównanie TCO i parametrów. Zebra, Honeywell, Datalogic, Newland, M3 Mobile — ekspercki przewodnik TAKMA.',
+  seoDescription: 'Poradnik wyboru terminala mobilnego: 5 marek, 6 segmentów, porównanie TCO. Zebra, Honeywell, Datalogic — ekspercki przewodnik TAKMA z cenami 2026.',
   excerpt: 'Kompleksowy przewodnik po terminalach mobilnych (kolektorach danych) do magazynu, produkcji i logistyki na rok 2026 — od definicji i form faktorów, przez porównanie 5 marek (Zebra, Honeywell, Datalogic, Newland, M3 Mobile), kalkulację TCO, aż po konkretne rekomendacje dla 6 segmentów zastosowań. Opracowany przez TAKMA na podstawie ponad 500 wdrożeń w polskich firmach.',
   category: 'poradnik',
-  tags: ['terminale-mobilne', 'poradnik', 'jak-wybrac', 'zebra', 'honeywell', 'datalogic', 'newland', 'm3-mobile', 'kolektor-danych'],
+  tags: ['terminale-mobilne', 'poradnik', 'jak-wybrac', 'zebra', 'honeywell', 'datalogic', 'newland', 'm3-mobile', 'kolektor-danych', 'magazyn', 'logistyka', 'produkcja', 'wms', 'tco', 'rfid'],
   publishedAt: '2026-02-23',
-  updatedAt: '2026-02-23',
+  updatedAt: '2026-03-14',
   readTime: '18 min',
   heroImage: '/images/guides/jak-wybrac-terminal-mobilny-2026.png',
 
@@ -1667,7 +1667,7 @@ export const guides: Guide[] = [
     {
       id: 'form-faktory',
       heading: 'Form faktory terminali mobilnych — brick, gun, wearable',
-      content: `<p>Terminale mobilne występują w czterech głównych form faktorach: <strong>brick</strong> (kompaktowy dotykowy, 200–320 g), <strong>gun</strong> (pistoletowy z uchwytem, 400–600 g), <strong>z klawiaturą fizyczną</strong> (480–550 g) i <strong>wearable</strong> (naręczny z ring scannerem). Wybór formy zależy od liczby skanów na zmianę, środowiska pracy i sposobu wprowadzania danych — błędny dobór skutkuje niższą wydajnością operatora nawet o 15–25%.</p>
+      content: `<p>Terminale mobilne (kolektory danych) występują w czterech głównych form faktorach: <strong>brick</strong> (kompaktowy dotykowy, 200–320 g), <strong>gun</strong> (pistoletowy z uchwytem, 400–600 g), <strong>z klawiaturą fizyczną</strong> (480–550 g) i <strong>wearable</strong> (naręczny z ring scannerem). Wybór formy kolektora danych zależy od liczby skanów na zmianę, środowiska pracy i sposobu wprowadzania danych — błędny dobór skutkuje niższą wydajnością operatora nawet o 15–25%.</p>
 
 <h3>Brick (touch) — kompaktowy dotykowy</h3>
 <p>Terminal w formie „cegiełki" — prostokątna obudowa z ekranem dotykowym, bez uchwytu pistoletowego. Wyglądem przypomina wzmocnionego smartfona. Lekki (200–320 g), łatwy do noszenia w dłoni lub kaburze. Skaner zintegrowany w górnej części obudowy — operator celuje całym urządzeniem.</p>
@@ -1892,8 +1892,8 @@ export const guides: Guide[] = [
     },
     {
       id: 'segmenty',
-      heading: 'Polecane terminale wg segmentu zastosowań',
-      content: `<p>Ranking terminali mobilnych 2026: na podstawie ponad 500 wdrożeń realizowanych przez TAKMA w polskich firmach opracowaliśmy rekomendacje dla 6 najczęstszych scenariuszy. Każda rekomendacja uwzględnia stosunek ceny do wydajności w danym segmencie — TOP modele z cenami netto.</p>
+      heading: 'Polecane terminale mobilne wg segmentu zastosowań',
+      content: `<p>Ranking terminali mobilnych (kolektorów danych) 2026: na podstawie ponad 500 wdrożeń realizowanych przez TAKMA w polskich firmach opracowaliśmy rekomendacje dla 6 najczęstszych scenariuszy. Ceny kolektorów danych: od 2 000 zł (M3 Mobile SL20+, retail) do 7 638 zł (Zebra MC9400, ultra-rugged). Każda rekomendacja uwzględnia stosunek ceny do wydajności w danym segmencie — TOP modele z cenami netto.</p>
 
 <h3>Entry-level — retail, lekki magazyn, inwentaryzacja</h3>
 <p>Budżet: 2 000–3 200 zł/szt. Wymagania: IP65+, drop 1,2–1,5 m, Wi-Fi, BT, skaner SR, bateria 8h+.</p>
@@ -1986,7 +1986,7 @@ export const guides: Guide[] = [
     {
       id: 'tco',
       heading: 'Kalkulacja TCO — prawdziwy koszt terminala mobilnego',
-      content: `<p><strong>Kluczowy wniosek:</strong> Cena zakupu terminala mobilnego stanowi zaledwie 30–40% całkowitego kosztu posiadania (TCO) w perspektywie 5 lat. Zebra TC53 kosztuje 1 860 zł/terminal/rok (TCO), podczas gdy tańsza w zakupie Newland MT93 — 1 380 zł/rok, ale wymaga wymiany po 3–4 latach z powodu krótszego wsparcia Android.</p>
+      content: `<p><strong>Kluczowy wniosek:</strong> Cena zakupu terminala mobilnego (kolektora danych) stanowi zaledwie 30–40% całkowitego kosztu posiadania (TCO) w perspektywie 5 lat. Zebra TC53 kosztuje 1 860 zł/terminal/rok (TCO), podczas gdy tańsza w zakupie Newland MT93 — 1 380 zł/rok, ale wymaga wymiany po 3–4 latach z powodu krótszego wsparcia Android.</p>
 
 <p>Dane TCO opracowane przez dział doradztwa TAKMA na podstawie realnych kosztów serwisowych i eksploatacyjnych klientów z lat 2022–2025. Reszta TCO to akcesoria, serwis, wsparcie, baterie i czas IT. Poniżej przedstawiamy realistyczną kalkulację dla dwóch scenariuszy.</p>
 
@@ -2035,7 +2035,7 @@ export const guides: Guide[] = [
     {
       id: 'wdrozenie',
       heading: 'Jak wdrożyć terminale mobilne — krok po kroku',
-      content: `<p>Wdrożenie terminali mobilnych składa się z 6 etapów: audyt procesów, pilot (2–4 tygodnie), konfiguracja i staging (MDM), przygotowanie infrastruktury Wi-Fi, szkolenie operatorów i monitoring po wdrożeniu. Z doświadczenia TAKMA wynika, że 70% problemów wynika z pominięcia etapu przygotowania — oto sprawdzony proces.</p>
+      content: `<p>Wdrożenie terminali mobilnych (kolektorów danych) składa się z 6 etapów: audyt procesów, pilot (2–4 tygodnie), konfiguracja i staging (MDM), przygotowanie infrastruktury Wi-Fi, szkolenie operatorów i monitoring po wdrożeniu. Z doświadczenia TAKMA wynika, że 70% problemów z wdrożeniem kolektorów danych wynika z pominięcia etapu przygotowania — oto sprawdzony proces.</p>
 
 <h3>Krok 1: Audyt procesów i wymagań</h3>
 <p>Przed wyborem terminala zmapuj procesy, które mają być obsługiwane: ile skanów na zmianę, jakie kody (1D/2D, odległość skanowania), jakie warunki środowiskowe (temperatura, wilgotność, ryzyko upadków), ile terminali potrzebujesz (operatorzy + zapas 10–15%), jakie aplikacje mają działać (WMS, ERP, dedykowana apka).</p>
@@ -2057,8 +2057,8 @@ export const guides: Guide[] = [
     },
     {
       id: 'podsumowanie',
-      heading: 'Podsumowanie — który terminal wybrać?',
-      content: `<p>Wybór terminala mobilnego zależy od trzech głównych czynników: <strong>budżetu</strong>, <strong>środowiska pracy</strong> i <strong>skali floty</strong>. Oto nasze finalne rekomendacje:</p>
+      heading: 'Podsumowanie — który terminal mobilny wybrać?',
+      content: `<p>Wybór terminala mobilnego (kolektora danych) zależy od trzech głównych czynników: <strong>budżetu</strong> (od 2 000 zł entry-level do 7 638 zł ultra-rugged), <strong>środowiska pracy</strong> (IP65 magazyn, IP67 chłodnia, IP68 outdoor) i <strong>skali floty</strong> (Zebra przy 20+ szt. dla najniższego TCO, M3/Newland przy &lt;10 szt. dla najniższej ceny zakupu). Oto nasze finalne rekomendacje:</p>
 
 <h3>Szybka ściągawka decyzyjna</h3>
 <table style="width:100%">
@@ -2085,15 +2085,27 @@ export const guides: Guide[] = [
 
   faq: [
     {
+      question: 'Co to jest terminal mobilny (kolektor danych)?',
+      answer: 'Terminal mobilny (kolektor danych) to wzmocniony komputer przenośny ze zintegrowanym skanerem kodów kreskowych, systemem Android, ekranem dotykowym i łącznością Wi-Fi/Bluetooth/LTE, zaprojektowany do pracy w magazynach, produkcji i logistyce. Ma obudowę IP65–IP68 odporną na pył, wodę i upadki na beton z 1,2–3,0 m. Ceny w Polsce w 2026 roku: od 2 000 zł (M3 Mobile SL20+) do 7 638 zł (Zebra MC9400, ultra-rugged). Dominujące marki: Zebra Technologies (~45% rynku), Honeywell (~25%), Datalogic (~10%), Newland (~8%), M3 Mobile (~5%). TAKMA jest autoryzowanym dystrybutorem terminali mobilnych w Polsce od 2001 roku — doradzamy w doborze na podstawie ponad 500 wdrożeń.'
+    },
+    {
+      question: 'Ile kosztuje terminal mobilny (kolektor danych)?',
+      answer: 'Ceny terminali mobilnych (kolektorów danych) w Polsce w 2026 roku: entry-level (retail, lekki magazyn): 2 000–3 200 zł — np. M3 Mobile SL20+ (~2 000 zł), Zebra TC22 (2 417 zł), Honeywell CT32 (~2 800 zł). Mid-range (magazyn, logistyka): 4 500–7 500 zł — np. Zebra TC53 (6 418 zł), Honeywell CT47 (~7 000 zł). Ultra-rugged (chłodnie, ciężki przemysł): 7 000–9 000 zł — np. Zebra MC9400 (7 638 zł). RFID: 2 900–8 600 zł — np. Zebra EM45 (2 951 zł). Ceny netto. Do tego doliczyć akcesoria (ładowarka, etui, bateria zapasowa): 1 000–3 000 zł/terminal.'
+    },
+    {
+      question: 'Czy terminal mobilny to to samo co kolektor danych?',
+      answer: 'Tak — kolektor danych (data collector) to starsze określenie na terminal mobilny. Współczesne terminale mobilne (np. Zebra TC22, MC3400, Honeywell CT32) są następcami kolektorów danych z systemem Windows CE/Mobile i oferują Android, ekran dotykowy, Wi-Fi 6/6E i baterie 8–16h. Termin „kolektor danych" jest nadal powszechnie używany w Polsce, szczególnie w kontekście inwentaryzacji i prostszych zastosowań magazynowych. W praktyce oba terminy oznaczają to samo urządzenie.'
+    },
+    {
       question: 'Czym terminal mobilny różni się od smartfona?',
       answer: 'Terminal mobilny ma wzmocnioną obudowę (IP65–IP68, upadki 1,2–3,0 m na beton), zintegrowany skaner kodów kreskowych klasy enterprise (skanuje uszkodzone, brudne i odległe kody, czego zwykły aparat nie potrafi), wymienną baterię z hot-swap, Android ze wsparciem bezpieczeństwa do 10 lat (vs. 3–4 lata w smartfonach) oraz narzędzia MDM do zarządzania flotą. Smartfon ze skanerem w etui to rozwiązanie tymczasowe — przy ponad 100 skanach dziennie terminal jest 3–5× szybszy i wielokrotnie trwalszy.'
     },
     {
-      question: 'Ile kosztuje terminal mobilny?',
-      answer: 'Ceny terminali mobilnych w Polsce w 2026 roku: entry-level (retail, lekki magazyn): 2 000–3 200 zł — np. M3 Mobile SL20+ (~2 000 zł), Zebra TC22 (2 417 zł), Honeywell CT32 (~2 800 zł). Mid-range (magazyn, logistyka): 4 500–7 500 zł — np. Zebra TC53 (6 418 zł), Honeywell CT47 (~7 000 zł). Ultra-rugged (chłodnie, ciężki przemysł): 7 000–9 000 zł — np. Zebra MC9400 (7 638 zł). RFID: 2 900–8 600 zł — np. Zebra EM45 (2 951 zł). Ceny netto. Do tego doliczyć akcesoria (ładowarka, etui, bateria zapasowa): 1 000–3 000 zł/terminal.'
+      question: 'Gdzie kupić terminal mobilny (kolektor danych) w Polsce?',
+      answer: 'Terminale mobilne (kolektory danych) najlepiej kupić u autoryzowanego dystrybutora producenta, który zapewni doradztwo, konfigurację i serwis. TAKMA (takma.com.pl) jest autoryzowanym partnerem Zebra Technologies i oferuje pełne portfolio terminali mobilnych Zebra (TC22, TC27, TC53, TC58, MC3400, MC9400, EM45, TC501) z cenami od 2 417 zł netto. Usługi: doradztwo w doborze terminala do procesów, pilotaż na urządzeniach demo, konfiguracja MDM ready-to-use, serwis gwarancyjny i pogwarancyjny (serwis-zebry.pl), kontrakty Zebra OneCare. Przy wyborze dostawcy sprawdź: autoryzację producenta, dostępność serwisu w Polsce, możliwość pilotażu i doświadczenie wdrożeniowe.'
     },
     {
-      question: 'Jak długo wytrzymuje bateria w terminalu mobilnym?',
+      question: 'Jak długo wytrzymuje bateria w terminalu mobilnym (kolektorze danych)?',
       answer: 'Czas pracy na jednym ładowaniu zależy od intensywności użytkowania i pojemności baterii. Entry-level (3 600–3 800 mAh): 8–10h przy umiarkowanym użytkowaniu (200–300 skanów/zmianę). Mid-range (4 680 mAh): 10–12h intensywnej pracy. Ultra-rugged (5 200–7 000 mAh): 12–16h. Przy operacjach 24/7 konieczna jest bateria zapasowa + ładowarka wielostanowiskowa (cradle). Baterie PowerPrecision+ (Zebra) pokazują stan zdrowia — wymiana zalecana gdy pojemność spadnie poniżej 80% (typowo po 18–24 miesiącach intensywnego użytkowania).'
     },
     {
@@ -2121,7 +2133,7 @@ export const guides: Guide[] = [
       answer: 'Zdecydowanie tak — przy flotach powyżej 5 terminali kontrakt serwisowy się opłaca. Zebra OneCare Essential: ~1 200 zł/terminal/5 lat — obejmuje naprawy (w tym uszkodzenia przypadkowe), wymianę sprzętu i wsparcie techniczne. Bez kontraktu: sama naprawa rozbitego ekranu to 800–1 500 zł + 2–3 tygodnie oczekiwania. Z OneCare: naprawa w 3–5 dni roboczych, brak kosztów części. Przy flocie 20 terminali i 10% rocznym wskaźniku uszkodzeń oszczędzasz ~12 000 zł w ciągu 5 lat. Dodatkowa korzyść: gwarantowane aktualizacje bezpieczeństwa Androida przez cały okres kontraktu.'
     },
     {
-      question: 'Terminal mobilny Zebra czy Honeywell — co wybrać?',
+      question: 'Kolektor danych Zebra czy Honeywell — co wybrać?',
       answer: 'Zebra: lepsze TCO przy dużych flotach (50+), najdłuższe wsparcie Android (10 lat LifeGuard), najszerszy ekosystem MDM (Mobility DNA, StageNow, DataWedge), dominacja rynkowa (łatwiej o serwis i części w Polsce). Honeywell: niższe ceny zakupu w mid-range, lepsze opcje klawiatur fizycznych (CK67 — 5 wariantów), dobre wsparcie Sentinel (5–7 lat), silna pozycja w logistyce lotniczej i pharma. Nasza rekomendacja: Zebra dla magazynów, logistyki, flot 20+. Honeywell dla produkcji z klawiaturą, specjalistycznych zastosowań, firm z istniejącym ekosystemem Honeywell.'
     },
     {
@@ -2131,10 +2143,6 @@ export const guides: Guide[] = [
     {
       question: 'Jakie są alternatywy dla terminali mobilnych?',
       answer: 'Alternatywy: (1) Smartfon z etui ze skanerem (np. Zebra TC22 vs. Samsung + etui Koamtac) — tańszy zakup, ale 2–3× wolniejsze skanowanie, krótsze wsparcie, brak MDM. Opłacalny do 50 skanów/dzień. (2) Tablet rugged (np. Zebra ET40/ET45) — duży ekran 10", ale ciężki (600+ g), nieporęczny do skanowania jedną ręką. Dobry do inwentaryzacji z dużą ilością danych wizualnych. (3) Voice picking (pick-by-voice) — terminal naręczny + słuchawka, operacje głosowe. Najwyższa wydajność w picking (obie ręce wolne), ale wyższy koszt wdrożenia (10 000–15 000 zł/stanowisko). (4) Skaner bezprzewodowy + laptop — najtańsza opcja do stanowiska stacjonarnego (pakowanie, weryfikacja).'
-    },
-    {
-      question: 'Czy terminal mobilny to to samo co kolektor danych?',
-      answer: 'Tak — kolektor danych (data collector) to starsze określenie na terminal mobilny. Współczesne terminale mobilne (np. Zebra TC22, MC3400, Honeywell CT32) są następcami kolektorów danych z systemem Windows CE/Mobile i oferują Android, ekran dotykowy, Wi-Fi 6/6E i baterie 8–16h. Termin „kolektor danych" jest nadal powszechnie używany w Polsce, szczególnie w kontekście inwentaryzacji i prostszych zastosowań magazynowych. W praktyce oba terminy oznaczają to samo urządzenie.'
     },
     {
       question: 'Jaki terminal mobilny do chłodni i mroźni?',

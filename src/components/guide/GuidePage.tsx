@@ -57,11 +57,12 @@ export default function GuidePage({ guide }: GuidePageProps) {
     ],
   }
 
-  // JSON-LD: Article (E-E-A-T: author = Person, publisher = Organization)
+  // JSON-LD: Article or TechArticle (E-E-A-T: author = Person, publisher = Organization)
+  const isTechnical = guide.tags.includes('jak-wybrac') || guide.tags.includes('tco') || guide.tags.includes('rfid')
   const wordCount = guide.sections.reduce((acc, s) => acc + s.content.replace(/<[^>]*>/g, '').split(/\s+/).length, 0)
   const articleJsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': isTechnical ? 'TechArticle' : 'Article',
     headline: guide.title,
     description: guide.seoDescription,
     wordCount,
