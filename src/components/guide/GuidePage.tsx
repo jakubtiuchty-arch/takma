@@ -196,7 +196,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
                   </ol>
                 </nav>
                 <header className="container-main pt-6 pb-12">
-                  <div className="max-w-4xl">
+                  <div className="max-w-4xl sm:max-w-[50%]">
                     <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4">
                       <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[#A8F000]/20 text-[#A8F000]">
                         {guideCategoryLabels[guide.category]}
