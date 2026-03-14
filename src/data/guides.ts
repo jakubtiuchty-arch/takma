@@ -4709,6 +4709,409 @@ export const guides: Guide[] = [
     { title: 'Jak wybrać terminal mobilny? Poradnik', href: '/poradnik/jak-wybrac-terminal-mobilny' },
     { title: 'Serwis skanerów Zebra w Polsce', href: 'https://www.serwis-zebry.pl/serwis-skanerow-zebra' },
   ]
+},
+{
+  slug: 'zebra-tc501-vs-tc58',
+  title: 'Zebra TC501 vs TC58 — porównanie kolektorów danych 2026',
+  seoTitle: 'Zebra TC501 vs TC58 — porównanie terminali mobilnych 2026 | RFID, AI, Wi-Fi 7',
+  seoDescription: 'Zebra TC501 vs TC58 — porównanie kolektorów danych: RFID UHF w standardzie, AI NPU, AMOLED 1500 nit, Wi-Fi 7, skaner AC670 30 m. TC501 od 3 730 zł, TC58 od 6 751 zł netto.',
+  excerpt: 'Zebra TC501 (kolektor danych z AI i RFID od 3 730 zł) vs TC58 (terminal 5G od 6 751 zł) — porównanie procesorów, wyświetlaczy, skanerów, RFID, łączności, TCO na 5 lat i rekomendacje wg zastosowania. Pierwszy tak szczegółowy poradnik w języku polskim.',
+  category: 'porownanie' as const,
+  tags: ['terminale-mobilne', 'porownanie', 'zebra', 'tc501', 'tc58', 'kolektor-danych', 'rfid', 'ai', 'tco', 'wifi-7', 'amoled', 'komputer-mobilny'],
+  publishedAt: '2026-03-14',
+  updatedAt: '2026-03-14',
+  readTime: '16 min',
+  sections: [
+    {
+      id: 'podsumowanie',
+      heading: 'Zebra TC501 vs TC58 — który kolektor danych wybrać w 2026 roku?',
+      content: `<p><strong>Zebra TC501 to kolektor danych nowej generacji z wbudowanym RFID UHF, procesorem AI Dragonwing Q-6690 i ekranem AMOLED 1500 nit — od 3 730 zł netto. Zebra TC58 to sprawdzony terminal 5G z procesorem Qualcomm 6490 i skanerem SE55 — od 6 751 zł netto.</strong></p>
+
+<p>TC501 i TC58 to dwa flagowe kolektory danych Zebra, ale należą do <strong>różnych generacji</strong>. TC501 (premiera 2025/2026) to następca linii TC52/TC53 z przełomowymi technologiami: RFID w standardzie, AI on-device i Wi-Fi 7. TC58 (premiera 2023) to wersja TC53 z łącznością 5G/LTE — sprawdzona, stabilna, z szerokim ekosystemem akcesoriów wspólnych z TC53.</p>
+
+<p><strong>Kluczowe pytanie: czy potrzebujesz RFID i AI, czy sprawdzonego terminala 5G?</strong> Poniżej znajdziesz szczegółowe porównanie 10 kategorii — od procesora po TCO na 5 lat.</p>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem">
+<thead><tr style="background:#1e3a5f;color:#fff"><th style="padding:10px 12px;text-align:left">Parametr</th><th style="padding:10px 12px;text-align:center">Zebra TC501</th><th style="padding:10px 12px;text-align:center">Zebra TC58</th></tr></thead>
+<tbody>
+<tr style="background:#f8fafc"><td style="padding:8px 12px;font-weight:600">Procesor</td><td style="padding:8px 12px;text-align:center">Dragonwing Q-6690, 2,9 GHz + <strong>AI NPU</strong></td><td style="padding:8px 12px;text-align:center">Qualcomm 6490, 2,7 GHz</td></tr>
+<tr><td style="padding:8px 12px;font-weight:600">Wyświetlacz</td><td style="padding:8px 12px;text-align:center"><strong>6" AMOLED, 1500 nit</strong>, Gorilla Glass Victus</td><td style="padding:8px 12px;text-align:center">6" IPS, 600 nit, Gorilla Glass</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px;font-weight:600">RFID UHF</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>Wbudowany (standard)</strong></td><td style="padding:8px 12px;text-align:center;color:#dc2626">Brak (wymaga sled RFD40/RFD90)</td></tr>
+<tr><td style="padding:8px 12px;font-weight:600">Skaner max zasięg</td><td style="padding:8px 12px;text-align:center"><strong>AC670 — do 30 m</strong></td><td style="padding:8px 12px;text-align:center">SE55 — do 12 m</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px;font-weight:600">Wi-Fi</td><td style="padding:8px 12px;text-align:center"><strong>Wi-Fi 7</strong> (802.11be)</td><td style="padding:8px 12px;text-align:center">Wi-Fi 6E (802.11ax)</td></tr>
+<tr><td style="padding:8px 12px;font-weight:600">Bluetooth</td><td style="padding:8px 12px;text-align:center"><strong>6.0</strong></td><td style="padding:8px 12px;text-align:center">5.2</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px;font-weight:600">Kamera tylna</td><td style="padding:8px 12px;text-align:center"><strong>50 MP</strong> + opcja ultrawide 13 MP</td><td style="padding:8px 12px;text-align:center">16 MP</td></tr>
+<tr><td style="padding:8px 12px;font-weight:600">Upadki na beton</td><td style="padding:8px 12px;text-align:center"><strong>2,4 m</strong> (2,7 m z boot)</td><td style="padding:8px 12px;text-align:center">1,8 m</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px;font-weight:600">Waga</td><td style="padding:8px 12px;text-align:center"><strong>273 g</strong></td><td style="padding:8px 12px;text-align:center">293 g</td></tr>
+<tr><td style="padding:8px 12px;font-weight:600">Android (do wersji)</td><td style="padding:8px 12px;text-align:center"><strong>Android 19</strong> (4 aktualizacje)</td><td style="padding:8px 12px;text-align:center">Android 16 (1 aktualizacja)</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px;font-weight:600">5G</td><td style="padding:8px 12px;text-align:center">Release 17 (wersje TC501G)</td><td style="padding:8px 12px;text-align:center">5G FR1 (standard)</td></tr>
+<tr><td style="padding:8px 12px;font-weight:600">Cena od (netto)</td><td style="padding:8px 12px;text-align:center"><strong>3 730 zł</strong> (5G) / 5 688 zł (WiFi)</td><td style="padding:8px 12px;text-align:center">6 751 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px;font-weight:600">Warianty</td><td style="padding:8px 12px;text-align:center"><strong>15 konfiguracji</strong></td><td style="padding:8px 12px;text-align:center">6 konfiguracji</td></tr>
+</tbody></table>
+
+<p>👉 <a href="/produkt/zebra-tc501">Karta produktu Zebra TC501</a> · <a href="/produkt/zebra-tc58">Karta produktu Zebra TC58</a></p>`
+    },
+    {
+      id: 'procesor-ai',
+      heading: 'Procesor i sztuczna inteligencja — Dragonwing Q-6690 vs Qualcomm 6490',
+      content: `<p><strong>Zebra TC501 z procesorem Qualcomm Dragonwing Q-6690 i dedykowanym NPU AI oferuje 300% więcej mocy obliczeniowej niż TC58 z Qualcomm 6490. AI działa lokalnie — rozpoznawanie produktów, OCR i weryfikacja etykiet bez chmury, zgodnie z RODO.</strong></p>
+
+<h3>Qualcomm Dragonwing Q-6690 (TC501)</h3>
+<ul>
+<li><strong>8 rdzeni, do 2,9 GHz</strong> — najszybszy procesor w klasie enterprise</li>
+<li><strong>Dedykowany NPU (Neural Processing Unit)</strong> — przetwarzanie AI on-device w czasie rzeczywistym</li>
+<li>Pamięć: <strong>8/128 GB lub 12/256 GB</strong> (UFS 3.1) + microSD do 2 TB</li>
+<li>GPU Adreno nowej generacji — płynna obsługa wielu aplikacji i wideokonferencje</li>
+</ul>
+
+<h3>Qualcomm 6490 (TC58)</h3>
+<ul>
+<li><strong>8 rdzeni, do 2,7 GHz</strong> — sprawdzony procesor z 2022 roku</li>
+<li>Brak dedykowanego NPU — AI wymaga przetwarzania w chmurze</li>
+<li>Pamięć: <strong>4/64 GB do 8/128 GB</strong> UFS</li>
+<li>Wystarczający do standardowych aplikacji WMS/ERP</li>
+</ul>
+
+<h3>Co oznacza AI NPU w praktyce?</h3>
+<p>Dedykowany silnik AI w Zebra TC501 umożliwia:</p>
+<ul>
+<li><strong>Rozpoznawanie produktów kamerą</strong> — identyfikacja towaru bez skanowania kodu (uszkodzone etykiety)</li>
+<li><strong>OCR na urządzeniu</strong> — odczyt numerów seryjnych, dat ważności, tekstów bez wysyłania zdjęć do chmury</li>
+<li><strong>Weryfikacja etykiet</strong> — automatyczne sprawdzanie poprawności nadruku w linii produkcyjnej</li>
+<li><strong>Zgodność z RODO</strong> — dane nie opuszczają urządzenia, co eliminuje ryzyko wycieku</li>
+</ul>
+
+<p><strong>Podsumowanie:</strong> Jeśli planujesz wdrożenie AI (rozpoznawanie, OCR, weryfikacja) — TC501 jest jedynym wyborem. Jeśli kolektor danych ma służyć wyłącznie do skanowania i WMS — TC58 ma wystarczającą moc.</p>`
+    },
+    {
+      id: 'wyswietlacz',
+      heading: 'Wyświetlacz — AMOLED 1500 nit vs IPS 600 nit',
+      content: `<p><strong>Zebra TC501 to pierwszy kolektor danych klasy enterprise z ekranem AMOLED o jasności 1500 nit — 2,5× jaśniejszy niż IPS 600 nit w TC58. Głęboka czerń AMOLED zmniejsza zmęczenie oczu na wielogodzinnych zmianach.</strong></p>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem">
+<thead><tr style="background:#1e3a5f;color:#fff"><th style="padding:10px 12px;text-align:left">Parametr</th><th style="padding:10px 12px;text-align:center">TC501</th><th style="padding:10px 12px;text-align:center">TC58</th></tr></thead>
+<tbody>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Technologia</td><td style="padding:8px 12px;text-align:center"><strong>AMOLED</strong></td><td style="padding:8px 12px;text-align:center">IPS LCD</td></tr>
+<tr><td style="padding:8px 12px">Rozdzielczość</td><td style="padding:8px 12px;text-align:center">2160×1080 (FHD+)</td><td style="padding:8px 12px;text-align:center">2160×1080 (FHD+)</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Jasność</td><td style="padding:8px 12px;text-align:center"><strong>1500 nit</strong></td><td style="padding:8px 12px;text-align:center">600 nit</td></tr>
+<tr><td style="padding:8px 12px">Przekątna</td><td style="padding:8px 12px;text-align:center">6,0"</td><td style="padding:8px 12px;text-align:center">6,0"</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Szkło ochronne</td><td style="padding:8px 12px;text-align:center"><strong>Gorilla Glass Victus</strong></td><td style="padding:8px 12px;text-align:center">Gorilla Glass</td></tr>
+<tr><td style="padding:8px 12px">Obsługa w rękawicach</td><td style="padding:8px 12px;text-align:center">Tak</td><td style="padding:8px 12px;text-align:center">Tak</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Obsługa mokrymi palcami</td><td style="padding:8px 12px;text-align:center">Tak</td><td style="padding:8px 12px;text-align:center">Tak</td></tr>
+</tbody></table>
+
+<h3>Dlaczego 1500 nit robi różnicę?</h3>
+<p>Na rampie załadunkowej, placu magazynowym czy w punkcie odbioru na zewnątrz — ekran 600 nit w TC58 wymaga osłonięcia dłonią, żeby odczytać informacje. <strong>1500 nit w TC501 jest doskonale czytelne nawet w pełnym letnim słońcu</strong>, bez mrużenia oczu i opóźnień.</p>
+
+<p>AMOLED ma dodatkową zaletę: <strong>głęboka czerń</strong> (piksele wyłączone) zmniejsza zmęczenie wzroku na 8–12-godzinnych zmianach. W trybie ciemnym (dark mode) AMOLED zużywa mniej energii niż IPS — oszczędność baterii rzędu 10–15%.</p>
+
+<p><strong>Gorilla Glass Victus</strong> w TC501 jest odporniejszy na zarysowania niż starszy Gorilla Glass w TC58 — rzadziej wymaga wymiany folii ochronnej.</p>`
+    },
+    {
+      id: 'skanery',
+      heading: 'Skanery kodów kreskowych — AC670 (30 m) vs SE55 (12 m)',
+      content: `<p><strong>Zebra TC501 oferuje trzy silniki skanowania: SR500 (standard), SR560 (ulepszony 2D) i flagowy AC670 z zasięgiem do 30 m i kolorowym imagerem. TC58 ma dwa skanery: SE4720 (standard) i SE55 z IntelliFocus do 12 m.</strong></p>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem">
+<thead><tr style="background:#1e3a5f;color:#fff"><th style="padding:10px 12px;text-align:left">Skaner</th><th style="padding:10px 12px;text-align:center">Terminal</th><th style="padding:10px 12px;text-align:center">Zasięg</th><th style="padding:10px 12px;text-align:center">Zastosowanie</th></tr></thead>
+<tbody>
+<tr style="background:#f8fafc"><td style="padding:8px 12px"><strong>SR500</strong></td><td style="padding:8px 12px;text-align:center">TC501</td><td style="padding:8px 12px;text-align:center">Bliski</td><td style="padding:8px 12px">Kasa, lada, kompletacja</td></tr>
+<tr><td style="padding:8px 12px"><strong>SR560</strong></td><td style="padding:8px 12px;text-align:center">TC501</td><td style="padding:8px 12px;text-align:center">Bliski+</td><td style="padding:8px 12px">Uszkodzone/zabrudzone kody, produkcja</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px"><strong>AC670</strong></td><td style="padding:8px 12px;text-align:center">TC501</td><td style="padding:8px 12px;text-align:center"><strong>Do 30 m</strong></td><td style="padding:8px 12px">Regały wysokiego składowania, cross-dock</td></tr>
+<tr><td style="padding:8px 12px"><strong>SE4720</strong></td><td style="padding:8px 12px;text-align:center">TC58</td><td style="padding:8px 12px;text-align:center">Bliski</td><td style="padding:8px 12px">Retail, produkcja, magazyn niski</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px"><strong>SE55</strong></td><td style="padding:8px 12px;text-align:center">TC58</td><td style="padding:8px 12px;text-align:center">Do 12 m</td><td style="padding:8px 12px">Magazyn wysokiego składowania</td></tr>
+</tbody></table>
+
+<h3>AC670 — przełom w skanowaniu</h3>
+<p>Skaner <strong>AC670 (Advanced Color)</strong> w Zebra TC501 to nowa generacja skanera kolorowego:</p>
+<ul>
+<li><strong>Zasięg do 30 metrów</strong> — skanuje etykiety na najwyższych regałach bez wózka widłowego, drabiny czy sled'a gun</li>
+<li><strong>Kolorowy imager</strong> — rozróżnia kolory etykiet, odczytuje kody na kolorowym tle (DPM, Digimarc)</li>
+<li><strong>Skanowanie sekwencyjne</strong> — z 10 cm (kod na paczce w ręku) do 30 m (kod na regale) bez przełączania trybu</li>
+</ul>
+
+<p>SE55 w TC58 oferuje zasięg do 12 m z IntelliFocus — świetny do 90% zastosowań, ale w magazynach z regałami powyżej 12 m potrzebna jest dodatkowa infrastruktura (wózek z terminalem lub skaner gun).</p>
+
+<p><strong>Podsumowanie:</strong> Jeśli pracujesz w magazynie wysokiego składowania (powyżej 12 m) lub potrzebujesz skanera kolorowego — TC501 z AC670. Dla standardowych zastosowań do 12 m — SE55 w TC58 jest wystarczający.</p>`
+    },
+    {
+      id: 'rfid',
+      heading: 'RFID UHF — wbudowany w TC501 vs zewnętrzny sled dla TC58',
+      content: `<p><strong>Zebra TC501 to pierwszy kolektor danych z serii TC5x z wbudowanym czytnikiem RFID UHF w KAŻDEJ konfiguracji — ponad 200 tagów/s z zasięgu do 2 m. TC58 nie ma RFID — wymaga dokupienia sled'a RFD40 (ok. 6 000 zł) lub RFD90 (ok. 9 000 zł).</strong></p>
+
+<h3>RFID w TC501 — co zyskujesz?</h3>
+<ul>
+<li><strong>Inwentaryzacja RFID bez dodatkowego sprzętu</strong> — każdy TC501 odczytuje tagi UHF RAIN RFID z zasięgu do 2 m</li>
+<li><strong>Ponad 200 tagów na sekundę</strong> — pełna inwentaryzacja regału w kilka sekund zamiast ręcznego skanowania</li>
+<li><strong>Brak dodatkowej wagi i kosztu</strong> — sled RFD40 waży 220 g i kosztuje ok. 6 000 zł; TC501 ma RFID w 273 g obudowy</li>
+<li><strong>Jeden kabel, jedno ładowanie</strong> — brak osobnej baterii sled'a do zarządzania</li>
+</ul>
+
+<h3>TC58 + sled RFD40/RFD90 — kiedy ma sens?</h3>
+<ul>
+<li>Już posiadasz flotę TC58/TC53 i potrzebujesz RFID tylko dla <strong>części pracowników</strong></li>
+<li>Potrzebujesz <strong>zasięgu RFID powyżej 2 m</strong> — sled RFD40 daje do 4,5 m, RFD90 do 9+ m</li>
+<li>Nie planujesz wymiany infrastruktury akcesoriów TC53/TC58</li>
+</ul>
+
+<h3>Kalkulacja kosztów RFID</h3>
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem">
+<thead><tr style="background:#1e3a5f;color:#fff"><th style="padding:10px 12px;text-align:left">Rozwiązanie</th><th style="padding:10px 12px;text-align:center">Koszt urządzenia</th><th style="padding:10px 12px;text-align:center">Koszt RFID</th><th style="padding:10px 12px;text-align:center">Suma</th></tr></thead>
+<tbody>
+<tr style="background:#f8fafc"><td style="padding:8px 12px"><strong>TC501 WiFi + RFID wbudowany</strong></td><td style="padding:8px 12px;text-align:center">5 688 zł</td><td style="padding:8px 12px;text-align:center">0 zł (w cenie)</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>5 688 zł</strong></td></tr>
+<tr><td style="padding:8px 12px"><strong>TC501 5G + RFID wbudowany</strong></td><td style="padding:8px 12px;text-align:center">3 730 zł</td><td style="padding:8px 12px;text-align:center">0 zł (w cenie)</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>3 730 zł</strong></td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">TC58 + sled RFD40</td><td style="padding:8px 12px;text-align:center">6 751 zł</td><td style="padding:8px 12px;text-align:center">~6 000 zł</td><td style="padding:8px 12px;text-align:center;color:#dc2626"><strong>~12 751 zł</strong></td></tr>
+<tr><td style="padding:8px 12px">TC58 + sled RFD90</td><td style="padding:8px 12px;text-align:center">6 751 zł</td><td style="padding:8px 12px;text-align:center">~9 000 zł</td><td style="padding:8px 12px;text-align:center;color:#dc2626"><strong>~15 751 zł</strong></td></tr>
+</tbody></table>
+
+<p><strong>Oszczędność z TC501:</strong> firma potrzebująca RFID oszczędza <strong>od 7 000 do 12 000 zł na każdym urządzeniu</strong> wybierając TC501 zamiast TC58 + sled.</p>`
+    },
+    {
+      id: 'lacznosc',
+      heading: 'Łączność — Wi-Fi 7 i Bluetooth 6.0 vs Wi-Fi 6E i Bluetooth 5.2',
+      content: `<p><strong>Zebra TC501 wprowadza Wi-Fi 7 (802.11be) z MLO i 2×2 MU-MIMO — 2× wyższa przepustowość niż Wi-Fi 6E w TC58. Bluetooth 6.0 w TC501 oferuje większy zasięg i stabilność niż BT 5.2 w TC58. Obie kolektory danych mają opcję 5G i NFC.</strong></p>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem">
+<thead><tr style="background:#1e3a5f;color:#fff"><th style="padding:10px 12px;text-align:left">Łączność</th><th style="padding:10px 12px;text-align:center">TC501</th><th style="padding:10px 12px;text-align:center">TC58</th></tr></thead>
+<tbody>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Wi-Fi</td><td style="padding:8px 12px;text-align:center"><strong>Wi-Fi 7</strong> (802.11be)</td><td style="padding:8px 12px;text-align:center">Wi-Fi 6E (802.11ax)</td></tr>
+<tr><td style="padding:8px 12px">Wi-Fi MIMO</td><td style="padding:8px 12px;text-align:center">2×2 MU-MIMO + <strong>MLO</strong></td><td style="padding:8px 12px;text-align:center">2×2 MU-MIMO</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Bluetooth</td><td style="padding:8px 12px;text-align:center"><strong>6.0</strong></td><td style="padding:8px 12px;text-align:center">5.2</td></tr>
+<tr><td style="padding:8px 12px">NFC</td><td style="padding:8px 12px;text-align:center">Tak</td><td style="padding:8px 12px;text-align:center">Tak</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">5G</td><td style="padding:8px 12px;text-align:center"><strong>Release 17</strong> (wersje TC501G)</td><td style="padding:8px 12px;text-align:center">FR1 (standard)</td></tr>
+<tr><td style="padding:8px 12px">SIM</td><td style="padding:8px 12px;text-align:center">nano + eSIM (TC501G)</td><td style="padding:8px 12px;text-align:center">nano + eSIM</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">GPS/GNSS</td><td style="padding:8px 12px;text-align:center"><strong>Triple-Band</strong> (TC501G)</td><td style="padding:8px 12px;text-align:center">Dual-Band L1+L5</td></tr>
+</tbody></table>
+
+<h3>Wi-Fi 7 vs Wi-Fi 6E — co zmienia MLO?</h3>
+<p><strong>Multi-Link Operation (MLO)</strong> to kluczowa różnica Wi-Fi 7: urządzenie łączy się z access pointem <strong>jednocześnie na dwóch pasmach</strong> (np. 5 GHz + 6 GHz). Jeśli jedno pasmo jest zakłócone — ruch automatycznie przechodzi na drugie bez utraty połączenia. W magazynie z setkami urządzeń i metalowymi regałami to eliminuje <strong>przerwy w komunikacji z WMS</strong>.</p>
+
+<p><strong>5G Release 17 vs FR1:</strong> TC501G obsługuje nowszy standard 5G z lepszą wydajnością energetyczną i obsługą private 5G / CBRS. TC58 ma starszy 5G FR1 — w praktyce różnica w prędkości jest minimalna, ale TC501G lepiej współpracuje z sieciami prywatnymi 5G w halach magazynowych.</p>
+
+<p><strong>Uwaga:</strong> Wersje WiFi-only TC501 (TC5010) <strong>nie mają 5G ani GPS</strong> — łączność komórkowa jest wyłącznie w wersjach TC501G. Wszystkie warianty TC58 mają 5G w standardzie.</p>`
+    },
+    {
+      id: 'wytrzymalosc',
+      heading: 'Wytrzymałość — upadki z 2,4 m vs 1,8 m',
+      content: `<p><strong>Zebra TC501 wytrzymuje upadki z 2,4 m na beton (2,7 m z rugged boot) — o 33% więcej niż TC58 (1,8 m). Oba kolektory danych mają IP68 + IP65, pracują od -20°C do +50°C i spełniają MIL-STD-810H.</strong></p>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem">
+<thead><tr style="background:#1e3a5f;color:#fff"><th style="padding:10px 12px;text-align:left">Parametr</th><th style="padding:10px 12px;text-align:center">TC501</th><th style="padding:10px 12px;text-align:center">TC58</th></tr></thead>
+<tbody>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Upadki na beton</td><td style="padding:8px 12px;text-align:center"><strong>2,4 m</strong> (2,7 m z boot)</td><td style="padding:8px 12px;text-align:center">1,8 m</td></tr>
+<tr><td style="padding:8px 12px">Tumble test</td><td style="padding:8px 12px;text-align:center"><strong>2–4× więcej</strong> niż TC53/TC58</td><td style="padding:8px 12px;text-align:center">1000× z 0,5 m</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">IP</td><td style="padding:8px 12px;text-align:center">IP68 + IP65</td><td style="padding:8px 12px;text-align:center">IP68 + IP65</td></tr>
+<tr><td style="padding:8px 12px">MIL-STD</td><td style="padding:8px 12px;text-align:center">810H</td><td style="padding:8px 12px;text-align:center">810H</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Szkło ekranu</td><td style="padding:8px 12px;text-align:center"><strong>Gorilla Glass Victus</strong></td><td style="padding:8px 12px;text-align:center">Gorilla Glass</td></tr>
+<tr><td style="padding:8px 12px">Temperatura pracy</td><td style="padding:8px 12px;text-align:center">-20°C do +50°C</td><td style="padding:8px 12px;text-align:center">-20°C do +50°C</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Waga</td><td style="padding:8px 12px;text-align:center"><strong>273 g</strong></td><td style="padding:8px 12px;text-align:center">293 g</td></tr>
+<tr><td style="padding:8px 12px">Wymiary</td><td style="padding:8px 12px;text-align:center">163 × 78 × 15,5 mm</td><td style="padding:8px 12px;text-align:center">164,8 × 77,35 × 16,75 mm</td></tr>
+</tbody></table>
+
+<p><strong>2,4 m vs 1,8 m</strong> — różnica 60 cm może wydawać się niewielka, ale w magazynie oznacza przetrwanie upadku z poziomu ramienia dorosłego operatora (bez pochylania się). TC58 z 1,8 m to upadek z poziomu pasa.</p>
+
+<p>TC501 jest też <strong>lżejszy o 20 g i mniejszy</strong> (cieńszy o 1,25 mm) — ergonomia na 8-godzinnej zmianie robi różnicę, szczególnie dla pracowników skanujących setki paczek dziennie.</p>`
+    },
+    {
+      id: 'bateria',
+      heading: 'Bateria i ładowanie — 5000/7240 mAh vs 4680/7000 mAh',
+      content: `<p><strong>Oba kolektory danych Zebra mają wymienne baterie z hot-swap — wymiana bez wyłączania urządzenia. TC501 oferuje 5000/7240 mAh z ładowaniem bezprzewodowym Qi. TC58 ma 4680/7000 mAh z PowerPrecision+. Baterie NIE są wzajemnie kompatybilne.</strong></p>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem">
+<thead><tr style="background:#1e3a5f;color:#fff"><th style="padding:10px 12px;text-align:left">Parametr</th><th style="padding:10px 12px;text-align:center">TC501</th><th style="padding:10px 12px;text-align:center">TC58</th></tr></thead>
+<tbody>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Bateria standardowa</td><td style="padding:8px 12px;text-align:center"><strong>5 000 mAh</strong></td><td style="padding:8px 12px;text-align:center">4 680 mAh</td></tr>
+<tr><td style="padding:8px 12px">Bateria rozszerzona</td><td style="padding:8px 12px;text-align:center"><strong>7 240 mAh</strong></td><td style="padding:8px 12px;text-align:center">7 000 mAh</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Hot-swap</td><td style="padding:8px 12px;text-align:center">Tak (~30 s)</td><td style="padding:8px 12px;text-align:center">Tak (warm/hot)</td></tr>
+<tr><td style="padding:8px 12px">Ładowanie bezprzewodowe</td><td style="padding:8px 12px;text-align:center"><strong>Qi wireless</strong></td><td style="padding:8px 12px;text-align:center">Brak</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Szybkie ładowanie</td><td style="padding:8px 12px;text-align:center"><strong>0→70% w 45 min</strong></td><td style="padding:8px 12px;text-align:center">Standard</td></tr>
+<tr><td style="padding:8px 12px">PowerPrecision+</td><td style="padding:8px 12px;text-align:center">Tak</td><td style="padding:8px 12px;text-align:center">Tak</td></tr>
+</tbody></table>
+
+<p><strong>Ładowanie bezprzewodowe Qi</strong> w TC501 to wygoda: wystarczy położyć terminal na stacji Qi, bez wpinania kabla ani dokowania. W środowiskach, gdzie terminale często wracają na biurko (retail, recepcja, kontrola jakości), Qi eliminuje zużywanie się złączy USB-C.</p>
+
+<p><strong>UWAGA:</strong> Baterie TC501 (BTRY-TC5A7A) <strong>nie pasują</strong> do TC58 (BTRY-TC5X) i odwrotnie. Przy migracji z TC58 na TC501 musisz wymienić zapas baterii — uwzględnij to w budżecie.</p>`
+    },
+    {
+      id: 'tco',
+      heading: 'TCO i cykl życia — Android 19 vs Android 16',
+      content: `<p><strong>Zebra TC501 z Android 15 i gwarancją aktualizacji do Android 19 oferuje minimum 8 lat wsparcia LifeGuard — 2× dłużej niż TC58 z Android do wersji 16. W kalkulacji 5-letniej TC501 jest tańszy w TCO mimo wyższej ceny WiFi-only.</strong></p>
+
+<h3>Cykl życia oprogramowania</h3>
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem">
+<thead><tr style="background:#1e3a5f;color:#fff"><th style="padding:10px 12px;text-align:left">Parametr</th><th style="padding:10px 12px;text-align:center">TC501</th><th style="padding:10px 12px;text-align:center">TC58</th></tr></thead>
+<tbody>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Android na start</td><td style="padding:8px 12px;text-align:center">Android 15</td><td style="padding:8px 12px;text-align:center">Android ~14</td></tr>
+<tr><td style="padding:8px 12px">Android max</td><td style="padding:8px 12px;text-align:center"><strong>Android 19</strong></td><td style="padding:8px 12px;text-align:center">Android 16</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Aktualizacje OS</td><td style="padding:8px 12px;text-align:center"><strong>4 wersje</strong></td><td style="padding:8px 12px;text-align:center">~1-2 wersje</td></tr>
+<tr><td style="padding:8px 12px">LifeGuard (łatki)</td><td style="padding:8px 12px;text-align:center"><strong>~8+ lat</strong></td><td style="padding:8px 12px;text-align:center">~4 lata</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Prognozowany EOL</td><td style="padding:8px 12px;text-align:center"><strong>~2032+</strong></td><td style="padding:8px 12px;text-align:center">~2028</td></tr>
+</tbody></table>
+
+<h3>Kalkulacja TCO na 5 lat (10 urządzeń)</h3>
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem">
+<thead><tr style="background:#1e3a5f;color:#fff"><th style="padding:10px 12px;text-align:left">Koszt</th><th style="padding:10px 12px;text-align:center">10× TC501 WiFi<br>(SR560, 8/128)</th><th style="padding:10px 12px;text-align:center">10× TC58<br>(SE55, 8/128)</th></tr></thead>
+<tbody>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Zakup urządzeń</td><td style="padding:8px 12px;text-align:center">58 740 zł</td><td style="padding:8px 12px;text-align:center">77 969 zł</td></tr>
+<tr><td style="padding:8px 12px">OneCare 5 lat</td><td style="padding:8px 12px;text-align:center">20 218 zł</td><td style="padding:8px 12px;text-align:center">20 587 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Baterie zapasowe (2/urz.)</td><td style="padding:8px 12px;text-align:center">~6 000 zł</td><td style="padding:8px 12px;text-align:center">~5 600 zł</td></tr>
+<tr><td style="padding:8px 12px">Stacja ładująca 5-slot</td><td style="padding:8px 12px;text-align:center">~4 500 zł</td><td style="padding:8px 12px;text-align:center">~4 500 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px"><strong>SUMA 5-letnia</strong></td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>~89 458 zł</strong></td><td style="padding:8px 12px;text-align:center">~108 656 zł</td></tr>
+<tr><td style="padding:8px 12px"><strong>Koszt / urządzenie / rok</strong></td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>~1 789 zł</strong></td><td style="padding:8px 12px;text-align:center">~2 173 zł</td></tr>
+</tbody></table>
+
+<p><strong>TC501 jest tańszy o ~19 200 zł na 10 urządzeniach w 5 lat</strong> — głównie dzięki niższej cenie zakupu i dłuższemu cyklowi życia (możliwość eksploatacji 8 lat zamiast 5).</p>
+
+<p>Jeśli doliczysz koszt RFID: TC58 z 10 sled'ami RFD40 dodaje ~60 000 zł — łączny koszt rośnie do ~168 656 zł vs ~89 458 zł za TC501 z RFID w standardzie.</p>`
+    },
+    {
+      id: 'akcesoria',
+      heading: 'Akcesoria i kompatybilność — nowy ekosystem TC501 vs TC53/TC58',
+      content: `<p><strong>Zebra TC58 współdzieli akcesoria z TC53 (baterie, stacje ShareCradle, uchwyty, kabure) — ogromna zaleta dla firm z istniejącą flotą. TC501 ma zupełnie nowy ekosystem akcesoriów — baterie, stacje i obudowy NIE są kompatybilne z TC53/TC58.</strong></p>
+
+<h3>Kompatybilność akcesoriów</h3>
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem">
+<thead><tr style="background:#1e3a5f;color:#fff"><th style="padding:10px 12px;text-align:left">Akcesorium</th><th style="padding:10px 12px;text-align:center">TC501</th><th style="padding:10px 12px;text-align:center">TC58 / TC53</th></tr></thead>
+<tbody>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Baterie</td><td style="padding:8px 12px;text-align:center">BTRY-TC5A7A (nowe)</td><td style="padding:8px 12px;text-align:center">BTRY-TC5X (wspólne z TC53)</td></tr>
+<tr><td style="padding:8px 12px">Stacja ShareCradle</td><td style="padding:8px 12px;text-align:center">Nowe (1/2/5-slot)</td><td style="padding:8px 12px;text-align:center">Wspólne z TC53</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Trigger Handle</td><td style="padding:8px 12px;text-align:center">Elektroniczny (nowy)</td><td style="padding:8px 12px;text-align:center">TRG-TC5X (wspólny z TC53)</td></tr>
+<tr><td style="padding:8px 12px">Rugged Boot</td><td style="padding:8px 12px;text-align:center">Exoskeleton (nowy)</td><td style="padding:8px 12px;text-align:center">Rugged Boot TC53</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Uchwyt samochodowy</td><td style="padding:8px 12px;text-align:center">Nowy</td><td style="padding:8px 12px;text-align:center">CRD-TC7NG (wspólny z TC73/78)</td></tr>
+</tbody></table>
+
+<p><strong>Dla firm z istniejącą flotą TC53/TC58:</strong> Migracja na TC501 oznacza wymianę WSZYSTKICH akcesoriów — baterii zapasowych, stacji ładujących, uchwytów i etui. Przy 50 urządzeniach koszt akcesoriów może sięgnąć 30 000–50 000 zł. Rozważ stopniową migrację: nowe wdrożenia na TC501, istniejąca flota na TC58 do końca cyklu życia.</p>
+
+<p><strong>Dla nowych wdrożeń:</strong> Brak bagażu kompatybilności — wybierz TC501 z nowymi akcesoriami od razu.</p>
+
+<p>👉 <a href="/produkt/zebra-tc501">Pełna lista akcesoriów TC501</a> · <a href="/produkt/zebra-tc58">Pełna lista akcesoriów TC58</a></p>`
+    },
+    {
+      id: 'werdykt',
+      heading: 'Werdykt — Zebra TC501 czy TC58 w 2026 roku?',
+      content: `<p><strong>Zebra TC501 wygrywa w 9 na 10 kategorii: procesor, wyświetlacz, skaner, RFID, łączność, wytrzymałość, bateria, cykl życia i cena. TC58 ma jedną przewagę: pełną kompatybilność akcesoriów z TC53 dla firm z istniejącą flotą.</strong></p>
+
+<h3>Wybierz Zebra TC501, jeśli:</h3>
+<ul>
+<li>Potrzebujesz <strong>RFID UHF</strong> do inwentaryzacji — oszczędzasz 6 000–9 000 zł na sled'zie</li>
+<li>Planujesz wdrożenie <strong>AI on-device</strong> (rozpoznawanie produktów, OCR, weryfikacja etykiet)</li>
+<li>Pracujesz na <strong>zewnątrz lub w oświetleniu</strong> — AMOLED 1500 nit jest czytelny w każdych warunkach</li>
+<li>Potrzebujesz <strong>skanera dalekiego zasięgu powyżej 12 m</strong> — AC670 sięga do 30 m</li>
+<li>Zależy Ci na <strong>najdłuższym cyklu życia</strong> — Android do v19, ~8 lat wsparcia</li>
+<li>Startujesz <strong>nowe wdrożenie</strong> bez bagażu kompatybilności z TC53</li>
+<li>Szukasz <strong>najlepszej ceny terminala 5G</strong> — TC501G od 3 730 zł vs TC58 od 6 751 zł</li>
+</ul>
+
+<h3>Wybierz Zebra TC58, jeśli:</h3>
+<ul>
+<li>Masz <strong>istniejącą flotę TC53</strong> i chcesz dokupić terminale z 5G na tych samych bateriach i stacjach</li>
+<li><strong>Nie potrzebujesz RFID</strong> — Twoja firma używa wyłącznie kodów kreskowych</li>
+<li>Potrzebujesz <strong>5G w standardzie</strong> w każdym wariancie (TC501 WiFi-only nie ma 5G)</li>
+<li>Chcesz <strong>uniknąć wymiany infrastruktury</strong> akcesoriów (baterie, stacje, uchwyty)</li>
+<li>Twoja firma ma <strong>podpisane umowy serwisowe OneCare</strong> na linię TC53/TC58</li>
+</ul>
+
+<h3>Rekomendacja wg zastosowania</h3>
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem">
+<thead><tr style="background:#1e3a5f;color:#fff"><th style="padding:10px 12px;text-align:left">Zastosowanie</th><th style="padding:10px 12px;text-align:center">Rekomendacja</th><th style="padding:10px 12px;text-align:left">Dlaczego?</th></tr></thead>
+<tbody>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Magazyn z RFID</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501</strong></td><td style="padding:8px 12px">RFID w standardzie, AC670 do 30 m, tańszy o 7 000+ zł</td></tr>
+<tr><td style="padding:8px 12px">Magazyn bez RFID (nowa flota)</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501</strong></td><td style="padding:8px 12px">Lepszy ekran, procesor, bateria, dłuższy cykl życia, niższa cena</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Rozbudowa floty TC53/TC58</td><td style="padding:8px 12px;text-align:center;color:#2563eb"><strong>TC58</strong></td><td style="padding:8px 12px">Te same baterie i stacje, zero kosztów migracji</td></tr>
+<tr><td style="padding:8px 12px">Kurier / serwis terenowy</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501G (5G)</strong></td><td style="padding:8px 12px">Tańszy 5G (3 730 zł), lżejszy, GPS Triple-Band</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Retail / sklep</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501</strong></td><td style="padding:8px 12px">RFID do inwentaryzacji, AMOLED czytelny pod lampami, AI OCR</td></tr>
+<tr><td style="padding:8px 12px">Produkcja / kontrola jakości</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501</strong></td><td style="padding:8px 12px">AI NPU weryfikuje etykiety i rozpoznaje produkty kamerą</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Healthcare</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501</strong></td><td style="padding:8px 12px">RFID identyfikacja pacjentów, AMOLED czytelny na korytarzu</td></tr>
+</tbody></table>
+
+<p><strong>Podsumowanie:</strong> Dla nowych wdrożeń w 2026 roku <a href="/produkt/zebra-tc501">Zebra TC501</a> jest lepszym wyborem w niemal każdym scenariuszu — niższa cena, więcej technologii, dłuży cykl życia. <a href="/produkt/zebra-tc58">Zebra TC58</a> pozostaje racjonalnym wyborem wyłącznie dla firm rozbudowujących istniejącą flotę TC53/TC58, które nie chcą wymieniać infrastruktury akcesoriów.</p>
+
+<p>Potrzebujesz pomocy w wyborze? <a href="/kontakt">Skontaktuj się z doradcą TAKMA</a> — dobierzemy konfigurację do Twojego budżetu i zastosowania.</p>`
+    }
+  ],
+  faq: [
+    {
+      question: 'Czym różni się Zebra TC501 od TC58?',
+      answer: 'TC501 to kolektor danych nowej generacji (2025/2026) z procesorem AI Dragonwing Q-6690, ekranem AMOLED 1500 nit, wbudowanym RFID UHF, Wi-Fi 7 i skanerem AC670 do 30 m. TC58 to sprawdzony terminal 5G (2023) z Qualcomm 6490, IPS 600 nit, Wi-Fi 6E i skanerem SE55 do 12 m. TC501 wygrywa w każdej kategorii poza kompatybilnością akcesoriów z TC53.'
+    },
+    {
+      question: 'Ile kosztuje Zebra TC501 vs TC58?',
+      answer: 'Zebra TC501 5G (kolektor danych) startuje od 3 730 zł netto, wersje WiFi od 5 688 zł. Zebra TC58 kosztuje od 6 751 zł netto. TC501 jest paradoksalnie tańszy od starszego TC58, oferując więcej technologii (RFID, AI, AMOLED). Ceny netto, marzec 2026.'
+    },
+    {
+      question: 'Czy Zebra TC501 ma wbudowany RFID UHF?',
+      answer: 'Tak — TC501 to pierwszy kolektor danych z serii TC5x z wbudowanym czytnikiem RFID UHF w KAŻDEJ konfiguracji. Odczytuje ponad 200 tagów RAIN RFID na sekundę z zasięgu do 2 m. TC58 nie ma RFID — wymaga dokupienia sled\'a RFD40 (~6 000 zł) lub RFD90 (~9 000 zł). Firma potrzebująca RFID oszczędza 7 000–12 000 zł na urządzeniu wybierając TC501.'
+    },
+    {
+      question: 'Co to jest AI NPU w Zebra TC501 i do czego służy?',
+      answer: 'NPU (Neural Processing Unit) to dedykowany procesor sztucznej inteligencji w TC501 — przetwarza AI lokalnie na urządzeniu bez chmury. Zastosowania: rozpoznawanie produktów kamerą (uszkodzone etykiety), OCR numerów seryjnych i dat ważności, weryfikacja poprawności nadruku etykiet w linii produkcyjnej. Dane nie opuszczają urządzenia — zgodność z RODO. TC58 nie ma NPU.'
+    },
+    {
+      question: 'Który skaner jest lepszy: AC670 (TC501) czy SE55 (TC58)?',
+      answer: 'AC670 w TC501 ma zasięg do 30 m z kolorowym imagerem — skanuje etykiety na najwyższych regałach bez drabiny. SE55 w TC58 ma zasięg do 12 m z IntelliFocus. Dla magazynów z regałami do 12 m SE55 jest wystarczający. Powyżej 12 m lub przy potrzebie skanowania kolorowego (DPM, Digimarc) — AC670 jest konieczny.'
+    },
+    {
+      question: 'Czy ekran AMOLED 1500 nit w TC501 naprawdę robi różnicę?',
+      answer: 'Tak — 1500 nit to 2,5× więcej niż 600 nit w TC58. Na rampie załadunkowej, placu magazynowym czy w punkcie odbioru na zewnątrz ekran TC58 wymaga osłonięcia dłonią. TC501 jest czytelny w pełnym słońcu bez mrużenia oczu. Głęboka czerń AMOLED zmniejsza zmęczenie wzroku na wielogodzinnych zmianach. Gorilla Glass Victus lepiej chroni przed zarysowaniami.'
+    },
+    {
+      question: 'Czy akcesoria z TC58/TC53 pasują do TC501?',
+      answer: 'NIE — TC501 ma zupełnie nowy ekosystem akcesoriów. Baterie TC53/TC58 (BTRY-TC5X) nie pasują do TC501 (BTRY-TC5A7A). Stacje ShareCradle TC53 nie obsługują TC501. Przy migracji z TC58 na TC501 musisz wymienić baterie zapasowe, stacje ładujące, uchwyty i etui. TC58 natomiast jest w pełni kompatybilny z akcesoriami TC53.'
+    },
+    {
+      question: 'Jak długo będzie wspierany Android w TC501 vs TC58?',
+      answer: 'TC501 startuje z Android 15 i ma gwarancję aktualizacji do Android 19 (4 generacje) — minimum 8 lat wsparcia LifeGuard. TC58 kończy wsparcie na Android 16 (~1-2 aktualizacje) — prognozowany EOL ok. 2028. Dla firm planujących 5+ lat eksploatacji TC501 jest jedynym bezpiecznym wyborem.'
+    },
+    {
+      question: 'Czy TC501 jest następcą TC58?',
+      answer: 'Nie bezpośrednio. TC501 to następca linii TC52/TC53 — nowa klasa z RFID i AI. TC58 to wersja TC53 z 5G. W praktyce TC501 5G (TC501G) zastępuje zarówno TC53, jak i TC58 — oferuje wszystko co miał TC58 plus RFID, AI, AMOLED, Wi-Fi 7 w niższej cenie. TC58 pozostaje aktualny dla firm rozbudowujących istniejące floty TC53.'
+    },
+    {
+      question: 'Który kolektor danych jest lepszy do magazynu: TC501 czy TC58?',
+      answer: 'Do nowego wdrożenia w magazynie — TC501: RFID do inwentaryzacji, skaner AC670 do 30 m na wysokie regały, AMOLED czytelny pod halogenami, AI do weryfikacji etykiet. Do rozbudowy istniejącej floty TC53/TC58 — TC58: te same baterie i stacje, zero kosztów migracji. TC501 jest lepszy merytorycznie i tańszy, ale wymaga nowej infrastruktury akcesoriów.'
+    },
+    {
+      question: 'Ile waży Zebra TC501 vs TC58?',
+      answer: 'TC501 waży 273 g z baterią standardową (303 g z rozszerzoną) — lżejszy o 20 g od TC58 (293 g). TC501 jest też mniejszy: 163 × 78 × 15,5 mm vs 164,8 × 77,35 × 16,75 mm (cieńszy o 1,25 mm). Na 8-godzinnej zmianie 20 g mniej robi zauważalną różnicę w komforcie.'
+    },
+    {
+      question: 'Czy TC501 i TC58 mają 5G?',
+      answer: 'TC58 ma 5G w standardzie — KAŻDY wariant obsługuje 5G/4G LTE/3G z nano SIM + eSIM. TC501 ma 5G TYLKO w wersjach WAN (TC501G) — wersje WiFi-only (TC5010) nie mają łączności komórkowej. TC501G obsługuje nowszy 5G Release 17 z private 5G i CBRS. Jeśli potrzebujesz 5G w każdym urządzeniu — sprawdź wariant TC501G.'
+    },
+    {
+      question: 'Jaka jest żywotność baterii TC501 vs TC58?',
+      answer: 'TC501: bateria 5000 mAh na ~12h pracy, 7240 mAh na ~16h + ładowanie Qi wireless + szybkie 0→70% w 45 min. TC58: bateria 4680 mAh na ~15h, 7000 mAh na ~22h. TC58 ma dłuższy czas pracy na jednym ładowaniu (mniejszy ekran IPS zużywa mniej energii niż AMOLED), ale TC501 oferuje szybsze ładowanie i bezprzewodowe Qi.'
+    },
+    {
+      question: 'Ile kosztuje serwis Zebra TC501 i TC58 w Polsce?',
+      answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne. Kontrakt OneCare Essential 3 lata: TC501 od 1 238 zł, TC58 od 1 260 zł netto. OneCare 5 lat: TC501 od 2 022 zł, TC58 od 2 059 zł netto. Czas naprawy: 3–5 dni roboczych.'
+    },
+    {
+      question: 'Czy warto migrować z TC58 na TC501?',
+      answer: 'Zależy od sytuacji. Warto migrować, jeśli: potrzebujesz RFID (oszczędność 7 000+ zł/urządzenie vs sled), planujesz AI (OCR, rozpoznawanie), TC58 kończy cykl życia (EOL ~2028). Nie warto migrować, jeśli: masz dużą flotę TC53/TC58 z zapasem akcesoriów, nie potrzebujesz RFID ani AI, TC58 działa poprawnie do 2028. Najlepsza strategia: nowe wdrożenia na TC501, istniejąca flota na TC58 do EOL.'
+    },
+    {
+      question: 'Gdzie kupić Zebra TC501 i TC58 w Polsce?',
+      answer: 'Oba kolektory danych Zebra dostępne są w autoryzowanym sklepie TAKMA (takma.com.pl) — oficjalny partner Zebra Technologies z ponad 20-letnim doświadczeniem. Oferujemy: doradztwo w konfiguracji, wycenę flotową (rabaty od 5 szt.), wdrożenie, szkolenie i serwis gwarancyjny. Kontakt: takma.com.pl/kontakt.'
+    },
+    {
+      question: 'Jakie są alternatywy dla Zebra TC501 i TC58?',
+      answer: 'Alternatywy w portfolio Zebra: TC53 (WiFi-only, tańszy TC58 bez 5G, od 5 060 zł), TC53e/TC58e (ekonomiczne wersje essential), TC701 (ultra-rugged do chłodni -30°C). Konkurencja: Honeywell CT47 (5G, FlexRange 24 m — ale brak RFID, brak Wi-Fi 7, mniejszy ekran), Honeywell CT70 (Wi-Fi 7, ale droższszy), Datalogic Memor 35 (tańszy, ale krótsze wsparcie). TC501 jest jedynym terminalem z RFID UHF w standardzie, AI NPU i AMOLED 1500 nit.'
+    }
+  ],
+  relatedLinks: [
+    { title: 'Zebra TC501 — karta produktu', href: '/produkt/zebra-tc501' },
+    { title: 'Zebra TC58 — karta produktu', href: '/produkt/zebra-tc58' },
+    { title: 'Zebra TC58e — karta produktu', href: '/produkt/zebra-tc58e' },
+    { title: 'Zebra TC53 — karta produktu', href: '/produkt/zebra-tc53' },
+    { title: 'Zebra TC27 vs TC58e — porównanie', href: '/poradnik/zebra-tc27-vs-tc58e' },
+    { title: 'Zebra vs Honeywell — porównanie terminali', href: '/poradnik/zebra-vs-honeywell-terminale-mobilne' },
+    { title: 'Jak wybrać terminal mobilny — poradnik', href: '/poradnik/jak-wybrac-terminal-mobilny' },
+    { title: 'TOP 10 terminali mobilnych 2026', href: '/poradnik/top-10-terminali-mobilnych-2026' },
+    { title: 'Wszystkie terminale mobilne', href: '/terminale-mobilne' },
+    { title: 'Serwis terminali Zebra', href: 'https://www.serwis-zebry.pl/serwis-terminali-mobilnych-zebra' },
+    { title: 'Kontakt i doradztwo', href: '/kontakt' },
+  ]
 }
 ]
 
