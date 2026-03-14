@@ -290,9 +290,9 @@ export default function GuidePage({ guide }: GuidePageProps) {
               <div className="space-y-10">
                 {guide.sections.map(section => (
                   <section key={section.id} id={section.id}>
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4 pl-4 border-l-4 border-[#A8F000]">{section.heading}</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">{section.heading}</h2>
                     <div
-                      className="prose prose-gray max-w-none overflow-x-auto sm:text-justify prose-headings:text-gray-900 prose-headings:text-left prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl [&_img]:max-h-48 sm:[&_img]:max-h-64 [&_table]:w-full [&_table]:text-xs sm:[&_table]:text-sm [&_table]:border-collapse [&_table]:shadow-sm [&_table]:border [&_table]:border-gray-200 [&_th]:bg-gray-800 [&_th]:text-white [&_th]:text-left [&_th]:font-semibold [&_th]:!normal-case [&_th]:!tracking-normal [&_th]:px-2 [&_th]:py-2 sm:[&_th]:px-4 sm:[&_th]:py-3 [&_td]:px-2 [&_td]:py-2 sm:[&_td]:px-4 sm:[&_td]:py-3 [&_td]:border-t [&_td]:border-gray-100 [&_tbody_tr:nth-child(even)]:bg-gray-50/60 [&_tbody_tr:hover]:bg-blue-50/40 [&_tbody_tr]:transition-colors [&_td:first-child]:font-semibold [&_td:first-child]:text-gray-900"
+                      className="prose prose-gray max-w-none overflow-x-auto sm:text-justify prose-headings:text-gray-900 prose-headings:text-left prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl [&_img]:max-h-48 sm:[&_img]:max-h-64 [&_table]:w-full [&_table]:text-[11px] sm:[&_table]:text-sm [&_table]:border-collapse [&_table]:shadow-sm [&_table]:border [&_table]:border-gray-200 [&_table]:table-fixed [&_th]:bg-gray-800 [&_th]:text-white [&_th]:text-left [&_th]:font-semibold [&_th]:!normal-case [&_th]:!tracking-normal [&_th]:px-1.5 [&_th]:py-1.5 sm:[&_th]:px-4 sm:[&_th]:py-3 [&_th]:break-words [&_td]:px-1.5 [&_td]:py-1.5 sm:[&_td]:px-4 sm:[&_td]:py-3 [&_td]:break-words [&_td]:border-t [&_td]:border-gray-100 [&_tbody_tr:nth-child(even)]:bg-gray-50/60 [&_tbody_tr:hover]:bg-blue-50/40 [&_tbody_tr]:transition-colors [&_td:first-child]:font-semibold [&_td:first-child]:text-gray-900"
                       dangerouslySetInnerHTML={{ __html: boldifyModels(section.content) }}
                     />
                   </section>
@@ -302,7 +302,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
               {/* FAQ Section */}
               {guide.faq.length > 0 && (
                 <section id="faq" className="mt-12 pt-8 border-t border-gray-200">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-6 pl-4 border-l-4 border-[#A8F000]">Najczęstsze pytania (FAQ)</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-6">Najczęstsze pytania (FAQ)</h2>
                   <div className="space-y-4">
                     {guide.faq.map((item, i) => (
                       <details key={i} className="group bg-gray-50 rounded-xl overflow-hidden border-l-2 border-transparent group-open:border-[#A8F000]">
