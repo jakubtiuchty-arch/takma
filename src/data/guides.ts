@@ -3451,7 +3451,7 @@ export const guides: Guide[] = [
       heading: 'Skanery SE4710 vs SE55 — standard czy daleki zasięg?',
       content: `<p style="background:#f8fee6;border-left:4px solid #A8F000;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:16px"><strong>Oba kolektory danych Zebra TC22/TC27 oferują dwa skanery: SE4710 (standard, do 35 cm) do retail i apteki, oraz SE55 Advanced Range (do 7,6 m) do magazynów z regałami powyżej 2 m. Dopłata za SE55 wynosi 400–550 zł — więcej niż dopłata za 5G (273 zł).</strong></p>
 
-<img src="/images/products/tc22_scanner_3.png" alt="Zebra TC22/TC27 — skaner kodów kreskowych SE4710 i SE55 Advanced Range" style="max-width:260px;margin:0 auto 16px;display:block" loading="lazy" />
+<img src="/images/tc22_skaner.png" alt="Kolektor danych Zebra TC22/TC27 — widok z tyłu, okno skanera SE4710/SE55 i kamera 16 MP" style="max-width:260px;margin:0 auto 16px;display:block" loading="lazy" />
 
 <p><strong>Wybór skanera wpływa na cenę TC22/TC27 bardziej niż wybór łączności.</strong> Różnica między wariantem SE4710 a SE55 to ok. 400–550 zł — więcej niż dopłata za 5G (273 zł). Oba skanery dekodują kody 1D i 2D w 0,3 sekundy.</p>
 
