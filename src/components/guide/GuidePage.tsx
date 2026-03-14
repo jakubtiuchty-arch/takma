@@ -180,14 +180,14 @@ export default function GuidePage({ guide }: GuidePageProps) {
             {/* Hero with dark gradient + Zebra green accent */}
             <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
               {/* Zebra green accent glow */}
-              <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#b5e550]/10 to-transparent" />
-              <div className="absolute bottom-0 left-1/4 w-96 h-1 bg-gradient-to-r from-transparent via-[#b5e550]/40 to-transparent" />
+              <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#A8F000]/10 to-transparent" />
+              <div className="absolute bottom-0 left-1/4 w-96 h-1 bg-gradient-to-r from-transparent via-[#A8F000]/40 to-transparent" />
               <div className="relative">
                 <nav className="container-main pt-4 pb-2" aria-label="Breadcrumb">
                   <ol className="flex items-center gap-1.5 text-sm text-white/70 flex-wrap">
-                    <li><Link href="/" className="hover:text-[#b5e550] transition-colors">Strona główna</Link></li>
+                    <li><Link href="/" className="hover:text-[#A8F000] transition-colors">Strona główna</Link></li>
                     <li><ChevronRightIcon size={14} className="text-white/40" /></li>
-                    <li><Link href="/poradnik" className="hover:text-[#b5e550] transition-colors">Poradniki</Link></li>
+                    <li><Link href="/poradnik" className="hover:text-[#A8F000] transition-colors">Poradniki</Link></li>
                     <li><ChevronRightIcon size={14} className="text-white/40" /></li>
                     <li className="text-white font-medium truncate max-w-[300px]">{guide.title}</li>
                   </ol>
@@ -195,7 +195,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
                 <header className="container-main pt-6 pb-12">
                   <div className="max-w-4xl">
                     <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4">
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[#b5e550]/20 text-[#b5e550]">
+                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[#A8F000]/20 text-[#A8F000]">
                         {guideCategoryLabels[guide.category]}
                       </span>
                       <span className="text-sm text-white/70">{guide.readTime} czytania</span>
