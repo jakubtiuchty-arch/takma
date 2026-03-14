@@ -3858,11 +3858,11 @@ export const guides: Guide[] = [
 
 <div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
 <div style="flex:1;min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
-<img src="/images/products/keyboard_mc34.png" alt="Klawiatura 38-klawiszowa kolektora danych Zebra MC3400 — widok z przodu" style="max-height:160px;object-fit:contain" loading="lazy" />
+<img src="/images/products/keyboard_mc34.png" alt="Klawiatura 38-klawiszowa kolektora danych Zebra MC3400 — widok z przodu" style="max-height:340px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC3400 — klawiatura 38-klawiszowa</p>
 </div>
 <div style="flex:1;min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
-<img src="/images/products/keyboard_mc94.png" alt="Klawiatura 53-klawiszowa wymienna terminala Zebra MC9400 — widok z przodu" style="max-height:160px;object-fit:contain" loading="lazy" />
+<img src="/images/products/keyboard_mc94.png" alt="Klawiatura 53-klawiszowa wymienna terminala Zebra MC9400 — widok z przodu" style="max-height:340px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC9400 — klawiatura 53-klawiszowa (wymienna)</p>
 </div>
 </div>
