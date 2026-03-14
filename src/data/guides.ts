@@ -3009,6 +3009,7 @@ export const guides: Guide[] = [
 {
   slug: 'zebra-tc27-vs-tc58e',
   title: 'Zebra TC27 vs TC58e — porównanie kolektorów danych z 5G',
+  heroImage: '/images/guides/zebra-tc27-zebra-tc58e-porownanie-kolektorow.png',
   seoTitle: 'Zebra TC27 vs TC58e — porównanie kolektorów danych 2026 | Terminal TC27 czy TC58e? Ceny, TCO',
   seoDescription: 'Porównanie Zebra TC27 vs TC58e: kolektor danych TC27 to budżetowy terminal z 5G za 2 690 zł, TC58e to premium z większą baterią i -20°C za 5 337 zł. Specyfikacje, TCO, 20 FAQ.',
   excerpt: 'Zebra TC27 (kolektor danych z 5G od 2 690 zł) vs TC58e (terminal premium od 5 337 zł) — porównanie procesorów, skanerów, baterii, wytrzymałości, TCO na 5 lat i rekomendacje wg branży.',
