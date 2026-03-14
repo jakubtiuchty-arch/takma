@@ -4607,23 +4607,23 @@ export const guides: Guide[] = [
     {
       id: 'podsumowanie-koncowe',
       heading: 'Podsumowanie — którego skanera Zebra potrzebujesz?',
-      content: `<div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px">
-<div style="flex:1;min-width:220px;background:#f8fee6;border:2px solid #A8F000;border-radius:12px;padding:16px">
+      content: `<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+<div style="background:#f8fee6;border:2px solid #A8F000;border-radius:12px;padding:16px">
 <h4 style="margin:0 0 8px 0;color:#7ab800">Kasa / apteka</h4>
 <p style="margin:0;font-size:14px"><a href="/produkt/zebra-ds2208">DS2208</a> — od 352 zł</p>
 <p style="margin:2px 0 0 0;font-size:12px;color:#64748b">Przewodowy USB, 5 lat gwarancji, FMD</p>
 </div>
-<div style="flex:1;min-width:220px;background:#f8fee6;border:2px solid #A8F000;border-radius:12px;padding:16px">
+<div style="background:#f8fee6;border:2px solid #A8F000;border-radius:12px;padding:16px">
 <h4 style="margin:0 0 8px 0;color:#7ab800">Retail premium</h4>
 <p style="margin:0;font-size:14px"><a href="/produkt/zebra-ds8208">DS8208</a> — od 1 027 zł</p>
 <p style="margin:2px 0 0 0;font-size:12px;color:#64748b">2 MP, 3 m upadki, EAS, 5 lat</p>
 </div>
-<div style="flex:1;min-width:220px;background:#fef3c7;border:2px solid #f59e0b;border-radius:12px;padding:16px">
+<div style="background:#fef3c7;border:2px solid #f59e0b;border-radius:12px;padding:16px">
 <h4 style="margin:0 0 8px 0;color:#d97706">Hands-free</h4>
 <p style="margin:0;font-size:14px"><a href="/produkt/zebra-ds9308">DS9308</a> — od 995 zł</p>
 <p style="margin:2px 0 0 0;font-size:12px;color:#64748b">Prezentacyjny, FOV 52°, kompaktowy</p>
 </div>
-<div style="flex:1;min-width:220px;background:#fce7f3;border:2px solid #ec4899;border-radius:12px;padding:16px">
+<div style="background:#fce7f3;border:2px solid #ec4899;border-radius:12px;padding:16px">
 <h4 style="margin:0 0 8px 0;color:#be185d">Magazyn</h4>
 <p style="margin:0;font-size:14px"><a href="/produkt/zebra-ds3608-sr">DS3608-SR</a> — od 1 287 zł</p>
 <p style="margin:2px 0 0 0;font-size:12px;color:#64748b">IP68, 3 m upadki, -30°C, 152 cm</p>
