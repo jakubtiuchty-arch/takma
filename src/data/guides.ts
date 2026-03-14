@@ -3343,12 +3343,12 @@ export const guides: Guide[] = [
 },
 {
   slug: 'zebra-tc22-vs-tc27',
-  title: 'Zebra TC22 vs TC27 — porównanie terminali mobilnych 2026',
-  seoTitle: 'Zebra TC22 vs TC27 — porównanie 2026 | Wi-Fi vs 5G, ceny, TCO',
-  seoDescription: 'Zebra TC22 vs TC27 — szczegółowe porównanie terminali mobilnych 2026: Wi-Fi 6E vs 5G/LTE, skanery SE4710 i SE55, ceny od 2 417 zł, TCO, 15 FAQ. Który wybrać do magazynu, a który w teren?',
-  excerpt: 'Zebra TC22 i TC27 to bliźniacze terminale mobilne — identyczny procesor, ekran i skanery, ale TC27 dodaje 5G, dual SIM i GPS. Porównanie z cenami netto, kalkulacją TCO i rekomendacjami wg branży.',
+  title: 'Zebra TC22 vs TC27 — porównanie kolektorów danych (terminali mobilnych) 2026',
+  seoTitle: 'Zebra TC22 vs TC27 — porównanie kolektorów danych 2026 | Wi-Fi vs 5G, ceny, TCO',
+  seoDescription: 'Zebra TC22 vs TC27 — szczegółowe porównanie kolektorów danych 2026: Wi-Fi 6E vs 5G/LTE, skanery SE4710 i SE55, ceny od 2 417 zł, TCO, 17 FAQ. Który kolektor wybrać do magazynu, a który w teren?',
+  excerpt: 'Zebra TC22 i TC27 to bliźniacze kolektory danych (terminale mobilne) — identyczny procesor, ekran i skanery, ale TC27 dodaje 5G, dual SIM i GPS. Porównanie z cenami netto, kalkulacją TCO i rekomendacjami wg branży.',
   category: 'porownanie' as const,
-  tags: ['terminale-mobilne', 'porownanie', 'zebra', 'tc22', 'tc27', 'wi-fi-vs-5g', 'tco', 'magazyn', 'kurier'],
+  tags: ['terminale-mobilne', 'porownanie', 'zebra', 'tc22', 'tc27', 'wi-fi-vs-5g', 'tco', 'magazyn', 'kurier', 'kolektor-danych', 'Zebra TC22', 'Zebra TC27', 'TC22 vs TC27'],
   publishedAt: '2026-03-13',
   updatedAt: '2026-03-13',
   readTime: '14 min',
@@ -3359,16 +3359,20 @@ export const guides: Guide[] = [
       heading: 'Zebra TC22 vs TC27 — Wi-Fi czy 5G? Kompletne porównanie 2026',
       content: `<div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:24px;justify-content:center">
 <div style="min-width:200px;text-align:center">
-<img src="/images/products/tc22_front.png" alt="Zebra TC22 — terminal mobilny Wi-Fi 6E, widok z przodu" style="max-height:180px;margin:0 auto" loading="lazy" />
+<img src="/images/products/tc22_front.png" alt="Kolektor danych Zebra TC22 — terminal mobilny Wi-Fi 6E, widok z przodu" style="max-height:180px;margin:0 auto" loading="lazy" />
 <p><strong><a href="/produkt/zebra-tc22">Zebra TC22</a></strong><br/>Wi-Fi 6E · od 2 417 zł netto</p>
 </div>
 <div style="min-width:200px;text-align:center">
-<img src="/images/products/tc22_scanner_2.png" alt="Zebra TC27 — terminal mobilny 5G z GPS, widok z tyłu" style="max-height:180px;margin:0 auto" loading="lazy" />
+<img src="/images/products/tc22_scanner_2.png" alt="Kolektor danych Zebra TC27 — terminal mobilny 5G z GPS i dual SIM, widok z tyłu" style="max-height:180px;margin:0 auto" loading="lazy" />
 <p><strong><a href="/produkt/zebra-tc27">Zebra TC27</a></strong><br/>5G + Wi-Fi 6E + GPS · od 2 690 zł netto</p>
 </div>
 </div>
 
-<p><strong>Zebra TC22 i TC27 to bliźniacze terminale mobilne z serii TC2x — trzecia generacja bestsellerowych TC21/TC26, następcy najpopularniejszych kolektorów danych w Europie.</strong> Identyczny procesor Qualcomm 5430 (2,1 GHz), 6-calowy ekran FHD+, skanery SE4710/SE55, obudowa IP68 i baterie PowerPrecision hot-swap. Jedyna różnica: TC22 ma wyłącznie Wi-Fi 6E, a TC27 dodaje moduł 5G FR1, dual SIM (nano + eSIM) i GPS/GNSS.</p>
+<p><strong>Zebra TC22</strong> — wytrzymały kolektor danych (terminal mobilny) z Wi-Fi 6E, procesorem Qualcomm 5430 (6 rdzeni, 2,1 GHz), ekranem 6" FHD+, skanerem SE4710 lub SE55 i obudową IP68. Waga: 236 g. Cena od 2 417 zł netto (2026). Producent: Zebra Technologies. Następca modelu TC21.</p>
+
+<p><strong>Zebra TC27</strong> — kolektor danych (terminal mobilny) z 5G FR1, Wi-Fi 6E, GPS/GNSS (L1+L5), dual SIM i procesorem Qualcomm 5430. Identyczna obudowa, ekran i skanery jak TC22, plus moduł łączności komórkowej i nawigacji satelitarnej. Cena od 2 690 zł netto (2026). Producent: Zebra Technologies. Następca modelu TC26.</p>
+
+<p><strong>Zebra TC22 i TC27 to bliźniacze kolektory danych (terminale mobilne) z serii TC2x — trzecia generacja bestsellerowych TC21/TC26, najpopularniejszych terminali enterprise w Europie.</strong> Identyczny procesor Qualcomm 5430 (2,1 GHz), 6-calowy ekran FHD+, skanery SE4710/SE55, obudowa IP68 i baterie PowerPrecision hot-swap. Jedyna różnica: kolektor danych Zebra TC22 ma wyłącznie Wi-Fi 6E, a kolektor danych Zebra TC27 dodaje moduł 5G FR1, dual SIM (nano + eSIM) i GPS/GNSS.</p>
 
 <p>Różnica w cenie? <strong>Zaledwie 273 zł netto</strong> (2 417 zł vs 2 690 zł) za moduł 5G z GPS — mniej niż koszt jednej baterii zapasowej. Ale ta kwota mnoży się przez liczbę terminali we flocie: przy 100 urządzeniach to 27 300 zł. Dlatego kluczowe pytanie brzmi nie „który jest lepszy?", lecz „<strong>ile terminali naprawdę potrzebuje łączności komórkowej?</strong>"</p>
 
@@ -3410,12 +3414,14 @@ export const guides: Guide[] = [
 </tbody>
 </table>
 
-<p><strong>Kluczowy wniosek:</strong> TC22 i TC27 to fizycznie to samo urządzenie w tej samej obudowie. TC27 dodaje trzy moduły radiowe: 5G/LTE, slot SIM i GPS. Jeśli terminal pracuje wyłącznie wewnątrz budynku z Wi-Fi — <a href="/produkt/zebra-tc22">TC22</a> wystarczy. Jeśli wyjeżdża w teren — <a href="/produkt/zebra-tc27">TC27</a> jest konieczny.</p>`
+<p><strong>Kluczowy wniosek:</strong> Kolektory danych Zebra TC22 i TC27 to fizycznie to samo urządzenie w tej samej obudowie. TC27 dodaje trzy moduły radiowe: 5G/LTE, slot SIM i GPS. Jeśli terminal pracuje wyłącznie wewnątrz budynku z Wi-Fi — <a href="/produkt/zebra-tc22">TC22</a> wystarczy. Jeśli wyjeżdża w teren — <a href="/produkt/zebra-tc27">TC27</a> jest konieczny.</p>`
     },
     {
       id: 'lacznosc',
       heading: 'Wi-Fi 6E vs 5G/LTE — kiedy potrzebujesz łączności komórkowej?',
-      content: `<p><strong>Łączność to jedyna realna różnica między TC22 a TC27 — i jednocześnie najważniejsze kryterium wyboru.</strong> Oba modele mają Wi-Fi 6/6E (802.11ax) 2×2 MU-MIMO z prędkością do 2,4 Gbps. TC27 dodaje moduł 5G FR1 z fallbackiem na 4G LTE-A.</p>
+      content: `<p style="background:#f8fee6;border-left:4px solid #A8F000;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:16px"><strong>Kolektor danych Zebra TC22 ma wyłącznie Wi-Fi 6E — wystarczające do pracy wewnątrz budynku (magazyn, sklep, apteka). Kolektor danych Zebra TC27 dodaje 5G FR1, dual SIM (nano + eSIM) i GPS z precyzją do 1 m — konieczny dla kurierów, serwisantów i pracy w terenie. Dopłata za 5G: 273 zł netto.</strong></p>
+
+<p><strong>Łączność to jedyna realna różnica między TC22 a TC27 — i jednocześnie najważniejsze kryterium wyboru.</strong> Oba modele mają Wi-Fi 6/6E (802.11ax) 2×2 MU-MIMO z prędkością do 2,4 Gbps. TC27 dodaje moduł 5G FR1 z fallbackiem na 4G LTE-A.</p>
 
 <h3>Zebra TC22 — Wi-Fi 6E</h3>
 <ul>
@@ -3443,7 +3449,9 @@ export const guides: Guide[] = [
     {
       id: 'skanery',
       heading: 'Skanery SE4710 vs SE55 — standard czy daleki zasięg?',
-      content: `<img src="/images/products/tc22_scanner_3.png" alt="Zebra TC22/TC27 — okno skanera SE4710/SE55, widok pod kątem" style="max-width:260px;margin:0 auto 16px;display:block" loading="lazy" />
+      content: `<p style="background:#f8fee6;border-left:4px solid #A8F000;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:16px"><strong>Oba kolektory danych Zebra TC22/TC27 oferują dwa skanery: SE4710 (standard, do 35 cm) do retail i apteki, oraz SE55 Advanced Range (do 7,6 m) do magazynów z regałami powyżej 2 m. Dopłata za SE55 wynosi 400–550 zł — więcej niż dopłata za 5G (273 zł).</strong></p>
+
+<img src="/images/products/tc22_scanner_3.png" alt="Zebra TC22/TC27 — skaner kodów kreskowych SE4710 i SE55 Advanced Range" style="max-width:260px;margin:0 auto 16px;display:block" loading="lazy" />
 
 <p><strong>Wybór skanera wpływa na cenę TC22/TC27 bardziej niż wybór łączności.</strong> Różnica między wariantem SE4710 a SE55 to ok. 400–550 zł — więcej niż dopłata za 5G (273 zł). Oba skanery dekodują kody 1D i 2D w 0,3 sekundy.</p>
 
@@ -3468,7 +3476,9 @@ export const guides: Guide[] = [
     {
       id: 'bateria',
       heading: 'Bateria i czas pracy — 3 800 mAh vs 5 200 mAh',
-      content: `<p><strong>TC22 i TC27 używają tych samych wymiennych baterii PowerPrecision</strong> — standard 3 800 mAh i rozszerzona 5 200 mAh. Wymiana hot-swap w 5 sekund bez wyłączania urządzenia.</p>
+      content: `<p style="background:#f8fee6;border-left:4px solid #A8F000;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:16px"><strong>Kolektory danych Zebra TC22 i TC27 używają tych samych baterii PowerPrecision: 3 800 mAh (~10h Wi-Fi, ~8h 5G) lub 5 200 mAh (~14h Wi-Fi, ~12h 5G). Wymiana hot-swap w 5 sekund bez wyłączania urządzenia. Moduł 5G w TC27 zwiększa zużycie energii o 15–20%.</strong></p>
+
+<p><strong>TC22 i TC27 używają tych samych wymiennych baterii PowerPrecision</strong> — standard 3 800 mAh i rozszerzona 5 200 mAh. Wymiana hot-swap w 5 sekund bez wyłączania urządzenia.</p>
 
 <table>
 <thead><tr><th>Parametr</th><th>Bateria 3 800 mAh</th><th>Bateria 5 200 mAh</th></tr></thead>
@@ -3488,7 +3498,7 @@ export const guides: Guide[] = [
     {
       id: 'wytrzymalosc',
       heading: 'Wytrzymałość i odporność — IP68, MIL-STD-810H, Gorilla Glass',
-      content: `<img src="/images/products/tc22_scanner_4.png" alt="Zebra TC22/TC27 — obudowa IP68, profil boczny z portem USB-C" style="max-width:260px;margin:0 auto 16px;display:block" loading="lazy" />
+      content: `<img src="/images/products/tc22_scanner_4.png" alt="Kolektor danych Zebra TC22/TC27 — obudowa IP68, profil boczny" style="max-width:260px;margin:0 auto 16px;display:block" loading="lazy" />
 
 <p><strong>TC22 i TC27 mają identyczną obudowę z identyczną odpornością</strong> — to kluczowa zaleta platformy TC2x. Niezależnie od wybranej łączności, terminal wytrzymuje te same warunki.</p>
 
@@ -3544,7 +3554,9 @@ export const guides: Guide[] = [
     {
       id: 'tco',
       heading: 'Koszt posiadania (TCO) — TC22 vs TC27 na 3 i 5 lat',
-      content: `<p><strong>Całkowity koszt posiadania (Total Cost of Ownership) to nie tylko cena terminala.</strong> Obejmuje urządzenie, akcesoria, serwis, karty SIM i wymianę baterii. Poniżej kalkulacja TCO dla floty 50 terminali na 3 i 5 lat.</p>
+      content: `<p style="background:#f8fee6;border-left:4px solid #A8F000;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:16px"><strong>TCO na 3 lata: kolektor danych Zebra TC22 ~4 472 zł/szt. (bez karty SIM), kolektor danych Zebra TC27 ~6 381 zł/szt. (z kartą SIM 40 zł/mies.). Karta SIM generuje 5,3× wyższy koszt na 3 lata (1 440 zł) niż dopłata za sam terminal (273 zł). Na flocie 50× TC22 vs TC27 oszczędność wynosi ~95 000 zł.</strong></p>
+
+<p><strong>Całkowity koszt posiadania (Total Cost of Ownership) to nie tylko cena terminala.</strong> Obejmuje urządzenie, akcesoria, serwis, karty SIM i wymianę baterii. Poniżej kalkulacja TCO dla floty 50 terminali na 3 i 5 lat.</p>
 
 <h3>Scenariusz: 50 terminali — magazyn (TC22 Wi-Fi)</h3>
 <table>
@@ -3584,7 +3596,7 @@ export const guides: Guide[] = [
       content: `<p><strong>Poniższy schemat pomoże wybrać odpowiedni model TC22 lub TC27 w zależności od branży i scenariusza pracy.</strong></p>
 
 <h3>Magazyn i centrum dystrybucyjne</h3>
-<p><strong>→ <a href="/produkt/zebra-tc22">Zebra TC22</a></strong> z SE4710 (niskie regały) lub SE55 (regały powyżej 2 m). Magazyn ma infrastrukturę Wi-Fi — 5G jest zbędne. Rekomendacja: TC22 SE55, 6/64 GB, bateria 5 200 mAh (WLMT0-T22B6CBE2-A6, 3 099 zł).</p>
+<p><strong>Do magazynu z Wi-Fi najlepszy jest kolektor danych <a href="/produkt/zebra-tc22">Zebra TC22</a></strong> z SE4710 (niskie regały, od 2 417 zł) lub SE55 (regały powyżej 2 m, od 2 963 zł). 5G jest zbędne — magazyn ma infrastrukturę Wi-Fi. Rekomendacja: TC22 SE55, 6/64 GB, bateria 5 200 mAh (WLMT0-T22B6CBE2-A6, 3 099 zł). Do intensywnego magazynu z klawiaturą fizyczną rozważ <a href="/poradnik/zebra-mc3400-vs-mc9400">Zebra MC3400 vs MC9400</a>.</p>
 
 <h3>Retail i sklep</h3>
 <p><strong>→ <a href="/produkt/zebra-tc22">Zebra TC22</a></strong> z SE4710. Skanowanie na ladzie, weryfikacja cen, obsługa klienta — wszystko w zasięgu Wi-Fi sklepu. Rekomendacja: TC22 SE4710, 6/64 GB, bateria 3 800 mAh (WLMT0-T22B6ABC2-A6, 2 417 zł) — najtańsze wejście.</p>
@@ -3596,7 +3608,7 @@ export const guides: Guide[] = [
 <p><strong>→ <a href="/produkt/zebra-tc27">Zebra TC27</a></strong> z SE4710. Skanowanie paczek przy dostawie, potwierdzanie odbioru, śledzenie trasy GPS, połączenia VoLTE z centralą. 5G gwarantuje stały dostęp do systemu TMS poza Wi-Fi. Bateria 5 200 mAh na cały dzień w terenie.</p>
 
 <h3>Serwis terenowy i utrzymanie ruchu</h3>
-<p><strong>→ <a href="/produkt/zebra-tc27">Zebra TC27</a></strong> z SE4710. Skanowanie kodów urządzeń, dostęp do dokumentacji serwisowej, raportowanie wizyt z GPS, zdjęcia 16 MP jako dokumentacja napraw. VoLTE do kontaktu z biurem bez dodatkowego telefonu.</p>
+<p><strong>→ <a href="/produkt/zebra-tc27">Zebra TC27</a></strong> z SE4710. Skanowanie kodów urządzeń, dostęp do dokumentacji serwisowej, raportowanie wizyt z GPS, zdjęcia 16 MP jako dokumentacja napraw. VoLTE do kontaktu z biurem bez dodatkowego telefonu. Jeśli potrzebujesz wytrzymalszego terminala do ekstremalnych warunków, zobacz <a href="/poradnik/zebra-tc27-vs-tc58e">porównanie Zebra TC27 vs TC58</a>.</p>
 
 <h3>Przedstawiciel handlowy (CRM)</h3>
 <p><strong>→ <a href="/produkt/zebra-tc27">Zebra TC27</a></strong> z SE4710. Skanowanie produktów u klienta, dostęp do CRM/ERP w terenie, rejestracja wizyt z GPS. Kompaktowy (236 g) i profesjonalny — nie wygląda jak „zabawka z magazynu".</p>
@@ -3651,7 +3663,7 @@ export const guides: Guide[] = [
     },
     {
       id: 'alternatywy',
-      heading: 'Alternatywy — TC22/TC27 vs Datalogic Memor 12 vs Honeywell CT32',
+      heading: 'Alternatywy — kolektor Zebra TC22/TC27 vs Datalogic Memor 12 vs Honeywell CT32',
       content: `<p><strong>Jak Zebra TC22/TC27 wypada na tle konkurencji?</strong> Porównanie z dwoma głównymi rywalami w segmencie entry-level terminali mobilnych.</p>
 
 <table>
@@ -3718,7 +3730,7 @@ export const guides: Guide[] = [
     {
       id: 'podsumowanie-koncowe',
       heading: 'Podsumowanie — TC22 czy TC27?',
-      content: `<p><strong>Zebra TC22 i TC27 to ten sam terminal z jedną różnicą: TC27 dodaje 5G, dual SIM i GPS za 273 zł więcej.</strong> Wybór sprowadza się do jednego pytania: czy terminal opuszcza budynek z Wi-Fi?</p>
+      content: `<p><strong>Kolektory danych Zebra TC22 i TC27 to ten sam terminal mobilny z jedną różnicą: TC27 dodaje 5G, dual SIM i GPS za 273 zł więcej.</strong> Wybór sprowadza się do jednego pytania: czy terminal opuszcza budynek z Wi-Fi?</p>
 
 <div style="display:flex;gap:24px;flex-wrap:wrap;margin:20px 0">
 <div style="flex:1;min-width:260px;border:2px solid #1976d2;border-radius:12px;padding:20px">
@@ -3745,14 +3757,16 @@ export const guides: Guide[] = [
 </div>
 </div>
 
-<p><strong>Przy flocie mieszanej:</strong> kup TC22 dla pracowników wewnątrz budynku i TC27 dla pracowników terenowych. Wspólne akcesoria (baterie, stacje, etui) obniżają TCO i upraszczają logistykę IT. Potrzebujesz pomocy w doborze konfiguracji? <a href="/kontakt">Skontaktuj się z nami</a> — pomożemy dobrać warianty i policzyć TCO dla Twojej floty.</p>
+<p><strong>Przy flocie mieszanej:</strong> kup kolektor danych Zebra TC22 dla pracowników wewnątrz budynku i kolektor danych Zebra TC27 dla pracowników terenowych. Wspólne akcesoria (baterie, stacje, etui) obniżają TCO i upraszczają logistykę IT. Flota mieszana 80× TC22 + 20× TC27 oszczędza ~60 240 zł rocznie vs 100× TC27 (terminale + karty SIM). Potrzebujesz pomocy w doborze konfiguracji? <a href="/kontakt">Skontaktuj się z nami</a> — pomożemy dobrać warianty i policzyć TCO dla Twojej floty.</p>
 
 <p>Powiązane artykuły: <a href="/poradnik/jak-wybrac-terminal-mobilny">Jak wybrać terminal mobilny? Poradnik 2026</a> · <a href="/poradnik/top-10-terminali-mobilnych-2026">Top 10 terminali mobilnych 2026</a> · <a href="/poradnik/zebra-vs-honeywell-terminale-mobilne">Zebra vs Honeywell — porównanie</a>.</p>`
     }
   ],
   faq: [
-    { question: 'Czym różni się Zebra TC22 od TC27?', answer: 'TC22 i TC27 to bliźniacze terminale mobilne z identycznym procesorem Qualcomm 5430, ekranem 6" FHD+, skanerami SE4710/SE55, obudową IP68 i akcesoriami. Jedyna różnica: TC22 ma wyłącznie Wi-Fi 6E, a TC27 dodaje moduł 5G FR1 + 4G LTE-A, dual SIM (nano + eSIM) i GPS/GNSS z dwuzakresowym odbiorem L1+L5. Dopłata za 5G wynosi 273 zł netto (2 417 zł vs 2 690 zł).' },
-    { question: 'Ile kosztuje Zebra TC22 i TC27?', answer: 'Zebra TC22 kosztuje od 2 417 zł netto (SE4710, 6/64 GB, 3 800 mAh) do 3 606 zł (SE55, 8/128 GB, RFID, BLE). Zebra TC27 kosztuje od 2 690 zł netto (SE4710, 6/64 GB) do 3 879 zł (SE55, 8/128 GB, RFID, BLE). Różnica między analogicznymi wariantami wynosi 273–386 zł na korzyść TC22. Ceny netto PLN z oferty hurtowej, marzec 2026.' },
+    { question: 'Co to jest kolektor danych Zebra TC22?', answer: 'Zebra TC22 to wytrzymały kolektor danych (terminal mobilny) z Wi-Fi 6E, procesorem Qualcomm 5430 (6 rdzeni, 2,1 GHz), ekranem 6" FHD+, skanerem kodów kreskowych SE4710 lub SE55 i obudową IP68. Waży 236 g i kosztuje od 2 417 zł netto — najtańszy enterprise terminal z IP68 na polskim rynku w 2026. Następca modelu Zebra TC21.' },
+    { question: 'Co to jest kolektor danych Zebra TC27?', answer: 'Zebra TC27 to kolektor danych (terminal mobilny) z 5G FR1, Wi-Fi 6E, GPS/GNSS (L1+L5), dual SIM i procesorem Qualcomm 5430. Identyczny jak TC22, ale z modułem łączności komórkowej i nawigacji satelitarnej. Kosztuje od 2 690 zł netto (dopłata 273 zł za 5G vs TC22). Przeznaczony dla kurierów, serwisantów i pracowników terenowych. Następca modelu Zebra TC26.' },
+    { question: 'Czym różni się kolektor danych Zebra TC22 od TC27?', answer: 'Kolektory danych Zebra TC22 i TC27 to fizycznie to samo urządzenie — identyczny procesor Qualcomm 5430, ekran 6" FHD+, skanery SE4710/SE55, obudowa IP68 i akcesoria. Jedyna różnica: TC22 ma wyłącznie Wi-Fi 6E, a TC27 dodaje moduł 5G FR1 + 4G LTE-A, dual SIM (nano + eSIM) i GPS/GNSS z dwuzakresowym odbiorem L1+L5. Dopłata za 5G wynosi 273 zł netto (2 417 zł vs 2 690 zł).' },
+    { question: 'Ile kosztuje kolektor danych Zebra TC22 i TC27 w 2026?', answer: 'Kolektor danych Zebra TC22 kosztuje od 2 417 zł netto (SE4710, 6/64 GB, 3 800 mAh) do 3 606 zł (SE55, 8/128 GB, RFID, BLE). Kolektor danych Zebra TC27 kosztuje od 2 690 zł netto (SE4710, 6/64 GB) do 3 879 zł (SE55, 8/128 GB, RFID, BLE). Różnica między analogicznymi wariantami wynosi 273–386 zł na korzyść TC22. Ceny netto PLN z oferty hurtowej, marzec 2026.' },
     { question: 'Czy TC22 i TC27 mają te same akcesoria?', answer: 'Tak — TC22 i TC27 współdzielą 100% akcesoriów z serii TC2L: baterie (BTRY-TC2L-2XMAXX-01, BTRY-TC2L-3XMAXX-01), stacje ładowania (CRD-TC2L-BS1CO-01, CRD-TC2L-BS5CO-01), etui ochronne (SG-TC2L-BOOT-01), trigger handle (TRG-TC2L-SNP1-01), holster, smycze. Flota mieszana Wi-Fi + 5G wymaga tylko jednego zestawu akcesoriów.' },
     { question: 'Który skaner wybrać — SE4710 czy SE55?', answer: 'SE4710 (standard) skanuje kody z odległości do 35 cm — wystarczający do retail, apteki, inwentaryzacji na niskich półkach. Kosztuje ok. 400–550 zł mniej niż SE55. SE55 (advanced range) skanuje od 10 cm do 7,6 m — konieczny w magazynach z regałami powyżej 2 m. SE55 odczytuje kody na paletach na wysokości 5–7 m bez drabiny.' },
     { question: 'Jak długo działa bateria w TC22 i TC27?', answer: 'Bateria 3 800 mAh: TC22 ~10 h (Wi-Fi), TC27 ~8 h (5G). Bateria 5 200 mAh: TC22 ~14 h, TC27 ~12 h. Moduł 5G/LTE w TC27 zwiększa zużycie energii o 15–20%. Obie baterie są wymienne hot-swap w 5 sekund. Dla kurierów z TC27 rekomendujemy baterię 5 200 mAh lub zapasową z wymianą w połowie dnia.' },
@@ -3772,6 +3786,8 @@ export const guides: Guide[] = [
     { title: 'Zebra TC27 — karta produktu', href: '/produkt/zebra-tc27' },
     { title: 'Jak wybrać terminal mobilny? Poradnik 2026', href: '/poradnik/jak-wybrac-terminal-mobilny' },
     { title: 'Top 10 terminali mobilnych 2026', href: '/poradnik/top-10-terminali-mobilnych-2026' },
+    { title: 'Zebra TC27 vs TC58 — porównanie', href: '/poradnik/zebra-tc27-vs-tc58e' },
+    { title: 'Zebra MC3400 vs MC9400 — porównanie', href: '/poradnik/zebra-mc3400-vs-mc9400' },
     { title: 'Zebra vs Honeywell — porównanie terminali', href: '/poradnik/zebra-vs-honeywell-terminale-mobilne' },
     { title: 'Terminale mobilne Zebra — pełna oferta', href: '/terminale-mobilne-zebra' },
     { title: 'Serwis terminali Zebra w Polsce', href: 'https://www.serwis-zebry.pl/serwis-terminali-zebra' },
