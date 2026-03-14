@@ -2663,6 +2663,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-02',
   updatedAt: '2026-03-02',
   readTime: '18 min',
+  heroImage: '/images/guides/zebra-vs-honeywell-porownanie-terminali.png',
   sections: [
     {
       id: 'podsumowanie',
