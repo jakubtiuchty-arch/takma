@@ -3782,32 +3782,32 @@ export const guides: Guide[] = [
 // ============================================================
 {
   slug: 'zebra-mc3400-vs-mc9400',
-  title: 'Zebra MC3400 vs MC9400 — który terminal z klawiaturą wybrać?',
-  seoTitle: 'Zebra MC3400 vs MC9400 — porównanie terminali z klawiaturą 2026 | TAKMA',
-  seoDescription: 'Porównanie Zebra MC3400 vs MC9400: tabela specyfikacji, klawiatury, skanery SE55/SE58, wytrzymałość IP67 vs IP68, praca w chłodniach -30°C, ceny od 4 561 zł, TCO 3/5 lat. Który terminal z klawiaturą do magazynu?',
-  excerpt: 'MC3400 od 4 561 zł z 3 klawiaturami i IP67. MC9400 od 7 638 zł z 7 klawiaturami, IP68 i chłodnią -30°C. Porównanie specyfikacji, cen i TCO — który terminal Zebra z klawiaturą do Twojego magazynu?',
+  title: 'Zebra MC3400 vs MC9400 — który kolektor danych z klawiaturą wybrać?',
+  seoTitle: 'Zebra MC3400 vs MC9400 — porównanie kolektorów danych z klawiaturą 2026 | TAKMA',
+  seoDescription: 'Kolektor danych Zebra MC3400 vs terminal MC9400: tabela specyfikacji, 3 vs 7 klawiatur, skanery SE55/SE58 do 30,5 m, IP67 vs IP68, chłodnia -30°C, ceny od 4 561 zł, TCO na 3 i 5 lat.',
+  excerpt: 'Kolektor danych MC3400 od 4 561 zł z 3 klawiaturami i IP67. Terminal MC9400 od 7 638 zł z 7 klawiaturami, IP68 i chłodnią -30°C. Porównanie specyfikacji, cen i TCO — który kolektor Zebra z klawiaturą do Twojego magazynu?',
   category: 'porownanie',
-  tags: ['Zebra MC3400', 'Zebra MC9400', 'porównanie terminali', 'terminal z klawiaturą', 'kolektor danych', 'magazyn', 'chłodnia', 'MC3400 vs MC9400', 'terminal mobilny Zebra', 'SE58 Extended Range'],
+  tags: ['Zebra MC3400', 'Zebra MC9400', 'porównanie terminali', 'terminal z klawiaturą', 'kolektor danych', 'magazyn', 'chłodnia', 'MC3400 vs MC9400', 'terminal mobilny Zebra', 'SE58 Extended Range', 'kolektor MC3400', 'kolektor MC9400', 'terminal MC3400', 'terminal MC9400', 'kolektor danych do magazynu'],
   publishedAt: '2026-03-13',
-  updatedAt: '2026-03-13',
+  updatedAt: '2026-03-14',
   readTime: '18 min',
   heroImage: '/images/products/zebra-mc3400_1.png',
   sections: [
     {
       id: 'podsumowanie',
-      heading: 'MC3400 vs MC9400 — podsumowanie w 60 sekund',
+      heading: 'Kolektory danych MC3400 vs MC9400 — podsumowanie w 60 sekund',
       content: `<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
 <div style="flex:1;min-width:200px;text-align:center">
-<img src="/images/products/zebra-mc3400_1.png" alt="Zebra MC3400 — terminal mobilny z klawiaturą 38-klawiszową i ekranem 4 cale" style="max-height:180px;object-fit:contain" loading="lazy" />
+<img src="/images/products/zebra-mc3400_1.png" alt="Kolektor danych Zebra MC3400 — terminal mobilny z klawiaturą 38-klawiszową i ekranem 4 cale" style="max-height:180px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-weight:600">Zebra MC3400 — od 4 561 zł netto</p>
 </div>
 <div style="flex:1;min-width:200px;text-align:center">
-<img src="/images/products/zebra-mc9400_1.png" alt="Zebra MC9400 — terminal ultra-rugged z klawiaturą 53-klawiszową i ekranem 4,3 cala" style="max-height:180px;object-fit:contain" loading="lazy" />
+<img src="/images/products/zebra-mc9400_1.png" alt="Kolektor danych Zebra MC9400 — terminal ultra-rugged z klawiaturą 53-klawiszową do magazynu i chłodni" style="max-height:180px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-weight:600">Zebra MC9400 — od 7 638 zł netto</p>
 </div>
 </div>
 
-<p><strong>Zebra MC3400</strong> i <strong>Zebra MC9400</strong> to dwa flagowe terminale mobilne Zebra z fizyczną klawiaturą, ale zaprojektowane do różnych warunków pracy. Oba mają ten sam procesor Qualcomm QCS4490 (2,4 GHz), Wi-Fi 6E, Bluetooth 5.3 i skanery SE58 Extended Range do 30,5 m. Różni je klasa wytrzymałości, liczba klawiatur, zakres temperatur i cena.</p>
+<p><strong>Zebra MC3400 (kolektor danych od 4 561 zł) to terminal rugged z 3 klawiaturami i IP67. Zebra MC9400 (kolektor danych od 7 638 zł) to ultra-rugged z 7 wymiennymi klawiaturami, IP68 i pracą do -30°C.</strong> Oba kolektory danych mają ten sam procesor Qualcomm QCS4490 (2,4 GHz), Wi-Fi 6E, Bluetooth 5.3 i skanery SE58 Extended Range do 30,5 m. Różni je klasa wytrzymałości, liczba klawiatur, zakres temperatur i cena.</p>
 
 <div style="background:#f0fdf4;border-left:4px solid #16a34a;padding:16px;border-radius:8px;margin:16px 0">
 <p style="margin:0;font-weight:600">Szybka odpowiedź:</p>
@@ -3854,7 +3854,9 @@ export const guides: Guide[] = [
     {
       id: 'klawiatury',
       heading: 'Klawiatury — 3 vs 7 opcji',
-      content: `<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
+      content: `<p><strong>Kolektor danych MC3400 oferuje 3 klawiatury (29/38/47 klawiszy) wybierane przy zakupie. Terminal MC9400 ma 7 wymiennych klawiatur hot-swap (29–58 klawiszy), w tym emulacje VT i IBM 5250 do systemów legacy.</strong> W nowoczesnych WMS klawiatura 38 kl. MC3400 jest wystarczająca.</p>
+
+<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
 <div style="flex:1;min-width:200px;text-align:center">
 <img src="/images/products/zebra-mc3400_3.png" alt="Zebra MC3400 — widok z prawego boku, uchwyt pistoletowy i przycisk skanowania" style="max-height:160px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC3400 — klawiatura 38-klawiszowa</p>
@@ -3893,7 +3895,9 @@ export const guides: Guide[] = [
     {
       id: 'wytrzymalosc',
       heading: 'Wytrzymałość — rugged vs ultra-rugged',
-      content: `<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:16px">
+      content: `<p><strong>MC3400 (IP67) wytrzymuje upadki z 2,4 m i pracuje od -20°C. MC9400 (IP68) to klasa ultra-rugged: upadki z 3,65 m (+52%), 6 000 cykli tumble (+50%) i praca w chłodni do -30°C.</strong> Do mroźni poniżej -20°C nadaje się wyłącznie kolektor danych MC9400. MC9400 waży o 40% więcej niż MC3400 (743 g vs 528 g).</p>
+
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:16px">
 <thead>
 <tr style="background:#1e293b;color:#fff">
 <th style="padding:10px;text-align:left;border:1px solid #334155">Test</th>
@@ -3923,7 +3927,9 @@ export const guides: Guide[] = [
     {
       id: 'skanery',
       heading: 'Skanery — SE55, SE4770 i SE58',
-      content: `<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
+      content: `<p><strong>Kolektor MC3400 oferuje 3 skanery (SE55/SE4770/SE58), w tym SE55 Advanced Range do 12,2 m — najtańsza opcja z zielonym laserem. Terminal MC9400 ma 2 skanery (SE4770/SE58).</strong> Oba obsługują SE58 Extended Range do 30,5 m do magazynów wysokiego składowania.</p>
+
+<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
 <div style="flex:1;min-width:200px;text-align:center">
 <img src="/images/products/zebra-mc3400_2.png" alt="Zebra MC3400 Gun — widok z tyłu, obudowa pistoletowa z oknem skanera" style="max-height:160px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC3400 — okno skanera SE55/SE4770/SE58</p>
@@ -4037,7 +4043,9 @@ export const guides: Guide[] = [
     {
       id: 'tco',
       heading: 'TCO — koszt posiadania na 3 i 5 lat',
-      content: `<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:16px">
+      content: `<p><strong>TCO na 3 lata: kolektor MC3400 ~7 473 zł/szt., terminal MC9400 ~10 267 zł/szt. — różnica 2 794 zł (+37%).</strong> Na flocie 50 kolektorów danych MC3400 oszczędza ~139 700 zł netto. MC9400 zwraca się w ciężkim przemyśle, gdzie mniejszy wskaźnik awarii rekompensuje wyższą cenę.</p>
+
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:16px">
 <thead>
 <tr style="background:#1e293b;color:#fff">
 <th style="padding:10px;text-align:left;border:1px solid #334155">Pozycja</th>
@@ -4227,13 +4235,15 @@ export const guides: Guide[] = [
 </div>
 </div>
 
-<p><strong>90% magazynów w Polsce</strong> nie potrzebuje klasy ultra-rugged MC9400. MC3400 z tym samym procesorem, Wi-Fi 6E i skanerem SE58 do 30,5 m jest wystarczający — i oszczędza ~3 077 zł na sztuce. MC9400 to terminal dla wyjątkowych warunków: chłodnia, ciężki przemysł, systemy legacy.</p>
+<p><strong>90% magazynów w Polsce</strong> nie potrzebuje kolektora danych klasy ultra-rugged MC9400. Kolektor MC3400 z tym samym procesorem, Wi-Fi 6E i skanerem SE58 do 30,5 m jest wystarczający — i oszczędza ~3 077 zł na sztuce. MC9400 to terminal dla wyjątkowych warunków: chłodnia, ciężki przemysł, systemy legacy.</p>
 
 <p>Potrzebujesz pomocy w doborze? <a href="/zapytanie">Napisz do nas</a> — dobierzemy konfigurację do Twoich procesów logistycznych. Serwis i wsparcie: <a href="https://www.serwis-zebry.pl/serwis-terminali-zebra" rel="noopener">serwis-zebry.pl</a>.</p>`
     },
   ],
   faq: [
-    { question: 'Czym się różni Zebra MC3400 od MC9400?', answer: 'MC3400 i MC9400 mają identyczny procesor Qualcomm QCS4490 (2,4 GHz), Wi-Fi 6E, Bluetooth 5.3 i skanery SE58 Extended Range do 30,5 m. Główne różnice: MC9400 ma 7 wymiennych klawiatur (vs 3 w MC3400), IP65+IP68 (vs IP65/IP67), upadki z 3,65 m (vs 2,4 m), pracuje do -30°C z baterią freezer (vs -20°C) i kosztuje od 7 638 zł (vs 4 561 zł). MC3400 jest lżejszy (528 g vs 743 g) i ma dłuższe wsparcie Android (do 18 vs 17).' },
+    { question: 'Co to jest kolektor danych Zebra MC3400?', answer: 'Zebra MC3400 to wytrzymały kolektor danych (terminal mobilny) klasy rugged z fizyczną klawiaturą, skanerem kodów kreskowych do 30,5 m, procesorem 8-rdzeniowym QCS4490 (2,4 GHz), Wi-Fi 6E i Androidem 14→18. IP65/IP67, upadki z 2,4 m, 528 g. Cena od 4 561 zł netto. Następca modelu MC3300x — pełna kompatybilność baterii i akcesoriów.' },
+    { question: 'Co to jest terminal mobilny Zebra MC9400?', answer: 'Zebra MC9400 to najwytrzymalszy kolektor danych (terminal mobilny) Zebra klasy ultra-rugged z 7 wymiennymi klawiaturami, skanerem SE58 do 30,5 m i procesorem QCS4490 (2,4 GHz). IP65+IP68, upadki z 3,65 m, praca w chłodni do -30°C, 743 g. Cena od 7 638 zł netto. Następca modelu MC9300.' },
+    { question: 'Czym się różni kolektor danych Zebra MC3400 od MC9400?', answer: 'MC3400 i MC9400 mają identyczny procesor Qualcomm QCS4490 (2,4 GHz), Wi-Fi 6E, Bluetooth 5.3 i skanery SE58 Extended Range do 30,5 m. Główne różnice: MC9400 ma 7 wymiennych klawiatur (vs 3 w MC3400), IP65+IP68 (vs IP65/IP67), upadki z 3,65 m (vs 2,4 m), pracuje do -30°C z baterią freezer (vs -20°C) i kosztuje od 7 638 zł (vs 4 561 zł). MC3400 jest lżejszy (528 g vs 743 g) i ma dłuższe wsparcie Android (do 18 vs 17).' },
     { question: 'Ile kosztuje Zebra MC3400 vs MC9400?', answer: 'Zebra MC3400 kosztuje od 4 561 zł netto (SE55, 29 kl., 4/64 GB) do 5 734 zł (SE58, kamera, 6/128 GB). Zebra MC9400 kosztuje od 7 638 zł netto (SE4770, 58 kl.) do 8 296 zł (SE58, kamera). Różnica cen: MC9400 jest o 67% droższy w najtańszych wariantach. Na flocie 50 terminali oszczędność na MC3400 vs MC9400 wynosi ~139 700 zł netto na 3 lata (z OneCare).' },
     { question: 'Który terminal do chłodni — MC3400 czy MC9400?', answer: 'Do chłodni i mroźni tylko MC9400. MC3400 działa od -20°C — nie nadaje się do mroźni (-25°C do -30°C). MC9400 z baterią freezer (BTRY-MC93-FZ-01, 5 000 mAh) pracuje do -30°C. Wyświetlacz 600 nit z ogrzewaniem zapobiega parowaniu przy przejściach chłodnia↔hala. IP65+IP68 chroni przed wilgocią i kondensatem w zmiennych temperaturach.' },
     { question: 'Jaką klawiaturę wybrać w MC3400?', answer: 'MC3400 oferuje 3 klawiatury: 29 kl. (numeryczna — szybkie ilości), 38 kl. (funkcyjna z Tab/Enter/strzałkami — najpopularniejsza w WMS, rekomendowana), 47 kl. (alfanumeryczna A-Z — gdy operator wpisuje kody tekstowe). Klawiaturę wybiera się przy zakupie — nie można jej wymienić w terenie. Klawisze są 20% większe niż w MC3300x i zoptymalizowane do pracy w rękawicach.' },
