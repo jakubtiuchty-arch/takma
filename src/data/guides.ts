@@ -3358,11 +3358,11 @@ export const guides: Guide[] = [
       id: 'podsumowanie',
       heading: 'Zebra TC22 vs TC27 — Wi-Fi czy 5G? Kompletne porównanie 2026',
       content: `<div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:24px;justify-content:center">
-<div style="min-width:200px;text-align:center">
+<div style="min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/tc22_front.png" alt="Kolektor danych Zebra TC22 — terminal mobilny Wi-Fi 6E, widok z przodu" style="max-height:180px;margin:0 auto" loading="lazy" />
 <p><strong><a href="/produkt/zebra-tc22">Zebra TC22</a></strong><br/>Wi-Fi 6E · od 2 417 zł netto</p>
 </div>
-<div style="min-width:200px;text-align:center">
+<div style="min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/tc22_front.png" alt="Kolektor danych Zebra TC27 — terminal mobilny 5G z GPS i dual SIM, widok z przodu (identyczny wygląd jak TC22)" style="max-height:180px;margin:0 auto" loading="lazy" />
 <p><strong><a href="/produkt/zebra-tc27">Zebra TC27</a></strong><br/>5G + Wi-Fi 6E + GPS · od 2 690 zł netto</p>
 </div>
@@ -3812,7 +3812,7 @@ export const guides: Guide[] = [
     {
       id: 'podsumowanie',
       heading: 'Kolektory danych Zebra MC3400 vs Zebra MC9400 — podsumowanie w 60 sekund',
-      content: `<div style="display:flex;gap:32px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
+      content: `<div style="display:flex;gap:64px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
 <div style="text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/zebra-mc3400_1.png" alt="Kolektor danych Zebra MC3400 — terminal mobilny z klawiaturą 38-klawiszową i ekranem 4 cale" style="max-height:180px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-weight:600"><a href="/produkt/zebra-mc3400">Zebra MC3400</a> — <span data-live-price="zebra-mc3400" class="animate-pulse">od 4 561 zł</span> netto</p>
@@ -3947,7 +3947,7 @@ export const guides: Guide[] = [
       heading: 'Skanery — SE55, SE4770 i SE58',
       content: `<p><strong>Kolektor MC3400 oferuje 3 skanery (SE55/SE4770/SE58), w tym SE55 Advanced Range do 12,2 m — najtańsza opcja z zielonym laserem. Terminal MC9400 ma 2 skanery (SE4770/SE58).</strong> Oba obsługują SE58 Extended Range do 30,5 m do magazynów wysokiego składowania.</p>
 
-<div style="display:flex;gap:32px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
+<div style="display:flex;gap:64px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
 <div style="text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/mc34_okno_skanera.png" alt="Okno skanera kolektora danych Zebra MC3400 — zbliżenie na moduł SE55/SE4770/SE58" style="max-height:220px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC3400 — okno skanera SE55/SE4770/SE58</p>
@@ -4366,12 +4366,12 @@ export const guides: Guide[] = [
       heading: 'Czytnik kodów do kasy i apteki — Zebra DS2208 i DS2278',
       content: `<p style="background:#f8fee6;border-left:4px solid #A8F000;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:16px"><strong>Najlepszy czytnik kodów kreskowych Zebra do kasy i apteki to DS2208 (od 352 zł, przewodowy USB, 5 lat gwarancji, FMD). Wersja bezprzewodowa: DS2278 od 449 zł (Bluetooth, 14h bateria). Oba czytają kody 1D, 2D, QR i DataMatrix z ekranów telefonów.</strong></p>
 
-<div style="display:flex;gap:32px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
-<div style="min-width:200px;text-align:center">
+<div style="display:flex;gap:64px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
+<div style="min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/zebra-ds2208-2.png" alt="Czytnik kodów kreskowych Zebra DS2208 — skaner 2D USB do kas fiskalnych i aptek" style="max-height:240px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-weight:600">DS2208 — od 352 zł (przewodowy)</p>
 </div>
-<div style="min-width:200px;text-align:center">
+<div style="min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/zebra-ds2278.png" alt="Zebra DS2278 — bezprzewodowy czytnik kodów kreskowych Bluetooth 2D" style="max-height:240px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-weight:600">DS2278 — od 449 zł (Bluetooth)</p>
 </div>
@@ -4394,12 +4394,12 @@ export const guides: Guide[] = [
       heading: 'Retail premium — DS4608 i DS8208',
       content: `<p style="background:#f8fee6;border-left:4px solid #A8F000;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:16px"><strong>Do supermarketów i retailu premium: czytnik kodów Zebra DS4608 od 814 zł (sensor 1 MP, zasięg 112 cm) lub DS8208 od 1 027 zł (sensor 2 MP, najszybszy skaner Zebra, upadki 3 m, EAS). DS8208 ma 2,5× wyższą rozdzielczość sensora niż DS2208.</strong></p>
 
-<div style="display:flex;gap:32px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
-<div style="min-width:200px;text-align:center">
+<div style="display:flex;gap:64px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
+<div style="min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/zebra-ds4608.png" alt="Skaner kodów kreskowych Zebra DS4608 — czytnik 2D z sensorem 1 MP" style="max-height:240px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-weight:600">DS4608 — od 814 zł (1 MP)</p>
 </div>
-<div style="min-width:200px;text-align:center">
+<div style="min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/zebra-ds8208-2.png" alt="Zebra DS8208 — premium skaner 2D z czujnikiem 2 MP PRZM" style="max-height:240px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-weight:600">DS8208 — od 1 027 zł (2 MP)</p>
 </div>
@@ -4435,12 +4435,12 @@ export const guides: Guide[] = [
       heading: 'Skanery prezentacyjne — DS9308 i DS9908',
       content: `<p style="background:#f8fee6;border-left:4px solid #A8F000;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:16px"><strong>Skanery prezentacyjne hands-free Zebra: DS9308 od 995 zł (wyłącznie hands-free, FOV 52°, kompaktowy) i DS9908 od 1 169 zł (hybrydowy hands-free + ręczny, Digimarc, 5 lat gwarancji). DS9308 do kas z wąskim blatem, DS9908 do supermarketów.</strong></p>
 
-<div style="display:flex;gap:32px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
-<div style="min-width:200px;text-align:center">
+<div style="display:flex;gap:64px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
+<div style="min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/zebra-ds9308.png" alt="Zebra DS9308 — prezentacyjny czytnik kodów kreskowych hands-free" style="max-height:240px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-weight:600">DS9308 — od 995 zł (hands-free)</p>
 </div>
-<div style="min-width:200px;text-align:center">
+<div style="min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/zebra-ds9908-3.png" alt="Zebra DS9908 — hybrydowy skaner prezentacyjny hands-free i ręczny" style="max-height:240px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-weight:600">DS9908 — od 1 169 zł (hybrydowy)</p>
 </div>
@@ -4461,12 +4461,12 @@ export const guides: Guide[] = [
       heading: 'Skaner do magazynu i przemysłu — seria Zebra DS3608 ultra-rugged',
       content: `<p style="background:#f8fee6;border-left:4px solid #A8F000;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:16px"><strong>Skanery Zebra do magazynu: seria DS3608 ultra-rugged (IP68, upadki 3 m, -30°C). DS3608-SR od 1 287 zł (zasięg 152 cm), DS3608-XR od 2 417 zł (zasięg 32 m, podwójny sensor). DS3608-XR skanuje z 90× większej odległości niż DS2208.</strong></p>
 
-<div style="display:flex;gap:32px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
-<div style="min-width:200px;text-align:center">
+<div style="display:flex;gap:64px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
+<div style="min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/zebra-ds3608-xr.png" alt="Czytnik kodów kreskowych Zebra DS3608-XR — skaner ultra-rugged do magazynu, zasięg 32 m" style="max-height:240px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-weight:600">DS3608-XR — od 2 417 zł (zasięg 32 m)</p>
 </div>
-<div style="min-width:200px;text-align:center">
+<div style="min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/zebra-ds3608-xr-2.png" alt="Zebra DS3608 — boczny widok obudowy ultra-rugged IP65+IP68" style="max-height:240px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">Obudowa IP65+IP68 — upadki z 3 m, -30°C</p>
 </div>
