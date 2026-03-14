@@ -178,7 +178,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
         {guide.heroImage ? (
           <>
             {/* Hero with background image */}
-            <div className="relative bg-gray-900 overflow-hidden sm:min-h-[340px]">
+            <div className="relative bg-gray-900 overflow-hidden sm:min-h-[400px]">
               {/* Background image — right-aligned, vertically centered, not cropped */}
               <img
                 src={guide.heroImage}
