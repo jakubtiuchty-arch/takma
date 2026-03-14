@@ -3929,13 +3929,13 @@ export const guides: Guide[] = [
       heading: 'Skanery — SE55, SE4770 i SE58',
       content: `<p><strong>Kolektor MC3400 oferuje 3 skanery (SE55/SE4770/SE58), w tym SE55 Advanced Range do 12,2 m — najtańsza opcja z zielonym laserem. Terminal MC9400 ma 2 skanery (SE4770/SE58).</strong> Oba obsługują SE58 Extended Range do 30,5 m do magazynów wysokiego składowania.</p>
 
-<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
-<div style="flex:1;min-width:200px;text-align:center">
-<img src="/images/products/zebra-mc3400_2.png" alt="Zebra MC3400 Gun — widok z tyłu, obudowa pistoletowa z oknem skanera" style="max-height:160px;object-fit:contain" loading="lazy" />
+<div style="display:flex;gap:32px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
+<div style="text-align:center;display:flex;flex-direction:column;align-items:center">
+<img src="/images/products/mc34_okno_skanera.png" alt="Okno skanera kolektora danych Zebra MC3400 — zbliżenie na moduł SE55/SE4770/SE58" style="max-height:220px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC3400 — okno skanera SE55/SE4770/SE58</p>
 </div>
-<div style="flex:1;min-width:200px;text-align:center">
-<img src="/images/products/zebra-mc9400_2.png" alt="Zebra MC9400 — widok z tyłu, uchwyt pistoletowy z oknem skanera SE58 Extended Range" style="max-height:160px;object-fit:contain" loading="lazy" />
+<div style="text-align:center;display:flex;flex-direction:column;align-items:center">
+<img src="/images/products/mc94_okno_skanera.png" alt="Okno skanera terminala Zebra MC9400 — zbliżenie na moduł SE4770/SE58 Extended Range" style="max-height:220px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC9400 — okno skanera SE4770/SE58</p>
 </div>
 </div>

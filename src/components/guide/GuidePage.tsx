@@ -256,14 +256,14 @@ export default function GuidePage({ guide }: GuidePageProps) {
             {/* Sidebar — TOC */}
             <aside className="lg:w-72 flex-shrink-0">
               <div className="lg:sticky lg:top-28">
-                <nav className="bg-gray-50 rounded-xl p-5">
+                <nav className="bg-gray-50 rounded-xl p-5 border-t-2 border-[#A8F000]">
                   <h2 className="text-sm font-bold text-gray-900 uppercase tracking-wider mb-3">Spis treści</h2>
                   <ol className="space-y-2">
                     {guide.sections.map((section, i) => (
                       <li key={section.id}>
                         <a
                           href={`#${section.id}`}
-                          className="text-sm text-gray-600 hover:text-primary-600 transition-colors flex gap-2"
+                          className="text-sm text-gray-600 hover:text-[#A8F000] transition-colors flex gap-2"
                         >
                           <span className="text-gray-400 font-medium">{i + 1}.</span>
                           <span>{section.heading}</span>
@@ -272,7 +272,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
                     ))}
                     {guide.faq.length > 0 && (
                       <li>
-                        <a href="#faq" className="text-sm text-gray-600 hover:text-primary-600 transition-colors flex gap-2">
+                        <a href="#faq" className="text-sm text-gray-600 hover:text-[#A8F000] transition-colors flex gap-2">
                           <span className="text-gray-400 font-medium">{guide.sections.length + 1}.</span>
                           <span>Najczęstsze pytania (FAQ)</span>
                         </a>
@@ -290,7 +290,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
               <div className="space-y-10">
                 {guide.sections.map(section => (
                   <section key={section.id} id={section.id}>
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">{section.heading}</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4 pl-4 border-l-4 border-[#A8F000]">{section.heading}</h2>
                     <div
                       className="prose prose-gray max-w-none overflow-x-auto sm:text-justify prose-headings:text-gray-900 prose-headings:text-left prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl [&_img]:max-h-48 sm:[&_img]:max-h-64 [&_table]:w-full [&_table]:text-xs sm:[&_table]:text-sm [&_table]:border-collapse [&_table]:shadow-sm [&_table]:border [&_table]:border-gray-200 [&_th]:bg-gray-800 [&_th]:text-white [&_th]:text-left [&_th]:font-semibold [&_th]:!normal-case [&_th]:!tracking-normal [&_th]:px-2 [&_th]:py-2 sm:[&_th]:px-4 sm:[&_th]:py-3 [&_td]:px-2 [&_td]:py-2 sm:[&_td]:px-4 sm:[&_td]:py-3 [&_td]:border-t [&_td]:border-gray-100 [&_tbody_tr:nth-child(even)]:bg-gray-50/60 [&_tbody_tr:hover]:bg-blue-50/40 [&_tbody_tr]:transition-colors [&_td:first-child]:font-semibold [&_td:first-child]:text-gray-900"
                       dangerouslySetInnerHTML={{ __html: boldifyModels(section.content) }}
@@ -302,13 +302,13 @@ export default function GuidePage({ guide }: GuidePageProps) {
               {/* FAQ Section */}
               {guide.faq.length > 0 && (
                 <section id="faq" className="mt-12 pt-8 border-t border-gray-200">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-6">Najczęstsze pytania (FAQ)</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-6 pl-4 border-l-4 border-[#A8F000]">Najczęstsze pytania (FAQ)</h2>
                   <div className="space-y-4">
                     {guide.faq.map((item, i) => (
-                      <details key={i} className="group bg-gray-50 rounded-xl overflow-hidden">
+                      <details key={i} className="group bg-gray-50 rounded-xl overflow-hidden border-l-2 border-transparent group-open:border-[#A8F000]">
                         <summary className="cursor-pointer px-5 py-4 text-gray-900 font-semibold flex items-center justify-between hover:bg-gray-100 transition-colors">
                           <span>{item.question}</span>
-                          <ChevronRightIcon size={18} className="text-gray-400 transition-transform group-open:rotate-90 flex-shrink-0 ml-3" />
+                          <ChevronRightIcon size={18} className="text-gray-400 group-open:text-[#A8F000] transition-transform group-open:rotate-90 flex-shrink-0 ml-3" />
                         </summary>
                         <div className="px-5 pb-4 text-gray-600 leading-relaxed">
                           {item.answer}
@@ -321,7 +321,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
 
               {/* Author byline (E-E-A-T: visible author) */}
               <div className="mt-10 pt-6 border-t border-gray-200 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center text-primary-700 font-bold text-sm">JT</div>
+                <div className="w-10 h-10 rounded-full bg-[#A8F000]/20 flex items-center justify-center text-gray-900 font-bold text-sm">JT</div>
                 <div>
                   <p className="text-sm font-semibold text-gray-900">Jakub Tiuchty</p>
                   <p className="text-xs text-gray-500">Specjalista AutoID w TAKMA | 25 lat doświadczenia w AutoID</p>
