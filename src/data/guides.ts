@@ -1650,7 +1650,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-02-23',
   updatedAt: '2026-02-23',
   readTime: '18 min',
-  heroImage: '/images/guides/jak-wybrac-terminal-mobilny.jpg',
+  heroImage: '/images/guides/jak-wybrac-terminal-mobilny-2026.png',
 
   sections: [
     {
