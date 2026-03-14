@@ -183,7 +183,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
               <img
                 src={guide.heroImage}
                 alt=""
-                className="absolute right-0 top-0 h-full w-2/3 object-cover object-center hidden sm:block"
+                className="absolute right-0 bottom-0 w-2/3 object-contain object-right-bottom hidden sm:block"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent" />
               <div className="relative">
