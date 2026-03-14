@@ -3795,7 +3795,7 @@ export const guides: Guide[] = [
   sections: [
     {
       id: 'podsumowanie',
-      heading: 'Kolektory danych MC3400 vs MC9400 — podsumowanie w 60 sekund',
+      heading: 'Kolektory danych Zebra MC3400 vs Zebra MC9400 — podsumowanie w 60 sekund',
       content: `<div style="display:flex;gap:32px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
 <div style="text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/zebra-mc3400_1.png" alt="Kolektor danych Zebra MC3400 — terminal mobilny z klawiaturą 38-klawiszową i ekranem 4 cale" style="max-height:180px;object-fit:contain" loading="lazy" />
