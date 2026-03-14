@@ -177,17 +177,17 @@ export default function GuidePage({ guide }: GuidePageProps) {
       <div className="bg-white">
         {guide.heroImage ? (
           <>
-            {/* Hero with background image */}
-            <div
-              className="relative bg-cover bg-center bg-no-repeat"
-              style={{ backgroundImage: `url(${guide.heroImage})` }}
-            >
-              <div className="bg-gradient-to-r from-black/80 via-black/60 to-black/20">
+            {/* Hero with dark gradient + Zebra green accent */}
+            <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
+              {/* Zebra green accent glow */}
+              <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#b5e550]/10 to-transparent" />
+              <div className="absolute bottom-0 left-1/4 w-96 h-1 bg-gradient-to-r from-transparent via-[#b5e550]/40 to-transparent" />
+              <div className="relative">
                 <nav className="container-main pt-4 pb-2" aria-label="Breadcrumb">
                   <ol className="flex items-center gap-1.5 text-sm text-white/70 flex-wrap">
-                    <li><Link href="/" className="hover:text-white transition-colors">Strona główna</Link></li>
+                    <li><Link href="/" className="hover:text-[#b5e550] transition-colors">Strona główna</Link></li>
                     <li><ChevronRightIcon size={14} className="text-white/40" /></li>
-                    <li><Link href="/poradnik" className="hover:text-white transition-colors">Poradniki</Link></li>
+                    <li><Link href="/poradnik" className="hover:text-[#b5e550] transition-colors">Poradniki</Link></li>
                     <li><ChevronRightIcon size={14} className="text-white/40" /></li>
                     <li className="text-white font-medium truncate max-w-[300px]">{guide.title}</li>
                   </ol>
@@ -195,7 +195,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
                 <header className="container-main pt-6 pb-12">
                   <div className="max-w-4xl">
                     <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4">
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-white/20 text-white backdrop-blur-sm">
+                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[#b5e550]/20 text-[#b5e550]">
                         {guideCategoryLabels[guide.category]}
                       </span>
                       <span className="text-sm text-white/70">{guide.readTime} czytania</span>
@@ -258,7 +258,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
               <div className="lg:sticky lg:top-28">
                 <nav className="bg-gray-50 rounded-xl p-5">
                   <h2 className="text-sm font-bold text-gray-900 uppercase tracking-wider mb-3">Spis treści</h2>
-                  <ol className="space-y-2 max-h-[60vh] overflow-y-auto pr-1">
+                  <ol className="space-y-2">
                     {guide.sections.map((section, i) => (
                       <li key={section.id}>
                         <a
