@@ -3791,7 +3791,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-13',
   updatedAt: '2026-03-14',
   readTime: '18 min',
-  heroImage: '/images/products/zebra-mc3400_1.png',
+  heroImage: '/images/guides/zebra-mc3400-vs-mc9400-hero.png',
   sections: [
     {
       id: 'podsumowanie',

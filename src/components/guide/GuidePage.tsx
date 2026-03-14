@@ -177,12 +177,12 @@ export default function GuidePage({ guide }: GuidePageProps) {
       <div className="bg-white">
         {guide.heroImage ? (
           <>
-            {/* Hero with dark gradient + Zebra green accent */}
-            <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
-              {/* Zebra green accent glow */}
-              <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#A8F000]/10 to-transparent" />
-              <div className="absolute bottom-0 left-1/4 w-96 h-1 bg-gradient-to-r from-transparent via-[#A8F000]/40 to-transparent" />
-              <div className="relative">
+            {/* Hero with background image */}
+            <div
+              className="relative bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: `url(${guide.heroImage})` }}
+            >
+              <div className="bg-gradient-to-r from-black/85 via-black/60 to-transparent">
                 <nav className="container-main pt-4 pb-2" aria-label="Breadcrumb">
                   <ol className="flex items-center gap-1.5 text-sm text-white/70 flex-wrap">
                     <li><Link href="/" className="hover:text-[#A8F000] transition-colors">Strona główna</Link></li>
