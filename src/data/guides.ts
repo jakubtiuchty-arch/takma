@@ -3856,14 +3856,14 @@ export const guides: Guide[] = [
       heading: 'Klawiatury — 3 vs 7 opcji',
       content: `<p><strong>Kolektor danych MC3400 oferuje 3 klawiatury (29/38/47 klawiszy) wybierane przy zakupie. Terminal MC9400 ma 7 wymiennych klawiatur hot-swap (29–58 klawiszy), w tym emulacje VT i IBM 5250 do systemów legacy.</strong> W nowoczesnych WMS klawiatura 38 kl. MC3400 jest wystarczająca.</p>
 
-<div style="display:flex;gap:32px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
-<div style="text-align:center;display:flex;flex-direction:column;align-items:center;cursor:zoom-in" onmouseover="this.querySelector('img').style.transform='scale(1.6)'" onmouseout="this.querySelector('img').style.transform='scale(1)'">
-<img src="/images/products/keyboard_mc34.png" alt="Klawiatura 38-klawiszowa kolektora danych Zebra MC3400 — widok z przodu" style="max-height:290px;object-fit:contain;transition:transform 0.3s ease" loading="lazy" />
+<div style="display:flex;gap:32px;flex-wrap:wrap;justify-content:center;margin-bottom:24px;overflow:visible">
+<div style="text-align:center;display:flex;flex-direction:column;align-items:center;cursor:zoom-in;overflow:visible;position:relative;z-index:10" onmouseover="this.querySelector('img').style.transform='scale(1.6)';this.querySelector('img').style.zIndex='50'" onmouseout="this.querySelector('img').style.transform='scale(1)';this.querySelector('img').style.zIndex='1'">
+<img src="/images/products/keyboard_mc34.png" alt="Klawiatura 38-klawiszowa kolektora danych Zebra MC3400 — widok z przodu" style="max-height:290px;object-fit:contain;transition:transform 0.3s ease;position:relative;z-index:1" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC3400 — klawiatura 38-klawiszowa</p>
 <p style="margin:0;font-size:11px;color:#9ca3af">Najedź myszką aby powiększyć</p>
 </div>
-<div style="text-align:center;display:flex;flex-direction:column;align-items:center;cursor:zoom-in" onmouseover="this.querySelector('img').style.transform='scale(1.6)'" onmouseout="this.querySelector('img').style.transform='scale(1)'">
-<img src="/images/products/keyboard_mc94.png" alt="Klawiatura 53-klawiszowa wymienna terminala Zebra MC9400 — widok z przodu" style="max-height:340px;object-fit:contain;transition:transform 0.3s ease" loading="lazy" />
+<div style="text-align:center;display:flex;flex-direction:column;align-items:center;cursor:zoom-in;overflow:visible;position:relative;z-index:10" onmouseover="this.querySelector('img').style.transform='scale(1.6)';this.querySelector('img').style.zIndex='50'" onmouseout="this.querySelector('img').style.transform='scale(1)';this.querySelector('img').style.zIndex='1'">
+<img src="/images/products/keyboard_mc94.png" alt="Klawiatura 53-klawiszowa wymienna terminala Zebra MC9400 — widok z przodu" style="max-height:340px;object-fit:contain;transition:transform 0.3s ease;position:relative;z-index:1" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC9400 — klawiatura 53-klawiszowa (wymienna)</p>
 <p style="margin:0;font-size:11px;color:#9ca3af">Najedź myszką aby powiększyć</p>
 </div>
