@@ -259,7 +259,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
             {/* Sidebar — TOC */}
             <aside className="lg:w-72 flex-shrink-0">
               <div className="lg:sticky lg:top-28">
-                <nav className="bg-gray-50 rounded-xl p-5 border-t-2 border-[#A8F000] hidden lg:block">
+                <nav className="bg-gray-50 rounded-xl p-5 border-t-2 border-[#A8F000] hidden lg:block max-h-[calc(100vh-8rem)] overflow-y-auto">
                   <h2 className="text-sm font-bold text-gray-900 uppercase tracking-wider mb-3">Spis treści</h2>
                   <ol className="space-y-2">
                     {guide.sections.map((section, i) => (
