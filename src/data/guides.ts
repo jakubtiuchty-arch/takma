@@ -3796,12 +3796,12 @@ export const guides: Guide[] = [
     {
       id: 'podsumowanie',
       heading: 'Kolektory danych MC3400 vs MC9400 — podsumowanie w 60 sekund',
-      content: `<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;justify-content:center;margin-bottom:24px">
-<div style="flex:1;min-width:200px;max-width:320px;text-align:center">
+      content: `<div style="display:flex;gap:32px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
+<div style="text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/zebra-mc3400_1.png" alt="Kolektor danych Zebra MC3400 — terminal mobilny z klawiaturą 38-klawiszową i ekranem 4 cale" style="max-height:180px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-weight:600"><a href="/produkt/zebra-mc3400">Zebra MC3400</a> — <span data-live-price="zebra-mc3400" class="animate-pulse">od 4 561 zł</span> netto</p>
 </div>
-<div style="flex:1;min-width:200px;max-width:320px;text-align:center">
+<div style="text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/zebra-mc9400_1.png" alt="Kolektor danych Zebra MC9400 — terminal ultra-rugged z klawiaturą 53-klawiszową do magazynu i chłodni" style="max-height:180px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-weight:600"><a href="/produkt/zebra-mc9400">Zebra MC9400</a> — <span data-live-price="zebra-mc9400" class="animate-pulse">od 7 638 zł</span> netto</p>
 </div>
@@ -3856,12 +3856,12 @@ export const guides: Guide[] = [
       heading: 'Klawiatury — 3 vs 7 opcji',
       content: `<p><strong>Kolektor danych MC3400 oferuje 3 klawiatury (29/38/47 klawiszy) wybierane przy zakupie. Terminal MC9400 ma 7 wymiennych klawiatur hot-swap (29–58 klawiszy), w tym emulacje VT i IBM 5250 do systemów legacy.</strong> W nowoczesnych WMS klawiatura 38 kl. MC3400 jest wystarczająca.</p>
 
-<div style="display:flex;gap:32px;flex-wrap:wrap;justify-content:center;align-items:flex-start;margin-bottom:24px">
-<div style="flex:1;min-width:200px;max-width:400px;text-align:center;display:flex;flex-direction:column;align-items:center">
+<div style="display:flex;gap:32px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
+<div style="text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/keyboard_mc34.png" alt="Klawiatura 38-klawiszowa kolektora danych Zebra MC3400 — widok z przodu" style="max-height:340px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC3400 — klawiatura 38-klawiszowa</p>
 </div>
-<div style="flex:1;min-width:200px;max-width:400px;text-align:center;display:flex;flex-direction:column;align-items:center">
+<div style="text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/keyboard_mc94.png" alt="Klawiatura 53-klawiszowa wymienna terminala Zebra MC9400 — widok z przodu" style="max-height:340px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC9400 — klawiatura 53-klawiszowa (wymienna)</p>
 </div>
