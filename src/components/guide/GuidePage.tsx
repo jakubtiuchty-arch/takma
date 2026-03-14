@@ -186,7 +186,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
                 className="absolute right-0 top-1/2 -translate-y-1/2 w-2/3 object-contain hidden sm:block"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent" />
-              <div className="relative">
+              <div className="relative sm:min-h-[400px] flex flex-col justify-center">
                 <nav className="container-main pt-4 pb-2" aria-label="Breadcrumb">
                   <ol className="flex items-center gap-1.5 text-sm text-white/70 flex-wrap">
                     <li><Link href="/" className="hover:text-[#A8F000] transition-colors">Strona główna</Link></li>
@@ -196,7 +196,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
                     <li className="text-white font-medium truncate max-w-[300px]">{guide.title}</li>
                   </ol>
                 </nav>
-                <header className="container-main pt-6 pb-12">
+                <header className="container-main pt-4 pb-8">
                   <div className="max-w-4xl">
                     <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4">
                       <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[#A8F000]/20 text-[#A8F000]">
