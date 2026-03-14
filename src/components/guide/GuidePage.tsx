@@ -179,13 +179,13 @@ export default function GuidePage({ guide }: GuidePageProps) {
           <>
             {/* Hero with background image */}
             <div className="relative bg-[#0c1526] overflow-hidden sm:min-h-[400px]">
-              {/* Background image — right-aligned, vertically centered, not cropped */}
+              {/* Background image — full width, cover */}
               <img
                 src={guide.heroImage}
                 alt=""
-                className="absolute right-0 top-1/2 -translate-y-1/2 w-2/3 object-contain hidden sm:block"
+                className="absolute inset-0 w-full h-full object-cover object-right hidden sm:block"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#0c1526] via-[#0c1526]/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#0c1526] via-[#0c1526]/80 to-transparent" />
               <div className="relative">
                 <nav className="container-main pt-4 pb-2" aria-label="Breadcrumb">
                   <ol className="flex items-center gap-1.5 text-sm text-white/70 flex-wrap">
