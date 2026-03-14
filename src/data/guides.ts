@@ -3782,10 +3782,10 @@ export const guides: Guide[] = [
 // ============================================================
 {
   slug: 'zebra-mc3400-vs-mc9400',
-  title: 'Zebra MC3400 vs MC9400 — który kolektor danych z klawiaturą wybrać?',
-  seoTitle: 'Zebra MC3400 vs MC9400 — porównanie kolektorów danych z klawiaturą 2026 | TAKMA',
+  title: 'Zebra MC3400 vs MC9400 — który kolektor danych wybrać?',
+  seoTitle: 'Zebra MC3400 vs MC9400 — porównanie kolektorów danych 2026 | TAKMA',
   seoDescription: 'Kolektor danych Zebra MC3400 vs terminal MC9400: tabela specyfikacji, 3 vs 7 klawiatur, skanery SE55/SE58 do 30,5 m, IP67 vs IP68, chłodnia -30°C, ceny od 4 561 zł, TCO na 3 i 5 lat.',
-  excerpt: 'Kolektor danych MC3400 od 4 561 zł z 3 klawiaturami i IP67. Terminal MC9400 od 7 638 zł z 7 klawiaturami, IP68 i chłodnią -30°C. Porównanie specyfikacji, cen i TCO — który kolektor Zebra z klawiaturą do Twojego magazynu?',
+  excerpt: 'MC3400 od 4 561 zł — rugged, IP67, 3 klawiatury. MC9400 od 7 638 zł — ultra-rugged, IP68, 7 klawiatur, chłodnia -30°C. Sprawdź porównanie specyfikacji, cen i TCO obu kolektorów Zebra.',
   category: 'porownanie',
   tags: ['Zebra MC3400', 'Zebra MC9400', 'porównanie terminali', 'terminal z klawiaturą', 'kolektor danych', 'magazyn', 'chłodnia', 'MC3400 vs MC9400', 'terminal mobilny Zebra', 'SE58 Extended Range', 'kolektor MC3400', 'kolektor MC9400', 'terminal MC3400', 'terminal MC9400', 'kolektor danych do magazynu'],
   publishedAt: '2026-03-13',
