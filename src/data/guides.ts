@@ -3857,12 +3857,12 @@ export const guides: Guide[] = [
       content: `<p><strong>Kolektor danych MC3400 oferuje 3 klawiatury (29/38/47 klawiszy) wybierane przy zakupie. Terminal MC9400 ma 7 wymiennych klawiatur hot-swap (29–58 klawiszy), w tym emulacje VT i IBM 5250 do systemów legacy.</strong> W nowoczesnych WMS klawiatura 38 kl. MC3400 jest wystarczająca.</p>
 
 <div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
-<div style="flex:1;min-width:200px;text-align:center">
-<img src="/images/products/zebra-mc3400_3.png" alt="Zebra MC3400 — widok z prawego boku, uchwyt pistoletowy i przycisk skanowania" style="max-height:160px;object-fit:contain" loading="lazy" />
+<div style="flex:1;min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
+<img src="/images/products/keyboard_mc34.png" alt="Klawiatura 38-klawiszowa kolektora danych Zebra MC3400 — widok z przodu" style="max-height:160px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC3400 — klawiatura 38-klawiszowa</p>
 </div>
-<div style="flex:1;min-width:200px;text-align:center">
-<img src="/images/products/zebra-mc9400_4.png" alt="Zebra MC9400 — widok z góry, wymienna klawiatura i slot baterii warm-swap" style="max-height:160px;object-fit:contain" loading="lazy" />
+<div style="flex:1;min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
+<img src="/images/products/keyboard_mc94.png" alt="Klawiatura 53-klawiszowa wymienna terminala Zebra MC9400 — widok z przodu" style="max-height:160px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC9400 — klawiatura 53-klawiszowa (wymienna)</p>
 </div>
 </div>
