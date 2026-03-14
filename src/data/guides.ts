@@ -3797,12 +3797,12 @@ export const guides: Guide[] = [
       id: 'podsumowanie',
       heading: 'MC3400 vs MC9400 — podsumowanie w 60 sekund',
       content: `<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
-<div style="flex:1;min-width:260px;text-align:center">
-<img src="/images/products/zebra-mc3400_1.png" alt="Zebra MC3400 — terminal mobilny z klawiaturą 38-klawiszową i ekranem 4 cale" style="max-height:280px;object-fit:contain" loading="lazy" />
+<div style="flex:1;min-width:200px;text-align:center">
+<img src="/images/products/zebra-mc3400_1.png" alt="Zebra MC3400 — terminal mobilny z klawiaturą 38-klawiszową i ekranem 4 cale" style="max-height:180px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-weight:600">Zebra MC3400 — od 4 561 zł netto</p>
 </div>
-<div style="flex:1;min-width:260px;text-align:center">
-<img src="/images/products/zebra-mc9400_1.png" alt="Zebra MC9400 — terminal ultra-rugged z klawiaturą 53-klawiszową i ekranem 4,3 cala" style="max-height:280px;object-fit:contain" loading="lazy" />
+<div style="flex:1;min-width:200px;text-align:center">
+<img src="/images/products/zebra-mc9400_1.png" alt="Zebra MC9400 — terminal ultra-rugged z klawiaturą 53-klawiszową i ekranem 4,3 cala" style="max-height:180px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-weight:600">Zebra MC9400 — od 7 638 zł netto</p>
 </div>
 </div>
@@ -3855,12 +3855,12 @@ export const guides: Guide[] = [
       id: 'klawiatury',
       heading: 'Klawiatury — 3 vs 7 opcji',
       content: `<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
-<div style="flex:1;min-width:260px;text-align:center">
-<img src="/images/products/zebra-mc3400_3.png" alt="Zebra MC3400 — widok z prawego boku, uchwyt pistoletowy i przycisk skanowania" style="max-height:240px;object-fit:contain" loading="lazy" />
+<div style="flex:1;min-width:200px;text-align:center">
+<img src="/images/products/zebra-mc3400_3.png" alt="Zebra MC3400 — widok z prawego boku, uchwyt pistoletowy i przycisk skanowania" style="max-height:160px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC3400 — klawiatura 38-klawiszowa</p>
 </div>
-<div style="flex:1;min-width:260px;text-align:center">
-<img src="/images/products/zebra-mc9400_4.png" alt="Zebra MC9400 — widok z góry, wymienna klawiatura i slot baterii warm-swap" style="max-height:240px;object-fit:contain" loading="lazy" />
+<div style="flex:1;min-width:200px;text-align:center">
+<img src="/images/products/zebra-mc9400_4.png" alt="Zebra MC9400 — widok z góry, wymienna klawiatura i slot baterii warm-swap" style="max-height:160px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC9400 — klawiatura 53-klawiszowa (wymienna)</p>
 </div>
 </div>
@@ -3924,12 +3924,12 @@ export const guides: Guide[] = [
       id: 'skanery',
       heading: 'Skanery — SE55, SE4770 i SE58',
       content: `<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
-<div style="flex:1;min-width:260px;text-align:center">
-<img src="/images/products/zebra-mc3400_2.png" alt="Zebra MC3400 Gun — widok z tyłu, obudowa pistoletowa z oknem skanera" style="max-height:240px;object-fit:contain" loading="lazy" />
+<div style="flex:1;min-width:200px;text-align:center">
+<img src="/images/products/zebra-mc3400_2.png" alt="Zebra MC3400 Gun — widok z tyłu, obudowa pistoletowa z oknem skanera" style="max-height:160px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC3400 — okno skanera SE55/SE4770/SE58</p>
 </div>
-<div style="flex:1;min-width:260px;text-align:center">
-<img src="/images/products/zebra-mc9400_2.png" alt="Zebra MC9400 — widok z tyłu, uchwyt pistoletowy z oknem skanera SE58 Extended Range" style="max-height:240px;object-fit:contain" loading="lazy" />
+<div style="flex:1;min-width:200px;text-align:center">
+<img src="/images/products/zebra-mc9400_2.png" alt="Zebra MC9400 — widok z tyłu, uchwyt pistoletowy z oknem skanera SE58 Extended Range" style="max-height:160px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC9400 — okno skanera SE4770/SE58</p>
 </div>
 </div>
