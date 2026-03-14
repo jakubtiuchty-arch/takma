@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { ChevronRightIcon } from '@/components/ui/Icons'
 import { Guide, guideCategoryLabels } from '@/data/guides'
 import { products } from '@/data/products'
+import GuideLivePrices from './GuideLivePrices'
 
 // Build model name → slug map
 const productNameMap: Record<string, string> = {}
@@ -144,8 +145,28 @@ export default function GuidePage({ guide }: GuidePageProps) {
     })),
   } : null
 
+  // Build slug → partNumbers[] map for live prices
+  const allContent = guide.sections.map(s => s.content).join('') + guide.faq.map(f => f.answer).join('')
+  const livePriceSlugs: string[] = []
+  let m: RegExpExecArray | null
+  const priceRegex = /data-live-price="([^"]+)"/g
+  while ((m = priceRegex.exec(allContent)) !== null) {
+    if (!livePriceSlugs.includes(m[1])) livePriceSlugs.push(m[1])
+  }
+
+  const productPNs: Record<string, string[]> = {}
+  livePriceSlugs.forEach(slug => {
+    const product = products.find(p => p.slug === slug)
+    if (product?.variants?.length) {
+      productPNs[slug] = product.variants.map(v => v.partNumber)
+    }
+  })
+
   return (
     <>
+      {/* Live price hydration */}
+      {Object.keys(productPNs).length > 0 && <GuideLivePrices productPNs={productPNs} />}
+
       {/* JSON-LD Schemas */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

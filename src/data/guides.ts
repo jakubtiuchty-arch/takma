@@ -3796,18 +3796,18 @@ export const guides: Guide[] = [
     {
       id: 'podsumowanie',
       heading: 'Kolektory danych MC3400 vs MC9400 — podsumowanie w 60 sekund',
-      content: `<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
-<div style="flex:1;min-width:200px;text-align:center">
+      content: `<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;justify-content:center;margin-bottom:24px">
+<div style="flex:1;min-width:200px;max-width:320px;text-align:center">
 <img src="/images/products/zebra-mc3400_1.png" alt="Kolektor danych Zebra MC3400 — terminal mobilny z klawiaturą 38-klawiszową i ekranem 4 cale" style="max-height:180px;object-fit:contain" loading="lazy" />
-<p style="margin-top:8px;font-weight:600">Zebra MC3400 — od 4 561 zł netto</p>
+<p style="margin-top:8px;font-weight:600"><a href="/produkt/zebra-mc3400">Zebra MC3400</a> — <span data-live-price="zebra-mc3400" class="animate-pulse">od 4 561 zł</span> netto</p>
 </div>
-<div style="flex:1;min-width:200px;text-align:center">
+<div style="flex:1;min-width:200px;max-width:320px;text-align:center">
 <img src="/images/products/zebra-mc9400_1.png" alt="Kolektor danych Zebra MC9400 — terminal ultra-rugged z klawiaturą 53-klawiszową do magazynu i chłodni" style="max-height:180px;object-fit:contain" loading="lazy" />
-<p style="margin-top:8px;font-weight:600">Zebra MC9400 — od 7 638 zł netto</p>
+<p style="margin-top:8px;font-weight:600"><a href="/produkt/zebra-mc9400">Zebra MC9400</a> — <span data-live-price="zebra-mc9400" class="animate-pulse">od 7 638 zł</span> netto</p>
 </div>
 </div>
 
-<p><strong>Zebra MC3400 (kolektor danych od 4 561 zł) to terminal rugged z 3 klawiaturami i IP67. Zebra MC9400 (kolektor danych od 7 638 zł) to ultra-rugged z 7 wymiennymi klawiaturami, IP68 i pracą do -30°C.</strong> Oba kolektory danych mają ten sam procesor Qualcomm QCS4490 (2,4 GHz), Wi-Fi 6E, Bluetooth 5.3 i skanery SE58 Extended Range do 30,5 m. Różni je klasa wytrzymałości, liczba klawiatur, zakres temperatur i cena.</p>
+<p><strong>Zebra MC3400 (kolektor danych <span data-live-price="zebra-mc3400">od 4 561 zł</span>) to terminal rugged z 3 klawiaturami i IP67. Zebra MC9400 (kolektor danych <span data-live-price="zebra-mc9400">od 7 638 zł</span>) to ultra-rugged z 7 wymiennymi klawiaturami, IP68 i pracą do -30°C.</strong> Oba kolektory danych mają ten sam procesor Qualcomm QCS4490 (2,4 GHz), Wi-Fi 6E, Bluetooth 5.3 i skanery SE58 Extended Range do 30,5 m. Różni je klasa wytrzymałości, liczba klawiatur, zakres temperatur i cena.</p>
 
 <div style="background:#f0fdf4;border-left:4px solid #16a34a;padding:16px;border-radius:8px;margin:16px 0">
 <p style="margin:0;font-weight:600">Szybka odpowiedź:</p>
@@ -3856,12 +3856,12 @@ export const guides: Guide[] = [
       heading: 'Klawiatury — 3 vs 7 opcji',
       content: `<p><strong>Kolektor danych MC3400 oferuje 3 klawiatury (29/38/47 klawiszy) wybierane przy zakupie. Terminal MC9400 ma 7 wymiennych klawiatur hot-swap (29–58 klawiszy), w tym emulacje VT i IBM 5250 do systemów legacy.</strong> W nowoczesnych WMS klawiatura 38 kl. MC3400 jest wystarczająca.</p>
 
-<div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;margin-bottom:24px">
-<div style="flex:1;min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
+<div style="display:flex;gap:32px;flex-wrap:wrap;justify-content:center;align-items:flex-start;margin-bottom:24px">
+<div style="flex:1;min-width:200px;max-width:400px;text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/keyboard_mc34.png" alt="Klawiatura 38-klawiszowa kolektora danych Zebra MC3400 — widok z przodu" style="max-height:340px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC3400 — klawiatura 38-klawiszowa</p>
 </div>
-<div style="flex:1;min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
+<div style="flex:1;min-width:200px;max-width:400px;text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/keyboard_mc94.png" alt="Klawiatura 53-klawiszowa wymienna terminala Zebra MC9400 — widok z przodu" style="max-height:340px;object-fit:contain" loading="lazy" />
 <p style="margin-top:8px;font-size:13px">MC9400 — klawiatura 53-klawiszowa (wymienna)</p>
 </div>
@@ -3961,7 +3961,7 @@ export const guides: Guide[] = [
 
 <p>Oba terminale mają <strong>SE58 Extended Range</strong> z zielonym laserem IntelliFocus — skanowanie etykiet z najwyższych regałów (do 30,5 m) bez drabiny i wózka widłowego. Laser IntelliFocus jest 7× bardziej widoczny niż tradycyjny, co przyspiesza celowanie o 30%.</p>
 
-<p><strong>Który skaner wybrać?</strong> SE55 (od 4 561 zł z MC3400) — jeśli regały mają do 8 m. SE58 — jeśli regały przekraczają 10 m lub operacje obejmują plac kontenerowy. SE4770 — tylko jeśli skanowanie jest na dystansie ręki (retail, apteka, produkcja).</p>`
+<p><strong>Który skaner wybrać?</strong> SE55 (<span data-live-price="zebra-mc3400">od 4 561 zł</span> z MC3400) — jeśli regały mają do 8 m. SE58 — jeśli regały przekraczają 10 m lub operacje obejmują plac kontenerowy. SE4770 — tylko jeśli skanowanie jest na dystansie ręki (retail, apteka, produkcja).</p>`
     },
     {
       id: 'bateria-obudowa',
@@ -4219,7 +4219,7 @@ export const guides: Guide[] = [
 <li>Potrzebujesz skanera SE55 (12 m) — najtańsza opcja</li>
 <li>Obudowa Straight Shooter bez pistoletu</li>
 </ul>
-<p style="margin:12px 0 0 0"><a href="/produkt/zebra-mc3400" style="font-weight:600">→ Zebra MC3400 — od 4 561 zł</a></p>
+<p style="margin:12px 0 0 0"><a href="/produkt/zebra-mc3400" style="font-weight:600">→ Zebra MC3400 — <span data-live-price="zebra-mc3400">od 4 561 zł</span></a></p>
 </div>
 <div style="flex:1;min-width:280px;background:#eff6ff;border:2px solid #3b82f6;border-radius:12px;padding:20px">
 <h3 style="margin:0 0 12px 0;color:#3b82f6">✅ Wybierz MC9400 gdy:</h3>
@@ -4231,7 +4231,7 @@ export const guides: Guide[] = [
 <li>Wymagana najwyższa odporność (3,65 m, IP68)</li>
 <li>Wielozmianowa praca w ekstremalnych warunkach</li>
 </ul>
-<p style="margin:12px 0 0 0"><a href="/produkt/zebra-mc9400" style="font-weight:600">→ Zebra MC9400 — od 7 638 zł</a></p>
+<p style="margin:12px 0 0 0"><a href="/produkt/zebra-mc9400" style="font-weight:600">→ Zebra MC9400 — <span data-live-price="zebra-mc9400">od 7 638 zł</span></a></p>
 </div>
 </div>
 
