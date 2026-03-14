@@ -3872,13 +3872,13 @@ export const guides: Guide[] = [
       heading: 'Klawiatury — 3 vs 7 opcji',
       content: `<p><strong>Kolektor danych MC3400 oferuje 3 klawiatury (29/38/47 klawiszy) wybierane przy zakupie. Terminal MC9400 ma 7 wymiennych klawiatur hot-swap (29–58 klawiszy), w tym emulacje VT i IBM 5250 do systemów legacy.</strong> W nowoczesnych WMS klawiatura 38 kl. MC3400 jest wystarczająca.</p>
 
-<div style="display:flex;flex-direction:column;gap:24px;align-items:center;margin-bottom:24px">
-<div style="text-align:center;width:100%">
-<img src="/images/products/keyboard_mc34.png" alt="3 klawiatury kolektora danych Zebra MC3400 — 29, 38 i 47 klawiszy" style="max-width:100%;max-height:260px;object-fit:contain;cursor:zoom-in;transition:transform 0.3s ease" loading="lazy" onclick="if(this.style.transform==='scale(1.5)'){this.style.transform='scale(1)';this.style.zIndex='1'}else{this.style.transform='scale(1.5)';this.style.zIndex='50';this.style.position='relative'}" />
+<div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:center;margin-bottom:24px">
+<div style="text-align:center;flex:1;min-width:250px">
+<img src="/images/products/keyboard_mc34.png" alt="3 klawiatury kolektora danych Zebra MC3400 — 29, 38 i 47 klawiszy" style="max-width:100%;max-height:300px;object-fit:contain;cursor:zoom-in;transition:transform 0.3s ease" loading="lazy" onclick="if(this.style.transform==='scale(1.5)'){this.style.transform='scale(1)';this.style.zIndex='1'}else{this.style.transform='scale(1.5)';this.style.zIndex='50';this.style.position='relative'}" />
 <p style="margin-top:8px;font-size:13px">MC3400 — 3 klawiatury (29 / 38 / 47 klawiszy)</p>
 <p style="margin:0;font-size:11px;color:#9ca3af">Kliknij aby powiększyć</p>
 </div>
-<div style="text-align:center;width:100%">
+<div style="text-align:center;flex:1;min-width:250px">
 <img src="/images/products/keyboard_mc94.png" alt="7 wymiennych klawiatur terminala Zebra MC9400 — od 29 do 58 klawiszy" style="max-width:100%;max-height:300px;object-fit:contain;cursor:zoom-in;transition:transform 0.3s ease" loading="lazy" onclick="if(this.style.transform==='scale(1.5)'){this.style.transform='scale(1)';this.style.zIndex='1'}else{this.style.transform='scale(1.5)';this.style.zIndex='50';this.style.position='relative'}" />
 <p style="margin-top:8px;font-size:13px">MC9400 — 7 wymiennych klawiatur (29–58 klawiszy)</p>
 <p style="margin:0;font-size:11px;color:#9ca3af">Kliknij aby powiększyć</p>
