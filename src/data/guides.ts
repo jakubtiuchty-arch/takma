@@ -3352,17 +3352,17 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-13',
   updatedAt: '2026-03-13',
   readTime: '14 min',
-  heroImage: '/images/products/tc22_scanner_1.png',
+  heroImage: '/images/guides/zebra-tc22-vs-tc27-hero.png',
   sections: [
     {
       id: 'podsumowanie',
       heading: 'Zebra TC22 vs TC27 — Wi-Fi czy 5G? Kompletne porównanie 2026',
-      content: `<div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:24px">
-<div style="flex:1;min-width:200px;text-align:center">
+      content: `<div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:24px;justify-content:center">
+<div style="min-width:200px;text-align:center">
 <img src="/images/products/tc22_front.png" alt="Zebra TC22 — terminal mobilny Wi-Fi 6E, widok z przodu" style="max-height:180px;margin:0 auto" loading="lazy" />
 <p><strong><a href="/produkt/zebra-tc22">Zebra TC22</a></strong><br/>Wi-Fi 6E · od 2 417 zł netto</p>
 </div>
-<div style="flex:1;min-width:200px;text-align:center">
+<div style="min-width:200px;text-align:center">
 <img src="/images/products/tc22_scanner_2.png" alt="Zebra TC27 — terminal mobilny 5G z GPS, widok z tyłu" style="max-height:180px;margin:0 auto" loading="lazy" />
 <p><strong><a href="/produkt/zebra-tc27">Zebra TC27</a></strong><br/>5G + Wi-Fi 6E + GPS · od 2 690 zł netto</p>
 </div>
