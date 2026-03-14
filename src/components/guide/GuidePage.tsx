@@ -178,12 +178,12 @@ export default function GuidePage({ guide }: GuidePageProps) {
         {guide.heroImage ? (
           <>
             {/* Hero with background image */}
-            <div className="relative bg-gray-900 overflow-hidden">
-              {/* Background image — right-aligned, full height, not cropped */}
+            <div className="relative bg-gray-900 overflow-hidden sm:min-h-[340px]">
+              {/* Background image — right-aligned, vertically centered, not cropped */}
               <img
                 src={guide.heroImage}
                 alt=""
-                className="absolute right-0 bottom-0 w-2/3 object-contain object-right-bottom hidden sm:block"
+                className="absolute right-0 top-1/2 -translate-y-1/2 w-2/3 object-contain hidden sm:block"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent" />
               <div className="relative">
