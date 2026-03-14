@@ -1023,7 +1023,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-02-13',
   updatedAt: '2026-02-21',
   readTime: '15 min',
-  heroImage: '/images/guides/drukarki-zebra-przewodnik.jpg',
+  heroImage: '/images/guides/drukarki-etykiet-zebra-przewodnik.png',
 
   sections: [
     {
