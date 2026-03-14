@@ -3809,7 +3809,7 @@ export const guides: Guide[] = [
 
 <p><strong>Zebra MC3400 (kolektor danych <span data-live-price="zebra-mc3400">od 4 561 zł</span>) to terminal rugged z 3 klawiaturami i IP67. Zebra MC9400 (kolektor danych <span data-live-price="zebra-mc9400">od 7 638 zł</span>) to ultra-rugged z 7 wymiennymi klawiaturami, IP68 i pracą do -30°C.</strong> Oba kolektory danych mają ten sam procesor Qualcomm QCS4490 (2,4 GHz), Wi-Fi 6E, Bluetooth 5.3 i skanery SE58 Extended Range do 30,5 m. Różni je klasa wytrzymałości, liczba klawiatur, zakres temperatur i cena.</p>
 
-<div style="background:#f0fdf4;border-left:4px solid #16a34a;padding:16px;border-radius:8px;margin:16px 0">
+<div style="background:#f8fee6;border-left:4px solid #A8F000;padding:16px;border-radius:8px;margin:16px 0">
 <p style="margin:0;font-weight:600">Szybka odpowiedź:</p>
 <ul style="margin:8px 0 0 0">
 <li><strong>MC3400</strong> — standardowy magazyn z Wi-Fi, temperatura powyżej -20°C, budżet do 5 734 zł. 3 klawiatury, IP65/IP67, upadki z 2,4 m, 528 g (Gun). Lżejszy, tańszy, wystarczający do 90% operacji magazynowych.</li>
@@ -3829,23 +3829,23 @@ export const guides: Guide[] = [
 </tr>
 </thead>
 <tbody>
-<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Cena od</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">4 561 zł netto</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">7 638 zł netto</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Cena od</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">4 561 zł netto</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">7 638 zł netto</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Procesor</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center" colspan="2">Qualcomm QCS4490 octa-core, 2,4 GHz</td></tr>
-<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Wyświetlacz</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">4" WVGA, 350–600 nit</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">4,3" WVGA, 600 nit</td></tr>
-<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">RAM / Flash</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">4–6 GB / 64–128 GB</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">6 GB / 128 GB</td></tr>
-<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Klawiatury</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">3 opcje (29/38/47 kl.)</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">7 wymiennych (29–58 kl.)</td></tr>
-<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Skanery</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">SE55 / SE4770 / SE58</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">SE4770 / SE58</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Wyświetlacz</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">4" WVGA, 350–600 nit</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">4,3" WVGA, 600 nit</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">RAM / Flash</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">4–6 GB / 64–128 GB</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">6 GB / 128 GB</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Klawiatury</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">3 opcje (29/38/47 kl.)</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">7 wymiennych (29–58 kl.)</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Skanery</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">SE55 / SE4770 / SE58</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">SE4770 / SE58</td></tr>
 <tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Zasięg skanera</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center" colspan="2">SE58: do 30,5 m | SE4770: do 1,5 m | SE55: do 12,2 m</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Obudowy</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">Gun / Straight Shooter</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">Tylko Gun</td></tr>
-<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Klasa ochrony</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP65/IP67</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">IP65+IP68</td></tr>
-<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Upadki na beton</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">2,4 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">3,65 m (+52%)</td></tr>
-<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Tumble</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">4 000× z 1 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">6 000× z 1 m (+50%)</td></tr>
-<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Temperatura pracy</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">-20°C do +50°C</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">-30°C do +50°C (freezer)</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Klasa ochrony</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP65/IP67</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">IP65+IP68</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Upadki na beton</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">2,4 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">3,65 m (+52%)</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Tumble</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">4 000× z 1 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">6 000× z 1 m (+50%)</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Temperatura pracy</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">-20°C do +50°C</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">-30°C do +50°C (freezer)</td></tr>
 <tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Bateria</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">7 000 mAh, hot-swap</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">7 000 / 5 000 mAh, warm-swap</td></tr>
-<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Waga (Gun)</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">528 g</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">743 g</td></tr>
-<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Android</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">14 → 18 (4 generacje)</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">14 → 17 (3 generacje)</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Waga (Gun)</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">528 g</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">743 g</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Android</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">14 → 18 (4 generacje)</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">14 → 17 (3 generacje)</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Wariant 5G</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center"><a href="/produkt/zebra-mc3450">MC3450</a></td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center"><a href="/produkt/zebra-mc9450">MC9450</a></td></tr>
-<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">OneCare 3 lata</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">1 139 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">1 490 zł</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">OneCare 3 lata</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">1 139 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">1 490 zł</td></tr>
 </tbody>
 </table>
 
@@ -3887,7 +3887,7 @@ export const guides: Guide[] = [
 </ul>
 <p>Klawiatury MC9400 wymienia się <strong>w terenie bez narzędzi (hot-swap)</strong> — ten sam terminal może obsługiwać różne procesy: rano kompletacja (53 kl.), po południu inwentaryzacja (29 kl.).</p>
 
-<div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px;border-radius:8px;margin:16px 0">
+<div style="background:#f8fee6;border-left:4px solid #A8F000;padding:16px;border-radius:8px;margin:16px 0">
 <p style="margin:0;font-weight:600">Kiedy 7 klawiatur robi różnicę?</p>
 <p style="margin:8px 0 0 0">Jeśli używasz systemu legacy <strong>IBM AS/400</strong> lub <strong>emulacji terminala VT</strong>, MC9400 z klawiaturą 53 kl. 5250 lub 53 kl. VT jest jedynym rozwiązaniem — MC3400 nie ma tych opcji. W nowoczesnych środowiskach WMS (SAP, Oracle WMS, Manhattan) klawiatura 38 kl. MC3400 jest w pełni wystarczająca.</p>
 </div>`
@@ -3907,10 +3907,10 @@ export const guides: Guide[] = [
 </tr>
 </thead>
 <tbody>
-<tr><td style="padding:8px;border:1px solid #e2e8f0">Upadki na beton</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">2,4 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;font-weight:600">3,65 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a">+52%</td></tr>
-<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">Tumble</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">4 000×</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;font-weight:600">6 000×</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a">+50%</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0">Upadki na beton</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">2,4 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;font-weight:600">3,65 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800">+52%</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">Tumble</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">4 000×</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;font-weight:600">6 000×</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800">+50%</td></tr>
 <tr><td style="padding:8px;border:1px solid #e2e8f0">Klasa IP</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP65/IP67</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;font-weight:600">IP65+IP68</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP68 vs IP67</td></tr>
-<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">Temperatura min.</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">-20°C</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;font-weight:600">-30°C (freezer)</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a">-10°C</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">Temperatura min.</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">-20°C</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;font-weight:600">-30°C (freezer)</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800">-10°C</td></tr>
 <tr><td style="padding:8px;border:1px solid #e2e8f0">Certyfikacja</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center" colspan="2">MIL-STD-810H</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">—</td></tr>
 </tbody>
 </table>
@@ -3951,9 +3951,9 @@ export const guides: Guide[] = [
 </tr>
 </thead>
 <tbody>
-<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">SE55 Advanced Range</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">do 12,2 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">✅</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">❌</td><td style="padding:8px;border:1px solid #e2e8f0">Regały średniego składowania</td></tr>
-<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">SE4770 Standard Range</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">do 1,5 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">✅</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">✅</td><td style="padding:8px;border:1px solid #e2e8f0">Retail, logistyka bliskiego zasięgu</td></tr>
-<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">SE58 Extended Range</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">do 30,5 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">✅</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">✅</td><td style="padding:8px;border:1px solid #e2e8f0">Magazyn wysokiego składowania</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">SE55 Advanced Range</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">do 12,2 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">Tak</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#dc2626">Nie</td><td style="padding:8px;border:1px solid #e2e8f0">Regały średniego składowania</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">SE4770 Standard Range</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">do 1,5 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">Tak</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">Tak</td><td style="padding:8px;border:1px solid #e2e8f0">Retail, logistyka bliskiego zasięgu</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">SE58 Extended Range</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">do 30,5 m</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">Tak</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">Tak</td><td style="padding:8px;border:1px solid #e2e8f0">Magazyn wysokiego składowania</td></tr>
 </tbody>
 </table>
 
@@ -3979,7 +3979,7 @@ export const guides: Guide[] = [
 <tr><td style="padding:8px;border:1px solid #e2e8f0">Bateria standardowa</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">7 000 mAh</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">7 000 mAh</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">Bateria freezer</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">—</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;font-weight:600">5 000 mAh (-30°C)</td></tr>
 <tr><td style="padding:8px;border:1px solid #e2e8f0">Bateria BLE</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">—</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">7 000 mAh + beacon</td></tr>
-<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">Wymiana baterii</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">Hot-swap (0 s)</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">Warm-swap (~5 s)</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">Wymiana baterii</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">Hot-swap (0 s)</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">Warm-swap (~5 s)</td></tr>
 <tr><td style="padding:8px;border:1px solid #e2e8f0">Czas pracy</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center" colspan="2">10–14 h (zależnie od intensywności)</td></tr>
 </tbody>
 </table>
@@ -3991,7 +3991,7 @@ export const guides: Guide[] = [
 <p><strong>MC3400</strong>: 442 g (Straight Shooter) / 528 g (Gun). Dwie obudowy: prosta (do noszenia w holsterze) i pistoletowa (do intensywnego skanowania). Wymiary Gun: 208,5 × 73,5 × 165,3 mm.</p>
 <p><strong>MC9400</strong>: 743 g — tylko obudowa pistoletowa (Gun). Wymiary: 240 × 88 × 189 mm. Większy i cięższy (+40%), ale zaprojektowany do intensywnej pracy w rękawicach w ekstremalnych warunkach.</p>
 
-<div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px;border-radius:8px;margin:16px 0">
+<div style="background:#f8fee6;border-left:4px solid #A8F000;padding:16px;border-radius:8px;margin:16px 0">
 <p style="margin:0;font-weight:600">Kompatybilność wsteczna z poprzednikami</p>
 <p style="margin:8px 0 0 0">MC3400 używa baterii i akcesoriów <strong>MC3300x</strong>. MC9400 używa baterii i akcesoriów <strong>MC9300</strong>. W obu przypadkach migracja z poprzednika nie wymaga wymiany infrastruktury ładowania — stacje, ładowarki i holstery pasują bez zmian.</p>
 </div>`
@@ -4010,7 +4010,7 @@ export const guides: Guide[] = [
 </tr>
 </thead>
 <tbody>
-<tr><td style="padding:6px 8px;border:1px solid #e2e8f0">SE55</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 38 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">4/64 GB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right;font-weight:600;color:#16a34a">od 4 561 zł</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0">SE55</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 38 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">4/64 GB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right;font-weight:600;color:#7ab800">od 4 561 zł</td></tr>
 <tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0">SE4770</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 38 / 47 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">6/64 GB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 4 872 zł</td></tr>
 <tr><td style="padding:6px 8px;border:1px solid #e2e8f0">SE58</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 38 / 47 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">6/64 GB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 5 444 zł</td></tr>
 <tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0">SE4770 + Kamera</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 38 / 47 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">6/128 GB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 5 329 zł</td></tr>
@@ -4058,7 +4058,7 @@ export const guides: Guide[] = [
 <tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">Obudowa ochronna</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~250 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~350 zł</td></tr>
 <tr><td style="padding:8px;border:1px solid #e2e8f0">Bateria zapasowa</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~350 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~450 zł</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0">OneCare Essential 3 lata</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">1 139 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">1 490 zł</td></tr>
-<tr style="font-weight:700;background:#f0fdf4"><td style="padding:10px;border:1px solid #e2e8f0">TCO / sztuka (3 lata)</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:right;color:#16a34a">~7 473 zł</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:right">~10 267 zł</td></tr>
+<tr style="font-weight:700;background:#f0fdf4"><td style="padding:10px;border:1px solid #e2e8f0">TCO / sztuka (3 lata)</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:right;color:#7ab800">~7 473 zł</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:right">~10 267 zł</td></tr>
 <tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Różnica</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right" colspan="2">MC9400 kosztuje <strong>~2 794 zł więcej</strong> na 3 lata (+37%)</td></tr>
 </tbody>
 </table>
@@ -4126,7 +4126,7 @@ export const guides: Guide[] = [
 <li><strong>Klawiatury MC9300</strong> — wymienne klawiatury pasują do MC9400</li>
 </ul>
 
-<div style="background:#f0fdf4;border-left:4px solid #16a34a;padding:16px;border-radius:8px;margin:16px 0">
+<div style="background:#f8fee6;border-left:4px solid #A8F000;padding:16px;border-radius:8px;margin:16px 0">
 <p style="margin:0;font-weight:600">Oszczędność na migracji</p>
 <p style="margin:8px 0 0 0">Pełna kompatybilność wsteczna z akcesoriami poprzedników oznacza, że migracja wymaga zakupu <strong>tylko nowych terminali</strong>. Stacje dokujące, ładowarki, baterie i holstery zostają. Oszczędność: <strong>30–40% kosztów wdrożenia</strong> w porównaniu z zakupem kompletnie nowego ekosystemu.</p>
 </div>`
@@ -4209,8 +4209,8 @@ export const guides: Guide[] = [
       id: 'podsumowanie-koncowe',
       heading: 'Podsumowanie — MC3400 vs MC9400',
       content: `<div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:16px">
-<div style="flex:1;min-width:280px;background:#f0fdf4;border:2px solid #16a34a;border-radius:12px;padding:20px">
-<h3 style="margin:0 0 12px 0;color:#16a34a">✅ Wybierz MC3400 gdy:</h3>
+<div style="flex:1;min-width:280px;background:#f8fee6;border:2px solid #A8F000;border-radius:12px;padding:20px">
+<h3 style="margin:0 0 12px 0;color:#7ab800">Wybierz MC3400 gdy:</h3>
 <ul style="margin:0;padding-left:20px">
 <li>Standardowy magazyn z Wi-Fi</li>
 <li>Temperatura powyżej -20°C</li>
@@ -4221,8 +4221,8 @@ export const guides: Guide[] = [
 </ul>
 <p style="margin:12px 0 0 0"><a href="/produkt/zebra-mc3400" style="font-weight:600">→ Zebra MC3400 — <span data-live-price="zebra-mc3400">od 4 561 zł</span></a></p>
 </div>
-<div style="flex:1;min-width:280px;background:#eff6ff;border:2px solid #3b82f6;border-radius:12px;padding:20px">
-<h3 style="margin:0 0 12px 0;color:#3b82f6">✅ Wybierz MC9400 gdy:</h3>
+<div style="flex:1;min-width:280px;background:#f8fee6;border:2px solid #A8F000;border-radius:12px;padding:20px">
+<h3 style="margin:0 0 12px 0;color:#7ab800">Wybierz MC9400 gdy:</h3>
 <ul style="margin:0;padding-left:20px">
 <li>Chłodnia / mroźnia do -30°C</li>
 <li>Ciężki przemysł, port, kopalnia</li>
@@ -4292,7 +4292,7 @@ export const guides: Guide[] = [
       heading: 'Dobierz skaner Zebra w 30 sekund',
       content: `<p><strong>Zebra Technologies</strong> oferuje ponad 10 modeli skanerów kodów kreskowych — od kasowego DS2208 za 352 zł po ultra-rugged DS3608-XR z zasięgiem 32 m za 2 417 zł. Który wybrać? To zależy od trzech rzeczy: <strong>gdzie skanujesz</strong> (kasa, apteka, magazyn, chłodnia), <strong>z jakiej odległości</strong> (5 cm–32 m) i <strong>czy potrzebujesz kabla</strong> (przewodowy vs Bluetooth).</p>
 
-<div style="background:#f0fdf4;border-left:4px solid #16a34a;padding:16px;border-radius:8px;margin:16px 0">
+<div style="background:#f8fee6;border-left:4px solid #A8F000;padding:16px;border-radius:8px;margin:16px 0">
 <p style="margin:0;font-weight:600">Szybki dobór:</p>
 <ul style="margin:8px 0 0 0">
 <li><strong>Kasa / apteka / biuro</strong> → <a href="/produkt/zebra-ds2208">DS2208</a> od 352 zł (przewodowy) lub <a href="/produkt/zebra-ds2278">DS2278</a> od 449 zł (Bluetooth)</li>
@@ -4322,14 +4322,14 @@ export const guides: Guide[] = [
 </tr>
 </thead>
 <tbody>
-<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds2208">DS2208</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Ręczny USB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">640×480</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">36,8 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">IP52</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1,5 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">0–50°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">5 lat</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right;font-weight:600;color:#16a34a">352 zł</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds2208">DS2208</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Ręczny USB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">640×480</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">36,8 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">IP52</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1,5 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">0–50°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">5 lat</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right;font-weight:600;color:#7ab800">352 zł</td></tr>
 <tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds2278">DS2278</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">BT bezprzew.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">640×480</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">36,8 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">IP52</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1,5 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">0–50°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">3 lata</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">449 zł</td></tr>
 <tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds4608">DS4608</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Ręczny USB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1 MP PRZM</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">112 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">IP52</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1,8 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">0–50°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">5 lat</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">814 zł</td></tr>
 <tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds9308">DS9308</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Prezentacyjny</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1 MP PRZM</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">22,4 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">IP52</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1,5 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">0–50°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">3 lata</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">995 zł</td></tr>
 <tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds8208">DS8208</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Ręczny USB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">2 MP PRZM</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">70 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">IP52</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">3,0 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">0–50°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">5 lat</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">1 027 zł</td></tr>
 <tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds9908">DS9908</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Hybrydowy</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1 MP PRZM</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">62,7 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">IP52</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1,5 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">0–50°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">5 lat</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">1 169 zł</td></tr>
-<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds3608-sr">DS3608-SR</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Ultra-rugged</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1 MP</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">152 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">IP68</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">3,0 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">-30°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">3 lata</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">1 287 zł</td></tr>
-<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds3608-xr">DS3608-XR</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Ultra-rugged ER</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Dual 2 MP</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">32 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">IP68</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">3,0 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">-30°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">3 lata</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">2 417 zł</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds3608-sr">DS3608-SR</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Ultra-rugged</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1 MP</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">152 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#7ab800">IP68</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#7ab800">3,0 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#7ab800">-30°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">3 lata</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">1 287 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds3608-xr">DS3608-XR</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Ultra-rugged ER</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Dual 2 MP</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#7ab800">32 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#7ab800">IP68</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#7ab800">3,0 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#7ab800">-30°C</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">3 lata</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">2 417 zł</td></tr>
 </tbody>
 </table>
 
@@ -4355,7 +4355,7 @@ export const guides: Guide[] = [
 
 <p><strong>Zebra DS2278</strong> to bezprzewodowa wersja z Bluetooth 4.0 BLE. Bateria 2 400 mAh na 14 h pracy / 110 000 skanów. Baza prezentacyjna CR2278 automatycznie przełącza tryb ręczny ↔ hands-free. Dopłata 97 zł za wolność od kabla.</p>
 
-<div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px;border-radius:8px;margin:16px 0">
+<div style="background:#f8fee6;border-left:4px solid #A8F000;padding:16px;border-radius:8px;margin:16px 0">
 <p style="margin:0;font-weight:600">DS2208 vs DS2278 — który wybrać?</p>
 <p style="margin:8px 0 0 0"><strong>DS2208</strong> (352 zł) — stała kasa z miejscem na kabel. Brak baterii = zero ładowania, zero przestojów. 5 lat gwarancji.</p>
 <p style="margin:4px 0 0 0"><strong>DS2278</strong> (449 zł) — inwentaryzacja, stanowiska z ograniczonym miejscem, operatorzy chodzący od kasy do zaplecza. 3 lata gwarancji.</p>
@@ -4389,12 +4389,12 @@ export const guides: Guide[] = [
 </tr>
 </thead>
 <tbody>
-<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600">Sensor</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">640×480</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1 MP PRZM</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">2 MP PRZM</td></tr>
-<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600">Zasięg UPC</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">36,8 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">71 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">70 cm</td></tr>
-<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600">Szybkość</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">220 skan/s</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">100 skan/s</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">406 cm/s</td></tr>
-<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600">EAS</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">—</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Opcja HD</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">Tak (VCWW)</td></tr>
-<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600">Upadki</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1,5 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1,8 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">3,0 m</td></tr>
-<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600">Cena od</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;color:#16a34a;font-weight:600">352 zł</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">814 zł</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1 027 zł</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600">Sensor</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">640×480</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1 MP PRZM</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#7ab800">2 MP PRZM</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600">Zasięg UPC</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">36,8 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">71 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#7ab800">70 cm</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600">Szybkość</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">220 skan/s</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">100 skan/s</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#7ab800">406 cm/s</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600">EAS</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">—</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">Opcja HD</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#7ab800">Tak (VCWW)</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600">Upadki</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1,5 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1,8 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#7ab800">3,0 m</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600">Cena od</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">352 zł</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">814 zł</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">1 027 zł</td></tr>
 </tbody>
 </table>
 
@@ -4418,7 +4418,7 @@ export const guides: Guide[] = [
 
 <p><strong>Zebra DS9908</strong> (od 1 169 zł) — hybrydowy: natywny tryb hands-free + ręczny. Automatyczne przełączanie — po odłożeniu ogranicza pole, po wzięciu do ręki rozszerza zasięg do 63 cm. Digimarc natywnie, opcja EAS, wariant HD do farmacji, wariant RFID (DS9908R). Gwarancja 5 lat vs 3 lata w DS9308.</p>
 
-<div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:16px;border-radius:8px;margin:16px 0">
+<div style="background:#f8fee6;border-left:4px solid #A8F000;padding:16px;border-radius:8px;margin:16px 0">
 <p style="margin:0;font-weight:600">DS9308 vs DS9908 — który wybrać?</p>
 <p style="margin:8px 0 0 0"><strong>DS9308</strong> — kasa z wąskim blatem, apteka, restauracja. Tylko hands-free, kompaktowy (145×86×83 mm). Tańszy o 174 zł.</p>
 <p style="margin:4px 0 0 0"><strong>DS9908</strong> — supermarket z dużymi produktami (od czasu do czasu trzeba wziąć skaner do ręki), apteka sieciowa (ręczny tryb do weryfikacji recept). Dłuższa gwarancja (5 lat), Digimarc natywnie.</p>
@@ -4451,10 +4451,10 @@ export const guides: Guide[] = [
 </tr>
 </thead>
 <tbody>
-<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds3608-sr">DS3608-SR</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">152 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">5 mil</td><td style="padding:6px 8px;border:1px solid #e2e8f0">Uniwersalny: magazyn, logistyka, produkcja</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right;color:#16a34a;font-weight:600">1 287 zł</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds3608-sr">DS3608-SR</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">152 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">5 mil</td><td style="padding:6px 8px;border:1px solid #e2e8f0">Uniwersalny: magazyn, logistyka, produkcja</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right;color:#7ab800;font-weight:600">1 287 zł</td></tr>
 <tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds3608-hp">DS3608-HP</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">203 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">5 mil</td><td style="padding:6px 8px;border:1px solid #e2e8f0">Logistyka, OCR, dokumenty, podpisy</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">1 654 zł</td></tr>
-<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds3608-hd">DS3608-HD</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">66 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">3 mil</td><td style="padding:6px 8px;border:1px solid #e2e8f0">Elektronika, farmacja, PCB, małe kody</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">1 808 zł</td></tr>
-<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds3608-xr">DS3608-XR</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">32 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">5 mil</td><td style="padding:6px 8px;border:1px solid #e2e8f0">Magazyn wysokiego skład., outdoor, plac</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">2 417 zł</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds3608-hd">DS3608-HD</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">66 cm</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#7ab800">3 mil</td><td style="padding:6px 8px;border:1px solid #e2e8f0">Elektronika, farmacja, PCB, małe kody</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">1 808 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-ds3608-xr">DS3608-XR</a></td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#7ab800">32 m</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">5 mil</td><td style="padding:6px 8px;border:1px solid #e2e8f0">Magazyn wysokiego skład., outdoor, plac</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">2 417 zł</td></tr>
 </tbody>
 </table>
 
@@ -4521,11 +4521,11 @@ export const guides: Guide[] = [
 <tr><td style="padding:6px 8px;border:1px solid #e2e8f0">Skaner + kabel USB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">388 zł</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">814 zł</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">1 287 zł</td></tr>
 <tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0">Podstawka</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">~50 zł</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">~80 zł</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">~150 zł</td></tr>
 <tr><td style="padding:6px 8px;border:1px solid #e2e8f0">Wymiana (aw. co 3 lata IP52)</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">+388 zł</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">+814 zł</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">0 zł (IP68)</td></tr>
-<tr style="background:#f8fafc;font-weight:700"><td style="padding:8px;border:1px solid #e2e8f0">TCO / 5 lat</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~826 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~1 708 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right;color:#16a34a">~1 437 zł</td></tr>
+<tr style="background:#f8fafc;font-weight:700"><td style="padding:8px;border:1px solid #e2e8f0">TCO / 5 lat</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~826 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~1 708 zł</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right;color:#7ab800">~1 437 zł</td></tr>
 </tbody>
 </table>
 
-<div style="background:#f0fdf4;border-left:4px solid #16a34a;padding:16px;border-radius:8px;margin:16px 0">
+<div style="background:#f8fee6;border-left:4px solid #A8F000;padding:16px;border-radius:8px;margin:16px 0">
 <p style="margin:0;font-weight:600">DS3608-SR tańszy niż DS4608 na 5 lat!</p>
 <p style="margin:8px 0 0 0">Paradoks: DS3608-SR (1 287 zł) jest droższy na starcie, ale IP65+IP68 i upadki z 3 m oznaczają, że w magazynie przeżyje 5+ lat bez wymiany. DS4608 z IP52 w agresywnym środowisku magazynowym średnio wymaga wymiany co 2,5–3 lata. Na 5-letnim horyzoncie DS3608-SR jest tańszy o ~271 zł na stanowisko.</p>
 </div>
@@ -4560,7 +4560,7 @@ export const guides: Guide[] = [
 </tr>
 </thead>
 <tbody>
-<tr><td style="padding:6px 8px;border:1px solid #e2e8f0">DS2208, DS4608, DS8208, DS9908</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#16a34a">5 lat</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">—</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0">DS2208, DS4608, DS8208, DS9908</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center;font-weight:600;color:#7ab800">5 lat</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">—</td></tr>
 <tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0">DS2278, DS9308</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">3 lata</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">do 5 lat</td></tr>
 <tr><td style="padding:6px 8px;border:1px solid #e2e8f0">DS3608, DS3678</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">3 lata</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">do 5 lat</td></tr>
 </tbody>
@@ -4572,13 +4572,13 @@ export const guides: Guide[] = [
       id: 'podsumowanie-koncowe',
       heading: 'Podsumowanie — którego skanera Zebra potrzebujesz?',
       content: `<div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px">
-<div style="flex:1;min-width:220px;background:#f0fdf4;border:2px solid #16a34a;border-radius:12px;padding:16px">
-<h4 style="margin:0 0 8px 0;color:#16a34a">Kasa / apteka</h4>
+<div style="flex:1;min-width:220px;background:#f8fee6;border:2px solid #A8F000;border-radius:12px;padding:16px">
+<h4 style="margin:0 0 8px 0;color:#7ab800">Kasa / apteka</h4>
 <p style="margin:0;font-size:14px"><a href="/produkt/zebra-ds2208">DS2208</a> — od 352 zł</p>
 <p style="margin:2px 0 0 0;font-size:12px;color:#64748b">Przewodowy USB, 5 lat gwarancji, FMD</p>
 </div>
-<div style="flex:1;min-width:220px;background:#eff6ff;border:2px solid #3b82f6;border-radius:12px;padding:16px">
-<h4 style="margin:0 0 8px 0;color:#3b82f6">Retail premium</h4>
+<div style="flex:1;min-width:220px;background:#f8fee6;border:2px solid #A8F000;border-radius:12px;padding:16px">
+<h4 style="margin:0 0 8px 0;color:#7ab800">Retail premium</h4>
 <p style="margin:0;font-size:14px"><a href="/produkt/zebra-ds8208">DS8208</a> — od 1 027 zł</p>
 <p style="margin:2px 0 0 0;font-size:12px;color:#64748b">2 MP, 3 m upadki, EAS, 5 lat</p>
 </div>
