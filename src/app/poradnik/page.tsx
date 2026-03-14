@@ -83,7 +83,14 @@ export default function PoradnikiPage() {
                   {/* Card Content */}
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
-                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-primary-100 text-primary-700">
+                      <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold ${
+                        guide.category === 'poradnik' ? 'bg-blue-100 text-blue-700' :
+                        guide.category === 'porownanie' ? 'bg-amber-100 text-amber-700' :
+                        guide.category === 'przewodnik' ? 'bg-emerald-100 text-emerald-700' :
+                        guide.category === 'branzowy' ? 'bg-purple-100 text-purple-700' :
+                        guide.category === 'serwisowy' ? 'bg-rose-100 text-rose-700' :
+                        'bg-gray-100 text-gray-700'
+                      }`}>
                         {guideCategoryLabels[guide.category]}
                       </span>
                       <span className="text-xs text-gray-400">{guide.readTime}</span>
