@@ -185,7 +185,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
                 alt=""
                 className="absolute right-0 top-1/2 -translate-y-1/2 w-2/3 object-contain hidden sm:block"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/60 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/40 to-transparent" />
               <div className="relative">
                 <nav className="container-main pt-4 pb-2" aria-label="Breadcrumb">
                   <ol className="flex items-center gap-1.5 text-sm text-white/70 flex-wrap">
