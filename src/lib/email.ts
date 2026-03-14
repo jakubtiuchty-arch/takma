@@ -27,6 +27,7 @@ interface EmailOptions {
   subject: string
   html: string
   from?: string
+  replyTo?: string
   attachments?: { filename: string; content: Buffer }[]
 }
 
@@ -39,7 +40,8 @@ export async function sendEmail(options: EmailOptions): Promise<{ success: boole
 
   try {
     const { error } = await resend.emails.send({
-      from: options.from || 'TAKMA <takma@takma.com.pl>',
+      from: options.from || 'TAKMA <noreply@serwis-zebry.pl>',
+      replyTo: options.replyTo || 'takma@takma.com.pl',
       to: options.to,
       subject: options.subject,
       html: options.html,
@@ -84,7 +86,7 @@ export async function sendOrderConfirmation(data: {
 }) {
   return sendEmail({
     to: data.customer.email,
-    from: 'TAKMA Zamówienia <zamowienia@takma.com.pl>',
+    from: 'TAKMA Zamówienia <noreply@serwis-zebry.pl>',
     subject: `Potwierdzenie zamówienia ${data.orderNumber} — TAKMA`,
     html: buildOrderConfirmationEmail(data),
   })
@@ -93,7 +95,7 @@ export async function sendOrderConfirmation(data: {
 export async function sendProformaEmail(email: string, orderNumber: string, pdfBuffer: Buffer) {
   return sendEmail({
     to: email,
-    from: 'TAKMA Zamówienia <zamowienia@takma.com.pl>',
+    from: 'TAKMA Zamówienia <noreply@serwis-zebry.pl>',
     subject: `Faktura pro forma ${orderNumber} — TAKMA`,
     html: buildProformaEmail({ orderNumber }),
     attachments: [{ filename: `proforma-${orderNumber}.pdf`, content: pdfBuffer }],
@@ -103,7 +105,7 @@ export async function sendProformaEmail(email: string, orderNumber: string, pdfB
 export async function sendShippingNotification(email: string, orderNumber: string, trackingNumber: string, carrierName: string) {
   return sendEmail({
     to: email,
-    from: 'TAKMA Zamówienia <zamowienia@takma.com.pl>',
+    from: 'TAKMA Zamówienia <noreply@serwis-zebry.pl>',
     subject: `Zamówienie ${orderNumber} wysłane — TAKMA`,
     html: buildShippingNotificationEmail({ orderNumber, trackingNumber, carrierName }),
   })
@@ -132,7 +134,7 @@ export async function sendAdminNotification(data: {
   const adminEmail = process.env.ADMIN_EMAIL || 'jakub.tiuchty@takma.com.pl'
   return sendEmail({
     to: adminEmail,
-    from: 'TAKMA Zamówienia <zamowienia@takma.com.pl>',
+    from: 'TAKMA Zamówienia <noreply@serwis-zebry.pl>',
     subject: `[NOWE ZAMÓWIENIE] ${data.orderNumber} — ${data.totalBrutto.toFixed(2)} zł brutto`,
     html: buildAdminOrderNotificationEmail(data),
   })
@@ -151,7 +153,7 @@ export async function sendRepairSubmittedEmail(data: {
 }) {
   return sendEmail({
     to: data.to,
-    from: 'TAKMA Serwis <serwis@takma.com.pl>',
+    from: 'TAKMA Serwis <noreply@serwis-zebry.pl>',
     subject: `Zgłoszenie naprawy przyjęte — ${data.deviceModel} #${data.repairNumber}`,
     html: buildRepairSubmittedEmail({
       customerName: data.customerName,
@@ -182,7 +184,7 @@ export async function sendRepairSubmittedAdminEmail(data: {
     data.to.map(email =>
       sendEmail({
         to: email,
-        from: 'TAKMA Serwis <serwis@takma.com.pl>',
+        from: 'TAKMA Serwis <noreply@serwis-zebry.pl>',
         subject: `[TAKMA] Nowe zgłoszenie naprawy #${data.repairNumber} — ${data.deviceModel}`,
         html: buildRepairSubmittedAdminEmail({
           repairNumber: data.repairNumber,
