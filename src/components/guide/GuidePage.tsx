@@ -178,11 +178,15 @@ export default function GuidePage({ guide }: GuidePageProps) {
         {guide.heroImage ? (
           <>
             {/* Hero with background image */}
-            <div
-              className="relative bg-cover bg-center bg-no-repeat"
-              style={{ backgroundImage: `url(${guide.heroImage})` }}
-            >
-              <div className="bg-gradient-to-r from-black/85 via-black/60 to-transparent">
+            <div className="relative bg-gray-900 overflow-hidden">
+              {/* Background image — right-aligned, full height, not cropped */}
+              <img
+                src={guide.heroImage}
+                alt=""
+                className="absolute right-0 top-0 h-full w-2/3 object-cover object-center hidden sm:block"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent" />
+              <div className="relative">
                 <nav className="container-main pt-4 pb-2" aria-label="Breadcrumb">
                   <ol className="flex items-center gap-1.5 text-sm text-white/70 flex-wrap">
                     <li><Link href="/" className="hover:text-[#A8F000] transition-colors">Strona główna</Link></li>
