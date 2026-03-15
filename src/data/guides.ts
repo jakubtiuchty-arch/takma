@@ -5314,7 +5314,7 @@ export const guides: Guide[] = [
     {
       id: 'podsumowanie',
       heading: 'Zebra ZD421t vs Honeywell PC45t — którą drukarkę etykiet wybrać w 2026?',
-      content: `<p><strong>Zebra ZD421t (drukarka etykiet termotransferowa od 2 030 PLN z Ethernet) to modularna drukarka biurkowa z zarządzaniem PrintDNA/MCS i natywnym ZPL II — następca kultowego modelu GK420t. Honeywell PC45t (drukarka etykiet od 2 159 PLN z Ethernet w standardzie) to drukarka biurkowa z ekranem dotykowym 3,5", szybszym drukiem 203 mm/s i opcjonalnym RFID. Ceny obu drukarek etykiet termotransferowych są niemal identyczne (~129 PLN różnicy). ZD421t wygrywa ekosystemem Zebra i modularną budową. PC45t wygrywa prędkością druku i ekranem dotykowym.</strong></p>
+      content: `<p><a href="/produkt/zebra-zd421t">Zebra ZD421t</a> (drukarka etykiet termotransferowa od 2 030 PLN z Ethernet) to modularna drukarka biurkowa z zarządzaniem PrintDNA/MCS i natywnym ZPL II — następca kultowego modelu GK420t. <a href="/produkt/honeywell-pc45t">Honeywell PC45t</a> (drukarka etykiet od 2 159 PLN z Ethernet w standardzie) to drukarka biurkowa z ekranem dotykowym 3,5", szybszym drukiem 203 mm/s i opcjonalnym RFID. Ceny obu drukarek etykiet termotransferowych są niemal identyczne (~129 PLN różnicy). ZD421t wygrywa ekosystemem Zebra i modularną budową. PC45t wygrywa prędkością druku i ekranem dotykowym.</p>
 
 <div style="overflow-x:auto">
 <table>
