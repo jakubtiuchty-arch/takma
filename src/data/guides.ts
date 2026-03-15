@@ -6668,7 +6668,7 @@ export const guides: Guide[] = [
 
 <p>Ręczna inwentaryzacja magazynu to jeden z najbardziej czasochłonnych i kosztownych procesów logistycznych. Typowy scenariusz: pracownik z kartką i długopisem spisuje kody, nazwy i ilości towaru na regale, potem ręcznie wpisuje dane do Excela. Efekt? Literówki, duplikaty, zgubione arkusze, pominięte lokalizacje — i inwentaryzacja, która trwa tygodnie zamiast dni.</p>
 
-<p>Prosta kalkulacja: magazyn z 10 000 SKU przy ręcznym spisywaniu (30 sekund na pozycję) = 83 godziny pracy. Ten sam magazyn z kolektorem danych (5 sekund na skanowanie + weryfikacja) = 14 godzin. Oszczędność: <strong>69 godzin × koszt pracownika = tysiące złotych na każdej inwentaryzacji</strong>. Firmy korzystające z kolektorów danych do inwentaryzacji skracają ten proces o 75% i eliminują błędy ludzkie. Kolektor danych do magazynu to inwestycja, która zwraca się po pierwszej pełnej inwentaryzacji.</p>
+<p>Prosta kalkulacja: magazyn z 10 000 SKU przy ręcznym spisywaniu (30 sekund na pozycję) = 83 godziny pracy. Ten sam magazyn z kolektorem danych (5 sekund na skanowanie + weryfikacja) = 14 godzin. Oszczędność: <strong>69 godzin × koszt pracownika = tysiące złotych na każdej inwentaryzacji</strong>. Firmy korzystające z kolektorów danych do inwentaryzacji skracają ten proces o 75% i eliminują błędy ludzkie. Terminal mobilny (kolektor danych) do magazynu to inwestycja, która zwraca się po pierwszej pełnej inwentaryzacji.</p>
 
 <p>W tym poradniku pokażemy, jaki kolektor danych do inwentaryzacji wybrać w zależności od wielkości magazynu, budżetu i metody inwentaryzacji — porównamy 31 modeli terminali mobilnych od 5 marek z cenami PLN netto. Jeśli szukasz ogólnego poradnika wyboru terminala — przeczytaj <a href="/poradnik/jak-wybrac-terminal-mobilny">Jak wybrać terminal mobilny? Kompletny poradnik 2026</a>.</p>`
     },
@@ -6762,10 +6762,10 @@ export const guides: Guide[] = [
 </ul>
 
 <h3>2. Bateria — czas pracy przy ciągłym skanowaniu</h3>
-<p>Inwentaryzacja pełna trwa 8-12 godzin ciągłego skanowania. Kolektor danych z baterią 3 000 mAh wystarczy na 4 godziny — to za mało. Minimum dla inwentaryzacji: 4 300 mAh (<a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a>), optymalnie 5 000+ mAh. Bateria wymienna hot-swap = brak przestojów: <a href="/produkt/zebra-mc3400">MC3400</a>, <a href="/produkt/honeywell-ct32">CT32</a>, <a href="/produkt/zebra-mc9400">MC9400</a>. Bateria freezer do mroźni -30°C: tylko <a href="/produkt/zebra-mc9400">Zebra MC9400</a>.</p>
+<p>Inwentaryzacja pełna trwa 8-12 godzin ciągłego skanowania. Kolektor danych z baterią 3 000 mAh wystarczy na 4 godziny — to za mało. Minimum dla inwentaryzacji: 4 300 mAh (<a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a>), optymalnie 5 000+ mAh. Bateria hot-swap (wymienna bez wyłączania terminala mobilnego) = brak przestojów: <a href="/produkt/zebra-mc3400">MC3400</a>, <a href="/produkt/honeywell-ct32">CT32</a>, <a href="/produkt/zebra-mc9400">MC9400</a>. Hot-swap bateria to must-have dla inwentaryzacji pełnej >8 h. Bateria freezer do mroźni -30°C: tylko <a href="/produkt/zebra-mc9400">Zebra MC9400</a>.</p>
 
 <h3>3. Wytrzymałość — IP i wysokość upadku</h3>
-<p>Kolektor danych do inwentaryzacji magazynu musi przetrwać upadki na betonową posadzkę i kontakt z wodą/kurzem. Minimalne wymagania wg środowiska:</p>
+<p>Terminal mobilny do inwentaryzacji magazynu musi przetrwać upadki na betonową posadzkę i kontakt z wodą/kurzem. Minimalne wymagania wg środowiska pracy:</p>
 <table style="width:100%">
   <thead>
     <tr><th>Środowisko</th><th>Min. IP</th><th>Min. upadek</th><th>Min. bateria</th><th>Typ terminala</th></tr>
@@ -6820,7 +6820,7 @@ export const guides: Guide[] = [
     <tr><td><a href="/produkt/honeywell-ct32">Honeywell CT32</a></td><td><span data-live-price="honeywell-ct32">3 389 zł</span></td><td>IP65 / 1,5 m</td><td>—</td><td>Magazyn (hot-swap)</td></tr>
     <tr><td><a href="/produkt/newland-mt95-kambur-pro-ii">Newland MT95 Kambur</a></td><td><span data-live-price="newland-mt95-kambur-pro-ii">3 546 zł</span></td><td>IP67 / 1,5 m</td><td>—</td><td>Teren 5G (budżetowy)</td></tr>
     <tr><td><strong><a href="/produkt/zebra-tc501">Zebra TC501</a></strong></td><td><span data-live-price="zebra-tc501">3 730 zł</span></td><td>IP68 / 2,4 m</td><td>—</td><td><strong>RFID inwentaryzacja</strong></td></tr>
-    <tr><td><a href="/produkt/zebra-tc701">Zebra TC701</a></td><td>4 017 zł</td><td>IP68 / 3,66 m</td><td>—</td><td>RFID ultra-rugged</td></tr>
+    <tr><td><a href="/produkt/zebra-tc701">Zebra TC701</a></td><td><span data-live-price="zebra-tc701">4 017 zł</span></td><td>IP68 / 3,66 m</td><td>—</td><td>RFID ultra-rugged</td></tr>
     <tr><td><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a></strong></td><td><span data-live-price="zebra-mc3400">4 561 zł</span></td><td>IP67 / 2,4 m</td><td>3 klawiatury</td><td><strong>Duży magazyn — optymalny</strong></td></tr>
     <tr><td><a href="/produkt/datalogic-skorpio-x5">Datalogic Skorpio X5</a></td><td><span data-live-price="datalogic-skorpio-x5">4 858 zł</span></td><td>IP65 / 1,8 m</td><td>klawiatura</td><td>Magazyn gun (Datalogic)</td></tr>
     <tr><td><a href="/produkt/datalogic-memor-30">Datalogic Memor 30</a></td><td><span data-live-price="datalogic-memor-30">4 869 zł</span></td><td>IP68 / 1,8 m</td><td>—</td><td>Magazyn (Datalogic)</td></tr>
@@ -6873,7 +6873,7 @@ export const guides: Guide[] = [
     {
       id: 'krok-4-skanowanie',
       heading: 'Krok 4: Skanowanie — strefa po strefie',
-      content: `<p>Podziel magazyn na strefy i przydziel operatorom z kolektorami danych poszczególne sekcje. Operator skanuje etykietę lokalizacji (regał/półka) → skanuje kody kreskowe towarów → wpisuje ilość (klawiatura fizyczna lub ekranowa). Kolektor danych zapisuje dane i synchronizuje z WMS w czasie rzeczywistym przez Wi-Fi.</p>
+      content: `<p>Podziel magazyn na strefy i przydziel operatorom z kolektorami danych poszczególne sekcje. Operator skanuje etykietę lokalizacji (regał/półka) → skanuje kody kreskowe towarów terminalem mobilnym → wpisuje ilość (klawiatura fizyczna lub ekranowa). Kolektor danych zapisuje dane i synchronizuje z WMS w czasie rzeczywistym przez Wi-Fi.</p>
 
 <p>Wydajność skanowania kolektorem danych przy inwentaryzacji:</p>
 <ul>
@@ -6890,7 +6890,7 @@ export const guides: Guide[] = [
     {
       id: 'krok-6-zamkniecie',
       heading: 'Krok 6: Zamknięcie inwentaryzacji w systemie',
-      content: `<p>Zatwierdź korekty inwentaryzacyjne w WMS/ERP. Wygeneruj protokół inwentaryzacyjny (wymagany przez Ustawę o Rachunkowości). Zarchiwizuj dane z kolektorów danych. Cały proces od przygotowania infrastruktury po zamknięcie inwentaryzacji 10 000 SKU z kolektorem danych trwa 1-2 dni robocze (vs 5-7 dni ręcznie).</p>`
+      content: `<p>Zatwierdź korekty inwentaryzacyjne w WMS/ERP. Wygeneruj protokół inwentaryzacyjny (wymagany przez Ustawę o Rachunkowości) — dotyczy zarówno inwentaryzacji towarów, jak i środków trwałych. Zarchiwizuj dane z kolektorów danych. Cały proces od przygotowania infrastruktury po zamknięcie inwentaryzacji 10 000 SKU z terminalem mobilnym trwa 1-2 dni robocze (vs 5-7 dni ręcznie).</p>`
     },
     {
       id: 'najczestsze-bledy',
@@ -6946,12 +6946,12 @@ export const guides: Guide[] = [
 
 <p><strong>Porównanie z ręczną inwentaryzacją:</strong> 10 pracowników x 40 h x 35 zł/h = 14 000 zł per inwentaryzacja. 2 inwentaryzacje/rok = 28 000 zł samych kosztów pracy. Kolektory danych do inwentaryzacji zwracają się po 1-2 inwentaryzacjach — potem to czysta oszczędność, rok po roku.</p>
 
-<p>TAKMA zapewnia bezpłatne doradztwo przy konfiguracji floty kolektorów danych — <a href="/kontakt">skontaktuj się z nami</a>.</p>`
+<p>TAKMA zapewnia bezpłatne doradztwo przy konfiguracji floty kolektorów danych — <a href="/kontakt">skontaktuj się z nami</a>. Serwis gwarancyjny i pogwarancyjny terminali mobilnych: <a href="https://www.serwis-zebry.pl/serwis-terminali-mobilnych">serwis-zebry.pl</a>.</p>`
     },
     {
       id: 'podsumowanie',
       heading: 'Podsumowanie — jaki kolektor danych do inwentaryzacji wybrać?',
-      content: `<p>Kolektor danych do inwentaryzacji to inwestycja, która zwraca się po 1-2 inwentaryzacjach. Szybki wybór wg Twojego scenariusza:</p>
+      content: `<p>Kolektor danych (terminal mobilny) do inwentaryzacji to inwestycja, która zwraca się po 1-2 inwentaryzacjach. Pełna oferta: <a href="/terminale-mobilne">terminale mobilne w TAKMA</a>. Szybki wybór wg Twojego scenariusza:</p>
 
 <table style="width:100%">
   <thead>
@@ -6987,7 +6987,7 @@ export const guides: Guide[] = [
     { question: 'Jak długo wytrzymuje bateria kolektora przy ciągłym skanowaniu?', answer: '<a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a>: 8-10 h (4 300 mAh). <a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a>: 8-10 h. <a href="/produkt/zebra-tc22">Zebra TC22</a>: 8-12 h. <a href="/produkt/honeywell-ct32">Honeywell CT32</a>: 10-12 h (hot-swap!). <a href="/produkt/zebra-mc3400">MC3400</a>: 10-14 h (5 200/7 000 mAh, hot-swap). <a href="/produkt/honeywell-ck67">Honeywell CK67</a>: 12-14 h. Przy inwentaryzacji pełnej (>8 h) polecamy kolektor z hot-swap baterią: CT32, MC3400, CK67, MC9400.' },
     { question: 'Czy kolektor danych do inwentaryzacji można podłączyć do WMS?', answer: 'Tak — kolektory danych z Android działają z polskimi WMS-ami: Comarch WMS, Sellasist WMS, Logifact, SAP EWM, Qguar, Asseco WAMAS. Zebra DataWedge pozwala na integrację skanera kodów kreskowych bez programowania (output: keystroke do pola WMS).' },
     { question: 'Czy mogę używać zwykłego smartfona zamiast kolektora danych?', answer: 'Technicznie tak (kamera skanuje kody), ale: smartfon nie ma dedykowanego skanera kodów kreskowych (wolniejszy 5-10x), brak IP67 (mokry magazyn = awaria), brak gun grip, brak DataWedge, brak wsparcia MDM. Kolektor danych za 2 207 zł (<a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a>) jest 10x szybszy i 5x trwalszy niż smartfon za 1 500 zł.' },
-    { question: 'Kiedy opłaca się inwentaryzacja RFID zamiast kodów kreskowych?', answer: 'Gdy masz >30 000 SKU i robisz inwentaryzację >2x/rok. Inwentaryzacja RFID kolektorem danych jest 10x szybsza, ale tag RFID kosztuje 10x więcej niż etykieta z kodem kreskowym. ROI przy dużych wolumenach: oszczędność czasu > koszt tagów. Kolektory danych RFID: <a href="/produkt/zebra-tc501">Zebra TC501</a> (3 730 zł), <a href="/produkt/zebra-tc701">Zebra TC701</a> (4 017 zł).' },
+    { question: 'Kiedy opłaca się inwentaryzacja RFID zamiast kodów kreskowych?', answer: 'Gdy masz >30 000 SKU i robisz inwentaryzację >2x/rok. Inwentaryzacja RFID kolektorem danych jest 10x szybsza, ale tag RFID kosztuje 10x więcej niż etykieta z kodem kreskowym. ROI przy dużych wolumenach: oszczędność czasu > koszt tagów. Kolektory danych RFID: <a href="/produkt/zebra-tc501">Zebra TC501</a> (<span data-live-price="zebra-tc501">3 730 zł</span>), <a href="/produkt/zebra-tc701">Zebra TC701</a> (<span data-live-price="zebra-tc701">4 017 zł</span>).' },
     { question: 'Czy mogę skanować kody kreskowe i RFID jednym kolektorem danych?', answer: 'Tak — <a href="/produkt/zebra-tc501">Zebra TC501</a> i <a href="/produkt/zebra-tc701">TC701</a> mają zarówno skaner kodów kreskowych (AC670, do 30 m), jak i czytnik RFID UHF wbudowany. Jeden kolektor danych, dwie metody inwentaryzacji. <a href="/produkt/zebra-tc53e">Zebra TC53e</a> (4 926 zł) oferuje RFID jako opcję.' },
     { question: 'Czy TAKMA pomaga w konfiguracji kolektora danych do inwentaryzacji?', answer: 'Tak — oferujemy bezpłatne doradztwo techniczne, pomoc w konfiguracji DataWedge i integracji kolektora danych z WMS. Dostarczamy skonfigurowane terminale mobilne gotowe do pracy "out of the box". <a href="/kontakt">Kontakt</a> lub telefon.' },
     { question: 'Czy mogę zamówić zestaw: kolektor danych + drukarka etykiet + etykiety?', answer: 'Tak — kompletujemy zestawy inwentaryzacyjne. Przykład: <a href="/produkt/zebra-tc22">Zebra TC22</a> (2 417 zł) + <a href="/produkt/zebra-zd421d">drukarka ZD421d</a> (1 472 zł) + etykiety Z-Perform 102x152 mm (75 zł/rolka) = gotowy pakiet kolektor danych + drukarka etykiet od ~4 000 zł netto. <a href="/kontakt">Doradztwo i zamówienia</a>.' },
