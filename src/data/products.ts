@@ -4694,7 +4694,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Czym różni się ZT231 od droższego modelu ZT411?',
-        answer: 'ZT411 to drukarka klasy mid-range industrial z wyższą prędkością druku (356 mm/s vs 304 mm/s), większą pamięcią (512 MB SDRAM vs 256 MB), obsługą rolek mediów do 254 mm OD (vs 203 mm) i opcjonalną rozdzielczością 600 dpi. ZT411 jest przeznaczona do intensywnych zastosowań przemysłowych z dużym wolumenem druku. ZT231 to ekonomiczniejsza alternatywa z doskonałym stosunkiem ceny do możliwości.',
+        answer: 'ZT411 to drukarka klasy mid-range industrial z wyższą prędkością druku (356 mm/s vs 304 mm/s, +17%), opcjonalną rozdzielczością 600 dpi, obsługą etykiet linerless, większą pamięcią Flash (512 vs 256 MB) i 2-letnią gwarancją (vs 1 rok). ZT411 jest przeznaczona do intensywnych zastosowań >5 000 etykiet/dzień. ZT231 wystarcza dla 80% zastosowań i jest tańsza o 2 400 PLN. Pełne porównanie z TCO i scenariuszami: [ZT231 vs ZT411](/poradnik/zebra-zt231-vs-zt411-porownanie).',
       },
       {
         question: 'Gdzie serwisować drukarki Zebra przemysłowe w Polsce?',
@@ -5171,7 +5171,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Kiedy wybrać ZT411 zamiast tańszego ZT231?',
-        answer: 'ZT411 przewyższa ZT231 w trzech kluczowych obszarach: (1) prędkość — 356 mm/s vs 304 mm/s, o 17% szybszy; (2) rozdzielczość — opcja 600 dpi dla mikro-etykiet (ZT231 max 300 dpi); (3) RFID — możliwość dokupienia modułu UHF RFID. Dodatkowo ZT411 ma większą pamięć (512 MB Flash vs 256 MB), obsługuje rolki do 254 mm OD i oferuje 2-letnią gwarancję (vs 1 rok). Wybierz ZT411 gdy drukujesz ponad 5 000 etykiet dziennie, potrzebujesz 600 dpi lub RFID.',
+        answer: 'ZT411 przewyższa ZT231 w: prędkości (356 vs 304 mm/s, +17%), rozdzielczości (600 dpi — brak w ZT231), obsłudze linerless, pamięci Flash (512 vs 256 MB), gwarancji (2 lata vs 1 rok) i nawijaku etykiet full rewind. Dopłata wynosi ~2 400 PLN (+90%). Jest uzasadniona gdy drukujesz >5 000 etykiet/dzień, potrzebujesz 600 dpi, linerless lub full rewind. Pełne porównanie z TCO: [ZT231 vs ZT411](/poradnik/zebra-zt231-vs-zt411-porownanie).',
       },
       {
         question: 'Czym różni się ZT411 od ZT421?',
