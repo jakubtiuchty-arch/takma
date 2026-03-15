@@ -134,12 +134,19 @@ export default function Hero() {
         >
           {isBanner ? (
             /* Banner mode — image right-aligned, full height, never cropped (like guide hero) */
-            /* eslint-disable-next-line @next/next/no-img-element */
-            <img
-              src={slide.image}
-              alt={slide.name}
-              className="absolute right-0 top-0 h-full w-auto max-w-[85%] object-contain object-right"
-            />
+            <>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={slide.image}
+                alt={slide.name}
+                className="absolute right-0 top-0 h-full w-auto max-w-[85%] object-contain object-right"
+              />
+              {/* Gradient fade from bgColor into image — smooth left edge */}
+              <div
+                className="absolute left-0 top-0 h-full w-[35%] z-[1]"
+                style={{ background: `linear-gradient(to right, ${sectionBg} 0%, ${sectionBg} 30%, transparent 100%)` }}
+              />
+            </>
           ) : (
             <Image
               src={slide.image}
