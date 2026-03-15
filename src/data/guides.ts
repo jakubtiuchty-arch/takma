@@ -2172,22 +2172,22 @@ export const guides: Guide[] = [
 },
 {
   slug: 'top-10-terminali-mobilnych-2026',
-  title: 'TOP 10 terminali mobilnych do magazynu i logistyki 2026 — ranking z cenami',
-  seoTitle: 'TOP 10 terminali mobilnych 2026 — ranking z cenami netto',
-  seoDescription: 'Ranking 10 najlepszych terminali mobilnych (kolektorów danych) 2026. Zebra, Honeywell i Datalogic od 2 417 PLN netto. Porównanie specyfikacji, TCO i FAQ.',
-  excerpt: 'Ranking 10 najlepszych terminali mobilnych (kolektorów danych) do magazynu, logistyki, retail i produkcji na rok 2026. Porównujemy Zebra, Honeywell i Datalogic z aktualnymi cenami netto, specyfikacjami, kalkulacją TCO i rekomendacjami wg branży. Opracowanie eksperckie na podstawie ponad 500 wdrożeń w polskich firmach.',
+  title: 'TOP 13 terminali mobilnych (kolektorów danych) 2026 — ranking z cenami',
+  seoTitle: 'TOP 13 kolektorów danych 2026 — ranking z cenami netto',
+  seoDescription: 'Ranking 13 najlepszych kolektorów danych (terminali mobilnych) 2026. Zebra, Honeywell, Newland i Datalogic od 2 207 PLN netto. Porównanie specyfikacji, TCO i FAQ.',
+  excerpt: 'Ranking 13 najlepszych terminali mobilnych (kolektorów danych) do magazynu, logistyki, retail i produkcji na rok 2026. Porównujemy 4 marki — Zebra, Honeywell, Newland i Datalogic — z aktualnymi cenami netto, specyfikacjami, kalkulacją TCO i rekomendacjami wg branży. Opracowanie eksperckie na podstawie ponad 500 wdrożeń w polskich firmach.',
   category: 'porownanie',
-  tags: ['terminale-mobilne', 'ranking', 'top-10', 'zebra', 'honeywell', 'datalogic', 'magazyn', 'logistyka', 'kolektor-danych', 'porownanie'],
+  tags: ['terminale-mobilne', 'ranking', 'top-10', 'top-13', 'zebra', 'honeywell', 'newland', 'datalogic', 'magazyn', 'logistyka', 'kolektor-danych', 'porownanie'],
   publishedAt: '2026-02-24',
   updatedAt: '2026-03-15',
-  readTime: '15 min',
+  readTime: '18 min',
   heroImage: '/images/guides/top-10-terminali-mobilnych-2026.jpg',
 
   sections: [
     {
       id: 'wprowadzenie',
       heading: 'Ranking terminali mobilnych 2026 — metodologia i kryteria',
-      content: `<p><strong>W skrócie:</strong> W 2026 roku na polskim rynku dostępnych jest ponad 80 modeli terminali mobilnych (kolektorów danych, terminali magazynowych, przemysłowych PDA) od kilkunastu producentów. Wybraliśmy 10 najlepszych — od budżetowego Zebra TC22 za 2 417 PLN netto po Honeywell CT47 za 7 901 PLN netto. Jako jedyni w Polsce pokazujemy aktualne ceny netto, porównujemy cross-brand (Zebra + Honeywell + Datalogic) i podajemy konkretne rekomendacje wg branży.</p>
+      content: `<p><strong>W skrócie:</strong> W 2026 roku na polskim rynku dostępnych jest ponad 80 modeli terminali mobilnych (kolektorów danych, terminali magazynowych, przemysłowych PDA) od kilkunastu producentów. Wybraliśmy 13 najlepszych — od budżetowego Newland MT93 za 2 207 PLN netto po Honeywell CT47 za 7 901 PLN netto. Jako jedyni w Polsce pokazujemy aktualne ceny netto, porównujemy cross-brand (Zebra + Honeywell + Newland + Datalogic) i podajemy konkretne rekomendacje wg branży.</p>
 
 <p><strong>Kto przygotował ten ranking?</strong> TAKMA to autoryzowany Zebra Premier Solution Partner z siedzibą we Wrocławiu, działający od 2001 roku. Nagroda „Genius of Business" od Zebra Technologies (2020), Złoty Medal LAS-EXPO 2016. Na co dzień wdrażamy kolektory danych (terminale mobilne) w polskich firmach — od magazynów e-commerce po centra dystrybucyjne 3PL. Ranking oparty jest na danych z ponad 500 realnych wdrożeń, nie na specyfikacjach katalogowych.</p>
 
@@ -2196,12 +2196,12 @@ export const guides: Guide[] = [
 <h3>Metodologia rankingu</h3>
 <p>Ocenialiśmy każdy kolektor danych (terminal mobilny) w 6 kategoriach: <strong>wydajność procesora</strong> (benchmark Geekbench), <strong>wytrzymałość</strong> (IP + drop spec + tumble), <strong>ergonomia i waga</strong> (dopasowanie do use-case), <strong>łączność</strong> (Wi-Fi 6E/7, 5G, Bluetooth), <strong>długość wsparcia Android</strong> (ile generacji OS) oraz <strong>stosunek cena/możliwości</strong> (TCO na 5 lat). Uwzględniliśmy wyłącznie modele dostępne w polskiej dystrybucji z aktualnym wsparciem producenta — nie uwzględniamy modeli wycofanych (EOL) ani niedostępnych w oficjalnych kanałach.</p>
 
-<p>Ranking obejmuje trzy marki: <strong><a href="https://www.zebra.com/us/en/products/mobile-computers.html" target="_blank" rel="noopener">Zebra Technologies</a></strong> (lider globalny, ~45% rynku wg VDC Research), <strong><a href="https://sps.honeywell.com/us/en/products/productivity/mobile-computers" target="_blank" rel="noopener">Honeywell</a></strong> (~25% rynku, innowator w łączności 5G i Wi-Fi 6E) i <strong><a href="https://www.datalogic.com/eng/products/mobile-computers-tablets-pc-2702.html" target="_blank" rel="noopener">Datalogic</a></strong> (~10% rynku, silna w retail i magazynach). Wszystkie ceny są netto (bez VAT 23%), aktualne na marzec 2026. Artykuł aktualizowany kwartalnie — następna aktualizacja: czerwiec 2026.</p>`
+<p>Ranking obejmuje cztery marki: <strong><a href="https://www.zebra.com/us/en/products/mobile-computers.html" target="_blank" rel="noopener">Zebra Technologies</a></strong> (lider globalny, ~45% rynku wg VDC Research), <strong><a href="https://sps.honeywell.com/us/en/products/productivity/mobile-computers" target="_blank" rel="noopener">Honeywell</a></strong> (~25% rynku, innowator w łączności 5G i Wi-Fi 6E), <strong><a href="https://www.newland-id.com/en/products/mobile-computers" target="_blank" rel="noopener">Newland</a></strong> (~8% rynku, najlepszy stosunek cena/parametry) i <strong><a href="https://www.datalogic.com/eng/products/mobile-computers-tablets-pc-2702.html" target="_blank" rel="noopener">Datalogic</a></strong> (~10% rynku, silna w retail i magazynach). Wszystkie ceny są netto (bez VAT 23%), aktualne na marzec 2026. Artykuł aktualizowany kwartalnie — następna aktualizacja: czerwiec 2026.</p>`
     },
     {
       id: 'tabela-porownawcza',
-      heading: 'Porównanie TOP 10 terminali mobilnych 2026',
-      content: `<p><strong>W skrócie:</strong> Najtańszym kolektorem danych w rankingu jest Zebra TC22 (2 417 PLN netto), a najwytrzymalszym — Zebra MC9400 (7 638 PLN, drop 3,65 m na beton). Ranking obejmuje 3 marki: Zebra (6 modeli), Honeywell (2 modele) i Datalogic (1 model) — plus najdłuższy zasięg skanera w Honeywell CT47 (FlexRange XLR 24 m).</p>
+      heading: 'Porównanie TOP 13 terminali mobilnych 2026',
+      content: `<p><strong>W skrócie:</strong> Najtańszym kolektorem danych w rankingu jest Newland MT93 (2 207 PLN netto), a najwytrzymalszym — Zebra MC9400 (7 638 PLN, drop 3,65 m na beton). Ranking obejmuje 4 marki: Zebra (6 modeli), Newland (3 modele), Honeywell (2 modele) i Datalogic (1 model).</p>
 
 <p>Poniższa tabela porównuje kluczowe parametry wszystkich 10 terminali z rankingu. Kliknij nazwę modelu, aby przejść do szczegółowej karty produktu z pełną specyfikacją i wariantami.</p>
 
@@ -2221,16 +2221,19 @@ export const guides: Guide[] = [
 </tr>
 </thead>
 <tbody>
-<tr><td>1</td><td><strong><a href="/produkt/zebra-tc22">Zebra TC22</a></strong></td><td>2 417 PLN</td><td>6" FHD+ IPS</td><td>IP68 / 1,5 m</td><td>SE4710 / SE55</td><td>Wi-Fi 6E, BT 5.2</td><td>→ 16</td><td>236 g</td></tr>
-<tr><td>2</td><td><strong><a href="/produkt/zebra-tc27">Zebra TC27</a></strong></td><td>2 690 PLN</td><td>6" FHD+ IPS</td><td>IP68 / 1,5 m</td><td>SE4710 / SE55</td><td>5G/LTE, Wi-Fi 6E, GPS</td><td>→ 16</td><td>236 g</td></tr>
-<tr><td>3</td><td><strong><a href="/produkt/honeywell-ct32">Honeywell CT32</a></strong></td><td>3 389 PLN</td><td>6" FHD GG5</td><td>IP65/68 / 1,8 m</td><td>S0703 / FlexRange 11 m</td><td>Wi-Fi 6E, BT 5.3</td><td>14 → 18</td><td>269 g</td></tr>
-<tr><td>4</td><td><strong><a href="/produkt/zebra-tc501">Zebra TC501</a></strong></td><td>3 730 PLN</td><td>6" AMOLED 1500 nit</td><td>IP68 / 2,4 m</td><td>SR500 / AC670 30 m</td><td>Wi-Fi 7, BT 6.0</td><td>→ 19</td><td>273 g</td></tr>
-<tr><td>5</td><td><strong><a href="/produkt/zebra-tc701">Zebra TC701</a></strong></td><td>4 017 PLN</td><td>6" AMOLED 1500 nit</td><td>IP68 / 3,66 m</td><td>SR560 / AC670 30 m</td><td>Wi-Fi 7, BT 6.0</td><td>→ 19</td><td>284 g</td></tr>
-<tr><td>6</td><td><strong><a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a></strong></td><td>4 490 PLN</td><td>6" FHD+ GG7</td><td>IP67 / 1,3 m</td><td>Halogen DE2121</td><td>Wi-Fi 6E, BT 5.3</td><td>→ 18</td><td>242 g</td></tr>
-<tr><td>7</td><td><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a></strong></td><td>4 561 PLN</td><td>4" WVGA</td><td>IP67 / 2,4 m</td><td>SE55 / SE58 30 m</td><td>Wi-Fi 6E, BT 5.3</td><td>→ 18</td><td>442 g</td></tr>
-<tr><td>8</td><td><strong><a href="/produkt/zebra-tc53e">Zebra TC53e</a></strong></td><td>4 926 PLN</td><td>6" FHD+ IPS</td><td>IP68 / 1,8 m</td><td>SE4720 / SE55</td><td>Wi-Fi 6E, BT 5.3</td><td>→ 17</td><td>~300 g</td></tr>
-<tr><td>9</td><td><strong><a href="/produkt/zebra-mc9400">Zebra MC9400</a></strong></td><td>7 638 PLN</td><td>4,3" WVGA</td><td>IP68 / 3,65 m</td><td>SE4770 / SE58 30 m</td><td>Wi-Fi 6E, BT 5.3</td><td>→ 17</td><td>~600 g</td></tr>
-<tr><td>10</td><td><strong><a href="/produkt/honeywell-ct47">Honeywell CT47</a></strong></td><td>7 901 PLN</td><td>5,5" FHD GG5</td><td>IP65/68 / 3,0 m</td><td>FlexRange XLR 24 m</td><td>Wi-Fi 6E, BT 5.2, 5G opcja</td><td>14 → 18+</td><td>314 g</td></tr>
+<tr><td>1</td><td><strong><a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a></strong></td><td>2 207 PLN</td><td>5,5" FHD</td><td>IP65 / 1,5 m</td><td>CM66 2D</td><td>Wi-Fi 6E, BT 5.1, 4G LTE</td><td>13</td><td>277 g</td></tr>
+<tr><td>2</td><td><strong><a href="/produkt/zebra-tc22">Zebra TC22</a></strong></td><td>2 417 PLN</td><td>6" FHD+ IPS</td><td>IP68 / 1,5 m</td><td>SE4710 / SE55</td><td>Wi-Fi 6E, BT 5.2</td><td>→ 16</td><td>236 g</td></tr>
+<tr><td>3</td><td><strong><a href="/produkt/zebra-tc27">Zebra TC27</a></strong></td><td>2 690 PLN</td><td>6" FHD+ IPS</td><td>IP68 / 1,5 m</td><td>SE4710 / SE55</td><td>5G/LTE, Wi-Fi 6E, GPS</td><td>→ 16</td><td>236 g</td></tr>
+<tr><td>4</td><td><strong><a href="/produkt/newland-n7-cachalot-pro-ii">Newland N7 Cachalot</a></strong></td><td>3 346 PLN</td><td>4" WVGA</td><td>IP65 / 1,8 m</td><td>2D Duo Near & Far</td><td>Wi-Fi ac, BT 5.0</td><td>13</td><td>360 g</td></tr>
+<tr><td>5</td><td><strong><a href="/produkt/honeywell-ct32">Honeywell CT32</a></strong></td><td>3 389 PLN</td><td>6" FHD GG5</td><td>IP65/68 / 1,8 m</td><td>S0703 / FlexRange 11 m</td><td>Wi-Fi 6E, BT 5.3</td><td>14 → 18</td><td>269 g</td></tr>
+<tr><td>6</td><td><strong><a href="/produkt/newland-mt95-kambur-pro-ii">Newland MT95</a></strong></td><td>3 546 PLN</td><td>6,1" FHD+</td><td>IP67 / 1,5 m</td><td>DE5L 2D</td><td>5G, Wi-Fi 6, BT 5.1</td><td>13</td><td>287 g</td></tr>
+<tr><td>7</td><td><strong><a href="/produkt/zebra-tc501">Zebra TC501</a></strong></td><td>3 730 PLN</td><td>6" AMOLED 1500 nit</td><td>IP68 / 2,4 m</td><td>SR500 / AC670 30 m</td><td>Wi-Fi 7, BT 6.0</td><td>→ 19</td><td>273 g</td></tr>
+<tr><td>8</td><td><strong><a href="/produkt/zebra-tc701">Zebra TC701</a></strong></td><td>4 017 PLN</td><td>6" AMOLED 1500 nit</td><td>IP68 / 3,66 m</td><td>SR560 / AC670 30 m</td><td>Wi-Fi 7, BT 6.0</td><td>→ 19</td><td>284 g</td></tr>
+<tr><td>9</td><td><strong><a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a></strong></td><td>4 490 PLN</td><td>6" FHD+ GG7</td><td>IP67 / 1,3 m</td><td>Halogen DE2121</td><td>Wi-Fi 6E, BT 5.3</td><td>→ 18</td><td>242 g</td></tr>
+<tr><td>10</td><td><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a></strong></td><td>4 561 PLN</td><td>4" WVGA</td><td>IP67 / 2,4 m</td><td>SE55 / SE58 30 m</td><td>Wi-Fi 6E, BT 5.3</td><td>→ 18</td><td>442 g</td></tr>
+<tr><td>11</td><td><strong><a href="/produkt/zebra-tc53e">Zebra TC53e</a></strong></td><td>4 926 PLN</td><td>6" FHD+ IPS</td><td>IP68 / 1,8 m</td><td>SE4720 / SE55</td><td>Wi-Fi 6E, BT 5.3</td><td>→ 17</td><td>~300 g</td></tr>
+<tr><td>12</td><td><strong><a href="/produkt/zebra-mc9400">Zebra MC9400</a></strong></td><td>7 638 PLN</td><td>4,3" WVGA</td><td>IP68 / 3,65 m</td><td>SE4770 / SE58 30 m</td><td>Wi-Fi 6E, BT 5.3</td><td>→ 17</td><td>~600 g</td></tr>
+<tr><td>13</td><td><strong><a href="/produkt/honeywell-ct47">Honeywell CT47</a></strong></td><td>7 901 PLN</td><td>5,5" FHD GG5</td><td>IP65/68 / 3,0 m</td><td>FlexRange XLR 24 m</td><td>Wi-Fi 6E, BT 5.2, 5G opcja</td><td>14 → 18+</td><td>314 g</td></tr>
 </tbody>
 </table>
 </div>
@@ -2238,8 +2241,35 @@ export const guides: Guide[] = [
 <p><em>Ceny netto (PLN) aktualne na marzec 2026. Ceny wariantów mogą się różnić — podana cena dotyczy konfiguracji bazowej. <a href="/kontakt">Zapytaj o ofertę indywidualną</a> przy zamówieniu 5+ sztuk.</em></p>`
     },
     {
-      id: 'top1-tc22',
-      heading: '#1 Zebra TC22 — najlepszy terminal mobilny dla SMB i retail',
+      id: 'top1-mt93',
+      heading: '#1 Newland MT93 Megattera — najtańszy kolektor danych enterprise',
+      content: `<p><strong>Cena od: <a href="/produkt/newland-mt93-megattera-standard-plus">2 207 PLN netto</a></strong> | Waga: 277 g | IP65 | 4G LTE + Wi-Fi 6E | Android 13</p>
+
+<p><strong>Dla kogo:</strong> Firmy z ograniczonym budżetem, retail, lekka logistyka, inwentaryzacja, apteki. Newland MT93 Megattera Standard Plus to najtańszy kolektor danych (terminal mobilny) klasy enterprise na polskim rynku — za 2 207 PLN netto dostajesz urządzenie z Wi-Fi 6E, 4G LTE, ekranem 5,5" FHD i baterią 5 000 mAh. O 210 PLN tańszy niż Zebra TC22!</p>
+
+<h3>Kluczowe zalety</h3>
+<ul>
+<li><strong>Najniższa cena w rankingu — 2 207 PLN netto</strong> — o 210 PLN taniej niż TC22 (2 417 PLN), jednocześnie z 4G LTE w standardzie</li>
+<li><strong>Wi-Fi 6E (tri-band)</strong> — najnowsza łączność bezprzewodowa, porównywalna z TC22 i CT32</li>
+<li><strong>4G LTE + GPS w standardzie</strong> — łączność komórkowa bez dopłaty (TC22 wymaga upgrade do TC27 za +273 PLN)</li>
+<li><strong>Bateria 5 000 mAh</strong> — 14+ godzin pracy, więcej niż TC22 (3 800 mAh bazowa)</li>
+<li><strong>Skaner CM66 pod kątem 45°</strong> z AcuScan i laserem — wygodne skanowanie jedną ręką</li>
+<li><strong>Ekran 5,5" FHD (1080 × 1920)</strong> — czytelny, dotyk w rękawiczkach</li>
+</ul>
+
+<h3>Na co uważać</h3>
+<ul>
+<li>IP65 (vs IP68 w TC22) — ochrona przed bryzgami, ale nie zanurzeniem. W mokrych warunkach wybierz TC22 lub MC3400</li>
+<li>Android 13 bez gwarancji aktualizacji do 18 — Zebra TC22 (→16) i CT32 (14→18) mają dłuższe wsparcie OS</li>
+<li>Drop 1,5 m — identyczny jak TC22, ale brak MIL-STD-810H</li>
+<li>Mniejszy ekosystem akcesoriów niż Zebra — mniej stacji ładowania, etui, ring scannerów</li>
+</ul>
+
+<p><strong>Rekomendacja TAKMA:</strong> MT93 to najlepsza opcja dla firm, które chcą wejść w świat terminali enterprise z minimalnym budżetem. Za 2 207 PLN dostajesz 4G LTE, Wi-Fi 6E i baterię 5 000 mAh — żaden inny terminal na polskim rynku nie oferuje tyle w tej cenie. Idealny na start: 10–20 terminali do inwentaryzacji, kompletacji lub obsługi retail. <a href="/produkt/newland-mt93-megattera-standard-plus">Pełna specyfikacja i warianty →</a></p>`
+    },
+    {
+      id: 'top2-tc22',
+      heading: '#2 Zebra TC22 — najlepszy kolektor danych dla SMB i retail',
       content: `<p><strong>Cena od: <a href="/produkt/zebra-tc22">2 417 PLN netto</a></strong> | Waga: 236 g | IP68 | Android → 16</p>
 
 <p><strong>Dla kogo:</strong> Małe i średnie firmy, sklepy detaliczne, apteki, lekka logistyka, e-commerce. Zebra TC22 to kolektor danych (terminal mobilny) nowej generacji, następca bestsellerowego TC21 — najchętniej wybierany w segmencie SMB w Polsce. Z ekranem 6" FHD+ i wagą zaledwie 236 g jest lżejszy od wielu smartfonów, a jednocześnie spełnia normy militarne MIL-STD-810H.</p>
@@ -2261,11 +2291,11 @@ export const guides: Guide[] = [
 <li>Brak LTE/5G — do pracy w terenie z zasięgiem komórkowym wybierz TC27</li>
 </ul>
 
-<p><strong>Rekomendacja TAKMA:</strong> TC22 to nasz #1 dla firm rozpoczynających przygodę z terminalami mobilnymi. Stosunek cena/możliwości jest bezkonkurencyjny — za cenę średniego smartfona dostajesz urządzenie enterprise z 4 latami aktualizacji Android i hot-swap baterią. <a href="/produkt/zebra-tc22">Pełna specyfikacja i warianty →</a></p>`
+<p><strong>Rekomendacja TAKMA:</strong> TC22 to nasz top pick Zebra dla firm rozpoczynających przygodę z terminalami mobilnymi. Stosunek cena/możliwości jest bezkonkurencyjny — za cenę średniego smartfona dostajesz urządzenie enterprise z 4 latami aktualizacji Android i hot-swap baterią. <a href="/produkt/zebra-tc22">Pełna specyfikacja i warianty →</a></p>`
     },
     {
-      id: 'top2-tc27',
-      heading: '#2 Zebra TC27 — kolektor danych 5G/LTE dla kurierów i field service',
+      id: 'top3-tc27',
+      heading: '#3 Zebra TC27 — kolektor danych 5G/LTE dla kurierów i field service',
       content: `<p><strong>Cena od: <a href="/produkt/zebra-tc27">2 690 PLN netto</a></strong> | Waga: 236 g | IP68 | 5G/LTE + GPS | Android → 16</p>
 
 <p><strong>Dla kogo:</strong> Kurierzy, serwisanci w terenie, przedstawiciele handlowi, firmy logistyczne z flotą pojazdów. Zebra TC27 to kolektor danych (terminal mobilny) z modułem 5G/LTE i GPS — jedyny terminal w tej cenie z pełną łącznością komórkową i nawigacją satelitarną. Wersja TC22 z łącznością komórkową.</p>
@@ -2288,8 +2318,35 @@ export const guides: Guide[] = [
 <p><strong>Rekomendacja TAKMA:</strong> TC27 to obowiązkowy wybór dla każdej firmy z pracownikami w terenie. Za 2 690 PLN dostajesz enterprise kolektor danych z 5G, GPS i 4 latami aktualizacji Android — żaden smartfon rugged nie oferuje takiego wsparcia w tej cenie. <a href="/produkt/zebra-tc27">Pełna specyfikacja i warianty →</a></p>`
     },
     {
-      id: 'top3-ct32',
-      heading: '#3 Honeywell CT32 — kolektor danych enterprise z Wi-Fi 6E i hot-swap',
+      id: 'top4-n7',
+      heading: '#4 Newland N7 Cachalot Pro II — kolektor danych z klawiaturą za najlepszą cenę',
+      content: `<p><strong>Cena od: <a href="/produkt/newland-n7-cachalot-pro-ii">3 346 PLN netto</a></strong> | Waga: 360 g | IP65 | Drop 1,8 m | Klawiatura 29/38/47 | Android 13</p>
+
+<p><strong>Dla kogo:</strong> Magazyny, inwentaryzacja, produkcja — wszędzie tam, gdzie operatorzy potrzebują klawiatury fizycznej, ale budżet nie pozwala na Zebra MC3400 (4 561 PLN). Newland N7 Cachalot Pro II to kolektor danych (terminal mobilny) z klawiaturą w najlepszej cenie na rynku — o 1 215 PLN taniej niż MC3400.</p>
+
+<h3>Kluczowe zalety</h3>
+<ul>
+<li><strong>Klawiatura fizyczna 29/38/47-klawiszy</strong> — ten sam wybór wariantów co MC3400, z podświetleniem</li>
+<li><strong>O 1 215 PLN taniej niż MC3400</strong> (3 346 vs 4 561 PLN) — najlepszy stosunek cena/możliwości w segmencie keyboard</li>
+<li><strong>Skaner Duo Near & Far</strong> — dwa silniki skanowania z automatycznym przełączaniem blisko/daleko, unikalny na rynku</li>
+<li><strong>Bateria 5 100 mAh z hot-swap</strong> — wymiana bez wyłączania, 12+ godzin pracy</li>
+<li><strong>Drop 1,8 m na beton</strong> + MIL-STD-810H — wytrzymalszy niż TC22 (1,5 m)</li>
+<li><strong>Form factor Gun</strong> (pistoletowy) — ergonomiczny uchwyt ze spustem skanera</li>
+</ul>
+
+<h3>Na co uważać</h3>
+<ul>
+<li>Wi-Fi ac (Wi-Fi 5) — generacja starsza niż Wi-Fi 6E w MC3400. Przy dużej gęstości AP roaming będzie wolniejszy</li>
+<li>Android 13 bez gwarancji LifeGuard — MC3400 z Zebra LifeGuard ma wsparcie do Android 18 (~2031)</li>
+<li>IP65 (vs IP67 w MC3400) — brak pełnej wodoodporności, unikaj bezpośredniego kontaktu z wodą</li>
+<li>Mniejszy ekosystem akcesoriów niż Zebra MC — mniej stacji dokujących, etui, mocowań na wózki</li>
+</ul>
+
+<p><strong>Rekomendacja TAKMA:</strong> N7 Cachalot to najlepsza opcja, gdy potrzebujesz terminala z klawiaturą, ale budżet nie sięga MC3400. Sprawdzi się przy wdrożeniach na 3–4 lata, gdzie Wi-Fi 5 wystarczy. Dla wdrożeń 5+ lat z wymogiem Wi-Fi 6E rekomendujemy MC3400. <a href="/produkt/newland-n7-cachalot-pro-ii">Pełna specyfikacja i warianty →</a></p>`
+    },
+    {
+      id: 'top5-ct32',
+      heading: '#5 Honeywell CT32 — kolektor danych enterprise z Wi-Fi 6E i hot-swap',
       content: `<p><strong>Cena od: <a href="/produkt/honeywell-ct32">3 389 PLN netto</a></strong> | Waga: 269 g | IP65/IP68 | Drop 1,8 m | Android 14 → 18</p>
 
 <p><strong>Dla kogo:</strong> Retail, lekki magazyn, healthcare, produkcja. Honeywell CT32 to kolektor danych (terminal mobilny) nowej generacji — następca popularnego EDA52 z platformą Mobility Edge, Wi-Fi 6E w standardzie i opcjonalnym 5G. Pierwszy terminal Honeywell w naszym rankingu i najlepsza alternatywa dla Zebra TC22 w segmencie entry-level.</p>
@@ -2315,8 +2372,36 @@ export const guides: Guide[] = [
 <p><strong>Rekomendacja TAKMA:</strong> CT32 to najlepszy terminal Honeywell w segmencie entry-level. Polecamy go firmom, które potrzebują 5G + Wi-Fi 6E w jednym urządzeniu (wariant X1N) bez kupowania osobnego modelu, lub tym, które już mają infrastrukturę EDA52 i chcą upgrade bez wymiany stacji dokujących. <a href="/produkt/honeywell-ct32">Pełna specyfikacja i warianty →</a></p>`
     },
     {
-      id: 'top4-tc501',
-      heading: '#4 Zebra TC501 — pierwszy terminal z AI i ekranem AMOLED',
+      id: 'top6-mt95',
+      heading: '#6 Newland MT95 Kambur Pro II — kolektor danych 5G z IP67',
+      content: `<p><strong>Cena od: <a href="/produkt/newland-mt95-kambur-pro-ii">3 546 PLN netto</a></strong> | Waga: 287 g | IP67 | 5G | Wi-Fi 6 | Android 13</p>
+
+<p><strong>Dla kogo:</strong> Firmy potrzebujące 5G w terminalu za mniej niż 4 000 PLN — kurierzy, field service, transport, logistyka. Newland MT95 Kambur Pro II to kolektor danych (terminal mobilny) premium klasy Newland — z 5G, Wi-Fi 6, IP67 i baterią 6 000 mAh za cenę niższą niż Zebra TC501 (3 730 PLN).</p>
+
+<h3>Kluczowe zalety</h3>
+<ul>
+<li><strong>5G NR + 4G LTE w standardzie</strong> — łączność komórkowa bez dopłaty, dual SIM</li>
+<li><strong>IP67</strong> — pełna pyłoszczelność i wodoodporność (zanurzenie 1 m / 30 min), najlepsza ochrona wśród terminali Newland</li>
+<li><strong>Bateria 6 000 mAh</strong> — 16+ godzin pracy, więcej niż TC27 (3 800 mAh) i TC22 (3 800 mAh)</li>
+<li><strong>Ekran 6,1" FHD+</strong> — największy w segmencie budżetowym, czytelny na słońcu</li>
+<li><strong>Wi-Fi 6 + Bluetooth 5.1 + NFC</strong> — nowoczesna łączność do zastosowań enterprise</li>
+<li><strong>Skaner DE5L z AcuScan</strong> — szybki odczyt kodów 1D/2D z laserem naprowadzającym</li>
+<li><strong>O 184 PLN taniej niż TC501</strong> (3 546 vs 3 730 PLN) i o 856 PLN taniej niż TC27 z 5G (2 690 PLN) ale z lepszą baterią i IP67</li>
+</ul>
+
+<h3>Na co uważać</h3>
+<ul>
+<li>Drop spec 1,5 m — niższy niż CT32 (1,8 m) i TC501 (2,4 m). Do ciężkiego magazynu rozważ TC701 (3,66 m)</li>
+<li>Wi-Fi 6 (nie 6E) — brak pasma 6 GHz. Przy gęstych sieciach Wi-Fi 6E/7 wybierz TC501 lub CT32</li>
+<li>Android 13 bez gwarancji długoterminowego wsparcia — TC501 (→19) i CT32 (14→18) mają dłuższą ścieżkę aktualizacji</li>
+<li>Skaner DE5L bez opcji dalekiego zasięgu — do regałów 10+ m wybierz CT47 (XLR 24 m) lub MC3400 (SE58, 30 m)</li>
+</ul>
+
+<p><strong>Rekomendacja TAKMA:</strong> MT95 to najlepszy terminal 5G za mniej niż 4 000 PLN. Polecamy go firmom kurierskim i logistycznym, które potrzebują 5G + GPS + dużej baterii 6 000 mAh w jednym urządzeniu — za cenę niższą niż Zebra TC501. Przy wyborze między MT95 a TC27: MT95 ma lepszą baterię i IP67, TC27 ma ekosystem Zebra i dłuższe wsparcie OS. <a href="/produkt/newland-mt95-kambur-pro-ii">Pełna specyfikacja →</a></p>`
+    },
+    {
+      id: 'top7-tc501',
+      heading: '#7 Zebra TC501 — pierwszy kolektor danych z AI i ekranem AMOLED',
       content: `<p><strong>Cena od: <a href="/produkt/zebra-tc501">3 730 PLN netto</a></strong> | Waga: 273 g | IP68 | Wi-Fi 7 | AMOLED 1500 nit | Android → 19</p>
 
 <p><strong>Dla kogo:</strong> Firmy stawiające na przyszłość — AI w magazynie, rozpoznawanie obrazów, OCR, RFID. TC501 to flagowy kolektor danych Zebra (premiera 2025/2026) z dedykowanym procesorem AI, wyświetlaczem AMOLED o jasności 1500 nit i Wi-Fi 7. Pierwszy terminal enterprise w historii z tak zaawansowanymi parametrami w cenie poniżej 4 000 PLN.</p>
@@ -2342,8 +2427,8 @@ export const guides: Guide[] = [
 <p><strong>Rekomendacja TAKMA:</strong> TC501 to terminal przyszłości w cenie teraźniejszości. Jeśli planujesz wdrożenie na 5–7 lat i chcesz mieć AI, RFID i Wi-Fi 7 „out of the box", to najlepsza inwestycja na rynku. Szczególnie polecamy dla retail (rozpoznawanie produktów), magazynów z RFID i firm planujących migrację na Wi-Fi 7. <a href="/produkt/zebra-tc501">Pełna specyfikacja →</a></p>`
     },
     {
-      id: 'top5-tc701',
-      heading: '#5 Zebra TC701 — ultra-rugged z AI do najtrudniejszych warunków',
+      id: 'top8-tc701',
+      heading: '#8 Zebra TC701 — ultra-rugged kolektor danych z AI do najtrudniejszych warunków',
       content: `<p><strong>Cena od: <a href="/produkt/zebra-tc701">4 017 PLN netto</a></strong> | Waga: 284 g | IP68 | Drop 3,66 m | Wi-Fi 7 | AMOLED | Android → 19</p>
 
 <p><strong>Dla kogo:</strong> Centra dystrybucyjne, porty, place składowe, chłodnie, produkcja — wszędzie tam, gdzie terminale spadają, uderzają o beton i pracują w ekstremalnych temperaturach. TC701 to ultra-wytrzymały kolektor danych — wersja TC501 z identycznym procesorem AI i AMOLED, ale z drop spec 3,66 m — 50% wyższym niż TC501.</p>
@@ -2367,8 +2452,8 @@ export const guides: Guide[] = [
 <p><strong>Rekomendacja TAKMA:</strong> TC701 to najlepszy terminal dotykowy do ekstremalnych warunków. Drop 3,66 m oznacza, że przetrwa upadek z palety na posadzkę. Polecamy szczególnie dla centrów dystrybucyjnych, portów i zakładów produkcyjnych, gdzie terminale regularnie spadają z wózków widłowych. <a href="/produkt/zebra-tc701">Pełna specyfikacja →</a></p>`
     },
     {
-      id: 'top6-memor12',
-      heading: '#6 Datalogic Memor 12 — najsmuklejszy terminal enterprise',
+      id: 'top9-memor12',
+      heading: '#9 Datalogic Memor 12 — najsmuklejszy kolektor danych enterprise',
       content: `<p><strong>Cena od: <a href="/produkt/datalogic-memor-12">4 490 PLN netto</a></strong> | Waga: 242 g | IP67 | Wi-Fi 6E | Android → 18</p>
 
 <p><strong>Dla kogo:</strong> Firmy szukające alternatywy dla Zebra w segmencie mid-range, retail, apteki, logistyka. Memor 12 to najnowszy kolektor danych (terminal mobilny) Datalogic — wyróżnia się najsmuklejszą obudową w klasie (13,5 mm grubości) i zaawansowanym skanerem Halogen DE2121 z technologią DeepSight.</p>
@@ -2394,8 +2479,8 @@ export const guides: Guide[] = [
 <p><strong>Rekomendacja TAKMA:</strong> Memor 12 to najlepsza alternatywa dla Zebra TC22/TC53e w segmencie 4 000–5 000 PLN. Wyróżnia się smukłą obudową i dłuższym wsparciem Android (→ 18 vs → 16). Polecamy szczególnie dla retail i aptek, gdzie ergonomia i estetyka mają znaczenie. <a href="/produkt/datalogic-memor-12">Pełna specyfikacja →</a></p>`
     },
     {
-      id: 'top7-mc3400',
-      heading: '#7 Zebra MC3400 — najlepszy terminal z klawiaturą fizyczną',
+      id: 'top10-mc3400',
+      heading: '#10 Zebra MC3400 — najlepszy kolektor danych z klawiaturą fizyczną',
       content: `<p><strong>Cena od: <a href="/produkt/zebra-mc3400">4 561 PLN netto</a></strong> | Waga: 442 g (straight) / 528 g (gun) | IP67 | Drop 2,4 m | Android → 18</p>
 
 <p><strong>Dla kogo:</strong> Magazyny, centra dystrybucyjne, produkcja — wszędzie tam, gdzie operatorzy muszą szybko wpisywać dane: numery partii, kody lokalizacji, ilości, numery seryjne. MC3400 to kolektor danych (terminal mobilny) z klawiaturą fizyczną, następca legendarnej serii MC3300x — najchętniej wybierany w tej klasie w Polsce.</p>
@@ -2421,8 +2506,8 @@ export const guides: Guide[] = [
 <p><strong>Rekomendacja TAKMA:</strong> MC3400 to „szwajcarski nóż" terminali mobilnych. Jeśli Twoi operatorzy narzekają na wpisywanie danych na ekranie dotykowym lub pracują w rękawicach — MC3400 rozwiąże problem. Wariant Gun z SE55 polecamy do picking w magazynach z regałami do 12 m. <a href="/produkt/zebra-mc3400">Pełna specyfikacja i warianty →</a></p>`
     },
     {
-      id: 'top8-tc53e',
-      heading: '#8 Zebra TC53e — enterprise ze zintegrowanym RFID',
+      id: 'top11-tc53e',
+      heading: '#11 Zebra TC53e — kolektor danych enterprise ze zintegrowanym RFID',
       content: `<p><strong>Cena od: <a href="/produkt/zebra-tc53e">4 926 PLN netto</a></strong> | Waga: ~300 g | IP68 | Drop 1,8 m | RFID UHF (opcja) | Android → 17</p>
 
 <p><strong>Dla kogo:</strong> Firmy wdrażające RFID (odzież, retail, farmacja, środki trwałe), duże magazyny z intensywnym skanowaniem. TC53e to ekonomiczny kolektor danych (terminal mobilny) — wersja flagowego TC53 ze zbliżoną wydajnością przy niższej cenie, a w wariancie TC530R ma zintegrowany czytnik RFID UHF.</p>
@@ -2451,8 +2536,8 @@ export const guides: Guide[] = [
 <p><strong>Rekomendacja TAKMA:</strong> TC53e to nasz top pick w segmencie 5 000 PLN. Sprawdza się zarówno jako standardowy terminal enterprise (tańszy od TC53), jak i jako czytnik RFID (wariant TC530R). Polecamy szczególnie dla firm planujących wdrożenie RFID w ciągu 1–2 lat — kupujesz terminal teraz, RFID aktywujesz, gdy będziesz gotowy. <a href="/produkt/zebra-tc53e">Pełna specyfikacja →</a></p>`
     },
     {
-      id: 'top9-mc9400',
-      heading: '#9 Zebra MC9400 — kolektor danych ultra-rugged z 7 wymiennymi klawiaturami',
+      id: 'top12-mc9400',
+      heading: '#12 Zebra MC9400 — kolektor danych ultra-rugged z 7 wymiennymi klawiaturami',
       content: `<p><strong>Cena od: <a href="/produkt/zebra-mc9400">7 638 PLN netto</a></strong> | Waga: ~600 g | IP68 | Drop 3,65 m | 6 000 tumble | Android → 17</p>
 
 <p><strong>Dla kogo:</strong> Najtrudniejsze środowiska pracy — chłodnie (−30°C), place składowe, porty, ciężka produkcja. Zebra MC9400 to flagowy kolektor danych (terminal mobilny) w klasie ultra-rugged z klawiaturą fizyczną — następca legendarnego MC9300. To terminal, który przetrwa wszystko.</p>
@@ -2478,8 +2563,8 @@ export const guides: Guide[] = [
 <p><strong>Rekomendacja TAKMA:</strong> MC9400 to kolektor danych „nie do zdarcia". Kupujesz go, gdy wiesz, że tańsze modele nie przetrwają — w chłodniach, na placach składowych, w portach. Hot-swap 7 klawiatur pozwala dostosować urządzenie do różnych stanowisk bez wymiany terminala. TCO na 7 lat (typowy cykl MC9400) jest niższy niż 2× wymiana tańszego modelu. <a href="/produkt/zebra-mc9400">Pełna specyfikacja i warianty →</a></p>`
     },
     {
-      id: 'top10-ct47',
-      heading: '#10 Honeywell CT47 — kolektor danych 5G z FlexRange XLR do 24 m',
+      id: 'top13-ct47',
+      heading: '#13 Honeywell CT47 — kolektor danych 5G z FlexRange XLR do 24 m',
       content: `<p><strong>Cena od: <a href="/produkt/honeywell-ct47">7 901 PLN netto</a></strong> | Waga: 314 g | IP65+IP68 | Drop 3,0 m | 2 000 tumble | Android 14 → 18+</p>
 
 <p><strong>Dla kogo:</strong> Magazyny wysokiego składowania, centra dystrybucyjne, field service, transport. Honeywell CT47 to kolektor danych (terminal mobilny) premium z unikalną kombinacją: kompaktowy format dotykowy (314 g, 5,5") ze skanerem FlexRange XLR o zasięgu 24 m i opcjonalnym 5G — w jednej smukłej obudowie.</p>
@@ -2512,14 +2597,14 @@ export const guides: Guide[] = [
 
 <h3>1. Ile skanów dziennie wykonują operatorzy?</h3>
 <ul>
-<li><strong>Do 300 skanów/zmianę</strong> → TC22 (dotykowy, lekki, 236 g)</li>
-<li><strong>300–800 skanów/zmianę</strong> → MC3400 Gun (uchwyt pistoletowy, mniejsze zmęczenie)</li>
+<li><strong>Do 300 skanów/zmianę</strong> → MT93 (najtańszy, 2 207 PLN), TC22 (dotykowy, IP68, 236 g)</li>
+<li><strong>300–800 skanów/zmianę</strong> → N7 Cachalot Gun (budżetowy, 3 346 PLN) lub MC3400 Gun (premium, 4 561 PLN)</li>
 <li><strong>800+ skanów/zmianę</strong> → MC9400 Gun + ring scanner WT6300 (hands-free)</li>
 </ul>
 
 <h3>2. Jakie warunki pracy?</h3>
 <ul>
-<li><strong>Biuro / retail / apteka</strong> → TC22, CT32 lub Memor 12 (IP65–IP68, drop 1,5–1,8 m)</li>
+<li><strong>Biuro / retail / apteka</strong> → MT93 (najtańszy), TC22, CT32 lub Memor 12 (IP65–IP68, drop 1,5–1,8 m)</li>
 <li><strong>Magazyn standardowy</strong> → MC3400 (IP67, drop 2,4 m)</li>
 <li><strong>Chłodnia / plac / port</strong> → MC9400 (IP68, drop 3,65 m, −30°C) lub TC701 (drop 3,66 m)</li>
 <li><strong>Teren (kurierzy, serwis)</strong> → TC27 (5G/LTE, GPS)</li>
@@ -2527,20 +2612,20 @@ export const guides: Guide[] = [
 
 <h3>3. Klawiatura fizyczna czy ekran dotykowy?</h3>
 <ul>
-<li><strong>Dotykowy</strong> → TC22, CT32, TC501, TC701, Memor 12, CT47 (szybsze wdrożenie, intuicyjny UI)</li>
-<li><strong>Klawiatura</strong> → MC3400, MC9400 (szybsze wpisywanie danych, praca w rękawicach)</li>
+<li><strong>Dotykowy</strong> → MT93, TC22, CT32, MT95, TC501, TC701, Memor 12, CT47 (szybsze wdrożenie, intuicyjny UI)</li>
+<li><strong>Klawiatura</strong> → N7 Cachalot (budżetowy, 3 346 PLN), MC3400 (premium, 4 561 PLN), MC9400 (ultra-rugged, 7 638 PLN)</li>
 </ul>
 
 <h3>4. Na jak długo planujesz wdrożenie?</h3>
 <ul>
-<li><strong>3–5 lat</strong> → TC22 (Android → 16), CT32 (Android 14 → 18)</li>
+<li><strong>3–5 lat</strong> → MT93 (Android 13, najtańszy), TC22 (Android → 16), CT32 (Android 14 → 18)</li>
 <li><strong>5–7 lat</strong> → TC501/TC701 (Android → 19), MC3400 (Android → 18), Memor 12 (Android → 18), CT47 (Mobility Edge)</li>
 </ul>
 
 <h3>5. Jaki budżet na 1 terminal?</h3>
 <ul>
-<li><strong>Do 3 000 PLN</strong> → TC22 (2 417), TC27 (2 690)</li>
-<li><strong>3 000–5 000 PLN</strong> → CT32 (3 389), TC501 (3 730), TC701 (4 017), Memor 12 (4 490), MC3400 (4 561), TC53e (4 926)</li>
+<li><strong>Do 3 000 PLN</strong> → MT93 (2 207), TC22 (2 417), TC27 (2 690)</li>
+<li><strong>3 000–5 000 PLN</strong> → N7 Cachalot (3 346), CT32 (3 389), MT95 (3 546), TC501 (3 730), TC701 (4 017), Memor 12 (4 490), MC3400 (4 561), TC53e (4 926)</li>
 <li><strong>Powyżej 7 000 PLN</strong> → MC9400 (7 638), CT47 (7 901)</li>
 </ul>
 
@@ -2583,28 +2668,28 @@ export const guides: Guide[] = [
 
   faq: [
     {
-      question: 'Jaki jest najlepszy terminal mobilny do magazynu w 2026?',
-      answer: 'W 2026 roku najlepszym kolektorem danych (terminalem mobilnym) do magazynu jest Zebra MC3400 (od 4 561 PLN netto) — oferuje klawiaturę fizyczną, drop spec 2,4 m, IP67, Wi-Fi 6E i Android 14 → 18. Dla mniejszych magazynów z ograniczonym budżetem polecamy Zebra TC22 (od 2 417 PLN) lub Honeywell CT32 (od 3 389 PLN). Do magazynów wysokiego składowania (12+ m) — Honeywell CT47 ze skanerem FlexRange XLR 24 m (od 7 901 PLN) lub Zebra MC3400 z SE58 ER (zasięg 30,5 m).'
+      question: 'Jaki jest najlepszy kolektor danych do magazynu w 2026?',
+      answer: 'W 2026 roku najlepszym kolektorem danych do magazynu jest Zebra MC3400 (od 4 561 PLN netto) — oferuje klawiaturę fizyczną, drop 2,4 m, IP67, Wi-Fi 6E i Android 14→18. Budżetowa alternatywa z klawiaturą: Newland N7 Cachalot Pro II (od 3 346 PLN). Dla mniejszych magazynów: Newland MT93 (od 2 207 PLN, najtańszy enterprise) lub Zebra TC22 (od 2 417 PLN, IP68). Do magazynów wysokiego składowania (12+ m): Honeywell CT47 ze skanerem FlexRange XLR 24 m (od 7 901 PLN) lub Zebra MC3400 z SE58 ER (zasięg 30,5 m).'
     },
     {
-      question: 'Ile kosztuje terminal mobilny (kolektor danych) w 2026?',
-      answer: 'Ceny terminali mobilnych enterprise w 2026 roku wahają się od 2 417 PLN netto (Zebra TC22 — dotykowy, Wi-Fi) do 7 638 PLN netto (Zebra MC9400 — ultra-rugged z klawiaturą). Popularne modele: Zebra TC27 z 5G/LTE — 2 690 PLN, Zebra TC501 z AI i AMOLED — 3 730 PLN, Zebra MC3400 z klawiaturą — 4 561 PLN, Datalogic Memor 12 — 4 490 PLN. Do TCO (całkowitego kosztu posiadania) na 5 lat dodaj ~2 500–4 700 PLN na baterie, stację ładowania i kontrakt serwisowy.'
+      question: 'Ile kosztuje kolektor danych (terminal mobilny) w 2026?',
+      answer: 'Ceny kolektorów danych enterprise w 2026 roku wahają się od 2 207 PLN netto (Newland MT93 — najtańszy z Wi-Fi 6E i 4G LTE) do 7 901 PLN netto (Honeywell CT47 — FlexRange XLR 24 m, 5G). Popularne modele: Zebra TC22 — 2 417 PLN, Zebra TC27 z 5G — 2 690 PLN, Newland N7 Cachalot z klawiaturą — 3 346 PLN, Zebra TC501 z AI i AMOLED — 3 730 PLN, Zebra MC3400 z klawiaturą — 4 561 PLN. Do TCO (całkowitego kosztu posiadania) na 5 lat dodaj ~2 500–4 700 PLN na baterie, stację ładowania i kontrakt serwisowy.'
     },
     {
       question: 'Czym się różni terminal mobilny od zwykłego smartfona?',
       answer: 'Terminal mobilny (kolektor danych) różni się od smartfona w 5 kluczowych aspektach: (1) wytrzymałość — drop 1,5–3,65 m na beton, IP65–IP68, MIL-STD-810H vs smartfon ~0,8 m; (2) skaner enterprise — SE4710/SE55/SE58 z zasięgiem 0,3–30 m, >100 skanów/s vs kamera smartfona; (3) bateria hot-swap — wymiana bez wyłączania vs smartfon wymaga restartu; (4) wsparcie OS 4–5 generacji — aktualizacje bezpieczeństwa 6–8 lat vs smartfon 2–3 lata; (5) zarządzanie MDM — zdalne konfigurowanie, lockdown aplikacji, OTA updates dla floty vs smartfon per-device.'
     },
     {
-      question: 'Zebra, Honeywell czy Datalogic — który kolektor danych wybrać?',
-      answer: 'Zebra Technologies (45% rynku globalnego) oferuje najszerszy ekosystem akcesoriów, najdłuższe wsparcie Android (do 19 w TC501) i największą sieć serwisową w Polsce. Honeywell (25% rynku) to główny konkurent Zebry — wyróżnia się innowacjami w łączności (5G + Wi-Fi 6E w CT32/CT47), skanerem FlexRange XLR do 24 m i platformą Mobility Edge z gwarancją aktualizacji. Datalogic (10% rynku) oferuje konkurencyjne ceny i smukłe obudowy (Memor 12 — 13,5 mm). Rekomendacja: dla dużych wdrożeń (50+ terminali) — Zebra (ekosystem, serwis). Dla firm szukających 5G w kompaktowej obudowie — Honeywell. Dla mniejszych firm z budżetem na Datalogic — Memor 12. Szczegółowe porównanie: <a href="/poradnik/zebra-vs-honeywell-terminale-mobilne">Zebra vs Honeywell — porównanie terminali mobilnych 2026</a>.'
+      question: 'Zebra, Honeywell, Newland czy Datalogic — który kolektor danych wybrać?',
+      answer: 'Zebra Technologies (45% rynku globalnego) oferuje najszerszy ekosystem akcesoriów, najdłuższe wsparcie Android (do 19 w TC501) i największą sieć serwisową w Polsce. Honeywell (25% rynku) to główny konkurent Zebry — wyróżnia się innowacjami w łączności (5G + Wi-Fi 6E w CT32/CT47), skanerem FlexRange XLR do 24 m i platformą Mobility Edge z gwarancją aktualizacji. Newland (8% rynku) to najszybciej rosnący gracz — wyróżnia się najniższymi cenami enterprise (MT93 od 2 207 PLN), 5G w MT95 Kambur (3 546 PLN) i klawiaturą fizyczną w N7 Cachalot (3 346 PLN). Datalogic (10% rynku) oferuje konkurencyjne ceny i smukłe obudowy (Memor 12 — 13,5 mm). Rekomendacja: dla dużych wdrożeń (50+ terminali) — Zebra (ekosystem, serwis). Dla firm szukających 5G w kompaktowej obudowie — Honeywell. Dla najniższego budżetu enterprise — Newland MT93 (od 2 207 PLN). Dla mniejszych firm z budżetem na Datalogic — Memor 12. Szczegółowe porównanie: <a href="/poradnik/zebra-vs-honeywell-terminale-mobilne">Zebra vs Honeywell — porównanie terminali mobilnych 2026</a>.'
     },
     {
       question: 'Jaki kolektor danych z klawiaturą fizyczną wybrać?',
-      answer: 'W 2026 roku najlepsze kolektory danych z klawiaturą fizyczną to: Zebra MC3400 (4 561 PLN, 29/38/47-klawiszy, IP67, Wi-Fi 6E, Android → 18) — najlepszy stosunek cena/możliwości, i Zebra MC9400 (7 638 PLN, 7 wymiennych klawiatur, drop 3,65 m, −30°C) — ultra-rugged do ekstremalnych warunków. Do standardowego magazynu — MC3400. Do chłodni, placów składowych i portów — MC9400. Jeśli klawiatura nie jest krytyczna, a potrzebujesz dalekiego zasięgu skanera — Honeywell CT47 z FlexRange XLR 24 m (7 901 PLN) w formie dotykowej.'
+      answer: 'W 2026 roku najlepsze kolektory danych z klawiaturą fizyczną to: Newland N7 Cachalot Pro II (3 346 PLN, 29/38/47-klawiszy, IP65, drop 1,8 m) — najtańszy enterprise z klawiaturą, Zebra MC3400 (4 561 PLN, 29/38/47-klawiszy, IP67, Wi-Fi 6E, Android → 18) — najlepszy stosunek cena/możliwości, i Zebra MC9400 (7 638 PLN, 7 wymiennych klawiatur, drop 3,65 m, −30°C) — ultra-rugged do ekstremalnych warunków. Do lekkiego magazynu z ograniczonym budżetem — N7 Cachalot. Do standardowego magazynu — MC3400. Do chłodni, placów składowych i portów — MC9400. Jeśli klawiatura nie jest krytyczna, a potrzebujesz dalekiego zasięgu skanera — Honeywell CT47 z FlexRange XLR 24 m (7 901 PLN) w formie dotykowej.'
     },
     {
       question: 'Jaki terminal mobilny do pracy w terenie (kurier, serwisant)?',
-      answer: 'Do pracy w terenie najlepszy jest Zebra TC27 (2 690 PLN netto) — jedyny terminal w tej cenie z 5G/LTE, GPS (4 systemy nawigacji), kamerą 16 MP i hot-swap baterią. Alternatywa w wyższym budżecie: Zebra TC58 (6 751 PLN) z procesorem 2,7 GHz i baterią 7 000 mAh na 18h pracy. Oba mają dual SIM (nano + eSIM) do przełączania między operatorami.'
+      answer: 'Do pracy w terenie najlepszy jest Zebra TC27 (2 690 PLN netto) — jedyny terminal w tej cenie z 5G/LTE, GPS (4 systemy nawigacji), kamerą 16 MP i hot-swap baterią. Alternatywa z 5G w niższym budżecie: Newland MT95 Kambur Pro II (3 546 PLN, 5G, IP67, GPS, bateria 6 000 mAh). W wyższym budżecie: Zebra TC58 (6 751 PLN) z procesorem 2,7 GHz i baterią 7 000 mAh na 18h pracy. TC27 i TC58 mają dual SIM (nano + eSIM) do przełączania między operatorami.'
     },
     {
       question: 'Jaki terminal mobilny do chłodni i mroźni?',
@@ -2616,19 +2701,19 @@ export const guides: Guide[] = [
     },
     {
       question: 'Jaki terminal mobilny do inwentaryzacji?',
-      answer: 'Do inwentaryzacji najlepszy jest terminal z klawiaturą fizyczną (szybkie wpisywanie ilości) i skanerem dalekiego zasięgu (skanowanie regałów bez drabiny). Rekomendacja wg budżetu: Datalogic Memor K (2 490 PLN, 24-klawisze, ekonomiczny), Zebra MC3400 z SE55 (4 561 PLN, zasięg 12,2 m, Wi-Fi 6E), Zebra MC9400 z SE58 (7 638 PLN, zasięg 30,5 m, −30°C). Dla inwentaryzacji RFID: Zebra TC53e wariant TC530R (4 926 PLN) z wbudowanym czytnikiem UHF odczytującym >200 tagów/sekundę.'
+      answer: 'Do inwentaryzacji najlepszy jest terminal z klawiaturą fizyczną (szybkie wpisywanie ilości) i skanerem dalekiego zasięgu (skanowanie regałów bez drabiny). Rekomendacja wg budżetu: Newland N7 Cachalot Pro II (3 346 PLN, 29/38/47-klawiszy, najniższa cena z klawiaturą), Zebra MC3400 z SE55 (4 561 PLN, zasięg 12,2 m, Wi-Fi 6E), Zebra MC9400 z SE58 (7 638 PLN, zasięg 30,5 m, −30°C). Dla inwentaryzacji RFID: Zebra TC53e wariant TC530R (4 926 PLN) z wbudowanym czytnikiem UHF odczytującym >200 tagów/sekundę.'
     },
     {
       question: 'Ile waży terminal mobilny i jak wpływa na wydajność operatora?',
-      answer: 'Waga terminali mobilnych w 2026 roku waha się od 236 g (Zebra TC22 — jak duży smartfon) do ~600 g (Zebra MC9400 z klawiaturą i uchwytem Gun). Badania ergonomiczne pokazują, że przy >500 skanach/zmianę waga powyżej 350 g zwiększa zmęczenie nadgarstka o 20–30%. Dlatego do intensywnego skanowania rekomendujemy: lekki terminal dotykowy (TC22, 236 g) lub terminal Gun z ergonomicznym uchwytem (MC3400, 528 g z Gun — uchwyt przenosi ciężar na dłoń, odciążając nadgarstek).'
+      answer: 'Waga terminali mobilnych w 2026 roku waha się od 236 g (Zebra TC22) do ~600 g (Zebra MC9400 z klawiaturą i uchwytem Gun). Najlżejsze modele w rankingu: TC22 (236 g), Newland MT93 Megattera (277 g), Newland MT95 Kambur (287 g). Badania ergonomiczne pokazują, że przy >500 skanach/zmianę waga powyżej 350 g zwiększa zmęczenie nadgarstka o 20–30%. Dlatego do intensywnego skanowania rekomendujemy: lekki terminal dotykowy (TC22, 236 g lub MT93, 277 g) lub terminal Gun z ergonomicznym uchwytem (MC3400, 528 g z Gun — uchwyt przenosi ciężar na dłoń, odciążając nadgarstek).'
     },
     {
       question: 'Jaki zasięg ma skaner w terminalu mobilnym?',
       answer: 'Zasięg skanera zależy od modelu: SE4710 — do 35 cm (kody na półce), SE4720 — do 60 cm, SE4770 — do 1,5 m, SE55 Advanced Range — do 12,2 m (regały wysokiego składowania), SE58 Extended Range — do 30,5 m (najwyższe regały), Honeywell FlexRange XLR — do 24 m (CT47). Ogólna zasada: do retail i lekkiego magazynu wystarczy SE4710. Do picking w magazynie wysokiego składowania — SE55, SE58 lub FlexRange XLR. Do inwentaryzacji na odległość — SE58 (Zebra MC9400) lub FlexRange XLR (Honeywell CT47).'
     },
     {
-      question: 'Jakie są alternatywy dla terminali z rankingu TOP 10?',
-      answer: 'Ranking obejmuje 3 marki: Zebra (45% rynku), Honeywell (25%) i Datalogic (10%). Alternatywy spoza rankingu: Honeywell CK67 (ultra-rugged z 5 klawiaturami, konkurent MC9400, od 7 778 PLN), Honeywell CT70 (pierwszy terminal z Wi-Fi 7 i BT 6.0), Newland (8% rynku, MT93 Megattera Pro — najlepszy stosunek cena/parametry), M3 Mobile (5%, SL20+, UL20/UL30 — popularny w retail), Point Mobile (PM80, PM90 — budżetowe). W TAKMA oferujemy Zebra, Honeywell i Datalogic — to marki, które najlepiej znamy dzięki 25-letniemu doświadczeniu i autoryzacji Zebra Premier Partner.'
+      question: 'Jakie są alternatywy dla terminali z rankingu TOP 13?',
+      answer: 'Ranking obejmuje 4 marki: Zebra (45% rynku), Honeywell (25%), Newland (8%) i Datalogic (10%). Alternatywy spoza rankingu: Honeywell CK67 (ultra-rugged z 5 klawiaturami, konkurent MC9400, od 7 778 PLN), Honeywell CT70 (pierwszy terminal z Wi-Fi 7 i BT 6.0), Newland MT90 Orca (pośredni między MT93 a MT95, wkrótce w ofercie), M3 Mobile (5%, SL20+, UL20/UL30 — popularny w retail), Point Mobile (PM80, PM90 — budżetowe). W TAKMA oferujemy Zebra, Honeywell, Newland i Datalogic — to marki, które najlepiej znamy dzięki 25-letniemu doświadczeniu i autoryzacji Zebra Premier Partner.'
     },
     {
       question: 'Jaki kolektor danych z RFID wybrać w 2026?',
@@ -2639,12 +2724,20 @@ export const guides: Guide[] = [
       answer: 'Wi-Fi 7 (802.11be) oferuje do 4× wyższą przepustowość niż Wi-Fi 6E i ultraniskie opóźnienia (Multi-Link Operation). W 2026 roku Wi-Fi 7 dostępny jest w Zebra TC501 i TC701 (oba w rankingu) oraz Honeywell CT70 (poza rankingiem). Czy warto? Tak, jeśli: planujesz wdrożenie na 5–7 lat (infrastruktura Wi-Fi 7 AP będzie standardem do 2028), potrzebujesz najniższych opóźnień (np. real-time voice picking, aplikacje AR/VR), lub wymieniasz access pointy w ciągu 1–2 lat. Jeśli Twoja infrastruktura Wi-Fi ma <3 lata — Wi-Fi 6E (w TC22, CT32, MC3400) jest wystarczające.'
     },
     {
-      question: 'Co to jest terminal mobilny (kolektor danych)?',
-      answer: 'Terminal mobilny (kolektor danych) to wzmocniony komputer przenośny ze zintegrowanym skanerem kodów kreskowych, systemem Android, ekranem dotykowym i baterią na 8–16h pracy. W odróżnieniu od smartfona ma obudowę IP65–IP68, wytrzymuje upadki na beton z 1,5–3,65 m i jest zarządzany zdalnie przez MDM. Ceny enterprise kolektorów danych w 2026: od 2 417 PLN (Zebra TC22) do 7 901 PLN netto (Honeywell CT47). Synonim: kolektor danych, terminal magazynowy, handheld computer, PDA przemysłowy.'
+      question: 'Jaki najtańszy terminal enterprise (kolektor danych) w 2026?',
+      answer: 'Najtańszy terminal enterprise w 2026 to Newland MT93 Megattera Standard Plus — od 2 207 PLN netto. Za tę cenę oferuje: ekran 6" HD+, Wi-Fi 6E, 4G LTE, skaner 2D Mega, IP65, upadki z 1,5 m, Android 13, baterię 4 500 mAh i wagę zaledwie 277 g. Kolejne opcje: Zebra TC22 (2 417 PLN, IP68, SE4710, 5 lat wsparcia Android) i Zebra TC27 (2 690 PLN, 5G + GPS, 16 MP kamera). Newland MT93 jest o ~10% tańszy niż TC22, ale Zebra oferuje dłuższe wsparcie Android i szerszy ekosystem akcesoriów.'
     },
     {
-      question: 'Gdzie kupić kolektory danych z rankingu TOP 10?',
-      answer: 'Wszystkie kolektory danych (terminale mobilne) z rankingu TOP 10 są dostępne w TAKMA (takma.com.pl) — autoryzowanym dystrybutorze Zebra Technologies, Honeywell i Datalogic. Ceny netto od 2 417 PLN (Zebra TC22) do 7 901 PLN (Honeywell CT47). Oferujemy: darmowe doradztwo techniczne, piloty terminali przed zakupem, staging i konfigurację MDM, kontrakty serwisowe OneCare oraz serwis pogwarancyjny (serwis-zebry.pl). Kontakt: +48 607 819 688, takma@takma.com.pl.'
+      question: 'Newland vs Zebra — czy warto wybrać tańszą markę?',
+      answer: 'Newland to najszybciej rosnący producent kolektorów danych (8% rynku globalnego). Zalety: o 10–30% niższe ceny niż Zebra (MT93 od 2 207 PLN vs TC22 od 2 417 PLN), klawiatura fizyczna w N7 Cachalot (3 346 PLN vs MC3400 od 4 561 PLN), 5G w MT95 Kambur (3 546 PLN). Wady vs Zebra: krótsze wsparcie Android (2–3 generacje vs 4–5), mniejszy ekosystem akcesoriów, mniej punktów serwisowych w Polsce. Rekomendacja: Newland dla flot 5–20 terminali, gdzie cena jest kluczowa. Zebra dla wdrożeń 50+ terminali, gdzie liczy się ekosystem, serwis i długi cykl życia.'
+    },
+    {
+      question: 'Co to jest terminal mobilny (kolektor danych)?',
+      answer: 'Terminal mobilny (kolektor danych) to wzmocniony komputer przenośny ze zintegrowanym skanerem kodów kreskowych, systemem Android, ekranem dotykowym i baterią na 8–16h pracy. W odróżnieniu od smartfona ma obudowę IP65–IP68, wytrzymuje upadki na beton z 1,5–3,65 m i jest zarządzany zdalnie przez MDM. Ceny enterprise kolektorów danych w 2026: od 2 207 PLN (Newland MT93 Megattera) do 7 901 PLN netto (Honeywell CT47). Synonim: kolektor danych, terminal magazynowy, handheld computer, PDA przemysłowy.'
+    },
+    {
+      question: 'Gdzie kupić kolektory danych z rankingu TOP 13?',
+      answer: 'Wszystkie kolektory danych (terminale mobilne) z rankingu TOP 13 są dostępne w TAKMA (takma.com.pl) — autoryzowanym dystrybutorze Zebra Technologies, Honeywell, Newland i Datalogic. Ceny netto od 2 207 PLN (Newland MT93 Megattera) do 7 901 PLN (Honeywell CT47). Oferujemy: darmowe doradztwo techniczne, piloty terminali przed zakupem, staging i konfigurację MDM, kontrakty serwisowe OneCare oraz serwis pogwarancyjny (serwis-zebry.pl). Kontakt: +48 607 819 688, takma@takma.com.pl.'
     }
   ],
 
@@ -2653,6 +2746,9 @@ export const guides: Guide[] = [
     { title: 'Zebra vs Honeywell — porównanie terminali mobilnych', href: '/poradnik/zebra-vs-honeywell-terminale-mobilne' },
     { title: 'Zebra TC22 — pełna specyfikacja', href: '/produkt/zebra-tc22' },
     { title: 'Zebra TC27 — specyfikacja i warianty', href: '/produkt/zebra-tc27' },
+    { title: 'Newland MT93 Megattera — najtańszy enterprise', href: '/produkt/newland-mt93-megattera-standard-plus' },
+    { title: 'Newland N7 Cachalot Pro II — klawiatura fizyczna', href: '/produkt/newland-n7-cachalot-pro-ii' },
+    { title: 'Newland MT95 Kambur Pro II — 5G IP67', href: '/produkt/newland-mt95-kambur-pro-ii' },
     { title: 'Honeywell CT32 — Wi-Fi 6E, hot-swap', href: '/produkt/honeywell-ct32' },
     { title: 'Zebra TC501 — AI i AMOLED', href: '/produkt/zebra-tc501' },
     { title: 'Zebra TC701 — ultra-rugged AI', href: '/produkt/zebra-tc701' },
