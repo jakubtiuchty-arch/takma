@@ -55,7 +55,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-02-13',
   updatedAt: '2026-02-21',
   readTime: '12 min',
-  heroImage: '/images/guides/hero_jak_wybrac_drukarke.png',
+  heroImage: '/images/guides/hero_jak_wybrac_drukarke.webp',
 
   sections: [
     {
@@ -583,7 +583,7 @@ export const guides: Guide[] = [
 {
   slug: 'drukarka-termiczna-vs-termotransferowa',
   title: 'Drukarka termiczna vs termotransferowa — różnice, koszty, zastosowania',
-  heroImage: '/images/guides/drukarka-termiczna-termotransferowa-roznice.png',
+  heroImage: '/images/guides/drukarka-termiczna-termotransferowa-roznice.webp',
   seoTitle: 'Drukarka termiczna vs termotransferowa — porównanie 2026',
   seoDescription: 'Drukarka termiczna czy termotransferowa? Różnice, koszty druku na etykietę, trwałość, TCO. Kalkulacje PLN i polecane drukarki etykiet Zebra od 621 zł.',
   excerpt: 'Kompleksowe porównanie dwóch technologii druku etykiet: direct thermal i thermal transfer. Szczegółowe kalkulacje kosztów na etykietę, analiza TCO przy różnych wolumenach oraz konkretne rekomendacje modeli dla każdego zastosowania.',
@@ -1028,7 +1028,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-02-13',
   updatedAt: '2026-02-21',
   readTime: '15 min',
-  heroImage: '/images/guides/drukarki-etykiet-zebra-przewodnik.png',
+  heroImage: '/images/guides/drukarki-etykiet-zebra-przewodnik.webp',
 
   sections: [
     {
@@ -1656,7 +1656,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-02-23',
   updatedAt: '2026-03-14',
   readTime: '18 min',
-  heroImage: '/images/guides/jak-wybrac-terminal-mobilny-2026.png',
+  heroImage: '/images/guides/jak-wybrac-terminal-mobilny-2026.webp',
 
   sections: [
     {
@@ -2186,7 +2186,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-02-24',
   updatedAt: '2026-03-15',
   readTime: '22 min',
-  heroImage: '/images/guides/top-15-kolektorow-danych-2026.png',
+  heroImage: '/images/guides/top-15-kolektorow-danych-2026.webp',
 
   sections: [
     {
@@ -2847,7 +2847,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-02',
   updatedAt: '2026-03-02',
   readTime: '18 min',
-  heroImage: '/images/guides/zebra-vs-honeywell-porownanie-terminali.png',
+  heroImage: '/images/guides/zebra-vs-honeywell-porownanie-terminali.webp',
   sections: [
     {
       id: 'podsumowanie',
@@ -3234,7 +3234,7 @@ export const guides: Guide[] = [
 {
   slug: 'zebra-tc27-vs-tc58e',
   title: 'Zebra TC27 vs TC58e — porównanie kolektorów danych z 5G',
-  heroImage: '/images/guides/zebra-tc27-zebra-tc58e-porownanie-kolektorow.png',
+  heroImage: '/images/guides/zebra-tc27-zebra-tc58e-porownanie-kolektorow.webp',
   seoTitle: 'Zebra TC27 vs TC58e — porównanie kolektorów danych 2026 | Terminal TC27 czy TC58e? Ceny, TCO',
   seoDescription: 'Porównanie Zebra TC27 vs TC58e: kolektor danych TC27 to budżetowy terminal z 5G za 2 690 zł, TC58e to premium z większą baterią i -20°C za 5 337 zł. Specyfikacje, TCO, 20 FAQ.',
   excerpt: 'Zebra TC27 (kolektor danych z 5G od 2 690 zł) vs TC58e (terminal premium od 5 337 zł) — porównanie procesorów, skanerów, baterii, wytrzymałości, TCO na 5 lat i rekomendacje wg branży.',
@@ -3578,7 +3578,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-13',
   updatedAt: '2026-03-13',
   readTime: '14 min',
-  heroImage: '/images/guides/zebra-tc22-vs-tc27-hero.png',
+  heroImage: '/images/guides/zebra-tc22-vs-tc27-hero.webp',
   sections: [
     {
       id: 'podsumowanie',
@@ -4033,7 +4033,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-13',
   updatedAt: '2026-03-14',
   readTime: '18 min',
-  heroImage: '/images/guides/zebra-mc3400-vs-mc9400-hero.png',
+  heroImage: '/images/guides/zebra-mc3400-vs-mc9400-hero.webp',
   sections: [
     {
       id: 'podsumowanie',
@@ -4529,7 +4529,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-13',
   updatedAt: '2026-03-13',
   readTime: '22 min',
-  heroImage: '/images/guides/skanery-kodow-kreskowych-zebra-jak-wybrac-hero.png',
+  heroImage: '/images/guides/skanery-kodow-kreskowych-zebra-jak-wybrac-hero.webp',
   sections: [
     {
       id: 'podsumowanie',
@@ -4905,7 +4905,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-14',
   updatedAt: '2026-03-15',
   readTime: '16 min',
-  heroImage: '/images/guides/zebra-tc501-zebra-tc58-porownanie-kolektorow-danych.png',
+  heroImage: '/images/guides/zebra-tc501-zebra-tc58-porownanie-kolektorow-danych.webp',
   sections: [
     {
       id: 'podsumowanie',
@@ -5316,7 +5316,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-15',
   updatedAt: '2026-03-15',
   readTime: '14 min',
-  heroImage: '/images/guides/zebra-zd421t-honeywell-pc45t-porownanie-drukarek-etykiet.png',
+  heroImage: '/images/guides/zebra-zd421t-honeywell-pc45t-porownanie-drukarek-etykiet.webp',
   sections: [
     {
       id: 'podsumowanie',
@@ -5619,7 +5619,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-15',
   updatedAt: '2026-03-15',
   readTime: '18 min',
-  heroImage: '/images/guides/zebra-zd421-zebra-zd621-porownanie-drukarek-etykiet.png',
+  heroImage: '/images/guides/zebra-zd421-zebra-zd621-porownanie-drukarek-etykiet.webp',
 
   sections: [
     {
@@ -5927,7 +5927,7 @@ export const guides: Guide[] = [
 },
 {
   slug: 'zebra-zt231-vs-zt411-porownanie',
-  heroImage: '/images/guides/zebra-zt231-zebra-zt411-porownanie-drukarek-etykiet.png',
+  heroImage: '/images/guides/zebra-zt231-zebra-zt411-porownanie-drukarek-etykiet.webp',
   title: 'Zebra ZT231 vs ZT411 — porównanie drukarek przemysłowych 2026',
   seoTitle: 'Zebra ZT231 vs ZT411 — porównanie drukarek przemysłowych',
   seoDescription: 'Zebra ZT231 vs ZT411 — porównanie drukarek etykiet przemysłowych. 600 dpi, linerless, RFID, TCO od 2 675 zł. 10 sekcji, 5 scenariuszy. Którą wybrać? | TAKMA.',
