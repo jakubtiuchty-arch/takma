@@ -1040,7 +1040,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Czym różni się Zebra ZD421t od ZD621t?',
-        answer: 'ZD621t to model premium w linii biurkowej Zebra: drukuje 33% szybciej (203 vs 152 mm/s), ma kolorowy dotykowy LCD 4,3", standardowy Ethernet i opcję RFID (ZD621R). ZD421t jest tańszy (od 1 649 PLN vs od 2 264 PLN) i ma modularną budowę snap-in. Dopłata za ZD621t z Ethernet to zaledwie 234 PLN. Szczegółowe porównanie z TCO na 3 lata: takma.com.pl/poradnik/zebra-zd421-vs-zd621-porownanie.',
+        answer: 'ZD621t to model premium w linii biurkowej Zebra: drukuje 33% szybciej (203 vs 152 mm/s), ma kolorowy dotykowy LCD 4,3", standardowy Ethernet i opcję RFID (ZD621R). ZD421t jest tańszy (od 1 649 PLN vs od 2 264 PLN) i ma modularną budowę snap-in. Dopłata za ZD621t z Ethernet to zaledwie 234 PLN. Szczegółowe porównanie z TCO na 3 lata: <a href="/poradnik/zebra-zd421-vs-zd621-porownanie">ZD421 vs ZD621</a>.',
       },
       {
         question: 'Jaką taśmę (ribbon) wybrać do Zebra ZD421t?',
@@ -1084,11 +1084,11 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Zebra ZD421t czy Honeywell PC45t — co wybrać?',
-        answer: 'Przy ~129 PLN różnicy (z Ethernet) ZD421t wygrywa ekosystemem Zebra (PrintDNA, MCS), natywnym ZPL II i dłuższą gwarancją (36 vs 24 mies.). PC45t wygrywa prędkością druku (+33%, 203 vs 152 mm/s) i ekranem dotykowym LCD 3,5". TCO na 3 lata jest niemal identyczne (~8 440 vs ~8 769 PLN). Szczegółowe porównanie z kalkulacją TCO: takma.com.pl/poradnik/zebra-zd421t-vs-honeywell-pc45t.',
+        answer: 'Przy ~129 PLN różnicy (z Ethernet) ZD421t wygrywa ekosystemem Zebra (PrintDNA, MCS), natywnym ZPL II i dłuższą gwarancją (36 vs 24 mies.). PC45t wygrywa prędkością druku (+33%, 203 vs 152 mm/s) i ekranem dotykowym LCD 3,5". TCO na 3 lata jest niemal identyczne (~8 440 vs ~8 769 PLN). Szczegółowe porównanie z kalkulacją TCO: <a href="/poradnik/zebra-zd421t-vs-honeywell-pc45t">ZD421t vs PC45t</a>.',
       },
       {
         question: 'Jakie są alternatywy dla Zebra ZD421t?',
-        answer: 'W wyższym segmencie: Zebra ZD621t (od 2 264 PLN — LCD 4,3", 203 mm/s, RFID; porównanie: takma.com.pl/poradnik/zebra-zd421-vs-zd621-porownanie). Cross-brand: Honeywell PC45t (od 2 159 PLN — ekran dotykowy 3,5", Ethernet w standardzie; porównanie: takma.com.pl/poradnik/zebra-zd421t-vs-honeywell-pc45t). W niższym budżecie: Zebra ZD220t (od 621 PLN, podstawowa termotransferowa).',
+        answer: 'W wyższym segmencie: <a href="/produkt/zebra-zd621t">Zebra ZD621t</a> (od 2 264 PLN — LCD 4,3", 203 mm/s, RFID; <a href="/poradnik/zebra-zd421-vs-zd621-porownanie">porównanie ZD421 vs ZD621</a>). Cross-brand: <a href="/produkt/honeywell-pc45t">Honeywell PC45t</a> (od 2 159 PLN — ekran dotykowy 3,5", Ethernet w standardzie; <a href="/poradnik/zebra-zd421t-vs-honeywell-pc45t">porównanie ZD421t vs PC45t</a>). W niższym budżecie: <a href="/produkt/zebra-zd220t">Zebra ZD220t</a> (od 621 PLN, podstawowa termotransferowa).',
       },
     ],
     comparison: {
@@ -1722,7 +1722,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     faq: [
       {
         question: 'Czym ZD621t różni się od ZD421t?',
-        answer: 'Zebra ZD621t to model premium, który przewyższa ZD421t w trzech kluczowych obszarach. Po pierwsze, prędkość druku: ZD621t drukuje z prędkością do 203 mm/s, podczas gdy ZD421t osiąga 152 mm/s — to o 33% więcej wydajności. Po drugie, wyświetlacz: ZD621t posiada kolorowy dotykowy LCD 4,3 cala z menu konfiguracyjnym, kreatorami i animacjami diagnostycznymi, podczas gdy ZD421t ma jedynie 5 diod LED i 3 przyciski. Po trzecie, łączność w standardzie: ZD621t ma wbudowany port Ethernet (LAN), RS-232, USB Host i Bluetooth LE 5, a w ZD421t Ethernet i RS-232 są opcjonalne. Oba modele obsługują taśmy 300 m, rozdzielczość do 300 dpi i platformę Link-OS. Szczegółowe porównanie z TCO na 3 lata: takma.com.pl/poradnik/zebra-zd421-vs-zd621-porownanie.',
+        answer: 'Zebra ZD621t to model premium, który przewyższa ZD421t w trzech kluczowych obszarach. Po pierwsze, prędkość druku: ZD621t drukuje z prędkością do 203 mm/s, podczas gdy ZD421t osiąga 152 mm/s — to o 33% więcej wydajności. Po drugie, wyświetlacz: ZD621t posiada kolorowy dotykowy LCD 4,3 cala z menu konfiguracyjnym, kreatorami i animacjami diagnostycznymi, podczas gdy ZD421t ma jedynie 5 diod LED i 3 przyciski. Po trzecie, łączność w standardzie: ZD621t ma wbudowany port Ethernet (LAN), RS-232, USB Host i Bluetooth LE 5, a w ZD421t Ethernet i RS-232 są opcjonalne. Oba modele obsługują taśmy 300 m, rozdzielczość do 300 dpi i platformę Link-OS. Szczegółowe porównanie z TCO na 3 lata: <a href="/poradnik/zebra-zd421-vs-zd621-porownanie">ZD421 vs ZD621</a>.',
       },
       {
         question: 'Czy ZD621t ma wyświetlacz?',
@@ -1762,7 +1762,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Jakie są alternatywy dla Zebra ZD621t?',
-        answer: 'W niższym budżecie: Zebra ZD421t (od 1 649 PLN — modularna, natywny ZPL II; porównanie: takma.com.pl/poradnik/zebra-zd421-vs-zd621-porownanie). Cross-brand: Honeywell PC45t (od 2 159 PLN — ekran dotykowy 3,5", 203 mm/s; porównanie: takma.com.pl/poradnik/zebra-zd421t-vs-honeywell-pc45t). Wersja termiczna: Zebra ZD621d. Segment przemysłowy: Zebra ZT231 (od 3 500 PLN).',
+        answer: 'W niższym budżecie: <a href="/produkt/zebra-zd421t">Zebra ZD421t</a> (od 1 649 PLN — modularna, natywny ZPL II; <a href="/poradnik/zebra-zd421-vs-zd621-porownanie">porównanie ZD421 vs ZD621</a>). Cross-brand: <a href="/produkt/honeywell-pc45t">Honeywell PC45t</a> (od 2 159 PLN — ekran dotykowy 3,5", 203 mm/s; <a href="/poradnik/zebra-zd421t-vs-honeywell-pc45t">porównanie ZD421t vs PC45t</a>). Wersja termiczna: <a href="/produkt/zebra-zd621d">Zebra ZD621d</a>. Segment przemysłowy: <a href="/produkt/zebra-zt231">Zebra ZT231</a> (od 3 500 PLN).',
       },
     ],
     comparison: {
