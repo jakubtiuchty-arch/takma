@@ -4500,11 +4500,11 @@ const industrialLightPrinters: Product[] = [
     slug: 'zebra-zt231',
     name: 'Zebra ZT231',
     shortDescription: 'Zebra ZT231 — drukarka przemysłowa 4" z kolorowym ekranem dotykowym 4,3", metalową konstrukcją i opcjonalnym RFID UHF, następca ZT230',
-    seoTitle: 'Drukarka etykiet Zebra ZT231 — półprzemysłowa RFID LCD | od 2 551 zł',
+    seoTitle: 'Zebra ZT231 — drukarka etykiet RFID LCD 4,3" | od 2 551 zł',
     seoDescription: 'Zebra ZT231 — półprzemysłowa 4" RFID dla logistyki, magazynów i dystrybucji. LCD 4,3", 304 mm/s. ZT23142-D0E000FZ od 2 551 zł netto.',
-    description: `Zebra ZT231 to najlepszy wybór dla firm produkcyjnych i magazynów przechodzących z drukarek biurkowych na przemysłowe, które potrzebują kompaktowej drukarki z ekranem dotykowym i metalową konstrukcją.
+    description: `Zebra ZT231 to najlepszy wybór dla firm produkcyjnych i magazynów przechodzących z biurkowych drukarek etykiet na przemysłowe, które potrzebują kompaktowej drukarki z ekranem dotykowym i metalową konstrukcją.
 
-Zebra ZT231 to drukarka przemysłowa klasy light-industrial zaprojektowana jako bezpośredni następca popularnego modelu ZT230. Łączy kompaktowe wymiary (432 × 241 × 279 mm) z wytrzymałą metalową ramą i metalowymi obudowami, zapewniając trwałość na poziomie klasy przemysłowej przy jednoczesnej oszczędności przestrzeni na stanowisku pracy. Dwuskrzydłowe drzwi mediów (bi-fold) wymagają jedynie 10 cm wolnej przestrzeni nad drukarką do otwarcia — idealne rozwiązanie do ciasnych pomieszczeń produkcyjnych i magazynowych.
+Zebra ZT231 to przemysłowa drukarka etykiet klasy light-industrial zaprojektowana jako bezpośredni następca popularnego modelu ZT230. Łączy kompaktowe wymiary (432 × 241 × 279 mm) z wytrzymałą metalową ramą i metalowymi obudowami, zapewniając trwałość na poziomie klasy przemysłowej przy jednoczesnej oszczędności przestrzeni na stanowisku pracy. Dwuskrzydłowe drzwi mediów (bi-fold) wymagają jedynie 10 cm wolnej przestrzeni nad drukarką do otwarcia — idealne rozwiązanie do ciasnych pomieszczeń produkcyjnych i magazynowych.
 
 Kolorowy dotykowy wyświetlacz 4,3" (resistive touch) z intuicyjnym menu umożliwia szybką konfigurację, dostęp do kreatorów ustawień i filmów instruktażowych. Trójkolorowe diody LED sygnalizują status drukarki na pierwszy rzut oka. Boczna ścieżka podawania materiałów z kolorowymi znacznikami upraszcza wymianę etykiet i ribbona — nawet dla niedoświadczonych operatorów.
 
@@ -4518,13 +4518,15 @@ Platforma Zebra Print DNA zapewnia kompletny zestaw narzędzi IT: Printer Profil
 
 Kluczowa przewaga ZT231 nad modelem ZT111: kolorowy ekran dotykowy 4,3" (vs monochromatyczny LCD), metalowe obudowy (vs plastikowe w ZT111), wyższa prędkość druku 304 mm/s (vs 254 mm/s), obsługa opcjonalnego kodowania RFID UHF i emulacja drukarek EPL/EPL2. ZT231 jest idealnym wyborem dla firm produkcyjnych, logistycznych i magazynowych, które potrzebują niezawodnej drukarki przemysłowej o kompaktowych wymiarach i intuicyjnej obsłudze — bez kompromisów w zakresie prędkości, jakości druku i możliwości rozbudowy.
 
+Zebra ZT231 to uniwersalna drukarka etykiet klasy light-industrial, która sprawdzi się jako drukarka kodów kreskowych w magazynach, centrach dystrybucyjnych i na liniach produkcyjnych. Jako drukarka termotransferowa obsługuje trwałe etykiety na taśmach woskowych, woskowo-żywicznych i żywicznych — od papierowych etykiet magazynowych po syntetyczne oznaczenia produktów. Jeśli potrzebujesz 600 dpi, linerless lub nawijaka full rewind, rozważ model [ZT411](/produkt/zebra-zt411) — pełne porównanie z cenami i TCO: [ZT231 vs ZT411](/poradnik/zebra-zt231-vs-zt411-porownanie).
+
 Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
-    priceFrom: 2551.10,
+    priceFrom: 2549.54,
     images: ['/images/products/zt231_1_s.png', '/images/products/zt231_2_s.png', '/images/products/zt231_3_s.png'],
     imageDescriptions: [
       'Zebra ZT231 — widok z przodu',
@@ -4701,8 +4703,16 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'Serwis przemysłowych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra z doświadczeniem w naprawach serii ZT. Oferuje naprawę głowic, wymianę wałków dociskowych, czyszczenie toru mediów i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis na miejscu u klienta (on-site) na terenie całej Polski.',
       },
       {
+        question: 'Ile kosztuje drukarka Zebra ZT231?',
+        answer: 'Zebra ZT231 jest dostępna w TAKMA od 2 550 zł netto (wariant DT 203 dpi). Cena zależy od konfiguracji: metody druku (termiczna DT od 2 550 zł / termotransfer TT od 2 675 zł), rozdzielczości (203 dpi / 300 dpi — dopłata ok. 800 zł), opcji mediów (odklejak +400 zł, gilotyna +1 100 zł, nawijak +800 zł) i Wi-Fi (+950 zł). Najdroższa konfiguracja (TT 300 dpi z Wi-Fi) to ok. 4 505 zł netto. Ceny netto, aktualne: marzec 2026.',
+      },
+      {
+        question: 'Jaka jest gwarancja na drukarkę Zebra ZT231?',
+        answer: 'Zebra ZT231 objęta jest 1-roczną gwarancją producenta na wady materiałowe i wykonanie. Gwarancję można rozszerzyć w ramach kontraktów Zebra OneCare Essential (serwis w centrum naprawczym) lub OneCare Select (wymiana urządzenia). Autoryzowany serwis drukarek Zebra w Polsce: serwis-zebry.pl.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZT231?',
-        answer: 'Alternatywami są: Zebra ZT411 (pełna przemysłowa), Honeywell PM45, TSC MH241T.',
+        answer: 'Alternatywami dla Zebra ZT231 w klasie light-industrial 4" są: Zebra ZT411 (droższa, ale z 600 dpi, linerless i 2-letnią gwarancją — pełne porównanie: [ZT231 vs ZT411](/poradnik/zebra-zt231-vs-zt411-porownanie)), Honeywell PM45 (porównywalny zakres, 600 dpi opcja), TSC MH241T (najniższa cena w segmencie) i Zebra ZT111 (tańsza, bez ekranu dotykowego i RFID). Wybór zależy od wolumenu druku, wymaganej rozdzielczości i budżetu.',
       },
     ],
     comparison: {
@@ -5008,8 +5018,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zt411',
     name: 'Zebra ZT411',
     shortDescription: 'Zebra ZT411 — przemysłowa drukarka etykiet 4" z ekranem dotykowym 4,3", następca ZT410. 203/300/600 dpi, do 356 mm/s, RFID opcja, Link-OS',
-    seoTitle: 'Zebra ZT411 — przemysłowa drukarka etykiet',
-    seoDescription: 'Zebra ZT411 — przemysłowa 4" RFID UHF dla produkcji, logistyki i pharma. 600 dpi, linerless. ZT41142-T0E0000Z od 5 131 zł netto.',
+    seoTitle: 'Zebra ZT411 — drukarka etykiet 600 dpi RFID | od 5 078 zł',
+    seoDescription: 'Zebra ZT411 — przemysłowa 4" RFID UHF dla produkcji, logistyki i pharma. 600 dpi, linerless. ZT41142-T0E0000Z od 5 078 zł netto.',
     description: `Zebra ZT411 to najlepszy wybór dla zakładów produkcyjnych i centrów logistycznych wymagających wytrzymałej drukarki etykiet przemysłowej klasy z rozdzielczością 203/300/600 dpi.
 
 Zebra ZT411 to przemysłowa drukarka etykiet klasy mid-range z kolorowym ekranem dotykowym 4,3" — bezpośredni następca legendarnego modelu Zebra ZT410. Zaprojektowana do intensywnej pracy w magazynach, centrach dystrybucyjnych i na liniach produkcyjnych, ZT411 łączy wytrzymałą metalową konstrukcję z intuicyjnym interfejsem dotykowym i platformą zarządzania Link-OS. Dostępna w trzech rozdzielczościach: 203 dpi (standard logistyczny, 356 mm/s), 300 dpi (drobne kody 2D i etykiety cenowe, 254 mm/s) i 600 dpi (mikro-etykiety elektroniczne i jubilerskie, 152 mm/s).
@@ -5022,7 +5032,9 @@ Platforma Link-OS umożliwia zdalne zarządzanie flotą drukarek z poziomu Print
 
 Opcje obsługi mediów: odklejak (peeler) do automatycznego odklejania etykiet od podłoża, gilotyna (cutter) do automatycznego cięcia, nawijak podkładu (liner takeup) i nawijak etykiet (full rewind). Wersje D9E wyposażone są w gilotynę linerless do druku etykiet bez podkładu. Dwuskrzydłowe drzwi mediów z dużym przezroczystym oknem ułatwiają załadunek i kontrolę poziomu materiałów.
 
-Podsumowanie: Dla kogo jest Zebra ZT411? To optymalny wybór dla firm potrzebujących drukarki przemysłowej z dotykowym ekranem, RFID i trzema rozdzielczościami — magazyny z dużym wolumenem etykiet (10 000+/dzień), centra dystrybucyjne, linie produkcyjne z etykietowaniem inline, farmacja i healthcare (etykiety laboratoryjne, banku krwi), retail (etykiety cenowe, compliance). Cena od 5 131 zł netto. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies z 20-letnim doświadczeniem w branży AutoID.
+Podsumowanie: Dla kogo jest Zebra ZT411? To optymalny wybór dla firm potrzebujących przemysłowej drukarki etykiet z dotykowym ekranem, RFID i trzema rozdzielczościami — magazyny z dużym wolumenem etykiet (10 000+/dzień), centra dystrybucyjne, linie produkcyjne z etykietowaniem inline, farmacja i healthcare (etykiety laboratoryjne, banku krwi), retail (etykiety cenowe, compliance). Cena od 5 078 zł netto. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies z 20-letnim doświadczeniem w branży AutoID.
+
+Zebra ZT411 to uniwersalna drukarka etykiet przemysłowa i drukarka kodów kreskowych dla wymagających środowisk produkcyjnych. Jako drukarka termotransferowa obsługuje wszystkie rodzaje taśm barwiących — od woskowych po żywiczne. To najczęściej wybierana drukarka przemysłowa Zebra 4" do intensywnego etykietowania. Porównanie z tańszym modelem ZT231 (ceny, TCO, scenariusze): [ZT231 vs ZT411](/poradnik/zebra-zt231-vs-zt411-porownanie).
 
 Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
 
@@ -5210,8 +5222,20 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'Serwis przemysłowych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra z doświadczeniem w naprawach serii ZT. Oferuje naprawę głowic, wymianę wałków dociskowych, czyszczenie toru mediów i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis na miejscu u klienta (on-site) na terenie całej Polski.',
       },
       {
+        question: 'Ile kosztuje drukarka Zebra ZT411?',
+        answer: 'Zebra ZT411 jest dostępna w TAKMA od 5 078 zł netto (wariant 203 dpi bazowy). Cena zależy od konfiguracji: rozdzielczości (203 dpi od 5 078 zł / 300 dpi od 6 098 zł / 600 dpi od 11 747 zł), opcji mediów (odklejak, gilotyna, nawijak, linerless) i Wi-Fi (+2 178 zł). Najdroższa konfiguracja (600 dpi z nawijakiem etykiet) to 12 854 zł netto. Ceny netto, aktualne: marzec 2026.',
+      },
+      {
+        question: 'Czy Zebra ZT411 drukuje etykiety linerless?',
+        answer: 'Tak — ZT411 jest jedyną drukarką Zebra w klasie ZT z obsługą druku linerless (bez podkładu). Warianty z oznaczeniem D9E (np. ZT41142-D9E0000Z) mają fabryczną gilotynę linerless i specjalny wałek anty-klejowy. Etykiety linerless redukują odpady o 40% i pozwalają zmieścić więcej etykiet na rolce — ekologiczne i ekonomiczne rozwiązanie dla dużych wolumenów.',
+      },
+      {
+        question: 'Jaka jest gwarancja na drukarkę Zebra ZT411?',
+        answer: 'Zebra ZT411 objęta jest 2-letnią gwarancją producenta na wady materiałowe i wykonanie — to dwa razy więcej niż w tańszych modelach ZT231 i ZT111 (1 rok). Gwarancję można rozszerzyć w ramach kontraktów Zebra OneCare Essential lub Select. Autoryzowany serwis drukarek Zebra w Polsce: serwis-zebry.pl.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZT411?',
-        answer: 'Alternatywami są: Zebra ZT421 (szersza, 6"), Honeywell PX940, TSC MH361T, SATO CL4NX Plus.',
+        answer: 'Alternatywami dla Zebra ZT411 w klasie przemysłowej 4" są: Zebra ZT421 (szersza, 6"/168 mm — do etykiet paletowych GS1), Zebra ZT610 (heavy-duty, 24/7, 1 GB RAM), Honeywell PX940 (wbudowana weryfikacja kodów kreskowych), TSC MH361T (najniższa cena w segmencie z 600 dpi) i SATO CL4NX Plus (popularna w automotive). Wybór zależy od wymaganej rozdzielczości, wolumenu i funkcji specjalnych.',
       },
     ],
     comparison: {
@@ -5243,7 +5267,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
             'RFID UHF': 'Opcja',
             'Pamięć Flash': '512 MB',
             'Waga': '12,5 kg',
-            'Cena od': '5 132 zł',
+            'Cena od': '5 078 zł',
           },
         },
         {
