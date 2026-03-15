@@ -572,6 +572,7 @@ export const guides: Guide[] = [
     { title: 'Drukarki przemysłowe', href: '/przemyslowe-drukarki-etykiet' },
     { title: 'Drukarki termiczne', href: '/termiczne-drukarki-etykiet' },
     { title: 'Drukarki termotransferowe', href: '/termotransferowe-drukarki-etykiet' },
+    { title: 'ZD421t vs Honeywell PC45t — porównanie', href: '/poradnik/zebra-zd421t-vs-honeywell-pc45t' },
     { title: 'Etykiety termiczne', href: '/etykiety-termiczne' },
     { title: 'Etykiety termotransferowe papierowe', href: '/etykiety-termotransferowe-papierowe' },
     { title: 'Taśmy termotransferowe (ribbony)', href: '/tasmy-termotransferowe' },
@@ -1008,6 +1009,7 @@ export const guides: Guide[] = [
   relatedLinks: [
     { title: 'Drukarki termiczne', href: '/termiczne-drukarki-etykiet' },
     { title: 'Drukarki termotransferowe', href: '/termotransferowe-drukarki-etykiet' },
+    { title: 'ZD421t vs PC45t — porównanie termotransferowych', href: '/poradnik/zebra-zd421t-vs-honeywell-pc45t' },
     { title: 'Etykiety termotransferowe', href: '/etykiety-termotransferowe-papierowe' },
     { title: 'Taśmy termotransferowe', href: '/tasmy-termotransferowe' },
   ]
@@ -1629,6 +1631,7 @@ export const guides: Guide[] = [
   relatedLinks: [
     { title: 'Drukarki biurkowe', href: '/biurkowe-drukarki-etykiet' },
     { title: 'Drukarki przemysłowe', href: '/przemyslowe-drukarki-etykiet' },
+    { title: 'ZD421t vs Honeywell PC45t — porównanie', href: '/poradnik/zebra-zd421t-vs-honeywell-pc45t' },
     { title: 'Etykiety termiczne', href: '/etykiety-termiczne' },
     { title: 'Etykiety termotransferowe', href: '/etykiety-termotransferowe-papierowe' },
     { title: 'Taśmy termotransferowe', href: '/tasmy-termotransferowe' },
@@ -5302,8 +5305,8 @@ export const guides: Guide[] = [
   slug: 'zebra-zd421t-vs-honeywell-pc45t',
   title: 'Zebra ZD421t vs Honeywell PC45t — porównanie drukarek etykiet 2026',
   seoTitle: 'Zebra ZD421t vs Honeywell PC45t — porównanie drukarek 2026',
-  seoDescription: 'Zebra ZD421t vs Honeywell PC45t — porównanie drukarek etykiet termotransferowych. Specyfikacja, TCO na 3 lata, serwis w Polsce. Ceny od 2 030 zł netto | TAKMA.',
-  excerpt: 'Zebra ZD421t (drukarka etykiet termotransferowa od 1 649 zł) vs Honeywell PC45t (drukarka biurkowa z ekranem LCD 3,5" od 2 159 zł) — porównanie specyfikacji, prędkości druku, łączności, TCO na 3 lata i serwisu w Polsce. Pierwszy tak szczegółowy poradnik porównawczy w języku polskim.',
+  seoDescription: 'Zebra ZD421t vs Honeywell PC45t — porównanie drukarek etykiet. Specyfikacja, TCO 3 lata, serwis w Polsce. Ceny od 2 030 zł netto | TAKMA.',
+  excerpt: 'Zebra ZD421t vs Honeywell PC45t — szczegółowe porównanie drukarek etykiet termotransferowych: specyfikacja, prędkość, TCO na 3 lata, serwis w Polsce. Ceny od 1 649 zł netto.',
   category: 'porownanie' as const,
   tags: ['drukarki-etykiet', 'porownanie', 'zebra', 'honeywell', 'termotransferowa', 'zd421t', 'pc45t', 'biurkowa', 'tco'],
   publishedAt: '2026-03-15',
@@ -5463,7 +5466,7 @@ export const guides: Guide[] = [
     {
       id: 'media-ribbon',
       heading: 'Media i ribbon — kompatybilność materiałów eksploatacyjnych',
-      content: `<p><strong>Obie drukarki etykiet termotransferowe drukują na standardowych rolkach 4"</strong> z rdzeniem 0,5" i 1", obsługują ribbon wax/wax-resin/resin do 110 mm × 300 m. Kompatybilność z etykietami: papier termiczny, powlekany, polipropylen, poliester — identyczny zakres.</p>
+      content: `<p><strong>Obie drukarki etykiet termotransferowe (thermal transfer) drukują na standardowych rolkach 4"</strong> z rdzeniem 0,5" i 1", obsługują ribbon wax/wax-resin/resin do 110 mm × 300 m. Kompatybilność z etykietami: papier termiczny, powlekany, polipropylen, poliester — identyczny zakres.</p>
 
 <h3>Wymiana ribbona i etykiet</h3>
 <ul>
@@ -5517,7 +5520,7 @@ export const guides: Guide[] = [
     {
       id: 'werdykt',
       heading: 'Werdykt: Zebra ZD421t czy Honeywell PC45t?',
-      content: `<p><strong>Podsumowanie porównania drukarek etykiet termotransferowych w 9 kategoriach:</strong></p>
+      content: `<p><strong>Podsumowanie porównania drukarek etykiet termotransferowych biurkowych w 9 kategoriach:</strong></p>
 
 <div style="overflow-x:auto">
 <table>
@@ -5572,7 +5575,7 @@ export const guides: Guide[] = [
     { question: 'Ile kosztuje Zebra ZD421t?', answer: 'Drukarka etykiet Zebra ZD421t: od 1 649 PLN netto (203 dpi, USB + BLE), 1 883 PLN (300 dpi, USB), 2 030 PLN (203 dpi, USB + Ethernet), 2 168 PLN (203 dpi, USB + BT + Wi-Fi), 2 252 PLN (300 dpi, USB + Ethernet), 2 454 PLN (300 dpi, USB + BT + Wi-Fi). Wszystkie ceny netto, aktualne na marzec 2026. Aktualne ceny: takma.com.pl/produkt/zebra-zd421t.' },
     { question: 'Ile kosztuje Honeywell PC45t?', answer: 'Drukarka etykiet Honeywell PC45t: od 2 159 PLN netto (203 dpi, USB + Ethernet), 2 298 PLN (300 dpi, USB + Ethernet), 2 371 PLN (203 dpi, USB + Ethernet + BT 5.2 + Wi-Fi 6). Ethernet w standardzie we wszystkich konfiguracjach. Ceny netto, aktualne na marzec 2026. Aktualne ceny: takma.com.pl/produkt/honeywell-pc45t.' },
     { question: 'Czy ZD421t to następca GK420t?', answer: 'Tak — Zebra ZD421t to oficjalny następca GK420t (EOL od 2021). Ten sam form factor biurkowy, natywny ZPL II, kompatybilne etykiety i ribbony. Migracja GK420t → ZD421t to wymiana 1:1 — zerowy koszt po stronie oprogramowania WMS. Ulepszenia: modularna budowa, Link-OS, PrintDNA, BT/BLE, szybsza kalibracja i zarządzanie z chmury (MCS).' },
-    { question: 'Jaka drukarka etykiet do magazynu — ZD421t czy PC45t?', answer: 'Do standardowego magazynu z systemem WMS rekomendujemy Zebra ZD421t — natywny ZPL II gwarantuje 100% kompatybilność z SAP, Comarch, Asseco i innymi WMS-ami w Polsce. PrintDNA umożliwia centralne zarządzanie flotą drukarek etykiet. Serwis w Polsce: serwis-zebry.pl. PC45t to dobra alternatywa, jeśli drukujesz >2 000 etykiet/zmianę (szybszy druk) lub potrzebujesz ekranu do konfiguracji bez IT.' },
+    { question: 'Jaka drukarka termotransferowa do magazynu — ZD421t czy PC45t?', answer: 'Do standardowego magazynu z systemem WMS rekomendujemy drukarkę termotransferową Zebra ZD421t — natywny ZPL II gwarantuje 100% kompatybilność z SAP, Comarch, Asseco i innymi WMS-ami w Polsce. PrintDNA umożliwia centralne zarządzanie flotą drukarek etykiet. Serwis w Polsce: serwis-zebry.pl. PC45t to dobra alternatywa, jeśli drukujesz >2 000 etykiet/zmianę (szybszy druk) lub potrzebujesz ekranu do konfiguracji bez IT.' },
     { question: 'Jaka drukarka termotransferowa do e-commerce?', answer: 'Do e-commerce (etykiety kurierskie, etykiety produktowe) rekomendujemy Zebra ZD421t od 1 649 PLN — najtańsze wejście w druk termotransferowy, natywny ZPL II, prosta integracja z Allegro, Shopify, WooCommerce. Jeśli drukujesz >3 000 przesyłek/dzień — Honeywell PC45t (szybszy druk 203 mm/s). Obie drukarki biurkowe obsługują etykiety kurierskie 100×150 mm.' },
     { question: 'Czy mogę drukować etykiety kurierskie na ZD421t i PC45t?', answer: 'Tak — obie drukarki etykiet obsługują etykiety kurierskie 100×150 mm (standardowy format DPD, InPost, DHL, UPS, FedEx, Poczta Polska). ZD421t drukuje do 104 mm szerokości, PC45t do 108 mm. Oba modele obsługują druk termiczny (bez ribbona, na etykietach termoczułych) i termotransferowy (z ribbonem, trwalszy wydruk). Do etykiet kurierskich wystarcza tryb termiczny.' },
     { question: 'Jakie są alternatywy dla ZD421t i PC45t?', answer: 'W niższym budżecie: Zebra ZD220t (od 621 PLN, podstawowa termotransferowa) lub Zebra ZD230d (od 659 PLN, termiczna). W wyższym segmencie: Zebra ZD621t (od 2 481 PLN, kolorowy LCD, 203 mm/s), Honeywell PC45d (wersja termiczna PC45). Porównanie wszystkich drukarek Zebra: <a href="/poradnik/drukarki-etykiet-zebra-przewodnik">przewodnik po drukarkach Zebra</a>.' }
@@ -5585,6 +5588,7 @@ export const guides: Guide[] = [
     { title: 'Drukarka termiczna vs termotransferowa', href: '/poradnik/drukarka-termiczna-vs-termotransferowa' },
     { title: 'Drukarki etykiet Zebra — przewodnik', href: '/poradnik/drukarki-etykiet-zebra-przewodnik' },
     { title: 'Zebra ZD220t — najtańsza termotransferowa', href: '/produkt/zebra-zd220t' },
+    { title: 'Zebra ZD421 vs ZD621 — porównanie', href: '/poradnik/zebra-zd421-vs-zd621-porownanie' },
     { title: 'Zebra ZD621t — premium biurkowa', href: '/produkt/zebra-zd621t' },
     { title: 'Biurkowe drukarki etykiet — pełna oferta', href: '/biurkowe-drukarki-etykiet' },
     { title: 'Serwis drukarek Zebra w Polsce', href: 'https://www.serwis-zebry.pl/serwis-drukarek-zebra' },
