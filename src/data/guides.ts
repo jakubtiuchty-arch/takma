@@ -5319,7 +5319,7 @@ export const guides: Guide[] = [
 <div style="overflow-x:auto">
 <table>
 <thead>
-<tr><th>Parametr</th><th>Zebra ZD421t</th><th>Honeywell PC45t</th></tr>
+<tr><th>Parametr</th><th><a href="/produkt/zebra-zd421t">Zebra ZD421t</a></th><th><a href="/produkt/honeywell-pc45t">Honeywell PC45t</a></th></tr>
 </thead>
 <tbody>
 <tr><td><strong>Cena (z Ethernet)</strong></td><td>od 2 030 PLN</td><td>od 2 159 PLN</td></tr>
@@ -5349,7 +5349,7 @@ export const guides: Guide[] = [
 <div style="overflow-x:auto">
 <table>
 <thead>
-<tr><th>Parametr</th><th>Zebra ZD421t</th><th>Honeywell PC45t</th></tr>
+<tr><th>Parametr</th><th><a href="/produkt/zebra-zd421t">Zebra ZD421t</a></th><th><a href="/produkt/honeywell-pc45t">Honeywell PC45t</a></th></tr>
 </thead>
 <tbody>
 <tr><td>Technologia</td><td>Termotransfer + termiczny</td><td>Termotransfer + termiczny</td></tr>
@@ -5522,7 +5522,7 @@ export const guides: Guide[] = [
 <div style="overflow-x:auto">
 <table>
 <thead>
-<tr><th>Kategoria</th><th>ZD421t</th><th>PC45t</th><th>Wygrywa</th></tr>
+<tr><th>Kategoria</th><th><a href="/produkt/zebra-zd421t">ZD421t</a></th><th><a href="/produkt/honeywell-pc45t">PC45t</a></th><th>Wygrywa</th></tr>
 </thead>
 <tbody>
 <tr><td>Cena (z Ethernet)</td><td>2 030 PLN</td><td>2 159 PLN</td><td>Remis (~129 PLN)</td></tr>
