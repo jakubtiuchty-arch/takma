@@ -54,10 +54,10 @@ const slides: HeroSlide[] = [
     name: 'Zebra DS8288',
     slug: 'zebra-ds8288',
     priceFrom: 2243,
-    imageClassName: 'object-contain object-right',
+    imageClassName: 'object-cover object-[center_30%]',
     imageType: 'packshot',
     noOverlay: true,
-    bgColor: '#2b2e31',
+    bgColor: '#191e22',
   },
 ]
 
