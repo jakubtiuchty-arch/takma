@@ -5030,7 +5030,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
-    priceFrom: 5131.84,
+    priceFrom: 5078.41,
     images: ['/images/products/zt411_1_s.png', '/images/products/zt411_2_s.png', '/images/products/zt411_3_s.png'],
     imageDescriptions: [
       'Drukarka przemysłowa Zebra ZT411 — widok z przodu z kolorowym ekranem dotykowym 4,3"',
