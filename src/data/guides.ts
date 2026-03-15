@@ -29,7 +29,6 @@ export interface Guide {
   updatedAt: string
   readTime: string
   heroImage?: string
-  heroImageBottom?: string // CSS bottom offset, e.g. '-22%', '0', '-30%' — individual per guide
   sections: GuideSection[]
   faq: GuideFAQ[]
   relatedLinks: GuideRelatedLink[]
@@ -3574,7 +3573,6 @@ export const guides: Guide[] = [
   updatedAt: '2026-03-13',
   readTime: '14 min',
   heroImage: '/images/guides/zebra-tc22-vs-tc27-hero.png',
-  heroImageBottom: '-17%',
   sections: [
     {
       id: 'podsumowanie',
@@ -4526,7 +4524,6 @@ export const guides: Guide[] = [
   updatedAt: '2026-03-13',
   readTime: '22 min',
   heroImage: '/images/guides/skanery-kodow-kreskowych-zebra-jak-wybrac-hero.png',
-  heroImageBottom: '-17%',
   sections: [
     {
       id: 'podsumowanie',
