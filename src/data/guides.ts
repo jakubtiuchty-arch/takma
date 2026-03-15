@@ -2180,7 +2180,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-02-24',
   updatedAt: '2026-03-15',
   readTime: '22 min',
-  heroImage: '/images/guides/top-10-terminali-mobilnych-2026.jpg',
+  heroImage: '/images/guides/top-15-kolektorow-danych-2026.png',
 
   sections: [
     {
