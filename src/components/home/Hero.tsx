@@ -41,12 +41,13 @@ const slides: HeroSlide[] = [
   },
   {
     type: 'product',
-    image: '/images/hero-zt411.jpeg',
-    name: 'Zebra ZT411',
-    slug: 'zebra-zt411',
-    tagline: 'Przemyslowa drukarka etykiet z rozdzielczoscia do 600 dpi i RFID. Bestseller do produkcji, magazynow i logistyki — 356 mm/s.',
-    imageClassName: 'object-contain scale-[1.3] translate-y-[3%]',
+    image: '/images/hero-zt231.webp',
+    name: 'Zebra ZT231',
+    slug: 'zebra-zt231',
+    tagline: 'Drukarka etykiet klasy light-industrial z ekranem dotykowym 4,3" i metalowa obudowa. Kompaktowa, 304 mm/s, RFID opcja — nastepca ZT230.',
     imageType: 'packshot',
+    noOverlay: true,
+    bgColor: '#090f0e',
   },
   {
     type: 'product',
