@@ -50,7 +50,7 @@ const slides: HeroSlide[] = [
   },
   {
     type: 'product',
-    image: '/images/hero-ct70.png',
+    image: '/images/hero-ct70.webp',
     name: 'Honeywell CT70',
     slug: 'honeywell-ct70',
     tagline: 'Pierwszy terminal enterprise z Wi-Fi 7 i Bluetooth 6.0. Ekran 6" FHD+, ladowanie bezprzewodowe Qi, Android 15-19.',
@@ -61,7 +61,7 @@ const slides: HeroSlide[] = [
   },
   {
     type: 'product',
-    image: '/images/hero-ds8208.png',
+    image: '/images/hero-ds8208.webp',
     name: 'Zebra DS8288',
     slug: 'zebra-ds8288',
     tagline: 'Bezprzewodowy skaner premium 2D z sensorem 2 MP i Bluetooth 5.2. Ladowanie indukcyjne, FIPS 140-3, gwarancja 3 lata.',
