@@ -4716,13 +4716,13 @@ export const guides: Guide[] = [
 {
   slug: 'zebra-tc501-vs-tc58',
   title: 'Zebra TC501 vs TC58 — porównanie kolektorów danych 2026',
-  seoTitle: 'Zebra TC501 vs TC58 — porównanie terminali mobilnych 2026 | RFID, AI, Wi-Fi 7',
-  seoDescription: 'Zebra TC501 vs TC58 — porównanie kolektorów danych: RFID UHF w standardzie, AI NPU, AMOLED 1500 nit, Wi-Fi 7, skaner AC670 30 m. TC501 od 3 730 zł, TC58 od 6 751 zł netto.',
+  seoTitle: 'Zebra TC501 vs TC58 — porównanie kolektorów danych 2026',
+  seoDescription: 'Zebra TC501 vs TC58: RFID, AI NPU, AMOLED 1500 nit, Wi-Fi 7, skaner 30 m. TC501 od 3 730 zł, TC58 od 6 751 zł. TCO, porównanie i rekomendacje TAKMA.',
   excerpt: 'Zebra TC501 (kolektor danych z AI i RFID od 3 730 zł) vs TC58 (terminal 5G od 6 751 zł) — porównanie procesorów, wyświetlaczy, skanerów, RFID, łączności, TCO na 5 lat i rekomendacje wg zastosowania. Pierwszy tak szczegółowy poradnik w języku polskim.',
   category: 'porownanie' as const,
-  tags: ['terminale-mobilne', 'porownanie', 'zebra', 'tc501', 'tc58', 'kolektor-danych', 'rfid', 'ai', 'tco', 'wifi-7', 'amoled', 'komputer-mobilny'],
+  tags: ['terminale-mobilne', 'porownanie', 'zebra', 'tc501', 'tc58', 'kolektor-danych', 'rfid', 'ai', 'tco', 'wifi-7', 'amoled', 'komputer-mobilny', 'magazyn', '5g'],
   publishedAt: '2026-03-14',
-  updatedAt: '2026-03-14',
+  updatedAt: '2026-03-15',
   readTime: '16 min',
   sections: [
     {
@@ -4813,7 +4813,7 @@ export const guides: Guide[] = [
     {
       id: 'skanery',
       heading: 'Skanery kodów kreskowych — AC670 (30 m) vs SE55 (12 m)',
-      content: `<p><strong>Zebra TC501 oferuje trzy silniki skanowania: SR500 (standard), SR560 (ulepszony 2D) i flagowy AC670 z zasięgiem do 30 m i kolorowym imagerem. TC58 ma dwa skanery: SE4720 (standard) i SE55 z IntelliFocus do 12 m.</strong></p>
+      content: `<p><strong>Kolektor danych Zebra TC501 oferuje trzy silniki skanowania: SR500 (standard), SR560 (ulepszony 2D) i flagowy AC670 z zasięgiem do 30 m i kolorowym imagerem. TC58 ma dwa skanery: SE4720 (standard) i SE55 z IntelliFocus do 12 m.</strong></p>
 
 <table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem">
 <thead><tr style="background:#1e3a5f;color:#fff"><th style="padding:10px 12px;text-align:left">Skaner</th><th style="padding:10px 12px;text-align:center">Terminal</th><th style="padding:10px 12px;text-align:center">Zasięg</th><th style="padding:10px 12px;text-align:center">Zastosowanie</th></tr></thead>
@@ -4938,7 +4938,7 @@ export const guides: Guide[] = [
     {
       id: 'tco',
       heading: 'TCO i cykl życia — Android 19 vs Android 16',
-      content: `<p><strong>Zebra TC501 z Android 15 i gwarancją aktualizacji do Android 19 oferuje minimum 8 lat wsparcia LifeGuard — 2× dłużej niż TC58 z Android do wersji 16. W kalkulacji 5-letniej TC501 jest tańszy w TCO mimo wyższej ceny WiFi-only.</strong></p>
+      content: `<p><strong>Kolektor danych Zebra TC501 z Android 15 i gwarancją aktualizacji do Android 19 oferuje minimum 8 lat wsparcia LifeGuard — 2× dłużej niż TC58 z Android do wersji 16. W kalkulacji 5-letniej TC501 jest tańszy w TCO mimo wyższej ceny WiFi-only.</strong></p>
 
 <h3>Cykl życia oprogramowania</h3>
 <table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem">
@@ -4970,7 +4970,7 @@ export const guides: Guide[] = [
     {
       id: 'akcesoria',
       heading: 'Akcesoria i kompatybilność — nowy ekosystem TC501 vs TC53/TC58',
-      content: `<p><strong>Zebra TC58 współdzieli akcesoria z TC53 (baterie, stacje ShareCradle, uchwyty, kabure) — ogromna zaleta dla firm z istniejącą flotą. TC501 ma zupełnie nowy ekosystem akcesoriów — baterie, stacje i obudowy NIE są kompatybilne z TC53/TC58.</strong></p>
+      content: `<p><strong>Kolektor danych Zebra TC58 współdzieli akcesoria z TC53 (baterie, stacje ShareCradle, uchwyty, kabure) — ogromna zaleta dla firm z istniejącą flotą. TC501 ma zupełnie nowy ekosystem akcesoriów — baterie, stacje i obudowy NIE są kompatybilne z TC53/TC58.</strong></p>
 
 <h3>Kompatybilność akcesoriów</h3>
 <table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem">
@@ -4991,8 +4991,8 @@ export const guides: Guide[] = [
     },
     {
       id: 'werdykt',
-      heading: 'Werdykt — Zebra TC501 czy TC58 w 2026 roku?',
-      content: `<p><strong>Zebra TC501 wygrywa w 9 na 10 kategorii: procesor, wyświetlacz, skaner, RFID, łączność, wytrzymałość, bateria, cykl życia i cena. TC58 ma jedną przewagę: pełną kompatybilność akcesoriów z TC53 dla firm z istniejącą flotą.</strong></p>
+      heading: 'Werdykt — który kolektor danych wybrać: Zebra TC501 czy TC58?',
+      content: `<p><strong>Kolektor danych Zebra TC501 wygrywa w 9 na 10 kategorii: procesor, wyświetlacz, skaner, RFID, łączność, wytrzymałość, bateria, cykl życia i cena. TC58 ma jedną przewagę: pełną kompatybilność akcesoriów z TC53 dla firm z istniejącym ekosystemem kolektorów danych Zebra.</strong></p>
 
 <h3>Wybierz Zebra TC501, jeśli:</h3>
 <ul>
@@ -5034,12 +5034,16 @@ export const guides: Guide[] = [
   ],
   faq: [
     {
-      question: 'Czym różni się Zebra TC501 od TC58?',
+      question: 'Co to jest Zebra TC501 (kolektor danych)?',
+      answer: 'Zebra TC501 to kolektor danych nowej generacji z wbudowanym RFID UHF, procesorem AI Dragonwing Q-6690 z NPU, ekranem AMOLED 1500 nit, Wi-Fi 7 i skanerem AC670 do 30 m — od 3 730 zł netto (5G) lub od 5 688 zł (WiFi). Premiera: 2025/2026. TC501 zastępuje linię TC52/TC53 i jest pierwszym terminalem enterprise z RFID w standardzie i AI on-device. Android 15 z gwarancją aktualizacji do v19 (~8 lat wsparcia LifeGuard). Dostępny w TAKMA — autoryzowany partner Zebra Technologies w Polsce.'
+    },
+    {
+      question: 'Czym różni się kolektor danych Zebra TC501 od TC58?',
       answer: 'TC501 to kolektor danych nowej generacji (2025/2026) z procesorem AI Dragonwing Q-6690, ekranem AMOLED 1500 nit, wbudowanym RFID UHF, Wi-Fi 7 i skanerem AC670 do 30 m. TC58 to sprawdzony terminal 5G (2023) z Qualcomm 6490, IPS 600 nit, Wi-Fi 6E i skanerem SE55 do 12 m. TC501 wygrywa w każdej kategorii poza kompatybilnością akcesoriów z TC53.'
     },
     {
       question: 'Ile kosztuje Zebra TC501 vs TC58?',
-      answer: 'Zebra TC501 5G (kolektor danych) startuje od 3 730 zł netto, wersje WiFi od 5 688 zł. Zebra TC58 kosztuje od 6 751 zł netto. TC501 jest paradoksalnie tańszy od starszego TC58, oferując więcej technologii (RFID, AI, AMOLED). Ceny netto, marzec 2026.'
+      answer: 'Zebra TC501 5G (kolektor danych) startuje od 3 730 zł netto, wersje WiFi od 5 688 zł (karta produktu: takma.com.pl/produkt/zebra-tc501). Zebra TC58 kosztuje od 6 751 zł netto (karta produktu: takma.com.pl/produkt/zebra-tc58). TC501 jest paradoksalnie tańszy od starszego TC58, oferując więcej technologii (RFID, AI, AMOLED). Ceny netto, marzec 2026.'
     },
     {
       question: 'Czy Zebra TC501 ma wbudowany RFID UHF?',
@@ -5071,7 +5075,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Który kolektor danych jest lepszy do magazynu: TC501 czy TC58?',
-      answer: 'Do nowego wdrożenia w magazynie — TC501: RFID do inwentaryzacji, skaner AC670 do 30 m na wysokie regały, AMOLED czytelny pod halogenami, AI do weryfikacji etykiet. Do rozbudowy istniejącej floty TC53/TC58 — TC58: te same baterie i stacje, zero kosztów migracji. TC501 jest lepszy merytorycznie i tańszy, ale wymaga nowej infrastruktury akcesoriów.'
+      answer: 'Do nowego wdrożenia w magazynie — kolektor danych TC501 (takma.com.pl/produkt/zebra-tc501): RFID do inwentaryzacji, skaner AC670 do 30 m na wysokie regały, AMOLED czytelny pod halogenami, AI do weryfikacji etykiet. Do rozbudowy istniejącej floty TC53/TC58 — TC58 (takma.com.pl/produkt/zebra-tc58): te same baterie i stacje, zero kosztów migracji. TC501 jest lepszy merytorycznie i tańszy, ale wymaga nowej infrastruktury akcesoriów.'
     },
     {
       question: 'Ile waży Zebra TC501 vs TC58?',
