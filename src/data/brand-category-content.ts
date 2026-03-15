@@ -1172,7 +1172,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       },
       {
         title: 'Honeywell RT10A vs Getac F110 / Panasonic FZ-G2 — cross-brand',
-        content: '| Parametr | [RT10A](/produkt/honeywell-rt10a) | Getac F110 G7 | Panasonic FZ-G2 |\n|---|---|---|---|\n| OS | Android | Windows 11 | Windows 11 |\n| Ekran | 10,1" 800 nit | 11,6" **1200 nit** | 10,1" ~1100 nit |\n| Skaner | **FlexRange 10,7 m** | ❌ Brak | ❌ Brak |\n| IP | IP65 | **IP66** | IP65 |\n| Drop | 1,2 m | **1,8 m** | 1,2 m |\n| Waga | 1 200 g | 1 490 g | ~1 200 g |\n| Cena od | 11 229 zł | ~10 300 zł | ~12 100 zł |\n\nRT10A wygrywa: **wbudowany FlexRange** (Getac/Panasonic wymagają zewnętrznego skanera BT za 2–5 tys. zł), ekosystem doków z RS-232/Ethernet, Mobility Edge. Getac/Panasonic: mocniejsze procesory Intel, jaśniejsze ekrany, lepsza wytrzymałość.',
+        content: '| Parametr | [RT10A](/produkt/honeywell-rt10a) | Getac F110 G7 | Panasonic FZ-G2 |\n|---|---|---|---|\n| OS | Android | Windows 11 | Windows 11 |\n| Ekran | 10,1" 800 nit | 11,6" **1200 nit** | 10,1" ~1100 nit |\n| Skaner | **FlexRange 10,7 m** | Brak | Brak |\n| IP | IP65 | **IP66** | IP65 |\n| Drop | 1,2 m | **1,8 m** | 1,2 m |\n| Waga | 1 200 g | 1 490 g | ~1 200 g |\n| Cena od | 11 229 zł | ~10 300 zł | ~12 100 zł |\n\nRT10A wygrywa: **wbudowany FlexRange** (Getac/Panasonic wymagają zewnętrznego skanera BT za 2–5 tys. zł), ekosystem doków z RS-232/Ethernet, Mobility Edge. Getac/Panasonic: mocniejsze procesory Intel, jaśniejsze ekrany, lepsza wytrzymałość.',
       },
     ],
     faq: [

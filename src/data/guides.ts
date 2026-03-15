@@ -5954,10 +5954,10 @@ export const guides: Guide[] = [
 <tr><td>Prędkość (300 dpi)</td><td>203 mm/s</td><td><strong>254 mm/s (+25%)</strong></td></tr>
 <tr><td>Rozdzielczość max</td><td>300 dpi</td><td><strong>600 dpi</strong></td></tr>
 <tr><td>Wyświetlacz</td><td>LCD 4,3" dotykowy</td><td>LCD 4,3" dotykowy</td></tr>
-<tr><td>Ethernet / RS-232</td><td>✅ Standard</td><td>✅ Standard</td></tr>
-<tr><td>Linerless</td><td>❌</td><td><strong>✅ Opcja</strong></td></tr>
-<tr><td>Nawijak etykiet (full rewind)</td><td>❌</td><td><strong>✅ Opcja</strong></td></tr>
-<tr><td>RFID UHF</td><td>✅ Opcja</td><td>✅ Opcja</td></tr>
+<tr><td>Ethernet / RS-232</td><td>Standard</td><td>Standard</td></tr>
+<tr><td>Linerless</td><td>—</td><td><strong>Opcja</strong></td></tr>
+<tr><td>Nawijak etykiet (full rewind)</td><td>—</td><td><strong>Opcja</strong></td></tr>
+<tr><td>RFID UHF</td><td>Opcja</td><td>Opcja</td></tr>
 <tr><td>Gwarancja</td><td>1 rok</td><td><strong>2 lata</strong></td></tr>
 </tbody>
 </table>
@@ -5984,30 +5984,30 @@ export const guides: Guide[] = [
 <tbody>
 <tr><td>Klasa</td><td>Light-industrial</td><td><strong>Mid-range industrial</strong></td></tr>
 <tr><td>Technologia</td><td>Termotransfer + DT</td><td>Termotransfer + DT</td></tr>
-<tr><td>Rozdzielczość</td><td>203 / 300 dpi</td><td>203 / 300 / <strong>600 dpi ✅</strong></td></tr>
-<tr><td>Prędkość (203 dpi)</td><td>304 mm/s (12 ips)</td><td><strong>356 mm/s (14 ips) ✅</strong></td></tr>
-<tr><td>Prędkość (300 dpi)</td><td>203 mm/s (8 ips)</td><td><strong>254 mm/s (10 ips) ✅</strong></td></tr>
+<tr><td>Rozdzielczość</td><td>203 / 300 dpi</td><td>203 / 300 / <strong>600 dpi</strong></td></tr>
+<tr><td>Prędkość (203 dpi)</td><td>304 mm/s (12 ips)</td><td><strong>356 mm/s (14 ips)</strong></td></tr>
+<tr><td>Prędkość (300 dpi)</td><td>203 mm/s (8 ips)</td><td><strong>254 mm/s (10 ips)</strong></td></tr>
 <tr><td>Prędkość (600 dpi)</td><td>—</td><td>152 mm/s (6 ips)</td></tr>
 <tr><td>Szer. druku</td><td>max. 104 mm</td><td>max. 104 mm</td></tr>
 <tr><td>Szer. etykiet</td><td>19,4–114 mm</td><td>25,4–114 mm</td></tr>
 <tr><td>Wyświetlacz</td><td>LCD 4,3" dotykowy</td><td>LCD 4,3" dotykowy</td></tr>
-<tr><td>USB / USB Host</td><td>✅ / ✅</td><td>✅ / ✅</td></tr>
-<tr><td>Ethernet</td><td>✅ Standard</td><td>✅ Standard</td></tr>
-<tr><td>RS-232</td><td>✅ Standard</td><td>✅ Standard</td></tr>
+<tr><td>USB / USB Host</td><td>Tak / Tak</td><td>Tak / Tak</td></tr>
+<tr><td>Ethernet</td><td>Standard</td><td>Standard</td></tr>
+<tr><td>RS-232</td><td>Standard</td><td>Standard</td></tr>
 <tr><td>Bluetooth</td><td>BLE (NFC Print Touch)</td><td>BT 4.1</td></tr>
 <tr><td>Wi-Fi</td><td>Opcja (802.11ac)</td><td>Opcja (802.11ac)</td></tr>
-<tr><td>RFID UHF</td><td>✅ Opcja</td><td>✅ Opcja</td></tr>
-<tr><td>RAM / Flash</td><td>256 / 256 MB</td><td>256 / <strong>512 MB ✅</strong></td></tr>
+<tr><td>RFID UHF</td><td>Opcja</td><td>Opcja</td></tr>
+<tr><td>RAM / Flash</td><td>256 / 256 MB</td><td>256 / <strong>512 MB</strong></td></tr>
 <tr><td>Rolka mediów</td><td>203 mm OD / 76 mm</td><td>203 mm OD / 76 mm</td></tr>
 <tr><td>Ribbon</td><td>450 m / 25,4 mm</td><td>450 m / 25,4 mm</td></tr>
-<tr><td>Odklejak / Gilotyna</td><td>✅ / ✅</td><td>✅ / ✅</td></tr>
-<tr><td>Nawijak etykiet (full rewind)</td><td>❌</td><td><strong>✅ Opcja ✅</strong></td></tr>
-<tr><td>Linerless</td><td>❌</td><td><strong>✅ Opcja ✅</strong></td></tr>
-<tr><td>Port LPT</td><td>❌</td><td>✅ Opcja</td></tr>
+<tr><td>Odklejak / Gilotyna</td><td>Tak / Tak</td><td>Tak / Tak</td></tr>
+<tr><td>Nawijak etykiet (full rewind)</td><td>—</td><td><strong>Opcja</strong></td></tr>
+<tr><td>Linerless</td><td>—</td><td><strong>Opcja</strong></td></tr>
+<tr><td>Port LPT</td><td>—</td><td>Opcja</td></tr>
 <tr><td>Wymiary (S×G×W)</td><td>432×241×279 mm</td><td>262×495×394 mm</td></tr>
-<tr><td>Waga</td><td><strong>9,1 kg ✅</strong></td><td>12,5 kg</td></tr>
-<tr><td>Gwarancja</td><td>1 rok</td><td><strong>2 lata ✅</strong></td></tr>
-<tr><td><strong>Cena od (TT 203 dpi)</strong></td><td><strong>2 675 PLN ✅</strong></td><td>5 078 PLN</td></tr>
+<tr><td>Waga</td><td><strong>9,1 kg</strong></td><td>12,5 kg</td></tr>
+<tr><td>Gwarancja</td><td>1 rok</td><td><strong>2 lata</strong></td></tr>
+<tr><td><strong>Cena od (TT 203 dpi)</strong></td><td><strong>2 675 PLN</strong></td><td>5 078 PLN</td></tr>
 </tbody>
 </table>
 </div>
@@ -6217,18 +6217,18 @@ export const guides: Guide[] = [
 <tr><th>Kategoria</th><th><a href="/produkt/zebra-zt231">ZT231</a></th><th><a href="/produkt/zebra-zt411">ZT411</a></th><th>Wygrywa</th></tr>
 </thead>
 <tbody>
-<tr><td>Cena (TT 203 dpi)</td><td>2 675 PLN</td><td>5 078 PLN</td><td><strong>ZT231 ✅</strong> (−47%)</td></tr>
-<tr><td>TCO 3 lata (2 000/dzień)</td><td>~12 455 PLN</td><td>~15 801 PLN</td><td><strong>ZT231 ✅</strong> (−27%)</td></tr>
-<tr><td>Prędkość (203 dpi)</td><td>304 mm/s</td><td>356 mm/s</td><td><strong>ZT411 ✅</strong> (+17%)</td></tr>
-<tr><td>Prędkość (300 dpi)</td><td>203 mm/s</td><td>254 mm/s</td><td><strong>ZT411 ✅</strong> (+25%)</td></tr>
-<tr><td>600 dpi</td><td>❌</td><td>✅</td><td><strong>ZT411 ✅</strong></td></tr>
-<tr><td>Linerless</td><td>❌</td><td>✅</td><td><strong>ZT411 ✅</strong></td></tr>
-<tr><td>Gwarancja</td><td>1 rok</td><td>2 lata</td><td><strong>ZT411 ✅</strong></td></tr>
+<tr><td>Cena (TT 203 dpi)</td><td>2 675 PLN</td><td>5 078 PLN</td><td><strong>ZT231</strong> (−47%)</td></tr>
+<tr><td>TCO 3 lata (2 000/dzień)</td><td>~12 455 PLN</td><td>~15 801 PLN</td><td><strong>ZT231</strong> (−27%)</td></tr>
+<tr><td>Prędkość (203 dpi)</td><td>304 mm/s</td><td>356 mm/s</td><td><strong>ZT411</strong> (+17%)</td></tr>
+<tr><td>Prędkość (300 dpi)</td><td>203 mm/s</td><td>254 mm/s</td><td><strong>ZT411</strong> (+25%)</td></tr>
+<tr><td>600 dpi</td><td>—</td><td>Tak</td><td><strong>ZT411</strong></td></tr>
+<tr><td>Linerless</td><td>—</td><td>Tak</td><td><strong>ZT411</strong></td></tr>
+<tr><td>Gwarancja</td><td>1 rok</td><td>2 lata</td><td><strong>ZT411</strong></td></tr>
 <tr><td>Wyświetlacz</td><td>LCD 4,3"</td><td>LCD 4,3"</td><td>Remis</td></tr>
 <tr><td>Łączność standardowa</td><td>USB+Eth+RS232+BLE</td><td>USB+Eth+RS232+BT</td><td>Remis</td></tr>
 <tr><td>RFID UHF</td><td>Opcja</td><td>Opcja</td><td>Remis</td></tr>
-<tr><td>Waga / kompaktowość</td><td>9,1 kg</td><td>12,5 kg</td><td><strong>ZT231 ✅</strong></td></tr>
-<tr><td>Nawijak etykiet (full rewind)</td><td>❌</td><td>✅</td><td><strong>ZT411 ✅</strong></td></tr>
+<tr><td>Waga / kompaktowość</td><td>9,1 kg</td><td>12,5 kg</td><td><strong>ZT231</strong></td></tr>
+<tr><td>Nawijak etykiet (full rewind)</td><td>—</td><td>Tak</td><td><strong>ZT411</strong></td></tr>
 </tbody>
 </table>
 </div>
