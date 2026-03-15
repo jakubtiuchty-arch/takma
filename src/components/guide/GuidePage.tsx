@@ -184,7 +184,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
               <img
                 src={guide.heroImage}
                 alt=""
-                className="absolute right-0 bottom-[20%] w-2/3 object-contain hidden sm:block"
+                className="absolute right-0 -bottom-[30%] w-2/3 object-contain hidden sm:block"
               />
               <div className="relative">
                 <nav className="container-main pt-4 pb-2" aria-label="Breadcrumb">
