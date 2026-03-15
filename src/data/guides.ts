@@ -6799,42 +6799,40 @@ export const guides: Guide[] = [
   <thead>
     <tr>
       <th>Model</th>
-      <th>Marka</th>
       <th>Cena od</th>
-      <th>Ekran</th>
       <th>IP / Upadek</th>
       <th>Klawiatura</th>
       <th>Segment inwentaryzacji</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td><a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93 Std+</a></td><td>Newland</td><td><span data-live-price="newland-mt93-megattera-standard-plus">2 207 zł</span></td><td>5,5"</td><td>IP67 / 1,5 m</td><td>—</td><td>Mały magazyn, budżet</td></tr>
-    <tr><td><a href="/produkt/zebra-mc2200">Zebra MC2200</a></td><td>Zebra</td><td><span data-live-price="zebra-mc2200">2 261 zł</span></td><td>4"</td><td>IP65 / 1,8 m</td><td>34-key</td><td>Legacy z klawiaturą</td></tr>
-    <tr><td><strong><a href="/produkt/zebra-tc22">Zebra TC22</a></strong></td><td>Zebra</td><td><span data-live-price="zebra-tc22">2 417 zł</span></td><td>6" FHD+</td><td>IP68 / 1,8 m</td><td>—</td><td><strong>Uniwersalny — bestseller</strong></td></tr>
-    <tr><td><a href="/produkt/zebra-mc2700">Zebra MC2700</a></td><td>Zebra</td><td><span data-live-price="zebra-mc2700">2 680 zł</span></td><td>4"</td><td>IP65 / 1,8 m</td><td>34-key + LTE</td><td>Legacy + teren</td></tr>
-    <tr><td><a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a></td><td>Datalogic</td><td><span data-live-price="datalogic-memor-12">2 687 zł</span></td><td>5"</td><td>IP65 / 1,5 m</td><td>—</td><td>Retail (najsmuklejszy)</td></tr>
-    <tr><td><a href="/produkt/zebra-tc27">Zebra TC27</a></td><td>Zebra</td><td><span data-live-price="zebra-tc27">2 690 zł</span></td><td>6" FHD+</td><td>IP68 / 1,8 m</td><td>—</td><td>Inwentaryzacja w terenie (5G)</td></tr>
-    <tr><td><a href="/produkt/zebra-em45">Zebra EM45</a></td><td>Zebra</td><td><span data-live-price="zebra-em45">2 951 zł</span></td><td>6,7"</td><td>IP68 / 1,5 m</td><td>—</td><td>Środki trwałe (50 MP kamera)</td></tr>
-    <tr><td><a href="/produkt/datalogic-memor-17">Datalogic Memor 17</a></td><td>Datalogic</td><td><span data-live-price="datalogic-memor-17">2 991 zł</span></td><td>5"</td><td>IP65 / 1,5 m</td><td>—</td><td>Retail 5G</td></tr>
-    <tr><td><a href="/produkt/newland-n7-cachalot-pro-ii">Newland N7 Cachalot</a></td><td>Newland</td><td><span data-live-price="newland-n7-cachalot-pro-ii">3 346 zł</span></td><td>4,3"</td><td>IP67 / 1,5 m</td><td>klawiatura</td><td>Magazyn z klawiaturą (budżet)</td></tr>
-    <tr><td><a href="/produkt/honeywell-ct32">Honeywell CT32</a></td><td>Honeywell</td><td><span data-live-price="honeywell-ct32">3 389 zł</span></td><td>5,5"</td><td>IP65 / 1,5 m</td><td>—</td><td>Magazyn (hot-swap)</td></tr>
-    <tr><td><a href="/produkt/newland-mt95-kambur-pro-ii">Newland MT95 Kambur</a></td><td>Newland</td><td><span data-live-price="newland-mt95-kambur-pro-ii">3 546 zł</span></td><td>6"</td><td>IP67 / 1,5 m</td><td>—</td><td>Teren 5G (budżetowy)</td></tr>
-    <tr><td><strong><a href="/produkt/zebra-tc501">Zebra TC501</a></strong></td><td>Zebra</td><td><span data-live-price="zebra-tc501">3 730 zł</span></td><td>6" AMOLED</td><td>IP68 / 2,4 m</td><td>—</td><td><strong>RFID inwentaryzacja</strong></td></tr>
-    <tr><td><a href="/produkt/zebra-tc701">Zebra TC701</a></td><td>Zebra</td><td>4 017 zł</td><td>6" AMOLED</td><td>IP68 / 3,66 m</td><td>—</td><td>RFID ultra-rugged</td></tr>
-    <tr><td><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a></strong></td><td>Zebra</td><td><span data-live-price="zebra-mc3400">4 561 zł</span></td><td>4"</td><td>IP67 / 2,4 m</td><td>3 klawiatury</td><td><strong>Duży magazyn — optymalny</strong></td></tr>
-    <tr><td><a href="/produkt/datalogic-skorpio-x5">Datalogic Skorpio X5</a></td><td>Datalogic</td><td><span data-live-price="datalogic-skorpio-x5">4 858 zł</span></td><td>4,3"</td><td>IP65 / 1,8 m</td><td>klawiatura</td><td>Magazyn gun (Datalogic)</td></tr>
-    <tr><td><a href="/produkt/datalogic-memor-30">Datalogic Memor 30</a></td><td>Datalogic</td><td><span data-live-price="datalogic-memor-30">4 869 zł</span></td><td>6"</td><td>IP68 / 1,8 m</td><td>—</td><td>Magazyn (Datalogic)</td></tr>
-    <tr><td><a href="/produkt/zebra-tc53e">Zebra TC53e</a></td><td>Zebra</td><td><span data-live-price="zebra-tc53e">4 926 zł</span></td><td>6"</td><td>IP68 / 1,8 m</td><td>—</td><td>Magazyn premium (opcja RFID)</td></tr>
-    <tr><td><a href="/produkt/zebra-mc3450">Zebra MC3450</a></td><td>Zebra</td><td><span data-live-price="zebra-mc3450">5 572 zł</span></td><td>4"</td><td>IP67 / 2,4 m</td><td>3 klawiatury + 5G</td><td>Duży magazyn + teren</td></tr>
-    <tr><td><a href="/produkt/honeywell-ck62">Honeywell CK62</a></td><td>Honeywell</td><td><span data-live-price="honeywell-ck62">5 759 zł</span></td><td>4"</td><td>IP65 / 1,8 m</td><td>klawiatura</td><td>Magazyn gun (Honeywell)</td></tr>
-    <tr><td><a href="/produkt/datalogic-memor-35">Datalogic Memor 35</a></td><td>Datalogic</td><td><span data-live-price="datalogic-memor-35">5 775 zł</span></td><td>6"</td><td>IP68 / 1,8 m</td><td>—</td><td>Premium (Datalogic)</td></tr>
-    <tr><td><a href="/produkt/zebra-mc3300x">Zebra MC3300x</a></td><td>Zebra</td><td><span data-live-price="zebra-mc3300x">5 779 zł</span></td><td>4"</td><td>IP64 / 1,8 m</td><td>3 klawiatury</td><td>Legacy (następca: MC3400)</td></tr>
-    <tr><td><a href="/produkt/honeywell-ct70">Honeywell CT70</a></td><td>Honeywell</td><td><span data-live-price="honeywell-ct70">6 383 zł</span></td><td>6"</td><td>IP68 / 1,8 m</td><td>—</td><td>Premium touch (Honeywell)</td></tr>
-    <tr><td><a href="/produkt/zebra-tc53">Zebra TC53</a></td><td>Zebra</td><td><span data-live-price="zebra-tc53">6 418 zł</span></td><td>6"</td><td>IP68 / 1,8 m</td><td>—</td><td>Premium touch (Zebra)</td></tr>
-    <tr><td><a href="/produkt/zebra-tc73">Zebra TC73</a></td><td>Zebra</td><td><span data-live-price="zebra-tc73">7 044 zł</span></td><td>6"</td><td>IP68 / 3,05 m</td><td>—</td><td>Ultra-rugged touch</td></tr>
-    <tr><td><a href="/produkt/zebra-mc9400">Zebra MC9400</a></td><td>Zebra</td><td><span data-live-price="zebra-mc9400">7 638 zł</span></td><td>3,5"</td><td>IP68 / 3,65 m</td><td>7 klawiatur</td><td><strong>Mroźnia / ultra-rugged</strong></td></tr>
-    <tr><td><a href="/produkt/honeywell-ck67">Honeywell CK67</a></td><td>Honeywell</td><td><span data-live-price="honeywell-ck67">7 765 zł</span></td><td>4"</td><td>IP65 / 1,8 m</td><td>klawiatura</td><td>Ultra-rugged gun (Honeywell)</td></tr>
-    <tr><td><a href="/produkt/honeywell-ct47">Honeywell CT47</a></td><td>Honeywell</td><td><span data-live-price="honeywell-ct47">7 901 zł</span></td><td>5,5"</td><td>IP68 / 1,8 m</td><td>—</td><td>Premium 5G (Honeywell)</td></tr>
+    <tr><td><a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93 Std+</a></td><td><span data-live-price="newland-mt93-megattera-standard-plus">2 207 zł</span></td><td>IP67 / 1,5 m</td><td>—</td><td>Mały magazyn, budżet</td></tr>
+    <tr><td><a href="/produkt/zebra-mc2200">Zebra MC2200</a></td><td><span data-live-price="zebra-mc2200">2 261 zł</span></td><td>IP65 / 1,8 m</td><td>34-key</td><td>Legacy z klawiaturą</td></tr>
+    <tr><td><strong><a href="/produkt/zebra-tc22">Zebra TC22</a></strong></td><td><span data-live-price="zebra-tc22">2 417 zł</span></td><td>IP68 / 1,8 m</td><td>—</td><td><strong>Uniwersalny — bestseller</strong></td></tr>
+    <tr><td><a href="/produkt/zebra-mc2700">Zebra MC2700</a></td><td><span data-live-price="zebra-mc2700">2 680 zł</span></td><td>IP65 / 1,8 m</td><td>34-key + LTE</td><td>Legacy + teren</td></tr>
+    <tr><td><a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a></td><td><span data-live-price="datalogic-memor-12">2 687 zł</span></td><td>IP65 / 1,5 m</td><td>—</td><td>Retail (najsmuklejszy)</td></tr>
+    <tr><td><a href="/produkt/zebra-tc27">Zebra TC27</a></td><td><span data-live-price="zebra-tc27">2 690 zł</span></td><td>IP68 / 1,8 m</td><td>—</td><td>Teren 5G</td></tr>
+    <tr><td><a href="/produkt/zebra-em45">Zebra EM45</a></td><td><span data-live-price="zebra-em45">2 951 zł</span></td><td>IP68 / 1,5 m</td><td>—</td><td>Środki trwałe (kamera 50 MP)</td></tr>
+    <tr><td><a href="/produkt/datalogic-memor-17">Datalogic Memor 17</a></td><td><span data-live-price="datalogic-memor-17">2 991 zł</span></td><td>IP65 / 1,5 m</td><td>—</td><td>Retail 5G</td></tr>
+    <tr><td><a href="/produkt/newland-n7-cachalot-pro-ii">Newland N7 Cachalot</a></td><td><span data-live-price="newland-n7-cachalot-pro-ii">3 346 zł</span></td><td>IP67 / 1,5 m</td><td>klawiatura</td><td>Magazyn z klawiaturą (budżet)</td></tr>
+    <tr><td><a href="/produkt/honeywell-ct32">Honeywell CT32</a></td><td><span data-live-price="honeywell-ct32">3 389 zł</span></td><td>IP65 / 1,5 m</td><td>—</td><td>Magazyn (hot-swap)</td></tr>
+    <tr><td><a href="/produkt/newland-mt95-kambur-pro-ii">Newland MT95 Kambur</a></td><td><span data-live-price="newland-mt95-kambur-pro-ii">3 546 zł</span></td><td>IP67 / 1,5 m</td><td>—</td><td>Teren 5G (budżetowy)</td></tr>
+    <tr><td><strong><a href="/produkt/zebra-tc501">Zebra TC501</a></strong></td><td><span data-live-price="zebra-tc501">3 730 zł</span></td><td>IP68 / 2,4 m</td><td>—</td><td><strong>RFID inwentaryzacja</strong></td></tr>
+    <tr><td><a href="/produkt/zebra-tc701">Zebra TC701</a></td><td>4 017 zł</td><td>IP68 / 3,66 m</td><td>—</td><td>RFID ultra-rugged</td></tr>
+    <tr><td><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a></strong></td><td><span data-live-price="zebra-mc3400">4 561 zł</span></td><td>IP67 / 2,4 m</td><td>3 klawiatury</td><td><strong>Duży magazyn — optymalny</strong></td></tr>
+    <tr><td><a href="/produkt/datalogic-skorpio-x5">Datalogic Skorpio X5</a></td><td><span data-live-price="datalogic-skorpio-x5">4 858 zł</span></td><td>IP65 / 1,8 m</td><td>klawiatura</td><td>Magazyn gun (Datalogic)</td></tr>
+    <tr><td><a href="/produkt/datalogic-memor-30">Datalogic Memor 30</a></td><td><span data-live-price="datalogic-memor-30">4 869 zł</span></td><td>IP68 / 1,8 m</td><td>—</td><td>Magazyn (Datalogic)</td></tr>
+    <tr><td><a href="/produkt/zebra-tc53e">Zebra TC53e</a></td><td><span data-live-price="zebra-tc53e">4 926 zł</span></td><td>IP68 / 1,8 m</td><td>—</td><td>Magazyn premium (opcja RFID)</td></tr>
+    <tr><td><a href="/produkt/zebra-mc3450">Zebra MC3450</a></td><td><span data-live-price="zebra-mc3450">5 572 zł</span></td><td>IP67 / 2,4 m</td><td>3 klawiatury + 5G</td><td>Duży magazyn + teren</td></tr>
+    <tr><td><a href="/produkt/honeywell-ck62">Honeywell CK62</a></td><td><span data-live-price="honeywell-ck62">5 759 zł</span></td><td>IP65 / 1,8 m</td><td>klawiatura</td><td>Magazyn gun (Honeywell)</td></tr>
+    <tr><td><a href="/produkt/datalogic-memor-35">Datalogic Memor 35</a></td><td><span data-live-price="datalogic-memor-35">5 775 zł</span></td><td>IP68 / 1,8 m</td><td>—</td><td>Premium (Datalogic)</td></tr>
+    <tr><td><a href="/produkt/zebra-mc3300x">Zebra MC3300x</a></td><td><span data-live-price="zebra-mc3300x">5 779 zł</span></td><td>IP64 / 1,8 m</td><td>3 klawiatury</td><td>Legacy (następca: MC3400)</td></tr>
+    <tr><td><a href="/produkt/honeywell-ct70">Honeywell CT70</a></td><td><span data-live-price="honeywell-ct70">6 383 zł</span></td><td>IP68 / 1,8 m</td><td>—</td><td>Premium touch (Honeywell)</td></tr>
+    <tr><td><a href="/produkt/zebra-tc53">Zebra TC53</a></td><td><span data-live-price="zebra-tc53">6 418 zł</span></td><td>IP68 / 1,8 m</td><td>—</td><td>Premium touch (Zebra)</td></tr>
+    <tr><td><a href="/produkt/zebra-tc73">Zebra TC73</a></td><td><span data-live-price="zebra-tc73">7 044 zł</span></td><td>IP68 / 3,05 m</td><td>—</td><td>Ultra-rugged touch</td></tr>
+    <tr><td><a href="/produkt/zebra-mc9400">Zebra MC9400</a></td><td><span data-live-price="zebra-mc9400">7 638 zł</span></td><td>IP68 / 3,65 m</td><td>7 klawiatur</td><td><strong>Mroźnia / ultra-rugged</strong></td></tr>
+    <tr><td><a href="/produkt/honeywell-ck67">Honeywell CK67</a></td><td><span data-live-price="honeywell-ck67">7 765 zł</span></td><td>IP65 / 1,8 m</td><td>klawiatura</td><td>Ultra-rugged gun (Honeywell)</td></tr>
+    <tr><td><a href="/produkt/honeywell-ct47">Honeywell CT47</a></td><td><span data-live-price="honeywell-ct47">7 901 zł</span></td><td>IP68 / 1,8 m</td><td>—</td><td>Premium 5G (Honeywell)</td></tr>
   </tbody>
 </table>
 
