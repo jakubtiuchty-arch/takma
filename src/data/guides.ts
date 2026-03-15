@@ -6281,6 +6281,7 @@ export const guides: Guide[] = [
 {
   slug: 'drukarka-zebra-baselinker-konfiguracja',
   title: 'Drukarka Zebra + BaseLinker — konfiguracja krok po kroku',
+  heroImage: '/images/guides/drukarka-zebra-baselinker.png',
   seoTitle: 'Drukarka Zebra + BaseLinker — konfiguracja krok po kroku',
   seoDescription: 'Jak skonfigurować drukarkę etykiet Zebra z BaseLinker? Poradnik krok po kroku: BL Printer, ZPL, etykiety 100x150. Polecane modele od 650 zł. TAKMA.',
   excerpt: 'Kompletny poradnik konfiguracji drukarki etykiet Zebra z platformą BaseLinker — od instalacji aplikacji BaseLinker Printer, przez ustawienia formatu etykiet 100x150 mm, po rozwiązywanie problemów z drukiem. Polecane modele Zebra do e-commerce z cenami 2026.',
