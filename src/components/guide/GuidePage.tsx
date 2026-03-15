@@ -180,12 +180,11 @@ export default function GuidePage({ guide }: GuidePageProps) {
           <>
             {/* Hero with background image */}
             <div className="relative bg-[#020102] overflow-hidden sm:min-h-[400px]">
-              {/* Background image — right-aligned, not cropped */}
+              {/* Background image — right-aligned, vertically centered, never cropped */}
               <img
                 src={guide.heroImage}
                 alt=""
-                style={{ bottom: guide.heroImageBottom || '-22%' }}
-                className="absolute right-0 w-2/3 object-contain hidden sm:block"
+                className="absolute right-0 top-0 h-full w-auto max-w-[70%] object-contain object-right hidden sm:block"
               />
               <div className="relative">
                 <nav className="container-main pt-4 pb-2" aria-label="Breadcrumb">
