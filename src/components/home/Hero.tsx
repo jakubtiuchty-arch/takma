@@ -131,16 +131,26 @@ export default function Hero() {
             isTransitioning ? 'opacity-0' : 'opacity-100'
           )}
         >
-          <Image
-            src={slide.image}
-            alt={slide.name}
-            fill
-            className={clsx(
-              !isLifestyle && !isBanner ? 'brightness-[1.3] contrast-[1.05]' : '',
-              slide.imageClassName
-            )}
-            priority={current <= 1}
-          />
+          {isBanner ? (
+            /* Banner mode — image right-aligned, full height, never cropped (like guide hero) */
+            /* eslint-disable-next-line @next/next/no-img-element */
+            <img
+              src={slide.image}
+              alt={slide.name}
+              className="absolute right-0 top-0 h-full w-auto max-w-[85%] object-contain object-right"
+            />
+          ) : (
+            <Image
+              src={slide.image}
+              alt={slide.name}
+              fill
+              className={clsx(
+                !isLifestyle ? 'brightness-[1.3] contrast-[1.05]' : '',
+                slide.imageClassName
+              )}
+              priority={current <= 1}
+            />
+          )}
         </div>
       )}
 
