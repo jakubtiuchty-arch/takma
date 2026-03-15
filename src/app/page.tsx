@@ -425,26 +425,49 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
-            {guides.slice(0, 3).map((guide, i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
+            {['jak-wybrac-terminal-mobilny', 'zebra-zd421-vs-zd621-porownanie', 'zebra-vs-honeywell-terminale-mobilne', 'skanery-kodow-kreskowych-zebra-przewodnik'].map(s => guides.find(g => g.slug === s)!).map((guide, i) => (
               <Link
                 key={guide.slug}
                 href={`/poradnik/${guide.slug}`}
-                className={`group bento-card p-6 lg:p-7 flex flex-col reveal reveal-delay-${Math.min(i + 1, 5)}`}
+                className={`group bento-card flex flex-col overflow-hidden reveal reveal-delay-${Math.min(i + 1, 5)}`}
               >
-                <span className="inline-flex self-start items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-50 text-primary-700 mb-4">
-                  {guideCategoryLabels[guide.category]}
-                </span>
-                <h3 className="font-bold text-gray-900 text-base mb-2 group-hover:text-primary-600 transition-colors leading-snug">
-                  {guide.title}
-                </h3>
-                <p className="text-sm text-gray-500 leading-relaxed line-clamp-3 mb-4 flex-1">
-                  {guide.excerpt}
-                </p>
-                <span className="text-sm font-medium text-primary-600 group-hover:text-primary-700 flex items-center gap-1.5 transition-colors mt-auto">
-                  Czytaj poradnik
-                  <ArrowRightIcon size={14} className="group-hover:translate-x-0.5 transition-transform" />
-                </span>
+                {guide.heroImage && (
+                  <div className="relative h-40 lg:h-48 bg-[#0a0a0a] overflow-hidden">
+                    <img
+                      src={guide.heroImage}
+                      alt=""
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: '100% center' }}
+                    />
+                    <span className={`absolute top-3 left-3 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold backdrop-blur-sm ${
+                      guide.category === 'poradnik' ? 'bg-blue-100/90 text-blue-700' :
+                      guide.category === 'porownanie' ? 'bg-amber-100/90 text-amber-700' :
+                      guide.category === 'przewodnik' ? 'bg-emerald-100/90 text-emerald-700' :
+                      guide.category === 'branzowy' ? 'bg-purple-100/90 text-purple-700' :
+                      guide.category === 'serwisowy' ? 'bg-rose-100/90 text-rose-700' :
+                      'bg-gray-100/90 text-gray-700'
+                    }`}>
+                      {guideCategoryLabels[guide.category]}
+                    </span>
+                  </div>
+                )}
+                <div className="p-5 lg:p-6 flex flex-col flex-1">
+                  {!guide.heroImage && (
+                    <span className="inline-flex self-start items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-50 text-primary-700 mb-4">
+                      {guideCategoryLabels[guide.category]}
+                    </span>
+                  )}
+                  <h3 className="font-bold text-gray-900 text-base mb-2 group-hover:text-primary-600 transition-colors leading-snug">
+                    {guide.title}
+                  </h3>
+                  <p className="text-sm text-gray-500 leading-relaxed line-clamp-3 mb-4 flex-1">
+                    {guide.excerpt}
+                  </p>
+                  <span className="text-sm font-medium text-primary-600 group-hover:text-primary-700 flex items-center gap-1.5 transition-colors mt-auto">
+                    Czytaj
+                    <ArrowRightIcon size={14} className="group-hover:translate-x-0.5 transition-transform" />
+                  </span>
+                </div>
               </Link>
             ))}
           </div>
