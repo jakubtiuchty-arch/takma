@@ -12,7 +12,7 @@ interface ProductSlide {
   image: string
   name: string
   slug: string
-  priceFrom: number
+  tagline: string
   imageClassName?: string
   /** 'lifestyle' = gradient od prawej, tekst po prawej; 'packshot' = gradient od lewej, tekst po lewej */
   imageType?: 'lifestyle' | 'packshot'
@@ -35,7 +35,7 @@ const slides: HeroSlide[] = [
     image: '/images/hero_tc501.jpeg',
     name: 'Zebra TC501',
     slug: 'zebra-tc501',
-    priceFrom: 3730,
+    tagline: 'Terminal mobilny z 5G i Wi-Fi 6E do magazynów i logistyki. Ekran 6", skaner FlexRange, IP68 — gotowy na najciezsze warunki.',
     imageClassName: 'object-cover object-[70%_center]',
     imageType: 'lifestyle',
   },
@@ -44,7 +44,7 @@ const slides: HeroSlide[] = [
     image: '/images/hero-zt411.jpeg',
     name: 'Zebra ZT411',
     slug: 'zebra-zt411',
-    priceFrom: 5078,
+    tagline: 'Przemyslowa drukarka etykiet z rozdzielczoscia do 600 dpi i RFID. Bestseller do produkcji, magazynow i logistyki — 356 mm/s.',
     imageClassName: 'object-contain scale-[1.3] translate-y-[3%]',
     imageType: 'packshot',
   },
@@ -53,7 +53,7 @@ const slides: HeroSlide[] = [
     image: '/images/hero-ct70.png',
     name: 'Honeywell CT70',
     slug: 'honeywell-ct70',
-    priceFrom: 6168,
+    tagline: 'Pierwszy terminal enterprise z Wi-Fi 7 i Bluetooth 6.0. Ekran 6" FHD+, ladowanie bezprzewodowe Qi, Android 15-19.',
     imageClassName: 'object-contain object-[70%_center]',
     imageType: 'packshot',
     noOverlay: true,
@@ -64,7 +64,7 @@ const slides: HeroSlide[] = [
     image: '/images/hero-ds8208.png',
     name: 'Zebra DS8288',
     slug: 'zebra-ds8288',
-    priceFrom: 2243,
+    tagline: 'Bezprzewodowy skaner premium 2D z sensorem 2 MP i Bluetooth 5.2. Ladowanie indukcyjne, FIPS 140-3, gwarancja 3 lata.',
     imageClassName: 'object-contain object-[75%_center]',
     imageType: 'packshot',
     noOverlay: true,
@@ -222,16 +222,12 @@ export default function Hero() {
             </>
           ) : (
             <>
-              <p className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-2">
+              <p className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-2 md:mb-3">
                 {slide.name}
               </p>
-              <div className="text-white/70 mb-4 md:mb-5">
-                <span className="text-xs md:text-sm">od </span>
-                <span className="text-xl md:text-2xl lg:text-3xl font-bold text-white">
-                  {slide.priceFrom.toLocaleString('pl-PL')} zł
-                </span>
-                <span className="text-xs md:text-sm"> netto</span>
-              </div>
+              <p className="text-sm md:text-base text-gray-300 max-w-md mb-4 md:mb-5 leading-relaxed">
+                {slide.tagline}
+              </p>
               <Link href={`/produkt/${slide.slug}`}>
                 <Button
                   size="md"
