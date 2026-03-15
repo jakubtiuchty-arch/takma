@@ -3396,6 +3396,7 @@ export const guides: Guide[] = [
   updatedAt: '2026-03-13',
   readTime: '14 min',
   heroImage: '/images/guides/zebra-tc22-vs-tc27-hero.png',
+  heroImageBottom: '-17%',
   sections: [
     {
       id: 'podsumowanie',
