@@ -97,6 +97,7 @@ const navigation: NavItem[] = [
       { name: 'TOP 10 terminali mobilnych 2026', href: '/poradnik/top-10-terminali-mobilnych-2026' },
       { name: 'Zebra vs Honeywell — porównanie', href: '/poradnik/zebra-vs-honeywell-terminale-mobilne' },
       { name: 'Drukarka Zebra + BaseLinker', href: '/poradnik/drukarka-zebra-baselinker-konfiguracja' },
+      { name: 'Kolektor danych do inwentaryzacji', href: '/poradnik/kolektor-danych-do-inwentaryzacji' },
     ],
   },
   {
