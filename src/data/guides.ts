@@ -518,7 +518,7 @@ export const guides: Guide[] = [
   faq: [
     {
       question: 'Jaka jest najlepsza drukarka etykiet do e-commerce i sklepu internetowego?',
-      answer: 'Dla sklepu internetowego drukującego do 200 etykiet kurierskich dziennie optymalnym wyborem jest Zebra ZD220d (od 621 PLN netto) — najtańsza 4-calowa drukarka termiczna Zebra, która drukuje etykiety InPost, DPD, DHL, UPS w formacie 100×150 mm z prędkością 102 mm/s. Przy wolumenie 200–1 000 paczek dziennie rekomendujemy Zebra ZD421d (od 1 330 PLN netto) z opcjonalnym Ethernet do współdzielenia drukarki między stanowiskami pakowania. Dla dużych fulfillmentów (1 000+ paczek/dzień) sprawdzi się Zebra ZD621t (od 2 048 PLN netto) z najszybszym drukiem w klasie biurkowej (203 mm/s) i wbudowanym Ethernet.'
+      answer: 'Dla sklepu internetowego drukującego do 200 etykiet kurierskich dziennie optymalnym wyborem jest Zebra ZD220d (od 621 PLN netto) — najtańsza 4-calowa drukarka termiczna Zebra, która drukuje etykiety InPost, DPD, DHL, UPS w formacie 100×150 mm z prędkością 102 mm/s. Przy wolumenie 200–1 000 paczek dziennie rekomendujemy Zebra ZD421d (od 1 330 PLN netto) z opcjonalnym Ethernet do współdzielenia drukarki między stanowiskami pakowania. Dla dużych fulfillmentów (1 000+ paczek/dzień) sprawdzi się Zebra ZD621t (od 2 048 PLN netto) z najszybszym drukiem w klasie biurkowej (203 mm/s) i wbudowanym Ethernet. Konfiguracja drukarki Zebra z BaseLinker: [poradnik krok po kroku](/poradnik/drukarka-zebra-baselinker-konfiguracja).'
     },
     {
       question: 'Ile kosztuje drukarka etykiet Zebra w 2026 roku?',
@@ -6276,6 +6276,375 @@ export const guides: Guide[] = [
     { title: 'ZD421t vs Honeywell PC45t', href: '/poradnik/zebra-zd421t-vs-honeywell-pc45t' },
     { title: 'Serwis drukarek Zebra', href: 'https://www.serwis-zebry.pl/serwis-drukarek-zebra' },
     { title: 'Przemysłowe drukarki etykiet', href: '/przemyslowe-drukarki-etykiet' },
+  ]
+},
+{
+  slug: 'drukarka-zebra-baselinker-konfiguracja',
+  title: 'Drukarka Zebra + BaseLinker — konfiguracja krok po kroku',
+  seoTitle: 'Drukarka Zebra + BaseLinker — konfiguracja krok po kroku',
+  seoDescription: 'Jak skonfigurować drukarkę etykiet Zebra z BaseLinker? Poradnik krok po kroku: BL Printer, ZPL, etykiety 100x150. Polecane modele od 650 zł. TAKMA.',
+  excerpt: 'Kompletny poradnik konfiguracji drukarki etykiet Zebra z platformą BaseLinker — od instalacji aplikacji BaseLinker Printer, przez ustawienia formatu etykiet 100x150 mm, po rozwiązywanie problemów z drukiem. Polecane modele Zebra do e-commerce z cenami 2026.',
+  category: 'poradnik',
+  tags: ['baselinker', 'konfiguracja', 'e-commerce', 'etykiety-kurierskie', 'drukarki-etykiet', 'zebra', 'inpost', 'dpd', 'dhl'],
+  publishedAt: '2026-03-15',
+  updatedAt: '2026-03-15',
+  readTime: '11 min',
+
+  sections: [
+    {
+      id: 'wprowadzenie',
+      heading: 'Dlaczego potrzebujesz drukarki etykiet do BaseLinkera?',
+      content: `<p>BaseLinker to dominująca platforma zarządzania zamówieniami e-commerce w Polsce — korzysta z niej ponad 50 000 aktywnych sklepów internetowych. Każdy z tych sklepów drukuje etykiety kurierskie InPost, DPD, DHL, UPS czy GLS — i wielu robi to na zwykłej drukarce laserowej A4. Efekt? Wolne drukowanie, marnowanie papieru (etykieta kurierska zajmuje 1/4 kartki A4), konieczność cięcia i ręcznego oklejania paczek. Przy 50 paczkach dziennie to strata 30-45 minut — a przy 200 paczkach robota na pełen etat.</p>
+
+<p><strong>Drukarka etykiet Zebra podłączona do BaseLinkera umożliwia druk etykiet kurierskich InPost, DPD, DHL i UPS jednym kliknięciem — bez pobierania PDF, bez drukarki A4 i bez cięcia papieru. Konfiguracja zajmuje 10 minut.</strong></p>
+
+<p>Drukarka etykiet drukuje bezpośrednio na samoprzylepnych etykietach 100x150 mm — standardowym formacie etykiet kurierskich w Polsce. Etykieta wychodzi z drukarki gotowa do naklejenia na paczkę. Drukarka Zebra obsługuje format ZPL (Zebra Programming Language) — natywny język drukarek Zebra, który BaseLinker generuje dla wybranych kurierów. Druk ZPL jest szybszy i ostrzejszy niż PDF, bo drukarka renderuje etykietę wewnętrznie bez konwersji na bitmapę.</p>
+
+<p>W tym poradniku przeprowadzę Cię przez konfigurację drukarki Zebra z BaseLinker krok po kroku: od wyboru modelu drukarki etykiet, przez instalację aplikacji BaseLinker Printer, po automatyzację druku etykiet i rozwiązywanie typowych problemów. Jeśli szukasz ogólnego poradnika wyboru — przeczytaj <a href="/poradnik/jak-wybrac-drukarke-etykiet">Jak wybrać drukarkę etykiet? Kompletny poradnik 2026</a>.</p>`
+    },
+    {
+      id: 'jaka-drukarka',
+      heading: 'Jaką drukarkę Zebra wybrać do BaseLinkera? Porównanie 7 modeli',
+      content: `<p>Nie każda drukarka etykiet Zebra nadaje się do tego samego scenariusza e-commerce. Wybór zależy od dziennego wolumenu paczek, sposobu podłączenia (USB vs Ethernet vs Wi-Fi) i tego, czy oprócz etykiet kurierskich drukujesz również etykiety produktowe. Poniżej porównanie 7 modeli drukarek Zebra do BaseLinkera — od najtańszej biurkowej po przemysłową.</p>
+
+<table style="width:100%">
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Typ druku</th>
+      <th>Cena od (netto)</th>
+      <th>Prędkość</th>
+      <th>Interfejsy</th>
+      <th>Dla kogo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/produkt/zebra-zd220d">Zebra ZD220d</a></td>
+      <td>Termiczna (DT)</td>
+      <td><span data-live-price="zebra-zd220d">650 zł</span></td>
+      <td>102 mm/s</td>
+      <td>USB</td>
+      <td>Start-up, do 100 paczek/dzień</td>
+    </tr>
+    <tr>
+      <td><a href="/produkt/zebra-zd230d">Zebra ZD230d</a></td>
+      <td>Termiczna (DT)</td>
+      <td><span data-live-price="zebra-zd230d">1 087 zł</span></td>
+      <td>152 mm/s</td>
+      <td>USB + Ethernet (opcja)</td>
+      <td>E-commerce, 100-300 paczek/dzień</td>
+    </tr>
+    <tr>
+      <td><a href="/produkt/zebra-zd421d">Zebra ZD421d</a></td>
+      <td>Termiczna (DT)</td>
+      <td><span data-live-price="zebra-zd421d">1 472 zł</span></td>
+      <td>152 mm/s</td>
+      <td>USB + MCS (Eth/WiFi)</td>
+      <td>Magazyn, 300-1000 paczek/dzień</td>
+    </tr>
+    <tr>
+      <td><a href="/produkt/zebra-zd421t">Zebra ZD421t</a></td>
+      <td>Termotransfer + DT</td>
+      <td><span data-live-price="zebra-zd421t">1 649 zł</span></td>
+      <td>152 mm/s</td>
+      <td>USB + MCS (Eth/WiFi)</td>
+      <td>Magazyn + etykiety produktowe</td>
+    </tr>
+    <tr>
+      <td><a href="/produkt/zebra-zd621t">Zebra ZD621t</a></td>
+      <td>Termotransfer + DT</td>
+      <td><span data-live-price="zebra-zd621t">2 264 zł</span></td>
+      <td>203 mm/s</td>
+      <td>USB + Ethernet (standard)</td>
+      <td>Fulfillment, 500+ paczek/dzień</td>
+    </tr>
+    <tr>
+      <td><a href="/produkt/zebra-zt231">Zebra ZT231</a></td>
+      <td>Termotransfer + DT</td>
+      <td><span data-live-price="zebra-zt231">2 551 zł</span></td>
+      <td>304 mm/s</td>
+      <td>USB + Ethernet + BLE</td>
+      <td>Centrum dystrybucyjne, 1000+ paczek/dzień</td>
+    </tr>
+    <tr>
+      <td><a href="/produkt/zebra-zt411">Zebra ZT411</a></td>
+      <td>Termotransfer + DT</td>
+      <td><span data-live-price="zebra-zt411">5 078 zł</span></td>
+      <td>356 mm/s</td>
+      <td>USB + Ethernet + BT 4.1</td>
+      <td>Mega-fulfillment, 3000+ paczek/dzień</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Który model drukarki Zebra do jakiego scenariusza?</h3>
+
+<p><strong>Do 100 paczek dziennie</strong> — <a href="/produkt/zebra-zd220d">Zebra ZD220d</a> (<span data-live-price="zebra-zd220d">650 zł</span> netto). Najtańsza drukarka etykiet Zebra z USB — podłączasz do komputera, instalujesz BaseLinker Printer i drukujesz. Wystarczająca do obsługi jednego stanowiska pakowania w małym e-commerce.</p>
+
+<p><strong>100-300 paczek dziennie</strong> — <a href="/produkt/zebra-zd230d">Zebra ZD230d</a> (<span data-live-price="zebra-zd230d">1 087 zł</span> netto). Szybsza od ZD220d (152 mm/s), z opcjonalnym modułem Ethernet do współdzielenia drukarki w sieci. Dobry wybór dla rosnącego sklepu internetowego.</p>
+
+<p><strong>300-1000 paczek dziennie</strong> — <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> (<span data-live-price="zebra-zd421d">1 472 zł</span> netto). Modularna drukarka do paczek z systemem MCS (Modular Connectivity Slot) — możesz dodać Ethernet lub Wi-Fi w dowolnym momencie. Druk sieciowy bez kabla USB do każdego komputera. Najlepsza drukarka etykiet do BaseLinkera w relacji cena/możliwości.</p>
+
+<p><strong>Etykiety kurierskie + produktowe</strong> — <a href="/produkt/zebra-zd421t">Zebra ZD421t</a> (<span data-live-price="zebra-zd421t">1 649 zł</span> netto). Drukarka termotransferowa — drukuje zarówno etykiety kurierskie termiczne, jak i trwałe etykiety produktowe z taśmą barwiącą. Jeden druk etykiet do dwóch zastosowań.</p>
+
+<p><strong>500+ paczek dziennie, fulfillment</strong> — <a href="/produkt/zebra-zd621t">Zebra ZD621t</a> (<span data-live-price="zebra-zd621t">2 264 zł</span> netto). Najszybsza biurkowa drukarka Zebra (203 mm/s) z kolorowym LCD, Ethernet w standardzie i platformą Link-OS do zarządzania flotą drukarek.</p>
+
+<p><strong>1000+ paczek dziennie, przemysłowa</strong> — <a href="/produkt/zebra-zt231">Zebra ZT231</a> (<span data-live-price="zebra-zt231">2 551 zł</span> netto). Drukarka przemysłowa z metalową obudową, prędkością 304 mm/s i ekranem dotykowym 4,3". Dla dużych centrów dystrybucyjnych pracujących wielozmianowo. Porównanie z ZT411: <a href="/poradnik/zebra-zt231-vs-zt411-porownanie">ZT231 vs ZT411 — porównanie przemysłowych</a>.</p>
+
+<h3>Rekomendacja TAKMA</h3>
+<p>Dla 90% sklepów internetowych korzystających z BaseLinkera optymalnym wyborem jest <strong><a href="/produkt/zebra-zd421d">drukarka Zebra ZD421d</a> z modułem Ethernet</strong> — druk etykiet sieciowy bez kabla USB do każdego komputera, modularność i niezawodność w cenie poniżej 1 800 zł netto. Do etykiet kurierskich wystarczy drukarka <strong>termiczna (DT)</strong> — nie potrzebujesz termotransferowej, chyba że drukujesz RÓWNIEŻ etykiety produktowe z trwałym nadrukiem.</p>`
+    },
+    {
+      id: 'co-potrzebujesz',
+      heading: 'Co potrzebujesz do konfiguracji? Checklist',
+      content: `<p>Zanim zaczniesz konfigurację drukarki Zebra z BaseLinker, upewnij się, że masz wszystko z poniższej listy:</p>
+
+<ol>
+  <li><strong>Drukarka etykiet Zebra</strong> — dowolny model 4-calowy (ZD220d, ZD230d, ZD421d/t, ZD621t, ZT231 lub ZT411)</li>
+  <li><strong>Kabel USB A-B</strong> — do podłączenia drukarki do komputera (dołączony do zestawu) lub <strong>kabel Ethernet RJ-45</strong> (dla modeli z portem sieciowym)</li>
+  <li><strong>Rolka etykiet termicznych 100x150 mm</strong> — standardowy format etykiet kurierskich InPost, DPD, DHL, UPS i GLS. Rdzeń 25 mm (drukarki biurkowe) lub 76 mm (drukarki przemysłowe)</li>
+  <li><strong>Komputer z Windows, macOS lub Linux</strong> — aplikacja BaseLinker Printer działa na wszystkich systemach</li>
+  <li><strong>Konto BaseLinker</strong> z aktywnym kontem kuriera (InPost, DPD, DHL, UPS, GLS, Poczta Polska)</li>
+  <li><strong>Aplikacja BaseLinker Printer</strong> — darmowa, pobierzesz ją w kroku 2</li>
+</ol>
+
+<p><strong>Opcjonalnie:</strong> Zebra Setup Utilities (sterownik i narzędzie konfiguracyjne) — potrzebne tylko jeśli chcesz zmienić ustawienia drukarki Zebra (prędkość, ciemność druku, tryb pracy) lub podłączyć drukarkę przez Wi-Fi. Do druku etykiet z BaseLinkera przez BaseLinker Printer sterownik Windows nie jest wymagany.</p>`
+    },
+    {
+      id: 'krok-1-podlaczenie',
+      heading: 'Krok 1: Podłączenie drukarki Zebra do komputera',
+      content: `<p>Podłącz drukarkę etykiet Zebra do komputera kablem USB lub do sieci kablem Ethernet. Wybierz metodę podłączenia odpowiednią do Twojego modelu drukarki i scenariusza pracy.</p>
+
+<h3>Podłączenie USB (najprostsze)</h3>
+<ul>
+  <li>Podłącz kabel USB A-B do drukarki Zebra i komputera</li>
+  <li><strong>Windows 10/11:</strong> sterownik instaluje się automatycznie. Na starszych wersjach zainstaluj Zebra Setup Utilities ze strony zebra.com</li>
+  <li><strong>macOS / Linux:</strong> drukarka jest rozpoznawana przez CUPS automatycznie — nie wymaga instalacji sterownika</li>
+  <li>Sprawdź: Panel Sterowania → Urządzenia i drukarki → drukarka Zebra ZDxxx powinna być widoczna</li>
+</ul>
+
+<h3>Podłączenie Ethernet (LAN) — rekomendowane dla wielu stanowisk</h3>
+<ul>
+  <li>Podłącz kabel sieciowy RJ-45 do portu Ethernet drukarki Zebra i do routera lub switcha</li>
+  <li>Drukarka automatycznie pobierze adres IP przez DHCP</li>
+  <li>Aby sprawdzić IP drukarki — przytrzymaj przycisk FEED na 3 sekundy (wydruk strony konfiguracji z adresem IP)</li>
+  <li>Wpisz adres IP drukarki w przeglądarce — zobaczysz stronę Zebra Print Server do zarządzania drukarką</li>
+</ul>
+
+<h3>Podłączenie Wi-Fi (tylko modele z modułem Wi-Fi)</h3>
+<ul>
+  <li>Skonfiguruj Wi-Fi przez Zebra Setup Utilities lub ekran dotykowy drukarki (modele z LCD)</li>
+  <li>Podaj SSID i hasło sieci Wi-Fi — drukarka połączy się automatycznie</li>
+  <li>Sprawdź: wydrukuj stronę konfiguracji (FEED 3 sek.) — adres IP Wi-Fi powinien być widoczny</li>
+</ul>
+
+<p><strong>Kalibracja czujników:</strong> Po włożeniu rolki etykiet 100x150 mm do drukarki Zebra — przytrzymaj przycisk FEED przez 5 sekund. Drukarka automatycznie skalibruje czujniki i rozpozna rozmiar etykiety. Bez kalibracji drukarka może przesuwać po 2 etykiety zamiast jednej.</p>`
+    },
+    {
+      id: 'krok-2-baselinker-printer',
+      heading: 'Krok 2: Instalacja i konfiguracja BaseLinker Printer',
+      content: `<p>BaseLinker Printer to darmowa aplikacja desktopowa, która umożliwia druk etykiet kurierskich jednym kliknięciem z panelu BaseLinker — bez pobierania pliku PDF na pulpit. Aplikacja działa w tle na komputerze podłączonym do drukarki etykiet i odbiera zlecenia druku automatycznie.</p>
+
+<h3>Instalacja BaseLinker Printer</h3>
+<ol>
+  <li>Zaloguj się do panelu BaseLinker → Ustawienia → Drukowanie → BaseLinker Printer</li>
+  <li>Pobierz aplikację BaseLinker Printer na Windows, macOS lub Linux</li>
+  <li>Zainstaluj i uruchom — ikona BL Printer pojawi się w zasobniku systemowym (system tray)</li>
+  <li>Kliknij "Set in App" w panelu BaseLinker — aplikacja automatycznie pobierze klucz API</li>
+  <li>W aplikacji BL Printer wybierz drukarkę Zebra z listy dostępnych drukarek</li>
+  <li>Kliknij "Zapisz" — drukarka Zebra jest teraz skonfigurowana z BaseLinker</li>
+</ol>
+
+<h3>Ustawienia druku etykiet w BaseLinker Printer</h3>
+<ul>
+  <li><strong>Rozmiar papieru:</strong> 100 x 150 mm (lub 4 x 6 cali)</li>
+  <li><strong>Orientacja:</strong> Portretowa (Portrait)</li>
+  <li><strong>Format wydruku:</strong> ZPL (jeśli dostępny dla danego kuriera) lub PDF</li>
+  <li><strong>Skalowanie:</strong> 100% (bez skalowania!) — drukarka Zebra drukuje w skali 1:1</li>
+</ul>
+
+<h3>Test druku etykiet z BaseLinkera</h3>
+<p>W panelu BaseLinker otwórz dowolne zamówienie → kliknij "Drukuj etykietę" → etykieta kurierska powinna wydrukować się bezpośrednio na drukarce Zebra. Jeśli drukarka etykiet nie drukuje — sprawdź sekcję <a href="#rozwiazywanie-problemow">rozwiązywanie problemów</a> poniżej.</p>
+
+<p><strong>Ważne:</strong> Aplikacja BaseLinker Printer musi być uruchomiona na komputerze, do którego podłączona jest drukarka etykiet. Z innych komputerów w sieci lokalna druk etykiet zlecany jest przez panel BaseLinker w przeglądarce — BL Printer na jednym komputerze odbiera i realizuje zlecenia.</p>`
+    },
+    {
+      id: 'krok-3-format-etykiet',
+      heading: 'Krok 3: Ustawienie formatu etykiet kurierskich 100x150 mm',
+      content: `<p>Prawidłowe ustawienie formatu etykiet kurierskich to najczęstszy problem przy konfiguracji drukarki Zebra z BaseLinker. Poniżej 3 najczęstsze problemy z formatem i ich rozwiązania.</p>
+
+<h3>Problem: zła skala wydruku (etykieta za mała lub za duża)</h3>
+<p>Najczęstsza przyczyna: rozmiar papieru w sterowniku Windows ustawiony na A4 lub Letter zamiast 100x150 mm. Rozwiązanie:</p>
+<ul>
+  <li>Windows: Preferencje drukowania → Rozmiar papieru → 100x150 mm (4x6 cali)</li>
+  <li>Zebra Setup Utilities: Media Size → Width: 4.00", Height: 6.00"</li>
+  <li>BaseLinker Printer: sprawdź, czy format strony nie jest "Dopasuj do papieru"</li>
+</ul>
+
+<h3>Problem: etykieta jest odwrócona o 90 stopni</h3>
+<p>BaseLinker generuje etykiety kurierskie w orientacji portretowej. Jeśli etykieta drukuje się obrócona:</p>
+<ul>
+  <li>Ustaw orientację na "Portretowa" (Portrait) w Preferencjach drukowania drukarki Zebra</li>
+  <li>Jeśli nadal obrócone: w ZPL sprawdź polecenie ^POI (Print Orientation Inverted) — zmień na ^PON (Normal)</li>
+</ul>
+
+<h3>Format ZPL vs PDF — co wybrać do druku etykiet?</h3>
+<p><strong>ZPL (zalecany):</strong> BaseLinker generuje kod ZPL → drukarka Zebra renderuje etykietę natywnie w pamięci → druk etykiet jest najszybszy i najostrzejszy. Idealne dla drukarek kodów kreskowych Zebra.</p>
+<p><strong>PDF:</strong> BaseLinker generuje plik PDF → sterownik Windows konwertuje na bitmapę → wolniejsze, ale bardziej uniwersalne. PDF jest OK dla drukarek bez obsługi ZPL.</p>
+<p><strong>Rekomendacja:</strong> Jeśli kurier obsługuje ZPL (InPost, UPS) — używaj ZPL. Dla DPD, DHL Express, GLS — PDF zapewnia pełną kompatybilność.</p>
+
+<h3>Standardowe formaty etykiet kurierskich w Polsce</h3>
+<table style="width:100%">
+  <thead>
+    <tr>
+      <th>Kurier</th>
+      <th>Format etykiety</th>
+      <th>ZPL</th>
+      <th>PDF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>InPost</td><td>100 x 150 mm</td><td>Tak</td><td>Tak</td></tr>
+    <tr><td>DPD</td><td>100 x 150 mm</td><td>—</td><td>Tak</td></tr>
+    <tr><td>DHL</td><td>100 x 150 mm</td><td>Tak</td><td>Tak</td></tr>
+    <tr><td>UPS</td><td>100 x 150 mm</td><td>Tak (natywnie)</td><td>Tak</td></tr>
+    <tr><td>GLS</td><td>100 x 150 mm</td><td>—</td><td>Tak</td></tr>
+    <tr><td>Poczta Polska / Pocztex</td><td>100 x 150 mm</td><td>—</td><td>Tak</td></tr>
+    <tr><td>Allegro One Fulfillment</td><td>100 x 150 mm</td><td>Tak</td><td>Tak</td></tr>
+  </tbody>
+</table>`
+    },
+    {
+      id: 'krok-4-automatyzacja',
+      heading: 'Krok 4: Automatyzacja druku etykiet — autoprint i profile pracowników',
+      content: `<p>Po skonfigurowaniu drukarki Zebra z BaseLinker możesz zautomatyzować druk etykiet — od automatycznego wydruku po zmianie statusu zamówienia po wielostanowiskowe drukowanie w magazynie.</p>
+
+<h3>Autoprint — automatyczny druk etykiet po zmianie statusu</h3>
+<p>BaseLinker pozwala skonfigurować automatyczny druk etykiet kurierskich po zmianie statusu zamówienia. Przykład: zamówienie zmienia status na "Do wysłania" → etykieta kurierska drukuje się automatycznie na drukarce Zebra bez żadnej interwencji operatora. Konfiguracja: BaseLinker → Automatyzacja → Akcja: Drukuj etykietę.</p>
+
+<h3>Profile pracowników — każdy drukuje na swojej drukarce</h3>
+<p>W dużym magazynie każdy pracownik może mieć przypisaną inną drukarkę etykiet:</p>
+<ul>
+  <li><strong>Stanowisko pakowania:</strong> drukarka etykiet kurierskich <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> — etykiety 100x150 mm</li>
+  <li><strong>Stanowisko magazynowe:</strong> drukarka etykiet lokacji <a href="/produkt/zebra-zd220d">Zebra ZD220d</a> — etykiety z kodami kreskowymi regałów</li>
+  <li><strong>Produkcja:</strong> drukarka etykiet produktowych <a href="/produkt/zebra-zt231">Zebra ZT231</a> — etykiety termotransferowe z trwałym nadrukiem</li>
+</ul>
+
+<h3>Wielostanowiskowe drukowanie etykiet</h3>
+<p>Drukarka Zebra z Ethernet lub Wi-Fi jest widoczna dla wszystkich komputerów w sieci lokalnej. BaseLinker Printer działa na jednym komputerze — ale druk etykiet można zlecać z dowolnego stanowiska przez panel BaseLinker w przeglądarce. Dla 3 i więcej stanowisk druku w magazynie rekomendujemy dedykowany serwer druku lub Print Server wbudowany w drukarkę Zebra (dostępny w modelach ZD421 i wyższych).</p>`
+    },
+    {
+      id: 'rozwiazywanie-problemow',
+      heading: 'Rozwiązywanie problemów — 7 najczęstszych błędów druku',
+      content: `<p>Po skonfigurowaniu drukarki etykiet Zebra z BaseLinker mogą pojawić się typowe problemy. Poniżej 7 najczęstszych błędów druku etykiet i ich rozwiązania — opracowane na podstawie wieloletniego doświadczenia serwisu <a href="https://www.serwis-zebry.pl/serwis-drukarek-zebra">serwis-zebry.pl</a>.</p>
+
+<h3>1. Etykieta jest pusta — nic się nie drukuje</h3>
+<p><strong>Przyczyna:</strong> włożona zła strona rolki etykiet termicznych. Drukarka termiczna drukuje na konkretnej (termoczułej) stronie etykiety.</p>
+<p><strong>Test:</strong> podrap etykietę paznokciem — strona, która ciemnieje to strona do druku. Jeśli nie ciemnieje — odwróć rolkę w drukarce.</p>
+
+<h3>2. Etykieta kurierska jest za mała lub skalowanie jest złe</h3>
+<p><strong>Przyczyna:</strong> rozmiar papieru w sterowniku ustawiony na A4 lub Letter zamiast 100x150 mm.</p>
+<p><strong>Rozwiązanie:</strong> Preferencje drukowania drukarki Zebra → Rozmiar papieru → 100 x 150 mm (4 x 6 cali). W Zebra Setup Utilities: Media Size → Width: 4.00", Height: 6.00".</p>
+
+<h3>3. Drukarka Zebra nie drukuje z BaseLinker Printer</h3>
+<p><strong>Przyczyna:</strong> aplikacja BL Printer nie jest uruchomiona na komputerze lub klucz API jest nieaktualny.</p>
+<p><strong>Rozwiązanie:</strong> zrestartuj BaseLinker Printer, sprawdź ikonę w zasobniku systemowym (tray), ponownie kliknij "Set in App" w panelu BaseLinker → Ustawienia → Drukowanie.</p>
+
+<h3>4. Etykieta drukuje się obrócona o 90 stopni</h3>
+<p><strong>Przyczyna:</strong> orientacja w sterowniku ustawiona na Landscape zamiast Portrait.</p>
+<p><strong>Rozwiązanie:</strong> Preferencje drukowania drukarki Zebra → Orientacja → Portretowa (Portrait).</p>
+
+<h3>5. Drukarka przesuwa 2 etykiety zamiast 1</h3>
+<p><strong>Przyczyna:</strong> czujniki drukarki nie są skalibrowane — drukarka Zebra nie rozpoznaje przerwy między etykietami.</p>
+<p><strong>Rozwiązanie:</strong> kalibracja automatyczna — przytrzymaj przycisk FEED przez 5 sekund. Jeśli nie pomoże: kalibracja ręczna przez Zebra Setup Utilities → Calibrate Media Sensor.</p>
+
+<h3>6. Druk etykiet jest blady lub nieczytelny</h3>
+<p><strong>Przyczyna:</strong> za niska temperatura głowicy drukującej lub zużyta głowica.</p>
+<p><strong>Rozwiązanie:</strong> zwiększ wartość "Darkness" (ciemność) w ustawieniach drukarki Zebra. Optymalnie: 15-20 dla etykiet termicznych. Jeśli po zwiększeniu Darkness druk nadal jest blady — głowica może być zużyta i wymaga wymiany.</p>
+
+<h3>7. "Drukarka offline" w BaseLinker Printer</h3>
+<p><strong>Przyczyna:</strong> kabel USB/Ethernet odłączony, drukarka wyłączona lub w trybie "Paused" w Windows.</p>
+<p><strong>Rozwiązanie:</strong> sprawdź kabel, zrestartuj drukarkę etykiet, w Windows: Urządzenia i drukarki → prawym przyciskiem na drukarkę Zebra → "Użyj drukarki online" (Use Printer Online).</p>`
+    },
+    {
+      id: 'rekomendowane-zestawy',
+      heading: 'Gotowe zestawy: drukarka Zebra + etykiety do BaseLinkera',
+      content: `<p>Nie wiesz, co wybrać? Poniżej 4 gotowe zestawy drukarek etykiet Zebra do BaseLinkera — dobrane do dziennego wolumenu paczek. Ceny netto (bez VAT 23%).</p>
+
+<h3>Zestaw START — do 100 paczek dziennie</h3>
+<ul>
+  <li><a href="/produkt/zebra-zd220d">Drukarka Zebra ZD220d</a> (<span data-live-price="zebra-zd220d">650 zł</span>) + 12 rolek etykiet termicznych 100x150 mm</li>
+  <li>Łącznie: ~800 zł netto</li>
+  <li>Podłączenie: USB — jedno stanowisko pakowania</li>
+</ul>
+
+<h3>Zestaw STANDARD — 100-500 paczek dziennie</h3>
+<ul>
+  <li><a href="/produkt/zebra-zd421d">Drukarka Zebra ZD421d</a> z Ethernet (<span data-live-price="zebra-zd421d">1 472 zł</span> + moduł Eth) + 24 rolki etykiet 100x150 mm</li>
+  <li>Łącznie: ~2 100 zł netto</li>
+  <li>Podłączenie: Ethernet — druk etykiet z wielu stanowisk przez sieć</li>
+</ul>
+
+<h3>Zestaw PRO — 500+ paczek dziennie</h3>
+<ul>
+  <li><a href="/produkt/zebra-zd621t">Drukarka Zebra ZD621t</a> (<span data-live-price="zebra-zd621t">2 264 zł</span>) + 48 rolek etykiet 100x150 mm + skaner kodów kreskowych</li>
+  <li>Łącznie: ~3 200 zł netto</li>
+  <li>Podłączenie: Ethernet — najszybsza biurkowa drukarka do paczek Zebra</li>
+</ul>
+
+<h3>Zestaw INDUSTRIAL — 1000+ paczek dziennie</h3>
+<ul>
+  <li><a href="/produkt/zebra-zt231">Drukarka przemysłowa Zebra ZT231</a> (<span data-live-price="zebra-zt231">2 551 zł</span>) + 96 rolek etykiet + skaner kodów kreskowych + stojak</li>
+  <li>Łącznie: ~4 000 zł netto</li>
+  <li>Podłączenie: Ethernet — centrum dystrybucyjne, praca wielozmianowa</li>
+</ul>
+
+<p>Potrzebujesz pomocy w doborze zestawu drukarki do paczek? <a href="/kontakt">Skontaktuj się z nami</a> — dobierzemy konfigurację drukarki Zebra i etykiet do Twojego wolumenu. TAKMA jest autoryzowanym partnerem Zebra Technologies od ponad 20 lat.</p>`
+    },
+    {
+      id: 'podsumowanie',
+      heading: 'Podsumowanie: drukarka Zebra + BaseLinker w 10 minut',
+      content: `<p>Konfiguracja drukarki etykiet Zebra z BaseLinker składa się z 4 prostych kroków: <strong>podłączenie drukarki</strong> (USB lub Ethernet), <strong>instalacja BaseLinker Printer</strong> (darmowa aplikacja), <strong>ustawienie formatu etykiet</strong> (100x150 mm) i opcjonalnie <strong>automatyzacja druku etykiet</strong> (autoprint po zmianie statusu zamówienia). Cały proces zajmuje 10 minut — a oszczędza godziny dziennie przy drukowaniu etykiet kurierskich.</p>
+
+<p><strong>Rekomendacja TAKMA:</strong> Zacznij od <a href="/produkt/zebra-zd421d">drukarki Zebra ZD421d</a> z modułem Ethernet — to złoty standard druku etykiet w polskim e-commerce. Modularność, niezawodność, druk sieciowy i cena poniżej 1 800 zł netto.</p>
+
+<p>TAKMA to autoryzowany partner Zebra Technologies z ponad 20-letnim doświadczeniem. Konfigurujemy drukarki Zebra pod BaseLinker, szkolimy operatorów, zapewniamy serwis gwarancyjny (<a href="https://www.serwis-zebry.pl/serwis-drukarek-zebra">serwis-zebry.pl</a>) i dostarczamy materiały eksploatacyjne. <a href="/kontakt">Zamów drukarkę etykiet z konfiguracją</a> — oszczędź czas i zacznij drukować etykiety kurierskie z BaseLinkera od razu.</p>
+
+<p>Przeczytaj również: <a href="/poradnik/jak-wybrac-drukarke-etykiet">Jak wybrać drukarkę etykiet? Kompletny poradnik 2026</a> | <a href="/poradnik/drukarka-termiczna-vs-termotransferowa">Drukarka termiczna vs termotransferowa</a> | <a href="/poradnik/drukarki-etykiet-zebra-przewodnik">Drukarki etykiet Zebra — przewodnik po seriach ZD i ZT</a></p>`
+    },
+  ],
+
+  faq: [
+    { question: 'Jak podłączyć drukarkę Zebra do BaseLinkera?', answer: 'Zainstaluj aplikację BaseLinker Printer na komputerze, podłącz drukarkę etykiet Zebra przez USB lub Ethernet, wybierz ją w ustawieniach BL Printer i ustaw format etykiet 100x150 mm. Konfiguracja drukarki Zebra z BaseLinker trwa 10 minut. Szczegółowa instrukcja krok po kroku w tym poradniku.' },
+    { question: 'Czy potrzebuję sterownika Windows do druku z BaseLinkera?', answer: 'Nie zawsze. BaseLinker Printer komunikuje się z drukarką etykiet bezpośrednio — do druku ZPL na drukarkach Zebra sterownik Windows nie jest wymagany. Sterownik potrzebny jest tylko jeśli drukujesz etykiety przez przeglądarkę (PDF) lub inne aplikacje poza BaseLinker.' },
+    { question: 'Jaki format etykiet kurierskich do BaseLinkera?', answer: 'Standard to 100x150 mm (4x6 cali) — obsługiwany przez InPost, DPD, DHL, UPS, GLS, Pocztex i Allegro One Fulfillment. Użyj etykiet termicznych na rolce z rdzeniem 25 mm (drukarki biurkowe Zebra ZD) lub 76 mm (drukarki przemysłowe Zebra ZT).' },
+    { question: 'Czy BaseLinker obsługuje druk ZPL na drukarkach Zebra?', answer: 'Tak — BaseLinker generuje etykiety kurierskie w formacie ZPL (natywny język drukarek Zebra) dla wybranych kurierów: InPost, UPS, DHL. Druk etykiet ZPL jest szybszy i ostrzejszy niż PDF, bo drukarka Zebra renderuje etykietę wewnętrznie bez konwersji na bitmapę.' },
+    { question: 'Dlaczego etykieta drukuje się za mała lub za duża?', answer: 'Najczęstsza przyczyna: rozmiar papieru w sterowniku drukarki ustawiony na A4 zamiast 100x150 mm. Rozwiązanie: Preferencje drukowania drukarki Zebra → Rozmiar papieru → 100x150 mm (lub 4x6 cali). W Zebra Setup Utilities: Media Size → Width: 4.00", Height: 6.00".' },
+    { question: 'Czy mogę drukować etykiety na wielu drukarkach jednocześnie z BaseLinkera?', answer: 'Tak — BaseLinker Printer obsługuje wiele drukarek etykiet podłączonych do jednego komputera. Każdy profil pracownika w BaseLinker może mieć przypisaną inną drukarkę (np. etykiety kurierskie na Zebra ZD421d, etykiety produktowe na Zebra ZD220t). Drukarka Zebra z Ethernet jest widoczna z dowolnego stanowiska.' },
+    { question: 'Czy drukarka Zebra działa z macOS i Linux?', answer: 'Tak — BaseLinker Printer jest dostępny na Windows, macOS i Linux. Na macOS i Linux drukarka etykiet Zebra jest rozpoznawana przez CUPS automatycznie — nie wymaga instalacji sterownika. Konfiguracja z BaseLinker jest analogiczna do Windows.' },
+    { question: 'Jaka najtańsza drukarka Zebra do BaseLinkera?', answer: 'Zebra ZD220d od 650 zł netto — najtańsza drukarka etykiet Zebra 4-calowa z USB, wystarczająca do druku etykiet kurierskich InPost, DPD i DHL przy wolumenie do 100 paczek dziennie. Idealna na start e-commerce z BaseLinker.' },
+    { question: 'Jaką drukarkę Zebra kupić do dużego e-commerce (500+ paczek/dzień)?', answer: 'Zebra ZD621t od 2 264 zł z wbudowanym Ethernet — najszybsza biurkowa drukarka etykiet Zebra (203 mm/s), kolorowy LCD, Link-OS do zarządzania flotą drukarek. Dla 1000+ paczek/dzień rozważ przemysłową drukarkę Zebra ZT231 (od 2 551 zł) z metalową obudową i prędkością 304 mm/s.' },
+    { question: 'Czy do etykiet kurierskich potrzebuję drukarki termotransferowej?', answer: 'Nie — do etykiet kurierskich 100x150 mm wystarczy drukarka termiczna (DT). Etykiety termiczne są tańsze i nie wymagają taśmy barwiącej (ribbona). Drukarkę termotransferową potrzebujesz tylko jeśli drukujesz RÓWNIEŻ etykiety produktowe, magazynowe lub z trwałym nadrukiem (odporne na ciepło i UV).' },
+    { question: 'Czy drukarka Zebra działa z InPost, DPD, DHL, UPS i GLS?', answer: 'Tak — wszystkie drukarki etykiet Zebra 4-calowe drukują etykiety kurierskie 100x150 mm generowane przez BaseLinker dla: InPost, DPD, DHL Express/eCommerce, UPS, GLS, FedEx, Poczta Polska/Pocztex i Allegro One Fulfillment.' },
+    { question: 'Czy mogę drukować etykiety Allegro z drukarki Zebra przez BaseLinker?', answer: 'Tak — jeśli korzystasz z BaseLinkera jako hub e-commerce, etykiety Allegro (InPost, DPD, DHL) generowane przez BaseLinker wydrukujesz bezpośrednio na drukarce etykiet Zebra jednym kliknięciem. BaseLinker obsługuje Allegro, Amazon, eBay i dziesiątki innych marketplace.' },
+    { question: 'Jak wyczyścić drukarkę Zebra, żeby nie brudziła etykiet?', answer: 'Czyść głowicę drukującą alkoholem izopropylowym (IPA 99%) co 5 rolek etykiet. Użyj wacika nasączonego IPA, przetrzyj głowicę i wałek dociskowy. Zebra oferuje też dedykowane chusteczki czyszczące. Regularne czyszczenie drukarki etykiet przedłuża żywotność głowicy 2-3x. Więcej na serwis-zebry.pl.' },
+    { question: 'Co to jest BaseLinker Printer i czy jest darmowy?', answer: 'BaseLinker Printer to darmowa aplikacja desktopowa (Windows/macOS/Linux), która umożliwia druk etykiet kurierskich jednym kliknięciem z panelu BaseLinker bez pobierania pliku PDF. Aplikacja działa w tle i odbiera zlecenia druku automatycznie — wystarczy że jest uruchomiona na komputerze z podłączoną drukarką Zebra.' },
+    { question: 'Gdzie kupić drukarkę Zebra do BaseLinkera z konfiguracją?', answer: 'TAKMA (takma.com.pl) to autoryzowany partner Zebra Technologies z ponad 20-letnim doświadczeniem. Oferujemy doradztwo w doborze modelu drukarki etykiet, konfigurację drukarki Zebra pod BaseLinker, szkolenie operatorów i serwis gwarancyjny drukarek Zebra w Polsce (serwis-zebry.pl).' },
+    { question: 'Jakie są alternatywy dla drukarek Zebra do BaseLinkera?', answer: 'BaseLinker współpracuje z każdą drukarką etykiet rozpoznawaną przez system operacyjny. Alternatywy to Honeywell PC45t (od 2 152 zł, termotransfer + Ethernet) i Datalogic (modele rzadkie w PL). W praktyce drukarki Zebra dominują w polskim e-commerce ze względu na niezawodność, szeroki wybór modeli od 650 zł i natywną obsługę ZPL w BaseLinker.' },
+  ],
+
+  relatedLinks: [
+    { title: 'Jak wybrać drukarkę etykiet? Poradnik 2026', href: '/poradnik/jak-wybrac-drukarke-etykiet' },
+    { title: 'Drukarka termiczna vs termotransferowa', href: '/poradnik/drukarka-termiczna-vs-termotransferowa' },
+    { title: 'ZD421t vs Honeywell PC45t — porównanie', href: '/poradnik/zebra-zd421t-vs-honeywell-pc45t' },
+    { title: 'ZD421 vs ZD621 — porównanie biurkowych', href: '/poradnik/zebra-zd421-vs-zd621-porownanie' },
+    { title: 'ZT231 vs ZT411 — porównanie przemysłowych', href: '/poradnik/zebra-zt231-vs-zt411-porownanie' },
+    { title: 'Drukarki etykiet Zebra — przewodnik', href: '/poradnik/drukarki-etykiet-zebra-przewodnik' },
+    { title: 'Zebra ZD220d — karta produktu', href: '/produkt/zebra-zd220d' },
+    { title: 'Zebra ZD421d — karta produktu', href: '/produkt/zebra-zd421d' },
+    { title: 'Zebra ZD621t — karta produktu', href: '/produkt/zebra-zd621t' },
+    { title: 'Zebra ZT231 — karta produktu', href: '/produkt/zebra-zt231' },
   ]
 }
 ]

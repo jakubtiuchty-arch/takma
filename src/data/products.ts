@@ -1356,6 +1356,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         question: 'Jakie są alternatywy dla Zebra ZD421d?',
         answer: 'Alternatywami są: Zebra ZD621d (wyższa klasa), Honeywell PC43d, TSC DA320.',
       },
+      {
+        question: 'Jak podłączyć Zebra ZD421d do BaseLinkera?',
+        answer: 'Zebra ZD421d z modułem Ethernet to rekomendowany model do BaseLinker — podłącz drukarki przez sieć LAN, zainstaluj BaseLinker Printer na dowolnym komputerze i drukuj etykiety kurierskie z każdego stanowiska. Pełna instrukcja: [Drukarka Zebra + BaseLinker — konfiguracja krok po kroku](/poradnik/drukarka-zebra-baselinker-konfiguracja).',
+      },
     ],
     comparison: {
       title: 'Porównanie drukarek termicznych biurkowych Zebra 4" — ZD220d vs ZD230d vs ZD421d',
@@ -1767,6 +1771,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       {
         question: 'Ile kosztuje Zebra ZD621t?',
         answer: 'Zebra ZD621t kosztuje od 2 264 PLN netto (203 dpi, bez LCD, ZD6A042-30EF00EZ). Kluczowe konfiguracje: z LCD 4,3" od 2 571 PLN, z odklejakiem od 2 465 PLN, z gilotyną od 2 954 PLN, 300 dpi od 2 571 PLN. Topowa konfiguracja 300 dpi + LCD + BT/Wi-Fi + gilotyna: 4 180 PLN. Dopłata za LCD: +307 PLN, za odklejak: +201 PLN, za gilotynę: +690 PLN, za 300 dpi: +307 PLN. Wszystkie 20 wariantów dostępnych od ręki.',
+      },
+      {
+        question: 'Jak skonfigurować Zebra ZD621t z BaseLinker?',
+        answer: 'Zebra ZD621t z Ethernet w standardzie idealnie współpracuje z BaseLinker — druk etykiet kurierskich jednym kliknięciem przez sieć. Najszybsza biurkowa drukarka Zebra (203 mm/s) do fulfillment 500+ paczek/dzień. Konfiguracja BaseLinker krok po kroku: [Drukarka Zebra + BaseLinker — konfiguracja](/poradnik/drukarka-zebra-baselinker-konfiguracja).',
       },
     ],
     comparison: {
@@ -2831,6 +2839,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       {
         question: 'Jakie są alternatywy dla Zebra ZD220d?',
         answer: 'Alternatywami są: Zebra ZD421d (wyższa klasa z LCD), Honeywell PC42d, Brother TD-4520DN, TSC DA220. W ramach Zebra — ZD230d oferuje tę samą funkcjonalność w niższej cenie.',
+      },
+      {
+        question: 'Jak skonfigurować Zebra ZD220d z BaseLinker?',
+        answer: 'Podłącz drukarkę Zebra ZD220d przez USB, zainstaluj aplikację BaseLinker Printer, wybierz drukarkę z listy i ustaw format etykiet 100x150 mm. Konfiguracja trwa 10 minut. Pełna instrukcja krok po kroku: [Drukarka Zebra + BaseLinker — konfiguracja](/poradnik/drukarka-zebra-baselinker-konfiguracja).',
       },
     ],
     comparison: {

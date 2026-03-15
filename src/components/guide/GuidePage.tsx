@@ -109,28 +109,51 @@ export default function GuidePage({ guide }: GuidePageProps) {
     }
   })() : null
 
-  // JSON-LD: HowTo (for step-by-step sections like "Jak wdrożyć...")
-  const howToSection = guide.sections.find(s => s.id === 'wdrozenie')
-  const howToJsonLd = howToSection ? (() => {
-    const stepMatches = howToSection.content.match(/<h3>Krok \d+:[^<]*<\/h3>\s*<p>([^<]*(?:<[^/][^>]*>[^<]*)*)<\/p>/g)
-    if (!stepMatches || stepMatches.length === 0) return null
-    return {
-      '@context': 'https://schema.org',
-      '@type': 'HowTo',
-      name: howToSection.heading,
-      description: 'Krok po kroku: jak prawidłowo wdrożyć terminale mobilne w firmie — od audytu procesów po monitoring.',
-      step: stepMatches.map((match, i) => {
-        const nameMatch = match.match(/<h3>(Krok \d+:[^<]*)<\/h3>/)
-        const textMatch = match.match(/<p>([\s\S]*?)<\/p>/)
-        return {
+  // JSON-LD: HowTo (for step-by-step sections)
+  // Method 1: single section with id 'wdrozenie' containing <h3>Krok N:...</h3>
+  // Method 2: multiple sections with id starting with 'krok-' (aggregated into HowTo steps)
+  const howToSingleSection = guide.sections.find(s => s.id === 'wdrozenie')
+  const howToStepSections = guide.sections.filter(s => /^krok-\d/.test(s.id))
+  const howToJsonLd = (() => {
+    if (howToSingleSection) {
+      const stepMatches = howToSingleSection.content.match(/<h3>Krok \d+:[^<]*<\/h3>\s*<p>([^<]*(?:<[^/][^>]*>[^<]*)*)<\/p>/g)
+      if (!stepMatches || stepMatches.length === 0) return null
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: howToSingleSection.heading,
+        step: stepMatches.map((match, i) => {
+          const nameMatch = match.match(/<h3>(Krok \d+:[^<]*)<\/h3>/)
+          const textMatch = match.match(/<p>([\s\S]*?)<\/p>/)
+          return {
+            '@type': 'HowToStep',
+            position: i + 1,
+            name: nameMatch ? nameMatch[1].replace(/<[^>]*>/g, '') : `Krok ${i + 1}`,
+            text: textMatch ? textMatch[1].replace(/<[^>]*>/g, '') : '',
+          }
+        }),
+      }
+    }
+    if (howToStepSections.length >= 2) {
+      const firstP = (html: string) => {
+        const m = html.match(/<p>([\s\S]*?)<\/p>/)
+        return m ? m[1].replace(/<[^>]*>/g, '') : ''
+      }
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: `Jak skonfigurować ${guide.title.toLowerCase().includes('drukark') ? guide.title.replace(/^[^—]*— /, '') : guide.title}`,
+        totalTime: 'PT10M',
+        step: howToStepSections.map((section, i) => ({
           '@type': 'HowToStep',
           position: i + 1,
-          name: nameMatch ? nameMatch[1].replace(/<[^>]*>/g, '') : `Krok ${i + 1}`,
-          text: textMatch ? textMatch[1].replace(/<[^>]*>/g, '') : '',
-        }
-      }),
+          name: section.heading.replace(/^Krok \d+:\s*/, ''),
+          text: firstP(section.content),
+        })),
+      }
     }
-  })() : null
+    return null
+  })()
 
   // JSON-LD: FAQPage (rich snippets w Google)
   const faqJsonLd = guide.faq.length > 0 ? {
