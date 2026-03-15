@@ -5956,6 +5956,7 @@ export const guides: Guide[] = [
 <tr><td>Wyświetlacz</td><td>LCD 4,3" dotykowy</td><td>LCD 4,3" dotykowy</td></tr>
 <tr><td>Ethernet / RS-232</td><td>Standard</td><td>Standard</td></tr>
 <tr><td>Linerless</td><td>—</td><td><strong>Opcja</strong></td></tr>
+<tr><td>Nawijak podkładu (liner takeup)</td><td>Opcja</td><td>Opcja</td></tr>
 <tr><td>Nawijak etykiet (full rewind)</td><td>—</td><td><strong>Opcja</strong></td></tr>
 <tr><td>RFID UHF</td><td>Opcja</td><td>Opcja</td></tr>
 <tr><td>Gwarancja</td><td>1 rok</td><td><strong>2 lata</strong></td></tr>
@@ -6001,6 +6002,7 @@ export const guides: Guide[] = [
 <tr><td>Rolka mediów</td><td>203 mm OD / 76 mm</td><td>203 mm OD / 76 mm</td></tr>
 <tr><td>Ribbon</td><td>450 m / 25,4 mm</td><td>450 m / 25,4 mm</td></tr>
 <tr><td>Odklejak / Gilotyna</td><td>Tak / Tak</td><td>Tak / Tak</td></tr>
+<tr><td>Nawijak podkładu (liner takeup)</td><td>Opcja</td><td>Opcja</td></tr>
 <tr><td>Nawijak etykiet (full rewind)</td><td>—</td><td><strong>Opcja</strong></td></tr>
 <tr><td>Linerless</td><td>—</td><td><strong>Opcja</strong></td></tr>
 <tr><td>Port LPT</td><td>—</td><td>Opcja</td></tr>
@@ -6012,7 +6014,7 @@ export const guides: Guide[] = [
 </table>
 </div>
 
-<p><strong>Podsumowanie:</strong> ZT411 przewyższa ZT231 w 8 parametrach (prędkość, 600 dpi, linerless, Flash, full rewind, LPT, gwarancja, prędkość 300 dpi). ZT231 wygrywa ceną (−47%), wagą (−3,4 kg) i kompaktowością. Aż 10 parametrów jest identycznych — obie drukarki etykiet Zebra mają ten sam ekran, Ethernet, RS-232, RFID, głowicę E3™ i ribbon 450 m.</p>`
+<p><strong>Podsumowanie:</strong> ZT411 przewyższa ZT231 w 8 parametrach (prędkość, 600 dpi, linerless, Flash, full rewind, LPT, gwarancja, prędkość 300 dpi). ZT231 wygrywa ceną (−47%), wagą (−3,4 kg) i kompaktowością. Aż 11 parametrów jest identycznych (w tym nawijak podkładu) — obie drukarki etykiet Zebra mają ten sam ekran, Ethernet, RS-232, RFID, głowicę E3™ i ribbon 450 m.</p>`
     },
     {
       id: 'predkosc-druku',
@@ -6228,12 +6230,13 @@ export const guides: Guide[] = [
 <tr><td>Łączność standardowa</td><td>USB+Eth+RS232+BLE</td><td>USB+Eth+RS232+BT</td><td>Remis</td></tr>
 <tr><td>RFID UHF</td><td>Opcja</td><td>Opcja</td><td>Remis</td></tr>
 <tr><td>Waga / kompaktowość</td><td>9,1 kg</td><td>12,5 kg</td><td><strong>ZT231</strong></td></tr>
+<tr><td>Nawijak podkładu</td><td>Opcja</td><td>Opcja</td><td>Remis</td></tr>
 <tr><td>Nawijak etykiet (full rewind)</td><td>—</td><td>Tak</td><td><strong>ZT411</strong></td></tr>
 </tbody>
 </table>
 </div>
 
-<p><strong>Wynik: ZT411 wygrywa 6:3</strong> (+ 3 remisy), ale różnica cenowa między tymi drukarkami przemysłowymi jest ogromna — <strong>2 403 PLN (−47%)</strong>. To nie jest 234 PLN jak między ZD421t a ZD621t. Tutaj dopłata za droższą drukarkę kodów kreskowych musi być uzasadniona konkretnymi potrzebami.</p>
+<p><strong>Wynik: ZT411 wygrywa 6:3</strong> (+ 4 remisy), ale różnica cenowa między tymi drukarkami przemysłowymi jest ogromna — <strong>2 403 PLN (−47%)</strong>. To nie jest 234 PLN jak między ZD421t a ZD621t. Tutaj dopłata za droższą drukarkę kodów kreskowych musi być uzasadniona konkretnymi potrzebami.</p>
 
 <h3>Rekomendacja finalna</h3>
 <p><strong><a href="/produkt/zebra-zt231">Zebra ZT231</a> → 80% zastosowań:</strong> 500–5 000 etykiet/dzień, magazyn, produkcja, logistyka, migracja z ZT230, budżet &lt;4 000 PLN. Oszczędzasz 2 400 PLN przy identycznym ekranie, Ethernet i RFID.</p>
@@ -6248,7 +6251,7 @@ export const guides: Guide[] = [
     { question: 'Co to jest Zebra ZT231 (drukarka etykiet)?', answer: 'Zebra ZT231 to przemysłowa drukarka etykiet klasy light-industrial z kolorowym ekranem dotykowym 4,3", metalową konstrukcją, prędkością 304 mm/s i opcjonalnym RFID UHF. Jest bezpośrednim następcą ZT230 — przeznaczonym do magazynów, produkcji i centrów dystrybucyjnych drukujących 500–5 000 etykiet dziennie. Cena od 2 675 PLN netto (TT 203 dpi).' },
     { question: 'Co to jest Zebra ZT411 (drukarka etykiet)?', answer: 'Zebra ZT411 to przemysłowa drukarka etykiet klasy mid-range z ekranem dotykowym 4,3", prędkością 356 mm/s, rozdzielczością do 600 dpi i obsługą etykiet linerless. Następca ZT410 — przeznaczona do intensywnych zastosowań przemysłowych: 5 000–20 000+ etykiet dziennie, mikro-etykiety, RFID UHF. Bestseller TAKMA. Cena od 5 078 PLN netto.' },
     { question: 'Gdzie kupić drukarki Zebra ZT231 i ZT411 w Polsce?', answer: 'Obie drukarki etykiet przemysłowe są dostępne w autoryzowanym sklepie TAKMA (takma.com.pl) — Premier Solution Partner Zebra Technologies. ZT231 od 2 675 zł netto (17 wariantów), ZT411 od 5 078 zł netto (16 wariantów). TAKMA oferuje doradztwo w doborze konfiguracji, uruchomienie, szkolenie operatorów, serwis gwarancyjny (serwis-zebry.pl) i materiały eksploatacyjne.' },
-    { question: 'Zebra ZT231 vs ZT411 — czym się różnią?', answer: 'Obie drukarki termotransferowe różnią się klasą: ZT411 przewyższa ZT231 w prędkości (356 vs 304 mm/s, +17%), rozdzielczości (600 dpi — brak w ZT231), obsłudze linerless, pamięci Flash (512 vs 256 MB), gwarancji (2 lata vs 1 rok) i nawijaku etykiet full rewind. ZT231 wygrywa ceną (2 675 vs 5 078 PLN, −47%), wagą (9,1 vs 12,5 kg) i kompaktowością. Oba mają identyczny: ekran 4,3", Ethernet, RS-232, RFID, głowicę E3 i ribbon 450 m.' },
+    { question: 'Zebra ZT231 vs ZT411 — czym się różnią?', answer: 'Obie drukarki termotransferowe różnią się klasą: ZT411 przewyższa ZT231 w prędkości (356 vs 304 mm/s, +17%), rozdzielczości (600 dpi — brak w ZT231), obsłudze linerless, pamięci Flash (512 vs 256 MB), gwarancji (2 lata vs 1 rok) i nawijaku etykiet full rewind (oba mają nawijak podkładu, ale tylko ZT411 ma full rewind do aplikatorów). ZT231 wygrywa ceną (2 675 vs 5 078 PLN, −47%), wagą (9,1 vs 12,5 kg) i kompaktowością. Oba mają identyczny: ekran 4,3", Ethernet, RS-232, RFID, nawijak podkładu, głowicę E3 i ribbon 450 m.' },
     { question: 'Czy warto dopłacić do ZT411 zamiast ZT231?', answer: 'Dopłata wynosi ~2 400 PLN (+90%). Jest uzasadniona gdy: (1) drukujesz >5 000 etykiet/dzień — 17% szybciej oszczędza czas; (2) potrzebujesz 600 dpi do mikro-etykiet; (3) wdrażasz etykiety linerless (ESG); (4) potrzebujesz nawijaka etykiet full rewind. Przy <5 000 etykiet/dzień bez tych potrzeb — ZT231 jest TCO-efektywniejsza.' },
     { question: 'Która drukarka jest szybsza — ZT231 czy ZT411?', answer: 'ZT411 drukuje szybciej we wszystkich rozdzielczościach: 356 vs 304 mm/s przy 203 dpi (+17%), 254 vs 203 mm/s przy 300 dpi (+25%). Dodatkowo ZT411 oferuje 600 dpi (152 mm/s) — niedostępne w ZT231. Różnica 17% przy 203 dpi przekłada się na ~30 min/dzień oszczędności przy 10 000 etykiet.' },
     { question: 'Która drukarka ma dłuższą gwarancję?', answer: 'ZT411 ma 2-letnią gwarancję standardową — rok dłużej niż ZT231 (1 rok). Oba modele można rozszerzyć kontraktem Zebra OneCare do 5 lat. Koszt OneCare jest porównywalny, więc bazowa gwarancja 2 lata ZT411 to realna przewaga bez dodatkowych kosztów.' },

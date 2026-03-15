@@ -5171,7 +5171,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Kiedy wybrać ZT411 zamiast tańszego ZT231?',
-        answer: 'ZT411 przewyższa ZT231 w: prędkości (356 vs 304 mm/s, +17%), rozdzielczości (600 dpi — brak w ZT231), obsłudze linerless, pamięci Flash (512 vs 256 MB), gwarancji (2 lata vs 1 rok) i nawijaku etykiet full rewind. Dopłata wynosi ~2 400 PLN (+90%). Jest uzasadniona gdy drukujesz >5 000 etykiet/dzień, potrzebujesz 600 dpi, linerless lub full rewind. Pełne porównanie z TCO: [ZT231 vs ZT411](/poradnik/zebra-zt231-vs-zt411-porownanie).',
+        answer: 'ZT411 przewyższa ZT231 w: prędkości (356 vs 304 mm/s, +17%), rozdzielczości (600 dpi — brak w ZT231), obsłudze linerless, pamięci Flash (512 vs 256 MB), gwarancji (2 lata vs 1 rok) i nawijaku etykiet full rewind (oba mają nawijak podkładu, ale tylko ZT411 oferuje full rewind do aplikatorów). Dopłata wynosi ~2 400 PLN (+90%). Jest uzasadniona gdy drukujesz >5 000 etykiet/dzień, potrzebujesz 600 dpi, linerless lub full rewind. Pełne porównanie z TCO: [ZT231 vs ZT411](/poradnik/zebra-zt231-vs-zt411-porownanie).',
       },
       {
         question: 'Czym różni się ZT411 od ZT421?',
