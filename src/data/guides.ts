@@ -4902,6 +4902,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-14',
   updatedAt: '2026-03-15',
   readTime: '16 min',
+  heroImage: '/images/guides/zebra-tc501-zebra-tc58-porownanie-kolektorow-danych.png',
   sections: [
     {
       id: 'podsumowanie',
