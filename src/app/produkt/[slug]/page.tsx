@@ -330,18 +330,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
     })),
   } : null
 
-  const ogProductMeta = `<meta property="og:type" content="product" />${product.priceFrom ? `<meta property="product:price:amount" content="${product.priceFrom.toFixed(2)}" /><meta property="product:price:currency" content="PLN" />` : ''}`
-
   return (
     <>
-      <script dangerouslySetInnerHTML={{ __html: `
-        (function(){
-          var h=document.head;
-          var d=document.createElement('div');
-          d.innerHTML='${ogProductMeta.replace(/'/g, "\\'")}';
-          while(d.firstChild)h.appendChild(d.firstChild);
-        })();
-      `}} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
