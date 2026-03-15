@@ -848,8 +848,8 @@ const desktopPrinters: Product[] = [
     slug: 'zebra-zd421t',
     name: 'Zebra ZD421t',
     shortDescription: 'Zebra ZD421t — drukarka termotransferowa biurkowa 4", następca GK420t',
-    seoTitle: 'Drukarka etykiet Zebra ZD421t — termotransferowa MCS | od 1 648 zł',
-    seoDescription: 'Zebra ZD421t — termotransferowa 4" dla magazynów, logistyki i e-commerce. Wi-Fi, MCS, 203/300 dpi. ZD4A042-30EM00EZ od 1 648 zł netto.',
+    seoTitle: 'Zebra ZD421t — drukarka termotransferowa MCS | od 1 649 zł',
+    seoDescription: 'Zebra ZD421t — termotransferowa 4" dla magazynów, logistyki i e-commerce. Wi-Fi, MCS, 203/300 dpi. ZD4A042-30EM00EZ od 1 649 zł netto.',
     description: `Zebra ZD421t to najlepszy wybór dla firm logistycznych, magazynów i e-commerce, które potrzebują niezawodnej biurkowej drukarki termotransferowej z możliwością rozbudowy o sieć Wi-Fi i Ethernet.
 
 Zebra ZD421t to kompaktowa drukarka biurkowa do etykiet 4-calowych, będąca bezpośrednim następcą popularnych modeli Zebra GK420t i ZD420t. Łączy sprawdzoną niezawodność serii Zebra z nowoczesną architekturą modularną Link-OS, oferując druk termotransferowy i termiczny bezpośredni w rozdzielczości do 300 dpi z prędkością 152 mm/s.
@@ -1076,11 +1076,15 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Która wersja ZD421t jest najtańsza?',
-        answer: 'Najtańsza jest wersja ZD4A042-30EM00EZ (203 dpi, USB, bez Wi-Fi) w cenie od 1637,70 zł netto. Do większości zastosowań magazynowych i e-commerce ta wersja w pełni wystarcza. Moduły Wi-Fi i Ethernet można dokupić później.',
+        answer: 'Najtańsza jest wersja ZD4A042-30EM00EZ (203 dpi, USB, bez Wi-Fi) w cenie od 1 649 zł netto. Do większości zastosowań magazynowych i e-commerce ta wersja w pełni wystarcza. Moduły Wi-Fi i Ethernet można dokupić później.',
       },
       {
         question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
         answer: 'Serwis drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę wałków, kalibrację i aktualizację firmware. Czas naprawy standardowej to 3–5 dni roboczych, dostępna jest również naprawa ekspresowa i wysyłkowa w całej Polsce.',
+      },
+      {
+        question: 'Zebra ZD421t czy Honeywell PC45t — co wybrać?',
+        answer: 'Przy ~129 PLN różnicy (z Ethernet) ZD421t wygrywa ekosystemem Zebra (PrintDNA, MCS), natywnym ZPL II i dłuższą gwarancją (36 vs 24 mies.). PC45t wygrywa prędkością druku (+33%, 203 vs 152 mm/s) i ekranem dotykowym LCD 3,5". TCO na 3 lata jest niemal identyczne (~8 440 vs ~8 769 PLN). Szczegółowe porównanie z kalkulacją TCO: takma.com.pl/poradnik/zebra-zd421t-vs-honeywell-pc45t.',
       },
       {
         question: 'Jakie są alternatywy dla Zebra ZD421t?',
@@ -4108,8 +4112,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Honeywell PC45 (źródło: a
     slug: 'honeywell-pc45t',
     name: 'Drukarka etykiet Honeywell PC45t',
     shortDescription: 'Drukarka Honeywell PC45t — drukarka biurkowa termotransferowa 4" z ekranem LCD 3,5" i Wi-Fi 6, następca PC42t/PC43t',
-    seoTitle: 'Drukarka etykiet Honeywell PC45t | Biurkowa drukarka termotransferowa',
-    seoDescription: 'Drukarka etykiet Honeywell PC45t — drukarka biurkowa termotransferowa Honeywell PC45t 4" z ekranem LCD 3,5", Wi-Fi 6, Bluetooth 5.2, 203/300 dpi, do 203 mm/s. PC45t Honeywell — następca PC42t i PC43t. Drukarka Honeywell biurkowa od 2 159 zł netto. PN: PC45T000000200 (USB+Ethernet 203dpi), PC45T000000300 (300dpi), PC45T020000200 (BT+WiFi).',
+    seoTitle: 'Honeywell PC45t — drukarka etykiet LCD 3,5" | od 2 159 zł',
+    seoDescription: 'Honeywell PC45t — biurkowa drukarka termotransferowa 4" z LCD 3,5", Wi-Fi 6, BT 5.2, 203/300 dpi. Następca PC42t/PC43t. Od 2 159 zł netto | TAKMA.',
     description: `Dla kogo? Honeywell PC45t to biurkowa drukarka termotransferowa przeznaczona dla firm potrzebujących trwałych etykiet odpornych na wilgoć, temperaturę i ścieranie — idealnych do oznaczeń produktowych, etykiet na kable i przewody, oznaczeń chemicznych, etykiet magazynowych i oznaczeń trwałych w produkcji.
 
 Honeywell PC45t to najnowsza generacja drukarek termotransferowych Honeywell — bezpośredni następca modeli PC42t i PC43t (seria E-Class Mark III). Kluczowa przewaga PC45t nad konkurencją to kolorowy ekran dotykowy LCD 3,5" (320×240 px) umożliwiający konfigurację drukarki bezpośrednio na urządzeniu — bez podłączania do komputera. W połączeniu z Wi-Fi 6 (802.11ax) i Bluetooth 5.2 daje to najnowocześniejszy zestaw łączności bezprzewodowej wśród drukarek biurkowych w tej klasie cenowej.
@@ -4221,14 +4225,14 @@ Specyfikacja zgodna z oficjalną kartą katalogową Honeywell PC45 (źródło: a
     faq: [
       { question: 'Ile kosztuje drukarka Honeywell PC45t?', answer: 'Ceny Honeywell PC45t zaczynają się od 2 159 zł netto za wariant bazowy 203 dpi z USB i Ethernet (PC45T000000200). Wariant 300 dpi — od 2 298 zł netto. Wariant z Bluetooth 5.2 i Wi-Fi 6 — od 2 371 zł netto.' },
       { question: 'Czym Honeywell PC45t różni się od PC45d?', answer: 'PC45t to drukarka termotransferowa — drukuje z użyciem taśmy barwiącej (ribbonu), etykiety są trwalsze (odporne na wilgoć, temperaturę, UV, ścieranie). PC45d to drukarka termiczna bezpośrednia — drukuje bez ribbonu, niższy koszt eksploatacji, ale etykiety blakną z czasem. PC45t jest większy (179,6 × 212,9 × 285,5 mm vs 168 × 181,3 × 215,6 mm) i cięższy (2,7 kg vs 1,8 kg) ze względu na komorę ribbonu. Obie mają ekran LCD 3,5", procesor 792 MHz i Wi-Fi 6/BT 5.2.' },
-      { question: 'Honeywell PC45t czy Zebra ZD421t — co wybrać?', answer: 'Honeywell PC45t wygrywa: ekran dotykowy LCD 3,5" (ZD421t nie ma ekranu), Wi-Fi 6 vs Wi-Fi 5, BT 5.2 vs BT 4.1, prędkość 203 mm/s vs 152 mm/s (+33%). Zebra ZD421t wygrywa: modułowa architektura MCS (upgrade łączności bez narzędzi), ekosystem DataCapture DNA (123Scan, Browser Print), niższa cena bazowa (od 1 461 zł netto), serwis [serwis-zebry.pl](https://www.serwis-zebry.pl) w Polsce. Dla firm z ekosystemem Zebra → [ZD421t](/produkt/zebra-zd421t). Dla nowych wdrożeń z potrzebą ekranu i Wi-Fi 6 → PC45t.' },
-      { question: 'Honeywell PC45t czy Zebra ZD621t — co wybrać?', answer: 'Honeywell PC45t: ekran dotykowy 3,5", Wi-Fi 6, BT 5.2, 203 mm/s, od 2 159 zł. [Zebra ZD621t](/produkt/zebra-zd621t): opcja ekranu LCD, Wi-Fi 5, BT 5.0, 203 mm/s, rozdzielczość do 300 dpi, architektura MCS, od 2 810 zł. PC45t to lepszy stosunek ceny do jakości. ZD621t to premium z modularnością i ekosystemem Zebra.' },
+      { question: 'Honeywell PC45t czy Zebra ZD421t — co wybrać?', answer: 'Honeywell PC45t wygrywa: ekran dotykowy LCD 3,5" (ZD421t nie ma ekranu), Wi-Fi 6 vs Wi-Fi 5, BT 5.2 vs BT 4.1, prędkość 203 mm/s vs 152 mm/s (+33%). Zebra ZD421t wygrywa: modułowa architektura MCS (upgrade łączności bez narzędzi), ekosystem PrintDNA (Link-OS, MCS), niższa cena bazowa (od 1 649 zł netto), dłuższa gwarancja (36 vs 24 mies.), serwis <a href="https://www.serwis-zebry.pl" target="_blank" rel="noopener">serwis-zebry.pl</a> w Polsce. Dla firm z ekosystemem Zebra → <a href="/produkt/zebra-zd421t">ZD421t</a>. Dla nowych wdrożeń z potrzebą ekranu i Wi-Fi 6 → PC45t. Szczegółowe porównanie z TCO: <a href="/poradnik/zebra-zd421t-vs-honeywell-pc45t">ZD421t vs PC45t</a>.' },
+      { question: 'Honeywell PC45t czy Zebra ZD621t — co wybrać?', answer: 'Honeywell PC45t: ekran dotykowy 3,5", Wi-Fi 6, BT 5.2, 203 mm/s, od 2 159 zł. <a href="/produkt/zebra-zd621t">Zebra ZD621t</a>: kolorowy LCD 4,3", Wi-Fi 5, BT 5.0, 203 mm/s, rozdzielczość do 300 dpi, architektura MCS, od 2 264 zł. ZD621t to premium z modularnością, RFID i ekosystemem Zebra. PC45t ma Wi-Fi 6 i niższą cenę wejścia.' },
       { question: 'Jakie ribbony pasują do Honeywell PC45t?', answer: 'PC45t obsługuje taśmy barwiące woskowe (wax), woskowo-żywiczne (wax-resin) i żywiczne (resin) o szerokości 25–118 mm i długości do 450 m na rdzeniu 12,7 mm (0,5"). Nawijanie wewnętrzne (inside-wound). Do etykiet papierowych: ribbon woskowy. Do etykiet syntetycznych (PP, PE, PET): ribbon żywiczny.' },
       { question: 'Czy Honeywell PC45t obsługuje ZPL?', answer: 'Tak. PC45t obsługuje języki programowania: ZPL-II (Zebra), DPL (Datamax), IPL (Intermec), DP (Direct Protocol), XML i PDF. Dzięki emulacji ZPL-II drukarka jest kompatybilna z oprogramowaniem napisanym dla drukarek Zebra — migracja z Zebra na Honeywell nie wymaga przepisywania kodu.' },
       { question: 'Czy PC45t ma Wi-Fi i Bluetooth?', answer: 'W wariancie bazowym (PC45T000000200) — nie, dostępne są USB 2.0 i Ethernet. Wi-Fi 6 (802.11ax) i Bluetooth 5.2 dostępne w wariancie PC45T020000200 (od 2 371 zł netto). Moduł bezprzewodowy można też dokupić osobno.' },
       { question: 'Czy PC45t obsługuje druk RFID?', answer: 'Tak — Honeywell PC45t obsługuje opcjonalny moduł RFID UHF EPC Gen 2 V2.1 (ISO/IEC 18000-63). Moduł RFID umożliwia jednoczesne drukowanie etykiety i kodowanie tagu RFID. Idealny do śledzenia aktywów, logistyki i handlu detalicznego.' },
       { question: 'Jaką rozdzielczość ma Honeywell PC45t?', answer: 'PC45t jest dostępny w dwóch rozdzielczościach: 203 dpi (8 dots/mm) — standard, prędkość do 203 mm/s; oraz 300 dpi (12 dots/mm) — wyższa rozdzielczość, prędkość do 152 mm/s. 300 dpi zalecane do drobnych kodów 2D (QR, DataMatrix) i małych etykiet. Upgrade rozdzielczości wymaga wymiany głowicy (PN: 225-784-001).' },
-      { question: 'Jakie są alternatywy dla Honeywell PC45t?', answer: 'Główne alternatywy biurkowych drukarek termotransferowych 4": [Zebra ZD421t](/produkt/zebra-zd421t) (od 1 461 zł, MCS, DataCapture DNA), [Zebra ZD621t](/produkt/zebra-zd621t) (od 2 810 zł, premium, opcja LCD), [Zebra ZD220t](/produkt/zebra-zd220t) (od 905 zł, budżetowa), [Honeywell PC45d](/produkt/honeywell-pc45d) (od 1 518 zł, termiczna — jeśli ribbon niepotrzebny). Honeywell PC45t wyróżnia się ekranem dotykowym 3,5", Wi-Fi 6 i opcją 300 dpi w cenie poniżej 2 300 zł.' },
+      { question: 'Jakie są alternatywy dla Honeywell PC45t?', answer: 'Główne alternatywy biurkowych drukarek termotransferowych 4": <a href="/produkt/zebra-zd421t">Zebra ZD421t</a> (od 1 649 zł, MCS, PrintDNA; <a href="/poradnik/zebra-zd421t-vs-honeywell-pc45t">porównanie ZD421t vs PC45t</a>), <a href="/produkt/zebra-zd621t">Zebra ZD621t</a> (od 2 264 zł, premium, LCD 4,3", RFID), <a href="/produkt/zebra-zd220t">Zebra ZD220t</a> (od 639 zł, budżetowa), <a href="/produkt/honeywell-pc45d">Honeywell PC45d</a> (od 1 518 zł, termiczna — jeśli ribbon niepotrzebny). PC45t wyróżnia się ekranem dotykowym 3,5", Wi-Fi 6 i opcją 300 dpi w cenie poniżej 2 300 zł.' },
     ],
     comparison: {
       title: 'Porównanie drukarek biurkowych Honeywell 4" — PC42E-T vs PC45d vs PC45t',

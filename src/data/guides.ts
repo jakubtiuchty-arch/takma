@@ -5335,6 +5335,7 @@ export const guides: Guide[] = [
 <tr><td>Zarządzanie flotą</td><td><strong>PrintDNA + MCS</strong></td><td>Operational Intelligence</td></tr>
 <tr><td>Język druku</td><td><strong>ZPL II (natywny)</strong></td><td>ZPL II (emulacja)</td></tr>
 <tr><td>Serwis w Polsce</td><td><strong>serwis-zebry.pl</strong></td><td>Dystrybutorzy</td></tr>
+<tr><td>Gwarancja</td><td><strong>36 mies.</strong></td><td>24 mies.</td></tr>
 </tbody>
 </table>
 </div>
@@ -5373,6 +5374,7 @@ export const guides: Guide[] = [
 <tr><td>Odklejak / Obcinacz</td><td>Opcja</td><td>Opcja</td></tr>
 <tr><td><strong>Zarządzanie</strong></td><td><strong>Link-OS, PrintDNA, MCS</strong></td><td>Honeywell Operational Intelligence</td></tr>
 <tr><td><strong>Język druku</strong></td><td><strong>ZPL II natywny</strong></td><td>ZPL II (emulacja), DPL</td></tr>
+<tr><td><strong>Gwarancja</strong></td><td><strong>36 mies. (drukarka)</strong></td><td>24 mies.</td></tr>
 <tr><td><strong>Cena (USB)</strong></td><td><strong>od 1 649 PLN</strong></td><td>—</td></tr>
 <tr><td><strong>Cena (z Ethernet)</strong></td><td><strong>od 2 030 PLN</strong></td><td>od 2 159 PLN</td></tr>
 </tbody>
@@ -5500,7 +5502,13 @@ export const guides: Guide[] = [
 <li><strong>Części zamienne:</strong> dostępność przez Honeywell Polska — dłuższy czas oczekiwania</li>
 </ul>
 
-<p><strong>Werdykt:</strong> <a href="/produkt/zebra-zd421t">ZD421t</a> — szybszy serwis w Polsce. TAKMA to autoryzowany Zebra Premier Partner z serwisem na miejscu (<a href="https://www.serwis-zebry.pl" target="_blank" rel="noopener">serwis-zebry.pl</a>). PC45t — serwis dostępny, ale dłuższy czas oczekiwania na części.</p>`
+<h3>Gwarancja producenta</h3>
+<ul>
+<li><strong>Zebra ZD421t:</strong> 36 miesięcy (drukarka) + 12 miesięcy (głowica) — standardowa gwarancja Zebra od kwietnia 2024. Opcja przedłużenia do 5 lat z Zebra OneCare.</li>
+<li><strong>Honeywell PC45t:</strong> 24 miesiące (drukarka) — krótszy okres gwarancji niż Zebra.</li>
+</ul>
+
+<p><strong>Werdykt:</strong> <a href="/produkt/zebra-zd421t">ZD421t</a> — szybszy serwis w Polsce, dłuższa gwarancja (36 vs 24 miesiące). TAKMA to autoryzowany Zebra Premier Partner z serwisem na miejscu (<a href="https://www.serwis-zebry.pl" target="_blank" rel="noopener">serwis-zebry.pl</a>). PC45t — serwis dostępny, ale dłuższy czas oczekiwania na części i krótsza gwarancja.</p>`
     },
     {
       id: 'nastepca-gk420t',
@@ -5523,7 +5531,7 @@ export const guides: Guide[] = [
     {
       id: 'werdykt',
       heading: 'Werdykt: Zebra ZD421t czy Honeywell PC45t?',
-      content: `<p><strong>Podsumowanie porównania drukarek etykiet termotransferowych biurkowych w 9 kategoriach:</strong></p>
+      content: `<p><strong>Podsumowanie porównania drukarek etykiet termotransferowych biurkowych w 10 kategoriach:</strong></p>
 
 <div style="overflow-x:auto">
 <table>
@@ -5540,7 +5548,8 @@ export const guides: Guide[] = [
 <tr><td>Modularność</td><td>Snap-in</td><td>Stała</td><td><strong><a href="/produkt/zebra-zd421t">ZD421t</a></strong></td></tr>
 <tr><td>Serwis w Polsce</td><td>serwis-zebry.pl</td><td>Dystrybutorzy</td><td><strong><a href="/produkt/zebra-zd421t">ZD421t</a></strong></td></tr>
 <tr><td>Kompatybilność ZPL II</td><td>Natywna</td><td>Emulacja</td><td><strong><a href="/produkt/zebra-zd421t">ZD421t</a></strong></td></tr>
-<tr><td><strong>WYNIK</strong></td><td><strong>4 + 2 remisy</strong></td><td><strong>3 + 2 remisy</strong></td><td><strong><a href="/produkt/zebra-zd421t">ZD421t</a> (nieznacznie)</strong></td></tr>
+<tr><td>Gwarancja</td><td>36 mies.</td><td>24 mies.</td><td><strong><a href="/produkt/zebra-zd421t">ZD421t</a></strong></td></tr>
+<tr><td><strong>WYNIK</strong></td><td><strong>5 + 2 remisy</strong></td><td><strong>3 + 2 remisy</strong></td><td><strong><a href="/produkt/zebra-zd421t">ZD421t</a></strong></td></tr>
 </tbody>
 </table>
 </div>
