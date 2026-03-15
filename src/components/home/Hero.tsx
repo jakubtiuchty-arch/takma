@@ -50,6 +50,17 @@ const slides: HeroSlide[] = [
   },
   {
     type: 'product',
+    image: '/images/hero-ct70.png',
+    name: 'Honeywell CT70',
+    slug: 'honeywell-ct70',
+    priceFrom: 6168,
+    imageClassName: 'object-contain object-[70%_center]',
+    imageType: 'packshot',
+    noOverlay: true,
+    bgColor: '#000000',
+  },
+  {
+    type: 'product',
     image: '/images/hero-ds8208.png',
     name: 'Zebra DS8288',
     slug: 'zebra-ds8288',
