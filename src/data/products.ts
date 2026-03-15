@@ -1479,7 +1479,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       { name: 'Wilgotność pracy', value: '20–85% (bez kondensacji)' },
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz' },
       { name: 'Certyfikaty', value: 'CE, FCC Class B, ICES, cTUVus, S-Mark, CCC, ENERGY STAR' },
-      { name: 'Gwarancja', value: '12 miesięcy standard, do 36 miesięcy z Zebra OneCare' },
+      { name: 'Gwarancja', value: '36 miesięcy (drukarka), 12 miesięcy (głowica)' },
     ],
     applications: [
       'Druk dużych wolumenów etykiet wysyłkowych i kurierskich (ponad 500 sztuk dziennie)',
@@ -1742,7 +1742,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Jaka jest gwarancja na drukarkę Zebra ZD621t i jakie opcje serwisowe są dostępne?',
-        answer: 'Zebra ZD621t jest objęta standardową gwarancją producenta. Gwarancję można rozszerzyć do 3 lat w ramach kontraktu serwisowego Zebra OneCare Essential lub Zebra OneCare Select, który obejmuje ochronę przed uszkodzeniami mechanicznymi, normalne zużycie oraz priorytetowe wsparcie techniczne. Autoryzowany serwis gwarancyjny i pogwarancyjny drukarek Zebra w Polsce prowadzi portal Serwis-Zebry.pl — oferuje diagnostykę AI 24/7, instrukcje po polsku, naprawę z odbiorem kurierem oraz dostęp do oryginalnych części zamiennych (głowice, wałki dociskowe, zasilacze).',
+        answer: 'Zebra ZD621t jest objęta 36-miesięczną (3 lata) gwarancją producenta na drukarkę oraz 12-miesięczną gwarancją na głowicę drukującą — standardowa gwarancja Zebra od kwietnia 2024. Gwarancję można dodatkowo rozszerzyć kontraktem Zebra OneCare Essential lub Select (ochrona przed uszkodzeniami mechanicznymi, normalne zużycie, priorytetowe wsparcie). Autoryzowany serwis drukarek Zebra w Polsce: serwis-zebry.pl — diagnostyka AI 24/7, instrukcje po polsku, naprawa z odbiorem kurierem, oryginalne części zamienne.',
       },
       {
         question: 'Jakie interfejsy łączności ma ZD621t i czy można je rozbudować?',
@@ -2080,7 +2080,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Jaka jest gwarancja na Zebra ZD621d?',
-        answer: 'Standardowa gwarancja Zebra na ZD621d wynosi 12 miesięcy. Gwarancję można rozszerzyć do 36 miesięcy w ramach kontraktu serwisowego Zebra OneCare Essential lub Zebra OneCare Select (z wymianą urządzenia next-business-day). Serwis gwarancyjny i pogwarancyjny ZD621d w Polsce realizuje m.in. serwis-zebry.pl.',
+        answer: 'Standardowa gwarancja Zebra na ZD621d wynosi 36 miesięcy (3 lata) na drukarkę i 12 miesięcy na głowicę — od kwietnia 2024 na wszystkie drukarki Zebra. Gwarancję można rozszerzyć kontraktem Zebra OneCare Essential lub Select (z wymianą urządzenia next-business-day). Serwis gwarancyjny i pogwarancyjny ZD621d w Polsce: serwis-zebry.pl.',
       },
       {
         question: 'Czy ZD621d jest kompatybilna z poprzednimi modelami Zebra?',
