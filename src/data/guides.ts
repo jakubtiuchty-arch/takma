@@ -5527,14 +5527,14 @@ export const guides: Guide[] = [
 <tbody>
 <tr><td>Cena (z Ethernet)</td><td>2 030 PLN</td><td>2 159 PLN</td><td>Remis (~129 PLN)</td></tr>
 <tr><td>TCO 3 lata</td><td>~8 440 PLN</td><td>~8 769 PLN</td><td>Remis (~329 PLN)</td></tr>
-<tr><td>Prędkość druku</td><td>152 mm/s</td><td>203 mm/s</td><td><strong>PC45t</strong></td></tr>
-<tr><td>Ekran</td><td>LED</td><td>3,5" dotykowy</td><td><strong>PC45t</strong></td></tr>
-<tr><td>Ethernet w standardzie</td><td>Opcja</td><td>Standard</td><td><strong>PC45t</strong></td></tr>
-<tr><td>Zarządzanie flotą</td><td>PrintDNA+MCS</td><td>OI</td><td><strong>ZD421t</strong></td></tr>
-<tr><td>Modularność</td><td>Snap-in</td><td>Stała</td><td><strong>ZD421t</strong></td></tr>
-<tr><td>Serwis w Polsce</td><td>serwis-zebry.pl</td><td>Dystrybutorzy</td><td><strong>ZD421t</strong></td></tr>
-<tr><td>Kompatybilność ZPL II</td><td>Natywna</td><td>Emulacja</td><td><strong>ZD421t</strong></td></tr>
-<tr><td><strong>WYNIK</strong></td><td><strong>4 + 2 remisy</strong></td><td><strong>3 + 2 remisy</strong></td><td><strong>ZD421t (nieznacznie)</strong></td></tr>
+<tr><td>Prędkość druku</td><td>152 mm/s</td><td>203 mm/s</td><td><strong><a href="/produkt/honeywell-pc45t">PC45t</a></strong></td></tr>
+<tr><td>Ekran</td><td>LED</td><td>3,5" dotykowy</td><td><strong><a href="/produkt/honeywell-pc45t">PC45t</a></strong></td></tr>
+<tr><td>Ethernet w standardzie</td><td>Opcja</td><td>Standard</td><td><strong><a href="/produkt/honeywell-pc45t">PC45t</a></strong></td></tr>
+<tr><td>Zarządzanie flotą</td><td>PrintDNA+MCS</td><td>OI</td><td><strong><a href="/produkt/zebra-zd421t">ZD421t</a></strong></td></tr>
+<tr><td>Modularność</td><td>Snap-in</td><td>Stała</td><td><strong><a href="/produkt/zebra-zd421t">ZD421t</a></strong></td></tr>
+<tr><td>Serwis w Polsce</td><td>serwis-zebry.pl</td><td>Dystrybutorzy</td><td><strong><a href="/produkt/zebra-zd421t">ZD421t</a></strong></td></tr>
+<tr><td>Kompatybilność ZPL II</td><td>Natywna</td><td>Emulacja</td><td><strong><a href="/produkt/zebra-zd421t">ZD421t</a></strong></td></tr>
+<tr><td><strong>WYNIK</strong></td><td><strong>4 + 2 remisy</strong></td><td><strong>3 + 2 remisy</strong></td><td><strong><a href="/produkt/zebra-zd421t">ZD421t</a> (nieznacznie)</strong></td></tr>
 </tbody>
 </table>
 </div>
