@@ -5347,28 +5347,28 @@ export const guides: Guide[] = [
       content: `<p><strong>Pełna tabela porównawcza drukarek etykiet termotransferowych Zebra ZD421t i Honeywell PC45t.</strong> Obie drukarki biurkowe obsługują etykiety do 4" (104–108 mm), ribbon wax/wax-resin/resin i oferują rozdzielczość 203 lub 300 dpi.</p>
 
 <div style="overflow-x:auto">
-<table style="width:100%;border-collapse:collapse;font-size:14px">
+<table>
 <thead>
-<tr><th style="text-align:left;padding:8px;border-bottom:2px solid #444">Parametr</th><th style="text-align:left;padding:8px;border-bottom:2px solid #444">Zebra ZD421t</th><th style="text-align:left;padding:8px;border-bottom:2px solid #444">Honeywell PC45t</th></tr>
+<tr><th>Parametr</th><th>Zebra ZD421t</th><th>Honeywell PC45t</th></tr>
 </thead>
 <tbody>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Technologia</td><td style="padding:8px;border-bottom:1px solid #333">Termotransfer + termiczny</td><td style="padding:8px;border-bottom:1px solid #333">Termotransfer + termiczny</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Rozdzielczość</td><td style="padding:8px;border-bottom:1px solid #333">203 / 300 dpi</td><td style="padding:8px;border-bottom:1px solid #333">203 / 300 dpi</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333"><strong>Prędkość druku</strong></td><td style="padding:8px;border-bottom:1px solid #333">152 mm/s (6 ips)</td><td style="padding:8px;border-bottom:1px solid #333"><strong>203 mm/s (8 ips) ✓</strong></td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Szerokość druku</td><td style="padding:8px;border-bottom:1px solid #333">do 104 mm (4")</td><td style="padding:8px;border-bottom:1px solid #333">do 108 mm (4,25")</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333"><strong>Wyświetlacz</strong></td><td style="padding:8px;border-bottom:1px solid #333">5 diod LED statusu</td><td style="padding:8px;border-bottom:1px solid #333"><strong>Ekran dotykowy 3,5" LCD ✓</strong></td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">USB</td><td style="padding:8px;border-bottom:1px solid #333">USB 2.0 + USB Host</td><td style="padding:8px;border-bottom:1px solid #333">USB 2.0 + USB Host</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333"><strong>Ethernet</strong></td><td style="padding:8px;border-bottom:1px solid #333">Opcja (moduł snap-in)</td><td style="padding:8px;border-bottom:1px solid #333"><strong>Standard ✓</strong></td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Wi-Fi</td><td style="padding:8px;border-bottom:1px solid #333">Opcja (802.11ac)</td><td style="padding:8px;border-bottom:1px solid #333">Opcja (Wi-Fi 6)</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Bluetooth</td><td style="padding:8px;border-bottom:1px solid #333">BT 4.1 / BLE 5</td><td style="padding:8px;border-bottom:1px solid #333">BLE 5.2</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">RFID</td><td style="padding:8px;border-bottom:1px solid #333">Opcja (UHF)</td><td style="padding:8px;border-bottom:1px solid #333">Opcja (UHF)</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Ribbon</td><td style="padding:8px;border-bottom:1px solid #333">300 m, rdzeń 0,5" / 1"</td><td style="padding:8px;border-bottom:1px solid #333">300 m, rdzeń 0,5" / 1"</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">RAM / Flash</td><td style="padding:8px;border-bottom:1px solid #333">256 MB / 512 MB</td><td style="padding:8px;border-bottom:1px solid #333">256 MB / 512 MB</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Odklejak / Obcinacz</td><td style="padding:8px;border-bottom:1px solid #333">Opcja</td><td style="padding:8px;border-bottom:1px solid #333">Opcja</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333"><strong>Zarządzanie</strong></td><td style="padding:8px;border-bottom:1px solid #333"><strong>Link-OS, PrintDNA, MCS ✓</strong></td><td style="padding:8px;border-bottom:1px solid #333">Honeywell Operational Intelligence</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333"><strong>Język druku</strong></td><td style="padding:8px;border-bottom:1px solid #333"><strong>ZPL II natywny ✓</strong></td><td style="padding:8px;border-bottom:1px solid #333">ZPL II (emulacja), DPL</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333"><strong>Cena (USB)</strong></td><td style="padding:8px;border-bottom:1px solid #333"><strong>od 1 649 PLN ✓</strong></td><td style="padding:8px;border-bottom:1px solid #333">—</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333"><strong>Cena (z Ethernet)</strong></td><td style="padding:8px;border-bottom:1px solid #333"><strong>od 2 030 PLN ✓</strong></td><td style="padding:8px;border-bottom:1px solid #333">od 2 159 PLN</td></tr>
+<tr><td>Technologia</td><td>Termotransfer + termiczny</td><td>Termotransfer + termiczny</td></tr>
+<tr><td>Rozdzielczość</td><td>203 / 300 dpi</td><td>203 / 300 dpi</td></tr>
+<tr><td><strong>Prędkość druku</strong></td><td>152 mm/s (6 ips)</td><td><strong>203 mm/s (8 ips)</strong></td></tr>
+<tr><td>Szerokość druku</td><td>do 104 mm (4")</td><td>do 108 mm (4,25")</td></tr>
+<tr><td><strong>Wyświetlacz</strong></td><td>5 diod LED statusu</td><td><strong>Ekran dotykowy 3,5" LCD</strong></td></tr>
+<tr><td>USB</td><td>USB 2.0 + USB Host</td><td>USB 2.0 + USB Host</td></tr>
+<tr><td><strong>Ethernet</strong></td><td>Opcja (moduł snap-in)</td><td><strong>Standard</strong></td></tr>
+<tr><td>Wi-Fi</td><td>Opcja (802.11ac)</td><td>Opcja (Wi-Fi 6)</td></tr>
+<tr><td>Bluetooth</td><td>BT 4.1 / BLE 5</td><td>BLE 5.2</td></tr>
+<tr><td>RFID</td><td>Opcja (UHF)</td><td>Opcja (UHF)</td></tr>
+<tr><td>Ribbon</td><td>300 m, rdzeń 0,5" / 1"</td><td>300 m, rdzeń 0,5" / 1"</td></tr>
+<tr><td>RAM / Flash</td><td>256 MB / 512 MB</td><td>256 MB / 512 MB</td></tr>
+<tr><td>Odklejak / Obcinacz</td><td>Opcja</td><td>Opcja</td></tr>
+<tr><td><strong>Zarządzanie</strong></td><td><strong>Link-OS, PrintDNA, MCS</strong></td><td>Honeywell Operational Intelligence</td></tr>
+<tr><td><strong>Język druku</strong></td><td><strong>ZPL II natywny</strong></td><td>ZPL II (emulacja), DPL</td></tr>
+<tr><td><strong>Cena (USB)</strong></td><td><strong>od 1 649 PLN</strong></td><td>—</td></tr>
+<tr><td><strong>Cena (z Ethernet)</strong></td><td><strong>od 2 030 PLN</strong></td><td>od 2 159 PLN</td></tr>
 </tbody>
 </table>
 </div>
@@ -5416,19 +5416,19 @@ export const guides: Guide[] = [
       content: `<p><strong>Całkowity koszt posiadania (TCO) drukarki etykiet na 3 lata to 3–4× cena zakupu.</strong> Poniższa kalkulacja obejmuje scenariusz: obie drukarki biurkowe z Ethernet, 2 000 etykiet/dzień, 250 dni roboczych/rok.</p>
 
 <div style="overflow-x:auto">
-<table style="width:100%;border-collapse:collapse;font-size:14px">
+<table>
 <thead>
-<tr><th style="text-align:left;padding:8px;border-bottom:2px solid #444">Koszt (3 lata)</th><th style="text-align:right;padding:8px;border-bottom:2px solid #444">Zebra ZD421t</th><th style="text-align:right;padding:8px;border-bottom:2px solid #444">Honeywell PC45t</th></tr>
+<tr><th>Koszt (3 lata)</th><th>Zebra ZD421t</th><th>Honeywell PC45t</th></tr>
 </thead>
 <tbody>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Drukarka (z Ethernet)</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">2 030 PLN</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">2 159 PLN</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Ribbon wax 110mm×300m (×36 szt.)</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~2 160 PLN</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~2 160 PLN</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Etykiety (×1,5 mln szt.)</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~3 000 PLN</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~3 000 PLN</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Głowica wymienna (1×)</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~450 PLN</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~550 PLN</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Kontrakt serwisowy</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~800 PLN</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~900 PLN</td></tr>
-<tr style="font-weight:bold;background:#1a1a1a"><td style="padding:8px">TCO razem</td><td style="text-align:right;padding:8px">~8 440 PLN</td><td style="text-align:right;padding:8px">~8 769 PLN</td></tr>
-<tr style="font-weight:bold"><td style="padding:8px;border-bottom:1px solid #333">TCO / miesiąc</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~234 PLN</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~244 PLN</td></tr>
-<tr><td style="padding:8px"><strong>Różnica</strong></td><td style="text-align:right;padding:8px;color:#A8F000"><strong>~329 PLN taniej</strong></td><td style="text-align:right;padding:8px">—</td></tr>
+<tr><td>Drukarka (z Ethernet)</td><td>2 030 PLN</td><td>2 159 PLN</td></tr>
+<tr><td>Ribbon wax 110mm×300m (×36 szt.)</td><td>~2 160 PLN</td><td>~2 160 PLN</td></tr>
+<tr><td>Etykiety (×1,5 mln szt.)</td><td>~3 000 PLN</td><td>~3 000 PLN</td></tr>
+<tr><td>Głowica wymienna (1×)</td><td>~450 PLN</td><td>~550 PLN</td></tr>
+<tr><td>Kontrakt serwisowy</td><td>~800 PLN</td><td>~900 PLN</td></tr>
+<tr><td><strong>TCO razem</strong></td><td><strong>~8 440 PLN</strong></td><td><strong>~8 769 PLN</strong></td></tr>
+<tr><td><strong>TCO / miesiąc</strong></td><td><strong>~234 PLN</strong></td><td><strong>~244 PLN</strong></td></tr>
+<tr><td><strong>Różnica</strong></td><td><strong>~329 PLN taniej</strong></td><td>—</td></tr>
 </tbody>
 </table>
 </div>
@@ -5520,21 +5520,21 @@ export const guides: Guide[] = [
       content: `<p><strong>Podsumowanie porównania drukarek etykiet termotransferowych w 9 kategoriach:</strong></p>
 
 <div style="overflow-x:auto">
-<table style="width:100%;border-collapse:collapse;font-size:14px">
+<table>
 <thead>
-<tr><th style="text-align:left;padding:8px;border-bottom:2px solid #444">Kategoria</th><th style="text-align:center;padding:8px;border-bottom:2px solid #444">ZD421t</th><th style="text-align:center;padding:8px;border-bottom:2px solid #444">PC45t</th><th style="text-align:left;padding:8px;border-bottom:2px solid #444">Wygrywa</th></tr>
+<tr><th>Kategoria</th><th>ZD421t</th><th>PC45t</th><th>Wygrywa</th></tr>
 </thead>
 <tbody>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Cena (z Ethernet)</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">2 030 PLN</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">2 159 PLN</td><td style="padding:8px;border-bottom:1px solid #333">Remis (~129 PLN)</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">TCO 3 lata</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">~8 440 PLN</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">~8 769 PLN</td><td style="padding:8px;border-bottom:1px solid #333">Remis (~329 PLN)</td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Prędkość druku</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">152 mm/s</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">203 mm/s</td><td style="padding:8px;border-bottom:1px solid #333;color:#A8F000"><strong>PC45t</strong></td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Ekran</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">LED</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">3,5" dotykowy</td><td style="padding:8px;border-bottom:1px solid #333;color:#A8F000"><strong>PC45t</strong></td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Ethernet w standardzie</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">Opcja</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">Standard</td><td style="padding:8px;border-bottom:1px solid #333;color:#A8F000"><strong>PC45t</strong></td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Zarządzanie flotą</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">PrintDNA+MCS</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">OI</td><td style="padding:8px;border-bottom:1px solid #333;color:#A8F000"><strong>ZD421t</strong></td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Modularność</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">Snap-in</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">Stała</td><td style="padding:8px;border-bottom:1px solid #333;color:#A8F000"><strong>ZD421t</strong></td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Serwis w Polsce</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">serwis-zebry.pl</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">Dystrybutorzy</td><td style="padding:8px;border-bottom:1px solid #333;color:#A8F000"><strong>ZD421t</strong></td></tr>
-<tr><td style="padding:8px;border-bottom:1px solid #333">Kompatybilność ZPL II</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">Natywna</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">Emulacja</td><td style="padding:8px;border-bottom:1px solid #333;color:#A8F000"><strong>ZD421t</strong></td></tr>
-<tr style="font-weight:bold;background:#1a1a1a"><td style="padding:8px">WYNIK</td><td style="text-align:center;padding:8px">4 + 2 remisy</td><td style="text-align:center;padding:8px">3 + 2 remisy</td><td style="padding:8px;color:#A8F000">ZD421t (nieznacznie)</td></tr>
+<tr><td>Cena (z Ethernet)</td><td>2 030 PLN</td><td>2 159 PLN</td><td>Remis (~129 PLN)</td></tr>
+<tr><td>TCO 3 lata</td><td>~8 440 PLN</td><td>~8 769 PLN</td><td>Remis (~329 PLN)</td></tr>
+<tr><td>Prędkość druku</td><td>152 mm/s</td><td>203 mm/s</td><td><strong>PC45t</strong></td></tr>
+<tr><td>Ekran</td><td>LED</td><td>3,5" dotykowy</td><td><strong>PC45t</strong></td></tr>
+<tr><td>Ethernet w standardzie</td><td>Opcja</td><td>Standard</td><td><strong>PC45t</strong></td></tr>
+<tr><td>Zarządzanie flotą</td><td>PrintDNA+MCS</td><td>OI</td><td><strong>ZD421t</strong></td></tr>
+<tr><td>Modularność</td><td>Snap-in</td><td>Stała</td><td><strong>ZD421t</strong></td></tr>
+<tr><td>Serwis w Polsce</td><td>serwis-zebry.pl</td><td>Dystrybutorzy</td><td><strong>ZD421t</strong></td></tr>
+<tr><td>Kompatybilność ZPL II</td><td>Natywna</td><td>Emulacja</td><td><strong>ZD421t</strong></td></tr>
+<tr><td><strong>WYNIK</strong></td><td><strong>4 + 2 remisy</strong></td><td><strong>3 + 2 remisy</strong></td><td><strong>ZD421t (nieznacznie)</strong></td></tr>
 </tbody>
 </table>
 </div>
