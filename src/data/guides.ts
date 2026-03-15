@@ -5927,6 +5927,7 @@ export const guides: Guide[] = [
 },
 {
   slug: 'zebra-zt231-vs-zt411-porownanie',
+  heroImage: '/images/guides/zebra-zt231-zebra-zt411-porownanie-drukarek-etykiet.png',
   title: 'Zebra ZT231 vs ZT411 — porównanie drukarek przemysłowych 2026',
   seoTitle: 'Zebra ZT231 vs ZT411 — porównanie drukarek przemysłowych',
   seoDescription: 'Zebra ZT231 vs ZT411 — porównanie drukarek etykiet przemysłowych. 600 dpi, linerless, RFID, TCO od 2 675 zł. 10 sekcji, 5 scenariuszy. Którą wybrać? | TAKMA.',
