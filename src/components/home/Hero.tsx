@@ -57,7 +57,7 @@ const slides: HeroSlide[] = [
     imageClassName: 'object-contain object-[70%_center]',
     imageType: 'packshot',
     noOverlay: true,
-    bgColor: '#000000',
+    bgColor: '#0a0e10',
   },
   {
     type: 'product',
