@@ -5295,6 +5295,301 @@ export const guides: Guide[] = [
     { title: 'Serwis terminali Zebra', href: 'https://www.serwis-zebry.pl/serwis-terminali-mobilnych-zebra' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]
+},
+// ============================================================
+// 11. Zebra ZD421t vs Honeywell PC45t — porównanie drukarek etykiet 2026
+// ============================================================
+{
+  slug: 'zebra-zd421t-vs-honeywell-pc45t',
+  title: 'Zebra ZD421t vs Honeywell PC45t — porównanie drukarek etykiet 2026',
+  seoTitle: 'Zebra ZD421t vs Honeywell PC45t — porównanie drukarek 2026',
+  seoDescription: 'Zebra ZD421t vs Honeywell PC45t — porównanie drukarek etykiet termotransferowych. Specyfikacja, TCO na 3 lata, serwis w Polsce. Ceny od 2 030 zł netto | TAKMA.',
+  excerpt: 'Zebra ZD421t (drukarka etykiet termotransferowa od 1 649 zł) vs Honeywell PC45t (drukarka biurkowa z ekranem LCD 3,5" od 2 159 zł) — porównanie specyfikacji, prędkości druku, łączności, TCO na 3 lata i serwisu w Polsce. Pierwszy tak szczegółowy poradnik porównawczy w języku polskim.',
+  category: 'porownanie' as const,
+  tags: ['drukarki-etykiet', 'porownanie', 'zebra', 'honeywell', 'termotransferowa', 'zd421t', 'pc45t', 'biurkowa', 'tco'],
+  publishedAt: '2026-03-15',
+  updatedAt: '2026-03-15',
+  readTime: '14 min',
+  sections: [
+    {
+      id: 'podsumowanie',
+      heading: 'Zebra ZD421t vs Honeywell PC45t — którą drukarkę etykiet wybrać w 2026?',
+      content: `<p><strong>Zebra ZD421t (drukarka etykiet termotransferowa od 2 030 PLN z Ethernet) to modularna drukarka biurkowa z zarządzaniem PrintDNA/MCS i natywnym ZPL II — następca kultowego modelu GK420t. Honeywell PC45t (drukarka etykiet od 2 159 PLN z Ethernet w standardzie) to drukarka biurkowa z ekranem dotykowym 3,5", szybszym drukiem 203 mm/s i opcjonalnym RFID. Ceny obu drukarek etykiet termotransferowych są niemal identyczne (~129 PLN różnicy). ZD421t wygrywa ekosystemem Zebra i modularną budową. PC45t wygrywa prędkością druku i ekranem dotykowym.</strong></p>
+
+<div style="overflow-x:auto">
+<table>
+<thead>
+<tr><th>Parametr</th><th>Zebra ZD421t</th><th>Honeywell PC45t</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Cena (z Ethernet)</strong></td><td>od 2 030 PLN</td><td>od 2 159 PLN</td></tr>
+<tr><td>Prędkość druku</td><td>152 mm/s (6 ips)</td><td><strong>203 mm/s (8 ips)</strong></td></tr>
+<tr><td>Wyświetlacz</td><td>5 diod LED</td><td><strong>Ekran dotykowy 3,5"</strong></td></tr>
+<tr><td>Ethernet</td><td>Opcja (moduł)</td><td><strong>Standard</strong></td></tr>
+<tr><td>Zarządzanie flotą</td><td><strong>PrintDNA + MCS</strong></td><td>Operational Intelligence</td></tr>
+<tr><td>Język druku</td><td><strong>ZPL II (natywny)</strong></td><td>ZPL II (emulacja)</td></tr>
+<tr><td>Serwis w Polsce</td><td><strong>serwis-zebry.pl</strong></td><td>Dystrybutorzy</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Dla kogo Zebra ZD421t?</h3>
+<p>Drukarka etykiet Zebra ZD421t to najlepszy wybór dla firm w ekosystemie Zebra — użytkowników GK420t migrujących na nowy model (wymiana 1:1, natywny ZPL II), flotach zarządzanych centralnie przez PrintDNA/MCS oraz środowiskach, gdzie modularność (dodawanie Wi-Fi, Ethernet, RS-232 bez narzędzi) jest kluczowa.</p>
+
+<h3>Dla kogo Honeywell PC45t?</h3>
+<p>Drukarka etykiet Honeywell PC45t sprawdzi się w firmach potrzebujących szybszego druku (>2 000 etykiet/zmianę), ekranu dotykowego do konfiguracji bez komputera (wiele lokalizacji, operatorzy bez IT) oraz prostszej obsługi out-of-box z Ethernet w standardzie.</p>
+
+<p><strong>Werdykt:</strong> Jeśli jesteś w ekosystemie Zebra lub migrujesz z GK420t → <a href="/produkt/zebra-zd421t">Zebra ZD421t</a>. Jeśli potrzebujesz szybszego druku i ekranu dotykowego → <a href="/produkt/honeywell-pc45t">Honeywell PC45t</a>.</p>`
+    },
+    {
+      id: 'specyfikacje',
+      heading: 'Porównanie specyfikacji: ZD421t vs PC45t',
+      content: `<p><strong>Pełna tabela porównawcza drukarek etykiet termotransferowych Zebra ZD421t i Honeywell PC45t.</strong> Obie drukarki biurkowe obsługują etykiety do 4" (104–108 mm), ribbon wax/wax-resin/resin i oferują rozdzielczość 203 lub 300 dpi.</p>
+
+<div style="overflow-x:auto">
+<table style="width:100%;border-collapse:collapse;font-size:14px">
+<thead>
+<tr><th style="text-align:left;padding:8px;border-bottom:2px solid #444">Parametr</th><th style="text-align:left;padding:8px;border-bottom:2px solid #444">Zebra ZD421t</th><th style="text-align:left;padding:8px;border-bottom:2px solid #444">Honeywell PC45t</th></tr>
+</thead>
+<tbody>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Technologia</td><td style="padding:8px;border-bottom:1px solid #333">Termotransfer + termiczny</td><td style="padding:8px;border-bottom:1px solid #333">Termotransfer + termiczny</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Rozdzielczość</td><td style="padding:8px;border-bottom:1px solid #333">203 / 300 dpi</td><td style="padding:8px;border-bottom:1px solid #333">203 / 300 dpi</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333"><strong>Prędkość druku</strong></td><td style="padding:8px;border-bottom:1px solid #333">152 mm/s (6 ips)</td><td style="padding:8px;border-bottom:1px solid #333"><strong>203 mm/s (8 ips) ✓</strong></td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Szerokość druku</td><td style="padding:8px;border-bottom:1px solid #333">do 104 mm (4")</td><td style="padding:8px;border-bottom:1px solid #333">do 108 mm (4,25")</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333"><strong>Wyświetlacz</strong></td><td style="padding:8px;border-bottom:1px solid #333">5 diod LED statusu</td><td style="padding:8px;border-bottom:1px solid #333"><strong>Ekran dotykowy 3,5" LCD ✓</strong></td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">USB</td><td style="padding:8px;border-bottom:1px solid #333">USB 2.0 + USB Host</td><td style="padding:8px;border-bottom:1px solid #333">USB 2.0 + USB Host</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333"><strong>Ethernet</strong></td><td style="padding:8px;border-bottom:1px solid #333">Opcja (moduł snap-in)</td><td style="padding:8px;border-bottom:1px solid #333"><strong>Standard ✓</strong></td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Wi-Fi</td><td style="padding:8px;border-bottom:1px solid #333">Opcja (802.11ac)</td><td style="padding:8px;border-bottom:1px solid #333">Opcja (Wi-Fi 6)</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Bluetooth</td><td style="padding:8px;border-bottom:1px solid #333">BT 4.1 / BLE 5</td><td style="padding:8px;border-bottom:1px solid #333">BLE 5.2</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">RFID</td><td style="padding:8px;border-bottom:1px solid #333">Opcja (UHF)</td><td style="padding:8px;border-bottom:1px solid #333">Opcja (UHF)</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Ribbon</td><td style="padding:8px;border-bottom:1px solid #333">300 m, rdzeń 0,5" / 1"</td><td style="padding:8px;border-bottom:1px solid #333">300 m, rdzeń 0,5" / 1"</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">RAM / Flash</td><td style="padding:8px;border-bottom:1px solid #333">256 MB / 512 MB</td><td style="padding:8px;border-bottom:1px solid #333">256 MB / 512 MB</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Odklejak / Obcinacz</td><td style="padding:8px;border-bottom:1px solid #333">Opcja</td><td style="padding:8px;border-bottom:1px solid #333">Opcja</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333"><strong>Zarządzanie</strong></td><td style="padding:8px;border-bottom:1px solid #333"><strong>Link-OS, PrintDNA, MCS ✓</strong></td><td style="padding:8px;border-bottom:1px solid #333">Honeywell Operational Intelligence</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333"><strong>Język druku</strong></td><td style="padding:8px;border-bottom:1px solid #333"><strong>ZPL II natywny ✓</strong></td><td style="padding:8px;border-bottom:1px solid #333">ZPL II (emulacja), DPL</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333"><strong>Cena (USB)</strong></td><td style="padding:8px;border-bottom:1px solid #333"><strong>od 1 649 PLN ✓</strong></td><td style="padding:8px;border-bottom:1px solid #333">—</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333"><strong>Cena (z Ethernet)</strong></td><td style="padding:8px;border-bottom:1px solid #333"><strong>od 2 030 PLN ✓</strong></td><td style="padding:8px;border-bottom:1px solid #333">od 2 159 PLN</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Przy porównywalnej specyfikacji (obie drukarki etykiet z Ethernet) ceny są niemal identyczne: ZD421t 2 030 PLN vs PC45t 2 159 PLN — różnica zaledwie ~129 PLN. ZD421t wygrywa ekosystemem zarządzania (PrintDNA + MCS) i natywnym ZPL II. PC45t wygrywa prędkością druku (+33%), ekranem dotykowym 3,5" i prostszą konfiguracją out-of-box.</p>`
+    },
+    {
+      id: 'druk-jakosc',
+      heading: 'Jakość i prędkość druku — kto drukuje lepiej?',
+      content: `<p><strong>Rozdzielczość obu drukarek etykiet jest identyczna: 203 lub 300 dpi.</strong> Różnica leży w prędkości druku — Honeywell PC45t drukuje 203 mm/s (8 ips), a Zebra ZD421t 152 mm/s (6 ips). PC45t jest szybszy o 33%.</p>
+
+<h3>Wpływ na realną pracę</h3>
+<ul>
+<li><strong>500 etykiet/dzień</strong> — różnica ~3 minuty. Nieodczuwalna.</li>
+<li><strong>2 000 etykiet/dzień</strong> — różnica ~12 minut. Zauważalna przy napięte harmonogramy.</li>
+<li><strong>5 000 etykiet/dzień</strong> — różnica ~30 minut. Istotna — PC45t oszczędza pół godziny dziennie.</li>
+</ul>
+
+<p>Jakość wydruku jest porównywalna — obie drukarki biurkowe wykorzystują głowice termiczne typu Kyocera, drukują na tych samych mediach (papier termiczny, powlekany, polipropylen, poliester) i zapewniają czytelne kody kreskowe 1D/2D w obu rozdzielczościach.</p>
+
+<p><strong>Werdykt:</strong> Przy małych wolumenach (<1 000 etykiet/dzień) — remis. Przy dużych (>2 000) — <a href="/produkt/honeywell-pc45t">Honeywell PC45t</a> dzięki 33% szybszemu drukowi.</p>`
+    },
+    {
+      id: 'lacznosc',
+      heading: 'Łączność i integracja — modularność vs all-in-one',
+      content: `<p><strong>Drukarka etykiet Zebra ZD421t to drukarka modularna</strong> — kupujesz bazę USB (od 1 649 PLN), a potem dokładasz moduły Ethernet, Wi-Fi lub RS-232 bez narzędzi (snap-in). Honeywell PC45t ma Ethernet w standardzie — prostsze wdrożenie, ale brak elastyczności rozbudowy.</p>
+
+<h3>Zarządzanie flotą drukarek</h3>
+<ul>
+<li><strong>Zebra ZD421t + Link-OS + PrintDNA + MCS:</strong> zdalne zarządzanie flotą drukarek etykiet z chmury, konfiguracja OTA (Over-The-Air), monitoring stanu głowicy, zużycia ribbona i licznika etykiet w czasie rzeczywistym. <strong>Największy ekosystem zarządzania drukarkami na rynku.</strong></li>
+<li><strong>Honeywell PC45t + Operational Intelligence:</strong> odpowiednik Zebry, ale mniejszy ekosystem w Polsce i mniej partnerów wdrożeniowych.</li>
+</ul>
+
+<h3>Kompatybilność z systemami WMS</h3>
+<ul>
+<li><strong>ZD421t:</strong> natywny ZPL II — kompatybilny z ~99% systemów WMS w Polsce (SAP, Comarch, Asseco, Microsoft Dynamics). Zero problemów z layoutami etykiet.</li>
+<li><strong>PC45t:</strong> obsługuje ZPL II w trybie emulacji — kompatybilny, ale natywny język to DPL. Emulacja może powodować drobne różnice w pozycjonowaniu elementów na etykiecie.</li>
+</ul>
+
+<p><strong>Werdykt:</strong> <a href="/produkt/zebra-zd421t">ZD421t</a> — elastyczność rozbudowy + najpopularniejszy język druku w Polsce. <a href="/produkt/honeywell-pc45t">PC45t</a> — prostsza konfiguracja out-of-box z Ethernetem w standardzie.</p>`
+    },
+    {
+      id: 'tco',
+      heading: 'TCO — ile naprawdę kosztuje drukarka etykiet na 3 lata?',
+      content: `<p><strong>Całkowity koszt posiadania (TCO) drukarki etykiet na 3 lata to 3–4× cena zakupu.</strong> Poniższa kalkulacja obejmuje scenariusz: obie drukarki biurkowe z Ethernet, 2 000 etykiet/dzień, 250 dni roboczych/rok.</p>
+
+<div style="overflow-x:auto">
+<table style="width:100%;border-collapse:collapse;font-size:14px">
+<thead>
+<tr><th style="text-align:left;padding:8px;border-bottom:2px solid #444">Koszt (3 lata)</th><th style="text-align:right;padding:8px;border-bottom:2px solid #444">Zebra ZD421t</th><th style="text-align:right;padding:8px;border-bottom:2px solid #444">Honeywell PC45t</th></tr>
+</thead>
+<tbody>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Drukarka (z Ethernet)</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">2 030 PLN</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">2 159 PLN</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Ribbon wax 110mm×300m (×36 szt.)</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~2 160 PLN</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~2 160 PLN</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Etykiety (×1,5 mln szt.)</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~3 000 PLN</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~3 000 PLN</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Głowica wymienna (1×)</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~450 PLN</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~550 PLN</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Kontrakt serwisowy</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~800 PLN</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~900 PLN</td></tr>
+<tr style="font-weight:bold;background:#1a1a1a"><td style="padding:8px">TCO razem</td><td style="text-align:right;padding:8px">~8 440 PLN</td><td style="text-align:right;padding:8px">~8 769 PLN</td></tr>
+<tr style="font-weight:bold"><td style="padding:8px;border-bottom:1px solid #333">TCO / miesiąc</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~234 PLN</td><td style="text-align:right;padding:8px;border-bottom:1px solid #333">~244 PLN</td></tr>
+<tr><td style="padding:8px"><strong>Różnica</strong></td><td style="text-align:right;padding:8px;color:#A8F000"><strong>~329 PLN taniej</strong></td><td style="text-align:right;padding:8px">—</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><em>Uwaga: Drukarka etykiet Zebra ZD421t w wersji bazowej (USB, bez Ethernet) kosztuje od 1 649 PLN — wtedy TCO spada do ~8 059 PLN. Honeywell PC45t nie jest dostępny bez Ethernet, więc porównanie bazuje na tej samej konfiguracji łączności.</em></p>
+
+<p><strong>Wniosek:</strong> TCO na 3 lata jest niemal identyczne: ~8 440 vs ~8 769 PLN — różnica zaledwie ~329 PLN (~9 PLN/miesiąc). Przy tak zbliżonych kosztach <strong>decyzja powinna opierać się na funkcjonalności, a nie na cenie</strong>: prędkość druku, ekran, ekosystem zarządzania i dostępność serwisu w Polsce.</p>`
+    },
+    {
+      id: 'ekran-obsluga',
+      heading: 'Ekran i obsługa — diody LED vs dotykowy LCD',
+      content: `<p><strong>Drukarka etykiet Zebra ZD421t wyposażona jest w 5 diod LED statusu</strong> — minimalistyczne, ale wystarczające do diagnostyki (zaciął się ribbon, brak etykiet, otwarta pokrywa). Konfiguracja odbywa się przez Link-OS na komputerze lub smartfonie.</p>
+
+<p><strong>Drukarka etykiet Honeywell PC45t ma ekran dotykowy 3,5" (320×240 px)</strong> — można na nim skonfigurować drukarkę, sprawdzić status druku, zobaczyć IP sieciowe, przetestować wydruk i zdiagnozować problemy. Bez komputera.</p>
+
+<h3>Kiedy ekran dotykowy się przydaje?</h3>
+<ul>
+<li>Wiele lokalizacji — operatorzy konfigurują drukarki lokalnie, bez zdalnego IT</li>
+<li>Troubleshooting w terenie — technik widzi status bez laptopa</li>
+<li>Stanowiska z wieloma operatorami — intuicyjna obsługa, mniejsze szkolenia</li>
+</ul>
+
+<h3>Kiedy diody LED wystarczą?</h3>
+<ul>
+<li>Jedna lokalizacja — centralne zarządzanie przez PrintDNA/MCS</li>
+<li>Dedykowany operator — zna drukarkę, nie potrzebuje ekranu</li>
+<li>Minimalizm — mniej komponentów = mniej potencjalnych awarii</li>
+</ul>
+
+<p><strong>Werdykt:</strong> <a href="/produkt/honeywell-pc45t">PC45t z ekranem</a> = prostsze wdrożenie w wielu lokalizacjach. <a href="/produkt/zebra-zd421t">ZD421t z LED</a> = wystarczające przy centralnym zarządzaniu przez PrintDNA.</p>`
+    },
+    {
+      id: 'media-ribbon',
+      heading: 'Media i ribbon — kompatybilność materiałów eksploatacyjnych',
+      content: `<p><strong>Obie drukarki etykiet termotransferowe drukują na standardowych rolkach 4"</strong> z rdzeniem 0,5" i 1", obsługują ribbon wax/wax-resin/resin do 110 mm × 300 m. Kompatybilność z etykietami: papier termiczny, powlekany, polipropylen, poliester — identyczny zakres.</p>
+
+<h3>Wymiana ribbona i etykiet</h3>
+<ul>
+<li><strong>Zebra ZD421t:</strong> konstrukcja clamshell (otwieranie „muszelkowe") — otwierasz pokrywę, wkładasz ribbon i etykiety. Szybka wymiana, intuicyjna.</li>
+<li><strong>Honeywell PC45t:</strong> ładowanie z przodu (front-loading) — wygodniejsze w ciasnych przestrzeniach (drukarka na półce, pod monitorem).</li>
+</ul>
+
+<p><strong>Werdykt:</strong> Remis — obie drukarki biurkowe obsługują te same materiały eksploatacyjne. ZD421t ma szybszą wymianę ribbona (clamshell). PC45t łatwiej ładować w ciasnych szafkach (front-loading).</p>`
+    },
+    {
+      id: 'serwis',
+      heading: 'Serwis i wsparcie w Polsce — Zebra vs Honeywell',
+      content: `<p><strong>Dostępność serwisu to jeden z kluczowych czynników przy wyborze drukarki etykiet</strong> — awaria drukarki oznacza zatrzymanie linii pakowania lub wysyłki. Czas naprawy ma bezpośredni wpływ na koszty operacyjne.</p>
+
+<h3>Zebra ZD421t — serwis w Polsce</h3>
+<ul>
+<li><strong>Autoryzowany serwis:</strong> <a href="https://www.serwis-zebry.pl" target="_blank" rel="noopener">serwis-zebry.pl</a> (TAKMA) — części na miejscu, naprawa 3–5 dni roboczych</li>
+<li><strong>Zebra OneCare:</strong> kontrakt serwisowy ~800 PLN/3 lata — pokrycie awarii, wymiana w 3 dni</li>
+<li><strong>Wymiana przez użytkownika:</strong> głowica drukująca i wałek — snap-in, bez narzędzi</li>
+<li><strong>Części zamienne:</strong> pełna dostępność w TAKMA — głowice, wałki, obcinacze, odklejaki</li>
+</ul>
+
+<h3>Honeywell PC45t — serwis w Polsce</h3>
+<ul>
+<li><strong>Serwis:</strong> przez autoryzowanych dystrybutorów — czas naprawy 5–10 dni roboczych</li>
+<li><strong>Kontrakt serwisowy:</strong> ~900 PLN/3 lata — dostępny przez Honeywell Polska</li>
+<li><strong>Wymiana przez użytkownika:</strong> głowica drukująca — tak. Wałek — wymaga serwisu.</li>
+<li><strong>Części zamienne:</strong> dostępność przez Honeywell Polska — dłuższy czas oczekiwania</li>
+</ul>
+
+<p><strong>Werdykt:</strong> <a href="/produkt/zebra-zd421t">ZD421t</a> — szybszy serwis w Polsce. TAKMA to autoryzowany Zebra Premier Partner z serwisem na miejscu (<a href="https://www.serwis-zebry.pl" target="_blank" rel="noopener">serwis-zebry.pl</a>). PC45t — serwis dostępny, ale dłuższy czas oczekiwania na części.</p>`
+    },
+    {
+      id: 'nastepca-gk420t',
+      heading: 'Czy ZD421t to dobry następca GK420t?',
+      content: `<p><strong>Zebra GK420t to jedna z najpopularniejszych drukarek etykiet w historii</strong> — sprzedana w milionach egzemplarzy na całym świecie. Model jest EOL (End of Life) od 2021 roku — Zebra nie produkuje nowych jednostek i nie wydaje aktualizacji firmware.</p>
+
+<h3>Migracja GK420t → ZD421t</h3>
+<ul>
+<li><strong>Form factor:</strong> ten sam rozmiar biurkowy, ten sam rdzeń ribbona (0,5"/1"), te same etykiety</li>
+<li><strong>Język druku:</strong> natywny ZPL II — <strong>wszystkie istniejące layouty etykiet działają bez zmian</strong></li>
+<li><strong>Koszt migracji oprogramowania:</strong> zero — wymiana drukarki 1:1, plugowanie USB/Ethernet</li>
+<li><strong>Ulepszenia vs GK420t:</strong> modularna budowa, Link-OS, PrintDNA, BT/BLE, szybsza kalibracja</li>
+</ul>
+
+<h3>Alternatywa: Honeywell PC45t</h3>
+<p>Drukarka etykiet Honeywell PC45t to opcja, jeśli chcesz zmienić ekosystem. PC45t emuluje ZPL II — większość layoutów zadziała. Ale: emulacja ≠ natywna obsługa. Drobne różnice w pozycjonowaniu elementów na etykiecie mogą wymagać testowania i korekty szablonów.</p>
+
+<p><strong>Werdykt:</strong> Dla użytkowników GK420t drukarka etykiet <a href="/produkt/zebra-zd421t">Zebra ZD421t</a> to bezpieczna migracja 1:1. <a href="/produkt/honeywell-pc45t">Honeywell PC45t</a> to alternatywa, jeśli szukasz szybszego druku i ekranu — ale weź pod uwagę ryzyko emulacji ZPL.</p>`
+    },
+    {
+      id: 'werdykt',
+      heading: 'Werdykt: Zebra ZD421t czy Honeywell PC45t?',
+      content: `<p><strong>Podsumowanie porównania drukarek etykiet termotransferowych w 9 kategoriach:</strong></p>
+
+<div style="overflow-x:auto">
+<table style="width:100%;border-collapse:collapse;font-size:14px">
+<thead>
+<tr><th style="text-align:left;padding:8px;border-bottom:2px solid #444">Kategoria</th><th style="text-align:center;padding:8px;border-bottom:2px solid #444">ZD421t</th><th style="text-align:center;padding:8px;border-bottom:2px solid #444">PC45t</th><th style="text-align:left;padding:8px;border-bottom:2px solid #444">Wygrywa</th></tr>
+</thead>
+<tbody>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Cena (z Ethernet)</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">2 030 PLN</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">2 159 PLN</td><td style="padding:8px;border-bottom:1px solid #333">Remis (~129 PLN)</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">TCO 3 lata</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">~8 440 PLN</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">~8 769 PLN</td><td style="padding:8px;border-bottom:1px solid #333">Remis (~329 PLN)</td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Prędkość druku</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">152 mm/s</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">203 mm/s</td><td style="padding:8px;border-bottom:1px solid #333;color:#A8F000"><strong>PC45t</strong></td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Ekran</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">LED</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">3,5" dotykowy</td><td style="padding:8px;border-bottom:1px solid #333;color:#A8F000"><strong>PC45t</strong></td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Ethernet w standardzie</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">Opcja</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">Standard</td><td style="padding:8px;border-bottom:1px solid #333;color:#A8F000"><strong>PC45t</strong></td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Zarządzanie flotą</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">PrintDNA+MCS</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">OI</td><td style="padding:8px;border-bottom:1px solid #333;color:#A8F000"><strong>ZD421t</strong></td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Modularność</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">Snap-in</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">Stała</td><td style="padding:8px;border-bottom:1px solid #333;color:#A8F000"><strong>ZD421t</strong></td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Serwis w Polsce</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">serwis-zebry.pl</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">Dystrybutorzy</td><td style="padding:8px;border-bottom:1px solid #333;color:#A8F000"><strong>ZD421t</strong></td></tr>
+<tr><td style="padding:8px;border-bottom:1px solid #333">Kompatybilność ZPL II</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">Natywna</td><td style="text-align:center;padding:8px;border-bottom:1px solid #333">Emulacja</td><td style="padding:8px;border-bottom:1px solid #333;color:#A8F000"><strong>ZD421t</strong></td></tr>
+<tr style="font-weight:bold;background:#1a1a1a"><td style="padding:8px">WYNIK</td><td style="text-align:center;padding:8px">4 + 2 remisy</td><td style="text-align:center;padding:8px">3 + 2 remisy</td><td style="padding:8px;color:#A8F000">ZD421t (nieznacznie)</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>Kluczowy wniosek: cena NIE jest czynnikiem różnicującym.</strong> Przy ~129 PLN różnicy (z Ethernet) decyzja opiera się wyłącznie na funkcjonalności i ekosystemie.</p>
+
+<h3>Wybierz Zebra ZD421t, jeśli:</h3>
+<ul>
+<li>Migrujesz z GK420t — wymiana 1:1, natywny ZPL II, zero zmian w oprogramowaniu</li>
+<li>Zarządzasz flotą drukarek przez PrintDNA/MCS — centralne zarządzanie z chmury</li>
+<li>Potrzebujesz modularności — dobudujesz Wi-Fi, RS-232 lub Ethernet w przyszłości</li>
+<li>Jesteś w ekosystemie Zebra — skanery, terminale, drukarki od jednego producenta</li>
+</ul>
+
+<h3>Wybierz Honeywell PC45t, jeśli:</h3>
+<ul>
+<li>Drukujesz >2 000 etykiet/zmianę — 33% szybszy druk oszczędza czas</li>
+<li>Potrzebujesz ekranu dotykowego — konfiguracja i diagnostyka bez komputera</li>
+<li>Wdrażasz w wielu lokalizacjach bez centralnego IT — operatorzy radzą sobie samodzielnie</li>
+<li>Szukasz prostszego wdrożenia — Ethernet w standardzie, out-of-box</li>
+</ul>
+
+<p><strong>Oba modele dostępne w TAKMA:</strong> <a href="/produkt/zebra-zd421t">Zebra ZD421t od 1 649 PLN</a> | <a href="/produkt/honeywell-pc45t">Honeywell PC45t od 2 159 PLN</a>. <a href="/kontakt">Skontaktuj się po indywidualną ofertę</a> — bezpłatnie dobierzemy drukarkę do Twoich potrzeb.</p>`
+    }
+  ],
+
+  faq: [
+    { question: 'Co to jest Zebra ZD421t?', answer: 'Zebra ZD421t to drukarka etykiet termotransferowa biurkowa klasy 4" (104 mm) z modularną konstrukcją, natywnym językiem ZPL II i zarządzaniem PrintDNA/MCS. Następca popularnego modelu GK420t. Drukuje etykiety, kody kreskowe i tagi RFID (opcja) z prędkością do 152 mm/s. Cena od 1 649 PLN netto (USB) lub 2 030 PLN (z Ethernet).' },
+    { question: 'Co to jest Honeywell PC45t?', answer: 'Honeywell PC45t to drukarka etykiet termotransferowa biurkowa 4" (108 mm) z ekranem dotykowym LCD 3,5", Ethernet w standardzie i prędkością druku 203 mm/s (8 ips). Następca modeli PC42t/PC43t. Obsługuje ZPL II w trybie emulacji. Cena od 2 159 PLN netto (USB + Ethernet). Opcjonalnie: Wi-Fi 6, Bluetooth 5.2, RFID UHF.' },
+    { question: 'Gdzie kupić drukarkę Zebra ZD421t i Honeywell PC45t w Polsce?', answer: 'Obie drukarki etykiet są dostępne w autoryzowanym sklepie TAKMA (takma.com.pl). Zebra ZD421t od 2 030 PLN netto (z Ethernet), Honeywell PC45t od 2 159 PLN netto (Ethernet w standardzie). TAKMA oferuje: doradztwo w wyborze, konfigurację, serwis gwarancyjny (serwis-zebry.pl dla Zebra), kontrakty serwisowe i materiały eksploatacyjne (etykiety, ribbony, głowice). Kontakt: +48 607 819 688.' },
+    { question: 'Zebra ZD421t vs Honeywell PC45t — czym się różnią?', answer: 'Przy niemal identycznej cenie (~129 PLN różnicy z Ethernet) kluczowe różnice to: PC45t drukuje 33% szybciej (203 vs 152 mm/s), ma ekran dotykowy 3,5" i Ethernet w standardzie. ZD421t ma modularną budowę (snap-in moduły Wi-Fi/Ethernet/RS-232), natywny ZPL II (vs emulacja w PC45t), lepsze zarządzanie flotą (PrintDNA + MCS) i szybszy serwis w Polsce (serwis-zebry.pl). Wynik: ZD421t 4:3 (z 2 remisami).' },
+    { question: 'Która drukarka etykiet jest szybsza — ZD421t czy PC45t?', answer: 'Honeywell PC45t drukuje 203 mm/s (8 ips) vs 152 mm/s (6 ips) w Zebra ZD421t — o 33% szybciej. Przy 2 000 etykiet/dzień różnica to ~12 minut. Przy 5 000 etykiet/dzień — ~30 minut dziennie. Przy małych wolumenach (<1 000/dzień) różnica jest nieodczuwalna.' },
+    { question: 'Która drukarka etykiet jest tańsza — ZD421t czy PC45t?', answer: 'Przy tej samej konfiguracji (z Ethernet): Zebra ZD421t od 2 030 PLN vs Honeywell PC45t od 2 159 PLN — różnica zaledwie ~129 PLN. TCO na 3 lata: ~8 440 vs ~8 769 PLN (~329 PLN różnicy, ~9 PLN/miesiąc). ZD421t w wersji bazowej (USB, bez Ethernet) kosztuje od 1 649 PLN — najniższa cena wejścia. Cena nie jest czynnikiem różnicującym — wybór powinien opierać się na funkcjonalności.' },
+    { question: 'Czy Honeywell PC45t obsługuje język ZPL II Zebry?', answer: 'Tak, drukarka etykiet Honeywell PC45t obsługuje ZPL II w trybie emulacji. Większość layoutów etykiet zaprojektowanych dla drukarek Zebra zadziała bez zmian. Ale: emulacja może powodować drobne różnice w pozycjonowaniu tekstu i kodów kreskowych — zalecamy testowanie szablonów przed wdrożeniem produkcyjnym. Natywny język PC45t to DPL (Datamax Programming Language).' },
+    { question: 'Ile kosztuje Zebra ZD421t?', answer: 'Drukarka etykiet Zebra ZD421t: od 1 649 PLN netto (203 dpi, USB + BLE), 1 883 PLN (300 dpi, USB), 2 030 PLN (203 dpi, USB + Ethernet), 2 168 PLN (203 dpi, USB + BT + Wi-Fi), 2 252 PLN (300 dpi, USB + Ethernet), 2 454 PLN (300 dpi, USB + BT + Wi-Fi). Wszystkie ceny netto, aktualne na marzec 2026. Aktualne ceny: takma.com.pl/produkt/zebra-zd421t.' },
+    { question: 'Ile kosztuje Honeywell PC45t?', answer: 'Drukarka etykiet Honeywell PC45t: od 2 159 PLN netto (203 dpi, USB + Ethernet), 2 298 PLN (300 dpi, USB + Ethernet), 2 371 PLN (203 dpi, USB + Ethernet + BT 5.2 + Wi-Fi 6). Ethernet w standardzie we wszystkich konfiguracjach. Ceny netto, aktualne na marzec 2026. Aktualne ceny: takma.com.pl/produkt/honeywell-pc45t.' },
+    { question: 'Czy ZD421t to następca GK420t?', answer: 'Tak — Zebra ZD421t to oficjalny następca GK420t (EOL od 2021). Ten sam form factor biurkowy, natywny ZPL II, kompatybilne etykiety i ribbony. Migracja GK420t → ZD421t to wymiana 1:1 — zerowy koszt po stronie oprogramowania WMS. Ulepszenia: modularna budowa, Link-OS, PrintDNA, BT/BLE, szybsza kalibracja i zarządzanie z chmury (MCS).' },
+    { question: 'Jaka drukarka etykiet do magazynu — ZD421t czy PC45t?', answer: 'Do standardowego magazynu z systemem WMS rekomendujemy Zebra ZD421t — natywny ZPL II gwarantuje 100% kompatybilność z SAP, Comarch, Asseco i innymi WMS-ami w Polsce. PrintDNA umożliwia centralne zarządzanie flotą drukarek etykiet. Serwis w Polsce: serwis-zebry.pl. PC45t to dobra alternatywa, jeśli drukujesz >2 000 etykiet/zmianę (szybszy druk) lub potrzebujesz ekranu do konfiguracji bez IT.' },
+    { question: 'Jaka drukarka termotransferowa do e-commerce?', answer: 'Do e-commerce (etykiety kurierskie, etykiety produktowe) rekomendujemy Zebra ZD421t od 1 649 PLN — najtańsze wejście w druk termotransferowy, natywny ZPL II, prosta integracja z Allegro, Shopify, WooCommerce. Jeśli drukujesz >3 000 przesyłek/dzień — Honeywell PC45t (szybszy druk 203 mm/s). Obie drukarki biurkowe obsługują etykiety kurierskie 100×150 mm.' },
+    { question: 'Czy mogę drukować etykiety kurierskie na ZD421t i PC45t?', answer: 'Tak — obie drukarki etykiet obsługują etykiety kurierskie 100×150 mm (standardowy format DPD, InPost, DHL, UPS, FedEx, Poczta Polska). ZD421t drukuje do 104 mm szerokości, PC45t do 108 mm. Oba modele obsługują druk termiczny (bez ribbona, na etykietach termoczułych) i termotransferowy (z ribbonem, trwalszy wydruk). Do etykiet kurierskich wystarcza tryb termiczny.' },
+    { question: 'Jakie są alternatywy dla ZD421t i PC45t?', answer: 'W niższym budżecie: Zebra ZD220t (od 621 PLN, podstawowa termotransferowa) lub Zebra ZD230d (od 659 PLN, termiczna). W wyższym segmencie: Zebra ZD621t (od 2 481 PLN, kolorowy LCD, 203 mm/s), Honeywell PC45d (wersja termiczna PC45). Porównanie wszystkich drukarek Zebra: <a href="/poradnik/drukarki-etykiet-zebra-przewodnik">przewodnik po drukarkach Zebra</a>.' }
+  ],
+
+  relatedLinks: [
+    { title: 'Zebra ZD421t — karta produktu', href: '/produkt/zebra-zd421t' },
+    { title: 'Honeywell PC45t — karta produktu', href: '/produkt/honeywell-pc45t' },
+    { title: 'Jak wybrać drukarkę etykiet — poradnik', href: '/poradnik/jak-wybrac-drukarke-etykiet' },
+    { title: 'Drukarka termiczna vs termotransferowa', href: '/poradnik/drukarka-termiczna-vs-termotransferowa' },
+    { title: 'Drukarki etykiet Zebra — przewodnik', href: '/poradnik/drukarki-etykiet-zebra-przewodnik' },
+    { title: 'Zebra ZD220t — najtańsza termotransferowa', href: '/produkt/zebra-zd220t' },
+    { title: 'Zebra ZD621t — premium biurkowa', href: '/produkt/zebra-zd621t' },
+    { title: 'Biurkowe drukarki etykiet — pełna oferta', href: '/biurkowe-drukarki-etykiet' },
+    { title: 'Serwis drukarek Zebra w Polsce', href: 'https://www.serwis-zebry.pl/serwis-drukarek-zebra' },
+    { title: 'Kontakt i doradztwo', href: '/kontakt' },
+  ]
 }
 ]
 
