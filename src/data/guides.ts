@@ -6677,7 +6677,7 @@ export const guides: Guide[] = [
       content: `<p>Wybór kolektora danych do inwentaryzacji zależy od metody inwentaryzacji stosowanej w Twojej firmie. Każda metoda ma inne wymagania co do terminala mobilnego — od lekkiego smartpodobnego urządzenia po ciężki gun grip z klawiaturą.</p>
 
 <h3>Inwentaryzacja pełna (roczna)</h3>
-<p>Inwentaryzacja pełna to obowiązkowe (wg Ustawy o Rachunkowości) przeliczenie WSZYSTKICH stanów magazynowych — zwykle raz w roku, przy zamknięciu operacji magazynu. Wymaga: szybki skaner kodów kreskowych, duża bateria (>5 000 mAh), uchwyt pistoletowy (gun grip) dla operatorów skanujących ponad 1 000 pozycji na zmianę. Kolektor danych do inwentaryzacji pełnej: <a href="/produkt/zebra-mc3400">Zebra MC3400</a> (gun, klawiatura, skaner do 30,5 m), <a href="/produkt/zebra-mc9400">Zebra MC9400</a> (chłodnia/mroźnia). Porównanie: <a href="/poradnik/zebra-mc3400-vs-mc9400">MC3400 vs MC9400</a>.</p>
+<p>Inwentaryzacja pełna to obowiązkowe (wg Ustawy o Rachunkowości) przeliczenie WSZYSTKICH stanów magazynowych — zwykle raz w roku, przy zamknięciu operacji magazynu. Wymaga: szybki skaner kodów kreskowych, duża bateria (>5 000 mAh), uchwyt pistoletowy (gun grip) dla operatorów skanujących ponad 1 000 pozycji na zmianę. Kolektor danych do inwentaryzacji pełnej: <a href="/produkt/zebra-mc3400">Zebra MC3400</a> (gun, klawiatura, skaner do 30,5 m), <a href="/produkt/honeywell-ck67">Honeywell CK67</a> (gun, FlexRange do 24 m), <a href="/produkt/datalogic-skorpio-x5">Datalogic Skorpio X5</a> (gun, 4,3" z klawiaturą), <a href="/produkt/zebra-mc9400">Zebra MC9400</a> (chłodnia/mroźnia). Porównanie: <a href="/poradnik/zebra-mc3400-vs-mc9400">MC3400 vs MC9400</a>.</p>
 
 <h3>Inwentaryzacja ciągła (permanentna)</h3>
 <p>Inwentaryzacja ciągła to codzienne liczenie wybranych sekcji magazynu bez zamykania operacji. Wymaga: lekki terminal mobilny (<300 g), Wi-Fi do synchronizacji z WMS w czasie rzeczywistym. Rekomendowane kolektory danych: <a href="/produkt/zebra-tc22">Zebra TC22</a> (275 g, 6", IP68), <a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a> (245 g — najlżejszy terminal na rynku), <a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a> (budżetowy).</p>
@@ -6689,7 +6689,7 @@ export const guides: Guide[] = [
 <p>Inwentaryzacja RFID to skanowanie setek tagów jednocześnie z odległości do 5 metrów — bez kontaktu wzrokowego z etykietą. Jeden operator z kolektorem danych RFID liczy 3 000-5 000 pozycji na godzinę (vs 500-800 z kodem kreskowym). Wymaga: terminal mobilny z wbudowanym czytnikiem RFID UHF. Rekomendowane kolektory danych: <a href="/produkt/zebra-tc501">Zebra TC501</a> (3 730 zł — najtańszy z wbudowanym RFID). Porównanie: <a href="/poradnik/zebra-tc501-vs-tc58">TC501 vs TC58</a>.</p>
 
 <h3>Inwentaryzacja środków trwałych</h3>
-<p>Inwentaryzacja środków trwałych to coroczne sprawdzenie wyposażenia: meble, komputery, maszyny, narzędzia. Wymaga: lekki kolektor danych + kamera do zdjęć stanu. Rekomendowane terminale mobilne: <a href="/produkt/zebra-tc22">Zebra TC22</a> z kamerą, <a href="/produkt/zebra-em45">Zebra EM45</a> (kamera 50 MP — idealna do dokumentacji fotograficznej). Porównanie: <a href="/poradnik/zebra-tc22-vs-tc27">TC22 vs TC27</a>.</p>
+<p>Inwentaryzacja środków trwałych to coroczne sprawdzenie wyposażenia: meble, komputery, maszyny, narzędzia. Wymaga: lekki kolektor danych + kamera do zdjęć stanu. Rekomendowane terminale mobilne: <a href="/produkt/honeywell-ct70">Honeywell CT70</a> (kamera 48 MP, IP68), <a href="/produkt/zebra-em45">Zebra EM45</a> (kamera 50 MP — najlepsza do dokumentacji fotograficznej), <a href="/produkt/datalogic-memor-30">Datalogic Memor 30</a> (16 MP, IP68). Porównanie: <a href="/poradnik/zebra-tc22-vs-tc27">TC22 vs TC27</a>.</p>
 
 <h3>Podsumowanie — jaki kolektor danych do jakiej metody inwentaryzacji?</h3>
 <table style="width:100%">
@@ -6703,11 +6703,11 @@ export const guides: Guide[] = [
     </tr>
   </thead>
   <tbody>
-    <tr><td>Pełna (roczna)</td><td>1x/rok</td><td>2-5 dni</td><td><a href="/produkt/zebra-mc3400">Zebra MC3400</a></td><td><span data-live-price="zebra-mc3400">4 561 zł</span></td></tr>
-    <tr><td>Ciągła (permanentna)</td><td>codziennie</td><td>1-2 h/dzień</td><td><a href="/produkt/zebra-tc22">Zebra TC22</a></td><td><span data-live-price="zebra-tc22">2 417 zł</span></td></tr>
-    <tr><td>Cykliczna (ABC)</td><td>co tydzień/miesiąc</td><td>4-8 h</td><td><a href="/produkt/zebra-tc22">Zebra TC22</a></td><td><span data-live-price="zebra-tc22">2 417 zł</span></td></tr>
+    <tr><td>Pełna (roczna)</td><td>1x/rok</td><td>2-5 dni</td><td><a href="/produkt/zebra-mc3400">Zebra MC3400</a> / <a href="/produkt/honeywell-ck67">Honeywell CK67</a></td><td>od <span data-live-price="zebra-mc3400">4 561 zł</span></td></tr>
+    <tr><td>Ciągła (permanentna)</td><td>codziennie</td><td>1-2 h/dzień</td><td><a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a> / <a href="/produkt/zebra-tc22">Zebra TC22</a></td><td>od <span data-live-price="datalogic-memor-12">2 687 zł</span></td></tr>
+    <tr><td>Cykliczna (ABC)</td><td>co tydzień/miesiąc</td><td>4-8 h</td><td><a href="/produkt/honeywell-ct32">Honeywell CT32</a> / <a href="/produkt/zebra-tc22">Zebra TC22</a></td><td>od <span data-live-price="zebra-tc22">2 417 zł</span></td></tr>
     <tr><td>RFID (masowa)</td><td>dowolna</td><td>90% szybsza</td><td><a href="/produkt/zebra-tc501">Zebra TC501</a></td><td><span data-live-price="zebra-tc501">3 730 zł</span></td></tr>
-    <tr><td>Środki trwałe</td><td>1x/rok</td><td>1-3 dni</td><td><a href="/produkt/zebra-em45">Zebra EM45</a></td><td><span data-live-price="zebra-em45">2 951 zł</span></td></tr>
+    <tr><td>Środki trwałe</td><td>1x/rok</td><td>1-3 dni</td><td><a href="/produkt/honeywell-ct70">Honeywell CT70</a> / <a href="/produkt/zebra-em45">Zebra EM45</a></td><td>od <span data-live-price="zebra-em45">2 951 zł</span></td></tr>
   </tbody>
 </table>`
     },
@@ -6755,8 +6755,9 @@ export const guides: Guide[] = [
 <ul>
   <li><strong>SE55 (7,6 m)</strong> — standard w <a href="/produkt/zebra-tc22">Zebra TC22</a>. Wystarczający do regałów do 3 m wysokości</li>
   <li><strong>SE58 (30,5 m)</strong> — w <a href="/produkt/zebra-mc3400">Zebra MC3400</a>. Regały wysokiego składowania >6 m bez drabiny</li>
-  <li><strong>AC670 (30 m)</strong> — w <a href="/produkt/zebra-tc501">Zebra TC501</a>. Kolorowy imager do skanowania z najwyższych regałów</li>
-  <li><strong>FlexRange (24 m)</strong> — w <a href="/produkt/honeywell-ct47">Honeywell CT47</a>. Honeywell's odpowiednik SE58</li>
+  <li><strong>FlexRange XLR (24 m)</strong> — w <a href="/produkt/honeywell-ck67">Honeywell CK67</a>, <a href="/produkt/honeywell-ct47">CT47</a>. Odpowiednik SE58 od Honeywell</li>
+  <li><strong>Mega 1.4 MP (15 m)</strong> — w <a href="/produkt/datalogic-skorpio-x5">Datalogic Skorpio X5</a>, <a href="/produkt/datalogic-memor-30">Memor 30</a>. Szybki imager Datalogic</li>
+  <li><strong>Newland EM4300 (20 m)</strong> — w <a href="/produkt/newland-n7-cachalot-pro-ii">Newland N7 Cachalot</a>. Budżetowy daleki zasięg</li>
 </ul>
 
 <h3>2. Bateria — czas pracy przy ciągłym skanowaniu</h3>
@@ -6782,7 +6783,7 @@ export const guides: Guide[] = [
 <p>Duży ekran (5,5-6") przyspiesza przeglądanie list inwentaryzacyjnych na kolektorze danych. Gorilla Glass + dotyk w rękawicach (glove mode) — obowiązkowy w chłodniach. Klawiatura fizyczna przyspiesza wpisywanie ilości (np. "47 szt.") — kluczowa przy inwentaryzacji pełnej: <a href="/produkt/zebra-mc3400">Zebra MC3400</a>, <a href="/produkt/newland-n7-cachalot-pro-ii">Newland N7 Cachalot</a>, <a href="/produkt/honeywell-ck62">Honeywell CK62</a>.</p>
 
 <h3>5. Łączność — Wi-Fi, 5G, Bluetooth</h3>
-<p>Wi-Fi 6E (standard 2026) — szybka synchronizacja kolektora danych z WMS w czasie rzeczywistym. 5G/LTE — inwentaryzacja w terenie bez Wi-Fi: <a href="/produkt/zebra-tc27">Zebra TC27</a>, <a href="/produkt/zebra-em45">Zebra EM45</a>. Bluetooth — drukowanie etykiet on-site z kolektora danych na drukarkę Zebra.</p>
+<p>Wi-Fi 6E (standard 2026) — szybka synchronizacja kolektora danych z WMS w czasie rzeczywistym. 5G/LTE — inwentaryzacja w terenie bez Wi-Fi: <a href="/produkt/honeywell-ct47">Honeywell CT47</a>, <a href="/produkt/zebra-tc27">Zebra TC27</a>, <a href="/produkt/newland-mt95-kambur-pro-ii">Newland MT95 Kambur</a>, <a href="/produkt/datalogic-memor-17">Datalogic Memor 17</a>. Bluetooth — drukowanie etykiet on-site z kolektora danych na drukarkę mobilną.</p>
 
 <h3>6. System operacyjny i wsparcie</h3>
 <p>100% rekomendowanych kolektorów danych działa na Android. Różnice w długości wsparcia: Zebra 8-10 lat (LifeGuard), Honeywell 5-7 lat, Datalogic 3-5 lat, Newland 3-4 lata. Dłuższe wsparcie = niższy TCO terminala mobilnego.</p>
@@ -6836,13 +6837,15 @@ export const guides: Guide[] = [
   </tbody>
 </table>
 
-<h3>Top 5 rekomendacji TAKMA — kolektory danych do inwentaryzacji</h3>
+<h3>Top 7 rekomendacji TAKMA — kolektory danych do inwentaryzacji</h3>
 <ol>
-  <li><strong><a href="/produkt/zebra-tc22">Zebra TC22</a> (<span data-live-price="zebra-tc22">2 417 zł</span>)</strong> — najlepszy stosunek cena/jakość. 90% firm z magazynem do 30 000 SKU nie potrzebuje nic więcej. Kolektor danych Zebra z ekranem 6", IP68, Wi-Fi 6E i skanerem SE55 do 7,6 m.</li>
-  <li><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a> (<span data-live-price="zebra-mc3400">4 561 zł</span>)</strong> — duży magazyn, klawiatura fizyczna, gun grip. Najlepszy kolektor danych do inwentaryzacji pełnej z WMS. Skaner SE58 do 30,5 m, hot-swap bateria.</li>
-  <li><strong><a href="/produkt/zebra-tc501">Zebra TC501</a> (<span data-live-price="zebra-tc501">3 730 zł</span>)</strong> — jedyny terminal mobilny z wbudowanym RFID UHF poniżej 4 000 zł. Inwentaryzacja RFID bez osobnego czytnika.</li>
-  <li><strong><a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a> (<span data-live-price="newland-mt93-megattera-standard-plus">2 207 zł</span>)</strong> — najniższy budżet. Solidny kolektor danych do inwentaryzacji za cenę tańszego smartfona. IP67, Wi-Fi 5.</li>
-  <li><strong><a href="/produkt/zebra-mc9400">Zebra MC9400</a> (<span data-live-price="zebra-mc9400">7 638 zł</span>)</strong> — mroźnia -30°C. Jedyny kolektor danych z baterią freezer i heated display do ekstremalnych temperatur.</li>
+  <li><strong><a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a> (<span data-live-price="newland-mt93-megattera-standard-plus">2 207 zł</span>)</strong> — najniższy budżet. Solidny kolektor danych do inwentaryzacji za cenę tańszego smartfona. IP67, Wi-Fi 5, Android 13. Idealny na start dla firm do 5 000 SKU.</li>
+  <li><strong><a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a> (<span data-live-price="datalogic-memor-12">2 687 zł</span>)</strong> — najlżejszy i najsmuklejszy kolektor danych (245 g). Idealny do inwentaryzacji ciągłej w retail, gdzie liczy się ergonomia. Skaner 2D, IP65, Gorilla Glass.</li>
+  <li><strong><a href="/produkt/zebra-tc22">Zebra TC22</a> (<span data-live-price="zebra-tc22">2 417 zł</span>)</strong> — bestseller. Ekran 6" FHD+, IP68, Wi-Fi 6E, skaner SE55 do 7,6 m. 10 lat wsparcia LifeGuard — najniższy TCO wśród kolektorów touch.</li>
+  <li><strong><a href="/produkt/honeywell-ct32">Honeywell CT32</a> (<span data-live-price="honeywell-ct32">3 389 zł</span>)</strong> — bateria hot-swap. Jedyny terminal mobilny Honeywell z wymienną baterią w cenie poniżej 3 500 zł. Inwentaryzacja cykliczna bez przestojów na ładowanie.</li>
+  <li><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a> (<span data-live-price="zebra-mc3400">4 561 zł</span>)</strong> — gun z klawiaturą do dużych magazynów. Skaner SE58 do 30,5 m, hot-swap bateria, 3 opcje klawiatury. Alternatywa: <a href="/produkt/honeywell-ck67">Honeywell CK67</a> (<span data-live-price="honeywell-ck67">7 765 zł</span>) z FlexRange XLR.</li>
+  <li><strong><a href="/produkt/datalogic-memor-30">Datalogic Memor 30</a> (<span data-live-price="datalogic-memor-30">4 869 zł</span>)</strong> — premium touch od Datalogic. Ekran 6", IP68, skaner Mega 1.4 MP. Dla firm preferujących ekosystem Datalogic (DL-AXIST, Wavelink).</li>
+  <li><strong><a href="/produkt/zebra-tc501">Zebra TC501</a> (<span data-live-price="zebra-tc501">3 730 zł</span>)</strong> — RFID UHF wbudowany. Jedyny terminal z czytnikiem RFID poniżej 4 000 zł. Inwentaryzacja 3 000-5 000 tagów/h bez osobnego czytnika.</li>
 </ol>
 
 <p>Pełny ranking terminali mobilnych z cenami: <a href="/poradnik/top-10-terminali-mobilnych-2026">TOP 15 kolektorów danych 2026 — ranking z cenami</a>. Porównanie marek: <a href="/poradnik/zebra-vs-honeywell-terminale-mobilne">Zebra vs Honeywell — terminale mobilne</a>.</p>`
@@ -6873,8 +6876,8 @@ export const guides: Guide[] = [
 
 <p>Wydajność skanowania kolektorem danych przy inwentaryzacji:</p>
 <ul>
-  <li><strong>Gun grip z klawiaturą</strong> (<a href="/produkt/zebra-mc3400">MC3400</a>): 800-1 200 skanów/h → 10 000 SKU = 8-12 h</li>
-  <li><strong>Touch</strong> (<a href="/produkt/zebra-tc22">TC22</a>): 500-800 skanów/h → 10 000 SKU = 12-20 h</li>
+  <li><strong>Gun grip z klawiaturą</strong> (<a href="/produkt/zebra-mc3400">MC3400</a>, <a href="/produkt/honeywell-ck67">CK67</a>, <a href="/produkt/datalogic-skorpio-x5">Skorpio X5</a>): 800-1 200 skanów/h → 10 000 SKU = 8-12 h</li>
+  <li><strong>Touch</strong> (<a href="/produkt/zebra-tc22">TC22</a>, <a href="/produkt/honeywell-ct32">CT32</a>, <a href="/produkt/datalogic-memor-30">Memor 30</a>): 500-800 skanów/h → 10 000 SKU = 12-20 h</li>
   <li><strong>RFID</strong> (<a href="/produkt/zebra-tc501">TC501</a>): 3 000-5 000 odczytów/h → 10 000 tagów = 2-3 h</li>
 </ul>`
     },
@@ -6906,7 +6909,7 @@ export const guides: Guide[] = [
 <p>Skaner kodów kreskowych w kolektorze nie ma co skanować, jeśli regały nie mają etykiet. Rozwiązanie: wydrukuj etykiety regałowe — drukarka etykiet <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> + etykiety Z-Perform 102x152 mm.</p>
 
 <h3>5. Niekompatybilność z WMS</h3>
-<p>Terminal mobilny nie współpracuje z polskim WMS. Rozwiązanie: sprawdź Zebra DataWedge — uniwersalny interfejs, który działa z każdym WMS przez output: keystroke. Skontaktuj się z dostawcą WMS przed zakupem kolektora danych.</p>
+<p>Terminal mobilny nie współpracuje z polskim WMS. Rozwiązanie: sprawdź kompatybilność — Zebra DataWedge, Honeywell CleanIME, Datalogic ScanManager i Newland ScanManager to uniwersalne interfejsy, które działają z każdym WMS przez output: keystroke. Skontaktuj się z dostawcą WMS przed zakupem kolektora danych.</p>
 
 <h3>6. Brak szkolenia operatorów</h3>
 <p>Kolektor danych leży w szufladzie, bo pracownicy nie wiedzą, jak go używać. Rozwiązanie: 30 minut szkolenia wystarczy — interfejs Android na kolektorze jest intuicyjny jak smartfon. TAKMA oferuje szkolenia przy wdrożeniu.</p>
@@ -6929,14 +6932,14 @@ export const guides: Guide[] = [
     </tr>
   </thead>
   <tbody>
-    <tr><td>Kolektory danych</td><td>5x MT93 = 11 035 zł</td><td>10x TC22 + 5x MC3400 = 46 975 zł</td><td>20x TC22 + 10x MC3400 = 94 780 zł</td></tr>
+    <tr><td>Kolektory danych</td><td>5x <a href="/produkt/newland-mt93-megattera-standard-plus">MT93</a> = 11 035 zł</td><td>5x <a href="/produkt/datalogic-memor-12">Memor 12</a> + 5x <a href="/produkt/honeywell-ct32">CT32</a> + 5x <a href="/produkt/zebra-mc3400">MC3400</a> = 53 185 zł</td><td>10x <a href="/produkt/zebra-tc22">TC22</a> + 10x <a href="/produkt/honeywell-ct32">CT32</a> + 10x <a href="/produkt/zebra-mc3400">MC3400</a> = 104 070 zł</td></tr>
     <tr><td>Drukarka etykiet</td><td>1x <a href="/produkt/zebra-zd220d">ZD220d</a> = 650 zł</td><td>2x <a href="/produkt/zebra-zd421d">ZD421d</a> = 2 944 zł</td><td>3x ZD421d + 1x <a href="/produkt/zebra-zt231">ZT231</a> = 6 966 zł</td></tr>
     <tr><td>Etykiety (roczne)</td><td>~500 zł</td><td>~2 000 zł</td><td>~5 000 zł</td></tr>
     <tr><td>Stacje dokujące</td><td>~1 500 zł</td><td>~5 000 zł</td><td>~12 000 zł</td></tr>
     <tr><td>WMS/software</td><td>od 0 (Excel)</td><td>od 500 zł/mies.</td><td>od 1 500 zł/mies.</td></tr>
     <tr><td>Szkolenie</td><td>wliczone</td><td>wliczone</td><td>wliczone</td></tr>
-    <tr><td><strong>RAZEM (rok 1)</strong></td><td><strong>~13 685 zł</strong></td><td><strong>~62 919 zł</strong></td><td><strong>~136 746 zł</strong></td></tr>
-    <tr><td><strong>Per kolektor</strong></td><td><strong>~2 737 zł</strong></td><td><strong>~4 195 zł</strong></td><td><strong>~4 558 zł</strong></td></tr>
+    <tr><td><strong>RAZEM (rok 1)</strong></td><td><strong>~13 685 zł</strong></td><td><strong>~69 129 zł</strong></td><td><strong>~146 036 zł</strong></td></tr>
+    <tr><td><strong>Per kolektor</strong></td><td><strong>~2 737 zł</strong></td><td><strong>~4 609 zł</strong></td><td><strong>~4 868 zł</strong></td></tr>
   </tbody>
 </table>
 
@@ -6955,12 +6958,14 @@ export const guides: Guide[] = [
   </thead>
   <tbody>
     <tr><td>Mały budżet</td><td><a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a></td><td><span data-live-price="newland-mt93-megattera-standard-plus">2 207 zł</span></td></tr>
-    <tr><td>Optymalny wybór</td><td><strong><a href="/produkt/zebra-tc22">Zebra TC22</a></strong></td><td><span data-live-price="zebra-tc22">2 417 zł</span></td></tr>
-    <tr><td>Duży magazyn + klawiatura</td><td><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a></strong></td><td><span data-live-price="zebra-mc3400">4 561 zł</span></td></tr>
+    <tr><td>Retail / inwentaryzacja ciągła</td><td><a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a></td><td><span data-live-price="datalogic-memor-12">2 687 zł</span></td></tr>
+    <tr><td>Optymalny wybór (touch)</td><td><a href="/produkt/zebra-tc22">Zebra TC22</a></td><td><span data-live-price="zebra-tc22">2 417 zł</span></td></tr>
+    <tr><td>Hot-swap bateria</td><td><a href="/produkt/honeywell-ct32">Honeywell CT32</a></td><td><span data-live-price="honeywell-ct32">3 389 zł</span></td></tr>
+    <tr><td>Duży magazyn + klawiatura</td><td><a href="/produkt/zebra-mc3400">Zebra MC3400</a> / <a href="/produkt/honeywell-ck67">Honeywell CK67</a></td><td>od <span data-live-price="zebra-mc3400">4 561 zł</span></td></tr>
+    <tr><td>Premium touch (Datalogic)</td><td><a href="/produkt/datalogic-memor-30">Datalogic Memor 30</a></td><td><span data-live-price="datalogic-memor-30">4 869 zł</span></td></tr>
     <tr><td>Inwentaryzacja RFID</td><td><a href="/produkt/zebra-tc501">Zebra TC501</a></td><td><span data-live-price="zebra-tc501">3 730 zł</span></td></tr>
+    <tr><td>Teren 5G</td><td><a href="/produkt/honeywell-ct47">Honeywell CT47</a> / <a href="/produkt/newland-mt95-kambur-pro-ii">Newland MT95</a></td><td>od <span data-live-price="newland-mt95-kambur-pro-ii">3 546 zł</span></td></tr>
     <tr><td>Mroźnia -30°C</td><td><a href="/produkt/zebra-mc9400">Zebra MC9400</a></td><td><span data-live-price="zebra-mc9400">7 638 zł</span></td></tr>
-    <tr><td>Inwentaryzacja w terenie</td><td><a href="/produkt/zebra-tc27">Zebra TC27</a></td><td><span data-live-price="zebra-tc27">2 690 zł</span></td></tr>
-    <tr><td>Środki trwałe (zdjęcia)</td><td><a href="/produkt/zebra-em45">Zebra EM45</a></td><td><span data-live-price="zebra-em45">2 951 zł</span></td></tr>
   </tbody>
 </table>
 
@@ -6974,11 +6979,11 @@ export const guides: Guide[] = [
     { question: 'Jaki kolektor danych do inwentaryzacji kupić przy małym budżecie?', answer: '<a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93 Megattera Standard+</a> (2 207 zł netto) — najtańszy enterprise kolektor danych z IP67, Wi-Fi i skanerem 2D. Dla małych magazynów do 5 000 SKU to optymalny terminal mobilny do inwentaryzacji w najniższej cenie.' },
     { question: 'Ile kosztuje kolektor danych do inwentaryzacji?', answer: 'Od 2 207 zł (<a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a>) do 7 638 zł (<a href="/produkt/zebra-mc9400">Zebra MC9400</a>). Najpopularniejszy kolektor danych do inwentaryzacji — <a href="/produkt/zebra-tc22">Zebra TC22</a> — kosztuje od 2 417 zł netto. Do ceny kolektora doliczyć drukarkę etykiet (od 650 zł, <a href="/produkt/zebra-zd220d">Zebra ZD220d</a>) i etykiety (od 44 zł/rolka).' },
     { question: 'Czy potrzebuję kolektor danych z klawiaturą fizyczną do inwentaryzacji?', answer: 'Klawiatura fizyczna przyspiesza wpisywanie ilości (np. "47 szt.") przy inwentaryzacji pełnej. Polecamy: <a href="/produkt/zebra-mc3400">Zebra MC3400</a> (4 561 zł), <a href="/produkt/newland-n7-cachalot-pro-ii">Newland N7 Cachalot</a> (3 346 zł), <a href="/produkt/honeywell-ck62">Honeywell CK62</a> (5 759 zł). Jeśli skanujesz głównie kody bez ręcznego wpisywania — kolektor dotykowy (<a href="/produkt/zebra-tc22">TC22</a>) wystarczy.' },
-    { question: 'Zebra, Honeywell, Datalogic, Newland — który kolektor danych do inwentaryzacji?', answer: 'Zebra (~45% rynku PL): najdłuższe wsparcie Android (10 lat LifeGuard), największy ekosystem (Mobility DNA, DataWedge). Honeywell (~25%): FlexRange, dobre skanery kodów kreskowych. Newland (~8%): najlepsza cena kolektora danych. Datalogic (~10%): najsmuklejsze terminale. Dla większości firm polecamy Zebrę — <a href="/produkt/zebra-tc22">TC22</a> lub <a href="/produkt/zebra-mc3400">MC3400</a>. Porównanie: <a href="/poradnik/zebra-vs-honeywell-terminale-mobilne">Zebra vs Honeywell</a>.' },
+    { question: 'Zebra, Honeywell, Datalogic, Newland — który kolektor danych do inwentaryzacji?', answer: 'Każda marka ma swoją niszę. <strong>Honeywell</strong> (~25% rynku PL): najlepsze skanery FlexRange (do 24 m), wymienne baterie hot-swap (<a href="/produkt/honeywell-ct32">CT32</a>), solidny ekosystem Workflow Solutions. <strong>Datalogic</strong> (~10%): najlżejsze kolektory na rynku (<a href="/produkt/datalogic-memor-12">Memor 12</a> — 245 g), idealne do retail i inwentaryzacji ciągłej. <strong>Newland</strong> (~8%): najniższe ceny enterprise — <a href="/produkt/newland-mt93-megattera-standard-plus">MT93</a> od 2 207 zł. <strong>Zebra</strong> (~45%): najdłuższe wsparcie (10 lat LifeGuard), największy ekosystem akcesoriów. Wybór zależy od priorytetu: budżet → Newland, ergonomia → Datalogic, hot-swap → Honeywell, ekosystem → Zebra. Porównanie: <a href="/poradnik/zebra-vs-honeywell-terminale-mobilne">Zebra vs Honeywell</a>.' },
     { question: 'Czy kolektor danych do inwentaryzacji współpracuje z Excelem?', answer: 'Tak — każdy kolektor danych z DataWedge (Zebra) lub analogicznym softwarem skanuje kody kreskowe bezpośrednio do Excela (output: keystroke). Ale WMS da Ci automatyczne porównanie stanów i protokół inwentaryzacyjny — Excel tego nie zrobi. Do inwentaryzacji magazynu >1 000 SKU polecamy WMS.' },
-    { question: 'Jaki zasięg skanera kodów kreskowych potrzebuję do inwentaryzacji?', answer: 'Magazyn standardowy (regały do 3 m): SE55 (7,6 m) w <a href="/produkt/zebra-tc22">Zebra TC22</a> wystarczy. Regały wysokiego składowania (>6 m): SE58 (30,5 m) w <a href="/produkt/zebra-mc3400">Zebra MC3400</a>. RFID: do 5 m (<a href="/produkt/zebra-tc501">TC501</a>).' },
+    { question: 'Jaki zasięg skanera kodów kreskowych potrzebuję do inwentaryzacji?', answer: 'Magazyn standardowy (regały do 3 m): SE55 7,6 m (<a href="/produkt/zebra-tc22">Zebra TC22</a>) lub Mega 1.4 MP (<a href="/produkt/datalogic-memor-30">Datalogic Memor 30</a>). Regały wysokiego składowania (>6 m): SE58 30,5 m (<a href="/produkt/zebra-mc3400">MC3400</a>) lub FlexRange XLR 24 m (<a href="/produkt/honeywell-ck67">Honeywell CK67</a>). Budżetowy daleki zasięg: Newland EM4300 20 m (<a href="/produkt/newland-n7-cachalot-pro-ii">N7 Cachalot</a>). RFID: do 5 m (<a href="/produkt/zebra-tc501">TC501</a>).' },
     { question: 'Czy kolektor danych działa offline (bez Wi-Fi)?', answer: 'Tak — DataWedge (Zebra) umożliwia skanowanie kolektorem danych w trybie batch (offline). Dane z inwentaryzacji synchronizują się po powrocie do strefy Wi-Fi. Każdy terminal mobilny z Android może działać offline z odpowiednią aplikacją inwentaryzacyjną.' },
-    { question: 'Jak długo wytrzymuje bateria kolektora przy ciągłym skanowaniu?', answer: '<a href="/produkt/zebra-tc22">TC22</a>: 8-12 h. <a href="/produkt/zebra-mc3400">MC3400</a>: 10-14 h (5 200/7 000 mAh). <a href="/produkt/zebra-mc9400">MC9400</a>: 12-16 h. <a href="/produkt/newland-mt93-megattera-standard-plus">MT93</a>: 8-10 h. Przy inwentaryzacji pełnej (>8 h) polecamy kolektor danych z hot-swap baterią (MC3400, <a href="/produkt/honeywell-ct32">CT32</a>, MC9400).' },
+    { question: 'Jak długo wytrzymuje bateria kolektora przy ciągłym skanowaniu?', answer: '<a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a>: 8-10 h (4 300 mAh). <a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a>: 8-10 h. <a href="/produkt/zebra-tc22">Zebra TC22</a>: 8-12 h. <a href="/produkt/honeywell-ct32">Honeywell CT32</a>: 10-12 h (hot-swap!). <a href="/produkt/zebra-mc3400">MC3400</a>: 10-14 h (5 200/7 000 mAh, hot-swap). <a href="/produkt/honeywell-ck67">Honeywell CK67</a>: 12-14 h. Przy inwentaryzacji pełnej (>8 h) polecamy kolektor z hot-swap baterią: CT32, MC3400, CK67, MC9400.' },
     { question: 'Czy kolektor danych do inwentaryzacji można podłączyć do WMS?', answer: 'Tak — kolektory danych z Android działają z polskimi WMS-ami: Comarch WMS, Sellasist WMS, Logifact, SAP EWM, Qguar, Asseco WAMAS. Zebra DataWedge pozwala na integrację skanera kodów kreskowych bez programowania (output: keystroke do pola WMS).' },
     { question: 'Czy mogę używać zwykłego smartfona zamiast kolektora danych?', answer: 'Technicznie tak (kamera skanuje kody), ale: smartfon nie ma dedykowanego skanera kodów kreskowych (wolniejszy 5-10x), brak IP67 (mokry magazyn = awaria), brak gun grip, brak DataWedge, brak wsparcia MDM. Kolektor danych za 2 207 zł (<a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a>) jest 10x szybszy i 5x trwalszy niż smartfon za 1 500 zł.' },
     { question: 'Kiedy opłaca się inwentaryzacja RFID zamiast kodów kreskowych?', answer: 'Gdy masz >30 000 SKU i robisz inwentaryzację >2x/rok. Inwentaryzacja RFID kolektorem danych jest 10x szybsza, ale tag RFID kosztuje 10x więcej niż etykieta z kodem kreskowym. ROI przy dużych wolumenach: oszczędność czasu > koszt tagów. Kolektory danych RFID: <a href="/produkt/zebra-tc501">Zebra TC501</a> (3 730 zł), <a href="/produkt/zebra-tc701">Zebra TC701</a> (4 017 zł).' },
@@ -6994,10 +6999,12 @@ export const guides: Guide[] = [
     { title: 'Zebra TC22 vs TC27 — Wi-Fi vs 5G', href: '/poradnik/zebra-tc22-vs-tc27' },
     { title: 'Zebra MC3400 vs MC9400 — porównanie', href: '/poradnik/zebra-mc3400-vs-mc9400' },
     { title: 'Zebra TC501 vs TC58 — porównanie', href: '/poradnik/zebra-tc501-vs-tc58' },
+    { title: 'Honeywell CT32 — hot-swap bateria', href: '/produkt/honeywell-ct32' },
+    { title: 'Datalogic Memor 12 — najlżejszy', href: '/produkt/datalogic-memor-12' },
     { title: 'Zebra TC22 — bestseller', href: '/produkt/zebra-tc22' },
-    { title: 'Zebra MC3400 — gun z klawiaturą', href: '/produkt/zebra-mc3400' },
-    { title: 'Zebra TC501 — RFID + AI', href: '/produkt/zebra-tc501' },
     { title: 'Newland MT93 — budżetowy', href: '/produkt/newland-mt93-megattera-standard-plus' },
+    { title: 'Honeywell CK67 — gun FlexRange', href: '/produkt/honeywell-ck67' },
+    { title: 'Datalogic Memor 30 — premium touch', href: '/produkt/datalogic-memor-30' },
     { title: 'Terminale mobilne — pełna oferta', href: '/terminale-mobilne' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]
