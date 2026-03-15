@@ -5590,6 +5590,336 @@ export const guides: Guide[] = [
     { title: 'Serwis drukarek Zebra w Polsce', href: 'https://www.serwis-zebry.pl/serwis-drukarek-zebra' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]
+},
+{
+  slug: 'zebra-zd421-vs-zd621-porownanie',
+  title: 'Zebra ZD421 vs ZD621 — porównanie drukarek etykiet 2026',
+  seoTitle: 'Zebra ZD421 vs ZD621 — porównanie drukarek etykiet 2026',
+  seoDescription: 'Zebra ZD421 vs ZD621 — porównanie drukarek etykiet biurkowych. Prędkość, LCD, RFID, TCO od 1 649 PLN. Której potrzebujesz? | TAKMA.',
+  excerpt: 'Porównanie drukarek etykiet Zebra ZD421t i ZD621t: prędkość druku (152 vs 203 mm/s), ekran LCD, RFID, TCO na 3 lata, gwarancja i 5 scenariuszy zastosowania. Aktualne ceny netto PLN i rekomendacje dla polskich firm.',
+  category: 'porownanie' as const,
+  tags: ['drukarki-etykiet', 'porownanie', 'zebra', 'zd421', 'zd621', 'biurkowa', 'termotransferowa', 'tco', 'drukarka-do-etykiet'],
+  publishedAt: '2026-03-15',
+  updatedAt: '2026-03-15',
+  readTime: '18 min',
+
+  sections: [
+    {
+      id: 'podsumowanie',
+      heading: 'Zebra ZD421 vs ZD621 — którą drukarkę etykiet wybrać?',
+      content: `<p><a href="/produkt/zebra-zd421t">Zebra ZD421t</a> (drukarka etykiet termotransferowa od 1 649 PLN) to modularna drukarka biurkowa ze standardowym USB i opcjonalnym Ethernet — bezpośredni następca GK420t. <a href="/produkt/zebra-zd621t">Zebra ZD621t</a> (od 2 264 PLN) to flagowa drukarka biurkowa Zebra z prędkością 203 mm/s (+33%), kolorowym LCD 4,3", standardowym Ethernet i opcją RFID. Różnica cenowa: od 234 PLN (z Ethernet) do 616 PLN (baza USB). Za stosunkowo niedużą dopłatę ZD621t oferuje znacząco więcej.</p>
+
+<div style="overflow-x:auto">
+<table>
+<thead>
+<tr><th>Parametr</th><th><a href="/produkt/zebra-zd421t">Zebra ZD421t</a></th><th><a href="/produkt/zebra-zd621t">Zebra ZD621t</a></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Cena od (USB)</strong></td><td><strong>od 1 649 PLN</strong></td><td>od 2 264 PLN</td></tr>
+<tr><td><strong>Cena od (Ethernet)</strong></td><td>od 2 030 PLN</td><td>od 2 264 PLN</td></tr>
+<tr><td>Prędkość druku (203 dpi)</td><td>152 mm/s</td><td><strong>203 mm/s (+33%)</strong></td></tr>
+<tr><td>Wyświetlacz</td><td>5 diod LED</td><td><strong>LCD dotykowy 4,3" (opcja)</strong></td></tr>
+<tr><td>Ethernet</td><td>Opcja (moduł)</td><td><strong>Standard</strong></td></tr>
+<tr><td>RFID</td><td>Brak</td><td><strong>ZD621R (opcja)</strong></td></tr>
+<tr><td>Odklejak / Gilotyna</td><td>Brak opcji fabrycznej</td><td><strong>Opcja fabryczna</strong></td></tr>
+<tr><td><strong>Gwarancja</strong></td><td><strong>36 miesięcy</strong></td><td>12 miesięcy</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Dla kogo Zebra ZD421t?</h3>
+<p>Drukarka etykiet Zebra ZD421t to najlepszy wybór dla firm z budżetem poniżej 2 000 PLN, drukujących do 300 etykiet dziennie. Idealna przy migracji z GK420t — wymiana 1:1, te same materiały i szablony ZPL. Najdłuższa gwarancja w segmencie: 36 miesięcy.</p>
+
+<h3>Dla kogo Zebra ZD621t?</h3>
+<p>Drukarka etykiet Zebra ZD621t to wybór dla firm drukujących powyżej 300 etykiet dziennie, potrzebujących Ethernet w standardzie, ekranu LCD do konfiguracji bez PC lub planujących wdrożenie RFID. Przy konfiguracji z Ethernet dopłata do ZD621t wynosi zaledwie 234 PLN.</p>
+
+<p><strong>Skrót:</strong> Do 300 etykiet/dzień, budżet <2 000 PLN → <a href="/produkt/zebra-zd421t">ZD421t</a>. Powyżej 300 etykiet/dzień, Ethernet, LCD lub RFID → <a href="/produkt/zebra-zd621t">ZD621t</a>.</p>`
+    },
+    {
+      id: 'specyfikacje',
+      heading: 'Pełne porównanie specyfikacji: ZD421t vs ZD621t',
+      content: `<p><strong>Pełna tabela porównawcza drukarek etykiet Zebra ZD421t i ZD621t.</strong> Obie drukarki biurkowe obsługują etykiety do 4", ribbon wax/wax-resin/resin i rozdzielczość 203 lub 300 dpi. Kluczowe różnice: prędkość druku, wyświetlacz, łączność w standardzie i opcje rozbudowy.</p>
+
+<div style="overflow-x:auto">
+<table>
+<thead>
+<tr><th>Parametr</th><th><a href="/produkt/zebra-zd421t">Zebra ZD421t</a></th><th><a href="/produkt/zebra-zd621t">Zebra ZD621t</a></th></tr>
+</thead>
+<tbody>
+<tr><td>Technologia</td><td>Termotransfer + DT</td><td>Termotransfer + DT</td></tr>
+<tr><td>Rozdzielczość</td><td>203 / 300 dpi</td><td>203 / 300 dpi</td></tr>
+<tr><td><strong>Prędkość (203 dpi)</strong></td><td>152 mm/s (6 ips)</td><td><strong>203 mm/s (8 ips)</strong></td></tr>
+<tr><td><strong>Prędkość (300 dpi)</strong></td><td>102 mm/s (4 ips)</td><td><strong>152 mm/s (6 ips)</strong></td></tr>
+<tr><td>Szer. druku</td><td>max 104 mm</td><td>max 108 mm</td></tr>
+<tr><td>Szer. etykiet</td><td>25,4–112 mm</td><td>15–118 mm</td></tr>
+<tr><td><strong>Wyświetlacz</strong></td><td>5 LED + 3 przyciski</td><td><strong>LCD 4,3" dotykowy (opcja)</strong></td></tr>
+<tr><td>USB</td><td>USB 2.0</td><td>USB 2.0 + <strong>USB Host</strong></td></tr>
+<tr><td><strong>Ethernet</strong></td><td>Opcja (moduł MCS)</td><td><strong>Standard</strong></td></tr>
+<tr><td><strong>RS-232</strong></td><td>Opcja (moduł MCS)</td><td><strong>Standard</strong></td></tr>
+<tr><td>Bluetooth</td><td>Opcja (BT 4.1)</td><td><strong>BLE 5 standard</strong> + opcja BT 4.1</td></tr>
+<tr><td>Wi-Fi</td><td>Opcja (802.11ac)</td><td>Opcja (802.11ac)</td></tr>
+<tr><td>RAM / Flash</td><td>256 MB / 512 MB</td><td>256 MB / 512 MB</td></tr>
+<tr><td>Języki druku</td><td>ZPL II, EPL2</td><td>ZPL II, EPL2, XML, PDF, CPCL</td></tr>
+<tr><td>Odklejak</td><td>Brak opcji fabrycznej</td><td><strong>Opcja fabryczna</strong></td></tr>
+<tr><td>Gilotyna</td><td>Brak opcji fabrycznej</td><td><strong>Opcja fabryczna</strong></td></tr>
+<tr><td>RFID UHF</td><td>Brak</td><td><strong>ZD621R</strong></td></tr>
+<tr><td>Ribbon max</td><td>300 m (rdzeń 1")</td><td>300 m (rdzeń 1")</td></tr>
+<tr><td>Waga</td><td>1,59 kg</td><td>2,5 kg</td></tr>
+<tr><td>Wymiary (SxGxW)</td><td>206 × 280 × 179 mm</td><td>224 × 282 × 197 mm</td></tr>
+<tr><td><strong>Gwarancja</strong></td><td><strong>36 mies.</strong></td><td>12 mies. (do 36 z OneCare)</td></tr>
+<tr><td><strong>Cena od (USB)</strong></td><td><strong>od 1 649 PLN</strong></td><td>od 2 264 PLN</td></tr>
+<tr><td><strong>Cena od (Ethernet)</strong></td><td>od 2 030 PLN</td><td>od 2 264 PLN</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Drukarka etykiet Zebra ZD621t przewyższa ZD421t w 10 z 22 parametrów. ZD421t wygrywa ceną startową (o 616 PLN) i gwarancją (36 vs 12 miesięcy). Przy porównywalnej konfiguracji z Ethernet różnica cenowa to zaledwie 234 PLN — za tę kwotę zyskujesz +33% prędkości, LCD (opcja), RS-232, BLE 5 i USB Host w standardzie.</p>`
+    },
+    {
+      id: 'predkosc-druku',
+      heading: 'Prędkość druku — czy 33% więcej robi różnicę?',
+      content: `<p><strong>Drukarka etykiet Zebra ZD621t drukuje 203 mm/s vs 152 mm/s w ZD421t</strong> — o 33% szybciej przy rozdzielczości 203 dpi. Przy 300 dpi różnica jest jeszcze większa: 152 vs 102 mm/s, czyli +49%.</p>
+
+<h3>Praktyczny wpływ wg dziennego wolumenu</h3>
+<p>Ile czasu zaoszczędzisz dziennie na drukarkę etykiet Zebra ZD621t vs ZD421t (etykiety 100×50 mm, 203 dpi)?</p>
+
+<div style="overflow-x:auto">
+<table>
+<thead>
+<tr><th>Etykiety / dzień</th><th>Oszczędność czasu</th><th>Rocznie (250 dni)</th><th>Ocena</th></tr>
+</thead>
+<tbody>
+<tr><td>200</td><td>~1 min</td><td>~4 h</td><td>Nieistotna</td></tr>
+<tr><td>500</td><td>~3 min</td><td>~13 h</td><td>Marginalna</td></tr>
+<tr><td>1 000</td><td>~7 min</td><td>~29 h</td><td>Zauważalna</td></tr>
+<tr><td>2 000</td><td>~15 min</td><td>~63 h</td><td><strong>Istotna</strong></td></tr>
+<tr><td>5 000</td><td>~35 min</td><td>~146 h</td><td><strong>Krytyczna</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Przy rozdzielczości 300 dpi różnica jest jeszcze większa (152 vs 102 mm/s = +49%). Jeśli drukujesz etykiety w 300 dpi na drukarce biurkowej, dopłata do ZD621t jest praktycznie obowiązkowa.</p>
+
+<p><strong>Werdykt:</strong> Przy mniej niż 500 etykiet dziennie (203 dpi) — różnica prędkości między tymi drukarkami termotransferowymi jest nieistotna. Przy ponad 1 000 etykiet/dzień lub druku w 300 dpi — drukarka biurkowa Zebra ZD621t oszczędza realny czas pracy operatora.</p>`
+    },
+    {
+      id: 'lcd-obsluga',
+      heading: 'Ekran LCD vs diody LED — kiedy dotykowy wyświetlacz jest wart dopłaty?',
+      content: `<p><strong>Drukarka etykiet Zebra ZD421t ma 5 diod LED i 3 przyciski</strong> — wystarczające do odczytu statusu (zaciął się ribbon, brak etykiet, otwarta pokrywa). Konfiguracja odbywa się przez Zebra Setup Utilities na PC lub zdalnie przez Link-OS.</p>
+
+<p><strong>Drukarka etykiet Zebra ZD621t oferuje opcjonalny kolorowy dotykowy LCD 4,3"</strong> (480×272 px) z kreatorami konfiguracji, animacjami diagnostycznymi, statusem sieci i informacjami o firmwarze. ZD621t bez LCD (ZD6A042-30EF00EZ) kosztuje od 2 264 PLN, z LCD (ZD6A142-30EF00EZ) od 2 571 PLN. Dopłata za LCD: ~307 PLN.</p>
+
+<h3>Kiedy LCD się przydaje?</h3>
+<ul>
+<li>Wiele lokalizacji / wielu operatorów — konfiguracja na miejscu bez PC</li>
+<li>Troubleshooting w terenie — animacje diagnostyczne krok po kroku</li>
+<li>Firmy bez dedykowanego IT — operator sam rozwiązuje problemy z drukarką etykiet</li>
+<li>Demo / showroom — wizualny efekt premium</li>
+</ul>
+
+<h3>Kiedy diody LED wystarczą?</h3>
+<ul>
+<li>Jedna lokalizacja z centralnym zarządzaniem przez Link-OS/MCS</li>
+<li>Doświadczony operator, który zna drukarkę etykiet</li>
+<li>Budżet jest priorytetem — oszczędność 307 PLN</li>
+</ul>
+
+<p><strong>Werdykt:</strong> LCD za 307 PLN dopłaty to najlepsza inwestycja dla firm z wieloma stanowiskami drukowania etykiet i różnymi operatorami. Dla jednego stanowiska z zarządzaniem centralnym — diody LED wystarczą.</p>`
+    },
+    {
+      id: 'lacznosc',
+      heading: 'Łączność i interfejsy — co dostajesz w standardzie?',
+      content: `<p><strong>Kluczowa różnica między drukarkami etykiet Zebra ZD421t i ZD621t: łączność w standardzie.</strong> ZD621t za 2 264 PLN oferuje w standardzie to, co w ZD421t trzeba dokupić jako moduły.</p>
+
+<div style="overflow-x:auto">
+<table>
+<thead>
+<tr><th>Interfejs</th><th><a href="/produkt/zebra-zd421t">ZD421t</a></th><th><a href="/produkt/zebra-zd621t">ZD621t</a></th></tr>
+</thead>
+<tbody>
+<tr><td>USB 2.0</td><td>Standard</td><td>Standard</td></tr>
+<tr><td>USB Host</td><td>Brak</td><td><strong>Standard</strong></td></tr>
+<tr><td>Ethernet (LAN)</td><td>Opcja (+381 PLN)</td><td><strong>Standard</strong></td></tr>
+<tr><td>RS-232 (serial)</td><td>Opcja (moduł MCS)</td><td><strong>Standard</strong></td></tr>
+<tr><td>Bluetooth LE 5</td><td>Brak</td><td><strong>Standard</strong></td></tr>
+<tr><td>BT 4.1 + Wi-Fi 802.11ac</td><td>Opcja (+520 PLN)</td><td>Opcja (+613 PLN)</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Drukarka biurkowa ZD421t (USB) + moduł Ethernet = 2 030 PLN. Drukarka termotransferowa ZD621t (bez LCD) z Ethernet, RS-232, BLE 5 i USB Host w standardzie = 2 264 PLN. Różnica: zaledwie 234 PLN za 4 dodatkowe interfejsy i +33% prędkości druku.</p>
+
+<p><strong>USB Host w ZD621t</strong> pozwala podłączyć skaner USB lub pendrive — druk etykiet z pamięci USB bez komputera. Szczególnie przydatne na stanowiskach produkcyjnych.</p>
+
+<p><strong>Werdykt:</strong> Jeśli potrzebujesz Ethernet — dopłata z ZD421t+Ethernet do ZD621t to zaledwie 234 PLN, a zyskujesz RS-232, BLE 5, USB Host i +33% prędkości. W tym segmencie drukarka etykiet Zebra ZD621t oferuje znacznie lepszy stosunek ceny do wyposażenia.</p>`
+    },
+    {
+      id: 'tco',
+      heading: 'TCO — ile kosztuje drukarka etykiet na 3 lata?',
+      content: `<p><strong>Całkowity koszt posiadania (TCO) drukarki etykiet na 3 lata to 3–4× cena zakupu.</strong> Poniższa kalkulacja obejmuje scenariusz: 500 etykiet/dzień, 250 dni roboczych/rok, etykiety 100×50 mm.</p>
+
+<div style="overflow-x:auto">
+<table>
+<thead>
+<tr><th>Koszt (3 lata)</th><th><a href="/produkt/zebra-zd421t">ZD421t (z Eth.)</a></th><th><a href="/produkt/zebra-zd621t">ZD621t (bez LCD)</a></th><th>ZD621t (z LCD)</th></tr>
+</thead>
+<tbody>
+<tr><td>Drukarka</td><td>2 030 PLN</td><td>2 264 PLN</td><td>2 571 PLN</td></tr>
+<tr><td>Ribbon wax 110mm×300m (×18 szt.)</td><td>~1 080 PLN</td><td>~1 080 PLN</td><td>~1 080 PLN</td></tr>
+<tr><td>Etykiety (×375 000 szt.)</td><td>~1 500 PLN</td><td>~1 500 PLN</td><td>~1 500 PLN</td></tr>
+<tr><td>Głowica wymienna (1×)</td><td>~450 PLN</td><td>~500 PLN</td><td>~500 PLN</td></tr>
+<tr><td>Kontrakt serwisowy</td><td>~800 PLN</td><td>~800 PLN</td><td>~800 PLN</td></tr>
+<tr><td><strong>TCO razem</strong></td><td><strong>~5 860 PLN</strong></td><td><strong>~6 144 PLN</strong></td><td><strong>~6 451 PLN</strong></td></tr>
+<tr><td><strong>TCO / miesiąc</strong></td><td><strong>~163 PLN</strong></td><td><strong>~171 PLN</strong></td><td><strong>~179 PLN</strong></td></tr>
+<tr><td><strong>Różnica vs ZD421t</strong></td><td>—</td><td><strong>+284 PLN (+8 PLN/mies.)</strong></td><td><strong>+591 PLN (+16 PLN/mies.)</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>Wniosek:</strong> TCO drukarki etykiet Zebra ZD621t (bez LCD) jest zaledwie 284 PLN wyższe niż ZD421t w perspektywie 3 lat — to 8 PLN/miesiąc. Za tę kwotę zyskujesz +33% prędkości, Ethernet + RS-232 + BLE 5 w standardzie i możliwość rozbudowy o RFID. Z perspektywy TCO, dopłata do ZD621t jest jedną z najlepszych inwestycji w portfolio drukarek biurkowych.</p>
+
+<p><em>Uwaga: Drukarka etykiet Zebra ZD421t w wersji bazowej (USB, bez Ethernet) kosztuje od 1 649 PLN — wtedy TCO spada do ~5 479 PLN. Porównanie bazuje na konfiguracji z Ethernet, ponieważ ZD621t ma Ethernet w standardzie.</em></p>`
+    },
+    {
+      id: 'rfid-odklejak-gilotyna',
+      heading: 'RFID, odklejak i gilotyna — co oferuje tylko ZD621t?',
+      content: `<p><strong>Drukarka termotransferowa Zebra ZD621t oferuje trzy opcje niedostępne w ZD421t:</strong> RFID UHF, odklejak fabryczny i gilotynę fabryczną.</p>
+
+<h3>RFID UHF (ZD621R)</h3>
+<p>Wersja ZD621R z wbudowanym koderem RFID UHF (moduł Zebra RE40) drukuje etykietę i koduje chip RFID jednocześnie. Standardy: EPC Gen 2 V2, RAIN, ISO 18000-63. Drukarka etykiet Zebra ZD421t NIE ma wersji RFID — jeśli planujesz wdrożenie RFID, ZD621R to jedyna opcja biurkowa Zebra.</p>
+<p>Zastosowania RFID: retail (Decathlon, Reserved), inwentaryzacja magazynowa RFID, szpitale (śledzenie aktywów medycznych).</p>
+
+<h3>Odklejak fabryczny (peeler/dispenser)</h3>
+<p>Drukarka etykiet Zebra ZD621t z odklejakiem automatycznie odkleja etykietę od podłoża — gotowa do naklejenia. Dopłata: ~201 PLN (203 dpi). Idealne do etykietowania produktów i opakowań przy wolumenie >500 etykiet/dzień.</p>
+
+<h3>Gilotyna fabryczna (cutter)</h3>
+<p>Automatyczne cięcie etykiet i tagów po wydrukowaniu. Dopłata: ~690 PLN (203 dpi). Do przywieszek cenowych, etykiet na sznurku, tagów RFID do cięcia.</p>
+
+<p><strong>Werdykt:</strong> Jeśli planujesz RFID — drukarka etykiet Zebra ZD621R to jedyna opcja biurkowa Zebra. Odklejak za 201 PLN dopłaty jest opłacalny przy >500 etykiet/dzień. Gilotyna za 690 PLN ma sens przy druku przywieszek i tagów.</p>`
+    },
+    {
+      id: 'gwarancja-serwis',
+      heading: 'Gwarancja i serwis — zaskakująca przewaga ZD421t',
+      content: `<p><strong>Drukarka etykiet Zebra ZD421t ma 36 miesięcy gwarancji na drukarkę + 12 miesięcy na głowicę</strong> — jedna z najdłuższych gwarancji w segmencie biurkowym. To zaskakujące, bo droższy model ZD621t ma zaledwie 12 miesięcy gwarancji standardowej.</p>
+
+<div style="overflow-x:auto">
+<table>
+<thead>
+<tr><th>Parametr</th><th><a href="/produkt/zebra-zd421t">ZD421t</a></th><th><a href="/produkt/zebra-zd621t">ZD621t</a></th></tr>
+</thead>
+<tbody>
+<tr><td>Gwarancja na drukarkę</td><td><strong>36 miesięcy</strong></td><td>12 miesięcy</td></tr>
+<tr><td>Gwarancja na głowicę</td><td>12 miesięcy</td><td>6 miesięcy</td></tr>
+<tr><td>Rozszerzenie (OneCare)</td><td>Dostępne</td><td>Dostępne (~800 PLN/3 lata)</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Droższy model drukarki etykiet Zebra — krótsza gwarancja. Kontrakt Zebra OneCare Essential wyrównuje tę różnicę (do 36 miesięcy), ale to dodatkowy koszt ~800 PLN w TCO.</p>
+
+<p>Serwis w Polsce: oba modele drukarek etykiet serwisowane przez <a href="https://www.serwis-zebry.pl/serwis-drukarek-zebra">serwis-zebry.pl</a> (autoryzowany partner Zebra / TAKMA). Naprawa 3-5 dni roboczych, oryginalne części, diagnostyka.</p>
+
+<p><strong>Werdykt:</strong> Gwarancja to jedyny parametr, w którym drukarka etykiet Zebra ZD421t WYRAŹNIE wygrywa — 36 vs 12 miesięcy. Jeśli nie planujesz kontraktu OneCare, ten punkt przemawia za ZD421t.</p>`
+    },
+    {
+      id: 'scenariusze',
+      heading: '5 scenariuszy — która drukarka etykiet do Twojej firmy?',
+      content: `<h3>1. Mały e-commerce (50–200 paczek/dzień)</h3>
+<p>Potrzeba: etykiety kurierskie 100×150 mm, USB lub Ethernet, niski budżet.</p>
+<p>Rekomendacja: <strong><a href="/produkt/zebra-zd421t">Zebra ZD421t (USB, 203 dpi)</a> od 1 649 PLN</strong> — wystarczająca prędkość druku etykiet, najdłuższa gwarancja (36 mies.), najniższy koszt wejścia.</p>
+
+<h3>2. Średni magazyn z WMS (300–1 000 etykiet/dzień)</h3>
+<p>Potrzeba: Ethernet, integracja z WMS (SAP, Comarch, Asseco), wielu operatorów.</p>
+<p>Rekomendacja: <strong><a href="/produkt/zebra-zd621t">drukarka biurkowa Zebra ZD621t (z LCD)</a> od 2 571 PLN</strong> — Ethernet w standardzie, LCD do konfiguracji, +33% prędkości druku etykiet.</p>
+
+<h3>3. Produkcja / etykietowanie produktów (500+ etykiet/dzień)</h3>
+<p>Potrzeba: odklejak, szybkość, 300 dpi do małych kodów kreskowych.</p>
+<p>Rekomendacja: <strong><a href="/produkt/zebra-zd621t">drukarka termotransferowa Zebra ZD621t (300 dpi, LCD, odklejak)</a> od 3 078 PLN</strong> — odklejak fabryczny, najszybszy druk 300 dpi w klasie biurkowej (152 mm/s vs 102 mm/s w ZD421t).</p>
+
+<h3>4. Multi-lokacja, flota drukarek etykiet</h3>
+<p>Potrzeba: centralne zarządzanie, łatwa konfiguracja na miejscu, serwis.</p>
+<p>Rekomendacja: <strong><a href="/produkt/zebra-zd621t">Zebra ZD621t (z LCD)</a></strong> — LCD eliminuje potrzebę wysyłania IT do każdej lokalizacji. Link-OS i PrintDNA do zdalnego zarządzania flotą drukarek.</p>
+
+<h3>5. Jedno stanowisko, budżet, migracja z GK420t</h3>
+<p>Potrzeba: kompatybilność z szablonami ZPL, najniższy koszt, wymiana 1:1.</p>
+<p>Rekomendacja: <strong><a href="/produkt/zebra-zd421t">Zebra ZD421t (USB, 203 dpi)</a> od 1 649 PLN</strong> — bezpośredni następca GK420t, te same materiały eksploatacyjne, szablony ZPL bez zmian, 36 mies. gwarancji.</p>`
+    },
+    {
+      id: 'werdykt',
+      heading: 'Werdykt: Zebra ZD421t czy ZD621t?',
+      content: `<p><strong>Podsumowanie porównania drukarek termotransferowych biurkowych Zebra ZD421t vs ZD621t w 10 kategoriach:</strong></p>
+
+<div style="overflow-x:auto">
+<table>
+<thead>
+<tr><th>Kategoria</th><th><a href="/produkt/zebra-zd421t">ZD421t</a></th><th><a href="/produkt/zebra-zd621t">ZD621t</a></th><th>Wygrywa</th></tr>
+</thead>
+<tbody>
+<tr><td>Cena startowa (USB)</td><td>1 649 PLN</td><td>2 264 PLN</td><td><strong><a href="/produkt/zebra-zd421t">ZD421t</a></strong></td></tr>
+<tr><td>Cena z Ethernet</td><td>2 030 PLN</td><td>2 264 PLN</td><td><strong><a href="/produkt/zebra-zd421t">ZD421t</a></strong> (234 PLN)</td></tr>
+<tr><td>TCO 3 lata</td><td>~5 860 PLN</td><td>~6 144 PLN</td><td>Remis (~284 PLN = 8 PLN/mies.)</td></tr>
+<tr><td>Prędkość (203 dpi)</td><td>152 mm/s</td><td>203 mm/s</td><td><strong><a href="/produkt/zebra-zd621t">ZD621t</a></strong></td></tr>
+<tr><td>Prędkość (300 dpi)</td><td>102 mm/s</td><td>152 mm/s</td><td><strong><a href="/produkt/zebra-zd621t">ZD621t</a></strong> (+49%)</td></tr>
+<tr><td>Wyświetlacz</td><td>LED</td><td>LCD 4,3" dotykowy</td><td><strong><a href="/produkt/zebra-zd621t">ZD621t</a></strong></td></tr>
+<tr><td>Łączność standardowa</td><td>USB</td><td>USB+Eth+RS-232+BLE 5</td><td><strong><a href="/produkt/zebra-zd621t">ZD621t</a></strong></td></tr>
+<tr><td>RFID / odklejak / gilotyna</td><td>Brak</td><td>Opcje fabryczne</td><td><strong><a href="/produkt/zebra-zd621t">ZD621t</a></strong></td></tr>
+<tr><td>Gwarancja standardowa</td><td>36 mies.</td><td>12 mies.</td><td><strong><a href="/produkt/zebra-zd421t">ZD421t</a></strong></td></tr>
+<tr><td>Kompatybilność materiałów</td><td>Identyczna</td><td>Identyczna</td><td>Remis</td></tr>
+<tr><td><strong>WYNIK</strong></td><td><strong>3 + 2 remisy</strong></td><td><strong>5 + 2 remisy</strong></td><td><strong><a href="/produkt/zebra-zd621t">ZD621t</a></strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>Kluczowy wniosek:</strong> Drukarka etykiet Zebra ZD621t wygrywa 5 z 10 kategorii. Przegrywa głównie ceną — ale przy konfiguracji z Ethernet różnica to zaledwie 234 PLN. Za tę kwotę zyskujesz: +33% prędkości, LCD (opcja), Ethernet + RS-232 + BLE 5 w standardzie, RFID/odklejak/gilotyna jako opcje.</p>
+
+<h3>Wybierz Zebra ZD421t, jeśli:</h3>
+<ul>
+<li>Budżet poniżej 2 000 PLN netto</li>
+<li>Drukujesz mniej niż 300 etykiet dziennie</li>
+<li>Migrujesz z GK420t — wymiana 1:1, zerowe koszty adaptacji</li>
+<li>Jedno stanowisko drukowania z USB</li>
+<li>Ważna jest 36-miesięczna gwarancja bez dodatkowych kosztów</li>
+</ul>
+
+<h3>Wybierz Zebra ZD621t, jeśli:</h3>
+<ul>
+<li>Drukujesz ponad 300 etykiet dziennie</li>
+<li>Potrzebujesz Ethernet w standardzie (integracja z WMS)</li>
+<li>Wiele stanowisk — LCD do konfiguracji bez IT</li>
+<li>Planujesz RFID, odklejak lub gilotynę</li>
+<li>Środowisko produkcyjne z wymaganiami 300 dpi</li>
+</ul>
+
+<p><strong>Rekomendacja TAKMA:</strong> Dla 80% naszych klientów rekomendujemy <a href="/produkt/zebra-zd621t">drukarkę etykiet Zebra ZD621t</a>. Dopłata 234 PLN (z Ethernet) to jedna z najlepszych inwestycji — zyskujesz drukarkę, która rośnie razem z firmą. <a href="/kontakt">Skontaktuj się z nami</a> — pomożemy wybrać konfigurację dopasowaną do Twoich potrzeb.</p>`
+    }
+  ],
+  faq: [
+    { question: 'Co to jest Zebra ZD421t?', answer: 'Zebra ZD421t to biurkowa drukarka etykiet termotransferowa klasy mid-range z modularną architekturą MCS. Drukuje etykiety o szerokości do 104 mm z prędkością 152 mm/s w rozdzielczości 203 lub 300 dpi. Bezpośredni następca popularnych modeli GK420t i ZD420t. Cena od 1 649 PLN netto (USB). 6 wariantów w ofercie TAKMA.' },
+    { question: 'Co to jest Zebra ZD621t?', answer: 'Zebra ZD621t to flagowa biurkowa drukarka termotransferowa Zebra — najszybsza drukarka biurkowa w klasie (203 mm/s), z opcjonalnym kolorowym dotykowym LCD 4,3", standardowym Ethernet, RS-232 i BLE 5. Opcje: RFID UHF (ZD621R), odklejak i gilotyna fabryczne. Cena od 2 264 PLN netto. 20 wariantów w ofercie TAKMA.' },
+    { question: 'Gdzie kupić drukarkę Zebra ZD421t i ZD621t w Polsce?', answer: 'Obie drukarki etykiet są dostępne w autoryzowanym sklepie TAKMA (takma.com.pl) — Premier Solution Partner Zebra Technologies. ZD421t od 1 649 PLN netto (6 wariantów), ZD621t od 2 264 PLN netto (20 wariantów). TAKMA oferuje: doradztwo w wyborze konfiguracji, serwis gwarancyjny (serwis-zebry.pl), kontrakty OneCare i materiały eksploatacyjne (etykiety, ribbony, głowice). Kontakt: +48 607 819 688.' },
+    { question: 'Zebra ZD421 vs ZD621 — czym się różnią?', answer: 'Przy konfiguracji z Ethernet różnica cenowa to 234 PLN (2 030 vs 2 264 PLN). Za dopłatę ZD621t oferuje: prędkość 203 mm/s (+33%), opcjonalny LCD dotykowy 4,3", Ethernet + RS-232 + BLE 5 w standardzie, USB Host, opcje RFID/odklejak/gilotyna. ZD421t wygrywa: ceną startową (1 649 vs 2 264 PLN), gwarancją (36 vs 12 mies.) i wagą (1,59 vs 2,5 kg). TCO na 3 lata różni się o 284 PLN.' },
+    { question: 'Czy warto dopłacić do ZD621t zamiast ZD421t?', answer: 'Przy konfiguracji z Ethernet dopłata to 234 PLN — zyskujesz +33% prędkości druku, Ethernet + RS-232 + BLE 5 w standardzie, USB Host i możliwość rozbudowy o LCD, RFID, odklejak lub gilotynę. TCO na 3 lata wyższe o zaledwie 284 PLN (8 PLN/miesiąc). Dla 80% zastosowań dopłata się opłaca. Wyjątek: budżet <2 000 PLN, druk <300 etykiet/dzień lub migracja z GK420t (wtedy ZD421t).' },
+    { question: 'Która drukarka Zebra jest szybsza — ZD421t czy ZD621t?', answer: 'Drukarka etykiet Zebra ZD621t drukuje 203 mm/s vs 152 mm/s w ZD421t (203 dpi) — o 33% szybciej. Przy 300 dpi różnica jest jeszcze większa: 152 vs 102 mm/s (+49%). Przy 2 000 etykiet/dzień ZD621t oszczędza ~15 min dziennie (~63 h/rok). Przy <500 etykiet/dzień różnica jest nieodczuwalna (~3 min).' },
+    { question: 'Która drukarka Zebra ma dłuższą gwarancję — ZD421t czy ZD621t?', answer: 'Zebra ZD421t: 36 miesięcy gwarancji na drukarkę + 12 mies. na głowicę. Zebra ZD621t: 12 miesięcy na drukarkę + 6 mies. na głowicę. ZD421t ma 3× dłuższą gwarancję standardową. ZD621t można rozszerzyć do 36 mies. kontraktem Zebra OneCare Essential (~800 PLN/3 lata).' },
+    { question: 'Ile kosztuje Zebra ZD421t?', answer: 'Drukarka etykiet Zebra ZD421t: od 1 649 PLN netto (203 dpi, USB), 1 883 PLN (300 dpi, USB), 2 030 PLN (203 dpi, USB + Ethernet), 2 168 PLN (203 dpi, USB + BT + Wi-Fi), 2 252 PLN (300 dpi, USB + Ethernet), 2 454 PLN (300 dpi, USB + BT + Wi-Fi). 6 wariantów. Aktualne ceny: takma.com.pl/produkt/zebra-zd421t.' },
+    { question: 'Ile kosztuje Zebra ZD621t?', answer: 'Drukarka etykiet Zebra ZD621t: od 2 264 PLN netto (203 dpi, bez LCD). Z LCD: od 2 571 PLN. Z LCD + Wi-Fi: od 3 184 PLN. Z odklejakiem: od 2 465 PLN (bez LCD) lub 2 772 PLN (z LCD). 300 dpi z LCD: od 2 877 PLN. Z gilotyną: od 2 954 PLN. 20 wariantów. Aktualne ceny: takma.com.pl/produkt/zebra-zd621t.' },
+    { question: 'Czy ZD421t jest następcą GK420t?', answer: 'Tak — drukarka etykiet Zebra ZD421t to oficjalny następca GK420t (EOL od 2021). Ten sam form factor biurkowy, natywny ZPL II, kompatybilne etykiety i ribbony. Migracja GK420t → ZD421t to wymiana 1:1 — zerowy koszt po stronie oprogramowania WMS. Ulepszenia: modularna budowa MCS, Link-OS, PrintDNA, BT/BLE, szybsza kalibracja.' },
+    { question: 'Czy ZD621t ma RFID?', answer: 'Tak — wersja ZD621R (drukarka etykiet Zebra ZD621 z koderem RFID UHF). Moduł Zebra RE40, standardy EPC Gen 2 V2, RAIN, ISO 18000-63. Drukuje etykietę i koduje chip RFID jednocześnie. Zastosowania: retail, inwentaryzacja, szpitale. ZD421t NIE ma wersji RFID.' },
+    { question: 'Jaka drukarka Zebra do e-commerce?', answer: 'Do 200 paczek/dzień: Zebra ZD421t (USB, 203 dpi) od 1 649 PLN — najniższy koszt wejścia. 200–500 paczek: ZD421t z Ethernet (2 030 PLN) do integracji z WMS. Powyżej 500 paczek: ZD621t (2 264 PLN) — prędkość 203 mm/s eliminuje wąskie gardło na stanowisku pakowania.' },
+    { question: 'Jaka drukarka Zebra do magazynu z WMS?', answer: 'Drukarka etykiet Zebra ZD621t — Ethernet w standardzie, integracja z WMS przez port 9100 (ZPL natywny), kompatybilność z SAP, Comarch, Asseco i innymi systemami WMS w Polsce. LCD do konfiguracji na stanowisku bez IT. PrintDNA do zdalnego zarządzania flotą drukarek etykiet. Alternatywa budżetowa: ZD421t z Ethernet (2 030 PLN).' },
+    { question: 'Jakie są alternatywy dla Zebra ZD421t i ZD621t?', answer: 'Alternatywy w segmencie biurkowym: Honeywell PC45t (od 2 159 PLN, ekran dotykowy 3,5", szybszy druk 203 mm/s — porównanie: takma.com.pl/poradnik/zebra-zd421t-vs-honeywell-pc45t). W obrębie Zebra: ZD421d/ZD621d (modele termiczne, bez ribbona). W segmencie przemysłowym: Zebra ZT231 (od 3 500 PLN) lub ZT411 (od 5 500 PLN). Pełny przewodnik: takma.com.pl/poradnik/drukarki-etykiet-zebra-przewodnik.' }
+  ],
+  relatedLinks: [
+    { title: 'Zebra ZD421t — karta produktu', href: '/produkt/zebra-zd421t' },
+    { title: 'Zebra ZD621t — karta produktu', href: '/produkt/zebra-zd621t' },
+    { title: 'ZD421t vs Honeywell PC45t — porównanie cross-brand', href: '/poradnik/zebra-zd421t-vs-honeywell-pc45t' },
+    { title: 'Przewodnik po drukarkach Zebra ZD i ZT', href: '/poradnik/drukarki-etykiet-zebra-przewodnik' },
+    { title: 'Drukarka termiczna vs termotransferowa', href: '/poradnik/drukarka-termiczna-vs-termotransferowa' },
+    { title: 'Jak wybrać drukarkę etykiet — poradnik', href: '/poradnik/jak-wybrac-drukarke-etykiet' },
+    { title: 'Biurkowe drukarki etykiet — pełna oferta', href: '/biurkowe-drukarki-etykiet' },
+    { title: 'Serwis drukarek Zebra w Polsce', href: 'https://www.serwis-zebry.pl/serwis-drukarek-zebra' },
+    { title: 'Kontakt i doradztwo', href: '/kontakt' },
+  ]
 }
 ]
 

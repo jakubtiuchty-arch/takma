@@ -1452,7 +1452,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       rodzajDruku: 'Termotransfer',
       rozdzielczosc: '203 dpi (8 dots/mm) / 300 dpi (12 dots/mm)',
       predkoscDruku: 'do 203 mm/s (8 ips)',
-      szerokoscDruku: 'max. 104 mm (4,09")',
+      szerokoscDruku: 'max. 108 mm (4,25")',
       szerokoscEtykiet: '25,4–112 mm',
     },
     specifications: [
