@@ -116,7 +116,9 @@ function extractAttribute(xml: string, tag: string, attr: string): string | null
  */
 function toIngramItemId(partNumber: string): string {
   const upper = partNumber.toUpperCase()
-  if (upper.startsWith('ZB') || upper.startsWith('SB') || upper.startsWith('N1') || upper.startsWith('ON') || upper.startsWith('DT')) return upper
+  if (upper.startsWith('ZB') || upper.startsWith('SB') || upper.startsWith('N1') || upper.startsWith('ON') || upper.startsWith('DT') || upper.startsWith('DI')) return upper
+  // Brother products (printers TD*, accessories PA*)
+  if (upper.startsWith('TD') || upper.startsWith('PA')) return 'DI' + upper
   // Datalogic products (terminals/scanners 94xxxx, 99xxxx)
   if (upper.startsWith('94') || upper.startsWith('99')) return 'DT' + upper
   // Honeywell products (terminals CT/CK/EDA, printers PX/PM/PD/PC, scanners 14xx/19xx/21xx, accessories/batteries 50xxx/225xxx)
@@ -374,7 +376,7 @@ export async function lookupStock(partNumbers: string[]): Promise<StockInfo[]> {
     if (product.itemId) {
       byItemId.set(product.itemId.toUpperCase(), product)
       // Mapuj też bez prefiksu ZB/SB/N1/ON/DT
-      const noZb = product.itemId.toUpperCase().replace(/^(ZB|SB|N1|ON|DT)/, '')
+      const noZb = product.itemId.toUpperCase().replace(/^(ZB|SB|N1|ON|DT|DI)/, '')
       byItemId.set(noZb, product)
     }
   }
