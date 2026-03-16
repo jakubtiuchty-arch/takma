@@ -32,6 +32,15 @@ const slides: HeroSlide[] = [
   { type: 'info' },
   {
     type: 'product',
+    image: '/images/zebra-tc501-baner.webp',
+    name: 'Zebra TC501',
+    slug: 'zebra-tc501',
+    tagline: 'Flagowy kolektor danych z AI, RFID UHF i Wi-Fi 7. Ekran AMOLED 6" 1500 nit, skaner AC670 do 30 m i Android 15 ze wsparciem do v19.',
+    imageClassName: 'object-cover object-[65%_center]',
+    imageType: 'lifestyle',
+  },
+  {
+    type: 'product',
     image: '/images/hero-zt231.webp',
     name: 'Zebra ZT231',
     slug: 'zebra-zt231',

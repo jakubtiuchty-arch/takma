@@ -288,37 +288,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Baner TC501 ── */}
-      <section className="bg-[#1a1a1a]">
-        <Link href="/produkt/zebra-tc501" className="block group">
-          <div className="container-main">
-            <div className="relative flex flex-col md:flex-row items-center gap-6 md:gap-10 py-8 lg:py-12">
-              <div className="flex-1 text-center md:text-left">
-                <p className="text-xs font-semibold uppercase tracking-widest text-lime-400 mb-2">Nowość 2026</p>
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3">Zebra TC501</h2>
-                <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-lg">
-                  Flagowy kolektor danych z AI, RFID UHF i&nbsp;Wi&#8209;Fi&nbsp;7 w&nbsp;jednym urządzeniu. Ekran AMOLED 6&rdquo; o jasności 1500 nit, skaner AC670 do 30&nbsp;m i Android 15 ze wsparciem do v19.
-                </p>
-                <span className="inline-flex items-center gap-1.5 mt-4 text-sm font-semibold text-lime-400 group-hover:gap-2.5 transition-all">
-                  Zobacz szczegóły
-                  <ArrowRightIcon size={16} />
-                </span>
-              </div>
-              <div className="flex-shrink-0 w-full md:w-1/2 lg:w-[55%]">
-                <Image
-                  src="/images/zebra-tc501-baner.webp"
-                  alt="Zebra TC501 — kolektor danych z AI, RFID i Wi-Fi 7 na tle magazynu"
-                  width={1200}
-                  height={500}
-                  className="w-full h-auto object-contain"
-                  priority
-                />
-              </div>
-            </div>
-          </div>
-        </Link>
-      </section>
-
       {/* ── S3: Bestsellery (dynamiczne) ── */}
       <section className="py-8 lg:py-14">
         <div className="container-main">
