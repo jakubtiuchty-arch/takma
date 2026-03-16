@@ -9,6 +9,7 @@ import { Button } from '@/components/ui'
 import { useCartStore, type CartItem } from '@/store/cartStore'
 import { products } from '@/data/products'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
+import { trackRemoveFromCart, trackViewCart } from '@/lib/ga-events'
 
 function formatPrice(price: number): string {
   return price.toLocaleString('pl-PL', {
@@ -64,17 +65,27 @@ export default function RFQDrawer() {
     setMounted(true)
   }, [])
 
-  // Blokuj scroll body gdy drawer jest otwarty
+  // Blokuj scroll body gdy drawer jest otwarty + track view_cart
   useEffect(() => {
     if (isDrawerOpen) {
       document.body.style.overflow = 'hidden'
+      if (items.length > 0) {
+        const ga4Items = items.map(item => ({
+          item_id: item.productId,
+          item_name: item.productName,
+          quantity: item.quantity,
+          price: item.priceNetto,
+        }))
+        const total = items.reduce((sum, item) => sum + (item.priceNetto ?? 0) * item.quantity, 0)
+        trackViewCart(ga4Items, total)
+      }
     } else {
       document.body.style.overflow = ''
     }
     return () => {
       document.body.style.overflow = ''
     }
-  }, [isDrawerOpen])
+  }, [isDrawerOpen, items])
 
   // Zamknij drawer przy naciśnięciu Escape
   useEffect(() => {
@@ -270,7 +281,15 @@ export default function RFQDrawer() {
 
                         {/* Remove button */}
                         <button
-                          onClick={() => removeItem(item.productId)}
+                          onClick={() => {
+                            trackRemoveFromCart({
+                              item_id: item.productId,
+                              item_name: item.productName,
+                              quantity: item.quantity,
+                              price: unitPrice,
+                            })
+                            removeItem(item.productId)
+                          }}
                           className="p-2 text-gray-400 hover:text-red-500 transition-colors"
                           aria-label="Usuń z koszyka"
                         >

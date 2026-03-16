@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
+import { trackGenerateLead } from '@/lib/ga-events'
 import { Button, Input, Textarea, Checkbox, Select } from '@/components/ui'
 import {
   ChevronRightIcon,
@@ -114,6 +115,8 @@ export default function RFQPage() {
     await new Promise((resolve) => setTimeout(resolve, 1500))
 
     console.log('RFQ Submission:', { formData, items })
+
+    trackGenerateLead('zapytanie_ofertowe')
 
     setIsSubmitting(false)
     setIsSuccess(true)

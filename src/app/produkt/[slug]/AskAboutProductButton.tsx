@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import { createPortal } from 'react-dom'
 import { MailIcon, CloseIcon, CheckIcon } from '@/components/ui/Icons'
 import Turnstile from '@/components/Turnstile'
+import { trackGenerateLead } from '@/lib/ga-events'
 
 interface AskAboutProductButtonProps {
   productName: string
@@ -67,6 +68,7 @@ function InquiryModal({
       })
       if (res.ok) {
         setStatus('done')
+        trackGenerateLead(`zapytanie_produkt_${productSlug}`)
       } else {
         setStatus('error')
       }

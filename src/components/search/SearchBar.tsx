@@ -7,6 +7,7 @@ import clsx from 'clsx'
 import { SearchIcon, CloseIcon, ArrowRightIcon } from '@/components/ui/Icons'
 import { products, categories, manufacturers, type Product, type Category } from '@/data/products'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
+import { trackSearch } from '@/lib/ga-events'
 
 interface SearchBarProps {
   fullWidth?: boolean
@@ -256,6 +257,7 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
       return
     }
     if (query.trim()) {
+      trackSearch(query.trim(), results.length)
       router.push(`/katalog?szukaj=${encodeURIComponent(query.trim())}`)
       setQuery('')
       setIsOpen(false)

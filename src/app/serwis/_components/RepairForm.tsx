@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { trackGenerateLead } from '@/lib/ga-events'
 import * as z from 'zod'
 import { RegistrationLightbox } from './RegistrationLightbox'
 import {
@@ -250,6 +251,9 @@ export default function RepairForm() {
       if (!response.ok) {
         throw new Error(result.error || 'Blad podczas wysylania zgloszenia')
       }
+
+      // GA4: service request lead
+      trackGenerateLead(`serwis_${data.deviceType}`)
 
       // Pokaz lightbox rejestracji
       setSubmittedRepairId(result.requestId || null)

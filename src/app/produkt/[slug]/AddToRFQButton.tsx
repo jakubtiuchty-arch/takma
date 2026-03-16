@@ -6,6 +6,7 @@ import { PlusIcon, CheckIcon, BellIcon } from '@/components/ui/Icons'
 import { useCartStore } from '@/store/cartStore'
 import { Product } from '@/data/products'
 import { useStockData } from './StockInfo'
+import { trackAddToCart, trackNotifyMe } from '@/lib/ga-events'
 
 interface AddToRFQButtonProps {
   product: Product
@@ -37,6 +38,7 @@ function NotifyForm({ partNumber, productName, compact }: { partNumber: string; 
       })
       if (res.ok) {
         setStatus('done')
+        trackNotifyMe(productName)
       } else {
         setStatus('error')
       }
@@ -158,6 +160,13 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
       slug: product.slug,
       image: product.images[0],
       partNumber: pn,
+    })
+    trackAddToCart({
+      item_id: product.id,
+      item_name: product.name,
+      item_category: product.categoryId,
+      price: product.priceFrom,
+      quantity: 1,
     })
   }
 

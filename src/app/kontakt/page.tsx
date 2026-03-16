@@ -12,6 +12,7 @@ import {
   CheckIcon,
 } from '@/components/ui/Icons'
 import Turnstile from '@/components/Turnstile'
+import { trackGenerateLead } from '@/lib/ga-events'
 
 const contactReasons = [
   { value: 'quote', label: 'Zapytanie ofertowe' },
@@ -99,6 +100,7 @@ export default function ContactPage() {
 
       if (res.ok) {
         setIsSuccess(true)
+        trackGenerateLead(`kontakt_${formData.reason}`)
       } else {
         setErrors({ name: 'Wystąpił błąd. Spróbuj ponownie lub napisz na takma@takma.com.pl.' })
       }

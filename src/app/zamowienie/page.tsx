@@ -18,6 +18,7 @@ import { useCartStore, type CartItem } from '@/store/cartStore'
 import { products, type Product } from '@/data/products'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import { createCheckoutSession, createProformaOrder } from '@/actions/checkout'
+import { trackBeginCheckout, trackAddPaymentInfo, trackPurchase } from '@/lib/ga-events'
 
 // ── Typy ────────────────────────────────────────────────────────
 
@@ -155,6 +156,18 @@ export default function CheckoutPage() {
     setMounted(true)
     document.title = 'Zamówienie | TAKMA'
 
+    // begin_checkout GA4 event
+    if (items.length > 0) {
+      const ga4Items = items.map(item => ({
+        item_id: item.productId,
+        item_name: item.productName,
+        quantity: item.quantity,
+        price: item.priceNetto,
+      }))
+      const total = items.reduce((sum, item) => sum + (item.priceNetto ?? 0) * item.quantity, 0)
+      trackBeginCheckout(ga4Items, total)
+    }
+
     // Obsługa powrotu ze Stripe po anulowaniu płatności
     const params = new URLSearchParams(window.location.search)
     if (params.get('cancelled') === 'true') {
@@ -162,6 +175,7 @@ export default function CheckoutPage() {
       // Wyczyść parametr z URL
       window.history.replaceState({}, '', '/zamowienie')
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   // ── Ceny (live z API > zapisane > static fallback) ────────────
@@ -387,6 +401,16 @@ export default function CheckoutPage() {
         const blobUrl = URL.createObjectURL(blob)
         window.open(blobUrl, '_blank')
 
+        // GA4: purchase event
+        const ga4Items = items.map(item => ({
+          item_id: item.productId,
+          item_name: item.productName,
+          quantity: item.quantity,
+          price: itemPrices.get(item.productId),
+        }))
+        trackAddPaymentInfo(ga4Items, totalNetto, 'proforma')
+        trackPurchase(result.orderNumber, ga4Items, totalNetto, shippingNetto)
+
         setOrderNumber(result.orderNumber)
         setIsSubmitting(false)
         setIsSuccess(true)
@@ -394,6 +418,15 @@ export default function CheckoutPage() {
         window.scrollTo({ top: 0, behavior: 'instant' })
       } else {
         // Online payment — Stripe
+        // GA4: add_payment_info (purchase tracked after Stripe redirect success)
+        const ga4Items = items.map(item => ({
+          item_id: item.productId,
+          item_name: item.productName,
+          quantity: item.quantity,
+          price: itemPrices.get(item.productId),
+        }))
+        trackAddPaymentInfo(ga4Items, totalNetto, 'stripe')
+
         const result = await createCheckoutSession(
           checkoutItems,
           customerData,

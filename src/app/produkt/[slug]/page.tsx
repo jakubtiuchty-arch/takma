@@ -26,6 +26,7 @@ import SmartPrice from './SmartPrice'
 import StickyPrice from './StickyPrice'
 import ComparisonTable from './ComparisonTable'
 import SpecsAccordion from './SpecsAccordion'
+import ViewItemTracker from './ViewItemTracker'
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>
@@ -332,6 +333,12 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
   return (
     <>
+      <ViewItemTracker
+        itemId={product.id}
+        itemName={product.name}
+        itemCategory={product.categoryId}
+        price={product.priceFrom}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
