@@ -1,3 +1,5 @@
+export const maxDuration = 30
+
 import { NextRequest, NextResponse } from 'next/server'
 import { sendOrderConfirmation, sendAdminNotification } from '@/lib/email'
 
