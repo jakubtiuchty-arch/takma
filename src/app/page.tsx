@@ -297,7 +297,7 @@ export default function HomePage() {
                 <p className="text-xs font-semibold uppercase tracking-widest text-lime-400 mb-2">Nowość 2026</p>
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3">Zebra TC501</h2>
                 <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-lg">
-                  Flagowy kolektor danych z AI, RFID UHF i&nbsp;Wi&#8209;Fi&nbsp;7 w&nbsp;jednym urządzeniu. Ekran AMOLED 6" o jasności 1500 nit, skaner AC670 do 30&nbsp;m i Android 15 ze wsparciem do v19.
+                  Flagowy kolektor danych z AI, RFID UHF i&nbsp;Wi&#8209;Fi&nbsp;7 w&nbsp;jednym urządzeniu. Ekran AMOLED 6&rdquo; o jasności 1500 nit, skaner AC670 do 30&nbsp;m i Android 15 ze wsparciem do v19.
                 </p>
                 <span className="inline-flex items-center gap-1.5 mt-4 text-sm font-semibold text-lime-400 group-hover:gap-2.5 transition-all">
                   Zobacz szczegóły
