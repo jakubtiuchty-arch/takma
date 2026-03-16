@@ -265,7 +265,7 @@ export const findProductByUseCase = tool({
 function getBaseUrl(): string {
   if (process.env.NEXT_PUBLIC_BASE_URL) return process.env.NEXT_PUBLIC_BASE_URL
   if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`
-  return 'http://localhost:3000'
+  return 'https://www.takma.com.pl'
 }
 
 export const checkStock = tool({
@@ -274,13 +274,27 @@ export const checkStock = tool({
     partNumber: z.string().describe('Part Number produktu (np. "ZD4A042-30EM00EZ")'),
   }),
   execute: async ({ partNumber }) => {
+    // Find product/variant in static data as fallback
+    const staticProduct = products.find(p =>
+      p.variants?.some(v => v.partNumber === partNumber)
+    )
+    const staticVariant = staticProduct?.variants?.find(v => v.partNumber === partNumber)
+
     try {
       const res = await fetch(`${getBaseUrl()}/api/stock?pn=${encodeURIComponent(partNumber)}`, {
         cache: 'no-store',
+        signal: AbortSignal.timeout(8000),
       })
 
       if (!res.ok) {
-        return { error: 'Nie udało się sprawdzić stanu magazynowego. Spróbuj ponownie.' }
+        // Fallback to static data
+        return {
+          partNumber,
+          price: staticVariant?.priceFrom ?? staticProduct?.priceFrom ?? null,
+          available: staticVariant?.availability === 'available' || staticProduct?.availability === 'available',
+          source: 'katalog',
+          hint: 'Nie udało się sprawdzić live stanu — dane z katalogu.',
+        }
       }
 
       const data = await res.json()
@@ -289,14 +303,21 @@ export const checkStock = tool({
         partNumber,
         stockPL: data.stockPL ?? 0,
         stockEU: data.stockDE ?? 0,
-        price: data.price ? Math.round(data.price * 100) / 100 : null,
+        price: data.price ? Math.round(data.price * 100) / 100 : (staticVariant?.priceFrom ?? null),
         available: (data.stockPL ?? 0) > 0 || (data.stockDE ?? 0) > 0,
         hint: (data.stockPL ?? 0) === 0 && (data.stockDE ?? 0) === 0
-          ? 'Produkt aktualnie niedostępny. Zapytaj o termin dostawy: takma@takma.com.pl'
+          ? 'Produkt aktualnie niedostępny w magazynie. Zapytaj o termin dostawy: takma@takma.com.pl'
           : null,
       }
     } catch {
-      return { error: 'Błąd połączenia z API magazynowym.' }
+      // Fallback to static data
+      return {
+        partNumber,
+        price: staticVariant?.priceFrom ?? staticProduct?.priceFrom ?? null,
+        available: staticVariant?.availability === 'available' || staticProduct?.availability === 'available',
+        source: 'katalog',
+        hint: 'Nie udało się sprawdzić live stanu — dane z katalogu.',
+      }
     }
   },
 })
@@ -328,9 +349,19 @@ export const checkVariantAvailability = tool({
         try {
           const res = await fetch(
             `${baseUrl}/api/stock?pn=${encodeURIComponent(v.partNumber)}`,
-            { cache: 'no-store' }
+            { cache: 'no-store', signal: AbortSignal.timeout(8000) }
           )
-          if (!res.ok) return { partNumber: v.partNumber, name: v.name, error: true as const }
+          if (!res.ok) {
+            // Fallback to static data
+            return {
+              partNumber: v.partNumber,
+              name: v.name,
+              attributes: v.attributes,
+              price: v.priceFrom,
+              available: v.availability === 'available',
+              source: 'katalog' as const,
+            }
+          }
           const data = await res.json()
           return {
             partNumber: v.partNumber,
@@ -342,12 +373,14 @@ export const checkVariantAvailability = tool({
             available: (data.stockPL ?? 0) > 0 || (data.stockDE ?? 0) > 0,
           }
         } catch {
+          // Fallback to static data
           return {
             partNumber: v.partNumber,
             name: v.name,
             attributes: v.attributes,
             price: v.priceFrom,
             available: v.availability === 'available',
+            source: 'katalog' as const,
           }
         }
       })
@@ -355,6 +388,8 @@ export const checkVariantAvailability = tool({
 
     return {
       productName: product.name,
+      catalogAvailability: product.availability,
+      catalogPrice: product.priceFrom,
       url: `/produkt/${product.slug}`,
       variants: results,
       totalVariants: product.variants.length,
