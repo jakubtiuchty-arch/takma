@@ -36,7 +36,7 @@ const slides: HeroSlide[] = [
     name: 'Zebra TC501',
     slug: 'zebra-tc501',
     tagline: 'Flagowy kolektor danych z AI, RFID UHF i Wi-Fi 7. Ekran AMOLED 6" 1500 nit, skaner AC670 do 30 m i Android 15 ze wsparciem do v19.',
-    imageClassName: 'object-contain object-center',
+    imageClassName: 'object-cover object-left',
     imageType: 'lifestyle',
     bgColor: '#1a1a1a',
   },
@@ -165,8 +165,8 @@ export default function Hero() {
         isLifestyle ? (
           /* Lifestyle: gradient od PRAWEJ — tekst po prawej, zdjęcie widoczne po lewej */
           <>
-            <div className="absolute inset-0 bg-gradient-to-l from-gray-950 from-15% via-gray-950/80 via-45% to-transparent z-10" />
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-950/50 via-transparent to-transparent z-10" />
+            <div className="absolute inset-0 bg-gradient-to-l from-gray-950/90 from-10% via-gray-950/50 via-40% to-transparent z-10" />
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-950/30 via-transparent to-transparent z-10" />
           </>
         ) : (
           /* Packshot: gradient od LEWEJ — tekst po lewej */
