@@ -24744,16 +24744,18 @@ Pełna dokumentacja techniczna na stronie producenta datalogic.com.`,
     id: 'datalogic-skorpio-x5',
     slug: 'datalogic-skorpio-x5',
     name: 'Datalogic Skorpio X5',
-    seoTitle: 'Datalogic Skorpio X5 — terminal mobilny z klawiaturą, 4.3" | od 4 858 zł netto',
-    seoDescription: 'Datalogic Skorpio X5 — wytrzymały terminal mobilny z klawiaturą fizyczną (28/38/47 klawiszy). Skanery 1D/2D SR/XLR do 20 m. Ładowanie bezprzewodowe Qi 15W, IP65, upadki 1,8 m, Android 10. Handheld i Pistol Grip. Od 4 858 zł netto.',
-    shortDescription: 'Datalogic Skorpio X5 — terminal z klawiaturą fizyczną, ekran 4.3", skaner 2D XLR do 20 m, Qi 15W',
-    description: `Dla kogo? Datalogic Skorpio X5 to wytrzymały terminal mobilny z klawiaturą fizyczną — przeznaczony do magazynów, centrów dystrybucji, hal produkcyjnych i operacji logistycznych, gdzie operatorzy potrzebują ergonomicznego urządzenia z niezawodnym skanowaniem w rękawicach i pełnowymiarową klawiaturą do szybkiego wprowadzania danych.
+    seoTitle: 'Datalogic Skorpio X5 — kolektor danych | od 4 858 zł',
+    seoDescription: 'Kolektor danych Datalogic Skorpio X5 — terminal z klawiaturą fizyczną, skaner 2D XLR do 20 m, Qi 15W, IP65. Handheld i Pistol Grip od 4 858 zł netto. TAKMA.',
+    shortDescription: 'Datalogic Skorpio X5 — kolektor danych z klawiaturą fizyczną, skaner 2D XLR do 20 m, Qi 15W',
+    description: `Dla kogo? Datalogic Skorpio X5 to wytrzymały kolektor danych z klawiaturą fizyczną — przeznaczony do magazynów, centrów dystrybucji, hal produkcyjnych i operacji logistycznych, gdzie operatorzy potrzebują ergonomicznego urządzenia z niezawodnym skanowaniem w rękawicach i pełnowymiarową klawiaturą do szybkiego wprowadzania danych. Więcej o wyborze kolektora: [Jak wybrać terminal mobilny? Poradnik 2026](/poradnik/jak-wybrac-terminal-mobilny).
 
-Kluczowa przewaga: największy w klasie ekran 4,3 cala z Gorilla Glass 3, trzy warianty klawiatury (28-klawiszowa numeryczna, 38-klawiszowa funkcyjna, 47-klawiszowa alfanumeryczna) i bezprzewodowe ładowanie Qi 15W — unikalne w segmencie terminali z klawiaturą. Opcja skanera 2D XLR (Extra Long Range) odczytuje kody z odległości do 20 metrów — do magazynów wysokiego składowania bez drabiny.
+Kluczowa przewaga: największy w klasie ekran 4,3 cala z Gorilla Glass 3, trzy warianty klawiatury (28-klawiszowa numeryczna, 38-klawiszowa funkcyjna, 47-klawiszowa alfanumeryczna) i bezprzewodowe ładowanie Qi 15W — unikalne w segmencie kolektorów danych z klawiaturą. Opcja skanera 2D XLR (Extra Long Range) odczytuje kody z odległości do 20 metrów — do magazynów wysokiego składowania bez drabiny.
 
 Dwie wersje obudowy: Handheld (488 g, bateria 3460 mAh) do kompletacji przy półce i Pistol Grip (600 g, bateria 6080 mAh) z uchwytem spustowym do intensywnego skanowania seryjnego na rampach załadunkowych. Hot-swap baterii umożliwia wymianę bez wyłączania terminala. Kamera tylna 13 MP do dokumentacji fotograficznej i OCR.
 
-System Android 10 GMS z certyfikatem Android Enterprise Recommended. Datalogic Mobility Suite (Shield, Scan2Deploy, OEMConfig) do zarządzania flotą terminali. Pełna dokumentacja techniczna na stronie producenta datalogic.com.`,
+Kolektor danych Datalogic Skorpio X5 integruje się z systemami WMS (SAP EWM, Comarch WMS, Microsoft Dynamics 365) oraz platformami e-commerce (BaseLinker, Shoper). Datalogic Mobility Suite (Shield, Scan2Deploy, OEMConfig) umożliwia masowe wdrożenie i zarządzanie flotą kolektorów. System Android 10 GMS z aktualizacją do Android 11 i certyfikatem Android Enterprise Recommended — Datalogic zapewnia regularne patche bezpieczeństwa.
+
+Szukasz kolektora danych do [inwentaryzacji](/poradnik/kolektor-danych-do-inwentaryzacji)? Datalogic Skorpio X5 z Pistol Grip i skanerem XLR 20 m to jedno z najlepszych rozwiązań na rynku. Porównanie z innymi kolektorami — patrz [kategoria terminale mobilne](/terminale-mobilne). Dokumentacja techniczna na stronie producenta datalogic.com.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     sameAs: 'https://www.datalogic.com/eng/retail-manufacturing-transportation-logistics-healthcare-gs1-digital-link/mobile-computers/skorpio-x5-pd-887.html',
@@ -24833,8 +24835,8 @@ System Android 10 GMS z certyfikatem Android Enterprise Recommended. Datalogic M
       '/images/products/943500001_2.png',
     ],
     imageDescriptions: [
-      'Datalogic Skorpio X5 — widok z przodu, ekran 4.3 cala z klawiaturą funkcyjną i skaner 2D',
-      'Datalogic Skorpio X5 Pistol Grip — widok z boku, uchwyt pistoletowy ze spustem i bateria rozszerzona',
+      'Kolektor danych Datalogic Skorpio X5 — widok z przodu, ekran 4.3 cala z klawiaturą funkcyjną i skaner 2D',
+      'Kolektor danych Datalogic Skorpio X5 Pistol Grip — widok z boku, uchwyt pistoletowy ze spustem i bateria rozszerzona',
     ],
     tags: ['magazyn', 'logistyka', 'produkcja', 'outdoor'],
     availability: 'available',
@@ -24950,6 +24952,9 @@ System Android 10 GMS z certyfikatem Android Enterprise Recommended. Datalogic M
       { question: 'Ile waży Datalogic Skorpio X5?', answer: 'Wersja Handheld: 488 g z baterią standardową 3 460 mAh. Wersja Pistol Grip: ok. 600 g z baterią rozszerzoną 6 080 mAh. Dla porównania: [Zebra MC3300x](/produkt/zebra-mc3300x) waży 490–645 g (zbliżona klasa), a [Datalogic Memor 30](/produkt/datalogic-memor-30) (bez klawiatury) 314 g.' },
       { question: 'Datalogic Skorpio X5 vs Zebra MC3300x — który wybrać?', answer: 'Datalogic Skorpio X5 wygrywa: ładowanie bezprzewodowe Qi 15W (MC3300x nie ma), większy ekran 4,3" (MC3300x: 4"), 64 GB Flash (MC3300x: 32 GB), IP65 (MC3300x: IP64), niższa cena (od 4 858 vs 5 779 PLN). [Zebra MC3300x](/produkt/zebra-mc3300x) wygrywa: skaner SE4850 z zasięgiem 21 m (vs 20 m XLR), większa bateria 5 200/7 000 mAh (vs 3 460/6 080 mAh), Mobility DNA (DataWedge, StageNow, LifeGuard), nowszy Android 11, obrotowa głowica skanera. Rekomendacja: Skorpio X5 gdy priorytetem jest Qi 15W, większy ekran i niższa cena. MC3300x gdy potrzebujesz ekosystemu Zebra i obrotowej głowicy.' },
       { question: 'Jakie są alternatywy dla Datalogic Skorpio X5?', answer: 'Z klawiaturą: [Zebra MC3300x](/produkt/zebra-mc3300x) (od 5 779 PLN — Mobility DNA, obrotowa głowica, SE4850 21 m). Bez klawiatury (dotykowe): [Datalogic Memor 30](/produkt/datalogic-memor-30) (od 4 869 PLN — IP68, Halogen ER 10 m, lżejszy 314 g), [Zebra TC53](/produkt/zebra-tc53) (od 6 418 PLN — SE55 12 m, 600 nit, QCS6490). Wyższa klasa z klawiaturą: Zebra MC9400 (ultra-rugged, skaner do 30,5 m, 7 klawiatur, od ~11 000 PLN).' },
+      { question: 'Czy Datalogic Skorpio X5 to dobry kolektor danych do magazynu?', answer: 'Tak — Datalogic Skorpio X5 to kolektor danych zaprojektowany do intensywnej pracy magazynowej. Skaner 2D XLR odczytuje kody z odległości do 20 m (6. poziom regałów bez drabiny), klawiatura fizyczna pozwala na pracę w rękawicach ochronnych, a IP65 chroni przed pyłem i strumieniami wody. Wersja Pistol Grip z baterią 6 080 mAh zapewnia 14h pracy na jednej zmianie. Bezprzewodowe ładowanie Qi 15W skraca przerwy między zmianami. Więcej: [Kolektor danych do inwentaryzacji — poradnik](/poradnik/kolektor-danych-do-inwentaryzacji).' },
+      { question: 'Jak kolektor Datalogic Skorpio X5 integruje się z WMS?', answer: 'Kolektor Datalogic Skorpio X5 pracuje pod Android 10 GMS z certyfikatem Android Enterprise Recommended. Integracja z WMS: natywne aplikacje Android, Datalogic Enterprise Browser (HTML5) lub emulatory terminali. Kompatybilny z: SAP EWM, Comarch WMS, Microsoft Dynamics 365, Simple WMS, SoftwareStudio. Datalogic Scan2Deploy umożliwia masową konfigurację kolektorów — jedno skanowanie kodu QR i terminal jest gotowy do pracy. [TAKMA](/kontakt) pomaga w konfiguracji i wdrożeniu.' },
+      { question: 'Jaki jest TCO kolektora danych Datalogic Skorpio X5 na 5 lat?', answer: 'TCO kolektora danych Datalogic Skorpio X5 na 5 lat: terminal od 4 858 PLN + dock bezprzewodowy Qi ~980 PLN + zapasowa bateria ~350 PLN + rubber boot ~180 PLN + zasilacz ~120 PLN = łącznie ok. 6 500–8 200 PLN w zależności od konfiguracji. To ~108–137 PLN/miesiąc na stanowisko — jeden z najtańszych kolektorów danych z XLR 20 m na rynku. Dla porównania: [Zebra MC3300x](/produkt/zebra-mc3300x) od 5 779 PLN + akcesoria = TCO ~8 500–10 500 PLN/5 lat.' },
     ],
     downloads: [
       { name: 'Karta katalogowa Skorpio X5 (EN)', type: 'datasheet', url: 'https://www.datalogic.com/upload/catalog/ds-SkorpioX5-EN.pdf', size: 'Online' },
