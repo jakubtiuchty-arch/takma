@@ -85,6 +85,39 @@ export function getClientIp(headers: Headers): string {
   )
 }
 
+// ---- Chat rate limiter (30 messages / 10 min per IP) ----
+
+const chatRateLimitMap = new Map<string, { count: number; resetAt: number }>()
+const CHAT_RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000 // 10 min
+const CHAT_RATE_LIMIT_MAX = 30
+
+function cleanupChatRateLimit() {
+  const now = Date.now()
+  chatRateLimitMap.forEach((entry, ip) => {
+    if (entry.resetAt < now) chatRateLimitMap.delete(ip)
+  })
+}
+
+setInterval(cleanupChatRateLimit, 5 * 60 * 1000)
+
+export function checkChatRateLimit(ip: string): { blocked: boolean; retryAfterSeconds?: number } {
+  const now = Date.now()
+  const entry = chatRateLimitMap.get(ip)
+
+  if (!entry || entry.resetAt < now) {
+    chatRateLimitMap.set(ip, { count: 1, resetAt: now + CHAT_RATE_LIMIT_WINDOW_MS })
+    return { blocked: false }
+  }
+
+  entry.count++
+  if (entry.count > CHAT_RATE_LIMIT_MAX) {
+    const retryAfterSeconds = Math.ceil((entry.resetAt - now) / 1000)
+    return { blocked: true, retryAfterSeconds }
+  }
+
+  return { blocked: false }
+}
+
 // ---- Login rate limiter (stricter: 5 attempts / 15 min) ----
 
 const loginRateLimitMap = new Map<string, { count: number; resetAt: number }>()

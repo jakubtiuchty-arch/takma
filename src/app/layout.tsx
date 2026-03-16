@@ -1,12 +1,15 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { headers } from 'next/headers'
+import dynamic from 'next/dynamic'
 import './globals.css'
 import LayoutShell from '@/components/layout/LayoutShell'
 import PostHogProvider from '@/components/PostHogProvider'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Script from 'next/script'
+
+const ChatWidget = dynamic(() => import('@/components/chat/ChatWidget'), { ssr: false })
 
 const inter = Inter({
   subsets: ['latin', 'latin-ext'],
@@ -153,6 +156,7 @@ gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', { send_page_view: true });`}
       <PostHogProvider>
         <LayoutShell>{children}</LayoutShell>
       </PostHogProvider>
+      {!isAdmin && !isPanel && <ChatWidget />}
       <Analytics />
       <SpeedInsights />
       {!isAdmin && !isPanel && (
