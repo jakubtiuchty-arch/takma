@@ -92,10 +92,11 @@ export async function middleware(request: NextRequest) {
       'honeywell-walek-dociskowy-pc45t', 'honeywell-odklejak-pc45t', 'honeywell-gilotyna-pc45t',
       'honeywell-pc42e-t',
       // Brother
-      'brother-td-4d', 'brother-td-2020a',
+      'brother-td-4d', 'brother-td-2020a', 'brother-td-4t',
       'brother-td4d-cutter', 'brother-td4d-peeler',
       'brother-td4d-printhead-203', 'brother-td4d-printhead-300',
       'brother-td4d-platen-203', 'brother-td4d-platen-300',
+      'brother-td4t-obcinarka', 'brother-td4t-odklejak',
       'honeywell-glowica-203dpi-pc42e-t', 'honeywell-glowica-300dpi-pc42e-t',
       'honeywell-walek-dociskowy-pc42e-t', 'honeywell-odklejak-pc42e-t', 'honeywell-gilotyna-pc42e-t',
       'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45',
