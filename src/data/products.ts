@@ -4741,10 +4741,9 @@ Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukują
       ],
     },
     downloads: [
-      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://download.brother.com/welcome/docp100571/td-4410d_4420dn_4520dn_pol_ug.pdf', size: 'PDF' },
-      { name: 'Skrócona instrukcja (PL)', type: 'manual', url: 'https://download.brother.com/welcome/docp100437/td4d_cee_qsg_d02w70001_01.pdf', size: 'PDF' },
-      { name: 'Karta katalogowa serii TD-4D', type: 'datasheet', url: 'https://www.brother.eu/-/media/Product-Downloads/Devices/Label-Printers/TD/TD-Series-Datasheet/TD-4D-series-datasheet-final.ashx', size: 'PDF' },
-      { name: 'Sterowniki i oprogramowanie', type: 'software', url: 'https://www.brother.pl/support/td-4410d/downloads', size: 'Online' },
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: '/downloads/td-4410d_4420dn_4520dn_pol_ug.pdf', size: '3,8 MB' },
+      { name: 'Skrócona instrukcja (PL)', type: 'manual', url: '/downloads/td4d_cee_qsg_d02w70001_01.pdf', size: '812 KB' },
+      { name: 'Karta katalogowa serii TD-4D', type: 'datasheet', url: '/downloads/Karta_produktu_TD-4D_2023_07.pdf', size: '725 KB' },
     ],
     relatedProducts: ['zebra-zd421d', 'zebra-zd220d', 'honeywell-pc45d'],
     createdAt: '2026-03-16',
