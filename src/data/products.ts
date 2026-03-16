@@ -4514,14 +4514,14 @@ Specyfikacja zgodna z oficjalną kartą katalogową Honeywell PC42E-T (źródło
     name: 'Brother TD-4D',
     shortDescription: 'Brother TD-4D — biurkowa drukarka etykiet termiczna 4 cale, 203/300 dpi, do 203 mm/s, emulacja ZPL II, 3-letnia gwarancja z głowicą i wałkiem, BarTender w zestawie',
     seoTitle: 'Brother TD-4D — drukarka etykiet termiczna | od 1 250 zł',
-    seoDescription: 'Brother TD-4D — biurkowa drukarka termiczna 4", 203/300 dpi, do 203 mm/s. Emulacja ZPL II, BarTender gratis, 3-letnia gwarancja z głowicą. 4 modele od 1 250 zł netto. TAKMA.',
+    seoDescription: 'Brother TD-4D — biurkowa drukarka termiczna 4", 203/300 dpi, do 203 mm/s. Emulacja ZPL II, BarTender gratis, 3-letnia gwarancja z głowicą. Od 1 250 zł. TAKMA.',
     description: `Dla kogo? Brother TD-4D to profesjonalna biurkowa drukarka etykiet termicznych 4 cale, stworzona z myślą o firmach e-commerce, punktach nadawczych, sklepach detalicznych, aptekach, gabinetach lekarskich i małych magazynach — wszędzie tam, gdzie liczy się niezawodny druk etykiet kurierskich, cenowych, kodów kreskowych, paragonów i opasek identyfikacyjnych przy niskich kosztach eksploatacji.
 
 Brother TD-4D to seria czterech modeli biurkowych drukarek etykiet pracujących w technologii druku termicznego bezpośredniego (direct thermal). Drukarka nie wymaga taśmy barwiącej (ribbona) — obraz powstaje bezpośrednio na papierze termicznym, co obniża koszty eksploatacji i upraszcza obsługę. Seria TD-4D oferuje dwie rozdzielczości: 203 dpi (modele TD-4410D i TD-4420DN, prędkość do 203 mm/s) oraz 300 dpi (modele TD-4520DN i TD-4550DNWB, prędkość do 152 mm/s). Wszystkie modele obsługują etykiety o szerokości od 19 do 118 mm na rolkach o średnicy do 127 mm.
 
 Kluczową przewagą Brother TD-4D jest emulacja ZPL II, CPCL i DPL — drukarka jest kompatybilna z szablonami etykiet zaprojektowanymi dla drukarek Zebra, co umożliwia bezproblemową migrację z modeli [Zebra ZD220d](/produkt/zebra-zd220d), [Zebra ZD421d](/produkt/zebra-zd421d) czy GK420d bez zmiany oprogramowania. W zestawie z drukarką dostarczany jest program BarTender UltraLite (licencja o wartości ponad 1 000 zł) oraz P-touch Editor do projektowania etykiet — oba bezpłatnie. Drukarka obsługuje kody kreskowe 1D (Code 39, Code 128, EAN-13, EAN-8, UPC-A, GS1-128, GS1 DataBar) i 2D (QR Code, DataMatrix, PDF417, Aztec, MaxiCode), spełniając wymagania standardów GS1 i etykiet kurierskich InPost, DPD, DHL, UPS i GLS. Opcjonalne akcesoria — odklejak etykiet (PALP002) i obcinarka (PACU001) — montowane samodzielnie przez użytkownika, rozszerzają funkcjonalność drukarki. Szukasz odpowiedniej drukarki? Sprawdź nasz [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).
 
-Brother TD-4D współpracuje z platformami e-commerce i systemami logistycznymi: BaseLinker, Allegro, Amazon Seller Central, Shoper, PrestaShop, WooCommerce, IdoSell i Magento. Integracja odbywa się przez sterownik drukarki (Windows/Linux) lub emulację ZPL — systemy wysyłające etykiety w formacie ZPL do dowolnej drukarki Zebra będą działały z Brother TD-4D bez modyfikacji. To jedna z najtańszych drukarek etykiet do paczek na rynku, łącząca niską cenę zakupu z brakiem kosztów taśmy barwiącej i 3-letnią gwarancją obejmującą głowicę drukującą.
+Brother TD-4D współpracuje z platformami e-commerce i systemami logistycznymi: BaseLinker, Allegro, Amazon Seller Central, Shoper, PrestaShop, WooCommerce, IdoSell i Magento. Integracja odbywa się przez sterownik drukarki (Windows/Linux) lub emulację ZPL — systemy wysyłające etykiety w formacie ZPL do dowolnej drukarki Zebra będą działały z Brother TD-4D bez modyfikacji. Brother TD-4D to jedna z najtańszych drukarek etykiet 4 cale na rynku — tańsza niż Zebra ZD421d o 222 zł, szybsza o 34% (203 vs 152 mm/s). Tania drukarka etykiet do paczek, łącząca niską cenę zakupu z brakiem kosztów taśmy barwiącej i 3-letnią gwarancją obejmującą głowicę drukującą.
 
 Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukującą i wałek dociskowy (po rejestracji na brother.pl) — to najdłuższa gwarancja w klasie biurkowych drukarek etykiet, obejmująca elementy eksploatacyjne, które u konkurencji ([Zebra](/drukarki-etykiet), [Honeywell PC45d](/produkt/honeywell-pc45d)) są wyłączone z gwarancji lub objęte gwarancją maksymalnie 6–12 miesięcy. Specyfikacja zgodna z oficjalną kartą katalogową Brother (źródło: brother.pl, marzec 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -4620,7 +4620,11 @@ Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukują
       'Bluetooth': 'Bluetooth v4.2 Classic + BLE — drukowanie bezprzewodowe z urządzeń mobilnych (Android/iOS) przez aplikację Brother iPrint&Label.',
       'LCD': 'Wyświetlacz LCD z zegarem czasu rzeczywistego — konfiguracja drukarki bez komputera, podgląd statusu, ustawienia sieci na ekranie.',
     },
-    compatibleAccessories: [],
+    compatibleAccessories: [
+      'zebra-labels-zselect2000d-57x32',
+      'zebra-labels-zselect2000d-76x51',
+      'zebra-labels-zselect2000d-102x38',
+    ],
     relatedAccessories: [
       'brother-td4d-cutter',
       'brother-td4d-peeler',
