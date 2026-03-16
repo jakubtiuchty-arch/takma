@@ -91,6 +91,11 @@ export async function middleware(request: NextRequest) {
       'honeywell-walek-dociskowy-pc45d', 'honeywell-odklejak-pc45d', 'honeywell-gilotyna-pc45d',
       'honeywell-walek-dociskowy-pc45t', 'honeywell-odklejak-pc45t', 'honeywell-gilotyna-pc45t',
       'honeywell-pc42e-t',
+      // Brother
+      'brother-td-4d',
+      'brother-td4d-cutter', 'brother-td4d-peeler',
+      'brother-td4d-printhead-203', 'brother-td4d-printhead-300',
+      'brother-td4d-platen-203', 'brother-td4d-platen-300',
       'honeywell-glowica-203dpi-pc42e-t', 'honeywell-glowica-300dpi-pc42e-t',
       'honeywell-walek-dociskowy-pc42e-t', 'honeywell-odklejak-pc42e-t', 'honeywell-gilotyna-pc42e-t',
       'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45',
@@ -139,7 +144,7 @@ export async function middleware(request: NextRequest) {
     // Slugi zebra-* / datalogic-* to produkty lub akcesoria na nowej stronie
     // (stare WordPress URLe Zebra obsługiwane są redirectami w next.config.mjs PRZED middleware)
     if (!existingSlugs.has(slug)) {
-      const isNewSiteProduct = slug.startsWith('zebra-') || slug.startsWith('datalogic-') || slug.startsWith('newland-') || slug.startsWith('honeywell-')
+      const isNewSiteProduct = slug.startsWith('zebra-') || slug.startsWith('datalogic-') || slug.startsWith('newland-') || slug.startsWith('honeywell-') || slug.startsWith('brother-')
 
       if (!isNewSiteProduct) {
         return NextResponse.redirect(new URL('/produkt-przeniesiony', request.url), 301)
