@@ -6,30 +6,36 @@ export const maxDuration = 30
 
 /**
  * POST /api/admin/resend-order-email
- * Body: { orderId: string, secret: string }
+ * Body: { orderId?: string, orderNumber?: string, secret: string }
  *
  * Ręczne ponowne wysłanie maili zamówieniowych (do klienta + do admina).
+ * Akceptuje orderId (Prisma ID) lub orderNumber (np. "20260316112014").
  * Wymaga ADMIN_JWT_SECRET w body.
  */
 export async function POST(request: NextRequest) {
   try {
-    const { orderId, secret } = await request.json()
+    const { orderId, orderNumber, secret } = await request.json()
 
     if (!secret || secret !== process.env.ADMIN_JWT_SECRET) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
-    if (!orderId) {
-      return NextResponse.json({ error: 'orderId is required' }, { status: 400 })
+    if (!orderId && !orderNumber) {
+      return NextResponse.json({ error: 'orderId or orderNumber is required' }, { status: 400 })
     }
 
-    const order = await prisma.order.findUnique({
-      where: { id: orderId },
-      include: { items: true, customer: true },
-    })
+    const order = orderId
+      ? await prisma.order.findUnique({
+          where: { id: orderId },
+          include: { items: true, customer: true },
+        })
+      : await prisma.order.findFirst({
+          where: { orderNumber },
+          include: { items: true, customer: true },
+        })
 
     if (!order) {
-      return NextResponse.json({ error: `Order ${orderId} not found` }, { status: 404 })
+      return NextResponse.json({ error: `Order ${orderId || orderNumber} not found` }, { status: 404 })
     }
 
     const emailData = {
