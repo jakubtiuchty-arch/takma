@@ -18,6 +18,8 @@ interface ProductSlide {
   imageType?: 'lifestyle' | 'packshot'
   /** Baner — bez gradientów/overlay'ów, tło dopasowane do koloru obrazu */
   noOverlay?: boolean
+  /** Obraz flush do lewej (h-full w-auto, bez skalowania) — tekst po prawej */
+  imageLeft?: boolean
   /** Kolor tła sekcji dopasowany do banera */
   bgColor?: string
 }
@@ -36,8 +38,8 @@ const slides: HeroSlide[] = [
     name: 'Zebra TC501',
     slug: 'zebra-tc501',
     tagline: 'Flagowy kolektor danych z AI, RFID UHF i Wi-Fi 7. Ekran AMOLED 6" 1500 nit, skaner AC670 do 30 m i Android 15 ze wsparciem do v19.',
-    imageClassName: 'object-cover object-left',
     imageType: 'lifestyle',
+    imageLeft: true,
     bgColor: '#1a1a1a',
   },
   {
@@ -101,6 +103,7 @@ export default function Hero() {
   const slide = slides[current]
   const isLifestyle = slide.type === 'product' && slide.imageType === 'lifestyle'
   const isBanner = slide.type === 'product' && slide.noOverlay
+  const isImageLeft = slide.type === 'product' && slide.imageLeft
   const sectionBg = (slide.type === 'product' && slide.bgColor) ? slide.bgColor : '#0c1525'
 
   return (
@@ -133,7 +136,19 @@ export default function Hero() {
             isTransitioning ? 'opacity-0' : 'opacity-100'
           )}
         >
-          {isBanner ? (
+          {isImageLeft ? (
+            /* Image flush left — h-full, natural width, mask fades right edge */
+            /* eslint-disable-next-line @next/next/no-img-element */
+            <img
+              src={slide.image}
+              alt={slide.name}
+              className="absolute left-0 top-0 h-full w-auto object-contain object-left"
+              style={{
+                maskImage: 'linear-gradient(to left, transparent 0%, black 20%)',
+                WebkitMaskImage: 'linear-gradient(to left, transparent 0%, black 20%)',
+              }}
+            />
+          ) : isBanner ? (
             /* Banner mode — image right-aligned, mask fades left edge into bgColor */
             /* eslint-disable-next-line @next/next/no-img-element */
             <img
@@ -161,7 +176,7 @@ export default function Hero() {
       )}
 
       {/* Gradienty — różne dla lifestyle vs packshot (baner: bez overlay'ów) */}
-      {slide.type === 'product' && !isBanner && (
+      {slide.type === 'product' && !isBanner && !isImageLeft && (
         isLifestyle ? (
           /* Lifestyle: gradient od PRAWEJ — tekst po prawej, zdjęcie widoczne po lewej */
           <>
