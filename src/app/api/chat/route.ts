@@ -10,6 +10,14 @@ export const maxDuration = 30
 const MAX_MESSAGE_LENGTH = 2000
 const MAX_MESSAGES = 20
 
+// Extract text content from UIMessage parts
+function extractText(parts: Array<{ type: string; text?: string }>): string {
+  return parts
+    .filter(p => p.type === 'text' && p.text)
+    .map(p => p.text!)
+    .join('')
+}
+
 export async function POST(request: Request) {
   // Rate limit: 30 messages / 10 min per IP
   const ip = getClientIp(request.headers)
@@ -32,29 +40,42 @@ export async function POST(request: Request) {
       )
     }
 
-    // Sanitize: trim messages, limit length
-    const sanitizedMessages = messages
+    // Convert UIMessage[] → simple {role, content}[] for streamText
+    const modelMessages = messages
       .slice(-MAX_MESSAGES)
-      .map((msg: { role: string; content: string }) => ({
-        role: msg.role as 'user' | 'assistant',
-        content: typeof msg.content === 'string'
-          ? msg.content.slice(0, MAX_MESSAGE_LENGTH)
-          : '',
-      }))
-      .filter((msg: { role: string; content: string }) =>
+      .map((msg: { role: string; parts?: Array<{ type: string; text?: string }>; content?: string }) => {
+        const role = msg.role as 'user' | 'assistant'
+        // Support both UIMessage (parts) and legacy (content) formats
+        let content = ''
+        if (Array.isArray(msg.parts)) {
+          content = extractText(msg.parts)
+        } else if (typeof msg.content === 'string') {
+          content = msg.content
+        }
+        return { role, content: content.slice(0, MAX_MESSAGE_LENGTH) }
+      })
+      .filter(msg =>
         (msg.role === 'user' || msg.role === 'assistant') && msg.content.length > 0
       )
+
+    if (modelMessages.length === 0) {
+      return new Response(
+        JSON.stringify({ error: 'Brak wiadomości.' }),
+        { status: 400, headers: { 'Content-Type': 'application/json' } }
+      )
+    }
 
     const result = streamText({
       model: anthropic('claude-sonnet-4-20250514'),
       system: systemPrompt,
-      messages: sanitizedMessages,
+      messages: modelMessages,
       tools: chatTools,
       stopWhen: stepCountIs(5),
     })
 
     return result.toUIMessageStreamResponse()
-  } catch {
+  } catch (err) {
+    console.error('Chat API error:', err)
     return new Response(
       JSON.stringify({ error: 'Wystąpił błąd. Spróbuj ponownie.' }),
       { status: 500, headers: { 'Content-Type': 'application/json' } }
