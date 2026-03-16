@@ -6650,6 +6650,7 @@ export const guides: Guide[] = [
 },
 {
   slug: 'kolektor-danych-do-inwentaryzacji',
+  heroImage: '/images/guides/kolektor-danych-do-inwentaryzacji.webp',
   title: 'Kolektor danych do inwentaryzacji — jak wybrać i przeprowadzić',
   seoTitle: 'Kolektor danych do inwentaryzacji — poradnik 2026',
   seoDescription: 'Jak wybrać kolektor danych do inwentaryzacji? Porównanie metod (kody kreskowe vs RFID), polecane modele od 2 207 zł z cenami i konfiguracja krok po kroku.',
