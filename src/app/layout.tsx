@@ -156,7 +156,8 @@ gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', { send_page_view: true });`}
       <PostHogProvider>
         <LayoutShell>{children}</LayoutShell>
       </PostHogProvider>
-      {!isAdmin && !isPanel && <ChatWidget />}
+      {/* ChatWidget wyłączony tymczasowo — kalibracja w toku */}
+      {/* {!isAdmin && !isPanel && <ChatWidget />} */}
       <Analytics />
       <SpeedInsights />
       {!isAdmin && !isPanel && (
