@@ -32,15 +32,6 @@ const slides: HeroSlide[] = [
   { type: 'info' },
   {
     type: 'product',
-    image: '/images/hero_tc501.jpeg',
-    name: 'Zebra TC501',
-    slug: 'zebra-tc501',
-    tagline: 'Terminal mobilny z 5G i Wi-Fi 6E do magazynów i logistyki. Ekran 6", skaner FlexRange, IP68 — gotowy na najciezsze warunki.',
-    imageClassName: 'object-cover object-[70%_center]',
-    imageType: 'lifestyle',
-  },
-  {
-    type: 'product',
     image: '/images/hero-zt231.webp',
     name: 'Zebra ZT231',
     slug: 'zebra-zt231',

@@ -306,7 +306,7 @@ export default function HomePage() {
               </div>
               <div className="flex-shrink-0 w-full md:w-1/2 lg:w-[55%]">
                 <Image
-                  src="/images/zebra-tc501-baner.png"
+                  src="/images/zebra-tc501-baner.webp"
                   alt="Zebra TC501 — kolektor danych z AI, RFID i Wi-Fi 7 na tle magazynu"
                   width={1200}
                   height={500}
