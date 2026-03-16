@@ -48,11 +48,14 @@ export async function POST(request: NextRequest) {
     }
 
     const reasonLabel = REASON_LABELS[reason] || reason || 'Brak tematu'
-    const adminEmail = process.env.ADMIN_EMAIL || 'jakub.tiuchty@takma.com.pl'
+    const adminEmails = [
+      process.env.ADMIN_EMAIL || 'takma@takma.com.pl',
+      'jakub.tiuchty@takma.com.pl',
+    ]
 
     // Send notification to admin
     await sendEmail({
-      to: adminEmail,
+      to: adminEmails,
       subject: `[Kontakt] ${reasonLabel} — ${name}`,
       html: buildAdminContactNotificationEmail({ name, email, phone, company, reasonLabel, message }),
     })

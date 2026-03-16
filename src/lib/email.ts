@@ -23,7 +23,7 @@ function getResend(): Resend | null {
 }
 
 interface EmailOptions {
-  to: string
+  to: string | string[]
   subject: string
   html: string
   from?: string
@@ -131,9 +131,12 @@ export async function sendAdminNotification(data: {
   paymentMethod: string
   customerNotes?: string | null
 }) {
-  const adminEmail = process.env.ADMIN_EMAIL || 'jakub.tiuchty@takma.com.pl'
+  const adminEmails = [
+    process.env.ADMIN_EMAIL || 'takma@takma.com.pl',
+    'jakub.tiuchty@takma.com.pl',
+  ]
   return sendEmail({
-    to: adminEmail,
+    to: adminEmails,
     from: 'TAKMA Zamówienia <noreply@serwis-zebry.pl>',
     subject: `[NOWE ZAMÓWIENIE] ${data.orderNumber} — ${data.totalBrutto.toFixed(2)} zł brutto`,
     html: buildAdminOrderNotificationEmail(data),

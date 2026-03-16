@@ -66,8 +66,9 @@ export async function POST(request: NextRequest) {
     })
 
     // Mail do admina — informacja o nowej subskrypcji
+    const adminEmails = [adminEmail, 'jakub.tiuchty@takma.com.pl']
     await sendEmail({
-      to: adminEmail,
+      to: adminEmails,
       subject: `[Notify] ${email} → ${partNumber}`,
       html: buildAdminNotifySubscriptionEmail({ email, displayName, partNumber, createdAt: entry.createdAt }),
     })
