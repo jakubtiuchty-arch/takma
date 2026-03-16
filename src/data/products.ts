@@ -4618,11 +4618,7 @@ Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukują
       'Bluetooth': 'Bluetooth v4.2 Classic + BLE — drukowanie bezprzewodowe z urządzeń mobilnych (Android/iOS) przez aplikację Brother iPrint&Label.',
       'LCD': 'Wyświetlacz LCD z zegarem czasu rzeczywistego — konfiguracja drukarki bez komputera, podgląd statusu, ustawienia sieci na ekranie.',
     },
-    compatibleAccessories: [
-      'zebra-labels-zselect2000d-57x32',
-      'zebra-labels-zselect2000d-76x51',
-      'zebra-labels-zselect2000d-102x38',
-    ],
+    compatibleAccessories: [],
     relatedAccessories: [
       'brother-td4d-cutter',
       'brother-td4d-peeler',
@@ -4744,6 +4740,7 @@ Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukują
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: '/downloads/td-4410d_4420dn_4520dn_pol_ug.pdf', size: '3,8 MB' },
       { name: 'Skrócona instrukcja (PL)', type: 'manual', url: '/downloads/td4d_cee_qsg_d02w70001_01.pdf', size: '812 KB' },
       { name: 'Karta katalogowa serii TD-4D', type: 'datasheet', url: '/downloads/Karta_produktu_TD-4D_2023_07.pdf', size: '725 KB' },
+      { name: 'Sterowniki i oprogramowanie', type: 'software', url: 'https://www.brother.pl/support/td-4410d/downloads', size: 'Online' },
     ],
     relatedProducts: ['zebra-zd421d', 'zebra-zd220d', 'honeywell-pc45d'],
     createdAt: '2026-03-16',
