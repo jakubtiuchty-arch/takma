@@ -357,15 +357,97 @@ export function buildOrderConfirmationEmail(data: {
 // #2 — Proforma Invoice (Customer)
 export function buildProformaEmail(data: {
   orderNumber: string
+  items: { name: string; partNumber?: string | null; quantity: number; priceNetto: number; totalNetto: number }[]
+  customer: {
+    company: string
+    nip?: string | null
+    contactName: string
+    email: string
+    phone?: string | null
+    address: string
+  }
+  subtotalNetto: number
+  shippingNetto: number
+  vatAmount: number
+  totalBrutto: number
 }): string {
+  const today = new Date().toLocaleDateString('pl-PL')
+  const dueDate = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toLocaleDateString('pl-PL')
+  const shippingLabel = data.shippingNetto > 0 ? `${fmtPLN(data.shippingNetto)} z&#322;` : 'Gratis'
+
+  const itemRows = data.items.map((i, idx) => {
+    const label = i.partNumber ? `${esc(i.name)} <span style="color:#6b7280">(${esc(i.partNumber)})</span>` : esc(i.name)
+    return `
+      <tr>
+        <td style="padding:10px 8px;font-size:13px;color:#6b7280;border-bottom:1px solid #f3f4f6;text-align:center">${idx + 1}</td>
+        <td style="padding:10px 0;font-size:14px;color:#1e293b;border-bottom:1px solid #f3f4f6">${label}</td>
+        <td style="padding:10px 8px;font-size:14px;color:#374151;border-bottom:1px solid #f3f4f6;text-align:center">${i.quantity}&nbsp;szt.</td>
+        <td style="padding:10px 8px;font-size:14px;color:#374151;border-bottom:1px solid #f3f4f6;text-align:right">${fmtPLN(i.priceNetto)}&nbsp;z&#322;</td>
+        <td style="padding:10px 0;font-size:14px;font-weight:600;color:#1e293b;border-bottom:1px solid #f3f4f6;text-align:right">${fmtPLN(i.totalNetto)}&nbsp;z&#322;</td>
+      </tr>`
+  }).join('')
+
   return emailLayout({
-    preheader: `Faktura pro forma ${data.orderNumber} — opłać przelew, aby zrealizować zamówienie`,
+    preheader: `Pro forma ${data.orderNumber} — ${fmtPLN(data.totalBrutto)} zł brutto — opłać przelew`,
     content:
-      emailHeader({ title: 'Faktura pro forma', subtitle: `Nr zam&#243;wienia: ${esc(data.orderNumber)}`, accent: 'blue' }) +
+      emailHeader({ title: 'PRO FORMA', subtitle: `Nr: PF/${esc(data.orderNumber)}/${new Date().getFullYear()}`, accent: 'blue' }) +
       emailBody(
-        emailText('W za&#322;&#261;czniku znajduje si&#281; faktura pro forma. Po zaksi&#281;gowaniu wp&#322;aty Twoje zam&#243;wienie zostanie zrealizowane.') +
+        // Daty
+        `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 16px;background-color:#f9fafb;border-radius:8px;border:1px solid #e5e7eb">
+          <tr>
+            <td style="padding:12px 16px;font-size:12px;color:#6b7280;text-align:center">Data wystawienia<br/><strong style="font-size:14px;color:#1e293b">${today}</strong></td>
+            <td style="padding:12px 16px;font-size:12px;color:#6b7280;text-align:center;border-left:1px solid #e5e7eb">Termin p&#322;atno&#347;ci<br/><strong style="font-size:14px;color:#1e293b">${dueDate}</strong></td>
+            <td style="padding:12px 16px;font-size:12px;color:#6b7280;text-align:center;border-left:1px solid #e5e7eb">Nr zam&#243;wienia<br/><strong style="font-size:14px;color:#1e293b">${esc(data.orderNumber)}</strong></td>
+          </tr>
+        </table>` +
+
+        // Sprzedawca / Nabywca
+        `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 16px">
+          <tr>
+            <td valign="top" width="50%" style="padding:14px 12px 14px 16px;background-color:#f9fafb;border-radius:8px 0 0 8px;border:1px solid #e5e7eb;border-right:none;font-size:13px;line-height:1.7;color:#374151">
+              <span style="font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:1px">Sprzedawca</span><br/>
+              <strong>TAKMA Tadeusz Tiuchty</strong><br/>
+              ul. Po&#347;wi&#281;cka 1a<br/>
+              51-128 Wroc&#322;aw<br/>
+              NIP: 9151004377<br/>
+              <a href="mailto:takma@takma.com.pl" style="color:#2563eb">takma@takma.com.pl</a>
+            </td>
+            <td valign="top" width="50%" style="padding:14px 16px 14px 12px;background-color:#f9fafb;border-radius:0 8px 8px 0;border:1px solid #e5e7eb;border-left:1px solid #e5e7eb;font-size:13px;line-height:1.7;color:#374151">
+              <span style="font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:1px">Nabywca</span><br/>
+              <strong>${esc(data.customer.company)}</strong><br/>
+              ${data.customer.nip ? `NIP: ${esc(data.customer.nip)}<br/>` : ''}
+              ${esc(data.customer.contactName)}<br/>
+              ${esc(data.customer.address)}<br/>
+              <a href="mailto:${esc(data.customer.email)}" style="color:#2563eb">${esc(data.customer.email)}</a>
+              ${data.customer.phone ? `<br/>Tel: ${esc(data.customer.phone)}` : ''}
+            </td>
+          </tr>
+        </table>` +
+
+        // Tabela produktów
+        `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin:0 0 4px">
+          <thead><tr>
+            <th style="padding:10px 8px;text-align:center;font-size:11px;font-weight:600;color:white;background:#1e40af;border-radius:6px 0 0 0;width:35px">Lp.</th>
+            <th style="padding:10px 0;text-align:left;font-size:11px;font-weight:600;color:white;background:#1e40af">Nazwa produktu</th>
+            <th style="padding:10px 8px;text-align:center;font-size:11px;font-weight:600;color:white;background:#1e40af;width:60px">Ilo&#347;&#263;</th>
+            <th style="padding:10px 8px;text-align:right;font-size:11px;font-weight:600;color:white;background:#1e40af;width:90px">Cena netto</th>
+            <th style="padding:10px 0;text-align:right;font-size:11px;font-weight:600;color:white;background:#1e40af;border-radius:0 6px 0 0;width:100px">Warto&#347;&#263; netto</th>
+          </tr></thead>
+          <tbody>${itemRows}</tbody>
+        </table>` +
+
+        // Podsumowanie
+        `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 20px">
+          <tr><td style="padding:8px 0;font-size:13px;color:#6b7280;text-align:right">Warto&#347;&#263; netto</td><td style="padding:8px 0 8px 12px;font-size:13px;color:#1e293b;text-align:right;width:120px">${fmtPLN(data.subtotalNetto)}&nbsp;z&#322;</td></tr>
+          <tr><td style="padding:4px 0;font-size:13px;color:#6b7280;text-align:right">Dostawa</td><td style="padding:4px 0 4px 12px;font-size:13px;color:#1e293b;text-align:right">${shippingLabel}</td></tr>
+          <tr><td style="padding:4px 0;font-size:13px;color:#6b7280;text-align:right">VAT 23%</td><td style="padding:4px 0 4px 12px;font-size:13px;color:#1e293b;text-align:right">${fmtPLN(data.vatAmount)}&nbsp;z&#322;</td></tr>
+          <tr><td style="padding:10px 0 0;font-size:17px;font-weight:700;color:#1e293b;text-align:right;border-top:2px solid #1e40af">Do zap&#322;aty brutto</td><td style="padding:10px 0 0 12px;font-size:17px;font-weight:700;color:#1e40af;text-align:right;border-top:2px solid #1e40af">${fmtPLN(data.totalBrutto)}&nbsp;z&#322;</td></tr>
+        </table>` +
+
+        // Dane do przelewu
         emailBankDetails(data.orderNumber) +
-        emailText('<span style="color:#6b7280;font-size:13px">Pro forma wa&#380;na 7 dni od daty wystawienia.</span>') +
+
+        emailText('<span style="color:#6b7280;font-size:13px">Pro forma wa&#380;na 7 dni od daty wystawienia. Po zaksi&#281;gowaniu wp&#322;aty zam&#243;wienie zostanie zrealizowane. Faktura VAT zostanie wystawiona po zaksiegowaniu p&#322;atno&#347;ci.</span>') +
         emailSignature()
       ),
   })

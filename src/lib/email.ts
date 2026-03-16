@@ -92,13 +92,27 @@ export async function sendOrderConfirmation(data: {
   })
 }
 
-export async function sendProformaEmail(email: string, orderNumber: string, pdfBuffer: Buffer) {
+export async function sendProformaEmail(data: {
+  orderNumber: string
+  items: { name: string; partNumber?: string | null; quantity: number; priceNetto: number; totalNetto: number }[]
+  customer: {
+    company: string
+    nip?: string | null
+    contactName: string
+    email: string
+    phone?: string | null
+    address: string
+  }
+  subtotalNetto: number
+  shippingNetto: number
+  vatAmount: number
+  totalBrutto: number
+}) {
   return sendEmail({
-    to: email,
+    to: data.customer.email,
     from: 'TAKMA Zamówienia <noreply@serwis-zebry.pl>',
-    subject: `Faktura pro forma ${orderNumber} — TAKMA`,
-    html: buildProformaEmail({ orderNumber }),
-    attachments: [{ filename: `proforma-${orderNumber}.pdf`, content: pdfBuffer }],
+    subject: `Pro forma ${data.orderNumber} — ${data.totalBrutto.toFixed(2)} zł brutto — TAKMA`,
+    html: buildProformaEmail(data),
   })
 }
 

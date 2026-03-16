@@ -1,7 +1,7 @@
 export const maxDuration = 30
 
 import { NextRequest, NextResponse } from 'next/server'
-import { sendOrderConfirmation, sendAdminNotification } from '@/lib/email'
+import { sendOrderConfirmation, sendAdminNotification, sendProformaEmail } from '@/lib/email'
 
 interface ProformaItem {
   productName: string
@@ -396,7 +396,9 @@ export async function POST(request: NextRequest) {
 </html>
 `
 
-    // Wysyłka maili (nie blokuje odpowiedzi — fire and forget)
+    // Wysyłka maili — await aby upewnić się że wyjdą przed timeout
+    const emailAddress = `${customer.street} ${customer.buildingNumber}, ${customer.postalCode} ${customer.city}`
+
     const emailData = {
       orderNumber,
       items: items.map(i => ({
@@ -413,7 +415,7 @@ export async function POST(request: NextRequest) {
         nip: customer.nip,
         phone: customer.phone,
         email: customer.email,
-        address: `${customer.street} ${customer.buildingNumber}, ${customer.postalCode} ${customer.city}`,
+        address: emailAddress,
         shippingAddress: null as string | null,
       },
       subtotalNetto,
@@ -424,13 +426,30 @@ export async function POST(request: NextRequest) {
       customerNotes: notes || null,
     }
 
-    sendOrderConfirmation(emailData)
-      .then(r => { if (!r.success) console.error('[Proforma] Błąd maila do klienta:', r.error) })
-      .catch(err => console.error('[Proforma] Exception mail klient:', err))
+    const proformaData = {
+      orderNumber,
+      items: emailData.items,
+      customer: {
+        company: customer.company,
+        nip: customer.nip,
+        contactName: customer.contactName || '',
+        email: customer.email,
+        phone: customer.phone,
+        address: emailAddress,
+      },
+      subtotalNetto,
+      shippingNetto,
+      vatAmount,
+      totalBrutto,
+    }
 
-    sendAdminNotification(emailData)
-      .then(r => { if (!r.success) console.error('[Proforma] Błąd maila do admina:', r.error) })
-      .catch(err => console.error('[Proforma] Exception mail admin:', err))
+    // Wyślij 3 maile równolegle: potwierdzenie klient, powiadomienie admin, proforma klient
+    const [confirmRes, adminRes, proformaRes] = await Promise.allSettled([
+      sendOrderConfirmation(emailData),
+      sendAdminNotification(emailData),
+      sendProformaEmail(proformaData),
+    ])
+    console.log(`[Proforma] Emails for ${orderNumber}: confirm=${confirmRes.status}, admin=${adminRes.status}, proforma=${proformaRes.status}`)
 
     return new NextResponse(html, {
       headers: {
