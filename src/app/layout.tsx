@@ -123,6 +123,20 @@ export default async function RootLayout({
   return (
     <html lang="pl" className={inter.variable}>
       <head>
+        {!isAdmin && !isPanel && process.env.NEXT_PUBLIC_GA_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4-init" strategy="afterInteractive">
+              {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', { send_page_view: true });`}
+            </Script>
+          </>
+        )}
         {!isAdmin && !isPanel && (
           <>
             <script
