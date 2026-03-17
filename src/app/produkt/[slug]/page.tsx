@@ -650,6 +650,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Opis produktu</h2>
               <div className="prose prose-gray max-w-none">
                 {product.description.split('\n\n').map((paragraph, i) => {
+                  // Heading support: ## Title → <h3>
+                  const headingMatch = paragraph.match(/^## (.+)$/)
+                  if (headingMatch) {
+                    return <h3 key={i} className="text-xl font-bold text-gray-900 mt-6 mb-2">{headingMatch[1]}</h3>
+                  }
                   const linkMatch = paragraph.match(/(.*sekcji )(Powiązane produkty|Akcesoria)( poniżej.*)/)
                   if (linkMatch) {
                     return (

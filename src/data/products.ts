@@ -6565,25 +6565,43 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zt610',
     name: 'Zebra ZT610',
     shortDescription: 'Zebra ZT610 — przemysłowa drukarka etykiet 4" klasy heavy-duty, następca 110Xi4. 203/300/600 dpi, do 356 mm/s, ekran dotykowy 4,3", RFID opcja, Link-OS, praca 24/7',
-    seoTitle: 'Drukarka etykiet Zebra ZT610 — heavy-duty 4" RFID 600 dpi | od 10 431 zł',
-    seoDescription: 'Zebra ZT610 — heavy-duty 4" RFID UHF dla fabryk i przemysłu. 600 dpi, 356 mm/s, LCD 4,3". ZT61042-T0E0100Z od 10 431 zł netto.',
-    description: `Zebra ZT610 to najlepszy wybór dla centrów dystrybucyjnych i linii produkcyjnych wymagających najwyższej klasy drukarki przemysłowej 4" z trwałością Xi i rozdzielczością do 600 dpi.
+    seoTitle: 'Drukarka etykiet Zebra ZT610 — 600 dpi, RFID | od 10 431 zł',
+    seoDescription: 'Zebra ZT610 — drukarka przemysłowa heavy-duty 4", 600 dpi, RFID UHF, 356 mm/s, Link-OS. Następca 110Xi4. 12 konfiguracji od 10 431 zł netto | TAKMA.',
+    description: `Zebra ZT610 to najlepszy wybór dla centrów dystrybucyjnych i linii produkcyjnych wymagających najwyższej klasy drukarki przemysłowej 4" z trwałością Xi i rozdzielczością do 600 dpi. [Jak wybrać drukarkę etykiet?](/poradnik/jak-wybrac-drukarke-etykiet) — poradnik kupującego.
+
+## Następca legendarnej 110Xi4
 
 Zebra ZT610 to przemysłowa drukarka etykiet klasy heavy-duty, będąca bezpośrednim następcą legendarnej serii 110Xi4 — jednej z najdłużej produkowanych i najszerzej stosowanych drukarek przemysłowych na świecie. ZT610 łączy sprawdzoną wytrzymałość metalowej konstrukcji Xi z nowoczesną platformą Link-OS, kolorowym ekranem dotykowym 4,3" i pamięcią 1 GB RAM / 2 GB Flash. Drukarka jest zaprojektowana do nieprzerwanej pracy 24/7 w najbardziej wymagających środowiskach produkcyjnych, magazynowych i logistycznych.
 
+## Metalowa konstrukcja i boczne ładowanie mediów
+
 Konstrukcja ZT610 to całkowicie metalowa obudowa z dwuczęściową pokrywą bi-fold i powiększonym oknem inspekcyjnym. Boczny system ładowania mediów (Easy Side-Loading) pozwala na wymianę rolek etykiet i taśm barwiących bez konieczności wyjmowania drukarki z linii produkcyjnej — wymiana trwa dosłownie kilkanaście sekund. Podwójne czujniki mediów (transmisyjny i refleksyjny) automatycznie rozpoznają różne typy etykiet: ciągłe, wykrojnikowe (die-cut), z nacięciem (notch) i z czarnym znacznikiem (black-mark). Głowica drukująca z technologią E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła na całej szerokości 104 mm, co przekłada się na ostre kody kreskowe i czytelny tekst nawet przy prędkości 356 mm/s.
+
+## Trzy rozdzielczości: 203, 300 i 600 dpi
 
 ZT610 jest dostępna w trzech rozdzielczościach: 203 dpi (standard do etykiet logistycznych), 300 dpi (do małych kodów 2D i cenówek) oraz 600 dpi (do mikro-etykiet elektronicznych, jubilerskich i farmaceutycznych o wysokości nawet 3 mm). Prędkość druku zależy od rozdzielczości: 356 mm/s przy 203 dpi, 305 mm/s przy 300 dpi i 152 mm/s przy 600 dpi. Drukarka obsługuje media o szerokości od 20 mm do 114 mm i rolki o średnicy do 203 mm na rdzeniu 76 mm — to oznacza rzadsze wymiany i mniej przestojów w pracy ciągłej.
 
+## Wyświetlacz, Link-OS i Zebra Print DNA
+
 Kolorowy dotykowy wyświetlacz 4,3" (opcja — wersja bazowa ma wyświetlacz monochromatyczny LCD) zmienia kolor na czerwony podczas błędów, co pozwala operatorom zidentyfikować problem z odległości kilku metrów. Uproszczona nawigacja ikonowa grupuje funkcje logicznie, eliminując potrzebę szkolenia. Link-OS z pakietem Zebra Print DNA obejmuje: PrintSecure (szyfrowanie komunikacji), Cloud Connect (integracja z chmurą), Profile Manager (centralne zarządzanie flotą) oraz Visibility Services (monitorowanie stanu drukarek w czasie rzeczywistym). Opcjonalny ZBI 2.0 (Zebra BASIC Interpreter) pozwala na autonomiczne aplikacje — drukarka może pobierać dane z plików, baz danych lub czytników i drukować bez komputera.
+
+## Łączność i RFID UHF
 
 Łączność standardowa obejmuje USB 2.0, RS-232 Serial, Gigabit Ethernet (10/100/1000) i Bluetooth 4.1 oraz dwa porty USB Host do integracji plug-and-play z czytnikami kodów i pamięciami USB. Dwa otwarte sloty komunikacyjne pozwalają na rozbudowę o Wi-Fi 802.11ac, port równoległy (LPT) lub dodatkowy interfejs Ethernet. RFID UHF (EPC Gen 2 V2, ISO 18000-63) jest instalowany w terenie w zaledwie 5 minut — bez konieczności wysyłki do serwisu.
 
-Zebra ZT610 to idealna drukarka dla zakładów produkcyjnych, centrów dystrybucji, magazynów wysokiego składowania i firm logistycznych, które potrzebują niezawodnego druku 24/7 z opcją 600 dpi do specjalistycznych zastosowań. Zastępuje modele 110Xi4 i ZM400 z pełną kompatybilnością wsteczną szablonów ZPL — migracja nie wymaga modyfikacji oprogramowania.
+## Dla kogo jest Zebra ZT610?
 
-Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
+Zebra ZT610 to idealna drukarka dla zakładów produkcyjnych, centrów dystrybucji, magazynów wysokiego składowania i firm logistycznych, które potrzebują niezawodnego druku 24/7 z opcją 600 dpi do specjalistycznych zastosowań. Zastępuje modele 110Xi4 i ZM400 z pełną kompatybilnością wsteczną szablonów ZPL — migracja nie wymaga modyfikacji oprogramowania. Szukasz lżejszej alternatywy? [ZT411](/produkt/zebra-zt411) to mid-range 4". Potrzebujesz szerokich etykiet? [ZT620](/produkt/zebra-zt620) drukuje do 168 mm.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+## ZT610 Micro Label — druk mikroetykiet od 3 mm
+
+Nowa wersja do druku mikroetykiet — ZT610 Micro Label (seria ZT61A) — drukuje etykiety od 3 mm z ulepszoną rejestracją, dedykowaną głowicą 600 dpi i firmware Link-OS 7.5+. Idealna do jubilerstwa, farmacji i elektroniki. Szczegółowe porównanie w [poradniku o drukarkach do mikroetykiet 600 dpi](/poradnik/drukarka-do-mikroetykiet-600-dpi).
+
+## Koszt posiadania (TCO)
+
+Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia. Serwis przemysłowych drukarek Zebra w Polsce: [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-drukarek-zebra).
+
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, marzec 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -6722,11 +6740,11 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Czym różni się ZT610 od ZT411?',
-        answer: 'Obie drukarki mają szerokość druku 4" (104 mm), ale ZT610 to klasa heavy-duty (następca 110Xi4), a ZT411 to mid-range (następca ZT410). Kluczowe różnice: ZT610 ma wyższą prędkość (356 mm/s vs 305 mm/s przy 203 dpi), opcję 600 dpi, solidniejszą metalową konstrukcję (22,7 kg vs 12,5 kg), rolki do 203 mm OD (vs 203 mm) i taśmy 450 m (vs 450 m). ZT610 jest przeznaczona do cięższych obciążeń i bardziej wymagających środowisk. ZT411 jest lżejsza, tańsza i wystarczająca dla większości zastosowań mid-range.',
+        answer: 'Obie drukarki mają szerokość druku 4" (104 mm), ale ZT610 to klasa heavy-duty (następca 110Xi4), a <a href="/produkt/zebra-zt411">ZT411</a> to mid-range (następca ZT410). Kluczowe różnice: ZT610 ma wyższą prędkość (356 mm/s vs 305 mm/s przy 203 dpi), opcję 600 dpi, solidniejszą metalową konstrukcję (22,7 kg vs 12,5 kg), rolki do 203 mm OD (vs 203 mm) i taśmy 450 m (vs 450 m). ZT610 jest przeznaczona do cięższych obciążeń i bardziej wymagających środowisk. <a href="/produkt/zebra-zt411">ZT411</a> jest lżejsza, tańsza i wystarczająca dla większości zastosowań mid-range.',
       },
       {
         question: 'Czym różni się ZT610 od ZT620?',
-        answer: 'ZT610 i ZT620 to ta sama platforma ZT600 w dwóch wersjach: ZT610 drukuje do 104 mm (4"), a ZT620 do 168 mm (6,6"). ZT610 jest szybsza (356 mm/s vs 305 mm/s) i oferuje opcję 600 dpi, której ZT620 nie ma. ZT610 waży 22,7 kg vs 26 kg. Jeśli Twoje etykiety mieszczą się w 104 mm — ZT610 jest szybsza i lżejsza.',
+        answer: 'ZT610 i <a href="/produkt/zebra-zt620">ZT620</a> to ta sama platforma ZT600 w dwóch wersjach: ZT610 drukuje do 104 mm (4"), a <a href="/produkt/zebra-zt620">ZT620</a> do 168 mm (6,6"). ZT610 jest szybsza (356 mm/s vs 305 mm/s) i oferuje opcję 600 dpi, której ZT620 nie ma. ZT610 waży 22,7 kg vs 26 kg. Jeśli Twoje etykiety mieszczą się w 104 mm — ZT610 jest szybsza i lżejsza.',
       },
       {
         question: 'Czy ZT610 obsługuje druk w 600 dpi?',
@@ -6758,7 +6776,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Gdzie serwisować drukarki Zebra przemysłowe w Polsce?',
-        answer: 'Serwis przemysłowych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra z doświadczeniem w naprawach serii ZT. Oferuje naprawę głowic, wymianę wałków dociskowych, czyszczenie toru mediów i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis na miejscu u klienta (on-site) na terenie całej Polski.',
+        answer: 'Serwis przemysłowych drukarek Zebra w Polsce prowadzi <a href="https://www.serwis-zebry.pl/serwis-drukarek-zebra">serwis-zebry.pl</a> — autoryzowany partner Zebra z doświadczeniem w naprawach serii ZT. Oferuje naprawę głowic, wymianę wałków dociskowych, czyszczenie toru mediów i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis na miejscu u klienta (on-site) na terenie całej Polski.',
       },
       {
         question: 'Czym się różni ZT610 Micro Label od standardowego ZT610 600 dpi?',
@@ -6766,7 +6784,15 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Jakie są alternatywy dla Zebra ZT610?',
-        answer: 'Alternatywami są: Zebra ZT620 (szersza, 6"), Honeywell PX940, SATO CL6NX Plus.',
+        answer: 'Alternatywami w klasie heavy-duty 4" są: Honeywell PX940 (600 dpi, zintegrowana weryfikacja kodów kreskowych), SATO CL6NX Plus (305 mm/s, duży ekran 3,5") i TSC MH361T (300 dpi, budżetowa). W ofercie Zebra: <a href="/produkt/zebra-zt411">ZT411</a> (mid-range 4", lżejsza i tańsza), <a href="/produkt/zebra-zt620">ZT620</a> (heavy-duty 6" do szerokich etykiet). Porównanie modeli w <a href="/poradnik/jak-wybrac-drukarke-etykiet">poradniku kupującego</a>.',
+      },
+      {
+        question: 'Ile kosztuje drukarka Zebra ZT610?',
+        answer: 'Zebra ZT610 jest dostępna w 12 konfiguracjach od 10 431 zł netto (203 dpi, LCD). Ceny zależą od rozdzielczości i wyposażenia: 203 dpi od ~10 400 zł, 300 dpi od ~10 750 zł, 600 dpi od ~17 750 zł. Wersja ZT610 Micro Label (ZT61A) do druku mikroetykiet jest dostępna w promocji od 7 899 zł netto (do 30.06.2026). Ceny obejmują drukarkę — akcesoria (gilotyna, odklejak, Wi-Fi, RFID) doliczane osobno. Aktualne ceny z dostępnością w tabeli wariantów powyżej.',
+      },
+      {
+        question: 'Gdzie kupić Zebra ZT610 w Polsce?',
+        answer: 'Drukarkę przemysłową Zebra ZT610 kupisz w sklepie <a href="https://www.takma.com.pl/produkt/zebra-zt610">TAKMA.com.pl</a> — autoryzowany dystrybutor z doradztwem technicznym. Oferujemy 12 konfiguracji z dostawą z magazynu PL (24h) lub EU (2-3 dni). Serwis gwarancyjny i pogwarancyjny realizuje <a href="https://www.serwis-zebry.pl/serwis-drukarek-zebra">serwis-zebry.pl</a>. Kontakt: takma@takma.com.pl, tel. 730 500 668.',
       },
     ],
     comparison: {
@@ -6807,6 +6833,12 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zt610/instrukcja-po-polsku', size: 'Online' },
       { name: 'Sterowniki Windows', type: 'software', url: 'https://www.serwis-zebry.pl/sterowniki', size: 'Online' },
       { name: 'ZT600 Series Spec Sheet (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zt600-series-specification-sheet-en-us.pdf', size: 'PDF' },
+    ],
+    servicePlans: [
+      { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-ZT61-3C0', duration: '3 lata', priceNetto: 2327.35 },
+      { name: 'Zebra OneCare Essential — 5 lat', partNumber: 'Z1AE-ZT61-5C0', duration: '5 lat', priceNetto: 4654.69 },
+      { name: 'Zebra OneCare Select — 3 lata', partNumber: 'Z1AS-ZT61-3C0', duration: '3 lata', priceNetto: 3027.19 },
+      { name: 'Zebra OneCare Select — 5 lat', partNumber: 'Z1AS-ZT61-5C0', duration: '5 lat', priceNetto: 6051.05 },
     ],
     relatedProducts: ['zebra-zt510', 'zebra-zt411', 'honeywell-px45', 'zebra-zt620', 'honeywell-pm45'],
     createdAt: '2022-08-15',
