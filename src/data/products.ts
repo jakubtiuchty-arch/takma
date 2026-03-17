@@ -6837,8 +6837,6 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     servicePlans: [
       { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-ZT61-3C0', duration: '3 lata', priceNetto: 2327.35 },
       { name: 'Zebra OneCare Essential — 5 lat', partNumber: 'Z1AE-ZT61-5C0', duration: '5 lat', priceNetto: 4654.69 },
-      { name: 'Zebra OneCare Select — 3 lata', partNumber: 'Z1AS-ZT61-3C0', duration: '3 lata', priceNetto: 3027.19 },
-      { name: 'Zebra OneCare Select — 5 lat', partNumber: 'Z1AS-ZT61-5C0', duration: '5 lat', priceNetto: 6051.05 },
     ],
     relatedProducts: ['zebra-zt510', 'zebra-zt411', 'honeywell-px45', 'zebra-zt620', 'honeywell-pm45'],
     createdAt: '2022-08-15',
