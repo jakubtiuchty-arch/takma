@@ -7013,12 +7013,12 @@ export const guides: Guide[] = [
 },
 {
   slug: 'drukarka-do-mikroetykiet-600-dpi',
-  title: 'Drukarka do mikroetykiet 600 dpi — jak drukować etykiety od 3 mm',
-  seoTitle: 'Drukarka do mikroetykiet 600 dpi — poradnik 2026',
-  seoDescription: 'Jak drukować mikroetykiety od 3 mm? Poradnik 2026: porównanie 203 vs 300 vs 600 dpi, materiały, branże (PCB, farmacja, jubilerstwo). Zebra ZT610 Micro Label.',
+  title: 'Zebra ZT610 Micro Label — druk mikroetykiet od 3 mm w 600 dpi',
+  seoTitle: 'Zebra ZT610 Micro Label — druk mikroetykiet 600 dpi | TAKMA',
+  seoDescription: 'Jak drukować mikroetykiety od 3 mm? Porównanie 203 vs 300 vs 600 dpi, materiały, branże (PCB, farmacja, jubilerstwo). Zebra ZT610 Micro Label | TAKMA.',
   excerpt: 'Kompletny poradnik o druku mikroetykiet w rozdzielczości 600 dpi — od definicji, przez porównanie rozdzielczości 203/300/600 dpi, zastosowania branżowe (elektronika, farmacja, jubilerstwo), aż po konkretne modele drukarek i dobór materiałów eksploatacyjnych.',
   category: 'poradnik',
-  tags: ['drukarki-etykiet', 'mikroetykiety', '600-dpi', 'zebra-zt610', 'przemyslowe'],
+  tags: ['drukarki-etykiet', 'mikroetykiety', '600-dpi', 'zebra-zt610', 'przemyslowe', 'tco'],
   publishedAt: '2026-03-17',
   updatedAt: '2026-03-17',
   readTime: '15 min',
@@ -7421,7 +7421,7 @@ export const guides: Guide[] = [
       heading: 'Podsumowanie — kto powinien inwestować w drukarkę 600 dpi do mikroetykiet?',
       content: `<p>Drukarka do mikroetykiet 600 dpi to inwestycja uzasadniona w pięciu scenariuszach: (1) drukujesz etykiety o wysokości poniżej 12 mm, (2) kody 2D na etykiecie mają wymiary mniejsze niż 5 x 5 mm, (3) tekst na etykiecie jest mniejszy niż 4 pt, (4) etykiety podlegają weryfikacji jakości wg ISO 15415/15416, (5) integrujesz drukarkę z automatycznym aplikatorem, który wymaga odklejania od 6 mm.</p>
 
-<p>W pozostałych zastosowaniach — logistyka, wysyłka, magazyn, retail — rozdzielczość 203 lub 300 dpi będzie tańsza, szybsza i w pełni wystarczająca. Przeczytaj nasz <a href="/poradnik/jak-wybrac-drukarke-etykiet">kompletny poradnik wyboru drukarki etykiet</a>, aby dobrać model do swoich potrzeb.</p>
+<p>W pozostałych zastosowaniach — logistyka, wysyłka, magazyn, retail — rozdzielczość 203 lub 300 dpi będzie tańsza, szybsza i w pełni wystarczająca. Pełną ofertę znajdziesz w kategorii <a href="/drukarki-etykiet">drukarki etykiet</a>, a nasz <a href="/poradnik/jak-wybrac-drukarke-etykiet">kompletny poradnik wyboru drukarki etykiet</a> pomoże dobrać model do swoich potrzeb. Każda drukarka etykiet przemysłowa 600 dpi wymaga odpowiednich materiałów eksploatacyjnych — dobierzemy je bezpłatnie.</p>
 
 <h3>Rekomendacja modeli</h3>
 <ul>
