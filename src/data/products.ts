@@ -6494,8 +6494,9 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       ],
     },
     compatibleAccessories: [
-      'zebra-labels-zselect2000d-102x38',
-      'zebra-labels-zselect2000d-76x51',
+      'zebra-labels-zperform1000-102x152',
+      'zebra-labels-zperform1000-102x38',
+      'zebra-labels-zperform1000-102x76',
     ],
     relatedAccessories: [
       'brother-tj-peeler',
@@ -42858,8 +42859,8 @@ const brotherPrinterAccessories: Product[] = [
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'brother',
     tags: ['magazyn', 'logistyka', 'produkcja'],
-    images: ['/images/products/TJ4020TNZ1.png'],
-    imageDescriptions: ['Odklejak etykiet Brother PA-LP-005 do drukarek półprzemysłowych serii TJ'],
+    images: [],
+    imageDescriptions: [],
     specifications: [
       { name: 'Part Number', value: 'PA-LP-005' },
       { name: 'Typ', value: 'Odklejak etykiet z nawijakiem podłoża (peeler + liner take-up)' },
@@ -42887,8 +42888,8 @@ const brotherPrinterAccessories: Product[] = [
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'brother',
     tags: ['magazyn', 'logistyka', 'produkcja'],
-    images: ['/images/products/TJ4020TNZ1.png'],
-    imageDescriptions: ['Obcinarka Brother PA-CU-004 do drukarek półprzemysłowych serii TJ'],
+    images: [],
+    imageDescriptions: [],
     specifications: [
       { name: 'Part Number', value: 'PA-CU-004' },
       { name: 'Typ', value: 'Obcinarka automatyczna (cutter)' },
@@ -42917,8 +42918,8 @@ const brotherPrinterAccessories: Product[] = [
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'brother',
     tags: ['magazyn', 'logistyka'],
-    images: ['/images/products/TJ4020TNZ1.png'],
-    imageDescriptions: ['Głowica termiczna Brother BPA-HA2L-004 203 dpi do drukarek TJ-4020TN/TJ-4021TN'],
+    images: [],
+    imageDescriptions: [],
     specifications: [
       { name: 'Part Number', value: 'BPA-HA2L-004' },
       { name: 'Typ', value: 'Głowica termiczna (printhead)' },
@@ -42946,8 +42947,8 @@ const brotherPrinterAccessories: Product[] = [
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'brother',
     tags: ['magazyn', 'logistyka'],
-    images: ['/images/products/TJ4020TNZ1.png'],
-    imageDescriptions: ['Głowica termiczna Brother BPA-HA3L-004 300 dpi do drukarek TJ-4120TN/TJ-4121TN'],
+    images: [],
+    imageDescriptions: [],
     specifications: [
       { name: 'Part Number', value: 'BPA-HA3L-004' },
       { name: 'Typ', value: 'Głowica termiczna (printhead)' },
@@ -42975,8 +42976,8 @@ const brotherPrinterAccessories: Product[] = [
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'brother',
     tags: ['magazyn', 'logistyka'],
-    images: ['/images/products/TJ4020TNZ1.png'],
-    imageDescriptions: ['Wałek dociskowy Brother BPA-PRL-004 do drukarek serii TJ'],
+    images: [],
+    imageDescriptions: [],
     specifications: [
       { name: 'Part Number', value: 'BPA-PRL-004' },
       { name: 'Typ', value: 'Wałek dociskowy (platen roller)' },
