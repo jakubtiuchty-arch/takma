@@ -6552,7 +6552,7 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       },
     ],
     relatedProducts: ['zebra-zt231', 'zebra-zt111', 'honeywell-pd45', 'honeywell-pd45s'],
-    videoUrl: 'https://www.youtube.com/watch?v=dVM2HiZ8Eww',
+    videoUrl: 'https://www.youtube.com/embed/dVM2HiZ8Eww',
     createdAt: '2026-03-17',
     updatedAt: '2026-03-17',
   },
