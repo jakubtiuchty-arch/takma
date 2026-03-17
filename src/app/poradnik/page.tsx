@@ -1,7 +1,8 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { ChevronRightIcon } from '@/components/ui/Icons'
-import { guides, guideCategoryLabels } from '@/data/guides'
+import { guides } from '@/data/guides'
+import GuidesGrid from './GuidesGrid'
 
 export const metadata: Metadata = {
   title: 'Poradniki — drukarki etykiet, skanery, terminale | TAKMA',
@@ -68,48 +69,9 @@ export default function PoradnikiPage() {
           </p>
         </header>
 
-        {/* Guide Grid */}
+        {/* Guide Grid with Filters */}
         <div className="container-main py-10">
-          {guides.length === 0 ? (
-            <p className="text-gray-500 text-center py-16">Artykuły w przygotowaniu — wkrótce tutaj pojawią się eksperckie poradniki.</p>
-          ) : (
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {guides.map(guide => (
-                <Link
-                  key={guide.slug}
-                  href={`/poradnik/${guide.slug}`}
-                  className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-card-hover hover:border-primary-200 transition-all duration-300"
-                >
-                  {/* Card Content */}
-                  <div className="p-6">
-                    <div className="flex items-center gap-2 mb-3">
-                      <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold ${
-                        guide.category === 'poradnik' ? 'bg-blue-100 text-blue-700' :
-                        guide.category === 'porownanie' ? 'bg-amber-100 text-amber-700' :
-                        guide.category === 'przewodnik' ? 'bg-emerald-100 text-emerald-700' :
-                        guide.category === 'branzowy' ? 'bg-purple-100 text-purple-700' :
-                        guide.category === 'serwisowy' ? 'bg-rose-100 text-rose-700' :
-                        'bg-gray-100 text-gray-700'
-                      }`}>
-                        {guideCategoryLabels[guide.category]}
-                      </span>
-                      <span className="text-xs text-gray-400">{guide.readTime}</span>
-                    </div>
-                    <h2 className="text-lg font-bold text-gray-900 group-hover:text-primary-600 transition-colors mb-2 line-clamp-2">
-                      {guide.title}
-                    </h2>
-                    <p className="text-sm text-gray-600 line-clamp-3">
-                      {guide.excerpt}
-                    </p>
-                    <div className="mt-4 flex items-center text-sm text-primary-600 font-medium">
-                      Czytaj więcej
-                      <ChevronRightIcon size={16} className="ml-1 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          )}
+          <GuidesGrid guides={guides} />
         </div>
       </div>
     </>
