@@ -65,7 +65,7 @@ export default function PoradnikiPage() {
           </h1>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl">
             Eksperckie artykuły oparte na ponad 20 latach doświadczenia i 500+ wdrożeniach.
-            Jak wybrać drukarkę etykiet, porównania modeli, kalkulacje kosztów i wskazówki serwisowe.
+            Porównania modeli, kalkulacje kosztów i wskazówki doboru drukarek etykiet, terminali mobilnych i skanerów kodów.
           </p>
         </header>
 
