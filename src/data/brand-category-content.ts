@@ -2280,4 +2280,184 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       },
     ],
   },
+
+  // ============================================
+  // DRUKARKI ETYKIET BROTHER
+  // ============================================
+  'drukarki-etykiet-brother': {
+    definition: {
+      heading: 'Drukarki etykiet Brother — 3–5 lat gwarancji z glowica, emulacja ZPL II, BarTender gratis',
+      content:
+        'Brother Industries (Nagoya, Japonia, zal. 1908) to globalny producent drukarek etykiet z ponad 50-letnim doswiadczeniem w druku termicznym. W Polsce Brother jest najpoważniejszą alternatywą dla Zebry w segmencie [biurkowych](/biurkowe-drukarki-etykiet) i [polprzemyslowych drukarek etykiet](/przemyslowe-drukarki-etykiet). Kluczowe wyrozniki: najdluzsza gwarancja na rynku (3–5 lat z glowica i walkiem), emulacja ZPL II umozliwiajaca migracje z drukarek [Zebra](/drukarki-etykiet-zebra) bez zmiany oprogramowania, BarTender UltraLite w zestawie (wartosc >1 000 zl).\n\nPortfolio biurkowe obejmuje trzy serie: [TD-2020A](/produkt/brother-td-2020a) (2", od 461 zl) — kompaktowa drukarka do cenowek, metek i etykiet aptecznych. [TD-4D](/produkt/brother-td-4d) (4", od 1 250 zl) — seria [termiczna](/termiczne-drukarki-etykiet) z 4 modelami (203/300 dpi), idealna do e-commerce i etykiet kurierskich. [TD-4T](/produkt/brother-td-4t) (4", od 1 496 zl) — seria [termotransferowa](/termotransferowe-drukarki-etykiet) z 6 modelami, opcja Wi-Fi/BT, LCD, RFID UHF — do etykiet trwalych, GHS i produkcji.\n\nSeria polprzemyslowa TJ to odpowiedz na potrzeby sredniej logistyki: [TJ-4020TN](/produkt/brother-tj-4020tn) i [TJ-4021TN](/produkt/brother-tj-4021tn) (203 dpi, od 3 057 zl) oraz [TJ-4120TN](/produkt/brother-tj-4120tn) i [TJ-4121TN](/produkt/brother-tj-4121tn) (300 dpi, od 4 109 zl). Metalowa obudowa, tasmy 450 m (vs 300 m standard), predkosc do 254 mm/s, emulacja ZPL II + DPL + CPCL. Wersje z ekranem dotykowym 3,5" (modele x1xx) lub LED (modele x0xx).\n\nMobilna [Brother RJ-4230B](/produkt/brother-rj-4230b) (4", od 2 353 zl) to drukarka terenowa z IP54, BT 4.2 i NFC — do kurirow, logistyki i serwisu. Wersja [RJ-4250WB](/produkt/brother-rj-4230b) dodaje Wi-Fi.\n\nEkosystem Brother obejmuje Brother Printer Management Tool (zarzadzanie flota), BarTender UltraLite + P-touch Editor (projektowanie etykiet), emulacje ZPL II/EPL/DPL/CPCL (migracja z [Zebra](/drukarki-etykiet-zebra)/Datalogic/[Honeywell](/drukarki-etykiet-honeywell)). Kompatybilnosc z BaseLinker, Allegro, Amazon, SAP WM, Comarch WMS. Poradnik [jak wybrac drukarke etykiet](/poradnik/jak-wybrac-drukarke-etykiet) pomoze dobrac wlasciwy model.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrac drukarke etykiet Brother? 6 kryteriow',
+      items: [
+        'Szerokosc etykiety — 2" vs 4": [TD-2020A](/produkt/brother-td-2020a) drukuje etykiety do 56 mm (cenowki, metki, etykiety apteczne). [TD-4D](/produkt/brother-td-4d) / [TD-4T](/produkt/brother-td-4t) / TJ drukuja do 108–112 mm (etykiety kurierskie 100x150, paletowe GS1-128). Mobilna [RJ-4230B](/produkt/brother-rj-4230b) — do 104 mm w terenie.',
+        'Technologia druku — [termiczna](/termiczne-drukarki-etykiet) vs [termotransferowa](/termotransferowe-drukarki-etykiet): Termiczna ([TD-2020A](/produkt/brother-td-2020a), [TD-4D](/produkt/brother-td-4d), [RJ-4230B](/produkt/brother-rj-4230b)) — bez tasmy, tansza eksploatacja, wydruk blaknie w 6–12 mies. Termotransferowa ([TD-4T](/produkt/brother-td-4t), TJ) — tasma woskowa/zywiczna, wydruk trwaly latami, odporny na chemikalia i UV. Etykiety kurierskie → termiczna. Etykiety produktowe / GHS / na kable → termotransferowa. Wiecej w poradniku [termiczna vs termotransferowa](/poradnik/drukarka-termiczna-vs-termotransferowa).',
+        'Rozdzielczosc — 203 vs 300 dpi: 203 dpi: standard dla kodow 1D, etykiet logistycznych >50 mm. 300 dpi: kody 2D <10 mm, mikroetykiety, tekst <6 pt, jubilerstwo, elektronika, farmacja. Modele 300 dpi w [TD-4D](/produkt/brother-td-4d) (TD-4520DN, TD-4550DNWB), [TD-4T](/produkt/brother-td-4t) (TD-4750TNWB/R) i [TJ-4120TN](/produkt/brother-tj-4120tn)/[TJ-4121TN](/produkt/brother-tj-4121tn).',
+        'Wolumen i klasa — biurkowa vs polprzemyslowa: Do 1 000 etykiet/dzien → seria TD ([biurkowe drukarki etykiet](/biurkowe-drukarki-etykiet), plastikowa obudowa, rolki do 127 mm). 1 000–5 000 etykiet/dzien → seria TJ ([przemyslowe drukarki etykiet](/przemyslowe-drukarki-etykiet), metalowa obudowa, tasmy 450 m, wyzsza predkosc). Druk w terenie → [RJ-4230B](/produkt/brother-rj-4230b) (mobilna 4").',
+        'Lacznosc: USB (wszystkie modele). Ethernet LAN ([TD-4D](/produkt/brother-td-4d) modele DN/DNWB, [TD-4T](/produkt/brother-td-4t), TJ). Wi-Fi + Bluetooth (TD-4T modele TNWB/TNWBR, [RJ-4250WB](/produkt/brother-rj-4230b)). NFC ([RJ-4230B](/produkt/brother-rj-4230b)). Zarzadzanie flota: Brother Printer Management Tool.',
+        'Opcje dodatkowe: RFID UHF ([TD-4T](/produkt/brother-td-4t) modele TNWBR). Odklejak etykiet (TD-4D, TD-4T, TJ). Obcinarka automatyczna (TD-4D, TD-4T, TJ). LCD kolorowy (TD-4T modele TNWB/TNWBR, TJ modele x1xx). Egzoszkielet ([RJ-4230B](/produkt/brother-rj-4230b)). Wszystkie [akcesoria do drukarek Brother](/akcesoria-do-drukarek-etykiet).',
+      ],
+    },
+    expertAuthority:
+      'TAKMA jest autoryzowanym dystrybutorem Brother dla segmentu drukarek etykiet z ponad 25-letnim doswiadczeniem na polskim rynku AutoID. Jako wieloletni partner zarowno [Zebry](/drukarki-etykiet-zebra), jak i Brothera, pomagamy klientom dobrac optymalny model — czy to migracja z drozszej Zebry na tanszego Brothera z emulacja ZPL II, czy upgrade z biurkowej TD na polprzemyslowa TJ. Kazda rekomendacja opiera sie na danych z realnych wdrozen, testach kompatybilnosci materialow i porownaniach TCO. Oferujemy rowniez serwis drukarek [Zebra](https://www.serwis-zebry.pl/serwis-drukarek-zebra) i wsparcie techniczne dla calego portfolio AutoID.',
+    technicalDeepDive: `Pelna macierz modeli Brother — od kompaktowej 2-calowej po polprzemyslowe 4-calowe TJ — z kluczowymi parametrami:\n\n• TD-2020A (biurkowa 2"): 203 dpi, 152 mm/s, druk termiczny, USB, od 461 zl — do cenowek, metek, paragonow i etykiet aptecznych.\n• TD-4D seria (biurkowa 4", termiczna): TD-4410D (203 dpi, USB, najtansza), TD-4420DN (+Ethernet), TD-4520DN (300 dpi, Ethernet), TD-4550DNWB (300 dpi, LCD, Wi-Fi, BT). Od 1 250 zl.\n• TD-4T seria (biurkowa 4", termotransferowa): TD-4420TN/4520TN (LAN, USB), TD-4650TNWB/4750TNWB (+LCD, Wi-Fi, BT), TD-4650TNWBR/4750TNWBR (+RFID UHF). Od 1 496 zl. Tasmy 300 m.\n• TJ-4020TN (polprzemyslowa): 203 dpi, LED, 254 mm/s, metalowa obudowa, tasmy 450 m, od 3 057 zl.\n• TJ-4021TN: jak TJ-4020TN + ekran dotykowy 3,5", od 3 803 zl.\n• TJ-4120TN: 300 dpi, LED, 178 mm/s, od 4 109 zl.\n• TJ-4121TN: 300 dpi + ekran dotykowy 3,5", od 4 780 zl.\n• RJ-4230B (mobilna 4"): 203 dpi, 127 mm/s, IP54, BT 4.2, NFC, od 2 353 zl. Wersja Wi-Fi: RJ-4250WB od 2 826 zl.\n\nEmulacja ZPL II we wszystkich modelach pozwala na bezproblemowa migracje z drukarek Zebra — szablony etykiet w formacie ZPL dzialaja bez modyfikacji. TD-4T i TJ obsluguja dodatkowo EPL2, DPL i CPCL. Gwarancja 3 lata (TD) / 5 lat (TJ) obejmuje glowice i walek — to unikalny element TCO, ktorego nie oferuje Zebra (glowica wylaczona z gwarancji).`,
+    tcoComparisons: [
+      {
+        title: 'TCO 3 lata — Brother TD-4D vs Zebra ZD421d (500 etykiet/dzien, termiczna)',
+        variants: [
+          {
+            label: 'Brother TD-4D (TD-4420DN)',
+            items: [
+              { name: 'Drukarka', cost: '1 250 zl' },
+              { name: 'Etykiety termiczne (36 mies.)', cost: '~6 480 zl' },
+              { name: 'Wymiana glowicy (gwarancja 3 lata)', cost: '0 zl' },
+              { name: 'BarTender UltraLite', cost: '0 zl (w zestawie)' },
+            ],
+            total: '~7 730 zl',
+          },
+          {
+            label: 'Zebra ZD421d',
+            items: [
+              { name: 'Drukarka', cost: '1 472 zl' },
+              { name: 'Etykiety termiczne (36 mies.)', cost: '~6 480 zl' },
+              { name: '2x wymiana glowicy', cost: '~900 zl' },
+              { name: 'BarTender lub ZebraDesigner', cost: '0–1 100 zl' },
+            ],
+            total: '~8 850–9 950 zl',
+          },
+        ],
+        conclusion: 'Brother TD-4D tanszy o 1 100–2 200 zl w TCO 3-letnim dzieki gwarancji obejmujacej glowice i BarTenderowi w zestawie.',
+      },
+      {
+        title: 'TCO 3 lata — Brother TJ-4020TN vs Zebra ZT231 (1 500 etykiet/dzien, termotransfer)',
+        variants: [
+          {
+            label: 'Brother TJ-4020TN',
+            items: [
+              { name: 'Drukarka', cost: '3 057 zl' },
+              { name: 'Etykiety (36 mies.)', cost: '~8 640 zl' },
+              { name: 'Tasmy 450 m (36 mies.)', cost: '~2 400 zl' },
+              { name: 'Wymiana glowicy (gwarancja 5 lat)', cost: '0 zl' },
+            ],
+            total: '~14 097 zl',
+          },
+          {
+            label: 'Zebra ZT231',
+            items: [
+              { name: 'Drukarka', cost: '2 551 zl' },
+              { name: 'Etykiety (36 mies.)', cost: '~8 640 zl' },
+              { name: 'Tasmy 300 m (36 mies.)', cost: '~2 880 zl' },
+              { name: '1x wymiana glowicy', cost: '~1 100 zl' },
+            ],
+            total: '~15 171 zl',
+          },
+        ],
+        conclusion: 'Brother TJ-4020TN ma wyzsza cene zakupu (+506 zl), ale nizszy TCO 3-letni dzieki 5-letniej gwarancji z glowica i tasmom 450 m. Zebra oferuje Link-OS i wiekszy ekosystem integracyjny.',
+      },
+    ],
+    useCases: [
+      {
+        title: 'E-commerce i fulfillment — TD-4D / TD-2020A',
+        description:
+          '[TD-4D](/produkt/brother-td-4d) (od 1 250 zl): etykiety kurierskie 100x150 mm dla InPost, DPD, DHL, UPS, GLS. [TD-2020A](/produkt/brother-td-2020a) (od 461 zl): najtansza opcja do etykiet 2" i cenowek. Emulacja ZPL II → kompatybilnosc z BaseLinker, Allegro, Amazon, Shoper, WooCommerce. BarTender gratis. Sprawdz [konfiguracje drukarki z BaseLinkerem](/poradnik/drukarka-zebra-baselinker-konfiguracja) i nasze [drukarki do e-commerce](/drukarki-etykiet-e-commerce).',
+      },
+      {
+        title: 'Apteki i healthcare — TD-2020A / TD-4D',
+        description:
+          '[TD-2020A](/produkt/brother-td-2020a): etykiety na leki (dawkowanie, kod DataMatrix), oznaczenia probek laboratoryjnych, recepty. [TD-4D](/produkt/brother-td-4d) (300 dpi): opaski identyfikacyjne, etykiety na fiolki. Rozdzielczosc 300 dpi do malych kodow DataMatrix na opakowaniach lekow. Kompaktowe wymiary — drukarka zmiesci sie na ladzie aptecznym. Sprawdz [drukarki do apteki](/drukarki-etykiet-apteka).',
+      },
+      {
+        title: 'Magazyn i WMS — TJ-4020TN / TJ-4120TN',
+        description:
+          'Polprzemyslowe TJ do 1 000–5 000 etykiet/dzien w systemach WMS. [TJ-4020TN](/produkt/brother-tj-4020tn) (203 dpi, od 3 057 zl) do standardowych etykiet magazynowych. [TJ-4120TN](/produkt/brother-tj-4120tn) (300 dpi, od 4 109 zl) do malych kodow 2D. Metalowa obudowa, tasmy 450 m (rzadsza wymiana). Emulacja ZPL II = integracja z SAP WM, Comarch WMS, Oracle WMS bez zmian w szablonach etykiet.',
+      },
+      {
+        title: 'Produkcja i etykiety trwale — TD-4T / TJ',
+        description:
+          '[TD-4T](/produkt/brother-td-4t) termotransferowa (od 1 496 zl): etykiety GHS, kable, oznaczenia przemyslowe. Tasma zywiczna → odpornosc na chemikalia, temperature, UV. Opcja RFID UHF (modele TNWBR) do sledzenia aktywow. Seria TJ do wyzszych wolumenow i pracy ciaglej. Sprawdz [drukarki do produkcji](/drukarki-etykiet-produkcja).',
+      },
+      {
+        title: 'Logistyka i kurier — RJ-4230B (mobilna)',
+        description:
+          '[Brother RJ-4230B](/produkt/brother-rj-4230b) (od 2 353 zl): mobilna 4" z IP54, BT 4.2, NFC — do druku etykiet wysylkowych 4x6" bezposrednio przy samochodzie dostawczym. MIL-STD-810G, upadki z 2,1 m. Emulacja ZPL/CPCL. Wersja [RJ-4250WB](/produkt/brother-rj-4230b) z Wi-Fi. Sprawdz [drukarki do logistyki](/drukarki-etykiet-logistyka).',
+      },
+      {
+        title: 'Migracja z Zebry — Brother jako zamiennik ZPL',
+        description:
+          'Wszystkie drukarki Brother emuluja ZPL II — szablony etykiet z [Zebra ZD220](/produkt/zebra-zd220d), [ZD421](/produkt/zebra-zd421t), [ZT231](/produkt/zebra-zt231) dzialaja bez zmian. Brother TD-4D zastepuje Zebra ZD220d/ZD421d. Brother TD-4T zastepuje Zebra ZD421t/ZD621t. Brother TJ zastepuje Zebra ZT231/ZT111. Przy migracji: nizszy TCO (gwarancja z glowica), BarTender gratis, kompatybilnosc materialow. TAKMA oferuje testy kompatybilnosci przed zakupem.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego sprzedawcy drukarek Brother nie powiedza',
+      items: [
+        {
+          title: 'Gwarancja 3–5 lat z glowica — jedyna taka na rynku',
+          text: 'Brother jako jedyny producent obejmuje gwarancja glowice termiczna i walek dociskowy (3 lata TD, 5 lat TJ). U [Zebry](/drukarki-etykiet-zebra) glowica jest wylaczona z gwarancji lub objeta max 12-miesieczna gwarancja proporcjonalna. U [Honeywell](/drukarki-etykiet-honeywell) — 6 miesiecy. Przy koszcie glowicy 400–1 200 zl to realna oszczednosc w TCO — szczegolnie przy intensywnym drukowaniu (1 000+ etykiet/dzien).',
+        },
+        {
+          title: 'Tasmy 450 m w serii TJ — mniej wymian, mniej przestojow',
+          text: 'Standardowe tasmy termotransferowe maja 300 m. Brother TJ obsluguje tasmy 450 m — o 50% dluzsze, co redukuje czestotliwosc wymian i przestojow na linii. Przy 1 500 etykietach/dzien to ok. 30% mniej wymian rocznie. Mniej otwarc pokrywy = mniejsze ryzyko zanieczyszczenia glowicy pylem i wloknami.',
+        },
+        {
+          title: 'Emulacja ZPL II to nie to samo co natywny ZPL',
+          text: 'Brother emuluje ZPL II — 95% szablonow z drukarek Zebra dziala bez zmian. Ale 5% (zaawansowane makra ZPL, fonty wlasne, niektore komendy ^FD) moze wymagac drobnych modyfikacji. Przed migracja z [Zebry](/drukarki-etykiet-zebra) na Brothera warto przetestowac 3–5 kluczowych szablonow. TAKMA oferuje testy kompatybilnosci przed zakupem — bezplatnie.',
+        },
+        {
+          title: 'Brother Printer Management Tool vs Zebra Link-OS',
+          text: 'Brother Printer Management Tool umozliwia zdalna konfiguracje i monitoring drukarek w sieci — ale to narzedzie prostsze niz Zebra Link-OS. Link-OS oferuje REST API, OTA firmware updates, Visibility Services i integracje z MDM. Dla floty 1–10 drukarek Brother PMT jest wystarczajacy. Przy 20+ drukarkach zarzadzanych centralnie [Zebra](/drukarki-etykiet-zebra) Link-OS ma przewage.',
+        },
+      ],
+    },
+    comparisons: [
+      {
+        title: 'Drukarki etykiet Brother vs Zebra — ktore wybrac?',
+        content: 'Brother: nizszy TCO (gwarancja z glowica, BarTender gratis), tansze modele biurkowe, tasmy 450 m (TJ). [Zebra](/drukarki-etykiet-zebra): Link-OS (fleet management), PrintDNA, wiekszy wybor modeli, opcja 600 dpi, RFID w klasie przemyslowej, globalny [serwis](https://www.serwis-zebry.pl/serwis-drukarek-zebra). Rekomendacja: Brother dla firm szukajacych niskiego TCO i prostoty — szczegolnie przy 1–10 drukarkach. Zebra dla firm z flota 10+ drukarek i potrzeba centralnego zarzadzania przez Link-OS.',
+      },
+      {
+        title: 'Brother TD-4D vs Zebra ZD421d — biurkowa termiczna',
+        content: '[TD-4D](/produkt/brother-td-4d): od 1 250 zl, do 203 mm/s, 3 lata gwarancji z glowica, BarTender gratis, 4 modele (203/300 dpi). [Zebra ZD421d](/produkt/zebra-zd421d): od 1 472 zl, 152 mm/s, Link-OS, modulowosc (gilotyna, odklejak, Wi-Fi — osobno). Brother szybszy i tanszy w zakupie + TCO. Zebra lepiej zarzadzalna w sieci i z wiekszym ekosystemem akcesoriow.',
+      },
+      {
+        title: 'Brother TJ-4020TN vs Zebra ZT231 — polprzemyslowa',
+        content: '[TJ-4020TN](/produkt/brother-tj-4020tn): od 3 057 zl, tasmy 450 m, 5 lat gwarancji z glowica, 254 mm/s. [Zebra ZT231](/produkt/zebra-zt231): od 2 551 zl, Link-OS, opcja RFID, ekran 4,3", 304 mm/s. Zebra tansza w zakupie (-506 zl), szybsza i z RFID. Brother tanszy w TCO 3-letnim (gwarancja + dluzsze tasmy). Wybor zalezy od priorytetow: TCO (Brother) vs ekosystem i skalowanie (Zebra).',
+      },
+    ],
+    howToSteps: [
+      {
+        name: 'Dobor modelu Brother',
+        text: 'Okresl szerokosc etykiety (2"/4"), technologie druku ([termiczna](/termiczne-drukarki-etykiet) czy [termotransferowa](/termotransferowe-drukarki-etykiet)), rozdzielczosc (203/300 dpi), wolumen dzienny i potrzebna lacznosc (USB/Ethernet/Wi-Fi/BT). TAKMA pomoze dobrac model — [kontakt](/kontakt) lub e-mail kontakt@takma.com.pl.',
+      },
+      {
+        name: 'Instalacja i podlaczenie',
+        text: 'Podlacz drukarke przez USB, Ethernet lub Wi-Fi. Zainstaluj sterownik Brother (dostepny na brother.pl). Zaladuj rolke etykiet (i tasme w modelach termotransferowych TD-4T, TJ). Skalibruj czujnik mediow — automatycznie przez przycisk Feed lub recznie w ustawieniach.',
+      },
+      {
+        name: 'Konfiguracja i kalibracja',
+        text: 'Uruchom BarTender UltraLite (w zestawie) lub P-touch Editor do projektowania etykiet. Ustaw parametry: predkosc, ciemnosc (darkness), tryb wydruku (tear-off/peel-off/cutter). Skonfiguruj emulacje jezyka: ZPL II (do kompatybilnosci z Zebra), ESC/P lub P-touch Template.',
+      },
+      {
+        name: 'Integracja z WMS/ERP',
+        text: 'Emulacja ZPL II → istniejace szablony z drukarek Zebra dzialaja bez zmian. Integracja z BaseLinker, Allegro, Amazon, SAP WM, Comarch WMS, Oracle WMS — przez standardowy sterownik druku lub socket TCP (port 9100). Brother Printer Management Tool do monitoringu i zdalnej konfiguracji.',
+      },
+      {
+        name: 'Serwis i konserwacja',
+        text: 'Czysczenie glowicy alkoholem izopropylowym co 1 000 etykiet. Przegladwalka co tydzien, czujnikow co miesiac. Przeglad serwisowy co 12 miesiecy. Gwarancja 3 lata (TD) / 5 lat (TJ) — obejmuje glowice i walek. Czesci zamienne (glowice, walki, obcinarki, odklejaki) dostepne w [TAKMA](/akcesoria-do-drukarek-etykiet). Kontakt: [kontakt](/kontakt) lub e-mail kontakt@takma.com.pl.',
+      },
+    ],
+    faq: [
+      { question: 'Ile kosztuje drukarka etykiet Brother?', answer: 'Ceny drukarek Brother zaczynaja sie od 461 zl netto za [TD-2020A](/produkt/brother-td-2020a) (biurkowa 2"). Seria [TD-4D](/produkt/brother-td-4d) (biurkowa 4", termiczna) od 1 250 zl. Seria [TD-4T](/produkt/brother-td-4t) (biurkowa 4", termotransferowa) od 1 496 zl. Polprzemyslowe TJ: [TJ-4020TN](/produkt/brother-tj-4020tn) od 3 057 zl do [TJ-4121TN](/produkt/brother-tj-4121tn) od 4 780 zl. Mobilna [RJ-4230B](/produkt/brother-rj-4230b) od 2 353 zl.' },
+      { question: 'Czy drukarka Brother jest kompatybilna z systemami Zebra (ZPL)?', answer: 'Tak — wszystkie drukarki Brother emuluja ZPL II. Szablony z drukarek [Zebra](/drukarki-etykiet-zebra) ZD/ZT dzialaja bez zmian w 95% przypadkow. Seria TD-4T i TJ obsluguje dodatkowo EPL2, DPL i CPCL. Przed migracja z Zebry warto przetestowac 3–5 kluczowych szablonow — TAKMA oferuje testy kompatybilnosci bezplatnie.' },
+      { question: 'Czym Brother TD-4D rozni sie od TD-4T?', answer: '[TD-4D](/produkt/brother-td-4d) to seria termiczna (bez tasmy) — tansza eksploatacja, wydruk blaknie w 6–12 mies. Idealna do etykiet kurierskich i cenowek. [TD-4T](/produkt/brother-td-4t) to seria termotransferowa — drukuje na tasmie, etykiety trwale latami. TD-4T ma opcje RFID UHF, Wi-Fi, BT i LCD. Wiecej: [termiczna vs termotransferowa](/poradnik/drukarka-termiczna-vs-termotransferowa).' },
+      { question: 'Czym drukarki Brother TD (biurkowe) roznia sie od TJ (polprzemyslowe)?', answer: 'Seria TD (od 461 zl): plastikowa obudowa, tasmy 300 m, do 1 000 etykiet/dzien, gwarancja 3 lata. Seria TJ ([TJ-4020TN](/produkt/brother-tj-4020tn) od 3 057 zl): metalowa obudowa, tasmy 450 m, do 5 000 etykiet/dzien, predkosc do 254 mm/s, gwarancja 5 lat. TD to [biurkowe drukarki](/biurkowe-drukarki-etykiet), TJ to [drukarki przemyslowe](/przemyslowe-drukarki-etykiet).' },
+      { question: 'Czy Brother TJ-4020TN to alternatywa dla Zebra ZT231?', answer: 'Tak — obie to polprzemyslowe 4" 203 dpi. [TJ-4020TN](/produkt/brother-tj-4020tn): 5 lat gwarancji z glowica, tasmy 450 m, 254 mm/s, od 3 057 zl. [Zebra ZT231](/produkt/zebra-zt231): Link-OS, opcja RFID, 304 mm/s, od 2 551 zl. Brother tanszy w TCO (gwarancja + BarTender), Zebra lepsza w zarzadzaniu flota i skalowaniu.' },
+      { question: 'Jaka gwarancje maja drukarki Brother?', answer: '3 lata (seria TD) i 5 lat (seria TJ) po rejestracji na brother.pl. Gwarancja obejmuje drukarke, glowice drukujaca i walek dociskowy — unikalny na rynku. [Zebra](/drukarki-etykiet-zebra) i [Honeywell](/drukarki-etykiet-honeywell) wylaczaja glowice z gwarancji lub oferuja max 12 mies. proporcjonalnie. Przy koszcie glowicy 400–1 200 zl to realna oszczednosc w TCO.' },
+      { question: 'Czy Brother TD-4T obsluguje etykiety RFID?', answer: 'Tak — modele TD-4650TNWBR i TD-4750TNWBR z serii [TD-4T](/produkt/brother-td-4t) maja wbudowany encoder RFID UHF do etykiet inlay. To najtansze drukarki RFID na rynku — od ok. 3 200 zl netto. Tansze niz Zebra ZD621R (od ok. 4 500 zl) i Honeywell PC45.' },
+      { question: 'Jaka drukarka Brother do e-commerce i paczek?', answer: '[TD-4D (TD-4420DN)](/produkt/brother-td-4d) od 1 250 zl — termiczna 4", Ethernet, ZPL II, BarTender gratis. Drukuje etykiety kurierskie 100x150 mm dla InPost, DPD, DHL, UPS. Kompatybilna z BaseLinker, Allegro, Amazon. Szybsza niz [Zebra ZD220d](/produkt/zebra-zd220d) (203 vs 102 mm/s). Tansza opcja: [TD-2020A](/produkt/brother-td-2020a) od 461 zl (etykiety 2"). Sprawdz [drukarki do e-commerce](/drukarki-etykiet-e-commerce).' },
+      { question: 'Czy moge zamienic Zebra ZD220 na Brother TD-4D?', answer: 'Tak — emulacja ZPL II, identyczny format etykiet 4". [Brother TD-4D](/produkt/brother-td-4d) drukuje szybciej (203 vs 102 mm/s [ZD220](/produkt/zebra-zd220d)), ma 3-letnia gwarancje z glowica i BarTender gratis. TD-4D od 1 250 zl vs ZD220 od 639 zl — ale z uwzglednieniem TCO (glowica, oprogramowanie) Brother moze byc tanszy po 2 latach.' },
+      { question: 'Jakie akcesoria sa dostepne do drukarek Brother?', answer: 'Obcinarki automatyczne (PACU001, PACU003, PACU004), odklejaki (PALP002, PALP004, PALP005), glowice 203 dpi (PAHU2001, BPAHA2L004), glowice 300 dpi (PAHU3001, BPAHA3L004), walki dociskowe (PAPR2001, PAPR3001, BPAPRL004). Dla [RJ-4230B](/produkt/brother-rj-4230b): [bateria PA-BT-006](/produkt/brother-rj-bateria), [ladowarka PA-BC-003](/produkt/brother-rj-ladowarka), [zasilacz PA-AD-600AEU](/produkt/brother-rj-zasilacz). Pelna lista w [akcesoriach do drukarek](/akcesoria-do-drukarek-etykiet).' },
+    ],
+  },
 }
