@@ -226,6 +226,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   const effectiveAvailability = stock?.found ? stock.availability : variant.availability
   const isUnavailable = !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
   const livePrice = stock?.found && stock?.price ? stock.price : variant.priceFrom
+  const cartPrice = variant.promoPrice || livePrice
 
   return (
     <tr className={`${rowIndex % 2 === 0 ? 'bg-white' : 'bg-gray-50'} hover:bg-primary-50/50 transition-colors`}>
@@ -237,11 +238,25 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
           {variant.attributes[key] || '—'}
         </td>
       ))}
-      <td className="px-3 py-3.5 text-sm font-semibold text-gray-900 whitespace-nowrap">
+      <td className="px-3 py-3.5 text-sm whitespace-nowrap">
         {stockLoading ? (
           <span className="inline-block h-4 w-20 bg-gray-200 rounded animate-pulse" />
+        ) : variant.promoPrice ? (
+          <div className="flex flex-col gap-0.5">
+            <span className="text-xs text-gray-400 line-through">
+              {livePrice ? `${livePrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł` : ''}
+            </span>
+            <span className="font-bold text-red-600">
+              {variant.promoPrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
+            </span>
+            {variant.promoLabel && (
+              <span className="inline-block text-[10px] font-bold text-white bg-red-500 rounded px-1.5 py-0.5 w-fit uppercase tracking-wide">
+                {variant.promoLabel}
+              </span>
+            )}
+          </div>
         ) : livePrice
-            ? `${livePrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł`
+            ? <span className="font-semibold text-gray-900">{`${livePrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł`}</span>
             : 'Na zapytanie'
         }
       </td>
@@ -264,7 +279,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
               slug: productSlug,
               image: productImage,
               partNumber: variant.partNumber,
-              priceNetto: livePrice,
+              priceNetto: cartPrice,
             })}
             leftIcon={inRFQ ? <CheckIcon size={14} /> : <PlusIcon size={14} />}
           >
@@ -298,6 +313,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
   const effectiveAvailability = stock?.found ? stock.availability : variant.availability
   const isUnavailable = !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
   const livePrice = stock?.found && stock?.price ? stock.price : variant.priceFrom
+  const cartPrice = variant.promoPrice || livePrice
 
   return (
     <div className="bg-white border border-gray-200 rounded-xl p-4 space-y-3">
@@ -341,7 +357,22 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
         <div>
           {stockLoading ? (
             <span className="inline-block h-5 w-24 bg-gray-200 rounded animate-pulse" />
-          ) : livePrice ? (
+          ) : variant.promoPrice ? (
+              <div>
+                <span className="text-sm text-gray-400 line-through block">
+                  {livePrice ? `${livePrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł` : ''}
+                </span>
+                <span className="text-lg font-bold text-red-600">
+                  {variant.promoPrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
+                </span>
+                <span className="text-xs text-gray-500"> netto</span>
+                {variant.promoLabel && (
+                  <span className="ml-2 inline-block text-[10px] font-bold text-white bg-red-500 rounded px-1.5 py-0.5 uppercase tracking-wide">
+                    {variant.promoLabel}
+                  </span>
+                )}
+              </div>
+            ) : livePrice ? (
               <div>
                 <span className="text-lg font-bold text-gray-900">
                   {livePrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
@@ -365,7 +396,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
               slug: productSlug,
               image: productImage,
               partNumber: variant.partNumber,
-              priceNetto: livePrice,
+              priceNetto: cartPrice,
             })}
             leftIcon={inRFQ ? <CheckIcon size={16} /> : <PlusIcon size={16} />}
           >

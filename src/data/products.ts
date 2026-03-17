@@ -58,6 +58,8 @@ export interface ProductVariant {
   name: string
   attributes: Record<string, string>
   priceFrom?: number
+  promoPrice?: number
+  promoLabel?: string
   availability: 'available' | 'on-order' | 'unavailable'
 }
 
@@ -6662,6 +6664,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       { partNumber: 'ZT61043-T2E0100Z', name: '300 dpi, LCD, odklejak + nawijak', attributes: { 'Rozdzielczość': '300 dpi', 'Odklejak': 'Tak', 'Nawijak': 'Etykiet' }, priceFrom: 11995.83, availability: 'available' },
       { partNumber: 'ZT61046-T0E0100Z', name: '600 dpi, LCD', attributes: { 'Rozdzielczość': '600 dpi' }, priceFrom: 17760.76, availability: 'available' },
       { partNumber: 'ZT61046-T2E0100Z', name: '600 dpi, LCD, odklejak + nawijak', attributes: { 'Rozdzielczość': '600 dpi', 'Odklejak': 'Tak', 'Nawijak': 'Etykiet' }, priceFrom: 17857.68, availability: 'available' },
+      { partNumber: 'ZT61A46-T0E0100Z', name: '600 dpi, LCD (mikroetykiety)', attributes: { 'Rozdzielczość': '600 dpi' }, priceFrom: 17577.91, promoPrice: 7899, promoLabel: 'PROMOCJA', availability: 'available' },
+      { partNumber: 'ZT61A46-T2E0100Z', name: '600 dpi, LCD, odklejak + nawijak (mikroetykiety)', attributes: { 'Rozdzielczość': '600 dpi', 'Odklejak': 'Tak', 'Nawijak': 'Etykiet' }, priceFrom: 18380.76, promoPrice: 8299, promoLabel: 'PROMOCJA', availability: 'available' },
     ],
     compatibleAccessories: [
       'zebra-tt-76179',
