@@ -6318,8 +6318,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'brother-tj-4020tn',
     name: 'Brother TJ-4020TN',
     shortDescription: 'Brother TJ-4020TN — półprzemysłowa drukarka etykiet 4", termotransferowa, 203 dpi, 254 mm/s, taśmy 450 m, panel LED, emulacja ZPL II, Ethernet',
-    seoTitle: 'Brother TJ-4020TN — drukarka etykiet 203 dpi, LED | od 3 057 zł',
-    seoDescription: 'Brother TJ-4020TN — półprzemysłowa drukarka etykiet termotransferowa 4 cale, 203 dpi, 254 mm/s, panel LED. Taśmy 450 m, rolki 203 mm, emulacja ZPL II, Ethernet. Drukarka Brother TJ-4020TN, drukarka etykiet Brother, TJ-4020TN Brother, drukarka półprzemysłowa Brother TJ-4020TN. PN: TJ4020TNZ1. Od 3 057 zł netto. TAKMA.',
+    seoTitle: 'Brother TJ-4020TN — drukarka 203 dpi | od 3 057 zł',
+    seoDescription: 'Brother TJ-4020TN — drukarka etykiet 4", 203 dpi, 254 mm/s, LED. Taśmy 450 m, ZPL II, Ethernet, 5 lat gwarancji. Od 3 057 zł netto | TAKMA.',
     description: `Dla kogo? Brother TJ-4020TN to najtańszy model w serii półprzemysłowych drukarek etykiet Brother TJ — idealny dla firm produkcyjnych, magazynów i centrów dystrybucyjnych, które potrzebują wytrzymałej drukarki 4" z dużą pojemnością mediów i emulacją ZPL II, ale nie wymagają ekranu dotykowego ani rozdzielczości 300 dpi. Brother TJ-4020TN drukuje etykiety termotransferowe (z taśmą barwiącą) i termiczne (bez ribbona).
 
 Brother TJ-4020TN to model bazowy serii TJ z rozdzielczością 203 dpi i prędkością druku do 254 mm/s (10 ips). Panel sterowania LED z 4 wskaźnikami i 2 przyciskami — prosty i niezawodny. Kompaktowe wymiary (248 × 436 × 274 mm) i metalowa konstrukcja zapewniają trwałość w wymagających warunkach. Potrzebujesz ekranu dotykowego 3,5"? Wybierz [Brother TJ-4021TN](/produkt/brother-tj-4021tn). Potrzebujesz wyższej rozdzielczości 300 dpi? Sprawdź [Brother TJ-4120TN](/produkt/brother-tj-4120tn) lub [TJ-4121TN](/produkt/brother-tj-4121tn) z ekranem dotykowym.
@@ -6333,9 +6333,8 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'brother',
     priceFrom: 3057.49,
-    images: ['/images/products/TJ4020TNZ1_3.png', '/images/products/TJ4020TNZ1.png', '/images/products/TJ4020TNZ1_2.png', '/images/products/TJ4020TNZ1_4.png'],
+    images: ['/images/products/TJ4020TNZ1.png', '/images/products/TJ4020TNZ1_2.png', '/images/products/TJ4020TNZ1_4.png'],
     imageDescriptions: [
-      'Brother TJ-4021TN — widok z przodu, wersja z kolorowym ekranem dotykowym 3,5 cala',
       'Brother TJ-4020TN — widok z przodu, półprzemysłowa drukarka etykiet 4 cale z panelem LED',
       'Brother TJ-4020TN — widok pod kątem, otwarta komora mediów z rolką etykiet i taśmą termotransferową 450 m',
       'Brother TJ-4020TN — widok z tyłu, porty USB, Ethernet, RS-232 i USB Host',
@@ -6486,7 +6485,7 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     faq: [
       {
         question: 'Czym Brother TJ-4020TN różni się od TJ-4021TN?',
-        answer: 'Brother TJ-4020TN i TJ-4021TN mają identyczną rozdzielczość 203 dpi i prędkość 254 mm/s. Różnica to panel sterowania: TJ-4020TN ma panel LED z 4 wskaźnikami i 2 przyciskami (od 3 057 zł), a TJ-4021TN kolorowy ekran dotykowy 3,5" z 6 przyciskami nawigacyjnymi (od 3 803 zł). Ekran umożliwia konfigurację drukarki, podgląd statusu i ustawienia sieci bez komputera. Jeśli drukarka jest zarządzana zdalnie przez sieć, panel LED w TJ-4020TN jest wystarczający.',
+        answer: 'Brother TJ-4020TN i [TJ-4021TN](/produkt/brother-tj-4021tn) mają identyczną rozdzielczość 203 dpi i prędkość 254 mm/s. Różnica to panel sterowania: TJ-4020TN ma panel LED z 4 wskaźnikami i 2 przyciskami (od 3 057 zł), a TJ-4021TN kolorowy ekran dotykowy 3,5" z 6 przyciskami nawigacyjnymi (od 3 803 zł). Ekran umożliwia konfigurację drukarki, podgląd statusu i ustawienia sieci bez komputera. Jeśli drukarka jest zarządzana zdalnie przez sieć, panel LED w TJ-4020TN jest wystarczający.',
       },
       {
         question: 'Jakie taśmy termotransferowe pasują do Brother TJ-4020TN?',
@@ -6498,7 +6497,7 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       },
       {
         question: 'Ile kosztuje Brother TJ-4020TN?',
-        answer: 'Brother TJ-4020TN (203 dpi, LED) kosztuje od 3 057 zł netto — to najtańszy model w serii TJ. Dla porównania: TJ-4021TN z ekranem dotykowym od 3 803 zł, TJ-4120TN z rozdzielczością 300 dpi od 4 109 zł, TJ-4121TN (300 dpi + ekran) od 4 780 zł. Zebra ZT231 (203 dpi) kosztuje od ok. 2 551 zł, ale Brother TJ oferuje taśmy 450 m i 5-letnią gwarancję.',
+        answer: 'Brother TJ-4020TN (203 dpi, LED) kosztuje od 3 057 zł netto — to najtańszy model w serii TJ. Dla porównania: [TJ-4021TN](/produkt/brother-tj-4021tn) z ekranem dotykowym od 3 803 zł, [TJ-4120TN](/produkt/brother-tj-4120tn) z rozdzielczością 300 dpi od 4 109 zł, [TJ-4121TN](/produkt/brother-tj-4121tn) (300 dpi + ekran) od 4 780 zł. [Zebra ZT231](/produkt/zebra-zt231) (203 dpi) kosztuje od ok. 2 551 zł, ale Brother TJ oferuje taśmy 450 m i 5-letnią gwarancję.',
       },
       {
         question: 'Jakie rolki etykiet pasują do Brother TJ-4020TN?',
@@ -6510,15 +6509,16 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       },
       {
         question: 'Jak Brother TJ-4020TN wypada w porównaniu z Zebra ZT231?',
-        answer: 'Brother TJ-4020TN i Zebra ZT231 to drukarki półprzemysłowe 4 cale 203 dpi. TJ-4020TN: taśmy 450 m, 254 mm/s, 128 MB RAM, 5 lat gwarancji, od 3 057 zł. ZT231: taśmy 300–450 m, 304 mm/s, 512 MB RAM, Link-OS, opcjonalny RFID UHF, od 2 551 zł. ZT231 dla ekosystemu Zebra i zdalnego zarządzania, TJ-4020TN dla niższego TCO i dłuższej gwarancji.',
+        answer: 'Brother TJ-4020TN i [Zebra ZT231](/produkt/zebra-zt231) to drukarki półprzemysłowe 4 cale 203 dpi. TJ-4020TN: taśmy 450 m, 254 mm/s, 128 MB RAM, 5 lat gwarancji, od 3 057 zł. ZT231: taśmy 300–450 m, 304 mm/s, 512 MB RAM, Link-OS, opcjonalny RFID UHF, od 2 551 zł. ZT231 dla ekosystemu Zebra i zdalnego zarządzania, TJ-4020TN dla niższego TCO i dłuższej gwarancji.',
       },
       {
         question: 'Jakie są alternatywy dla Brother TJ-4020TN?',
-        answer: 'W klasie półprzemysłowych drukarek 4" 203 dpi: Zebra ZT231 (od 2 551 zł, Link-OS, RFID opcja), Zebra ZT111 (od 2 700 zł, budżetowa). Wersje z wyższą rozdzielczością: Brother TJ-4120TN (300 dpi, od 4 109 zł), z ekranem dotykowym: Brother TJ-4021TN (od 3 803 zł). W niższej klasie: Brother TD-4T (od 1 496 zł, biurkowa TT).',
+        answer: 'W klasie półprzemysłowych drukarek 4" 203 dpi: [Zebra ZT231](/produkt/zebra-zt231) (od 2 551 zł, Link-OS, RFID opcja), [Zebra ZT111](/produkt/zebra-zt111) (od 2 700 zł, budżetowa). Wersje z wyższą rozdzielczością: [Brother TJ-4120TN](/produkt/brother-tj-4120tn) (300 dpi, od 4 109 zł), z ekranem dotykowym: [Brother TJ-4021TN](/produkt/brother-tj-4021tn) (od 3 803 zł). W niższej klasie: [Brother TD-4T](/produkt/brother-td-4t) (od 1 496 zł, biurkowa TT).',
       },
     ],
     relatedProducts: ['brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'zebra-zt231', 'zebra-zt111'],
     createdAt: '2026-03-17',
+    sameAs: 'https://www.brother.pl/labelling-and-receipts/tj-4020tn',
     updatedAt: '2026-03-17',
   },
   {
@@ -6526,8 +6526,8 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     slug: 'brother-tj-4021tn',
     name: 'Brother TJ-4021TN',
     shortDescription: 'Brother TJ-4021TN — półprzemysłowa drukarka etykiet 4", termotransferowa, 203 dpi, 254 mm/s, ekran dotykowy 3,5", taśmy 450 m, emulacja ZPL II, Ethernet',
-    seoTitle: 'Brother TJ-4021TN — drukarka etykiet 203 dpi, ekran dotykowy | od 3 803 zł',
-    seoDescription: 'Brother TJ-4021TN — półprzemysłowa drukarka etykiet termotransferowa 4 cale, 203 dpi, 254 mm/s, ekran dotykowy 3,5". Taśmy 450 m, rolki 203 mm, emulacja ZPL II, Ethernet. Drukarka Brother TJ-4021TN, drukarka etykiet Brother, TJ-4021TN Brother, drukarka półprzemysłowa Brother TJ-4021TN. PN: TJ4021TNZ1. Od 3 803 zł netto. TAKMA.',
+    seoTitle: 'Brother TJ-4021TN — drukarka 203 dpi LCD | od 3 803 zł',
+    seoDescription: 'Brother TJ-4021TN — drukarka etykiet 4", 203 dpi, 254 mm/s, ekran dotykowy 3,5". Taśmy 450 m, ZPL II, Ethernet, 5 lat gwarancji. Od 3 803 zł | TAKMA.',
     description: `Dla kogo? Brother TJ-4021TN to wersja z kolorowym ekranem dotykowym 3,5 cala w serii półprzemysłowych drukarek Brother TJ — przeznaczona dla firm, które potrzebują wygodnej konfiguracji i podglądu statusu drukarki bezpośrednio na wyświetlaczu, bez komputera. Brother TJ-4021TN drukuje etykiety termotransferowe (z taśmą barwiącą) i termiczne (bez ribbona).
 
 Brother TJ-4021TN oferuje rozdzielczość 203 dpi i prędkość druku do 254 mm/s (10 ips) — identycznie jak bazowy model [TJ-4020TN](/produkt/brother-tj-4020tn). Kluczowa różnica to kolorowy ekran dotykowy 3,5 cala z 6 przyciskami nawigacyjnymi: konfiguracja sieci, podgląd statusu druku, ustawienia czujników i kalibracja — bezpośrednio na panelu drukarki. Potrzebujesz rozdzielczości 300 dpi? Sprawdź [Brother TJ-4120TN](/produkt/brother-tj-4120tn) (LED) lub [TJ-4121TN](/produkt/brother-tj-4121tn) (ekran dotykowy + 300 dpi).
@@ -6694,7 +6694,7 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     faq: [
       {
         question: 'Czym Brother TJ-4021TN różni się od TJ-4020TN?',
-        answer: 'Brother TJ-4021TN to wersja z kolorowym ekranem dotykowym 3,5 cala i 6 przyciskami nawigacyjnymi (od 3 803 zł), podczas gdy TJ-4020TN ma panel LED z 4 wskaźnikami (od 3 057 zł). Rozdzielczość (203 dpi) i prędkość druku (254 mm/s) są identyczne. Ekran dotykowy umożliwia konfigurację sieci, kalibrację czujników i podgląd statusu bez komputera.',
+        answer: 'Brother TJ-4021TN to wersja z kolorowym ekranem dotykowym 3,5 cala i 6 przyciskami nawigacyjnymi (od 3 803 zł), podczas gdy [TJ-4020TN](/produkt/brother-tj-4020tn) ma panel LED z 4 wskaźnikami (od 3 057 zł). Rozdzielczość (203 dpi) i prędkość druku (254 mm/s) są identyczne. Ekran dotykowy umożliwia konfigurację sieci, kalibrację czujników i podgląd statusu bez komputera.',
       },
       {
         question: 'Jakie taśmy termotransferowe pasują do Brother TJ-4021TN?',
@@ -6702,11 +6702,11 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       },
       {
         question: 'Czy ekran dotykowy w TJ-4021TN jest potrzebny?',
-        answer: 'Ekran dotykowy 3,5" w Brother TJ-4021TN jest przydatny, gdy drukarka jest obsługiwana lokalnie przez operatora — umożliwia konfigurację sieci, kalibrację, podgląd statusu i zmianę ustawień bez komputera. Jeśli drukarka jest zarządzana zdalnie przez Brother Printer Management Tool, panel LED w TJ-4020TN jest wystarczający, a różnica w cenie to ok. 746 zł.',
+        answer: 'Ekran dotykowy 3,5" w Brother TJ-4021TN jest przydatny, gdy drukarka jest obsługiwana lokalnie przez operatora — umożliwia konfigurację sieci, kalibrację, podgląd statusu i zmianę ustawień bez komputera. Jeśli drukarka jest zarządzana zdalnie przez Brother Printer Management Tool, panel LED w [TJ-4020TN](/produkt/brother-tj-4020tn) jest wystarczający, a różnica w cenie to ok. 746 zł.',
       },
       {
         question: 'Ile kosztuje Brother TJ-4021TN?',
-        answer: 'Brother TJ-4021TN (203 dpi, ekran dotykowy 3,5") kosztuje od 3 803 zł netto. Dla porównania: TJ-4020TN (LED) od 3 057 zł, TJ-4120TN (300 dpi, LED) od 4 109 zł, TJ-4121TN (300 dpi + ekran) od 4 780 zł. Zebra ZT231 z ekranem 4,3" kosztuje od ok. 2 551 zł.',
+        answer: 'Brother TJ-4021TN (203 dpi, ekran dotykowy 3,5") kosztuje od 3 803 zł netto. Dla porównania: [TJ-4020TN](/produkt/brother-tj-4020tn) (LED) od 3 057 zł, [TJ-4120TN](/produkt/brother-tj-4120tn) (300 dpi, LED) od 4 109 zł, [TJ-4121TN](/produkt/brother-tj-4121tn) (300 dpi + ekran) od 4 780 zł. [Zebra ZT231](/produkt/zebra-zt231) z ekranem 4,3" kosztuje od ok. 2 551 zł.',
       },
       {
         question: 'Czy Brother TJ-4021TN obsługuje emulację ZPL?',
@@ -6714,15 +6714,16 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       },
       {
         question: 'Jak Brother TJ-4021TN wypada w porównaniu z Zebra ZT231?',
-        answer: 'Oba modele to drukarki półprzemysłowe 4" 203 dpi. TJ-4021TN: ekran dotykowy 3,5", taśmy 450 m, 254 mm/s, 5 lat gwarancji, od 3 803 zł. ZT231: ekran 4,3" w standardzie, 304 mm/s, 512 MB RAM, Link-OS, opcja RFID, od 2 551 zł. Brother TJ lepszy pod względem TCO i gwarancji, ZT231 pod względem ekosystemu zarządzania i prędkości.',
+        answer: 'Oba modele to drukarki półprzemysłowe 4" 203 dpi. TJ-4021TN: ekran dotykowy 3,5", taśmy 450 m, 254 mm/s, 5 lat gwarancji, od 3 803 zł. [ZT231](/produkt/zebra-zt231): ekran 4,3" w standardzie, 304 mm/s, 512 MB RAM, Link-OS, opcja RFID, od 2 551 zł. Brother TJ lepszy pod względem TCO i gwarancji, ZT231 pod względem ekosystemu zarządzania i prędkości.',
       },
       {
         question: 'Jakie są alternatywy dla Brother TJ-4021TN?',
-        answer: 'W klasie półprzemysłowych drukarek 4" 203 dpi z ekranem: Zebra ZT231 (ekran 4,3", od 2 551 zł). Wersja bez ekranu: Brother TJ-4020TN (LED, od 3 057 zł). Wyższa rozdzielczość z ekranem: Brother TJ-4121TN (300 dpi, od 4 780 zł). W niższej klasie: Brother TD-4T (od 1 496 zł).',
+        answer: 'W klasie półprzemysłowych drukarek 4" 203 dpi z ekranem: [Zebra ZT231](/produkt/zebra-zt231) (ekran 4,3", od 2 551 zł). Wersja bez ekranu: [Brother TJ-4020TN](/produkt/brother-tj-4020tn) (LED, od 3 057 zł). Wyższa rozdzielczość z ekranem: [Brother TJ-4121TN](/produkt/brother-tj-4121tn) (300 dpi, od 4 780 zł). W niższej klasie: [Brother TD-4T](/produkt/brother-td-4t) (od 1 496 zł).',
       },
     ],
     relatedProducts: ['brother-tj-4020tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'zebra-zt231', 'zebra-zt111'],
     createdAt: '2026-03-17',
+    sameAs: 'https://www.brother.pl/labelling-and-receipts/tj-4021tn',
     updatedAt: '2026-03-17',
   },
   {
@@ -6730,8 +6731,8 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     slug: 'brother-tj-4120tn',
     name: 'Brother TJ-4120TN',
     shortDescription: 'Brother TJ-4120TN — półprzemysłowa drukarka etykiet 4", termotransferowa, 300 dpi, 178 mm/s, taśmy 450 m, panel LED, emulacja ZPL II, Ethernet',
-    seoTitle: 'Brother TJ-4120TN — drukarka etykiet 300 dpi, LED | od 4 109 zł',
-    seoDescription: 'Brother TJ-4120TN — półprzemysłowa drukarka etykiet termotransferowa 4 cale, 300 dpi, 178 mm/s, panel LED. Taśmy 450 m, rolki 203 mm, emulacja ZPL II, Ethernet. Drukarka Brother TJ-4120TN, drukarka etykiet Brother, TJ-4120TN Brother, drukarka półprzemysłowa Brother TJ-4120TN, drukarka 300 dpi Brother. PN: TJ4120TNZ1. Od 4 109 zł netto. TAKMA.',
+    seoTitle: 'Brother TJ-4120TN — drukarka 300 dpi | od 4 109 zł',
+    seoDescription: 'Brother TJ-4120TN — drukarka etykiet 4", 300 dpi, 178 mm/s, LED. Kody 2D, taśmy 450 m, ZPL II, Ethernet, 5 lat gwarancji. Od 4 109 zł netto | TAKMA.',
     description: `Dla kogo? Brother TJ-4120TN to wersja z rozdzielczością 300 dpi w serii półprzemysłowych drukarek Brother TJ — dedykowana do druku małych etykiet, kodów 2D (QR, DataMatrix), drobnego tekstu i grafiki wymagającej wyższej precyzji. Brother TJ-4120TN drukuje etykiety termotransferowe (z taśmą barwiącą) i termiczne (bez ribbona).
 
 Brother TJ-4120TN oferuje rozdzielczość 300 dpi (12 dots/mm) z prędkością druku do 178 mm/s (7 ips) i szerokością druku 105,7 mm. Panel sterowania LED z 4 wskaźnikami i 2 przyciskami — prosty i niezawodny. Potrzebujesz ekranu dotykowego? Sprawdź [Brother TJ-4121TN](/produkt/brother-tj-4121tn) (300 dpi + ekran 3,5"). Wystarczy Ci 203 dpi? Tańsze modele: [TJ-4020TN](/produkt/brother-tj-4020tn) (LED, od 3 057 zł) lub [TJ-4021TN](/produkt/brother-tj-4021tn) (ekran dotykowy, od 3 803 zł).
@@ -6745,10 +6746,10 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'brother',
     priceFrom: 4109.17,
-    images: ['/images/products/TJ4020TNZ1.png', '/images/products/TJ4020TNZ1_3.png', '/images/products/TJ4020TNZ1_2.png', '/images/products/TJ4020TNZ1_4.png'],
+    images: ['/images/products/TJ4020TNZ1_3.png', '/images/products/TJ4020TNZ1.png', '/images/products/TJ4020TNZ1_2.png', '/images/products/TJ4020TNZ1_4.png'],
     imageDescriptions: [
-      'Brother TJ-4120TN — widok z przodu, półprzemysłowa drukarka etykiet 4 cale z panelem LED',
       'Brother TJ-4120TN — widok z przodu, wersja z panelem LED i rozdzielczością 300 dpi',
+      'Brother TJ-4120TN — widok z przodu, półprzemysłowa drukarka etykiet 4 cale z panelem LED',
       'Brother TJ-4120TN — widok pod kątem, otwarta komora mediów z rolką etykiet i taśmą termotransferową 450 m',
       'Brother TJ-4120TN — widok z tyłu, porty USB, Ethernet, RS-232 i USB Host',
     ],
@@ -6898,15 +6899,15 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     faq: [
       {
         question: 'Czym Brother TJ-4120TN różni się od TJ-4020TN?',
-        answer: 'Brother TJ-4120TN to wersja z rozdzielczością 300 dpi (od 4 109 zł), podczas gdy TJ-4020TN ma 203 dpi (od 3 057 zł). Wyższa rozdzielczość oznacza ostrzejsze kody 2D, mniejsze etykiety i drobniejszy tekst, ale niższą prędkość druku: 178 mm/s vs 254 mm/s. Szerokość druku też się różni: 105,7 mm (300 dpi) vs 107 mm (203 dpi). Oba modele mają panel LED.',
+        answer: 'Brother TJ-4120TN to wersja z rozdzielczością 300 dpi (od 4 109 zł), podczas gdy [TJ-4020TN](/produkt/brother-tj-4020tn) ma 203 dpi (od 3 057 zł). Wyższa rozdzielczość oznacza ostrzejsze kody 2D, mniejsze etykiety i drobniejszy tekst, ale niższą prędkość druku: 178 mm/s vs 254 mm/s. Szerokość druku też się różni: 105,7 mm (300 dpi) vs 107 mm (203 dpi). Oba modele mają panel LED.',
       },
       {
         question: 'Kiedy warto wybrać 300 dpi zamiast 203 dpi?',
-        answer: 'Rozdzielczość 300 dpi w Brother TJ-4120TN jest potrzebna do: małych kodów 2D (DataMatrix, QR) poniżej 10×10 mm, etykiet z drobnym tekstem (poniżej 6 pt), etykiet na przewody i kable z bardzo małym drukiem, grafiki i logotypów wymagających szczegółowości. Jeśli drukujesz standardowe etykiety kurierskie 102×150 mm z kodami 1D, 203 dpi (TJ-4020TN) jest wystarczające i szybsze.',
+        answer: 'Rozdzielczość 300 dpi w Brother TJ-4120TN jest potrzebna do: małych kodów 2D (DataMatrix, QR) poniżej 10×10 mm, etykiet z drobnym tekstem (poniżej 6 pt), etykiet na przewody i kable z bardzo małym drukiem, grafiki i logotypów wymagających szczegółowości. Jeśli drukujesz standardowe etykiety kurierskie 102×150 mm z kodami 1D, 203 dpi ([TJ-4020TN](/produkt/brother-tj-4020tn)) jest wystarczające i szybsze.',
       },
       {
         question: 'Ile kosztuje Brother TJ-4120TN?',
-        answer: 'Brother TJ-4120TN (300 dpi, LED) kosztuje od 4 109 zł netto. Wersja z ekranem dotykowym: TJ-4121TN od 4 780 zł. Tańsze modele 203 dpi: TJ-4020TN od 3 057 zł, TJ-4021TN od 3 803 zł.',
+        answer: 'Brother TJ-4120TN (300 dpi, LED) kosztuje od 4 109 zł netto. Wersja z ekranem dotykowym: [TJ-4121TN](/produkt/brother-tj-4121tn) od 4 780 zł. Tańsze modele 203 dpi: [TJ-4020TN](/produkt/brother-tj-4020tn) od 3 057 zł, [TJ-4021TN](/produkt/brother-tj-4021tn) od 3 803 zł.',
       },
       {
         question: 'Czy Brother TJ-4120TN obsługuje emulację ZPL?',
@@ -6914,15 +6915,16 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       },
       {
         question: 'Jak Brother TJ-4120TN wypada w porównaniu z Zebra ZT231 300 dpi?',
-        answer: 'TJ-4120TN: 300 dpi, 178 mm/s, taśmy 450 m, 128 MB RAM, panel LED, 5 lat gwarancji, od 4 109 zł. ZT231 300 dpi: 300 dpi, 203 mm/s, taśmy 300–450 m, 512 MB RAM, ekran 4,3", Link-OS, od ~3 600 zł. ZT231 jest szybszy i ma więcej RAM, Brother TJ ma dłuższą gwarancję i dłuższe taśmy.',
+        answer: 'TJ-4120TN: 300 dpi, 178 mm/s, taśmy 450 m, 128 MB RAM, panel LED, 5 lat gwarancji, od 4 109 zł. [ZT231](/produkt/zebra-zt231) 300 dpi: 203 mm/s, taśmy 300–450 m, 512 MB RAM, ekran 4,3", Link-OS, od ~3 600 zł. ZT231 jest szybszy i ma więcej RAM, Brother TJ ma dłuższą gwarancję i dłuższe taśmy.',
       },
       {
         question: 'Jakie są alternatywy dla Brother TJ-4120TN?',
-        answer: 'W klasie półprzemysłowych drukarek 4" 300 dpi: Zebra ZT231 300 dpi (od ~3 600 zł, Link-OS), Honeywell PD45 300 dpi (od ~4 800 zł). Wersja z ekranem: Brother TJ-4121TN (od 4 780 zł). Tańsze 203 dpi: Brother TJ-4020TN (od 3 057 zł).',
+        answer: 'W klasie półprzemysłowych drukarek 4" 300 dpi: [Zebra ZT231](/produkt/zebra-zt231) 300 dpi (od ~3 600 zł, Link-OS), [Honeywell PD45](/produkt/honeywell-pd45) 300 dpi (od ~4 800 zł). Wersja z ekranem: [Brother TJ-4121TN](/produkt/brother-tj-4121tn) (od 4 780 zł). Tańsze 203 dpi: [Brother TJ-4020TN](/produkt/brother-tj-4020tn) (od 3 057 zł).',
       },
     ],
     relatedProducts: ['brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4121tn', 'zebra-zt231', 'zebra-zt111'],
     createdAt: '2026-03-17',
+    sameAs: 'https://www.brother.pl/labelling-and-receipts/tj-4120tn',
     updatedAt: '2026-03-17',
   },
   {
@@ -6930,8 +6932,8 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     slug: 'brother-tj-4121tn',
     name: 'Brother TJ-4121TN',
     shortDescription: 'Brother TJ-4121TN — półprzemysłowa drukarka etykiet 4", termotransferowa, 300 dpi, 178 mm/s, ekran dotykowy 3,5", taśmy 450 m, emulacja ZPL II, Ethernet',
-    seoTitle: 'Brother TJ-4121TN — drukarka etykiet 300 dpi, ekran dotykowy | od 4 780 zł',
-    seoDescription: 'Brother TJ-4121TN — półprzemysłowa drukarka etykiet termotransferowa 4 cale, 300 dpi, 178 mm/s, ekran dotykowy 3,5". Taśmy 450 m, rolki 203 mm, emulacja ZPL II, Ethernet. Drukarka Brother TJ-4121TN, drukarka etykiet Brother, TJ-4121TN Brother, drukarka półprzemysłowa Brother TJ-4121TN, drukarka 300 dpi Brother. PN: TJ4121TNZ1. Od 4 780 zł netto. TAKMA.',
+    seoTitle: 'Brother TJ-4121TN — drukarka 300 dpi LCD | od 4 780 zł',
+    seoDescription: 'Brother TJ-4121TN — drukarka etykiet 4", 300 dpi, 178 mm/s, ekran 3,5". Kody 2D, taśmy 450 m, ZPL II, 5 lat gwarancji. Od 4 780 zł netto | TAKMA.',
     description: `Dla kogo? Brother TJ-4121TN to flagowy model w serii półprzemysłowych drukarek Brother TJ — łączy rozdzielczość 300 dpi z kolorowym ekranem dotykowym 3,5 cala. Przeznaczony dla firm, które potrzebują precyzyjnego druku małych etykiet, kodów 2D i grafiki z jednoczesną wygodą obsługi bezpośrednio na wyświetlaczu. Brother TJ-4121TN drukuje etykiety termotransferowe (z taśmą barwiącą) i termiczne (bez ribbona).
 
 Brother TJ-4121TN oferuje rozdzielczość 300 dpi (12 dots/mm) z prędkością druku do 178 mm/s (7 ips) i kolorowy ekran dotykowy 3,5 cala z 6 przyciskami nawigacyjnymi. To jedyny model w serii TJ łączący obie premium-cechy: wysoką rozdzielczość i ekran dotykowy. Jeśli wystarczy Ci 203 dpi: [TJ-4020TN](/produkt/brother-tj-4020tn) (LED, od 3 057 zł) lub [TJ-4021TN](/produkt/brother-tj-4021tn) (ekran, od 3 803 zł). Jeśli 300 dpi bez ekranu: [TJ-4120TN](/produkt/brother-tj-4120tn) (LED, od 4 109 zł).
@@ -7098,15 +7100,15 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     faq: [
       {
         question: 'Czym Brother TJ-4121TN różni się od TJ-4120TN?',
-        answer: 'Brother TJ-4121TN to wersja z kolorowym ekranem dotykowym 3,5 cala (od 4 780 zł), podczas gdy TJ-4120TN ma panel LED (od 4 109 zł). Oba modele mają rozdzielczość 300 dpi i prędkość 178 mm/s. Ekran umożliwia konfigurację, kalibrację i podgląd statusu bez komputera.',
+        answer: 'Brother TJ-4121TN to wersja z kolorowym ekranem dotykowym 3,5 cala (od 4 780 zł), podczas gdy [TJ-4120TN](/produkt/brother-tj-4120tn) ma panel LED (od 4 109 zł). Oba modele mają rozdzielczość 300 dpi i prędkość 178 mm/s. Ekran umożliwia konfigurację, kalibrację i podgląd statusu bez komputera.',
       },
       {
         question: 'Kiedy warto wybrać Brother TJ-4121TN?',
-        answer: 'Brother TJ-4121TN to najlepszy wybór, gdy potrzebujesz jednocześnie: rozdzielczości 300 dpi do małych kodów 2D i drobnego tekstu ORAZ ekranu dotykowego do wygodnej obsługi. Jeśli nie potrzebujesz 300 dpi: TJ-4021TN (203 dpi + ekran, od 3 803 zł). Jeśli nie potrzebujesz ekranu: TJ-4120TN (300 dpi + LED, od 4 109 zł).',
+        answer: 'Brother TJ-4121TN to najlepszy wybór, gdy potrzebujesz jednocześnie: rozdzielczości 300 dpi do małych kodów 2D i drobnego tekstu ORAZ ekranu dotykowego do wygodnej obsługi. Jeśli nie potrzebujesz 300 dpi: [TJ-4021TN](/produkt/brother-tj-4021tn) (203 dpi + ekran, od 3 803 zł). Jeśli nie potrzebujesz ekranu: [TJ-4120TN](/produkt/brother-tj-4120tn) (300 dpi + LED, od 4 109 zł).',
       },
       {
         question: 'Ile kosztuje Brother TJ-4121TN?',
-        answer: 'Brother TJ-4121TN (300 dpi, ekran dotykowy) kosztuje od 4 780 zł netto — to flagowy model serii TJ. Tańsze warianty: TJ-4120TN (300 dpi, LED) od 4 109 zł, TJ-4021TN (203 dpi, ekran) od 3 803 zł, TJ-4020TN (203 dpi, LED) od 3 057 zł.',
+        answer: 'Brother TJ-4121TN (300 dpi, ekran dotykowy) kosztuje od 4 780 zł netto — to flagowy model serii TJ. Tańsze warianty: [TJ-4120TN](/produkt/brother-tj-4120tn) (300 dpi, LED) od 4 109 zł, [TJ-4021TN](/produkt/brother-tj-4021tn) (203 dpi, ekran) od 3 803 zł, [TJ-4020TN](/produkt/brother-tj-4020tn) (203 dpi, LED) od 3 057 zł.',
       },
       {
         question: 'Czy Brother TJ-4121TN obsługuje emulację ZPL?',
@@ -7114,15 +7116,16 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       },
       {
         question: 'Jak Brother TJ-4121TN wypada w porównaniu z Zebra ZT231?',
-        answer: 'TJ-4121TN: 300 dpi, 178 mm/s, ekran dotykowy 3,5", taśmy 450 m, 5 lat gwarancji, od 4 780 zł. ZT231 300 dpi: 203 mm/s, ekran 4,3", 512 MB RAM, Link-OS, opcja RFID, od ~3 600 zł. ZT231 jest tańszy, szybszy i ma większy ekosystem, Brother TJ ma dłuższą gwarancję.',
+        answer: 'TJ-4121TN: 300 dpi, 178 mm/s, ekran dotykowy 3,5", taśmy 450 m, 5 lat gwarancji, od 4 780 zł. [ZT231](/produkt/zebra-zt231) 300 dpi: 203 mm/s, ekran 4,3", 512 MB RAM, Link-OS, opcja RFID, od ~3 600 zł. ZT231 jest tańszy, szybszy i ma większy ekosystem, Brother TJ ma dłuższą gwarancję.',
       },
       {
         question: 'Jakie są alternatywy dla Brother TJ-4121TN?',
-        answer: 'W klasie półprzemysłowych drukarek 4" 300 dpi z ekranem: Zebra ZT231 300 dpi (ekran 4,3", od ~3 600 zł), Honeywell PD45 300 dpi (od ~4 800 zł). Wersja bez ekranu: Brother TJ-4120TN (od 4 109 zł). Tańsze 203 dpi: Brother TJ-4021TN z ekranem (od 3 803 zł).',
+        answer: 'W klasie półprzemysłowych drukarek 4" 300 dpi z ekranem: [Zebra ZT231](/produkt/zebra-zt231) 300 dpi (ekran 4,3", od ~3 600 zł), [Honeywell PD45](/produkt/honeywell-pd45) 300 dpi (od ~4 800 zł). Wersja bez ekranu: [Brother TJ-4120TN](/produkt/brother-tj-4120tn) (od 4 109 zł). Tańsze 203 dpi: [Brother TJ-4021TN](/produkt/brother-tj-4021tn) z ekranem (od 3 803 zł).',
       },
     ],
     relatedProducts: ['brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'zebra-zt231', 'zebra-zt111'],
     createdAt: '2026-03-17',
+    sameAs: 'https://www.brother.pl/labelling-and-receipts/tj-4121tn',
     updatedAt: '2026-03-17',
   },
 ]
