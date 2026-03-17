@@ -6333,11 +6333,11 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'brother',
     priceFrom: 3057.49,
-    images: ['/images/products/TJ4020TNZ1.png', '/images/products/TJ4020TNZ1_2.png', '/images/products/TJ4020TNZ1_3.png', '/images/products/TJ4020TNZ1_4.png'],
+    images: ['/images/products/TJ4020TNZ1_3.png', '/images/products/TJ4020TNZ1.png', '/images/products/TJ4020TNZ1_2.png', '/images/products/TJ4020TNZ1_4.png'],
     imageDescriptions: [
+      'Brother TJ-4021TN — widok z przodu, wersja z kolorowym ekranem dotykowym 3,5 cala',
       'Brother TJ-4020TN — widok z przodu, półprzemysłowa drukarka etykiet 4 cale z panelem LED',
       'Brother TJ-4020TN — widok pod kątem, otwarta komora mediów z rolką etykiet i taśmą termotransferową 450 m',
-      'Brother TJ-4021TN — widok z przodu, wersja z kolorowym ekranem dotykowym 3,5 cala',
       'Brother TJ-4020TN — widok z tyłu, porty USB, Ethernet, RS-232 i USB Host',
     ],
     tags: ['magazyn', 'logistyka', 'produkcja'],
