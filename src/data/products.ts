@@ -4769,15 +4769,17 @@ Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukują
     slug: 'brother-td-2020a',
     name: 'Brother TD-2020A',
     shortDescription: 'Brother TD-2020A — kompaktowa drukarka etykiet termiczna 2 cale, 203 dpi, 152,4 mm/s, USB, emulacja ZPL II, P-touch Editor w zestawie',
-    seoTitle: 'Brother TD-2020A — drukarka etykiet 2" kompaktowa | od 461 zł',
-    seoDescription: 'Brother TD-2020A — kompaktowa drukarka termiczna 2", 203 dpi, 152 mm/s, ZPL II. Cenówki, etykiety, kody kreskowe. Od 461 zł. PN: TD2020AXX1. TAKMA.',
-    description: `Dla kogo? Brother TD-2020A to kompaktowa biurkowa drukarka etykiet termicznych 2 cale, zaprojektowana dla punktów sprzedaży, kas fiskalnych, przychodni lekarskich, aptek, laboratoriów i małych biur — wszędzie tam, gdzie potrzebny jest szybki druk małych etykiet, oznaczeń, metek cenowych, biletów i pokwitowań przy minimalnym zajmowaniu miejsca na biurku.
+    seoTitle: 'Brother TD-2020A — najtańsza drukarka etykiet 2" | od 461 zł',
+    seoDescription: 'Brother TD-2020A — najtańsza drukarka etykiet 2", 203 dpi, 152 mm/s. Emulacja ZPL II, P-touch Editor gratis. Cenówki, kody, paragony. Od 461 zł netto. TAKMA.',
+    description: `Dla kogo? Brother TD-2020A to mała, tania drukarka etykiet 2 cale — drukarka do cenówek, metek cenowych, kodów kreskowych i paragonów. Zaprojektowana jako drukarka POS dla punktów sprzedaży, kas fiskalnych, przychodni lekarskich, aptek, laboratoriów i małych biur — wszędzie tam, gdzie potrzebny jest szybki druk małych etykiet przy minimalnym zajmowaniu miejsca na biurku. Sprawdź wszystkie [biurkowe drukarki etykiet](/biurkowe-drukarki-etykiet) w ofercie TAKMA.
 
-Brother TD-2020A to model bazowy serii TD-2000 — drukarka termiczna bezpośrednia (direct thermal) o rozdzielczości 203 dpi i prędkości druku do 152,4 mm/s (6 ips). Drukarka obsługuje etykiety i paragony o szerokości do 63 mm (druk do 56 mm). Kompaktowe wymiary (110 × 215 × 172 mm) i waga zaledwie 1,32 kg sprawiają, że TD-2020A zajmuje minimalną przestrzeń na stanowisku pracy. Drukarka jest zasilana z sieci (zasilacz 100–240V w zestawie) — nie wymaga baterii.
+Brother TD-2020A to model bazowy serii TD-2000 — drukarka termiczna bezpośrednia (direct thermal) o rozdzielczości 203 dpi i prędkości druku do 152,4 mm/s (6 ips). Drukuje etykiety i paragony o szerokości do 63 mm (druk do 56 mm). Kompaktowe wymiary (110 × 215 × 172 mm) i waga zaledwie 1,32 kg sprawiają, że drukarka metek cenowych Brother TD-2020A zajmuje minimalną przestrzeń na stanowisku pracy. Drukarka jest zasilana z sieci (zasilacz 100–240V w zestawie) — nie wymaga baterii.
 
-Brother TD-2020A emuluje język ZPL II (P-touch Template 2.0), co umożliwia współpracę z systemami zaprojektowanymi dla drukarek Zebra. W zestawie dostarczany jest program P-touch Editor do projektowania etykiet z szablonami i kodami kreskowymi. Drukarka obsługuje kody 1D (Code 39, Code 128, EAN-13, UPC-A, ITF, GS1-128) i 2D (QR Code, DataMatrix, PDF417). Łączy się przez USB 2.0 (mini-B) — port szeregowy RS-232C dostępny przez opcjonalną przejściówkę PA-SCA-001. Szukasz drukarki z szerszym drukiem? Sprawdź [Brother TD-4D](/produkt/brother-td-4d) (4 cale) lub nasz [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).
+Brother TD-2020A emuluje język ZPL II (P-touch Template 2.0), co umożliwia współpracę z systemami POS zaprojektowanymi dla drukarek Zebra. W zestawie dostarczany jest program P-touch Editor do projektowania etykiet z szablonami i kodami kreskowymi. Drukarka obsługuje kody 1D (Code 39, Code 128, EAN-13, UPC-A, ITF, GS1-128) i 2D (QR Code, DataMatrix, PDF417). Łączy się przez USB 2.0 (mini-B) — port szeregowy RS-232C dostępny przez opcjonalną przejściówkę PA-SCA-001. Szukasz drukarki z szerszym drukiem? Sprawdź [Brother TD-4D](/produkt/brother-td-4d) (4 cale), [Zebra ZD220d](/produkt/zebra-zd220d) (4 cale, od 639 zł) lub nasz [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).
 
-Brother TD-2020A to najtańsza drukarka etykiet w ofercie TAKMA — od 461 zł netto. Przy cenie poniżej 500 zł to jedna z najtańszych drukarek etykiet 2 cale na rynku. Producent udziela gwarancji po rejestracji na brother.pl. Specyfikacja zgodna z oficjalną kartą katalogową Brother (źródło: brother.pl, marzec 2026).`,
+Brother TD-2020A działa z systemami POS i kasowymi: Comarch POS, Subiekt 123, PC-Market, SmallBusiness oraz innymi systemami obsługującymi druk ZPL II przez USB. W handlu detalicznym drukarka do cenówek Brother TD-2020A drukuje metki cenowe z kodem EAN-13, nazwą produktu i datą ważności. W aptekach — etykiety na leki z dawkowaniem i kodem kreskowym. Drukarka etykiet do apteki Brother TD-2020A spełnia wymagania farmaceutyczne dzięki rozdzielczości 203 dpi i obsłudze kodów DataMatrix.
+
+Brother TD-2020A to najtańsza drukarka etykiet w ofercie TAKMA i jedna z najtańszych drukarek etykiet 2 cale na rynku — od 461 zł netto. Tania drukarka etykiet Brother TD-2020A kosztuje mniej niż [Zebra ZD220d](/produkt/zebra-zd220d) (od 639 zł) i [Honeywell PC42e-t](/produkt/honeywell-pc42e-t) (od ~900 zł). Producent udziela gwarancji po rejestracji na brother.pl. Specyfikacja zgodna z oficjalną kartą katalogową Brother (źródło: brother.pl, marzec 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'brother',
@@ -4844,7 +4846,10 @@ Brother TD-2020A to najtańsza drukarka etykiet w ofercie TAKMA — od 461 zł n
       },
     ],
     variantAttributeTooltips: {},
-    compatibleAccessories: [],
+    compatibleAccessories: [
+      'zebra-labels-zselect2000d-57x32',
+      'zebra-labels-zselect2000d-32x25',
+    ],
     relatedAccessories: [],
     faq: [
       {
@@ -4887,14 +4892,77 @@ Brother TD-2020A to najtańsza drukarka etykiet w ofercie TAKMA — od 461 zł n
         question: 'Jakie są alternatywy dla Brother TD-2020A?',
         answer: 'Alternatywy w klasie kompaktowych drukarek etykiet 2 cale: Zebra ZD220d (od 650 zł, 4 cale ale obsługuje też wąskie media), Brother TD-2120N (od ~700 zł, z Ethernet i opcjonalnymi akcesoriami), Honeywell PC42e-t (od ~900 zł, 4 cale). W klasie drukarek mobilnych 2 cale: Zebra ZQ220 Plus (od ~1 200 zł, bateryjna). Brother TD-2020A wyróżnia się najniższą ceną (461 zł), kompaktowymi wymiarami i emulacją ZPL II.',
       },
+      {
+        question: 'Czy Brother TD-2020A nadaje się do drukowania cenówek i metek?',
+        answer: 'Tak. Brother TD-2020A to jedna z najpopularniejszych drukarek do cenówek i metek cenowych w handlu detalicznym. Drukuje etykiety samoprzylepne o szerokości do 63 mm — idealne formaty to 57x32 mm (standardowa cenówka) i 50x30 mm (mała metka produktowa). Prędkość 152 mm/s pozwala wydrukować setki cenówek w kilka minut. Oprogramowanie P-touch Editor w zestawie umożliwia projektowanie metek z ceną, kodem kreskowym EAN-13, nazwą produktu i datą ważności.',
+      },
+      {
+        question: 'Czy Brother TD-2020A działa z systemami POS i kasami fiskalnymi?',
+        answer: 'Tak. Brother TD-2020A łączy się z systemami POS (Point of Sale) przez USB 2.0 i opcjonalnie RS-232C. Emulacja ZPL II zapewnia kompatybilność z większością systemów kasowych i POS. Drukarka obsługuje druk paragonów, pokwitowań i potwierdzeń transakcji na papierze ciągłym (do 1 000 mm). Popularne systemy POS kompatybilne z TD-2020A: Comarch POS, Subiekt 123, PC-Market, SmallBusiness.',
+      },
+      {
+        question: 'Jaki jest koszt eksploatacji Brother TD-2020A (TCO)?',
+        answer: 'Brother TD-2020A to drukarka termiczna bezpośrednia (direct thermal) — nie wymaga taśmy barwiącej (ribbon), co eliminuje największy koszt eksploatacji. Jedyny materiał eksploatacyjny to etykiety termiczne — standardowa rolka 57x32 mm (1 000 szt.) kosztuje ok. 15–20 zł, czyli ok. 0,02 zł za etykietę. Przy druku 500 etykiet dziennie miesięczny koszt materiałów to ok. 200–300 zł. Dla porównania: drukarka termotransferowa (np. Zebra ZD220t) wymaga dodatkowo taśmy ribbon (ok. 80 zł/rolka), co podnosi koszt o ok. 30–40%. Głowica termiczna TD-2020A jest zaprojektowana na 50 km druku.',
+      },
     ],
+    comparison: {
+      title: 'Porównanie Brother TD-2020A z alternatywami',
+      models: [
+        {
+          name: 'Brother TD-2020A',
+          slug: 'brother-td-2020a',
+          highlight: true,
+          specs: {
+            'Cena od': '461 zł',
+            'Szerokość druku': '56 mm (2")',
+            'Rozdzielczość': '203 dpi',
+            'Prędkość': '152 mm/s',
+            'Interfejsy': 'USB',
+            'Emulacja ZPL': 'Tak (P-touch)',
+            'LCD': '—',
+            'Akcesoria': '—',
+            'Waga': '1,32 kg',
+          },
+        },
+        {
+          name: 'Zebra ZD220d',
+          slug: 'zebra-zd220d',
+          specs: {
+            'Cena od': '639 zł',
+            'Szerokość druku': '104 mm (4")',
+            'Rozdzielczość': '203 dpi',
+            'Prędkość': '102 mm/s',
+            'Interfejsy': 'USB',
+            'Emulacja ZPL': 'Natywna',
+            'LCD': '—',
+            'Akcesoria': '—',
+            'Waga': '0,45 kg',
+          },
+        },
+        {
+          name: 'Honeywell PC42e-t',
+          slug: 'honeywell-pc42e-t',
+          specs: {
+            'Cena od': '~900 zł',
+            'Szerokość druku': '104 mm (4")',
+            'Rozdzielczość': '203/300 dpi',
+            'Prędkość': '152 mm/s',
+            'Interfejsy': 'USB + Ethernet',
+            'Emulacja ZPL': 'Natywna',
+            'LCD': '—',
+            'Akcesoria': 'Odklejak, gilotyna',
+            'Waga': '1,7 kg',
+          },
+        },
+      ],
+    },
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: '/downloads/td2020a_pol_ug.pdf', size: '3,3 MB' },
       { name: 'Skrócona instrukcja (PL)', type: 'manual', url: '/downloads/td2020a_pol_qrg.pdf', size: '758 KB' },
       { name: 'Karta katalogowa serii TD-2000', type: 'datasheet', url: '/downloads/Karta_produktu_TD2000.pdf', size: '266 KB' },
       { name: 'Sterowniki i oprogramowanie', type: 'software', url: 'https://www.brother.pl/support/td-2020a/downloads', size: 'Online' },
     ],
-    relatedProducts: ['brother-td-4d', 'honeywell-pc42e-t'],
+    relatedProducts: ['brother-td-4d', 'zebra-zd220d', 'honeywell-pc42e-t'],
     createdAt: '2026-03-16',
     sameAs: 'https://www.brother.pl/labelling-and-receipts/td-2020a',
   },
