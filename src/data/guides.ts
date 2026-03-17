@@ -7498,6 +7498,216 @@ export const guides: Guide[] = [
     { title: 'Drukarki etykiet — pełna oferta', href: '/drukarki-etykiet' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]
+},
+{
+  slug: 'brother-rj-4230b-vs-zebra-zq521',
+  title: 'Brother RJ-4230B vs Zebra ZQ521 — którą drukarkę mobilną 4" wybrać?',
+  seoTitle: 'Brother RJ-4230B vs Zebra ZQ521 — porównanie drukarek mobilnych 4" | TAKMA',
+  seoDescription: 'Porównanie Brother RJ-4230B i Zebra ZQ521 — drukarki mobilne 4 cale. Wytrzymałość, łączność WiFi/BT, bateria, RFID, zarządzanie flotą, ceny netto. Brother RJ-4230B od 2 353 zł, Zebra ZQ521 od 2 979 zł. Która lepsza do magazynu, kuriera, serwisu? RJ-4230B Brother, ZQ521 Zebra, drukarka mobilna 4" porównanie. PN: RJ4230BZ1, ZQ52-BUE0010-00, ZQ52-BUE001E-00.',
+  excerpt: 'Brother RJ-4230B to kompaktowa drukarka mobilna 4" z Bluetooth od 2 353 zł. Zebra ZQ521 oferuje WiFi ac, BT 5.2, opcjonalne RFID i egzoszkielet IP65 od 2 979 zł. Porównanie kluczowych kryteriów decyzyjnych: wytrzymałość, łączność, bateria, zarządzanie flotą i koszty eksploatacji.',
+  category: 'porownanie',
+  tags: ['drukarki-etykiet', 'mobilne', 'brother', 'zebra', 'rj-4230b', 'zq521', 'porownanie', '4-cale'],
+  publishedAt: '2026-03-17',
+  updatedAt: '2026-03-17',
+  readTime: '12 min',
+  heroImage: '/images/guides/brother-rj-4230b-vs-zebra-zq521.png',
+
+  sections: [
+    {
+      id: 'wprowadzenie',
+      heading: 'Brother RJ-4230B vs Zebra ZQ521 — TL;DR',
+      content: `
+<p><strong>Brother RJ-4230B</strong> to kompaktowa drukarka mobilna 4" z łącznością Bluetooth 4.2, idealna do prostych wdrożeń w handlu i serwisie terenowym — od 2 353 zł netto. <strong>Zebra ZQ521</strong> oferuje WiFi 802.11ac, Bluetooth 5.2, opcjonalne RFID UHF i wyższą odporność (MIL-STD-810G) — od 2 979 zł netto. Zebra jest lepszym wyborem dla dużych flot i pracy w wymagających warunkach, Brother — gdy liczy się cena i prostota wdrożenia.</p>
+
+<p>Oba modele drukują termicznie w rozdzielczości 203 dpi z prędkością do 127 mm/s na papierze o szerokości do 104 mm. Na pierwszy rzut oka — specyfikacja druku jest identyczna. Kluczowe różnice leżą w łączności bezprzewodowej, wytrzymałości mechanicznej, ekosystemie zarządzania i opcjach rozszerzeń. Ten poradnik pomoże Ci zdecydować, który model lepiej pasuje do Twojego scenariusza użycia.</p>
+`
+    },
+    {
+      id: 'tabela-porownawcza',
+      heading: 'Szybkie zestawienie — najważniejsze parametry decyzyjne',
+      content: `
+<p>Poniższa tabela zawiera wyłącznie parametry wpływające na decyzję zakupową — nie jest to pełna specyfikacja techniczna. Szczegóły znajdziesz w kartach produktów: <a href="/produkt/brother-rj-4230b">Brother RJ-4230B</a> | <a href="/produkt/zebra-zq521">Zebra ZQ521</a>.</p>
+
+<table>
+  <thead>
+    <tr><th>Parametr</th><th>Brother RJ-4230B</th><th>Zebra ZQ521</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Cena netto od</td><td><strong>2 353 zł</strong></td><td>2 979 zł</td></tr>
+    <tr><td>Szerokość druku</td><td>104 mm</td><td>104 mm</td></tr>
+    <tr><td>Prędkość druku</td><td>127 mm/s</td><td>127 mm/s</td></tr>
+    <tr><td>Waga z baterią</td><td>850 g</td><td><strong>790 g</strong></td></tr>
+    <tr><td>Odporność na upadki</td><td>2,1 m</td><td>2 m (3 m z egzoszkieletem)</td></tr>
+    <tr><td>Klasa szczelności</td><td>IP54</td><td>IP54 (<strong>IP65</strong> z egzoszkieletem)</td></tr>
+    <tr><td>WiFi</td><td>Brak</td><td><strong>802.11ac dual-band</strong></td></tr>
+    <tr><td>Bluetooth</td><td>4.2 + BLE</td><td><strong>5.2 + BLE</strong></td></tr>
+    <tr><td>Opcja RFID</td><td>Brak</td><td><strong>Tak (UHF)</strong></td></tr>
+    <tr><td>Bateria rozszerzona</td><td>Brak</td><td><strong>6 500 mAh</strong></td></tr>
+    <tr><td>Norma wojskowa</td><td>Brak</td><td><strong>MIL-STD-810G</strong></td></tr>
+    <tr><td>Gwarancja</td><td><strong>3 lata (z głowicą)</strong></td><td>2 lata (głowica 6 mies.)</td></tr>
+  </tbody>
+</table>
+`
+    },
+    {
+      id: 'wytrzymalosc',
+      heading: 'Która drukarka jest bardziej wytrzymała — Brother RJ-4230B czy Zebra ZQ521?',
+      content: `
+<p><strong>Zebra ZQ521 z egzoszkieletem oferuje najwyższą odporność w tej klasie</strong> — upadek z 3 m na beton, klasa IP65 (pyło- i wodoszczelność) oraz certyfikat MIL-STD-810G potwierdzający odporność na wibracje, szok termiczny i wilgoć. Bez egzoszkieletu parametry są zbliżone do Brother: upadek z 2 m i IP54.</p>
+
+<p>Brother RJ-4230B wytrzymuje upadek z 2,1 m (według specyfikacji producenta) przy klasie szczelności IP54. To solidna ochrona na potrzeby pracy wewnątrz budynków — magazyn, sklep, punkt serwisowy. Według karty katalogowej Brother, drukarka przeszła testy upadku zgodne z MIL-STD-810G Method 516.6, ale Brother nie komunikuje tego certyfikatu tak wyraźnie jak Zebra.</p>
+
+<p><strong>Wniosek praktyczny:</strong></p>
+<ul>
+  <li>Praca w magazynie, sklepie, biurze serwisowym — obie drukarki wystarczą</li>
+  <li>Kurier, logistyka, dostawy w zmiennych warunkach pogodowych — Zebra ZQ521 daje większy zapas bezpieczeństwa</li>
+  <li>Budowy, porty, chłodnie, praca na deszczu — Zebra z egzoszkieletem (IP65, 3 m) jest jedynym rozsądnym wyborem</li>
+</ul>
+`
+    },
+    {
+      id: 'lacznosc',
+      heading: 'Która drukarka ma lepszą łączność — WiFi, Bluetooth, integracja?',
+      content: `
+<p><strong>Łączność to największa różnica między tymi modelami.</strong> Zebra ZQ521 ma na pokładzie jednocześnie WiFi 802.11ac (dwuzakresowe 2,4 + 5 GHz) i Bluetooth 5.2, co daje pełną elastyczność we wdrożeniach sieciowych. Brother RJ-4230B oferuje wyłącznie Bluetooth 4.2 — wersja z WiFi to osobny model RJ-4250WB w wyższej cenie.</p>
+
+<p>Dla dużych obiektów logistycznych, gdzie drukarki muszą pracować w sieci firmowej z roamingiem między access pointami, WiFi 802.11ac z obsługą 802.11r (fast roaming) w Zebrze to kluczowa przewaga. Specyfikacja Zebra potwierdza również obsługę WPA3 i 802.1x EAP — standard w sieciach korporacyjnych.</p>
+
+<p>Brother RJ-4230B kompensuje brak WiFi wsparciem Apple AirPrint — wystarczy sparować przez Bluetooth z iPhonem, aby drukować bez instalacji sterowników. W prostych scenariuszach (1 drukarka + 1 telefon) to wygodne rozwiązanie.</p>
+
+<p><strong>Wniosek praktyczny:</strong></p>
+<ul>
+  <li>Parowanie 1:1 z telefonem lub tabletem, proste zastosowania handlowe — Brother BT 4.2 wystarcza</li>
+  <li>Praca w sieci firmowej WiFi, centralne zarządzanie, roaming — <a href="/produkt/zebra-zq521">Zebra ZQ521</a> jest naturalnym wyborem</li>
+  <li>Flota Apple (iPhone + iPad) bez infrastruktury WiFi — Brother z AirPrint może być wygodniejszy</li>
+</ul>
+`
+    },
+    {
+      id: 'zarzadzanie-flota',
+      heading: 'Która drukarka lepiej sprawdzi się przy zarządzaniu dużą flotą?',
+      content: `
+<p><strong>Zebra dysponuje zdecydowanie bardziej rozbudowanym ekosystemem zarządzania</strong> — Zebra DNA obejmuje Printer Profile Manager Enterprise (PPME) do zdalnej konfiguracji i monitoringu, aktualizacje firmware OTA oraz PrintSecure do kontroli dostępu. Dla działów IT zarządzających flotą 50+ drukarek to konkretna oszczędność czasu.</p>
+
+<p>Brother oferuje Mobile Deploy (zdalna konfiguracja przez chmurę) oraz P-touch Editor do projektowania szablonów etykiet — prostsze narzędzia, ale wystarczające dla mniejszych wdrożeń. Według dokumentacji Brother, Mobile Deploy pozwala na zdalną dystrybucję ustawień i szablonów na wszystkie drukarki w sieci, co znacząco przyspiesza wdrożenie.</p>
+
+<p>Oba modele obsługują język ZPL II (Zebra natywnie, Brother w emulacji), co ułatwia migrację między markami. Jeśli Twój system WMS lub ERP generuje komendy ZPL — obie drukarki je wydrukują bez zmian w oprogramowaniu.</p>
+
+<p><strong>Wniosek praktyczny:</strong></p>
+<ul>
+  <li>Flota 5-20 drukarek, prosty scenariusz BT → <a href="/produkt/brother-rj-4230b">Brother RJ-4230B</a> daje wystarczające narzędzia</li>
+  <li>Flota 50+ drukarek, wielu użytkowników, monitoring stanu → Zebra ZQ521 z PPME ma wyraźną przewagę</li>
+  <li>Istniejące systemy ZPL/CPCL → obie obsługują, migracja jest bezbolesna</li>
+</ul>
+`
+    },
+    {
+      id: 'bateria',
+      heading: 'Jak długo wytrzymuje bateria Brother RJ-4230B i Zebra ZQ521?',
+      content: `
+<p><strong>Brother deklaruje do 10 000 etykiet na jednym ładowaniu</strong> (etykiety 102 x 29 mm, 5% pokrycia) przy baterii 1 860 mAh. Zebra ZQ521 ze standardową baterią 3 250 mAh z technologią PowerPrecision+ wydrukuje porównywalną liczbę etykiet, ale oferuje też opcjonalną baterię rozszerzoną 6 500 mAh — podwójna pojemność dla długich zmian.</p>
+
+<p>Kluczowa różnica w infrastrukturze ładowania: Zebra oferuje 4-gniazdowe stacje ładujące baterie (SAC-MPP-8BCHGUS1-01) i ładowarki kołyskowe, co jest istotne przy zarządzaniu flotą z rotacją baterii między zmianami. Brother korzysta z prostszego modelu — ładowanie przez zasilacz sieciowy lub adapter samochodowy.</p>
+
+<p>Brother ma natomiast unikalną opcję: adapter zasilania stałego (battery eliminator) pozwalający pracować bez baterii na stałym zasilaniu — przydatne w pojazdach lub stacjonarnych punktach druku.</p>
+
+<p><strong>Wniosek praktyczny:</strong></p>
+<ul>
+  <li>Standardowa zmiana 8h, umiarkowana liczba wydruków — obie drukarki wystarczą</li>
+  <li>Intensywny druk lub zmiany 12h+ — bateria 6 500 mAh Zebry daje dodatkowy zapas</li>
+  <li>Drukarka zamontowana w pojeździe na stałe — Brother z battery eliminator jest wygodniejszy</li>
+</ul>
+`
+    },
+    {
+      id: 'rfid-linerless',
+      heading: 'Czy Brother RJ-4230B lub Zebra ZQ521 obsługują RFID i druk bezpodkładowy?',
+      content: `
+<p><strong>Zebra ZQ521 wyróżnia się dwiema opcjami, których Brother RJ-4230B nie posiada</strong>: kodowaniem RFID UHF (druk i kodowanie znaczników RFID w terenie — wariant ZQ52-BUE001E-00) oraz systemem ZeroLiner do druku etykiet bezpodkładowych (linerless). Według specyfikacji Zebra, wariant RFID obsługuje tagi EPC Gen 2 V2 / ISO 18000-63.</p>
+
+<p>Druk linerless oznacza mniej odpadów (brak podkładu silikonowanego) i więcej etykiet na jednej rolce — Zebra szacuje wzrost o 40% vs standardowe etykiety. To realna oszczędność przy dużych wolumenach, szczególnie w logistyce i dostawach.</p>
+
+<p>Brother RJ-4230B obsługuje etykiety bez podkładu przez opcjonalny wałek dociskowy, ale nie oferuje kodowania RFID w żadnej wersji.</p>
+
+<p><strong>Wniosek praktyczny:</strong></p>
+<ul>
+  <li>Potrzebujesz kodowania RFID UHF w terenie — tylko <a href="/produkt/zebra-zq521">Zebra ZQ521 RFID</a></li>
+  <li>Chcesz zmniejszyć odpady i rzadziej wymieniać rolki — Zebra ZeroLiner</li>
+  <li>Standardowe etykiety termiczne bez RFID — obie drukarki sprawdzą się równie dobrze</li>
+</ul>
+`
+    },
+    {
+      id: 'podsumowanie',
+      heading: 'Brother RJ-4230B czy Zebra ZQ521 — którą wybrać? Podsumowanie',
+      content: `
+<p>Oba modele to solidne drukarki mobilne 4" z identyczną specyfikacją druku (203 dpi, 127 mm/s, 104 mm). Wybór zależy od Twojego scenariusza użycia, budżetu i potrzeb infrastrukturalnych.</p>
+
+<h3>Brother RJ-4230B sprawdzi się, gdy:</h3>
+<ul>
+  <li>Szukasz sprawdzonej drukarki 4" w niższej cenie (od 2 353 zł netto — o 26% taniej niż Zebra)</li>
+  <li>Twoje zastosowanie to głównie parowanie Bluetooth z telefonem lub tabletem</li>
+  <li>Potrzebujesz prostego wdrożenia bez rozbudowanej infrastruktury sieciowej WiFi</li>
+  <li>Cenisz 3-letnią gwarancję z głowicą drukującą w cenie</li>
+  <li>Drukujesz paragony, etykiety cenowe, protokoły serwisowe w stabilnych warunkach</li>
+</ul>
+
+<h3>Zebra ZQ521 sprawdzi się, gdy:</h3>
+<ul>
+  <li>Pracujesz w wymagających warunkach terenowych i potrzebujesz ochrony MIL-STD-810G</li>
+  <li>Planujesz wdrożenie flotowe z centralnym zarządzaniem przez sieć WiFi</li>
+  <li>Potrzebujesz opcji RFID UHF lub druku bezpodkładowego (linerless)</li>
+  <li>Dział IT wymaga zaawansowanych narzędzi Zebra DNA do monitoringu i aktualizacji OTA</li>
+  <li>Długie zmiany wymagają baterii rozszerzonej 6 500 mAh</li>
+</ul>
+
+<p>Potrzebujesz pomocy w wyborze? <a href="/kontakt">Skontaktuj się z naszym doradcą</a> — pomożemy dopasować drukarkę do Twojego scenariusza. Karty produktów: <a href="/produkt/brother-rj-4230b">Brother RJ-4230B</a> | <a href="/produkt/zebra-zq521">Zebra ZQ521</a>. Wszystkie <a href="/mobilne-drukarki-etykiet">drukarki mobilne</a> w ofercie TAKMA.</p>
+`
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Czy Brother RJ-4230B ma WiFi?',
+      answer: 'Nie. <a href="/produkt/brother-rj-4230b">Brother RJ-4230B</a> łączy się wyłącznie przez Bluetooth 4.2 z BLE i USB. Jeśli potrzebujesz WiFi w serii Brother RJ, rozważ model RJ-4250WB z obsługą sieci 802.11a/b/g/n — dostępny w wyższej cenie.'
+    },
+    {
+      question: 'Która drukarka mobilna 4 cale jest lepsza do magazynu?',
+      answer: 'Zależy od skali wdrożenia. Dla małych magazynów z parowaniem Bluetooth z telefonem — Brother RJ-4230B wystarczy i kosztuje od 2 353 zł. Dla dużych obiektów z siecią WiFi i centralnym zarządzaniem drukarkami — <a href="/produkt/zebra-zq521">Zebra ZQ521</a> sprawdzi się lepiej dzięki WiFi 802.11ac, roamingowi 802.11r i ekosystemowi Zebra DNA.'
+    },
+    {
+      question: 'Czy Zebra ZQ521 drukuje etykiety RFID?',
+      answer: 'Tak — <a href="/produkt/zebra-zq521">Zebra ZQ521</a> jest dostępna w wariancie RFID UHF (PN: ZQ52-BUE001E-00), który jednocześnie drukuje i koduje znaczniki RFID w terenie (EPC Gen 2 V2, ISO 18000-63). Brother RJ-4230B nie oferuje opcji RFID w żadnej wersji.'
+    },
+    {
+      question: 'Ile waży Brother RJ-4230B z baterią?',
+      answer: '<a href="/produkt/brother-rj-4230b">Brother RJ-4230B</a> waży 850 g z baterią. Zebra ZQ521 jest nieco lżejsza — 790 g ze standardową baterią 3 250 mAh. Różnica 60 g jest praktycznie nieodczuwalna przy noszeniu na pasku lub w kaburze.'
+    },
+    {
+      question: 'Która drukarka mobilna jest bardziej odporna na upadki?',
+      answer: 'Obie przetrwają upadek z ok. 2 m na beton. <a href="/produkt/zebra-zq521">Zebra ZQ521</a> z opcjonalnym egzoszkieletem podnosi tę wartość do 3 m i uzyskuje klasę IP65 (pyło- i wodoszczelność). Brother RJ-4230B jest certyfikowany na upadek z 2,1 m przy klasie IP54.'
+    },
+    {
+      question: 'Czy Brother RJ-4230B obsługuje polecenia ZPL?',
+      answer: 'Tak — <a href="/produkt/brother-rj-4230b">Brother RJ-4230B</a> obsługuje emulację ZPL II i CPCL, co ułatwia migrację z systemów opartych na drukarkach Zebra. Zebra ZQ521 obsługuje ZPL natywnie. W obu przypadkach systemy WMS i ERP generujące komendy ZPL nie wymagają zmian w oprogramowaniu.'
+    },
+    {
+      question: 'Która drukarka mobilna 4" jest lepsza do pracy na deszczu i mrozie?',
+      answer: 'Obie działają w zakresie od -20 C do +55 C. Przy pracy na deszczu Zebra ZQ521 z egzoszkieletem (IP65) daje lepszą ochronę niż IP54 w Brother — IP65 oznacza pełną ochronę przed strumieniem wody z każdego kierunku. Bez egzoszkieletu obie drukarki mają IP54 (ochrona przed bryzgami).'
+    }
+  ],
+
+  relatedLinks: [
+    { title: 'Brother RJ-4230B — karta produktu', href: '/produkt/brother-rj-4230b' },
+    { title: 'Zebra ZQ521 — karta produktu', href: '/produkt/zebra-zq521' },
+    { title: 'Mobilne drukarki etykiet — katalog', href: '/mobilne-drukarki-etykiet' },
+    { title: 'Jak wybrać drukarkę etykiet? Poradnik', href: '/poradnik/jak-wybrac-drukarke-etykiet' },
+    { title: 'Drukarki etykiet Zebra — przewodnik', href: '/poradnik/drukarki-etykiet-zebra-przewodnik' },
+    { title: 'Drukarki etykiet Brother — katalog', href: '/drukarki-etykiet-brother' },
+    { title: 'Drukarki etykiet Zebra — katalog', href: '/drukarki-etykiet-zebra' },
+    { title: 'Drukarka termiczna vs termotransferowa', href: '/poradnik/drukarka-termiczna-vs-termotransferowa' },
+    { title: 'Kontakt i doradztwo', href: '/kontakt' },
+  ]
 }
 ]
 
