@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronRightIcon } from '@/components/ui/Icons'
 import { guides } from '@/data/guides'
@@ -49,25 +50,37 @@ export default function PoradnikiPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }} />
 
       <div className="bg-white">
-        {/* Breadcrumbs */}
-        <nav className="container-main pt-4 pb-2" aria-label="Breadcrumb">
-          <ol className="flex items-center gap-1.5 text-sm text-gray-500">
-            <li><Link href="/" className="hover:text-primary-600 transition-colors">Strona główna</Link></li>
-            <li><ChevronRightIcon size={14} className="text-gray-400" /></li>
-            <li className="text-gray-900 font-medium">Poradniki</li>
-          </ol>
-        </nav>
+        {/* Hero with background image */}
+        <div className="relative overflow-hidden bg-[#0a1628]">
+          <Image
+            src="/images/poradniki-hero.png"
+            alt="Poradniki TAKMA — drukarki etykiet, terminale mobilne, skanery kodów"
+            fill
+            className="object-cover object-right"
+            priority
+          />
+          <div className="relative z-10">
+            {/* Breadcrumbs */}
+            <nav className="container-main pt-4 pb-2" aria-label="Breadcrumb">
+              <ol className="flex items-center gap-1.5 text-sm text-gray-300">
+                <li><Link href="/" className="hover:text-white transition-colors">Strona główna</Link></li>
+                <li><ChevronRightIcon size={14} className="text-gray-500" /></li>
+                <li className="text-white font-medium">Poradniki</li>
+              </ol>
+            </nav>
 
-        {/* Header */}
-        <header className="container-main pt-6 pb-10 border-b border-gray-100">
-          <h1 className="text-3xl lg:text-4xl font-bold text-gray-900">
-            Poradniki i przewodniki
-          </h1>
-          <p className="mt-4 text-lg text-gray-600 max-w-3xl">
-            Eksperckie artykuły oparte na ponad 20 latach doświadczenia i 500+ wdrożeniach.
-            Porównania modeli, kalkulacje kosztów i wskazówki doboru drukarek etykiet, terminali mobilnych i skanerów kodów.
-          </p>
-        </header>
+            {/* Header */}
+            <header className="container-main pt-6 pb-10">
+              <h1 className="text-3xl lg:text-4xl font-bold text-white">
+                Poradniki i przewodniki
+              </h1>
+              <p className="mt-4 text-lg text-gray-300 max-w-2xl">
+                Eksperckie artykuły oparte na ponad 20 latach doświadczenia i 500+ wdrożeniach.
+                Porównania modeli, kalkulacje kosztów i wskazówki doboru drukarek etykiet, terminali mobilnych i skanerów kodów.
+              </p>
+            </header>
+          </div>
+        </div>
 
         {/* Guide Grid with Filters */}
         <div className="container-main py-10">
