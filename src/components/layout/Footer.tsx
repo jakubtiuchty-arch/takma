@@ -75,7 +75,7 @@ export default function Footer() {
                 <Link href="/" className="shrink-0">
                   <Image
                     src="/images/takma_logo.png"
-                    alt="TAKMA — Autoryzowany dystrybutor urządzeń AutoID"
+                    alt="TAKMA — Autoryzowany partner urządzeń AutoID"
                     width={176}
                     height={70}
                     className="object-contain h-[52px] sm:h-[62px] w-auto brightness-0 invert"

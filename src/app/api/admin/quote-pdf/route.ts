@@ -254,7 +254,7 @@ export async function GET(request: NextRequest) {
 
     <div class="footer">
       <p>Dokument wygenerowany automatycznie przez system takma.com.pl</p>
-      <p>TAKMA — Autoryzowany Dystrybutor Zebra Technologies | www.takma.com.pl | +48 607 819 688</p>
+      <p>TAKMA — Autoryzowany Partner Zebra Technologies | www.takma.com.pl | +48 607 819 688</p>
     </div>
   </div>
 

@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: `Produkty Honeywell — drukarki, terminale, skanery | TAKMA`,
     description: 'Pełna oferta Honeywell AutoID: drukarki etykiet od 1 518 zł, terminale mobilne z 5G, skanery Voyager/Xenon/Granit, tablety przemysłowe. Ceny netto z dystrybucji, serwis w Polsce, dostawa 24h.',
     openGraph: {
-      title: `Produkty Honeywell | TAKMA — dystrybutor AutoID`,
+      title: `Produkty Honeywell | TAKMA — autoryzowany partner AutoID`,
       description: 'Drukarki etykiet, terminale mobilne, skanery i tablety Honeywell. Ceny netto z dystrybucji Ingram Micro i BlueStar, dostawa z magazynu w Polsce. TAKMA — 25 lat na rynku AutoID.',
       url: `https://www.takma.com.pl/${m.slug}`,
       type: 'website',

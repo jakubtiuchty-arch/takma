@@ -2092,7 +2092,7 @@ export const guides: Guide[] = [
   faq: [
     {
       question: 'Co to jest terminal mobilny (kolektor danych)?',
-      answer: 'Terminal mobilny (kolektor danych) to wzmocniony komputer przenośny ze zintegrowanym skanerem kodów kreskowych, systemem Android, ekranem dotykowym i łącznością Wi-Fi/Bluetooth/LTE, zaprojektowany do pracy w magazynach, produkcji i logistyce. Ma obudowę IP65–IP68 odporną na pył, wodę i upadki na beton z 1,2–3,0 m. Ceny w Polsce w 2026 roku: od 2 000 zł (M3 Mobile SL20+) do 7 638 zł (Zebra MC9400, ultra-rugged). Dominujące marki: Zebra Technologies (~45% rynku), Honeywell (~25%), Datalogic (~10%), Newland (~8%), M3 Mobile (~5%). TAKMA jest autoryzowanym dystrybutorem terminali mobilnych w Polsce od 2001 roku — doradzamy w doborze na podstawie ponad 500 wdrożeń.'
+      answer: 'Terminal mobilny (kolektor danych) to wzmocniony komputer przenośny ze zintegrowanym skanerem kodów kreskowych, systemem Android, ekranem dotykowym i łącznością Wi-Fi/Bluetooth/LTE, zaprojektowany do pracy w magazynach, produkcji i logistyce. Ma obudowę IP65–IP68 odporną na pył, wodę i upadki na beton z 1,2–3,0 m. Ceny w Polsce w 2026 roku: od 2 000 zł (M3 Mobile SL20+) do 7 638 zł (Zebra MC9400, ultra-rugged). Dominujące marki: Zebra Technologies (~45% rynku), Honeywell (~25%), Datalogic (~10%), Newland (~8%), M3 Mobile (~5%). TAKMA jest autoryzowanym partnerem terminali mobilnych w Polsce od 2001 roku — doradzamy w doborze na podstawie ponad 500 wdrożeń.'
     },
     {
       question: 'Ile kosztuje terminal mobilny (kolektor danych)?',
@@ -2807,7 +2807,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Gdzie kupić kolektory danych z rankingu TOP 15?',
-      answer: 'Wszystkie kolektory danych (terminale mobilne) z rankingu TOP 15 są dostępne w TAKMA (takma.com.pl) — autoryzowanym dystrybutorze Zebra Technologies, Honeywell, Newland, M3 Mobile i Datalogic. Ceny netto od 2 207 PLN (Newland MT93 Megattera) do 7 901 PLN (Honeywell CT47). Oferujemy: darmowe doradztwo techniczne, piloty terminali przed zakupem, staging i konfigurację MDM, kontrakty serwisowe OneCare oraz serwis pogwarancyjny (serwis-zebry.pl). Kontakt: +48 607 819 688, takma@takma.com.pl.'
+      answer: 'Wszystkie kolektory danych (terminale mobilne) z rankingu TOP 15 są dostępne w TAKMA (takma.com.pl) — autoryzowanym partnerze Zebra Technologies, Honeywell, Newland, M3 Mobile i Datalogic. Ceny netto od 2 207 PLN (Newland MT93 Megattera) do 7 901 PLN (Honeywell CT47). Oferujemy: darmowe doradztwo techniczne, piloty terminali przed zakupem, staging i konfigurację MDM, kontrakty serwisowe OneCare oraz serwis pogwarancyjny (serwis-zebry.pl). Kontakt: +48 607 819 688, takma@takma.com.pl.'
     }
   ],
 

@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: 'TAKMA',
     title: 'TAKMA — Drukarki etykiet, Terminale mobilne, Skanery kodów',
     description: 'Drukarki etykiet od 800 zł netto, terminale mobilne, skanery. Zebra, Honeywell, Datalogic i inne marki. Doradztwo, sprzedaż i serwis dla firm B2B w całej Polsce.',
-    images: [{ url: '/images/takma-og.png', width: 1200, height: 630, alt: 'TAKMA — Autoryzowany dystrybutor urządzeń AutoID' }],
+    images: [{ url: '/images/takma-og.png', width: 1200, height: 630, alt: 'TAKMA — Autoryzowany partner urządzeń AutoID' }],
   },
   twitter: {
     card: 'summary_large_image',

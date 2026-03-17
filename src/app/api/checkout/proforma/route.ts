@@ -381,7 +381,7 @@ export async function POST(request: NextRequest) {
     <div class="footer">
       <p>Dokument wygenerowany automatycznie przez system takma.com.pl</p>
       <p>Pro forma nie jest dokumentem księgowym. Faktura VAT zostanie wystawiona po zaksięgowaniu płatności.</p>
-      <p style="margin-top: 8px;">TAKMA — Autoryzowany Dystrybutor Zebra Technologies</p>
+      <p style="margin-top: 8px;">TAKMA — Autoryzowany Partner Zebra Technologies</p>
     </div>
   </div>
 

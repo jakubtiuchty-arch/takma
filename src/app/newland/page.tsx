@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: `Produkty Newland AIDC — skanery kodów i terminale mobilne | TAKMA`,
     description: 'Pełna oferta Newland AIDC: skanery kodów od 181 zł netto (HR11, HR23, HR33, NVH300), terminale mobilne z Androidem (N7, MT93, MT95). Gwarancja 5 lat na skanery, bezpłatny MDM Ndevor. Ceny z dystrybucji Ingram Micro.',
     openGraph: {
-      title: `Produkty Newland AIDC | TAKMA — dystrybutor AutoID`,
+      title: `Produkty Newland AIDC | TAKMA — autoryzowany partner AutoID`,
       description: 'Skanery kodów kreskowych i terminale mobilne Newland AIDC. Ceny netto z dystrybucji Ingram Micro, gwarancja 5 lat na skanery, dostawa z magazynu w Polsce. TAKMA — 25 lat na rynku AutoID.',
       url: `https://www.takma.com.pl/${m.slug}`,
       type: 'website',

@@ -28,7 +28,7 @@ export async function generateMetadata({ searchParams }: CatalogPageProps): Prom
 
   if (manufacturer) {
     const title = manufacturer.seoTitle || 'Produkty ' + manufacturer.name
-    const description = manufacturer.seoDescription || 'Oferta produktów ' + manufacturer.name + ' w TAKMA. Autoryzowany dystrybutor, serwis, doradztwo.'
+    const description = manufacturer.seoDescription || 'Oferta produktów ' + manufacturer.name + ' w TAKMA. Autoryzowany partner, serwis, doradztwo.'
     return {
       title: title,
       description: description,
