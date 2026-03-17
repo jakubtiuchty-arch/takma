@@ -7022,6 +7022,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-17',
   updatedAt: '2026-03-17',
   readTime: '15 min',
+  heroImage: '/images/guides/zebra-zt610-microlabel.png',
 
   sections: [
     {
