@@ -132,7 +132,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
     description: bc.seoDescription,
     url: `https://www.takma.com.pl/${bc.slug}`,
     numberOfItems: allProducts.length,
-    dateModified: '2026-02-26',
+    dateModified: '2026-03-17',
     provider: { '@type': 'Organization', name: 'TAKMA', url: 'https://www.takma.com.pl' },
     brand: { '@type': 'Brand', name: manufacturer.name },
     mainEntity: {
