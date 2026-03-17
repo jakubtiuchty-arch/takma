@@ -4972,10 +4972,10 @@ Brother TD-4T integruje się z systemami WMS (Comarch WMS, SAP WM), ERP (Comarch
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'brother',
     priceFrom: 1495.64,
-    images: ['/images/products/TD-4T_1.png', '/images/products/TD-4T_2.png', '/images/products/TD-4T_3.png', '/images/products/TD-4T_4.png'],
+    images: ['/images/products/TD-4T_2.png', '/images/products/TD-4T_1.png', '/images/products/TD-4T_3.png', '/images/products/TD-4T_4.png'],
     imageDescriptions: [
-      'Brother TD-4T — widok z przodu, drukarka termotransferowa 4 cale z kolorowym wyświetlaczem LCD',
       'Brother TD-4T — widok pod kątem, otwarta pokrywa komory mediów i taśmy termotransferowej',
+      'Brother TD-4T — widok z przodu, drukarka termotransferowa 4 cale z kolorowym wyświetlaczem LCD',
       'Brother TD-4T — widok z boku, szczelina wyjścia etykiety i panel sterowania',
       'Brother TD-4T — widok z tyłu, porty USB, Ethernet, RS-232 i USB Host',
     ],
@@ -5084,9 +5084,9 @@ Brother TD-4T integruje się z systemami WMS (Comarch WMS, SAP WM), ERP (Comarch
       'RFID': 'Opcjonalny moduł kodowania tagów RFID UHF — drukarka jednocześnie drukuje etykietę i zapisuje dane w chipie RFID.\n\nStosowany w logistyce (śledzenie paczek), handlu (inwentaryzacja RFID), farmacji (śledzenie leków) i zarządzaniu środkami trwałymi.',
     },
     compatibleAccessories: [
-      'zebra-labels-zselect2000d-57x32',
-      'zebra-labels-zselect2000d-76x51',
-      'zebra-labels-zselect2000d-102x38',
+      'zebra-labels-zperform1000-57x32',
+      'zebra-labels-zperform1000-70x30',
+      'zebra-labels-zperform1000-102x152',
     ],
     relatedAccessories: [
       'brother-td4t-cutter',
