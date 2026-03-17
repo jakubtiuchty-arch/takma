@@ -4940,6 +4940,21 @@ Brother TD-2020A to najtańsza drukarka etykiet w ofercie TAKMA i jedna z najta�
           },
         },
         {
+          name: 'Zebra ZD411d',
+          slug: 'zebra-zd411d',
+          specs: {
+            'Cena od': '1 238 zł',
+            'Szerokość druku': '56 mm (2")',
+            'Rozdzielczość': '203/300 dpi',
+            'Prędkość': '152 mm/s',
+            'Interfejsy': 'USB + opcja Wi-Fi 6, BT, Ethernet',
+            'Emulacja ZPL': 'Natywna',
+            'LCD': '—',
+            'Akcesoria': 'MCS modułowe (Wi-Fi, BT, Ethernet, bateria)',
+            'Waga': '0,6 kg',
+          },
+        },
+        {
           name: 'Honeywell PC42e-t',
           slug: 'honeywell-pc42e-t',
           specs: {
