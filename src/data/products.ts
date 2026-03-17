@@ -6761,6 +6761,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'Serwis przemysłowych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra z doświadczeniem w naprawach serii ZT. Oferuje naprawę głowic, wymianę wałków dociskowych, czyszczenie toru mediów i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis na miejscu u klienta (on-site) na terenie całej Polski.',
       },
       {
+        question: 'Czym się różni ZT610 Micro Label od standardowego ZT610 600 dpi?',
+        answer: 'ZT610 Micro Label (seria ZT61A46) to wersja ZT610 z dedykowaną opcją do druku mikroetykiet od 3 mm. Oferuje o 50% wyższą precyzję rejestracji, odklejanie od 6 mm (do aplikatorów), obsługę mediów od 12 mm i firmware Link-OS 7.5+. Nie obsługuje obcinaka i RFID. Szczegółowe porównanie znajdziesz w naszym <a href="/poradnik/drukarka-do-mikroetykiet-600-dpi">poradniku o drukarkach do mikroetykiet 600 dpi</a>.',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZT610?',
         answer: 'Alternatywami są: Zebra ZT620 (szersza, 6"), Honeywell PX940, SATO CL6NX Plus.',
       },
