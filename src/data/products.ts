@@ -10089,7 +10089,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Jakie są alternatywy dla Zebra ZQ521?',
-        answer: 'Alternatywami są: Zebra ZQ511 (węższa, 3"), Honeywell RP4f, Brother RJ-4250WB.',
+        answer: 'W klasie mobilnych 4-calowych: [Brother RJ-4230B](/produkt/brother-rj-4230b) (tańsza o ~750 zł, 3 lata gwarancji z głowicą, emulacja ZPL II), [Honeywell RP4f](/produkt/honeywell-rp4f) (hot-swap bateria 4 900 mAh, 2 m drop), [Zebra ZQ630 Plus](/produkt/zebra-zq630-plus) (premium, linerless). W klasie 3-calowej: [Zebra ZQ511](/produkt/zebra-zq511) (MIL-STD-810G).',
       },
     ],
     editorialReview: {
@@ -10840,7 +10840,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Jakie są alternatywy dla Zebra ZQ630 Plus?',
-        answer: 'Alternatywami są: Zebra ZQ620 Plus (węższa), Honeywell RP4f, Brother RJ-4250WB.',
+        answer: 'W klasie mobilnych 4-calowych: [Zebra ZQ521](/produkt/zebra-zq521) (tańsza, MIL-STD-810G, PowerPrecision+), [Brother RJ-4230B](/produkt/brother-rj-4230b) (najtańsza w klasie, 3 lata gwarancji, emulacja ZPL), [Honeywell RP4f](/produkt/honeywell-rp4f) (hot-swap bateria). W klasie 3-calowej: [Zebra ZQ620 Plus](/produkt/zebra-zq620-plus) (węższa, Wi-Fi 6).',
       },
     ],
     editorialReview: {
@@ -12005,7 +12005,7 @@ Natywna obsługa ZPL II (ZSim2), CPCL, DPL i IPL eliminuje koszty migracji z dru
       { question: 'Czy Honeywell RP4f jest odporna na upadki?', answer: 'Tak — RP4f wytrzymuje upadki z 2 m na beton i 1000 upadków obrotowych z 0,5 m. Klasa ochrony IP54 chroni przed pyłem i bryzgami wody. Temperatura pracy od -20°C do +55°C — chłodnie, rampy i pełne słońce.' },
       { question: 'Czy Honeywell RP4f jest kompatybilna z drukarkami Zebra?', answer: 'Tak — RP4f natywnie obsługuje ZPL II (ZSim2), CPCL, DPL i IPL. Migracja z [Zebra ZQ620 Plus](/produkt/zebra-zq620-plus) lub [Zebra ZQ630 Plus](/produkt/zebra-zq630-plus) nie wymaga zmian w oprogramowaniu WMS/ERP. Automatyczne rozpoznawanie formatu danych eliminuje ręczną konfigurację.' },
       { question: 'Jak zarządzać flotą drukarek Honeywell RP4f?', answer: 'Honeywell Printer Edge + SOTI Connect umożliwiają zdalne aktualizacje firmware, monitorowanie stanu baterii i poziomu mediów, diagnostykę usterek i konfigurację szablonów etykiet. PrintSet 5 do tworzenia szablonów. C# Smart Printing do logiki biznesowej na drukarce.' },
-      { question: 'Jakie są alternatywy dla Honeywell RP4f?', answer: 'W klasie mobilnych 4″: [Zebra ZQ620 Plus](/produkt/zebra-zq620-plus) (Wi-Fi 6, bogata oferta akcesoriów), [Zebra ZQ630 Plus](/produkt/zebra-zq630-plus) (premium, najszersza obsługa linerless). W klasie 2″: [Honeywell RP2f](/produkt/honeywell-rp2f), [Zebra ZQ310 Plus](/produkt/zebra-zq310-plus). Starszy model 4″ Honeywell: RP4 (EOL, BT 4.0).' },
+      { question: 'Jakie są alternatywy dla Honeywell RP4f?', answer: 'W klasie mobilnych 4″: [Zebra ZQ521](/produkt/zebra-zq521) (MIL-STD-810G, PowerPrecision+), [Zebra ZQ630 Plus](/produkt/zebra-zq630-plus) (premium, linerless), [Brother RJ-4230B](/produkt/brother-rj-4230b) (najtańsza, 3 lata gwarancji z głowicą, emulacja ZPL). W klasie 2″: [Honeywell RP2f](/produkt/honeywell-rp2f), [Zebra ZQ310 Plus](/produkt/zebra-zq310-plus).' },
     ],
     comparison: {
       title: 'Porównanie drukarek mobilnych Honeywell — LNX3 vs RP2f vs RP4f',
@@ -12240,16 +12240,16 @@ Natywna obsługa ZPL-II, CPCL, ESC/P, ESC/POS i XSim umożliwia migrację z druk
     name: 'Brother RJ-4230B',
     shortDescription: 'Brother RJ-4230B — mobilna drukarka etykiet 4", IP54, Bluetooth, ZPL/CPCL, bateria Li-Ion',
     seoTitle: 'Mobilna drukarka Brother RJ-4230B — 4" IP54 BT | od 2 353 zł',
-    seoDescription: 'Brother RJ-4230B — mobilna drukarka 4″, 203 dpi, 127 mm/s, IP54, BT 4.2, NFC, ZPL+CPCL. Wersja Wi-Fi: RJ-4250WB. PN: RJ4230BZ1, RJ4250WBZ1. Od 2 353 zł netto.',
-    description: `Dla kogo? Brother RJ-4230B to mobilna drukarka etykiet 4-calowa dla firm kurierskich, logistycznych i serwisowych, które potrzebują wytrzymałej drukarki terenowej z szerokim drukiem do 104 mm i emulacją ZPL/CPCL — w atrakcyjnej cenie poniżej 2 400 zł netto.
+    seoDescription: 'Brother RJ-4230B — mobilna drukarka etykiet 4", IP54, BT 4.2, ZPL/CPCL, 203 dpi, 127 mm/s. Wi-Fi: RJ-4250WB. Od 2 353 zł netto. TAKMA.',
+    description: `Dla kogo? Brother RJ-4230B to [mobilna drukarka etykiet](/mobilne-drukarki-etykiet) 4-calowa dla firm kurierskich, logistycznych i serwisowych, które potrzebują wytrzymałej drukarki przenośnej z szerokim drukiem do 104 mm i emulacją ZPL/CPCL — w atrakcyjnej cenie poniżej 2 400 zł netto. Tańsza alternatywa dla [Zebra ZQ521](/produkt/zebra-zq521) z porównywalną specyfikacją.
 
 Brother RJ-4230B drukuje etykiety samoprzylepne, paragony i etykiety ciągłe z prędkością do 127 mm/s (5 ips) w rozdzielczości 203 dpi na nośnikach o szerokości do 118 mm. Szerokość druku 104 mm obejmuje standardowe etykiety wysyłkowe 4×6 cali stosowane przez firmy kurierskie (DPD, InPost, DHL, UPS). Bluetooth 4.2 (MFi) i NFC (Wireless Direct) umożliwiają szybkie parowanie z terminalami mobilnymi, smartfonami Android/iOS i tabletami.
 
-Obudowa z certyfikatem IP54 wytrzymuje upadki z 2,1 m na beton i pracuje w temperaturze od -20°C do +55°C. Opcjonalny egzoszkielet PA-BEK-001CG dodatkowo chroni drukarkę w ekstremalnych warunkach terenowych. Wymienna bateria Li-Ion PA-BT-006 (1 860 mAh, 14,4 V) zapewnia ok. 200 m ciągłego wydruku na jednym ładowaniu.
+Obudowa z certyfikatem IP54 wytrzymuje upadki z 2,1 m na beton (MIL-STD-810G) i pracuje w temperaturze od -20°C do +55°C. Opcjonalny [egzoszkielet PA-BEK-001CG](/produkt/brother-rj-egzoszkielet) dodatkowo chroni drukarkę w ekstremalnych warunkach terenowych. Wymienna [bateria Li-Ion PA-BT-006](/produkt/brother-rj-bateria) (1 860 mAh, 14,4 V) zapewnia ok. 200 m ciągłego wydruku na jednym ładowaniu. Bateria jest sprzedawana osobno — do pracy mobilnej trzeba ją dokupić lub użyć [zasilacza PA-AD-600AEU](/produkt/brother-rj-zasilacz) do pracy stacjonarnej.
 
-Brother RJ-4230B emuluje języki ZPL i CPCL — bezproblemowa migracja z drukarek Zebra bez zmiany oprogramowania. Tryb AirPrint i kompatybilność z systemami WMS/ERP/TMS. Wersja RJ-4250WB dodaje moduł Wi-Fi 802.11 a/b/g/n do druku przez sieć firmową. Obie wersje obsługują druk bez podkładu (linerless) z opcjonalną głowicą.
+Brother RJ-4230B emuluje języki ZPL i CPCL — bezproblemowa migracja z drukarek Zebra bez zmiany oprogramowania. Tryb AirPrint i kompatybilność z systemami WMS/ERP/TMS. Wersja RJ-4250WB dodaje moduł Wi-Fi 802.11 a/b/g/n do druku przez sieć firmową. Obie wersje obsługują druk bez podkładu (linerless) z opcjonalną głowicą. Gwarancja Brother na RJ-4230B wynosi 3 lata po rejestracji na brother.pl.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Brother (źródło: brother.pl, marzec 2026).`,
+Specyfikacja zgodna z oficjalną kartą katalogową [Brother](https://www.brother.pl/drukarki/drukarki-etykiet/mobilne/rj4230b) (źródło: brother.pl, marzec 2026). Pełna oferta [drukarek etykiet Brother](/drukarki-etykiet-brother) w TAKMA. Poradnik [jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet) pomoże dobrać model.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'brother',
@@ -12332,7 +12332,9 @@ Specyfikacja zgodna z oficjalną kartą katalogową Brother (źródło: brother.
       { question: 'Czy Brother RJ-4230B działa z iPhone i iPad?', answer: 'Tak — Brother RJ-4230B ma certyfikat Apple MFi (Made for iPhone/iPad) i łączy się z urządzeniami iOS przez Bluetooth 4.2. Działa również z Androidem (BT + NFC do szybkiego parowania), Windows i Linux. AirPrint pozwala drukować bezpośrednio z iOS bez instalacji sterowników.' },
       { question: 'Czy bateria jest w zestawie z Brother RJ-4230B?', answer: 'Nie — bateria [PA-BT-006](/produkt/brother-rj-bateria) jest sprzedawana osobno. W zestawie z drukarką znajdują się: przewód USB, pasek na ramię, oprogramowanie na CD i dokumentacja. Do pracy potrzebna jest bateria lub zasilacz sieciowy [PA-AD-600AEU](/produkt/brother-rj-zasilacz). Zalecamy zakup co najmniej 2 baterii do pracy zmianowej.' },
       { question: 'Ile kosztuje Brother RJ-4230B?', answer: 'Brother RJ-4230B (RJ4230BZ1, Bluetooth) kosztuje od 2 353 zł netto. Wersja z Wi-Fi — Brother RJ-4250WB (RJ4250WBZ1) — od 2 826 zł netto. Do tego dochodzi bateria [PA-BT-006](/produkt/brother-rj-bateria) ok. 585 zł i opcjonalnie ładowarka [PA-BC-003](/produkt/brother-rj-ladowarka) ok. 467 zł. TCO jest niższy niż [Zebra ZQ521](/produkt/zebra-zq521) dzięki niższej cenie bazowej.' },
-      { question: 'Jakie są alternatywy dla Brother RJ-4230B?', answer: 'W klasie mobilnych drukarek 4-calowych: [Zebra ZQ521](/produkt/zebra-zq521) (premium, IP54, 2 m drop, PowerPrecision+, ale droższa), [Zebra ZQ630 Plus](/produkt/zebra-zq630-plus) (najszersza gama akcesoriów, ale najdroższa), [Honeywell RP4f](/produkt/honeywell-rp4f) (hot-swap bateria, 2 m drop). Brother RJ-4230B oferuje najlepszy stosunek cena/jakość w segmencie 4-calowym z emulacją ZPL.' },
+      { question: 'Jaka gwarancja na Brother RJ-4230B?', answer: 'Brother RJ-4230B ma 3-letnią gwarancję producenta po rejestracji na brother.pl (standardowo 1 rok, rozszerzenie do 3 lat bezpłatne). Gwarancja obejmuje drukarkę i głowicę drukującą. Dla porównania: [Zebra ZQ521](/produkt/zebra-zq521) ma 1 rok gwarancji (rozszerzenie przez OneCare), [Honeywell RP4f](/produkt/honeywell-rp4f) — 1 rok. Brother oferuje najdłuższą gwarancję w klasie [mobilnych drukarek etykiet](/mobilne-drukarki-etykiet).' },
+      { question: 'Brother RJ-4230B vs Zebra ZQ521 — która lepsza?', answer: 'Brother RJ-4230B (od 2 353 zł): tańsza o ~750 zł, 3 lata gwarancji z głowicą, IP54, 2,1 m drop, emulacja ZPL II. [Zebra ZQ521](/produkt/zebra-zq521) (od 3 099 zł): bateria PowerPrecision+ 3 250 mAh (vs 1 860 mAh Brother), 721 g (vs 850 g), Link-OS do zarządzania flotą, lepsza integracja z terminalami Zebra. Brother wygrywa ceną i gwarancją. Zebra wygrywa baterią, wagą i ekosystemem. Dla floty 1–5 drukarek → Brother. Dla floty 10+ z terminalami Zebra → [ZQ521](/produkt/zebra-zq521).' },
+      { question: 'Jakie są alternatywy dla Brother RJ-4230B?', answer: 'W klasie [mobilnych drukarek 4-calowych](/mobilne-drukarki-etykiet): [Zebra ZQ521](/produkt/zebra-zq521) (premium, IP54, 2 m drop, PowerPrecision+, ale droższa), [Zebra ZQ630 Plus](/produkt/zebra-zq630-plus) (najszersza gama akcesoriów, ale najdroższa), [Honeywell RP4f](/produkt/honeywell-rp4f) (hot-swap bateria, 2 m drop). Brother RJ-4230B oferuje najlepszy stosunek cena/jakość w segmencie 4-calowym z emulacją ZPL. Pełna oferta [drukarek Brother](/drukarki-etykiet-brother).' },
     ],
     comparison: {
       title: 'Porównanie mobilnych drukarek 4-calowych — RJ-4230B vs ZQ521 vs RP4f',
