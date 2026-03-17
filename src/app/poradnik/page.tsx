@@ -56,7 +56,7 @@ export default function PoradnikiPage() {
             src="/images/poradniki-hero.png"
             alt="Poradniki TAKMA — drukarki etykiet, terminale mobilne, skanery kodów"
             fill
-            className="object-cover object-right"
+            className="object-contain object-right"
             priority
           />
           <div className="relative z-10">
