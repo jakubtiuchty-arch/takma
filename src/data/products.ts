@@ -4957,8 +4957,8 @@ Brother TD-2020A to najtańsza drukarka etykiet w ofercie TAKMA i jedna z najta�
     slug: 'brother-td-4t',
     name: 'Brother TD-4T',
     shortDescription: 'Brother TD-4T — drukarka etykiet termotransferowa 4 cale, 203/300 dpi, do 152 mm/s, emulacja ZPL II, Ethernet, LCD, Wi-Fi/BT opcja, RFID opcja, BarTender w zestawie',
-    seoTitle: 'Brother TD-4T — drukarka etykiet termotransferowa 4" | od 1 496 zł',
-    seoDescription: 'Brother TD-4T — drukarka etykiet termotransferowa 4", 203/300 dpi, 152 mm/s, ZPL II. 6 wariantów, BarTender gratis, 3 lata gwarancji. Od 1 496 zł netto. TAKMA.',
+    seoTitle: 'Brother TD-4T — drukarka etykiet termotransferowa 4" | 1496 zł',
+    seoDescription: 'Brother TD-4T — drukarka etykiet termotransferowa 4", 203/300 dpi, ZPL II. 6 wariantów, BarTender gratis, 3 lata gwarancji. Od 1 496 zł netto. TAKMA.',
     description: `Dla kogo? Brother TD-4T to profesjonalna biurkowa drukarka etykiet termotransferowa 4 cale — drukarka do etykiet trwałych zaprojektowana dla firm produkcyjnych, magazynów, laboratoriów, firm farmaceutycznych i logistycznych. Drukarka Brother biurkowa TD-4T sprawdza się wszędzie tam, gdzie potrzebne są trwałe etykiety odporne na ścieranie, wilgoć, temperaturę i chemikalia — w tym etykiety GHS na substancje niebezpieczne i etykiety chemiczne. Drukarka termotransferowa Brother TD-4T to następca serii [Brother TD-4D](/produkt/brother-td-4d) (tylko druk termiczny) — TD-4T obsługuje zarówno druk termotransferowy (z taśmą barwiącą), jak i druk termiczny bezpośredni.
 
 Brother TD-4T oferuje 6 modeli w dwóch rozdzielczościach: 203 dpi (TD-4420TN, TD-4650TNWB, TD-4650TNWBR) z prędkością druku do 152,4 mm/s oraz 300 dpi (TD-4520TN, TD-4750TNWB, TD-4750TNWBR) z prędkością do 127 mm/s. Wszystkie modele mają Ethernet LAN 10/100 i USB Host w standardzie. Modele TNWB i TNWBR dodają kolorowy wyświetlacz LCD 2,3", Wi-Fi 802.11a/b/g/n i Bluetooth v4.2, a warianty TNWBR — wbudowany moduł RFID UHF do kodowania tagów RFID. Drukarka obsługuje taśmy termotransferowe (ribbon) woskowe, woskowo-żywiczne i żywiczne o długości do 300 m i szerokości 40–110 mm na rdzeniu 25,4 mm.
