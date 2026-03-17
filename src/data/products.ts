@@ -4957,15 +4957,17 @@ Brother TD-2020A to najtańsza drukarka etykiet w ofercie TAKMA i jedna z najta�
     slug: 'brother-td-4t',
     name: 'Brother TD-4T',
     shortDescription: 'Brother TD-4T — drukarka etykiet termotransferowa 4 cale, 203/300 dpi, do 152 mm/s, emulacja ZPL II, Ethernet, LCD, Wi-Fi/BT opcja, RFID opcja, BarTender w zestawie',
-    seoTitle: 'Brother TD-4T — drukarka termotransferowa 4" | od 1 496 zł',
-    seoDescription: 'Brother TD-4T — drukarka termotransferowa 4", 203/300 dpi, 152 mm/s, ZPL II, Ethernet. Taśmy woskowe i żywiczne. Od 1 496 zł. PN: TD4420TNZ1. TAKMA.',
-    description: `Dla kogo? Brother TD-4T to profesjonalna biurkowa drukarka etykiet termotransferowa 4 cale, zaprojektowana dla firm produkcyjnych, magazynów, laboratoriów, firm farmaceutycznych i logistycznych — wszędzie tam, gdzie potrzebne są trwałe etykiety odporne na ścieranie, wilgoć, temperaturę i chemikalia. Drukarka termotransferowa Brother TD-4T to następca serii [Brother TD-4D](/produkt/brother-td-4d) (tylko druk termiczny) — TD-4T obsługuje zarówno druk termotransferowy (z taśmą barwiącą), jak i druk termiczny bezpośredni.
+    seoTitle: 'Brother TD-4T — drukarka etykiet termotransferowa 4" | od 1 496 zł',
+    seoDescription: 'Brother TD-4T — drukarka etykiet termotransferowa 4", 203/300 dpi, 152 mm/s, ZPL II. 6 wariantów, BarTender gratis, 3 lata gwarancji. Od 1 496 zł netto. TAKMA.',
+    description: `Dla kogo? Brother TD-4T to profesjonalna biurkowa drukarka etykiet termotransferowa 4 cale — drukarka do etykiet trwałych zaprojektowana dla firm produkcyjnych, magazynów, laboratoriów, firm farmaceutycznych i logistycznych. Drukarka Brother biurkowa TD-4T sprawdza się wszędzie tam, gdzie potrzebne są trwałe etykiety odporne na ścieranie, wilgoć, temperaturę i chemikalia — w tym etykiety GHS na substancje niebezpieczne i etykiety chemiczne. Drukarka termotransferowa Brother TD-4T to następca serii [Brother TD-4D](/produkt/brother-td-4d) (tylko druk termiczny) — TD-4T obsługuje zarówno druk termotransferowy (z taśmą barwiącą), jak i druk termiczny bezpośredni.
 
 Brother TD-4T oferuje 6 modeli w dwóch rozdzielczościach: 203 dpi (TD-4420TN, TD-4650TNWB, TD-4650TNWBR) z prędkością druku do 152,4 mm/s oraz 300 dpi (TD-4520TN, TD-4750TNWB, TD-4750TNWBR) z prędkością do 127 mm/s. Wszystkie modele mają Ethernet LAN 10/100 i USB Host w standardzie. Modele TNWB i TNWBR dodają kolorowy wyświetlacz LCD 2,3", Wi-Fi 802.11a/b/g/n i Bluetooth v4.2, a warianty TNWBR — wbudowany moduł RFID UHF do kodowania tagów RFID. Drukarka obsługuje taśmy termotransferowe (ribbon) woskowe, woskowo-żywiczne i żywiczne o długości do 300 m i szerokości 40–110 mm na rdzeniu 25,4 mm.
 
 Brother TD-4T emuluje języki ZPL II, EPL, DPL i CPCL — szablony etykiet z systemów zaprojektowanych dla drukarek Zebra działają bez zmian. W zestawie BarTender UltraLite Edition (wartość ponad 1 000 zł) i Brother Printer Management Tool do zdalnego zarządzania flotą drukarek w sieci. Drukarka obsługuje etykiety o szerokości 20–112 mm na rolkach do 127 mm średnicy. Szukasz odpowiedniej drukarki? Sprawdź nasz [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet) lub porównaj z [drukarkami termotransferowymi Zebra](/termotransferowe-drukarki-etykiet).
 
-Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukującą i wałek dociskowy (po rejestracji na brother.pl) — to najdłuższa gwarancja w klasie biurkowych drukarek etykiet. Wymiary: 204 × 280 × 178 mm, waga 2,5 kg. Specyfikacja zgodna z oficjalną kartą katalogową Brother (źródło: brother.pl, marzec 2026).`,
+Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukującą i wałek dociskowy (po rejestracji na brother.pl) — to najdłuższa gwarancja w klasie biurkowych drukarek etykiet. Porównujesz z Zebrą? Zobacz [Zebra ZD421t](/produkt/zebra-zd421t) (od 1 834 zł) lub nasze szczegółowe [porównanie Brother vs Zebra](#faq) w FAQ poniżej. Wymiary: 204 × 280 × 178 mm, waga 2,5 kg.
+
+Brother TD-4T integruje się z systemami WMS (Comarch WMS, SAP WM), ERP (Comarch ERP, SAP, Subiekt GT) i platformami e-commerce (BaseLinker, Allegro, Amazon) dzięki emulacji ZPL II — istniejące szablony etykiet kurierskich działają bez zmian. Brother Printer Management Tool umożliwia zdalną konfigurację i monitoring floty drukarek TD-4T w sieci Ethernet lub Wi-Fi. Specyfikacja zgodna z oficjalną kartą katalogową Brother (źródło: brother.pl, marzec 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'brother',
@@ -5134,6 +5136,14 @@ Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukują
       {
         question: 'Jakie są alternatywy dla Brother TD-4T?',
         answer: 'Alternatywy w klasie biurkowych drukarek termotransferowych 4 cale: Zebra ZD421t (od 1 834 zł, modułowa MCS, Link-OS), Zebra ZD621t (od 2 800 zł, 300 dpi, LCD 4,3"), Honeywell PC45t (od 2 200 zł, modułowa), TSC TE310 (od 1 500 zł, ekonomiczna). W ramach Brother: TD-4D (od 1 250 zł, tylko druk termiczny — tańsza, gdy nie potrzebujesz ribbona). Brother TD-4T wyróżnia się 3-letnią gwarancją z głowicą, BarTender w zestawie, LCD w standardzie i opcją RFID.',
+      },
+      {
+        question: 'Jaki jest koszt eksploatacji Brother TD-4T — taśma TT vs druk termiczny?',
+        answer: 'Brother TD-4T obsługuje oba tryby: termotransferowy (TT) i termiczny bezpośredni (DT). W trybie TT koszt materiałów na 1 etykietę 100x50 mm to ok. 0,04–0,08 zł (etykieta ~0,02 zł + taśma woskowa ~0,02 zł, żywiczna ~0,06 zł). W trybie DT koszt to ok. 0,03 zł/etykietę (bez taśmy, ale etykieta termiczna droższa). Taśma woskowa 110 mm x 300 m (ok. 80 zł) wystarcza na ~3 000 etykiet 100x50 mm. Taśma żywiczna (ok. 200 zł) — na tyle samo, ale etykiety są odporne na UV, wodę i chemikalia. Przy 1 000 etykiet dziennie miesięczny koszt materiałów TT: 800–1 600 zł zależnie od typu taśmy.',
+      },
+      {
+        question: 'Czy Brother TD-4T nadaje się do etykiet chemicznych GHS i oznaczania substancji niebezpiecznych?',
+        answer: 'Tak. Brother TD-4T z taśmą żywiczną (resin ribbon) i etykietami syntetycznymi PP/PE drukuje etykiety zgodne z GHS (Globally Harmonized System) i CLP (Classification, Labelling and Packaging). Rozdzielczość 300 dpi (modele TD-4520TN/4750TNWB) zapewnia czytelność symboli GHS (piktogramy zagrożeń), drobnego tekstu H/P i kodów 2D nawet na małych etykietach. Etykiety żywiczne wytrzymują kontakt z chemikaliami, rozpuszczalnikami, olejami i wodą. Popularne formaty: 105x148 mm (etykieta GHS pełna), 50x30 mm (mała etykieta na odczynnik). Aplikacja BarTender UltraLite w zestawie obsługuje szablony GHS z biblioteką piktogramów.',
       },
     ],
     comparison: {
