@@ -7503,10 +7503,10 @@ export const guides: Guide[] = [
   slug: 'brother-rj-4230b-vs-zebra-zq521',
   title: 'Brother RJ-4230B vs Zebra ZQ521 — którą drukarkę mobilną 4" wybrać?',
   seoTitle: 'Brother RJ-4230B vs Zebra ZQ521 — porównanie drukarek mobilnych 4" | TAKMA',
-  seoDescription: 'Porównanie Brother RJ-4230B i Zebra ZQ521 — drukarki mobilne 4 cale. Wytrzymałość, łączność WiFi/BT, bateria, RFID, zarządzanie flotą, ceny netto. Brother RJ-4230B od 2 353 zł, Zebra ZQ521 od 2 979 zł. Która lepsza do magazynu, kuriera, serwisu? RJ-4230B Brother, ZQ521 Zebra, drukarka mobilna 4" porównanie. PN: RJ4230BZ1, ZQ52-BUE0010-00, ZQ52-BUE001E-00.',
+  seoDescription: 'Porównanie Brother RJ-4230B i Zebra ZQ521 — drukarki mobilne 4 cale. Wytrzymałość, łączność WiFi/BT, bateria, RFID, zarządzanie flotą, ceny netto. Brother RJ-4230B od 2 353 zł, Zebra ZQ521 od 2 979 zł. Która lepsza do magazynu, kuriera, leśnictwa, pracy terenowej? Drukarka mobilna dla Lasów Państwowych, nadleśnictw, geodezji. RJ-4230B Brother, ZQ521 Zebra, drukarka mobilna 4" porównanie. PN: RJ4230BZ1, ZQ52-BUE0010-00, ZQ52-BUE001E-00.',
   excerpt: 'Brother RJ-4230B to kompaktowa drukarka mobilna 4" z Bluetooth od 2 353 zł. Zebra ZQ521 oferuje WiFi ac, BT 5.2, opcjonalne RFID i egzoszkielet IP65 od 2 979 zł. Porównanie kluczowych kryteriów decyzyjnych: wytrzymałość, łączność, bateria, zarządzanie flotą i koszty eksploatacji.',
   category: 'porownanie',
-  tags: ['drukarki-etykiet', 'mobilne', 'brother', 'zebra', 'rj-4230b', 'zq521', 'porownanie', '4-cale'],
+  tags: ['drukarki-etykiet', 'mobilne', 'brother', 'zebra', 'rj-4230b', 'zq521', 'porownanie', '4-cale', 'lesnictwo', 'praca-terenowa'],
   publishedAt: '2026-03-17',
   updatedAt: '2026-03-17',
   readTime: '12 min',
@@ -7561,7 +7561,8 @@ export const guides: Guide[] = [
 <ul>
   <li>Praca w magazynie, sklepie, biurze serwisowym — obie drukarki wystarczą</li>
   <li>Kurier, logistyka, dostawy w zmiennych warunkach pogodowych — Zebra ZQ521 daje większy zapas bezpieczeństwa</li>
-  <li>Budowy, porty, chłodnie, praca na deszczu — Zebra z egzoszkieletem (IP65, 3 m) jest jedynym rozsądnym wyborem</li>
+  <li>Praca terenowa w leśnictwie (Lasy Państwowe, nadleśnictwa) — oznaczanie drewna, inwentaryzacja drzewostanów, druk etykiet w deszczu i na mrozie — Zebra z egzoszkieletem (IP65) lepiej zniesie warunki leśne</li>
+  <li>Budowy, porty, chłodnie — Zebra z egzoszkieletem (IP65, 3 m upadku) jest jedynym rozsądnym wyborem</li>
 </ul>
 `
     },
@@ -7578,6 +7579,7 @@ export const guides: Guide[] = [
 <p><strong>Wniosek praktyczny:</strong></p>
 <ul>
   <li>Parowanie 1:1 z telefonem lub tabletem, proste zastosowania handlowe — Brother BT 4.2 wystarcza</li>
+  <li>Praca terenowa bez infrastruktury WiFi (leśnictwo, Lasy Państwowe, serwis polowy) — Bluetooth wystarczy, więc Brother RJ-4230B z BT 4.2 sprawdzi się równie dobrze jak Zebra</li>
   <li>Praca w sieci firmowej WiFi, centralne zarządzanie, roaming — <a href="/produkt/zebra-zq521">Zebra ZQ521</a> jest naturalnym wyborem</li>
   <li>Flota Apple (iPhone + iPad) bez infrastruktury WiFi — Brother z AirPrint może być wygodniejszy</li>
 </ul>
@@ -7620,6 +7622,26 @@ export const guides: Guide[] = [
 `
     },
     {
+      id: 'praca-terenowa',
+      heading: 'Która drukarka mobilna sprawdzi się w pracy terenowej — leśnictwo, geodezja, serwis polowy?',
+      content: `
+<p><strong>Praca terenowa to scenariusz, w którym różnice między Brother RJ-4230B a Zebra ZQ521 mają największe znaczenie.</strong> Leśnicy z Lasów Państwowych, geodeci, serwisanci i inspektorzy pracują w warunkach, gdzie nie ma dostępu do WiFi, temperatura spada poniżej zera, a drukarka może upaść na mokre podłoże leśne.</p>
+
+<p>W leśnictwie drukarki mobilne 4" służą do oznaczania drewna (etykiety na kłody i stosy), druku kwitów wywozowych, protokołów szacunkowych i inwentaryzacji drzewostanów. Nadleśnictwa korzystają z parowania Bluetooth z terminalem mobilnym lub smartfonem — infrastruktura WiFi w lesie nie istnieje, więc łączność BT jest wystarczająca. W tym scenariuszu przewaga WiFi Zebry traci na znaczeniu.</p>
+
+<p>Kluczowe kryterium w terenie to wytrzymałość i żywotność baterii. Obie drukarki pracują od -20 C do +55 C, co pokrywa polskie warunki zimowe. Brother RJ-4230B z baterią 1 860 mAh deklaruje do 10 000 etykiet — wystarczy na zmianę w lesie. Zebra ZQ521 z baterią rozszerzoną 6 500 mAh daje dodatkowy zapas na wielodniowe wyjazdy bez dostępu do ładowarki.</p>
+
+<p>Adapter zasilania samochodowego jest dostępny dla obu modeli — leśnicy mogą ładować drukarkę w pojeździe między zrywkami. Brother oferuje dodatkowo battery eliminator (zasilanie stałe bez baterii), co przydaje się w pojazdach wyposażonych na stałe.</p>
+
+<p><strong>Wniosek dla leśnictwa i pracy terenowej:</strong></p>
+<ul>
+  <li>Standardowe użycie (jedna zmiana, BT z telefonem, praca w lecie i jesieni) — <a href="/produkt/brother-rj-4230b">Brother RJ-4230B</a> wystarczy i kosztuje o 26% mniej</li>
+  <li>Intensywna praca zimowa, mokre warunki, ryzyko upadków na nierównym terenie — <a href="/produkt/zebra-zq521">Zebra ZQ521</a> z egzoszkieletem (IP65, 3 m upadku) daje większe bezpieczeństwo</li>
+  <li>Wielodniowe wyjazdy terenowe bez dostępu do prądu — bateria 6 500 mAh Zebry jest konkretną przewagą</li>
+</ul>
+`
+    },
+    {
       id: 'rfid-linerless',
       heading: 'Czy Brother RJ-4230B lub Zebra ZQ521 obsługują RFID i druk bezpodkładowy?',
       content: `
@@ -7649,12 +7671,12 @@ export const guides: Guide[] = [
   <li>Twoje zastosowanie to głównie parowanie Bluetooth z telefonem lub tabletem</li>
   <li>Potrzebujesz prostego wdrożenia bez rozbudowanej infrastruktury sieciowej WiFi</li>
   <li>Cenisz 3-letnią gwarancję z głowicą drukującą w cenie</li>
-  <li>Drukujesz paragony, etykiety cenowe, protokoły serwisowe w stabilnych warunkach</li>
+  <li>Drukujesz paragony, etykiety cenowe, protokoły serwisowe, kwity wywozowe w leśnictwie</li>
 </ul>
 
 <h3>Zebra ZQ521 sprawdzi się, gdy:</h3>
 <ul>
-  <li>Pracujesz w wymagających warunkach terenowych i potrzebujesz ochrony MIL-STD-810G</li>
+  <li>Pracujesz w wymagających warunkach terenowych (leśnictwo zimą, geodezja, budowy) i potrzebujesz ochrony MIL-STD-810G</li>
   <li>Planujesz wdrożenie flotowe z centralnym zarządzaniem przez sieć WiFi</li>
   <li>Potrzebujesz opcji RFID UHF lub druku bezpodkładowego (linerless)</li>
   <li>Dział IT wymaga zaawansowanych narzędzi Zebra DNA do monitoringu i aktualizacji OTA</li>
@@ -7694,6 +7716,10 @@ export const guides: Guide[] = [
     {
       question: 'Która drukarka mobilna 4" jest lepsza do pracy na deszczu i mrozie?',
       answer: 'Obie działają w zakresie od -20 C do +55 C. Przy pracy na deszczu Zebra ZQ521 z egzoszkieletem (IP65) daje lepszą ochronę niż IP54 w Brother — IP65 oznacza pełną ochronę przed strumieniem wody z każdego kierunku. Bez egzoszkieletu obie drukarki mają IP54 (ochrona przed bryzgami).'
+    },
+    {
+      question: 'Która drukarka mobilna jest lepsza dla leśnika — do pracy w Lasach Państwowych?',
+      answer: 'Do oznaczania drewna, druku kwitów wywozowych i inwentaryzacji drzewostanów w nadleśnictwach wystarczy parowanie Bluetooth z telefonem — WiFi w lesie nie ma. <a href="/produkt/brother-rj-4230b">Brother RJ-4230B</a> (od 2 353 zł) sprawdzi się w lecie i jesieni. Na zimowe zrywki i mokre warunki — <a href="/produkt/zebra-zq521">Zebra ZQ521</a> z egzoszkieletem (IP65, -20 C) i baterią 6 500 mAh daje większy zapas bezpieczeństwa i autonomii.'
     }
   ],
 
