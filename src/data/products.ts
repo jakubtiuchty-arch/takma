@@ -40645,7 +40645,7 @@ Honeywell CK67 współpracuje z systemami WMS (SAP WM/EWM, Comarch WMS, Logifact
     availability: 'available',
     isNew: true,
     isBestseller: false,
-    relatedProducts: ['zebra-mc9400', 'zebra-tc78', 'honeywell-ct70'],
+    relatedProducts: ['zebra-mc9400', 'zebra-mc3400'],
     compatibleAccessories: [],
     relatedAccessories: [
       'honeywell-ck67-battery',

@@ -144,10 +144,14 @@ export default async function ProductPage({ params }: ProductPageProps) {
   const relatedSoftware = allRelated.filter((p) => p!.categoryId === 'oprogramowanie')
   const relatedAccessories = allRelated.filter((p) => !p!.subcategoryIds?.includes('karty-pcv') && p!.categoryId !== 'oprogramowanie')
 
-  // Podobne drukarki (relatedProducts)
+  // Podobne produkty (relatedProducts) — dynamiczny tytuł per kategoria
   const relatedProductsList = (product.relatedProducts || [])
     .map((id) => products.find((p) => p.id === id))
     .filter(Boolean)
+  const relatedProductsTitle = product.categoryId === 'drukarki-etykiet' ? 'Podobne drukarki'
+    : product.categoryId === 'terminale-mobilne' ? 'Podobne terminale'
+    : product.categoryId === 'skanery-kodow' ? 'Podobne skanery'
+    : 'Podobne produkty'
 
   const isDevice = ['drukarki-etykiet', 'drukarki-kart', 'drukarki-opasek', 'terminale-mobilne', 'skanery-kodow-kreskowych', 'tablety'].includes(product.categoryId)
 
@@ -619,10 +623,10 @@ export default async function ProductPage({ params }: ProductPageProps) {
               )}
               {relatedProductsList.length > 0 && (
                 <a
-                  href="#podobne-drukarki"
+                  href="#podobne-produkty"
                   className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
-                  Podobne drukarki
+                  {relatedProductsTitle}
                 </a>
               )}
             </nav>
@@ -889,11 +893,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
               />
             )}
 
-            {/* Podobne drukarki */}
+            {/* Podobne produkty */}
             {relatedProductsList.length > 0 && (
               <RelatedProducts
-                id="podobne-drukarki"
-                title="Podobne drukarki"
+                id="podobne-produkty"
+                title={relatedProductsTitle}
                 products={relatedProductsList as typeof products}
                 initialLimit={4}
               />
