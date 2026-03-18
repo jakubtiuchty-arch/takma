@@ -18755,16 +18755,16 @@ Pełna specyfikacja techniczna w karcie katalogowej Honeywell: wymiary, zasięgi
     slug: 'honeywell-granit-ultra-2105i',
     name: 'Honeywell Granit Ultra 2105i',
     sameAs: 'https://automation.honeywell.com/us/en/products/productivity-solutions/barcode-scanners/rugged-handheld/granit-ultra-2105i-scanner',
-    seoTitle: 'Honeywell Granit Ultra 2105i — skaner bezprzewodowy 2D Bluetooth z AI, ultra-rugged | od 2 574 zł',
-    seoDescription: 'Honeywell Granit Ultra 2105i — bezprzewodowy skaner kodów kreskowych 2D z AI decoding (+45%). Bluetooth 4.2, zasięg 100 m, 100 000 skanów/ładowanie. IP65/IP68, upadki 3 m, -20°C do +50°C. Cena od 2 574 zł netto.',
+    seoTitle: 'Honeywell Granit Ultra 2105i — skaner 2D z AI | od 2 574 zł',
+    seoDescription: 'Honeywell Granit Ultra 2105i — bezprzewodowy skaner 2D ultra-rugged z AI (+45% szybciej). IP65/IP68, 3 m upadku, BT 100 m, od 2 574 zł netto | TAKMA',
     shortDescription: 'Honeywell Granit Ultra 2105i — bezprzewodowy skaner 2D Bluetooth z AI decoding, 100 m zasięgu, 100 000 skanów/ładowanie, IP65/IP68, upadki 3 m, od 2 574 zł',
-    description: `Dla kogo? Honeywell Granit Ultra 2105i to bezprzewodowy skaner ultra-rugged nowej generacji z AI — następca serii Granit XP w wersji cordless. Dla magazynów, centrów dystrybucyjnych, hal produkcyjnych, doków przeładunkowych i logistyki outdoor, gdzie skaner musi przetrwać upadki, mróz i intensywną eksploatację 24/7 bez kabla.
+    description: `Dla kogo? Honeywell Granit Ultra 2105i to [bezprzewodowy skaner przemysłowy](/skanery-kodow-kreskowych/bezprzewodowe) ultra-rugged nowej generacji z AI — następca serii Granit XP w wersji cordless. Czytnik kodów kreskowych do magazynów, centrów dystrybucyjnych, hal produkcyjnych, doków przeładunkowych i logistyki outdoor, gdzie skaner musi przetrwać upadki, mróz i intensywną eksploatację 24/7 bez kabla. Gwarancja producenta 36 miesięcy (skaner), 12 miesięcy (bateria).
 
-Pierwszy bezprzewodowy skaner przemysłowy z dekodowaniem AI — o 45% szybsze skanowanie niż Granit XP, nawet na uszkodzonych i zabrudzonych kodach. Bluetooth 4.2 z zasięgiem 100 m i bateria na 100 000 skanów (14 h pracy) eliminują przestoje związane z kablami i ładowaniem w trakcie zmiany.
+Pierwszy bezprzewodowy skaner 2D przemysłowy z dekodowaniem AI — o 45% szybsze skanowanie niż Granit XP, nawet na uszkodzonych i zabrudzonych kodach. Bluetooth 4.2 z zasięgiem 100 m i bateria na 100 000 skanów (14 h pracy) eliminują przestoje związane z kablami i ładowaniem w trakcie zmiany. Obudowa IP65/IP68, upadki z 3 m na beton (MIL-STD-810G), praca od -20°C do +50°C.
 
-Wariant SR do kompletacji i przyjęcia towaru, XR (FlexRange) do skanowania z odległości do 10 m na regałach i dokach. Odczyt 1D/2D, DPM na metalach, OCR, kody z ekranów i Multi-Code (wiele kodów jednym skanem). Baza komunikacyjno-ładująca z mechanizmem zatrzaskowym — montaż na biurku, ścianie lub wózku widłowym.
+Wariant SR do kompletacji i przyjęcia towaru, XR (FlexRange) — [skaner dalekiego zasięgu](/skanery-kodow-kreskowych/bezprzewodowe) do skanowania z odległości do 10 m na regałach i dokach. Odczyt 1D/2D, DPM na metalach, OCR, kody z ekranów i Multi-Code (wiele kodów jednym skanem). Baza komunikacyjno-ładująca z mechanizmem zatrzaskowym — montaż na biurku, ścianie lub [wózku widłowym](/skanery-kodow-kreskowych). Skaner do inwentaryzacji na dużych powierzchniach — Bluetooth 100 m eliminuje powroty do stacji.
 
-Dokumentacja: automation.honeywell.com/granit-ultra-2105i.`,
+Alternatywy: przewodowy [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (od 1 760 zł, -30°C), bezprzewodowy [Zebra DS3678-XR](/produkt/zebra-ds3678-xr) (zasięg 32 m, Industrial Ethernet). Szczegółowe porównanie: [Honeywell Granit Ultra 2105i vs Zebra DS3678-XR](/poradnik/honeywell-granit-ultra-2105i-vs-zebra-ds3678-xr). Dokumentacja: automation.honeywell.com/granit-ultra-2105i.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-bezprzewodowe'],
     manufacturerId: 'honeywell',
@@ -19011,12 +19011,24 @@ Dokumentacja: automation.honeywell.com/granit-ultra-2105i.`,
         answer: 'Cena w TAKMA: sam skaner SR (2105ISR-3-CLE) od 2 574 zł netto, sam skaner XR (2105IXR-3-CLE) od 2 960 zł. Zestaw SR z bazą ładującą i kablem USB (2105ISR-3USB-CLHE) od 3 055 zł. Zestaw XR z bazą i kablem USB (2105IXR-3USB-CLHE) od 3 618 zł. Zestaw XR z bazą i RS-232 (2105IXR-3SER-CLHE) od 3 797 zł. Ceny netto, aktualizowane na bieżąco. Dla porównania: przewodowy [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) od 1 760 zł, bezprzewodowy [Zebra DS3678-SR](/produkt/zebra-ds3678-sr) od 2 111 zł.',
       },
       {
-        question: 'Honeywell Granit Ultra 2105i vs Zebra DS3678-SR — który skaner wybrać?',
-        answer: 'Granit 2105i: AI decoding (+45%), DPM/OCR w standardzie, 100 000 skanów/ładowanie (vs 75 000 DS3678), Bluetooth 4.2, sensor 1280×1080 px (vs 1280×800), Multi-Code. [Zebra DS3678-SR](/produkt/zebra-ds3678-sr): tańsza (od 2 111 zł vs 2 574 zł), temperatura pracy -30°C (vs -20°C), szyfrowanie FIPS 140-2, szersza baza instalacyjna w Polsce. Granit 2105i wygrywa na technologii dekodowania i żywotności baterii, Zebra DS3678 na cenie i pracy w skrajnym mrozie.',
+        question: 'Honeywell Granit Ultra 2105i vs Zebra DS3678 — który skaner przemysłowy wybrać?',
+        answer: 'Granit 2105i: AI decoding (+45%), DPM/OCR w standardzie, 100 000 skanów/ładowanie (vs 75 000 DS3678), sensor 1280×1080 px (vs 1280×800), Multi-Code. [Zebra DS3678-SR](/produkt/zebra-ds3678-sr) (od 2 111 zł): tańsza, -30°C, FIPS 140-2, szersza baza instalacyjna. [Zebra DS3678-XR](/produkt/zebra-ds3678-xr) (od 3 059 zł): zasięg do 32 m (vs 10,85 m Granit XR), Industrial Ethernet, FIPS. Granit 2105i wygrywa na AI i żywotności baterii, Zebra DS3678 na cenie (SR) i zasięgu (XR). Szczegóły: [Granit Ultra 2105i vs DS3678-XR — porównanie](/poradnik/honeywell-granit-ultra-2105i-vs-zebra-ds3678-xr).',
+      },
+      {
+        question: 'Jaka gwarancja na Honeywell Granit Ultra 2105i?',
+        answer: 'Gwarancja fabryczna Honeywell: 36 miesięcy (3 lata) na skaner i bazę komunikacyjno-ładującą, 12 miesięcy (1 rok) na baterię Li-ion. Opcjonalnie dostępny Honeywell Edge Service — przedłużona ochrona z wymianą urządzenia. Rejestracja gwarancji przez portal serwisowy Honeywell Productivity Solutions.',
+      },
+      {
+        question: 'Czy do Granit Ultra 2105i potrzebuję bazę ładującą?',
+        answer: 'Tak — baza CCB23-100BT-07N jest wymagana do komunikacji Bluetooth z komputerem i ładowania baterii. Sam skaner (2105ISR-3-CLE od 2 574 zł, 2105IXR-3-CLE od 2 960 zł) nie zawiera bazy. Zestawy z bazą i kablem USB: 2105ISR-3USB-CLHE (od 3 055 zł), 2105IXR-3USB-CLHE (od 3 618 zł). Zestaw XR z RS-232: 2105IXR-3SER-CLHE (od 3 797 zł). Baza obsługuje interfejsy USB, RS-232 i Keyboard Wedge.',
+      },
+      {
+        question: 'Honeywell Granit Ultra 2105i vs Zebra DS3678-XR — który do magazynu WS?',
+        answer: '[Zebra DS3678-XR](/produkt/zebra-ds3678-xr) ma dłuższy zasięg: 32 m na kodach 100 mil (vs 10,85 m Granit XR), Industrial Ethernet i FIPS 140-2. Granit 2105i oferuje AI decoding (+45% szybciej), DPM/OCR w standardzie, 100 000 skanów (vs 100 000 w DS3678) i Multi-Code. DS3678-XR lepszy do magazynów z regałami powyżej 10 m, Granit 2105i do linii produkcyjnych z kodami DPM. Pełne porównanie: [Granit Ultra 2105i vs Zebra DS3678-XR](/poradnik/honeywell-granit-ultra-2105i-vs-zebra-ds3678-xr).',
       },
       {
         question: 'Jakie są alternatywy dla Honeywell Granit Ultra 2105i?',
-        answer: 'Przewodowy odpowiednik z AI: [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (od 1 760 zł, -30°C, lżejszy). Zebra bezprzewodowy: [DS3678-SR](/produkt/zebra-ds3678-sr) (od 2 111 zł, IP65/IP68, FIPS 140-2, -30°C). Zebra bezprzewodowy XR: [DS3678-XR](/produkt/zebra-ds3678-xr) (od 3 059 zł, zasięg do 21,3 m). Honeywell poprzednia gen.: Granit XP 1991i (cordless, bez AI). Granit 2105i to jedyny bezprzewodowy ultra-rugged z AI decoding i DPM/OCR na rynku.',
+        answer: 'Przewodowy odpowiednik z AI: [Granit Ultra 2100i](/produkt/honeywell-granit-ultra-2100i) (od 1 760 zł, -30°C, lżejszy). Zebra bezprzewodowy: [DS3678-SR](/produkt/zebra-ds3678-sr) (od 2 111 zł, IP65/IP68, FIPS 140-2, -30°C). Zebra bezprzewodowy XR: [DS3678-XR](/produkt/zebra-ds3678-xr) (od 3 059 zł, zasięg do 32 m, Industrial Ethernet). Honeywell poprzednia gen.: Granit XP 1991i (cordless, bez AI). Granit 2105i to jedyny bezprzewodowy skaner przemysłowy ultra-rugged z AI decoding i DPM/OCR na rynku.',
       },
     ],
     downloads: [
