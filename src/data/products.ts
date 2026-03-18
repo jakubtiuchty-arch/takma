@@ -14408,20 +14408,20 @@ Dokumentacja: zebra.com/ds3678.`,
     slug: 'zebra-ds3678-xr',
     name: 'Zebra DS3678-XR',
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/ultra-rugged-scanners/ds3600-series/ds3600-xr.html',
-    seoTitle: 'Zebra DS3678-XR — bezprzewodowy skaner ultra-rugged, zasięg 32 m, Bluetooth 100 m | od 3 237 zł',
-    seoDescription: 'Zebra DS3678-XR (DS3678-XR6F003VZWW, DS3678-XR3U42A2SVW) — bezprzewodowy ultra-wytrzymały skaner 2D dalekiego zasięgu 5 cm–32 m. Bluetooth 4.0, IP65/IP68, upadki 3 m, bateria 80 000 skanów. Cena od 3 237 zł netto.',
+    seoTitle: 'Zebra DS3678-XR — skaner ultra-rugged, zasięg 32 m | od 3 237 zł',
+    seoDescription: 'Zebra DS3678-XR — skaner ultra-rugged 2D, zasięg do 32 m, Bluetooth 100 m, IP65/IP68, Industrial Ethernet. Bateria 80 000 skanów. Od 3 237 zł netto | TAKMA',
     shortDescription: 'Zebra DS3678-XR — bezprzewodowy ultra-rugged skaner 2D dalekiego zasięgu 5 cm–32 m, Bluetooth 100 m, bateria 80 000 skanów',
-    description: `Dla kogo? Zebra DS3678-XR to bezprzewodowa wersja ultra-wytrzymałego skanera dalekiego zasięgu DS3608-XR — z Bluetooth 4.0 LE (100 m), baterią PowerPrecision+ na 80 000+ skanów i podwójnym sensorem skanującym od 5 cm do 32 m. Zaprojektowany do magazynów wysokiego składowania, wózków widłowych, placów kontenerowych i doków przeładunkowych — wszędzie tam, gdzie trzeba czytać kody z dużych odległości bez ograniczeń kablem.
+    description: `Dla kogo? Zebra DS3678-XR to [bezprzewodowy skaner przemysłowy](/skanery-kodow-kreskowych/bezprzewodowe) dalekiego zasięgu — bezprzewodowa wersja [DS3608-XR](/produkt/zebra-ds3608-xr) z Bluetooth 4.0 LE (100 m), baterią PowerPrecision+ na 80 000+ skanów i podwójnym sensorem skanującym od 5 cm do 32 m. Czytnik kodów kreskowych do magazynów wysokiego składowania, wózków widłowych, placów kontenerowych i doków przeładunkowych — wszędzie tam, gdzie trzeba czytać kody z dużych odległości bez ograniczeń kablem. Gwarancja: skaner 36 miesięcy, bateria 12 miesięcy.
 
 Podwójny sensor — Near (1 280 × 800 px, FoV 42°) do kodów z bliska i Far (1 920 × 1 080 px, FoV 14°) do odczytu z odległości do 32 m (Code 39 100 mil). IntelliFocus automatycznie przełącza tryb bliski/daleki — operator nie musi nic konfigurować. Zielony celownik laserowy 520 nm widoczny 7× lepiej niż czerwony — działa zarówno w ciemnym magazynie, jak i w pełnym słońcu.
 
-Bluetooth 4.0 LE Class 1 — zasięg do 100 m w linii prostej. Szyfrowanie FIPS 140-2 (AES). Wi-Fi Friendly Mode eliminuje interferencje BT/Wi-Fi. Virtual Tether — alarm po oddaleniu skanera od stacji.
+Bluetooth 4.0 LE Class 1 — zasięg do 100 m w linii prostej. Szyfrowanie FIPS 140-2 (AES). Wi-Fi Friendly Mode eliminuje interferencje BT/Wi-Fi. Virtual Tether — alarm po oddaleniu skanera od stacji. Jako jedyny skaner ręczny na rynku oferuje natywny Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP) — bezpośrednie podłączenie do PLC bez konwerterów.
 
-Bateria Li-Ion PowerPrecision+ 3100 mAh — do 80 000 skanów (23+ godzin ciągłej pracy). Mniej niż DS3678-SR (100 000 skanów), bo podwójny sensor XR zużywa więcej energii. Bateria wymienialna — zapas BTRY-36IAB0E-00.
+Bateria Li-Ion PowerPrecision+ 3100 mAh — do 80 000 skanów (23+ godzin ciągłej pracy). Mniej niż [DS3678-SR](/produkt/zebra-ds3678-sr) (100 000 skanów), bo podwójny sensor XR zużywa więcej energii. Bateria wymienialna — zapas BTRY-36IAB0E-00.
 
-Multi-Code Data Formatting: jedno naciśnięcie spustu skanuje do 20 kodów jednocześnie. Label Parse+ automatycznie ekstrahuje daty ważności, numery partii i dane GS1 z etykiet logistycznych. IP65 + IP68, upadki z 3 m na beton, 7 500 obrotów w tumbler teście, praca od -20°C do +50°C. Waga 410 g (z baterią). Gwarancja: skaner 36 miesięcy, bateria 12 miesięcy.
+Multi-Code Data Formatting: jedno naciśnięcie spustu skanuje do 20 kodów jednocześnie. Label Parse+ automatycznie ekstrahuje daty ważności, numery partii i dane GS1 z etykiet logistycznych. IP65 + IP68, upadki z 3 m na beton, 7 500 obrotów w tumbler teście, praca od -20°C do +50°C. Waga 410 g (z baterią). Skaner do magazynu wysokiego składowania — odczyt etykiet paletowych z wózka widłowego bez opuszczania towaru.
 
-Koszt posiadania (TCO): skaner Zebra DS3678-XR z gwarancją 3 lata (dostępny OneCare do 5 lat). Konstrukcja IP65+IP68 i odporność na upadki z 3 m minimalizuje koszty napraw w trudnych warunkach magazynowych. Serwis w Polsce: serwis-zebry.pl.
+Koszt posiadania (TCO): skaner Zebra DS3678-XR z gwarancją 3 lata (dostępny OneCare do 5 lat). Konstrukcja IP65+IP68 i odporność na upadki z 3 m minimalizuje koszty napraw w trudnych warunkach magazynowych. Serwis w Polsce: [serwis-zebry.pl](https://www.serwis-zebry.pl). Porównanie z konkurentem: [Honeywell Granit Ultra 2105i vs Zebra DS3678-XR](/poradnik/honeywell-granit-ultra-2105i-vs-zebra-ds3678-xr).
 
 Dokumentacja: zebra.com/ds3678.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -14615,8 +14615,20 @@ Dokumentacja: zebra.com/ds3678.`,
         answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne skanerów DS3678-XR, wymiana okien skanujących, modułów skanujących i kabli z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych.',
       },
       {
+        question: 'Ile kosztuje Zebra DS3678-XR?',
+        answer: 'Cena skanera Zebra DS3678-XR w TAKMA: sam skaner (DS3678-XR6F003VZWW) od 3 237 zł netto. Zestaw USB ze stacją bazową, kablem i zasilaczem (DS3678-XR3U42A2SVW) od 4 541 zł. Zestaw z Industrial Ethernet: EtherNet/IP dla Rockwell (DS3678-XR3RF50AS1W) lub Profinet dla Siemens (DS3678-XR3RF50BS1W) — oba od 4 758 zł. Ceny netto, aktualizowane na bieżąco. Dla porównania: [DS3678-SR](/produkt/zebra-ds3678-sr) od 2 111 zł, przewodowy [DS3608-XR](/produkt/zebra-ds3608-xr) od 2 417 zł.',
+      },
+      {
+        question: 'Jaka gwarancja na Zebra DS3678-XR?',
+        answer: 'Gwarancja fabryczna Zebra: 36 miesięcy (3 lata) na skaner i stację dokującą, 12 miesięcy (1 rok) na baterię Li-Ion. Opcjonalnie dostępny Zebra OneCare — rozszerzony plan serwisowy do 5 lat z opcją ochrony baterii. Serwis gwarancyjny i pogwarancyjny w Polsce: [serwis-zebry.pl](https://www.serwis-zebry.pl).',
+      },
+      {
+        question: 'Zebra DS3678-XR vs Honeywell Granit Ultra 2105i — który wybrać?',
+        answer: 'DS3678-XR: zasięg 32 m (vs 10,85 m), Industrial Ethernet (Profinet, EtherNet/IP), FIPS 140-2, TAA. [Honeywell Granit Ultra 2105i](/produkt/honeywell-granit-ultra-2105i): AI decoding +45%, 100 000 skanów (vs 80 000), tolerancja kontrastu 15% (vs 25%), tańszy (od 2 574 zł vs 3 237 zł). Zebra do magazynów WHS i automatyki z PLC, Honeywell do linii produkcyjnych z uszkodzonymi kodami. Szczegóły: [porównanie Granit 2105i vs DS3678-XR](/poradnik/honeywell-granit-ultra-2105i-vs-zebra-ds3678-xr).',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra DS3678-XR?',
-        answer: 'W klasie bezprzewodowych dalekiego zasięgu: Honeywell Granit XP 1991iXR, Datalogic PowerScan PM9600. Wersja przewodowa: [DS3608-XR](/produkt/zebra-ds3608-xr) (od 2 417 zł) — identyczne skanowanie, lżejszy, od -30°C. Standard Range bezprzewodowy: [DS3678-SR](/produkt/zebra-ds3678-sr) (od 2 111 zł) — do 152 cm, 100 000 skanów.',
+        answer: 'Główny konkurent: [Honeywell Granit Ultra 2105i](/produkt/honeywell-granit-ultra-2105i) (od 2 574 zł, AI decoding, 100 000 skanów). Wersja przewodowa: [DS3608-XR](/produkt/zebra-ds3608-xr) (od 2 417 zł) — identyczne skanowanie, lżejszy, od -30°C. Standard Range bezprzewodowy: [DS3678-SR](/produkt/zebra-ds3678-sr) (od 2 111 zł) — do 152 cm, 100 000 skanów. Honeywell XLR: [Granit XP 1991iXLR](/produkt/honeywell-granit-xp-1991ixlr) (od 2 997 zł, zasięg do 24 m).',
       },
     ],
     downloads: [
