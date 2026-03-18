@@ -8,7 +8,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const m = getManufacturerById(MANUFACTURER_ID)!
   return {
     title: `Produkty TSC — drukarki etykiet półprzemysłowe i przemysłowe | TAKMA`,
-    description: 'Drukarki etykiet TSC: kompaktowe półprzemysłowe ML241P i ML341P z emulacją ZPL/EPL/DPL. Ceny netto od 2 112 zł z dystrybucji BlueStar. TAKMA — autoryzowany partner AutoID, 25 lat na rynku.',
+    description: 'Drukarki etykiet TSC: kompaktowe półprzemysłowe ML241P i ML341P z emulacją ZPL/EPL/DPL. Ceny netto od 2 223 zł z dystrybucji BlueStar. TAKMA — autoryzowany partner AutoID, 25 lat na rynku.',
     openGraph: {
       title: `Produkty TSC | TAKMA — autoryzowany partner AutoID`,
       description: 'Drukarki etykiet TSC z automatyczną emulacją ZPL. Kompaktowa obudowa, rolki 8" OD, ENERGY STAR. Ceny netto z dystrybucji BlueStar, dostawa z magazynu EU.',

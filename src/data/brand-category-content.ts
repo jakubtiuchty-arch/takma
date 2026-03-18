@@ -2486,7 +2486,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
           {
             label: 'TSC ML241P 203 dpi',
             items: [
-              { name: 'Drukarka ML241P', cost: '2 112 zł' },
+              { name: 'Drukarka ML241P', cost: '2 223 zł' },
               { name: 'Etykiety (36 mies.)', cost: '~6 480 zł' },
               { name: 'Taśmy woskowe (36 mies.)', cost: '~1 980 zł' },
               { name: '1× wymiana głowicy', cost: '~486 zł' },
@@ -2540,9 +2540,9 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       { name: 'Dodaj opcje postprint', text: 'Gilotyna (TCUT-ML240-0001) do automatycznego cięcia. Odklejak (98-0800017-00LF) do aplikacji „odklej i przyklej".' },
     ],
     faq: [
-      { question: 'Ile kosztuje drukarka TSC ML241P?', answer: '[TSC ML241P](/produkt/tsc-ml241p) w wersji 203 dpi z Ethernet kosztuje od 2 112 zł netto. Wariant z Bluetooth: od 2 445 zł. Wersja 300 dpi (ML341P): od 2 468 zł. Ceny z dystrybucji BlueStar.' },
+      { question: 'Ile kosztuje drukarka TSC ML241P?', answer: '[TSC ML241P](/produkt/tsc-ml241p) w wersji 203 dpi z Ethernet kosztuje od 2 223 zł netto. Wariant z Bluetooth: od 2 574 zł. Wersja 300 dpi (ML341P): od 2 598 zł. Ceny z dystrybucji BlueStar.' },
       { question: 'Czy TSC ML241P obsługuje język ZPL (Zebra)?', answer: 'Tak — tryb TSPL-EZD automatycznie rozpoznaje komendy ZPL II, EPL i DPL. System WMS/ERP generujący ZPL nie wymaga zmian — wystarczy podłączyć [ML241P](/produkt/tsc-ml241p) zamiast drukarki Zebra. Auto-przełączanie bez interwencji użytkownika.' },
-      { question: 'TSC ML241P czy Zebra ZT231 — co wybrać?', answer: '[ML241P](/produkt/tsc-ml241p): 2 112 zł, kompaktowa 245 mm, emulacja ZPL+EPL+DPL, ENERGY STAR. [ZT231](/produkt/zebra-zt231): 2 551 zł, szybsza (304 mm/s), dotykowy ekran 4,3", opcja RFID, Link-OS. TSC do zastosowań cenowych i rackowych, Zebra do flot z centralnym zarządzaniem.' },
+      { question: 'TSC ML241P czy Zebra ZT231 — co wybrać?', answer: '[ML241P](/produkt/tsc-ml241p): 2 223 zł, kompaktowa 245 mm, emulacja ZPL+EPL+DPL, ENERGY STAR. [ZT231](/produkt/zebra-zt231): 2 551 zł, szybsza (304 mm/s), dotykowy ekran 4,3", opcja RFID, Link-OS. TSC do zastosowań cenowych i rackowych, Zebra do flot z centralnym zarządzaniem.' },
       { question: 'Jaka jest gwarancja na TSC ML241P?', answer: '24 miesiące na drukarkę, 12 miesięcy lub 25 km druku na głowicę, 12 miesięcy lub 50 km na wałek dociskowy. Dla porównania: [Zebra](/drukarki-etykiet-zebra) daje 24 mies. na drukarkę i 6 mies. na głowicę, [Brother](/drukarki-etykiet-brother) — 3-5 lat z głowicą.' },
       { question: 'Czy można zmienić rozdzielczość TSC ML241P z 203 na 300 dpi?', answer: 'Tak — wystarczy wymienić głowicę (PH-ML240-0003 → PH-ML240-0004). Obudowa, mechanizm i elektronika są identyczne między ML241P i ML341P. U Zebra taka zmiana wymaga zakupu nowej drukarki.' },
       { question: 'Czy TSC ML241P obsługuje RFID?', answer: 'Nie — [ML241P](/produkt/tsc-ml241p) nie ma opcji RFID. Jeśli potrzebujesz druku RFID UHF, wybierz [Zebra ZT231](/produkt/zebra-zt231) lub [Zebra ZT411](/produkt/zebra-zt411) z opcjonalnym modułem RFID.' },
