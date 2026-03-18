@@ -44634,7 +44634,7 @@ TSC MB241T ma 100% recyclable obudowę i opakowanie oraz certyfikat ENERGY STAR.
     name: 'TSC MB341T',
     shortDescription: 'TSC MB341T — drukarka przemysłowa 4" 300 dpi z dotykowym LCD 3,5", 305 mm/s, bifold door, emulacja ZPL',
     seoTitle: 'TSC MB341T — drukarka etykiet 4" 300 dpi | od 3 273 zł',
-    seoDescription: 'TSC MB341T — drukarka etykiet przemysłowa 4" 300 dpi, 305 mm/s, dotykowy LCD, emulacja ZPL, bifold door. Drukarka TSC MB341T. MB341T TSC. PN: MB341T-A001-0202.',
+    seoDescription: 'TSC MB341T — przemysłowa drukarka etykiet 4" 300 dpi, 305 mm/s przy 300 dpi (ZT231 zwolni do 203), bifold door, hang-tagi do 0,28 mm, RFID opcja. Od 3 273 zł.',
     description: `TSC MB341T to wersja 300 dpi [drukarki przemysłowej](/przemyslowe-drukarki-etykiet) [TSC MB241T](/produkt/tsc-mb241t). Wyższa rozdzielczość (300 vs 203 dpi) przy zachowaniu pełnej prędkości 305 mm/s — to jedyna drukarka 4" w tej klasie cenowej, która utrzymuje 12 ips przy 300 dpi. Dla porównania [Zebra ZT231](/produkt/zebra-zt231) w trybie 300 dpi zwalnia do 203 mm/s (8 ips).
 
 Dla firm drukujących małe etykiety z drobnym tekstem, kody 2D o wysokiej gęstości (DataMatrix, QR), etykiety farmaceutyczne, laboratoryjne, jubilerskie i metki odzieżowe wymagające ostrego wydruku. TSC MB341T oferuje te same cechy co MB241T: metalowa konstrukcja, składane drzwi bifold (-24% miejsca), dotykowy LCD 3,5", 256 MB RAM/Flash, emulacja ZPL II/EPL/DPL i opcja RFID UHF.
@@ -44741,7 +44741,7 @@ Opcje rozbudowy: gilotyna full cut, odklejak peel-off, nawijak wewnętrzny 5", l
       },
       {
         question: 'TSC MB341T czy Zebra ZT231 300 dpi — którą wybrać?',
-        answer: 'TSC MB341T drukuje w 300 dpi z prędkością 305 mm/s. <a href="/produkt/zebra-zt231">Zebra ZT231</a> w trybie 300 dpi zwalnia do 203 mm/s (8 ips) — o 33% wolniej. MB341T: bifold door, hang-tagi do 0,28 mm, 256 MB Flash, gwarancja 24 mies. ZT231: natywne ZPL, dotykowy LCD 4,3", ekosystem Link-OS. Ceny porównywalne (MB341T od 3 273 zł, ZT231 300 dpi od ~3 100 zł).',
+        answer: 'TSC MB341T drukuje w 300 dpi z prędkością 305 mm/s. <a href="/produkt/zebra-zt231">Zebra ZT231</a> w trybie 300 dpi zwalnia do 203 mm/s (8 ips) — o 33% wolniej. MB341T: bifold door, hang-tagi do 0,28 mm, 256 MB Flash, gwarancja 24 mies. ZT231: natywne ZPL, dotykowy LCD 4,3", ekosystem Link-OS. Ceny: MB341T od 3 273 zł, ZT231 300 dpi od ok. 3 326 zł (termiczna) lub 3 421 zł (termotransfer).',
       },
       {
         question: 'Czy TSC MB341T obsługuje język ZPL (Zebra)?',
@@ -44769,7 +44769,7 @@ Opcje rozbudowy: gilotyna full cut, odklejak peel-off, nawijak wewnętrzny 5", l
       },
       {
         question: 'Jaka jest alternatywa dla TSC MB341T?',
-        answer: 'W klasie 300 dpi: <a href="/produkt/tsc-ml341p">TSC ML341P</a> (kompaktowa, 152 mm/s, od 2 595 zł), <a href="/produkt/zebra-zt231">Zebra ZT231</a> (300 dpi opcja, 203 mm/s przy 300 dpi, od ~3 100 zł), <a href="/produkt/zebra-zt411">Zebra ZT411</a> (203/300/600 dpi, 356 mm/s, od 4 686 zł). Jeśli 203 dpi wystarcza: <a href="/produkt/tsc-mb241t">TSC MB241T</a> (305 mm/s, od 2 779 zł).',
+        answer: 'W klasie 300 dpi: <a href="/produkt/tsc-ml341p">TSC ML341P</a> (kompaktowa, 152 mm/s, od 2 595 zł), <a href="/produkt/zebra-zt231">Zebra ZT231</a> (300 dpi opcja, 203 mm/s przy 300 dpi, od ok. 3 326 zł), <a href="/produkt/zebra-zt411">Zebra ZT411</a> (203/300/600 dpi, 356 mm/s, od 5 078 zł). Jeśli 203 dpi wystarcza: <a href="/produkt/tsc-mb241t">TSC MB241T</a> (305 mm/s, od 2 779 zł).',
       },
     ],
     comparison: {
@@ -44817,11 +44817,11 @@ Opcje rozbudowy: gilotyna full cut, odklejak peel-off, nawijak wewnętrzny 5", l
             'Szerokość druku': '104 mm',
             'Wyświetlacz': 'Dotykowy 4,3" kolor',
             'Max rolka': '8" OD',
-            'Waga': '12,7 kg',
+            'Waga': '12,5 kg',
             'Emulacja ZPL': 'Natywny',
             'Grubość mediów': 'do 0,25 mm',
             'RFID': 'Opcja',
-            'Cena od': '4 686 zł',
+            'Cena od': '5 078 zł',
           },
         },
       ],
