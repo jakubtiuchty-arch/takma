@@ -9333,7 +9333,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-18',
   updatedAt: '2026-03-18',
   readTime: '10 min',
-  heroImage: '/images/guides/jak-dobrac-tasme-termotransferowa.webp',
+  heroImage: '/images/guides/jak-dobrac-tasme-termotransferowa.jpg',
 
   sections: [
     {
