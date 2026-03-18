@@ -8466,7 +8466,15 @@ export const guides: Guide[] = [
 <li><strong>Zakres:</strong> głowice drukujące, normalne zużycie, przypadkowe uszkodzenia, aktualizacje oprogramowania, RMA przez Internet</li>
 <li><strong>Cena:</strong> OneCare Essential 3 lata: 2 327 zł netto, 5 lat: 4 655 zł netto</li>
 </ul>
-<p>Koszt przestoju drukarki przemysłowej na linii produkcyjnej (przy etykietowaniu jako warunek wysyłki) wynosi od 500 do 2 000 zł/godzinę w zależności od branży. OneCare z naprawą w centrum serwisowym w 3 dni robocze minimalizuje czas niedostępności. Na 3 lata użytkowania koszt OneCare Essential wynosi ok. <strong>2,13 zł dziennie</strong> — wielokrotnie mniej niż jeden dzień przestoju.</p>
+<p><strong>Zebra OneCare Select dla ZT610:</strong></p>
+<ul>
+<li><strong>Czas naprawy:</strong> wymiana urządzenia do następnego dnia roboczego (ekspresowa wysyłka)</li>
+<li><strong>Support techniczny:</strong> 24x7 (telefon + online)</li>
+<li><strong>Zakres:</strong> jak Essential + priorytetowa wymiana urządzenia, opcja Standard Commissioning</li>
+<li><strong>Cena:</strong> do uzgodnienia z doradcą TAKMA</li>
+</ul>
+<p>OneCare Select to plan dla krytycznych linii produkcyjnych w healthcare i automotive, gdzie przestój drukarki zatrzymuje wysyłki. Wymiana urządzenia do następnego dnia roboczego skraca maksymalny czas niedostępności z 3 dni (Essential) do ok. 24 godzin — przy koszcie przestoju 500–2 000 zł/godzinę różnica 2 dni to potencjalnie <strong>24 000–96 000 zł oszczędności</strong> przy jednym incydencie.</p>
+<p>Na 3 lata użytkowania koszt OneCare Essential wynosi ok. <strong>2,13 zł dziennie</strong> — wielokrotnie mniej niż jeden dzień przestoju.</p>
 <p>Szczegóły konfiguracji i ceny planów OneCare: <a href="/produkt/zebra-zt610">karta produktu Zebra ZT610</a>. Cenę <a href="/produkt/zebra-zt510">Zebra ZT510</a> sprawdzisz w karcie produktu.</p>`
     },
     {
@@ -8520,7 +8528,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Jak wygląda serwis Zebra OneCare dla ZT610?',
-      answer: 'ZT610 objęta jest planami Zebra OneCare Essential (wsparcie 8x5, naprawa w centrum serwisowym w 3 dni robocze, bezpłatny zwrot). Plan obejmuje głowice drukujące, normalne zużycie i przypadkowe uszkodzenia. OneCare Essential 3 lata: 2 327 zł netto, 5 lat: 4 655 zł netto. Szczegóły w <a href="/produkt/zebra-zt610">karcie produktu ZT610</a>.',
+      answer: 'ZT610 objęta jest planami Zebra OneCare Essential (8x5, naprawa w 3 dni robocze) i Select (24x7, wymiana urządzenia do następnego dnia roboczego). Oba plany obejmują głowice drukujące, normalne zużycie i przypadkowe uszkodzenia. OneCare Essential 3 lata: 2 327 zł netto, 5 lat: 4 655 zł netto. Select — cena do uzgodnienia. Szczegóły w <a href="/produkt/zebra-zt610">karcie produktu ZT610</a>.',
     },
     {
       question: 'Czy ZT510 i ZT610 są kompatybilne z ZPL?',
