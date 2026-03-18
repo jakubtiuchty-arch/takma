@@ -7993,7 +7993,7 @@ export const guides: Guide[] = [
       heading: 'Zebra EM45 — enterprise mobile computer: TL;DR',
       content: `<p><strong><a href="/produkt/zebra-em45">Zebra EM45</a></strong> (od 2 951 zł netto) to enterprise mobile computer z 5G, Wi-Fi 6E, baterią 4 750 mAh na 25 godzin pracy i odpornością IP68 + IP65 + MIL-STD-810H. W porównaniu do Samsunga Galaxy A56 i Motoroli ThinkPhone, EM45 oferuje stację dokującą CRD-EM4X-1SNWS-01 (HDMI, Ethernet, 4x USB), dedykowany serwis Zebra OneCare z wymianą overnight i LifeGuard for Android — wieloletnią ochronę bezpieczeństwa.</p>
 
-<p>Samsung A56, Motorola ThinkPhone i Zebra EM45 — trzy klasy urządzeń. A56 to konsumencki smartfon bez MIL-STD i bez stacji dokującej. ThinkPhone to interesujący kompromis enterprise od Lenovo, ale z ograniczoną stacją Ready For Dock (brak Ethernet, brak USB). EM45 to dedykowane narzędzie pracy: 50 MP kamera z dekoderem kodów kreskowych, GPS dual-band L1+L5, NPU do AI i <a href="/poradnik/jak-wybrac-terminal-mobilny">wsparcie LifeGuard do 10 lat</a>.</p>`
+<p>Samsung A56, Motorola ThinkPhone i Zebra EM45 — trzy klasy urządzeń. A56 to konsumencki smartfon bez MIL-STD i bez stacji dokującej. ThinkPhone to interesujący kompromis enterprise od Lenovo, ale z ograniczoną stacją Ready For Dock (brak Ethernet, brak USB). EM45 to dedykowane narzędzie pracy: 50 MP kamera z dekoderem kodów kreskowych, GPS dual-band L1+L5, NPU do AI i <a href="/poradnik/jak-wybrac-terminal-mobilny">wieloletnie wsparcie LifeGuard for Android</a>.</p>`
     },
     {
       id: 'czym-jest-zebra-em45',
@@ -8020,8 +8020,8 @@ export const guides: Guide[] = [
 <tr><td>MIL-STD</td><td><strong>810H</strong></td><td>Brak</td><td>810H</td></tr>
 <tr><td>Upadek (z etui)</td><td><strong>1,5 m na beton</strong></td><td>Brak testu</td><td>1,25 m (aramid + Victus)</td></tr>
 <tr><td>Tumble test</td><td><strong>600 x 0,5 m</strong></td><td>Brak</td><td>Brak danych</td></tr>
-<tr><td>Temp. pracy</td><td><strong>0 do +50 C</strong></td><td>0 do +35 C</td><td>0 do +40 C</td></tr>
-<tr><td>Szok termiczny</td><td><strong>-40 do +70 C</strong></td><td>Brak danych</td><td>Brak danych</td></tr>
+<tr><td>Temp. pracy</td><td><strong>0°C do +50°C</strong></td><td>0°C do +35°C</td><td>0°C do +40°C</td></tr>
+<tr><td>Szok termiczny</td><td><strong>-40°C do +70°C</strong></td><td>Brak danych</td><td>Brak danych</td></tr>
 </tbody>
 </table>
 
@@ -8051,7 +8051,7 @@ export const guides: Guide[] = [
     {
       id: 'kamera-50mp-skanowanie',
       heading: 'Kamera 50 MP i skanowanie kodów kreskowych — czy to naprawdę narzędzie pracy?',
-      content: `<p>Aparat tylny <a href="/produkt/zebra-em45">Zebra EM45</a>: <strong>50 MP, autofokus, OIS (optyczna stabilizacja obrazu), f/1,9, wideo UHD 4K przy 30 fps</strong>. Aparat przedni: 8 MP, f/2,0, 1080p — wideorozmowy i weryfikacja tożsamości. To najlepszy aparat w historii urządzeń Zebra.</p>
+      content: `<p>Aparat tylny <a href="/produkt/zebra-em45">Zebra EM45</a>: <strong>50 MP, autofokus, OIS (optyczna stabilizacja obrazu), f/1,9, wideo UHD 4K przy 30 fps</strong>. Aparat przedni: 8 MP, f/2,0, 1080p — wideorozmowy i weryfikacja tożsamości. Zebra określa to jako najwyższą specyfikację aparatu w historii swoich urządzeń handheld.</p>
 
 <p><strong>Skanowanie kodów kreskowych</strong> odbywa się przez aparat 50 MP z biblioteką Zebra Advanced Decoder Library (DataWedge). EM45 nie ma dedykowanego imager'a (jak SE4770 w <a href="/produkt/zebra-tc22">TC22</a> czy <a href="/produkt/zebra-tc27">TC27</a>) — skanuje kamerowo, ale z profesjonalnymi algorytmami dekodowania wszystkich popularnych symbologii 1D/2D niezależnie od stanu i orientacji kodu. Lewy przycisk boczny jest domyślnie mapowany jako przycisk skanowania.</p>
 
@@ -8122,7 +8122,7 @@ export const guides: Guide[] = [
     },
     {
       id: 'stacja-dokujaca',
-      heading: 'Stacje dokujące: Zebra CRD-EM4X vs Motorola Ready For Dock — telefon staje się komputerem biurowym',
+      heading: 'Stacja dokująca EM45 vs Motorola Ready For Dock — który dock wybrać dla firmy?',
       content: `<p>Stacja dokująca <strong>CRD-EM4X-1SNWS-01</strong> (Workstation Connect Cradle) zamienia <a href="/produkt/zebra-em45">Zebra EM45</a> w pełnoprawną stację roboczą: HDMI, Ethernet, 4 porty USB-A i jack 3,5 mm. Motorola ThinkPhone oferuje Ready For Dock — ale tylko z wyjściem HDMI, bez Ethernet i USB. Samsung Galaxy A56 <strong>nie obsługuje żadnego trybu stacji dokującej</strong> — A56 nie wspiera Samsung DeX.</p>
 
 <h3>Porównanie stacji dokujących</h3>
@@ -8156,7 +8156,7 @@ export const guides: Guide[] = [
 
 <h3>Wymagania pracy terenowej w Lasach Państwowych</h3>
 <ul>
-<li><strong>Warunki atmosferyczne</strong>: EM45 pracuje w temperaturach 0 do +50 C, przechowywanie -40 do +70 C. IP68+IP65 = deszcz, błoto, żywica, chemikalia ochrony lasu</li>
+<li><strong>Warunki atmosferyczne</strong>: EM45 pracuje w temperaturach 0°C do +50°C, przechowywanie -40°C do +70°C. IP68+IP65 = deszcz, błoto, żywica, chemikalia ochrony lasu</li>
 <li><strong>Precyzja GPS</strong>: Dual-Band GNSS (GPS, GLONASS, Galileo, BeiDou, QZSS) z pasmami L1+L5 — precyzja sub-metrowa nawet pod koronami drzew (mniejszy multipath error niż GPS L1)</li>
 <li><strong>Dokumentacja fotograficzna</strong>: 50 MP kamera z OIS — szkodniki, choroby drzew, ślady bytowania zwierząt, dokumentacja taksacyjna</li>
 <li><strong>Komunikacja w terenie</strong>: 5G/LTE + PTT przez Zebra WorkCloud Sync — radiotelefonika push-to-talk przez internet, bez dedykowanych urządzeń radiowych</li>
@@ -8168,14 +8168,14 @@ export const guides: Guide[] = [
 <ul>
 <li><strong>Trwałość</strong>: Samsung A56 z IP67 nie wystarczy przy kontakcie z żywicą, błotem i chemikaliami ochrony lasu. ThinkPhone ma IP68 i MIL-STD-810H, ale brak IP65 (ochrona przed strumieniem wody ciśnieniowej). EM45 z IP68+IP65 i MIL-STD-810H wytrzyma wieloletnią eksploatację w każdych warunkach</li>
 <li><strong>GPS dual-band</strong>: Samsung A56 — standardowy GPS L1. ThinkPhone — Dual-Band, ale bez certyfikacji enterprise. EM45 — Dual-Band L1+L5 z certyfikacją Zebra, dokładniejszy w terenie zalesionym (mniejszy multipath error pod okapem drzew)</li>
-<li><strong>Bateria</strong>: leśniczy w terenie nie ma dostępu do ładowania. EM45 z 25 godzinami pracy to bufor na długi dzień bez powrotu do nadleśnictwa. ThinkPhone (5000 mAh) wytrzyma ~12-14 h — połowę tego co EM45</li>
+<li><strong>Bateria</strong>: leśniczy w terenie nie ma dostępu do ładowania. EM45 z 25 godzinami pracy to bufor na długi dzień bez powrotu do nadleśnictwa. ThinkPhone (5000 mAh, 68W TurboPower) wytrzyma typowo 1-1,5 zmiany</li>
 <li><strong>Centralny MDM</strong>: IT Lasów Państwowych może centralnie zarządzać tysiącami urządzeń przez Zebra DNA Cloud / StageNow — push konfiguracji, aktualizacje aplikacji, lokalizacja zagubionych urządzeń (Device Tracker). ThinkPhone oferuje Lenovo ThinkShield, ale bez poziomu integracji i narzędzi fleetowych Zebra DNA</li>
 </ul>
 
 <h3>Integracja z systemami LP</h3>
 <p>EM45 jako urządzenie AER-certified integruje się z każdym rozwiązaniem MDM/EMM klasy enterprise. Tryb COPE umożliwia pracownikowi LP korzystanie z EM45 prywatnie (profil osobisty) bez ryzyka wycieku danych służbowych (profil firmowy oddzielony systemowo).</p>
 
-<p><strong>Werdykt:</strong> Dla Lasów Państwowych i podobnych organizacji z dużą flotą terenową — <a href="/produkt/zebra-em45">EM45</a> to inwestycja w 5-letni cykl życia urządzenia z LifeGuard do 10 lat wsparcia. ThinkPhone z 3 latami wsparcia OS i Samsung A56 z 6 latami to krótszy cykl i częstsza wymiana floty.</p>`
+<p><strong>Werdykt:</strong> Dla Lasów Państwowych i podobnych organizacji z dużą flotą terenową — <a href="/produkt/zebra-em45">EM45</a> to inwestycja w 5-letni cykl życia urządzenia z wieloletnim wsparciem LifeGuard for Android. ThinkPhone z 3 latami wsparcia OS i Samsung A56 z 6 latami to krótszy cykl i częstsza wymiana floty.</p>`
     },
     {
       id: 'zebra-onecare',
@@ -8201,7 +8201,7 @@ export const guides: Guide[] = [
 <li><strong>Naprawa ekranu</strong> EM45 bez kontraktu = koszt porównywalny z rocznym OneCare Essential</li>
 <li><strong>Select: zero downtime</strong> — wymiana overnight z pre-zainstalowanymi aplikacjami, pracownik następnego dnia wraca do pracy bez konfigurowania</li>
 <li><strong>Nielimitowana wymiana baterii</strong>: po 2 latach bateria traci pojemność — w OneCare nie płacisz za wymianę</li>
-<li><strong>LifeGuard for Android</strong>: wieloletnie aktualizacje bezpieczeństwa (do 10 lat). Samsung A56 oferuje 6 lat OS, ThinkPhone 3 lata (ThinkShield) — ale żaden nie ma dedykowanego serwisu floty z wymianą overnight i pokryciem uszkodzeń</li>
+<li><strong>LifeGuard for Android</strong>: wieloletnie aktualizacje bezpieczeństwa. Samsung A56 oferuje 6 lat OS, ThinkPhone 3 lata (ThinkShield) — ale żaden nie ma dedykowanego serwisu floty z wymianą overnight i pokryciem uszkodzeń</li>
 </ul>
 
 <p><strong>Werdykt:</strong> Dla floty 10+ urządzeń — OneCare Essential się zwraca już w pierwszym roku. Dla floty 50+ urządzeń — OneCare Select to standard, nie luksus. Skontaktuj się z <a href="/kontakt">TAKMA</a> po indywidualną wycenę dla floty.</p>`
@@ -8238,7 +8238,7 @@ export const guides: Guide[] = [
   faq: [
     {
       question: 'Czym jest Zebra EM45 Enterprise Mobile?',
-      answer: 'Zebra EM45 to enterprise mobile computer z systemem Android 14, certyfikatem Android Enterprise Recommended, odpornością IP68+IP65 i MIL-STD-810H, przeznaczony dla pracowników terenowych w handlu, logistyce, leśnictwie i healthcare. Łączy wygląd smartfona (6,7 cala, 10,7 mm, 243 g) z funkcjami terminala mobilnego. Więcej na karcie produktu <a href="/produkt/zebra-em45">Zebra EM45</a>.',
+      answer: 'Zebra EM45 to enterprise mobile computer z systemem Android (Android Enterprise Recommended), certyfikatem AER, odpornością IP68+IP65 i MIL-STD-810H, przeznaczony dla pracowników terenowych w handlu, logistyce, leśnictwie i healthcare. Łączy wygląd smartfona (6,7 cala, 10,7 mm, 243 g) z funkcjami terminala mobilnego. Więcej na karcie produktu <a href="/produkt/zebra-em45">Zebra EM45</a>.',
     },
     {
       question: 'Czy Zebra EM45 jest wodoodporny?',
@@ -8266,7 +8266,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Czy Zebra EM45 nadaje się do pracy w Lasach Państwowych?',
-      answer: 'Tak. EM45 spełnia wymagania pracy leśnej: IP68+IP65 (deszcz, błoto, żywica), zakres temperatury pracy 0 do +50 C (przechowywanie -40 do +70 C), GPS Dual-Band L1+L5 z 5 systemami satelitarnymi (precyzja sub-metrowa pod koronami drzew), bateria 25 h, kamera 50 MP do dokumentacji i PTT przez WorkCloud Sync zamiast radiotelefonu.',
+      answer: 'Tak. EM45 spełnia wymagania pracy leśnej: IP68+IP65 (deszcz, błoto, żywica), zakres temperatury pracy 0°C do +50°C (przechowywanie -40°C do +70°C), GPS Dual-Band L1+L5 z 5 systemami satelitarnymi (precyzja sub-metrowa pod koronami drzew), bateria 25 h, kamera 50 MP do dokumentacji i PTT przez WorkCloud Sync zamiast radiotelefonu.',
     },
     {
       question: 'Czym różni się Zebra EM45 od Samsunga Galaxy A56?',
@@ -8274,7 +8274,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Co to jest LifeGuard for Android w EM45?',
-      answer: 'LifeGuard for Android to program wieloletnich aktualizacji bezpieczeństwa Android od Zebra — do 10 lat wsparcia OTA. Wymaga aktywnego kontraktu Zebra OneCare. Dzięki niemu urządzenia EM45 są zabezpieczane znacznie dłużej niż smartfony konsumenckie (Samsung S25: 7 lat, Galaxy A56: 6 lat).',
+      answer: 'LifeGuard for Android to program wieloletnich aktualizacji bezpieczeństwa Android od Zebra — wieloletnie wsparcie OTA (szczegóły: zebra.com/android-versions). Wymaga aktywnego kontraktu Zebra OneCare. Dzięki niemu urządzenia EM45 są zabezpieczane znacznie dłużej niż smartfony konsumenckie (Galaxy A56: 6 lat, ThinkPhone: 3 lata OS).',
     },
     {
       question: 'Czy EM45 obsługuje zarządzanie flotą (MDM/EMM)?',
