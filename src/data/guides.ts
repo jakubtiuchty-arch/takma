@@ -8850,7 +8850,7 @@ export const guides: Guide[] = [
 
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
 <a href="/produkt/zebra-zt231" class="group block border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
-<div class="bg-gray-50 p-6 flex items-center justify-center h-48">
+<div class="bg-white p-6 flex items-center justify-center h-48">
 <img src="/images/products/zt231_1_s.png" alt="Drukarka przemysłowa Zebra ZT231 — widok z przodu, kolorowy ekran dotykowy 4,3 cale" class="max-h-full object-contain" />
 </div>
 <div class="p-5">
@@ -8862,7 +8862,7 @@ export const guides: Guide[] = [
 </div>
 </a>
 <a href="/produkt/zebra-zt111" class="group block border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
-<div class="bg-gray-50 p-6 flex items-center justify-center h-48">
+<div class="bg-white p-6 flex items-center justify-center h-48">
 <img src="/images/products/zt111_1_s.png" alt="Drukarka przemysłowa Zebra ZT111 — widok z przodu, panel LED i 3 przyciski" class="max-h-full object-contain" />
 </div>
 <div class="p-5">
