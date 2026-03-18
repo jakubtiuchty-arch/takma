@@ -2461,4 +2461,91 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       { question: 'Jaka mobilna drukarka Brother do pracy w terenie?', answer: '[Brother RJ-4230B](/produkt/brother-rj-4230b) (od 2 353 zł) — mobilna drukarka etykiet 4" z IP54, Bluetooth 4.2, NFC i odpornością na upadki z 2,1 m (MIL-STD-810G). Drukuje etykiety kurierskie 100x100 mm w terenie — przy samochodzie dostawczym, na rampie czy w magazynie polowym. Wersja [RJ-4250WB](/produkt/brother-rj-4230b) dodaje Wi-Fi. Emulacja ZPL II i CPCL zapewnia kompatybilność z systemami logistycznymi. Sprawdź [mobilne drukarki etykiet](/mobilne-drukarki-etykiet) w ofercie TAKMA.' },
     ],
   },
+
+  'drukarki-etykiet-tsc': {
+    definition: {
+      heading: 'Drukarki etykiet TSC — kompaktowe półprzemysłowe z emulacją ZPL',
+      content: 'TSC Auto ID Technology to tajwański producent drukarek etykiet, piąty na świecie pod względem wolumenu sprzedaży (ponad 5 milionów drukarek globalnie). Firma założona w 1991 roku specjalizuje się w drukarkach biurkowych, półprzemysłowych i przemysłowych w przystępnych cenach. W 2016 TSC przejął Printronix Auto ID, w 2024 — Bluebird (terminale mobilne).\n\nDrukarki TSC wyróżniają się automatyczną emulacją ZPL II, EPL i DPL (tryb TSPL-EZD), co pozwala zastąpić drukarkę Zebra bez zmian w oprogramowaniu. Seria ML to kompaktowe drukarki compact industrial o niskim profilu (245 mm) — idealne do montażu w szafach rack 19".\n\nW ofercie TAKMA: [TSC ML241P](/produkt/tsc-ml241p) (203 dpi, od 2 223 zł) i ML341P (300 dpi, od 2 598 zł). Porównanie z konkurencją: [Zebra ZT231](/produkt/zebra-zt231) (od 2 551 zł), [Zebra ZT111](/produkt/zebra-zt111) (od 2 081 zł).',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać drukarkę TSC? 5 kryteriów wyboru',
+      items: [
+        'Emulacja ZPL — tryb TSPL-EZD automatycznie rozpoznaje komendy ZPL II, EPL i DPL. Migracja z [Zebra](/drukarki-etykiet-zebra) lub Datamax bez zmian w systemie WMS/ERP — wystarczy podłączyć drukarkę TSC.',
+        'Kompaktowa budowa — [ML241P](/produkt/tsc-ml241p) ma 245 mm wysokości, jedną z najniższych w klasie industrial. Idealna do szaf rack 19" i stanowisk z ograniczoną przestrzenią.',
+        'Rolki do 8" OD — średnica zewnętrzna 203 mm na rdzeniu 1" lub 3". Rzadsza wymiana materiału i dłuższy czas pracy bez przestoju niż np. [Zebra ZT111](/produkt/zebra-zt111) (5" OD).',
+        'Beznarządziowa konserwacja — wymiana głowicy i wałka dociskowego bez narzędzi. Głowice 203/300 dpi wymienne między ML241P i ML341P — zmiana rozdzielczości bez kupowania nowej drukarki.',
+        'Opcje rozszerzeń — Wi-Fi 802.11ac + Bluetooth 5.0 (moduł slot-in), gilotyna automatyczna, odklejak pasywny. Instalacja modułu Wi-Fi/BT bez narzędzi.',
+      ],
+    },
+    expertAuthority: 'TAKMA jako autoryzowany partner AutoID oferuje drukarki TSC z dystrybucji BlueStar z marżą 15% — bez pośredników. Doradztwo techniczne: dobór modelu, konfiguracja emulacji ZPL, testy kompatybilności z istniejącymi systemami. Serwis i wsparcie w języku polskim.',
+    technicalDeepDive: 'TSC ML241P to drukarka klasy compact industrial z odlewanym ciśnieniowo mechanizmem drukującym i metalową pokrywą z przezroczystym oknem na media. Procesor 32-bit RISC, 128 MB RAM + 128 MB Flash, microSD do 32 GB. Kolorowy LCD 2,3" z 6 przyciskami nawigacyjnymi.\n\nTemperatura pracy 0–40°C, wilgotność 25–85%. Zasilanie wewnętrzne 100–240 V AC, 60 W. Czujniki: gap (przerwy), black mark (czarna kreska), ribbon, otwarcie głowicy — pozycja regulowana.\n\nTSC Sense Care monitoruje stan głowicy drukującej (przebieg w metrach, stopień zużycia) i liczy cięcia gilotyny — prewencyjna konserwacja zanim dojdzie do przestoju na linii produkcyjnej. Zdalne zarządzanie przez TSC Console, SOTI Connect lub wbudowaną stronę WWW (Internal Embedded Webpage).',
+    tcoComparisons: [
+      {
+        title: 'TCO 3 lata — TSC ML241P vs Zebra ZT231 (1 000 etykiet/dzień)',
+        variants: [
+          {
+            label: 'TSC ML241P 203 dpi',
+            items: [
+              { name: 'Drukarka ML241P', cost: '2 223 zł' },
+              { name: 'Etykiety (36 mies.)', cost: '~6 480 zł' },
+              { name: 'Taśmy woskowe (36 mies.)', cost: '~1 980 zł' },
+              { name: '1× wymiana głowicy', cost: '~486 zł' },
+            ],
+            total: '~11 169 zł',
+          },
+          {
+            label: 'Zebra ZT231 203 dpi',
+            items: [
+              { name: 'Drukarka ZT231', cost: '2 551 zł' },
+              { name: 'Etykiety (36 mies.)', cost: '~6 480 zł' },
+              { name: 'Taśmy woskowe (36 mies.)', cost: '~1 980 zł' },
+              { name: '1× wymiana głowicy', cost: '~1 100 zł' },
+            ],
+            total: '~12 111 zł',
+          },
+        ],
+      },
+    ],
+    useCases: [
+      { title: 'Magazyn i logistyka', description: 'Etykiety wysyłkowe, location labels, kody GS1-128/SSCC. Rolki 8" OD = rzadsze wymiany na stanowisku pakowania. Sprawdź [drukarki do magazynu](/drukarki-etykiet-magazyn).' },
+      { title: 'Produkcja', description: 'Etykiety produktowe, oznaczenia partii, compliance labeling. Prędkość 204 mm/s i gilotyna automatyczna. Sprawdź [drukarki do produkcji](/drukarki-etykiet-produkcja).' },
+      { title: 'Montaż rack', description: 'Wysokość 245 mm idealnie pasuje do szaf rack 19" w centrach dystrybucyjnych i serwerowniach. Sprawdź [drukarki przemysłowe](/przemyslowe-drukarki-etykiet).' },
+    ],
+    uniqueInsights: {
+      heading: 'Czego sprzedawcy drukarek TSC nie powiedzą',
+      items: [
+        {
+          title: 'ENERGY STAR i pełny recykling — jedyna w klasie',
+          text: 'TSC ML241P to jedyna drukarka w klasie compact industrial z certyfikatem ENERGY STAR i obudową w 100% nadającą się do recyklingu. Ponad 90% komponentów jest recyclable — argument ESG/CSR niedostępny u Zebra i Honeywell w tym segmencie.',
+        },
+        {
+          title: 'Wymienne głowice 203/300 dpi — bez kupowania nowej drukarki',
+          text: 'Wymienne głowice między ML241P i ML341P pozwalają zmienić rozdzielczość kupując samą głowicę (~486 zł) zamiast nowej drukarki. U Zebry trzeba kupić oddzielny model.',
+        },
+        {
+          title: 'Głowica 50% taniej niż Zebra — realna oszczędność TCO',
+          text: 'Koszt głowicy TSC ML241P (~486 zł) vs Zebra ZT231 (~1 100 zł) — TSC ponad 50% taniej. Przy wymianie głowicy co 12–18 mies. to realna oszczędność w TCO.',
+        },
+      ],
+    },
+    comparisons: [
+      { title: 'TSC ML241P vs Zebra ZT231', content: 'ML241P: 13% tańsza, kompaktowa (245 mm), auto-emulacja ZPL+EPL+DPL, ENERGY STAR. ZT231: 50% szybsza (304 mm/s), dotykowy ekran 4,3", opcja RFID, Link-OS. TSC wybierz, gdy liczy się cena i kompaktowość. Zebra, gdy potrzebujesz prędkości, RFID lub zarządzania flotą. Porównaj: [Zebra ZT231](/produkt/zebra-zt231).' },
+      { title: 'TSC ML241P vs Zebra ZT111', content: 'ML241P: rolki 8" (vs 5"), kolorowy LCD, gilotyna/odklejak w opcji, emulacja EPL+DPL. ZT111: szybsza (254 mm/s), natywny ZPL, nieco tańsza (2 081 zł). ML241P lepsza przy dużych wolumenach (rzadsza wymiana rolek). Porównaj: [Zebra ZT111](/produkt/zebra-zt111).' },
+    ],
+    howToSteps: [
+      { name: 'Określ wolumen druku', text: 'Do 5 000 etykiet/dzień — [ML241P](/produkt/tsc-ml241p) 203 dpi wystarczy. Powyżej — rozważ też [Zebra ZT411](/produkt/zebra-zt411) lub [Honeywell PM45](/produkt/honeywell-pm45).' },
+      { name: 'Sprawdź język druku', text: 'Jeśli Twój system WMS/ERP generuje komendy ZPL — ML241P je obsłuży automatycznie (TSPL-EZD). Nie trzeba zmieniać kodu.' },
+      { name: 'Wybierz rozdzielczość', text: '203 dpi (ML241P) do standardowych etykiet logistycznych. 300 dpi (ML341P) do małych etykiet z drobnym tekstem i kodami 2D.' },
+      { name: 'Dobierz łączność', text: 'USB+Ethernet w standardzie. Wi-Fi/BT? Wariant ML241P-A001-0402 (BT fabryczny) lub moduł slot-in WF-COM-2002 (Wi-Fi+BT).' },
+      { name: 'Dodaj opcje postprint', text: 'Gilotyna (TCUT-ML240-0001) do automatycznego cięcia. Odklejak (98-0800017-00LF) do aplikacji „odklej i przyklej".' },
+    ],
+    faq: [
+      { question: 'Ile kosztuje drukarka TSC ML241P?', answer: '[TSC ML241P](/produkt/tsc-ml241p) w wersji 203 dpi z Ethernet kosztuje od 2 223 zł netto. Wariant z Bluetooth: od 2 574 zł. Wersja 300 dpi (ML341P): od 2 598 zł. Ceny z dystrybucji BlueStar.' },
+      { question: 'Czy TSC ML241P obsługuje język ZPL (Zebra)?', answer: 'Tak — tryb TSPL-EZD automatycznie rozpoznaje komendy ZPL II, EPL i DPL. System WMS/ERP generujący ZPL nie wymaga zmian — wystarczy podłączyć [ML241P](/produkt/tsc-ml241p) zamiast drukarki Zebra. Auto-przełączanie bez interwencji użytkownika.' },
+      { question: 'TSC ML241P czy Zebra ZT231 — co wybrać?', answer: '[ML241P](/produkt/tsc-ml241p): 2 223 zł, kompaktowa 245 mm, emulacja ZPL+EPL+DPL, ENERGY STAR. [ZT231](/produkt/zebra-zt231): 2 551 zł, szybsza (304 mm/s), dotykowy ekran 4,3", opcja RFID, Link-OS. TSC do zastosowań cenowych i rackowych, Zebra do flot z centralnym zarządzaniem.' },
+      { question: 'Jaka jest gwarancja na TSC ML241P?', answer: '24 miesiące na drukarkę, 12 miesięcy lub 25 km druku na głowicę, 12 miesięcy lub 50 km na wałek dociskowy. Dla porównania: [Zebra](/drukarki-etykiet-zebra) daje 24 mies. na drukarkę i 6 mies. na głowicę, [Brother](/drukarki-etykiet-brother) — 3-5 lat z głowicą.' },
+      { question: 'Czy można zmienić rozdzielczość TSC ML241P z 203 na 300 dpi?', answer: 'Tak — wystarczy wymienić głowicę (PH-ML240-0003 → PH-ML240-0004). Obudowa, mechanizm i elektronika są identyczne między ML241P i ML341P. U Zebra taka zmiana wymaga zakupu nowej drukarki.' },
+      { question: 'Czy TSC ML241P obsługuje RFID?', answer: 'Nie — [ML241P](/produkt/tsc-ml241p) nie ma opcji RFID. Jeśli potrzebujesz druku RFID UHF, wybierz [Zebra ZT231](/produkt/zebra-zt231) lub [Zebra ZT411](/produkt/zebra-zt411) z opcjonalnym modułem RFID.' },
+    ],
+  },
 }
