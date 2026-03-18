@@ -22040,7 +22040,7 @@ Koszt posiadania (TCO): pełna kompatybilność akcesoriów TC22 i TC27 — bate
       { question: 'Czy Zebra TC22 obsługuje RFID?', answer: 'TC22 nie ma wbudowanego czytnika RFID UHF. Warianty z 8-pinowym złączem (RFID-ready) obsługują nakładkę Zebra RFD40 UHF RFID Sled montowaną przez adapter eConnex — odczyt 100–700 tagów/sekundę z odległości do 9 m. Warianty z 2-pinowym złączem mogą łączyć się z RFD40 przez Bluetooth. Wbudowany NFC (13,56 MHz) służy do identyfikacji pracowników i tagów bliskiego zasięgu.' },
       { question: 'Gdzie serwisować Zebra TC22 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC22, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 025 zł netto/3 lata) dostępna jest naprawa priorytetowa.' },
       { question: 'Co to jest Mobility DNA i DataWedge w Zebra TC22?', answer: 'Mobility DNA to pakiet oprogramowania Zebra dołączony w cenie każdego TC22. Kluczowe narzędzia: DataWedge — uniwersalny moduł skanowania integrujący się z każdą aplikacją WMS/ERP bez kodowania, StageNow — masowe wdrożenie urządzeń, Device Tracker — lokalizacja zgubionych terminali, LifeGuard™ — aktualizacje bezpieczeństwa. Mobility DNA eliminuje potrzebę zakupu dodatkowych licencji MDM do podstawowego zarządzania flotą.' },
-      { question: 'Jakie są alternatywy dla Zebra TC22?', answer: 'Główne alternatywy w klasie entry-level: Datalogic Memor 11 (5" HD, Android 11, od ~3 290 zł — starszy, mniej wydajny, ale z ładowaniem Qi), Datalogic Memor 12 (6" FHD+, Android 13, od ~4 490 zł — nowszy, droższy), Honeywell EDA52 (podobna półka cenowa, mocny w logistyce USA). TC22 wyróżnia się: największym ekranem 6" FHD+ w swojej klasie, najdłuższym wsparciem Android (do v16), darmowym pakietem Mobility DNA i najszerszą siecią serwisową w Polsce (TAKMA + serwis-zebry.pl).' },
+      { question: 'Jakie są alternatywy dla Zebra TC22?', answer: 'Główne alternatywy w klasie entry-level: <a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a> (6" FHD+, Android 13→18, od 2 687 zł — ładowanie Qi, Green Spot, GPS dual-band), Datalogic Memor 11 (5" HD, Android 11, od ~3 290 zł — starszy, mniej wydajny), Honeywell EDA52 (podobna półka cenowa, mocny w logistyce USA). TC22 wyróżnia się: skanerem SE55 z zasięgiem do 7,6 m, baterią 5 200 mAh na 2 zmiany, ekosystemem Mobility DNA i najszerszą siecią serwisową w Polsce (TAKMA + serwis-zebry.pl). Szczegółowe porównanie: <a href="/poradnik/zebra-tc22-vs-datalogic-memor-12-porownanie">TC22 vs Memor 12</a>.' },
     ],
     applications: ['Retail — weryfikacja cen i stanów', 'Magazyn — kompletacja WMS', 'Apteki i przychodnie', 'Inwentaryzacja', 'Obsługa klienta w sklepie', 'Hotele — recepcja i obsługa gości'],
     compatibleAccessories: [],
@@ -26025,7 +26025,7 @@ Wersja Wi-Fi-only z łącznością Wi-Fi 6/6E, Bluetooth 5.3 i NFC Multi-Side. S
           slug: 'zebra-tc22',
           specs: {
             'Cena od': '2 417 zł',
-            'Ekran': '6" HD+ GG5',
+            'Ekran': '6" FHD+ GG',
             'Procesor': 'QC 5430 2,1 GHz',
             'RAM / Flash': '6 GB / 64 GB',
             'Skaner': 'SE4710 / SE55',
@@ -26042,7 +26042,7 @@ Wersja Wi-Fi-only z łącznością Wi-Fi 6/6E, Bluetooth 5.3 i NFC Multi-Side. S
           slug: 'zebra-tc27',
           specs: {
             'Cena od': '2 690 zł',
-            'Ekran': '6" HD+ GG5',
+            'Ekran': '6" FHD+ GG',
             'Procesor': 'QC 5430 2,1 GHz',
             'RAM / Flash': '6 GB / 64 GB',
             'Skaner': 'SE4710 / SE55',
@@ -26076,7 +26076,7 @@ Wersja Wi-Fi-only z łącznością Wi-Fi 6/6E, Bluetooth 5.3 i NFC Multi-Side. S
     ],
     faq: [
       { question: 'Ile kosztuje Datalogic Memor 12?', answer: 'Datalogic Memor 12 (PN: 944950001) kosztuje od 2 687 PLN netto w konfiguracji Wi-Fi 6E, 6 GB RAM, 64 GB Flash. Całkowity koszt posiadania (TCO) na 5 lat — z uwzględnieniem stacji dokującej (~1 200 PLN), baterii zapasowej (~350 PLN) i etui ochronnego (~250 PLN) — wynosi ok. 4 500 PLN, czyli ~75 PLN/miesiąc na terminal.' },
-      { question: 'Czym różni się Datalogic Memor 12 od Memor 17?', answer: 'Datalogic Memor 12 to wersja Wi-Fi-only — idealna do pracy wewnątrz budynków. Datalogic Memor 17 dodaje łączność komórkową 5G/4G LTE z obsługą nano-SIM i eSIM, GPS z nawigacją i barometr — przeznaczony dla kurierów, serwisantów i pracowników terenowych. Oba modele mają identyczną obudowę (13,5 mm, 245 g), ekran, skaner Halogen DE2121, baterię 4000 mAh z SafeSwap i wsparcie Android 13→18. Różnica w cenie: Memor 12 od 2 687 PLN vs [Memor 17](/produkt/datalogic-memor-17) od 2 991 PLN netto.' },
+      { question: 'Czym różni się Datalogic Memor 12 od Memor 17?', answer: 'Datalogic Memor 12 to wersja Wi-Fi-only — idealna do pracy wewnątrz budynków. Datalogic Memor 17 dodaje łączność komórkową 5G/4G LTE z obsługą nano-SIM i eSIM oraz barometr (określanie piętra w budynkach wielokondygnacyjnych). Oba modele mają GPS dual-band (A-GPS, Galileo, BeiDou), identyczną obudowę (13,5 mm, 245 g), ekran, skaner Halogen DE2121, baterię 4000 mAh z SafeSwap i wsparcie Android 13→18. Różnica w cenie: Memor 12 od 2 687 PLN vs [Memor 17](/produkt/datalogic-memor-17) od 2 991 PLN netto.' },
       { question: 'Czy Datalogic Memor 12 obsługuje wymianę baterii bez wyłączania (hot-swap)?', answer: 'Tak — Datalogic Memor 12 wyposażony jest w technologię SafeSwap. Wewnętrzna bateria buforowa podtrzymuje zasilanie podczas wymiany głównej baterii 4000 mAh, więc terminal nie wymaga restartu. Sesja aplikacji i połączenie Wi-Fi zostają zachowane. Czas wymiany: ~10 sekund. To unikalna cecha Datalogic — konkurencyjny Zebra TC22 nie obsługuje hot-swap i wymaga restartu przy wymianie baterii.' },
       { question: 'Jak długo działa bateria Datalogic Memor 12?', answer: 'Bateria Li-Ion 4000 mAh (14,98 Wh) zapewnia ok. 8 godzin intensywnej pracy ze skanowaniem. Trzy metody ładowania: szybkie USB-C (kabel w zestawie), stacja dokująca z Ethernet (przewodowa lub bezprzewodowa) lub bezprzewodowe Qi EPP 7W. Pełne ładowanie przez USB-C: ok. 3 godziny. Bateria jest wymienna (SafeSwap) — z zapasową baterią terminal pracuje non-stop przez cały dzień na dwie zmiany.' },
       { question: 'Czy Datalogic Memor 12 ma ładowanie bezprzewodowe?', answer: 'Tak — Datalogic Memor 12 obsługuje ładowanie bezprzewodowe Qi EPP o mocy 7W. Wystarczy położyć terminal na dedykowanej stacji dokującej Datalogic (opcja bezprzewodowa) lub na dowolnej ładowarce Qi. Bezprzewodowe ładowanie eliminuje zużycie złącza USB-C i ułatwia obsługę floty urządzeń — pracownik odkłada terminal na podstawkę bez podłączania kabla.' },
@@ -26191,7 +26191,7 @@ Android 13 z gwarancją aktualizacji do Android 18 (4+4 lata wsparcia). NFC Mult
           slug: 'zebra-tc27',
           specs: {
             'Cena od': '2 690 zł',
-            'Ekran': '6" HD+ GG5',
+            'Ekran': '6" FHD+ GG',
             'Procesor': 'QC 5430 2,1 GHz',
             'RAM / Flash': '6 GB / 64 GB',
             'Skaner': 'SE4710 / SE55',
@@ -26537,7 +26537,7 @@ Pełna dokumentacja techniczna na stronie producenta datalogic.com.`,
           slug: 'zebra-tc27',
           specs: {
             'Cena od': '2 690 zł',
-            'Ekran': '6" HD+ GG5',
+            'Ekran': '6" FHD+ GG',
             'Procesor': 'QC 5430 2,1 GHz',
             'RAM / Flash': '6 GB / 64 GB',
             'Skaner max': 'SE55 7,6 m',
