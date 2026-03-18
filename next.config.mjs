@@ -136,6 +136,11 @@ const nextConfig = {
       { source: '/porownaj-produkty/:path*', destination: '/katalog', permanent: true },
 
       // =====================================================
+      // PORADNIKI — zmiana slugów
+      // =====================================================
+      { source: '/poradnik/tasmy-termotransferowe-woskowe-woskowo-zywiczne-zywiczne', destination: '/poradnik/jak-dobrac-tasme-termotransferowa', permanent: true },
+
+      // =====================================================
       // BLOG → poradnik lub produkt
       // =====================================================
       { source: '/blog/nowosc-zebra-tc22-oraz-tc27/:path*', destination: '/produkt/zebra-tc22', permanent: true },

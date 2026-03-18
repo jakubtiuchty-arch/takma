@@ -9323,17 +9323,17 @@ export const guides: Guide[] = [
   ]
 },
 {
-  slug: 'tasmy-termotransferowe-woskowe-woskowo-zywiczne-zywiczne',
+  slug: 'jak-dobrac-tasme-termotransferowa',
   title: 'Taśma termotransferowa woskowa, woskowo-żywiczna czy żywiczna? Tabela doboru + koszty',
   seoTitle: 'Taśmy termotransferowe: woskowa, woskowo-żywiczna, żywiczna',
-  seoDescription: 'Taśma woskowa, woskowo-żywiczna czy żywiczna (resin)? Porównanie trwałości, odporności i kosztów. Tabela doboru + kalkulator kosztów na etykietę. Ceny od 7 zł.',
+  seoDescription: 'Woskowa, woskowo-żywiczna czy żywiczna? Dowiedz się, która taśma pasuje do Twojej drukarki i materiału etykiety. Tabele, koszty, wybór krok po kroku.',
   excerpt: 'Trzy rodzaje taśm termotransferowych — woskowa (WAX), woskowo-żywiczna (WAX/RESIN) i żywiczna (RESIN) — różnią się trwałością, odpornością chemiczną i ceną. Porównanie 12 parametrów, macierz doboru podłoża, kalkulator rocznych kosztów z cenami netto z marca 2026.',
   category: 'poradnik',
   tags: ['drukarki-etykiet', 'materialy-eksploatacyjne', 'poradnik', 'tasmy-termotransferowe', 'termotransferowa'],
   publishedAt: '2026-03-18',
   updatedAt: '2026-03-18',
   readTime: '10 min',
-  heroImage: '/images/guides/tasmy-termotransferowe-woskowe-woskowo-zywiczne-zywiczne.webp',
+  heroImage: '/images/guides/jak-dobrac-tasme-termotransferowa.webp',
 
   sections: [
     {
@@ -9413,7 +9413,7 @@ export const guides: Guide[] = [
 <tr><th>Seria</th><th>Format</th><th>Grubość</th><th>Max prędkość</th><th>Certyfikaty</th><th>Cena od</th></tr>
 </thead>
 <tbody>
-<tr><td><strong><a href="/tasmy-termotransferowe?typ=woskowa">2300 Standard Wax</a></strong></td><td>Desktop + Industrial</td><td>8,0 µm</td><td>304 mm/s</td><td>BPA-free, FDA, REACH</td><td>7,04 zł (desktop 84mm x 74m)</td></tr>
+<tr><td><strong><a href="/tasmy-termotransferowe?typ=woskowa">2300 Standard Wax</a></strong></td><td>Desktop + Industrial</td><td>8,0 µm</td><td>304 mm/s</td><td>BPA-free, halogen-free, latex-free, FDA, REACH</td><td>7,04 zł (desktop 84mm x 74m)</td></tr>
 <tr><td><strong>2100 High-Performance Wax</strong></td><td>Tylko Industrial</td><td>7,5 µm</td><td>355 mm/s</td><td>REACH</td><td>17,89 zł (40mm x 450m)</td></tr>
 </tbody>
 </table>
@@ -9600,8 +9600,8 @@ export const guides: Guide[] = [
 <tr><th>Drukarka</th><th>Max szer. taśmy</th><th>Rdzeń</th><th>Nawój</th><th>Polecane serie</th></tr>
 </thead>
 <tbody>
-<tr><td><a href="/produkt/zebra-zd421t">Zebra ZD421t</a> / <a href="/produkt/zebra-zd621t">ZD621t</a></td><td>84 mm</td><td>12,7 mm</td><td>IN</td><td>2300 / 3200 / 5095 desktop</td></tr>
-<tr><td><a href="/produkt/zebra-zt111">Zebra ZT111</a> / <a href="/produkt/zebra-zt231">ZT231</a></td><td>110 mm</td><td>25,4 mm</td><td>OUT</td><td>2300 / 3200 / 5095 industrial</td></tr>
+<tr><td><a href="/produkt/zebra-zd421t">Zebra ZD421t</a> / <a href="/produkt/zebra-zd621t">ZD621t</a></td><td>110 mm</td><td>12,7 mm</td><td>IN</td><td>2300 / 3200 / 5095 desktop</td></tr>
+<tr><td><a href="/produkt/zebra-zt111">Zebra ZT111</a> / <a href="/produkt/zebra-zt231">ZT231</a></td><td>110 mm</td><td>25,4 mm</td><td>OUT</td><td>2300 / 3200 industrial (RESIN: zapytaj o dostępność)</td></tr>
 <tr><td><a href="/produkt/zebra-zt411">Zebra ZT411</a> / <a href="/produkt/zebra-zt610">ZT610</a></td><td>110 mm</td><td>25,4 mm</td><td>OUT</td><td>2100 / 2300 / 3400 industrial</td></tr>
 <tr><td><a href="/produkt/tsc-ml241p">TSC ML241P</a> / <a href="/produkt/tsc-ml341p">ML341P</a></td><td>110 mm</td><td>25,4 mm</td><td>OUT</td><td>Kompatybilne z seriami Zebra industrial</td></tr>
 </tbody>
@@ -9681,7 +9681,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Jaką taśmę do etykiet GHS (substancje niebezpieczne)?',
-      answer: 'Do etykiet GHS na papierze powlekanym: <a href="/tasmy-termotransferowe?typ=woskowo-zywiczna">Zebra 3200 WAX/RESIN</a> — odporna na IPA, wilgoć i ścieranie. Do etykiet GHS na foliach syntetycznych (PP, PE): <a href="/tasmy-termotransferowe?typ=zywiczna">Zebra 5095 RESIN</a> z certyfikatem BS5609 (wymagany dla etykiet GHS w transporcie morskim wg IMO). Taśma woskowa nie spełnia wymagań GHS — nadruk jest podatny na chemikalia i ścieranie. Norma BS5609 Section 3 wymaga testowania kompletnego systemu (taśma + etykieta + klej + drukarka) u akredytowanego laboratorium.',
+      answer: 'Do etykiet GHS na papierze powlekanym: <a href="/tasmy-termotransferowe?typ=woskowo-zywiczna">Zebra 3200 WAX/RESIN</a> — odporna na IPA, wilgoć i ścieranie. Do etykiet GHS na foliach syntetycznych (PP, PE): <a href="/tasmy-termotransferowe?typ=zywiczna">Zebra 5095 RESIN</a> z certyfikatem UL/cUL. Dla transportu morskiego (IMO) wymagany jest certyfikat BS5609 — to certyfikat systemowy obejmujący łącznie taśmę, etykietę, klej i drukarkę. Cały zestaw musi być certyfikowany u akredytowanego laboratorium. Taśma woskowa nie spełnia wymagań GHS — nadruk jest podatny na chemikalia i ścieranie. <a href="/kontakt">Skontaktuj się z nami</a>, aby dobrać właściwy system zgodny z BS5609.',
     },
     {
       question: 'Czy mogę użyć taśmy żywicznej na etykietach papierowych?',
