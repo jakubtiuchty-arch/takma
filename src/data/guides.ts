@@ -8316,6 +8316,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-18',
   updatedAt: '2026-03-18',
   readTime: '14 min',
+  heroImage: '/images/guides/zebra-zt510-zebra-zt610-porownanie.jpg',
   sections: [
     {
       id: 'wprowadzenie',
