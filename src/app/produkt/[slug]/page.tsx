@@ -407,25 +407,30 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
           {/* Product info */}
           <div className="min-w-0 lg:sticky lg:top-24 lg:self-start">
-            {/* Manufacturer */}
-            {manufacturer && (
-              <Link
-                href={`/katalog?producent=${manufacturer.slug}`}
-                className="text-sm text-primary-600 font-medium hover:text-primary-700 uppercase tracking-wide"
-              >
-                {manufacturer.name}
-              </Link>
-            )}
-
-            {/* Title */}
-            <h1 className="text-2xl xs:text-3xl lg:text-4xl font-bold text-gray-900 mt-1 mb-4">
-              {product.name}
-              {(primarySubcategory || category) && (
-                <span className="block text-sm xs:text-base lg:text-lg font-medium text-gray-500 mt-1">
-                  {primarySubcategory?.name || category?.name}
-                </span>
+            {/* Title + Manufacturer logo */}
+            <div className="flex items-start justify-between gap-4">
+              <h1 className="text-2xl xs:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                {product.name}
+                {(primarySubcategory || category) && (
+                  <span className="block text-sm xs:text-base lg:text-lg font-medium text-gray-500 mt-1">
+                    {primarySubcategory?.name || category?.name}
+                  </span>
+                )}
+              </h1>
+              {manufacturer?.logo && (
+                <Link
+                  href={`/${manufacturer.slug}`}
+                  className="flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity mt-1"
+                  title={`Wszystkie produkty ${manufacturer.name}`}
+                >
+                  <img
+                    src={manufacturer.logo}
+                    alt={`Logo ${manufacturer.name}`}
+                    className="h-10 lg:h-12 w-auto"
+                  />
+                </Link>
               )}
-            </h1>
+            </div>
 
             {/* Availability — live z Ingram API */}
             <div className="mb-6">
