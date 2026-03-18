@@ -7979,8 +7979,8 @@ export const guides: Guide[] = [
   slug: 'zebra-em45-enterprise-mobile-computer',
   title: 'Zebra EM45 — enterprise mobile computer dla pracowników terenowych',
   seoTitle: 'Zebra EM45 — terminal mobilny dla pracownika terenowego',
-  seoDescription: 'Zebra EM45 Enterprise Mobile — 5G, Wi-Fi 6E, 25 h bateria, IP68 i 50 MP kamera. Sprawdź, dlaczego EM45 wygrywa z Samsungiem w środowisku B2B.',
-  excerpt: 'Zebra EM45 to enterprise mobile computer z 5G, Wi-Fi 6E, baterią 4 750 mAh na 25 godzin pracy, odpornością IP68 + MIL-STD-810H i 3 programowalnymi przyciskami. W przeciwieństwie do Samsunga Galaxy A56 czy S25, EM45 oferuje Zebra DNA, OneCare i stację dokującą zamieniającą telefon w stację roboczą.',
+  seoDescription: 'Zebra EM45 Enterprise Mobile — 5G, Wi-Fi 6E, 25 h bateria, IP68 i MIL-STD-810H. Porównanie z Samsung A56 i Motorola ThinkPhone + stacja dokująca.',
+  excerpt: 'Zebra EM45 to enterprise mobile computer z 5G, Wi-Fi 6E, baterią 4 750 mAh na 25 godzin pracy, odpornością IP68 + MIL-STD-810H i 3 programowalnymi przyciskami. W porównaniu do Samsunga Galaxy A56 i Motoroli ThinkPhone, EM45 oferuje stację dokującą CRD-EM4X-1SNWS-01 (HDMI, Ethernet, 4x USB), Zebra OneCare z wymianą overnight i LifeGuard for Android.',
   category: 'poradnik' as const,
   tags: ['terminale-mobilne', 'terminal-mobilny', 'zebra', 'em45', 'enterprise-mobile', 'android-enterprise', 'porownanie', '5g', 'cope', 'smartfon-biznesowy'],
   publishedAt: '2026-03-18',
@@ -7991,9 +7991,9 @@ export const guides: Guide[] = [
     {
       id: 'wprowadzenie',
       heading: 'Zebra EM45 — enterprise mobile computer: TL;DR',
-      content: `<p><strong><a href="/produkt/zebra-em45">Zebra EM45</a></strong> (od 2 951 zł netto) to enterprise mobile computer z 5G, Wi-Fi 6E, baterią 4 750 mAh na 25 godzin pracy, odpornością IP68 + IP65 + MIL-STD-810H i 3 programowalnymi przyciskami akcji. W przeciwieństwie od Samsunga Galaxy A56 czy S25, EM45 oferuje dedykowane oprogramowanie enterprise (Zebra Mobility DNA — ponad 20 aplikacji), kontrakt serwisowy Zebra OneCare i stację dokującą Workstation Connect zamieniającą telefon w pełnoprawną stację roboczą z HDMI, Ethernet i 4 portami USB.</p>
+      content: `<p><strong><a href="/produkt/zebra-em45">Zebra EM45</a></strong> (od 2 951 zł netto) to enterprise mobile computer z 5G, Wi-Fi 6E, baterią 4 750 mAh na 25 godzin pracy i odpornością IP68 + IP65 + MIL-STD-810H. W porównaniu do Samsunga Galaxy A56 i Motoroli ThinkPhone, EM45 oferuje stację dokującą CRD-EM4X-1SNWS-01 (HDMI, Ethernet, 4x USB), dedykowany serwis Zebra OneCare z wymianą overnight i LifeGuard for Android — wieloletnią ochronę bezpieczeństwa.</p>
 
-<p>Oba smartfony — Samsung i Zebra — mają ekrany 6,7 cala i 5G. Ale EM45 to narzędzie pracy: 50 MP kamera z dekoderem kodów kreskowych, GPS dual-band L1+L5 z precyzją sub-metrową, NPU do zadań AI na urządzeniu i <a href="/poradnik/jak-wybrac-terminal-mobilny">wsparcie LifeGuard for Android do 10 lat</a>. Samsung oferuje 6–7 lat aktualizacji OS — ale bez Zebra DNA, bez OneCare i bez dedykowanego serwisu floty.</p>`
+<p>Samsung A56, Motorola ThinkPhone i Zebra EM45 — trzy klasy urządzeń. A56 to konsumencki smartfon bez MIL-STD i bez stacji dokującej. ThinkPhone to interesujący kompromis enterprise od Lenovo, ale z ograniczoną stacją Ready For Dock (brak Ethernet, brak USB). EM45 to dedykowane narzędzie pracy: 50 MP kamera z dekoderem kodów kreskowych, GPS dual-band L1+L5, NPU do AI i <a href="/poradnik/jak-wybrac-terminal-mobilny">wsparcie LifeGuard do 10 lat</a>.</p>`
     },
     {
       id: 'czym-jest-zebra-em45',
@@ -8011,21 +8011,21 @@ export const guides: Guide[] = [
       heading: 'Ile wytrzyma Zebra EM45? Odporność IP68, MIL-STD-810H i test upadku',
       content: `<p><a href="/produkt/zebra-em45">Zebra EM45</a> ma podwójne certyfikaty <strong>IP68 + IP65</strong>: pełne zanurzenie w wodzie (IP68) ORAZ ochrona przed strumieniem wody pod ciśnieniem (IP65). Samsung Galaxy A56 oferuje jedynie IP67 (zanurzenie do 1 m na 30 minut) — brak ochrony przed myciem urządzenia wodą pod ciśnieniem.</p>
 
-<p>Certyfikat <strong>MIL-STD-810H</strong> to standard militarny obejmujący upadki, wibracje, szoki termiczne i wilgotność. EM45 wytrzymuje upadki z 1,5 m na płytki na betonie (z etui ochronnym SG-EM45EXO1-01) i 600 tumble'ów z 0,5 m. Bez etui: wielokrotne upadki z 1,2 m. Samsung Galaxy A56 i S25 — brak jakiegokolwiek certyfikatu MIL-STD.</p>
+<p>Certyfikat <strong>MIL-STD-810H</strong> to standard militarny obejmujący upadki, wibracje, szoki termiczne i wilgotność. EM45 wytrzymuje upadki z 1,5 m na płytki na betonie (z etui ochronnym SG-EM45EXO1-01) i 600 tumble'ów z 0,5 m. Bez etui: wielokrotne upadki z 1,2 m. Motorola ThinkPhone też ma MIL-STD-810H, ale wytrzymuje upadek tylko do 1,25 m i nie ma testu tumble. Samsung Galaxy A56 — brak jakiegokolwiek certyfikatu MIL-STD.</p>
 
 <table>
-<thead><tr><th>Parametr</th><th>Zebra EM45</th><th>Samsung Galaxy A56</th><th>Samsung Galaxy S25</th></tr></thead>
+<thead><tr><th>Parametr</th><th>Zebra EM45</th><th>Samsung Galaxy A56</th><th>Motorola ThinkPhone</th></tr></thead>
 <tbody>
 <tr><td>Klasa IP</td><td><strong>IP68 + IP65</strong></td><td>IP67</td><td>IP68</td></tr>
-<tr><td>MIL-STD</td><td><strong>810H</strong></td><td>Brak</td><td>Brak</td></tr>
-<tr><td>Upadek (z etui)</td><td><strong>1,5 m na beton</strong></td><td>Brak testu</td><td>Brak testu</td></tr>
-<tr><td>Tumble test</td><td><strong>600 x 0,5 m</strong></td><td>Brak</td><td>Brak</td></tr>
-<tr><td>Temp. pracy</td><td><strong>0 do +50 C</strong></td><td>0 do +35 C</td><td>0 do +35 C</td></tr>
+<tr><td>MIL-STD</td><td><strong>810H</strong></td><td>Brak</td><td>810H</td></tr>
+<tr><td>Upadek (z etui)</td><td><strong>1,5 m na beton</strong></td><td>Brak testu</td><td>1,25 m (aramid + Victus)</td></tr>
+<tr><td>Tumble test</td><td><strong>600 x 0,5 m</strong></td><td>Brak</td><td>Brak danych</td></tr>
+<tr><td>Temp. pracy</td><td><strong>0 do +50 C</strong></td><td>0 do +35 C</td><td>0 do +40 C</td></tr>
 <tr><td>Szok termiczny</td><td><strong>-40 do +70 C</strong></td><td>Brak danych</td><td>Brak danych</td></tr>
 </tbody>
 </table>
 
-<p><strong>Werdykt:</strong> Różnica IP67 vs IP68+IP65 to przepaść — szczególnie przy pracy w terenie, deszczu i myciu urządzenia chemikaliami. MIL-STD-810H oznacza, że EM45 przetrwa warunki, w których Samsung wyłączy się po pierwszym upadku na beton.</p>`
+<p><strong>Werdykt:</strong> ThinkPhone jest wytrzymalszy niż A56, ale EM45 bije oba — podwójna ochrona IP (woda pod ciśnieniem), większa odporność na upadek (1,5 m vs 1,25 m) i jako jedyny posiada certyfikowany test tumble (600 cykli). Samsung A56 bez MIL-STD i z IP67 nie nadaje się do pracy terenowej.</p>`
     },
     {
       id: 'bateria-25h',
@@ -8035,17 +8035,18 @@ export const guides: Guide[] = [
 <p>PowerPrecision to system monitorowania baterii w czasie rzeczywistym: stan naładowania, temperatura, cykle, prognoza żywotności. IT widzi kondycję baterii całej floty w dashboardzie VisibilityIQ OneCare. Bateria jest wymienna serwisowo — w kontrakcie Zebra OneCare wymiana jest nielimitowana.</p>
 
 <table>
-<thead><tr><th>Parametr baterii</th><th>Zebra EM45</th><th>Samsung Galaxy A56</th><th>Samsung Galaxy S25</th></tr></thead>
+<thead><tr><th>Parametr baterii</th><th>Zebra EM45</th><th>Samsung Galaxy A56</th><th>Motorola ThinkPhone</th></tr></thead>
 <tbody>
-<tr><td>Pojemność</td><td>4 750 mAh</td><td>5 000 mAh</td><td>4 000 mAh</td></tr>
-<tr><td>Czas pracy</td><td><strong>Do 25 h</strong></td><td>Do 22–24 h</td><td>Do 15–18 h (5G)</td></tr>
-<tr><td>Szybkie ładowanie</td><td>0-50 % w 30 min</td><td>0-65 % w 30 min (45 W)</td><td>0-50 % w 30 min (25 W)</td></tr>
+<tr><td>Pojemność</td><td>4 750 mAh</td><td>5 000 mAh</td><td>5 000 mAh</td></tr>
+<tr><td>Czas pracy</td><td><strong>Do 25 h</strong></td><td>Do 22–24 h</td><td>Do 14–18 h (5G)</td></tr>
+<tr><td>Szybkie ładowanie</td><td>0-50 % w 30 min</td><td>0-65 % w 30 min (45 W)</td><td>0-50 % w ~25 min (68 W)</td></tr>
+<tr><td>Ładowanie bezprzewodowe</td><td>Brak</td><td>Brak</td><td>15 W wireless</td></tr>
 <tr><td>PowerPrecision</td><td><strong>Tak</strong></td><td>Brak</td><td>Brak</td></tr>
-<tr><td>Wymiana baterii</td><td><strong>Serwisowa (OneCare)</strong></td><td>Serwisowa</td><td>Serwisowa</td></tr>
+<tr><td>Wymiana baterii</td><td><strong>Serwisowa (OneCare)</strong></td><td>Niewymienna</td><td>Niewymienna</td></tr>
 </tbody>
 </table>
 
-<p><strong>Werdykt:</strong> Samsung A56 ma większą baterię (5 000 vs 4 750 mAh), ale EM45 ma lepszą optymalizację energetyczną dzięki Qualcomm 5430 i Zebra PowerManager — dlatego osiąga dłuższy czas pracy mimo mniejszej pojemności. Dla pracownika terenowego na 10-godzinnej zmianie EM45 nie wymaga ładowania. Samsung S25 przy intensywnym 5G będzie wymagał ładowania w środku dnia.</p>`
+<p><strong>Werdykt:</strong> ThinkPhone ładuje się najszybciej (68 W TurboPower), A56 ma największą baterię (5 000 mAh) — ale tylko EM45 ma baterię wymienną serwisowo i pokrytą nielimitowaną wymianą w Zebra OneCare. Dla floty 50+ urządzeń po 2 latach eksploatacji to kluczowa przewaga — baterie tracą pojemność, a w OneCare wymiana jest darmowa.</p>`
     },
     {
       id: 'kamera-50mp-skanowanie',
@@ -8059,75 +8060,94 @@ export const guides: Guide[] = [
 <p>Dodatkowe funkcje kamery: automatyczne powiadomienie o brudnym obiektywie (AI quality check), tryb Privacy Mode z automatycznym rozmywaniem twarzy osób postronnych — przydatne przy dokumentacji w przestrzeniach publicznych (RODO).</p>`
     },
     {
-      id: 'em45-vs-samsung',
-      heading: 'Zebra EM45 vs Samsung Galaxy A56 i S25 — który smartfon dla firmy?',
-      content: `<p>Samsung Galaxy A56 i S25 to świetne smartfony konsumenckie. Ale nie są narzędziami pracy klasy enterprise. Kluczowe pytanie: <strong>koszt urządzenia vs TCO (Total Cost of Ownership)</strong> dla floty 50 urządzeń przez 5 lat. Urządzenie konsumenckie kosztuje do 2x więcej niż enterprise w cyklu 5-letnim — bo awarie, wymiana co 2 lata i brak centralnego zarządzania generują koszty ukryte.</p>
+      id: 'em45-vs-samsung-vs-thinkphone',
+      heading: 'Zebra EM45 vs Samsung Galaxy A56 vs Motorola ThinkPhone — który enterprise phone dla firmy?',
+      content: `<p>Samsung A56 to konsumencki smartfon dla SMB. Motorola ThinkPhone to interesująca propozycja enterprise od Lenovo. <a href="/produkt/zebra-em45">Zebra EM45</a> to dedykowane narzędzie pracy. Trzy różne klasy produktów, trzy różne scenariusze wdrożenia. Kluczowe pytanie: <strong>koszt urządzenia vs TCO</strong> (Total Cost of Ownership) dla floty 50 urządzeń przez 5 lat.</p>
 
 <table>
-<thead><tr><th>Parametr</th><th>Zebra EM45</th><th>Samsung Galaxy A56 EE</th><th>Samsung Galaxy S25 EE</th></tr></thead>
+<thead><tr><th>Parametr</th><th>Zebra EM45</th><th>Samsung Galaxy A56</th><th>Motorola ThinkPhone</th></tr></thead>
 <tbody>
-<tr><td>Przeznaczenie</td><td><strong>Enterprise B2B</strong></td><td>Konsumencki / SMB</td><td>Konsumencki premium</td></tr>
-<tr><td>Cena netto</td><td>od 2 951 zł</td><td>od ok. 1 114 zł</td><td>od ok. 3 150 zł</td></tr>
-<tr><td>Odporność</td><td><strong>IP68+IP65, MIL-STD-810H</strong></td><td>IP67</td><td>IP68</td></tr>
-<tr><td>Upadek</td><td><strong>1,5 m (z etui), 600x tumble</strong></td><td>Gorilla Glass, brak MIL</td><td>Gorilla Glass Ceramic, brak MIL</td></tr>
-<tr><td>Bateria / czas pracy</td><td>4 750 mAh / <strong>do 25 h</strong></td><td>5 000 mAh / do 22–24 h</td><td>4 000 mAh / do 15–18 h</td></tr>
-<tr><td>Łączność</td><td><strong>5G + Wi-Fi 6E + prywatna 5G/CBRS</strong></td><td>5G + Wi-Fi 6</td><td>5G + Wi-Fi 7</td></tr>
-<tr><td>GPS</td><td><strong>Dual-Band L1+L5 (5 systemów)</strong></td><td>GPS + GLONASS + Galileo</td><td>GPS + GLONASS + Galileo + BeiDou</td></tr>
-<tr><td>Przyciski PTT</td><td><strong>3 programowalne</strong></td><td>Brak</td><td>Brak</td></tr>
-<tr><td>Zarządzanie MDM</td><td><strong>Zebra DNA + StageNow + AER</strong></td><td>Samsung Knox</td><td>Samsung Knox</td></tr>
+<tr><td>Przeznaczenie</td><td><strong>Enterprise B2B</strong></td><td>Konsumencki / SMB</td><td>Enterprise / prosumer</td></tr>
+<tr><td>Cena netto</td><td>od 2 951 zł</td><td>od ok. 1 114 zł</td><td>od ok. 2 500 zł</td></tr>
+<tr><td>Odporność</td><td><strong>IP68+IP65, MIL-STD-810H</strong></td><td>IP67</td><td>IP68, MIL-STD-810H</td></tr>
+<tr><td>Upadek</td><td><strong>1,5 m (z etui), 600x tumble</strong></td><td>Gorilla Glass, brak MIL</td><td>1,25 m, aramid + Victus</td></tr>
+<tr><td>Bateria / czas pracy</td><td>4 750 mAh / <strong>do 25 h</strong></td><td>5 000 mAh / do 22–24 h</td><td>5 000 mAh, 68 W TurboPower</td></tr>
+<tr><td>Łączność</td><td><strong>5G + Wi-Fi 6E + prywatna 5G/CBRS</strong></td><td>5G + Wi-Fi 6</td><td>5G + Wi-Fi 6E</td></tr>
+<tr><td>GPS</td><td><strong>Dual-Band L1+L5 (5 systemów)</strong></td><td>GPS + GLONASS + Galileo (L1)</td><td>GPS + GLONASS + Galileo (L1)</td></tr>
+<tr><td>Przyciski PTT</td><td><strong>3 programowalne</strong></td><td>Brak</td><td>1 dedykowany</td></tr>
+<tr><td>Zarządzanie MDM</td><td><strong>Zebra DNA + StageNow + AER</strong></td><td>Samsung Knox</td><td>ThinkShield + zero-touch + AER</td></tr>
 <tr><td>Skaner kodów</td><td><strong>Tak (Zebra decoder library)</strong></td><td>Tylko aparat</td><td>Tylko aparat</td></tr>
-<tr><td>Stacja robocza</td><td><strong>Workstation Connect Cradle</strong></td><td>Brak</td><td>Samsung DeX (bezprzewodowy)</td></tr>
-<tr><td>Serwis floty</td><td><strong>Zebra OneCare Essential/Select</strong></td><td>Samsung Care+ (konsumencki)</td><td>Samsung Care+ (konsumencki)</td></tr>
-<tr><td>Aktualizacje bezp.</td><td><strong>LifeGuard — do 10 lat</strong></td><td>6 lat OS + bezp.</td><td>7 lat OS + bezp.</td></tr>
-<tr><td>COPE / profil firmowy</td><td><strong>Tak — natywny</strong></td><td>Knox Workspace</td><td>Knox Workspace</td></tr>
-<tr><td>TCO 5 lat (flota)</td><td>Wyższa cena, <strong>niższy TCO</strong></td><td>Niższa cena, wyższy TCO</td><td>Wysoka cena, wysoki TCO</td></tr>
+<tr><td>Stacja robocza</td><td><strong>CRD-EM4X: HDMI+Ethernet+4xUSB</strong></td><td>Brak (A56 nie obsługuje DeX)</td><td>Ready For Dock: HDMI, brak Ethernet/USB</td></tr>
+<tr><td>Serwis floty</td><td><strong>Zebra OneCare Essential/Select</strong></td><td>Samsung Care+ (konsumencki)</td><td>Lenovo Premier Support</td></tr>
+<tr><td>Aktualizacje bezp.</td><td><strong>LifeGuard — do 10 lat</strong></td><td>6 lat OS + bezp.</td><td>3 lata OS (ThinkShield)</td></tr>
+<tr><td>COPE / profil firmowy</td><td><strong>Tak — natywny</strong></td><td>Knox Workspace</td><td>Dual profile (ograniczony)</td></tr>
+<tr><td>Bezpieczeństwo sprzętowe</td><td>Identity Guardian</td><td>Knox Vault</td><td><strong>Moto KeySafe</strong></td></tr>
+<tr><td>TCO 5 lat (flota)</td><td>Wyższa cena, <strong>najniższy TCO</strong></td><td>Najniższa cena, wyższy TCO</td><td>Średnia cena, średni TCO</td></tr>
 </tbody>
 </table>
 
-<h3>Dlaczego EM45 wygrywa w terenie?</h3>
+<h3>Dlaczego EM45 wygrywa nad Samsung A56 w terenie?</h3>
 <ul>
-<li><strong>3 programowalne przyciski fizyczne</strong> (PTT, skan, kamera) — Samsung nie posiada żadnego</li>
-<li><strong>Praca w rękawiczkach</strong>: ekran EM45 obsługuje gloved fingertip input — Samsung A56 wymaga specjalnych rękawic</li>
-<li><strong>PTT przez Zebra WorkCloud Sync</strong> — dwustronna radiotelefonika push-to-talk przez Wi-Fi i sieć komórkową</li>
-<li><strong>Prywatna sieć 5G / CBRS</strong>: magazyny, zakłady przemysłowe — EM45 obsługuje, Samsung nie</li>
+<li><strong>IP68+IP65 vs IP67</strong> — A56 nie wytrzyma mycia wodą pod ciśnieniem, EM45 tak</li>
+<li><strong>3 programowalne przyciski fizyczne</strong> (PTT, skan, kamera) — A56 ich nie posiada</li>
+<li>Praca w rękawiczkach: ekran EM45 obsługuje gloved fingertip input</li>
+<li>PTT przez Zebra WorkCloud Sync — A56 nie ma natywnego PTT</li>
+<li>Prywatna sieć 5G / CBRS: magazyny, zakłady — EM45 obsługuje, A56 nie</li>
+<li><strong>A56 nie posiada żadnej stacji dokującej</strong> — nie obsługuje Samsung DeX</li>
 </ul>
 
-<h3>Gdzie Samsung wygrywa?</h3>
+<h3>Jak EM45 wypada przeciwko Motorola ThinkPhone?</h3>
 <ul>
-<li>Aparat fotograficzny (S25 Ultra — 3 obiektywy, teleobiektyw 5x)</li>
-<li>Moc obliczeniowa (Snapdragon 8 Elite w S25)</li>
-<li>Ekosystem aplikacji konsumenckich i Samsung DeX bezprzewodowy</li>
-<li>Cena jednostkowa (Galaxy A56 — 2,5x tańszy niż EM45)</li>
+<li><strong>Odporność</strong>: obaj mają MIL-STD-810H, ale EM45 wytrzymuje 1,5 m upadku vs 1,25 m ThinkPhone; EM45 ma dodatkowy IP65</li>
+<li><strong>Stacja dokująca</strong>: przepaść — CRD-EM4X-1SNWS-01 to pełna stacja robocza (Ethernet + 4x USB); Motorola Ready For Dock to tylko wyjście wideo</li>
+<li><strong>Skaner kodów</strong>: EM45 ma dedykowaną Zebra Decoder Library i przycisk scan; ThinkPhone używa tylko aparatu</li>
+<li><strong>Serwis</strong>: Zebra OneCare z wymianą overnight i nielimitowaną baterią vs Lenovo Premier Support (naprawa bez wymiany baterii)</li>
+<li><strong>Software</strong>: Zebra DNA 20+ aplikacji dedykowanych vs ThinkShield (głównie security)</li>
+<li><strong>GPS</strong>: EM45 dual-band L1+L5 (5 systemów) vs ThinkPhone L1 tylko</li>
 </ul>
 
-<h3>Kiedy wybrać EM45, a kiedy Samsung?</h3>
-<p><strong>EM45</strong>: flota pracownicza 10+ urządzeń, praca w terenie, logistyka, leśnictwo, inspekcje, healthcare, retail z potrzebą skanowania.</p>
-<p><strong>Samsung</strong>: BYOD dla pracowników biurowych, aplikacje sprzedażowe bez wymagań przemysłowych, budżet poniżej 1 500 zł na urządzenie.</p>
+<h3>Gdzie ThinkPhone i A56 mają przewagę?</h3>
+<ul>
+<li><strong>ThinkPhone</strong>: Snapdragon 8+ Gen 1 (szybszy procesor), 68 W TurboPower (najszybsze ładowanie z trójki), Moto KeySafe (hardwarowy magazyn kluczy kryptograficznych)</li>
+<li><strong>A56</strong>: najtańszy (od ok. 1 114 zł), 12 GB RAM, 5 000 mAh — dobry BYOD dla pracownika biurowego</li>
+<li>Obaj: bogatszy ekosystem aplikacji konsumenckich</li>
+</ul>
 
-<p><strong>Werdykt:</strong> Dla floty 50+ urządzeń roboczych — <a href="/produkt/zebra-em45">EM45</a> jest tańszy w 5-letnim TCO mimo wyższej ceny zakupu. Samsung nie oferuje Zebra OneCare, LifeGuard ani DataWedge — a to są koszty ukryte, które rosną z każdym rokiem eksploatacji.</p>`
+<h3>Kiedy wybrać który?</h3>
+<p><strong>EM45</strong>: flota terenowa, logistyka, leśnictwo, inspekcje, healthcare, magazyny z prywatną siecią 5G — wszędzie tam, gdzie stacja dokująca enterprise i Zebra OneCare są kluczowe.</p>
+<p><strong>ThinkPhone</strong>: field service z mniejszymi wymaganiami do skanowania, COPE bez potrzeby pełnej stacji workstation, firmy z ekosystemem Lenovo ThinkPad.</p>
+<p><strong>A56</strong>: BYOD dla biurowych, sales force bez wymagań przemysłowych, budżet poniżej 1 500 zł.</p>
+
+<p><strong>Werdykt:</strong> ThinkPhone to poważny rywal EM45 w segmencie enterprise, ale przegrywa w trzech kluczowych dla terenowca obszarach: stacja dokująca enterprise, skaner kodów kreskowych i Zebra OneCare. Samsung A56 nie jest graczem enterprise — to dobry telefon do innych zastosowań. Dla floty 50+ urządzeń <a href="/produkt/zebra-em45">EM45</a> ma najniższy 5-letni TCO.</p>`
     },
     {
       id: 'stacja-dokujaca',
-      heading: 'Stacja dokująca Workstation Connect — telefon staje się komputerem biurowym',
-      content: `<p>Stacja dokująca <strong>CRD-EM4X-1SNWS-01</strong> (Workstation Connect Cradle) zamienia <a href="/produkt/zebra-em45">Zebra EM45</a> w pełnoprawną stację roboczą: <strong>HDMI</strong> (monitor zewnętrzny), <strong>Ethernet</strong> (LAN), <strong>4 porty USB-A</strong> (klawiatura, mysz, inne urządzenia), <strong>jack 3,5 mm</strong> (słuchawki). Jedno urządzenie zamiast telefonu służbowego i laptopa.</p>
+      heading: 'Stacje dokujące: Zebra CRD-EM4X vs Motorola Ready For Dock — telefon staje się komputerem biurowym',
+      content: `<p>Stacja dokująca <strong>CRD-EM4X-1SNWS-01</strong> (Workstation Connect Cradle) zamienia <a href="/produkt/zebra-em45">Zebra EM45</a> w pełnoprawną stację roboczą: HDMI, Ethernet, 4 porty USB-A i jack 3,5 mm. Motorola ThinkPhone oferuje Ready For Dock — ale tylko z wyjściem HDMI, bez Ethernet i USB. Samsung Galaxy A56 <strong>nie obsługuje żadnego trybu stacji dokującej</strong> — A56 nie wspiera Samsung DeX.</p>
 
-<p>Scenariusz użycia: kierownik regionalny rano w biurze podłącza EM45 do stacji — pracuje na pełnym pulpicie z monitorem, klawiaturą i myszką (tryb Desktop Mode). Po południu wyjeżdża w teren z tym samym urządzeniem — zero synchronizacji, zero drugiego sprzętu.</p>
-
-<p>Stacja ładuje urządzenie podczas pracy. Porty zabezpieczone śrubami przed nieautoryzowanym dostępem. Kompatybilna zarówno ze standardowym EM45, jak i z wersją w etui ochronnym (po usunięciu podkładki shimmy). Wymagany zasilacz PWR-BGA12V50W0WW i kabel DC CBL-DC-388A2-01 — sprzedawane osobno.</p>
-
-<h3>Workstation Connect vs Samsung DeX</h3>
+<h3>Porównanie stacji dokujących</h3>
 <table>
-<thead><tr><th>Funkcja</th><th>Zebra Workstation Connect</th><th>Samsung DeX</th></tr></thead>
+<thead><tr><th>Parametr</th><th>Zebra CRD-EM4X-1SNWS-01</th><th>Motorola Ready For Dock</th><th>Samsung DeX (A56)</th></tr></thead>
 <tbody>
-<tr><td>Typ połączenia</td><td><strong>Stacja dokująca (kontakty + USB-C)</strong></td><td>Bezprzewodowe (Miracast)</td></tr>
-<tr><td>Porty</td><td><strong>HDMI + Ethernet + 4x USB-A + 3,5 mm</strong></td><td>Brak (BT klawiatura/mysz)</td></tr>
-<tr><td>Ładowanie w trakcie</td><td><strong>Tak</strong></td><td>Nie (zużywa baterię)</td></tr>
-<tr><td>Zarządzanie centralne</td><td><strong>Tak (DNA Cloud)</strong></td><td>Ograniczone</td></tr>
-<tr><td>Bezpieczeństwo</td><td><strong>Śruby, Identity Guardian</strong></td><td>Standardowe</td></tr>
+<tr><td>Dostępność</td><td>Dedykowana do EM45</td><td>Do ThinkPhone</td><td><strong>A56 NIE obsługuje DeX</strong></td></tr>
+<tr><td>Wyjście wideo</td><td><strong>HDMI</strong></td><td>HDMI / USB-C</td><td>N/D</td></tr>
+<tr><td>Ethernet / LAN</td><td><strong>Tak</strong></td><td>Brak</td><td>N/D</td></tr>
+<tr><td>Porty USB</td><td><strong>4x USB-A</strong></td><td>Brak</td><td>N/D</td></tr>
+<tr><td>Jack 3,5 mm</td><td><strong>Tak</strong></td><td>Brak</td><td>N/D</td></tr>
+<tr><td>Ładowanie urządzenia</td><td><strong>Tak (styki + USB-C)</strong></td><td>Tak (USB-C)</td><td>N/D</td></tr>
+<tr><td>Bezpieczeństwo fizyczne</td><td><strong>Śruby na portach</strong></td><td>Brak</td><td>N/D</td></tr>
+<tr><td>Wentylator</td><td>Pasywne chłodzenie</td><td>Wbudowany wentylator</td><td>N/D</td></tr>
+<tr><td>Integracja z MDM</td><td><strong>Zebra DNA Cloud</strong></td><td>Brak MDM dla stacji</td><td>N/D</td></tr>
+<tr><td>Klasa produktu</td><td><strong>Enterprise workstation</strong></td><td>Prosumer</td><td>Niedostępne</td></tr>
 </tbody>
 </table>
 
-<p><strong>Werdykt:</strong> Jeśli pracownicy Twojej firmy jeżdżą między biurem a terenem — stacja dokująca eliminuje potrzebę osobnego laptopa. Oszczędność na zakupie i utrzymaniu drugiego urządzenia.</p>`
+<h3>Scenariusz zastosowania</h3>
+<p>Pracownik wyjeżdża rano w teren z EM45 (terminal mobilny, PTT, skaner, GPS). Wraca po południu do biura, wpina EM45 w stację CRD-EM4X-1SNWS-01 — monitor, klawiatura USB, mysz USB, sieć LAN. Pełny komputer biurowy. Zero synchronizacji danych — wszystko na jednym urządzeniu. IT zarządza stacją przez Zebra DNA Cloud tak samo jak urządzeniem mobilnym.</p>
+
+<p>Stacja ładuje urządzenie podczas pracy. Porty zabezpieczone śrubami przed nieautoryzowanym dostępem. Kompatybilna ze standardowym EM45 oraz z wersją w etui ochronnym (SG-EM45EXO1-01). Wymagany zasilacz PWR-BGA12V50W0WW i kabel DC CBL-DC-388A2-01 — sprzedawane osobno.</p>
+
+<p><strong>Werdykt:</strong> Motorola Ready For Dock to wygodny gadżet na spotkanie z projektorem. Zebra CRD-EM4X-1SNWS-01 to enterprise workstation zatwierdzony przez dział IT, zarządzany centralnie i fizycznie zabezpieczony. Samsung A56 odpada w scenariuszu "jeden telefon zamiast laptopa" — brak DeX.</p>`
     },
     {
       id: 'lasy-panstwowe-case-study',
@@ -8144,18 +8164,18 @@ export const guides: Guide[] = [
 <li><strong>Praca w rękawiczkach</strong>: ekran EM45 obsługuje dotyk w rękawicach ochronnych</li>
 </ul>
 
-<h3>Co Lasy Państwowe zyskują na EM45 zamiast Samsunga?</h3>
+<h3>Co Lasy Państwowe zyskują na EM45 zamiast Samsunga A56 lub Motoroli ThinkPhone?</h3>
 <ul>
-<li><strong>Trwałość</strong>: Samsung A56 z IP67 nie wystarczy przy kontakcie z żywicą, błotem i chemikaliami ochrony lasu. EM45 z IP68+IP65 i MIL-STD-810H wytrzyma wieloletnią eksploatację</li>
-<li><strong>GPS dual-band</strong>: Samsung A56/S25 — standardowy GPS L1. EM45 — Dual-Band L1+L5, dokładniejszy w terenie zalesionym (mniejszy multipath error pod okapem drzew)</li>
-<li><strong>Bateria</strong>: leśniczy w terenie nie ma dostępu do ładowania. 25 godzin pracy to bufor na długi dzień pracy bez powrotu do nadleśnictwa</li>
-<li><strong>Centralny MDM</strong>: IT Lasów Państwowych może centralnie zarządzać tysiącami urządzeń przez Zebra DNA Cloud / StageNow — push konfiguracji, aktualizacje aplikacji, lokalizacja zagubionych urządzeń (Device Tracker)</li>
+<li><strong>Trwałość</strong>: Samsung A56 z IP67 nie wystarczy przy kontakcie z żywicą, błotem i chemikaliami ochrony lasu. ThinkPhone ma IP68 i MIL-STD-810H, ale brak IP65 (ochrona przed strumieniem wody ciśnieniowej). EM45 z IP68+IP65 i MIL-STD-810H wytrzyma wieloletnią eksploatację w każdych warunkach</li>
+<li><strong>GPS dual-band</strong>: Samsung A56 — standardowy GPS L1. ThinkPhone — Dual-Band, ale bez certyfikacji enterprise. EM45 — Dual-Band L1+L5 z certyfikacją Zebra, dokładniejszy w terenie zalesionym (mniejszy multipath error pod okapem drzew)</li>
+<li><strong>Bateria</strong>: leśniczy w terenie nie ma dostępu do ładowania. EM45 z 25 godzinami pracy to bufor na długi dzień bez powrotu do nadleśnictwa. ThinkPhone (5000 mAh) wytrzyma ~12-14 h — połowę tego co EM45</li>
+<li><strong>Centralny MDM</strong>: IT Lasów Państwowych może centralnie zarządzać tysiącami urządzeń przez Zebra DNA Cloud / StageNow — push konfiguracji, aktualizacje aplikacji, lokalizacja zagubionych urządzeń (Device Tracker). ThinkPhone oferuje Lenovo ThinkShield, ale bez poziomu integracji i narzędzi fleetowych Zebra DNA</li>
 </ul>
 
 <h3>Integracja z systemami LP</h3>
 <p>EM45 jako urządzenie AER-certified integruje się z każdym rozwiązaniem MDM/EMM klasy enterprise. Tryb COPE umożliwia pracownikowi LP korzystanie z EM45 prywatnie (profil osobisty) bez ryzyka wycieku danych służbowych (profil firmowy oddzielony systemowo).</p>
 
-<p><strong>Werdykt:</strong> Dla Lasów Państwowych i podobnych organizacji z dużą flotą terenową — <a href="/produkt/zebra-em45">EM45</a> to inwestycja w 5-letni cykl życia urządzenia z LifeGuard do 10 lat wsparcia, a nie wymiana Samsunga co 2 lata.</p>`
+<p><strong>Werdykt:</strong> Dla Lasów Państwowych i podobnych organizacji z dużą flotą terenową — <a href="/produkt/zebra-em45">EM45</a> to inwestycja w 5-letni cykl życia urządzenia z LifeGuard do 10 lat wsparcia. ThinkPhone z 3 latami wsparcia OS i Samsung A56 z 6 latami to krótszy cykl i częstsza wymiana floty.</p>`
     },
     {
       id: 'zebra-onecare',
@@ -8181,7 +8201,7 @@ export const guides: Guide[] = [
 <li><strong>Naprawa ekranu</strong> EM45 bez kontraktu = koszt porównywalny z rocznym OneCare Essential</li>
 <li><strong>Select: zero downtime</strong> — wymiana overnight z pre-zainstalowanymi aplikacjami, pracownik następnego dnia wraca do pracy bez konfigurowania</li>
 <li><strong>Nielimitowana wymiana baterii</strong>: po 2 latach bateria traci pojemność — w OneCare nie płacisz za wymianę</li>
-<li><strong>LifeGuard for Android</strong>: wieloletnie aktualizacje bezpieczeństwa (do 10 lat). Samsung S25 oferuje 7 lat OS — ale bez dedykowanego serwisu floty i bez pokrycia uszkodzeń</li>
+<li><strong>LifeGuard for Android</strong>: wieloletnie aktualizacje bezpieczeństwa (do 10 lat). Samsung A56 oferuje 6 lat OS, ThinkPhone 3 lata (ThinkShield) — ale żaden nie ma dedykowanego serwisu floty z wymianą overnight i pokryciem uszkodzeń</li>
 </ul>
 
 <p><strong>Werdykt:</strong> Dla floty 10+ urządzeń — OneCare Essential się zwraca już w pierwszym roku. Dla floty 50+ urządzeń — OneCare Select to standard, nie luksus. Skontaktuj się z <a href="/kontakt">TAKMA</a> po indywidualną wycenę dla floty.</p>`
@@ -8263,6 +8283,14 @@ export const guides: Guide[] = [
     {
       question: 'Czy Zebra EM45 skanuje kody kreskowe bez dodatkowego skanera?',
       answer: 'Tak. Aparat 50 MP z biblioteką Zebra Advanced Decoder Library (DataWedge) skanuje kody 1D/2D wszystkich popularnych symbologii. EM45 nie ma dedykowanego imager\'a (jak <a href="/produkt/zebra-tc22">TC22</a> z SE4710) — skanuje kamerowo, ale z profesjonalnymi algorytmami. Lewy przycisk boczny jest domyślnie mapowany jako przycisk skanowania.',
+    },
+    {
+      question: 'Czym różni się Zebra EM45 od Motorola ThinkPhone?',
+      answer: 'Oba urządzenia mają IP68 i MIL-STD-810H, ale <a href="/produkt/zebra-em45">EM45</a> ma dodatkowo IP65 (strumień wody ciśnieniowej) i upadki z 1,5 m (vs 1,25 m ThinkPhone). EM45 oferuje stację dokującą CRD-EM4X-1SNWS-01 z Ethernet + HDMI + 4x USB-A (enterprise workstation), ThinkPhone — Ready For Dock bez Ethernetu. Kluczowa różnica: Zebra DNA (20+ aplikacji enterprise), OneCare z wymianą overnight i LifeGuard do 10 lat aktualizacji. ThinkPhone ma ThinkShield z 3 latami wsparcia OS.',
+    },
+    {
+      question: 'Czy Samsung Galaxy A56 obsługuje stację dokującą lub tryb desktop?',
+      answer: 'Nie. Samsung Galaxy A56 nie obsługuje Samsung DeX (tryb desktop) — ta funkcja jest zarezerwowana dla flagowców serii Galaxy S i Galaxy Z. A56 nie ma portu USB-C z obsługą wideo (DisplayPort Alt Mode). Jeśli potrzebujesz trybu desktop i stacji dokującej, rozważ <a href="/produkt/zebra-em45">Zebra EM45</a> ze stacją CRD-EM4X-1SNWS-01 lub Motorola ThinkPhone z Ready For Dock.',
     },
   ],
   relatedLinks: [
