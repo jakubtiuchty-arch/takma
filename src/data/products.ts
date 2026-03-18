@@ -44418,10 +44418,10 @@ Obsługuje rolki do 8" OD (203 mm) na rdzeniu 1" lub 3" — rzadsza wymiana mate
     name: 'TSC MB241T',
     shortDescription: 'TSC MB241T — drukarka przemysłowa 4" z dotykowym LCD 3,5", 305 mm/s, bifold door, RFID opcja, emulacja ZPL',
     seoTitle: 'TSC MB241T — drukarka przemysłowa 4" | od 2 779 zł',
-    seoDescription: 'TSC MB241T — drukarka przemysłowa 4", 203 dpi, 305 mm/s, dotykowy LCD 3,5", emulacja ZPL, RFID opcja. Drukarka etykiet TSC MB241T. PN: MB241T-A001-0202.',
-    description: `TSC MB241T to [drukarka przemysłowa](/przemyslowe-drukarki-etykiet) (industrial) 4" ze składanym mechanizmem drzwi bifold, która zajmuje o 24% mniej miejsca na stanowisku niż drukarki z tradycyjnym podnoszonymi wiekiem. Dla firm produkcyjnych, logistycznych i magazynowych wymagających drukarki przemysłowej o dużej prędkości (305 mm/s) z metalową konstrukcją i dotykowym wyświetlaczem.
+    seoDescription: 'TSC MB241T — przemysłowa drukarka etykiet 4", 305 mm/s, bifold door, dotykowy LCD 3,5", obsługa hang-tagów do 0,28 mm, RFID opcja. Od 2 779 zł netto.',
+    description: `TSC MB241T to [drukarka przemysłowa](/przemyslowe-drukarki-etykiet) (industrial) 4" ze składanym mechanizmem drzwi bifold, która zajmuje o 24% mniej miejsca na stanowisku niż drukarki z tradycyjnie uchylną pokrywą. Dla firm produkcyjnych, logistycznych i magazynowych wymagających drukarki przemysłowej o dużej prędkości (305 mm/s) z metalową konstrukcją i dotykowym wyświetlaczem.
 
-TSC MB241T to najszybsza drukarka 4" w ofercie TSC — prędkość 305 mm/s dorównuje [Zebra ZT231](/produkt/zebra-zt231), a cena jest zbliżona. Dotykowy ekran LCD 3,5" (vs LCD 2,3" w [TSC ML241P](/produkt/tsc-ml241p)), podwójna pamięć 256 MB (RAM + Flash), obsługa grubych mediów do 0,28 mm (hang-tagi, kartonowe metki) i opcja RFID UHF (fabryczna lub jako upgrade). Automatyczna emulacja ZPL II, EPL i DPL (tryb TSPL-EZD) pozwala zastąpić drukarkę Zebra bez zmian w systemie WMS/ERP.
+TSC MB241T to najszybsza drukarka 4" w ofercie TSC — prędkość 305 mm/s — o 1 mm/s więcej niż [Zebra ZT231](/produkt/zebra-zt231) (304 mm/s), a cena jest zbliżona. Dotykowy ekran LCD 3,5" (vs LCD 2,3" w [TSC ML241P](/produkt/tsc-ml241p)), podwójna pamięć 256 MB (RAM + Flash), obsługa grubych mediów do 0,28 mm (hang-tagi, kartonowe metki) i opcja RFID UHF (fabryczna lub jako upgrade). Automatyczna emulacja ZPL II, EPL i DPL (tryb TSPL-EZD) pozwala zastąpić drukarkę Zebra bez zmian w systemie WMS/ERP.
 
 Drukarka do etykiet logistycznych GS1, etykiet produktowych, metek odzieżowych (hang-tags), etykiet compliance na liniach produkcyjnych, etykietowania w farmacji i food & beverage. Opcje: gilotyna (full cut), odklejak (peel-off), nawijak wewnętrzny 5", linerless kit, [moduł Wi-Fi + Bluetooth](/produkt/tsc-modul-wifi-bluetooth) i RFID UHF.
 
@@ -44529,7 +44529,7 @@ TSC MB241T ma 100% recyclable obudowę i opakowanie oraz certyfikat ENERGY STAR.
       },
       {
         question: 'TSC MB241T czy Zebra ZT231 — którą drukarkę wybrać?',
-        answer: 'Obie drukarki mają identyczną prędkość 305 mm/s i szerokość druku ~107 mm. TSC MB241T: dotykowy LCD 3,5", składane drzwi bifold, grubsze media do 0,28 mm, fabryczna opcja RFID, 256 MB RAM, cena od 2 779 zł. <a href="/produkt/zebra-zt231">Zebra ZT231</a>: dotykowy LCD 4,3", ekosystem Link-OS, opcja RFID, szersze wsparcie serwisowe w PL, cena od 2 551 zł. Wybierz TSC, gdy potrzebujesz bifold door i hang-tagów. Wybierz Zebra, gdy zależy Ci na Link-OS i serwisie.',
+        answer: 'TSC MB241T: 305 mm/s, Zebra ZT231: 304 mm/s — praktycznie bez różnicy. TSC MB241T: dotykowy LCD 3,5", składane drzwi bifold (-24% miejsca), grubsze media do 0,28 mm, fabryczna opcja RFID, 256 MB RAM, cena od 2 779 zł. <a href="/produkt/zebra-zt231">Zebra ZT231</a>: dotykowy LCD 4,3", ekosystem Link-OS, opcja RFID, szersze wsparcie serwisowe w PL, cena od 2 551 zł. Wybierz TSC, gdy potrzebujesz bifold door i hang-tagów. Wybierz Zebra, gdy zależy Ci na Link-OS i serwisie.',
       },
       {
         question: 'Czy TSC MB241T obsługuje druk RFID?',
@@ -44609,11 +44609,11 @@ TSC MB241T ma 100% recyclable obudowę i opakowanie oraz certyfikat ENERGY STAR.
           slug: 'zebra-zt231',
           specs: {
             'Rozdzielczość': '203/300 dpi',
-            'Prędkość druku': '305 mm/s',
+            'Prędkość druku': '304 mm/s',
             'Szerokość druku': '104 mm',
             'Wyświetlacz': 'Dotykowy 4,3" kolor',
             'Max rolka': '8" OD',
-            'Waga': '12,2 kg',
+            'Waga': '9,1 kg',
             'Emulacja ZPL': 'Natywny',
             'Grubość mediów': 'do 0,25 mm',
             'RFID': 'Opcja',
