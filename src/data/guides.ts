@@ -9324,7 +9324,7 @@ export const guides: Guide[] = [
 },
 {
   slug: 'jak-dobrac-tasme-termotransferowa',
-  title: 'Taśma termotransferowa woskowa, woskowo-żywiczna czy żywiczna? Tabela doboru + koszty',
+  title: 'Taśma termotransferowa woskowa, woskowo-żywiczna czy żywiczna?',
   seoTitle: 'Taśmy termotransferowe: woskowa, woskowo-żywiczna, żywiczna',
   seoDescription: 'Woskowa, woskowo-żywiczna czy żywiczna? Dowiedz się, która taśma pasuje do Twojej drukarki i materiału etykiety. Tabele, koszty, wybór krok po kroku.',
   excerpt: 'Porównanie 12 parametrów, macierz doboru podłoża i kalkulator rocznych kosztów — z cenami netto z marca 2026.',
