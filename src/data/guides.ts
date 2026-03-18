@@ -9327,7 +9327,7 @@ export const guides: Guide[] = [
   title: 'Taśma termotransferowa woskowa, woskowo-żywiczna czy żywiczna? Tabela doboru + koszty',
   seoTitle: 'Taśmy termotransferowe: woskowa, woskowo-żywiczna, żywiczna',
   seoDescription: 'Woskowa, woskowo-żywiczna czy żywiczna? Dowiedz się, która taśma pasuje do Twojej drukarki i materiału etykiety. Tabele, koszty, wybór krok po kroku.',
-  excerpt: 'Trzy rodzaje taśm termotransferowych — woskowa (WAX), woskowo-żywiczna (WAX/RESIN) i żywiczna (RESIN) — różnią się trwałością, odpornością chemiczną i ceną. Porównanie 12 parametrów, macierz doboru podłoża, kalkulator rocznych kosztów z cenami netto z marca 2026.',
+  excerpt: 'Porównanie 12 parametrów, macierz doboru podłoża i kalkulator rocznych kosztów — z cenami netto z marca 2026.',
   category: 'poradnik',
   tags: ['drukarki-etykiet', 'materialy-eksploatacyjne', 'poradnik', 'tasmy-termotransferowe', 'termotransferowa'],
   publishedAt: '2026-03-18',
