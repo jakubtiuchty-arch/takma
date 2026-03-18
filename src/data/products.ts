@@ -43896,13 +43896,13 @@ const tscPrinters: Product[] = [
     shortDescription: 'TSC ML241P — kompaktowa drukarka półprzemysłowa 4" z emulacją ZPL, 203 dpi, 204 mm/s, rolki do 8" OD',
     seoTitle: 'TSC ML241P — drukarka półprzemysłowa etykiet 4" | od 2 223 zł | TAKMA',
     seoDescription: 'Drukarka etykiet TSC ML241P — kompaktowa półprzemysłowa 4 cale. 203 dpi, 204 mm/s, emulacja ZPL/EPL/DPL, kolorowy LCD. Drukarka TSC ML241P, drukarka półprzemysłowa TSC ML241P, ML241P TSC. Wariant 300 dpi: ML341P. Od 2 223 zł netto z dystrybucji BlueStar. PN: ML241P-A001-0202, ML241P-A001-0402, ML341P-A001-0202.',
-    description: `<p><strong>Dla kogo?</strong> TSC ML241P to kompaktowa drukarka półprzemysłowa (compact industrial) klasy 4" przeznaczona dla magazynów, linii produkcyjnych, centrów logistycznych i firm kurierskich, które potrzebują wydajności drukarki przemysłowej w kompaktowej obudowie. Dzięki wysokości zaledwie 245 mm idealnie mieści się w szafach rack 19" i na stanowiskach z ograniczoną przestrzenią.</p>
+    description: `TSC ML241P to kompaktowa drukarka półprzemysłowa (compact industrial) klasy 4" przeznaczona dla magazynów, linii produkcyjnych, centrów logistycznych i firm kurierskich, które potrzebują wydajności drukarki przemysłowej w kompaktowej obudowie. Dzięki wysokości zaledwie 245 mm idealnie mieści się w szafach rack 19" i na stanowiskach z ograniczoną przestrzenią.
 
-<p><strong>Kluczowa przewaga:</strong> Automatyczna emulacja języków ZPL II, EPL i DPL (tryb TSPL-EZD) oznacza, że TSC ML241P może zastąpić drukarkę Zebra lub Datamax bez żadnych zmian w oprogramowaniu — system WMS/ERP wysyła te same komendy, a drukarka je rozpoznaje automatycznie. To najłatwiejsza migracja na rynku.</p>
+Automatyczna emulacja języków ZPL II, EPL i DPL (tryb TSPL-EZD) oznacza, że TSC ML241P może zastąpić drukarkę Zebra lub Datamax bez żadnych zmian w oprogramowaniu — system WMS/ERP wysyła te same komendy, a drukarka je rozpoznaje automatycznie. To najłatwiejsza migracja na rynku.
 
-<p><strong>Zastosowania:</strong> Druk etykiet logistycznych i wysyłkowych, etykiet produktowych, kodów kreskowych, etykiet magazynowych (location labels), etykiet na opakowania, zgodności z GS1. Obsługuje rolki do 8" OD (203 mm) na rdzeniu 1" lub 3" — rzadsza wymiana materiału i dłuższy czas pracy bez przestoju. Opcjonalna gilotyna, odklejak i moduł Wi-Fi/Bluetooth.</p>
+Druk etykiet logistycznych i wysyłkowych, etykiet produktowych, kodów kreskowych, etykiet magazynowych (location labels), etykiet na opakowania, zgodności z GS1. Obsługuje rolki do 8" OD (203 mm) na rdzeniu 1" lub 3" — rzadsza wymiana materiału i dłuższy czas pracy bez przestoju. Opcjonalna gilotyna, odklejak i moduł Wi-Fi/Bluetooth.
 
-<p><strong>Ekologia:</strong> TSC ML241P posiada certyfikat ENERGY STAR. Obudowa i opakowanie w 100% nadają się do recyklingu, ponad 90% komponentów jest recyclable — jedyna drukarka w klasie compact industrial z takim certyfikatem. Szczegóły techniczne w <a href="/downloads/tsc-ml241p-datasheet.pdf">karcie katalogowej TSC ML241P</a>.</p>`,
+TSC ML241P posiada certyfikat ENERGY STAR. Obudowa i opakowanie w 100% nadają się do recyklingu, ponad 90% komponentów jest recyclable — jedyna drukarka w klasie compact industrial z takim certyfikatem.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'tsc',
