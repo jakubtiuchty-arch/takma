@@ -7971,6 +7971,311 @@ export const guides: Guide[] = [
     { title: 'Skanery Zebra — katalog', href: '/skanery-kodow-kreskowych-zebra' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]
+},
+// ─────────────────────────────────────────────────────────────────
+// 19. Zebra EM45 — enterprise mobile computer dla pracowników terenowych
+// ─────────────────────────────────────────────────────────────────
+{
+  slug: 'zebra-em45-enterprise-mobile-computer',
+  title: 'Zebra EM45 — enterprise mobile computer dla pracowników terenowych',
+  seoTitle: 'Zebra EM45 — terminal mobilny dla pracownika terenowego',
+  seoDescription: 'Zebra EM45 Enterprise Mobile — 5G, Wi-Fi 6E, 25 h bateria, IP68 i 50 MP kamera. Sprawdź, dlaczego EM45 wygrywa z Samsungiem w środowisku B2B.',
+  excerpt: 'Zebra EM45 to enterprise mobile computer z 5G, Wi-Fi 6E, baterią 4 750 mAh na 25 godzin pracy, odpornością IP68 + MIL-STD-810H i 3 programowalnymi przyciskami. W przeciwieństwie do Samsunga Galaxy A56 czy S25, EM45 oferuje Zebra DNA, OneCare i stację dokującą zamieniającą telefon w stację roboczą.',
+  category: 'poradnik' as const,
+  tags: ['terminale-mobilne', 'terminal-mobilny', 'zebra', 'em45', 'enterprise-mobile', 'android-enterprise', 'porownanie', '5g', 'cope', 'smartfon-biznesowy'],
+  publishedAt: '2026-03-18',
+  updatedAt: '2026-03-18',
+  readTime: '16 min',
+  heroImage: '',
+  sections: [
+    {
+      id: 'wprowadzenie',
+      heading: 'Zebra EM45 — enterprise mobile computer: TL;DR',
+      content: `<p><strong><a href="/produkt/zebra-em45">Zebra EM45</a></strong> (od 2 951 zł netto) to enterprise mobile computer z 5G, Wi-Fi 6E, baterią 4 750 mAh na 25 godzin pracy, odpornością IP68 + IP65 + MIL-STD-810H i 3 programowalnymi przyciskami akcji. W przeciwieństwie od Samsunga Galaxy A56 czy S25, EM45 oferuje dedykowane oprogramowanie enterprise (Zebra Mobility DNA — ponad 20 aplikacji), kontrakt serwisowy Zebra OneCare i stację dokującą Workstation Connect zamieniającą telefon w pełnoprawną stację roboczą z HDMI, Ethernet i 4 portami USB.</p>
+
+<p>Oba smartfony — Samsung i Zebra — mają ekrany 6,7 cala i 5G. Ale EM45 to narzędzie pracy: 50 MP kamera z dekoderem kodów kreskowych, GPS dual-band L1+L5 z precyzją sub-metrową, NPU do zadań AI na urządzeniu i <a href="/poradnik/jak-wybrac-terminal-mobilny">wsparcie LifeGuard for Android do 10 lat</a>. Samsung oferuje 6–7 lat aktualizacji OS — ale bez Zebra DNA, bez OneCare i bez dedykowanego serwisu floty.</p>`
+    },
+    {
+      id: 'czym-jest-zebra-em45',
+      heading: 'Czym jest Zebra EM45 i dla kogo jest przeznaczony?',
+      content: `<p>Zebra EM45 to nie smartfon — to <strong>enterprise mobile computer w formie smartfona</strong>. Pozycjonowany jako urządzenie COPE (Corporate Owned, Personally Enabled): firma kupuje flotę EM45, pracownik używa go również prywatnie (oddzielny profil osobisty i firmowy). Certyfikat Android Enterprise Recommended (AER) gwarantuje kompatybilność z każdym rozwiązaniem EMM: Microsoft Intune, SOTI MobiControl, VMware Workspace ONE.</p>
+
+<p>Dla kogo? Handlowcy terenowi, kurierzy, technicy serwisowi, kierownicy regionalni, koordynatorzy logistyki, pracownicy leśni i inspektorzy — wszyscy, którzy pracują poza biurem i potrzebują jednego urządzenia łączącego telefon, skaner kodów i komputer mobilny. <a href="/produkt/zebra-em45">Zebra EM45</a> eliminuje potrzebę noszenia osobnego telefonu służbowego, skanera i terminala — jedno urządzenie zamiast trzech.</p>
+
+<p>Dane techniczne: wyświetlacz 6,7 cala FHD+ (2400 x 1080) z odświeżaniem 120 Hz, procesor Qualcomm 5430 octa-core 2,2 GHz z dedykowanym NPU, 8 GB DDR5 RAM, 128 GB UFS 3.1 (microSD do 2 TB). Grubość zaledwie 10,7 mm, waga 243 g — najsmuklejszy komputer mobilny w historii Zebry.</p>
+
+<p><strong>Werdykt:</strong> EM45 to wybór dla firm, które traktują urządzenia mobilne jako narzędzie pracy — nie jako benefit pracowniczy. Jedno urządzenie zastępujące telefon, skaner i terminal = niższy TCO floty.</p>`
+    },
+    {
+      id: 'odpornosc-ip68-mil-std',
+      heading: 'Ile wytrzyma Zebra EM45? Odporność IP68, MIL-STD-810H i test upadku',
+      content: `<p><a href="/produkt/zebra-em45">Zebra EM45</a> ma podwójne certyfikaty <strong>IP68 + IP65</strong>: pełne zanurzenie w wodzie (IP68) ORAZ ochrona przed strumieniem wody pod ciśnieniem (IP65). Samsung Galaxy A56 oferuje jedynie IP67 (zanurzenie do 1 m na 30 minut) — brak ochrony przed myciem urządzenia wodą pod ciśnieniem.</p>
+
+<p>Certyfikat <strong>MIL-STD-810H</strong> to standard militarny obejmujący upadki, wibracje, szoki termiczne i wilgotność. EM45 wytrzymuje upadki z 1,5 m na płytki na betonie (z etui ochronnym SG-EM45EXO1-01) i 600 tumble'ów z 0,5 m. Bez etui: wielokrotne upadki z 1,2 m. Samsung Galaxy A56 i S25 — brak jakiegokolwiek certyfikatu MIL-STD.</p>
+
+<table>
+<thead><tr><th>Parametr</th><th>Zebra EM45</th><th>Samsung Galaxy A56</th><th>Samsung Galaxy S25</th></tr></thead>
+<tbody>
+<tr><td>Klasa IP</td><td><strong>IP68 + IP65</strong></td><td>IP67</td><td>IP68</td></tr>
+<tr><td>MIL-STD</td><td><strong>810H</strong></td><td>Brak</td><td>Brak</td></tr>
+<tr><td>Upadek (z etui)</td><td><strong>1,5 m na beton</strong></td><td>Brak testu</td><td>Brak testu</td></tr>
+<tr><td>Tumble test</td><td><strong>600 x 0,5 m</strong></td><td>Brak</td><td>Brak</td></tr>
+<tr><td>Temp. pracy</td><td><strong>0 do +50 C</strong></td><td>0 do +35 C</td><td>0 do +35 C</td></tr>
+<tr><td>Szok termiczny</td><td><strong>-40 do +70 C</strong></td><td>Brak danych</td><td>Brak danych</td></tr>
+</tbody>
+</table>
+
+<p><strong>Werdykt:</strong> Różnica IP67 vs IP68+IP65 to przepaść — szczególnie przy pracy w terenie, deszczu i myciu urządzenia chemikaliami. MIL-STD-810H oznacza, że EM45 przetrwa warunki, w których Samsung wyłączy się po pierwszym upadku na beton.</p>`
+    },
+    {
+      id: 'bateria-25h',
+      heading: 'Bateria Zebra EM45 — czy 25 godzin wystarczy na zmianę?',
+      content: `<p>Bateria 4 750 mAh z technologią PowerPrecision zapewnia <strong>do 25 godzin pracy</strong> w typowych warunkach (połączenia głosowe, Wi-Fi, skanowanie, GPS). Szybkie ładowanie: <strong>0 do 50 % w zaledwie 30 minut</strong>. Przy 8-godzinnej zmianie EM45 nie wymaga ładowania — zostaje jeszcze 17 godzin zapasu.</p>
+
+<p>PowerPrecision to system monitorowania baterii w czasie rzeczywistym: stan naładowania, temperatura, cykle, prognoza żywotności. IT widzi kondycję baterii całej floty w dashboardzie VisibilityIQ OneCare. Bateria jest wymienna serwisowo — w kontrakcie Zebra OneCare wymiana jest nielimitowana.</p>
+
+<table>
+<thead><tr><th>Parametr baterii</th><th>Zebra EM45</th><th>Samsung Galaxy A56</th><th>Samsung Galaxy S25</th></tr></thead>
+<tbody>
+<tr><td>Pojemność</td><td>4 750 mAh</td><td>5 000 mAh</td><td>4 000 mAh</td></tr>
+<tr><td>Czas pracy</td><td><strong>Do 25 h</strong></td><td>Do 22–24 h</td><td>Do 15–18 h (5G)</td></tr>
+<tr><td>Szybkie ładowanie</td><td>0-50 % w 30 min</td><td>0-65 % w 30 min (45 W)</td><td>0-50 % w 30 min (25 W)</td></tr>
+<tr><td>PowerPrecision</td><td><strong>Tak</strong></td><td>Brak</td><td>Brak</td></tr>
+<tr><td>Wymiana baterii</td><td><strong>Serwisowa (OneCare)</strong></td><td>Serwisowa</td><td>Serwisowa</td></tr>
+</tbody>
+</table>
+
+<p><strong>Werdykt:</strong> Samsung A56 ma większą baterię (5 000 vs 4 750 mAh), ale EM45 ma lepszą optymalizację energetyczną dzięki Qualcomm 5430 i Zebra PowerManager — dlatego osiąga dłuższy czas pracy mimo mniejszej pojemności. Dla pracownika terenowego na 10-godzinnej zmianie EM45 nie wymaga ładowania. Samsung S25 przy intensywnym 5G będzie wymagał ładowania w środku dnia.</p>`
+    },
+    {
+      id: 'kamera-50mp-skanowanie',
+      heading: 'Kamera 50 MP i skanowanie kodów kreskowych — czy to naprawdę narzędzie pracy?',
+      content: `<p>Aparat tylny <a href="/produkt/zebra-em45">Zebra EM45</a>: <strong>50 MP, autofokus, OIS (optyczna stabilizacja obrazu), f/1,9, wideo UHD 4K przy 30 fps</strong>. Aparat przedni: 8 MP, f/2,0, 1080p — wideorozmowy i weryfikacja tożsamości. To najlepszy aparat w historii urządzeń Zebra.</p>
+
+<p><strong>Skanowanie kodów kreskowych</strong> odbywa się przez aparat 50 MP z biblioteką Zebra Advanced Decoder Library (DataWedge). EM45 nie ma dedykowanego imager'a (jak SE4770 w <a href="/produkt/zebra-tc22">TC22</a> czy <a href="/produkt/zebra-tc27">TC27</a>) — skanuje kamerowo, ale z profesjonalnymi algorytmami dekodowania wszystkich popularnych symbologii 1D/2D niezależnie od stanu i orientacji kodu. Lewy przycisk boczny jest domyślnie mapowany jako przycisk skanowania.</p>
+
+<p><strong>AI na urządzeniu (NPU):</strong> Dedykowany Neural Processing Unit w Qualcomm 5430 uruchamia modele AI lokalnie — bez połączenia z chmurą. Możliwości: tłumaczenie tekstu w czasie rzeczywistym, transkrypcja mowy, analiza wizualna półek i etykiet, pomiary 3D kamerą (Google ARCore Certified). Generatywny asystent AI integruje się z chmurą, ale podstawowe funkcje AI działają offline.</p>
+
+<p>Dodatkowe funkcje kamery: automatyczne powiadomienie o brudnym obiektywie (AI quality check), tryb Privacy Mode z automatycznym rozmywaniem twarzy osób postronnych — przydatne przy dokumentacji w przestrzeniach publicznych (RODO).</p>`
+    },
+    {
+      id: 'em45-vs-samsung',
+      heading: 'Zebra EM45 vs Samsung Galaxy A56 i S25 — który smartfon dla firmy?',
+      content: `<p>Samsung Galaxy A56 i S25 to świetne smartfony konsumenckie. Ale nie są narzędziami pracy klasy enterprise. Kluczowe pytanie: <strong>koszt urządzenia vs TCO (Total Cost of Ownership)</strong> dla floty 50 urządzeń przez 5 lat. Urządzenie konsumenckie kosztuje do 2x więcej niż enterprise w cyklu 5-letnim — bo awarie, wymiana co 2 lata i brak centralnego zarządzania generują koszty ukryte.</p>
+
+<table>
+<thead><tr><th>Parametr</th><th>Zebra EM45</th><th>Samsung Galaxy A56 EE</th><th>Samsung Galaxy S25 EE</th></tr></thead>
+<tbody>
+<tr><td>Przeznaczenie</td><td><strong>Enterprise B2B</strong></td><td>Konsumencki / SMB</td><td>Konsumencki premium</td></tr>
+<tr><td>Cena netto</td><td>od 2 951 zł</td><td>od ok. 1 114 zł</td><td>od ok. 3 150 zł</td></tr>
+<tr><td>Odporność</td><td><strong>IP68+IP65, MIL-STD-810H</strong></td><td>IP67</td><td>IP68</td></tr>
+<tr><td>Upadek</td><td><strong>1,5 m (z etui), 600x tumble</strong></td><td>Gorilla Glass, brak MIL</td><td>Gorilla Glass Ceramic, brak MIL</td></tr>
+<tr><td>Bateria / czas pracy</td><td>4 750 mAh / <strong>do 25 h</strong></td><td>5 000 mAh / do 22–24 h</td><td>4 000 mAh / do 15–18 h</td></tr>
+<tr><td>Łączność</td><td><strong>5G + Wi-Fi 6E + prywatna 5G/CBRS</strong></td><td>5G + Wi-Fi 6</td><td>5G + Wi-Fi 7</td></tr>
+<tr><td>GPS</td><td><strong>Dual-Band L1+L5 (5 systemów)</strong></td><td>GPS + GLONASS + Galileo</td><td>GPS + GLONASS + Galileo + BeiDou</td></tr>
+<tr><td>Przyciski PTT</td><td><strong>3 programowalne</strong></td><td>Brak</td><td>Brak</td></tr>
+<tr><td>Zarządzanie MDM</td><td><strong>Zebra DNA + StageNow + AER</strong></td><td>Samsung Knox</td><td>Samsung Knox</td></tr>
+<tr><td>Skaner kodów</td><td><strong>Tak (Zebra decoder library)</strong></td><td>Tylko aparat</td><td>Tylko aparat</td></tr>
+<tr><td>Stacja robocza</td><td><strong>Workstation Connect Cradle</strong></td><td>Brak</td><td>Samsung DeX (bezprzewodowy)</td></tr>
+<tr><td>Serwis floty</td><td><strong>Zebra OneCare Essential/Select</strong></td><td>Samsung Care+ (konsumencki)</td><td>Samsung Care+ (konsumencki)</td></tr>
+<tr><td>Aktualizacje bezp.</td><td><strong>LifeGuard — do 10 lat</strong></td><td>6 lat OS + bezp.</td><td>7 lat OS + bezp.</td></tr>
+<tr><td>COPE / profil firmowy</td><td><strong>Tak — natywny</strong></td><td>Knox Workspace</td><td>Knox Workspace</td></tr>
+<tr><td>TCO 5 lat (flota)</td><td>Wyższa cena, <strong>niższy TCO</strong></td><td>Niższa cena, wyższy TCO</td><td>Wysoka cena, wysoki TCO</td></tr>
+</tbody>
+</table>
+
+<h3>Dlaczego EM45 wygrywa w terenie?</h3>
+<ul>
+<li><strong>3 programowalne przyciski fizyczne</strong> (PTT, skan, kamera) — Samsung nie posiada żadnego</li>
+<li><strong>Praca w rękawiczkach</strong>: ekran EM45 obsługuje gloved fingertip input — Samsung A56 wymaga specjalnych rękawic</li>
+<li><strong>PTT przez Zebra WorkCloud Sync</strong> — dwustronna radiotelefonika push-to-talk przez Wi-Fi i sieć komórkową</li>
+<li><strong>Prywatna sieć 5G / CBRS</strong>: magazyny, zakłady przemysłowe — EM45 obsługuje, Samsung nie</li>
+</ul>
+
+<h3>Gdzie Samsung wygrywa?</h3>
+<ul>
+<li>Aparat fotograficzny (S25 Ultra — 3 obiektywy, teleobiektyw 5x)</li>
+<li>Moc obliczeniowa (Snapdragon 8 Elite w S25)</li>
+<li>Ekosystem aplikacji konsumenckich i Samsung DeX bezprzewodowy</li>
+<li>Cena jednostkowa (Galaxy A56 — 2,5x tańszy niż EM45)</li>
+</ul>
+
+<h3>Kiedy wybrać EM45, a kiedy Samsung?</h3>
+<p><strong>EM45</strong>: flota pracownicza 10+ urządzeń, praca w terenie, logistyka, leśnictwo, inspekcje, healthcare, retail z potrzebą skanowania.</p>
+<p><strong>Samsung</strong>: BYOD dla pracowników biurowych, aplikacje sprzedażowe bez wymagań przemysłowych, budżet poniżej 1 500 zł na urządzenie.</p>
+
+<p><strong>Werdykt:</strong> Dla floty 50+ urządzeń roboczych — <a href="/produkt/zebra-em45">EM45</a> jest tańszy w 5-letnim TCO mimo wyższej ceny zakupu. Samsung nie oferuje Zebra OneCare, LifeGuard ani DataWedge — a to są koszty ukryte, które rosną z każdym rokiem eksploatacji.</p>`
+    },
+    {
+      id: 'stacja-dokujaca',
+      heading: 'Stacja dokująca Workstation Connect — telefon staje się komputerem biurowym',
+      content: `<p>Stacja dokująca <strong>CRD-EM4X-1SNWS-01</strong> (Workstation Connect Cradle) zamienia <a href="/produkt/zebra-em45">Zebra EM45</a> w pełnoprawną stację roboczą: <strong>HDMI</strong> (monitor zewnętrzny), <strong>Ethernet</strong> (LAN), <strong>4 porty USB-A</strong> (klawiatura, mysz, inne urządzenia), <strong>jack 3,5 mm</strong> (słuchawki). Jedno urządzenie zamiast telefonu służbowego i laptopa.</p>
+
+<p>Scenariusz użycia: kierownik regionalny rano w biurze podłącza EM45 do stacji — pracuje na pełnym pulpicie z monitorem, klawiaturą i myszką (tryb Desktop Mode). Po południu wyjeżdża w teren z tym samym urządzeniem — zero synchronizacji, zero drugiego sprzętu.</p>
+
+<p>Stacja ładuje urządzenie podczas pracy. Porty zabezpieczone śrubami przed nieautoryzowanym dostępem. Kompatybilna zarówno ze standardowym EM45, jak i z wersją w etui ochronnym (po usunięciu podkładki shimmy). Wymagany zasilacz PWR-BGA12V50W0WW i kabel DC CBL-DC-388A2-01 — sprzedawane osobno.</p>
+
+<h3>Workstation Connect vs Samsung DeX</h3>
+<table>
+<thead><tr><th>Funkcja</th><th>Zebra Workstation Connect</th><th>Samsung DeX</th></tr></thead>
+<tbody>
+<tr><td>Typ połączenia</td><td><strong>Stacja dokująca (kontakty + USB-C)</strong></td><td>Bezprzewodowe (Miracast)</td></tr>
+<tr><td>Porty</td><td><strong>HDMI + Ethernet + 4x USB-A + 3,5 mm</strong></td><td>Brak (BT klawiatura/mysz)</td></tr>
+<tr><td>Ładowanie w trakcie</td><td><strong>Tak</strong></td><td>Nie (zużywa baterię)</td></tr>
+<tr><td>Zarządzanie centralne</td><td><strong>Tak (DNA Cloud)</strong></td><td>Ograniczone</td></tr>
+<tr><td>Bezpieczeństwo</td><td><strong>Śruby, Identity Guardian</strong></td><td>Standardowe</td></tr>
+</tbody>
+</table>
+
+<p><strong>Werdykt:</strong> Jeśli pracownicy Twojej firmy jeżdżą między biurem a terenem — stacja dokująca eliminuje potrzebę osobnego laptopa. Oszczędność na zakupie i utrzymaniu drugiego urządzenia.</p>`
+    },
+    {
+      id: 'lasy-panstwowe-case-study',
+      heading: 'Zebra EM45 w Lasach Państwowych — case study dla leśników i inspektorów terenowych',
+      content: `<p>Polskie Lasy Państwowe zatrudniają <strong>ponad 25 tysięcy pracowników</strong> (stan na 2024), z czego znaczna część to pracownicy terenowi: leśniczowie, nadleśniczowie, inspektorzy, taksatorzy. Pracują w każdych warunkach atmosferycznych — deszcz, śnieg, mróz, upał. Zebra EM45 spełnia wymagania pracy leśnej.</p>
+
+<h3>Wymagania pracy terenowej w Lasach Państwowych</h3>
+<ul>
+<li><strong>Warunki atmosferyczne</strong>: EM45 pracuje w temperaturach 0 do +50 C, przechowywanie -40 do +70 C. IP68+IP65 = deszcz, błoto, żywica, chemikalia ochrony lasu</li>
+<li><strong>Precyzja GPS</strong>: Dual-Band GNSS (GPS, GLONASS, Galileo, BeiDou, QZSS) z pasmami L1+L5 — precyzja sub-metrowa nawet pod koronami drzew (mniejszy multipath error niż GPS L1)</li>
+<li><strong>Dokumentacja fotograficzna</strong>: 50 MP kamera z OIS — szkodniki, choroby drzew, ślady bytowania zwierząt, dokumentacja taksacyjna</li>
+<li><strong>Komunikacja w terenie</strong>: 5G/LTE + PTT przez Zebra WorkCloud Sync — radiotelefonika push-to-talk przez internet, bez dedykowanych urządzeń radiowych</li>
+<li><strong>Skanowanie kodów</strong>: etykiety na drzewach, dokumenty WZ, papiery transportowe drewna</li>
+<li><strong>Praca w rękawiczkach</strong>: ekran EM45 obsługuje dotyk w rękawicach ochronnych</li>
+</ul>
+
+<h3>Co Lasy Państwowe zyskują na EM45 zamiast Samsunga?</h3>
+<ul>
+<li><strong>Trwałość</strong>: Samsung A56 z IP67 nie wystarczy przy kontakcie z żywicą, błotem i chemikaliami ochrony lasu. EM45 z IP68+IP65 i MIL-STD-810H wytrzyma wieloletnią eksploatację</li>
+<li><strong>GPS dual-band</strong>: Samsung A56/S25 — standardowy GPS L1. EM45 — Dual-Band L1+L5, dokładniejszy w terenie zalesionym (mniejszy multipath error pod okapem drzew)</li>
+<li><strong>Bateria</strong>: leśniczy w terenie nie ma dostępu do ładowania. 25 godzin pracy to bufor na długi dzień pracy bez powrotu do nadleśnictwa</li>
+<li><strong>Centralny MDM</strong>: IT Lasów Państwowych może centralnie zarządzać tysiącami urządzeń przez Zebra DNA Cloud / StageNow — push konfiguracji, aktualizacje aplikacji, lokalizacja zagubionych urządzeń (Device Tracker)</li>
+</ul>
+
+<h3>Integracja z systemami LP</h3>
+<p>EM45 jako urządzenie AER-certified integruje się z każdym rozwiązaniem MDM/EMM klasy enterprise. Tryb COPE umożliwia pracownikowi LP korzystanie z EM45 prywatnie (profil osobisty) bez ryzyka wycieku danych służbowych (profil firmowy oddzielony systemowo).</p>
+
+<p><strong>Werdykt:</strong> Dla Lasów Państwowych i podobnych organizacji z dużą flotą terenową — <a href="/produkt/zebra-em45">EM45</a> to inwestycja w 5-letni cykl życia urządzenia z LifeGuard do 10 lat wsparcia, a nie wymiana Samsunga co 2 lata.</p>`
+    },
+    {
+      id: 'zebra-onecare',
+      heading: 'Zebra OneCare — co obejmuje kontrakt serwisowy i dlaczego warto?',
+      content: `<p>Zebra OneCare to kontrakt serwisowy pokrywający <strong>przypadkowe uszkodzenia, normalne zużycie i nielimitowaną wymianę baterii</strong>. Dwa plany: Essential (8x5, naprawa w 3 dni) i Select (24x7, wymiana urządzenia następnego dnia z pre-loaded aplikacjami). LifeGuard for Android — wieloletnie aktualizacje bezpieczeństwa — wymaga aktywnego kontraktu OneCare.</p>
+
+<table>
+<thead><tr><th>Funkcja</th><th>OneCare Essential</th><th>OneCare Select</th></tr></thead>
+<tbody>
+<tr><td>Wsparcie techniczne</td><td>8x5 (godziny pracy)</td><td><strong>24x7 (17 języków)</strong></td></tr>
+<tr><td>Czas naprawy/wymiany</td><td>3 dni robocze</td><td><strong>Następny dzień roboczy</strong></td></tr>
+<tr><td>Urządzenie zastępcze</td><td>Naprawione</td><td><strong>Like-new z pre-loaded apps</strong></td></tr>
+<tr><td>Uszkodzenia przypadkowe</td><td>Tak</td><td>Tak</td></tr>
+<tr><td>Normalne zużycie</td><td>Tak</td><td>Tak</td></tr>
+<tr><td>Wymiana baterii</td><td><strong>Nielimitowana</strong></td><td><strong>Nielimitowana</strong></td></tr>
+<tr><td>LifeGuard for Android</td><td>Tak</td><td>Tak</td></tr>
+<tr><td>Dashboard VisibilityIQ</td><td>Tak</td><td>Tak</td></tr>
+</tbody>
+</table>
+
+<h3>Dlaczego OneCare to nie koszt, a inwestycja?</h3>
+<ul>
+<li><strong>Naprawa ekranu</strong> EM45 bez kontraktu = koszt porównywalny z rocznym OneCare Essential</li>
+<li><strong>Select: zero downtime</strong> — wymiana overnight z pre-zainstalowanymi aplikacjami, pracownik następnego dnia wraca do pracy bez konfigurowania</li>
+<li><strong>Nielimitowana wymiana baterii</strong>: po 2 latach bateria traci pojemność — w OneCare nie płacisz za wymianę</li>
+<li><strong>LifeGuard for Android</strong>: wieloletnie aktualizacje bezpieczeństwa (do 10 lat). Samsung S25 oferuje 7 lat OS — ale bez dedykowanego serwisu floty i bez pokrycia uszkodzeń</li>
+</ul>
+
+<p><strong>Werdykt:</strong> Dla floty 10+ urządzeń — OneCare Essential się zwraca już w pierwszym roku. Dla floty 50+ urządzeń — OneCare Select to standard, nie luksus. Skontaktuj się z <a href="/kontakt">TAKMA</a> po indywidualną wycenę dla floty.</p>`
+    },
+    {
+      id: 'zebra-dna-ai',
+      heading: 'Zebra DNA i możliwości AI w EM45',
+      content: `<p>Zebra Mobility DNA to <strong>ponad 20 aplikacji enterprise</strong> preinstalowanych na każdym urządzeniu Zebra — w tym <a href="/produkt/zebra-em45">EM45</a>. To ekosystem zarządzania, bezpieczeństwa i produktywności, którego Samsung Knox nie oferuje.</p>
+
+<h3>Kluczowe aplikacje Zebra DNA</h3>
+<ul>
+<li><strong>StageNow</strong>: masowe wdrożenie i konfiguracja — skonfiguruj raz, rozlej na 1000 urządzeń</li>
+<li><strong>Enterprise Home Screen</strong>: blokada interfejsu do aplikacji firmowych (kiosk mode)</li>
+<li><strong>Identity Guardian</strong>: MFA z rozpoznawaniem twarzy, SSO, PIN + skan kodu (wymaga licencji)</li>
+<li><strong>Device Tracker</strong>: lokalizacja i odzyskiwanie zagubionych urządzeń</li>
+<li><strong>LifeGuard for Android</strong>: wieloletnie poprawki bezpieczeństwa OTA</li>
+<li><strong>WorkCloud Sync</strong>: PTT + RCS messaging przez Wi-Fi i sieć komórkową</li>
+<li><strong>Workstation Connect</strong>: praca na pełnym pulpicie przez stację dokującą</li>
+<li><strong>DataWedge</strong>: konfiguracja skanowania kodów bez pisania kodu</li>
+</ul>
+
+<h3>Możliwości AI (NPU)</h3>
+<p>Dedykowany NPU w procesorze Qualcomm 5430 uruchamia modele AI lokalnie na urządzeniu — bez połączenia z chmurą, bez opóźnień:</p>
+<ul>
+<li><strong>Małe modele językowe (SLM)</strong>: tłumaczenie i transkrypcja mowy w czasie rzeczywistym — przydatne dla pracowników obsługujących klientów wielojęzycznych</li>
+<li><strong>AI vision</strong>: analiza stanu półek, etykiet, produktów, dokumentów — automatyczne raportowanie</li>
+<li><strong>Pomiary 3D</strong>: z użyciem kamery i Google ARCore — wymiary paczek, palet, przestrzeni</li>
+<li><strong>Generatywny asystent AI</strong>: integracja z chmurą dla zaawansowanych zapytań</li>
+</ul>
+
+<p><strong>Werdykt:</strong> Samsung Knox to solidne rozwiązanie MDM — ale Zebra DNA to cały ekosystem 20+ dedykowanych narzędzi enterprise. Różnica jak między nożem szwajcarskim a kompletnym zestawem narzędzi.</p>`
+    },
+  ],
+  faq: [
+    {
+      question: 'Czym jest Zebra EM45 Enterprise Mobile?',
+      answer: 'Zebra EM45 to enterprise mobile computer z systemem Android 14, certyfikatem Android Enterprise Recommended, odpornością IP68+IP65 i MIL-STD-810H, przeznaczony dla pracowników terenowych w handlu, logistyce, leśnictwie i healthcare. Łączy wygląd smartfona (6,7 cala, 10,7 mm, 243 g) z funkcjami terminala mobilnego. Więcej na karcie produktu <a href="/produkt/zebra-em45">Zebra EM45</a>.',
+    },
+    {
+      question: 'Czy Zebra EM45 jest wodoodporny?',
+      answer: 'Tak. EM45 posiada certyfikaty IP68 (zanurzenie poniżej 1 m) ORAZ IP65 (strumień wody pod ciśnieniem) — podwójna ochrona. W przeciwieństwie do Samsunga Galaxy A56 (IP67), EM45 wytrzymuje kontakt z wodą pod ciśnieniem, np. mycie urządzenia. Dodatkowo MIL-STD-810H gwarantuje odporność na upadki, wibracje i szoki termiczne.',
+    },
+    {
+      question: 'Ile wynosi czas pracy baterii Zebra EM45?',
+      answer: 'Bateria 4 750 mAh zapewnia do 25 godzin pracy w typowych warunkach. Szybkie ładowanie naładuje urządzenie od 0 do 50 % w 30 minut. Technologia PowerPrecision monitoruje kondycję baterii w czasie rzeczywistym. Bateria jest wymienna serwisowo — w kontrakcie Zebra OneCare wymiana jest nielimitowana.',
+    },
+    {
+      question: 'Czy Zebra EM45 obsługuje 5G?',
+      answer: 'Tak. EM45 obsługuje 5G NR Sub-6 (NSA i SA), LTE/NR Carrier Aggregation oraz prywatne sieci 5G/LTE i CBRS. Połączenie Wi-Fi realizowane jest przez Wi-Fi 6E tri-band (2,4 GHz, 5 GHz, 6 GHz) z 2x2 MU-MIMO. Bluetooth 5.3 i NFC uzupełniają łączność.',
+    },
+    {
+      question: 'Co to jest stacja dokująca CRD-EM4X-1SNWS-01?',
+      answer: 'CRD-EM4X-1SNWS-01 to Workstation Connect Cradle dla Zebra EM45. Po podłączeniu zamienia telefon w stację roboczą z portem HDMI (monitor), Ethernet (LAN), 4 portami USB-A (klawiatura, mysz) i jackiem 3,5 mm (słuchawki). Ładuje urządzenie podczas pracy. Porty zabezpieczone śrubami. Wymagany zasilacz i kabel DC — sprzedawane osobno.',
+    },
+    {
+      question: 'Czy Zebra EM45 zastąpi laptopa w terenie?',
+      answer: 'Tak — dzięki stacji Workstation Connect (CRD-EM4X-1SNWS-01) pracownik w biurze używa <a href="/produkt/zebra-em45">EM45</a> jak pełnego komputera stacjonarnego (monitor, klawiatura, mysz, Ethernet). W terenie to samo urządzenie działa jako telefon, skaner kodów i terminal mobilny. Jedno urządzenie zamiast trzech.',
+    },
+    {
+      question: 'Czym jest Zebra OneCare i ile kosztuje?',
+      answer: 'Zebra OneCare to kontrakt serwisowy pokrywający przypadkowe uszkodzenia, normalne zużycie i nielimitowaną wymianę baterii. Essential: wsparcie 8x5, naprawa w 3 dni. Select: wsparcie 24x7, wymiana urządzenia następnego dnia z pre-loaded aplikacjami. Cena OneCare Essential 3 lata: od ok. 950 zł netto. <a href="/kontakt">Skontaktuj się z TAKMA</a> po indywidualną wycenę dla floty.',
+    },
+    {
+      question: 'Czy Zebra EM45 nadaje się do pracy w Lasach Państwowych?',
+      answer: 'Tak. EM45 spełnia wymagania pracy leśnej: IP68+IP65 (deszcz, błoto, żywica), zakres temperatury pracy 0 do +50 C (przechowywanie -40 do +70 C), GPS Dual-Band L1+L5 z 5 systemami satelitarnymi (precyzja sub-metrowa pod koronami drzew), bateria 25 h, kamera 50 MP do dokumentacji i PTT przez WorkCloud Sync zamiast radiotelefonu.',
+    },
+    {
+      question: 'Czym różni się Zebra EM45 od Samsunga Galaxy A56?',
+      answer: '<a href="/produkt/zebra-em45">EM45</a> ma wyższą klasę odporności (IP68+IP65 vs IP67), certyfikat MIL-STD-810H (Samsung go nie ma), 3 programowalne przyciski fizyczne (PTT, skan, kamera), Zebra DNA (20+ aplikacji enterprise) i kontrakt OneCare z serwisem floty. Samsung A56 jest 2,5x tańszy jednostkowo (od ok. 1 114 zł netto), ale droższy w 5-letnim TCO dla floty — brak centralnego serwisu, krótszy cykl wsparcia.',
+    },
+    {
+      question: 'Co to jest LifeGuard for Android w EM45?',
+      answer: 'LifeGuard for Android to program wieloletnich aktualizacji bezpieczeństwa Android od Zebra — do 10 lat wsparcia OTA. Wymaga aktywnego kontraktu Zebra OneCare. Dzięki niemu urządzenia EM45 są zabezpieczane znacznie dłużej niż smartfony konsumenckie (Samsung S25: 7 lat, Galaxy A56: 6 lat).',
+    },
+    {
+      question: 'Czy EM45 obsługuje zarządzanie flotą (MDM/EMM)?',
+      answer: 'Tak. EM45 jest Android Enterprise Recommended i integruje się z każdym rozwiązaniem EMM: Microsoft Intune, SOTI MobiControl, VMware Workspace ONE. Natywnie oferuje Zebra DNA Cloud z StageNow do masowego wdrożenia, Device Tracker do lokalizacji i Enterprise Home Screen do blokowania interfejsu.',
+    },
+    {
+      question: 'Czy Zebra EM45 skanuje kody kreskowe bez dodatkowego skanera?',
+      answer: 'Tak. Aparat 50 MP z biblioteką Zebra Advanced Decoder Library (DataWedge) skanuje kody 1D/2D wszystkich popularnych symbologii. EM45 nie ma dedykowanego imager\'a (jak <a href="/produkt/zebra-tc22">TC22</a> z SE4710) — skanuje kamerowo, ale z profesjonalnymi algorytmami. Lewy przycisk boczny jest domyślnie mapowany jako przycisk skanowania.',
+    },
+  ],
+  relatedLinks: [
+    { title: 'Zebra EM45 — karta produktu', href: '/produkt/zebra-em45' },
+    { title: 'Zebra TC22 — terminal mobilny touch', href: '/produkt/zebra-tc22' },
+    { title: 'Zebra TC27 — terminal mobilny 5G', href: '/produkt/zebra-tc27' },
+    { title: 'Jak wybrać terminal mobilny? Poradnik 2026', href: '/poradnik/jak-wybrac-terminal-mobilny' },
+    { title: 'TOP 10 terminali mobilnych 2026 — ranking', href: '/poradnik/top-10-terminali-mobilnych-2026' },
+    { title: 'Zebra vs Honeywell — terminale mobilne', href: '/poradnik/zebra-vs-honeywell-terminale-mobilne' },
+    { title: 'Terminale mobilne — katalog', href: '/terminale-mobilne' },
+    { title: 'Terminale mobilne Zebra', href: '/terminale-mobilne-zebra' },
+    { title: 'Kontakt i doradztwo', href: '/kontakt' },
+  ]
 }
 ]
 
