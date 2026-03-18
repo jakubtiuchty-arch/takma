@@ -44635,11 +44635,11 @@ TSC MB241T ma 100% recyclable obudowę i opakowanie oraz certyfikat ENERGY STAR.
     shortDescription: 'TSC MB341T — drukarka przemysłowa 4" 300 dpi z dotykowym LCD 3,5", 305 mm/s, bifold door, emulacja ZPL',
     seoTitle: 'TSC MB341T — drukarka etykiet 4" 300 dpi | od 3 273 zł',
     seoDescription: 'TSC MB341T — drukarka etykiet przemysłowa 4" 300 dpi, 305 mm/s, dotykowy LCD, emulacja ZPL, bifold door. Drukarka TSC MB341T. MB341T TSC. PN: MB341T-A001-0202.',
-    description: `TSC MB341T to wersja 300 dpi [drukarki przemysłowej](/przemyslowe-drukarki-etykiet) <a href="/produkt/tsc-mb241t">TSC MB241T</a>. Wyższa rozdzielczość (300 vs 203 dpi) przy zachowaniu pełnej prędkości 305 mm/s — to jedyna drukarka 4" w tej klasie cenowej, która utrzymuje 12 ips przy 300 dpi. Dla porównania <a href="/produkt/zebra-zt231">Zebra ZT231</a> w trybie 300 dpi zwalnia do 203 mm/s (8 ips).
+    description: `TSC MB341T to wersja 300 dpi [drukarki przemysłowej](/przemyslowe-drukarki-etykiet) [TSC MB241T](/produkt/tsc-mb241t). Wyższa rozdzielczość (300 vs 203 dpi) przy zachowaniu pełnej prędkości 305 mm/s — to jedyna drukarka 4" w tej klasie cenowej, która utrzymuje 12 ips przy 300 dpi. Dla porównania [Zebra ZT231](/produkt/zebra-zt231) w trybie 300 dpi zwalnia do 203 mm/s (8 ips).
 
 Dla firm drukujących małe etykiety z drobnym tekstem, kody 2D o wysokiej gęstości (DataMatrix, QR), etykiety farmaceutyczne, laboratoryjne, jubilerskie i metki odzieżowe wymagające ostrego wydruku. TSC MB341T oferuje te same cechy co MB241T: metalowa konstrukcja, składane drzwi bifold (-24% miejsca), dotykowy LCD 3,5", 256 MB RAM/Flash, emulacja ZPL II/EPL/DPL i opcja RFID UHF.
 
-Opcje rozbudowy: gilotyna full cut, odklejak peel-off, nawijak wewnętrzny 5", linerless kit, <a href="/produkt/tsc-modul-wifi-bluetooth">moduł Wi-Fi + Bluetooth</a> i RFID UHF. System TSC Sense Care monitoruje przebieg głowicy i integruje się z SOTI Connect do zdalnego zarządzania flotą.`,
+Opcje rozbudowy: gilotyna full cut, odklejak peel-off, nawijak wewnętrzny 5", linerless kit, [moduł Wi-Fi + Bluetooth](/produkt/tsc-modul-wifi-bluetooth) i RFID UHF. System TSC Sense Care monitoruje przebieg głowicy i integruje się z SOTI Connect do zdalnego zarządzania flotą.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'tsc',
