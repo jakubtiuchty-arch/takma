@@ -8567,7 +8567,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-18',
   updatedAt: '2026-03-18',
   readTime: '12 min',
-  heroImage: '',
+  heroImage: '/images/guides/zebra-zt111-zebra-zt231-ktora-wybrac.jpg',
   sections: [
     {
       id: 'wstep',
