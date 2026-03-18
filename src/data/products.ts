@@ -21692,7 +21692,7 @@ Konstrukcja spełnia normy IP65 + IP68 (ochrona przed kurzem i zanurzeniem) oraz
 
 Koszt posiadania (TCO): Android z wieloletnim wsparciem LifeGuard OTA — najdłuższy cykl wsparcia bezpieczeństwa w klasie smartfonów enterprise. Tryb COPE eliminuje potrzebę kupowania osobnego telefonu prywatnego i służbowego dla pracownika — jedno urządzenie zamiast dwóch = niższy TCO floty.
 
-Zebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCore. Więcej o zastosowaniach EM45 i porównaniu ze smartfonami Samsung A56 i Motorolą ThinkPhone: <a href="/poradnik/zebra-em45-enterprise-mobile-computer">Zebra EM45 — przewodnik zakupowy</a>. Pełna oferta <a href="/terminale-mobilne-zebra">terminali mobilnych Zebra</a>. Dokumentacja techniczna: www.zebra.com/em45.`,
+Zebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCore. Więcej o zastosowaniach EM45 i porównaniu ze smartfonami Samsung A56 i Motorolą ThinkPhone: [Zebra EM45 — przewodnik zakupowy](/poradnik/zebra-em45-enterprise-mobile-computer). Pełna oferta [terminali mobilnych Zebra](/terminale-mobilne-zebra). Dokumentacja techniczna: www.zebra.com/em45.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
