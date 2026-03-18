@@ -7749,7 +7749,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-18',
   updatedAt: '2026-03-18',
   readTime: '14 min',
-  heroImage: '',
+  heroImage: '/images/guides/honeywell-granit-2105-zebra-ds3678xr-porownanie.jpg',
   sections: [
     {
       id: 'wprowadzenie',
