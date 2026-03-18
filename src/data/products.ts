@@ -21679,20 +21679,20 @@ Pełna kompatybilność wsteczna z akcesoriami MC9300: baterie, stacje dokujące
     id: 'zebra-em45',
     slug: 'zebra-em45',
     name: 'Zebra EM45',
-    seoTitle: 'Zebra EM45 — terminal mobilny / smartfon biznesowy 5G | od 2 951 zł',
-    seoDescription: 'Zebra EM45 (EM45B1) — smartfon biznesowy 5G do retail, logistyki i healthcare. Wi-Fi 6E, 6,7" 120 Hz, AI NPU, aparat 50 MP OIS, COPE, IP68. 1 konfiguracja od 2 951 zł netto. EM45B1-3T106B0-A6.',
+    seoTitle: 'Zebra EM45 — smartfon biznesowy 5G, IP68 | od 2 951 zł',
+    seoDescription: 'Zebra EM45 (EM45B1) — smartfon enterprise 5G: Wi-Fi 6E, 50 MP OIS, IP68+IP65+MIL-STD-810H, bateria 4 750 mAh / 25 h, COPE, AI NPU. Od 2 951 zł netto.',
     shortDescription: 'Zebra EM45 — enterprise mobile w formie smartfona, 6,7" FHD+ 120 Hz, 5G, Wi-Fi 6E, aparat 50 MP, NFC, AI (NPU), COPE',
     description: `Dla kogo? Zebra EM45 Enterprise Mobile to korporacyjny komputer mobilny nowej generacji w formie smukłego smartfona (10,7 mm grubości, 243 g), zaprojektowany dla menedżerów sklepów, sprzedawców, kurierów, serwisantów terenowych i koordynatorów logistyki — pracowników, którzy potrzebują jednego urządzenia łączącego niezawodność Zebra z estetyką i intuicyjnością konsumenckiego smartfona.
 
-EM45 wyposażono w procesor Qualcomm 5430 octa-core (2,2 GHz) z dedykowanym NPU (Neural Processing Unit) do zadań AI na urządzeniu — tłumaczenia, transkrypcja, analiza wizualna półek i etykiet. Wyświetlacz 6,7" Full HD+ (2400 × 1080) z odświeżaniem 120 Hz, oleofobową powłoką i obsługą rękawic zapewnia komfort pracy w każdych warunkach. Aparat tylny 50 MP z OIS (optyczna stabilizacja) i nagrywaniem 4K@30 fps umożliwia dokumentację fotograficzną usterek, produktów i dokumentów w jakości profesjonalnej — najlepszy aparat w historii urządzeń Zebra.
+EM45 wyposażono w procesor Qualcomm 5430 octa-core (2,2 GHz) z dedykowanym NPU (Neural Processing Unit) do zadań AI na urządzeniu — tłumaczenia, transkrypcja, analiza wizualna półek i etykiet. Wyświetlacz 6,7" Full HD+ (2400 × 1080) z odświeżaniem 120 Hz, oleofobową powłoką i obsługą rękawic zapewnia komfort pracy w każdych warunkach. Aparat tylny 50 MP z OIS (optyczna stabilizacja) i nagrywaniem 4K@30 fps umożliwia dokumentację fotograficzną usterek, produktów i dokumentów w jakości profesjonalnej — według Zebra najwyższa specyfikacja aparatu w historii urządzeń handheld tej marki.
 
 Łączność obejmuje 5G Sub-6 (NSA/SA), Wi-Fi 6E tri-band (2,4 / 5 / 6 GHz) z 2×2 MU-MIMO, Bluetooth 5.3 i NFC z certyfikacją Apple VAS / ECP 2.0 do płatności zbliżeniowych i identyfikacji. Bateria 4 750 mAh PowerPrecision zapewnia do 25 godzin pracy, a szybkie ładowanie uzupełnia 50 % w 30 minut. Dual SIM (nano-SIM + eSIM) i tryb COPE (Corporate Owned, Personally Enabled) pozwalają na oddzielny profil firmowy i osobisty na jednym urządzeniu.
 
-Konstrukcja spełnia normy IP65 + IP68 (ochrona przed kurzem i zanurzeniem) oraz MIL-STD-810H — upadki z 1,5 m na beton z etui ochronnym, 600 tumble'ów z 0,5 m. Skanowanie kodów 1D/2D kamerowe z algorytmami Zebra Advanced Decoder Library. Ekosystem Zebra Mobility DNA (DataWedge, StageNow, LifeGuard, Device Tracker, Identity Guardian) zapewnia centralne zarządzanie flotą, bezpieczeństwo OTA i szybkie wdrażanie. Wsparcie LifeGuard for Android gwarantuje aktualizacje bezpieczeństwa nawet do 10 lat.
+Konstrukcja spełnia normy IP65 + IP68 (ochrona przed kurzem i zanurzeniem) oraz MIL-STD-810H — upadki z 1,5 m na beton z etui ochronnym, 600 tumble'ów z 0,5 m. Skanowanie kodów 1D/2D kamerowe z algorytmami Zebra Advanced Decoder Library. Ekosystem Zebra Mobility DNA (DataWedge, StageNow, LifeGuard, Device Tracker, Identity Guardian) zapewnia centralne zarządzanie flotą, bezpieczeństwo OTA i szybkie wdrażanie. Wsparcie LifeGuard for Android gwarantuje wieloletnie aktualizacje bezpieczeństwa przez cały cykl życia urządzenia.
 
-Koszt posiadania (TCO): Android z gwarancją aktualizacji przez LifeGuard OTA do 10 lat — najdłuższy cykl wsparcia bezpieczeństwa w klasie smartfonów enterprise. Tryb COPE eliminuje potrzebę kupowania osobnego telefonu prywatnego i służbowego dla pracownika — jedno urządzenie zamiast dwóch = niższy TCO floty.
+Koszt posiadania (TCO): Android z wieloletnim wsparciem LifeGuard OTA — najdłuższy cykl wsparcia bezpieczeństwa w klasie smartfonów enterprise. Tryb COPE eliminuje potrzebę kupowania osobnego telefonu prywatnego i służbowego dla pracownika — jedno urządzenie zamiast dwóch = niższy TCO floty.
 
-Zebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCore. Pełna dokumentacja techniczna dostępna na stronie Zebra: www.zebra.com/em45.`,
+Zebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCore. Więcej o zastosowaniach EM45 i porównaniu ze smartfonami Samsung A56 i Motorolą ThinkPhone: <a href="/poradnik/zebra-em45-enterprise-mobile-computer">Zebra EM45 — przewodnik zakupowy</a>. Pełna oferta <a href="/terminale-mobilne-zebra">terminali mobilnych Zebra</a>. Dokumentacja techniczna: www.zebra.com/em45.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -21704,7 +21704,7 @@ Zebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCo
       'Zebra EM45 Enterprise Mobile — widok z tyłu, aparat 50 MP z OIS i logo Zebra',
     ],
     priceFrom: 2950.76,
-    tags: ['retail', 'logistyka', 'healthcare', 'outdoor'],
+    tags: ['retail', 'logistyka', 'healthcare', 'outdoor', 'magazyn'],
     availability: 'available',
     isNew: true,
     isBestseller: false,
@@ -21726,7 +21726,7 @@ Zebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCo
       { name: '5G / LTE', value: '5G Sub-6 (NSA/SA), 4G LTE-A, 3G' },
       { name: 'Bluetooth', value: '5.3, Classic + BLE' },
       { name: 'NFC', value: 'ISO 14443 A/B, Sony FeliCa, ISO 15693, ECP 1.0/2.0, Apple VAS' },
-      { name: 'GPS', value: 'Dual-Band GNSS: GPS, GLONASS, Galileo, BeiDou, QZSS' },
+      { name: 'GPS', value: 'Dual-Band GNSS L1+L5: GPS, GLONASS, Galileo, BeiDou, QZSS' },
       { name: 'SIM', value: 'Dual SIM (nano-SIM + eSIM), DSDS' },
       { name: 'USB', value: 'USB 3.1 Type-C SuperSpeed (host + client, OTG)' },
       { name: 'Biometria', value: 'Czytnik linii papilarnych (przycisk power) + rozpoznawanie twarzy' },
@@ -21750,6 +21750,7 @@ Zebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCo
       'Hotelarstwo i eventy — recepcja, koordynacja personelu, skanowanie biletów, NFC',
       'Opieka zdrowotna — administracja, śledzenie pacjentów, skanowanie opakowań leków',
       'Serwis terenowy — dokumentacja usterek (50 MP OIS), raporty, nawigacja GPS dual-band',
+      'Leśnictwo i inspekcje terenowe — GPS Dual-Band L1+L5, bateria 25 h, IP68+IP65+MIL-STD-810H, PTT przez WorkCloud',
     ],
     compatibleAccessories: [],
     relatedAccessories: [
@@ -21764,7 +21765,7 @@ Zebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCo
       { name: 'Strona produktu Zebra EM45 (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/em45-series.html', size: 'Online' },
     ],
     servicePlans: [
-      { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-EM45XX-3300', duration: '3 lata', priceNetto: 644.81 },
+      { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-EM45XX-3300', duration: '3 lata', priceNetto: 637.80 },
     ],
     faq: [
       {
@@ -21817,7 +21818,7 @@ Zebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCo
       },
     ],
     comparison: {
-      title: 'Porównanie: Zebra EM45 vs Samsung Galaxy XCover 7 vs Samsung Galaxy S25+',
+      title: 'Porównanie: Zebra EM45 vs Samsung Galaxy XCover 7 vs Motorola ThinkPhone',
       models: [
         {
           name: 'Zebra EM45',
@@ -21833,7 +21834,7 @@ Zebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCo
             'Odporność': 'IP65 + IP68, MIL-STD-810H, 1,5 m',
             'Skanowanie': 'Zebra decoder (1D/2D) + RFID (opcja)',
             'Zarządzanie flotą': 'Mobility DNA, LifeGuard, StageNow',
-            'Wsparcie OS': 'Do 10 lat (LifeGuard OTA)',
+            'Wsparcie OS': 'Wieloletnie (LifeGuard OTA)',
             'Waga / grubość': '243 g / 10,7 mm',
             'Cena od': '2 951 zł netto',
             'Najlepszy do': 'Enterprise — retail, delivery, hospitality',
@@ -21858,21 +21859,21 @@ Zebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCo
           },
         },
         {
-          name: 'Samsung S25+',
+          name: 'Motorola ThinkPhone',
           specs: {
-            'Procesor': 'Snapdragon 8 Elite, 4,47 GHz',
-            'Ekran': '6,7" QHD+ (1440×3120), 120 Hz, AMOLED',
-            'Aparat': '50 MP f/1.8 OIS + 10 MP tele + 12 MP ultra',
-            'RAM / Flash': '12 GB / 256 GB UFS 4.0',
-            'Łączność': '5G, Wi-Fi 7, BT 5.4, NFC',
-            'Bateria': '4 900 mAh — ok. 19 h, 45W + Qi2',
-            'Odporność': 'IP68 (bez MIL-STD)',
+            'Procesor': 'Snapdragon 8+ Gen 1, 3,2 GHz',
+            'Ekran': '6,6" FHD+ (1080×2400), 144 Hz, pOLED',
+            'Aparat': '50 MP f/1.8 OIS + 13 MP ultra + 2 MP depth',
+            'RAM / Flash': '8 GB / 256 GB UFS 3.1',
+            'Łączność': '5G, Wi-Fi 6E, BT 5.2, NFC',
+            'Bateria': '5 000 mAh, 68W TurboPower + Qi',
+            'Odporność': 'IP68, MIL-STD-810H, 1,25 m',
             'Skanowanie': 'Brak natywnego',
-            'Zarządzanie flotą': 'Samsung Knox (konsumencki)',
-            'Wsparcie OS': '7 lat aktualizacji',
-            'Waga / grubość': '190 g / 7,3 mm',
-            'Cena od': '~4 500 zł brutto',
-            'Najlepszy do': 'Flagship konsumencki — nie do pracy w terenie',
+            'Zarządzanie flotą': 'ThinkShield, Moto OEMConfig',
+            'Wsparcie OS': '3 lata (ThinkShield)',
+            'Waga / grubość': '189 g / 8,3 mm',
+            'Cena od': '~2 200 zł brutto',
+            'Najlepszy do': 'Enterprise kompromis — lekki, Ready For Dock',
           },
         },
       ],
