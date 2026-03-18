@@ -8572,7 +8572,7 @@ export const guides: Guide[] = [
     {
       id: 'wstep',
       heading: 'ZT111 vs ZT231 — dwie drukarki, jeden obrys, różne możliwości',
-      content: `<div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-8">
+      content: `<div class="bg-blue-50 border border-blue-200 p-6 rounded-lg mb-8">
 <p class="font-semibold text-blue-900 mb-2">TL;DR — podsumowanie w 50 słowach</p>
 <p class="text-blue-800">ZT111 to ekonomiczna drukarka przemysłowa z plastikową obudową, 5 diodami LED i Print DNA Basic — idealna do prostych zadań logistycznych w ograniczonym budżecie. ZT231 to metalowa obudowa, kolorowy dotykowy 4,3", prędkość 12 ips, RFID opcjonalnie, zegar czasu rzeczywistego i pełny Print DNA. Obie mają identyczne wymiary: 432 x 241 x 279 mm.</p>
 </div>
@@ -8584,7 +8584,7 @@ export const guides: Guide[] = [
     {
       id: 'tabela-porownawcza',
       heading: 'Czym różnią się ZT111 i ZT231? Tabela porównawcza',
-      content: `<div class="bg-gray-50 border-l-4 border-gray-400 p-5 rounded-r-lg mb-6">
+      content: `<div class="bg-gray-50 border border-gray-200 p-5 rounded-lg mb-6">
 <p class="font-semibold text-gray-900 mb-2">Kluczowe różnice w skrócie</p>
 <p class="text-gray-700">ZT111 i ZT231 mają identyczne wymiary (432 x 241 x 279 mm) i tę samą pamięć (256 MB RAM, 256 MB Flash). Różnią się obudową (plastik vs metal), wyświetlaczem (LED vs dotykowy 4,3"), prędkością (10 vs 12 ips), dostępnością RFID i poziomem oprogramowania Print DNA (Basic vs Full).</p>
 </div>
@@ -8647,7 +8647,7 @@ export const guides: Guide[] = [
 
 <p>Plastikowe panele boczne w drukarkach przemysłowych pękają najczęściej przy naprężeniach montażowych (dokręcanie kart opcjonalnych, wymiana głowicy) lub przy upadku z wózka widłowego. Metalowa obudowa ZT231 eliminuje ten problem — ale jednocześnie zwiększa masę o 18%, co może być istotne przy częstym przemieszczaniu drukarki między stanowiskami.</p>
 
-<div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg my-6">
+<div class="bg-blue-50 border border-blue-200 p-5 rounded-lg my-6">
 <p class="font-semibold text-blue-900 mb-1">Werdykt</p>
 <p class="text-blue-800">Lekka logistyka i biuro? ZT111 wystarczy. Hala produkcyjna, środowisko z wibracjami lub chemią? Metalowy ZT231 to jedyny bezpieczny wybór.</p>
 </div>`
@@ -8678,7 +8678,7 @@ export const guides: Guide[] = [
 
 <p>Paradoks: ZT111 ma więcej kolorów LED (5 vs 3 w ZT231), ale to właśnie ZT231 jest łatwiejszy w obsłudze. Ekran zastępuje kody kolorystyczne pełnymi komunikatami tekstowymi — niezależnie od doświadczenia operatora.</p>
 
-<div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg my-6">
+<div class="bg-blue-50 border border-blue-200 p-5 rounded-lg my-6">
 <p class="font-semibold text-blue-900 mb-1">Werdykt</p>
 <p class="text-blue-800">Stały, przeszkolony operator? ZT111 radzi sobie. Zmieniający się personel lub wielozmianowość? Dotykowy ZT231 skróci wdrożenie i zredukuje błędy.</p>
 </div>`
@@ -8709,7 +8709,7 @@ export const guides: Guide[] = [
 
 <p>3 670 dodatkowych etykiet na zmianę wydaje się nieistotne przy wolumenie 500 etykiet/dzień. Ale przy wolumenie <strong>15 000+ etykiet/zmianę</strong> (np. logistyka e-commerce w szczycie sezonu) ZT111 osiąga swój limit przepustowości — i właśnie wtedy przestoje stają się kosztowne. ZT231 oferuje „bufor bezpieczeństwa" wydajności, który jest niewidoczny przy normalnym obciążeniu, ale krytyczny w szczytach.</p>
 
-<div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg my-6">
+<div class="bg-blue-50 border border-blue-200 p-5 rounded-lg my-6">
 <p class="font-semibold text-blue-900 mb-1">Werdykt</p>
 <p class="text-blue-800">&lt; 10 000 etykiet/zmiana? ZT111 wystarczy. Wolumeny wyższe lub praca w 300 dpi? ZT231 daje bufor, którego ZT111 nie ma.</p>
 </div>`
@@ -8740,7 +8740,7 @@ export const guides: Guide[] = [
 </table>
 </div>
 
-<div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg my-6">
+<div class="bg-blue-50 border border-blue-200 p-5 rounded-lg my-6">
 <p class="font-semibold text-blue-900 mb-1">Werdykt</p>
 <p class="text-blue-800">Teraz nie potrzebujesz RFID? ZT111 wystarczy — ale sprawdź, czy za 3 lata wciąż tak będzie. Jeśli jest cień wątpliwości, ZT231 to jednorazowy koszt zamiast dwukrotnej inwestycji.</p>
 </div>`
@@ -8774,7 +8774,7 @@ export const guides: Guide[] = [
 <h3>Kiedy Print DNA Full się zwraca?</h3>
 <p>Przy flocie 10 drukarek ZT111 z Print DNA Basic aktualizacja firmware to ~150 minut kwartalnie (10 x 15 min). ZT231 z Profile Manager Enterprise wykonuje to samo przez sieć w ok. 10 minut dla całej floty. Na rok to 560 minut vs 40 minut — różnica <strong>8,7 godziny IT rocznie</strong>. Przy koszcie IT 150 PLN/h = <strong>1 305 PLN oszczędności rocznie</strong> przy 10 drukarkach.</p>
 
-<div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg my-6">
+<div class="bg-blue-50 border border-blue-200 p-5 rounded-lg my-6">
 <p class="font-semibold text-blue-900 mb-1">Werdykt</p>
 <p class="text-blue-800">1–3 drukarki, prosty setup? Print DNA Basic ZT111 wystarczy. 5+ drukarek, polityka IT lub MPS? Print DNA Full ZT231 jest koniecznością.</p>
 </div>`
@@ -8798,7 +8798,7 @@ export const guides: Guide[] = [
 
 <p>W normie ISO 15764 (SSCC palety) i GS1 EDI, timestamp momentu etykietowania jest wymagany dla pełnej identyfikowalności. Drukarka bez RTC musi synchronizować czas z systemem nadrzędnym — co stwarza ryzyko desynchronizacji przy awariach sieciowych lub restarcie. ZT231 z wbudowanym RTC jest odporny na ten problem: nawet przy braku sieci timestamp jest zawsze poprawny.</p>
 
-<div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg my-6">
+<div class="bg-blue-50 border border-blue-200 p-5 rounded-lg my-6">
 <p class="font-semibold text-blue-900 mb-1">Werdykt</p>
 <p class="text-blue-800">Logistyka, retail, proste etykiety? Brak RTC nie będzie odczuwalny. Healthcare, farmacja, compliance GS1 z automatycznym timestampem? RTC ZT231 to konieczność, nie opcja.</p>
 </div>`
