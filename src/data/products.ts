@@ -794,7 +794,7 @@ export const manufacturers: Manufacturer[] = [
     id: 'zebra',
     slug: 'zebra',
     name: 'Zebra',
-    logo: '/images/manufacturers/zebra.svg',
+    logo: '/images/partners/logo_zebra.png',
     seoTitle: 'Produkty Zebra Technologies | Autoryzowany partner',
     seoDescription: 'Pełna oferta Zebra Technologies - drukarki etykiet, skanery kodów, terminale mobilne, systemy RFID. TAKMA - autoryzowany partner Zebra w Polsce.'
   },
@@ -802,7 +802,7 @@ export const manufacturers: Manufacturer[] = [
     id: 'datalogic',
     slug: 'datalogic',
     name: 'Datalogic',
-    logo: '/images/manufacturers/datalogic.svg',
+    logo: '/images/partners/logo_datalogic.png',
     seoTitle: 'Produkty Datalogic | Terminale mobilne i skanery',
     seoDescription: 'Terminale mobilne i komputery przenośne Datalogic - Memor, Skorpio. Profesjonalne urządzenia do magazynu, logistyki i handlu. TAKMA - autoryzowany partner.'
   },
@@ -810,7 +810,7 @@ export const manufacturers: Manufacturer[] = [
     id: 'newland',
     slug: 'newland',
     name: 'Newland',
-    logo: '/images/manufacturers/newland.svg',
+    logo: '/images/partners/logo_newland.png',
     seoTitle: 'Produkty Newland AIDC | Terminale mobilne i skanery',
     seoDescription: 'Terminale mobilne i kolektory danych Newland AIDC — MT90 Orca, N7 Cachalot, MT93 Megattera. Budżetowa alternatywa dla Zebry. TAKMA — autoryzowany partner AutoID w Polsce.'
   },
@@ -818,7 +818,7 @@ export const manufacturers: Manufacturer[] = [
     id: 'honeywell',
     slug: 'honeywell',
     name: 'Honeywell',
-    logo: '/images/manufacturers/honeywell.svg',
+    logo: '/images/partners/logo_honeywell.png',
     seoTitle: 'Produkty Honeywell | Drukarki etykiet, skanery i terminale',
     seoDescription: 'Drukarki etykiet, skanery kodów i terminale mobilne Honeywell. TAKMA - autoryzowany partner urządzeń AutoID w Polsce.'
   },
@@ -842,7 +842,7 @@ export const manufacturers: Manufacturer[] = [
     id: 'brother',
     slug: 'brother',
     name: 'Brother',
-    logo: '/images/manufacturers/brother.svg',
+    logo: '/images/partners/brother_logo.png',
     seoTitle: 'Drukarki etykiet Brother | Biurkowe drukarki termiczne TD-4D',
     seoDescription: 'Drukarki etykiet Brother — seria TD-4D: biurkowe drukarki termiczne 4 cale z emulacją ZPL II, 3-letnią gwarancją i BarTender w zestawie. TAKMA — autoryzowany partner AutoID w Polsce.'
   },
