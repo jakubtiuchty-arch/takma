@@ -406,7 +406,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           </div>
 
           {/* Product info */}
-          <div className="min-w-0 lg:sticky lg:top-24 lg:self-start lg:pt-5">
+          <div className="min-w-0 lg:sticky lg:top-24 lg:self-start lg:pt-10">
             {/* Title + Manufacturer logo */}
             <div className="flex items-start justify-between gap-4">
               <h1 className="text-2xl xs:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
