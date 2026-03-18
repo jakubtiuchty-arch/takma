@@ -8928,6 +8928,399 @@ export const guides: Guide[] = [
     { title: 'Drukarki przemysłowe — katalog', href: '/przemyslowe-drukarki-etykiet' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]
+},
+// ─── TC22 vs Datalogic Memor 12 ───────────────────────────────────────
+{
+  slug: 'zebra-tc22-vs-datalogic-memor-12-porownanie',
+  title: 'Zebra TC22 vs Datalogic Memor 12 — porównanie terminali mobilnych',
+  seoTitle: 'Zebra TC22 vs Datalogic Memor 12 — porównanie terminali mobilnych',
+  seoDescription: 'TC22 czy Memor 12? Porównujemy Android lifecycle, skaner, ładowanie Qi, IP68 vs IP67 i ekosystem MDM. Wybierz terminal na 5+ lat do sklepu, apteki i magazynu. Ceny od 2 417 zł.',
+  excerpt: 'Zebra TC22 i Datalogic Memor 12 kosztują podobnie — ale dzieli je Android lifecycle (do 16 vs do 18), ładowanie Qi, filozofia skanera i ekosystem MDM. Porównanie dla retail, magazynów i aptek z cenami netto.',
+  category: 'porownanie',
+  tags: ['porownanie', 'terminale-mobilne', 'zebra', 'datalogic', 'tc22', 'memor-12', 'android', 'retail', 'magazyn', 'healthcare'],
+  readTime: '12 min',
+  publishedAt: '2026-03-18',
+  updatedAt: '2026-03-18',
+  heroImage: '',
+  sections: [
+    // ── Sekcja 1: Wstęp ──
+    {
+      id: 'wstep',
+      heading: 'Zebra TC22 vs Datalogic Memor 12 — dwie marki, jedna klasa cenowa, zupełnie inne roadmapy',
+      content: `<p class="text-lg font-semibold text-gray-800 mb-6">TC22 to sprawdzony terminal z ekosystemem Zebra, IP68, baterią do 5 200 mAh i skanerem do 7,6 m zasięgu. Memor 12 stawia na ładowanie Qi, Android aż do wersji 18, szybszy procesor i Green Spot. Obie ceny: ok. 2 400–2 700 zł. Wybór to wybór platformy na 5–8 lat.</p>
+
+<p>Zebra TC22 kosztuje od <strong>2 417 zł netto</strong>. Datalogic Memor 12 od <strong>2 687 zł netto</strong>. Różnica to 270 zł — mniej niż jednorazowy serwis urządzenia. A jednak przez te dwa terminale przechodzi granica między <strong>ekosystemem Zebra</strong> (Mobility DNA, Workstation Connect, RFID sled) a <strong>ekosystemem Datalogic</strong> (Mobility Suite, Qi charging, 6-letni Android).</p>
+
+<p>W tym porównaniu sprawdzamy 8 kluczowych różnic, które decydują o tym, który terminal lepiej służy przez następne 5–8 lat — od Android lifecycle i skanera, przez odporność i ładowanie, po GPS i zarządzanie flotą. Wszystkie dane pochodzą z datasheetów producenckich i cen netto z marca 2026.</p>
+
+<p>Jeśli zastanawiasz się nad wersją z 5G i GPS w ekosystemie Zebra, przeczytaj osobne porównanie: <a href="/poradnik/zebra-tc22-vs-tc27" class="text-primary-600 hover:underline font-medium">Zebra TC22 vs TC27 — Wi-Fi czy 5G?</a></p>`
+    },
+    // ── Sekcja 2: Tabela porównawcza ──
+    {
+      id: 'tabela-porownawcza',
+      heading: 'Czym różni się TC22 od Memor 12? — tabela porównawcza',
+      content: `<div class="overflow-x-auto mb-6">
+<table class="w-full text-sm border-collapse">
+<thead>
+<tr class="bg-gray-50">
+<th class="text-left p-3 border-b-2 border-gray-200 font-semibold">Parametr</th>
+<th class="text-left p-3 border-b-2 border-gray-200 font-semibold">Zebra TC22</th>
+<th class="text-left p-3 border-b-2 border-gray-200 font-semibold">Datalogic Memor 12</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-gray-100"><td class="p-3 font-medium">Cena od</td><td class="p-3"><strong>2 417 zł</strong> netto</td><td class="p-3">2 687 zł netto (+270 zł)</td></tr>
+<tr class="border-b border-gray-100 bg-gray-50/50"><td class="p-3 font-medium">Procesor</td><td class="p-3">Qualcomm 5430 hex-core, 2,1 GHz</td><td class="p-3"><strong>QCx4490 octa-core, 2,4 GHz</strong></td></tr>
+<tr class="border-b border-gray-100"><td class="p-3 font-medium">RAM / Flash</td><td class="p-3"><strong>6/64 GB lub 8/128 GB</strong></td><td class="p-3">6/64 GB (+2 GB SWAP)</td></tr>
+<tr class="border-b border-gray-100 bg-gray-50/50"><td class="p-3 font-medium">Ekran</td><td class="p-3">6" FHD+ 450 nit, Gorilla Glass</td><td class="p-3">6" FHD+ 450 nit, <strong>Gorilla Glass 7</strong></td></tr>
+<tr class="border-b border-gray-100"><td class="p-3 font-medium">Skaner</td><td class="p-3"><strong>SE4710 lub SE55 (do 7,6 m)</strong></td><td class="p-3">Halogen DE2121-DL + Green Spot</td></tr>
+<tr class="border-b border-gray-100 bg-gray-50/50"><td class="p-3 font-medium">Kamera tył / przód</td><td class="p-3"><strong>16 MP</strong> / 5 MP</td><td class="p-3">13 MP / <strong>8 MP</strong></td></tr>
+<tr class="border-b border-gray-100"><td class="p-3 font-medium">Bateria</td><td class="p-3"><strong>3 800 lub 5 200 mAh</strong> (hot-swap)</td><td class="p-3">4 000 mAh (SafeSwap)</td></tr>
+<tr class="border-b border-gray-100 bg-gray-50/50"><td class="p-3 font-medium">Ładowanie Qi</td><td class="p-3">Nie</td><td class="p-3"><strong>Tak (7W EPP)</strong></td></tr>
+<tr class="border-b border-gray-100"><td class="p-3 font-medium">IP / upadki</td><td class="p-3"><strong>IP68</strong>/IP65, 1,5 m</td><td class="p-3">IP65/IP67, 1,3 m (1,5 m z boot)</td></tr>
+<tr class="border-b border-gray-100 bg-gray-50/50"><td class="p-3 font-medium">Bluetooth</td><td class="p-3">5.2</td><td class="p-3"><strong>5.3</strong></td></tr>
+<tr class="border-b border-gray-100"><td class="p-3 font-medium">GPS (model Wi-Fi)</td><td class="p-3">Nie</td><td class="p-3"><strong>Tak — dual-band</strong></td></tr>
+<tr class="border-b border-gray-100 bg-gray-50/50"><td class="p-3 font-medium">Android</td><td class="p-3">do Android 16</td><td class="p-3"><strong>do Android 18</strong> (4+4 lata)</td></tr>
+<tr class="border-b border-gray-100"><td class="p-3 font-medium">Wymiary</td><td class="p-3"><strong>165 x 76,3 x 12,5 mm</strong></td><td class="p-3">165 x 76,7 x 13,5 mm</td></tr>
+<tr class="border-b border-gray-100 bg-gray-50/50"><td class="p-3 font-medium">Waga</td><td class="p-3"><strong>236 g</strong></td><td class="p-3">245 g (+9 g)</td></tr>
+<tr class="border-b border-gray-100"><td class="p-3 font-medium">Ekosystem</td><td class="p-3">Mobility DNA Professional</td><td class="p-3">Datalogic Mobility Suite</td></tr>
+<tr class="border-b border-gray-100 bg-gray-50/50"><td class="p-3 font-medium">RFID</td><td class="p-3"><strong>Tak — sled RFD40/RFD90</strong></td><td class="p-3">Nie</td></tr>
+<tr><td class="p-3 font-medium">Workstation Connect</td><td class="p-3"><strong>Tak</strong></td><td class="p-3">Nie</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Obydwa terminale mają identyczne wymiary bazowe (165 x ~76,5 mm), taki sam ekran 6" FHD+ 450 nit i identyczny zakres temperatur pracy (-10°C do +50°C). Różnice zaczynają się wszędzie tam, gdzie liczy się wieloletnia strategia IT: Android roadmap, metoda ładowania, platforma zarządzania i opcje rozbudowy o RFID.</p>`
+    },
+    // ── Sekcja 3: Android lifecycle ──
+    {
+      id: 'android-lifecycle',
+      heading: 'Android 16 czy Android 18 — ile lat wsparcia dostajesz za 2 400–2 700 zł?',
+      content: `<p><strong>Zebra TC22</strong> jest aktualizowany do <strong>Android 16</strong> z comiesięcznymi łatkami bezpieczeństwa LifeGuard. <strong>Datalogic Memor 12</strong> gwarantuje aktualizację do <strong>Android 18</strong> z modelem wsparcia 4+4 lata (4 lata aktualizacji systemu + 4 lata łatek bezpieczeństwa) — łącznie 8 lat lifecycle.</p>
+
+<p>Co to oznacza w praktyce? Android 16 to wersja z 2025 roku, a Android 18 pojawi się ok. 2027–2028. Kupując terminal w 2026 roku:</p>
+<ul class="list-disc pl-6 space-y-1 mb-4">
+<li>TC22 ma przed sobą 0–1 dużą aktualizację systemu</li>
+<li>Memor 12 ma przed sobą 2–3 duże aktualizacje systemu</li>
+</ul>
+
+<div class="overflow-x-auto mb-6">
+<table class="w-full text-sm border-collapse">
+<thead>
+<tr class="bg-gray-50">
+<th class="text-left p-3 border-b-2 border-gray-200 font-semibold">Model</th>
+<th class="text-left p-3 border-b-2 border-gray-200 font-semibold">Cena</th>
+<th class="text-left p-3 border-b-2 border-gray-200 font-semibold">Lata aktywnego wsparcia</th>
+<th class="text-left p-3 border-b-2 border-gray-200 font-semibold">Koszt / rok wsparcia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-gray-100"><td class="p-3">Zebra TC22</td><td class="p-3">2 417 zł</td><td class="p-3">~4 lata (LifeGuard)</td><td class="p-3">604 zł/rok</td></tr>
+<tr><td class="p-3">Datalogic Memor 12</td><td class="p-3">2 687 zł</td><td class="p-3">~6 lat (4+4)</td><td class="p-3"><strong>448 zł/rok</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Memor 12 jest o 11% droższy w zakupie, ale <strong>tańszy o 26% w przeliczeniu na rok cyklu życia</strong>. Dla firm wymieniających sprzęt rzadziej niż co 4 lata — Memor 12 daje lepszą wartość TCO w kontekście wsparcia systemu operacyjnego.</p>
+
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mt-4">
+<p class="font-semibold text-blue-900 mb-1">Dlaczego lifecycle Androida jest ważny?</p>
+<p class="text-sm text-blue-800">Terminal bez aktualnego Androida traci dostęp do nowych funkcji GMS (Google Mobile Services), łatek bezpieczeństwa i certyfikatów Wi-Fi/NFC. W sieciach handlowych z PCI DSS lub w aptekach z wymogami GIF — brak aktualnych patchy bezpieczeństwa może oznaczać niezgodność regulacyjną.</p>
+</div>`
+    },
+    // ── Sekcja 4: Skaner ──
+    {
+      id: 'skaner-porownanie',
+      heading: 'Skaner enterprise: zasięg 7,6 m (SE55) czy zielona kropka potwierdzenia (Green Spot)?',
+      content: `<h3 class="text-lg font-bold text-gray-900 mb-3">Zebra TC22 — SE4710 lub SE55 Advanced Range</h3>
+<ul class="list-disc pl-6 space-y-1 mb-4">
+<li><strong>SE4710</strong> — skaner standardowy, zasięg do ~35 cm. Optymum do kas, ladów i kompletacji na poziomie ręki</li>
+<li><strong>SE55 Advanced Range</strong> — IntelliFocus, zasięg od 10 cm do <strong>7,6 m</strong> (25 stóp). Skanowanie towarów na regałach wysokiego składowania bez drabiny</li>
+<li>Czas dekodowania: 0,3 s — nawet na kodach uszkodzonych, zadrukowanych lub wyświetlonych na ekranie</li>
+</ul>
+
+<h3 class="text-lg font-bold text-gray-900 mb-3">Datalogic Memor 12 — Halogen DE2121-DL z Green Spot</h3>
+<ul class="list-disc pl-6 space-y-1 mb-4">
+<li><strong>Halogen DE2121-DL</strong> — skaner 1D/2D, zasięg standardowy (do ~1 m)</li>
+<li><strong>Green Spot</strong> — zielony punkt na kodzie po poprawnym odczytaniu. Natychmiastowe potwierdzenie wizualne bez patrzenia na ekran terminala</li>
+<li><strong>DeepSight</strong> — technologia odczytu kodów uszkodzonych, zabrudzonych i słabo wydrukowanych</li>
+<li><strong>GS1 Digital Link</strong> — gotowość na nowy standard kodów 2D zastępujący tradycyjne EAN-13</li>
+</ul>
+
+<div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-4">
+<p class="font-semibold text-amber-900 mb-1">Oszczędność SE55 w magazynie</p>
+<p class="text-sm text-amber-800">W magazynie z regałami 5,5 m: SE55 skanuje z podłogi bez wózka widłowego. Przy 200 skanach na zmianę z wysokich półek i 30 sekund na podjazd wózkiem — SE55 oszczędza ok. <strong>100 minut na zmianę</strong> vs skaner standard range.</p>
+</div>
+
+<p><strong>Werdykt skanera:</strong></p>
+<ul class="list-disc pl-6 space-y-1">
+<li><strong>Wysokie regały, magazyn</strong> — TC22 + SE55 (zasięg 7,6 m bez konkurencji)</li>
+<li><strong>Apteka, healthcare, retail precyzyjny</strong> — Memor 12 + Green Spot (walidacja wzrokowa eliminuje pomyłki)</li>
+<li><strong>Standardowe kompletacje do 1 m</strong> — oba modele równorzędne</li>
+</ul>`
+    },
+    // ── Sekcja 5: Ładowanie Qi ──
+    {
+      id: 'ladowanie-qi',
+      heading: 'Ładowanie bezprzewodowe w Memor 12 — luksus czy realna oszczędność?',
+      content: `<p><strong>Datalogic Memor 12</strong> obsługuje ładowanie bezprzewodowe <strong>Qi EPP 7W</strong> — wystarczy położyć terminal na dedykowanej stacji dokującej lub dowolnej ładowarce Qi. <strong>Zebra TC22</strong> ładuje się wyłącznie przez USB-C lub przewodową stację dokującą z 8-pinowym złączem — bez modułu Qi.</p>
+
+<div class="bg-emerald-50 border border-emerald-200 rounded-lg p-4 mb-4">
+<p class="font-semibold text-emerald-900 mb-1">ROI ładowania bezprzewodowego — obliczenie</p>
+<p class="text-sm text-emerald-800">Flota 30 terminali, 3 ładowania dziennie, 10 sekund na podłączenie/odpięcie kabla = 30 x 3 x 10s x 250 dni roboczych = <strong>62 500 sekund rocznie = ok. 17 godzin pracy operatorów</strong>. Przy koszcie pracy 25 PLN/h to 425 PLN/rok oszczędności na samej obsłudze ładowania.</p>
+</div>
+
+<p>Ale realny argument za Qi jest inny: ładowanie bezprzewodowe eliminuje <strong>zużycie gniazda USB-C</strong> — jedno z najczęstszych uszkodzeń terminali mobilnych po 2–3 latach intensywnej eksploatacji. Każda naprawa gniazda to 200–400 PLN i kilka dni bez urządzenia.</p>
+
+<p>Drugi argument: w <strong>strefach higienicznych</strong> (apteki, szpitale, food processing) kable utrudniają dezynfekcję stacji ładowania. Terminal Qi kładzie się na płaskiej powierzchni — łatwiej utrzymać czystość stanowiska.</p>
+
+<p><strong>Werdykt:</strong> W środowiskach higienicznych i przy flotach 20+ terminali — Qi w Memor 12 to wymierny argument zarówno kosztowy, jak i operacyjny. Dla małych flot (5–10 szt.) i standardowych magazynów — ładowanie przewodowe TC22 jest wystarczające.</p>`
+    },
+    // ── Sekcja 6: Odporność IP68 vs IP67 ──
+    {
+      id: 'odpornosc-ip68-ip67',
+      heading: 'IP68 (TC22) vs IP67 (Memor 12) — czy 1 cyfra robi różnicę?',
+      content: `<div class="overflow-x-auto mb-6">
+<table class="w-full text-sm border-collapse">
+<thead>
+<tr class="bg-gray-50">
+<th class="text-left p-3 border-b-2 border-gray-200 font-semibold">Parametr</th>
+<th class="text-left p-3 border-b-2 border-gray-200 font-semibold">Zebra TC22</th>
+<th class="text-left p-3 border-b-2 border-gray-200 font-semibold">Datalogic Memor 12</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-gray-100"><td class="p-3 font-medium">Uszczelnienie</td><td class="p-3"><strong>IP68 + IP65</strong></td><td class="p-3">IP65 + IP67</td></tr>
+<tr class="border-b border-gray-100 bg-gray-50/50"><td class="p-3 font-medium">Upadki na beton</td><td class="p-3"><strong>1,5 m</strong> (z etui)</td><td class="p-3">1,3 m (1,5 m z rubber boot)</td></tr>
+<tr class="border-b border-gray-100"><td class="p-3 font-medium">Tumble test</td><td class="p-3">500x z 0,5 m</td><td class="p-3">500x z 0,5 m</td></tr>
+<tr class="border-b border-gray-100 bg-gray-50/50"><td class="p-3 font-medium">MIL-STD-810H</td><td class="p-3">Tak</td><td class="p-3">Tak</td></tr>
+<tr class="border-b border-gray-100"><td class="p-3 font-medium">Ekran</td><td class="p-3">Gorilla Glass</td><td class="p-3"><strong>Gorilla Glass 7</strong></td></tr>
+<tr class="border-b border-gray-100 bg-gray-50/50"><td class="p-3 font-medium">Temperatura pracy</td><td class="p-3">-10°C do +50°C</td><td class="p-3">-10°C do +50°C</td></tr>
+<tr><td class="p-3 font-medium">Waga / grubość</td><td class="p-3"><strong>236 g / 12,5 mm</strong></td><td class="p-3">245 g / 13,5 mm</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>IP68 (TC22) oznacza ciągłe zanurzenie w wodzie — głębokość i czas zależą od deklaracji producenta. IP67 (Memor 12) to zanurzenie do 1 m przez 30 minut. W praktyce: TC22 formalnie lepiej znosi wpadnięcie do kadzi czy zalanie wodą, ale Memor 12 z IP67 wytrzymuje standardowe warunki magazynowe i szpitalne bez problemu.</p>
+
+<p>Memor 12 kompensuje niższy IP nowszym szkłem — <strong>Corning Gorilla Glass 7</strong> jest 2x odporniejsze na zarysowania od starszej generacji. TC22 jest za to <strong>lżejszy o 9 g i cieńszy o 1 mm</strong> — przy 8-godzinnej pracy z terminalem w ręce jest minimalnie wygodniejszy (choć 9 g to poniżej progu odczuwalności ergonomicznej, szacowanego na 50–100 g).</p>
+
+<p><strong>Werdykt:</strong> Oba odporne dla 99% środowisk przemysłowych. TC22 formalnie wyższy IP i lżejszy. Memor 12 ma nowsze, twardsze szkło ekranu.</p>`
+    },
+    // ── Sekcja 7: Ekosystem MDM ──
+    {
+      id: 'ekosystem-mdm',
+      heading: 'Mobility DNA (Zebra) vs Datalogic Mobility Suite — co dostaje IT za darmo?',
+      content: `<h3 class="text-lg font-bold text-gray-900 mb-3">Mobility DNA Professional — w cenie TC22</h3>
+<ul class="list-disc pl-6 space-y-1 mb-4">
+<li><strong>DataWedge</strong> — skanowanie do aplikacji WMS/ERP bez programowania</li>
+<li><strong>StageNow</strong> — masowa konfiguracja i staging floty</li>
+<li><strong>Device Tracker</strong> — lokalizacja zagubionych terminali (z lokalizatorem BLE)</li>
+<li><strong>LifeGuard</strong> — comiesięczne łatki bezpieczeństwa Android</li>
+<li><strong>Workstation Connect</strong> — tryb desktopowy: terminal jako komputer stacjonarny z monitorem, klawiaturą i myszą</li>
+</ul>
+
+<h3 class="text-lg font-bold text-gray-900 mb-3">Mobility DNA Enterprise — płatna licencja</h3>
+<ul class="list-disc pl-6 space-y-1 mb-4">
+<li><strong>Wi-Fi 6E</strong> (w TC22 wymaga licencji Enterprise)</li>
+<li>Workforce Connect PTT (Push-to-Talk)</li>
+<li>Zebra DNA Cloud — zdalne zarządzanie i konfiguracja</li>
+</ul>
+
+<h3 class="text-lg font-bold text-gray-900 mb-3">Datalogic Mobility Suite — w cenie Memor 12</h3>
+<ul class="list-disc pl-6 space-y-1 mb-4">
+<li><strong>Shield</strong> — aktualizacje bezpieczeństwa Android</li>
+<li><strong>Scan2Deploy Studio</strong> — konfiguracja i staging</li>
+<li><strong>SoftSpot</strong> — dotykowy przycisk skanowania na ekranie</li>
+<li><strong>QuickBoard</strong> — customizowalna klawiatura enterprise</li>
+<li><strong>Snap OCR</strong> — digitalizacja tekstu kamerą</li>
+<li><strong>Battery Manager</strong> — polityki ładowania i kondycja baterii</li>
+<li><strong>Wi-Fi 6E</strong> — w standardzie, <strong>bez dodatkowych licencji</strong></li>
+</ul>
+
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
+<p class="font-semibold text-blue-900 mb-1">Wi-Fi 6E — ukryty koszt w TC22</p>
+<p class="text-sm text-blue-800">Wi-Fi 6E w Zebra TC22 wymaga dodatkowej licencji Mobility DNA Enterprise. W Datalogic Memor 12 Wi-Fi 6E działa od razu, bez dopłaty. Przy flocie 30 terminali ta różnica licencyjna może sięgać kilku tysięcy złotych rocznie.</p>
+</div>
+
+<p><strong>Zarządzanie EMM/UEM:</strong> Oba terminale obsługują SOTI MobiControl, VMware Workspace ONE i Microsoft Intune. Memor 12 dodatkowo wspiera Ivanti Neurons i Ivanti Avalanche — popularny wybór w środowiskach z terminalami magazynowymi i systemami WMS.</p>
+
+<p><strong>Werdykt:</strong> TC22 z pełnym Mobility DNA Enterprise to bogatszy ekosystem (Workstation Connect, RFID sled, Device Tracker z BLE). Memor 12 Mobility Suite wystarcza dla typowych wdrożeń retail i healthcare — i nie generuje kosztów dodatkowych licencji za Wi-Fi 6E.</p>`
+    },
+    // ── Sekcja 8: Zastosowania branżowe ──
+    {
+      id: 'zastosowania-branzowe',
+      heading: 'Kiedy wybrać TC22, a kiedy Memor 12 — tabela decyzyjna',
+      content: `<div class="overflow-x-auto mb-6">
+<table class="w-full text-sm border-collapse">
+<thead>
+<tr class="bg-gray-50">
+<th class="text-left p-3 border-b-2 border-gray-200 font-semibold">Branża / scenariusz</th>
+<th class="text-center p-3 border-b-2 border-gray-200 font-semibold">TC22</th>
+<th class="text-center p-3 border-b-2 border-gray-200 font-semibold">Memor 12</th>
+<th class="text-left p-3 border-b-2 border-gray-200 font-semibold">Uzasadnienie</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-gray-100"><td class="p-3">Magazyn wysokiego składowania (regały 4–8 m)</td><td class="p-3 text-center"><strong>Tak</strong></td><td class="p-3 text-center">—</td><td class="p-3 text-sm">SE55 skanuje do 7,6 m</td></tr>
+<tr class="border-b border-gray-100 bg-gray-50/50"><td class="p-3">Retail — kompletacja, inwentaryzacja</td><td class="p-3 text-center">Tak</td><td class="p-3 text-center">Tak</td><td class="p-3 text-sm">Oba wystarczą</td></tr>
+<tr class="border-b border-gray-100"><td class="p-3">Apteka — weryfikacja leku, strefy higieniczne</td><td class="p-3 text-center">—</td><td class="p-3 text-center"><strong>Tak</strong></td><td class="p-3 text-sm">Green Spot + Qi bez kabli</td></tr>
+<tr class="border-b border-gray-100 bg-gray-50/50"><td class="p-3">Healthcare — identyfikacja pacjenta, NFC</td><td class="p-3 text-center">Tak</td><td class="p-3 text-center"><strong>Tak</strong></td><td class="p-3 text-sm">Multi-Side NFC, Apple ECP</td></tr>
+<tr class="border-b border-gray-100"><td class="p-3">Food processing — mycie stref</td><td class="p-3 text-center"><strong>Tak</strong></td><td class="p-3 text-center">Tak</td><td class="p-3 text-sm">TC22 wyższy IP68</td></tr>
+<tr class="border-b border-gray-100 bg-gray-50/50"><td class="p-3">Logistyka z GPS (bez SIM)</td><td class="p-3 text-center">—</td><td class="p-3 text-center"><strong>Tak</strong></td><td class="p-3 text-sm">Memor 12 ma GPS, TC22 nie</td></tr>
+<tr class="border-b border-gray-100"><td class="p-3">RFID / Workstation Connect</td><td class="p-3 text-center"><strong>Tak</strong></td><td class="p-3 text-center">—</td><td class="p-3 text-sm">Sledy Zebra RFD40/RFD90</td></tr>
+<tr class="border-b border-gray-100 bg-gray-50/50"><td class="p-3">Istniejąca flota Zebra</td><td class="p-3 text-center"><strong>Tak</strong></td><td class="p-3 text-center">—</td><td class="p-3 text-sm">Wspólne akcesoria TC22 = TC27</td></tr>
+<tr class="border-b border-gray-100"><td class="p-3">Najdłuższy lifecycle Android</td><td class="p-3 text-center">—</td><td class="p-3 text-center"><strong>Tak</strong></td><td class="p-3 text-sm">Android do 18 vs do 16</td></tr>
+<tr><td class="p-3">Mała flota, bez działu IT</td><td class="p-3 text-center">Tak</td><td class="p-3 text-center"><strong>Tak</strong></td><td class="p-3 text-sm">Mobility Suite prostszy</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 class="text-lg font-bold text-gray-900 mb-3">Drzewo decyzyjne — 4 pytania</h3>
+<ol class="list-decimal pl-6 space-y-2 mb-4">
+<li><strong>Czy operatorzy skanują z regałów powyżej 3 m?</strong> Tak — TC22 + SE55</li>
+<li><strong>Czy wdrożenie dotyczy apteki, food lub strefy higienicznej?</strong> Tak — Memor 12 (Qi)</li>
+<li><strong>Czy flota ma już urządzenia Zebra?</strong> Tak — TC22 (spójność ekosystemu, wspólne akcesoria)</li>
+<li>Wszystkie odpowiedzi „Nie" — wybierz wg Android lifecycle: dłuższy (do 18) = Memor 12</li>
+</ol>`
+    },
+    // ── Sekcja 9: GPS w Memor 12 ──
+    {
+      id: 'gps-memor-12',
+      heading: 'Memor 12 ma GPS — a TC22 nie. Co to zmienia?',
+      content: `<p>Mało znany fakt: Datalogic Memor 12 — <strong>model Wi-Fi, bez karty SIM</strong> — posiada wbudowany <strong>GPS dual-band</strong> (A-GPS, Galileo, BeiDou). Zebra TC22 w wersji Wi-Fi <strong>nie ma modułu GPS</strong> — nawigacja satelitarna jest dostępna wyłącznie w modelu <a href="/produkt/zebra-tc27" class="text-primary-600 hover:underline font-medium">Zebra TC27</a> z łącznością 5G/LTE.</p>
+
+<p>Dla kogo GPS w terminalu Wi-Fi ma znaczenie:</p>
+<ul class="list-disc pl-6 space-y-1 mb-4">
+<li><strong>Dostawcy „ostatniej mili"</strong> pracujący w strefach Wi-Fi (hub logistyczny z Wi-Fi i zewnętrzne rampy) — Memor 12 rejestruje trasę i lokalizację, TC22 nie</li>
+<li><strong>Asset tracking w terenie</strong> z zasięgiem Wi-Fi (porty, terminale kontenerowe, parkingi logistyczne)</li>
+<li><strong>Compliance i dokumentacja</strong> — GPS potwierdza lokalizację zdarzenia skanowania, co jest wymagane w niektórych branżach (transport, farmacja)</li>
+</ul>
+
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
+<p class="font-semibold text-blue-900 mb-1">GPS bez abonamentu komórkowego</p>
+<p class="text-sm text-blue-800">Jeśli potrzebujesz GPS, ale nie chcesz płacić za abonament komórkowy — Memor 12 to jedyny terminal Wi-Fi w klasie cenowej do 3 000 PLN z wbudowanym GPS dual-band. Alternatywa to Zebra TC27 (od 2 690 zł), ale TC27 wymaga karty SIM lub eSIM do działania modułu komórkowego.</p>
+</div>
+
+<p>Jeśli potrzebujesz 5G i GPS w ekosystemie Zebra — przeczytaj porównanie: <a href="/poradnik/zebra-tc22-vs-tc27" class="text-primary-600 hover:underline font-medium">Zebra TC22 vs TC27 — Wi-Fi czy 5G?</a>. Jeśli interesuje Cię Datalogic z 5G — odpowiednikiem jest <a href="/produkt/datalogic-memor-17" class="text-primary-600 hover:underline font-medium">Datalogic Memor 17</a> (od 2 991 zł).</p>`
+    },
+    // ── Sekcja 10: Podsumowanie i werdykt ──
+    {
+      id: 'podsumowanie-werdykt',
+      heading: 'TC22 czy Memor 12 — werdykt końcowy',
+      content: `<h3 class="text-lg font-bold text-gray-900 mb-3">Wybierz Zebra TC22, jeśli:</h3>
+<ul class="list-disc pl-6 space-y-1 mb-6">
+<li>Masz regały powyżej 3 m — skaner <strong>SE55 z zasięgiem do 7,6 m</strong> nie ma konkurencji</li>
+<li>Integrujesz <strong>RFID</strong> (sled RFD40/RFD90) lub potrzebujesz <strong>Workstation Connect</strong></li>
+<li>Flota jest już w ekosystemie Zebra — baterie, stacje ładowania i etui TC22 są identyczne z TC27</li>
+<li>Potrzebujesz baterii na 2 zmiany — <strong>5 200 mAh</strong> (w Memor 12 max 4 000 mAh)</li>
+</ul>
+
+<h3 class="text-lg font-bold text-gray-900 mb-3">Wybierz Datalogic Memor 12, jeśli:</h3>
+<ul class="list-disc pl-6 space-y-1 mb-6">
+<li>Praca w <strong>aptece, szpitalu lub food processing</strong> — Qi eliminuje kable w strefach higienicznych</li>
+<li>Zależy Ci na <strong>6 latach lifecycle</strong> (Android do 18, 4+4 wsparcia)</li>
+<li>Potrzebujesz <strong>GPS w urządzeniu Wi-Fi</strong> (bez SIM, bez abonamentu)</li>
+<li>Ekosystem Zebra nie jest wymagany — prostsze licencjonowanie, Wi-Fi 6E bez dopłaty</li>
+</ul>
+
+<h3 class="text-lg font-bold text-gray-900 mb-3">Ceny (marzec 2026)</h3>
+<ul class="list-disc pl-6 space-y-1 mb-6">
+<li><strong>Zebra TC22</strong> (SE4710, 6/64 GB): od <strong>2 417 zł netto</strong></li>
+<li><strong>Datalogic Memor 12</strong> (6/64 GB): od <strong>2 687 zł netto</strong></li>
+</ul>
+
+<!-- Product card tiles -->
+<div class="grid md:grid-cols-2 gap-4 mt-6">
+  <a href="/produkt/zebra-tc22" class="block bg-white border border-gray-200 rounded-xl p-4 hover:shadow-lg hover:border-primary-200 transition-all group">
+    <div class="flex items-center gap-4">
+      <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+        <img src="/images/products/tc22_scanner_1.png" alt="Zebra TC22 — terminal mobilny Wi-Fi 6E" class="max-w-full max-h-full object-contain" />
+      </div>
+      <div class="flex-1 min-w-0">
+        <p class="text-xs text-gray-500 uppercase tracking-wide">Zebra</p>
+        <p class="font-bold text-gray-900 group-hover:text-primary-600 transition-colors">TC22</p>
+        <p class="text-xs text-emerald-700 bg-emerald-50 inline-block px-1.5 py-0.5 rounded mt-1">Dostepny</p>
+        <p class="text-sm font-semibold text-gray-900 mt-1">od 2 417 zł netto</p>
+      </div>
+    </div>
+    <div class="mt-3 text-center">
+      <span class="inline-block bg-[#A8F000] text-gray-900 font-semibold text-sm px-4 py-2 rounded-lg group-hover:bg-[#96D800] transition-colors">Zobacz konfiguracje</span>
+    </div>
+  </a>
+
+  <a href="/produkt/datalogic-memor-12" class="block bg-white border border-gray-200 rounded-xl p-4 hover:shadow-lg hover:border-primary-200 transition-all group">
+    <div class="flex items-center gap-4">
+      <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+        <img src="/images/products/944950001.png" alt="Datalogic Memor 12 — terminal mobilny z Qi i Green Spot" class="max-w-full max-h-full object-contain" />
+      </div>
+      <div class="flex-1 min-w-0">
+        <p class="text-xs text-gray-500 uppercase tracking-wide">Datalogic</p>
+        <p class="font-bold text-gray-900 group-hover:text-primary-600 transition-colors">Memor 12</p>
+        <p class="text-xs text-emerald-700 bg-emerald-50 inline-block px-1.5 py-0.5 rounded mt-1">Dostepny</p>
+        <p class="text-sm font-semibold text-gray-900 mt-1">od 2 687 zł netto</p>
+      </div>
+    </div>
+    <div class="mt-3 text-center">
+      <span class="inline-block bg-[#A8F000] text-gray-900 font-semibold text-sm px-4 py-2 rounded-lg group-hover:bg-[#96D800] transition-colors">Zobacz konfiguracje</span>
+    </div>
+  </a>
+</div>
+
+<p class="mt-6 text-sm text-gray-600">Potrzebujesz wersji z 5G? <a href="/poradnik/zebra-tc22-vs-tc27" class="text-primary-600 hover:underline font-medium">TC22 vs TC27</a> | <a href="/produkt/datalogic-memor-17" class="text-primary-600 hover:underline font-medium">Datalogic Memor 17</a></p>`
+    },
+  ],
+  faq: [
+    {
+      question: 'Jaka jest główna różnica między Zebra TC22 a Datalogic Memor 12?',
+      answer: 'TC22 to terminal z ekosystemem Zebra: bateria do 5 200 mAh, skaner SE55 zasięgu 7,6 m, Mobility DNA, Workstation Connect i RFID sledy. Memor 12 to Datalogic z ładowaniem bezprzewodowym Qi 7W, Androidem do wersji 18 (o 2 wersje dłużej niż TC22), wbudowanym GPS dual-band i skanerem Green Spot. Ceny: <a href="/produkt/zebra-tc22">TC22</a> od 2 417 zł vs <a href="/produkt/datalogic-memor-12">Memor 12</a> od 2 687 zł (+270 zł).'
+    },
+    {
+      question: 'Który terminal ma dłuższe wsparcie Androida — TC22 czy Memor 12?',
+      answer: 'Datalogic Memor 12 ma dłuższe wsparcie. Producent gwarantuje aktualizację do Android 18 z modelem 4+4 lata (wsparcie sprzętowe + software\'owe) — łącznie 8 lat lifecycle. Zebra TC22 otrzyma aktualizacje do Android 16 (LifeGuard). Przy zakupie w 2026 r. Memor 12 daje 2–3 dodatkowe duże wersje systemu przed końcem wsparcia. Koszt na rok lifecycle: TC22 ~604 zł/rok, Memor 12 ~448 zł/rok (tańszy o 26%).'
+    },
+    {
+      question: 'Czy Datalogic Memor 12 ma ładowanie bezprzewodowe?',
+      answer: 'Tak. <a href="/produkt/datalogic-memor-12">Memor 12</a> obsługuje ładowanie bezprzewodowe Qi EPP 7W — bezprzewodowe stacje dokujące 1-slot i 4-slot. <a href="/produkt/zebra-tc22">Zebra TC22</a> nie ma modułu Qi: ładowanie odbywa się przez USB-C lub przewodową stację dokującą. W środowiskach higienicznych (apteka, food, szpital) brak kabli redukuje ryzyko uszkodzeń portu USB-C i ułatwia dezynfekcję stanowisk ładowania.'
+    },
+    {
+      question: 'Czy Zebra TC22 może skanować kody na regałach 5 metrów?',
+      answer: 'Tak — ale tylko wersja z modułem SE55 Advanced Range (IntelliFocus). Zasięg SE55 to od 10 cm do 7,6 m (25 stóp) — wystarczy do skanowania z podłogi na regały wysokiego składowania bez drabiny czy wózka. Wersja z SE4710 ma zasięg do ~35 cm. Datalogic Memor 12 ze skanerem Halogen DE2121 (zasięg do ~1 m) nie nadaje się do skanowania wysokich półek — wymaga wózka lub drabiny.'
+    },
+    {
+      question: 'Ile kosztuje TC22 vs Memor 12 w 2026 roku?',
+      answer: '<a href="/produkt/zebra-tc22">Zebra TC22</a> z SE4710 i 6/64 GB kosztuje od 2 417 zł netto. <a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a> z 6/64 GB — od 2 687 zł netto (różnica 270 zł, +11%). W ujęciu kosztu na rok wsparcia Android: TC22 ok. 604 zł/rok, Memor 12 ok. 448 zł/rok. Memor 12 jest tańszy o 26% w przeliczeniu na rok cyklu życia urządzenia.'
+    },
+    {
+      question: 'Który terminal jest bardziej odporny — TC22 (IP68) czy Memor 12 (IP67)?',
+      answer: 'TC22 ma wyższą klasę uszczelnienia IP68 (ciągłe zanurzenie w wodzie). Memor 12 ma IP65 + IP67 (zanurzenie do 1 m przez 30 min). W praktyce oba są w pełni wystarczające dla magazynu, retailu i healthcare. Różnica istotna jedynie przy długim zanurzeniu — TC22 wytrzymuje głębsze i dłuższe zanurzenie wg specyfikacji producenta. Memor 12 kompensuje to nowszym szkłem Gorilla Glass 7.'
+    },
+    {
+      question: 'Czy Zebra TC22 ma GPS?',
+      answer: 'Nie. TC22 (model Wi-Fi) nie posiada modułu GPS — nawigacja satelitarna dostępna jest wyłącznie w <a href="/produkt/zebra-tc27">Zebra TC27</a> (5G/LTE, od 2 690 zł). Natomiast <a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a> ma wbudowany GPS dual-band (A-GPS, Galileo, BeiDou) nawet w wersji Wi-Fi. Dla firm potrzebujących GPS bez abonamentu komórkowego Memor 12 jest jedynym rozwiązaniem w tej klasie cenowej.'
+    },
+    {
+      question: 'Czym różni się Mobility DNA od Datalogic Mobility Suite?',
+      answer: 'Mobility DNA (Zebra) to bogatszy ekosystem: DataWedge (skanowanie bez kodu), StageNow (staging), Device Tracker (lokalizacja BLE), LifeGuard (łatki), Workstation Connect (tryb desktop). Wersja Professional jest bezpłatna, Enterprise (Wi-Fi 6E, PTT, DNA Cloud) — płatna. Datalogic Mobility Suite to Shield (security patches), Scan2Deploy (staging), SoftSpot (trigger on-screen), Battery Manager i Snap OCR — bez dodatkowych licencji za Wi-Fi 6E.'
+    },
+    {
+      question: 'Kiedy wybrać TC22 zamiast Memor 12?',
+      answer: '<a href="/produkt/zebra-tc22">TC22</a> jest właściwym wyborem gdy: (1) regały powyżej 3 m — SE55 z zasięgiem do 7,6 m; (2) RFID jest wymagane lub planowane (sled RFD40/RFD90); (3) flota zawiera już urządzenia Zebra — wspólne akcesoria TC22/TC27; (4) Workstation Connect jest potrzebny (tryb desktop na monitorze); (5) wymagana bateria 5 200 mAh na dwie zmiany robocze.'
+    },
+    {
+      question: 'Kiedy wybrać Memor 12 zamiast TC22?',
+      answer: '<a href="/produkt/datalogic-memor-12">Memor 12</a> wygrywa gdy: (1) środowisko higieniczne wymaga ładowania Qi (apteka, szpital, food processing); (2) zależy na Androidzie do wersji 18 i 4+4 latach wsparcia; (3) potrzebujesz GPS bez płatnego abonamentu komórkowego; (4) GS1 Digital Link jest wymagany przez dostawcę; (5) ekosystem Zebra nie jest koniecznością i chcesz Wi-Fi 6E bez dodatkowej licencji.'
+    },
+  ],
+  relatedLinks: [
+    { title: 'Zebra TC22 — karta produktu', href: '/produkt/zebra-tc22' },
+    { title: 'Datalogic Memor 12 — karta produktu', href: '/produkt/datalogic-memor-12' },
+    { title: 'Zebra TC22 vs TC27 — Wi-Fi czy 5G?', href: '/poradnik/zebra-tc22-vs-tc27' },
+    { title: 'Zebra TC27 — terminal 5G z GPS', href: '/produkt/zebra-tc27' },
+    { title: 'Jak wybrać terminal mobilny?', href: '/poradnik/jak-wybrac-terminal-mobilny' },
+    { title: 'Terminale mobilne — katalog', href: '/terminale-mobilne' },
+    { title: 'Kontakt i doradztwo', href: '/kontakt' },
+  ]
 }
 ]
 

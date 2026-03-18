@@ -7,7 +7,7 @@ import type { Guide } from '@/data/guides'
 import { guideCategoryLabels } from '@/data/guides'
 
 const DRUKARKI_TAGS = ['drukarki-etykiet', 'termiczna', 'termotransferowa', 'baselinker', 'mikroetykiety', 'zd421t', 'zd621', 'zt111', 'zt231', 'zt411', 'zt510', 'zt610', 'pc45t']
-const TERMINALE_TAGS = ['terminale-mobilne', 'terminal-mobilny', 'tc22', 'tc27', 'tc58', 'tc58e', 'tc501', 'mc3400', 'mc9400', 'kolektor-danych', 'inwentaryzacja', 'em45', 'enterprise-mobile']
+const TERMINALE_TAGS = ['terminale-mobilne', 'terminal-mobilny', 'tc22', 'tc27', 'tc58', 'tc58e', 'tc501', 'mc3400', 'mc9400', 'kolektor-danych', 'inwentaryzacja', 'em45', 'enterprise-mobile', 'datalogic', 'memor-12']
 const SKANERY_TAGS = ['skanery', 'skanery-kodow-kreskowych', 'skaner Zebra', 'skaner kodów kreskowych', 'DS2208', 'DS3608', 'DS9308', 'ds3678-xr', 'granit-ultra-2105i', 'ultra-rugged']
 
 type FilterKey = 'wszystkie' | 'drukarki' | 'terminale' | 'skanery'
