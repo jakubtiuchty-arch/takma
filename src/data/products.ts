@@ -5290,7 +5290,7 @@ Standardowe interfejsy: USB 2.0, RS-232, Ethernet 10/100, USB Host i Bluetooth L
 
 Platforma Zebra Print DNA zapewnia kompletny zestaw narzędzi IT: Printer Profile Manager Enterprise do zdalnego zarządzania flotą, PrintSecure do ochrony przed cyberatakami, Visibility Services do monitoringu statusu i Cloud Connect do integracji z chmurą. Analityka on-board oraz wykrywanie uszkodzonych elementów głowicy (printhead element out detection) pomagają planować konserwację predykcyjną. Certyfikat ENERGY STAR potwierdza niskie zużycie energii.
 
-Kluczowa przewaga ZT231 nad modelem ZT111: kolorowy ekran dotykowy 4,3" (vs monochromatyczny LCD), metalowe obudowy (vs plastikowe w ZT111), wyższa prędkość druku 304 mm/s (vs 254 mm/s), obsługa opcjonalnego kodowania RFID UHF i emulacja drukarek EPL/EPL2. ZT231 jest idealnym wyborem dla firm produkcyjnych, logistycznych i magazynowych, które potrzebują niezawodnej drukarki przemysłowej o kompaktowych wymiarach i intuicyjnej obsłudze — bez kompromisów w zakresie prędkości, jakości druku i możliwości rozbudowy.
+Kluczowa przewaga ZT231 nad modelem ZT111: kolorowy ekran dotykowy 4,3" (vs 5-kolorowe diody LED i 3 przyciski w ZT111), metalowe obudowy (vs plastikowe w ZT111), wyższa prędkość druku 304 mm/s (vs 254 mm/s), obsługa opcjonalnego kodowania RFID UHF i emulacja drukarek EPL/EPL2. ZT231 jest idealnym wyborem dla firm produkcyjnych, logistycznych i magazynowych, które potrzebują niezawodnej drukarki przemysłowej o kompaktowych wymiarach i intuicyjnej obsłudze — bez kompromisów w zakresie prędkości, jakości druku i możliwości rozbudowy.
 
 Zebra ZT231 to uniwersalna drukarka etykiet klasy light-industrial, która sprawdzi się jako drukarka kodów kreskowych w magazynach, centrach dystrybucyjnych i na liniach produkcyjnych. Jako drukarka termotransferowa obsługuje trwałe etykiety na taśmach woskowych, woskowo-żywicznych i żywicznych — od papierowych etykiet magazynowych po syntetyczne oznaczenia produktów. Jeśli potrzebujesz 600 dpi, linerless lub nawijaka full rewind, rozważ model [ZT411](/produkt/zebra-zt411) — pełne porównanie z cenami i TCO: [ZT231 vs ZT411](/poradnik/zebra-zt231-vs-zt411-porownanie).
 
@@ -5434,7 +5434,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     faq: [
       {
         question: 'Czym różni się Zebra ZT231 od ZT111?',
-        answer: 'ZT231 to wyższy model w linii drukarek przemysłowych Zebra. Kluczowe różnice: kolorowy dotykowy wyświetlacz 4,3" (vs monochromatyczny LCD w ZT111), metalowe obudowy (vs plastikowe w ZT111), wyższa prędkość druku 304 mm/s (vs 254 mm/s), obsługa opcjonalnego kodowania RFID UHF i emulacja drukarek EPL/EPL2. ZT231 waży 9,1 kg (vs 7,7 kg) i jest przeznaczona do bardziej wymagających środowisk przemysłowych.',
+        answer: 'ZT231 to wyższy model w linii drukarek przemysłowych Zebra. Kluczowe różnice: kolorowy dotykowy wyświetlacz 4,3" (vs 5-kolorowe diody LED i 3 przyciski w ZT111), metalowe obudowy (vs plastikowe w ZT111), wyższa prędkość druku 304 mm/s (vs 254 mm/s), obsługa opcjonalnego kodowania RFID UHF i emulacja drukarek EPL/EPL2. ZT231 waży 9,1 kg (vs 7,7 kg) i jest przeznaczona do bardziej wymagających środowisk przemysłowych.',
       },
       {
         question: 'Czy Zebra ZT231 obsługuje kodowanie RFID?',
@@ -5594,7 +5594,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       { name: 'Interfejsy standardowe', value: 'USB 2.0, USB Host, RS-232, Ethernet 10/100, Bluetooth LE' },
       { name: 'Interfejsy opcjonalne', value: 'Wi-Fi 802.11ac, dodatkowy Ethernet 10/100' },
       { name: 'Pamięć', value: '256 MB SDRAM, 256 MB Flash' },
-      { name: 'Języki programowania', value: 'ZPL II, EPL2 (tylko DT 203 dpi), ZBI 2.0 (opcja), PDF Direct' },
+      { name: 'Języki programowania', value: 'ZPL II, EPL2 (tylko 203 dpi), ZBI 2.0 (opcja), PDF Direct' },
       { name: 'Kody 1D', value: 'Code 39, Code 128, EAN-13, EAN-8, UPC-A, UPC-E, ITF, Codabar, Code 93, Code 11, GS1-128' },
       { name: 'Kody 2D', value: 'QR Code, DataMatrix, PDF417, Aztec, MaxiCode, MicroPDF417, GS1 DataBar' },
       { name: 'Głowica', value: 'E3™ Element Energy™ Equalizer — thin film' },
