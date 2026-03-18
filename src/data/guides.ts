@@ -7734,6 +7734,234 @@ export const guides: Guide[] = [
     { title: 'Drukarka termiczna vs termotransferowa', href: '/poradnik/drukarka-termiczna-vs-termotransferowa' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]
+},
+// ─────────────────────────────────────────────────────────────────
+// 18. Honeywell Granit Ultra 2105i vs Zebra DS3678-XR
+// ─────────────────────────────────────────────────────────────────
+{
+  slug: 'honeywell-granit-ultra-2105i-vs-zebra-ds3678-xr',
+  title: 'Honeywell Granit Ultra 2105i vs Zebra DS3678-XR — który skaner ultra-rugged wybrać?',
+  seoTitle: 'Granit Ultra 2105i vs Zebra DS3678-XR — porównanie skanerów | TAKMA',
+  seoDescription: 'Honeywell Granit Ultra 2105i (od 2 574 zl) vs Zebra DS3678-XR (od 3 237 zl) — porownanie skanerow ultra-rugged. Zasieg 10 m vs 32 m, bateria, Industrial Ethernet, ceny netto. Granit 2105i vs DS3678, skaner dalekiego zasiegu do magazynu.',
+  excerpt: 'Honeywell Granit Ultra 2105i (od 2 574 zl) — AI decoding, 100 000 skanow na baterii. Zebra DS3678-XR (od 3 237 zl) — zasieg 32 m, Industrial Ethernet, FIPS. Ktory lepszy do magazynu, produkcji i automatyki?',
+  category: 'porownanie' as const,
+  tags: ['skanery-kodow-kreskowych', 'ultra-rugged', 'honeywell', 'zebra', 'granit-ultra-2105i', 'ds3678-xr', 'porownanie', 'magazyn', 'produkcja', 'industrial-ethernet'],
+  publishedAt: '2026-03-18',
+  updatedAt: '2026-03-18',
+  readTime: '14 min',
+  heroImage: '',
+  sections: [
+    {
+      id: 'wprowadzenie',
+      heading: 'Honeywell Granit Ultra 2105i vs Zebra DS3678-XR — TL;DR',
+      content: `<p><strong><a href="/produkt/honeywell-granit-ultra-2105i">Honeywell Granit Ultra 2105i</a></strong> (od 2 574 zl netto) to ultra-wytrzymaly skaner bezprzewodowy z AI-wspomaganym dekodowaniem i bateria na 100 000 skanow. <strong><a href="/produkt/zebra-ds3678-xr">Zebra DS3678-XR</a></strong> (od 3 237 zl netto) oferuje rekordowy zasieg skanowania do 32 metrow, Industrial Ethernet (EtherNet/IP, Profinet) i certyfikat FIPS 140-2. Honeywell lepszy cenowo i na slabych kodach, Zebra — gdy liczy sie zasieg i integracja z automatyka.</p>
+
+<p>Oba skanery to flagowe modele ultra-rugged swoich marek: IP65/IP68, 3 m upadku na beton, 7 500 tumbles z 1 metra, Bluetooth Class 1 z zasiegiem 100 m. Na pierwszy rzut oka identyczne w wytrzymalosci — ale radykalnie rozne w zasiegu skanowania, mozliwosciach integracji i cenie. Ten poradnik pomoze Ci wybrac wlasciwy model na podstawie Twojego scenariusza pracy.</p>`
+    },
+    {
+      id: 'tabela-porownawcza',
+      heading: 'Czym roznia sie Granit Ultra 2105i i DS3678-XR? Tabela porownawcza',
+      content: `<p>Ponizej 12 kluczowych parametrow decyzyjnych — nie pelna specyfikacja, a kryteria, ktore faktycznie wplywaja na wybor. Pelne dane techniczne znajdziesz na kartach produktow: <a href="/produkt/honeywell-granit-ultra-2105i">Granit Ultra 2105i</a> | <a href="/produkt/zebra-ds3678-xr">DS3678-XR</a>.</p>
+
+<table>
+<thead><tr><th>Parametr</th><th>Honeywell Granit Ultra 2105i</th><th>Zebra DS3678-XR</th></tr></thead>
+<tbody>
+<tr><td>Cena netto od</td><td><strong>2 574 zl</strong></td><td>3 237 zl</td></tr>
+<tr><td>Zasieg (100 mil Code 39)</td><td>10,85 m</td><td><strong>32 m</strong></td></tr>
+<tr><td>Zasieg (13 mil UPC)</td><td>1,78 m</td><td><strong>3,7 m</strong></td></tr>
+<tr><td>Waga (z bateria)</td><td>425 g</td><td><strong>410 g</strong></td></tr>
+<tr><td>Bateria / skanow na ladowanie</td><td><strong>3 300 mAh / 100 000</strong></td><td>3 100 mAh / 80 000</td></tr>
+<tr><td>IP</td><td>IP65 + IP68</td><td>IP65 + IP68</td></tr>
+<tr><td>Upadek na beton</td><td>3,0 m</td><td>3,0 m</td></tr>
+<tr><td>Bluetooth</td><td>4.2, Class 1, 100 m</td><td>4.0 LE, Class 1, 100 m</td></tr>
+<tr><td>Industrial Ethernet</td><td>Brak</td><td><strong>EtherNet/IP, Profinet, Modbus TCP</strong></td></tr>
+<tr><td>Min. kontrast druku</td><td><strong>15%</strong></td><td>25%</td></tr>
+<tr><td>FIPS / TAA</td><td>Brak</td><td><strong>FIPS 140-2, TAA</strong></td></tr>
+<tr><td>Gwarancja</td><td>3 lata</td><td>3 lata</td></tr>
+</tbody>
+</table>`
+    },
+    {
+      id: 'zasieg-skanowania',
+      heading: 'Ktory skaner ma wiekszy zasieg — Granit Ultra 2105i czy DS3678-XR?',
+      content: `<p><a href="/produkt/zebra-ds3678-xr">Zebra DS3678-XR</a> ma zdecydowanie wiekszy zasieg — odczytuje kody 100 mil Code 39 z odleglosci do 32 metrow, czyli prawie 3x dalej niz <a href="/produkt/honeywell-granit-ultra-2105i">Honeywell Granit Ultra 2105i</a> XR (10,85 m). Dla kodow 13 mil UPC Zebra skanuje z 3,7 m, Honeywell z 1,78 m — ponad 2x wieksza roznica.</p>
+
+<p>Zebra DS3678-XR jest wyposazony w technologie IntelliFocus z dwoma sensorami (near 1 280 x 800 px + far 1 920 x 1 080 px), ktore automatycznie przelaczaja sie miedzy bliskim a dalekim zakresem — bez konfiguracji operatora. Zielony laser celowniczy 520 nm jest 7x lepiej widoczny dla ludzkiego oka niz czerwona kropka, co ma kluczowe znaczenie przy skanowaniu z odleglosci 20-30 metrow na placach skladowych i w magazynach wysokiego skladowania.</p>
+
+<p>Honeywell Granit Ultra 2105i XR kompensuje mniejszy zasieg technologia AI decoding — algorytmy sztucznej inteligencji przyspieszaja dekodowanie o 45% w porownaniu z poprzednia generacja (Granit XP). Skaner lepiej radzi sobie z uszkodzonymi, niskokontrastowymi kodami (tolerancja od 15% kontrastu vs 25% u Zebry) — to istotna roznica na liniach produkcyjnych, gdzie kody sa porysowane, pod folia lub zamoczone.</p>
+
+<p><strong>Werdykt:</strong> Magazyn wysokiego skladowania (regaly 8-15 m), place skladowe, doki zaladunkowe — <a href="/produkt/zebra-ds3678-xr">Zebra DS3678-XR</a> jest jedynym sensownym wyborem. Skanowanie na dystansie reki do ~5 m (linia produkcyjna, stanowisko pakowania) — <a href="/produkt/honeywell-granit-ultra-2105i">Honeywell Granit Ultra 2105i</a> wystarcza i kosztuje 26% mniej. Uszkodzone, niskokontrastowe kody — Honeywell wygrywa dzieki AI i tolerancji 15%.</p>`
+    },
+    {
+      id: 'wytrzymalosc',
+      heading: 'Ktory skaner jest bardziej wytrzymaly — IP65, IP68, upadki, temperatura?',
+      content: `<p>Oba skanery maja praktycznie identyczna wytrzymalosc — IP65/IP68, 3 m upadku na beton, 7 500 tumbles z 1 metra. To remis w klasie ultra-rugged. Obie konstrukcje przetrwaja najtrudniejsze warunki przemyslowe — od mrozni po place kontenerowe.</p>
+
+<p>Szczegoly wedlug oficjalnych specyfikacji producentow:</p>
+<ul>
+<li><strong>Honeywell:</strong> 3,0 m upadku (MIL-STD-810G, 25°C), 2,5 m przy temperaturze -20°C do +50°C. Wibracje: 5G (5-300 Hz).</li>
+<li><strong>Zebra:</strong> 3,0 m upadku (room temp), 2,4 m w temperaturze -20°C do +50°C. Trigger testowany na 3 miliony cykli.</li>
+<li><strong>IP68</strong> u obu oznacza zanurzenie w wodzie — oba przetrwaja mycie pod cisnieniem i prace w deszczu.</li>
+<li><strong>Temperatura pracy bezprzewodowa:</strong> identyczna -20°C do +50°C.</li>
+<li><strong>Zebra przewodowa (DS3608-XR):</strong> pracuje od <strong>-30°C</strong> — dodatkowe 10°C na mrozie to realna przewaga w chlodniach glebokiego mrozu.</li>
+</ul>
+
+<p><strong>Werdykt:</strong> Standardowe srodowiska przemyslowe (magazyn, produkcja, plac) — pelny remis. Chlodnie glebokiego mrozu ponizej -20°C — <a href="/produkt/zebra-ds3608-xr">Zebra DS3608-XR (przewodowa)</a> ma przewage dzieki pracy od -30°C. Srodowiska z intensywna wilgocia i myciem pod cisnieniem — obie wystarczaja (IP65+IP68).</p>`
+    },
+    {
+      id: 'bateria',
+      heading: 'Ktory skaner ma lepsza baterie i autonomie?',
+      content: `<p><a href="/produkt/honeywell-granit-ultra-2105i">Honeywell Granit Ultra 2105i</a> oferuje dluzsza prace na baterii — 3 300 mAh daje do 100 000 skanow i 14 godzin ciaglej pracy. <a href="/produkt/zebra-ds3678-xr">Zebra DS3678-XR</a> z bateria 3 100 mAh obsługuje do 80 000 skanow, ale deklaruje 23+ godzin skanowania ciąglego (2 skany/s).</p>
+
+<p>Roznica 25% na korzysc Honeywell w liczbie skanow (100 000 vs 80 000) moze byc kluczowa na zmianach po 10-12 godzin z intensywnym skanowaniem. Uwaga: producenci uzywaja roznych metodologii pomiaru — nie nalezy porownywac godzin pracy 1:1.</p>
+
+<p>Zebra ma przewage w zarzadzaniu bateria — technologia PowerPrecision+ podaje informacje o „zdrowiu" baterii (cykle ladowania, pojemnosc rezydualna), co ulatwia planowanie wymian w duzych flotach. Honeywell oferuje ladowarki 4-gniazdowe (MB4-BAT-SCN11) z czasem ladowania ok. 4 godzin.</p>
+
+<p><strong>Werdykt:</strong> Intensywne skanowanie (magazyn wysokiego skladowania, duzo skanow/zmiane) — Honeywell: 100 000 skanow to dodatkowy zapas bezpieczenstwa. Zarzadzanie bateria w duzej flocie (50+ urzadzen) — Zebra PowerPrecision+ daje lepsze narzedzia diagnostyczne.</p>`
+    },
+    {
+      id: 'integracja',
+      heading: 'Ktory skaner lepiej integruje sie z infrastruktura IT i automatyka?',
+      content: `<p><a href="/produkt/zebra-ds3678-xr">Zebra DS3678-XR</a> ma kluczowa przewage — jako jedyny skaner reczny oferuje natywne podlaczenie do sieci Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP) bez konwerterow. <a href="/produkt/honeywell-granit-ultra-2105i">Honeywell Granit Ultra 2105i</a> laczy sie wylacznie przez USB, RS-232 lub Keyboard Wedge.</p>
+
+<p>Co to oznacza w praktyce:</p>
+<ul>
+<li><strong>Zebra Network Connect for Automation</strong> — bezposrednie podlaczenie do PLC (Siemens, Rockwell, Beckhoff) przez Profinet lub EtherNet/IP. Brak third-party konwerterow = mniej punktow awarii. Wariant DS3678-XR3RF50AS1W z EtherNet/IP (dla Rockwell) i DS3678-XR3RF50BS1W z Profinet/Modbus (dla Siemens) — oba od 4 758 zl netto.</li>
+<li><strong>Honeywell</strong> — podlaczenie do PLC wymaga dodatkowego konwertera RS-232/Ethernet lub serwera OPC. To dodatkowy koszt (~500 zl/szt.) i potencjalny punkt awarii.</li>
+<li><strong>Zebra FIPS 140-2 + TAA</strong> — wymagane w kontraktach rzadowych, wojskowych i NATO. Honeywell nie posiada tych certyfikatow.</li>
+<li><strong>Bluetooth:</strong> oba Class 1, 100 m zasiegu. Honeywell ma nowszy BT 4.2, Zebra 4.0 LE.</li>
+<li><strong>Wi-Fi Friendly Mode (Zebra)</strong> — eliminuje interferencje BT z siecia WiFi w gesto zabudowanych magazynach.</li>
+</ul>
+
+<p><strong>Werdykt:</strong> Automatyka przemyslowa (PLC, SCADA, linie produkcyjne) — <a href="/produkt/zebra-ds3678-xr">Zebra DS3678-XR</a> z Network Connect — bez konkurencji. Praca z WMS przez USB/RS-232 (standardowe stanowisko magazynowe) — oba wystarczaja, Honeywell kosztuje mniej. Kontrakty rzadowe/wojskowe, infrastruktura krytyczna — Zebra (FIPS 140-2, TAA).</p>`
+    },
+    {
+      id: 'zarzadzanie-flota',
+      heading: 'Ktory skaner jest latwiejszy w zarzadzaniu i wdrazaniu?',
+      content: `<p>Zebra dysponuje szerszym ekosystemem zarzadzania — DataCapture DNA, 123Scan, Remote Management, Remote Diagnostics i IoT Connector. Honeywell oferuje SMU (Scanner Management Utility), EZConfig i Scanner Edge — prostsze, ale wystarczajace dla typowych wdrozen.</p>
+
+<p>Kluczowe roznice w ekosystemach:</p>
+<ul>
+<li><strong>Zebra 123Scan</strong> — konfiguracja skanerow przez kody QR (jeden kod = pelna konfiguracja). Eksport/import profili miedzy urzadzeniami.</li>
+<li><strong>Zebra Remote Management</strong> — zdalne aktualizacje firmware na calej flocie, niezaleznie od lokalizacji.</li>
+<li><strong>Zebra Remote Diagnostics</strong> — automatyczne logowanie zdarzen, predykcyjna analiza trendow, traceability.</li>
+<li><strong>Zebra IoT Connector</strong> — streaming danych z skanerow do chmury (IoT endpoint) — unikalna funkcja.</li>
+<li><strong>Zebra Virtual Tether</strong> — alarm gdy skaner poza zasiegiem BT lub poza kolyska zbyt dlugo.</li>
+<li><strong>Honeywell SMU</strong> — zdalna konfiguracja i monitoring przez siec.</li>
+<li><strong>Honeywell EZConfig</strong> — konfiguracja graficzna, prosta w uzyciu.</li>
+<li><strong>Honeywell Scanner Edge</strong> — integracja z ekosystemem Honeywell Forge.</li>
+</ul>
+
+<p><strong>Werdykt:</strong> Flota 5-20 skanerow, prosty scenariusz — oba ekosystemy wystarczaja. Flota 50+ skanerow w wielu lokalizacjach z potrzeba zdalnego zarzadzania — Zebra DataCapture DNA. Integracja z Honeywell Forge (szerszy ekosystem Honeywell) — Honeywell Scanner Edge. Analityka predykcyjna i IoT — Zebra IoT Connector + Remote Diagnostics.</p>`
+    },
+    {
+      id: 'cena-tco',
+      heading: 'Ile kosztuje Granit Ultra 2105i vs DS3678-XR? Co wchodzi w cene?',
+      content: `<p><a href="/produkt/honeywell-granit-ultra-2105i">Honeywell Granit Ultra 2105i</a> w TAKMA kosztuje od 2 574 zl netto — o 26% taniej niz <a href="/produkt/zebra-ds3678-xr">Zebra DS3678-XR</a> (od 3 237 zl netto). Roznica 663 zl na sztuce rosnie przy duzych flotach: przy 50 skanerach to ponad 33 000 zl oszczednosci.</p>
+
+<p>Porownanie zestawow i wariantow cenowych:</p>
+<table>
+<thead><tr><th>Wariant</th><th>Honeywell</th><th>Zebra</th></tr></thead>
+<tbody>
+<tr><td>Sam skaner (bez stacji)</td><td><strong>2 574 zl</strong> (SR) / 2 960 zl (XR)</td><td>3 237 zl</td></tr>
+<tr><td>Zestaw USB (skaner + stacja + kabel)</td><td>3 055 zl (SR) / 3 618 zl (XR)</td><td>4 541 zl</td></tr>
+<tr><td>Zestaw Industrial Ethernet</td><td>Brak</td><td>4 758 zl (EtherNet/IP lub Profinet)</td></tr>
+</tbody>
+</table>
+
+<p>Dodatkowe koszty do uwzglednienia:</p>
+<ul>
+<li><strong>Serwis:</strong> Zebra OneCare (opcja ochrony baterii) vs Honeywell Edge Service. Oba oferuja rozszerzenia gwarancji.</li>
+<li><strong>Konwertery:</strong> Jesli Honeywell potrzebuje polaczenia z PLC — dodatkowy konwerter RS-232/Ethernet (~500 zl/szt.). Zebra ma to w cenie zestawu Industrial Ethernet.</li>
+<li><strong>Baterie zapasowe:</strong> porownywalne koszty u obu producentow.</li>
+</ul>
+
+<p><strong>Werdykt:</strong> Budzet priorytetem — Honeywell oszczedza 26% na zakupie. Potrzeba Industrial Ethernet — doplata do Zebry sie zwraca (eliminujesz konwertery ~500 zl/szt.). Duza flota (50+ szt.) — Honeywell oszczedza 33 000+ zl samym zakupem.</p>`
+    },
+    {
+      id: 'podsumowanie',
+      heading: 'Honeywell Granit Ultra 2105i czy Zebra DS3678-XR — ktorego wybrac?',
+      content: `<p><strong><a href="/produkt/honeywell-granit-ultra-2105i">Honeywell Granit Ultra 2105i</a> sprawdzi sie, gdy:</strong></p>
+<ul>
+<li>Szukasz sprawdzonego skanera ultra-rugged w nizszej cenie (od 2 574 zl netto)</li>
+<li>Skanowanie odbywa sie na dystansie do ~5 m (linia produkcyjna, stanowisko pakowania, kontrola jakosci)</li>
+<li>Pracujesz z uszkodzonymi, niskokontrastowymi kodami (AI decoding + tolerancja kontrastu 15%)</li>
+<li>Zalezy Ci na dluzszej pracy baterii (100 000 skanow/ladowanie)</li>
+<li>Laczysz skaner przez USB lub RS-232 z klasycznym WMS</li>
+<li>Potrzebujesz prostego wdrozenia bez Industrial Ethernet</li>
+</ul>
+
+<p><strong><a href="/produkt/zebra-ds3678-xr">Zebra DS3678-XR</a> sprawdzi sie, gdy:</strong></p>
+<ul>
+<li>Potrzebujesz rekordowego zasiegu skanowania (do 32 m dla 100 mil Code 39)</li>
+<li>Pracujesz w magazynie wysokiego skladowania, na placu skladowym, doku zaladunkowym</li>
+<li>Wymagasz natywnej integracji z PLC przez Industrial Ethernet (EtherNet/IP, Profinet)</li>
+<li>Realizujesz kontrakty rzadowe/wojskowe (FIPS 140-2, TAA)</li>
+<li>Planujesz duza flote z centralnym zarzadzaniem (DataCapture DNA, Remote Diagnostics)</li>
+<li>Skanujesz wiele kodow jednoczesnie (Multi-Code Data Formatting, do 20 kodow)</li>
+</ul>
+
+<p>Potrzebujesz pomocy w wyborze? <a href="/kontakt">Skontaktuj sie z naszym doradca</a> — porownamy oba modele dla Twojego scenariusza i przygotujemy indywidualna oferte. Mozesz tez sprawdzic inne <a href="/skanery-kodow-kreskowych">skanery kodow kreskowych</a> w naszym katalogu.</p>`
+    }
+  ],
+  faq: [
+    {
+      question: 'Jaki jest maksymalny zasieg skanowania Zebra DS3678-XR?',
+      answer: '<a href="/produkt/zebra-ds3678-xr">Zebra DS3678-XR</a> odczytuje kody 100 mil Code 39 z odleglosci do 32 metrow, a kody 13 mil UPC z do 3,7 m. To najdluzszy zasieg w klasie skanerow ultra-rugged — prawie 3x dalej niz Honeywell Granit Ultra 2105i XR (10,85 m).'
+    },
+    {
+      question: 'Ile kosztuje Honeywell Granit Ultra 2105i?',
+      answer: 'W TAKMA <a href="/produkt/honeywell-granit-ultra-2105i">Honeywell Granit Ultra 2105i</a> kosztuje od 2 574 zl netto (wariant SR). Wersja XR z rozszerzonym zasiegiem od 2 960 zl. Zestaw USB z baza: od 3 055 zl. <a href="/produkt/zebra-ds3678-xr">Zebra DS3678-XR</a> od 3 237 zl netto — Honeywell jest o 26% tanszy.'
+    },
+    {
+      question: 'Czy Honeywell Granit Ultra 2105i ma Industrial Ethernet?',
+      answer: 'Nie. <a href="/produkt/honeywell-granit-ultra-2105i">Granit Ultra 2105i</a> laczy sie przez USB, RS-232 lub Keyboard Wedge. Natywny Industrial Ethernet (EtherNet/IP, Profinet, Modbus TCP) oferuje wylacznie <a href="/produkt/zebra-ds3678-xr">Zebra DS3678-XR</a> z modulem Network Connect — od 4 758 zl za zestaw.'
+    },
+    {
+      question: 'Ktory skaner jest lepszy do magazynu wysokiego skladowania?',
+      answer: '<a href="/produkt/zebra-ds3678-xr">Zebra DS3678-XR</a> z zasiegiem do 32 m — operator wozka widlowego moze skanowac kody na najwyzszych regalach bez opuszczania towaru. <a href="/produkt/honeywell-granit-ultra-2105i">Honeywell Granit Ultra 2105i</a> XR siega do ~10 m, co wystarcza na regaly 3-4 poziomowe, ale nie na pelne magazyny WHS.'
+    },
+    {
+      question: 'Ktory skaner lepiej radzi sobie z uszkodzonymi kodami kreskowymi?',
+      answer: '<a href="/produkt/honeywell-granit-ultra-2105i">Honeywell Granit Ultra 2105i</a> z AI-wspomaganym dekodowaniem i tolerancja kontrastu od 15% lepiej odczytuje porysowane, mokre i zle wydrukowane kody. <a href="/produkt/zebra-ds3678-xr">Zebra DS3678-XR</a> wymaga min. 25% kontrastu, ale technologia PRZM Intelligent Imaging rowniez dobrze radzi sobie z trudnymi kodami.'
+    },
+    {
+      question: 'Ile skanow na jednym ladowaniu daje Honeywell Granit Ultra 2105i?',
+      answer: 'Honeywell deklaruje do 100 000 skanow na jednym ladowaniu baterii 3 300 mAh. <a href="/produkt/zebra-ds3678-xr">Zebra DS3678-XR</a> z bateria 3 100 mAh obsługuje do 80 000 skanow. Honeywell ma o 25% wiecej skanow na ladowanie — istotna roznica na intensywnych zmianach 10-12h.'
+    },
+    {
+      question: 'Czy Zebra DS3678-XR laczy sie bezposrednio z PLC?',
+      answer: 'Tak — Zebra Network Connect for Automation pozwala podlaczyc <a href="/produkt/zebra-ds3678-xr">DS3678-XR</a> bezposrednio do sieci EtherNet/IP (dla PLC Rockwell/Allen-Bradley), Profinet (dla Siemens) lub Modbus TCP — bez konwerterow. To unikalna funkcja w klasie skanerow recznych.'
+    },
+    {
+      question: 'Jaka gwarancja obowiazuje na Granit Ultra 2105i i DS3678-XR?',
+      answer: 'Oba skanery maja 3 lata gwarancji fabrycznej na skaner i kolyske oraz 1 rok na baterie. Zebra oferuje rozszerzone plany serwisowe OneCare z opcja ochrony baterii. Honeywell ma Edge Service Plans. Serwis Zebra w Polsce: <a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>.'
+    },
+    {
+      question: 'Ktory skaner jest lepszy do automatyki przemyslowej i linii produkcyjnej?',
+      answer: 'Na linii produkcyjnej z PLC — <a href="/produkt/zebra-ds3678-xr">Zebra DS3678-XR</a> z Industrial Ethernet (Profinet, EtherNet/IP) jest naturalnym wyborem — bezposrednie podlaczenie bez konwerterow. Na stanowiskach kontroli jakosci z komputerem i USB — <a href="/produkt/honeywell-granit-ultra-2105i">Honeywell Granit Ultra 2105i</a> wystarczy i kosztuje 26% mniej.'
+    },
+    {
+      question: 'Czy Zebra DS3678-XR spelnia wymagania FIPS i TAA?',
+      answer: 'Tak — <a href="/produkt/zebra-ds3678-xr">Zebra DS3678-XR</a> posiada certyfikat FIPS 140-2 (szyfrowanie AES) i jest zgodna z TAA (Trade Agreement Act). To wymagane przy kontraktach rzadowych, wojskowych i NATO. <a href="/produkt/honeywell-granit-ultra-2105i">Honeywell Granit Ultra 2105i</a> nie ma tych certyfikatow.'
+    },
+    {
+      question: 'Jakie sa alternatywy dla Granit Ultra 2105i i DS3678-XR?',
+      answer: 'Popularne alternatywy: <a href="/produkt/zebra-ds3608-xr">Zebra DS3608-XR</a> (przewodowa wersja DS3678, od 2 417 zl), <a href="/produkt/honeywell-granit-xp-1991ixlr">Honeywell Granit XP 1991iXLR</a> (poprzednia generacja z zasiegiem do 24 m, od 2 997 zl), <a href="/produkt/zebra-ds3678-sr">Zebra DS3678-SR</a> (standard range, od 2 111 zl). Pelny katalog: <a href="/skanery-kodow-kreskowych">skanery kodow kreskowych</a>.'
+    }
+  ],
+  relatedLinks: [
+    { title: 'Honeywell Granit Ultra 2105i — karta produktu', href: '/produkt/honeywell-granit-ultra-2105i' },
+    { title: 'Zebra DS3678-XR — karta produktu', href: '/produkt/zebra-ds3678-xr' },
+    { title: 'Zebra DS3608-XR — wersja przewodowa', href: '/produkt/zebra-ds3608-xr' },
+    { title: 'Zebra DS3678-SR — standard range', href: '/produkt/zebra-ds3678-sr' },
+    { title: 'Honeywell Granit XP 1991iXLR — poprzednia generacja', href: '/produkt/honeywell-granit-xp-1991ixlr' },
+    { title: 'Skanery kodow kreskowych — katalog', href: '/skanery-kodow-kreskowych' },
+    { title: 'Skanery kodow kreskowych Zebra — jak wybrac?', href: '/poradnik/skanery-kodow-kreskowych-zebra-jak-wybrac' },
+    { title: 'Skanery Honeywell — katalog', href: '/skanery-honeywell' },
+    { title: 'Skanery Zebra — katalog', href: '/skanery-kodow-kreskowych-zebra' },
+    { title: 'Kontakt i doradztwo', href: '/kontakt' },
+  ]
 }
 ]
 
