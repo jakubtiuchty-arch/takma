@@ -44211,13 +44211,13 @@ TSC ML241P posiada certyfikat ENERGY STAR. Obudowa i opakowanie w 100% nadają s
     slug: 'tsc-ml341p',
     name: 'TSC ML341P',
     shortDescription: 'TSC ML341P — kompaktowa drukarka półprzemysłowa 4" z emulacją ZPL, 300 dpi, 152 mm/s, rolki do 8" OD',
-    seoTitle: 'TSC ML341P — drukarka etykiet 4" 300 dpi compact industrial | od 2 595 zł',
-    seoDescription: 'TSC ML341P — kompaktowa drukarka etykiet 4", 300 dpi, 152 mm/s, emulacja ZPL/EPL/DPL. Drukarka ML341P do małych etykiet, drobnego tekstu i kodów 2D. Rack 19", rolki 8" OD, ENERGY STAR. Drukarka TSC ML341P, ML341P TSC cena. PN: ML341P-A001-0202. Od 2 595 zł netto | TAKMA',
+    seoTitle: 'TSC ML341P 300 dpi — drukarka etykiet 4" | od 2 595 zł',
+    seoDescription: 'TSC ML341P — kompaktowa drukarka 4", 300 dpi, 152 mm/s. Emulacja ZPL/EPL/DPL bez konfiguracji. Rolki 8" OD, Ethernet, gilotyna opcja. Od 2 595 zł netto.',
     description: `Dla kogo? TSC ML341P to kompaktowa [drukarka termotransferowa](/poradnik/drukarka-termiczna-vs-termotransferowa) klasy 4" z rozdzielczością 300 dpi (12 dots/mm) — przeznaczona dla firm, które drukują małe etykiety z drobnym tekstem, kodami 2D (DataMatrix, QR) na niewielkiej powierzchni, lub precyzyjne etykiety produktowe i farmaceutyczne. Wszędzie tam, gdzie standardowe 203 dpi nie zapewnia wystarczającej czytelności.
 
 TSC ML341P to wersja 300 dpi [drukarki TSC ML241P](/produkt/tsc-ml241p) (203 dpi). Obudowa, interfejsy, media i opcje (gilotyna, odklejak, Wi-Fi) są identyczne — jedyną różnicą jest głowica drukująca: 300 dpi zamiast 203 dpi. Prędkość druku: do 152 mm/s (6 ips) — niższa niż w ML241P (204 mm/s), ponieważ wyższa rozdzielczość wymaga wolniejszego przejścia głowicy.
 
-Automatyczna emulacja języków ZPL II, EPL i DPL (tryb TSPL-EZD) oznacza, że TSC ML341P to bezpośrednia alternatywa dla [Zebra ZT231](/produkt/zebra-zt231) w wersji 300 dpi — ta sama emulacja ZPL, kompaktniejsza obudowa (245 mm vs 284 mm wysokości), niższa cena. System WMS/ERP wysyła te same komendy, a drukarka je rozpoznaje automatycznie.
+Automatyczna emulacja języków ZPL II, EPL i DPL (tryb TSPL-EZD) oznacza, że TSC ML341P to bezpośrednia alternatywa dla [Zebra ZT231](/produkt/zebra-zt231) w wersji 300 dpi — ta sama emulacja ZPL, kompaktniejsza obudowa (245 mm vs 279 mm wysokości), niższa cena. System WMS/ERP wysyła te same komendy, a drukarka je rozpoznaje automatycznie.
 
 Obsługuje rolki do 8" OD (203 mm) na rdzeniu 1" lub 3" — rzadsza wymiana materiału w ciągłej pracy. Opcjonalna [gilotyna](/produkt/tsc-gilotyna-ml241p), [odklejak](/produkt/tsc-odklejak-ml241p) i [moduł Wi-Fi/Bluetooth](/produkt/tsc-modul-wifi-bluetooth). Certyfikat ENERGY STAR, 100% recyclable obudowa i opakowanie. Kolorowy wyświetlacz LCD 2,3" z 6 przyciskami nawigacyjnymi do konfiguracji bez komputera. System autodiagnostyki TSC Sense Care monitoruje stan głowicy i zużycie materiałów eksploatacyjnych.`,
     categoryId: 'drukarki-etykiet',
@@ -44276,7 +44276,7 @@ Obsługuje rolki do 8" OD (203 mm) na rdzeniu 1" lub 3" — rzadsza wymiana mate
       { name: 'Temperatura pracy', value: '0°C do 40°C' },
       { name: 'Wilgotność pracy', value: '25–85% (bez kondensacji)' },
       { name: 'Certyfikaty', value: 'CE, FCC Class A, CB, cTUVus, ENERGY STAR, RoHS, WEEE' },
-      { name: 'Gwarancja', value: '24 miesiące (drukarka), 12 miesięcy lub 25 km druku (głowica)' },
+      { name: 'Gwarancja', value: '24 m (drukarka) / 12 m lub 25 km (głowica) / 12 m lub 50 km (wałek)' },
     ],
     applications: [
       'Małe etykiety produktowe z drobnym tekstem i kodami 2D',
@@ -44320,7 +44320,7 @@ Obsługuje rolki do 8" OD (203 mm) na rdzeniu 1" lub 3" — rzadsza wymiana mate
       },
       {
         question: 'TSC ML341P czy Zebra ZT231 300 dpi — którą wybrać?',
-        answer: 'TSC ML341P kosztuje od 2 595 zł netto, <a href="/produkt/zebra-zt231">Zebra ZT231</a> 300 dpi od ok. 3 200 zł. ML341P jest kompaktniejsza (245 vs 284 mm wysokości) i obsługuje emulację ZPL+EPL+DPL. ZT231 jest szybsza (203 mm/s vs 152 mm/s w 300 dpi), ma dotykowy ekran 4,3" i oferuje opcję RFID. Wybierz TSC, gdy liczy się cena i kompaktowość. Wybierz Zebra, gdy potrzebujesz wyższej prędkości, RFID lub ekosystemu Link-OS.',
+        answer: 'TSC ML341P kosztuje od 2 595 zł netto, <a href="/produkt/zebra-zt231">Zebra ZT231</a> w wersji TT 300 dpi od ok. 3 475 zł (baza 203 dpi od 2 551 zł). ML341P jest kompaktniejsza (245 vs 279 mm wysokości) i obsługuje emulację ZPL+EPL+DPL. ZT231 jest szybsza (203 mm/s vs 152 mm/s w 300 dpi), ma dotykowy ekran 4,3" i oferuje opcję RFID. Wybierz TSC, gdy liczy się cena i kompaktowość. Wybierz Zebra, gdy potrzebujesz wyższej prędkości, RFID lub ekosystemu Link-OS.',
       },
       {
         question: 'Do czego potrzebuję drukarki 300 dpi zamiast 203 dpi?',
@@ -44340,7 +44340,7 @@ Obsługuje rolki do 8" OD (203 mm) na rdzeniu 1" lub 3" — rzadsza wymiana mate
       },
       {
         question: 'Jak wymienić głowicę drukującą w TSC ML341P?',
-        answer: 'Wymiana głowicy (TPH) w TSC ML341P jest beznarządowa — wystarczy odchylić mechanizm dociskowy i wymienić moduł głowicy. <a href="/produkt/tsc-glowica-ml341p-300dpi">Głowica 300 dpi (PH-ML240-0004)</a> jest wymienna między modelami ML341P i ML340P. Można też zamontować głowicę 203 dpi (PH-ML240-0003) — drukarka automatycznie rozpozna rozdzielczość.',
+        answer: 'Wymiana głowicy (TPH) w TSC ML341P jest beznarządowa — wystarczy odchylić mechanizm dociskowy i wymienić moduł głowicy. <a href="/produkt/tsc-glowica-ml341p-300dpi">Głowica 300 dpi (PH-ML240-0004)</a> jest wymienna między modelami ML341P i ML340P.',
       },
       {
         question: 'Jaka jest gwarancja na TSC ML341P?',
@@ -44348,7 +44348,7 @@ Obsługuje rolki do 8" OD (203 mm) na rdzeniu 1" lub 3" — rzadsza wymiana mate
       },
       {
         question: 'Jakie są alternatywy dla TSC ML341P?',
-        answer: 'Alternatywy w klasie compact industrial 300 dpi: <a href="/produkt/tsc-ml241p">TSC ML241P</a> (203 dpi, od 2 223 zł — jeśli nie potrzebujesz 300 dpi), <a href="/produkt/zebra-zt231">Zebra ZT231</a> (300 dpi, od ~3 200 zł — szybsza, RFID, dotykowy ekran 4,3"), <a href="/produkt/zebra-zt411">Zebra ZT411</a> (300 dpi, od ~5 078 zł — klasa wyższa, szybsza, RFID, większe rolki). ML341P to najtańsza drukarka 300 dpi w klasie compact industrial z emulacją ZPL.',
+        answer: 'Alternatywy w klasie compact industrial 300 dpi: <a href="/produkt/tsc-ml241p">TSC ML241P</a> (203 dpi, od 2 223 zł — jeśli nie potrzebujesz 300 dpi), <a href="/produkt/zebra-zt231">Zebra ZT231</a> (TT 300 dpi, od ~3 475 zł — szybsza, RFID, dotykowy ekran 4,3"), <a href="/produkt/zebra-zt411">Zebra ZT411</a> (300 dpi, od ~5 078 zł — klasa wyższa, szybsza, RFID, większe rolki). ML341P to najtańsza drukarka 300 dpi w klasie compact industrial z emulacją ZPL.',
       },
     ],
     comparison: {
@@ -44392,7 +44392,7 @@ Obsługuje rolki do 8" OD (203 mm) na rdzeniu 1" lub 3" — rzadsza wymiana mate
           slug: 'zebra-zt231',
           specs: {
             'Rozdzielczość': '203/300 dpi',
-            'Prędkość druku': '304 mm/s',
+            'Prędkość druku': '203 mm/s (300 dpi)',
             'Szerokość druku': '104 mm',
             'Wyświetlacz': 'Dotykowy 4,3" kolor',
             'Max rolka': '8" OD',
@@ -44400,7 +44400,7 @@ Obsługuje rolki do 8" OD (203 mm) na rdzeniu 1" lub 3" — rzadsza wymiana mate
             'Emulacja ZPL': 'Natywny',
             'Gilotyna': 'Opcja',
             'RFID': 'Opcja',
-            'Cena od': '2 551 zł',
+            'Cena od': '2 551 zł (203 dpi)',
           },
         },
       ],
