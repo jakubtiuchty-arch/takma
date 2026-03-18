@@ -7986,7 +7986,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-18',
   updatedAt: '2026-03-18',
   readTime: '16 min',
-  heroImage: '',
+  heroImage: '/images/guides/zebra-em45-lasy.jpg',
   sections: [
     {
       id: 'wprowadzenie',
