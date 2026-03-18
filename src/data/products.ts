@@ -44431,13 +44431,13 @@ TSC MB241T ma 100% recyclable obudowę i opakowanie oraz certyfikat ENERGY STAR.
     manufacturerId: 'tsc',
     priceFrom: 2779,
     images: [
-      '/images/products/MB241T-A001-0202.png',
       '/images/products/MB241T-A001-0202-2.png',
+      '/images/products/MB241T-A001-0202.png',
       '/images/products/MB241T-A001-0202-3.png',
     ],
     imageDescriptions: [
-      'Drukarka przemysłowa TSC MB241T — widok z przodu, dotykowy LCD 3,5 cala i metalowa obudowa',
       'TSC MB241T — widok z boku, składane drzwi bifold z dużym oknem podglądu mediów',
+      'Drukarka przemysłowa TSC MB241T — widok z przodu, dotykowy LCD 3,5 cala i metalowa obudowa',
       'TSC MB241T — wnętrze drukarki, metalowy mechanizm drukujący i komora na rolkę 8" OD',
     ],
     tags: ['magazyn', 'logistyka', 'produkcja', 'retail'] as ProductTag[],
