@@ -8555,6 +8555,357 @@ export const guides: Guide[] = [
     { title: 'Drukarki przemysłowe — katalog', href: '/przemyslowe-drukarki-etykiet' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]
+},
+{
+  slug: 'kiedy-wybrac-zebra-zt111-a-kiedy-zt231-porownanie',
+  title: 'Kiedy wybrać Zebra ZT111, a kiedy ZT231?',
+  seoTitle: 'Kiedy wybrać Zebra ZT111, a kiedy ZT231 – porównanie',
+  seoDescription: 'ZT111 czy ZT231? Porównujemy obudowę, prędkość druku, wyświetlacz, RFID i Print DNA. Dowiedz się, który model pasuje do Twojego budżetu i produkcji.',
+  excerpt: 'ZT111 i ZT231 mają identyczne wymiary (432 x 241 x 279 mm) i tę samą pamięć — a jednak dzieli je obudowa, wyświetlacz, RFID, RTC i pakiet Print DNA. Sprawdź, który wybór jest lepszy dla Twojej firmy.',
+  category: 'porownanie' as const,
+  tags: ['porownanie', 'drukarki-etykiet', 'zebra', 'zt111', 'zt231', 'druk-termiczny', 'rfid', 'produkcja', 'logistyka'],
+  publishedAt: '2026-03-18',
+  updatedAt: '2026-03-18',
+  readTime: '12 min',
+  heroImage: '',
+  sections: [
+    {
+      id: 'wstep',
+      heading: 'ZT111 vs ZT231 — dwie drukarki, jeden obrys, różne możliwości',
+      content: `<div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-8">
+<p class="font-semibold text-blue-900 mb-2">TL;DR — podsumowanie w 50 słowach</p>
+<p class="text-blue-800">ZT111 to ekonomiczna drukarka przemysłowa z plastikową obudową, 5 diodami LED i Print DNA Basic — idealna do prostych zadań logistycznych w ograniczonym budżecie. ZT231 to metalowa obudowa, kolorowy dotykowy 4,3", prędkość 12 ips, RFID opcjonalnie, zegar czasu rzeczywistego i pełny Print DNA. Obie mają identyczne wymiary: 432 x 241 x 279 mm.</p>
+</div>
+
+<p>Patrząc na zdjęcia <a href="/produkt/zebra-zt111">Zebra ZT111</a> i <a href="/produkt/zebra-zt231">Zebra ZT231</a>, trudno dostrzec różnicę — obydwa mają tę samą szerokość, wysokość, głębokość i identyczne złącza. A jednak między nimi istnieje kilka różnic, które mogą zadecydować o wyborze na następne 5–8 lat.</p>
+
+<p>Ten poradnik porównuje ZT111 i ZT231 punkt po punkcie: obudowa, wyświetlacz, prędkość druku, RFID, zegar czasu rzeczywistego (RTC) i pakiet oprogramowania Print DNA. Na końcu znajdziesz tabelę zastosowań branżowych i drzewo decyzyjne, które pomoże Ci wybrać właściwy model — bez marketingowego szumu.</p>`
+    },
+    {
+      id: 'tabela-porownawcza',
+      heading: 'Czym różnią się ZT111 i ZT231? Tabela porównawcza',
+      content: `<div class="bg-gray-50 border-l-4 border-gray-400 p-5 rounded-r-lg mb-6">
+<p class="font-semibold text-gray-900 mb-2">Kluczowe różnice w skrócie</p>
+<p class="text-gray-700">ZT111 i ZT231 mają identyczne wymiary (432 x 241 x 279 mm) i tę samą pamięć (256 MB RAM, 256 MB Flash). Różnią się obudową (plastik vs metal), wyświetlaczem (LED vs dotykowy 4,3"), prędkością (10 vs 12 ips), dostępnością RFID i poziomem oprogramowania Print DNA (Basic vs Full).</p>
+</div>
+
+<div class="overflow-x-auto mb-6">
+<table class="w-full text-sm border-collapse">
+<thead><tr class="bg-gray-100">
+<th class="border border-gray-200 p-3 text-left">Parametr</th>
+<th class="border border-gray-200 p-3 text-left">Zebra ZT111</th>
+<th class="border border-gray-200 p-3 text-left">Zebra ZT231</th>
+</tr></thead>
+<tbody>
+<tr><td class="border border-gray-200 p-3 font-medium">Pozycjonowanie</td><td class="border border-gray-200 p-3">Entry-level industrial</td><td class="border border-gray-200 p-3">Mid-level industrial</td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3 font-medium">Obudowa</td><td class="border border-gray-200 p-3">Metalowa rama + plastikowe panele</td><td class="border border-gray-200 p-3"><strong>Metalowa rama + metalowa obudowa</strong></td></tr>
+<tr><td class="border border-gray-200 p-3 font-medium">RAM / Flash</td><td class="border border-gray-200 p-3">256 MB / 256 MB</td><td class="border border-gray-200 p-3">256 MB / 256 MB</td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3 font-medium">Prędkość (203 dpi)</td><td class="border border-gray-200 p-3">10 ips / 254 mm/s</td><td class="border border-gray-200 p-3"><strong>12 ips / 305 mm/s (+20%)</strong></td></tr>
+<tr><td class="border border-gray-200 p-3 font-medium">Prędkość (300 dpi)</td><td class="border border-gray-200 p-3">6 ips / 152 mm/s</td><td class="border border-gray-200 p-3"><strong>8 ips / 203 mm/s (+33%)</strong></td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3 font-medium">Rozdzielczość</td><td class="border border-gray-200 p-3">203 / 300 dpi</td><td class="border border-gray-200 p-3">203 / 300 dpi</td></tr>
+<tr><td class="border border-gray-200 p-3 font-medium">Wyświetlacz</td><td class="border border-gray-200 p-3">5-kolorowe LED + 3 przyciski</td><td class="border border-gray-200 p-3"><strong>Kolorowy dotykowy 4,3" + 3 LED</strong></td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3 font-medium">Interfejsy standard</td><td class="border border-gray-200 p-3">USB 2.0, RS-232, Ethernet, USB host, BT LE</td><td class="border border-gray-200 p-3">USB 2.0, RS-232, Ethernet, USB host, BT LE</td></tr>
+<tr><td class="border border-gray-200 p-3 font-medium">Wi-Fi 802.11ac</td><td class="border border-gray-200 p-3">Opcja</td><td class="border border-gray-200 p-3">Opcja</td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3 font-medium">RFID UHF</td><td class="border border-gray-200 p-3">Brak</td><td class="border border-gray-200 p-3"><strong>Opcja (instalacja przez klienta)</strong></td></tr>
+<tr><td class="border border-gray-200 p-3 font-medium">Interfejs aplikatora</td><td class="border border-gray-200 p-3">Brak</td><td class="border border-gray-200 p-3"><strong>Opcja</strong></td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3 font-medium">Nawijak podkladu</td><td class="border border-gray-200 p-3">Brak</td><td class="border border-gray-200 p-3"><strong>Opcja (fabryczna)</strong></td></tr>
+<tr><td class="border border-gray-200 p-3 font-medium">Print DNA</td><td class="border border-gray-200 p-3">Basic</td><td class="border border-gray-200 p-3"><strong>Full (+ Profile Manager Enterprise + MPS)</strong></td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3 font-medium">Zegar czasu (RTC)</td><td class="border border-gray-200 p-3">Brak</td><td class="border border-gray-200 p-3"><strong>Tak (wbudowany)</strong></td></tr>
+<tr><td class="border border-gray-200 p-3 font-medium">MPS</td><td class="border border-gray-200 p-3">Brak</td><td class="border border-gray-200 p-3"><strong>Tak</strong></td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3 font-medium">Secure Boot / Protected Mode</td><td class="border border-gray-200 p-3">Tak</td><td class="border border-gray-200 p-3">Tak (PrintSecure pelny)</td></tr>
+<tr><td class="border border-gray-200 p-3 font-medium">EPL/EPL2</td><td class="border border-gray-200 p-3">Tak (tylko 203 dpi)</td><td class="border border-gray-200 p-3">Tak (tylko 203 dpi)</td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3 font-medium">Wymiary (D x S x W)</td><td class="border border-gray-200 p-3">432 x 241 x 279 mm</td><td class="border border-gray-200 p-3">432 x 241 x 279 mm</td></tr>
+<tr><td class="border border-gray-200 p-3 font-medium">Waga</td><td class="border border-gray-200 p-3"><strong>7,7 kg</strong></td><td class="border border-gray-200 p-3">9,1 kg</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Jeśli szukasz listy różnic — <strong>ZT231 wygrywa 8:1</strong> po stronie funkcji. Jedyną przewagą ZT111 jest niższa cena i mniejsza waga (7,7 vs 9,1 kg). Co ważne: pomimo większych możliwości <strong>ZT231 zajmuje dokładnie tyle samo miejsca</strong> co ZT111 — zakup ZT231 nie wymaga zmiany stanowiska pracy ani mebli.</p>`
+    },
+    {
+      id: 'obudowa-plastik-vs-metal',
+      heading: 'Plastikowa obudowa ZT111 czy metalowa ZT231 — czy to ma znaczenie?',
+      content: `<p>ZT111 ma metalową ramę i <strong>plastikowe panele boczne</strong>. ZT231 ma metalową ramę i <strong>metalową obudowę</strong>. Różnica 1,4 kg wagi (7,7 vs 9,1 kg) to niemal w całości dodatkowy metal obudowy.</p>
+
+<div class="overflow-x-auto mb-6">
+<table class="w-full text-sm border-collapse">
+<thead><tr class="bg-gray-100">
+<th class="border border-gray-200 p-3 text-left">Środowisko pracy</th>
+<th class="border border-gray-200 p-3 text-left">ZT111 (plastik)</th>
+<th class="border border-gray-200 p-3 text-left">ZT231 (metal)</th>
+</tr></thead>
+<tbody>
+<tr><td class="border border-gray-200 p-3">Biuro, lekka logistyka</td><td class="border border-gray-200 p-3">Wystarczy</td><td class="border border-gray-200 p-3">Wystarczy</td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3">Magazyn — rzadkie uderzenia</td><td class="border border-gray-200 p-3">Wystarczy</td><td class="border border-gray-200 p-3">Wystarczy</td></tr>
+<tr><td class="border border-gray-200 p-3">Produkcja — wibracje, uderzenia</td><td class="border border-gray-200 p-3">Ryzyko pęknięć</td><td class="border border-gray-200 p-3"><strong>Odporna</strong></td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3">Środowisko z rozpuszczalnikami</td><td class="border border-gray-200 p-3">Plastik podatny</td><td class="border border-gray-200 p-3"><strong>Metal odporny</strong></td></tr>
+<tr><td class="border border-gray-200 p-3">Mycie ciśnieniowe / chemia</td><td class="border border-gray-200 p-3">Niezalecane</td><td class="border border-gray-200 p-3"><strong>Lepsza odporność</strong></td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3">Transport między stanowiskami</td><td class="border border-gray-200 p-3">Ostrożnie</td><td class="border border-gray-200 p-3"><strong>Bezpiecznie</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Plastikowe panele boczne w drukarkach przemysłowych pękają najczęściej przy naprężeniach montażowych (dokręcanie kart opcjonalnych, wymiana głowicy) lub przy upadku z wózka widłowego. Metalowa obudowa ZT231 eliminuje ten problem — ale jednocześnie zwiększa masę o 18%, co może być istotne przy częstym przemieszczaniu drukarki między stanowiskami.</p>
+
+<div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg my-6">
+<p class="font-semibold text-blue-900 mb-1">Werdykt</p>
+<p class="text-blue-800">Lekka logistyka i biuro? ZT111 wystarczy. Hala produkcyjna, środowisko z wibracjami lub chemią? Metalowy ZT231 to jedyny bezpieczny wybór.</p>
+</div>`
+    },
+    {
+      id: 'led-vs-ekran-dotykowy',
+      heading: '5 diod LED vs ekran dotykowy 4,3" — która drukarka jest łatwiejsza w obsłudze?',
+      content: `<p>ZT111 komunikuje status przez <strong>5-kolorowe diody LED i klawiaturę 3-przyciskową</strong>. Pracownik musi pamiętać, co oznacza np. „migające niebieskie + ciągłe czerwone". ZT231 zastępuje tę kodową komunikację <strong>pełnoprawnym kolorowym ekranem dotykowym 4,3"</strong> z tekstem, ikonami i filmami pomocy dostępnymi przez kody QR — bez zapamiętywania kodów.</p>
+
+<div class="overflow-x-auto mb-6">
+<table class="w-full text-sm border-collapse">
+<thead><tr class="bg-gray-100">
+<th class="border border-gray-200 p-3 text-left">Sytuacja</th>
+<th class="border border-gray-200 p-3 text-left">ZT111 (LED)</th>
+<th class="border border-gray-200 p-3 text-left">ZT231 (dotykowy 4,3")</th>
+</tr></thead>
+<tbody>
+<tr><td class="border border-gray-200 p-3">Błąd nośnika</td><td class="border border-gray-200 p-3">Kombinacja LED do rozszyfrowania</td><td class="border border-gray-200 p-3"><strong>Komunikat tekstowy + film QR</strong></td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3">Zmiana ustawień</td><td class="border border-gray-200 p-3">Ograniczona (3 przyciski)</td><td class="border border-gray-200 p-3"><strong>Pełne menu dotykowe</strong></td></tr>
+<tr><td class="border border-gray-200 p-3">Nowy pracownik bez szkolenia</td><td class="border border-gray-200 p-3">Wymaga szkolenia LED</td><td class="border border-gray-200 p-3"><strong>Intuicyjny interfejs</strong></td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3">Obsługa w rękawiczkach</td><td class="border border-gray-200 p-3">Tak (przyciski mechaniczne)</td><td class="border border-gray-200 p-3">Tak (ekran dostosowany)</td></tr>
+<tr><td class="border border-gray-200 p-3">Widoczność statusu z daleka</td><td class="border border-gray-200 p-3"><strong>Diody widoczne</strong></td><td class="border border-gray-200 p-3">Ekran 4,3" — ograniczona</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Nauka obsługi drukarki z wyświetlaczem tekstowym trwa ok. 15–20 minut, a drukarki z systemem LED + kody — do 45 minut dla nowych pracowników. W magazynach z rotacją pracowników > 30%/rok ekran dotykowy ZT231 może zaoszczędzić 0,5 h szkolenia na pracownika rocznie — przy 20 pracownikach to <strong>10 h roboczogodzin mniej</strong>.</p>
+
+<p>Paradoks: ZT111 ma więcej kolorów LED (5 vs 3 w ZT231), ale to właśnie ZT231 jest łatwiejszy w obsłudze. Ekran zastępuje kody kolorystyczne pełnymi komunikatami tekstowymi — niezależnie od doświadczenia operatora.</p>
+
+<div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg my-6">
+<p class="font-semibold text-blue-900 mb-1">Werdykt</p>
+<p class="text-blue-800">Stały, przeszkolony operator? ZT111 radzi sobie. Zmieniający się personel lub wielozmianowość? Dotykowy ZT231 skróci wdrożenie i zredukuje błędy.</p>
+</div>`
+    },
+    {
+      id: 'predkosc-10-vs-12-ips',
+      heading: 'Prędkość 10 ips vs 12 ips — kiedy 20% więcej robi różnicę?',
+      content: `<p>ZT111 drukuje z prędkością <strong>10 ips (254 mm/s)</strong> przy 203 dpi i 6 ips (152 mm/s) przy 300 dpi. ZT231 osiąga <strong>12 ips (305 mm/s)</strong> przy 203 dpi (+20%) i 8 ips (203 mm/s) przy 300 dpi (+33%).</p>
+
+<h3>Przepustowość dzienna — etykieta 100 mm, 8h zmiana, 50% fill rate</h3>
+
+<div class="overflow-x-auto mb-6">
+<table class="w-full text-sm border-collapse">
+<thead><tr class="bg-gray-100">
+<th class="border border-gray-200 p-3 text-left">Model</th>
+<th class="border border-gray-200 p-3 text-left">203 dpi</th>
+<th class="border border-gray-200 p-3 text-left">300 dpi</th>
+</tr></thead>
+<tbody>
+<tr><td class="border border-gray-200 p-3 font-medium">ZT111</td><td class="border border-gray-200 p-3">~18 290 etykiet/zmiana</td><td class="border border-gray-200 p-3">~10 944 etykiet/zmiana</td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3 font-medium">ZT231</td><td class="border border-gray-200 p-3">~21 960 etykiet/zmiana</td><td class="border border-gray-200 p-3">~14 616 etykiet/zmiana</td></tr>
+<tr><td class="border border-gray-200 p-3 font-medium">Różnica</td><td class="border border-gray-200 p-3"><strong>+3 670 (+20%)</strong></td><td class="border border-gray-200 p-3"><strong>+3 672 (+33%)</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Przy rozdzielczości 203 dpi ZT231 jest szybszy o 20%. Ale przy 300 dpi (lepsza jakość kodów) różnica wzrasta do <strong>33%</strong> — ZT111 zwalnia z 10 do 6 ips (-40%), a ZT231 z 12 do 8 ips (-33%). Dla firm pracujących głównie w 300 dpi ZT231 to lepsza inwestycja niż wskazuje różnica nominalna.</p>
+
+<p>3 670 dodatkowych etykiet na zmianę wydaje się nieistotne przy wolumenie 500 etykiet/dzień. Ale przy wolumenie <strong>15 000+ etykiet/zmianę</strong> (np. logistyka e-commerce w szczycie sezonu) ZT111 osiąga swój limit przepustowości — i właśnie wtedy przestoje stają się kosztowne. ZT231 oferuje „bufor bezpieczeństwa" wydajności, który jest niewidoczny przy normalnym obciążeniu, ale krytyczny w szczytach.</p>
+
+<div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg my-6">
+<p class="font-semibold text-blue-900 mb-1">Werdykt</p>
+<p class="text-blue-800">&lt; 10 000 etykiet/zmiana? ZT111 wystarczy. Wolumeny wyższe lub praca w 300 dpi? ZT231 daje bufor, którego ZT111 nie ma.</p>
+</div>`
+    },
+    {
+      id: 'rfid-zt231',
+      heading: 'RFID w ZT231 — czy warto go zaplanować, zanim będzie za późno?',
+      content: `<p><a href="/produkt/zebra-zt231">ZT231</a> nie jest „drukarką RFID" — to drukarka, <strong>która może nią zostać</strong> bez wymiany urządzenia. Opcjonalny moduł RFID UHF instalowany przez klienta oznacza, że decyzję o wdrożeniu RFID można podjąć za rok, dwa lata — i zrealizować ją bez zakupu nowego sprzętu. <a href="/produkt/zebra-zt111">ZT111</a> nie oferuje żadnej opcji RFID — ani fabrycznie, ani jako rozbudowy.</p>
+
+<h3>Kodowanie adaptacyjne ZT231</h3>
+<p>Tradycyjne drukarki RFID wymagają precyzyjnego pozycjonowania chipu na etykiecie (tzw. placement wytyczne). ZT231 z <strong>kodowaniem adaptacyjnym</strong> automatycznie wykrywa pozycję chipu i optymalizuje parametry kodowania — zwiększa elastyczność w wyborze nośników i zmniejsza odsetek nieprawidłowo zakodowanych tagów.</p>
+
+<h3>Kiedy RFID jest potrzebne?</h3>
+<div class="overflow-x-auto mb-6">
+<table class="w-full text-sm border-collapse">
+<thead><tr class="bg-gray-100">
+<th class="border border-gray-200 p-3 text-left">Scenariusz</th>
+<th class="border border-gray-200 p-3 text-left">Potrzeba RFID</th>
+</tr></thead>
+<tbody>
+<tr><td class="border border-gray-200 p-3">Etykiety wysyłkowe GS1-128</td><td class="border border-gray-200 p-3">Nie</td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3">Zleceniodawca wymagający EPC na opakowaniach</td><td class="border border-gray-200 p-3"><strong>Tak</strong></td></tr>
+<tr><td class="border border-gray-200 p-3">Automatyczna inwentaryzacja magazynu</td><td class="border border-gray-200 p-3"><strong>Tak</strong></td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3">Śledzenie palet w łańcuchu dostaw</td><td class="border border-gray-200 p-3"><strong>Tak</strong></td></tr>
+<tr><td class="border border-gray-200 p-3">Sklepy detaliczne (retail RFID)</td><td class="border border-gray-200 p-3"><strong>Tak</strong></td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3">Produkcja jednostkowa bez wymogów RFID</td><td class="border border-gray-200 p-3">Nie</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg my-6">
+<p class="font-semibold text-blue-900 mb-1">Werdykt</p>
+<p class="text-blue-800">Teraz nie potrzebujesz RFID? ZT111 wystarczy — ale sprawdź, czy za 3 lata wciąż tak będzie. Jeśli jest cień wątpliwości, ZT231 to jednorazowy koszt zamiast dwukrotnej inwestycji.</p>
+</div>`
+    },
+    {
+      id: 'print-dna-basic-vs-full',
+      heading: 'Print DNA Basic (ZT111) vs Print DNA Full (ZT231) — co traci IT przy tańszym modelu?',
+      content: `<p>ZT111 ma <strong>Print DNA Basic</strong> — wdrożenie, zabezpieczenia i podstawowe zarządzanie. ZT231 ma <strong>Print DNA Full</strong> z Printer Profile Manager Enterprise, sieciowym panelem zarządzania, zdalną diagnostyką i MPS (Managed Print Services).</p>
+
+<div class="overflow-x-auto mb-6">
+<table class="w-full text-sm border-collapse">
+<thead><tr class="bg-gray-100">
+<th class="border border-gray-200 p-3 text-left">Funkcja</th>
+<th class="border border-gray-200 p-3 text-left">ZT111 (Basic)</th>
+<th class="border border-gray-200 p-3 text-left">ZT231 (Full)</th>
+</tr></thead>
+<tbody>
+<tr><td class="border border-gray-200 p-3">Szybkie uruchomienie</td><td class="border border-gray-200 p-3">Tak</td><td class="border border-gray-200 p-3">Tak</td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3">Secure Boot</td><td class="border border-gray-200 p-3">Tak</td><td class="border border-gray-200 p-3">Tak</td></tr>
+<tr><td class="border border-gray-200 p-3">Protected Mode</td><td class="border border-gray-200 p-3">Tak</td><td class="border border-gray-200 p-3">Tak</td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3">PrintSecure</td><td class="border border-gray-200 p-3">Secure Commands</td><td class="border border-gray-200 p-3"><strong>Pelny PrintSecure</strong></td></tr>
+<tr><td class="border border-gray-200 p-3">Profile Manager Enterprise</td><td class="border border-gray-200 p-3">—</td><td class="border border-gray-200 p-3"><strong>Tak</strong></td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3">Sieciowy panel zarządzania</td><td class="border border-gray-200 p-3">Podstawowy</td><td class="border border-gray-200 p-3"><strong>Zaawansowany</strong></td></tr>
+<tr><td class="border border-gray-200 p-3">Zdalne zarządzanie i diagnostyka</td><td class="border border-gray-200 p-3">Ograniczone</td><td class="border border-gray-200 p-3"><strong>Pelne</strong></td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3">MPS (Managed Print Services)</td><td class="border border-gray-200 p-3">—</td><td class="border border-gray-200 p-3"><strong>Tak</strong></td></tr>
+<tr><td class="border border-gray-200 p-3">Monitoring stanu floty</td><td class="border border-gray-200 p-3">—</td><td class="border border-gray-200 p-3"><strong>Tak</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Kiedy Print DNA Full się zwraca?</h3>
+<p>Przy flocie 10 drukarek ZT111 z Print DNA Basic aktualizacja firmware to ~150 minut kwartalnie (10 x 15 min). ZT231 z Profile Manager Enterprise wykonuje to samo przez sieć w ok. 10 minut dla całej floty. Na rok to 560 minut vs 40 minut — różnica <strong>8,7 godziny IT rocznie</strong>. Przy koszcie IT 150 PLN/h = <strong>1 305 PLN oszczędności rocznie</strong> przy 10 drukarkach.</p>
+
+<div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg my-6">
+<p class="font-semibold text-blue-900 mb-1">Werdykt</p>
+<p class="text-blue-800">1–3 drukarki, prosty setup? Print DNA Basic ZT111 wystarczy. 5+ drukarek, polityka IT lub MPS? Print DNA Full ZT231 jest koniecznością.</p>
+</div>`
+    },
+    {
+      id: 'rtc-zegar-czasu',
+      heading: 'Zegar czasu rzeczywistego (RTC) w ZT231 — mała funkcja, duże znaczenie dla compliance',
+      content: `<p><a href="/produkt/zebra-zt231">ZT231</a> jest standardowo wyposażony w <strong>zegar czasu rzeczywistego (RTC)</strong>. <a href="/produkt/zebra-zt111">ZT111</a> go nie posiada.</p>
+
+<h3>Co daje RTC?</h3>
+<ul class="space-y-2 mb-6">
+<li><strong>Automatyczne timestampowanie etykiet</strong> — data i godzina wydruku bez zewnętrznego systemu</li>
+<li><strong>Zgodność z GS1</strong> — pole AI 17 (data ważności) i AI 13 (data produkcji) w automatycznym trybie</li>
+<li><strong>FDA 21 CFR Part 11</strong> — farmacja, żywność: elektroniczne zapisy z timestampem</li>
+<li><strong>Etykiety laboratoryjne</strong> — godzina pobrania próbki (healthcare, banki krwi)</li>
+<li><strong>Łańcuch chłodniczy</strong> — timestamp momentu etykietowania produktu mrożonego</li>
+</ul>
+
+<h3>A bez RTC?</h3>
+<p>ZT111 może drukować daty i godziny — ale musi je pobierać z zewnętrznego systemu (ERP, WMS) za każdym razem. Brak lokalnego RTC oznacza, że <strong>przy utracie połączenia sieciowego timestamp może być błędny lub niedostępny</strong>.</p>
+
+<p>W normie ISO 15764 (SSCC palety) i GS1 EDI, timestamp momentu etykietowania jest wymagany dla pełnej identyfikowalności. Drukarka bez RTC musi synchronizować czas z systemem nadrzędnym — co stwarza ryzyko desynchronizacji przy awariach sieciowych lub restarcie. ZT231 z wbudowanym RTC jest odporny na ten problem: nawet przy braku sieci timestamp jest zawsze poprawny.</p>
+
+<div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg my-6">
+<p class="font-semibold text-blue-900 mb-1">Werdykt</p>
+<p class="text-blue-800">Logistyka, retail, proste etykiety? Brak RTC nie będzie odczuwalny. Healthcare, farmacja, compliance GS1 z automatycznym timestampem? RTC ZT231 to konieczność, nie opcja.</p>
+</div>`
+    },
+    {
+      id: 'zastosowania-branzowe',
+      heading: 'Kiedy wybrać ZT111, a kiedy ZT231 — zastosowania branżowe',
+      content: `<div class="overflow-x-auto mb-6">
+<table class="w-full text-sm border-collapse">
+<thead><tr class="bg-gray-100">
+<th class="border border-gray-200 p-3 text-left">Branża / zastosowanie</th>
+<th class="border border-gray-200 p-3 text-center">ZT111</th>
+<th class="border border-gray-200 p-3 text-center">ZT231</th>
+<th class="border border-gray-200 p-3 text-left">Uzasadnienie</th>
+</tr></thead>
+<tbody>
+<tr><td class="border border-gray-200 p-3">Małe biuro, lekka logistyka</td><td class="border border-gray-200 p-3 text-center">Tak</td><td class="border border-gray-200 p-3 text-center">Tak</td><td class="border border-gray-200 p-3">Oba modele pokryją potrzeby</td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3">Magazyn e-commerce (niski–średni wolumen)</td><td class="border border-gray-200 p-3 text-center">Tak</td><td class="border border-gray-200 p-3 text-center">Tak</td><td class="border border-gray-200 p-3">&lt; 10 000 etykiet/zmiana</td></tr>
+<tr><td class="border border-gray-200 p-3">Magazyn wysyłkowy (wysoki wolumen, 300 dpi)</td><td class="border border-gray-200 p-3 text-center">—</td><td class="border border-gray-200 p-3 text-center"><strong>Tak</strong></td><td class="border border-gray-200 p-3">Prędkość 300 dpi: +33% dla ZT231</td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3">Produkcja z wibracjami lub chemią</td><td class="border border-gray-200 p-3 text-center">—</td><td class="border border-gray-200 p-3 text-center"><strong>Tak</strong></td><td class="border border-gray-200 p-3">Metalowa obudowa ZT231</td></tr>
+<tr><td class="border border-gray-200 p-3">Healthcare — etykiety laboratoryjne</td><td class="border border-gray-200 p-3 text-center">—</td><td class="border border-gray-200 p-3 text-center"><strong>Tak</strong></td><td class="border border-gray-200 p-3">RTC + Print DNA Full</td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3">Farmacja — unit-dose, FDA compliance</td><td class="border border-gray-200 p-3 text-center">—</td><td class="border border-gray-200 p-3 text-center"><strong>Tak</strong></td><td class="border border-gray-200 p-3">RTC + PrintSecure pełny</td></tr>
+<tr><td class="border border-gray-200 p-3">Łańcuch chłodniczy — timestampowanie</td><td class="border border-gray-200 p-3 text-center">—</td><td class="border border-gray-200 p-3 text-center"><strong>Tak</strong></td><td class="border border-gray-200 p-3">RTC</td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3">RFID — obecne lub planowane</td><td class="border border-gray-200 p-3 text-center">—</td><td class="border border-gray-200 p-3 text-center"><strong>Tak</strong></td><td class="border border-gray-200 p-3">RFID tylko ZT231</td></tr>
+<tr><td class="border border-gray-200 p-3">Automatyczna linia z aplikatorem</td><td class="border border-gray-200 p-3 text-center">—</td><td class="border border-gray-200 p-3 text-center"><strong>Tak</strong></td><td class="border border-gray-200 p-3">Interfejs aplikatora ZT231</td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3">Zastąpienie drukarki biurkowej (entry)</td><td class="border border-gray-200 p-3 text-center"><strong>Tak</strong></td><td class="border border-gray-200 p-3 text-center">Tak</td><td class="border border-gray-200 p-3">ZT111 = naturalny następca</td></tr>
+<tr><td class="border border-gray-200 p-3">Flota &gt; 5 drukarek + IT centralne</td><td class="border border-gray-200 p-3 text-center">—</td><td class="border border-gray-200 p-3 text-center"><strong>Tak</strong></td><td class="border border-gray-200 p-3">Print DNA Full + Profile Manager</td></tr>
+<tr class="bg-gray-50"><td class="border border-gray-200 p-3">Mały budżet, pojedyncza drukarka</td><td class="border border-gray-200 p-3 text-center"><strong>Tak</strong></td><td class="border border-gray-200 p-3 text-center">—</td><td class="border border-gray-200 p-3">ZT111 optymalny koszt/wartość</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Drzewo decyzyjne — 3 pytania</h3>
+<div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-6">
+<ol class="space-y-3">
+<li><strong>1. Czy pracujesz w środowisku z wibracjami, uderzeniami lub chemią?</strong><br/> Tak &rarr; <strong>ZT231</strong> (metalowa obudowa)</li>
+<li><strong>2. Czy potrzebujesz lub planujesz RFID, RTC lub MPS w ciągu 3 lat?</strong><br/> Tak &rarr; <strong>ZT231</strong></li>
+<li><strong>3. Czy zarządzasz &gt; 5 drukarkami lub masz politykę centralizacji IT?</strong><br/> Tak &rarr; <strong>ZT231</strong></li>
+<li><strong>Wszystkie odpowiedzi „Nie" i budżet jest ograniczony?</strong><br/> &rarr; <strong>ZT111</strong></li>
+</ol>
+</div>`
+    },
+    {
+      id: 'podsumowanie',
+      heading: 'Podsumowanie — ZT111 czy ZT231?',
+      content: `<p><strong>ZT111</strong> to mądry wybór dla firm, które potrzebują niezawodnej drukarki przemysłowej w cenie wejściowej — bez RFID, bez centralnego zarządzania IT, w czystym i spokojnym środowisku. To drukarka, która robi swoje przez lata, jeśli wiemy, czego nie potrzebujemy.</p>
+
+<p><strong>ZT231</strong> wygrywa wszędzie tam, gdzie środowisko jest wymagające (metal), wolumeny rosną, planowane jest RFID, potrzebny jest timestamp (RTC) lub zarządzanie sieciową flotą. Co ważne: przy <strong>identycznych wymiarach (432 x 241 x 279 mm)</strong> zakup ZT231 nie wymaga żadnych zmian stanowiska pracy — a daje kilkuletnią rezerwę możliwości.</p>
+
+<div class="flex flex-col sm:flex-row gap-4 mt-8">
+<a href="/produkt/zebra-zt111" class="inline-flex items-center justify-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors">Sprawdź cenę Zebra ZT111</a>
+<a href="/produkt/zebra-zt231" class="inline-flex items-center justify-center px-6 py-3 bg-white text-primary-600 font-semibold rounded-lg border-2 border-primary-600 hover:bg-primary-50 transition-colors">Zobacz konfiguracje Zebra ZT231</a>
+</div>`
+    }
+  ],
+  faq: [
+    {
+      question: 'Jaka jest główna różnica między Zebra ZT111 a ZT231?',
+      answer: 'ZT111 to drukarka klasy entry z plastikową obudową, 5-kolorowymi diodami LED, prędkością 10 ips (203 dpi) i Print DNA Basic. ZT231 ma metalową obudowę, kolorowy dotykowy ekran 4,3", prędkość 12 ips (203 dpi), opcjonalne RFID UHF, zegar czasu rzeczywistego i pełny Print DNA. Oba modele mają identyczne wymiary (432 x 241 x 279 mm) i tę samą pamięć 256 MB.',
+    },
+    {
+      question: 'Czy Zebra ZT111 obsługuje RFID?',
+      answer: 'Nie. ZT111 nie oferuje żadnej opcji RFID — ani fabrycznie, ani jako rozbudowy. Jeśli planujesz wdrożenie RFID UHF lub masz zleceniodawcę wymagającego tagowania EPC, wybierz <a href="/produkt/zebra-zt231">Zebra ZT231 z opcją RFID</a>.',
+    },
+    {
+      question: 'Czy ZT231 jest szybszy od ZT111?',
+      answer: 'Tak. ZT231 drukuje z prędkością 12 ips (305 mm/s) przy 203 dpi wobec 10 ips (254 mm/s) ZT111 — różnica to 20%. Przy 300 dpi różnica wzrasta do 33%: ZT231 osiąga 8 ips, ZT111 tylko 6 ips. Na etykiecie 100 mm przy 8-godzinnej zmianie (50% fill rate) oznacza to ok. 3 670 dodatkowych etykiet na korzyść ZT231.',
+    },
+    {
+      question: 'Dlaczego ZT231 jest cięższy od ZT111?',
+      answer: 'ZT231 waży 9,1 kg wobec 7,7 kg ZT111. Różnica 1,4 kg wynika z metalowej obudowy ZT231. ZT111 ma metalową ramę, ale plastikowe panele boczne — ZT231 jest w pełni metalowy, co zwiększa odporność na uderzenia, wibracje i środki chemiczne.',
+    },
+    {
+      question: 'Co to jest Print DNA i czym różni się wersja Basic od Full?',
+      answer: 'Print DNA to pakiet oprogramowania Zebra zarządzający drukarkami przez cały cykl życia. ZT111 ma Print DNA Basic — podstawowe wdrożenie i zabezpieczenia. ZT231 ma pełny Print DNA z Printer Profile Manager Enterprise (centralne zarządzanie flotą przez przeglądarkę), zaawansowaną diagnostyką i obsługą MPS.',
+    },
+    {
+      question: 'Czy ZT231 ma zegar czasu rzeczywistego (RTC)?',
+      answer: 'Tak. ZT231 jest standardowo wyposażony w zegar czasu rzeczywistego (RTC), który umożliwia automatyczne timestampowanie etykiet bez połączenia z systemem nadrzędnym. ZT111 nie ma RTC — datę i godzinę musi pobierać z zewnętrznego systemu (ERP/WMS). RTC jest wymagany m.in. w healthcare, farmacji i przy pełnej identyfikowalności GS1.',
+    },
+    {
+      question: 'Czy ZT111 i ZT231 mają te same wymiary?',
+      answer: 'Tak. Zamknięty ZT111 i ZT231 mają identyczne wymiary: 432 mm (dł.) x 241 mm (szer.) x 279 mm (wys.). Zakup ZT231 zamiast ZT111 nie wymaga zmiany stanowiska pracy, szafy ani stelaża. Jedyna różnica gabarytowa pojawia się przy ZT231 z nawijakiem podkładu (wys. rośnie do 324 mm).',
+    },
+    {
+      question: 'Czy ZT111 i ZT231 są kompatybilne z ZPL i EPL?',
+      answer: 'Tak, oba modele obsługują ZPL i ZPL II (pełna kompatybilność z formatami Zebra) oraz EPL i EPL2 (kompatybilność ze starszymi systemami — tylko przy modelu 203 dpi). Umożliwia to zastąpienie starszych drukarek Zebra lub innych marek bez przepisywania formatów etykiet.',
+    },
+    {
+      question: 'Czy do ZT231 można podłączyć aplikator etykiet?',
+      answer: 'Tak. ZT231 posiada opcjonalny interfejs aplikatora, który umożliwia bezpośrednie podłączenie do automatycznej linii etykietowania. <a href="/produkt/zebra-zt111">ZT111</a> nie obsługuje interfejsu aplikatora w żadnej konfiguracji.',
+    },
+    {
+      question: 'Kiedy warto wybrać ZT111 zamiast ZT231?',
+      answer: 'ZT111 jest właściwym wyborem gdy: (1) budżet jest priorytetem i nie ma potrzeby RFID, RTC ani centralnego zarządzania IT, (2) środowisko jest czyste i suche (biuro, lekka logistyka), (3) wolumen to &lt; 10 000 etykiet/zmiana przy 203 dpi, (4) flota to 1–3 drukarki. Sprawdź cenę w <a href="/produkt/zebra-zt111">karcie produktu ZT111</a>.',
+    },
+  ],
+  relatedLinks: [
+    { title: 'Zebra ZT111 — karta produktu', href: '/produkt/zebra-zt111' },
+    { title: 'Zebra ZT231 — karta produktu', href: '/produkt/zebra-zt231' },
+    { title: 'Zebra ZT231 vs ZT411 — porównanie', href: '/poradnik/zebra-zt231-vs-zt411-porownanie' },
+    { title: 'Zebra ZT510 vs ZT610 — porównanie', href: '/poradnik/zebra-zt510-vs-zt610-porownanie-drukarek-przemyslowych' },
+    { title: 'Drukarki etykiet Zebra — przewodnik', href: '/poradnik/drukarki-etykiet-zebra-przewodnik' },
+    { title: 'Jak wybrać drukarkę etykiet?', href: '/poradnik/jak-wybrac-drukarke-etykiet' },
+    { title: 'Drukarki przemysłowe — katalog', href: '/przemyslowe-drukarki-etykiet' },
+    { title: 'Kontakt i doradztwo', href: '/kontakt' },
+  ]
 }
 ]
 
