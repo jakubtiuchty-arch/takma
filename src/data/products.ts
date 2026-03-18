@@ -826,7 +826,7 @@ export const manufacturers: Manufacturer[] = [
     id: 'tsc',
     slug: 'tsc',
     name: 'TSC',
-    logo: '/images/manufacturers/tsc.svg',
+    logo: '/images/partners/logo_tsc.png',
     seoTitle: 'Produkty TSC | Drukarki etykiet przemysłowe i biurkowe',
     seoDescription: 'Drukarki etykiet TSC - modele biurkowe i przemysłowe. Wysoka jakość w przystępnej cenie. TAKMA - autoryzowany partner.'
   },
