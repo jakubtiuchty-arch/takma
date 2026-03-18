@@ -5544,9 +5544,9 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zt111',
     slug: 'zebra-zt111',
     name: 'Zebra ZT111',
-    shortDescription: 'Zebra ZT111 — przemysłowa drukarka etykiet entry-level 4", metalowa konstrukcja, 254 mm/s, następca ZT220 i S4M. Idealna do magazynu i produkcji',
-    seoTitle: 'Drukarka etykiet Zebra ZT111 — najtańsza przemysłowa 4" | od 2 081 zł',
-    seoDescription: 'Zebra ZT111 — najtańsza przemysłowa 4" dla małych magazynów i produkcji. Metalowa, 203/300 dpi, 254 mm/s. ZT11142-D0E000FZ od 2 081 zł netto.',
+    shortDescription: 'Zebra ZT111 — przemysłowa drukarka etykiet entry-level 4", metalowa rama, 254 mm/s, następca ZT220 i S4M. Idealna do magazynu i produkcji',
+    seoTitle: 'Zebra ZT111 — najtańsza drukarka przemysłowa 4" | od 2 269 zł',
+    seoDescription: 'Zebra ZT111 — najtańsza przemysłowa 4" dla małych magazynów i produkcji. Metalowa rama, 203/300 dpi, 254 mm/s. ZT11142-D0E000FZ od 2 269 zł netto. PN: ZT11142-T0E000FZ (TT), ZT11143-D0E000FZ (300 dpi).',
     description: `Zebra ZT111 to najlepszy wybór dla firm przechodzących z drukarek biurkowych na przemysłowe, które potrzebują metalowej konstrukcji i prędkości 254 mm/s w przystępnej cenie.
 
 Zebra ZT111 to przemysłowa drukarka etykiet entry-level zaprojektowana jako pomost między drukarkami biurkowymi a pełnoprzemysłowymi. Metalowa rama i plastikowe obudowy zapewniają trwałość na poziomie klasy przemysłowej, a kompaktowe wymiary (432 × 241 × 279 mm) pozwalają zmieścić ją w przestrzeniach, gdzie większe drukarki przemysłowe nie wchodzą w grę. ZT111 jest bezpośrednim następcą modeli Zebra ZT220, S4M i S600, oferując pełną kompatybilność wsteczną z językami ZPL II i EPL2 — istniejące szablony etykiet działają bez zmian.
@@ -5561,14 +5561,18 @@ Dla kogo jest Zebra ZT111? To optymalny wybór dla firm przechodzących z drukar
 
 Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
 
+Porównanie ZT111 z modelem wyższej klasy: [ZT111 vs ZT231 — kiedy wybrać który?](/poradnik/kiedy-wybrac-zebra-zt111-a-kiedy-zt231-porownanie)
+
 Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
-    priceFrom: 2081.39,
+    priceFrom: 2268.77,
     images: ['/images/products/zt111_1_s.png', '/images/products/zt111_2_s.png', '/images/products/zt111_3_s.png'],
     imageDescriptions: [
       'Drukarka przemysłowa Zebra ZT111 — widok z przodu z otwartymi drzwiami mediów',
+      'Zebra ZT111 — widok z boku, porty USB, RS-232, Ethernet i wyjście mediów',
+      'Drukarka etykiet ZT111 — widok z tyłu z otwartymi bi-fold drzwiami i załadowaną rolką etykiet',
     ],
     tags: ['magazyn', 'produkcja', 'logistyka'],
     availability: 'available',
@@ -5721,7 +5725,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Jakie są alternatywy dla Zebra ZT111?',
-        answer: 'Alternatywami są: Zebra ZT231 (wyższa klasa), Honeywell PM45, TSC MH261T. ZT111 to najtańsza drukarka przemysłowa Zebra.',
+        answer: 'Główne alternatywy: <a href="/produkt/zebra-zt231">Zebra ZT231</a> — lepsza, jeśli potrzebujesz dotykowego ekranu 4,3", RFID i zegara RTC; Honeywell PM45 — zbliżona cena, alternatywna platforma firmware; TSC MH261T — najtańsza opcja rynkowa, uboższa w ekosystem serwisowy. ZT111 wygrywa ceną w ekosystemie Zebra (ZPL II, Print DNA, <a href="https://www.serwis-zebry.pl" rel="noopener">serwis-zebry.pl</a>) i jest optymalnym wyborem przy wdrożeniach mixed-fleet z istniejącymi drukarkami Zebra. Pełne porównanie: <a href="/poradnik/kiedy-wybrac-zebra-zt111-a-kiedy-zt231-porownanie">ZT111 vs ZT231</a>.',
       },
     ],
     comparison: {
@@ -5741,7 +5745,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
             'Wyświetlacz': '5 LED + 3 przyciski',
             'Konstrukcja': 'Metalowa rama',
             'Waga': '7,7 kg',
-            'Cena od': '2 081 zł',
+            'Cena od': '2 269 zł',
           },
         },
         {
@@ -5757,7 +5761,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
             'Wyświetlacz': '5 LED + 3 przyciski',
             'Konstrukcja': 'Plastikowa obudowa',
             'Waga': '~2 kg',
-            'Cena od': '1 638 zł',
+            'Cena od': '1 649 zł',
           },
         },
         {
@@ -5773,7 +5777,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
             'Wyświetlacz': 'Kolorowy dotykowy 4,3"',
             'Konstrukcja': 'Metalowa rama',
             'Waga': '~12 kg',
-            'Cena od': '5 890 zł',
+            'Cena od': '5 078 zł',
           },
         },
       ],

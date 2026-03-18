@@ -8869,7 +8869,7 @@ export const guides: Guide[] = [
 <p class="text-xs text-gray-500 uppercase tracking-wide mb-1">Zebra</p>
 <p class="font-bold text-gray-900 text-lg mb-2">Zebra ZT111</p>
 <p class="inline-block text-xs font-medium text-green-700 bg-green-50 border border-green-200 rounded-full px-2.5 py-0.5 mb-3">Dostępny</p>
-<p class="text-2xl font-bold text-gray-900">2081,39 zł <span class="text-sm font-normal text-gray-500">netto</span></p>
+<p class="text-2xl font-bold text-gray-900">2268,77 zł <span class="text-sm font-normal text-gray-500">netto</span></p>
 <div class="mt-4 w-full text-center py-2.5 bg-[#A8F000] text-gray-900 font-semibold rounded-lg group-hover:bg-[#96d800] transition-colors">Zobacz więcej</div>
 </div>
 </a>
