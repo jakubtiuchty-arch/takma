@@ -44838,12 +44838,16 @@ Opcje rozbudowy: gilotyna full cut, odklejak peel-off, nawijak wewnętrzny 5", l
     name: 'TSC MH241T',
     shortDescription: 'TSC MH241T — drukarka przemysłowa 4" Performance Industrial, 356 mm/s, 600 m ribbon, dotykowy LCD 4,3", bifold door, emulacja ZPL',
     seoTitle: 'TSC MH241T — drukarka przemysłowa 4" | od 4 016 zł',
-    seoDescription: 'TSC MH241T — przemysłowa drukarka etykiet 4", 356 mm/s jak ZT411 za 21% mniej, 600 m ribbon, bifold door, LCD 4,3", ZPL. Od 4 016 zł. PN: MH241T-A001-0302.',
-    description: `TSC MH241T to [drukarka przemysłowa](/przemyslowe-drukarki-etykiet) z serii Performance Industrial, osiągająca 356 mm/s (14 ips) — taką samą prędkość jak [Zebra ZT411](/produkt/zebra-zt411), ale o 21% taniej. Dla centrów logistycznych, linii produkcyjnych 24/7 i magazynów z wolumenem powyżej 10 000 etykiet dziennie, gdzie liczy się szybkość druku i niezawodność mechanizmu.
+    seoDescription: 'TSC MH241T — przemysłowa drukarka etykiet 4", 356 mm/s jak ZT411 za 21% mniej, 600 m ribbon, bifold door, LCD 4,3". Od 4 016 zł. MH241T-A001-0302.',
+    description: `**TSC MH241T — przemysłowa drukarka etykiet 4" z prędkością 356 mm/s (taką samą jak Zebra ZT411), ale o 21% tańsza. Od 4 016 zł netto.**
+
+TSC MH241T to [drukarka przemysłowa](/przemyslowe-drukarki-etykiet) z serii Performance Industrial, osiągająca 356 mm/s (14 ips) — taką samą prędkość jak [Zebra ZT411](/produkt/zebra-zt411), ale o 21% taniej. Dla centrów logistycznych, linii produkcyjnych 24/7 i magazynów z wolumenem powyżej 10 000 etykiet dziennie, gdzie liczy się szybkość druku i niezawodność mechanizmu.
 
 MH241T oferuje dotykowy LCD 4,3" (480×272 px), 512 MB Flash + 256 MB SDRAM (dwukrotnie więcej Flash niż [TSC MB241T](/produkt/tsc-mb241t)), ribbon 600 m (vs 450 m w MB241T) i metalową konstrukcję die-cast z drzwiami bifold. Dwa porty USB Host umożliwiają jednoczesne podłączenie klawiatury KP-200 Plus i pamięci flash. Automatyczna emulacja ZPL II, EPL i DPL (tryb TSPL-EZD) pozwala zastąpić drukarkę Zebra bez zmian w systemie WMS/ERP. Obsługa mediów do 0,28 mm — hang-tagi, kartonowe metki, grube etykiety na opakowania.
 
 Drukarka do etykiet logistycznych GS1, etykiet produktowych i compliance, metek odzieżowych (hang-tagi do 0,28 mm), etykiet na opakowania food & beverage, etykietowania farmaceutycznego i laboratoryjnego. Opcje: gilotyna (regular / heavy-duty / care label), odklejak peel-off, nawijak wewnętrzny 5" OD, [moduł Wi-Fi + Bluetooth](/produkt/tsc-modul-wifi-bluetooth), klawiatura KP-200 Plus.
+
+Szacunkowy TCO na 3 lata (15 000 etykiet/dzień, 250 dni roboczych): ribbon 600 m pozwala wydrukować ok. 6 000 etykiet 100×100 mm na rolce — roczne zużycie ok. 625 rolek. Przy cenie taśmy WAX od 7 zł/szt. to ok. 4 375 zł/rok. Głowica 203 dpi wytrzymuje ok. 50 km (gwarancja 25 km) — przy 1,5 m etykiety/szt. to ok. 33 mln etykiet, czyli wymiana co 2,5 roku. Koszt głowicy: ok. 1 200 zł. 3-letni TCO ribbon + głowica: ok. 14 325 zł. Dla porównania Zebra ZT411 z ribbon 450 m wymaga ok. 833 rolek/rok — różnica ok. 1 450 zł/rok na samych taśmach.
 
 TSC MH241T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sense Care monitoruje przebieg głowicy i ilość cięć gilotyny — integracja z SOTI Connect i TSC Console do zdalnego zarządzania flotą.`,
     categoryId: 'drukarki-etykiet',
