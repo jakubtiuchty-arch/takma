@@ -8941,7 +8941,7 @@ export const guides: Guide[] = [
   readTime: '12 min',
   publishedAt: '2026-03-18',
   updatedAt: '2026-03-18',
-  heroImage: '',
+  heroImage: '/images/guides/zebra-tc22-datalogic-memor12-porownanie.png',
   sections: [
     // ── Sekcja 1: Wstęp ──
     {
