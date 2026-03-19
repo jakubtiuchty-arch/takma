@@ -45052,11 +45052,15 @@ TSC MH241T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sens
     shortDescription: 'TSC MH341T — drukarka przemysłowa 4" 300 dpi Performance Industrial, 305 mm/s przy 300 dpi, 600 m ribbon, dotykowy LCD 4,3", bifold door',
     seoTitle: 'TSC MH341T — drukarka 4" 300 dpi | od 4 701 zł',
     seoDescription: 'TSC MH341T — przemysłowa drukarka 4" 300 dpi, 305 mm/s (ZT411: 254, ZT231: 203), 600 m ribbon, bifold door, LCD 4,3". Od 4 701 zł. PN: MH341T-A001-0302.',
-    description: `TSC MH341T to wersja 300 dpi [drukarki przemysłowej](/przemyslowe-drukarki-etykiet) [TSC MH241T](/produkt/tsc-mh241t) z serii Performance Industrial. Wyższa rozdzielczość (300 vs 203 dpi) przy prędkości 305 mm/s (12 ips) — szybciej niż [Zebra ZT411](/produkt/zebra-zt411) przy 300 dpi (254 mm/s) i o 50% szybciej niż [Zebra ZT231](/produkt/zebra-zt231) (203 mm/s). Dla firm drukujących małe etykiety z drobnym tekstem, kody 2D o wysokiej gęstości i etykiety farmaceutyczne wymagające ostrego wydruku.
+    description: `**TSC MH341T — przemysłowa drukarka etykiet 4" 300 dpi z prędkością 305 mm/s, o 20% szybsza niż Zebra ZT411 przy 300 dpi i o 23% tańsza. Od 4 701 zł netto.**
+
+TSC MH341T to wersja 300 dpi [drukarki przemysłowej](/przemyslowe-drukarki-etykiet) [TSC MH241T](/produkt/tsc-mh241t) z serii Performance Industrial. Wyższa rozdzielczość (300 vs 203 dpi) przy prędkości 305 mm/s (12 ips) — o 20% szybciej niż [Zebra ZT411](/produkt/zebra-zt411) przy 300 dpi (254 mm/s) i o 50% szybciej niż [Zebra ZT231](/produkt/zebra-zt231) (203 mm/s). Dla firm drukujących małe etykiety z drobnym tekstem, kody 2D o wysokiej gęstości i etykiety farmaceutyczne wymagające ostrego wydruku.
 
 MH341T oferuje dotykowy LCD 4,3" (480×272 px), 512 MB Flash + 256 MB SDRAM, ribbon 600 m i metalową konstrukcję die-cast z drzwiami bifold — identyczne chassis jak [MH241T](/produkt/tsc-mh241t), zmienia się tylko głowica drukująca. Automatyczna emulacja ZPL II, EPL i DPL (tryb TSPL-EZD) pozwala zastąpić drukarkę Zebra bez zmian w systemie WMS/ERP. Obsługa mediów do 0,28 mm — hang-tagi, kartonowe metki, grube etykiety.
 
 Drukarka do etykiet farmaceutycznych i laboratoryjnych, małych etykiet z kodami 2D (DataMatrix, QR), metek odzieżowych i jubilerskich, etykiet compliance z drobnym drukiem, etykiet produktowych wymagających wysokiej czytelności. Opcje: gilotyna (regular / heavy-duty / care label), odklejak peel-off, nawijak wewnętrzny 5" OD, [moduł Wi-Fi + Bluetooth](/produkt/tsc-modul-wifi-bluetooth), klawiatura KP-200 Plus.
+
+Szacunkowy TCO na 3 lata vs Zebra ZT411 300 dpi (15 000 etykiet/dzień, 250 dni roboczych): sama drukarka — 4 701 zł vs 6 098 zł (oszczędność 1 397 zł). Ribbon 600 m (MH341T) vs 450 m (ZT411) — ok. 208 rolek mniej rocznie, oszczędność ok. 1 450 zł/rok na taśmach. Głowica 300 dpi: wymiana co ok. 25 km druku. Łączna oszczędność na 3-letnim TCO: ponad 5 700 zł.
 
 TSC MH341T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sense Care monitoruje przebieg głowicy i ilość cięć gilotyny — integracja z SOTI Connect i TSC Console do zdalnego zarządzania flotą.`,
     categoryId: 'drukarki-etykiet',
@@ -45162,7 +45166,7 @@ TSC MH341T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sens
       },
       {
         question: 'TSC MH341T czy Zebra ZT411 przy 300 dpi — którą wybrać?',
-        answer: 'TSC MH341T przy 300 dpi drukuje 305 mm/s (12 ips). <a href="/produkt/zebra-zt411">Zebra ZT411</a> przy 300 dpi zwalnia do 254 mm/s (10 ips) — o 20% wolniej. MH341T: bifold door, 600 m ribbon, 512 MB Flash, cena od 4 701 zł. ZT411: natywne ZPL, opcja 600 dpi, Link-OS, cena od 5 078 zł. Wybierz TSC, gdy liczy się prędkość przy 300 dpi. Wybierz Zebra, gdy potrzebujesz 600 dpi lub ekosystemu Link-OS.',
+        answer: 'TSC MH341T przy 300 dpi drukuje 305 mm/s (12 ips) — o 20% szybciej niż <a href="/produkt/zebra-zt411">Zebra ZT411</a> przy 300 dpi (254 mm/s, 10 ips). MH341T: bifold door, 600 m ribbon, 512 MB Flash, cena od 4 701 zł. ZT411 300 dpi: natywne ZPL, opcja 600 dpi, Link-OS, cena od 6 098 zł. MH341T jest o 23% tańsza w porównaniu apple-to-apple (300 dpi). Wybierz TSC, gdy liczy się prędkość i budżet. Wybierz Zebra, gdy potrzebujesz ekosystemu Link-OS.',
       },
       {
         question: 'TSC MH341T czy TSC MB341T — porównanie',
@@ -45170,7 +45174,7 @@ TSC MH341T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sens
       },
       {
         question: 'TSC MH341T czy Zebra ZT231 300 dpi — porównanie',
-        answer: 'MH341T: 305 mm/s przy 300 dpi. <a href="/produkt/zebra-zt231">Zebra ZT231</a>: 203 mm/s przy 300 dpi — o 50% wolniej. MH341T: 600 m ribbon, 512 MB Flash, 15,7 kg, od 4 701 zł. ZT231: 450 m ribbon, Link-OS, 9,1 kg, od ok. 3 326 zł. ZT231 jest lżejsza i tańsza, MH341T jest znacznie szybsza przy 300 dpi.',
+        answer: 'MH341T: 305 mm/s przy 300 dpi — o 50% szybsza niż <a href="/produkt/zebra-zt231">Zebra ZT231</a> (203 mm/s przy 300 dpi). MH341T: 600 m ribbon, 512 MB Flash, 15,7 kg, od 4 701 zł. ZT231: 450 m ribbon, Link-OS, 9,1 kg, od ok. 3 326 zł. ZT231 jest lżejsza i tańsza, MH341T jest o 50% szybsza przy 300 dpi.',
       },
       {
         question: 'Czy TSC MH341T obsługuje język ZPL (Zebra)?',
@@ -45182,7 +45186,7 @@ TSC MH341T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sens
       },
       {
         question: 'Ile kosztuje TSC MH341T?',
-        answer: 'TSC MH341T w wersji bazowej (300 dpi, dotykowy LCD 4,3", Ethernet) kosztuje od 4 701 zł netto. Porównanie: <a href="/produkt/tsc-mh241t">MH241T</a> (203 dpi, 356 mm/s) od 4 016 zł, <a href="/produkt/tsc-mb341t">MB341T</a> (300 dpi, kompaktowa) od 3 273 zł, <a href="/produkt/zebra-zt411">Zebra ZT411</a> (300/600 dpi) od 5 078 zł.',
+        answer: 'TSC MH341T w wersji bazowej (300 dpi, dotykowy LCD 4,3", Ethernet) kosztuje od 4 701 zł netto. Porównanie: <a href="/produkt/tsc-mh241t">MH241T</a> (203 dpi, 356 mm/s) od 4 016 zł, <a href="/produkt/tsc-mb341t">MB341T</a> (300 dpi, kompaktowa) od 3 273 zł, <a href="/produkt/zebra-zt411">Zebra ZT411 300 dpi</a> od 6 098 zł.',
       },
       {
         question: 'Jaka jest gwarancja na TSC MH341T?',
@@ -45190,7 +45194,7 @@ TSC MH341T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sens
       },
       {
         question: 'Jaka jest alternatywa dla TSC MH341T?',
-        answer: 'W klasie 300 dpi: <a href="/produkt/tsc-mb341t">TSC MB341T</a> (305 mm/s, kompaktowa 9,1 kg, RFID opcja, od 3 273 zł), <a href="/produkt/zebra-zt411">Zebra ZT411</a> (254 mm/s przy 300 dpi, natywne ZPL, Link-OS, od 5 078 zł), <a href="/produkt/zebra-zt231">Zebra ZT231 300 dpi</a> (203 mm/s, Link-OS, od ok. 3 326 zł). Jeśli 203 dpi wystarcza: <a href="/produkt/tsc-mh241t">TSC MH241T</a> (356 mm/s, od 4 016 zł).',
+        answer: 'W klasie 300 dpi: <a href="/produkt/tsc-mb341t">TSC MB341T</a> (305 mm/s, kompaktowa 9,1 kg, RFID opcja, od 3 273 zł), <a href="/produkt/zebra-zt411">Zebra ZT411 300 dpi</a> (254 mm/s, natywne ZPL, Link-OS, od 6 098 zł), <a href="/produkt/zebra-zt231">Zebra ZT231 300 dpi</a> (203 mm/s, Link-OS, od ok. 3 326 zł). Jeśli potrzebujesz 600 dpi: <a href="/produkt/tsc-mh641t">TSC MH641T</a> (152 mm/s, od 6 600 zł). Jeśli 203 dpi wystarcza: <a href="/produkt/tsc-mh241t">TSC MH241T</a> (356 mm/s, od 4 016 zł).',
       },
     ],
     comparison: {
@@ -45230,11 +45234,11 @@ TSC MH341T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sens
           },
         },
         {
-          name: 'Zebra ZT411',
+          name: 'Zebra ZT411 300 dpi',
           slug: 'zebra-zt411',
           specs: {
-            'Rozdzielczość': '203/300/600 dpi',
-            'Prędkość druku': '254 mm/s (300 dpi)',
+            'Rozdzielczość': '300 dpi',
+            'Prędkość druku': '254 mm/s',
             'Szerokość druku': '104 mm',
             'Wyświetlacz': 'Dotykowy 4,3" kolor',
             'Max rolka': '8" OD',
@@ -45242,13 +45246,13 @@ TSC MH341T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sens
             'Waga': '12,5 kg',
             'Emulacja ZPL': 'Natywny',
             'Grubość mediów': 'do 0,25 mm',
-            'Cena od': '5 078 zł',
+            'Cena od': '6 098 zł',
           },
         },
       ],
     },
     downloads: [
-      { name: 'Karta katalogowa MH241T/MH341T (EN)', type: 'datasheet' as const, url: '/downloads/tsc-mh241t-datasheet.pdf', size: '497 KB' },
+      { name: 'Karta katalogowa MH241T/MH341T/MH641T (EN)', type: 'datasheet' as const, url: '/downloads/tsc-mh241t-datasheet.pdf', size: '497 KB' },
     ],
     createdAt: '2026-03-19',
     sameAs: 'https://emea.tscprinters.com/en/products/mh-series-4-inch-performance-industrial-printers',
