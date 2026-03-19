@@ -45679,8 +45679,8 @@ TSC MH261T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sens
     slug: 'tsc-ttp-286mt',
     name: 'TSC TTP-286MT',
     shortDescription: 'TSC TTP-286MT — przemysłowa drukarka etykiet 8" (216 mm) 203 dpi, 152 mm/s, LCD 4,3" dotykowy, emulacja ZPL, port LPT',
-    seoTitle: 'TSC TTP-286MT — drukarka etykiet 8 cali 203 dpi | od 8 592 zł',
-    seoDescription: 'TSC TTP-286MT — przemysłowa drukarka etykiet 8" 203 dpi, 152 mm/s, LCD 4,3", emulacja ZPL, port LPT. Etykiety paletowe, GHS, szerokoformatowe. Od 8 592 zł netto.',
+    seoTitle: 'TSC TTP-286MT — drukarka etykiet 8" 203 dpi | od 8 592 zł',
+    seoDescription: 'TSC TTP-286MT — przemysłowa drukarka etykiet 8" 203 dpi, 152 mm/s, LPT, emulacja ZPL. Zamiennik Zebra 220Xi4. Od 8 592 zł. PN: 99-135A002-0002.',
     description: `**TSC TTP-286MT — jedyna przemysłowa drukarka etykiet 8 cali (216 mm) z LCD dotykowym i emulacją ZPL w cenie poniżej 10 000 zł. Zamiennik wycofanej Zebra 220Xi4. Od 8 592 zł netto.**
 
 TSC TTP-286MT to [drukarka przemysłowa](/przemyslowe-drukarki-etykiet) z najszerszą głowicą w ofercie TSC — 216 mm (8,5 cala). Przeznaczona do druku szerokich etykiet paletowych GS1-128/SSCC, etykiet GHS na pojemniki chemiczne, oznaczeń na beczki 200L, etykiet compliance i szerokich etykiet logistycznych. Prędkość 152 mm/s (6 ips) przy 203 dpi wystarcza do ciągłego druku na linii produkcyjnej lub w centrum logistycznym.
@@ -45872,7 +45872,7 @@ TSC TTP-286MT ma certyfikat ENERGY STAR. System TSC Sense Care monitoruje przebi
     name: 'TSC TTP-384MT',
     shortDescription: 'TSC TTP-384MT — przemysłowa drukarka etykiet 8" (219,5 mm) 300 dpi, 102 mm/s, LCD 4,3" dotykowy, emulacja ZPL, port LPT',
     seoTitle: 'TSC TTP-384MT — drukarka etykiet 8 cali 300 dpi | od 9 635 zł',
-    seoDescription: 'TSC TTP-384MT — przemysłowa drukarka etykiet 8" 300 dpi, 102 mm/s, LCD 4,3", emulacja ZPL, port LPT. Drobny tekst, kody 2D, GHS. Od 9 635 zł netto.',
+    seoDescription: 'TSC TTP-384MT — przemysłowa drukarka etykiet 8" 300 dpi, 102 mm/s, LPT, emulacja ZPL. Drobny tekst, kody 2D, GHS. Od 9 635 zł. PN: 99-135A001-0002.',
     description: `**TSC TTP-384MT — jedyna przemysłowa drukarka etykiet 8 cali z rozdzielczością 300 dpi w cenie poniżej 10 000 zł. Zamiennik wycofanej Zebra 220Xi4 300 dpi. Od 9 635 zł netto.**
 
 TSC TTP-384MT to [drukarka przemysłowa](/przemyslowe-drukarki-etykiet) z najwyższą rozdzielczością w serii 8-calowej — 300 dpi (12 dots/mm) przy szerokości druku 219,5 mm (8,64 cala). Przeznaczona do druku szerokich etykiet GHS z piktogramami i drobnym tekstem, kodów 2D o wysokiej gęstości (DataMatrix, QR), etykiet compliance z małym drukiem (UDI, CE) i szerokich oznaczeń wymagających czytelności detali. Prędkość 102 mm/s (4 ips) jest wolniejsza niż w [TTP-286MT](/produkt/tsc-ttp-286mt) (152 mm/s), ale standardowa dla klasy 300 dpi w formacie 8 cali.
@@ -45972,7 +45972,7 @@ TSC TTP-384MT ma certyfikat ENERGY STAR. System TSC Sense Care monitoruje przebi
       },
       {
         question: 'TSC TTP-384MT czy Zebra ZT620 300 dpi — porównanie',
-        answer: '<a href="/produkt/zebra-zt620">Zebra ZT620</a> to drukarka 6-calowa (168 mm), nie 8-calowa. TTP-384MT drukuje o 30% szerzej (219,5 mm vs 168 mm). ZT620 300 dpi: 203 mm/s, natywne ZPL, Link-OS, 26 kg, od 12 417 zł. TTP-384MT: 102 mm/s, emulacja ZPL, LPT, 23,7 kg, od 9 635 zł. Jeśli potrzebujesz 8 cali — wybór jest jednoznaczny: TTP-384MT. Jeśli wystarczy 6 cali — ZT620 jest szybsza.',
+        answer: '<a href="/produkt/zebra-zt620">Zebra ZT620</a> to drukarka 6-calowa (168 mm), nie 8-calowa. TTP-384MT drukuje o 30% szerzej (219,5 mm vs 168 mm). ZT620 300 dpi: 305 mm/s, natywne ZPL, Link-OS, 26 kg, od 12 417 zł. TTP-384MT: 102 mm/s, emulacja ZPL, LPT, 23,7 kg, od 9 635 zł. Jeśli potrzebujesz 8 cali — wybór jest jednoznaczny: TTP-384MT. Jeśli wystarczy 6 cali — ZT620 jest 3× szybsza.',
       },
       {
         question: 'Jakie akcesoria są dostępne do TSC TTP-384MT?',
