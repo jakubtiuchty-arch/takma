@@ -260,8 +260,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Przemysłowe drukarki etykiet do pracy ciągłej 24/7. Metalowa obudowa, do 600 dpi, RFID. Zebra, Honeywell, TSC. Porównanie modeli, ceny, doradztwo techniczne.',
     longDescription: 'Drukarki przemysłowe (industrial) przeznaczone są do pracy ciągłej 24/7 w wymagających środowiskach produkcyjnych, magazynowych i logistycznych. Metalowa konstrukcja, zaawansowane interfejsy sieciowe, kolorowe wyświetlacze i opcje takie jak moduł RFID, obcinacz czy odklejak czynią je niezastąpionymi w operacjach o dużym wolumenie druku. W ofercie modele od entry-level po flagowe urządzenia 6-calowe od wiodących producentów.',
     icon: 'printer',
-    productIds: ['zebra-zt231', 'zebra-zt111', 'zebra-zt411', 'zebra-zt421', 'zebra-zt510', 'zebra-zt610', 'zebra-zt620', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t'],
-    productCount: 24,
+    productIds: ['zebra-zt231', 'zebra-zt111', 'zebra-zt411', 'zebra-zt421', 'zebra-zt510', 'zebra-zt610', 'zebra-zt620', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t'],
+    productCount: 25,
   },
   {
     id: 'termotransferowe-drukarki-etykiet',
@@ -276,9 +276,9 @@ export const subcategories: Subcategory[] = [
     productIds: [
       'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd621t',
       'zebra-zt231', 'zebra-zt111', 'zebra-zt411', 'zebra-zt421', 'zebra-zt510',
-      'zebra-zt610', 'zebra-zt620', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t',
+      'zebra-zt610', 'zebra-zt620', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t',
     ],
-    productCount: 32,
+    productCount: 33,
   },
   {
     id: 'termiczne-drukarki-etykiet',
@@ -45466,10 +45466,247 @@ TSC MH641T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sens
     createdAt: '2026-03-19',
     sameAs: 'https://emea.tscprinters.com/en/products/mh-series-4-inch-performance-industrial-printers',
   },
+  // ==================== TSC MH261T ====================
+  {
+    id: 'tsc-mh261t',
+    slug: 'tsc-mh261t',
+    name: 'TSC MH261T',
+    shortDescription: 'TSC MH261T — przemysłowa drukarka etykiet 6" 203 dpi, 305 mm/s, LCD 4,3" dotykowy, bifold door, emulacja ZPL',
+    seoTitle: 'TSC MH261T — drukarka etykiet 6" 203 dpi | od 7 408 zł',
+    seoDescription: 'TSC MH261T — przemysłowa drukarka etykiet 6" 203 dpi, 305 mm/s, LCD 4,3", bifold door, ZPL. O 40% tańsza niż Zebra ZT620. Od 7 408 zł. MH261T-A001-0302.',
+    description: `**TSC MH261T — przemysłowa drukarka etykiet 6" (168 mm) z prędkością 305 mm/s, taką samą jak Zebra ZT620, ale o 40% tańsza. Od 7 408 zł netto.**
+
+TSC MH261T to [drukarka przemysłowa](/przemyslowe-drukarki-etykiet) 6-calowa z serii Performance Industrial, przeznaczona do druku szerokich etykiet paletowych GS1-128/SSCC, etykiet GHS na pojemniki z chemikaliami i oznaczeń kartonów zbiorczych do 172,7 mm szerokości. Prędkość 305 mm/s (12 ips) dorównuje [Zebra ZT620](/produkt/zebra-zt620) — ale MH261T kosztuje od 7 408 zł vs 12 417 zł za ZT620 (oszczędność 5 009 zł, 40%).
+
+MH261T oferuje dotykowy LCD 4,3" (480×272 px), 512 MB Flash + 256 MB SDRAM, ribbon 450 m (rdzeń 1", OD 81 mm, szerokość do 178 mm) i metalową konstrukcję die-cast z drzwiami bifold. Port Parallel (LPT) oprócz USB i Ethernet — kompatybilność z legacy systemami. Automatyczna emulacja ZPL II, EPL i DPL (tryb TSPL-EZD) pozwala zastąpić drukarkę Zebra bez zmian w systemie WMS/ERP.
+
+Drukarka do szerokich etykiet paletowych i logistycznych (GS1-128, SSCC), etykiet na kartony zbiorcze, oznaczeń GHS na pojemniki z chemikaliami, szerokich metek odzieżowych i etykiet przemysłowych do 172,7 mm. Opcje: gilotyna heavy-duty, odklejak peel-off, nawijak wewnętrzny 5" OD, [moduł Wi-Fi + Bluetooth](/produkt/tsc-modul-wifi-bluetooth), klawiatura KP-200 Plus.
+
+Szacunkowy TCO na 3 lata vs Zebra ZT620 (15 000 etykiet/dzień, 250 dni roboczych): sama drukarka — 7 408 zł vs 12 417 zł (oszczędność 5 009 zł). Ribbon: obie drukarki 450 m — koszty taśm porównywalne. Głowica: wymiana co ok. 25 km. Łączna oszczędność na 3-letnim TCO: ponad 5 000 zł.
+
+TSC MH261T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sense Care monitoruje przebieg głowicy — integracja z SOTI Connect i TSC Console do zdalnego zarządzania flotą.`,
+    categoryId: 'drukarki-etykiet',
+    subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
+    manufacturerId: 'tsc',
+    priceFrom: 7408,
+    images: [
+      '/images/products/MH261T-A001-0302.png',
+      '/images/products/MH261T-A001-0302-2.png',
+      '/images/products/MH261T-A001-0302-3.png',
+    ],
+    imageDescriptions: [
+      'TSC MH261T — widok z przodu, dotykowy LCD 4,3 cala, metalowa obudowa Performance Industrial 6 cali',
+      'Drukarka przemysłowa TSC MH261T 6" — widok z boku, składane drzwi bifold z oknem podglądu mediów',
+      'TSC MH261T — widok od tyłu, złącza RS-232, Parallel, USB, Ethernet',
+    ],
+    tags: ['magazyn', 'logistyka', 'produkcja'] as ProductTag[],
+    availability: 'available' as const,
+    isNew: true,
+    isBestseller: false,
+    keyParams: {
+      rodzajDruku: 'Termotransferowa + termiczna (TT + DT)',
+      rozdzielczosc: '203 dpi (8 dots/mm)',
+      predkoscDruku: 'do 305 mm/s (12 ips)',
+      szerokoscDruku: 'max. 168 mm (6,61")',
+      szerokoscEtykiet: '50,8–172,7 mm',
+    },
+    specifications: [
+      { name: 'Rodzaj druku', value: 'Termotransferowy + termiczny bezpośredni (TT + DT)' },
+      { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm)' },
+      { name: 'Prędkość druku', value: 'do 305 mm/s (12 ips)' },
+      { name: 'Szerokość druku', value: 'max. 168 mm (6,61")' },
+      { name: 'Maks. długość etykiety', value: '14 732 mm (580")' },
+      { name: 'Min. długość etykiety', value: '10 mm' },
+      { name: 'Szerokość mediów', value: '50,8–172,7 mm (2"–6,8")' },
+      { name: 'Grubość mediów', value: '0,06–0,268 mm (2,36–11,02 mil)' },
+      { name: 'Maks. średnica rolki', value: '208,3 mm (8,2" OD), rdzeń 1,5" lub 3"' },
+      { name: 'Taśma (ribbon)', value: 'do 450 m, max. OD 81 mm, szerokość 50,8–178 mm, rdzeń 1" (25,4 mm)' },
+      { name: 'Procesor', value: '32-bit RISC CPU' },
+      { name: 'Pamięć RAM', value: '256 MB SDRAM' },
+      { name: 'Pamięć Flash', value: '512 MB' },
+      { name: 'Karta microSD', value: 'Do 32 GB' },
+      { name: 'Wyświetlacz', value: 'Kolorowy dotykowy LCD 4,3" (480×272 px, rezystancyjny) + 6 przycisków + 1 LED' },
+      { name: 'Interfejsy', value: 'USB 2.0, USB Host ×2, RS-232, Parallel (LPT), Ethernet 10/100 Mbps' },
+      { name: 'Łączność bezprzewodowa', value: 'Opcja: Wi-Fi 802.11 a/b/g/n/ac + Bluetooth 4.2 combo (moduł slot-in)' },
+      { name: 'Języki druku', value: 'TSPL-EZD z auto-emulacją ZPL II, EPL, DPL' },
+      { name: 'Kody 1D', value: 'Code 39, Code 93, Code 128, EAN-8/13, UPC-A/E, Interleave 2/5, Codabar, MSI, POSTNET, GS1 DataBar, Code 11' },
+      { name: 'Kody 2D', value: 'PDF-417, Micro PDF 417, DataMatrix, QR Code, Aztec, MaxiCode, TLC 39' },
+      { name: 'Czujniki', value: 'Gap (przerwy, pozycja regulowana), Black Mark (reflekcyjny, pozycja regulowana), ribbon encoder, ribbon end, otwarcie głowicy' },
+      { name: 'RTC', value: 'Tak (zegar czasu rzeczywistego)' },
+      { name: 'Konstrukcja', value: 'Metalowy mechanizm drukujący die-cast, składane drzwi bifold, okno podglądu mediów' },
+      { name: 'Opcje fabryczne', value: 'GPIO (DB-15F) — opcja dealerska' },
+      { name: 'Zasilanie', value: 'Wewnętrzne auto-sensing, AC 100–240 V, 4–2A, 50–60 Hz, DC 5V/5A + 24V/7A + 36V/1,4A (243 W)' },
+      { name: 'Wymiary (S × W × G)', value: '357 × 313 × 514 mm' },
+      { name: 'Waga', value: '17 800 g' },
+      { name: 'Temperatura pracy', value: '0°C do 40°C' },
+      { name: 'Wilgotność pracy', value: '25–85% (bez kondensacji)' },
+      { name: 'Certyfikaty', value: 'FCC Class A, CE, RCM, UL, cUL, TÜV, CCC, KC, BIS, BSMI, EAC, ENERGY STAR, RoHS, WEEE' },
+      { name: 'Gwarancja', value: '24 miesiące (drukarka) / 12 miesięcy lub 25 km (głowica) / 12 miesięcy lub 50 km (wałek)' },
+    ],
+    applications: [
+      'Szerokie etykiety paletowe GS1-128 / SSCC — centra dystrybucji i logistyka 3PL',
+      'Etykiety na kartony zbiorcze i opakowania zbiorcze',
+      'Oznaczenia GHS na pojemniki z chemikaliami i materiałami niebezpiecznymi',
+      'Szerokie etykiety wysyłkowe i logistyczne (do 172,7 mm)',
+      'Etykiety compliance na palety i kontenery',
+      'Szerokie metki odzieżowe i etykiety na rolki tkanin',
+      'Etykiety na rury, przewody i kable — druk ciągły do 14,7 m',
+      'Etykiety przemysłowe na duże komponenty i półprodukty',
+    ],
+    variants: [
+      {
+        partNumber: 'MH261T-A001-0302',
+        name: '203 dpi, dotykowy LCD 4,3", Ethernet + Parallel',
+        attributes: {
+          'Rozdzielczość': '203 dpi',
+          'Wyświetlacz': 'Dotykowy LCD 4,3"',
+        },
+        priceFrom: 7408,
+        availability: 'available' as const,
+      },
+    ],
+    variantAttributeTooltips: {
+      'Wyświetlacz': 'Dotykowy LCD 4,3" — kolorowy ekran rezystancyjny 480×272 px z menu konfiguracyjnym. W wersji MH261 (bez T) dostępny jest LCD bez dotyku',
+    },
+    compatibleAccessories: [],
+    relatedAccessories: [
+      'tsc-printhead-mh261t-203',
+      'tsc-wifi-bt-module',
+    ],
+    relatedProducts: ['zebra-zt620', 'honeywell-pm65', 'honeywell-px65'],
+    faq: [
+      {
+        question: 'Czym różni się TSC MH261T od TSC MH241T?',
+        answer: 'To dwie różne serie na różnych chassis. MH261T to drukarka 6-calowa (szerokość druku 168 mm, media do 172,7 mm), MH241T to 4-calowa (104 mm, media do 114 mm). MH261T: 305 mm/s, ribbon 450 m, 17,8 kg, wymiary 357×313×514 mm, port Parallel, od 7 408 zł. <a href="/produkt/tsc-mh241t">MH241T</a>: 356 mm/s, ribbon 600 m, 15,7 kg, wymiary 276×326×502 mm, od 4 016 zł. Głowice, gilotyny i nawijaki NIE są wymienne między seriami.',
+      },
+      {
+        question: 'TSC MH261T czy Zebra ZT620 — którą drukarkę 6" wybrać?',
+        answer: 'Obie drukarki drukują z prędkością 305 mm/s przy 203 dpi i mają szerokość druku 168 mm. TSC MH261T: bifold door, LCD 4,3" dotykowy, emulacja ZPL, 17,8 kg, od 7 408 zł. <a href="/produkt/zebra-zt620">Zebra ZT620</a>: natywne ZPL, Link-OS, 1 GB RAM, opcja 300 dpi, RFID UHF opcja, 26 kg, od 12 417 zł. MH261T jest o 40% tańsza. Wybierz TSC, gdy budżet jest kluczowy. Wybierz Zebra, gdy potrzebujesz natywnego ZPL, Link-OS, RFID lub 300 dpi.',
+      },
+      {
+        question: 'TSC MH261T czy Honeywell PM65 — porównanie drukarek 6"',
+        answer: 'MH261T: 305 mm/s, LCD 4,3" dotykowy, 512 MB Flash, 17,8 kg, emulacja ZPL, od 7 408 zł. <a href="/produkt/honeywell-pm65">Honeywell PM65</a>: 300 mm/s, Wi-Fi 6 + BT 5.2, Printer Edge, od 5 554 zł. PM65 jest tańsza i ma nowszą łączność bezprzewodową. MH261T ma szybszy druk (305 vs 300 mm/s), większy wyświetlacz dotykowy i emulację ZPL — wymiana drukarki Zebra bez zmian w systemie.',
+      },
+      {
+        question: 'TSC MH261T czy Honeywell PX65 — porównanie drukarek 6"',
+        answer: 'MH261T: 305 mm/s, LCD 4,3" dotykowy, 17,8 kg, od 7 408 zł. <a href="/produkt/honeywell-px65">Honeywell PX65</a>: klasa heavy-duty, IP64, QuickMount, 12,6 kg, od 10 648 zł. PX65 jest lżejsza (12,6 vs 17,8 kg) i ma klasę IP64, ale kosztuje 44% więcej. MH261T wystarczy do standardowego etykietowania 6" w magazynach i centrach dystrybucji. PX65 — gdy potrzebujesz IP64, ekstremalnie lekkiej obudowy lub C# Smart Printing.',
+      },
+      {
+        question: 'Czy TSC MH261T obsługuje język ZPL (Zebra)?',
+        answer: 'Tak — TSC MH261T obsługuje automatyczną emulację ZPL II, EPL i DPL w trybie TSPL-EZD. Drukarka sama rozpoznaje język przychodzących komend. System WMS/ERP generujący komendy ZPL nie wymaga żadnych zmian — wystarczy podłączyć TSC MH261T zamiast drukarki Zebra ZT620.',
+      },
+      {
+        question: 'Jakie są różnice między MH261T a MH361T (300 dpi)?',
+        answer: 'MH261T to wersja 203 dpi (305 mm/s), MH361T to 300 dpi (254 mm/s). Chassis, wymiary, waga i interfejsy są identyczne. MH361T drukuje wolniej, ale z wyższą rozdzielczością — dla małych kodów 2D i drobnego tekstu na szerokich etykietach. Maks. długość etykiety: MH261T 14 732 mm vs MH361T 6 604 mm.',
+      },
+      {
+        question: 'Czy TSC MH261T ma port Parallel (LPT)?',
+        answer: 'Tak — MH261T ma port Parallel (LPT) w standardzie, oprócz USB 2.0, USB Host ×2, RS-232 i Ethernet 10/100 Mbps. To ważne dla zakładów z legacy systemami druku. Dla porównania, seria MH241T (4") nie ma portu Parallel.',
+      },
+      {
+        question: 'Ile kosztuje TSC MH261T?',
+        answer: 'TSC MH261T w wersji bazowej (203 dpi, dotykowy LCD 4,3", Ethernet + Parallel) kosztuje od 7 408 zł netto. Porównanie z innymi drukarkami 6": <a href="/produkt/honeywell-pm65">Honeywell PM65</a> od 5 554 zł, <a href="/produkt/honeywell-px65">Honeywell PX65</a> od 10 648 zł, <a href="/produkt/zebra-zt620">Zebra ZT620</a> od 12 417 zł.',
+      },
+      {
+        question: 'Jaka jest gwarancja na TSC MH261T?',
+        answer: 'Gwarancja producenta: 24 miesiące na drukarkę, 12 miesięcy lub 25 km druku (co nastąpi wcześniej) na głowicę drukującą, 12 miesięcy lub 50 km druku na wałek dociskowy (platen roller). Autoryzowany serwis TSC w Polsce: PTSC.pl, Fixit Service, TAKMA.',
+      },
+      {
+        question: 'Jaka jest alternatywa dla TSC MH261T?',
+        answer: 'W klasie drukarek 6": <a href="/produkt/honeywell-pm65">Honeywell PM65</a> (300 mm/s, Wi-Fi 6, od 5 554 zł), <a href="/produkt/honeywell-px65">Honeywell PX65</a> (IP64, 12,6 kg, od 10 648 zł), <a href="/produkt/zebra-zt620">Zebra ZT620</a> (305 mm/s, Link-OS, RFID opcja, od 12 417 zł). Jeśli wystarczy 4": <a href="/produkt/tsc-mh241t">TSC MH241T</a> (356 mm/s, 104 mm, od 4 016 zł).',
+      },
+    ],
+    comparison: {
+      title: 'Porównanie drukarek przemysłowych 6"',
+      models: [
+        {
+          name: 'TSC MH261T',
+          slug: 'tsc-mh261t',
+          highlight: true,
+          specs: {
+            'Rozdzielczość': '203 dpi',
+            'Prędkość druku': '305 mm/s',
+            'Szerokość druku': '168 mm (6")',
+            'Wyświetlacz': 'Dotykowy LCD 4,3"',
+            'Ribbon': '450 m',
+            'Waga': '17,8 kg',
+            'Emulacja ZPL': 'Tak (auto)',
+            'Parallel (LPT)': 'Tak',
+            'Cena od': '7 408 zł',
+          },
+        },
+        {
+          name: 'Honeywell PM65',
+          slug: 'honeywell-pm65',
+          specs: {
+            'Rozdzielczość': '203/300 dpi',
+            'Prędkość druku': '300 mm/s',
+            'Szerokość druku': '167,4 mm (6")',
+            'Wyświetlacz': 'Dotykowy 3,5" kolor',
+            'Ribbon': '600 m',
+            'Waga': '13,0 kg',
+            'Emulacja ZPL': 'Tak',
+            'Parallel (LPT)': 'Nie',
+            'Cena od': '5 554 zł',
+          },
+        },
+        {
+          name: 'Zebra ZT620',
+          slug: 'zebra-zt620',
+          specs: {
+            'Rozdzielczość': '203/300 dpi',
+            'Prędkość druku': '305 mm/s',
+            'Szerokość druku': '168 mm (6")',
+            'Wyświetlacz': 'Dotykowy 4,3" kolor',
+            'Ribbon': '450 m',
+            'Waga': '26,0 kg',
+            'Emulacja ZPL': 'Natywny',
+            'Parallel (LPT)': 'Nie',
+            'Cena od': '12 417 zł',
+          },
+        },
+      ],
+    },
+    downloads: [
+      { name: 'Karta katalogowa MH261T (EN)', type: 'datasheet' as const, url: '/downloads/tsc-mh241t-datasheet.pdf', size: '497 KB' },
+    ],
+    createdAt: '2026-03-19',
+    sameAs: 'https://emea.tscprinters.com/en/products/mh-series-6-inch-performance-industrial-printers',
+  },
 ]
 
 // TSC PRINTER ACCESSORIES
 const tscPrinterAccessories: Product[] = [
+  {
+    id: 'tsc-printhead-mh261t-203',
+    slug: 'tsc-glowica-mh261t-203dpi',
+    name: 'Głowica TSC MH261T 203 dpi',
+    shortDescription: 'Głowica drukująca TSC PH-MH261T-0001 — 203 dpi do drukarek TSC MH261T i MH261',
+    description: 'Oryginalna głowica drukująca TSC PH-MH261T-0001 o rozdzielczości 203 dpi (8 dots/mm) i szerokości 6 cali (168 mm). Kompatybilna z drukarkami TSC MH261T i MH261 z serii Performance Industrial 6". Zalecana wymiana co 25 km druku lub po zauważeniu pogorszenia jakości wydruku.',
+    categoryId: 'akcesoria',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
+    manufacturerId: 'tsc',
+    tags: ['magazyn', 'logistyka', 'produkcja'] as ProductTag[],
+    images: ['/images/products/PH-MH261T-0001.png'],
+    imageDescriptions: ['Głowica drukująca TSC PH-MH261T-0001 203 dpi 6" — kompatybilna z MH261T i MH261'],
+    specifications: [
+      { name: 'Part Number', value: 'PH-MH261T-0001' },
+      { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm)' },
+      { name: 'Szerokość', value: '168 mm (6")' },
+      { name: 'Kompatybilność', value: 'TSC MH261T, MH261' },
+      { name: 'Typ', value: 'Głowica termiczna' },
+    ],
+    applications: ['Wymiana zużytej głowicy', 'Konserwacja prewencyjna'],
+    priceFrom: undefined,
+    availability: 'unavailable' as const,
+    isNew: true,
+    isBestseller: false,
+    compatibleAccessories: [],
+    relatedAccessories: [],
+    downloads: [],
+    faq: [],
+    createdAt: '2026-03-19',
+  },
   {
     id: 'tsc-printhead-ml241p-203',
     slug: 'tsc-glowica-ml241p-203dpi',
