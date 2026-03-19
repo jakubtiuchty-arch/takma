@@ -670,16 +670,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
                       </p>
                     )
                   }
-                  // Parse markdown links [text](url)
-                  const parts = paragraph.split(/(\[[^\]]+\]\([^)]+\))/)
-                  const hasLinks = parts.length > 1
                   return (
                     <p key={i} className="text-gray-600 mb-4 sm:text-justify">
-                      {hasLinks ? parts.map((part, j) => {
-                        const md = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
-                        if (md) return <a key={j} href={md[2]} className="text-primary-600 hover:underline">{md[1]}</a>
-                        return <span key={j}>{part}</span>
-                      }) : paragraph}
+                      <LinkedText text={paragraph} />
                     </p>
                   )
                 })}
