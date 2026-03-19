@@ -45264,14 +45264,14 @@ TSC MH341T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sens
     name: 'TSC MH641T',
     shortDescription: 'TSC MH641T — przemysłowa drukarka etykiet 4" 600 dpi, 152 mm/s, LCD 4,3" dotykowy, bifold door, emulacja ZPL',
     seoTitle: 'TSC MH641T — drukarka etykiet 600 dpi | od 6 600 zł',
-    seoDescription: 'TSC MH641T — przemysłowa drukarka etykiet 4" 600 dpi, 152 mm/s, LCD 4,3" dotykowy, bifold door, media do 0,28 mm. Od 6 600 zł. MH641T-A001-0302.',
+    seoDescription: 'TSC MH641T — przemysłowa drukarka etykiet 4" 600 dpi, 152 mm/s, jak ZT411 za 44% mniej. Bifold door, LCD 4,3", media do 0,28 mm. Od 6 600 zł netto.',
     description: `**TSC MH641T — przemysłowa drukarka etykiet 4" z rozdzielczością 600 dpi na platformie Performance Industrial. O 44% tańsza niż Zebra ZT411 w wersji 600 dpi. Od 6 600 zł netto.**
 
-TSC MH641T to [drukarka przemysłowa](/przemyslowe-drukarki-etykiet) z najwyższą rozdzielczością w serii MH — 600 dpi (24 dots/mm). Przeznaczona do druku mikroetykiet, kodów 2D o wysokiej gęstości, etykiet na komponenty elektroniczne, biżuterię, próbki laboratoryjne i farmaceutykę wymagającą serialization. Prędkość 152 mm/s (6 ips) jest niższa niż w [MH241T](/produkt/tsc-mh241t) (356 mm/s) i [MH341T](/produkt/tsc-mh341t) (305 mm/s), ale typowa dla klasy 600 dpi — [Zebra ZT411 600 dpi](/produkt/zebra-zt411) drukuje 102 mm/s, a [Zebra ZT610 600 dpi](/produkt/zebra-zt610) 152 mm/s.
+TSC MH641T to [drukarka przemysłowa](/przemyslowe-drukarki-etykiet) z najwyższą rozdzielczością w serii MH — 600 dpi (24 dots/mm). Przeznaczona do druku mikroetykiet, kodów 2D o wysokiej gęstości, etykiet na komponenty elektroniczne, biżuterię, próbki laboratoryjne i farmaceutykę wymagającą serialization. Prędkość 152 mm/s (6 ips) jest niższa niż w [MH241T](/produkt/tsc-mh241t) (356 mm/s) i [MH341T](/produkt/tsc-mh341t) (305 mm/s), ale identyczna z [Zebra ZT610 600 dpi](/produkt/zebra-zt610) i [Zebra ZT411 600 dpi](/produkt/zebra-zt411) — wszystkie trzy drukarki 600 dpi drukują z tą samą prędkością 152 mm/s.
 
 MH641T stoi na identycznym chassis Performance Industrial co MH241T i MH341T: metalowa konstrukcja die-cast z drzwiami bifold, dotykowy LCD 4,3" (480×272 px), 512 MB Flash + 256 MB SDRAM, ribbon 600 m i media do 0,28 mm (hang-tagi). Automatyczna emulacja ZPL II, EPL i DPL (tryb TSPL-EZD) pozwala zastąpić drukarkę Zebra bez zmian w systemie WMS/ERP. Maks. długość etykiety: 2 540 mm (100") — wystarczająca dla większości zastosowań 600 dpi.
 
-Szacunkowy TCO na 3 lata vs Zebra ZT411 600 dpi: sama drukarka — 6 600 zł vs 11 747 zł (oszczędność 5 147 zł). Ribbon 600 m (MH641T) vs 450 m (ZT411) — mniej wymian, niższe koszty operacyjne. Głowica 600 dpi wytrzymuje ok. 25 km druku. Łączna oszczędność na 3-letnim TCO: ponad 6 000 zł.
+Szacunkowy TCO na 3 lata vs Zebra ZT411 600 dpi: sama drukarka — 6 600 zł vs 11 747 zł (oszczędność 5 147 zł). Ribbon 600 m (MH641T) vs 450 m (ZT411) — o 33% więcej druku na jednej rolce, mniej wymian i przestojów. Przy zużyciu 100 rolek/rok: 100 rolek TSC vs 133 rolki Zebra. Głowica 600 dpi wytrzymuje ok. 25 km druku. Łączna oszczędność na 3-letnim TCO: ponad 6 000 zł.
 
 TSC MH641T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sense Care monitoruje przebieg głowicy — integracja z SOTI Connect i TSC Console do zdalnego zarządzania flotą.`,
     categoryId: 'drukarki-etykiet',
@@ -45378,11 +45378,11 @@ TSC MH641T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sens
       },
       {
         question: 'TSC MH641T czy Zebra ZT411 600 dpi — którą drukarkę wybrać?',
-        answer: 'TSC MH641T: 152 mm/s, 600 m ribbon, bifold door, emulacja ZPL, cena od 6 600 zł. <a href="/produkt/zebra-zt411">Zebra ZT411 600 dpi</a>: 102 mm/s, 450 m ribbon, natywne ZPL, Link-OS, cena od 11 747 zł. MH641T jest o 49% szybsza i o 44% tańsza. Wybierz TSC, gdy liczy się prędkość i budżet. Wybierz Zebra, gdy potrzebujesz ekosystemu Link-OS lub natywnego ZPL bez emulacji.',
+        answer: 'Obie drukarki drukują w 600 dpi z identyczną prędkością 152 mm/s. TSC MH641T: 600 m ribbon, bifold door, emulacja ZPL, cena od 6 600 zł. <a href="/produkt/zebra-zt411">Zebra ZT411 600 dpi</a>: 450 m ribbon, natywne ZPL, Link-OS, cena od 11 747 zł. MH641T jest o 44% tańsza przy identycznej prędkości. Wybierz TSC, gdy liczy się budżet i dłuższy ribbon. Wybierz Zebra, gdy potrzebujesz ekosystemu Link-OS lub natywnego ZPL bez emulacji.',
       },
       {
         question: 'TSC MH641T czy Zebra ZT610 600 dpi — porównanie',
-        answer: 'Obie drukarki drukują w 600 dpi z prędkością 152 mm/s. MH641T: 600 m ribbon, bifold door, LCD 4,3", 15,7 kg, od 6 600 zł. <a href="/produkt/zebra-zt610">Zebra ZT610 600 dpi</a>: 450 m ribbon, natywne ZPL, Link-OS, 28,1 kg, od 17 761 zł. MH641T jest o 63% tańsza i o 44% lżejsza. ZT610 ma szerszy ekosystem Zebra i natywne ZPL — ale za niemal 3× wyższą cenę.',
+        answer: 'Obie drukarki drukują w 600 dpi z prędkością 152 mm/s. MH641T: 600 m ribbon, bifold door, LCD 4,3", 15,7 kg, od 6 600 zł. <a href="/produkt/zebra-zt610">Zebra ZT610 600 dpi</a>: 450 m ribbon, natywne ZPL, Link-OS, 22,7 kg, od 17 761 zł. MH641T jest o 63% tańsza i o 31% lżejsza. ZT610 ma szerszy ekosystem Zebra i natywne ZPL — ale za niemal 3× wyższą cenę.',
       },
       {
         question: 'Czy TSC MH641T obsługuje język ZPL (Zebra)?',
@@ -45406,7 +45406,7 @@ TSC MH641T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sens
       },
       {
         question: 'Jaka jest alternatywa dla TSC MH641T?',
-        answer: 'W klasie 600 dpi: <a href="/produkt/zebra-zt411">Zebra ZT411 600 dpi</a> (102 mm/s, natywne ZPL, Link-OS, od 11 747 zł), <a href="/produkt/zebra-zt610">Zebra ZT610 600 dpi</a> (152 mm/s, natywne ZPL, Link-OS, od 17 761 zł). Jeśli 300 dpi wystarcza: <a href="/produkt/tsc-mh341t">TSC MH341T</a> (305 mm/s, od 4 701 zł). Jeśli 203 dpi: <a href="/produkt/tsc-mh241t">TSC MH241T</a> (356 mm/s, od 4 016 zł).',
+        answer: 'W klasie 600 dpi: <a href="/produkt/zebra-zt411">Zebra ZT411 600 dpi</a> (152 mm/s, natywne ZPL, Link-OS, od 11 747 zł), <a href="/produkt/zebra-zt610">Zebra ZT610 600 dpi</a> (152 mm/s, natywne ZPL, Link-OS, od 17 761 zł). Jeśli 300 dpi wystarcza: <a href="/produkt/tsc-mh341t">TSC MH341T</a> (305 mm/s, od 4 701 zł). Jeśli 203 dpi: <a href="/produkt/tsc-mh241t">TSC MH241T</a> (356 mm/s, od 4 016 zł).',
       },
     ],
     comparison: {
@@ -45433,7 +45433,7 @@ TSC MH641T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sens
           slug: 'zebra-zt411',
           specs: {
             'Rozdzielczość': '600 dpi',
-            'Prędkość druku': '102 mm/s',
+            'Prędkość druku': '152 mm/s',
             'Szerokość druku': '104 mm',
             'Wyświetlacz': 'Dotykowy 4,3" kolor',
             'Ribbon': '450 m',
@@ -45452,7 +45452,7 @@ TSC MH641T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sens
             'Szerokość druku': '104 mm',
             'Wyświetlacz': 'Dotykowy 4,3" kolor',
             'Ribbon': '450 m',
-            'Waga': '28,1 kg',
+            'Waga': '22,7 kg',
             'Emulacja ZPL': 'Natywny',
             'Grubość mediów': 'do 0,25 mm',
             'Cena od': '17 761 zł',
