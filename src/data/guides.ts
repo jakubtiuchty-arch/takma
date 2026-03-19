@@ -9441,7 +9441,7 @@ export const guides: Guide[] = [
 <li><strong>Temperatura:</strong> do ok. 85–95°C (vs 60–70°C woskowa)</li>
 <li><strong>Alkohol izopropylowy (IPA):</strong> Tak — nadruk nie rozmywa się przy dezynfekcji</li>
 <li><strong>Woda, para, alkalia, słabe kwasy i oleje:</strong> Tak</li>
-<li><strong>Aceton/ksylen:</strong> Nie — wymaga taśmy żywicznej (a do pełnej odporności: Zebra ChemResist)</li>
+<li><strong>Aceton/ksylen:</strong> Nie — wymaga taśmy żywicznej (a do pełnej odporności: Zebra ChemResist — <a href="/kontakt">zapytaj o dostępność</a>)</li>
 <li><strong>UV (outdoor):</strong> 1–3 lata czytelności na zewnątrz</li>
 </ul>
 
@@ -9486,7 +9486,7 @@ export const guides: Guide[] = [
 <ul>
 <li><strong>Temperatura:</strong> do ok. 110–120°C</li>
 <li><strong>IPA 90%, oleje, heksany:</strong> Tak — dobra odporność (Zebra 5095: rating „Good")</li>
-<li><strong>Aceton, ksylen:</strong> Nie — Zebra 5095 ma rating „Not Recommended" dla acetonu i ksylenu. Do pełnej odporności na te rozpuszczalniki potrzebna jest taśma Zebra ChemResist</li>
+<li><strong>Aceton, ksylen:</strong> Nie — Zebra 5095 ma rating „Not Recommended" dla acetonu i ksylenu. Do pełnej odporności na te rozpuszczalniki potrzebna jest taśma Zebra ChemResist (<a href="/kontakt">zapytaj o dostępność</a>)</li>
 <li><strong>Immersja w wodzie:</strong> Tak</li>
 <li><strong>UV (outdoor):</strong> 3–7 lat czytelności na syntetykach PP/PE/PET (do 10+ lat na podłożu poliimidowym)</li>
 <li><strong>Ścieranie mechaniczne:</strong> ekstremalna odporność (żywica tworzy twardą powłokę na syntetyku)</li>
@@ -9510,7 +9510,7 @@ export const guides: Guide[] = [
 
 <p><strong>BS5609 i transport morski:</strong> Norma BS5609 (etykietowanie pojemników chemicznych w transporcie morskim wg IMO) wymaga testowania kompletnego systemu: taśma + etykieta + klej + drukarka. Taśma 5095 z certyfikatem UL/cUL spełnia wymagania materiałowe, ale pełna zgodność BS5609 Section 3 wymaga testów całego zestawu u akredytowanego laboratorium.</p>
 
-<p><strong>Werdykt:</strong> Taśma żywiczna jest niezbędna dla syntetyków i warunków ekstremalnych. Koszt: ok. 0,022 zł na etykietę 100 x 50 mm — ok. 3,2x więcej niż woskowa, ale w zastosowaniach outdoor zastępuje wymianę etykiet co 6 miesięcy (woskowa) jedną etykietą na 3–7 lat. Nie używaj żywicznej na papierze — przepłacasz bez korzyści. Do pełnej odporności na aceton i ksylen potrzebna jest taśma Zebra ChemResist (osobna seria).</p>`
+<p><strong>Werdykt:</strong> Taśma żywiczna jest niezbędna dla syntetyków i warunków ekstremalnych. Koszt: ok. 0,022 zł na etykietę 100 x 50 mm — ok. 3,2x więcej niż woskowa, ale w zastosowaniach outdoor zastępuje wymianę etykiet co 6 miesięcy (woskowa) jedną etykietą na 3–7 lat. Nie używaj żywicznej na papierze — przepłacasz bez korzyści. Do pełnej odporności na aceton i ksylen potrzebna jest taśma Zebra ChemResist — <a href="/kontakt">zapytaj o dostępność</a>.</p>`
     },
     {
       id: 'tabela-porownawcza',
@@ -9530,7 +9530,7 @@ export const guides: Guide[] = [
 <tr><td><strong>Max prędkość druku</strong></td><td>304–355 mm/s</td><td>200–254 mm/s</td><td>203 mm/s</td></tr>
 <tr><td><strong>Odporność temp. nadruku</strong></td><td>do ~60°C</td><td>do ~90°C</td><td>do ~120°C</td></tr>
 <tr><td><strong>Odporność na alkohol/IPA</strong></td><td>Nie</td><td>Tak</td><td>Tak</td></tr>
-<tr><td><strong>Odporność na aceton</strong></td><td>Nie</td><td>Nie</td><td>Nie (wymaga ChemResist)</td></tr>
+<tr><td><strong>Odporność na aceton</strong></td><td>Nie</td><td>Nie</td><td>Nie (wymaga ChemResist — <a href="/kontakt">zapytaj</a>)</td></tr>
 <tr><td><strong>Odporność UV (outdoor)</strong></td><td>6–12 mies.</td><td>1–3 lata</td><td>3–7 lat</td></tr>
 <tr><td><strong>Certyfikat UL</strong></td><td>Nie (FDA/REACH)</td><td>UL certified (3200)</td><td>UL/cUL (5095)</td></tr>
 <tr><td><strong>Typowe zastosowanie</strong></td><td>Wysyłka, magazyn, logistyka</td><td>GHS papier, food, farmacja</td><td>PCB, outdoor, tabliczki</td></tr>
@@ -9644,7 +9644,7 @@ export const guides: Guide[] = [
       content: `<h3>Drzewo decyzyjne — 4 pytania</h3>
 <ol>
 <li><strong>Czy etykieta jest na folii syntetycznej (PP, PE, PET)?</strong> Tak → <strong>RESIN</strong> (<a href="/tasmy-termotransferowe?typ=zywiczna">Zebra 5095</a>)</li>
-<li><strong>Czy etykieta będzie outdoor >6 miesięcy?</strong> Tak → <strong>RESIN</strong> (Zebra 5095). Jeśli narażona na aceton lub ksylen → potrzebna Zebra ChemResist</li>
+<li><strong>Czy etykieta będzie outdoor >6 miesięcy?</strong> Tak → <strong>RESIN</strong> (Zebra 5095). Jeśli narażona na aceton lub ksylen → potrzebna Zebra ChemResist (<a href="/kontakt">zapytaj o dostępność</a>)</li>
 <li><strong>Czy etykieta będzie narażona na alkohol IPA, wodę, oleje lub temperaturę >60°C?</strong> Tak → <strong>WAX/RESIN</strong> (<a href="/tasmy-termotransferowe?typ=woskowo-zywiczna">Zebra 3200</a>)</li>
 <li><strong>Czy etykieta jest papierowa, w suchych warunkach, do użytku wewnątrz?</strong> Tak → <strong>WAX</strong> (<a href="/tasmy-termotransferowe?typ=woskowa">Zebra 2300</a>)</li>
 </ol>
@@ -9701,7 +9701,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Czym różni się seria Zebra 2300 od 2100 (woskowe)?',
-      answer: '2300 Standard Wax: dostępna w formatach desktop (rdzeń 12,7 mm, 74 m) i industrial (rdzeń 25,4 mm, 300–450 m), grubość warstwy 8,0 µm, max 304 mm/s, certyfikaty BPA-free, FDA, REACH. 2100 High-Performance Wax: tylko industrial (450 m), grubość 7,5 µm (cieńsza = gęstszy nadruk), max 355 mm/s, certyfikat REACH. Wybierz 2100, gdy potrzebujesz prędkości powyżej 304 mm/s — np. na szybkich liniach pakujących.',
+      answer: '2300 Standard Wax: dostępna w formatach desktop (rdzeń 12,7 mm, 74 m) i industrial (rdzeń 25,4 mm, 300–450 m), grubość warstwy 8,0 µm, max 304 mm/s, certyfikaty BPA-free, halogen-free, latex-free, FDA, REACH. 2100 High-Performance Wax: tylko industrial (450 m), grubość 7,5 µm (cieńsza = gęstszy nadruk), max 355 mm/s, certyfikat REACH. Wybierz 2100, gdy potrzebujesz prędkości powyżej 304 mm/s — np. na szybkich liniach pakujących.',
     },
     {
       question: 'Czy taśmy Zebra pasują do drukarek TSC?',
