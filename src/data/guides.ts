@@ -8848,29 +8848,29 @@ export const guides: Guide[] = [
 
 <p><strong>ZT231</strong> wygrywa wszędzie tam, gdzie środowisko jest wymagające (metal), wolumeny rosną, planowane jest RFID, potrzebny jest timestamp (RTC) lub zarządzanie sieciową flotą. Co ważne: przy <strong>identycznych wymiarach (432 x 241 x 279 mm)</strong> zakup ZT231 nie wymaga żadnych zmian stanowiska pracy — a daje kilkuletnią rezerwę możliwości.</p>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+<div class="grid grid-cols-2 gap-4 mt-8 max-w-xl">
 <a href="/produkt/zebra-zt231" class="group block border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
-<div class="bg-white p-6 flex items-center justify-center h-48">
+<div class="bg-white p-3 flex items-center justify-center h-36">
 <img src="/images/products/zt231_1_s.png" alt="Drukarka przemysłowa Zebra ZT231 — widok z przodu, kolorowy ekran dotykowy 4,3 cale" class="max-h-full object-contain" />
 </div>
-<div class="p-5">
-<p class="text-xs text-gray-500 uppercase tracking-wide mb-1">Zebra</p>
-<p class="font-bold text-gray-900 text-lg mb-2">Zebra ZT231</p>
-<p class="inline-block text-xs font-medium text-green-700 bg-green-50 border border-green-200 rounded-full px-2.5 py-0.5 mb-3">Dostępny</p>
-<p class="text-2xl font-bold text-gray-900">2549,54 zł <span class="text-sm font-normal text-gray-500">netto</span></p>
-<div class="mt-4 w-full text-center py-2.5 bg-[#A8F000] text-gray-900 font-semibold rounded-lg group-hover:bg-[#96d800] transition-colors">Zobacz więcej</div>
+<div class="p-3">
+<p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Zebra</p>
+<p class="font-bold text-gray-900 text-sm mb-1.5">Zebra ZT231</p>
+<p class="inline-block text-[10px] font-medium text-green-700 bg-green-50 border border-green-200 rounded-full px-2 py-0.5 mb-2">Dostępny</p>
+<p class="text-lg font-bold text-gray-900">2549,54 zł <span class="text-xs font-normal text-gray-500">netto</span></p>
+<div class="mt-3 w-full text-center py-2 bg-[#A8F000] text-gray-900 text-sm font-semibold rounded-lg group-hover:bg-[#96d800] transition-colors">Zobacz więcej</div>
 </div>
 </a>
 <a href="/produkt/zebra-zt111" class="group block border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
-<div class="bg-white p-6 flex items-center justify-center h-48">
+<div class="bg-white p-3 flex items-center justify-center h-36">
 <img src="/images/products/zt111_1_s.png" alt="Drukarka przemysłowa Zebra ZT111 — widok z przodu, panel LED i 3 przyciski" class="max-h-full object-contain" />
 </div>
-<div class="p-5">
-<p class="text-xs text-gray-500 uppercase tracking-wide mb-1">Zebra</p>
-<p class="font-bold text-gray-900 text-lg mb-2">Zebra ZT111</p>
-<p class="inline-block text-xs font-medium text-green-700 bg-green-50 border border-green-200 rounded-full px-2.5 py-0.5 mb-3">Dostępny</p>
-<p class="text-2xl font-bold text-gray-900">2268,77 zł <span class="text-sm font-normal text-gray-500">netto</span></p>
-<div class="mt-4 w-full text-center py-2.5 bg-[#A8F000] text-gray-900 font-semibold rounded-lg group-hover:bg-[#96d800] transition-colors">Zobacz więcej</div>
+<div class="p-3">
+<p class="text-[10px] text-gray-500 uppercase tracking-wide mb-0.5">Zebra</p>
+<p class="font-bold text-gray-900 text-sm mb-1.5">Zebra ZT111</p>
+<p class="inline-block text-[10px] font-medium text-green-700 bg-green-50 border border-green-200 rounded-full px-2 py-0.5 mb-2">Dostępny</p>
+<p class="text-lg font-bold text-gray-900">2268,77 zł <span class="text-xs font-normal text-gray-500">netto</span></p>
+<div class="mt-3 w-full text-center py-2 bg-[#A8F000] text-gray-900 text-sm font-semibold rounded-lg group-hover:bg-[#96d800] transition-colors">Zobacz więcej</div>
 </div>
 </a>
 </div>`
