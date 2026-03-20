@@ -45689,7 +45689,7 @@ Obudowa z pełnego odlewu aluminiowego (die-cast) mieści ribbon 600 m, rolki et
 
 Automatyczna emulacja ZPL II, EPL i DPL (tryb TSPL-EZD) pozwala zastąpić wycofaną Zebra 220Xi4 bez zmian w systemie WMS/ERP. Interfejsy: USB 2.0, USB Host, RS-232, Ethernet 10/100, LPT (Centronics). Opcjonalnie: [moduł Wi-Fi + Bluetooth](/produkt/tsc-modul-wifi-bluetooth), klawiatura KP-200 Plus, GPIO.
 
-Szacunkowy TCO na 3 lata: TTP-286MT od 8 592 zł. Jedyny realny konkurent w klasie 8" — Zebra 220Xi4 — jest wycofany z produkcji. Ribbon 600 m i rolki 8,2" OD minimalizują przestoje. Głowica 203 dpi wytrzymuje ok. 50 km druku.
+Szacunkowy TCO na 3 lata (15 000 etykiet/dzień, 250 dni/rok): drukarka od 8 592 zł + ribbon woskowy 600 m ok. 45 zł × ~94 rolki/rok × 3 = ~12 690 zł + 1 wymiana głowicy (~1 200 zł) = ok. 22 500 zł. Jedyny realny konkurent w klasie 8" — Zebra 220Xi4 — jest wycofany z produkcji. Ribbon 600 m i rolki 8,2" OD minimalizują przestoje.
 
 TSC TTP-286MT ma certyfikat ENERGY STAR. System TSC Sense Care monitoruje przebieg głowicy — integracja z SOTI Connect i TSC Console do zdalnego zarządzania flotą.`,
     categoryId: 'drukarki-etykiet',
@@ -45871,7 +45871,7 @@ TSC TTP-286MT ma certyfikat ENERGY STAR. System TSC Sense Care monitoruje przebi
     slug: 'tsc-ttp-384mt',
     name: 'TSC TTP-384MT',
     shortDescription: 'TSC TTP-384MT — przemysłowa drukarka etykiet 8" (219,5 mm) 300 dpi, 102 mm/s, LCD 4,3" dotykowy, emulacja ZPL, port LPT',
-    seoTitle: 'TSC TTP-384MT — drukarka etykiet 8 cali 300 dpi | od 9 635 zł',
+    seoTitle: 'TSC TTP-384MT — drukarka etykiet 8" 300 dpi | od 9 635 zł',
     seoDescription: 'TSC TTP-384MT — przemysłowa drukarka etykiet 8" 300 dpi, 102 mm/s, LPT, emulacja ZPL. Drobny tekst, kody 2D, GHS. Od 9 635 zł. PN: 99-135A001-0002.',
     description: `**TSC TTP-384MT — jedyna przemysłowa drukarka etykiet 8 cali z rozdzielczością 300 dpi w cenie poniżej 10 000 zł. Zamiennik wycofanej Zebra 220Xi4 300 dpi. Od 9 635 zł netto.**
 
@@ -45879,7 +45879,7 @@ TSC TTP-384MT to [drukarka przemysłowa](/przemyslowe-drukarki-etykiet) z najwy�
 
 Obudowa z pełnego odlewu aluminiowego (die-cast) — identyczne chassis co TTP-286MT: ribbon 600 m, rolki etykiet do 208 mm OD (rdzeń 3"), media 101–241 mm, dotykowy LCD 4,3" (480×272 px), 512 MB Flash + 256 MB SDRAM + slot SD do 32 GB. Port Parallel (LPT) w standardzie. Automatyczna emulacja ZPL II, EPL i DPL (tryb TSPL-EZD).
 
-Szacunkowy TCO na 3 lata: TTP-384MT od 9 635 zł. Jedyny realny konkurent 8" z 300 dpi — Zebra 220Xi4 — jest wycofany z produkcji. Printronix T8000 8" kosztuje ponad 25 000 zł. TTP-384MT jest jedyną przystępną cenowo drukarką 8" z 300 dpi na rynku.
+Szacunkowy TCO na 3 lata (10 000 etykiet/dzień, 250 dni/rok): drukarka od 9 635 zł + ribbon żywiczny 600 m ok. 65 zł × ~63 rolki/rok × 3 = ~12 285 zł + 1 wymiana głowicy 300 dpi (~1 800 zł) = ok. 23 720 zł. Jedyny realny konkurent 8" z 300 dpi — Zebra 220Xi4 — jest wycofany z produkcji. Printronix T8000 8" kosztuje ponad 25 000 zł. Jeśli wystarczy 6 cali — [Zebra ZT620](/produkt/zebra-zt620) (305 mm/s, od 12 417 zł) jest szybsza, ale droższa.
 
 TSC TTP-384MT ma certyfikat ENERGY STAR. System TSC Sense Care monitoruje przebieg głowicy — integracja z SOTI Connect i TSC Console do zdalnego zarządzania flotą.`,
     categoryId: 'drukarki-etykiet',
