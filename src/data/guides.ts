@@ -8848,7 +8848,7 @@ export const guides: Guide[] = [
 
 <p><strong>ZT231</strong> wygrywa wszędzie tam, gdzie środowisko jest wymagające (metal), wolumeny rosną, planowane jest RFID, potrzebny jest timestamp (RTC) lub zarządzanie sieciową flotą. Co ważne: przy <strong>identycznych wymiarach (432 x 241 x 279 mm)</strong> zakup ZT231 nie wymaga żadnych zmian stanowiska pracy — a daje kilkuletnią rezerwę możliwości.</p>
 
-<div class="grid grid-cols-2 gap-4 mt-8 max-w-xl">
+<div class="grid grid-cols-2 gap-4 mt-8 max-w-xl mx-auto">
 <a href="/produkt/zebra-zt231" class="group block border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
 <div class="bg-white p-3 flex items-center justify-center h-36">
 <img src="/images/products/zt231_1_s.png" alt="Drukarka przemysłowa Zebra ZT231 — widok z przodu, kolorowy ekran dotykowy 4,3 cale" class="max-h-full object-contain" />

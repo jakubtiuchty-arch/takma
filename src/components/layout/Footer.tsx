@@ -12,8 +12,11 @@ const footerLinks = {
     { name: 'Akcesoria do drukarek', href: '/akcesoria-do-drukarek-etykiet' },
   ],
   producenci: [
+    { name: 'Zebra', href: '/katalog?producent=zebra' },
     { name: 'Honeywell', href: '/katalog?producent=honeywell' },
+    { name: 'Brother', href: '/katalog?producent=brother' },
     { name: 'Datalogic', href: '/katalog?producent=datalogic' },
+    { name: 'Newland', href: '/katalog?producent=newland' },
     { name: 'TSC', href: '/katalog?producent=tsc' },
   ],
   serwis: [
