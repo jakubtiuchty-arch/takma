@@ -5677,10 +5677,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E321 (źródło: 
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'citizen',
     priceFrom: 1410.13,
-    images: ['/images/products/CLE321XEBXXX.png', '/images/products/CLE321XEBXXX-2.png', '/images/products/CLE321XEBXXX-3.png', '/images/products/CLE321XEBXXX-4.png'],
+    images: ['/images/products/CLE321XEBXXX-2.png', '/images/products/CLE321XEBXXX.png', '/images/products/CLE321XEBXXX-3.png', '/images/products/CLE321XEBXXX-4.png'],
     imageDescriptions: [
-      'Citizen CL-E321 — widok z przodu, kompaktowa drukarka termotransferowa biurkowa 4 cale w czarnej obudowie',
       'Citizen CL-E321 — widok z tyłu, porty Ethernet, USB i RS-232 w standardzie',
+      'Citizen CL-E321 — widok z przodu, kompaktowa drukarka termotransferowa biurkowa 4 cale w czarnej obudowie',
       'Citizen CL-E321 — widok z góry, mechanizm Hi-Lift otwarty pod kątem 180° z taśmą barwiącą',
       'Citizen CL-E321 — widok pod kątem, zamknięta obudowa z etykietą wychodzącą ze szczeliny',
     ],
