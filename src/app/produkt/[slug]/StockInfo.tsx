@@ -46,7 +46,9 @@ async function executeBatch() {
 
     const responses = await Promise.all(
       chunks.map(async (chunk) => {
-        const res = await fetch(`/api/stock?pn=${chunk.join(',')}`)
+        const res = await fetch(`/api/stock?pn=${chunk.join(',')}`, {
+          signal: AbortSignal.timeout(30000), // 30s max — nigdy wiecej nieskonczony spinner
+        })
         if (!res.ok) throw new Error('Fetch failed')
         return res.json()
       })

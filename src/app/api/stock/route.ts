@@ -81,11 +81,21 @@ export async function GET(request: NextRequest) {
   }
 
   try {
+    // Jarltech timeout — sequential API, moze przekroczyc Vercel function timeout
+    // Jesli Jarltech nie zdazy w 8s, graceful fallback na Ingram + BlueStar
+    const JARLTECH_TIMEOUT = 8000
+    const jarltechWithTimeout = Promise.race([
+      jarltechLookup(partNumbers),
+      new Promise<JarltechStockInfo[]>((_, reject) =>
+        setTimeout(() => reject(new Error('Jarltech timeout (8s)')), JARLTECH_TIMEOUT)
+      ),
+    ])
+
     // Rownolegle: trzech dystrybutorów + kurs EUR/PLN
     const [ingramResult, bluestarResult, jarltechResult, eurRate] = await Promise.all([
       Promise.allSettled([ingramLookup(partNumbers)]).then(r => r[0]),
       Promise.allSettled([bluestarLookup(partNumbers)]).then(r => r[0]),
-      Promise.allSettled([jarltechLookup(partNumbers)]).then(r => r[0]),
+      Promise.allSettled([jarltechWithTimeout]).then(r => r[0]),
       getEurPlnRate(),
     ])
 
