@@ -1182,23 +1182,19 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd421d',
     name: 'Zebra ZD421d',
     shortDescription: 'Zebra ZD421d — biurkowa drukarka termiczna 4" direct thermal, następca GK420d. 203/300 dpi, do 152 mm/s, modułowa architektura MCS',
-    seoTitle: 'Drukarka etykiet Zebra ZD421d — termiczna direct thermal | od 1 472 zł',
+    seoTitle: 'Zebra ZD421d — drukarka termiczna DT 4" | od 1 472 zł',
     seoDescription: 'Zebra ZD421d — termiczna 4" DT dla e-commerce, nadawczych i magazynów. Brak ribbona, MCS, Wi-Fi. ZD4A042-D0EM00EZ od 1 472 zł netto.',
-    description: `Zebra ZD421d to najlepszy wybór dla firm e-commerce, punktów nadawczych i magazynów, które potrzebują szybkiej biurkowej drukarki termicznej z modułową architekturą i niskim kosztem eksploatacji.
+    description: `**Zebra ZD421d — biurkowa drukarka termiczna DT 4" z modułową architekturą MCS, następca GK420d. 152 mm/s, 203/300 dpi, Link-OS, bez ribbona. Od 1 472 zł netto.**
 
-Zebra ZD421d to biurkowa drukarka etykiet typu direct thermal (druk termiczny bezpośredni) — następca sprawdzonych modeli GK420d i ZD420d. Drukuje bez taśmy barwiącej (ribbona), co obniża koszty eksploatacji o 40–50% w porównaniu do modelu termotransferowego ZD421t. Dostępna w rozdzielczości 203 dpi (standard) lub 300 dpi (do bardzo małych kodów 2D), z prędkością druku do 152 mm/s (6 ips) — 50% szybciej niż budżetowy ZD220d.
+Zebra ZD421d to [biurkowa drukarka etykiet](/biurkowe-drukarki-etykiet) typu direct thermal (druk termiczny bezpośredni) — następca sprawdzonych modeli GK420d i ZD420d. Drukuje bez taśmy barwiącej (ribbona), co obniża koszty eksploatacji o 40–50% w porównaniu do modelu termotransferowego [ZD421t](/produkt/zebra-zd421t). Dostępna w rozdzielczości 203 dpi (standard) lub 300 dpi (do bardzo małych kodów 2D), z prędkością druku do 152 mm/s (6 ips) — 50% szybciej niż budżetowy [ZD220d](/produkt/zebra-zd220d).
 
-Drukarka wykorzystuje modułową architekturę MCS (Modular Connectivity Slot), która pozwala rozbudować łączność w dowolnym momencie: do standardowych portów USB 2.0 i USB Host można dodać moduł Ethernet 10/100, RS-232 lub Wi-Fi 802.11ac + Bluetooth 4.1 — wszystkie instalowane beznarzędziowo w slocie z tyłu obudowy. Opcjonalnie dostępny jest obcinacz (cutter) do automatycznego cięcia etykiet i przywieszek oraz odklejak (peeler) do automatycznego odrywania etykiet od podłoża — oba montowane w terenie bez narzędzi.
+Drukarka wykorzystuje modułową architekturę MCS (Modular Connectivity Slot), która pozwala rozbudować łączność w dowolnym momencie: do standardowych portów USB 2.0 i USB Host można dodać moduł Ethernet 10/100, RS-232 lub Wi-Fi 802.11ac + Bluetooth 4.1 — wszystkie instalowane beznarzędziowo w slocie z tyłu obudowy. Opcjonalnie dostępny jest obcinacz (cutter) i odklejak (peeler) — oba montowane w terenie bez narzędzi. Wyższa klasa z tą samą architekturą: [Zebra ZD621d](/produkt/zebra-zd621d).
 
-Platforma Link-OS umożliwia zdalne zarządzanie flotą drukarek z poziomu Printer Profile Manager Enterprise — aktualizacje firmware, konfiguracja i diagnostyka w chmurze, bez fizycznego dostępu do urządzenia. Funkcja PrintSecure chroni dane druku przed nieautoryzowanym dostępem. Zebra Print DNA dostarcza pakiet narzędzi programistycznych i diagnostycznych: Browser Print (druk z przeglądarki), Visibility Services (monitoring statusu) i Printer Profile Manager (klonowanie konfiguracji).
+Platforma Link-OS umożliwia zdalne zarządzanie flotą drukarek z poziomu Printer Profile Manager Enterprise — aktualizacje firmware, konfiguracja i diagnostyka w chmurze. ZD421d obsługuje ZPL II i EPL2 z pełną kompatybilnością wsteczną — szablony etykiet z GK420d działają bez zmian. Drukarka współpracuje z systemami WMS, ERP (SAP, Comarch, enova, Subiekt) i platformami e-commerce (BaseLinker, Allegro, Amazon).
 
-ZD421d obsługuje języki programowania ZPL II i EPL2 z pełną kompatybilnością wsteczną — istniejące szablony etykiet z GK420d, ZD420d i innych drukarek Zebra działają bez zmian. Drukarka współpracuje z systemami WMS, ERP i TMS (SAP, Comarch, enova, Subiekt) oraz platformami e-commerce (Allegro, Amazon, Shopify, BaseLinker) i systemami kurierskimi InPost, DPD, DHL, GLS i UPS.
+Szacunkowy TCO na 3 lata (500 etykiet/dzień, 250 dni/rok): drukarka od 1 472 zł + etykiety termiczne Z-Select 2000D 102×38 mm ok. 60 zł/rolka × ~38 rolek/rok × 3 = ~6 840 zł + 1 głowica (~350 zł) = ok. 8 660 zł. Dla porównania: [ZD230d](/produkt/zebra-zd230d) od 1 087 zł (bez MCS, bez Link-OS), model termotransferowy [ZD421t](/produkt/zebra-zd421t) dolicza koszt ribbona ok. 0,01–0,02 zł/etykietę.
 
-ZD421d jest idealnym wyborem dla firm drukujących 200–1000 etykiet dziennie, które potrzebują niskich kosztów eksploatacji (brak ribbona), modułowej łączności sieciowej i możliwości zdalnego zarządzania. Do zastosowań wymagających trwałych, odpornych etykiet (produktowe, magazynowe długoterminowe) polecamy model termotransferowy ZD421t. Drukarka dostępna jest również w wersji healthcare (ZD421d-HC) z obudową odporną na środki dezynfekujące i zasilaczem IEC 60601-1.
-
-Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
-
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, marzec 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -1329,7 +1325,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Zebra ZD421d czy ZD220d — którą drukarkę wybrać?',
-        answer: 'ZD220d to model budżetowy (od 566 zł) z samym USB, bez możliwości rozbudowy. ZD421d (od 1 330 zł) oferuje: 50% szybszy druk (152 vs 102 mm/s), modułową architekturę z możliwością dodania Ethernet/Wi-Fi/RS-232, opcje obcinacza i odklejaka, więcej pamięci (512 MB Flash vs 256 MB), platformę Link-OS do zdalnego zarządzania, oraz opcjonalną rozdzielczość 300 dpi. Wybierz ZD220d jeśli drukujesz <100 etykiet dziennie na jednym stanowisku. Wybierz ZD421d jeśli potrzebujesz sieci, obsługujesz >200 etykiet dziennie lub planujesz rozbudowę.',
+        answer: '<a href="/produkt/zebra-zd220d">ZD220d</a> to model budżetowy (od 650 zł) z samym USB, bez możliwości rozbudowy. ZD421d (od 1 472 zł) oferuje: 50% szybszy druk (152 vs 102 mm/s), modułową architekturę MCS z możliwością dodania Ethernet/Wi-Fi/RS-232, opcje obcinacza i odklejaka, więcej pamięci (512 MB Flash vs 256 MB), platformę Link-OS do zdalnego zarządzania oraz opcjonalną rozdzielczość 300 dpi. Pośredni model: <a href="/produkt/zebra-zd230d">ZD230d</a> (od 1 087 zł) — ta sama prędkość 152 mm/s, ale bez MCS i Link-OS. Wybierz ZD220d jeśli drukujesz poniżej 100 etykiet dziennie na jednym stanowisku. Wybierz ZD421d jeśli potrzebujesz sieci, obsługujesz ponad 200 etykiet dziennie lub planujesz rozbudowę.',
       },
       {
         question: 'Ile kosztuje eksploatacja Zebra ZD421d miesięcznie?',
@@ -1357,7 +1353,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Jak podłączyć Zebra ZD421d do sieci Wi-Fi lub Ethernet?',
-        answer: 'ZD421d w wersji podstawowej łączy się przez USB. Do połączenia sieciowego masz dwie opcje: 1) Moduł Ethernet (P1112640-015) — instalacja beznarzędziowa w gnieździe MCS z tyłu drukarki, 2) Moduł Wi-Fi + Bluetooth (P1112640-017C) — również instalacja w gnieździe MCS. Możesz też kupić wariant z fabrycznie zainstalowanym interfejsem: ZD4A042-D0EE00EZ (USB + Ethernet, 1 691 zł) lub ZD4A042-D0EW02EZ (USB + Wi-Fi + BT, 1 885 zł).',
+        answer: 'ZD421d w wersji podstawowej łączy się przez USB. Do połączenia sieciowego masz dwie opcje: 1) <a href="/produkt/zebra-module-ethernet-zd421">Moduł Ethernet</a> (P1112640-015) — instalacja beznarzędziowa w gnieździe MCS z tyłu drukarki, 2) <a href="/produkt/zebra-module-wifi-zd421">Moduł Wi-Fi + Bluetooth</a> (P1112640-017C) — również instalacja w gnieździe MCS. Możesz też kupić wariant z fabrycznie zainstalowanym interfejsem: ZD4A042-D0EE00EZ (USB + Ethernet, od 1 796 zł) lub ZD4A042-D0EW02EZ (USB + Wi-Fi + BT, od 2 005 zł).',
       },
       {
         question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
@@ -1365,7 +1361,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Jakie są alternatywy dla Zebra ZD421d?',
-        answer: 'Alternatywami są: Zebra ZD621d (wyższa klasa), Honeywell PC43d, TSC DA320.',
+        answer: 'W klasie biurkowych drukarek termicznych DT 4": <a href="/produkt/zebra-zd621d">Zebra ZD621d</a> (wyższa klasa, 203/300 dpi, wyświetlacz LCD, od 1 944 zł), <a href="/produkt/honeywell-pc45d">Honeywell PC45d</a> (LCD 3,5", Wi-Fi 6, od 1 518 zł), <a href="/produkt/zebra-zd230d">Zebra ZD230d</a> (152 mm/s, bez MCS, od 1 087 zł), <a href="/produkt/zebra-zd220d">Zebra ZD220d</a> (budżetowa, 102 mm/s, od 650 zł). Jeśli potrzebujesz trwałych etykiet — model termotransferowy <a href="/produkt/zebra-zd421t">Zebra ZD421t</a> (od 1 649 zł).',
       },
       {
         question: 'Jak podłączyć Zebra ZD421d do BaseLinkera?',
@@ -1387,7 +1383,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
             'Modułowość': 'Nie',
             'Link-OS': 'Nie',
             'Obcinacz/odklejak': 'Nie',
-            'Cena od': '566 zł',
+            'Cena od': '650 zł',
             'Najlepszy do': 'Niski nakład, <100 etykiet/dzień',
           },
         },
@@ -1399,11 +1395,11 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
             'Rozdzielczość': '203 dpi',
             'Prędkość': '152 mm/s',
             'Ribbon': 'Nie wymaga',
-            'Interfejs': 'USB, Ethernet (opcja)',
+            'Interfejs': 'USB, Ethernet, Wi-Fi, BT (opcje)',
             'Modułowość': 'Ograniczona',
             'Link-OS': 'Nie',
-            'Obcinacz/odklejak': 'Nie',
-            'Cena od': '672 zł',
+            'Obcinacz/odklejak': 'Tak (opcja)',
+            'Cena od': '1 087 zł',
             'Najlepszy do': 'Niski-średni nakład, potrzeba Ethernet',
           },
         },
@@ -1420,7 +1416,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
             'Modułowość': 'Tak (MCS)',
             'Link-OS': 'Tak',
             'Obcinacz/odklejak': 'Tak (opcja)',
-            'Cena od': '1 330 zł',
+            'Cena od': '1 472 zł',
             'Najlepszy do': 'Średni nakład 200–1000 etykiet/dzień, sieć, flota',
           },
         },
