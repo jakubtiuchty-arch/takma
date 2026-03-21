@@ -208,6 +208,17 @@ export default function StockInfo({ partNumbers }: StockInfoProps) {
           <div className="w-2 h-2 bg-blue-500 rounded-full" />
           <span className="text-gray-600">
             W drodze: <strong className="text-gray-900">{firstWithStock.inDelivery} szt.</strong>
+            {firstWithStock.incomingDate && (
+              <span className="relative group ml-1">
+                <span className="text-blue-500 cursor-help border-b border-dotted border-blue-400">
+                  (ETA: {new Date(firstWithStock.incomingDate).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })})
+                </span>
+                <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-2 bg-gray-900 text-white text-xs rounded-lg whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-10">
+                  Przewidywana data dostawy do magazynu dystrybutora
+                  <span className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-900" />
+                </span>
+              </span>
+            )}
           </span>
         </div>
       )}

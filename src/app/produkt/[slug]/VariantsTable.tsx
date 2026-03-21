@@ -25,13 +25,30 @@ const availabilityConfig: Record<string, { label: string; variant: 'success' | '
   unavailable: { label: 'Niedostępny', variant: 'danger' },
 }
 
-function StockCell({ stockPL, stockDE, loading }: { stockPL: number; stockDE: number; loading: boolean }) {
+function StockCell({ stockPL, stockDE, inDelivery, incomingDate, loading }: { stockPL: number; stockDE: number; inDelivery: number; incomingDate?: string; loading: boolean }) {
   if (loading) {
     return <span className="text-xs text-gray-400 animate-pulse">...</span>
   }
 
-  if (stockPL === 0 && stockDE === 0) {
+  if (stockPL === 0 && stockDE === 0 && inDelivery === 0) {
     return <span className="text-xs text-gray-400">—</span>
+  }
+
+  if (stockPL === 0 && stockDE === 0 && inDelivery > 0) {
+    return (
+      <div className="relative group space-y-0.5">
+        <div className="flex items-center gap-1.5">
+          <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
+          <span className="text-xs text-gray-700">W drodze: {inDelivery}</span>
+        </div>
+        {incomingDate && (
+          <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-2 bg-gray-900 text-white text-xs rounded-lg whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-10">
+            ETA: {new Date(incomingDate).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}
+            <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-900" />
+          </div>
+        )}
+      </div>
+    )
   }
 
   return (
@@ -212,7 +229,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   attributeKeys: string[]
   rowIndex: number
   mounted: boolean
-  stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; availability: 'available' | 'on-order' | 'unavailable'; price?: number; ingramPrice?: number }>
+  stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; inDelivery: number; incomingDate?: string; availability: 'available' | 'on-order' | 'unavailable'; price?: number; ingramPrice?: number }>
   stockLoading: boolean
   addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string; priceNetto?: number }) => void
   isInCart: (id: string) => boolean
@@ -261,7 +278,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
         }
       </td>
       <td className="px-3 py-3.5">
-        <StockCell stockPL={stock?.stockPL ?? 0} stockDE={stock?.stockDE ?? 0} loading={stockLoading} />
+        <StockCell stockPL={stock?.stockPL ?? 0} stockDE={stock?.stockDE ?? 0} inDelivery={stock?.inDelivery ?? 0} incomingDate={stock?.incomingDate} loading={stockLoading} />
       </td>
       <td className="px-3 py-3.5 text-center">
         <Badge variant={avail.variant}>{avail.label}</Badge>
@@ -298,7 +315,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
   productImage?: string
   attributeKeys: string[]
   mounted: boolean
-  stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; availability: 'available' | 'on-order' | 'unavailable'; price?: number; ingramPrice?: number }>
+  stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; inDelivery: number; incomingDate?: string; availability: 'available' | 'on-order' | 'unavailable'; price?: number; ingramPrice?: number }>
   stockLoading: boolean
   addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string; priceNetto?: number }) => void
   isInCart: (id: string) => boolean
@@ -348,6 +365,19 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
             <span className="flex items-center gap-1">
               <span className="w-1.5 h-1.5 bg-yellow-500 rounded-full" />
               EU: {stock.stockDE} szt.
+            </span>
+          )}
+        </div>
+      )}
+      {!stockLoading && stock?.found && stock.stockPL === 0 && stock.stockDE === 0 && stock.inDelivery > 0 && (
+        <div className="flex items-center gap-2 text-xs text-gray-600">
+          <span className="flex items-center gap-1">
+            <span className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
+            W drodze: {stock.inDelivery} szt.
+          </span>
+          {stock.incomingDate && (
+            <span className="text-blue-500">
+              (ETA: {new Date(stock.incomingDate).toLocaleDateString('pl-PL', { day: 'numeric', month: 'short' })})
             </span>
           )}
         </div>

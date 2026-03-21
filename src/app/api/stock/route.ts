@@ -203,6 +203,9 @@ export async function GET(request: NextRequest) {
         deliveryText = 'Niedostepny'
       }
 
+      // ETA dostawy — Jarltech jako jedyny dostarcza daty
+      const incomingDate = jlFound ? jl!.incomingDate : undefined
+
       return {
         partNumber: pn,
         found: true,
@@ -212,6 +215,7 @@ export async function GET(request: NextRequest) {
         stockPL,
         stockDE,
         inDelivery,
+        incomingDate,
         totalStock,
         availability,
         deliveryText,

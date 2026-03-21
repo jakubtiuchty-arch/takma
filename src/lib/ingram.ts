@@ -27,6 +27,7 @@ export interface StockInfo {
   stockPL: number        // Magazyn lokalny (PL) — dostawa 24h
   stockDE: number        // Magazyn centralny (DE) — dostawa 2-3 dni
   inDelivery: number     // W dostawie
+  incomingDate?: string  // ETA dostawy (ISO date, np. z Jarltech)
   totalStock: number
   availability: 'available' | 'on-order' | 'unavailable'
   deliveryText: string
