@@ -5271,8 +5271,8 @@ Brother TD-4T integruje się z systemami WMS (Comarch WMS, SAP WM), ERP (Comarch
     slug: 'citizen-cl-e300',
     name: 'Citizen CL-E300',
     shortDescription: 'Citizen CL-E300 — biurkowa drukarka termiczna 4" z Ethernet, USB i RS-232 w standardzie, Cross-Emulation ZPL/EPL, ENERGY STAR',
-    seoTitle: 'Citizen CL-E300 — drukarka termiczna z Ethernet | od 1 133 zł',
-    seoDescription: 'Citizen CL-E300 — biurkowa drukarka etykiet 4" z Ethernet w standardzie, 200 mm/s, Cross-Emulation ZPL/EPL. Drukarka Citizen CL-E300 od 1 133 zł. PN: CLE300XEBXXX.',
+    seoTitle: 'Citizen CL-E300 — drukarka termiczna 4" Ethernet | od 1 133 zł',
+    seoDescription: 'Citizen CL-E300 — biurkowa drukarka etykiet 4" z Ethernet w standardzie, 200 mm/s, Cross-Emulation ZPL/EPL. Drukarka termiczna Citizen, CL-E300 Citizen od 1 133 zł netto. PN: CLE300XEBXXX (czarny), CLE300XEBXCX (obcinarka), CLE300XEWXXX (biały).',
     description: `**Citizen CL-E300 — kompaktowa drukarka termiczna 4" z Ethernet, USB i RS-232 w standardzie. 200 mm/s, Cross-Emulation™ (auto ZPL/EPL/DPL), ENERGY STAR. Jedyna biurkowa drukarka DT w cenie poniżej 1 200 zł z wbudowanym portem sieciowym. Od 1 133 zł netto.**
 
 Dla kogo? Citizen CL-E300 to [biurkowa drukarka etykiet](/biurkowe-drukarki-etykiet) termicznych (direct thermal) zaprojektowana dla firm kurierskich, punktów nadawczych, aptek, sklepów detalicznych i małych magazynów — wszędzie tam, gdzie drukarka musi działać w sieci Ethernet bez dodatkowych modułów i kosztów. W odróżnieniu od konkurencji ([Zebra ZD421d](/produkt/zebra-zd421d), [Honeywell PC45d](/produkt/honeywell-pc45d)), która oferuje Ethernet jako płatną opcję (200–400 zł), Citizen CL-E300 ma port Ethernet 10/100, USB 2.0 i RS-232 w standardzie — podłączasz do sieci od razu, bez dodatkowych inwestycji.
@@ -5393,7 +5393,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E300 (źródło: 
       },
       {
         question: 'Jaka jest gwarancja na Citizen CL-E300?',
-        answer: 'Citizen udziela 2-letniej gwarancji na drukarkę oraz gwarancji na głowicę drukującą: 30 km wydruku lub 6 miesięcy (co nastąpi wcześniej). Dla porównania: <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> ma 3 lata gwarancji (głowica 12 mies.), <a href="/produkt/brother-td-4d">Brother TD-4D</a> oferuje 3 lata z głowicą i wałkiem (po rejestracji). Gwarancja Citizen jest krótsza, ale cena drukarki jest odpowiednio niższa.',
+        answer: 'Citizen udziela 2-letniej gwarancji na drukarkę oraz gwarancji na głowicę drukującą: 30 km wydruku lub 6 miesięcy (co nastąpi wcześniej). Dla porównania: <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> ma 3 lata gwarancji (głowica 6 mies.), <a href="/produkt/brother-td-4d">Brother TD-4D</a> oferuje 3 lata z głowicą i wałkiem (po rejestracji). Gwarancja Citizen jest krótsza, ale cena drukarki jest odpowiednio niższa.',
       },
       {
         question: 'Ile kosztuje Citizen CL-E300?',
@@ -5438,9 +5438,9 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E300 (źródło: 
             'Interfejsy w standardzie': 'USB + BT LE',
             'Emulacja ZPL': 'Natywny ZPL II',
             'Pamięć Flash': '512 MB',
-            'Waga': '1,50 kg',
+            'Waga': '1,35 kg',
             'Gwarancja': '3 lata',
-            'ENERGY STAR': 'Nie',
+            'ENERGY STAR': 'Tak',
             'Cena od': '1 472 zł',
           },
         },
@@ -5451,9 +5451,9 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E300 (źródło: 
             'Typ druku': 'Termiczna (DT)',
             'Rozdzielczość': '203 / 300 dpi',
             'Prędkość': '203 mm/s',
-            'Interfejsy w standardzie': 'USB (TD-4410D)',
+            'Interfejsy w standardzie': 'USB + RS-232 (TD-4410D)',
             'Emulacja ZPL': 'Tak (ręczne przełączenie)',
-            'Pamięć Flash': '128 MB',
+            'Pamięć Flash': '64 MB',
             'Waga': '2,08 kg',
             'Gwarancja': '3 lata',
             'ENERGY STAR': 'Nie',
