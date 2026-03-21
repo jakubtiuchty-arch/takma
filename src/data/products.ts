@@ -247,8 +247,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Kompaktowe drukarki etykiet biurkowe do 4 cali szerokości. Idealne do biura, punktu sprzedaży i magazynu. Modele Zebra, Honeywell, TSC. Ceny, porównanie, doradztwo.',
     longDescription: 'Drukarki biurkowe (desktop) to kompaktowe urządzenia zaprojektowane do pracy na biurku lub stanowisku roboczym. Zajmują minimum miejsca, a jednocześnie oferują niezawodny druk etykiet z kodami kreskowymi do 4 cali (108 mm) szerokości. Sprawdzają się w biurach, punktach sprzedaży, aptekach, małych magazynach i wszędzie tam, gdzie liczy się niewielki rozmiar i łatwość obsługi. W ofercie modele czołowych producentów: Zebra, Honeywell, TSC i innych.',
     icon: 'printer',
-    productIds: ['zebra-zd220d', 'zebra-zd230d', 'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411d', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd421d', 'zebra-zd621t', 'zebra-zd621d', 'honeywell-pc45d', 'honeywell-pc45t', 'honeywell-pc42e-t', 'brother-td-4d', 'brother-td-2020a', 'brother-td-4t', 'citizen-cl-e300'],
-    productCount: 17,
+    productIds: ['zebra-zd220d', 'zebra-zd230d', 'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411d', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd421d', 'zebra-zd621t', 'zebra-zd621d', 'honeywell-pc45d', 'honeywell-pc45t', 'honeywell-pc42e-t', 'brother-td-4d', 'brother-td-2020a', 'brother-td-4t', 'citizen-cl-e300', 'citizen-cl-e303'],
+    productCount: 18,
   },
   {
     id: 'przemyslowe-drukarki-etykiet',
@@ -290,8 +290,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Drukarki termiczne (direct thermal) — druk etykiet bez taśmy barwiącej. Niższe koszty eksploatacji, idealne do etykiet wysyłkowych i paragonów. Zebra, Honeywell, TSC.',
     longDescription: 'Drukarki termiczne bezpośrednie (direct thermal) nie wymagają taśmy barwiącej — obraz powstaje bezpośrednio na specjalnym papierze termicznym pod wpływem ciepła z głowicy. To oznacza niższe koszty eksploatacji i prostszą obsługę. Idealne rozwiązanie do etykiet wysyłkowych, kurierskich, paragonów i oznaczeń tymczasowych, gdzie trwałość wydruku nie jest kluczowa.',
     icon: 'printer',
-    productIds: ['zebra-zd220d', 'zebra-zd230d', 'zebra-zd411d', 'zebra-zd421d', 'zebra-zd621d', 'honeywell-pc45d', 'brother-td-4d', 'brother-td-2020a', 'citizen-cl-e300'],
-    productCount: 9,
+    productIds: ['zebra-zd220d', 'zebra-zd230d', 'zebra-zd411d', 'zebra-zd421d', 'zebra-zd621d', 'honeywell-pc45d', 'brother-td-4d', 'brother-td-2020a', 'citizen-cl-e300', 'citizen-cl-e303'],
+    productCount: 10,
   },
   {
     id: 'mobilne-drukarki-etykiet',
@@ -5465,9 +5465,197 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E300 (źródło: 
     downloads: [
       { name: 'Karta katalogowa CL-E300 (PL)', type: 'datasheet', url: '/downloads/citizen-cl-e300-datasheet.pdf', size: '8,2 MB' },
     ],
-    relatedProducts: ['zebra-zd421d', 'brother-td-4d', 'honeywell-pc45d'],
+    relatedProducts: ['citizen-cl-e303', 'zebra-zd421d', 'brother-td-4d'],
     createdAt: '2026-03-21',
     sameAs: 'https://www.citizen-systems.com/eu/en/label-printers/cl-e300',
+  },
+  {
+    id: 'citizen-cl-e303',
+    slug: 'citizen-cl-e303',
+    name: 'Citizen CL-E303',
+    shortDescription: 'Citizen CL-E303 — biurkowa drukarka termiczna 4" 300 dpi z Ethernet, USB i RS-232 w standardzie, Cross-Emulation ZPL/EPL, ENERGY STAR',
+    seoTitle: 'Citizen CL-E303 — drukarka termiczna 300 dpi z Ethernet | od 1 514 zł',
+    seoDescription: 'Citizen CL-E303 — biurkowa drukarka etykiet 4" 300 dpi z Ethernet w standardzie, 150 mm/s, Cross-Emulation ZPL/EPL. Drukarka Citizen CL-E303 od 1 514 zł. PN: CLE303XEBXXX.',
+    description: `**Citizen CL-E303 — kompaktowa drukarka termiczna 4" 300 dpi z Ethernet, USB i RS-232 w standardzie. 150 mm/s, Cross-Emulation™ (auto ZPL/EPL/DPL), ENERGY STAR. Wersja 300 dpi modelu [CL-E300](/produkt/citizen-cl-e300) — do drobnego tekstu, kodów 2D i etykiet farmaceutycznych. Od 1 514 zł netto.**
+
+Dla kogo? Citizen CL-E303 to [biurkowa drukarka etykiet](/biurkowe-drukarki-etykiet) termicznych (direct thermal) z rozdzielczością 300 dpi (12 dots/mm) — przeznaczona dla aptek, laboratoriów, branży farmaceutycznej i firm potrzebujących bardzo drobnego tekstu, małych kodów 2D (QR, DataMatrix, GS1) i precyzyjnych etykiet na próbówki, opakowania leków czy komponenty elektroniczne. Identyczna konstrukcja jak [CL-E300](/produkt/citizen-cl-e300) (203 dpi), ale z głowicą 300 dpi — wyższa rozdzielczość kosztem nieco niższej prędkości druku (150 mm/s vs 200 mm/s).
+
+Citizen CL-E303 ma Ethernet 10/100, USB 2.0 i RS-232 w standardzie — bez dodatkowych modułów. To jedyna biurkowa drukarka termiczna 300 dpi z wbudowanym Ethernet w cenie poniżej 1 600 zł na polskim rynku. Konkurencja ([Zebra ZD421d](/produkt/zebra-zd421d) 300 dpi od 1 796 zł + moduł Ethernet ~350 zł = ~2 150 zł) wymaga znacznie wyższych nakładów. Technologia Cross-Emulation™ automatycznie rozpoznaje format danych (ZPL II, EPL2, DMX) — migracja z drukarki Zebra plug-and-play bez zmiany szablonów.
+
+Szacunkowy TCO na 3 lata (500 etykiet/dzień, 250 dni/rok): drukarka od 1 514 zł + etykiety termiczne 102×38 mm ok. 60 zł/rolka × ~38 rolek/rok × 3 = ~6 840 zł + głowica 300 dpi (~400 zł) = ok. 8 750 zł. Dla porównania: [Zebra ZD421d](/produkt/zebra-zd421d) 300 dpi od 1 796 zł + Ethernet ~350 zł = ~2 150 zł start. [Brother TD-4D](/produkt/brother-td-4d) 300 dpi (TD-4520DN) od 1 650 zł.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E303 (źródło: citizen-systems.com, marzec 2026).`,
+    categoryId: 'drukarki-etykiet',
+    subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
+    manufacturerId: 'citizen',
+    priceFrom: 1513.86,
+    images: ['/images/products/CLE303XEBXXX.png', '/images/products/CLE303XEBXXX-2.png', '/images/products/CLE303XEBXXX-3.png', '/images/products/CLE303XEBXXX-4.png'],
+    imageDescriptions: [
+      'Citizen CL-E303 — widok z przodu, kompaktowa drukarka termiczna biurkowa 4 cale 300 dpi w czarnej obudowie',
+      'Citizen CL-E303 — widok z tyłu, porty Ethernet, USB i RS-232 w standardzie',
+      'Citizen CL-E303 — widok z góry, mechanizm Hi-Lift otwarty pod kątem 180°',
+      'Citizen CL-E303 — widok pod kątem, zamknięta obudowa z etykietą wychodzącą ze szczeliny',
+    ],
+    tags: ['logistyka', 'retail', 'healthcare'],
+    availability: 'unavailable',
+    isNew: true,
+    isBestseller: false,
+    applications: [
+      'Etykiety farmaceutyczne — opakowania leków, próbówki, fiolki',
+      'Etykiety z drobnymi kodami 2D (QR, DataMatrix, GS1)',
+      'Etykiety na komponenty elektroniczne i PCB',
+      'Etykiety wysyłkowe i kurierskie z precyzyjnymi kodami kreskowymi',
+      'Etykiety cenowe i produktowe z drobnym tekstem',
+      'Etykiety laboratoryjne i diagnostyczne',
+      'Oznaczenia magazynowe wymagające drobnych kodów',
+    ],
+    compatibleAccessories: [
+      'zebra-labels-zselect2000d-57x32',
+      'zebra-labels-zselect2000d-76x51',
+      'zebra-labels-zselect2000d-102x38',
+    ],
+    keyParams: {
+      rodzajDruku: 'Termiczna (direct thermal)',
+      rozdzielczosc: '300 dpi (12 dots/mm)',
+      predkoscDruku: 'do 150 mm/s (6 ips)',
+      szerokoscDruku: 'max. 104 mm (4")',
+      szerokoscEtykiet: '25,4–118 mm',
+    },
+    specifications: [
+      { name: 'Metoda druku', value: 'Termiczna bezpośrednia (direct thermal)' },
+      { name: 'Rozdzielczość', value: '300 dpi (12 dots/mm)' },
+      { name: 'Prędkość druku', value: 'do 150 mm/s (6 ips)' },
+      { name: 'Szerokość druku', value: 'max. 104 mm (4")' },
+      { name: 'Szerokość mediów', value: '25,4–118 mm (1"–4,6")' },
+      { name: 'Max średnica rolki', value: '125 mm (5")' },
+      { name: 'Rdzeń rolki', value: '25 mm (1")' },
+      { name: 'Czujnik nośnika', value: 'Szczelina (gap) + odblaskowy czarny znacznik (reflective)' },
+      { name: 'Interfejsy standardowe', value: 'USB 2.0, RS-232, Ethernet 10/100' },
+      { name: 'Emulacja', value: 'Cross-Emulation™ — auto: Zebra ZPL II, Eltron EPL2, Datamax DMX' },
+      { name: 'Język programowania', value: 'CBI BASIC Interpreter' },
+      { name: 'Pamięć Flash', value: '16 MB (4 MB dostępne dla użytkownika)' },
+      { name: 'Pamięć SDRAM', value: '32 MB' },
+      { name: 'Mechanizm otwierania', value: 'Hi-Lift™ (180°) + ClickClose™' },
+      { name: 'Wymiary (szer. × gł. × wys.)', value: '170 × 208 × 152 mm' },
+      { name: 'Waga', value: '1,98 kg' },
+      { name: 'Certyfikaty', value: 'CE, TUV, UL, FCC, VCCI, ENERGY STAR' },
+      { name: 'Gwarancja', value: '2 lata (drukarka), 30 km lub 6 miesięcy (głowica)' },
+    ],
+    variants: [
+      {
+        partNumber: 'CLE303XEBXXX',
+        name: 'Czarny, bez obcinarki',
+        attributes: {},
+        priceFrom: 1513.86,
+        availability: 'unavailable',
+      },
+      {
+        partNumber: 'CLE303XEBXSX',
+        name: 'Czarny, z obcinarką (cutter)',
+        attributes: { 'Gilotyna': 'Tak' },
+        priceFrom: 1841.86,
+        availability: 'unavailable',
+      },
+    ],
+    variantAttributeTooltips: {
+      'Gilotyna': 'Automatyczna obcinarka etykiet montowana fabrycznie. Przycina etykiety po wydruku — przydatna przy drukowaniu wielu etykiet w sekwencji.',
+    },
+    faq: [
+      {
+        question: 'Citizen CL-E303 vs CL-E300 — czym się różnią?',
+        answer: '<a href="/produkt/citizen-cl-e300">CL-E300</a> ma rozdzielczość 203 dpi i prędkość 200 mm/s. CL-E303 ma 300 dpi i 150 mm/s. Konstrukcja, wymiary, interfejsy (USB + Ethernet + RS-232), emulacja i gwarancja są identyczne. CL-E300 od 1 133 zł, CL-E303 od 1 514 zł — różnica 381 zł za wyższą rozdzielczość. Wybierz CL-E303, gdy drukujesz drobne kody 2D (DataMatrix, QR), tekst poniżej 6 pt lub etykiety farmaceutyczne. Dla standardowych etykiet kurierskich i cenowych wystarczy CL-E300 (203 dpi).',
+      },
+      {
+        question: 'Citizen CL-E303 vs Zebra ZD421d 300 dpi — porównanie',
+        answer: '<a href="/produkt/zebra-zd421d">Zebra ZD421d</a> w wersji 300 dpi kosztuje od 1 796 zł (sam USB + BT LE) — Ethernet to dodatkowe ~350 zł (moduł MCS), łącznie ~2 150 zł. CL-E303: od 1 514 zł z Ethernet, USB i RS-232 w standardzie — oszczędność ponad 600 zł. ZD421d oferuje architekturę modularną Link-OS, 512 MB Flash (vs 16 MB w CL-E303) i 3-letnią gwarancję (vs 2 lata). CL-E303 ma Cross-Emulation (auto ZPL/EPL) i certyfikat ENERGY STAR.',
+      },
+      {
+        question: 'Citizen CL-E303 vs Brother TD-4D 300 dpi — porównanie',
+        answer: '<a href="/produkt/brother-td-4d">Brother TD-4D</a> w wersji 300 dpi (TD-4520DN) kosztuje od 1 650 zł z Ethernet, drukuje do 152 mm/s — zbliżona prędkość do CL-E303 (150 mm/s). CL-E303 od 1 514 zł — tańszy o 136 zł. Brother oferuje 3-letnią gwarancję z głowicą i BarTender gratis. CL-E303 ma RS-232 w standardzie i Cross-Emulation (auto ZPL bez ręcznego przełączania).',
+      },
+      {
+        question: '300 dpi vs 203 dpi — kiedy potrzebuję wyższej rozdzielczości?',
+        answer: '300 dpi (12 dots/mm) jest potrzebne gdy: drukujesz kody DataMatrix lub QR mniejsze niż 10×10 mm, tekst poniżej 6 pt, etykiety farmaceutyczne z mikrotekstem, etykiety na próbówki/fiolki o szerokości poniżej 25 mm, lub etykiety na komponenty elektroniczne. Dla standardowych etykiet wysyłkowych 100×150 mm, kodów EAN-13 i tekstu 8+ pt wystarczy 203 dpi (<a href="/produkt/citizen-cl-e300">CL-E300</a> od 1 133 zł).',
+      },
+      {
+        question: 'Ethernet w standardzie — co to zmienia?',
+        answer: 'CL-E303 ma Ethernet 10/100 wbudowany fabrycznie — podłączasz kabel sieciowy i drukarka jest widoczna w sieci. Konkurencja (<a href="/produkt/zebra-zd421d">Zebra ZD421d</a>) wymaga dokupienia modułu Ethernet za ~350 zł. Przy flocie 5 drukarek 300 dpi oszczędzasz ~1 750 zł na samych modułach sieciowych. Ethernet umożliwia drukowanie z wielu stanowisk i integrację z systemami WMS/ERP.',
+      },
+      {
+        question: 'Cross-Emulation — migracja z Zebry na Citizen CL-E303',
+        answer: 'Technologia Cross-Emulation™ automatycznie rozpoznaje format danych: Zebra ZPL II, Eltron EPL2 lub Datamax DMX. Szablony etykiet z <a href="/produkt/zebra-zd421d">Zebra ZD421d</a>, GK420d czy ZD220d działają bez zmian — wystarczy przekierować wydruk na CL-E303. Brak potrzeby modyfikacji oprogramowania WMS/ERP.',
+      },
+      {
+        question: 'Obcinarka w CL-E303 — wariant z gilotyną',
+        answer: 'Wariant CLE303XEBXSX (od 1 842 zł) ma fabrycznie zamontowaną obcinarkę (cutter), która automatycznie przycina etykietę po wydruku. Obcinarka jest montowana fabrycznie — nie można jej dokupić osobno. Różnica w cenie vs wariant bez obcinarki: ~328 zł.',
+      },
+      {
+        question: 'Jaka jest gwarancja na Citizen CL-E303?',
+        answer: 'Citizen udziela 2-letniej gwarancji na drukarkę oraz gwarancji na głowicę: 30 km wydruku lub 6 miesięcy (co nastąpi wcześniej). Dla porównania: <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> ma 3 lata (głowica 12 mies.), <a href="/produkt/brother-td-4d">Brother TD-4D</a> oferuje 3 lata z głowicą (po rejestracji).',
+      },
+      {
+        question: 'Ile kosztuje Citizen CL-E303?',
+        answer: 'CL-E303 bez obcinarki (CLE303XEBXXX) kosztuje od 1 514 zł netto. Wersja z obcinarką (CLE303XEBXSX) od 1 842 zł netto. Dla porównania: <a href="/produkt/citizen-cl-e300">CL-E300</a> (203 dpi) od 1 133 zł, <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> 300 dpi od 1 796 zł (bez Ethernet), <a href="/produkt/brother-td-4d">Brother TD-4D</a> 300 dpi (TD-4520DN) od 1 650 zł.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Citizen CL-E303?',
+        answer: 'W kategorii <a href="/biurkowe-drukarki-etykiet">biurkowych drukarek termicznych 300 dpi</a>: <a href="/produkt/citizen-cl-e300">Citizen CL-E300</a> (203 dpi, od 1 133 zł — jeśli 300 dpi nie jest potrzebne), <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> 300 dpi (od 1 796 zł, MCS, Link-OS), <a href="/produkt/brother-td-4d">Brother TD-4D</a> TD-4520DN (300 dpi, od 1 650 zł, BarTender gratis), <a href="/produkt/honeywell-pc45d">Honeywell PC45d</a> (203 dpi, LCD 3,5", od 1 518 zł). CL-E303 to najtańsza drukarka 300 dpi z Ethernet w standardzie.',
+      },
+    ],
+    comparison: {
+      title: 'Porównanie biurkowych drukarek termicznych 300 dpi — Citizen CL-E303 vs CL-E300 vs Zebra ZD421d',
+      models: [
+        {
+          name: 'CL-E303',
+          slug: 'citizen-cl-e303',
+          highlight: true,
+          specs: {
+            'Rozdzielczość': '300 dpi',
+            'Prędkość': '150 mm/s',
+            'Interfejsy w standardzie': 'USB + Ethernet + RS-232',
+            'Emulacja ZPL': 'Tak (auto Cross-Emulation)',
+            'Pamięć Flash': '16 MB',
+            'Gwarancja': '2 lata',
+            'ENERGY STAR': 'Tak',
+            'Cena od': '1 514 zł',
+          },
+        },
+        {
+          name: 'CL-E300',
+          slug: 'citizen-cl-e300',
+          specs: {
+            'Rozdzielczość': '203 dpi',
+            'Prędkość': '200 mm/s',
+            'Interfejsy w standardzie': 'USB + Ethernet + RS-232',
+            'Emulacja ZPL': 'Tak (auto Cross-Emulation)',
+            'Pamięć Flash': '16 MB',
+            'Gwarancja': '2 lata',
+            'ENERGY STAR': 'Tak',
+            'Cena od': '1 133 zł',
+          },
+        },
+        {
+          name: 'ZD421d 300 dpi',
+          slug: 'zebra-zd421d',
+          specs: {
+            'Rozdzielczość': '300 dpi',
+            'Prędkość': '102 mm/s',
+            'Interfejsy w standardzie': 'USB + BT LE',
+            'Emulacja ZPL': 'Natywny ZPL II',
+            'Pamięć Flash': '512 MB',
+            'Gwarancja': '3 lata',
+            'ENERGY STAR': 'Nie',
+            'Cena od': '1 796 zł',
+          },
+        },
+      ],
+    },
+    downloads: [
+      { name: 'Karta katalogowa CL-E303 (PL)', type: 'datasheet', url: '/downloads/citizen-cl-e303-datasheet.pdf', size: '4,4 MB' },
+    ],
+    relatedProducts: ['citizen-cl-e300', 'zebra-zd421d', 'brother-td-4d'],
+    createdAt: '2026-03-21',
+    sameAs: 'https://www.citizen-systems.com/eu/en/label-printers/cl-e303',
   },
 ]
 
