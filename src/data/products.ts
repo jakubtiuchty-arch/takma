@@ -5474,15 +5474,15 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E300 (źródło: 
     slug: 'citizen-cl-e303',
     name: 'Citizen CL-E303',
     shortDescription: 'Citizen CL-E303 — biurkowa drukarka termiczna 4" 300 dpi z Ethernet, USB i RS-232 w standardzie, Cross-Emulation ZPL/EPL, ENERGY STAR',
-    seoTitle: 'Citizen CL-E303 — drukarka termiczna 300 dpi z Ethernet | od 1 514 zł',
-    seoDescription: 'Citizen CL-E303 — biurkowa drukarka etykiet 4" 300 dpi z Ethernet w standardzie, 150 mm/s, Cross-Emulation ZPL/EPL. Drukarka Citizen CL-E303 od 1 514 zł. PN: CLE303XEBXXX.',
-    description: `**Citizen CL-E303 — kompaktowa drukarka termiczna 4" 300 dpi z Ethernet, USB i RS-232 w standardzie. 150 mm/s, Cross-Emulation™ (auto ZPL/EPL/DPL), ENERGY STAR. Wersja 300 dpi modelu [CL-E300](/produkt/citizen-cl-e300) — do drobnego tekstu, kodów 2D i etykiet farmaceutycznych. Od 1 514 zł netto.**
+    seoTitle: 'Citizen CL-E303 — drukarka 300 dpi DT Ethernet | od 1 514 zł',
+    seoDescription: 'Citizen CL-E303 — biurkowa drukarka etykiet 4" 300 dpi z Ethernet w standardzie, 150 mm/s, Cross-Emulation ZPL/EPL. Od 1 514 zł netto. PN: CLE303XEBXXX, CLE303XEBXSX.',
+    description: `Citizen CL-E303 — kompaktowa drukarka termiczna 4" 300 dpi z Ethernet, USB i RS-232 w standardzie. 150 mm/s, Cross-Emulation™ (auto ZPL/EPL/DPL), ENERGY STAR. Wersja 300 dpi modelu [CL-E300](/produkt/citizen-cl-e300) — do drobnego tekstu, kodów 2D i etykiet farmaceutycznych. Od 1 514 zł netto.
 
 Dla kogo? Citizen CL-E303 to [biurkowa drukarka etykiet](/biurkowe-drukarki-etykiet) termicznych (direct thermal) z rozdzielczością 300 dpi (12 dots/mm) — przeznaczona dla aptek, laboratoriów, branży farmaceutycznej i firm potrzebujących bardzo drobnego tekstu, małych kodów 2D (QR, DataMatrix, GS1) i precyzyjnych etykiet na próbówki, opakowania leków czy komponenty elektroniczne. Identyczna konstrukcja jak [CL-E300](/produkt/citizen-cl-e300) (203 dpi), ale z głowicą 300 dpi — wyższa rozdzielczość kosztem nieco niższej prędkości druku (150 mm/s vs 200 mm/s).
 
-Citizen CL-E303 ma Ethernet 10/100, USB 2.0 i RS-232 w standardzie — bez dodatkowych modułów. To jedyna biurkowa drukarka termiczna 300 dpi z wbudowanym Ethernet w cenie poniżej 1 600 zł na polskim rynku. Konkurencja ([Zebra ZD421d](/produkt/zebra-zd421d) 300 dpi od 1 796 zł + moduł Ethernet ~350 zł = ~2 150 zł) wymaga znacznie wyższych nakładów. Technologia Cross-Emulation™ automatycznie rozpoznaje format danych (ZPL II, EPL2, DMX) — migracja z drukarki Zebra plug-and-play bez zmiany szablonów.
+Citizen CL-E303 ma Ethernet 10/100, USB 2.0 i RS-232 w standardzie — bez dodatkowych modułów. To jedyna biurkowa drukarka termiczna 300 dpi z wbudowanym Ethernet w cenie poniżej 1 600 zł na polskim rynku. Konkurencja ([Zebra ZD421d](/produkt/zebra-zd421d) 300 dpi od 1 779 zł + moduł Ethernet ~350 zł = ~2 130 zł) wymaga znacznie wyższych nakładów. Technologia Cross-Emulation™ automatycznie rozpoznaje format danych (ZPL II, EPL2, DMX) — migracja z drukarki Zebra plug-and-play bez zmiany szablonów.
 
-Szacunkowy TCO na 3 lata (500 etykiet/dzień, 250 dni/rok): drukarka od 1 514 zł + etykiety termiczne 102×38 mm ok. 60 zł/rolka × ~38 rolek/rok × 3 = ~6 840 zł + głowica 300 dpi (~400 zł) = ok. 8 750 zł. Dla porównania: [Zebra ZD421d](/produkt/zebra-zd421d) 300 dpi od 1 796 zł + Ethernet ~350 zł = ~2 150 zł start. [Brother TD-4D](/produkt/brother-td-4d) 300 dpi (TD-4520DN) od 1 650 zł.
+Szacunkowy TCO na 3 lata (500 etykiet/dzień, 250 dni/rok): drukarka od 1 514 zł + etykiety termiczne 102×38 mm ok. 60 zł/rolka × ~38 rolek/rok × 3 = ~6 840 zł + głowica 300 dpi (~400 zł) = ok. 8 750 zł. Dla porównania: [Zebra ZD421d](/produkt/zebra-zd421d) 300 dpi od 1 779 zł + Ethernet ~350 zł = ~2 130 zł start. [Brother TD-4D](/produkt/brother-td-4d) 300 dpi (TD-4520DN) od 1 650 zł.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E303 (źródło: citizen-systems.com, marzec 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -5567,7 +5567,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E303 (źródło: 
       },
       {
         question: 'Citizen CL-E303 vs Zebra ZD421d 300 dpi — porównanie',
-        answer: '<a href="/produkt/zebra-zd421d">Zebra ZD421d</a> w wersji 300 dpi kosztuje od 1 796 zł (sam USB + BT LE) — Ethernet to dodatkowe ~350 zł (moduł MCS), łącznie ~2 150 zł. CL-E303: od 1 514 zł z Ethernet, USB i RS-232 w standardzie — oszczędność ponad 600 zł. ZD421d oferuje architekturę modularną Link-OS, 512 MB Flash (vs 16 MB w CL-E303) i 3-letnią gwarancję (vs 2 lata). CL-E303 ma Cross-Emulation (auto ZPL/EPL) i certyfikat ENERGY STAR.',
+        answer: '<a href="/produkt/zebra-zd421d">Zebra ZD421d</a> w wersji 300 dpi kosztuje od 1 779 zł (sam USB + BT LE) — Ethernet to dodatkowe ~350 zł (moduł MCS), łącznie ~2 130 zł. CL-E303: od 1 514 zł z Ethernet, USB i RS-232 w standardzie — oszczędność ponad 600 zł. ZD421d oferuje architekturę modularną Link-OS, 512 MB Flash (vs 16 MB w CL-E303) i 3-letnią gwarancję (vs 2 lata). CL-E303 ma Cross-Emulation (auto ZPL/EPL) i certyfikat ENERGY STAR.',
       },
       {
         question: 'Citizen CL-E303 vs Brother TD-4D 300 dpi — porównanie',
@@ -5591,11 +5591,11 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E303 (źródło: 
       },
       {
         question: 'Jaka jest gwarancja na Citizen CL-E303?',
-        answer: 'Citizen udziela 2-letniej gwarancji na drukarkę oraz gwarancji na głowicę: 30 km wydruku lub 6 miesięcy (co nastąpi wcześniej). Dla porównania: <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> ma 3 lata (głowica 12 mies.), <a href="/produkt/brother-td-4d">Brother TD-4D</a> oferuje 3 lata z głowicą (po rejestracji).',
+        answer: 'Citizen udziela 2-letniej gwarancji na drukarkę oraz gwarancji na głowicę: 30 km wydruku lub 6 miesięcy (co nastąpi wcześniej). Dla porównania: <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> ma 3 lata (głowica 6 mies.), <a href="/produkt/brother-td-4d">Brother TD-4D</a> oferuje 3 lata z głowicą (po rejestracji).',
       },
       {
         question: 'Ile kosztuje Citizen CL-E303?',
-        answer: 'CL-E303 bez obcinarki (CLE303XEBXXX) kosztuje od 1 514 zł netto. Wersja z obcinarką (CLE303XEBXSX) od 1 842 zł netto. Dla porównania: <a href="/produkt/citizen-cl-e300">CL-E300</a> (203 dpi) od 1 133 zł, <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> 300 dpi od 1 796 zł (bez Ethernet), <a href="/produkt/brother-td-4d">Brother TD-4D</a> 300 dpi (TD-4520DN) od 1 650 zł.',
+        answer: 'CL-E303 bez obcinarki (CLE303XEBXXX) kosztuje od 1 514 zł netto. Wersja z obcinarką (CLE303XEBXSX) od 1 842 zł netto. Dla porównania: <a href="/produkt/citizen-cl-e300">CL-E300</a> (203 dpi) od 1 133 zł, <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> 300 dpi od 1 779 zł (bez Ethernet), <a href="/produkt/brother-td-4d">Brother TD-4D</a> 300 dpi (TD-4520DN) od 1 650 zł.',
       },
       {
         question: 'Jakie są alternatywy dla Citizen CL-E303?',
@@ -5644,8 +5644,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E303 (źródło: 
             'Emulacja ZPL': 'Natywny ZPL II',
             'Pamięć Flash': '512 MB',
             'Gwarancja': '3 lata',
-            'ENERGY STAR': 'Nie',
-            'Cena od': '1 796 zł',
+            'ENERGY STAR': 'Tak',
+            'Cena od': '1 779 zł',
           },
         },
       ],
