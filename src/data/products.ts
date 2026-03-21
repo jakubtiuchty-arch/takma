@@ -5868,8 +5868,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E321 (źródło: 
     name: 'Citizen CL-S521II',
     shortDescription: 'Citizen CL-S521II — biurkowa drukarka termiczna 4" z metalowym mechanizmem Hi-Lift, rolki do 200 mm, wbudowany zasilacz, Cross-Emulation ZPL/EPL',
     seoTitle: 'Citizen CL-S521II — drukarka DT metalowa 4" | od 1 578 zł',
-    seoDescription: 'Citizen CL-S521II — biurkowa drukarka etykiet termiczna 4" z metalowym mechanizmem, rolki do 200 mm, 150 mm/s, Cross-Emulation ZPL/EPL. Drukarka Citizen CL-S521II, drukarka termiczna Citizen, CL-S521II Citizen. Od 1 578 zł netto. PN: CLS521IINEBXX, CLS521IINEWXX, CLS521IINEBXXE2.',
-    description: `Citizen CL-S521II — biurkowa drukarka termiczna (direct thermal) 4" z metalowym mechanizmem Hi-Lift, wbudowanym zasilaczem i obsługą rolek do 200 mm (8"). 203 dpi, 150 mm/s, Cross-Emulation™ (auto ZPL/EPL/DPL), ENERGY STAR. Od 1 578 zł netto.
+    seoDescription: 'Citizen CL-S521II — biurkowa drukarka termiczna 4" z metalowym mechanizmem, rolki do 200 mm, 150 mm/s, Cross-Emulation ZPL. Od 1 578 zł netto.',
+    description: `**Citizen CL-S521II — biurkowa drukarka termiczna (direct thermal) 4" z metalowym mechanizmem Hi-Lift, wbudowanym zasilaczem i obsługą rolek do 200 mm (8"). 203 dpi, 150 mm/s, Cross-Emulation™ (auto ZPL/EPL/DPL), ENERGY STAR. Od 1 578 zł netto.**
 
 Dla kogo? Citizen CL-S521II to [biurkowa drukarka etykiet](/biurkowe-drukarki-etykiet) termicznych zaprojektowana dla firm z wyższym wolumenem druku, które potrzebują większej pojemności rolek niż kompaktowe modele klasy CL-E. Rolki o średnicy zewnętrznej do 200 mm (8") oznaczają 2–3× rzadszą wymianę nośnika w porównaniu z [CL-E300](/produkt/citizen-cl-e300) (rolki do 125 mm / 5"). Metalowy mechanizm Hi-Lift z otwieraniem głowicy pod kątem 180° i obudowa Hi-Open ABS zapewniają trwałość i łatwą obsługę w środowiskach logistycznych, kurierskich i magazynowych.
 
@@ -5975,7 +5975,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-S521II (źródło
       },
       {
         question: 'Citizen CL-S521II vs Honeywell PC45d — porównanie',
-        answer: '<a href="/produkt/honeywell-pc45d">Honeywell PC45d</a> od 1 518 zł (USB, opcja Ethernet) ma wyświetlacz LCD 3,5" i drukuje do 152 mm/s. CL-S521II od 1 578 zł ma metalowy mechanizm Hi-Lift i rolki 200 mm (8") vs 127 mm (5") w PC45d. Oba mają Cross-Emulation ZPL. CL-S521II lepszy do dużych wolumenów (rzadsza wymiana rolek). PC45d lepszy do stanowisk wymagających konfiguracji z LCD.',
+        answer: '<a href="/produkt/honeywell-pc45d">Honeywell PC45d</a> od 1 518 zł (USB, opcja Ethernet) ma wyświetlacz LCD 3,5" i drukuje do 203 mm/s. CL-S521II od 1 578 zł ma metalowy mechanizm Hi-Lift i rolki 200 mm (8") vs 127 mm (5") w PC45d. Oba mają Cross-Emulation ZPL. CL-S521II lepszy do dużych wolumenów (rzadsza wymiana rolek). PC45d lepszy do stanowisk wymagających konfiguracji z LCD.',
       },
       {
         question: 'Rolki do 200 mm — jaka korzyść?',
@@ -6003,7 +6003,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-S521II (źródło
       },
       {
         question: 'Jakie są alternatywy dla Citizen CL-S521II?',
-        answer: 'W kategorii <a href="/biurkowe-drukarki-etykiet">biurkowych drukarek termicznych</a>: <a href="/produkt/citizen-cl-e300">Citizen CL-E300</a> (kompaktowa, Ethernet standard, 200 mm/s, od 1 133 zł), <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> (Link-OS, MCS, 152 mm/s, od 1 472 zł), <a href="/produkt/honeywell-pc45d">Honeywell PC45d</a> (LCD 3,5", od 1 518 zł), <a href="/produkt/brother-td-4d">Brother TD-4D</a> (3 lata gwarancji, BarTender gratis, od 1 299 zł). CL-S521II wyróżnia się metalowym mechanizmem i rolkami 200 mm.',
+        answer: 'W kategorii <a href="/biurkowe-drukarki-etykiet">biurkowych drukarek termicznych</a>: <a href="/produkt/citizen-cl-e300">Citizen CL-E300</a> (kompaktowa, Ethernet standard, 200 mm/s, od 1 133 zł), <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> (Link-OS, MCS, 152 mm/s, od 1 472 zł), <a href="/produkt/honeywell-pc45d">Honeywell PC45d</a> (LCD 3,5", od 1 518 zł), <a href="/produkt/brother-td-4d">Brother TD-4D</a> (3 lata gwarancji, BarTender gratis, od 1 250 zł). CL-S521II wyróżnia się metalowym mechanizmem i rolkami 200 mm.',
       },
     ],
     comparison: {
