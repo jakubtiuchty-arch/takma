@@ -43,6 +43,9 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  verification: {
+    google: 'oT1IprPzV9vrr3WASlmKdso2Zfg7L88UBQ0b5PCjOV8',
+  },
 }
 
 const organizationJsonLd = {
