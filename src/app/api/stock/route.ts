@@ -1,8 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { lookupStock as ingramLookup } from '@/lib/ingram'
 import { lookupStock as bluestarLookup } from '@/lib/bluestar'
+import { lookupStock as jarltechLookup } from '@/lib/jarltech'
 import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
+import type { JarltechStockInfo } from '@/lib/jarltech'
 
 const MARGIN = 1.15 // 15% marzy
 const VAT = 1.23    // 23% VAT
@@ -46,10 +48,10 @@ async function getEurPlnRate(): Promise<number> {
 /**
  * GET /api/stock?pn=ZD4A042-30EM00EZ,ZD4A042-30EE00EZ
  *
- * Unified stock API — Ingram Micro (PLN) + BlueStar (EUR).
- * Stany EU sumowane (Ingram DE/HU/CZ + BlueStar inventory).
- * Cena: BlueStar EUR -> PLN po kursie NBP, potem min(ingram, bluestar) x 1.15.
- * Graceful fallback — jesli jeden dystrybutor padnie, dane z drugiego.
+ * Unified stock API — Ingram Micro (PLN) + BlueStar (EUR) + Jarltech (EUR).
+ * Stany EU sumowane (Ingram DE/HU/CZ + BlueStar + Jarltech inventory).
+ * Cena: EUR -> PLN po kursie NBP, potem min(ingram, bluestar, jarltech) x 1.15.
+ * Graceful fallback — jesli jeden/dwoch dystrybutorów padnie, dane z pozostalych.
  */
 export async function GET(request: NextRequest) {
   const showDebug = request.nextUrl.searchParams.get('debug') === '1'
@@ -79,10 +81,11 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    // Rownolegle: oba dystrybutory + kurs EUR/PLN
-    const [ingramResult, bluestarResult, eurRate] = await Promise.all([
+    // Rownolegle: trzech dystrybutorów + kurs EUR/PLN
+    const [ingramResult, bluestarResult, jarltechResult, eurRate] = await Promise.all([
       Promise.allSettled([ingramLookup(partNumbers)]).then(r => r[0]),
       Promise.allSettled([bluestarLookup(partNumbers)]).then(r => r[0]),
+      Promise.allSettled([jarltechLookup(partNumbers)]).then(r => r[0]),
       getEurPlnRate(),
     ])
 
@@ -90,12 +93,17 @@ export async function GET(request: NextRequest) {
       ingramResult.status === 'fulfilled' ? ingramResult.value : []
     const bluestarData: BlueStarStockInfo[] =
       bluestarResult.status === 'fulfilled' ? bluestarResult.value : []
+    const jarltechData: JarltechStockInfo[] =
+      jarltechResult.status === 'fulfilled' ? jarltechResult.value : []
 
     if (ingramResult.status === 'rejected') {
       console.error('[API /stock] Ingram error:', ingramResult.reason)
     }
     if (bluestarResult.status === 'rejected') {
       console.error('[API /stock] BlueStar error:', bluestarResult.reason)
+    }
+    if (jarltechResult.status === 'rejected') {
+      console.error('[API /stock] Jarltech error:', jarltechResult.reason)
     }
 
     // Mapuj wyniki po PN
@@ -109,18 +117,25 @@ export async function GET(request: NextRequest) {
       bluestarMap.set(item.partNumber, item)
     }
 
+    const jarltechMap = new Map<string, JarltechStockInfo>()
+    for (const item of jarltechData) {
+      jarltechMap.set(item.partNumber, item)
+    }
+
     const now = new Date().toISOString()
 
     // Merge per PN
     const results: StockInfo[] = partNumbers.map(pn => {
       const ing = ingramMap.get(pn)
       const bs = bluestarMap.get(pn)
+      const jl = jarltechMap.get(pn)
 
       const ingFound = ing?.found ?? false
       const bsFound = bs?.found ?? false
+      const jlFound = jl?.found ?? false
 
       // Jesli zaden dystrybutor nie ma danych
-      if (!ingFound && !bsFound) {
+      if (!ingFound && !bsFound && !jlFound) {
         return {
           partNumber: pn,
           found: false,
@@ -136,23 +151,29 @@ export async function GET(request: NextRequest) {
 
       // Stany magazynowe
       const stockPL = ing?.stockPL ?? 0 // Polski magazyn — tylko Ingram
-      const stockDE = (ing?.stockDE ?? 0) + (bsFound ? (bs!.inventory ?? 0) : 0) // Ingram EU + BlueStar
-      const inDelivery = (ing?.inDelivery ?? 0) + (bsFound ? (bs!.qtyExpected ?? 0) : 0)
+      const stockDE = (ing?.stockDE ?? 0)
+        + (bsFound ? (bs!.inventory ?? 0) : 0)
+        + (jlFound ? (jl!.inventory ?? 0) : 0) // Ingram EU + BlueStar + Jarltech
+      const inDelivery = (ing?.inDelivery ?? 0)
+        + (bsFound ? (bs!.qtyExpected ?? 0) : 0)
+        + (jlFound ? (jl!.incomingQty ?? 0) : 0)
       const totalStock = stockPL + stockDE + inDelivery
 
       // Cena: porownanie w PLN
-      // Ingram: juz w PLN | BlueStar: EUR -> PLN po kursie NBP
+      // Ingram: juz w PLN | BlueStar + Jarltech: EUR -> PLN po kursie NBP
       const ingramPLN = ingFound ? ing!.ingramPrice : undefined
       const bluestarPLN = (bsFound && bs!.unitPrice)
         ? Math.round(bs!.unitPrice * eurRate * 100) / 100
         : undefined
+      const jarltechPLN = (jlFound && jl!.unitPrice)
+        ? Math.round(jl!.unitPrice * eurRate * 100) / 100
+        : undefined
 
-      let bestRawPricePLN: number | undefined
-      if (ingramPLN != null && bluestarPLN != null) {
-        bestRawPricePLN = Math.min(ingramPLN, bluestarPLN)
-      } else {
-        bestRawPricePLN = ingramPLN ?? bluestarPLN
-      }
+      // Min z trzech dystrybutorów
+      const prices = [ingramPLN, bluestarPLN, jarltechPLN].filter(
+        (p): p is number => p != null && p > 0
+      )
+      const bestRawPricePLN = prices.length > 0 ? Math.min(...prices) : undefined
 
       let price: number | undefined
       let priceBrutto: number | undefined
@@ -212,6 +233,9 @@ export async function GET(request: NextRequest) {
           BLUESTAR_CLIENT_SECRET: !!process.env.BLUESTAR_CLIENT_SECRET,
           BLUESTAR_CUSTOMER_NO: !!process.env.BLUESTAR_CUSTOMER_NO,
           BLUESTAR_API_KEY: !!process.env.BLUESTAR_API_KEY,
+          JARLTECH_CUSTOMER_ID: !!process.env.JARLTECH_CUSTOMER_ID,
+          JARLTECH_CLIENT_ID: !!process.env.JARLTECH_CLIENT_ID,
+          JARLTECH_CLIENT_SECRET: !!process.env.JARLTECH_CLIENT_SECRET,
         },
         ingram: {
           status: ingramResult.status,
@@ -225,6 +249,21 @@ export async function GET(request: NextRequest) {
           foundCount: bluestarData.filter(r => r.found).length,
           items: bluestarData.map(b => ({ pn: b.partNumber, found: b.found, inv: b.inventory, eur: b.unitPrice })),
           error: bluestarResult.status === 'rejected' ? String(bluestarResult.reason) : undefined,
+        },
+        jarltech: {
+          status: jarltechResult.status,
+          count: jarltechData.length,
+          foundCount: jarltechData.filter(r => r.found).length,
+          items: jarltechData.map(j => ({
+            pn: j.partNumber,
+            found: j.found,
+            inv: j.inventory,
+            eur: j.unitPrice,
+            incoming: j.incomingQty,
+            incomingDate: j.incomingDate,
+            jid: j.jarltechId,
+          })),
+          error: jarltechResult.status === 'rejected' ? String(jarltechResult.reason) : undefined,
         },
       }
     }
