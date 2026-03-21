@@ -247,8 +247,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Kompaktowe drukarki etykiet biurkowe do 4 cali szerokości. Idealne do biura, punktu sprzedaży i magazynu. Modele Zebra, Honeywell, TSC. Ceny, porównanie, doradztwo.',
     longDescription: 'Drukarki biurkowe (desktop) to kompaktowe urządzenia zaprojektowane do pracy na biurku lub stanowisku roboczym. Zajmują minimum miejsca, a jednocześnie oferują niezawodny druk etykiet z kodami kreskowymi do 4 cali (108 mm) szerokości. Sprawdzają się w biurach, punktach sprzedaży, aptekach, małych magazynach i wszędzie tam, gdzie liczy się niewielki rozmiar i łatwość obsługi. W ofercie modele czołowych producentów: Zebra, Honeywell, TSC i innych.',
     icon: 'printer',
-    productIds: ['zebra-zd220d', 'zebra-zd230d', 'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411d', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd421d', 'zebra-zd621t', 'zebra-zd621d', 'honeywell-pc45d', 'honeywell-pc45t', 'honeywell-pc42e-t', 'brother-td-4d', 'brother-td-2020a', 'brother-td-4t', 'citizen-cl-e300', 'citizen-cl-e303'],
-    productCount: 18,
+    productIds: ['zebra-zd220d', 'zebra-zd230d', 'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411d', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd421d', 'zebra-zd621t', 'zebra-zd621d', 'honeywell-pc45d', 'honeywell-pc45t', 'honeywell-pc42e-t', 'brother-td-4d', 'brother-td-2020a', 'brother-td-4t', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-e321'],
+    productCount: 19,
   },
   {
     id: 'przemyslowe-drukarki-etykiet',
@@ -276,9 +276,9 @@ export const subcategories: Subcategory[] = [
     productIds: [
       'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd621t',
       'zebra-zt231', 'zebra-zt111', 'zebra-zt411', 'zebra-zt421', 'zebra-zt510',
-      'zebra-zt610', 'zebra-zt620', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt',
+      'zebra-zt610', 'zebra-zt620', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e321',
     ],
-    productCount: 35,
+    productCount: 36,
   },
   {
     id: 'termiczne-drukarki-etykiet',
@@ -5656,6 +5656,211 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E303 (źródło: 
     relatedProducts: ['citizen-cl-e300', 'zebra-zd421d', 'brother-td-4d'],
     createdAt: '2026-03-21',
     sameAs: 'https://www.citizen-systems.com/eu/en/label-printers/cl-e303',
+  },
+  {
+    id: 'citizen-cl-e321',
+    slug: 'citizen-cl-e321',
+    name: 'Citizen CL-E321',
+    shortDescription: 'Citizen CL-E321 — biurkowa drukarka termotransferowa 4" z Ethernet, USB i RS-232 w standardzie, Cross-Emulation ZPL/EPL, ENERGY STAR',
+    seoTitle: 'Citizen CL-E321 — drukarka termotransferowa z Ethernet | od 1 410 zł',
+    seoDescription: 'Citizen CL-E321 — biurkowa drukarka etykiet termotransferowa 4" z Ethernet w standardzie, 200 mm/s, 203 dpi, Cross-Emulation ZPL/EPL. Drukarka Citizen CL-E321, drukarka termotransferowa Citizen, CL-E321 Citizen. PN: CLE321XEBXXX (czarny), CLE321XEWXXX (biały), CLE321XEBXCX (obcinarka).',
+    description: `**Citizen CL-E321 — kompaktowa drukarka termotransferowa 4" z Ethernet, USB i RS-232 w standardzie. 200 mm/s, Cross-Emulation™ (auto ZPL/EPL/DPL), ENERGY STAR. Termotransferowa wersja [CL-E300](/produkt/citizen-cl-e300) — do trwałych etykiet na taśmach woskowych, woskowo-żywicznych i żywicznych. Od 1 410 zł netto.**
+
+Dla kogo? Citizen CL-E321 to [biurkowa drukarka etykiet](/biurkowe-drukarki-etykiet) termotransferowa zaprojektowana dla firm, które potrzebują trwałych etykiet odpornych na wilgoć, ścieranie, temperaturę i chemikalia. Druk termotransferowy (TT+DT) z użyciem taśm woskowych, woskowo-żywicznych lub żywicznych zapewnia trwałość nadruku nawet w ekstremalnych warunkach — etykiety na produktach chemicznych, farmaceutycznych, w chłodniach i na zewnątrz. CL-E321 to naturalne uzupełnienie termicznej [CL-E300](/produkt/citizen-cl-e300) w ofercie Citizen.
+
+Kluczową przewagą CL-E321 jest kompletny zestaw interfejsów w standardzie: Ethernet 10/100, USB 2.0 i RS-232 — bez dodatkowych modułów i kosztów. Konkurencyjna [Zebra ZD421t](/produkt/zebra-zd421t) oferuje Ethernet jako płatny moduł MCS (~350 zł), a [Honeywell PC45t](/produkt/honeywell-pc45t) wymaga wersji z wyższą konfiguracją. Technologia Cross-Emulation™ automatycznie rozpoznaje formaty ZPL II, EPL2 i DMX — migracja z drukarki Zebra czy Honeywell odbywa się plug-and-play bez zmian w oprogramowaniu. Mechanizm Hi-Lift™ otwiera głowicę pod kątem 180°, co znacznie upraszcza wymianę mediów i taśm barwiących.
+
+Szacunkowy TCO na 3 lata (500 etykiet/dzień, 250 dni/rok): drukarka od 1 410 zł + etykiety TT 102×38 mm ok. 50 zł/rolka × ~38 rolek/rok × 3 = ~5 700 zł + taśmy woskowe 110×300 m ok. 25 zł × ~19 szt./rok × 3 = ~1 425 zł + głowica (~350 zł) = ok. 8 885 zł. Dla porównania: [Zebra ZD421t](/produkt/zebra-zd421t) od 1 673 zł + moduł Ethernet ~350 zł = ~2 023 zł start.
+
+Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E321 (źródło: citizen-systems.com, marzec 2026).`,
+    categoryId: 'drukarki-etykiet',
+    subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
+    manufacturerId: 'citizen',
+    priceFrom: 1410.13,
+    images: ['/images/products/CLE321XEBXXX.png', '/images/products/CLE321XEBXXX-2.png', '/images/products/CLE321XEBXXX-3.png', '/images/products/CLE321XEBXXX-4.png'],
+    imageDescriptions: [
+      'Citizen CL-E321 — widok z przodu, kompaktowa drukarka termotransferowa biurkowa 4 cale w czarnej obudowie',
+      'Citizen CL-E321 — widok z tyłu, porty Ethernet, USB i RS-232 w standardzie',
+      'Citizen CL-E321 — widok z góry, mechanizm Hi-Lift otwarty pod kątem 180° z taśmą barwiącą',
+      'Citizen CL-E321 — widok pod kątem, zamknięta obudowa z etykietą wychodzącą ze szczeliny',
+    ],
+    tags: ['logistyka', 'produkcja', 'retail', 'healthcare'] as ProductTag[],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    applications: [
+      'Trwałe etykiety produktowe odporne na wilgoć, ścieranie i temperaturę',
+      'Etykiety na produkty chemiczne i farmaceutyczne',
+      'Oznaczenia magazynowe w chłodniach i mroźniach',
+      'Etykiety na kable, rury i komponenty przemysłowe',
+      'Etykiety wysyłkowe i kurierskie (InPost, DPD, DHL, GLS, UPS)',
+      'Etykiety do e-commerce (Allegro, Amazon, BaseLinker, Shoper)',
+      'Etykiety cenowe i produktowe w handlu detalicznym',
+      'Etykiety identyfikacyjne na środki trwałe (inwentaryzacja)',
+    ],
+    compatibleAccessories: [
+      'zebra-labels-zselect2000d-57x32',
+      'zebra-labels-zselect2000d-76x51',
+      'zebra-labels-zselect2000d-102x38',
+    ],
+    keyParams: {
+      rodzajDruku: 'Termotransferowa + termiczna (TT+DT)',
+      rozdzielczosc: '203 dpi (8 dots/mm)',
+      predkoscDruku: 'do 200 mm/s (8 ips)',
+      szerokoscDruku: 'max. 104 mm (4")',
+      szerokoscEtykiet: '25,4–118 mm',
+    },
+    specifications: [
+      { name: 'Metoda druku', value: 'Termotransferowa + termiczna bezpośrednia (TT+DT)' },
+      { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm)' },
+      { name: 'Prędkość druku', value: 'do 200 mm/s (8 ips)' },
+      { name: 'Szerokość druku', value: 'max. 104 mm (4")' },
+      { name: 'Szerokość mediów', value: '25,4–118 mm (1"–4,6")' },
+      { name: 'Max średnica rolki', value: '125 mm (5")' },
+      { name: 'Rdzeń rolki', value: '25 mm (1")' },
+      { name: 'Taśma barwiąca (ribbon)', value: 'maks. 60 mm (2,6") średnica, 300 m, rdzeń 25 mm, ink side out' },
+      { name: 'Typy taśm', value: 'Woskowe, woskowo-żywiczne, żywiczne' },
+      { name: 'Czujnik nośnika', value: 'Szczelina (gap) + odblaskowy czarny znacznik (reflective)' },
+      { name: 'Interfejsy standardowe', value: 'USB 2.0, RS-232, Ethernet 10/100' },
+      { name: 'Emulacja', value: 'Cross-Emulation™ — auto: Zebra ZPL II, Eltron EPL2, Datamax DMX' },
+      { name: 'Język programowania', value: 'CBI BASIC Interpreter' },
+      { name: 'Pamięć Flash', value: '16 MB (4 MB dostępne dla użytkownika)' },
+      { name: 'Pamięć SDRAM', value: '32 MB' },
+      { name: 'Mechanizm otwierania', value: 'Hi-Lift™ (180°) + ClickClose™' },
+      { name: 'Wymiary (szer. × gł. × wys.)', value: '178 × 266 × 173 mm' },
+      { name: 'Waga', value: '2,6 kg' },
+      { name: 'Certyfikaty', value: 'CE, TUV, UL, FCC, VCCI, ENERGY STAR' },
+      { name: 'Gwarancja', value: '2 lata (drukarka), 50 km lub 6 miesięcy (głowica)' },
+    ],
+    variants: [
+      {
+        partNumber: 'CLE321XEBXXX',
+        name: 'Czarny, bez obcinarki',
+        attributes: { 'Kolor': 'Czarny' },
+        priceFrom: 1410.13,
+        availability: 'available',
+      },
+      {
+        partNumber: 'CLE321XEBXCX',
+        name: 'Czarny, z obcinarką (cutter)',
+        attributes: { 'Kolor': 'Czarny', 'Gilotyna': 'Tak' },
+        priceFrom: 1886.71,
+        availability: 'available',
+      },
+      {
+        partNumber: 'CLE321XEWXXX',
+        name: 'Biały, bez obcinarki',
+        attributes: { 'Kolor': 'Biały' },
+        priceFrom: 1410.13,
+        availability: 'unavailable',
+      },
+    ],
+    variantAttributeTooltips: {
+      'Kolor': 'Czarny — standard do biur, magazynów i produkcji.\n\nBiały — dedykowany do aptek, laboratoriów, clean-roomów i placówek medycznych, gdzie wymagana jest jasna estetyka urządzeń.',
+      'Gilotyna': 'Automatyczna obcinarka etykiet montowana fabrycznie. Przycina etykiety po wydruku — przydatna przy drukowaniu wielu etykiet w sekwencji. Nie można dokupić osobno.',
+    },
+    faq: [
+      {
+        question: 'Citizen CL-E321 vs CL-E300 — czym się różnią?',
+        answer: '<a href="/produkt/citizen-cl-e300">CL-E300</a> to drukarka wyłącznie termiczna (direct thermal) — drukuje bez taśmy barwiącej, ale etykiety bledną pod wpływem ciepła i światła. CL-E321 obsługuje zarówno druk termotransferowy (z taśmą woskową/żywiczną) jak i termiczny bezpośredni — daje większą wszechstronność i trwałość nadruku. CL-E321 jest cięższa (2,6 kg vs 1,98 kg) ze względu na mechanizm podawania taśmy. Cena CL-E321 od 1 410 zł vs CL-E300 od 1 133 zł — różnica 277 zł za możliwość druku termotransferowego.',
+      },
+      {
+        question: 'Citizen CL-E321 vs Zebra ZD421t — która drukarka lepsza?',
+        answer: 'CL-E321 ma Ethernet, USB i RS-232 w standardzie za 1 410 zł. <a href="/produkt/zebra-zd421t">Zebra ZD421t</a> kosztuje od 1 673 zł z USB i BT LE — Ethernet wymaga modułu MCS (~350 zł), łącznie ~2 023 zł. Oszczędność z CL-E321: ponad 600 zł. ZD421t oferuje architekturę Link-OS, 512 MB Flash, rozdzielczość 300 dpi (opcja) i 3-letnią gwarancję. CL-E321 wygrywa ceną i kompletem interfejsów, ZD421t — ekosystemem zarządzania flotą.',
+      },
+      {
+        question: 'Citizen CL-E321 vs Honeywell PC45t — porównanie',
+        answer: '<a href="/produkt/honeywell-pc45t">Honeywell PC45t</a> kosztuje od ok. 2 000 zł i oferuje LCD 3,5", Wi-Fi 6, 512 MB Flash oraz druk z prędkością do 203 mm/s. CL-E321 od 1 410 zł — tańsza o ~590 zł, z pełnym zestawem portów (Ethernet, USB, RS-232) w standardzie i identyczną prędkością druku (200 mm/s). PC45t wygrywa wyświetlaczem i łącznością bezprzewodową, CL-E321 — ceną i Cross-Emulation.',
+      },
+      {
+        question: 'Jakie taśmy barwiące pasują do CL-E321?',
+        answer: 'CL-E321 obsługuje taśmy barwiące (ribbon) o max średnicy 60 mm, długości do 300 m, rdzeniu 25 mm (1"), ink side out. Obsługiwane typy: woskowe (najtańsze, do etykiet papierowych), woskowo-żywiczne (kompromis trwałości i ceny) oraz żywiczne (najtrwalsze, do etykiet syntetycznych PP/PE). Standardowa szerokość taśmy: 25–110 mm. Dla etykiet wysyłkowych 102×38 mm zalecamy taśmę woskową 110 mm × 300 m.',
+      },
+      {
+        question: 'Cross-Emulation — migracja z Zebry na Citizen CL-E321',
+        answer: 'Technologia Cross-Emulation™ automatycznie rozpoznaje format danych: Zebra ZPL II, Eltron EPL2 lub Datamax DMX. Szablony etykiet z <a href="/produkt/zebra-zd421t">Zebra ZD421t</a>, ZD220t czy GK420t działają bez zmian — wystarczy przekierować wydruk na CL-E321. Brak potrzeby modyfikacji oprogramowania WMS/ERP. Drukarka sama rozpozna język i wydrukuje etykietę.',
+      },
+      {
+        question: 'Ethernet w standardzie — co to zmienia?',
+        answer: 'Drukarki konkurencji (<a href="/produkt/zebra-zd421t">Zebra ZD421t</a>, <a href="/produkt/honeywell-pc45t">Honeywell PC45t</a>) oferują Ethernet jako płatny moduł (200–400 zł). CL-E321 ma Ethernet 10/100 wbudowany fabrycznie — podłączasz kabel sieciowy i drukarka jest od razu w sieci. Przy flocie 10 drukarek oszczędzasz 2 000–4 000 zł na samych modułach sieciowych.',
+      },
+      {
+        question: 'Biała wersja CL-E321 — do czego służy?',
+        answer: 'Wariant CLE321XEWXXX w białej obudowie jest dedykowany dla aptek, laboratoriów, gabinetów lekarskich, clean-roomów i placówek medycznych, gdzie regulacje lub standardy wewnętrzne wymagają jasnych urządzeń. Parametry techniczne są identyczne z wersją czarną. Na polskim rynku żadna inna <a href="/biurkowe-drukarki-etykiet">biurkowa drukarka termotransferowa</a> nie jest dostępna w białym kolorze.',
+      },
+      {
+        question: 'Ile kosztuje Citizen CL-E321?',
+        answer: 'CL-E321 w wersji czarnej bez obcinarki (CLE321XEBXXX) kosztuje od 1 410 zł netto. Wersja z obcinarką (CLE321XEBXCX) od 1 887 zł netto. Biały wariant (CLE321XEWXXX) od 1 410 zł netto. Dla porównania: <a href="/produkt/citizen-cl-e300">CL-E300</a> (DT only) od 1 133 zł, <a href="/produkt/zebra-zd421t">Zebra ZD421t</a> od 1 673 zł (bez Ethernet), <a href="/produkt/honeywell-pc45t">Honeywell PC45t</a> od ~2 000 zł.',
+      },
+      {
+        question: 'Jaka jest gwarancja na Citizen CL-E321?',
+        answer: 'Citizen udziela 2-letniej gwarancji na drukarkę oraz gwarancji na głowicę drukującą: 50 km wydruku lub 6 miesięcy (co nastąpi wcześniej). Dla porównania: <a href="/produkt/zebra-zd421t">Zebra ZD421t</a> ma 3 lata gwarancji (głowica 12 mies.). Gwarancja Citizen jest krótsza, ale cena drukarki jest odpowiednio niższa.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Citizen CL-E321?',
+        answer: 'W kategorii <a href="/biurkowe-drukarki-etykiet">biurkowych drukarek termotransferowych 4"</a>: <a href="/produkt/zebra-zd421t">Zebra ZD421t</a> (od 1 673 zł, MCS, Link-OS), <a href="/produkt/honeywell-pc45t">Honeywell PC45t</a> (od ~2 000 zł, LCD, Wi-Fi 6), <a href="/produkt/zebra-zd621t">Zebra ZD621t</a> (od 2 700 zł, LCD 2,3", premium). CL-E321 to najlepsza opcja, gdy potrzebujesz Ethernet w standardzie, Cross-Emulation i niskiej ceny zakupu.',
+      },
+    ],
+    comparison: {
+      title: 'Porównanie biurkowych drukarek termotransferowych 4" — Citizen CL-E321 vs Zebra ZD421t vs Honeywell PC45t',
+      models: [
+        {
+          name: 'CL-E321',
+          slug: 'citizen-cl-e321',
+          highlight: true,
+          specs: {
+            'Typ druku': 'TT + DT',
+            'Rozdzielczość': '203 dpi',
+            'Prędkość': '200 mm/s',
+            'Interfejsy w standardzie': 'USB + Ethernet + RS-232',
+            'Emulacja ZPL': 'Tak (auto Cross-Emulation)',
+            'Pamięć Flash': '16 MB',
+            'Waga': '2,6 kg',
+            'Gwarancja': '2 lata',
+            'ENERGY STAR': 'Tak',
+            'Cena od': '1 410 zł',
+          },
+        },
+        {
+          name: 'ZD421t',
+          slug: 'zebra-zd421t',
+          specs: {
+            'Typ druku': 'TT + DT',
+            'Rozdzielczość': '203 / 300 dpi',
+            'Prędkość': '152 mm/s',
+            'Interfejsy w standardzie': 'USB + BT LE',
+            'Emulacja ZPL': 'Natywny ZPL II',
+            'Pamięć Flash': '512 MB',
+            'Waga': '1,90 kg',
+            'Gwarancja': '3 lata',
+            'ENERGY STAR': 'Nie',
+            'Cena od': '1 673 zł',
+          },
+        },
+        {
+          name: 'PC45t',
+          slug: 'honeywell-pc45t',
+          specs: {
+            'Typ druku': 'TT + DT',
+            'Rozdzielczość': '203 / 300 dpi',
+            'Prędkość': '203 mm/s',
+            'Interfejsy w standardzie': 'USB (zależy od wariantu)',
+            'Emulacja ZPL': 'Tak (Zebra Compatibility)',
+            'Pamięć Flash': '512 MB',
+            'Waga': '3,0 kg',
+            'Gwarancja': '2 lata',
+            'ENERGY STAR': 'Nie',
+            'Cena od': '~2 000 zł',
+          },
+        },
+      ],
+    },
+    downloads: [
+      { name: 'Karta katalogowa CL-E321 (PL)', type: 'datasheet', url: '/downloads/citizen-cl-e321-datasheet.pdf', size: '612 KB' },
+    ],
+    relatedProducts: ['citizen-cl-e300', 'zebra-zd421t', 'honeywell-pc45t'],
+    createdAt: '2026-03-21',
+    sameAs: 'https://www.citizen-systems.com/en/printer/label/cl-e321',
   },
 ]
 
