@@ -5662,15 +5662,15 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E303 (źródło: 
     slug: 'citizen-cl-e321',
     name: 'Citizen CL-E321',
     shortDescription: 'Citizen CL-E321 — biurkowa drukarka termotransferowa 4" z Ethernet, USB i RS-232 w standardzie, Cross-Emulation ZPL/EPL, ENERGY STAR',
-    seoTitle: 'Citizen CL-E321 — drukarka termotransferowa z Ethernet | od 1 410 zł',
-    seoDescription: 'Citizen CL-E321 — biurkowa drukarka etykiet termotransferowa 4" z Ethernet w standardzie, 200 mm/s, 203 dpi, Cross-Emulation ZPL/EPL. Drukarka Citizen CL-E321, drukarka termotransferowa Citizen, CL-E321 Citizen. PN: CLE321XEBXXX (czarny), CLE321XEWXXX (biały), CLE321XEBXCX (obcinarka).',
+    seoTitle: 'Citizen CL-E321 — drukarka TT 4" Ethernet | od 1 410 zł',
+    seoDescription: 'Citizen CL-E321 — biurkowa drukarka termotransferowa 4" z Ethernet, USB i RS-232 w standardzie. 200 mm/s, Cross-Emulation ZPL. Od 1 410 zł netto. PN: CLE321XEBXXX, CLE321XEWXXX, CLE321XEBXCX.',
     description: `Citizen CL-E321 — kompaktowa drukarka termotransferowa 4" z Ethernet, USB i RS-232 w standardzie. 200 mm/s, Cross-Emulation™ (auto ZPL/EPL/DPL), ENERGY STAR. Termotransferowa wersja [CL-E300](/produkt/citizen-cl-e300) — do trwałych etykiet na taśmach woskowych, woskowo-żywicznych i żywicznych. Od 1 410 zł netto.
 
 Dla kogo? Citizen CL-E321 to [biurkowa drukarka etykiet](/biurkowe-drukarki-etykiet) termotransferowa zaprojektowana dla firm, które potrzebują trwałych etykiet odpornych na wilgoć, ścieranie, temperaturę i chemikalia. Druk termotransferowy (TT+DT) z użyciem taśm woskowych, woskowo-żywicznych lub żywicznych zapewnia trwałość nadruku nawet w ekstremalnych warunkach — etykiety na produktach chemicznych, farmaceutycznych, w chłodniach i na zewnątrz. CL-E321 to naturalne uzupełnienie termicznej [CL-E300](/produkt/citizen-cl-e300) w ofercie Citizen.
 
 Kluczową przewagą CL-E321 jest kompletny zestaw interfejsów w standardzie: Ethernet 10/100, USB 2.0 i RS-232 — bez dodatkowych modułów i kosztów. Konkurencyjna [Zebra ZD421t](/produkt/zebra-zd421t) oferuje Ethernet jako płatny moduł MCS (~350 zł), a [Honeywell PC45t](/produkt/honeywell-pc45t) wymaga wersji z wyższą konfiguracją. Technologia Cross-Emulation™ automatycznie rozpoznaje formaty ZPL II, EPL2 i DMX — migracja z drukarki Zebra czy Honeywell odbywa się plug-and-play bez zmian w oprogramowaniu. Mechanizm Hi-Lift™ otwiera głowicę pod kątem 180°, co znacznie upraszcza wymianę mediów i taśm barwiących.
 
-Szacunkowy TCO na 3 lata (500 etykiet/dzień, 250 dni/rok): drukarka od 1 410 zł + etykiety TT 102×38 mm ok. 50 zł/rolka × ~38 rolek/rok × 3 = ~5 700 zł + taśmy woskowe 110×300 m ok. 25 zł × ~19 szt./rok × 3 = ~1 425 zł + głowica (~350 zł) = ok. 8 885 zł. Dla porównania: [Zebra ZD421t](/produkt/zebra-zd421t) od 1 673 zł + moduł Ethernet ~350 zł = ~2 023 zł start.
+Szacunkowy TCO na 3 lata (500 etykiet/dzień, 250 dni/rok): drukarka od 1 410 zł + etykiety TT 102×38 mm ok. 50 zł/rolka × ~38 rolek/rok × 3 = ~5 700 zł + taśmy woskowe 110×300 m ok. 25 zł × ~19 szt./rok × 3 = ~1 425 zł + głowica (~350 zł) = ok. 8 885 zł. Dla porównania: [Zebra ZD421t](/produkt/zebra-zd421t) od 1 649 zł + moduł Ethernet ~350 zł = ~2 000 zł start.
 
 Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E321 (źródło: citizen-systems.com, marzec 2026).`,
     categoryId: 'drukarki-etykiet',
@@ -5766,11 +5766,11 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E321 (źródło: 
       },
       {
         question: 'Citizen CL-E321 vs Zebra ZD421t — która drukarka lepsza?',
-        answer: 'CL-E321 ma Ethernet, USB i RS-232 w standardzie za 1 410 zł. <a href="/produkt/zebra-zd421t">Zebra ZD421t</a> kosztuje od 1 673 zł z USB i BT LE — Ethernet wymaga modułu MCS (~350 zł), łącznie ~2 023 zł. Oszczędność z CL-E321: ponad 600 zł. ZD421t oferuje architekturę Link-OS, 512 MB Flash, rozdzielczość 300 dpi (opcja) i 3-letnią gwarancję. CL-E321 wygrywa ceną i kompletem interfejsów, ZD421t — ekosystemem zarządzania flotą.',
+        answer: 'CL-E321 ma Ethernet, USB i RS-232 w standardzie za 1 410 zł. <a href="/produkt/zebra-zd421t">Zebra ZD421t</a> kosztuje od 1 649 zł z USB i BT LE — Ethernet wymaga modułu MCS (~350 zł), łącznie ~2 000 zł. Oszczędność z CL-E321: ok. 590 zł. ZD421t oferuje architekturę Link-OS, 512 MB Flash, rozdzielczość 300 dpi (opcja) i 3-letnią gwarancję. CL-E321 wygrywa ceną i kompletem interfejsów, ZD421t — ekosystemem zarządzania flotą.',
       },
       {
         question: 'Citizen CL-E321 vs Honeywell PC45t — porównanie',
-        answer: '<a href="/produkt/honeywell-pc45t">Honeywell PC45t</a> kosztuje od ok. 2 000 zł i oferuje LCD 3,5", Wi-Fi 6, 512 MB Flash oraz druk z prędkością do 203 mm/s. CL-E321 od 1 410 zł — tańsza o ~590 zł, z pełnym zestawem portów (Ethernet, USB, RS-232) w standardzie i identyczną prędkością druku (200 mm/s). PC45t wygrywa wyświetlaczem i łącznością bezprzewodową, CL-E321 — ceną i Cross-Emulation.',
+        answer: '<a href="/produkt/honeywell-pc45t">Honeywell PC45t</a> kosztuje od 2 159 zł i oferuje LCD 3,5", Wi-Fi 6, 512 MB Flash oraz druk z prędkością do 203 mm/s. CL-E321 od 1 410 zł — tańsza o 749 zł, z pełnym zestawem portów (Ethernet, USB, RS-232) w standardzie i identyczną prędkością druku (200 mm/s). PC45t wygrywa wyświetlaczem i łącznością bezprzewodową, CL-E321 — ceną i Cross-Emulation.',
       },
       {
         question: 'Jakie taśmy barwiące pasują do CL-E321?',
@@ -5790,7 +5790,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E321 (źródło: 
       },
       {
         question: 'Ile kosztuje Citizen CL-E321?',
-        answer: 'CL-E321 w wersji czarnej bez obcinarki (CLE321XEBXXX) kosztuje od 1 410 zł netto. Wersja z obcinarką (CLE321XEBXCX) od 1 887 zł netto. Biały wariant (CLE321XEWXXX) od 1 410 zł netto. Dla porównania: <a href="/produkt/citizen-cl-e300">CL-E300</a> (DT only) od 1 133 zł, <a href="/produkt/zebra-zd421t">Zebra ZD421t</a> od 1 673 zł (bez Ethernet), <a href="/produkt/honeywell-pc45t">Honeywell PC45t</a> od ~2 000 zł.',
+        answer: 'CL-E321 w wersji czarnej bez obcinarki (CLE321XEBXXX) kosztuje od 1 410 zł netto. Wersja z obcinarką (CLE321XEBXCX) od 1 887 zł netto. Biały wariant (CLE321XEWXXX) od 1 410 zł netto. Dla porównania: <a href="/produkt/citizen-cl-e300">CL-E300</a> (DT only) od 1 133 zł, <a href="/produkt/zebra-zd421t">Zebra ZD421t</a> od 1 649 zł (bez Ethernet), <a href="/produkt/honeywell-pc45t">Honeywell PC45t</a> od 2 159 zł.',
       },
       {
         question: 'Jaka jest gwarancja na Citizen CL-E321?',
@@ -5798,7 +5798,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E321 (źródło: 
       },
       {
         question: 'Jakie są alternatywy dla Citizen CL-E321?',
-        answer: 'W kategorii <a href="/biurkowe-drukarki-etykiet">biurkowych drukarek termotransferowych 4"</a>: <a href="/produkt/zebra-zd421t">Zebra ZD421t</a> (od 1 673 zł, MCS, Link-OS), <a href="/produkt/honeywell-pc45t">Honeywell PC45t</a> (od ~2 000 zł, LCD, Wi-Fi 6), <a href="/produkt/zebra-zd621t">Zebra ZD621t</a> (od 2 700 zł, LCD 2,3", premium). CL-E321 to najlepsza opcja, gdy potrzebujesz Ethernet w standardzie, Cross-Emulation i niskiej ceny zakupu.',
+        answer: 'W kategorii <a href="/biurkowe-drukarki-etykiet">biurkowych drukarek termotransferowych 4"</a>: <a href="/produkt/zebra-zd421t">Zebra ZD421t</a> (od 1 649 zł, MCS, Link-OS), <a href="/produkt/honeywell-pc45t">Honeywell PC45t</a> (od 2 159 zł, LCD, Wi-Fi 6), <a href="/produkt/zebra-zd621t">Zebra ZD621t</a> (od 2 700 zł, LCD 2,3", premium). CL-E321 to najlepsza opcja, gdy potrzebujesz Ethernet w standardzie, Cross-Emulation i niskiej ceny zakupu.',
       },
     ],
     comparison: {
@@ -5831,10 +5831,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E321 (źródło: 
             'Interfejsy w standardzie': 'USB + BT LE',
             'Emulacja ZPL': 'Natywny ZPL II',
             'Pamięć Flash': '512 MB',
-            'Waga': '1,90 kg',
+            'Waga': '1,59 kg',
             'Gwarancja': '3 lata',
             'ENERGY STAR': 'Nie',
-            'Cena od': '1 673 zł',
+            'Cena od': '1 649 zł',
           },
         },
         {
@@ -5850,7 +5850,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E321 (źródło: 
             'Waga': '3,0 kg',
             'Gwarancja': '2 lata',
             'ENERGY STAR': 'Nie',
-            'Cena od': '~2 000 zł',
+            'Cena od': '2 159 zł',
           },
         },
       ],
