@@ -2171,6 +2171,7 @@ export const guides: Guide[] = [
     { title: 'Zebra EM45 RFID', href: '/produkt/zebra-em45' },
     { title: 'Zebra TC501 RFID', href: '/produkt/zebra-tc501' },
     { title: 'Jak wybrać drukarkę etykiet', href: '/poradnik/jak-wybrac-drukarke-etykiet' },
+    { title: 'Zebra OneCare — kontrakt serwisowy', href: '/poradnik/zebra-onecare-kontrakt-serwisowy' },
     { title: 'Drukarki mobilne', href: '/mobilne-drukarki-etykiet' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]
@@ -2829,6 +2830,7 @@ export const guides: Guide[] = [
     { title: 'M3 Mobile US30 — keyboard gun, skanery Zebry', href: '/produkt/m3-mobile-us30' },
     { title: 'Zebra MC9400 — ultra-wytrzymały', href: '/produkt/zebra-mc9400' },
     { title: 'Honeywell CT47 — FlexRange XLR 24 m', href: '/produkt/honeywell-ct47' },
+    { title: 'Zebra OneCare — kontrakt serwisowy', href: '/poradnik/zebra-onecare-kontrakt-serwisowy' },
     { title: 'Wszystkie terminale mobilne', href: '/terminale-mobilne' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]
@@ -3227,6 +3229,7 @@ export const guides: Guide[] = [
     { title: 'Honeywell CT70 — premium Wi-Fi 7', href: '/produkt/honeywell-ct70' },
     { title: 'Jak wybrać terminal mobilny — poradnik', href: '/poradnik/jak-wybrac-terminal-mobilny' },
     { title: 'TOP 10 terminali mobilnych 2026', href: '/poradnik/top-10-terminali-mobilnych-2026' },
+    { title: 'Zebra OneCare — kontrakt serwisowy', href: '/poradnik/zebra-onecare-kontrakt-serwisowy' },
     { title: 'Wszystkie terminale mobilne', href: '/terminale-mobilne' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]
@@ -9823,10 +9826,10 @@ export const guides: Guide[] = [
 <tr><th>Urządzenie</th><th>Cena urządzenia (netto)</th><th>Essential 3 lata</th><th>Essential 5 lat</th><th>% ceny (3 lata)</th><th>Part Number (3 lata)</th></tr>
 </thead>
 <tbody>
-<tr><td><strong><a href="/produkt/zebra-tc22">Zebra TC22</a></strong></td><td>2 491,87 zł</td><td><strong>1 025,02 zł</strong></td><td>1 708,39 zł</td><td>41%</td><td>Z1AE-TC22XX-3C00</td></tr>
-<tr><td><strong><a href="/produkt/zebra-tc27">Zebra TC27</a></strong></td><td>2 216,26 zł</td><td><strong>1 040,30 zł</strong></td><td>1 733,86 zł</td><td>47%</td><td>Z1AE-TC27XX-3C00</td></tr>
-<tr><td><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a></strong></td><td>4 628,91 zł</td><td><strong>1 156,42 zł</strong></td><td>1 927,35 zł</td><td>25%</td><td>Z1AE-MC34XX-3C00</td></tr>
-<tr><td><strong><a href="/produkt/zebra-mc9400">Zebra MC9400</a></strong></td><td>6 302,49 zł</td><td><strong>1 513,85 zł</strong></td><td>2 523,04 zł</td><td>24%</td><td>Z1AE-MC93XX-3C00</td></tr>
+<tr><td><strong><a href="/produkt/zebra-tc22">Zebra TC22</a></strong></td><td><span data-live-price="zebra-tc22">2 491,87</span> zł</td><td><strong>1 025,02 zł</strong></td><td>1 708,39 zł</td><td>41%</td><td>Z1AE-TC22XX-3C00</td></tr>
+<tr><td><strong><a href="/produkt/zebra-tc27">Zebra TC27</a></strong></td><td><span data-live-price="zebra-tc27">2 216,26</span> zł</td><td><strong>1 040,30 zł</strong></td><td>1 733,86 zł</td><td>47%</td><td>Z1AE-TC27XX-3C00</td></tr>
+<tr><td><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a></strong></td><td><span data-live-price="zebra-mc3400">4 628,91</span> zł</td><td><strong>1 156,42 zł</strong></td><td>1 927,35 zł</td><td>25%</td><td>Z1AE-MC34XX-3C00</td></tr>
+<tr><td><strong><a href="/produkt/zebra-mc9400">Zebra MC9400</a></strong></td><td><span data-live-price="zebra-mc9400">6 302,49</span> zł</td><td><strong>1 513,85 zł</strong></td><td>2 523,04 zł</td><td>24%</td><td>Z1AE-MC93XX-3C00</td></tr>
 </tbody>
 </table>
 
@@ -9955,6 +9958,42 @@ export const guides: Guide[] = [
 <p>Przy terminalach mobilnych i skanerach takiej możliwości nie ma — Zebra nie udostępnia części do tych urządzeń zewnętrznym serwisom. Dlatego jedyną opcją jest kontrakt OneCare lub naprawa bezpośrednio w Zebra Repair Center.</p>
 
 <p>Potrzebujesz naprawy drukarki Zebra? <a href="/serwis">Sprawdź nasz serwis</a> lub napisz bezpośrednio do <a href="https://www.serwis-zebry.pl/kontakt">serwis-zebry.pl</a>.</p>`
+    },
+    {
+      id: 'wdrozenie',
+      heading: 'Jak zamówić kontrakt OneCare — krok po kroku',
+      content: `<p>Proces zamówienia kontraktu OneCare przez TAKMA:</p>
+
+<h3>Krok 1: Wybór terminala i wariantu OneCare</h3>
+
+<p>Określ model terminala (<a href="/produkt/zebra-tc22">TC22</a>, <a href="/produkt/zebra-tc27">TC27</a>, <a href="/produkt/zebra-mc3400">MC3400</a>, <a href="/produkt/zebra-mc9400">MC9400</a>) oraz wariant kontraktu (Essential lub Select) i okres (3 lub 5 lat). Dla większości zastosowań rekomendujemy Essential 3 lata.</p>
+
+<h3>Krok 2: Wycena i zamówienie</h3>
+
+<p><a href="/kontakt">Skontaktuj się z TAKMA</a> — przygotujemy wycenę terminala z kontraktem OneCare w ciągu 24 godzin. Przy flotach 5+ urządzeń dostępne są ceny projektowe.</p>
+
+<h3>Krok 3: Aktywacja kontraktu</h3>
+
+<p>Kontrakt OneCare aktywuje się automatycznie po rejestracji urządzenia w systemie Zebra. Ważne: kontrakt należy zamówić w ciągu 30 dni od daty zakupu terminala — po tym terminie nie ma możliwości zawarcia umowy.</p>
+
+<h3>Krok 4: Korzystanie z serwisu</h3>
+
+<p>W przypadku awarii lub uszkodzenia zgłoś naprawę przez portal Zebra Repair Order. Urządzenie wysyłasz do Zebra Repair Center — w ramach Essential naprawa trwa do 3 dni roboczych, w Select otrzymujesz urządzenie zastępcze next-business-day.</p>`
+    },
+    {
+      id: 'zrodla',
+      heading: 'Źródła i metodologia',
+      content: `<p>Dane wykorzystane w artykule pochodzą z następujących źródeł:</p>
+
+<ul>
+<li><strong>Ceny terminali</strong> — aktualne ceny netto ze sklepu <a href="/">takma.com.pl</a> (marzec 2026)</li>
+<li><strong>Ceny kontraktów OneCare</strong> — ceny netto z oferty dystrybutorów (Ingram Micro, BlueStar) z marżą TAKMA</li>
+<li><strong>Szacunki kosztów napraw</strong> — na podstawie wieloletniego doświadczenia serwisowego TAKMA (<a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>)</li>
+<li><strong>Specyfikacja programu OneCare</strong> — oficjalna dokumentacja Zebra Technologies: <a href="https://www.zebra.com/us/en/services/zebra-onecare-support-services.html" rel="noopener" target="_blank">Zebra OneCare Support Services</a></li>
+<li><strong>LifeGuard for Android</strong> — <a href="https://www.zebra.com/us/en/software/lifeguard-for-android.html" rel="noopener" target="_blank">Zebra LifeGuard for Android</a></li>
+</ul>
+
+<p>Ceny i dostępność mogą ulec zmianie. Artykuł aktualizowany na bieżąco — ostatnia aktualizacja: marzec 2026.</p>`
     },
     {
       id: 'podsumowanie',
