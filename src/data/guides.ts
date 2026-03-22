@@ -9740,7 +9740,7 @@ export const guides: Guide[] = [
     {
       id: 'wprowadzenie',
       heading: 'Kontrakty serwisowe Zebra OneCare — wprowadzenie',
-      content: `<p><strong>Zebra OneCare to program wsparcia serwisowego producenta — obejmuje naprawy sprzętowe, wsparcie techniczne, aktualizacje oprogramowania i (w zależności od wariantu) pokrycie uszkodzeń przypadkowych. Standardowa gwarancja trwa 12 miesięcy i nie obejmuje uszkodzeń mechanicznych, a naprawa poza kontraktem oznacza wysyłkę za granicę z czasem realizacji 3–6 tygodni.</strong></p>
+      content: `<p>Zebra OneCare to program wsparcia serwisowego producenta — obejmuje naprawy sprzętowe, wsparcie techniczne, aktualizacje oprogramowania i (w zależności od wariantu) pokrycie uszkodzeń przypadkowych. Standardowa gwarancja trwa 12 miesięcy i nie obejmuje uszkodzeń mechanicznych, a naprawa poza kontraktem oznacza wysyłkę za granicę z czasem realizacji 3–6 tygodni.</p>
 
 <p><strong>Kluczowe rozróżnienie:</strong> przy drukarkach Zebra istnieje alternatywa — autoryzowany serwis lokalny (<a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>). Przy terminalach mobilnych i skanerach takiej alternatywy nie ma — Zebra nie udostępnia części zamiennych zewnętrznym serwisom.</p>`
     },
