@@ -9729,7 +9729,7 @@ export const guides: Guide[] = [
   slug: 'zebra-onecare-kontrakt-serwisowy',
   title: 'Zebra OneCare — kontrakt serwisowy: zakres, koszty i opłacalność',
   seoTitle: 'Zebra OneCare — kontrakt serwisowy: ceny i warianty 2026',
-  seoDescription: 'Zebra OneCare — zakres, koszty, opłacalność. Ceny Essential na terminale TC22, TC27, MC3400, MC9400. Kontrakt serwisowy Zebra, pakiet serwisowy.',
+  seoDescription: 'Zebra OneCare Essential — ceny kontraktów na TC22, TC27, MC3400, MC9400. Porównanie wariantów SV, Essential i Select, analiza opłacalności i ograniczenia. Sprawdź, zanim kupisz terminal.',
   excerpt: 'Przy terminalach mobilnych Zebra nie istnieje alternatywa serwisowa — kontrakt OneCare jest niezbędny. Przy drukarkach etykiet serwis TAKMA oferuje naprawy szybciej i korzystniej cenowo.',
   category: 'poradnik' as const,
   tags: ['onecare', 'serwis', 'kontrakt-serwisowy', 'terminale', 'gwarancja', 'zebra'],
@@ -10031,6 +10031,22 @@ export const guides: Guide[] = [
     {
       question: 'Jak odczytać Part Number kontraktu OneCare?',
       answer: 'Schemat: Z1A[wariant]-[seria]-[okres]C00. Wariant: E = Essential, S = Select, V = SV. Seria: np. TC22XX (TC22), MC93XX (MC9400), ZD4X1 (ZD421). Okres: 3 = 3 lata, 5 = 5 lat. Przykład: Z1AE-TC22XX-3C00 = OneCare Essential na TC22, 3 lata. Prefix Z1RE- oznacza odnowienie istniejącego kontraktu.',
+    },
+    {
+      question: 'Gdzie naprawić terminal Zebra w Polsce?',
+      answer: 'Terminale mobilne Zebra (TC22, TC27, MC3400, MC9400) mogą być naprawiane wyłącznie w autoryzowanych centrach serwisowych Zebra — w Polsce brak takiego centrum, urządzenia wysyłane są do Zebra Repair Center w Europie (czas realizacji 3-6 tygodni). Zebra nie udostępnia części zamiennych do terminali zewnętrznym serwisom. Jedyną alternatywą zapewniającą szybką naprawę jest kontrakt OneCare Essential (3 dni robocze) lub Select (wymiana next-business-day). Drukarki etykiet Zebra można naprawić lokalnie w serwis-zebry.pl (3-7 dni roboczych).',
+    },
+    {
+      question: 'Czy można kupić OneCare po roku od zakupu terminala?',
+      answer: 'Nie — kontrakt OneCare należy wykupić w ciągu 30 dni od daty zakupu urządzenia. Po upływie tego terminu nie ma możliwości zawarcia nowego kontraktu. To oznacza, że decyzję o OneCare trzeba podjąć przy zakupie terminala. Odnowienie (Part Number Z1RE-...) dotyczy wyłącznie przedłużenia istniejącego, aktywnego kontraktu przed jego wygaśnięciem.',
+    },
+    {
+      question: 'Ile kosztuje naprawa terminala Zebra bez OneCare?',
+      answer: 'Szacunkowe koszty napraw terminali Zebra poza kontraktem OneCare: wymiana ekranu TC22/TC27 — 800-2 000 zł, naprawa płyty głównej MC3400/MC9400 — 3 000-5 000 zł, wymiana portu ładowania — 500-1 200 zł, wymiana skanera — 1 500-3 000 zł. Do kosztu naprawy dochodzi czas przestoju (3-6 tygodni). Dla porównania: kontrakt OneCare Essential na TC22 kosztuje 1 025 zł za 3 lata i pokrywa wszystkie te naprawy.',
+    },
+    {
+      question: 'Czy OneCare obejmuje aktualizacje Androida?',
+      answer: 'Tak — każdy wariant OneCare (SV, Essential, Select) zapewnia dostęp do programu LifeGuard for Android, który dostarcza aktualizacje bezpieczeństwa systemu Android na terminale Zebra po zakończeniu oficjalnego wsparcia Google. Bez aktywnego kontraktu OneCare (lub osobnej subskrypcji TSS) terminale nie otrzymują poprawek zabezpieczeń — istotne ryzyko dla organizacji przetwarzających dane osobowe w kontekście RODO.',
     },
   ],
   relatedLinks: [
