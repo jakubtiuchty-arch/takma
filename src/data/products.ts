@@ -14928,7 +14928,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-20II (źródło:
     downloads: [
       { name: 'Karta katalogowa CMP-20II (PL)', type: 'datasheet', url: '/downloads/datasheet-cmp-20ii-pl.pdf', size: '1,3 MB' },
     ],
-    relatedProducts: ['citizen-cmp-25l', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq210'],
+    relatedProducts: ['citizen-cmp-25l', 'zebra-zq310-plus', 'honeywell-rp2f', 'zebra-zq210'],
     createdAt: '2026-03-22',
     sameAs: 'https://www.citizen-systems.com/en/products/printer/mobile/cmp-20ii',
   },
@@ -14940,7 +14940,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-20II (źródło:
     name: 'Citizen CMP-25L',
     shortDescription: 'Citizen CMP-25L — mobilna drukarka 2" z LCD, 127 mm/s, Bluetooth/Wi-Fi, ZPL II + ESC/POS, IP42, 580 g',
     seoTitle: 'Citizen CMP-25L — mobilna drukarka 2" z LCD i Wi-Fi | od 2 265 zł',
-    seoDescription: 'Citizen CMP-25L — mobilna drukarka paragonów i etykiet 2" z podświetlanym LCD, Bluetooth 4.2 (Apple MFi) lub Wi-Fi 802.11a/b/g/n. Prędkość 127 mm/s (5 ips), 203 dpi, bateria 2600 mAh, IP42, 580 g, emulacja ZPL II + ESC/POS + CPCL. Drukarka mobilna Citizen CMP-25L, CMP-25L Citizen. Zamów w TAKMA, partner Citizen. PN: CMP25XUXZL (USB), CMP25BUXZL (Bluetooth), CMP25WUXZL (Wi-Fi).',
+    seoDescription: 'Citizen CMP-25L — mobilna drukarka paragonów i etykiet 2" z podświetlanym LCD, Bluetooth 4.2 (Apple MFi) lub Wi-Fi 802.11a/b/g/n. Prędkość 127 mm/s (5 ips), 203 dpi, bateria 2600 mAh, IP42, 580 g, emulacja ZPL II + ESC/POS + CPCL. Drukarka mobilna Citizen CMP-25L do paragonów, etykiet i biletów w terenie. Zamów w TAKMA, partner Citizen. PN: CMP25XUXZL (USB), CMP25BUXZL (Bluetooth), CMP25WUXZL (Wi-Fi).',
     description: `**Citizen CMP-25L — mobilna drukarka paragonów i etykiet 2" z podświetlanym wyświetlaczem LCD 128x64, prędkością 127 mm/s (5 ips), emulacją ZPL II + ESC/POS + CPCL, baterią 2600 mAh i ochroną IP42. Od 2 265 zł netto.**
 
 Dla kogo? Citizen CMP-25L to [mobilna drukarka](/mobilne-drukarki-etykiet) paragonów, biletów i etykiet zaprojektowana dla kurierów, serwisantów, kierowców dostawczych, kelnerów i operatorów parkingów — wszędzie tam, gdzie potrzebny jest szybki wydruk w terenie. W porównaniu z [CMP-20II](/produkt/citizen-cmp-20ii) (80 mm/s, 442 g) oferuje wyższą prędkość 127 mm/s, pojemniejszą baterię 2600 mAh i podświetlany wyświetlacz LCD do monitorowania stanu drukarki. Waga 580 g i wymiary 100 x 158 x 85 mm pozwalają nosić drukarkę na pasku z klipem w zestawie.
@@ -14949,7 +14949,7 @@ Kluczową przewagą CMP-25L jest wyświetlacz LCD 128x64 pikseli z podświetleni
 
 Szacunkowy TCO na 2 lata (200 paragonów/dzień, 250 dni/rok): drukarka od 2 265 zł + rolki 58 mm ~3 zł/rolka x ~500 rolek/rok x 2 = ~3 000 zł + bateria zapasowa (~250 zł) = ok. 5 515 zł. Dla porównania: [CMP-20II](/produkt/citizen-cmp-20ii) od 1 116 zł (niższa cena, ale wolniejsza 80 mm/s i mniejsza bateria), [Zebra ZQ310 Plus](/produkt/zebra-zq310-plus) od 1 496 zł (IP54, Print DNA), [Honeywell RP2f](/produkt/honeywell-rp2f) od 2 694 zł (premium, hot-swap baterii).
 
-Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-25L (źródło: [karta katalogowa PDF](/downloads/datasheet-cmp-25l-pl.pdf), marzec 2026).`,
+TAKMA jest partnerem Citizen w Polsce — oferujemy doradztwo, konfigurację i serwis. Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-25L (źródło: [karta katalogowa PDF](/downloads/datasheet-cmp-25l-pl.pdf), marzec 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'citizen',
@@ -14998,7 +14998,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-25L (źródło: 
       { name: 'Interfejs szeregowy', value: 'RS-232' },
       { name: 'Bluetooth', value: 'Bluetooth 4.2 + Apple MFi (wariant CMP25BUXZL)' },
       { name: 'Wi-Fi', value: '802.11a/b/g/n (wariant CMP25WUXZL)' },
-      { name: 'Emulacja', value: 'ESC/POS, CPCL, Zebra ZPL II' },
+      { name: 'Języki programowania', value: 'ESC/POS, CPCL, Zebra ZPL II' },
+      { name: 'Interfejsy', value: 'USB 2.0, RS-232, Bluetooth 4.2 (wariant), Wi-Fi 802.11a/b/g/n (wariant)' },
       { name: 'Kompatybilność OS', value: 'Windows, iOS (Apple MFi), Android, Linux' },
       { name: 'Bateria', value: 'Li-Ion 7,4 V / 2600 mAh (wymienna)' },
       { name: 'Czas pracy na baterii', value: 'do 48h (standby + druk)' },
@@ -15006,7 +15007,9 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-25L (źródło: 
       { name: 'Klasa ochrony (IP)', value: 'IP42' },
       { name: 'Odporność na upadki', value: '1,5 m na beton (testowane do 1,8 m)' },
       { name: 'Wymiary (szer. x gł. x wys.)', value: '100 x 158 x 85 mm' },
-      { name: 'Waga', value: '580 g (z baterią, bez papieru)' },
+      { name: 'Waga z baterią', value: '580 g (z baterią, bez papieru)' },
+      { name: 'Temperatura pracy', value: '-10°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-20°C do +60°C' },
       { name: 'Certyfikaty', value: 'CE, FCC, Apple MFi' },
       { name: 'Gwarancja', value: '2 lata (drukarka), 1 rok (bateria)' },
     ],
@@ -15153,13 +15156,31 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-25L (źródło: 
             'Cena od': '1 496 zł',
           },
         },
+        {
+          name: 'RP2f',
+          slug: 'honeywell-rp2f',
+          specs: {
+            'Szerokość druku': '48 mm (2")',
+            'Prędkość': '127 mm/s',
+            'Rozdzielczość': '203 dpi',
+            'LCD': '—',
+            'Bluetooth': 'BT 5.0 + MFi',
+            'Wi-Fi': 'Tak (ac)',
+            'IP': 'IP54',
+            'Upadek': '2 m',
+            'Bateria': '2800 mAh',
+            'Waga': '350 g',
+            'Gwarancja': '1 rok',
+            'Cena od': '2 694 zł',
+          },
+        },
       ],
     },
     downloads: [
       { name: 'Karta katalogowa CMP-25L (PL)', type: 'datasheet', url: '/downloads/datasheet-cmp-25l-pl.pdf', size: '5,0 MB' },
       { name: 'Instrukcja obsługi CMP-25L (EN)', type: 'manual', url: '/downloads/instrukcja-cmp-25l-en.pdf', size: '8,0 MB' },
     ],
-    relatedProducts: ['citizen-cmp-20ii', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq210'],
+    relatedProducts: ['citizen-cmp-20ii', 'zebra-zq310-plus', 'honeywell-rp2f', 'zebra-zq210'],
     createdAt: '2026-03-22',
     sameAs: 'https://www.citizen-systems.com/en/products/printer/mobile/cmp-25l',
   },
