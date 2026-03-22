@@ -8627,7 +8627,7 @@ Ethernet 10/100 w standardzie umożliwia integrację z siecią firmową bez doda
 
 TCO na 3 lata: drukarka od 3 179 zł + głowice (~200–300 USD vs ~350–500 USD za Zebra ZT231) + [taśmy termotransferowe](/tasmy-termotransferowe) 360 m × 74 mm. Przy 5 000 etykiet/dzień CL-E720 oferuje niższy koszt eksploatacji niż [Zebra ZT231](/produkt/zebra-zt231) (od 3 551 zł) dzięki tańszym głowicom i certyfikatowi ENERGY STAR (pobór 2,6 W w standby). Tańsza alternatywa: [Zebra ZT111](/produkt/zebra-zt111) (od 2 179 zł) — bez ekranu LCD i Cross-Emulation. Więcej [drukarek półprzemysłowych](/przemyslowe-drukarki-etykiet) w ofercie TAKMA.
 
-Specyfikacja techniczna na podstawie oficjalnej dokumentacji producenta: <a href="https://www.citizen-systems.com/eu/en/label-printers/cl-e720" rel="noopener" target="_blank">Citizen CL-E720</a>.`,
+Specyfikacja techniczna na podstawie oficjalnej [karty katalogowej CL-E720](/downloads/datasheet-cl-e720-pl.pdf).`,
     specifications: [
       { name: 'Metoda druku', value: 'Termotransferowa (TT) + Termiczna (DT)' },
       { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm)' },
@@ -8744,7 +8744,7 @@ Dla kogo? Dla firm drukujących wyłącznie etykiety termiczne (wysyłkowe, kuri
 
 Cross-Emulation automatycznie rozpoznaje strumień ZPL II lub DMX i przełącza emulację bez konfiguracji — migracja z Zebry lub Datamaxu jest bezproblemowa. Ethernet 10/100 w standardzie z wbudowanym LinkServer do zarządzania przez przeglądarkę.
 
-Specyfikacja techniczna na podstawie oficjalnej dokumentacji producenta: <a href="https://www.citizen-systems.com/eu/en/label-printers/cl-e720dt" rel="noopener" target="_blank">Citizen CL-E720DT</a>.`,
+Specyfikacja techniczna na podstawie oficjalnej [karty katalogowej CL-E720DT](/downloads/datasheet-cl-e720dt-pl.pdf).`,
     specifications: [
       { name: 'Metoda druku', value: 'Termiczna bezpośrednia (Direct Thermal)' },
       { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm)' },
