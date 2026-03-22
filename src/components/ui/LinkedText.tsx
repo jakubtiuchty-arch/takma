@@ -16,7 +16,28 @@ function BoldText({ text }: { text: string }) {
   )
 }
 
-/** Renders text with markdown-style links [text](/url) and **bold** */
+/** Renders text with inline HTML <a> links as React components */
+function HtmlLinkText({ text }: { text: string }) {
+  const parts = text.split(/(<a\s[^>]*>.*?<\/a>)/gi)
+  return (
+    <>
+      {parts.map((part, i) => {
+        const htmlMatch = part.match(/^<a\s[^>]*href="([^"]*)"[^>]*>(.*?)<\/a>$/i)
+        if (htmlMatch) {
+          const [, href, label] = htmlMatch
+          const isExternal = href.startsWith('http')
+          if (isExternal) {
+            return <a key={i} href={href} target="_blank" rel="noopener" className="text-primary-600 hover:text-primary-800 underline decoration-primary-300">{label}</a>
+          }
+          return <Link key={i} href={href} className="text-primary-600 hover:text-primary-800 underline decoration-primary-300">{label}</Link>
+        }
+        return <BoldText key={i} text={part} />
+      })}
+    </>
+  )
+}
+
+/** Renders text with markdown-style links [text](/url), HTML <a> links, and **bold** */
 export default function LinkedText({ text }: { text: string }) {
   const parts = text.split(/(\[[^\]]+\]\([^)]+\))/)
   return (
@@ -31,7 +52,7 @@ export default function LinkedText({ text }: { text: string }) {
           }
           return <Link key={i} href={href} className="text-primary-600 hover:text-primary-800 underline decoration-primary-300">{label}</Link>
         }
-        return <BoldText key={i} text={part} />
+        return <HtmlLinkText key={i} text={part} />
       })}
     </>
   )

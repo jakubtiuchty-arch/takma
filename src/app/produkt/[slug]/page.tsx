@@ -256,19 +256,38 @@ export default async function ProductPage({ params }: ProductPageProps) {
             priceCurrency: 'PLN',
             offerCount: product.variants.length,
             availability: availabilitySchemaMap[product.availability],
-            offers: product.variants.filter((v) => v.priceFrom && v.priceFrom > 0).map((v) => ({
-              '@type': 'Offer',
-              url: `https://www.takma.com.pl/produkt/${product.slug}`,
-              sku: v.partNumber,
-              mpn: v.partNumber,
-              name: `${product.name} — ${v.name}`,
-              price: v.priceFrom!.toFixed(2),
-              priceCurrency: 'PLN',
-              availability: availabilitySchemaMap[v.availability],
-              itemCondition: 'https://schema.org/NewCondition',
-              priceValidUntil,
-              seller: sellerOrg,
-            })),
+            offers: (() => {
+              const variantsWithPrice = product.variants!.filter((v) => v.priceFrom && v.priceFrom > 0)
+              if (variantsWithPrice.length > 0) {
+                return variantsWithPrice.map((v) => ({
+                  '@type': 'Offer' as const,
+                  url: `https://www.takma.com.pl/produkt/${product.slug}`,
+                  sku: v.partNumber,
+                  mpn: v.partNumber,
+                  name: `${product.name} — ${v.name}`,
+                  price: v.priceFrom!.toFixed(2),
+                  priceCurrency: 'PLN',
+                  availability: availabilitySchemaMap[v.availability],
+                  itemCondition: 'https://schema.org/NewCondition',
+                  priceValidUntil,
+                  seller: sellerOrg,
+                }))
+              }
+              // Fallback: variants without individual prices — use product-level priceFrom
+              return product.variants!.map((v) => ({
+                '@type': 'Offer' as const,
+                url: `https://www.takma.com.pl/produkt/${product.slug}`,
+                sku: v.partNumber,
+                mpn: v.partNumber,
+                name: `${product.name} — ${v.name}`,
+                price: product.priceFrom!.toFixed(2),
+                priceCurrency: 'PLN',
+                availability: availabilitySchemaMap[v.availability],
+                itemCondition: 'https://schema.org/NewCondition',
+                priceValidUntil,
+                seller: sellerOrg,
+              }))
+            })(),
           }
           })()
         : {
