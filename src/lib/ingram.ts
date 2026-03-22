@@ -118,8 +118,8 @@ function extractAttribute(xml: string, tag: string, attr: string): string | null
 function toIngramItemId(partNumber: string): string {
   const upper = partNumber.toUpperCase()
   if (upper.startsWith('ZB') || upper.startsWith('SB') || upper.startsWith('N1') || upper.startsWith('ON') || upper.startsWith('DT') || upper.startsWith('DI') || upper.startsWith('CZ')) return upper
-  // Citizen products (printers CL-E*, CL-S*, CT-S*, CX*)
-  if (upper.startsWith('CL') || upper.startsWith('CT-S') || upper.startsWith('CX')) return 'CZ' + upper
+  // Citizen products (printers CL-E*, CL-S*, CT-S*, CX*, numeric 1000xxx/2000xxx)
+  if (upper.startsWith('CL') || upper.startsWith('CT-S') || upper.startsWith('CX') || upper.startsWith('1000') || upper.startsWith('2000')) return 'CZ' + upper
   // Brother products (printers TD*, accessories PA*)
   if (upper.startsWith('TD') || upper.startsWith('PA')) return 'DI' + upper
   // Datalogic products (terminals/scanners 94xxxx, 99xxxx)
