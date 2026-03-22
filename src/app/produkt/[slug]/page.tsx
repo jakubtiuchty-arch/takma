@@ -78,7 +78,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     title,
     description: metaDescription,
     openGraph: {
-      title: product.name,
+      title: title,
       description: smartTruncate(ogDescription, 200),
       locale: 'pl_PL',
       siteName: 'TAKMA',
@@ -87,7 +87,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     },
     twitter: {
       card: 'summary_large_image',
-      title: product.name,
+      title: title,
       description: metaDescription,
       images: ogImage ? [ogImage] : undefined,
     },
