@@ -8839,7 +8839,7 @@ Specyfikacja techniczna na podstawie oficjalnej [karty katalogowej CL-E720DT](/d
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     shortDescription: 'Citizen CL-E730 — półprzemysłowa drukarka etykiet 4" termotransferowa 300 dpi z Cross-Emulation ZPL/DMX, ARCP, Ethernet w standardzie, metalowa obudowa Hi-Open',
     seoTitle: 'Citizen CL-E730 — drukarka etykiet 300 dpi półprzemysłowa | od 3 507 zł',
-    seoDescription: 'Citizen CL-E730 — półprzemysłowa drukarka etykiet 4" termotransferowa 300 dpi z Cross-Emulation ZPL/DMX, ARCP, USB + Ethernet, metalowa obudowa Hi-Open, ENERGY STAR. Drukarka Citizen CL-E730, CL-E730 Citizen, drukarka półprzemysłowa 300 dpi. Od 3 507 zł netto. PN: 1000854.',
+    seoDescription: 'Citizen CL-E730 — półprzemysłowa drukarka etykiet 4" termotransferowa 300 dpi z Cross-Emulation ZPL/DMX, ARCP, USB + Ethernet, ENERGY STAR. Od 3 507 zł netto. Zamów z dostawą lub zapytaj o konfigurację — TAKMA, partner Citizen w Polsce. PN: 1000854.',
     priceFrom: 3507.11,
     availability: 'unavailable',
     images: ['/images/products/1000854.png', '/images/products/1000854-open.png', '/images/products/1000854-front.png', '/images/products/1000854-back.png'],
@@ -8858,7 +8858,9 @@ Dla kogo? Dla firm potrzebujących wyraźnych, drobnych kodów kreskowych i teks
 
 **ARCP (Automatic Ribbon Calibration & Positioning)** — unikalna technologia Citizen automatycznie regulująca naciąg taśmy, eliminująca marszczenie nawet na wąskich etykietach. W połączeniu z [drukiem termotransferowym](/poradnik/drukarka-termiczna-vs-termotransferowa) zapewnia trwałe etykiety odporne na ciepło, wilgoć i UV.
 
-Cross-Emulation automatycznie rozpoznaje strumień ZPL II lub DMX i przełącza emulację bez konfiguracji — migracja z Zebry lub Datamaxu jest bezproblemowa. Ethernet 10/100 w standardzie z wbudowanym LinkServer do zarządzania przez przeglądarkę. Szukasz [wersji 203 dpi z wyższą prędkością?](/produkt/citizen-cl-e720) — model CL-E720 drukuje z prędkością 200 mm/s.
+Cross-Emulation automatycznie rozpoznaje strumień ZPL II lub DMX i przełącza emulację bez konfiguracji — migracja z Zebry lub Datamaxu jest bezproblemowa. Ethernet 10/100 w standardzie z wbudowanym LinkServer do zarządzania przez przeglądarkę. Certyfikat ENERGY STAR — pobór zaledwie 2,9 W w standby (najniższy w klasie półprzemysłowej). Szukasz [wersji 203 dpi z wyższą prędkością?](/produkt/citizen-cl-e720) — model CL-E720 drukuje z prędkością 200 mm/s.
+
+**Niższy TCO niż Zebra w klasie 300 dpi.** Głowica 300 dpi do CL-E730 (PPM80016-00) kosztuje ok. 250–350 USD — wyraźnie taniej niż porównywalna głowica Zebra 300 dpi (400–550 USD). Przy wymianie głowicy co 50 km wydruku oszczędzasz 150–200 USD na każdej głowicy. Dodaj do tego niższy pobór energii (ENERGY STAR) i [tańsze taśmy termotransferowe](/materialy-eksploatacyjne) — CL-E730 oferuje jeden z najniższych kosztów posiadania w segmencie półprzemysłowych drukarek 300 dpi.
 
 Specyfikacja techniczna na podstawie oficjalnej [karty katalogowej CL-E730](/downloads/datasheet-cl-e730-pl.pdf).`,
     specifications: [
@@ -8928,6 +8930,8 @@ Specyfikacja techniczna na podstawie oficjalnej [karty katalogowej CL-E730](/dow
       { question: 'Jaka jest gwarancja na Citizen CL-E730?', answer: 'Gwarancja drukarki: 24 miesiące. Gwarancja głowicy drukującej: 6 miesięcy lub 50 km wydruku. MCBF: 500 km lub 5 lat. Certyfikaty: CE, TUV, UL, ENERGY STAR. Serwis gwarancyjny i pogwarancyjny: TAKMA (<a href="/serwis">strona serwisowa</a>).' },
       { question: 'Kiedy wybrać CL-E730 (300 dpi) zamiast CL-E720 (203 dpi)?', answer: 'CL-E730 (300 dpi) gdy drukujesz: mikroetykiety, etykiety farmaceutyczne z GS1 DataMatrix, etykiety komponentów elektronicznych, biżuterię, kosmetyki — wszędzie gdzie liczy się ostrość drobnego tekstu i kodów 2D. <a href="/produkt/citizen-cl-e720">CL-E720</a> (203 dpi) gdy drukujesz etykiety logistyczne, wysyłkowe, paletowe — większe kody i tekst, wyższa prędkość (200 vs 150 mm/s).' },
       { question: 'Jakie są alternatywy dla Citizen CL-E730?', answer: 'W klasie półprzemysłowych 300 dpi 4": <a href="/produkt/citizen-cl-e720">Citizen CL-E720</a> (203 dpi, 200 mm/s, od 3 179 zł — gdy nie potrzebujesz 300 dpi), <a href="/produkt/zebra-zt231">Zebra ZT231</a> (300 dpi, 203 mm/s, od ~4 500 zł — szybsza z ekranem dotykowym), <a href="/produkt/tsc-mb341t">TSC MB341T</a> (300 dpi, 152 mm/s, od ~2 500 zł — budżetowa alternatywa). W wyższej klasie: <a href="/produkt/zebra-zt411">Zebra ZT411</a> (300 dpi, 356 mm/s, od ~7 000 zł).' },
+      { question: 'Czy Citizen CL-E730 jest nadal produkowany?', answer: 'Tak — Citizen CL-E730 jest aktualnie produkowany i dostępny w ofercie Citizen Systems Europe (stan na marzec 2026). Model jest częścią aktualnej linii CL-E700 (wraz z CL-E720 i CL-E720DT), certyfikowany ENERGY STAR, z pełnym wsparciem technicznym i gwarancją 24 miesiące. TAKMA oferuje CL-E730 z dostawą, konfiguracją i serwisem gwarancyjnym.' },
+      { question: 'Citizen CL-E730 vs TSC MB341T — która lepsza?', answer: 'CL-E730 (od 3 507 zł): metalowa obudowa Hi-Open, Cross-Emulation (auto ZPL/DMX), ARCP (antyzmarszczkowy ribbon), ENERGY STAR, Ethernet w standardzie, LCD graficzny. <a href="/produkt/tsc-mb341t">TSC MB341T</a> (od ~2 500 zł): tańsza, zbliżona prędkość (152 vs 150 mm/s), plastikowa obudowa, TSPL-EZ. CL-E730 dla firm migrujących z Zebry/Datamaxu (Cross-Emulation = zero zmian w WMS). MB341T jako budżetowa alternatywa 300 dpi bez wymogu kompatybilności ZPL.' },
     ],
     applications: [
       'Farmacja — etykiety z GS1 DataMatrix, drobny tekst składu',
