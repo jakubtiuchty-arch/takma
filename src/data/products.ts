@@ -14719,7 +14719,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową [Brother](https://www.brothe
     name: 'Citizen CMP-20II',
     shortDescription: 'Citizen CMP-20II — mobilna drukarka paragonów 2" z Bluetooth, USB, IP42, 442 g, emulacja ESC/POS + ZPL II',
     seoTitle: 'Citizen CMP-20II — mobilna drukarka paragonów 2" | od 1 116 zł',
-    seoDescription: 'Citizen CMP-20II — kompaktowa mobilna drukarka paragonów i biletów 2" z Bluetooth, USB, RS-232, IP42, 80 mm/s, 203 dpi, 442 g. Drukarka mobilna Citizen CMP-20II, Citizen CMP-20II cena, drukarka paragonowa mobilna 2 cale, CMP-20II Citizen. Emulacja ESC/POS, CPCL, ZPL II. Zamów z dostawą — TAKMA, partner Citizen. PN: CMP20IIXUXCX (USB), CMP20IIBUXCX (Bluetooth iOS).',
+    seoDescription: 'Citizen CMP-20II — mobilna drukarka paragonów i biletów 2" z Bluetooth (Apple MFi), USB i RS-232. Kompaktowa: 442 g, IP42, 80 mm/s, 203 dpi. Emulacja ESC/POS, CPCL i ZPL II — kompatybilna z systemami POS bez zmian szablonów. Od 1 116 zł netto. Zamów w TAKMA, partner Citizen. PN: CMP20IIXUXCX, CMP20IIBUXCX.',
     description: `**Citizen CMP-20II — kompaktowa mobilna drukarka paragonów i biletów 2" z Bluetooth, USB, RS-232, emulacją ESC/POS + CPCL + ZPL II, ochroną IP42, odpornością na upadki z 1,5 m i wagą zaledwie 442 g. Od 1 116 zł netto.**
 
 Dla kogo? Citizen CMP-20II to [mobilna drukarka](/mobilne-drukarki-etykiet) paragonów i biletów zaprojektowana dla kurierów, kelnerów, serwisantów w terenie, kierowców dostawczych i operatorów food trucków — wszędzie tam, gdzie potrzebny jest szybki wydruk paragonu, pokwitowania lub biletu w terenie bez stałego zasilania. Waga 442 g i wymiary 96 × 136 × 58 mm pozwalają nosić drukarkę na pasku lub w kieszeni kurtki. Bateria Li-Ion 1800 mAh zapewnia pracę przez cały dzień (300–500 paragonów na jednym ładowaniu).
@@ -14779,7 +14779,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-20II (źródło:
       { name: 'Czas pracy na baterii', value: '~48h (standby + druk), 300–500 paragonów/ładowanie' },
       { name: 'Czas ładowania', value: '~2 godziny' },
       { name: 'Zasilacz', value: 'AC 100–240 V, 50/60 Hz → 8,4 V / 1200 mA' },
-      { name: 'Klasa ochrony', value: 'IP42' },
+      { name: 'Klasa ochrony (IP)', value: 'IP42' },
       { name: 'Odporność na upadki', value: '1,5 m na beton (wielokrotnie)' },
       { name: 'Wymiary (szer. × gł. × wys.)', value: '96 × 136 × 58 mm' },
       { name: 'Waga', value: '442 g (z baterią)' },
@@ -14857,7 +14857,15 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-20II (źródło:
       },
       {
         question: 'Jakie są alternatywy dla Citizen CMP-20II?',
-        answer: 'W kategorii mobilnych drukarek 2": <a href="/produkt/zebra-zq310-plus">Zebra ZQ310 Plus</a> (IP54, 100 mm/s, Print DNA, od 1 496 zł), <a href="/produkt/zebra-zq210">Zebra ZQ210</a> (ekonomiczna 2", od 1 270 zł). Drukarki 3" (szersza rolka): <a href="/produkt/zebra-zq320-plus">Zebra ZQ320 Plus</a> (od 1 857 zł), <a href="/produkt/zebra-zq511">Zebra ZQ511</a> (IP65, MIL-STD, od 2 580 zł). CMP-20II wyróżnia się najniższą ceną i potrójną emulacją ESC/POS + CPCL + ZPL II.',
+        answer: 'W kategorii mobilnych drukarek 2": <a href="/produkt/zebra-zq310-plus">Zebra ZQ310 Plus</a> (IP54, 100 mm/s, Print DNA, od 1 496 zł), <a href="/produkt/zebra-zq210">Zebra ZQ210</a> (ekonomiczna 2", od 1 270 zł), <a href="/produkt/honeywell-rp2f">Honeywell RP2f</a> (premium 2", IP54, 127 mm/s, hot-swap, od 2 694 zł). Drukarki 3" (szersza rolka): <a href="/produkt/zebra-zq320-plus">Zebra ZQ320 Plus</a> (od 1 857 zł), <a href="/produkt/zebra-zq511">Zebra ZQ511</a> (IP65, MIL-STD, od 2 580 zł). CMP-20II wyróżnia się najniższą ceną i potrójną emulacją ESC/POS + CPCL + ZPL II.',
+      },
+      {
+        question: 'Citizen CMP-20II vs Honeywell RP2f — porównanie mobilnych drukarek 2"',
+        answer: '<a href="/produkt/honeywell-rp2f">Honeywell RP2f</a> (od 2 694 zł) to drukarka 2" klasy premium: prędkość 127 mm/s (vs 80 mm/s w CMP-20II), Bluetooth 5.0, Wi-Fi ac z WPA3, IP54, hot-swap baterii bez utraty łączności, upadki z 2 m. CMP-20II (od 1 116 zł) jest 2,4x tańsza, ma emulację ESC/POS + CPCL + ZPL II i Apple MFi Bluetooth. RP2f wygrywa parametrami technicznymi. CMP-20II wygrywa ceną — dla firm, które nie potrzebują hot-swap i zarządzania flotą.',
+      },
+      {
+        question: 'Czy Citizen CMP-20II ma Wi-Fi?',
+        answer: 'CMP-20II istnieje w wariancie z Wi-Fi (CMP20IIWUXCX), ale w ofercie TAKMA dostępne są warianty USB (CMP20IIXUXCX, od 1 116 zł) i Bluetooth Apple MFi (CMP20IIBUXCX, od 1 503 zł). Jeśli potrzebujesz mobilnej drukarki 2" z Wi-Fi, rozważ <a href="/produkt/honeywell-rp2f">Honeywell RP2f</a> (Wi-Fi ac + WPA3, od 2 694 zł) lub <a href="/produkt/zebra-zq310-plus">Zebra ZQ310 Plus</a> w wariancie z Wi-Fi.',
       },
     ],
     comparison: {
