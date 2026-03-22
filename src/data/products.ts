@@ -9037,6 +9037,7 @@ Specyfikacja techniczna na podstawie oficjalnej [karty katalogowej CL-S700III](/
       {
         partNumber: 'CLS700IIIRNEXXX',
         name: 'CL-S700III, 203 dpi, USB + Ethernet, odklejak + nawijak podkładu',
+        priceFrom: 5553.61,
         availability: 'available' as const,
         attributes: {
           'Odklejak': 'Tak',
@@ -9089,7 +9090,7 @@ Specyfikacja techniczna na podstawie oficjalnej [karty katalogowej CL-S700III](/
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     shortDescription: 'Citizen CL-S703III — półprzemysłowa drukarka etykiet 4" termotransferowa 300 dpi, do 254 mm/s, kolorowy LCD dotykowy 2,8", Cross-Emulation ZPL/DMX, ARCP, Ethernet + USB Host w standardzie',
     seoTitle: 'Citizen CL-S703III — drukarka etykiet 300 dpi półprzemysłowa | od 5 035 zł',
-    seoDescription: 'Citizen CL-S703III — półprzemysłowa drukarka etykiet 4" termotransferowa 300 dpi (12 dots/mm), do 254 mm/s, kolorowy LCD dotykowy 2,8", Cross-Emulation ZPL/DMX/EPL2, ARCP, USB + Ethernet + USB Host. Od 5 035 zł netto. Drukarka Citizen CL-S703III, CL-S703III Citizen, drukarka półprzemysłowa 300 dpi Citizen. Zamów z dostawą — TAKMA, partner Citizen w Polsce. PN: CLS703IIINEXXX, CLS703IIIRNEXXX.',
+    seoDescription: 'Citizen CL-S703III — półprzemysłowa drukarka etykiet 4" termotransferowa 300 dpi, do 254 mm/s, LCD dotykowy 2,8", Cross-Emulation ZPL/DMX, ARCP, USB + Ethernet + USB Host. Od 5 035 zł netto. Zamów z dostawą — TAKMA, partner Citizen. PN: CLS703IIINEXXX, CLS703IIIRNEXXX.',
     priceFrom: 5034.99,
     availability: 'available',
     images: ['/images/products/CLS703IIINEXXX.png', '/images/products/CLS703IIINEXXX-open.png', '/images/products/CLS703IIINEXXX-front.png', '/images/products/CLS703IIINEXXX-back.png'],
@@ -9167,6 +9168,7 @@ Specyfikacja techniczna na podstawie oficjalnej [karty katalogowej CL-S703III](/
       {
         partNumber: 'CLS703IIIRNEXXX',
         name: 'CL-S703III, 300 dpi, USB + Ethernet, odklejak + nawijak podkładu',
+        priceFrom: 5883.54,
         availability: 'available' as const,
         attributes: {
           'Odklejak': 'Tak',
