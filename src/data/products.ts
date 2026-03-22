@@ -14966,14 +14966,14 @@ TAKMA jest partnerem Citizen w Polsce — oferujemy doradztwo, konfigurację i s
     id: 'citizen-cmp-25l',
     slug: 'citizen-cmp-25l',
     name: 'Citizen CMP-25L',
-    shortDescription: 'Citizen CMP-25L — mobilna drukarka 2" z LCD, 127 mm/s, Bluetooth/Wi-Fi, ZPL II + ESC/POS, IP42, 580 g',
+    shortDescription: 'Citizen CMP-25L — mobilna drukarka paragonów i etykiet 2" z podświetlanym LCD 128x64, Bluetooth 4.2 Apple MFi lub Wi-Fi, 127 mm/s, 203 dpi, bateria 2600 mAh, IP42, 580 g, emulacja ESC/POS + CPCL + ZPL II',
     seoTitle: 'Citizen CMP-25L — mobilna drukarka 2" z LCD i Wi-Fi | od 2 265 zł',
     seoDescription: 'Citizen CMP-25L — mobilna drukarka paragonów i etykiet 2" z podświetlanym LCD, Bluetooth 4.2 (Apple MFi) lub Wi-Fi 802.11a/b/g/n. Prędkość 127 mm/s (5 ips), 203 dpi, bateria 2600 mAh, IP42, 580 g, emulacja ZPL II + ESC/POS + CPCL. Drukarka mobilna Citizen CMP-25L do paragonów, etykiet i biletów w terenie. Zamów w TAKMA, partner Citizen. PN: CMP25XUXZL (USB), CMP25BUXZL (Bluetooth), CMP25WUXZL (Wi-Fi).',
     description: `**Citizen CMP-25L — mobilna drukarka paragonów i etykiet 2" z podświetlanym wyświetlaczem LCD 128x64, prędkością 127 mm/s (5 ips), emulacją ZPL II + ESC/POS + CPCL, baterią 2600 mAh i ochroną IP42. Od 2 265 zł netto.**
 
 Dla kogo? Citizen CMP-25L to [mobilna drukarka](/mobilne-drukarki-etykiet) paragonów, biletów i etykiet zaprojektowana dla kurierów, serwisantów, kierowców dostawczych, kelnerów i operatorów parkingów — wszędzie tam, gdzie potrzebny jest szybki wydruk w terenie. W porównaniu z [CMP-20II](/produkt/citizen-cmp-20ii) (80 mm/s, 442 g) oferuje wyższą prędkość 127 mm/s, pojemniejszą baterię 2600 mAh i podświetlany wyświetlacz LCD do monitorowania stanu drukarki. Waga 580 g i wymiary 100 x 158 x 85 mm pozwalają nosić drukarkę na pasku z klipem w zestawie.
 
-Kluczową przewagą CMP-25L jest wyświetlacz LCD 128x64 pikseli z podświetleniem — jedyny w tej klasie cenowej. Pokazuje poziom baterii, status druku, błędy mediów i konfigurację sieci bezpośrednio na drukarce, bez konieczności podłączania do terminala. Czujniki gap i black mark umożliwiają druk zarówno paragonów ciągłych, jak i etykiet samoprzylepnych z przerwą lub znacznikiem. Potrójna emulacja ZPL II, ESC/POS i CPCL gwarantuje kompatybilność z systemami POS, WMS i ERP bez zmian szablonów.
+Kluczową przewagą CMP-25L jest wyświetlacz LCD 128x64 pikseli z podświetleniem — jedyny w tej klasie cenowej. Pokazuje poziom baterii, status druku, błędy mediów i konfigurację sieci bezpośrednio na drukarce, bez konieczności podłączania do terminala. Czujniki gap i black mark umożliwiają druk zarówno paragonów ciągłych, jak i etykiet samoprzylepnych z przerwą lub znacznikiem. Wariant CMP25BUXZL dodaje Bluetooth 4.2 z certyfikacją Apple MFi — natywne drukowanie z iPhone i iPad bez dodatkowych aplikacji. Potrójna emulacja ZPL II, ESC/POS i CPCL gwarantuje kompatybilność z systemami POS, WMS i ERP bez zmian szablonów.
 
 Szacunkowy TCO na 2 lata (200 paragonów/dzień, 250 dni/rok): drukarka od 2 265 zł + rolki 58 mm ~3 zł/rolka x ~500 rolek/rok x 2 = ~3 000 zł + bateria zapasowa (~250 zł) = ok. 5 515 zł. Dla porównania: [CMP-20II](/produkt/citizen-cmp-20ii) od 1 116 zł (niższa cena, ale wolniejsza 80 mm/s i mniejsza bateria), [Zebra ZQ310 Plus](/produkt/zebra-zq310-plus) od 1 496 zł (IP54, Print DNA), [Honeywell RP2f](/produkt/honeywell-rp2f) od 2 694 zł (premium, hot-swap baterii).
 
@@ -14989,7 +14989,7 @@ TAKMA jest partnerem Citizen w Polsce — oferujemy doradztwo, konfigurację i s
       'Citizen CMP-25L — widok z tyłu, porty USB i RS-232, gniazdo baterii Li-Ion 2600 mAh',
     ],
     tags: ['logistyka', 'retail', 'outdoor'],
-    availability: 'available',
+    availability: 'unavailable',
     isNew: true,
     isBestseller: false,
     applications: [
@@ -15056,7 +15056,7 @@ TAKMA jest partnerem Citizen w Polsce — oferujemy doradztwo, konfigurację i s
           'Bluetooth': 'Tak (Apple MFi)',
         },
         priceFrom: 2542.72,
-        availability: 'available',
+        availability: 'unavailable',
       },
       {
         partNumber: 'CMP25WUXZL',
@@ -15111,7 +15111,7 @@ TAKMA jest partnerem Citizen w Polsce — oferujemy doradztwo, konfigurację i s
       },
       {
         question: 'Ile kosztuje Citizen CMP-25L?',
-        answer: 'CMP-25L USB (CMP25XUXZL) kosztuje od 2 265 zł netto (aktualnie niedostępna). Bluetooth (CMP25BUXZL) od 2 543 zł netto (dostępna, 6 szt. w magazynie EU). Wi-Fi (CMP25WUXZL) od 2 885 zł netto (niedostępna). Dla porównania: <a href="/produkt/citizen-cmp-20ii">CMP-20II</a> od 1 116 zł, <a href="/produkt/zebra-zq310-plus">Zebra ZQ310 Plus</a> od 1 496 zł, <a href="/produkt/honeywell-rp2f">Honeywell RP2f</a> od 2 694 zł.',
+        answer: 'CMP-25L USB (CMP25XUXZL) kosztuje od 2 265 zł netto. Bluetooth Apple MFi (CMP25BUXZL) od 2 543 zł netto. Wi-Fi (CMP25WUXZL) od 2 885 zł netto. Dostępność wariantów zmienia się — sprawdź aktualny status na stronie produktu. Dla porównania: <a href="/produkt/citizen-cmp-20ii">CMP-20II</a> od 1 116 zł, <a href="/produkt/zebra-zq310-plus">Zebra ZQ310 Plus</a> od 1 496 zł, <a href="/produkt/honeywell-rp2f">Honeywell RP2f</a> od 2 694 zł.',
       },
       {
         question: 'Jaka jest gwarancja na Citizen CMP-25L?',
@@ -15120,6 +15120,10 @@ TAKMA jest partnerem Citizen w Polsce — oferujemy doradztwo, konfigurację i s
       {
         question: 'Czy CMP-25L ma wariant z Wi-Fi?',
         answer: 'Tak — wariant CMP25WUXZL (od 2 885 zł netto) ma Wi-Fi 802.11a/b/g/n, idealny do pracy w budynku z infrastrukturą Wi-Fi (magazyn, hotel, restauracja). Wariant CMP25BUXZL (od 2 543 zł) ma Bluetooth 4.2 z Apple MFi — lepszy do pracy mobilnej w terenie.',
+      },
+      {
+        question: 'Citizen CMP-25L vs Brother RJ-4230B — porównanie mobilnych drukarek',
+        answer: '<a href="/produkt/brother-rj-4230b">Brother RJ-4230B</a> (od 2 353 zł) to drukarka 4" (102 mm) — szersza od CMP-25L (48 mm). RJ-4230B drukuje etykiety kurierskie 100x100 mm, ma IP54, NFC, upadki z 2,1 m (MIL-STD-810G) i 3-letnią gwarancję na głowicę. CMP-25L jest kompaktniejsza (100x158 mm, 580 g), ma LCD, Wi-Fi (wariant) i potrójną emulację. Wybierz RJ-4230B do szerokich etykiet wysyłkowych. CMP-25L do paragonów, biletów i wąskich etykiet 2".',
       },
       {
         question: 'Jakie są alternatywy dla Citizen CMP-25L?',
