@@ -9740,15 +9740,9 @@ export const guides: Guide[] = [
     {
       id: 'wprowadzenie',
       heading: 'Kontrakty serwisowe Zebra OneCare — wprowadzenie',
-      content: `<p><strong>Terminale mobilne Zebra to urządzenia o wartości od kilku do kilkunastu tysięcy złotych, pracujące w wymagających warunkach magazynowych i produkcyjnych. Upadek z wysokości, uszkodzenie ekranu czy awaria skanera to realne scenariusze, z którymi mierzy się każdy zespół operacyjny.</strong></p>
+      content: `<p><strong>Zebra OneCare to program wsparcia serwisowego producenta — obejmuje naprawy sprzętowe, wsparcie techniczne, aktualizacje oprogramowania i (w zależności od wariantu) pokrycie uszkodzeń przypadkowych. Standardowa gwarancja trwa 12 miesięcy i nie obejmuje uszkodzeń mechanicznych, a naprawa poza kontraktem oznacza wysyłkę za granicę z czasem realizacji 3–6 tygodni.</strong></p>
 
-<p>Standardowa gwarancja producenta trwa 12 miesięcy i nie obejmuje uszkodzeń mechanicznych. Naprawa poza kontraktem oznacza wysyłkę urządzenia do autoryzowanego centrum Zebry za granicą — z czasem realizacji 3–6 tygodni i trudnym do przewidzenia kosztem. Zebra OneCare eliminuje te ryzyka: stały roczny koszt, gwarantowany czas naprawy, a w wariancie premium — urządzenie zastępcze następnego dnia roboczego.</p>
-
-<p>Zebra OneCare to rozszerzony program wsparcia serwisowego producenta, obejmujący naprawy sprzętowe, wsparcie techniczne, aktualizacje oprogramowania i — w zależności od wariantu — wymianę urządzenia lub pokrycie uszkodzeń przypadkowych.</p>
-
-<p><strong>Kluczowe rozróżnienie:</strong> przy drukarkach Zebra istnieje alternatywa serwisowa — autoryzowany serwis lokalny (<a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>). Przy terminalach mobilnych i skanerach takiej alternatywy nie ma. Zebra nie udostępnia części zamiennych do terminali zewnętrznym serwisom.</p>
-
-<p>Ten artykuł jest przeznaczony dla osób odpowiedzialnych za zakupy sprzętu mobilnego — kierowników magazynów, logistyki i działów IT.</p>`
+<p><strong>Kluczowe rozróżnienie:</strong> przy drukarkach Zebra istnieje alternatywa — autoryzowany serwis lokalny (<a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>). Przy terminalach mobilnych i skanerach takiej alternatywy nie ma — Zebra nie udostępnia części zamiennych zewnętrznym serwisom.</p>`
     },
     {
       id: 'gwarancja-standardowa',
@@ -9774,7 +9768,7 @@ export const guides: Guide[] = [
 </tbody>
 </table>
 
-<p>Do kosztów naprawy dochodzi: wysyłka międzynarodowa, diagnostyka (stawka 70 USD/h) oraz czas przestoju — przez 3–6 tygodni stanowisko operacyjne jest nieczynne lub wymaga sprzętu zastępczego.</p>
+<p>Kluczowym kosztem naprawy poza autoryzowanym serwisem jest czas przestoju — przez 3–6 tygodni stanowisko operacyjne jest nieczynne lub wymaga sprzętu zastępczego.</p>
 
 <p>W przypadku drukarek Zebra analogiczną naprawę wykonujemy w <a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a> w ciągu 3–7 dni roboczych. Przy terminalach nie jest to możliwe — Zebra nie udostępnia części zamiennych zewnętrznym serwisom.</p>`
     },
