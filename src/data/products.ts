@@ -303,8 +303,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Mobilne drukarki etykiet Zebra — przenośne, bezprzewodowe drukowanie etykiet i kodów kreskowych w terenie. Bluetooth, Wi-Fi, IP54, bateria na cały dzień pracy. Idealne do magazynu, logistyki i dostaw.',
     longDescription: 'Mobilne drukarki etykiet (ang. mobile/portable label printers) to kompaktowe, zasilane bateryjnie urządzenia do drukowania etykiet bezpośrednio w terenie — na magazynie, w dostawie, przy inwentaryzacji czy na linii produkcyjnej. Łączą się bezprzewodowo przez Bluetooth i Wi-Fi z terminalami mobilnymi, smartfonami i tabletami. Klasa ochrony IP54/IP65 i odporność na upadki z 1,5–2,1 m gwarantują niezawodną pracę w wymagających warunkach. Druk termiczny bezpośredni eliminuje potrzebę taśmy barwiącej, co upraszcza obsługę w terenie.',
     icon: 'printer',
-    productIds: ['zebra-zq511', 'zebra-zq521', 'zebra-zq610-plus', 'zebra-zq620-plus', 'zebra-zq630-plus', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus', 'zebra-zq210', 'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3', 'brother-rj-4230b'],
-    productCount: 13,
+    productIds: ['zebra-zq511', 'zebra-zq521', 'zebra-zq610-plus', 'zebra-zq620-plus', 'zebra-zq630-plus', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus', 'zebra-zq210', 'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3', 'brother-rj-4230b', 'citizen-cmp-20ii'],
+    productCount: 14,
   },
   {
     id: 'akcesoria-do-drukarek-etykiet',
@@ -14712,6 +14712,217 @@ Specyfikacja zgodna z oficjalną kartą katalogową [Brother](https://www.brothe
     createdAt: '2026-03-17',
     updatedAt: '2026-03-17',
     sameAs: 'https://www.brother.pl/drukarki/drukarki-etykiet/mobilne/rj4230b',
+  },
+  {
+    id: 'citizen-cmp-20ii',
+    slug: 'citizen-cmp-20ii',
+    name: 'Citizen CMP-20II',
+    shortDescription: 'Citizen CMP-20II — mobilna drukarka paragonów 2" z Bluetooth, USB, IP42, 442 g, emulacja ESC/POS + ZPL II',
+    seoTitle: 'Citizen CMP-20II — mobilna drukarka paragonów 2" | od 1 116 zł',
+    seoDescription: 'Citizen CMP-20II — kompaktowa mobilna drukarka paragonów i biletów 2" z Bluetooth, USB, RS-232, IP42, 80 mm/s, 203 dpi, 442 g. Drukarka mobilna Citizen CMP-20II, Citizen CMP-20II cena, drukarka paragonowa mobilna 2 cale, CMP-20II Citizen. Emulacja ESC/POS, CPCL, ZPL II. Zamów z dostawą — TAKMA, partner Citizen. PN: CMP20IIXUXCX (USB), CMP20IIBUXCX (Bluetooth iOS).',
+    description: `**Citizen CMP-20II — kompaktowa mobilna drukarka paragonów i biletów 2" z Bluetooth, USB, RS-232, emulacją ESC/POS + CPCL + ZPL II, ochroną IP42, odpornością na upadki z 1,5 m i wagą zaledwie 442 g. Od 1 116 zł netto.**
+
+Dla kogo? Citizen CMP-20II to [mobilna drukarka](/mobilne-drukarki-etykiet) paragonów i biletów zaprojektowana dla kurierów, kelnerów, serwisantów w terenie, kierowców dostawczych i operatorów food trucków — wszędzie tam, gdzie potrzebny jest szybki wydruk paragonu, pokwitowania lub biletu w terenie bez stałego zasilania. Waga 442 g i wymiary 96 × 136 × 58 mm pozwalają nosić drukarkę na pasku lub w kieszeni kurtki. Bateria Li-Ion 1800 mAh zapewnia pracę przez cały dzień (300–500 paragonów na jednym ładowaniu).
+
+Kluczową przewagą Citizen CMP-20II jest potrójna emulacja: ESC/POS (standardowy język drukarek paragonowych), CPCL (mobilne etykiety) i Zebra ZPL II — co oznacza, że istniejące szablony paragonów z systemów POS, WMS i ERP działają bez zmian. Migracja z drukarki Zebra na CMP-20II jest plug-and-play dzięki emulacji ZPL II. Wariant CMP20IIBUXCX dodaje Bluetooth z certyfikacją Apple MFi — drukuj bezpośrednio z iPhone i iPad bez dodatkowych aplikacji.
+
+Szacunkowy TCO na 2 lata (200 paragonów/dzień, 250 dni/rok): drukarka od 1 116 zł + rolki papieru termicznego 58 mm ok. 3 zł/rolka × ~500 rolek/rok × 2 = ~3 000 zł + bateria zapasowa (~300 zł) = ok. 4 420 zł. Dla porównania: [Zebra ZQ310 Plus](/produkt/zebra-zq310-plus) od 1 496 zł (2" z Bluetooth LE, 100 mm/s), [Zebra ZQ320 Plus](/produkt/zebra-zq320-plus) od 1 857 zł (3", szersza rolka 80 mm).
+
+Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-20II (źródło: citizen-systems.com, marzec 2026).`,
+    categoryId: 'drukarki-etykiet',
+    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    manufacturerId: 'citizen',
+    priceFrom: 1115.76,
+    images: ['/images/products/CMP20IIXUXCX.png', '/images/products/CMP20IIXUXCX-2.png', '/images/products/CMP20IIXUXCX-3.png'],
+    imageDescriptions: [
+      'Citizen CMP-20II — widok z przodu, kompaktowa mobilna drukarka paragonów 2 cale w czarnej obudowie',
+      'Citizen CMP-20II — widok z boku z otwartą pokrywą mediów i rolką papieru termicznego',
+      'Citizen CMP-20II — widok z tyłu, porty USB i RS-232 Mini DIN, gniazdo baterii',
+    ],
+    tags: ['logistyka', 'retail', 'outdoor'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    applications: [
+      'Paragony i pokwitowania — kurierzy, kierowcy dostawczy, serwisanci w terenie',
+      'Bilety — parkingi, komunikacja, imprezy plenerowe, obiekty sportowe',
+      'POS mobilny — food trucki, targi, kioski, sprzedaż obwoźna',
+      'Raporty serwisowe — wydruk protokołów na miejscu u klienta',
+      'Gastronomia — zamówienia kelnerskie drukowane przy stoliku',
+      'Etykiety tymczasowe — czujnik etykiet w wybranych wariantach',
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: [],
+    keyParams: {
+      rodzajDruku: 'Termiczna bezpośrednia (DT)',
+      rozdzielczosc: '203 dpi (8 dots/mm)',
+      predkoscDruku: 'do 80 mm/s (3 ips)',
+      szerokoscDruku: 'max. 48 mm (2")',
+      szerokoscEtykiet: '58 mm (papier)',
+    },
+    specifications: [
+      { name: 'Metoda druku', value: 'Termiczna bezpośrednia (Direct Thermal)' },
+      { name: 'Rozdzielczość', value: '203 × 203 dpi (8 dots/mm)' },
+      { name: 'Prędkość druku', value: 'do 80 mm/s (3 ips)' },
+      { name: 'Szerokość druku', value: 'max. 48 mm' },
+      { name: 'Szerokość mediów', value: '58 mm' },
+      { name: 'Max średnica rolki', value: '48 mm (1,88")' },
+      { name: 'Grubość mediów', value: '65 µm' },
+      { name: 'Typ mediów', value: 'Papier termiczny, etykiety (z czujnikiem, wariant)' },
+      { name: 'Czujnik końca papieru', value: 'Tak' },
+      { name: 'Interfejs USB', value: 'USB 2.0, Mini-B' },
+      { name: 'Interfejs szeregowy', value: 'RS-232 / Mini DIN' },
+      { name: 'Bluetooth', value: 'Bluetooth Class 2 + Apple MFi (wariant CMP20IIBUXCX)' },
+      { name: 'Emulacja', value: 'ESC/POS, CPCL, Zebra ZPL II' },
+      { name: 'Kompatybilność OS', value: 'Windows, iOS, Android, Linux (CUPS)' },
+      { name: 'Bateria', value: 'Li-Ion 7,4 V / 1800 mAh' },
+      { name: 'Czas pracy na baterii', value: '~48h (standby + druk), 300–500 paragonów/ładowanie' },
+      { name: 'Czas ładowania', value: '~2 godziny' },
+      { name: 'Zasilacz', value: 'AC 100–240 V, 50/60 Hz → 8,4 V / 1200 mA' },
+      { name: 'Klasa ochrony', value: 'IP42' },
+      { name: 'Odporność na upadki', value: '1,5 m na beton (wielokrotnie)' },
+      { name: 'Wymiary (szer. × gł. × wys.)', value: '96 × 136 × 58 mm' },
+      { name: 'Waga', value: '442 g (z baterią)' },
+      { name: 'Temperatura pracy', value: '-10°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-20°C do +60°C' },
+      { name: 'Wilgotność pracy', value: '35–95% RH (bez kondensacji)' },
+      { name: 'Certyfikaty', value: 'CE, FCC, UL, C-UL' },
+      { name: 'Gwarancja', value: '2 lata (drukarka), 1 rok (bateria)' },
+    ],
+    variants: [
+      {
+        partNumber: 'CMP20IIXUXCX',
+        name: 'USB + RS-232, bez Bluetooth',
+        attributes: {},
+        priceFrom: 1115.76,
+        availability: 'unavailable',
+      },
+      {
+        partNumber: 'CMP20IIBUXCX',
+        name: 'USB + RS-232 + Bluetooth (Apple MFi)',
+        attributes: {
+          'Bluetooth': 'Tak (Apple MFi)',
+        },
+        priceFrom: 1502.65,
+        availability: 'available',
+      },
+    ],
+    variantAttributeTooltips: {
+      'Bluetooth': 'Bluetooth Class 2 z certyfikacją Apple MFi — bezprzewodowe drukowanie z iPhone, iPad, urządzeń Android i terminali mobilnych. Zasięg do 10 m.',
+    },
+    faq: [
+      {
+        question: 'Citizen CMP-20II vs Zebra ZQ310 Plus — porównanie',
+        answer: '<a href="/produkt/zebra-zq310-plus">Zebra ZQ310 Plus</a> (od 1 496 zł) ma prędkość 100 mm/s (vs 80 mm/s), Bluetooth 5.0 LE, USB-C, IP54 (vs IP42), wagę 370 g (vs 442 g) i ekosystem Zebra Print DNA do zarządzania flotą. CMP-20II (od 1 116 zł) jest tańsza, ma emulację ESC/POS + ZPL II + CPCL, RS-232 i Apple MFi Bluetooth. ZQ310 Plus wygrywa wytrzymałością i ekosystemem. CMP-20II wygrywa ceną i uniwersalnością emulacji.',
+      },
+      {
+        question: 'Citizen CMP-20II vs Zebra ZQ320 Plus — porównanie',
+        answer: '<a href="/produkt/zebra-zq320-plus">Zebra ZQ320 Plus</a> (od 1 857 zł) to drukarka 3" (80 mm rolka) — szersza od CMP-20II (58 mm). ZQ320 Plus drukuje paragony z pełną szerokością faktury, ma USB-C, IP54 i Bluetooth 5.0. CMP-20II jest kompaktniejsza (96×136 mm vs 111×141 mm) i tańsza. Wybierz CMP-20II do wąskich paragonów (bilety, kupony). ZQ320 Plus do pełnych paragonów i faktur.',
+      },
+      {
+        question: 'Czy CMP-20II drukuje etykiety czy tylko paragony?',
+        answer: 'CMP-20II obsługuje przede wszystkim rolki paragonowe 58 mm (papier termiczny). Warianty z czujnikiem etykiet (gap/black mark) mogą drukować także etykiety samoprzylepne. Do profesjonalnego druku etykiet z kodami kreskowymi w terenie lepiej sprawdzi się <a href="/produkt/zebra-zq310-plus">Zebra ZQ310 Plus</a> (od 1 496 zł) lub <a href="/produkt/zebra-zq511">Zebra ZQ511</a> (3", od 2 580 zł).',
+      },
+      {
+        question: 'Ile paragonów wydrukuję na jednym ładowaniu CMP-20II?',
+        answer: 'Bateria Li-Ion 1800 mAh zapewnia 300–500 paragonów na jednym ładowaniu (zależnie od długości wydruku i temperatury pracy). Czas standby: do 48 godzin. Ładowanie: ~2 godziny. Zalecana bateria zapasowa do pracy zmianowej — wymiana baterii trwa kilka sekund.',
+      },
+      {
+        question: 'Czy CMP-20II działa z iPhone i iPad?',
+        answer: 'Tak — wariant CMP20IIBUXCX (od 1 503 zł) ma Bluetooth z certyfikacją Apple MFi, co gwarantuje natywne połączenie z iOS bez dodatkowych aplikacji. Drukuj paragony bezpośrednio z aplikacji POS na iPhone i iPad. Wariant CMP20IIXUXCX (od 1 116 zł) nie ma Bluetooth — łączy się tylko kablem USB lub RS-232.',
+      },
+      {
+        question: 'Jakie języki programowania obsługuje CMP-20II?',
+        answer: 'CMP-20II obsługuje trzy języki: ESC/POS (standardowy język drukarek paragonowych — Epson, Star), CPCL (język drukarek mobilnych Zebra) i Zebra ZPL II (język drukarek etykiet Zebra). Dzięki temu CMP-20II jest kompatybilna z większością systemów POS, WMS i aplikacji mobilnych bez modyfikacji szablonów.',
+      },
+      {
+        question: 'Czy CMP-20II jest odporna na warunki zewnętrzne?',
+        answer: 'CMP-20II ma ochronę IP42 (pył + krople wody) i wytrzymuje upadki z 1,5 m na beton. Temperatura pracy: -10°C do +50°C — działa w zimie na zewnątrz (parkingi, imprezy). Do intensywnej pracy w deszczu lub ekstremalnych warunkach rozważ <a href="/produkt/zebra-zq310-plus">Zebra ZQ310 Plus</a> z IP54 lub <a href="/produkt/zebra-zq511">Zebra ZQ511</a> z IP65 i MIL-STD-810H.',
+      },
+      {
+        question: 'Ile kosztuje Citizen CMP-20II?',
+        answer: 'CMP-20II w wersji USB (CMP20IIXUXCX) kosztuje od 1 116 zł netto (aktualnie niedostępna). Wersja z Bluetooth Apple MFi (CMP20IIBUXCX) od 1 503 zł netto (dostępna, 6 szt. w magazynie EU). Dla porównania: <a href="/produkt/zebra-zq310-plus">Zebra ZQ310 Plus</a> od 1 496 zł, <a href="/produkt/zebra-zq320-plus">Zebra ZQ320 Plus</a> od 1 857 zł.',
+      },
+      {
+        question: 'Jaka jest gwarancja na Citizen CMP-20II?',
+        answer: 'Citizen udziela 2-letniej gwarancji na drukarkę oraz 1-rocznej gwarancji na baterię. TAKMA jako partner Citizen zapewnia wsparcie serwisowe w Polsce — diagnostyka, wymiana głowicy, kalibracja. Dla porównania: <a href="/produkt/zebra-zq310-plus">Zebra ZQ310 Plus</a> ma 1 rok gwarancji (rozszerzalna do 3 lat z OneCare).',
+      },
+      {
+        question: 'Jak szybko drukuje Citizen CMP-20II?',
+        answer: 'CMP-20II drukuje z prędkością 80 mm/s (3 ips) przy rozdzielczości 203 dpi. Standardowy paragon (58 mm × 100 mm) drukuje się w ~1,2 sekundy. Dla porównania: <a href="/produkt/zebra-zq310-plus">Zebra ZQ310 Plus</a> drukuje 100 mm/s (4 ips) — 25% szybciej.',
+      },
+      {
+        question: 'Czy mogę podłączyć CMP-20II do terminala mobilnego?',
+        answer: 'Tak. CMP-20II łączy się z terminalami mobilnymi przez Bluetooth (wariant BUXCX) lub USB. Kompatybilna z terminalami Zebra (<a href="/produkt/zebra-tc22">TC22</a>, <a href="/produkt/zebra-tc27">TC27</a>), Datalogic i Honeywell. Emulacja ZPL II gwarantuje kompatybilność z aplikacjami WMS drukującymi na drukarkach Zebra.',
+      },
+      {
+        question: 'Jakie są alternatywy dla Citizen CMP-20II?',
+        answer: 'W kategorii mobilnych drukarek 2": <a href="/produkt/zebra-zq310-plus">Zebra ZQ310 Plus</a> (IP54, 100 mm/s, Print DNA, od 1 496 zł), <a href="/produkt/zebra-zq210">Zebra ZQ210</a> (ekonomiczna 2", od 1 270 zł). Drukarki 3" (szersza rolka): <a href="/produkt/zebra-zq320-plus">Zebra ZQ320 Plus</a> (od 1 857 zł), <a href="/produkt/zebra-zq511">Zebra ZQ511</a> (IP65, MIL-STD, od 2 580 zł). CMP-20II wyróżnia się najniższą ceną i potrójną emulacją ESC/POS + CPCL + ZPL II.',
+      },
+    ],
+    comparison: {
+      title: 'Porównanie mobilnych drukarek 2" — Citizen CMP-20II vs Zebra ZQ310 Plus vs Zebra ZQ210',
+      models: [
+        {
+          name: 'CMP-20II',
+          slug: 'citizen-cmp-20ii',
+          highlight: true,
+          specs: {
+            'Szerokość druku': '48 mm (2")',
+            'Prędkość': '80 mm/s',
+            'Rozdzielczość': '203 dpi',
+            'Bluetooth': 'MFi (wariant)',
+            'IP': 'IP42',
+            'Upadek': '1,5 m',
+            'Bateria': '1800 mAh',
+            'Waga': '442 g',
+            'Emulacja': 'ESC/POS + CPCL + ZPL II',
+            'Gwarancja': '2 lata',
+            'Cena od': '1 116 zł',
+          },
+        },
+        {
+          name: 'ZQ310 Plus',
+          slug: 'zebra-zq310-plus',
+          specs: {
+            'Szerokość druku': '48 mm (2")',
+            'Prędkość': '100 mm/s',
+            'Rozdzielczość': '203 dpi',
+            'Bluetooth': 'BT 5.0 LE',
+            'IP': 'IP54',
+            'Upadek': '1,5 m',
+            'Bateria': '2280 mAh',
+            'Waga': '370 g',
+            'Emulacja': 'ZPL II + CPCL',
+            'Gwarancja': '1 rok',
+            'Cena od': '1 496 zł',
+          },
+        },
+        {
+          name: 'ZQ210',
+          slug: 'zebra-zq210',
+          specs: {
+            'Szerokość druku': '48 mm (2")',
+            'Prędkość': '90 mm/s',
+            'Rozdzielczość': '203 dpi',
+            'Bluetooth': 'BT 4.1',
+            'IP': 'IP54',
+            'Upadek': '1,5 m',
+            'Bateria': '2500 mAh',
+            'Waga': '345 g',
+            'Emulacja': 'ZPL II + CPCL',
+            'Gwarancja': '1 rok',
+            'Cena od': '1 270 zł',
+          },
+        },
+      ],
+    },
+    downloads: [
+      { name: 'Karta katalogowa CMP-20II (PL)', type: 'datasheet', url: '/downloads/datasheet-cmp-20ii-pl.pdf', size: '1,3 MB' },
+    ],
+    relatedProducts: ['zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq210'],
+    createdAt: '2026-03-22',
+    sameAs: 'https://www.citizen-systems.com/en/products/printer/mobile/cmp-20ii',
   },
 ]
 
