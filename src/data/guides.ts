@@ -9726,76 +9726,74 @@ export const guides: Guide[] = [
 
 // ===== Zebra OneCare — kontrakt serwisowy =====
 {
-  slug: 'zebra-onecare-kontrakt-serwisowy-co-daje-czy-warto',
-  title: 'Zebra OneCare — kontrakt serwisowy: co daje, ile kosztuje, czy warto kupić?',
+  slug: 'zebra-onecare-kontrakt-serwisowy',
+  title: 'Zebra OneCare — kontrakt serwisowy: zakres, koszty i opłacalność',
   seoTitle: 'Zebra OneCare — kontrakt serwisowy: ceny i warianty 2026',
-  seoDescription: 'Zebra OneCare — co obejmuje, ile kosztuje, czy warto. Ceny Essential na terminale TC22, MC3400, MC9400. Kontrakt serwisowy Zebra, pakiet serwisowy.',
-  excerpt: 'Przy terminalach mobilnych Zebra nie masz alternatywy serwisowej — OneCare to konieczność, nie opcja. Przy drukarkach — serwisujemy je sami, szybciej i taniej.',
+  seoDescription: 'Zebra OneCare — zakres, koszty, opłacalność. Ceny Essential na terminale TC22, TC27, MC3400, MC9400. Kontrakt serwisowy Zebra, pakiet serwisowy.',
+  excerpt: 'Przy terminalach mobilnych Zebra nie istnieje alternatywa serwisowa — kontrakt OneCare jest niezbędny. Przy drukarkach etykiet serwis TAKMA oferuje naprawy szybciej i korzystniej cenowo.',
   category: 'poradnik' as const,
   tags: ['onecare', 'serwis', 'kontrakt-serwisowy', 'terminale', 'gwarancja', 'zebra'],
   publishedAt: '2026-03-21',
-  updatedAt: '2026-03-21',
+  updatedAt: '2026-03-22',
   readTime: '14 min',
   sections: [
     {
       id: 'wprowadzenie',
-      heading: 'Dlaczego przy terminalach Zebra nie masz wyboru',
-      content: `<p><strong>Twój magazynier upuścił terminal Zebra TC52 z wysokości 1,5 metra. Ekran pęknięty, skaner nie działa. Terminal kosztował ponad 5 000 zł. Co teraz?</strong></p>
+      heading: 'Kontrakty serwisowe Zebra OneCare — wprowadzenie',
+      content: `<p><strong>Terminale mobilne Zebra to urządzenia o wartości od kilku do kilkunastu tysięcy złotych, pracujące w wymagających warunkach magazynowych i produkcyjnych. Upadek z wysokości, uszkodzenie ekranu czy awaria skanera to realne scenariusze, z którymi mierzy się każdy zespół operacyjny.</strong></p>
 
-<p>Bez kontraktu OneCare — wysyłasz urządzenie do Zebra Repair Center za granicą. Koszt naprawy: 2 000–3 500 zł. Czas oczekiwania: 3–6 tygodni. A przez ten czas Twój magazynier nie kompletuje zamówień.</p>
+<p>Standardowa gwarancja producenta trwa 12 miesięcy i nie obejmuje uszkodzeń mechanicznych. Naprawa poza kontraktem oznacza wysyłkę urządzenia do autoryzowanego centrum Zebry za granicą — z czasem realizacji 3–6 tygodni i trudnym do przewidzenia kosztem. Zebra OneCare eliminuje te ryzyka: stały roczny koszt, gwarantowany czas naprawy, a w wariancie premium — urządzenie zastępcze następnego dnia roboczego.</p>
 
-<p>Z OneCare Essential? Zgłaszasz naprawę, urządzenie wraca w 3 dni robocze. Z Select — dostajesz terminal zastępczy następnego dnia.</p>
+<p>Zebra OneCare to rozszerzony program wsparcia serwisowego producenta, obejmujący naprawy sprzętowe, wsparcie techniczne, aktualizacje oprogramowania i — w zależności od wariantu — wymianę urządzenia lub pokrycie uszkodzeń przypadkowych.</p>
 
-<p><strong>Kluczowa informacja, której nikt Ci nie powie:</strong> przy drukarkach Zebra masz wybór — lokalny serwis (np. <a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>) lub OneCare. Przy terminalach mobilnych i skanerach <strong>nie masz wyboru</strong> — Zebra nie sprzedaje części do terminali zewnętrznym serwisom. Jedyna droga to Zebra Repair Center lub OneCare.</p>
+<p><strong>Kluczowe rozróżnienie:</strong> przy drukarkach Zebra istnieje alternatywa serwisowa — autoryzowany serwis lokalny (<a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>). Przy terminalach mobilnych i skanerach takiej alternatywy nie ma. Zebra nie udostępnia części zamiennych do terminali zewnętrznym serwisom.</p>
 
-<p>Ten poradnik wyjaśnia, czym jest OneCare, ile kosztuje i kiedy się opłaca — ze szczególnym uwzględnieniem terminali mobilnych serii TC i MC, gdzie kontrakt serwisowy to nie opcja, a konieczność.</p>`
+<p>Ten artykuł jest przeznaczony dla osób odpowiedzialnych za zakupy sprzętu mobilnego — kierowników magazynów, logistyki i działów IT.</p>`
     },
     {
       id: 'gwarancja-standardowa',
-      heading: 'Standardowa gwarancja Zebra — co masz, a czego nie masz',
-      content: `<p><strong>Terminale mobilne Zebra (TC22, TC27, TC58, MC3400, MC9400) mają standardową gwarancję 12 miesięcy na wady fabryczne. Upadki, pęknięte ekrany, zalania czy zużycie baterii — nie są objęte.</strong></p>
+      heading: 'Standardowa gwarancja Zebra — zakres i ograniczenia',
+      content: `<p><strong>Terminale mobilne Zebra (TC22, TC27, MC3400, MC9400) objęte są standardową gwarancją producenta na okres 12 miesięcy. Gwarancja obejmuje wyłącznie wady fabryczne — uszkodzenia mechaniczne, pęknięcia ekranów, zużycie baterii i zalanie nie są objęte.</strong></p>
 
-<p>Terminale żyją w rękach ludzi. Spadają z wózków widłowych, mokną na deszczu, pracują w mroźniach i na rampach załadunkowych. 12 miesięcy gwarancji na wady fabryczne to za mało dla urządzenia, które kosztuje 3 500–16 000 zł.</p>
+<p>Terminal mobilny to urządzenie pracujące w rękach operatora przez całą zmianę — narażone na upadki, wilgoć i zmienne temperatury. Drukarka etykiet to urządzenie stacjonarne o relatywnie niskiej awaryjności. Ta fundamentalna różnica w warunkach eksploatacji sprawia, że 12-miesięczna gwarancja fabryczna na terminal jest niewystarczająca dla większości zastosowań.</p>
 
-<h3>Koszty napraw terminali BEZ kontraktu</h3>
+<h3>Szacunkowe koszty napraw terminali poza kontraktem</h3>
 
-<p>Po wygaśnięciu gwarancji (lub przy uszkodzeniu mechanicznym w trakcie gwarancji) jedyną opcją jest Zebra Repair Center za granicą. Orientacyjne koszty:</p>
+<p>Po wygaśnięciu gwarancji (lub przy uszkodzeniu mechanicznym w trakcie jej trwania) jedyną opcją jest Zebra Repair Center za granicą:</p>
 
 <table style="width:100%">
 <thead>
-<tr><th>Naprawa</th><th>Szacunkowy koszt</th><th>Czas</th></tr>
+<tr><th>Rodzaj naprawy</th><th>Szacunkowy koszt</th><th>Czas realizacji</th></tr>
 </thead>
 <tbody>
-<tr><td>Wymiana ekranu (TC22/TC58)</td><td>800–2 000 zł</td><td>3–6 tygodni</td></tr>
+<tr><td>Wymiana ekranu (TC22/TC27)</td><td>800–2 000 zł</td><td>3–6 tygodni</td></tr>
 <tr><td>Naprawa skanera / imagera</td><td>600–1 500 zł</td><td>3–5 tygodni</td></tr>
 <tr><td>Wymiana płyty głównej</td><td>1 500–4 000 zł</td><td>4–6 tygodni</td></tr>
-<tr><td>Naprawa klawiatury (MC3400/MC9400)</td><td>400–800 zł</td><td>2–4 tygodnie</td></tr>
+<tr><td>Naprawa klawiatury (MC3400)</td><td>400–800 zł</td><td>2–4 tygodnie</td></tr>
 <tr><td>Wymiana portu ładowania</td><td>300–600 zł</td><td>2–4 tygodnie</td></tr>
 </tbody>
 </table>
 
-<p>Do kosztów dochodzi: wysyłka międzynarodowa, diagnostyka (70 USD/h) i czas przestoju — przez 3–6 tygodni stanowisko stoi puste lub pracuje z zastępczym sprzętem.</p>
+<p>Do kosztów naprawy dochodzi: wysyłka międzynarodowa, diagnostyka (stawka 70 USD/h) oraz czas przestoju — przez 3–6 tygodni stanowisko operacyjne jest nieczynne lub wymaga sprzętu zastępczego.</p>
 
-<p><strong>Przy drukarce</strong> taką naprawę zrobimy w <a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a> w 3–7 dni. Przy terminalu — nie możemy. Zebra nie udostępnia części zamiennych do terminali mobilnych zewnętrznym serwisom.</p>`
+<p>W przypadku drukarek Zebra analogiczną naprawę wykonujemy w <a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a> w ciągu 3–7 dni roboczych. Przy terminalach nie jest to możliwe — Zebra nie udostępnia części zamiennych zewnętrznym serwisom.</p>`
     },
     {
       id: 'warianty-onecare',
-      heading: 'Co to jest Zebra OneCare? Trzy warianty',
-      content: `<p><strong>Zebra OneCare to rozszerzony pakiet serwisowy producenta, który wykracza poza standardową gwarancję. Obejmuje naprawy, wymianę części, wsparcie techniczne, aktualizacje oprogramowania (LifeGuard for Android) i dashboard zarządzania flotą (VisibilityIQ).</strong></p>
+      heading: 'Zebra OneCare — trzy warianty kontraktu',
+      content: `<p><strong>Zebra OneCare to program rozszerzonego wsparcia serwisowego producenta. Obejmuje naprawy sprzętowe, wsparcie techniczne, aktualizacje oprogramowania i — w zależności od wariantu — wymianę urządzenia lub pokrycie uszkodzeń przypadkowych. Kontrakty zawierane są na 3 lub 5 lat.</strong></p>
 
-<p>Analogia: OneCare to jak ubezpieczenie AC dla służbowych terminali — płacisz stałą kwotę za 3 lub 5 lat, a w zamian masz pokrycie napraw i zero niespodzianek budżetowych.</p>
+<h3>OneCare Special Value (SV) — wariant podstawowy</h3>
 
-<h3>OneCare Special Value (SV) — podstawowy</h3>
+<p>Naprawy wad fabrycznych i normalnego zużycia, wsparcie techniczne 8x5, czas naprawy do 5 dni roboczych. <strong>Nie obejmuje uszkodzeń przypadkowych</strong> (upadki, pęknięcia ekranu, zalanie). Przy terminalach mobilnych wariant SV nie pokrywa najczęstszej przyczyny awarii — uszkodzeń mechanicznych.</p>
 
-<p>Naprawy wad fabrycznych i normalnego zużycia, wsparcie techniczne 8x5, naprawa w 5 dni roboczych. <strong>Nie obejmuje uszkodzeń przypadkowych</strong> (upadki, pęknięte ekrany, zalanie). Przy terminalach, które spadają — SV bez opcji Accidental Damage to za mało.</p>
+<h3>OneCare Essential — wariant rekomendowany</h3>
 
-<h3>OneCare Essential — standardowy (rekomendowany)</h3>
+<p>Pełny zakres SV oraz: <strong>pokrycie uszkodzeń przypadkowych</strong> (upadki, ekrany, zalanie), czas naprawy do 3 dni roboczych, wsparcie techniczne 8x5 z priorytetem, dostęp do dashboardu VisibilityIQ. Rekomendowane minimum dla terminali mobilnych.</p>
 
-<p>Wszystko co SV, plus: <strong>pokrycie uszkodzeń przypadkowych</strong> (upadki, ekrany, zalanie), naprawa w 3 dni robocze, dashboard VisibilityIQ OneCare. To minimum dla terminali mobilnych — pokrywa dokładnie to, co psuje się najczęściej.</p>
+<h3>OneCare Select — wariant premium</h3>
 
-<h3>OneCare Select — premium</h3>
-
-<p>Wszystko co Essential, plus: wsparcie techniczne <strong>24/7</strong>, <strong>wymiana urządzenia next-business-day</strong> z zachowaną konfiguracją. Dla flot 10+ terminali pracujących w trybie wielozmianowym, magazynów 24/7, linii produkcyjnych.</p>
+<p>Pełny zakres Essential oraz: wsparcie techniczne <strong>24/7</strong>, <strong>wymiana urządzenia następnego dnia roboczego</strong> ze skonfigurowanym oprogramowaniem. Dedykowany dla flot 10+ terminali, operacji wielozmianowych i linii produkcyjnych.</p>
 
 <h3>Porównanie wariantów</h3>
 
@@ -9816,145 +9814,142 @@ export const guides: Guide[] = [
 </tbody>
 </table>
 
-<p><strong>Rekomendacja TAKMA:</strong> dla terminali mobilnych — minimum Essential. SV bez pokrycia uszkodzeń przypadkowych ma sens tylko przy urządzeniach stacjonarnych (kioski, panele). Select — gdy każdy dzień przestoju kosztuje więcej niż sam kontrakt.</p>`
+<p><strong>Rekomendacja:</strong> dla terminali mobilnych — minimum Essential. Wariant SV bez pokrycia uszkodzeń przypadkowych jest uzasadniony wyłącznie przy urządzeniach stacjonarnych (kioski, panele informacyjne). Select — gdy koszt każdego dnia przestoju przewyższa koszt kontraktu.</p>`
     },
     {
       id: 'ceny-onecare',
-      heading: 'Ile kosztuje Zebra OneCare? Ceny netto 2026',
-      content: `<p><strong>Poniżej aktualne ceny kontraktów OneCare Essential na terminale mobilne Zebra — najbardziej poszukiwany wariant. Ceny netto PLN, stan na marzec 2026.</strong></p>
+      heading: 'Koszty Zebra OneCare — ceny netto z oferty TAKMA',
+      content: `<p><strong>Poniżej zestawienie cen kontraktów OneCare Essential na terminale mobilne Zebra dostępne w ofercie TAKMA. Ceny netto PLN, aktualne na dzień publikacji.</strong></p>
 
-<h3>OneCare Essential — terminale mobilne (3 lata)</h3>
-
-<table style="width:100%">
-<thead>
-<tr><th>Urządzenie</th><th>Cena urządzenia (od)</th><th>OneCare Essential 3 lata</th><th>% ceny</th><th>Part Number</th></tr>
-</thead>
-<tbody>
-<tr><td><strong><a href="/produkt/zebra-tc22">Zebra TC22</a></strong></td><td><span data-live-price="zebra-tc22">od 3 500 zł</span></td><td><strong>1 040 zł</strong></td><td>~30%</td><td>Z1AE-TC22XX-3C00</td></tr>
-<tr><td><strong><a href="/produkt/zebra-tc27">Zebra TC27</a></strong></td><td><span data-live-price="zebra-tc27">od 3 800 zł</span></td><td><strong>1 040 zł</strong></td><td>~27%</td><td>Z1AE-TC27XX-3C00</td></tr>
-<tr><td><strong><a href="/produkt/zebra-tc58">Zebra TC58</a></strong></td><td><span data-live-price="zebra-tc58">od 5 500 zł</span></td><td><strong>1 279 zł</strong></td><td>~23%</td><td>Z1AE-TC58XX-3C00</td></tr>
-<tr><td><strong><a href="/produkt/zebra-mc3300x">Zebra MC3300x</a></strong></td><td><span data-live-price="zebra-mc3300x">od 6 000 zł</span></td><td><strong>1 111 zł</strong></td><td>~19%</td><td>Z1AE-MC33XX-3C00</td></tr>
-<tr><td><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a></strong></td><td><span data-live-price="zebra-mc3400">od 8 000 zł</span></td><td><strong>1 156 zł</strong></td><td>~14%</td><td>Z1AE-MC34XX-3C00</td></tr>
-<tr><td><strong><a href="/produkt/zebra-mc9400">Zebra MC9400</a></strong></td><td><span data-live-price="zebra-mc9400">od 16 000 zł</span></td><td><strong>1 631 zł</strong></td><td>~10%</td><td>Z1AE-MC93XX-3C00</td></tr>
-</tbody>
-</table>
-
-<h3>OneCare Essential — terminale mobilne (5 lat)</h3>
+<h3>OneCare Essential — terminale mobilne (3 i 5 lat)</h3>
 
 <table style="width:100%">
 <thead>
-<tr><th>Urządzenie</th><th>OneCare Essential 5 lat</th><th>Part Number</th></tr>
+<tr><th>Urządzenie</th><th>Cena urządzenia (netto)</th><th>Essential 3 lata</th><th>Essential 5 lat</th><th>% ceny (3 lata)</th><th>Part Number (3 lata)</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Zebra TC22</strong></td><td><strong>1 734 zł</strong></td><td>Z1AE-TC22XX-5C00</td></tr>
-<tr><td><strong>Zebra TC27</strong></td><td><strong>1 734 zł</strong></td><td>Z1AE-TC27XX-5C00</td></tr>
-<tr><td><strong>Zebra TC58</strong></td><td><strong>2 089 zł</strong></td><td>Z1AE-TC58XX-5C00</td></tr>
-<tr><td><strong>Zebra MC3300x</strong></td><td><strong>1 815 zł</strong></td><td>Z1AE-MC33XX-5C00</td></tr>
-<tr><td><strong>Zebra MC3400</strong></td><td><strong>1 927 zł</strong></td><td>Z1AE-MC34XX-5C00</td></tr>
-<tr><td><strong>Zebra MC9400</strong></td><td><strong>2 665 zł</strong></td><td>Z1AE-MC93XX-5C00</td></tr>
+<tr><td><strong><a href="/produkt/zebra-tc22">Zebra TC22</a></strong></td><td>2 491,87 zł</td><td><strong>1 025,02 zł</strong></td><td>1 708,39 zł</td><td>41%</td><td>Z1AE-TC22XX-3C00</td></tr>
+<tr><td><strong><a href="/produkt/zebra-tc27">Zebra TC27</a></strong></td><td>2 216,26 zł</td><td><strong>1 040,30 zł</strong></td><td>1 733,86 zł</td><td>47%</td><td>Z1AE-TC27XX-3C00</td></tr>
+<tr><td><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a></strong></td><td>4 628,91 zł</td><td><strong>1 156,42 zł</strong></td><td>1 927,35 zł</td><td>25%</td><td>Z1AE-MC34XX-3C00</td></tr>
+<tr><td><strong><a href="/produkt/zebra-mc9400">Zebra MC9400</a></strong></td><td>6 302,49 zł</td><td><strong>1 513,85 zł</strong></td><td>2 523,04 zł</td><td>24%</td><td>Z1AE-MC93XX-3C00</td></tr>
 </tbody>
 </table>
 
-<p><strong>Kluczowy insight:</strong> im droższy terminal, tym OneCare procentowo tańszy. Przy MC9400 za 16 000 zł — Essential na 3 lata to zaledwie 10% ceny urządzenia. Jedna poważna naprawa (wymiana płyty głównej: 3 000–5 000 zł) przekracza koszt całego kontraktu.</p>
+<p><strong>Kontekst:</strong> przy drukarkach koszt OneCare stanowi 30–90% wartości urządzenia, a klient ma dostęp do tańszego serwisu lokalnego. Przy terminalach proporcja wynosi 24–47%, a alternatywa serwisowa nie istnieje. To fundamentalna różnica wpływająca na decyzję zakupową.</p>
 
-<h3>A co z drukarkami?</h3>
+<h3>Drukarki etykiet — kontekst cenowy</h3>
 
-<p>Kontrakty OneCare na drukarki etykiet nie są dostępne przez standardowych dystrybutorów — zamawiasz je bezpośrednio u Zebra lub u nas. Ale zanim to zrobisz, przeczytaj <a href="#drukarki-vs-terminale">dlaczego przy drukarkach OneCare to opcja, nie konieczność</a>.</p>
+<table style="width:100%">
+<thead>
+<tr><th>Urządzenie</th><th>Cena netto</th><th>OneCare 3 lata</th><th>Alternatywa</th></tr>
+</thead>
+<tbody>
+<tr><td><strong><a href="/produkt/zebra-zd421d">Zebra ZD421d</a></strong></td><td><span data-live-price="zebra-zd421d">od 1 472 zł</span></td><td>~500 zł</td><td>Serwis TAKMA — szybciej i korzystniej cenowo</td></tr>
+<tr><td><strong><a href="/produkt/zebra-zt231">Zebra ZT231</a></strong></td><td><span data-live-price="zebra-zt231">od 2 550 zł</span></td><td>~2 327 zł</td><td>Serwis TAKMA — korzystniejszy cenowo</td></tr>
+<tr><td><strong><a href="/produkt/zebra-zt411">Zebra ZT411</a></strong></td><td><span data-live-price="zebra-zt411">od 5 078 zł</span></td><td>~2 500 zł</td><td>Serwis TAKMA</td></tr>
+</tbody>
+</table>
 
-<p><strong>OneCare Select</strong> (wariant premium z wymianą next-business-day) zamawiany jest bezpośrednio u Zebra Technologies — <a href="/kontakt">zapytaj nas o wycenę</a>.</p>`
+<p>Kontrakty OneCare na drukarki etykiet nie są dostępne przez standardowych dystrybutorów — zamawiasz je bezpośrednio u Zebra lub u nas. Zanim to zrobisz, przeczytaj <a href="#drukarki-vs-terminale">dlaczego przy drukarkach OneCare jest opcjonalny</a>.</p>
+
+<p>Ceny kontraktów <strong>OneCare Select</strong> (wariant premium z wymianą urządzenia next-business-day) dostępne na zapytanie — <a href="/kontakt">skontaktuj się z nami</a>.</p>`
     },
     {
       id: 'scenariusze-roi',
-      heading: 'Kiedy OneCare się opłaca? Trzy scenariusze z życia',
-      content: `<p><strong>Opłacalność OneCare zależy od trzech czynników: ile terminali masz, w jakich warunkach pracują i jaki jest koszt przestoju. Oto trzy realne scenariusze z polskich magazynów i biur.</strong></p>
+      heading: 'Analiza opłacalności — trzy scenariusze wdrożeniowe',
+      content: `<p><strong>Opłacalność kontraktu OneCare zależy od trzech czynników: liczby terminali w organizacji, warunków eksploatacji i kosztu przestoju operacyjnego.</strong></p>
 
 <h3>Scenariusz 1: Flota 10 terminali TC22 w magazynie e-commerce</h3>
 
-<p>Inwestycja: 10 terminali <a href="/produkt/zebra-tc22">Zebra TC22</a> x <span data-live-price="zebra-tc22">ok. 3 500 zł</span> = ~35 000 zł.<br>OneCare Essential 3 lata: 1 040 zł x 10 = <strong>10 400 zł</strong>.</p>
+<p>Inwestycja: 10 terminali <a href="/produkt/zebra-tc22">Zebra TC22</a> x 2 491,87 zł = 24 919 zł netto.<br>OneCare Essential 3 lata: 10 x 1 025,02 zł = <strong>10 250 zł</strong>.</p>
 
-<p>Statystyka branżowa: 10–15% terminali w magazynie wymaga naprawy rocznie (upadki, pęknięte ekrany). W flocie 10 sztuk — to 1–2 naprawy w roku.</p>
+<p>Dane rynkowe: ok. 10–15% terminali mobilnych w środowisku magazynowym wymaga naprawy rocznie (uszkodzenia mechaniczne). W flocie 10 sztuk to 1–2 naprawy w roku.</p>
 
-<p>Bez OneCare: 1–2 naprawy x 1 500 zł = 1 500–3 000 zł/rok + 3–6 tygodni przestoju per naprawa + brak terminala zastępczego.</p>
+<p>Bez OneCare: 1–2 naprawy x 1 500 zł = 1 500–3 000 zł/rok + 3–6 tygodni przestoju na naprawę + brak urządzenia zastępczego.</p>
 
-<p>Z Essential: naprawy w 3 dni robocze, zero niespodzianek budżetowych. Koszt roczny: 3 467 zł (10 400 zł / 3 lata).</p>
+<p>Z Essential: naprawy w 3 dni robocze, przewidywalny budżet. Koszt roczny: 3 417 zł (10 250 zł / 3 lata).</p>
 
-<p><strong>Werdykt: OneCare Essential to MUST-HAVE.</strong> Już przy jednej poważnej naprawie rocznie kontrakt się zwraca. A kosztu przestoju (magazynier bez terminala = wolniejsza kompletacja = opóźnione wysyłki) nawet nie liczymy.</p>
+<p><strong>Wniosek:</strong> kontrakt zwraca się już przy jednej poważnej naprawie w okresie jego obowiązywania. Dodatkowa wartość — eliminacja ryzyka nieprzewidzianych wydatków i minimalizacja przestojów operacyjnych.</p>
 
-<h3>Scenariusz 2: 3 terminale MC9400 w mroźni</h3>
+<h3>Scenariusz 2: 3 terminale MC9400 w warunkach ekstremalnych (mroźnia)</h3>
 
-<p>Inwestycja: 3 terminale <a href="/produkt/zebra-mc9400">Zebra MC9400</a> x <span data-live-price="zebra-mc9400">ok. 16 000 zł</span> = ~48 000 zł.<br>OneCare Essential 3 lata: 1 631 zł x 3 = <strong>4 893 zł</strong>.</p>
+<p>Inwestycja: 3 terminale <a href="/produkt/zebra-mc9400">Zebra MC9400</a> x 6 302,49 zł = 18 907 zł netto.<br>OneCare Essential 3 lata: 3 x 1 513,85 zł = <strong>4 542 zł</strong>.</p>
 
-<p>MC9400 jest wytrzymały (IP67, upadki z 2,4 m, praca od -30 do +50 st. C) — awarii jest mniej niż przy TC22. Ale gdy się zdarzą, naprawa jest kosmicznie droga: wymiana płyty głównej to 3 000–5 000 zł, ekran 2 000–3 500 zł.</p>
+<p>MC9400 to konstrukcja wzmocniona (IP67, odporność na upadki z 2,4 m, praca od -30 do +50 st. C) — częstotliwość awarii jest niższa niż w przypadku TC22. Jednak koszt pojedynczej naprawy (np. wymiana płyty głównej: 3 000–5 000 zł) przekracza wartość całego kontraktu.</p>
 
-<p><strong>Werdykt: OneCare = polisa ubezpieczeniowa.</strong> 4 893 zł za 3 lata to 3,4% inwestycji w sprzęt. Nawet jeśli ani razu nie skorzystasz — spokój jest wart tej ceny. A jeśli jedna naprawa się zdarzy, kontrakt zwraca się natychmiast.</p>
+<p><strong>Wniosek:</strong> OneCare pełni tu funkcję ubezpieczenia — jest uzasadniony nawet przy niskim prawdopodobieństwie awarii. 4 542 zł za 3 lata to 24% wartości inwestycji w sprzęt.</p>
 
 <h3>Scenariusz 3: 1 drukarka ZD421d w biurze</h3>
 
 <p>Inwestycja: <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> — <span data-live-price="zebra-zd421d">od 1 472 zł</span>.</p>
 
-<p><strong>Werdykt: NIE KUPUJ OneCare na drukarkę.</strong> Zamiast tego — napisz do <a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>. Naprawimy drukarkę szybciej i taniej: wymiana głowicy 350–500 zł, diagnostyka bezpłatna, czas 3–7 dni. Mamy oryginalne części Zebra na stanie. Więcej o naszym serwisie: <a href="/serwis">strona serwisowa TAKMA</a>.</p>
+<p><strong>Wniosek:</strong> w tym przypadku OneCare nie jest optymalnym rozwiązaniem. Serwis TAKMA (<a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>) oferuje naprawę drukarek szybciej i w korzystniejszej cenie — np. wymiana głowicy: 350–500 zł, diagnostyka bezpłatna, czas realizacji: 3–7 dni roboczych. Więcej o naszym serwisie: <a href="/serwis">strona serwisowa TAKMA</a>.</p>
 
 <h3>Podsumowanie scenariuszy</h3>
 
 <table style="width:100%">
 <thead>
-<tr><th>Scenariusz</th><th>Rekomendacja</th><th>Dlaczego</th></tr>
+<tr><th>Scenariusz</th><th>Rekomendacja</th><th>Uzasadnienie</th></tr>
 </thead>
 <tbody>
 <tr><td><strong>Flota terminali (5+ szt.)</strong></td><td><strong>OneCare Essential</strong></td><td>Brak alternatywy serwisowej, 1 naprawa = zwrot inwestycji</td></tr>
-<tr><td><strong>Terminale w ekstremalnych warunkach</strong></td><td><strong>OneCare Essential lub Select</strong></td><td>Droga naprawa, polisa ubezpieczeniowa, spokój ducha</td></tr>
-<tr><td><strong>Drukarka etykiet (1–5 szt.)</strong></td><td><strong>Serwis TAKMA</strong></td><td>Lokalny serwis, szybciej, taniej, części na stanie</td></tr>
+<tr><td><strong>Terminale w warunkach ekstremalnych</strong></td><td><strong>OneCare Essential lub Select</strong></td><td>Wysoki koszt naprawy, funkcja ubezpieczeniowa</td></tr>
+<tr><td><strong>Drukarka etykiet (1–5 szt.)</strong></td><td><strong>Serwis TAKMA</strong></td><td>Serwis lokalny, krótszy czas, konkurencyjne ceny</td></tr>
 </tbody>
 </table>`
     },
     {
       id: 'pulapki',
-      heading: 'Na co uważać? Pułapki i ograniczenia OneCare',
-      content: `<p><strong>OneCare to bardzo dobry produkt, ale ma kilka ograniczeń, o których sprzedawcy rzadko mówią. Oto pięć najważniejszych.</strong></p>
+      heading: 'Istotne ograniczenia i warunki kontraktu',
+      content: `<p><strong>Kontrakt OneCare ma kilka istotnych ograniczeń, które należy uwzględnić przed zakupem.</strong></p>
 
 <h3>1. Termin zakupu: 30 dni od daty zakupu urządzenia</h3>
 
-<p>Kontrakt OneCare możesz kupić <strong>tylko w ciągu 30 dni od daty zakupu urządzenia</strong>. Po tym terminie — jedyną opcją jest odnowienie (Z1RE), ale wymaga to aktywnego kontraktu, którego nigdy nie miałeś. Wniosek: kupuj OneCare razem z terminalem, nie odkładaj decyzji.</p>
+<p>Kontrakt OneCare należy wykupić <strong>w ciągu 30 dni od daty zakupu urządzenia</strong>. Po tym terminie opcja jest niedostępna. Odnowienie (Part Number Z1RE-...) dotyczy wyłącznie przedłużenia istniejącego, aktywnego kontraktu. Rekomendujemy zamawianie OneCare równocześnie z zakupem terminala.</p>
 
-<h3>2. Baterie NIE są objęte</h3>
+<h3>2. Okres karencji (30 dni)</h3>
 
-<p>Baterie w terminalach mobilnych traktowane są jako materiał eksploatacyjny — standardowy OneCare ich nie pokrywa. Zużyta bateria po 2–3 latach intensywnego użytkowania? Kupujesz nową. Zebra oferuje osobną opcję <strong>Battery Refresh</strong>, ale to dodatkowy koszt.</p>
+<p>Przez pierwsze 30 dni od aktywacji kontraktu naprawy mogą nie być realizowane w ramach OneCare. W tym okresie obowiązuje standardowa gwarancja producenta.</p>
 
-<h3>3. LifeGuard for Android — ukryta wartość kontraktu</h3>
+<h3>3. Baterie są wyłączone z zakresu</h3>
 
-<p>LifeGuard for Android to program aktualizacji bezpieczeństwa Androida na terminalach Zebra. <strong>Aktualizacje wymagają aktywnego kontraktu OneCare</strong> (lub osobnej subskrypcji TSS). Bez kontraktu Twoje terminale nie otrzymają patchy bezpieczeństwa — to ryzyko dla firm przetwarzających dane osobowe (RODO). Szczególnie istotne w logistyce, handlu i ochronie zdrowia.</p>
+<p>Baterie w terminalach mobilnych traktowane są jako materiał eksploatacyjny, nieobjęty kontraktem OneCare. Po 2–3 latach intensywnej eksploatacji konieczny jest zakup nowej baterii. Zebra oferuje osobną opcję <strong>Battery Refresh</strong> jako dodatkowy moduł.</p>
 
-<h3>4. Urządzenie musi być niemodyfikowane</h3>
+<h3>4. LifeGuard for Android — aktualizacje bezpieczeństwa</h3>
 
-<p>Jeśli wymieniłeś części na nieoryginalne lub zmodyfikowałeś oprogramowanie systemowe — Zebra może odmówić naprawy w ramach OneCare. Korzystaj wyłącznie z oryginalnych akcesoriów i baterii Zebra.</p>
+<p>Aktualizacje bezpieczeństwa systemu Android na terminalach Zebra (program LifeGuard) wymagają aktywnego kontraktu OneCare lub osobnej subskrypcji TSS. Bez aktywnego kontraktu urządzenia nie otrzymują poprawek zabezpieczeń — istotne ryzyko dla organizacji przetwarzających dane osobowe (zgodność z RODO).</p>
 
-<h3>5. Kosmetyczne uszkodzenia plastiku</h3>
+<h3>5. Wymóg oryginalności podzespołów</h3>
 
-<p>OneCare pokrywa uszkodzenia wpływające na funkcjonalność (pęknięty ekran, niesprawny skaner). Zarysowania i otarcia obudowy, które nie wpływają na działanie urządzenia, nie kwalifikują się do naprawy. To normalne zużycie eksploatacyjne.</p>`
+<p>Urządzenie z wymienionymi na nieoryginalne częściami lub ze zmodyfikowanym oprogramowaniem systemowym może zostać odrzucone z obsługi serwisowej w ramach kontraktu OneCare.</p>
+
+<h3>6. Dostępność wariantu Select</h3>
+
+<p>Nie wszystkie modele terminali kwalifikują się do wariantu Select. Dostępność należy potwierdzić przed zakupem — <a href="/kontakt">skontaktuj się z nami</a>.</p>`
     },
     {
       id: 'drukarki-vs-terminale',
-      heading: 'Drukarki Zebra — dlaczego tutaj OneCare to opcja, nie konieczność',
-      content: `<p><strong>Przy drukarkach Zebra sytuacja jest fundamentalnie inna niż przy terminalach. Jako partner serwisowy Zebra, mamy dostęp do oryginalnych części zamiennych, głowic drukujących, wałków i mechanizmów. Naprawiamy drukarki Zebra od ponad 20 lat.</strong></p>
+      heading: 'Drukarki Zebra — dlaczego OneCare jest opcjonalny',
+      content: `<p><strong>Przy drukarkach Zebra sytuacja serwisowa wygląda inaczej niż przy terminalach. Jako partner serwisowy Zebra, TAKMA dysponuje dostępem do oryginalnych części zamiennych — głowic drukujących, wałków, mechanizmów podawania. Serwisujemy drukarki Zebra od ponad 20 lat.</strong></p>
 
-<p>Nasz serwis drukarek (<a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>):</p>
+<p>Serwis drukarek TAKMA (<a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>):</p>
 
 <ul>
-<li>Czas naprawy: <strong>3–7 dni roboczych</strong> (vs 3–5 dni OneCare + czas wysyłki zagranicznej)</li>
+<li>Czas naprawy: <strong>3–7 dni roboczych</strong> (porównywalny z OneCare, bez wysyłki zagranicznej)</li>
 <li>Diagnostyka: <strong>bezpłatna</strong></li>
-<li>Części oryginalne Zebra na stanie</li>
-<li>Serwis gwarancyjny i pogwarancyjny</li>
-<li>Ceny niższe niż OneCare w większości przypadków</li>
+<li>Oryginalne części Zebra dostępne z magazynu</li>
+<li>Obsługa gwarancyjna i pogwarancyjna</li>
+<li>Ceny w większości przypadków niższe niż kontrakt OneCare</li>
 </ul>
 
-<p>Porównanie kosztów napraw drukarek — OneCare vs serwis TAKMA:</p>
+<p>Porównanie kosztów napraw drukarek — serwis TAKMA:</p>
 
 <table style="width:100%">
 <thead>
 <tr><th>Naprawa</th><th>Serwis TAKMA</th><th>Komentarz</th></tr>
 </thead>
 <tbody>
-<tr><td>Wymiana głowicy (<a href="/produkt/zebra-zd421d">ZD421d</a>)</td><td>350–500 zł</td><td>Części na stanie, wymiana tego samego dnia</td></tr>
+<tr><td>Wymiana głowicy (<a href="/produkt/zebra-zd421d">ZD421d</a>)</td><td>350–500 zł</td><td>Części na stanie, realizacja tego samego dnia</td></tr>
 <tr><td>Wymiana głowicy (<a href="/produkt/zebra-zt411">ZT411</a>)</td><td>800–1 200 zł</td><td>Oryginalna głowica Zebra</td></tr>
 <tr><td>Naprawa mechanizmu</td><td>200–400 zł</td><td>Wałki, sensory, rolki</td></tr>
 <tr><td>Diagnostyka</td><td>0 zł</td><td>Bezpłatna</td></tr>
@@ -9962,94 +9957,93 @@ export const guides: Guide[] = [
 </tbody>
 </table>
 
-<p>Przy terminalach mobilnych nie mamy takiej możliwości — Zebra nie sprzedaje części do terminali zewnętrznym serwisom. Dlatego <strong>na terminale rekomendujemy OneCare, a na drukarki — nasz serwis</strong>.</p>
+<p>Przy terminalach mobilnych i skanerach takiej możliwości nie ma — Zebra nie udostępnia części do tych urządzeń zewnętrznym serwisom. Dlatego jedyną opcją jest kontrakt OneCare lub naprawa bezpośrednio w Zebra Repair Center.</p>
 
 <p>Potrzebujesz naprawy drukarki Zebra? <a href="/serwis">Sprawdź nasz serwis</a> lub napisz bezpośrednio do <a href="https://www.serwis-zebry.pl/kontakt">serwis-zebry.pl</a>.</p>`
     },
     {
       id: 'podsumowanie',
       heading: 'Podsumowanie',
-      content: `<p><strong>Zebra OneCare to rozszerzony pakiet serwisowy od Zebra Technologies — obejmuje naprawy, pokrycie uszkodzeń przypadkowych, wsparcie techniczne i aktualizacje systemu (LifeGuard for Android).</strong></p>
+      content: `<p><strong>Zebra OneCare to rozszerzony program serwisowy producenta obejmujący naprawy, pokrycie uszkodzeń przypadkowych, wsparcie techniczne i aktualizacje oprogramowania (LifeGuard for Android).</strong></p>
 
-<p>Trzy warianty: <strong>SV</strong> (podstawowy, bez pokrycia upadków), <strong>Essential</strong> (rekomendowany — z pokryciem uszkodzeń, naprawa w 3 dni) i <strong>Select</strong> (premium — wymiana urządzenia next-business-day, wsparcie 24/7).</p>
+<p>Trzy warianty: <strong>SV</strong> (podstawowy), <strong>Essential</strong> (rekomendowany — z pokryciem uszkodzeń mechanicznych, naprawa w 3 dni robocze) i <strong>Select</strong> (premium — wymiana urządzenia next-business-day, wsparcie 24/7).</p>
 
-<p><strong>Terminale mobilne (TC22, TC27, TC58, MC3400, MC9400): OneCare Essential to konieczność.</strong> Brak realnej alternatywy serwisowej — Zebra nie udostępnia części do terminali zewnętrznym serwisom. Koszt: 10–30% ceny terminala za 3 lata. Jedna poważna naprawa zwraca koszt kontraktu.</p>
+<p><strong>Terminale mobilne (TC22, TC27, MC3400, MC9400):</strong> kontrakt OneCare Essential jest niezbędny. Na polskim rynku nie istnieje alternatywa serwisowa — Zebra nie udostępnia części do terminali zewnętrznym serwisom. Koszt: 24–47% ceny terminala za 3 lata, porównywalny z kosztem jednej poważnej naprawy.</p>
 
-<p><strong>Drukarki etykiet (ZD421d, ZT231, ZT411): OneCare to opcja, nie konieczność.</strong> TAKMA jako partner serwisowy Zebra naprawia drukarki szybciej i taniej — <a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>, diagnostyka bezpłatna, części oryginalne na stanie.</p>
+<p><strong>Drukarki etykiet (ZD421d, ZT231, ZT411):</strong> OneCare jest opcjonalny. Serwis TAKMA (<a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>) oferuje naprawy drukarek w konkurencyjnych cenach i terminach — diagnostyka bezpłatna, oryginalne części na stanie.</p>
 
-<p>Pamiętaj: kup OneCare w ciągu <strong>30 dni</strong> od zakupu terminala. Baterie nie są objęte. LifeGuard (patche bezpieczeństwa Androida) wymaga aktywnego kontraktu.</p>
+<p>Kontrakt należy wykupić w ciągu <strong>30 dni</strong> od zakupu urządzenia. Baterie są wyłączone z zakresu. Aktualizacje LifeGuard for Android (patche bezpieczeństwa) wymagają aktywnego kontraktu.</p>
 
-<p>Chcesz kupić terminal z OneCare lub potrzebujesz wyceny kontraktu? <a href="/kontakt">Skontaktuj się z nami</a> — wycena w 24h.</p>`
+<p>Potrzebujesz wyceny terminala z kontraktem OneCare? <a href="/kontakt">Skontaktuj się z nami</a> — wycena w ciągu 24 godzin.</p>`
     },
   ],
   faq: [
     {
       question: 'Co to jest Zebra OneCare?',
-      answer: 'Zebra OneCare to rozszerzony program serwisowy producenta urządzeń AutoID, który wykracza poza standardową gwarancję. Obejmuje naprawy awarii, pokrycie uszkodzeń przypadkowych (upadki, zalanie), wymianę głowic drukujących, wsparcie techniczne oraz aktualizacje oprogramowania (LifeGuard for Android). Dostępny w 3 wariantach: Special Value (SV), Essential i Select. Kontrakt można wykupić w ciągu 30 dni od zakupu urządzenia.',
+      answer: 'Zebra OneCare to rozszerzony program serwisowy producenta urządzeń AutoID, wykraczający poza standardową gwarancję. Obejmuje naprawy awarii, pokrycie uszkodzeń przypadkowych (upadki, zalanie), wymianę głowic drukujących, wsparcie techniczne oraz aktualizacje oprogramowania (LifeGuard for Android). Dostępny w 3 wariantach: Special Value (SV), Essential i Select. Kontrakt należy wykupić w ciągu 30 dni od zakupu urządzenia.',
     },
     {
       question: 'Ile kosztuje Zebra OneCare Essential na terminal TC22?',
-      answer: 'OneCare Essential na terminal Zebra TC22 kosztuje 1 040 zł netto za 3 lata (Part Number: Z1AE-TC22XX-3C00) lub 1 734 zł netto za 5 lat (Z1AE-TC22XX-5C00). To odpowiednio ok. 30% i 50% ceny terminala. W przeliczeniu na miesiąc — 29 zł. Jedna naprawa pękniętego ekranu (800-2 000 zł) pokrywa koszt całego 3-letniego kontraktu.',
+      answer: 'OneCare Essential na terminal Zebra TC22 kosztuje 1 025,02 zł netto za 3 lata (Part Number: Z1AE-TC22XX-3C00) lub 1 708,39 zł netto za 5 lat (Z1AE-TC22XX-5C00). Przy cenie terminala 2 491,87 zł to odpowiednio 41% i 69% wartości urządzenia. Jedna naprawa pękniętego ekranu (800-2 000 zł) pokrywa koszt całego 3-letniego kontraktu.',
     },
     {
       question: 'Jaka jest różnica między OneCare Essential a Select?',
-      answer: 'OneCare Essential obejmuje naprawy w 3 dni robocze, pokrycie uszkodzeń przypadkowych i wsparcie 8x5. OneCare Select dodaje: wymianę urządzenia next-business-day (z zachowaną konfiguracją), wsparcie techniczne 24/7 i ekspresową wysyłkę. Select jest rekomendowany dla flot 10+ terminali pracujących w trybie wielozmianowym, gdzie każdy dzień przestoju generuje duże koszty.',
+      answer: 'OneCare Essential obejmuje naprawy w 3 dni robocze, pokrycie uszkodzeń przypadkowych i wsparcie 8x5. OneCare Select dodaje: wymianę urządzenia next-business-day z zachowaną konfiguracją, wsparcie techniczne 24/7 i ekspresową wysyłkę. Select jest rekomendowany dla flot 10+ terminali pracujących w trybie wielozmianowym, gdzie każdy dzień przestoju generuje istotne koszty operacyjne.',
     },
     {
-      question: 'Czy warto kupić OneCare na drukarkę etykiet Zebra?',
-      answer: 'W większości przypadków nie. Drukarki Zebra można naprawić w autoryzowanym serwisie lokalnym (np. serwis-zebry.pl) — szybciej (3-7 dni) i taniej niż przez OneCare. Serwis ma oryginalne części na stanie, diagnostyka jest bezpłatna. OneCare na drukarkę ma sens tylko przy dużych flotach (10+ drukarek) w trudnych warunkach, gdzie chcesz mieć jeden kontrakt na całą infrastrukturę.',
+      question: 'Czy OneCare na drukarkę etykiet Zebra jest opłacalny?',
+      answer: 'W większości przypadków nie. Drukarki Zebra można naprawić w autoryzowanym serwisie lokalnym (serwis-zebry.pl) — w czasie 3-7 dni i w korzystniejszej cenie niż kontrakt OneCare. Serwis dysponuje oryginalnymi częściami, diagnostyka jest bezpłatna. OneCare na drukarkę jest uzasadniony przy dużych flotach (10+ urządzeń) w wymagających warunkach eksploatacyjnych.',
     },
     {
       question: 'Ile kosztuje OneCare na terminal MC9400?',
-      answer: 'OneCare Essential na terminal Zebra MC9400 kosztuje 1 631 zł netto za 3 lata (Z1AE-MC93XX-3C00) lub 2 665 zł netto za 5 lat (Z1AE-MC93XX-5C00). Przy cenie terminala od 16 000 zł to zaledwie 10% wartości urządzenia za 3 lata ochrony. Jedna naprawa płyty głównej MC9400 (3 000-5 000 zł) przekracza koszt całego kontraktu.',
+      answer: 'OneCare Essential na terminal Zebra MC9400 kosztuje 1 513,85 zł netto za 3 lata (Z1AE-MC93XX-3C00) lub 2 523,04 zł netto za 5 lat (Z1AE-MC93XX-5C00). Przy cenie terminala 6 302,49 zł to 24% wartości urządzenia za 3 lata ochrony. Jedna naprawa płyty głównej MC9400 (3 000-5 000 zł) przekracza wartość całego kontraktu.',
     },
     {
       question: 'Czy OneCare obejmuje uszkodzenia mechaniczne (upadki)?',
-      answer: 'OneCare Essential i Select obejmują uszkodzenia przypadkowe: upadki, pęknięte ekrany, zalanie. OneCare SV standardowo tego nie pokrywa — w SV uszkodzenia przypadkowe są opcją (za dopłatą) i dostępne tylko dla terminali mobilnych. Dla terminali pracujących w magazynach, logistyce i produkcji — Essential z pokryciem upadków to absolutne minimum.',
+      answer: 'OneCare Essential i Select obejmują uszkodzenia przypadkowe: upadki, pęknięte ekrany, zalanie. OneCare SV standardowo tego nie pokrywa — w wariancie SV uszkodzenia przypadkowe są opcją dostępną za dopłatą, wyłącznie dla terminali mobilnych. Dla terminali pracujących w magazynach, logistyce i produkcji wariant Essential z pokryciem uszkodzeń mechanicznych jest rekomendowanym minimum.',
     },
     {
       question: 'Czy OneCare obejmuje baterie w terminalach?',
-      answer: 'Nie — baterie w terminalach mobilnych traktowane są jako materiały eksploatacyjne i standardowy OneCare ich nie pokrywa. Zużyta bateria po 2-3 latach wymaga zakupu nowej. Zebra oferuje osobną opcję Battery Refresh/Maintenance, ale to dodatkowy koszt. Oryginalne baterie Zebra (np. PowerPrecision+ 7000 mAh do MC3400) dostępne są w sklepie TAKMA.',
+      answer: 'Nie — baterie w terminalach mobilnych traktowane są jako materiały eksploatacyjne i nie są objęte standardowym kontraktem OneCare. Po 2-3 latach intensywnej eksploatacji konieczny jest zakup nowej baterii. Zebra oferuje osobną opcję Battery Refresh/Maintenance jako dodatkowy moduł kontraktowy. Oryginalne baterie Zebra (np. PowerPrecision+ 7000 mAh do MC3400) dostępne są w ofercie TAKMA.',
     },
     {
-      question: 'Jak długo po zakupie urządzenia można dokupić OneCare?',
-      answer: 'OneCare można kupić w ciągu 30 dni od daty zakupu urządzenia. Po tym terminie nie ma możliwości wykupienia nowego kontraktu. Odnowienie (Part Number Z1RE-...) dotyczy tylko przedłużenia istniejącego, aktywnego kontraktu. Dlatego rekomendujemy kupowanie OneCare razem z terminalem — nie odkładaj decyzji.',
+      question: 'Jak długo po zakupie urządzenia można wykupić OneCare?',
+      answer: 'Kontrakt OneCare należy wykupić w ciągu 30 dni od daty zakupu urządzenia. Po tym terminie nie ma możliwości zawarcia nowego kontraktu. Odnowienie (Part Number Z1RE-...) dotyczy wyłącznie przedłużenia istniejącego, aktywnego kontraktu. Rekomendujemy zamawianie OneCare równocześnie z zakupem terminala.',
     },
     {
-      question: 'Co to jest LifeGuard for Android i czy jest w OneCare?',
-      answer: 'LifeGuard for Android to program Zebry dostarczający aktualizacje bezpieczeństwa Androida na terminale mobilne po zakończeniu wsparcia przez Google. Aktualizacje wymagają aktywnego kontraktu OneCare (dowolny wariant: SV, Essential, Select) lub osobnej subskrypcji TSS. Bez kontraktu terminale nie otrzymują patchy bezpieczeństwa — ryzyko dla firm przetwarzających dane osobowe (RODO).',
+      question: 'Co to jest LifeGuard for Android i czy jest częścią OneCare?',
+      answer: 'LifeGuard for Android to program Zebry dostarczający aktualizacje bezpieczeństwa systemu Android na terminale mobilne po zakończeniu wsparcia przez Google. Aktualizacje wymagają aktywnego kontraktu OneCare (dowolny wariant: SV, Essential, Select) lub osobnej subskrypcji TSS. Bez aktywnego kontraktu terminale nie otrzymują poprawek zabezpieczeń — istotne ryzyko dla organizacji przetwarzających dane osobowe (RODO).',
     },
     {
       question: 'Ile trwa naprawa w ramach OneCare?',
-      answer: 'Czas naprawy zależy od wariantu: OneCare SV — do 5 dni roboczych od dostarczenia urządzenia do serwisu, Essential — do 3 dni roboczych, Select — wymiana urządzenia next-business-day (bez naprawy, od razu nowy terminal z konfiguracją). Do czasu naprawy (SV/Essential) dochodzi czas wysyłki międzynarodowej — urządzenie jest serwisowane w Zebra Repair Center w Europie.',
+      answer: 'Czas naprawy zależy od wariantu kontraktu: OneCare SV — do 5 dni roboczych od dostarczenia urządzenia do serwisu, Essential — do 3 dni roboczych, Select — wymiana urządzenia next-business-day z zachowaną konfiguracją. Do czasu naprawy w wariantach SV i Essential dochodzi czas wysyłki międzynarodowej — urządzenia serwisowane są w Zebra Repair Center w Europie.',
     },
     {
-      question: 'Czym się różni OneCare od standardowej gwarancji Zebra?',
-      answer: 'Standardowa gwarancja Zebra na terminale mobilne trwa 12 miesięcy i pokrywa wyłącznie wady fabryczne. OneCare rozszerza ochronę o: uszkodzenia przypadkowe (upadki, zalanie), dłuższy okres (3 lub 5 lat), szybszą naprawę (3 dni vs brak SLA), wsparcie techniczne, aktualizacje LifeGuard for Android i dashboard VisibilityIQ. Gwarancja nie pokrywa upadków — OneCare Essential tak.',
+      question: 'Czym różni się OneCare od standardowej gwarancji Zebra?',
+      answer: 'Standardowa gwarancja Zebra na terminale mobilne trwa 12 miesięcy i obejmuje wyłącznie wady fabryczne. OneCare rozszerza ochronę o: uszkodzenia przypadkowe (upadki, zalanie), dłuższy okres (3 lub 5 lat), gwarantowany czas naprawy (3 dni w Essential), wsparcie techniczne, aktualizacje LifeGuard for Android i dashboard VisibilityIQ. Gwarancja standardowa nie pokrywa uszkodzeń mechanicznych — OneCare Essential tak.',
     },
     {
       question: 'Czy OneCare obejmuje wymianę głowicy drukującej?',
-      answer: 'OneCare Essential i Select obejmują wymianę zużytych głowic drukujących w drukarkach etykiet Zebra. OneCare SV nie pokrywa głowic. Przy tym — jeśli masz jedną drukarkę, taniej jest wymienić głowicę w serwis-zebry.pl (350-500 zł za drukarkę biurkową) niż płacić za cały kontrakt. OneCare na głowice opłaca się przy flotach 5+ drukarek.',
+      answer: 'OneCare Essential i Select obejmują wymianę zużytych głowic drukujących w drukarkach etykiet Zebra. OneCare SV nie pokrywa głowic. W przypadku pojedynczej drukarki korzystniejsza cenowo jest wymiana głowicy w serwis-zebry.pl (350-500 zł za drukarkę biurkową). Kontrakt OneCare z pokryciem głowic jest uzasadniony przy flotach 5+ drukarek.',
     },
     {
       question: 'Co to jest VisibilityIQ OneCare?',
-      answer: 'VisibilityIQ OneCare to chmurowy dashboard do zarządzania flotą urządzeń Zebra objętych kontraktem OneCare. Pokazuje: status napraw, historię serwisową, stan baterii, wersje firmware, alerty zużycia i analizy predykcyjne. Dostępny w wariantach Essential i Select. Przydatny przy flotach 10+ urządzeń — pozwala proaktywnie zarządzać serwisem zamiast reagować na awarie.',
+      answer: 'VisibilityIQ OneCare to chmurowy dashboard do zarządzania flotą urządzeń Zebra objętych kontraktem OneCare. Udostępnia: status napraw, historię serwisową, stan baterii, wersje firmware, alerty zużycia i analizy predykcyjne. Dostępny w wariantach Essential i Select. Szczególnie przydatny przy flotach 10+ urządzeń — umożliwia proaktywne zarządzanie serwisem.',
     },
     {
       question: 'Dla jakich urządzeń Zebra dostępny jest OneCare?',
-      answer: 'OneCare jest dostępny dla: terminali mobilnych (TC22, TC27, TC53, TC58, TC501, MC3300x, MC3400, MC9400), tabletów (ET40, ET45), skanerów (DS3678, LI3608), drukarek etykiet (serie ZD, ZT, ZQ) i urządzeń kiosk (CC600). Przez dystrybutorów (Ingram, BlueStar) dostępne są kontrakty Essential na terminale i tablety. Select i SV zamawiasz bezpośrednio u Zebra.',
+      answer: 'OneCare jest dostępny dla: terminali mobilnych (TC22, TC27, TC53, TC58, TC501, MC3400, MC9400), tabletów (ET40, ET45), skanerów (DS3678, LI3608), drukarek etykiet (serie ZD, ZT, ZQ) i urządzeń kiosk (CC600). Przez dystrybutorów (Ingram, BlueStar) dostępne są kontrakty Essential na terminale i tablety. Warianty Select i SV zamawiane są bezpośrednio u Zebra.',
     },
     {
       question: 'Jak odczytać Part Number kontraktu OneCare?',
-      answer: 'Schemat: Z1A[wariant]-[seria]-[okres]C00. Wariant: E = Essential, S = Select, V = SV. Seria: np. TC22XX (TC22), MC93XX (MC9400), ZD4X1 (ZD421). Okres: 3 = 3 lata, 5 = 5 lat. Przykład: Z1AE-TC22XX-3C00 = OneCare Essential na TC22, 3 lata. Z1RE- oznacza odnowienie istniejącego kontraktu.',
+      answer: 'Schemat: Z1A[wariant]-[seria]-[okres]C00. Wariant: E = Essential, S = Select, V = SV. Seria: np. TC22XX (TC22), MC93XX (MC9400), ZD4X1 (ZD421). Okres: 3 = 3 lata, 5 = 5 lat. Przykład: Z1AE-TC22XX-3C00 = OneCare Essential na TC22, 3 lata. Prefix Z1RE- oznacza odnowienie istniejącego kontraktu.',
     },
   ],
   relatedLinks: [
     { title: 'Zebra TC22 — terminal mobilny', href: '/produkt/zebra-tc22' },
     { title: 'Zebra TC27 — terminal z kamerą 13 Mpx', href: '/produkt/zebra-tc27' },
     { title: 'Zebra MC3400 — terminal gun', href: '/produkt/zebra-mc3400' },
-    { title: 'Zebra MC9400 — terminal ultra-wytrzymały', href: '/produkt/zebra-mc9400' },
-    { title: 'Zebra TC58 — terminal mobilny 6"', href: '/produkt/zebra-tc58' },
+    { title: 'Zebra MC9400 — terminal wzmocniony', href: '/produkt/zebra-mc9400' },
     { title: 'Jak wybrać terminal mobilny?', href: '/poradnik/jak-wybrac-terminal-mobilny' },
     { title: 'Serwis drukarek i terminali Zebra', href: '/serwis' },
     { title: 'Kontakt i wycena OneCare', href: '/kontakt' },

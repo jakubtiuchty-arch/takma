@@ -139,6 +139,7 @@ const nextConfig = {
       // PORADNIKI — zmiana slugów
       // =====================================================
       { source: '/poradnik/tasmy-termotransferowe-woskowe-woskowo-zywiczne-zywiczne', destination: '/poradnik/jak-dobrac-tasme-termotransferowa', permanent: true },
+      { source: '/poradnik/zebra-onecare-kontrakt-serwisowy-co-daje-czy-warto', destination: '/poradnik/zebra-onecare-kontrakt-serwisowy', permanent: true },
 
       // =====================================================
       // BLOG → poradnik lub produkt
