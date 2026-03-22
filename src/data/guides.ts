@@ -9736,6 +9736,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-21',
   updatedAt: '2026-03-22',
   readTime: '14 min',
+  heroImage: '/images/guides/zebra-onecare-kontrakt-serwisowy.webp',
   sections: [
     {
       id: 'wprowadzenie',
