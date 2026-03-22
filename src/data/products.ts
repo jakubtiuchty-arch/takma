@@ -8725,7 +8725,7 @@ Specyfikacja techniczna na podstawie oficjalnej [karty katalogowej CL-E720](/dow
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     shortDescription: 'Citizen CL-E720DT — półprzemysłowa drukarka termiczna 4" z Cross-Emulation ZPL/DMX, Ethernet w standardzie, metalowa obudowa Hi-Open',
     seoTitle: 'Citizen CL-E720DT — drukarka termiczna 4" półprzemysłowa | od 2 885 zł',
-    seoDescription: 'Citizen CL-E720DT — półprzemysłowa drukarka etykiet termiczna (DT) 4" z Cross-Emulation ZPL/DMX, USB + Ethernet, 200 mm/s, ENERGY STAR. Bez taśmy — niższy TCO. Od 2 885 zł netto. PN: 1000852.',
+    seoDescription: 'Citizen CL-E720DT — półprzemysłowa drukarka etykiet termiczna (DT) 4" z Cross-Emulation ZPL/DMX, USB + Ethernet, 200 mm/s, ENERGY STAR. Drukarka Citizen CL-E720DT bez taśmy — niższy TCO. Drukarka termiczna Citizen, CL-E720DT Citizen. Od 2 885 zł netto. PN: 1000852.',
     priceFrom: 2884.74,
     availability: 'unavailable',
     images: ['/images/products/1000852.png', '/images/products/1000852-open.png', '/images/products/1000852-front.png', '/images/products/1000852-back.png'],
@@ -8738,11 +8738,13 @@ Specyfikacja techniczna na podstawie oficjalnej [karty katalogowej CL-E720](/dow
     tags: ['magazyn', 'logistyka', 'retail'] as ProductTag[],
     isNew: true,
     isBestseller: false,
-    description: `**Citizen CL-E720DT to półprzemysłowa drukarka etykiet termiczna (direct thermal) 4" z metalową obudową Hi-Open, Cross-Emulation ZPL/DMX i Ethernet w standardzie. Cena od 2 885 zł netto — wersja bez taśmy z niższym TCO niż [CL-E720](/produkt/citizen-cl-e720) (TT+DT).**
+    description: `**Citizen CL-E720DT to półprzemysłowa drukarka etykiet termiczna (direct thermal) 4" z metalową obudową Hi-Open, Cross-Emulation ZPL/DMX i Ethernet w standardzie. Cena od 2 885 zł netto — wersja bez taśmy z niższym TCO niż [CL-E720](/produkt/citizen-cl-e720) (TT+DT).** TAKMA jest partnerem Citizen w Polsce — oferujemy doradztwo, konfigurację i serwis.
 
-Dla kogo? Dla firm drukujących wyłącznie etykiety termiczne (wysyłkowe, kurierskie, logistyczne) w wolumenie półprzemysłowym. CL-E720DT obsługuje rolki do 200 mm (vs 125 mm w biurkowych), drukuje z prędkością 200 mm/s i waży 10,2 kg (o 0,8 kg mniej niż model TT). Brak mechanizmu taśmy oznacza zero kosztów ribbona i prostszą obsługę.
+Dla kogo? Dla firm drukujących wyłącznie etykiety termiczne (wysyłkowe, kurierskie, logistyczne) w wolumenie półprzemysłowym. CL-E720DT obsługuje rolki do 200 mm (vs 125 mm w biurkowych), drukuje z prędkością 200 mm/s i waży 10,2 kg (o 0,8 kg mniej niż model TT). Brak mechanizmu taśmy oznacza zero kosztów ribbona i prostszą obsługę. Nie wiesz, [czy wybrać druk termiczny czy termotransferowy?](/poradnik/drukarka-termiczna-vs-termotransferowa) — sprawdź nasz poradnik.
 
-Cross-Emulation automatycznie rozpoznaje strumień ZPL II lub DMX i przełącza emulację bez konfiguracji — migracja z Zebry lub Datamaxu jest bezproblemowa. Ethernet 10/100 w standardzie z wbudowanym LinkServer do zarządzania przez przeglądarkę.
+**Oszczędność TCO bez ribbona.** Przy wolumenie 10 000 etykiet miesięcznie drukarka TT zużywa ok. 2–3 rolek taśmy woskowej (40–60 zł/rolka), co daje 80–180 zł/miesiąc, czyli **960–2 160 zł/rok** na samych ribbonach. CL-E720DT eliminuje ten koszt całkowicie. Dodaj do tego prostszą obsługę (brak wymiany taśmy) i lżejszą konstrukcję — [model DT to niższy TCO](/poradnik/jak-wybrac-drukarke-etykiet) od pierwszego dnia.
+
+Cross-Emulation automatycznie rozpoznaje strumień ZPL II lub DMX i przełącza emulację bez konfiguracji — migracja z Zebry lub Datamaxu jest bezproblemowa. Ethernet 10/100 w standardzie z wbudowanym LinkServer do zarządzania przez przeglądarkę. Szukasz [drukarki półprzemysłowej z TT+DT?](/produkt/citizen-cl-e720) — model CL-E720 obsługuje oba tryby druku.
 
 Specyfikacja techniczna na podstawie oficjalnej [karty katalogowej CL-E720DT](/downloads/datasheet-cl-e720dt-pl.pdf).`,
     specifications: [
@@ -8806,6 +8808,9 @@ Specyfikacja techniczna na podstawie oficjalnej [karty katalogowej CL-E720DT](/d
       { question: 'Ile kosztuje głowica do Citizen CL-E720DT?', answer: 'Głowica drukująca 203 dpi do CL-E720DT (Part Number PPM80015-00 — wspólna z CL-E720) kosztuje wyraźnie mniej niż głowice Zebra — szacunkowo 200–300 USD vs 350–500 USD za porównywalną głowicę Zebra. Gwarancja głowicy DT: 6 miesięcy lub 30 km (krótsza niż TT ze względu na bezpośredni kontakt z nośnikiem).' },
       { question: 'Jaka jest gwarancja na Citizen CL-E720DT?', answer: 'Gwarancja drukarki: 24 miesiące. Gwarancja głowicy drukującej: 6 miesięcy lub 30 km wydruku. MCBF: 500 km lub 5 lat. Certyfikaty: CE, TUV, UL, ENERGY STAR. Serwis gwarancyjny i pogwarancyjny: TAKMA (<a href="/serwis">strona serwisowa</a>).' },
       { question: 'Jakie są alternatywy dla Citizen CL-E720DT?', answer: 'W klasie półprzemysłowych drukarek termicznych 4": <a href="/produkt/citizen-cl-e720">Citizen CL-E720</a> (TT+DT, od 3 179 zł — gdy potrzebujesz też druku termotransferowego), <a href="/produkt/citizen-cl-s521ii">Citizen CL-S521II</a> (DT, 150 mm/s, od 1 578 zł — budżetowa alternatywa). W klasie biurkowych DT: <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> (152 mm/s, od 1 472 zł), <a href="/produkt/honeywell-pc45d">Honeywell PC45d</a> (203 mm/s, od 1 518 zł).' },
+      { question: 'Ile kosztuje Citizen CL-E720DT?', answer: 'Citizen CL-E720DT kosztuje od 2 885 zł netto (3 548 zł brutto) w konfiguracji USB + Ethernet. To ok. 300 zł taniej niż model <a href="/produkt/citizen-cl-e720">CL-E720</a> (TT+DT, od 3 179 zł). Cena obejmuje drukarkę z wbudowanym zasilaczem 230V i interfejsami USB 2.0 + Ethernet 10/100. Opcjonalne moduły (Wi-Fi, RS-232, cutter, odklejak) kupowane oddzielnie — dostępne w sekcji <a href="#akcesoria">Akcesoria</a>.' },
+      { question: 'Citizen CL-E720DT vs Honeywell PC45d — która lepsza?', answer: 'CL-E720DT (od 2 885 zł) to drukarka półprzemysłowa: metalowa obudowa Hi-Open, rolki 200 mm, 10,2 kg. <a href="/produkt/honeywell-pc45d">Honeywell PC45d</a> (DT, od 1 518 zł) to drukarka biurkowa: plastikowa obudowa, rolki 127 mm, 2,3 kg, szybsza (203 vs 200 mm/s). CL-E720DT: Cross-Emulation (auto ZPL/DMX), ENERGY STAR, większe rolki = rzadsza wymiana. PC45d: kompaktowa, tańsza, RFID (opcja), Wi-Fi (opcja). CL-E720DT dla półprzemysłowego wolumenu (500+ etykiet/dzień). PC45d dla biura i lekkiej logistyki.' },
+      { question: 'Czy Citizen CL-E720DT jest nadal produkowany?', answer: 'Tak — Citizen CL-E720DT jest aktualnie produkowany i dostępny w ofercie Citizen Systems Europe (stan na marzec 2026). Model jest częścią aktualnej linii CL-E720, certyfikowany ENERGY STAR, z pełnym wsparciem technicznym i gwarancją 24 miesiące. TAKMA oferuje CL-E720DT z dostawą, konfiguracją i serwisem gwarancyjnym.' },
     ],
     applications: [
       'Logistyka — etykiety wysyłkowe, kurierskie, GS1-128',

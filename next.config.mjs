@@ -159,6 +159,11 @@ const nextConfig = {
       { source: '/branze/:path*', destination: '/katalog', permanent: true },
 
       // =====================================================
+      // CITIZEN — stare WordPress slugi → nowe
+      // =====================================================
+      { source: '/produkt/citizen-cl-e720-dt/:path*', destination: '/produkt/citizen-cl-e720dt', permanent: true },
+
+      // =====================================================
       // ZEBRA TABLETY — stare WordPress URLe → nowe strony
       // (ET40/ET45 mają własne strony — nie potrzebują redirectu)
       // =====================================================
