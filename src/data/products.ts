@@ -14717,7 +14717,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową [Brother](https://www.brothe
     id: 'citizen-cmp-20ii',
     slug: 'citizen-cmp-20ii',
     name: 'Citizen CMP-20II',
-    shortDescription: 'Citizen CMP-20II — mobilna drukarka paragonów 2" z Bluetooth, USB, IP42, 442 g, emulacja ESC/POS + ZPL II',
+    shortDescription: 'Citizen CMP-20II — mobilna drukarka paragonów i biletów 2" z Bluetooth Apple MFi, USB, RS-232, IP42, 442 g, emulacja ESC/POS + CPCL + ZPL II, odporność na upadki z 1,5 m',
     seoTitle: 'Citizen CMP-20II — mobilna drukarka paragonów 2" | od 1 116 zł',
     seoDescription: 'Citizen CMP-20II — mobilna drukarka paragonów i biletów 2" z Bluetooth (Apple MFi), USB i RS-232. Kompaktowa: 442 g, IP42, 80 mm/s, 203 dpi. Emulacja ESC/POS, CPCL i ZPL II — kompatybilna z systemami POS bez zmian szablonów. Od 1 116 zł netto. Zamów w TAKMA, partner Citizen. PN: CMP20IIXUXCX, CMP20IIBUXCX.',
     description: `**Citizen CMP-20II — kompaktowa mobilna drukarka paragonów i biletów 2" z Bluetooth, USB, RS-232, emulacją ESC/POS + CPCL + ZPL II, ochroną IP42, odpornością na upadki z 1,5 m i wagą zaledwie 442 g. Od 1 116 zł netto.**
@@ -14726,9 +14726,9 @@ Dla kogo? Citizen CMP-20II to [mobilna drukarka](/mobilne-drukarki-etykiet) para
 
 Kluczową przewagą Citizen CMP-20II jest potrójna emulacja: ESC/POS (standardowy język drukarek paragonowych), CPCL (mobilne etykiety) i Zebra ZPL II — co oznacza, że istniejące szablony paragonów z systemów POS, WMS i ERP działają bez zmian. Migracja z drukarki Zebra na CMP-20II jest plug-and-play dzięki emulacji ZPL II. Wariant CMP20IIBUXCX dodaje Bluetooth z certyfikacją Apple MFi — drukuj bezpośrednio z iPhone i iPad bez dodatkowych aplikacji.
 
-Szacunkowy TCO na 2 lata (200 paragonów/dzień, 250 dni/rok): drukarka od 1 116 zł + rolki papieru termicznego 58 mm ok. 3 zł/rolka × ~500 rolek/rok × 2 = ~3 000 zł + bateria zapasowa (~300 zł) = ok. 4 420 zł. Dla porównania: [Zebra ZQ310 Plus](/produkt/zebra-zq310-plus) od 1 496 zł (2" z Bluetooth LE, 100 mm/s), [Zebra ZQ320 Plus](/produkt/zebra-zq320-plus) od 1 857 zł (3", szersza rolka 80 mm).
+Szacunkowy TCO na 2 lata (200 paragonów/dzień, 250 dni/rok): drukarka od 1 116 zł + rolki papieru termicznego 58 mm ok. 3 zł/rolka × ~500 rolek/rok × 2 = ~3 000 zł + bateria zapasowa (~300 zł) = ok. 4 420 zł. Dla porównania: [Citizen CMP-25L](/produkt/citizen-cmp-25l) od 2 265 zł (szybsza 127 mm/s, LCD, Wi-Fi), [Zebra ZQ310 Plus](/produkt/zebra-zq310-plus) od 1 496 zł (IP54, Print DNA), [Honeywell RP2f](/produkt/honeywell-rp2f) od 2 694 zł (premium, hot-swap baterii).
 
-Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-20II (źródło: citizen-systems.com, marzec 2026).`,
+TAKMA jest partnerem Citizen w Polsce — oferujemy doradztwo, konfigurację i serwis. Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-20II (źródło: [karta katalogowa PDF](/downloads/datasheet-cmp-20ii-pl.pdf), marzec 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'citizen',
@@ -14770,10 +14770,9 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-20II (źródło:
       { name: 'Grubość mediów', value: '65 µm' },
       { name: 'Typ mediów', value: 'Papier termiczny, etykiety (z czujnikiem, wariant)' },
       { name: 'Czujnik końca papieru', value: 'Tak' },
-      { name: 'Interfejs USB', value: 'USB 2.0, Mini-B' },
-      { name: 'Interfejs szeregowy', value: 'RS-232 / Mini DIN' },
+      { name: 'Interfejsy', value: 'USB 2.0 Mini-B, RS-232 Mini DIN, Bluetooth Class 2 + Apple MFi (wariant)' },
       { name: 'Bluetooth', value: 'Bluetooth Class 2 + Apple MFi (wariant CMP20IIBUXCX)' },
-      { name: 'Emulacja', value: 'ESC/POS, CPCL, Zebra ZPL II' },
+      { name: 'Języki programowania', value: 'ESC/POS, CPCL, Zebra ZPL II' },
       { name: 'Kompatybilność OS', value: 'Windows, iOS, Android, Linux (CUPS)' },
       { name: 'Bateria', value: 'Li-Ion 7,4 V / 1800 mAh' },
       { name: 'Czas pracy na baterii', value: '~48h (standby + druk), 300–500 paragonów/ładowanie' },
@@ -14782,7 +14781,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-20II (źródło:
       { name: 'Klasa ochrony (IP)', value: 'IP42' },
       { name: 'Odporność na upadki', value: '1,5 m na beton (wielokrotnie)' },
       { name: 'Wymiary (szer. × gł. × wys.)', value: '96 × 136 × 58 mm' },
-      { name: 'Waga', value: '442 g (z baterią)' },
+      { name: 'Waga z baterią', value: '442 g' },
       { name: 'Temperatura pracy', value: '-10°C do +50°C' },
       { name: 'Temperatura przechowywania', value: '-20°C do +60°C' },
       { name: 'Wilgotność pracy', value: '35–95% RH (bez kondensacji)' },
@@ -14811,6 +14810,10 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-20II (źródło:
       'Bluetooth': 'Bluetooth Class 2 z certyfikacją Apple MFi — bezprzewodowe drukowanie z iPhone, iPad, urządzeń Android i terminali mobilnych. Zasięg do 10 m.',
     },
     faq: [
+      {
+        question: 'Citizen CMP-20II vs CMP-25L — czym się różnią?',
+        answer: '<a href="/produkt/citizen-cmp-25l">Citizen CMP-25L</a> (od 2 265 zł) to szybsza wersja: 127 mm/s (vs 80 mm/s), podświetlany wyświetlacz LCD 128x64, bateria 2600 mAh (vs 1800 mAh), większa rolka 56 mm (vs 48 mm) i wariant z Wi-Fi. CMP-20II (od 1 116 zł) jest 2x tańsza, lżejsza (442 g vs 580 g) i bardziej kompaktowa. Wybierz CMP-20II do prostych paragonów w najniższej cenie. CMP-25L do intensywnej pracy z etykietami i potrzebą monitorowania stanu na LCD.',
+      },
       {
         question: 'Citizen CMP-20II vs Zebra ZQ310 Plus — porównanie',
         answer: '<a href="/produkt/zebra-zq310-plus">Zebra ZQ310 Plus</a> (od 1 496 zł) ma prędkość 100 mm/s (vs 80 mm/s), Bluetooth 5.0 LE, USB-C, IP54 (vs IP42), wagę 370 g (vs 442 g) i ekosystem Zebra Print DNA do zarządzania flotą. CMP-20II (od 1 116 zł) jest tańsza, ma emulację ESC/POS + ZPL II + CPCL, RS-232 i Apple MFi Bluetooth. ZQ310 Plus wygrywa wytrzymałością i ekosystemem. CMP-20II wygrywa ceną i uniwersalnością emulacji.',
@@ -14857,7 +14860,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-20II (źródło:
       },
       {
         question: 'Jakie są alternatywy dla Citizen CMP-20II?',
-        answer: 'W kategorii mobilnych drukarek 2": <a href="/produkt/zebra-zq310-plus">Zebra ZQ310 Plus</a> (IP54, 100 mm/s, Print DNA, od 1 496 zł), <a href="/produkt/zebra-zq210">Zebra ZQ210</a> (ekonomiczna 2", od 1 270 zł), <a href="/produkt/honeywell-rp2f">Honeywell RP2f</a> (premium 2", IP54, 127 mm/s, hot-swap, od 2 694 zł). Drukarki 3" (szersza rolka): <a href="/produkt/zebra-zq320-plus">Zebra ZQ320 Plus</a> (od 1 857 zł), <a href="/produkt/zebra-zq511">Zebra ZQ511</a> (IP65, MIL-STD, od 2 580 zł). CMP-20II wyróżnia się najniższą ceną i potrójną emulacją ESC/POS + CPCL + ZPL II.',
+        answer: 'W kategorii mobilnych drukarek 2": <a href="/produkt/citizen-cmp-25l">Citizen CMP-25L</a> (szybsza, LCD, Wi-Fi, od 2 265 zł), <a href="/produkt/zebra-zq310-plus">Zebra ZQ310 Plus</a> (IP54, 100 mm/s, Print DNA, od 1 496 zł), <a href="/produkt/zebra-zq210">Zebra ZQ210</a> (ekonomiczna 2", od 1 270 zł), <a href="/produkt/honeywell-rp2f">Honeywell RP2f</a> (premium 2", IP54, 127 mm/s, hot-swap, od 2 694 zł). Drukarki 3": <a href="/produkt/zebra-zq320-plus">Zebra ZQ320 Plus</a> (od 1 857 zł), <a href="/produkt/zebra-zq511">Zebra ZQ511</a> (IP65, MIL-STD, od 2 580 zł). CMP-20II wyróżnia się najniższą ceną i potrójną emulacją ESC/POS + CPCL + ZPL II.',
       },
       {
         question: 'Citizen CMP-20II vs Honeywell RP2f — porównanie mobilnych drukarek 2"',
@@ -14869,7 +14872,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-20II (źródło:
       },
     ],
     comparison: {
-      title: 'Porównanie mobilnych drukarek 2" — Citizen CMP-20II vs Zebra ZQ310 Plus vs Zebra ZQ210',
+      title: 'Porównanie mobilnych drukarek 2" — CMP-20II vs CMP-25L vs ZQ310 Plus vs RP2f',
       models: [
         {
           name: 'CMP-20II',
@@ -14879,7 +14882,9 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-20II (źródło:
             'Szerokość druku': '48 mm (2")',
             'Prędkość': '80 mm/s',
             'Rozdzielczość': '203 dpi',
+            'LCD': '—',
             'Bluetooth': 'MFi (wariant)',
+            'Wi-Fi': '—',
             'IP': 'IP42',
             'Upadek': '1,5 m',
             'Bateria': '1800 mAh',
@@ -14890,13 +14895,34 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-20II (źródło:
           },
         },
         {
+          name: 'CMP-25L',
+          slug: 'citizen-cmp-25l',
+          specs: {
+            'Szerokość druku': '48 mm (2")',
+            'Prędkość': '127 mm/s',
+            'Rozdzielczość': '203 dpi',
+            'LCD': 'Tak (128x64)',
+            'Bluetooth': 'MFi (wariant)',
+            'Wi-Fi': 'Tak (wariant)',
+            'IP': 'IP42',
+            'Upadek': '1,5 m',
+            'Bateria': '2600 mAh',
+            'Waga': '580 g',
+            'Emulacja': 'ESC/POS + CPCL + ZPL II',
+            'Gwarancja': '2 lata',
+            'Cena od': '2 265 zł',
+          },
+        },
+        {
           name: 'ZQ310 Plus',
           slug: 'zebra-zq310-plus',
           specs: {
             'Szerokość druku': '48 mm (2")',
             'Prędkość': '100 mm/s',
             'Rozdzielczość': '203 dpi',
+            'LCD': '—',
             'Bluetooth': 'BT 5.0 LE',
+            'Wi-Fi': 'Tak (wariant)',
             'IP': 'IP54',
             'Upadek': '1,5 m',
             'Bateria': '2280 mAh',
@@ -14907,20 +14933,22 @@ Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-20II (źródło:
           },
         },
         {
-          name: 'ZQ210',
-          slug: 'zebra-zq210',
+          name: 'RP2f',
+          slug: 'honeywell-rp2f',
           specs: {
             'Szerokość druku': '48 mm (2")',
-            'Prędkość': '90 mm/s',
+            'Prędkość': '127 mm/s',
             'Rozdzielczość': '203 dpi',
-            'Bluetooth': 'BT 4.1',
+            'LCD': '—',
+            'Bluetooth': 'BT 5.0 + MFi',
+            'Wi-Fi': 'Tak (ac)',
             'IP': 'IP54',
-            'Upadek': '1,5 m',
-            'Bateria': '2500 mAh',
-            'Waga': '345 g',
-            'Emulacja': 'ZPL II + CPCL',
+            'Upadek': '2 m',
+            'Bateria': '2800 mAh',
+            'Waga': '350 g',
+            'Emulacja': 'EZ Print',
             'Gwarancja': '1 rok',
-            'Cena od': '1 270 zł',
+            'Cena od': '2 694 zł',
           },
         },
       ],
