@@ -10214,7 +10214,7 @@ export const guides: Guide[] = [
 
 <p><strong>NFC od strony ekranu.</strong> SM24/SM25 mają czytnik NFC od strony ekranu — operator przykłada terminal ekranem do tagu, co jest naturalniejsze i szybsze niż tylne NFC w Zebrze TC22/TC27. Honeywell CT32 ma NFC z przodu i z tyłu.</p>
 
-<p><strong>Identyczne wymiary obu modeli.</strong> Żaden inny producent nie oferuje dwóch terminali o różnej specyfikacji ale identycznych wymiarach — możesz mieszać SM24 i SM25 w jednej flocie, korzystając z tych samych akcesoriów, etui i stacji dokujących. To realnie obniża koszt wdrożenia mieszanej floty.</p>
+<p><strong>Identyczne wymiary obu modeli.</strong> SM24 i SM25 mają identyczne wymiary (77 × 167 × 12,9 mm) i wagę (240 g) — możesz mieszać oba modele w jednej flocie, korzystając z tych samych akcesoriów, etui i stacji dokujących. Zebra robi podobnie z TC22/TC27 (bliźniacze modele w tej samej obudowie), ale tam różnica to głównie łączność (Wi-Fi vs 5G). U M3 Mobile różnice między SM24 a SM25 sięgają głębiej — procesor, skaner i rozdzielczość ekranu. To realnie obniża koszt wdrożenia mieszanej floty.</p>
 
 <p><strong>Większa bateria.</strong> SM24/SM25 mają baterię 4 000 mAh (opcja 6 000 mAh) vs 3 800 mAh w TC22/TC27 (opcja 5 200 mAh). Przy porównywalnych ekranach 6" — dłuższa praca na jednym ładowaniu.</p>
 
@@ -10224,9 +10224,9 @@ export const guides: Guide[] = [
 
 <p><strong>Wsparcie Android.</strong> Zebra TC22/TC27 oferują min. 4 lata aktualizacji bezpieczeństwa (LifeGuard for Android), Honeywell CT32 — 5 lat (Mobility Edge do Androida 18), M3 Mobile deklaruje 3-5 lat. Przy dłuższym cyklu eksploatacji terminala krótsze wsparcie M3 Mobile może oznaczać wcześniejszą wymianę sprzętu.</p>
 
-<p><strong>Mobility DNA vs M3 Speedpack.</strong> Zebra Mobility DNA (DataWedge, StageNow, WorryFree WiFi, PowerPrecision+, Device Tracker) to najrozbudowanszy ekosystem zarządzania flotą na rynku. M3 Speedpack oferuje podstawowe funkcje MDM, ale ma węższy zakres — przy flotach 50+ terminali różnica jest odczuwalna.</p>
+<p><strong>Mobility DNA vs M3 Speedpack.</strong> Zebra Mobility DNA (DataWedge, StageNow, WorryFree WiFi, PowerPrecision+, Device Tracker) to najrozbudowanszy ekosystem zarządzania flotą terminali mobilnych na rynku. M3 Speedpack oferuje podstawowe funkcje MDM, ale ma węższy zakres — przy flotach 50+ terminali różnica jest odczuwalna.</p>
 
-<p><strong>Cena Zebry TC22.</strong> TC22 startuje od 2 417 zł netto — to najtańszy terminal z Wi-Fi 6E, IP68 i Mobility DNA na rynku. SM24 musi konkurować ceną w tym samym segmencie, co przy braku oficjalnego cennika M3 Mobile nie jest oczywiste.</p>
+<p><strong>Cena.</strong> <a href="/produkt/zebra-tc22">Zebra TC22</a> startuje od 2 417 zł netto — to najtańszy terminal z Wi-Fi 6E, IP68 i Mobility DNA na rynku. <a href="/produkt/m3-mobile-sm24">SM24</a> od 3 123 zł netto (Wi-Fi) / 3 552 zł (LTE) — droższy od TC22, ale z dwukrotnie większą pamięcią (8/128 GB vs 4/64 GB) i hot-swap baterii.</p>
 
 <p><strong>IP67 vs IP68.</strong> SM24/SM25 mają IP67 (zanurzenie 1 m/30 min). TC22/TC27 i CT32 mają IP68 (zanurzenie 1,5 m/30 min). W praktyce rzadko zanurzamy terminale — ale IP68 daje lepszą ochronę przy intensywnym kontakcie z wodą (mycie halowe, deszcz).</p>`
     },
@@ -10330,7 +10330,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Ile kosztuje M3 Mobile SM24 / SM25?',
-      answer: 'Ceny zależą od wariantu (X z WWAN lub W tylko Wi-Fi), konfiguracji baterii (4 000 lub 6 000 mAh) i wolumenu zamówienia. SM24 jest pozycjonowany jako tańsza alternatywa SM25. Orientacyjnie — segment cenowy SM24/SM25 jest zbliżony do Zebry TC22 (od 2 417 zł) i Honeywell CT32 (od 3 389 zł). Po indywidualną wycenę skontaktuj się z TAKMA: +48 607 819 688 lub biuro@takma.com.pl.',
+      answer: '<a href="/produkt/m3-mobile-sm24">SM24</a> W (Wi-Fi) od 3 123 zł netto, SM24 X (Wi-Fi + LTE + GPS) od 3 552 zł netto. Dla porównania: <a href="/produkt/zebra-tc22">Zebra TC22</a> od 2 417 zł, <a href="/produkt/zebra-tc27">TC27</a> od 2 690 zł, <a href="/produkt/honeywell-ct32">Honeywell CT32</a> od 3 389 zł. SM24 jest droższy od TC22, ale oferuje 8 GB RAM, 128 GB Flash i hot-swap baterii. Ceny SM25 dostępne na zapytanie — skontaktuj się z TAKMA: +48 607 819 688 lub biuro@takma.com.pl.',
     },
     {
       question: 'Czy TAKMA serwisuje terminale M3 Mobile?',
