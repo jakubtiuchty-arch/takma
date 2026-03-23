@@ -187,7 +187,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
         {/* H1 + intro */}
         <div className="mb-8">
           <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">{bc.name}</h1>
-          <p className="text-gray-600 sm:text-justify leading-relaxed">{bc.longDescription}</p>
+          <RichText text={bc.longDescription} className="text-gray-600 sm:text-justify leading-relaxed space-y-3" />
           <p className="text-gray-500 text-sm mt-3">{allProducts.length} {productWord}</p>
         </div>
 
