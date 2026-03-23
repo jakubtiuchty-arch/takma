@@ -10110,7 +10110,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-23',
   updatedAt: '2026-03-23',
   readTime: '14 min',
-  heroImage: '/images/guides/m3-sm24-m3-sm25-porownanie.jpg',
+  heroImage: '/images/guides/m3-sm24-m3-sm25-porownanie.webp',
   sections: [
     {
       id: 'wprowadzenie',
