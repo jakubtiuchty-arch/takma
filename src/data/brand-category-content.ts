@@ -2548,4 +2548,123 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       { question: 'Czy TSC ML241P obsługuje RFID?', answer: 'Nie — [ML241P](/produkt/tsc-ml241p) nie ma opcji RFID. Jeśli potrzebujesz druku RFID UHF, wybierz [Zebra ZT231](/produkt/zebra-zt231) lub [Zebra ZT411](/produkt/zebra-zt411) z opcjonalnym modułem RFID.' },
     ],
   },
+  'drukarki-etykiet-citizen': {
+    definition: {
+      heading: 'Drukarki etykiet Citizen — japońska precyzja z Cross-Emulation ZPL',
+      content:
+        'Citizen Systems (część Citizen Group, producenta zegarków od 1930 roku) to japoński producent drukarek etykiet wyróżniający się trzema unikalnymi technologiami: Cross-Emulation — automatyczne rozpoznawanie języka druku (ZPL II, EPL2, DPL, ESC/POS) bez konieczności przełączania trybów, ARCP (Automatic Ribbon Control and Protection) — kontrola naprężenia taśmy zmniejszająca jej zużycie o 10-20%, oraz ENERGY STAR w serii CL-E — jedyne biurkowe drukarki etykiet z tym certyfikatem na polskim rynku.\n\nOferta Citizen obejmuje 15 modeli w 4 segmentach: kompaktowe biurkowe CL-E ([CL-E300](/produkt/citizen-cl-e300), [CL-E303](/produkt/citizen-cl-e303), [CL-E321](/produkt/citizen-cl-e321) z Ethernet w standardzie), biurkowe z metalowym mechanizmem CL-S ([CL-S521II](/produkt/citizen-cl-s521ii), [CL-S531II](/produkt/citizen-cl-s531ii), [CL-S621II](/produkt/citizen-cl-s621ii), [CL-S631II](/produkt/citizen-cl-s631ii), [CL-S400DT](/produkt/citizen-cl-s400dt)), półprzemysłowe CL-E7xx ([CL-E720](/produkt/citizen-cl-e720), [CL-E730](/produkt/citizen-cl-e730)) i przemysłowe CL-S7xxIII ([CL-S700III](/produkt/citizen-cl-s700iii), [CL-S703III](/produkt/citizen-cl-s703iii) z LCD dotykowym). Uzupełnieniem są mobilne CMP ([CMP-20II](/produkt/citizen-cmp-20ii), CMP-25L) do pracy w terenie.\n\nCross-Emulation sprawia, że migracja z drukarki Zebra, Datamax lub innej marki na Citizen nie wymaga zmian w oprogramowaniu WMS/ERP — system wysyła te same komendy, a drukarka Citizen je automatycznie rozpoznaje i drukuje. To kluczowy argument dla firm, które chcą obniżyć koszty druku bez kosztownej modyfikacji infrastruktury IT. Więcej o wyborze drukarki w naszym [poradniku jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać drukarkę etykiet Citizen? 6 kryteriów',
+      items: [
+        'Dzienny wolumen druku — do 500 etykiet/dzień wystarczy kompaktowa [CL-E300](/produkt/citizen-cl-e300) (od 1 133 zł) lub [CL-E321](/produkt/citizen-cl-e321) (od 1 410 zł). Do 1 000-2 000 etykiet/dzień — biurkowa z metalowym mechanizmem [CL-S621II](/produkt/citizen-cl-s621ii) (od 1 851 zł) z ARCP i rolkami do 200 mm. Do 3 000-5 000 etykiet/dzień — półprzemysłowa [CL-E720](/produkt/citizen-cl-e720) (od 3 179 zł) lub przemysłowa [CL-S700III](/produkt/citizen-cl-s700iii) (od 4 491 zł, 305 mm/s).',
+        'Technologia druku — druk termiczny bezpośredni (modele DT: [CL-E300](/produkt/citizen-cl-e300), [CL-S521II](/produkt/citizen-cl-s521ii), [CL-E720DT](/produkt/citizen-cl-e720dt)) nie wymaga taśmy — tańsza eksploatacja, ale etykiety blaknął w 6-12 miesięcy. Druk termotransferowy (modele TT+DT: [CL-E321](/produkt/citizen-cl-e321), [CL-S621II](/produkt/citizen-cl-s621ii), [CL-E720](/produkt/citizen-cl-e720), [CL-S700III](/produkt/citizen-cl-s700iii)) z taśmą woskową/żywiczną — etykiety trwałe latami, niezbędne do etykiet produktowych i GHS. Porównanie technologii w naszym [poradniku termiczna vs termotransferowa](/poradnik/drukarka-termiczna-vs-termotransferowa).',
+        'Rozdzielczość — 203 dpi (CL-E300, CL-S521II, CL-S621II, CL-E720, CL-S700III) to standard dla etykiet logistycznych i adresowych. 300 dpi ([CL-E303](/produkt/citizen-cl-e303), [CL-S531II](/produkt/citizen-cl-s531ii), [CL-S631II](/produkt/citizen-cl-s631ii), [CL-E730](/produkt/citizen-cl-e730), [CL-S703III](/produkt/citizen-cl-s703iii)) do kodów 2D poniżej 10 mm, mikroetykiet farmaceutycznych i tekstu poniżej 6 pkt.',
+        'Seria CL-E vs CL-S — CL-E to kompaktowe modele (mniejsze od kartki A4) z Ethernet/USB/RS-232 w standardzie i zasilaczem zewnętrznym. CL-S to modele z metalowym mechanizmem Hi-Lift (otwarcie 180°), wbudowanym zasilaczem, rolkami do 200 mm i ARCP (w wersjach TT). CL-E do biurka i lady, CL-S do cięższej eksploatacji magazynowej.',
+        'Łączność — seria CL-E (CL-E300/303/321) ma Ethernet 10/100 w standardzie — u [Zebry](/drukarki-etykiet-zebra) i Honeywella to płatna opcja (+200-500 zł). CL-S: USB + RS-232 w standardzie, Ethernet jako moduł Premium. CL-S700III/703III: USB + Ethernet + USB Host w standardzie + LCD dotykowy. Opcjonalnie: Wi-Fi dual-band, Bluetooth, Parallel.',
+        'TCO (całkowity koszt posiadania) — Citizen wygrywa TCO w trzech obszarach: 1) Ethernet w standardzie (seria CL-E) oszczędza 200-500 zł vs Zebra/Honeywell. 2) ARCP zmniejsza zużycie taśmy o 10-20% = realna oszczędność przy wolumenie 500+ etykiet/dzień. 3) ENERGY STAR (seria CL-E) obniża koszty energii przy flotach 10+. Głowica Citizen: 250-400 USD vs Zebra 400-600 USD.',
+      ],
+    },
+    expertAuthority:
+      'TAKMA jest partnerem Citizen Systems w Polsce z ponad 24-letnim doświadczeniem na rynku AutoID. Pomagamy dobrać model Citizen do konkretnych procesów logistycznych, konfigurujemy Cross-Emulation pod Twój system WMS/ERP (SAP, Comarch, Subiekt, BaseLinker), testujemy kompatybilność szablonów ZPL i zapewniamy serwis gwarancyjny i pogwarancyjny. Każda rekomendacja Citizen na tej stronie opiera się na realnych wdrożeniach i testach kompatybilności, nie na materiałach marketingowych producenta.',
+    technicalDeepDive: `Pełna macierz modeli drukarek etykiet Citizen — od kompaktowych biurkowych po przemysłowe z LCD dotykowym — pozwala dobrać urządzenie do każdego wolumenu i zastosowania:\n\n• CL-E300 (biurkowa DT): 200 mm/s, 203 dpi, 4", Ethernet+USB+RS-232, ENERGY STAR, od 1 133 zł — najtańsza z Ethernetem w standardzie.\n• CL-E303 (biurkowa DT 300 dpi): 150 mm/s, 300 dpi, 4", Ethernet+USB+RS-232, ENERGY STAR, od 1 514 zł — kody 2D i mikroetykiety.\n• CL-E321 (biurkowa TT+DT): 200 mm/s, 203 dpi, 4", Ethernet+USB+RS-232, ENERGY STAR, od 1 410 zł — najtańsza termotransferowa z Ethernetem.\n• CL-S521II (biurkowa DT, metalowy Hi-Lift): 150 mm/s, 203 dpi, rolki do 200 mm, wbudowany zasilacz, od 1 578 zł.\n• CL-S621II (biurkowa TT+DT, metalowy Hi-Lift, ARCP): 150 mm/s, 203 dpi, taśma 360 m, rolki do 200 mm, od 1 851 zł.\n• CL-S631II (biurkowa TT+DT, metalowy Hi-Lift, ARCP, 300 dpi): 100 mm/s, 300 dpi, taśma 360 m, od 2 249 zł.\n• CL-S400DT (biurkowa DT, LCD): 150 mm/s, 203 dpi, LCD, metalowy Hi-Lift, Standalone Forms, od 1 547 zł.\n• CL-E720 (półprzemysłowa TT+DT, ARCP): 200 mm/s, 203 dpi, LCD, Hi-Open metalowy, Ethernet, od 3 179 zł.\n• CL-E730 (półprzemysłowa TT+DT, ARCP, 300 dpi): 150 mm/s, 300 dpi, LCD, od 3 507 zł.\n• CL-S700III (przemysłowa TT+DT, ARCP): 305 mm/s, 203 dpi, LCD dotykowy 2,8" TFT, Ethernet+USB Host, taśma 450 m, od 4 491 zł.\n• CL-S703III (przemysłowa TT+DT, ARCP, 300 dpi): 254 mm/s, 300 dpi, LCD dotykowy 2,8" TFT, taśma 450 m, od 5 035 zł.\n• CMP-20II (mobilna DT): 80 mm/s, 203 dpi, 2", IP42, 442 g, od 1 116 zł.\n\nŻywotność głowicy Citizen: biurkowe 30 km / 6 mies., przemysłowe 50+ km. Koszt głowicy: 250-400 USD (niżej niż Zebra 400-600 USD). ARCP dodatkowo wydłuża żywotność głowicy dzięki ochronie przed bezpośrednim kontaktem z etykietą.`,
+    tcoComparisons: [
+      {
+        title: 'TCO 3 lata — 500 etykiet/dzień (100×50 mm, termotransfer)',
+        variants: [
+          {
+            label: 'Citizen CL-E321',
+            items: [
+              { name: 'Drukarka CL-E321', cost: '1 410 zł' },
+              { name: 'Etykiety (36 mies.)', cost: '~6 480 zł' },
+              { name: 'Taśmy woskowe (36 mies.)', cost: '~1 800 zł' },
+              { name: '2× wymiana głowicy', cost: '~700 zł' },
+            ],
+            total: '~10 390 zł',
+          },
+          {
+            label: 'Citizen CL-S621II (z ARCP)',
+            items: [
+              { name: 'Drukarka CL-S621II', cost: '1 851 zł' },
+              { name: 'Etykiety (36 mies.)', cost: '~6 480 zł' },
+              { name: 'Taśmy woskowe (36 mies., -15% ARCP)', cost: '~1 530 zł' },
+              { name: '1× wymiana głowicy', cost: '~350 zł' },
+            ],
+            total: '~10 210 zł',
+          },
+          {
+            label: 'Zebra ZD421t',
+            items: [
+              { name: 'Drukarka ZD421t', cost: '1 472 zł' },
+              { name: 'Etykiety (36 mies.)', cost: '~6 480 zł' },
+              { name: 'Taśmy woskowe (36 mies.)', cost: '~1 980 zł' },
+              { name: '2× wymiana głowicy', cost: '~900 zł' },
+            ],
+            total: '~10 830 zł',
+          },
+        ],
+        conclusion: 'CL-S621II z ARCP daje najniższe TCO dzięki oszczędności na taśmie i głowicy — mimo wyższej ceny zakupu. CL-E321 to najtańszy start z Ethernetem w standardzie.',
+      },
+    ],
+    useCases: [
+      {
+        title: 'E-commerce i wysyłka — CL-E300 / CL-E303',
+        description:
+          'Kompaktowa [CL-E300](/produkt/citizen-cl-e300) (od 1 133 zł) z Ethernet w standardzie drukuje etykiety kurierskie 100×150 mm dla InPost, DPD, DHL, UPS. Cross-Emulation ZPL oznacza kompatybilność z BaseLinkerem, Allegro, Amazon bez zmian w konfiguracji. ENERGY STAR — niskie zużycie energii na stanowisku pakowania. Dla kodów 2D DataMatrix: [CL-E303](/produkt/citizen-cl-e303) (300 dpi, od 1 514 zł).',
+      },
+      {
+        title: 'Magazyn i logistyka — CL-S621II / CL-S700III',
+        description:
+          '[CL-S621II](/produkt/citizen-cl-s621ii) (od 1 851 zł) z metalowym mechanizmem Hi-Lift, rolkami do 200 mm i ARCP — idealna do ciągłego druku etykiet magazynowych, lokalizacyjnych i paletowych. Przy wolumenie 1 000+ etykiet/dzień: [CL-S700III](/produkt/citizen-cl-s700iii) (305 mm/s, LCD dotykowy, od 4 491 zł) — najszybsza drukarka Citizen z podglądem etykiety na ekranie.',
+      },
+      {
+        title: 'Produkcja i etykiety produktowe — CL-S631II / CL-E730',
+        description:
+          '[CL-S631II](/produkt/citizen-cl-s631ii) (300 dpi, od 2 249 zł) z ARCP do etykiet produktowych, GHS, oznakowania CE i farmaceutycznych. 300 dpi zapewnia czytelne kody 2D DataMatrix poniżej 10 mm. Przy wyższym wolumenie: [CL-E730](/produkt/citizen-cl-e730) (półprzemysłowa 300 dpi, od 3 507 zł) z LCD i Hi-Open metalowym.',
+      },
+      {
+        title: 'Retail i apteki — CL-E321 / CL-S400DT',
+        description:
+          '[CL-E321](/produkt/citizen-cl-e321) (TT+DT, od 1 410 zł) z ENERGY STAR do etykiet cenowych, regałowych i produktowych. Kompaktowe wymiary mieszczą się na ladzie kasowej. [CL-S400DT](/produkt/citizen-cl-s400dt) (od 1 547 zł) z LCD i Standalone Forms — drukowanie bez podłączenia do komputera (bilety, kupony).',
+      },
+      {
+        title: 'Migracja z Zebry / Datamaksu — Cross-Emulation',
+        description:
+          'Każda drukarka Citizen z Cross-Emulation automatycznie rozpoznaje komendy ZPL II, EPL2, DPL i ESC/POS. Migracja z Zebry, Datamaksu lub Honeywella nie wymaga zmian w oprogramowaniu WMS/ERP — wystarczy podłączyć drukarkę Citizen. TAKMA przeprowadzi test kompatybilności Twoich szablonów etykiet przed zakupem.',
+      },
+      {
+        title: 'Praca w terenie — CMP-20II',
+        description:
+          '[CMP-20II](/produkt/citizen-cmp-20ii) (od 1 116 zł) — mobilna drukarka 2" z emulacją ZPL II, ESC/POS i CPCL. IP42, 442 g, bateria 1800 mAh. Do paragonów, etykiet kurierskich w terenie, potwierdzeń dostawy. Łączność USB/RS-232 lub Bluetooth (Apple MFi).',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Czego nie znajdziesz na stronach konkurencji',
+      items: [
+        { title: 'Cross-Emulation — migracja z Zebry w 5 minut', text: 'Podłącz drukarkę Citizen do sieci, wyślij ten sam plik ZPL co do Zebry — drukuje od razu. Nie ma innej marki z tak szeroką automatyczną emulacją (ZPL II + EPL2 + DPL + ESC/POS). Konkurencja wymaga ręcznego przełączania trybów lub modyfikacji szablonów.' },
+        { title: 'ARCP — oszczędność taśmy, którą można policzyć', text: 'Przy 500 etykietach/dzień i taśmie woskowej 110 mm × 300 m: standardowa drukarka zużywa ~120 rolek/rok. Z ARCP: ~100 rolek/rok (oszczędność 15-20%). Przy cenie ~18 zł/rolka to 360-720 zł oszczędności rocznie na jednej drukarce. Przy 10 drukarkach: 3 600-7 200 zł/rok.' },
+        { title: 'Ethernet w cenie — oszczędność 200-500 zł na drukarce', text: 'CL-E300/303/321 mają Ethernet 10/100 w bazowej cenie. U Zebry ZD421 moduł Ethernet to +320 zł. U Honeywella PC45 — podobnie. Przy 10 drukarkach to 2 000-5 000 zł oszczędności na samym Ethernecie.' },
+        { title: 'Głowica Citizen tańsza o 40% od Zebry', text: 'Głowica do drukarek biurkowych Citizen kosztuje 250-400 USD vs Zebra 400-600 USD. Przy wymianie głowicy co 12-18 miesięcy to realna różnica w TCO. ARCP dodatkowo wydłuża żywotność głowicy — mniej kontaktu etykiety z głowicą = mniejsze zużycie.' },
+      ],
+    },
+    faq: [
+      { question: 'Ile kosztuje najtańsza drukarka Citizen z Ethernetem?', answer: '[CL-E300](/produkt/citizen-cl-e300) od 1 133 zł netto — druk termiczny 203 dpi, 200 mm/s, Ethernet+USB+RS-232 w standardzie, ENERGY STAR, Cross-Emulation ZPL/EPL/DPL. To najtańsza biurkowa drukarka 4" z wbudowanym Ethernetem na polskim rynku.' },
+      { question: 'Którą drukarkę Citizen do druku termotransferowego?', answer: 'Biurkowa kompaktowa: [CL-E321](/produkt/citizen-cl-e321) (od 1 410 zł, Ethernet w standardzie). Biurkowa z ARCP: [CL-S621II](/produkt/citizen-cl-s621ii) (od 1 851 zł, rolki do 200 mm). 300 dpi: [CL-S631II](/produkt/citizen-cl-s631ii) (od 2 249 zł). Półprzemysłowa: [CL-E720](/produkt/citizen-cl-e720) (od 3 179 zł). Przemysłowa: [CL-S700III](/produkt/citizen-cl-s700iii) (305 mm/s, od 4 491 zł).' },
+      { question: 'Czy Citizen CL-E300 zastąpi Zebra ZD220?', answer: 'Tak — Cross-Emulation automatycznie rozpoznaje ZPL II. [CL-E300](/produkt/citizen-cl-e300) drukuje szybciej (200 vs 102 mm/s), ma Ethernet w standardzie (ZD220 nie ma) i ENERGY STAR. Cena: CL-E300 od 1 133 zł vs [ZD220d](/produkt/zebra-zd220d) od 639 zł — ale ZD220 wymaga dokupu Ethernetu.' },
+      { question: 'Czy drukarki Citizen działają z SAP / Comarch WMS?', answer: 'Tak — Cross-Emulation obsługuje ZPL II, EPL2, DPL i ESC/POS. Systemy WMS/ERP generujące komendy w tych językach (SAP EWM, Comarch WMS, Subiekt GT, LogMag, WMS Vision, BaseLinker) działają z drukarkami Citizen bez zmian w konfiguracji.' },
+      { question: 'Citizen CL-S621II vs Zebra ZD621t — porównanie', answer: '[CL-S621II](/produkt/citizen-cl-s621ii) (1 851 zł): ARCP, Cross-Emulation, rolki do 200 mm, metalowy Hi-Lift. [ZD621t](/produkt/zebra-zd621t) (1 944 zł): Link-OS, PrintDNA, LCD kolorowy, modułowość (Wi-Fi, RFID, odklejak). CL-S621II tańsza z niższym TCO (ARCP + głowica tańsza). ZD621t lepsza do zarządzanej floty z centralnym Link-OS.' },
+      { question: 'Jakie etykiety pasują do drukarek Citizen?', answer: 'Drukarki Citizen 4" obsługują etykiety o szerokości 25-118 mm. Wszystkie standardowe materiały: papier termiczny, papier powlekany, polipropylen, poliester, Tyvek. Rolki wewnętrzne do 127 mm (CL-E) lub do 200 mm (CL-S/CL-E720/CL-S700III). Trzpień rdzenia: 25,4 mm (1") w CL-E, 25,4 lub 76,2 mm (1" lub 3") w CL-S.' },
+    ],
+    comparisons: [
+      { title: 'Citizen vs Zebra — biurkowe drukarki etykiet', content: 'Citizen CL-E300 (1 133 zł) vs Zebra ZD421d (1 472 zł): Citizen tańszy o 339 zł z Ethernetem w standardzie i ENERGY STAR. Zebra z Link-OS, PrintDNA i opcją modułów (Wi-Fi, RFID, odklejak). CL-S621II (1 851 zł) vs ZD621t (1 944 zł): porównywalna cena, Citizen z ARCP i rolkami do 200 mm, Zebra z LCD i zarządzaniem flotą.' },
+      { title: 'Citizen vs Brother — porównanie biurkowych', content: 'Citizen CL-E321 (1 410 zł, TT+DT, Ethernet, 2 lata gwarancji) vs Brother TD-4T (1 496 zł, TT+DT, 3 lata gwarancji z głowicą, BarTender gratis). Brother wygrywa gwarancją i oprogramowaniem. Citizen wygrywa Cross-Emulation (auto-ZPL+EPL+DPL) i ENERGY STAR.' },
+    ],
+    howToSteps: [
+      { name: 'Dobierz model Citizen', text: 'Określ wolumen (etykiety/dzień), technologię (DT/TT), rozdzielczość (203/300 dpi) i łączność. Skonsultuj z TAKMA — pomożemy wybrać między CL-E, CL-S, CL-E7xx i CL-S7xxIII.' },
+      { name: 'Sprawdź kompatybilność szablonów', text: 'Jeśli migrujesz z Zebry/Datamaksu — TAKMA przetestuje Twoje szablony ZPL/EPL/DPL na drukarce Citizen przed zakupem. Cross-Emulation obsługuje 95%+ szablonów bez zmian.' },
+      { name: 'Podłącz do sieci i skonfiguruj', text: 'Ethernet (CL-E) lub USB. Citizen Setup Wizard przeprowadzi przez pierwszą konfigurację. Cross-Emulation włącza się automatycznie — drukarka sama rozpoznaje język druku.' },
+      { name: 'Skalibruj media', text: 'Załaduj etykiety i taśmę (modele TT). Uruchom kalibrację czujników gap/black mark. Przy modelach z ARCP — system automatycznie dostosuje naprężenie taśmy.' },
+      { name: 'Monitoruj i serwisuj', text: 'Citizen LinkServer (CL-E720/730, CL-S700III/703III) umożliwia zdalny monitoring stanu drukarki przez przeglądarkę. Regularnie czyść głowicę alkoholem izopropylowym (co 1 rolkę taśmy lub codziennie przy DT).' },
+    ],
+  },
 }

@@ -41,6 +41,7 @@ const navigation: NavItem[] = [
       { name: 'Drukarki Honeywell', href: '/drukarki-etykiet-honeywell' },
       { name: 'Drukarki Brother', href: '/drukarki-etykiet-brother' },
       { name: 'Drukarki TSC', href: '/drukarki-etykiet-tsc' },
+      { name: 'Drukarki Citizen', href: '/drukarki-etykiet-citizen' },
       { name: 'Drukarki biurkowe', href: '/biurkowe-drukarki-etykiet' },
       { name: 'Drukarki przemysłowe', href: '/przemyslowe-drukarki-etykiet' },
       { name: 'Drukarki termotransferowe', href: '/termotransferowe-drukarki-etykiet' },
