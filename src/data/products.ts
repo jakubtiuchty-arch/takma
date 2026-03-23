@@ -49741,8 +49741,8 @@ const citizenPrinterAccessories: Product[] = [
 
 const m3MobileComputers: Product[] = [
   {
-    id: 'm3-mobile-sm24',
-    slug: 'm3-mobile-sm24',
+    id: 'm3-sm24',
+    slug: 'm3-sm24',
     name: 'M3 SM24',
     shortDescription: 'M3 SM24 — terminal mobilny 6" z hot-swap baterii, 8 GB RAM, Android 16, Wi-Fi 6E, IP67',
     description: `Dla kogo? M3 SM24 to terminal mobilny (kolektor danych) klasy enterprise z ekranem 6" HD+ i procesorem Qualcomm SM6225 (2,4 GHz, 8 rdzeni), zaprojektowany dla firm szukających niezawodnego urządzenia z hot-swap baterii w przystępnej cenie. SM24 sprawdza się w magazynach, centrach logistycznych, handlu detalicznym i kompletacji zamówień e-commerce.
@@ -49830,7 +49830,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
       { question: 'Jak długo M3 Mobile wspiera aktualizacje Androida?', answer: 'M3 Mobile deklaruje wsparcie SM24 od Android 16 do Android 18 (3 generacje). Dla porównania: Zebra TC22/TC27 — LifeGuard 10 lat (do 2034), Honeywell CT32 — Mobility Edge do Android 18. SM24 ma krótszy deklarowany cykl wsparcia niż Zebra, porównywalny z Honeywellem.' },
       { question: 'Do czego nadaje się M3 SM24?', answer: 'Kompletacja zamówień e-commerce (WMS, BaseLinker), przyjęcia i wydania towaru w magazynie, inwentaryzacja z czytnikiem 2D CM60E, obsługa klienta w retail (sprawdzanie cen, dostępności), logistyka ostatniej mili (model X z LTE/GPS). SM24 to ekonomiczna alternatywa dla Zebra TC22/TC27 z większą pamięcią i hot-swap baterii.' },
       { question: 'Jakie akcesoria są dostępne do M3 SM24?', answer: 'Bateria standardowa 4000 mAh (SX2X-BATT-S40), stacja dokująca 2-gniazdowa (SX2X-2CRD-C00), stacja dokująca 2-gniazdowa z ładowarką baterii (SX2X-2CRD-CC0), zasilacz EU (SM2X-PWSP-2EU). Opcjonalnie: bateria rozszerzona 6000 mAh, boot ochronny (zwiększa odporność na upadki z 1,5 m do 1,8 m).' },
-      { question: 'Jakie są alternatywy dla M3 SM24?', answer: '[Zebra TC22](/produkt/zebra-tc22) (od 2 417 zł) — tańsza, FHD+, IP68, LifeGuard 10 lat, Mobility DNA. [Zebra TC27](/produkt/zebra-tc27) (od 2 690 zł) — jak TC22 + 5G + GPS. [Honeywell CT32](/produkt/honeywell-ct32) (od 3 389 zł) — hot-swap, FlexRange do 15 m, 5G, Mobility Edge. [M3 SM25](/produkt/m3-mobile-sm25) — wyższy model z 5G, FHD+ i skanerem SE5500. SM24 wyróżnia się 8 GB RAM, hot-swap w niższej cenie niż CT32 i nowszym Androidem 16.' },
+      { question: 'Jakie są alternatywy dla M3 SM24?', answer: '[Zebra TC22](/produkt/zebra-tc22) (od 2 417 zł) — tańsza, FHD+, IP68, LifeGuard 10 lat, Mobility DNA. [Zebra TC27](/produkt/zebra-tc27) (od 2 690 zł) — jak TC22 + 5G + GPS. [Honeywell CT32](/produkt/honeywell-ct32) (od 3 389 zł) — hot-swap, FlexRange do 15 m, 5G, Mobility Edge. [M3 SM25](/produkt/m3-sm25) — wyższy model z 5G, FHD+ i skanerem SE5500. SM24 wyróżnia się 8 GB RAM, hot-swap w niższej cenie niż CT32 i nowszym Androidem 16.' },
       { question: 'Gdzie kupić M3 SM24 w Polsce?', answer: 'M3 SM24 kupisz bezpośrednio w TAKMA — partner M3 Mobile w Polsce. Oferujemy doradztwo w doborze wariantu (SM24 W vs X), konfigurację M3 Speedpack, urządzenia demo do testów pilotażowych oraz serwis gwarancyjny i pogwarancyjny. Skontaktuj się telefonicznie lub przez formularz na stronie /kontakt.' },
       { question: 'Jaka gwarancja na M3 SM24 i gdzie serwis?', answer: 'M3 SM24 objęty jest 1-roczną gwarancją producenta (M3 Mobile). TAKMA zapewnia wsparcie serwisowe w Polsce — diagnostykę, naprawy gwarancyjne i pogwarancyjne. Serwis autoryzowany M3 Mobile w Europie prowadzi M3 Mobile GmbH w Niemczech (Kriftel). Czas naprawy gwarancyjnej: zazwyczaj 10-15 dni roboczych.' },
     ],
@@ -49847,20 +49847,20 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
     ],
     compatibleAccessories: [],
     relatedAccessories: [],
-    relatedProducts: ['m3-mobile-sm25', 'zebra-tc22', 'zebra-tc27', 'honeywell-ct32'],
+    relatedProducts: ['m3-sm25', 'zebra-tc22', 'zebra-tc27', 'honeywell-ct32'],
     downloads: [
-      { name: 'Karta katalogowa M3 SM24 (EN)', type: 'datasheet' as const, url: '/downloads/m3-mobile-sm24-specification.pdf', size: '539 KB' },
+      { name: 'Karta katalogowa M3 SM24 (EN)', type: 'datasheet' as const, url: '/downloads/m3-sm24-specification.pdf', size: '539 KB' },
     ],
     createdAt: '2026-03-23',
   },
   {
-    id: 'm3-mobile-sm25',
-    slug: 'm3-mobile-sm25',
+    id: 'm3-sm25',
+    slug: 'm3-sm25',
     name: 'M3 SM25',
     shortDescription: 'M3 SM25 — terminal mobilny 6" FHD+ z 5G, skanerem SE5500, hot-swap, Android 16, IP67',
     description: `Dla kogo? M3 SM25 to terminal mobilny (kolektor danych) klasy enterprise z ekranem 6" FHD+ (1080x2160) i procesorem Qualcomm Dragonwing QCM4490 (2,4 GHz, 8 rdzeni), zaprojektowany dla firm potrzebujących łączności 5G, skanera dalekiego zasięgu SE5500 i hot-swap baterii. SM25 sprawdza się w dużych centrach logistycznych, magazynach wysokiego składowania, handlu detalicznym i dostawie ostatniej mili.
 
-Kluczowe przewagi M3 SM25 nad tańszym [SM24](/produkt/m3-mobile-sm24): ekran FHD+ zamiast HD+ (ostrość dokumentów, zdjęć, interfejsów WMS), 5G Sub-6 (model X) z niskim opóźnieniem w dużych obiektach, dwa silniki skanowania — CM60E (standard) i SE5500 Smart Focus (skaner Zebry z zasięgiem do 15 m na wysokich regałach). Procesor QCM4490 (Dragonwing) obsługuje większe obciążenia niż SM6225 w SM24.
+Kluczowe przewagi M3 SM25 nad tańszym [SM24](/produkt/m3-sm24): ekran FHD+ zamiast HD+ (ostrość dokumentów, zdjęć, interfejsów WMS), 5G Sub-6 (model X) z niskim opóźnieniem w dużych obiektach, dwa silniki skanowania — CM60E (standard) i SE5500 Smart Focus (skaner Zebry z zasięgiem do 15 m na wysokich regałach). Procesor QCM4490 (Dragonwing) obsługuje większe obciążenia niż SM6225 w SM24.
 
 Warianty: SM25 W (Wi-Fi only) do pracy w zasięgu sieci bezprzewodowej, SM25 X (Wi-Fi + 5G/4G LTE + GPS) z dual SIM (nano + eSIM) do pracy w terenie i logistyki mobilnej. Oba warianty: Gorilla Glass 5, IP67, upadki z 1,5 m (1,8 m z bootem ochronnym), 1000 tumble wg MIL-STD-810H, praca od -20°C do +50°C, hot-swap baterii 4000/6000 mAh.
 
@@ -49922,7 +49922,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
     ],
     faq: [
       { question: 'Czym różni się M3 SM25 od SM24?', answer: 'SM25 ma 3 kluczowe przewagi: 1) ekran FHD+ (1080p) zamiast HD+ (720p) w SM24 — ostrość dokumentów i interfejsów WMS, 2) 5G Sub-6 (model X) zamiast 4G LTE — niższe opóźnienia w dużych obiektach, 3) skaner Zebra SE5500 Smart Focus (zasięg do 15 m) obok standardowego CM60E. SM25 waży 270 g (SM24: 240 g) i ma lepszy procesor QCM4490 (Dragonwing). Oba mają tę samą obudowę (77×167×12,9 mm), IP67, hot-swap baterii i Android 16→18.' },
-      { question: 'Kiedy M3 SM25 będzie dostępny w Polsce?', answer: 'M3 SM25 to nowość 2026. Termin dostępności w Polsce zależy od harmonogramu M3 Mobile — skontaktuj się z TAKMA po aktualny status. Wstępne zamówienia przyjmujemy już teraz. W międzyczasie rekomendujemy [M3 SM24](/produkt/m3-mobile-sm24) (dostępny od 3 123 zł) lub [Zebra TC27](/produkt/zebra-tc27) (od 2 690 zł, 5G + GPS).' },
+      { question: 'Kiedy M3 SM25 będzie dostępny w Polsce?', answer: 'M3 SM25 to nowość 2026. Termin dostępności w Polsce zależy od harmonogramu M3 Mobile — skontaktuj się z TAKMA po aktualny status. Wstępne zamówienia przyjmujemy już teraz. W międzyczasie rekomendujemy [M3 SM24](/produkt/m3-sm24) (dostępny od 3 123 zł) lub [Zebra TC27](/produkt/zebra-tc27) (od 2 690 zł, 5G + GPS).' },
       { question: 'M3 SM25 vs Zebra TC27 — porównanie', answer: 'SM25: 8 GB RAM / 128 GB, FHD+, 5G, Android 16→18, hot-swap, skaner SE5500 (15 m), IP67, 270 g. [TC27](/produkt/zebra-tc27): 4 GB / 64 GB, FHD+, 5G, Android 14 (LifeGuard 10 lat), IP68, 236 g, Mobility DNA (DataWedge, StageNow). SM25 wygrywa pamięcią, hot-swap i SE5500. TC27 wygrywa IP68, 10-letnim wsparciem i ekosystemem Mobility DNA.' },
       { question: 'M3 SM25 vs Honeywell CT32 — porównanie', answer: 'SM25: 8 GB / 128 GB, FHD+, 5G, QCM4490, skaner SE5500 (15 m), hot-swap, IP67, 270 g. [CT32](/produkt/honeywell-ct32): 6-8 GB / 128 GB, FHD+, 5G, hot-swap, FlexRange XLR (15 m), IP67, od 3 389 zł. Oba mają 5G, hot-swap i skanery dalekiego zasięgu. CT32 ma Mobility Edge (5 lat wsparcia). SM25 ma nowszy Android 16 i skaner SE5500 (Zebra).' },
       { question: 'Jaki skaner ma M3 SM25?', answer: 'SM25 oferuje dwa silniki skanowania: CM60E (standardowy imager 2D — kody 1D, 2D, QR, DataMatrix z bliska i średniego zasięgu) oraz SE5500 Smart Focus firmy Zebra (skaner dalekiego zasięgu do 15 m na etykietach w magazynach wysokiego składowania). SE5500 to ten sam silnik co w [Zebra MC3400](/produkt/zebra-mc3400) i [MC9400](/produkt/zebra-mc9400).' },
@@ -49930,7 +49930,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
       { question: 'Czy M3 SM25 ma 5G?', answer: 'Tak — model SM25 X obsługuje 5G Sub-6 GHz (pasma n1/2/3/5/7/8/20/28/38/40/41/77/78) oraz 4G LTE, 3G i 2G. Model SM25 W ma tylko Wi-Fi 6E (bez modemu komórkowego). 5G zapewnia niskie opóźnienia i szybki transfer danych — idealne do dużych centrów logistycznych, pracy z WMS w chmurze i komunikacji video.' },
       { question: 'Do czego nadaje się M3 SM25?', answer: 'Magazyny wysokiego składowania (skaner SE5500 do 15 m), centra dystrybucyjne z 5G (niskie opóźnienia WMS w chmurze), logistyka ostatniej mili (5G + GPS + dual SIM), retail z obsługą NFC i płatności, zarządzanie flotą pojazdów z GPS dual-band. SM25 to alternatywa dla [Zebra TC27](/produkt/zebra-tc27) z większą pamięcią, hot-swap i skanerem dalekiego zasięgu.' },
       { question: 'Gdzie kupić M3 SM25 w Polsce?', answer: 'TAKMA jest partnerem M3 Mobile w Polsce. Przyjmujemy wstępne zamówienia na M3 SM25 — skontaktuj się po aktualny termin dostępności i wycenę. Oferujemy doradztwo w doborze wariantu (W vs X), konfigurację M3 Speedpack, urządzenia demo i serwis.' },
-      { question: 'Jakie są alternatywy dla M3 SM25?', answer: '[M3 SM24](/produkt/m3-mobile-sm24) (od 3 123 zł) — tańszy model bez 5G i SE5500, HD+ zamiast FHD+. [Zebra TC27](/produkt/zebra-tc27) (od 2 690 zł) — 5G, FHD+, IP68, LifeGuard 10 lat, Mobility DNA. [Honeywell CT32](/produkt/honeywell-ct32) (od 3 389 zł) — 5G, hot-swap, FlexRange 15 m, Mobility Edge.' },
+      { question: 'Jakie są alternatywy dla M3 SM25?', answer: '[M3 SM24](/produkt/m3-sm24) (od 3 123 zł) — tańszy model bez 5G i SE5500, HD+ zamiast FHD+. [Zebra TC27](/produkt/zebra-tc27) (od 2 690 zł) — 5G, FHD+, IP68, LifeGuard 10 lat, Mobility DNA. [Honeywell CT32](/produkt/honeywell-ct32) (od 3 389 zł) — 5G, hot-swap, FlexRange 15 m, Mobility Edge.' },
     ],
     availability: 'unavailable' as const,
     isNew: true,
@@ -49945,7 +49945,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
     ],
     compatibleAccessories: [],
     relatedAccessories: [],
-    relatedProducts: ['m3-mobile-sm24', 'zebra-tc27', 'honeywell-ct32'],
+    relatedProducts: ['m3-sm24', 'zebra-tc27', 'honeywell-ct32'],
     downloads: [
       { name: 'Karta katalogowa M3 SM25 (EN)', type: 'datasheet' as const, url: '/downloads/m3-sm25-specification.pdf', size: '517 KB' },
     ],

@@ -1830,7 +1830,7 @@ export const guides: Guide[] = [
 <p>Udział: ~8%, najszybciej rosnący. Chiński producent z europejskim biurem (Holandia). MT93 Megattera Pro (~3 000 zł) oferuje IP67, angled shooter i 4G LTE w cenie entry-level konkurencji. Idealna marka dla firm, które potrzebują solidnych terminali przy ograniczonym budżecie. Słabsza strona: krótsze wsparcie Androida (3–4 lata), mniejsza sieć serwisowa w Polsce, brak rozbudowanego ekosystemu MDM.</p>
 
 <h3>M3 Mobile — król retail</h3>
-<p>Udział: ~5%. Koreański producent ceniony w retail i logistyce. SL20+ (~2 000 zł) to najtańszy terminal z Android 13 i IP67 — idealne do retail (weryfikacja cen, etykietowanie). Nowe modele UL30 (klawiatura, Android 14, 3 m drop) i SM30 (5G, IP68) z końca 2025 r. celują w segment premium. W 2026 roku M3 Mobile wprowadza <a href="/poradnik/m3-mobile-sm24-sm25-porownanie">SM24 i SM25</a> — nowe terminale z Android 16, Wi-Fi 6E i IP67, które wypełniają lukę cenową między SL20+ a konkurencją Zebry. Dobra jakość wykonania, ale najmniejszy ekosystem i najkrótsze wsparcie w zestawieniu.</p>
+<p>Udział: ~5%. Koreański producent ceniony w retail i logistyce. SL20+ (~2 000 zł) to najtańszy terminal z Android 13 i IP67 — idealne do retail (weryfikacja cen, etykietowanie). Nowe modele UL30 (klawiatura, Android 14, 3 m drop) i SM30 (5G, IP68) z końca 2025 r. celują w segment premium. W 2026 roku M3 Mobile wprowadza <a href="/poradnik/m3-sm24-sm25-porownanie">SM24 i SM25</a> — nowe terminale z Android 16, Wi-Fi 6E i IP67, które wypełniają lukę cenową między SL20+ a konkurencją Zebry. Dobra jakość wykonania, ale najmniejszy ekosystem i najkrótsze wsparcie w zestawieniu.</p>
 
 <h3>Porównanie marek — macierz decyzyjna</h3>
 <table style="width:100%">
@@ -10100,7 +10100,7 @@ export const guides: Guide[] = [
   ],
 },
 {
-  slug: 'm3-mobile-sm24-sm25-porownanie',
+  slug: 'm3-sm24-sm25-porownanie',
   title: 'M3 SM24 vs SM25 — porównanie nowych terminali mobilnych 2026',
   seoTitle: 'M3 SM24 vs SM25 — porównanie terminali 2026',
   seoDescription: 'M3 SM24 i SM25 — nowe terminale z Android 16, IP67, Wi-Fi 6E i baterią hot-swap. SM25 z 5G i skanerem dalekiego zasięgu SE5500, SM24 z niższym TCO. Porównanie, doradztwo TAKMA.',
@@ -10226,7 +10226,7 @@ export const guides: Guide[] = [
 
 <p><strong>Mobility DNA vs M3 Speedpack.</strong> Zebra Mobility DNA (DataWedge, StageNow, WorryFree WiFi, PowerPrecision+, Device Tracker) to najrozbudowanszy ekosystem zarządzania flotą terminali mobilnych na rynku. M3 Speedpack oferuje podstawowe funkcje MDM, ale ma węższy zakres — przy flotach 50+ terminali różnica jest odczuwalna.</p>
 
-<p><strong>Cena.</strong> <a href="/produkt/zebra-tc22">Zebra TC22</a> startuje od 2 417 zł netto — to najtańszy terminal z Wi-Fi 6E, IP68 i Mobility DNA na rynku. <a href="/produkt/m3-mobile-sm24">SM24</a> od 3 123 zł netto (Wi-Fi) / 3 552 zł (LTE) — droższy od TC22, ale z dwukrotnie większą pamięcią (8/128 GB vs 4/64 GB) i hot-swap baterii.</p>
+<p><strong>Cena.</strong> <a href="/produkt/zebra-tc22">Zebra TC22</a> startuje od 2 417 zł netto — to najtańszy terminal z Wi-Fi 6E, IP68 i Mobility DNA na rynku. <a href="/produkt/m3-sm24">SM24</a> od 3 123 zł netto (Wi-Fi) / 3 552 zł (LTE) — droższy od TC22, ale z dwukrotnie większą pamięcią (8/128 GB vs 4/64 GB) i hot-swap baterii.</p>
 
 <p><strong>IP67 vs IP68.</strong> SM24/SM25 mają IP67 (zanurzenie 1 m/30 min). TC22/TC27 i CT32 mają IP68 (zanurzenie 1,5 m/30 min). W praktyce rzadko zanurzamy terminale — ale IP68 daje lepszą ochronę przy intensywnym kontakcie z wodą (mycie halowe, deszcz).</p>`
     },
@@ -10330,7 +10330,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Ile kosztuje M3 SM24 / SM25?',
-      answer: '<a href="/produkt/m3-mobile-sm24">SM24</a> W (Wi-Fi) od 3 123 zł netto, SM24 X (Wi-Fi + LTE + GPS) od 3 552 zł netto. Dla porównania: <a href="/produkt/zebra-tc22">Zebra TC22</a> od 2 417 zł, <a href="/produkt/zebra-tc27">TC27</a> od 2 690 zł, <a href="/produkt/honeywell-ct32">Honeywell CT32</a> od 3 389 zł. SM24 jest droższy od TC22, ale oferuje 8 GB RAM, 128 GB Flash i hot-swap baterii. Ceny SM25 dostępne na zapytanie — skontaktuj się z TAKMA: +48 607 819 688 lub biuro@takma.com.pl.',
+      answer: '<a href="/produkt/m3-sm24">SM24</a> W (Wi-Fi) od 3 123 zł netto, SM24 X (Wi-Fi + LTE + GPS) od 3 552 zł netto. Dla porównania: <a href="/produkt/zebra-tc22">Zebra TC22</a> od 2 417 zł, <a href="/produkt/zebra-tc27">TC27</a> od 2 690 zł, <a href="/produkt/honeywell-ct32">Honeywell CT32</a> od 3 389 zł. SM24 jest droższy od TC22, ale oferuje 8 GB RAM, 128 GB Flash i hot-swap baterii. Ceny SM25 dostępne na zapytanie — skontaktuj się z TAKMA: +48 607 819 688 lub biuro@takma.com.pl.',
     },
     {
       question: 'Czy TAKMA serwisuje terminale M3 Mobile?',
