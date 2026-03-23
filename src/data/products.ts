@@ -176,7 +176,7 @@ export const categories: Category[] = [
     seoDescription: 'Terminale mobilne Zebra z Androidem: TC501, TC701, TC22, TC27, TC53, TC58, MC3400, MC3450, MC9400, MC9450, EM45. Wytrzymałe komputery mobilne IP68 do magazynu, logistyki, produkcji i retail. Ceny netto od 2 180 zł, doradztwo, serwis Zebra.',
     longDescription: 'Profesjonalne terminale mobilne (kolektory danych) Zebra klasy enterprise z systemem Android. NOWOŚĆ: TC501 — flagowy terminal z AI, RFID UHF w standardzie, Wi-Fi 7 i ekranem AMOLED 1500 nit, następca TC53. TC701 — ultra-wytrzymała wersja z upadkami z 3,66 m, szok termiczny, chłodnia/outdoor, następca TC73. Seria TC22/TC27 dla małych i średnich firm — lekkie, intuicyjne, w przystępnej cenie. TC53/TC58 dla wymagających środowisk magazynowych i logistycznych — IP68, upadki z 1,8 m, skaner SE55. MC3400/MC3450 z klawiaturą fizyczną do intensywnego skanowania w produkcji. MC9400/MC9450 ultra-rugged z 7 klawiaturami, IP65+IP68, upadki z 3,65 m i skaner do 30,5 m — do chłodni, portów i ciężkiego przemysłu. EM45 Enterprise Mobile — smukły komputer mobilny w formie smartfona z 5G, Wi-Fi 6E, aparatem 50 MP i NPU do AI, idealny dla retail, field sales i hospitality. Wszystkie modele z Wi-Fi 6/6E/7, Bluetooth 5.x/6.0 i zarządzaniem MDM.',
     icon: 'smartphone',
-    productCount: 17,
+    productCount: 18,
   },
   {
     id: 'skanery-kodow-kreskowych',
@@ -854,6 +854,14 @@ export const manufacturers: Manufacturer[] = [
     logo: '/images/partners/logo_citizen.png',
     seoTitle: 'Drukarki etykiet Citizen | Biurkowe i przemysłowe',
     seoDescription: 'Drukarki etykiet Citizen Systems — kompaktowe drukarki biurkowe i przemysłowe z Ethernet w standardzie, Cross-Emulation ZPL/EPL i certyfikatem ENERGY STAR. TAKMA — autoryzowany partner AutoID w Polsce.'
+  },
+  {
+    id: 'm3-mobile',
+    slug: 'm3-mobile',
+    name: 'M3 Mobile',
+    logo: '/images/partners/logo_m3mobile.png',
+    seoTitle: 'Terminale mobilne M3 Mobile | SM24, SM25',
+    seoDescription: 'Terminale mobilne M3 Mobile — koreański producent urządzeń enterprise z hot-swap baterii, Wi-Fi 6E i Android 16. SM24 i SM25 do magazynów, retail i logistyki. TAKMA — partner AutoID w Polsce.'
   },
 ]
 
@@ -49727,6 +49735,124 @@ const citizenPrinterAccessories: Product[] = [
 ]
 
 // ============================================
+// ============================================
+// M3 MOBILE — TERMINALE MOBILNE
+// ============================================
+
+const m3MobileComputers: Product[] = [
+  {
+    id: 'm3-mobile-sm24',
+    slug: 'm3-mobile-sm24',
+    name: 'M3 Mobile SM24',
+    shortDescription: 'M3 Mobile SM24 — terminal mobilny 6" z hot-swap baterii, 8 GB RAM, Android 16, Wi-Fi 6E, IP67',
+    description: `Dla kogo? M3 Mobile SM24 to terminal mobilny klasy enterprise z ekranem 6" HD+ i procesorem Qualcomm SM6225 (2,4 GHz, 8 rdzeni), zaprojektowany dla firm szukających niezawodnego urządzenia z hot-swap baterii w przystępnej cenie. SM24 sprawdza się w magazynach, centrach logistycznych, handlu detalicznym i kompletacji zamówień e-commerce.
+
+Kluczowe przewagi M3 Mobile SM24: hot-swap baterii 4000 mAh (wymiana bez wyłączania urządzenia — ciągłość sesji WWAN/WLAN/Bluetooth), 8 GB RAM i 128 GB pamięci Flash (dwukrotnie więcej niż Zebra TC22/TC27), wsparcie od Android 16 do Android 18 (3 generacje OS), Wi-Fi 6E (802.11ax) z 2x2 MU-MIMO i szybkim roamingiem 802.11r/OKC — stabilna łączność w gęstych sieciach AP. Ekran HD+ (720x1440) obniża zużycie energii i wydłuża pracę na baterii. NFC od strony ekranu (ISO 14443 A/B, FeliCa, ISO 15693) do obsługi kart i tagów. Skaner 2D CM60E odczytuje kody 1D, 2D, QR i DataMatrix.
+
+Warianty: SM24 W (Wi-Fi only) do pracy w zasięgu sieci bezprzewodowej, SM24 X (Wi-Fi + 4G LTE + GPS) z dual SIM (nano + eSIM) do pracy w terenie. Oba warianty: Gorilla Glass 5, IP67, upadki z 1,5 m (1,8 m z bootem ochronnym), 2000 tumble wg MIL-STD-810H, praca od -20°C do +50°C.
+
+M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami i uproszczonego wdrożenia. Pełna specyfikacja techniczna dostępna w karcie katalogowej M3 Mobile SM24 (PDF w sekcji Dokumenty).`,
+    categoryId: 'terminale-mobilne',
+    manufacturerId: 'm3-mobile',
+    subcategoryIds: ['terminale-mobilne'],
+    tags: ['magazyn', 'retail', 'logistyka'],
+    images: [
+      '/images/products/SM240E-W2CHSS-HF.png',
+      '/images/products/SM240E-W2CHSS-HF-2.png',
+      '/images/products/SM240E-W2CHSS-HF-3.png',
+      '/images/products/SM240E-W2CHSS-HF-4.png',
+    ],
+    imageDescriptions: [
+      'M3 Mobile SM24 — widok z przodu, ekran 6 cali HD+ z Gorilla Glass 5',
+      'M3 Mobile SM24 — widok z tyłu, kamera 16 MP, złącze POGO i hot-swap baterii',
+      'M3 Mobile SM24 — widok pod kątem z przodu, żółty przycisk skanowania boczny',
+      'M3 Mobile SM24 — widok pod kątem z tyłu, komora baterii hot-swap i złącze POGO',
+    ],
+    seoTitle: 'M3 Mobile SM24 — terminal mobilny 6", hot-swap, Android 16 | od 3 123 zł',
+    seoDescription: 'Terminal mobilny M3 Mobile SM24 z ekranem 6" HD+, procesorem Qualcomm 2,4 GHz, 8 GB RAM, 128 GB Flash, hot-swap baterii 4000/6000 mAh, Wi-Fi 6E, IP67, MIL-STD-810H. M3 SM24 cena od 3 123 zł netto. Terminal M3 Mobile SM24, SM24 M3 Mobile. Warianty SM24W (Wi-Fi) i SM24X (LTE). PN: SM240E-W2CHSS-HF, SM244E-W2CHSS-HF.',
+    variantAttributeTooltips: {
+      '4G LTE': 'SM24 W = tylko Wi-Fi 6E (praca w zasięgu sieci bezprzewodowej).\n\nSM24 X = Wi-Fi 6E + 4G LTE + GPS + dual SIM (nano + eSIM) — do pracy w terenie i logistyki.',
+    },
+    variants: [
+      {
+        partNumber: 'SM240E-W2CHSS-HF',
+        name: 'SM24 W — Wi-Fi 6E',
+        attributes: {},
+        priceFrom: 3123,
+        availability: 'on-order' as const,
+      },
+      {
+        partNumber: 'SM244E-W2CHSS-HF',
+        name: 'SM24 X — Wi-Fi 6E + 4G LTE + GPS',
+        attributes: { '4G LTE': 'Tak' },
+        priceFrom: 3552,
+        availability: 'on-order' as const,
+      },
+    ],
+    specifications: [
+      { name: 'Procesor', value: 'Qualcomm SM6225, 8 rdzeni, 2,4 GHz' },
+      { name: 'System operacyjny', value: 'Android 16 (wsparcie do Android 18)' },
+      { name: 'RAM', value: '8 GB' },
+      { name: 'Pamięć Flash', value: '128 GB' },
+      { name: 'Karta microSD', value: 'Do 2 TB' },
+      { name: 'Wyświetlacz', value: '6,0″ HD+ (720 × 1440), Gorilla Glass 5' },
+      { name: 'Dotyk', value: 'Pojemnościowy, palec / rękawiczki' },
+      { name: 'Skaner', value: '2D Imager CM60E (1D/2D/QR/DataMatrix)' },
+      { name: 'Kamera tylna', value: '16 MP, autofokus fazowy (PDAF)' },
+      { name: 'Kamera przednia', value: '8 MP' },
+      { name: 'NFC', value: 'ISO 14443 A/B, FeliCa, ISO 15693 (od strony ekranu)' },
+      { name: 'Wi-Fi', value: 'Wi-Fi 6E (802.11ax), 2×2 MU-MIMO, 2,4/5/6 GHz' },
+      { name: 'Bluetooth', value: '5.3 BLE' },
+      { name: '4G LTE (model X)', value: 'B1/2/3/4/5/7/8/20/28/38/39/40/41 + 3G + 2G' },
+      { name: 'GPS (model X)', value: 'GPS, GLONASS, Galileo, BeiDou, QZSS (dual-band)' },
+      { name: 'SIM (model X)', value: 'Nano SIM + eSIM (dual SIM)' },
+      { name: 'Bateria', value: '4000 mAh Li-Ion, hot-swap (6000 mAh opcjonalnie)' },
+      { name: 'Złącza', value: 'USB-C, POGO' },
+      { name: 'Klawisze', value: '5 programowalnych klawiszy bocznych + przycisk zasilania' },
+      { name: 'Głośnik/mikrofon', value: 'Głośnik wbudowany, 2 mikrofony z redukcją szumów' },
+      { name: 'Klasa szczelności', value: 'IP67' },
+      { name: 'Odporność na upadki', value: '1,5 m (1,8 m z bootem ochronnym) wg MIL-STD-810H' },
+      { name: 'Tumble', value: '1000× z 0,5 m (bez boota), 1000× z 1 m (z bootem)' },
+      { name: 'Temperatura pracy', value: '-20°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-30°C do +70°C' },
+      { name: 'Wilgotność', value: '5-95% RH (bez kondensacji)' },
+      { name: 'Wymiary', value: '77 × 167 × 12,9 mm' },
+      { name: 'Waga', value: '240 g (z baterią)' },
+      { name: 'Gwarancja', value: '1 rok' },
+    ],
+    faq: [
+      { question: 'Ile kosztuje M3 Mobile SM24?', answer: 'M3 Mobile SM24 W (Wi-Fi only) od 3 123 zł netto, SM24 X (Wi-Fi + 4G LTE + GPS) od 3 552 zł netto. Ceny zawierają baterię 4000 mAh z funkcją hot-swap.' },
+      { question: 'Czym różni się SM24 W od SM24 X?', answer: 'SM24 W (Wi-Fi only) ma Wi-Fi 6E, Bluetooth 5.3 i NFC — do pracy w zasięgu sieci bezprzewodowej. SM24 X dodaje 4G LTE (B1-B41), GPS dual-band (GPS/GLONASS/Galileo/BeiDou) i dual SIM (nano + eSIM) — do pracy w terenie, logistyki i dostawy ostatniej mili.' },
+      { question: 'Czy M3 Mobile SM24 ma hot-swap baterii?', answer: 'Tak — SM24 obsługuje hot-swap baterii: wymiana baterii bez wyłączania urządzenia. Podczas wymiany sesje WWAN, WLAN i Bluetooth są utrzymywane. Standard: 4000 mAh, opcjonalnie 6000 mAh (bateria rozszerzona). Hot-swap to przewaga nad [Zebra TC22](/produkt/zebra-tc22) i [TC27](/produkt/zebra-tc27), które nie mają tej funkcji.' },
+      { question: 'M3 Mobile SM24 vs Zebra TC22 — porównanie', answer: 'SM24: 8 GB RAM / 128 GB, Android 16-18, hot-swap baterii, HD+ (720p), IP67, 240 g, od 3 123 zł. [TC22](/produkt/zebra-tc22): 4 GB RAM / 64 GB, Android 14 (LifeGuard 10 lat), FHD+ (1080p), IP68, 236 g, od 2 417 zł. SM24 wygrywa pamięcią i hot-swap. TC22 wygrywa ekranem FHD+, IP68, 10-letnim wsparciem LifeGuard i ekosystemem Mobility DNA (DataWedge, StageNow).' },
+      { question: 'M3 Mobile SM24 vs Honeywell CT32 — porównanie', answer: 'SM24: 8 GB RAM / 128 GB, Android 16-18, hot-swap, Qualcomm SM6225 2,4 GHz, od 3 123 zł. [CT32](/produkt/honeywell-ct32): 6-8 GB RAM / 128 GB, Android 14 (Mobility Edge do A18), hot-swap, 5G, FlexRange do 15 m, od 3 389 zł. Oba mają hot-swap. CT32 ma lepszy skaner FlexRange i 5G. SM24 jest tańszy i ma nowszy Android 16.' },
+      { question: 'Jaki skaner ma M3 Mobile SM24?', answer: 'SM24 jest wyposażony w imager 2D CM60E — odczytuje kody 1D (EAN, Code128, Code39), 2D (QR, DataMatrix, PDF417) i kody z ekranów. Jeden skaner bez wariantów zasięgu — upraszcza wdrożenie i serwis.' },
+      { question: 'Jak długo M3 Mobile wspiera aktualizacje Androida?', answer: 'M3 Mobile deklaruje wsparcie SM24 od Android 16 do Android 18 (3 generacje). Dla porównania: Zebra TC22/TC27 — LifeGuard 10 lat (do 2034), Honeywell CT32 — Mobility Edge do Android 18. SM24 ma krótszy deklarowany cykl wsparcia niż Zebra, porównywalny z Honeywellem.' },
+      { question: 'Do czego nadaje się M3 Mobile SM24?', answer: 'Kompletacja zamówień e-commerce (WMS, BaseLinker), przyjęcia i wydania towaru w magazynie, inwentaryzacja z czytnikiem 2D CM60E, obsługa klienta w retail (sprawdzanie cen, dostępności), logistyka ostatniej mili (model X z LTE/GPS). SM24 to ekonomiczna alternatywa dla Zebra TC22/TC27 z większą pamięcią i hot-swap baterii.' },
+      { question: 'Jakie akcesoria są dostępne do M3 Mobile SM24?', answer: 'Bateria standardowa 4000 mAh (SX2X-BATT-S40), stacja dokująca 2-gniazdowa (SX2X-2CRD-C00), stacja dokująca 2-gniazdowa z ładowarką baterii (SX2X-2CRD-CC0), zasilacz EU (SM2X-PWSP-2EU). Opcjonalnie: bateria rozszerzona 6000 mAh, boot ochronny (zwiększa odporność na upadki z 1,5 m do 1,8 m).' },
+      { question: 'Jakie są alternatywy dla M3 Mobile SM24?', answer: '[Zebra TC22](/produkt/zebra-tc22) (od 2 417 zł) — tańsza, FHD+, IP68, LifeGuard 10 lat, Mobility DNA. [Zebra TC27](/produkt/zebra-tc27) (od 2 690 zł) — jak TC22 + 5G + GPS. [Honeywell CT32](/produkt/honeywell-ct32) (od 3 389 zł) — hot-swap, FlexRange do 15 m, 5G, Mobility Edge. SM24 wyróżnia się 8 GB RAM, hot-swap w niższej cenie niż CT32 i nowszym Androidem 16.' },
+    ],
+    availability: 'on-order' as const,
+    isNew: true,
+    isBestseller: false,
+    applications: [
+      'Kompletacja zamówień e-commerce (WMS, BaseLinker, Allegro, Amazon)',
+      'Przyjęcia i wydania towaru w magazynie',
+      'Inwentaryzacja z czytnikiem 2D CM60E',
+      'Obsługa klienta w handlu detalicznym (ceny, dostępność, zamówienia)',
+      'Logistyka ostatniej mili i dostawy (model X z LTE/GPS)',
+      'Kontrola jakości na linii produkcyjnej',
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: [],
+    relatedProducts: ['zebra-tc22', 'zebra-tc27', 'honeywell-ct32'],
+    downloads: [
+      { name: 'Karta katalogowa M3 Mobile SM24 (EN)', type: 'datasheet' as const, url: '/downloads/m3-mobile-sm24-specification.pdf', size: '539 KB' },
+    ],
+    createdAt: '2026-03-23',
+  },
+]
+
 // EXPORT - WSZYSTKIE PRODUKTY
 // ============================================
 
@@ -49792,6 +49918,7 @@ export const products: Product[] = [
   ...tscPrinters,
   ...tscPrinterAccessories,
   ...citizenPrinterAccessories,
+  ...m3MobileComputers,
 ]
 
 // Helper do pobrania produktu po slug

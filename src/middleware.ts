@@ -84,6 +84,8 @@ export async function middleware(request: NextRequest) {
       'honeywell-ck62-stacja-ladowania-4-gniazdowa', 'honeywell-ck62-stacja-ladowania-5-z-bateriami',
       'honeywell-ck62-pasek-na-reke', 'honeywell-ck62-folia-ochronna',
       'honeywell-ck6x-ladowarka-4-baterii', 'honeywell-ck6x-ladowarka-16-baterii',
+      // M3 Mobile
+      'm3-mobile-sm24',
       // RFID — usunięte
       // Drukarki Honeywell + akcesoria
       'honeywell-pc45d', 'honeywell-pc45t',
