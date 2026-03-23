@@ -10103,8 +10103,8 @@ export const guides: Guide[] = [
   slug: 'm3-mobile-sm24-sm25-porownanie',
   title: 'M3 Mobile SM24 vs SM25 — porównanie nowych terminali mobilnych 2026',
   seoTitle: 'M3 Mobile SM24 vs SM25 — porównanie terminali 2026',
-  seoDescription: 'M3 Mobile SM24 i SM25 — nowe terminale z Android 16, IP67, Wi-Fi 6E i baterią hot-swap. SM25 z 5G i podwójnym skanerem SE5500, SM24 z niższym TCO. Porównanie, doradztwo TAKMA.',
-  excerpt: 'M3 Mobile SM25 i SM24 zastępują model SM20 — ta sama obudowa IP67, Android 16, Wi-Fi 6E i bateria hot-swap. SM25 z 5G i podwójnym skanerem SE5500, SM24 tańszy z niższym zużyciem energii. Szczegółowe porównanie oparte na oficjalnych kartach katalogowych M3 Mobile.',
+  seoDescription: 'M3 Mobile SM24 i SM25 — nowe terminale z Android 16, IP67, Wi-Fi 6E i baterią hot-swap. SM25 z 5G i skanerem dalekiego zasięgu SE5500, SM24 z niższym TCO. Porównanie, doradztwo TAKMA.',
+  excerpt: 'M3 Mobile SM25 i SM24 zastępują model SM20 — ta sama obudowa IP67, Android 16, Wi-Fi 6E i bateria hot-swap. SM25 z 5G i skanerem dalekiego zasięgu SE5500, SM24 tańszy z niższym zużyciem energii. Szczegółowe porównanie oparte na oficjalnych kartach katalogowych M3 Mobile.',
   category: 'porownanie' as const,
   tags: ['terminale-mobilne', 'porownanie', 'm3-mobile', 'sm24', 'sm25', 'android-16', '5g', 'wifi-6e', 'magazyn', 'logistyka', 'retail'],
   publishedAt: '2026-03-23',
@@ -10116,7 +10116,7 @@ export const guides: Guide[] = [
       heading: 'M3 Mobile SM24 vs SM25 — nowe terminale mobilne 2026',
       content: `<p><strong>M3 Mobile wprowadza na rynek dwa nowe terminale mobilne — SM25 i SM24 — które zastępują dotychczasowy model SM20 i celują w segment między budżetowym SL20+ a premium SM30.</strong> Oba urządzenia dzielą tę samą obudowę (77 x 167 x 12,9 mm), ten sam system Android 16 z deklarowanym wsparciem do Androida 18, identyczną ochronę IP67 z upadkami na beton z 1,8 m oraz Wi-Fi 6E z 2x2 MU-MIMO.</p>
 
-<p>Kluczowa różnica? <strong>SM25 to w pełni wyposażony flagowiec z 5G, ekranem FHD+ i podwójnym silnikiem skanera (CM60E + SE5500 Smart Focus)</strong>, a SM24 — jego tańsza wersja, świadomie okrojona w trzech punktach, żeby obniżyć cenę zakupu i zużycie energii.</p>
+<p>Kluczowa różnica? <strong>SM25 to flagowiec z 5G, ekranem FHD+ i dwoma silnikami skanera — CM60E do bliskiego zasięgu oraz SE5500 Smart Focus do skanowania dalekiego</strong>, a SM24 — jego tańsza wersja, świadomie okrojona w trzech punktach, żeby obniżyć cenę zakupu i zużycie energii.</p>
 
 <p>Ten wpis jest dla Ciebie, jeśli zarządzasz logistyką, magazynem lub siecią sklepów i szukasz terminala mobilnego z nowoczesną łącznością (Wi-Fi 6E, Bluetooth 5.3) w przystępniejszej cenie niż <a href="/produkt/zebra-tc53">Zebra TC53</a> czy <a href="/produkt/honeywell-ct47">Honeywell CT47</a> — ale nie chcesz rezygnować z IP67, hot-swap baterii i front-side NFC.</p>
 
@@ -10134,7 +10134,7 @@ export const guides: Guide[] = [
 <tr><td><strong>Wyświetlacz</strong></td><td><strong>6" FHD+ (1080 x 2160)</strong></td><td><strong>6" HD+ (720 x 1440)</strong></td><td>FHD+ = ostrzejszy obraz. HD+ = niższe zużycie energii</td></tr>
 <tr><td><strong>Łączność WAN</strong></td><td><strong>5G + 4G + 3G + 2G</strong></td><td><strong>4G + 3G + 2G</strong></td><td>SM25 X z pełnym 5G (Sub-6 GHz). SM24 X z 4G LTE</td></tr>
 <tr><td><strong>Bluetooth</strong></td><td><strong>5.3 BLE + Beaconing</strong></td><td><strong>5.3 BLE</strong></td><td>SM25 z nadawaniem sygnałów lokalizacyjnych (RTLS)</td></tr>
-<tr><td><strong>Skaner</strong></td><td><strong>CM60E + SE5500 Smart Focus</strong></td><td><strong>CM60E</strong></td><td>SM25: podwójny skaner z zasięgiem dalekim. SM24: pojedynczy</td></tr>
+<tr><td><strong>Skaner</strong></td><td><strong>CM60E + SE5500 Smart Focus</strong></td><td><strong>CM60E</strong></td><td>SM25: dwa silniki — CM60E + SE5500 (zasięg daleki). SM24: tylko CM60E</td></tr>
 <tr><td>Wi-Fi</td><td>Wi-Fi 6E (802.11ax), 2x2 MU-MIMO, DBS</td><td>Identyczne</td><td>Najnowszy standard</td></tr>
 <tr><td>NFC</td><td>Front-side (LCD), ISO 14443 A/B, FeliCa, ISO 15693</td><td>Identyczne</td><td>Na ekranie — wygodniejsze niż tylne</td></tr>
 <tr><td>Android</td><td>16 (wsparcie do 18)</td><td>Identyczne</td><td>M3 StartUp do kontroli GMS</td></tr>
@@ -10162,7 +10162,7 @@ export const guides: Guide[] = [
 
 <ul>
 <li><strong>Potrzebujesz 5G w terenie.</strong> SM25 X obsługuje pełne pasma 5G (Sub-6 GHz) plus 4G/3G/2G fallback. To terminal do doręczeń ostatniej mili, serwisu w terenie, inwentaryzacji u klienta — wszędzie tam, gdzie nie ma firmowej sieci Wi-Fi, a LTE nie daje wystarczającej przepustowości.</li>
-<li><strong>Skanujesz na różne odległości.</strong> Podwójny silnik skanera CM60E + SE5500 Smart Focus oznacza, że jeden terminal obsługuje skanowanie z bliska (paczka w ręce), ze średniego dystansu (regał na wysokości 3-4 m) i z daleka (kody na regałach wysokiego składowania).</li>
+<li><strong>Skanujesz na różne odległości.</strong> Dwa silniki skanera — CM60E do bliskiego zasięgu plus SE5500 Smart Focus do dalekiego — oznaczają, że jeden terminal obsługuje skanowanie z bliska (paczka w ręce), ze średniego dystansu (regał 3-4 m) i z daleka (kody na regałach wysokiego składowania).</li>
 <li><strong>Interfejs WMS/ERP jest graficznie rozbudowany.</strong> FHD+ (1080 x 2160) ma 2,25x więcej pikseli niż HD+ (720 x 1440). Różnica widoczna w aplikacjach z mapami magazynu, zdjęciami produktów i tabelami wielokolumnowymi.</li>
 <li><strong>Planujesz lokalizację Bluetooth.</strong> SM25 obsługuje Bluetooth 5.3 BLE z funkcją nadawania sygnałów lokalizacyjnych (beaconing) — może emitować sygnał do systemu RTLS, umożliwiając śledzenie terminali i pracowników na hali magazynowej w czasie rzeczywistym.</li>
 </ul>
@@ -10234,7 +10234,7 @@ export const guides: Guide[] = [
       heading: 'Kiedy SM24/SM25, kiedy Zebra — rekomendacja',
       content: `<p><strong>SM24</strong> — gdy budżet jest priorytetem, flota poniżej 20 szt., cykl życia 3 lata, praca głównie w Wi-Fi, retail lub lekki magazyn. Najniższe TCO w segmencie 3-letnim.</p>
 
-<p><strong>SM25</strong> — gdy potrzebujesz 5G i podwójnego skanera, ale cena <a href="/produkt/zebra-tc58">Zebry TC58</a> (6 751 zł) lub <a href="/produkt/honeywell-ct47">Honeywell CT47</a> jest zbyt wysoka. SM25 daje 80% możliwości flagowców za niższą cenę.</p>
+<p><strong>SM25</strong> — gdy potrzebujesz 5G i skanera dalekiego zasięgu SE5500, ale cena <a href="/produkt/zebra-tc58">Zebry TC58</a> (6 751 zł) lub <a href="/produkt/honeywell-ct47">Honeywell CT47</a> jest zbyt wysoka. SM25 daje 80% możliwości flagowców za niższą cenę.</p>
 
 <p><strong><a href="/produkt/zebra-tc53">Zebra TC53</a></strong> — gdy planujesz 5-letni cykl życia, masz flotę 20+ terminali, potrzebujesz Mobility DNA i 10-letniego wsparcia Android. Wyższy koszt zakupu, ale najniższe TCO w perspektywie 5 lat.</p>
 
