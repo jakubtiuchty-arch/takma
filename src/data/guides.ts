@@ -10116,9 +10116,9 @@ export const guides: Guide[] = [
       heading: 'M3 Mobile SM24 vs SM25 — nowe terminale mobilne 2026',
       content: `<p><strong>M3 Mobile wprowadza na rynek dwa nowe terminale mobilne — SM25 i SM24 — które zastępują dotychczasowy model SM20 i celują w segment między budżetowym SL20+ a premium SM30.</strong> Oba urządzenia dzielą tę samą obudowę (77 x 167 x 12,9 mm), ten sam system Android 16 z deklarowanym wsparciem do Androida 18, identyczną ochronę IP67 z upadkami na beton z 1,8 m oraz Wi-Fi 6E z 2x2 MU-MIMO.</p>
 
-<p>Kluczowa różnica? <strong>SM25 to flagowiec z 5G, ekranem FHD+ i dwoma silnikami skanera — CM60E do bliskiego zasięgu oraz SE5500 Smart Focus do skanowania dalekiego</strong>, a SM24 — jego tańsza wersja, okrojona w trzech punktach, żeby obniżyć cenę zakupu i wydłużyć pracę na baterii.</p>
+<p>Kluczowa różnica? <strong>SM25 to flagowiec z 5G, ekranem FHD+ i dwoma silnikami skanera — CM60E do bliskiego zasięgu oraz SE5500 Smart Focus do skanowania dalekiego</strong>, a SM24 — jego tańsza wersja, bez trzech funkcji flagowca, za to z niższą ceną i dłuższą pracą na baterii.</p>
 
-<p>Ten wpis jest dla Ciebie, jeśli zarządzasz logistyką, magazynem lub siecią sklepów i szukasz terminala mobilnego z nowoczesną łącznością (Wi-Fi 6E, Bluetooth 5.3) w przystępniejszej cenie niż <a href="/produkt/zebra-tc53">Zebra TC53</a> czy <a href="/produkt/honeywell-ct47">Honeywell CT47</a> — ale nie chcesz rezygnować z IP67, hot-swap baterii i NFC od strony ekranu.</p>
+<p>Ten wpis jest dla Ciebie, jeśli zarządzasz logistyką, magazynem lub siecią sklepów i szukasz terminala mobilnego z Wi-Fi 6E, Bluetooth 5.3, IP67, hot-swap baterii i NFC od strony ekranu — i zastanawiasz się, jak SM24/SM25 wypadają na tle <a href="/produkt/zebra-tc22">Zebry TC22</a>, <a href="/produkt/zebra-tc27">TC27</a> czy <a href="/produkt/honeywell-ct32">Honeywell CT32</a>.</p>
 
 <p>TAKMA jest partnerem M3 Mobile w Polsce — pomagamy dobrać wariant (SM24 vs SM25, X vs W), konfigurujemy urządzenia pod Twój WMS/ERP i zapewniamy serwis. Poniżej — szczegółowe porównanie oparte na oficjalnych kartach katalogowych <a href="https://m3mobile.com" target="_blank" rel="noopener">M3 Mobile</a> (rewizje SS-SM24 13/01/2026 i SS-SM25 01/12/2025).</p>`
     },
@@ -10190,53 +10190,53 @@ export const guides: Guide[] = [
       content: `<p>Na polskim rynku terminali mobilnych SM24 i SM25 rywalizują z Zebrą, Honeywellem i poprzednimi modelami M3 Mobile. Poniżej — porównanie z modelami, które najczęściej spotykamy we wdrożeniach TAKMA.</p>
 
 <table>
-<thead><tr><th>Parametr</th><th>M3 SM25</th><th>M3 SM24</th><th><a href="/produkt/zebra-tc53">Zebra TC53</a></th><th><a href="/produkt/honeywell-ct47">Honeywell CT47</a></th><th>M3 SL20+</th></tr></thead>
+<thead><tr><th>Parametr</th><th>M3 SM25</th><th>M3 SM24</th><th><a href="/produkt/zebra-tc27">Zebra TC27</a></th><th><a href="/produkt/zebra-tc22">Zebra TC22</a></th><th><a href="/produkt/honeywell-ct32">Honeywell CT32</a></th></tr></thead>
 <tbody>
-<tr><td>Procesor</td><td>QCM4490</td><td>SM6225</td><td>SD 6490</td><td>SD 778G</td><td>SD 660</td></tr>
-<tr><td>Wyświetlacz</td><td>6" FHD+</td><td>6" HD+</td><td>6" FHD+</td><td>5,5" FHD</td><td>5,45" HD</td></tr>
-<tr><td>5G</td><td>Tak (wariant X)</td><td>—</td><td>Tak (TC58)</td><td>Tak</td><td>—</td></tr>
-<tr><td>Wi-Fi</td><td>6E</td><td>6E</td><td>6E</td><td>6E</td><td>6</td></tr>
-<tr><td>IP</td><td>IP67</td><td>IP67</td><td>IP68</td><td>IP68</td><td>IP67</td></tr>
-<tr><td>Upadek</td><td>1,8 m</td><td>1,8 m</td><td>2,4 m</td><td>2,45 m</td><td>1,5 m</td></tr>
-<tr><td><strong>Waga</strong></td><td><strong>270 g</strong></td><td><strong>240 g</strong></td><td><strong>301 g</strong></td><td><strong>314 g</strong></td><td><strong>250 g</strong></td></tr>
-<tr><td>Bateria</td><td>4 000/6 000 mAh</td><td>4 000/6 000 mAh</td><td>4 680 mAh</td><td>4 680 mAh</td><td>4 100 mAh</td></tr>
+<tr><td>Procesor</td><td>QCM4490</td><td>SM6225</td><td>QC 5430 hex-core</td><td>QC 5430 hex-core</td><td>QCS4490 octa-core</td></tr>
+<tr><td>Wyświetlacz</td><td>6" FHD+</td><td>6" HD+</td><td>6" FHD+</td><td>6" FHD+</td><td>6" FHD</td></tr>
+<tr><td>5G</td><td>Tak (wariant X)</td><td>—</td><td>Tak (5G FR1)</td><td>—</td><td>Tak (wariant X1N)</td></tr>
+<tr><td>Wi-Fi</td><td>6E</td><td>6E</td><td>6E</td><td>6E</td><td>6E</td></tr>
+<tr><td>IP</td><td>IP67</td><td>IP67</td><td>IP68/IP65</td><td>IP68/IP65</td><td>IP65/IP68</td></tr>
+<tr><td>Upadek</td><td>1,8 m</td><td>1,8 m</td><td>1,5 m</td><td>1,5 m</td><td>1,8 m (z boot)</td></tr>
+<tr><td><strong>Waga</strong></td><td><strong>270 g</strong></td><td><strong>240 g</strong></td><td><strong>236 g</strong></td><td><strong>236 g</strong></td><td><strong>269 g</strong></td></tr>
+<tr><td>Bateria</td><td>4 000/6 000 mAh</td><td>4 000/6 000 mAh</td><td>3 800/5 200 mAh</td><td>3 800/5 200 mAh</td><td>4 500 mAh</td></tr>
 <tr><td>Hot-swap</td><td>Tak</td><td>Tak</td><td>Tak</td><td>Tak</td><td>Tak</td></tr>
-<tr><td>NFC od strony ekranu</td><td>Tak</td><td>Tak</td><td>— (tylne)</td><td>— (tylne)</td><td>Tak</td></tr>
-<tr><td>Skaner</td><td>CM60E + SE5500</td><td>CM60E</td><td>SE55 FlexRange</td><td>FlexRange</td><td>SE4710</td></tr>
-<tr><td><strong>Wsparcie Android</strong></td><td><strong>3-5 lat</strong></td><td><strong>3-5 lat</strong></td><td><strong>10 lat (LifeGuard)</strong></td><td><strong>5-7 lat (Sentinel)</strong></td><td><strong>3 lata</strong></td></tr>
-<tr><td>MDM</td><td>M3 Speedpack</td><td>M3 Speedpack</td><td>Mobility DNA</td><td>UEM-ready</td><td>M3 Speedpack</td></tr>
-<tr><td><strong>Cena orientacyjna</strong></td><td><strong>wyższa</strong></td><td><strong>niższa</strong></td><td><strong>~6 400 zł</strong></td><td><strong>~7 000 zł</strong></td><td><strong>~2 000 zł</strong></td></tr>
+<tr><td>NFC od strony ekranu</td><td>Tak</td><td>Tak</td><td>— (tylne)</td><td>— (tylne)</td><td>Tak (front + tył)</td></tr>
+<tr><td>Skaner</td><td>CM60E + SE5500</td><td>CM60E</td><td>SE4710 / SE55</td><td>SE4710 / SE55</td><td>S0703 / S0803 FlexRange</td></tr>
+<tr><td><strong>Wsparcie Android</strong></td><td><strong>3-5 lat</strong></td><td><strong>3-5 lat</strong></td><td><strong>4+ lat (LifeGuard)</strong></td><td><strong>4+ lat (LifeGuard)</strong></td><td><strong>5 lat (Mobility Edge)</strong></td></tr>
+<tr><td>MDM</td><td>M3 Speedpack</td><td>M3 Speedpack</td><td>Mobility DNA</td><td>Mobility DNA</td><td>Operational Intelligence</td></tr>
+<tr><td><strong>Cena od</strong></td><td><strong>—</strong></td><td><strong>—</strong></td><td><strong>2 690 zł</strong></td><td><strong>2 417 zł</strong></td><td><strong>3 389 zł</strong></td></tr>
 </tbody>
 </table>
 
 <h3>Co wygrywają SM24/SM25?</h3>
 
-<p><strong>NFC od strony ekranu.</strong> Czytnik NFC umieszczony od strony ekranu (nie z tyłu jak w Zebrze i Honeywellu) — operator przykłada terminal ekranem do tagu, co jest naturalniejsze i szybsze w weryfikacji ID, logowaniu się do stanowiska czy obsłudze kart lojalnościowych.</p>
+<p><strong>NFC od strony ekranu.</strong> SM24/SM25 mają czytnik NFC od strony ekranu — operator przykłada terminal ekranem do tagu, co jest naturalniejsze i szybsze niż tylne NFC w Zebrze TC22/TC27. Honeywell CT32 ma NFC z przodu i z tyłu.</p>
 
 <p><strong>Identyczne wymiary obu modeli.</strong> Żaden inny producent nie oferuje dwóch terminali o różnej specyfikacji ale identycznych wymiarach — możesz mieszać SM24 i SM25 w jednej flocie, korzystając z tych samych akcesoriów, etui i stacji dokujących. To realnie obniża koszt wdrożenia mieszanej floty.</p>
 
-<p><strong>Przystępna cena.</strong> SM24 plasuje się cenowo między SL20+ a TC53 — wypełnia lukę, w której dotychczas brakowało urządzenia z Wi-Fi 6E, Android 16, IP67, hot-swap i 6" ekranem w jednym pakiecie.</p>
+<p><strong>Większa bateria.</strong> SM24/SM25 mają baterię 4 000 mAh (opcja 6 000 mAh) vs 3 800 mAh w TC22/TC27 (opcja 5 200 mAh). Przy porównywalnych ekranach 6" — dłuższa praca na jednym ładowaniu.</p>
 
-<p><strong>Wi-Fi 6E w obu wariantach.</strong> Zebra TC53 też ma Wi-Fi 6E, ale kosztuje ~6 400 zł. SM24 oferuje to samo Wi-Fi 6E (802.11ax, 2x2 MU-MIMO, DBS) w niższej cenie.</p>
+<p><strong>Odporność na upadki.</strong> SM24/SM25: 1,8 m na beton. Zebra TC22/TC27: 1,5 m. Honeywell CT32: 1,8 m (z boot). M3 Mobile wygrywa lub dorównuje w tym parametrze.</p>
 
 <h3>Gdzie SM24/SM25 ustępują konkurencji?</h3>
 
-<p><strong>Wsparcie Android — to największa różnica.</strong> Zebra oferuje do 10 lat aktualizacji bezpieczeństwa (LifeGuard for Android), Honeywell 5-7 lat (Sentinel), M3 Mobile deklaruje 3-5 lat. Przy 5-letnim cyklu życia terminala SM24/SM25 może wymagać wymiany z powodu braku aktualizacji — a Zebra TC53 nadal będzie wspierana. To kluczowy czynnik TCO, który trzeba skalkulować.</p>
+<p><strong>Wsparcie Android.</strong> Zebra TC22/TC27 oferują min. 4 lata aktualizacji bezpieczeństwa (LifeGuard for Android), Honeywell CT32 — 5 lat (Mobility Edge do Androida 18), M3 Mobile deklaruje 3-5 lat. Przy dłuższym cyklu eksploatacji terminala krótsze wsparcie M3 Mobile może oznaczać wcześniejszą wymianę sprzętu.</p>
 
 <p><strong>Mobility DNA vs M3 Speedpack.</strong> Zebra Mobility DNA (DataWedge, StageNow, WorryFree WiFi, PowerPrecision+, Device Tracker) to najrozbudowanszy ekosystem zarządzania flotą na rynku. M3 Speedpack oferuje podstawowe funkcje MDM, ale ma węższy zakres — przy flotach 50+ terminali różnica jest odczuwalna.</p>
 
-<p><strong>Odporność na upadki.</strong> SM24/SM25: 1,8 m. Zebra TC53: 2,4 m. Honeywell CT47: 2,45 m. W ciężkim przemyśle ta różnica ma znaczenie — w retail i lekkiej logistyce 1,8 m jest wystarczające.</p>
+<p><strong>Cena Zebry TC22.</strong> TC22 startuje od 2 417 zł netto — to najtańszy terminal z Wi-Fi 6E, IP68 i Mobility DNA na rynku. SM24 musi konkurować ceną w tym samym segmencie, co przy braku oficjalnego cennika M3 Mobile nie jest oczywiste.</p>
 
-<p><strong>IP67 vs IP68.</strong> SM24/SM25 mają IP67 (zanurzenie 1 m/30 min). TC53 i CT47 mają IP68 (zanurzenie 1,5 m/30 min lub więcej). W praktyce rzadko zanurzamy terminale — ale IP68 daje lepszą ochronę przy intensywnym kontakcie z wodą (mycie halowe, deszcz).</p>`
+<p><strong>IP67 vs IP68.</strong> SM24/SM25 mają IP67 (zanurzenie 1 m/30 min). TC22/TC27 i CT32 mają IP68 (zanurzenie 1,5 m/30 min). W praktyce rzadko zanurzamy terminale — ale IP68 daje lepszą ochronę przy intensywnym kontakcie z wodą (mycie halowe, deszcz).</p>`
     },
     {
       id: 'rekomendacje',
       heading: 'Kiedy SM24/SM25, kiedy Zebra — rekomendacja',
       content: `<p><strong>SM24</strong> — gdy budżet jest priorytetem, flota poniżej 20 szt., cykl życia 3 lata, praca głównie w Wi-Fi, retail lub lekki magazyn. Najniższe TCO w segmencie 3-letnim.</p>
 
-<p><strong>SM25</strong> — gdy potrzebujesz 5G i skanera dalekiego zasięgu SE5500, ale cena <a href="/produkt/zebra-tc58">Zebry TC58</a> (6 751 zł) lub <a href="/produkt/honeywell-ct47">Honeywell CT47</a> jest zbyt wysoka. SM25 oferuje 5G, Wi-Fi 6E i dwa silniki skanera za niższą cenę niż flagowce Zebry i Honeywella.</p>
+<p><strong>SM25</strong> — gdy potrzebujesz 5G i skanera dalekiego zasięgu SE5500. SM25 daje 5G, Wi-Fi 6E i dwa silniki skanera — porównaj z <a href="/produkt/zebra-tc27">Zebra TC27</a> (2 690 zł, 5G + Mobility DNA) i <a href="/produkt/honeywell-ct32">Honeywell CT32</a> (3 389 zł, 5G + FlexRange do 11 m).</p>
 
-<p><strong><a href="/produkt/zebra-tc53">Zebra TC53</a></strong> — gdy planujesz 5-letni cykl życia, masz flotę 20+ terminali, potrzebujesz Mobility DNA i 10-letniego wsparcia Android. Wyższy koszt zakupu, ale najniższe TCO w perspektywie 5 lat.</p>
+<p><strong><a href="/produkt/zebra-tc22">Zebra TC22</a> / <a href="/produkt/zebra-tc27">TC27</a></strong> — gdy potrzebujesz Mobility DNA (DataWedge, PowerPrecision+, Device Tracker), IP68 i sprawdzonego ekosystemu Zebra z LifeGuard. TC22 od 2 417 zł to najtańszy terminal enterprise z Wi-Fi 6E na rynku.</p>
 
 <p>Nie wiesz, który wybrać? TAKMA może przygotować kalkulację TCO dopasowaną do Twojej floty, procesów i budżetu — <a href="/kontakt">skontaktuj się z nami</a>.</p>`
     },
@@ -10316,8 +10316,8 @@ export const guides: Guide[] = [
       answer: 'Tak — identyczne wymiary 77 x 167 x 12,9 mm. Oznacza to, że etui, uchwyty, stacje dokujące POGO, kabury i inne akcesoria pasują do obu modeli. Możesz mieszać SM24 i SM25 w jednej flocie (np. SM25 z 5G dla kierowców, SM24 dla operatorów magazynowych) i używać wspólnej infrastruktury akcesoriów — to realna oszczędność.',
     },
     {
-      question: 'M3 Mobile SM24/SM25 vs Zebra TC53 — co wybrać?',
-      answer: 'SM24/SM25 wygrywają ceną zakupu, NFC od strony ekranu (wygodniejsze niż tylne) i elastycznością floty (dwa modele, jedne akcesoria). Zebra TC53 wygrywa 10-letnim wsparciem Android (LifeGuard), ekosystemem Mobility DNA (DataWedge, StageNow, PowerPrecision+), wyższą odpornością na upadki (2,4 m vs 1,8 m) i IP68. Jeśli planujesz 3-letni cykl życia terminala i masz ograniczony budżet — SM24 daje najniższe TCO. Jeśli 5-letni cykl i flota 20+ — Zebra TC53 wygrywa TCO dzięki eliminacji wymiany sprzętu.',
+      question: 'M3 Mobile SM24/SM25 vs Zebra TC22/TC27 — co wybrać?',
+      answer: 'SM24/SM25 wygrywają NFC od strony ekranu, większą baterią (4 000/6 000 mAh vs 3 800/5 200 mAh), lepszą odpornością na upadki (1,8 m vs 1,5 m) i elastycznością floty (dwa modele, jedne akcesoria). Zebra TC22/TC27 wygrywają ekosystemem Mobility DNA (DataWedge, StageNow, PowerPrecision+), IP68, ceną startową (TC22 od 2 417 zł) i dłuższym wsparciem LifeGuard. SM24 sprawdzi się w małych flotach do 20 szt. z 3-letnim cyklem życia. Zebra TC22/TC27 — gdy potrzebujesz Mobility DNA i dłuższego wsparcia Android.',
     },
     {
       question: 'Czy SM24/SM25 działają w mroźni?',
@@ -10329,7 +10329,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Ile kosztuje M3 Mobile SM24 / SM25?',
-      answer: 'Ceny zależą od wariantu (X z WWAN lub W tylko Wi-Fi), konfiguracji baterii (4 000 lub 6 000 mAh) i wolumenu zamówienia. SM24 jest pozycjonowany jako tańsza alternatywa SM25. Orientacyjnie — segment cenowy SM24/SM25 wypełnia lukę między M3 Mobile SL20+ (~2 000 zł) a Zebra TC53 (6 418 zł). Po indywidualną wycenę skontaktuj się z TAKMA: +48 607 819 688 lub biuro@takma.com.pl.',
+      answer: 'Ceny zależą od wariantu (X z WWAN lub W tylko Wi-Fi), konfiguracji baterii (4 000 lub 6 000 mAh) i wolumenu zamówienia. SM24 jest pozycjonowany jako tańsza alternatywa SM25. Orientacyjnie — segment cenowy SM24/SM25 jest zbliżony do Zebry TC22 (od 2 417 zł) i Honeywell CT32 (od 3 389 zł). Po indywidualną wycenę skontaktuj się z TAKMA: +48 607 819 688 lub biuro@takma.com.pl.',
     },
     {
       question: 'Czy TAKMA serwisuje terminale M3 Mobile?',
@@ -10337,7 +10337,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Jak długo M3 Mobile wspiera SM24/SM25 aktualizacjami Androida?',
-      answer: 'M3 Mobile deklaruje wsparcie od Androida 16 do Androida 18 — co oznacza ok. 3-5 lat aktualizacji bezpieczeństwa. Dla porównania: Zebra TC53 oferuje do 10 lat (LifeGuard for Android), a Honeywell CT47 — 5-7 lat (Sentinel). Jeśli planujesz eksploatację terminali przez 5+ lat, krótsze wsparcie M3 Mobile oznacza konieczność wcześniejszej wymiany sprzętu — to dodatkowy koszt w kalkulacji TCO.',
+      answer: 'M3 Mobile deklaruje wsparcie od Androida 16 do Androida 18 — co oznacza ok. 3-5 lat aktualizacji bezpieczeństwa. Dla porównania: Zebra TC22/TC27 oferuje min. 4 lata (LifeGuard for Android), a Honeywell CT32 — 5 lat (Mobility Edge do Androida 18). Jeśli planujesz eksploatację terminali przez 5+ lat, krótsze wsparcie M3 Mobile oznacza konieczność wcześniejszej wymiany sprzętu — to dodatkowy koszt w kalkulacji TCO.',
     },
   ],
   relatedLinks: [
