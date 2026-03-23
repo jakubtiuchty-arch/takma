@@ -1830,7 +1830,7 @@ export const guides: Guide[] = [
 <p>Udział: ~8%, najszybciej rosnący. Chiński producent z europejskim biurem (Holandia). MT93 Megattera Pro (~3 000 zł) oferuje IP67, angled shooter i 4G LTE w cenie entry-level konkurencji. Idealna marka dla firm, które potrzebują solidnych terminali przy ograniczonym budżecie. Słabsza strona: krótsze wsparcie Androida (3–4 lata), mniejsza sieć serwisowa w Polsce, brak rozbudowanego ekosystemu MDM.</p>
 
 <h3>M3 Mobile — król retail</h3>
-<p>Udział: ~5%. Koreański producent ceniony w retail i logistyce. SL20+ (~2 000 zł) to najtańszy terminal z Android 13 i IP67 — idealne do retail (weryfikacja cen, etykietowanie). Nowe modele UL30 (klawiatura, Android 14, 3 m drop) i SM30 (5G, IP68) z końca 2025 r. celują w segment premium. Dobra jakość wykonania, ale najmniejszy ekosystem i najkrótsze wsparcie w zestawieniu.</p>
+<p>Udział: ~5%. Koreański producent ceniony w retail i logistyce. SL20+ (~2 000 zł) to najtańszy terminal z Android 13 i IP67 — idealne do retail (weryfikacja cen, etykietowanie). Nowe modele UL30 (klawiatura, Android 14, 3 m drop) i SM30 (5G, IP68) z końca 2025 r. celują w segment premium. W 2026 roku M3 Mobile wprowadza <a href="/poradnik/m3-mobile-sm24-sm25-porownanie">SM24 i SM25</a> — nowe terminale z Android 16, Wi-Fi 6E i IP67, które wypełniają lukę cenową między SL20+ a konkurencją Zebry. Dobra jakość wykonania, ale najmniejszy ekosystem i najkrótsze wsparcie w zestawieniu.</p>
 
 <h3>Porównanie marek — macierz decyzyjna</h3>
 <table style="width:100%">
@@ -10102,9 +10102,9 @@ export const guides: Guide[] = [
 {
   slug: 'm3-mobile-sm24-sm25-porownanie',
   title: 'M3 Mobile SM24 vs SM25 — porównanie nowych terminali mobilnych 2026',
-  seoTitle: 'M3 Mobile SM24 vs SM25 — porównanie nowych terminali mobilnych 2026 | TAKMA',
-  seoDescription: 'M3 Mobile SM24 i SM25 — nowa seria terminali mobilnych z Android 16, IP67, Wi-Fi 6E i baterią hot-swap. SM25 z 5G i dual scanner SE5500, SM24 z niższym TCO. Porównanie specyfikacji, zastosowań i kosztów. Terminal mobilny M3 Mobile SM24, SM25 M3 Mobile, M3 Mobile SM24 cena, M3 Mobile SM25 cena. Doradztwo TAKMA.',
-  excerpt: 'M3 Mobile SM25 i SM24 zastępują model SM20 — ta sama obudowa IP67, Android 16, Wi-Fi 6E i hot-swap baterii. SM25 z 5G i dual scannerem SE5500, SM24 tańszy z niższym zużyciem energii. Poniżej szczegółowe porównanie oparte na oficjalnych kartach katalogowych M3 Mobile.',
+  seoTitle: 'M3 Mobile SM24 vs SM25 — porównanie terminali 2026',
+  seoDescription: 'M3 Mobile SM24 i SM25 — nowe terminale z Android 16, IP67, Wi-Fi 6E i baterią hot-swap. SM25 z 5G i podwójnym skanerem SE5500, SM24 z niższym TCO. Porównanie, doradztwo TAKMA.',
+  excerpt: 'M3 Mobile SM25 i SM24 zastępują model SM20 — ta sama obudowa IP67, Android 16, Wi-Fi 6E i bateria hot-swap. SM25 z 5G i podwójnym skanerem SE5500, SM24 tańszy z niższym zużyciem energii. Szczegółowe porównanie oparte na oficjalnych kartach katalogowych M3 Mobile.',
   category: 'porownanie' as const,
   tags: ['terminale-mobilne', 'porownanie', 'm3-mobile', 'sm24', 'sm25', 'android-16', '5g', 'wifi-6e', 'magazyn', 'logistyka', 'retail'],
   publishedAt: '2026-03-23',
@@ -10116,11 +10116,11 @@ export const guides: Guide[] = [
       heading: 'M3 Mobile SM24 vs SM25 — nowe terminale mobilne 2026',
       content: `<p><strong>M3 Mobile wprowadza na rynek dwa nowe terminale mobilne — SM25 i SM24 — które zastępują dotychczasowy model SM20 i celują w segment między budżetowym SL20+ a premium SM30.</strong> Oba urządzenia dzielą tę samą obudowę (77 x 167 x 12,9 mm), ten sam system Android 16 z deklarowanym wsparciem do Androida 18, identyczną ochronę IP67 z upadkami na beton z 1,8 m oraz Wi-Fi 6E z 2x2 MU-MIMO.</p>
 
-<p>Kluczowa różnica? <strong>SM25 to pełnowyposażony flagowiec z 5G, ekranem FHD+ i podwójnym silnikiem skanera (CM60E + SE5500 Smart Focus)</strong>, a SM24 — jego tańsza wersja, świadomie okrojona w trzech punktach, żeby obniżyć cenę zakupu i zużycie energii.</p>
+<p>Kluczowa różnica? <strong>SM25 to w pełni wyposażony flagowiec z 5G, ekranem FHD+ i podwójnym silnikiem skanera (CM60E + SE5500 Smart Focus)</strong>, a SM24 — jego tańsza wersja, świadomie okrojona w trzech punktach, żeby obniżyć cenę zakupu i zużycie energii.</p>
 
 <p>Ten wpis jest dla Ciebie, jeśli zarządzasz logistyką, magazynem lub siecią sklepów i szukasz terminala mobilnego z nowoczesną łącznością (Wi-Fi 6E, Bluetooth 5.3) w przystępniejszej cenie niż <a href="/produkt/zebra-tc53">Zebra TC53</a> czy <a href="/produkt/honeywell-ct47">Honeywell CT47</a> — ale nie chcesz rezygnować z IP67, hot-swap baterii i front-side NFC.</p>
 
-<p>TAKMA jest partnerem M3 Mobile w Polsce — pomagamy dobrać wariant (SM24 vs SM25, X vs W), konfigurujemy urządzenia pod Twój WMS/ERP i zapewniamy serwis. Poniżej — szczegółowe porównanie oparte na oficjalnych kartach katalogowych M3 Mobile (rewizje SS-SM24 13/01/2026 i SS-SM25 01/12/2025).</p>`
+<p>TAKMA jest partnerem M3 Mobile w Polsce — pomagamy dobrać wariant (SM24 vs SM25, X vs W), konfigurujemy urządzenia pod Twój WMS/ERP i zapewniamy serwis. Poniżej — szczegółowe porównanie oparte na oficjalnych kartach katalogowych <a href="https://m3mobile.com" target="_blank" rel="noopener">M3 Mobile</a> (rewizje SS-SM24 13/01/2026 i SS-SM25 01/12/2025).</p>`
     },
     {
       id: 'tabela-porownawcza',
@@ -10133,15 +10133,15 @@ export const guides: Guide[] = [
 <tr><td><strong>Procesor</strong></td><td><strong>Qualcomm QCM4490</strong></td><td><strong>Qualcomm SM6225</strong></td><td>Oba 2,4 GHz octa-core. QCM4490 wydajniejszy przy wielozadaniowości</td></tr>
 <tr><td><strong>Wyświetlacz</strong></td><td><strong>6" FHD+ (1080 x 2160)</strong></td><td><strong>6" HD+ (720 x 1440)</strong></td><td>FHD+ = ostrzejszy obraz. HD+ = niższe zużycie energii</td></tr>
 <tr><td><strong>Łączność WAN</strong></td><td><strong>5G + 4G + 3G + 2G</strong></td><td><strong>4G + 3G + 2G</strong></td><td>SM25 X z pełnym 5G (Sub-6 GHz). SM24 X z 4G LTE</td></tr>
-<tr><td><strong>Bluetooth</strong></td><td><strong>5.3 BLE + Beaconing</strong></td><td><strong>5.3 BLE</strong></td><td>SM25 z beaconingiem do RTLS</td></tr>
-<tr><td><strong>Skaner</strong></td><td><strong>CM60E + SE5500 Smart Focus</strong></td><td><strong>CM60E</strong></td><td>SM25: dual scan engine z zasięgiem dalekim. SM24: single</td></tr>
+<tr><td><strong>Bluetooth</strong></td><td><strong>5.3 BLE + Beaconing</strong></td><td><strong>5.3 BLE</strong></td><td>SM25 z nadawaniem sygnałów lokalizacyjnych (RTLS)</td></tr>
+<tr><td><strong>Skaner</strong></td><td><strong>CM60E + SE5500 Smart Focus</strong></td><td><strong>CM60E</strong></td><td>SM25: podwójny skaner z zasięgiem dalekim. SM24: pojedynczy</td></tr>
 <tr><td>Wi-Fi</td><td>Wi-Fi 6E (802.11ax), 2x2 MU-MIMO, DBS</td><td>Identyczne</td><td>Najnowszy standard</td></tr>
 <tr><td>NFC</td><td>Front-side (LCD), ISO 14443 A/B, FeliCa, ISO 15693</td><td>Identyczne</td><td>Na ekranie — wygodniejsze niż tylne</td></tr>
 <tr><td>Android</td><td>16 (wsparcie do 18)</td><td>Identyczne</td><td>M3 StartUp do kontroli GMS</td></tr>
 <tr><td>RAM / ROM</td><td>8 GB / 128 GB</td><td>Identyczne</td><td>microSD do 2 TB</td></tr>
 <tr><td>Bateria</td><td>4 000 mAh Li-Ion, hot-swap</td><td>Identyczne</td><td>Rozszerzona 6 000 mAh opcjonalnie</td></tr>
-<tr><td>Kamera</td><td>8 MP front + 16 MP rear (PDAF)</td><td>Identyczne</td><td>Dokumentacja, OCR, proof of delivery</td></tr>
-<tr><td>Wymiary</td><td>77 x 167 x 12,9 mm</td><td>Identyczne</td><td>Ten sam form factor = wspólne akcesoria</td></tr>
+<tr><td>Kamera</td><td>8 MP front + 16 MP rear (PDAF)</td><td>Identyczne</td><td>Dokumentacja, OCR, potwierdzenie doręczenia</td></tr>
+<tr><td>Wymiary</td><td>77 x 167 x 12,9 mm</td><td>Identyczne</td><td>Te same wymiary = wspólne akcesoria</td></tr>
 <tr><td><strong>Waga</strong></td><td><strong>270 g</strong></td><td><strong>240 g</strong></td><td>SM24 lżejszy o 30 g</td></tr>
 <tr><td>IP / MIL-STD</td><td>IP67, MIL-STD-810H</td><td>Identyczne</td><td>Pył, zanurzenie 1 m/30 min, upadki, wibracje</td></tr>
 <tr><td>Upadki</td><td>1,5 m (bez boot), 1,8 m (z boot)</td><td>Identyczne</td><td>Na beton, w pełnym zakresie temperatur</td></tr>
@@ -10160,31 +10160,29 @@ export const guides: Guide[] = [
       heading: 'Dla kogo SM25, dla kogo SM24 — drzewo decyzyjne',
       content: `<h3>M3 Mobile SM25 — wybierz, gdy:</h3>
 
-<p><strong>Potrzebujesz 5G w terenie.</strong> SM25 X obsługuje pełne pasma 5G (Sub-6 GHz) plus 4G/3G/2G fallback. To terminal do last-mile delivery, serwisu w terenie, inwentaryzacji u klienta — wszędzie tam, gdzie nie ma firmowej sieci Wi-Fi, a LTE nie daje wystarczającej przepustowości (np. przesyłanie zdjęć, skanów dokumentów, wideokonferencje ze wsparciem technicznym).</p>
+<ul>
+<li><strong>Potrzebujesz 5G w terenie.</strong> SM25 X obsługuje pełne pasma 5G (Sub-6 GHz) plus 4G/3G/2G fallback. To terminal do doręczeń ostatniej mili, serwisu w terenie, inwentaryzacji u klienta — wszędzie tam, gdzie nie ma firmowej sieci Wi-Fi, a LTE nie daje wystarczającej przepustowości.</li>
+<li><strong>Skanujesz na różne odległości.</strong> Podwójny silnik skanera CM60E + SE5500 Smart Focus oznacza, że jeden terminal obsługuje skanowanie z bliska (paczka w ręce), ze średniego dystansu (regał na wysokości 3-4 m) i z daleka (kody na regałach wysokiego składowania).</li>
+<li><strong>Interfejs WMS/ERP jest graficznie rozbudowany.</strong> FHD+ (1080 x 2160) ma 2,25x więcej pikseli niż HD+ (720 x 1440). Różnica widoczna w aplikacjach z mapami magazynu, zdjęciami produktów i tabelami wielokolumnowymi.</li>
+<li><strong>Planujesz lokalizację Bluetooth.</strong> SM25 obsługuje Bluetooth 5.3 BLE z funkcją nadawania sygnałów lokalizacyjnych (beaconing) — może emitować sygnał do systemu RTLS, umożliwiając śledzenie terminali i pracowników na hali magazynowej w czasie rzeczywistym.</li>
+</ul>
 
-<p><strong>Skanujesz na różne odległości.</strong> Dual scan engine CM60E + SE5500 Smart Focus oznacza, że jeden terminal obsługuje skanowanie z bliska (paczka w ręce), ze średniego dystansu (regał na wysokości 3-4 m) i z daleka (kody na regałach wysokiego składowania). Bez SE5500 musisz podchodzić do każdego kodu lub kupować osobny skaner dalekozasięgowy.</p>
-
-<p><strong>Interfejs WMS/ERP jest graficznie rozbudowany.</strong> FHD+ (1080 x 2160) ma 2,25x więcej pikseli niż HD+ (720 x 1440). Różnica widoczna w aplikacjach z mapami magazynu, zdjęciami produktów, tabelami wielokolumnowymi i dashboardami.</p>
-
-<p><strong>Planujesz beaconing Bluetooth.</strong> SM25 obsługuje Bluetooth 5.3 BLE z beaconingiem — może emitować sygnał lokalizacyjny do systemu RTLS (Real-Time Location System), umożliwiając śledzenie terminali i pracowników na hali magazynowej w czasie rzeczywistym.</p>
-
-<p><strong>Typowe scenariusze:</strong> duży magazyn logistyczny z regałami wysokiego składowania, last-mile delivery (kurier z 5G), inwentaryzacja wielopoziomowa, field service z przesyłaniem zdjęć, sieci retail z centralnym WMS i zaawansowanym interfejsem graficznym.</p>
+<p><strong>Typowe scenariusze:</strong> duży magazyn logistyczny z regałami wysokiego składowania, doręczenia ostatniej mili (kurier z 5G), inwentaryzacja wielopoziomowa, serwis terenowy z przesyłaniem zdjęć, sieci retail z centralnym WMS.</p>
 
 <h3>M3 Mobile SM24 — wybierz, gdy:</h3>
 
-<p><strong>Pracujesz głównie w zasięgu Wi-Fi.</strong> SM24 ma identyczne Wi-Fi 6E z 2x2 MU-MIMO i DBS co SM25 — w magazynie, sklepie, hali produkcyjnej czy centrum dystrybucyjnym to w zupełności wystarczy. Wariant SM24 W (bez modułu komórkowego) jeszcze bardziej obniża cenę.</p>
+<ul>
+<li><strong>Pracujesz głównie w zasięgu Wi-Fi.</strong> SM24 ma identyczne Wi-Fi 6E z 2x2 MU-MIMO i DBS co SM25 — w magazynie, sklepie, hali produkcyjnej czy centrum dystrybucyjnym to w zupełności wystarczy. Wariant SM24 W (bez modułu komórkowego) jeszcze bardziej obniża cenę.</li>
+<li><strong>Skanowanie standardowe wystarczy.</strong> CM60E to solidny imager 2D — radzi sobie z kodami 1D i 2D z bliska oraz ze średniego dystansu. Jeśli regały nie przekraczają 2-3 m wysokości i kody są w zasięgu ręki, dodatkowy SE5500 nie jest potrzebny.</li>
+<li><strong>Budżet jest priorytetem.</strong> SM24 to świadoma decyzja — płacisz mniej za to, czego nie potrzebujesz. Niższy koszt zakupu + ekran HD+ zużywający mniej energii = dłuższa praca na baterii = mniej baterii zapasowych we flocie.</li>
+<li><strong>Cenisz wagę.</strong> 240 g vs 270 g — brzmi jak drobiazg, ale po 8 godzinach trzymania w dłoni różnica jest odczuwalna. SM24 waży tyle co <a href="/produkt/zebra-tc22">Zebra TC22</a> (236 g), a ma większy ekran 6" i baterię hot-swap.</li>
+</ul>
 
-<p><strong>Skanowanie standardowe wystarczy.</strong> CM60E to solidny imager 2D — radzi sobie z kodami 1D i 2D z bliska oraz ze średniego dystansu. Jeśli Twoje regały nie przekraczają 2-3 m wysokości i kody są w zasięgu ręki, dodatkowy SE5500 nie jest potrzebny.</p>
-
-<p><strong>Budżet jest priorytetem.</strong> SM24 to świadoma decyzja — płacisz mniej za to, czego nie potrzebujesz. Niższy koszt zakupu + ekran HD+ zużywający mniej energii = dłuższa praca na baterii = mniej baterii zapasowych we flocie. Przy 50 terminalach te różnice składają się w dziesiątki tysięcy złotych oszczędności.</p>
-
-<p><strong>Cenisz wagę.</strong> 240 g vs 270 g — brzmi jak drobiazg, ale po 8 godzinach trzymania w dłoni różnica jest odczuwalna. SM24 waży tyle co <a href="/produkt/zebra-tc22">Zebra TC22</a> (236 g), a ma większy ekran 6" i baterię hot-swap.</p>
-
-<p><strong>Typowe scenariusze:</strong> retail (weryfikacja cen, etykietowanie, POS mobilny), kompletacja zamówień na niskich regałach, inwentaryzacja podstawowa, gastronomia, healthcare, recepcja magazynowa.</p>
+<p><strong>Typowe scenariusze:</strong> retail (weryfikacja cen, etykietowanie, mobilny punkt sprzedaży), kompletacja zamówień na niskich regałach, inwentaryzacja podstawowa, gastronomia, opieka zdrowotna, recepcja magazynowa.</p>
 
 <h3>Oba modele sprawdzą się:</h3>
 
-<p>Praca w mroźni (-20°C), pod deszczem (IP67), w kurzu i brudzie (MIL-STD-810H). Front-side NFC do identyfikacji bezkontaktowej. Hot-swap baterii bez utraty połączenia Wi-Fi/BT. Android 16 z kontrolą M3 StartUp nad GMS. Kompatybilność z SAP, Comarch WMS, LogMag, WMS Vision i innymi systemami androidowymi. I najważniejsze — <strong>identyczny form factor</strong>: kupujesz jedną partię akcesoriów (etui, stacje dokujące, uchwyty) i używasz ich wymiennie z SM24 i SM25 w mieszanej flocie.</p>`
+<p>Praca w mroźni (-20°C), pod deszczem (IP67), w kurzu i brudzie (MIL-STD-810H). NFC od strony ekranu do identyfikacji bezkontaktowej. Wymiana baterii bez wyłączania (hot-swap) z zachowaniem połączeń Wi-Fi/BT. Android 16 z kontrolą M3 StartUp nad GMS. Kompatybilność z SAP, Comarch WMS, LogMag, WMS Vision i innymi systemami androidowymi. I najważniejsze — <strong>identyczne wymiary obu modeli</strong>: kupujesz jedną partię akcesoriów (etui, stacje dokujące, uchwyty) i używasz ich wymiennie z SM24 i SM25 w mieszanej flocie.</p>`
     },
     {
       id: 'vs-konkurencja',
@@ -10215,7 +10213,7 @@ export const guides: Guide[] = [
 
 <p><strong>Front-side NFC.</strong> Czytnik NFC umieszczony od strony ekranu (nie z tyłu jak w Zebrze i Honeywellu) — operator przykłada terminal ekranem do tagu, co jest naturalniejsze i szybsze w weryfikacji ID, logowaniu się do stanowiska czy obsłudze kart lojalnościowych.</p>
 
-<p><strong>Identyczny form factor obu modeli.</strong> Żaden inny producent nie oferuje dwóch terminali o różnej specyfikacji ale identycznych wymiarach — możesz mieszać SM24 i SM25 w jednej flocie, korzystając z tych samych akcesoriów, etui i stacji dokujących. To realnie obniża koszt wdrożenia mieszanej floty.</p>
+<p><strong>Identyczne wymiary obu modeli.</strong> Żaden inny producent nie oferuje dwóch terminali o różnej specyfikacji ale identycznych wymiarach — możesz mieszać SM24 i SM25 w jednej flocie, korzystając z tych samych akcesoriów, etui i stacji dokujących. To realnie obniża koszt wdrożenia mieszanej floty.</p>
 
 <p><strong>Cena wejścia.</strong> SM24 wchodzi w segment cenowy między SL20+ a TC53 — wypełnia lukę, w której dotychczas brakowało urządzenia z Wi-Fi 6E, Android 16, IP67, hot-swap i 6" ekranem w jednym pakiecie.</p>
 
@@ -10236,7 +10234,7 @@ export const guides: Guide[] = [
       heading: 'Kiedy SM24/SM25, kiedy Zebra — rekomendacja',
       content: `<p><strong>SM24</strong> — gdy budżet jest priorytetem, flota poniżej 20 szt., cykl życia 3 lata, praca głównie w Wi-Fi, retail lub lekki magazyn. Najniższe TCO w segmencie 3-letnim.</p>
 
-<p><strong>SM25</strong> — gdy potrzebujesz 5G + dual scanner, ale cena <a href="/produkt/zebra-tc58">Zebry TC58</a> (6 751 zł) lub <a href="/produkt/honeywell-ct47">Honeywell CT47</a> jest zbyt wysoka. SM25 daje 80% możliwości flagowców za niższą cenę.</p>
+<p><strong>SM25</strong> — gdy potrzebujesz 5G i podwójnego skanera, ale cena <a href="/produkt/zebra-tc58">Zebry TC58</a> (6 751 zł) lub <a href="/produkt/honeywell-ct47">Honeywell CT47</a> jest zbyt wysoka. SM25 daje 80% możliwości flagowców za niższą cenę.</p>
 
 <p><strong><a href="/produkt/zebra-tc53">Zebra TC53</a></strong> — gdy planujesz 5-letni cykl życia, masz flotę 20+ terminali, potrzebujesz Mobility DNA i 10-letniego wsparcia Android. Wyższy koszt zakupu, ale najniższe TCO w perspektywie 5 lat.</p>
 
@@ -10261,7 +10259,7 @@ export const guides: Guide[] = [
 
 <p>Oba modele obsługują Wi-Fi 6E (802.11ax) z 2x2 MU-MIMO i DBS (Distributed Beam Steering). Co to oznacza w praktyce? Wi-Fi 6E dodaje pasmo 6 GHz — mniej zatłoczone niż 2,4/5 GHz, szybszy roaming między access pointami, niższe opóźnienia. 2x2 MU-MIMO umożliwia jednoczesną komunikację z wieloma urządzeniami bez spadku przepustowości. DBS — ukierunkowanie wiązki na terminal, zamiast nadawania na wszystkie strony.</p>
 
-<p>W dużym magazynie (5 000+ m2) z 30+ terminalami podłączonymi do jednego AP — Wi-Fi 6E z DBS eliminuje typowe problemy: zrywanie połączeń przy roamingu, spadki prędkości w szczycie zmianowym, opóźnienia w real-time inventory. Fast roaming (PMKID caching, Cisco CCKM, 802.11r, OKC) zapewnia płynne przechodzenie między punktami dostępowymi bez utraty sesji WMS.</p>
+<p>W dużym magazynie (5 000+ m2) z 30+ terminalami podłączonymi do jednego AP — Wi-Fi 6E z DBS eliminuje typowe problemy: zrywanie połączeń przy roamingu, spadki prędkości w szczycie zmianowym, opóźnienia przy śledzeniu stanów magazynowych w czasie rzeczywistym. Szybki roaming (PMKID caching, Cisco CCKM, 802.11r, OKC) zapewnia płynne przechodzenie między punktami dostępowymi bez utraty sesji WMS.</p>
 
 <h3>Bateria i hot-swap</h3>
 
@@ -10269,11 +10267,11 @@ export const guides: Guide[] = [
 
 <p>Kluczowa funkcja: <strong>hot-swap</strong> — wymiana baterii w kilka sekund bez wyłączania terminala, z zachowaniem aktywnych połączeń WWAN, WLAN i Bluetooth. Operator nie traci sesji WMS, nie musi się ponownie logować. Przy operacjach 24/7 potrzebujesz 2 baterie na terminal (jedna w terminalu, druga na ładowarce).</p>
 
-<p>Ładowanie przez USB-C lub POGO (kontaktowe, w stacji dokującej). POGO jest szybsze i wygodniejsze — wkładasz terminal w cradle, ładowanie zaczyna się automatycznie bez podpinania kabla.</p>
+<p>Ładowanie przez USB-C lub POGO (kontaktowe, w stacji dokującej). POGO jest szybsze i wygodniejsze — wkładasz terminal w stację, ładowanie zaczyna się automatycznie bez podpinania kabla.</p>
 
 <h3>M3 Speedpack — ekosystem zarządzania</h3>
 
-<p>M3 Speedpack to zestaw narzędzi M3 Mobile do zarządzania flotą — odpowiednik Zebra Mobility DNA. Obejmuje StartUp PC (konfiguracja i deployment terminali), kontrolę GMS (ograniczanie dostępu do Google Play, YouTube itp.) i podstawowe funkcje MDM. Kompatybilny z SOTI MobiControl dla zaawansowanego zarządzania.</p>
+<p>M3 Speedpack to zestaw narzędzi M3 Mobile do zarządzania flotą — odpowiednik Zebra Mobility DNA. Obejmuje StartUp PC (konfiguracja i wdrażanie terminali), kontrolę GMS (ograniczanie dostępu do Google Play, YouTube itp.) i podstawowe funkcje MDM. Kompatybilny z SOTI MobiControl dla zaawansowanego zarządzania.</p>
 
 <p>M3 Speedpack jest prostszy niż Mobility DNA — brak odpowiedników DataWedge (automatyczne profilowanie skanera), WorryFree WiFi (inteligentny roaming) czy PowerPrecision+ (monitoring zdrowia baterii na poziomie celi). Przy małych flotach (do 20 szt.) to wystarczy. Przy 50+ terminalach warto rozważyć, czy M3 Speedpack zaspokaja Twoje potrzeby zarządzania — lub czy SOTI wypełni tę lukę.</p>`
     },
@@ -10314,7 +10312,7 @@ export const guides: Guide[] = [
       answer: 'SM24 to ekonomiczna wersja SM25, świadomie okrojona w trzech punktach: brak 5G (zostaje 4G LTE), ekran HD+ zamiast FHD+, jeden silnik skanera CM60E zamiast dual CM60E + SE5500. Cała reszta jest identyczna — Android 16, Wi-Fi 6E, IP67, 1,8 m drop, hot-swap baterii 4 000/6 000 mAh, NFC front-side, te same wymiary i akcesoria. SM24 jest też lżejszy o 30 g (240 g vs 270 g). Wybierz SM24 do pracy w Wi-Fi i skanowania standardowego. SM25 gdy potrzebujesz 5G, skanowania dalekozasięgowego lub ekranu FHD+.',
     },
     {
-      question: 'Czy SM24 i SM25 mają ten sam form factor?',
+      question: 'Czy SM24 i SM25 mają te same wymiary i akcesoria?',
       answer: 'Tak — identyczne wymiary 77 x 167 x 12,9 mm. Oznacza to, że etui, uchwyty, stacje dokujące POGO, kabury i inne akcesoria pasują do obu modeli. Możesz mieszać SM24 i SM25 w jednej flocie (np. SM25 z 5G dla kierowców, SM24 dla operatorów magazynowych) i używać wspólnej infrastruktury akcesoriów — to realna oszczędność.',
     },
     {
@@ -10323,7 +10321,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Czy SM24/SM25 działają w mroźni?',
-      answer: 'Tak — oba modele pracują w temperaturach od -20°C do +50°C, mają IP67 (ochrona przed kondensacją przy przejściach ciepło/zimno) i ekran dotykowy obsługiwany w rękawicach (Corning Gorilla Glass 5, dual input mode). Do pracy w mroźni rekomendujemy baterię rozszerzoną 6 000 mAh (mróz skraca czas pracy baterii o 20-30%) i etui ochronne (boot) zwiększające odporność na upadki z 1,5 m do 1,8 m.',
+      answer: 'Tak — oba modele pracują w temperaturach od -20°C do +50°C, mają IP67 (ochrona przed kondensacją przy przejściach ciepło/zimno) i ekran dotykowy obsługiwany w rękawicach (Corning Gorilla Glass 5, tryb podwójnego wejścia). Do pracy w mroźni rekomendujemy baterię rozszerzoną 6 000 mAh (mróz skraca czas pracy baterii o 20-30%) i etui ochronne (boot) zwiększające odporność na upadki z 1,5 m do 1,8 m.',
     },
     {
       question: 'Jakie systemy WMS/ERP działają z SM24/SM25?',
@@ -10336,6 +10334,10 @@ export const guides: Guide[] = [
     {
       question: 'Czy TAKMA serwisuje terminale M3 Mobile?',
       answer: 'Tak — TAKMA jest partnerem M3 Mobile w Polsce i zapewnia wsparcie serwisowe, konfigurację M3 Speedpack, pomoc we wdrożeniu i dobór akcesoriów. Oferujemy również pilotaż na urządzeniach demo — możesz przetestować SM24 lub SM25 w swoim magazynie przez 2-4 tygodnie przed decyzją zakupową.',
+    },
+    {
+      question: 'Jak długo M3 Mobile wspiera SM24/SM25 aktualizacjami Androida?',
+      answer: 'M3 Mobile deklaruje wsparcie od Androida 16 do Androida 18 — co oznacza 3-5 lat aktualizacji bezpieczeństwa. Dla porównania: Zebra TC53 oferuje do 10 lat wsparcia (LifeGuard for Android), a Honeywell CT47 — 5-7 lat (Sentinel). Jeśli planujesz eksploatację terminali przez 5+ lat, krótsze wsparcie M3 Mobile oznacza konieczność wcześniejszej wymiany sprzętu — to dodatkowy koszt w kalkulacji TCO.',
     },
   ],
   relatedLinks: [
