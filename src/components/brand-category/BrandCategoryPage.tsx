@@ -132,7 +132,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
     description: bc.seoDescription,
     url: `https://www.takma.com.pl/${bc.slug}`,
     numberOfItems: allProducts.length,
-    dateModified: '2026-03-17',
+    dateModified: new Date().toISOString().slice(0, 10),
     provider: { '@type': 'Organization', name: 'TAKMA', url: 'https://www.takma.com.pl' },
     brand: { '@type': 'Brand', name: manufacturer.name },
     mainEntity: {
@@ -167,12 +167,25 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
     url: `https://www.takma.com.pl/${bc.slug}`,
   }
 
+  const howToJsonLd = content?.howToSteps?.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: `Jak wdrożyć ${bc.name.toLowerCase()}?`,
+    step: content.howToSteps.map((step, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: step.name,
+      text: stripMarkdownLinks(step.text),
+    })),
+  } : null
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }} />
       {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }} />
+      {howToJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />}
 
       <div className="container-main py-8 lg:py-12">
         {/* Breadcrumbs */}
@@ -188,7 +201,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
         <div className="mb-8">
           <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">{bc.name}</h1>
           <RichText text={bc.longDescription} className="text-gray-600 sm:text-justify leading-relaxed space-y-3" />
-          <p className="text-gray-500 text-sm mt-3">{allProducts.length} {productWord}</p>
+          <p className="text-gray-500 text-sm mt-3">{allProducts.length} {productWord} <span className="text-gray-400">· Ceny aktualne: {new Date().toLocaleDateString('pl-PL', { month: 'long', year: 'numeric' })}</span></p>
         </div>
 
         {/* Sidebar + Content layout */}
@@ -414,7 +427,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">Porównanie</h2>
                     <div className="space-y-4">
                       {content.comparisons.map((comp, i) => (
-                        <div key={i} className="border-l-4 border-primary-500 pl-4">
+                        <div key={i} className="border border-gray-200 rounded-xl p-5">
                           <h3 className="font-semibold text-gray-900 mb-1">{comp.title}</h3>
                           <RichText text={comp.content} className="text-gray-600 text-sm leading-relaxed space-y-2" />
                         </div>
