@@ -2780,7 +2780,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Jakie są alternatywy dla terminali z rankingu TOP 15?',
-      answer: 'Ranking obejmuje 5 marek: Zebra (45% rynku), Honeywell (25%), Newland (8%), M3 Mobile (5%) i Datalogic (10%). Alternatywy spoza rankingu: Honeywell CK67 (ultra-rugged z 5 klawiaturami, konkurent MC9400, od 7 778 PLN), Honeywell CT70 (pierwszy terminal z Wi-Fi 7 i BT 6.0), Newland MT90 Orca (pośredni między MT93 a MT95, wkrótce w ofercie), M3 Mobile SM25 (następca SM24, premiera 2026), Point Mobile (PM80, PM90 — budżetowe). W TAKMA oferujemy Zebra, Honeywell, Newland, M3 Mobile i Datalogic — to marki, które najlepiej znamy dzięki 25-letniemu doświadczeniu i autoryzacji Zebra Premier Partner.'
+      answer: 'Ranking obejmuje 5 marek: Zebra (45% rynku), Honeywell (25%), Newland (8%), M3 Mobile (5%) i Datalogic (10%). Alternatywy spoza rankingu: Honeywell CK67 (ultra-rugged z 5 klawiaturami, konkurent MC9400, od 7 778 PLN), Honeywell CT70 (pierwszy terminal z Wi-Fi 7 i BT 6.0), Newland MT90 Orca (pośredni między MT93 a MT95, wkrótce w ofercie), M3 SM25 (następca SM24, premiera 2026), Point Mobile (PM80, PM90 — budżetowe). W TAKMA oferujemy Zebra, Honeywell, Newland, M3 Mobile i Datalogic — to marki, które najlepiej znamy dzięki 25-letniemu doświadczeniu i autoryzacji Zebra Premier Partner.'
     },
     {
       question: 'Jaki kolektor danych z RFID wybrać w 2026?',
@@ -10101,10 +10101,10 @@ export const guides: Guide[] = [
 },
 {
   slug: 'm3-mobile-sm24-sm25-porownanie',
-  title: 'M3 Mobile SM24 vs SM25 — porównanie nowych terminali mobilnych 2026',
-  seoTitle: 'M3 Mobile SM24 vs SM25 — porównanie terminali 2026',
-  seoDescription: 'M3 Mobile SM24 i SM25 — nowe terminale z Android 16, IP67, Wi-Fi 6E i baterią hot-swap. SM25 z 5G i skanerem dalekiego zasięgu SE5500, SM24 z niższym TCO. Porównanie, doradztwo TAKMA.',
-  excerpt: 'M3 Mobile SM25 i SM24 zastępują model SM20 — ta sama obudowa IP67, Android 16, Wi-Fi 6E i bateria hot-swap. SM25 z 5G i skanerem dalekiego zasięgu SE5500, SM24 tańszy i lżejszy z dłuższą pracą na baterii. Szczegółowe porównanie oparte na oficjalnych kartach katalogowych M3 Mobile.',
+  title: 'M3 SM24 vs SM25 — porównanie nowych terminali mobilnych 2026',
+  seoTitle: 'M3 SM24 vs SM25 — porównanie terminali 2026',
+  seoDescription: 'M3 SM24 i SM25 — nowe terminale z Android 16, IP67, Wi-Fi 6E i baterią hot-swap. SM25 z 5G i skanerem dalekiego zasięgu SE5500, SM24 z niższym TCO. Porównanie, doradztwo TAKMA.',
+  excerpt: 'M3 SM25 i SM24 zastępują model SM20 — ta sama obudowa IP67, Android 16, Wi-Fi 6E i bateria hot-swap. SM25 z 5G i skanerem dalekiego zasięgu SE5500, SM24 tańszy i lżejszy z dłuższą pracą na baterii. Szczegółowe porównanie oparte na oficjalnych kartach katalogowych M3 Mobile.',
   category: 'porownanie' as const,
   tags: ['terminale-mobilne', 'porownanie', 'm3-mobile', 'sm24', 'sm25', 'android-16', '5g', 'wifi-6e', 'magazyn', 'logistyka', 'retail'],
   publishedAt: '2026-03-23',
@@ -10114,7 +10114,7 @@ export const guides: Guide[] = [
   sections: [
     {
       id: 'wprowadzenie',
-      heading: 'M3 Mobile SM24 vs SM25 — nowe terminale mobilne 2026',
+      heading: 'M3 SM24 vs SM25 — nowe terminale mobilne 2026',
       content: `<p><strong>M3 Mobile wprowadza na rynek dwa nowe terminale mobilne — SM25 i SM24 — które zastępują dotychczasowy model SM20 i celują w segment między budżetowym SL20+ a premium SM30.</strong> Oba urządzenia dzielą tę samą obudowę (77 x 167 x 12,9 mm), ten sam system Android 16 z deklarowanym wsparciem do Androida 18, identyczną ochronę IP67 z upadkami na beton z 1,8 m oraz Wi-Fi 6E z 2x2 MU-MIMO.</p>
 
 <p>Kluczowa różnica? <strong>SM25 to flagowiec z 5G, ekranem FHD+ i dwoma silnikami skanera — CM60E do bliskiego zasięgu oraz SE5500 Smart Focus do skanowania dalekiego</strong>, a SM24 — jego tańsza wersja, bez trzech funkcji flagowca, za to z niższą ceną i dłuższą pracą na baterii.</p>
@@ -10129,7 +10129,7 @@ export const guides: Guide[] = [
       content: `<p>Zacznijmy od tego, co najważniejsze — konkrety w tabeli. <strong>Pogrubione różnice</strong>, reszta jest identyczna w obu modelach.</p>
 
 <table>
-<thead><tr><th>Parametr</th><th>M3 Mobile SM25</th><th>M3 Mobile SM24</th><th>Komentarz</th></tr></thead>
+<thead><tr><th>Parametr</th><th>M3 SM25</th><th>M3 SM24</th><th>Komentarz</th></tr></thead>
 <tbody>
 <tr><td><strong>Procesor</strong></td><td><strong>Qualcomm QCM4490</strong></td><td><strong>Qualcomm SM6225</strong></td><td>Oba 2,4 GHz octa-core. QCM4490 wydajniejszy przy wielozadaniowości</td></tr>
 <tr><td><strong>Wyświetlacz</strong></td><td><strong>6" FHD+ (1080 x 2160)</strong></td><td><strong>6" HD+ (720 x 1440)</strong></td><td>FHD+ = ostrzejszy obraz. HD+ = dłuższa praca na baterii</td></tr>
@@ -10159,7 +10159,7 @@ export const guides: Guide[] = [
     {
       id: 'drzewo-decyzyjne',
       heading: 'Dla kogo SM25, dla kogo SM24 — drzewo decyzyjne',
-      content: `<h3>M3 Mobile SM25 — wybierz, gdy:</h3>
+      content: `<h3>M3 SM25 — wybierz, gdy:</h3>
 
 <ul>
 <li><strong>Potrzebujesz 5G w terenie.</strong> SM25 X obsługuje pełne pasma 5G (Sub-6 GHz) plus 4G/3G/2G fallback. To terminal do doręczeń ostatniej mili, serwisu w terenie, inwentaryzacji u klienta — wszędzie tam, gdzie nie ma firmowej sieci Wi-Fi, a LTE nie daje wystarczającej przepustowości.</li>
@@ -10170,7 +10170,7 @@ export const guides: Guide[] = [
 
 <p><strong>Typowe scenariusze:</strong> duży magazyn logistyczny z regałami wysokiego składowania, doręczenia ostatniej mili (kurier z 5G), inwentaryzacja wielopoziomowa, serwis terenowy z przesyłaniem zdjęć, sieci retail z centralnym WMS.</p>
 
-<h3>M3 Mobile SM24 — wybierz, gdy:</h3>
+<h3>M3 SM24 — wybierz, gdy:</h3>
 
 <ul>
 <li><strong>Pracujesz głównie w zasięgu Wi-Fi.</strong> SM24 ma identyczne Wi-Fi 6E z 2x2 MU-MIMO i DBS co SM25 — w magazynie, sklepie, hali produkcyjnej czy centrum dystrybucyjnym Wi-Fi 6E zapewnia pełną łączność. Wariant SM24 W (bez modułu komórkowego) jeszcze bardziej obniża cenę.</li>
@@ -10296,7 +10296,7 @@ export const guides: Guide[] = [
 
 <h3>Ceny i zamówienia</h3>
 
-<p>Ceny M3 Mobile SM24 i SM25 zależą od wariantu (X/W), konfiguracji akcesoriów i wolumenu zamówienia. Skontaktuj się z TAKMA po indywidualną wycenę:</p>
+<p>Ceny M3 SM24 i SM25 zależą od wariantu (X/W), konfiguracji akcesoriów i wolumenu zamówienia. Skontaktuj się z TAKMA po indywidualną wycenę:</p>
 
 <ul>
 <li><strong>Telefon:</strong> +48 607 819 688 (Pon-Pt, 7:30-15:30)</li>
@@ -10309,7 +10309,7 @@ export const guides: Guide[] = [
   ],
   faq: [
     {
-      question: 'Czym różni się M3 Mobile SM24 od SM25?',
+      question: 'Czym różni się M3 SM24 od SM25?',
       answer: 'SM24 to ekonomiczna wersja SM25, okrojona w trzech punktach: brak 5G (zostaje 4G LTE), ekran HD+ zamiast FHD+, jeden silnik skanera CM60E zamiast CM60E + SE5500. Cała reszta jest identyczna — Android 16, Wi-Fi 6E, IP67, upadki z 1,8 m, hot-swap baterii 4 000/6 000 mAh, NFC od strony ekranu, te same wymiary i akcesoria. SM24 jest też lżejszy o 30 g (240 g vs 270 g). Wybierz SM24 do pracy w Wi-Fi i skanowania standardowego. SM25 gdy potrzebujesz 5G, skanowania dalekozasięgowego lub ekranu FHD+.',
     },
     {
@@ -10317,7 +10317,7 @@ export const guides: Guide[] = [
       answer: 'Tak — identyczne wymiary 77 x 167 x 12,9 mm. Oznacza to, że etui, uchwyty, stacje dokujące POGO, kabury i inne akcesoria pasują do obu modeli. Możesz mieszać SM24 i SM25 w jednej flocie (np. SM25 z 5G dla kierowców, SM24 dla operatorów magazynowych) i używać wspólnej infrastruktury akcesoriów — to realna oszczędność.',
     },
     {
-      question: 'M3 Mobile SM24/SM25 vs Zebra TC22/TC27 — co wybrać?',
+      question: 'M3 SM24/SM25 vs Zebra TC22/TC27 — co wybrać?',
       answer: 'SM24/SM25 wygrywają NFC od strony ekranu, większą baterią (4 000/6 000 mAh vs 3 800/5 200 mAh), lepszą odpornością na upadki (1,8 m vs 1,5 m) i elastycznością floty (dwa modele, jedne akcesoria). Zebra TC22/TC27 wygrywają ekosystemem Mobility DNA (DataWedge, StageNow, PowerPrecision+), IP68, ceną startową (TC22 od 2 417 zł) i dłuższym wsparciem LifeGuard. SM24 sprawdzi się w małych flotach do 20 szt. z 3-letnim cyklem życia. Zebra TC22/TC27 — gdy potrzebujesz Mobility DNA i dłuższego wsparcia Android.',
     },
     {
@@ -10329,7 +10329,7 @@ export const guides: Guide[] = [
       answer: 'SM24 i SM25 pracują na Androidzie 16 — obsługują wszystkie aplikacje Android: SAP EWM, Comarch WMS, LogMag, WMS Vision, Enova365, Navireo, dedykowane aplikacje firmowe, przeglądarki webowe z interfejsem WMS. M3 Speedpack StartUp kontroluje dostęp do GMS (Google Play, Chrome itp.), a M3 Speedpack przekazuje dane ze skanera do dowolnego pola tekstowego w aplikacji bez programowania.',
     },
     {
-      question: 'Ile kosztuje M3 Mobile SM24 / SM25?',
+      question: 'Ile kosztuje M3 SM24 / SM25?',
       answer: '<a href="/produkt/m3-mobile-sm24">SM24</a> W (Wi-Fi) od 3 123 zł netto, SM24 X (Wi-Fi + LTE + GPS) od 3 552 zł netto. Dla porównania: <a href="/produkt/zebra-tc22">Zebra TC22</a> od 2 417 zł, <a href="/produkt/zebra-tc27">TC27</a> od 2 690 zł, <a href="/produkt/honeywell-ct32">Honeywell CT32</a> od 3 389 zł. SM24 jest droższy od TC22, ale oferuje 8 GB RAM, 128 GB Flash i hot-swap baterii. Ceny SM25 dostępne na zapytanie — skontaktuj się z TAKMA: +48 607 819 688 lub biuro@takma.com.pl.',
     },
     {
