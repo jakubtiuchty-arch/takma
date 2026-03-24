@@ -49864,7 +49864,7 @@ Kluczowe przewagi M3 SM25 nad tańszym [SM24](/produkt/m3-sm24): ekran FHD+ zami
 
 Warianty: SM25 W (Wi-Fi only) do pracy w zasięgu sieci bezprzewodowej, SM25 X (Wi-Fi + 5G/4G LTE + GPS) z dual SIM (nano + eSIM) do pracy w terenie i logistyki mobilnej. Oba warianty: Gorilla Glass 5, IP67, upadki z 1,5 m (1,8 m z bootem ochronnym), 1000 tumble wg MIL-STD-810H, praca od -20°C do +50°C, hot-swap baterii 4000/6000 mAh.
 
-M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Data premiery M3 SM25 w Polsce: 2026 — skontaktuj się z TAKMA po aktualny termin dostępności i indywidualną wycenę. Pełna specyfikacja techniczna dostępna w karcie katalogowej M3 SM25 (PDF w sekcji Dokumenty).`,
+M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Premiera M3 SM25 w Polsce: czerwiec 2026 — skontaktuj się z TAKMA po rezerwację i indywidualną wycenę. Pełna specyfikacja techniczna dostępna w karcie katalogowej M3 SM25 (PDF w sekcji Dokumenty).`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['terminale-mobilne'],
@@ -49882,7 +49882,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
       'M3 SM25 — widok z góry, okno skanera 2D (CM60E / SE5500 Smart Focus)',
     ],
     seoTitle: 'M3 SM25 — terminal mobilny 5G, FHD+, SE5500, hot-swap',
-    seoDescription: 'M3 SM25 — terminal mobilny (kolektor danych) 6" FHD+ z 5G, skanerem Zebra SE5500, hot-swap baterii, Android 16, IP67. Warianty Wi-Fi (SM25W) i 5G (SM25X). Premiera 2026, wkrótce w TAKMA.',
+    seoDescription: 'M3 SM25 — terminal mobilny (kolektor danych) 6" FHD+ z 5G, skanerem Zebra SE5500, hot-swap baterii, Android 16, IP67. Warianty Wi-Fi (SM25W) i 5G (SM25X). Premiera czerwiec 2026. Zamów w TAKMA.',
     variantAttributeTooltips: {
       '5G': 'SM25 W = tylko Wi-Fi 6E (praca w zasięgu sieci bezprzewodowej).\n\nSM25 X = Wi-Fi 6E + 5G/4G LTE + GPS + dual SIM (nano + eSIM) — do pracy w terenie, logistyki mobilnej i dostaw.',
       'Skaner': 'CM60E — standardowy imager 2D do kodów 1D/2D/QR z bliska i średniego zasięgu.\n\nSE5500 Smart Focus (Zebra) — skaner dalekiego zasięgu do 15 m, idealny do magazynów wysokiego składowania.',
@@ -49922,7 +49922,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
     ],
     faq: [
       { question: 'Czym różni się M3 SM25 od SM24?', answer: 'SM25 ma 3 kluczowe przewagi: 1) ekran FHD+ (1080p) zamiast HD+ (720p) w SM24 — ostrość dokumentów i interfejsów WMS, 2) 5G Sub-6 (model X) zamiast 4G LTE — niższe opóźnienia w dużych obiektach, 3) skaner Zebra SE5500 Smart Focus (zasięg do 15 m) obok standardowego CM60E. SM25 waży 270 g (SM24: 240 g) i ma lepszy procesor QCM4490 (Dragonwing). Oba mają tę samą obudowę (77×167×12,9 mm), IP67, hot-swap baterii i Android 16→18.' },
-      { question: 'Kiedy M3 SM25 będzie dostępny w Polsce?', answer: 'M3 SM25 to nowość 2026. Termin dostępności w Polsce zależy od harmonogramu M3 Mobile — skontaktuj się z TAKMA po aktualny status. Wstępne zamówienia przyjmujemy już teraz. W międzyczasie rekomendujemy [M3 SM24](/produkt/m3-sm24) (dostępny od 3 123 zł) lub [Zebra TC27](/produkt/zebra-tc27) (od 2 690 zł, 5G + GPS).' },
+      { question: 'Kiedy M3 SM25 będzie dostępny w Polsce?', answer: 'M3 SM25 będzie dostępny w Polsce od czerwca 2026. Wstępne zamówienia przyjmujemy już teraz — skontaktuj się z TAKMA po rezerwację i indywidualną wycenę. Do tego czasu rekomendujemy [M3 SM24](/produkt/m3-sm24) (dostępny od kwietnia 2026, od 3 123 zł) lub [Zebra TC27](/produkt/zebra-tc27) (od 2 690 zł, 5G + GPS).' },
       { question: 'M3 SM25 vs Zebra TC27 — porównanie', answer: 'SM25: 8 GB RAM / 128 GB, FHD+, 5G, Android 16→18, hot-swap, skaner SE5500 (15 m), IP67, 270 g. [TC27](/produkt/zebra-tc27): 4 GB / 64 GB, FHD+, 5G, Android 14 (LifeGuard 10 lat), IP68, 236 g, Mobility DNA (DataWedge, StageNow). SM25 wygrywa pamięcią, hot-swap i SE5500. TC27 wygrywa IP68, 10-letnim wsparciem i ekosystemem Mobility DNA.' },
       { question: 'M3 SM25 vs Honeywell CT32 — porównanie', answer: 'SM25: 8 GB / 128 GB, FHD+, 5G, QCM4490, skaner SE5500 (15 m), hot-swap, IP67, 270 g. [CT32](/produkt/honeywell-ct32): 6-8 GB / 128 GB, FHD+, 5G, hot-swap, FlexRange XLR (15 m), IP67, od 3 389 zł. Oba mają 5G, hot-swap i skanery dalekiego zasięgu. CT32 ma Mobility Edge (5 lat wsparcia). SM25 ma nowszy Android 16 i skaner SE5500 (Zebra).' },
       { question: 'Jaki skaner ma M3 SM25?', answer: 'SM25 oferuje dwa silniki skanowania: CM60E (standardowy imager 2D — kody 1D, 2D, QR, DataMatrix z bliska i średniego zasięgu) oraz SE5500 Smart Focus firmy Zebra (skaner dalekiego zasięgu do 15 m na etykietach w magazynach wysokiego składowania). SE5500 to ten sam silnik co w [Zebra MC3400](/produkt/zebra-mc3400) i [MC9400](/produkt/zebra-mc9400).' },

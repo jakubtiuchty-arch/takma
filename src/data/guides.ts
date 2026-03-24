@@ -10290,8 +10290,8 @@ export const guides: Guide[] = [
 <h3>Dostępność</h3>
 
 <ul>
-<li><strong>SM25:</strong> dostępność od Q4 2025 (wg specyfikacji rev. SS-SM25 01/12/2025)</li>
-<li><strong>SM24:</strong> dostępność od Q1 2026 (wg specyfikacji rev. SS-SM24 13/01/2026)</li>
+<li><strong>SM24:</strong> dostępność od kwietnia 2026</li>
+<li><strong>SM25:</strong> dostępność od czerwca 2026</li>
 </ul>
 
 <h3>Ceny i zamówienia</h3>
