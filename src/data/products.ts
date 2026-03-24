@@ -50096,9 +50096,9 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
     slug: 'm3-sl20k',
     name: 'M3 SL20K',
     shortDescription: 'M3 SL20K — terminal mobilny z klawiaturą 30-klawiszową, skanerem 2D, hot-swap 5200 mAh, IP65',
-    description: `Dla kogo? M3 SL20K to terminal mobilny (kolektor danych) z fizyczną klawiaturą numeryczną 30-klawiszową i ekranem 4" WVGA, zaprojektowany dla firm wymagających szybkiego wprowadzania danych liczbowych — inwentaryzacja, kompletacja zamówień, zarządzanie magazynem WMS. Klawiatura z podświetleniem LED umożliwia wygodną pracę w ciemnych pomieszczeniach (chłodnie, magazyny nocne).
+    description: `Dla kogo? M3 SL20K to terminal magazynowy z klawiaturą fizyczną (kolektor danych z klawiaturą 30-klawiszową) i ekranem 4" WVGA, zaprojektowany dla firm wymagających szybkiego wprowadzania danych liczbowych — inwentaryzacja, kompletacja zamówień, zarządzanie magazynem WMS. Ten terminal do inwentaryzacji z podświetleniem LED klawiatury umożliwia wygodną pracę w ciemnych pomieszczeniach (chłodnie, magazyny nocne).
 
-Kluczowe przewagi M3 SL20K: 30 klawiszy fizycznych z podświetleniem + 5 programowalnych przycisków bocznych, skaner 2D do kodów 1D/2D/QR, bateria 5200 mAh z hot-swap (wymiana bez wyłączania), szybkie ładowanie PD 20W, IP65, upadki z 1,5 m wg MIL-STD-810G, 2000 tumble z 0,5 m. Model X z 4G LTE (dual nano-SIM) + GPS do pracy w terenie i logistyki mobilnej.
+Kluczowe przewagi M3 SL20K: 30 klawiszy fizycznych z podświetleniem + 5 programowalnych przycisków bocznych, skaner 2D do kodów 1D/2D/QR, bateria 5200 mAh z hot-swap (wymiana bez wyłączania), szybkie ładowanie PD 20W, IP65, upadki z 1,5 m wg MIL-STD-810G, 2000 tumble z 0,5 m. Terminal przemysłowy Android z 4G LTE (dual nano-SIM) + GPS do pracy w terenie i logistyki mobilnej.
 
 Wariant L2KX4C: 4G LTE + Wi-Fi 5 + GPS + Bluetooth 5.0 + NFC. Kamera tylna 13 MP do dokumentacji fotograficznej uszkodzeń i etykiet, przednia 5 MP do wideokonferencji. Android 13 z aktualizacjami do Android 15, karta microSD do 256 GB, USB 2.0 OTG. Opcjonalny uchwyt pistoletowy (trigger handle) do intensywnego skanowania.
 
@@ -50119,8 +50119,8 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
       'M3 SL20K — widok z lewego boku, żółty przycisk boczny skanowania, przyciski głośności, wzmocniona obudowa z gumowymi narożnikami',
       'M3 SL20K — widok z prawego boku, żółty przycisk boczny skanowania, przycisk programowalny, smukła wzmocniona obudowa',
     ],
-    seoTitle: 'M3 SL20K — terminal z klawiaturą 30-klawiszową, IP65',
-    seoDescription: 'M3 SL20K — terminal mobilny z klawiaturą 30-klawiszową, skanerem 2D, hot-swap 5200 mAh, 4G LTE, IP65. Terminal M3 Mobile SL20K, kolektor danych M3 SL20K, SL20K M3 Mobile. PN: L2KX4C-T2CWAS-HF-01. Kupuj w TAKMA — partner M3 Mobile.',
+    seoTitle: 'M3 SL20K — terminal mobilny z klawiaturą 30-key, IP65',
+    seoDescription: 'M3 SL20K — terminal mobilny z klawiaturą 30-key, skanerem 2D, hot-swap 5200 mAh i IP65. Idealny do WMS i inwentaryzacji. Zamów w TAKMA.',
     variantAttributeTooltips: {},
     variants: [
       {
@@ -50176,6 +50176,9 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
       { question: 'Jaka klawiatura ma M3 SL20K?', answer: 'SL20K ma 30 klawiszy fizycznych z podświetleniem LED: klawisze numeryczne 0-9, klawisze funkcyjne F1-F4, ALT, CTRL, ESC, TAB, SHIFT, Enter, Backspace, nawigacja (strzałki). Dodatkowo 5 programowalnych przycisków bocznych do skanowania. Klawiatura z podświetleniem umożliwia pracę w ciemnych pomieszczeniach (chłodnie, magazyny nocne).' },
       { question: 'Gdzie kupić M3 SL20K w Polsce?', answer: 'TAKMA jest partnerem M3 Mobile w Polsce. Oferujemy M3 SL20K z dostawą, doradztwo w doborze akcesoriów (stacje, trigger, zasilacze), konfigurację M3 Speedpack, urządzenia demo i serwis gwarancyjny/pogwarancyjny. Skontaktuj się — przygotujemy indywidualną wycenę.' },
       { question: 'Jaka gwarancja na M3 SL20K i gdzie serwis?', answer: 'M3 SL20K objęty jest 1-roczną gwarancją producenta (M3 Mobile). Opcjonalnie: M3 Mobile Speed Care Essential i Select (rozszerzone pakiety serwisowe). TAKMA zapewnia wsparcie serwisowe w Polsce — diagnostykę, naprawy gwarancyjne i pogwarancyjne. Serwis autoryzowany M3 Mobile w Europie: M3 Mobile GmbH, Niemcy (Kriftel).' },
+      { question: 'Ile kosztuje M3 SL20K?', answer: 'Cena M3 SL20K zaczyna się od 2 424 zł netto (wariant L2KX4C z 4G LTE + Wi-Fi + GPS). To 2× mniej niż Zebra MC3400 (od ~5 400 zł) i 1,9× mniej niż Honeywell CK67 (od ~4 500 zł). Cena obejmuje terminal z baterią 5200 mAh — stacja dokująca, trigger i boot sprzedawane osobno. Skontaktuj się po indywidualną wycenę z akcesoriami.' },
+      { question: 'Czy M3 SL20K działa z SAP i WMS?', answer: 'Tak — M3 SL20K z Androidem 13 (aktualizacje do Android 15) obsługuje wszystkie popularne systemy WMS (SAP EWM, Oracle WMS, Manhattan, Reflex), ERP (SAP Business One, Microsoft Dynamics, Comarch ERP) i aplikacje inwentaryzacyjne. Skaner 2D odczytuje kody 1D/2D/QR używane w systemach WMS. Platforma M3 Speedpack umożliwia zdalne zarządzanie urządzeniami (MDM), aktualizację firmware i konfigurację.' },
+      { question: 'Jaki skaner ma M3 SL20K?', answer: 'SL20K jest wyposażony w skaner 2D Imager odczytujący kody 1D (EAN-13, Code 128, GS1-128), 2D (QR, DataMatrix, PDF417, Aztec) oraz kody zniszczone i słabej jakości. Skaner aktywowany przyciskiem na klawiaturze lub jednym z 5 programowalnych przycisków bocznych. Opcjonalny uchwyt pistoletowy (SL2K-TRIG-S00) ułatwia intensywne skanowanie — ergonomia jak w pistoletowym CK67.' },
       { question: 'Jakie są alternatywy dla M3 SL20K?', answer: '[Zebra MC3400](/produkt/zebra-mc3400) (od ~5 400 zł) — 38-47 klawiszy, Mobility DNA, LifeGuard 10 lat. [Honeywell CK67](/produkt/honeywell-ck67) (od ~4 500 zł) — 52 klawisze, FlexRange XLR 24 m, Mobility Edge. [M3 SM30](/produkt/m3-sm30) (od 3 610 zł) — terminal dotykowy (bez klawiatury) z AI 12 TOPS i IP68.' },
     ],
     availability: 'available' as const,
