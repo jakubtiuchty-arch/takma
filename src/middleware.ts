@@ -106,6 +106,14 @@ export async function middleware(request: NextRequest) {
       'm3-sm30-zasilacz-usb-c', 'm3-sm30-zasilacz-2slot',
       'm3-sm30-zasilacz-4slot', 'm3-sm30-zasilacz-8slot',
       'm3-sm30-pasek-na-reke',
+      'm3-sl20k',
+      'm3-sl20k-stacja-dokujaca-1', 'm3-sl20k-stacja-dokujaca-2-usb',
+      'm3-sl20k-stacja-dokujaca-2-ethernet',
+      'm3-sl20k-stacja-dokujaca-8', 'm3-sl20k-stacja-dokujaca-8-ethernet',
+      'm3-sl20k-boot-ochronny', 'm3-sl20k-bateria-5200mah',
+      'm3-sl20k-uchwyt-pistoletowy', 'm3-sl20k-folia-ochronna',
+      'm3-sl20k-zasilacz-usb-c', 'm3-sl20k-zasilacz-2slot',
+      'm3-sl20k-pasek-na-reke',
       // RFID — usunięte
       // Drukarki Honeywell + akcesoria
       'honeywell-pc45d', 'honeywell-pc45t',
