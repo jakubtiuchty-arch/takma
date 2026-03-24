@@ -50083,7 +50083,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
       'm3-sm30-zasilacz-usb-c',
       'm3-sm30-ladowarka-4-baterii',
     ],
-    relatedProducts: ['m3-sm24', 'm3-sm25', 'zebra-tc53e', 'honeywell-ct32'],
+    relatedProducts: ['zebra-tc58', 'honeywell-ct70', 'newland-mt95-kambur-pro-ii', 'datalogic-memor-35'],
     downloads: [
       { name: 'Karta katalogowa M3 SM30 (EN)', type: 'datasheet' as const, url: '/downloads/m3-sm30-specification.pdf', size: '860 KB' },
       { name: 'Katalog akcesoriów M3 SM30 (EN)', type: 'manual' as const, url: '/downloads/m3-sm30-accessories-guide.pdf', size: '1,2 MB' },
