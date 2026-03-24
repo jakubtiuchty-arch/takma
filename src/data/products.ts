@@ -49958,7 +49958,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
     slug: 'm3-sm30',
     name: 'M3 SM30',
     shortDescription: 'M3 SM30 — terminal mobilny 5G z AI 12 TOPS, Snapdragon QCM6490, 5,7" FHD, IP68, hot-swap',
-    description: `Dla kogo? M3 SM30 to flagowy terminal mobilny (kolektor danych) z procesorem Qualcomm Dragonwing QCM6490 (2,7 GHz, 8 rdzeni) i akceleratorem AI 12 TOPS (Hexagon NPU), zaprojektowany dla firm wdrażających sztuczną inteligencję w procesach magazynowych, produkcyjnych i logistycznych. SM30 obsługuje rozpoznawanie obrazów, kontrolę jakości i defektów bezpośrednio na urządzeniu — bez połączenia z chmurą.
+    description: `Dla kogo? M3 SM30 to flagowy terminal mobilny (kolektor danych) z procesorem Qualcomm Dragonwing QCM6490 (2,7 GHz, 8 rdzeni) i akceleratorem AI 12 TOPS (Hexagon NPU), zaprojektowany dla firm wdrażających sztuczną inteligencję w procesach magazynowych, produkcyjnych i logistycznych. Ten terminal przemysłowy Android obsługuje rozpoznawanie obrazów, kontrolę jakości i detekcję defektów bezpośrednio na urządzeniu — bez połączenia z chmurą. Idealny terminal magazynowy do integracji z systemami WMS, SAP i ERP.
 
 Kluczowe przewagi M3 SM30: procesor QCM6490 (ten sam co w Zebra TC53e) z wydajnością AI 12 TOPS, ekran 5,7" FHD (1080×1920) z Gorilla Glass 5, ochrona IP68, upadki z 1,5 m (1,8 m z bootem), 2000 tumble z 0,5 m. SM30 oferuje dwa skanery — [SE4770](/produkt/zebra-mc3400) (standard) lub SE5500 Smart Focus (zasięg do 15 m, ten sam co w Zebra MC9400). Bateria 5000 mAh z hot-swap (opcja 7000 mAh).
 
@@ -49982,7 +49982,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
       'M3 SM30 — widok z góry, okno skanera kodów kreskowych SE4770/SE5500',
     ],
     seoTitle: 'M3 SM30 — terminal mobilny 5G z AI 12 TOPS, IP68',
-    seoDescription: 'M3 SM30 — terminal mobilny (kolektor danych) 5,7" FHD z AI 12 TOPS, procesorem QCM6490, 5G, IP68, hot-swap baterii 5000/7000 mAh. Terminal M3 SM30, SM30 M3 Mobile, kolektor danych M3 SM30. Warianty Wi-Fi (SM300E) i 5G (SM305E), skaner SE4770 lub SE5500. PN: SM300E-U2CFSS-HF, SM300E-UFCFSS-HF, SM305E-U2CFSS-HF, SM305E-UFCFSS-HF. Kupuj w TAKMA — partner M3 Mobile.',
+    seoDescription: 'M3 SM30 — flagowy terminal mobilny z AI 12 TOPS, procesorem QCM6490, 5G i IP68. 4 warianty ze skanerem SE4770 lub SE5500. Zamów w TAKMA.',
     variantAttributeTooltips: {
       '5G': 'SM300E = tylko Wi-Fi 6E (praca w zasięgu sieci bezprzewodowej).\n\nSM305E = Wi-Fi 6E + 5G/4G LTE + GPS + eSIM — do pracy w terenie, logistyki mobilnej i dostaw.',
       'Skaner': 'SE4770 — standardowy imager 2D Zebra do kodów 1D/2D/QR z bliska i średniego zasięgu (oznaczenie U2C).\n\nSE5500 Smart Focus (Zebra) — skaner dalekiego zasięgu do 15 m, idealny do magazynów wysokiego składowania (oznaczenie UFC).',
@@ -50058,6 +50058,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
       { question: 'Jakie akcesoria są dostępne do M3 SM30?', answer: 'Pełna gama: stacja dokująca 1-gniazdowa (SM30-1CRD-C00), 2-gniazdowa z ładowaniem baterii (SM30-2CRD-C00), 4-gniazdowa (SM30-4CRD-C00), 8-gniazdowa z Ethernet (SM30-8CRD-C00), ładowarka 4 baterii (SM30-04BC-C00), boot ochronny (SM30-BOOT-01), uchwyt pistoletowy (SM30-TRIG-S00), baterie 5000/7000 mAh, folia ochronna (SM30-SCPR). Zasilacze dobierz wg stacji — PWSP-2XX (1/2-slot), PWSP-8XX (4/8-slot), PWSP-4XX (ładowarka baterii).' },
       { question: 'Gdzie kupić M3 SM30 w Polsce?', answer: 'TAKMA jest partnerem M3 Mobile w Polsce. Oferujemy M3 SM30 z dostawą, doradztwo w doborze wariantu (Wi-Fi vs 5G, SE4770 vs SE5500), konfigurację M3 Speedpack, urządzenia demo i serwis gwarancyjny/pogwarancyjny. Skontaktuj się — przygotujemy indywidualną wycenę dla Twojej firmy.' },
       { question: 'Jaka gwarancja na M3 SM30 i gdzie serwis?', answer: 'M3 SM30 objęty jest 1-roczną gwarancją producenta (M3 Mobile). TAKMA zapewnia wsparcie serwisowe w Polsce — diagnostykę, naprawy gwarancyjne i pogwarancyjne. Serwis autoryzowany M3 Mobile w Europie prowadzi M3 Mobile GmbH w Niemczech (Kriftel). Czas naprawy gwarancyjnej: zazwyczaj 10-15 dni roboczych.' },
+      { question: 'Ile kosztuje M3 SM30?', answer: 'Cena M3 SM30 zależy od konfiguracji: wariant Wi-Fi z SE4770 od ok. 3 610 zł netto, wariant 5G+GPS z SE5500 do ok. 4 378 zł netto. Ceny mogą się zmieniać w zależności od kursu EUR i dostępności. Skontaktuj się z TAKMA po aktualną wycenę i rabat ilościowy dla Twojej firmy.' },
       { question: 'Jakie są alternatywy dla M3 SM30?', answer: '[M3 SM24](/produkt/m3-sm24) (od 3 123 zł) — budżetowy model bez AI i 5G. [M3 SM25](/produkt/m3-sm25) (premiera czerwiec 2026) — średnia półka z FHD+ i 5G. [Zebra TC53e](/produkt/zebra-tc53e) — ten sam procesor QCM6490, ekosystem Mobility DNA. [Honeywell CT32](/produkt/honeywell-ct32) (od 3 389 zł) — FlexRange 24 m, Mobility Edge.' },
     ],
     availability: 'available' as const,
