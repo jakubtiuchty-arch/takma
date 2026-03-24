@@ -50111,8 +50111,18 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych. TAKMA
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['terminale-mobilne'],
     tags: ['magazyn', 'retail', 'logistyka'] as ProductTag[],
-    images: [],
-    imageDescriptions: [],
+    images: [
+      '/images/products/m3-sl20-plus-front.png',
+      '/images/products/m3-sl20-plus-back.png',
+      '/images/products/m3-sl20-plus-left.png',
+      '/images/products/m3-sl20-plus-right.png',
+    ],
+    imageDescriptions: [
+      'M3 SL20+ — widok z przodu, ekran 5,5" HD+ z logo SL20 Plus i M3 Mobile',
+      'M3 SL20+ — widok z tyłu, moduł NFC, aparat 13 MP i styki ładowania',
+      'M3 SL20+ — widok z lewego boku, przyciski skanowania i głośności',
+      'M3 SL20+ — widok z prawego boku, przyciski skanowania i power',
+    ],
     seoTitle: 'M3 SL20+ — terminal mobilny 5,5" z hot-swap, IP67, SE4710',
     seoDescription: 'M3 SL20+ — terminal mobilny 5,5" z hot-swap 5000 mAh, skanerem SE4710, IP67 i eSIM. Od 2 255 PLN netto. Warianty 4/64 i 8/128 GB. Zamów w TAKMA.',
     variantAttributeTooltips: {
