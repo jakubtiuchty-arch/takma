@@ -51735,13 +51735,13 @@ const m3UL30: Product[] = [
     slug: 'm3-ul30',
     name: 'M3 UL30',
     shortDescription: 'M3 UL30 — terminal gun z klawiaturą 28/35/53 kl., 5" FHD, hot-swap 6700 mAh, IP67, SE4770/SE5800',
-    description: `Dla kogo? M3 UL30 to wytrzymały terminal mobilny (kolektor danych) typu gun z fizyczną klawiaturą i ekranem 5" Full HD (1920x1080), zaprojektowany do intensywnej pracy w magazynach, centrach dystrybucji, produkcji i chłodniach. Terminal gun M3 UL30 z klawiaturą fizyczną (28, 35 lub 53 klawisze) sprawdza się wszędzie, gdzie operatorzy muszą szybko wpisywać ilości, kody lokalizacji lub identyfikatory partii — bez konieczności używania klawiatury ekranowej.
+    description: `Dla kogo? M3 UL30 to wytrzymały terminal magazynowy gun (kolektor danych do magazynu) z fizyczną klawiaturą i ekranem 5" Full HD (1920x1080), zaprojektowany do intensywnej pracy w magazynach, centrach dystrybucji, produkcji i chłodniach. Terminal pistoletowy M3 UL30 z klawiaturą fizyczną (28, 35 lub 53 klawisze) sprawdza się wszędzie, gdzie operatorzy muszą szybko wpisywać ilości, kody lokalizacji lub identyfikatory partii — bez konieczności używania klawiatury ekranowej. Terminal do picking WMS z hot-swap baterii 6700 mAh i skanerem dalekiego zasięgu.
 
-Kluczowe przewagi M3 UL30: procesor Qualcomm QCS6490 (2,7 GHz, 8 rdzeni, litografia 6 nm) z wbudowanym NPU Hexagon o mocy 12 TOPS do przetwarzania AI bezpośrednio na urządzeniu. Kolektor danych M3 UL30 oferuje hot-swap baterii 6700 mAh (wymiana bez wyłączania — ciągłość sesji WMS/WLAN/BT), 8 GB RAM DDR4, 128 GB UFS Flash i Wi-Fi 6E z 2x2 MU-MIMO. Ekran 5" FHD to największy wyświetlacz w klasie terminali gun z klawiaturą — konkurencja (Zebra MC3400, MC9400, Honeywell CK67) oferuje 4-4,3". Gorilla Glass 3 z obsługą w rękawicach.
+Kluczowe przewagi M3 UL30: procesor Qualcomm QCS6490 (2,7 GHz, 8 rdzeni, litografia 6 nm) z wbudowanym NPU Hexagon o mocy 12 TOPS do przetwarzania AI bezpośrednio na urządzeniu. Kolektor danych M3 UL30 oferuje hot-swap baterii 6700 mAh (wymiana bez wyłączania — ciągłość sesji WMS/WLAN/BT), 8 GB RAM DDR4, 128 GB UFS Flash i Wi-Fi 6E z 2x2 MU-MIMO. Ekran 5" FHD to największy wyświetlacz w klasie terminali gun z klawiaturą — konkurencja (Zebra MC3400, MC9400, Honeywell CK67) oferuje 4-4,3". Gorilla Glass 3 z obsługą w rękawicach. Terminal przemysłowy z klawiaturą do zastosowań magazynowych, produkcyjnych i logistycznych.
 
-Warianty skanerów: Zebra SE4770 (zasięg standardowy do ~92 cm — picking, skanowanie z ręki) lub Zebra SE5800 (daleki zasięg do 15 m — regały paletowe, high-bay). Wersja UL30F (Frozen) do pracy w mroźni od −30°C z podgrzewaniem okna skanera i podświetlenia LCD. Terminal mobilny z klawiaturą M3 UL30 jest certyfikowany IP67 i MIL-STD-810H z upadkami z 3,0 m (z boot) na beton. Android 14 z gwarancją aktualizacji do Android 18 (4 generacje OS).
+Warianty skanerów: Zebra SE4770 (zasięg standardowy do ~92 cm — picking, skanowanie z ręki) lub Zebra SE5800 (daleki zasięg do 15 m — regały paletowe, high-bay). Wersja UL30F (Frozen) — terminal do chłodni i mroźni od −30°C z podgrzewaniem okna skanera i podświetlenia LCD. Terminal mobilny z klawiaturą M3 UL30 jest certyfikowany IP67 i MIL-STD-810H z upadkami z 3,0 m (z boot) na beton. Android 14 z gwarancją aktualizacji do Android 18 (4 generacje OS). Terminal Android do magazynu z klawiaturą fizyczną.
 
-M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych z platformą M3 Speedpack do zarządzania urządzeniami. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Terminal mobilny M3 UL30, kolektor danych M3 UL30, M3 Mobile UL30 gun z klawiaturą.`,
+M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych z platformą M3 Speedpack do zarządzania urządzeniami. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['terminale-mobilne'],
@@ -51759,7 +51759,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych z plat
       'M3 UL30 — widok z prawego boku, przycisk skanowania żółty i styki ładowania',
     ],
     seoTitle: 'M3 UL30 — terminal gun z klawiaturą, 5" FHD, IP67',
-    seoDescription: 'M3 UL30 — terminal mobilny gun z klawiaturą 28/35/53 kl., hot-swap 6700 mAh, 5" FHD, IP67, AI NPU, Android 14→18. Kolektor danych M3 UL30, terminal M3 Mobile UL30. PN: U30W0E, U30F0E.',
+    seoDescription: 'M3 UL30 — terminal gun z klawiaturą 28/35/53 kl., AI 12 TOPS, hot-swap 6700 mAh, IP67. Od 5 626 zł. Wersja Freezer (−30°C). Zamów w TAKMA.',
     variantAttributeTooltips: {
       'Skaner': 'SE4770 — zasięg standardowy do ~92 cm, do skanowania z ręki na linii picking.\n\nSE5800 — daleki zasięg do 15 m, do regałów paletowych i high-bay.',
       'Klawiatura': '28 kl. — numeryczna, do szybkiego wpisywania ilości i kodów.\n\n35 kl. — funkcyjna numeryczna, kompromis między kompaktowością a funkcjonalnością.\n\n53 kl. — alfanumeryczna, do pełnego wpisywania tekstu, kodów lokalizacji i opisów.',
@@ -51900,6 +51900,8 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych z plat
       { question: 'Do jakich branż nadaje się M3 UL30?', answer: 'UL30 sprawdza się w: (1) magazynach i centrach dystrybucji — picking z klawiaturą do wpisywania ilości, skanowanie regałów; (2) logistyce — IP67 i drop 3 m chronią przed upadkami z wózka; (3) produkcji — rejestracja partii, kontrola jakości z AI NPU; (4) chłodniach — wersja UL30F do −30°C z podgrzewaniem ekranu; (5) retail — inwentaryzacja z klawiaturą alfanumeryczną.' },
       { question: 'Jakie systemy WMS i ERP obsługuje M3 UL30?', answer: 'M3 UL30 z Androidem 14 i Google Mobile Services obsługuje wszystkie popularne systemy WMS/ERP: SAP EWM, Oracle WMS Cloud, Comarch WMS, Asseco WAPRO Mag, Streamsoft Prestiż, Subiekt GT/nexo, InsERT, WMS.net, LogiMag, Mecalux Easy WMS. Integracja przez MDM — SOTI MobiControl, VMware Workspace ONE lub Android Enterprise.' },
       { question: 'Czym różni się M3 UL30 od poprzednika UL20?', answer: 'UL30 to następca UL20 z kluczowymi ulepszeniami: procesor QCS6490 2,7 GHz (vs 2,2 GHz w UL20), Wi-Fi 6E (vs Wi-Fi 5), Bluetooth 5.3 (vs 5.0), Android 14 z gwarancją do v18 (vs Android 10 w UL20), NPU AI 12 TOPS, 8 GB RAM (vs 4 GB), 128 GB UFS (vs 32 GB). Bateria 6700 mAh z hot-swap, IP67 i obudowa gun bez zmian. Akcesoria UL20 są kompatybilne z UL30.' },
+      { question: 'Gdzie kupić M3 UL30 w Polsce?', answer: 'TAKMA jest partnerem M3 Mobile w Polsce. Oferujemy M3 UL30 z dostawą, doradztwo w doborze wariantu (klawiatura 28/35/53 kl., skaner SE4770/SE5800, Standard/Freezer), konfigurację M3 Speedpack MDM, urządzenia demo i serwis gwarancyjny/pogwarancyjny. Opcjonalne kontrakty serwisowe M3 Speed Care. Skontaktuj się — przygotujemy indywidualną wycenę flotową.' },
+      { question: 'Jaka gwarancja na M3 UL30 i gdzie serwis?', answer: 'M3 UL30 objęty jest 1-roczną gwarancją producenta (M3 Mobile). Opcjonalnie: M3 Mobile Speed Care Essential i Select (rozszerzone pakiety serwisowe obejmujące naprawy, wsparcie techniczne i software). TAKMA zapewnia wsparcie serwisowe w Polsce — diagnostykę, naprawy gwarancyjne i pogwarancyjne. Serwis autoryzowany M3 Mobile w Europie: M3 Mobile GmbH, Niemcy (Kriftel).' },
       { question: 'Jakie są alternatywy dla M3 UL30?', answer: 'W klasie terminali gun z klawiaturą fizyczną i IP67: (1) [Zebra MC9400](/produkt/zebra-mc9400) — flagowiec, 7 klawiatur, IP68, drop 3,65 m, od 7 638 zł; (2) [Zebra MC3400](/produkt/zebra-mc3400) — bestseller, 3 klawiatury, od 4 561 zł; (3) [Honeywell CK67](/produkt/honeywell-ck67) — 5 klawiatur, FlexRange XLR 24 m; (4) [M3 SL20K](/produkt/m3-sl20k) — terminal z klawiaturą 30 kl. w kompaktowej obudowie, od 2 424 zł. UL30 wyróżnia się NPU AI i najlepszym ekranem 5" FHD w klasie gun.' },
     ],
     availability: 'available' as const,
@@ -51924,6 +51926,76 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych z plat
       'm3-ul30-zasilacz-2slot', 'm3-ul30-zasilacz-8slot',
       'm3-ul30-rysik', 'm3-ul30-zasilacz-snap-on',
     ],
+    comparison: {
+      title: 'Porównanie terminali gun z klawiaturą',
+      models: [
+        {
+          name: 'Zebra MC3400',
+          slug: 'zebra-mc3400',
+          specs: {
+            'Ekran': '4" WVGA',
+            'Klawiatura': '29 / 38 / 47 kl.',
+            'Skaner': 'SE4770 / SE58 FlexRange',
+            'IP': 'IP65',
+            'Upadki': '1,8 m (z boot)',
+            'Bateria': '5200 mAh hot-swap',
+            'NPU AI': 'Brak',
+            'Android': '14 (LifeGuard 10 lat)',
+            'Cena od': '4 561 zł',
+            'Najlepszy do': 'Ekosystem Zebra, niski budżet',
+          },
+        },
+        {
+          name: 'M3 UL30',
+          slug: 'm3-ul30',
+          highlight: true,
+          specs: {
+            'Ekran': '5" FHD (1920x1080)',
+            'Klawiatura': '28 / 35 / 53 kl.',
+            'Skaner': 'SE4770 / SE5800 LR',
+            'IP': 'IP67',
+            'Upadki': '3,0 m (z boot)',
+            'Bateria': '6700 mAh hot-swap',
+            'NPU AI': '12 TOPS',
+            'Android': '14→18 (4 generacje)',
+            'Cena od': '5 626 zł',
+            'Najlepszy do': 'Wytrzymałość, AI, duży ekran',
+          },
+        },
+        {
+          name: 'Honeywell CK67',
+          slug: 'honeywell-ck67',
+          specs: {
+            'Ekran': '4" WVGA',
+            'Klawiatura': '34 / 52 / 55 kl.',
+            'Skaner': 'FlexRange XLR (do 24 m)',
+            'IP': 'IP65',
+            'Upadki': '2,4 m',
+            'Bateria': '7000 mAh hot-swap',
+            'NPU AI': 'Brak',
+            'Android': '14→17',
+            'Cena od': '5 500 zł',
+            'Najlepszy do': 'Skaner LR, bateria, Mobility Edge',
+          },
+        },
+        {
+          name: 'Zebra MC9400',
+          slug: 'zebra-mc9400',
+          specs: {
+            'Ekran': '4,3" WVGA',
+            'Klawiatura': '7 wariantów (29-58 kl.)',
+            'Skaner': 'SE58 FlexRange',
+            'IP': 'IP68',
+            'Upadki': '3,65 m (z boot)',
+            'Bateria': '7000 mAh hot-swap',
+            'NPU AI': 'Brak',
+            'Android': '14 (LifeGuard 10 lat)',
+            'Cena od': '7 638 zł',
+            'Najlepszy do': 'Ultra-rugged, floty Zebra',
+          },
+        },
+      ],
+    },
     relatedProducts: ['zebra-mc3400', 'honeywell-ck67', 'zebra-mc9400'],
     downloads: [
       { name: 'Karta katalogowa M3 UL30 (EN)', type: 'datasheet' as const, url: '/downloads/m3-ul30-specification.pdf', size: '1,2 MB' },
