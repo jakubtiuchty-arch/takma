@@ -50216,7 +50216,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych. TAKMA
       'm3-sl20-plus-folia-ochronna',
       'm3-sl20-plus-zasilacz-usb-c',
     ],
-    relatedProducts: ['zebra-tc22', 'm3-sm24', 'm3-sl20k'],
+    relatedProducts: ['zebra-tc27', 'honeywell-ct32', 'datalogic-memor-17', 'newland-mt93'],
     downloads: [
       { name: 'Karta katalogowa M3 SL20+ (EN)', type: 'datasheet' as const, url: '/downloads/m3-sl20-plus-specification.pdf', size: '405 KB' },
       { name: 'Katalog akcesoriów M3 SL20+ (EN)', type: 'manual' as const, url: '/downloads/m3-sl20-plus-accessories-guide.pdf', size: '1,9 MB' },
