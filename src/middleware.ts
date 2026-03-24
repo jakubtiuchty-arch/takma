@@ -114,6 +114,15 @@ export async function middleware(request: NextRequest) {
       'm3-sl20k-uchwyt-pistoletowy', 'm3-sl20k-folia-ochronna',
       'm3-sl20k-zasilacz-usb-c', 'm3-sl20k-zasilacz-2slot',
       'm3-sl20k-pasek-na-reke',
+      'm3-sl20-plus',
+      'm3-sl20-plus-stacja-dokujaca-1', 'm3-sl20-plus-stacja-dokujaca-2-usb',
+      'm3-sl20-plus-stacja-dokujaca-2-ethernet',
+      'm3-sl20-plus-stacja-dokujaca-8', 'm3-sl20-plus-stacja-dokujaca-8-ethernet',
+      'm3-sl20-plus-boot-ochronny', 'm3-sl20-plus-bateria-5000mah',
+      'm3-sl20-plus-uchwyt-pistoletowy', 'm3-sl20-plus-folia-ochronna',
+      'm3-sl20-plus-zasilacz-usb-c', 'm3-sl20-plus-zasilacz-2slot',
+      'm3-sl20-plus-zasilacz-8slot', 'm3-sl20-plus-pasek-na-reke',
+      'm3-sl20-plus-speed-care-3-lata', 'm3-sl20-plus-speed-care-5-lat',
       // RFID — usunięte
       // Drukarki Honeywell + akcesoria
       'honeywell-pc45d', 'honeywell-pc45t',
