@@ -97,7 +97,15 @@ export async function middleware(request: NextRequest) {
       'honeywell-ck62-pasek-na-reke', 'honeywell-ck62-folia-ochronna',
       'honeywell-ck6x-ladowarka-4-baterii', 'honeywell-ck6x-ladowarka-16-baterii',
       // M3 Mobile
-      'm3-sm24', 'm3-sm25',
+      'm3-sm24', 'm3-sm25', 'm3-sm30',
+      'm3-sm30-stacja-dokujaca-1', 'm3-sm30-stacja-dokujaca-2',
+      'm3-sm30-stacja-dokujaca-4', 'm3-sm30-stacja-dokujaca-8',
+      'm3-sm30-ladowarka-4-baterii', 'm3-sm30-boot-ochronny',
+      'm3-sm30-bateria-5000mah', 'm3-sm30-bateria-7000mah',
+      'm3-sm30-uchwyt-pistoletowy', 'm3-sm30-folia-ochronna',
+      'm3-sm30-zasilacz-usb-c', 'm3-sm30-zasilacz-2slot',
+      'm3-sm30-zasilacz-4slot', 'm3-sm30-zasilacz-8slot',
+      'm3-sm30-pasek-na-reke',
       // RFID — usunięte
       // Drukarki Honeywell + akcesoria
       'honeywell-pc45d', 'honeywell-pc45t',
