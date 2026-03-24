@@ -4028,7 +4028,7 @@ export const guides: Guide[] = [
 {
   slug: 'zebra-mc3400-vs-mc9400',
   title: 'Zebra MC3400 vs MC9400 — który kolektor danych wybrać?',
-  seoTitle: 'Zebra MC3400 vs MC9400 — porównanie kolektorów danych 2026 | TAKMA',
+  seoTitle: 'Zebra MC3400 vs MC9400 — porównanie kolektorów danych 2026',
   seoDescription: 'Kolektor danych Zebra MC3400 vs terminal MC9400: tabela specyfikacji, 3 vs 7 klawiatur, skanery SE55/SE58 do 30,5 m, IP67 vs IP68, chłodnia -30°C, ceny od 4 561 zł, TCO na 3 i 5 lat.',
   excerpt: 'MC3400 od 4 561 zł — rugged, IP67, 3 klawiatury. MC9400 od 7 638 zł — ultra-rugged, IP68, 7 klawiatur, chłodnia -30°C. Sprawdź porównanie specyfikacji, cen i TCO obu kolektorów Zebra.',
   category: 'porownanie',
@@ -4524,7 +4524,7 @@ export const guides: Guide[] = [
 {
   slug: 'skanery-kodow-kreskowych-zebra-przewodnik',
   title: 'Skanery kodów kreskowych Zebra — jak wybrać? Przewodnik 2026',
-  seoTitle: 'Skanery (czytniki) kodów kreskowych Zebra — przewodnik 2026 | DS2208, DS3608, DS8208 | TAKMA',
+  seoTitle: 'Skanery (czytniki) kodów kreskowych Zebra — przewodnik 2026 | DS2208, DS3608, DS8208',
   seoDescription: 'Czytniki i skanery kodów kreskowych Zebra — porównanie 2026: DS2208 od 352 zł do kasy, DS3608-XR do 32 m w magazynie, DS9308 hands-free do apteki. Tabela, ceny, TCO, drzewo decyzyjne, 18 FAQ.',
   excerpt: 'DS2208 od 352 zł do kasy, DS3608-XR do 32 m w magazynie, DS9308 hands-free do apteki. Pełne porównanie 10+ skanerów Zebra — specyfikacja, ceny, TCO i drzewo decyzyjne.',
   category: 'przewodnik',
@@ -7017,7 +7017,7 @@ export const guides: Guide[] = [
 {
   slug: 'drukarka-do-mikroetykiet-600-dpi',
   title: 'Zebra ZT610 Micro Label — druk mikroetykiet od 3 mm w 600 dpi',
-  seoTitle: 'Zebra ZT610 Micro Label — druk mikroetykiet 600 dpi | TAKMA',
+  seoTitle: 'Zebra ZT610 Micro Label — druk mikroetykiet 600 dpi',
   seoDescription: 'Jak drukować mikroetykiety od 3 mm? Porównanie 203 vs 300 vs 600 dpi, materiały, branże (PCB, farmacja, jubilerstwo). Zebra ZT610 Micro Label | TAKMA.',
   excerpt: 'Kompletny poradnik o druku mikroetykiet w rozdzielczości 600 dpi — od definicji, przez porównanie rozdzielczości 203/300/600 dpi, zastosowania branżowe (elektronika, farmacja, jubilerstwo), aż po konkretne modele drukarek i dobór materiałów eksploatacyjnych.',
   category: 'poradnik',
@@ -7505,7 +7505,7 @@ export const guides: Guide[] = [
 {
   slug: 'brother-rj-4230b-vs-zebra-zq521',
   title: 'Brother RJ-4230B vs Zebra ZQ521 — którą drukarkę mobilną 4" wybrać?',
-  seoTitle: 'Brother RJ-4230B vs Zebra ZQ521 — porównanie drukarek mobilnych 4" | TAKMA',
+  seoTitle: 'Brother RJ-4230B vs Zebra ZQ521 — porównanie drukarek mobilnych 4"',
   seoDescription: 'Porównanie Brother RJ-4230B i Zebra ZQ521 — drukarki mobilne 4 cale. Wytrzymałość, łączność WiFi/BT, bateria, RFID, zarządzanie flotą, ceny netto. Brother RJ-4230B od 2 353 zł, Zebra ZQ521 od 2 979 zł. Która lepsza do magazynu, kuriera, leśnictwa, pracy terenowej? Drukarka mobilna dla Lasów Państwowych, nadleśnictw, geodezji. RJ-4230B Brother, ZQ521 Zebra, drukarka mobilna 4" porównanie. PN: RJ4230BZ1, ZQ52-BUE0010-00, ZQ52-BUE001E-00.',
   excerpt: 'Brother RJ-4230B to kompaktowa drukarka mobilna 4" z Bluetooth od 2 353 zł. Zebra ZQ521 oferuje WiFi ac, BT 5.2, opcjonalne RFID i egzoszkielet IP65 od 2 979 zł. Porównanie kluczowych kryteriów decyzyjnych: wytrzymałość, łączność, bateria, zarządzanie flotą i koszty eksploatacji.',
   category: 'porownanie',
@@ -7744,8 +7744,8 @@ export const guides: Guide[] = [
 {
   slug: 'honeywell-granit-ultra-2105i-vs-zebra-ds3678-xr',
   title: 'Honeywell Granit Ultra 2105i vs Zebra DS3678-XR — który skaner ultra-rugged wybrać?',
-  seoTitle: 'Granit Ultra 2105i vs DS3678-XR — porównanie | TAKMA',
-  seoDescription: 'Honeywell Granit Ultra 2105i (od 2 574 zł) vs Zebra DS3678-XR (od 3 237 zł). Zasięg 10 m vs 32 m, AI decoding, Industrial Ethernet, IP65/IP68. Który lepszy? | TAKMA',
+  seoTitle: 'Granit Ultra 2105i vs DS3678-XR — porównanie',
+  seoDescription: 'Honeywell Granit Ultra 2105i (od 2 574 zł) vs Zebra DS3678-XR (od 3 237 zł). Zasięg 10 m vs 32 m, AI decoding, Industrial Ethernet, IP65/IP68. Który lepszy?',
   excerpt: 'Honeywell Granit Ultra 2105i (od 2 574 zł) — AI decoding, 100 000 skanów na baterii. Zebra DS3678-XR (od 3 237 zł) — zasięg 32 m, Industrial Ethernet, FIPS. Który skaner przemysłowy lepszy do magazynu, produkcji i automatyki?',
   category: 'porownanie' as const,
   tags: ['skanery-kodow-kreskowych', 'ultra-rugged', 'honeywell', 'zebra', 'granit-ultra-2105i', 'ds3678-xr', 'porownanie', 'magazyn', 'produkcja', 'industrial-ethernet'],
