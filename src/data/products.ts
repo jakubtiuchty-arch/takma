@@ -1861,7 +1861,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zd621-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     relatedProducts: ['zebra-zd421t', 'honeywell-pc45t', 'honeywell-pd45', 'zebra-zt111', 'zebra-zd621d'],
-    createdAt: '2023-06-10',
+    createdAt: '2026-03-24',
     sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd600-series/zd621.html',
   },
   {
@@ -1869,8 +1869,8 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd621d',
     name: 'Zebra ZD621d',
     shortDescription: 'Zebra ZD621d — najszybsza biurkowa drukarka termiczna Zebra (203 mm/s) z opcjonalnym LCD 4,3", drukiem linerless i modularnym MCS, następca ZD620d i GX420d',
-    seoTitle: 'Drukarka etykiet Zebra ZD621d — premium DT LCD linerless | od 1 943 zł',
-    seoDescription: 'Zebra ZD621d — premium DT 4" dla logistyki i retail. LCD 4,3", linerless, 300 dpi. ZD6A042-D0EF00EZ od 1 943 zł netto.',
+    seoTitle: 'Zebra ZD621d — drukarka termiczna DT, LCD, linerless | TAKMA',
+    seoDescription: 'Zebra ZD621d — drukarka termiczna DT 4" dla logistyki i retail. LCD 4,3", linerless, 300 dpi. Drukarka etykiet Zebra ZD621d, drukarka Zebra ZD621d, ZD621d Zebra, drukarka do etykiet wysyłkowych, drukarka etykiet do magazynu. Od 1 943 zł netto. PN: ZD6A042-D0EF00EZ, ZD6A042-D0EL02EZ, ZD6A142-D0EF00EZ.',
     description: `Zebra ZD621d to najlepszy wybór dla firm e-commerce i centrów logistycznych drukujących ponad 500 etykiet dziennie, które potrzebują najszybszej biurkowej drukarki termicznej z kolorowym LCD i obsługą linerless.
 
 Zebra ZD621d to flagowa biurkowa drukarka etykiet pracująca wyłącznie w technologii druku termicznego bezpośredniego (direct thermal) — nie wymaga taśmy barwiącej (ribbona), co oznacza niższy koszt eksploatacji i prostszą obsługę. Jest to najszybsza 4-calowa biurkowa drukarka termiczna Zebra, osiągająca prędkość druku do 203 mm/s (8 cali na sekundę) — o 33% szybciej niż ZD421d (152 mm/s) i dwukrotnie szybciej niż budżetowy model ZD220d (102 mm/s). Rozdzielczość 203 dpi w wersji standardowej lub 300 dpi w wersji opcjonalnej zapewnia doskonałą jakość nawet przy bardzo małych kodach kreskowych 2D (QR Code, DataMatrix) i drobnym tekście na etykietach kurierskich, wysyłkowych i produktowych.
@@ -1881,7 +1881,7 @@ Unikatową cechą ZD621d w segmencie biurkowym jest obsługa druku etykiet liner
 
 Modułowa architektura oparta na systemie MCS (Modular Connectivity Slot) pozwala na elastyczną rozbudowę łączności — od standardowej konfiguracji z portami USB 2.0, USB Host, Ethernet (LAN) i RS-232, po opcjonalny moduł podwójnego radia Bluetooth 4.1 i Wi-Fi 802.11ac, który można doinstalować fabrycznie lub w terenie bez narzędzi. Platforma Link-OS umożliwia zdalne zarządzanie całą flotą drukarek z jednego miejsca za pomocą Printer Profile Manager Enterprise — aktualizacje firmware, konfiguracja, diagnostyka i zabezpieczenia realizowane są zdalnie, w chmurze. Funkcja PrintSecure chroni dane druku przed nieautoryzowanym dostępem, a Print DNA dostarcza pakiet narzędzi programistycznych i diagnostycznych klasy enterprise.
 
-W porównaniu do termotransferowego bliźniaka ZD621t, model ZD621d eliminuje koszt taśm barwiących i upraszcza wymianę materiałów eksploatacyjnych — jedynym materiałem jest rolka etykiet termicznych. Jest to optymalny wybór wszędzie tam, gdzie wydruki nie muszą być odporne na ścieranie, wilgoć czy działanie chemikaliów: etykiety kurierskie, wysyłkowe, cenowe, gastronomiczne, magazynowe i inwentaryzacyjne. Drukarka obsługuje języki programowania ZPL II i EPL 2 z pełną kompatybilnością wsteczną, co ułatwia migrację z wcześniejszych modeli Zebra (ZD620d, GK420d, GC420d). ZD621d jest dostępna również w wersji healthcare (ZD621d-HC) z obudową odporną na środki dezynfekujące.
+W porównaniu do termotransferowego bliźniaka ZD621t, model ZD621d eliminuje koszt taśm barwiących i upraszcza wymianę materiałów eksploatacyjnych — jedynym materiałem jest rolka etykiet termicznych. Jest to optymalny wybór wszędzie tam, gdzie wydruki nie muszą być odporne na ścieranie, wilgoć czy działanie chemikaliów: etykiety kurierskie, wysyłkowe, cenowe, gastronomiczne, magazynowe i inwentaryzacyjne. Zebra ZD621d to drukarka do etykiet wysyłkowych i kurierskich (InPost, DPD, DHL, UPS, GLS, Allegro, Amazon) — prędkość 203 mm/s pozwala wydrukować etykietę w poniżej 1 sekundy. To również drukarka etykiet do magazynu — Ethernet w standardzie, ZPL II, zdalne zarządzanie flotą przez Link-OS. Drukarka obsługuje języki programowania ZPL II i EPL 2 z pełną kompatybilnością wsteczną, co ułatwia migrację z wcześniejszych modeli Zebra (ZD620d, GK420d, GC420d). ZD621d jest dostępna również w wersji healthcare (ZD621d-HC) z obudową odporną na środki dezynfekujące.
 
 Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
@@ -2138,8 +2138,20 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
         answer: 'Serwis drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę wałków, kalibrację i aktualizację firmware. Czas naprawy standardowej to 3–5 dni roboczych, dostępna jest również naprawa ekspresowa i wysyłkowa w całej Polsce.',
       },
       {
+        question: 'Ile kosztuje Zebra ZD621d?',
+        answer: 'Cena Zebra ZD621d zaczyna się od 1 943 zł netto (wariant 203 dpi, USB — ZD6A042-D0EF00EZ). Wariant z LCD 4,3" od 2 327 zł, z Wi-Fi od 2 634 zł, z gilotyną + linerless + LCD + Wi-Fi (pełna opcja) do 3 707 zł. Wersja 300 dpi od 2 327 zł. Łącznie 18 wariantów w ofercie. Ceny netto, aktualne na marzec 2026. Skontaktuj się po wycenę flotową.',
+      },
+      {
+        question: 'Jakie oprogramowanie jest potrzebne do Zebra ZD621d?',
+        answer: 'ZD621d obsługuje ZPL II i EPL 2 — języki kompatybilne z najpopularniejszymi programami do projektowania etykiet: ZebraDesigner 3 (darmowy do podstawowych zadań), BarTender (Seagull Scientific), NiceLabel, Loftware Spectrum, SAP. Do zarządzania flotą: Printer Profile Manager Enterprise (PPME) przez Link-OS. Do druku z przeglądarki: Zebra Browser Print. Sterowniki Windows, macOS i Linux dostępne na zebra.com i serwis-zebry.pl.',
+      },
+      {
+        question: 'Gdzie pobrać sterowniki do Zebra ZD621d?',
+        answer: 'Sterowniki do Zebra ZD621d (Windows, macOS, Linux) dostępne na serwis-zebry.pl/sterowniki oraz na stronie zebra.com w sekcji Support & Downloads. Sterownik Windows (Zebra Setup Utilities) zawiera kreator konfiguracji i narzędzia diagnostyczne. Po instalacji sterownika drukarka jest gotowa do pracy z każdym programem obsługującym ZPL II (ZebraDesigner, BarTender, SAP, Comarch).',
+      },
+      {
         question: 'Jakie są alternatywy dla Zebra ZD621d?',
-        answer: 'Alternatywami są: Zebra ZD621t (wersja TT), Honeywell PC45d.',
+        answer: '[Zebra ZD621t](/produkt/zebra-zd621t) (od 2 214 zł) — wersja termotransferowa z taśmą barwiącą, trwalsze wydruki. [Zebra ZD421d](/produkt/zebra-zd421d) (od 1 439 zł) — tańsza alternatywa DT bez LCD i linerless, 152 mm/s. [Honeywell PC45d](/produkt/honeywell-pc45d) (od 1 517 zł) — konkurencyjna drukarka DT 4", LCD 3,5", do 203 mm/s. [Zebra ZT111](/produkt/zebra-zt111) (od 2 268 zł) — przemysłowa drukarka entry-level dla większych wolumenów.',
       },
     ],
     comparison: {
@@ -2203,7 +2215,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zd621-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
     relatedProducts: ['zebra-zd421d', 'zebra-zd621t', 'honeywell-pc45d', 'zebra-zt111'],
-    createdAt: '2023-06-10',
+    createdAt: '2026-03-24',
     sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd600-series/zd621.html',
   },
   {
@@ -50100,11 +50112,11 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
     slug: 'm3-sl20',
     name: 'M3 SL20+',
     shortDescription: 'M3 SL20+ — terminal mobilny 5,5" z hot-swap 5000 mAh, skanerem SE4710, eSIM, 4G LTE, IP67',
-    description: `Dla kogo? M3 SL20+ to terminal mobilny (kolektor danych) z ekranem dotykowym 5,5" HD+ (1440x720) i skanerem Zebra SE4710, zaprojektowany dla firm szukających wytrzymałego urządzenia z hot-swap baterii w przystępnej cenie. Terminal mobilny dotykowy SL20+ sprawdza się w handlu detalicznym, hospitality, lekkiej logistyce i inwentaryzacji — wszędzie, gdzie kluczowe jest skanowanie kodów i obsługa aplikacji Android.
+    description: `Dla kogo? M3 SL20+ to tani terminal mobilny (kolektor danych) z ekranem dotykowym 5,5" HD+ (1440x720) i skanerem Zebra SE4710, zaprojektowany dla firm szukających wytrzymałego urządzenia z hot-swap baterii w przystępnej cenie. To jeden z najtańszych terminali enterprise z IP67 i hot-swap na polskim rynku — od 2 255 zł netto. Terminal mobilny dotykowy SL20+ sprawdza się w handlu detalicznym, hospitality, lekkiej logistyce i inwentaryzacji — wszędzie, gdzie kluczowe jest skanowanie kodów i obsługa aplikacji Android.
 
-Kluczowe przewagi M3 SL20+: ekran 5,5" z Gorilla Glass (obsługa rękawic i mokrych dłoni), bateria 5000 mAh z hot-swap (wymiana bez wyłączania), szybkie ładowanie, IP67 (pyłoszczelność + zanurzenie do 1 m / 30 min), upadki z 1,8 m wg MIL-STD-810G, 1000 tumble z 0,5 m. Kolektor danych z eSIM i 4G LTE do pracy poza zasięgiem Wi-Fi — idealne dla logistyki mobilnej i dostaw.
+Kluczowe przewagi M3 SL20+: ekran 5,5" z Gorilla Glass (obsługa rękawic i mokrych dłoni), bateria 5000 mAh z hot-swap (wymiana bez wyłączania), szybkie ładowanie, IP67 (pyłoszczelność + zanurzenie do 1 m / 30 min), upadki z 1,8 m wg MIL-STD-810G, 1000 tumble z 0,5 m. Kolektor danych z eSIM i 4G LTE do pracy poza zasięgiem Wi-Fi — idealne dla logistyki mobilnej i dostaw. Terminal do inwentaryzacji, kontroli jakości i obsługi zamówień w handlu detalicznym.
 
-Dwa warianty pamięci: 4/64 GB (SL204C-T2CHSE-HF-01) do podstawowych zadań WMS i inwentaryzacji, 8/128 GB (SL204C-T2CHSE-HF-03) do wymagających aplikacji z dużą ilością danych. Oba z Wi-Fi 5 (802.11ac), Bluetooth 5.0 BLE, NFC (ISO 14443 A/B, Mifare, HCE), kamera 13 MP + 5 MP, GPS/GLONASS/Galileo/BeiDou, dual SIM (nano + eSIM). Android 13 z aktualizacjami do Android 15, M3 Speedpack do zarządzania urządzeniami.
+Dwa warianty pamięci: 4/64 GB (SL204C-T2CHSE-HF-01) do podstawowych zadań WMS i inwentaryzacji, 8/128 GB (SL204C-T2CHSE-HF-03) do wymagających aplikacji z dużą ilością danych. Oba z Wi-Fi 5 (802.11ac), Bluetooth 5.0 BLE, NFC (ISO 14443 A/B, Mifare, HCE), kamera 13 MP + 5 MP, GPS/GLONASS/Galileo/BeiDou, dual SIM (nano + eSIM). Android 13 z aktualizacjami do Android 15, M3 Speedpack do zarządzania urządzeniami. Terminal mobilny Android do magazynu i logistyki w cenie smartfona.
 
 M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Opcjonalne kontrakty serwisowe M3 Speed Care: 3-letni (SL20-SPST-FB3) i 5-letni (SL20-SPST-FB5).`,
     categoryId: 'terminale-mobilne',
@@ -50193,6 +50205,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych. TAKMA
       { question: 'Co obejmuje kontrakt serwisowy M3 Speed Care?', answer: 'Kontrakty M3 Speed Care: 3-letni (SL20-SPST-FB3, od 1 084 zł) i 5-letni (SL20-SPST-FB5, od 1 829 zł). Obejmują: naprawy sprzętowe, wsparcie techniczne, wsparcie software, portal RMA online. Kontrakt należy zakupić w ciągu 30 dni od zakupu terminala. Akcesoria (stacje, uchwyty) nie są objęte kontraktem. Porównanie: Zebra OneCare ma 10-letnie wsparcie i advance exchange — M3 Speed Care jest tańszy.' },
       { question: 'Czy M3 SL20+ obsługuje eSIM?', answer: 'Tak — SL20+ obsługuje eSIM oprócz fizycznej karty nano SIM (dual SIM). eSIM pozwala na zdalną aktywację operatora bez fizycznej karty — idealne dla flot zarządzanych centralnie. Operatorzy eSIM w Polsce: Orange, T-Mobile, Play. To unikalna cecha w tej klasie cenowej — Zebra TC22 nie obsługuje eSIM.' },
       { question: 'Gdzie kupić M3 SL20+ w Polsce?', answer: 'TAKMA jest partnerem M3 Mobile w Polsce. Oferujemy M3 SL20+ z dostawą, doradztwo w doborze akcesoriów i konfiguracji, urządzenia demo, serwis gwarancyjny i pogwarancyjny. Kontrakty serwisowe M3 Speed Care 3-letnie i 5-letnie. Skontaktuj się — przygotujemy indywidualną wycenę.' },
+      { question: 'M3 SL20+ vs Honeywell CT32 — porównanie', answer: 'SL20+ (od 2 255 zł): 5,5" HD+, IP67, hot-swap 5000 mAh, SE4710, Android 13, eSIM, 250 g. [Honeywell CT32](/produkt/honeywell-ct32) (od 3 389 zł): 5,5" HD, IP67, hot-swap 4800 mAh, FlexRange (do 15 m), Android 14, Wi-Fi 6E, Mobility Edge. SL20+ jest o 1 134 zł tańszy, ma lepszą rozdzielczość ekranu (1440×720 vs 1480×720) i eSIM. CT32 wygrywa skanerem FlexRange z dalszym zasięgiem, Wi-Fi 6E, ekosystemem Honeywell Mobility Edge i dłuższym wsparciem. SL20+ to najlepsza opcja budżetowa, CT32 — inwestycja w dłuższe wsparcie i lepszy skaner.' },
       { question: 'Jakie są alternatywy dla M3 SL20+?', answer: '[Zebra TC22](/produkt/zebra-tc22) (od 2 417 zł) — 6" FHD+, IP68, LifeGuard 10 lat, Mobility DNA. [Honeywell CT32](/produkt/honeywell-ct32) (od 3 389 zł) — 5,5", hot-swap, FlexRange 15 m. [M3 SL20K](/produkt/m3-sl20k) (od 2 424 zł) — wersja z klawiaturą 30-klawiszową do intensywnego wpisywania danych. [M3 SM24](/produkt/m3-sm24) (od 3 123 zł) — 6" HD+, hot-swap, Wi-Fi 6E.' },
     ],
     availability: 'available' as const,
@@ -51244,7 +51257,7 @@ const m3SL20PlusAccessories: Product[] = [
     subcategoryIds: ['akcesoria-do-terminali'],
     tags: ['magazyn', 'retail', 'logistyka'] as ProductTag[],
     images: ['/images/products/SL20-1CRD-C00.png'],
-    imageDescriptions: ['Stacja dokujaca M3 Mobile do terminala SL20+ — pojedyncze gniazdo ladowania, czarna obudowa z logo M3'],
+    imageDescriptions: ['Stacja dokująca M3 Mobile do terminala SL20+ — pojedyncze gniazdo ładowania, czarna obudowa z logo M3'],
     seoTitle: 'Stacja dokująca 1-gniazdowa M3 SL20+ (SL20-1CRD-C00)',
     seoDescription: 'Stacja dokująca 1-gniazdowa do M3 SL20+. SL20-1CRD-C00, ładowanie terminala. Wymaga SL20-PWSP-2EU. Kupuj w TAKMA.',
     variants: [{ partNumber: 'SL20-1CRD-C00', name: 'Stacja dokująca 1-gniazdowa M3 SL20+', attributes: {}, availability: 'available' as const }],
@@ -51275,7 +51288,7 @@ const m3SL20PlusAccessories: Product[] = [
     subcategoryIds: ['akcesoria-do-terminali'],
     tags: ['magazyn', 'retail', 'logistyka'] as ProductTag[],
     images: ['/images/products/SL20-2CRD-CC0.png'],
-    imageDescriptions: ['Stacja dokujaca M3 Mobile do terminala SL20+ — podwojna, gniazdo ladowania terminala i slot na baterie zapasowa'],
+    imageDescriptions: ['Stacja dokująca M3 Mobile do terminala SL20+ — podwójna, gniazdo ładowania terminala i slot na baterię zapasową'],
     seoTitle: 'Stacja dokująca 2-gniazdowa USB M3 SL20+ (SL20-2CRD-CC0)',
     seoDescription: 'Stacja dokująca 2-gniazdowa z USB do M3 SL20+. SL20-2CRD-CC0, ładowanie + USB Client. Wymaga SL20-PWSP-2EU. Kupuj w TAKMA.',
     variants: [{ partNumber: 'SL20-2CRD-CC0', name: 'Stacja dokująca 2-gniazdowa USB M3 SL20+', attributes: {}, availability: 'available' as const }],
@@ -51306,7 +51319,7 @@ const m3SL20PlusAccessories: Product[] = [
     subcategoryIds: ['akcesoria-do-terminali'],
     tags: ['magazyn', 'retail', 'logistyka'] as ProductTag[],
     images: ['/images/products/SL20-2CRD-EC0.png'],
-    imageDescriptions: ['Stacja dokujaca M3 Mobile do terminala SL20+ — podwojna z Ethernet, gniazdo ladowania terminala i slot na baterie'],
+    imageDescriptions: ['Stacja dokująca M3 Mobile do terminala SL20+ — podwójna z Ethernet, gniazdo ładowania terminala i slot na baterię'],
     seoTitle: 'Stacja dokująca 2-gniazdowa Ethernet M3 SL20+ (SL20-2CRD-EC0)',
     seoDescription: 'Stacja dokująca 2-gniazdowa z Ethernet do M3 SL20+. SL20-2CRD-EC0, ładowanie + Ethernet. Wymaga SL20-PWSP-2EU. Kupuj w TAKMA.',
     variants: [{ partNumber: 'SL20-2CRD-EC0', name: 'Stacja dokująca 2-gniazdowa Ethernet M3 SL20+', attributes: {}, availability: 'available' as const }],
@@ -51337,7 +51350,7 @@ const m3SL20PlusAccessories: Product[] = [
     subcategoryIds: ['akcesoria-do-terminali'],
     tags: ['magazyn', 'logistyka'] as ProductTag[],
     images: ['/images/products/SL20-8CRD-C00.png'],
-    imageDescriptions: ['Stacja dokujaca M3 Mobile 4-stanowiskowa do terminali SL20+ — cztery gniazda ladowania w rzedzie na wspolnej podstawie'],
+    imageDescriptions: ['Stacja dokująca M3 Mobile 4-stanowiskowa do terminali SL20+ — cztery gniazda ładowania w rzędzie na wspólnej podstawie'],
     seoTitle: 'Stacja dokująca 8-gniazdowa M3 SL20+ (SL20-8CRD-C00)',
     seoDescription: 'Stacja dokująca 8-gniazdowa do M3 SL20+. SL20-8CRD-C00, ładowanie 4 terminali + 4 baterii. Wymaga UNIV-PWSP-8EU. Kupuj w TAKMA.',
     variants: [{ partNumber: 'SL20-8CRD-C00', name: 'Stacja dokująca 8-gniazdowa M3 SL20+', attributes: {}, availability: 'available' as const }],
@@ -51368,7 +51381,7 @@ const m3SL20PlusAccessories: Product[] = [
     subcategoryIds: ['akcesoria-do-terminali'],
     tags: ['magazyn', 'logistyka'] as ProductTag[],
     images: ['/images/products/SL20-8CRD-E00.png'],
-    imageDescriptions: ['Stacja dokujaca M3 Mobile 4-stanowiskowa z Ethernet do terminali SL20+ — cztery gniazda ladowania w rzedzie'],
+    imageDescriptions: ['Stacja dokująca M3 Mobile 4-stanowiskowa z Ethernet do terminali SL20+ — cztery gniazda ładowania w rzędzie'],
     seoTitle: 'Stacja dokująca 8-gniazdowa Ethernet M3 SL20+ (SL20-8CRD-E00)',
     seoDescription: 'Stacja dokująca 8-gniazdowa z Ethernet do M3 SL20+. SL20-8CRD-E00, ładowanie + Ethernet. Wymaga UNIV-PWSP-8EU. Kupuj w TAKMA.',
     variants: [{ partNumber: 'SL20-8CRD-E00', name: 'Stacja dokująca 8-gniazdowa Ethernet M3 SL20+', attributes: {}, availability: 'available' as const }],
@@ -51399,7 +51412,7 @@ const m3SL20PlusAccessories: Product[] = [
     subcategoryIds: ['akcesoria-do-terminali'],
     tags: ['magazyn', 'retail', 'logistyka'] as ProductTag[],
     images: ['/images/products/SL20-BOOT-01.png'],
-    imageDescriptions: ['Etui ochronne (boot) M3 Mobile do terminala SL20+ — gumowa nakladka ochronna, wzmocnione narozniki, otwory na ekran i przyciski'],
+    imageDescriptions: ['Etui ochronne (boot) M3 Mobile do terminala SL20+ — gumowa nakładka ochronna, wzmocnione narożniki, otwory na ekran i przyciski'],
     seoTitle: 'Boot ochronny M3 SL20+ (SL20-BOOT-01)',
     seoDescription: 'Boot ochronny do M3 SL20+. SL20-BOOT-01, gumowa obudowa z wzmocnionymi narożnikami. Kupuj w TAKMA.',
     variants: [{ partNumber: 'SL20-BOOT-01', name: 'Boot ochronny M3 SL20+', attributes: {}, availability: 'available' as const }],
