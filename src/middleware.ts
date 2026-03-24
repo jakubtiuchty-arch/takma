@@ -17,6 +17,18 @@ export async function middleware(request: NextRequest) {
   requestHeaders.set('x-next-pathname', pathname)
 
   // -------------------------------------------------------------------------
+  // 301 Redirects — zmienione URLe
+  // -------------------------------------------------------------------------
+  const redirects: Record<string, string> = {
+    '/poradnik/m3-mobile-sm24-sm25-porownanie': '/poradnik/m3-sm24-sm25-porownanie',
+    '/produkt/m3-mobile-sm24': '/produkt/m3-sm24',
+    '/produkt/m3-mobile-sm25': '/produkt/m3-sm25',
+  }
+  if (redirects[pathname]) {
+    return NextResponse.redirect(new URL(redirects[pathname], request.url), 301)
+  }
+
+  // -------------------------------------------------------------------------
   // CATCH-ALL: Stare URLe WordPress → /produkt-przeniesiony
   // Produkty bez odpowiednika na nowej stronie (Honeywell, Citizen, Brother,
   // TSC, Unitech, M3, Custom, Elo, Newland, Sewoo, akcesoria itp.)
