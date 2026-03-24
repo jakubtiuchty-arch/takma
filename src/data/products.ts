@@ -50202,7 +50202,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
       'm3-sl20k-folia-ochronna',
       'm3-sl20k-zasilacz-usb-c',
     ],
-    relatedProducts: ['zebra-mc3400', 'honeywell-ck67', 'm3-sm30'],
+    relatedProducts: ['zebra-mc2700'],
     downloads: [
       { name: 'Karta katalogowa M3 SL20K (EN)', type: 'datasheet' as const, url: '/downloads/m3-sl20k-specification.pdf', size: '483 KB' },
       { name: 'Katalog akcesoriów M3 SL20K (EN)', type: 'manual' as const, url: '/downloads/m3-sl20k-accessories-guide.pdf', size: '2,7 MB' },
