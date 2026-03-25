@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { ChevronRightIcon } from '@/components/ui/Icons'
 
 export const metadata: Metadata = {
-  title: 'TAKMA w mediach — artykuly i publikacje prasowe',
+  title: 'TAKMA w mediach — artykuły i publikacje prasowe',
   description:
-    'Publikacje i artykuly eksperckie TAKMA w mediach branzowych: trans.info, logistyka.net.pl i inne. Tematyka: TCO sprzetu AutoID, terminale mobilne, drukarki etykiet w logistyce.',
+    'Publikacje i artykuły eksperckie TAKMA w mediach branżowych: trans.info, logistyka.net.pl i inne. Tematyka: TCO sprzętu AutoID, terminale mobilne, drukarki etykiet w logistyce.',
   alternates: {
     canonical: '/prasa',
   },
@@ -15,8 +15,6 @@ interface PressItem {
   title: string
   outlet: string
   outletUrl: string
-  /** DR portalu (Domain Rating) */
-  dr?: number
   date: string
   url?: string
   type: 'article' | 'mention' | 'interview'
@@ -26,25 +24,24 @@ interface PressItem {
 
 const pressItems: PressItem[] = [
   {
-    title: 'Prawdziwy koszt sprzetu AutoID w logistyce — cena zakupu to dopiero poczatek',
+    title: 'Prawdziwy koszt sprzętu AutoID w logistyce — cena zakupu to dopiero początek',
     outlet: 'trans.info',
     outletUrl: 'https://trans.info/pl',
-    dr: 71,
     date: '2026-04',
     type: 'article',
     description:
-      'Artykul ekspercki o TCO (Total Cost of Ownership) terminali mobilnych i drukarek etykiet w logistyce. Porownanie Zebra TC22 vs MC3400, analiza kosztow glowic drukujacych, rola serwisu w obnizaniu TCO floty urzadzen.',
+      'Artykuł ekspercki o TCO (Total Cost of Ownership) terminali mobilnych i drukarek etykiet w logistyce. Porównanie Zebra TC22 vs MC3400, analiza kosztów głowic drukujących, rola serwisu w obniżaniu TCO floty urządzeń.',
     topics: ['TCO', 'terminale mobilne', 'drukarki etykiet', 'Zebra', 'serwis'],
   },
   {
-    title: 'Jak wybrac terminal mobilny do magazynu w 2026 roku — kryteria, ktore naprawde maja znaczenie',
+    title: 'Jak wybrać terminal mobilny do magazynu w 2026 roku — kryteria, które naprawdę mają znaczenie',
     outlet: 'logistyka.net.pl',
     outletUrl: 'https://logistyka.net.pl',
     date: '2026-03',
     url: 'https://logistyka.net.pl/jak-wybrac-terminal-mobilny-do-magazynu-w-2026-roku-kryteria-ktore-naprawde-maja-znaczenie/',
     type: 'article',
     description:
-      'Poradnik dotyczacy wyboru terminali mobilnych do magazynu. Omawia kluczowe kryteria: klasa ochrony IP, wytrzymalosc na upadki, systemy operacyjne, ergonomia i TCO. Perspektywa 25 lat doswiadczenia w branzy AutoID.',
+      'Poradnik dotyczący wyboru terminali mobilnych do magazynu. Omawia kluczowe kryteria: klasa ochrony IP, wytrzymałość na upadki, systemy operacyjne, ergonomia i TCO. Perspektywa 25 lat doświadczenia w branży AutoID.',
     topics: ['terminale mobilne', 'magazyn', 'WMS', 'poradnik zakupowy'],
   },
   {
@@ -55,46 +52,46 @@ const pressItems: PressItem[] = [
     url: 'https://crn.pl/artykuly/szkolenia-konkret-vs-propaganda/',
     type: 'mention',
     description:
-      'Artykul o wartosci szkolen w kanale dystrybucyjnym IT — porownanie szkolen merytorycznych i marketingowych. TAKMA wymieniona wsrod firm z branzy AutoID uczestniczacych w programach szkoleniowych partnerow.',
-    topics: ['szkolenia', 'kanal dystrybucyjny', 'IT B2B', 'Zebra'],
+      'Artykuł o wartości szkoleń w kanale dystrybucyjnym IT — porównanie szkoleń merytorycznych i marketingowych. TAKMA wymieniona wśród firm z branży AutoID uczestniczących w programach szkoleniowych partnerów.',
+    topics: ['szkolenia', 'kanał dystrybucyjny', 'IT B2B', 'Zebra'],
   },
   {
-    title: 'Rejestrator lesniczego',
-    outlet: 'Gazeta Lesna',
+    title: 'Rejestrator leśniczego',
+    outlet: 'Gazeta Leśna',
     outletUrl: 'https://www.gazetalesna.pl',
     date: '2012-05',
     url: 'https://www.gazetalesna.pl/czytaj/81/Rejestrator-le%C5%9Bniczego',
     type: 'article',
     description:
-      'Artykul autorstwa Tadeusza Tiuchty (TAKMA) o rejestratorach i kolektorach danych uzywanych przez lesniczych w Lasach Panstwowych. Praktyczny poradnik dotyczacy urzadzen do pracy w terenie lesnym.',
-    topics: ['lesnictwo', 'kolektor danych', 'Lasy Panstwowe', 'terminal mobilny'],
+      'Artykuł autorstwa Tadeusza Tiuchty (TAKMA) o rejestratorach i kolektorach danych używanych przez leśniczych w Lasach Państwowych. Praktyczny poradnik dotyczący urządzeń do pracy w terenie leśnym.',
+    topics: ['leśnictwo', 'kolektor danych', 'Lasy Państwowe', 'terminal mobilny'],
   },
   {
-    title: 'EKO-LAS 2016: Zlote medale MTP',
+    title: 'EKO-LAS 2016: Złote medale MTP',
     outlet: 'DREWNO.PL',
     outletUrl: 'https://www.drewno.pl',
     date: '2016-08',
     url: 'https://www.drewno.pl/artykuly/10610,eko-las-2016-zlote-medale-mtp.html',
     type: 'mention',
     description:
-      'Relacja z targow EKO-LAS 2016. TAKMA Tadeusz Tiuchty wymieniona jako zglaszajacy produkt nagrodzony Zlotym Medalem Miedzynarodowych Targow Poznanskich.',
-    topics: ['targi EKO-LAS', 'Zloty Medal MTP', 'lesnictwo', 'AutoID'],
+      'Relacja z targów EKO-LAS 2016. TAKMA Tadeusz Tiuchty wymieniona jako zgłaszający produkt nagrodzony Złotym Medalem Międzynarodowych Targów Poznańskich.',
+    topics: ['targi EKO-LAS', 'Złoty Medal MTP', 'leśnictwo', 'AutoID'],
   },
   {
     title: 'LAS-EXPO po raz szesnasty w Kielcach',
-    outlet: 'Lasy Panstwowe (lasy.gov.pl)',
+    outlet: 'Lasy Państwowe (lasy.gov.pl)',
     outletUrl: 'https://www.lasy.gov.pl',
     date: '2013',
     url: 'https://www.lasy.gov.pl/pl/informacje/aktualnosci/las-expo-po-raz-szesnasty-w-kielcach',
     type: 'mention',
     description:
-      'Relacja z 16. edycji targow LAS-EXPO i AGRO-TECH w Kielcach. Niemal 70 tys. odwiedzajacych, prezentacja nowoczesnych technologii w branzy lesnej — w tym rozwiazania AutoID.',
-    topics: ['targi LAS-EXPO', 'Kielce', 'lesnictwo', 'technologie lesne'],
+      'Relacja z 16. edycji targów LAS-EXPO i AGRO-TECH w Kielcach. Niemal 70 tys. odwiedzających, prezentacja nowoczesnych technologii w branży leśnej — w tym rozwiązania AutoID.',
+    topics: ['targi LAS-EXPO', 'Kielce', 'leśnictwo', 'technologie leśne'],
   },
 ]
 
 const typeLabels: Record<PressItem['type'], { label: string; color: string }> = {
-  article: { label: 'Artykul ekspercki', color: 'bg-blue-100 text-blue-700' },
+  article: { label: 'Artykuł ekspercki', color: 'bg-blue-100 text-blue-700' },
   mention: { label: 'Wzmianka', color: 'bg-gray-100 text-gray-700' },
   interview: { label: 'Wywiad', color: 'bg-purple-100 text-purple-700' },
 }
@@ -107,7 +104,7 @@ export default function PressPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-3">
           <nav className="flex items-center gap-1.5 text-sm text-gray-400">
             <Link href="/" className="hover:text-gray-600 transition-colors">
-              Strona glowna
+              Strona główna
             </Link>
             <ChevronRightIcon size={14} />
             <span className="text-gray-700 font-medium">TAKMA w mediach</span>
@@ -122,8 +119,8 @@ export default function PressPage() {
             TAKMA w mediach
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl">
-            Publikacje eksperckie, artykuly branzowe i wzmianki prasowe. Dzielimy sie wiedza
-            o sprzecie AutoID w logistyce, produkcji i handlu.
+            Publikacje eksperckie, artykuły branżowe i wzmianki prasowe. Dzielimy się wiedzą
+            o sprzęcie AutoID w logistyce, produkcji i handlu.
           </p>
         </div>
 
@@ -149,9 +146,6 @@ export default function PressPage() {
                   className="text-xs font-semibold text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   {item.outlet}
-                  {item.dr && (
-                    <span className="ml-1 text-gray-400 font-normal">(DR {item.dr})</span>
-                  )}
                 </a>
               </div>
 
@@ -190,7 +184,7 @@ export default function PressPage() {
                     rel="noopener noreferrer"
                     className="ml-auto text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors"
                   >
-                    Czytaj artykul &rarr;
+                    Czytaj artykuł &rarr;
                   </a>
                 )}
               </div>
@@ -201,11 +195,11 @@ export default function PressPage() {
         {/* CTA */}
         <div className="mt-12 sm:mt-16 bg-white rounded-xl border border-gray-200 p-6 sm:p-8 text-center">
           <h2 className="text-xl font-bold text-gray-900 mb-2">
-            Kontakt dla mediow
+            Kontakt dla mediów
           </h2>
           <p className="text-sm text-gray-600 mb-4 max-w-lg mx-auto">
-            Chcesz porozmawiaz o trendach w AutoID, zapytac o komentarz ekspercki lub
-            umowic wywiad? Skontaktuj sie z nami.
+            Chcesz porozmawiać o trendach w AutoID, zapytać o komentarz ekspercki lub
+            umówić wywiad? Skontaktuj się z nami.
           </p>
           <a
             href="mailto:takma@takma.com.pl?subject=Kontakt%20prasowy"
