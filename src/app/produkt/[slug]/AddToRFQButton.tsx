@@ -151,6 +151,19 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
     return false
   })()
 
+  // Cena: live z API lub statyczna (product-level lub najtańszy wariant)
+  const price = (() => {
+    for (const pn of partNumbers) {
+      const stock = stockData.get(pn)
+      if (stock?.found && stock?.price) return stock.price
+    }
+    if (product.priceFrom) return product.priceFrom
+    const variantPrices = product.variants
+      ?.map(v => v.priceFrom)
+      .filter((p): p is number => p != null && p > 0)
+    return variantPrices && variantPrices.length > 0 ? Math.min(...variantPrices) : undefined
+  })()
+
   const handleAdd = () => {
     const pn = product.variants?.[0]?.partNumber
       || product.specifications.find(s => s.name === 'Part Number')?.value
@@ -160,19 +173,27 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
       slug: product.slug,
       image: product.images[0],
       partNumber: pn,
+      priceNetto: price,
+      categoryId: product.categoryId,
     })
     trackAddToCart({
       item_id: product.id,
       item_name: product.name,
       item_category: product.categoryId,
-      price: product.priceFrom,
+      price: price,
       quantity: 1,
     })
   }
 
+  // Niedostępny → "Powiadom o dostępności"
   if (isUnavailable) {
     const pn = partNumbers[0] || product.id
     return <NotifyForm partNumber={pn} productName={product.name} compact={compact} />
+  }
+
+  // Brak ceny → nie pokazuj koszyka, tylko "Zapytaj o produkt"
+  if (!stockLoading && !price) {
+    return null // Formularz RFQ jest renderowany osobno na stronie produktu
   }
 
   const isZebra = product.manufacturerId === 'zebra'

@@ -286,6 +286,8 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
       <td className="px-3 py-3.5 text-center whitespace-nowrap">
         {isUnavailable ? (
           <NotifyButton partNumber={variant.partNumber} productName={`${productName} (${variant.partNumber})`} />
+        ) : !cartPrice ? (
+          <span className="text-xs text-gray-400">Zapytaj</span>
         ) : (
           <Button
             size="sm"

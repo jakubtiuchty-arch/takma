@@ -192,7 +192,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
             >
               <BellIcon size={16} />
             </Link>
-          ) : (
+          ) : displayPrice ? (
             <button
               onClick={handleAddToCart}
               className={`p-1.5 rounded-lg transition-colors ${
@@ -203,7 +203,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
             >
               {inRFQ ? <CheckIcon size={16} /> : <PlusIcon size={16} />}
             </button>
-          )}
+          ) : null}
         </div>
       </article>
     )
@@ -274,6 +274,13 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
                 >
                   <BellIcon size={14} />
                   Powiadom
+                </Link>
+              ) : !displayPrice ? (
+                <Link
+                  href={`/produkt/${product.slug}`}
+                  className="flex-1 flex items-center justify-center gap-1 sm:gap-1.5 text-xs sm:text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 transition-colors"
+                >
+                  Zobacz więcej
                 </Link>
               ) : (
                 <button
