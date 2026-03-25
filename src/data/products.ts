@@ -49756,6 +49756,7 @@ const m3MobileComputers: Product[] = [
     id: 'm3-sm24',
     slug: 'm3-sm24',
     name: 'M3 SM24',
+    priceFrom: 3123,
     shortDescription: 'M3 SM24 — terminal mobilny 6" z hot-swap baterii, 8 GB RAM, Android 16, Wi-Fi 6E, IP67',
     description: `Dla kogo? M3 SM24 to terminal mobilny (kolektor danych) klasy enterprise z ekranem 6" HD+ i procesorem Qualcomm SM6225 (2,4 GHz, 8 rdzeni), zaprojektowany dla firm szukających niezawodnego urządzenia z hot-swap baterii w przystępnej cenie. SM24 sprawdza się w magazynach, centrach logistycznych, handlu detalicznym i kompletacji zamówień e-commerce.
 
@@ -50117,6 +50118,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
     id: 'm3-sm30',
     slug: 'm3-sm30',
     name: 'M3 SM30',
+    priceFrom: 3610,
     shortDescription: 'M3 SM30 — terminal mobilny 5G z AI 12 TOPS, Snapdragon QCM6490, 5,7" FHD, IP68, hot-swap',
     description: `Dla kogo? M3 SM30 to flagowy terminal mobilny (kolektor danych) z procesorem Qualcomm Dragonwing QCM6490 (2,7 GHz, 8 rdzeni) i akceleratorem AI 12 TOPS (Hexagon NPU), zaprojektowany dla firm wdrażających sztuczną inteligencję w procesach magazynowych, produkcyjnych i logistycznych. Ten terminal przemysłowy Android obsługuje rozpoznawanie obrazów, kontrolę jakości i detekcję defektów bezpośrednio na urządzeniu — bez połączenia z chmurą. Idealny terminal magazynowy do integracji z systemami WMS, SAP i ERP.
 
@@ -50333,6 +50335,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
     id: 'm3-sl20',
     slug: 'm3-sl20',
     name: 'M3 SL20+',
+    priceFrom: 2255,
     shortDescription: 'M3 SL20 (SL20+) — terminal mobilny 5,5" z hot-swap 5000 mAh, skanerem SE4710, eSIM, IP67',
     description: `Dla kogo? M3 SL20, znany też jako M3 SL20+ (SL20 Plus), to tani terminal mobilny (kolektor danych) z ekranem dotykowym 5,5" HD+ (1440x720) i skanerem Zebra SE4710, zaprojektowany dla firm szukających wytrzymałego urządzenia z hot-swap baterii w przystępnej cenie. To jeden z najtańszych terminali enterprise z IP67 i hot-swap na polskim rynku — od 2 255 zł netto. Terminal M3 SL20 sprawdza się w handlu detalicznym, hospitality, lekkiej logistyce i inwentaryzacji — wszędzie, gdzie kluczowe jest skanowanie kodów i obsługa aplikacji Android.
 
@@ -50537,6 +50540,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych. TAKMA
     id: 'm3-sl20k',
     slug: 'm3-sl20k',
     name: 'M3 SL20K',
+    priceFrom: 2424,
     shortDescription: 'M3 SL20K — terminal mobilny z klawiaturą 30-klawiszową, skanerem 2D, hot-swap 5200 mAh, IP65',
     description: `Dla kogo? M3 SL20K to terminal magazynowy z klawiaturą fizyczną (kolektor danych z klawiaturą 30-klawiszową) i ekranem 4" WVGA, zaprojektowany dla firm wymagających szybkiego wprowadzania danych liczbowych — inwentaryzacja, kompletacja zamówień, zarządzanie magazynem WMS. Ten terminal do inwentaryzacji z podświetleniem LED klawiatury umożliwia wygodną pracę w ciemnych pomieszczeniach (chłodnie, magazyny nocne).
 
@@ -52100,6 +52104,7 @@ const m3UL30: Product[] = [
     id: 'm3-ul30',
     slug: 'm3-ul30',
     name: 'M3 UL30',
+    priceFrom: 5626,
     shortDescription: 'M3 UL30 — terminal gun z klawiaturą 28/35/53 kl., 5" FHD, hot-swap 6700 mAh, IP67, SE4770/SE5800',
     description: `Dla kogo? M3 UL30 to wytrzymały terminal magazynowy gun (kolektor danych do magazynu) z fizyczną klawiaturą i ekranem 5" Full HD (1920x1080), zaprojektowany do intensywnej pracy w magazynach, centrach dystrybucji, produkcji i chłodniach. Terminal pistoletowy M3 UL30 z klawiaturą fizyczną (28, 35 lub 53 klawisze) sprawdza się wszędzie, gdzie operatorzy muszą szybko wpisywać ilości, kody lokalizacji lub identyfikatory partii — bez konieczności używania klawiatury ekranowej. Terminal do picking WMS z hot-swap baterii 6700 mAh i skanerem dalekiego zasięgu.
 
