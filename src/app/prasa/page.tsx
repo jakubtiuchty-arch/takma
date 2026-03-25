@@ -36,18 +36,61 @@ const pressItems: PressItem[] = [
       'Artykul ekspercki o TCO (Total Cost of Ownership) terminali mobilnych i drukarek etykiet w logistyce. Porownanie Zebra TC22 vs MC3400, analiza kosztow glowic drukujacych, rola serwisu w obnizaniu TCO floty urzadzen.',
     topics: ['TCO', 'terminale mobilne', 'drukarki etykiet', 'Zebra', 'serwis'],
   },
-  // Kolejne artykuly dodawac tutaj w formacie:
-  // {
-  //   title: 'Tytul artykulu',
-  //   outlet: 'Nazwa portalu',
-  //   outletUrl: 'https://...',
-  //   dr: 50,
-  //   date: '2026-05',
-  //   url: 'https://pelny-link-do-artykulu',
-  //   type: 'article',
-  //   description: 'Krotki opis artykulu...',
-  //   topics: ['temat1', 'temat2'],
-  // },
+  {
+    title: 'Jak wybrac terminal mobilny do magazynu w 2026 roku — kryteria, ktore naprawde maja znaczenie',
+    outlet: 'logistyka.net.pl',
+    outletUrl: 'https://logistyka.net.pl',
+    date: '2026-03',
+    url: 'https://logistyka.net.pl/jak-wybrac-terminal-mobilny-do-magazynu-w-2026-roku-kryteria-ktore-naprawde-maja-znaczenie/',
+    type: 'article',
+    description:
+      'Poradnik dotyczacy wyboru terminali mobilnych do magazynu. Omawia kluczowe kryteria: klasa ochrony IP, wytrzymalosc na upadki, systemy operacyjne, ergonomia i TCO. Perspektywa 25 lat doswiadczenia w branzy AutoID.',
+    topics: ['terminale mobilne', 'magazyn', 'WMS', 'poradnik zakupowy'],
+  },
+  {
+    title: 'Szkolenia: konkret vs. propaganda',
+    outlet: 'CRN Polska',
+    outletUrl: 'https://crn.pl',
+    date: '2018-04',
+    url: 'https://crn.pl/artykuly/szkolenia-konkret-vs-propaganda/',
+    type: 'mention',
+    description:
+      'Artykul o wartosci szkolen w kanale dystrybucyjnym IT — porownanie szkolen merytorycznych i marketingowych. TAKMA wymieniona wsrod firm z branzy AutoID uczestniczacych w programach szkoleniowych partnerow.',
+    topics: ['szkolenia', 'kanal dystrybucyjny', 'IT B2B', 'Zebra'],
+  },
+  {
+    title: 'Rejestrator lesniczego',
+    outlet: 'Gazeta Lesna',
+    outletUrl: 'https://www.gazetalesna.pl',
+    date: '2012-05',
+    url: 'https://www.gazetalesna.pl/czytaj/81/Rejestrator-le%C5%9Bniczego',
+    type: 'article',
+    description:
+      'Artykul autorstwa Tadeusza Tiuchty (TAKMA) o rejestratorach i kolektorach danych uzywanych przez lesniczych w Lasach Panstwowych. Praktyczny poradnik dotyczacy urzadzen do pracy w terenie lesnym.',
+    topics: ['lesnictwo', 'kolektor danych', 'Lasy Panstwowe', 'terminal mobilny'],
+  },
+  {
+    title: 'EKO-LAS 2016: Zlote medale MTP',
+    outlet: 'DREWNO.PL',
+    outletUrl: 'https://www.drewno.pl',
+    date: '2016-08',
+    url: 'https://www.drewno.pl/artykuly/10610,eko-las-2016-zlote-medale-mtp.html',
+    type: 'mention',
+    description:
+      'Relacja z targow EKO-LAS 2016. TAKMA Tadeusz Tiuchty wymieniona jako zglaszajacy produkt nagrodzony Zlotym Medalem Miedzynarodowych Targow Poznanskich.',
+    topics: ['targi EKO-LAS', 'Zloty Medal MTP', 'lesnictwo', 'AutoID'],
+  },
+  {
+    title: 'LAS-EXPO po raz szesnasty w Kielcach',
+    outlet: 'Lasy Panstwowe (lasy.gov.pl)',
+    outletUrl: 'https://www.lasy.gov.pl',
+    date: '2013',
+    url: 'https://www.lasy.gov.pl/pl/informacje/aktualnosci/las-expo-po-raz-szesnasty-w-kielcach',
+    type: 'mention',
+    description:
+      'Relacja z 16. edycji targow LAS-EXPO i AGRO-TECH w Kielcach. Niemal 70 tys. odwiedzajacych, prezentacja nowoczesnych technologii w branzy lesnej — w tym rozwiazania AutoID.',
+    topics: ['targi LAS-EXPO', 'Kielce', 'lesnictwo', 'technologie lesne'],
+  },
 ]
 
 const typeLabels: Record<PressItem['type'], { label: string; color: string }> = {
