@@ -216,44 +216,40 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/5">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-6">
-            <div className="relative flex flex-col md:flex-row items-center justify-between gap-8 md:gap-6">
-              {/* Lewa: Copyright */}
-              <div className="md:flex-1 text-center md:text-left order-2 md:order-none">
-                <p className="text-xs text-gray-500">
-                  © {new Date().getFullYear()} <span className="text-gray-400">TAKMA</span> <span className="mx-1 opacity-50">|</span> ul. Poświęcka 1a, 51-128 Wrocław <span className="mx-1 opacity-50">|</span> NIP: 915-100-43-77
-                </p>
-              </div>
-
-              {/* Środek: Linki prawne */}
-              <div className="flex items-center justify-center gap-6 sm:gap-8 text-xs text-gray-500 md:absolute md:left-1/2 md:-translate-x-1/2 order-3 md:order-none border-t md:border-t-0 border-white/5 pt-6 md:pt-0 w-full md:w-auto">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+            <div className="flex flex-col items-center gap-5">
+              {/* Linki prawne */}
+              <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-gray-500">
                 <Link href="/regulamin" className="hover:text-white transition-colors">Regulamin</Link>
                 <Link href="/polityka-prywatnosci" className="hover:text-white transition-colors">Polityka prywatnosci</Link>
                 <Link href="/prasa" className="hover:text-white transition-colors">TAKMA w mediach</Link>
               </div>
 
-              {/* Prawa: qba.dev */}
-              <div className="md:flex-1 flex justify-center md:justify-end order-1 md:order-none">
-                <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/[0.03] border border-white/10 backdrop-blur-sm hover:border-white/20 transition-colors">
-                  <span className="text-[10px] text-gray-600 font-medium tracking-tight">Crafted with</span>
-                  <span className="text-red-400/80 animate-pulse text-[10px]">&#9829;</span>
-                  <span className="text-[10px] text-gray-600 font-medium tracking-tight">by</span>
-                  <a
-                    href="https://www.qba.dev/"
-                    target="_blank"
-                    rel="noopener nofollow sponsored"
-                    className="group relative inline-flex items-center ml-0.5"
-                  >
-                    <span className="absolute inset-0 bg-blue-500/20 rounded-md blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    <span className="relative flex items-center gap-0.5 px-1.5 py-0.5 bg-slate-900 rounded border border-white/10 group-hover:border-blue-400/50 transition-all duration-300">
-                      <span className="text-blue-400/80 font-mono text-[9px]">&lt;</span>
-                      <span className="text-[10px] font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                        qba.dev
-                      </span>
-                      <span className="text-blue-400/80 font-mono text-[9px]">/&gt;</span>
+              {/* Copyright */}
+              <p className="text-xs text-gray-500 text-center">
+                © {new Date().getFullYear()} <span className="text-gray-400">TAKMA</span> <span className="mx-1 opacity-50">|</span> ul. Poswiecka 1a, 51-128 Wroclaw <span className="mx-1 opacity-50">|</span> NIP: 915-100-43-77
+              </p>
+
+              {/* qba.dev */}
+              <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/[0.03] border border-white/10 backdrop-blur-sm hover:border-white/20 transition-colors">
+                <span className="text-[10px] text-gray-600 font-medium tracking-tight">Crafted with</span>
+                <span className="text-red-400/80 animate-pulse text-[10px]">&#9829;</span>
+                <span className="text-[10px] text-gray-600 font-medium tracking-tight">by</span>
+                <a
+                  href="https://www.qba.dev/"
+                  target="_blank"
+                  rel="noopener nofollow sponsored"
+                  className="group relative inline-flex items-center ml-0.5"
+                >
+                  <span className="absolute inset-0 bg-blue-500/20 rounded-md blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <span className="relative flex items-center gap-0.5 px-1.5 py-0.5 bg-slate-900 rounded border border-white/10 group-hover:border-blue-400/50 transition-all duration-300">
+                    <span className="text-blue-400/80 font-mono text-[9px]">&lt;</span>
+                    <span className="text-[10px] font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                      qba.dev
                     </span>
-                  </a>
-                </div>
+                    <span className="text-blue-400/80 font-mono text-[9px]">/&gt;</span>
+                  </span>
+                </a>
               </div>
             </div>
           </div>
