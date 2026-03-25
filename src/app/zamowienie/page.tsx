@@ -337,6 +337,14 @@ export default function CheckoutPage() {
         note: item.note || undefined,
       }))
 
+      // Walidacja: żaden produkt nie może mieć ceny 0 zł
+      const zeroPriceItem = checkoutItems.find(item => !item.priceNetto || item.priceNetto <= 0)
+      if (zeroPriceItem) {
+        setSubmitError(`Produkt "${zeroPriceItem.productName}" nie ma ustalonej ceny. Skontaktuj się z nami przez formularz "Zapytaj o produkt" aby otrzymać wycenę.`)
+        setIsSubmitting(false)
+        return
+      }
+
       const customerData = {
         email: formData.email,
         firstName: formData.firstName,

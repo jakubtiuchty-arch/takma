@@ -51626,7 +51626,7 @@ const m3SL20PlusAccessories: Product[] = [
     imageDescriptions: ['Stacja dokująca M3 Mobile do terminala SL20+ — pojedyncze gniazdo ładowania, czarna obudowa z logo M3'],
     seoTitle: 'Stacja dokująca 1-gniazdowa M3 SL20+ (SL20-1CRD-C00)',
     seoDescription: 'Stacja dokująca 1-gniazdowa do M3 SL20+. SL20-1CRD-C00, ładowanie terminala. Wymaga SL20-PWSP-2EU. Kupuj w TAKMA.',
-    variants: [{ partNumber: 'SL20-1CRD-C00', name: 'Stacja dokująca 1-gniazdowa M3 SL20+', attributes: {}, availability: 'available' as const }],
+    variants: [{ partNumber: 'SL20-1CRD-C00', name: 'Stacja dokująca 1-gniazdowa M3 SL20+', attributes: {}, priceFrom: 233, availability: 'available' as const }],
     specifications: [
       { name: 'Gniazda', value: '1 terminal' },
       { name: 'Zasilanie', value: '5VDC / 3A (zasilacz SL20-PWSP-2EU wymagany)' },
@@ -51657,7 +51657,7 @@ const m3SL20PlusAccessories: Product[] = [
     imageDescriptions: ['Stacja dokująca M3 Mobile do terminala SL20+ — podwójna, gniazdo ładowania terminala i slot na baterię zapasową'],
     seoTitle: 'Stacja dokująca 2-gniazdowa USB M3 SL20+ (SL20-2CRD-CC0)',
     seoDescription: 'Stacja dokująca 2-gniazdowa z USB do M3 SL20+. SL20-2CRD-CC0, ładowanie + USB Client. Wymaga SL20-PWSP-2EU. Kupuj w TAKMA.',
-    variants: [{ partNumber: 'SL20-2CRD-CC0', name: 'Stacja dokująca 2-gniazdowa USB M3 SL20+', attributes: {}, availability: 'available' as const }],
+    variants: [{ partNumber: 'SL20-2CRD-CC0', name: 'Stacja dokująca 2-gniazdowa USB M3 SL20+', attributes: {}, priceFrom: 391, availability: 'available' as const }],
     specifications: [
       { name: 'Gniazda', value: '1 terminal + 1 bateria zapasowa' },
       { name: 'Zasilanie', value: '5VDC / 3A (zasilacz SL20-PWSP-2EU wymagany)' },
@@ -51781,7 +51781,7 @@ const m3SL20PlusAccessories: Product[] = [
     imageDescriptions: ['Etui ochronne (boot) M3 Mobile do terminala SL20+ — gumowa nakładka ochronna, wzmocnione narożniki, otwory na ekran i przyciski'],
     seoTitle: 'Boot ochronny M3 SL20+ (SL20-BOOT-01)',
     seoDescription: 'Boot ochronny do M3 SL20+. SL20-BOOT-01, gumowa obudowa z wzmocnionymi narożnikami. Kupuj w TAKMA.',
-    variants: [{ partNumber: 'SL20-BOOT-01', name: 'Boot ochronny M3 SL20+', attributes: {}, availability: 'available' as const }],
+    variants: [{ partNumber: 'SL20-BOOT-01', name: 'Boot ochronny M3 SL20+', attributes: {}, priceFrom: 109, availability: 'available' as const }],
     specifications: [
       { name: 'Materiał', value: 'Guma z wzmocnionymi narożnikami' },
       { name: 'Kompatybilność', value: 'M3 SL20, SL20+' },

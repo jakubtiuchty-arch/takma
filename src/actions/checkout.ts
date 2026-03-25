@@ -62,13 +62,15 @@ export async function createCheckoutSession(
     customerNotes: notes,
   })
 
-  // 2. Build Stripe line items
+  // 2. Build Stripe line items — ceny BRUTTO (netto + 23% VAT)
+  // Stripe pobiera kwotę brutto od klienta. VAT rozliczamy po naszej stronie (faktura).
+  const VAT_RATE = 1.23
+
   const lineItems: Array<{
     price_data: {
       currency: string
       product_data: { name: string; metadata?: Record<string, string>; images?: string[] }
       unit_amount: number
-      tax_behavior: 'exclusive'
     }
     quantity: number
   }> = items.map(item => ({
@@ -79,20 +81,18 @@ export async function createCheckoutSession(
         metadata: { partNumber: item.partNumber, productId: item.productId },
         ...(item.image && { images: [`https://www.takma.com.pl${item.image}`] }),
       },
-      unit_amount: toStripeAmount(item.priceNetto),
-      tax_behavior: 'exclusive' as const,
+      unit_amount: toStripeAmount(item.priceNetto * VAT_RATE),
     },
     quantity: item.quantity,
   }))
 
-  // Add shipping line item
+  // Add shipping line item (brutto)
   if (shippingNetto > 0) {
     lineItems.push({
       price_data: {
         currency: 'pln',
         product_data: { name: 'Dostawa kurierska' },
-        unit_amount: toStripeAmount(shippingNetto),
-        tax_behavior: 'exclusive' as const,
+        unit_amount: toStripeAmount(shippingNetto * VAT_RATE),
       },
       quantity: 1,
     })
