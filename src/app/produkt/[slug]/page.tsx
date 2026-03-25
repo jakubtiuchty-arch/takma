@@ -429,14 +429,16 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <div className="min-w-0 lg:sticky lg:top-24 lg:self-start lg:pt-10">
             {/* Title + Manufacturer logo */}
             <div className="flex items-start justify-between gap-4">
-              <h1 className="text-2xl xs:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                {product.name}
+              <div className="mb-4">
+                <h1 className="text-2xl xs:text-3xl lg:text-4xl font-bold text-gray-900">
+                  {product.name}
+                </h1>
                 {(primarySubcategory || category) && (
-                  <span className="block text-sm xs:text-base lg:text-lg font-medium text-gray-500 mt-1">
+                  <p className="text-sm xs:text-base lg:text-lg font-medium text-gray-500 mt-1">
                     {primarySubcategory?.name || category?.name}
-                  </span>
+                  </p>
                 )}
-              </h1>
+              </div>
               {manufacturer?.logo && (
                 <Link
                   href={`/${manufacturer.slug}`}
