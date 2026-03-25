@@ -26,12 +26,12 @@ export default function SmartPrice({ product }: SmartPriceProps) {
   const allVariants = useMemo(() => {
     if (product.variants && product.variants.length > 0) {
       return product.variants
-        .map(v => ({ partNumber: v.partNumber, price: v.priceFrom ?? null, name: v.name }))
+        .map(v => ({ partNumber: v.partNumber, price: v.priceFrom ?? null, name: v.name, staticAvailability: v.availability }))
         .sort((a, b) => (a.price ?? Infinity) - (b.price ?? Infinity))
     }
     const pnSpec = product.specifications.find(s => s.name === 'Part Number')
     if (pnSpec) {
-      return [{ partNumber: pnSpec.value, price: product.priceFrom ?? null, name: '' }]
+      return [{ partNumber: pnSpec.value, price: product.priceFrom ?? null, name: '', staticAvailability: product.availability ?? 'available' as const }]
     }
     return []
   }, [product])
@@ -55,7 +55,11 @@ export default function SmartPrice({ product }: SmartPriceProps) {
     const withLivePrices = allVariants.map(v => {
       const s = stockData.get(v.partNumber)
       const livePrice = (s?.found && s?.price) ? s.price : null
-      return { ...v, effectivePrice: livePrice ?? v.price, hasStock: (s?.found && s.totalStock > 0) || false }
+      // hasStock: API potwierdza stock LUB API nie zna PNu ale statycznie jest "available"
+      const hasStock = s?.found
+        ? s.totalStock > 0
+        : v.staticAvailability === 'available'
+      return { ...v, effectivePrice: livePrice ?? v.price, hasStock }
     }).sort((a, b) => (a.effectivePrice ?? Infinity) - (b.effectivePrice ?? Infinity))
 
     // Sprawdź czy API w ogóle zwróciło dane
