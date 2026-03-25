@@ -216,21 +216,21 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/5">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
-            <div className="flex flex-col items-center gap-5">
-              {/* Linki prawne */}
-              <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-gray-500">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+              {/* Lewa: Copyright */}
+              <p className="text-xs text-gray-500 whitespace-nowrap">
+                © {new Date().getFullYear()} <span className="text-gray-400">TAKMA</span> <span className="mx-1 opacity-50">|</span> NIP: 915-100-43-77
+              </p>
+
+              {/* Srodek: Linki */}
+              <div className="flex items-center gap-5 text-xs text-gray-500">
                 <Link href="/regulamin" className="hover:text-white transition-colors">Regulamin</Link>
                 <Link href="/polityka-prywatnosci" className="hover:text-white transition-colors">Polityka prywatnosci</Link>
                 <Link href="/prasa" className="hover:text-white transition-colors">TAKMA w mediach</Link>
               </div>
 
-              {/* Copyright */}
-              <p className="text-xs text-gray-500 text-center">
-                © {new Date().getFullYear()} <span className="text-gray-400">TAKMA</span> <span className="mx-1 opacity-50">|</span> ul. Poswiecka 1a, 51-128 Wroclaw <span className="mx-1 opacity-50">|</span> NIP: 915-100-43-77
-              </p>
-
-              {/* qba.dev */}
+              {/* Prawa: qba.dev */}
               <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/[0.03] border border-white/10 backdrop-blur-sm hover:border-white/20 transition-colors">
                 <span className="text-[10px] text-gray-600 font-medium tracking-tight">Crafted with</span>
                 <span className="text-red-400/80 animate-pulse text-[10px]">&#9829;</span>
