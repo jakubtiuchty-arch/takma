@@ -31,6 +31,7 @@ const footerLinks = {
     { name: 'Serwis urządzeń', href: '/serwis' },
     { name: 'Kontakt', href: '/kontakt' },
     { name: 'Poradniki', href: '/poradnik' },
+    { name: 'TAKMA w mediach', href: '/prasa' },
     { name: 'Regulamin sklepu', href: '/regulamin' },
     { name: 'Polityka prywatności', href: '/polityka-prywatnosci' },
     { name: 'Mapa strony', href: '/mapa-strony' },
@@ -227,7 +228,8 @@ export default function Footer() {
               {/* Środek: Linki prawne */}
               <div className="flex items-center justify-center gap-6 sm:gap-8 text-xs text-gray-500 md:absolute md:left-1/2 md:-translate-x-1/2 order-3 md:order-none border-t md:border-t-0 border-white/5 pt-6 md:pt-0 w-full md:w-auto">
                 <Link href="/regulamin" className="hover:text-white transition-colors">Regulamin</Link>
-                <Link href="/polityka-prywatnosci" className="hover:text-white transition-colors">Polityka prywatności</Link>
+                <Link href="/polityka-prywatnosci" className="hover:text-white transition-colors">Polityka prywatnosci</Link>
+                <Link href="/prasa" className="hover:text-white transition-colors">TAKMA w mediach</Link>
               </div>
 
               {/* Prawa: qba.dev */}
