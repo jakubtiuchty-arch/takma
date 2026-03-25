@@ -50,16 +50,26 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
     return true
   })()
 
+  // Statyczna cena: product.priceFrom lub najtańszy wariant
+  const staticPrice = useMemo(() => {
+    if (product.priceFrom) return product.priceFrom
+    const variantPrices = product.variants
+      ?.map(v => v.priceFrom)
+      .filter((p): p is number => p != null && p > 0)
+      .sort((a, b) => a - b)
+    return variantPrices?.[0]
+  }, [product.priceFrom, product.variants])
+
   // Live cena z API — szukaj najtańszej dostępnej ceny z Ingram
   const displayPrice = useMemo(() => {
-    if (stockLoading || !anyFound) return product.priceFrom
+    if (stockLoading || !anyFound) return staticPrice
     const livePrices = partNumbers
       .map(pn => stockData.get(pn))
       .filter((s): s is NonNullable<typeof s> => !!s?.found && !!s?.price)
       .map(s => s.price!)
       .sort((a, b) => a - b)
-    return livePrices[0] ?? product.priceFrom
-  }, [stockLoading, anyFound, partNumbers, stockData, product.priceFrom])
+    return livePrices[0] ?? staticPrice
+  }, [stockLoading, anyFound, partNumbers, stockData, staticPrice])
 
   const liveAvailability = !anyFound
     ? product.availability
