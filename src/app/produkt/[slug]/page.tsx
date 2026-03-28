@@ -21,10 +21,11 @@ import AskAboutProductButton from './AskAboutProductButton'
 import ServicePlansBox from './ServicePlansBox'
 import RelatedProducts from './RelatedProducts'
 import VariantsTable from './VariantsTable'
-import StockInfo, { LiveAvailabilityBadge } from './StockInfo'
+import StockInfo from './StockInfo'
 import SmartPrice from './SmartPrice'
 import StickyPrice from './StickyPrice'
 import { SmartPriceProvider } from './SmartPriceContext'
+import ContextAvailabilityBadge from './ContextAvailabilityBadge'
 import ComparisonTable from './ComparisonTable'
 import SpecsAccordion from './SpecsAccordion'
 import ViewItemTracker from './ViewItemTracker'
@@ -455,19 +456,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
               )}
             </div>
 
-            {/* Availability — live z Ingram API */}
+            {/* Availability — z SmartPriceContext (jedno źródło danych) */}
             <div className="mb-6">
-              <LiveAvailabilityBadge
-                staticAvailability={product.availability}
-                partNumbers={
-                  product.variants && product.variants.length > 0
-                    ? product.variants.map(v => v.partNumber)
-                    : (() => {
-                        const pnSpec = product.specifications.find(s => s.name === 'Part Number')
-                        return pnSpec ? [pnSpec.value] : []
-                      })()
-                }
-              />
+              <ContextAvailabilityBadge staticAvailability={product.availability} />
             </div>
 
             {/* Variants link */}

@@ -64,7 +64,9 @@ export function SmartPriceProvider({ product, children }: { product: Product; ch
 
     Promise.all(
       chunks.map(chunk =>
-        fetch(`/api/stock?pn=${chunk.join(',')}`)
+        fetch(`/api/stock?pn=${chunk.join(',')}`, {
+          signal: AbortSignal.timeout(15000), // 15s max — nie wis w nieskonczonosc
+        })
           .then(r => r.ok ? r.json() : { results: [] })
           .catch(() => ({ results: [] }))
       )
