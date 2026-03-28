@@ -4,7 +4,6 @@ import { useState, useRef, useEffect, useCallback } from 'react'
 import { createPortal } from 'react-dom'
 import { Product } from '@/data/products'
 import { useSmartPrice } from './SmartPriceContext'
-import StockInfo from './StockInfo'
 
 interface SmartPriceProps {
   product: Product
@@ -17,7 +16,7 @@ const DEVICE_CATEGORIES = new Set([
 ])
 
 export default function SmartPrice({ product }: SmartPriceProps) {
-  const { displayedPn, price, loading, variantName } = useSmartPrice()
+  const { displayedPn, price, loading, variantName, stockData } = useSmartPrice()
 
   // Brak wariantów i brak PNa → "Cena na zapytanie"
   if (!displayedPn && !product.priceFrom) {
@@ -28,7 +27,9 @@ export default function SmartPrice({ product }: SmartPriceProps) {
     )
   }
 
-  const displayedPnArr = displayedPn ? [displayedPn] : []
+  // Stock info z kontekstu — zero osobnych fetchów
+  const stock = displayedPn ? stockData.get(displayedPn) : undefined
+  const hasStockData = !loading && stock?.found
 
   return (
     <div className="bg-gray-100 shadow-sm rounded-xl p-4 sm:p-6 mb-6">
@@ -56,7 +57,50 @@ export default function SmartPrice({ product }: SmartPriceProps) {
           <>{(price * 1.23).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł brutto</>
         )}
       </p>
-      {displayedPnArr.length > 0 && <StockInfo partNumbers={displayedPnArr} />}
+
+      {/* Stany magazynowe — bezpośrednio z kontekstu, bez osobnego fetcha */}
+      {loading && displayedPn && (
+        <div className="mt-3 flex items-center gap-2 text-sm text-gray-400 animate-pulse">
+          <div className="w-2 h-2 bg-gray-300 rounded-full" />
+          Sprawdzanie stanów magazynowych...
+        </div>
+      )}
+      {hasStockData && (
+        <div className="mt-3 space-y-1.5">
+          {stock!.stockPL > 0 && (
+            <div className="flex items-center gap-2 text-sm">
+              <div className="w-2 h-2 bg-green-500 rounded-full" />
+              <span className="text-gray-600">
+                Magazyn PL: <strong className="text-gray-900">{stock!.stockPL} szt.</strong>
+                <span className="text-gray-400 ml-1">— wysyłka 24h</span>
+              </span>
+            </div>
+          )}
+          {stock!.stockDE > 0 && (
+            <div className="flex items-center gap-2 text-sm">
+              <div className="w-2 h-2 bg-yellow-500 rounded-full" />
+              <span className="text-gray-600">
+                Magazyn EU: <strong className="text-gray-900">{stock!.stockDE} szt.</strong>
+                <span className="text-gray-400 ml-1">— wysyłka 2-3 dni</span>
+              </span>
+            </div>
+          )}
+          {stock!.stockPL === 0 && stock!.stockDE === 0 && stock!.inDelivery > 0 && (
+            <div className="flex items-center gap-2 text-sm">
+              <div className="w-2 h-2 bg-blue-500 rounded-full" />
+              <span className="text-gray-600">
+                W drodze: <strong className="text-gray-900">{stock!.inDelivery} szt.</strong>
+              </span>
+            </div>
+          )}
+          {stock!.stockPL === 0 && stock!.stockDE === 0 && stock!.inDelivery === 0 && (
+            <div className="flex items-center gap-2 text-sm">
+              <div className="w-2 h-2 bg-red-400 rounded-full" />
+              <span className="text-gray-500">Chwilowo niedostępny</span>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   )
 }
