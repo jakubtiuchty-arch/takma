@@ -429,7 +429,7 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
                         {(() => {
                           const stock = result.partNumber ? stockData.get(result.partNumber) : undefined
                           const liveAvail = stock?.found
-                            ? (stock.totalStock > 0 ? 'available' : 'unavailable')
+                            ? stock.availability
                             : result.availability
                           if (!liveAvail) return null
                           return (
