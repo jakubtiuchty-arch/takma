@@ -6,7 +6,7 @@ import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
 import type { JarltechStockInfo } from '@/lib/jarltech'
 
-const MARGIN = 1.15 // 15% marzy
+const MARGIN = 1.10 // 10% marzy
 const VAT = 1.23    // 23% VAT
 
 // ============================================
@@ -50,7 +50,7 @@ async function getEurPlnRate(): Promise<number> {
  *
  * Unified stock API — Ingram Micro (PLN) + BlueStar (EUR) + Jarltech (EUR).
  * Stany EU sumowane (Ingram DE/HU/CZ + BlueStar + Jarltech inventory).
- * Cena: EUR -> PLN po kursie NBP, potem min(ingram, bluestar, jarltech) x 1.15.
+ * Cena: EUR -> PLN po kursie NBP, potem min(ingram, bluestar, jarltech) x 1.10.
  * Graceful fallback — jesli jeden/dwoch dystrybutorów padnie, dane z pozostalych.
  */
 export async function GET(request: NextRequest) {
