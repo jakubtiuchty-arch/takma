@@ -102,7 +102,6 @@ function fetchStockBatched(partNumbers: string[]): Promise<Map<string, StockInfo
  */
 export function useStockData(partNumbers: string[]) {
   const [stockData, setStockData] = useState<Map<string, StockInfoType>>(() => {
-    // Inicjalizuj z globalnego cache — instant display, potem revalidate
     const cached = new Map<string, StockInfoType>()
     for (const pn of partNumbers) {
       const item = globalStockCache.get(pn)
@@ -112,8 +111,7 @@ export function useStockData(partNumbers: string[]) {
   })
   const [loading, setLoading] = useState(() => {
     if (partNumbers.length === 0) return false
-    // Loading = true dopóki nie mamy ŚWIEŻEGO fetcha (nawet jeśli cache ma dane)
-    return true
+    return !partNumbers.every(pn => globalStockCache.has(pn))
   })
 
   const key = partNumbers.join(',')
@@ -126,9 +124,22 @@ export function useStockData(partNumbers: string[]) {
       return
     }
 
-    // ZAWSZE fetchuj świeże dane — cache służy tylko do instant display
+    // Fetchuj tylko PNy których nie ma w cache
+    const uncached = stablePartNumbers.filter(pn => !globalStockCache.has(pn))
+
+    if (uncached.length === 0) {
+      const cached = new Map<string, StockInfoType>()
+      for (const pn of stablePartNumbers) {
+        const item = globalStockCache.get(pn)
+        if (item) cached.set(pn, item)
+      }
+      setStockData(cached)
+      setLoading(false)
+      return
+    }
+
     setLoading(true)
-    fetchStockBatched(stablePartNumbers).then(() => {
+    fetchStockBatched(uncached).then(() => {
       const result = new Map<string, StockInfoType>()
       for (const pn of stablePartNumbers) {
         const item = globalStockCache.get(pn)
