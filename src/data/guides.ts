@@ -10575,86 +10575,86 @@ export const guides: Guide[] = [
       heading: 'ET401 vs Samsung Tab Active5 vs Honeywell EDA10A vs iPad',
       content: `<p>Zebra ET401 konkuruje z trzema typami urządzeń — tabletami semi-rugged (Samsung Tab Active5), tabletami enterprise (Honeywell ScanPal EDA10A) oraz tabletami konsumenckimi z etui ochronnym (Apple iPad). Poniżej porównanie kluczowych parametrów.</p>
 
-<table class="w-full text-sm border-collapse">
+<table class="w-full text-xs sm:text-sm border-collapse">
   <thead>
     <tr>
-      <th class="border border-gray-200 px-3 py-2 bg-gray-50 font-semibold text-left">Cecha</th>
-      <th class="border border-gray-200 px-3 py-2 bg-green-50 font-semibold">Zebra ET401</th>
-      <th class="border border-gray-200 px-3 py-2 bg-gray-50 font-semibold">Samsung Tab Active5 (8")</th>
-      <th class="border border-gray-200 px-3 py-2 bg-gray-50 font-semibold">Honeywell EDA10A (10")</th>
-      <th class="border border-gray-200 px-3 py-2 bg-gray-50 font-semibold">Apple iPad (11")</th>
+      <th class="border border-gray-200 px-2 sm:px-3 py-2 bg-gray-50 font-semibold text-left">Cecha</th>
+      <th class="border border-gray-200 px-2 sm:px-3 py-2 bg-green-50 font-semibold">ET401</th>
+      <th class="border border-gray-200 px-2 sm:px-3 py-2 bg-gray-50 font-semibold">Tab Active5</th>
+      <th class="border border-gray-200 px-2 sm:px-3 py-2 bg-gray-50 font-semibold">EDA10A</th>
+      <th class="border border-gray-200 px-2 sm:px-3 py-2 bg-gray-50 font-semibold">iPad</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td class="border border-gray-200 px-3 py-2 font-semibold">IP</td>
-      <td class="border border-gray-200 px-3 py-2"><strong>IP68</strong></td>
-      <td class="border border-gray-200 px-3 py-2">IP68</td>
-      <td class="border border-gray-200 px-3 py-2">IP65</td>
-      <td class="border border-gray-200 px-3 py-2">Brak</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2 font-semibold">IP</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2"><strong>IP68</strong></td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">IP68</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">IP65</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Brak</td>
     </tr>
     <tr>
-      <td class="border border-gray-200 px-3 py-2 font-semibold">MIL-STD</td>
-      <td class="border border-gray-200 px-3 py-2"><strong>810H</strong></td>
-      <td class="border border-gray-200 px-3 py-2">810H</td>
-      <td class="border border-gray-200 px-3 py-2">810H</td>
-      <td class="border border-gray-200 px-3 py-2">Brak</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2 font-semibold">MIL-STD</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2"><strong>810H</strong></td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">810H</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">810H</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Brak</td>
     </tr>
     <tr>
-      <td class="border border-gray-200 px-3 py-2 font-semibold">RFID UHF</td>
-      <td class="border border-gray-200 px-3 py-2"><strong>Wbudowany</strong></td>
-      <td class="border border-gray-200 px-3 py-2">Brak</td>
-      <td class="border border-gray-200 px-3 py-2">Brak</td>
-      <td class="border border-gray-200 px-3 py-2">Brak</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2 font-semibold">RFID UHF</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2"><strong>Wbudowany</strong></td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Brak</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Brak</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Brak</td>
     </tr>
     <tr>
-      <td class="border border-gray-200 px-3 py-2 font-semibold">Wi-Fi</td>
-      <td class="border border-gray-200 px-3 py-2"><strong>Wi-Fi 7</strong></td>
-      <td class="border border-gray-200 px-3 py-2">Wi-Fi 6E</td>
-      <td class="border border-gray-200 px-3 py-2">Wi-Fi 6</td>
-      <td class="border border-gray-200 px-3 py-2">Wi-Fi 6E</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2 font-semibold">Wi-Fi</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2"><strong>Wi-Fi 7</strong></td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Wi-Fi 6E</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Wi-Fi 6</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Wi-Fi 6E</td>
     </tr>
     <tr>
-      <td class="border border-gray-200 px-3 py-2 font-semibold">5G</td>
-      <td class="border border-gray-200 px-3 py-2"><strong>Opcja</strong></td>
-      <td class="border border-gray-200 px-3 py-2">Opcja</td>
-      <td class="border border-gray-200 px-3 py-2">Brak</td>
-      <td class="border border-gray-200 px-3 py-2">Opcja (eSIM)</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2 font-semibold">5G</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2"><strong>Opcja</strong></td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Opcja</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Brak</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Opcja (eSIM)</td>
     </tr>
     <tr>
-      <td class="border border-gray-200 px-3 py-2 font-semibold">Hot Swap baterii</td>
-      <td class="border border-gray-200 px-3 py-2"><strong>Tak</strong></td>
-      <td class="border border-gray-200 px-3 py-2">Brak</td>
-      <td class="border border-gray-200 px-3 py-2">Brak</td>
-      <td class="border border-gray-200 px-3 py-2">Brak</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2 font-semibold">Hot Swap baterii</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2"><strong>Tak</strong></td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Brak</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Brak</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Brak</td>
     </tr>
     <tr>
-      <td class="border border-gray-200 px-3 py-2 font-semibold">Skaner kodów</td>
-      <td class="border border-gray-200 px-3 py-2"><strong>SE4100 / SR500</strong></td>
-      <td class="border border-gray-200 px-3 py-2">Brak (kamera)</td>
-      <td class="border border-gray-200 px-3 py-2">N6803FR</td>
-      <td class="border border-gray-200 px-3 py-2">Brak (kamera)</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2 font-semibold">Skaner kodów</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2"><strong>SE4100 / SR500</strong></td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Brak (kamera)</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">N6803FR</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Brak (kamera)</td>
     </tr>
     <tr>
-      <td class="border border-gray-200 px-3 py-2 font-semibold">Cykl wsparcia</td>
-      <td class="border border-gray-200 px-3 py-2"><strong>8 lat (do ~2034)</strong></td>
-      <td class="border border-gray-200 px-3 py-2">4 lata</td>
-      <td class="border border-gray-200 px-3 py-2">5-6 lat</td>
-      <td class="border border-gray-200 px-3 py-2">5-6 lat</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2 font-semibold">Cykl wsparcia</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2"><strong>8 lat (do ~2034)</strong></td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">4 lata</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">5-6 lat</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">5-6 lat</td>
     </tr>
     <tr>
-      <td class="border border-gray-200 px-3 py-2 font-semibold">Zarządzanie flotą (MDM/EMM)</td>
-      <td class="border border-gray-200 px-3 py-2"><strong>Zebra DNA (StageNow, OEMConfig, Device Tracker)</strong></td>
-      <td class="border border-gray-200 px-3 py-2">Knox Suite</td>
-      <td class="border border-gray-200 px-3 py-2">Honeywell Mobility Edge</td>
-      <td class="border border-gray-200 px-3 py-2">Apple Business Manager</td>
+      <td class="border border-gray-200 px-2 sm:px-2 sm:px-3 py-2 font-semibold">Zarzadzanie</td>
+      <td class="border border-gray-200 px-2 sm:px-2 sm:px-3 py-2"><strong>Zebra DNA</strong></td>
+      <td class="border border-gray-200 px-2 sm:px-2 sm:px-3 py-2">Knox Suite</td>
+      <td class="border border-gray-200 px-2 sm:px-2 sm:px-3 py-2">Mobility Edge</td>
+      <td class="border border-gray-200 px-2 sm:px-2 sm:px-3 py-2">ABM</td>
     </tr>
     <tr>
-      <td class="border border-gray-200 px-3 py-2 font-semibold">Cena (od)</td>
-      <td class="border border-gray-200 px-3 py-2"><strong>od 2 410 PLN netto</strong></td>
-      <td class="border border-gray-200 px-3 py-2">od ~2 200 PLN</td>
-      <td class="border border-gray-200 px-3 py-2">od ~3 500 PLN</td>
-      <td class="border border-gray-200 px-3 py-2">od ~3 500 PLN</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2 font-semibold">Cena (od)</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2"><strong>od 2 410 PLN netto</strong></td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">od ~2 200 PLN</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">od ~3 500 PLN</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">od ~3 500 PLN</td>
     </tr>
   </tbody>
 </table>
