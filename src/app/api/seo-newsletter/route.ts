@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server'
 const ADMIN_SECRET = process.env.ADMIN_JWT_SECRET || ''
 const RESEND_API_KEY = process.env.RESEND_API_KEY || ''
 const TO_EMAIL = 'jakub.tiuchty@takma.com.pl'
-const FROM_EMAIL = 'takma@takma.com.pl'
+const FROM_EMAIL = 'seo-monitor@serwis-zebry.pl'
 
 interface Article {
   title: string
