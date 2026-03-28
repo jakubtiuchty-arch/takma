@@ -427,10 +427,23 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
                       {/* Availability + Price — hidden on mobile */}
                       <div className="hidden sm:flex flex-col items-end flex-shrink-0 gap-0.5">
                         {(() => {
-                          const stock = result.partNumber ? stockData.get(result.partNumber) : undefined
-                          const liveAvail = stock?.found
-                            ? stock.availability
-                            : result.availability
+                          // Sprawdź live availability z API
+                          let liveAvail = result.availability
+                          if (result.partNumber) {
+                            const stock = stockData.get(result.partNumber)
+                            if (stock?.found) {
+                              liveAvail = stock.availability
+                            }
+                          }
+                          // Dla wyników produktowych: jeśli ten wariant niedostępny,
+                          // sprawdź czy jakikolwiek inny PN w stockData jest dostępny
+                          if (liveAvail !== 'available' && result.type === 'product') {
+                            stockData.forEach((s) => {
+                              if (s.found && s.availability === 'available' && s.totalStock > 0) {
+                                liveAvail = 'available'
+                              }
+                            })
+                          }
                           if (!liveAvail) return null
                           return (
                           <span className={clsx(
