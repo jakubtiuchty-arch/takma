@@ -10359,7 +10359,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-28',
   updatedAt: '2026-03-28',
   readTime: '10 min',
-  heroImage: '/images/products/ET4010A-001C1B0P-A6.png',
+  heroImage: '/images/guides/zebra-et401-przewodnik.webp',
 
   sections: [
     {
