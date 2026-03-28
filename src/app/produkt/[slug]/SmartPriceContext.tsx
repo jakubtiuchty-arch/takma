@@ -52,22 +52,28 @@ export function SmartPriceProvider({ product, children }: { product: Product; ch
       return { displayedPn: undefined, price: product.priceFrom ?? undefined, isFallback: false, loading, stockData, partNumbers, variantName: undefined }
     }
 
+    // Sprawdź czy API odpowiedziało — musi być przynajmniej 1 PN z found=true
+    // lub loading wciąż trwa. Bez tego czesciowe dane z cache powodują
+    // wybranie złego wariantu (np. drogi zamiast najtańszego)
+    const anyFound = partNumbers.some(pn => stockData.get(pn)?.found)
+    const isStillLoading = loading || (stockData.size === 0 && partNumbers.length > 0)
+
     // Podczas ładowania — pokaż najtańszy ze statyczną ceną
-    if (loading || stockData.size === 0) {
+    if (isStillLoading || !anyFound) {
       const withPrice = allVariants.filter(v => v.price !== null)
       const best = withPrice.length > 0 ? withPrice[0] : allVariants[0]
       return {
         displayedPn: best.partNumber,
         price: best.price ?? product.priceFrom ?? undefined,
         isFallback: false,
-        loading,
+        loading: isStillLoading,
         stockData,
         partNumbers,
         variantName: best.name || undefined,
       }
     }
 
-    // Z cenami live
+    // API odpowiedziało — buduj listę z cenami live
     const withLivePrices = allVariants.map(v => {
       const s = stockData.get(v.partNumber)
       const livePrice = (s?.found && s?.price) ? s.price : null
@@ -76,8 +82,6 @@ export function SmartPriceProvider({ product, children }: { product: Product; ch
         : v.staticAvailability === 'available'
       return { ...v, effectivePrice: livePrice ?? v.price, hasStock }
     }).sort((a, b) => (a.effectivePrice ?? Infinity) - (b.effectivePrice ?? Infinity))
-
-    const anyFound = partNumbers.some(pn => stockData.get(pn)?.found)
 
     let best = withLivePrices[0]
     let isFallback = false
@@ -98,7 +102,7 @@ export function SmartPriceProvider({ product, children }: { product: Product; ch
       displayedPn: best.partNumber,
       price,
       isFallback,
-      loading,
+      loading: false,
       stockData,
       partNumbers,
       variantName: best.name || undefined,
