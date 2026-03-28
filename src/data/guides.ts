@@ -11122,7 +11122,16 @@ export const guides: Guide[] = [
 <p>Pomiar paczek przed załadunkiem pozwala precyzyjnie zaplanować wykorzystanie przestrzeni ładunkowej. Lepsze planowanie = mniej kursów, niższe koszty paliwa, mniejszy ślad węglowy. Szczególnie istotne w transporcie drobnicowym i przesyłkach częściowych (LTL), gdzie optymalizacja załadunku bezpośrednio wpływa na rentowność.</p>
 
 <h3>Linie lotnicze i retail</h3>
-<p>Weryfikacja bagażu podręcznego — czy walizka mieści się w dopuszczonych wymiarach kabinowych? Dimensioning na terminalu daje jednoznaczną odpowiedź w sekundę. W retailu — kontrola wymiarów opakowań przy first article inspection, weryfikacja zgodności dostaw z zamówieniem.</p>`
+<p>Weryfikacja bagażu podręcznego — czy walizka mieści się w dopuszczonych wymiarach kabinowych? Dimensioning na terminalu daje jednoznaczną odpowiedź w sekundę. W retailu — kontrola wymiarów opakowań przy first article inspection, weryfikacja zgodności dostaw z zamówieniem.</p>
+
+<h3>Leśnictwo — fotooptyczny pomiar stosu drewna</h3>
+<p>Jednym z najbardziej nietypowych zastosowań technologii ToF jest <strong>pomiar objętości stosów drewna</strong> w leśnictwie. Tradycyjnie leśnicy mierzą stosy ręcznie — taśmą mierniczą lub przymierzając sztywną łatę do czoła stosu. To metoda czasochłonna, obarczona błędem i zależna od doświadczenia mierzącego.</p>
+
+<p>Przemysł leśny coraz częściej sięga po <strong>pomiar fotooptyczny</strong> oparty na technologii LiDAR (Light Detection and Ranging). LiDAR działa na tej samej zasadzie co kamera ToF w terminalach Zebra — emituje impulsy światła podczerwonego, mierzy czas ich powrotu i rekonstruuje trójwymiarowy model obiektu. Na tej podstawie oblicza objętość stosu drewna z dokładnością do 2-5%, eliminując subiektywną ocenę.</p>
+
+<p>Kamera <strong>Time-of-Flight w terminalach Zebra</strong> (TC501, TC701) działa na zbliżonej zasadzie — wysyła impulsy podczerwieni i mierzy czas przelotu (stąd nazwa „Time-of-Flight"). Różnica polega na skali: przemysłowe skanery LiDAR mierzą obiekty o średnicy kilkunastu metrów, podczas gdy kamera ToF w Zebra Dimensioning obsługuje obiekty do 120 cm. Jednak zasada fizyczna jest identyczna — i to ta sama technologia, która rewolucjonizuje pomiar drewna w Lasach Państwowych, działa teraz w kieszeni magazyniera.</p>
+
+<p>Dla firm z branży drzewnej i leśnej, które już używają <a href="/terminale-mobilne">terminali mobilnych Zebra</a> do inwentaryzacji i śledzenia zasobów, funkcja dimensioning otwiera nowe możliwości — szybki pomiar gabarytów palet z drewnem, weryfikacja wymiarów elementów konstrukcyjnych czy kontrola zgodności dostaw z zamówieniem. TAKMA jako partner Zebra z <strong>ponad 20-letnim doświadczeniem w branży leśnej</strong> (w tym wdrożenia rejestratorów leśniczego i drukarek polowych) doradzi optymalną konfigurację terminala z ToF do zastosowań leśnych.</p>`
     },
     {
       id: 'roi',
