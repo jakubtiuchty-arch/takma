@@ -10348,6 +10348,495 @@ export const guides: Guide[] = [
     { title: 'Terminale mobilne — oferta', href: '/terminale-mobilne' },
   ],
 },
+{
+  slug: 'zebra-et401-tablet-przemyslowy-nowej-generacji',
+  title: 'Zebra ET401 — tablet przemysłowy nowej generacji z RFID i Wi-Fi 7',
+  seoTitle: 'Zebra ET401 — tablet przemysłowy z RFID UHF i Wi-Fi 7 | Poradnik 2026',
+  seoDescription: 'Zebra ET401 — następca ET40/ET45. Tablet przemysłowy z RFID UHF, Wi-Fi 7, IP68, AI, 8 lat wsparcia. Porównanie z Samsung Tab Active5 i Honeywell EDA10A. Tablet do magazynu, tablet wzmocniony IP68. Tablet enterprise Zebra ET401. PN: ET4010A-001C1B0P-A6.',
+  excerpt: 'Kompleksowy przewodnik po tablecie Zebra ET401 — następcy ET40/ET45. Czym się wyróżnia, dla kogo jest, ile kosztuje i dlaczego warto rozważyć migrację.',
+  category: 'poradnik',
+  tags: ['tablet-przemyslowy', 'zebra', 'rfid', 'wifi-7', 'et401', 'et40'],
+  publishedAt: '2026-03-28',
+  updatedAt: '2026-03-28',
+  readTime: '10 min',
+  heroImage: '/images/products/ET4010A-001C1B0P-A6.png',
+
+  sections: [
+    {
+      id: 'wprowadzenie',
+      heading: 'Czym jest Zebra ET401 i dla kogo?',
+      content: `<p><strong>Zebra ET401</strong> to tablet przemysłowy nowej generacji, który zastępuje popularne modele <a href="/produkt/zebra-et40">Zebra ET40</a> i <a href="/produkt/zebra-et45">Zebra ET45</a>. Zaprojektowany z myśla o wymagających środowiskach pracy — magazynach, halach produkcyjnych, sklepach detalicznych, szpitalach i logistyce terenowej — ET401 łączy w sobie moc obliczeniową nowego procesora Qualcomm Dragonwing Q-6690, wbudowany czytnik RFID UHF oraz łączność Wi-Fi 7 i opcjonalne 5G.</p>
+
+<p>Tablet przemysłowy Zebra ET401 jest dostępny w dwóch rozmiarach — <strong>8 cali</strong> (kompaktowy, do pracy jednoręcznej w terenie i na hali) oraz <strong>10 cali</strong> (większy ekran do aplikacji z dużą ilością danych, dashboardów i map magazynu). Oba warianty oferują identyczną specyfikację techniczną, różniąc się jedynie rozmiarem wyświetlacza i baterii.</p>
+
+<p>Dla kogo jest Zebra ET401? Przede wszystkim dla firm, które potrzebują urządzenia spełniającego kilka ról jednocześnie — tablet do inwentaryzacji z RFID, terminal do zarządzania magazynem WMS, narzędzie do weryfikacji dostaw, urządzenie do podpisu elektronicznego lub punkt sprzedaży mobilnej. Zamiast kupować osobny tablet, skaner kodów kreskowych i czytnik RFID, ET401 łączy te funkcje w jednym urządzeniu — co przekłada się na niższy koszt wdrożenia i prostszą obsługę.</p>
+
+<p>Kluczowe branże, w których tablet przemysłowy ET401 sprawdza się najlepiej:</p>
+<ul>
+  <li><strong>Magazyn i logistyka</strong> — inwentaryzacja RFID, zarządzanie lokalizacjami, przyjęcia i wydania towaru</li>
+  <li><strong>Retail</strong> — zarządzanie półkami, click-and-collect, obsługa klienta na sali sprzedaży</li>
+  <li><strong>Healthcare</strong> — identyfikacja pacjentów, zarządzanie lekami, dokumentacja medyczna przy łóżku</li>
+  <li><strong>Produkcja</strong> — kontrola jakości, instrukcje montażowe, śledzenie WIP (work-in-progress)</li>
+  <li><strong>Serwis terenowy</strong> — protokoły, mapy, dokumentacja zdjęciowa, podpis klienta</li>
+</ul>`
+    },
+    {
+      id: 'co-nowego',
+      heading: 'Co nowego w ET401 vs ET40/ET45?',
+      content: `<p>Zebra ET401 to nie kosmetyczny lifting — to gruntowna modernizacja platformy tabletów przemysłowych Zebra. Procesor jest 3 generacje nowszy, łączność bezprzewodowa skoczyła o dwie klasy, a wbudowany RFID eliminuje konieczność zakupu oddzielnego czytnika. Poniżej zestawienie najważniejszych różnic między ET401 a jego poprzednikami ET40 i ET45.</p>
+
+<table class="w-full text-sm border-collapse">
+  <thead>
+    <tr>
+      <th class="border border-gray-200 px-3 py-2 bg-gray-50 font-semibold text-left">Cecha</th>
+      <th class="border border-gray-200 px-3 py-2 bg-gray-50 font-semibold">ET40/ET45</th>
+      <th class="border border-gray-200 px-3 py-2 bg-green-50 font-semibold">ET401</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">Procesor</td>
+      <td class="border border-gray-200 px-3 py-2">Qualcomm QCM6490</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>Qualcomm Dragonwing Q-6690 (42% szybszy)</strong></td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">Odporność IP</td>
+      <td class="border border-gray-200 px-3 py-2">IP65/IP68 (zależy od wariantu)</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>IP68 (wszystkie warianty) — zanurzenie w wodzie</strong></td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">Wi-Fi</td>
+      <td class="border border-gray-200 px-3 py-2">Wi-Fi 6E</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>Wi-Fi 7 tri-band (2x szybszy)</strong></td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">Bluetooth</td>
+      <td class="border border-gray-200 px-3 py-2">Bluetooth 5.2</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>Bluetooth 6.0</strong></td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">RFID UHF</td>
+      <td class="border border-gray-200 px-3 py-2">Brak (wymaga oddzielnego czytnika)</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>Wbudowany (>90 tagów/s, zasięg 1,2 m)</strong></td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">Cykl życia</td>
+      <td class="border border-gray-200 px-3 py-2">6 lat (Android 11-14)</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>8 lat (Android 15-18, LifeGuard do ~2034)</strong></td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">AI</td>
+      <td class="border border-gray-200 px-3 py-2">Brak</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>AI touch (deszcz, rękawice) + AI audio</strong></td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">Ekran</td>
+      <td class="border border-gray-200 px-3 py-2">500 nit</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>600 nit, Gorilla Glass 5</strong></td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">Skaner kodów</td>
+      <td class="border border-gray-200 px-3 py-2">SE4100</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>SE4100 lub SR500 (red LED aimer)</strong></td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">Kamera tylna</td>
+      <td class="border border-gray-200 px-3 py-2">13 MP</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>16 MP + opcja 13 MP ultrawide</strong></td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">Zgodność z akcesoriami ET40/ET45</td>
+      <td class="border border-gray-200 px-3 py-2">—</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>Tak — wsteczna kompatybilność</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Podsumowując: ET401 to skok generacyjny, nie ewolucja. 42% szybszy procesor, IP68 w każdym wariancie, Wi-Fi 7, wbudowany RFID i 2 dodatkowe lata wsparcia — to argumenty, które przemawiają za migracją z ET40/ET45, szczególnie jeśli Twoje urządzenia zbliżają się do końca cyklu życia.</p>`
+    },
+    {
+      id: 'rfid',
+      heading: 'Wbudowany RFID UHF — rewolucja w inwentaryzacji',
+      content: `<p>Największą nowością w tablecie przemysłowym Zebra ET401 jest <strong>wbudowany czytnik RFID UHF</strong>. To funkcja, która fundamentalnie zmienia sposób, w jaki firmy mogą przeprowadzać inwentaryzację, śledzenie zasobów i zarządzanie łańcuchem dostaw — bez konieczności zakupu, noszenia i ładowania oddzielnego czytnika RFID.</p>
+
+<h3>Czym jest RFID UHF i dlaczego to ważne?</h3>
+
+<p>RFID UHF (Ultra High Frequency) to technologia bezprzewodowej identyfikacji, która pozwala odczytywać tagi (znaczniki) na odległość do kilku metrów, bez konieczności "celowania" w kod — wystarczy przejść obok oznakowanych produktów. W odróżnieniu od kodów kreskowych, RFID nie wymaga linii wzrokowej i pozwala na odczyt wielu tagów jednocześnie.</p>
+
+<h3>Parametry RFID w ET401</h3>
+<ul>
+  <li><strong>Prędkość odczytu:</strong> ponad 90 tagów na sekundę — wystarczająca do szybkiej inwentaryzacji regałów</li>
+  <li><strong>Zasięg odczytu:</strong> do 1,2 metra — skanowanie produktów na półkach bez schylania się i wspinania</li>
+  <li><strong>Standard:</strong> EPC Gen2V2 / ISO 18000-63 — kompatybilny z tagami wszystkich producentów</li>
+  <li><strong>Integracja:</strong> natywna z Zebra 123RFID Mobile i aplikacjami WMS/ERP przez DataWedge</li>
+</ul>
+
+<h3>Oszczędności — kalkulator</h3>
+
+<p>Oddzielny czytnik RFID (np. nasadka Zebra RFD40) kosztuje 2 000-3 000 PLN. Przy flocie 10 tabletów to 20 000-30 000 PLN dodatkowego kosztu. ET401 z wbudowanym RFID eliminuje tę pozycję z budżetu — i dodatkowo upraszcza logistykę (jedno urządzenie zamiast dwóch do ładowania, zarządzania i serwisowania).</p>
+
+<h3>Zastosowania RFID w praktyce</h3>
+<ul>
+  <li><strong>Inwentaryzacja magazynu</strong> — odczyt setek pozycji w minuty zamiast godzin. Pracownik idzie wzdłuż regałów z tabletem, RFID automatycznie odczytuje tagi na produktach</li>
+  <li><strong>Retail — kontrola stanów półkowych</strong> — weryfikacja dostępności towarów na sali sprzedaży bez ręcznego liczenia</li>
+  <li><strong>Healthcare — śledzenie sprzętu medycznego</strong> — lokalizacja wózków, pomp infuzyjnych, defibrylatorów w szpitalu</li>
+  <li><strong>Logistyka — weryfikacja załadunku</strong> — szybkie potwierdzenie, że wszystkie oznakowane paczki zostały załadowane na paletę lub do auta</li>
+  <li><strong>Produkcja — śledzenie WIP</strong> — monitorowanie przepływu półproduktów między stacjami produkcyjnymi</li>
+</ul>
+
+<p>Wbudowany RFID to cecha, która wyróżnia ET401 na tle konkurencji — ani Samsung Tab Active5, ani Honeywell EDA10A, ani tym bardziej iPad nie oferują tej funkcji bez dodatkowych akcesoriów.</p>`
+    },
+    {
+      id: 'wytrzymalosc',
+      heading: 'Konstrukcja na lata — IP68, MIL-STD-810H, Hot Swap',
+      content: `<p>Tablet wzmocniony Zebra ET401 został zaprojektowany do pracy w warunkach, które zniszczyłyby każdy tablet konsumencki w ciągu tygodnia. Klasa ochrony <strong>IP68</strong> oznacza pełną pyłoszczelność i odporność na zanurzenie w wodzie — to wyższy standard niż IP65 oferowany przez niektóre warianty poprzednika ET40.</p>
+
+<h3>Parametry wytrzymałości</h3>
+<ul>
+  <li><strong>IP68</strong> — pyłoszczelny, odporny na zanurzenie w wodzie (wszystkie warianty, nie tylko wybrane)</li>
+  <li><strong>MIL-STD-810H</strong> — standard wojskowy, testy odporności na wibracje, szoki termiczne, wilgotność, piasek, sól</li>
+  <li><strong>Upadki:</strong> do 1,2 m na beton (1,55 m z botem ochronnym) — wielokrotne upadki bez uszkodzenia</li>
+  <li><strong>Temperatura pracy:</strong> od -20 st. C do +50 st. C — mroźnia, magazyn nieogrzewany, praca na zewnątrz latem</li>
+  <li><strong>Ekran:</strong> Gorilla Glass 5 — odporny na zarysowania, 600 nitów jasności (czytelny w pełnym słońcu)</li>
+</ul>
+
+<h3>Hot Swap baterii — ciągłość pracy 24/7</h3>
+
+<p>Jedną z najważniejszych funkcji dla operacji wielozmianowych jest <strong>Hot Swap</strong> — wymiana baterii bez wyłączania tabletu. Operator wyjmuje rozładowaną baterię, wkłada naładowaną i kontynuuje pracę bez utraty sesji WMS, połączeń sieciowych czy otwartych dokumentów. Nie ma potrzeby ponownego logowania ani restartu aplikacji.</p>
+
+<p>Dodatkowo, ET401 obsługuje <strong>tryb pracy bez baterii przez USB-C</strong> — tablet można zasilać stale z gniazdka (np. w punkcie obsługi klienta, na stanowisku kontroli jakości). To eliminuje problem baterii w zastosowaniach stacjonarnych i przedłuża żywotność urządzenia, bo bateria nie jest eksploatowana.</p>
+
+<h3>Dlaczego IP68 ma znaczenie?</h3>
+
+<p>W porównaniu z IP65 (odporność na strumień wody) czy IP52 (Samsung Tab Active5 Pro), standard IP68 oznacza, że ET401 przetrwa zanurzenie — nie tylko opryskanie. W praktyce: upadek do kałuży na placu załadunkowym, intensywne mycie tabletu środkami dezynfekcyjnymi w szpitalu, praca w deszczu na terenie budowy — ET401 wytrzyma to wszystko bez uszkodzeń.</p>
+
+<p>Gorilla Glass 5 na ekranie zapewnia odporność na zarysowania nożami, kluczami i innymi ostrymi przedmiotami w kieszeniach — problem znany każdemu, kto używał tabletu z plastikową osłoną ekranu.</p>`
+    },
+    {
+      id: 'lacznosc',
+      heading: 'Wi-Fi 7, 5G i Bluetooth 6.0 — najszybsza łączność w klasie',
+      content: `<p>Zebra ET401 to pierwszy tablet przemysłowy z pełnym zestawem łączności najnowszej generacji — <strong>Wi-Fi 7</strong>, <strong>Bluetooth 6.0</strong> i opcjonalnie <strong>5G Sub-6</strong>. To nie marketingowe hasła — każda z tych technologii rozwiązuje konkretne problemy w środowisku enterprise.</p>
+
+<h3>Wi-Fi 7 (802.11be) — 2x szybciej niż Wi-Fi 6E</h3>
+
+<p>Wi-Fi 7 tri-band oznacza jednoczesną pracę na trzech pasmach (2,4 GHz, 5 GHz, 6 GHz), z przepustowością do 2x wyższą niż Wi-Fi 6E w ET40. W praktyce oznacza to:</p>
+<ul>
+  <li><strong>Szybszy roaming</strong> — przechodzenie między access pointami bez zrywania połączeń WMS</li>
+  <li><strong>Niższe opóźnienia</strong> — krytyczne przy aplikacjach głosowych (push-to-talk) i wideo w czasie rzeczywistym</li>
+  <li><strong>Więcej urządzeń na jednym AP</strong> — w magazynie z 50+ tabletami i skanerami każdy pikosekundowy skok opóźnień się kumuluje</li>
+  <li><strong>Multi-Link Operation (MLO)</strong> — jednoczesne przesyłanie danych na kilku pasmach, automatyczne przełączanie przy zakłóceniach</li>
+</ul>
+
+<h3>5G Sub-6 (opcja)</h3>
+
+<p>Wariant z modemem 5G (odpowiednik dawnego ET45) zapewnia łączność komórkową tam, gdzie nie ma infrastruktury Wi-Fi — na placu załadunkowym, w terenie, u klienta. 5G Sub-6 oferuje przepustowość do 4,7 Gbps (downlink) i niskie opóźnienia — wystarczające do transmisji wideo na żywo, dużych plików i aplikacji chmurowych bez buforowania.</p>
+
+<h3>Bluetooth 6.0</h3>
+
+<p>Bluetooth 6.0 w ET401 to nie tylko szybszy transfer — to przede wszystkim <strong>lepsza lokalizacja</strong> urządzeń peryferyjnych. BT 6.0 wspiera Channel Sounding (precyzyjne określanie odległości), co umożliwia:</p>
+<ul>
+  <li>Precyzyjną lokalizację drukarek, skanerów i innych urządzeń BT w pobliżu</li>
+  <li>Automatyczne parowanie z najbliższą drukarką etykiet</li>
+  <li>Niższe zużycie energii przy ciągłym połączeniu z akcesoriami</li>
+</ul>
+
+<h3>NFC</h3>
+
+<p>Wbudowany czytnik NFC umożliwia szybkie parowanie z akcesoriami, odczyt tagów NFC (np. identyfikatory pracowników, karty dostępu) i płatności zbliżeniowe przez Zebra Pay. W healthcare — szybka identyfikacja pacjenta opaską NFC przy łóżku.</p>`
+    },
+    {
+      id: 'ai',
+      heading: 'Funkcje AI — inteligentny ekran dotykowy i dzwiek',
+      content: `<p>Zebra ET401 wprowadza funkcje sztucznej inteligencji, które rozwiązują dwa najczęstsze problemy użytkowników tabletów przemysłowych — obsługę ekranu dotykowego w trudnych warunkach i jakość dzwięku w głośnym otoczeniu.</p>
+
+<h3>AI Touch — ekran, który rozpoznaje kontekst</h3>
+
+<p>Dotychczasowe tablety wzmocnione wymagały ręcznego przełączania trybu ekranu — jeden tryb na gołe palce, inny na rękawice, jeszcze inny na rysik. W praktyce operatorzy zapominali o przełączeniu, co skutkowało "martwym" ekranem i frustracją.</p>
+
+<p>ET401 wykorzystuje algorytmy AI do <strong>automatycznego rozpoznawania sposobu obsługi</strong> — gołe palce, grube rękawice robocze, rękawice lateksowe, rysik, a nawet mokre palce lub krople deszczu na ekranie. System adaptuje czułość ekranu w czasie rzeczywistym, bez jakiejkolwiek interwencji użytkownika.</p>
+
+<p>To szczególnie istotne w branżach, gdzie pracownicy wielokrotnie w ciągu dnia zmieniają sposób obsługi — np. magazynier zakładający rękawice przed wejściem do mroźni, pracownik medyczny w rękawicach lateksowych, technik serwisowy pracujący na deszczu.</p>
+
+<h3>AI Audio — czysty dzwięk w głośnym otoczeniu</h3>
+
+<p>Hale produkcyjne, magazyny z wózkami widłowymi, place załadunkowe — to środowiska, w których standardowe mikrofony łapią więcej hałasu tła niż głosu użytkownika. ET401 wykorzystuje algorytmy AI do:</p>
+<ul>
+  <li><strong>Eliminacji echa</strong> — czysty dzwięk przy wideokonferencjach i rozmowach push-to-talk</li>
+  <li><strong>Tłumienia szumów otoczenia</strong> — odcięcie hałasu maszyn, wózków, wentylacji</li>
+  <li><strong>Wzmocnienia głosu mówcy</strong> — automatyczne wyodrębnienie głosu z tła hałasowego</li>
+</ul>
+
+<p>W praktyce: kierownik zmiany może prowadzić wideokonferencję z centralą stojąc na hali produkcyjnej, a rozmówcy usłyszą czysty głos bez tła maszynowego. Technik serwisowy może dyktować raport ustnie bez konieczności szukania cichego pomieszczenia.</p>
+
+<p>Funkcje AI w ET401 nie wymagają połączenia z chmurą — przetwarzanie odbywa się lokalnie na procesorze Dragonwing Q-6690, co zapewnia natychmiastową reakcję i pełną prywatność danych.</p>`
+    },
+    {
+      id: 'konkurencja',
+      heading: 'ET401 vs Samsung Tab Active5 vs Honeywell EDA10A vs iPad',
+      content: `<p>Zebra ET401 konkuruje z trzema typami urządzeń — tabletami semi-rugged (Samsung Tab Active5), tabletami enterprise (Honeywell ScanPal EDA10A) oraz tabletami konsumenckimi z etui ochronnym (Apple iPad). Poniżej porównanie kluczowych parametrów.</p>
+
+<table class="w-full text-sm border-collapse">
+  <thead>
+    <tr>
+      <th class="border border-gray-200 px-3 py-2 bg-gray-50 font-semibold text-left">Cecha</th>
+      <th class="border border-gray-200 px-3 py-2 bg-green-50 font-semibold">Zebra ET401</th>
+      <th class="border border-gray-200 px-3 py-2 bg-gray-50 font-semibold">Samsung Tab Active5 (8")</th>
+      <th class="border border-gray-200 px-3 py-2 bg-gray-50 font-semibold">Honeywell EDA10A (10")</th>
+      <th class="border border-gray-200 px-3 py-2 bg-gray-50 font-semibold">Apple iPad (11")</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">IP</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>IP68</strong></td>
+      <td class="border border-gray-200 px-3 py-2">IP68</td>
+      <td class="border border-gray-200 px-3 py-2">IP65</td>
+      <td class="border border-gray-200 px-3 py-2">Brak</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">MIL-STD</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>810H</strong></td>
+      <td class="border border-gray-200 px-3 py-2">810H</td>
+      <td class="border border-gray-200 px-3 py-2">810H</td>
+      <td class="border border-gray-200 px-3 py-2">Brak</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">RFID UHF</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>Wbudowany</strong></td>
+      <td class="border border-gray-200 px-3 py-2">Brak</td>
+      <td class="border border-gray-200 px-3 py-2">Brak</td>
+      <td class="border border-gray-200 px-3 py-2">Brak</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">Wi-Fi</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>Wi-Fi 7</strong></td>
+      <td class="border border-gray-200 px-3 py-2">Wi-Fi 6E</td>
+      <td class="border border-gray-200 px-3 py-2">Wi-Fi 6</td>
+      <td class="border border-gray-200 px-3 py-2">Wi-Fi 6E</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">5G</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>Opcja</strong></td>
+      <td class="border border-gray-200 px-3 py-2">Opcja</td>
+      <td class="border border-gray-200 px-3 py-2">Brak</td>
+      <td class="border border-gray-200 px-3 py-2">Opcja (eSIM)</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">Hot Swap baterii</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>Tak</strong></td>
+      <td class="border border-gray-200 px-3 py-2">Brak</td>
+      <td class="border border-gray-200 px-3 py-2">Brak</td>
+      <td class="border border-gray-200 px-3 py-2">Brak</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">Skaner kodów</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>SE4100 / SR500</strong></td>
+      <td class="border border-gray-200 px-3 py-2">Brak (kamera)</td>
+      <td class="border border-gray-200 px-3 py-2">N6803FR</td>
+      <td class="border border-gray-200 px-3 py-2">Brak (kamera)</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">Cykl wsparcia</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>8 lat (do ~2034)</strong></td>
+      <td class="border border-gray-200 px-3 py-2">4 lata</td>
+      <td class="border border-gray-200 px-3 py-2">5-6 lat</td>
+      <td class="border border-gray-200 px-3 py-2">5-6 lat</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">Zarządzanie flotą (MDM/EMM)</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>Zebra DNA (StageNow, OEMConfig, Device Tracker)</strong></td>
+      <td class="border border-gray-200 px-3 py-2">Knox Suite</td>
+      <td class="border border-gray-200 px-3 py-2">Honeywell Mobility Edge</td>
+      <td class="border border-gray-200 px-3 py-2">Apple Business Manager</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2 font-semibold">Cena (od)</td>
+      <td class="border border-gray-200 px-3 py-2"><strong>od 2 410 PLN netto</strong></td>
+      <td class="border border-gray-200 px-3 py-2">od ~2 200 PLN</td>
+      <td class="border border-gray-200 px-3 py-2">od ~3 500 PLN</td>
+      <td class="border border-gray-200 px-3 py-2">od ~3 500 PLN</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Kluczowe przewagi ET401</h3>
+
+<p><strong>Vs Samsung Tab Active5:</strong> Samsung oferuje przyzwoitą wytrzymałość, ale nie ma wbudowanego skanera kodów kreskowych (kamera to słaba alternatywa w profesjonalnym zastosowaniu), nie ma RFID, nie ma hot swap baterii i ma znacznie krótszy cykl wsparcia (4 vs 8 lat). Knox Suite jest dobry, ale nie dorównuje ekosystemowi Zebra DNA z DataWedge, StageNow i Workstation Connect.</p>
+
+<p><strong>Vs Honeywell EDA10A:</strong> EDA10A to solidny tablet enterprise, ale ma niższą klasę ochrony (IP65 vs IP68), brak RFID, brak 5G i starszą generację Wi-Fi (6 vs 7). Honeywell Mobility Edge zapewnia dobre wsparcie, ale 5-6 lat vs 8 lat Zebra to istotna różnica w TCO.</p>
+
+<p><strong>Vs Apple iPad:</strong> iPad to urządzenie konsumenckie — brak certyfikatów wytrzymałości, brak hot swap, brak dedykowanego skanera kodów, brak RFID, brak Zebra DNA. Etui ochronne nie zastąpią konstrukcji zaprojektowanej od podstaw do pracy w trudnych warunkach. Jedyną zaletą iPada jest ekosystem aplikacji iOS i niższy próg wejścia przy małych wdrożeniach.</p>`
+    },
+    {
+      id: 'migracja',
+      heading: 'Migracja z ET40/ET45 i ET51/ET56',
+      content: `<p>Jednym z kluczowych atutów Zebra ET401 jest <strong>wsteczna kompatybilność z akcesoriami ET40 i ET45</strong>. Oznacza to, że jeśli Twoja firma używa stacji dokujących, uchwytów samochodowych, etui ochronnych czy ładowarek do ET40/ET45 — możesz je nadal wykorzystywać z ET401 bez dodatkowych zakupów.</p>
+
+<h3>Co jest kompatybilne?</h3>
+<ul>
+  <li><strong>Stacje dokujące</strong> — stacje biurkowe i do pojazdów z ET40/ET45 pasują do ET401</li>
+  <li><strong>Uchwyty samochodowe</strong> — montaż na wózku widłowym, w aucie serwisowym</li>
+  <li><strong>Ładowarki baterii</strong> — ładowarki do baterii ET40/ET45</li>
+  <li><strong>Rękojeść z pistoletem (trigger handle)</strong> — do skanowania w trybie gun</li>
+</ul>
+
+<h3>Co zyskujesz przy migracji?</h3>
+<ul>
+  <li><strong>42% szybszy procesor</strong> — płynniejsza praca aplikacji WMS, szybsze otwieranie dashboardów</li>
+  <li><strong>Wi-Fi 7</strong> — szybszy roaming, mniej zrywanych połączeń</li>
+  <li><strong>RFID UHF</strong> — nowa funkcjonalność bez dodatkowego sprzętu</li>
+  <li><strong>2 dodatkowe lata wsparcia</strong> — 8 lat vs 6 lat (LifeGuard do ~2034)</li>
+  <li><strong>IP68 w każdym wariancie</strong> — koniec z kompromisami na odporność</li>
+  <li><strong>AI touch i audio</strong> — lepsze doświadczenie użytkownika</li>
+</ul>
+
+<h3>Migracja z ET51/ET56</h3>
+
+<p>Jeśli Twoja firma używa starszych tabletów Zebra ET51 (Wi-Fi) lub ET56 (WWAN), ET401 to naturalny następca. ET51/ET56 miały procesor Qualcomm SDM660 (3 generacje starszy), Wi-Fi 5, Androida 8-11 i końcowy LifeGuard w 2026 roku. Migracja na ET401 to skok o 3 generacje procesora, 2 generacje Wi-Fi i gwarancja wsparcia do 2034.</p>
+
+<h3>Jak przeprowadzić migrację?</h3>
+
+<p>Dzięki <strong>Zebra DNA</strong> migracja floty tabletów jest uproszczona:</p>
+<ul>
+  <li><strong>StageNow</strong> — masowe konfigurowanie nowych ET401 z jednego profilu (Wi-Fi, VPN, aplikacje, polityki bezpieczeństwa)</li>
+  <li><strong>OEMConfig</strong> — zarządzanie przez dowolne EMM/MDM (SOTI, VMware, Microsoft Intune)</li>
+  <li><strong>Device Tracker</strong> — lokalizacja urządzeń w budynku (BLE beacons) — znajdź zgubione tablety</li>
+  <li><strong>Workstation Connect</strong> — podłącz ET401 do monitora i klawiatury — zastąpi komputer stacjonarny</li>
+</ul>
+
+<p>Planując migrację floty 20+ urządzeń, <a href="/kontakt">skontaktuj się z nami</a> — pomożemy z doborem wariantów, wyceną i harmonogramem wdrożenia.</p>`
+    },
+    {
+      id: 'warianty',
+      heading: 'Warianty i ceny Zebra ET401',
+      content: `<p>Zebra ET401 jest dostępny w wielu konfiguracjach — różniących się rozmiarem ekranu, łącznością i skanerem. Poniżej przegląd wariantów z orientacyjnymi cenami netto.</p>
+
+<h3>Rozmiary ekranu</h3>
+<ul>
+  <li><strong>8 cali</strong> — kompaktowy, lżejszy, do pracy jednoręcznej. Idealny dla pracowników mobilnych (serwis, logistyka, retail)</li>
+  <li><strong>10 cali</strong> — większy ekran do aplikacji z tabelami, mapami, dashboardami. Lepszy do pracy stacjonarnej i w pojeździe</li>
+</ul>
+
+<h3>Łączność</h3>
+<ul>
+  <li><strong>Wi-Fi only</strong> — wystarczający w magazynie, na hali produkcyjnej, w sklepie z pokryciem Wi-Fi</li>
+  <li><strong>Wi-Fi + 5G</strong> — do pracy w terenie, na placu załadunkowym, u klienta — wszędzie tam, gdzie nie ma Wi-Fi</li>
+</ul>
+
+<h3>Skaner kodów kreskowych</h3>
+<ul>
+  <li><strong>Bez skanera</strong> — kody skanowane kamerą tylną lub zewnętrznym skanerem Bluetooth</li>
+  <li><strong>SE4100</strong> — skaner standardowy, zasięg do 1 m, kody 1D i 2D. Wystarczający dla większości zastosowań</li>
+  <li><strong>SR500</strong> — skaner dalekiego zasięgu z czerwonym celownikiem LED. Do skanowania z większej odległości (regały, palety)</li>
+</ul>
+
+<h3>Przedział cenowy</h3>
+
+<p>Ceny Zebra ET401 w TAKMA zaczynają się od <strong>2 410 PLN netto</strong> (wariant 8" Wi-Fi bez skanera) i sięgają do <strong>4 001 PLN netto</strong> (wariant 10" 5G z SR500). Konkretna cena zależy od konfiguracji — sprawdź aktualną cenę na <a href="/produkt/zebra-et401">stronie produktu Zebra ET401</a>.</p>
+
+<table class="w-full text-sm border-collapse">
+  <thead>
+    <tr>
+      <th class="border border-gray-200 px-3 py-2 bg-gray-50 font-semibold text-left">Wariant</th>
+      <th class="border border-gray-200 px-3 py-2 bg-gray-50 font-semibold">Cena od (netto)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2">8" Wi-Fi, bez skanera</td>
+      <td class="border border-gray-200 px-3 py-2">od 2 410 PLN</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2">8" Wi-Fi, SE4100</td>
+      <td class="border border-gray-200 px-3 py-2">od 2 700 PLN</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2">10" Wi-Fi, SE4100</td>
+      <td class="border border-gray-200 px-3 py-2">od 2 900 PLN</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2">8"/10" 5G, SE4100/SR500</td>
+      <td class="border border-gray-200 px-3 py-2">od 3 400 PLN</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-3 py-2">10" 5G, SR500 (max)</td>
+      <td class="border border-gray-200 px-3 py-2">do 4 001 PLN</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Wszystkie ceny są cenami netto (+ 23% VAT). Przy zamówieniach flotowych (10+ sztuk) oferujemy indywidualną wycenę — <a href="/kontakt">zapytaj o rabat flotowy</a>.</p>`
+    },
+    {
+      id: 'podsumowanie',
+      heading: 'Podsumowanie — dla kogo ET401?',
+      content: `<p>Zebra ET401 to tablet przemysłowy, który najlepiej sprawdza się w firmach potrzebujących jednego urządzenia do wielu zadań — skanowania kodów, odczytu RFID, zarządzania magazynem i komunikacji. Poniżej profil idealnego klienta per branża.</p>
+
+<ul>
+  <li><strong>Magazyn i logistyka</strong> — firmy z flotą 10+ tabletów, inwentaryzacja RFID, WMS, praca wielozmianowa z hot swap. ET401 8" dla operatorów mobilnych, 10" na wózkach widłowych</li>
+  <li><strong>Retail</strong> — sieci handlowe z kontrolą stanów półkowych RFID, obsługą klienta na sali, click-and-collect. ET401 8" z RFID eliminuje potrzebę oddzielnego czytnika</li>
+  <li><strong>Healthcare</strong> — szpitale i kliniki potrzebujące tabletu odpornego na dezynfekcję (IP68), z identyfikacją pacjenta (NFC, RFID), dokumentacją przy łóżku i czystym dźwiękiem (AI audio)</li>
+  <li><strong>Produkcja</strong> — kontrola jakości z instrukcjami na dużym ekranie (10"), śledzenie WIP z RFID, komunikacja push-to-talk na hali z eliminacją hałasu (AI audio)</li>
+  <li><strong>Serwis terenowy</strong> — technicy potrzebujący 5G (brak Wi-Fi u klienta), dokumentacji zdjęciowej (16 MP), podpisu elektronicznego i pracy w deszczu (IP68, AI touch)</li>
+</ul>
+
+<p>Jeśli Twoja firma używa ET40/ET45 zbliżających się do końca życia, ET51/ET56 z wygasającym wsparciem, Samsung Tab Active z ograniczeniami software'owymi lub iPadów w obudowach ochronnych — ET401 to naturalna ścieżka migracji z gwarancją 8 lat wsparcia i wsteczną kompatybilnością akcesoriów.</p>
+
+<p>Sprawdź <a href="/produkt/zebra-et401">kartę produktu Zebra ET401</a> z aktualnymi cenami lub <a href="/kontakt">skontaktuj się z nami</a> po indywidualną wycenę dla Twojej floty.</p>`
+    },
+  ],
+
+  faq: [
+    {
+      question: 'Ile kosztuje Zebra ET401?',
+      answer: 'Ceny Zebra ET401 zaczynają się od 2 410 PLN netto (wariant 8" Wi-Fi bez skanera) i sięgają do 4 001 PLN netto (wariant 10" 5G z SR500). Konkretna cena zależy od rozmiaru ekranu (8" lub 10"), łączności (Wi-Fi lub 5G) i skanera (bez/SE4100/SR500). Przy zamówieniach flotowych od 10 sztuk oferujemy rabaty indywidualne.',
+    },
+    {
+      question: 'Czym ET401 różni się od ET40?',
+      answer: 'ET401 to następca ET40 z procesorem Qualcomm Dragonwing Q-6690 (42% szybszym), Wi-Fi 7 (2x szybszym niż Wi-Fi 6E), wbudowanym RFID UHF, IP68 we wszystkich wariantach, Bluetooth 6.0, AI touch/audio i 8-letnim cyklem wsparcia (vs 6 lat dla ET40). ET401 jest wstecznie kompatybilny z akcesoriami ET40/ET45.',
+    },
+    {
+      question: 'Czy ET401 ma wbudowany czytnik RFID?',
+      answer: 'Tak — Zebra ET401 ma wbudowany czytnik RFID UHF, który odczytuje ponad 90 tagów na sekundę z zasięgiem do 1,2 metra. To unikalna cecha na rynku tabletów przemysłowych — konkurenci (Samsung, Honeywell, Apple) wymagają zakupu oddzielnego czytnika RFID za 2 000-3 000 PLN.',
+    },
+    {
+      question: 'Jaki ekran wybrać — 8 czy 10 cali?',
+      answer: 'Ekran 8 cali jest lżejszy i wygodniejszy do pracy jednoręcznej (retail, serwis terenowy, logistyka). Ekran 10 cali sprawdza się lepiej przy aplikacjach z dużą ilością danych — dashboardy, mapy magazynu, instrukcje montażowe — oraz w zastosowaniach stacjonarnych (na wózku widłowym, w punkcie obsługi).',
+    },
+    {
+      question: 'Czy ET401 jest wodoodporny?',
+      answer: 'Tak — ET401 ma klasę ochrony IP68, co oznacza pełną pyłoszczelność i odporność na zanurzenie w wodzie. Dodatkowo spełnia standard MIL-STD-810H i wytrzymuje upadki z 1,2 m na beton (1,55 m z botem ochronnym). Wszystkie warianty ET401 mają IP68 — w przeciwieństwie do ET40, gdzie tylko wybrane konfiguracje miały tę klasę.',
+    },
+    {
+      question: 'Czy akcesoria z ET40/ET45 pasują do ET401?',
+      answer: 'Tak — ET401 jest wstecznie kompatybilny z akcesoriami ET40 i ET45. Stacje dokujące, uchwyty samochodowe, ładowarki baterii i rękojeści z pistoletem pasują bez modyfikacji. To znacząco obniża koszt migracji — nie trzeba wymieniać infrastruktury akcesoriów.',
+    },
+    {
+      question: 'Jaki skaner wybrać — SE4100 czy SR500?',
+      answer: 'SE4100 to skaner standardowy z zasięgiem do 1 m — wystarczający do 95% zastosowań (skanowanie etykiet na produktach, paczkach, dokumentach). SR500 oferuje rozszerzony zasięg z czerwonym celownikiem LED — lepszy do skanowania kodów na wysokich regałach, paletach i z większych odległości. Jeśli nie masz specyficznych potrzeb dalekiego zasięgu, SE4100 wystarczy.',
+    },
+    {
+      question: 'Czy ET401 ma 5G?',
+      answer: 'Tak — ET401 jest dostępny w wariancie z modemem 5G Sub-6. Wariant 5G zastępuje dawnego ET45 (z LTE). 5G zapewnia łączność komórkową tam, gdzie nie ma Wi-Fi — na placu załadunkowym, w terenie, u klienta. Wariant Wi-Fi-only jest tańszy i wystarczający w lokalizacjach z pokryciem Wi-Fi.',
+    },
+    {
+      question: 'Jak długo Zebra wspiera ET401?',
+      answer: 'Zebra deklaruje 8-letni cykl życia ET401 z programem LifeGuard for Android — aktualizacje bezpieczeństwa i systemu od Androida 15 do Androida 18, z szacowanym wsparciem do roku 2034. To najdłuższy cykl wsparcia w klasie tabletów przemysłowych — Samsung oferuje 4 lata, Honeywell 5-6 lat.',
+    },
+    {
+      question: 'ET401 vs Samsung Tab Active5 — co wybrać?',
+      answer: 'ET401 wygrywa z Samsung Tab Active5 w kluczowych kategoriach enterprise: wbudowany RFID UHF (Samsung nie ma), dedykowany skaner kodów SE4100/SR500 (Samsung tylko kamera), hot swap baterii (Samsung nie ma), Wi-Fi 7 vs Wi-Fi 6E, 8 lat wsparcia vs 4 lata i pełny ekosystem Zebra DNA. Samsung jest tańszy o ok. 200 PLN, ale braki funkcjonalne kosztują więcej w dłuższej perspektywie.',
+    },
+  ],
+
+  relatedLinks: [
+    { title: 'Zebra ET401 — karta produktu', href: '/produkt/zebra-et401' },
+    { title: 'Zebra ET40 — karta produktu', href: '/produkt/zebra-et40' },
+    { title: 'Zebra ET45 — karta produktu', href: '/produkt/zebra-et45' },
+    { title: 'Tablety przemysłowe — oferta', href: '/tablety-przemyslowe' },
+    { title: 'Kontakt — zapytaj o wycenę flotową', href: '/kontakt' },
+  ],
+},
 ]
 
 // Helper functions
