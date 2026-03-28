@@ -26616,10 +26616,8 @@ Wersja enterprise (lżejsza, upadki 2,4 m, tańsza): Zebra TC501. Szczegółowa 
       'zebra-tc701-cradle-2slot-1battery',
     ],
     downloads: [
-      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-tc701/instrukcja-po-polsku', size: 'Online' },
-      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/tc701-spec-sheet-en-us.pdf', size: 'PDF' },
-      { name: 'Karta katalogowa TC701 (EN)', type: 'datasheet', url: 'https://www.zebra.com/us/en/products/spec-sheets/mobile-computers/handheld/tc701.html', size: 'Online' },
-      { name: 'Strona produktu Zebra TC701 (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc701.html', size: 'Online' },
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-tc701/instrukcja-obslugi', size: 'Online' },
+      { name: 'Szybki start (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-tc701/szybki-start', size: 'Online' },
     ],
     // servicePlans: [ // TODO: uncomment when available in Ingram
     //   { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-TC701X-3C00', duration: '3 lata' },
