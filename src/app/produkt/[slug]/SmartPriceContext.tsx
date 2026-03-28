@@ -112,14 +112,20 @@ export function SmartPriceProvider({ product, children }: { product: Product; ch
     }
 
     // API odpowiedziało — buduj listę z cenami live
+    // WAŻNE: gdy API ma dane (anyFound=true), NIE ufaj statycznej dostępności
+    // dla wariantów których API nie zna. Tylko API decyduje o hasStock.
     const withLivePrices = allVariants.map(v => {
       const s = stockData.get(v.partNumber)
       const livePrice = (s?.found && s?.price) ? s.price : null
-      const hasStock = s?.found
-        ? s.totalStock > 0
-        : v.staticAvailability === 'available'
-      return { ...v, effectivePrice: livePrice ?? v.price, hasStock }
-    }).sort((a, b) => (a.effectivePrice ?? Infinity) - (b.effectivePrice ?? Infinity))
+      const hasStock = s?.found ? s.totalStock > 0 : false
+      return { ...v, effectivePrice: livePrice ?? v.price, hasStock, apiFound: !!s?.found }
+    })
+    // Sortuj: warianty z ceną live PRZED wariantami ze statyczną ceną, potem po cenie
+    .sort((a, b) => {
+      if (a.apiFound && !b.apiFound) return -1
+      if (!a.apiFound && b.apiFound) return 1
+      return (a.effectivePrice ?? Infinity) - (b.effectivePrice ?? Infinity)
+    })
 
     let best = withLivePrices[0]
     let isFallback = false
