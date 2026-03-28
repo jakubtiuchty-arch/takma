@@ -7,7 +7,7 @@ import { Button } from '@/components/ui'
 import { PlusIcon, CheckIcon, BellIcon, ChevronDownIcon } from '@/components/ui/Icons'
 import { useCartStore } from '@/store/cartStore'
 import { ProductVariant } from '@/data/products'
-import { useStockData } from './StockInfo'
+import { useSmartPrice } from './SmartPriceContext'
 
 interface VariantsTableProps {
   productSlug: string
@@ -445,8 +445,7 @@ export default function VariantsTable({ productSlug, productName, productImage, 
   const [mounted, setMounted] = useState(false)
   const [showUnavailable, setShowUnavailable] = useState(false)
 
-  const partNumbers = useMemo(() => variants.map(v => v.partNumber), [variants])
-  const { stockData, loading: stockLoading } = useStockData(partNumbers)
+  const { stockData, loading: stockLoading } = useSmartPrice()
 
   useEffect(() => {
     setMounted(true)
