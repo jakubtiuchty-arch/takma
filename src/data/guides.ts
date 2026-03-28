@@ -10351,8 +10351,8 @@ export const guides: Guide[] = [
 {
   slug: 'zebra-et401-tablet-przemyslowy-nowej-generacji',
   title: 'Zebra ET401 — tablet przemysłowy nowej generacji z RFID i Wi-Fi 7',
-  seoTitle: 'Zebra ET401 — tablet przemysłowy z RFID UHF i Wi-Fi 7 | Poradnik 2026',
-  seoDescription: 'Zebra ET401 — następca ET40/ET45. Tablet przemysłowy z RFID UHF, Wi-Fi 7, IP68, AI, 8 lat wsparcia. Porównanie z Samsung Tab Active5 i Honeywell EDA10A. Tablet do magazynu, tablet wzmocniony IP68. Tablet enterprise Zebra ET401. PN: ET4010A-001C1B0P-A6.',
+  seoTitle: 'Zebra ET401 — kompletny przewodnik: RFID, Wi-Fi 7, porównanie z konkurencją | 2026',
+  seoDescription: 'Czym Zebra ET401 różni się od ET40 i Samsung Tab Active5? Przewodnik po RFID UHF, Wi-Fi 7, AI i migracji. Tabele porównawcze i kalkulacja kosztów.',
   excerpt: 'Kompleksowy przewodnik po tablecie Zebra ET401 — następcy ET40/ET45. Czym się wyróżnia, dla kogo jest, ile kosztuje i dlaczego warto rozważyć migrację.',
   category: 'poradnik',
   tags: ['tablet-przemyslowy', 'zebra', 'rfid', 'wifi-7', 'et401', 'et40'],
@@ -10765,7 +10765,9 @@ export const guides: Guide[] = [
   </tbody>
 </table>
 
-<p>Wszystkie ceny są cenami netto (+ 23% VAT). Przy zamówieniach flotowych (10+ sztuk) oferujemy indywidualną wycenę — <a href="/kontakt">zapytaj o rabat flotowy</a>.</p>`
+<p>Wszystkie ceny są cenami netto (+ 23% VAT). Przy zamówieniach flotowych (10+ sztuk) oferujemy indywidualną wycenę — <a href="/kontakt">zapytaj o rabat flotowy</a>.</p>
+
+<p><strong>Gotowy do zakupu?</strong> <a href="/produkt/zebra-et401">Sprawdź wszystkie warianty i aktualne ceny Zebra ET401</a> w sklepie TAKMA.</p>`
     },
     {
       id: 'podsumowanie',
@@ -10788,8 +10790,8 @@ export const guides: Guide[] = [
 
   faq: [
     {
-      question: 'Ile kosztuje Zebra ET401?',
-      answer: 'Ceny Zebra ET401 zaczynają się od 2 410 PLN netto (wariant 8" Wi-Fi bez skanera) i sięgają do 4 001 PLN netto (wariant 10" 5G z SR500). Konkretna cena zależy od rozmiaru ekranu (8" lub 10"), łączności (Wi-Fi lub 5G) i skanera (bez/SE4100/SR500). Przy zamówieniach flotowych od 10 sztuk oferujemy rabaty indywidualne.',
+      question: 'Ile kosztuje wdrożenie floty tabletów ET401?',
+      answer: 'Koszt wdrożenia floty ET401 zależy od konfiguracji i akcesoriów. Sam tablet: od 2 410 zł (8 cali Wi-Fi bez skanera) do 4 001 zł (10 cali 5G z SR500). Do tego doliczyć: rugged boot ochronny (~200-300 zł/szt.), stację ładowania (~800-1 200 zł na 4-8 slotów), opcjonalnie kontrakty serwisowe Zebra OneCare. Przy flocie 10+ urządzeń — skontaktuj się z TAKMA po wycenę projektową ze zniżką ilościową.',
     },
     {
       question: 'Czym ET401 różni się od ET40?',

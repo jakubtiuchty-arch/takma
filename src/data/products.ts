@@ -41735,8 +41735,8 @@ const zebraTablets: Product[] = [
     id: 'zebra-et401',
     slug: 'zebra-et401',
     name: 'Zebra ET401',
-    seoTitle: 'Tablet przemysłowy Zebra ET401 — Wi-Fi 7, IP68, RFID UHF, Android 15',
-    seoDescription: 'Zebra ET401 — tablet przemysłowy z Wi-Fi 7, IP68 i opcjonalnym RFID UHF. 8″ i 10″, Android 15→18. 11 konfiguracji od 2 410 zł netto.',
+    seoTitle: 'Zebra ET401 — tablet przemysłowy | 11 wariantów od 2 410 zł | TAKMA',
+    seoDescription: 'Zebra ET401 — tablet przemysłowy 8″ i 10″ z Android 15. 11 konfiguracji Wi-Fi i 5G od 2 410 zł netto. Sprawdź warianty, ceny i zamów w TAKMA.',
     shortDescription: 'Zebra ET401 — tablet przemysłowy z czytnikiem kodów, Wi-Fi 7, IP68, opcjonalny RFID UHF. Tablet do magazynu, retail i produkcji. Android 15→18',
     description: `Dla kogo? Tablet Zebra ET401 to najnowsza generacja tabletu przemysłowego serii ET, zaprojektowana dla firm szukających wydajnego i wytrzymałego urządzenia do magazynu, produkcji, logistyki, retail, healthcare i pracy w terenie — z najdłuższym wsparciem Android na rynku (do A18, ~9 lat aktualizacji bezpieczeństwa).
 
@@ -41748,7 +41748,9 @@ Wybierz skaner według potrzeb: SE4100 (imager 2D, standard) lub SR500 (imager 2
 
 Łączność Wi-Fi 7 (802.11be) tri-band 2,4/5/6 GHz z przepustowością do 5,8 Gbit/s, Bluetooth 6.0, NFC i opcjonalny modem 5G FR1 z dual SIM (nano + eSIM). Kamera 16 MP z tyłu (PDAF), opcjonalna ultra-wide 13 MP i 8 MP z przodu. Dual-band GNSS (GPS, GLONASS, Galileo, BeiDou).
 
-Pakiet Mobility DNA w cenie urządzenia: StageNow, OEMConfig, Enterprise Browser, LifeGuard (patche bezpieczeństwa do ~2034), PowerPrecision (analityka baterii), Device Tracker (lokalizacja zagubionego tabletu). Wsteczna kompatybilność z większością akcesoriów ET40/ET45 (stacje ładowania, uchwyty do wózków). Szczegółowa dokumentacja techniczna na zebra.com oraz instrukcja po polsku na [serwis-zebry.pl](https://www.serwis-zebry.pl/instrukcje/zebra-et401/instrukcja-po-polsku).`,
+Pakiet Mobility DNA w cenie urządzenia: StageNow, OEMConfig, Enterprise Browser, LifeGuard (patche bezpieczeństwa do ~2034), PowerPrecision (analityka baterii), Device Tracker (lokalizacja zagubionego tabletu). Wsteczna kompatybilność z większością akcesoriów ET40/ET45 (stacje ładowania, uchwyty do wózków). Szczegółowa dokumentacja techniczna na zebra.com oraz instrukcja po polsku na [serwis-zebry.pl](https://www.serwis-zebry.pl/instrukcje/zebra-et401/instrukcja-po-polsku).
+
+Szukasz szczegółowego porównania z konkurencją i poradnika migracji? Przeczytaj <a href="/poradnik/zebra-et401-tablet-przemyslowy-nowej-generacji">kompletny przewodnik po Zebra ET401</a> z tabelami porównawczymi i kalkulacją kosztów.`,
     categoryId: 'tablety-przemyslowe',
     subcategoryIds: ['tablety-przemyslowe'],
     sameAs: 'https://www.zebra.com/us/en/products/tablets/et4x-series/et401.html',
@@ -41940,8 +41942,8 @@ Pakiet Mobility DNA w cenie urządzenia: StageNow, OEMConfig, Enterprise Browser
     ],
     faq: [
       {
-        question: 'Czym różni się Zebra ET401 od ET40?',
-        answer: 'ET401 to następca ET40 z procesorem Qualcomm Dragonwing Q-6690 (42% szybszym), Wi-Fi 7 (tri-band, do 5,8 Gbit/s), Bluetooth 6.0, IP68 (vs IP65 w ET40), opcjonalnym zintegrowanym RFID UHF, kamerą 16 MP (vs 13 MP), ekranem 600 nit (vs 500 nit) z Gorilla Glass 5 i Androidem 15→18 z wsparciem do ~2034 (vs Android 13→17 w ET40). Obudowa jest kompatybilna wstecz z większością akcesoriów ET40/ET45 (stacje ładowania, uchwyty do wózków).',
+        question: 'Jakie akcesoria z ET40 i ET45 pasują do ET401?',
+        answer: 'Prawie wszystkie — ET401 zachowuje zgodność wsteczną z akcesoriami ET40/ET45. Stacje dokujące, uchwyty do wózków widłowych, ochraniacze (rugged booty), ładowarki baterii i paski działają z ET401. Wystarczy wymienić sam tablet — infrastruktura akcesoriów pozostaje. Jedyny wyjątek to adapter ET5x do wózków widłowych, który wymaga nowej wersji dla ET401.',
       },
       {
         question: 'Czy Zebra ET401 ma zintegrowany czytnik RFID?',
