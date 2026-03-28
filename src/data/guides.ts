@@ -10843,7 +10843,7 @@ export const guides: Guide[] = [
   slug: 'zebra-dimensioning-mobilny-pomiar-paczek',
   title: 'Zebra Dimensioning — mobilny pomiar wymiarów paczek terminalem',
   seoTitle: 'Zebra Dimensioning — mobilny pomiar paczek terminalem',
-  heroImage: '/images/guides/zebra-et401-przewodnik.webp',
+  heroImage: '/images/guides/zebra-dimensioning.webp',
   seoDescription: 'Poznaj Zebra Dimensioning — technologię mobilnego pomiaru wymiarów paczek na terminalach Zebra z kamerą ToF. Certified vs Mobile Parcel, kompatybilne modele.',
   excerpt: 'Jak zmierzyć paczkę jednym kliknięciem? Zebra Dimensioning wykorzystuje kamerę ToF do mobilnego pomiaru wymiarów — bez taśmy mierniczej, bez zewnętrznych sensorów.',
   category: 'poradnik',
