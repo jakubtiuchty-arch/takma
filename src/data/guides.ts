@@ -10856,7 +10856,7 @@ export const guides: Guide[] = [
     {
       id: 'wprowadzenie',
       heading: 'Dlaczego ręczny pomiar paczek to problem?',
-      content: `<p>Rynek KEP (kurier-ekspres-paczka) w Polsce rośnie rok do roku o kilkanaście procent. Więcej paczek to więcej pomiarów wymiarów — a każdy ręczny pomiar taśmą mierniczą to potencjalny błąd. Badania branżowe wskazują, że <strong>3-7% przychodów firm kurierskich ucieka</strong> przez niedokładne wymiarowanie przesyłek: zaniżone wymiary oznaczają zaniżone opłaty, a zawyżone — reklamacje klientów i spory.</p>
+      content: `<p>Rynek KEP (kurier-ekspres-paczka) w Polsce rośnie rok do roku o kilkanaście procent. Więcej paczek to więcej pomiarów wymiarów — a każdy ręczny pomiar taśmą mierniczą to potencjalny błąd. Według danych Zebra Technologies, <strong>3-7% przychodów firm kurierskich ucieka</strong> przez niedokładne wymiarowanie przesyłek: zaniżone wymiary oznaczają zaniżone opłaty, a zawyżone — reklamacje klientów i spory.</p>
 
 <p><strong>Zebra Dimensioning</strong> eliminuje ten problem. Wystarczy jeden terminal mobilny Zebra z kamerą ToF (Time-of-Flight) i jedno naciśnięcie przycisku — wymiary paczki pojawiają się na ekranie w sekundę. Bez taśmy mierniczej, bez zewnętrznych czujników, bez ręcznego wpisywania danych. Technologia jest dostępna w dwóch wariantach: <strong>Certified Mobile Parcel</strong> (certyfikowany, do naliczania opłat) i <strong>Mobile Parcel</strong> (do operacji wewnętrznych). Sprawdź <a href="/terminale-mobilne">terminale mobilne Zebra</a> kompatybilne z dimensioning.</p>`
     },
@@ -10947,7 +10947,7 @@ export const guides: Guide[] = [
 <p>Gdy wymiary paczki bezpośrednio determinują cenę dla klienta — firmy kurierskie, punkty nadań, sortownie. Certyfikat Weights & Measures oznacza, że pomiar jest <strong>prawnie wiążący</strong> i może stanowić podstawę naliczania opłat. To eliminuje spory z nadawcami i zapewnia pełne pokrycie kosztów transportu.</p>
 
 <h3>Kiedy Mobile Parcel?</h3>
-<p>Gdy wymiary służą do optymalizacji operacji wewnętrznych — rozmieszczanie towaru w magazynie (slotting), planowanie załadunku, paletyzacja. Badania wskazują, że <strong>nawet 20% przestrzeni magazynowej jest niewykorzystane</strong> z powodu niedokładnych pomiarów gabarytów. Mobile Parcel dodatkowo obsługuje kształty nieregularne — opony, walizki, beczki, paczki w folii stretch — co jest kluczowe w magazynach z różnorodnym asortymentem.</p>`
+<p>Gdy wymiary służą do optymalizacji operacji wewnętrznych — rozmieszczanie towaru w magazynie (slotting), planowanie załadunku, paletyzacja. Według analiz branżowych (Zebra Warehousing Vision Study), <strong>nawet 20% przestrzeni magazynowej jest niewykorzystane</strong> z powodu niedokładnych pomiarów gabarytów. Mobile Parcel dodatkowo obsługuje kształty nieregularne — opony, walizki, beczki, paczki w folii stretch — co jest kluczowe w magazynach z różnorodnym asortymentem.</p>`
     },
     {
       id: 'ograniczenia',
@@ -11116,7 +11116,7 @@ export const guides: Guide[] = [
 <p>Certified Mobile Parcel w rękach kuriera lub pracownika punktu nadań. Pomiar przy odbiorze paczki — wymiary trafiają bezpośrednio do systemu taryfikacji. Eliminacja sporów z nadawcami o gabaryty, pełne pokrycie kosztów transportu. Kurier mierzy paczkę w 2 sekundy zamiast 30 sekund taśmą mierniczą — przy 100 paczkach dziennie to prawie godzina zaoszczędzonego czasu.</p>
 
 <h3>Magazyn i dystrybucja</h3>
-<p>Mobile Parcel na przyjęciu towaru — każda paczka jest mierzona i przypisywana do optymalnej lokalizacji (slotting). Dokładne wymiary pozwalają lepiej wykorzystać przestrzeń regałową. Szacuje się, że <strong>nawet 20% przestrzeni magazynowej marnuje się</strong> przez niedokładne lub brakujące dane o gabarytach SKU. Regularne wymiarowanie asortymentu zwraca się w ciągu miesięcy.</p>
+<p>Mobile Parcel na przyjęciu towaru — każda paczka jest mierzona i przypisywana do optymalnej lokalizacji (slotting). Dokładne wymiary pozwalają lepiej wykorzystać przestrzeń regałową. Według Zebra Warehousing Vision Study, <strong>nawet 20% przestrzeni magazynowej marnuje się</strong> przez niedokładne lub brakujące dane o gabarytach SKU. Regularne wymiarowanie asortymentu zwraca się w ciągu miesięcy.</p>
 
 <h3>Transport i załadunek</h3>
 <p>Pomiar paczek przed załadunkiem pozwala precyzyjnie zaplanować wykorzystanie przestrzeni ładunkowej. Lepsze planowanie = mniej kursów, niższe koszty paliwa, mniejszy ślad węglowy. Szczególnie istotne w transporcie drobnicowym i przesyłkach częściowych (LTL), gdzie optymalizacja załadunku bezpośrednio wpływa na rentowność.</p>
@@ -11158,7 +11158,7 @@ export const guides: Guide[] = [
 
 <p>Wybór między <strong>Certified Mobile Parcel</strong> (do naliczania opłat) a <strong>Mobile Parcel</strong> (do operacji wewnętrznych) zależy od tego, czy wymiary mają służyć taryfikacji wobec klienta, czy optymalizacji własnych procesów. Oba warianty działają na tych samych terminalach — wystarczy odpowiednia licencja.</p>
 
-<p>Potrzebujesz pomocy w doborze terminala z funkcją dimensioning? <a href="/kontakt">Skontaktuj się z nami</a> — jako partner Zebra doradzimy optymalny model i konfigurację.</p>`
+<p>Potrzebujesz pomocy w doborze terminala z funkcją dimensioning? <a href="/kontakt">Skontaktuj się z nami</a> — jako partner Zebra doradzimy optymalny model i konfigurację. Więcej informacji o technologii Zebra Dimensioning znajdziesz w <a href="https://www.zebra.com/us/en/software/mobile-computer-software/dimensioning.html" target="_blank" rel="noopener">oficjalnej dokumentacji Zebra</a>.</p>`
     },
   ],
 
