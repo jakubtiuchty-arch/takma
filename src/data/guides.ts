@@ -10839,6 +10839,229 @@ export const guides: Guide[] = [
     { title: 'Kontakt — zapytaj o wycenę flotową', href: '/kontakt' },
   ],
 },
+{
+  slug: 'zebra-dimensioning-mobilny-pomiar-paczek',
+  title: 'Zebra Dimensioning — mobilny pomiar wymiarów paczek terminalem',
+  seoTitle: 'Zebra Dimensioning — mobilny pomiar wymiarów paczek | Poradnik 2026',
+  seoDescription: 'Poznaj Zebra Dimensioning — technologię mobilnego pomiaru wymiarów paczek na terminalach Zebra z kamerą ToF. Certified vs Mobile Parcel, kompatybilne modele.',
+  excerpt: 'Jak zmierzyć paczkę jednym kliknięciem? Zebra Dimensioning wykorzystuje kamerę ToF do mobilnego pomiaru wymiarów — bez taśmy mierniczej, bez zewnętrznych sensorów.',
+  category: 'poradnik',
+  tags: ['dimensioning', 'zebra', 'pomiar-paczek', 'tof', 'logistyka', 'kep'],
+  publishedAt: '2026-03-28',
+  updatedAt: '2026-03-28',
+  readTime: '8 min',
+
+  sections: [
+    {
+      id: 'wprowadzenie',
+      heading: 'Dlaczego ręczny pomiar paczek to problem?',
+      content: `<p>Rynek KEP (kurier-ekspres-paczka) w Polsce rośnie rok do roku o kilkanaście procent. Więcej paczek to więcej pomiarów wymiarów — a każdy ręczny pomiar taśmą mierniczą to potencjalny błąd. Badania branżowe wskazują, że <strong>3-7% przychodów firm kurierskich ucieka</strong> przez niedokładne wymiarowanie przesyłek: zaniżone wymiary oznaczają zaniżone opłaty, a zawyżone — reklamacje klientów i spory.</p>
+
+<p><strong>Zebra Dimensioning</strong> eliminuje ten problem. Wystarczy jeden terminal mobilny Zebra z kamerą ToF (Time-of-Flight) i jedno naciśnięcie przycisku — wymiary paczki pojawiają się na ekranie w sekundę. Bez taśmy mierniczej, bez zewnętrznych czujników, bez ręcznego wpisywania danych. Technologia jest dostępna w dwóch wariantach: <strong>Certified Mobile Parcel</strong> (certyfikowany, do naliczania opłat) i <strong>Mobile Parcel</strong> (do operacji wewnętrznych). Sprawdź <a href="/terminale-mobilne">terminale mobilne Zebra</a> kompatybilne z dimensioning.</p>`
+    },
+    {
+      id: 'jak-dziala',
+      heading: 'Jak działa Zebra Dimensioning?',
+      content: `<p>Sercem technologii jest <strong>wbudowana kamera ToF (Time-of-Flight)</strong> w terminalu Zebra. Kamera emituje impulsy podczerwieni i mierzy czas ich powrotu po odbiciu od obiektu — na tej podstawie tworzy mapę głębokości z dokładnością do milimetrów. Nie potrzeba żadnych zewnętrznych sensorów, nakładek ani statywów.</p>
+
+<h3>Metoda point-and-shoot</h3>
+<p>Pomiar jest maksymalnie prosty: operator celuje terminalem w paczkę z odległości ok. 60 cm i naciska przycisk pomiaru. Algorytmy AI rekonstruują trójwymiarowy kształt obiektu i obliczają <strong>MBB (Minimum Bounding Box)</strong> — najmniejszy prostopadłościan otaczający paczkę. Wynik pojawia się na ekranie w ciągu sekundy.</p>
+
+<h3>Parametry techniczne pomiaru</h3>
+<ul>
+  <li><strong>Rozdzielczość:</strong> 0,1 cm (1 mm)</li>
+  <li><strong>Zakres pomiarowy:</strong> od 10 cm do 120 cm (długość boku)</li>
+  <li><strong>Odległość pomiaru:</strong> ok. 30-100 cm od obiektu</li>
+  <li><strong>Obsługiwane kształty:</strong> prostopadłościenne (kartony, pudła) oraz nieregularne (opony, walizki, beczki, paczki w folii stretch)</li>
+  <li><strong>Warunki oświetlenia:</strong> pomiar działa zarówno wewnątrz budynków, jak i na zewnątrz — kamera ToF jest niezależna od światła widzialnego</li>
+</ul>
+
+<p>Aplikacja <strong>MD Client</strong> (Mobility DNA Dimensioning Client) jest preinstalowana na kompatybilnych terminalach — wystarczy aktywować licencję i można rozpocząć pomiary.</p>`
+    },
+    {
+      id: 'certified-vs-mobile',
+      heading: 'Certified Mobile Parcel vs Mobile Parcel — co wybrać?',
+      content: `<p>Zebra oferuje dwa warianty dimensioning, które różnią się certyfikacją i zakresem obsługiwanych kształtów:</p>
+
+<table class="w-full text-xs sm:text-sm border-collapse">
+  <thead>
+    <tr>
+      <th class="border border-gray-200 px-2 sm:px-3 py-2 text-left bg-gray-50">Cecha</th>
+      <th class="border border-gray-200 px-2 sm:px-3 py-2 text-left bg-gray-50">Certified Mobile Parcel</th>
+      <th class="border border-gray-200 px-2 sm:px-3 py-2 text-left bg-gray-50">Mobile Parcel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Certyfikacja Weights & Measures</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2"><strong>Tak</strong> — legal-for-trade</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Nie</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Naliczanie opłat za przesyłkę</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2"><strong>Tak</strong></td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Nie (tylko wewnętrznie)</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Paczki prostopadłościenne</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Tak</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Tak</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Paczki nieregularne</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Nie</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2"><strong>Tak</strong></td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Zastosowanie</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Kurier, punkt nadań, sortownia</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Magazyn, transport, retail, linie lotnicze</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Kiedy Certified Mobile Parcel?</h3>
+<p>Gdy wymiary paczki bezpośrednio determinują cenę dla klienta — firmy kurierskie, punkty nadań, sortownie. Certyfikat Weights & Measures oznacza, że pomiar jest <strong>prawnie wiążący</strong> i może stanowić podstawę naliczania opłat. To eliminuje spory z nadawcami i zapewnia pełne pokrycie kosztów transportu.</p>
+
+<h3>Kiedy Mobile Parcel?</h3>
+<p>Gdy wymiary służą do optymalizacji operacji wewnętrznych — rozmieszczanie towaru w magazynie (slotting), planowanie załadunku, paletyzacja. Badania wskazują, że <strong>nawet 20% przestrzeni magazynowej jest niewykorzystane</strong> z powodu niedokładnych pomiarów gabarytów. Mobile Parcel dodatkowo obsługuje kształty nieregularne — opony, walizki, beczki, paczki w folii stretch — co jest kluczowe w magazynach z różnorodnym asortymentem.</p>`
+    },
+    {
+      id: 'kompatybilne-terminale',
+      heading: 'Które terminale Zebra obsługują dimensioning?',
+      content: `<p>Zebra Dimensioning wymaga wbudowanej kamery ToF — nie każdy terminal ją posiada. Kamera ToF jest dostępna w wybranych konfiguracjach (SKU), dlatego przy zamówieniu należy wybrać odpowiedni wariant.</p>
+
+<table class="w-full text-xs sm:text-sm border-collapse">
+  <thead>
+    <tr>
+      <th class="border border-gray-200 px-2 sm:px-3 py-2 text-left bg-gray-50">Model</th>
+      <th class="border border-gray-200 px-2 sm:px-3 py-2 text-left bg-gray-50">Generacja</th>
+      <th class="border border-gray-200 px-2 sm:px-3 py-2 text-left bg-gray-50">Warianty z ToF</th>
+      <th class="border border-gray-200 px-2 sm:px-3 py-2 text-left bg-gray-50">Cena od</th>
+      <th class="border border-gray-200 px-2 sm:px-3 py-2 text-left bg-gray-50">Przeznaczenie</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2"><a href="/produkt/zebra-tc501">Zebra TC501</a></td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Nowa (2025+)</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">WiFi+ToF, 5G+ToF</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">4 734 zl</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Logistyka, field service</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2"><a href="/produkt/zebra-tc701">Zebra TC701</a></td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Nowa (2025+)</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">WiFi+ToF, 5G+ToF</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">8 099 zl</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Ultra-rugged, outdoor</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2"><a href="/produkt/zebra-tc53">Zebra TC53</a></td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Poprzednia</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Premium (ToF)</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">6 418 zl</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Retail, lekka logistyka</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2"><a href="/produkt/zebra-tc58">Zebra TC58</a></td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Poprzednia</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Premium (ToF)</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">6 751 zl</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Logistyka, field service</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2"><a href="/produkt/zebra-tc73">Zebra TC73</a></td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Poprzednia</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Premium (ToF)</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">7 044 zl</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Magazyn, produkcja</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2"><a href="/produkt/zebra-tc78">Zebra TC78</a></td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Poprzednia</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Premium (ToF)</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">7 742 zl</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Outdoor, transport</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Rekomendacja</h3>
+<p><strong><a href="/produkt/zebra-tc501">Zebra TC501</a></strong> z kamera ToF to najlepszy stosunek ceny do funkcjonalnosci — najnowsza generacja terminala w przystepnej cenie, idealna do logistyki i field service. Dla srodowisk ekstremalnych (upadki z wiekszych wysokosci, praca w deszczu, mrozie) — <strong><a href="/produkt/zebra-tc701">Zebra TC701</a></strong> z ToF oferuje klase wytrzymalosci ultra-rugged.</p>
+
+<p>Modele poprzedniej generacji (TC53, TC58, TC73, TC78) nadal sa wspierane i dostepne — sprawdza sie w firmach, ktore juz maja flote terminali Zebra serii TC5x/TC7x i chca zachowac kompatybilnosc akcesoriow.</p>`
+    },
+    {
+      id: 'zastosowania',
+      heading: 'Zastosowania Zebra Dimensioning w praktyce',
+      content: `<h3>Kurier i punkt nadań</h3>
+<p>Certified Mobile Parcel w rękach kuriera lub pracownika punktu nadań. Pomiar przy odbiorze paczki — wymiary trafiają bezpośrednio do systemu taryfikacji. Eliminacja sporów z nadawcami o gabaryty, pełne pokrycie kosztów transportu. Kurier mierzy paczkę w 2 sekundy zamiast 30 sekund taśmą mierniczą — przy 100 paczkach dziennie to prawie godzina zaoszczędzonego czasu.</p>
+
+<h3>Magazyn i dystrybucja</h3>
+<p>Mobile Parcel na przyjęciu towaru — każda paczka jest mierzona i przypisywana do optymalnej lokalizacji (slotting). Dokładne wymiary pozwalają lepiej wykorzystać przestrzeń regałową. Szacuje się, że <strong>nawet 20% przestrzeni magazynowej marnuje się</strong> przez niedokładne lub brakujące dane o gabarytach SKU. Regularne wymiarowanie asortymentu zwraca się w ciągu miesięcy.</p>
+
+<h3>Transport i załadunek</h3>
+<p>Pomiar paczek przed załadunkiem pozwala precyzyjnie zaplanować wykorzystanie przestrzeni ładunkowej. Lepsze planowanie = mniej kursów, niższe koszty paliwa, mniejszy ślad węglowy. Szczególnie istotne w transporcie drobnicowym i przesyłkach częściowych (LTL), gdzie optymalizacja załadunku bezpośrednio wpływa na rentowność.</p>
+
+<h3>Linie lotnicze i retail</h3>
+<p>Weryfikacja bagażu podręcznego — czy walizka mieści się w dopuszczonych wymiarach kabinowych? Dimensioning na terminalu daje jednoznaczną odpowiedź w sekundę. W retailu — kontrola wymiarów opakowań przy first article inspection, weryfikacja zgodności dostaw z zamówieniem.</p>`
+    },
+    {
+      id: 'podsumowanie',
+      heading: 'Podsumowanie — pomiar jednym kliknięciem',
+      content: `<p>Zebra Dimensioning zmienia wymiarowanie paczek z żmudnej, podatnej na błędy czynności ręcznej w szybki, precyzyjny pomiar jednym kliknięciem. Wbudowana kamera ToF eliminuje potrzebę zewnętrznych czujników i urządzeń pomiarowych. Rozdzielczość 0,1 cm i zakres 10-120 cm pokrywają zdecydowaną większość przesyłek w branży KEP i magazynowej.</p>
+
+<p>Wybór między <strong>Certified Mobile Parcel</strong> (do naliczania opłat) a <strong>Mobile Parcel</strong> (do operacji wewnętrznych) zależy od tego, czy wymiary mają służyć taryfikacji wobec klienta, czy optymalizacji własnych procesów. Oba warianty działają na tych samych terminalach — wystarczy odpowiednia licencja.</p>
+
+<p>Potrzebujesz pomocy w doborze terminala z funkcją dimensioning? <a href="/kontakt">Skontaktuj się z nami</a> — jako partner Zebra doradzimy optymalny model i konfigurację.</p>`
+    },
+  ],
+
+  faq: [
+    {
+      question: 'Czym jest Zebra Dimensioning?',
+      answer: 'Zebra Dimensioning to technologia mobilnego pomiaru wymiarów paczek i przesyłek przy użyciu wbudowanej kamery ToF (Time-of-Flight) w terminalach mobilnych Zebra. Umożliwia pomiar metodą point-and-shoot — wystarczy skierować terminal na paczkę i nacisnąć przycisk, a wymiary pojawiają się na ekranie w ciągu sekundy.',
+    },
+    {
+      question: 'Jaka jest różnica między Certified Mobile Parcel a Mobile Parcel?',
+      answer: 'Certified Mobile Parcel posiada certyfikat Weights & Measures (legal-for-trade) — wymiary mogą stanowić podstawę naliczania opłat za przesyłkę wobec klienta. Mobile Parcel służy do operacji wewnętrznych (slotting, planowanie załadunku) i dodatkowo obsługuje paczki o nieregularnych kształtach.',
+    },
+    {
+      question: 'Jakie terminale Zebra obsługują dimensioning?',
+      answer: 'Dimensioning obsługują terminale z wbudowaną kamerą ToF: Zebra TC501 i TC701 (nowa generacja, warianty WiFi+ToF i 5G+ToF) oraz Zebra TC53, TC58, TC73 i TC78 (poprzednia generacja, konfiguracje Premium z ToF). Kamera ToF jest opcją konfiguracyjną — należy wybrać odpowiedni SKU.',
+    },
+    {
+      question: 'Czy Zebra Dimensioning mierzy nieregularne kształty?',
+      answer: 'Tak, wersja Mobile Parcel obsługuje paczki o nieregularnych kształtach — opony, walizki, beczki, paczki w folii stretch, zgniecione kartony. Wersja Certified Mobile Parcel obsługuje wyłącznie kształty prostopadłościenne (pudła, kartony).',
+    },
+    {
+      question: 'Jaki jest zakres pomiarowy?',
+      answer: 'Zakres pomiarowy wynosi od 10 cm do 120 cm (długość boku paczki), przy rozdzielczości 0,1 cm (1 mm). Pomiar wykonuje się z odległości ok. 30-100 cm od obiektu.',
+    },
+    {
+      question: 'Czy pomiar działa na zewnątrz?',
+      answer: 'Tak, kamera ToF działa niezależnie od warunków oświetleniowych — zarówno wewnątrz budynków, jak i na zewnątrz w pełnym słońcu. Technologia Time-of-Flight wykorzystuje podczerwień, więc nie jest wrażliwa na natężenie światła widzialnego.',
+    },
+    {
+      question: 'Czy mogę naliczać opłaty za przesyłkę na podstawie pomiaru?',
+      answer: 'Opłaty za przesyłkę można naliczać wyłącznie na podstawie pomiaru Certified Mobile Parcel, który posiada certyfikat Weights & Measures (legal-for-trade). Wersja Mobile Parcel nie jest certyfikowana do celów taryfikacyjnych i może służyć tylko do operacji wewnętrznych.',
+    },
+    {
+      question: 'Jak zmierzyć paczkę terminalem Zebra?',
+      answer: 'Otwórz aplikację dimensioning (MD Client) na terminalu, skieruj kamerę ToF na paczkę z odległości ok. 60 cm i naciśnij przycisk pomiaru. Wymiary (długość, szerokość, wysokość) pojawiają się na ekranie w ciągu sekundy. Metoda point-and-shoot nie wymaga ustawiania paczki w specjalnej pozycji.',
+    },
+  ],
+
+  relatedLinks: [
+    { title: 'Zebra TC501 — karta produktu', href: '/produkt/zebra-tc501' },
+    { title: 'Zebra TC701 — karta produktu', href: '/produkt/zebra-tc701' },
+    { title: 'Zebra TC53 — karta produktu', href: '/produkt/zebra-tc53' },
+    { title: 'Zebra TC58 — karta produktu', href: '/produkt/zebra-tc58' },
+    { title: 'Terminale mobilne — oferta', href: '/terminale-mobilne' },
+    { title: 'Kontakt — zapytaj o wycenę', href: '/kontakt' },
+  ],
+},
 ]
 
 // Helper functions
