@@ -426,26 +426,33 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
 
                       {/* Availability + Price — hidden on mobile */}
                       <div className="hidden sm:flex flex-col items-end flex-shrink-0 gap-0.5">
-                        {result.availability && (
+                        {(() => {
+                          const stock = result.partNumber ? stockData.get(result.partNumber) : undefined
+                          const liveAvail = stock?.found
+                            ? (stock.totalStock > 0 ? 'available' : 'unavailable')
+                            : result.availability
+                          if (!liveAvail) return null
+                          return (
                           <span className={clsx(
                             'text-[10px] font-medium flex items-center gap-1',
-                            result.availability === 'available' && 'text-green-600',
-                            result.availability === 'on-order' && 'text-yellow-600',
-                            result.availability === 'unavailable' && 'text-red-500',
+                            liveAvail === 'available' && 'text-green-600',
+                            liveAvail === 'on-order' && 'text-yellow-600',
+                            liveAvail === 'unavailable' && 'text-red-500',
                           )}>
                             <span className={clsx(
                               'w-1.5 h-1.5 rounded-full',
-                              result.availability === 'available' && 'bg-green-500',
-                              result.availability === 'on-order' && 'bg-yellow-500',
-                              result.availability === 'unavailable' && 'bg-red-400',
+                              liveAvail === 'available' && 'bg-green-500',
+                              liveAvail === 'on-order' && 'bg-yellow-500',
+                              liveAvail === 'unavailable' && 'bg-red-400',
                             )} />
-                            {result.availability === 'available'
+                            {liveAvail === 'available'
                               ? (result.categoryId === 'drukarki-etykiet' ? 'Dostępna' : 'Dostępny')
-                              : result.availability === 'on-order'
+                              : liveAvail === 'on-order'
                               ? 'Na zamówienie'
                               : (result.categoryId === 'drukarki-etykiet' ? 'Niedostępna' : 'Niedostępny')}
                           </span>
-                        )}
+                          )
+                        })()}
                         {displayPrice && (
                           <span className="text-sm font-semibold text-gray-900 tabular-nums">
                             {displayPrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
