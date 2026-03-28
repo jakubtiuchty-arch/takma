@@ -1,8 +1,7 @@
 'use client'
 
-import { createContext, useContext, useMemo } from 'react'
+import { createContext, useContext, useMemo, useState, useEffect } from 'react'
 import { Product } from '@/data/products'
-import { useStockData } from './StockInfo'
 import type { StockInfo as StockResult } from '@/lib/ingram'
 
 interface SmartPriceState {
@@ -45,7 +44,46 @@ export function SmartPriceProvider({ product, children }: { product: Product; ch
   }, [product])
 
   const partNumbers = useMemo(() => allVariants.map(v => v.partNumber), [allVariants])
-  const { stockData, loading } = useStockData(partNumbers)
+
+  // Bezpośredni fetch — niezależny od globalnego batchera ProductCard
+  const [stockData, setStockData] = useState<Map<string, StockResult>>(new Map())
+  const [loading, setLoading] = useState(partNumbers.length > 0)
+
+  const pnKey = partNumbers.join(',')
+  useEffect(() => {
+    if (partNumbers.length === 0) { setLoading(false); return }
+
+    let cancelled = false
+    setLoading(true)
+
+    // Dziel na chunki po 20 PNow (bezpieczenstwo przed timeoutem)
+    const chunks: string[][] = []
+    for (let i = 0; i < partNumbers.length; i += 20) {
+      chunks.push(partNumbers.slice(i, i + 20))
+    }
+
+    Promise.all(
+      chunks.map(chunk =>
+        fetch(`/api/stock?pn=${chunk.join(',')}`)
+          .then(r => r.ok ? r.json() : { results: [] })
+          .catch(() => ({ results: [] }))
+      )
+    ).then(responses => {
+      if (cancelled) return
+      const map = new Map<string, StockResult>()
+      for (const data of responses) {
+        for (const item of (data.results || [])) {
+          map.set(item.partNumber, item)
+        }
+      }
+      setStockData(map)
+    }).finally(() => {
+      if (!cancelled) setLoading(false)
+    })
+
+    return () => { cancelled = true }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pnKey])
 
   const state = useMemo<SmartPriceState>(() => {
     if (allVariants.length === 0) {
