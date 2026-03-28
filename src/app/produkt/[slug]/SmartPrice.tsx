@@ -1,9 +1,9 @@
 'use client'
 
-import { useMemo, useState, useRef, useEffect, useCallback } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import { createPortal } from 'react-dom'
 import { Product } from '@/data/products'
-import { useStockData } from './StockInfo'
+import { useSmartPrice } from './SmartPriceContext'
 import StockInfo from './StockInfo'
 
 interface SmartPriceProps {
@@ -16,71 +16,11 @@ const DEVICE_CATEGORIES = new Set([
   'terminale-mobilne', 'skanery-kodow-kreskowych', 'tablety-przemyslowe',
 ])
 
-/**
- * Wyświetla cenę produktu z inteligentnym fallbackiem:
- * Jeśli najtańszy wariant jest niedostępny, pokazuje najtańszy DOSTĘPNY wariant.
- * Dzięki temu klient nie widzi "Niedostępny" i nie odchodzi — widzi alternatywę.
- */
 export default function SmartPrice({ product }: SmartPriceProps) {
-  // Zbierz wszystkie warianty z PN-ami (nawet bez statycznej ceny — API ją dostarczy)
-  const allVariants = useMemo(() => {
-    if (product.variants && product.variants.length > 0) {
-      return product.variants
-        .map(v => ({ partNumber: v.partNumber, price: v.priceFrom ?? null, name: v.name, staticAvailability: v.availability }))
-        .sort((a, b) => (a.price ?? Infinity) - (b.price ?? Infinity))
-    }
-    const pnSpec = product.specifications.find(s => s.name === 'Part Number')
-    if (pnSpec) {
-      return [{ partNumber: pnSpec.value, price: product.priceFrom ?? null, name: '', staticAvailability: product.availability ?? 'available' as const }]
-    }
-    return []
-  }, [product])
-
-  const partNumbers = useMemo(() => allVariants.map(v => v.partNumber), [allVariants])
-  const { stockData, loading } = useStockData(partNumbers)
-
-  // Znajdź najlepszy wariant do wyświetlenia (uwzględniając ceny live z API)
-  const displayed = useMemo(() => {
-    if (allVariants.length === 0) return null
-
-    // Jeśli jeszcze ładuje — pokaż najtańszy ze statyczną ceną
-    if (loading || stockData.size === 0) {
-      const withPrice = allVariants.filter(v => v.price !== null)
-      return withPrice.length > 0
-        ? { ...withPrice[0], fallback: false }
-        : { ...allVariants[0], fallback: false }
-    }
-
-    // Zbuduj listę wariantów z cenami live (API) lub statycznymi
-    const withLivePrices = allVariants.map(v => {
-      const s = stockData.get(v.partNumber)
-      const livePrice = (s?.found && s?.price) ? s.price : null
-      // hasStock: API potwierdza stock LUB API nie zna PNu ale statycznie jest "available"
-      const hasStock = s?.found
-        ? s.totalStock > 0
-        : v.staticAvailability === 'available'
-      return { ...v, effectivePrice: livePrice ?? v.price, hasStock }
-    }).sort((a, b) => (a.effectivePrice ?? Infinity) - (b.effectivePrice ?? Infinity))
-
-    // Sprawdź czy API w ogóle zwróciło dane
-    const anyFound = partNumbers.some(pn => stockData.get(pn)?.found)
-    if (!anyFound) {
-      return { ...withLivePrices[0], fallback: false }
-    }
-
-    // Najtańszy dostępny
-    const cheapestAvailable = withLivePrices.find(v => v.hasStock)
-    if (cheapestAvailable) {
-      const isFirst = cheapestAvailable.partNumber === withLivePrices[0].partNumber
-      return { ...cheapestAvailable, fallback: !isFirst }
-    }
-
-    // Wszystkie niedostępne — pokaż najtańszy
-    return { ...withLivePrices[0], fallback: false }
-  }, [allVariants, stockData, loading, partNumbers])
+  const { displayedPn, price, loading, variantName } = useSmartPrice()
 
   // Brak wariantów i brak PNa → "Cena na zapytanie"
-  if (!displayed && !product.priceFrom && allVariants.length === 0) {
+  if (!displayedPn && !product.priceFrom) {
     return (
       <div className="bg-gray-100 shadow-sm rounded-xl p-4 sm:p-6 mb-6">
         <p className="text-lg text-gray-600">Cena na zapytanie</p>
@@ -88,22 +28,14 @@ export default function SmartPrice({ product }: SmartPriceProps) {
     )
   }
 
-  const pn = displayed?.partNumber
-
-  // Live cena z API dystrybutora — fallback na statyczną
-  const stock = pn ? stockData.get(pn) : null
-  const livePrice = (stock?.found && stock?.price) ? stock.price : null
-  const price = livePrice ?? displayed?.price ?? product.priceFrom
-
-  // Dla StockInfo przekaż tylko PN wyświetlanego wariantu — żeby status był spójny z ceną
-  const displayedPn = pn ? [pn] : partNumbers
+  const displayedPnArr = displayedPn ? [displayedPn] : []
 
   return (
     <div className="bg-gray-100 shadow-sm rounded-xl p-4 sm:p-6 mb-6">
-      {pn && (
+      {displayedPn && (
         <p className="text-xs font-mono text-gray-500 mb-2 flex items-center gap-1.5">
-          PN: {pn}
-          {displayed?.name && <PNVariantTooltip variantName={displayed.name} />}
+          PN: {displayedPn}
+          {variantName && <PNVariantTooltip variantName={variantName} />}
         </p>
       )}
       <div className="flex items-baseline gap-2">
@@ -124,7 +56,7 @@ export default function SmartPrice({ product }: SmartPriceProps) {
           <>{(price * 1.23).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł brutto</>
         )}
       </p>
-      {displayedPn.length > 0 && <StockInfo partNumbers={displayedPn} />}
+      {displayedPnArr.length > 0 && <StockInfo partNumbers={displayedPnArr} />}
     </div>
   )
 }

@@ -5,7 +5,7 @@ import { Button } from '@/components/ui'
 import { PlusIcon, CheckIcon, BellIcon } from '@/components/ui/Icons'
 import { useCartStore } from '@/store/cartStore'
 import { Product } from '@/data/products'
-import { useStockData } from './StockInfo'
+import { useSmartPrice } from './SmartPriceContext'
 import { trackAddToCart, trackNotifyMe } from '@/lib/ga-events'
 
 interface AddToRFQButtonProps {
@@ -109,16 +109,7 @@ function NotifyForm({ partNumber, productName, compact }: { partNumber: string; 
 export default function AddToRFQButton({ product, compact = false }: AddToRFQButtonProps) {
   const { addItem, isInCart } = useCartStore()
   const [mounted, setMounted] = useState(false)
-
-  // Wyciągnij Part Numbery z wariantów lub specyfikacji
-  const partNumbers = product.variants && product.variants.length > 0
-    ? product.variants.map(v => v.partNumber)
-    : (() => {
-        const pnSpec = product.specifications.find(s => s.name === 'Part Number')
-        return pnSpec ? [pnSpec.value] : []
-      })()
-
-  const { stockData, loading: stockLoading } = useStockData(partNumbers)
+  const { displayedPn, price, loading: stockLoading, stockData, partNumbers } = useSmartPrice()
 
   useEffect(() => {
     setMounted(true)
@@ -126,10 +117,7 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
 
   const inRFQ = mounted ? isInCart(product.id) : false
 
-  // Sprawdź czy produkt jest niedostępny
-  // 1. Jeśli Ingram znalazł PN (found: true) → użyj live danych (totalStock > 0 = available)
-  // 2. Jeśli Ingram NIE zna PN (found: false) i produkt BEZ wariantów → fallback na statyczną availability
-  // 3. Jeśli Ingram nie odpowiada i produkt MA warianty → pokaż koszyk (nie blokuj sprzedaży)
+  // Sprawdź czy produkt jest niedostępny (live dane lub statyczna availability)
   const hasVariants = product.variants && product.variants.length > 0
   const isUnavailable = !stockLoading && (() => {
     if (partNumbers.length > 0) {
@@ -143,36 +131,19 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
       }
       if (anyFound) return true
     }
-    // Fallback na statyczną dostępność — tylko dla produktów bez wariantów (akcesoria)
-    // Produkty z wariantami mają osobną logikę w VariantsTable
     if (!hasVariants) {
       return product.availability === 'unavailable'
     }
     return false
   })()
 
-  // Cena: live z API lub statyczna (product-level lub najtańszy wariant)
-  const price = (() => {
-    for (const pn of partNumbers) {
-      const stock = stockData.get(pn)
-      if (stock?.found && stock?.price) return stock.price
-    }
-    if (product.priceFrom) return product.priceFrom
-    const variantPrices = product.variants
-      ?.map(v => v.priceFrom)
-      .filter((p): p is number => p != null && p > 0)
-    return variantPrices && variantPrices.length > 0 ? Math.min(...variantPrices) : undefined
-  })()
-
   const handleAdd = () => {
-    const pn = product.variants?.[0]?.partNumber
-      || product.specifications.find(s => s.name === 'Part Number')?.value
     addItem({
       id: product.id,
       name: product.name,
       slug: product.slug,
       image: product.images[0],
-      partNumber: pn,
+      partNumber: displayedPn,
       priceNetto: price,
       categoryId: product.categoryId,
     })
@@ -191,9 +162,9 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
     return <NotifyForm partNumber={pn} productName={product.name} compact={compact} />
   }
 
-  // Brak ceny → nie pokazuj koszyka, tylko "Zapytaj o produkt"
+  // Brak ceny → nie pokazuj koszyka
   if (!stockLoading && !price) {
-    return null // Formularz RFQ jest renderowany osobno na stronie produktu
+    return null
   }
 
   const isZebra = product.manufacturerId === 'zebra'

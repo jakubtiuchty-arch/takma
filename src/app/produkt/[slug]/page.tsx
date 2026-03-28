@@ -24,6 +24,7 @@ import VariantsTable from './VariantsTable'
 import StockInfo, { LiveAvailabilityBadge } from './StockInfo'
 import SmartPrice from './SmartPrice'
 import StickyPrice from './StickyPrice'
+import { SmartPriceProvider } from './SmartPriceContext'
 import ComparisonTable from './ComparisonTable'
 import SpecsAccordion from './SpecsAccordion'
 import ViewItemTracker from './ViewItemTracker'
@@ -356,7 +357,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   } : null
 
   return (
-    <>
+    <SmartPriceProvider product={product}>
       <ViewItemTracker
         itemId={product.id}
         itemName={product.name}
@@ -934,7 +935,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
       {/* Sticky mobile CTA */}
       <div className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-gray-200 px-4 pt-2.5 pb-[max(0.625rem,env(safe-area-inset-bottom))] lg:hidden z-40">
         <div className="flex items-center gap-2">
-          <StickyPrice product={product} />
+          <StickyPrice />
           <div className="flex-1 min-w-0">
             <AddToRFQButton product={product} compact />
           </div>
@@ -944,6 +945,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
       {/* Spacer for mobile sticky CTA */}
       <div className="h-20 lg:hidden" />
-    </>
+    </SmartPriceProvider>
   )
 }
