@@ -11299,7 +11299,7 @@ export const guides: Guide[] = [
       id: 'moduly',
       heading: 'Kluczowe moduły VisibilityIQ Foresight',
       content: `
-<h3>Battery Analytics — koniec z padaniem baterii w połowie zmiany</h3>
+<h3>Battery Analytics — koniec z awarią baterii w połowie zmiany</h3>
 
 <p>Moduł Battery Analytics to najczęstszy powód, dla którego firmy sięgają po Foresight. Platforma monitoruje stan zdrowia każdej baterii w flocie: health score, liczbę cykli ładowania, impedancję i temperaturę pracy. Na tej podstawie algorytmy ML przewidują, kiedy bateria osiągnie próg degradacji — i sygnalizują konieczność wymiany <strong>zanim pracownik zostanie z rozładowanym terminalem</strong>.</p>
 
@@ -11322,7 +11322,7 @@ export const guides: Guide[] = [
 <p>Foresight monitoruje:</p>
 <ul>
   <li><strong>Wykorzystanie</strong> — gdzie i jak intensywnie drukarki pracują</li>
-  <li><strong>Ustawienia</strong> — czy parametry druku (ciemność, prędkość) są optymalne, czy ktoś je zmienił</li>
+  <li><strong>Ustawienia</strong> — czy parametry druku (zaczernienie, prędkość) są optymalne, czy ktoś je zmienił</li>
   <li><strong>Alerty</strong> — konfigurowalne powiadomienia o problemach (brak mediów, przegrzanie, błędy)</li>
   <li><strong>Stan baterii</strong> — w drukarkach mobilnych, analogicznie do terminali</li>
 </ul>
