@@ -924,9 +924,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
       </div>
 
       {/* Sticky mobile CTA */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-gray-200 px-4 pt-2.5 pb-[max(0.625rem,env(safe-area-inset-bottom))] lg:hidden z-40">
-        <div className="flex items-center gap-2">
-          <StickyPrice />
+      <div className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-gray-200 px-4 pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] lg:hidden z-40">
+        <StickyPrice />
+        <div className="flex items-center gap-2 mt-1.5">
           <div className="flex-1 min-w-0">
             <AddToRFQButton product={product} compact />
           </div>
@@ -935,7 +935,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
       </div>
 
       {/* Spacer for mobile sticky CTA */}
-      <div className="h-20 lg:hidden" />
+      <div className="h-24 lg:hidden" />
     </SmartPriceProvider>
   )
 }

@@ -12,15 +12,13 @@ export default function StickyPrice() {
       {loading || !price ? (
         <span className="inline-block h-6 w-24 bg-gray-200 rounded animate-pulse" />
       ) : (
-        <div className="leading-tight">
-          <div className="flex items-baseline">
-            <span className="text-base xs:text-xl font-bold text-gray-900 whitespace-nowrap">
-              {price.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
-            </span>
-            <span className="text-xs text-gray-500 ml-1">netto</span>
-          </div>
-          <span className="text-[11px] text-gray-400 whitespace-nowrap">
-            {(price * 1.23).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł brutto
+        <div className="flex items-baseline gap-2">
+          <span className="text-lg font-bold text-gray-900 whitespace-nowrap">
+            {price.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
+          </span>
+          <span className="text-xs text-gray-500">netto</span>
+          <span className="text-xs text-gray-400 whitespace-nowrap">
+            ({(price * 1.23).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł brutto)
           </span>
         </div>
       )}
