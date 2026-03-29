@@ -14,6 +14,7 @@ import {
   ChevronRightIcon,
   DownloadIcon,
   CheckIcon,
+  PhoneIcon,
 } from '@/components/ui/Icons'
 import LinkedText from '@/components/ui/LinkedText'
 import AddToRFQButton from './AddToRFQButton'
@@ -931,6 +932,13 @@ export default async function ProductPage({ params }: ProductPageProps) {
             <AddToRFQButton product={product} compact />
           </div>
           <AskAboutProductButton productName={product.name} productSlug={product.slug} compact />
+          <a
+            href="tel:+48607819688"
+            aria-label="Zadzwoń do nas"
+            className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary-600 text-white hover:bg-primary-700 transition-colors active:scale-[0.96] shrink-0"
+          >
+            <PhoneIcon size={20} />
+          </a>
         </div>
       </div>
 
