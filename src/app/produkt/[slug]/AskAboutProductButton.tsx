@@ -277,10 +277,10 @@ export default function AskAboutProductButton({
       <>
         <button
           onClick={() => setOpen(true)}
-          className="flex items-center justify-center gap-1.5 px-3 py-2 border-2 border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 active:scale-[0.98] whitespace-nowrap"
+          className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition-all duration-200 active:scale-[0.98]"
         >
           <MailIcon size={18} />
-          <span className="hidden xs:inline">Zapytaj</span>
+          Zapytaj o produkt
         </button>
         {mounted && open && (
           <InquiryModal

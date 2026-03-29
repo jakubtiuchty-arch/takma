@@ -24,7 +24,6 @@ import RelatedProducts from './RelatedProducts'
 import VariantsTable from './VariantsTable'
 import StockInfo from './StockInfo'
 import SmartPrice from './SmartPrice'
-import StickyPrice from './StickyPrice'
 import { SmartPriceProvider } from './SmartPriceContext'
 import ContextAvailabilityBadge from './ContextAvailabilityBadge'
 import ComparisonTable from './ComparisonTable'
@@ -925,25 +924,23 @@ export default async function ProductPage({ params }: ProductPageProps) {
       </div>
 
       {/* Sticky mobile CTA */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-gray-200 px-4 pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] lg:hidden z-40">
-        <StickyPrice />
-        <div className="flex items-center gap-2 mt-1.5">
+      <div className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-gray-200 px-4 py-2.5 pb-[max(0.625rem,env(safe-area-inset-bottom))] lg:hidden z-40">
+        <div className="flex items-center gap-2">
           <div className="flex-1 min-w-0">
-            <AddToRFQButton product={product} compact />
+            <AskAboutProductButton productName={product.name} productSlug={product.slug} compact />
           </div>
-          <AskAboutProductButton productName={product.name} productSlug={product.slug} compact />
           <a
             href="tel:+48607819688"
             aria-label="Zadzwoń do nas"
-            className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary-600 text-white hover:bg-primary-700 transition-colors active:scale-[0.96] shrink-0"
+            className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary-600 text-white hover:bg-primary-700 transition-colors active:scale-[0.96] shrink-0"
           >
-            <PhoneIcon size={20} />
+            <PhoneIcon size={22} />
           </a>
         </div>
       </div>
 
       {/* Spacer for mobile sticky CTA */}
-      <div className="h-24 lg:hidden" />
+      <div className="h-16 lg:hidden" />
     </SmartPriceProvider>
   )
 }
