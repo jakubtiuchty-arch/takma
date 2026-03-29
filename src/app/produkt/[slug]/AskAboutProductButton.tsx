@@ -91,10 +91,10 @@ function InquiryModal({
       {/* Backdrop */}
       <div className="absolute inset-0 bg-black/50" />
 
-      {/* Modal */}
+      {/* Modal — fullscreen na mobile, centered card na desktop */}
       <div
         ref={modalRef}
-        className="relative bg-white w-full sm:max-w-lg sm:rounded-2xl rounded-t-2xl max-h-[80dvh] sm:max-h-[90vh] overflow-y-auto shadow-2xl animate-slide-in-up"
+        className="relative bg-white w-full h-full sm:h-auto sm:max-w-lg sm:rounded-2xl sm:max-h-[90vh] overflow-y-auto shadow-2xl animate-slide-in-up"
       >
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
