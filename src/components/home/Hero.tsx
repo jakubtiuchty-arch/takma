@@ -142,7 +142,7 @@ export default function Hero() {
             <img
               src={slide.image}
               alt={slide.name}
-              className="absolute left-0 top-0 h-full w-auto object-contain object-left"
+              className="absolute inset-0 w-full h-full object-cover sm:object-contain sm:object-left sm:w-auto"
               style={{
                 maskImage: 'linear-gradient(to left, transparent 0%, black 20%)',
                 WebkitMaskImage: 'linear-gradient(to left, transparent 0%, black 20%)',
@@ -154,7 +154,7 @@ export default function Hero() {
             <img
               src={slide.image}
               alt={slide.name}
-              className="absolute right-0 top-0 h-full w-auto max-w-[100%] sm:max-w-[85%] object-contain object-right"
+              className="absolute inset-0 w-full h-full object-cover sm:object-contain sm:object-right sm:w-auto sm:max-w-[85%] sm:left-auto sm:right-0"
               style={{
                 maskImage: 'linear-gradient(to right, transparent 0%, black 25%)',
                 WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 25%)',
