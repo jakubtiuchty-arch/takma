@@ -200,12 +200,12 @@ export default function Hero() {
       {/* Content */}
       <div className={clsx(
         'container-main relative h-full flex items-end pb-14 sm:items-center sm:pb-0 z-20',
-        isLifestyle ? 'justify-end' : 'justify-start'
+        isLifestyle ? 'sm:justify-end' : 'justify-start'
       )}>
         <div
           className={clsx(
             'transition-all duration-500 ease-in-out',
-            isLifestyle ? 'max-w-md text-right translate-y-[10%]' : 'max-w-2xl',
+            isLifestyle ? 'max-w-2xl sm:max-w-md sm:text-right sm:translate-y-[10%]' : 'max-w-2xl',
             isTransitioning ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'
           )}
         >
