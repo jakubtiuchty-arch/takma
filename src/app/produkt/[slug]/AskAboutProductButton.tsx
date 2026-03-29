@@ -94,7 +94,7 @@ function InquiryModal({
       {/* Modal */}
       <div
         ref={modalRef}
-        className="relative bg-white w-full sm:max-w-lg sm:rounded-2xl rounded-t-2xl max-h-[90vh] overflow-y-auto shadow-2xl animate-slide-in-up"
+        className="relative bg-white w-full sm:max-w-lg sm:rounded-2xl rounded-t-2xl max-h-[80dvh] sm:max-h-[90vh] overflow-y-auto shadow-2xl animate-slide-in-up"
       >
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
@@ -124,7 +124,7 @@ function InquiryModal({
             </button>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="px-6 py-5 space-y-4">
+          <form onSubmit={handleSubmit} className="px-4 py-4 sm:px-6 sm:py-5 space-y-3 sm:space-y-4">
             <p className="text-sm text-gray-500 -mt-1">
               Wypełnij formularz, a nasz doradca skontaktuje się z Tobą.
             </p>
