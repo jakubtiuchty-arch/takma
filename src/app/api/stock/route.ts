@@ -282,9 +282,15 @@ export async function GET(request: NextRequest) {
       }
     }
 
+    // Nie cachuj pustych odpowiedzi — mogą wynikać z timeoutu dystrybutora
+    const anyFound = results.some(r => r.found)
+    const cacheHeader = anyFound
+      ? 'public, s-maxage=300, stale-while-revalidate=600'
+      : 'public, s-maxage=30, stale-while-revalidate=30'
+
     return NextResponse.json(response, {
       headers: {
-        'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600',
+        'Cache-Control': cacheHeader,
       },
     })
   } catch (error) {
