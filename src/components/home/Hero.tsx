@@ -107,7 +107,7 @@ export default function Hero() {
   const sectionBg = (slide.type === 'product' && slide.bgColor) ? slide.bgColor : '#0c1525'
 
   return (
-    <section className="relative overflow-hidden w-full h-[400px] md:h-[420px] lg:h-[520px]" style={{ backgroundColor: sectionBg }}>
+    <section className="relative overflow-hidden w-full h-[360px] sm:h-[400px] md:h-[420px] lg:h-[520px]" style={{ backgroundColor: sectionBg }}>
       {/* Tło — gradient mesh (nie dla info ani banner) */}
       {slide.type !== 'info' && !isBanner && <div className="absolute inset-0 bg-gradient-mesh-dark" />}
 
@@ -154,7 +154,7 @@ export default function Hero() {
             <img
               src={slide.image}
               alt={slide.name}
-              className="absolute right-0 top-0 h-full w-auto max-w-[85%] object-contain object-right"
+              className="absolute right-0 top-0 h-full w-auto max-w-[100%] sm:max-w-[85%] object-contain object-right"
               style={{
                 maskImage: 'linear-gradient(to right, transparent 0%, black 25%)',
                 WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 25%)',
@@ -173,6 +173,11 @@ export default function Hero() {
             />
           )}
         </div>
+      )}
+
+      {/* Gradient mobilny dla banerów — czytelność tekstu */}
+      {slide.type === 'product' && (isBanner || isImageLeft) && (
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent sm:from-black/50 sm:via-black/20 z-10" />
       )}
 
       {/* Gradienty — różne dla lifestyle vs packshot (baner: bez overlay'ów) */}
@@ -194,7 +199,7 @@ export default function Hero() {
 
       {/* Content */}
       <div className={clsx(
-        'container-main relative h-full flex items-center z-20',
+        'container-main relative h-full flex items-end pb-14 sm:items-center sm:pb-0 z-20',
         isLifestyle ? 'justify-end' : 'justify-start'
       )}>
         <div
@@ -265,7 +270,7 @@ export default function Hero() {
       </div>
 
       {/* Dots */}
-      <div className="absolute bottom-3 md:bottom-5 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2.5">
+      <div className="absolute bottom-4 md:bottom-5 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
         {slides.map((_, i) => (
           <button
             key={i}
