@@ -11244,7 +11244,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-29',
   updatedAt: '2026-03-29',
   readTime: '9 min',
-  heroImage: undefined,
+  heroImage: '/images/guides/zebra-visibilityiq.webp',
 
   sections: [
     {
