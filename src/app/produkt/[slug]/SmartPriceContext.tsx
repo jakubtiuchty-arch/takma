@@ -65,18 +65,32 @@ export function SmartPriceProvider({ product, children }: { product: Product; ch
     Promise.all(
       chunks.map(chunk =>
         fetch(`/api/stock?pn=${chunk.join(',')}`, {
-          signal: AbortSignal.timeout(15000), // 15s max — nie wis w nieskonczonosc
+          signal: AbortSignal.timeout(15000),
+          cache: 'no-store',
         })
-          .then(r => r.ok ? r.json() : { results: [] })
-          .catch(() => ({ results: [] }))
+          .then(r => {
+            if (!r.ok) {
+              console.warn(`[SmartPrice] stock API ${r.status} for ${chunk.join(',')}`)
+              return { results: [] }
+            }
+            return r.json()
+          })
+          .catch((err) => {
+            console.warn('[SmartPrice] stock fetch failed:', err)
+            return { results: [] }
+          })
       )
     ).then(responses => {
       if (cancelled) return
       const map = new Map<string, StockResult>()
       for (const data of responses) {
-        for (const item of (data.results || [])) {
+        const items = data.results || []
+        for (const item of items) {
           map.set(item.partNumber, item)
         }
+      }
+      if (process.env.NODE_ENV === 'development') {
+        console.log(`[SmartPrice] Stock loaded: ${map.size} items, found: ${[...map.values()].filter(v => v.found).length}`)
       }
       setStockData(map)
     }).finally(() => {
