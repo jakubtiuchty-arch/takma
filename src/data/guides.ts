@@ -11231,6 +11231,234 @@ export const guides: Guide[] = [
     { title: 'Kontakt — zapytaj o wycenę', href: '/kontakt' },
   ],
 },
+
+// ─── ZEBRA VISIBILITYIQ FORESIGHT ─────────────────────────────────────
+{
+  slug: 'zebra-visibilityiq-foresight-analityka-predykcyjna-floty',
+  title: 'Zebra VisibilityIQ Foresight — analityka predykcyjna dla floty urządzeń',
+  seoTitle: 'Zebra VisibilityIQ Foresight — analityka predykcyjna floty urządzeń mobilnych, drukarek i skanerów',
+  seoDescription: 'Zebra VisibilityIQ Foresight to chmurowa platforma analityki predykcyjnej dla terminali mobilnych, drukarek etykiet i skanerów kodów kreskowych. Monitoring baterii, predykcja awarii, redukcja TCO floty urządzeń Zebra. Zarządzanie flotą urządzeń mobilnych Zebra VisibilityIQ. Partner Zebra — TAKMA.',
+  excerpt: 'Zarządzanie setkami urządzeń mobilnych "na oko" generuje ukryte koszty. Zebra VisibilityIQ Foresight to chmurowa platforma, która przekształca dane telemetryczne z terminali, drukarek i skanerów w konkretne decyzje biznesowe — zanim dojdzie do awarii.',
+  category: 'poradnik',
+  tags: ['terminale-mobilne', 'drukarki-etykiet', 'skanery-kodow', 'poradnik'],
+  publishedAt: '2026-03-29',
+  updatedAt: '2026-03-29',
+  readTime: '9 min',
+  heroImage: undefined,
+
+  sections: [
+    {
+      id: 'problem',
+      heading: 'Dlaczego MDM nie wystarczy do zarządzania flotą Zebra',
+      content: `
+<p>Masz 200 terminali na magazynie. Ile z nich ma baterię, która padnie w tym tygodniu? Które urządzenia leżą nieużywane, podczas gdy kupujesz nowe? Jeśli nie znasz odpowiedzi — Twój system MDM Ci jej nie da.</p>
+
+<p>Mobile Device Management (SOTI, VMware, Intune) to standard w zarządzaniu konfiguracją urządzeń. MDM wdraża aplikacje, egzekwuje polityki bezpieczeństwa i pozwala zdalnie zablokować zgubionego terminala. Ale w jednym obszarze jest bezradny: <strong>nie przewiduje awarii sprzętu</strong>.</p>
+
+<p>MDM nie widzi impedancji baterii, nie liczy cykli ładowania, nie analizuje trendów degradacji głowicy drukującej. A to właśnie te dane decydują o tym, czy pracownik na drugiej zmianie będzie miał sprawne narzędzie pracy — czy zostanie z rozładowanym terminalem w połowie kompletacji.</p>
+
+<p>Według danych Zebra Technologies <strong>nawet 15% urządzeń mobilnych w firmach jest gubionych lub niesprawnych</strong>. Przy flocie 500 sztuk i średniej cenie terminala 5 000 PLN netto to <strong>375 000 PLN ukrytych strat rocznie</strong> — zanim policzysz koszty przestojów operacyjnych.</p>
+
+<p>Zebra odpowiedziała na ten problem platformą <strong>VisibilityIQ Foresight</strong> — chmurowym narzędziem analityki predykcyjnej, które działa tam, gdzie MDM się kończy.</p>
+`,
+    },
+    {
+      id: 'czym-jest',
+      heading: 'Czym jest Zebra VisibilityIQ Foresight',
+      content: `
+<p><strong>Zebra VisibilityIQ Foresight</strong> (powered by Zebra Savanna) to chmurowa platforma SaaS, która zbiera dane telemetryczne z trzech kategorii urządzeń Zebra:</p>
+
+<ul>
+  <li><strong>Terminale mobilne</strong> — serie TC (TC22, TC27, TC53, TC58, TC73, TC78), MC (MC3400, MC9400), tablety ET (ET40, ET45, ET60)</li>
+  <li><strong>Drukarki etykiet</strong> — mobilne (ZQ511, ZQ521, ZQ630), biurkowe (ZD421, ZD621), przemysłowe (ZT411, ZT421, ZT610)</li>
+  <li><strong>Skanery kodów kreskowych</strong> — stacjonarne i bezprzewodowe z serii DS</li>
+</ul>
+
+<p>Dane z urządzeń trafiają do chmury Zebra i prezentowane są w jednym dashboardzie — z podziałem na lokalizacje, typy urządzeń i zmiany robocze. Foresight nie zastępuje MDM, lecz go <strong>uzupełnia</strong>: integruje się z SOTI MobiControl, VMware Workspace ONE i Microsoft Intune, dokładając warstwę predykcji sprzętowej, której te systemy nie oferują.</p>
+
+<p>Kluczowa różnica: MDM widzi <strong>software</strong> (wersja OS, zainstalowane aplikacje, polityki). Foresight widzi <strong>hardware</strong> — impedancję baterii, temperaturę CPU, cykle ładowania, zużycie głowicy drukującej. To dane, których uniwersalne systemy zarządzania nie zbierają.</p>
+
+<table style="width:100%">
+  <thead>
+    <tr><th>Funkcja</th><th>MDM (SOTI / Intune)</th><th>VisibilityIQ Foresight</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Wdrażanie aplikacji</td><td><strong>Tak</strong></td><td>Nie</td></tr>
+    <tr><td>Polityki bezpieczeństwa</td><td><strong>Tak</strong></td><td>Nie</td></tr>
+    <tr><td>Zdalna konfiguracja</td><td><strong>Tak</strong></td><td>Nie</td></tr>
+    <tr><td>Predykcja awarii baterii</td><td>Nie</td><td><strong>Tak (ML)</strong></td></tr>
+    <tr><td>Analiza wykorzystania floty</td><td>Podstawowa</td><td><strong>Zaawansowana</strong></td></tr>
+    <tr><td>Monitoring drukarek (ustawienia, głowica)</td><td>Nie</td><td><strong>Tak</strong></td></tr>
+    <tr><td>Predykcja gubionych urządzeń</td><td>Nie</td><td><strong>Tak (ML)</strong></td></tr>
+    <tr><td>Trendy historyczne i lifecycle planning</td><td>Nie</td><td><strong>Tak</strong></td></tr>
+  </tbody>
+</table>
+`,
+    },
+    {
+      id: 'moduly',
+      heading: 'Kluczowe moduły VisibilityIQ Foresight',
+      content: `
+<h3>Battery Analytics — koniec z padaniem baterii w połowie zmiany</h3>
+
+<p>Moduł Battery Analytics to najczęstszy powód, dla którego firmy sięgają po Foresight. Platforma monitoruje stan zdrowia każdej baterii w flocie: health score, liczbę cykli ładowania, impedancję i temperaturę pracy. Na tej podstawie algorytmy ML przewidują, kiedy bateria osiągnie próg degradacji — i sygnalizują konieczność wymiany <strong>zanim pracownik zostanie z rozładowanym terminalem</strong>.</p>
+
+<p>W praktyce oznacza to koniec z tzw. mid-shift battery swap — sytuacją, gdy bateria pada w trakcie zmiany i pracownik traci 15–30 minut na wymianę i ponowne logowanie do systemu WMS. Przy 3 zmianach i 200 terminalach nawet 5% takich incydentów dziennie to setki straconych roboczogodzin miesięcznie.</p>
+
+<p>Foresight pozwala zaplanować wymianę baterii <strong>w niskim sezonie</strong> — np. po sezonie świątecznym, zamiast awaryjnie w trakcie peak season, gdy każda minuta przestoju kosztuje najwięcej.</p>
+
+<h3>Device Health and Utilization — prawy wymiar floty</h3>
+
+<p>Drugi moduł analizuje stan urządzeń i ich faktyczne wykorzystanie. Dashboard pokazuje, które terminale są aktywne, a które leżą bezczynnie — z podziałem na lokalizacje i zmiany robocze.</p>
+
+<p>Firmy zarządzające dużymi flotami regularnie odkrywają, że <strong>10–15% urządzeń jest niewykorzystywanych</strong>. Terminal kupiony "na zapas" do jednego magazynu mógłby pracować w innym — ale bez danych o wykorzystaniu nikt o tym nie wie. Foresight eliminuje ten problem, dostarczając twarde dane do decyzji o alokacji i zakupach.</p>
+
+<p>Moduł dostarcza też danych do <strong>lifecycle planning</strong> — planowania wymiany floty na podstawie trendów degradacji, nie intuicji. Wiesz, które urządzenia zbliżają się do końca żywotności i możesz zabudżetować wymianę z wyprzedzeniem.</p>
+
+<h3>Monitoring drukarek — ustawienia, alerty, stan głowicy</h3>
+
+<p>Moduł drukarek to add-on do podstawowej platformy. Obejmuje zarówno <strong>drukarki mobilne</strong> (ZQ511, ZQ521, ZQ630), jak i <strong>stacjonarne</strong> — biurkowe (ZD421, ZD621) oraz przemysłowe (ZT411, ZT610).</p>
+
+<p>Foresight monitoruje:</p>
+<ul>
+  <li><strong>Wykorzystanie</strong> — gdzie i jak intensywnie drukarki pracują</li>
+  <li><strong>Ustawienia</strong> — czy parametry druku (ciemność, prędkość) są optymalne, czy ktoś je zmienił</li>
+  <li><strong>Alerty</strong> — konfigurowalne powiadomienia o problemach (brak mediów, przegrzanie, błędy)</li>
+  <li><strong>Stan baterii</strong> — w drukarkach mobilnych, analogicznie do terminali</li>
+</ul>
+
+<p>Dla firm produkcyjnych to szczególnie istotne: przestój drukarki przemysłowej ZT411 na linii produkcyjnej oznacza <strong>zatrzymanie całej linii</strong>. Foresight pozwala wykryć problem zanim do niego dojdzie — np. zbliżający się koniec żywotności głowicy drukującej.</p>
+
+<h3>Skanery — inwentaryzacja i wykorzystanie</h3>
+
+<p>Moduł skanerów zapewnia widoczność stanu inwentarza skanerów kodów kreskowych i trendów ich wykorzystania. Choć dane telemetryczne ze skanerów są mniej rozbudowane niż z terminali, platforma pozwala szybko ocenić, czy skanery są prawidłowo przydzielone i czy ich ilość odpowiada faktycznym potrzebom operacyjnym.</p>
+
+<h3>Redukcja strat urządzeń (Device Loss Reduction)</h3>
+
+<p>Moduł oparty o machine learning śledzi lokalizacje urządzeń i analizuje wzorce aktywności. Gdy terminal "zachowuje się" nietypowo — np. pozostaje bezczynny w nietypowej lokalizacji lub jest przenoszony poza strefę operacyjną — Foresight generuje alert.</p>
+
+<p>Platforma umożliwia też wysyłanie <strong>powiadomień dźwiękowych i wizualnych</strong> na urządzenie, co pozwala szybko je zlokalizować bez przerywania pracy pozostałych pracowników.</p>
+
+<p>Przy wspomnianych 15% strat w branży i średnim koszcie terminala 5 000 PLN, dla floty 300 urządzeń to potencjalna oszczędność <strong>ponad 200 000 PLN rocznie</strong>.</p>
+`,
+    },
+    {
+      id: 'scenariusze',
+      heading: 'Scenariusze wdrożenia — dla kogo jest Foresight',
+      content: `
+<h3>Magazyn i centrum logistyczne</h3>
+
+<p>Flota 200–2000 terminali MC3400, TC73 lub MC9400 pracujących na 2–3 zmiany. Główne wyzwania: awaryjne baterie w peak season, brak widoczności stanu floty, nieoptymalna alokacja urządzeń między zmianami. Foresight rozwiązuje wszystkie trzy — predykcja baterii eliminuje awarie, utilization analytics optymalizuje przydział, a lifecycle planning pozwala planować budżet na wymianę.</p>
+
+<h3>Sieć handlowa i retail</h3>
+
+<p>Terminale TC22 lub TC27 w sklepach + drukarki mobilne ZQ521 na sali sprzedaży. Problem: nierówne wykorzystanie urządzeń między sklepami (jeden sklep ma nadmiar, drugi niedobór) i gubione urządzenia przez rotację personelu. Foresight z modułem Device Loss Reduction pozwala zmniejszyć straty, a utilization analytics — wyrównać alokację między lokalizacjami.</p>
+
+<h3>Produkcja</h3>
+
+<p>Terminale MC9400 na liniach + drukarki przemysłowe ZT411 do etykietowania produktów. Przestój drukarki = przestój linii, a koszt minuty przestoju na produkcji jest wielokrotnie wyższy niż w magazynie. Monitoring ustawień drukarki zapobiega problemom z jakością druku, a predykcja zużycia głowicy daje czas na zaplanowanie wymiany.</p>
+
+<h3>Transport i logistyka (3PL)</h3>
+
+<p>Terminale TC78 u kierowców i kurierów, drukarki mobilne ZQ630 w pojazdach. Urządzenia pracują w terenie, poza zasięgiem działu IT. Foresight zapewnia zdalny monitoring stanu całej floty — dział IT widzi z biura, który terminal ma słabą baterię i wymaga interwencji, zanim kierowca zgłosi problem w trakcie trasy.</p>
+`,
+    },
+    {
+      id: 'api-integracje',
+      heading: 'API i integracje — Foresight w Twoim ekosystemie',
+      content: `
+<p>VisibilityIQ Foresight udostępnia <strong>REST API</strong>, dzięki któremu dane telemetryczne mogą zasilać systemy, z których Twoja firma już korzysta:</p>
+
+<ul>
+  <li><strong>Systemy ticketowe</strong> (ServiceNow, Jira) — automatyczne tworzenie zgłoszenia serwisowego, gdy Foresight wykryje zbliżającą się awarię</li>
+  <li><strong>Business Intelligence</strong> (Power BI, Tableau) — eksport danych o wykorzystaniu floty do raportów zarządczych</li>
+  <li><strong>MDM / UEM</strong> (SOTI MobiControl, VMware Workspace ONE, Microsoft Intune) — uzupełnienie danych MDM o warstwę telemetryczną z Foresight</li>
+  <li><strong>Ekosystem Zebra</strong> — natywna integracja z LifeGuard for Android (patche bezpieczeństwa), Device Tracker (lokalizacja urządzeń), StageNow (provisioning)</li>
+</ul>
+
+<p>Firmy, które chcą pełnej automatyzacji, mogą np. skonfigurować przepływ: Foresight wykrywa baterię poniżej progu zdrowia, automatycznie tworzy ticket w ServiceNow, a technik dostaje powiadomienie z numerem seryjnym i lokalizacją urządzenia — bez jakiejkolwiek interwencji IT managera.</p>
+`,
+    },
+    {
+      id: 'wdrozenie',
+      heading: 'Jak zacząć — wymagania i wdrożenie',
+      content: `
+<p>Wdrożenie VisibilityIQ Foresight nie wymaga instalacji serwerów ani specjalistycznej infrastruktury — platforma działa w chmurze Zebra (100% SaaS).</p>
+
+<h3>Wymagania techniczne</h3>
+
+<ul>
+  <li><strong>Terminale mobilne</strong> — Android 8.0 lub nowszy (zalecany Android 11+), aktywne Zebra Mobility DNA</li>
+  <li><strong>Drukarki</strong> — firmware Link-OS 6.0 lub nowszy</li>
+  <li><strong>Sieć</strong> — dostęp urządzeń do internetu (HTTPS, port 443)</li>
+  <li><strong>Przeglądarka</strong> — Chrome, Edge lub Firefox (aktualna wersja) do obsługi dashboardu</li>
+</ul>
+
+<h3>Model licencyjny</h3>
+
+<p>Foresight licencjonowany jest <strong>per urządzenie</strong> w modelu subskrypcji rocznej (dostępne kontrakty 1-, 3- i 5-letnie). Cena zależy od wielkości floty — im więcej urządzeń, tym niższa stawka jednostkowa.</p>
+
+<p>Warto wiedzieć, że Foresight jest często dołączany do kontraktu serwisowego <strong>Zebra OneCare Select</strong>. Jeśli Twoja firma kupuje terminale z OneCare Select — licencja Foresight może już być w pakiecie.</p>
+
+<h3>Enrollment urządzeń</h3>
+
+<p>Urządzenia rejestruje się w platformie przez <strong>Zebra StageNow</strong> (skanowanie kodu konfiguracyjnego) lub przez push z istniejącego MDM. Po aktywacji licencji urządzenie automatycznie rozpoczyna przesyłanie danych telemetrycznych — bez konieczności manualnej konfiguracji każdego terminala.</p>
+`,
+    },
+    {
+      id: 'podsumowanie',
+      heading: 'Podsumowanie — kiedy Foresight się opłaca',
+      content: `
+<p>Zebra VisibilityIQ Foresight ma największy sens dla firm spełniających co najmniej jedno kryterium:</p>
+
+<ul>
+  <li><strong>Flota 50+ urządzeń Zebra</strong> — przy mniejszej skali ręczne zarządzanie jest jeszcze wykonalne</li>
+  <li><strong>Praca zmianowa (2–3 zmiany)</strong> — im więcej zmian, tym większe ryzyko awarii baterii i przestojów</li>
+  <li><strong>Krytyczność operacyjna</strong> — gdy przestój terminala lub drukarki oznacza zatrzymanie procesu (kompletacja, linia produkcyjna, wydania)</li>
+  <li><strong>Rozproszone lokalizacje</strong> — gdy IT nie ma fizycznego dostępu do urządzeń we wszystkich lokalizacjach</li>
+</ul>
+
+<p>Jeśli Twoja firma zarządza flotą urządzeń Zebra i chce przejść z reaktywnego modelu ("naprawiamy, gdy się zepsuje") na proaktywny ("wymieniamy, zanim się zepsuje") — Foresight jest do tego zaprojektowanym narzędziem.</p>
+
+<p>Jako partner Zebra pomagamy dobrać odpowiedni plan licencyjny VisibilityIQ Foresight, dopasować go do kontraktu serwisowego OneCare i wdrożyć na istniejącej flocie. Jeśli dopiero budujesz flotę — dostarczymy urządzenia z aktywną subskrypcją Foresight od pierwszego dnia.</p>
+`,
+    },
+  ],
+
+  faq: [
+    {
+      question: 'Czym różni się VisibilityIQ Foresight od systemu MDM?',
+      answer: 'MDM (np. SOTI, Intune) zarządza konfiguracją i politykami urządzeń — wdraża aplikacje, egzekwuje polityki bezpieczeństwa. Foresight uzupełnia MDM o warstwę analityki sprzętowej: monitoruje stan baterii, przewiduje awarie hardware i analizuje wykorzystanie floty. Oba systemy współpracują — Foresight integruje się z SOTI, VMware i Intune.',
+    },
+    {
+      question: 'Jakie urządzenia Zebra obsługuje Foresight?',
+      answer: 'Terminale mobilne (serie TC, MC, EC, WT, CC oraz tablety ET), drukarki etykiet (mobilne, biurkowe i przemysłowe z firmware Link-OS) oraz skanery kodów kreskowych z serii DS. Wymagany jest Android 8.0+ (terminale) lub Link-OS 6.0+ (drukarki).',
+    },
+    {
+      question: 'Ile kosztuje licencja VisibilityIQ Foresight?',
+      answer: 'Foresight jest licencjonowany per urządzenie w modelu subskrypcji rocznej. Cena zależy od wielkości floty i długości kontraktu (1, 3 lub 5 lat). Licencja jest często dołączana do kontraktu serwisowego Zebra OneCare Select. Skontaktuj się z nami po indywidualną wycenę.',
+    },
+    {
+      question: 'Czy Foresight wymaga instalacji serwera?',
+      answer: 'Nie. VisibilityIQ Foresight to platforma 100% chmurowa (SaaS) hostowana przez Zebra. Wymagany jest jedynie dostęp urządzeń do internetu (HTTPS, port 443) i przeglądarka do obsługi dashboardu.',
+    },
+    {
+      question: 'Jak Foresight przewiduje awarie baterii?',
+      answer: 'Platforma zbiera niskopoziomowe dane telemetryczne z każdej baterii — impedancję, liczbę cykli ładowania, temperaturę pracy i health score. Algorytmy machine learning analizują te trendy i sygnalizują, które baterie zbliżają się do progu degradacji, zanim dojdzie do awarii w trakcie zmiany.',
+    },
+  ],
+
+  relatedLinks: [
+    { title: 'Zebra MC3400 — karta produktu', href: '/produkt/zebra-mc3400' },
+    { title: 'Zebra TC22 — karta produktu', href: '/produkt/zebra-tc22' },
+    { title: 'Zebra ZT411 — karta produktu', href: '/produkt/zebra-zt411' },
+    { title: 'Zebra ZQ521 — karta produktu', href: '/produkt/zebra-zq521' },
+    { title: 'Terminale mobilne — oferta', href: '/terminale-mobilne' },
+    { title: 'Drukarki etykiet — oferta', href: '/drukarki-etykiet' },
+    { title: 'Skanery kodów kreskowych — oferta', href: '/skanery-kodow' },
+    { title: 'Kontakt — zapytaj o wycenę', href: '/kontakt' },
+  ],
+},
 ]
 
 // Helper functions
