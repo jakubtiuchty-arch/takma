@@ -90,7 +90,7 @@ export function SmartPriceProvider({ product, children }: { product: Product; ch
         }
       }
       if (process.env.NODE_ENV === 'development') {
-        console.log(`[SmartPrice] Stock loaded: ${map.size} items, found: ${[...map.values()].filter(v => v.found).length}`)
+        console.log(`[SmartPrice] Stock loaded: ${map.size} items`)
       }
       setStockData(map)
     }).finally(() => {
