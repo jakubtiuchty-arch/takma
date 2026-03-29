@@ -77,10 +77,19 @@ const slides: HeroSlide[] = [
 ]
 
 const INTERVAL = 6000
+const SM_BREAKPOINT = 640
 
 export default function Hero() {
   const [current, setCurrent] = useState(0)
   const [isTransitioning, setIsTransitioning] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < SM_BREAKPOINT)
+    check()
+    window.addEventListener('resize', check)
+    return () => window.removeEventListener('resize', check)
+  }, [])
 
   const goTo = useCallback((index: number) => {
     if (index === current || isTransitioning) return
@@ -92,22 +101,26 @@ export default function Hero() {
   }, [current, isTransitioning])
 
   const next = useCallback(() => {
+    if (isMobile) return
     goTo((current + 1) % slides.length)
-  }, [current, goTo])
+  }, [current, goTo, isMobile])
 
   useEffect(() => {
+    if (isMobile) return
     const timer = setInterval(next, INTERVAL)
     return () => clearInterval(timer)
-  }, [next])
+  }, [next, isMobile])
 
-  const slide = slides[current]
+  // Na mobile zawsze info slide
+  const activeIndex = isMobile ? 0 : current
+  const slide = slides[activeIndex]
   const isLifestyle = slide.type === 'product' && slide.imageType === 'lifestyle'
   const isBanner = slide.type === 'product' && slide.noOverlay
   const isImageLeft = slide.type === 'product' && slide.imageLeft
   const sectionBg = (slide.type === 'product' && slide.bgColor) ? slide.bgColor : '#0c1525'
 
   return (
-    <section className="relative overflow-hidden w-full h-[360px] sm:h-[400px] md:h-[420px] lg:h-[520px]" style={{ backgroundColor: sectionBg }}>
+    <section className="relative overflow-hidden w-full h-[400px] md:h-[420px] lg:h-[520px]" style={{ backgroundColor: sectionBg }}>
       {/* Tło — gradient mesh (nie dla info ani banner) */}
       {slide.type !== 'info' && !isBanner && <div className="absolute inset-0 bg-gradient-mesh-dark" />}
 
@@ -142,7 +155,7 @@ export default function Hero() {
             <img
               src={slide.image}
               alt={slide.name}
-              className="absolute inset-0 w-full h-full object-cover object-left sm:object-contain sm:w-auto"
+              className="absolute left-0 top-0 h-full w-auto object-contain object-left"
               style={{
                 maskImage: 'linear-gradient(to left, transparent 0%, black 20%)',
                 WebkitMaskImage: 'linear-gradient(to left, transparent 0%, black 20%)',
@@ -154,7 +167,7 @@ export default function Hero() {
             <img
               src={slide.image}
               alt={slide.name}
-              className="absolute inset-0 w-full h-full object-cover object-right sm:object-contain sm:w-auto sm:max-w-[85%] sm:left-auto sm:right-0"
+              className="absolute right-0 top-0 h-full w-auto max-w-[85%] object-contain object-right"
               style={{
                 maskImage: 'linear-gradient(to right, transparent 0%, black 25%)',
                 WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 25%)',
@@ -173,11 +186,6 @@ export default function Hero() {
             />
           )}
         </div>
-      )}
-
-      {/* Gradient mobilny dla banerów — czytelność tekstu */}
-      {slide.type === 'product' && (isBanner || isImageLeft) && (
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent sm:from-black/50 sm:via-black/20 z-10" />
       )}
 
       {/* Gradienty — różne dla lifestyle vs packshot (baner: bez overlay'ów) */}
@@ -199,13 +207,13 @@ export default function Hero() {
 
       {/* Content */}
       <div className={clsx(
-        'container-main relative h-full flex items-end pb-14 sm:items-center sm:pb-0 z-20',
-        isLifestyle ? 'sm:justify-end' : 'justify-start'
+        'container-main relative h-full flex items-center z-20',
+        isLifestyle ? 'justify-end' : 'justify-start'
       )}>
         <div
           className={clsx(
             'transition-all duration-500 ease-in-out',
-            isLifestyle ? 'max-w-2xl sm:max-w-md sm:text-right sm:translate-y-[10%]' : 'max-w-2xl',
+            isLifestyle ? 'max-w-md text-right translate-y-[10%]' : 'max-w-2xl',
             isTransitioning ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'
           )}
         >
@@ -269,8 +277,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Dots */}
-      <div className="absolute bottom-4 md:bottom-5 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
+      {/* Dots — tylko desktop */}
+      <div className="absolute bottom-4 md:bottom-5 left-1/2 -translate-x-1/2 z-20 hidden sm:flex items-center gap-2">
         {slides.map((_, i) => (
           <button
             key={i}
