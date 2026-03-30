@@ -123,6 +123,7 @@ export async function middleware(request: NextRequest) {
       'm3-sl20-zasilacz-usb-c', 'm3-sl20-zasilacz-2slot',
       'm3-sl20-zasilacz-8slot', 'm3-sl20-pasek-na-reke',
       'm3-sl20-speed-care-3-lata', 'm3-sl20-speed-care-5-lat',
+      'm3-ul20',
       'm3-ul30',
       'm3-ul30-stacja-dokujaca-2-usb', 'm3-ul30-stacja-dokujaca-2-ethernet',
       'm3-ul30-stacja-dokujaca-8', 'm3-ul30-stacja-dokujaca-8-ethernet',
