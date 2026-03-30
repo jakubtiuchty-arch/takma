@@ -98,7 +98,7 @@ export default function GuidesGrid({ guides }: { guides: Guide[] }) {
                   alt={guide.title}
                   fill
                   className="object-cover"
-                  style={{ objectPosition: guide.cardImagePosition || '30% center' }}
+                  style={{ objectPosition: guide.cardImagePosition || '70% center' }}
                   sizes="(max-width: 640px) 100vw, 320px"
                 />
                 <span className={`absolute top-3 left-3 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold ${categoryBadgeClass(guide.category)}`}>
