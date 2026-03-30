@@ -5326,6 +5326,7 @@ export const guides: Guide[] = [
   updatedAt: '2026-03-15',
   readTime: '14 min',
   heroImage: '/images/guides/zebra-zd421t-honeywell-pc45t-porownanie-drukarek-etykiet.webp',
+  cardImagePosition: '120% center',
   sections: [
     {
       id: 'podsumowanie',
