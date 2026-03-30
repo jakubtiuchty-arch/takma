@@ -2192,7 +2192,7 @@ export const guides: Guide[] = [
   updatedAt: '2026-03-15',
   readTime: '22 min',
   heroImage: '/images/guides/top-15-kolektorow-danych-2026.webp',
-  cardImagePosition: '140% center',
+  cardImagePosition: '120% center',
 
   sections: [
     {

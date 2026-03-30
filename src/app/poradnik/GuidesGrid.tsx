@@ -92,7 +92,7 @@ export default function GuidesGrid({ guides }: { guides: Guide[] }) {
           >
             {/* Obrazek */}
             {guide.heroImage && (
-              <div className="relative w-full h-48 bg-gray-100">
+              <div className="relative w-full h-48 bg-gray-900">
                 <Image
                   src={guide.heroImage}
                   alt={guide.title}
