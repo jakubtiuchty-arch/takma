@@ -13,6 +13,26 @@ const SKANERY_TAGS = ['skanery', 'skanery-kodow-kreskowych', 'skaner Zebra', 'sk
 
 type FilterKey = 'wszystkie' | 'drukarki' | 'terminale' | 'skanery'
 
+/** Przemieszaj guide'y żeby te same kategorie urządzeń nie stały obok siebie */
+function interleaveByCategory(guides: Guide[]): Guide[] {
+  const drukarki = guides.filter(g => matchesTags(g.tags, DRUKARKI_TAGS) && !matchesTags(g.tags, TERMINALE_TAGS))
+  const terminale = guides.filter(g => matchesTags(g.tags, TERMINALE_TAGS) && !matchesTags(g.tags, DRUKARKI_TAGS))
+  const oba = guides.filter(g => matchesTags(g.tags, DRUKARKI_TAGS) && matchesTags(g.tags, TERMINALE_TAGS))
+  const reszta = guides.filter(g => !matchesTags(g.tags, DRUKARKI_TAGS) && !matchesTags(g.tags, TERMINALE_TAGS))
+
+  const buckets = [terminale, drukarki, reszta, oba]
+  const result: Guide[] = []
+  let maxLen = 0
+  for (const b of buckets) if (b.length > maxLen) maxLen = b.length
+
+  for (let i = 0; i < maxLen; i++) {
+    for (const b of buckets) {
+      if (i < b.length) result.push(b[i])
+    }
+  }
+  return result
+}
+
 function categoryBadgeClass(category: Guide['category']): string {
   switch (category) {
     case 'poradnik': return 'bg-blue-100 text-blue-700'
@@ -39,7 +59,7 @@ export default function GuidesGrid({ guides }: { guides: Guide[] }) {
   }), [guides])
 
   const filteredGuides = useMemo(() => {
-    if (activeFilter === 'wszystkie') return guides
+    if (activeFilter === 'wszystkie') return interleaveByCategory(guides)
     const tagMap: Record<Exclude<FilterKey, 'wszystkie'>, string[]> = {
       drukarki: DRUKARKI_TAGS,
       terminale: TERMINALE_TAGS,
