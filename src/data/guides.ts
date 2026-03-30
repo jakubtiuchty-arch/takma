@@ -1032,6 +1032,7 @@ export const guides: Guide[] = [
   updatedAt: '2026-02-21',
   readTime: '15 min',
   heroImage: '/images/guides/drukarki-etykiet-zebra-przewodnik.webp',
+  cardImagePosition: '100% center',
 
   sections: [
     {
