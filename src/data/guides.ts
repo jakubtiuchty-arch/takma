@@ -586,6 +586,7 @@ export const guides: Guide[] = [
   slug: 'drukarka-termiczna-vs-termotransferowa',
   title: 'Drukarka termiczna vs termotransferowa — różnice, koszty, zastosowania',
   heroImage: '/images/guides/drukarka-termiczna-termotransferowa-roznice.webp',
+  cardImagePosition: '90% center',
   seoTitle: 'Drukarka termiczna vs termotransferowa — porównanie 2026',
   seoDescription: 'Drukarka termiczna czy termotransferowa? Różnice, koszty druku na etykietę, trwałość, TCO. Kalkulacje PLN i polecane drukarki etykiet Zebra od 621 zł.',
   excerpt: 'Kompleksowe porównanie dwóch technologii druku etykiet: direct thermal i thermal transfer. Szczegółowe kalkulacje kosztów na etykietę, analiza TCO przy różnych wolumenach oraz konkretne rekomendacje modeli dla każdego zastosowania.',
