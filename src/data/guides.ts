@@ -29,6 +29,8 @@ export interface Guide {
   updatedAt: string
   readTime: string
   heroImage?: string
+  /** CSS object-position override for card thumbnail (doesn't affect hero in guide page) */
+  cardImagePosition?: string
   sections: GuideSection[]
   faq: GuideFAQ[]
   relatedLinks: GuideRelatedLink[]

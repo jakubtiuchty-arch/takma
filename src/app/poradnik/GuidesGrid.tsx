@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronRightIcon } from '@/components/ui/Icons'
 import type { Guide } from '@/data/guides'
@@ -11,6 +12,17 @@ const TERMINALE_TAGS = ['terminale-mobilne', 'terminal-mobilny', 'tc22', 'tc27',
 const SKANERY_TAGS = ['skanery', 'skanery-kodow-kreskowych', 'skaner Zebra', 'skaner kodów kreskowych', 'DS2208', 'DS3608', 'DS9308', 'ds3678-xr', 'granit-ultra-2105i', 'ultra-rugged']
 
 type FilterKey = 'wszystkie' | 'drukarki' | 'terminale' | 'skanery'
+
+function categoryBadgeClass(category: Guide['category']): string {
+  switch (category) {
+    case 'poradnik': return 'bg-blue-100 text-blue-700'
+    case 'porownanie': return 'bg-amber-100 text-amber-700'
+    case 'przewodnik': return 'bg-emerald-100 text-emerald-700'
+    case 'branzowy': return 'bg-purple-100 text-purple-700'
+    case 'serwisowy': return 'bg-rose-100 text-rose-700'
+    default: return 'bg-gray-100 text-gray-700'
+  }
+}
 
 function matchesTags(guideTags: string[], filterTags: string[]): boolean {
   return guideTags.some(t => filterTags.includes(t))
@@ -70,36 +82,52 @@ export default function GuidesGrid({ guides }: { guides: Guide[] }) {
         ))}
       </div>
 
-      {/* Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* Lista */}
+      <div className="space-y-5">
         {filteredGuides.map(guide => (
           <Link
             key={guide.slug}
             href={`/poradnik/${guide.slug}`}
-            className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-card-hover hover:border-primary-200 transition-all duration-300"
+            className="group flex flex-col sm:flex-row bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-card-hover hover:border-primary-200 transition-all duration-300"
           >
-            <div className="p-6">
-              <div className="flex items-center gap-2 mb-3">
-                <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold ${
-                  guide.category === 'poradnik' ? 'bg-blue-100 text-blue-700' :
-                  guide.category === 'porownanie' ? 'bg-amber-100 text-amber-700' :
-                  guide.category === 'przewodnik' ? 'bg-emerald-100 text-emerald-700' :
-                  guide.category === 'branzowy' ? 'bg-purple-100 text-purple-700' :
-                  guide.category === 'serwisowy' ? 'bg-rose-100 text-rose-700' :
-                  'bg-gray-100 text-gray-700'
-                }`}>
+            {/* Obrazek */}
+            {guide.heroImage && (
+              <div className="relative w-full sm:w-64 md:w-80 h-48 sm:h-auto shrink-0 bg-gray-100">
+                <Image
+                  src={guide.heroImage}
+                  alt={guide.title}
+                  fill
+                  className="object-cover"
+                  style={guide.cardImagePosition ? { objectPosition: guide.cardImagePosition } : undefined}
+                  sizes="(max-width: 640px) 100vw, 320px"
+                />
+                <span className={`absolute top-3 left-3 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold ${categoryBadgeClass(guide.category)}`}>
                   {guideCategoryLabels[guide.category]}
                 </span>
-                <span className="text-xs text-gray-400">{guide.readTime}</span>
               </div>
+            )}
+
+            {/* Treść */}
+            <div className="flex flex-col justify-center p-5 sm:p-6 min-w-0">
+              {!guide.heroImage && (
+                <div className="flex items-center gap-2 mb-3">
+                  <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold ${categoryBadgeClass(guide.category)}`}>
+                    {guideCategoryLabels[guide.category]}
+                  </span>
+                  <span className="text-xs text-gray-400">{guide.readTime}</span>
+                </div>
+              )}
+              {guide.heroImage && (
+                <span className="text-xs text-gray-400 mb-2">{guide.readTime}</span>
+              )}
               <h2 className="text-lg font-bold text-gray-900 group-hover:text-primary-600 transition-colors mb-2 line-clamp-2">
                 {guide.title}
               </h2>
-              <p className="text-sm text-gray-600 line-clamp-3">
+              <p className="text-sm text-gray-600 line-clamp-3 mb-4">
                 {guide.excerpt}
               </p>
-              <div className="mt-4 flex items-center text-sm text-primary-600 font-medium">
-                Czytaj więcej
+              <div className="flex items-center text-sm text-primary-600 font-medium">
+                Czytaj
                 <ChevronRightIcon size={16} className="ml-1 group-hover:translate-x-1 transition-transform" />
               </div>
             </div>
