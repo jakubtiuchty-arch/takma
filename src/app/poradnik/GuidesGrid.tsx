@@ -82,24 +82,24 @@ export default function GuidesGrid({ guides }: { guides: Guide[] }) {
         ))}
       </div>
 
-      {/* Lista */}
-      <div className="space-y-5">
+      {/* Grid */}
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredGuides.map(guide => (
           <Link
             key={guide.slug}
             href={`/poradnik/${guide.slug}`}
-            className="group flex flex-col sm:flex-row bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-card-hover hover:border-primary-200 transition-all duration-300"
+            className="group flex flex-col bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-card-hover hover:border-primary-200 transition-all duration-300"
           >
             {/* Obrazek */}
             {guide.heroImage && (
-              <div className="relative w-full sm:w-64 md:w-80 h-48 sm:h-auto shrink-0 bg-gray-100">
+              <div className="relative w-full h-48 bg-gray-100">
                 <Image
                   src={guide.heroImage}
                   alt={guide.title}
                   fill
                   className="object-cover"
                   style={{ objectPosition: guide.cardImagePosition || '70% center' }}
-                  sizes="(max-width: 640px) 100vw, 320px"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 <span className={`absolute top-3 left-3 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold ${categoryBadgeClass(guide.category)}`}>
                   {guideCategoryLabels[guide.category]}
@@ -108,7 +108,7 @@ export default function GuidesGrid({ guides }: { guides: Guide[] }) {
             )}
 
             {/* Treść */}
-            <div className="flex flex-col justify-center p-5 sm:p-6 min-w-0">
+            <div className="flex flex-col flex-1 p-5">
               {!guide.heroImage && (
                 <div className="flex items-center gap-2 mb-3">
                   <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold ${categoryBadgeClass(guide.category)}`}>
@@ -117,13 +117,10 @@ export default function GuidesGrid({ guides }: { guides: Guide[] }) {
                   <span className="text-xs text-gray-400">{guide.readTime}</span>
                 </div>
               )}
-              {guide.heroImage && (
-                <span className="text-xs text-gray-400 mb-2">{guide.readTime}</span>
-              )}
               <h2 className="text-lg font-bold text-gray-900 group-hover:text-primary-600 transition-colors mb-2 line-clamp-2">
                 {guide.title}
               </h2>
-              <p className="text-sm text-gray-600 line-clamp-3 mb-4">
+              <p className="text-sm text-gray-600 line-clamp-4 mb-4 flex-1">
                 {guide.excerpt}
               </p>
               <div className="flex items-center text-sm text-primary-600 font-medium">
