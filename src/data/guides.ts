@@ -2855,6 +2855,7 @@ export const guides: Guide[] = [
   updatedAt: '2026-03-02',
   readTime: '18 min',
   heroImage: '/images/guides/zebra-vs-honeywell-porownanie-terminali.webp',
+  cardImagePosition: '120% center',
   sections: [
     {
       id: 'podsumowanie',
