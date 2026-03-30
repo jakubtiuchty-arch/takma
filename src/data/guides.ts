@@ -9345,6 +9345,7 @@ export const guides: Guide[] = [
   updatedAt: '2026-03-18',
   readTime: '10 min',
   heroImage: '/images/guides/jak-dobrac-tasme-termotransferowa.jpg',
+  cardImagePosition: '110% center',
 
   sections: [
     {
