@@ -66,7 +66,7 @@ export default function GuidesGrid({ guides }: { guides: Guide[] }) {
   return (
     <>
       {/* Filtry */}
-      <div className="flex gap-2 pb-8 overflow-x-auto scrollbar-hide">
+      <div className="flex justify-center gap-2 pb-8 overflow-x-auto scrollbar-hide">
         {filters.map(f => (
           <button
             key={f.key}
