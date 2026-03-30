@@ -28,6 +28,7 @@ const pressItems: PressItem[] = [
     outlet: 'trans.info',
     outletUrl: 'https://trans.info/pl',
     date: '2026-04',
+    url: 'https://trans.info/pl/prawdziwy-koszt-sprzetu-autoid-w-logistyce-cena-zakupu-to-dopiero-poczatek-464678',
     type: 'article',
     description:
       'Artykuł ekspercki o TCO (Total Cost of Ownership) terminali mobilnych i drukarek etykiet w logistyce. Porównanie Zebra TC22 vs MC3400, analiza kosztów głowic drukujących, rola serwisu w obniżaniu TCO floty urządzeń.',
