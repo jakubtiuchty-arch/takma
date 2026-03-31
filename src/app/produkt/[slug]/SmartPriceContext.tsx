@@ -56,10 +56,10 @@ export function SmartPriceProvider({ product, children }: { product: Product; ch
     let cancelled = false
     setLoading(true)
 
-    // Dziel na chunki po 20 PNow (bezpieczenstwo przed timeoutem)
+    // Dziel na chunki po 8 PNow (Jarltech sequential API — timeout przy >10 PNów)
     const chunks: string[][] = []
-    for (let i = 0; i < partNumbers.length; i += 20) {
-      chunks.push(partNumbers.slice(i, i + 20))
+    for (let i = 0; i < partNumbers.length; i += 8) {
+      chunks.push(partNumbers.slice(i, i + 8))
     }
 
     Promise.all(
