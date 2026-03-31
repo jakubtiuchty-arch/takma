@@ -111,8 +111,12 @@ const idCache = new Map<string, { jarltechId: string | null; cachedAt: number }>
 
 async function getJarltechId(pn: string, token: string): Promise<string | null> {
   const cached = idCache.get(pn)
-  if (cached && (Date.now() - cached.cachedAt) < CACHE_TTL_ID_MAP) {
-    return cached.jarltechId
+  if (cached) {
+    // Found IDs cache 24h, null (not found) only 5 min — prevents stale negatives from timeouts
+    const ttl = cached.jarltechId ? CACHE_TTL_ID_MAP : 5 * 60 * 1000
+    if ((Date.now() - cached.cachedAt) < ttl) {
+      return cached.jarltechId
+    }
   }
 
   const { customerId } = env()
