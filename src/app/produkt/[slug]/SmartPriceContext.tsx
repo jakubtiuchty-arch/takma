@@ -106,30 +106,39 @@ export function SmartPriceProvider({ product, children }: { product: Product; ch
       return { displayedPn: undefined, price: product.priceFrom ?? undefined, isFallback: false, loading, stockData, partNumbers, variantName: undefined }
     }
 
-    // Sprawdź czy API odpowiedziało — musi być przynajmniej 1 PN z found=true
-    // lub loading wciąż trwa. Bez tego czesciowe dane z cache powodują
-    // wybranie złego wariantu (np. drogi zamiast najtańszego)
     const anyFound = partNumbers.some(pn => stockData.get(pn)?.found)
-    const isStillLoading = loading || (stockData.size === 0 && partNumbers.length > 0)
 
     // Podczas ładowania — pokaż najtańszy ze statyczną ceną
-    if (isStillLoading || !anyFound) {
+    if (loading) {
       const withPrice = allVariants.filter(v => v.price !== null)
       const best = withPrice.length > 0 ? withPrice[0] : allVariants[0]
       return {
         displayedPn: best.partNumber,
         price: best.price ?? product.priceFrom ?? undefined,
         isFallback: false,
-        loading: isStillLoading,
+        loading,
         stockData,
         partNumbers,
         variantName: best.name || undefined,
       }
     }
 
-    // API odpowiedziało — buduj listę z cenami live
-    // WAŻNE: gdy API ma dane (anyFound=true), NIE ufaj statycznej dostępności
-    // dla wariantów których API nie zna. Tylko API decyduje o hasStock.
+    // API nie znalazło żadnego PN — pokaż statyczną cenę (bez stock info)
+    if (!anyFound) {
+      const withPrice = allVariants.filter(v => v.price !== null)
+      const best = withPrice.length > 0 ? withPrice[0] : allVariants[0]
+      return {
+        displayedPn: best.partNumber,
+        price: best.price ?? product.priceFrom ?? undefined,
+        isFallback: false,
+        loading: false,
+        stockData,
+        partNumbers,
+        variantName: best.name || undefined,
+      }
+    }
+
+    // API odpowiedziało z danymi — buduj listę z cenami live
     const withLivePrices = allVariants.map(v => {
       const s = stockData.get(v.partNumber)
       const livePrice = (s?.found && s?.price) ? s.price : null
