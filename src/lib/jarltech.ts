@@ -204,15 +204,25 @@ async function fetchItemDetails(jarltechId: string, token: string) {
 }
 
 // ============================================
-// REQUEST QUEUE — sequential (1 PN naraz)
+// CONCURRENT LIMITER — max 4 PNy równolegle
 // ============================================
 
-let requestQueue: Promise<void> = Promise.resolve()
+const MAX_CONCURRENCY = 4
 
-function enqueue<T>(fn: () => Promise<T>): Promise<T> {
-  const result = requestQueue.then(fn, fn)
-  requestQueue = result.then(() => {}, () => {})
-  return result
+async function runWithConcurrency<T>(tasks: (() => Promise<T>)[], limit: number): Promise<T[]> {
+  const results: T[] = new Array(tasks.length)
+  let idx = 0
+
+  async function worker() {
+    while (idx < tasks.length) {
+      const i = idx++
+      results[i] = await tasks[i]()
+    }
+  }
+
+  const workers = Array.from({ length: Math.min(limit, tasks.length) }, () => worker())
+  await Promise.all(workers)
+  return results
 }
 
 // ============================================
@@ -358,12 +368,13 @@ export async function lookupStock(partNumbers: string[]): Promise<JarltechStockI
     return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now))
   }
 
-  console.log(`[Jarltech] Sprawdzam ${uncached.length} PN: ${uncached.join(', ')}`)
+  console.log(`[Jarltech] Sprawdzam ${uncached.length} PN (concurrency: ${MAX_CONCURRENCY})`)
 
-  // Sequential per PN (Jarltech nie obsluguje batcha)
-  for (const pn of uncached) {
-    const result = await enqueue(() => lookupSinglePN(pn, now))
-    setCached(pn, result)
+  // Równoległe przetwarzanie z limitem concurrency
+  const tasks = uncached.map(pn => () => lookupSinglePN(pn, now))
+  const results = await runWithConcurrency(tasks, MAX_CONCURRENCY)
+  for (let i = 0; i < uncached.length; i++) {
+    setCached(uncached[i], results[i])
   }
 
   return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now))

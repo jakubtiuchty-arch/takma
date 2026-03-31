@@ -83,7 +83,7 @@ export async function GET(request: NextRequest) {
   try {
     // Jarltech timeout — sequential API (brak batcha), moze przekroczyc Vercel function timeout
     // Jesli Jarltech nie zdazy w 5s, graceful fallback na Ingram + BlueStar
-    const JARLTECH_TIMEOUT = 12000
+    const JARLTECH_TIMEOUT = 15000
     const jarltechWithTimeout = Promise.race([
       jarltechLookup(partNumbers),
       new Promise<JarltechStockInfo[]>((_, reject) =>
