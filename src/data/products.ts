@@ -52215,6 +52215,7 @@ M3 UL20 jest poprzednikiem [M3 UL30](/produkt/m3-ul30) — akcesoria UL20 (stacj
       'Skaner': 'SE4750 — zasięg standardowy, do skanowania z ręki na linii picking.\n\nSE4850 — daleki zasięg, do regałów paletowych.\n\nSE5800 — ultra daleki zasięg (modele FX), do high-bay i skanowania na dużą odległość.',
       'Klawiatura': '28 kl. — numeryczna, do szybkiego wpisywania ilości i kodów.\n\n35 kl. — funkcyjna numeryczna, kompromis między kompaktowością a funkcjonalnością.\n\n53 kl. — alfanumeryczna, do pełnego wpisywania tekstu, kodów lokalizacji i opisów.',
       'Łączność': 'Wi-Fi — model UL20W/UL20F, komunikacja przez WLAN.\n\n4G LTE + GPS — model UL20X, do pracy w terenie z nawigacją satelitarną.',
+      'Wersja': 'UL20W — Wi-Fi + GPS, 2 GB RAM / 16 GB Flash, najtańszy wariant.\n\nUL20F — wyższa specyfikacja (4 GB / 32–64 GB), wersja Freezer do −30°C z podgrzewaniem.\n\nUL20X — moduł 4G LTE + GPS, 4 GB / 64 GB, do pracy w terenie bez Wi-Fi.\n\nUL20 FX — najnowsza rewizja: skaner SE5800, USB-C, BT 5.3, Wi-Fi 6, hot-swap baterii, 8 GB / 128 GB.',
     },
     variants: [
       // UL20W — Wi-Fi only, SE4750
@@ -52247,6 +52248,50 @@ M3 UL20 jest poprzednikiem [M3 UL30](/produkt/m3-ul30) — akcesoria UL20 (stacj
         priceFrom: 5039,
         availability: 'available' as const,
       },
+      // UL20W — Wi-Fi + GPS, SE4750, IP67
+      {
+        partNumber: 'U20W0C-P2CFES-HF',
+        name: 'M3 UL20W SE4750 / 53 kl. / Wi-Fi + GPS / IP67',
+        attributes: { 'Skaner': 'SE4750', 'Klawiatura': '53 kl.', 'Łączność': 'Wi-Fi' },
+        priceFrom: 5039,
+        availability: 'available' as const,
+      },
+      {
+        partNumber: 'U20W0C-P2CFRS-HF',
+        name: 'M3 UL20W SE4750 / 28 kl. / Wi-Fi + GPS / IP67',
+        attributes: { 'Skaner': 'SE4750', 'Klawiatura': '28 kl.', 'Łączność': 'Wi-Fi' },
+        priceFrom: 5039,
+        availability: 'available' as const,
+      },
+      {
+        partNumber: 'U20W0C-P2CFSS-HF',
+        name: 'M3 UL20W SE4750 / 35 kl. / Wi-Fi + GPS',
+        attributes: { 'Skaner': 'SE4750', 'Klawiatura': '35 kl.', 'Łączność': 'Wi-Fi' },
+        priceFrom: 4920,
+        availability: 'available' as const,
+      },
+      // UL20W — Wi-Fi + GPS, SE4850 LR, IP67
+      {
+        partNumber: 'U20W0C-PLCFES-HF',
+        name: 'M3 UL20W SE4850 LR / 53 kl. / Wi-Fi + GPS / IP67',
+        attributes: { 'Skaner': 'SE4850', 'Klawiatura': '53 kl.', 'Łączność': 'Wi-Fi' },
+        priceFrom: 5467,
+        availability: 'available' as const,
+      },
+      {
+        partNumber: 'U20W0C-PLCFRS-HF',
+        name: 'M3 UL20W SE4850 LR / 28 kl. / Wi-Fi + GPS / IP67',
+        attributes: { 'Skaner': 'SE4850', 'Klawiatura': '28 kl.', 'Łączność': 'Wi-Fi' },
+        priceFrom: 5467,
+        availability: 'available' as const,
+      },
+      {
+        partNumber: 'U20W0C-PLCFSS-HF',
+        name: 'M3 UL20W SE4850 LR / 35 kl. / Wi-Fi + GPS',
+        attributes: { 'Skaner': 'SE4850', 'Klawiatura': '35 kl.', 'Łączność': 'Wi-Fi' },
+        priceFrom: 5039,
+        availability: 'available' as const,
+      },
       // UL20F — Wi-Fi, SE4750
       {
         partNumber: 'U20F0C-Q2CFRS-HF',
@@ -52269,12 +52314,63 @@ M3 UL20 jest poprzednikiem [M3 UL30](/produkt/m3-ul30) — akcesoria UL20 (stacj
         priceFrom: 5467,
         availability: 'available' as const,
       },
+      // UL20F — Wi-Fi, SE4750, IP67
+      {
+        partNumber: 'U20F0C-P2CFSS-HF',
+        name: 'M3 UL20F SE4750 / 35 kl. / Wi-Fi / IP67',
+        attributes: { 'Skaner': 'SE4750', 'Klawiatura': '35 kl.', 'Łączność': 'Wi-Fi' },
+        priceFrom: 5467,
+        availability: 'available' as const,
+      },
+      {
+        partNumber: 'U20F0C-P2CFRS-HF-R',
+        name: 'M3 UL20F SE4750 / 28 kl. / Wi-Fi / IP67 / 4GB/64GB',
+        attributes: { 'Skaner': 'SE4750', 'Klawiatura': '28 kl.', 'Łączność': 'Wi-Fi' },
+        priceFrom: 5620,
+        availability: 'available' as const,
+      },
       // UL20F — Wi-Fi, SE4850 LR
+      {
+        partNumber: 'U20F0C-QLCFES-HF',
+        name: 'M3 UL20F SE4850 LR / 53 kl. / Wi-Fi',
+        attributes: { 'Skaner': 'SE4850', 'Klawiatura': '53 kl.', 'Łączność': 'Wi-Fi' },
+        priceFrom: 5955,
+        availability: 'available' as const,
+      },
       {
         partNumber: 'U20F0C-PLCFSS-HF',
         name: 'M3 UL20F SE4850 LR / 35 kl. / Wi-Fi',
         attributes: { 'Skaner': 'SE4850', 'Klawiatura': '35 kl.', 'Łączność': 'Wi-Fi' },
         priceFrom: 5955,
+        availability: 'available' as const,
+      },
+      {
+        partNumber: 'U20F0C-PLCFSS-HF-R',
+        name: 'M3 UL20F SE4850 LR / 35 kl. / Wi-Fi / IP67 / 4GB/64GB',
+        attributes: { 'Skaner': 'SE4850', 'Klawiatura': '35 kl.', 'Łączność': 'Wi-Fi' },
+        priceFrom: 6100,
+        availability: 'available' as const,
+      },
+      // UL20F — Wi-Fi, SE5800
+      {
+        partNumber: 'U20F0C-QICFES-HF',
+        name: 'M3 UL20F SE5800 / 53 kl. / Wi-Fi',
+        attributes: { 'Skaner': 'SE5800', 'Klawiatura': '53 kl.', 'Łączność': 'Wi-Fi' },
+        priceFrom: 6200,
+        availability: 'available' as const,
+      },
+      {
+        partNumber: 'U20F0C-QICFRS-HF',
+        name: 'M3 UL20F SE5800 / 28 kl. / Wi-Fi',
+        attributes: { 'Skaner': 'SE5800', 'Klawiatura': '28 kl.', 'Łączność': 'Wi-Fi' },
+        priceFrom: 6200,
+        availability: 'available' as const,
+      },
+      {
+        partNumber: 'U20F0C-QICFSS-HF',
+        name: 'M3 UL20F SE5800 / 35 kl. / Wi-Fi',
+        attributes: { 'Skaner': 'SE5800', 'Klawiatura': '35 kl.', 'Łączność': 'Wi-Fi' },
+        priceFrom: 6200,
         availability: 'available' as const,
       },
       // UL20X — 4G LTE + GPS, SE4750
@@ -52297,6 +52393,58 @@ M3 UL20 jest poprzednikiem [M3 UL30](/produkt/m3-ul30) — akcesoria UL20 (stacj
         name: 'M3 UL20X SE4750 / 53 kl. / 4G + GPS',
         attributes: { 'Skaner': 'SE4750', 'Klawiatura': '53 kl.', 'Łączność': '4G LTE + GPS' },
         priceFrom: 5039,
+        availability: 'available' as const,
+      },
+      {
+        partNumber: 'U20X4C-P2CFRS-HF-R',
+        name: 'M3 UL20X SE4750 / 28 kl. / 4G + GPS / 4GB/64GB',
+        attributes: { 'Skaner': 'SE4750', 'Klawiatura': '28 kl.', 'Łączność': '4G LTE + GPS' },
+        priceFrom: 5360,
+        availability: 'available' as const,
+      },
+      {
+        partNumber: 'U20X4C-P2CFSS-HF-R',
+        name: 'M3 UL20X SE4750 / 35 kl. / 4G + GPS / 4GB/64GB',
+        attributes: { 'Skaner': 'SE4750', 'Klawiatura': '35 kl.', 'Łączność': '4G LTE + GPS' },
+        priceFrom: 5360,
+        availability: 'available' as const,
+      },
+      // UL20X — 4G LTE + GPS, SE4850 LR
+      {
+        partNumber: 'U20X4C-QLCFES-HF',
+        name: 'M3 UL20X SE4850 LR / 53 kl. / 4G + GPS',
+        attributes: { 'Skaner': 'SE4850', 'Klawiatura': '53 kl.', 'Łączność': '4G LTE + GPS' },
+        priceFrom: 5620,
+        availability: 'available' as const,
+      },
+      {
+        partNumber: 'U20X4C-QLCFSS-HF',
+        name: 'M3 UL20X SE4850 LR / 35 kl. / 4G + GPS',
+        attributes: { 'Skaner': 'SE4850', 'Klawiatura': '35 kl.', 'Łączność': '4G LTE + GPS' },
+        priceFrom: 5620,
+        availability: 'available' as const,
+      },
+      {
+        partNumber: 'U20X4C-PLCFSS-HF',
+        name: 'M3 UL20X SE4850 LR / 35 kl. / 4G + GPS',
+        attributes: { 'Skaner': 'SE4850', 'Klawiatura': '35 kl.', 'Łączność': '4G LTE + GPS' },
+        priceFrom: 5620,
+        availability: 'available' as const,
+      },
+      // UL20X — 4G LTE + GPS, SE5800
+      {
+        partNumber: 'U20X4C-QICFRS-HF',
+        name: 'M3 UL20X SE5800 / 28 kl. / 4G + GPS',
+        attributes: { 'Skaner': 'SE5800', 'Klawiatura': '28 kl.', 'Łączność': '4G LTE + GPS' },
+        priceFrom: 6200,
+        availability: 'available' as const,
+      },
+      // UL20 FX — Freezer, SE4850 LR
+      {
+        partNumber: 'U20F4C-QLCFES-HF',
+        name: 'M3 UL20 FX Freezer SE4850 LR / 53 kl. / 4G + GPS',
+        attributes: { 'Skaner': 'SE4850', 'Klawiatura': '53 kl.', 'Łączność': '4G LTE + GPS' },
+        priceFrom: 6800,
         availability: 'available' as const,
       },
       // UL20 FX — SE5800, USB-C, BT 5.3, Wi-Fi 6, hot-swap, 8GB/128GB
@@ -52380,7 +52528,7 @@ M3 UL20 jest poprzednikiem [M3 UL30](/produkt/m3-ul30) — akcesoria UL20 (stacj
       'm3-ul30-uchwyt-pistoletowy', 'm3-ul30-folia-ochronna',
       'm3-ul30-kabura', 'm3-ul30-pasek-na-reke',
       'm3-ul30-zasilacz-2slot', 'm3-ul30-zasilacz-8slot',
-      'm3-ul30-rysik', 'm3-ul30-zasilacz-snap-on',
+      'm3-ul30-rysik',
     ],
     comparison: {
       title: 'Porównanie M3 UL20 z następcą UL30 i konkurencją',
