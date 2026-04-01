@@ -52305,7 +52305,7 @@ M3 UL20 jest poprzednikiem [M3 UL30](/produkt/m3-ul30) — akcesoria UL20 (stacj
         name: 'M3 UL20W SE4850 LR / 35 kl. / Wi-Fi + GPS',
         attributes: { 'Skaner': 'SE4850', 'Klawiatura': '35 kl.', 'Łączność': 'Wi-Fi' },
         priceFrom: 5039,
-        availability: 'available' as const,
+        availability: 'unavailable' as const,
       },
       // UL20F — Wi-Fi, SE4750
       {
@@ -52444,7 +52444,7 @@ M3 UL20 jest poprzednikiem [M3 UL30](/produkt/m3-ul30) — akcesoria UL20 (stacj
         name: 'M3 UL20X SE4850 LR / 35 kl. / 4G + GPS',
         attributes: { 'Skaner': 'SE4850', 'Klawiatura': '35 kl.', 'Łączność': '4G LTE + GPS' },
         priceFrom: 5620,
-        availability: 'available' as const,
+        availability: 'unavailable' as const,
       },
       // UL20X — 4G LTE + GPS, SE5800
       {
