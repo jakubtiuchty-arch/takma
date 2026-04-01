@@ -17,6 +17,14 @@ export async function middleware(request: NextRequest) {
   requestHeaders.set('x-next-pathname', pathname)
 
   // -------------------------------------------------------------------------
+  // 410 Gone — stare WordPress endpointy (Senuto/crawlery wykrywają WP)
+  // -------------------------------------------------------------------------
+  const wpPaths = ['/wp-json', '/wp-admin', '/wp-login.php', '/xmlrpc.php', '/wp-content', '/wp-includes', '/feed']
+  if (wpPaths.some(p => pathname === p || pathname.startsWith(p + '/'))) {
+    return new NextResponse('Gone', { status: 410 })
+  }
+
+  // -------------------------------------------------------------------------
   // 301 Redirects — zmienione URLe
   // -------------------------------------------------------------------------
   const redirects: Record<string, string> = {
