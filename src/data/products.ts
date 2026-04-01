@@ -52200,14 +52200,14 @@ const m3UL20: Product[] = [
     slug: 'm3-ul20',
     name: 'M3 UL20',
     priceFrom: 4920,
-    shortDescription: 'M3 UL20 — terminal gun z klawiaturą 28/35/53 kl., 5" FHD, IP67, SE4750/SE4850/SE5800, bateria 6700 mAh',
+    shortDescription: 'M3 UL20 — kolektor danych gun z klawiaturą 28/35/53 kl., 5" FHD, IP67, SE4750/SE4850/SE5800, bateria 6700 mAh',
     description: `Dla kogo? M3 UL20 to wytrzymały terminal magazynowy gun (kolektor danych) z fizyczną klawiaturą i ekranem 5" Full HD (1920x1080), przeznaczony do pracy w magazynach, centrach dystrybucji, produkcji i chłodniach. Terminal pistoletowy M3 UL20 z klawiaturą fizyczną (28, 35 lub 53 klawisze) sprawdza się w aplikacjach WMS wymagających szybkiego wpisywania ilości, kodów lokalizacji i identyfikatorów partii. Dostępny w trzech wersjach: UL20W (Wi-Fi), UL20F (Wi-Fi, wyższa specyfikacja / Freezer) i UL20X (4G LTE + GPS).
 
 Kluczowe cechy M3 UL20: procesor 2,0–2,2 GHz Octa-core, pamięć 2 GB / 16 GB (UL20W) lub 4 GB / 32–64 GB (UL20F, UL20X), ekran 5" FHD 1920x1080 z Gorilla Glass (obsługa w rękawicach, mokrym palcem, rysikiem). Kolektor danych M3 UL20 oferuje baterię Li-Ion 6700 mAh z szybkim ładowaniem, aparat 13 lub 16 MP z LED flash, Wi-Fi 802.11ac, Bluetooth 4.1 i NFC 13,56 MHz. Modele UL20X obsługują sieć 4G LTE (FDD-LTE B1/3/5/7/8/20) i GPS (A-GPS, GLONASS, BeiDou, Galileo). IP67 i upadki z 2,0 m na beton. Terminal przemysłowy z klawiaturą do magazynu, produkcji i logistyki.
 
 Warianty skanerów: Zebra SE4750 (zasięg standardowy — picking, skanowanie z ręki), Zebra SE4850 (daleki zasięg — regały paletowe) lub Zebra SE5800/SE58 (ultra daleki zasięg — modele FX). Wersja UL20F Freezer działa od −30°C z podgrzewaniem ekranu i okna skanera. Nowsze modele UL20 FX oferują: skaner SE5800, USB-C, Bluetooth 5.3, Wi-Fi 6 (802.11ax), hot-swap baterii, 8 GB / 128 GB pamięci. Android 9/10 (modele standardowe) lub Android 10 (modele FX).
 
-M3 UL20 jest poprzednikiem [M3 UL30](/produkt/m3-ul30) — akcesoria UL20 (stacje dokujące, ładowarki baterii, booty ochronne) są w pełni kompatybilne z UL30. M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Jeśli potrzebujesz nowszego modelu z NPU AI i Wi-Fi 6E, sprawdź [M3 UL30](/produkt/m3-ul30).`,
+M3 UL20 jest poprzednikiem [M3 UL30](/produkt/m3-ul30) — akcesoria UL20 (stacje dokujące, ładowarki baterii, booty ochronne) są w pełni kompatybilne z UL30. M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych z platformą M3 Speedpack (platforma MDM do zdalnego zarządzania, aktualizacji firmware i konfiguracji terminali M3 Mobile). TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Jeśli potrzebujesz nowszego modelu z NPU AI i Wi-Fi 6E, sprawdź [M3 UL30](/produkt/m3-ul30).`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['terminale-mobilne'],
@@ -52224,8 +52224,8 @@ M3 UL20 jest poprzednikiem [M3 UL30](/produkt/m3-ul30) — akcesoria UL20 (stacj
       'M3 UL20 — widok z boku, przyciski skanowania i funkcyjne',
       'M3 UL20 — widok z prawego boku, przycisk skanowania i styki ładowania',
     ],
-    seoTitle: 'M3 UL20 — terminal gun z klawiaturą, 5" FHD, IP67',
-    seoDescription: 'M3 UL20 — terminal gun z klawiaturą 28/35/53 kl., 5" FHD, SE4750/SE4850/SE5800, IP67, bateria 6700 mAh. Wersja Freezer (−30°C), 4G LTE. Zamów w TAKMA.',
+    seoTitle: 'M3 UL20 — kolektor danych gun z klawiaturą | IP67, 5" FHD | TAKMA',
+    seoDescription: 'M3 UL20 — kolektor danych gun z klawiaturą 28/35/53 kl., 5" FHD, IP67, bateria 6700 mAh. Od 4 920 zł netto. Freezer (−30°C), 4G LTE. Zamów w TAKMA.',
     variantAttributeTooltips: {
       'Skaner': 'SE4750 — zasięg standardowy, do skanowania z ręki na linii picking.\n\nSE4850 — daleki zasięg, do regałów paletowych.\n\nSE5800 — ultra daleki zasięg (modele FX), do high-bay i skanowania na dużą odległość.',
       'Klawiatura': '28 kl. — numeryczna, do szybkiego wpisywania ilości i kodów.\n\n35 kl. — funkcyjna numeryczna, kompromis między kompaktowością a funkcjonalnością.\n\n53 kl. — alfanumeryczna, do pełnego wpisywania tekstu, kodów lokalizacji i opisów.',
@@ -52522,6 +52522,7 @@ M3 UL20 jest poprzednikiem [M3 UL30](/produkt/m3-ul30) — akcesoria UL20 (stacj
       { question: 'Jakie systemy WMS i ERP obsługuje M3 UL20?', answer: 'M3 UL20 z Androidem 9/10 obsługuje popularne systemy WMS/ERP: SAP EWM, Oracle WMS Cloud, Comarch WMS, Asseco WAPRO Mag, Streamsoft Prestiż, Subiekt GT/nexo, InsERT, WMS.net, LogiMag, Mecalux Easy WMS. Zarządzanie urządzeniami przez M3 Speedpack MDM lub Android Enterprise.' },
       { question: 'Co to są modele UL20 FX?', answer: 'UL20 FX to nowsza rewizja terminala UL20 z ulepszoną specyfikacją: skaner Zebra SE5800 (ultra daleki zasięg), USB-C, Bluetooth 5.3, Wi-Fi 6 (802.11ax), hot-swap baterii, 8 GB RAM / 128 GB Flash i podgrzewany ekran. Modele FX łączą sprawdzoną obudowę UL20 z nowocześniejszą elektroniką — dobry wybór, gdy UL30 nie jest jeszcze dostępny w potrzebnej konfiguracji.' },
       { question: 'Gdzie kupić M3 UL20 w Polsce?', answer: 'TAKMA jest partnerem M3 Mobile w Polsce. Oferujemy M3 UL20 z dostawą, doradztwo w doborze wariantu (klawiatura, skaner, łączność), konfigurację M3 Speedpack MDM i serwis gwarancyjny/pogwarancyjny. Pomagamy również w migracji z UL20 na nowszy UL30. Skontaktuj się — przygotujemy indywidualną wycenę.' },
+      { question: 'Jak długo M3 UL20 będzie wspierany (aktualizacje Android)?', answer: 'M3 UL20 w wersji standard (UL20W/UL20F/UL20X) został wprowadzony z Androidem 9/10 — producent nie gwarantuje dalszych aktualizacji. Wersja UL20 FX (m3u20) z Android 10 może otrzymać ograniczone wsparcie. Jeśli potrzebujesz gwarantowanych aktualizacji Androida na 4+ lat, rozważ następcę [M3 UL30](/produkt/m3-ul30) z Androidem 14 i wsparciem do Android 18, lub [Zebra MC3400](/produkt/zebra-mc3400) z 10-letnim wsparciem LifeGuard.' },
     ],
     availability: 'available' as const,
     isNew: false,
@@ -52616,7 +52617,10 @@ M3 UL20 jest poprzednikiem [M3 UL30](/produkt/m3-ul30) — akcesoria UL20 (stacj
       ],
     },
     relatedProducts: ['m3-ul30', 'm3-sl20k', 'm3-sm30'],
-    downloads: [],
+    downloads: [
+      { name: 'Specyfikacja techniczna M3 UL20 (EN)', type: 'datasheet' as const, url: '/downloads/m3-ul20-specification.pdf', size: '1,5 MB' },
+      { name: 'Katalog akcesoriów M3 UL20 (EN)', type: 'manual' as const, url: '/downloads/m3-ul20-accessories-guide.pdf', size: '2,2 MB' },
+    ],
     createdAt: '2026-03-29',
   },
 ]
