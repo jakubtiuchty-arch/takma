@@ -32,10 +32,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/polityka-prywatnosci`, lastModified: new Date('2025-06-01') },
     { url: `${baseUrl}/regulamin`, lastModified: new Date('2026-02-17') },
     { url: `${baseUrl}/mapa-strony`, lastModified: lastUpdated },
-    // Hub pages taśm per typ
-    { url: `${baseUrl}/tasmy-wax`, lastModified: lastUpdated },
-    { url: `${baseUrl}/tasmy-wax-resin`, lastModified: lastUpdated },
-    { url: `${baseUrl}/tasmy-resin`, lastModified: lastUpdated },
   ]
 
   const productPages: MetadataRoute.Sitemap = products.map((product) => ({

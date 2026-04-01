@@ -171,6 +171,35 @@ const nextConfig = {
       { source: '/produkt/zebra-xslate-l10/:path*', destination: '/tablety-przemyslowe', permanent: true },
 
       // =====================================================
+      // AHREFS AUDIT 01.04.2026 — 404 redirecty
+      // =====================================================
+
+      // Strony kategorii/producenta → istniejące odpowiedniki
+      { source: '/m3-mobile', destination: '/terminale-mobilne', permanent: true },
+      { source: '/datalogic', destination: '/terminale-datalogic', permanent: true },
+      { source: '/citizen', destination: '/drukarki-etykiet-citizen', permanent: true },
+      { source: '/brother', destination: '/drukarki-etykiet-brother', permanent: true },
+      { source: '/etui-kabury-skanerow', destination: '/etui-kabury-uchwyty', permanent: true },
+      { source: '/skanery-kodow', destination: '/skanery-kodow-kreskowych', permanent: true },
+      { source: '/skanery-kodow-zebra', destination: '/skanery-kodow-kreskowych-zebra', permanent: true },
+      { source: '/tasmy-wax', destination: '/tasmy-termotransferowe', permanent: true },
+      { source: '/tasmy-wax-resin', destination: '/tasmy-termotransferowe', permanent: true },
+      { source: '/tasmy-resin', destination: '/tasmy-termotransferowe', permanent: true },
+      { source: '/etykiety-termotransferowe', destination: '/etykiety-termotransferowe-papierowe', permanent: true },
+
+      // Produkty 404 → konkretne następcy
+      { source: '/produkt/zebra-ds8178', destination: '/produkt/zebra-ds8288', permanent: true },
+      { source: '/produkt/zebra-zc350', destination: '/drukarki-kart', permanent: true },
+      { source: '/produkt/zebra-module-wifi-zd421', destination: '/produkt/zebra-zd421t', permanent: true },
+      { source: '/produkt/zebra-module-ethernet-zd421', destination: '/produkt/zebra-zd421t', permanent: true },
+      { source: '/produkt/honeywell-xenon-ultra-1960g', destination: '/skanery-kodow-kreskowych', permanent: true },
+      { source: '/produkt/zebra-futer%C3%A1l-zq610', destination: '/produkt-przeniesiony', permanent: true },
+      { source: '/produkt/zebra-futera%C5%82-zq610', destination: '/produkt-przeniesiony', permanent: true },
+
+      // Pliki PDF — redirect na poprawne nazwy
+      { source: '/downloads/m3-sm24-specification.pdf', destination: '/downloads/m3-mobile-sm24-specification.pdf', permanent: true },
+
+      // =====================================================
       // CATCH-ALL: pozostałe stare produkty → strona przebudowa
       // Honeywell, Citizen, Brother, TSC, Unitech, M3, Custom,
       // Elo, Newland, Sewoo, Novimag + wszystkie akcesoria

@@ -57,6 +57,10 @@ export async function middleware(request: NextRequest) {
       // Drukarki mobilne
       'zebra-zq210', 'zebra-zq220-plus', 'zebra-zq310-plus', 'zebra-zq320-plus',
       'zebra-zq511', 'zebra-zq521', 'zebra-zq610-plus', 'zebra-zq620-plus', 'zebra-zq630-plus',
+      // Futerały (slug z polskim ł — URL: futeral)
+      'zebra-futera\u0142-zq610', 'zebra-futeral-zq620',
+      'zebra-futeral-zq310', 'zebra-futeral-zq320-plus',
+      'zebra-futeral-zq210', 'zebra-futeral-zq220-plus',
       // Drukarki kart
       'zebra-zc100', 'zebra-zc300', 'zebra-zc350',
       // Terminale

@@ -7033,7 +7033,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-17',
   updatedAt: '2026-03-17',
   readTime: '15 min',
-  heroImage: '/images/guides/zebra-zt610-microlabel.png',
+  heroImage: '/images/guides/zebra-zt610-microlabel.webp',
 
   sections: [
     {
@@ -7521,7 +7521,7 @@ export const guides: Guide[] = [
   publishedAt: '2026-03-17',
   updatedAt: '2026-03-17',
   readTime: '12 min',
-  heroImage: '/images/guides/brother-rj-4230b-vs-zebra-zq521.png',
+  heroImage: '/images/guides/brother-rj-4230b-vs-zebra-zq521.webp',
 
   sections: [
     {

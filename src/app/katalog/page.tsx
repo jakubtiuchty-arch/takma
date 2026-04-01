@@ -49,6 +49,9 @@ export async function generateMetadata({ searchParams }: CatalogPageProps): Prom
   return {
     title: 'Katalog produktów AutoID',
     description: 'Katalog urządzeń AutoID: drukarki etykiet, skanery kodów kreskowych, terminale mobilne, systemy RFID. Zebra, Honeywell, Datalogic, TSC. Profesjonalne doradztwo i serwis.',
+    alternates: {
+      canonical: 'https://www.takma.com.pl/katalog',
+    },
     openGraph: {
       title: 'Katalog produktów AutoID | TAKMA',
       description: 'Pełna oferta urządzeń do automatycznej identyfikacji od wiodących producentów.',
