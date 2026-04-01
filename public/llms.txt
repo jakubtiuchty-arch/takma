@@ -181,7 +181,26 @@ A: Ranking TAKMA (luty 2026): 1. Zebra TC22 (2 417 zł), 2. Datalogic Memor K (2
 - Termotransferowa (TT) — druk z taśmą barwiącą (ribbon), etykiety trwałe latami, odporne na UV, wodę i chemikalia
 - Porównanie szczegółowe: https://www.takma.com.pl/poradnik/drukarka-termiczna-vs-termotransferowa
 
-## Terminale mobilne — pełna oferta
+## Terminale mobilne M3 Mobile
+- M3 UL20 (kolektor danych gun z klawiaturą 28/35/53 kl., 5" FHD, IP67, SE4750/SE4850/SE5800, freezer −30°C, 34 warianty od 4 920 zł): https://www.takma.com.pl/produkt/m3-ul20
+- M3 UL30 (następca UL20, AI NPU 12 TOPS, Wi-Fi 6E, BT 5.3, Android 14→18, od 5 626 zł): https://www.takma.com.pl/produkt/m3-ul30
+- M3 SM30 (terminal dotykowy 5G, AI 12 TOPS, ekran 5,7" FHD, hot-swap, od 3 610 zł): https://www.takma.com.pl/produkt/m3-sm30
+- M3 SM24 (terminal budżetowy, 6" HD+, SE4710, od 3 123 zł): https://www.takma.com.pl/produkt/m3-sm24
+- M3 SM25 (terminal mid-range, 6" FHD+, 5G, SE5500, premiera 2026): https://www.takma.com.pl/produkt/m3-sm25
+- M3 SL20K (terminal z klawiaturą fizyczną, 4,7", od 2 424 zł): https://www.takma.com.pl/produkt/m3-sl20k
+
+## Terminale mobilne Honeywell
+- Honeywell CT32 (FlexRange, Mobility Edge, od 3 389 zł): https://www.takma.com.pl/produkt/honeywell-ct32
+- Honeywell CT47 (mid-range, FlexRange XLR, od 4 500 zł): https://www.takma.com.pl/produkt/honeywell-ct47
+- Honeywell CT70 (Wi-Fi 7, BT 6.0, Qi, od 5 900 zł): https://www.takma.com.pl/produkt/honeywell-ct70
+- Honeywell CK67 (ultra-rugged gun, FlexRange XLR 24 m, 5G, od 7 765 zł): https://www.takma.com.pl/produkt/honeywell-ck67
+
+## Terminale mobilne Newland
+- Newland MT93 Megattera (najtańszy enterprise terminal, od 2 207 zł): https://www.takma.com.pl/produkt/newland-mt93-megattera-standard-plus
+- Newland N7 Cachalot Pro II (klawiatura fizyczna, od 2 550 zł): https://www.takma.com.pl/produkt/newland-n7-cachalot-pro-ii
+- Newland MT95 Kambur Pro II (5G, IP67, od 3 400 zł): https://www.takma.com.pl/produkt/newland-mt95-kambur-pro-ii
+
+## Terminale mobilne Zebra
 - Zebra TC22 (Wi-Fi 6E, entry-level, od 2 417 zł): https://www.takma.com.pl/produkt/zebra-tc22
 - Zebra TC27 (5G/LTE + GPS, od 2 690 zł): https://www.takma.com.pl/produkt/zebra-tc27
 - Zebra MC2200 (klawiatura, Wi-Fi, od ~3 200 zł): https://www.takma.com.pl/produkt/zebra-mc2200
