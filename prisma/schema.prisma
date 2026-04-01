@@ -401,3 +401,23 @@ model SeoAlert {
   @@index([reportId])
   @@index([isRead, severity])
 }
+
+// ---------------------------------------------------------------------------
+// Jarltech Stock Cache (synced by daily cron)
+// ---------------------------------------------------------------------------
+
+model JarltechStockCache {
+  partNumber   String   @id
+  found        Boolean  @default(false)
+  unitPrice    Float?
+  currency     String?  @default("EUR")
+  inventory    Int      @default(0)
+  incomingQty  Int      @default(0)
+  incomingDate String?
+  totalStock   Int      @default(0)
+  jarltechId   String?
+  availability String   @default("unavailable")
+  deliveryText String?
+  lastSync     DateTime @updatedAt
+  createdAt    DateTime @default(now())
+}

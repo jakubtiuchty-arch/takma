@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { lookupStock as ingramLookup } from '@/lib/ingram'
 import { lookupStock as bluestarLookup } from '@/lib/bluestar'
-import { lookupStock as jarltechLookup } from '@/lib/jarltech'
+import { prisma } from '@/lib/db'
 import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
 import type { JarltechStockInfo } from '@/lib/jarltech'
@@ -81,21 +81,37 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    // Jarltech timeout — sequential API (brak batcha), moze przekroczyc Vercel function timeout
-    // Jesli Jarltech nie zdazy w 5s, graceful fallback na Ingram + BlueStar
-    const JARLTECH_TIMEOUT = 15000
-    const jarltechWithTimeout = Promise.race([
-      jarltechLookup(partNumbers),
-      new Promise<JarltechStockInfo[]>((_, reject) =>
-        setTimeout(() => reject(new Error('Jarltech timeout (5s)')), JARLTECH_TIMEOUT)
-      ),
-    ])
+    // Jarltech: read from DB cache (synced by daily cron, not live)
+    const jarltechFromCache = async (): Promise<JarltechStockInfo[]> => {
+      try {
+        const cached = await prisma.jarltechStockCache.findMany({
+          where: { partNumber: { in: partNumbers } },
+        })
+        return cached.map(c => ({
+          partNumber: c.partNumber,
+          found: c.found,
+          unitPrice: c.unitPrice ?? undefined,
+          currency: c.currency ?? 'EUR',
+          inventory: c.inventory,
+          incomingQty: c.incomingQty,
+          incomingDate: c.incomingDate ?? undefined,
+          totalStock: c.totalStock,
+          jarltechId: c.jarltechId ?? undefined,
+          availability: c.availability as 'available' | 'on-order' | 'unavailable',
+          deliveryText: c.deliveryText ?? '',
+          lastSync: c.lastSync.toISOString(),
+        }))
+      } catch (err) {
+        console.error('[API /stock] Jarltech cache read error:', err)
+        return []
+      }
+    }
 
-    // Rownolegle: trzech dystrybutorów + kurs EUR/PLN
+    // Rownolegle: dwoch dystrybutorów live + Jarltech z cache DB + kurs EUR/PLN
     const [ingramResult, bluestarResult, jarltechResult, eurRate] = await Promise.all([
       Promise.allSettled([ingramLookup(partNumbers)]).then(r => r[0]),
       Promise.allSettled([bluestarLookup(partNumbers)]).then(r => r[0]),
-      Promise.allSettled([jarltechWithTimeout]).then(r => r[0]),
+      Promise.allSettled([jarltechFromCache()]).then(r => r[0]),
       getEurPlnRate(),
     ])
 

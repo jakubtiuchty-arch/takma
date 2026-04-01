@@ -6,6 +6,10 @@
     {
       "path": "/api/admin/seo-agent/run",
       "schedule": "0 6 * * 1,4"
+    },
+    {
+      "path": "/api/cron/jarltech-sync",
+      "schedule": "0 5 * * *"
     }
   ]
 }
