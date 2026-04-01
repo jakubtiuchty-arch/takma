@@ -50,6 +50,8 @@ export interface Product {
   updatedAt?: string
   sameAs?: string
   videoUrl?: string
+  /** Lokalne wideo MP4 (np. z Remotion) — natywny odtwarzacz, nie iframe */
+  videoFile?: string
   relatedProducts?: string[]
 }
 
@@ -52200,6 +52202,7 @@ const m3UL20: Product[] = [
     slug: 'm3-ul20',
     name: 'M3 UL20',
     priceFrom: 4920,
+    videoFile: '/videos/m3-ul20.mp4',
     shortDescription: 'M3 UL20 — kolektor danych gun z klawiaturą 28/35/53 kl., 5" FHD, IP67, SE4750/SE4850/SE5800, bateria 6700 mAh',
     description: `Dla kogo? M3 UL20 to wytrzymały terminal magazynowy gun (kolektor danych) z fizyczną klawiaturą i ekranem 5" Full HD (1920x1080), przeznaczony do pracy w magazynach, centrach dystrybucji, produkcji i chłodniach. Terminal pistoletowy M3 UL20 z klawiaturą fizyczną (28, 35 lub 53 klawisze) sprawdza się w aplikacjach WMS wymagających szybkiego wpisywania ilości, kodów lokalizacji i identyfikatorów partii. Dostępny w trzech wersjach: UL20W (Wi-Fi), UL20F (Wi-Fi, wyższa specyfikacja / Freezer) i UL20X (4G LTE + GPS).
 

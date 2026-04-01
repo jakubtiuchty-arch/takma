@@ -584,7 +584,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   FAQ
                 </a>
               )}
-              {product.videoUrl && (
+              {(product.videoUrl || product.videoFile) && (
                 <a
                   href="#video"
                   className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
@@ -701,19 +701,30 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </div>
             </section>
 
-            {/* Video — embed Vidyard/YouTube */}
-            {product.videoUrl && (
+            {/* Video — embed Vidyard/YouTube or native MP4 */}
+            {(product.videoUrl || product.videoFile) && (
               <section id="video">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Wideo produktowe</h2>
                 <div className="aspect-video rounded-xl overflow-hidden bg-gray-100">
-                  <iframe
-                    src={product.videoUrl}
-                    className="w-full h-full"
-                    allowFullScreen
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    title={`Wideo produktowe — ${product.name}`}
-                    loading="lazy"
-                  />
+                  {product.videoFile ? (
+                    <video
+                      src={product.videoFile}
+                      className="w-full h-full object-contain bg-[#0c1525]"
+                      controls
+                      preload="metadata"
+                      playsInline
+                      title={`Wideo produktowe — ${product.name}`}
+                    />
+                  ) : (
+                    <iframe
+                      src={product.videoUrl}
+                      className="w-full h-full"
+                      allowFullScreen
+                      allow="autoplay; fullscreen; picture-in-picture"
+                      title={`Wideo produktowe — ${product.name}`}
+                      loading="lazy"
+                    />
+                  )}
                 </div>
               </section>
             )}
