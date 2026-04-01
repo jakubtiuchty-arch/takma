@@ -150,6 +150,13 @@ gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', { send_page_view: true });`}
           </>
         )}
         {!isAdmin && !isPanel && (
+          <Script
+            src="https://analytics.ahrefs.com/analytics.js"
+            data-key="XibdXHRREO4eDGxt8gbxAw"
+            strategy="afterInteractive"
+          />
+        )}
+        {!isAdmin && !isPanel && (
           <>
             <script
               type="application/ld+json"
