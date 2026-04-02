@@ -142,8 +142,8 @@ export function SmartPriceProvider({ product, children }: { product: Product; ch
     const withLivePrices = allVariants.map(v => {
       const s = stockData.get(v.partNumber)
       const livePrice = (s?.found && s?.price) ? s.price : null
-      const hasStock = s?.found ? s.totalStock > 0 : false
-      return { ...v, effectivePrice: livePrice ?? v.price, hasStock, apiFound: !!s?.found }
+      const isAvailable = s?.found ? s.availability === 'available' : false
+      return { ...v, effectivePrice: livePrice ?? v.price, hasStock: isAvailable, apiFound: !!s?.found }
     })
     // Sortuj: warianty z ceną live PRZED wariantami ze statyczną ceną, potem po cenie
     .sort((a, b) => {
