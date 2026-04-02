@@ -110,8 +110,10 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
         const idLower = product.id.toLowerCase()
         const shortDescLower = product.shortDescription.toLowerCase()
 
-        if (nameLower === queryLower) score += 100            // exact name match
+        if (nameLower === queryLower) score += 200            // exact name match
+        else if (nameLower.endsWith(queryNormalized) || nameLower.endsWith(queryLower)) score += 150  // name ends with (e.g. "m3 us20" ends with "us20")
         else if (nameLower.includes(queryNormalized)) score += 80  // name contains
+        else if (nameLower.replace(/\s+/g, '').includes(queryNormalized)) score += 75  // name without spaces
         if (slugLower.includes(queryNormalized)) score += 60  // slug contains
         if (idLower.includes(queryNormalized)) score += 50    // id contains
         if (shortDescLower.includes(queryNormalized)) score += 20  // shortDescription
@@ -424,48 +426,8 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
                         </p>
                       </div>
 
-                      {/* Availability + Price — hidden on mobile */}
+                      {/* Price — hidden on mobile */}
                       <div className="hidden sm:flex flex-col items-end flex-shrink-0 gap-0.5">
-                        {(() => {
-                          // Sprawdź live availability z API
-                          let liveAvail = result.availability
-                          if (result.partNumber) {
-                            const stock = stockData.get(result.partNumber)
-                            if (stock?.found) {
-                              liveAvail = stock.availability
-                            }
-                          }
-                          // Dla wyników produktowych: jeśli ten wariant niedostępny,
-                          // sprawdź czy jakikolwiek inny PN w stockData jest dostępny
-                          if (liveAvail !== 'available' && result.type === 'product') {
-                            stockData.forEach((s) => {
-                              if (s.found && s.availability === 'available' && s.totalStock > 0) {
-                                liveAvail = 'available'
-                              }
-                            })
-                          }
-                          if (!liveAvail) return null
-                          return (
-                          <span className={clsx(
-                            'text-[10px] font-medium flex items-center gap-1',
-                            liveAvail === 'available' && 'text-green-600',
-                            liveAvail === 'on-order' && 'text-yellow-600',
-                            liveAvail === 'unavailable' && 'text-red-500',
-                          )}>
-                            <span className={clsx(
-                              'w-1.5 h-1.5 rounded-full',
-                              liveAvail === 'available' && 'bg-green-500',
-                              liveAvail === 'on-order' && 'bg-yellow-500',
-                              liveAvail === 'unavailable' && 'bg-red-400',
-                            )} />
-                            {liveAvail === 'available'
-                              ? (result.categoryId === 'drukarki-etykiet' ? 'Dostępna' : 'Dostępny')
-                              : liveAvail === 'on-order'
-                              ? 'Na zamówienie'
-                              : (result.categoryId === 'drukarki-etykiet' ? 'Niedostępna' : 'Niedostępny')}
-                          </span>
-                          )
-                        })()}
                         {displayPrice && (
                           <span className="text-sm font-semibold text-gray-900 tabular-nums">
                             {displayPrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
