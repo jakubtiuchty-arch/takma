@@ -9,16 +9,43 @@ import { SearchIcon, MenuIcon, CloseIcon, PhoneIcon, ChevronDownIcon, UserIcon }
 import RFQBadge from '@/components/rfq/RFQBadge'
 import SearchBar from '@/components/search/SearchBar'
 
+interface FeaturedProduct {
+  name: string
+  slug: string
+  image: string
+  manufacturer: string
+  manufacturerLogo?: string
+  shortDesc: string
+  priceFrom: number
+}
+
+interface BrandLink {
+  name: string
+  href: string
+  logo: string
+}
+
 interface NavItem {
   name: string
   href: string
   children?: { name: string; href: string }[]
+  brandLinks?: BrandLink[]
+  featuredProduct?: FeaturedProduct
 }
 
 const navigation: NavItem[] = [
   {
     name: 'Terminale',
     href: '/terminale-mobilne',
+    featuredProduct: {
+      name: 'M3 SM30',
+      slug: 'm3-sm30',
+      image: '/images/products/m3-sm30-1.png',
+      manufacturer: 'M3 Mobile',
+      manufacturerLogo: '/images/partners/logo_m3mobile.png',
+      shortDesc: 'Flagowy terminal 5G z AI 12 TOPS, Snapdragon QCM6490, 5,7" FHD, IP68, hot-swap',
+      priceFrom: 3610,
+    },
     children: [
       { name: 'Wszystkie terminale', href: '/terminale-mobilne' },
       { name: 'Terminale Zebra', href: '/terminale-mobilne-zebra' },
@@ -35,13 +62,24 @@ const navigation: NavItem[] = [
   {
     name: 'Drukarki',
     href: '/drukarki-etykiet',
+    featuredProduct: {
+      name: 'Honeywell PC45t',
+      slug: 'honeywell-pc45t',
+      image: '/images/products/pc45t_3.png',
+      manufacturer: 'Honeywell',
+      manufacturerLogo: '/images/partners/logo_honeywell.png',
+      shortDesc: 'Biurkowa drukarka termotransferowa 4" z ekranem LCD 3,5", Wi-Fi 6 i BT 5.2',
+      priceFrom: 2159,
+    },
+    brandLinks: [
+      { name: 'Zebra', href: '/drukarki-etykiet-zebra', logo: '/images/partners/logo_zebra.png' },
+      { name: 'Honeywell', href: '/drukarki-etykiet-honeywell', logo: '/images/partners/logo_honeywell.png' },
+      { name: 'Brother', href: '/drukarki-etykiet-brother', logo: '/images/partners/brother_logo.png' },
+      { name: 'TSC', href: '/drukarki-etykiet-tsc', logo: '/images/partners/logo_tsc.png' },
+      { name: 'Citizen', href: '/drukarki-etykiet-citizen', logo: '/images/partners/logo_citizen.png' },
+    ],
     children: [
       { name: 'Wszystkie drukarki', href: '/drukarki-etykiet' },
-      { name: 'Drukarki Zebra', href: '/drukarki-etykiet-zebra' },
-      { name: 'Drukarki Honeywell', href: '/drukarki-etykiet-honeywell' },
-      { name: 'Drukarki Brother', href: '/drukarki-etykiet-brother' },
-      { name: 'Drukarki TSC', href: '/drukarki-etykiet-tsc' },
-      { name: 'Drukarki Citizen', href: '/drukarki-etykiet-citizen' },
       { name: 'Drukarki biurkowe', href: '/biurkowe-drukarki-etykiet' },
       { name: 'Drukarki przemysłowe', href: '/przemyslowe-drukarki-etykiet' },
       { name: 'Drukarki termotransferowe', href: '/termotransferowe-drukarki-etykiet' },
@@ -208,23 +246,101 @@ export default function Navbar() {
                           <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-600 rounded-full" />
                         )}
                       </Link>
-                      <div className="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
-                        <div className="bg-white rounded-xl shadow-lg border border-gray-100 py-2 min-w-[240px]">
-                          {item.children.map((child) => (
+                      <div className="absolute top-full left-0 pt-2 hidden group-hover:block z-50 before:absolute before:inset-x-0 before:-top-2 before:h-4 before:content-['']">
+                        {item.featuredProduct ? (
+                          <div className={clsx(
+                            'bg-white rounded-xl shadow-lg ring-1 ring-gray-100 flex overflow-hidden',
+                            item.brandLinks ? 'min-w-[720px]' : 'min-w-[560px]'
+                          )}>
+                            {/* Left: category links */}
+                            <div className="py-2 min-w-[220px] border-r border-gray-100 bg-white">
+                              {item.children.map((child) => (
+                                <Link
+                                  key={child.href}
+                                  href={child.href}
+                                  className={clsx(
+                                    'block px-4 py-2.5 text-sm transition-colors',
+                                    pathname === child.href
+                                      ? 'text-primary-600 bg-primary-50 font-medium'
+                                      : 'text-gray-600 hover:bg-primary-50 hover:text-primary-600'
+                                  )}
+                                >
+                                  {child.name}
+                                </Link>
+                              ))}
+                            </div>
+                            {/* Middle: brand logos (if present) */}
+                            {item.brandLinks && (
+                              <div className="py-4 px-5 min-w-[160px] border-r border-gray-100 flex flex-col items-center bg-white">
+                                <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-3">Producenci</p>
+                                <div className="space-y-1 flex flex-col items-center w-full">
+                                  {item.brandLinks.map((brand) => (
+                                    <Link
+                                      key={brand.href}
+                                      href={brand.href}
+                                      className="flex items-center justify-center px-3 py-2 rounded-lg hover:bg-primary-50 transition-colors w-full"
+                                    >
+                                      <img
+                                        src={brand.logo}
+                                        alt={brand.name}
+                                        className="h-[25px] w-auto opacity-70"
+                                      />
+                                    </Link>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+                            {/* Right: featured product */}
                             <Link
-                              key={child.href}
-                              href={child.href}
-                              className={clsx(
-                                'block px-4 py-2.5 text-sm transition-colors',
-                                pathname === child.href
-                                  ? 'text-primary-600 bg-primary-50 font-medium'
-                                  : 'text-gray-600 hover:bg-primary-50 hover:text-primary-600'
-                              )}
+                              href={`/produkt/${item.featuredProduct.slug}`}
+                              className="flex-1 min-w-[280px] p-5 group/featured bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 hover:from-blue-100 hover:via-purple-50 hover:to-pink-100 transition-all border-l-2 border-l-blue-200"
                             >
-                              {child.name}
+                              <div>
+                              <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-3">Polecany produkt</p>
+                              <div className="relative w-full h-40 mb-3">
+                                <Image
+                                  src={item.featuredProduct.image}
+                                  alt={item.featuredProduct.name}
+                                  fill
+                                  className="object-contain"
+                                  sizes="260px"
+                                />
+                              </div>
+                              <p className="text-sm font-bold text-gray-900 group-hover/featured:text-primary-600 transition-colors">
+                                {item.featuredProduct.name}
+                              </p>
+                              <p className="text-xs text-gray-500 mt-1 line-clamp-2 leading-relaxed">
+                                {item.featuredProduct.shortDesc}
+                              </p>
+                              <div className="flex items-center justify-between mt-2">
+                                <p className="text-sm font-bold text-primary-600">
+                                  od {item.featuredProduct.priceFrom.toLocaleString('pl-PL')} zł <span className="text-xs font-normal text-gray-400">netto</span>
+                                </p>
+                                <span className="text-xs font-semibold text-primary-600 opacity-0 group-hover/featured:opacity-100 transition-opacity">
+                                  Zobacz →
+                                </span>
+                              </div>
+                              </div>
                             </Link>
-                          ))}
-                        </div>
+                          </div>
+                        ) : (
+                          <div className="bg-white rounded-xl shadow-lg border border-gray-100 py-2 min-w-[240px]">
+                            {item.children.map((child) => (
+                              <Link
+                                key={child.href}
+                                href={child.href}
+                                className={clsx(
+                                  'block px-4 py-2.5 text-sm transition-colors',
+                                  pathname === child.href
+                                    ? 'text-primary-600 bg-primary-50 font-medium'
+                                    : 'text-gray-600 hover:bg-primary-50 hover:text-primary-600'
+                                )}
+                              >
+                                {child.name}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     </div>
                   )
