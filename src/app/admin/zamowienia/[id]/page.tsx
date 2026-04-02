@@ -168,7 +168,9 @@ export default async function OrderDetailPage({ params }: PageProps) {
               <div className="text-gray-600">{order.customer.email}</div>
               {order.customer.phone && <div className="text-gray-600">{order.customer.phone}</div>}
               {order.customer.nip && <div className="text-gray-500">NIP: {order.customer.nip}</div>}
-              {order.customer.address && <div className="text-gray-500">{order.customer.address}</div>}
+              {order.customer.address && order.customer.address.split(',').map((part, i) => (
+                <div key={i} className="text-gray-500">{part.trim()}</div>
+              ))}
               <Link href={`/admin/klienci/${order.customer.id}`} className="text-blue-600 hover:underline text-xs font-medium inline-block mt-2">
                 Karta klienta →
               </Link>

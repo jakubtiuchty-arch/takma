@@ -250,10 +250,17 @@ export async function GET(
     </div>
     <div class="info-box">
       <div class="info-title">Adres${order.customer.shippingAddress ? ' (faktura)' : ''}</div>
-      <div class="info-row">${esc(order.customer.address || '')}</div>
+      ${(() => {
+        const addr = order.customer.address || ''
+        const parts = addr.split(',').map((s: string) => s.trim()).filter(Boolean)
+        return parts.map((p: string) => `<div class="info-row">${esc(p)}</div>`).join('')
+      })()}
       ${order.customer.shippingAddress ? `
         <div class="info-title" style="margin-top:10px">Adres dostawy</div>
-        <div class="info-row">${esc(order.customer.shippingAddress)}</div>
+        ${(() => {
+          const parts = order.customer.shippingAddress.split(',').map((s: string) => s.trim()).filter(Boolean)
+          return parts.map((p: string) => `<div class="info-row">${esc(p)}</div>`).join('')
+        })()}
       ` : ''}
     </div>
   </div>
