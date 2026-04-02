@@ -82,7 +82,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     openGraph: {
       title: title,
       description: smartTruncate(ogDescription, 200),
-      type: 'website',
+      type: 'article',
       locale: 'pl_PL',
       siteName: 'TAKMA',
       images: ogImage ? [{ url: ogImage, width: 1200, height: 630, alt: product.name }] : undefined,
@@ -331,6 +331,13 @@ export default async function ProductPage({ params }: ProductPageProps) {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: product.name,
+    datePublished: product.createdAt,
+    dateModified: product.updatedAt || product.createdAt,
+    publisher: {
+      '@type': 'Organization',
+      name: 'TAKMA',
+      url: 'https://www.takma.com.pl',
+    },
     about: {
       '@type': 'Thing',
       name: product.name,
@@ -433,7 +440,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             <div className="flex items-start justify-between gap-4">
               <div className="mb-4">
                 <h1 className="text-2xl xs:text-3xl lg:text-4xl font-bold text-gray-900">
-                  {product.name}
+                  {product.seoH1 || product.name}
                 </h1>
                 {(primarySubcategory || category) && (
                   <p className="text-sm xs:text-base lg:text-lg font-medium text-gray-500 mt-1">

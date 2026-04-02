@@ -44,6 +44,7 @@ export interface Product {
   variantAttributeTooltips?: Record<string, string>
   seoTitle?: string
   seoDescription?: string
+  seoH1?: string
   downloads: ProductDownload[]
   servicePlans?: ServicePlan[]
   createdAt: string
@@ -51231,7 +51232,9 @@ const m3US20: Product[] = [
     name: 'M3 US20',
     priceFrom: 4080,
     shortDescription: 'M3 US20 — wytrzymały terminal mobilny z klawiaturą fizyczną, IP65, hot-swap, 4" WVGA, Android',
-    description: `Dla kogo? M3 US20 to wytrzymały terminal mobilny (kolektor danych) z fizyczną klawiaturą (30/42/51 klawiszy), zaprojektowany dla firm potrzebujących niezawodnego urządzenia do pracy w magazynie, logistyce, produkcji i w terenie. Fizyczna klawiatura zapewnia szybkie wprowadzanie danych bez konieczności używania ekranu dotykowego — idealne w rękawicach roboczych i trudnych warunkach. Kompaktowy ekran 4" WVGA z Gorilla Glass i podwójnym trybem dotyku (palec/rękawiczka/rysik).
+    description: `M3 US20 to wytrzymały terminal mobilny (kolektor danych) z fizyczną klawiaturą, produkowany przez koreańską firmę M3 Mobile. Urządzenie klasy enterprise oferuje 21 wariantów konfiguracyjnych z 6 opcjami skanerów kodów kreskowych Zebra, 3 typami klawiatury (30/42/51 klawiszy), ochronę IP65, hot-swap baterii 6700 mAh i opcjonalną łączność 4G LTE z GPS. Cena od 4 080 zł netto.
+
+Dla kogo? M3 US20 to terminal zaprojektowany dla firm potrzebujących niezawodnego urządzenia do pracy w magazynie, logistyce, produkcji i w terenie. Fizyczna klawiatura zapewnia szybkie wprowadzanie danych bez konieczności używania ekranu dotykowego — idealne w rękawicach roboczych i trudnych warunkach. Kompaktowy ekran 4" WVGA z Gorilla Glass i podwójnym trybem dotyku (palec/rękawiczka/rysik).
 
 Kluczowe przewagi M3 US20: hot-swap baterii 6700 mAh (wymiana bez wyłączania, sesje BT/WWAN/WLAN utrzymane), IP65, upadki z 1,8 m wg MIL-STD-810G, 2000× tumble z 1 m. Szeroki wybór skanerów — SE4770 (standard 2D), SE4770 pod kątem 45° (ergonomiczne skanowanie), SE5500 Smart Focus (daleki zasięg do 15 m), SE4850 ERI (Long Range) i SE4750. Kamera tylna 16 MP z autofokusem. Dwie wersje łączności: US20W (Wi-Fi a/b/g/n/ac) i US20X (Wi-Fi + 4G LTE + GPS).
 
@@ -51254,6 +51257,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
     ],
     seoTitle: 'M3 US20 — terminal mobilny z klawiaturą, IP65, hot-swap',
     seoDescription: 'M3 US20 — wytrzymały terminal mobilny z klawiaturą fizyczną 30/42/51 klawiszy, IP65, hot-swap 6700 mAh, skaner SE4770/SE5500. 21 wariantów. Zamów w TAKMA.',
+    seoH1: 'M3 US20 — terminal mobilny z klawiaturą fizyczną',
     variantAttributeTooltips: {
       '4G LTE': 'US20W = tylko Wi-Fi a/b/g/n/ac (praca w zasięgu sieci bezprzewodowej).\n\nUS20X = Wi-Fi + 4G LTE + GPS + 2× micro SIM — do pracy w terenie, logistyki mobilnej i dostaw.',
       'Skaner': 'SE4770 — standardowy imager 2D Zebra do kodów 1D/2D/QR z bliska i średniego zasięgu.\n\nSE4770 (45°) — ten sam skaner zamontowany pod kątem 45° dla ergonomicznego skanowania bez podnoszenia urządzenia.\n\nSE5500 Smart Focus — skaner dalekiego zasięgu do 15 m, idealny do magazynów wysokiego składowania.\n\nSE4850 ERI — Long Range, do skanowania z dużej odległości.\n\nSE4750 MR — Mid-Range, uniwersalny.\n\nSE4710 — kompaktowy imager 2D.',

@@ -135,6 +135,10 @@ export default async function RootLayout({
   return (
     <html lang="pl" className={inter.variable}>
       <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://analytics.ahrefs.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://analytics.ahrefs.com" />
         {!isAdmin && !isPanel && process.env.NEXT_PUBLIC_GA_ID && (
           <>
             <Script
