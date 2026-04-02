@@ -596,7 +596,7 @@ export default function CheckoutPage() {
   // ── Checkout ──────────────────────────────────────────────────
 
   return (
-    <div className="container-main py-8 lg:py-12">
+    <div className="container-main py-6 sm:py-8 lg:py-12 overflow-x-hidden">
       {/* Breadcrumbs */}
       <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6">
         <Link href="/" className="hover:text-primary-600 transition-colors">
@@ -636,11 +636,11 @@ export default function CheckoutPage() {
       {/* KROK 1: Koszyk + Cross-sell + Podsumowanie                 */}
       {/* ════════════════════════════════════════════════════════════ */}
       {step === 1 && (
-        <div className="grid lg:grid-cols-5 gap-8 lg:gap-10 items-start">
+        <div className="grid lg:grid-cols-5 gap-6 lg:gap-10 items-start">
           <div className="lg:col-span-3 space-y-6">
             {/* Lista produktow */}
             <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
-              <div className="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
+              <div className="px-4 sm:px-6 py-4 border-b border-gray-200 flex items-center justify-between">
                 <h2 className="font-semibold text-gray-900 flex items-center gap-2">
                   <ShoppingCartIcon size={20} className="text-primary-600" />
                   Produkty w zamówieniu ({items.length})
@@ -669,7 +669,7 @@ export default function CheckoutPage() {
             {/* Cross-sell */}
             {crossSellProducts.length > 0 && (
               <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
-                <div className="px-6 py-4 border-b border-gray-200">
+                <div className="px-4 sm:px-6 py-4 border-b border-gray-200">
                   <h2 className="font-semibold text-gray-900">
                     Uzupełnij zamówienie
                   </h2>
@@ -678,7 +678,7 @@ export default function CheckoutPage() {
                   </p>
                 </div>
 
-                <div className="p-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="p-3 sm:p-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {crossSellProducts.map((product) => (
                     <div
                       key={product.id}
@@ -869,8 +869,8 @@ export default function CheckoutPage() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-4 gap-4">
-                <div className="col-span-1">
+              <div className="grid grid-cols-5 sm:grid-cols-4 gap-4">
+                <div className="col-span-2 sm:col-span-1">
                   <Input label="Kod poczt." name="postalCode" value={formData.postalCode} onChange={handleInputChange} error={errors.postalCode} placeholder="00-000" required />
                 </div>
                 <div className="col-span-3">
@@ -887,7 +887,7 @@ export default function CheckoutPage() {
               {formData.differentShipping && (
                 <div className="space-y-4 pl-6 border-l-2 border-primary-200">
                   <Input label="Ulica i numer" name="shippingStreet" value={formData.shippingStreet} onChange={handleInputChange} error={errors.shippingStreet} placeholder="ul. Dostawcza 5" required />
-                  <div className="grid grid-cols-5 gap-4">
+              <div className="grid grid-cols-5 gap-4">
                     <div className="col-span-2">
                       <Input label="Kod pocztowy" name="shippingPostalCode" value={formData.shippingPostalCode} onChange={handleInputChange} error={errors.shippingPostalCode} placeholder="00-000" required />
                     </div>
@@ -905,7 +905,7 @@ export default function CheckoutPage() {
             <div className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-5 space-y-4">
               <h2 className="text-base sm:text-lg font-semibold text-gray-900">Metoda płatności</h2>
 
-              <label className={`flex items-start gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all ${formData.paymentMethod === 'online' ? 'border-primary-500 bg-primary-50/50' : 'border-gray-200 hover:border-gray-300'}`}>
+              <label className={`flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-xl border-2 cursor-pointer transition-all ${formData.paymentMethod === 'online' ? 'border-primary-500 bg-primary-50/50' : 'border-gray-200 hover:border-gray-300'}`}>
                 <input type="radio" name="paymentMethod" value="online" checked={formData.paymentMethod === 'online'} onChange={() => setFormData((prev) => ({ ...prev, paymentMethod: 'online' }))} className="mt-1 h-4 w-4 text-primary-600 border-gray-300 focus:ring-primary-500" />
                 <div className="flex-1">
                   <span className="text-sm font-semibold text-gray-900">Płatność online</span>
@@ -914,7 +914,7 @@ export default function CheckoutPage() {
                 </div>
               </label>
 
-              <label className={`flex items-start gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all ${formData.paymentMethod === 'proforma' ? 'border-primary-500 bg-primary-50/50' : 'border-gray-200 hover:border-gray-300'}`}>
+              <label className={`flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-xl border-2 cursor-pointer transition-all ${formData.paymentMethod === 'proforma' ? 'border-primary-500 bg-primary-50/50' : 'border-gray-200 hover:border-gray-300'}`}>
                 <input type="radio" name="paymentMethod" value="proforma" checked={formData.paymentMethod === 'proforma'} onChange={() => setFormData((prev) => ({ ...prev, paymentMethod: 'proforma' }))} className="mt-1 h-4 w-4 text-primary-600 border-gray-300 focus:ring-primary-500" />
                 <div className="flex-1">
                   <span className="text-sm font-semibold text-gray-900">Pro forma</span>
@@ -971,11 +971,11 @@ function CartItemRow({
   const lineTotal = unitPrice ? unitPrice * item.quantity : null
 
   return (
-    <li className="p-4 sm:p-6">
-      <div className="flex items-center gap-4">
+    <li className="p-3 sm:p-6">
+      <div className="flex items-start gap-3 sm:gap-4">
         {/* Obrazek */}
         {(item.productImage || item.productId.includes('__onecare__')) && (
-          <div className="relative w-24 h-24 sm:w-32 sm:h-32 rounded-lg flex-shrink-0 overflow-hidden">
+          <div className="relative w-16 h-16 sm:w-32 sm:h-32 rounded-lg flex-shrink-0 overflow-hidden">
             <Image
               src={item.productId.includes('__onecare__') ? '/images/zebra-onecare-logo.png' : item.productImage!}
               alt={item.productId.includes('__onecare__') ? 'Zebra OneCare' : item.productName}
@@ -1073,7 +1073,7 @@ function PriceSummary({
   totalBrutto: number
 }) {
   return (
-    <div className="bg-white rounded-2xl border border-gray-200 p-6">
+    <div className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-6">
       <h2 className="font-semibold text-gray-900 mb-4">Podsumowanie</h2>
 
       <div className="space-y-3 text-sm">
