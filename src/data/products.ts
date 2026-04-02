@@ -51257,7 +51257,6 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
     ],
     seoTitle: 'M3 US20 — terminal mobilny z klawiaturą, IP65, hot-swap',
     seoDescription: 'M3 US20 — wytrzymały terminal mobilny z klawiaturą fizyczną 30/42/51 klawiszy, IP65, hot-swap 6700 mAh, skaner SE4770/SE5500. 21 wariantów. Zamów w TAKMA.',
-    seoH1: 'M3 US20 — terminal mobilny z klawiaturą fizyczną',
     variantAttributeTooltips: {
       '4G LTE': 'US20W = tylko Wi-Fi a/b/g/n/ac (praca w zasięgu sieci bezprzewodowej).\n\nUS20X = Wi-Fi + 4G LTE + GPS + 2× micro SIM — do pracy w terenie, logistyki mobilnej i dostaw.',
       'Skaner': 'SE4770 — standardowy imager 2D Zebra do kodów 1D/2D/QR z bliska i średniego zasięgu.\n\nSE4770 (45°) — ten sam skaner zamontowany pod kątem 45° dla ergonomicznego skanowania bez podnoszenia urządzenia.\n\nSE5500 Smart Focus — skaner dalekiego zasięgu do 15 m, idealny do magazynów wysokiego składowania.\n\nSE4850 ERI — Long Range, do skanowania z dużej odległości.\n\nSE4750 MR — Mid-Range, uniwersalny.\n\nSE4710 — kompaktowy imager 2D.',
