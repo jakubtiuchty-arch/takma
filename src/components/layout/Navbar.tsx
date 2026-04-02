@@ -17,6 +17,7 @@ interface FeaturedProduct {
   manufacturerLogo?: string
   shortDesc: string
   priceFrom: number
+  imageHeight?: string
 }
 
 interface BrandLink {
@@ -45,6 +46,7 @@ const navigation: NavItem[] = [
       manufacturerLogo: '/images/partners/logo_m3mobile.png',
       shortDesc: 'Flagowy terminal 5G z AI 12 TOPS, Snapdragon QCM6490, 5,7" FHD, IP68, hot-swap',
       priceFrom: 3610,
+      imageHeight: 'h-48',
     },
     children: [
       { name: 'Wszystkie terminale', href: '/terminale-mobilne' },
@@ -297,7 +299,7 @@ export default function Navbar() {
                             >
                               <div>
                               <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-3">Polecany produkt</p>
-                              <div className="relative w-full h-40 mb-3">
+                              <div className={clsx("relative w-full mb-3", item.featuredProduct.imageHeight || 'h-40')}>
                                 <Image
                                   src={item.featuredProduct.image}
                                   alt={item.featuredProduct.name}
