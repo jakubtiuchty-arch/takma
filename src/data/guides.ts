@@ -29,6 +29,7 @@ export interface Guide {
   updatedAt: string
   readTime: string
   heroImage?: string
+  heroImageAlt?: string
   /** CSS object-position override for card thumbnail (doesn't affect hero in guide page) */
   cardImagePosition?: string
   sections: GuideSection[]
@@ -9345,13 +9346,16 @@ export const guides: Guide[] = [
   updatedAt: '2026-03-18',
   readTime: '10 min',
   heroImage: '/images/guides/jak-dobrac-tasme-termotransferowa.jpg',
+  heroImageAlt: 'Taśma termotransferowa woskowa, woskowo-żywiczna i żywiczna — porównanie trzech typów ribbonów do drukarek etykiet',
   cardImagePosition: '110% center',
 
   sections: [
     {
       id: 'wstep',
       heading: 'Taśma woskowa, woskowo-żywiczna czy żywiczna — 30-sekundowy przewodnik',
-      content: `<p><strong>Trzy rodzaje taśm termotransferowych (ribbonów)</strong> różnią się składem warstwy barwnej, trwałością nadruku i ceną:</p>
+      content: `<p>Taśma termotransferowa (ribbon, kalka termotransferowa) to nośnik barwnika używany w drukarkach termotransferowych do drukowania etykiet. Dostępna jest w trzech wariantach — woskowa (WAX), woskowo-żywiczna (WAX/RESIN) i żywiczna (RESIN) — które różnią się trwałością nadruku, odpornością na warunki zewnętrzne, ceną i przeznaczeniem.</p>
+
+<p><strong>Trzy rodzaje taśm termotransferowych (ribbonów)</strong> w skrócie:</p>
 
 <ul>
 <li><strong>Woskowa (WAX)</strong> — do papierowych etykiet w suchych, temperowanych warunkach. Najtańsza, najszybsza. Od 7,04 zł/rolka.</li>
@@ -9385,6 +9389,7 @@ export const guides: Guide[] = [
 <p>Taśma termotransferowa jest nawinięta na rdzeń w jednym z dwóch kierunków, zależnie od konstrukcji mechanizmu drukarki:</p>
 
 <table style="width:100%">
+<caption>Nawój IN vs OUT — kierunek nawinięcia taśmy termotransferowej</caption>
 <thead>
 <tr><th>Nawój</th><th>Opis</th><th>Rdzeń</th><th>Drukarki</th></tr>
 </thead>
@@ -9421,6 +9426,7 @@ export const guides: Guide[] = [
 <h3>Serie taśm woskowych Zebra — ceny i parametry</h3>
 
 <table style="width:100%">
+<caption>Porównanie serii taśm woskowych Zebra — ceny netto i parametry techniczne</caption>
 <thead>
 <tr><th>Seria</th><th>Format</th><th>Grubość</th><th>Max prędkość</th><th>Certyfikaty</th><th>Cena od</th></tr>
 </thead>
@@ -9463,6 +9469,7 @@ export const guides: Guide[] = [
 <h3>Serie woskowo-żywiczne Zebra — ceny i parametry</h3>
 
 <table style="width:100%">
+<caption>Porównanie serii taśm woskowo-żywicznych Zebra — ceny netto i parametry</caption>
 <thead>
 <tr><th>Seria</th><th>Format</th><th>Grubość</th><th>Max prędkość</th><th>Certyfikaty</th><th>Cena od</th></tr>
 </thead>
@@ -9510,6 +9517,7 @@ export const guides: Guide[] = [
 <h3>Seria żywiczna Zebra — ceny i parametry</h3>
 
 <table style="width:100%">
+<caption>Seria taśm żywicznych Zebra 5095 — cena netto i parametry</caption>
 <thead>
 <tr><th>Seria</th><th>Format</th><th>Grubość</th><th>Max prędkość</th><th>Certyfikaty</th><th>Cena od</th></tr>
 </thead>
@@ -9530,6 +9538,7 @@ export const guides: Guide[] = [
       content: `<p>Porównanie trzech typów taśm termotransferowych w 12 kluczowych wymiarach. Ceny i dane z serii Zebra, stan na marzec 2026 — <a href="/tasmy-termotransferowe">pełny katalog taśm w sklepie</a>.</p>
 
 <table style="width:100%">
+<caption>WAX vs WAX/RESIN vs RESIN — porównanie 12 parametrów taśm termotransferowych</caption>
 <thead>
 <tr><th>Parametr</th><th>WAX (woskowa)</th><th>WAX/RESIN</th><th>RESIN (żywiczna)</th></tr>
 </thead>
@@ -9557,6 +9566,7 @@ export const guides: Guide[] = [
       content: `<p><strong>Kluczowa zasada:</strong> materiał etykiety determinuje typ taśmy — nie odwrotnie. Wybór złego typu taśmy do podłoża skutkuje słabą przyczepnością, łuszczeniem się nadruku lub brakiem wydruku.</p>
 
 <table style="width:100%">
+<caption>Macierz doboru taśmy termotransferowej do materiału etykiety</caption>
 <thead>
 <tr><th>Podłoże etykiety</th><th>WAX</th><th>WAX/RESIN</th><th>RESIN</th></tr>
 </thead>
@@ -9593,6 +9603,7 @@ export const guides: Guide[] = [
 <h3>Tabela doboru szerokości taśmy</h3>
 
 <table style="width:100%">
+<caption>Dobór szerokości taśmy termotransferowej do szerokości etykiety</caption>
 <thead>
 <tr><th>Szerokość etykiety</th><th>Minimalna taśma</th><th>Zalecana taśma</th></tr>
 </thead>
@@ -9608,6 +9619,7 @@ export const guides: Guide[] = [
 <h3>Kompatybilność drukarka — szerokość taśmy</h3>
 
 <table style="width:100%">
+<caption>Kompatybilność drukarek Zebra i TSC z taśmami termotransferowymi</caption>
 <thead>
 <tr><th>Drukarka</th><th>Max szer. taśmy</th><th>Rdzeń</th><th>Nawój</th><th>Polecane serie</th></tr>
 </thead>
@@ -9627,6 +9639,7 @@ export const guides: Guide[] = [
       content: `<p>Koszt taśmy na etykietę zależy od: ceny rolki, długości rolki i rozmiaru etykiety. Poniższy kalkulator bazuje na taśmach Zebra w formacie desktop 110 mm x 74 m (etykieta 100 x 50 mm, konsumpcja 53 mm taśmy na etykietę). Ceny netto z dystrybucji, marzec 2026.</p>
 
 <table style="width:100%">
+<caption>Kalkulator rocznych kosztów taśmy termotransferowej — WAX vs WAX/RESIN vs RESIN</caption>
 <thead>
 <tr><th>Wolumen / rok</th><th>WAX 2300 (9,56 zł/rolka)</th><th>WAX/RESIN 3200 (18,48 zł/rolka)</th><th>RESIN 5095 (30,31 zł/rolka)</th></tr>
 </thead>
@@ -9664,6 +9677,7 @@ export const guides: Guide[] = [
 <h3>Polecane taśmy wg zastosowania</h3>
 
 <table style="width:100%">
+<caption>Polecane taśmy termotransferowe Zebra wg zastosowania — z cenami netto</caption>
 <thead>
 <tr><th>Zastosowanie</th><th>Seria</th><th>Cena od</th><th>Link</th></tr>
 </thead>
@@ -9679,6 +9693,21 @@ export const guides: Guide[] = [
 <p><strong>Nie masz pewności, który typ wybrać?</strong> <a href="/kontakt">Skontaktuj się z nami</a> — pomożemy dobrać taśmę do Twojego materiału etykiet, drukarki i zastosowania. Wysyłamy próbki do testów.</p>
 
 <p>Więcej o wyborze drukarki: <a href="/poradnik/jak-wybrac-drukarke-etykiet">Jak wybrać drukarkę etykiet?</a> | <a href="/poradnik/drukarki-etykiet-zebra-przewodnik">Drukarki Zebra — przegląd serii ZD i ZT</a></p>`
+    },
+    {
+      id: 'podsumowanie',
+      heading: 'Podsumowanie — 7 kluczowych wniosków',
+      content: `<ol>
+<li><strong>Materiał etykiety determinuje typ taśmy</strong> — papier = WAX, papier powlekany/syntetyk matowy = WAX/RESIN, folia syntetyczna (PP, PE, PET) = RESIN.</li>
+<li><strong>Taśma woskowa (WAX) wystarcza w 70% zastosowań</strong> — logistyka, wysyłka, cenówki, magazyn. Cena od 7,04 zł/rolka (Zebra 2300).</li>
+<li><strong>WAX/RESIN to złoty środek</strong> — gdy etykieta styka się z wilgocią, alkoholem IPA lub olejami. Cena od 10,81 zł/rolka (Zebra 3200).</li>
+<li><strong>RESIN jest niezbędna dla syntetyków i warunków ekstremalnych</strong> — aceton, UV, temperatura do 120°C. Cena od 17,65 zł/rolka (Zebra 5095).</li>
+<li><strong>Szerokość taśmy = szerokość etykiety + 2–5 mm</strong> — chroni głowicę drukującą przed zużyciem.</li>
+<li><strong>Nawój IN (desktop) i OUT (industrial) nie są zamienne</strong> — użycie niewłaściwego nawoju powoduje brak nadruku.</li>
+<li><strong>Koszt taśmy na etykietę to 0,007–0,022 zł</strong> — różnica między WAX a RESIN wynosi ok. 3,2× na etykietę, ale RESIN eliminuje koszty wymiany etykiet w trudnych warunkach.</li>
+</ol>
+
+<p>Potrzebujesz pomocy w doborze? <a href="/kontakt">Skontaktuj się z nami</a> — dobierzemy taśmę do Twojej drukarki, materiału etykiet i zastosowania. Wysyłamy próbki do testów.</p>`
     },
   ],
 
