@@ -51617,7 +51617,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
         },
       ],
     },
-    relatedProducts: ['m3-us20', 'zebra-mc3400', 'm3-sm30', 'm3-sl20k'],
+    relatedProducts: ['m3-us20', 'zebra-mc3400', 'honeywell-ck62', 'newland-n7-cachalot-pro-ii'],
     downloads: [
       { name: 'Karta katalogowa M3 US30 (EN)', type: 'datasheet' as const, url: '/downloads/m3-us30-specification.pdf', size: '1,2 MB' },
       { name: 'Instrukcja obsługi M3 US30 (EN)', type: 'manual' as const, url: '/downloads/m3-us30-user-manual.pdf', size: '4 MB' },
