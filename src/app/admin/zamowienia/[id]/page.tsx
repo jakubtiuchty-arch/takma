@@ -154,7 +154,7 @@ export default async function OrderDetailPage({ params }: PageProps) {
             <h2 className="text-lg font-semibold mb-4">Klient</h2>
             <div className="space-y-2 text-sm">
               <div className="font-medium text-gray-900">{order.customer.company}</div>
-              <div className="text-gray-600">{order.customer.firstName} {order.customer.lastName}</div>
+              <div className="text-gray-600">{order.customer.firstName}{order.customer.lastName ? ` ${order.customer.lastName}` : ''}</div>
               <div className="text-gray-600">{order.customer.email}</div>
               {order.customer.phone && <div className="text-gray-600">{order.customer.phone}</div>}
               {order.customer.nip && <div className="text-gray-500">NIP: {order.customer.nip}</div>}

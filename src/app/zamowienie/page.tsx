@@ -26,7 +26,7 @@ type PaymentMethod = 'online' | 'proforma'
 
 interface CheckoutFormData {
   firstName: string
-  lastName: string
+  buildingNumber: string
   company: string
   nip: string
   email: string
@@ -45,7 +45,7 @@ interface CheckoutFormData {
 
 interface FormErrors {
   firstName?: string
-  lastName?: string
+  buildingNumber?: string
   company?: string
   nip?: string
   email?: string
@@ -132,7 +132,7 @@ export default function CheckoutPage() {
 
   const [formData, setFormData] = useState<CheckoutFormData>({
     firstName: '',
-    lastName: '',
+    buildingNumber: '',
     company: '',
     nip: '',
     email: '',
@@ -251,8 +251,8 @@ export default function CheckoutPage() {
       newErrors.firstName = 'Osoba kontaktowa jest wymagana'
     }
 
-    if (!formData.lastName.trim()) {
-      newErrors.lastName = 'Nr budynku jest wymagany'
+    if (!formData.buildingNumber.trim()) {
+      newErrors.buildingNumber = 'Nr budynku jest wymagany'
     }
 
     if (!formData.company.trim()) {
@@ -348,11 +348,11 @@ export default function CheckoutPage() {
       const customerData = {
         email: formData.email,
         firstName: formData.firstName,
-        lastName: formData.lastName,
+        lastName: '',
         company: formData.company,
         nip: formData.nip || undefined,
         phone: formData.phone,
-        address: formData.street,
+        address: `${formData.street} ${formData.buildingNumber}`.trim(),
         postalCode: formData.postalCode,
         city: formData.city,
         shippingAddress: formData.differentShipping
@@ -389,7 +389,7 @@ export default function CheckoutPage() {
               email: formData.email,
               phone: formData.phone,
               street: formData.street,
-              buildingNumber: formData.lastName,
+              buildingNumber: formData.buildingNumber,
               postalCode: formData.postalCode,
               city: formData.city,
             },
@@ -865,7 +865,7 @@ export default function CheckoutPage() {
                   <Input label="Ulica" name="street" value={formData.street} onChange={handleInputChange} error={errors.street} placeholder="np. Główna" required />
                 </div>
                 <div className="col-span-1">
-                  <Input label="Nr bud." name="lastName" value={formData.lastName} onChange={handleInputChange} error={errors.lastName} placeholder="12A" required />
+                  <Input label="Nr bud." name="buildingNumber" value={formData.buildingNumber} onChange={handleInputChange} error={errors.buildingNumber} placeholder="12A" required />
                 </div>
               </div>
 

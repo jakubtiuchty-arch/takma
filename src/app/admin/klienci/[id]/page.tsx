@@ -70,7 +70,7 @@ export default async function CustomerDetailPage({ params }: PageProps) {
             </div>
             <div>
               <dt className="text-gray-500">Kontakt</dt>
-              <dd>{customer.firstName} {customer.lastName}</dd>
+              <dd>{customer.firstName}{customer.lastName ? ` ${customer.lastName}` : ''}</dd>
             </div>
             <div>
               <dt className="text-gray-500">Email</dt>

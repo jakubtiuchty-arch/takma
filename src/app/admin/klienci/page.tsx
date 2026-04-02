@@ -81,7 +81,7 @@ export default async function CustomersPage({ searchParams }: PageProps) {
                         </Link>
                       </td>
                       <td className="px-4 py-3 text-sm text-gray-600">
-                        {customer.firstName} {customer.lastName}
+                        {customer.firstName}{customer.lastName ? ` ${customer.lastName}` : ''}
                       </td>
                       <td className="px-4 py-3 text-sm text-gray-600">{customer.email}</td>
                       <td className="px-4 py-3 text-sm text-gray-500 font-mono">{customer.nip || '—'}</td>
