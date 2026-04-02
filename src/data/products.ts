@@ -51437,7 +51437,7 @@ const m3US30: Product[] = [
     name: 'M3 US30',
     priceFrom: 3610,
     shortDescription: 'M3 US30 — wytrzymały terminal mobilny z klawiaturą fizyczną, IP65, hot-swap, 4" WVGA, Wi-Fi 6, Android 13',
-    description: `M3 US30 to następca popularnego M3 US20 — wytrzymały terminal mobilny (kolektor danych) z fizyczną klawiaturą, produkowany przez koreańską firmę M3 Mobile. Urządzenie klasy enterprise oferuje 12 wariantów konfiguracyjnych z 3 opcjami skanerów kodów kreskowych Zebra (SE4770, SE5500, SE5800), 4 typami klawiatury (30/38/42/51 klawiszy), ochronę IP65, hot-swap baterii 6700 mAh, Wi-Fi 6 (802.11ax) i Android 13. Cena od 3 610 zł netto.
+    description: `M3 US30 to wytrzymały terminal mobilny (kolektor danych) z fizyczną klawiaturą, produkowany przez koreańską firmę M3 Mobile. Następca popularnego [M3 US20](/produkt/m3-us20) z systemem Android 13, łącznością Wi-Fi 6 (802.11ax), ochroną IP65 i hot-swap baterią 6700 mAh. Oferowany w 12 wariantach z 3 skanerami (SE4770, SE5500, SE5800) i 4 klawiaturami (30/38/42/51 klawiszy) od 3 610 zł netto.
 
 Dla kogo? M3 US30 to terminal zaprojektowany dla firm potrzebujących niezawodnego urządzenia do pracy w magazynie, logistyce, produkcji i w terenie. Fizyczna klawiatura zapewnia szybkie wprowadzanie danych bez konieczności używania ekranu dotykowego — idealne w rękawicach roboczych i trudnych warunkach. Nowa opcja klawiatury funkcyjno-numerycznej (38 klawiszy) łączy klawisze funkcyjne z cyframi. Kompaktowy ekran 4" WVGA z Gorilla Glass i podwójnym trybem dotyku (palec/rękawiczka/rysik).
 
@@ -51460,7 +51460,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
       'M3 US30 — widok z boku, żółty przycisk skanowania, port USB, wzmocnione rogi',
       'M3 US30 — widok z góry, okno skanera kodów kreskowych',
     ],
-    seoTitle: 'M3 US30 — terminal mobilny z klawiaturą, IP65, Wi-Fi 6',
+    seoTitle: 'M3 US30 — terminal mobilny z klawiaturą, Wi-Fi 6 | od 3 610 zł',
     seoDescription: 'M3 US30 — terminal mobilny z klawiaturą 30/38/42/51 klawiszy, IP65, hot-swap 6700 mAh, skaner SE4770/SE5500/SE5800. Wi-Fi 6, Android 13. Zamów w TAKMA.',
     variantAttributeTooltips: {
       'Skaner': 'SE4770 — standardowy imager 2D Zebra do kodów 1D/2D/QR z bliska i średniego zasięgu.\n\nSE5500 Smart Focus — skaner dalekiego zasięgu do 15 m, idealny do magazynów wysokiego składowania.\n\nSE5800 — najnowszy skaner Zebra, następca SE5500, rozszerzony zasięg i wyższa szybkość skanowania.',
@@ -51526,6 +51526,9 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
       { question: 'Czym różni się US30 od SM30?', answer: '[SM30](/produkt/m3-sm30) to flagowy model dotykowy M3 Mobile z AI 12 TOPS, 5G i Android 14 — bez fizycznej klawiatury. US30 to terminal z klawiaturą fizyczną (4 opcje), Wi-Fi 6 i Android 13. US30 wygrywa ergonomią klawiatury i szerszym wyborem skanerów. SM30 — nowszym procesorem, 5G i ekranem dotykowym 6".' },
       { question: 'Gdzie kupić M3 US30 w Polsce?', answer: 'TAKMA jest partnerem M3 Mobile w Polsce. Oferujemy M3 US30 z dostawą, doradztwo w doborze wariantu (skaner, klawiatura), konfigurację M3 Speedpack, urządzenia demo i serwis gwarancyjny/pogwarancyjny. Skontaktuj się — przygotujemy indywidualną wycenę dla Twojej firmy.' },
       { question: 'Jaka gwarancja na M3 US30?', answer: 'M3 US30 objęty jest 1-roczną gwarancją producenta (M3 Mobile). TAKMA zapewnia wsparcie serwisowe w Polsce — diagnostykę, naprawy gwarancyjne i pogwarancyjne. Opcjonalnie M3 SPEED CARE — rozszerzony kontrakt serwisowy z aktualizacjami Androida.' },
+      { question: 'Ile kosztuje M3 US30?', answer: 'Ceny M3 US30 zaczynają się od 3 610 zł netto za wariant z SE4770 i klawiaturą 30-klawiszową. Warianty z SE5500 od 3 880 zł netto, z SE5800 od 4 330 zł netto. Ceny zależą od wybranego skanera i typu klawiatury. Dla zamówień wielosztukowych przygotujemy indywidualną wycenę — <a href="/kontakt">skontaktuj się z nami</a>.' },
+      { question: 'Jak długo trzyma bateria M3 US30?', answer: 'Bateria 6700 mAh w M3 US30 zapewnia pełny dzień pracy (8-12 godzin ciągłego użytkowania w zależności od intensywności skanowania i łączności). Funkcja hot-swap pozwala wymienić baterię bez wyłączania urządzenia — sesje Bluetooth i WLAN są utrzymane. Baterie zapasowe (US20-BATT-E67) można ładować w stacjach 4- lub 20-gniazdowych.' },
+      { question: 'Jakie korzyści daje Wi-Fi 6 w M3 US30?', answer: 'Wi-Fi 6 (802.11ax) w M3 US30 zapewnia do 2× szybszy transfer danych, niższe opóźnienia i lepszą wydajność w gęstych sieciach (np. duże magazyny z wieloma urządzeniami) w porównaniu z Wi-Fi 5 (802.11ac) w poprzedniku <a href="/produkt/m3-us20">M3 US20</a>. Obsługuje WPA3, MU-MIMO 2×2 i pasma 2,4/5 GHz.' },
     ],
     availability: 'available' as const,
     isNew: true,
