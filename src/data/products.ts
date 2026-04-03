@@ -54767,9 +54767,9 @@ export const brandCategories: BrandCategory[] = [
     slug: 'terminale-m3-mobile',
     manufacturerId: 'm3-mobile',
     categoryId: 'terminale-mobilne',
-    name: 'Terminale mobilne M3 Mobile',
-    seoTitle: 'Terminale mobilne M3 Mobile — SM30, US30, US20, SM24 | TAKMA',
-    seoDescription: 'Terminale mobilne M3 Mobile — SM30 z AI 12 TOPS, US30/US20 z klawiaturą, SM24/SM25 z 6" ekranem. Od 3 610 zł netto. Doradztwo i serwis w TAKMA.',
+    name: 'Terminale M3 Mobile',
+    seoTitle: 'Terminale M3 Mobile — SM30, US30, US20, SM24 | TAKMA',
+    seoDescription: 'Terminale M3 Mobile — SM30 z AI 12 TOPS, US30/US20 z klawiaturą, SM24/SM25 z 6" ekranem. Od 3 610 zł netto. Doradztwo i serwis w TAKMA.',
     longDescription: 'Kompletna oferta terminali mobilnych M3 Mobile (Korea, zał. 2000) — od flagowego SM30 z procesorem AI 12 TOPS, 5G i Snapdragon QCM6490 (od 3 610 zł netto) po kompaktowe modele SL20 i UL20 do lżejszych zastosowań. M3 Mobile oferuje 9 modeli terminali enterprise z Androidem 10–14, Wi-Fi 6/6E, IP65–IP68 i hot-swap baterii. Seria US (US30, US20) to jedyne terminale M3 z fizyczną klawiaturą 30/38/42/51 klawiszy — idealne do magazynów, gdzie operatorzy noszą rękawice. Flagowy SM30 wyróżnia się akceleratorem AI 12 TOPS (Hexagon NPU) do rozpoznawania obrazu i kontroli jakości na urządzeniu, bez połączenia z chmurą. Seria SM (SM24, SM25) to terminale dotykowe z 6" ekranem do retail i logistyki. Seria UL (UL20, UL30) to budżetowe terminale pistoletowe do inwentaryzacji i kompletacji. Wszystkie terminale M3 zarządzane platformą M3 Speedpack (MDM, OTA, remote wipe). Akcesoria US20 i US30 są wzajemnie kompatybilne — stacje dokujące, ładowarki baterii, uchwyty pistoletowe. TAKMA jest partnerem M3 Mobile w Polsce — oferujemy pełne doradztwo w doborze modelu, konfigurację, staging flotowy, serwis gwarancyjny (1 rok) i pogwarancyjny. Porównanie wszystkich modeli: [Terminale M3 Mobile — porównanie 2026](/poradnik/terminale-m3-mobile-porownanie).',
     faq: [
       { question: 'Ile kosztuje terminal mobilny M3 Mobile?', answer: 'Ceny terminali M3 Mobile zaczynają się od 2 255 zł netto za kompaktowy [SL20+](/produkt/m3-sl20) (dotykowy 4,3"). Flagowy [SM30](/produkt/m3-sm30) z AI 12 TOPS i 5G — od 3 610 zł. Seria z klawiaturą: [US30](/produkt/m3-us30) od 3 610 zł (Wi-Fi 6, Android 13), [US20](/produkt/m3-us20) od 4 080 zł (Wi-Fi + opcja 4G LTE). Dotykowe 6": [SM24](/produkt/m3-sm24) i [SM25](/produkt/m3-sm25). Ceny netto, aktualizowane codziennie z dystrybucji.' },
