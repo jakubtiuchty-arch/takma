@@ -51559,7 +51559,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
       { question: 'M3 US30 vs Zebra MC3400 — porównanie', answer: 'Oba to terminale z klawiaturą fizyczną. US30: 4" WVGA, 3 skanery (SE4770/SE5500/SE5800), 4 klawiatury, hot-swap 6700 mAh, IP65, 1,8 m drop, Wi-Fi 6, Android 13. [MC3400](/produkt/zebra-mc3400): 4" WVGA, SE4770/SE4850, hot-swap, IP64, Mobility DNA (DataWedge, StageNow), 10-letnie wsparcie. US30 wygrywa wyborem skanerów, klawiatur i Wi-Fi 6. MC3400 wygrywa ekosystemem Zebra i długoterminowym wsparciem.' },
       { question: 'Czym różni się US30 od SM30?', answer: '[SM30](/produkt/m3-sm30) to flagowy model dotykowy M3 Mobile z AI 12 TOPS, 5G i Android 14 — bez fizycznej klawiatury. US30 to terminal z klawiaturą fizyczną (4 opcje), Wi-Fi 6 i Android 13. US30 wygrywa ergonomią klawiatury i szerszym wyborem skanerów. SM30 — nowszym procesorem, 5G i ekranem dotykowym 6".' },
       { question: 'Gdzie kupić M3 US30 w Polsce?', answer: 'TAKMA jest partnerem M3 Mobile w Polsce. Oferujemy M3 US30 z dostawą, doradztwo w doborze wariantu (skaner, klawiatura), konfigurację M3 Speedpack, urządzenia demo i serwis gwarancyjny/pogwarancyjny. Skontaktuj się — przygotujemy indywidualną wycenę dla Twojej firmy.' },
-      { question: 'Jaka gwarancja na M3 US30?', answer: 'M3 US30 objęty jest 1-roczną gwarancją producenta (M3 Mobile). TAKMA zapewnia wsparcie serwisowe w Polsce — diagnostykę, naprawy gwarancyjne i pogwarancyjne. Opcjonalnie M3 SPEED CARE — rozszerzony kontrakt serwisowy z aktualizacjami Androida.' },
+      { question: 'Jaka gwarancja na M3 US30?', answer: 'M3 US30 objęty jest 1-roczną gwarancją bazową (Basic). Opcjonalnie: M3 Speed Care 3 lata (US30-SPST-FB3) lub 5 lat (US30-SPST-FB5) — ochrona przypadkowa, czas naprawy 7 dni, gwarancja baterii 1 rok. Kontrakt trzeba wykupić w ciągu 45 dni. Naprawy gwarancyjne realizuje M3Mobile GmbH (Niemcy), TAKMA koordynuje proces w Polsce. Szczegóły: [M3 Speed Care — przewodnik](/poradnik/m3-speed-care-kontrakty-serwisowe).' },
       { question: 'Ile kosztuje M3 US30?', answer: 'Ceny M3 US30 zaczynają się od 3 610 zł netto za wariant z SE4770 i klawiaturą 30-klawiszową. Warianty z SE5500 od 3 880 zł netto, z SE5800 od 4 330 zł netto. Ceny zależą od wybranego skanera i typu klawiatury. Dla zamówień wielosztukowych przygotujemy indywidualną wycenę — <a href="/kontakt">skontaktuj się z nami</a>.' },
       { question: 'Jak długo trzyma bateria M3 US30?', answer: 'Bateria 6700 mAh w M3 US30 zapewnia pełny dzień pracy (8-12 godzin ciągłego użytkowania w zależności od intensywności skanowania i łączności). Funkcja hot-swap pozwala wymienić baterię bez wyłączania urządzenia — sesje Bluetooth i WLAN są utrzymane. Baterie zapasowe (US20-BATT-E67) można ładować w stacjach 4- lub 20-gniazdowych.' },
       { question: 'Jakie korzyści daje Wi-Fi 6 w M3 US30?', answer: 'Wi-Fi 6 (802.11ax) w M3 US30 zapewnia do 2× szybszy transfer danych, niższe opóźnienia i lepszą wydajność w gęstych sieciach (np. duże magazyny z wieloma urządzeniami) w porównaniu z Wi-Fi 5 (802.11ac) w poprzedniku <a href="/produkt/m3-us20">M3 US20</a>. Obsługuje WPA3, MU-MIMO 2×2 i pasma 2,4/5 GHz.' },
@@ -51655,6 +51655,10 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
     downloads: [
       { name: 'Karta katalogowa M3 US30 (EN)', type: 'datasheet' as const, url: '/downloads/m3-us30-specification.pdf', size: '1,2 MB' },
       { name: 'Instrukcja obsługi M3 US30 (EN)', type: 'manual' as const, url: '/downloads/m3-us30-user-manual.pdf', size: '4 MB' },
+    ],
+    servicePlans: [
+      { name: 'M3 Speed Care — 3 lata', partNumber: 'US30-SPST-FB3', duration: '3 lata', priceNetto: 0 },
+      { name: 'M3 Speed Care — 5 lat', partNumber: 'US30-SPST-FB5', duration: '5 lat', priceNetto: 0 },
     ],
     createdAt: '2026-04-02',
   },
