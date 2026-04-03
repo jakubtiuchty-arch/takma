@@ -50089,7 +50089,12 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
       '5G': 'SM25 W = tylko Wi-Fi 6E (praca w zasięgu sieci bezprzewodowej).\n\nSM25 X = Wi-Fi 6E + 5G/4G LTE + GPS + dual SIM (nano + eSIM) — do pracy w terenie, logistyki mobilnej i dostaw.',
       'Skaner': 'CM60E — standardowy imager 2D do kodów 1D/2D/QR z bliska i średniego zasięgu.\n\nSE5500 Smart Focus (Zebra) — skaner dalekiego zasięgu do 15 m, idealny do magazynów wysokiego składowania.',
     },
-    variants: [],
+    variants: [
+      { partNumber: 'SM250E-W2CFSS-HF', name: 'SM25W Wi-Fi, CM60E', attributes: { '5G': 'Nie (Wi-Fi only)', 'Skaner': 'CM60E' }, priceFrom: 0, availability: 'on-order' as const },
+      { partNumber: 'SM250E-WFCFSS-HF', name: 'SM25W Wi-Fi, SE5500', attributes: { '5G': 'Nie (Wi-Fi only)', 'Skaner': 'SE5500' }, priceFrom: 0, availability: 'on-order' as const },
+      { partNumber: 'SM255E-W2CFSS-HF', name: 'SM25X 5G, CM60E', attributes: { '5G': 'Tak', 'Skaner': 'CM60E' }, priceFrom: 0, availability: 'on-order' as const },
+      { partNumber: 'SM255E-WFCFSS-HF', name: 'SM25X 5G, SE5500', attributes: { '5G': 'Tak', 'Skaner': 'SE5500' }, priceFrom: 0, availability: 'on-order' as const },
+    ],
     specifications: [
       { name: 'Procesor', value: 'Qualcomm Dragonwing QCM4490, 8 rdzeni, 2,4 GHz' },
       { name: 'System operacyjny', value: 'Android 16 (wsparcie do Android 18)' },
@@ -50133,10 +50138,10 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
       { question: 'Do czego nadaje się M3 SM25?', answer: 'Magazyny wysokiego składowania (skaner SE5500 do 15 m), centra dystrybucyjne z 5G (niskie opóźnienia WMS w chmurze), logistyka ostatniej mili (5G + GPS + dual SIM), retail z obsługą NFC i płatności, zarządzanie flotą pojazdów z GPS dual-band. SM25 to alternatywa dla [Zebra TC27](/produkt/zebra-tc27) z większą pamięcią, hot-swap i skanerem dalekiego zasięgu.' },
       { question: 'Gdzie kupić M3 SM25 w Polsce?', answer: 'TAKMA jest partnerem M3 Mobile w Polsce. Przyjmujemy wstępne zamówienia na M3 SM25 — skontaktuj się po aktualny termin dostępności i wycenę. Oferujemy doradztwo w doborze wariantu (W vs X), konfigurację M3 Speedpack, urządzenia demo i serwis.' },
       { question: 'Jakie są alternatywy dla M3 SM25?', answer: '[M3 SM24](/produkt/m3-sm24) (od 3 123 zł) — tańszy model bez 5G i SE5500, HD+ zamiast FHD+. [Zebra TC27](/produkt/zebra-tc27) (od 2 690 zł) — 5G, FHD+, IP68, LifeGuard 10 lat, Mobility DNA. [Honeywell CT32](/produkt/honeywell-ct32) (od 3 389 zł) — 5G, hot-swap, FlexRange 15 m, Mobility Edge.' },
-      { question: 'Jaka gwarancja na M3 SM25 i gdzie serwis?', answer: 'M3 SM25 objęty jest 1-roczną gwarancją producenta (M3 Mobile). TAKMA zapewnia wsparcie serwisowe w Polsce — diagnostykę, naprawy gwarancyjne i pogwarancyjne. Serwis autoryzowany M3 Mobile w Europie prowadzi M3 Mobile GmbH w Niemczech (Kriftel). Czas naprawy gwarancyjnej: zazwyczaj 10-15 dni roboczych.' },
-      { question: 'Ile będzie kosztować M3 SM25?', answer: 'Cena M3 SM25 nie została jeszcze oficjalnie ogłoszona. Dla orientacji: tańszy [M3 SM24](/produkt/m3-sm24) kosztuje od 3 123 zł netto (Wi-Fi) do 3 552 zł (LTE). SM25 z 5G, FHD+ i skanerem SE5500 będzie droższy — szacunkowo o 20-30% więcej niż SM24. Skontaktuj się z TAKMA po aktualną wycenę.' },
+      { question: 'Jaka gwarancja na M3 SM25 i gdzie serwis?', answer: 'M3 SM25 objęty jest 1-roczną gwarancją bazową (Basic). Naprawy gwarancyjne realizuje M3Mobile GmbH (Niemcy), TAKMA koordynuje proces w Polsce (diagnostyka, RMA, serwis pogwarancyjny). Informacje o kontraktach serwisowych Speed Care dla SM25 będą dostępne po premierze. Szczegóły programu: [M3 Speed Care — przewodnik](/poradnik/m3-speed-care-kontrakty-serwisowe).' },
+      { question: 'Ile kosztuje M3 SM25?', answer: 'Ceny M3 SM25 dostępne są w systemie — zależą od wariantu (Wi-Fi vs 5G, CM60E vs SE5500). Dla orientacji: tańszy [M3 SM24](/produkt/m3-sm24) kosztuje od 3 123 zł netto. SM25 z 5G, FHD+ i skanerem SE5500 jest droższy. Skontaktuj się z TAKMA po aktualną wycenę — ceny aktualizowane na bieżąco z dystrybucji.' },
     ],
-    availability: 'unavailable' as const,
+    availability: 'on-order' as const,
     isNew: true,
     isBestseller: false,
     applications: [
