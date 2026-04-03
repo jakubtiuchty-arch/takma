@@ -11913,6 +11913,381 @@ export const guides: Guide[] = [
     { title: 'Kontakt — zapytaj o wycenę', href: '/kontakt' },
   ],
 },
+{
+  slug: 'm3-speed-care-kontrakty-serwisowe',
+  title: 'M3 Speed Care — kontrakty serwisowe terminali M3 Mobile',
+  seoTitle: 'M3 Speed Care — kontrakty serwisowe i gwarancja M3 Mobile | TAKMA',
+  seoDescription: 'M3 Speed Care (M.S.C.) — pakiety serwisowe 1/3/5 lat dla terminali M3 Mobile. Porównanie z Zebra OneCare. Czas naprawy, ochrona przypadkowa, TCO. TAKMA — partner M3 w Polsce.',
+  excerpt: 'Kompletny przewodnik po kontraktach serwisowych M3 Speed Care — 3 pakiety, tabela porównawcza z Zebra OneCare, kalkulacja TCO dla flot i proces naprawy.',
+  category: 'serwisowy',
+  tags: ['terminale-mobilne', 'm3-mobile', 'serwis', 'gwarancja', 'kontrakty-serwisowe'],
+  publishedAt: '2026-04-03',
+  updatedAt: '2026-04-03',
+  readTime: '8 min',
+
+  sections: [
+    {
+      id: 'wstep',
+      heading: 'M3 Speed Care (M.S.C.) — czym jest kontrakt serwisowy M3 Mobile?',
+      content: `<p><strong>M3 Speed Care</strong> (w skrócie <strong>M.S.C.</strong>) to zintegrowany program serwisowy opracowany przez <strong>M3 Mobile</strong> — koreańskiego producenta terminali mobilnych i kolektorów danych. Program obejmuje gwarancję sprzętową, wsparcie techniczne, profesjonalne naprawy oraz aktualizacje oprogramowania realizowane za pośrednictwem platformy <strong>ITC</strong> (Information Technology Center).</p>
+
+<p>Speed Care jest dostępny w <strong>3 pakietach</strong>:</p>
+<ul>
+  <li><strong>Basic (1 rok)</strong> — automatyczny, bezpłatny, dołączany do każdego terminala</li>
+  <li><strong>Speed Care 3 Years</strong> — rozszerzona gwarancja z ochroną przypadkową</li>
+  <li><strong>Speed Care 5 Years</strong> — maksymalna ochrona na 5 lat</li>
+</ul>
+
+<p>Kluczową zaletą M3 Speed Care jest <strong>minimalizacja przestojów</strong> — w pakietach 3Y i 5Y czas naprawy skraca się z 14 do 7 dni roboczych, a uszkodzenia przypadkowe (upadki, pęknięcia ekranu) są objęte gwarancją.</p>
+
+<p>Na rynku terminali mobilnych podobne programy oferują również <strong>Zebra Technologies</strong> (<a href="/poradnik/zebra-onecare-kontrakty-serwisowe">Zebra OneCare</a>) i <strong>Honeywell</strong> (SVC — Service Contracts). M3 Speed Care wyróżnia się jednak <strong>darmowym MDM</strong> (Speedpack) w cenie kontraktu — konkurencja wymaga osobnej licencji.</p>
+
+<p><strong>TAKMA</strong> jako partner M3 Mobile w Polsce obsługuje serwis lokalnie — od diagnostyki po naprawy gwarancyjne i pogwarancyjne. Pełna oferta <a href="/terminale-m3-mobile">terminali M3 Mobile</a> dostępna jest w naszym sklepie.</p>`,
+    },
+    {
+      id: 'pakiety',
+      heading: '3 pakiety Speed Care — tabela porównawcza',
+      content: `<table>
+  <caption>Porównanie pakietów M3 Speed Care — Basic vs 3 lata vs 5 lat</caption>
+  <thead>
+    <tr>
+      <th>Parametr</th>
+      <th>Basic (1 rok)</th>
+      <th>Speed Care 3 lata</th>
+      <th>Speed Care 5 lat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Wsparcie ITC (web)</td><td>Tak</td><td>Tak</td><td>Tak</td></tr>
+    <tr><td>Help desk</td><td>Tak</td><td>Tak</td><td>Tak</td></tr>
+    <tr><td>Wsparcie techniczne</td><td>Tak</td><td>Tak</td><td>Tak</td></tr>
+    <tr><td>Gwarancja terminala</td><td>1 rok</td><td>3 lata</td><td>5 lat</td></tr>
+    <tr><td>Gwarancja akcesoriów</td><td>6 miesięcy</td><td>6 miesięcy</td><td>6 miesięcy</td></tr>
+    <tr><td>Gwarancja baterii</td><td>6 miesięcy</td><td>1 rok</td><td>1 rok</td></tr>
+    <tr><td>Wymiana baterii</td><td>Nie</td><td>Opcjonalny kontrakt</td><td>Opcjonalny kontrakt</td></tr>
+    <tr><td>Czas naprawy</td><td>14 dni</td><td>7 dni</td><td>7 dni</td></tr>
+    <tr><td>Uszkodzenia przypadkowe</td><td>Nie</td><td>Tak</td><td>Tak</td></tr>
+    <tr><td>Total Damage</td><td>Nie</td><td>Nie</td><td>Nie</td></tr>
+    <tr><td>Wymaga kontraktu</td><td>Nie (automatyczny)</td><td>Tak</td><td>Tak</td></tr>
+  </tbody>
+</table>
+
+<h3>Szczegóły poszczególnych pakietów</h3>
+
+<h4>Basic (1 rok) — pakiet standardowy</h4>
+<ul>
+  <li>Dołączany automatycznie do każdego nowego terminala M3 Mobile — bez dodatkowych kosztów</li>
+  <li>Obejmuje wady fabryczne i awarie funkcjonalne przy normalnym użytkowaniu</li>
+  <li>Czas naprawy: do 14 dni roboczych</li>
+  <li><strong>Nie obejmuje</strong> uszkodzeń przypadkowych (upadki, zalania, pęknięcia)</li>
+</ul>
+
+<h4>Speed Care 3 Years — rozszerzony</h4>
+<ul>
+  <li>Gwarancja terminala przedłużona do 3 lat</li>
+  <li>Gwarancja baterii przedłużona do 1 roku (vs 6 mies. w Basic)</li>
+  <li>Czas naprawy skrócony do 7 dni roboczych</li>
+  <li><strong>Obejmuje uszkodzenia przypadkowe</strong> (upadki, pęknięcia ekranu)</li>
+  <li>Opcjonalny kontrakt na wymianę baterii</li>
+</ul>
+
+<h4>Speed Care 5 Years — maksymalny</h4>
+<ul>
+  <li>Najdłuższa dostępna gwarancja — 5 lat od daty zakupu</li>
+  <li>Identyczne warunki jak 3Y: 7-dniowy czas naprawy, ochrona przypadkowa</li>
+  <li>Rekomendowany dla flot w środowiskach o podwyższonym ryzyku uszkodzeń</li>
+  <li>Najlepszy stosunek ceny do długości ochrony przy długim cyklu życia terminali</li>
+</ul>`,
+    },
+    {
+      id: 'kiedy-warto',
+      heading: 'Kiedy warto wybrać 3-letni lub 5-letni pakiet?',
+      content: `<p>Rozszerzony kontrakt Speed Care to inwestycja, która zwraca się w konkretnych scenariuszach. Oto <strong>5 sytuacji</strong>, w których pakiet 3Y lub 5Y jest opłacalny:</p>
+
+<ol>
+  <li><strong>Floty 10+ terminali</strong> — przy 10 urządzeniach statystycznie 1-2 wymagają naprawy rocznie. Koszt jednej naprawy ekranu to ~800–1 200 zł. Kontrakt na cały zestaw wychodzi taniej niż ad-hoc naprawy.</li>
+  <li><strong>Środowiska z ryzykiem uszkodzeń</strong> — magazyny wysokiego składowania, linie produkcyjne, chłodnie (cold storage), logistyka kurierska. Upadki z wysokości, kontakt z cieczami, ekstremalne temperatury — wszystko to zwiększa prawdopodobieństwo awarii.</li>
+  <li><strong>Ochrona przypadkowa</strong> — pakiet Basic NIE obejmuje uszkodzeń przypadkowych. Dopiero Speed Care 3Y i 5Y gwarantują naprawę po upadku czy pęknięciu ekranu. Dla terminali w rękach wielu operatorów to kluczowa różnica.</li>
+  <li><strong>Szybszy czas naprawy</strong> — 7 dni roboczych zamiast 14 dni. Przy koszcie przestoju ~500 zł/terminal/dzień, skrócenie naprawy o tydzień to oszczędność 3 500 zł na każdej naprawie.</li>
+  <li><strong>Gwarancja baterii 1 rok</strong> — w pakiecie Basic gwarancja baterii wynosi tylko 6 miesięcy. Speed Care 3Y/5Y przedłuża ją do roku, plus oferuje opcjonalny kontrakt na wymianę baterii.</li>
+</ol>
+
+<div style="background:#fff3cd;border:1px solid #ffc107;border-radius:8px;padding:16px;margin:24px 0;">
+  <strong>Ważne:</strong> Kontrakt Speed Care 3Y lub 5Y trzeba wykupić <strong>w ciągu 45 dni od początku gwarancji bazowej</strong>. Po tym terminie nie ma możliwości rozszerzenia gwarancji! Dlatego warto podjąć decyzję przy zakupie terminala — <a href="/kontakt">skontaktuj się z TAKMA</a> po wycenę kontraktu.
+</div>`,
+    },
+    {
+      id: 'wylaczenia',
+      heading: 'Co obejmuje gwarancja, a co nie?',
+      content: `<h3>Naprawy bezpłatne (w ramach gwarancji)</h3>
+<ul>
+  <li>Wady fabryczne — defekty materiałowe i produkcyjne</li>
+  <li>Awarie funkcjonalne przy normalnym użytkowaniu zgodnym z instrukcją</li>
+  <li>Powtórzenie tej samej usterki w ciągu 3 miesięcy od naprawy — <strong>bezpłatna wymiana</strong> komponentu</li>
+</ul>
+
+<h3>Naprawy płatne (nie objęte gwarancją)</h3>
+<p>Następujące uszkodzenia są naprawiane odpłatnie, nawet w okresie gwarancji:</p>
+<ul>
+  <li>Zanieczyszczenie pyłem lub ciałami obcymi (kurz, piasek, woda w portach)</li>
+  <li>Nieautoryzowane naprawy lub modyfikacje sprzętowe</li>
+  <li>Uszkodzenia elektryczne (przepięcia, nieprawidłowe zasilanie)</li>
+  <li>Użycie nieautoryzowanych akcesoriów (ładowarki, baterie innych producentów)</li>
+  <li>Naprawy wykonane przez nieautoryzowane serwisy</li>
+  <li>Uszkodzenia przypadkowe — upadki, pęknięcia (<strong>bezpłatne TYLKO z pakietem 3Y/5Y!</strong>)</li>
+  <li>Klęski żywiołowe (powódź, pożar, trzęsienie ziemi)</li>
+  <li>Naturalne zużycie baterii (spadek pojemności poniżej 80%)</li>
+</ul>
+
+<h3>Serwis pogwarancyjny</h3>
+<p>Po wygaśnięciu gwarancji (lub kontraktu Speed Care) terminale M3 Mobile nadal można naprawiać — ale <strong>odpłatnie</strong> i bez gwarancji czasu naprawy. Akcesoria (stacje dokujące, uchwyty, ładowarki) <strong>nie są serwisowane</strong> po wygaśnięciu gwarancji.</p>
+
+<p><strong>Kluczowa różnica:</strong> Z pakietem Speed Care 3Y lub 5Y uszkodzenia przypadkowe (upadki, pęknięcia ekranu, uszkodzenia skanera) SĄ objęte gwarancją. Wyjątek stanowi <a href="#total-damage">Total Damage</a> — opisany w kolejnej sekcji.</p>`,
+    },
+    {
+      id: 'total-damage',
+      heading: 'Total Damage — kiedy terminal nie podlega naprawie?',
+      content: `<p><strong>Total Damage</strong> to kluczowe wyłączenie w programie M3 Speed Care. Nawet z kontraktem 5-letnim terminal zakwalifikowany jako Total Damage <strong>nie podlega naprawie</strong>.</p>
+
+<h3>Definicja Total Damage</h3>
+<p>Total Damage występuje, gdy <strong>3 lub więcej z 6 głównych komponentów</strong> terminala jest uszkodzonych. Te 6 komponentów to:</p>
+
+<ol>
+  <li><strong>Obudowa</strong> (body) — pęknięcia, deformacje strukturalne</li>
+  <li><strong>Płyta główna</strong> (motherboard) — uszkodzenia elektroniczne</li>
+  <li><strong>Wyświetlacz</strong> (display) — pęknięty LCD, uszkodzony digitizer</li>
+  <li><strong>Skaner</strong> (scanner) — uszkodzony moduł skanujący kody kreskowe</li>
+  <li><strong>Kamera</strong> (camera) — uszkodzony moduł kamery</li>
+  <li><strong>Przyciski fizyczne</strong> (physical buttons) — uszkodzone klawisze, trigger</li>
+</ol>
+
+<h3>Przykłady kwalifikacji</h3>
+<table>
+  <caption>Przykłady kwalifikacji Total Damage w M3 Speed Care</caption>
+  <thead>
+    <tr>
+      <th>Uszkodzone komponenty</th>
+      <th>Liczba</th>
+      <th>Kwalifikacja</th>
+      <th>Naprawa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Wyświetlacz + płyta główna</td><td>2</td><td>NIE Total Damage</td><td>Tak (naprawialny)</td></tr>
+    <tr><td>Wyświetlacz + skaner</td><td>2</td><td>NIE Total Damage</td><td>Tak (naprawialny)</td></tr>
+    <tr><td>Wyświetlacz + płyta główna + skaner</td><td>3</td><td><strong>Total Damage</strong></td><td><strong>NIE</strong></td></tr>
+    <tr><td>Obudowa + kamera + przyciski + wyświetlacz</td><td>4</td><td><strong>Total Damage</strong></td><td><strong>NIE</strong></td></tr>
+  </tbody>
+</table>
+
+<div style="background:#f8d7da;border:1px solid #f5c6cb;border-radius:8px;padding:16px;margin:24px 0;">
+  <strong>Uwaga:</strong> Total Damage to najważniejsze wyłączenie programu Speed Care. Nawet z pakietem 5-letnim terminal z 3+ uszkodzonymi komponentami <strong>nie zostanie naprawiony</strong>. Dlatego warto stosować etui ochronne i folie na ekran, aby minimalizować ryzyko wielokrotnych uszkodzeń przy jednym zdarzeniu.
+</div>`,
+    },
+    {
+      id: 'proces-naprawy',
+      heading: 'Jak zgłosić naprawę? Proces krok po kroku',
+      content: `<p>Proces zgłoszenia naprawy w programie M3 Speed Care składa się z 6 kroków:</p>
+
+<ol>
+  <li><strong>Rejestracja konta</strong> — załóż konto na portalu <strong>www.m3-service.net</strong>. Potrzebny jest adres e-mail firmowy i dane firmy.</li>
+  <li><strong>Rejestracja produktu</strong> — zaloguj się i zarejestruj terminal, wpisując <strong>numer seryjny</strong>. Numer seryjny znajduje się wewnątrz komory baterii terminala (po wyjęciu baterii).</li>
+  <li><strong>Wypełnienie formularza RMA</strong> — w zakładce Service Request opisz usterkę, dołącz zdjęcia uszkodzenia i wybierz typ naprawy (gwarancyjna / pogwarancyjna).</li>
+  <li><strong>Wydruk formularza i wysyłka</strong> — wydrukuj wygenerowany formularz RMA, zapakuj terminal (oryginalne opakowanie lub odpowiednie zabezpieczenie) i wyślij do wskazanego centrum serwisowego.</li>
+  <li><strong>Naprawa</strong> — certyfikowany inżynier M3 Mobile diagnozuje i naprawia terminal. Czas naprawy: 14 dni (Basic) lub 7 dni (Speed Care 3Y/5Y).</li>
+  <li><strong>Zwrot terminala</strong> — naprawiony terminal jest odsyłany na adres nadawcy wraz z raportem serwisowym.</li>
+</ol>
+
+<div style="background:#d4edda;border:1px solid #c3e6cb;border-radius:8px;padding:16px;margin:24px 0;">
+  <strong>Dla klientów w Polsce:</strong> TAKMA obsługuje cały proces serwisowy — od diagnostyki wstępnej, przez zgłoszenie RMA, po wysyłkę do centrum serwisowego M3Mobile GmbH w Niemczech. Nie musisz samodzielnie rejestrować się na portalu. <a href="/kontakt">Skontaktuj się z nami</a> — zajmiemy się wszystkim.
+</div>`,
+    },
+    {
+      id: 'centra-serwisowe',
+      heading: 'Centra serwisowe M3 Mobile w Europie',
+      content: `<p>M3 Mobile posiada sieć autoryzowanych centrów serwisowych na całym świecie. W Europie naprawy realizowane są przez następujących partnerów:</p>
+
+<table>
+  <caption>Autoryzowane centra serwisowe M3 Mobile w Europie</caption>
+  <thead>
+    <tr>
+      <th>Kraj</th>
+      <th>Centrum serwisowe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Niemcy</td><td>M3Mobile GmbH</td></tr>
+    <tr><td>Anglia</td><td>BIAS Technology Support LTD</td></tr>
+    <tr><td>Holandia</td><td>QMOSS BV</td></tr>
+    <tr><td>Francja</td><td>PRESTINFO</td></tr>
+    <tr><td>Hiszpania</td><td>SERDACAP</td></tr>
+    <tr><td>Korea</td><td>M3 Headquarter Service Center</td></tr>
+    <tr><td><strong>Polska</strong></td><td><strong>TAKMA (partner serwisowy)</strong></td></tr>
+  </tbody>
+</table>
+
+<h3>Godziny pracy i wsparcie językowe</h3>
+<ul>
+  <li><strong>Godziny pracy:</strong> poniedziałek–piątek, 8:00–17:00 czasu lokalnego</li>
+  <li><strong>Wsparcie językowe:</strong> koreański, angielski, niemiecki, holenderski, francuski, hiszpański, portugalski</li>
+  <li><strong>W Polsce:</strong> pełna obsługa w języku polskim przez TAKMA</li>
+</ul>
+
+<p>TAKMA jako partner serwisowy M3 Mobile w Polsce oferuje:</p>
+<ul>
+  <li>Diagnostykę wstępną terminali M3 Mobile</li>
+  <li>Naprawy gwarancyjne i pogwarancyjne</li>
+  <li>Pomoc w zgłoszeniach RMA do M3Mobile GmbH (Niemcy)</li>
+  <li>Doradztwo w zakresie wyboru pakietu Speed Care</li>
+</ul>
+
+<p><a href="/kontakt">Skontaktuj się z TAKMA</a> lub odwiedź <a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a> — obsługujemy również terminale Zebra i Honeywell.</p>`,
+    },
+    {
+      id: 'porownanie-zebra-onecare',
+      heading: 'M3 Speed Care vs Zebra OneCare vs Honeywell SVC',
+      content: `<p>Jak M3 Speed Care wypada na tle programów serwisowych konkurencji? Poniżej szczegółowe porównanie trzech głównych producentów terminali mobilnych:</p>
+
+<table>
+  <caption>Porównanie kontraktów serwisowych: M3 Speed Care vs Zebra OneCare vs Honeywell SVC</caption>
+  <thead>
+    <tr>
+      <th>Parametr</th>
+      <th>M3 Speed Care</th>
+      <th>Zebra OneCare</th>
+      <th>Honeywell SVC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Pakiety</td><td>Basic / 3Y / 5Y</td><td>Essential / Select / Premium</td><td>Standard / Gold / Platinum</td></tr>
+    <tr><td>Gwarancja bazowa</td><td>1 rok</td><td>1 rok</td><td>1–2 lata</td></tr>
+    <tr><td>Max przedłużenie</td><td>5 lat</td><td>5 lat</td><td>5 lat</td></tr>
+    <tr><td>Czas naprawy (standard)</td><td>14 dni</td><td>3–5 dni</td><td>5–7 dni</td></tr>
+    <tr><td>Czas naprawy (rozszerzony)</td><td>7 dni</td><td>3 dni (Select) / next-day (Premium)</td><td>3 dni (Gold)</td></tr>
+    <tr><td>Ochrona przypadkowa</td><td>Tak (3Y/5Y)</td><td>Tak (Select/Premium)</td><td>Tak (Gold/Platinum)</td></tr>
+    <tr><td>Wymiana next-day</td><td>Nie</td><td>Tak (Premium)</td><td>Tak (Platinum)</td></tr>
+    <tr><td>Aktualizacje Android</td><td>Tak (ITC)</td><td>Tak (LifeGuard)</td><td>Tak (Sentinel)</td></tr>
+    <tr><td>MDM w cenie</td><td>M3 Speedpack</td><td>Nie (płatny SOTI)</td><td>Nie (płatny)</td></tr>
+    <tr><td>Centra serwisowe w PL</td><td>TAKMA</td><td><a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a> (autoryzowany)</td><td>TAKMA (pogwarancyjny)</td></tr>
+  </tbody>
+</table>
+
+<h3>Analiza porównawcza</h3>
+<ul>
+  <li><strong>Zebra OneCare wygrywa</strong> czasem naprawy — 3 dni w pakiecie Select, wymiana next-day w Premium. Dla firm, gdzie każdy dzień przestoju kosztuje setki złotych, to kluczowa przewaga. Sieć serwisowa Zebra w Polsce jest najlepiej rozwinięta (<a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>).</li>
+  <li><strong>M3 Speed Care wygrywa</strong> darmowym MDM — Speedpack jest w cenie kontraktu. U Zebry potrzebujesz osobnej licencji SOTI MobiControl (~50–80 zł/terminal/rok). Przy flocie 50 terminali to oszczędność 2 500–4 000 zł rocznie.</li>
+  <li><strong>Honeywell SVC</strong> plasuje się pośrodku — czasy naprawy lepsze niż M3, gorsze niż Zebra. Honeywell wyróżnia się dłuższą gwarancją bazową (1–2 lata vs 1 rok u konkurencji).</li>
+</ul>
+
+<p>Szczegółowe porównanie terminali: <a href="/poradnik/zebra-vs-honeywell-terminale-mobilne">Zebra vs Honeywell — który terminal wybrać?</a></p>`,
+    },
+    {
+      id: 'tco',
+      heading: 'TCO — kalkulacja kosztów serwisu dla floty 20 terminali',
+      content: `<p>Obliczmy <strong>Total Cost of Ownership</strong> (całkowity koszt posiadania) dla realnego scenariusza: flota <strong>20 terminali <a href="/produkt/m3-sm30">M3 SM30</a></strong>, użytkowanych w magazynie przez 3 lata.</p>
+
+<h3>Założenia kalkulacji</h3>
+<ul>
+  <li><strong>~15% terminali wymaga naprawy rocznie</strong> — średnia branżowa dla środowisk magazynowych</li>
+  <li>20 terminali × 15% × 3 lata = <strong>9 napraw w ciągu 3 lat</strong></li>
+  <li>Średni koszt naprawy bez kontraktu: <strong>~1 000 zł</strong> (ekran, skaner lub płyta główna)</li>
+  <li>Koszt przestoju: <strong>~500 zł/terminal/dzień</strong> (utracona produktywność operatora)</li>
+</ul>
+
+<h3>Porównanie scenariuszy</h3>
+<table>
+  <caption>TCO serwisu — 20× M3 SM30, 3 lata, środowisko magazynowe</caption>
+  <thead>
+    <tr>
+      <th>Pozycja</th>
+      <th>Bez kontraktu (Basic)</th>
+      <th>Ze Speed Care 3Y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Koszt napraw (9 napraw)</td><td>9 × 1 000 zł = <strong>9 000 zł</strong></td><td>0 zł (w cenie kontraktu)</td></tr>
+    <tr><td>Czas naprawy</td><td>14 dni / naprawa</td><td>7 dni / naprawa</td></tr>
+    <tr><td>Koszt przestojów (pośredni)</td><td>9 × 14 × 500 = <strong>63 000 zł</strong></td><td>9 × 7 × 500 = <strong>31 500 zł</strong></td></tr>
+    <tr><td>Koszt kontraktu (20 szt.)</td><td>0 zł</td><td>~5 800–10 800 zł (est.)</td></tr>
+    <tr><td>Ochrona przypadkowa</td><td>Nie</td><td>Tak</td></tr>
+    <tr><td><strong>Suma kosztów bezpośrednich</strong></td><td><strong>9 000 zł</strong></td><td><strong>5 800–10 800 zł</strong></td></tr>
+    <tr><td><strong>Suma z kosztami przestojów</strong></td><td><strong>72 000 zł</strong></td><td><strong>37 300–42 300 zł</strong></td></tr>
+  </tbody>
+</table>
+
+<h3>Wnioski z kalkulacji TCO</h3>
+<p>Dla floty 20 terminali w środowisku magazynowym kontrakt Speed Care 3Y generuje <strong>oszczędność 30 000–35 000 zł</strong> w ciągu 3 lat (uwzględniając koszty przestojów). Nawet bez liczenia kosztów pośrednich, sam koszt napraw (9 000 zł) jest porównywalny z ceną kontraktu — a kontrakt dodatkowo obejmuje uszkodzenia przypadkowe.</p>
+
+<p><strong>Reguła kciuka:</strong> dla flot <strong>10+ terminali</strong> w wymagających środowiskach kontrakt Speed Care 3Y zwykle <strong>oszczędza 30–50%</strong> kosztów serwisu w porównaniu z naprawami ad-hoc.</p>`,
+    },
+    {
+      id: 'podsumowanie',
+      heading: 'Podsumowanie — 5 kluczowych wniosków',
+      content: `<p>Oto <strong>5 najważniejszych informacji</strong> o programie M3 Speed Care:</p>
+
+<ol>
+  <li><strong>Basic (1 rok) jest automatyczny i bezpłatny</strong> — ale NIE obejmuje uszkodzeń przypadkowych. Czas naprawy: 14 dni roboczych.</li>
+  <li><strong>Speed Care 3Y/5Y to must-have dla flot 10+ terminali</strong> w wymagających środowiskach (magazyn, produkcja, cold storage). Ochrona przypadkowa + 7-dniowy czas naprawy.</li>
+  <li><strong>Kontrakt trzeba wykupić w ciągu 45 dni od początku gwarancji</strong> — po tym terminie nie ma możliwości rozszerzenia! Decyduj przy zakupie terminala.</li>
+  <li><strong>Total Damage (3+ z 6 głównych części) nie podlega naprawie</strong> — nawet z kontraktem 5-letnim. Stosuj etui ochronne i folie na ekran.</li>
+  <li><strong>TAKMA obsługuje serwis M3 Mobile w Polsce</strong> — diagnostyka, naprawy gwarancyjne i pogwarancyjne, pomoc z RMA. <a href="/kontakt">Skontaktuj się po wycenę kontraktu Speed Care</a>.</li>
+</ol>`,
+    },
+  ],
+
+  faq: [
+    {
+      question: 'Ile kosztuje M3 Speed Care?',
+      answer: 'Cena zależy od modelu i pakietu (3Y lub 5Y). Orientacyjnie: 8–15% ceny terminala za 3 lata, 12–22% za 5 lat. Dla <a href="/produkt/m3-sm30">SM30</a> (od 3 610 zł) kontrakt 3-letni to ok. 290–540 zł. Skontaktuj się z TAKMA po indywidualną wycenę — <a href="/kontakt">kontakt</a>.',
+    },
+    {
+      question: 'Czy M3 Speed Care obejmuje uszkodzenia przypadkowe?',
+      answer: 'Tak, ale TYLKO pakiety 3-letni i 5-letni. Pakiet Basic (1 rok) NIE obejmuje uszkodzeń przypadkowych — upadki, zalania, pęknięcia ekranu. Wyjątek: Total Damage (3+ z 6 głównych części) nie jest naprawiany w żadnym pakiecie.',
+    },
+    {
+      question: 'Jaki jest czas naprawy z kontraktem Speed Care?',
+      answer: 'Basic: 14 dni roboczych. Speed Care 3Y/5Y: 7 dni roboczych. Dla porównania: Zebra OneCare Select — 3 dni, Zebra OneCare Premium — wymiana next-day. Czas może się wydłużyć przy braku części zamiennych.',
+    },
+    {
+      question: 'Kiedy trzeba wykupić Speed Care?',
+      answer: 'Zgłoszenie zamiaru zakupu kontraktu 3Y lub 5Y musi nastąpić w ciągu 45 dni od początku okresu gwarancji bazowej. Po tym terminie nie ma możliwości wykupienia rozszerzonej gwarancji. Dlatego warto decydować przy zakupie terminala.',
+    },
+    {
+      question: 'Co to jest Total Damage i dlaczego terminal nie podlega naprawie?',
+      answer: 'Total Damage to uszkodzenie 3 lub więcej z 6 głównych komponentów: obudowa, płyta główna, wyświetlacz, skaner, kamera, przyciski fizyczne. Nawet z kontraktem 5-letnim Total Damage nie jest naprawiany. Przykład: pęknięty ekran + uszkodzony skaner = naprawialny. Pęknięty ekran + uszkodzony skaner + uszkodzona płyta = Total Damage.',
+    },
+    {
+      question: 'Czy TAKMA serwisuje terminale M3 Mobile w Polsce?',
+      answer: 'Tak — TAKMA jest partnerem serwisowym M3 Mobile w Polsce. Oferujemy diagnostykę, naprawy gwarancyjne i pogwarancyjne, pomoc w zgłoszeniach RMA do M3Mobile GmbH (Niemcy). Skontaktuj się: <a href="/kontakt">kontakt</a> lub <a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>.',
+    },
+    {
+      question: 'M3 Speed Care vs Zebra OneCare — co lepsze?',
+      answer: 'Zebra OneCare wygrywa czasem naprawy (3 dni Select, next-day Premium) i siecią serwisową w Polsce (<a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>). M3 Speed Care wygrywa darmowym MDM (Speedpack) w cenie kontraktu. Dla flot wymagających minimalnego downtime — Zebra. Dla flot z priorytetem budżetowym — M3. Szczegółowe porównanie: <a href="/poradnik/terminale-m3-mobile-porownanie">Terminale M3 vs Zebra</a>.',
+    },
+    {
+      question: 'Czy Speed Care obejmuje baterie?',
+      answer: 'Basic: gwarancja baterii 6 miesięcy, wymiana NIE obsługiwana. Speed Care 3Y/5Y: gwarancja baterii 1 rok, opcjonalny kontrakt na wymianę baterii. Baterie są częściami eksploatacyjnymi — ich naturalne zużycie (spadek pojemności) nie jest objęte gwarancją.',
+    },
+    {
+      question: 'Jak sprawdzić status gwarancji M3 Mobile?',
+      answer: 'Online na cs.m3mobile.net — logowanie ID/hasło + numer seryjny terminala (widoczny wewnątrz komory baterii). Zielony = gwarancja aktywna, czerwony = wygasła. Konto można również utworzyć na www.m3-service.net. W razie problemów — TAKMA pomoże w weryfikacji.',
+    },
+    {
+      question: 'Czy można przedłużyć Speed Care po wygaśnięciu?',
+      answer: 'Przed wygaśnięciem — tak, należy zgłosić zamiar przedłużenia do przedstawiciela M3 Mobile. Po wygaśnięciu — nie ma standardowej procedury przedłużenia. Dlatego kluczowe jest podjęcie decyzji w ciągu 45 dni od początku gwarancji. Po wygaśnięciu kontraktu terminale nadal można naprawiać, ale odpłatnie i bez gwarancji czasu naprawy.',
+    },
+  ],
+
+  relatedLinks: [
+    { title: 'Terminale M3 Mobile', href: '/terminale-m3-mobile' },
+    { title: 'M3 SM30', href: '/produkt/m3-sm30' },
+    { title: 'M3 US30', href: '/produkt/m3-us30' },
+    { title: 'M3 US20', href: '/produkt/m3-us20' },
+    { title: 'M3 SM24', href: '/produkt/m3-sm24' },
+    { title: 'Porównanie terminali M3', href: '/poradnik/terminale-m3-mobile-porownanie' },
+    { title: 'Kontakt', href: '/kontakt' },
+  ],
+},
 ]
 
 // Helper functions
