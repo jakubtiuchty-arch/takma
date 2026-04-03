@@ -11917,7 +11917,7 @@ export const guides: Guide[] = [
   slug: 'm3-speed-care-kontrakty-serwisowe',
   title: 'M3 Speed Care — kontrakty serwisowe terminali M3 Mobile',
   seoTitle: 'M3 Speed Care — kontrakty serwisowe i gwarancja M3 Mobile | TAKMA',
-  seoDescription: 'M3 Speed Care (M.S.C.) — pakiety serwisowe 1/3/5 lat dla terminali M3 Mobile. Porównanie z Zebra OneCare. Czas naprawy, ochrona przypadkowa, TCO. TAKMA — partner M3 w Polsce.',
+  seoDescription: 'M3 Speed Care — pakiety serwisowe 1/3/5 lat dla terminali M3 Mobile. Porównanie z Zebra OneCare. Czas naprawy, ochrona przypadkowa, TCO. TAKMA — partner M3 w Polsce.',
   excerpt: 'Kompletny przewodnik po kontraktach serwisowych M3 Speed Care — 3 pakiety, tabela porównawcza z Zebra OneCare, kalkulacja TCO dla flot i proces naprawy.',
   category: 'serwisowy',
   tags: ['terminale-mobilne', 'm3-mobile', 'serwis', 'gwarancja', 'kontrakty-serwisowe'],
@@ -11928,7 +11928,7 @@ export const guides: Guide[] = [
   sections: [
     {
       id: 'wstep',
-      heading: 'M3 Speed Care (M.S.C.) — czym jest kontrakt serwisowy M3 Mobile?',
+      heading: 'M3 Speed Care — czym jest kontrakt serwisowy M3 Mobile?',
       content: `<p><strong>M3 Speed Care</strong> (w skrócie <strong>M.S.C.</strong>) to zintegrowany program serwisowy opracowany przez <strong>M3 Mobile</strong> — koreańskiego producenta terminali mobilnych i kolektorów danych. Program obejmuje gwarancję sprzętową, wsparcie techniczne, profesjonalne naprawy oraz aktualizacje oprogramowania realizowane za pośrednictwem platformy <strong>ITC</strong> (Information Technology Center).</p>
 
 <p>Speed Care jest dostępny w <strong>3 pakietach</strong>:</p>
@@ -11942,7 +11942,7 @@ export const guides: Guide[] = [
 
 <p>Na rynku terminali mobilnych podobne programy oferują również <strong>Zebra Technologies</strong> (<a href="/poradnik/zebra-onecare-kontrakty-serwisowe">Zebra OneCare</a>) i <strong>Honeywell</strong> (SVC — Service Contracts). M3 Speed Care wyróżnia się jednak <strong>darmowym MDM</strong> (Speedpack) w cenie kontraktu — konkurencja wymaga osobnej licencji.</p>
 
-<p><strong>TAKMA</strong> jako partner M3 Mobile w Polsce obsługuje serwis lokalnie — od diagnostyki po naprawy gwarancyjne i pogwarancyjne. Pełna oferta <a href="/terminale-m3-mobile">terminali M3 Mobile</a> dostępna jest w naszym sklepie.</p>`,
+<p><strong>TAKMA</strong> jako partner M3 Mobile w Polsce koordynuje serwis — od diagnostyki wstępnej po zgłoszenia RMA do M3Mobile GmbH (Niemcy). Naprawy gwarancyjne realizuje centrum serwisowe M3 w Niemczech, TAKMA obsługuje serwis pogwarancyjny i doradztwo. Pełna oferta <a href="/terminale-m3-mobile">terminali M3 Mobile</a> dostępna jest w naszym sklepie.</p>`,
     },
     {
       id: 'pakiety',
@@ -12133,11 +12133,11 @@ export const guides: Guide[] = [
   <li><strong>W Polsce:</strong> pełna obsługa w języku polskim przez TAKMA</li>
 </ul>
 
-<p>TAKMA jako partner serwisowy M3 Mobile w Polsce oferuje:</p>
+<p>TAKMA jako partner M3 Mobile w Polsce oferuje:</p>
 <ul>
   <li>Diagnostykę wstępną terminali M3 Mobile</li>
-  <li>Naprawy gwarancyjne i pogwarancyjne</li>
-  <li>Pomoc w zgłoszeniach RMA do M3Mobile GmbH (Niemcy)</li>
+  <li>Koordynację zgłoszeń RMA do M3Mobile GmbH (Niemcy) — naprawy gwarancyjne realizuje M3 w Niemczech</li>
+  <li>Serwis pogwarancyjny terminali M3</li>
   <li>Doradztwo w zakresie wyboru pakietu Speed Care</li>
 </ul>
 
@@ -12230,7 +12230,7 @@ export const guides: Guide[] = [
   <li><strong>Speed Care 3Y/5Y to must-have dla flot 10+ terminali</strong> w wymagających środowiskach (magazyn, produkcja, cold storage). Ochrona przypadkowa + 7-dniowy czas naprawy.</li>
   <li><strong>Kontrakt trzeba wykupić w ciągu 45 dni od początku gwarancji</strong> — po tym terminie nie ma możliwości rozszerzenia! Decyduj przy zakupie terminala.</li>
   <li><strong>Total Damage (3+ z 6 głównych części) nie podlega naprawie</strong> — nawet z kontraktem 5-letnim. Stosuj etui ochronne i folie na ekran.</li>
-  <li><strong>TAKMA obsługuje serwis M3 Mobile w Polsce</strong> — diagnostyka, naprawy gwarancyjne i pogwarancyjne, pomoc z RMA. <a href="/kontakt">Skontaktuj się po wycenę kontraktu Speed Care</a>.</li>
+  <li><strong>TAKMA koordynuje serwis M3 Mobile w Polsce</strong> — diagnostyka wstępna, pomoc z RMA, serwis pogwarancyjny. Naprawy gwarancyjne realizuje M3Mobile GmbH w Niemczech. <a href="/kontakt">Skontaktuj się po wycenę kontraktu Speed Care</a>.</li>
 </ol>`,
     },
   ],
@@ -12258,7 +12258,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Czy TAKMA serwisuje terminale M3 Mobile w Polsce?',
-      answer: 'Tak — TAKMA jest partnerem serwisowym M3 Mobile w Polsce. Oferujemy diagnostykę, naprawy gwarancyjne i pogwarancyjne, pomoc w zgłoszeniach RMA do M3Mobile GmbH (Niemcy). Skontaktuj się: <a href="/kontakt">kontakt</a> lub <a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>.',
+      answer: 'Tak — TAKMA jest partnerem M3 Mobile w Polsce. Koordynujemy proces serwisowy: diagnostykę wstępną, zgłoszenia RMA i wysyłkę do centrum M3Mobile GmbH w Niemczech. Naprawy gwarancyjne realizuje M3 w Niemczech. TAKMA oferuje serwis pogwarancyjny terminali M3. Skontaktuj się: <a href="/kontakt">kontakt</a>.',
     },
     {
       question: 'M3 Speed Care vs Zebra OneCare — co lepsze?',
