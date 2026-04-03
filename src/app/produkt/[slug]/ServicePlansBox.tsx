@@ -32,7 +32,7 @@ const SERVICE_INFO: Record<string, { title: string; subtitle: string; tooltip: s
   'm3-mobile': {
     title: 'M3 Speed Care — kontrakt serwisowy',
     subtitle: 'Rozszerzona gwarancja z naprawą uszkodzeń przypadkowych',
-    tooltip: 'M3 Speed Care — oficjalny program serwisowy M3 Mobile. Pakiet 3-letni i 5-letni obejmuje naprawę uszkodzeń przypadkowych, gwarancję baterii 1 rok, czas naprawy 7 dni (vs 14 w Basic). Kontrakt trzeba wykupić w ciągu 45 dni od zakupu. Szczegóły: /poradnik/m3-speed-care-kontrakty-serwisowe',
+    tooltip: 'M3 Speed Care — oficjalny program serwisowy M3 Mobile. Pakiet 3-letni i 5-letni obejmuje naprawę uszkodzeń przypadkowych, gwarancję baterii 1 rok, czas naprawy 7 dni (vs 14 w Basic). Kontrakt trzeba wykupić w ciągu 45 dni od zakupu.',
   },
   _default: {
     title: 'Kontrakt serwisowy',
