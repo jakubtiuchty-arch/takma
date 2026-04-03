@@ -50343,7 +50343,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
       { question: 'Co to jest BLE Beaconing w M3 SM30?', answer: 'BLE Beaconing to unikalna funkcja SM30 — urządzenie emituje sygnał Bluetooth Low Energy nawet po wyłączeniu. Pozwala to na lokalizowanie terminali (np. Find My Device), śledzenie aktywów w magazynie i wyzwalanie akcji proximity (np. automatyczne logowanie przy podejściu do stacji roboczej). Żaden terminal Zebra ani Honeywell nie oferuje Beaconing po wyłączeniu.' },
       { question: 'Jakie akcesoria są dostępne do M3 SM30?', answer: 'Pełna gama: stacja dokująca 1-gniazdowa (SM30-1CRD-C00), 2-gniazdowa z ładowaniem baterii (SM30-2CRD-C00), 4-gniazdowa (SM30-4CRD-C00), 8-gniazdowa z Ethernet (SM30-8CRD-C00), ładowarka 4 baterii (SM30-04BC-C00), boot ochronny (SM30-BOOT-01), uchwyt pistoletowy (SM30-TRIG-S00), baterie 5000/7000 mAh, folia ochronna (SM30-SCPR). Zasilacze dobierz wg stacji — PWSP-2XX (1/2-slot), PWSP-8XX (4/8-slot), PWSP-4XX (ładowarka baterii).' },
       { question: 'Gdzie kupić M3 SM30 w Polsce?', answer: 'TAKMA jest partnerem M3 Mobile w Polsce. Oferujemy M3 SM30 z dostawą, doradztwo w doborze wariantu (Wi-Fi vs 5G, SE4770 vs SE5500), konfigurację M3 Speedpack, urządzenia demo i serwis gwarancyjny/pogwarancyjny. Skontaktuj się — przygotujemy indywidualną wycenę dla Twojej firmy.' },
-      { question: 'Jaka gwarancja na M3 SM30 i gdzie serwis?', answer: 'M3 SM30 objęty jest 1-roczną gwarancją producenta (M3 Mobile). TAKMA zapewnia wsparcie serwisowe w Polsce — diagnostykę, naprawy gwarancyjne i pogwarancyjne. Serwis autoryzowany M3 Mobile w Europie prowadzi M3 Mobile GmbH w Niemczech (Kriftel). Czas naprawy gwarancyjnej: zazwyczaj 10-15 dni roboczych.' },
+      { question: 'Jaka gwarancja na M3 SM30 i gdzie serwis?', answer: 'M3 SM30 objęty jest 1-roczną gwarancją bazową (Basic). Opcjonalnie: M3 Speed Care 3 lata (SM30-SPST-FB3) lub 5 lat (SM30-SPST-FB5) — ochrona przypadkowa, czas naprawy 7 dni, gwarancja baterii 1 rok. Kontrakt trzeba wykupić w ciągu 45 dni. Naprawy gwarancyjne realizuje M3Mobile GmbH (Niemcy), TAKMA koordynuje proces w Polsce. Szczegóły: [M3 Speed Care — przewodnik](/poradnik/m3-speed-care-kontrakty-serwisowe).' },
       { question: 'Ile kosztuje M3 SM30?', answer: 'Cena M3 SM30 zależy od konfiguracji: wariant Wi-Fi z SE4770 od ok. 3 610 zł netto, wariant 5G+GPS z SE5500 do ok. 4 378 zł netto. Ceny mogą się zmieniać w zależności od kursu EUR i dostępności. Skontaktuj się z TAKMA po aktualną wycenę i rabat ilościowy dla Twojej firmy.' },
       { question: 'Jakie są alternatywy dla M3 SM30?', answer: '[M3 SM24](/produkt/m3-sm24) (od 3 123 zł) — budżetowy model bez AI i 5G. [M3 SM25](/produkt/m3-sm25) (premiera czerwiec 2026) — średnia półka z FHD+ i 5G. [Zebra TC53e](/produkt/zebra-tc53e) — ten sam procesor QCM6490, ekosystem Mobility DNA. [Honeywell CT32](/produkt/honeywell-ct32) (od 3 389 zł) — FlexRange 24 m, Mobility Edge.' },
     ],
@@ -50448,6 +50448,10 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
     downloads: [
       { name: 'Karta katalogowa M3 SM30 (EN)', type: 'datasheet' as const, url: '/downloads/m3-sm30-specification.pdf', size: '860 KB' },
       { name: 'Katalog akcesoriów M3 SM30 (EN)', type: 'manual' as const, url: '/downloads/m3-sm30-accessories-guide.pdf', size: '1,2 MB' },
+    ],
+    servicePlans: [
+      { name: 'M3 Speed Care — 3 lata', partNumber: 'SM30-SPST-FB3', duration: '3 lata', priceNetto: 0 },
+      { name: 'M3 Speed Care — 5 lat', partNumber: 'SM30-SPST-FB5', duration: '5 lat', priceNetto: 0 },
     ],
     createdAt: '2026-03-24',
   },
