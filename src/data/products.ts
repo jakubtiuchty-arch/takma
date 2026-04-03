@@ -694,6 +694,19 @@ export const subcategories: Subcategory[] = [
     productIds: ['zebra-ds9908', 'zebra-ds9308'],
     productCount: 2,
   },
+  {
+    id: 'skanery-pierscieniowe',
+    slug: 'skanery-kodow-kreskowych/pierscieniowe',
+    name: 'Skanery pierścieniowe',
+    parentCategoryId: 'skanery-kodow-kreskowych',
+    description: 'Skanery pierścieniowe (ring scanners) — noszone na palcu, obie ręce wolne do kompletacji. Zebra, M3 Mobile, Unitech, Honeywell, ProGlove.',
+    seoTitle: 'Skanery pierścieniowe (ring scanners) — hands-free do magazynu | TAKMA',
+    seoDescription: 'Skanery pierścieniowe Zebra RS5100, ProGlove MARK, Honeywell 8680i, M3 Ring Scanner, Unitech MS652. Hands-free skanowanie w magazynie. Ceny netto, doradztwo. TAKMA.',
+    longDescription: 'Skanery pierścieniowe (ring scanners, wearable scanners) to miniaturowe czytniki kodów kreskowych noszone na palcu lub na rękawicy — obie ręce operatora pozostają wolne do podnoszenia, odkładania i pakowania towarów. Kluczowe zastosowanie: kompletacja zamówień (order picking), sortowanie paczek, inwentaryzacja, cross-docking. W ofercie TAKMA: Zebra RS5100 (1D/2D, Bluetooth, hot-swap, IP65, od ~2 500 zł), ProGlove MARK (zintegrowany z rękawicą, gateway BLE, od ~1 800 zł), Honeywell 8680i (wearable mini-mobile, Android, od ~3 500 zł), M3 Mobile Ring Scanner (kompatybilny z SM30/US30) i Unitech MS652 (kompaktowy ring BT, od ~1 200 zł). Skanery pierścieniowe zwiększają produktywność kompletacji o 20-30% w porównaniu z tradycyjnymi skanerami ręcznymi — eliminują cykl „podnieś skaner → zeskanuj → odłóż skaner". TAKMA oferuje doradztwo w doborze skanera pierścieniowego do istniejącej infrastruktury (terminale, WMS, Wi-Fi).',
+    icon: 'scan',
+    productIds: [],
+    productCount: 0,
+  },
   // --- Podkategorie: Akcesoria do skanerów ---
   {
     id: 'akcesoria-do-skanerow',
