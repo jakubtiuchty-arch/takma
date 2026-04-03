@@ -11497,6 +11497,422 @@ export const guides: Guide[] = [
     { title: 'Kontakt — zapytaj o wycenę', href: '/kontakt' },
   ],
 },
+{
+  slug: 'terminale-m3-mobile-porownanie',
+  title: 'Terminale M3 Mobile — porównanie wszystkich modeli 2026',
+  seoTitle: 'Terminale M3 Mobile — porównanie SM30, US30, US20, SM24 | TAKMA',
+  seoDescription: 'Porównanie wszystkich terminali M3 Mobile: SM30 z AI i 5G, US30/US20 z klawiaturą, SM24/SM25 z 6" ekranem. Tabele specyfikacji, ceny, zastosowania.',
+  excerpt: 'Kompletne porównanie 8 terminali M3 Mobile — od flagowego SM30 z AI 12 TOPS po budżetowy UL20. Z cenami netto i tabelami specyfikacji.',
+  category: 'porownanie',
+  tags: ['terminale-mobilne', 'porownanie', 'm3-mobile'],
+  publishedAt: '2026-04-03',
+  updatedAt: '2026-04-03',
+  readTime: '12 min',
+  sections: [
+    {
+      id: 'wprowadzenie',
+      heading: 'M3 Mobile — koreański producent enterprise z AI i 5G',
+      content: `<p>M3 Mobile to koreański producent terminali mobilnych klasy enterprise, założony w 2000 roku w Daegu (Korea Południowa). Firma specjalizuje się w urządzeniach do automatycznej identyfikacji — kolektorach danych z fizycznymi klawiaturami, terminalach dotykowych i tabletach rugged. W 2026 roku portfolio M3 Mobile obejmuje <strong>9 modeli terminali</strong> — od flagowego SM30 z akceleratorem AI 12 TOPS i łącznością 5G po budżetowego SL20+ od 2 255 zł netto.</p>
+<p>Kluczowym wyróżnikiem M3 Mobile jest platforma <strong>M3 Speedpack</strong> — zintegrowane narzędzie MDM do zdalnego zarządzania urządzeniami, aktualizacji firmware, konfiguracji Wi-Fi/VPN i wdrażania aplikacji. Speedpack upraszcza deployment flot terminali w magazynach i centrach logistycznych.</p>
+<p><strong>TAKMA jest partnerem M3 Mobile w Polsce</strong> — zapewniamy doradztwo w doborze modelu, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny oraz urządzenia demo do testów pilotażowych. Pełna oferta terminali M3 Mobile dostępna jest na stronie <a href="/terminale-m3-mobile">terminale M3 Mobile</a>.</p>
+<p>W tym poradniku porównujemy wszystkie aktualne modele M3 Mobile — z tabelami specyfikacji, cenami netto i rekomendacjami zastosowań. Jeśli szukasz jednego konkretnego terminala, przejdź do sekcji z jego opisem. Jeśli nie wiesz, który wybrać — zacznij od <a href="#tabela-porownawcza">tabeli porównawczej</a> lub <a href="#jaki-terminal-wybrac">macierzy zastosowań</a>.</p>`,
+    },
+    {
+      id: 'tabela-porownawcza',
+      heading: 'Wszystkie terminale M3 Mobile — tabela porównawcza',
+      content: `<p>Poniższa tabela zestawia kluczowe parametry wszystkich 9 terminali M3 Mobile dostępnych w ofercie TAKMA w 2026 roku. Ceny podane są netto (bez VAT) i dotyczą najtańszego wariantu konfiguracyjnego.</p>
+<div style="overflow-x:auto">
+<table>
+<caption>Porównanie wszystkich terminali M3 Mobile — specyfikacje, ceny i kluczowe cechy (2026)</caption>
+<thead>
+<tr>
+<th>Model</th>
+<th>Ekran</th>
+<th>Procesor</th>
+<th>RAM / Flash</th>
+<th>Skaner</th>
+<th>IP</th>
+<th>Bateria</th>
+<th>Android</th>
+<th>Klawiatura</th>
+<th>5G/4G</th>
+<th>Cena od</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/produkt/m3-sm30"><strong>SM30</strong></a></td>
+<td>5,7" FHD</td>
+<td>QCM6490 2,7 GHz</td>
+<td>8 / 128 GB</td>
+<td>SE4770 / SE5500</td>
+<td>IP68</td>
+<td>5000 mAh hot-swap</td>
+<td>14→18</td>
+<td>Nie</td>
+<td>5G (opcja)</td>
+<td>3 610 zł</td>
+</tr>
+<tr>
+<td><a href="/produkt/m3-sm25"><strong>SM25</strong></a></td>
+<td>6" FHD+</td>
+<td>QCM4490 2,4 GHz</td>
+<td>8 / 128 GB</td>
+<td>CM60E / SE5500</td>
+<td>IP67</td>
+<td>4000 mAh hot-swap</td>
+<td>16→18</td>
+<td>Nie</td>
+<td>5G (opcja)</td>
+<td>Zapytaj</td>
+</tr>
+<tr>
+<td><a href="/produkt/m3-sm24"><strong>SM24</strong></a></td>
+<td>6" HD+</td>
+<td>SM6225 2,4 GHz</td>
+<td>8 / 128 GB</td>
+<td>CM60E</td>
+<td>IP67</td>
+<td>4000 mAh hot-swap</td>
+<td>16→18</td>
+<td>Nie</td>
+<td>4G (opcja)</td>
+<td>3 123 zł</td>
+</tr>
+<tr>
+<td><a href="/produkt/m3-us30"><strong>US30</strong></a></td>
+<td>4" WVGA</td>
+<td>Octa-core 2,2 GHz</td>
+<td>4 / 64 GB</td>
+<td>SE4770 / SE5500 / SE5800</td>
+<td>IP65</td>
+<td>6700 mAh hot-swap</td>
+<td>13</td>
+<td>30/38/42/51 kl.</td>
+<td>Brak (Wi-Fi 6)</td>
+<td>3 610 zł</td>
+</tr>
+<tr>
+<td><a href="/produkt/m3-us20"><strong>US20</strong></a></td>
+<td>4" WVGA</td>
+<td>Octa-core 2,2 GHz</td>
+<td>4 / 64 GB</td>
+<td>SE4770 / SE5500 / SE4850 / SE4750 / SE4710</td>
+<td>IP65</td>
+<td>6700 mAh hot-swap</td>
+<td>10</td>
+<td>30/42/51 kl.</td>
+<td>4G (opcja)</td>
+<td>4 080 zł</td>
+</tr>
+<tr>
+<td><a href="/produkt/m3-sl20"><strong>SL20+</strong></a></td>
+<td>5,5" HD+</td>
+<td>Octa-core 2,0 GHz</td>
+<td>4-8 / 64-128 GB</td>
+<td>SE4710</td>
+<td>IP67</td>
+<td>5000 mAh hot-swap</td>
+<td>13→15</td>
+<td>Nie</td>
+<td>4G + GPS</td>
+<td>2 255 zł</td>
+</tr>
+<tr>
+<td><a href="/produkt/m3-sl20k"><strong>SL20K</strong></a></td>
+<td>4" WVGA</td>
+<td>Octa-core 2,0 GHz</td>
+<td>4 / 64 GB</td>
+<td>2D Imager</td>
+<td>IP65</td>
+<td>5200 mAh hot-swap</td>
+<td>13→15</td>
+<td>30 kl.</td>
+<td>4G + GPS</td>
+<td>2 424 zł</td>
+</tr>
+<tr>
+<td><a href="/produkt/m3-ul20"><strong>UL20</strong></a></td>
+<td>5" FHD</td>
+<td>Octa-core 2,0–2,2 GHz</td>
+<td>2-8 / 16-128 GB</td>
+<td>SE4750 / SE4850 / SE5800</td>
+<td>IP67</td>
+<td>6700 mAh</td>
+<td>9/10</td>
+<td>28/35/53 kl. (gun)</td>
+<td>4G (opcja)</td>
+<td>4 920 zł</td>
+</tr>
+<tr>
+<td><a href="/produkt/m3-ul30"><strong>UL30</strong></a></td>
+<td>5" FHD</td>
+<td>QCS6490 2,7 GHz</td>
+<td>8 / 128 GB</td>
+<td>SE4770 / SE5800</td>
+<td>IP67</td>
+<td>6700 mAh hot-swap</td>
+<td>14→18</td>
+<td>28/35/53 kl. (gun)</td>
+<td>Brak (Wi-Fi 6E)</td>
+<td>5 626 zł</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Legenda:</strong> Ceny netto w PLN (bez VAT). „Hot-swap" — wymiana baterii bez wyłączania urządzenia. „Gun" — obudowa pistoletowa z uchwytem. Wszystkie modele mają NFC i Bluetooth. Warianty ze skanerem SE5500/SE5800 mają zasięg do 15 m (magazyny wysokiego składowania).</p>`,
+    },
+    {
+      id: 'sm30',
+      heading: 'M3 SM30 — flagowy terminal z AI 12 TOPS i 5G',
+      content: `<p><a href="/produkt/m3-sm30"><strong>M3 SM30</strong></a> to flagowy terminal M3 Mobile z procesorem Qualcomm Dragonwing QCM6490 (2,7 GHz, 8 rdzeni) i wbudowanym akceleratorem AI Hexagon NPU o mocy <strong>12 TOPS</strong> (Tera Operations Per Second). To ten sam procesor, który stosuje Zebra w swoim TC53e.</p>
+<h3>Kluczowe cechy SM30</h3>
+<ul>
+<li><strong>AI 12 TOPS</strong> — rozpoznawanie obrazów, detekcja defektów, OCR i Quick Code Recognition (QCR) bezpośrednio na urządzeniu, bez połączenia z chmurą</li>
+<li><strong>5G Sub-6</strong> (wariant SM305E) + Wi-Fi 6E — niskie opóźnienia w dużych obiektach logistycznych</li>
+<li><strong>IP68</strong> — najwyższa klasa szczelności w ofercie M3 Mobile (zanurzenie 1,5 m / 30 min)</li>
+<li><strong>Skaner SE4770 lub SE5500</strong> Smart Focus (Zebra) z zasięgiem do 15 m</li>
+<li><strong>Ekran 5,7" FHD</strong> (1080x1920) z Gorilla Glass 5</li>
+<li><strong>Bateria 5000 mAh z hot-swap</strong> (opcja 7000 mAh)</li>
+<li><strong>BLE Beaconing</strong> — emituje sygnał Bluetooth nawet po wyłączeniu urządzenia (lokalizacja aktywów)</li>
+<li><strong>Android 14</strong> z gwarantowaną aktualizacją do Android 18</li>
+</ul>
+<h3>Dla kogo SM30?</h3>
+<p>SM30 to wybór dla firm wdrażających sztuczną inteligencję w procesach magazynowych i produkcyjnych: kontrola jakości z detekcją defektów, rozpoznawanie etykiet OCR, skanowanie w magazynach wysokiego składowania (SE5500, do 15 m). Dzięki IP68 i temperaturze pracy od -20°C do +55°C SM30 sprawdza się w chłodniach i trudnych warunkach zewnętrznych.</p>
+<h3>Cena M3 SM30</h3>
+<p>Od <strong>3 610 zł netto</strong> (Wi-Fi, SE4770) do <strong>4 378 zł netto</strong> (5G+GPS, SE5500). Dostępny w 4 wariantach. <a href="/produkt/m3-sm30">Zobacz kartę produktu M3 SM30</a>.</p>`,
+    },
+    {
+      id: 'us30-us20',
+      heading: 'M3 US30 i US20 — terminale z klawiaturą fizyczną',
+      content: `<p><a href="/produkt/m3-us30"><strong>M3 US30</strong></a> i <a href="/produkt/m3-us20"><strong>M3 US20</strong></a> to terminale z fizyczną klawiaturą do intensywnego wprowadzania danych — idealne do magazynu, kompletacji zamówień WMS i pracy na wózkach widłowych. US30 jest następcą US20 z Wi-Fi 6 i Androidem 13.</p>
+<h3>Porównanie US30 vs US20</h3>
+<div style="overflow-x:auto">
+<table>
+<caption>M3 US30 vs M3 US20 — porównanie kluczowych parametrów</caption>
+<thead>
+<tr><th>Cecha</th><th>M3 US30</th><th>M3 US20</th></tr>
+</thead>
+<tbody>
+<tr><td>Android</td><td><strong>13</strong></td><td>10</td></tr>
+<tr><td>Wi-Fi</td><td><strong>Wi-Fi 6 (802.11ax)</strong></td><td>Wi-Fi 5 (802.11ac)</td></tr>
+<tr><td>Skanery</td><td>SE4770, SE5500, <strong>SE5800</strong></td><td>SE4770, SE4770 (45°), SE5500, SE4850, SE4750, SE4710</td></tr>
+<tr><td>Klawiatury</td><td>30, <strong>38</strong>, 42, 51 kl.</td><td>30, 42, 51 kl.</td></tr>
+<tr><td>4G LTE + GPS</td><td><strong>Brak</strong> (tylko Wi-Fi)</td><td>Tak (wariant US20X)</td></tr>
+<tr><td>Ekran</td><td>4" WVGA</td><td>4" WVGA</td></tr>
+<tr><td>RAM / Flash</td><td>4 / 64 GB</td><td>4 / 64 GB</td></tr>
+<tr><td>IP</td><td>IP65</td><td>IP65</td></tr>
+<tr><td>Bateria</td><td>6700 mAh hot-swap</td><td>6700 mAh hot-swap</td></tr>
+<tr><td>Upadki</td><td>1,8 m (MIL-STD-810G)</td><td>1,8 m (MIL-STD-810G)</td></tr>
+<tr><td>Bluetooth</td><td>4.1 BLE</td><td>4.1 BLE</td></tr>
+<tr><td>Cena od</td><td><strong>3 610 zł</strong></td><td>4 080 zł</td></tr>
+<tr><td>Wariantów</td><td>12</td><td>21</td></tr>
+</tbody>
+</table>
+</div>
+<h3>Kto powinien wybrać US30?</h3>
+<p>US30 to nowszy model z Wi-Fi 6 i Androidem 13, a do tego jest <strong>tańszy</strong> (od 3 610 zł vs 4 080 zł za US20). Ma nową klawiaturę funkcyjno-numeryczną 38-klawiszową i najnowszy skaner SE5800. Dla nowych wdrożeń US30 jest jednoznacznym wyborem.</p>
+<h3>Kiedy US20 jest lepszym wyborem?</h3>
+<p>US20 wygrywa w dwóch sytuacjach: (1) potrzebujesz <strong>4G LTE + GPS</strong> do pracy w terenie — US30 nie ma wariantu z modemem komórkowym, (2) potrzebujesz skanera <strong>SE4770 pod kątem 45°</strong> do ergonomicznego skanowania półek lub <strong>SE4850 LR</strong> do ekstremalnie dalekiego zasięgu. US20 oferuje 6 opcji skanerów vs 3 w US30.</p>
+<p><strong>Ważne:</strong> akcesoria US20 i US30 są wzajemnie kompatybilne — stacje dokujące, ładowarki baterii, booty, uchwyty pistoletowe i baterie US20-BATT-E67 pasują do obu modeli.</p>
+<p><a href="/produkt/m3-us30">Karta produktu M3 US30</a> | <a href="/produkt/m3-us20">Karta produktu M3 US20</a></p>`,
+    },
+    {
+      id: 'sm24-sm25',
+      heading: 'M3 SM24 i SM25 — terminale dotykowe 6 cali',
+      content: `<p><a href="/produkt/m3-sm24"><strong>M3 SM24</strong></a> i <a href="/produkt/m3-sm25"><strong>M3 SM25</strong></a> to para terminali dotykowych z 6-calowym ekranem, hot-swap baterii i Androidem 16. SM25 jest wyższym modelem z FHD+, 5G i skanerem SE5500 — SM24 to budżetowa alternatywa z HD+ i skanerem CM60E.</p>
+<h3>Kluczowe różnice SM24 vs SM25</h3>
+<ul>
+<li><strong>Ekran:</strong> SM24 — 6" HD+ (720x1440), SM25 — 6" FHD+ (1080x2160). FHD+ daje lepszą ostrość dokumentów i interfejsów WMS</li>
+<li><strong>Procesor:</strong> SM24 — Qualcomm SM6225 (2,4 GHz), SM25 — QCM4490 Dragonwing (2,4 GHz, wydajniejszy)</li>
+<li><strong>Skaner:</strong> SM24 — CM60E (standard). SM25 — CM60E + SE5500 Smart Focus (zasięg do 15 m, ten sam co w Zebra MC9400)</li>
+<li><strong>5G:</strong> SM24 — brak (4G LTE w wariancie X). SM25 — 5G Sub-6 w wariancie X</li>
+<li><strong>Bluetooth:</strong> SM24 — BLE 5.3. SM25 — BLE 5.3 + Beaconing</li>
+<li><strong>Wi-Fi:</strong> oba Wi-Fi 6E (802.11ax), 2x2 MU-MIMO</li>
+<li><strong>Obudowa:</strong> identyczne wymiary (77x167x12,9 mm), IP67, Gorilla Glass 5</li>
+<li><strong>Bateria:</strong> oba 4000 mAh hot-swap (opcja 6000 mAh)</li>
+<li><strong>Android:</strong> oba 16→18 (3 generacje)</li>
+</ul>
+<h3>Cena</h3>
+<p>SM24 — od <strong>3 123 zł netto</strong> (Wi-Fi) do 3 552 zł (LTE). SM25 — cena oficjalnie nieogłoszona (premiera czerwiec 2026), szacunkowo 20-30% więcej niż SM24.</p>
+<h3>Który wybrać?</h3>
+<p><strong>SM24</strong> — jeśli wystarczy ekran HD+, nie potrzebujesz 5G ani skanera dalekiego zasięgu, a budżet jest ograniczony. Doskonały do kompletacji e-commerce, inwentaryzacji i handlu detalicznego.</p>
+<p><strong>SM25</strong> — jeśli pracujesz w dużym centrum logistycznym z magazynami wysokiego składowania (SE5500 do 15 m), potrzebujesz 5G do WMS w chmurze lub zależy Ci na ostrości ekranu FHD+ do pracy z dokumentami.</p>
+<p><a href="/produkt/m3-sm24">Karta produktu M3 SM24</a> | <a href="/produkt/m3-sm25">Karta produktu M3 SM25</a></p>`,
+    },
+    {
+      id: 'sl20-sl20k',
+      heading: 'M3 SL20 i SL20K — terminale kompaktowe',
+      content: `<p><a href="/produkt/m3-sl20"><strong>M3 SL20+</strong></a> i <a href="/produkt/m3-sl20k"><strong>M3 SL20K</strong></a> to kompaktowe, przystępne cenowo terminale M3 Mobile. SL20+ to wersja dotykowa z ekranem 5,5", SL20K — wersja z fizyczną klawiaturą 30-klawiszową i ekranem 4".</p>
+<h3>Porównanie SL20+ vs SL20K</h3>
+<ul>
+<li><strong>Ekran:</strong> SL20+ — 5,5" HD+ (1440x720). SL20K — 4" WVGA (480x800)</li>
+<li><strong>Klawiatura:</strong> SL20+ — brak (dotykowy). SL20K — 30 klawiszy z podświetleniem LED</li>
+<li><strong>Skaner:</strong> SL20+ — Zebra SE4710. SL20K — 2D Imager</li>
+<li><strong>IP:</strong> SL20+ — <strong>IP67</strong>. SL20K — IP65</li>
+<li><strong>Bateria:</strong> SL20+ — 5000 mAh hot-swap. SL20K — 5200 mAh hot-swap (PD 20W)</li>
+<li><strong>RAM / Flash:</strong> SL20+ — 4/64 lub 8/128 GB. SL20K — 4/64 GB</li>
+<li><strong>4G LTE + GPS:</strong> oba tak (wbudowane)</li>
+<li><strong>eSIM:</strong> SL20+ — tak (nano + eSIM). SL20K — nie (2x nano SIM)</li>
+<li><strong>Waga:</strong> SL20+ — 250 g. SL20K — 266,5 g</li>
+<li><strong>Android:</strong> oba 13→15</li>
+</ul>
+<h3>Cena</h3>
+<p>SL20+ — od <strong>2 255 zł netto</strong> (4/64 GB) do 2 416 zł (8/128 GB). SL20K — od <strong>2 424 zł netto</strong>. To najtańsze terminale enterprise M3 Mobile z hot-swap na polskim rynku.</p>
+<h3>Który wybrać?</h3>
+<p><strong>SL20+</strong> — do pracy z interfejsem dotykowym (retail, hospitality, lekka logistyka). Większy ekran 5,5" i IP67 to przewagi dla pracowników przyzwyczajonych do smartfonów. eSIM upraszcza zarządzanie flotą.</p>
+<p><strong>SL20K</strong> — do intensywnego wpisywania danych liczbowych (inwentaryzacja, kompletacja WMS). Klawiatura fizyczna przyspiesza pracę o 30-50% vs klawiatura ekranowa. Klawiatura z podświetleniem LED do pracy w ciemnych pomieszczeniach.</p>
+<p><a href="/produkt/m3-sl20">Karta produktu M3 SL20+</a> | <a href="/produkt/m3-sl20k">Karta produktu M3 SL20K</a></p>`,
+    },
+    {
+      id: 'ul20-ul30',
+      heading: 'M3 UL20 i UL30 — terminale gun z klawiaturą',
+      content: `<p><a href="/produkt/m3-ul20"><strong>M3 UL20</strong></a> i <a href="/produkt/m3-ul30"><strong>M3 UL30</strong></a> to terminale gun (pistoletowe) z fizyczną klawiaturą i ekranem 5" FHD — zaprojektowane do intensywnej pracy w magazynach, centrach dystrybucji i chłodniach. UL30 to następca UL20 z procesorem QCS6490, AI 12 TOPS i Wi-Fi 6E.</p>
+<h3>Kluczowe różnice UL20 vs UL30</h3>
+<ul>
+<li><strong>Procesor:</strong> UL20 — Octa-core 2,0-2,2 GHz. UL30 — <strong>QCS6490 2,7 GHz z NPU AI 12 TOPS</strong></li>
+<li><strong>RAM / Flash:</strong> UL20 — 2-8 / 16-128 GB (zależnie od wariantu). UL30 — <strong>8 / 128 GB</strong> (standard)</li>
+<li><strong>Wi-Fi:</strong> UL20 — Wi-Fi 5 (802.11ac). UL30 — <strong>Wi-Fi 6E</strong> (802.11ax)</li>
+<li><strong>Bluetooth:</strong> UL20 — BT 4.1-5.3 (zależnie od rewizji). UL30 — <strong>BT 5.3 + BLE Beaconing</strong></li>
+<li><strong>Android:</strong> UL20 — 9/10. UL30 — <strong>14→18</strong></li>
+<li><strong>Skanery:</strong> UL20 — SE4750, SE4850, SE5800. UL30 — SE4770, SE5800</li>
+<li><strong>Upadki:</strong> UL20 — 2,0 m. UL30 — <strong>3,0 m</strong> (z boot)</li>
+<li><strong>Tumble:</strong> UL20 — do 2000x z 1 m. UL30 — <strong>6000x z 1 m</strong> (z boot)</li>
+<li><strong>Hot-swap:</strong> UL20 — niektóre modele FX. UL30 — <strong>tak (standard)</strong></li>
+<li><strong>Wersja Freezer:</strong> oba — tak (UL20F do -30°C, UL30F do -30°C)</li>
+<li><strong>Klawiatury:</strong> oba 28/35/53 klawiszy</li>
+<li><strong>4G LTE:</strong> UL20 — tak (UL20X). UL30 — brak (tylko Wi-Fi 6E)</li>
+</ul>
+<h3>Cena</h3>
+<p>UL20 — od <strong>4 920 zł netto</strong> (UL20W, SE4750). UL30 — od <strong>5 626 zł netto</strong> (SE4770). Wersje Freezer UL30F od 6 251 zł, z SE5800 do 6 809 zł.</p>
+<h3>Który wybrać?</h3>
+<p><strong>UL30</strong> — dla nowych wdrożeń. Procesor QCS6490 z AI, Wi-Fi 6E, Android 14→18, upadki z 3 m i hot-swap dają wyraźną przewagę nad UL20. Największy ekran 5" FHD w klasie terminali gun z klawiaturą (Zebra MC3400 i MC9400 mają 4-4,3").</p>
+<p><strong>UL20</strong> — jeśli potrzebujesz <strong>4G LTE</strong> (model UL20X) do pracy w terenie bez Wi-Fi, lub masz ograniczony budżet. Modele UL20 FX (z SE5800, USB-C, Wi-Fi 6 i 8/128 GB) to dobry kompromis. Akcesoria UL20 i UL30 są kompatybilne.</p>
+<p><a href="/produkt/m3-ul20">Karta produktu M3 UL20</a> | <a href="/produkt/m3-ul30">Karta produktu M3 UL30</a></p>`,
+    },
+    {
+      id: 'jaki-terminal-wybrac',
+      heading: 'Jaki terminal M3 Mobile wybrać? Macierz zastosowań',
+      content: `<p>Poniższa macierz pomoże dopasować terminal M3 Mobile do konkretnego zastosowania. Każdy model oznaczony jest jako <strong>zalecany</strong> (najlepszy wybór) lub <em>alternatywa</em> (spełnia wymagania, ale istnieje lepszy model).</p>
+<div style="overflow-x:auto">
+<table>
+<caption>Macierz zastosowań terminali M3 Mobile — rekomendacje modeli wg branży i scenariusza</caption>
+<thead>
+<tr>
+<th>Zastosowanie</th>
+<th>Zalecany model</th>
+<th>Alternatywa</th>
+<th>Uzasadnienie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Magazyn — picking / kompletacja</strong></td>
+<td><a href="/produkt/m3-us30">US30</a>, <a href="/produkt/m3-ul30">UL30</a></td>
+<td><a href="/produkt/m3-sm24">SM24</a></td>
+<td>Klawiatura fizyczna przyspiesza wpisywanie ilości. UL30 do ciężkich warunków (gun, 3 m drop).</td>
+</tr>
+<tr>
+<td><strong>Magazyn wysokiego składowania</strong></td>
+<td><a href="/produkt/m3-sm30">SM30</a> (SE5500), <a href="/produkt/m3-ul30">UL30</a> (SE5800)</td>
+<td><a href="/produkt/m3-sm25">SM25</a> (SE5500)</td>
+<td>Skanery SE5500/SE5800 czytają kody z odległości do 15 m na regałach paletowych.</td>
+</tr>
+<tr>
+<td><strong>Logistyka / dostawy / teren</strong></td>
+<td><a href="/produkt/m3-sm30">SM30</a> (5G), <a href="/produkt/m3-us20">US20</a> (4G)</td>
+<td><a href="/produkt/m3-sl20">SL20+</a> (4G)</td>
+<td>SM30 i SM25 mają 5G, US20 i SL20+ — 4G LTE + GPS do nawigacji w terenie.</td>
+</tr>
+<tr>
+<td><strong>Produkcja / kontrola jakości AI</strong></td>
+<td><a href="/produkt/m3-sm30">SM30</a> (AI 12 TOPS)</td>
+<td><a href="/produkt/m3-ul30">UL30</a> (AI 12 TOPS)</td>
+<td>NPU Hexagon do detekcji defektów, OCR i rozpoznawania obrazów na urządzeniu.</td>
+</tr>
+<tr>
+<td><strong>Praca w chłodniach / mroźniach</strong></td>
+<td><a href="/produkt/m3-ul30">UL30F</a> (-30°C)</td>
+<td><a href="/produkt/m3-ul20">UL20F</a> (-30°C)</td>
+<td>Wersja Freezer z podgrzewaniem skanera i ekranu. SM30 działa do -20°C.</td>
+</tr>
+<tr>
+<td><strong>Retail / handel detaliczny</strong></td>
+<td><a href="/produkt/m3-sl20">SL20+</a>, <a href="/produkt/m3-sm24">SM24</a></td>
+<td><a href="/produkt/m3-sl20k">SL20K</a></td>
+<td>SL20+ od 2 255 zł — najtańszy z IP67 i hot-swap. SM24 z większym ekranem 6".</td>
+</tr>
+<tr>
+<td><strong>Wózki widłowe</strong></td>
+<td><a href="/produkt/m3-us30">US30</a>, <a href="/produkt/m3-us20">US20</a></td>
+<td><a href="/produkt/m3-ul30">UL30</a></td>
+<td>Stacja wózkowa US20-VCRD-CU0 z zasilaniem 24-96V. US30 kompatybilny z akcesoriami US20.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Nie wiesz, który model wybrać? <a href="/kontakt">Skontaktuj się z TAKMA</a> — pomożemy dobrać terminal do Twoich procesów i budżetu. Oferujemy urządzenia demo do testów pilotażowych.</p>`,
+    },
+    {
+      id: 'podsumowanie',
+      heading: 'Podsumowanie — 5 kluczowych wniosków',
+      content: `<ol>
+<li><strong>SM30 to flagowiec z AI i 5G</strong> — jedyny terminal M3 Mobile z NPU 12 TOPS, IP68 i BLE Beaconing. Cena od 3 610 zł netto stawia go w bezpośredniej konkurencji z Zebra TC53e, przy niższej cenie i wbudowanym AI.</li>
+<li><strong>US30 zastępuje US20 dla nowych wdrożeń</strong> — Wi-Fi 6, Android 13, nowy skaner SE5800 i nowa klawiatura 38-klawiszowa, a do tego niższa cena (3 610 zł vs 4 080 zł). US20 pozostaje jedynym terminalem z klawiaturą M3 z 4G LTE.</li>
+<li><strong>SM24 to najlepszy stosunek ceny do możliwości</strong> — 8 GB RAM, 128 GB Flash, Android 16→18 i hot-swap baterii za 3 123 zł netto. Dwukrotnie więcej pamięci niż Zebra TC22/TC27 w podobnej cenie.</li>
+<li><strong>UL30 to najwytrzymalszy terminal M3</strong> — obudowa gun z upadkami z 3,0 m, 6000 tumble, IP67 i klawiatura do 53 klawiszy. Największy ekran 5" FHD w klasie terminali gun z klawiaturą. AI 12 TOPS i Wi-Fi 6E jak w SM30.</li>
+<li><strong>SL20+ od 2 255 zł to najtańsze wejście w enterprise</strong> — IP67, hot-swap, 4G LTE + GPS + eSIM i skaner Zebra SE4710. Idealny do retailu, hospitality i lekkiej logistyki, gdzie budżet na terminal nie przekracza 2 500 zł netto.</li>
+</ol>`,
+    },
+  ],
+  faq: [
+    {
+      question: 'Który terminal M3 Mobile jest najlepszy do magazynu?',
+      answer: 'Do standardowego magazynu z kompletacją zamówień najlepiej sprawdzi się <a href="/produkt/m3-us30">M3 US30</a> (od 3 610 zł) z klawiaturą fizyczną i Wi-Fi 6 lub <a href="/produkt/m3-sm24">M3 SM24</a> (od 3 123 zł) z ekranem dotykowym 6". Do magazynów wysokiego składowania wybierz <a href="/produkt/m3-sm30">M3 SM30</a> z SE5500 (zasięg do 15 m) lub <a href="/produkt/m3-ul30">M3 UL30</a> w obudowie gun z SE5800. Do chłodni — <a href="/produkt/m3-ul30">UL30F</a> (Freezer do -30°C).',
+    },
+    {
+      question: 'Który terminal M3 Mobile ma klawiaturę fizyczną?',
+      answer: 'Klawiaturę fizyczną mają 4 modele: <a href="/produkt/m3-us30">M3 US30</a> (30/38/42/51 klawiszy), <a href="/produkt/m3-us20">M3 US20</a> (30/42/51 klawiszy), <a href="/produkt/m3-sl20k">M3 SL20K</a> (30 klawiszy) i terminale gun — <a href="/produkt/m3-ul20">M3 UL20</a> oraz <a href="/produkt/m3-ul30">M3 UL30</a> (28/35/53 klawisze). Najtańszy z klawiaturą to SL20K od 2 424 zł netto.',
+    },
+    {
+      question: 'Który terminal M3 Mobile obsługuje 5G?',
+      answer: 'Łączność 5G Sub-6 GHz oferują dwa modele: <a href="/produkt/m3-sm30">M3 SM30</a> (wariant SM305E, od 4 047 zł netto) i <a href="/produkt/m3-sm25">M3 SM25</a> (wariant SM25X, premiera czerwiec 2026). Pozostałe modele obsługują 4G LTE (SM24X, US20X, SL20+, SL20K, UL20X) lub tylko Wi-Fi (US30, UL30).',
+    },
+    {
+      question: 'Ile kosztują terminale M3 Mobile?',
+      answer: 'Ceny terminali M3 Mobile zaczynają się od <strong>2 255 zł netto</strong> za <a href="/produkt/m3-sl20">M3 SL20+</a> (4/64 GB). Przegląd cen: SL20K — od 2 424 zł, SM24 — od 3 123 zł, US30 — od 3 610 zł, SM30 — od 3 610 zł, US20 — od 4 080 zł, UL20 — od 4 920 zł, UL30 — od 5 626 zł. SM25 — cena w zapytaniu (premiera czerwiec 2026). Wszystkie ceny netto, bez VAT. Dla zamówień flotowych przygotujemy rabat ilościowy — <a href="/kontakt">skontaktuj się z TAKMA</a>.',
+    },
+    {
+      question: 'Czy M3 Mobile ma serwis w Polsce?',
+      answer: 'Tak — <strong>TAKMA jest partnerem M3 Mobile w Polsce</strong> i zapewnia wsparcie serwisowe: diagnostykę, naprawy gwarancyjne (1 rok) i pogwarancyjne. Serwis autoryzowany M3 Mobile w Europie prowadzi M3 Mobile GmbH w Kriftel (Niemcy). Czas naprawy gwarancyjnej: zazwyczaj 10-15 dni roboczych. Opcjonalnie: kontrakty serwisowe M3 Speed Care (3 lub 5 lat). <a href="/kontakt">Skontaktuj się po szczegóły serwisu</a>.',
+    },
+    {
+      question: 'M3 Mobile vs Zebra — który producent wybrać?',
+      answer: 'Zależy od priorytetu. <strong>M3 Mobile wygrywa:</strong> ceną (SL20+ od 2 255 zł vs TC22 od 2 417 zł), pamięcią (SM24 ma 8/128 GB vs TC22 4/64 GB), hot-swap baterii (SM24, SM25, SM30 vs brak w TC22/TC27) i AI NPU w SM30/UL30. <strong>Zebra wygrywa:</strong> ekosystemem Mobility DNA (DataWedge, StageNow, LifeGuard), 10-letnim wsparciem LifeGuard, IP68 w TC53e/TC73e i największą bazą integratorów. Jeśli masz istniejącą flotę Zebra z DataWedge — zostań przy Zebrze. Dla nowych wdrożeń bez vendor lock-in M3 Mobile oferuje lepszy stosunek ceny do parametrów. Sprawdź naszą ofertę <a href="/terminale-m3-mobile">terminali M3 Mobile</a> i <a href="/terminale-mobilne">terminali Zebra</a>.',
+    },
+    {
+      question: 'Który terminal M3 Mobile wybrać do pracy w terenie?',
+      answer: 'Do pracy w terenie (logistyka, dostawy, serwis) potrzebujesz modelu z 4G LTE + GPS. Najlepsze opcje: <a href="/produkt/m3-sm30">M3 SM30</a> (5G + GPS, IP68, od 4 047 zł za wariant 5G) dla najwyższych wymagań, <a href="/produkt/m3-us20">M3 US20</a> (4G + GPS, klawiatura, od 4 690 zł za wariant X) do wpisywania danych w terenie, <a href="/produkt/m3-sl20">M3 SL20+</a> (4G + GPS + eSIM, od 2 255 zł) jako najtańsza opcja. Uwaga: US30 i UL30 nie mają modemu komórkowego.',
+    },
+    {
+      question: 'Czy akcesoria M3 są wymienne między modelami?',
+      answer: 'Częściowo. <strong>US20 i US30</strong> — pełna kompatybilność (stacje dokujące, ładowarki baterii, booty, baterie US20-BATT-E67). <strong>UL20 i UL30</strong> — akcesoria UL20 kompatybilne z UL30. <strong>Pozostałe modele</strong> (SM30, SM24, SM25, SL20+, SL20K) mają dedykowane akcesoria — stacje dokujące, baterie i booty nie są wymienne między liniami. Przed zakupem akcesoriów do floty mieszanej skontaktuj się z <a href="/kontakt">TAKMA</a> po potwierdzenie kompatybilności.',
+    },
+  ],
+  relatedLinks: [
+    { title: 'Terminale M3 Mobile — pełna oferta', href: '/terminale-m3-mobile' },
+    { title: 'M3 SM30 — flagowy terminal z AI', href: '/produkt/m3-sm30' },
+    { title: 'M3 SM25 — terminal 6" FHD+ z 5G', href: '/produkt/m3-sm25' },
+    { title: 'M3 SM24 — terminal 6" HD+ hot-swap', href: '/produkt/m3-sm24' },
+    { title: 'M3 US30 — terminal z klawiaturą, Wi-Fi 6', href: '/produkt/m3-us30' },
+    { title: 'M3 US20 — terminal z klawiaturą, 4G LTE', href: '/produkt/m3-us20' },
+    { title: 'M3 SL20+ — terminal dotykowy 5,5"', href: '/produkt/m3-sl20' },
+    { title: 'M3 SL20K — terminal z klawiaturą 30-key', href: '/produkt/m3-sl20k' },
+    { title: 'M3 UL20 — kolektor danych gun', href: '/produkt/m3-ul20' },
+    { title: 'M3 UL30 — terminal gun z AI 12 TOPS', href: '/produkt/m3-ul30' },
+    { title: 'Kontakt — zapytaj o wycenę', href: '/kontakt' },
+  ],
+},
 ]
 
 // Helper functions

@@ -54,6 +54,7 @@ const navigation: NavItem[] = [
       { name: 'Terminale Newland', href: '/terminale-newland' },
       { name: 'Terminale Honeywell', href: '/terminale-honeywell' },
       { name: 'Terminale Datalogic', href: '/terminale-datalogic' },
+      { name: 'Terminale M3 Mobile', href: '/terminale-m3-mobile' },
       { name: 'Akcesoria do terminali', href: '/akcesoria-do-terminali' },
       { name: '— Baterie i akumulatory', href: '/baterie-do-terminali' },
       { name: '— Stacje dokujące i ładowarki', href: '/stacje-ladowarki-terminali' },
