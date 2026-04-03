@@ -29,6 +29,11 @@ const SERVICE_INFO: Record<string, { title: string; subtitle: string; tooltip: s
     subtitle: 'Rozszerzona ochrona z naprawą i wsparciem technicznym',
     tooltip: 'Honeywell Service Plan — oficjalny program serwisowy Honeywell. Obejmuje naprawę uszkodzeń, wymianę urządzenia oraz wsparcie techniczne. Czas naprawy zależny od poziomu kontraktu.',
   },
+  'm3-mobile': {
+    title: 'M3 Speed Care — kontrakt serwisowy',
+    subtitle: 'Rozszerzona gwarancja z naprawą uszkodzeń przypadkowych',
+    tooltip: 'M3 Speed Care — oficjalny program serwisowy M3 Mobile. Pakiet 3-letni i 5-letni obejmuje naprawę uszkodzeń przypadkowych, gwarancję baterii 1 rok, czas naprawy 7 dni (vs 14 w Basic). Kontrakt trzeba wykupić w ciągu 45 dni od zakupu. Szczegóły: /poradnik/m3-speed-care-kontrakty-serwisowe',
+  },
   _default: {
     title: 'Kontrakt serwisowy',
     subtitle: 'Rozszerzona ochrona z naprawą urządzenia',
@@ -139,10 +144,16 @@ export default function ServicePlansBox({ plans, productSlug, productName, manuf
             return (
               <div key={plan.partNumber} className="bg-white rounded-lg border border-gray-200 p-3">
                 <p className="text-xs font-semibold text-blue-700 mb-0.5">{plan.duration}</p>
-                <p className={`text-lg font-bold text-gray-900 ${priceLoading ? 'animate-pulse' : ''}`}>
-                  {getLivePrice(plan).toLocaleString('pl-PL', { minimumFractionDigits: 2 })}
-                  <span className="text-xs font-normal text-gray-500 ml-1">zł netto</span>
-                </p>
+                {getLivePrice(plan) > 0 ? (
+                  <p className={`text-lg font-bold text-gray-900 ${priceLoading ? 'animate-pulse' : ''}`}>
+                    {getLivePrice(plan).toLocaleString('pl-PL', { minimumFractionDigits: 2 })}
+                    <span className="text-xs font-normal text-gray-500 ml-1">zł netto</span>
+                  </p>
+                ) : (
+                  <p className={`text-sm font-semibold text-gray-500 ${priceLoading ? 'animate-pulse' : ''}`}>
+                    Zapytaj o cenę
+                  </p>
+                )}
                 <p className="text-xs text-gray-400 mb-2.5">{plan.partNumber}</p>
                 <button
                   onClick={() => addItem({
@@ -158,7 +169,7 @@ export default function ServicePlansBox({ plans, productSlug, productName, manuf
                   }`}
                 >
                   {inRFQ ? <CheckIcon size={14} /> : <PlusIcon size={14} />}
-                  {inRFQ ? 'Dodano' : 'Dodaj'}
+                  {inRFQ ? 'Dodano' : getLivePrice(plan) > 0 ? 'Dodaj' : '+ Zapytaj'}
                 </button>
               </div>
             )
