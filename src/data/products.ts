@@ -53556,6 +53556,7 @@ M3 UL20 jest poprzednikiem [M3 UL30](/produkt/m3-ul30) — akcesoria UL20 (stacj
       { question: 'Co to są modele UL20 FX?', answer: 'UL20 FX to nowsza rewizja terminala UL20 z ulepszoną specyfikacją: skaner Zebra SE5800 (ultra daleki zasięg), USB-C, Bluetooth 5.3, Wi-Fi 6 (802.11ax), hot-swap baterii, 8 GB RAM / 128 GB Flash i podgrzewany ekran. Modele FX łączą sprawdzoną obudowę UL20 z nowocześniejszą elektroniką — dobry wybór, gdy UL30 nie jest jeszcze dostępny w potrzebnej konfiguracji.' },
       { question: 'Gdzie kupić M3 UL20 w Polsce?', answer: 'TAKMA jest partnerem M3 Mobile w Polsce. Oferujemy M3 UL20 z dostawą, doradztwo w doborze wariantu (klawiatura, skaner, łączność), konfigurację M3 Speedpack MDM i serwis gwarancyjny/pogwarancyjny. Pomagamy również w migracji z UL20 na nowszy UL30. Skontaktuj się — przygotujemy indywidualną wycenę.' },
       { question: 'Jak długo M3 UL20 będzie wspierany (aktualizacje Android)?', answer: 'M3 UL20 w wersji standard (UL20W/UL20F/UL20X) został wprowadzony z Androidem 9/10 — producent nie gwarantuje dalszych aktualizacji. Wersja UL20 FX (m3u20) z Android 10 może otrzymać ograniczone wsparcie. Jeśli potrzebujesz gwarantowanych aktualizacji Androida na 4+ lat, rozważ następcę [M3 UL30](/produkt/m3-ul30) z Androidem 14 i wsparciem do Android 18, lub [Zebra MC3400](/produkt/zebra-mc3400) z 10-letnim wsparciem LifeGuard.' },
+      { question: 'Jaka gwarancja na M3 UL20 i jaki kontrakt serwisowy?', answer: 'M3 UL20 objęty jest 1-roczną gwarancją bazową (Basic). Opcjonalnie: M3 Speed Care 3 lata (UL20-SPST-XB3) lub 5 lat (UL20-SPST-XB5) — ochrona przypadkowa, czas naprawy 7 dni, gwarancja baterii 1 rok. Kontrakt trzeba wykupić w ciągu 45 dni. Naprawy gwarancyjne realizuje M3Mobile GmbH (Niemcy), TAKMA koordynuje proces w Polsce. Szczegóły: [M3 Speed Care — przewodnik](/poradnik/m3-speed-care-kontrakty-serwisowe).' },
     ],
     availability: 'available' as const,
     isNew: false,
@@ -53653,6 +53654,10 @@ M3 UL20 jest poprzednikiem [M3 UL30](/produkt/m3-ul30) — akcesoria UL20 (stacj
     downloads: [
       { name: 'Specyfikacja techniczna M3 UL20 (EN)', type: 'datasheet' as const, url: '/downloads/m3-ul20-specification.pdf', size: '1,5 MB' },
       { name: 'Katalog akcesoriów M3 UL20 (EN)', type: 'manual' as const, url: '/downloads/m3-ul20-accessories-guide.pdf', size: '2,2 MB' },
+    ],
+    servicePlans: [
+      { name: 'M3 Speed Care — 3 lata', partNumber: 'UL20-SPST-XB3', duration: '3 lata', priceNetto: 0 },
+      { name: 'M3 Speed Care — 5 lat', partNumber: 'UL20-SPST-XB5', duration: '5 lat', priceNetto: 0 },
     ],
     createdAt: '2026-03-29',
   },
