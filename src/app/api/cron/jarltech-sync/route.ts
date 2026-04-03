@@ -26,6 +26,12 @@ export async function GET(request: NextRequest) {
     if (pnSpec && !allPNs.includes(pnSpec.value)) {
       allPNs.push(pnSpec.value)
     }
+    // From service plans
+    if (product.servicePlans) {
+      for (const sp of product.servicePlans) {
+        allPNs.push(sp.partNumber)
+      }
+    }
   }
 
   const uniquePNs = Array.from(new Set(allPNs))
