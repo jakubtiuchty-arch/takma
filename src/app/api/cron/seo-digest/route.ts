@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 
-export const maxDuration = 60
+export const maxDuration = 300
 
 const RSS_FEEDS = [
   { url: 'https://searchengineland.com/feed', source: 'searchengineland', name: 'Search Engine Land' },
@@ -18,6 +18,7 @@ interface RssItem {
   guid: string
   pubDate?: string
   author?: string
+  contentEncoded?: string
   description?: string
 }
 
@@ -36,19 +37,55 @@ function parseRssItems(xml: string): RssItem[] {
     const guid = get('guid') || link
     const pubDate = get('pubDate')
     const author = get('dc:creator') || get('author')
+    const contentEncoded = get('content:encoded')
     const description = get('description')
     if (title && link) {
-      items.push({ title, link, guid, pubDate: pubDate || undefined, author: author || undefined, description: description || undefined })
+      items.push({ title, link, guid, pubDate: pubDate || undefined, author: author || undefined, contentEncoded: contentEncoded || undefined, description: description || undefined })
     }
   }
   return items
 }
 
 function stripHtml(html: string): string {
-  return html.replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#039;/g, "'").replace(/\s+/g, ' ').trim()
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, '')
+    .replace(/<style[\s\S]*?<\/style>/gi, '')
+    .replace(/<nav[\s\S]*?<\/nav>/gi, '')
+    .replace(/<header[\s\S]*?<\/header>/gi, '')
+    .replace(/<footer[\s\S]*?<\/footer>/gi, '')
+    .replace(/<[^>]*>/g, '\n')
+    .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#039;/g, "'").replace(/&nbsp;/g, ' ')
+    .replace(/\n{3,}/g, '\n\n')
+    .replace(/[ \t]+/g, ' ')
+    .trim()
 }
 
-async function translateWithClaude(title: string, description: string): Promise<{ titlePl: string; summaryPl: string } | null> {
+async function fetchArticleContent(url: string): Promise<string | null> {
+  try {
+    const response = await fetch(url, {
+      signal: AbortSignal.timeout(15000),
+      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; TAKMA SEO Digest Bot/1.0)' },
+    })
+    if (!response.ok) return null
+    const html = await response.text()
+
+    // Try to extract article content from common selectors
+    const articleMatch = html.match(/<article[^>]*>([\s\S]*?)<\/article>/i)
+      || html.match(/<div[^>]*class="[^"]*(?:post-content|entry-content|article-content|blog-content|single-content|post-body|article-body)[^"]*"[^>]*>([\s\S]*?)<\/div>/i)
+      || html.match(/<div[^>]*class="[^"]*content[^"]*"[^>]*>([\s\S]*?)<\/div>/i)
+
+    const rawContent = articleMatch ? articleMatch[1] : html
+    const text = stripHtml(rawContent)
+
+    // Limit to ~4000 words to fit in Claude context
+    const words = text.split(/\s+/)
+    return words.slice(0, 4000).join(' ')
+  } catch {
+    return null
+  }
+}
+
+async function translateWithClaude(title: string, content: string): Promise<{ titlePl: string; summaryPl: string; contentPl: string } | null> {
   const apiKey = process.env.ANTHROPIC_API_KEY
   if (!apiKey) return null
 
@@ -62,32 +99,46 @@ async function translateWithClaude(title: string, description: string): Promise<
       },
       body: JSON.stringify({
         model: 'claude-haiku-4-5-20251001',
-        max_tokens: 500,
+        max_tokens: 8000,
         messages: [{
           role: 'user',
-          content: `Przetłumacz na polski tytuł artykułu SEO i napisz 2-zdaniowe streszczenie po polsku.
+          content: `Przetłumacz poniższy artykuł SEO na język polski. Zachowaj formatowanie — użyj akapitów, nagłówków (## dla H2, ### dla H3), list (- dla punktów). Zachowaj merytorykę i terminologię SEO.
 
-Tytuł: ${title}
-Opis: ${description.slice(0, 500)}
+TYTUŁ: ${title}
 
-Odpowiedz DOKŁADNIE w formacie:
-TYTUŁ: [tłumaczenie tytułu]
-STRESZCZENIE: [2 zdania po polsku]`
+TREŚĆ:
+${content.slice(0, 12000)}
+
+Odpowiedz w formacie:
+TYTUŁ_PL: [przetłumaczony tytuł]
+STRESZCZENIE_PL: [2-3 zdania streszczenia po polsku]
+TREŚĆ_PL:
+[pełne tłumaczenie artykułu po polsku z formatowaniem Markdown]`
         }]
       }),
-      signal: AbortSignal.timeout(15000),
+      signal: AbortSignal.timeout(60000),
     })
 
-    if (!response.ok) return null
+    if (!response.ok) {
+      console.warn(`[SEO Digest] Claude API error: ${response.status}`)
+      return null
+    }
     const data = await response.json()
     const text = data.content?.[0]?.text || ''
-    const titleMatch = text.match(/TYTUŁ:\s*(.+)/i)
-    const summaryMatch = text.match(/STRESZCZENIE:\s*([\s\S]+)/i)
-    if (titleMatch && summaryMatch) {
-      return { titlePl: titleMatch[1].trim(), summaryPl: summaryMatch[1].trim() }
+    const titleMatch = text.match(/TYTUŁ_PL:\s*(.+)/i)
+    const summaryMatch = text.match(/STRESZCZENIE_PL:\s*([\s\S]*?)(?=TREŚĆ_PL:)/i)
+    const contentMatch = text.match(/TREŚĆ_PL:\s*([\s\S]+)/i)
+
+    if (titleMatch && contentMatch) {
+      return {
+        titlePl: titleMatch[1].trim(),
+        summaryPl: summaryMatch ? summaryMatch[1].trim() : '',
+        contentPl: contentMatch[1].trim(),
+      }
     }
     return null
-  } catch {
+  } catch (err) {
+    console.warn('[SEO Digest] Claude translation error:', err)
     return null
   }
 }
@@ -113,16 +164,23 @@ export async function GET(request: NextRequest) {
         continue
       }
       const xml = await response.text()
-      const items = parseRssItems(xml).slice(0, 5) // max 5 per feed
+      const items = parseRssItems(xml).slice(0, 3) // max 3 per feed (full content = heavier)
 
       for (const item of items) {
-        // Check if already exists
         const exists = await prisma.seoDigestArticle.findUnique({ where: { guid: item.guid } })
         if (exists) continue
 
-        // Translate
-        const cleanDesc = item.description ? stripHtml(item.description).slice(0, 800) : ''
-        const translation = await translateWithClaude(item.title, cleanDesc)
+        // Fetch full article content
+        const fullContent = await fetchArticleContent(item.link)
+        // Fallback to RSS content:encoded or description
+        const contentForTranslation = fullContent
+          || (item.contentEncoded ? stripHtml(item.contentEncoded) : null)
+          || (item.description ? stripHtml(item.description) : '')
+
+        // Translate full article
+        const translation = contentForTranslation
+          ? await translateWithClaude(item.title, contentForTranslation)
+          : null
         if (translation) totalTranslated++
 
         await prisma.seoDigestArticle.create({
@@ -134,21 +192,23 @@ export async function GET(request: NextRequest) {
             originalUrl: item.link,
             titlePl: translation?.titlePl || null,
             summaryPl: translation?.summaryPl || null,
+            contentPl: translation?.contentPl || null,
             author: item.author || null,
             publishedAt: item.pubDate ? new Date(item.pubDate) : null,
           }
         })
         totalNew++
+
+        // Delay between articles (translation is heavy)
+        await new Promise(r => setTimeout(r, 2000))
       }
 
-      // Small delay between feeds
       await new Promise(r => setTimeout(r, 1000))
     } catch (err) {
       errors.push(`${feed.source}: ${err instanceof Error ? err.message : 'Unknown error'}`)
     }
   }
 
-  // Send email notification if new articles found
   if (totalNew > 0) {
     try {
       const { sendSeoDigestNotification } = await import('@/lib/email')

@@ -122,15 +122,13 @@ export default async function SeoDigestPage({ searchParams }: PageProps) {
                   )}
                 </div>
 
-                {/* Title (PL or original) */}
-                <a
-                  href={article.originalUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                {/* Title (PL or original) — opens in admin */}
+                <Link
+                  href={`/admin/seo-digest/${article.id}`}
                   className="text-sm font-semibold text-gray-900 hover:text-blue-600 transition-colors leading-snug block"
                 >
                   {article.titlePl || article.originalTitle}
-                </a>
+                </Link>
 
                 {/* Original title if translated */}
                 {article.titlePl && (

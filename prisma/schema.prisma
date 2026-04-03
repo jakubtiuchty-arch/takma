@@ -435,6 +435,7 @@ model SeoDigestArticle {
   originalUrl   String
   titlePl       String?  // Polish translation
   summaryPl     String?  // Polish summary
+  contentPl     String?  // Full article translated to Polish
   author        String?
   publishedAt   DateTime?
   fetchedAt     DateTime @default(now())
