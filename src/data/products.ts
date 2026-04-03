@@ -49956,7 +49956,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
       { question: 'Jakie akcesoria są dostępne do M3 SM24?', answer: 'Bateria standardowa 4000 mAh (SX2X-BATT-S40), stacja dokująca 2-gniazdowa (SX2X-2CRD-C00), stacja dokująca 2-gniazdowa z ładowarką baterii (SX2X-2CRD-CC0), zasilacz EU (SM2X-PWSP-2EU). Opcjonalnie: bateria rozszerzona 6000 mAh, boot ochronny (zwiększa odporność na upadki z 1,5 m do 1,8 m).' },
       { question: 'Jakie są alternatywy dla M3 SM24?', answer: '[Zebra TC22](/produkt/zebra-tc22) (od 2 417 zł) — tańsza, FHD+, IP68, LifeGuard 10 lat, Mobility DNA. [Zebra TC27](/produkt/zebra-tc27) (od 2 690 zł) — jak TC22 + 5G + GPS. [Honeywell CT32](/produkt/honeywell-ct32) (od 3 389 zł) — hot-swap, FlexRange do 15 m, 5G, Mobility Edge. [M3 SM25](/produkt/m3-sm25) — wyższy model z 5G, FHD+ i skanerem SE5500. SM24 wyróżnia się 8 GB RAM, hot-swap w niższej cenie niż CT32 i nowszym Androidem 16.' },
       { question: 'Gdzie kupić M3 SM24 w Polsce?', answer: 'M3 SM24 kupisz bezpośrednio w TAKMA — partner M3 Mobile w Polsce. Oferujemy doradztwo w doborze wariantu (SM24 W vs X), konfigurację M3 Speedpack, urządzenia demo do testów pilotażowych oraz serwis gwarancyjny i pogwarancyjny. Skontaktuj się telefonicznie lub przez formularz na stronie /kontakt.' },
-      { question: 'Jaka gwarancja na M3 SM24 i gdzie serwis?', answer: 'M3 SM24 objęty jest 1-roczną gwarancją producenta (M3 Mobile). TAKMA zapewnia wsparcie serwisowe w Polsce — diagnostykę, naprawy gwarancyjne i pogwarancyjne. Serwis autoryzowany M3 Mobile w Europie prowadzi M3 Mobile GmbH w Niemczech (Kriftel). Czas naprawy gwarancyjnej: zazwyczaj 10-15 dni roboczych.' },
+      { question: 'Jaka gwarancja na M3 SM24 i gdzie serwis?', answer: 'M3 SM24 objęty jest 1-roczną gwarancją bazową (Basic). Opcjonalnie: M3 Speed Care 3 lata (SM24-SPST-FB3) lub 5 lat (SM24-SPST-FB5) — ochrona przypadkowa, czas naprawy 7 dni, gwarancja baterii 1 rok. Kontrakt trzeba wykupić w ciągu 45 dni. Naprawy gwarancyjne realizuje M3Mobile GmbH (Niemcy), TAKMA koordynuje proces w Polsce. Szczegóły: [M3 Speed Care — przewodnik](/poradnik/m3-speed-care-kontrakty-serwisowe).' },
     ],
     availability: 'on-order' as const,
     isNew: true,
@@ -50048,6 +50048,10 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
     relatedProducts: ['m3-sm25', 'm3-sm30', 'zebra-tc22', 'zebra-tc27', 'honeywell-ct32'],
     downloads: [
       { name: 'Karta katalogowa M3 SM24 (EN)', type: 'datasheet' as const, url: '/downloads/m3-sm24-specification.pdf', size: '539 KB' },
+    ],
+    servicePlans: [
+      { name: 'M3 Speed Care — 3 lata', partNumber: 'SM24-SPST-FB3', duration: '3 lata', priceNetto: 0 },
+      { name: 'M3 Speed Care — 5 lat', partNumber: 'SM24-SPST-FB5', duration: '5 lat', priceNetto: 0 },
     ],
     createdAt: '2026-03-23',
   },
