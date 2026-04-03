@@ -219,3 +219,17 @@ export async function sendRepairSubmittedAdminEmail(data: {
   )
   return results
 }
+
+// SEO Digest daily notification
+export async function sendSeoDigestNotification(newCount: number, translatedCount: number) {
+  return sendEmail({
+    to: 'jakub.tiuchty@takma.com.pl',
+    subject: `SEO Digest: ${newCount} nowych artykułów`,
+    html: `<div style="font-family: sans-serif; max-width: 480px; margin: 0 auto; padding: 20px;">
+      <h2 style="color: #1e293b; margin-bottom: 16px;">📰 SEO Digest</h2>
+      <p style="color: #475569; font-size: 15px;">Zebrano <strong>${newCount}</strong> nowych artykułów z blogów SEO${translatedCount > 0 ? ` (${translatedCount} przetłumaczonych)` : ''}.</p>
+      <a href="https://www.takma.com.pl/admin/seo-digest" style="display: inline-block; margin-top: 16px; padding: 10px 20px; background: #2563eb; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 14px;">Przejdź do digest →</a>
+      <p style="color: #94a3b8; font-size: 12px; margin-top: 24px;">Automatyczne powiadomienie z takma.com.pl</p>
+    </div>`,
+  })
+}

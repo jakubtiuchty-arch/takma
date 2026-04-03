@@ -421,3 +421,26 @@ model JarltechStockCache {
   lastSync     DateTime @updatedAt
   createdAt    DateTime @default(now())
 }
+
+// ---------------------------------------------------------------------------
+// SEO Digest (daily RSS feed aggregation)
+// ---------------------------------------------------------------------------
+
+model SeoDigestArticle {
+  id            String   @id @default(cuid())
+  guid          String   @unique  // RSS guid or link as unique identifier
+  source        String   // e.g. "searchengineland", "semrush", "moz"
+  sourceName    String   // e.g. "Search Engine Land"
+  originalTitle String
+  originalUrl   String
+  titlePl       String?  // Polish translation
+  summaryPl     String?  // Polish summary
+  author        String?
+  publishedAt   DateTime?
+  fetchedAt     DateTime @default(now())
+  isRead        Boolean  @default(false)
+  isStarred     Boolean  @default(false)
+
+  @@index([source, fetchedAt])
+  @@index([isRead, fetchedAt])
+}
