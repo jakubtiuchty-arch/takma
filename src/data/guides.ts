@@ -11924,6 +11924,8 @@ export const guides: Guide[] = [
   publishedAt: '2026-04-03',
   updatedAt: '2026-04-03',
   readTime: '8 min',
+  heroImage: '/images/guides/m3-speed-care-kontrakt-serwisowy.jpg',
+  heroImageAlt: 'M3 Speed Care — kontrakty serwisowe terminali M3 Mobile SM24, US30, SM30 z ikoną tarczy ochronnej',
 
   sections: [
     {
