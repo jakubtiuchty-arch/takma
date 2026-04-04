@@ -2,7 +2,7 @@ import { prisma } from '@/lib/db'
 import Link from 'next/link'
 import clsx from 'clsx'
 import { InvoiceStatus } from '@/generated/prisma/client'
-import InvoiceActions from './InvoiceActions'
+import InvoiceActions, { SyncKsefButton } from './InvoiceActions'
 
 const statusLabels: Record<InvoiceStatus, string> = {
   DRAFT: 'Szkic',
@@ -60,8 +60,9 @@ export default async function InvoicesPage({ searchParams }: PageProps) {
       <div className="flex items-center justify-between mb-6">
         <div>
           <h1 className="text-2xl font-bold text-gray-900">Faktury</h1>
-          <p className="text-sm text-gray-500 mt-0.5">{totalAll} faktur łącznie</p>
+          <p className="text-sm text-gray-500 mt-0.5">{totalAll} faktur z KSeF</p>
         </div>
+        <SyncKsefButton />
       </div>
 
       {/* Filters */}

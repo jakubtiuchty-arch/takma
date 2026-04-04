@@ -6,7 +6,6 @@ import { OrderStatus } from '@/generated/prisma/client'
 import OrderStatusForm from './OrderStatusForm'
 import OrderTrackingForm from './OrderTrackingForm'
 import OrderNotesForm from './OrderNotesForm'
-import CreateInvoiceButton from './CreateInvoiceButton'
 
 const statusLabels: Record<OrderStatus, string> = {
   PENDING_PAYMENT: 'Oczekuje na płatność',
@@ -190,31 +189,23 @@ export default async function OrderDetailPage({ params }: PageProps) {
           </div>
 
           {/* Invoices */}
-          <div className="bg-white rounded-xl border border-gray-200 p-6">
-            <h2 className="text-lg font-semibold mb-4">Faktury</h2>
-            {order.invoices && order.invoices.length > 0 ? (
+          {order.invoices && order.invoices.length > 0 && (
+            <div className="bg-white rounded-xl border border-gray-200 p-6">
+              <h2 className="text-lg font-semibold mb-4">Faktury</h2>
               <div className="space-y-2">
                 {order.invoices.map((inv: any) => (
                   <div key={inv.id} className="flex items-center justify-between text-sm">
-                    <Link href={`/admin/faktury/${inv.id}`} className="text-blue-600 hover:underline font-medium">
+                    <a href={`/api/admin/invoices/${inv.id}/pdf`} target="_blank" className="text-blue-600 hover:underline font-medium">
                       {inv.invoiceNumber}
-                    </Link>
-                    <span className={clsx(
-                      'px-2 py-0.5 rounded-full text-[10px] font-semibold',
-                      inv.ksefStatus === 'ACCEPTED' ? 'bg-green-100 text-green-700' :
-                      inv.ksefStatus === 'SENT' ? 'bg-blue-100 text-blue-700' :
-                      inv.ksefStatus === 'ERROR' ? 'bg-red-100 text-red-700' :
-                      'bg-gray-100 text-gray-600'
-                    )}>
-                      {inv.ksefStatus === 'DRAFT' ? 'Szkic' : inv.ksefStatus === 'SENT' ? 'Wysłana' : inv.ksefStatus === 'ACCEPTED' ? 'KSeF ✓' : inv.ksefStatus}
+                    </a>
+                    <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-green-100 text-green-700">
+                      KSeF
                     </span>
                   </div>
                 ))}
               </div>
-            ) : (
-              <CreateInvoiceButton orderId={order.id} />
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
