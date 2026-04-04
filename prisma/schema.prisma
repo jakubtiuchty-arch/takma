@@ -65,6 +65,7 @@ model Customer {
   activatedAt       DateTime?
 
   orders            Order[]
+  invoices          Invoice[]
   quotes            Quote[]
   devices           Device[]
 
@@ -134,6 +135,7 @@ model Order {
   adminNotes             String?
 
   items                  OrderItem[]
+  invoices               Invoice[]
 
   createdAt              DateTime      @default(now())
   updatedAt              DateTime      @updatedAt
@@ -420,6 +422,77 @@ model JarltechStockCache {
   deliveryText String?
   lastSync     DateTime @updatedAt
   createdAt    DateTime @default(now())
+}
+
+// ---------------------------------------------------------------------------
+// KSeF Invoice
+// ---------------------------------------------------------------------------
+
+enum InvoiceStatus {
+  DRAFT
+  PENDING
+  SENT
+  ACCEPTED
+  REJECTED
+  ERROR
+}
+
+model Invoice {
+  id              String        @id @default(cuid())
+  invoiceNumber   String        @unique  // e.g. FV/2026/04/001
+
+  order           Order         @relation(fields: [orderId], references: [id])
+  orderId         String
+
+  customer        Customer      @relation(fields: [customerId], references: [id])
+  customerId      String
+
+  // Amounts (in grosze, like Order)
+  subtotalNetto   Int
+  vatAmount       Int
+  totalBrutto     Int
+  vatRate         Int           @default(23)
+
+  // Dates
+  issueDate       DateTime      @default(now())
+  saleDate        DateTime?
+  dueDate         DateTime?
+
+  // Seller info (cached)
+  sellerName      String        @default("TAKMA Tadeusz Tiuchty")
+  sellerNip       String        @default("9151004377")
+  sellerAddress   String        @default("ul. Poświęcka 1a, 51-128 Wrocław")
+
+  // Buyer info (cached from customer)
+  buyerName       String
+  buyerNip        String?
+  buyerAddress    String?
+
+  // KSeF integration
+  ksefStatus      InvoiceStatus @default(DRAFT)
+  ksefNumber      String?       // KSeF reference number (e.g. 1234567890-20260404-ABC123DEF456)
+  ksefSessionId   String?
+  ksefXml         String?       // Generated FA(3) XML content
+  ksefUpo         String?       // UPO (Urzędowe Potwierdzenie Odbioru) XML
+  ksefError       String?       // Error message from KSeF
+  ksefSentAt      DateTime?
+  ksefAcceptedAt  DateTime?
+
+  // Line items stored as JSON
+  items           Json          // Array of { name, quantity, unitPrice, totalNetto, vatRate, totalBrutto }
+
+  // PDF
+  pdfUrl          String?
+
+  notes           String?
+
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  @@index([orderId])
+  @@index([customerId])
+  @@index([ksefStatus])
+  @@index([issueDate])
 }
 
 // ---------------------------------------------------------------------------

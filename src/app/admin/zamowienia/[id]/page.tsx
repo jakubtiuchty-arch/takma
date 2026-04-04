@@ -6,6 +6,7 @@ import { OrderStatus } from '@/generated/prisma/client'
 import OrderStatusForm from './OrderStatusForm'
 import OrderTrackingForm from './OrderTrackingForm'
 import OrderNotesForm from './OrderNotesForm'
+import CreateInvoiceButton from './CreateInvoiceButton'
 
 const statusLabels: Record<OrderStatus, string> = {
   PENDING_PAYMENT: 'Oczekuje na płatność',
@@ -39,7 +40,7 @@ export default async function OrderDetailPage({ params }: PageProps) {
   const { id } = await params
   const order = await prisma.order.findUnique({
     where: { id },
-    include: { items: true, customer: true },
+    include: { items: true, customer: true, invoices: true },
   })
 
   if (!order) notFound()
@@ -186,6 +187,33 @@ export default async function OrderDetailPage({ params }: PageProps) {
               {order.shippedAt && <div><span className="text-gray-500">Wysłano:</span> {order.shippedAt.toLocaleString('pl-PL')}</div>}
               {order.deliveredAt && <div><span className="text-gray-500">Dostarczono:</span> {order.deliveredAt.toLocaleString('pl-PL')}</div>}
             </div>
+          </div>
+
+          {/* Invoices */}
+          <div className="bg-white rounded-xl border border-gray-200 p-6">
+            <h2 className="text-lg font-semibold mb-4">Faktury</h2>
+            {order.invoices && order.invoices.length > 0 ? (
+              <div className="space-y-2">
+                {order.invoices.map((inv: any) => (
+                  <div key={inv.id} className="flex items-center justify-between text-sm">
+                    <Link href={`/admin/faktury/${inv.id}`} className="text-blue-600 hover:underline font-medium">
+                      {inv.invoiceNumber}
+                    </Link>
+                    <span className={clsx(
+                      'px-2 py-0.5 rounded-full text-[10px] font-semibold',
+                      inv.ksefStatus === 'ACCEPTED' ? 'bg-green-100 text-green-700' :
+                      inv.ksefStatus === 'SENT' ? 'bg-blue-100 text-blue-700' :
+                      inv.ksefStatus === 'ERROR' ? 'bg-red-100 text-red-700' :
+                      'bg-gray-100 text-gray-600'
+                    )}>
+                      {inv.ksefStatus === 'DRAFT' ? 'Szkic' : inv.ksefStatus === 'SENT' ? 'Wysłana' : inv.ksefStatus === 'ACCEPTED' ? 'KSeF ✓' : inv.ksefStatus}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <CreateInvoiceButton orderId={order.id} />
+            )}
           </div>
         </div>
       </div>
