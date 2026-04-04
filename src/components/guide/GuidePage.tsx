@@ -317,7 +317,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
             </aside>
 
             {/* Main Content */}
-            <article className="flex-1 max-w-3xl min-w-0 overflow-hidden">
+            <article className="flex-1 max-w-3xl min-w-0 overflow-x-hidden">
               {/* Content Sections */}
               <div className="space-y-10">
                 {guide.sections.map(section => (
