@@ -54685,7 +54685,7 @@ export const brandCategories: BrandCategory[] = [
     manufacturerId: 'zebra',
     categoryId: 'drukarki-etykiet',
     name: 'Drukarki etykiet Zebra',
-    seoTitle: 'Drukarki etykiet Zebra — od 639 zł netto | Porównanie 2026',
+    seoTitle: 'Drukarki etykiet Zebra — kup od 639 zł netto | Sklep TAKMA',
     seoDescription: 'Drukarki etykiet Zebra: biurkowe, przemysłowe i mobilne od 639 zł netto. Porównanie modeli, TCO, FAQ. Autoryzowany partner Zebra z serwisem — TAKMA.',
     longDescription: 'Kompletna oferta drukarek etykiet Zebra Technologies w jednym miejscu — od najtańszej biurkowej ZD220 (od 639 zł netto) po flagową przemysłową ZT620 do druku 24/7. Zebra to światowy lider rynku drukarek etykiet z udziałem ponad 50% w segmencie enterprise. TAKMA jako autoryzowany Premier Solution Partner Zebra oferuje pełne wsparcie: dobór drukarki do zastosowania, konfigurację, integrację z systemami WMS/ERP oraz serwis gwarancyjny i pogwarancyjny (serwis-zebry.pl). Wszystkie drukarki Zebra obsługują protokół Link-OS do zdalnego zarządzania flotą urządzeń.',
     faq: [

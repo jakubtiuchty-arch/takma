@@ -570,6 +570,12 @@ export const guides: Guide[] = [
   ],
 
   relatedLinks: [
+    { title: 'Drukarki etykiet Zebra — pełna oferta', href: '/drukarki-etykiet-zebra' },
+    { title: 'Zebra ZD220d', href: '/produkt/zebra-zd220d' },
+    { title: 'Zebra ZD421t', href: '/produkt/zebra-zd421t' },
+    { title: 'Zebra ZT231', href: '/produkt/zebra-zt231' },
+    { title: 'Zebra ZT411', href: '/produkt/zebra-zt411' },
+    { title: 'Zebra ZT610', href: '/produkt/zebra-zt610' },
     { title: 'Drukarki etykiet — pełny katalog', href: '/drukarki-etykiet' },
     { title: 'Drukarki biurkowe', href: '/biurkowe-drukarki-etykiet' },
     { title: 'Drukarki przemysłowe', href: '/przemyslowe-drukarki-etykiet' },
@@ -1025,8 +1031,8 @@ export const guides: Guide[] = [
   slug: 'drukarki-etykiet-zebra-przewodnik',
   title: 'Drukarki etykiet Zebra — kompletny przewodnik po seriach ZD i ZT',
   seoTitle: 'Drukarki etykiet Zebra — porównanie ZD i ZT, ceny 2026',
-  seoDescription: 'Porównanie 17 drukarek etykiet Zebra: ZD220d od 621 zł, ZT231 od 2 551 zł, ZT610 600 dpi. Drzewo decyzyjne, ceny netto, TCO. Autoryzowany partner Zebra.',
-  excerpt: 'Kompletne zestawienie drukarek etykiet Zebra serii ZD (biurkowe) i ZT (przemysłowe) — od najtańszej ZD220d za 621 zł netto po flagową ZT620 drukującą etykiety 6-calowe. Porównanie parametrów, cen i zastosowań z perspektywy autoryzowanego partnera Zebra.',
+  seoDescription: 'Porównanie 17 drukarek etykiet Zebra: ZD220d od 649 zł, ZT231 od 2 551 zł, ZT610 600 dpi. Drzewo decyzyjne, ceny netto, TCO. Autoryzowany partner Zebra.',
+  excerpt: 'Kompletne zestawienie drukarek etykiet Zebra serii ZD (biurkowe) i ZT (przemysłowe) — od najtańszej ZD220d za 649 zł netto po flagową ZT620 drukującą etykiety 6-calowe. Porównanie parametrów, cen i zastosowań z perspektywy autoryzowanego partnera Zebra.',
   category: 'przewodnik',
   tags: ['zebra', 'zd-series', 'zt-series', 'drukarki-etykiet', 'drukarka-do-etykiet', 'porownanie', 'ranking', 'ZPL', 'TCO'],
   publishedAt: '2026-02-13',
@@ -1039,7 +1045,9 @@ export const guides: Guide[] = [
     {
       id: 'dlaczego-zebra',
       heading: 'Dlaczego Zebra Technologies? Pozycja lidera',
-      content: `<p>Zebra Technologies to globalny lider drukarek do etykiet z ponad 55% udziałem w segmencie przemysłowym i ~40% w biurkowym. W ofercie TAKMA dostępnych jest 17 modeli Zebra — od biurkowej <a href="/produkt/zebra-zd220d">ZD220d za 621 zł</a> po przemysłową <a href="/produkt/zebra-zt620">ZT620 za 12 417 zł</a>. Poniżej wyjaśniamy, dlaczego 85% naszych klientów wybiera Zebra.</p>
+      content: `<p><strong>Drukarka etykiet Zebra</strong> to przemysłowe lub biurkowe urządzenie do drukowania etykiet z kodami kreskowymi, produkowane przez Zebra Technologies — lidera światowego rynku z ponad 50% udziałem w segmencie enterprise.</p>
+
+<p>Zebra Technologies to globalny lider drukarek do etykiet z ponad 55% udziałem w segmencie przemysłowym i ~40% w biurkowym. W ofercie TAKMA dostępnych jest 17 modeli Zebra — od biurkowej <a href="/produkt/zebra-zd220d">ZD220d za 649 zł</a> po przemysłową <a href="/produkt/zebra-zt620">ZT620 za 12 417 zł</a>. Poniżej wyjaśniamy, dlaczego 85% naszych klientów wybiera Zebra.</p>
 
 <p>Zebra Technologies to bezsprzeczny lider rynku drukarek do etykiet i rozwiązań AutoID. Z ponad 55-procentowym udziałem w segmencie drukarek przemysłowych i blisko 40% w segmencie biurkowym, Zebra dominuje w branżach logistycznej, produkcyjnej, handlowej i healthcare na całym świecie. W Polsce drukarki Zebra są standardem w centrach dystrybucyjnych, liniach produkcyjnych i sieciach handlowych — od Amazona i Allegro po lokalne firmy kurierskie.</p>
 
@@ -1116,7 +1124,7 @@ export const guides: Guide[] = [
     </tr>
     <tr>
       <td><strong>Cena (od, netto)</strong></td>
-      <td>od 621 zł (ZD220d) do 3 780 zł (ZD621t 300dpi LCD Wi-Fi)</td>
+      <td>od 649 zł (ZD220d) do 3 780 zł (ZD621t 300dpi LCD Wi-Fi)</td>
       <td>od 2 081 zł (ZT111) do 17 869 zł (ZT610 600dpi)</td>
     </tr>
     <tr>
@@ -1136,7 +1144,7 @@ export const guides: Guide[] = [
 
 <h3>ZD220d / ZD220t — entry-level, najtańsze na rynku</h3>
 
-<p><a href="/produkt/zebra-zd220d"><strong>Zebra ZD220d</strong></a> to najtańsza drukarka Zebra w ofercie — <strong>od 621 zł netto</strong>. Następca legendarnej GC420d, która przez lata była najpopularniejszą drukarką etykiet na świecie. ZD220d drukuje termicznie (bez taśmy barwiącej) z prędkością 102 mm/s w rozdzielczości 203 dpi. Idealna do etykiet wysyłkowych, kurierskich i cenowych w małym e-commerce.</p>
+<p><a href="/produkt/zebra-zd220d"><strong>Zebra ZD220d</strong></a> to najtańsza drukarka Zebra w ofercie — <strong>od 649 zł netto</strong>. Następca legendarnej GC420d, która przez lata była najpopularniejszą drukarką etykiet na świecie. ZD220d drukuje termicznie (bez taśmy barwiącej) z prędkością 102 mm/s w rozdzielczości 203 dpi. Idealna do etykiet wysyłkowych, kurierskich i cenowych w małym e-commerce.</p>
 
 <p><a href="/produkt/zebra-zd220t"><strong>Zebra ZD220t</strong></a> (<strong>od 635 zł netto</strong>) dodaje druk termotransferowy — możliwość użycia taśmy barwiącej (ribbon) do trwałych etykiet produktowych. Różnica w cenie to zaledwie 14 zł, więc ZD220t jest lepszym wyborem, jeśli przewidujesz potrzebę trwałych etykiet w przyszłości.</p>
 
@@ -1234,7 +1242,7 @@ export const guides: Guide[] = [
     {
       id: 'porownanie-modeli',
       heading: 'Porównanie drukarek do etykiet Zebra — tabela zbiorcza 17 modeli',
-      content: `<p>W ofercie Zebra jest 17 modeli drukarek do etykiet: 10 biurkowych (seria ZD, od 621 zł) i 7 przemysłowych (seria ZT, od 2 081 zł). Najtańsza: ZD220d za 621 zł. Najszybsza: ZT411 — 356 mm/s. Najdokładniejsza: ZT610 — 600 dpi. Najszersza: ZT620 — 168 mm. Najpopularniejsza wg wdrożeń TAKMA: ZT231.</p>
+      content: `<p>W ofercie Zebra jest 17 modeli drukarek do etykiet: 10 biurkowych (seria ZD, od 649 zł) i 7 przemysłowych (seria ZT, od 2 081 zł). Najtańsza: ZD220d za 649 zł. Najszybsza: ZT411 — 356 mm/s. Najdokładniejsza: ZT610 — 600 dpi. Najszersza: ZT620 — 168 mm. Najpopularniejsza wg wdrożeń TAKMA: ZT231.</p>
 
 <p>Poniższa tabela zestawia wszystkie 17 modeli drukarek Zebra dostępnych na takma.com.pl — od najtańszej ZD220d po flagową ZT620. Ceny netto, parametry kluczowe i główne zastosowania w jednym miejscu.</p>
 
@@ -1254,7 +1262,7 @@ export const guides: Guide[] = [
       <td><a href="/produkt/zebra-zd220d">ZD220d</a></td>
       <td>DT</td>
       <td>102 mm/s, 203</td>
-      <td><strong>621 zł</strong></td>
+      <td><strong>649 zł</strong></td>
       <td>E-commerce, kurierskie</td>
     </tr>
     <tr>
@@ -1392,7 +1400,7 @@ export const guides: Guide[] = [
     {
       id: 'jak-wybrac',
       heading: 'Jak wybrać odpowiedni model Zebra?',
-      content: `<p>Jak wybrać drukarkę do etykiet Zebra? Zasada kciuka: do 1 000 etykiet dziennie — seria ZD biurkowa (od 621 zł). Powyżej 1 000 etykiet lub praca 24/7 — seria ZT przemysłowa (od 2 081 zł). Do etykiet szerszych niż 104 mm — ZT421 lub ZT620. Poniżej drzewo decyzyjne w 3 krokach.</p>
+      content: `<p>Jak wybrać drukarkę do etykiet Zebra? Zasada kciuka: do 1 000 etykiet dziennie — seria ZD biurkowa (od 649 zł). Powyżej 1 000 etykiet lub praca 24/7 — seria ZT przemysłowa (od 2 081 zł). Do etykiet szerszych niż 104 mm — ZT421 lub ZT620. Poniżej drzewo decyzyjne w 3 krokach.</p>
 
 <p>Poniższe drzewo decyzyjne pomoże Ci wybrać odpowiednią drukarkę do etykiet Zebra w 60 sekund. Odpowiedz na kilka pytań — a my wskażemy optymalny model.</p>
 
@@ -1451,7 +1459,7 @@ export const guides: Guide[] = [
     <tr>
       <td>Mały e-commerce, 20–100 paczek/dzień, etykiety InPost/DPD</td>
       <td><a href="/produkt/zebra-zd220d">ZD220d</a></td>
-      <td>621 zł</td>
+      <td>649 zł</td>
     </tr>
     <tr>
       <td>Apteka/gabinet, druk na USB, etykiety recepturowe</td>
@@ -1501,7 +1509,7 @@ export const guides: Guide[] = [
 <h3>Dlaczego ZPL to przewaga Zebra?</h3>
 
 <ul>
-  <li><strong>Uniwersalność</strong> — kod ZPL działa na każdej drukarce Zebra: od ZD220d za 621 zł po ZT620 za 12 417 zł. Zmiana sprzętu nie wymaga przepisywania szablonów.</li>
+  <li><strong>Uniwersalność</strong> — kod ZPL działa na każdej drukarce Zebra: od ZD220d za 649 zł po ZT620 za 12 417 zł. Zmiana sprzętu nie wymaga przepisywania szablonów.</li>
   <li><strong>Kompatybilność wsteczna</strong> — szablon ZPL napisany dla drukarki Zebra S4M z 2008 roku działa bez zmian na ZT231 w 2026 roku. Inwestycja w szablony nie traci wartości.</li>
   <li><strong>Prędkość renderowania</strong> — ZPL jest renderowany na drukarce, nie na komputerze. Drukarka otrzymuje kod tekstowy i sama generuje obraz — to szybsze niż wysyłanie bitmap (jak w drukarkach biurowych).</li>
   <li><strong>Integracja z systemami polskimi</strong> — BaseLinker, Subiekt GT/nexo, Comarch ERP, WMS-y polskich dostawców (Logifact, Qguar, PSI) — wszystkie wspierają ZPL natywnie.</li>
@@ -1584,7 +1592,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Ile kosztuje najtańsza drukarka Zebra?',
-      answer: 'Najtańsza drukarka Zebra to model ZD220d — od 621 zł netto (ok. 764 zł brutto). Jest to drukarka termiczna (direct thermal) bez taśmy barwiącej, z interfejsem USB, rozdzielczością 203 dpi i prędkością 102 mm/s. Idealna do etykiet kurierskich, wysyłkowych i cenowych w małym e-commerce. Wersja termotransferowa ZD220t kosztuje od 635 zł netto — zaledwie 14 zł więcej, a daje możliwość druku trwałych etykiet z ribbon.'
+      answer: 'Najtańsza drukarka Zebra to model ZD220d — od 649 zł netto (ok. 798 zł brutto). Jest to drukarka termiczna (direct thermal) bez taśmy barwiącej, z interfejsem USB, rozdzielczością 203 dpi i prędkością 102 mm/s. Idealna do etykiet kurierskich, wysyłkowych i cenowych w małym e-commerce. Wersja termotransferowa ZD220t kosztuje od 639 zł netto — zaledwie 10 zł taniej, ale daje możliwość druku trwałych etykiet z ribbon.'
     },
     {
       question: 'Czym różni się ZD421 od ZD621?',
@@ -1628,11 +1636,11 @@ export const guides: Guide[] = [
     },
     {
       question: 'Jaka drukarka do etykiet Zebra jest najlepsza?',
-      answer: 'Zależy od zastosowania. Dla e-commerce (do 200 paczek/dzień) — <a href="/produkt/zebra-zd220d">ZD220d od 621 zł</a>. Dla magazynu z WMS — <a href="/produkt/zebra-zd421t">ZD421t od 1 638 zł</a> (Ethernet, 300 dpi). Dla centrum dystrybucyjnego — <a href="/produkt/zebra-zt231">ZT231 od 2 551 zł</a> (najpopularniejszy model, 60% wdrożeń TAKMA). Dla farmacji z wymogiem 600 dpi — <a href="/produkt/zebra-zt610">ZT610 od 10 432 zł</a>. Dla etykiet paletowych 6" — <a href="/produkt/zebra-zt421">ZT421 od 9 416 zł</a>. Kluczowe pytanie: ile etykiet dziennie drukujesz? Do 1 000 — seria ZD. Powyżej — seria ZT.'
+      answer: 'Zależy od zastosowania. Dla e-commerce (do 200 paczek/dzień) — <a href="/produkt/zebra-zd220d">ZD220d od 649 zł</a>. Dla magazynu z WMS — <a href="/produkt/zebra-zd421t">ZD421t od 1 638 zł</a> (Ethernet, 300 dpi). Dla centrum dystrybucyjnego — <a href="/produkt/zebra-zt231">ZT231 od 2 551 zł</a> (najpopularniejszy model, 60% wdrożeń TAKMA). Dla farmacji z wymogiem 600 dpi — <a href="/produkt/zebra-zt610">ZT610 od 10 432 zł</a>. Dla etykiet paletowych 6" — <a href="/produkt/zebra-zt421">ZT421 od 9 416 zł</a>. Kluczowe pytanie: ile etykiet dziennie drukujesz? Do 1 000 — seria ZD. Powyżej — seria ZT.'
     },
     {
       question: 'Gdzie kupić drukarkę etykiet Zebra w Polsce?',
-      answer: 'Drukarki etykiet Zebra dostępne w TAKMA (takma.com.pl) — autoryzowany partner Zebra Technologies w Polsce. W ofercie: 17 modeli drukarek Zebra od 621 zł netto, oryginalne materiały eksploatacyjne (etykiety, taśmy), części zamienne (głowice od 123 zł) i serwis gwarancyjny przez <a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>. Doradztwo w doborze modelu bezpłatne. Dostawa z europejskiego magazynu Zebra w 3-5 dni roboczych.'
+      answer: 'Drukarki etykiet Zebra dostępne w TAKMA (takma.com.pl) — autoryzowany partner Zebra Technologies w Polsce. W ofercie: 17 modeli drukarek Zebra od 649 zł netto, oryginalne materiały eksploatacyjne (etykiety, taśmy), części zamienne (głowice od 123 zł) i serwis gwarancyjny przez <a href="https://www.serwis-zebry.pl">serwis-zebry.pl</a>. Doradztwo w doborze modelu bezpłatne. Dostawa z europejskiego magazynu Zebra w 3-5 dni roboczych.'
     }
   ],
 
