@@ -11516,6 +11516,8 @@ export const guides: Guide[] = [
   publishedAt: '2026-04-03',
   updatedAt: '2026-04-03',
   readTime: '12 min',
+  heroImage: '/images/guides/terminale-m3-porownanie.webp',
+  heroImageAlt: 'Terminale M3 Mobile — porównanie modeli SM24, US30, SM30, US20 na tle magazynu',
   sections: [
     {
       id: 'wprowadzenie',
