@@ -82,7 +82,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     openGraph: {
       title: title,
       description: smartTruncate(ogDescription, 200),
-      type: 'article',
+      type: 'product',
       locale: 'pl_PL',
       siteName: 'TAKMA',
       images: ogImage ? [{ url: ogImage, width: 1200, height: 630, alt: product.name }] : undefined,

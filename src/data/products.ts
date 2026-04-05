@@ -15429,6 +15429,7 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
   {
     id: 'zebra-ds8208',
     slug: 'zebra-ds8208',
+    sameAs: 'https://www.zebra.com/us/en/products/scanners/general-purpose-handheld-scanners/ds82-series/ds8208.html',
     name: 'Zebra DS8208',
     seoTitle: 'Skaner kodów Zebra DS8208 — 2 MP PRZM, EAS, zasięg 70 cm | od 1 027 zł',
     seoDescription: 'Zebra DS8208 — przewodowy skaner 2D premium z sensorem 2 MP PRZM, zasięg 70 cm, EAS dezaktywator, gwarancja 5 lat, IP52, OCR. Kasy, retail, apteki. Cena od 1 027 zł netto.',
@@ -15462,7 +15463,7 @@ Gwarancja producenta 60 miesięcy (5 lat). Zebra DNA (123Scan, DataCapture DNA) 
     ],
     tags: ['retail', 'magazyn'],
     availability: 'available',
-    isNew: true,
+    isNew: false,
     isBestseller: false,
     specifications: [
       { name: 'Typ skanera', value: 'Imager 2D (area imager PRZM) przewodowy' },
@@ -15554,6 +15555,7 @@ Gwarancja producenta 60 miesięcy (5 lat). Zebra DNA (123Scan, DataCapture DNA) 
       { name: 'Strona produktu Zebra DS8208 (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-handheld-scanners/ds82-series.html', size: 'Online' },
     ],
     createdAt: '2026-02-26',
+    updatedAt: '2026-04-05',
   },
   {
     id: 'zebra-li2208',
