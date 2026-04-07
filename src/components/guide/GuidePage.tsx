@@ -3,6 +3,7 @@ import { ChevronRightIcon } from '@/components/ui/Icons'
 import { Guide, guideCategoryLabels } from '@/data/guides'
 import { products } from '@/data/products'
 import GuideLivePrices from './GuideLivePrices'
+import AiSummary from './AiSummary'
 
 // Build model name → slug map
 const productNameMap: Record<string, string> = {}
@@ -282,8 +283,9 @@ export default function GuidePage({ guide }: GuidePageProps) {
           </>
         )}
 
-        {/* Table of Contents + Content */}
+        {/* AI Summary + Table of Contents + Content */}
         <div className="container-main py-8 lg:py-12">
+          <AiSummary slug={guide.slug} />
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
             {/* Sidebar — TOC */}
             <aside className="lg:w-72 flex-shrink-0">

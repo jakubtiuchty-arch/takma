@@ -2969,7 +2969,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     shortDescription: 'Zebra ZD230d — drukarka termiczna 4" direct thermal, następca ZD220d z szybszym drukiem (152 mm/s), opcją gilotyny, odklejaka, Ethernet, Bluetooth i Wi-Fi',
     seoTitle: 'Drukarka etykiet Zebra ZD230d — do paczek i kurierów | od 1 087 zł',
     seoDescription: 'Zebra ZD230d — DT 4" do etykiet kurierskich InPost, DPD, DHL i Allegro. Ethernet, 152 mm/s. ZD23042-D0EG00EZ od 1 087 zł netto.',
-    description: `Zebra ZD230d to najlepszy wybór dla firm e-commerce i sklepów detalicznych, które potrzebują szybkiej drukarki termicznej z opcją Ethernet i gilotyny w przystępnej cenie.
+    description: `Zebra ZD230d to biurkowa drukarka etykiet termicznych (direct thermal) 4" produkowana przez Zebra Technologies — następca popularnego modelu ZD220d z szybszym drukiem (152 mm/s), opcją Ethernet, Wi-Fi, gilotyny i odklejaka. Idealna do etykiet kurierskich InPost, DPD, DHL w e-commerce i logistyce.
 
 Zebra ZD230d to biurkowa drukarka etykiet pracująca wyłącznie w technologii druku termicznego bezpośredniego (direct thermal) — oficjalny następca popularnego modelu Zebra ZD220d. W porównaniu do poprzednika, ZD230d oferuje o 50% wyższą prędkość druku (152 mm/s vs 102 mm/s), znacznie bogatszy wybór interfejsów komunikacyjnych (USB, Ethernet, Bluetooth, Wi-Fi) oraz opcje gilotyny (cutter) i odklejaka (peeler/dispenser), które wcześniej nie były dostępne w tej klasie cenowej. Drukarka termiczna ZD230d nie wymaga taśmy barwiącej (ribbona) — obraz powstaje bezpośrednio na papierze termicznym pod wpływem ciepła z głowicy drukującej. Eliminacja ribbona oznacza niższy koszt eksploatacji na etykietę, prostszą obsługę i szybszą wymianę mediów. ZD230d to idealne rozwiązanie do druku etykiet kurierskich, wysyłkowych i cenowych w firmach e-commerce, punktach nadawczych paczek, sklepach detalicznych i małych magazynach.
 
@@ -3099,11 +3099,11 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'ZD230d czy ZD421d — którą drukarkę wybrać?',
-        answer: 'Zebra ZD230d (od 1 081 zł netto) i ZD421d (od 1 890 zł netto) to obie drukarki direct thermal 4" o prędkości 152 mm/s, ale różnią się funkcjonalnością i ceną. ZD421d oferuje: możliwość rozbudowy do 300 dpi, modułowość MCS (wymienne sloty łączności), większą pamięć (512 MB Flash / 256 MB RAM), platformę Link-OS do zdalnego zarządzania flotą, 5 diod LED i 3 przyciski. ZD230d ma prostszą konstrukcję, mniejszą pamięć (256 MB Flash / 128 MB SDRAM), brak modułowości MCS i brak Link-OS. Wybierz ZD230d, jeśli: drukujesz do 500 etykiet dziennie, nie potrzebujesz zdalnego zarządzania flotą, rozdzielczość 203 dpi jest wystarczająca i chcesz zaoszczędzić ok. 800 zł na urządzeniu. Wybierz ZD421d, jeśli: zarządzasz wieloma drukarkami w sieci, potrzebujesz 300 dpi do małych kodów 2D, planujesz rozbudowę łączności w przyszłości lub drukujesz ponad 500 etykiet dziennie.',
+        answer: 'ZD230d to tańsza, prostsza drukarka do 500 etykiet/dzień. ZD421d to droższa, ale z Link-OS, 300 dpi i modułowością MCS. Obie drukują 152 mm/s w 203 dpi. Wybierz ZD230d gdy: nie potrzebujesz zdalnego zarządzania flotą, rozdzielczość 203 dpi wystarcza i chcesz zaoszczędzić. Wybierz [ZD421d](/produkt/zebra-zd421d) gdy: zarządzasz wieloma drukarkami, potrzebujesz 300 dpi do małych kodów 2D lub planujesz rozbudowę łączności. Porównanie cen — w tabelach wariantów obu produktów.',
       },
       {
         question: 'Kiedy wybrać drukarkę z gilotyną (cutter), a kiedy z odklejakiem (peeler)?',
-        answer: 'Gilotyna (cutter) automatycznie odcina wydrukowaną etykietę od reszty rolki. Jest idealna, gdy: drukujesz przywieszki, bilety lub etykiety o zmiennej długości; etykiety nie mają być od razu naklejane (np. odkładasz je na stos); potrzebujesz czystego, równego cięcia krawędzi. Wariant ZD230d z gilotyną (ZD23042-D2EG00EZ) kosztuje 1 447,44 zł netto. Odklejak (peeler/dispenser) automatycznie oddziela etykietę od podłoża (backing paper) — etykieta wychodzi gotowa do naklejenia. Jest idealny, gdy: naklejasz etykiety ręcznie na paczki, butelki lub produkty; chcesz przyspieszyć proces naklejania (operator po prostu zdejmuje etykietę i przykleja); drukujesz etykiety o stałym formacie. Wariant ZD230d z odklejakiem (ZD23042-D1EG00EZ) kosztuje 1 082,74 zł netto. Do etykiet kurierskich InPost/DPD/DHL najczęściej wybierany jest odklejak.',
+        answer: 'Gilotyna automatycznie odcina etykietę — idealna do przywieszek i etykiet o zmiennej długości. Odklejak automatycznie oddziela etykietę od podłoża — idealna do ręcznego naklejania na paczki. Gilotyna (cutter) jest przydatna gdy: etykiety nie mają być od razu naklejane, potrzebujesz czystego cięcia krawędzi, drukujesz bilety. Odklejak (peeler/dispenser) jest przydatny gdy: naklejasz etykiety ręcznie na paczki, chcesz przyspieszyć proces pakowania. Do etykiet kurierskich InPost/DPD/DHL najczęściej wybierany jest odklejak. Aktualne ceny obu wariantów — w tabeli wariantów powyżej.',
       },
       {
         question: 'Jakie etykiety pasują do Zebra ZD230d?',
@@ -3115,7 +3115,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Jaki jest całkowity koszt posiadania (TCO) ZD230d w porównaniu do ZD220d i ZD421d?',
-        answer: 'Koszt zakupu ZD230d (wersja USB) wynosi 1 081,35 zł netto — jest wyższy niż ZD220d (620,95 zł), ale niższy niż ZD421d (1 890 zł). Koszty eksploatacji wszystkich trzech modeli są identyczne — jako drukarki direct thermal używają tych samych etykiet termicznych i tych samych głowic drukujących. Różnica w TCO wynika więc głównie z ceny zakupu i produktywności. Przy 200 etykietach dziennie ZD230d wydrukuje całą partię o ok. 10 minut szybciej niż ZD220d (dzięki prędkości 152 vs 102 mm/s). Jeśli potrzebujesz Ethernet lub Wi-Fi, ZD230d pozwala zaoszczędzić ok. 560–800 zł w porównaniu do ZD421d przy podobnej prędkości druku. Serwis i części zamienne (głowice, wałki, zasilacze) są takie same jak dla ZD220d — dostępne na serwis-zebry.pl.',
+        answer: 'ZD230d jest tańsza od ZD421d, ale droższa od ZD220d — przy identycznych kosztach eksploatacji (te same etykiety i głowice). Koszty eksploatacji wszystkich trzech modeli są identyczne — jako drukarki direct thermal używają tych samych etykiet termicznych i głowic drukujących. Różnica w TCO wynika z ceny zakupu i produktywności: ZD230d drukuje o 50% szybciej niż ZD220d (152 vs 102 mm/s). Przy 200 etykietach dziennie to ok. 10 minut oszczędności. Aktualne ceny porównaj w tabelach wariantów: [ZD220d](/produkt/zebra-zd220d), ZD230d (powyżej), [ZD421d](/produkt/zebra-zd421d). Serwis i części zamienne — dostępne na [serwis-zebry.pl](https://www.serwis-zebry.pl).',
       },
       {
         question: 'Czy ZD230d jest kompatybilna z akcesoriami i częściami zamiennymi ZD220d?',
@@ -3127,7 +3127,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Ile kosztuje Zebra ZD230d?',
-        answer: 'Cena Zebra ZD230d zaczyna się od 1 081,35 zł netto (1 330,06 zł brutto) za wariant bazowy z interfejsem USB (ZD23042-D0EG00EZ). Wariant z Ethernet (USB + LAN) kosztuje 1 081,35 zł netto, wariant z Bluetooth i Wi-Fi — 1 328,70 zł netto, a wariant z gilotyną — 1 447,44 zł netto. Ceny dotyczą nowych, oryginalnych drukarek z oficjalnej dystrybucji Zebra Technologies w Polsce. Aktualną dostępność i ceny można sprawdzić w tabeli wariantów powyżej lub kontaktując się z TAKMA. Cena nie obejmuje etykiet termicznych i kabla USB.',
+        answer: 'Ceny Zebra ZD230d zależą od wariantu — sprawdź aktualną cenę w tabeli wariantów powyżej (ceny aktualizowane na bieżąco z dystrybucji). Dostępne warianty: USB (najtańszy), USB + Ethernet, USB + Bluetooth + Wi-Fi, z gilotyną (cutter), z odklejakiem (peeler). Ceny netto, oryginalne drukarki z oficjalnej dystrybucji Zebra Technologies w Polsce.',
       },
       {
         question: 'Gdzie kupić Zebra ZD230d w Polsce?',
