@@ -541,7 +541,7 @@ export function buildAdminOrderNotificationEmail(data: {
 
         (data.customerNotes ? emailInfoAmber(`<strong>Uwagi klienta:</strong><br />${esc(data.customerNotes)}`) : '') +
 
-        emailButton('Otw&#243;rz w panelu', `https://www.takma.com.pl/admin/zamowienia/${data.orderNumber}`)
+        emailButton('Otwórz w panelu', `https://www.takma.com.pl/admin/zamowienia/${data.orderNumber}`)
       ),
   })
 }
@@ -773,7 +773,7 @@ export function buildAdminRfqEmail(data: {
         emailInfoCyan(customerRows.map(r => `<strong>${r.label}:</strong> ${r.value}`).join('<br />')) +
         emailTable(['Lp.', 'Produkt', 'Ilo&#347;&#263;', 'Uwagi'], rows) +
         (data.message ? emailInfoAmber(`<strong>Wiadomo&#347;&#263; klienta:</strong><br />${esc(data.message)}`) : '') +
-        emailButton('Otw&#243;rz zapytanie w panelu', `https://www.takma.com.pl/admin/oferty/${data.quoteId}`, '#0891b2')
+        emailButton('Otwórz zapytanie w panelu', `https://www.takma.com.pl/admin/oferty/${data.quoteId}`, '#0891b2')
       ),
   })
 }
