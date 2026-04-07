@@ -82,11 +82,17 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     openGraph: {
       title: title,
       description: smartTruncate(ogDescription, 200),
-      type: 'website',
+      type: 'article',
       locale: 'pl_PL',
       siteName: 'TAKMA',
       images: ogImage ? [{ url: ogImage, width: 1200, height: 630, alt: product.name }] : undefined,
       url: `https://www.takma.com.pl/produkt/${product.slug}`,
+    },
+    other: {
+      ...(product.priceFrom ? {
+        'product:price:amount': product.priceFrom.toFixed(2),
+        'product:price:currency': 'PLN',
+      } : {}),
     },
     twitter: {
       card: 'summary_large_image',

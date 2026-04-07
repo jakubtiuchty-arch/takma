@@ -2990,7 +2990,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     priceFrom: 1087.43,
     images: ['/images/products/zd230d_1.png'],
     imageDescriptions: [
-      'Drukarka etykiet Zebra ZD230d — widok z przodu, następca modelu ZD220d',
+      'Drukarka etykiet Zebra ZD230d — biurkowa drukarka termiczna 4" direct thermal z USB, Ethernet i opcją gilotyny, 152 mm/s, 203 dpi',
     ],
     tags: ['magazyn', 'logistyka', 'retail'],
     availability: 'available',
@@ -3139,7 +3139,19 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
       },
       {
         question: 'Jakie są alternatywy dla Zebra ZD230d?',
-        answer: 'Alternatywami są: Zebra ZD421d (wyższa klasa z LCD), Honeywell PC42d, Brother TD-4520DN, TSC DA220. W ramach Zebra — ZD230d oferuje tę samą funkcjonalność w niższej cenie.',
+        answer: 'Alternatywami są: [Zebra ZD421d](/produkt/zebra-zd421d) (wyższa klasa z LCD i Link-OS), [Honeywell PC45d](/produkt/honeywell-pc45d) (3,5" LCD, Wi-Fi 6), Brother TD-4520DN, TSC DA220. W ramach Zebra — ZD230d oferuje tę samą prędkość (152 mm/s) co ZD421d w niższej cenie.',
+      },
+      {
+        question: 'Jak podłączyć Zebra ZD230d do BaseLinker / Allegro / WooCommerce?',
+        answer: 'ZD230d drukuje etykiety kurierskie z BaseLinker, Allegro, Shoper i WooCommerce przez sterownik Zebra ZDesigner (dostępny na serwis-zebry.pl/sterowniki). Instalacja: 1) Zainstaluj sterownik ZDesigner, 2) Podłącz drukarkę USB/Ethernet, 3) W BaseLinker → Ustawienia → Drukarki → wybierz ZD230d, format ZPL. Gotowe — etykiety InPost/DPD/DHL drukują się jednym kliknięciem. Szczegóły: [Konfiguracja drukarki Zebra z BaseLinker](/poradnik/drukarka-zebra-baselinker-konfiguracja).',
+      },
+      {
+        question: 'Zebra ZD230d vs Honeywell PC42d — porównanie',
+        answer: 'ZD230d (152 mm/s, USB/Ethernet/Wi-Fi, gilotyna/odklejak) vs Honeywell PC42d (127 mm/s, USB, brak gilotyny). ZD230d jest szybsza o 20%, ma więcej opcji interfejsów i akcesoriów. PC42d jest tańsza w podstawowej wersji USB. ZD230d wygrywa elastycznością konfiguracji i kompatybilnością z ekosystemem Zebra (ZPL II, PrintDNA, serwis-zebry.pl). Obie mają 203 dpi i obsługują etykiety 4".',
+      },
+      {
+        question: 'ZD230d a ZD421t — kiedy wybrać termotransfer?',
+        answer: 'ZD230d to drukarka wyłącznie termiczna (direct thermal) — drukuje na papierze termicznym bez taśmy. [ZD421t](/produkt/zebra-zd421t) to drukarka termotransferowa — drukuje z taśmą (ribbon) na papierze zwykłym, foliach i syntetykach. Wybierz ZD230d gdy: drukujesz etykiety kurierskie, cenówki, paragony (trwałość 6-12 mies.). Wybierz ZD421t gdy: potrzebujesz etykiet trwałych latami (magazynowe, produktowe, chemiczne, outdoor).',
       },
     ],
     comparison: {
