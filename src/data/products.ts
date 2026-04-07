@@ -15437,6 +15437,7 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
       { name: 'Strona produktu Zebra DS2208 (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-handheld-scanners/ds2200-series.html', size: 'Online' },
     ],
     createdAt: '2022-11-05',
+    updatedAt: '2026-04-07',
   },
   {
     id: 'zebra-ds8208',
