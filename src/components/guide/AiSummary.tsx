@@ -5,6 +5,7 @@ import { useState } from 'react'
 export default function AiSummary({ slug }: { slug: string }) {
   const [open, setOpen] = useState(false)
   const [summary, setSummary] = useState<string | null>(null)
+  const [provider, setProvider] = useState<string>('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
 
@@ -27,6 +28,7 @@ export default function AiSummary({ slug }: { slug: string }) {
       const data = await res.json()
       if (data.summary) {
         setSummary(data.summary)
+        setProvider(data.provider || 'AI')
       } else {
         setError(true)
       }
@@ -69,7 +71,7 @@ export default function AiSummary({ slug }: { slug: string }) {
           ) : summary ? (
             <>
               <p className="text-[15px] text-gray-800 leading-relaxed">{summary}</p>
-              <p className="text-[11px] text-gray-400 mt-3">Wygenerowane przez AI (Claude). Podsumowanie ma charakter informacyjny.</p>
+              <p className="text-[11px] text-gray-400 mt-3">Wygenerowane przez AI ({provider}). Podsumowanie ma charakter informacyjny.</p>
             </>
           ) : null}
         </div>
