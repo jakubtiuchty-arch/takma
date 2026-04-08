@@ -264,7 +264,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
 
           {/* Main content */}
           <div className="flex-1 min-w-0">
-            <ProductGrid products={allProducts} variant="grid" columns={3} />
+            <ProductGrid products={allProducts} variant="grid" columns={3} maxInitial={48} />
 
             {/* Rich SEO content */}
             {content && (

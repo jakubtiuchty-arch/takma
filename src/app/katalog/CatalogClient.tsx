@@ -398,7 +398,7 @@ function CatalogContent() {
               </Link>
             </div>
           ) : (
-            <ProductGrid products={filteredProducts} variant={viewMode} columns={3} />
+            <ProductGrid products={filteredProducts} variant={viewMode} columns={3} maxInitial={48} />
           )}
         </div>
       </div>

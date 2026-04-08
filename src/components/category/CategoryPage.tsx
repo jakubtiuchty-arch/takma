@@ -218,7 +218,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
 
           {/* Main content */}
           <div className="flex-1 min-w-0">
-            <ProductGrid products={products} variant="grid" columns={3} />
+            <ProductGrid products={products} variant="grid" columns={3} maxInitial={48} />
 
             {/* Rich content sections */}
             {content && (

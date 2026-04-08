@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { Product } from '@/data/products'
 import ProductCard from './ProductCard'
 import clsx from 'clsx'
@@ -9,14 +10,24 @@ interface ProductGridProps {
   variant?: 'grid' | 'list' | 'compact'
   columns?: 2 | 3 | 4
   showDualButtons?: boolean
+  /** Max products to show initially (rest behind "Pokaż więcej"). Reduces page size for SEO. */
+  maxInitial?: number
 }
+
+const LOAD_MORE_STEP = 48
 
 export default function ProductGrid({
   products,
   variant = 'grid',
   columns = 4,
   showDualButtons = false,
+  maxInitial,
 }: ProductGridProps) {
+  const limit = maxInitial || products.length
+  const [visible, setVisible] = useState(limit)
+  const displayedProducts = products.slice(0, visible)
+  const hasMore = visible < products.length
+
   if (products.length === 0) {
     return (
       <div className="text-center py-16">
@@ -33,23 +44,42 @@ export default function ProductGrid({
     )
   }
 
+  const loadMore = () => setVisible(prev => Math.min(prev + LOAD_MORE_STEP, products.length))
+
+  const showMoreButton = hasMore && (
+    <div className="flex justify-center mt-8">
+      <button
+        onClick={loadMore}
+        className="px-6 py-3 text-sm font-semibold text-primary-700 bg-primary-50 rounded-xl hover:bg-primary-100 transition-colors"
+      >
+        Pokaż więcej ({products.length - visible} pozostałych)
+      </button>
+    </div>
+  )
+
   if (variant === 'list') {
     return (
-      <div className="space-y-4">
-        {products.map((product) => (
-          <ProductCard key={product.id} product={product} variant="list" />
-        ))}
-      </div>
+      <>
+        <div className="space-y-4">
+          {displayedProducts.map((product) => (
+            <ProductCard key={product.id} product={product} variant="list" />
+          ))}
+        </div>
+        {showMoreButton}
+      </>
     )
   }
 
   if (variant === 'compact') {
     return (
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
-        {products.map((product) => (
-          <ProductCard key={product.id} product={product} variant="compact" />
-        ))}
-      </div>
+      <>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+          {displayedProducts.map((product) => (
+            <ProductCard key={product.id} product={product} variant="compact" />
+          ))}
+        </div>
+        {showMoreButton}
+      </>
     )
   }
 
@@ -60,10 +90,13 @@ export default function ProductGrid({
   }
 
   return (
-    <div className={clsx('grid gap-4 sm:gap-6', gridCols[columns])}>
-      {products.map((product) => (
-        <ProductCard key={product.id} product={product} variant="grid" showDualButtons={showDualButtons} />
-      ))}
-    </div>
+    <>
+      <div className={clsx('grid gap-4 sm:gap-6', gridCols[columns])}>
+        {displayedProducts.map((product) => (
+          <ProductCard key={product.id} product={product} variant="grid" showDualButtons={showDualButtons} />
+        ))}
+      </div>
+      {showMoreButton}
+    </>
   )
 }
