@@ -700,7 +700,7 @@ export const subcategories: Subcategory[] = [
     name: 'Skanery pierścieniowe',
     parentCategoryId: 'skanery-kodow-kreskowych',
     description: 'Skanery pierścieniowe (ring scanners) — noszone na palcu, obie ręce wolne do kompletacji. Zebra, M3 Mobile, Unitech, Honeywell, ProGlove.',
-    seoTitle: 'Skanery pierścieniowe (ring scanners) — hands-free do magazynu | TAKMA',
+    seoTitle: 'Skanery pierścieniowe (ring scanners) — hands-free do magazynu ',
     seoDescription: 'Skanery pierścieniowe Zebra RS5100, ProGlove MARK, Honeywell 8680i, M3 Ring Scanner, Unitech MS652. Hands-free skanowanie w magazynie. Ceny netto, doradztwo. TAKMA.',
     longDescription: 'Skanery pierścieniowe (ring scanners, wearable scanners) to miniaturowe czytniki kodów kreskowych noszone na palcu lub na rękawicy — obie ręce operatora pozostają wolne do podnoszenia, odkładania i pakowania towarów. Kluczowe zastosowanie: kompletacja zamówień (order picking), sortowanie paczek, inwentaryzacja, cross-docking. W ofercie TAKMA: Zebra RS5100 (1D/2D, Bluetooth, hot-swap, IP65, od ~2 500 zł), ProGlove MARK (zintegrowany z rękawicą, gateway BLE, od ~1 800 zł), Honeywell 8680i (wearable mini-mobile, Android, od ~3 500 zł), M3 Mobile Ring Scanner (kompatybilny z SM30/US30) i Unitech MS652 (kompaktowy ring BT, od ~1 200 zł). Skanery pierścieniowe zwiększają produktywność kompletacji o 20-30% w porównaniu z tradycyjnymi skanerami ręcznymi — eliminują cykl „podnieś skaner → zeskanuj → odłóż skaner". TAKMA oferuje doradztwo w doborze skanera pierścieniowego do istniejącej infrastruktury (terminale, WMS, Wi-Fi).',
     icon: 'scan',
@@ -891,7 +891,7 @@ const desktopPrinters: Product[] = [
     slug: 'zebra-zd421t',
     name: 'Zebra ZD421t',
     shortDescription: 'Zebra ZD421t — drukarka termotransferowa biurkowa 4", następca GK420t',
-    seoTitle: 'Zebra ZD421t — drukarka etykiet termotransferowa | od 1 649 zł | TAKMA',
+    seoTitle: 'Zebra ZD421t — drukarka etykiet termotransferowa | od 1 649 zł ',
     seoDescription: 'Zebra ZD421t — biurkowa drukarka etykiet termotransferowa 4", następca GK420t. Ribbon do 300 m, 203/300 dpi, 152 mm/s, Wi-Fi, MCS. Od 1 649 zł netto. TAKMA.',
     description: `Zebra ZD421t to biurkowa drukarka etykiet termotransferowa 4 cale — następca popularnej GK420t. Drukuje z taśmą barwiącą (ribbonem), co zapewnia trwałe wydruki odporne na UV, wilgoć i chemikalia. 203/300 dpi, do 152 mm/s. Modularna konstrukcja MCS. Idealna do logistyki, produkcji, etykiet produktowych i oznaczeń trwałych.
 
@@ -1227,7 +1227,7 @@ Szukasz tańszej wersji bez ribbona? Sprawdź [Zebra ZD421d](/produkt/zebra-zd42
     slug: 'zebra-zd421d',
     name: 'Zebra ZD421d',
     shortDescription: 'Zebra ZD421d — biurkowa drukarka termiczna 4" direct thermal, następca GK420d. 203/300 dpi, do 152 mm/s, modułowa architektura MCS',
-    seoTitle: 'Zebra ZD421d — drukarka etykiet termiczna 4" | od 1 472 zł | TAKMA',
+    seoTitle: 'Zebra ZD421d — drukarka etykiet termiczna 4" | od 1 472 zł ',
     seoDescription: 'Zebra ZD421d — biurkowa drukarka etykiet termiczna 4", następca GK420d. Bez ribbona, 203/300 dpi, 152 mm/s, Wi-Fi, MCS. Od 1 472 zł netto. TAKMA — autoryzowany partner Zebra.',
     description: `Zebra ZD421d to biurkowa drukarka etykiet termiczna (direct thermal) 4 cale — następca popularnej GK420d. Nie wymaga taśmy barwiącej (ribbona), drukuje do 152 mm/s w rozdzielczości 203 lub 300 dpi. Modularna konstrukcja MCS pozwala na rozbudowę o Wi-Fi, Bluetooth i Ethernet. Idealna do e-commerce, etykiet kurierskich i magazynów przy wolumenie do 3 000 etykiet/dzień.
 
@@ -1911,7 +1911,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd621d',
     name: 'Zebra ZD621d',
     shortDescription: 'Zebra ZD621d — najszybsza biurkowa drukarka termiczna Zebra (203 mm/s) z opcjonalnym LCD 4,3", drukiem linerless i modularnym MCS, następca ZD620d i GX420d',
-    seoTitle: 'Zebra ZD621d — drukarka termiczna DT, LCD, linerless | TAKMA',
+    seoTitle: 'Zebra ZD621d — drukarka termiczna DT, LCD, linerless ',
     seoDescription: 'Zebra ZD621d — drukarka termiczna DT 4" dla logistyki i retail. LCD 4,3", linerless, 300 dpi. Drukarka etykiet Zebra ZD621d, drukarka Zebra ZD621d, ZD621d Zebra, drukarka do etykiet wysyłkowych, drukarka etykiet do magazynu. Od 1 943 zł netto. PN: ZD6A042-D0EF00EZ, ZD6A042-D0EL02EZ, ZD6A142-D0EF00EZ.',
     description: `Zebra ZD621d to najlepszy wybór dla firm e-commerce i centrów logistycznych drukujących ponad 500 etykiet dziennie, które potrzebują najszybszej biurkowej drukarki termicznej z kolorowym LCD i obsługą linerless.
 
@@ -26384,7 +26384,7 @@ Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = min
     slug: 'zebra-tc701',
     name: 'Zebra TC701',
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc701.html',
-    seoTitle: 'Zebra TC701 — terminal ultra-rugged z RFID i AI | od 4 017 zł | TAKMA',
+    seoTitle: 'Zebra TC701 — terminal ultra-rugged z RFID i AI | od 4 017 zł ',
     seoDescription: 'Zebra TC701 — ultra-rugged terminal z RFID UHF, AI NPU i ekranem AMOLED 1500 nit. Upadki z 3,66 m, IP68. 12 konfiguracji od 4 017 zł netto.',
     shortDescription: 'Zebra TC701 — ultra-wytrzymały terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6" AMOLED 1500 nit, następca TC72/TC77',
     description: `Dla kogo? Zebra TC701 to ultra-wytrzymały (ultra-rugged) terminal mobilny nowej generacji, zaprojektowany jako następca TC72/TC77 dla firm pracujących w najtrudniejszych warunkach — chłodnie, doki załadunkowe, magazyny mrożone, porty, kopalnie, budowy i praca outdoorowa w ekstremalnych temperaturach od -20°C do +50°C.
@@ -41807,7 +41807,7 @@ const zebraTablets: Product[] = [
     id: 'zebra-et401',
     slug: 'zebra-et401',
     name: 'Zebra ET401',
-    seoTitle: 'Zebra ET401 — tablet przemysłowy | 11 wariantów od 2 410 zł | TAKMA',
+    seoTitle: 'Zebra ET401 — tablet przemysłowy | 11 wariantów od 2 410 zł ',
     seoDescription: 'Zebra ET401 — tablet przemysłowy 8″ i 10″ z Android 15. 11 konfiguracji Wi-Fi i 5G od 2 410 zł netto. Sprawdź warianty, ceny i zamów w TAKMA.',
     shortDescription: 'Zebra ET401 — tablet przemysłowy z czytnikiem kodów, Wi-Fi 7, IP68, opcjonalny RFID UHF. Tablet do magazynu, retail i produkcji. Android 15→18',
     description: `Dla kogo? Tablet Zebra ET401 to najnowsza generacja tabletu przemysłowego serii ET, zaprojektowana dla firm szukających wydajnego i wytrzymałego urządzenia do magazynu, produkcji, logistyki, retail, healthcare i pracy w terenie — z najdłuższym wsparciem Android na rynku (do A18, ~9 lat aktualizacji bezpieczeństwa).
@@ -50525,7 +50525,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych. TAKMA
       'M3 SL20+ — widok z lewego boku, przyciski skanowania i głośności',
       'M3 SL20+ — widok z prawego boku, przyciski skanowania i power',
     ],
-    seoTitle: 'M3 SL20 (SL20 Plus) — terminal mobilny hot-swap, IP67 | TAKMA',
+    seoTitle: 'M3 SL20 (SL20 Plus) — terminal mobilny hot-swap, IP67 ',
     seoDescription: 'M3 SL20 (SL20+) — terminal mobilny 5,5" z hot-swap 5000 mAh, skanerem SE4710, IP67, eSIM. Terminal M3 SL20 od 2 255 zł netto. M3 Mobile SL20 Plus — warianty 4/64 i 8/128 GB. PN: SL204C-T2CHSE-HF-01, SL204C-T2CHSE-HF-03.',
     variantAttributeTooltips: {
       'RAM / Flash': '4/64 GB — do podstawowych zadań WMS, inwentaryzacji i skanowania.\n\n8/128 GB — do wymagających aplikacji z dużą ilością danych, zdjęć i map.',
@@ -51741,7 +51741,7 @@ Wymiary kompaktowej obudowy to 70,7 × 33 × 22,1 mm. Bogaty ekosystem akcesori�
       'M3 WR15 — widok z boku, moduł Bluetooth 5.3, magnetyczne złącze baterii',
       'M3 WR15 — skaner pierścieniowy IP65, wzmocniona obudowa, okno skanera 2D',
     ],
-    seoTitle: 'M3 WR15 — skaner kodów pierścieniowy (ring scanner) BT 5.3 | TAKMA',
+    seoTitle: 'M3 WR15 — skaner kodów pierścieniowy (ring scanner) BT 5.3 ',
     seoDescription: 'M3 WR15 — przemysłowy skaner pierścieniowy (ring scanner) z BT 5.3 Classic, IP65, 29g, NFC pairing. Skanery SE4107/SE5500. Hands-free do magazynu. TAKMA.',
     variantAttributeTooltips: {
       'Skaner': 'SE4107 — standardowy imager 2D (SE4107/E4770) do kodów 1D/2D z bliskiej i średniej odległości. Uniwersalny wybór do większości zastosowań magazynowych.\n\nSE5500 Smart Focus — skaner dalekiego zasięgu do 15 m, idealny do magazynów wysokiego składowania i regałów paletowych.',
@@ -51870,7 +51870,7 @@ WR10 współdzieli akcesoria z [WR15](/produkt/m3-wr15): rękawice, triggery, ł
       'M3 WR10 — zamontowany na rękawicy roboczej, hands-free skanowanie kodów kreskowych',
       'M3 WR10 — widok z boku, magnetyczne złącze baterii, okno skanera 2D',
     ],
-    seoTitle: 'M3 WR10 — skaner pierścieniowy BLE 5.2, IP65 | TAKMA',
+    seoTitle: 'M3 WR10 — skaner pierścieniowy BLE 5.2, IP65 ',
     seoDescription: 'M3 WR10 — przemysłowy skaner pierścieniowy (ring scanner) z BT 5.2 BLE, IP65, 29g, NFC pairing. Skanery SE4107/SE5500. Hands-free do magazynu. TAKMA.',
     variantAttributeTooltips: {
       'Skaner': 'SE4107 — standardowy imager 2D do kodów 1D/2D z bliskiej i średniej odległości.\n\nSE5500 Smart Focus — skaner dalekiego zasięgu do 15 m, magazyny wysokiego składowania.',
@@ -54012,7 +54012,7 @@ M3 UL20 jest poprzednikiem [M3 UL30](/produkt/m3-ul30) — akcesoria UL20 (stacj
       'M3 UL20 — widok z boku, przyciski skanowania i funkcyjne',
       'M3 UL20 — widok z prawego boku, przycisk skanowania i styki ładowania',
     ],
-    seoTitle: 'M3 UL20 — kolektor danych gun z klawiaturą | IP67, 5" FHD | TAKMA',
+    seoTitle: 'M3 UL20 — kolektor danych gun z klawiaturą | IP67, 5" FHD ',
     seoDescription: 'M3 UL20 — kolektor danych gun z klawiaturą 28/35/53 kl., 5" FHD, IP67, bateria 6700 mAh. Od 4 920 zł netto. Freezer (−30°C), 4G LTE. Zamów w TAKMA.',
     variantAttributeTooltips: {
       'Skaner': 'SE4750 — zasięg standardowy, do skanowania z ręki na linii picking.\n\nSE4850 — daleki zasięg, do regałów paletowych.\n\nSE5800 — ultra daleki zasięg (modele FX), do high-bay i skanowania na dużą odległość.',
@@ -55441,7 +55441,7 @@ export const brandCategories: BrandCategory[] = [
     manufacturerId: 'zebra',
     categoryId: 'drukarki-etykiet',
     name: 'Drukarki etykiet Zebra',
-    seoTitle: 'Drukarki etykiet Zebra — kup od 639 zł netto | Sklep TAKMA',
+    seoTitle: 'Drukarki etykiet Zebra — kup od 639 zł netto | Sklep',
     seoDescription: 'Drukarki etykiet Zebra: biurkowe, przemysłowe i mobilne od 639 zł netto. Porównanie modeli, TCO, FAQ. Autoryzowany partner Zebra z serwisem — TAKMA.',
     longDescription: 'Kompletna oferta drukarek etykiet Zebra Technologies w jednym miejscu — od najtańszej biurkowej ZD220 (od 639 zł netto) po flagową przemysłową ZT620 do druku 24/7. Zebra to światowy lider rynku drukarek etykiet z udziałem ponad 50% w segmencie enterprise. TAKMA jako autoryzowany Premier Solution Partner Zebra oferuje pełne wsparcie: dobór drukarki do zastosowania, konfigurację, integrację z systemami WMS/ERP oraz serwis gwarancyjny i pogwarancyjny (serwis-zebry.pl). Wszystkie drukarki Zebra obsługują protokół Link-OS do zdalnego zarządzania flotą urządzeń.',
     faq: [
@@ -55567,7 +55567,7 @@ export const brandCategories: BrandCategory[] = [
     manufacturerId: 'm3-mobile',
     categoryId: 'terminale-mobilne',
     name: 'Terminale M3 Mobile',
-    seoTitle: 'Terminale M3 Mobile — SM30, US30, US20, SM24 | TAKMA',
+    seoTitle: 'Terminale M3 Mobile — SM30, US30, US20, SM24 ',
     seoDescription: 'Terminale M3 Mobile — SM30 z AI 12 TOPS, US30/US20 z klawiaturą, SM24/SM25 z 6" ekranem. Od 3 610 zł netto. Doradztwo i serwis w TAKMA.',
     longDescription: 'Kompletna oferta terminali mobilnych M3 Mobile (Korea, zał. 2000) — od flagowego SM30 z procesorem AI 12 TOPS, 5G i Snapdragon QCM6490 (od 3 610 zł netto) po kompaktowe modele SL20 i UL20 do lżejszych zastosowań. M3 Mobile oferuje 9 modeli terminali enterprise z Androidem 10–14, Wi-Fi 6/6E, IP65–IP68 i hot-swap baterii. Seria US (US30, US20) to jedyne terminale M3 z fizyczną klawiaturą 30/38/42/51 klawiszy — idealne do magazynów, gdzie operatorzy noszą rękawice. Flagowy SM30 wyróżnia się akceleratorem AI 12 TOPS (Hexagon NPU) do rozpoznawania obrazu i kontroli jakości na urządzeniu, bez połączenia z chmurą. Seria SM (SM24, SM25) to terminale dotykowe z 6" ekranem do retail i logistyki. Seria UL (UL20, UL30) to budżetowe terminale pistoletowe do inwentaryzacji i kompletacji. Wszystkie terminale M3 zarządzane platformą M3 Speedpack (MDM, OTA, remote wipe). Akcesoria US20 i US30 są wzajemnie kompatybilne — stacje dokujące, ładowarki baterii, uchwyty pistoletowe. TAKMA jest partnerem M3 Mobile w Polsce — oferujemy pełne doradztwo w doborze modelu, konfigurację, staging flotowy, serwis gwarancyjny (1 rok) i pogwarancyjny. Porównanie wszystkich modeli: [Terminale M3 Mobile — porównanie 2026](/poradnik/terminale-m3-mobile-porownanie).',
     faq: [
