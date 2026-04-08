@@ -51716,7 +51716,7 @@ const m3WR15: Product[] = [
     name: 'M3 WR15',
     priceFrom: 0,
     shortDescription: 'M3 WR15 — przemysłowy skaner pierścieniowy (ring scanner) z Bluetooth 5.3, IP65, 29g, NFC, Zero-Second Boot',
-    description: `M3 WR15 to przemysłowy skaner pierścieniowy (ring scanner) produkowany przez koreańską firmę M3 Mobile — następca popularnego modelu WR10 z dodaną obsługą Bluetooth Classic (BDR/EDR). Urządzenie noszone na palcu lub zamontowane na rękawicy umożliwia skanowanie kodów kreskowych 1D i 2D przy jednoczesnym zachowaniu obu rąk wolnych do pracy. Waga samego skanera to zaledwie 29 g, a z baterią — 55 g.
+    description: `M3 WR15 to przemysłowy skaner pierścieniowy (ring scanner, wearable scanner) produkowany przez koreańską firmę M3 Mobile — następca popularnego modelu WR10 z dodaną obsługą Bluetooth Classic (BDR/EDR). Ten noszony skaner kodów kreskowych (czytnik kodów pierścieniowy) zakładany na palec lub montowany na rękawicy umożliwia skanowanie kodów 1D i 2D przy jednoczesnym zachowaniu obu rąk wolnych do pracy (hands-free). Waga samego skanera to zaledwie 29 g, a z baterią — 55 g.
 
 WR15 wyposażony jest w moduł Bluetooth 5.3 z obsługą zarówno BLE, jak i Bluetooth Classic (BDR/EDR) — dzięki temu współpracuje nie tylko z terminalami M3 Mobile (<a href="/produkt/m3-sm30">SM30</a>, <a href="/produkt/m3-us30">US30</a>, US20), ale również z dowolnym urządzeniem obsługującym Bluetooth Classic, w tym terminalami Zebra, Honeywell czy komputerami PC. Parowanie jest błyskawiczne — technologia NFC umożliwia sparowanie jednym dotknięciem (Tap-to-Pair) lub zeskanowaniem kodu z ekranu (Scan-to-Pair).
 
@@ -51741,7 +51741,7 @@ Wymiary kompaktowej obudowy to 70,7 × 33 × 22,1 mm. Bogaty ekosystem akcesori�
       'M3 WR15 — widok z boku, moduł Bluetooth 5.3, magnetyczne złącze baterii',
       'M3 WR15 — skaner pierścieniowy IP65, wzmocniona obudowa, okno skanera 2D',
     ],
-    seoTitle: 'M3 WR15 — skaner pierścieniowy BT 5.3, IP65, 29g | TAKMA',
+    seoTitle: 'M3 WR15 — skaner kodów pierścieniowy (ring scanner) BT 5.3 | TAKMA',
     seoDescription: 'M3 WR15 — przemysłowy skaner pierścieniowy (ring scanner) z BT 5.3 Classic, IP65, 29g, NFC pairing. Skanery SE4107/SE5500. Hands-free do magazynu. TAKMA.',
     variantAttributeTooltips: {
       'Skaner': 'SE4107 — standardowy imager 2D (SE4107/E4770) do kodów 1D/2D z bliskiej i średniej odległości. Uniwersalny wybór do większości zastosowań magazynowych.\n\nSE5500 Smart Focus — skaner dalekiego zasięgu do 15 m, idealny do magazynów wysokiego składowania i regałów paletowych.',
