@@ -51833,7 +51833,11 @@ Wymiary kompaktowej obudowy to 70,7 × 33 × 22,1 mm. Bogaty ekosystem akcesori�
       'm3-wr10-klips',
     ],
     relatedProducts: [],
-    downloads: [],
+    downloads: [
+      { name: 'Karta katalogowa M3 WR15 (EN)', type: 'datasheet' as const, url: '/downloads/m3-wr15-specification.pdf', size: '170 KB' },
+      { name: 'Instrukcja obsługi M3 WR15 (EN)', type: 'manual' as const, url: '/downloads/m3-wr15-user-manual.pdf', size: '2 MB' },
+      { name: 'Katalog akcesoriów M3 WR15 (EN)', type: 'manual' as const, url: '/downloads/m3-wr15-accessories-guide.pdf', size: '1,5 MB' },
+    ],
     createdAt: '2026-04-08',
     sameAs: 'https://m3mobile.com',
   },
