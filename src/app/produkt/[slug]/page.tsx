@@ -265,6 +265,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             priceCurrency: 'PLN',
             offerCount: product.variants.length,
             availability: availabilitySchemaMap[product.availability],
+            priceValidUntil: priceValidUntil,
             offers: (() => {
               const variantsWithPrice = product.variants!.filter((v) => v.priceFrom && v.priceFrom > 0)
               if (variantsWithPrice.length > 0) {

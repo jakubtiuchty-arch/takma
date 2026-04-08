@@ -52,6 +52,7 @@ const nextConfig = {
       { source: '/produkt/zebra-zd220/:path*', destination: '/produkt/zebra-zd220d', permanent: true },
       { source: '/produkt/zebra-zd230/:path*', destination: '/produkt/zebra-zd230d', permanent: true },
       { source: '/produkt/zebra-zd420/:path*', destination: '/produkt/zebra-zd421t', permanent: true },
+      { source: '/produkt/zebra-zd420d/:path*', destination: '/produkt/zebra-zd230d', permanent: true },
       { source: '/produkt/zebra-zd421/:path*', destination: '/produkt/zebra-zd421t', permanent: true },
       { source: '/produkt/zebra-zd510/:path*', destination: '/produkt/zebra-zd510-hc', permanent: true },
       { source: '/produkt/zebra-zd621/:path*', destination: '/produkt/zebra-zd621t', permanent: true },
