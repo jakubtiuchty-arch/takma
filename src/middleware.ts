@@ -118,7 +118,7 @@ export async function middleware(request: NextRequest) {
       'm3-sm30-zasilacz-usb-c', 'm3-sm30-zasilacz-2slot',
       'm3-sm30-zasilacz-4slot', 'm3-sm30-zasilacz-8slot',
       'm3-sm30-pasek-na-reke',
-      'm3-wr15',
+      'm3-wr15', 'm3-wr10',
       'm3-wr15-rekawica', 'm3-wr10-trigger',
       'm3-wr10-ladowarka-3', 'm3-wr10-ladowarka-8', 'm3-wr10-ladowarka-16', 'm3-wr10-ladowarka-32',
       'm3-wr10-bateria', 'm3-wr10-zasilacz-1slot', 'm3-wr10-zasilacz-4slot', 'm3-wr10-zasilacz-usb',
