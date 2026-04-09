@@ -82,7 +82,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     openGraph: {
       title: title,
       description: smartTruncate(ogDescription, 200),
-      type: 'article',
+      type: 'website',
       locale: 'pl_PL',
       siteName: 'TAKMA',
       images: ogImage ? [{ url: ogImage, width: 1200, height: 630, alt: product.name }] : undefined,
@@ -250,6 +250,28 @@ export default async function ProductPage({ params }: ProductPageProps) {
     })(),
     ...(relatedProductsForSchema.length > 0 ? { isRelatedTo: relatedProductsForSchema } : {}),
     ...(product.gtin13 ? { gtin13: product.gtin13 } : {}),
+    ...(product.editorialReview ? {
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: product.editorialReview.ratingValue,
+        bestRating: product.editorialReview.bestRating,
+        worstRating: 1,
+        ratingCount: 1,
+        reviewCount: 1,
+      },
+      review: {
+        '@type': 'Review',
+        author: { '@type': 'Organization', name: 'TAKMA' },
+        datePublished: product.updatedAt || product.createdAt,
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: product.editorialReview.ratingValue,
+          bestRating: product.editorialReview.bestRating,
+          worstRating: 1,
+        },
+        reviewBody: product.editorialReview.reviewBody,
+      },
+    } : {}),
     // Only include offers when product has valid pricing — prevents GSC schema errors
     ...(hasValidPrice ? {
       offers: product.variants && product.variants.length > 0

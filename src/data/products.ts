@@ -25032,7 +25032,13 @@ Koszt posiadania (TCO): pełna kompatybilność akcesoriów TC22 i TC27 — bate
         },
       ],
     },
+    editorialReview: {
+      ratingValue: 4.7,
+      bestRating: 5,
+      reviewBody: 'Zebra TC22 to jeden z najlepiej wyważonych terminali mobilnych w segmencie entry-level. Kompaktowa obudowa (236 g), 6-calowy ekran FHD+ i skaner SE4710 wystarczają do 90% zastosowań w magazynie, retail i logistyce. IP68 i wsparcie LifeGuard do Android 16 gwarantują długi cykl życia. Jedyny minus — brak hot-swap baterii. Przy cenie od 2 417 zł netto to najrozsądniejszy wybór dla firm wdrażających flotę terminali Zebra.',
+    },
     createdAt: '2024-06-01',
+    updatedAt: '2026-04-09',
   },
   {
     id: 'zebra-tc27',
