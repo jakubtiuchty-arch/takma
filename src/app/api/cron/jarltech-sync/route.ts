@@ -3,6 +3,8 @@ import { prisma } from '@/lib/db'
 import { lookupStock } from '@/lib/jarltech'
 import { products } from '@/data/products'
 
+export const maxDuration = 300 // 5 minutes — now syncs ALL products, not just M3
+
 // Protect with CRON_SECRET
 export async function GET(request: NextRequest) {
   const authHeader = request.headers.get('authorization')
@@ -10,11 +12,10 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
-  // Collect ALL M3 Mobile PNs from products data
-  const m3Products = products.filter(p => p.manufacturerId === 'm3-mobile')
+  // Collect ALL PNs from ALL products (Jarltech carries Zebra, Honeywell, Newland, M3 etc.)
   const allPNs: string[] = []
 
-  for (const product of m3Products) {
+  for (const product of products) {
     // From variants
     if (product.variants) {
       for (const v of product.variants) {

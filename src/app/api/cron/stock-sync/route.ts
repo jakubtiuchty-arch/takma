@@ -113,6 +113,13 @@ export async function GET(request: NextRequest) {
         console.error(`[Stock Sync] BlueStar error batch ${batchNum}:`, bluestarResult.reason)
       }
 
+      // Also read Jarltech cache for this batch (Jarltech carries Zebra/Honeywell too)
+      const jarltechCache = await prisma.jarltechStockCache.findMany({
+        where: { partNumber: { in: batch }, found: true },
+      })
+      const jarltechMap = new Map<string, typeof jarltechCache[0]>()
+      for (const j of jarltechCache) jarltechMap.set(j.partNumber, j)
+
       // Build maps
       const ingramMap = new Map<string, StockInfo>()
       for (const item of ingramData) ingramMap.set(item.partNumber, item)
@@ -125,11 +132,13 @@ export async function GET(request: NextRequest) {
         try {
           const ing = ingramMap.get(pn)
           const bs = bluestarMap.get(pn)
+          const jt = jarltechMap.get(pn)
 
           const ingFound = ing?.found ?? false
           const bsFound = bs?.found ?? false
+          const jtFound = !!jt
 
-          if (!ingFound && !bsFound) {
+          if (!ingFound && !bsFound && !jtFound) {
             // No data from any distributor
             await prisma.stockCache.upsert({
               where: { partNumber: pn },
@@ -156,10 +165,12 @@ export async function GET(request: NextRequest) {
             continue
           }
 
-          // Stock levels (same logic as /api/stock)
+          // Stock levels (Ingram + BlueStar + Jarltech)
           const stockPL = ing?.stockPL ?? 0
-          const stockDE = (ing?.stockDE ?? 0) + (bsFound ? (bs!.inventory ?? 0) : 0)
-          const inDelivery = (ing?.inDelivery ?? 0) + (bsFound ? (bs!.qtyExpected ?? 0) : 0)
+          const jtInventory = jtFound ? (jt!.inventory ?? 0) : 0
+          const jtIncoming = jtFound ? (jt!.incomingQty ?? 0) : 0
+          const stockDE = (ing?.stockDE ?? 0) + (bsFound ? (bs!.inventory ?? 0) : 0) + jtInventory
+          const inDelivery = (ing?.inDelivery ?? 0) + (bsFound ? (bs!.qtyExpected ?? 0) : 0) + jtIncoming
           const totalStock = stockPL + stockDE + inDelivery
 
           // Price: compare in PLN (Ingram already PLN, BlueStar EUR->PLN)
@@ -168,7 +179,11 @@ export async function GET(request: NextRequest) {
             ? Math.round(bs!.unitPrice * eurRate * 100) / 100
             : undefined
 
-          const prices = [ingramPLN, bluestarPLN].filter(
+          const jarltechPLN = (jtFound && jt!.unitPrice)
+            ? Math.round(jt!.unitPrice * eurRate * 100) / 100
+            : undefined
+
+          const prices = [ingramPLN, bluestarPLN, jarltechPLN].filter(
             (p): p is number => p != null && p > 0
           )
           const bestRawPricePLN = prices.length > 0 ? Math.min(...prices) : undefined
