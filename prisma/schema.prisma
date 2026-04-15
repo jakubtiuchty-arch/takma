@@ -496,6 +496,26 @@ model Invoice {
 }
 
 // ---------------------------------------------------------------------------
+// Stock Cache (universal stock sync — all products except M3/Jarltech)
+// ---------------------------------------------------------------------------
+
+model StockCache {
+  partNumber   String   @id
+  found        Boolean  @default(false)
+  price        Float?   // sell price (with margin)
+  priceBrutto  Float?
+  ingramPrice  Float?   // purchase price
+  stockPL      Int      @default(0)
+  stockDE      Int      @default(0)
+  inDelivery   Int      @default(0)
+  totalStock   Int      @default(0)
+  availability String   @default("unavailable") // available, on-order, unavailable
+  deliveryText String?
+  lastSync     DateTime @updatedAt
+  createdAt    DateTime @default(now())
+}
+
+// ---------------------------------------------------------------------------
 // SEO Digest (daily RSS feed aggregation)
 // ---------------------------------------------------------------------------
 

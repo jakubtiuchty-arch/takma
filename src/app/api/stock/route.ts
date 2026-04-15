@@ -81,11 +81,74 @@ export async function GET(request: NextRequest) {
   }
 
   try {
+    // ============================================
+    // STEP 1: Check StockCache (populated by daily cron)
+    // If ALL requested PNs have fresh cache (<24h), return immediately
+    // ============================================
+    const CACHE_MAX_AGE_MS = 24 * 60 * 60 * 1000 // 24h
+    const cacheCheckTime = new Date()
+
+    const cachedRows = await prisma.stockCache.findMany({
+      where: { partNumber: { in: partNumbers } },
+    })
+
+    const freshCache = new Map<string, typeof cachedRows[0]>()
+    for (const row of cachedRows) {
+      const age = cacheCheckTime.getTime() - row.lastSync.getTime()
+      if (age < CACHE_MAX_AGE_MS) {
+        freshCache.set(row.partNumber, row)
+      }
+    }
+
+    // If all PNs are in fresh cache, serve from cache (skip live API calls)
+    const uncachedPNs = partNumbers.filter(pn => !freshCache.has(pn))
+
+    if (uncachedPNs.length === 0) {
+      // All PNs are in fresh cache — fast path
+      const results: StockInfo[] = partNumbers.map(pn => {
+        const c = freshCache.get(pn)!
+        return {
+          partNumber: c.partNumber,
+          found: c.found,
+          price: c.price ?? undefined,
+          priceBrutto: c.priceBrutto ?? undefined,
+          ingramPrice: c.ingramPrice ?? undefined,
+          stockPL: c.stockPL,
+          stockDE: c.stockDE,
+          inDelivery: c.inDelivery,
+          totalStock: c.totalStock,
+          availability: c.availability as StockInfo['availability'],
+          deliveryText: c.deliveryText ?? 'Brak danych',
+          lastSync: c.lastSync.toISOString(),
+        }
+      })
+
+      const response: Record<string, unknown> = {
+        results,
+        count: results.length,
+        found: results.filter(r => r.found).length,
+        _source: 'stock-cache',
+      }
+
+      if (showDebug) {
+        response._debug = { source: 'StockCache', cacheHits: partNumbers.length, cacheMisses: 0 }
+      }
+
+      return NextResponse.json(response, {
+        headers: { 'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600' },
+      })
+    }
+
+    // ============================================
+    // STEP 2: Live API fallback for uncached PNs
+    // (also includes Jarltech for M3 products)
+    // ============================================
+
     // Jarltech: read from DB cache (synced by daily cron, not live)
     const jarltechFromCache = async (): Promise<JarltechStockInfo[]> => {
       try {
         const cached = await prisma.jarltechStockCache.findMany({
-          where: { partNumber: { in: partNumbers } },
+          where: { partNumber: { in: uncachedPNs } },
         })
         return cached.map(c => ({
           partNumber: c.partNumber,
@@ -109,8 +172,8 @@ export async function GET(request: NextRequest) {
 
     // Rownolegle: dwoch dystrybutorów live + Jarltech z cache DB + kurs EUR/PLN
     const [ingramResult, bluestarResult, jarltechResult, eurRate] = await Promise.all([
-      Promise.allSettled([ingramLookup(partNumbers)]).then(r => r[0]),
-      Promise.allSettled([bluestarLookup(partNumbers)]).then(r => r[0]),
+      Promise.allSettled([ingramLookup(uncachedPNs)]).then(r => r[0]),
+      Promise.allSettled([bluestarLookup(uncachedPNs)]).then(r => r[0]),
       Promise.allSettled([jarltechFromCache()]).then(r => r[0]),
       getEurPlnRate(),
     ])
@@ -150,8 +213,8 @@ export async function GET(request: NextRequest) {
 
     const now = new Date().toISOString()
 
-    // Merge per PN
-    const results: StockInfo[] = partNumbers.map(pn => {
+    // Merge per PN (only uncached PNs — cached ones handled separately)
+    const results: StockInfo[] = uncachedPNs.map(pn => {
       const ing = ingramMap.get(pn)
       const bs = bluestarMap.get(pn)
       const jl = jarltechMap.get(pn)
@@ -249,10 +312,83 @@ export async function GET(request: NextRequest) {
       }
     })
 
+    // Write-through: save live results to StockCache for future requests
+    // Fire-and-forget — don't block the response
+    Promise.all(
+      results.map(r =>
+        prisma.stockCache.upsert({
+          where: { partNumber: r.partNumber },
+          create: {
+            partNumber: r.partNumber,
+            found: r.found,
+            price: r.price ?? null,
+            priceBrutto: r.priceBrutto ?? null,
+            ingramPrice: r.ingramPrice ?? null,
+            stockPL: r.stockPL,
+            stockDE: r.stockDE,
+            inDelivery: r.inDelivery,
+            totalStock: r.totalStock,
+            availability: r.availability,
+            deliveryText: r.deliveryText,
+          },
+          update: {
+            found: r.found,
+            price: r.price ?? null,
+            priceBrutto: r.priceBrutto ?? null,
+            ingramPrice: r.ingramPrice ?? null,
+            stockPL: r.stockPL,
+            stockDE: r.stockDE,
+            inDelivery: r.inDelivery,
+            totalStock: r.totalStock,
+            availability: r.availability,
+            deliveryText: r.deliveryText,
+          },
+        }).catch(err => console.error(`[API /stock] Cache write error for ${r.partNumber}:`, err))
+      )
+    ).catch(() => {})
+
+    // Merge cached results with live results for partially-cached requests
+    const finalResults: StockInfo[] = partNumbers.map(pn => {
+      // First check live results
+      const liveResult = results.find(r => r.partNumber === pn)
+      if (liveResult) return liveResult
+      // Then check fresh cache
+      const cached = freshCache.get(pn)
+      if (cached) {
+        return {
+          partNumber: cached.partNumber,
+          found: cached.found,
+          price: cached.price ?? undefined,
+          priceBrutto: cached.priceBrutto ?? undefined,
+          ingramPrice: cached.ingramPrice ?? undefined,
+          stockPL: cached.stockPL,
+          stockDE: cached.stockDE,
+          inDelivery: cached.inDelivery,
+          totalStock: cached.totalStock,
+          availability: cached.availability as StockInfo['availability'],
+          deliveryText: cached.deliveryText ?? 'Brak danych',
+          lastSync: cached.lastSync.toISOString(),
+        }
+      }
+      // Should not happen, but fallback
+      return liveResult ?? {
+        partNumber: pn,
+        found: false,
+        stockPL: 0,
+        stockDE: 0,
+        inDelivery: 0,
+        totalStock: 0,
+        availability: 'unavailable' as const,
+        deliveryText: 'Brak danych z dystrybutora',
+        lastSync: now,
+      }
+    })
+
     const response: Record<string, unknown> = {
-      results,
-      count: results.length,
-      found: results.filter(r => r.found).length,
+      results: finalResults,
+      count: finalResults.length,
+      found: finalResults.filter(r => r.found).length,
+      _source: uncachedPNs.length === partNumbers.length ? 'live' : 'mixed',
     }
 
     if (showDebug) {
@@ -299,7 +435,7 @@ export async function GET(request: NextRequest) {
     }
 
     // Nie cachuj pustych odpowiedzi — mogą wynikać z timeoutu dystrybutora
-    const anyFound = results.some(r => r.found)
+    const anyFound = finalResults.some(r => r.found)
     const cacheHeader = anyFound
       ? 'public, s-maxage=300, stale-while-revalidate=600'
       : 'public, s-maxage=30, stale-while-revalidate=30'

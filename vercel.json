@@ -14,6 +14,10 @@
     {
       "path": "/api/cron/seo-digest",
       "schedule": "0 6 * * *"
+    },
+    {
+      "path": "/api/cron/stock-sync",
+      "schedule": "0 5,12 * * *"
     }
   ]
 }
