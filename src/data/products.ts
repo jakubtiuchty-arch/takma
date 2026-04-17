@@ -19515,6 +19515,7 @@ W zestawie (wersja -S5): skaner i kabel USB spiralny. Wersja -SA dodatkowo zawie
     seoDescription: 'Skaner 2D Newland HR23 Dorada do kas, aptek i magazynów: CMOS 640×480, USB, IP52, 1,5 m drop, 5 lat gwarancji. 2 konfiguracje. GS1 Ready. Porównanie z Zebra DS2208.',
     isNew: true,
     isBestseller: false,
+    priceFrom: 260,
     availability: 'available',
     specifications: [
       { name: 'Typ skanera', value: 'Imager 2D (area imager) przewodowy' },
@@ -19556,12 +19557,14 @@ W zestawie (wersja -S5): skaner i kabel USB spiralny. Wersja -SA dodatkowo zawie
       {
         partNumber: 'NLS-HR2300-S5',
         name: 'HR23 Dorada — przewodowy, kabel USB spiralny',
+        priceFrom: 260,
         availability: 'available',
         attributes: { 'Łączność': 'USB (kabel spiralny)' },
       },
       {
         partNumber: 'NLS-HR2300-SA',
         name: 'HR23 Dorada — przewodowy, kabel USB spiralny + podstawka Smartstand',
+        priceFrom: 280,
         availability: 'available',
         attributes: { 'Łączność': 'USB (kabel spiralny)', 'Podstawka': 'Smartstand' },
       },

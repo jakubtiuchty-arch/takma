@@ -82,23 +82,50 @@ export async function GET(request: NextRequest) {
 
   try {
     // ============================================
-    // STEP 1: Check StockCache (populated by daily cron)
-    // If ALL requested PNs have fresh cache (<24h), return immediately
+    // STEP 1: Check StockCache + JarltechStockCache in parallel
+    // Jarltech sync runs separately — if it shows more stock than StockCache,
+    // override (StockCache may be stale because previous stock-sync ran while
+    // jarltech-sync was still syncing).
     // ============================================
     const CACHE_MAX_AGE_MS = 24 * 60 * 60 * 1000 // 24h
     const cacheCheckTime = new Date()
 
-    const cachedRows = await prisma.stockCache.findMany({
-      where: { partNumber: { in: partNumbers } },
-    })
+    const [cachedRows, jarltechRows] = await Promise.all([
+      prisma.stockCache.findMany({ where: { partNumber: { in: partNumbers } } }),
+      prisma.jarltechStockCache.findMany({ where: { partNumber: { in: partNumbers } } }),
+    ])
+
+    const jarltechMap = new Map(jarltechRows.map(j => [j.partNumber, j]))
+    const overriddenPNs: string[] = []
 
     const freshCache = new Map<string, typeof cachedRows[0]>()
     for (const row of cachedRows) {
       const age = cacheCheckTime.getTime() - row.lastSync.getTime()
-      if (age < CACHE_MAX_AGE_MS) {
+      if (age >= CACHE_MAX_AGE_MS) continue
+
+      const j = jarltechMap.get(row.partNumber)
+      // Override gdy Jarltech jest świeższy I ma więcej inventory niż cached stockDE
+      if (j && j.found && j.lastSync > row.lastSync && j.inventory > row.stockDE) {
+        const newStockDE = Math.max(row.stockDE, j.inventory)
+        const newTotalStock = row.stockPL + newStockDE + row.inDelivery
+        freshCache.set(row.partNumber, {
+          ...row,
+          stockDE: newStockDE,
+          totalStock: newTotalStock,
+          availability: row.stockPL > 0 ? row.availability : 'available',
+          deliveryText: row.stockPL > 0
+            ? row.deliveryText
+            : `Dostepny — wysylka 2-3 dni (${newStockDE} szt.)`,
+          lastSync: j.lastSync,
+        })
+        overriddenPNs.push(row.partNumber)
+      } else {
         freshCache.set(row.partNumber, row)
       }
     }
+
+    // Także: PN brak w StockCache, ale Jarltech ma → trigger slow path (ceny wymagają EUR rate)
+    // (uncachedPNs poniżej automatycznie obejmie te przypadki)
 
     // If all PNs are in fresh cache, serve from cache (skip live API calls)
     const uncachedPNs = partNumbers.filter(pn => !freshCache.has(pn))
@@ -123,15 +150,39 @@ export async function GET(request: NextRequest) {
         }
       })
 
+      // Background write-through: jeśli były override'y, zaktualizuj StockCache
+      // (fire-and-forget — nie blokuje response)
+      if (overriddenPNs.length > 0) {
+        Promise.all(
+          overriddenPNs.map(pn => {
+            const c = freshCache.get(pn)!
+            return prisma.stockCache.update({
+              where: { partNumber: pn },
+              data: {
+                stockDE: c.stockDE,
+                totalStock: c.totalStock,
+                availability: c.availability,
+                deliveryText: c.deliveryText,
+              },
+            }).catch(err => console.error(`[API /stock] Override write-back failed for ${pn}:`, err))
+          })
+        ).catch(() => {})
+      }
+
       const response: Record<string, unknown> = {
         results,
         count: results.length,
         found: results.filter(r => r.found).length,
-        _source: 'stock-cache',
+        _source: overriddenPNs.length > 0 ? 'stock-cache+jarltech-override' : 'stock-cache',
       }
 
       if (showDebug) {
-        response._debug = { source: 'StockCache', cacheHits: partNumbers.length, cacheMisses: 0 }
+        response._debug = {
+          source: 'StockCache',
+          cacheHits: partNumbers.length,
+          cacheMisses: 0,
+          jarltechOverrides: overriddenPNs,
+        }
       }
 
       return NextResponse.json(response, {

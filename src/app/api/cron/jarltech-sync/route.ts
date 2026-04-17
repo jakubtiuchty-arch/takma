@@ -38,8 +38,8 @@ export async function GET(request: NextRequest) {
   const uniquePNs = Array.from(new Set(allPNs))
   console.log(`[Jarltech Sync] Starting sync for ${uniquePNs.length} PNs`)
 
-  // Process PNs in small batches of 5
-  const BATCH_SIZE = 5
+  // Process PNs in batches of 10 (Jarltech concurrency=4 inside lookupStock)
+  const BATCH_SIZE = 10
   let synced = 0
   let found = 0
 
@@ -87,7 +87,7 @@ export async function GET(request: NextRequest) {
 
     // Small delay between batches to not overload Jarltech
     if (i + BATCH_SIZE < uniquePNs.length) {
-      await new Promise(r => setTimeout(r, 2000))
+      await new Promise(r => setTimeout(r, 500))
     }
   }
 
