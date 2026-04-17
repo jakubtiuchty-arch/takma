@@ -95,7 +95,7 @@ export async function GET(request: NextRequest) {
       prisma.jarltechStockCache.findMany({ where: { partNumber: { in: partNumbers } } }),
     ])
 
-    const jarltechMap = new Map(jarltechRows.map(j => [j.partNumber, j]))
+    const jarltechCacheMap = new Map(jarltechRows.map(j => [j.partNumber, j]))
     const overriddenPNs: string[] = []
 
     const freshCache = new Map<string, typeof cachedRows[0]>()
@@ -103,7 +103,7 @@ export async function GET(request: NextRequest) {
       const age = cacheCheckTime.getTime() - row.lastSync.getTime()
       if (age >= CACHE_MAX_AGE_MS) continue
 
-      const j = jarltechMap.get(row.partNumber)
+      const j = jarltechCacheMap.get(row.partNumber)
       // Override gdy Jarltech jest świeższy I ma więcej inventory niż cached stockDE
       if (j && j.found && j.lastSync > row.lastSync && j.inventory > row.stockDE) {
         const newStockDE = Math.max(row.stockDE, j.inventory)
