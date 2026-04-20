@@ -85,20 +85,28 @@ export default function BrandServicePage({ params }: Props) {
       </nav>
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-gray-50 to-white py-14 sm:py-20 border-b border-gray-100">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8">
-            <div className="shrink-0 w-32 h-20 sm:w-40 sm:h-24 relative opacity-80">
-              <Image src={brand.logoSrc} alt={brand.logoAlt} fill className="object-contain" sizes="160px" priority />
-            </div>
-            <div className="text-center sm:text-left flex-1">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900">
+      {brand.heroImage ? (
+        // Dark hero z obrazem tła
+        <section className="relative bg-gray-950 overflow-hidden border-b border-gray-800">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${brand.heroImage})` }}
+            aria-hidden="true"
+          />
+          {/* Gradient overlay — czytelność tekstu po lewej */}
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/80 to-transparent" aria-hidden="true" />
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
+            <div className="max-w-2xl">
+              <div className="w-28 h-16 sm:w-32 sm:h-20 relative mb-6 opacity-90">
+                <Image src={brand.logoSrc} alt={brand.logoAlt} fill className="object-contain object-left brightness-0 invert" sizes="160px" priority />
+              </div>
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white">
                 {brand.heroTitle}
               </h1>
-              <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
+              <p className="mt-4 text-base sm:text-lg text-gray-300 leading-relaxed">
                 {brand.heroDescription}
               </p>
-              <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center sm:justify-start">
+              <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <a
                   href="#formularz-naprawy"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-lime-500 hover:bg-lime-400 text-gray-900 font-bold transition-all"
@@ -107,15 +115,64 @@ export default function BrandServicePage({ params }: Props) {
                 </a>
                 <a
                   href="tel:+48601619898"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border-2 border-gray-300 hover:border-gray-500 text-gray-900 font-bold transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border-2 border-white/20 hover:border-white/40 text-white font-bold transition-all backdrop-blur-sm"
                 >
                   +48 601 619 898
                 </a>
               </div>
+
+              {/* Trust metrics */}
+              <div className="mt-8 grid grid-cols-3 gap-3 sm:gap-4 max-w-lg">
+                <div className="rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm p-3 sm:p-4">
+                  <div className="text-lime-400 text-xl sm:text-2xl font-bold">48h</div>
+                  <div className="text-xs text-gray-400 mt-1">diagnostyka</div>
+                </div>
+                <div className="rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm p-3 sm:p-4">
+                  <div className="text-lime-400 text-xl sm:text-2xl font-bold">3–6 mies.</div>
+                  <div className="text-xs text-gray-400 mt-1">gwarancji</div>
+                </div>
+                <div className="rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm p-3 sm:p-4">
+                  <div className="text-lime-400 text-xl sm:text-2xl font-bold">20+ lat</div>
+                  <div className="text-xs text-gray-400 mt-1">w branży</div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : (
+        // Fallback: light hero (dla marek bez heroImage)
+        <section className="bg-gradient-to-br from-gray-50 to-white py-14 sm:py-20 border-b border-gray-100">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8">
+              <div className="shrink-0 w-32 h-20 sm:w-40 sm:h-24 relative opacity-80">
+                <Image src={brand.logoSrc} alt={brand.logoAlt} fill className="object-contain" sizes="160px" priority />
+              </div>
+              <div className="text-center sm:text-left flex-1">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900">
+                  {brand.heroTitle}
+                </h1>
+                <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
+                  {brand.heroDescription}
+                </p>
+                <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center sm:justify-start">
+                  <a
+                    href="#formularz-naprawy"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-lime-500 hover:bg-lime-400 text-gray-900 font-bold transition-all"
+                  >
+                    Zgłoś naprawę {brand.name}
+                  </a>
+                  <a
+                    href="tel:+48601619898"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border-2 border-gray-300 hover:border-gray-500 text-gray-900 font-bold transition-all"
+                  >
+                    +48 601 619 898
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Lead / intro */}
       <section className="bg-white py-12 sm:py-16 border-b border-gray-100">

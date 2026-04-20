@@ -10,6 +10,8 @@ export type ServiceBrand = {
   heroLead: string
   heroTitle: string
   heroDescription: string
+  /** Opcjonalny obraz tła hero (dark theme). Jeśli brak — jasny hero z logo. */
+  heroImage?: string
   commonIssues: Array<{ title: string; description: string }>
   faqs: Array<{ q: string; a: string }>
   metaTitle: string
@@ -234,6 +236,7 @@ export const serviceBrands: ServiceBrand[] = [
     products: 'Drukarki CL4NX, CT4-LX, FX3-LX',
     heroTitle: 'Serwis SATO — naprawa drukarek etykiet',
     heroDescription: 'Pogwarancyjny serwis drukarek SATO: CL4NX, CL6NX, CT4-LX, FX3-LX, WS408. Wymiana głowic, wałków, modułów LAN/Wi-Fi. Oryginalne części, wysyłka z całej Polski.',
+    heroImage: '/images/serwis-hero/sato-hero.webp',
     heroLead: 'SATO to japoński producent zaawansowanych drukarek etykiet, obecny na polskim rynku od lat w produkcji, farmacji i logistyce. TAKMA serwisuje drukarki przemysłowe SATO z rodziny CL4NX, CL6NX (4" i 6" przemysłowe) oraz kompaktowe CT4-LX (linerless / z podkładem) i biurkowe FX3-LX, WS408. Wymieniamy głowice drukujące (kluczowe dla jakości druku GS1), wałki dociskowe, moduły LAN/Wi-Fi i obcinaki gilotynowe oraz prowadzimy pełną kalibrację.',
     metaTitle: 'Serwis SATO — naprawa drukarek CL4NX, CT4-LX, FX3-LX | TAKMA',
     metaDescription: 'Pogwarancyjny serwis drukarek SATO: CL4NX, CL6NX, CT4-LX, FX3-LX, WS408. Wymiana głowic, wałków. Darmowa diagnostyka — TAKMA Wrocław, cała Polska.',
