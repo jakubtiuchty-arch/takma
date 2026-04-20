@@ -93,8 +93,12 @@ export default function BrandServicePage({ params }: Props) {
             style={{ backgroundImage: `url(${brand.heroImage})` }}
             aria-hidden="true"
           />
-          {/* Gradient overlay — czytelność tekstu po lewej */}
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/90 to-transparent" aria-hidden="true" />
+          {/* Gradient overlay — zaciemnia tylko lewą 45%, reszta przeźroczysta */}
+          <div
+            className="absolute inset-0"
+            style={{ background: 'linear-gradient(to right, rgba(3,7,18,1) 0%, rgba(3,7,18,0.92) 30%, rgba(3,7,18,0) 55%)' }}
+            aria-hidden="true"
+          />
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-14">
             <div className="max-w-xl">
               <div className="w-20 h-10 sm:w-24 sm:h-12 relative mb-3 opacity-90">
