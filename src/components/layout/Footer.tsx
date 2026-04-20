@@ -20,8 +20,8 @@ const footerLinks = {
     { name: 'TSC', href: '/katalog?producent=tsc' },
   ],
   landingi: [
-    { name: 'Zebra ZT411 — drukarka etykiet', href: 'https://www.zt411.pl' },
-    { name: 'Zebra TC22 — terminal mobilny', href: 'https://tc22.pl' },
+    { name: 'Zebra ZT411', href: 'https://www.zt411.pl' },
+    { name: 'Zebra TC22', href: 'https://tc22.pl' },
   ],
   serwis: [
     { name: 'Serwis drukarek Zebra', href: 'https://serwis-zebry.pl/serwis-drukarek-zebra' },
@@ -151,7 +151,7 @@ export default function Footer() {
 
             {/* Landingi produktowe */}
             <div className="text-center">
-              <h4 className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-3 sm:mb-5">Landingi produktowe</h4>
+              <h4 className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-3 sm:mb-5">Landingi</h4>
               <ul className="space-y-2 sm:space-y-3">
                 {footerLinks.landingi.map((link) => (
                   <li key={link.href}>
