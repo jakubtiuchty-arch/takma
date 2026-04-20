@@ -20,7 +20,7 @@ const footerLinks = {
     { name: 'TSC', href: '/katalog?producent=tsc' },
   ],
   landingi: [
-    { name: 'Zebra ZT411', href: 'https://www.zt411.pl' },
+    { name: 'Zebra ZT411', href: 'https://zebrazt411.pl' },
     { name: 'Zebra TC22', href: 'https://tc22.pl' },
   ],
   serwis: [
