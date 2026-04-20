@@ -1,0 +1,447 @@
+# Disavow file for takma.com.pl — TIGHT (agresywny)
+# Generated: 2026-04-19
+# Total domains: 221
+# Format: GSC disavow (domain: prefix)
+
+# ahrefs_spam_flag
+domain:99-best.site
+# ahrefs_spam_flag
+domain:ahrefs-links.com
+# ahrefs_spam_flag
+domain:aiarticledirectory.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:alexgeorgieva.com
+# ahrefs_spam_flag, dr<5_traffic<50, spam_anchor(3)
+domain:alilawservices.com
+# ahrefs_spam_flag
+domain:allbusinessweb.site
+# ahrefs_spam_flag
+domain:allistingdirectory.com
+# ahrefs_spam_flag
+domain:alljobs.info
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:annawang.com
+# ahrefs_spam_flag
+domain:antalyaweb.ru
+# dr<5_traffic<50
+domain:appliedecology.com.au
+# ahrefs_spam_flag
+domain:articlement.com
+# ahrefs_spam_flag
+domain:artsjc.org
+# ahrefs_spam_flag, spam_tld:.icu
+domain:atomizelink.icu
+# ahrefs_spam_flag
+domain:authorityprodirectory.com
+# ahrefs_spam_flag
+domain:backlinker.shop
+# ahrefs_spam_flag, dr0_traffic0
+domain:barlaas.com
+# ahrefs_spam_flag, dr0_traffic0
+domain:beijsuites.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:bena-india.com
+# spam_anchor(2)
+domain:benlandscaping.co.uk
+# ahrefs_spam_flag
+domain:bestbusniessdirectory.com
+# ahrefs_spam_flag
+domain:besttopdirectory.com
+# ahrefs_spam_flag, dr<5_traffic<50, spam_anchor(1)
+domain:blackhillprivatefinance.com
+# ahrefs_spam_flag
+domain:bookme.agency
+# ahrefs_spam_flag
+domain:booksreadr.org
+# ahrefs_spam_flag, dr0_traffic0
+domain:businesslistingportal.com
+# ahrefs_spam_flag
+domain:businessvocal.com
+# ahrefs_spam_flag
+domain:businesswebsitesdirectory.com
+# ahrefs_spam_flag
+domain:buybacklinks.agency
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:campbellah.com
+# ahrefs_spam_flag
+domain:cascade-demoteam.com
+# ahrefs_spam_flag, spam_anchor(1)
+domain:ceremoniiumaniste.ro
+# ahrefs_spam_flag
+domain:clicktobuydirectory.com
+# ahrefs_spam_flag
+domain:clicktorankdirectoy.com
+# ahrefs_spam_flag, dr0_traffic0
+domain:codzaloghomes.co.za
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:credit-resolutions.com
+# ahrefs_spam_flag
+domain:databoostdirectory.com
+# ahrefs_spam_flag, dr<5_traffic<50, spam_anchor(1)
+domain:datanerv.com
+# ahrefs_spam_flag
+domain:developmentmi.com
+# ahrefs_spam_flag
+domain:directorycloudhub.com
+# ahrefs_spam_flag, dr0_traffic0
+domain:diwakararyal.com
+# ahrefs_spam_flag, dr0_traffic0
+domain:dktecnics.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:doctorcleanrx.com
+# ahrefs_spam_flag
+domain:dodaj-strone.com.pl
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:domain.com.lc
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:domainanalysis.org
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:domainsc.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:domodco.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:egyptiandirectory.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:eliterankdirectory.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:elpostrebodas.es
+# ahrefs_spam_flag, dr<5_traffic<50, spam_anchor(2)
+domain:enterprisecaresupport.org.uk
+# ahrefs_spam_flag, dr0_traffic0
+domain:enterprisedirectoryhub.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:farzedi.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:friidamedica.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:fullhidraulica.cl
+# ahrefs_spam_flag
+domain:gemsnet.pl
+# ahrefs_spam_flag
+domain:getwebsiteworth.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:globalecommerce.org
+# ahrefs_spam_flag
+domain:guestpostsdirectory.com
+# ahrefs_spam_flag
+domain:guestpostwebdirectory.com
+# ahrefs_spam_flag
+domain:heavenarticle.com
+# ahrefs_spam_flag
+domain:highauthoritydirectory.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:hnbc.ie
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:hotentique.com
+# ahrefs_spam_flag
+domain:howtorankfast.site
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:indiansleaks.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:indtryk.com
+# ahrefs_spam_flag, dr<5_traffic<50, spam_anchor(3)
+domain:interpreterapprentice.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:jeleed.ly
+# ahrefs_spam_flag
+domain:jirathaimassage.co.uk
+# ahrefs_spam_flag
+domain:katalogseo.net.pl
+# ahrefs_spam_flag
+domain:kestam.com.mx
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:king-labs.com
+# ahrefs_spam_flag
+domain:kingranks.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:kirokurt.dk
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:kostar.org
+# ahrefs_spam_flag, dr0_traffic0
+domain:kostasvadoklis.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:landscapingparmaohio.com
+# ahrefs_spam_flag, dr<5_traffic<50, spam_anchor(1)
+domain:lawnservicenear-me.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:lichosyt.com.pl
+# ahrefs_spam_flag
+domain:linkboostdirectory.com
+# ahrefs_spam_flag
+domain:linkdirectoryzone.com
+# ahrefs_spam_flag
+domain:linkflowdirectory.com
+# ahrefs_spam_flag
+domain:linkingdirectory.com
+# ahrefs_spam_flag
+domain:linkpitcherdirectory.com
+# ahrefs_spam_flag
+domain:linkpointdirectory.com
+# ahrefs_spam_flag, spam_anchor(1)
+domain:lovewillfindu.com
+# ahrefs_spam_flag
+domain:lubricanteszamora.cl
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:luxegroups.com
+# ahrefs_spam_flag
+domain:maedchendiskothek.de
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:majuelos.wine
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:maksymalnie.pl
+# ahrefs_spam_flag
+domain:marketingdirectoy.com
+# ahrefs_spam_flag, spam_tld:.click
+domain:marketingexperts.click
+# ahrefs_spam_flag
+domain:marketinghubdirectory.com
+# ahrefs_spam_flag
+domain:marketinghubdirectoy.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:maryemme.com
+# ahrefs_spam_flag
+domain:masztu.pl
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:matkopen.be
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:mattresstalent.com
+# ahrefs_spam_flag
+domain:mediapostdirectory.com
+# ahrefs_spam_flag
+domain:mediazonedirectory.com
+# ahrefs_spam_flag
+domain:mediedirectory.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:metatecnocultural.org
+# ahrefs_spam_flag
+domain:microlinkofworld.site
+# ahrefs_spam_flag
+domain:microlinksite.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:mjmconsult.uk
+# ahrefs_spam_flag
+domain:mostrankdirectory.com
+# ahrefs_spam_flag
+domain:mostrankingdirectory.com
+# ahrefs_spam_flag
+domain:motherhoodcorner.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:mulchdeliveredparmaohio.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:mulchdeliveryparmaohio.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:musweb.org
+# dr0_traffic0
+domain:nashvillepavers.com
+# ahrefs_spam_flag, spam_anchor(1)
+domain:natafoxy.ru
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:neobiznes.pl
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:nexusnext.agency
+# ahrefs_spam_flag, dr0_traffic0
+domain:oakbrookpark.org
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:pantoficurati.ro
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:parmamulchdelivery.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:parmaohiolawnservice.com
+# ahrefs_spam_flag
+domain:pgdue.com
+# ahrefs_spam_flag
+domain:pick4d.live
+# dr0_traffic0
+domain:polhit.com.pl
+# ahrefs_spam_flag
+domain:postsdirectory.com
+# ahrefs_spam_flag
+domain:powerlinkdirectory.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:primecompanydirectory.com
+# ahrefs_spam_flag
+domain:primeseodirectory.com
+# ahrefs_spam_flag
+domain:primesolodirectory.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:printritemedia.co.ke
+# ahrefs_spam_flag
+domain:prolistingdirectory.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:quayaks.com
+# ahrefs_spam_flag, spam_tld:.party
+domain:quero.party
+# ahrefs_spam_flag, dr<5_traffic<50, spam_anchor(1)
+domain:ramingenieria.cl
+# ahrefs_spam_flag
+domain:rankfastdirectory.com
+# ahrefs_spam_flag
+domain:rankingwebdirectory.com
+# ahrefs_spam_flag
+domain:rankongoogle.agency
+# ahrefs_spam_flag
+domain:rankpilot.shop
+# ahrefs_spam_flag
+domain:rankzonedirectory.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:remorquage-ile-de-france.com
+# ahrefs_spam_flag, dr0_traffic0
+domain:rigarts.id
+# ahrefs_spam_flag
+domain:saasdirectoryzone.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:salis.or.at
+# ahrefs_spam_flag
+domain:searchstackdirectory.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:seguro-cr.com
+# ahrefs_spam_flag
+domain:semrushdirectory.com
+# ahrefs_spam_flag
+domain:seoagency.sale
+# ahrefs_spam_flag
+domain:seoboast.site
+# ahrefs_spam_flag
+domain:seodirectorypro.com
+# ahrefs_spam_flag
+domain:seologixdirectory.com
+# ahrefs_spam_flag
+domain:seoprodirectory.com
+# ahrefs_spam_flag
+domain:seotrafficdirectory.com
+# ahrefs_spam_flag
+domain:seowebsitesdirectory.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:seventinolights.gr
+# dr0_traffic0
+domain:shopbetreiber-blog.shop
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:signature-services.fr
+# ahrefs_spam_flag
+domain:skylinkseo.site
+# ahrefs_spam_flag
+domain:smartdirectoryhub.com
+# ahrefs_spam_flag
+domain:smartwaydirectory.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:snowplowingparmaohio.com
+# ahrefs_spam_flag
+domain:socialnewsdirectory.com
+# ahrefs_spam_flag
+domain:socialzonedirectory.com
+# ahrefs_spam_flag
+domain:solidnypartner.eu
+# ahrefs_spam_flag
+domain:starcourts.com
+# ahrefs_spam_flag
+domain:superbhubdirectory.com
+# ahrefs_spam_flag
+domain:sureprofitscoach.com
+# ahrefs_spam_flag
+domain:szukaj24.pl
+# ahrefs_spam_flag
+domain:taichiperson.com
+# ahrefs_spam_flag
+domain:teamconcept.fr
+# ahrefs_spam_flag, dr<5_traffic<50, spam_anchor(1)
+domain:thabethetp.co.za
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:thefloorgallery.ie
+# ahrefs_spam_flag
+domain:themasterdirectory.com
+# dr0_traffic0
+domain:theseohighranking.shop
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:ticketingadvisor.com
+# ahrefs_spam_flag, dr<5_traffic<50, spam_anchor(1)
+domain:tienequevenirasiestadicho.com
+# dr0_traffic0
+domain:tkplumbing.co.za
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:top-wanted.pl
+# ahrefs_spam_flag
+domain:topbillion.site
+# ahrefs_spam_flag
+domain:topdomaindirectory.com
+# ahrefs_spam_flag
+domain:topmarketingweb.site
+# ahrefs_spam_flag
+domain:topmillion.site
+# ahrefs_spam_flag
+domain:topsiterankdirectory.com
+# ahrefs_spam_flag
+domain:toptierdirectory.com
+# ahrefs_spam_flag
+domain:toptohigh.com
+# ahrefs_spam_flag
+domain:topviraldirectory.com
+# ahrefs_spam_flag
+domain:topworlddirectory.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:torreguil4.com
+# ahrefs_spam_flag
+domain:traffichubdirectory.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:tree-tech.co.uk
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:uniallianze.com
+# ahrefs_spam_flag, dr0_traffic0
+domain:unique-scarves.com
+# ahrefs_spam_flag
+domain:universallearningacademy.com
+# ahrefs_spam_flag
+domain:usaseodirectory.com
+# ahrefs_spam_flag
+domain:usdirectorylist.com
+# ahrefs_spam_flag
+domain:velesonline.ru
+# ahrefs_spam_flag
+domain:verifieddirectory.com
+# dr0_traffic0
+domain:vhcommunicatie.nl
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:wamamall.com
+# ahrefs_spam_flag
+domain:wayranks.com
+# ahrefs_spam_flag
+domain:webbranddirectory.com
+# ahrefs_spam_flag
+domain:webdirectoryofworld.site
+# ahrefs_spam_flag
+domain:webguestpostsdirectory.com
+# ahrefs_spam_flag
+domain:webpostdirectory.com
+# ahrefs_spam_flag
+domain:webranksofworld.site
+# ahrefs_spam_flag
+domain:webscountry.com
+# ahrefs_spam_flag
+domain:websiteslinkdirectory.com
+# ahrefs_spam_flag
+domain:websiteworld.site
+# ahrefs_spam_flag
+domain:websiteworlddirectory.com
+# ahrefs_spam_flag
+domain:webzonedirectory.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:workers.directory
+# ahrefs_spam_flag
+domain:worldbusinesspromote.com
+# ahrefs_spam_flag
+domain:worldmarketingdirectoy.com
+# ahrefs_spam_flag
+domain:worldseodirectory.com
+# ahrefs_spam_flag
+domain:worldsitedirectory.com
+# ahrefs_spam_flag
+domain:worldtopwebsite.com
+# ahrefs_spam_flag
+domain:worldwebsitesdirectory.com
+# ahrefs_spam_flag
+domain:worldwidetopweb.site
+# ahrefs_spam_flag
+domain:worldwidetopwebsite.site
+# ahrefs_spam_flag
+domain:worldzonedirectory.com
+# ahrefs_spam_flag, dr<5_traffic<50
+domain:yuenyr.ru

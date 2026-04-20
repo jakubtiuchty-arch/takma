@@ -19,6 +19,10 @@ const footerLinks = {
     { name: 'Newland', href: '/katalog?producent=newland' },
     { name: 'TSC', href: '/katalog?producent=tsc' },
   ],
+  landingi: [
+    { name: 'Zebra ZT411 — drukarka etykiet', href: 'https://www.zt411.pl' },
+    { name: 'Zebra TC22 — terminal mobilny', href: 'https://tc22.pl' },
+  ],
   serwis: [
     { name: 'Serwis drukarek Zebra', href: 'https://serwis-zebry.pl/serwis-drukarek-zebra' },
     { name: 'Instrukcje obsługi (PL)', href: 'https://serwis-zebry.pl/instrukcje' },
@@ -116,7 +120,7 @@ export default function Footer() {
 
         {/* Links section */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 sm:gap-8 lg:gap-10">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8 lg:gap-10">
             {/* Produkty */}
             <div className="text-center">
               <h4 className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-3 sm:mb-5">Produkty</h4>
@@ -140,6 +144,20 @@ export default function Footer() {
                     <Link href={link.href} className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors duration-200">
                       {link.name}
                     </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Landingi produktowe */}
+            <div className="text-center">
+              <h4 className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-3 sm:mb-5">Landingi produktowe</h4>
+              <ul className="space-y-2 sm:space-y-3">
+                {footerLinks.landingi.map((link) => (
+                  <li key={link.href}>
+                    <a href={link.href} target="_blank" rel="noopener" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors duration-200">
+                      {link.name}
+                    </a>
                   </li>
                 ))}
               </ul>
