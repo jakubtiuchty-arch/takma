@@ -88,16 +88,16 @@ export default function BrandServicePage({ params }: Props) {
       {brand.heroImage ? (
         // Dark hero z obrazem tła
         <section className="relative overflow-hidden border-b border-gray-800" style={{ backgroundColor: '#0B1520' }}>
-          {/* Obraz rozciągnięty na całą szerokość (bg-cover) — brak szwu z tłem */}
+          {/* Obraz — contain (brak obcinania), right (po prawej) */}
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0 bg-contain bg-right bg-no-repeat"
             style={{ backgroundImage: `url(${brand.heroImage})` }}
             aria-hidden="true"
           />
-          {/* Gradient overlay — zaciemnia lewą stronę dla czytelności tekstu, płynne przejście do przeźroczystości */}
+          {/* Mocny overlay ukrywający całkowicie obszar siatki na obrazie — pokazuje tylko drukarkę po prawej */}
           <div
             className="absolute inset-0"
-            style={{ background: 'linear-gradient(to right, rgba(11,21,32,1) 0%, rgba(11,21,32,0.98) 25%, rgba(11,21,32,0.7) 45%, rgba(11,21,32,0) 60%)' }}
+            style={{ background: 'linear-gradient(to right, #0B1520 0%, #0B1520 55%, rgba(11,21,32,0.92) 63%, rgba(11,21,32,0.5) 70%, rgba(11,21,32,0) 76%)' }}
             aria-hidden="true"
           />
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-14">
