@@ -8,6 +8,7 @@ import { CommonIssues } from './_components/CommonIssues'
 import { RmaProcessSteps } from './_components/RmaProcessSteps'
 import { FaqAEO } from './_components/FaqAEO'
 import { ServiceManagerContact } from './_components/ServiceManagerContact'
+import { ReviewsSection } from './_components/ReviewsSection'
 import RepairForm from './_components/RepairForm'
 
 export default function SerwisPage() {
@@ -28,6 +29,7 @@ export default function SerwisPage() {
       <SupportedBrandsGrid />
       <DeviceCategoriesAEO />
       <PricingTable />
+      <ReviewsSection />
       <CommonIssues />
       <RmaProcessSteps />
       <ZebraAuthorizedBanner />

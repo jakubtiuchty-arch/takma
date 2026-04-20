@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Serwis i naprawa drukarek etykiet, terminali mobilnych i skanerów | TAKMA',
+  title: {
+    absolute: 'Serwis i naprawa drukarek etykiet, terminali mobilnych i skanerów | TAKMA',
+  },
   description: 'Profesjonalny serwis pogwarancyjny urządzeń AutoID — TAKMA Wrocław. Darmowa diagnostyka 48h. Autoryzowany serwis Zebra. Naprawiamy Honeywell, Datalogic, Brother, M3 Mobile, Newland, Citizen, Godex. Cała Polska.',
   openGraph: {
     title: 'Serwis i naprawa drukarek etykiet, terminali i skanerów | TAKMA',
