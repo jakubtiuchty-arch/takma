@@ -33,6 +33,7 @@ export const serviceBrands: ServiceBrand[] = [
     products: 'Drukarki Honeywell i Intermec (PM45, PM43, PX940, PD45), terminale CT/CK/EDA, skanery Voyager i Xenon',
     heroTitle: 'Serwis Honeywell i Intermec — drukarki, terminale, skanery',
     heroDescription: 'Pogwarancyjny serwis urządzeń Honeywell i Intermec: drukarki PM45/PX940/PD45 oraz legacy PM43/PM4i/PX4i/PX6i, terminale CT/CK/EDA, skanery Voyager i Xenon. Oryginalne części, wysyłka z całej Polski.',
+    heroImage: '/images/serwis-hero/honeywell-hero.webp',
     heroLead: 'TAKMA serwisuje urządzenia Honeywell od ponad 20 lat — w tym starsze drukarki, terminale i skanery Intermec, przejęte przez Honeywell w 2013 roku i wciąż powszechnie używane w polskich magazynach. Naprawiamy pełny zakres urządzeń AutoID obu marek: drukarki etykiet (biurkowe, przemysłowe, mobilne), terminale mobilne oraz skanery kodów kreskowych. Pracujemy na oryginalnych częściach producenta — zachowujesz klasę IP65/IP67 i deklarowane parametry druku.',
     metaTitle: 'Serwis Honeywell i Intermec — drukarki, terminale | TAKMA',
     metaDescription: 'Pogwarancyjny serwis Honeywell/Intermec: drukarki PM45, PM43, PX940, PD45, terminale CT40, EDA51, skanery Voyager, Xenon. Diagnostyka 48h — TAKMA Wrocław.',
