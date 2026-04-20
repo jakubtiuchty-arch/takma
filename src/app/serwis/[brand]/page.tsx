@@ -87,16 +87,16 @@ export default function BrandServicePage({ params }: Props) {
       {/* Hero */}
       {brand.heroImage ? (
         // Dark hero z obrazem tła
-        <section className="relative bg-gray-950 overflow-hidden border-b border-gray-800">
+        <section className="relative overflow-hidden border-b border-gray-800" style={{ backgroundColor: '#0B1520' }}>
           <div
-            className="absolute inset-0 bg-contain bg-right bg-no-repeat"
+            className="absolute inset-0 bg-cover bg-right bg-no-repeat"
             style={{ backgroundImage: `url(${brand.heroImage})` }}
             aria-hidden="true"
           />
-          {/* Gradient overlay — zaciemnia tylko lewą 45%, reszta przeźroczysta */}
+          {/* Gradient overlay — zaciemnia tylko lewą 40% dla czytelności tekstu */}
           <div
             className="absolute inset-0"
-            style={{ background: 'linear-gradient(to right, rgba(3,7,18,1) 0%, rgba(3,7,18,0.92) 30%, rgba(3,7,18,0) 55%)' }}
+            style={{ background: 'linear-gradient(to right, rgba(11,21,32,1) 0%, rgba(11,21,32,0.88) 30%, rgba(11,21,32,0) 55%)' }}
             aria-hidden="true"
           />
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-14">
