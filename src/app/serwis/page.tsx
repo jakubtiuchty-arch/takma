@@ -10,10 +10,33 @@ import { FaqAEO } from './_components/FaqAEO'
 import { ServiceManagerContact } from './_components/ServiceManagerContact'
 // import { ReviewsSection } from './_components/ReviewsSection' // TODO: odkomentuj gdy będą prawdziwe case studies
 import RepairForm from './_components/RepairForm'
+import { faqEntries } from './layout'
 
 export default function SerwisPage() {
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://www.takma.com.pl' },
+      { '@type': 'ListItem', position: 2, name: 'Serwis', item: 'https://www.takma.com.pl/serwis' },
+    ],
+  }
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqEntries.map(faq => ({
+      '@type': 'Question',
+      name: faq.name,
+      acceptedAnswer: { '@type': 'Answer', text: faq.text },
+    })),
+  }
+
   return (
     <main className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+
       {/* Breadcrumbs */}
       <nav aria-label="Breadcrumb" className="bg-gray-50 border-b border-gray-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">

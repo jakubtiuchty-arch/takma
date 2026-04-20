@@ -199,6 +199,27 @@ export default function BrandServicePage({ params }: Props) {
         </div>
       </section>
 
+      {/* Cross-sell do katalogu */}
+      <section className="bg-gradient-to-br from-lime-50 to-white py-12 border-b border-gray-100">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
+            Szukasz nowego urządzenia {brand.name}?
+          </h2>
+          <p className="text-sm text-gray-600 mb-5 max-w-xl mx-auto">
+            Zobacz aktualną ofertę sprzętu {brand.name} w sklepie TAKMA — drukarki, terminale, skanery i akcesoria w cenach B2B.
+          </p>
+          <Link
+            href={`/katalog?producent=${brand.slug}`}
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gray-900 text-white font-semibold hover:bg-gray-700 transition-colors"
+          >
+            Zobacz urządzenia {brand.name} w sklepie
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+      </section>
+
       {/* Other brands cross-link */}
       <OtherBrandsLinks currentSlug={brand.slug} />
 

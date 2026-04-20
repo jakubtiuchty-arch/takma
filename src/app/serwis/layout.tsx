@@ -16,86 +16,86 @@ export const metadata: Metadata = {
   },
 }
 
+export const faqEntries = [
+  {
+    name: "Dlaczego drukarka etykiet przepuszcza puste strony?",
+    text: "Najczęstszą przyczyną jest rozkalibrowany czujnik przerw (gap sensor), zabrudzenie czujnika lub użycie niewłaściwych materiałów eksploatacyjnych. Wymaga to autokalibracji sprzętu lub interwencji serwisu w celu naprawy optyki czujnika."
+  },
+  {
+    name: "Terminal Honeywell CT40/EDA51 nie ładuje baterii",
+    text: "W terminalach mobilnych Honeywell serii CT i EDA przyczyną może być uszkodzenie złącza ładowania, wyeksploatowanie pinów w stacji dokującej lub zużycie baterii. Serwis mierzy rezystancję złącza i przelutowuje moduł zasilania. Dotyczy również terminali Honeywell CK65, Dolphin i ScanPal."
+  },
+  {
+    name: "Skaner Datalogic Gryphon / Honeywell Voyager pika, ale nie przesyła danych",
+    text: "Zazwyczaj problem konfiguracji — brakuje sufiksu. W skanerach Datalogic Gryphon i Honeywell Voyager/Xenon można to naprawić skanując kod konfiguracyjny z instrukcji producenta. W przypadku poważniejszych problemów z modułem komunikacji wymagana jest diagnostyka serwisowa."
+  },
+  {
+    name: "Drukarka wydrukowała etykietę z białymi, pionowymi pasami",
+    text: "Pionowe nienadrukowane linie oznaczają wypalone punkty grzewcze na głowicy drukującej. Usterka wymaga fizycznej wymiany głowicy. Dobieramy i wymieniamy głowice do drukarek termicznych i termotransferowych."
+  },
+  {
+    name: "Ekran dotykowy terminala Datalogic Memor / M3 Mobile nie reaguje na dotyk",
+    text: "Uszkodzenie digitizera w terminalach Datalogic Memor 10/20/30/35, Skorpio X5 czy M3 Mobile następuje w wyniku upadku lub ekstremalnych temperatur. Naprawa polega na wymianie panelu LCD + Digitizer z oceną szczelności obudowy IP65/IP67."
+  },
+  {
+    name: "Drukarka etykiet Godex / Citizen grzeje się i wyłącza w trakcie druku",
+    text: "Przegrzewanie drukarek Godex (G500, RT700) i Citizen (CL-S, CL-E) może wskazywać na uszkodzony zasilacz, zablokowany wentylator lub nieaktualny firmware. Sprawdzamy napięcie zasilania, drożność wentylacji i aktualizujemy oprogramowanie. Dotyczy również drukarek TSC i SATO."
+  },
+  {
+    name: "Terminal mobilny nie łączy się z siecią Wi-Fi",
+    text: "Problem może wynikać z uszkodzonego modułu WLAN, nieprawidłowej konfiguracji profilu sieci lub nieaktualnych sterowników radiowych. Diagnozujemy moduł antenowy i w razie potrzeby wymieniamy podzespół."
+  },
+  {
+    name: "Skaner Newland HR / Honeywell Xenon nie odczytuje kodów QR / 2D",
+    text: "W skanerach Newland HR i Honeywell Xenon 1950/1900 brak odczytu kodów 2D (QR, DataMatrix) może wynikać z wyłączonej symbologii, zabrudzenia okna imager'a lub uszkodzenia modułu odczytującego. Diagnostyka serwisowa modułu imager."
+  },
+  {
+    name: "Ile trwa naprawa terminala magazynowego w TAKMA?",
+    text: "Standardowa diagnoza odbywa się w ciągu 48 godzin od dostarczenia urządzenia. Czas naprawy zależy od dostępności części, najczęściej nie przekracza 5-7 dni roboczych."
+  },
+  {
+    name: "Ile kosztuje naprawa drukarki etykiet?",
+    text: "Diagnostyka jest darmowa przy zleceniu naprawy. Orientacyjne ceny: wymiana głowicy biurkowej od 430 PLN netto, przemysłowej od 1 600 PLN netto, wałka dociskowego od 150 PLN netto, płyty głównej od 300 PLN netto."
+  },
+  {
+    name: "Czy naprawiacie urządzenia AutoID po gwarancji?",
+    text: "Tak, prowadzimy kompleksowe naprawy pogwarancyjne urządzeń marek Honeywell, Datalogic, Brother, M3 Mobile, Newland, Citizen i Godex. Jako autoryzowany serwis Zebra mamy bezpośredni dostęp do oryginalnych części."
+  },
+  {
+    name: "Czy naprawiacie urządzenia z całej Polski?",
+    text: "Tak, obsługujemy klientów z całej Polski — Warszawa, Kraków, Poznań, Łódź, Gdańsk, Katowice i inne miasta. Urządzenie można dostarczyć osobiście do Wrocławia lub wysłać kurierem. Po naprawie odsyłamy sprzęt na nasz koszt (przy naprawach powyżej 200 PLN netto)."
+  },
+  {
+    name: "Czym różni się serwis gwarancyjny od pogwarancyjnego?",
+    text: "Serwis gwarancyjny pokrywa producent, my jako autoryzowany partner realizujemy naprawę. Serwis pogwarancyjny — klient pokrywa koszt naprawy i części, ale zyskuje naszą gwarancję 3-6 miesięcy."
+  },
+  {
+    name: "Jakie są najczęstsze usterki drukarek etykiet Zebra?",
+    text: "Najczęstsze usterki: zużyta głowica (białe pasy), rozkalibrowany czujnik przerw (puste etykiety), uszkodzony wałek dociskowy (nierówny nadruk), problem z zasilaczem i zużyte łożyska nawijaka taśmy."
+  },
+  {
+    name: "Co to jest kontrakt serwisowy Zebra OneCare?",
+    text: "Zebra OneCare to program rozszerzonych usług serwisowych producenta obejmujący naprawy gwarancyjne, wymianę urządzeń i wsparcie techniczne. TAKMA jako autoryzowany partner Zebra oferuje sprzedaż i obsługę kontraktów OneCare Essential, Select i SV."
+  },
+  {
+    name: "Jak przebiega kalibracja drukarki etykiet?",
+    text: "Kalibracja drukarki etykiet w serwisie TAKMA obejmuje: regulację czujnika przerw (gap sensor) lub czarnego znaku (black mark), kalibrację głowicy drukującej (docisk, temperatura), ustawienie prowadnic nośnika i testowy wydruk kontrolny. Prawidłowa kalibracja eliminuje problemy z przepuszczaniem pustych etykiet, nierównym nadrukiem i błędami Media Out."
+  },
+  {
+    name: "Ile trwa wymiana ekranu w terminalu mobilnym?",
+    text: "Wymiana ekranu (LCD + digitizer) w terminalu mobilnym w serwisie TAKMA trwa zazwyczaj 5–7 dni roboczych od dostarczenia urządzenia. Na wymieniony ekran udzielamy 3 miesięcy gwarancji. Po naprawie weryfikujemy szczelność obudowy IP65/IP67."
+  },
+  {
+    name: "Czy TAKMA serwisuje drukarki etykiet innych marek niż Zebra?",
+    text: "Tak — oprócz autoryzowanego serwisu Zebra, TAKMA naprawia drukarki etykiet marek Honeywell, Citizen, Godex, TSC, Brother i SATO. Zakres napraw obejmuje wymianę głowic, wałków dociskowych, płyt głównych, zasilaczy oraz kalibrację czujników."
+  }
+]
+
 export default function SerwisLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  const faqEntries = [
-    {
-      name: "Dlaczego drukarka etykiet przepuszcza puste strony?",
-      text: "Najczęstszą przyczyną jest rozkalibrowany czujnik przerw (gap sensor), zabrudzenie czujnika lub użycie niewłaściwych materiałów eksploatacyjnych. Wymaga to autokalibracji sprzętu lub interwencji serwisu w celu naprawy optyki czujnika."
-    },
-    {
-      name: "Terminal Honeywell CT40/EDA51 nie ładuje baterii",
-      text: "W terminalach mobilnych Honeywell serii CT i EDA przyczyną może być uszkodzenie złącza ładowania, wyeksploatowanie pinów w stacji dokującej lub zużycie baterii. Serwis mierzy rezystancję złącza i przelutowuje moduł zasilania. Dotyczy również terminali Honeywell CK65, Dolphin i ScanPal."
-    },
-    {
-      name: "Skaner Datalogic Gryphon / Honeywell Voyager pika, ale nie przesyła danych",
-      text: "Zazwyczaj problem konfiguracji — brakuje sufiksu. W skanerach Datalogic Gryphon i Honeywell Voyager/Xenon można to naprawić skanując kod konfiguracyjny z instrukcji producenta. W przypadku poważniejszych problemów z modułem komunikacji wymagana jest diagnostyka serwisowa."
-    },
-    {
-      name: "Drukarka wydrukowała etykietę z białymi, pionowymi pasami",
-      text: "Pionowe nienadrukowane linie oznaczają wypalone punkty grzewcze na głowicy drukującej. Usterka wymaga fizycznej wymiany głowicy. Dobieramy i wymieniamy głowice do drukarek termicznych i termotransferowych."
-    },
-    {
-      name: "Ekran dotykowy terminala Datalogic Memor / M3 Mobile nie reaguje na dotyk",
-      text: "Uszkodzenie digitizera w terminalach Datalogic Memor 10/20/30/35, Skorpio X5 czy M3 Mobile następuje w wyniku upadku lub ekstremalnych temperatur. Naprawa polega na wymianie panelu LCD + Digitizer z oceną szczelności obudowy IP65/IP67."
-    },
-    {
-      name: "Drukarka etykiet Godex / Citizen grzeje się i wyłącza w trakcie druku",
-      text: "Przegrzewanie drukarek Godex (G500, RT700) i Citizen (CL-S, CL-E) może wskazywać na uszkodzony zasilacz, zablokowany wentylator lub nieaktualny firmware. Sprawdzamy napięcie zasilania, drożność wentylacji i aktualizujemy oprogramowanie. Dotyczy również drukarek TSC i SATO."
-    },
-    {
-      name: "Terminal mobilny nie łączy się z siecią Wi-Fi",
-      text: "Problem może wynikać z uszkodzonego modułu WLAN, nieprawidłowej konfiguracji profilu sieci lub nieaktualnych sterowników radiowych. Diagnozujemy moduł antenowy i w razie potrzeby wymieniamy podzespół."
-    },
-    {
-      name: "Skaner Newland HR / Honeywell Xenon nie odczytuje kodów QR / 2D",
-      text: "W skanerach Newland HR i Honeywell Xenon 1950/1900 brak odczytu kodów 2D (QR, DataMatrix) może wynikać z wyłączonej symbologii, zabrudzenia okna imager'a lub uszkodzenia modułu odczytującego. Diagnostyka serwisowa modułu imager."
-    },
-    {
-      name: "Ile trwa naprawa terminala magazynowego w TAKMA?",
-      text: "Standardowa diagnoza odbywa się w ciągu 48 godzin od dostarczenia urządzenia. Czas naprawy zależy od dostępności części, najczęściej nie przekracza 5-7 dni roboczych."
-    },
-    {
-      name: "Ile kosztuje naprawa drukarki etykiet?",
-      text: "Diagnostyka jest darmowa przy zleceniu naprawy. Orientacyjne ceny: wymiana głowicy biurkowej od 430 PLN netto, przemysłowej od 1 600 PLN netto, wałka dociskowego od 150 PLN netto, płyty głównej od 300 PLN netto."
-    },
-    {
-      name: "Czy naprawiacie urządzenia AutoID po gwarancji?",
-      text: "Tak, prowadzimy kompleksowe naprawy pogwarancyjne urządzeń marek Honeywell, Datalogic, Brother, M3 Mobile, Newland, Citizen i Godex. Jako autoryzowany serwis Zebra mamy bezpośredni dostęp do oryginalnych części."
-    },
-    {
-      name: "Czy naprawiacie urządzenia z całej Polski?",
-      text: "Tak, obsługujemy klientów z całej Polski — Warszawa, Kraków, Poznań, Łódź, Gdańsk, Katowice i inne miasta. Urządzenie można dostarczyć osobiście do Wrocławia lub wysłać kurierem. Po naprawie odsyłamy sprzęt na nasz koszt (przy naprawach powyżej 200 PLN netto)."
-    },
-    {
-      name: "Czym różni się serwis gwarancyjny od pogwarancyjnego?",
-      text: "Serwis gwarancyjny pokrywa producent, my jako autoryzowany partner realizujemy naprawę. Serwis pogwarancyjny — klient pokrywa koszt naprawy i części, ale zyskuje naszą gwarancję 3-6 miesięcy."
-    },
-    {
-      name: "Jakie są najczęstsze usterki drukarek etykiet Zebra?",
-      text: "Najczęstsze usterki: zużyta głowica (białe pasy), rozkalibrowany czujnik przerw (puste etykiety), uszkodzony wałek dociskowy (nierówny nadruk), problem z zasilaczem i zużyte łożyska nawijaka taśmy."
-    },
-    {
-      name: "Co to jest kontrakt serwisowy Zebra OneCare?",
-      text: "Zebra OneCare to program rozszerzonych usług serwisowych producenta obejmujący naprawy gwarancyjne, wymianę urządzeń i wsparcie techniczne. TAKMA jako autoryzowany partner Zebra oferuje sprzedaż i obsługę kontraktów OneCare Essential, Select i SV."
-    },
-    {
-      name: "Jak przebiega kalibracja drukarki etykiet?",
-      text: "Kalibracja drukarki etykiet w serwisie TAKMA obejmuje: regulację czujnika przerw (gap sensor) lub czarnego znaku (black mark), kalibrację głowicy drukującej (docisk, temperatura), ustawienie prowadnic nośnika i testowy wydruk kontrolny. Prawidłowa kalibracja eliminuje problemy z przepuszczaniem pustych etykiet, nierównym nadrukiem i błędami Media Out."
-    },
-    {
-      name: "Ile trwa wymiana ekranu w terminalu mobilnym?",
-      text: "Wymiana ekranu (LCD + digitizer) w terminalu mobilnym w serwisie TAKMA trwa zazwyczaj 5–7 dni roboczych od dostarczenia urządzenia. Na wymieniony ekran udzielamy 3 miesięcy gwarancji. Po naprawie weryfikujemy szczelność obudowy IP65/IP67."
-    },
-    {
-      name: "Czy TAKMA serwisuje drukarki etykiet innych marek niż Zebra?",
-      text: "Tak — oprócz autoryzowanego serwisu Zebra, TAKMA naprawia drukarki etykiet marek Honeywell, Citizen, Godex, TSC, Brother i SATO. Zakres napraw obejmuje wymianę głowic, wałków dociskowych, płyt głównych, zasilaczy oraz kalibrację czujników."
-    }
-  ]
-
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -250,37 +250,10 @@ export default function SerwisLayout({
           }
         ]
       },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Strona główna",
-            "item": "https://www.takma.com.pl"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Serwis",
-            "item": "https://www.takma.com.pl/serwis"
-          }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "dateModified": "2026-02-23",
-        "mainEntity": faqEntries.map(faq => ({
-          "@type": "Question",
-          "name": faq.name,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": faq.text
-          }
-        }))
-      }
     ]
   }
+  // FAQPage + BreadcrumbList przeniesione do src/app/serwis/page.tsx (renderowane
+  // tylko na /serwis, żeby nie duplikować się na /serwis/[brand] które mają własne).
 
   return (
     <>
