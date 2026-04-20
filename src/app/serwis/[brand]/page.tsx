@@ -88,25 +88,16 @@ export default function BrandServicePage({ params }: Props) {
       {brand.heroImage ? (
         // Dark hero z obrazem tła
         <section className="relative overflow-hidden border-b border-gray-800" style={{ backgroundColor: '#0B1520' }}>
-          {/* Base layer: siatka CSS rozciągnięta na całą sekcję — zgrana z siatką na obrazie */}
+          {/* Obraz rozciągnięty na całą szerokość (bg-cover) — brak szwu z tłem */}
           <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px)`,
-              backgroundSize: '32px 32px',
-            }}
-            aria-hidden="true"
-          />
-          {/* Obraz drukarki — contain, anchor right */}
-          <div
-            className="absolute inset-0 bg-contain bg-right bg-no-repeat"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${brand.heroImage})` }}
             aria-hidden="true"
           />
-          {/* Gradient overlay — zaciemnia tylko lewą 40% dla czytelności tekstu */}
+          {/* Gradient overlay — zaciemnia lewą stronę dla czytelności tekstu, płynne przejście do przeźroczystości */}
           <div
             className="absolute inset-0"
-            style={{ background: 'linear-gradient(to right, rgba(11,21,32,1) 0%, rgba(11,21,32,0.88) 30%, rgba(11,21,32,0) 55%)' }}
+            style={{ background: 'linear-gradient(to right, rgba(11,21,32,1) 0%, rgba(11,21,32,0.98) 25%, rgba(11,21,32,0.7) 45%, rgba(11,21,32,0) 60%)' }}
             aria-hidden="true"
           />
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-14">
