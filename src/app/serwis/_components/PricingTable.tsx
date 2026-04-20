@@ -1,26 +1,92 @@
-const services = [
+type ServiceRow = {
+  name: string
+  price: string
+  time: string
+  warranty: string
+  highlight?: boolean
+}
+
+type PricingVariant = 'all' | 'printers' | 'devices'
+
+// Wspólne: diagnostyka, płyta główna, czyszczenie, Wi-Fi
+const SHARED_SERVICES: ServiceRow[] = [
   { name: 'Diagnostyka usterki', price: 'GRATIS*', time: '48h', warranty: '—', highlight: true },
+]
+
+// Tylko drukarki
+const PRINTER_SERVICES: ServiceRow[] = [
   { name: 'Wymiana głowicy (drukarki biurkowe)', price: 'od 430 PLN', time: '3–5 dni', warranty: '6 mies.' },
   { name: 'Wymiana głowicy (drukarki przemysłowe)', price: 'od 1 600 PLN', time: '3–5 dni', warranty: '6 mies.' },
   { name: 'Wymiana wałka dociskowego', price: 'od 150 PLN', time: '2–4 dni', warranty: '6 mies.' },
-  { name: 'Naprawa ekranu terminala mobilnego', price: 'od 350 PLN', time: '5–7 dni', warranty: '3 mies.' },
+  { name: 'Kalibracja czujników drukarki', price: 'od 100 PLN', time: '1–2 dni', warranty: '3 mies.' },
+  { name: 'Wymiana obcinaka gilotynowego', price: 'od 200 PLN', time: '2–4 dni', warranty: '3 mies.' },
+  { name: 'Wymiana zasilacza', price: 'od 200 PLN', time: '2–4 dni', warranty: '6 mies.' },
+  { name: 'Czyszczenie / konserwacja drukarki', price: 'od 150 PLN', time: '1–2 dni', warranty: '—' },
+  { name: 'Naprawa płyty głównej', price: 'od 300 PLN', time: '5–10 dni', warranty: '3 mies.' },
+  { name: 'Naprawa modułu sieciowego (Ethernet/Wi-Fi)', price: 'od 250 PLN', time: '5–7 dni', warranty: '3 mies.' },
+]
+
+// Tylko terminale i skanery
+const DEVICE_SERVICES: ServiceRow[] = [
+  { name: 'Naprawa ekranu terminala (LCD + digitizer)', price: 'od 350 PLN', time: '5–7 dni', warranty: '3 mies.' },
   { name: 'Wymiana baterii terminala', price: 'od 120 PLN', time: '1–2 dni', warranty: '3 mies.' },
+  { name: 'Naprawa modułu skanującego (imager)', price: 'od 350 PLN', time: '5–7 dni', warranty: '3 mies.' },
+  { name: 'Naprawa złącza ładowania / USB', price: 'od 250 PLN', time: '3–5 dni', warranty: '3 mies.' },
+  { name: 'Wymiana klawiatury (terminale rugged)', price: 'od 250 PLN', time: '3–5 dni', warranty: '3 mies.' },
+  { name: 'Czyszczenie / konserwacja urządzenia', price: 'od 150 PLN', time: '1–2 dni', warranty: '—' },
+  { name: 'Naprawa płyty głównej', price: 'od 300 PLN', time: '5–10 dni', warranty: '3 mies.' },
+  { name: 'Naprawa modułu Wi-Fi / WLAN', price: 'od 250 PLN', time: '5–7 dni', warranty: '3 mies.' },
+  { name: 'Kontrola szczelności IP65/IP67', price: 'od 180 PLN', time: '3–5 dni', warranty: '—' },
+]
+
+// Wszystko (strona główna /serwis — każdy kategoria urządzeń)
+const ALL_SERVICES: ServiceRow[] = [
+  ...PRINTER_SERVICES.slice(0, 3), // głowice + wałek
+  ...DEVICE_SERVICES.slice(0, 2), // ekran + bateria
   { name: 'Czyszczenie / konserwacja urządzenia', price: 'od 150 PLN', time: '1–2 dni', warranty: '—' },
   { name: 'Naprawa płyty głównej', price: 'od 300 PLN', time: '5–10 dni', warranty: '3 mies.' },
   { name: 'Kalibracja czujników drukarki', price: 'od 100 PLN', time: '1–2 dni', warranty: '3 mies.' },
   { name: 'Naprawa modułu Wi-Fi / WLAN', price: 'od 250 PLN', time: '5–7 dni', warranty: '3 mies.' },
 ]
 
-export function PricingTable() {
+function getServices(variant: PricingVariant): ServiceRow[] {
+  if (variant === 'printers') return [...SHARED_SERVICES, ...PRINTER_SERVICES]
+  if (variant === 'devices') return [...SHARED_SERVICES, ...DEVICE_SERVICES]
+  return [...SHARED_SERVICES, ...ALL_SERVICES]
+}
+
+function getHeadline(variant: PricingVariant): { title: string; subtitle: string } {
+  if (variant === 'printers') {
+    return {
+      title: 'Cennik orientacyjny — naprawa drukarek',
+      subtitle: 'Ceny netto napraw drukarek etykiet biurkowych i przemysłowych. Dokładna wycena po bezpłatnej diagnostyce.',
+    }
+  }
+  if (variant === 'devices') {
+    return {
+      title: 'Cennik orientacyjny — naprawa terminali i skanerów',
+      subtitle: 'Ceny netto napraw terminali mobilnych i skanerów kodów kreskowych. Dokładna wycena po bezpłatnej diagnostyce.',
+    }
+  }
+  return {
+    title: 'Cennik orientacyjny napraw',
+    subtitle: 'Przejrzyste ceny serwisu urządzeń AutoID w TAKMA. Dokładna wycena po bezpłatnej diagnostyce.',
+  }
+}
+
+export function PricingTable({ variant = 'all' }: { variant?: PricingVariant } = {}) {
+  const services = getServices(variant)
+  const { title, subtitle } = getHeadline(variant)
+
   return (
     <section className="bg-gray-50 py-16 sm:py-24">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-            Cennik orientacyjny napraw
+            {title}
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Przejrzyste ceny serwisu urządzeń AutoID w TAKMA. Dokładna wycena po bezpłatnej diagnostyce.
+            {subtitle}
           </p>
         </div>
 

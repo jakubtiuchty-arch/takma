@@ -171,8 +171,8 @@ export default function BrandServicePage({ params }: Props) {
         </div>
       </section>
 
-      {/* Cennik (reused from main) */}
-      <PricingTable />
+      {/* Cennik — wariant dopasowany do kategorii marki */}
+      <PricingTable variant={brand.category === 'drukarki' ? 'printers' : 'devices'} />
 
       {/* Proces RMA (reused) */}
       <RmaProcessSteps />
