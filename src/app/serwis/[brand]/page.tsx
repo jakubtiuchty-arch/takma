@@ -239,8 +239,8 @@ export default function BrandServicePage({ params }: Props) {
         </div>
       </section>
 
-      {/* Cennik — wariant dopasowany do kategorii marki */}
-      <PricingTable variant={brand.category === 'drukarki' ? 'printers' : 'devices'} />
+      {/* Cennik — wariant dopasowany do kategorii marki (override w brand.pricingVariant) */}
+      <PricingTable variant={brand.pricingVariant ?? (brand.category === 'drukarki' ? 'printers' : 'devices')} />
 
       {/* Proces RMA (reused) */}
       <RmaProcessSteps />

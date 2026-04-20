@@ -12,6 +12,9 @@ export type ServiceBrand = {
   heroDescription: string
   /** Opcjonalny obraz tła hero (dark theme). Jeśli brak — jasny hero z logo. */
   heroImage?: string
+  /** Override wariantu cennika. Dla marek które mają np. drukarki + terminale
+   *  (jak Honeywell) ustaw 'all'. Domyślnie wyliczane z category. */
+  pricingVariant?: 'printers' | 'devices' | 'all'
   commonIssues: Array<{ title: string; description: string }>
   faqs: Array<{ q: string; a: string }>
   metaTitle: string
@@ -23,23 +26,31 @@ export const serviceBrands: ServiceBrand[] = [
     slug: 'honeywell',
     name: 'Honeywell',
     logoSrc: '/images/partners/logo_honeywell.png',
-    logoAlt: 'Serwis terminali i skanerów Honeywell',
+    logoAlt: 'Serwis urządzeń Honeywell i Intermec — drukarki, terminale, skanery',
     category: 'mixed',
-    shortDesc: 'Terminale CT, CK, EDA, skanery Voyager, Xenon',
-    products: 'Terminale CT, CK, EDA, skanery Voyager, Xenon',
-    heroTitle: 'Serwis Honeywell — naprawa terminali i skanerów',
-    heroDescription: 'Pogwarancyjny serwis urządzeń Honeywell: terminale mobilne CT/CK/EDA, skanery ręczne Voyager i Xenon. Oryginalne części, gwarancja 3–6 miesięcy, wysyłka z całej Polski.',
-    heroLead: 'TAKMA serwisuje urządzenia Honeywell od ponad 20 lat. Naprawiamy terminale mobilne z rodzin CT (CT40, CT45, CT60), CK (CK65, CK75), EDA (EDA51, EDA52, EDA71) oraz skanery ręczne Voyager (1200g, 1250g, 1452g) i Xenon (1900, 1902, 1950, 1952). Pracujemy na oryginalnych częściach producenta — zachowujesz pełną zgodność IP65/IP67 i deklarowane parametry urządzenia.',
-    metaTitle: 'Serwis Honeywell — naprawa CT40, EDA51, Voyager | TAKMA',
-    metaDescription: 'Pogwarancyjny serwis Honeywell: terminale CT40, CT45, CK65, EDA51, EDA52, skanery Voyager 1250g, Xenon 1950. Darmowa diagnostyka 48h. Wysyłka z całej Polski — TAKMA Wrocław.',
+    pricingVariant: 'all',
+    shortDesc: 'Drukarki PM45/PM43, terminale CT/EDA, skanery Voyager',
+    products: 'Drukarki Honeywell i Intermec (PM45, PM43, PX940, PD45), terminale CT/CK/EDA, skanery Voyager i Xenon',
+    heroTitle: 'Serwis Honeywell i Intermec — drukarki, terminale, skanery',
+    heroDescription: 'Pogwarancyjny serwis urządzeń Honeywell i Intermec: drukarki PM45/PX940/PD45 oraz legacy PM43/PM4i/PX4i/PX6i, terminale CT/CK/EDA, skanery Voyager i Xenon. Oryginalne części, wysyłka z całej Polski.',
+    heroLead: 'TAKMA serwisuje urządzenia Honeywell od ponad 20 lat — w tym starsze drukarki Intermec, przejęte przez Honeywell w 2013 roku i wciąż powszechnie używane w polskich magazynach i produkcji. W drukarkach etykiet naprawiamy zarówno aktualne modele Honeywell (PM45, PM45c, PX45, PX940, PD45, PD45s) jak i legacy Intermec (PM43, PM4i, PX4i, PX6i, PD43, PD41, PC43, PF4i, mobilne PB32/42/50/51). Serwisujemy też drukarki mobilne RP2/RP4 i PR2/PR3, terminale mobilne CT/CK/EDA oraz skanery Voyager i Xenon. Pracujemy na oryginalnych częściach producenta — zachowujesz pełną zgodność IP65/IP67, deklarowane parametry druku i żywotność głowic.',
+    metaTitle: 'Serwis Honeywell i Intermec — drukarki, terminale | TAKMA',
+    metaDescription: 'Pogwarancyjny serwis Honeywell/Intermec: drukarki PM45, PM43, PX940, PD45, terminale CT40, EDA51, skanery Voyager, Xenon. Diagnostyka 48h — TAKMA Wrocław.',
     seriesList: [
-      { series: 'CT Series', description: 'Mobilne terminale do magazynu i logistyki — CT40, CT45, CT47, CT60, CT70 XP. Android Enterprise, skaner 2D, Wi-Fi 6.', typicalDevices: 'CT40, CT40 XP, CT45, CT47, CT60, CT60 XP, CT70' },
-      { series: 'CK Series', description: 'Wytrzymałe terminale rugged z klawiaturą — CK65, CK75. Klasa IP65/IP67, temperatura -20°C.', typicalDevices: 'CK65, CK75, CK3X, CK3R' },
-      { series: 'EDA Series', description: 'Terminale klasy enterprise — EDA51, EDA52, EDA71. Ekran 5-6 cali, skaner 2D, Android 11/13.', typicalDevices: 'EDA51, EDA52, EDA61K, EDA71' },
+      { series: 'Drukarki przemysłowe Honeywell', description: 'Nowa generacja drukarek termotransferowych 4" — PM45, PM45c (kompaktowa), PX45 (elastyczna) oraz PX940 z wbudowaną weryfikacją nadruku etykiety. Rozdzielczości 203/300/600 dpi. Do produkcji, magazynu, logistyki 3PL.', typicalDevices: 'PM45, PM45c, PX45, PX45A, PX940, PX940V' },
+      { series: 'Drukarki biurkowe Honeywell', description: 'Kompaktowe drukarki biurkowe — PD45, PD45s (z wyświetlaczem), PC42, PC42d, PC42t. Do retailu, logistyki, healthcare, administracji.', typicalDevices: 'PD45, PD45S, PC42, PC42d, PC42t, PC23d' },
+      { series: 'Drukarki Intermec (legacy)', description: 'Starsze drukarki Intermec (przejęte przez Honeywell w 2013 r.) wciąż używane w produkcji i magazynach — TAKMA serwisuje pełny zakres. Obsługujemy języki IPL, DP, ZPL, Fingerprint.', typicalDevices: 'PM43, PM43c, PM4i, PX4i, PX6i, PD43, PD41, PC43d, PC43t, PF4i, PF2i' },
+      { series: 'Drukarki mobilne', description: 'Przenośne drukarki z baterią do serwisu w terenie, logistyki kurierskiej, inwentaryzacji — Honeywell RP2, RP2f, RP4, RP4f oraz legacy Intermec PR2, PR3, PB32, PB42, PB50, PB51.', typicalDevices: 'RP2, RP2f, RP4, RP4f, PR2, PR3, PB32, PB42, PB50, PB51' },
+      { series: 'Terminale CT Series', description: 'Mobilne terminale do magazynu i logistyki — CT40, CT45, CT47, CT60, CT70 XP. Android Enterprise, skaner 2D, Wi-Fi 6.', typicalDevices: 'CT40, CT40 XP, CT45, CT47, CT60, CT60 XP, CT70' },
+      { series: 'Terminale CK Series', description: 'Wytrzymałe terminale rugged z klawiaturą — CK65, CK75. Klasa IP65/IP67, temperatura -20°C.', typicalDevices: 'CK65, CK75, CK3X, CK3R' },
+      { series: 'Terminale EDA Series', description: 'Terminale klasy enterprise — EDA51, EDA52, EDA71. Ekran 5-6 cali, skaner 2D, Android 11/13.', typicalDevices: 'EDA51, EDA52, EDA61K, EDA71' },
       { series: 'Skanery Voyager', description: 'Ręczne skanery 1D/2D do handlu i logistyki — Voyager 1200g, 1250g, 1452g (BT), 1602g.', typicalDevices: 'Voyager 1200g, 1250g, 1350g, 1452g, 1602g' },
       { series: 'Skanery Xenon', description: 'Wysokiej klasy skanery 2D imager — Xenon 1900, 1902g, 1950g, 1952g. Kody 2D z wyświetlaczy, DPM, UDI.', typicalDevices: 'Xenon 1900, 1902, 1950, 1950g-HD, 1952, Xenon XP' },
     ],
     commonIssues: [
+      { title: 'PM45 / PM43 — pionowe białe pasy na wydruku etykiety', description: 'Wypalone punkty termiczne na głowicy drukującej (thermal burnline damage) — częsty problem po 30+ km druku. Wymiana oryginalnej głowicy Honeywell 203/300/600 dpi + kalibracja ciśnienia i temperatury. Dotyczy też legacy PM4i, PX4i, PX6i.' },
+      { title: 'Intermec PM4i / PX6i — drukarka nie komunikuje się z hostem', description: 'Uszkodzony moduł Ethernet/Serial lub konflikty starszych języków IPL/Fingerprint. Diagnoza portu, reflashing firmware na odpowiednią wersję, ewentualnie wymiana karty sieciowej lub głównej płyty.' },
+      { title: 'PD45 / PC43 — drukarka wyrzuca "Media Out" mimo założonych etykiet', description: 'Rozkalibrowany czujnik przerw (gap sensor) lub zabrudzone okienko czujnika. Kalibracja + czyszczenie, w razie potrzeby wymiana czujnika transmisyjnego lub refleksyjnego.' },
       { title: 'Terminal CT40/EDA51 nie ładuje baterii', description: 'Najczęściej przyczyną jest uszkodzenie złącza USB-C lub pogięcie pinów w stacji dokującej. Sprawdzamy rezystancję złącza, przelutowujemy kabel zasilający i testujemy pod obciążeniem.' },
       { title: 'Skaner Voyager/Xenon nie czyta kodów 2D', description: 'W skanerach imagerowych (Xenon 1900/1950) zablokowany imager lub zabrudzona optyka. Czyszczenie modułu, reset firmware i kontrola temperatury pracy LED.' },
       { title: 'Ekran CT40/EDA51 pęknięty lub bez dotyku', description: 'Wymiana LCD + digitizera z zachowaniem szczelności IP65/IP67. Używamy oryginalnych paneli Honeywell — naprawa w 5–7 dni.' },
@@ -49,10 +60,12 @@ export const serviceBrands: ServiceBrand[] = [
     ],
     faqs: [
       { q: 'Czy TAKMA jest autoryzowanym serwisem Honeywell?', a: 'Jesteśmy niezależnym, profesjonalnym serwisem pogwarancyjnym urządzeń Honeywell. Pracujemy na oryginalnych częściach Honeywell, stosujemy certyfikowane procedury i dbamy o zachowanie klasy IP65/IP67 po każdej naprawie. Dla napraw gwarancyjnych urządzeń Honeywell kierujemy klientów bezpośrednio do producenta.' },
+      { q: 'Czy naprawiacie starsze drukarki Intermec (PM43, PM4i, PX4i, PX6i, PD43)?', a: 'Tak. Naprawiamy pełen zakres drukarek Intermec — od przemysłowych PM43, PM43c, PM4i, PX4i, PX6i i desktopowych PD41, PD43, PC43d, PC43t po mobilne PB32, PB42, PB50, PB51, PR2 i PR3. Po przejęciu Intermec przez Honeywell w 2013 roku wszystkie te modele są wspierane serwisowo. Wymieniamy głowice, wałki, płyty główne, moduły sieciowe. Części do starszych modeli z czasem dostawy 7–14 dni, ale pełen zakres napraw realizujemy.' },
+      { q: 'Ile kosztuje wymiana głowicy w Honeywell PM45 / PM43?', a: 'Wymiana głowicy w drukarkach przemysłowych Honeywell (PM45, PM45c, PX45, PX940) oraz legacy Intermec (PM43, PM4i, PX4i, PX6i) od 1 600 PLN netto za serwis. Koszt samej głowicy 1 100–2 400 PLN netto zależnie od modelu i rozdzielczości (203/300/600 dpi). Dla drukarek biurkowych (PD45, PD45s, PD43, PC42/PC43) wymiana głowicy od 430 PLN netto.' },
       { q: 'Ile kosztuje naprawa terminala Honeywell CT40/EDA51?', a: 'Diagnostyka jest darmowa przy zleceniu naprawy. Orientacyjne ceny: wymiana ekranu (LCD + digitizer) od 350 PLN netto, wymiana baterii od 120 PLN netto, naprawa złącza ładowania od 250 PLN netto, wymiana obudowy od 180 PLN netto. Dokładna wycena po diagnozie.' },
       { q: 'Czy naprawiacie skanery Honeywell Voyager i Xenon po gwarancji?', a: 'Tak. Naprawiamy wszystkie skanery Honeywell — Voyager 1200g/1250g/1452g/1602g oraz Xenon 1900/1902/1950/1952. Typowe naprawy: wymiana modułu imager, naprawa elektroniki, wymiana kabli i przełączników.' },
-      { q: 'Jak długo trwa naprawa terminala Honeywell?', a: 'Diagnostyka w 48h od dostarczenia. Naprawa zwykle 5–7 dni roboczych (zależy od dostępności części). Dla najpopularniejszych modeli (CT40, EDA51) mamy części na stanie — naprawa ekspresowa 48h.' },
-      { q: 'Czy mogę wysłać terminal Honeywell do TAKMA z Warszawy/Krakowa?', a: 'Tak, obsługujemy klientów z całej Polski. Możesz zamówić kuriera przez nasz formularz (odbiór w 24h) lub wysłać samodzielnie na adres: TAKMA, ul. Poświęcka 1a, 51-128 Wrocław. Przy naprawach powyżej 200 PLN netto odsyłka na nasz koszt.' },
+      { q: 'Jak długo trwa naprawa urządzenia Honeywell / Intermec?', a: 'Diagnostyka w 48h od dostarczenia. Naprawa zwykle 5–7 dni roboczych dla aktualnych modeli (zależy od dostępności części). Dla najpopularniejszych modeli (CT40, EDA51, PM45) mamy części na stanie — naprawa ekspresowa 48h. Dla legacy Intermec (PM4i, PX6i, PB32/42/50) czas naprawy 7–14 dni ze względu na specjalne części.' },
+      { q: 'Czy mogę wysłać urządzenie Honeywell do TAKMA z Warszawy/Krakowa?', a: 'Tak, obsługujemy klientów z całej Polski. Możesz zamówić kuriera przez nasz formularz (odbiór w 24h) lub wysłać samodzielnie na adres: TAKMA, ul. Poświęcka 1a, 51-128 Wrocław. Przy naprawach powyżej 200 PLN netto odsyłka na nasz koszt.' },
     ],
   },
   {
