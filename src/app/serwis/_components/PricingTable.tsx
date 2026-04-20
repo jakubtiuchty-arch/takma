@@ -133,15 +133,14 @@ export function PricingTable({ variant = 'all' }: { variant?: PricingVariant } =
           Ceny orientacyjne netto. Dokładna wycena po diagnostyce urządzenia. Aktualizacja: luty 2026.
         </p>
 
-        <div className="mt-8 text-center">
-          <a
-            href="#zgloszenie"
-            className="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-colors"
-          >
-            Zapytaj o wycenę naprawy
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
-            </svg>
+        <div className="mt-8 text-center text-sm text-gray-600">
+          Masz pytanie o wycenę konkretnego modelu?{' '}
+          <a href="tel:+48601619898" className="font-semibold text-gray-900 hover:text-lime-600 transition-colors whitespace-nowrap">
+            Zadzwoń: +48 601 619 898
+          </a>
+          {' '}lub napisz:{' '}
+          <a href="mailto:serwis@takma.com.pl" className="font-semibold text-gray-900 hover:text-lime-600 transition-colors whitespace-nowrap">
+            serwis@takma.com.pl
           </a>
         </div>
       </div>
