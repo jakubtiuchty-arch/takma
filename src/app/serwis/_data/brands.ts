@@ -116,6 +116,7 @@ export const serviceBrands: ServiceBrand[] = [
     products: 'Terminale UL20, SM20, SL10',
     heroTitle: 'Serwis M3 Mobile — naprawa terminali przemysłowych',
     heroDescription: 'Pogwarancyjny serwis terminali M3 Mobile: UL20, SM20, SM25, SL10, SL20. Wymiana ekranów, baterii, modułów skanujących. Oryginalne części, wysyłka z całej Polski.',
+    heroImage: '/images/serwis-hero/m3-mobile-hero.jpg',
     heroLead: 'M3 Mobile to koreański producent terminali rugged, który zyskuje w Polsce coraz większą popularność jako alternatywa dla Zebra i Honeywell. TAKMA serwisuje terminale M3 Mobile z rodzin UL20 (ultra-rugged), SM20/SM25 (smart mobile), SL10/SL20 (slim compact) — wymieniamy ekrany, baterie, moduły skanujące oraz prowadzimy kalibrację i aktualizacje firmware.',
     metaTitle: 'Serwis M3 Mobile — naprawa terminali UL20, SM20, SL10 | TAKMA',
     metaDescription: 'Pogwarancyjny serwis M3 Mobile: UL20, SM20, SM25, SL10, SL20. Wymiana ekranu, baterii, modułu skanującego. Darmowa diagnostyka 48h — TAKMA Wrocław, cała Polska.',
