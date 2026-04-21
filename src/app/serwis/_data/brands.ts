@@ -219,6 +219,7 @@ export const serviceBrands: ServiceBrand[] = [
     products: 'Drukarki G500, EZ, RT700',
     heroTitle: 'Serwis Godex — naprawa drukarek etykiet',
     heroDescription: 'Pogwarancyjny serwis drukarek Godex: G500, EZ1100, EZ2250i, RT700, RT860i. Wymiana głowic, wałków, płyt głównych. Oryginalne części, wysyłka z całej Polski.',
+    heroImage: '/images/serwis-hero/godex-hero.jpg',
     heroLead: 'Godex to tajwański producent drukarek etykiet, popularny w Polsce dzięki dobrym parametrom za rozsądną cenę — szczególnie w segmencie SMB i logistyki 3PL. TAKMA serwisuje drukarki Godex z linii G (G500, G530), EZ (EZ1100 Plus, EZ1200 Plus, EZ2250i, EZ6200 Plus), RT (RT700, RT730, RT730x, RT860i) oraz większe przemysłowe ZX i EZ6000. Wymieniamy głowice drukujące, wałki, płyty główne, zasilacze i prowadzimy pełną kalibrację.',
     metaTitle: 'Serwis Godex — naprawa drukarek G500, EZ, RT700 | TAKMA',
     metaDescription: 'Pogwarancyjny serwis drukarek Godex: G500, EZ1100, EZ2250i, RT700, RT730, RT860i. Wymiana głowic, wałków, płyt głównych — TAKMA Wrocław, cała Polska.',
