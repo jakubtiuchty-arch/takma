@@ -326,6 +326,7 @@ export const serviceBrands: ServiceBrand[] = [
     products: 'Drukarki mobilne RJ, TD, QL',
     heroTitle: 'Serwis Brother — naprawa drukarek etykiet RJ, TD, QL',
     heroDescription: 'Pogwarancyjny serwis drukarek Brother: RJ-3050/RJ-4040 (mobilne), TD-2120N/TD-4550DNWB (biurkowe), QL-810W/QL-1110NWB (DK labels). Wymiana głowic, baterii, wałków.',
+    heroImage: '/images/serwis-hero/brother-hero.webp',
     heroLead: 'Brother to japoński producent drukarek etykiet znany z trzech rodzin: QL (etykietarki z oryginalnymi etykietami DK), TD (biurkowe termiczne i termotransferowe) i RJ (mobilne do serwisu w terenie). TAKMA serwisuje drukarki Brother RJ (RJ-2050, RJ-3050, RJ-3150, RJ-4040), TD (TD-2120N, TD-2130N, TD-4420DN, TD-4550DNWB) oraz QL (QL-810W, QL-1100, QL-1110NWB). Wymieniamy głowice drukujące, baterie, wałki dociskowe, obcinaki i moduły Wi-Fi/Bluetooth.',
     metaTitle: 'Serwis Brother — naprawa drukarek RJ, TD, QL | TAKMA',
     metaDescription: 'Pogwarancyjny serwis drukarek Brother: RJ-3050, RJ-4040, TD-2120N, TD-4550DNWB, QL-810W, QL-1110NWB. Wymiana głowic, baterii — TAKMA Wrocław.',
