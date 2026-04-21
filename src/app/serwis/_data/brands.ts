@@ -186,6 +186,7 @@ export const serviceBrands: ServiceBrand[] = [
     products: 'Drukarki CL-S, CL-E, CT-S',
     heroTitle: 'Serwis Citizen — naprawa drukarek etykiet i paragonowych',
     heroDescription: 'Pogwarancyjny serwis drukarek Citizen: CL-S, CL-E (etykietowe termotransferowe) oraz CT-S (termiczne paragonowe). Wymiana głowic, wałków, zasilaczy. Oryginalne części.',
+    heroImage: '/images/serwis-hero/citizen-hero.jpg',
     heroLead: 'Citizen to japoński producent wysokiej klasy drukarek etykiet i paragonów, cenionych za niezawodność i jakość druku. TAKMA serwisuje drukarki etykiet Citizen CL-S (CL-S521, CL-S621, CL-S6621) i CL-E (CL-E300, CL-E321, CL-E331) oraz drukarki paragonowe termiczne CT-S (CT-S310, CT-S801, CT-S851, CT-S4500). Wymieniamy głowice drukujące, wałki dociskowe, zasilacze i płyty główne — zawsze na oryginalnych częściach Citizen.',
     metaTitle: 'Serwis Citizen — naprawa drukarek CL-S, CL-E, CT-S | TAKMA',
     metaDescription: 'Pogwarancyjny serwis drukarek Citizen: CL-S521, CL-S621, CL-E321, CT-S310, CT-S801. Wymiana głowic, wałków, płyt głównych. Darmowa diagnostyka — TAKMA Wrocław.',
