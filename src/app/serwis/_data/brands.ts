@@ -150,6 +150,7 @@ export const serviceBrands: ServiceBrand[] = [
     products: 'Skanery HR, MT90, terminale NFT10',
     heroTitle: 'Serwis Newland — naprawa skanerów i terminali',
     heroDescription: 'Pogwarancyjny serwis urządzeń Newland: skanery ręczne HR, MT90, terminale mobilne NFT10, MT65, MT95. Oryginalne części, wysyłka z całej Polski, diagnostyka 48h.',
+    heroImage: '/images/serwis-hero/newland-hero.jpg',
     heroLead: 'Newland to chiński producent urządzeń AutoID, który w ostatnich latach zyskuje popularność dzięki bardzo dobremu stosunkowi ceny do jakości. TAKMA serwisuje skanery ręczne Newland (HR, MT90, NLS-HR serii), terminale mobilne (NFT10, MT65, MT95) oraz stacjonarne skanery FM (FM100, FM430). Używamy oryginalnych części Newland i stosujemy procedury naprawy zgodne z dokumentacją producenta.',
     metaTitle: 'Serwis Newland — naprawa HR22, MT90, NFT10 | TAKMA',
     metaDescription: 'Pogwarancyjny serwis Newland: skanery HR, MT90, NLS, terminale NFT10, MT65, MT95. Darmowa diagnostyka 48h. Oryginalne części — TAKMA Wrocław, cała Polska.',
