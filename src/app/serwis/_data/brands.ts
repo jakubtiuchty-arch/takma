@@ -289,6 +289,7 @@ export const serviceBrands: ServiceBrand[] = [
     products: 'Drukarki TTP, TE, MH series',
     heroTitle: 'Serwis TSC — naprawa drukarek etykiet',
     heroDescription: 'Pogwarancyjny serwis drukarek TSC: TTP-225, TTP-244, TE200, TE310, MH241T, MH640T. Wymiana głowic, wałków, płyt głównych. Oryginalne części, cała Polska.',
+    heroImage: '/images/serwis-hero/tsc-hero.jpg',
     heroLead: 'TSC Auto ID Technology to jeden z najpopularniejszych producentów drukarek etykiet w Polsce — szczególnie w segmencie MSP i sklepów e-commerce. TAKMA serwisuje drukarki TSC z rodzin TTP (biurkowe: TTP-225, TTP-244 Pro, TTP-323), TE (kompaktowe: TE200, TE210, TE310), MH (przemysłowe: MH241T, MH341T, MH641T, MH640T), MB (rugged: MB240T, MB241T, MB340T) oraz ML (mobilne: ML240, ML340). Wymieniamy głowice drukujące, wałki dociskowe, płyty główne, moduły sieciowe i prowadzimy pełną kalibrację.',
     metaTitle: 'Serwis TSC — naprawa drukarek TTP, TE, MH series | TAKMA',
     metaDescription: 'Pogwarancyjny serwis drukarek TSC: TTP-225, TTP-244, TE200, TE310, MH241T, MH640T. Wymiana głowic, wałków, płyt głównych. TAKMA Wrocław.',
