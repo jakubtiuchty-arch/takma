@@ -79,6 +79,7 @@ export const serviceBrands: ServiceBrand[] = [
     products: 'Memor, Skorpio, Joya Touch, skanery Gryphon',
     heroTitle: 'Serwis Datalogic — naprawa terminali i skanerów',
     heroDescription: 'Pogwarancyjny serwis urządzeń Datalogic: terminale mobilne Memor 1/10/20/30, Skorpio X5, Joya Touch, skanery Gryphon, QuickScan, PowerScan. Oryginalne części, wysyłka z całej Polski.',
+    heroImage: '/images/serwis-hero/datalogic-hero.webp',
     heroLead: 'TAKMA serwisuje urządzenia Datalogic od ponad 15 lat — naprawiamy terminale mobilne Memor (Memor 1, Memor 10, Memor 20, Memor 30, Memor 35), Skorpio X5, Joya Touch oraz skanery ręczne Gryphon (GBT/GD/GM), QuickScan, PowerScan 9501/M9501. Specjalizujemy się w wymianie ekranów LCD + digitizer z zachowaniem szczelności IP65 oraz w diagnostyce modułów imager Omnidirectional 2D.',
     metaTitle: 'Serwis Datalogic — naprawa Memor, Skorpio, Gryphon | TAKMA',
     metaDescription: 'Pogwarancyjny serwis Datalogic: Memor 10/20/30, Skorpio X5, Joya Touch, skanery Gryphon GBT/GD. Darmowa diagnostyka 48h. Wysyłka z całej Polski — TAKMA Wrocław.',
