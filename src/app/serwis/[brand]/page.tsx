@@ -94,10 +94,10 @@ export default function BrandServicePage({ params }: Props) {
             style={{ backgroundImage: `url(${brand.heroImage})` }}
             aria-hidden="true"
           />
-          {/* Mocny overlay ukrywający całkowicie obszar siatki na obrazie — pokazuje tylko drukarkę po prawej */}
+          {/* Overlay zaciemnia lewą stronę dla tekstu, ale szybciej odsłania obraz po prawej */}
           <div
             className="absolute inset-0"
-            style={{ background: 'linear-gradient(to right, #0B1520 0%, #0B1520 55%, rgba(11,21,32,0.92) 63%, rgba(11,21,32,0.5) 70%, rgba(11,21,32,0) 76%)' }}
+            style={{ background: 'linear-gradient(to right, #0B1520 0%, #0B1520 40%, rgba(11,21,32,0.9) 48%, rgba(11,21,32,0.4) 56%, rgba(11,21,32,0) 62%)' }}
             aria-hidden="true"
           />
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-14">
