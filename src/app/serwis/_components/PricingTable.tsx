@@ -79,7 +79,7 @@ export function PricingTable({ variant = 'all' }: { variant?: PricingVariant } =
   const { title, subtitle } = getHeadline(variant)
 
   return (
-    <section className="bg-gray-50 py-16 sm:py-24">
+    <section className="bg-gray-50 py-10 sm:py-14">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900">

@@ -59,7 +59,7 @@ export function RmaProcessSteps() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="bg-gray-50 py-16 sm:py-24 overflow-hidden">
+    <section ref={sectionRef} className="bg-gray-50 py-10 sm:py-14 overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900">
