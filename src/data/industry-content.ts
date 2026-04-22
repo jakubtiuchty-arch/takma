@@ -247,7 +247,7 @@ export const industryPages: IndustryPage[] = [
     heroHeadline: 'Drukarki etykiet do sklepu internetowego i e-commerce',
     heroSubtext: 'Drukuj etykiety kurierskie InPost, DPD, DHL i UPS bezpośrednio z BaseLinker, Allegro i WMS. Modele Zebra od 621 zł netto — od małego sklepu internetowego po centra fulfillment obsługujące 10 000+ paczek dziennie.',
     heroImage: '/images/ecommerce-hero.webp',
-    heroPosition: 'center 65%',
+    heroPosition: 'center bottom',
     tags: ['retail', 'logistyka'] as ProductTag[],
     longDescription: `<p>Drukarka etykiet to jedno z najbardziej opłacalnych urządzeń w sklepie internetowym — eliminuje drukowanie na A4, skraca pakowanie o 40–60% i redukuje błędy wysyłkowe. Każda paczka to co najmniej jedna etykieta, a przy zwrotach i fakturach ta liczba szybko rośnie.</p>
 <h3>Kluczowe wymagania sklepu internetowego i e-commerce</h3>
