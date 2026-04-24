@@ -132,6 +132,8 @@ export async function GET(request: NextRequest) {
       background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
       padding: 18px; border-radius: 6px; margin-bottom: 20px;
       border: 1px solid #e2e8f0;
+      page-break-inside: avoid;
+      break-inside: avoid;
     }
     .zebra-logos {
       display: flex; gap: 24px; align-items: center; justify-content: center;
