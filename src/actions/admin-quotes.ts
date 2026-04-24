@@ -35,6 +35,7 @@ interface CreateQuoteInput {
   notes?: string
   internalNotes?: string
   freebiesNote?: string
+  zebraServiceBanner?: boolean
 }
 
 export async function createQuote(input: CreateQuoteInput) {
@@ -70,6 +71,7 @@ export async function createQuote(input: CreateQuoteInput) {
       notes: input.notes,
       internalNotes: input.internalNotes,
       freebiesNote: input.freebiesNote,
+      zebraServiceBanner: input.zebraServiceBanner ?? false,
       subtotalNetto: totals.subtotalNetto,
       vatAmount: totals.vatAmount,
       totalBrutto: totals.totalBrutto,
@@ -165,6 +167,7 @@ export async function priceRfqQuote(rfqQuoteId: string, input: {
   notes?: string
   internalNotes?: string
   freebiesNote?: string
+  zebraServiceBanner?: boolean
 }) {
   const existing = await prisma.quote.findUnique({ where: { id: rfqQuoteId } })
   if (!existing) throw new Error('Zapytanie nie znalezione')
@@ -187,6 +190,7 @@ export async function priceRfqQuote(rfqQuoteId: string, input: {
       notes: input.notes,
       internalNotes: input.internalNotes,
       freebiesNote: input.freebiesNote,
+      zebraServiceBanner: input.zebraServiceBanner ?? false,
       subtotalNetto: totals.subtotalNetto,
       vatAmount: totals.vatAmount,
       totalBrutto: totals.totalBrutto,
@@ -257,6 +261,7 @@ export async function updateQuote(quoteId: string, input: CreateQuoteInput) {
       notes: input.notes,
       internalNotes: input.internalNotes,
       freebiesNote: input.freebiesNote,
+      zebraServiceBanner: input.zebraServiceBanner ?? false,
       subtotalNetto: totals.subtotalNetto,
       vatAmount: totals.vatAmount,
       totalBrutto: totals.totalBrutto,
@@ -312,6 +317,7 @@ export async function duplicateQuote(quoteId: string) {
       notes: original.notes,
       internalNotes: original.internalNotes,
       freebiesNote: original.freebiesNote,
+      zebraServiceBanner: original.zebraServiceBanner,
       subtotalNetto: original.subtotalNetto,
       vatAmount: original.vatAmount,
       totalBrutto: original.totalBrutto,

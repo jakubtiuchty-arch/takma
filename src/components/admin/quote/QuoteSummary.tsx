@@ -7,7 +7,7 @@ function formatPrice(grosze: number): string {
 }
 
 export default function QuoteSummary() {
-  const { getSubtotalNetto, getVatAmount, getTotalBrutto, setTerms, validDays, paymentTerms, deliveryTerms, notes, internalNotes, freebiesNote } =
+  const { getSubtotalNetto, getVatAmount, getTotalBrutto, setTerms, validDays, paymentTerms, deliveryTerms, notes, internalNotes, freebiesNote, zebraServiceBanner } =
     useQuoteStore()
 
   const subtotal = getSubtotalNetto()
@@ -102,6 +102,23 @@ export default function QuoteSummary() {
           rows={2}
           className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm resize-y"
         />
+      </div>
+
+      <div className="pt-4 border-t border-gray-200">
+        <label className="flex items-start gap-3 cursor-pointer select-none">
+          <input
+            type="checkbox"
+            checked={zebraServiceBanner}
+            onChange={(e) => setTerms({ zebraServiceBanner: e.target.checked })}
+            className="mt-0.5 w-4 h-4 text-blue-600 border-gray-300 rounded"
+          />
+          <span className="text-sm">
+            <span className="font-medium text-gray-900">Baner wsparcia serwisowego Zebra</span>
+            <span className="block text-xs text-gray-500 mt-0.5">
+              Dodaj na końcu PDF: loga Zebra Premier Solution Partner (Printer Repair + Public Sector Specialist) oraz informację o wsparciu gwarancyjnym i pogwarancyjnym przez serwis-zebry.pl. Używaj przy ofertach na urządzenia Zebra.
+            </span>
+          </span>
+        </label>
       </div>
     </div>
   )

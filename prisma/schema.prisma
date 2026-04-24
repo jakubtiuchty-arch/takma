@@ -213,6 +213,8 @@ model Quote {
 
   freebiesNote    String?
 
+  zebraServiceBanner Boolean  @default(false)
+
   items           QuoteItem[]
 
   sentAt          DateTime?

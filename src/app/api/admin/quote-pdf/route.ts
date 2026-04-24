@@ -128,6 +128,19 @@ export async function GET(request: NextRequest) {
       background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
       padding: 12px 15px; border-radius: 6px; margin-bottom: 20px; border: 1px solid #86efac;
     }
+    .zebra-banner {
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      padding: 18px; border-radius: 6px; margin-bottom: 20px;
+      border: 1px solid #e2e8f0;
+    }
+    .zebra-logos {
+      display: flex; gap: 18px; align-items: center; justify-content: center;
+      margin-bottom: 12px; flex-wrap: wrap;
+    }
+    .zebra-logos img { height: 44px; width: auto; object-fit: contain; }
+    .zebra-banner-text { font-size: 10.5px; line-height: 1.5; color: #334155; text-align: center; }
+    .zebra-banner-text strong { color: #1e3a5f; }
+    .zebra-banner-text a { color: #2563eb; text-decoration: none; font-weight: 600; }
     .conditions {
       background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
       padding: 15px; border-radius: 6px; margin-bottom: 25px; border: 1px solid #e2e8f0;
@@ -250,6 +263,21 @@ export async function GET(request: NextRequest) {
     <div style="background:#fefce8;padding:12px;border-radius:6px;margin-bottom:20px;border:1px solid #fde68a;">
       <strong style="color:#92400e;">Uwagi:</strong>
       <p style="margin-top:5px;color:#78350f;">${escapeHtml(quote.notes)}</p>
+    </div>` : ''}
+
+    ${quote.zebraServiceBanner ? `
+    <div class="zebra-banner">
+      <div class="zebra-logos">
+        <img src="${baseUrl}/images/Certyfikaty/Repair_Specialist.png" alt="Zebra Premier Solution Partner — Printer Repair Specialist" />
+        <img src="${baseUrl}/images/Certyfikaty/Public_sector_specialist.png" alt="Zebra Premier Solution Partner — Public Sector Specialist" />
+        <img src="${baseUrl}/images/Certyfikaty/Premier.png" alt="Zebra Premier Solution Partner" />
+      </div>
+      <div class="zebra-banner-text">
+        <strong>Wsparcie gwarancyjne i pogwarancyjne urządzeń Zebra</strong><br>
+        TAKMA jest autoryzowanym serwisem Zebra Technologies (Premier Solution Partner, Printer Repair Specialist, Public Sector Specialist).
+        Naprawy drukarek, terminali i skanerów realizujemy w kraju, na oryginalnych częściach, z gwarancją 3–6 miesięcy.
+        Zgłoszenia serwisowe: <a href="https://www.serwis-zebry.pl">www.serwis-zebry.pl</a>
+      </div>
     </div>` : ''}
 
     <div class="footer">

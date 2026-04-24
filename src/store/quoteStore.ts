@@ -44,6 +44,7 @@ interface QuoteStore {
   notes: string
   internalNotes: string
   freebiesNote: string
+  zebraServiceBanner: boolean
   setTerms: (data: Partial<{
     validDays: number
     paymentTerms: string
@@ -51,6 +52,7 @@ interface QuoteStore {
     notes: string
     internalNotes: string
     freebiesNote: string
+    zebraServiceBanner: boolean
   }>) => void
 
   // Computed
@@ -106,6 +108,7 @@ export const useQuoteStore = create<QuoteStore>()((set, get) => ({
   notes: '',
   internalNotes: '',
   freebiesNote: '',
+  zebraServiceBanner: false,
   setTerms: (data) =>
     set({
       ...(data.validDays !== undefined && { validDays: data.validDays }),
@@ -114,6 +117,7 @@ export const useQuoteStore = create<QuoteStore>()((set, get) => ({
       ...(data.notes !== undefined && { notes: data.notes }),
       ...(data.internalNotes !== undefined && { internalNotes: data.internalNotes }),
       ...(data.freebiesNote !== undefined && { freebiesNote: data.freebiesNote }),
+      ...(data.zebraServiceBanner !== undefined && { zebraServiceBanner: data.zebraServiceBanner }),
     }),
 
   getSubtotalNetto: () =>
@@ -133,5 +137,6 @@ export const useQuoteStore = create<QuoteStore>()((set, get) => ({
       notes: '',
       internalNotes: '',
       freebiesNote: '',
+      zebraServiceBanner: false,
     }),
 }))

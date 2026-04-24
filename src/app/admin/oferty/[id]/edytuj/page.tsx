@@ -55,6 +55,7 @@ export default async function EditQuotePage({ params }: PageProps) {
       notes: quote.notes || undefined,
       internalNotes: quote.internalNotes || undefined,
       freebiesNote: quote.freebiesNote || undefined,
+      zebraServiceBanner: quote.zebraServiceBanner,
     },
   }
 

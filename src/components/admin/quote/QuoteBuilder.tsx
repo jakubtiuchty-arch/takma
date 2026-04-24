@@ -59,6 +59,7 @@ export interface EditData {
     notes?: string
     internalNotes?: string
     freebiesNote?: string
+    zebraServiceBanner?: boolean
   }
 }
 
@@ -113,6 +114,7 @@ export default function QuoteBuilder({ rfqData, editData }: QuoteBuilderProps) {
         notes: editData.terms.notes || '',
         internalNotes: editData.terms.internalNotes || '',
         freebiesNote: editData.terms.freebiesNote || '',
+        zebraServiceBanner: editData.terms.zebraServiceBanner ?? false,
       })
     } else if (rfqData) {
       // Załaduj dane klienta z zapytania
@@ -179,6 +181,7 @@ export default function QuoteBuilder({ rfqData, editData }: QuoteBuilderProps) {
       notes: store.notes || undefined,
       internalNotes: store.internalNotes || undefined,
       freebiesNote: store.freebiesNote || undefined,
+      zebraServiceBanner: store.zebraServiceBanner,
     }
 
     startTransition(async () => {
@@ -193,6 +196,7 @@ export default function QuoteBuilder({ rfqData, editData }: QuoteBuilderProps) {
           notes: store.notes || undefined,
           internalNotes: store.internalNotes || undefined,
           freebiesNote: store.freebiesNote || undefined,
+          zebraServiceBanner: store.zebraServiceBanner,
         })
       } else {
         await createQuote(commonPayload)
