@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { lookupStock as ingramLookup } from '@/lib/ingram'
 import { lookupStock as bluestarLookup } from '@/lib/bluestar'
+import { lookupStock as jarltechLive } from '@/lib/jarltech'
 import { prisma } from '@/lib/db'
 import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
@@ -130,6 +131,85 @@ export async function GET(request: NextRequest) {
     // Także: PN brak w StockCache, ale Jarltech ma → trigger slow path (ceny wymagają EUR rate)
     // (uncachedPNs poniżej automatycznie obejmie te przypadki)
 
+    // ============================================
+    // STEP 1b: Live Jarltech fallback
+    // Gdy StockCache mówi "unavailable" ALE JarltechStockCache nie ma wpisu
+    // (jarltech-sync nie dotarł do tego PN), wywołaj live Jarltech API.
+    // Limit 3 PN / request żeby nie blokować listingów. Timeout 10s.
+    // Fire-and-forget write-through do JarltechStockCache dla przyszłych requestów.
+    // ============================================
+    const liveFallbackCandidates = Array.from(freshCache.values())
+      .filter(c => c.availability === 'unavailable' && !jarltechCacheMap.has(c.partNumber))
+      .slice(0, 3)
+      .map(c => c.partNumber)
+
+    const liveFallbackResults: { pn: string; overridden: boolean; inventory: number }[] = []
+
+    if (liveFallbackCandidates.length > 0) {
+      try {
+        const liveData = await Promise.race([
+          jarltechLive(liveFallbackCandidates),
+          new Promise<JarltechStockInfo[]>((_, reject) =>
+            setTimeout(() => reject(new Error('jarltech-live-timeout')), 10_000)
+          ),
+        ])
+
+        for (const item of liveData) {
+          if (!item.found || item.inventory <= 0) {
+            liveFallbackResults.push({ pn: item.partNumber, overridden: false, inventory: item.inventory })
+            continue
+          }
+          const c = freshCache.get(item.partNumber)
+          if (!c) continue
+          const newStockDE = Math.max(c.stockDE, item.inventory)
+          const newTotalStock = c.stockPL + newStockDE + c.inDelivery
+          freshCache.set(item.partNumber, {
+            ...c,
+            stockDE: newStockDE,
+            totalStock: newTotalStock,
+            availability: c.stockPL > 0 ? c.availability : 'available',
+            deliveryText: c.stockPL > 0
+              ? c.deliveryText
+              : `Dostepny — wysylka 2-3 dni (${newStockDE} szt.)`,
+            lastSync: new Date(),
+          })
+          overriddenPNs.push(item.partNumber)
+          liveFallbackResults.push({ pn: item.partNumber, overridden: true, inventory: item.inventory })
+
+          // Fire-and-forget write-through do JarltechStockCache
+          prisma.jarltechStockCache.upsert({
+            where: { partNumber: item.partNumber },
+            create: {
+              partNumber: item.partNumber,
+              found: true,
+              unitPrice: item.unitPrice ?? null,
+              currency: item.currency ?? 'EUR',
+              inventory: item.inventory,
+              incomingQty: item.incomingQty,
+              incomingDate: item.incomingDate ?? null,
+              totalStock: item.totalStock,
+              jarltechId: item.jarltechId ?? null,
+              availability: item.availability,
+              deliveryText: item.deliveryText,
+            },
+            update: {
+              found: true,
+              unitPrice: item.unitPrice ?? null,
+              inventory: item.inventory,
+              incomingQty: item.incomingQty,
+              incomingDate: item.incomingDate ?? null,
+              totalStock: item.totalStock,
+              jarltechId: item.jarltechId ?? null,
+              availability: item.availability,
+              deliveryText: item.deliveryText,
+            },
+          }).catch(err => console.error(`[API /stock] Jarltech live write-through fail ${item.partNumber}:`, err))
+        }
+      } catch (err) {
+        console.warn('[API /stock] Jarltech live fallback failed:', err instanceof Error ? err.message : err)
+      }
+    }
+
     // If all PNs are in fresh cache, serve from cache (skip live API calls)
     const uncachedPNs = partNumbers.filter(pn => !freshCache.has(pn))
 
@@ -195,6 +275,7 @@ export async function GET(request: NextRequest) {
               lastSync: j?.lastSync?.toISOString() ?? null,
             }
           }),
+          jarltechLiveFallback: liveFallbackResults,
         }
       }
 
