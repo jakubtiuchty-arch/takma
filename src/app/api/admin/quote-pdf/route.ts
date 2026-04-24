@@ -134,13 +134,14 @@ export async function GET(request: NextRequest) {
       border: 1px solid #e2e8f0;
     }
     .zebra-logos {
-      display: flex; gap: 18px; align-items: center; justify-content: center;
-      margin-bottom: 12px; flex-wrap: wrap;
+      display: flex; gap: 24px; align-items: center; justify-content: center;
+      margin-bottom: 14px; flex-wrap: wrap;
     }
-    .zebra-logos img { height: 44px; width: auto; object-fit: contain; }
+    .zebra-logos img { height: 36px; width: auto; object-fit: contain; }
     .zebra-banner-text { font-size: 10.5px; line-height: 1.5; color: #334155; text-align: center; }
     .zebra-banner-text strong { color: #1e3a5f; }
-    .zebra-banner-text a { color: #2563eb; text-decoration: none; font-weight: 600; }
+    .zebra-banner-link { margin-top: 8px; }
+    .zebra-banner-link a { color: #2563eb; text-decoration: none; font-weight: 600; }
     .conditions {
       background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
       padding: 15px; border-radius: 6px; margin-bottom: 25px; border: 1px solid #e2e8f0;
@@ -268,15 +269,15 @@ export async function GET(request: NextRequest) {
     ${quote.zebraServiceBanner ? `
     <div class="zebra-banner">
       <div class="zebra-logos">
-        <img src="${baseUrl}/images/Certyfikaty/Repair_Specialist.png" alt="Zebra Premier Solution Partner — Printer Repair Specialist" />
-        <img src="${baseUrl}/images/Certyfikaty/Public_sector_specialist.png" alt="Zebra Premier Solution Partner — Public Sector Specialist" />
-        <img src="${baseUrl}/images/Certyfikaty/Premier.png" alt="Zebra Premier Solution Partner" />
+        <img src="${baseUrl}/images/certifications/zebra-printer-repair-specialist.png" alt="Zebra Premier Solution Partner — Printer Repair Specialist" />
+        <img src="${baseUrl}/images/certifications/zebra-public-sector-specialist.png" alt="Zebra Premier Solution Partner — Public Sector Specialist" />
+        <img src="${baseUrl}/images/certifications/zebra-premier-solution-partner.png" alt="Zebra Premier Solution Partner" />
       </div>
       <div class="zebra-banner-text">
         <strong>Wsparcie gwarancyjne i pogwarancyjne urządzeń Zebra</strong><br>
         TAKMA jest autoryzowanym serwisem Zebra Technologies (Premier Solution Partner, Printer Repair Specialist, Public Sector Specialist).
         Naprawy drukarek, terminali i skanerów realizujemy w kraju, na oryginalnych częściach, z gwarancją 3–6 miesięcy.
-        Zgłoszenia serwisowe: <a href="https://www.serwis-zebry.pl">www.serwis-zebry.pl</a>
+        <div class="zebra-banner-link">Zgłoszenia serwisowe: <a href="https://www.serwis-zebry.pl">www.serwis-zebry.pl</a></div>
       </div>
     </div>` : ''}
 
