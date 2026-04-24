@@ -104,8 +104,11 @@ export async function GET(request: NextRequest) {
       if (age >= CACHE_MAX_AGE_MS) continue
 
       const j = jarltechCacheMap.get(row.partNumber)
-      // Override gdy Jarltech jest świeższy I ma więcej inventory niż cached stockDE
-      if (j && j.found && j.lastSync > row.lastSync && j.inventory > row.stockDE) {
+      // Override gdy Jarltech ma więcej inventory niż StockCache.stockDE.
+      // Usunęlismy warunek `j.lastSync > row.lastSync` — jeśli jarltech-sync nie zaktualizował
+      // wpisu (np. padł w środku batcha), ale poprzedni sync miał prawdziwe dane, nadal lepiej
+      // pokazać stock niż "niedostępny". Jarltech cache refresh dzienny = max 24h stale.
+      if (j && j.found && j.inventory > row.stockDE) {
         const newStockDE = Math.max(row.stockDE, j.inventory)
         const newTotalStock = row.stockPL + newStockDE + row.inDelivery
         freshCache.set(row.partNumber, {
@@ -182,6 +185,16 @@ export async function GET(request: NextRequest) {
           cacheHits: partNumbers.length,
           cacheMisses: 0,
           jarltechOverrides: overriddenPNs,
+          jarltechCacheLookup: partNumbers.map(pn => {
+            const j = jarltechCacheMap.get(pn)
+            return {
+              pn,
+              hit: !!j,
+              found: j?.found ?? null,
+              inventory: j?.inventory ?? null,
+              lastSync: j?.lastSync?.toISOString() ?? null,
+            }
+          }),
         }
       }
 
