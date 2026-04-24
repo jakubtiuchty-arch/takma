@@ -69,7 +69,7 @@ export async function GET(request: NextRequest) {
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       font-size: 11px; line-height: 1.4; color: #333;
-      padding: 40px; max-width: 800px; margin: 0 auto; background: white;
+      padding: 24px 40px; max-width: 800px; margin: 0 auto; background: white;
     }
     .print-controls {
       background: #2563eb; color: white; padding: 15px 20px; margin-bottom: 20px;
@@ -82,13 +82,13 @@ export async function GET(request: NextRequest) {
     .print-btn:hover { background: #f0f0f0; }
     .header {
       display: flex; justify-content: space-between; align-items: flex-start;
-      margin-bottom: 30px; padding-bottom: 15px; border-bottom: 3px solid #2563eb;
+      margin-bottom: 18px; padding-bottom: 12px; border-bottom: 3px solid #2563eb;
     }
     .logo-img { height: 60px; width: auto; }
     .doc-title { text-align: right; }
     .doc-title h1 { font-size: 26px; color: #1e3a5f; margin-bottom: 5px; letter-spacing: 2px; }
     .doc-title .number { font-size: 12px; color: #666; }
-    .parties { display: flex; justify-content: space-between; margin-bottom: 25px; }
+    .parties { display: flex; justify-content: space-between; margin-bottom: 16px; }
     .party { width: 47%; }
     .party-title {
       font-weight: bold; color: #2563eb; margin-bottom: 8px; font-size: 10px;
@@ -97,14 +97,14 @@ export async function GET(request: NextRequest) {
     .party-name { font-weight: bold; font-size: 13px; margin-bottom: 4px; }
     .party-text { font-size: 11px; margin-bottom: 2px; color: #444; }
     .dates {
-      display: flex; justify-content: space-between; margin-bottom: 25px;
-      padding: 12px 15px; background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      display: flex; justify-content: space-between; margin-bottom: 16px;
+      padding: 10px 14px; background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
       border-radius: 6px; border: 1px solid #e2e8f0;
     }
     .date-item { text-align: center; flex: 1; }
     .date-label { font-size: 9px; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; }
     .date-value { font-weight: bold; font-size: 13px; margin-top: 3px; }
-    table { width: 100%; border-collapse: collapse; margin-bottom: 25px; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
     th {
       background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); color: white;
       padding: 10px 12px; text-align: left; font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px;
@@ -113,7 +113,7 @@ export async function GET(request: NextRequest) {
     .amount { text-align: right; font-weight: bold; }
     .service-name { font-weight: 600; color: #1e3a5f; }
     .service-notes { font-size: 10px; color: #64748b; margin-top: 4px; }
-    .summary { display: flex; justify-content: flex-end; margin-bottom: 25px; }
+    .summary { display: flex; justify-content: flex-end; margin-bottom: 14px; }
     .summary-box {
       width: 260px; background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
       padding: 15px; border-radius: 6px; border: 1px solid #e2e8f0;
@@ -130,23 +130,23 @@ export async function GET(request: NextRequest) {
     }
     .zebra-banner {
       background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-      padding: 18px; border-radius: 6px; margin-bottom: 20px;
+      padding: 10px 14px; border-radius: 6px; margin-bottom: 12px;
       border: 1px solid #e2e8f0;
       page-break-inside: avoid;
       break-inside: avoid;
     }
     .zebra-logos {
-      display: flex; gap: 24px; align-items: center; justify-content: center;
-      margin-bottom: 14px; flex-wrap: wrap;
+      display: flex; gap: 20px; align-items: center; justify-content: center;
+      margin-bottom: 7px; flex-wrap: wrap;
     }
-    .zebra-logos img { height: 36px; width: auto; object-fit: contain; }
-    .zebra-banner-text { font-size: 10.5px; line-height: 1.5; color: #334155; text-align: center; }
+    .zebra-logos img { height: 26px; width: auto; object-fit: contain; }
+    .zebra-banner-text { font-size: 9.5px; line-height: 1.4; color: #334155; text-align: center; }
     .zebra-banner-text strong { color: #1e3a5f; }
-    .zebra-banner-link { margin-top: 8px; }
+    .zebra-banner-link { margin-top: 4px; }
     .zebra-banner-link a { color: #2563eb; text-decoration: none; font-weight: 600; }
     .conditions {
       background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-      padding: 15px; border-radius: 6px; margin-bottom: 25px; border: 1px solid #e2e8f0;
+      padding: 12px 14px; border-radius: 6px; margin-bottom: 14px; border: 1px solid #e2e8f0;
     }
     .conditions-title { font-weight: bold; color: #1e3a5f; margin-bottom: 10px; font-size: 12px; }
     .conditions-row { display: flex; margin-bottom: 6px; }
@@ -154,7 +154,9 @@ export async function GET(request: NextRequest) {
     .conditions-value { font-weight: 600; font-size: 11px; }
     .footer {
       text-align: center; color: #64748b; font-size: 9px;
-      padding-top: 15px; border-top: 1px solid #e5e7eb;
+      padding-top: 10px; border-top: 1px solid #e5e7eb;
+      page-break-inside: avoid;
+      break-inside: avoid;
     }
     .footer p { margin-bottom: 3px; }
   </style>
@@ -276,9 +278,7 @@ export async function GET(request: NextRequest) {
         <img src="${baseUrl}/images/certifications/zebra-premier-solution-partner.png" alt="Zebra Premier Solution Partner" />
       </div>
       <div class="zebra-banner-text">
-        <strong>Wsparcie gwarancyjne i pogwarancyjne urządzeń Zebra</strong><br>
-        TAKMA jest autoryzowanym serwisem Zebra Technologies (Premier Solution Partner, Printer Repair Specialist, Public Sector Specialist).
-        Naprawy drukarek, terminali i skanerów realizujemy w kraju, na oryginalnych częściach, z gwarancją 3–6 miesięcy.
+        <strong>Wsparcie gwarancyjne i pogwarancyjne urządzeń Zebra</strong> — TAKMA autoryzowany serwis Zebra. Naprawy w kraju, oryginalne części, gwarancja 3–6 mies.
         <div class="zebra-banner-link">Zgłoszenia serwisowe: <a href="https://www.serwis-zebry.pl">www.serwis-zebry.pl</a></div>
       </div>
     </div>` : ''}
