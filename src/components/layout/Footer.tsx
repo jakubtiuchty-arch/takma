@@ -155,7 +155,7 @@ export default function Footer() {
               <ul className="space-y-2 sm:space-y-3">
                 {footerLinks.landingi.map((link) => (
                   <li key={link.href}>
-                    <a href={link.href} target="_blank" rel="noopener" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors duration-200">
+                    <a href={link.href} target="_blank" rel="noopener nofollow" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors duration-200">
                       {link.name}
                     </a>
                   </li>
