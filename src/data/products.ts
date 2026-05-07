@@ -24017,8 +24017,8 @@ Koszt posiadania kolektora danych MC3400 (TCO): pełna kompatybilność wsteczna
     id: 'zebra-mc3450',
     slug: 'zebra-mc3450',
     name: 'Zebra MC3450',
-    seoTitle: 'Zebra MC3450 — kolektor danych 5G z klawiaturą i GPS | od 5 572 zł',
-    seoDescription: 'Zebra MC3450 — terminal 5G z klawiaturą, GPS, IP67, skaner do 30 m. 23 konfiguracje od 5 572 zł netto. PN: MC345B-3S1J52SS-A6, MC345B-3G1R62SS-A6.',
+    seoTitle: 'Zebra MC3450 — kolektor danych 5G z klawiaturą | od 5 572 zł',
+    seoDescription: 'Kolektor danych Zebra MC3450 z klawiaturą — 5G publiczne i prywatne (CBRS), GPS, skaner SE58 do 30 m, IP65/IP67. 23 konfiguracje od 5 572 zł netto.',
     shortDescription: 'Zebra MC3450 — terminal mobilny 5G z klawiaturą, Wi-Fi 6E, GPS, skaner do 30 m, IP65/IP67',
     description: `Dla kogo? Zebra MC3450 to wytrzymały terminal mobilny 5G nowej generacji z fizyczną klawiaturą, zaprojektowany dla operacji logistycznych wymagających łączności komórkowej poza zasięgiem Wi-Fi — yard management na placach kontenerowych, weryfikacja ładunków w portach, inwentaryzacja pojazdów na dużych placach, logistyka terenowa i zarządzanie dostawami last-mile.
 
@@ -24212,7 +24212,13 @@ Koszt posiadania (TCO): pełna kompatybilność wsteczna z akcesoriami MC3300x i
       ],
     },
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc3400-series.html',
+    editorialReview: {
+      ratingValue: 4.7,
+      bestRating: 5,
+      reviewBody: 'Zebra MC3450 to jedyny kolektor danych z fizyczną klawiaturą i łącznością 5G w cenie poniżej 6 543 zł netto. Identyczne parametry jak MC3400 plus moduł 5G publiczne/prywatne (CBRS/FR1), dual SIM (nano + eSIM) i nawigacja satelitarna GPS/GLONASS/Galileo/BeiDou. Optymalny do yard management, portów i logistyki terenowej, gdzie Wi-Fi nie sięga. Skaner SE58 Extended Range (30,5 m) zastępuje drabinę przy skanowaniu kontenerów. Pełna kompatybilność z akcesoriami MC3300x i MC3400 — migracja bez wymiany infrastruktury ładowania. Minus: ~1 000 zł droższy od MC3400 — wybierasz świadomie, gdy 5G/GPS są niezbędne.',
+    },
     createdAt: '2024-10-15',
+    updatedAt: '2026-05-07',
   },
   {
     id: 'zebra-mc9400',
