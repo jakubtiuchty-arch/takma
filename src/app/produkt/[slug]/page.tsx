@@ -28,6 +28,7 @@ import { SmartPriceProvider } from './SmartPriceContext'
 import ContextAvailabilityBadge from './ContextAvailabilityBadge'
 import ComparisonTable from './ComparisonTable'
 import SpecsAccordion from './SpecsAccordion'
+import { getBrandBySlug as getServiceBrandBySlug } from '@/app/serwis/_data/brands'
 import ViewItemTracker from './ViewItemTracker'
 
 interface ProductPageProps {
@@ -812,6 +813,29 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 </ul>
               </section>
             )}
+
+            {/* CTA — Serwis (gdy marka ma stronę serwisową) */}
+            {(() => {
+              const serviceBrand = getServiceBrandBySlug(product.manufacturerId)
+              if (!serviceBrand) return null
+              return (
+                <aside className="rounded-xl border border-slate-200 bg-gray-50 p-5 sm:p-6">
+                  <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1">
+                    Potrzebujesz serwisu {serviceBrand.name}?
+                  </h3>
+                  <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                    TAKMA naprawia wszystkie modele {serviceBrand.name} pogwarancyjnie — diagnostyka 48h, oryginalne części, gwarancja 3–6 mies. Wysyłka z całej Polski.
+                  </p>
+                  <Link
+                    href={`/serwis/${serviceBrand.slug}`}
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-gray-900 hover:text-lime-600 transition-colors"
+                  >
+                    Sprawdź serwis urządzeń {serviceBrand.name}
+                    <span aria-hidden="true">→</span>
+                  </Link>
+                </aside>
+              )
+            })()}
 
             {/* Porównanie */}
             {product.comparison && (

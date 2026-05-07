@@ -39,6 +39,28 @@ export default function BrandServicePage({ params }: Props) {
     '@context': 'https://schema.org',
     '@graph': [
       {
+        '@type': 'LocalBusiness',
+        '@id': 'https://www.takma.com.pl/#organization',
+        name: 'TAKMA',
+        url: 'https://www.takma.com.pl',
+        telephone: '+48-601-619-898',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'ul. Poświęcka 1a',
+          postalCode: '51-128',
+          addressLocality: 'Wrocław',
+          addressCountry: 'PL',
+        },
+        areaServed: { '@type': 'Country', name: 'Polska' },
+        priceRange: '$$',
+        openingHoursSpecification: [{
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          opens: '07:30',
+          closes: '15:30',
+        }],
+      },
+      {
         '@type': 'Service',
         '@id': `https://www.takma.com.pl/serwis/${brand.slug}#service`,
         serviceType: `Serwis urządzeń ${brand.name}`,
@@ -184,6 +206,34 @@ export default function BrandServicePage({ params }: Props) {
           </p>
         </div>
       </section>
+
+      {/* Sekcja edukacyjna (opcjonalna) */}
+      {brand.educationalSection && (
+        <section className="bg-white py-12 sm:py-16 border-b border-gray-100">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 mb-6">
+              {brand.educationalSection.heading}
+            </h2>
+            <div className="space-y-4">
+              {brand.educationalSection.paragraphs.map((p, i) => (
+                <p key={i} className="text-base text-gray-700 leading-relaxed">{p}</p>
+              ))}
+            </div>
+            {brand.educationalSection.bullets && brand.educationalSection.bullets.length > 0 && (
+              <ul className="mt-6 space-y-3">
+                {brand.educationalSection.bullets.map((b, i) => (
+                  <li key={i} className="flex gap-3">
+                    <span className="shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-lime-500" aria-hidden="true" />
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                      <strong className="text-gray-900">{b.title}</strong> — {b.description}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* Serie urządzeń */}
       <section className="bg-gray-50 py-14 sm:py-20 border-b border-gray-100">

@@ -19,6 +19,13 @@ export type ServiceBrand = {
   faqs: Array<{ q: string; a: string }>
   metaTitle: string
   metaDescription: string
+  /** Opcjonalna sekcja edukacyjna (H2) renderowana między hero lead a serie urządzeń.
+   *  Wzmacnia long-tail keyword density i topical authority. */
+  educationalSection?: {
+    heading: string
+    paragraphs: string[]
+    bullets?: Array<{ title: string; description: string }>
+  }
 }
 
 export const serviceBrands: ServiceBrand[] = [
@@ -29,35 +36,53 @@ export const serviceBrands: ServiceBrand[] = [
     logoAlt: 'Serwis urządzeń Honeywell i Intermec — drukarki, terminale, skanery',
     category: 'mixed',
     pricingVariant: 'all',
-    shortDesc: 'Drukarki PM45/PM43, terminale CT/EDA, skanery Voyager',
-    products: 'Drukarki Honeywell i Intermec (PM45, PM43, PX940, PD45), terminale CT/CK/EDA, skanery Voyager i Xenon',
-    heroTitle: 'Serwis Honeywell i Intermec — drukarki, terminale, skanery',
-    heroDescription: 'Pogwarancyjny serwis urządzeń Honeywell i Intermec: drukarki PM45/PX940/PD45 oraz legacy PM43/PM4i/PX4i/PX6i, terminale CT/CK/EDA, skanery Voyager i Xenon. Oryginalne części, wysyłka z całej Polski.',
+    shortDesc: 'Drukarki, skanery, terminale, tablety — PM45, Voyager, CT70, EDA10A',
+    products: 'Drukarki Honeywell i Intermec (PM45, PM43, PX940, PD45), skanery Voyager i Xenon, terminale CT/CK/EDA, tablety EDA10A i RT10A',
+    heroTitle: 'Serwis Honeywell — naprawa drukarek, skanerów, terminali i tabletów',
+    heroDescription: 'Pogwarancyjny serwis i naprawa drukarek etykiet, skanerów, terminali oraz tabletów Honeywell: PM45, PM43, PD45, PX940, Voyager, Xenon, CT40, CT70, EDA51, EDA52, EDA10A, RT10A. Naprawa Honeywell i Intermec (PM4i, PX6i, CK65). Oryginalne części, wysyłka z całej Polski.',
     heroImage: '/images/serwis-hero/honeywell-hero.webp',
-    heroLead: 'TAKMA serwisuje urządzenia Honeywell od ponad 20 lat — w tym starsze drukarki, terminale i skanery Intermec, przejęte przez Honeywell w 2013 roku i wciąż powszechnie używane w polskich magazynach. Naprawiamy pełny zakres urządzeń AutoID obu marek: drukarki etykiet (biurkowe, przemysłowe, mobilne), terminale mobilne oraz skanery kodów kreskowych. Pracujemy na oryginalnych częściach producenta — zachowujesz klasę IP65/IP67 i deklarowane parametry druku.',
-    metaTitle: 'Serwis Honeywell i Intermec — drukarki, terminale | TAKMA',
-    metaDescription: 'Pogwarancyjny serwis Honeywell/Intermec: drukarki PM45, PM43, PX940, PD45, terminale CT40, EDA51, skanery Voyager, Xenon. Diagnostyka 48h — TAKMA Wrocław.',
+    heroLead: 'Serwis i naprawa urządzeń Honeywell w TAKMA to pełen zakres napraw pogwarancyjnych dla wszystkich kategorii AutoID producenta. Wykonujemy serwis drukarek etykiet Honeywell (PM45, PM45c, PX45, PX940, PD45, PD45s oraz legacy Intermec PM43, PM4i, PX4i, PX6i, PD43, PC43), serwis skanerów Honeywell (Voyager 1200g/1250g/1452g/1602g, Xenon 1900/1902/1950/1952), serwis terminali Honeywell (CT40, CT45, CT47, CT60, CT70 XP, EDA51, EDA52, EDA61K, EDA71, CK65, CK75) oraz serwis tabletów Honeywell (EDA10A 10,1" i RT10A rugged tablet). Naprawa Honeywell w TAKMA obejmuje wymianę głowic termicznych, ekranów LCD z digitizerem, baterii, modułów skanujących, płyt głównych, czujników mediów, klawiatur i obudów — z zachowaniem klasy ochrony IP65/IP67 i wszystkich oryginalnych parametrów producenta.',
+    metaTitle: 'Serwis Honeywell — drukarki, skanery, terminale, tablety | TAKMA',
+    metaDescription: 'Serwis urządzeń Honeywell: drukarki etykiet PM45, PM43, PD45, PX940, skanery Voyager i Xenon, terminale CT40, CT70, EDA51, tablety EDA10A, RT10A. Diagnostyka 48h, gwarancja 3-6 mies, oryginalne części — TAKMA Wrocław, cała Polska.',
+    educationalSection: {
+      heading: 'Co to jest serwis urządzeń Honeywell?',
+      paragraphs: [
+        'Honeywell Productivity Solutions (dawniej Intermec, przejęte w 2013 r.) to amerykański producent urządzeń Auto ID stosowanych w magazynach, produkcji, logistyce i handlu detalicznym. Sprzęt Honeywell pracuje w warunkach przemysłowych — z klasą ochrony IP65/IP67, certyfikacją MIL-STD-810H i odpornością na upadki — i wymaga specjalistycznego serwisu z dostępem do oryginalnych części.',
+        'Serwis urządzeń Honeywell w TAKMA obejmuje wszystkie kategorie produktowe producenta — od drukarek termotransferowych przez skanery kodów kreskowych aż po tablety przemysłowe. Pracujemy zarówno na nowych liniach Honeywell, jak i na legacy Intermec, wciąż powszechnie używanych w polskich magazynach.',
+      ],
+      bullets: [
+        { title: 'Serwis drukarek etykiet Honeywell', description: 'Naprawa drukarek termicznych i termotransferowych (PM45, PM43, PD45, PX940), kody 1D (EAN, Code 128) i 2D (QR, DataMatrix, GS1). Wymiana głowic 203/300/600 dpi, wałków, czujników mediów, modułów Ethernet/Wi-Fi.' },
+        { title: 'Serwis skanerów Honeywell', description: 'Naprawa skanerów ręcznych 1D (laser) i 2D (imager), w tym DPM (Direct Part Marking). Wymiana modułów imager Voyager i Xenon, kabli, kalibracja optyki.' },
+        { title: 'Serwis terminali Honeywell', description: 'Naprawa handheld computers z fizyczną klawiaturą lub bez (CT40, CT70, EDA51, CK65), Android Enterprise. Wymiana ekranów LCD + digitizer z zachowaniem IP65/IP67, baterii, klawiatur i modułów Wi-Fi.' },
+        { title: 'Serwis tabletów Honeywell', description: 'Naprawa rugged tabletów EDA10A i RT10A z ekranem 10,1", odpornością na upadki, certyfikacją MIL-STD-810H. Wymiana ekranów dotykowych, baterii hot-swap, modułów skanujących.' },
+      ],
+    },
     seriesList: [
-      { series: 'Drukarki przemysłowe Honeywell', description: 'Nowa generacja drukarek termotransferowych 4" — PM45, PM45c (kompaktowa), PX45 (elastyczna) oraz PX940 z wbudowaną weryfikacją nadruku etykiety. Rozdzielczości 203/300/600 dpi. Do produkcji, magazynu, logistyki 3PL.', typicalDevices: 'PM45, PM45c, PX45, PX45A, PX940, PX940V' },
-      { series: 'Drukarki biurkowe Honeywell', description: 'Kompaktowe drukarki biurkowe — PD45, PD45s (z wyświetlaczem), PC42, PC42d, PC42t. Do retailu, logistyki, healthcare, administracji.', typicalDevices: 'PD45, PD45S, PC42, PC42d, PC42t, PC23d' },
-      { series: 'Drukarki Intermec (legacy)', description: 'Starsze drukarki Intermec (przejęte przez Honeywell w 2013 r.) wciąż używane w produkcji i magazynach — TAKMA serwisuje pełny zakres. Obsługujemy języki IPL, DP, ZPL, Fingerprint.', typicalDevices: 'PM43, PM43c, PM4i, PX4i, PX6i, PD43, PD41, PC43d, PC43t, PF4i, PF2i' },
-      { series: 'Drukarki mobilne', description: 'Przenośne drukarki z baterią do serwisu w terenie, logistyki kurierskiej, inwentaryzacji — Honeywell RP2, RP2f, RP4, RP4f oraz legacy Intermec PR2, PR3, PB32, PB42, PB50, PB51.', typicalDevices: 'RP2, RP2f, RP4, RP4f, PR2, PR3, PB32, PB42, PB50, PB51' },
-      { series: 'Terminale CT Series', description: 'Mobilne terminale do magazynu i logistyki — CT40, CT45, CT47, CT60, CT70 XP. Android Enterprise, skaner 2D, Wi-Fi 6.', typicalDevices: 'CT40, CT40 XP, CT45, CT47, CT60, CT60 XP, CT70' },
-      { series: 'Terminale CK Series', description: 'Wytrzymałe terminale rugged z klawiaturą — CK65, CK75. Klasa IP65/IP67, temperatura -20°C.', typicalDevices: 'CK65, CK75, CK3X, CK3R' },
-      { series: 'Terminale EDA Series', description: 'Terminale klasy enterprise — EDA51, EDA52, EDA71. Ekran 5-6 cali, skaner 2D, Android 11/13.', typicalDevices: 'EDA51, EDA52, EDA61K, EDA71' },
-      { series: 'Skanery Voyager', description: 'Ręczne skanery 1D/2D do handlu i logistyki — Voyager 1200g, 1250g, 1452g (BT), 1602g.', typicalDevices: 'Voyager 1200g, 1250g, 1350g, 1452g, 1602g' },
-      { series: 'Skanery Xenon', description: 'Wysokiej klasy skanery 2D imager — Xenon 1900, 1902g, 1950g, 1952g. Kody 2D z wyświetlaczy, DPM, UDI.', typicalDevices: 'Xenon 1900, 1902, 1950, 1950g-HD, 1952, Xenon XP' },
+      { series: 'Serwis drukarek przemysłowych Honeywell', description: 'Naprawa drukarek termotransferowych 4" — PM45, PM45c (kompaktowa), PX45 (elastyczna) oraz PX940 z wbudowaną weryfikacją nadruku etykiety. Rozdzielczości 203/300/600 dpi. Do produkcji, magazynu, logistyki 3PL.', typicalDevices: 'PM45, PM45c, PX45, PX45A, PX940, PX940V' },
+      { series: 'Serwis drukarek biurkowych Honeywell', description: 'Naprawa kompaktowych drukarek biurkowych — PD45, PD45s (z wyświetlaczem), PC42, PC42d, PC42t. Do retailu, logistyki, healthcare, administracji.', typicalDevices: 'PD45, PD45S, PC42, PC42d, PC42t, PC23d' },
+      { series: 'Serwis drukarek Intermec (legacy)', description: 'Starsze drukarki Intermec (przejęte przez Honeywell w 2013 r.) wciąż używane w produkcji i magazynach — TAKMA serwisuje pełny zakres. Obsługujemy języki IPL, DP, ZPL, Fingerprint.', typicalDevices: 'PM43, PM43c, PM4i, PX4i, PX6i, PD43, PD41, PC43d, PC43t, PF4i, PF2i' },
+      { series: 'Serwis drukarek mobilnych Honeywell', description: 'Naprawa przenośnych drukarek z baterią do serwisu w terenie, logistyki kurierskiej, inwentaryzacji — Honeywell RP2, RP2f, RP4, RP4f oraz legacy Intermec PR2, PR3, PB32, PB42, PB50, PB51.', typicalDevices: 'RP2, RP2f, RP4, RP4f, PR2, PR3, PB32, PB42, PB50, PB51' },
+      { series: 'Serwis terminali Honeywell — CT Series', description: 'Naprawa mobilnych terminali do magazynu i logistyki — CT40, CT45, CT47, CT60, CT70 XP. Android Enterprise, skaner 2D, Wi-Fi 6.', typicalDevices: 'CT40, CT40 XP, CT45, CT47, CT60, CT60 XP, CT70' },
+      { series: 'Serwis terminali Honeywell — CK Series', description: 'Naprawa wytrzymałych terminali rugged z klawiaturą — CK65, CK75. Klasa IP65/IP67, temperatura -20°C.', typicalDevices: 'CK65, CK75, CK3X, CK3R' },
+      { series: 'Serwis terminali Honeywell — EDA Series', description: 'Naprawa terminali klasy enterprise — EDA51, EDA52, EDA71. Ekran 5-6 cali, skaner 2D, Android 11/13.', typicalDevices: 'EDA51, EDA52, EDA61K, EDA71' },
+      { series: 'Serwis skanerów Honeywell — Voyager', description: 'Naprawa ręcznych skanerów 1D/2D do handlu i logistyki — Voyager 1200g, 1250g, 1452g (BT), 1602g.', typicalDevices: 'Voyager 1200g, 1250g, 1350g, 1452g, 1602g' },
+      { series: 'Serwis skanerów Honeywell — Xenon', description: 'Naprawa wysokiej klasy skanerów 2D imager — Xenon 1900, 1902g, 1950g, 1952g. Kody 2D z wyświetlaczy, DPM, UDI.', typicalDevices: 'Xenon 1900, 1902, 1950, 1950g-HD, 1952, Xenon XP' },
+      { series: 'Serwis tabletów przemysłowych Honeywell', description: 'Naprawa rugged tabletów z ekranem dotykowym 10,1" — EDA10A (lekki tablet 674 g z hot-swap baterią) i RT10A (pełny rugged tablet do magazynu i produkcji). Klasa IP65, MIL-STD-810H, wbudowany skaner kodów 1D/2D.', typicalDevices: 'EDA10A, RT10A, ScanPal EDA10A' },
     ],
     commonIssues: [
-      { title: 'PM45 / PM43 — pionowe białe pasy na wydruku etykiety', description: 'Wypalone punkty termiczne na głowicy drukującej (thermal burnline damage) — częsty problem po 30+ km druku. Wymiana oryginalnej głowicy Honeywell 203/300/600 dpi + kalibracja ciśnienia i temperatury. Dotyczy też legacy PM4i, PX4i, PX6i.' },
+      { title: 'Naprawa drukarek Honeywell PM45 / PM43 — pionowe białe pasy na wydruku', description: 'Wypalone punkty termiczne na głowicy drukującej (thermal burnline damage) — częsty problem po 30+ km druku. Wymiana oryginalnej głowicy Honeywell 203/300/600 dpi + kalibracja ciśnienia i temperatury. Dotyczy też legacy PM4i, PX4i, PX6i.' },
       { title: 'Intermec PM4i / PX6i — drukarka nie komunikuje się z hostem', description: 'Uszkodzony moduł Ethernet/Serial lub konflikty starszych języków IPL/Fingerprint. Diagnoza portu, reflashing firmware na odpowiednią wersję, ewentualnie wymiana karty sieciowej lub głównej płyty.' },
       { title: 'PD45 / PC43 — drukarka wyrzuca "Media Out" mimo założonych etykiet', description: 'Rozkalibrowany czujnik przerw (gap sensor) lub zabrudzone okienko czujnika. Kalibracja + czyszczenie, w razie potrzeby wymiana czujnika transmisyjnego lub refleksyjnego.' },
       { title: 'Terminal CT40/EDA51 nie ładuje baterii', description: 'Najczęściej przyczyną jest uszkodzenie złącza USB-C lub pogięcie pinów w stacji dokującej. Sprawdzamy rezystancję złącza, przelutowujemy kabel zasilający i testujemy pod obciążeniem.' },
-      { title: 'Skaner Voyager/Xenon nie czyta kodów 2D', description: 'W skanerach imagerowych (Xenon 1900/1950) zablokowany imager lub zabrudzona optyka. Czyszczenie modułu, reset firmware i kontrola temperatury pracy LED.' },
+      { title: 'Naprawa skanerów Honeywell Voyager/Xenon — nie czytają kodów 2D', description: 'W skanerach imagerowych (Xenon 1900/1950) zablokowany imager lub zabrudzona optyka. Czyszczenie modułu, reset firmware i kontrola temperatury pracy LED.' },
       { title: 'Ekran CT40/EDA51 pęknięty lub bez dotyku', description: 'Wymiana LCD + digitizera z zachowaniem szczelności IP65/IP67. Używamy oryginalnych paneli Honeywell — naprawa w 5–7 dni.' },
       { title: 'Terminal CK65 nie łączy się z siecią Wi-Fi', description: 'Problem z modułem radiowym (antena, układ) albo konfiguracja profilu. Test kalibracji WLAN, aktualizacja sterowników, ewentualna wymiana modułu.' },
       { title: 'Klawisze w CK65/CK75 nie reagują', description: 'Zużycie mat silikonowych lub uszkodzenie taśmy flex. Wymiana klawiatury + matek silikonowych z gwarancją 3 miesiące.' },
       { title: 'Skaner Voyager 1250g tylko piknie, nie transmituje', description: 'Zwykle sufiks CR/LF nie jest ustawiony albo kabel USB utracił transmisję danych. Diagnoza + kod konfiguracyjny lub wymiana kabla.' },
+      { title: 'Naprawa tabletów Honeywell EDA10A / RT10A — pęknięty ekran lub brak dotyku', description: 'Wymiana panelu LCD + digitizer 10,1" z testem szczelności IP65. Oryginalne ekrany Honeywell, naprawa 5–7 dni roboczych. Częsty problem po upadku z wózka widłowego lub regałów.' },
+      { title: 'Naprawa tabletu Honeywell EDA10A — bateria nie trzyma 12h pracy', description: 'Zużycie ogniw po 18–24 mies. intensywnego użytkowania. Wymiana baterii 8 000 mAh hot-swap z gwarancją 6 miesięcy. Kompatybilność z oryginalną stacją dokującą EDA10A.' },
+      { title: 'Naprawa terminali Honeywell CT70 XP / EDA61K — nie skanują kodów 2D', description: 'Uszkodzony moduł imager S0703 lub S0E03 FlexRange XLR. Diagnoza optyki, wymiana modułu skanującego, kalibracja parametrów imagera.' },
+      { title: 'PX940 — błąd weryfikacji nadruku etykiety (Verifier Failed)', description: 'Rozkalibrowana kamera weryfikacji lub uszkodzony moduł verifier. Kalibracja lub wymiana modułu weryfikatora — kluczowe dla aplikacji farmaceutycznych, healthcare i UDI.' },
     ],
     faqs: [
       { q: 'Czy TAKMA jest autoryzowanym serwisem Honeywell?', a: 'Jesteśmy niezależnym, profesjonalnym serwisem pogwarancyjnym urządzeń Honeywell. Pracujemy na oryginalnych częściach Honeywell, stosujemy certyfikowane procedury i dbamy o zachowanie klasy IP65/IP67 po każdej naprawie. Dla napraw gwarancyjnych urządzeń Honeywell kierujemy klientów bezpośrednio do producenta.' },
@@ -67,6 +92,7 @@ export const serviceBrands: ServiceBrand[] = [
       { q: 'Czy naprawiacie skanery Honeywell Voyager i Xenon po gwarancji?', a: 'Tak. Naprawiamy wszystkie skanery Honeywell — Voyager 1200g/1250g/1452g/1602g oraz Xenon 1900/1902/1950/1952. Typowe naprawy: wymiana modułu imager, naprawa elektroniki, wymiana kabli i przełączników.' },
       { q: 'Jak długo trwa naprawa urządzenia Honeywell / Intermec?', a: 'Diagnostyka w 48h od dostarczenia. Naprawa zwykle 5–7 dni roboczych dla aktualnych modeli (zależy od dostępności części). Dla najpopularniejszych modeli (CT40, EDA51, PM45) mamy części na stanie — naprawa ekspresowa 48h. Dla legacy Intermec (PM4i, PX6i, PB32/42/50) czas naprawy 7–14 dni ze względu na specjalne części.' },
       { q: 'Czy mogę wysłać urządzenie Honeywell do TAKMA z Warszawy/Krakowa?', a: 'Tak, obsługujemy klientów z całej Polski. Możesz zamówić kuriera przez nasz formularz (odbiór w 24h) lub wysłać samodzielnie na adres: TAKMA, ul. Poświęcka 1a, 51-128 Wrocław. Przy naprawach powyżej 200 PLN netto odsyłka na nasz koszt.' },
+      { q: 'Naprawiacie tablety przemysłowe Honeywell EDA10A i RT10A?', a: 'Tak — naprawiamy oba modele tabletów rugged Honeywell. Najczęstsze naprawy to wymiana ekranu LCD + digitizer 10,1" (od 650 PLN netto bez ekranu, koszt ekranu 1 100–1 800 PLN), wymiana baterii 8 000 mAh z hot-swap (od 350 PLN netto + bateria), naprawa modułu skanującego S0703 oraz wymiana złącza ładowania. Diagnoza darmowa przy zleceniu naprawy, czas realizacji 5–7 dni roboczych.' },
     ],
   },
   {
