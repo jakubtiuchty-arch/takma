@@ -7,6 +7,7 @@ import {
   getCategoryById,
   getManufacturerById,
   getSubcategoriesForProduct,
+  brandCategories,
 } from '@/data/products'
 import { ProductGallery } from '@/components/product'
 import { Badge } from '@/components/ui'
@@ -337,6 +338,10 @@ export default async function ProductPage({ params }: ProductPageProps) {
   }
 
   // JSON-LD: BreadcrumbList
+  const brandCategory = brandCategories.find(
+    (bc) => bc.manufacturerId === product.manufacturerId && bc.categoryId === product.categoryId
+  )
+
   const breadcrumbItems: { '@type': string; position: number; name: string; item: string }[] = [
     { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://www.takma.com.pl' },
     { '@type': 'ListItem', position: 2, name: 'Katalog', item: 'https://www.takma.com.pl/katalog' },
@@ -344,6 +349,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
   let pos = 3
   if (category) {
     breadcrumbItems.push({ '@type': 'ListItem', position: pos++, name: category.name, item: `https://www.takma.com.pl/${category.slug}` })
+  }
+  if (brandCategory) {
+    breadcrumbItems.push({ '@type': 'ListItem', position: pos++, name: brandCategory.name, item: `https://www.takma.com.pl/${brandCategory.slug}` })
   }
   if (primarySubcategory) {
     breadcrumbItems.push({ '@type': 'ListItem', position: pos++, name: primarySubcategory.name, item: `https://www.takma.com.pl/${primarySubcategory.slug}` })
@@ -439,6 +447,17 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 className="hover:text-primary-600 transition-colors whitespace-nowrap"
               >
                 {category.name}
+              </Link>
+            </>
+          )}
+          {brandCategory && (
+            <>
+              <ChevronRightIcon size={16} className="flex-shrink-0" />
+              <Link
+                href={`/${brandCategory.slug}`}
+                className="hover:text-primary-600 transition-colors whitespace-nowrap"
+              >
+                {brandCategory.name}
               </Link>
             </>
           )}
