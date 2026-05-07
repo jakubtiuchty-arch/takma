@@ -136,7 +136,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
             {category.name}
           </h1>
           <p className="text-gray-600 sm:text-justify">
-            {category.longDescription}
+            <LinkedText text={category.longDescription} />
           </p>
           <p className="text-gray-500 text-sm mt-3">
             {products.length} {productWord}
