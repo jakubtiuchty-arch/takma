@@ -226,6 +226,7 @@ export const industryPages: IndustryPage[] = [
       }
     ],
     relatedLinks: [
+      { title: 'Drukarki etykiet — wszystkie typy', href: '/drukarki-etykiet' },
       { title: 'Zebra ZT111 — kompaktowa drukarka entry-level do produkcji', href: '/produkt/zebra-zt111' },
       { title: 'Zebra ZT231 — wszechstronna drukarka przemysłowa', href: '/produkt/zebra-zt231' },
       { title: 'Zebra ZT411 — drukarka mid-range do linii produkcyjnej', href: '/produkt/zebra-zt411' },
@@ -588,6 +589,7 @@ export const industryPages: IndustryPage[] = [
     ],
 
     relatedLinks: [
+      { title: 'Drukarki etykiet — wszystkie typy', href: '/drukarki-etykiet' },
       { title: 'Zebra ZD220d — najtańsza drukarka do sklepu internetowego', href: '/produkt/zebra-zd220d' },
       { title: 'Zebra ZD230d — następca ZD220d z Ethernet', href: '/produkt/zebra-zd230d' },
       { title: 'Zebra ZD421d — bestseller do sklepu internetowego', href: '/produkt/zebra-zd421d' },
@@ -941,6 +943,7 @@ export const industryPages: IndustryPage[] = [
     ],
 
     relatedLinks: [
+      { title: 'Drukarki etykiet — wszystkie typy', href: '/drukarki-etykiet' },
       { title: 'Zebra ZD220d — najtańsza drukarka termiczna 4"', href: '/produkt/zebra-zd220d' },
       { title: 'Zebra ZD230d — drukarka z opcją gilotyny i Wi-Fi', href: '/produkt/zebra-zd230d' },
       { title: 'Zebra ZD421d — wszechstronna drukarka z modularnym MCS', href: '/produkt/zebra-zd421d' },
@@ -1231,6 +1234,7 @@ export const industryPages: IndustryPage[] = [
     ],
 
     relatedLinks: [
+      { title: 'Drukarki etykiet — wszystkie typy', href: '/drukarki-etykiet' },
       { title: 'Zebra ZD220d — najtańsza drukarka do małego magazynu', href: '/produkt/zebra-zd220d' },
       { title: 'Zebra ZD230d — szybsza biurkowa z Ethernet', href: '/produkt/zebra-zd230d' },
       { title: 'Zebra ZD421d — wszechstronna z modułową łącznością', href: '/produkt/zebra-zd421d' },
@@ -1457,6 +1461,7 @@ export const industryPages: IndustryPage[] = [
     ],
 
     relatedLinks: [
+      { title: 'Drukarki etykiet — wszystkie typy', href: '/drukarki-etykiet' },
       { title: 'Zebra ZD220d — najtańsza drukarka do biura spedycyjnego', href: '/produkt/zebra-zd220d' },
       { title: 'Zebra ZD421d — wszechstronna z modułową łącznością', href: '/produkt/zebra-zd421d' },
       { title: 'Zebra ZD621d — premium desktop z LCD i linerless', href: '/produkt/zebra-zd621d' },
@@ -1693,6 +1698,7 @@ export const industryPages: IndustryPage[] = [
       }
     ],
     relatedLinks: [
+      { title: 'Drukarki etykiet — wszystkie typy', href: '/drukarki-etykiet' },
       { title: 'Zebra ZD220d — najtańsza drukarka do małej apteki', href: '/produkt/zebra-zd220d' },
       { title: 'Zebra ZD421d — uniwersalna drukarka do apteki szpitalnej', href: '/produkt/zebra-zd421d' },
       { title: 'Zebra ZD621d — premium z LCD do opasek pacjenta', href: '/produkt/zebra-zd621d' },

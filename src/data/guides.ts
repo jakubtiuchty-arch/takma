@@ -1645,6 +1645,7 @@ export const guides: Guide[] = [
   ],
 
   relatedLinks: [
+    { title: 'Drukarki etykiet — pełny katalog', href: '/drukarki-etykiet' },
     { title: 'Drukarki biurkowe', href: '/biurkowe-drukarki-etykiet' },
     { title: 'Drukarki przemysłowe', href: '/przemyslowe-drukarki-etykiet' },
     { title: 'ZD421t vs Honeywell PC45t — porównanie', href: '/poradnik/zebra-zd421t-vs-honeywell-pc45t' },
@@ -6294,6 +6295,7 @@ export const guides: Guide[] = [
     { title: 'ZD421 vs ZD621 — porównanie biurkowych', href: '/poradnik/zebra-zd421-vs-zd621-porownanie' },
     { title: 'ZD421t vs Honeywell PC45t', href: '/poradnik/zebra-zd421t-vs-honeywell-pc45t' },
     { title: 'Serwis drukarek Zebra', href: 'https://www.serwis-zebry.pl/serwis-drukarek-zebra' },
+    { title: 'Drukarki etykiet — pełny katalog', href: '/drukarki-etykiet' },
     { title: 'Przemysłowe drukarki etykiet', href: '/przemyslowe-drukarki-etykiet' },
   ]
 },
@@ -8572,6 +8574,7 @@ export const guides: Guide[] = [
     { title: 'Drukarka do mikroetykiet 600 dpi', href: '/poradnik/drukarka-do-mikroetykiet-600-dpi' },
     { title: 'Jak wybrać drukarkę etykiet?', href: '/poradnik/jak-wybrac-drukarke-etykiet' },
     { title: 'Drukarki etykiet Zebra — przewodnik', href: '/poradnik/drukarki-etykiet-zebra-przewodnik' },
+    { title: 'Drukarki etykiet — pełny katalog', href: '/drukarki-etykiet' },
     { title: 'Drukarki przemysłowe — katalog', href: '/przemyslowe-drukarki-etykiet' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]
@@ -8945,6 +8948,7 @@ export const guides: Guide[] = [
     { title: 'Zebra ZT510 vs ZT610 — porównanie', href: '/poradnik/zebra-zt510-vs-zt610-porownanie-drukarek-przemyslowych' },
     { title: 'Drukarki etykiet Zebra — przewodnik', href: '/poradnik/drukarki-etykiet-zebra-przewodnik' },
     { title: 'Jak wybrać drukarkę etykiet?', href: '/poradnik/jak-wybrac-drukarke-etykiet' },
+    { title: 'Drukarki etykiet — pełny katalog', href: '/drukarki-etykiet' },
     { title: 'Drukarki przemysłowe — katalog', href: '/przemyslowe-drukarki-etykiet' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]

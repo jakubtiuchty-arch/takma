@@ -228,7 +228,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
             {subcategory.name}
           </h1>
           <p className="text-gray-600 sm:text-justify">
-            {subcategory.longDescription}
+            <LinkedText text={subcategory.longDescription} />
           </p>
           <p className="text-gray-500 text-sm mt-3">
             {products.length} {productWord}
