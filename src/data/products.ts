@@ -23817,6 +23817,7 @@ Koszt posiadania (TCO): baterie PowerPrecision+, stacje dokujące, ładowarki i 
       ],
     },
     createdAt: '2022-10-20',
+    updatedAt: '2026-05-07',
   },
   // Zebra MC3400 — Terminal mobilny z klawiaturą (Wi-Fi 6E)
   {
@@ -24004,6 +24005,7 @@ Koszt posiadania kolektora danych MC3400 (TCO): pełna kompatybilność wsteczna
     },
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc3400-series.html',
     createdAt: '2024-10-15',
+    updatedAt: '2026-05-07',
   },
   // Zebra MC3450 — Terminal mobilny 5G z klawiaturą
   {
@@ -24411,6 +24413,7 @@ Koszt posiadania (TCO): pełna kompatybilność wsteczna z akcesoriami MC9300 �
     },
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc9400-series.html',
     createdAt: '2024-10-15',
+    updatedAt: '2026-05-07',
   },
   {
     id: 'zebra-mc9450',
@@ -24587,6 +24590,7 @@ Pełna kompatybilność wsteczna z akcesoriami MC9300: baterie, stacje dokujące
     },
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc9400-series.html',
     createdAt: '2024-10-15',
+    updatedAt: '2026-05-07',
   },
   // ============================================
   // ZEBRA EM45 ENTERPRISE MOBILE
@@ -24796,6 +24800,7 @@ Zebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCo
     },
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/em45-series.html',
     createdAt: '2025-06-01',
+    updatedAt: '2026-05-07',
   },
   {
     id: 'zebra-tc22',
@@ -25043,7 +25048,7 @@ Koszt posiadania (TCO): pełna kompatybilność akcesoriów TC22 i TC27 — bate
       reviewBody: 'Zebra TC22 to jeden z najlepiej wyważonych terminali mobilnych w segmencie entry-level. Kompaktowa obudowa (236 g), 6-calowy ekran FHD+ i skaner SE4710 wystarczają do 90% zastosowań w magazynie, retail i logistyce. IP68 i wsparcie LifeGuard do Android 16 gwarantują długi cykl życia. Jedyny minus — brak hot-swap baterii. Przy cenie od 2 417 zł netto to najrozsądniejszy wybór dla firm wdrażających flotę terminali Zebra.',
     },
     createdAt: '2024-06-01',
-    updatedAt: '2026-04-09',
+    updatedAt: '2026-05-07',
   },
   {
     id: 'zebra-tc27',
@@ -25291,6 +25296,7 @@ Koszt posiadania (TCO): pełna kompatybilność akcesoriów TC27 i TC22 — bate
       ],
     },
     createdAt: '2024-06-01',
+    updatedAt: '2026-05-07',
   },
   {
     id: 'zebra-tc53',
@@ -25628,6 +25634,7 @@ Koszt posiadania (TCO): Kolektor danych Zebra TC58 z Android i gwarancją aktual
       ],
     },
     createdAt: '2024-06-01',
+    updatedAt: '2026-05-07',
   },
   {
     id: 'zebra-tc53e',
@@ -25834,6 +25841,7 @@ Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = min
       ],
     },
     createdAt: '2024-09-01',
+    updatedAt: '2026-05-07',
   },
   {
     id: 'zebra-tc58e',
@@ -26389,6 +26397,7 @@ Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = min
       { name: 'Zebra OneCare Essential — 5 lat', partNumber: 'Z1AE-TC501X-5C00', duration: '5 lat', priceNetto: 2021.82 },
     ],
     createdAt: '2026-02-17',
+    updatedAt: '2026-05-07',
   },
   {
     id: 'zebra-tc701',
@@ -26707,6 +26716,7 @@ Wersja enterprise (lżejsza, upadki 2,4 m, tańsza): Zebra TC501. Szczegółowa 
     //   { name: 'Zebra OneCare Essential — 5 lat', partNumber: 'Z1AE-TC701X-5C00', duration: '5 lat' },
     // ],
     createdAt: '2026-02-17',
+    updatedAt: '2026-05-07',
   },
   {
     id: 'zebra-tc73',
@@ -26873,6 +26883,7 @@ Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC78. Wersja enterpri
       ],
     },
     createdAt: '2024-06-01',
+    updatedAt: '2026-05-07',
   },
   {
     id: 'zebra-tc78',
@@ -27060,6 +27071,7 @@ Wersja bliźniacza WiFi-only: Zebra TC73. Wersja enterprise (lżejsza, tańsza, 
       ],
     },
     createdAt: '2024-06-01',
+    updatedAt: '2026-05-07',
   },
   // ============================================
   // ZEBRA MC2200 — terminal z klawiaturą, Wi-Fi
@@ -27239,6 +27251,7 @@ Koszt posiadania (TCO): Android 10 z gwarancją aktualizacji do Android 14 = min
       ],
     },
     createdAt: '2024-06-01',
+    updatedAt: '2026-05-07',
   },
   // ============================================
   // ZEBRA MC2700 — terminal z klawiaturą, LTE+GPS
