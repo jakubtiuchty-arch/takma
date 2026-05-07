@@ -23825,7 +23825,7 @@ Koszt posiadania (TCO): baterie PowerPrecision+, stacje dokujące, ładowarki i 
     slug: 'zebra-mc3400',
     name: 'Zebra MC3400',
     seoTitle: 'Zebra MC3400 — kolektor danych z klawiaturą | od 4 561 zł',
-    seoDescription: 'Zebra MC3400 (MC3401) — kolektor danych z klawiaturą do magazynów i centrów dystrybucji. Następca MC3300x: Wi-Fi 6E, skaner SE58 do 30 m, IP65/IP67, hot-swap, Android 14→18. 14 konfiguracji od 4 561 zł netto.',
+    seoDescription: 'Kolektor danych Zebra MC3400 z klawiaturą — Wi-Fi 6E, skaner SE58 do 30 m, IP65/IP67, hot-swap. 14 konfiguracji od 4 561 zł netto. Następca MC3300x.',
     shortDescription: 'Zebra MC3400 — kolektor danych z fizyczną klawiaturą, Wi-Fi 6E, skaner do 30 m, IP65/IP67, następca MC3300x',
     description: `Zebra MC3400 to kolektor danych (terminal mobilny) nowej generacji z fizyczną klawiaturą i skanerem kodów kreskowych 2D. Zaprojektowany dla operatorów magazynów, centrów dystrybucji, linii produkcyjnych i punktów cross-dockingu — wszędzie tam, gdzie szybkie wprowadzanie danych z klawiatury i niezawodne skanowanie kodów kreskowych decydują o wydajności operacji. Następca bestsellerowej serii MC3300x. Cena od 4 561 zł netto, 14 konfiguracji w TAKMA.
 
@@ -24004,6 +24004,11 @@ Koszt posiadania kolektora danych MC3400 (TCO): pełna kompatybilność wsteczna
       ],
     },
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc3400-series.html',
+    editorialReview: {
+      ratingValue: 4.8,
+      bestRating: 5,
+      reviewBody: 'Zebra MC3400 to mocny upgrade od bestsellerowego MC3300x. Procesor Qualcomm 4490 (2,5× szybszy), Wi-Fi 6E (3× szybszy transfer) i podwójna klasa IP65/IP67 to skok generacyjny. Klawiatura 38-klawiszowa pozostaje optymalnym wyborem dla większości WMS. Bateria 7 000 mAh z hot-swap eliminuje przestoje. Trzy skanery do wyboru — SE58 Extended Range (30,5 m) zastępuje drabinę w magazynach wysokiego składowania. Pełna kompatybilność z akcesoriami MC3300x oszczędza do 30% kosztów wdrożenia. Przy cenie od 4 561 zł netto najlepszy stosunek wydajności do ceny w segmencie kolektorów z klawiaturą.',
+    },
     createdAt: '2024-10-15',
     updatedAt: '2026-05-07',
   },
