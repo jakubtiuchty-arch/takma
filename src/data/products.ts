@@ -23619,9 +23619,9 @@ Wybierz skaner według środowiska pracy: SE965 (laser 1D) do tradycyjnych kodó
 
 Konstrukcja IP64 z certyfikacją MIL-STD-810H: upadki z 1,8 m na beton, 500 upadków z 0,5 m w teście tumble, zakres temperatur od -20°C do +50°C. Wymienne baterie PowerPrecision+: 5 200 mAh (standard, ~10 h) lub 7 000 mAh (rozszerzona, ~14 h). Łączność Wi-Fi 802.11ac 2×2 MU-MIMO, Bluetooth 5.0, NFC.
 
-Pakiet Mobility DNA w cenie: DataWedge (skanowanie bez programowania), StageNow (masowa konfiguracja floty), Device Tracker (lokalizacja zgubionych terminali), LifeGuard™ (łatki bezpieczeństwa). Wersja dotykowa bez klawiatury: Zebra TC53.
+Pakiet Mobility DNA w cenie: DataWedge (skanowanie bez programowania), StageNow (masowa konfiguracja floty), Device Tracker (lokalizacja zgubionych terminali), LifeGuard™ (łatki bezpieczeństwa). Wersja dotykowa bez klawiatury: [Zebra TC53](/produkt/zebra-tc53).
 
-Koszt posiadania (TCO): baterie PowerPrecision+, stacje dokujące, ładowarki i holstery MC3300x są w pełni kompatybilne z następcą MC3400 — migracja na nowszą generację nie wymaga wymiany infrastruktury ładowania. Inwestycja w akcesoria MC3300x chroni budżet przy przyszłym upgrade. MC3300x to jeden z najczęściej wdrażanych kolektorów danych Zebra w polskich magazynach — sprawdzona platforma z szeroką bazą akcesoriów i serwisem w Polsce (serwis-zebry.pl).`,
+Koszt posiadania (TCO): baterie PowerPrecision+, stacje dokujące, ładowarki i holstery MC3300x są w pełni kompatybilne z następcą [MC3400](/produkt/zebra-mc3400) — migracja na nowszą generację nie wymaga wymiany infrastruktury ładowania. Inwestycja w akcesoria MC3300x chroni budżet przy przyszłym upgrade. MC3300x to jeden z najczęściej wdrażanych kolektorów danych Zebra w polskich magazynach — sprawdzona platforma z szeroką bazą akcesoriów i serwisem w Polsce (serwis-zebry.pl).`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -23827,7 +23827,7 @@ Koszt posiadania (TCO): baterie PowerPrecision+, stacje dokujące, ładowarki i 
     seoTitle: 'Zebra MC3400 — kolektor danych z klawiaturą | od 4 561 zł',
     seoDescription: 'Kolektor danych Zebra MC3400 z klawiaturą — Wi-Fi 6E, skaner SE58 do 30 m, IP65/IP67, hot-swap. 14 konfiguracji od 4 561 zł netto. Następca MC3300x.',
     shortDescription: 'Zebra MC3400 — kolektor danych z fizyczną klawiaturą, Wi-Fi 6E, skaner do 30 m, IP65/IP67, następca MC3300x',
-    description: `Zebra MC3400 to kolektor danych (terminal mobilny) nowej generacji z fizyczną klawiaturą i skanerem kodów kreskowych 2D. Zaprojektowany dla operatorów magazynów, centrów dystrybucji, linii produkcyjnych i punktów cross-dockingu — wszędzie tam, gdzie szybkie wprowadzanie danych z klawiatury i niezawodne skanowanie kodów kreskowych decydują o wydajności operacji. Następca bestsellerowej serii MC3300x. Cena od 4 561 zł netto, 14 konfiguracji w TAKMA.
+    description: `Zebra MC3400 to kolektor danych (terminal mobilny) nowej generacji z fizyczną klawiaturą i skanerem kodów kreskowych 2D. Zaprojektowany dla operatorów magazynów, centrów dystrybucji, linii produkcyjnych i punktów cross-dockingu — wszędzie tam, gdzie szybkie wprowadzanie danych z klawiatury i niezawodne skanowanie kodów kreskowych decydują o wydajności operacji. Następca bestsellerowej serii [MC3300x](/produkt/zebra-mc3300x). Cena od 4 561 zł netto, 14 konfiguracji w TAKMA.
 
 Kluczowa przewaga kolektora danych MC3400 nad poprzednikiem: procesor Qualcomm 4490 (2,4 GHz) dostarcza 2,5-krotnie większą moc obliczeniową niż Snapdragon 660 w MC3300x, przy jednoczesnym wzroście pamięci RAM do 6 GB i Flash do 128 GB. Wi-Fi 6E (triband 2,4/5/6 GHz) zapewnia do 3× szybszy transfer niż Wi-Fi 5 w poprzedniku — krytyczne w magazynach z 200+ urządzeniami w sieci.
 
@@ -24022,13 +24022,13 @@ Koszt posiadania kolektora danych MC3400 (TCO): pełna kompatybilność wsteczna
     shortDescription: 'Zebra MC3450 — terminal mobilny 5G z klawiaturą, Wi-Fi 6E, GPS, skaner do 30 m, IP65/IP67',
     description: `Dla kogo? Zebra MC3450 to wytrzymały terminal mobilny 5G nowej generacji z fizyczną klawiaturą, zaprojektowany dla operacji logistycznych wymagających łączności komórkowej poza zasięgiem Wi-Fi — yard management na placach kontenerowych, weryfikacja ładunków w portach, inwentaryzacja pojazdów na dużych placach, logistyka terenowa i zarządzanie dostawami last-mile.
 
-Identyczne parametry jak MC3400 (procesor Qualcomm 4490, 2,4 GHz — 2,5× szybszy niż MC3300x) plus moduł 5G/LTE: obsługa sieci publicznych i prywatnych 5G (CBRS/FR1), dual SIM (nano SIM + eSIM), nawigacja satelitarna GPS/GLONASS/Galileo/BeiDou. MC3450 to jedyny terminal Zebra z fizyczną klawiaturą i łącznością 5G — gdy operator musi pracować na zewnątrz budynku, gdzie Wi-Fi nie sięga.
+Identyczne parametry jak MC3400 (procesor Qualcomm 4490, 2,4 GHz — 2,5× szybszy niż [MC3300x](/produkt/zebra-mc3300x)) plus moduł 5G/LTE: obsługa sieci publicznych i prywatnych 5G (CBRS/FR1), dual SIM (nano SIM + eSIM), nawigacja satelitarna GPS/GLONASS/Galileo/BeiDou. MC3450 to jedyny terminal Zebra z fizyczną klawiaturą i łącznością 5G — gdy operator musi pracować na zewnątrz budynku, gdzie Wi-Fi nie sięga.
 
 Cztery opcje skanerów: SE4770 Standard Range (indoor/outdoor z celownikiem laserowym), SE58 Extended Range z zielonym laserem IntelliFocus (do 30,5 m — skanowanie kontenerów na placu bez drabiny). Trzy klawiatury: 29-klawiszowa (numeryczna), 38-klawiszowa (funkcyjna) i 47-klawiszowa (alfanumeryczna A-Z). Dwie obudowy: Straight Shooter (prosta, 442 g) i Gun (pistoletowa, 528 g).
 
 Podwójna klasa ochrony IP65/IP67 — pełna wodoodporność: deszcz, mycie pod bieżącą wodą, zanurzenie. Upadki z 2,4 m na beton, 4 000 cykli tumble z 1 m. Bateria 7 000 mAh z hot-swap — pełna zmiana 10–14 h. Android 14 z gwarancją aktualizacji do Android 18. Zebra Identity Guardian — biometryczne logowanie rozpoznawaniem twarzy.
 
-Pełna kompatybilność wsteczna z akcesoriami MC3300x i MC3400: baterie, stacje dokujące, ładowarki — migracja bez wymiany infrastruktury. Wersja wyłącznie Wi-Fi (bez 5G/GPS): Zebra MC3400. Pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, Enterprise Home Screen, LifeGuard™.
+Pełna kompatybilność wsteczna z akcesoriami MC3300x i MC3400: baterie, stacje dokujące, ładowarki — migracja bez wymiany infrastruktury. Wersja wyłącznie Wi-Fi (bez 5G/GPS): [Zebra MC3400](/produkt/zebra-mc3400). Pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, Enterprise Home Screen, LifeGuard™.
 
 Koszt posiadania (TCO): pełna kompatybilność wsteczna z akcesoriami MC3300x i MC3400 — baterie, stacje dokujące, ładowarki, holstery pasują bez zmian. Migracja z MC3300x na MC3450 nie wymaga wymiany infrastruktury ładowania — oszczędność do 40% kosztów wdrożenia w porównaniu z zakupem nowego ekosystemu. Android 14 z gwarancją aktualizacji do Android 18 (4 generacje) = minimum 10 lat wsparcia od Zebra LifeGuard™. Szczegółowa dokumentacja techniczna na zebra.com i serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
@@ -24239,7 +24239,7 @@ Kolektor danych MC9400 oferuje dwa skanery: SE4770 Standard Range — imager 2D 
 
 Konstrukcja ultra-rugged IP65 + IP68 z certyfikacją MIL-STD-810H: upadki z 3,65 m na beton (najwyższy w klasie), 6 000 cykli tumble z 1 m, zakres temperatur od -20°C do +50°C (standardowa bateria) i od -30°C do +50°C (bateria freezer). Trzy opcje baterii: 7 000 mAh standardowa, 7 000 mAh BLE (z beaconem do lokalizacji w magazynie) i 5 000 mAh freezer (certyfikowana do pracy w mroźniach -30°C). Warm-swap — wymiana baterii bez restartu urządzenia.
 
-Opcjonalna kamera tylna 13 MP do dokumentacji fotograficznej, OCR i skanowania dowodów dostawy. Zebra Identity Guardian — biometryczne logowanie rozpoznawaniem twarzy. Wersja z 5G/LTE i GPS: Zebra MC9450. Kolektor danych MC9400 zawiera pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, LifeGuard™.
+Opcjonalna kamera tylna 13 MP do dokumentacji fotograficznej, OCR i skanowania dowodów dostawy. Zebra Identity Guardian — biometryczne logowanie rozpoznawaniem twarzy. Wersja z 5G/LTE i GPS: [Zebra MC9450](/produkt/zebra-mc9450). Kolektor danych MC9400 zawiera pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, LifeGuard™.
 
 Koszt posiadania (TCO): pełna kompatybilność wsteczna z akcesoriami MC9300 — baterie, stacje dokujące, ładowarki, holstery pasują bez zmian. Migracja z MC9300 na MC9400 nie wymaga wymiany infrastruktury ładowania — oszczędność do 40% kosztów wdrożenia w porównaniu z zakupem kompletnie nowego ekosystemu. Kolektor danych Zebra MC9400 z Android 14 i gwarancją aktualizacji do wersji 17 (3 generacje) = minimum 8 lat wsparcia od Zebra LifeGuard™. Szczegółowa dokumentacja techniczna na zebra.com i serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
@@ -24441,7 +24441,7 @@ Wymienne klawiatury (hot-swap bez narzędzi): 29-klawiszowa numeryczna, 34-klawi
 
 Konstrukcja ultra-rugged IP65 + IP68 z certyfikacją MIL-STD-810H: upadki z 3,65 m na beton, 6 000 cykli tumble z 1 m. Trzy opcje baterii: 7 000 mAh standardowa, 7 000 mAh BLE (z beaconem do śledzenia lokalizacji) i 5 000 mAh freezer (certyfikowana do -30°C). Warm-swap — wymiana baterii bez restartu.
 
-Pełna kompatybilność wsteczna z akcesoriami MC9300: baterie, stacje dokujące, ładowarki baterii, holstery — migracja z MC9300 bez wymiany infrastruktury. Wersja wyłącznie Wi-Fi (bez 5G/GPS): Zebra MC9400. Pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, LifeGuard™. Szczegółowa dokumentacja techniczna na zebra.com i serwis-zebry.pl.`,
+Pełna kompatybilność wsteczna z akcesoriami MC9300: baterie, stacje dokujące, ładowarki baterii, holstery — migracja z MC9300 bez wymiany infrastruktury. Wersja wyłącznie Wi-Fi (bez 5G/GPS): [Zebra MC9400](/produkt/zebra-mc9400). Pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, LifeGuard™. Szczegółowa dokumentacja techniczna na zebra.com i serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -24832,7 +24832,7 @@ Konstrukcja o 10% cieńsza niż TC21, z ergonomicznym profilem redukującym naci
 
 Pakiet Mobility DNA Professional (w cenie urządzenia): DataWedge (skanowanie bez programowania), StageNow (masowa konfiguracja floty), Device Tracker (lokalizacja zagubionych terminali), LifeGuard™ (comiesięczne łatki bezpieczeństwa). Zarządzanie flotą przez MDM: SOTI, VMware, Microsoft Intune, Zebra DNA Cloud.
 
-Koszt posiadania (TCO): pełna kompatybilność akcesoriów TC22 i TC27 — baterie, stacje ładowania, etui i uchwyty pistoletowe są identyczne dla obu modeli. Migracja z TC21 nie wymaga wymiany infrastruktury ładowania (nowe akcesoria TC2L). Android z gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC27. Szczegółowa dokumentacja techniczna dostępna na zebra.com, [lista akcesoriów i interaktywna prezentacja modelu na tc22.pl](https://tc22.pl/#akcesoria) oraz w [serwis-zebry.pl](https://www.serwis-zebry.pl).`,
+Koszt posiadania (TCO): pełna kompatybilność akcesoriów TC22 i TC27 — baterie, stacje ładowania, etui i uchwyty pistoletowe są identyczne dla obu modeli. Migracja z TC21 nie wymaga wymiany infrastruktury ładowania (nowe akcesoria TC2L). Android z gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Wersja bliźniacza z łącznością 5G/4G LTE i GPS: [Zebra TC27](/produkt/zebra-tc27). Szczegółowa dokumentacja techniczna dostępna na zebra.com, [lista akcesoriów i interaktywna prezentacja modelu na tc22.pl](https://tc22.pl/#akcesoria) oraz w [serwis-zebry.pl](https://www.serwis-zebry.pl).`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc22-tc27.html',
@@ -25070,7 +25070,7 @@ Koszt posiadania (TCO): pełna kompatybilność akcesoriów TC22 i TC27 — bate
     shortDescription: 'Zebra TC27 — komputer mobilny 5G/Wi-Fi 6E z GPS, następca TC26, do pracy w terenie',
     description: `Dla kogo? Zebra TC27 to terminal mobilny klasy enterprise z łącznością 5G/4G LTE i GPS, zaprojektowany dla pracowników terenowych — kurierów, serwisantów, przedstawicieli handlowych, inspektorów — którzy potrzebują wytrzymałego urządzenia ze skanerem kodów kreskowych i stałym dostępem do systemów firmowych poza zasięgiem Wi-Fi.
 
-Bliźniacze urządzenie do Zebra TC22 (identyczny procesor, ekran, skanery, wytrzymałość), rozszerzone o moduł 5G FR1 z Gigabit LTE-A, dual SIM (nano + eSIM) oraz lokalizację GPS/GLONASS/Galileo/BeiDou z dwuzakresowym GNSS. TC27 łączy stylistykę i cenę smartfona z funkcjami biznesowymi klasy enterprise.
+Bliźniacze urządzenie do [Zebra TC22](/produkt/zebra-tc22) (identyczny procesor, ekran, skanery, wytrzymałość), rozszerzone o moduł 5G FR1 z Gigabit LTE-A, dual SIM (nano + eSIM) oraz lokalizację GPS/GLONASS/Galileo/BeiDou z dwuzakresowym GNSS. TC27 łączy stylistykę i cenę smartfona z funkcjami biznesowymi klasy enterprise.
 
 Duży 6-calowy wyświetlacz FHD+ (1080×2160) z Corning Gorilla Glass, procesor Qualcomm 5430 hex-core 2.1 GHz z 6 lub 8 GB RAM. Android z gwarancją aktualizacji do wersji 16. Dwukrotnie wyższa wydajność obliczeniowa w porównaniu z poprzednią generacją TC26.
 
@@ -25328,7 +25328,7 @@ Konstrukcja klasy wytrzymałości IP68 + IP65 z certyfikacją MIL-STD-810H: wiel
 
 Pakiet Mobility DNA Professional (w cenie urządzenia): DataWedge, StageNow, Device Tracker, LifeGuard, Workforce Connect Push-to-Talk. Opcjonalnie: Zebra Dimensioning — funkcja wymiarowania paczek kamerą urządzenia (eliminuje statyczne stanowisko pomiarowe). Zarządzanie flotą: SOTI, VMware, Microsoft Intune, Zebra DNA Cloud.
 
-Koszt posiadania (TCO): Android z gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Baterie PowerPrecision+ TC53 są kompatybilne z TC58, TC73 i TC78 — jedna infrastruktura ładowania dla całej floty. Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC58. Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.`,
+Koszt posiadania (TCO): Android z gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Baterie PowerPrecision+ TC53 są kompatybilne z TC58, [TC73](/produkt/zebra-tc73) i [TC78](/produkt/zebra-tc78) — jedna infrastruktura ładowania dla całej floty. Wersja bliźniacza z łącznością 5G/4G LTE i GPS: [Zebra TC58](/produkt/zebra-tc58). Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -25449,7 +25449,7 @@ Koszt posiadania (TCO): Android z gwarancją aktualizacji do Android 16 = minimu
 
 Dla kogo? Zebra TC58 to kolektor danych (terminal mobilny) z łącznością 5G/4G LTE, zaprojektowany dla firm kurierskich, serwisantów terenowych, pracowników magazynów rozproszonych i operatorów logistycznych, którzy potrzebują niezawodnej łączności komórkowej poza zasięgiem WiFi — z budżetem na urządzenie klasy enterprise.
 
-Wersja bliźniacza Zebra TC53 z pełną łącznością komórkową: 5G FR1 (n1/n3/n5/n7/n8/n20/n28/n38/n40/n41/n66/n71/n77/n78) + 4G LTE + 3G + 2G. Obsługa nano SIM + eSIM — możliwość pracy na dwóch operatorach jednocześnie. Dual-Band GNSS (GPS L1+L5) z a-GPS zapewnia precyzyjną lokalizację do 1 metra na zewnątrz budynków.
+Wersja bliźniacza [Zebra TC53](/produkt/zebra-tc53) z pełną łącznością komórkową: 5G FR1 (n1/n3/n5/n7/n8/n20/n28/n38/n40/n41/n66/n71/n77/n78) + 4G LTE + 3G + 2G. Obsługa nano SIM + eSIM — możliwość pracy na dwóch operatorach jednocześnie. Dual-Band GNSS (GPS L1+L5) z a-GPS zapewnia precyzyjną lokalizację do 1 metra na zewnątrz budynków.
 
 Procesor Qualcomm 6490 octa-core 2,7 GHz (o 60% szybszy od TC57x), 6-calowy wyświetlacz Full HD+ (1080×2160) o jasności 600 nitów z obsługą rękawiczek i odrzucaniem kropel wody. Od 4 do 8 GB RAM i do 128 GB pamięci Flash (UFS). System Android z gwarancją aktualizacji do Androida 16.
 
@@ -25459,7 +25459,7 @@ Konstrukcja IP68 + IP65 z certyfikacją MIL-STD-810H: wielokrotne upadki z 1,8 m
 
 Pakiet Mobility DNA Professional: DataWedge, StageNow, Device Tracker, LifeGuard, Workforce Connect Push-to-Talk. Zarządzanie flotą: SOTI, VMware, Microsoft Intune, Zebra DNA Cloud.
 
-Koszt posiadania (TCO): Kolektor danych Zebra TC58 z Android i gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Baterie PowerPrecision+ TC58 są kompatybilne z TC53, TC73 i TC78 — jedna infrastruktura ładowania dla całej floty. Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.`,
+Koszt posiadania (TCO): Kolektor danych Zebra TC58 z Android i gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Baterie PowerPrecision+ TC58 są kompatybilne z TC53, [TC73](/produkt/zebra-tc73) i [TC78](/produkt/zebra-tc78) — jedna infrastruktura ładowania dla całej floty. Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -25654,7 +25654,7 @@ Koszt posiadania (TCO): Kolektor danych Zebra TC58 z Android i gwarancją aktual
     seoTitle: 'Zebra TC53e — kolektor danych / terminal mobilny RFID UHF Wi-Fi 6E | od 4 926 zł',
     seoDescription: 'Zebra TC53e (TC530E) — kolektor danych Wi-Fi 6E z opcjonalnym RFID UHF do magazynów i sieci handlowych. Qualcomm 4490, IP68, skaner SE55 do 12 m, Android 13→17, EPEAT Gold. 7 konfiguracji od 4 926 zł netto.',
     shortDescription: 'Zebra TC53e — terminal mobilny WiFi 6E z procesorem Qualcomm 4490, ekranem 6" FHD+ i opcjonalnym RFID UHF, następca TC53 w wersji ekonomicznej',
-    description: `Dla kogo? Zebra TC53e to terminal mobilny klasy enterprise z WiFi 6E i opcjonalnym wbudowanym RFID UHF, zaprojektowany dla magazynów, centrów dystrybucyjnych, sieci handlowych i szpitali, które szukają niezawodnego urządzenia z długim cyklem życia — w przystępniejszej cenie niż flagowy TC53.
+    description: `Dla kogo? Zebra TC53e to terminal mobilny klasy enterprise z WiFi 6E i opcjonalnym wbudowanym RFID UHF, zaprojektowany dla magazynów, centrów dystrybucyjnych, sieci handlowych i szpitali, które szukają niezawodnego urządzenia z długim cyklem życia — w przystępniejszej cenie niż flagowy [TC53](/produkt/zebra-tc53).
 
 Następca linii TC53 w wersji "essential": procesor Qualcomm 4490 octa-core 2,4 GHz (nowszy i bardziej energooszczędny od 6490), 6-calowy wyświetlacz Full HD+ (1080×2160) o jasności 600 nitów z obsługą rękawiczek i odrzucaniem kropel wody, od 6 do 8 GB RAM i do 128 GB pamięci Flash (UFS). System Android 13 z gwarancją aktualizacji do Androida 17 — o jedną wersję dłużej niż TC53.
 
@@ -25664,7 +25664,7 @@ Konstrukcja IP68 + IP65 z certyfikacją MIL-STD-810H: wielokrotne upadki z 1,8 m
 
 Bluetooth 5.3 (nowszy niż TC53), NFC, WiFi 6E 2×2 MU-MIMO, kamera 16 MP (tył) i 8 MP (przód), USB 3.1 Type-C. Sprzętowy element zabezpieczający (Secure Element) i Google StrongBox w wybranych wariantach. 25% obudowy z plastiku z recyklingu — certyfikat EPEAT Gold.
 
-Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = minimum 5 lat wsparcia LifeGuard™ (o rok dłużej niż TC53). Akcesoria ShareCradle kompatybilne z TC53/TC58/TC73/TC78 — jedna infrastruktura ładowania dla całej floty mieszanej. Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC58e. Dokumentacja techniczna: zebra.com i serwis-zebry.pl.`,
+Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = minimum 5 lat wsparcia LifeGuard™ (o rok dłużej niż TC53). Akcesoria ShareCradle kompatybilne z TC53/[TC58](/produkt/zebra-tc58)/[TC73](/produkt/zebra-tc73)/[TC78](/produkt/zebra-tc78) — jedna infrastruktura ładowania dla całej floty mieszanej. Wersja bliźniacza z łącznością 5G/4G LTE i GPS: [Zebra TC58e](/produkt/zebra-tc58e). Dokumentacja techniczna: zebra.com i serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -25861,9 +25861,9 @@ Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = min
     seoTitle: 'Zebra TC58e — kolektor danych / terminal mobilny 5G essential | od 5 337 zł',
     seoDescription: 'Zebra TC58e (TC58BE) — kolektor danych 5G/LTE do logistyki terenowej i serwisu. Qualcomm 4490, WiFi 6E, barometr, GPS, skaner SE55 do 12 m, IP68, Android 13→17. 8 konfiguracji od 5 337 zł netto.',
     shortDescription: 'Zebra TC58e — terminal mobilny 5G z WiFi 6E, ekranem 6" FHD+ i procesorem Qualcomm 4490, wersja TC53e z łącznością komórkową 5G/LTE',
-    description: `Dla kogo? Zebra TC58e to terminal mobilny z łącznością 5G/4G LTE i WiFi 6E, zaprojektowany dla firm kurierskich, serwisantów terenowych, pracowników magazynów rozproszonych i operatorów logistycznych, którzy potrzebują niezawodnej łączności komórkowej poza zasięgiem WiFi — w przystępniejszej cenie niż flagowy TC58.
+    description: `Dla kogo? Zebra TC58e to terminal mobilny z łącznością 5G/4G LTE i WiFi 6E, zaprojektowany dla firm kurierskich, serwisantów terenowych, pracowników magazynów rozproszonych i operatorów logistycznych, którzy potrzebują niezawodnej łączności komórkowej poza zasięgiem WiFi — w przystępniejszej cenie niż flagowy [TC58](/produkt/zebra-tc58).
 
-Wersja bliźniacza Zebra TC53e z pełną łącznością komórkową: 5G FR1 Gen 2 (n1/n2/n3/n5/n7/n8/n12/n20/n26/n28/n38/n40/n41/n66/n71/n77/n78) + 4G LTE + 3G + 2G. Obsługa nano SIM + eSIM — możliwość pracy na dwóch operatorach jednocześnie. Dual-Band GNSS (GPS L1+L5, GLONASS, Galileo, BeiDou) z a-GPS zapewnia precyzyjną lokalizację do 1 metra na zewnątrz budynków.
+Wersja bliźniacza [Zebra TC53e](/produkt/zebra-tc53e) z pełną łącznością komórkową: 5G FR1 Gen 2 (n1/n2/n3/n5/n7/n8/n12/n20/n26/n28/n38/n40/n41/n66/n71/n77/n78) + 4G LTE + 3G + 2G. Obsługa nano SIM + eSIM — możliwość pracy na dwóch operatorach jednocześnie. Dual-Band GNSS (GPS L1+L5, GLONASS, Galileo, BeiDou) z a-GPS zapewnia precyzyjną lokalizację do 1 metra na zewnątrz budynków.
 
 Procesor Qualcomm 4490 octa-core 2,4 GHz (nowszy i energooszczędniejszy od 6490 w TC58), 6-calowy wyświetlacz Full HD+ (1080×2160) o jasności 600 nitów z obsługą rękawiczek i odrzucaniem kropel wody. Od 6 do 8 GB RAM i do 128 GB pamięci Flash (UFS). System Android 13 z gwarancją aktualizacji do Androida 17.
 
@@ -25873,7 +25873,7 @@ Konstrukcja IP68 + IP65 z certyfikacją MIL-STD-810H: upadki z 1,8 m na beton (2
 
 Bluetooth 5.3, NFC, WiFi 6E 2×2 MU-MIMO, kamera 16 MP (tył) i 8 MP (przód), USB 3.1 Type-C. Certyfikat EPEAT Gold, 25% plastiku z recyklingu.
 
-Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = minimum 5 lat wsparcia LifeGuard™ (o rok dłużej niż TC58). Akcesoria ShareCradle kompatybilne z TC53/TC58/TC73/TC78 — jedna infrastruktura ładowania dla całej floty mieszanej. Dokumentacja: zebra.com i serwis-zebry.pl.`,
+Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = minimum 5 lat wsparcia LifeGuard™ (o rok dłużej niż TC58). Akcesoria ShareCradle kompatybilne z [TC53](/produkt/zebra-tc53)/TC58/[TC73](/produkt/zebra-tc73)/[TC78](/produkt/zebra-tc78) — jedna infrastruktura ładowania dla całej floty mieszanej. Dokumentacja: zebra.com i serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -26081,7 +26081,7 @@ Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = min
     seoTitle: 'Zebra TC501 — kolektor danych z AI i RFID | od 3 730 zł',
     seoDescription: 'Zebra TC501 — kolektor danych z AI, RFID UHF, Wi-Fi 7, AMOLED 1500 nit. Następca TC53, Android 15→19. 15 konfiguracji od 3 730 zł netto | TAKMA.',
     shortDescription: 'Zebra TC501 — terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6" AMOLED 1500 nit, następca TC52/TC53',
-    description: `Dla kogo? Zebra TC501 to flagowy kolektor danych (terminal mobilny) nowej generacji, zaprojektowany jako następca TC52/TC53 dla firm, które potrzebują najnowszej technologii AI, RFID i Wi-Fi 7 w jednym urządzeniu — od dużych magazynów i centrów logistycznych, przez sieci handlowe, po szpitale i zakłady produkcyjne.\n\nWydajność i AI na pierwszej linii. Procesor Qualcomm Dragonwing Q-6690 (8 rdzeni, do 2,9 GHz) z dedykowanym silnikiem AI (NPU) zapewnia 300% więcej mocy obliczeniowej niż TC53. Przetwarzanie AI odbywa się lokalnie — rozpoznawanie produktów, weryfikacja etykiet, OCR bez chmury, zgodnie z RODO. Pamięć 8 GB/128 GB lub 12 GB/256 GB (UFS 3.1) z opcją rozszerzenia microSD do 2 TB.\n\nEkran AMOLED — pierwszy w klasie enterprise. Wyświetlacz 6" Full HD+ (2160×1080) z matrycą AMOLED i jasnością 1500 nitów — 2,5× jaśniejszy niż IPS w TC53 (600 nit). Doskonale czytelny w pełnym słońcu, z głęboką czernią zmniejszającą zmęczenie oczu na długich zmianach. Szkło Corning Gorilla Glass Victus, panel dotykowy reagujący w rękawicach i z mokrymi palcami.\n\nZintegrowany RFID UHF — bez dodatkowych modułów. TC501 to pierwszy terminal z serii TC5x z wbudowanym czytnikiem RFID UHF w KAŻDEJ konfiguracji. Odczyt ponad 200 tagów na sekundę z zasięgu do 2 metrów. Do długiego zasięgu (9+ m) można podłączyć sled RFD40/RFD90. W TC53 RFID wymagał osobnego modułu — teraz jest w standardzie.\n\nTrzy silniki skanowania do każdego zadania. SR500 (Standard Range) — skanowanie z bliska, kasa, lada, kompletacja. SR560 — ulepszony finder 2D, szybsze dekodowanie uszkodzonych kodów. AC670 (Advanced Color) — zasięg do 30 m, kolorowy imager, skanuje kody na najwyższych regałach bez drabiny. Kamera tylna 50 MP z opcją ultrawide 13 MP do dokumentacji fotograficznej.\n\nŁączność przyszłości. Wi-Fi 7 (802.11be) z 2×2 MU-MIMO i MLO — przepustowość 2× wyższa niż Wi-Fi 6E, stabilność w gęstych środowiskach z setkami urządzeń. Bluetooth 6.0 z większym zasięgiem. NFC do identyfikacji pracowników i tagów. Wersje WAN (TC501G) dodają 5G Release 17, dual eSIM, CBRS i GPS z potrójną bandą GNSS.\n\nWytrzymałość klasy enterprise. Obudowa IP68+IP65 — pyłoszczelna, wodoodporna (zanurzenie + strumień pod ciśnieniem). Upadki z 2,4 m na beton (2,7 m z rugged boot) wg MIL-STD-810H. 2–4× więcej tumbles niż TC53. Temperatura pracy od -20°C do +50°C. Bateria 5000 mAh (standard) lub 7240 mAh (rozszerzona), wymienna hot-swap — szybkie ładowanie 0→70% w 45 minut.\n\nAndroid 15 z najdłuższym wsparciem. Gwarancja aktualizacji do 4 kolejnych wersji systemu. LifeGuard for Android — comiesięczne łatki bezpieczeństwa OTA. Mobility DNA w cenie: StageNow, Device Tracker, Enterprise Home Screen. Kompatybilny z MDM: SOTI, Intune, VMware, Zebra Cloud.\n\nKoszt posiadania (TCO): Kolektor danych Zebra TC501 z Android 15 i gwarancją aktualizacji do Android 19 (4 generacje) = minimum 8 lat wsparcia LifeGuard™ — najdłuższy cykl życia w klasie. Uwaga: akcesoria TC53 (baterie, stacje) NIE są kompatybilne z TC501 — przy planowaniu migracji uwzględnij wymianę infrastruktury. Szczegółowa specyfikacja, karta katalogowa i instrukcja obsługi w języku polskim dostępne na stronie serwis-zebry.pl.`,
+    description: `Dla kogo? Zebra TC501 to flagowy kolektor danych (terminal mobilny) nowej generacji, zaprojektowany jako następca TC52/[TC53](/produkt/zebra-tc53) dla firm, które potrzebują najnowszej technologii AI, RFID i Wi-Fi 7 w jednym urządzeniu — od dużych magazynów i centrów logistycznych, przez sieci handlowe, po szpitale i zakłady produkcyjne.\n\nWydajność i AI na pierwszej linii. Procesor Qualcomm Dragonwing Q-6690 (8 rdzeni, do 2,9 GHz) z dedykowanym silnikiem AI (NPU) zapewnia 300% więcej mocy obliczeniowej niż TC53. Przetwarzanie AI odbywa się lokalnie — rozpoznawanie produktów, weryfikacja etykiet, OCR bez chmury, zgodnie z RODO. Pamięć 8 GB/128 GB lub 12 GB/256 GB (UFS 3.1) z opcją rozszerzenia microSD do 2 TB.\n\nEkran AMOLED — pierwszy w klasie enterprise. Wyświetlacz 6" Full HD+ (2160×1080) z matrycą AMOLED i jasnością 1500 nitów — 2,5× jaśniejszy niż IPS w TC53 (600 nit). Doskonale czytelny w pełnym słońcu, z głęboką czernią zmniejszającą zmęczenie oczu na długich zmianach. Szkło Corning Gorilla Glass Victus, panel dotykowy reagujący w rękawicach i z mokrymi palcami.\n\nZintegrowany RFID UHF — bez dodatkowych modułów. TC501 to pierwszy terminal z serii TC5x z wbudowanym czytnikiem RFID UHF w KAŻDEJ konfiguracji. Odczyt ponad 200 tagów na sekundę z zasięgu do 2 metrów. Do długiego zasięgu (9+ m) można podłączyć sled RFD40/RFD90. W TC53 RFID wymagał osobnego modułu — teraz jest w standardzie.\n\nTrzy silniki skanowania do każdego zadania. SR500 (Standard Range) — skanowanie z bliska, kasa, lada, kompletacja. SR560 — ulepszony finder 2D, szybsze dekodowanie uszkodzonych kodów. AC670 (Advanced Color) — zasięg do 30 m, kolorowy imager, skanuje kody na najwyższych regałach bez drabiny. Kamera tylna 50 MP z opcją ultrawide 13 MP do dokumentacji fotograficznej.\n\nŁączność przyszłości. Wi-Fi 7 (802.11be) z 2×2 MU-MIMO i MLO — przepustowość 2× wyższa niż Wi-Fi 6E, stabilność w gęstych środowiskach z setkami urządzeń. Bluetooth 6.0 z większym zasięgiem. NFC do identyfikacji pracowników i tagów. Wersje WAN (TC501G) dodają 5G Release 17, dual eSIM, CBRS i GPS z potrójną bandą GNSS.\n\nWytrzymałość klasy enterprise. Obudowa IP68+IP65 — pyłoszczelna, wodoodporna (zanurzenie + strumień pod ciśnieniem). Upadki z 2,4 m na beton (2,7 m z rugged boot) wg MIL-STD-810H. 2–4× więcej tumbles niż TC53. Temperatura pracy od -20°C do +50°C. Bateria 5000 mAh (standard) lub 7240 mAh (rozszerzona), wymienna hot-swap — szybkie ładowanie 0→70% w 45 minut.\n\nAndroid 15 z najdłuższym wsparciem. Gwarancja aktualizacji do 4 kolejnych wersji systemu. LifeGuard for Android — comiesięczne łatki bezpieczeństwa OTA. Mobility DNA w cenie: StageNow, Device Tracker, Enterprise Home Screen. Kompatybilny z MDM: SOTI, Intune, VMware, Zebra Cloud.\n\nKoszt posiadania (TCO): Kolektor danych Zebra TC501 z Android 15 i gwarancją aktualizacji do Android 19 (4 generacje) = minimum 8 lat wsparcia LifeGuard™ — najdłuższy cykl życia w klasie. Uwaga: akcesoria TC53 (baterie, stacje) NIE są kompatybilne z TC501 — przy planowaniu migracji uwzględnij wymianę infrastruktury. Szczegółowa specyfikacja, karta katalogowa i instrukcja obsługi w języku polskim dostępne na stronie serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -26420,7 +26420,7 @@ Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = min
     shortDescription: 'Zebra TC701 — ultra-wytrzymały terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6" AMOLED 1500 nit, następca TC72/TC77',
     description: `Dla kogo? Zebra TC701 to ultra-wytrzymały (ultra-rugged) terminal mobilny nowej generacji, zaprojektowany jako następca TC72/TC77 dla firm pracujących w najtrudniejszych warunkach — chłodnie, doki załadunkowe, magazyny mrożone, porty, kopalnie, budowy i praca outdoorowa w ekstremalnych temperaturach od -20°C do +50°C.
 
-Najwyższa wytrzymałość w klasie. Obudowa IP68+IP65 certyfikowana MIL-STD-810H z przetrwalnością upadków z 3,66 m (12 ft) na beton — 50% więcej niż TC501 (2,4 m). Test tumble 3 500 cykli z 1 m (3,5× więcej niż TC53). Test szoku termicznego — cykl mrożenie/nagrzewanie bez restartu. Gorilla Glass Victus na wyświetlaczu i okienku skanera. Waga zaledwie 284 g z baterią standardową — lżejszy od poprzednika TC73 (349 g).
+Najwyższa wytrzymałość w klasie. Obudowa IP68+IP65 certyfikowana MIL-STD-810H z przetrwalnością upadków z 3,66 m (12 ft) na beton — 50% więcej niż TC501 (2,4 m). Test tumble 3 500 cykli z 1 m (3,5× więcej niż [TC53](/produkt/zebra-tc53)). Test szoku termicznego — cykl mrożenie/nagrzewanie bez restartu. Gorilla Glass Victus na wyświetlaczu i okienku skanera. Waga zaledwie 284 g z baterią standardową — lżejszy od poprzednika [TC73](/produkt/zebra-tc73) (349 g).
 
 Procesor AI i pamięć klasy premium. Qualcomm Dragonwing Q-6690 (8 rdzeni, do 2,9 GHz) z dedykowanym NPU do przetwarzania AI on-device — rozpoznawanie produktów, OCR numerów VIN i opon, weryfikacja etykiet bez chmury. Pamięć 8 GB/128 GB lub 12 GB/256 GB (UFS 3.1) z microSD do 2 TB.
 
@@ -26438,7 +26438,7 @@ Android 15 z długim wsparciem. Aktualizacja do Android 19 (4 generacje). LifeGu
 
 Koszt posiadania (TCO): Android 15 z gwarancją aktualizacji do Android 19 (4 generacje) = minimum 8 lat wsparcia LifeGuard™ z comiesięcznymi łatkami OTA. Baterie hot-swap współdzielone z TC501 — jeden magazyn baterii obsługuje całą flotę. RFID UHF w każdej konfiguracji eliminuje osobny czytnik RFID (oszczędność ~2 000–5 000 zł/urządzenie). Zebra OneCare Essential od 1 238 zł netto/3 lata — naprawa priorytetowa, wymiana obudowy i baterii.
 
-Wersja enterprise (lżejsza, upadki 2,4 m, tańsza): Zebra TC501. Szczegółowa specyfikacja, karta katalogowa i instrukcja obsługi dostępne na stronie serwis-zebry.pl.`,
+Wersja enterprise (lżejsza, upadki 2,4 m, tańsza): [Zebra TC501](/produkt/zebra-tc501). Szczegółowa specyfikacja, karta katalogowa i instrukcja obsługi dostępne na stronie serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -26743,13 +26743,13 @@ TC73 jest bliźniaczym modelem TC53 (ten sam procesor, RAM, skanery, WiFi) — a
 
 Wybierz skaner według potrzeb: SE4770 (standard, szerokie pole widzenia, zasięg do 60 cm) do codziennego skanowania na poziomie ręki, lub SE55 Advanced Range z IntelliFocus (zasięg od 10 cm do 12,2 m) — skanuje kody na najwyższych regałach bez drabiny. Wariant Premium dodaje optyczną stabilizację obrazu (OIS) w kamerze 16 MP, czujnik ToF i funkcję Zebra Dimensioning (wymiarowanie paczek).
 
-Konstrukcja klasy IP68 + IP65, certyfikacja MIL-STD-810H: wielokrotne upadki z 3,05 m na beton (temp. pokojowa) i 2,4 m w pełnym zakresie temperatur, tumble test 2000×1,0 m, praca od -20°C do +50°C. Baterie PowerPrecision+ 4 680 mAh lub 7 000 mAh z warm/hot swap — wymiana bez wyłączania urządzenia. Baterie współdzielone z TC53/TC58 — łatwa migracja.
+Konstrukcja klasy IP68 + IP65, certyfikacja MIL-STD-810H: wielokrotne upadki z 3,05 m na beton (temp. pokojowa) i 2,4 m w pełnym zakresie temperatur, tumble test 2000×1,0 m, praca od -20°C do +50°C. Baterie PowerPrecision+ 4 680 mAh lub 7 000 mAh z warm/hot swap — wymiana bez wyłączania urządzenia. Baterie współdzielone z TC53/[TC58](/produkt/zebra-tc58) — łatwa migracja.
 
 Łączność WiFi 6E (802.11ax) 2×2 MU-MIMO z trójpasmowym roamingiem, Bluetooth 5.2, NFC, Dual-Band GNSS. Audio: 3 mikrofony z redukcją szumów, 2 głośniki, Push-to-Talk. USB 3.0 Type-C + USB 2.0 Host. Pakiet Mobility DNA Professional w cenie urządzenia.
 
 Koszt posiadania (TCO): Android z gwarancją aktualizacji do Android 16 + LifeGuard comiesięczne łatki OTA. Baterie PowerPrecision+ współdzielone z TC53/TC58 (BTRY-NGTC5TC7-*) — jeden pool baterii dla całej floty mieszanej. Wytrzymałość 3,05 m redukuje liczbę uszkodzeń w ciężkim terenie — niższe koszty napraw. Zebra OneCare Essential od 1 533 zł netto/3 lata — naprawa priorytetowa, wymiana ekranu i obudowy.
 
-Wersja bliźniacza z łącznością 5G/4G LTE i GPS: Zebra TC78. Wersja enterprise (lżejsza, tańsza, upadki 1,8 m): Zebra TC53. Szczegółowa dokumentacja dostępna na zebra.com oraz w serwis-zebry.pl.`,
+Wersja bliźniacza z łącznością 5G/4G LTE i GPS: [Zebra TC78](/produkt/zebra-tc78). Wersja enterprise (lżejsza, tańsza, upadki 1,8 m): [Zebra TC53](/produkt/zebra-tc53). Szczegółowa dokumentacja dostępna na zebra.com oraz w serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -26910,13 +26910,13 @@ TC78 jest bliźniaczym modelem TC73 z dodatkową łącznością 5G Sub-6 + 4G LT
 
 Wybierz skaner według potrzeb: SE4770 (standard, szerokie pole widzenia, zasięg do 60 cm) do codziennego skanowania, lub SE55 Advanced Range z IntelliFocus (zasięg od 10 cm do 12,2 m) — skanuje kody na najwyższych regałach bez drabiny. Wariant Premium dodaje OIS w kamerze 16 MP, czujnik ToF, Zebra Dimensioning i ładowanie bezprzewodowe.
 
-Konstrukcja klasy IP68 + IP65, certyfikacja MIL-STD-810H: wielokrotne upadki z 3,05 m na beton (temp. pokojowa) i 2,4 m w pełnym zakresie temperatur, tumble test 2000×1,0 m, praca od -20°C do +50°C. Baterie PowerPrecision+ 4 680 mAh lub 7 000 mAh z warm swap — współdzielone z TC53/TC58/TC73.
+Konstrukcja klasy IP68 + IP65, certyfikacja MIL-STD-810H: wielokrotne upadki z 3,05 m na beton (temp. pokojowa) i 2,4 m w pełnym zakresie temperatur, tumble test 2000×1,0 m, praca od -20°C do +50°C. Baterie PowerPrecision+ 4 680 mAh lub 7 000 mAh z warm swap — współdzielone z [TC53](/produkt/zebra-tc53)/TC58/TC73.
 
 Łączność 5G FR1 + 4G LTE z dual SIM (nano + eSIM), WiFi 6E (802.11ax) 2×2 MU-MIMO, Bluetooth 5.2, NFC, Dual-Band GNSS (GPS, GLONASS, Galileo, BeiDou). Audio: 3 mikrofony z redukcją szumów, 2 głośniki, Push-to-Talk.
 
 Koszt posiadania (TCO): Android z gwarancją aktualizacji do Android 16 + LifeGuard comiesięczne łatki OTA. Baterie PowerPrecision+ współdzielone z TC53/TC58/TC73 — jeden pool baterii dla floty mieszanej. Dual SIM (nano + eSIM) eliminuje koszt osobnego routera w pojeździe. Wytrzymałość 3,05 m redukuje koszty napraw przy pracy w terenie. Zebra OneCare Essential od 1 533 zł netto/3 lata z naprawą priorytetową.
 
-Wersja bliźniacza WiFi-only: Zebra TC73. Wersja enterprise (lżejsza, tańsza, upadki 1,8 m): Zebra TC58. Szczegółowa dokumentacja dostępna na zebra.com oraz w serwis-zebry.pl.`,
+Wersja bliźniacza WiFi-only: [Zebra TC73](/produkt/zebra-tc73). Wersja enterprise (lżejsza, tańsza, upadki 1,8 m): [Zebra TC58](/produkt/zebra-tc58). Szczegółowa dokumentacja dostępna na zebra.com oraz w serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -27105,7 +27105,7 @@ Obudowa IP65 (pełna pyłoszczelność + ochrona przed strumieniami wody) i odpo
 
 Wymienna bateria PowerPrecision: standardowa 3 500 mAh (~12 h pracy) lub rozszerzona 4 900 mAh (~17 h). Technologia Warm Swap umożliwia wymianę baterii bez wyłączania urządzenia. System Android 10 z aktualizacją do Androida 14, pakiet Mobility DNA (DataWedge, StageNow, Device Tracker) i zarządzanie flotą przez MDM (SOTI, VMware, Intune).
 
-Koszt posiadania (TCO): Android 10 z gwarancją aktualizacji do Android 14 = minimum 5 lat wsparcia LifeGuard™. Pełna kompatybilność akcesoriów MC2x między MC2200 a MC2700 — jedna infrastruktura ładowania dla obu modeli. Wersja z łącznością LTE/GPS do pracy w terenie: Zebra MC2700. Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.`,
+Koszt posiadania (TCO): Android 10 z gwarancją aktualizacji do Android 14 = minimum 5 lat wsparcia LifeGuard™. Pełna kompatybilność akcesoriów MC2x między MC2200 a MC2700 — jedna infrastruktura ładowania dla obu modeli. Wersja z łącznością LTE/GPS do pracy w terenie: [Zebra MC2700](/produkt/zebra-mc2700). Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -27285,7 +27285,7 @@ Obudowa IP65 z odpornością na wielokrotne upadki z 1.52 m na beton (MIL-STD 81
 
 Wymienna bateria PowerPrecision: standardowa 3 500 mAh (~12 h) lub rozszerzona 4 900 mAh (~17 h) z technologią Warm Swap. System Android 10 z aktualizacją do Androida 14, pakiet Mobility DNA, zarządzanie flotą MDM. Łączność: Wi-Fi 802.11ac + LTE Cat 6 (EMEA bands) + Bluetooth 5.0 + GPS + opcjonalnie NFC.
 
-Koszt posiadania (TCO): Android 11 z gwarancją aktualizacji do Android 14 = minimum 5 lat wsparcia LifeGuard™. Pełna kompatybilność akcesoriów MC2x między MC2700 a MC2200 — jedna infrastruktura ładowania dla obu modeli. Wersja wyłącznie Wi-Fi (niższa cena, do pracy wewnątrz budynku): Zebra MC2200. Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.`,
+Koszt posiadania (TCO): Android 11 z gwarancją aktualizacji do Android 14 = minimum 5 lat wsparcia LifeGuard™. Pełna kompatybilność akcesoriów MC2x między MC2700 a MC2200 — jedna infrastruktura ładowania dla obu modeli. Wersja wyłącznie Wi-Fi (niższa cena, do pracy wewnątrz budynku): [Zebra MC2200](/produkt/zebra-mc2200). Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
