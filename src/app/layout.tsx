@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic'
 import './globals.css'
 import LayoutShell from '@/components/layout/LayoutShell'
 import PostHogProvider from '@/components/PostHogProvider'
+import { AutoLinkTracking } from '@/components/tracking/AutoLinkTracking'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Script from 'next/script'
@@ -180,6 +181,7 @@ gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', { send_page_view: true });`}
       {/* {!isAdmin && !isPanel && <ChatWidget />} */}
       <Analytics />
       <SpeedInsights />
+      {!isAdmin && !isPanel && <AutoLinkTracking />}
       {!isAdmin && !isPanel && (
         <>
           <Script id="skapiec-dlapi-init" strategy="afterInteractive">

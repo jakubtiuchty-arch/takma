@@ -139,3 +139,29 @@ export function trackNotifyMe(productName: string) {
     item_name: productName,
   })
 }
+
+// ── Phone / Email / Form tracking ─────────────────────────────
+
+/** Phone link click (klik_tel) */
+export function trackPhoneClick(phoneNumber: string, location?: string) {
+  gtag('event', 'klik_tel', {
+    phone_number: phoneNumber,
+    location: location ?? 'unknown',
+  })
+}
+
+/** Email link click (klik_mail) */
+export function trackEmailClick(emailAddress: string, location?: string) {
+  gtag('event', 'klik_mail', {
+    email_address: emailAddress,
+    location: location ?? 'unknown',
+  })
+}
+
+/** Form submission success (wyslanie_formularza) */
+export function trackFormSubmit(formName: string, formLocation?: string) {
+  gtag('event', 'wyslanie_formularza', {
+    form_name: formName,
+    form_location: formLocation ?? 'unknown',
+  })
+}
