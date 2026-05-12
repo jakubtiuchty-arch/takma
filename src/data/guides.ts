@@ -12457,7 +12457,7 @@ export const guides: Guide[] = [
     },
     {
       id: 'wdrozenie',
-      heading: 'Proces wdrożenia EZD RP — krok po kroku',
+      heading: 'Wdrożenie EZD RP w urzędzie — instrukcja krok po kroku',
       content: `<p>Wdrożenie EZD RP w urzędzie to projekt 4–8-tygodniowy, którego kluczowym elementem jest właściwy dobór i konfiguracja sprzętu. Poniżej opisujemy typowy przebieg wdrożenia, w którym uczestniczyliśmy w polskich urzędach gminnych i miejskich.</p>
 
 <h3>Etap 1: Analiza potrzeb (1–2 tygodnie)</h3>
@@ -12518,6 +12518,18 @@ export const guides: Guide[] = [
   ],
 
   faq: [
+    {
+      question: 'Czy EZD RP jest obowiązkowy?',
+      answer: 'Tak, EZD RP jest stopniowo obowiązkowy dla jednostek administracji publicznej w Polsce. Zgodnie z rozporządzeniem Prezesa Rady Ministrów oraz harmonogramem Ministerstwa Cyfryzacji, kolejne grupy urzędów (administracja rządowa, samorządowa, jednostki budżetowe) zostają zobowiązane do wdrożenia systemu w wyznaczonych terminach. Część jednostek korzysta już z EZD RP produkcyjnie, pozostałe są w trakcie migracji z poprzednich systemów EZD lub papierowego obiegu dokumentów.',
+    },
+    {
+      question: 'Kiedy wejdzie EZD RP w pełni?',
+      answer: 'Pełne wdrożenie EZD RP w polskiej administracji publicznej jest rozłożone w czasie zgodnie z harmonogramem NASK i Ministerstwa Cyfryzacji. Pierwsze jednostki rządowe wdrożyły system już w latach 2022–2024. Administracja samorządowa (gminy, powiaty, województwa) jest objęta kolejnymi etapami w latach 2025–2027. Dokładne terminy dla konkretnej jednostki publikuje NASK na stronie gov.pl/web/ezd-rp.',
+    },
+    {
+      question: 'Kto korzysta z EZD RP?',
+      answer: 'Z EZD RP korzystają jednostki administracji publicznej w Polsce: ministerstwa, urzędy wojewódzkie, urzędy marszałkowskie, starostwa powiatowe, urzędy gminne i miejskie, ośrodki pomocy społecznej, urzędy skarbowe oraz inne instytucje sektora publicznego. System obsługuje cały obieg dokumentów wewnątrz jednostki i wymianę dokumentów elektronicznych między urzędami przez ePUAP.',
+    },
     {
       question: 'Czy jednostka administracji publicznej musi używać EZD RP?',
       answer: 'EZD RP jest stopniowo wdrażany we wszystkich jednostkach administracji rządowej i samorządowej w Polsce zgodnie z harmonogramem ustalonym przez Ministerstwo Cyfryzacji. Jednostki, które jeszcze go nie wdrożyły, są zobowiązane do migracji w najbliższych latach. System rozwija NASK.',
