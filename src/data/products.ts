@@ -25062,6 +25062,206 @@ Koszt posiadania (TCO): pełna kompatybilność akcesoriów TC22 i TC27 — bate
     updatedAt: '2026-05-07',
   },
   {
+    id: 'zebra-hc20',
+    slug: 'zebra-hc20',
+    name: 'Zebra HC20',
+    seoTitle: 'Zebra HC20 — terminal medyczny dla szpitali i przychodni | od 2 950 zł',
+    seoDescription: 'Zebra HC20 (WLMT0-H20B6BCJ1) — terminal medyczny Wi-Fi 6E z czerwonym przyciskiem alarmowym, antymikrobialną obudową odporną na ponad 30 środków dezynfekujących i skanerem SE4720. Ekran 6" FHD+, IP68, Android do 16. Dla pielęgniarek, lekarzy, BCMA, EHR. Od 2 950 zł netto.',
+    shortDescription: 'Zebra HC20 — terminal medyczny Wi-Fi 6E z przyciskiem alarmowym, dezynfekcja, BCMA, EHR',
+    description: `Dla kogo? Zebra HC20 to dedykowany terminal mobilny dla placówek ochrony zdrowia — szpitali, przychodni, POZ, hospicjów i domów opieki. Wzmocniona obudowa medyczna, czerwony przycisk alarmowy (Code Blue) i odporność na ponad 30 rodzajów chusteczek dezynfekujących sprawiają, że HC20 wytrzymuje wieloletnią pracę w środowisku klinicznym, gdzie standardowe smartfony zawiodą po 6–12 miesiącach narażenia na środki dezynfekujące.
+
+HC20 to zdrowotny wariant platformy [Zebra TC22](/produkt/zebra-tc22) — identyczny procesor Qualcomm 5430 hex-core 2.1 GHz, 6-calowy wyświetlacz FHD+ (1080×2160) z Corning Gorilla Glass, 6 GB RAM / 64 GB Flash, Wi-Fi 6/6E (Wi-Fi 6ES), Bluetooth 5.2 z BLE Beaconing. Łączność prywatnej sieci 5G jest dostępna w siostrzanym modelu HC25; pełnowymiarowy wariant z aparatem przednim 5 MP do telemedycyny to HC50/HC55. Wszystkie modele HC2X/HC5X używają tego samego zestawu akcesoriów (stacje dokujące, baterie, etui).
+
+**Wyróżniki dla pracowników medycznych**:
+
+- **Czerwony przycisk alarmowy (Code Blue)** — programowalny przycisk z funkcją automatycznego wybierania numeru alarmowego lub uruchamiania aplikacji ratunkowej. Sekwencja aktywacji zapobiega fałszywym alarmom z przypadkowych dotknięć w kieszeni fartucha.
+- **Obudowa odporna na dezynfekcję** — tworzywa klasy medycznej zatwierdzone przez Zebra do regularnego czyszczenia 30+ rodzajami chusteczek dezynfekujących (alkohole, czwartorzędowe związki amoniowe, podchloryny, nadtlenki wodoru). Specjalnie ukształtowana obudowa i wtyczka USB-C minimalizują szczeliny gromadzące patogeny.
+- **Skaner SE4720 z białym podświetleniem i zielonym celownikiem LED** — przyjazny dla oczu pacjenta podczas skanowania opaski identyfikacyjnej. Dekoduje kody 1D i 2D w 0,3 s, w tym uszkodzone lub źle wydrukowane etykiety na fiolkach z lekami i opaskach pacjentów.
+- **Tylna kamera 16 MPx** — dokumentacja ran, stanu skóry, dostarczonych pakietów leków, materiałów eksploatacyjnych. Wysoka rozdzielczość pomaga personelowi niemedycznemu (konserwatorzy, kuchnia) w obchodach obiektu.
+- **Tłumienie szumów AI** — algorytmy oparte na zaawansowanej sieci neuronowej tłumią szumy korytarza szpitalnego (oczyszczacze, monitory, rozmowy) podczas rozmów PTT i połączeń VoIP, zapewniając czyste brzmienie głosu nawet w hałaśliwym otoczeniu.
+- **Funkcja PBX i radiotelefonu** — Workcloud PTT Express (proste push-to-talk przez Wi-Fi), PTT Pro (zaawansowane PTT) lub Enterprise Voice (pełna funkcja PBX) zamieniają HC20 w wielofunkcyjne urządzenie komunikacyjne — eliminując potrzebę osobnych telefonów stacjonarnych i pagerów na oddziale.
+- **Workstation Connect** — wstawiając HC20 do stacji dokującej Connect Cradle, użytkownik otrzymuje pełnowymiarową mobilną stację roboczą z myszką, klawiaturą i drukarką (idealne dla "komputerów na kółkach" w dyżurkach pielęgniarek).
+- **Ekran obsługiwany w rękawiczkach** — pojemnościowy panel dotykowy zoptymalizowany pod cienkie rękawiczki medyczne, bez konieczności specjalnych ustawień.
+
+Konstrukcja IP68 + IP65 z certyfikacją MIL-STD-810H wytrzymuje upadki z wysokości 1,25 m na betonową posadzkę z pokrytymi płytkami w zakresie temperatur od -10°C do +50°C. Test tumble 500 wstrząsów z 0,5 m. Zakres temperatury przechowywania -40°C do +70°C.
+
+Bateria standardowa 3 800 mAh / 14,63 Wh wystarcza na pełną zmianę roboczą (8–10 h typowej pracy: skanowanie, rozmowy PTT, EHR). Wymiana baterii odbywa się po wyłączeniu urządzenia (tryb hot-swap z buforowaniem dostępny w wyższych modelach HC50/HC55). Złącze USB-C SuperSpeed do ładowania dowolnym standardowym kablem oraz transferu danych.
+
+Łączność Wi-Fi 6/6E (802.11ax) 2×2 MU-MIMO z trójzakresowym modułem (2,4 / 5 / 6 GHz) zapewnia stabilne połączenie w sieciach szpitalnych enterprise. Bluetooth 5.2 z BLE Beaconing umożliwia integrację z aplikacjami lokalizacyjnymi i sensorami medycznymi. NFC ISO 14443 typu A i B (Mifare, FeliCa, ISO 15693) — identyfikacja personelu kartami zbliżeniowymi i odczyt znaczników NFC na sprzęcie szpitalnym.
+
+Pakiet Zebra Mobility DNA Professional w cenie urządzenia: DataWedge (skanowanie bez programowania, integracja z systemami EHR/HIS bez kodowania), StageNow (masowe wdrożenie floty), Device Tracker (lokalizacja zgubionych terminali w obiekcie szpitalnym), LifeGuard™ (comiesięczne łatki bezpieczeństwa, gwarancja aktualizacji Androida do wersji 16). Pełna paleta Zebra DNA (Guardian, Identity Guardian, Workstation Connect) dostępna z licencją Enterprise.
+
+Typowe zastosowania kliniczne: **BCMA (Bar Code Medication Administration)** — weryfikacja "pięciu Ż" przed podaniem leku (właściwy pacjent, lek, dawka, droga, czas) przez skanowanie opaski pacjenta i etykiety leku. **EHR/EPR access** — dostęp do elektronicznej dokumentacji medycznej przy łóżku pacjenta. **Lab specimen tracking** — etykietowanie i śledzenie próbek krwi/moczu/tkanek. **UDI (Unique Device Identifier) scanning** — rejestracja sprzętu i materiałów eksploatacyjnych. **Patient ID** — szybka identyfikacja pacjenta przed zabiegiem. **In-home caregiving** — dokumentacja wizyt domowych pielęgniarek środowiskowych.
+
+Koszt posiadania (TCO): kompatybilność akcesoriów z całą serią HC2X/HC5X i częściowo z TC22/TC27 (baterie BTRY-TC2L-2X, stacje CRD-TC2L) — jeden ekosystem akcesoriów dla mieszanej floty szpitalnej (oddziały + administracja). Android z gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Rekomendowana usługa: Zebra OneCare Special Value (SV) z naprawami uszkodzeń mechanicznych. Drukarka opasek pacjentów do skanowania przez HC20: [Zebra ZD510-HC](/produkt/zebra-zd510-hc). Pełna karta katalogowa i lista akcesoriów na zebra.com oraz [serwis-zebry.pl](https://www.serwis-zebry.pl).`,
+    categoryId: 'terminale-mobilne',
+    subcategoryIds: ['terminale-mobilne'],
+    sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc20.html',
+    manufacturerId: 'zebra',
+    priceFrom: 2950,
+    images: [
+      '/images/products/hc20_1.png',
+      '/images/products/hc20_2.png',
+      '/images/products/hc20_3.png',
+      '/images/products/hc20_4.png',
+    ],
+    imageDescriptions: [
+      'Zebra HC20 — widok z przodu, ekran 6 cali FHD+ w obudowie medycznej z białą ramką',
+      'Zebra HC20 — widok z tyłu, kamera 16 MPx, okno skanera SE4720 i czerwony przycisk alarmowy',
+      'Zebra HC20 — widok pod kątem, obudowa odporna na dezynfekcję klasy medycznej',
+      'Zebra HC20 — widok z boku, profil 12,5 mm z portem USB-C SuperSpeed bez szczelin gromadzących patogeny',
+    ],
+    tags: ['healthcare'],
+    availability: 'on-order',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'System operacyjny', value: 'Android (aktualizacja do Android 16)' },
+      { name: 'Procesor', value: 'Qualcomm 5430 hex-core, 2.1 GHz' },
+      { name: 'Wyświetlacz', value: '6.0" FHD+ (1080×2160), 450 nit, Corning Gorilla Glass, obsługa w rękawiczkach' },
+      { name: 'Pamięć', value: '6 GB RAM / 64 GB Flash + microSD do 2 TB' },
+      { name: 'Skaner', value: 'SE4720 1D/2D, białe podświetlenie LED + zielony celownik' },
+      { name: 'Kamera', value: '16 MPx tył (dokumentacja ran, etykiety, sprzęt)' },
+      { name: 'Bateria', value: '3 800 mAh / 14,63 Wh, wymienna' },
+      { name: 'Odporność', value: 'IP68/IP65, upadki z 1,25 m, MIL-STD-810H, tumble 500×0,5 m' },
+      { name: 'Łączność WLAN', value: 'Wi-Fi 6/6E (802.11ax) 2×2 MU-MIMO, trójzakresowy (2,4/5/6 GHz)' },
+      { name: 'Bluetooth', value: 'Bluetooth 5.2 klasa 2 z BLE Beaconing' },
+      { name: 'NFC', value: 'ISO 14443 typu A i B, Mifare, FeliCa, ISO 15693' },
+      { name: 'WAN', value: 'Brak (Wi-Fi only — wariant z 5G to HC25)' },
+      { name: 'Wymiary', value: '165 × 76,3 × 12,5 mm' },
+      { name: 'Waga', value: '239 g (8,4 oz)' },
+      { name: 'USB', value: 'USB 3.1 Type-C SuperSpeed' },
+      { name: 'Przycisk alarmowy', value: 'Czerwony, programowalny, z funkcją wybierania numeru alarmowego' },
+      { name: 'Klawiatura PTT/PBX', value: '2× przyciski programowalne (PTT lub regulacja głośności)' },
+      { name: 'Temperatura pracy', value: '-10°C do +50°C' },
+      { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
+      { name: 'Wilgotność', value: '5–95% (bez kondensacji)' },
+      { name: 'Odporność na dezynfekcję', value: 'Ponad 30 rodzajów chusteczek dezynfekujących zatwierdzonych przez Zebra' },
+      { name: 'Mobility DNA', value: 'Professional (DataWedge, StageNow, Device Tracker, LifeGuard™)' },
+    ],
+    variants: [
+      {
+        partNumber: 'WLMT0-H20B6BCJ1-A6',
+        name: 'HC20 SE4720, 6/64 GB, 3800 mAh, healthcare',
+        priceFrom: 2950,
+        availability: 'on-order',
+        attributes: {
+          'Skaner': 'SE4720',
+          'Pamięć': '6 GB / 64 GB',
+          'Bateria': '3 800 mAh',
+          'Wersja': 'Healthcare (przycisk alarmowy + obudowa medyczna)',
+        },
+      },
+    ],
+    faq: [
+      { question: 'Ile kosztuje Zebra HC20?', answer: 'Cena Zebra HC20 (WLMT0-H20B6BCJ1-A6) zaczyna się od ok. 2 950 zł netto w konfiguracji healthcare z skanerem SE4720, 6 GB RAM / 64 GB Flash i baterią standardową 3 800 mAh. To wariant Wi-Fi-only — wersja z prywatną siecią 5G (HC25) i wariant z aparatem przednim do telemedycyny (HC50/HC55) kosztują więcej. Wycena z transportu, OneCare i akcesoriów na zamówienie indywidualne.' },
+      { question: 'Czym różni się Zebra HC20 od standardowego TC22?', answer: 'HC20 i TC22 mają identyczną platformę techniczną (Qualcomm 5430, ekran 6" FHD+, Wi-Fi 6/6E, IP68, akcesoria), ale HC20 jest fizycznie zaprojektowany dla ochrony zdrowia: 1) Czerwony przycisk alarmowy z funkcją Code Blue, 2) Obudowa z tworzyw klasy medycznej odpornych na 30+ chusteczek dezynfekujących, 3) Skaner SE4720 z białym podświetleniem (przyjazny dla pacjenta vs czerwony laser w TC22), 4) Tłumienie szumów AI dla głośnych korytarzy szpitalnych, 5) Funkcja PBX/radiotelefonu (Workcloud Communication). TC22 nie wytrzyma codziennej dezynfekcji — pęknie po 6–12 miesiącach.' },
+      { question: 'Co to jest czerwony przycisk alarmowy Code Blue?', answer: 'Czerwony przycisk alarmowy na tylnej obudowie HC20 jest programowalny — może wybierać numer alarmowy (oddziałowy Code Blue, szpitalny pager bezpieczeństwa), uruchamiać aplikację ratunkową lub wysyłać alert do systemu MDM/EHR. Sekwencja aktywacji (np. naciśnij 2 sekundy lub kliknij 3 razy) zapobiega fałszywym alarmom z przypadkowych dotknięć w kieszeni fartucha. Przydatne dla pielęgniarki w izolatce, lekarza na nocnym dyżurze lub opiekuna w domu pacjenta.' },
+      { question: 'Czy Zebra HC20 wytrzymuje codzienną dezynfekcję chusteczkami?', answer: 'Tak, jest to główna cecha HC20. Tworzywa obudowy klasy medycznej są zatwierdzone przez Zebra do regularnego czyszczenia ponad 30 rodzajami chusteczek i środków dezynfekujących — alkoholami izopropylowymi i etylowymi, czwartorzędowymi związkami amoniowymi, podchlorynami, nadtlenkiem wodoru, kwasem nadoctowym, środkami fenolowymi. Pełna lista zatwierdzonych środków w arkuszu informacyjnym Zebra "Healthcare Mobile Computers — Disinfectant Guide". Standardowy TC22 nie ma tej certyfikacji i blaknie/pęka po 6 miesiącach.' },
+      { question: 'Czy Zebra HC20 obsługuje BCMA (Bar Code Medication Administration)?', answer: 'Tak. HC20 ze skanerem SE4720 dekoduje kody 1D i 2D na opaskach pacjentów (Code 128, GS1-128) i etykietach leków (Data Matrix, GS1 DataBar) w 0,3 s — także uszkodzone, zniszczone lub źle wydrukowane. Integracja z systemami EHR/HIS (CliniNet, ProMedHIS, AMMS, Mediqus, Eskulap) przez Zebra DataWedge — bez konieczności kodowania. Pielęgniarka skanuje swoją kartę identyfikacyjną, opaskę pacjenta, etykietę leku — system weryfikuje "pięć Ż" (właściwy pacjent, lek, dawka, droga, czas) automatycznie.' },
+      { question: 'Jaki Android ma Zebra HC20?', answer: 'HC20 jest dostarczany z systemem Android (wersja zależy od daty produkcji, sprawdź zebra.com/android-versions). Gwarancja aktualizacji do Android 16 dzięki LifeGuard™ — comiesięczne łatki bezpieczeństwa przez wiele lat od premiery. Wersje: GMS (Google Play, Google Mobile Services) lub AOSP (bez Google, dla placówek z restrykcjami IT). Aplikacja Zebra Zero Touch umożliwia "bezdotykowe" wdrażanie aktualizacji zgodnie z harmonogramem placówki.' },
+      { question: 'Czym różni się Zebra HC20 od HC25, HC50 i HC55?', answer: 'HC20 — Wi-Fi only, 6 GB RAM / 64 GB Flash, bateria 3 800 mAh, bez aparatu przedniego. HC25 — jak HC20 + prywatna sieć 5G (LTE/5G FR1, dual SIM nano + eSIM, GPS). HC50 — jak HC20 + aparat przedni 5 MP (telemedycyna), 8 GB RAM / 128 GB Flash, hot-swap baterii (wymiana w 30 s bez wyłączania). HC55 — jak HC50 + 5G + aparat przedni + hot-swap. HC20 to ekonomiczny wybór dla pielęgniarek i lekarzy pracujących w sieci Wi-Fi szpitala. HC55 dla wymagających workflow z telemedycyną i obchodami między budynkami.' },
+      { question: 'Czy Zebra HC20 zastępuje telefon szpitalny i pager?', answer: 'Tak. Zebra Workcloud Communication w wersji Enterprise Voice zamienia HC20 w pełnowymiarowy telefon PBX z integracją z centralą szpitalną (SIP, VoLTE, VoIP SWB Audio, hands-free przez Bluetooth ze słuchawką PTT). Wersja PTT Pro lub PTT Express umożliwia komunikację push-to-talk między pracownikami (jak walkie-talkie) bez opłat operatorskich. Eliminuje potrzebę osobnych pagerów, smartfonów służbowych i radioterminali — jeden HC20 obsługuje wszystkie kanały komunikacji personelu.' },
+      { question: 'Czy HC20 czyta opaski pacjentów wydrukowane na Zebra ZD510-HC?', answer: 'Tak, to standardowa ścieżka wdrożenia. Drukarka opasek [Zebra ZD510-HC](/produkt/zebra-zd510-hc) drukuje opaski Z-Band z kodami kreskowymi Code 128 lub Data Matrix; skaner SE4720 w HC20 dekoduje je w 0,3 s, nawet po kilku dniach na nadgarstku pacjenta (wilgoć, środki dezynfekcyjne, naprężenia mechaniczne). Pełen zestaw HC20 + ZD510-HC + opaski Z-Band to fundament systemu BCMA na oddziale.' },
+      { question: 'Jaki jest skaner w Zebra HC20?', answer: 'HC20 ma skaner SE4720 — 1D/2D omnidirectional z białym podświetleniem LED i zielonym celownikiem. Zasięg odczytu zależy od typu kodu, standardowo 5–35 cm. Dekoduje wszystkie popularne kody: Code 128, EAN/UPC, GS1-128, GS1 DataBar, Data Matrix, QR Code, PDF417, Aztec. Białe podświetlenie zamiast czerwonego lasera (jak w smartfonach) jest przyjazne dla oczu pacjentów leżących i nie powoduje stresu pacjentów neurologicznych/pediatrycznych. Aparat 16 MPx jest dostępny jako alternatywa do skanowania okazjonalnego.' },
+      { question: 'Czy Zebra HC20 wymaga kontraktu Zebra OneCare?', answer: 'Rekomendowany. Zebra nie udostępnia części zamiennych zewnętrznym serwisom, więc naprawa poza kontraktem oznacza wysyłkę za granicę (3–6 tygodni przerwy w pracy). Dla HC20 polecamy Zebra OneCare Special Value (SV) — najtańszy plan obejmujący naprawy uszkodzeń mechanicznych (upuszczenia, zalanie środkami dezynfekcyjnymi) i wsparcie techniczne. Wyższe pakiety: Essential, Select. Czas naprawy w autoryzowanym serwisie 3–5 dni roboczych — krytyczne dla oddziału który nie może czekać tygodniami na napravę kluczowego sprzętu BCMA.' },
+      { question: 'Gdzie serwisować Zebra HC20 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: <a href="https://www.serwis-zebry.pl" rel="noopener">serwis-zebry.pl</a> — naprawy gwarancyjne i pogwarancyjne HC20, wymiana ekranów, skanerów SE4720, baterii i obudów z oryginalnych części Zebra. Czas naprawy 3–5 dni roboczych, ekspresowo 24–48 h z dopłatą. Dla placówek z kontraktem OneCare — naprawa priorytetowa. Ważne: oddanie HC20 do nieautoryzowanego serwisu unieważnia certyfikat odporności na dezynfekcję — kluczowe dla placówek medycznych prowadzących audyty CDC/JCI.' },
+    ],
+    applications: [
+      'BCMA — weryfikacja "pięciu Ż" przed podaniem leku',
+      'EHR/EPR — dostęp do dokumentacji pacjenta przy łóżku',
+      'Lab specimen tracking — etykietowanie próbek',
+      'UDI — rejestracja sprzętu medycznego',
+      'Patient ID — szybka identyfikacja pacjenta',
+      'Code Blue — wezwanie pomocy w nagłej sytuacji',
+      'Komunikacja personelu — PBX, PTT, walkie-talkie',
+      'Domy opieki i hospicja — opieka domowa',
+      'Apteka szpitalna — inwentaryzacja leków',
+      'Dokumentacja ran i obchody konserwacyjne',
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: [
+      'zebra-battery-tc2-standard',
+      'zebra-battery-tc2-ble',
+      'zebra-boot-tc2',
+      'zebra-trigger-tc2',
+      'zebra-cradle-tc2-1slot',
+      'zebra-cradle-tc2-1slot-ethernet',
+      'zebra-cradle-tc2-5slot',
+      'zebra-cradle-tc2-5slot-ethernet',
+      'zebra-charger-tc2-4battery',
+    ],
+    downloads: [
+      { name: 'Karta katalogowa HC2X/HC5X (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/pl/spec-sheets/hc2x-hc5x-spec-sheet-pl-pl.pdf', size: 'PDF' },
+      { name: 'Strona produktu Zebra HC20 (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc20.html', size: 'Online' },
+      { name: 'Zatwierdzone środki dezynfekujące (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/support-downloads/software/printer-software/healthcare-mobile-computers.html', size: 'Online' },
+    ],
+    servicePlans: [
+      { name: 'Zebra OneCare Special Value — 3 lata', partNumber: 'Z1AS-HC20XX-3C00', duration: '3 lata', priceNetto: 950 },
+      { name: 'Zebra OneCare Special Value — 5 lat', partNumber: 'Z1AS-HC20XX-5C00', duration: '5 lat', priceNetto: 1580 },
+    ],
+    comparison: {
+      title: 'Porównanie: Zebra HC20 vs HC50 vs TC22 (consumer)',
+      models: [
+        {
+          name: 'Zebra HC20',
+          specs: {
+            'Przeznaczenie': 'Healthcare (szpitale, przychodnie)',
+            'Łączność': 'Wi-Fi 6/6E',
+            'Procesor': 'Qualcomm 5430, 2.1 GHz',
+            'Ekran': '6" FHD+ (1080×2160)',
+            'Skaner': 'SE4720 (białe podświetlenie)',
+            'Aparat przedni': 'Brak',
+            'Przycisk alarmowy': 'Tak, programowalny',
+            'Odporność na dezynfekcję': '30+ chusteczek',
+            'RAM / Flash': '6/64 GB',
+            'Bateria': '3 800 mAh, wymienna',
+            'Cena od': '2 950 zł netto',
+          },
+        },
+        {
+          name: 'Zebra HC50',
+          specs: {
+            'Przeznaczenie': 'Healthcare premium + telemedycyna',
+            'Łączność': 'Wi-Fi 6/6E',
+            'Procesor': 'Qualcomm 5430, 2.1 GHz',
+            'Ekran': '6" FHD+ (1080×2160)',
+            'Skaner': 'SE4720 (białe podświetlenie)',
+            'Aparat przedni': '5 MPx (telemedycyna)',
+            'Przycisk alarmowy': 'Tak, programowalny',
+            'Odporność na dezynfekcję': '30+ chusteczek',
+            'RAM / Flash': '8/128 GB',
+            'Bateria': '3 800 mAh, hot-swap',
+            'Cena od': 'Wycena indywidualna',
+          },
+        },
+        {
+          name: 'Zebra TC22',
+          specs: {
+            'Przeznaczenie': 'Retail, magazyn, logistyka',
+            'Łączność': 'Wi-Fi 6/6E',
+            'Procesor': 'Qualcomm 5430, 2.1 GHz',
+            'Ekran': '6" FHD+ (1080×2160)',
+            'Skaner': 'SE4710 lub SE55',
+            'Aparat przedni': '5 MPx',
+            'Przycisk alarmowy': 'Nie',
+            'Odporność na dezynfekcję': 'Standardowa (nie medyczna)',
+            'RAM / Flash': '6/64 lub 8/128 GB',
+            'Bateria': '3 800 / 5 200 mAh, hot-swap',
+            'Cena od': '2 417 zł netto',
+          },
+        },
+      ],
+    },
+    editorialReview: {
+      ratingValue: 4.6,
+      bestRating: 5,
+      reviewBody: 'Zebra HC20 to pierwszy "dostępny cenowo" terminal medyczny w segmencie entry-level (2 950 zł netto vs ~5 000 zł za poprzednika TC52-HC). Czerwony przycisk Code Blue, certyfikowana odporność na 30+ środków dezynfekujących i białe podświetlenie skanera SE4720 to cechy realnie ułatwiające pracę pielęgniarki — nieobecne w żadnym smartfonie konsumenckim. Minus: tylko 1 wariant w naszej ofercie (Wi-Fi-only, 6/64 GB) — placówki potrzebujące telemedycyny powinny rozważyć HC50/HC55, a oddziały terenowe HC25 z 5G. Mimo to: dla 90% workflow pielęgniarskiego (BCMA, EHR, komunikacja) HC20 jest optymalnym wyborem cena/funkcjonalność w 2026.',
+    },
+    createdAt: '2026-05-12',
+    updatedAt: '2026-05-12',
+  },
+  {
     id: 'zebra-tc27',
     slug: 'zebra-tc27',
     name: 'Zebra TC27',
