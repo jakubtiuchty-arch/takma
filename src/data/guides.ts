@@ -12306,8 +12306,8 @@ export const guides: Guide[] = [
 },
 {
   slug: 'sprzet-do-ezd-rp-wymagania-i-wdrozenie',
-  title: 'Sprzęt do EZD RP — wymagania, dobór i wdrożenie w urzędzie [2026]',
-  seoTitle: 'Sprzęt do EZD RP — Wymagania, Dobór, Wdrożenie [2026]',
+  title: 'EZD RP — wymagania sprzętowe i wdrożenie w urzędzie [2026]',
+  seoTitle: 'EZD RP — Wymagania Sprzętowe i Wdrożenie w Urzędzie [2026]',
   seoDescription: 'Kompletny przewodnik po sprzęcie do EZD RP: drukarki etykiet do Składu Chronologicznego, skanery z OCR/PDF-A, czytniki kodów do RPW. Wymagania NASK, polecane modele Zebra/Epson, koszty wdrożenia.',
   excerpt: 'Wdrożenie systemu EZD RP w urzędzie wymaga konkretnego zestawu sprzętu: skanera dokumentów z OCR (PDF/A), drukarki etykiet termotransferowej do Składu Chronologicznego i czytnika kodów kreskowych do rejestru wpływów (RPW). Przewodnik wyjaśnia wymagania techniczne, polecane modele, koszty zestawów i proces wdrożenia w jednostce administracji publicznej.',
   category: 'branzowy',
@@ -12321,7 +12321,7 @@ export const guides: Guide[] = [
   sections: [
     {
       id: 'definicja',
-      heading: 'Czym jest EZD RP i dlaczego potrzebny jest dedykowany sprzęt?',
+      heading: 'Co to jest EZD RP?',
       content: `<p><strong>EZD RP (Elektroniczne Zarządzanie Dokumentacją — Rejestr Państwowy)</strong> to oficjalny system informatyczny rozwijany przez <strong>NASK</strong> i wdrażany w polskiej administracji publicznej. System obsługuje pełny obieg dokumentów w urzędach: od momentu wpływu pisma (Rejestr Wpływów — RPW), przez dekretację, opracowanie merytoryczne, aż po archiwizację w Składzie Chronologicznym i przekazanie do archiwum państwowego.</p>
 
 <p>W odróżnieniu od zwykłych systemów obiegu dokumentów (DMS), EZD RP <strong>wymaga zgodności z Instrukcją Kancelaryjną</strong> (Rozporządzenie Prezesa RM z 18 stycznia 2011 r.) oraz z wytycznymi NASK dotyczącymi formatów archiwalnych, czytelności kodów kreskowych i trwałości etykiet w Składzie Chronologicznym. Te wymogi przekładają się bezpośrednio na konkretny zestaw sprzętu, którego standardowe drukarki biurowe i skanery konsumenckie po prostu nie spełniają.</p>
