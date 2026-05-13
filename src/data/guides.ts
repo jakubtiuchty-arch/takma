@@ -12584,6 +12584,336 @@ export const guides: Guide[] = [
     { title: 'Kontakt', href: '/kontakt' },
   ],
 },
+{
+  slug: 'terminale-medyczne-dla-szpitali-i-przychodni-2026',
+  title: 'Terminale medyczne dla szpitali i przychodni — jak wybrać [2026]',
+  seoTitle: 'Terminale Medyczne 2026 — Jak Wybrać dla Szpitala lub Przychodni',
+  seoDescription: 'Przewodnik po terminalach medycznych dla placówek ochrony zdrowia: wymagania BCMA, dezynfekcja, czerwony przycisk alarmowy, Wi-Fi 6, 5G dla opieki domowej. Modele Zebra HC20, HC25, HC50, HC55 + porównanie. Koszty wdrożenia floty 5–50 stanowisk.',
+  excerpt: 'Standardowy smartfon konsumencki nie wytrzyma w szpitalu — popęka po 6 miesiącach narażenia na środki dezynfekujące, a jego aparat zamiast skanera kodów spowolni BCMA o 5–10×. Terminale medyczne to dedykowane mobilne komputery z obudową odporną na dezynfekcję, przyciskiem alarmowym Code Blue, profesjonalnym skanerem 1D/2D i funkcjami PBX/PTT zastępującymi szpitalny telefon i pager. Przewodnik wyjaśnia wymagania techniczne, klasyfikację urządzeń (Wi-Fi vs 5G, entry vs premium), polecane modele Zebra HC2X/HC5X oraz realne koszty wdrożenia floty w polskim szpitalu, hospicjum lub praktyce POZ.',
+  category: 'branzowy',
+  tags: ['healthcare', 'terminale-mobilne', 'szpitale', 'bcma', 'opieka-domowa', 'hospicja', 'pielegniarki', 'zebra'],
+  publishedAt: '2026-05-13',
+  updatedAt: '2026-05-13',
+  readTime: '15 min',
+  heroImage: '/images/products/hc20_1.png',
+  heroImageAlt: 'Terminal medyczny Zebra HC20 — komputer mobilny dla pielęgniarek i lekarzy w szpitalu',
+
+  sections: [
+    {
+      id: 'dlaczego-nie-smartfon',
+      heading: 'Dlaczego standardowy smartfon nie wystarczy w szpitalu?',
+      content: `<p>Najczęstsze pytanie podczas pierwszej rozmowy z dyrektorem IT placówki medycznej: <em>"Dlaczego nie wystarczy zwykły iPhone lub tani Samsung dla pielęgniarki?"</em>. Odpowiedź jest praktyczna — w środowisku szpitalnym standardowy smartfon konsumencki staje się bezużyteczny w ciągu 6–12 miesięcy, a podczas swojej krótkiej kariery wprowadza realne ryzyko błędów medycznych. Oto cztery kluczowe powody:</p>
+
+<h3>1. Środki dezynfekujące rozpuszczają plastik smartfonów</h3>
+<p>Procedury zakażeń szpitalnych (HAI — Healthcare-Associated Infections) wymagają wycierania urządzeń mobilnych po każdym kontakcie z pacjentem zakaźnym oraz między oddziałami. Średnia pielęgniarka w polskim szpitalu wykonuje 20–40 cykli dezynfekcji urządzenia dziennie. Standardowy smartfon konsumencki ma obudowę z polikarbonatu z miękkim wykończeniem ułatwiającym przyleganie do dłoni — to wykończenie reaguje z czwartorzędowymi związkami amoniowymi i alkoholami izopropylowymi/etylowymi (najczęstsze środki dezynfekujące w polskich szpitalach: <em>Aniospray Quick, Spitaderm, Sterillium, Bacillol AF</em>). Efekt: po 6–8 miesiącach obudowa traci kolor, lepi się, kruszeje, pęka wokół przycisków i portów. Po roku — całkowicie nieużyteczna i krytycznie zainfekowana bakteriami w mikropęknięciach.</p>
+
+<p>Terminale medyczne (Zebra HC2X/HC5X, Honeywell CT47-HC, Datalogic Memor 11 HC) są wykonane z tworzyw klasy medycznej zatwierdzonych do regularnego czyszczenia <strong>30+ rodzajami chusteczek i środków dezynfekujących</strong>. Pełna lista zatwierdzonych środków w dokumencie Zebra <em>"Healthcare Mobile Computers — Approved Disinfectants Guide"</em>. To kluczowy wymóg do certyfikacji szpitala według standardów JCI/CDC.</p>
+
+<h3>2. Aparat smartfona zamiast skanera = 5–10× wolniejsze BCMA</h3>
+<p>Bar Code Medication Administration (BCMA) to procedura weryfikacji <em>"pięciu Ż"</em> przed podaniem leku — Pielęgniarka skanuje swoją kartę identyfikacyjną, opaskę pacjenta i etykietę leku; system EHR weryfikuje czy <strong>właściwy pacjent</strong> otrzymuje <strong>właściwy lek</strong> w <strong>właściwej dawce</strong>, <strong>właściwą drogą</strong>, o <strong>właściwym czasie</strong>. Według badania <em>NEJM 2010</em> wdrożenie BCMA zmniejsza błędy w podawaniu leków o 41% i błędy w czasie podania o 27%.</p>
+
+<p>Sercem BCMA jest skaner kodów kreskowych. Aparat smartfona konsumenckiego potrzebuje 2–4 sekund na dobre kadrowanie i odczyt kodu Code 128 na opasce pacjenta. Profesjonalny skaner laserowy enterprise <strong>Zebra SE4720</strong> z białym podświetleniem LED i zielonym celownikiem dekoduje ten sam kod w <strong>0,3 sekundy</strong> — także uszkodzony, mokry lub zniszczony. Skaler odczytuje kody nawet w półcieniu lub przez folię opatrunkową. W ciągu 8-godzinnej zmiany pielęgniarka wykonuje 80–200 skanów; różnica 1 sekunda na skan to <strong>1–3 godziny dziennie</strong> oszczędzonego czasu klinicznego.</p>
+
+<p>Dodatkowo profesjonalny skaner nie wymaga celowania jak aparat — pielęgniarka jednym ruchem przesuwa terminal nad opaską i otrzymuje feedback dźwiękowy/wibracyjny. Aparat smartfona zmusza do oglądania ekranu, co rozprasza uwagę od pacjenta.</p>
+
+<h3>3. Brak czerwonego przycisku alarmowego (Code Blue)</h3>
+<p>Pielęgniarka pracująca w izolatce, w domu pacjenta paliatywnego lub w nocnej zmianie samodzielnie potrzebuje <strong>jednoprzyciskowego wezwania pomocy</strong>. Standardowy smartfon nie ma fizycznego, dedykowanego przycisku alarmowego — uruchomienie aplikacji ratunkowej wymaga odblokowania ekranu, otwarcia aplikacji, kliknięcia "alarm" — w sytuacji kryzysowej (atak agresywnego pacjenta, własna utrata przytomności po upadku) to za wolno.</p>
+
+<p>Terminale medyczne (Zebra HC2X/HC5X) mają <strong>czerwony przycisk alarmowy na tylnej obudowie</strong> z programowalną funkcją: wybieranie numeru oddziałowego Code Blue, uruchamianie aplikacji alarmowej, wysyłanie alertu MDM do systemu szpitala. Sekwencja aktywacji (przytrzymaj 2 sekundy lub trzykrotnie kliknij) zapobiega fałszywym alarmom z przypadkowych dotknięć w kieszeni fartucha.</p>
+
+<h3>4. Wymienna bateria — nieobecna w smartfonach od 2017 roku</h3>
+<p>Zmiana pielęgniarki trwa 8–12 godzin. Smartfon konsumencki ze zintegrowaną baterią (od iPhone 7, Galaxy S8 i nowszych) nie wystarczy na całą zmianę z aktywnym Wi-Fi + skanowaniem + dokumentacją. Terminale medyczne mają <strong>wymienne baterie hot-swap</strong> (w wyższych modelach HC50/HC55 wymiana w 30 sekund bez wyłączania urządzenia) i <strong>standardowe ładowarki na 4 baterie zapasowe</strong> w dyżurce pielęgniarek. Pracownik wymienia baterię między obchodami, terminal działa 24/7 bez przerwy.</p>
+
+<p>Te cztery powody są fundamentalne i nie da się ich "obejść" tanim akcesorium do smartfona. Inwestycja w dedykowany terminal medyczny jest <strong>4–10× droższa</strong> w zakupie niż konsumencki smartfon (HC20 = 2 950 zł netto vs. iPhone SE = 1 800 zł brutto), ale TCO 3-letnie jest <strong>2× niższe</strong> dzięki dłuższej żywotności (5+ lat vs 1–2 lata smartfona w środowisku medycznym) i mniejszej liczbie błędów medycznych.</p>`
+    },
+    {
+      id: 'wymagania',
+      heading: 'Wymagania techniczne dla terminala medycznego — checklist 2026',
+      content: `<p>Wybór terminala medycznego zaczyna się od weryfikacji 8 cech technicznych. Każda jest niezbędna w polskim szpitalu lub przychodni — pominięcie którejś oznacza problemy operacyjne lub niezgodność z procedurami zakażeń. Lista oparta na wymaganiach JCI (Joint Commission International), CDC (Centers for Disease Control) i polskich standardach Narodowego Instytutu Zdrowia Publicznego.</p>
+
+<h3>1. Obudowa odporna na środki dezynfekujące</h3>
+<p>Tworzywa klasy medycznej zatwierdzone do regularnego czyszczenia 30+ rodzajami chusteczek: alkohole izopropylowe (60–70%) i etylowe (70–80%), czwartorzędowe związki amoniowe, podchloryny, nadtlenek wodoru, kwas nadoctowy, fenole, czwartorzędowe związki amoniowe z bigwanidami. Dostawca powinien dostarczyć oficjalny <em>"Approved Disinfectants Guide"</em> z konkretną listą środków używanych w polskich szpitalach (Aniospray, Spitaderm, Sterillium, Bacillol AF, Surfanios, Mikrozid).</p>
+
+<h3>2. Czerwony przycisk alarmowy z programowalną funkcją</h3>
+<p>Fizyczny przycisk na tylnej obudowie, oddzielny od regularnych przycisków terminala. Wymagane funkcje: programowalne (numer Code Blue, aplikacja alarmowa, alert MDM), sekwencja aktywacji zapobiegająca fałszywym alarmom (przytrzymanie 2 s lub trzykrotne kliknięcie), wyraźne oznakowanie czerwone.</p>
+
+<h3>3. Profesjonalny skaner 1D/2D enterprise</h3>
+<p>Minimum SE4720 (Zebra) lub równoważny: białe podświetlenie LED + zielony celownik (przyjazne dla oczu pacjenta — uniknąć czerwonego lasera), zasięg 5–35 cm, dekodowanie Code 128, GS1-128, GS1 DataBar, Data Matrix, QR Code, PDF417. Czas dekodowania <strong>≤ 0,5 sekundy</strong> dla zniszczonych opasek po 3 dniach na nadgarstku. Integracja z systemami EHR/HIS przez DataWedge lub równoważny middleware.</p>
+
+<h3>4. Wymienna bateria z hot-swap</h3>
+<p>Pojemność 3 800–5 200 mAh dla 8–14 godzin pracy. <strong>Hot-swap</strong> (wymiana bez wyłączania, buforowanie do 60 s) wskazany dla intensywnych workflow szpitalnych. Wsparcie technologii śledzenia stanu baterii (PowerPrecision lub równoważne) i <strong>BLE Beaconing</strong> w baterii dla lokalizacji terminala nawet po wyłączeniu.</p>
+
+<h3>5. Wi-Fi 6/6E dla nowoczesnych sieci szpitalnych</h3>
+<p>Polskie szpitale po 2024 r. wdrażają sieci Wi-Fi 6 enterprise (Cisco Meraki, Aruba, Ruckus) z trójzakresową obsługą 2,4/5/6 GHz. Terminal musi obsługiwać <strong>Wi-Fi 6/6E z MU-MIMO 2×2</strong> dla wydajności i WPA3-Enterprise z 192-bitowym szyfrowaniem dla bezpieczeństwa. Wsparcie 802.11r FBSST i Cisco CCKM dla bezprzełamywanego roamingu między access pointami przy obchodzie oddziału.</p>
+
+<h3>6. Funkcja PBX i Push-to-Talk (PTT)</h3>
+<p>Terminal medyczny powinien zastępować szpitalny telefon i pager. Wymagana obsługa: <strong>VoIP/SIP</strong> dla integracji z centralą PBX szpitala, <strong>Push-to-Talk</strong> (instant communications jak walkie-talkie) między pracownikami w obrębie oddziału, <strong>VoLTE</strong> dla rozmów przez sieć komórkową (w wariantach 5G dla opieki domowej), <strong>tłumienie szumów AI</strong> dla hałaśliwych korytarzy szpitalnych z aparaturą medyczną.</p>
+
+<h3>7. System operacyjny z gwarancją aktualizacji bezpieczeństwa</h3>
+<p>Android z gwarancją aktualizacji systemowych przez minimum 4 lata od daty produkcji. Comiesięczne łatki bezpieczeństwa (Zebra LifeGuard™ lub równoważne). Wersja GMS (z Google Play) dla większości placówek lub AOSP (bez Google) dla placówek z restrykcjami IT (instytucje strategiczne, szpitale wojskowe).</p>
+
+<h3>8. Odporność mechaniczna IP68 + MIL-STD-810H</h3>
+<p>Klasa szczelności IP68 (zanurzenie do 1 m na 30 min) + IP65 (strumień wody). Certyfikacja MIL-STD-810H z testami: upadki z minimum 1,25 m (4 ft) na betonową posadzkę z płytkami, 500 wstrząsów tumble z 0,5 m, szok termiczny -10°C do +50°C, wilgotność 95% bez kondensacji. To minimum dla codziennej pracy w szpitalu (pielęgniarki upuszczają urządzenie 1–3× rocznie).</p>
+
+<p>Dodatkowo warto sprawdzić: <strong>czujnik zbliżeniowy</strong> (auto-screen-off podczas rozmów telefonicznych przy uchu), <strong>NFC ISO 14443</strong> (identyfikacja personelu kartami zbliżeniowymi), <strong>czujnik światła</strong> (auto-jasność na oddziale w trybie nocnym), oraz <strong>obsługa ekranu w cienkich rękawiczkach medycznych</strong> bez konfiguracji specjalnej.</p>`
+    },
+    {
+      id: 'klasyfikacja',
+      heading: 'Klasyfikacja terminali medycznych — Wi-Fi vs 5G, entry vs premium',
+      content: `<p>Rynek terminali medycznych klasy enterprise (Zebra, Honeywell, Datalogic) dzieli się według dwóch głównych osi: <strong>łączność</strong> (Wi-Fi only vs 5G/LTE) i <strong>klasa funkcji</strong> (entry-level vs premium z telemedycyną). Każda kombinacja ma typowy use case w polskiej ochronie zdrowia.</p>
+
+<h3>Wi-Fi only — entry-level (dla 80% personelu szpitalnego)</h3>
+<p>Najtańszy segment (2 500–3 500 PLN netto), dedykowany dla pracowników działających wyłącznie wewnątrz budynku szpitala lub przychodni z dostępem do Wi-Fi enterprise. Przykład: <a href="/produkt/zebra-hc20">Zebra HC20</a> (od 2 950 zł netto) — Wi-Fi 6/6E + skaner SE4720 + przycisk alarmowy + obudowa medyczna.</p>
+<p><strong>Dla kogo:</strong> pielęgniarki oddziałowe (interna, chirurgia, OIOM), personel pomocniczy, technicy laboratoryjni, farmaceuci aptek szpitalnych, dietetycy, fizjoterapeuci, terapeuci, dział administracyjny. Każdy kto skanuje opaski/etykiety i potrzebuje EHR przy łóżku pacjenta.</p>
+
+<h3>Wi-Fi only — premium z telemedycyną</h3>
+<p>Segment 3 500–5 000 PLN netto z aparatem przednim 5 MPx (telekonsultacje wideo lekarz-pacjent), 8 GB RAM / 128 GB Flash (dla aplikacji graficznych — wyniki badań obrazowych, USG), hot-swap baterii (wymiana w 30 s w trakcie pracy). Przykład: Zebra HC50 (dostępność w 2026).</p>
+<p><strong>Dla kogo:</strong> lekarze konsultujący zdalnie z pacjentami leżącymi, radiolodzy przeglądający zdjęcia RTG/USG przy łóżku, pielęgniarki w izolatce z aktywnym przewlekłym connection do dyżurki, personel intensywnej terapii.</p>
+
+<h3>5G/LTE — entry-level dla opieki terenowej</h3>
+<p>Segment 3 000–4 000 PLN netto z modułem 5G FR1 (NSA/SA) + 4G LTE-A + GPS Dual-band L1+L5 + dual SIM (nano + eSIM). Przykład: <a href="/produkt/zebra-hc25">Zebra HC25</a> (od 3 350 zł netto) — wszystkie cechy HC20 + 5G/LTE + GPS.</p>
+<p><strong>Dla kogo:</strong> pielęgniarki środowiskowe (POZ, opieka domowa NFZ), opiekunowie w hospicjach domowych, paramedycy ratownictwa medycznego, personel transportu pacjentów, lekarze POZ z wizytami u pacjenta, mobilne mammografy/ambulanse stomatologiczne, pracownicy zespołów wyjazdowych.</p>
+
+<h3>5G/LTE — premium z telemedycyną</h3>
+<p>Topowy segment 4 500–6 000 PLN netto — łączy 5G + GPS + aparat przedni + telemedycynę + hot-swap baterii. Przykład: Zebra HC55 (dostępność w 2026) — 8 GB RAM / 128 GB Flash + 5G + aparat 5 MPx przedni + hot-swap.</p>
+<p><strong>Dla kogo:</strong> lekarze pogotowia ratunkowego (R, S, P-typowo wyposażone karetki), telekonsultanci wykonujący wizyty domowe, pracownicy transportu medycznego krytycznie chorych, lekarze szpitala mobilnego (np. Wojsko Polskie, MASH).</p>
+
+<h3>Tabela porównawcza segmentów (Zebra HC2X/HC5X)</h3>
+<p>Wybór terminala medycznego w 80% przypadków sprowadza się do trzech pytań: 1) <em>Czy pracownik wychodzi poza budynek z Wi-Fi?</em> (jeśli tak — potrzebny 5G/LTE), 2) <em>Czy pracownik wykonuje telekonsultacje wideo z pacjentem?</em> (jeśli tak — potrzebny aparat przedni), 3) <em>Czy pracownik wymienia baterie podczas dyżuru bez przerwy w workflow?</em> (jeśli tak — potrzebny hot-swap, czyli HC50/HC55).</p>
+
+<p>Większość polskich szpitali używa <strong>mieszanej floty</strong>: 80% pracowników na HC20 (oddziały) + 15% na HC25 (zespoły wyjazdowe POZ) + 5% na HC55 (telemedycyna premium). Akcesoria (baterie, stacje dokujące, klipsy, paski na rękę, folie ochronne) <strong>są pełni kompatybilne</strong> w obrębie serii HC2X/HC5X — jeden ekosystem akcesoriów dla mieszanej floty.</p>`
+    },
+    {
+      id: 'modele-zebra',
+      heading: 'Linia Zebra HC2X/HC5X — pełna gama terminali medycznych 2026',
+      content: `<p>Zebra Technologies w 2025 r. uruchomiła nową linię terminali medycznych <strong>HC2X/HC5X</strong> jako następcę poprzedniej generacji TC52-HC i TC57-HC. Wszystkie cztery modele dzielą identyczną platformę techniczną (procesor Qualcomm 5430, ekran 6" FHD+, akcesoria HC2L5L) — różnią się modułem WAN, klasą funkcji i ceną.</p>
+
+<h3><a href="/produkt/zebra-hc20">Zebra HC20</a> — entry-level Wi-Fi only (od 2 950 zł netto)</h3>
+<p>Najtańszy terminal medyczny Zebra w 2026 roku. Wi-Fi 6/6E, skaner SE4720, 6 GB RAM / 64 GB Flash, bateria 3 800 mAh, czerwony przycisk alarmowy, obudowa odporna na dezynfekcję. Bez aparatu przedniego, bez 5G/LTE, bez hot-swap baterii. <strong>PN: WLMT0-H20B6BCJ1-A6</strong>.</p>
+<p><strong>Idealny dla:</strong> 80% pracowników szpitala/przychodni działających wewnątrz budynku z Wi-Fi enterprise. Pielęgniarki oddziałowe, BCMA, EHR, komunikacja PBX/PTT.</p>
+
+<h3><a href="/produkt/zebra-hc25">Zebra HC25</a> — 5G/LTE + GPS dla opieki terenowej (od 3 350 zł netto)</h3>
+<p>Wariant 5G HC20 — wszystkie cechy HC20 + moduł 5G FR1 (NSA/SA) + 4G LTE-A Gigabit + GPS Dual-band L1+L5 + dual SIM (nano + eSIM) + VoLTE. Cena +400 zł vs HC20 za moduł WAN. <strong>PN: WCMTB-H25B6BCJ1-A6</strong>.</p>
+<p><strong>Idealny dla:</strong> pielęgniarek środowiskowych, opiekunów hospicyjnych, paramedyków, transportu pacjentów, lekarzy POZ z wizytami domowymi. Wszędzie tam gdzie pracownik musi mieć stały dostęp do systemu szpitalnego poza siecią Wi-Fi placówki.</p>
+
+<h3>Zebra HC50 — Wi-Fi + telemedycyna (dostępność 2026)</h3>
+<p>Premium Wi-Fi-only model z aparatem przednim 5 MPx (telekonsultacje), 8 GB RAM / 128 GB Flash (aplikacje graficzne), bateria 3 800 mAh z <strong>hot-swap</strong> (wymiana w 30 s bez wyłączania, buforowanie do 60 s). PN: <em>WLMT0-H50D8BCK1-A6</em> (typowa konfiguracja).</p>
+<p><strong>Idealny dla:</strong> lekarzy wykonujących telekonsultacje, radiologów przeglądających obrazowanie, pielęgniarek z intensywnego workflow (wymiana baterii co 4–5 h bez przerwy w pracy).</p>
+
+<h3>Zebra HC55 — topowy 5G + telemedycyna (dostępność 2026)</h3>
+<p>Najwyższy model serii — wszystkie cechy HC50 + 5G/LTE + GPS Dual-band L1+L5 + dual SIM. Telekonsultacje wideo z poziomu karetki, hot-swap baterii, premium specs. PN: <em>WCMTB-H55D8BBK1-A6</em>.</p>
+<p><strong>Idealny dla:</strong> lekarzy karetek S/P (telekonsultacja z neurologiem podczas transportu udaru mózgu), specjalistów wojsk medycznych, ambulansów ratunkowych, mobilnych zespołów telemedycznych.</p>
+
+<h3>Wszystkie modele dzielą zestaw akcesoriów HC2L5L</h3>
+<ul>
+  <li><a href="/produkt/zebra-bateria-hc20-hc50">Bateria BTRY-HC2L5L-2XMAXB</a> — 3 800 mAh z BLE Beaconing</li>
+  <li><a href="/produkt/zebra-stacja-dokujaca-1slot-hc20-hc50">Stacja 1-slot CRD-HC2L5L-BS1CO</a> — biurko pielęgniarki</li>
+  <li><a href="/produkt/zebra-stacja-dokujaca-2slot-hc20-hc50">Stacja ShareCradle 2-slot CRD-HC2L5L-2S1D1B</a> — terminal + zapasowa bateria</li>
+  <li><a href="/produkt/zebra-stacja-dokujaca-5slot-hc20-hc50">Stacja 5-slot CRD-HC2L5L-BS5CO</a> — centralne ładowanie floty oddziału</li>
+  <li><a href="/produkt/zebra-ladowarka-4-baterii-hc20-hc50">Ładowarka 4 baterii SAC-HC2L5L-4SCHG</a> — sprzętownia szpitalna</li>
+  <li><a href="/produkt/zebra-klips-do-noszenia-hc20-hc50">Klips SG-HC2L5L-CLIP-01</a> — antymikrobialny do fartucha</li>
+  <li><a href="/produkt/zebra-pasek-na-reke-hc20-hc50">Pasek na rękę SG-HC2L5L-HSTRP-01</a> — pewny chwyt podczas BCMA</li>
+  <li><a href="/produkt/zebra-folia-ochronna-ekranu-tc22-tc27-hc20-hc50">Folia ekranu SG-TC2L-SCRNPT1-01</a> — ochrona Gorilla Glass</li>
+</ul>
+<p>Akcesoria są <strong>w pełni zamienne między modelami HC20, HC25, HC50, HC55</strong> oraz częściowo z konsumencką serią <a href="/produkt/zebra-tc22">TC22</a>/<a href="/produkt/zebra-tc27">TC27</a> (różnica: bez obudowy medycznej). Pozwala to budować <strong>floty mieszane</strong> bez powielania infrastruktury ładowania.</p>`
+    },
+    {
+      id: 'zastosowania',
+      heading: 'Workflow kliniczne — gdzie i jak używać terminali medycznych',
+      content: `<p>Zakup terminala medycznego ma sens wyłącznie wtedy, gdy istnieje konkretny workflow operacyjny który ten terminal optymalizuje. Poniżej 6 najczęstszych scenariuszy z polskich placówek ochrony zdrowia.</p>
+
+<h3>1. BCMA — Bar Code Medication Administration na oddziale</h3>
+<p><strong>Workflow:</strong> Pielęgniarka skanuje swoją kartę identyfikacyjną → skanuje opaskę pacjenta → skanuje etykietę leku → terminal weryfikuje "pięć Ż" przez integrację z EHR → jeśli wszystko zgodne, pielęgniarka podaje lek. Jeśli niezgodne — alarm dźwiękowy, terminal blokuje rejestrację, wymaga decyzji nadrzędnej.</p>
+<p><strong>Sprzęt:</strong> <a href="/produkt/zebra-hc20">Zebra HC20</a> + opaski Z-Band drukowane na <a href="/produkt/zebra-zd510-hc">Zebra ZD510-HC</a>. Integracja z EHR (CliniNet, AMMS, ProMedHIS, Mediqus, Eskulap) przez Zebra DataWedge — bez kodowania.</p>
+
+<h3>2. Dostęp do dokumentacji medycznej (EHR/EPR) przy łóżku pacjenta</h3>
+<p><strong>Workflow:</strong> Lekarz lub pielęgniarka przy łóżku pacjenta otwiera EHR na terminalu, sprawdza historię chorób, wyniki badań, ostatnie podane leki. Wprowadza nową ocenę stanu, parametry życiowe, zlecenia. Wszystko zapisuje się w czasie rzeczywistym do centralnego systemu szpitalnego.</p>
+<p><strong>Sprzęt:</strong> <a href="/produkt/zebra-hc20">Zebra HC20</a> (Wi-Fi enterprise w szpitalu) lub <a href="/produkt/zebra-hc25">Zebra HC25</a> (gdy pracownik wychodzi poza budynek). Workstation Connect umożliwia połączenie terminala ze stacją dokującą z klawiaturą i myszą do dłuższego wprowadzania danych.</p>
+
+<h3>3. Lab specimen tracking — śledzenie próbek</h3>
+<p><strong>Workflow:</strong> Pielęgniarka pobiera krew → drukuje etykietę z kodem na opaskę próbki (Zebra ZD510-HC) → skanuje opaskę pacjenta i etykietę próbki przez HC20 → terminal rejestruje "kto, kiedy, od kogo, jaki materiał". Próbka trafia do laboratorium z pełną ścieżką audytową. Eliminuje pomyłki próbek (jedna z najczęstszych przyczyn powtarzania badań w polskich szpitalach).</p>
+
+<h3>4. UDI scanning — rejestracja sprzętu medycznego</h3>
+<p><strong>Workflow:</strong> Przed użyciem sprzętu medycznego (cewnik, igła, opatrunek, ampułka leku) personel skanuje kod UDI (Unique Device Identifier) wymagany w UE od 2025 r. Terminal rejestruje fakt użycia z linkiem do pacjenta. W przypadku wycofania (recall) sprzętu z rynku — placówka natychmiast wie którzy pacjenci byli narażeni.</p>
+<p><strong>Sprzęt:</strong> <a href="/produkt/zebra-hc20">HC20</a> ze skanerem SE4720 (czyta GS1-128, Data Matrix UDI). Integracja z systemem zarządzania zapasami szpitalnymi.</p>
+
+<h3>5. Komunikacja personelu — PBX, PTT, alarm</h3>
+<p><strong>Workflow:</strong> Pielęgniarka oddziałowa woła dyżurującego lekarza przez push-to-talk (jak walkie-talkie) — lekarz w innym pokoju słyszy bezpośrednio bez dzwonienia. Pacjent w izolatce ma alarm Code Blue na ścianie zsynchronizowany z terminalem dyżurnej — automatyczne wezwanie zespołu RKO. Wszystko bez papierowych grafików i osobnych pagerów.</p>
+<p><strong>Sprzęt:</strong> <a href="/produkt/zebra-hc20">HC20</a> z Workcloud Communication (PTT Express, PTT Pro lub Enterprise Voice). Integracja z centralą PBX szpitala przez SIP.</p>
+
+<h3>6. Opieka domowa i hospicja — wizyty u pacjenta</h3>
+<p><strong>Workflow:</strong> Pielęgniarka środowiskowa POZ rozpoczyna dzień ze stacji dokującej w przychodni — terminal automatycznie pobiera listę pacjentów do odwiedzenia. Wsiada do samochodu, GPS rejestruje czas dotarcia do każdego pacjenta. W mieszkaniu pacjenta: BCMA przed iniekcją, dokumentacja stanu w EHR przez 5G, ewentualna telekonsultacja z lekarzem przez VoLTE, recepta elektroniczna podpisana elektronicznie. Wraca do przychodni z kompletną dokumentacją — bez papierów.</p>
+<p><strong>Sprzęt:</strong> <a href="/produkt/zebra-hc25">Zebra HC25</a> (5G + GPS + dual SIM). Akcesoria krytyczne: <a href="/produkt/zebra-klips-do-noszenia-hc20-hc50">klips do fartucha</a> i <a href="/produkt/zebra-pasek-na-reke-hc20-hc50">pasek na rękę</a> dla pewnego chwytu w mieszkaniu pacjenta.</p>
+
+<p>W każdym z tych workflow terminal medyczny <strong>oszczędza 30–90 minut administracji dziennie</strong> na pracownika — czas który wraca do bezpośredniej opieki nad pacjentem. Dla średniego szpitala z 200 pracownikami klinicznymi to 100–300 godzin dziennie oszczędności = ekwiwalent 12–40 pełnoetatowych pielęgniarek bez kosztu zatrudnienia.</p>`
+    },
+    {
+      id: 'koszty',
+      heading: 'Koszty wdrożenia floty terminali medycznych w polskim szpitalu',
+      content: `<p>Inwestycja w terminale medyczne zależy od wielkości placówki i wybranego modelu. Poniżej kalkulacje dla trzech typowych scenariuszy w polskiej ochronie zdrowia.</p>
+
+<h3>Mała przychodnia POZ (5–10 pracowników klinicznych)</h3>
+<p>Konfiguracja: 5 terminali HC20 + 2 terminale HC25 dla pielęgniarek środowiskowych + akcesoria.</p>
+<ul>
+  <li>5× <a href="/produkt/zebra-hc20">Zebra HC20</a> × 2 950 zł = 14 750 zł netto</li>
+  <li>2× <a href="/produkt/zebra-hc25">Zebra HC25</a> × 3 350 zł = 6 700 zł netto</li>
+  <li>7× bateria zapasowa BTRY-HC2L5L-2XMAXB × ~350 zł = 2 450 zł netto</li>
+  <li>1× stacja 5-slot CRD-HC2L5L-BS5CO × ~3 500 zł = 3 500 zł netto</li>
+  <li>1× ładowarka 4 baterii SAC-HC2L5L-4SCHG × ~2 200 zł = 2 200 zł netto</li>
+  <li>2× <a href="/produkt/zebra-zd510-hc">Zebra ZD510-HC</a> (drukarki opasek) × ~3 800 zł = 7 600 zł netto</li>
+  <li>Wsparcie wdrożeniowe (16 godzin) = 1 600 zł netto</li>
+  <li>Szkolenie pracowników (8 godzin) = 1 000 zł netto</li>
+  <li><strong>RAZEM: 39 800 zł netto</strong> (ok. 48 950 zł brutto)</li>
+</ul>
+<p>Rekomendacja finansowania: leasing operacyjny 36 miesięcy z ratą ok. 1 200 zł/mies. = ok. 120 zł/mies. na pracownika klinicznego.</p>
+
+<h3>Średni szpital powiatowy (50–150 pracowników klinicznych)</h3>
+<p>Konfiguracja: 60 terminali HC20 dla oddziałów + 8 terminali HC25 dla zespołów wyjazdowych + drukarki i akcesoria.</p>
+<ul>
+  <li>60× Zebra HC20 × 2 950 zł = 177 000 zł netto</li>
+  <li>8× Zebra HC25 × 3 350 zł = 26 800 zł netto</li>
+  <li>68× bateria zapasowa = 23 800 zł netto</li>
+  <li>12× stacja 5-slot (po jednej na oddział) = 42 000 zł netto</li>
+  <li>5× ładowarka 4 baterii (sprzętownia) = 11 000 zł netto</li>
+  <li>10× drukarka opasek Zebra ZD510-HC = 38 000 zł netto</li>
+  <li>Wsparcie wdrożeniowe (80 godzin) = 8 000 zł netto</li>
+  <li>Szkolenia działowe (40 godzin) = 5 000 zł netto</li>
+  <li>Integracja z EHR szpitalnym (40 godzin programisty) = 12 000 zł netto</li>
+  <li><strong>RAZEM: 343 600 zł netto</strong> (ok. 422 628 zł brutto)</li>
+</ul>
+<p>Typowo finansowane z dotacji ministerialnych na cyfryzację ochrony zdrowia (e-rec, EDM, EZD) lub środków unijnych KPO. Leasing 60 mies. = rata ok. 6 200 zł/mies.</p>
+
+<h3>Duży szpital wojewódzki (300–800 pracowników klinicznych)</h3>
+<p>Konfiguracja: 350 terminali HC20 + 50 HC25 dla pogotowia + 20 HC55 dla telemedycyny + sprzęt.</p>
+<ul>
+  <li>350× Zebra HC20 × 2 950 zł = 1 032 500 zł netto</li>
+  <li>50× Zebra HC25 × 3 350 zł = 167 500 zł netto</li>
+  <li>20× Zebra HC55 (~5 500 zł, wycena indywidualna) = 110 000 zł netto</li>
+  <li>420× bateria zapasowa = 147 000 zł netto</li>
+  <li>80× stacja 5-slot = 280 000 zł netto</li>
+  <li>30× ładowarka 4 baterii = 66 000 zł netto</li>
+  <li>40× drukarka opasek Zebra ZD510-HC = 152 000 zł netto</li>
+  <li>Pełne wsparcie wdrożeniowe (400 godzin) = 40 000 zł netto</li>
+  <li>Szkolenia kompleksowe (160 godzin) = 20 000 zł netto</li>
+  <li>Integracja z EHR + HIS + Lab + Apteka (200 godzin) = 60 000 zł netto</li>
+  <li><strong>RAZEM: 2 075 000 zł netto</strong> (ok. 2 552 250 zł brutto)</li>
+</ul>
+<p>Finansowane z budżetu IT szpitala wojewódzkiego rozłożonego na 2-3 lata + środki KPO/POIiŚ. ROI typowo 18-30 miesięcy dzięki redukcji błędów medycznych (kary NFZ), oszczędności czasu personelu i poprawie wskaźników jakości JCI/HCAHPS.</p>
+
+<h3>TCO 5-letnie — czego nie widzisz w cenie zakupu</h3>
+<p>Cena urządzenia to tylko 40-50% całkowitego kosztu posiadania. Dodaj: <strong>kontrakty serwisowe OneCare</strong> (1 050 zł/3 lata na sztukę = ~30% ceny terminala), <strong>baterie zapasowe</strong> (1 zapasowa per pracownik = +12% TCO), <strong>materiały eksploatacyjne ZD510-HC</strong> (opaski Z-Band ~0,15 zł/szt × 5 000 sztuk/mies w średnim szpitalu = 9 000 zł/rok), <strong>czas wymiany sprzętu</strong> przy końcu cyklu życia (5 lat).</p>
+
+<p>Dobrze zaplanowany 5-letni TCO dla HC20 wynosi ok. <strong>4 200 zł netto na sztukę</strong> (cena + OneCare + bateria + materiały + obsługa) vs ok. 5 500 zł dla iPhone'a z trzykrotną wymianą (1-1,5 roku żywotności w szpitalu). Terminale medyczne są tańsze w długim okresie, mimo wyższej ceny zakupu.</p>`
+    },
+    {
+      id: 'serwis-i-wsparcie',
+      heading: 'Serwis, gwarancja i wsparcie posprzedażne',
+      content: `<p>Awaria sprzętu na oddziale szpitalnym oznacza zatrzymanie BCMA i powrót do papierowej dokumentacji — krytyczny problem operacyjny. Wybierając dostawcę terminali medycznych, sprawdź <strong>nie tylko produkt, ale ekosystem wsparcia w Polsce</strong>.</p>
+
+<h3>Kontrakty Zebra OneCare — co obejmują</h3>
+<p>Zebra Technologies oferuje 3 poziomy kontraktu serwisowego dla HC2X/HC5X:</p>
+<ul>
+  <li><strong>OneCare Special Value (SV)</strong> — od ~950 zł netto za 3 lata (HC20). Pokrywa naprawy uszkodzeń mechanicznych (upuszczenia, zalanie środkami dezynfekcyjnymi) + comiesięczne aktualizacje LifeGuard™. Najtańszy plan, optymalny dla większości placówek.</li>
+  <li><strong>OneCare Essential</strong> — od ~1 200 zł netto za 3 lata. Dodaje: ekspresową naprawę (5 dni roboczych zamiast 10–14), wymianę baterii w cenie po 3 latach pracy, wsparcie techniczne 24/7.</li>
+  <li><strong>OneCare Select</strong> — od ~1 800 zł netto za 3 lata. Dodaje: zaawansowane MDM (zarządzanie flotą), VisibilityIQ (dashboardy operacyjne), advance exchange (urządzenie zastępcze następnego dnia roboczego).</li>
+</ul>
+<p>Dla szpitali polecamy minimum <strong>OneCare Special Value</strong> — Zebra nie udostępnia oryginalnych części zamiennych zewnętrznym serwisom. Naprawa poza kontraktem oznacza wysyłkę za granicę (3–6 tygodni przestoju), co eliminuje urządzenie z floty na cały kwartał.</p>
+
+<h3>Autoryzowany serwis Zebra w Polsce</h3>
+<p>Polski autoryzowany serwis terminali Zebra to <a href="https://www.serwis-zebry.pl" rel="noopener">serwis-zebry.pl</a> — wymienia ekrany, skanery SE4720, baterie, obudowy z oryginalnych części Zebra. Czas naprawy w trybie standardowym: 3–5 dni roboczych. Ekspresowo 24–48 godzin z dopłatą. Dla placówek z kontraktem OneCare — naprawa priorytetowa.</p>
+
+<p><strong>Ważne dla audytów JCI/CDC:</strong> oddanie terminala HC20/HC25 do nieautoryzowanego serwisu unieważnia <strong>certyfikat odporności na środki dezynfekujące</strong>. Po nieautoryzowanej naprawie nie można udokumentować że obudowa nadal spełnia wymagania medyczne — krytyczne dla audytów akredytacyjnych.</p>
+
+<h3>Wsparcie wdrożeniowe i szkolenia</h3>
+<p>Wdrożenie floty 50+ terminali wymaga: 1) pre-konfiguracji urządzeń (sterowniki, profile MDM, integracja z EHR), 2) szkolenia personelu (BCMA, EHR, PBX, alarm), 3) wsparcia w pierwszych 30 dniach produkcyjnego użycia (helpdesk dla pielęgniarek). TAKMA zapewnia kompleksowe wsparcie wdrożeniowe — wycena indywidualna w zależności od rozmiaru floty.</p>
+
+<h3>Aktualizacje systemu Android (LifeGuard™)</h3>
+<p>Wszystkie modele HC2X/HC5X mają gwarancję aktualizacji do <strong>Android 16</strong> z comiesięcznymi łatkami bezpieczeństwa (Zebra LifeGuard™). To krytyczne dla placówek medycznych — luki bezpieczeństwa w Androidzie konsumenckim wygasają po 2-3 latach od premiery telefonu, a placówka medyczna musi spełniać wymogi cyberbezpieczeństwa RODO/HIPAA przez minimum 5 lat. Mobility DNA Professional jest w cenie urządzenia — bez dodatkowych opłat za zarządzanie flotą.</p>`
+    },
+    {
+      id: 'jak-zaczac',
+      heading: 'Jak zacząć — proces zakupu i wdrożenia terminali medycznych',
+      content: `<p>Wdrożenie terminali medycznych w placówce to projekt 8-16 tygodniowy. Poniżej praktyczna ścieżka oparta na naszych wdrożeniach w polskich szpitalach gminnych, miejskich i powiatowych.</p>
+
+<h3>Etap 1: Analiza potrzeb (2–3 tygodnie)</h3>
+<p>Audit obecnego workflow: ile stanowisk klinicznych potrzebuje terminala, ile pracowników jest w pracy terenowej (potrzebują HC25 z 5G), kto wykonuje telekonsultacje (potrzebuje HC50/HC55 z aparatem przednim). Inwentaryzacja istniejącego sprzętu (smartfony, tablety, drukarki opasek). Mapowanie EHR/HIS używanego w placówce — sprawdzenie kompatybilności z DataWedge i Zebra Mobility DNA.</p>
+
+<h3>Etap 2: Zamówienie testowe (3–4 tygodnie)</h3>
+<p>Zamówienie 2-3 sztuk HC20 + 1 HC25 do testów. Pre-konfiguracja przez dostawcę. Wgranie profili EHR. Testy z dwoma–trzema pielęgniarkami na jednym oddziale przez 2 tygodnie. Weryfikacja: czy BCMA działa, czy dezynfekcja nie uszkadza obudowy, czy bateria wystarcza na zmianę, czy push-to-talk integruje się z PBX szpitala. <strong>Bez testu pilotażowego — nie kupujemy floty</strong>.</p>
+
+<h3>Etap 3: Decyzja zakupu i finansowanie (2–4 tygodnie)</h3>
+<p>Wybór konfiguracji floty (np. 60 HC20 + 8 HC25). Negocjacja cen przy zamówieniu hurtowym (typowo 5–10% rabatu dla ponad 50 sztuk). Wybór modelu finansowania: zakup, leasing operacyjny (najpopularniejszy — pełna amortyzacja od miesiąca pierwszego), leasing finansowy (najtańszy w długim okresie ale wymaga większego wkładu własnego). Dla zakupów &gt; 130 000 zł netto: postępowanie PZP. Przygotowanie dokumentacji przetargowej (SOPP, OPZ, ŚK), opis oferty technicznej.</p>
+
+<h3>Etap 4: Wdrożenie floty (3–5 tygodni)</h3>
+<p>Dostawa urządzeń. Pre-konfiguracja masowa przez StageNow (jeden dzień dla 50–100 sztuk). Integracja z MDM (SOTI, VMware Workspace ONE lub Microsoft Intune). Wprowadzenie do EHR — testy każdego oddziału osobno. Instalacja stacji dokujących w dyżurkach pielęgniarek. Szkolenia: kancelarii (BCMA, EHR), administracji (zarządzanie flotą, monitoring), działu serwisowego (zgłaszanie awarii do OneCare).</p>
+
+<h3>Etap 5: Pierwsze 90 dni produkcyjnego użycia</h3>
+<p>Hyper-care z asystą wdrożeniowca: helpdesk dla pielęgniarek (pytania o BCMA, dezynfekcję, push-to-talk), monitoring statystyk (Zebra VisibilityIQ), pierwsze drobne korekty konfiguracji. Ten okres jest krytyczny dla adopcji — pielęgniarki które miały trudny start porzucają BCMA i wracają do papierowej dokumentacji, co eliminuje korzyść z inwestycji.</p>
+
+<h3>Etap 6: Wsparcie ciągłe (lata 1–5)</h3>
+<p>OneCare dla wszystkich urządzeń. Coroczny audyt floty (które urządzenia mają zużyte baterie, ile awarii, czy potrzebne nowe stacje dokujące w nowych obszarach szpitala). Po 4 latach: planowanie wymiany na kolejną generację (HC30/HC60 prawdopodobnie 2029-2030).</p>
+
+<h3>Co kupić od kogo</h3>
+<p>Polski dostawca terminali medycznych Zebra ze wsparciem wdrożeniowym i serwisem to <strong>TAKMA</strong> — 25 lat na rynku AutoID, autoryzowany partner Zebra Premier Solution Partner, własny serwis (<a href="https://www.serwis-zebry.pl" rel="noopener">serwis-zebry.pl</a>) z dostępem do oryginalnych części Zebra. Wycena indywidualna dla flot 5–500 sztuk. <a href="/kontakt">Skontaktuj się z nami</a> aby umówić wizytę specjalisty w Twojej placówce lub zamówić pilotażowy zestaw HC20+HC25 do testu w przyszłym tygodniu.</p>`
+    },
+  ],
+
+  faq: [
+    {
+      question: 'Czy mogę użyć zwykłego smartfona Samsung lub iPhone zamiast terminala medycznego?',
+      answer: 'Technicznie tak, ale praktycznie nie. Standardowy smartfon konsumencki popęka po 6–12 miesiącach narażenia na środki dezynfekujące używane w polskich szpitalach (alkohole, czwartorzędowe związki amoniowe). Brakuje mu czerwonego przycisku alarmowego (Code Blue), wymiennej baterii hot-swap i certyfikatu odporności na 30+ rodzajów chusteczek. Aparat smartfona zamiast skanera enterprise jest 5–10× wolniejszy w BCMA. TCO 5-letnie dla smartfona jest ok. 30% wyższe niż dla HC20 z powodu częstej wymiany.',
+    },
+    {
+      question: 'Ile kosztuje terminal medyczny Zebra w 2026?',
+      answer: 'Zebra HC20 (Wi-Fi only, entry-level) — od 2 950 zł netto. Zebra HC25 (Wi-Fi + 5G/LTE + GPS, dla opieki terenowej) — od 3 350 zł netto. Zebra HC50 (premium Wi-Fi z aparatem przednim do telemedycyny) — wycena indywidualna ok. 4 500–5 000 zł netto. Zebra HC55 (topowy, 5G + telemedycyna + hot-swap) — ok. 5 500 zł netto. Wszystkie zawierają pakiet Mobility DNA Professional. Akcesoria (baterie, stacje, klipsy) i materiały eksploatacyjne to dodatkowo 25–40% kosztu zakupu floty.',
+    },
+    {
+      question: 'Czy terminal medyczny obsługuje BCMA z polskim systemem szpitalnym?',
+      answer: 'Tak. Terminale Zebra HC2X/HC5X integrują się z popularnymi polskimi systemami HIS/EHR: CliniNet (Asseco), AMMS (Comarch), ProMedHIS (ProMedHIS), Mediqus, Eskulap, KS-SOMED, OptiMED, AMMS Plus. Integracja przez Zebra DataWedge — moduł skanowania kodów wstawia odczyt do dowolnego pola formularza w EHR bez programowania. Dla bardziej zaawansowanej integracji (workflow logic, walidacje, autoryzacje) Zebra zapewnia SDK Enterprise Browser.',
+    },
+    {
+      question: 'Jaka jest różnica między Zebra HC20 a HC25?',
+      answer: 'HC20 jest tylko Wi-Fi — działa wewnątrz budynku szpitala z dostępem do enterprise Wi-Fi 6/6E. HC25 dodaje moduł 5G FR1 (NSA/SA) + 4G LTE-A + GPS Dual-band L1+L5 + dual SIM (nano + eSIM) — działa wszędzie tam gdzie jest zasięg komórkowy. Cena: HC20 = 2 950 zł, HC25 = 3 350 zł (premium 400 zł za 5G). Pozostałe cechy healthcare są identyczne (czerwony przycisk, obudowa medyczna, skaner SE4720). HC25 jest niezbędny dla pielęgniarek środowiskowych, paramedyków, opieki domowej.',
+    },
+    {
+      question: 'Czy terminal medyczny może zastąpić szpitalny telefon i pager?',
+      answer: 'Tak. Zebra HC2X/HC5X z Workcloud Communication zastępuje smartfon, pager i radioterminal jednocześnie. Funkcje: VoIP/SIP do integracji z PBX szpitala, Push-to-Talk między pracownikami (instant communication jak walkie-talkie), VoLTE dla rozmów przez sieć komórkową (HC25/HC55), tłumienie szumów AI dla hałaśliwych korytarzy. Eliminuje 2–3 osobne urządzenia w kieszeni fartucha pielęgniarki — i ich koszty (typowo 4 000–6 000 zł na osobę).',
+    },
+    {
+      question: 'Jak długo trwa wdrożenie floty terminali w szpitalu?',
+      answer: 'Pełne wdrożenie floty 50+ terminali to projekt 8–16 tygodni: 2–3 tygodnie analizy potrzeb, 3–4 tygodnie testu pilotażowego (2–3 urządzenia), 2–4 tygodnie zakupu i finansowania (dłużej przy PZP), 3–5 tygodni faktycznego wdrożenia (instalacja, konfiguracja, szkolenia). Pierwsze 90 dni produkcji to "hyper-care" z asystą wdrożeniowca. Dla małych przychodni (5–10 urządzeń) wdrożenie jest skrócone do 4–6 tygodni.',
+    },
+    {
+      question: 'Czy terminale Zebra HC20 i HC25 są kompatybilne z opaskami pacjentów Z-Band?',
+      answer: 'Tak, to standardowa para. Drukarka opasek pacjentów <a href="/produkt/zebra-zd510-hc">Zebra ZD510-HC</a> drukuje opaski Z-Band z kodami kreskowymi Code 128 lub Data Matrix. Skaner SE4720 w HC20/HC25 dekoduje je w 0,3 sekundy — nawet po kilku dniach na nadgarstku pacjenta (wilgoć, środki dezynfekcyjne, naprężenia mechaniczne). Pełen zestaw HC20 + ZD510-HC + opaski Z-Band to fundament systemu BCMA w polskim szpitalu.',
+    },
+    {
+      question: 'Czy terminale medyczne wymagają kontraktu serwisowego OneCare?',
+      answer: 'Rekomendowany. Zebra Technologies nie udostępnia oryginalnych części zamiennych zewnętrznym serwisom. Naprawa poza kontraktem oznacza wysyłkę za granicę (3–6 tygodni przerwy w pracy). Dla terminali HC2X/HC5X minimalny plan to OneCare Special Value (~950 zł netto za 3 lata na sztukę). Naprawa w autoryzowanym serwisie polskim (<a href="https://www.serwis-zebry.pl" rel="noopener">serwis-zebry.pl</a>) trwa 3–5 dni roboczych, ekspresowo 24–48 h z dopłatą.',
+    },
+    {
+      question: 'Czy mogę finansować zakup terminali z dotacji?',
+      answer: 'Tak. Polskie szpitale i przychodnie POZ mogą finansować zakup z: 1) Krajowy Plan Odbudowy (KPO) — moduł cyfryzacja ochrony zdrowia, 2) Program Operacyjny Infrastruktura i Środowisko (POIiŚ), 3) Regionalne Programy Operacyjne (RPO) województw, 4) NFZ — premie za jakość (P4P), 5) Budżet IT szpitala wojewódzkiego/marszałkowskiego. Dla mniejszych placówek najprostsze jest leasing operacyjny 36–60 miesięcy z ratą ok. 100–150 zł/mies. za HC20.',
+    },
+    {
+      question: 'Jakie placówki w Polsce już używają terminali medycznych Zebra?',
+      answer: 'Polskie szpitale wojewódzkie, kliniki uniwersyteckie i sieci POZ stopniowo wdrażają terminale Zebra HC2X/HC5X od 2024 r. (poprzednia generacja TC52-HC od 2019). Liderzy w 2026: Uniwersyteckie Centrum Kliniczne w Gdańsku, Szpital Uniwersytecki w Krakowie, Mazowiecki Szpital Specjalistyczny w Radomiu, sieć przychodni LUX MED. Dla porównania z konkurencją: w UE niemiecka Charité Berlin, austriacka Wiener KAV i hiszpańska Hospital Vall d\'Hebron używają HC20/HC50 jako standard floty.',
+    },
+  ],
+
+  relatedLinks: [
+    { title: 'Zebra HC20 — terminal medyczny entry-level', href: '/produkt/zebra-hc20' },
+    { title: 'Zebra HC25 — terminal 5G dla opieki domowej', href: '/produkt/zebra-hc25' },
+    { title: 'Zebra ZD510-HC — drukarka opasek pacjentów', href: '/produkt/zebra-zd510-hc' },
+    { title: 'Bateria do Zebra HC20/HC50', href: '/produkt/zebra-bateria-hc20-hc50' },
+    { title: 'Stacja dokująca 5-slot do HC20/HC50', href: '/produkt/zebra-stacja-dokujaca-5slot-hc20-hc50' },
+    { title: 'Klips do noszenia HC20/HC50', href: '/produkt/zebra-klips-do-noszenia-hc20-hc50' },
+    { title: 'Pasek na rękę do HC20/HC50', href: '/produkt/zebra-pasek-na-reke-hc20-hc50' },
+    { title: 'Sprzęt do EZD RP — wdrożenie w urzędzie', href: '/poradnik/sprzet-do-ezd-rp-wymagania-i-wdrozenie' },
+    { title: 'Zebra TC22 vs Datalogic Memor 12 — porównanie', href: '/poradnik/zebra-tc22-vs-datalogic-memor-12-porownanie' },
+    { title: 'Kontakt — wycena floty terminali medycznych', href: '/kontakt' },
+  ],
+},
 ]
 
 // Helper functions
