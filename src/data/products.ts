@@ -25065,10 +25065,10 @@ Koszt posiadania (TCO): pełna kompatybilność akcesoriów TC22 i TC27 — bate
     id: 'zebra-hc20',
     slug: 'zebra-hc20',
     name: 'Zebra HC20',
-    seoTitle: 'Zebra HC20 — terminal medyczny dla szpitali i przychodni | od 2 950 zł',
-    seoDescription: 'Zebra HC20 (WLMT0-H20B6BCJ1) — terminal medyczny Wi-Fi 6E z czerwonym przyciskiem alarmowym, antymikrobialną obudową odporną na ponad 30 środków dezynfekujących i skanerem SE4720. Ekran 6" FHD+, IP68, Android do 16. Dla pielęgniarek, lekarzy, BCMA, EHR. Od 2 950 zł netto.',
-    shortDescription: 'Zebra HC20 — terminal medyczny Wi-Fi 6E z przyciskiem alarmowym, dezynfekcja, BCMA, EHR',
-    description: `Dla kogo? Zebra HC20 to dedykowany terminal mobilny dla placówek ochrony zdrowia — szpitali, przychodni, POZ, hospicjów i domów opieki. Wzmocniona obudowa medyczna, czerwony przycisk alarmowy (Code Blue) i odporność na ponad 30 rodzajów chusteczek dezynfekujących sprawiają, że HC20 wytrzymuje wieloletnią pracę w środowisku klinicznym, gdzie standardowe smartfony zawiodą po 6–12 miesiącach narażenia na środki dezynfekujące.
+    seoTitle: 'Zebra HC20 — kolektor danych do służby zdrowia, Wi-Fi 6 | od 2 950 zł',
+    seoDescription: 'Zebra HC20 (WLMT0-H20B6BCJ1) — kolektor danych do służby zdrowia z czerwonym przyciskiem alarmowym, antymikrobialną obudową odporną na ponad 30 środków dezynfekujących i skanerem SE4720. Ekran 6" FHD+, Wi-Fi 6E, IP68, Android do 16. Dla pielęgniarek, lekarzy, BCMA, EHR. Od 2 950 zł netto.',
+    shortDescription: 'Zebra HC20 — kolektor danych do służby zdrowia, Wi-Fi 6E z przyciskiem alarmowym, dezynfekcja, BCMA, EHR',
+    description: `Dla kogo? Zebra HC20 to dedykowany kolektor danych do służby zdrowia — szpitali, przychodni, POZ, hospicjów i domów opieki. Wzmocniona obudowa medyczna, czerwony przycisk alarmowy (Code Blue) i odporność na ponad 30 rodzajów chusteczek dezynfekujących sprawiają, że HC20 wytrzymuje wieloletnią pracę w środowisku klinicznym, gdzie standardowe smartfony zawiodą po 6–12 miesiącach narażenia na środki dezynfekujące.
 
 HC20 to zdrowotny wariant platformy [Zebra TC22](/produkt/zebra-tc22) — identyczny procesor Qualcomm 5430 hex-core 2.1 GHz, 6-calowy wyświetlacz FHD+ (1080×2160) z Corning Gorilla Glass, 6 GB RAM / 64 GB Flash, Wi-Fi 6/6E (Wi-Fi 6ES), Bluetooth 5.2 z BLE Beaconing. Łączność prywatnej sieci 5G jest dostępna w siostrzanym modelu HC25; pełnowymiarowy wariant z aparatem przednim 5 MP do telemedycyny to HC50/HC55. Wszystkie modele HC2X/HC5X używają tego samego zestawu akcesoriów (stacje dokujące, baterie, etui).
 
@@ -25255,7 +25255,7 @@ Koszt posiadania (TCO): kompatybilność akcesoriów z całą serią HC2X/HC5X i
     editorialReview: {
       ratingValue: 4.6,
       bestRating: 5,
-      reviewBody: 'Zebra HC20 to pierwszy "dostępny cenowo" terminal medyczny w segmencie entry-level (2 950 zł netto vs ~5 000 zł za poprzednika TC52-HC). Czerwony przycisk Code Blue, certyfikowana odporność na 30+ środków dezynfekujących i białe podświetlenie skanera SE4720 to cechy realnie ułatwiające pracę pielęgniarki — nieobecne w żadnym smartfonie konsumenckim. Minus: tylko 1 wariant w naszej ofercie (Wi-Fi-only, 6/64 GB) — placówki potrzebujące telemedycyny powinny rozważyć HC50/HC55, a oddziały terenowe HC25 z 5G. Mimo to: dla 90% workflow pielęgniarskiego (BCMA, EHR, komunikacja) HC20 jest optymalnym wyborem cena/funkcjonalność w 2026.',
+      reviewBody: 'Zebra HC20 to pierwszy "dostępny cenowo" kolektor danych do służby zdrowia w segmencie entry-level (2 950 zł netto vs ~5 000 zł za poprzednika TC52-HC). Czerwony przycisk Code Blue, certyfikowana odporność na 30+ środków dezynfekujących i białe podświetlenie skanera SE4720 to cechy realnie ułatwiające pracę pielęgniarki — nieobecne w żadnym smartfonie konsumenckim. Minus: tylko 1 wariant w naszej ofercie (Wi-Fi-only, 6/64 GB) — placówki potrzebujące telemedycyny powinny rozważyć HC50/HC55, a oddziały terenowe HC25 z 5G. Mimo to: dla 90% workflow pielęgniarskiego (BCMA, EHR, komunikacja) HC20 jest optymalnym wyborem cena/funkcjonalność w 2026.',
     },
     createdAt: '2026-05-12',
     updatedAt: '2026-05-12',
@@ -25264,10 +25264,10 @@ Koszt posiadania (TCO): kompatybilność akcesoriów z całą serią HC2X/HC5X i
     id: 'zebra-hc25',
     slug: 'zebra-hc25',
     name: 'Zebra HC25',
-    seoTitle: 'Zebra HC25 — terminal medyczny 5G/LTE z GPS dla opieki terenowej | od 3 350 zł',
-    seoDescription: 'Zebra HC25 (WCMTB-H25B6BCJ1) — terminal medyczny 5G FR1 + 4G LTE-A z GPS Dual-band L1+L5, eSIM, czerwonym przyciskiem alarmowym i obudową odporną na 30+ środków dezynfekujących. Dla opieki domowej, hospicjów, pielęgniarek środowiskowych. Od 3 350 zł netto.',
-    shortDescription: 'Zebra HC25 — terminal medyczny 5G/LTE z GPS, dla opieki domowej i pielęgniarek środowiskowych',
-    description: `Dla kogo? Zebra HC25 to terminal mobilny dla pracowników ochrony zdrowia działających **poza siecią Wi-Fi szpitala** — pielęgniarek środowiskowych, opiekunów w domach pacjentów, hospicjów domowych, pogotowia ratunkowego i transportu medycznego. Łączność 5G FR1 + 4G LTE-A zapewnia stały dostęp do systemu EHR/HIS i komunikację z dyżurką niezależnie od tego, czy pracownik jest w szpitalu, mieszkaniu pacjenta czy karetce.
+    seoTitle: 'Zebra HC25 — kolektor danych do służby zdrowia 5G/LTE z GPS | od 3 350 zł',
+    seoDescription: 'Zebra HC25 (WCMTB-H25B6BCJ1) — kolektor danych do służby zdrowia z 5G FR1 + 4G LTE-A, GPS Dual-band L1+L5, eSIM, czerwonym przyciskiem alarmowym i obudową odporną na 30+ środków dezynfekujących. Dla opieki domowej, hospicjów, pielęgniarek środowiskowych. Od 3 350 zł netto.',
+    shortDescription: 'Zebra HC25 — kolektor danych do służby zdrowia 5G/LTE z GPS, dla opieki domowej i pielęgniarek środowiskowych',
+    description: `Dla kogo? Zebra HC25 to kolektor danych do służby zdrowia dla pracowników działających **poza siecią Wi-Fi szpitala** — pielęgniarek środowiskowych, opiekunów w domach pacjentów, hospicjów domowych, pogotowia ratunkowego i transportu medycznego. Łączność 5G FR1 + 4G LTE-A zapewnia stały dostęp do systemu EHR/HIS i komunikację z dyżurką niezależnie od tego, czy pracownik jest w szpitalu, mieszkaniu pacjenta czy karetce.
 
 HC25 to wariant 5G platformy [Zebra HC20](/produkt/zebra-hc20) — wszystkie cechy healthcare zachowane (czerwony przycisk Code Blue, obudowa odporna na dezynfekcję klasy medycznej, skaner SE4720 z białym podświetleniem, tłumienie szumów AI), plus moduł WAN z dual SIM (1 nano-SIM + 1 eSIM) i precyzyjną lokalizacją GPS. Pełna kompatybilność akcesoriów z całą serią HC2X/HC5X.
 
@@ -25461,7 +25461,7 @@ Wszystkie akcesoria HC25 są tożsame z HC20: baterie BTRY-HC2L5L-2XMAXB, stacje
     editorialReview: {
       ratingValue: 4.7,
       bestRating: 5,
-      reviewBody: 'Zebra HC25 to najsensowniejszy wybór dla wszystkich, którzy pracują w ochronie zdrowia POZA siecią Wi-Fi szpitala — pielęgniarki środowiskowe, hospicja domowe, paramedycy, transport medyczny. Premium ok. 400 zł vs HC20 daje moduł 5G + GPS Dual-band L1+L5 + dual SIM (nano + eSIM) — funkcjonalność której nie sklonujesz hotspotem z prywatnego smartfona. Jakość GPS w polskich miastach jest praktycznie radarowa (1-3 m precyzji). Dla pielęgniarki odwiedzającej 8-10 pacjentów dziennie GPS + auto-logowanie wizyt może oszczędzić 30-60 min administracji dziennie. Minus: brak aparatu przedniego do telekonsultacji — to różnica vs HC55. Dla 80% scenariuszy opieki terenowej HC25 wystarczy.',
+      reviewBody: 'Zebra HC25 to najsensowniejszy kolektor danych do służby zdrowia dla wszystkich, którzy pracują POZA siecią Wi-Fi szpitala — pielęgniarki środowiskowe, hospicja domowe, paramedycy, transport medyczny. Premium ok. 400 zł vs HC20 daje moduł 5G + GPS Dual-band L1+L5 + dual SIM (nano + eSIM) — funkcjonalność której nie sklonujesz hotspotem z prywatnego smartfona. Jakość GPS w polskich miastach jest praktycznie radarowa (1-3 m precyzji). Dla pielęgniarki odwiedzającej 8-10 pacjentów dziennie GPS + auto-logowanie wizyt może oszczędzić 30-60 min administracji dziennie. Minus: brak aparatu przedniego do telekonsultacji — to różnica vs HC55. Dla 80% scenariuszy opieki terenowej HC25 wystarczy.',
     },
     createdAt: '2026-05-13',
     updatedAt: '2026-05-13',
@@ -36731,7 +36731,7 @@ const tc22Accessories: Product[] = [
       { name: 'Obudowa', value: 'Klasa medyczna, odporna na dezynfekcję' },
       { name: 'Kompatybilność', value: 'HC20, HC25, HC50, HC55' },
     ],
-    applications: ['Bateria zapasowa terminala medycznego', 'Śledzenie lokalizacji terminala (Device Tracker)', 'Praca dwuzmianowa'],
+    applications: ['Bateria zapasowa kolektora danych medycznego', 'Śledzenie lokalizacji terminala (Device Tracker)', 'Praca dwuzmianowa'],
     compatibleAccessories: [],
     downloads: [],
     createdAt: '2026-05-12',
