@@ -12584,6 +12584,7 @@ export const guides: Guide[] = [
     { title: 'Kontakt', href: '/kontakt' },
   ],
 },
+/* DRAFT — odkomentować po dodaniu HC50, HC55 i Honeywell/Datalogic comparison. Plan klastra w memory: project_takma-healthcare-cluster.md
 {
   slug: 'terminale-medyczne-dla-szpitali-i-przychodni-2026',
   title: 'Terminale medyczne dla szpitali i przychodni — jak wybrać [2026]',
@@ -12914,6 +12915,7 @@ export const guides: Guide[] = [
     { title: 'Kontakt — wycena floty terminali medycznych', href: '/kontakt' },
   ],
 },
+*/
 ]
 
 // Helper functions
