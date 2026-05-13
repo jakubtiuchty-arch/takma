@@ -25193,7 +25193,6 @@ Koszt posiadania (TCO): kompatybilność akcesoriów z całą serią HC2X/HC5X i
     downloads: [
       { name: 'Karta katalogowa HC2X/HC5X (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/pl/spec-sheets/hc2x-hc5x-spec-sheet-pl-pl.pdf', size: 'PDF' },
       { name: 'Strona produktu Zebra HC20 (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc20.html', size: 'Online' },
-      { name: 'Zatwierdzone środki dezynfekujące (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/support-downloads/software/printer-software/healthcare-mobile-computers.html', size: 'Online' },
     ],
     servicePlans: [
       { name: 'Zebra OneCare Special Value — 3 lata', partNumber: 'Z1AS-HC20XX-3C00', duration: '3 lata', priceNetto: 950 },
@@ -25399,7 +25398,6 @@ Wszystkie akcesoria HC25 są tożsame z HC20: baterie BTRY-HC2L5L-2XMAXB, stacje
     downloads: [
       { name: 'Karta katalogowa HC2X/HC5X (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/pl/spec-sheets/hc2x-hc5x-spec-sheet-pl-pl.pdf', size: 'PDF' },
       { name: 'Strona produktu Zebra HC25 (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc25.html', size: 'Online' },
-      { name: 'Zatwierdzone środki dezynfekujące (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/support-downloads/software/printer-software/healthcare-mobile-computers.html', size: 'Online' },
     ],
     servicePlans: [
       { name: 'Zebra OneCare Special Value — 3 lata', partNumber: 'Z1AS-HC25XX-3C00', duration: '3 lata', priceNetto: 1050 },
@@ -25602,7 +25600,6 @@ Wszystkie akcesoria HC50 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     downloads: [
       { name: 'Karta katalogowa HC2X/HC5X (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/pl/spec-sheets/hc2x-hc5x-spec-sheet-pl-pl.pdf', size: 'PDF' },
       { name: 'Strona produktu Zebra HC50 (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc50.html', size: 'Online' },
-      { name: 'Zatwierdzone środki dezynfekujące (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/support-downloads/software/printer-software/healthcare-mobile-computers.html', size: 'Online' },
     ],
     servicePlans: [
       { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-HC50XX-3C00', duration: '3 lata', priceNetto: 1350 },
@@ -25813,7 +25810,6 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     downloads: [
       { name: 'Karta katalogowa HC2X/HC5X (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/pl/spec-sheets/hc2x-hc5x-spec-sheet-pl-pl.pdf', size: 'PDF' },
       { name: 'Strona produktu Zebra HC55 (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc55.html', size: 'Online' },
-      { name: 'Zatwierdzone środki dezynfekujące (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/support-downloads/software/printer-software/healthcare-mobile-computers.html', size: 'Online' },
     ],
     servicePlans: [
       { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-HC55XX-3C00', duration: '3 lata', priceNetto: 1550 },
