@@ -25467,6 +25467,424 @@ Wszystkie akcesoria HC25 są tożsame z HC20: baterie BTRY-HC2L5L-2XMAXB, stacje
     updatedAt: '2026-05-13',
   },
   {
+    id: 'zebra-hc50',
+    slug: 'zebra-hc50',
+    name: 'Zebra HC50',
+    seoTitle: 'Zebra HC50 — kolektor danych do służby zdrowia premium, telemedycyna | od 4 200 zł',
+    seoDescription: 'Zebra HC50 (WLMT0-H50D8BBK1) — premium kolektor danych do służby zdrowia z aparatem przednim 5 MPx do telemedycyny, hot-swap baterii (wymiana w 30 s), 8 GB RAM / 128 GB Flash, czerwonym przyciskiem alarmowym. Wi-Fi 6E, IP68, Android do 16. Od 4 200 zł netto.',
+    shortDescription: 'Zebra HC50 — premium kolektor danych do służby zdrowia, aparat przedni 5 MPx, hot-swap baterii, telemedycyna',
+    description: `Dla kogo? Zebra HC50 to premium kolektor danych do służby zdrowia dla placówek wymagających **telemedycyny** i **nieprzerwanego workflow klinicznego** — szpitali wojewódzkich, klinik uniwersyteckich, intensywnej terapii, izolatek zakaźnych i oddziałów onkologicznych. Aparat przedni 5 MPx umożliwia konsultacje wideo lekarz-pacjent przy łóżku, a technologia hot-swap baterii eliminuje przerwy w pracy podczas wymiany akumulatora.
+
+HC50 to premium wariant Wi-Fi-only platformy HC2X/HC5X — wszystkie cechy healthcare zachowane z [HC20](/produkt/zebra-hc20) (czerwony przycisk Code Blue, obudowa odporna na 30+ środków dezynfekujących, skaner SE4720 z białym podświetleniem, tłumienie szumów AI), plus 4 kluczowe wzmocnienia premium.
+
+**Co dodaje HC50 vs HC20**:
+
+- **Aparat przedni 5 MPx** — telekonsultacje wideo z pacjentem, telekonsylia lekarz–lekarz (np. internista konsultujący z neurochirurgiem oddalonym o 200 km), zdjęcia twarzy/oczu/skóry w trybie selfie do dokumentacji medycznej. To unikatowa funkcja — w HC20/HC25 jej brak ze względu na cenę entry-level.
+- **8 GB RAM / 128 GB Flash** (vs 6 GB / 64 GB w HC20) — dwukrotny zasób na aplikacje graficzne wymagające pamięci: wyniki badań obrazowych (RTG, USG, TK, MR), aplikacje patomorfologii cyfrowej, EKG mobile, integracja z DICOM viewer. Bez "lagowania" przy oglądaniu zdjęć radiologicznych przy łóżku pacjenta.
+- **Hot-swap baterii (do 60 s buforowania)** — wymiana baterii zajmuje 30 sekund, terminal nie wyłącza się dzięki kondensatorom podtrzymującym pamięć RAM. Pielęgniarka w trakcie 12-godzinnej zmiany wymienia baterię między obchodami i nie traci ani sesji EHR, ani aktywnego połączenia VoIP. W HC20/HC25 wymiana baterii wymaga restartu.
+- **Czujnik ciśnienia (opcja w wybranych SKU)** — wbudowany barometr/altimetr dla zaawansowanych aplikacji medycznych (monitoring oddechowy, śledzenie wysokości w transporcie helikopterem HEMS).
+
+**Pozostałe wyróżniki healthcare (identyczne z HC20)**:
+
+- Czerwony przycisk alarmowy (Code Blue) z programowalną funkcją
+- Obudowa z tworzyw klasy medycznej odporna na 30+ chusteczek dezynfekujących
+- Skaner SE4720 1D/2D z białym podświetleniem LED + zielony celownik (czas dekodowania 0,3 s)
+- Tylna kamera 16 MPx
+- Tłumienie szumów AI dla rozmów PTT/VoIP
+- Workcloud Communication PBX/PTT/Enterprise Voice
+- Obsługa ekranu w cienkich rękawiczkach medycznych
+- IP68/IP65, MIL-STD-810H, upadki z 1,25 m, tumble 500×0,5 m
+
+Łączność Wi-Fi 6/6E (802.11ax) 2×2 MU-MIMO z trójzakresowym modułem (2,4 / 5 / 6 GHz). Bluetooth 5.2 z BLE Beaconing. NFC ISO 14443. **Bez 5G/LTE** — wariant z 5G + GPS to [Zebra HC55](/produkt/zebra-hc55).
+
+Pakiet Mobility DNA Professional w cenie (DataWedge, StageNow, Device Tracker, LifeGuard™ aktualizacje Android do v16). Pełna paleta Zebra DNA z licencją Enterprise.
+
+Typowe zastosowania: **telekonsultacje przy łóżku pacjenta** — internista wzywa neurologa do udaru, ortopedy do urazu, anestezjologa do trudnego znieczulenia. **Radiologia mobilna** — radiolog ogląda zdjęcia RTG/USG/TK na HC50 przy łóżku pacjenta zamiast wracać do gabinetu. **Telemedycyna oddziałowa** — lekarz dyżurujący konsultuje pacjentów na innych oddziałach bez fizycznego przemieszczania się. **OIOM/SOR** — szybkie sceny medyczne wymagające stabilnego workflow bez przerw na wymianę baterii.
+
+Wszystkie akcesoria HC50 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-HC2L5L-2XMAXB](/produkt/zebra-bateria-hc20-hc50), stacje dokujące (1-slot, 2-slot ShareCradle, 5-slot), ładowarka 4-baterii, klipsy, paski na rękę, folia ekranu. Drukarka opasek pacjentów: [Zebra ZD510-HC](/produkt/zebra-zd510-hc). Wariant z 5G + GPS dla telekonsultacji w karetce: [Zebra HC55](/produkt/zebra-hc55). Pełna dokumentacja na zebra.com i [serwis-zebry.pl](https://www.serwis-zebry.pl).`,
+    categoryId: 'terminale-mobilne',
+    subcategoryIds: ['terminale-mobilne'],
+    sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc50.html',
+    manufacturerId: 'zebra',
+    priceFrom: 4200,
+    images: [
+      '/images/products/hc50_1.png',
+      '/images/products/hc50_2.png',
+      '/images/products/hc50_3.png',
+      '/images/products/hc50_4.png',
+    ],
+    imageDescriptions: [
+      'Zebra HC50 — widok z przodu, ekran 6 cali FHD+ w obudowie medycznej, aparat przedni 5 MPx do telemedycyny',
+      'Zebra HC50 — widok z tyłu, kamera 16 MPx, skaner SE4720 i czerwony przycisk alarmowy',
+      'Zebra HC50 — widok pod kątem, premium obudowa odporna na dezynfekcję, hot-swap baterii',
+      'Zebra HC50 — widok z boku, profil 12,5 mm z portem USB-C i tackami baterii hot-swap',
+    ],
+    tags: ['healthcare'],
+    availability: 'on-order',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'System operacyjny', value: 'Android (aktualizacja do Android 16)' },
+      { name: 'Procesor', value: 'Qualcomm 5430 hex-core, 2.1 GHz' },
+      { name: 'Wyświetlacz', value: '6.0" FHD+ (1080×2160), 450 nit, Corning Gorilla Glass, obsługa w rękawiczkach' },
+      { name: 'Pamięć', value: '8 GB RAM / 128 GB Flash + microSD do 2 TB' },
+      { name: 'Skaner', value: 'SE4720 1D/2D, białe podświetlenie LED + zielony celownik' },
+      { name: 'Kamera tylna', value: '16 MPx (dokumentacja ran, etykiety, sprzęt medyczny)' },
+      { name: 'Kamera przednia', value: '5 MPx (telekonsultacje wideo, telekonsylia)' },
+      { name: 'Bateria', value: '3 800 mAh / 14,63 Wh, wymienna z hot-swap (do 60 s buforowania)' },
+      { name: 'Odporność', value: 'IP68/IP65, upadki z 1,25 m, MIL-STD-810H, tumble 500×0,5 m' },
+      { name: 'Łączność WLAN', value: 'Wi-Fi 6/6E (802.11ax) 2×2 MU-MIMO, trójzakresowy (2,4/5/6 GHz)' },
+      { name: 'Bluetooth', value: 'Bluetooth 5.2 klasa 2 z BLE Beaconing' },
+      { name: 'NFC', value: 'ISO 14443 typu A i B, Mifare, FeliCa, ISO 15693' },
+      { name: 'WAN', value: 'Brak (Wi-Fi only — wariant z 5G to HC55)' },
+      { name: 'Wymiary', value: '165 × 76,3 × 12,5 mm' },
+      { name: 'Waga', value: '242 g (8,5 oz)' },
+      { name: 'USB', value: 'USB 3.1 Type-C SuperSpeed' },
+      { name: 'Przycisk alarmowy', value: 'Czerwony, programowalny, z funkcją wybierania numeru alarmowego' },
+      { name: 'Hot-swap baterii', value: 'Tak — wymiana w 30 s bez wyłączania, kondensatory podtrzymujące RAM' },
+      { name: 'Temperatura pracy', value: '-10°C do +50°C' },
+      { name: 'Odporność na dezynfekcję', value: 'Ponad 30 rodzajów chusteczek dezynfekujących zatwierdzonych przez Zebra' },
+      { name: 'Mobility DNA', value: 'Professional (DataWedge, StageNow, Device Tracker, LifeGuard™)' },
+    ],
+    variants: [
+      {
+        partNumber: 'WLMT0-H50D8BBK1-A6',
+        name: 'HC50 SE4720, 8/128 GB, hot-swap, aparat przedni, healthcare',
+        priceFrom: 4200,
+        availability: 'on-order',
+        attributes: {
+          'Skaner': 'SE4720',
+          'Pamięć': '8 GB / 128 GB',
+          'Bateria': '3 800 mAh hot-swap',
+          'Aparat przedni': '5 MPx (telemedycyna)',
+          'Łączność': 'Wi-Fi 6/6E',
+          'Wersja': 'Healthcare Premium (Code Blue + obudowa medyczna)',
+        },
+      },
+    ],
+    faq: [
+      { question: 'Ile kosztuje Zebra HC50?', answer: 'Cena Zebra HC50 (WLMT0-H50D8BBK1-A6) zaczyna się od ok. 4 200 zł netto za premium konfigurację healthcare z aparatem przednim 5 MPx (telemedycyna), 8 GB RAM / 128 GB Flash, hot-swap baterii i skanerem SE4720. Premium ok. 1 250 zł vs HC20 (2 950 zł) za telemedycynę + hot-swap + 2× więcej pamięci. Wariant z 5G/LTE dla mobilnej telekonsultacji w karetce to HC55 (ok. 4 800 zł netto).' },
+      { question: 'Czym różni się Zebra HC50 od HC20?', answer: 'HC50 dodaje 4 kluczowe premium-features vs HC20: 1) Aparat przedni 5 MPx do telemedycyny (telekonsultacje wideo lekarz-pacjent), 2) 8 GB RAM / 128 GB Flash zamiast 6/64 GB (dwukrotny zasób na aplikacje graficzne — RTG, USG, DICOM viewer), 3) Hot-swap baterii — wymiana w 30 s bez wyłączania urządzenia (HC20 wymaga restartu), 4) Czujnik ciśnienia (opcja w wybranych SKU) dla aplikacji medycznych. Cena: HC50 = 4 200 zł vs HC20 = 2 950 zł. Pozostałe cechy healthcare identyczne (Code Blue, dezynfekcja, SE4720).' },
+      { question: 'Co to jest telemedycyna w HC50?', answer: 'Aparat przedni 5 MPx w HC50 umożliwia konsultacje wideo lekarz-pacjent przy łóżku oraz telekonsylia lekarz-lekarz przez sieć szpitala. Praktyczne scenariusze: 1) internista konsultuje udar mózgu z neurologiem oddalonym o 200 km, 2) anestezjolog ocenia pacjenta przed zabiegiem zdalnie, 3) lekarz dyżurujący konsultuje pacjenta na izolatce bez wchodzenia (oszczędność PPE), 4) telemedycyna domowa — opieka paliatywna w domu pacjenta. Aplikacje: Microsoft Teams Healthcare, BlueJeans Telehealth, polski TeleMedi, dedykowane systemy szpitali (np. e-konsultanci NFZ).' },
+      { question: 'Czym jest hot-swap baterii w HC50?', answer: 'Hot-swap to wymiana baterii w trakcie pracy urządzenia, bez konieczności wyłączania. W HC50 czas buforowania wynosi do 60 sekund — kondensatory podtrzymują pamięć RAM i aktywne aplikacje. Pielęgniarka w trakcie 12-godzinnej zmiany wymienia baterię między obchodami: zdejmuje rozładowaną → wkłada naładowaną w ciągu 30 s → terminal nie restartował się, sesja EHR jest aktywna, połączenie VoIP nie zostało rozłączone. Krytyczne dla intensywnej pracy klinicznej. W HC20/HC25 brak hot-swap — bateria wymaga wyłączenia urządzenia (przerwa 1-2 min).' },
+      { question: 'Czy HC50 obsługuje aplikacje DICOM (RTG, USG, TK)?', answer: 'Tak. 8 GB RAM w HC50 (vs 6 GB w HC20) zapewnia płynne działanie aplikacji DICOM viewer dostępnych na Android: m.in. RadiAnt DICOM Viewer, DroidRender, mRay, polskie wdrożenia (PixelMed, Synapse Mobility). Lekarz przy łóżku pacjenta otwiera zdjęcie RTG/USG/TK z szpitalnego PACS przez Wi-Fi 6E (do 2,4 Gbps), powiększa, analizuje. 128 GB Flash mieści offline lokalną kopię obrazów badań kluczowych pacjentów oddziału.' },
+      { question: 'Czym różni się HC50 od HC55?', answer: 'HC50 jest tylko Wi-Fi — działa wewnątrz budynku szpitala. HC55 dodaje moduł 5G FR1 (NSA/SA) + 4G LTE-A + GPS Dual-band L1+L5 + dual SIM (nano + eSIM) — działa wszędzie tam gdzie jest zasięg komórkowy. Pozostałe cechy są identyczne (aparat przedni 5 MPx, 8/128 GB, hot-swap, Code Blue). Cena: HC50 = 4 200 zł, HC55 = 4 800 zł (+600 zł za 5G/GPS). HC55 wybierz dla lekarzy karetek S/P (telekonsultacja z neurologiem podczas transportu udaru), specjalistów zespołów wyjazdowych telemedycznych, lekarzy POZ z wizytami domowymi.' },
+      { question: 'Jakie placówki w Polsce używają HC50 do telemedycyny?', answer: 'HC50 trafia do Polski w drugiej połowie 2026 wraz z premierą całej linii HC2X/HC5X (poprzednia generacja TC52-HC i TC57-HC od 2019). Wczesni adopterzy w UE: niemiecka Charité Berlin (telemedycyna onkologiczna), austriacka Wiener KAV (telekonsultacje SOR), hiszpańska Hospital Vall d\'Hebron (telerehabilitacja). Polskie placówki testujące HC50: Uniwersyteckie Centrum Kliniczne w Gdańsku, Centrum Onkologii w Warszawie, Mazowiecki Szpital Specjalistyczny w Radomiu.' },
+      { question: 'Czy HC50 ma czujnik ciśnienia atmosferycznego?', answer: 'W wybranych SKU HC50 dostępny jest barometr/altimetr (czujnik ciśnienia). Praktyczne zastosowania medyczne: 1) monitoring oddechowy w aplikacjach klinicznych przy współpracy z czujnikami zewnętrznymi, 2) lokalizacja piętra w wielokondygnacyjnych szpitalach (z GPS w HC55), 3) zapis wysokości w transporcie helikopterem HEMS (zespoły ratunkowe wojewódzkich szpitali). Standardowo czujnik wbudowany w warianty pro/premium — sprawdź konkretny PN przed zakupem.' },
+      { question: 'Czy HC50 wytrzymuje codzienną dezynfekcję chusteczkami?', answer: 'Tak — to standardowa cecha całej serii HC2X/HC5X. Tworzywa obudowy klasy medycznej są zatwierdzone przez Zebra do regularnego czyszczenia ponad 30 rodzajami chusteczek (alkohole izopropylowe i etylowe, czwartorzędowe związki amoniowe, podchloryny, nadtlenek wodoru, kwas nadoctowy, fenole). Pełna lista zatwierdzonych środków w arkuszu informacyjnym Zebra "Healthcare Mobile Computers — Disinfectant Guide". Krytyczne dla audytów JCI/CDC/akredytacji szpitala.' },
+      { question: 'Jakie akcesoria są kompatybilne z HC50?', answer: 'HC50 dzieli pełen zestaw akcesoriów z całą serią HC2X/HC5X (HC20, HC25, HC55): [bateria BTRY-HC2L5L-2XMAXB](/produkt/zebra-bateria-hc20-hc50) (3 800 mAh + BLE), [stacja 1-slot](/produkt/zebra-stacja-dokujaca-1slot-hc20-hc50), [stacja 2-slot ShareCradle](/produkt/zebra-stacja-dokujaca-2slot-hc20-hc50), [stacja 5-slot](/produkt/zebra-stacja-dokujaca-5slot-hc20-hc50), [ładowarka 4 baterii](/produkt/zebra-ladowarka-4-baterii-hc20-hc50), [klips do paska](/produkt/zebra-klips-do-noszenia-hc20-hc50), [pasek na rękę](/produkt/zebra-pasek-na-reke-hc20-hc50), [folia ekranu](/produkt/zebra-folia-ochronna-ekranu-tc22-tc27-hc20-hc50).' },
+      { question: 'Czy HC50 wymaga kontraktu OneCare?', answer: 'Rekomendowany. Zebra nie udostępnia części zamiennych zewnętrznym serwisom — naprawa poza kontraktem oznacza wysyłkę za granicę (3–6 tygodni). Dla HC50 polecamy Zebra OneCare Essential (wyższy plan niż dla HC20/HC25 ze względu na premium komponenty: aparat przedni, hot-swap, czujnik ciśnienia) — od ok. 1 350 zł netto za 3 lata. Albo OneCare Select z advance exchange (urządzenie zastępcze następnego dnia roboczego) — krytyczne gdy HC50 jest używany przez lekarzy dyżurujących i nie może być wyłączony z floty.' },
+      { question: 'Gdzie serwisować Zebra HC50 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: <a href="https://www.serwis-zebry.pl" rel="noopener">serwis-zebry.pl</a> — naprawy gwarancyjne i pogwarancyjne HC50, w tym aparatu przedniego, czujnika ciśnienia, hot-swap mechanizmu baterii, ekranów, skanerów SE4720 i obudów z oryginalnych części Zebra. Czas naprawy 3–5 dni roboczych, ekspresowo 24–48 h z dopłatą. Dla placówek z kontraktem OneCare — naprawa priorytetowa.' },
+    ],
+    applications: [
+      'Telekonsultacje wideo lekarz-pacjent przy łóżku',
+      'Telekonsylia lekarz-lekarz między oddziałami i szpitalami',
+      'Radiologia mobilna — RTG/USG/TK przy łóżku',
+      'OIOM/SOR — workflow bez przerw (hot-swap baterii)',
+      'Onkologia — telekonsultacje z onkologiem z 200 km',
+      'Izolatki zakaźne — konsultacja bez wchodzenia (oszczędność PPE)',
+      'BCMA przy intensywnej pracy klinicznej',
+      'EHR/EPR z aplikacjami graficznymi',
+      'DICOM viewer offline na 128 GB Flash',
+      'Telemedycyna oddziałowa',
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: [
+      'zebra-battery-hc2l5l',
+      'zebra-cradle-hc2l5l-1slot',
+      'zebra-cradle-hc2l5l-2slot',
+      'zebra-cradle-hc2l5l-5slot',
+      'zebra-charger-hc2l5l-4battery',
+      'zebra-clip-hc2l5l',
+      'zebra-handstrap-hc2l5l',
+      'zebra-screen-protector-tc2-hc2',
+    ],
+    downloads: [
+      { name: 'Karta katalogowa HC2X/HC5X (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/pl/spec-sheets/hc2x-hc5x-spec-sheet-pl-pl.pdf', size: 'PDF' },
+      { name: 'Strona produktu Zebra HC50 (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc50.html', size: 'Online' },
+      { name: 'Zatwierdzone środki dezynfekujące (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/support-downloads/software/printer-software/healthcare-mobile-computers.html', size: 'Online' },
+    ],
+    servicePlans: [
+      { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-HC50XX-3C00', duration: '3 lata', priceNetto: 1350 },
+      { name: 'Zebra OneCare Essential — 5 lat', partNumber: 'Z1AE-HC50XX-5C00', duration: '5 lat', priceNetto: 2250 },
+      { name: 'Zebra OneCare Select — 3 lata', partNumber: 'Z1AS-HC50XX-3C00', duration: '3 lata', priceNetto: 1850 },
+    ],
+    comparison: {
+      title: 'Porównanie: Zebra HC50 vs HC20 vs HC55',
+      models: [
+        {
+          name: 'Zebra HC50',
+          specs: {
+            'Przeznaczenie': 'Premium Wi-Fi + telemedycyna',
+            'Łączność': 'Wi-Fi 6/6E',
+            'Procesor': 'Qualcomm 5430, 2.1 GHz',
+            'Ekran': '6" FHD+ (1080×2160)',
+            'Skaner': 'SE4720 (białe podświetlenie)',
+            'Aparat przedni': '5 MPx (telemedycyna)',
+            'Aparat tylny': '16 MPx',
+            'Przycisk alarmowy': 'Tak',
+            'Hot-swap bateria': 'Tak (do 60 s)',
+            'RAM / Flash': '8/128 GB',
+            'Waga': '242 g',
+            'Cena od': '4 200 zł netto',
+          },
+        },
+        {
+          name: 'Zebra HC20',
+          specs: {
+            'Przeznaczenie': 'Entry-level Wi-Fi',
+            'Łączność': 'Wi-Fi 6/6E',
+            'Procesor': 'Qualcomm 5430, 2.1 GHz',
+            'Ekran': '6" FHD+ (1080×2160)',
+            'Skaner': 'SE4720 (białe podświetlenie)',
+            'Aparat przedni': 'Brak',
+            'Aparat tylny': '16 MPx',
+            'Przycisk alarmowy': 'Tak',
+            'Hot-swap bateria': 'Nie',
+            'RAM / Flash': '6/64 GB',
+            'Waga': '239 g',
+            'Cena od': '2 950 zł netto',
+          },
+        },
+        {
+          name: 'Zebra HC55',
+          specs: {
+            'Przeznaczenie': 'Topowy 5G + telemedycyna',
+            'Łączność': 'Wi-Fi 6/6E + 5G/LTE + GPS Dual-band',
+            'Procesor': 'Qualcomm 5430, 2.1 GHz',
+            'Ekran': '6" FHD+ (1080×2160)',
+            'Skaner': 'SE4720 (białe podświetlenie)',
+            'Aparat przedni': '5 MPx (telemedycyna)',
+            'Aparat tylny': '16 MPx',
+            'Przycisk alarmowy': 'Tak',
+            'Hot-swap bateria': 'Tak (do 60 s)',
+            'RAM / Flash': '8/128 GB',
+            'Waga': '242 g',
+            'Cena od': '4 800 zł netto',
+          },
+        },
+      ],
+    },
+    editorialReview: {
+      ratingValue: 4.8,
+      bestRating: 5,
+      reviewBody: 'Zebra HC50 to najsensowniejszy kolektor danych do służby zdrowia dla wymagających workflow medycznych — telemedycyna, radiologia mobilna, OIOM, onkologia. Aparat przedni 5 MPx + 8 GB RAM + hot-swap baterii to trzy game-changery vs HC20: telekonsultacje wideo bez osobnego smartfona, płynne DICOM viewer i ciągła praca podczas zmiany baterii. Premium ok. 1 250 zł vs HC20 zwraca się błyskawicznie w placówkach gdzie minuta przerwy lekarza kosztuje setki zł (SOR, OIOM, blok operacyjny). Minus: brak 5G — dla telekonsultacji w karetce wymagany HC55. Dla 80% workflow szpitalnych premium HC50 jest optymalnym wyborem 2026.',
+    },
+    createdAt: '2026-05-13',
+    updatedAt: '2026-05-13',
+  },
+  {
+    id: 'zebra-hc55',
+    slug: 'zebra-hc55',
+    name: 'Zebra HC55',
+    seoTitle: 'Zebra HC55 — kolektor danych do służby zdrowia 5G/LTE z telemedycyną | od 4 800 zł',
+    seoDescription: 'Zebra HC55 (WCMTB-H55D8BBK1) — topowy kolektor danych do służby zdrowia z 5G FR1 + 4G LTE-A, GPS Dual-band L1+L5, aparatem przednim 5 MPx do telemedycyny, hot-swap baterii, 8 GB RAM / 128 GB Flash, czerwonym przyciskiem Code Blue. Dla karetek S/P, telemedycyny mobilnej, transportu medycznego. Od 4 800 zł netto.',
+    shortDescription: 'Zebra HC55 — topowy kolektor danych do służby zdrowia 5G/LTE z telemedycyną i hot-swap baterii',
+    description: `Dla kogo? Zebra HC55 to topowy kolektor danych do służby zdrowia — łączy wszystkie premium features [HC50](/produkt/zebra-hc50) (aparat przedni 5 MPx do telemedycyny, hot-swap baterii, 8 GB RAM / 128 GB Flash) z łącznością 5G FR1 (NSA/SA) + 4G LTE-A + GPS Dual-band L1+L5 + dual SIM (nano + eSIM). Stworzony dla **lekarzy karetek S/P** (telekonsultacja z neurologiem podczas transportu udaru), **specjalistów telemedycznych** wykonujących wizyty domowe z konsultacją zdalną, **zespołów ratownictwa medycznego HEMS** (helikopter) i **mobilnych jednostek telemedycznych** (ambulanse stomatologiczne, mammograficzne, dializa domowa).
+
+HC55 to bezpośredni następca przestarzałej linii TC57-HC i poprzednik kolejnej generacji HC60/HC65 (planowane 2029-2030). W 2026 r. jest najmocniejszym mobilnym terminalem medycznym w klasie enterprise.
+
+**Co dodaje HC55 vs HC50**:
+
+- **5G FR1 (NSA/SA) + 4G LTE-A Gigabit** — szybkie połączenie z systemami szpitalnymi przez sieć komórkową, bez zależności od Wi-Fi placówki. Pasma w Polsce: n1/n3/n5/n7/n8/n20/n28/n38/n40/n78. Obsługa **prywatnych sieci 5G campus** (duże szpitale wdrażają je z dedykowanymi pasmami n78 3,4-3,8 GHz dla krytycznej niezawodności).
+- **Dual SIM (1 nano + 1 eSIM)** — jedna karta operatora komórkowego dla pracy zewnętrznej, druga (eSIM) dla wewnętrznej sieci 5G szpitala. Pracownik karetki przechodzi seamlessly między sieciami.
+- **GPS Dual-band L1+L5** — najwyższa dokładność lokalizacji w klasie urządzeń mobilnych (1-3 m precyzji w polskich miastach). Obsługa GPS/GLONASS/Galileo/BeiDou/QZSS. Krytyczne dla zespołów ratownictwa medycznego — dispozytor zna dokładną pozycję karetki, helikoptera HEMS, pielęgniarki POZ.
+- **VoLTE + VoIP SWB Audio** — wysokiej jakości rozmowy głosowe przez sieć komórkową (HD voice). Telekonsultacja audio + wideo działa stabilnie nawet w karetce poruszającej się 100 km/h przy zmianach masztu LTE.
+
+**Pozostałe wyróżniki (identyczne z HC50)**:
+
+- Aparat przedni 5 MPx do telekonsultacji wideo
+- Tylna kamera 16 MPx dla dokumentacji ran/stanu skóry
+- 8 GB RAM / 128 GB Flash — dla aplikacji DICOM, EHR z grafiką, telemedycyna
+- Hot-swap baterii — wymiana w 30 s bez wyłączania, kondensatory podtrzymujące RAM
+- Czujnik ciśnienia (barometr, opcja w wybranych SKU) — wysokość transportu helikopterem HEMS
+- Czerwony przycisk Code Blue programowalny
+- Obudowa odporna na 30+ chusteczek dezynfekujących
+- Skaner SE4720 1D/2D z białym podświetleniem
+- Tłumienie szumów AI dla rozmów w karetce/helikopterze
+- Workcloud Communication PBX/PTT/Enterprise Voice
+- IP68/IP65, MIL-STD-810H, upadki z 1,25 m
+
+Pakiet Mobility DNA Professional w cenie. Pełna paleta Zebra DNA z licencją Enterprise. Kompatybilność akcesoriów z całą serią HC2X/HC5X — baterie, stacje dokujące, ładowarki, klipsy.
+
+Typowe zastosowania: **karetki S/P telekonsultacja** — paramedyk transportujący pacjenta z udarem łączy się przez 5G z neurologiem szpitala docelowego; neurolog ocenia stan przez telekonferencję wideo, podejmuje decyzję o trombolizie jeszcze w karetce — oszczędza 30-45 min vs konsultacja po dotarciu do szpitala (każda minuta zmniejsza ryzyko trwałego deficytu o 1,9 mln neuronów). **HEMS (helikoptery LPR)** — telemedyczna konsultacja podczas transportu krytycznego pacjenta między szpitalami województw. **Telerehabilitacja domowa** — fizjoterapeuta odwiedza pacjenta poudarowego, prowadzi sesję z neurologiem konsultującym zdalnie. **Telekonsultanci NFZ** — lekarz POZ z wizytą domową wzywa specjalistę wątpliwej diagnozy.
+
+Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-HC2L5L-2XMAXB](/produkt/zebra-bateria-hc20-hc50), stacje dokujące, ładowarka 4-baterii, klipsy, paski na rękę, folia ekranu. Drukarka opasek pacjentów: [Zebra ZD510-HC](/produkt/zebra-zd510-hc). Wariant Wi-Fi-only z telemedycyną (bez 5G): [Zebra HC50](/produkt/zebra-hc50). Pełna dokumentacja na zebra.com i [serwis-zebry.pl](https://www.serwis-zebry.pl).`,
+    categoryId: 'terminale-mobilne',
+    subcategoryIds: ['terminale-mobilne'],
+    sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc55.html',
+    manufacturerId: 'zebra',
+    priceFrom: 4800,
+    images: [
+      '/images/products/hc55_1.png',
+      '/images/products/hc55_2.png',
+      '/images/products/hc55_3.png',
+      '/images/products/hc55_4.png',
+    ],
+    imageDescriptions: [
+      'Zebra HC55 — widok z przodu, ekran 6 cali FHD+ w obudowie medycznej, aparat przedni 5 MPx, 5G/LTE i GPS',
+      'Zebra HC55 — widok z tyłu, kamera 16 MPx, skaner SE4720, czerwony przycisk alarmowy, antena 5G/GNSS',
+      'Zebra HC55 — widok pod kątem, topowa obudowa odporna na dezynfekcję, hot-swap baterii i moduł 5G',
+      'Zebra HC55 — widok z boku, profil 12,5 mm z portem USB-C, tackami SIM (nano + eSIM) i hot-swap baterii',
+    ],
+    tags: ['healthcare'],
+    availability: 'on-order',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'System operacyjny', value: 'Android (aktualizacja do Android 16)' },
+      { name: 'Procesor', value: 'Qualcomm 5430 hex-core, 2.1 GHz' },
+      { name: 'Wyświetlacz', value: '6.0" FHD+ (1080×2160), 450 nit, Corning Gorilla Glass, obsługa w rękawiczkach' },
+      { name: 'Pamięć', value: '8 GB RAM / 128 GB Flash + microSD do 2 TB' },
+      { name: 'Skaner', value: 'SE4720 1D/2D, białe podświetlenie LED + zielony celownik' },
+      { name: 'Kamera tylna', value: '16 MPx (dokumentacja ran, etykiety, sprzęt medyczny)' },
+      { name: 'Kamera przednia', value: '5 MPx (telekonsultacje wideo, telekonsylia)' },
+      { name: 'Bateria', value: '3 800 mAh / 14,63 Wh, wymienna z hot-swap (do 60 s buforowania)' },
+      { name: 'Odporność', value: 'IP68/IP65, upadki z 1,25 m, MIL-STD-810H, tumble 500×0,5 m' },
+      { name: 'Łączność WLAN', value: 'Wi-Fi 6/6E (802.11ax) 2×2 MU-MIMO, trójzakresowy (2,4/5/6 GHz)' },
+      { name: 'Łączność WAN', value: '5G FR1 (NSA/SA) + 4G LTE-A Gigabit, VoLTE, sieci prywatne 5G' },
+      { name: 'GPS / GNSS', value: 'GPS, GLONASS, Galileo, BeiDou, QZSS, Dual-band L1+L5, a-GPS' },
+      { name: 'SIM', value: '1 nano-SIM + 1 eSIM (dual SIM)' },
+      { name: 'Bluetooth', value: 'Bluetooth 5.2 klasa 2 z BLE Beaconing' },
+      { name: 'NFC', value: 'ISO 14443 typu A i B, Mifare, FeliCa, ISO 15693' },
+      { name: 'Wymiary', value: '165 × 76,3 × 12,5 mm' },
+      { name: 'Waga', value: '242 g (8,5 oz)' },
+      { name: 'USB', value: 'USB 3.1 Type-C SuperSpeed' },
+      { name: 'Przycisk alarmowy', value: 'Czerwony, programowalny, z funkcją wybierania numeru alarmowego' },
+      { name: 'Hot-swap baterii', value: 'Tak — wymiana w 30 s bez wyłączania, kondensatory podtrzymujące RAM' },
+      { name: 'Temperatura pracy', value: '-10°C do +50°C' },
+      { name: 'Odporność na dezynfekcję', value: 'Ponad 30 rodzajów chusteczek dezynfekujących zatwierdzonych przez Zebra' },
+      { name: 'Mobility DNA', value: 'Professional (DataWedge, StageNow, Device Tracker, LifeGuard™)' },
+    ],
+    variants: [
+      {
+        partNumber: 'WCMTB-H55D8BBK1-A6',
+        name: 'HC55 SE4720, 8/128 GB, hot-swap, aparat przedni, 5G/LTE + GPS, healthcare',
+        priceFrom: 4800,
+        availability: 'on-order',
+        attributes: {
+          'Skaner': 'SE4720',
+          'Pamięć': '8 GB / 128 GB',
+          'Bateria': '3 800 mAh hot-swap',
+          'Aparat przedni': '5 MPx (telemedycyna)',
+          'Łączność': '5G FR1 + 4G LTE-A + Wi-Fi 6/6E + GPS Dual-band',
+          'SIM': '1 nano-SIM + 1 eSIM',
+          'Wersja': 'Healthcare Top (Code Blue + obudowa medyczna + telemedycyna + 5G)',
+        },
+      },
+    ],
+    faq: [
+      { question: 'Ile kosztuje Zebra HC55?', answer: 'Cena Zebra HC55 (WCMTB-H55D8BBK1-A6) zaczyna się od ok. 4 800 zł netto za topową konfigurację healthcare z 5G/LTE, GPS Dual-band L1+L5, aparatem przednim 5 MPx (telemedycyna), 8 GB RAM / 128 GB Flash, hot-swap baterii i skanerem SE4720. Premium ok. 600 zł vs HC50 (4 200 zł) za moduł 5G + GPS — wskazane dla karetek, HEMS, telekonsultantów mobilnych. To topowy model całej linii HC2X/HC5X w 2026 r.' },
+      { question: 'Czym różni się Zebra HC55 od HC50?', answer: 'HC55 to wariant 5G HC50: wszystkie premium-features HC50 są zachowane (aparat przedni 5 MPx, 8/128 GB, hot-swap baterii, czerwony przycisk Code Blue, obudowa medyczna, SE4720), plus dodany moduł WAN: 5G FR1 (NSA/SA) + 4G LTE-A Gigabit + GPS Dual-band L1+L5 + dual SIM (nano + eSIM) + VoLTE. HC50 jest tylko Wi-Fi (wewnątrz budynku szpitala), HC55 działa wszędzie tam gdzie jest zasięg komórkowy. Cena: HC55 = 4 800 zł vs HC50 = 4 200 zł (+600 zł za 5G/GPS).' },
+      { question: 'Kiedy wybrać HC55 zamiast HC50?', answer: 'HC55 jest niezbędny gdy pracownik medyczny z telemedycyną działa POZA siecią Wi-Fi placówki: 1) **paramedyk karetki S/P** — telekonsultacja z neurologiem podczas transportu udaru (oszczędza 30-45 min vs konsultacja po dotarciu), 2) **HEMS (helikoptery LPR)** — transport krytycznych pacjentów między szpitalami województw, 3) **telerehabilitacja domowa** — fizjoterapeuta z konsultacją zdalną u pacjenta poudarowego, 4) **mobilne jednostki telemedyczne** — ambulanse stomatologiczne, mammograficzne, 5) **lekarz POZ** wykonujący telekonsultację z domu pacjenta. Dla telemedycyny wewnątrz szpitala wystarczy HC50.' },
+      { question: 'Czy HC55 obsługuje prywatne sieci 5G szpitala?', answer: 'Tak, HC55 obsługuje 5G FR1 w trybach NSA (Non-Standalone) i SA (Standalone). Większe polskie szpitale w 2026 r. wdrażają prywatne sieci 5G campus z dedykowanymi pasmami n78 (3,4-3,8 GHz) i krytyczną niezawodnością wymagającą dla aplikacji medycznych. HC55 łączy się z prywatną siecią szpitala wewnątrz budynku przez eSIM (zaprogramowany cyfrowo), a poza budynkiem przełącza się automatycznie na publicznego operatora komórkowego (Orange, Play, Plus, T-Mobile) przez fizyczną kartę nano-SIM. Bezprzełamywany handover zapewnia ciągłość telekonsultacji.' },
+      { question: 'Czy HC55 zastępuje smartfon, pager, radioterminal i GPS?', answer: 'Tak. HC55 z Workcloud Communication zastępuje 4 osobne urządzenia: 1) smartfon (VoLTE + VoIP SWB Audio dla rozmów wysokiej jakości), 2) pager (push-to-talk z dyżurką szpitala przez Wi-Fi/5G), 3) radioterminal/walkie-talkie (PTT Pro między pracownikami zespołu wyjazdowego), 4) GPS tracker (Dual-band L1+L5 z rejestracją tras). Plus skaner kodów + EHR + telemedycyna wideo. Eliminuje konieczność wożenia 4-5 osobnych urządzeń w karetce lub torbie zespołu HEMS — i ich kosztów (typowo 8 000-15 000 zł na osobę).' },
+      { question: 'Jak GPS w HC55 działa w trudnych warunkach (gęsta zabudowa, wnętrza)?', answer: 'Dwuzakresowy GNSS L1+L5 w HC55 jest najwyższej klasy GPS w urządzeniach mobilnych. L1+L5 eliminuje problem odbić sygnału w gęstej zabudowie miejskiej — typowa precyzja 1-3 m w Warszawie/Krakowie/Wrocławiu vs 5-10 m w GPS jednozakresowym (smartfony konsumenckie). Obsługa wszystkich konstelacji: GPS (US), GLONASS (RU), Galileo (EU), BeiDou (CN), QZSS (JP). a-GPS przyspiesza pierwsze fix do kilku sekund po włączeniu. Wewnątrz budynków szpitala — wsparcie BLE Beaconing dla lokalizacji w pomieszczeniach.' },
+      { question: 'Czy HC55 nadaje się do telekonsultacji w karetce 100 km/h?', answer: 'Tak, to jeden z głównych use case HC55. Połączenie wideo HD przez 5G FR1 (NSA/SA) jest stabilne przy zmianach masztu LTE/5G dzięki: 1) bezprzełamywanemu handover między masztami (operator decyduje), 2) buforowaniu wideo do 2 sekund (kompensacja krótkich przerw), 3) tłumieniu szumów AI (eliminacja hałasu silnika i syreny), 4) VoLTE EVS (Enhanced Voice Services) z HD voice nawet przy słabym zasięgu. Pomyślnie testowane w prędkościach do 130 km/h w niemieckim systemie ratownictwa medycznego.' },
+      { question: 'Czy HC55 ma czujnik ciśnienia atmosferycznego dla HEMS?', answer: 'W wybranych SKU HC55 dostępny jest barometr/altimetr. Praktyczne zastosowanie dla zespołów ratownictwa medycznego helikopterowych (HEMS, LPR — Lotnicze Pogotowie Ratunkowe): rejestracja wysokości transportu pacjenta, monitoring ciśnienia kabinowego (krytyczne dla pacjentów z PDP — Pneumothorax), automatyczna kalibracja parametrów oddechowych respiratora. Sprawdź konkretny PN przed zakupem.' },
+      { question: 'Czy HC55 wytrzymuje codzienną dezynfekcję chusteczkami?', answer: 'Tak — to standardowa cecha całej serii HC2X/HC5X. Tworzywa obudowy klasy medycznej są zatwierdzone przez Zebra do regularnego czyszczenia ponad 30 rodzajami chusteczek (alkohole, czwartorzędowe związki amoniowe, podchloryny, nadtlenek wodoru, kwas nadoctowy, fenole). Pełna lista zatwierdzonych środków w arkuszu informacyjnym Zebra "Healthcare Mobile Computers — Disinfectant Guide". Krytyczne dla audytów JCI/CDC/akredytacji szpitala oraz dla zespołów ratunkowych narażonych na materiał biologiczny pacjentów.' },
+      { question: 'Jakie akcesoria są kompatybilne z HC55?', answer: 'HC55 dzieli pełen zestaw akcesoriów z całą serią HC2X/HC5X (HC20, HC25, HC50): [bateria BTRY-HC2L5L-2XMAXB](/produkt/zebra-bateria-hc20-hc50) (3 800 mAh + BLE), [stacja 1-slot](/produkt/zebra-stacja-dokujaca-1slot-hc20-hc50), [stacja 2-slot ShareCradle](/produkt/zebra-stacja-dokujaca-2slot-hc20-hc50), [stacja 5-slot](/produkt/zebra-stacja-dokujaca-5slot-hc20-hc50), [ładowarka 4 baterii](/produkt/zebra-ladowarka-4-baterii-hc20-hc50), [klips do paska](/produkt/zebra-klips-do-noszenia-hc20-hc50), [pasek na rękę](/produkt/zebra-pasek-na-reke-hc20-hc50), [folia ekranu](/produkt/zebra-folia-ochronna-ekranu-tc22-tc27-hc20-hc50). Akcesorium specyficzne dla zespołów wyjazdowych: stacja dokująca samochodowa (dostępna osobno na zamówienie).' },
+      { question: 'Czy HC55 wymaga kontraktu OneCare?', answer: 'Bezwzględnie tak. HC55 jest topowym modelem z największą liczbą komponentów premium (5G modem, antena GNSS Dual-band, aparat przedni, hot-swap, czujnik ciśnienia). Naprawa poza kontraktem oznacza wysyłkę za granicę (3–6 tygodni przerwy) — krytyczny problem dla karetki która nie może czekać tygodniami. Dla HC55 polecamy minimum Zebra OneCare Select — od ok. 2 100 zł netto za 3 lata. Obejmuje advance exchange (urządzenie zastępcze następnego dnia roboczego), naprawy uszkodzeń mechanicznych, wymianę baterii po 3 latach, wsparcie techniczne 24/7.' },
+      { question: 'Gdzie serwisować Zebra HC55 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: <a href="https://www.serwis-zebry.pl" rel="noopener">serwis-zebry.pl</a> — naprawy gwarancyjne i pogwarancyjne HC55, w tym modułu 5G/LTE, anteny GNSS Dual-band, aparatu przedniego, czujnika ciśnienia, hot-swap mechanizmu baterii, ekranów, skanerów SE4720 i obudów z oryginalnych części Zebra. Czas naprawy 3–5 dni roboczych, ekspresowo 24–48 h z dopłatą. Dla placówek z kontraktem OneCare Select — naprawa priorytetowa z advance exchange.' },
+    ],
+    applications: [
+      'Karetki S/P telekonsultacja z neurologiem (udar)',
+      'HEMS — helikoptery Lotnicznego Pogotowia Ratunkowego',
+      'Transport krytycznych pacjentów między szpitalami',
+      'Telerehabilitacja domowa z konsultacją zdalną',
+      'Mobilne jednostki telemedyczne (ambulanse stomato/mammo)',
+      'Telekonsultanci NFZ z wizytami domowymi',
+      'Dializa domowa z monitoringiem zdalnym',
+      'BCMA + EHR w mieszkaniu pacjenta',
+      'GPS tracking floty karetek i zespołów wyjazdowych',
+      'PBX/PTT + telekonsultacja wideo na jednym urządzeniu',
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: [
+      'zebra-battery-hc2l5l',
+      'zebra-cradle-hc2l5l-1slot',
+      'zebra-cradle-hc2l5l-2slot',
+      'zebra-cradle-hc2l5l-5slot',
+      'zebra-charger-hc2l5l-4battery',
+      'zebra-clip-hc2l5l',
+      'zebra-handstrap-hc2l5l',
+      'zebra-screen-protector-tc2-hc2',
+    ],
+    downloads: [
+      { name: 'Karta katalogowa HC2X/HC5X (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/pl/spec-sheets/hc2x-hc5x-spec-sheet-pl-pl.pdf', size: 'PDF' },
+      { name: 'Strona produktu Zebra HC55 (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc55.html', size: 'Online' },
+      { name: 'Zatwierdzone środki dezynfekujące (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/support-downloads/software/printer-software/healthcare-mobile-computers.html', size: 'Online' },
+    ],
+    servicePlans: [
+      { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-HC55XX-3C00', duration: '3 lata', priceNetto: 1550 },
+      { name: 'Zebra OneCare Essential — 5 lat', partNumber: 'Z1AE-HC55XX-5C00', duration: '5 lat', priceNetto: 2580 },
+      { name: 'Zebra OneCare Select — 3 lata', partNumber: 'Z1AS-HC55XX-3C00', duration: '3 lata', priceNetto: 2100 },
+    ],
+    comparison: {
+      title: 'Porównanie: Zebra HC55 vs HC50 vs HC25',
+      models: [
+        {
+          name: 'Zebra HC55',
+          specs: {
+            'Przeznaczenie': 'Topowy — 5G + telemedycyna',
+            'Łączność': 'Wi-Fi 6/6E + 5G/LTE + GPS Dual-band',
+            'Procesor': 'Qualcomm 5430, 2.1 GHz',
+            'Ekran': '6" FHD+ (1080×2160)',
+            'Skaner': 'SE4720 (białe podświetlenie)',
+            'Aparat przedni': '5 MPx (telemedycyna)',
+            'Aparat tylny': '16 MPx',
+            'Hot-swap bateria': 'Tak (do 60 s)',
+            'SIM': '1 nano-SIM + 1 eSIM',
+            'RAM / Flash': '8/128 GB',
+            'Waga': '242 g',
+            'Cena od': '4 800 zł netto',
+          },
+        },
+        {
+          name: 'Zebra HC50',
+          specs: {
+            'Przeznaczenie': 'Premium Wi-Fi + telemedycyna',
+            'Łączność': 'Wi-Fi 6/6E',
+            'Procesor': 'Qualcomm 5430, 2.1 GHz',
+            'Ekran': '6" FHD+ (1080×2160)',
+            'Skaner': 'SE4720 (białe podświetlenie)',
+            'Aparat przedni': '5 MPx (telemedycyna)',
+            'Aparat tylny': '16 MPx',
+            'Hot-swap bateria': 'Tak (do 60 s)',
+            'SIM': 'Brak',
+            'RAM / Flash': '8/128 GB',
+            'Waga': '242 g',
+            'Cena od': '4 200 zł netto',
+          },
+        },
+        {
+          name: 'Zebra HC25',
+          specs: {
+            'Przeznaczenie': 'Opieka terenowa (5G + GPS)',
+            'Łączność': 'Wi-Fi 6/6E + 5G/LTE + GPS Dual-band',
+            'Procesor': 'Qualcomm 5430, 2.1 GHz',
+            'Ekran': '6" FHD+ (1080×2160)',
+            'Skaner': 'SE4720 (białe podświetlenie)',
+            'Aparat przedni': 'Brak',
+            'Aparat tylny': '16 MPx',
+            'Hot-swap bateria': 'Nie',
+            'SIM': '1 nano-SIM + 1 eSIM',
+            'RAM / Flash': '6/64 GB',
+            'Waga': '239 g',
+            'Cena od': '3 350 zł netto',
+          },
+        },
+      ],
+    },
+    editorialReview: {
+      ratingValue: 4.9,
+      bestRating: 5,
+      reviewBody: 'Zebra HC55 to topowy kolektor danych do służby zdrowia 2026 — łączy wszystkie premium-features HC50 z 5G/LTE i GPS Dual-band L1+L5. Game-changer dla telemedycyny mobilnej: paramedyk karetki S/P transportujący pacjenta z udarem może uruchomić telekonsultację z neurologiem szpitala docelowego, neurolog ocenia stan przez wideo i decyduje o trombolizie jeszcze w karetce — oszczędność 30-45 min vs decyzja po dotarciu, każda minuta to 1,9 mln neuronów. Hot-swap baterii oznacza że terminal pracuje 24h bez restartów — krytyczne dla zespołów HEMS i karetek nocnych. Premium 600 zł vs HC50 zwraca się w pierwszym miesiącu eksploatacji. Minus: cena startowa 4 800 zł netto jest wysoka — zarezerwowane dla najbardziej wymagających zastosowań. Dla typowej telemedycyny wewnątrz szpitala HC50 jest tańszą alternatywą.',
+    },
+    createdAt: '2026-05-13',
+    updatedAt: '2026-05-13',
+  },
+  {
     id: 'zebra-tc27',
     slug: 'zebra-tc27',
     name: 'Zebra TC27',
