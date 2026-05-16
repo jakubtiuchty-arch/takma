@@ -7557,9 +7557,9 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     id: 'zebra-zt411',
     slug: 'zebra-zt411',
     name: 'Zebra ZT411',
-    shortDescription: 'Zebra ZT411 — przemysłowa drukarka etykiet 4" z ekranem dotykowym 4,3", następca ZT410. 203/300/600 dpi, do 356 mm/s, RFID opcja, Link-OS',
-    seoTitle: 'Zebra ZT411 — drukarka etykiet 600 dpi RFID | od 5 078 zł',
-    seoDescription: 'Zebra ZT411 — przemysłowa 4" RFID UHF dla produkcji, logistyki i pharma. 600 dpi, linerless. ZT41142-T0E0000Z od 5 078 zł netto.',
+    shortDescription: 'Zebra ZT411 — przemysłowa drukarka etykiet 4" z ekranem dotykowym 4,3", następca ZT410. 203/300/600 dpi, do 356 mm/s, Link-OS',
+    seoTitle: 'Zebra ZT411 - drukarka etykiet | od 5 078 zł | TAKMA',
+    seoDescription: 'Zebra ZT411 — przemysłowa drukarka etykiet 4" dla produkcji, logistyki i pharma. 203/300/600 dpi, linerless. ZT41142-T0E0000Z od 5 078 zł netto.',
     description: `Zebra ZT411 to najlepszy wybór dla zakładów produkcyjnych i centrów logistycznych wymagających wytrzymałej drukarki etykiet przemysłowej klasy z rozdzielczością 203/300/600 dpi.
 
 Zebra ZT411 to przemysłowa drukarka etykiet klasy mid-range z kolorowym ekranem dotykowym 4,3" — bezpośredni następca legendarnego modelu Zebra ZT410. Zaprojektowana do intensywnej pracy w magazynach, centrach dystrybucyjnych i na liniach produkcyjnych, ZT411 łączy wytrzymałą metalową konstrukcję z intuicyjnym interfejsem dotykowym i platformą zarządzania Link-OS. Dostępna w trzech rozdzielczościach: 203 dpi (standard logistyczny, 356 mm/s), 300 dpi (drobne kody 2D i etykiety cenowe, 254 mm/s) i 600 dpi (mikro-etykiety elektroniczne i jubilerskie, 152 mm/s).
