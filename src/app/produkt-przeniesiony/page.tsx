@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { ArrowRight, Phone, Mail, Search } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Produkt przeniesiony | TAKMA',
+  title: 'Produkt przeniesiony',
   description: 'Przebudowujemy stronę takma.com.pl. Produkty dostępne — skontaktuj się z nami po ofertę.',
   robots: 'noindex, follow',
 }

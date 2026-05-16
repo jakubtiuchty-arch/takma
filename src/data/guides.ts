@@ -11512,7 +11512,7 @@ export const guides: Guide[] = [
 {
   slug: 'terminale-m3-mobile-porownanie',
   title: 'Terminale M3 Mobile — porównanie wszystkich modeli 2026',
-  seoTitle: 'Terminale M3 Mobile — porównanie SM30, US30, US20, SM24 | TAKMA',
+  seoTitle: 'Terminale M3 Mobile — porównanie SM30, US30, US20, SM24',
   seoDescription: 'Porównanie wszystkich terminali M3 Mobile: SM30 z AI i 5G, US30/US20 z klawiaturą, SM24/SM25 z 6" ekranem. Tabele specyfikacji, ceny, zastosowania.',
   excerpt: 'Kompletne porównanie 8 terminali M3 Mobile — od flagowego SM30 z AI 12 TOPS po budżetowy UL20. Z cenami netto i tabelami specyfikacji.',
   category: 'porownanie',
@@ -11930,7 +11930,7 @@ export const guides: Guide[] = [
 {
   slug: 'm3-speed-care-kontrakty-serwisowe',
   title: 'M3 Speed Care — kontrakty serwisowe terminali M3 Mobile',
-  seoTitle: 'M3 Speed Care — kontrakty serwisowe i gwarancja M3 Mobile | TAKMA',
+  seoTitle: 'M3 Speed Care — kontrakty serwisowe i gwarancja M3 Mobile',
   seoDescription: 'M3 Speed Care — pakiety serwisowe 1/3/5 lat dla terminali M3 Mobile. Porównanie z Zebra OneCare. Czas naprawy, ochrona przypadkowa, TCO. TAKMA — partner M3 w Polsce.',
   excerpt: 'Kompletny przewodnik po kontraktach serwisowych M3 Speed Care — 3 pakiety, tabela porównawcza z Zebra OneCare, kalkulacja TCO dla flot i proces naprawy.',
   category: 'serwisowy',

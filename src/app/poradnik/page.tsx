@@ -6,7 +6,7 @@ import { guides } from '@/data/guides'
 import GuidesGrid from './GuidesGrid'
 
 export const metadata: Metadata = {
-  title: 'Poradniki — drukarki etykiet, skanery, terminale | TAKMA',
+  title: 'Poradniki — drukarki etykiet, skanery, terminale',
   description: 'Eksperckie poradniki, porównania i przewodniki po drukarkach etykiet, skanerach kodów kreskowych i terminalach mobilnych. Dane z ponad 500 wdrożeń.',
   openGraph: {
     title: 'Poradniki — drukarki etykiet, skanery, terminale | TAKMA',

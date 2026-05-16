@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Polityka prywatności | TAKMA',
+  title: 'Polityka prywatności',
   description:
     'Polityka prywatności i ochrony danych osobowych w serwisie takma.com.pl. Informacje o przetwarzaniu danych, cookies i prawach użytkowników.',
 }

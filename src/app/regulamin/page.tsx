@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Regulamin sklepu | TAKMA',
+  title: 'Regulamin sklepu',
   description:
     'Regulamin sklepu internetowego takma.com.pl. Warunki sprzedaży B2B, zamówień, dostaw, płatności, gwarancji i reklamacji. TAKMA Tadeusz Tiuchty, Wrocław.',
   robots: 'index, follow',

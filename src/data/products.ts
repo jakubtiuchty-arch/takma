@@ -175,7 +175,7 @@ export const categories: Category[] = [
     slug: 'terminale-mobilne',
     name: 'Terminale mobilne',
     description: 'Wytrzymałe komputery mobilne i kolektory danych Android do magazynu, logistyki i produkcji',
-    seoTitle: 'Terminale mobilne — Zebra, Honeywell, Datalogic, M3, Newland | porównanie 41 modeli | TAKMA',
+    seoTitle: 'Terminale mobilne — Zebra, Honeywell, Datalogic, M3, Newland | 41 modeli',
     seoDescription: 'Terminale mobilne enterprise od 5 producentów: Zebra (TC22, TC53, MC9400), Honeywell (CT70, CK67), Datalogic (Memor 30/35, Skorpio X5), M3 Mobile (SM30, UL30), Newland. 41 modeli IP65/IP67/IP68 do magazynu, logistyki i retail. Ceny netto od 2 207 zł.',
     longDescription: 'Profesjonalne terminale mobilne (kolektory danych) klasy enterprise z systemem Android — porównanie 41 modeli od 5 producentów: [Zebra](/terminale-mobilne-zebra) (TC22, TC27, TC53, TC58, MC3400, MC9400, EM45), [Honeywell](/terminale-honeywell) (CT70, CT32, CK67), [Datalogic](/terminale-datalogic) (Memor 30/35, Skorpio X5), [M3 Mobile](/terminale-m3-mobile) (SM30, UL30, US30), [Newland](/terminale-newland) (N7, MT93). Wytrzymałe (IP65–IP68), z czytnikiem 1D/2D, do magazynu, logistyki, produkcji i retail. Ceny netto od 2 207 zł.',
     icon: 'smartphone',
@@ -197,7 +197,7 @@ export const categories: Category[] = [
     slug: 'tablety-przemyslowe',
     name: 'Tablety przemysłowe',
     description: 'Wytrzymałe tablety przemysłowe Android i Windows do magazynu, produkcji, chłodni, służby zdrowia i pracy w terenie. Zebra, Getac, Honeywell.',
-    seoTitle: 'Tablety przemysłowe rugged Android i Windows od 3 250 zł | TAKMA',
+    seoTitle: 'Tablety przemysłowe rugged Android i Windows od 3 250 zł',
     seoDescription: 'Tablety Zebra ET40/ET45/ET60/ET65, Getac F110/T800, Honeywell RT10A — IP65-IP68, ekrany 8-12″, do magazynu, chłodni i terenu od 3 250 zł netto. Porównanie modeli, TCO 3 lata.',
     longDescription: 'Tablety przemysłowe (rugged tablets) to mobilne komputery z hartowanym ekranem dotykowym, klasą ochrony IP65–IP68, odpornością na upadki z 1,2–1,8 m i certyfikatem MIL-STD-810H. W ofercie TAKMA tablety trzech wiodących producentów: Zebra Technologies (seria ET — ET40, ET45, ET60, ET65, ET401, ET80), Getac (F110, T800, UX10, ZX80) i Honeywell (RT10A, EDA10A). Systemy: Android 13–15 (AOSP i GMS) oraz Windows 11 Pro/IoT Enterprise. Ekrany od 8 do 12,2 cala z jasnością 500–1000 nit do pracy na słońcu, pojemnościowe z obsługą w rękawicach i w deszczu. Zastosowania: magazyny WMS, linie produkcyjne MES, chłodnie i mroźnie (-30°C z podgrzewanym ekranem), inspekcje terenowe, floty pojazdów, opieka zdrowotna (z dezynfekcją i certyfikatem medycznym). Opcje: czytniki kodów 1D/2D, RFID UHF, skanery paszportów, Hot Swap baterii, stacje dokujące do pojazdów, klawiatury odpinane. TAKMA jako autoryzowany partner oferuje doradztwo, konfigurację MDM, staging flotowy i serwis pogwarancyjny (serwis-zebry.pl).',
     icon: 'tablet',
@@ -891,7 +891,7 @@ const desktopPrinters: Product[] = [
     slug: 'zebra-zd421t',
     name: 'Zebra ZD421t',
     shortDescription: 'Zebra ZD421t — drukarka termotransferowa biurkowa 4", następca GK420t',
-    seoTitle: 'Zebra ZD421t — drukarka etykiet termotransferowa | od 1 649 zł ',
+    seoTitle: 'Zebra ZD421t - biurkowa drukarka etykiet | od 1 649 zł',
     seoDescription: 'Zebra ZD421t — biurkowa drukarka etykiet termotransferowa 4", następca GK420t. Ribbon do 300 m, 203/300 dpi, 152 mm/s, Wi-Fi, MCS. Od 1 649 zł netto. TAKMA.',
     description: `Zebra ZD421t to biurkowa drukarka etykiet termotransferowa 4 cale — następca popularnej GK420t. Drukuje z taśmą barwiącą (ribbonem), co zapewnia trwałe wydruki odporne na UV, wilgoć i chemikalia. 203/300 dpi, do 152 mm/s. Modularna konstrukcja MCS. Idealna do logistyki, produkcji, etykiet produktowych i oznaczeń trwałych.
 
@@ -1227,7 +1227,7 @@ Szukasz tańszej wersji bez ribbona? Sprawdź [Zebra ZD421d](/produkt/zebra-zd42
     slug: 'zebra-zd421d',
     name: 'Zebra ZD421d',
     shortDescription: 'Zebra ZD421d — biurkowa drukarka termiczna 4" direct thermal, następca GK420d. 203/300 dpi, do 152 mm/s, modułowa architektura MCS',
-    seoTitle: 'Zebra ZD421d — drukarka etykiet termiczna 4" | od 1 472 zł ',
+    seoTitle: 'Zebra ZD421d - biurkowa drukarka etykiet | od 1 472 zł',
     seoDescription: 'Zebra ZD421d — biurkowa drukarka etykiet termiczna 4", następca GK420d. Bez ribbona, 203/300 dpi, 152 mm/s, Wi-Fi, MCS. Od 1 472 zł netto. TAKMA — autoryzowany partner Zebra.',
     description: `Zebra ZD421d to biurkowa drukarka etykiet termiczna (direct thermal) 4 cale — następca popularnej GK420d. Nie wymaga taśmy barwiącej (ribbona), drukuje do 152 mm/s w rozdzielczości 203 lub 300 dpi. Modularna konstrukcja MCS pozwala na rozbudowę o Wi-Fi, Bluetooth i Ethernet. Idealna do e-commerce, etykiet kurierskich i magazynów przy wolumenie do 3 000 etykiet/dzień.
 
@@ -1494,7 +1494,7 @@ Szukasz wersji z drukiem trwałym (termotransferowym)? Sprawdź [Zebra ZD421t](/
     slug: 'zebra-zd621t',
     name: 'Zebra ZD621t',
     shortDescription: 'Zebra ZD621t — flagowa drukarka biurkowa 4" z kolorowym LCD, najszybsza w klasie (203 mm/s), obcinacz/odklejak/RFID',
-    seoTitle: 'Zebra ZD621t — drukarka etykiet LCD 4,3" RFID | od 2 264 zł',
+    seoTitle: 'Zebra ZD621t - biurkowa drukarka etykiet | od 2 264 zł',
     seoDescription: 'Zebra ZD621t — flagowa biurkowa 4" TT dla produkcji, pharma i retail. LCD 4,3", RFID, 203/300 dpi. ZD6A042-30EF00EZ od 2 264 zł netto.',
     description: `Zebra ZD621t to najlepszy wybór dla firm drukujących ponad 500 etykiet dziennie, które potrzebują najszybszej biurkowej drukarki termotransferowej z kolorowym ekranem LCD i wbudowanym Ethernet.
 
@@ -1911,7 +1911,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd621d',
     name: 'Zebra ZD621d',
     shortDescription: 'Zebra ZD621d — najszybsza biurkowa drukarka termiczna Zebra (203 mm/s) z opcjonalnym LCD 4,3", drukiem linerless i modularnym MCS, następca ZD620d i GX420d',
-    seoTitle: 'Zebra ZD621d — drukarka termiczna DT, LCD, linerless ',
+    seoTitle: 'Zebra ZD621d - biurkowa drukarka etykiet | od 1 943 zł',
     seoDescription: 'Zebra ZD621d — drukarka termiczna DT 4" dla logistyki i retail. LCD 4,3", linerless, 300 dpi. Drukarka etykiet Zebra ZD621d, drukarka Zebra ZD621d, ZD621d Zebra, drukarka do etykiet wysyłkowych, drukarka etykiet do magazynu. Od 1 943 zł netto. PN: ZD6A042-D0EF00EZ, ZD6A042-D0EL02EZ, ZD6A142-D0EF00EZ.',
     description: `Zebra ZD621d to najlepszy wybór dla firm e-commerce i centrów logistycznych drukujących ponad 500 etykiet dziennie, które potrzebują najszybszej biurkowej drukarki termicznej z kolorowym LCD i obsługą linerless.
 
@@ -2265,7 +2265,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd411d',
     name: 'Zebra ZD411d',
     shortDescription: 'Zebra ZD411d — kompaktowa drukarka termiczna 2" direct thermal, następca ZD410 i LP2824. 203/300 dpi, do 152 mm/s, modułowa architektura MCS, Wi-Fi 6',
-    seoTitle: 'Drukarka etykiet Zebra ZD411d — kompaktowa 2" healthcare | od 1 237 zł',
+    seoTitle: 'Zebra ZD411d - biurkowa drukarka etykiet | od 1 237 zł',
     seoDescription: 'Zebra ZD411d — kompaktowa DT 2" dla aptek, laboratoriów i healthcare. Wi-Fi 6, 203/300 dpi. ZD4A022-D0EM00EZ od 1 237 zł netto.',
     description: `Zebra ZD411d to najlepszy wybór dla aptek, laboratoriów i jubilerów, którzy potrzebują kompaktowej 2-calowej drukarki termicznej do druku małych etykiet z kodami kreskowymi.
 
@@ -2511,7 +2511,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd411t',
     name: 'Zebra ZD411t',
     shortDescription: 'Zebra ZD411t — kompaktowa drukarka termotransferowa 2", następca TLP2824. 203/300 dpi, do 152 mm/s, trwałe etykiety jubilerskie i przemysłowe, Wi-Fi 6',
-    seoTitle: 'Drukarka etykiet Zebra ZD411t — termotransferowa 2" lab | od 1 686 zł',
+    seoTitle: 'Zebra ZD411t - biurkowa drukarka etykiet | od 1 686 zł',
     seoDescription: 'Zebra ZD411t — TT 2" dla laboratoriów, biżuterii i pharma. MCS, Wi-Fi 6, 203/300 dpi. ZD4A022-T0EM00EZ od 1 686 zł netto.',
     description: `Zebra ZD411t to najlepszy wybór dla jubilerów, producentów elektroniki i firm telekomunikacyjnych, które potrzebują kompaktowej drukarki termotransferowej 2" do trwałych małych etykiet z taśmą żywiczną.
 
@@ -2785,7 +2785,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd220d',
     name: 'Zebra ZD220d',
     shortDescription: 'Zebra ZD220d — najtańsza 4-calowa drukarka termiczna Zebra, druk direct thermal bez taśmy barwiącej, idealnie do etykiet kurierskich i wysyłkowych',
-    seoTitle: 'Zebra ZD220d — najtańsza drukarka termiczna USB | od 649 zł',
+    seoTitle: 'Zebra ZD220d - biurkowa drukarka etykiet | od 649 zł',
     seoDescription: 'Zebra ZD220d — najtańsza DT 4" USB dla e-commerce, kurierów i małych firm. 203 dpi, plug&play. ZD22042-D0EG00EZ od 649 zł netto.',
     description: `Zebra ZD220d to najlepszy wybór dla małych firm i startupów szukających niezawodnej biurkowej drukarki etykiet termicznych w przystępnej cenie.
 
@@ -2993,7 +2993,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd230d',
     name: 'Zebra ZD230d',
     shortDescription: 'Zebra ZD230d — drukarka termiczna 4" direct thermal, następca ZD220d z szybszym drukiem (152 mm/s), opcją gilotyny, odklejaka, Ethernet, Bluetooth i Wi-Fi',
-    seoTitle: 'Drukarka etykiet Zebra ZD230d — do paczek i kurierów | od 1 087 zł',
+    seoTitle: 'Zebra ZD230d - biurkowa drukarka etykiet | od 1 087 zł',
     seoDescription: 'Zebra ZD230d — DT 4" do etykiet kurierskich InPost, DPD, DHL i Allegro. Ethernet, 152 mm/s. ZD23042-D0EG00EZ od 1 087 zł netto.',
     description: `Zebra ZD230d to biurkowa drukarka etykiet termicznych (direct thermal) 4" produkowana przez Zebra Technologies — następca popularnego modelu ZD220d z szybszym drukiem (152 mm/s), opcją Ethernet, Wi-Fi, gilotyny i odklejaka. Idealna do etykiet kurierskich InPost, DPD, DHL w e-commerce i logistyce.
 
@@ -3259,7 +3259,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd220t',
     name: 'Zebra ZD220t',
     shortDescription: 'Zebra ZD220t — najtańsza 4-calowa drukarka etykiet termotransferowa Zebra, następca GC420t',
-    seoTitle: 'Zebra ZD220t — najtańsza drukarka termotransferowa USB | od 639 zł',
+    seoTitle: 'Zebra ZD220t - biurkowa drukarka etykiet | od 639 zł',
     seoDescription: 'Zebra ZD220t — najtańsza TT 4" USB dla biur, produkcji i retail. 203 dpi, ribbon 74 m. ZD22042-T0EG00EZ od 639 zł netto.',
     description: `Zebra ZD220t to najlepszy wybór dla małych firm szukających najtańszej drukarki termotransferowej Zebra do trwałych etykiet produktowych i magazynowych.
 
@@ -3523,7 +3523,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zd230t',
     name: 'Zebra ZD230t',
     shortDescription: 'Zebra ZD230t — drukarka termotransferowa 4", następca ZD220t z szybszym drukiem (152 mm/s), taśmą 300 m, opcją Ethernet, Bluetooth i Wi-Fi',
-    seoTitle: 'Drukarka etykiet Zebra ZD230t — termotransferowa Ethernet | od 1 135 zł',
+    seoTitle: 'Zebra ZD230t - biurkowa drukarka etykiet | od 1 135 zł',
     seoDescription: 'Zebra ZD230t — TT 4" Ethernet dla biur, magazynów i produkcji. 203 dpi, ribbon 300 m. ZD23042-30EG00EZ od 1 135 zł netto.',
     description: `Zebra ZD230t to najlepszy wybór dla firm szukających szybkiej drukarki termotransferowej z taśmą 300 m i opcją Ethernet w klasie cenowej poniżej 1500 zł.
 
@@ -7558,7 +7558,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
     slug: 'zebra-zt411',
     name: 'Zebra ZT411',
     shortDescription: 'Zebra ZT411 — przemysłowa drukarka etykiet 4" z ekranem dotykowym 4,3", następca ZT410. 203/300/600 dpi, do 356 mm/s, Link-OS',
-    seoTitle: 'Zebra ZT411 - drukarka etykiet | od 5 078 zł | TAKMA',
+    seoTitle: 'Zebra ZT411 - drukarka etykiet | od 5 078 zł',
     seoDescription: 'Zebra ZT411 — przemysłowa drukarka etykiet 4" dla produkcji, logistyki i pharma. 203/300/600 dpi, linerless. ZT41142-T0E0000Z od 5 078 zł netto.',
     description: `Zebra ZT411 to najlepszy wybór dla zakładów produkcyjnych i centrów logistycznych wymagających wytrzymałej drukarki etykiet przemysłowej klasy z rozdzielczością 203/300/600 dpi.
 
@@ -56497,7 +56497,7 @@ export const brandCategories: BrandCategory[] = [
     manufacturerId: 'zebra',
     categoryId: 'drukarki-etykiet',
     name: 'Drukarki etykiet Zebra',
-    seoTitle: 'Drukarki etykiet Zebra ZD/ZT/ZQ od 639 zł netto | TAKMA',
+    seoTitle: 'Drukarki etykiet Zebra ZD/ZT/ZQ od 639 zł netto',
     seoDescription: 'Drukarki Zebra ZD220, ZD421, ZD621, ZT411, ZT610, ZQ521 i inne — od 639 zł netto. Autoryzowany Premier Partner Zebra, serwis w Polsce. Ceny, porównanie TCO, doradztwo.',
     longDescription: 'Kompletna oferta drukarek etykiet Zebra Technologies w jednym miejscu — od najtańszej biurkowej ZD220 (od 639 zł netto) po flagową przemysłową ZT620 do druku 24/7. Zebra to światowy lider rynku drukarek etykiet z udziałem ponad 50% w segmencie enterprise. TAKMA jako autoryzowany Premier Solution Partner Zebra oferuje pełne wsparcie: dobór drukarki do zastosowania, konfigurację, integrację z systemami WMS/ERP oraz serwis gwarancyjny i pogwarancyjny (serwis-zebry.pl). Wszystkie drukarki Zebra obsługują protokół Link-OS do zdalnego zarządzania flotą urządzeń.',
     faq: [
@@ -56534,7 +56534,7 @@ export const brandCategories: BrandCategory[] = [
     manufacturerId: 'zebra',
     categoryId: 'skanery-kodow-kreskowych',
     name: 'Skanery kodów kreskowych Zebra',
-    seoTitle: 'Skanery Zebra — 1D/2D, ceny od 352 zł netto | TAKMA',
+    seoTitle: 'Skanery Zebra — 1D/2D, ceny od 352 zł netto',
     seoDescription: 'Skanery kodów kreskowych Zebra DS2208, DS2278, DS3678, DS4608, LI2208 — 1D/2D, przewodowe i Bluetooth od 352 zł netto. Gwarancja 5 lat. Autoryzowany Premier Partner.',
     longDescription: 'Kompletna oferta skanerów kodów kreskowych Zebra Technologies — od ekonomicznego DS2208 (od 352 zł netto) po ultra-wytrzymałe skanery przemysłowe DS3608. Zebra oferuje skanery we wszystkich formach: ręczne przewodowe (USB), bezprzewodowe (Bluetooth/Wi-Fi), prezentacyjne hands-free do POS, oraz wbudowane do kiosków. Wszystkie skanery Zebra czytają kody 1D i 2D (QR, Data Matrix, PDF417) z ekranów smartfonów. TAKMA jako autoryzowany partner Zebra oferuje doradztwo w doborze skanera do zastosowania, konfigurację i serwis.',
     faq: [
