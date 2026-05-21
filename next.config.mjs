@@ -201,6 +201,15 @@ const nextConfig = {
       { source: '/downloads/m3-sm24-specification.pdf', destination: '/downloads/m3-mobile-sm24-specification.pdf', permanent: true },
 
       // =====================================================
+      // ETYKIETY TERMICZNE — stare per-rozmiar slugi → nowa seria z ?pn=
+      // (refaktor 2026-05: 4 stare pojedyncze produkty → 292-wariantowa seria Z-Select 2000D)
+      // =====================================================
+      { source: '/produkt/zebra-etykiety-termiczne-z-select-2000d-32x25', destination: '/produkt/zebra-z-select-2000d?pn=800261-105', permanent: true },
+      { source: '/produkt/zebra-etykiety-termiczne-z-select-2000d-57x32', destination: '/produkt/zebra-z-select-2000d?pn=800262-125', permanent: true },
+      { source: '/produkt/zebra-etykiety-termiczne-z-select-2000d-76x51', destination: '/produkt/zebra-z-select-2000d?pn=800263-205', permanent: true },
+      { source: '/produkt/zebra-etykiety-termiczne-z-select-2000d-102x38', destination: '/produkt/zebra-z-select-2000d?pn=800264-155', permanent: true },
+
+      // =====================================================
       // CATCH-ALL: pozostałe stare produkty → strona przebudowa
       // Honeywell, Citizen, Brother, TSC, Unitech, M3, Custom,
       // Elo, Newland, Sewoo, Novimag + wszystkie akcesoria
