@@ -14,40 +14,43 @@ export default function ContextAvailabilityBadge({
 }: {
   staticAvailability: 'available' | 'on-order' | 'unavailable'
 }) {
-  const { stockData, loading, partNumbers } = useSmartPrice()
+  const { stockData, loading, displayedPn, partNumbers } = useSmartPrice()
 
   // Podczas ładowania — pokaż statyczną dostępność
   if (loading) {
     return <Badge variant={config[staticAvailability].variant}>{config[staticAvailability].label}</Badge>
   }
 
-  // Sprawdź live dane — czy JAKIKOLWIEK wariant jest dostępny
   let liveAvailability: 'available' | 'on-order' | 'unavailable' = staticAvailability
-  let anyFound = false
 
-  for (const pn of partNumbers) {
-    const stock = stockData.get(pn)
+  // ── PRIORYTET: status WYBRANEGO wariantu (displayedPn z URL ?pn= lub auto)
+  // Synchronizujemy badge ze stock-info pod cenę — żeby nie było "Dostępny" + "Chwilowo niedostępny".
+  if (displayedPn) {
+    const stock = stockData.get(displayedPn)
     if (stock?.found) {
-      anyFound = true
-      if (stock.totalStock > 0) {
-        liveAvailability = 'available'
-        break
+      if (stock.totalStock > 0) liveAvailability = 'available'
+      else if (stock.inDelivery > 0) liveAvailability = 'on-order'
+      else liveAvailability = 'unavailable'
+    }
+    // Jeśli API nie zna PNu → zostań przy staticAvailability
+  } else if (partNumbers.length > 0) {
+    // Brak displayedPn — fallback do logiki "any variant available"
+    let anyFound = false
+    for (const pn of partNumbers) {
+      const stock = stockData.get(pn)
+      if (stock?.found) {
+        anyFound = true
+        if (stock.totalStock > 0) { liveAvailability = 'available'; break }
       }
     }
+    if (anyFound && liveAvailability !== 'available') {
+      const anyInDelivery = partNumbers.some(pn => {
+        const stock = stockData.get(pn)
+        return stock?.found && stock.inDelivery > 0
+      })
+      liveAvailability = anyInDelivery ? 'on-order' : 'unavailable'
+    }
   }
-
-  // Jeśli API znalazło PNy ale żaden nie ma stocku → niedostępny
-  if (anyFound && liveAvailability !== 'available') {
-    // Sprawdź czy coś jest w dostawie
-    const anyInDelivery = partNumbers.some(pn => {
-      const stock = stockData.get(pn)
-      return stock?.found && stock.inDelivery > 0
-    })
-    liveAvailability = anyInDelivery ? 'on-order' : 'unavailable'
-  }
-
-  // Jeśli API nie znalazło żadnego PNu → fallback na statyczną
-  // (nie pokazuj "niedostępny" gdy API po prostu nie zna PNu)
 
   const c = config[liveAvailability]
   return <Badge variant={c.variant}>{c.label}</Badge>

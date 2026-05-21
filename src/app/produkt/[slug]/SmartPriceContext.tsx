@@ -1,6 +1,7 @@
 'use client'
 
 import { createContext, useContext, useMemo, useState, useEffect } from 'react'
+import { useSearchParams } from 'next/navigation'
 import { Product } from '@/data/products'
 import type { StockInfo as StockResult } from '@/lib/ingram'
 
@@ -30,6 +31,10 @@ export function useSmartPrice() {
 }
 
 export function SmartPriceProvider({ product, children }: { product: Product; children: React.ReactNode }) {
+  // ?pn=... — gdy klient przyszedł z karty konkretnego wariantu, pokazujemy TEN wariant
+  const searchParams = useSearchParams()
+  const urlPn = searchParams?.get('pn') ?? null
+
   const allVariants = useMemo(() => {
     if (product.variants && product.variants.length > 0) {
       return product.variants
@@ -106,6 +111,23 @@ export function SmartPriceProvider({ product, children }: { product: Product; ch
       return { displayedPn: undefined, price: product.priceFrom ?? undefined, isFallback: false, loading, stockData, partNumbers, variantName: undefined }
     }
 
+    // ── PRIORYTET URL ?pn=... — klient wybrał konkretny wariant z karty na /serie/[slug]
+    // Pokazujemy TEN wariant niezależnie od ceny/stock-u (zgodność z H1 / meta / breadcrumbs).
+    const urlVariant = urlPn ? allVariants.find(v => v.partNumber === urlPn) : null
+    if (urlVariant) {
+      const stock = stockData.get(urlVariant.partNumber)
+      const livePrice = (stock?.found && stock?.price) ? stock.price : null
+      return {
+        displayedPn: urlVariant.partNumber,
+        price: livePrice ?? urlVariant.price ?? product.priceFrom ?? undefined,
+        isFallback: false,
+        loading,
+        stockData,
+        partNumbers,
+        variantName: urlVariant.name || undefined,
+      }
+    }
+
     const anyFound = partNumbers.some(pn => stockData.get(pn)?.found)
 
     // Podczas ładowania — pokaż najtańszy ze statyczną ceną
@@ -176,7 +198,7 @@ export function SmartPriceProvider({ product, children }: { product: Product; ch
       partNumbers,
       variantName: best.name || undefined,
     }
-  }, [allVariants, stockData, loading, partNumbers, product.priceFrom])
+  }, [allVariants, stockData, loading, partNumbers, product.priceFrom, urlPn])
 
   return (
     <SmartPriceContext.Provider value={state}>

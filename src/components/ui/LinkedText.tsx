@@ -8,7 +8,8 @@ function BoldText({ text }: { text: string }) {
       {parts.map((part, i) => {
         const boldMatch = part.match(/^\*\*([^*]+)\*\*$/)
         if (boldMatch) {
-          return <strong key={i} className="font-semibold text-gray-900">{boldMatch[1]}</strong>
+          // Bez forced color — dziedziczy kolor parent (działa na jasnym i ciemnym tle)
+          return <strong key={i} className="font-semibold">{boldMatch[1]}</strong>
         }
         return <span key={i}>{part}</span>
       })}

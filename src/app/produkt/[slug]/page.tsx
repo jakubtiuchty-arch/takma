@@ -31,14 +31,24 @@ import ComparisonTable from './ComparisonTable'
 import SpecsAccordion from './SpecsAccordion'
 import { getBrandBySlug as getServiceBrandBySlug } from '@/app/serwis/_data/brands'
 import ViewItemTracker from './ViewItemTracker'
+import { thermalLabelSeries } from '@/data/thermal-label-series'
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}
+
+/** Wyciągnięcie wariantu z searchParams (?pn=...) — używane do dynamic title/desc/canonical */
+function pickVariant(product: ReturnType<typeof getProductBySlug>, pn: string | string[] | undefined) {
+  if (!product?.variants?.length || !pn) return undefined
+  const partNumber = Array.isArray(pn) ? pn[0] : pn
+  return product.variants.find(v => v.partNumber === partNumber)
 }
 
 // Generowanie metadanych
-export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
+export async function generateMetadata({ params, searchParams }: ProductPageProps): Promise<Metadata> {
   const { slug } = await params
+  const { pn } = await searchParams
   const product = getProductBySlug(slug)
 
   if (!product) {
@@ -49,10 +59,17 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
   const category = getCategoryById(product.categoryId)
   const manufacturer = getManufacturerById(product.manufacturerId)
+  const variant = pickVariant(product, pn)
+  const variantSize = variant?.attributes['Rozmiar']
+  const variantPN = variant?.partNumber
 
-  // SEO: dedykowany tytuł lub fallback na dynamiczny
-  const title = product.seoTitle
+  // SEO: dynamic title gdy wybrany wariant (rozmiar + PN), inaczej dedykowany lub fallback
+  const variantSuffix = variant ? ` ${variantSize ?? ''}${variantPN ? ` — ${variantPN}` : ''}`.trim() : ''
+  const baseTitle = product.seoTitle
     ?? `${product.name}${category ? ` - ${category.name}` : ''}${product.priceFrom ? ` | ${product.priceFrom.toLocaleString('pl-PL')} zł` : ''}`
+  const title = variant
+    ? `${product.name}${variantSize ? ` ${variantSize}` : ''}${variantPN ? ` (${variantPN})` : ''}`
+    : baseTitle
 
   // Smart truncation — ends at last sentence boundary (.) before 160 chars
   const smartTruncate = (text: string, maxLen: number): string => {
@@ -64,16 +81,26 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     return lastSpace > 0 ? truncated.slice(0, lastSpace) + '…' : truncated
   }
 
-  // SEO: dedykowany opis lub fallback na dynamiczny
+  // SEO: dedykowany opis lub fallback na dynamiczny — uzupełniony rozmiarem wariantu
   const priceText = product.priceFrom ? ` Od ${product.priceFrom.toLocaleString('pl-PL')} zł netto.` : ''
-  const variantsText = product.variants?.length ? ` ${product.variants.length} wariantów.` : ''
-  const fallbackDesc = `${product.shortDescription}.${priceText}${variantsText} Doradztwo techniczne i serwis.`
-  const metaDescription = product.seoDescription ?? smartTruncate(fallbackDesc, 160)
+  const variantsText = !variant && product.variants?.length ? ` ${product.variants.length} wariantów.` : ''
+  const variantPrice = variant?.priceFrom ? ` Cena od ${variant.priceFrom.toLocaleString('pl-PL')} zł netto.` : priceText
+  const variantPrefix = variant
+    ? `${product.name}${variantSize ? ` w rozmiarze ${variantSize}` : ''}${variantPN ? ` (PN: ${variantPN})` : ''}. `
+    : ''
+  const fallbackDesc = variant
+    ? `${variantPrefix}${product.shortDescription}.${variantPrice} Doradztwo techniczne i serwis.`
+    : `${product.shortDescription}.${priceText}${variantsText} Doradztwo techniczne i serwis.`
+  const metaDescription = !variant && product.seoDescription
+    ? product.seoDescription
+    : smartTruncate(fallbackDesc, 160)
 
   // OG description — more engaging for social media
-  const ogDescription = product.priceFrom
-    ? `${product.shortDescription}. Od ${product.priceFrom.toLocaleString('pl-PL')} zł netto. Sprawdź warianty i zamów w TAKMA.`
-    : `${product.shortDescription}. Sprawdź i zamów w TAKMA.`
+  const ogDescription = variant
+    ? `${variantPrefix}${product.shortDescription}.${variantPrice} Zamów w TAKMA.`
+    : product.priceFrom
+      ? `${product.shortDescription}. Od ${product.priceFrom.toLocaleString('pl-PL')} zł netto. Sprawdź warianty i zamów w TAKMA.`
+      : `${product.shortDescription}. Sprawdź i zamów w TAKMA.`
 
   // OG image — pełny URL z domeną (nie relative path)
   const ogImage = product.images[0] ? `https://www.takma.com.pl${product.images[0]}` : undefined
@@ -87,8 +114,10 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
       type: 'website',
       locale: 'pl_PL',
       siteName: 'TAKMA',
-      images: ogImage ? [{ url: ogImage, width: 1200, height: 630, alt: product.name }] : undefined,
-      url: `https://www.takma.com.pl/produkt/${product.slug}`,
+      images: ogImage ? [{ url: ogImage, width: 1200, height: 630, alt: variant ? `${product.name}${variantSize ? ` ${variantSize}` : ''}` : product.name }] : undefined,
+      url: variant
+        ? `https://www.takma.com.pl/produkt/${product.slug}?pn=${encodeURIComponent(variant.partNumber)}`
+        : `https://www.takma.com.pl/produkt/${product.slug}`,
     },
     other: {
       ...(product.priceFrom ? {
@@ -104,6 +133,10 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     },
     alternates: {
       canonical: `https://www.takma.com.pl/produkt/${product.slug}`,
+      languages: {
+        'pl-PL': `https://www.takma.com.pl/produkt/${product.slug}`,
+        'x-default': `https://www.takma.com.pl/produkt/${product.slug}`,
+      },
     },
   }
 }
@@ -115,18 +148,26 @@ export async function generateStaticParams() {
   }))
 }
 
-export default async function ProductPage({ params }: ProductPageProps) {
+export default async function ProductPage({ params, searchParams }: ProductPageProps) {
   const { slug } = await params
+  const { pn } = await searchParams
   const product = getProductBySlug(slug)
 
   if (!product) {
     notFound()
   }
 
+  // Wybrany wariant z ?pn=... — wpływa na H1, badge, cenę i specyfikację
+  const selectedVariant = pickVariant(product, pn)
+  const selectedSize = selectedVariant?.attributes['Rozmiar']
+
   const category = getCategoryById(product.categoryId)
   const manufacturer = getManufacturerById(product.manufacturerId)
   const subcats = getSubcategoriesForProduct(product)
   const primarySubcategory = subcats[0] ?? null
+  // Etykiety termiczne — wybór wariantu odbywa się na /etykiety-termiczne/serie/[slug], tu nie pokazujemy
+  const isThermalLabel = product.subcategoryIds?.includes('etykiety-termiczne') ?? false
+  const showVariants = !!(product.variants && product.variants.length > 0 && !isThermalLabel)
 
   const availabilityConfig = {
     available: { label: 'Dostępny', variant: 'success' as const, description: 'Produkt dostępny od ręki' },
@@ -490,6 +531,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               <div className="mb-4">
                 <h1 className="text-2xl xs:text-3xl lg:text-4xl font-bold text-gray-900">
                   {product.seoH1 || product.name}
+                  {selectedSize && <span className="text-gray-700"> {selectedSize}</span>}
                 </h1>
                 {(primarySubcategory || category) && (
                   <p className="text-sm xs:text-base lg:text-lg font-medium text-gray-500 mt-1">
@@ -517,13 +559,13 @@ export default async function ProductPage({ params }: ProductPageProps) {
               <ContextAvailabilityBadge staticAvailability={product.availability} />
             </div>
 
-            {/* Variants link */}
-            {product.variants && product.variants.length > 0 && (
+            {/* Variants link — ukryte dla etykiet termicznych (wybór wariantu na /serie/) */}
+            {showVariants && (
               <a
                 href="#warianty"
                 className="inline-flex items-center gap-1 text-sm font-semibold text-gray-900 underline underline-offset-4 decoration-primary-400 hover:decoration-primary-600 transition-colors mb-1"
               >
-                {product.variants.length} {product.variants.length === 1 ? 'wariant' : product.variants.length < 5 ? 'warianty' : 'wariantów'} do wyboru ↓
+                {product.variants!.length} {product.variants!.length === 1 ? 'wariant' : product.variants!.length < 5 ? 'warianty' : 'wariantów'} do wyboru ↓
               </a>
             )}
 
@@ -547,7 +589,62 @@ export default async function ProductPage({ params }: ProductPageProps) {
             )}
 
             {/* Key specs */}
-            {product.keyParams ? (
+            {isThermalLabel && selectedVariant ? (() => {
+              // Parsowanie Rozmiar np. "100×30 mm" → { width: 100, height: 30 }
+              const rozmiarRaw = selectedVariant.attributes['Rozmiar'] ?? ''
+              const sizeMatch = rozmiarRaw.match(/(\d+(?:[.,]\d+)?)\s*[×x]\s*(\d+(?:[.,]\d+)?)/i)
+              const szerokosc = sizeMatch ? `${sizeMatch[1].replace(',', '.')} mm` : null
+              const wysokosc = sizeMatch ? `${sizeMatch[2].replace(',', '.')} mm` : null
+              const gilza = selectedVariant.attributes['Rdzeń (gilza)']
+              // Z spec produktu: Materiał, Klej
+              const materialSpec = product.specifications.find(s => s.name === 'Materiał')?.value
+              const klejSpec = product.specifications.find(s => s.name === 'Klej')?.value
+              const typDrukuSpec = product.specifications.find(s => s.name === 'Typ druku')?.value
+
+              return (
+                <div className="mt-8 pt-8 border-t border-gray-200">
+                  <h2 className="font-semibold text-gray-900 mb-4">Kluczowe parametry</h2>
+                  <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {szerokosc && (
+                      <div>
+                        <dt className="text-sm text-gray-500">Szerokość etykiety</dt>
+                        <dd className="font-medium text-gray-900">{szerokosc}</dd>
+                      </div>
+                    )}
+                    {wysokosc && (
+                      <div>
+                        <dt className="text-sm text-gray-500">Wysokość etykiety</dt>
+                        <dd className="font-medium text-gray-900">{wysokosc}</dd>
+                      </div>
+                    )}
+                    {gilza && (
+                      <div>
+                        <dt className="text-sm text-gray-500">Rdzeń (gilza)</dt>
+                        <dd className="font-medium text-gray-900">{gilza}</dd>
+                      </div>
+                    )}
+                    {typDrukuSpec && (
+                      <div>
+                        <dt className="text-sm text-gray-500">Typ druku</dt>
+                        <dd className="font-medium text-gray-900">{typDrukuSpec}</dd>
+                      </div>
+                    )}
+                    {materialSpec && (
+                      <div>
+                        <dt className="text-sm text-gray-500">Materiał</dt>
+                        <dd className="font-medium text-gray-900">{materialSpec}</dd>
+                      </div>
+                    )}
+                    {klejSpec && (
+                      <div>
+                        <dt className="text-sm text-gray-500">Klej</dt>
+                        <dd className="font-medium text-gray-900 break-words">{klejSpec}</dd>
+                      </div>
+                    )}
+                  </dl>
+                </div>
+              )
+            })() : product.keyParams ? (
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <h2 className="font-semibold text-gray-900 mb-4">Kluczowe parametry</h2>
                 <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -594,7 +691,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
         <div className="mt-12 lg:mt-16">
           <div className="border-b border-gray-200">
             <nav className="flex gap-1 sm:gap-6 -mb-px overflow-x-auto scrollbar-hide">
-              {product.variants && product.variants.length > 0 && (
+              {showVariants && (
                 <a
                   href="#warianty"
                   className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-primary-600 border-b-2 border-primary-600 whitespace-nowrap"
@@ -708,45 +805,166 @@ export default async function ProductPage({ params }: ProductPageProps) {
           </div>
 
           <div className="py-8 lg:py-12 space-y-12 lg:space-y-16">
-            {/* Warianty */}
-            {product.variants && product.variants.length > 0 && (
+            {/* Warianty — ukryte dla etykiet termicznych (wybór wariantu odbywa się na /etykiety-termiczne/serie/[slug]) */}
+            {showVariants && (
               <VariantsTable
                 productSlug={product.slug}
                 productName={product.name}
                 productImage={product.images[0]}
-                variants={product.variants}
+                variants={product.variants!}
                 variantAttributeTooltips={product.variantAttributeTooltips}
                 manufacturerId={product.manufacturerId}
               />
             )}
 
-            {/* Opis */}
+            {/* Opis — dla etykiet termicznych bogaty content z thermal-label-series */}
             <section id="opis">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Opis produktu</h2>
-              <div className="prose prose-gray max-w-none">
-                {product.description.split('\n\n').map((paragraph, i) => {
-                  // Heading support: ## Title → <h3>
-                  const headingMatch = paragraph.match(/^## (.+)$/)
+              {(() => {
+                const series = isThermalLabel
+                  ? thermalLabelSeries.find(s => s.productId === product.id)
+                  : null
+
+                if (series) {
+                  return (
+                    <div className="prose prose-gray max-w-none text-[15px] leading-relaxed">
+                      {/* Intro */}
+                      <p className="text-gray-700 mb-6 text-base"><LinkedText text={series.heroIntro} /></p>
+
+                      {/* Kluczowe cechy — bullet list */}
+                      {series.keyHighlights.length > 0 && (
+                        <>
+                          <h3 className="text-lg font-bold text-gray-900 mt-8 mb-3">Kluczowe cechy</h3>
+                          <ul className="list-disc pl-5 space-y-1.5 mb-4 text-gray-700 marker:text-gray-400">
+                            {series.keyHighlights.map((h, i) => (
+                              <li key={i}>{h}</li>
+                            ))}
+                          </ul>
+                        </>
+                      )}
+
+                      {/* Sekcje opisowe — H3 + akapity (z obsługą list bullet '- item' i markdown **bold').
+                          Pomijamy 'Kiedy NIE używać X' bo mamy lepszą bullet listę z notRecommendedFor poniżej */}
+                      {series.sections
+                        .filter(sec => !sec.heading.toLowerCase().startsWith('kiedy nie'))
+                        .map((sec, i) => (
+                        <div key={i}>
+                          <h3 className="text-lg font-bold text-gray-900 mt-8 mb-3">{sec.heading}</h3>
+                          {sec.content.split('\n\n').map((para, j) => {
+                            const trimmed = para.trim()
+                            if (trimmed.split('\n').every(l => l.trim().startsWith('- '))) {
+                              const items = trimmed.split('\n').map(l => l.replace(/^\s*-\s*/, ''))
+                              return (
+                                <ul key={j} className="list-disc pl-5 space-y-1.5 mb-4 text-gray-700 marker:text-gray-400">
+                                  {items.map((item, k) => (
+                                    <li key={k}><LinkedText text={item} /></li>
+                                  ))}
+                                </ul>
+                              )
+                            }
+                            return (
+                              <p key={j} className="text-gray-700 mb-4"><LinkedText text={para} /></p>
+                            )
+                          })}
+                        </div>
+                      ))}
+
+                      {/* Zastosowania — lista */}
+                      {series.applications.length > 0 && (
+                        <>
+                          <h3 className="text-lg font-bold text-gray-900 mt-8 mb-3">Główne zastosowania</h3>
+                          <ul className="list-disc pl-5 space-y-1.5 mb-4 text-gray-700 marker:text-gray-400">
+                            {series.applications.map((app, i) => (
+                              <li key={i}>{app}</li>
+                            ))}
+                          </ul>
+                        </>
+                      )}
+
+                      {/* Kiedy NIE używać */}
+                      {series.notRecommendedFor.length > 0 && (
+                        <>
+                          <h3 className="text-lg font-bold text-gray-900 mt-8 mb-3">Kiedy NIE używać</h3>
+                          <ul className="list-disc pl-5 space-y-1.5 mb-4 text-gray-700 marker:text-gray-400">
+                            {series.notRecommendedFor.map((nr, i) => (
+                              <li key={i}>{nr}</li>
+                            ))}
+                          </ul>
+                        </>
+                      )}
+
+                      {/* Atesty — gdy są */}
+                      {series.certifications.length > 0 && (
+                        <>
+                          <h3 className="text-lg font-bold text-gray-900 mt-8 mb-3">Atesty i certyfikaty</h3>
+                          <ul className="list-disc pl-5 space-y-2 mb-4 text-gray-700 marker:text-gray-400">
+                            {series.certifications.map((c, i) => (
+                              <li key={i}>
+                                <strong className="text-gray-900">{c.name}</strong> — {c.description}
+                              </li>
+                            ))}
+                          </ul>
+                        </>
+                      )}
+
+                      {/* Link do pełnego landingu serii */}
+                      <p className="mt-6 text-sm">
+                        <Link
+                          href={`/etykiety-termiczne/serie/${series.slug}`}
+                          className="text-primary-600 font-semibold hover:underline"
+                        >
+                          Zobacz pełny przewodnik po serii {series.title} →
+                        </Link>
+                      </p>
+                    </div>
+                  )
+                }
+
+                // Fallback — standardowy renderer dla pozostałych produktów
+                return (
+                  <div className="prose prose-gray max-w-none text-[15px] leading-relaxed">
+                    {product.description.split('\n\n').map((paragraph, i) => {
+                  const trimmed = paragraph.trim()
+
+                  // ## Heading → <h3>
+                  const headingMatch = trimmed.match(/^## (.+)$/)
                   if (headingMatch) {
-                    return <h3 key={i} className="text-xl font-bold text-gray-900 mt-6 mb-2">{headingMatch[1]}</h3>
+                    return <h3 key={i} className="text-lg font-bold text-gray-900 mt-8 mb-3">{headingMatch[1]}</h3>
                   }
+
+                  // Lista bullet: każda linia zaczyna się od "- " → <ul>
+                  if (trimmed.split('\n').every(l => l.trim().startsWith('- '))) {
+                    const items = trimmed.split('\n').map(l => l.replace(/^\s*-\s*/, ''))
+                    return (
+                      <ul key={i} className="list-disc pl-5 space-y-1.5 mb-4 text-gray-700 marker:text-gray-400">
+                        {items.map((item, j) => (
+                          <li key={j}><LinkedText text={item} /></li>
+                        ))}
+                      </ul>
+                    )
+                  }
+
+                  // Cross-link do sekcji akcesoriów
                   const linkMatch = paragraph.match(/(.*sekcji )(Powiązane produkty|Akcesoria)( poniżej.*)/)
                   if (linkMatch) {
                     return (
-                      <p key={i} className="text-gray-600 mb-4 sm:text-justify">
+                      <p key={i} className="text-gray-700 mb-4">
                         {linkMatch[1]}
                         <a href="#akcesoria" className="text-primary-600 font-semibold hover:underline">{linkMatch[2]}</a>
                         {linkMatch[3]}
                       </p>
                     )
                   }
+
                   return (
-                    <p key={i} className="text-gray-600 mb-4 sm:text-justify">
+                    <p key={i} className="text-gray-700 mb-4">
                       <LinkedText text={paragraph} />
                     </p>
                   )
                 })}
-              </div>
+                  </div>
+                )
+              })()}
               <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500">
                 <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-gray-100 rounded text-gray-600 font-medium">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">

@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import { products, subcategories, brandCategories } from '@/data/products'
 import { guides } from '@/data/guides'
 import { industryPages } from '@/data/industry-content'
+import { thermalLabelSeries } from '@/data/thermal-label-series'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.takma.com.pl'
@@ -62,5 +63,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: lastUpdated,
   }))
 
-  return [...staticPages, ...brandPillarPages, ...subcategoryPages, ...brandCategoryPages, ...productPages, ...guidePages, ...industryLandingPages]
+  // Landing pages dla serii etykiet termicznych — /etykiety-termiczne/serie/[slug]
+  const thermalSeriesPages: MetadataRoute.Sitemap = thermalLabelSeries.map((s) => ({
+    url: `${baseUrl}/etykiety-termiczne/serie/${s.slug}`,
+    lastModified: new Date('2026-05-18'),
+  }))
+
+  return [...staticPages, ...brandPillarPages, ...subcategoryPages, ...brandCategoryPages, ...productPages, ...guidePages, ...industryLandingPages, ...thermalSeriesPages]
 }

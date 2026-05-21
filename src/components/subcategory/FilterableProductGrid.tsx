@@ -1,10 +1,10 @@
 'use client'
 
-import { useState, useMemo, useCallback } from 'react'
+import { useState, useMemo, useCallback, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { Product } from '@/data/products'
 import ProductGrid from '@/components/product/ProductGrid'
-import { FilterIcon, CloseIcon, ChevronDownIcon } from '@/components/ui/Icons'
+import { FilterIcon, CloseIcon, ChevronDownIcon, HelpCircleIcon } from '@/components/ui/Icons'
 
 export interface FilterDefinition {
   specKey: string
@@ -14,6 +14,72 @@ export interface FilterDefinition {
   transform?: 'extract-width' | 'extract-height'
   /** checkbox (domyślny, multi-select) lub dropdown (single-select) */
   style?: 'checkbox' | 'dropdown'
+  /** Łopatologiczne wyjaśnienie dla klienta — pojawia się w tooltipie po najechaniu na ikonę ? */
+  description?: string
+}
+
+/** Ikona ? z tooltipem — fixed position żeby uciekać przed overflow-hidden kontenera */
+function FilterInfoTooltip({ text }: { text: string }) {
+  const [show, setShow] = useState(false)
+  const [coords, setCoords] = useState<{ top: number; left: number } | null>(null)
+  const btnRef = useRef<HTMLButtonElement>(null)
+
+  const updateCoords = useCallback(() => {
+    if (!btnRef.current) return
+    const rect = btnRef.current.getBoundingClientRect()
+    // Centruj horyzontalnie na ikonie, pozycjonuj ABOVE
+    const left = Math.min(
+      Math.max(rect.left + rect.width / 2, 140), // nie wyjedź za lewą krawędź
+      window.innerWidth - 140, // nie wyjedź za prawą
+    )
+    setCoords({ top: rect.top - 8, left })
+  }, [])
+
+  // Zamknij na scroll / resize
+  useEffect(() => {
+    if (!show) return
+    const close = () => setShow(false)
+    window.addEventListener('scroll', close, true)
+    window.addEventListener('resize', close)
+    return () => {
+      window.removeEventListener('scroll', close, true)
+      window.removeEventListener('resize', close)
+    }
+  }, [show])
+
+  return (
+    <>
+      <button
+        ref={btnRef}
+        type="button"
+        aria-label="Pokaż wyjaśnienie filtra"
+        onMouseEnter={() => { updateCoords(); setShow(true) }}
+        onMouseLeave={() => setShow(false)}
+        onFocus={() => { updateCoords(); setShow(true) }}
+        onBlur={() => setShow(false)}
+        onClick={e => { e.stopPropagation(); e.preventDefault() }}
+        className="inline-flex items-center justify-center text-gray-400 hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-300 rounded-full transition-colors"
+      >
+        <HelpCircleIcon size={14} />
+      </button>
+      {show && coords && (
+        <span
+          role="tooltip"
+          style={{
+            position: 'fixed',
+            top: coords.top,
+            left: coords.left,
+            transform: 'translate(-50%, -100%)',
+            zIndex: 9999,
+          }}
+          className="w-64 p-2.5 rounded-md bg-gray-900 text-white text-xs font-normal leading-relaxed shadow-lg normal-case tracking-normal pointer-events-none"
+        >
+          {text}
+          <span className="absolute left-1/2 -translate-x-1/2 top-full w-0 h-0 border-x-4 border-x-transparent border-t-4 border-t-gray-900" />
+        </span>
+      )}
+    </>
+  )
 }
 
 export interface CategoryNavItem {
@@ -259,8 +325,9 @@ export default function FilterableProductGrid({
               const isActive = currentValue !== ''
               return (
                 <div key={id}>
-                  <span className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1.5 block">
+                  <span className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1.5 flex items-center gap-1.5">
                     {filter.label}
+                    {filter.description && <FilterInfoTooltip text={filter.description} />}
                   </span>
                   <select
                     value={currentValue}
@@ -291,6 +358,7 @@ export default function FilterableProductGrid({
                 >
                   <span className="flex items-center gap-1.5">
                     {filter.label}
+                    {filter.description && <FilterInfoTooltip text={filter.description} />}
                     {selected.size > 0 && (
                       <span className="bg-primary-600 text-white text-[10px] rounded-full w-4 h-4 flex items-center justify-center leading-none">
                         {selected.size}
