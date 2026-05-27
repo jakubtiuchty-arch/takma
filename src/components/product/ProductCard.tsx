@@ -23,6 +23,19 @@ function getPartNumbers(product: Product): string[] {
   return pnSpec ? [pnSpec.value] : []
 }
 
+/**
+ * Link do karty produktu. Dla serii etykiet termicznych (subcategoryId 'etykiety-termiczne')
+ * kierujemy do variant browsera /etykiety-termiczne/serie/[slug] zamiast strony parent — klient
+ * od razu widzi wszystkie 200+ wariantów rozmiarowych z filtrem szerokość/wysokość/gilza.
+ */
+function getProductHref(product: Product): string {
+  if (product.subcategoryIds?.includes('etykiety-termiczne')) {
+    const seriesSlug = product.slug.replace(/^zebra-/, '')
+    return `/etykiety-termiczne/serie/${seriesSlug}`
+  }
+  return `/produkt/${product.slug}`
+}
+
 export default function ProductCard({ product, variant = 'grid', showDualButtons = false }: ProductCardProps) {
   const { addItem, isInCart } = useCartStore()
   const [mounted, setMounted] = useState(false)
@@ -37,6 +50,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   const manufacturer = getManufacturerById(product.manufacturerId)
   const inRFQ = mounted ? isInCart(product.id) : false
   const hasRealImage = product.images.length > 0 && !product.images[0].includes('placeholder')
+  const productHref = getProductHref(product)
 
   // Live dostępność z Ingram — tylko gdy Ingram faktycznie znalazł PN-y (found: true)
   const anyFound = !stockLoading && partNumbers.length > 0 && stockData.size > 0 &&
@@ -100,7 +114,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
     return (
       <article className="card p-4 flex gap-4">
         <Link
-          href={`/produkt/${product.slug}`}
+          href={productHref}
           className="w-24 h-24 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center group relative overflow-hidden"
         >
           {hasRealImage ? (
@@ -115,7 +129,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
             {manufacturer && (
               <span className="text-xs text-gray-400 uppercase tracking-wide">{manufacturer.name}</span>
             )}
-            <Link href={`/produkt/${product.slug}`}>
+            <Link href={productHref}>
               <h3 className="font-semibold text-gray-900 hover:text-primary-600 transition-colors truncate">
                 {product.name}
               </h3>
@@ -139,7 +153,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
               <span className="text-sm text-gray-500">Cena na zapytanie</span>
             )}
             <Link
-              href={`/produkt/${product.slug}`}
+              href={productHref}
               className="inline-flex items-center text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-lg px-3 py-1.5 transition-colors whitespace-nowrap"
             >
               Zobacz więcej
@@ -164,7 +178,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
 
     return (
       <article className="card group overflow-hidden flex flex-col h-full">
-        <Link href={`/produkt/${product.slug}`} className="p-3 flex flex-col flex-1">
+        <Link href={productHref} className="p-3 flex flex-col flex-1">
           <span className="text-[11px] text-gray-400 font-medium leading-tight">{series}</span>
           <span className="text-sm xs:text-base font-bold text-gray-900 mt-0.5 group-hover:text-primary-600 transition-colors">{dimension}</span>
           <span className="text-xs text-gray-500 mt-0.5">{qty}</span>
@@ -186,7 +200,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
           )}
           {isUnavailable ? (
             <Link
-              href={`/produkt/${product.slug}`}
+              href={productHref}
               className="p-1.5 rounded-lg text-amber-600 bg-amber-50 hover:bg-amber-100 transition-colors"
               onClick={(e) => e.stopPropagation()}
             >
@@ -214,7 +228,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
     <article className="card group overflow-hidden flex flex-col h-full">
       {/* Image */}
       <Link
-        href={`/produkt/${product.slug}`}
+        href={productHref}
         className="relative aspect-[4/3] bg-white flex items-center justify-center overflow-hidden"
       >
         {hasRealImage ? (
@@ -233,7 +247,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
               {manufacturer.name}
             </span>
           )}
-          <Link href={`/produkt/${product.slug}`}>
+          <Link href={productHref}>
             <h3 className="font-semibold text-xs sm:text-sm text-gray-900 hover:text-primary-600 transition-colors mt-0.5 line-clamp-2 leading-tight">
               {product.name}
             </h3>
@@ -268,7 +282,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
             <div className="flex flex-col xs:flex-row items-stretch xs:items-center gap-1.5 sm:gap-2">
               {isUnavailable ? (
                 <Link
-                  href={`/produkt/${product.slug}`}
+                  href={productHref}
                   className="flex-1 flex items-center justify-center gap-1 sm:gap-1.5 text-xs sm:text-sm font-medium text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200 rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 transition-colors"
                   onClick={(e) => e.stopPropagation()}
                 >
@@ -277,7 +291,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
                 </Link>
               ) : !displayPrice ? (
                 <Link
-                  href={`/produkt/${product.slug}`}
+                  href={productHref}
                   className="flex-1 flex items-center justify-center gap-1 sm:gap-1.5 text-xs sm:text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 transition-colors"
                 >
                   Zobacz więcej
@@ -298,7 +312,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
                 </button>
               )}
               <Link
-                href={`/produkt/${product.slug}`}
+                href={productHref}
                 className="flex items-center justify-center text-xs sm:text-sm font-medium text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 transition-colors whitespace-nowrap"
               >
                 Więcej
@@ -306,7 +320,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
             </div>
           ) : (
             <Link
-              href={`/produkt/${product.slug}`}
+              href={productHref}
               className={`w-full flex items-center justify-center text-xs sm:text-sm font-semibold rounded-lg px-2 py-2 sm:px-3 sm:py-2.5 transition-colors ${
                 product.manufacturerId === 'zebra'
                   ? 'text-gray-900 bg-[#A8F000] hover:bg-[#96d800]'

@@ -1,8 +1,10 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import Link from 'next/link'
 import { ProductGrid } from '@/components/product'
 import { Product } from '@/data/products'
+import { ArrowRightIcon } from '@/components/ui/Icons'
 
 interface RelatedProductsProps {
   title: string
@@ -72,6 +74,9 @@ function DimensionFilters({
 
   const formatNum = (n: number) => Number.isInteger(n) ? n.toString() : n.toFixed(1)
 
+  // Brak wymiarów (np. produkty to serie/parent bez 'Wymiar etykiety') — nie renderuj filtra
+  if (allWidths.length === 0) return null
+
   return (
     <div className="flex flex-wrap gap-3 mb-5">
       <div className="relative">
@@ -125,7 +130,9 @@ function DimensionFilters({
 }
 
 export default function RelatedProducts({ title, products, initialLimit, labels, id, showDualButtons }: RelatedProductsProps) {
-  const [visibleRows, setVisibleRows] = useState(1)
+  // Dla etykiet termicznych pokazujemy od razu 2 wiersze (8 kafelków serii) gdy produktów >4
+  const defaultRows = labels && products.length > ROW_SIZE ? 2 : 1
+  const [visibleRows, setVisibleRows] = useState(defaultRows)
   const [selectedWidth, setSelectedWidth] = useState('')
   const [selectedHeight, setSelectedHeight] = useState('')
 
@@ -149,6 +156,8 @@ export default function RelatedProducts({ title, products, initialLimit, labels,
     const visible = filtered.slice(0, visibleCount)
     const hasMore = visibleCount < filtered.length
     const isExpanded = visibleCount >= filtered.length && filtered.length > ROW_SIZE
+    // Czy produkty są seriami (brak konkretnych wymiarów) — wtedy pokazujemy link do katalogu zamiast filtra
+    const isSeriesView = products.every(p => !parseDimension(p))
 
     return (
       <section id={id} className="scroll-mt-24">
@@ -194,6 +203,19 @@ export default function RelatedProducts({ title, products, initialLimit, labels,
                 </button>
               )}
             </div>
+
+            {/* Link do pełnego katalogu etykiet termicznych — pokazujemy tylko gdy produkty to serie (brak wymiarów) */}
+            {isSeriesView && (
+              <div className="mt-6 pt-5 border-t border-gray-100 text-center">
+                <Link
+                  href="/etykiety-termiczne"
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-primary-600 hover:text-primary-800 transition-colors"
+                >
+                  Zobacz wszystkie etykiety termiczne (12 serii, 582 warianty)
+                  <ArrowRightIcon size={14} />
+                </Link>
+              </div>
+            )}
           </>
         )}
       </section>

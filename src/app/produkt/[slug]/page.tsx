@@ -22,6 +22,7 @@ import AddToRFQButton from './AddToRFQButton'
 import AskAboutProductButton from './AskAboutProductButton'
 import ServicePlansBox from './ServicePlansBox'
 import RelatedProducts from './RelatedProducts'
+import PrinterCompatibleLabels from '@/components/product/PrinterCompatibleLabels'
 import VariantsTable from './VariantsTable'
 import StockInfo from './StockInfo'
 import SmartPrice from './SmartPrice'
@@ -1165,16 +1166,20 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               </section>
             )}
 
-            {/* Etykiety */}
-            {compatibleConsumables.length > 0 && (
+            {/* Etykiety — dwa tryby:
+                a) drukarka termiczna (DT/TT) → PrinterCompatibleLabels (8 konkretnych wariantów z live ceną i dostępnością)
+                b) drukarki kart/opasek → RelatedProducts (stary mechanizm — taśmy/opaski) */}
+            {compatibleConsumables.length > 0 && compatibleConsumables.some(c => c?.subcategoryIds?.includes('etykiety-termiczne')) ? (
+              <PrinterCompatibleLabels printerSlug={product.slug} />
+            ) : compatibleConsumables.length > 0 ? (
               <RelatedProducts
                 id="etykiety-papierowe"
-                title={product.categoryId === 'drukarki-kart' ? 'Taśmy do drukarek kart' : product.categoryId === 'drukarki-opasek' ? 'Opaski identyfikacyjne' : product.subcategoryIds?.includes('termiczne-drukarki-etykiet') ? 'Etykiety termiczne' : 'Etykiety papierowe termotransferowe'}
+                title={product.categoryId === 'drukarki-kart' ? 'Taśmy do drukarek kart' : product.categoryId === 'drukarki-opasek' ? 'Opaski identyfikacyjne' : 'Etykiety papierowe termotransferowe'}
                 products={compatibleConsumables as typeof products}
                 labels={product.categoryId !== 'drukarki-kart' && product.categoryId !== 'drukarki-opasek'}
                 showDualButtons
               />
-            )}
+            ) : null}
 
             {/* Etykiety foliowe termotransferowe */}
             {compatibleFoilLabels.length > 0 && (
