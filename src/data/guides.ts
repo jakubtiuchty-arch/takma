@@ -12916,6 +12916,334 @@ export const guides: Guide[] = [
   ],
 },
 */
+{
+  slug: 'datalogic-skorpio-x40-x45',
+  title: 'Datalogic Skorpio X40 / X45 — premiera 2026: klawiatura, 5G, Android 15',
+  seoTitle: 'Skorpio X40/X45 — nowy kolektor Datalogic, 5G, Android 15',
+  seoDescription: 'Datalogic Skorpio X40/X45 (2026) — nowy kolektor z klawiaturą fizyczną, skaner Long Range 10 m, Wi-Fi 6E, 5G, Android 15 (do 19), bateria 7 000 mAh, Qi 10 W, kompatybilny z dokami Skorpio X5.',
+  excerpt: 'Datalogic Skorpio X40 i X45 (premiera kwiecień 2026) to nowy kolektor danych z klawiaturą fizyczną — następca Skorpio X5. Qualcomm 4490, 6 GB RAM, Wi-Fi 6/6E, Bluetooth 5.3, opcjonalny 5G (X45), Android 15 z upgrade do Android 19, bateria hot-swap 7 000 mAh, ładowanie bezprzewodowe Qi 10 W, skaner Halogen DE2121 z Green Spot i opcją Long Range 10 m. IP65/67, upadek 2,4 m. Pełna kompatybilność wsteczna ze stacjami dokującymi i akcesoriami Skorpio X5.',
+  category: 'poradnik' as const,
+  tags: ['terminale-mobilne', 'kolektor-danych', 'datalogic', 'skorpio', 'skorpio-x40', 'skorpio-x45', '5g', 'android-15', 'wi-fi-6e', 'klawiatura-fizyczna', 'long-range', 'green-spot', 'wireless-charging', 'magazyn', 'logistyka', 'premiera-2026'],
+  publishedAt: '2026-05-27',
+  updatedAt: '2026-05-27',
+  readTime: '14 min',
+  heroImage: '/images/guides/datalogic-skorpio-x40-x45_2.png',
+  heroImageAlt: 'Datalogic Skorpio X40 i X45 w stacjach dokujących na metalowym stole w magazynie — kolektor handheld i Pistol Grip z klawiaturą fizyczną',
+  sections: [
+    {
+      id: 'wprowadzenie',
+      heading: 'Datalogic Skorpio X40 i X45 — TL;DR',
+      content: `<p><strong>Datalogic Skorpio X40</strong> i <strong>Datalogic Skorpio X45</strong> to nowa generacja kolektora danych z klawiaturą fizyczną — bezpośredni następca <a href="/produkt/datalogic-skorpio-x5">Skorpio X5</a>. Premiera kwiecień 2026 (oznaczenie modelu: DS-SKORPIOX40-X45-EN Rev A). Procesor Qualcomm 4490 octa-core 2,4 GHz, 6 GB RAM, 128 GB UFS, Wi-Fi 6/6E (802.11ax), Bluetooth 5.3, Android 15 GMS z aktualizacją do Android 19 (cykl wsparcia 4–5 lat).</p>
+
+<p>Najważniejsza różnica między modelami: <strong>X40 to wariant magazynowy</strong> (tylko Wi-Fi), <strong>X45 to wariant terenowy</strong> z modułem 5G NR FR1 (3GPP Rel.16) i pełnym GNSS dual-band L1+L5 (GPS, Galileo, GLONASS, BeiDou). Oba mają identyczny skaner Halogen DE2121 1D/2D z patentowanym <strong>Green Spot™</strong> i opcją Extended Range do 10 metrów, baterię hot-swap 7 000 mAh (25,4 Wh), ładowanie bezprzewodowe WPC Qi EPP 10 W i pełną kompatybilność wsteczną z dokami oraz akcesoriami Skorpio X5.</p>
+
+<p><strong>Dla kogo?</strong> Magazyny wysokiego składowania (skaner ER 10 m bez drabiny), centra dystrybucji (klawiatura 48 znaków do szybkiego wprowadzania danych), kompletacja zamówień e-commerce (3 warianty klawiatury — 29/39/48 klawiszy), retail (Wi-Fi 6E w gęstych środowiskach), kurierzy i serwisanci terenowi (X45 z 5G + GPS), oraz produkcja i służba zdrowia. Ergonomiczna obudowa 445 g (handheld) lub 575 g (Pistol Grip ze spustem) zaprojektowana pod 8-godzinną zmianę.</p>`
+    },
+    {
+      id: 'co-nowego',
+      heading: 'Co nowego w Skorpio X40/X45 vs Skorpio X5?',
+      content: `<p>Skorpio X40/X45 to skok generacyjny vs <a href="/produkt/datalogic-skorpio-x5">Skorpio X5</a> (rok premiery 2022). Datalogic zachował sprawdzoną formę obudowy i system Pistol Grip, ale wymienił praktycznie cały hardware — procesor, pamięć, łączność, baterię i system operacyjny. Najważniejsze zmiany dotyczą trzech obszarów: <strong>wydajności</strong>, <strong>łączności bezprzewodowej</strong> i <strong>cyklu życia oprogramowania</strong>.</p>
+
+<table>
+<thead><tr><th>Parametr</th><th>Skorpio X40/X45 (2026)</th><th>Skorpio X5 (2022)</th></tr></thead>
+<tbody>
+<tr><td>Procesor</td><td><strong>Qualcomm 4490 octa-core 2,4 GHz</strong></td><td>Qualcomm 6490 octa-core 2,0 GHz</td></tr>
+<tr><td>RAM / Flash</td><td><strong>6 GB / 128 GB UFS</strong></td><td>3–4 GB / 32–64 GB</td></tr>
+<tr><td>Wi-Fi</td><td><strong>Wi-Fi 6 / 6E (802.11ax, 2×2 MU-MIMO, 6 GHz)</strong></td><td>Wi-Fi 6 (802.11ax, 5 GHz)</td></tr>
+<tr><td>Bluetooth</td><td><strong>5.3 + BLE</strong></td><td>5.1</td></tr>
+<tr><td>5G (Sub-6, Rel.16)</td><td><strong>Tak (X45)</strong></td><td>Nie — tylko 4G LTE</td></tr>
+<tr><td>GNSS</td><td><strong>Dual-band L1+L5 + Galileo + BeiDou (X45)</strong></td><td>L1 single-band</td></tr>
+<tr><td>System</td><td><strong>Android 15 GMS, upgrade do Android 19</strong></td><td>Android 10 → 11</td></tr>
+<tr><td>Bateria</td><td><strong>7 000 mAh (25,4 Wh), hot-swap</strong></td><td>3 460 / 6 080 mAh</td></tr>
+<tr><td>Ładowanie bezprzewodowe</td><td><strong>WPC Qi EPP 10 W</strong></td><td>Qi 15 W (proprietary)</td></tr>
+<tr><td>USB</td><td><strong>USB 3.2 gen 1 + USB 2.0 (2× Type-C)</strong></td><td>USB Type-C single port</td></tr>
+<tr><td>Skaner ER (Long Range)</td><td><strong>Halogen DE2121-ER do 10 m</strong></td><td>Halogen DE2120-XL do 20 m</td></tr>
+<tr><td>Wyświetlacz</td><td>4,0″ WVGA, 450 nit, Gorilla Glass</td><td>4,3″ WVGA, 450 nit, Gorilla Glass 3</td></tr>
+</tbody>
+</table>
+
+<p><strong>Werdykt:</strong> X40/X45 to bardziej wydajna, bardziej „future-proof" platforma — Android 19 oznacza wsparcie aktualizacjami bezpieczeństwa do około 2030 r. To kluczowe dla floty kupowanej w 2026 z planem 4–5 lat eksploatacji. Skorpio X5 (Android 11) traci wsparcie aktualizacji bezpieczeństwa (security patches) w 2027 r., co dla wdrożeń wymagających zgodności z RODO i ISO 27001 jest poważnym ograniczeniem. Jedyny minus X40/X45: skaner Long Range ma zasięg 10 m vs 20 m w Skorpio X5 z XLR — jeśli pracujesz w magazynie o naprawdę wysokim składowaniu (powyżej 10 m), X5 z XLR pozostaje optymalnym wyborem.</p>`
+    },
+    {
+      id: 'x40-vs-x45',
+      heading: 'Skorpio X40 vs X45 — kiedy który?',
+      content: `<p>Datalogic celowo rozdzielił portfolio na dwa modele zamiast jednego z opcjami: X40 to wariant tańszy dla użytku w czterech ścianach (magazyn, retail), X45 to wariant dla pracowników terenowych z pełnym pakietem łączności bezprzewodowej. Oba modele dzielą identyczny chassis, klawiaturę, skaner, baterię i system Android — różnice są wyłącznie w module radiowym i nawigacji.</p>
+
+<table>
+<thead><tr><th>Cecha</th><th>Skorpio X40</th><th>Skorpio X45</th></tr></thead>
+<tbody>
+<tr><td>Wi-Fi 6/6E (802.11ax)</td><td>✓</td><td>✓</td></tr>
+<tr><td>Bluetooth 5.3</td><td>✓</td><td>✓</td></tr>
+<tr><td>NFC (Reader + Card emulator)</td><td>✓</td><td>✓</td></tr>
+<tr><td>5G NR Sub-6 (Rel.16)</td><td>✗</td><td><strong>✓</strong></td></tr>
+<tr><td>4G LTE-Advanced</td><td>✗</td><td>✓</td></tr>
+<tr><td>SIM</td><td>—</td><td>1× nano SIM + 1× eSIM</td></tr>
+<tr><td>Prywatne sieci LTE/5G + CBRS</td><td>✗</td><td><strong>✓</strong></td></tr>
+<tr><td>GPS</td><td>✗</td><td><strong>Dual-band L1 + L5</strong></td></tr>
+<tr><td>Galileo / GLONASS / BeiDou</td><td>✗</td><td>✓ + A-GPS</td></tr>
+<tr><td>Barometr (Z-location)</td><td>✗</td><td>✓</td></tr>
+<tr><td>Skaner 2D Standard + Green Spot</td><td>✓</td><td>✓</td></tr>
+<tr><td>Skaner 2D Long Range 10 m (opcja)</td><td>✓</td><td>✓</td></tr>
+<tr><td>Klawiatura 29 / 39 / 48 klawiszy</td><td>✓</td><td>✓</td></tr>
+<tr><td>Bateria 7 000 mAh hot-swap</td><td>✓</td><td>✓</td></tr>
+<tr><td>Ładowanie Qi 10 W + USB-C PD</td><td>✓</td><td>✓</td></tr>
+<tr><td>IP65 + IP67</td><td>✓</td><td>✓</td></tr>
+<tr><td>Upadek 2,4 m (MIL-STD-810H)</td><td>✓</td><td>✓</td></tr>
+<tr><td>Android 15 GMS → 19</td><td>✓</td><td>✓</td></tr>
+</tbody>
+</table>
+
+<h3>Kiedy wybrać Skorpio X40</h3>
+<p>X40 to wybór dla operacji <strong>w czterech ścianach</strong>: magazyn wysokiego składowania z gęstą siecią Wi-Fi 6E, centrum dystrybucji, hala produkcyjna, retail back-office, sortownia paczek InPost/DPD/DHL. W tych warunkach 5G jest zbędne (Wi-Fi 6E daje wyższe pasmo i niższe opóźnienia niż 5G w warunkach indoor), a GPS — bezużyteczny. X40 jest też preferencją dla flot, które nie chcą zarządzać kosztami transmisji danych z kart SIM (data plan, billing, IoT SIM management).</p>
+
+<h3>Kiedy wybrać Skorpio X45</h3>
+<p>X45 jest dedykowany dla operacji wymagających <strong>łączności w terenie</strong> i lokalizacji GPS: dostawy ostatniej mili (paczkomaty InPost, kurierzy DPD lub DHL), serwisanci urządzeń przemysłowych, inspekcje techniczne (energetyka, gazownictwo, wod-kan), patrolowanie obiektów (security), audyty terenowe, sprzedaż mobilna z wizytami u klienta. Dual-band GNSS L1+L5 daje dokładność lokalizacji 1–3 m vs 5–10 m w starszych modułach L1 single-band. Obsługa prywatnych sieci LTE/5G i CBRS oznacza możliwość wdrożenia w zakładach z dedykowaną siecią komórkową (Industry 4.0).</p>
+
+<p><strong>Cena</strong>: spodziewamy się dopłaty rzędu 600–900 zł netto za moduł 5G + GNSS w X45 vs X40 (analogicznie do różnic cenowych <a href="/produkt/zebra-tc22">Zebra TC22</a> Wi-Fi vs LTE). Ostateczne ceny netto X40/X45 podamy po publikacji oficjalnego cennika Datalogic dla Polski — premiera <a href="/kontakt">w sprzedaży TAKMA</a> planowana na Q3 2026.</p>`
+    },
+    {
+      id: 'klawiatura-fizyczna',
+      heading: 'Klawiatura fizyczna — 3 warianty (29, 39, 48 klawiszy)',
+      content: `<p>Klawiatura fizyczna to <strong>kluczowy wyróżnik</strong> serii Skorpio na tle konkurencji. W kolektorach z systemem Android dominują dziś urządzenia „wszystkoekranowe" (Zebra TC22/TC27, Honeywell CT45, Datalogic Memor 12) — Skorpio X40/X45 i <a href="/produkt/zebra-mc9400">Zebra MC9400</a> to ostatnie bastiony fizycznej klawiatury w portfolio enterprise.</p>
+
+<h3>29-key Numeric — szybka praca z numerami</h3>
+<p>Wariant numeryczny z dużymi, dobrze rozstawionymi klawiszami 0–9 plus klawisze funkcyjne. Optymalny do <strong>magazynu z systemem WMS</strong>, gdzie operator wprowadza wyłącznie liczby (ilości, numery lokalizacji, kody EAN). Praca w grubych rękawicach roboczych bez problemów — Datalogic projektował klawiaturę pod test glove operations w warunkach −20°C.</p>
+
+<h3>39-key Functional Numeric — kompromis</h3>
+<p>Klawiatura numeryczna z dodatkowymi klawiszami funkcyjnymi (F1–F10 lub programowalnymi). Sprawdza się w <strong>centrach dystrybucji</strong>, gdzie operator pracuje na wielu ekranach aplikacji i potrzebuje skrótów (akceptacja, anulowanie, powrót, drukuj). Pojedyncze litery można wprowadzać, przytrzymując klawisz Shift — wystarczające do skanowania numerów części (part numbers) zawierających litery (np. ZIPZED3018655XL).</p>
+
+<h3>48-key Alphanumeric — pełna klawiatura QWERTY</h3>
+<p>Pełna klawiatura QWERTY w układzie kolektora. Wybór dla operacji wymagających <strong>wprowadzania tekstu</strong>: opisy reklamacji, notatki serwisowe, kontrole jakości (QC), audyty BHP, rejestracja przyjęć od dostawców z opisem szkód. Liczba klawiszy wymusza ich mniejszy rozmiar — praca w rękawicach jest możliwa, ale wolniejsza niż na klawiaturze 29-key. To wariant dla operatorów, którzy spędzają &gt;30% zmiany na wprowadzaniu tekstu.</p>
+
+<p>Wszystkie 3 warianty mają <strong>2 boczne klawisze skanowania</strong> (lewy i prawy — leworęczność/praworęczność) oraz <strong>klawisz Power On/Off</strong>. Dodatkowo na ekranie dotykowym pojawiają się <strong>3 software keys Android</strong> (Back, Home, Recent) — operator może wyłączyć je za pomocą Datalogic Launcher (kiosk mode), jeśli pracuje wyłącznie w jednej aplikacji WMS.</p>
+
+<p><strong>Field-detachable handle</strong> — uchwyt pistoletowy ze spustem skanowania można szybko zdejmować i zakładać bez śrubokrętu. Pozwala przejść z trybu handheld (kompletacja przy półce, inwentaryzacja) do trybu pistol grip (intensywne skanowanie seryjne na rampie załadunkowej) w 5 sekund. Jeden terminal — dwa tryby pracy.</p>`
+    },
+    {
+      id: 'skaner-green-spot',
+      heading: 'Skaner Halogen DE2121 z Green Spot™ i opcją Long Range 10 m',
+      content: `<p>Skorpio X40/X45 jest dostępny z dwoma wariantami skanera 2D imager:</p>
+
+<ul>
+<li><strong>Halogen DE2121-DL Standard</strong> — odczyt kodów 1D i 2D z odległości 0–70 cm. Wybór dla kompletacji przy półce, retail i typowych operacji magazynowych. Czas odczytu pojedynczego kodu &lt;100 ms.</li>
+<li><strong>Halogen DE2121-ER Extended Range</strong> — odczyt do <strong>10 metrów</strong> dla kodów 100% wielkości. Pozwala na pracę w magazynach wysokiego składowania <strong>bez drabiny i podestu</strong> — operator skanuje etykiety lokalizacji z poziomu posadzki na regałach o wysokości 8–10 m. Auto-focus z technologią IntelliFocus dostosowuje punkt ostrości do odległości w czasie rzeczywistym.</li>
+</ul>
+
+<h3>Green Spot™ — patentowana technologia Datalogic</h3>
+<p>Po udanym odczycie skaner projektuje <strong>zielony punkt świetlny na zeskanowanej etykiecie</strong>. Operator widzi potwierdzenie skanowania bez patrzenia w ekran terminala — oszczędność czasu rzędu 0,3–0,5 sekundy na każde skanowanie. Przy wolumenie 3 000 skanów dziennie na operatora to <strong>15–25 minut zaoszczędzonego czasu zmiany</strong>. Datalogic posiada patenty na Green Spot — to wyłączna funkcja serii Skorpio i Datalogic Memor w kolektorach z systemem Android.</p>
+
+<p>Skaner odczytuje wszystkie standardy 1D (Code 128, Code 39, EAN-13/8, UPC-A/E, GS1-128, ITF-14, Codabar) i 2D (QR Code, DataMatrix, GS1 DataMatrix, PDF417, MicroPDF417, Aztec Code, MaxiCode). Wsparcie dla nowszych kodów DotCode (oznaczenia na opakowaniach farmaceutycznych — obok GS1 DataMatrix) oraz GS1 Digital Link.</p>
+
+<p>Dodatkowo kamera tylna <strong>13 MP z autofocusem</strong> i LED flash w trybie torch może służyć jako alternatywne źródło skanowania (przez Datalogic SDK) — przydatne do skanowania etykiet słabej jakości, drukowanych na biurowych drukarkach atramentowych. Kamera obsługuje również <strong>Snap OCR</strong> z Datalogic Mobility Suite, czyli automatyczną digitalizację tekstu (numery seryjne, daty ważności, dokumenty) bez ręcznego wprowadzania.</p>`
+    },
+    {
+      id: 'bateria-qi',
+      heading: 'Bateria 7 000 mAh + ładowanie bezprzewodowe Qi 10 W',
+      content: `<p><strong>Bateria Skorpio X40/X45: 7 000 mAh (25,4 Wh)</strong>, technologia Li-Ion. To największa bateria w klasie kolektorów z fizyczną klawiaturą — dla porównania <a href="/produkt/zebra-mc9400">Zebra MC9400</a> ma 7 000 mAh, <a href="/produkt/datalogic-skorpio-x5">Datalogic Skorpio X5</a> w wersji Pistol Grip 6 080 mAh, Honeywell CK67 5 800 mAh. W praktyce wystarcza na <strong>1–2 zmiany robocze</strong> (12–18 h) przy intensywnym skanowaniu lub całą dobę pracy w trybie standby z okazjonalnym użytkiem.</p>
+
+<h3>Hot-swap — wymiana bez wyłączania</h3>
+<p>Bateria wymieniana w 30 sekund <strong>bez wyłączania terminala</strong> i bez utraty stanu aplikacji WMS. Wewnętrzny superkondensator podtrzymuje pamięć RAM i sesję sieciową przez ~60 sekund po wyjęciu baterii. Operator wymienia rozładowaną baterię na świeżą z 4-slotowej ładowarki (akcesorium SX40/SX45 4-slot battery charger) — koniec z przerywaniem zmiany przez rozładowaną baterię.</p>
+
+<h3>Ładowanie bezprzewodowe WPC Qi EPP 10 W</h3>
+<p>Skorpio X40/X45 wspiera standard <strong>Qi EPP (Extended Power Profile) 10 W</strong> przez WPC. To pełna kompatybilność z dokami Skorpio X5 (single dock wireless charging, 3-slot dock wireless charging) i z dowolną ładowarką Qi 10 W+ na rynku. Zalety vs ładowanie kontaktowe (pin charging):</p>
+
+<ul>
+<li><strong>Brak zużycia styków</strong> — najczęściej psująca się część w klasycznych dokach to skorodowane piny (operator zostawia terminal w doku w wilgotnym magazynie, piny utleniają się i przestają ładować).</li>
+<li><strong>Brak gromadzenia się brudu i kurzu</strong> — typowy problem w magazynach z kurzem papierowym (etykiety, pyły z palet), gdzie piny się zapychają i wymagają regularnego czyszczenia.</li>
+<li><strong>Brak czasu obsługi serwisowej</strong> — dok Qi nie wymaga konserwacji, co redukuje koszty MRO dla floty 50–200 urządzeń.</li>
+</ul>
+
+<p>Dodatkowo: <strong>ładowanie przewodowe przez USB-C PD</strong> (Type-C, dolny port I/O) jako alternatywa. Drugi port USB-C u góry obudowy obsługuje <strong>USB 3.2 gen 1</strong> (Host + Client) — można podłączyć dysk SSD do bulk transferu danych z dziennej zmiany, drukarkę etykiet w trybie USB lub kontroler Ethernet do prywatnej sieci.</p>`
+    },
+    {
+      id: 'odpornosc',
+      heading: 'Odporność: IP65/67, MIL-STD-810H, upadek 2,4 m',
+      content: `<p>Skorpio X40/X45 jest zaprojektowany pod test <strong>MIL-STD-810H</strong> (najnowszy standard amerykański dla urządzeń wytrzymałych w warunkach przemysłowych i militarnych); oferuje też potrójną ochronę przed pyłem i wodą.</p>
+
+<table>
+<thead><tr><th>Test</th><th>Wynik</th><th>Standard</th></tr></thead>
+<tbody>
+<tr><td>Upadek na beton</td><td><strong>Wielokrotnie 2,4 m</strong> w temperaturze pokojowej</td><td>MIL-STD-810H</td></tr>
+<tr><td>Upadek w skrajnych temperaturach</td><td>Wielokrotnie 1,8 m (−20°C do +50°C)</td><td>MIL-STD-810H</td></tr>
+<tr><td>Tumble test</td><td><strong>3 000 cykli z 1,0 m</strong></td><td>IEC 60068-2-32 Proc. 2</td></tr>
+<tr><td>Klasa szczelności</td><td><strong>IP65 + IP67</strong></td><td>IEC 60529</td></tr>
+<tr><td>Temperatura pracy</td><td>−20°C do +50°C</td><td>—</td></tr>
+<tr><td>Temperatura magazynowania</td><td>−30°C do +70°C</td><td>—</td></tr>
+<tr><td>Odporność chemiczna</td><td>NaClO 0,8% / Windex / Formula 409 / etanol 70% / izopropanol 70% / H₂O₂ 3%</td><td>—</td></tr>
+<tr><td>Wyładowania ESD</td><td>15 kV (powietrze) / 8 kV (kontakt)</td><td>—</td></tr>
+</tbody>
+</table>
+
+<p><strong>IP65 + IP67</strong> — pełna ochrona przed kurzem (6 = ochrona absolutna, brak wnikania pyłu) oraz odporność na strumień wody pod ciśnieniem (5) ORAZ na chwilowe zanurzenie (7). Ta podwójna kombinacja przewyższa standardowe IP65 lub IP67 — terminal można jednocześnie myć strumieniem wody pod ciśnieniem i bez konsekwencji upuścić w kałużę.</p>
+
+<p><strong>Odporność chemiczna</strong> przetestowana na popularne środki dezynfekujące używane w retail (Windex, Glassex z amoniakiem, Formula 409) i healthcare (NaClO 0,8% — typowy roztwór podchlorynu sodu do dezynfekcji powierzchni szpitalnych, izopropanol 70%, etanol 70%, woda utleniona 3%). Kolektor można dezynfekować bez ryzyka uszkodzenia obudowy lub ekranu dotykowego (Gorilla Glass z optycznym łączeniem).</p>
+
+<p><strong>Dla porównania</strong>: <a href="/produkt/zebra-mc3400">Zebra MC3400</a> wytrzymuje 1,8 m upadek MIL-STD-810H, IP65. <a href="/produkt/zebra-mc9400">Zebra MC9400</a> — 2,4 m / IP65 + IP67 (tak samo jak Skorpio X40/X45). Honeywell CK67 — 1,8 m / IP65. Skorpio X40/X45 jest <strong>najwytrzymalszym kolektorem klawiaturowym w segmencie kompaktowym</strong> (poniżej 600 g) — MC9400 jest bardziej masywny (729 g w handheld).</p>`
+    },
+    {
+      id: 'android-15-cykl-zycia',
+      heading: 'Android 15 z upgrade do Android 19 — cykl wsparcia 4–5 lat',
+      content: `<p>Skorpio X40/X45 startuje z systemem <strong>Android 15 GMS</strong> (Google Mobile Services — pełen Play Store i Google services) i jest <strong>upgradowalny do Android 19</strong>. Oznacza to około <strong>4–5 lat aktualizacji bezpieczeństwa (security patches) i aktualizacji funkcjonalnych</strong> z fabryki, czyli planowane wsparcie do około 2030 roku. Dla floty 50–500 kolektorów kupowanej w 2026 r. to kluczowy argument — RODO, ISO 27001 i większość polityk corporate security wymaga aktywnego wsparcia aktualizacjami bezpieczeństwa.</p>
+
+<p>Datalogic posiada certyfikację <strong>Android Enterprise Recommended (AER)</strong> dla całej rodziny Skorpio — to oficjalna pieczęć Google potwierdzająca, że urządzenie spełnia rygorystyczne wymagania dla enterprise: 5+ lat aktualizacji bezpieczeństwa (security patches), wsparcie zero-touch enrollment, kompatybilność z każdym EMM/UEM (Microsoft Intune, SOTI MobiControl, VMware Workspace ONE, 42Gears, Ivanti Neurons, Ivanti Velocity, StayLinked Smart TE).</p>
+
+<h3>Datalogic Shield — security patches od Datalogic</h3>
+<p>Oprócz oficjalnych patchy Google, Datalogic wydaje własne aktualizacje bezpieczeństwa (Shield) dla pakietu <strong>EASEOFCARE</strong> — kontraktu serwisowego z wsparciem rozszerzonym. Plany EOC pokrywają również wymianę overnight w przypadku awarii hardware.</p>
+
+<h3>Datalogic Mobility Suite — narzędzia dla IT</h3>
+<p>Datalogic dostarcza kompletny zestaw narzędzi do zarządzania flotą, dostępny pod <code>datalogic.github.io</code>:</p>
+<ul>
+<li><strong>Scan2Deploy</strong> — konfiguracja i enrollment terminala przez zeskanowanie kodu QR (bulk deployment w 10 sekund per urządzenie)</li>
+<li><strong>OEMConfig</strong> — konfiguracja niskopoziomowa przez dowolny EMM/UEM (Intune, SOTI, VMware)</li>
+<li><strong>AE QR Generator</strong> — generator kodów QR do Android Enterprise enrollment</li>
+<li><strong>Wi-Fi QR Generator</strong> — dystrybucja konfiguracji Wi-Fi (SSID, hasło, certyfikat 802.1X EAP-TLS)</li>
+<li><strong>Logger</strong> — zbieranie diagnostycznych eventów urządzenia (do troubleshootingu)</li>
+<li><strong>Wi-Fi Guard</strong> — statystyki sieci Wi-Fi w czasie rzeczywistym (RSSI, retries, throughput) — do diagnostyki dead zones w magazynie</li>
+<li><strong>Battery Manager + Smart Charge</strong> — analiza zużycia baterii i optymalizacja ładowania (np. zatrzymanie ładowania na 80% i wznowienie 30 minut przed zmianą — wydłuża życie baterii o 30%)</li>
+<li><strong>Wedge + Visual Formatter</strong> — formatowanie zeskanowanych kodów bez kodowania aplikacji (parsing GS1, sklejanie pól, podział pól)</li>
+<li><strong>SoftSpot</strong> — programowalny trigger skanowania w dowolnym miejscu ekranu (dla aplikacji bez fizycznego triggera)</li>
+<li><strong>Pocket Mode</strong> — wyłączenie przypadkowych dotyków ekranu, gdy terminal jest w kieszeni</li>
+<li><strong>Snap OCR</strong> — digitalizacja tekstu z kamery (numery seryjne, daty ważności)</li>
+</ul>
+
+<h3>Datalogic Connect — chmurowa platforma IoT</h3>
+<p>Nowość w Skorpio X40/X45 — Datalogic Connect to <strong>chmurowa platforma do zdalnego zarządzania flotą</strong>. Pozwala IT zobaczyć w jednym dashboardzie wszystkie wdrożone kolektory Datalogic (Memor + Skorpio): status baterii, lokalizację GPS (X45), wersję Androida, ostatni heartbeat, błędy aplikacji. Integruje się z wszystkimi MDM/EMM/TE (Terminal Emulator). Zastępuje konieczność oddzielnych narzędzi monitoringu floty.</p>
+
+<p>SDK dla deweloperów: <strong>Java, Kotlin, Xamarin, .NET MAUI, JavaScript</strong>. To pełen wybór języków enterprise — od starszych aplikacji w Java (Eclipse RCP, Spring Mobile) do nowoczesnych rozwiązań cross-platform (MAUI z C#, JS przez Ionic/Cordova). Wsparcie dla <strong>Ivanti Velocity</strong> i <strong>StayLinked Smart TE</strong> (terminal emulation TE 5250/3270/VT) dla integracji z legacy systemami AS/400, mainframe i SAP GUI.</p>`
+    },
+    {
+      id: 'zastosowania',
+      heading: 'Zastosowania branżowe — gdzie sprawdzi się Skorpio X40/X45',
+      content: `<p>Datalogic pozycjonuje Skorpio X40/X45 dla czterech kluczowych branż. Z naszego doświadczenia z wdrożeniami Skorpio X5 i serii Memor wynika, że profil użytkownika idealnie pasuje do operacji wymagających <strong>klawiatury fizycznej, długiej zmiany i wytrzymałości na warunki przemysłowe</strong>.</p>
+
+<h3>Magazyn i logistyka (Transportation &amp; Logistics)</h3>
+<p>Receiving (przyjęcia od dostawców), putaway (magazynowanie na regałach), picking (kompletacja zamówień), order fulfilment (przygotowanie wysyłki), inventory management (inwentaryzacja), returns (zwroty). Kluczowe argumenty Skorpio X40/X45 w tej branży: <strong>skaner Long Range 10 m bez drabiny</strong> (magazyn wysokiego składowania), <strong>klawiatura 29-key do szybkiego wprowadzania ilości</strong>, <strong>bateria 7 000 mAh hot-swap na 2 zmiany</strong>, IP65/67 (kurz papierowy, wilgoć w chłodni), <strong>Wi-Fi 6E</strong> (gęsta sieć z tysiącami klientów).</p>
+
+<h3>Produkcja (Manufacturing)</h3>
+<p>Inventory control (kontrola zapasów surowców), shipping &amp; receiving, work order management (zlecenia produkcyjne), quality control (QC), track &amp; trace (śledzenie partii produkcyjnych). Argumenty: <strong>odporność na chemikalia</strong> (NaClO, etanol, izopropanol — dezynfekcja w farmacji i przetwórstwie spożywczym (food processing)), <strong>klawiatura 48-key</strong> do wprowadzania opisów wad i pomiarów QC, <strong>kompatybilność z prywatnymi sieciami 5G/LTE</strong> (X45) — coraz częściej wdrażanymi w Industry 4.0.</p>
+
+<h3>Retail</h3>
+<p>Inventory &amp; replenishment (zarządzanie zapasami sklepu), online order fulfilment (kompletacja zamówień ze sklepu — click &amp; collect), price check &amp; update (zmiana cenówek), goods receiving (przyjęcia od dostawców), workforce management (zarządzanie pracownikami zmiany). Argumenty: <strong>kompaktowa obudowa</strong> (210 × 75 × 27 mm), <strong>klawiatura 39-key</strong> dla operatorów wprowadzających numery referencyjne, <strong>Green Spot™</strong> dla szybkiej walidacji cenówek bez patrzenia w ekran, <strong>Wi-Fi 6E</strong> w gęstym środowisku sklepowym.</p>
+
+<h3>Healthcare</h3>
+<p>Receiving &amp; quality check (przyjęcia produktów farmaceutycznych z kontrolą jakości), warehousing &amp; inventory management (apteki szpitalne, centra dystrybucji leków), order fulfilment (kompletacja zleceń dla oddziałów), returns &amp; batch tracking (zwroty, śledzenie serii produktów). Argumenty: <strong>odporność chemiczna na środki dezynfekujące szpitalne</strong> (NaClO 0,8% — typowy roztwór podchlorynu sodu, H₂O₂ 3%, izopropanol 70%), <strong>obsługa GS1 DataMatrix</strong> i <strong>DotCode</strong> (kody serializacyjne wymagane przez Falsified Medicines Directive UE), <strong>klawiatura 48-key</strong> do wprowadzania numerów partii i dat ważności.</p>
+
+<p>Dla porównania alternatyw w segmencie magazyn/logistyka: <a href="/produkt/zebra-mc3400">Zebra MC3400</a> (kolektor klawiaturowy klasy entry-mid, lżejszy), <a href="/produkt/zebra-mc9400">Zebra MC9400</a> (klasa wyższa, większa bateria, masywniejszy), <a href="/produkt/datalogic-skorpio-x5">Datalogic Skorpio X5</a> (poprzednia generacja Skorpio, niższa cena gdy będzie dostępna). Szczegółowe porównanie kolektorów: <a href="/poradnik/kolektor-danych-do-inwentaryzacji">Kolektor danych do inwentaryzacji — który wybrać?</a> oraz <a href="/poradnik/top-10-terminali-mobilnych-2026">Top 10 terminali mobilnych 2026</a>.</p>`
+    },
+    {
+      id: 'kompatybilnosc-x5',
+      heading: 'Kompatybilność wsteczna ze Skorpio X5 — doki i akcesoria',
+      content: `<p>Jedna z najważniejszych decyzji projektowych Datalogic: <strong>Skorpio X40/X45 jest fizycznie kompatybilny z dokami i akcesoriami Skorpio X5</strong>. Firmy posiadające już flotę X5 z infrastrukturą doków mogą wymieniać terminale na X40/X45 <strong>bez wymiany doków</strong>. To oszczędność rzędu 30–50% kosztu wdrożenia (typowy stosunek wartości terminali do doków: 70/30 lub 60/40 w zależności od konfiguracji).</p>
+
+<p><strong>Kompatybilne akcesoria Skorpio X5</strong> (działają z X40/X45):</p>
+<ul>
+<li>Skorpio X5 single dock ze stykami kontaktowymi</li>
+<li>Skorpio X5 single dock z ładowaniem bezprzewodowym</li>
+<li>Skorpio X5 3-slot dock ze stykami</li>
+<li>Skorpio X5 3-slot dock z ładowaniem bezprzewodowym</li>
+<li>Skorpio X5 4-slot battery charger</li>
+<li>Etui Belt Holster Skorpio X40/X45 (kompatybilność wsteczna)</li>
+<li>Hand-strap (paski na dłoń) — pakiet 5 sztuk SX40/SX45/FX60/FX65</li>
+<li>Rubber boot (gumowa osłona) Handheld &amp; Gun</li>
+<li>Multi-slot dok 4SD z WRD (Charge only) i 4SD z Ethernet (Charge + data)</li>
+</ul>
+
+<p><strong>Strategia upgrade dla istniejącej floty</strong>: jeśli posiadasz 20–500 sztuk <a href="/produkt/datalogic-skorpio-x5">Skorpio X5</a> wdrożonych w 2022–2025, najtańszą ścieżką jest <strong>wymiana wyłącznie terminali</strong> (zachowując doki, ładowarki, etui, paski). To pozwala przeprowadzić migrację Android 11 → Android 15 w ciągu 1–2 weekendów (zamiast pełnej wymiany infrastruktury w 4–8 tygodni). Datalogic gwarantuje pełną kompatybilność API i SDK — aplikacje WMS napisane pod Skorpio X5 (Datalogic SDK) działają na X40/X45 bez modyfikacji kodu.</p>
+
+<p>Wsparcie techniczne i sprzedaż Datalogic dla Polski: <a href="/kontakt">TAKMA — autoryzowany partner Datalogic</a>. Wycena floty, pilotaż, plan migracji z Skorpio X5 → X40/X45, dostawa, konfiguracja, szkolenie operatorów, kontrakt EASEOFCARE — wszystko w jednym pakiecie.</p>`
+    },
+    {
+      id: 'cena-dostepnosc',
+      heading: 'Cena i dostępność Skorpio X40 / X45 w Polsce',
+      content: `<p>Skorpio X40/X45 to nowość rynkowa <strong>z premierą światową w kwietniu 2026</strong> (oznaczenie wersji karty katalogowej Datalogic: DS-SKORPIOX40-X45-EN Rev A 20260421). Dostępność w Polsce (TAKMA, autoryzowany partner Datalogic): pierwsze sztuki spodziewane w <strong>Q3 2026</strong>, sprzedaż wolumenowa Q4 2026 / Q1 2027. Oficjalny polski cennik MSRP zostanie opublikowany po podpisaniu umowy dystrybucyjnej.</p>
+
+<p>Wstępne szacunki cenowe (na podstawie pozycjonowania Datalogic vs Skorpio X5 i analogii do serii Memor 30/35):</p>
+
+<table>
+<thead><tr><th>Konfiguracja</th><th>Szacowana cena netto</th></tr></thead>
+<tbody>
+<tr><td>Skorpio X40 Handheld, 29-key, skaner Standard, Wi-Fi 6E</td><td>~5 200–5 800 zł</td></tr>
+<tr><td>Skorpio X40 Pistol Grip, 39-key, skaner Standard</td><td>~5 800–6 500 zł</td></tr>
+<tr><td>Skorpio X45 Handheld, 29-key, skaner Standard, Wi-Fi 6E + 5G + GPS</td><td>~6 000–6 700 zł</td></tr>
+<tr><td>Skorpio X45 Pistol Grip, 48-key, skaner Long Range 10 m, 5G + GPS</td><td>~7 200–8 200 zł</td></tr>
+</tbody>
+</table>
+
+<p><strong>Szacunki nieoficjalne</strong> — aktualizujemy ten wpis po publikacji cennika Datalogic dla Polski. <a href="/kontakt">Skontaktuj się z TAKMA</a>, aby otrzymać aktualną wycenę indywidualną dla swojej floty (rabat wolumenowy od 10 sztuk, kontrakt EASEOFCARE, pilotaż 1–3 sztuki przed zamówieniem masowym).</p>
+
+<p>Jeśli potrzebujesz kolektora <strong>natychmiast</strong> (przed Q3 2026), alternatywy z natychmiastową dostępnością z TAKMA:</p>
+<ul>
+<li><a href="/produkt/datalogic-skorpio-x5">Datalogic Skorpio X5</a> — od 4 858 zł netto, ten sam ekosystem doków i akcesoriów (rekomendacja, gdy posiadasz już infrastrukturę Skorpio)</li>
+<li><a href="/produkt/zebra-mc3400">Zebra MC3400</a> — klasa entry-mid, klawiatura, lżejszy</li>
+<li><a href="/produkt/zebra-mc9400">Zebra MC9400</a> — klasa premium, większa bateria, najpopularniejszy kolektor enterprise w Polsce</li>
+</ul>`
+    },
+  ],
+  faq: [
+    {
+      question: 'Co to jest Datalogic Skorpio X40/X45?',
+      answer: 'Datalogic Skorpio X40 i X45 to nowy kolektor danych z klawiaturą fizyczną — następca Skorpio X5 (premiera kwiecień 2026). Specyfikacja: procesor Qualcomm 4490 octa-core 2,4 GHz, 6 GB RAM, 128 GB Flash UFS, ekran 4″ WVGA z Gorilla Glass, Android 15 GMS z upgrade do Android 19, Wi-Fi 6/6E, Bluetooth 5.3. Skorpio X45 dodatkowo: 5G NR Sub-6 (Rel.16), GNSS dual-band L1+L5 i barometr. Bateria 7 000 mAh hot-swap, ładowanie bezprzewodowe WPC Qi EPP 10 W, IP65/67, upadek 2,4 m (MIL-STD-810H). 3 warianty klawiatury (29/39/48 klawiszy) i opcjonalny skaner Long Range do 10 m.',
+    },
+    {
+      question: 'Czym Skorpio X40 różni się od X45?',
+      answer: 'Skorpio X40 i X45 dzielą identyczny chassis, klawiaturę, skaner, baterię, ekran i system Android. Różnice są wyłącznie w module radiowym: X45 ma 5G NR Sub-6 (3GPP Rel.16) + 4G LTE-Advanced, 1× nano SIM + 1× eSIM, prywatne sieci LTE/5G i CBRS, GNSS dual-band L1+L5 (GPS, Galileo, GLONASS, BeiDou, A-GPS) oraz barometr. X40 ma tylko Wi-Fi 6/6E + Bluetooth 5.3 + NFC, bez modułu komórkowego i bez GPS. Wybór X40 — dla operacji w czterech ścianach (magazyn, retail, produkcja). Wybór X45 — dla pracowników terenowych (kurierzy, serwisanci, sprzedaż mobilna, inspekcje).',
+    },
+    {
+      question: 'Co nowego w Skorpio X40/X45 vs Skorpio X5?',
+      answer: 'Najważniejsze zmiany: (1) procesor Qualcomm 4490 octa-core 2,4 GHz vs Qualcomm 6490 2,0 GHz, (2) pamięć 6 GB RAM / 128 GB UFS vs 3–4 GB / 32–64 GB, (3) Wi-Fi 6/6E z pasmem 6 GHz vs Wi-Fi 6 tylko 5 GHz, (4) Bluetooth 5.3 vs 5.1, (5) opcja 5G na X45 (Skorpio X5 — tylko 4G LTE), (6) GNSS dual-band L1+L5 vs L1 single-band, (7) Android 15 GMS z upgrade do Android 19 vs Android 10→11, (8) bateria 7 000 mAh w obu wersjach vs 3 460/6 080 mAh, (9) ładowanie Qi EPP 10 W standard vs Qi 15 W proprietary, (10) USB 3.2 gen 1 (dwa porty Type-C) vs jeden port USB Type-C. Mniej: skaner Long Range 10 m vs 20 m w Skorpio X5 XLR.',
+    },
+    {
+      question: 'Czy Skorpio X40/X45 są kompatybilne z dokami Skorpio X5?',
+      answer: 'Tak — Datalogic gwarantuje pełną kompatybilność wsteczną z infrastrukturą Skorpio X5. Działają z X40/X45: single dock ze stykami i z ładowaniem Qi, 3-slot dock ze stykami i z Qi, 4-slot battery charger, multi-slot dok z Ethernet (4SD WRD i 4SD Eth). Kompatybilne są również akcesoria: etui Belt Holster, hand-strap, rubber boot. Firmy z istniejącą flotą Skorpio X5 mogą migrować tylko terminale, zachowując całą infrastrukturę doków — oszczędność 30–50% kosztu wdrożenia.',
+    },
+    {
+      question: 'Ile pracuje bateria Skorpio X40/X45?',
+      answer: 'Bateria Skorpio X40/X45 to 7 000 mAh (25,4 Wh) Li-Ion z technologią hot-swap (wymiana bez wyłączania terminala, podtrzymanie pamięci przez superkondensator przez ~60 s). W praktyce wystarcza na 1–2 zmiany robocze (12–18 godzin) przy intensywnym skanowaniu (3 000+ skanów dziennie + transmisja Wi-Fi/5G + ekran włączony). W trybie standby z okazjonalnym użytkiem — pełna doba. Ładowanie: kontaktowe przez dok lub bezprzewodowe WPC Qi EPP 10 W (kompatybilne z każdą ładowarką Qi 10 W+).',
+    },
+    {
+      question: 'Jak długo Datalogic będzie wspierał Skorpio X40/X45 aktualizacjami systemu?',
+      answer: 'Skorpio X40/X45 startuje z systemem Android 15 GMS i jest oficjalnie upgradowalny do Android 19 — oznacza to 4–5 lat aktualizacji bezpieczeństwa (security patches) i aktualizacji funkcjonalnych z fabryki, czyli planowane wsparcie do około 2030 roku. Certyfikat Android Enterprise Recommended (AER) gwarantuje minimum 5 lat aktualizacji bezpieczeństwa. Dodatkowo Datalogic w ramach kontraktu EASEOFCARE wydaje własne patche bezpieczeństwa (Datalogic Shield) oraz aktualizacje systemowe. Dla floty kupowanej w 2026 z planem 5-letniej eksploatacji — wsparcie pokrywa cały cykl życia.',
+    },
+    {
+      question: 'Czy Skorpio X40/X45 nadaje się do magazynu wysokiego składowania?',
+      answer: 'Tak — Skorpio X40 i X45 są dostępne z opcjonalnym skanerem Halogen DE2121-ER Extended Range, który odczytuje kody 1D i 2D z odległości do 10 metrów (kody w skali 100%). Operator może skanować etykiety lokalizacji na regałach 8–10 m bez drabiny i podestu. Auto-focus z technologią IntelliFocus dostosowuje punkt ostrości w czasie rzeczywistym. Jeśli pracujesz w magazynie o naprawdę wysokim składowaniu (powyżej 10 m) — rozważ Datalogic Skorpio X5 z opcją XLR (zasięg do 20 m).',
+    },
+    {
+      question: 'Czym jest Green Spot™ w skanerach Datalogic?',
+      answer: 'Green Spot™ to patentowana technologia Datalogic — po udanym odczycie kodu skaner projektuje zielony punkt świetlny bezpośrednio na zeskanowanej etykiecie. Operator otrzymuje wizualne potwierdzenie skanowania bez patrzenia w ekran terminala, co skraca czas operacji o 0,3–0,5 sekundy na skanowanie. Przy wolumenie 3 000 skanów dziennie to 15–25 minut zaoszczędzonego czasu zmiany na operatora. Green Spot jest wyłączną funkcją serii Datalogic Skorpio i Memor w kolektorach z systemem Android — Zebra, Honeywell i M3 Mobile nie oferują podobnej funkcji.',
+    },
+    {
+      question: 'Czy Skorpio X40/X45 obsługuje ładowanie bezprzewodowe Qi?',
+      answer: 'Tak — Skorpio X40 i X45 wspierają standard WPC Qi EPP (Extended Power Profile) 10 W. Pełna kompatybilność z dokami bezprzewodowymi Skorpio X5 (single dock wireless charging, 3-slot dock wireless charging) oraz z dowolną ładowarką Qi 10 W+ na rynku. Zalety vs ładowanie kontaktowe: brak zużycia styków, brak gromadzenia się brudu i kurzu, brak czasu obsługi serwisowej dla floty 50–500 urządzeń. Dodatkowo dostępne ładowanie przewodowe przez USB-C PD.',
+    },
+    {
+      question: 'Ile kosztuje Datalogic Skorpio X40/X45 w Polsce?',
+      answer: 'Skorpio X40/X45 miał premierę światową w kwietniu 2026 — dostępność w Polsce (TAKMA jako autoryzowany partner Datalogic) spodziewana Q3 2026. Oficjalny polski cennik MSRP zostanie opublikowany po podpisaniu umowy dystrybucyjnej. Wstępne szacunki (nieoficjalne): X40 Handheld z klawiaturą 29-key i skanerem Standard ~5 200–5 800 zł netto, X45 Handheld z 5G + GPS ~6 000–6 700 zł, X45 Pistol Grip z 48-key i skanerem Long Range 10 m ~7 200–8 200 zł. Skontaktuj się z TAKMA, aby otrzymać aktualną wycenę indywidualną dla swojej floty.',
+    },
+    {
+      question: 'Jakie są alternatywy dla Datalogic Skorpio X40/X45?',
+      answer: 'Główne alternatywy w segmencie kolektorów z klawiaturą fizyczną: Zebra MC3400 (klasa entry-mid, kompaktowy, klawiatura, lżejszy ~365 g, od ~6 500 zł), Zebra MC9400 (klasa premium, większa bateria 7 000 mAh, masywniejszy 729 g, od ~11 000 zł — najpopularniejszy kolektor enterprise w Polsce), Datalogic Skorpio X5 (poprzednia generacja, ten sam ekosystem doków, od 4 858 zł — wybór gdy potrzebujesz natychmiastowej dostępności lub wsparcia Android 11), Honeywell CK67 (alternatywa amerykańska, IP65, brak Qi).',
+    },
+    {
+      question: 'Czy aplikacje napisane pod Skorpio X5 będą działać na X40/X45?',
+      answer: 'Tak — Datalogic gwarantuje pełną kompatybilność API i SDK. Aplikacje WMS napisane pod Skorpio X5 z użyciem Datalogic SDK (Java, Kotlin, Xamarin, .NET MAUI, JavaScript) działają na Skorpio X40/X45 bez modyfikacji kodu. To pozwala na migrację Android 11 → Android 15 w trybie ciągłym (rolling upgrade) — operatorzy nie zauważą zmiany w obsłudze aplikacji WMS. Przed wdrożeniem masowym zalecamy pilotaż 1–3 sztuk z testem w środowisku produkcyjnym (2–4 tygodnie) — TAKMA udostępnia pilotaż na zasadzie pożyczki testowej dla flot 50+ sztuk.',
+    },
+  ],
+  relatedLinks: [
+    { title: 'Datalogic Skorpio X5 — poprzednia generacja, od 4 858 zł', href: '/produkt/datalogic-skorpio-x5' },
+    { title: 'Datalogic Memor 12 — kolektor bez klawiatury (FHD+ 6″)', href: '/produkt/datalogic-memor-12' },
+    { title: 'Datalogic Memor 30 / 35 — kolektor enterprise', href: '/produkt/datalogic-memor-30' },
+    { title: 'Terminale Datalogic — pełna oferta', href: '/terminale-datalogic' },
+    { title: 'Zebra MC3400 — alternatywa entry-mid', href: '/produkt/zebra-mc3400' },
+    { title: 'Zebra MC9400 — alternatywa premium', href: '/produkt/zebra-mc9400' },
+    { title: 'Jak wybrać terminal mobilny? Poradnik 2026', href: '/poradnik/jak-wybrac-terminal-mobilny' },
+    { title: 'Top 10 terminali mobilnych 2026', href: '/poradnik/top-10-terminali-mobilnych-2026' },
+    { title: 'Kolektor danych do inwentaryzacji — który wybrać?', href: '/poradnik/kolektor-danych-do-inwentaryzacji' },
+    { title: 'Zebra TC22 vs Datalogic Memor 12 — porównanie', href: '/poradnik/zebra-tc22-vs-datalogic-memor-12-porownanie' },
+    { title: 'Terminale mobilne — pełny katalog', href: '/terminale-mobilne' },
+    { title: 'Kontakt — wycena floty Skorpio X40/X45', href: '/kontakt' },
+  ],
+},
 ]
 
 // Helper functions

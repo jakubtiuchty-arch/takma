@@ -215,6 +215,17 @@ export default function GuidePage({ guide }: GuidePageProps) {
                 alt={guide.heroImageAlt || guide.title}
                 className="absolute right-0 top-0 h-full w-auto max-w-[70%] object-contain object-right hidden sm:block"
               />
+              {/* Gradient overlay — płynne przejście z czarnego tła na zdjęcie (eliminuje ostrą krawędź).
+                  Zakres dosięga prawej krawędzi (100%), bo obraz z max-w-[70%] object-contain efektywnie
+                  zaczyna się ~50-60% szerokości viewport. */}
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 pointer-events-none hidden sm:block"
+                style={{
+                  background:
+                    'linear-gradient(to right, #020102 0%, #020102 50%, rgba(2,1,2,0.92) 60%, rgba(2,1,2,0.55) 72%, rgba(2,1,2,0.2) 86%, rgba(2,1,2,0) 100%)',
+                }}
+              />
               <div className="relative">
                 <nav className="container-main pt-4 pb-2" aria-label="Breadcrumb">
                   <ol className="flex items-center gap-1.5 text-sm text-white/70 flex-wrap">
