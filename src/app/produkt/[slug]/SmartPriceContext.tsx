@@ -30,10 +30,20 @@ export function useSmartPrice() {
   return ctx
 }
 
-export function SmartPriceProvider({ product, children }: { product: Product; children: React.ReactNode }) {
+export function SmartPriceProvider({
+  product,
+  children,
+  forcedPn,
+}: {
+  product: Product
+  children: React.ReactNode
+  /** Wymusza wybór konkretnego wariantu (z path URL, np. /produkt/[slug]/[size]/[pn]).
+   *  Override'uje ?pn= z searchParams. Używane na statycznej stronie wariantu. */
+  forcedPn?: string
+}) {
   // ?pn=... — gdy klient przyszedł z karty konkretnego wariantu, pokazujemy TEN wariant
   const searchParams = useSearchParams()
-  const urlPn = searchParams?.get('pn') ?? null
+  const urlPn = forcedPn ?? searchParams?.get('pn') ?? null
 
   const allVariants = useMemo(() => {
     if (product.variants && product.variants.length > 0) {

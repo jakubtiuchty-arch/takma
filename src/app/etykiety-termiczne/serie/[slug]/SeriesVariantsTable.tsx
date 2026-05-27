@@ -3,7 +3,7 @@
 import { useState, useMemo, useRef, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import type { ProductVariant } from '@/data/products'
+import { thermalSizeSlug, type ProductVariant } from '@/data/products'
 import type { StockInfo } from '@/lib/ingram'
 import { ChevronDownIcon, HelpCircleIcon, SearchIcon, CloseIcon } from '@/components/ui/Icons'
 
@@ -492,9 +492,15 @@ function VariantCard({
   // Live price (Ingram netto z marżą) — jeśli niedostępna, fallback na priceFrom z products.ts
   const livePrice = stockInfo?.found && stockInfo.price ? stockInfo.price : v.priceFrom
 
+  // URL wariantu: /produkt/[slug]/[size]/[pn] — statyczny, indeksowalny per SKU
+  const sizeSlug = rozmiar ? thermalSizeSlug(rozmiar) : ''
+  const variantHref = sizeSlug
+    ? `/produkt/${productSlug}/${sizeSlug}/${v.partNumber}`
+    : `/produkt/${productSlug}` // fallback gdy wariant nie ma rozmiaru (nie powinno się zdarzyć dla etykiet)
+
   return (
     <Link
-      href={`/produkt/${productSlug}?pn=${encodeURIComponent(v.partNumber)}`}
+      href={variantHref}
       className="group bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-slate-300 hover:shadow-md transition-all flex flex-col"
     >
       {/* Image area — większy obraz, mniejszy padding (wzorzec drukarek) */}

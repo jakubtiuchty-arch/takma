@@ -1,5 +1,11 @@
 import { MetadataRoute } from 'next'
-import { products, subcategories, brandCategories } from '@/data/products'
+import {
+  products,
+  subcategories,
+  brandCategories,
+  thermalSizeSlug,
+  isThermalLabelProduct,
+} from '@/data/products'
 import { guides } from '@/data/guides'
 import { industryPages } from '@/data/industry-content'
 import { thermalLabelSeries } from '@/data/thermal-label-series'
@@ -69,5 +75,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date('2026-05-18'),
   }))
 
-  return [...staticPages, ...brandPillarPages, ...subcategoryPages, ...brandCategoryPages, ...productPages, ...guidePages, ...industryLandingPages, ...thermalSeriesPages]
+  // Warianty etykiet termicznych — /produkt/[slug]/[size]/[pn]
+  // Każdy SKU ma własny URL → indeksowalne w Google dla zapytań typu
+  // "etykiety zebra 102x152" / "PN 3003355" / "Z-Perform 1000D 152x216".
+  const thermalVariantPages: MetadataRoute.Sitemap = products
+    .filter(isThermalLabelProduct)
+    .flatMap((p) =>
+      (p.variants ?? [])
+        .filter((v) => !!v.attributes['Rozmiar'])
+        .map((v) => ({
+          url: `${baseUrl}/produkt/${p.slug}/${thermalSizeSlug(v.attributes['Rozmiar'])}/${v.partNumber}`,
+          lastModified: new Date(p.updatedAt || p.createdAt),
+        })),
+    )
+
+  return [
+    ...staticPages,
+    ...brandPillarPages,
+    ...subcategoryPages,
+    ...brandCategoryPages,
+    ...productPages,
+    ...guidePages,
+    ...industryLandingPages,
+    ...thermalSeriesPages,
+    ...thermalVariantPages,
+  ]
 }

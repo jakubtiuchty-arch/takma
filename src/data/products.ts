@@ -61066,3 +61066,32 @@ export function getBrandCategoriesForManufacturer(manufacturerId: string): Brand
 export function getProductsByManufacturer(manufacturerId: string): Product[] {
   return products.filter(p => p.manufacturerId === manufacturerId)
 }
+
+// ── Thermal label variant URL helpers ──────────────────────────────
+// URL wariantu etykiety termicznej: /produkt/{slug}/{sizeSlug}/{partNumber}
+// Np. "152×216 mm" → "152x216", "101.6×30 mm" → "101.6x30"
+export function thermalSizeSlug(rozmiar: string): string {
+  return rozmiar
+    .toLowerCase()
+    .replace(/\s*mm\s*/g, '')
+    .replace(/×/g, 'x')
+    .replace(/,/g, '.')
+    .replace(/\s+/g, '')
+    .trim()
+}
+
+export function findThermalVariant(
+  product: Product,
+  sizeSlug: string,
+  partNumber: string,
+): ProductVariant | undefined {
+  if (!product.variants) return undefined
+  return product.variants.find(v => {
+    const size = v.attributes['Rozmiar']
+    return v.partNumber === partNumber && size && thermalSizeSlug(size) === sizeSlug
+  })
+}
+
+export function isThermalLabelProduct(product: Product): boolean {
+  return product.subcategoryIds?.includes('etykiety-termiczne') ?? false
+}

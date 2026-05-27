@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { products, type Product, type ProductVariant } from '@/data/products'
+import { products, thermalSizeSlug, type Product, type ProductVariant } from '@/data/products'
 import { thermalLabelSeries } from '@/data/thermal-label-series'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import { ArrowRightIcon } from '@/components/ui/Icons'
@@ -97,9 +97,15 @@ function VariantCard({
   const liveAvailability = stockInfo?.found ? stockInfo.availability : variant.availability
   const livePrice = stockInfo?.found && stockInfo.price ? stockInfo.price : variant.priceFrom
 
+  // URL wariantu: /produkt/[slug]/[size]/[pn] — statyczny, indeksowalny per SKU
+  const sizeSlug = rozmiar ? thermalSizeSlug(rozmiar) : ''
+  const variantHref = sizeSlug
+    ? `/produkt/${product.slug}/${sizeSlug}/${variant.partNumber}`
+    : `/produkt/${product.slug}`
+
   return (
     <Link
-      href={`/produkt/${product.slug}?pn=${encodeURIComponent(variant.partNumber)}`}
+      href={variantHref}
       className="group bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-slate-300 hover:shadow-md transition-all flex flex-col"
     >
       <div className="relative aspect-square bg-white">

@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { notFound } from 'next/navigation'
+import { notFound, permanentRedirect } from 'next/navigation'
 import Link from 'next/link'
 import {
   products,
@@ -8,6 +8,8 @@ import {
   getManufacturerById,
   getSubcategoriesForProduct,
   brandCategories,
+  isThermalLabelProduct,
+  thermalSizeSlug,
 } from '@/data/products'
 import { ProductGallery } from '@/components/product'
 import { Badge } from '@/components/ui'
@@ -106,6 +108,23 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
   // OG image — pełny URL z domeną (nie relative path)
   const ogImage = product.images[0] ? `https://www.takma.com.pl${product.images[0]}` : undefined
 
+  // ── Canonical: dla etykiet termicznych przekazujemy autorytet stronie serii.
+  //  • Z ?pn= → canonical na nowy URL wariantu (komponent też robi 301, to backstop)
+  //  • Bez ?pn= → canonical na /etykiety-termiczne/serie/[slug] (rozwiązuje duplicate content
+  //    między /produkt/zebra-z-perform-1000d a series landing page)
+  const isThermalLabel = isThermalLabelProduct(product)
+  const thermalSeries = isThermalLabel
+    ? thermalLabelSeries.find((s) => s.productId === product.id)
+    : null
+  let canonical = `https://www.takma.com.pl/produkt/${product.slug}`
+  if (isThermalLabel) {
+    if (variant && variantSize) {
+      canonical = `https://www.takma.com.pl/produkt/${product.slug}/${thermalSizeSlug(variantSize)}/${variant.partNumber}`
+    } else if (thermalSeries) {
+      canonical = `https://www.takma.com.pl/etykiety-termiczne/serie/${thermalSeries.slug}`
+    }
+  }
+
   return {
     title,
     description: metaDescription,
@@ -116,9 +135,7 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
       locale: 'pl_PL',
       siteName: 'TAKMA',
       images: ogImage ? [{ url: ogImage, width: 1200, height: 630, alt: variant ? `${product.name}${variantSize ? ` ${variantSize}` : ''}` : product.name }] : undefined,
-      url: variant
-        ? `https://www.takma.com.pl/produkt/${product.slug}?pn=${encodeURIComponent(variant.partNumber)}`
-        : `https://www.takma.com.pl/produkt/${product.slug}`,
+      url: canonical,
     },
     other: {
       ...(product.priceFrom ? {
@@ -133,10 +150,10 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
       images: ogImage ? [ogImage] : undefined,
     },
     alternates: {
-      canonical: `https://www.takma.com.pl/produkt/${product.slug}`,
+      canonical,
       languages: {
-        'pl-PL': `https://www.takma.com.pl/produkt/${product.slug}`,
-        'x-default': `https://www.takma.com.pl/produkt/${product.slug}`,
+        'pl-PL': canonical,
+        'x-default': canonical,
       },
     },
   }
@@ -161,6 +178,15 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // Wybrany wariant z ?pn=... — wpływa na H1, badge, cenę i specyfikację
   const selectedVariant = pickVariant(product, pn)
   const selectedSize = selectedVariant?.attributes['Rozmiar']
+
+  // ── Etykiety termiczne — redirect na nowy, indeksowalny URL wariantu ─
+  // /produkt/[slug]?pn=XXX → /produkt/[slug]/[size]/[pn]
+  // Stare URLe (np. z zewnętrznych linków, kopii UA) lądują na właściwym wariancie.
+  if (isThermalLabelProduct(product) && selectedVariant && selectedSize) {
+    permanentRedirect(
+      `/produkt/${product.slug}/${thermalSizeSlug(selectedSize)}/${selectedVariant.partNumber}`,
+    )
+  }
 
   const category = getCategoryById(product.categoryId)
   const manufacturer = getManufacturerById(product.manufacturerId)
