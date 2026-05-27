@@ -12921,7 +12921,7 @@ export const guides: Guide[] = [
   title: 'Datalogic Skorpio X40 / X45 — premiera 2026: klawiatura, 5G, Android 15',
   seoTitle: 'Skorpio X40/X45 — nowy kolektor Datalogic, 5G, Android 15',
   seoDescription: 'Datalogic Skorpio X40/X45 (2026) — nowy kolektor z klawiaturą fizyczną, skaner Long Range 10 m, Wi-Fi 6E, 5G, Android 15 (do 19), bateria 7 000 mAh, Qi 10 W, kompatybilny z dokami Skorpio X5.',
-  excerpt: 'Datalogic Skorpio X40 i X45 (premiera kwiecień 2026) to nowy kolektor danych z klawiaturą fizyczną — następca Skorpio X5. Qualcomm 4490, 6 GB RAM, Wi-Fi 6/6E, Bluetooth 5.3, opcjonalny 5G (X45), Android 15 z upgrade do Android 19, bateria hot-swap 7 000 mAh, ładowanie bezprzewodowe Qi 10 W, skaner Halogen DE2121 z Green Spot i opcją Long Range 10 m. IP65/67, upadek 2,4 m. Pełna kompatybilność wsteczna ze stacjami dokującymi i akcesoriami Skorpio X5.',
+  excerpt: 'Nowy kolektor danych Datalogic z klawiaturą fizyczną i Android 15 — następca Skorpio X5. Qualcomm 4490, Wi-Fi 6E, opcjonalny 5G + GPS (X45), bateria hot-swap 7 000 mAh z ładowaniem Qi. Kompatybilny z dokami Skorpio X5.',
   category: 'poradnik' as const,
   tags: ['terminale-mobilne', 'kolektor-danych', 'datalogic', 'skorpio', 'skorpio-x40', 'skorpio-x45', '5g', 'android-15', 'wi-fi-6e', 'klawiatura-fizyczna', 'long-range', 'green-spot', 'wireless-charging', 'magazyn', 'logistyka', 'premiera-2026'],
   publishedAt: '2026-05-27',
@@ -13242,6 +13242,380 @@ export const guides: Guide[] = [
     { title: 'Zebra TC22 vs Datalogic Memor 12 — porównanie', href: '/poradnik/zebra-tc22-vs-datalogic-memor-12-porownanie' },
     { title: 'Terminale mobilne — pełny katalog', href: '/terminale-mobilne' },
     { title: 'Kontakt — wycena floty Skorpio X40/X45', href: '/kontakt' },
+  ],
+},
+{
+  slug: 'datalogic-falcon-x60-x65',
+  title: 'Datalogic Falcon X60 / X65 — premiera 2026: heavy-duty kolektor z XLR 20 m, TrueAim™ i 5G',
+  seoTitle: 'Falcon X60/X65 — nowy heavy-duty kolektor Datalogic, XLR 20 m, 5G',
+  seoDescription: 'Datalogic Falcon X60/X65 (2026) — nowy heavy-duty kolektor z klawiaturą podświetlaną, skaner XLR 20 m, TrueAim™ dwustopniowy spust, Wi-Fi 6E, 5G, Android 15 (do 19), bateria hot-swap 7 000 mAh, Qi 10 W, IP65/68, upadek 2,8 m. Pełna kompatybilność z dokami Skorpio X5.',
+  excerpt: 'Heavy-duty kolektor Datalogic dla magazynów wysokiego składowania i pracy outdoor — powrót legendarnej linii Falcon. Skaner XLR do 20 m, dwustopniowy spust TrueAim™, klawiatura podświetlana, Gorilla Glass 7, IP68, upadek 2,8 m. Android 15 z upgrade do 19.',
+  category: 'poradnik' as const,
+  tags: ['terminale-mobilne', 'kolektor-danych', 'datalogic', 'falcon', 'falcon-x60', 'falcon-x65', '5g', 'android-15', 'wi-fi-6e', 'klawiatura-fizyczna', 'xlr', 'extra-long-range', 'trueaim', 'green-spot', 'wireless-charging', 'heavy-duty', 'magazyn-wysokiego-skladowania', 'forklift', 'premiera-2026'],
+  publishedAt: '2026-05-27',
+  updatedAt: '2026-05-27',
+  readTime: '15 min',
+  heroImage: '/images/guides/datalogic-falcon-x60-x65.png',
+  heroImageAlt: 'Datalogic Falcon X60 i X65 — kolektory danych z klawiaturą fizyczną i uchwytem Pistol Grip w magazynie wysokiego składowania nocą',
+  sections: [
+    {
+      id: 'wprowadzenie',
+      heading: 'Datalogic Falcon X60 i X65 — TL;DR',
+      content: `<p><strong>Datalogic Falcon X60</strong> i <strong>Datalogic Falcon X65</strong> to powrót legendarnej linii Falcon Datalogic — heavy-duty kolektor danych z klawiaturą fizyczną i skanerem dalekiego zasięgu, zaprojektowany dla najtrudniejszych warunków magazynowych, logistycznych i outdoor. Premiera kwiecień 2026 (oznaczenie modelu: DS-FALCONX60-X65-EN Rev A). Slogan producenta: „Choose Excellence. Legendary Strength. Reborn." — odwołanie do popularności wcześniejszych Falconów X3 i X4.</p>
+
+<p>Falcon X60/X65 pozycjonuje się <strong>w klasie wyższej niż <a href="/poradnik/datalogic-skorpio-x40-x45">Skorpio X40/X45</a></strong> w portfolio Datalogic. Wspólna platforma: Qualcomm 4490 octa-core 2,4 GHz, Wi-Fi 6/6E, Bluetooth 5.3, Android 15 GMS z aktualizacją do Android 19, bateria 7 000 mAh hot-swap, ładowanie bezprzewodowe Qi EPP 10 W. Heavy-duty wyróżniki Falcona: <strong>skaner XLR (Halogen DE2172) odczytujący kody do 20 m</strong>, <strong>dwustopniowy spust TrueAim™</strong> z precyzyjnym celowaniem, <strong>klawiatura podświetlana w 3 wariantach</strong> (31, 41 i 53 klawisze), ekran 4,3″ WVGA 600 nit z <strong>Gorilla Glass 7</strong>, klasa szczelności <strong>IP65 + IP68</strong> (pełne zanurzenie), upadek <strong>2,8 m</strong> (MIL-STD-810H), 8 GB RAM zamiast 6 GB.</p>
+
+<p>Najważniejsza różnica między modelami: <strong>X60 to wariant magazynowy</strong> (tylko Wi-Fi), <strong>X65 to wariant terenowy</strong> z modułem 5G NR FR1 (3GPP Rel.16) i pełnym GNSS dual-band L1+L5 (GPS, Galileo, GLONASS, BeiDou). Pełna kompatybilność wsteczna z dokami i akcesoriami Skorpio X5 — firmy z istniejącą infrastrukturą X5 mogą wymieniać same terminale, bez wymiany doków.</p>
+
+<p><strong>Dla kogo?</strong> Magazyny wysokiego składowania (XLR 20 m bez drabiny), operacje na wózkach widłowych (forklift operations — odporność i widoczność ekranu w trudnym świetle), załadunek i rozładunek ciężarówek (truck loading &amp; unloading), inspekcje terenowe outdoor (X65 z 5G + GPS), produkcja heavy-duty z kontrolą jakości i traceability, T&amp;L w skali centrum dystrybucyjnego. Ergonomiczna obudowa <strong>550 g</strong> (handheld) lub <strong>700 g</strong> (Pistol Grip XLR ze spustem TrueAim™) — cięższa niż Skorpio, ale zaprojektowana pod intensywne 24/7 użytkowanie.</p>`
+    },
+    {
+      id: 'falcon-vs-skorpio',
+      heading: 'Falcon X60/X65 vs Skorpio X40/X45 — kiedy heavy-duty, kiedy compact?',
+      content: `<p>Datalogic w 2026 r. odświeżył jednocześnie dwie linie kolektorów z klawiaturą fizyczną: <a href="/poradnik/datalogic-skorpio-x40-x45">Skorpio X40/X45</a> (compact) i Falcon X60/X65 (heavy-duty). Wspólnota platformy (procesor, system, łączność, bateria, kompatybilność z dokami X5) sprawia, że wybór zależy od <strong>środowiska pracy</strong> i <strong>profilu zadań</strong>, nie od specyfikacji obliczeniowej.</p>
+
+<table>
+<thead><tr><th>Parametr</th><th>Falcon X60/X65 (heavy-duty)</th><th>Skorpio X40/X45 (compact)</th></tr></thead>
+<tbody>
+<tr><td>Wymiary handheld</td><td><strong>232 × 80 × 42 mm</strong></td><td>210 × 75 × 27 mm</td></tr>
+<tr><td>Waga handheld</td><td><strong>550 g</strong></td><td>445 g</td></tr>
+<tr><td>Waga Pistol Grip</td><td><strong>700 g (XLR)</strong></td><td>575 g</td></tr>
+<tr><td>Wyświetlacz</td><td><strong>4,3″ WVGA, 600 nit, Gorilla Glass 7</strong></td><td>4,0″ WVGA, 450 nit, Gorilla Glass</td></tr>
+<tr><td>Klawiatura</td><td><strong>31 / 41 / 53 klawisze, podświetlana</strong></td><td>29 / 39 / 48 klawiszy, bez podświetlenia</td></tr>
+<tr><td>Spust</td><td><strong>TrueAim™ dwustopniowy</strong></td><td>Standardowy 2× boczny</td></tr>
+<tr><td>Skaner Long Range</td><td>Halogen DE2121-ER do 10 m</td><td>Halogen DE2121-ER do 10 m</td></tr>
+<tr><td>Skaner Extra-long Range</td><td><strong>Halogen DE2172 XLR do 20 m</strong></td><td>—</td></tr>
+<tr><td>Klasa szczelności</td><td><strong>IP65 + IP68</strong> (pełne zanurzenie)</td><td>IP65 + IP67 (chwilowe zanurzenie)</td></tr>
+<tr><td>Upadek</td><td><strong>2,8 m</strong> w temp. pokojowej</td><td>2,4 m w temp. pokojowej</td></tr>
+<tr><td>Upadek w skrajnych temp.</td><td><strong>2,4 m</strong> (−20°C do +50°C)</td><td>1,8 m (−20°C do +50°C)</td></tr>
+<tr><td>Tumble test</td><td><strong>4 000 cykli z 1 m</strong></td><td>3 000 cykli z 1 m</td></tr>
+<tr><td>RAM</td><td><strong>8 GB</strong> LPDDR5</td><td>6 GB LPDDR5</td></tr>
+<tr><td>Flash</td><td>128 GB UFS</td><td>128 GB UFS</td></tr>
+<tr><td>Kamera przednia</td><td><strong>8 MP fixed focus</strong></td><td>—</td></tr>
+<tr><td>Procesor / system</td><td>Qualcomm 4490, Android 15→19</td><td>Qualcomm 4490, Android 15→19</td></tr>
+<tr><td>Bateria</td><td>7 000 mAh hot-swap</td><td>7 000 mAh hot-swap</td></tr>
+<tr><td>Ładowanie Qi EPP</td><td>10 W</td><td>10 W</td></tr>
+<tr><td>5G + GNSS L1+L5 (opcja)</td><td>X65</td><td>X45</td></tr>
+</tbody>
+</table>
+
+<h3>Kiedy Falcon X60/X65</h3>
+<p>Falcon to wybór dla operacji z <strong>najwyższymi wymaganiami środowiskowymi i wytrzymałościowymi</strong>: magazyny wysokiego składowania z regałami powyżej 10 m (skaner XLR 20 m bez drabiny i podestu), centra dystrybucyjne z 24/7 pracą zmianową, operacje na wózkach widłowych (terminal mocowany w uchwycie wózka — większy ekran 600 nit czytelny w jaskrawym świetle bramy załadunkowej), załadunek ciężarówek w doku (odporność na upadki z platformy, deszcz, mróz w chłodni), outdoor (X65 z 5G + GPS dla logistyki paliwowej, ADR, operacji portowych). Klawiatura podświetlana to atut w słabo oświetlonych częściach magazynu i w trakcie zmian nocnych.</p>
+
+<h3>Kiedy Skorpio X40/X45</h3>
+<p>Skorpio to wybór dla operacji w warunkach <strong>kontrolowanych</strong>: retail back-office (kompaktowa obudowa 445 g zamiast 550 g — ważne dla operatora przez 8 godzin), magazyn standardowego składowania (regały do 6–8 m — skaner ER 10 m wystarczy), kompletacja zamówień e-commerce, healthcare i farmacja (lżejszy, łatwiejszy do dezynfekcji), produkcja w czystych halach. Niższa cena (szacunki: X40 od ~5 200 zł vs X60 od ~6 500 zł).</p>
+
+<p><strong>Werdykt:</strong> jeśli twoja operacja wymaga <strong>regałów powyżej 10 m</strong> lub <strong>pełnego zanurzenia w wodzie</strong> (IP68 vs IP67) lub <strong>upadków z 2,8 m</strong> (np. operator wózka widłowego upuszczający terminal z palety na betonową posadzkę) — wybierz Falcon. Dla pozostałych operacji magazynowo-retailowych Skorpio jest lżejszy, tańszy i równie wytrzymały.</p>`
+    },
+    {
+      id: 'x60-vs-x65',
+      heading: 'Falcon X60 vs X65 — który wariant wybrać?',
+      content: `<p>Datalogic stosuje tę samą strategię rozdzielenia portfolio co w Skorpio: X60 to wariant magazynowy bez modułu komórkowego, X65 to wariant terenowy z 5G NR i pełnym GNSS dual-band. Oba modele dzielą identyczny chassis, klawiaturę, skaner, baterię, ekran i system Android — różnice są wyłącznie w module radiowym i nawigacji.</p>
+
+<table>
+<thead><tr><th>Cecha</th><th>Falcon X60</th><th>Falcon X65</th></tr></thead>
+<tbody>
+<tr><td>Wi-Fi 6/6E (802.11ax)</td><td>✓</td><td>✓</td></tr>
+<tr><td>Bluetooth 5.3</td><td>✓</td><td>✓</td></tr>
+<tr><td>NFC (Reader + Card emulator)</td><td>✓</td><td>✓</td></tr>
+<tr><td>5G NR Sub-6 (Rel.16)</td><td>✗</td><td><strong>✓</strong></td></tr>
+<tr><td>4G LTE-Advanced</td><td>✗</td><td>✓</td></tr>
+<tr><td>SIM</td><td>—</td><td>1× nano SIM + 1× eSIM</td></tr>
+<tr><td>Prywatne sieci LTE/5G + CBRS</td><td>✗</td><td><strong>✓</strong></td></tr>
+<tr><td>Operatorzy NA: AT&amp;T, Verizon</td><td>✗</td><td>✓ (certyfikowane)</td></tr>
+<tr><td>GPS</td><td>✗</td><td><strong>Dual-band L1 + L5</strong></td></tr>
+<tr><td>Galileo / GLONASS / BeiDou</td><td>✗</td><td>✓ + A-GPS</td></tr>
+<tr><td>Barometr (Z-location)</td><td>✗</td><td>✓</td></tr>
+<tr><td>Skaner XLR 20 m (opcja)</td><td>✓</td><td>✓</td></tr>
+<tr><td>TrueAim™ dwustopniowy spust</td><td>✓</td><td>✓</td></tr>
+<tr><td>Klawiatura 31/41/53 podświetlana</td><td>✓</td><td>✓</td></tr>
+<tr><td>Bateria 7 000 mAh hot-swap</td><td>✓</td><td>✓</td></tr>
+<tr><td>Ładowanie Qi 10 W + USB-C PD</td><td>✓</td><td>✓</td></tr>
+<tr><td>IP65 + IP68</td><td>✓</td><td>✓</td></tr>
+<tr><td>Upadek 2,8 m (MIL-STD-810H)</td><td>✓</td><td>✓</td></tr>
+<tr><td>Android 15 GMS → 19</td><td>✓</td><td>✓</td></tr>
+</tbody>
+</table>
+
+<h3>Kiedy wybrać Falcon X60</h3>
+<p>X60 to wybór dla operacji <strong>w czterech ścianach</strong>: magazyn wysokiego składowania (do 20 m z XLR), centrum dystrybucji z gęstą siecią Wi-Fi 6E (5G zbędne — Wi-Fi 6E w paśmie 6 GHz daje wyższe pasmo i niższe opóźnienia w warunkach indoor), hala produkcyjna z prywatną siecią Wi-Fi 6E, sortownia paczek z systemem WMS. X60 jest też wyborem flot, które nie chcą zarządzać kosztami transmisji danych z kart SIM (data plan, billing, IoT SIM management dla floty 50–500 urządzeń).</p>
+
+<h3>Kiedy wybrać Falcon X65</h3>
+<p>X65 jest dedykowany dla operacji wymagających <strong>łączności w terenie</strong> i lokalizacji GPS: operacje portowe i lotniskowe (baggage handling — terminal z 5G + GPS na obszarze &gt;1 km², gdzie Wi-Fi nie sięga), logistyka paliwowa i ADR (śledzenie cystern z 5G + dual-band GPS), inspekcje techniczne w energetyce i gazownictwie, dostawy ostatniej mili w transporcie towarowym, sprzedaż mobilna B2B z wizytami u klienta (POS na kolektorze), patrolowanie obiektów (security z geolokacją). Dual-band GNSS L1+L5 daje dokładność lokalizacji 1–3 m vs 5–10 m w starszych modułach L1 single-band. Certyfikacja na operatorów AT&amp;T i Verizon przydatna dla firm z amerykańskim partnerstwem (T&amp;L cross-Atlantic).</p>
+
+<p><strong>Cena</strong>: spodziewamy się dopłaty rzędu 700–1 000 zł netto za moduł 5G + GNSS w X65 vs X60 (analogicznie do różnic cenowych w portfolio kolektorów Wi-Fi vs LTE). Ostateczne ceny netto X60/X65 podamy po publikacji oficjalnego cennika Datalogic dla Polski.</p>`
+    },
+    {
+      id: 'skaner-xlr-trueaim',
+      heading: 'Skaner XLR 20 m + TrueAim™ — heavy-duty wyróżniki Falcon X60/X65',
+      content: `<p>Falcon X60/X65 jest dostępny z <strong>trzema wariantami skanera 2D imager</strong> — to portfolio szersze niż w Skorpio X40/X45 (Standard + ER) o dodatkową opcję XLR (Extra-long Range).</p>
+
+<ul>
+<li><strong>Halogen DE2121-DL Standard</strong> — odczyt kodów 1D i 2D z odległości 0–70 cm. Wybór dla kompletacji przy półce, retail i typowych operacji magazynowych. Czas odczytu pojedynczego kodu &lt;100 ms.</li>
+<li><strong>Halogen DE2121-ER Extended Range</strong> — odczyt do <strong>10 metrów</strong> dla kodów 100% wielkości. Pozwala skanować etykiety lokalizacji z poziomu posadzki na regałach 8–10 m bez drabiny i podestu.</li>
+<li><strong>Halogen DE2172 XLR (Extra-long Range)</strong> — odczyt do <strong>20 metrów</strong>. Skaner dla magazynów wysokiego składowania (high-bay warehousing) z regałami sięgającymi sufitu (12–15 m i więcej). Operator na podłodze skanuje etykietę lokalizacji na samej górze regału — koniec problemu drabiny, podestu nożycowego lub wózka widłowego z platformą. <strong>Green Spot™ widoczny do 10 m</strong> — wizualne potwierdzenie skanowania z dużej odległości.</li>
+</ul>
+
+<h3>TrueAim™ — dwustopniowy spust precyzyjnego celowania</h3>
+<p><strong>TrueAim™</strong> to nowość w Falcon X60/X65 — profesjonalny dwustopniowy spust skanera w uchwycie pistoletowym. Działa jak migawka aparatu fotograficznego:</p>
+<ol>
+<li><strong>Pierwszy stopień nacisku</strong> — uruchamia laser celowniczy (aim) bez aktywacji silnika skanera. Operator precyzyjnie celuje w wybrany kod na etykiecie zawierającej wiele kodów (np. paleta z 6 kartonami, każdy z osobnym EAN-13).</li>
+<li><strong>Drugi stopień (do końca)</strong> — wyzwala odczyt. Skaner odczytuje tylko ten kod, który był pod celownikiem.</li>
+</ol>
+
+<p>Efekt: <strong>radykalne zmniejszenie liczby misreadów</strong> (odczytów nie tego kodu, którego operator chciał) i czas zaoszczędzony na cofaniu skanowań w aplikacji WMS. Według danych Datalogic redukcja misreadów wynosi 70–90% w typowych zastosowaniach z wieloma kodami w polu widzenia skanera. Spust zaprojektowany do pracy w grubych rękawicach roboczych (np. zima w chłodni).</p>
+
+<h3>Green Spot™ widoczny do 10 m</h3>
+<p>Patentowana technologia <strong>Green Spot™</strong> projektuje zielony punkt świetlny na zeskanowanej etykiecie po udanym odczycie. W skanerze XLR Datalogic zwiększył jasność wskaźnika tak, że jest <strong>widoczny do 10 m</strong> od operatora — czyli w połowie zasięgu skanera. Operator skanujący etykietę z odległości 8 m nadal widzi potwierdzenie skanowania z dużej odległości, bez patrzenia w ekran terminala. Oszczędność czasu rzędu 0,3–0,5 sekundy na każde skanowanie — przy 3 000 skanów dziennie to 15–25 minut zaoszczędzonego czasu zmiany na operatora.</p>
+
+<p>Skaner odczytuje wszystkie standardy 1D (Code 128, Code 39, EAN-13/8, UPC-A/E, GS1-128, ITF-14, Codabar) i 2D (QR Code, DataMatrix, GS1 DataMatrix, PDF417, MicroPDF417, Aztec Code, MaxiCode, DotCode, GS1 Digital Link). Dodatkowo kamera tylna 13 MP z autofocusem może służyć jako alternatywne źródło skanowania (Datalogic SDK) lub do <strong>Snap OCR</strong> — automatycznej digitalizacji tekstu (numery seryjne, daty ważności, opisy reklamacji).</p>`
+    },
+    {
+      id: 'klawiatura-podswietlana',
+      heading: 'Klawiatura podświetlana w 3 wariantach (31, 41, 53 klawisze)',
+      content: `<p>Falcon X60/X65 oferuje <strong>klawiaturę z podświetleniem LED</strong> w trzech układach — to istotny upgrade vs Skorpio X40/X45 (klawiatura bez podświetlenia) i kluczowy atut dla pracy zmianowej w warunkach o słabym oświetleniu.</p>
+
+<h3>31-key Numeric — szybka praca z numerami</h3>
+<p>Wariant numeryczny z dużymi klawiszami 0–9 plus klawisze funkcyjne. O 2 klawisze więcej niż w Skorpio (29-key) — Datalogic dodał dedykowane przyciski makro programowalne pod operacje WMS (potwierdź, anuluj). Optymalny do <strong>magazynu z systemem WMS</strong>, gdzie operator wprowadza wyłącznie liczby (ilości, numery lokalizacji, kody EAN). Praca w grubych rękawicach roboczych bez problemów.</p>
+
+<h3>41-key Functional Numeric — kompromis</h3>
+<p>Klawiatura numeryczna z dodatkowymi klawiszami funkcyjnymi (F1–F12 lub programowalnymi). Sprawdza się w <strong>centrach dystrybucji</strong>, gdzie operator pracuje na wielu ekranach aplikacji i potrzebuje skrótów (akceptacja, anulowanie, powrót, drukuj, przejście między widokami). Pojedyncze litery można wprowadzać, przytrzymując klawisz Shift — wystarczające do skanowania numerów części (part numbers) zawierających litery.</p>
+
+<h3>53-key Alphanumeric — pełna klawiatura QWERTY</h3>
+<p>Pełna klawiatura QWERTY w układzie kolektora. Wybór dla operacji wymagających <strong>intensywnego wprowadzania tekstu</strong>: opisy reklamacji, notatki serwisowe, kontrole jakości (QC), audyty BHP, rejestracja przyjęć od dostawców z opisem szkód, audyty traceability (track &amp; trace). Najszersza klawiatura w portfolio Datalogic — 53 vs 48 klawiszy w Skorpio X45 Pistol Grip.</p>
+
+<h3>Podświetlenie LED — atut zmianowy</h3>
+<p>Wszystkie 3 warianty mają <strong>podświetlenie klawiszy LED</strong> z możliwością regulacji jasności i automatyczną aktywacją w warunkach słabego oświetlenia (czujnik ambient light). Korzyści:</p>
+<ul>
+<li><strong>Zmiany nocne i wczesno-poranne</strong> — operator widzi klawisze bez dodatkowego oświetlenia w hali</li>
+<li><strong>Chłodnie i mroźnie</strong> — pomieszczenia często słabo oświetlone z powodów energetycznych</li>
+<li><strong>Wnętrza naczep ciężarówek</strong> — załadunek/rozładunek w półmroku</li>
+<li><strong>Outdoor po zachodzie słońca</strong> — logistyka portowa, paliwowa</li>
+</ul>
+
+<p>Wszystkie 3 warianty mają <strong>2 boczne klawisze skanowania</strong> (lewy i prawy — leworęczność/praworęczność), <strong>klawisz Power On/Off</strong> oraz <strong>dwustopniowy spust TrueAim™</strong> w uchwycie pistoletowym. Dodatkowo 3 software keys Android (Back, Home, Recent) na ekranie dotykowym — operator może wyłączyć je za pomocą Datalogic Launcher (tryb kiosk), jeśli pracuje wyłącznie w jednej aplikacji WMS.</p>
+
+<p><strong>Field-detachable handle</strong> — uchwyt pistoletowy ze spustem TrueAim™ można szybko zdejmować i zakładać bez śrubokrętu. Pozwala przejść z trybu handheld (kompletacja przy półce, inwentaryzacja) do trybu pistol grip XLR (intensywne skanowanie seryjne na rampie załadunkowej lub w high-bay warehousing) w 5 sekund.</p>`
+    },
+    {
+      id: 'wytrzymalosc',
+      heading: 'Wytrzymałość heavy-duty: IP65/68, MIL-STD-810H 2,8 m, Gorilla Glass 7',
+      content: `<p>Falcon X60/X65 jest zaprojektowany pod najwyższe wymagania środowiskowe w portfolio Datalogic. <strong>Gorilla Glass 7</strong> na ekranie dotykowym (najnowsza generacja Corning, wprowadzona w 2024 r.) — 2× większa odporność na upadki vs Gorilla Glass 3 stosowane w Skorpio X5 i wcześniejszych kolektorach.</p>
+
+<table>
+<thead><tr><th>Test</th><th>Wynik</th><th>Standard</th></tr></thead>
+<tbody>
+<tr><td>Upadek na beton</td><td><strong>Wielokrotnie 2,8 m</strong> w temperaturze pokojowej</td><td>MIL-STD-810H</td></tr>
+<tr><td>Upadek w skrajnych temperaturach</td><td><strong>Wielokrotnie 2,4 m</strong> (−20°C do +50°C)</td><td>MIL-STD-810H</td></tr>
+<tr><td>Tumble test</td><td><strong>4 000 cykli z 1,0 m</strong></td><td>IEC 60068-2-32 Proc. 2</td></tr>
+<tr><td>Klasa szczelności</td><td><strong>IP65 + IP68</strong> (pełne zanurzenie)</td><td>IEC 60529</td></tr>
+<tr><td>Temperatura pracy</td><td>−20°C do +50°C</td><td>—</td></tr>
+<tr><td>Temperatura magazynowania</td><td>−30°C do +70°C</td><td>—</td></tr>
+<tr><td>Odporność chemiczna</td><td>NaClO 0,8% / Windex / Formula 409 / etanol 70% / izopropanol 70% / H₂O₂ 3%</td><td>—</td></tr>
+<tr><td>Wyładowania ESD</td><td>15 kV (powietrze) / 8 kV (kontakt)</td><td>—</td></tr>
+<tr><td>Ekran</td><td><strong>Gorilla Glass 7</strong> z optycznym łączeniem</td><td>Corning</td></tr>
+<tr><td>Jasność wyświetlacza</td><td><strong>600 nit</strong> (typical)</td><td>—</td></tr>
+</tbody>
+</table>
+
+<p><strong>IP65 + IP68</strong> — pełna ochrona przed kurzem (6 = ochrona absolutna, brak wnikania pyłu) oraz odporność na strumień wody pod ciśnieniem (5) ORAZ na pełne zanurzenie w wodzie (8). To kombinacja przewyższająca Skorpio X40/X45 (IP65 + IP67 — IP67 to tylko chwilowe zanurzenie do 1 m na 30 minut, IP68 to pełne zanurzenie zgodnie z deklaracją producenta — Datalogic deklaruje minimum 1,5 m na 30 minut). Praktyczna różnica: Falcon X60/X65 można <strong>upuścić w kałużę w doku załadunkowym</strong> bez ryzyka, a po wyciągnięciu nadal pracuje.</p>
+
+<p><strong>Upadek 2,8 m</strong> w temperaturze pokojowej — to o 40 cm więcej niż Skorpio X40/X45 (2,4 m) i o 60 cm więcej niż <a href="/produkt/zebra-mc3400">Zebra MC3400</a>. <strong>4 000 cykli tumble z 1 m</strong> (vs 3 000 w Skorpio) — Datalogic deklaruje wytrzymałość na ekstremalne zużycie codzienne (typowy operator wózka widłowego upuszcza/szarpie terminal kilkadziesiąt razy dziennie).</p>
+
+<p><strong>Gorilla Glass 7</strong> na ekranie dotykowym to nowość w portfolio Datalogic — wcześniejsze kolektory (Skorpio X5, Memor 30/35) używały Gorilla Glass 3 lub starszego SR. Corning deklaruje dla GG7: <strong>2× większa odporność na upadki</strong> niż GG3, do 1 m na poziomy beton (test producenta szkła; w aplikacji terminala chronionego ramą z mikroSi wielokrotnie więcej). W praktyce: ekran terminala upuszczonego przez operatora wózka widłowego z platformy 2,5 m nie pęka — to wprost zmniejsza koszty wymiany ekranów w cyklu życia floty 100 sztuk o 10–15 tys. zł rocznie.</p>
+
+<p><strong>Odporność chemiczna</strong> przetestowana na popularne środki dezynfekujące używane w retail (Windex, Glassex z amoniakiem, Formula 409) i healthcare (NaClO 0,8% — typowy roztwór podchlorynu sodu do dezynfekcji powierzchni szpitalnych, izopropanol 70%, etanol 70%, woda utleniona 3%). Kolektor można dezynfekować bez ryzyka uszkodzenia obudowy lub ekranu (Gorilla Glass 7 z optycznym łączeniem i anty-odciskową powłoką).</p>
+
+<p><strong>Dla porównania</strong>: <a href="/produkt/zebra-mc9400">Zebra MC9400</a> wytrzymuje 2,4 m upadek MIL-STD-810H, IP65 + IP67. <a href="/produkt/zebra-mc3400">Zebra MC3400</a> — 1,8 m / IP65. Honeywell CK67 — 1,8 m / IP65. <strong>Falcon X60/X65 jest najwytrzymalszym kolektorem klawiaturowym dostępnym na rynku w 2026 r.</strong> — żaden konkurent nie deklaruje 2,8 m upadku ani IP68.</p>`
+    },
+    {
+      id: 'bateria-qi',
+      heading: 'Bateria 7 000 mAh + hot-swap + ładowanie bezprzewodowe Qi 10 W',
+      content: `<p><strong>Bateria Falcon X60/X65: 7 000 mAh (25,4 Wh)</strong> Li-Ion — taka sama jak w Skorpio X40/X45 i <a href="/produkt/zebra-mc9400">Zebra MC9400</a>. To największa bateria w klasie kolektorów z fizyczną klawiaturą. W praktyce wystarcza na <strong>1–2 zmiany robocze</strong> (12–18 h) przy intensywnym skanowaniu (3 000+ skanów dziennie + transmisja Wi-Fi/5G + ekran włączony) lub całą dobę pracy w trybie standby z okazjonalnym użyciem.</p>
+
+<h3>Hot-swap — wymiana bez wyłączania</h3>
+<p>Bateria wymieniana w 30 sekund <strong>bez wyłączania terminala</strong> i bez utraty stanu aplikacji WMS. Wewnętrzny superkondensator podtrzymuje pamięć RAM i sesję sieciową przez ~60 sekund po wyjęciu baterii. Operator wymienia rozładowaną baterię na świeżą z 4-slotowej ładowarki (akcesorium kompatybilne z Skorpio X5 — SX40/SX45/FX60/FX65 4-slot battery charger).</p>
+
+<h3>Ładowanie bezprzewodowe WPC Qi EPP 10 W</h3>
+<p>Falcon X60/X65 wspiera standard <strong>Qi EPP (Extended Power Profile) 10 W</strong> przez WPC. Pełna kompatybilność z dokami Skorpio X5 (single dock wireless charging, 3-slot dock wireless charging) i z dowolną ładowarką Qi 10 W+ na rynku. Zalety vs ładowanie kontaktowe (pin charging):</p>
+
+<ul>
+<li><strong>Brak zużycia styków</strong> — najczęściej psująca się część w klasycznych dokach to skorodowane piny (operator zostawia terminal w doku w wilgotnym magazynie, piny utleniają się i przestają ładować).</li>
+<li><strong>Brak gromadzenia się brudu i kurzu</strong> — typowy problem w magazynach z kurzem papierowym (etykiety, pyły z palet) i piaskiem na placach załadunkowych.</li>
+<li><strong>Brak nakładu czasu na obsługę serwisową</strong> — dok Qi nie wymaga konserwacji, co redukuje koszty MRO dla floty 50–500 urządzeń.</li>
+</ul>
+
+<p>Dodatkowo: <strong>ładowanie przewodowe przez USB-C PD</strong> (Type-C, dolny port I/O) jako alternatywa. Drugi port USB-C u góry obudowy obsługuje <strong>USB 3.2 gen 1</strong> (Host + Client) — można podłączyć dysk SSD do bulk transferu danych z dziennej zmiany, drukarkę etykiet w trybie USB lub kontroler Ethernet do prywatnej sieci.</p>
+
+<h3>Gigabit Ethernet przez multi-slot dock</h3>
+<p>Doki multi-slot (4SD WRD — charge only, 4SD Eth — charge + data) obsługują <strong>Gigabit Ethernet</strong> — ważne dla wdrożeń z prywatną siecią (Industry 4.0, military, healthcare) gdzie Wi-Fi nie jest preferowane. Dok ładuje terminal i jednocześnie podpina go do sieci Ethernet 1 Gbit.</p>`
+    },
+    {
+      id: 'android-15-cykl-zycia',
+      heading: 'Android 15 z upgrade do Android 19 + Datalogic Mobility Suite',
+      content: `<p>Falcon X60/X65 startuje z systemem <strong>Android 15 GMS</strong> (Google Mobile Services — pełen Play Store i Google services) i jest <strong>upgradowalny do Android 19</strong>. Oznacza to około <strong>4–5 lat aktualizacji bezpieczeństwa (security patches) i aktualizacji funkcjonalnych</strong> z fabryki, czyli planowane wsparcie do około 2030 r. Dla floty kupowanej w 2026 r. z planem 5-letniej eksploatacji — wsparcie pokrywa cały cykl życia.</p>
+
+<p>Datalogic posiada certyfikację <strong>Android Enterprise Recommended (AER)</strong> dla całej rodziny Falcon — to oficjalna pieczęć Google potwierdzająca, że urządzenie spełnia rygorystyczne wymagania dla enterprise: 5+ lat aktualizacji bezpieczeństwa, wsparcie zero-touch enrollment, kompatybilność z każdym EMM/UEM (Microsoft Intune, SOTI MobiControl, VMware Workspace ONE, 42Gears, Ivanti Neurons, Ivanti Velocity, StayLinked Smart TE).</p>
+
+<h3>Datalogic Mobility Suite — pełne narzędzia dla IT</h3>
+<p>Identyczny stack jak w Skorpio X40/X45, dostępny pod <code>datalogic.github.io</code>:</p>
+<ul>
+<li><strong>Scan2Deploy</strong> — bulk enrollment przez QR (10 s/urządzenie)</li>
+<li><strong>OEMConfig</strong> — konfiguracja przez dowolny EMM/UEM</li>
+<li><strong>AE QR Generator</strong>, <strong>Wi-Fi QR Generator</strong> — dystrybucja konfiguracji</li>
+<li><strong>Logger</strong>, <strong>Wi-Fi Guard</strong> — diagnostyka i statystyki Wi-Fi (RSSI, retries, throughput) do identyfikacji dead zones w magazynie</li>
+<li><strong>Battery Manager + Smart Charge</strong> — analiza zużycia baterii i optymalizacja ładowania (np. zatrzymanie ładowania na 80% i wznowienie 30 minut przed zmianą — wydłuża życie baterii o 30%)</li>
+<li><strong>Wedge + Visual Formatter</strong> — formatowanie zeskanowanych kodów bez kodowania aplikacji (parsing GS1, sklejanie pól, podział pól)</li>
+<li><strong>SoftSpot</strong> — programowalny trigger skanowania na ekranie (dla aplikacji bez fizycznego triggera)</li>
+<li><strong>Pocket Mode</strong> — wyłączenie przypadkowych dotyków ekranu, gdy terminal jest w kieszeni lub uchwycie wózka</li>
+<li><strong>Snap OCR</strong> — digitalizacja tekstu z kamery (numery seryjne, daty ważności, dokumenty od dostawców)</li>
+<li><strong>Datalogic Shield</strong> — własne security patches Datalogic w ramach kontraktu EASEOFCARE</li>
+<li><strong>Launcher (kiosk mode)</strong>, <strong>Enterprise Browser</strong>, <strong>Integrity KIT</strong> — pełen pakiet bezpieczeństwa</li>
+</ul>
+
+<h3>Datalogic Connect — chmurowa platforma IoT</h3>
+<p>Datalogic Connect to <strong>chmurowa platforma do zdalnego zarządzania flotą</strong>. Pozwala IT zobaczyć w jednym dashboardzie wszystkie wdrożone kolektory Datalogic (Memor + Skorpio + Falcon): status baterii, lokalizację GPS (X65), wersję Androida, ostatni heartbeat, błędy aplikacji. Integruje się ze wszystkimi MDM/EMM/TE (Terminal Emulator) i zastępuje konieczność oddzielnych narzędzi monitoringu floty.</p>
+
+<p>SDK dla deweloperów: <strong>Java, Kotlin, Xamarin, .NET MAUI, JavaScript</strong>. Aplikacje napisane pod Skorpio X40/X45 lub Skorpio X5 (Datalogic SDK) działają na Falcon X60/X65 bez modyfikacji kodu — Datalogic gwarantuje pełną kompatybilność API. Wsparcie dla <strong>Ivanti Velocity</strong>, <strong>StayLinked Smart TE</strong> (terminal emulation TE 5250/3270/VT — integracja z legacy systemami AS/400 i mainframe) oraz <strong>Zello PTT</strong> (push-to-talk komunikacja głosowa dla operatorów w magazynie).</p>`
+    },
+    {
+      id: 'zastosowania',
+      heading: 'Zastosowania branżowe — gdzie sprawdzi się Falcon X60/X65',
+      content: `<p>Datalogic pozycjonuje Falcon X60/X65 dla operacji wymagających <strong>najwyższej wytrzymałości i zasięgu skanera</strong>. Z naszego doświadczenia z wdrożeniami serii Memor i Skorpio wynika, że profil użytkownika Falcon dotyczy operatorów spędzających <strong>całą zmianę w trudnym fizycznie środowisku</strong> — wózki widłowe, doki załadunkowe, operacje portowe, outdoor.</p>
+
+<h3>Magazyn i logistyka (Transportation &amp; Logistics)</h3>
+<p>Receiving, putaway &amp; replenishment, picking &amp; order fulfilment, <strong>forklift operations</strong> (najważniejsza kategoria dla Falcona — terminal w uchwycie wózka widłowego, klawiatura podświetlana czytelna w cieniu, ekran 600 nit czytelny w bramie z silnym kontrastem światła), truck loading &amp; unloading (załadunek/rozładunek ciężarówek na rampie — IP68 chroni przed deszczem, 2,8 m upadek chroni przed wypadnięciem z platformy), inventory, returns &amp; baggage management (operacje portowe i lotniskowe — X65 z 5G + GPS dla obszarów &gt;1 km²).</p>
+
+<h3>Produkcja (Manufacturing)</h3>
+<p>Intralogistics (transport wewnętrzny między stanowiskami), receiving, putaway &amp; inventory, picking, shipping &amp; work order management, <strong>quality control, traceability &amp; kitting</strong> — pełna identyfikowalność partii produkcyjnych z GS1 DataMatrix i DotCode (skaner XLR z odległości 20 m czyta etykiety na transporterze, gdzie operator stoi z boku). Klawiatura 53-key przydatna do wprowadzania długich opisów wad, pomiarów QC, numerów certyfikatów.</p>
+
+<h3>Retail</h3>
+<p>Store inventory &amp; replenishment, online order fulfilment (kompletacja zamówień ze sklepu — click &amp; collect), price check &amp; update (zmiana cenówek), goods receiving (przyjęcia od dostawców), workforce management. Falcon X60/X65 jest tutaj wyborem dla <strong>retail wielkopowierzchniowego</strong> (DIY market, hipermarket, hurtownia cash&amp;carry) — Skorpio X40/X45 bardziej naturalny dla retail kompaktowego.</p>
+
+<h3>Healthcare</h3>
+<p>Receiving &amp; quality check (przyjęcia produktów farmaceutycznych z kontrolą jakości), warehousing &amp; inventory management (apteki szpitalne, centra dystrybucji leków), order fulfilment (kompletacja zleceń dla oddziałów), returns &amp; batch tracking (zwroty, śledzenie serii). Argumenty: <strong>odporność chemiczna na środki dezynfekujące szpitalne</strong> (NaClO 0,8%, izopropanol 70%, etanol 70%, woda utleniona 3%), <strong>obsługa GS1 DataMatrix</strong> i <strong>DotCode</strong> (kody serializacyjne wymagane przez Falsified Medicines Directive UE), <strong>klawiatura 53-key z podświetleniem</strong> do wprowadzania numerów partii i dat ważności w słabo oświetlonych magazynach aptek szpitalnych.</p>
+
+<p>Dla porównania alternatyw: <a href="/produkt/zebra-mc9400">Zebra MC9400</a> (klasa premium, najpopularniejszy kolektor heavy-duty w Polsce, ~11 000 zł — bezpośredni konkurent Falcona), <a href="/produkt/zebra-mc3400">Zebra MC3400</a> (klasa entry-mid, lżejszy, alternatywa dla Skorpio, nie Falcona), <a href="/produkt/datalogic-skorpio-x5">Datalogic Skorpio X5</a> (poprzednia generacja w portfolio Datalogic, ten sam ekosystem doków, od 4 858 zł). Szczegółowe porównanie: <a href="/poradnik/kolektor-danych-do-inwentaryzacji">Kolektor danych do inwentaryzacji — który wybrać?</a> oraz <a href="/poradnik/top-10-terminali-mobilnych-2026">Top 10 terminali mobilnych 2026</a>.</p>`
+    },
+    {
+      id: 'kompatybilnosc-x5',
+      heading: 'Kompatybilność wsteczna z dokami Skorpio X5',
+      content: `<p>Datalogic kontynuuje strategię wspólnej infrastruktury: <strong>Falcon X60/X65 jest fizycznie kompatybilny z dokami i akcesoriami Skorpio X5 oraz Skorpio X40/X45</strong>. Firmy posiadające już flotę X5 z infrastrukturą doków mogą wymieniać terminale na Falcon X60/X65 <strong>bez wymiany doków</strong>. Oszczędność rzędu 30–50% kosztu wdrożenia.</p>
+
+<p><strong>Kompatybilne akcesoria Skorpio X5</strong> (działają z Falcon X60/X65 i Skorpio X40/X45):</p>
+<ul>
+<li>Skorpio X5 single dock ze stykami kontaktowymi</li>
+<li>Skorpio X5 single dock z ładowaniem bezprzewodowym Qi</li>
+<li>Skorpio X5 3-slot dock ze stykami</li>
+<li>Skorpio X5 3-slot dock z ładowaniem bezprzewodowym Qi</li>
+<li>Skorpio X5 4-slot battery charger (ładowarka samodzielnych baterii)</li>
+<li>Multi-slot dok 4SD WRD (Charge only) i 4SD Ethernet (Charge + data, Gigabit)</li>
+</ul>
+
+<p><strong>Dedykowane akcesoria Falcon X60/X65</strong>:</p>
+<ul>
+<li>Belt Holster Falcon X60/X65 (kabura dla większej obudowy 232×80 mm)</li>
+<li>Hand-strap (paski na dłoń) — pakiet 5 sztuk SX40/SX45/FX60/FX65 (kompatybilność wsteczna)</li>
+<li>FX60/FX65 Rubber boot (gumowa osłona) — Handheld &amp; Pistol Grip</li>
+</ul>
+
+<p><strong>Strategia upgrade z istniejącej floty Skorpio X5 lub Falcon X3/X4</strong>: jeśli posiadasz 20–500 sztuk <a href="/produkt/datalogic-skorpio-x5">Skorpio X5</a> lub legacy Falcon wdrożonych w 2018–2024, najtańszą ścieżką jest <strong>wymiana wyłącznie terminali</strong> (zachowując doki, ładowarki, paski, kabury). Pozwala przeprowadzić migrację z Windows CE (Falcon X3/X4) lub Android 11 (Skorpio X5) na Android 15 w trybie ciągłym (rolling upgrade) bez wymiany infrastruktury sieciowej i ładowania. Datalogic gwarantuje pełną kompatybilność API SDK — aplikacje WMS napisane pod Skorpio X5 i Skorpio X40/X45 działają na Falcon X60/X65 bez modyfikacji kodu.</p>
+
+<p>Wsparcie techniczne i sprzedaż Datalogic dla Polski: <a href="/kontakt">TAKMA — autoryzowany partner Datalogic</a>. Wycena floty, pilotaż, plan migracji z Skorpio X5 lub Falcon X4 na Falcon X60/X65, dostawa, konfiguracja, szkolenie operatorów, kontrakt EASEOFCARE — wszystko w jednym pakiecie.</p>`
+    },
+    {
+      id: 'cena-dostepnosc',
+      heading: 'Cena i dostępność Falcon X60 / X65 w Polsce',
+      content: `<p>Falcon X60/X65 to nowość rynkowa <strong>z premierą światową w kwietniu 2026 r.</strong> (oznaczenie wersji karty katalogowej Datalogic: DS-FALCONX60-X65-EN Rev A 20260421). Dostępność w Polsce (TAKMA jako autoryzowany partner Datalogic): pierwsze sztuki spodziewane w <strong>Q3 2026</strong>, sprzedaż wolumenowa Q4 2026 / Q1 2027. Oficjalny polski cennik MSRP zostanie opublikowany po podpisaniu umowy dystrybucyjnej.</p>
+
+<p>Wstępne szacunki cenowe (na podstawie pozycjonowania Falcon vs Skorpio X40/X45 i analogii do <a href="/produkt/zebra-mc9400">Zebra MC9400</a>):</p>
+
+<table>
+<thead><tr><th>Konfiguracja</th><th>Szacowana cena netto</th></tr></thead>
+<tbody>
+<tr><td>Falcon X60 Handheld, 31-key, skaner Standard, Wi-Fi 6E</td><td>~6 500–7 500 zł</td></tr>
+<tr><td>Falcon X60 Pistol Grip, 41-key, skaner ER 10 m</td><td>~7 500–8 800 zł</td></tr>
+<tr><td>Falcon X60 Pistol Grip, 53-key, skaner XLR 20 m</td><td>~9 000–10 500 zł</td></tr>
+<tr><td>Falcon X65 Handheld, 31-key, skaner Standard, 5G + GPS</td><td>~7 500–8 500 zł</td></tr>
+<tr><td>Falcon X65 Pistol Grip, 53-key, skaner XLR 20 m, 5G + GPS</td><td>~10 000–12 000 zł</td></tr>
+</tbody>
+</table>
+
+<p><strong>Szacunki nieoficjalne</strong> — aktualizujemy ten wpis po publikacji cennika Datalogic dla Polski. <a href="/kontakt">Skontaktuj się z TAKMA</a>, aby otrzymać aktualną wycenę indywidualną dla swojej floty (rabat wolumenowy od 10 sztuk, kontrakt EASEOFCARE, pilotaż 1–3 sztuk przed zamówieniem masowym).</p>
+
+<p>Jeśli potrzebujesz heavy-duty kolektora <strong>natychmiast</strong> (przed Q3 2026), alternatywy z natychmiastową dostępnością z TAKMA:</p>
+<ul>
+<li><a href="/produkt/zebra-mc9400">Zebra MC9400</a> — od ~11 000 zł netto, klasa premium, najpopularniejszy heavy-duty kolektor enterprise w Polsce, 7 000 mAh, IP65 + IP67, upadek 2,4 m</li>
+<li><a href="/produkt/datalogic-skorpio-x5">Datalogic Skorpio X5</a> XLR — od 4 858 zł netto, skaner XLR do 20 m, ten sam ekosystem doków X5</li>
+<li><a href="/produkt/zebra-mc3400">Zebra MC3400</a> — klasa entry-mid, lżejszy, do magazynów standardowego składowania</li>
+</ul>
+
+<p>Jeśli rozważasz <strong>Falcon vs Skorpio X40/X45</strong>: kompaktowy Skorpio jest tańszy o ~1 500–2 500 zł i lżejszy o ~100 g, ale brakuje mu opcji skanera XLR 20 m, klawiatury podświetlanej i ochrony IP68. Dla operacji magazynowych do regałów 8–10 m, retail back-office i typowego pickingu — Skorpio wystarczy. Dla high-bay warehousing, forklift operations, outdoor i pracy w warunkach pełnego zanurzenia w wodzie — wybierz Falcon. Pełne porównanie: <a href="/poradnik/datalogic-skorpio-x40-x45">Datalogic Skorpio X40/X45 — przegląd nowości</a>.</p>`
+    },
+  ],
+  faq: [
+    {
+      question: 'Co to jest Datalogic Falcon X60/X65?',
+      answer: 'Datalogic Falcon X60 i X65 to nowy heavy-duty kolektor danych z klawiaturą fizyczną — premiera kwiecień 2026. Powrót legendarnej linii Falcon Datalogic. Specyfikacja: procesor Qualcomm 4490 octa-core 2,4 GHz, 8 GB RAM, 128 GB Flash UFS, ekran 4,3″ WVGA 600 nit z Gorilla Glass 7, Android 15 GMS z upgrade do Android 19, Wi-Fi 6/6E, Bluetooth 5.3. Falcon X65 dodatkowo: 5G NR Sub-6 (Rel.16), GNSS dual-band L1+L5, barometr. Bateria 7 000 mAh hot-swap, ładowanie bezprzewodowe WPC Qi EPP 10 W, IP65/68, upadek 2,8 m (MIL-STD-810H), 4 000 cykli tumble. 3 warianty klawiatury podświetlanej (31/41/53 klawisze), dwustopniowy spust TrueAim™ i opcjonalny skaner Halogen DE2172 XLR do 20 m.',
+    },
+    {
+      question: 'Czym Falcon X60 różni się od X65?',
+      answer: 'Falcon X60 i X65 dzielą identyczny chassis, klawiaturę, skaner, baterię, ekran i system Android. Różnice są wyłącznie w module radiowym: X65 ma 5G NR Sub-6 (3GPP Rel.16) + 4G LTE-Advanced, 1× nano SIM + 1× eSIM, prywatne sieci LTE/5G i CBRS, certyfikację operatorów AT&amp;T i Verizon, GNSS dual-band L1+L5 (GPS, Galileo, GLONASS, BeiDou, A-GPS) oraz barometr. X60 ma tylko Wi-Fi 6/6E + Bluetooth 5.3 + NFC, bez modułu komórkowego i bez GPS. Wybór X60 — dla operacji w czterech ścianach (magazyn wysokiego składowania, centrum dystrybucji, hala produkcyjna). Wybór X65 — dla pracowników terenowych (operacje portowe i lotniskowe, logistyka paliwowa i ADR, inspekcje, sprzedaż mobilna, kurierzy).',
+    },
+    {
+      question: 'Falcon X60/X65 vs Skorpio X40/X45 — kiedy który?',
+      answer: 'Obie linie dzielą wspólną platformę cyfrową: Qualcomm 4490, Android 15→19, Wi-Fi 6E, BT 5.3, bateria 7 000 mAh hot-swap, ładowanie Qi 10 W, kompatybilność z dokami Skorpio X5. Falcon to klasa heavy-duty: większy ekran (4,3″ 600 nit, Gorilla Glass 7 vs 4,0″ 450 nit GG), klawiatura podświetlana, opcja skanera XLR 20 m, dwustopniowy spust TrueAim™, IP65/68 (pełne zanurzenie) vs IP65/67, upadek 2,8 m vs 2,4 m, 4 000 cykli tumble vs 3 000, 8 GB RAM vs 6 GB, kamera przednia 8 MP. Wagi: Falcon 550 g handheld / 700 g Pistol Grip XLR vs Skorpio 445 g / 575 g. Wybór: Falcon dla high-bay warehousing (regały powyżej 10 m), forklift operations, outdoor, pełnego zanurzenia w wodzie. Skorpio dla retail, kompletacji e-commerce, magazynu standardowego składowania (do 8 m). Cena Falcona jest o ~1 500–2 500 zł wyższa.',
+    },
+    {
+      question: 'Czym jest skaner XLR w Falcon X60/X65 i co odczytuje na 20 m?',
+      answer: 'XLR to skrót od Extra-long Range — Datalogic Halogen DE2172, jeden z trzech wariantów skanera dostępnych w Falcon X60/X65 (obok Standard DE2121-DL i Extended Range DE2121-ER). Odczyt kodów 1D i 2D z odległości do 20 metrów dla kodów 100% wielkości (Code 128, EAN-13, GS1-128, ITF-14, QR Code, DataMatrix). Auto-focus z technologią IntelliFocus dostosowuje punkt ostrości w czasie rzeczywistym. Patentowany Green Spot™ widoczny do 10 m — operator skanujący kod z odległości 8 m widzi zielone potwierdzenie odczytu bez patrzenia w ekran. XLR jest przeznaczony do high-bay warehousing (magazynów wysokiego składowania) z regałami 12–15 m i wyżej — operator skanuje etykietę lokalizacji z podłogi, bez drabiny, podestu nożycowego lub wózka widłowego z platformą.',
+    },
+    {
+      question: 'Czym jest TrueAim™ w Falcon X60/X65?',
+      answer: 'TrueAim™ to profesjonalny dwustopniowy spust skanera w uchwycie pistoletowym Falcon X60/X65 (Pistol Grip). Działa jak migawka aparatu fotograficznego: (1) pierwszy stopień nacisku uruchamia laser celowniczy bez aktywacji silnika skanera — operator precyzyjnie celuje w wybrany kod na etykiecie zawierającej wiele kodów (np. paleta z 6 kartonami, każdy z osobnym EAN-13); (2) drugi stopień (do końca) wyzwala odczyt — skaner odczytuje tylko ten kod, który był pod celownikiem. Efekt: redukcja misreadów (odczytów nie tego kodu) o 70–90% w typowych zastosowaniach z wieloma kodami w polu widzenia. Czas zaoszczędzony na cofaniu skanowań w aplikacji WMS to istotny argument operacyjny dla intensywnego skanowania seryjnego w magazynie. Spust zaprojektowany pod pracę w grubych rękawicach roboczych.',
+    },
+    {
+      question: 'Czy Falcon X60/X65 jest kompatybilny z dokami Skorpio X5?',
+      answer: 'Tak — Datalogic gwarantuje pełną kompatybilność wsteczną z infrastrukturą Skorpio X5. Działają z Falcon X60/X65 i Skorpio X40/X45: single dock ze stykami i z ładowaniem Qi, 3-slot dock ze stykami i z Qi, 4-slot battery charger, multi-slot dok 4SD WRD (Charge only) i 4SD Ethernet (Gigabit). Kompatybilne są również akcesoria: hand-strap, paski na dłoń (pakiet 5 sztuk SX40/SX45/FX60/FX65). Dedykowane akcesoria Falcon: Belt Holster Falcon X60/X65 i FX60/FX65 Rubber boot (gumowa osłona). Firmy z istniejącą flotą Skorpio X5 mogą migrować tylko terminale, zachowując całą infrastrukturę doków — oszczędność 30–50% kosztu wdrożenia.',
+    },
+    {
+      question: 'Ile pracuje bateria Falcon X60/X65?',
+      answer: 'Bateria Falcon X60/X65 to 7 000 mAh (25,4 Wh) Li-Ion z technologią hot-swap (wymiana w 30 sekund bez wyłączania terminala, podtrzymanie pamięci przez superkondensator przez ~60 s). W praktyce wystarcza na 1–2 zmiany robocze (12–18 godzin) przy intensywnym skanowaniu (3 000+ skanów dziennie + transmisja Wi-Fi/5G + ekran włączony). W trybie standby z okazjonalnym użytkiem — pełna doba. Ładowanie: kontaktowe przez dok lub bezprzewodowe WPC Qi EPP 10 W (kompatybilne z każdą ładowarką Qi 10 W+). Dodatkowo ładowanie przewodowe USB-C PD.',
+    },
+    {
+      question: 'Jak długo Datalogic będzie wspierał Falcon X60/X65 aktualizacjami systemu?',
+      answer: 'Falcon X60/X65 startuje z Android 15 GMS i jest oficjalnie upgradowalny do Android 19 — to oznacza 4–5 lat aktualizacji bezpieczeństwa (security patches) i aktualizacji funkcjonalnych z fabryki, czyli planowane wsparcie do około 2030 r. Certyfikat Android Enterprise Recommended (AER) gwarantuje minimum 5 lat aktualizacji. Datalogic w ramach kontraktu EASEOFCARE wydaje dodatkowe patche bezpieczeństwa (Datalogic Shield) oraz aktualizacje systemowe. Dla floty kupowanej w 2026 r. z planem 5-letniej eksploatacji — wsparcie pokrywa cały cykl życia.',
+    },
+    {
+      question: 'Jaka jest różnica między IP67 a IP68 w kontekście kolektora?',
+      answer: 'IP67 (Skorpio X40/X45) — pełna ochrona przed kurzem (6) i chwilowe zanurzenie w wodzie (7) do 1 m na maksymalnie 30 minut. IP68 (Falcon X60/X65) — pełna ochrona przed kurzem (6) i pełne, długotrwałe zanurzenie w wodzie (8) — Datalogic deklaruje minimum 1,5 m na 30 minut. Praktyczna różnica: Falcon można upuścić w kałużę w doku załadunkowym lub w deszczu na placu manewrowym bez ryzyka, a po wyciągnięciu nadal pracuje. IP67 wytrzyma chwilowe zanurzenie, ale przedłużone zalanie (np. terminal pod strumieniem wody w myjce) może uszkodzić moduł komunikacyjny. Dla operacji outdoor, portowych, logistyki paliwowej i pracy na deszczu — IP68 jest standardem.',
+    },
+    {
+      question: 'Po co podświetlana klawiatura w Falcon X60/X65?',
+      answer: 'Klawiatura podświetlana w Falcon X60/X65 (w 3 wariantach: 31, 41, 53 klawisze) to istotny upgrade vs Skorpio X40/X45 (klawiatura bez podświetlenia). Korzyści: (1) zmiany nocne i wczesno-poranne — operator widzi klawisze bez dodatkowego oświetlenia w hali; (2) chłodnie i mroźnie często słabo oświetlone z powodów energetycznych; (3) wnętrza naczep ciężarówek przy załadunku/rozładunku w półmroku; (4) outdoor po zachodzie słońca (logistyka portowa, paliwowa, ADR); (5) operacje na wózkach widłowych w bramach załadunkowych z silnym kontrastem światła. Podświetlenie LED z regulacją jasności i automatyczną aktywacją w warunkach słabego oświetlenia (czujnik ambient light).',
+    },
+    {
+      question: 'Ile kosztuje Datalogic Falcon X60/X65 w Polsce?',
+      answer: 'Falcon X60/X65 miał premierę światową w kwietniu 2026 r. — dostępność w Polsce (TAKMA jako autoryzowany partner Datalogic) spodziewana Q3 2026. Oficjalny polski cennik MSRP zostanie opublikowany po podpisaniu umowy dystrybucyjnej. Wstępne szacunki (nieoficjalne): X60 Handheld z klawiaturą 31-key i skanerem Standard ~6 500–7 500 zł netto, X60 Pistol Grip z 53-key i skanerem XLR 20 m ~9 000–10 500 zł, X65 Handheld z 5G + GPS ~7 500–8 500 zł, X65 Pistol Grip z 53-key, XLR 20 m i 5G ~10 000–12 000 zł. Skontaktuj się z TAKMA, aby otrzymać aktualną wycenę indywidualną dla swojej floty (rabat wolumenowy od 10 sztuk, kontrakt EASEOFCARE, pilotaż 1–3 sztuk).',
+    },
+    {
+      question: 'Jakie są alternatywy dla Datalogic Falcon X60/X65?',
+      answer: 'Główne alternatywy w segmencie heavy-duty kolektorów z klawiaturą fizyczną: Zebra MC9400 (klasa premium, najpopularniejszy kolektor enterprise w Polsce, IP65 + IP67, upadek 2,4 m, od ~11 000 zł — bezpośredni konkurent Falcona), Zebra MC3400 (klasa entry-mid, lżejszy, alternatywa dla Skorpio X40/X45 nie Falcona), Datalogic Skorpio X5 XLR (poprzednia generacja, ten sam ekosystem doków, skaner XLR do 20 m, od 4 858 zł — wybór, gdy potrzebujesz natychmiastowej dostępności), Honeywell CK67 (alternatywa amerykańska, IP65, brak Qi, brak XLR 20 m). Falcon X60/X65 wyróżnia: IP68 (jako jedyny w klasie), Gorilla Glass 7 (jako jedyny), TrueAim™ dwustopniowy spust (jako jedyny), klawiatura podświetlana, upadek 2,8 m (najwyższa w klasie).',
+    },
+  ],
+  relatedLinks: [
+    { title: 'Datalogic Skorpio X40/X45 — kompaktowy kuzyn Falcon', href: '/poradnik/datalogic-skorpio-x40-x45' },
+    { title: 'Datalogic Skorpio X5 — poprzednia generacja, od 4 858 zł', href: '/produkt/datalogic-skorpio-x5' },
+    { title: 'Datalogic Memor 30 / 35 — kolektor enterprise bez klawiatury', href: '/produkt/datalogic-memor-30' },
+    { title: 'Terminale Datalogic — pełna oferta', href: '/terminale-datalogic' },
+    { title: 'Zebra MC9400 — główny konkurent w klasie premium', href: '/produkt/zebra-mc9400' },
+    { title: 'Zebra MC3400 — alternatywa entry-mid', href: '/produkt/zebra-mc3400' },
+    { title: 'Jak wybrać terminal mobilny? Poradnik 2026', href: '/poradnik/jak-wybrac-terminal-mobilny' },
+    { title: 'Top 10 terminali mobilnych 2026', href: '/poradnik/top-10-terminali-mobilnych-2026' },
+    { title: 'Kolektor danych do inwentaryzacji — który wybrać?', href: '/poradnik/kolektor-danych-do-inwentaryzacji' },
+    { title: 'Zebra MC3400 vs MC9400 — porównanie kolektorów Zebra', href: '/poradnik/zebra-mc3400-vs-mc9400' },
+    { title: 'Terminale mobilne — pełny katalog', href: '/terminale-mobilne' },
+    { title: 'Kontakt — wycena floty Falcon X60/X65', href: '/kontakt' },
   ],
 },
 ]
