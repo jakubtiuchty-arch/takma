@@ -1,11 +1,14 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { products, thermalSizeSlug, type Product, type ProductVariant } from '@/data/products'
 import { thermalLabelSeries } from '@/data/thermal-label-series'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
-import { ArrowRightIcon } from '@/components/ui/Icons'
+import { useCartStore } from '@/store/cartStore'
+import { Badge } from '@/components/ui'
+import { ArrowRightIcon, PlusIcon, CheckIcon, BellIcon } from '@/components/ui/Icons'
 import type { StockInfo } from '@/lib/ingram'
 
 /**
@@ -66,19 +69,13 @@ function getVariantData(spec: { productId: string; partNumber: string }): Varian
   return { product, variant, seriesTitle: series?.title ?? product.name.replace(/^Etykiety termiczne Zebra /, '') }
 }
 
-function AvailabilityBadge({ value }: { value: ProductVariant['availability'] }) {
-  const config = {
-    available: { label: 'Dostępny', cls: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
-    'on-order': { label: 'Na zamówienie', cls: 'bg-amber-50 text-amber-700 border-amber-200' },
-    unavailable: { label: 'Niedostępny', cls: 'bg-slate-50 text-slate-600 border-slate-200' },
-  }[value]
-  return (
-    <span className={`inline-flex items-center text-xs font-medium px-2.5 py-1 rounded-full border ${config.cls}`}>
-      {config.label}
-    </span>
-  )
+const AVAILABILITY_CONFIG = {
+  available: { label: 'Dostępny', variant: 'success' as const },
+  'on-order': { label: 'Na zamówienie', variant: 'warning' as const },
+  unavailable: { label: 'Niedostępny', variant: 'danger' as const },
 }
 
+/** Kafelek wariantu — wygląd spójny z ProductCard (grid + dual buttons) używanym dla etykiet TT. */
 function VariantCard({
   product,
   variant,
@@ -92,10 +89,17 @@ function VariantCard({
   stockInfo?: StockInfo
   stockLoading: boolean
 }) {
+  const { addItem, isInCart } = useCartStore()
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
+
   const rozmiar = variant.attributes['Rozmiar'] ?? ''
   const productImage = product.images[0]
+  const hasRealImage = !!productImage && !productImage.includes('placeholder')
   const liveAvailability = stockInfo?.found ? stockInfo.availability : variant.availability
   const livePrice = stockInfo?.found && stockInfo.price ? stockInfo.price : variant.priceFrom
+  const isUnavailable = liveAvailability === 'unavailable'
+  const availability = AVAILABILITY_CONFIG[liveAvailability]
 
   // URL wariantu: /produkt/[slug]/[size]/[pn] — statyczny, indeksowalny per SKU
   const sizeSlug = rozmiar ? thermalSizeSlug(rozmiar) : ''
@@ -103,64 +107,114 @@ function VariantCard({
     ? `/produkt/${product.slug}/${sizeSlug}/${variant.partNumber}`
     : `/produkt/${product.slug}`
 
+  const fullName = `Zebra ${seriesTitle}${rozmiar ? ` ${rozmiar}` : ''}`
+  const cartId = `${product.id}-${variant.partNumber}`
+  const inCart = mounted ? isInCart(cartId) : false
+
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.preventDefault()
+    e.stopPropagation()
+    addItem({
+      id: cartId,
+      name: fullName,
+      slug: product.slug,
+      image: productImage,
+      partNumber: variant.partNumber,
+      priceNetto: livePrice,
+      categoryId: 'materialy-eksploatacyjne',
+    })
+  }
+
   return (
-    <Link
-      href={variantHref}
-      className="group bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-slate-300 hover:shadow-md transition-all flex flex-col"
-    >
-      <div className="relative aspect-square bg-white">
-        {productImage ? (
+    <article className="card group overflow-hidden flex flex-col h-full">
+      <Link
+        href={variantHref}
+        className="relative aspect-[4/3] bg-white flex items-center justify-center overflow-hidden"
+      >
+        {hasRealImage ? (
           <Image
             src={productImage}
-            alt={`Zebra ${seriesTitle} ${rozmiar}`}
+            alt={fullName}
             fill
-            sizes="(max-width: 640px) 50vw, (max-width: 1280px) 33vw, 25vw"
-            className="object-contain p-4"
+            className="object-contain p-3"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           />
         ) : (
-          <div className="absolute inset-0 flex items-center justify-center text-slate-300 text-xs">
-            brak zdjęcia
-          </div>
+          <span className="text-gray-300 text-sm group-hover:text-primary-500 transition-colors">IMG</span>
         )}
-      </div>
+      </Link>
 
-      <div className="p-5 flex flex-col flex-1 border-t border-slate-100">
-        <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-500 mb-1.5">
-          ZEBRA
-        </div>
-
-        <h3 className="text-base font-bold text-gray-900 leading-snug mb-3">
-          Zebra {seriesTitle}{rozmiar && ` ${rozmiar}`}
-        </h3>
-
-        <div className="mb-4 min-h-[26px]">
-          {stockLoading ? (
-            <span className="inline-block h-6 w-24 bg-slate-100 rounded-full animate-pulse" />
-          ) : (
-            <AvailabilityBadge value={liveAvailability} />
-          )}
-        </div>
-
-        <div className="mt-auto pt-3 border-t border-slate-100">
-          <div className="flex items-baseline gap-1.5 mb-3 min-h-[28px]">
-            {livePrice ? (
-              <>
-                <span className="text-xl font-bold text-gray-900">
-                  {livePrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
-                </span>
-                <span className="text-sm text-gray-500">netto</span>
-              </>
-            ) : (
-              <span className="text-gray-400 text-sm">Zapytaj o cenę</span>
-            )}
+      <div className="p-2 sm:p-3 flex flex-col flex-1">
+        <div className="flex-1">
+          <span className="text-[11px] text-gray-400 uppercase tracking-wide font-medium">ZEBRA</span>
+          <Link href={variantHref}>
+            <h3 className="font-semibold text-xs sm:text-sm text-gray-900 hover:text-primary-600 transition-colors mt-0.5 line-clamp-2 leading-tight">
+              {fullName}
+            </h3>
+          </Link>
+          <div className="mt-1.5">
+            <Badge variant={availability.variant} size="sm">{availability.label}</Badge>
           </div>
+        </div>
 
-          <span className="block w-full text-center bg-[#A8F000] group-hover:bg-[#94d600] text-gray-900 font-semibold py-3 rounded-lg transition-colors text-sm">
-            Zobacz więcej
-          </span>
+        <div className="mt-3 pt-3 border-t border-gray-100">
+          {stockLoading ? (
+            <div className="mb-2">
+              <span className="inline-block h-5 w-24 bg-gray-200 rounded animate-pulse" />
+            </div>
+          ) : livePrice ? (
+            <div className="mb-2">
+              <span className="text-sm sm:text-lg font-bold text-gray-900">
+                {livePrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
+              </span>
+              <span className="text-[10px] sm:text-xs text-gray-400 ml-0.5 sm:ml-1">netto/rolka</span>
+            </div>
+          ) : (
+            <div className="mb-2">
+              <span className="text-sm text-gray-500">Cena na zapytanie</span>
+            </div>
+          )}
+
+          <div className="flex flex-col xs:flex-row items-stretch xs:items-center gap-1.5 sm:gap-2">
+            {isUnavailable ? (
+              <Link
+                href={variantHref}
+                className="flex-1 flex items-center justify-center gap-1 sm:gap-1.5 text-xs sm:text-sm font-medium text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200 rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 transition-colors"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <BellIcon size={14} />
+                Powiadom
+              </Link>
+            ) : !livePrice ? (
+              <Link
+                href={variantHref}
+                className="flex-1 flex items-center justify-center gap-1 sm:gap-1.5 text-xs sm:text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 transition-colors"
+              >
+                Zobacz więcej
+              </Link>
+            ) : (
+              <button
+                onClick={handleAddToCart}
+                className={`flex-1 flex items-center justify-center gap-1 sm:gap-1.5 text-xs sm:text-sm font-semibold rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 transition-all active:scale-[0.98] ${
+                  inCart
+                    ? 'text-primary-600 bg-white border-2 border-primary-600'
+                    : 'text-gray-900 bg-[#A8F000] hover:bg-[#96d800]'
+                }`}
+              >
+                {inCart ? <CheckIcon size={14} /> : <PlusIcon size={14} />}
+                {inCart ? 'Dodano' : 'Koszyk'}
+              </button>
+            )}
+            <Link
+              href={variantHref}
+              className="flex items-center justify-center text-xs sm:text-sm font-medium text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 transition-colors whitespace-nowrap"
+            >
+              Więcej
+            </Link>
+          </div>
         </div>
       </div>
-    </Link>
+    </article>
   )
 }
 
