@@ -15,7 +15,6 @@ interface Props {
   manufacturerName?: string
 }
 
-/** Bezpieczne wyciągnięcie atrybutu */
 function attr(v: ProductVariant, key: string): string {
   return v.attributes[key] ?? ''
 }
@@ -31,21 +30,16 @@ function parseSize(raw: string): { width: number; height: number } | null {
   }
 }
 
-/** Formatuje wymiar jako label "102 mm" (lub "57.2 mm" jeśli z ułamkiem) */
 function dimLabel(v: number): string {
   return Number.isInteger(v) ? `${v} mm` : `${v.toString().replace('.', ',')} mm`
 }
 
-/** Normalizacja perforacji */
-function perforationLabel(raw: string): string {
-  if (!raw) return 'Brak'
-  const r = raw.toLowerCase().trim()
-  if (r === 'tak' || r === 'true' || r === 'yes') return 'Tak'
-  if (r === 'nie' || r === 'false' || r === 'no') return 'Nie'
-  return raw
+/** Segment URL rozmiaru — 'bez-rozmiaru' gdy wariant nie ma rozmiaru (część SKU TT). */
+function sizeSlugForVariant(v: ProductVariant): string {
+  const size = attr(v, 'Rozmiar')
+  return size ? thermalSizeSlug(size) : 'bez-rozmiaru'
 }
 
-/** Tooltip — fixed position żeby ucieł spod overflow */
 function InfoTooltip({ text }: { text: string }) {
   const [show, setShow] = useState(false)
   const [coords, setCoords] = useState<{ top: number; left: number } | null>(null)
@@ -100,7 +94,6 @@ function InfoTooltip({ text }: { text: string }) {
   )
 }
 
-/** Badge dostępności wariantu */
 function AvailabilityBadge({ value }: { value: ProductVariant['availability'] }) {
   if (value === 'available') {
     return (
@@ -133,19 +126,13 @@ export default function SeriesVariantsTable({
   seriesTitle,
   manufacturerName = 'Zebra',
 }: Props) {
-  // Stan filtrów
   const [search, setSearch] = useState('')
   const [filterSzerokosc, setFilterSzerokosc] = useState<Set<number>>(new Set())
   const [filterWysokosc, setFilterWysokosc] = useState<Set<number>>(new Set())
-  const [filterGilza, setFilterGilza] = useState<Set<string>>(new Set())
-  const [filterPerforacja, setFilterPerforacja] = useState<Set<string>>(new Set())
+  const [filterRdzen, setFilterRdzen] = useState<Set<string>>(new Set())
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE)
 
-  /**
-   * Cross-filtering: opcje danego filtra liczymy z wariantów pasujących do POZOSTAŁYCH filtrów.
-   * Klient nigdy nie zobaczy opcji której wybranie dałoby 0 wyników.
-   */
-  type FilterKey = 'sz' | 'wy' | 'gi' | 'pe' | 's'
+  type FilterKey = 'sz' | 'wy' | 'rd' | 's'
   const matchesExcept = useCallback(
     (v: ProductVariant, except: FilterKey | null) => {
       const size = parseSize(attr(v, 'Rozmiar'))
@@ -155,18 +142,16 @@ export default function SeriesVariantsTable({
       if (except !== 'wy' && filterWysokosc.size > 0) {
         if (!size || !filterWysokosc.has(size.height)) return false
       }
-      if (except !== 'gi' && filterGilza.size > 0 && !filterGilza.has(attr(v, 'Rdzeń (gilza)'))) return false
-      if (except !== 'pe' && filterPerforacja.size > 0 && !filterPerforacja.has(perforationLabel(attr(v, 'Perforacja')))) return false
+      if (except !== 'rd' && filterRdzen.size > 0 && !filterRdzen.has(attr(v, 'Rdzeń'))) return false
       if (except !== 's' && search.trim()) {
         const q = search.toLowerCase()
         if (!attr(v, 'Rozmiar').toLowerCase().includes(q) && !v.partNumber.toLowerCase().includes(q)) return false
       }
       return true
     },
-    [filterSzerokosc, filterWysokosc, filterGilza, filterPerforacja, search],
+    [filterSzerokosc, filterWysokosc, filterRdzen, search],
   )
 
-  // Opcje filtrów — dynamic na podstawie aktualnego stanu pozostałych filtrów
   const szerokoscOpts = useMemo(() => {
     const widths = new Set<number>()
     variants.forEach(v => {
@@ -187,23 +172,14 @@ export default function SeriesVariantsTable({
     return Array.from(heights).sort((a, b) => a - b)
   }, [variants, matchesExcept])
 
-  const gilzaOpts = useMemo(() => {
+  const rdzenOpts = useMemo(() => {
     const set = new Set<string>()
     variants.forEach(v => {
-      if (!matchesExcept(v, 'gi')) return
-      const g = attr(v, 'Rdzeń (gilza)')
+      if (!matchesExcept(v, 'rd')) return
+      const g = attr(v, 'Rdzeń')
       if (g) set.add(g)
     })
     return Array.from(set).sort((a, b) => (parseInt(a) || 0) - (parseInt(b) || 0))
-  }, [variants, matchesExcept])
-
-  const perforacjaOpts = useMemo(() => {
-    const set = new Set<string>()
-    variants.forEach(v => {
-      if (!matchesExcept(v, 'pe')) return
-      set.add(perforationLabel(attr(v, 'Perforacja')))
-    })
-    return Array.from(set).sort()
   }, [variants, matchesExcept])
 
   const toggleSzerokosc = (val: number) => {
@@ -218,16 +194,10 @@ export default function SeriesVariantsTable({
     setFilterWysokosc(next)
     setVisibleCount(INITIAL_VISIBLE)
   }
-  const togglePerforacja = (val: string) => {
-    const next = new Set(filterPerforacja)
+  const toggleRdzen = (val: string) => {
+    const next = new Set(filterRdzen)
     next.has(val) ? next.delete(val) : next.add(val)
-    setFilterPerforacja(next)
-    setVisibleCount(INITIAL_VISIBLE)
-  }
-  const toggleGilza = (val: string) => {
-    const next = new Set(filterGilza)
-    next.has(val) ? next.delete(val) : next.add(val)
-    setFilterGilza(next)
+    setFilterRdzen(next)
     setVisibleCount(INITIAL_VISIBLE)
   }
   const onSearchChange = (val: string) => {
@@ -235,7 +205,6 @@ export default function SeriesVariantsTable({
     setVisibleCount(INITIAL_VISIBLE)
   }
 
-  // Filtrowanie wszystkimi filtrami
   const filtered = useMemo(
     () => variants.filter(v => matchesExcept(v, null)),
     [variants, matchesExcept],
@@ -244,7 +213,7 @@ export default function SeriesVariantsTable({
   const visible = filtered.slice(0, visibleCount)
   const hasMore = filtered.length > visibleCount
 
-  // ── LIVE STOCK fetch dla widocznych wariantów (Ingram/Jarltech) ──
+  // ── LIVE STOCK fetch dla widocznych wariantów ──
   const [stockMap, setStockMap] = useState<Map<string, StockInfo>>(new Map())
   const [stockLoading, setStockLoading] = useState(false)
 
@@ -258,7 +227,6 @@ export default function SeriesVariantsTable({
     let cancelled = false
     setStockLoading(true)
 
-    // Chunki po 12 PNów — limit Jarltech concurrent
     const chunks: string[][] = []
     for (let i = 0; i < toFetch.length; i += 12) chunks.push(toFetch.slice(i, i + 12))
 
@@ -298,20 +266,18 @@ export default function SeriesVariantsTable({
     setSearch('')
     setFilterSzerokosc(new Set())
     setFilterWysokosc(new Set())
-    setFilterGilza(new Set())
-    setFilterPerforacja(new Set())
+    setFilterRdzen(new Set())
     setVisibleCount(INITIAL_VISIBLE)
   }
   const hasFilters =
     search ||
     filterSzerokosc.size > 0 ||
     filterWysokosc.size > 0 ||
-    filterGilza.size > 0 ||
-    filterPerforacja.size > 0
+    filterRdzen.size > 0
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[260px,1fr] gap-6">
-      {/* ── SIDEBAR FILTRÓW ─────────────────────────────────────── */}
+      {/* ── SIDEBAR FILTRÓW ── */}
       <aside className="space-y-4">
         <div className="bg-white border border-slate-200 rounded-xl p-4 space-y-4 lg:sticky lg:top-6">
           <div className="flex items-center justify-between">
@@ -326,11 +292,10 @@ export default function SeriesVariantsTable({
             )}
           </div>
 
-          {/* Szukaj */}
           <div>
             <label className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1.5 flex items-center gap-1.5">
               Szukaj rozmiaru / PN
-              <InfoTooltip text="Wpisz fragment rozmiaru (np. '102x152') lub numeru katalogowego (Part Number, np. '3003355')." />
+              <InfoTooltip text="Wpisz fragment rozmiaru (np. '102x152') lub numeru katalogowego (Part Number, np. '76180')." />
             </label>
             <div className="relative">
               <SearchIcon size={14} className="absolute left-2.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
@@ -338,7 +303,7 @@ export default function SeriesVariantsTable({
                 type="search"
                 value={search}
                 onChange={e => onSearchChange(e.target.value)}
-                placeholder="np. 102x152 lub 3003355"
+                placeholder="np. 102x152 lub 76180"
                 className="w-full pl-8 pr-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-primary-400 focus:ring-1 focus:ring-primary-200"
               />
               {search && (
@@ -375,31 +340,20 @@ export default function SeriesVariantsTable({
             />
           )}
 
-          {gilzaOpts.length > 1 && (
+          {rdzenOpts.length > 1 && (
             <FilterCheckboxGroup
               label="Rdzeń (gilza)"
-              info="Średnica wewnętrzna rolki — typowo 19 mm (3/4″), 25 mm (1″) lub 76 mm (3″). Drukarki desktopowe biorą 19/25 mm, industrialne także 76 mm."
-              options={gilzaOpts}
-              selected={filterGilza}
-              onToggle={toggleGilza}
-            />
-          )}
-
-          {perforacjaOpts.length > 1 && (
-            <FilterCheckboxGroup
-              label="Perforacja"
-              info="Linie nacięcia między etykietami pozwalające oddzielić je ręcznie bez nożyczek. Przydatne dla paragonów i pasków w bloczkach."
-              options={perforacjaOpts}
-              selected={filterPerforacja}
-              onToggle={togglePerforacja}
+              info="Średnica wewnętrzna rolki — typowo 25 mm (1″) lub 76 mm (3″). Drukarki biurkowe biorą 25 mm, industrialne także 76 mm. Fanfold to składanka bez gilzy."
+              options={rdzenOpts}
+              selected={filterRdzen}
+              onToggle={toggleRdzen}
             />
           )}
         </div>
       </aside>
 
-      {/* ── GRID WARIANTÓW ─────────────────────────────────────── */}
+      {/* ── GRID WARIANTÓW ── */}
       <div>
-        {/* Licznik */}
         <div className="flex items-center justify-between mb-4 text-sm">
           <p className="text-gray-600">
             <span className="font-semibold text-gray-900">{filtered.length}</span>{' '}
@@ -462,7 +416,6 @@ export default function SeriesVariantsTable({
   )
 }
 
-/** Pojedyncza karta wariantu — wzorzec z designu */
 function VariantCard({
   variant: v,
   productSlug,
@@ -481,34 +434,29 @@ function VariantCard({
   stockLoading?: boolean
 }) {
   const rozmiar = attr(v, 'Rozmiar')
-  const gilza = attr(v, 'Rdzeń (gilza)')
+  const rdzen = attr(v, 'Rdzeń')
+  const qtyInRoll = attr(v, 'Etykiet w rolce')
   const hasImage = !!productImage
 
-  // Live availability — bierzemy bezpośrednio z API (uwzględnia stockPL vs stockDE vs delivery)
-  // 3002908: stockPL=0, stockDE=0, inDelivery=42 → API mówi 'on-order' (nie 'available')
   const liveAvailability: ProductVariant['availability'] =
     stockInfo?.found ? stockInfo.availability : v.availability
-
-  // Live price (Ingram netto z marżą) — jeśli niedostępna, fallback na priceFrom z products.ts
   const livePrice = stockInfo?.found && stockInfo.price ? stockInfo.price : v.priceFrom
 
-  // URL wariantu: /produkt/[slug]/[size]/[pn] — statyczny, indeksowalny per SKU
-  const sizeSlug = rozmiar ? thermalSizeSlug(rozmiar) : ''
-  const variantHref = sizeSlug
-    ? `/produkt/${productSlug}/${sizeSlug}/${v.partNumber}`
-    : `/produkt/${productSlug}` // fallback gdy wariant nie ma rozmiaru (nie powinno się zdarzyć dla etykiet)
+  const variantHref = `/produkt/${productSlug}/${sizeSlugForVariant(v)}/${v.partNumber}`
+  // Title: pokazujemy TYLKO rozmiar — info o rdzeniu jest poniżej w sub-info.
+  // Brak fallbacku do v.name żeby uniknąć dubli typu "Zebra Z-Perform 1000T rdzeń 76 mm".
+  const displaySize = rozmiar || ''
 
   return (
     <Link
       href={variantHref}
       className="group bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-slate-300 hover:shadow-md transition-all flex flex-col"
     >
-      {/* Image area — większy obraz, mniejszy padding (wzorzec drukarek) */}
       <div className="relative aspect-square bg-white">
         {hasImage ? (
           <Image
             src={productImage}
-            alt={`${manufacturerName} ${seriesTitle} ${rozmiar}`}
+            alt={`${manufacturerName} ${seriesTitle}${displaySize ? ` ${displaySize}` : ''}`}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
             className="object-contain p-4"
@@ -520,27 +468,25 @@ function VariantCard({
         )}
       </div>
 
-      {/* Body */}
       <div className="p-5 flex flex-col flex-1 border-t border-slate-100">
-        {/* Manufacturer eyebrow */}
         <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-500 mb-1.5">
           {manufacturerName}
         </div>
 
-        {/* Title — krótki, spójny z wzorcem drukarek */}
         <h4 className="text-base font-bold text-gray-900 leading-snug mb-1">
           {manufacturerName} {seriesTitle}
-          {rozmiar && ` ${rozmiar}`}
+          {displaySize && ` ${displaySize}`}
         </h4>
 
-        {/* Sub-info: gilza + PN — różnicuje warianty z tym samym rozmiarem ale inną gilzą */}
+        {/* Sub-info: rdzeń + qty + PN — różnicuje warianty z tym samym rozmiarem ale inną gilzą */}
         <p className="text-xs text-gray-500 mb-3 flex items-center gap-1.5 flex-wrap">
-          {gilza && <span>Gilza: <span className="font-medium text-gray-700">{gilza}</span></span>}
-          {gilza && <span aria-hidden className="text-gray-300">·</span>}
+          {rdzen && <span>Rdzeń: <span className="font-medium text-gray-700">{rdzen}</span></span>}
+          {rdzen && qtyInRoll && <span aria-hidden className="text-gray-300">·</span>}
+          {qtyInRoll && <span className="font-medium text-gray-700">{qtyInRoll}</span>}
+          {(rdzen || qtyInRoll) && <span aria-hidden className="text-gray-300">·</span>}
           <span className="font-mono">{v.partNumber}</span>
         </p>
 
-        {/* Availability — live z stock API */}
         <div className="mb-4 min-h-[26px]">
           {stockLoading ? (
             <span className="inline-block h-6 w-24 bg-slate-100 rounded-full animate-pulse" />
@@ -549,7 +495,6 @@ function VariantCard({
           )}
         </div>
 
-        {/* Cena dokładna (z "netto" jak wzorzec) */}
         <div className="mt-auto pt-3 border-t border-slate-100">
           <div className="flex items-baseline gap-1.5 mb-3 min-h-[28px]">
             {livePrice ? (
@@ -564,7 +509,6 @@ function VariantCard({
             )}
           </div>
 
-          {/* CTA — zielony A8F000 (cała karta i tak klikalna, button to wizualne wskazanie) */}
           <span className="block w-full text-center bg-[#A8F000] group-hover:bg-[#94d600] text-gray-900 font-semibold py-3 rounded-lg transition-colors text-sm">
             Zobacz więcej
           </span>

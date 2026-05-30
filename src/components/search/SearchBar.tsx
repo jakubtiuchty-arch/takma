@@ -5,7 +5,16 @@ import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import clsx from 'clsx'
 import { SearchIcon, CloseIcon, ArrowRightIcon } from '@/components/ui/Icons'
-import { products, categories, manufacturers, type Product, type Category } from '@/data/products'
+import {
+  products,
+  categories,
+  manufacturers,
+  variantSizeSlug,
+  isThermalLabelProduct,
+  isTransferLabelProduct,
+  type Product,
+  type Category,
+} from '@/data/products'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import { trackSearch } from '@/lib/ga-events'
 
@@ -28,6 +37,9 @@ interface SearchResult {
   availability?: 'available' | 'on-order' | 'unavailable'
   categoryId?: string
   partNumber?: string // PN do live price lookup
+  /** Pełny href docelowy — używany dla wariantów etykiet (/produkt/[slug]/[size]/[pn])
+   *  zamiast slug-only routingu. Gdy undefined, navigate korzysta z /produkt/[slug]. */
+  href?: string
 }
 
 // Buduj indeks wyszukiwania raz
@@ -134,6 +146,12 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
           : null
 
         if (matchedVariant) {
+          // Dla etykiet (DT/TT) linkuj na statyczną stronę wariantu /produkt/[slug]/[size]/[pn]
+          // zamiast na rodzica /produkt/[slug] (który redirectuje na series page).
+          const isLabel = isThermalLabelProduct(product) || isTransferLabelProduct(product)
+          const variantHref = isLabel
+            ? `/produkt/${product.slug}/${variantSizeSlug(matchedVariant)}/${matchedVariant.partNumber}`
+            : `/produkt/${product.slug}?pn=${encodeURIComponent(matchedVariant.partNumber)}`
           found.push({
             _score: score,
             type: 'variant',
@@ -149,6 +167,7 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
             availability: product.availability,
             categoryId: product.categoryId,
             partNumber: matchedVariant.partNumber,
+            href: variantHref,
           })
         } else {
           // Dla produktu — weź PN pierwszego wariantu (do live price lookup)
@@ -244,6 +263,9 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
   const navigate = (result: SearchResult) => {
     if (result.type === 'category') {
       router.push(`/${result.slug}`)
+    } else if (result.href) {
+      // Preferuj pełny href (np. wariant etykiety → /produkt/[slug]/[size]/[pn])
+      router.push(result.href)
     } else {
       router.push(`/produkt/${result.slug}`)
     }

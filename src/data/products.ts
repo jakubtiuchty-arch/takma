@@ -1,6 +1,10 @@
 // TAKMA - Katalog produktów Zebra Technologies
 // Dane zebrane z oficjalnych źródeł Zebra
 
+import { transferLabelProducts } from './transfer-label-products'
+import { transferRibbonProducts } from './transfer-ribbon-products'
+import { OLD_TT_PRODUCT_IDS, OLD_TT_ID_TO_SERIES } from './transfer-label-migration'
+
 export interface Product {
   id: string
   slug: string
@@ -12,6 +16,13 @@ export interface Product {
   manufacturerId: string
   priceFrom?: number
   images: string[]
+  /** Alternatywny obraz dla wariantów typu desktop (krótkie taśmy, gilza 12 mm,
+   *  długość < 200 m). Używane przez `getRibbonVariantImage()`. Optional — bez tego
+   *  wszystkie warianty pokazują `images[0]`. */
+  imageDesktop?: string
+  /** Alternatywny obraz dla wariantów industrial (długie taśmy 25 mm core, ≥ 200 m).
+   *  Patrz `imageDesktop`. */
+  imageIndustrial?: string
   imageDescriptions?: string[]
   tags: ProductTag[]
   availability: 'available' | 'on-order' | 'unavailable'
@@ -379,71 +390,69 @@ export const subcategories: Subcategory[] = [
     slug: 'etykiety-termotransferowe-papierowe',
     name: 'Etykiety termotransferowe papierowe',
     parentCategoryId: 'materialy-eksploatacyjne',
-    description: 'Etykiety papierowe do druku termotransferowego — Z-Perform 1000T, Z-Select 2000T, 8000T All-Temp',
+    parentSubcategoryId: 'etykiety-termotransferowe',
+    description: 'Etykiety papierowe do druku termotransferowego — Z-Perform 1000T, Z-Select 2000T, Z-Essentials 500T',
     seoTitle: 'Etykiety termotransferowe papierowe Zebra | Z-Perform, Z-Select',
-    seoDescription: 'Oryginalne etykiety papierowe termotransferowe Zebra: Z-Perform 1000T (ekonomiczne), Z-Select 2000T (premium powlekane), 8000T All-Temp (mrozoodporne). Gilza fi25 i fi76, wszystkie rozmiary. Porównanie serii, dobór do drukarki.',
-    longDescription: 'Etykiety papierowe termotransferowe to najpopularniejszy typ materiałów eksploatacyjnych do drukarek przemysłowych. Wymagają taśmy barwiącej (ribbon) — woskowej, woskowo-żywicznej lub żywicznej — dzięki czemu nadruk jest trwały i odporny na ścieranie. Oferujemy trzy serie Zebra: Z-Perform 1000T (papier niepowlekany, ekonomiczny, do codziennych zastosowań), Z-Select 2000T (papier powlekany, premium jakość nadruku, do etykiet produktowych i farmaceutycznych) oraz 8000T All-Temp (klej mrozoodporny, do chłodni i logistyki mrożonej). Dostępne w gilzach fi25 mm (drukarki biurkowe) i fi76 mm (drukarki przemysłowe).',
+    seoDescription: 'Oryginalne etykiety papierowe termotransferowe Zebra: Z-Perform 1000T (ekonomiczne), Z-Select 2000T (premium powlekane), Z-Perform 1000T Removable (zdejmowalne), Z-Essentials 500T. Wszystkie rozmiary, gilza fi25 i fi76. Porównanie serii, dobór do drukarki.',
+    longDescription: 'Etykiety papierowe termotransferowe to najpopularniejszy typ materiałów eksploatacyjnych do drukarek przemysłowych. Wymagają taśmy barwiącej (ribbon) — woskowej, woskowo-żywicznej lub żywicznej — dzięki czemu nadruk jest trwały i odporny na ścieranie. Oferujemy cztery serie Zebra: Z-Perform 1000T (papier niepowlekany, ekonomiczny, do codziennych zastosowań), Z-Select 2000T (papier powlekany, premium jakość nadruku, do etykiet produktowych i farmaceutycznych), Z-Perform 1000T Removable (klej zdejmowalny) oraz Z-Essentials 500T (budżetowa). Dostępne w gilzach fi25 mm (drukarki biurkowe) i fi76 mm (drukarki przemysłowe).',
     icon: 'tag',
     productIds: [
-      'zebra-tt-76179', 'zebra-tt-87985', 'zebra-tt-880014-038', 'zebra-tt-76524', 'zebra-tt-880010-031',
-      'zebra-tt-880004-025', 'zebra-tt-880834-139u', 'zebra-tt-880020-050', 'zebra-tt-3003632', 'zebra-tt-880010-076',
-      'zebra-tt-880026-076', 'zebra-tt-880018-038', 'zebra-tt-880694-025', 'zebra-tt-880026-038', 'zebra-tt-880018-127',
-      'zebra-tt-76523', 'zebra-tt-76175', 'zebra-tt-87394', 'zebra-tt-3002074', 'zebra-tt-3002866',
-      'zebra-tt-880020-025', 'zebra-tt-880026-082', 'zebra-tt-3006047', 'zebra-tt-3004280', 'zebra-tt-3008317-t',
-      'zebra-tt-76522', 'zebra-tt-3004486', 'zebra-tt-3004416', 'zebra-tt-880004-012', 'zebra-tt-880022-031',
-      'zebra-tt-3001627', 'zebra-tt-3006795', 'zebra-tt-3008040-t',
-      'zebra-tt-880114-019', 'zebra-tt-880114-025', 'zebra-tt-76055', 'zebra-tt-3006326', 'zebra-tt-76054',
-      'zebra-tt-3006323', 'zebra-tt-3006325', 'zebra-tt-76058', 'zebra-tt-66131',
-      'zebra-labels-zselect-57x19', 'zebra-labels-zperform-70x30', 'zebra-labels-zselect-102x102',
-      'zebra-labels-zselect-102x25', 'zebra-labels-zperform-70x38', 'zebra-labels-zselect-32x25',
-      'zebra-labels-zselect-31x22', 'zebra-labels-zperform1000-57x32', 'zebra-labels-zperform1000-70x30',
-      'zebra-labels-zperform1000-102x152', 'zebra-labels-zselect-102x38', 'zebra-labels-zselect-76x25',
-      'zebra-labels-zperform1000-102x38', 'zebra-labels-zselect-57x51', 'zebra-labels-zperform1000-38x25',
-      'zebra-labels-zselect-102x152', 'zebra-labels-zselect-102x51', 'zebra-labels-zselect-76x51',
-      'zebra-labels-zperform1000-102x76', 'zebra-labels-zperform1000-51x25',
+      'zebra-z-perform-1000t', 'zebra-z-select-2000t', 'zebra-z-perform-1000t-removable', 'zebra-z-essentials-500t',
     ],
-    productCount: 62,
+    productCount: 4,
   },
   {
     id: 'etykiety-termotransferowe-foliowe',
     slug: 'etykiety-termotransferowe-foliowe',
     name: 'Etykiety termotransferowe foliowe',
     parentCategoryId: 'materialy-eksploatacyjne',
-    description: 'Etykiety foliowe do ekstremalnych warunków — Z-Ultimate 3000T, 8000T CryoCool, LabResist',
-    seoTitle: 'Etykiety foliowe termotransferowe Zebra | Z-Ultimate 3000T',
-    seoDescription: 'Trwałe etykiety foliowe Zebra Z-Ultimate 3000T, 8000T CryoCool i LabResist. Odporne na chemikalia, ścieranie, temperaturę od -196°C do +300°C. Do elektroniki, farmacji, laboratoriów.',
-    longDescription: 'Etykiety foliowe termotransferowe Zebra to najtrwalszy rodzaj etykiet samoprzylepnych — odporne na ścieranie, chemikalia, rozpuszczalniki, wilgoć i ekstremalne temperatury. Seria Z-Ultimate 3000T (poliester biały i srebrny) jest standardem w elektronice, motoryzacji i przemyśle. Seria 8000T CryoCool wytrzymuje temperatury kriogeniczne do -196°C (ciekły azot), a 8000T LabResist jest certyfikowana do laboratoriów. Wymagają taśmy żywicznej (resin) Zebra 5095 lub 5100.',
+    parentSubcategoryId: 'etykiety-termotransferowe',
+    description: 'Etykiety foliowe trwałe — Z-Ultimate 3000T, PolyPro, PolyE, PolyO',
+    seoTitle: 'Etykiety foliowe termotransferowe Zebra | Z-Ultimate 3000T, PolyPro',
+    seoDescription: 'Trwałe etykiety foliowe Zebra: Z-Ultimate 3000T (poliester biały i srebrny), PolyPro 3000T/4000T (polipropylen), PolyE 3100T (polietylen), PolyO 3100T (poliolefina). Odporne na chemikalia, ścieranie, UV. Do elektroniki, motoryzacji, przemysłu.',
+    longDescription: 'Etykiety foliowe termotransferowe Zebra to najtrwalszy rodzaj etykiet samoprzylepnych — odporne na ścieranie, chemikalia, rozpuszczalniki, wilgoć i UV. Seria Z-Ultimate 3000T (poliester biały i srebrny) jest standardem w elektronice, motoryzacji i przemyśle — trwałość do 5 lat, certyfikat UL. Serie PolyPro 3000T/4000T (polipropylen biały, przezroczysty, matowy), PolyE 3100T (polietylen, elastyczny) i PolyO 3100T (poliolefina, alternatywa PVC) pokrywają zastosowania od opakowań kosmetyków po machine vision. Wymagają taśmy żywicznej (resin) Zebra 5095 lub 5100.',
     icon: 'tag',
     productIds: [
-      'zebra-labels-zultimate-25x20', 'zebra-labels-zultimate-57x32', 'zebra-labels-zultimate-silver-76x76',
-      'zebra-labels-zultimate-70x24', 'zebra-labels-zultimate-51x25', 'zebra-labels-zultimate-25x13',
-      'zebra-labels-zultimate-100x75', 'zebra-labels-zultimate-57x19', 'zebra-labels-zultimate-76x25',
-      'zebra-labels-8100t-cryocool-30x15', 'zebra-labels-zultimate-102x51', 'zebra-labels-zultimate-76x76',
-      'zebra-labels-zultimate-38x13', 'zebra-labels-zultimate-60x25', 'zebra-labels-zultimate-silver-51x25',
-      'zebra-labels-zultimate-38x19', 'zebra-labels-zultimate-76x203', 'zebra-labels-zultimate-silver-70x32',
-      'zebra-labels-8100t-cryocool-38x13', 'zebra-labels-zultimate-57x44', 'zebra-labels-zultimate-70x200',
-      'zebra-labels-8000t-labresist-22x18', 'zebra-labels-zultimate-silver-102x51', 'zebra-labels-zultimate-50x30',
-      'zebra-labels-zultimate-102x76', 'zebra-labels-zultimate-102x152', 'zebra-labels-zultimate-silver-38x19',
-      'zebra-labels-zultimate-23x16', 'zebra-labels-zultimate-51x32', 'zebra-labels-zultimate-8000t-void-50x25',
-      'zebra-labels-zultimate-70x127', 'zebra-labels-zultimate-102x127', 'zebra-labels-zultimate-59x147',
-      'zebra-labels-zultimate-75x150', 'zebra-labels-zultimate-70x32',
-      // fi76
-      'zebra-foil76-880328-012', 'zebra-foil76-880330-019', 'zebra-foil76-76534',
-      'zebra-foil76-880332-019', 'zebra-foil76-880332-025', 'zebra-foil76-3013463-t',
-      'zebra-foil76-76535', 'zebra-foil76-76013', 'zebra-foil76-76381',
-      'zebra-foil76-3011103', 'zebra-foil76-880344-025', 'zebra-foil76-880344-031',
-      'zebra-foil76-76536', 'zebra-foil76-76015', 'zebra-foil76-87443',
-      'zebra-foil76-3004723', 'zebra-foil76-76846', 'zebra-foil76-880350-025',
-      'zebra-foil76-880350-050', 'zebra-foil76-880350-063', 'zebra-foil76-880350-076',
-      'zebra-foil76-880261-076d', 'zebra-foil76-880350-101', 'zebra-foil76-880350-152',
-      'zebra-foil76-3010520', 'zebra-foil76-880358-101', 'zebra-foil76-3009647-t',
-      'zebra-foil76-880368-025', 'zebra-foil76-880372-025', 'zebra-foil76-880374-019',
-      'zebra-foil76-880374-038', 'zebra-foil76-86164', 'zebra-foil76-880378-031',
-      'zebra-foil76-880378-044', 'zebra-foil76-880380-025', 'zebra-foil76-880380-076',
-      'zebra-foil76-880386-076', 'zebra-foil76-880386-101', 'zebra-foil76-3011711',
-      'zebra-foil76-3012403', 'zebra-foil76-3011714', 'zebra-foil76-3006690',
+      'zebra-z-ultimate-3000t-white', 'zebra-z-ultimate-3000t-silver', 'zebra-polye-3100t-gloss',
+      'zebra-polypro-3000t-gloss', 'zebra-polypro-3000t-clear', 'zebra-polypro-4000t-matte', 'zebra-polyo-3100t',
     ],
-    productCount: 77,
+    productCount: 7,
+  },
+  {
+    id: 'etykiety-termotransferowe-specjalne',
+    slug: 'etykiety-termotransferowe-specjalne',
+    name: 'Etykiety termotransferowe specjalne',
+    parentCategoryId: 'materialy-eksploatacyjne',
+    parentSubcategoryId: 'etykiety-termotransferowe',
+    description: 'Niszowe etykiety TT — kriogeniczne (-196°C), worki z krwią, zabezpieczające VOID, plomby destruktywne',
+    seoTitle: 'Etykiety termotransferowe specjalne Zebra — krio, plomby, zabezpieczające',
+    seoDescription: 'Specjalistyczne etykiety termotransferowe Zebra: kriogeniczne 8100T Cryocool (-196°C), 8000T All-Temp (-40°C), 8000T Blood Bag (worki z krwią), 8000T Void Matte (plomby VOID), 8100T Z-Destruct PE (plomby destruktywne). Niszowe zastosowania biotech, banki krwi, służby.',
+    longDescription: 'Specjalistyczne etykiety termotransferowe Zebra do zastosowań, w których zwykła folia nie wystarcza. 8100T Cryocool wytrzymuje krioprzechowywanie w ciekłym azocie (-196°C) — dla laboratoriów biotechnologicznych i biobanków. 8000T All-Temp aplikuje się już od -10°C (chłodnie, mrożonki). 8000T Blood Bag Deep Freeze oznacza worki z krwią zgodnie z ISBT 128. 8000T Void Matte ujawnia napis VOID przy próbie zdjęcia (plomby dokumentów), a 8100T Z-Destruct PE rozpada się przy odklejeniu (najwyższy poziom zabezpieczenia — plomby urzędowe, sprzęt wojskowy). Wymagają taśmy żywicznej (resin) Zebra 5095.',
+    icon: 'tag',
+    productIds: [
+      'zebra-8100t-cryocool', 'zebra-8000t-all-temp', 'zebra-8000t-blood-bag-deep-freeze',
+      'zebra-8000t-void-matte', 'zebra-8100t-z-destruct-pe',
+    ],
+    productCount: 5,
+  },
+  {
+    id: 'etykiety-termotransferowe',
+    slug: 'etykiety-termotransferowe-zebra',
+    name: 'Etykiety termotransferowe Zebra',
+    parentCategoryId: 'materialy-eksploatacyjne',
+    description: 'Pełna gama etykiet termotransferowych Zebra — papierowe, foliowe i specjalne. 16 serii, ponad 950 wariantów.',
+    seoTitle: 'Etykiety termotransferowe Zebra — papierowe, foliowe, specjalne | TAKMA',
+    seoDescription: 'Pełna gama etykiet termotransferowych Zebra w jednym miejscu: papierowe (Z-Perform, Z-Select), foliowe (Z-Ultimate, PolyPro, PolyE) i specjalistyczne (kriogeniczne, plomby, worki z krwią). 16 serii, ponad 950 wariantów. Doradztwo i próbki.',
+    longDescription: 'Etykiety termotransferowe wymagają taśmy barwiącej (ribbon) i dają trwały, odporny na ścieranie nadruk — w odróżnieniu od termicznych (direct thermal), które nie potrzebują taśmy, ale szybciej blakną. To wybór do oznaczeń, które mają przetrwać miesiące lub lata: etykiety produktowe, tabliczki znamionowe, oznaczenia w przemyśle, motoryzacji i elektronice. Oferujemy trzy grupy materiałowe: papierowe (ekonomiczne, do wysyłki i magazynu), foliowe (poliester, polipropylen, polietylen — trwałe na produkty końcowe) oraz specjalne (kriogeniczne, zabezpieczające, do worków z krwią). Łącznie 16 serii Zebra i ponad 950 wariantów rozmiarowych.',
+    icon: 'tag',
+    productIds: [
+      'zebra-z-perform-1000t', 'zebra-z-select-2000t', 'zebra-z-perform-1000t-removable', 'zebra-z-essentials-500t',
+      'zebra-z-ultimate-3000t-white', 'zebra-z-ultimate-3000t-silver', 'zebra-polye-3100t-gloss',
+      'zebra-polypro-3000t-gloss', 'zebra-polypro-3000t-clear', 'zebra-polypro-4000t-matte', 'zebra-polyo-3100t',
+      'zebra-8100t-cryocool', 'zebra-8000t-all-temp', 'zebra-8000t-blood-bag-deep-freeze',
+      'zebra-8000t-void-matte', 'zebra-8100t-z-destruct-pe',
+    ],
+    productCount: 16,
   },
   {
     id: 'etykiety-termiczne',
@@ -474,15 +483,15 @@ export const subcategories: Subcategory[] = [
   {
     id: 'tasmy-termotransferowe',
     slug: 'tasmy-termotransferowe',
-    name: 'Taśmy termotransferowe (ribbon)',
+    name: 'Taśmy termotransferowe',
     parentCategoryId: 'materialy-eksploatacyjne',
     description: 'Taśmy barwiące woskowe, woskowo-żywiczne i żywiczne do drukarek etykiet',
-    seoTitle: 'Taśmy termotransferowe Zebra | Ribbon woskowy, żywiczny',
-    seoDescription: 'Oryginalne taśmy barwiące (ribbon) Zebra: 2300 Wax (woskowe), 3200 Wax/Resin (woskowo-żywiczne), 5095 Resin (żywiczne). Wszystkie szerokości i długości. Dobór taśmy do etykiety.',
-    longDescription: 'Taśmy barwiące termotransferowe (ribbon) to materiał eksploatacyjny niezbędny do druku na etykietach termotransferowych. Od wyboru taśmy zależy trwałość nadruku, odporność na ścieranie i jakość kodów kreskowych. Oferujemy trzy typy taśm Zebra: woskowe (Wax) — ekonomiczne, do standardowych etykiet papierowych; woskowo-żywiczne (Wax/Resin) — uniwersalne, do etykiet powlekanych i syntetycznych; żywiczne (Resin) — najtrwalsze, do etykiet foliowych w ekstremalnych warunkach. Dostępne w szerokościach od 33 do 174 mm i długościach 74–600 m.',
+    seoTitle: 'Taśmy termotransferowe Zebra | woskowe, woskowo-żywiczne, żywiczne',
+    seoDescription: 'Oryginalne taśmy barwiące Zebra: 2300 Wax (woskowe), 3200 Wax/Resin (woskowo-żywiczne), 5095 Resin (żywiczne). Wszystkie szerokości i długości. Dobór taśmy do etykiety.',
+    longDescription: 'Taśmy barwiące termotransferowe to materiał eksploatacyjny niezbędny do druku na etykietach termotransferowych. Od wyboru taśmy zależy trwałość nadruku, odporność na ścieranie i jakość kodów kreskowych. Oferujemy trzy typy taśm Zebra: woskowe (Wax) — ekonomiczne, do standardowych etykiet papierowych; woskowo-żywiczne (Wax/Resin) — uniwersalne, do etykiet powlekanych i syntetycznych; żywiczne (Resin) — najtrwalsze, do etykiet foliowych w ekstremalnych warunkach. Dostępne w szerokościach od 33 do 174 mm i długościach 74–600 m.',
     icon: 'tag',
-    productIds: ['zebra-ribbon-02300gs08407','zebra-ribbon-02300gs11007','zebra-ribbon-02300gs06407','zebra-ribbon-02300bk06030','zebra-ribbon-02300bk06045','zebra-ribbon-02300bk08330','zebra-ribbon-02300bk08345','zebra-ribbon-02300bk11030','zebra-ribbon-02300bk11045','zebra-ribbon-02100bk04045','zebra-ribbon-02100bk06045','zebra-ribbon-02100bk08045','zebra-ribbon-02100bk08945','zebra-ribbon-02100bk10245','zebra-ribbon-03200gs06407','zebra-ribbon-03200gs08407','zebra-ribbon-03200gs11007','zebra-ribbon-03200bk06030','zebra-ribbon-03200bk06045','zebra-ribbon-03400bk04045','zebra-ribbon-03400bk06045','zebra-ribbon-05095gs06407','zebra-ribbon-05095gs08407','zebra-ribbon-05095gs11007'],
-    productCount: 24,
+    productIds: ['zebra-1600-wax','zebra-2100-wax','zebra-2300-wax','zebra-5319-wax','zebra-3200-wax-resin','zebra-3300-wax-resin','zebra-3400-wax-resin','zebra-5555-wax-resin','zebra-4800-resin','zebra-5095-resin','zebra-5100-resin','zebra-8000-chemresist'],
+    productCount: 12,
   },
   {
     id: 'opaski-identyfikacyjne',
@@ -60519,7 +60528,7 @@ const m3UL30Accessories: Product[] = [
 // EXPORT - WSZYSTKIE PRODUKTY
 // ============================================
 
-export const products: Product[] = [
+const rawProductList: Product[] = [
   ...desktopPrinters,
   ...industrialLightPrinters,
   ...industrialPrinters,
@@ -60555,6 +60564,8 @@ export const products: Product[] = [
   ...thermalLabels,
   ...foilLabels,
   ...foilLabels76,
+  ...transferLabelProducts,
+  ...transferRibbonProducts,
   ...ribbons,
   ...cardPrinters,
   ...cardRibbons,
@@ -60593,6 +60604,93 @@ export const products: Product[] = [
   ...m3UL30,
   ...m3UL30Accessories,
 ]
+
+// ── Migracja TT: usuń 139 starych produktów (1 SKU = 1 produkt) zastąpionych
+//    wariantami 16 nowych serii, i przepnij linki (compatibleAccessories itd.)
+//    ze starych id na odpowiadającą serię. Stare definicje pozostają w tablicach
+//    źródłowych jako martwy kod do osobnego cleanupu — tu są odfiltrowane. ──
+function relinkTtRefs(ids: string[] | undefined): string[] | undefined {
+  if (!ids) return ids
+  const out: string[] = []
+  const seen = new Set<string>()
+  for (const id of ids) {
+    if (OLD_TT_PRODUCT_IDS.has(id)) {
+      const series = OLD_TT_ID_TO_SERIES[id]
+      if (series && !seen.has(series)) {
+        out.push(series)
+        seen.add(series)
+      }
+      // brak serii (np. Lab Resist) → link pomijany
+    } else if (!seen.has(id)) {
+      out.push(id)
+      seen.add(id)
+    }
+  }
+  return out
+}
+
+// ── Migracja TT-ribbon: 24 stare ribbony (`zebra-ribbon-<pn>`) zastąpione
+//    przez 12 nowych serii w transfer-ribbon-products.ts. Mapowanie PN → seria
+//    po pierwszych 4 cyfrach part numbera (np. 02300* → zebra-2300-wax,
+//    03200* → zebra-3200-wax-resin). Fallback na bestseller (zebra-2300-wax). ──
+const OLD_RIBBON_PN_PREFIX_TO_SERIES: Record<string, string> = {
+  '01600': 'zebra-1600-wax',
+  '02100': 'zebra-2100-wax',
+  '02300': 'zebra-2300-wax',
+  '05319': 'zebra-5319-wax',
+  '03200': 'zebra-3200-wax-resin',
+  '03300': 'zebra-3300-wax-resin',
+  '03400': 'zebra-3400-wax-resin',
+  '05555': 'zebra-5555-wax-resin',
+  '04800': 'zebra-4800-resin',
+  '05095': 'zebra-5095-resin',
+  '05100': 'zebra-5100-resin',
+  '08000': 'zebra-8000-chemresist',
+}
+const OLD_RIBBON_IDS = new Set<string>(ribbons.map(p => p.id))
+const OLD_RIBBON_ID_TO_SERIES: Record<string, string> = (() => {
+  const map: Record<string, string> = {}
+  for (const r of ribbons) {
+    // id wzoru: zebra-ribbon-<pn-lowercase>; PN ma format ccccc... (pierwsze 5 cyfr = seria + format)
+    const pn = r.id.replace(/^zebra-ribbon-/, '').toUpperCase()
+    const prefix = pn.slice(0, 5)
+    map[r.id] = OLD_RIBBON_PN_PREFIX_TO_SERIES[prefix] ?? 'zebra-2300-wax'
+  }
+  return map
+})()
+
+function relinkOldRibbons(ids: string[] | undefined): string[] | undefined {
+  if (!ids) return ids
+  const out: string[] = []
+  const seen = new Set<string>()
+  for (const id of ids) {
+    if (OLD_RIBBON_IDS.has(id)) {
+      const series = OLD_RIBBON_ID_TO_SERIES[id]
+      if (series && !seen.has(series)) {
+        out.push(series)
+        seen.add(series)
+      }
+    } else if (!seen.has(id)) {
+      out.push(id)
+      seen.add(id)
+    }
+  }
+  return out
+}
+
+function relinkAll(ids: string[] | undefined): string[] | undefined {
+  return relinkOldRibbons(relinkTtRefs(ids))
+}
+
+export const products: Product[] = rawProductList
+  .filter((p) => !OLD_TT_PRODUCT_IDS.has(p.id) && !OLD_RIBBON_IDS.has(p.id))
+  .map((p) => ({
+    ...p,
+    compatibleAccessories: relinkAll(p.compatibleAccessories) ?? [],
+    compatibleFoilLabels: relinkAll(p.compatibleFoilLabels),
+    relatedAccessories: relinkAll(p.relatedAccessories),
+    relatedProducts: relinkAll(p.relatedProducts),
+  }))
 
 // Helper do pobrania produktu po slug
 export function getProductBySlug(slug: string): Product | undefined {
@@ -60721,6 +60819,111 @@ export function getSubcategoriesForProduct(product: Product): Subcategory[] {
 // Industry pages helper — pobiera produkty po tagu branżowym
 export function getProductsByTag(tag: ProductTag): Product[] {
   return products.filter(p => p.tags.includes(tag))
+}
+
+/** Wybiera optymalny wariant taśmy dla danej szerokości etykiety.
+ *
+ * Reguła Zebry: szerokość taśmy powinna być o **2–10 mm szersza** niż etykieta
+ * (chroni głowicę przed bezpośrednim kontaktem z papierem).
+ *
+ * Priorytety:
+ *   1. Szerokość w idealnym zakresie `[labelWidth+2, labelWidth+10]` — sortuj rosnąco po szerokości, potem malejąco po długości (preferuj dłuższe rolki).
+ *   2. Szerokość >= labelWidth (taśma za wąska nie zadziała) — bierz najmniejszą.
+ *   3. Najszersza dostępna (fallback gdy seria ma tylko węższe niż etykieta).
+ *
+ * Zwraca `undefined` gdy taśma nie ma wariantów lub żaden nie ma atrybutu Szerokość.
+ */
+export function pickRibbonVariantForLabel(
+  ribbonProduct: Product,
+  labelWidthMm: number,
+  labelCoreMm?: number,
+): ProductVariant | undefined {
+  if (!ribbonProduct.variants?.length) return undefined
+
+  const parsed = ribbonProduct.variants
+    .map(v => {
+      const w = parseFloat(v.attributes['Szerokość']?.match(/(\d+(?:[.,]\d+)?)/)?.[1] ?? '0')
+      const l = parseFloat(v.attributes['Długość']?.match(/(\d+)/)?.[1] ?? '0')
+      // Rdzeń taśmy: brak atrybutu zwykle = 25 mm (industrial standard).
+      const c = parseFloat(v.attributes['Rdzeń']?.match(/(\d+(?:[.,]\d+)?)/)?.[1] ?? '25')
+      return { v, w, l, c }
+    })
+    .filter(x => x.w > 0)
+
+  if (parsed.length === 0) return ribbonProduct.variants[0]
+
+  // ── DOPASOWANIE GILZA ETYKIETY → KLASA DRUKARKI → DŁUGOŚĆ I RDZEŃ TAŚMY ──
+  // Etykiety z gilzą ≤ 25 mm → drukarki desktop (ZD230/ZD421) → taśmy z rdzeń 12 mm i krótkie role
+  // Etykiety z gilzą ≥ 38 mm → drukarki industrial (ZT231/ZT411) → taśmy z rdzeń 25 mm i długie role
+  const isDesktop = labelCoreMm !== undefined && labelCoreMm <= 25
+
+  // Score długości taśmy: niższe = lepsze dopasowanie do klasy drukarki.
+  const lengthScore = (length: number): number => {
+    if (isDesktop) {
+      // Desktop: preferuj 74m → 100m → 110m → 50m → 30m → reszta (300m+ to industrial — odrzucamy)
+      if (length === 74) return 0
+      if (length === 100) return 1
+      if (length === 110) return 2
+      if (length === 50) return 3
+      if (length === 30) return 4
+      return 100 + length // industrial długości na końcu
+    }
+    // Industrial: preferuj najdłuższe (450m → 300m → ...)
+    return 1000 - length
+  }
+
+  // Filtruj po rdzeniu taśmy gdy znamy gilzę etykiety.
+  // Desktop: rdzeń taśmy 12 mm. Industrial: 25 mm. Jeśli wariant z preferowanym rdzeniem
+  // istnieje — używamy go; inaczej fallback do wszystkich (część taśm nie ma atrybutu Rdzeń).
+  let candidates = parsed
+  if (labelCoreMm !== undefined) {
+    const preferredCore = isDesktop ? 12 : 25
+    const matchingCore = parsed.filter(x => x.c === preferredCore)
+    if (matchingCore.length > 0) candidates = matchingCore
+  }
+
+  const min = labelWidthMm + 2
+  const max = labelWidthMm + 10
+
+  // 1. Idealny zakres szerokości — sortuj po szerokości (rosnąco), potem po dopasowaniu długości
+  const inRange = candidates.filter(x => x.w >= min && x.w <= max)
+  if (inRange.length > 0) {
+    inRange.sort((a, b) => a.w - b.w || lengthScore(a.l) - lengthScore(b.l))
+    return inRange[0].v
+  }
+
+  // 2. Najbliższa szersza niż etykieta — minimalna nadwyżka, potem najlepsza długość
+  const wider = candidates.filter(x => x.w >= labelWidthMm).sort((a, b) => a.w - b.w || lengthScore(a.l) - lengthScore(b.l))
+  if (wider.length > 0) return wider[0].v
+
+  // 3. Fallback — najszersza dostępna (z pełnej puli, ignorując preferencję rdzenia)
+  parsed.sort((a, b) => b.w - a.w || lengthScore(a.l) - lengthScore(b.l))
+  return parsed[0].v
+}
+
+/** Parsuje gilzę etykiety z atrybutu Rdzeń (np. "25 mm" → 25, "76 mm" → 76). */
+export function parseLabelCore(rdzen: string | undefined): number | null {
+  if (!rdzen) return null
+  const m = rdzen.match(/(\d+(?:[.,]\d+)?)/)
+  return m ? parseFloat(m[1].replace(',', '.')) : null
+}
+
+/** Wybiera obraz taśmy adekwatny do wariantu — desktop (74 m, gilza 12 mm) vs
+ *  industrial (300/450 m, gilza 25 mm). Zapobiega pokazywaniu krótkiej desktop rolki
+ *  na karcie wariantu industrial 450 m i odwrotnie. */
+export function getRibbonVariantImage(product: Product, variant: ProductVariant): string | undefined {
+  const length = parseFloat(variant.attributes['Długość']?.match(/(\d+)/)?.[1] ?? '0')
+  const isIndustrial = length >= 200
+  if (isIndustrial && product.imageIndustrial) return product.imageIndustrial
+  if (!isIndustrial && length > 0 && product.imageDesktop) return product.imageDesktop
+  return product.images?.[0]
+}
+
+/** Parsuje szerokość etykiety z atrybutu Rozmiar (np. "102×152 mm" → 102, "32×10 mm" → 32). */
+export function parseLabelWidth(rozmiar: string | undefined): number | null {
+  if (!rozmiar) return null
+  const m = rozmiar.match(/(\d+(?:[.,]\d+)?)\s*[×x]/)
+  return m ? parseFloat(m[1].replace(',', '.')) : null
 }
 
 // Pobiera produkty po wielu tagach (OR — dowolny z podanych)
@@ -61080,6 +61283,12 @@ export function thermalSizeSlug(rozmiar: string): string {
     .trim()
 }
 
+/**
+ * Wyszukiwanie wariantu produktu (etykieta DT/TT lub taśma TT) po sizeSlug + partNumber.
+ * Etykiety używają atrybutu 'Rozmiar' (np. "102×152 mm").
+ * Taśmy używają 'Szerokość' + 'Długość' (np. "110 mm" × "450 m" → "110x450").
+ * Fallback 'bez-rozmiaru' / 'wariant' dla wariantów bez tych atrybutów.
+ */
 export function findThermalVariant(
   product: Product,
   sizeSlug: string,
@@ -61087,11 +61296,53 @@ export function findThermalVariant(
 ): ProductVariant | undefined {
   if (!product.variants) return undefined
   return product.variants.find(v => {
+    if (v.partNumber !== partNumber) return false
+    // 1. Etykieta — atrybut 'Rozmiar'
     const size = v.attributes['Rozmiar']
-    return v.partNumber === partNumber && size && thermalSizeSlug(size) === sizeSlug
+    if (size) return thermalSizeSlug(size) === sizeSlug
+    // 2. Taśma — Szerokość × Długość
+    const w = v.attributes['Szerokość']?.match(/(\d+(?:[.,]\d+)?)/)?.[1]
+    const l = v.attributes['Długość']?.match(/(\d+(?:[.,]\d+)?)/)?.[1]
+    if (w && l) return `${w}x${l}` === sizeSlug
+    // 3. Brak atrybutów rozmiaru — segment 'bez-rozmiaru' (TT label) lub 'wariant' (ribbon)
+    return sizeSlug === 'bez-rozmiaru' || sizeSlug === 'wariant'
   })
 }
 
 export function isThermalLabelProduct(product: Product): boolean {
   return product.subcategoryIds?.includes('etykiety-termiczne') ?? false
+}
+
+export function isTransferLabelProduct(product: Product): boolean {
+  return product.subcategoryIds?.includes('etykiety-termotransferowe') ?? false
+}
+
+/** Produkt jest taśmą termotransferową (ribbon) — atrybuty 'Szerokość' + 'Długość'. */
+export function isRibbonProduct(product: Product): boolean {
+  return product.subcategoryIds?.includes('tasmy-termotransferowe') ?? false
+}
+
+/** Slug rozmiaru dla wariantu taśmy: szerokośćxdługość (np. "110x450" = 110 mm × 450 m).
+ *  Fallback 'wariant' gdy brak Szerokości lub Długości. */
+export function ribbonSizeSlug(variant: ProductVariant): string {
+  const w = variant.attributes['Szerokość']?.match(/(\d+(?:[.,]\d+)?)/)?.[1]
+  const l = variant.attributes['Długość']?.match(/(\d+(?:[.,]\d+)?)/)?.[1]
+  if (w && l) return `${w}x${l}`
+  return 'wariant'
+}
+
+/** Segment URL rozmiaru — wspólny dla etykiet (DT/TT) i taśm (TT-ribbon). */
+export function variantSizeSlug(variant: ProductVariant): string {
+  // 1. Etykiety — atrybut 'Rozmiar' (np. "102×152 mm")
+  const size = variant.attributes['Rozmiar']
+  if (size) return thermalSizeSlug(size)
+  // 2. Taśmy — Szerokość + Długość
+  const w = variant.attributes['Szerokość']?.match(/(\d+(?:[.,]\d+)?)/)?.[1]
+  const l = variant.attributes['Długość']?.match(/(\d+(?:[.,]\d+)?)/)?.[1]
+  if (w && l) return `${w}x${l}`
+  // 3. Brak atrybutów rozmiaru — taśma bez gabarytów → 'wariant'; etykieta bez rozmiaru → 'bez-rozmiaru'
+  if (variant.attributes['Szerokość'] !== undefined || variant.attributes['Długość'] !== undefined) {
+    return 'wariant'
+  }
+  return 'bez-rozmiaru'
 }

@@ -371,7 +371,7 @@ function CategoryGuide() {
             Etykiety termiczne (direct thermal, DT) to specjalny papier termoczuły, na którym obraz powstaje bezpośrednio pod wpływem ciepła z głowicy drukującej — <strong>bez taśmy barwiącej (ribbona)</strong>. To główna zaleta technologii DT: niższy koszt eksploatacji, mniej części zużywających się w drukarce, prostszy proces. Druk termiczny jest standardem dla etykiet wysyłkowych InPost/DPD/DHL/GLS, oznaczeń półkowych w retailu, identyfikacji w magazynach WMS oraz oznaczeń krótkoterminowych w pharma, healthcare i produkcji.
           </p>
           <p>
-            Wadą jest <strong>krótszy lifespan nadruku</strong>: typowo 12-24 miesiące w warunkach indoor. UV bezpośrednie i temperatury powyżej +80°C powodują ciemnienie i blaknięcie. Dla nadruków o długim cyklu życia lub outdoor wybierz <Link href="/etykiety-termotransferowe-papierowe" className="text-primary-600 hover:underline">etykiety termotransferowe</Link> — wymagają taśmy, ale są trwałe (lata).
+            Wadą jest <strong>krótszy lifespan nadruku</strong>: typowo 12-24 miesiące w warunkach indoor. UV bezpośrednie i temperatury powyżej +80°C powodują ciemnienie i blaknięcie. Dla nadruków o długim cyklu życia lub outdoor wybierz <Link href="/etykiety-termotransferowe-zebra/papierowe" className="text-primary-600 hover:underline">etykiety termotransferowe</Link> — wymagają taśmy, ale są trwałe (lata).
           </p>
         </div>
       </section>

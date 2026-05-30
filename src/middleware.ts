@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { jwtVerify } from 'jose'
+import { OLD_TT_SLUG_REDIRECTS } from '@/data/transfer-label-migration'
 
 const ADMIN_SECRET = new TextEncoder().encode(
   process.env.ADMIN_JWT_SECRET || ''
@@ -34,6 +35,12 @@ export async function middleware(request: NextRequest) {
   }
   if (redirects[pathname]) {
     return NextResponse.redirect(new URL(redirects[pathname], request.url), 301)
+  }
+
+  // 301 — stare produkty TT (1 SKU = 1 produkt) → nowy URL wariantu serii.
+  // Musi być PRZED catch-all niżej, bo stare slugi zaczynają się od "zebra-".
+  if (OLD_TT_SLUG_REDIRECTS[pathname]) {
+    return NextResponse.redirect(new URL(OLD_TT_SLUG_REDIRECTS[pathname], request.url), 301)
   }
 
   // -------------------------------------------------------------------------

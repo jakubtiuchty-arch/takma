@@ -121,8 +121,7 @@ const navigation: NavItem[] = [
     href: '/materialy-eksploatacyjne',
     children: [
       { name: 'Wszystkie materiały', href: '/materialy-eksploatacyjne' },
-      { name: 'Etykiety TT papierowe', href: '/etykiety-termotransferowe-papierowe' },
-      { name: 'Etykiety TT foliowe', href: '/etykiety-termotransferowe-foliowe' },
+      { name: 'Etykiety termotransferowe', href: '/etykiety-termotransferowe-zebra' },
       { name: 'Etykiety termiczne', href: '/etykiety-termiczne' },
       { name: 'Taśmy termotransferowe', href: '/tasmy-termotransferowe' },
       { name: 'Opaski identyfikacyjne', href: '/opaski-identyfikacyjne' },

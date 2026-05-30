@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import InfoTooltip from './InfoTooltip'
 
 /** Renders inline text with bold (**text**) support */
 function BoldText({ text }: { text: string }) {
@@ -12,6 +13,23 @@ function BoldText({ text }: { text: string }) {
           return <strong key={i} className="font-semibold">{boldMatch[1]}</strong>
         }
         return <span key={i}>{part}</span>
+      })}
+    </>
+  )
+}
+
+/** Renders text with inline tooltips: `term[[?wyjaśnienie tooltipa]]` →
+ *  `<strong>term</strong> <InfoTooltip text="wyjaśnienie tooltipa" />`. */
+function TooltipText({ text }: { text: string }) {
+  const parts = text.split(/(\[\[\?[^\]]+\]\])/)
+  return (
+    <>
+      {parts.map((part, i) => {
+        const m = part.match(/^\[\[\?([^\]]+)\]\]$/)
+        if (m) {
+          return <InfoTooltip key={i} text={m[1].trim()} />
+        }
+        return <BoldText key={i} text={part} />
       })}
     </>
   )
@@ -32,13 +50,13 @@ function HtmlLinkText({ text }: { text: string }) {
           }
           return <Link key={i} href={href} className="text-primary-600 hover:text-primary-800 underline decoration-primary-300">{label}</Link>
         }
-        return <BoldText key={i} text={part} />
+        return <TooltipText key={i} text={part} />
       })}
     </>
   )
 }
 
-/** Renders text with markdown-style links [text](/url), HTML <a> links, and **bold** */
+/** Renders text with markdown-style links [text](/url), HTML <a> links, **bold** and `term[[?tooltip]]` inline tooltips. */
 export default function LinkedText({ text }: { text: string }) {
   const parts = text.split(/(\[[^\]]+\]\([^)]+\))/)
   return (
@@ -58,3 +76,6 @@ export default function LinkedText({ text }: { text: string }) {
     </>
   )
 }
+
+/** Eksportowane także osobno na wypadek użycia bez wrappera LinkedText */
+export { InfoTooltip }

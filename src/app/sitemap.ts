@@ -4,11 +4,16 @@ import {
   subcategories,
   brandCategories,
   thermalSizeSlug,
+  variantSizeSlug,
   isThermalLabelProduct,
+  isTransferLabelProduct,
 } from '@/data/products'
 import { guides } from '@/data/guides'
 import { industryPages } from '@/data/industry-content'
 import { thermalLabelSeries } from '@/data/thermal-label-series'
+import { transferLabelSeries } from '@/data/transfer-label-series'
+import { transferRibbonSeries } from '@/data/transfer-ribbon-series'
+import { isRibbonProduct } from '@/data/products'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.takma.com.pl'
@@ -46,10 +51,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(product.updatedAt || product.createdAt),
   }))
 
-  const subcategoryPages: MetadataRoute.Sitemap = subcategories.map((sub) => ({
-    url: `${baseUrl}/${sub.slug}`,
-    lastModified: lastUpdated,
-  }))
+  // Stare flat slugi TT (etykiety-termotransferowe-papierowe/-foliowe/-specjalne)
+  // 301-redirectują na zagnieżdżony URL /etykiety-termotransferowe-zebra/{sub} — wykluczamy.
+  // Rodzic ma slug 'etykiety-termotransferowe-zebra' i jest dodawany w transferCategoryPages niżej.
+  const subcategoryPages: MetadataRoute.Sitemap = subcategories
+    .filter((sub) => !/^etykiety-termotransferowe-(papierowe|foliowe|specjalne)$/.test(sub.slug))
+    .filter((sub) => sub.slug !== 'etykiety-termotransferowe-zebra')
+    .map((sub) => ({
+      url: `${baseUrl}/${sub.slug}`,
+      lastModified: lastUpdated,
+    }))
 
   const guidePages: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/poradnik`, lastModified: lastUpdated },
@@ -89,6 +100,44 @@ export default function sitemap(): MetadataRoute.Sitemap {
         })),
     )
 
+  // Etykiety termotransferowe — landing-rodzic + 3 podkategorie + 16 serii
+  const ttLastMod = new Date('2026-05-29')
+  const transferCategoryPages: MetadataRoute.Sitemap = [
+    { url: `${baseUrl}/etykiety-termotransferowe-zebra`, lastModified: ttLastMod },
+    { url: `${baseUrl}/etykiety-termotransferowe-zebra/papierowe`, lastModified: ttLastMod },
+    { url: `${baseUrl}/etykiety-termotransferowe-zebra/foliowe`, lastModified: ttLastMod },
+    { url: `${baseUrl}/etykiety-termotransferowe-zebra/specjalne`, lastModified: ttLastMod },
+  ]
+  const transferSeriesPages: MetadataRoute.Sitemap = transferLabelSeries.map((s) => ({
+    url: `${baseUrl}/etykiety-termotransferowe-zebra/${s.subcategory}/serie/${s.slug}`,
+    lastModified: ttLastMod,
+  }))
+
+  // Warianty TT — /produkt/[slug]/[size]/[pn] (z 'bez-rozmiaru' dla SKU bez rozmiaru)
+  const transferVariantPages: MetadataRoute.Sitemap = products
+    .filter(isTransferLabelProduct)
+    .flatMap((p) =>
+      (p.variants ?? []).map((v) => ({
+        url: `${baseUrl}/produkt/${p.slug}/${variantSizeSlug(v)}/${v.partNumber}`,
+        lastModified: new Date(p.updatedAt || p.createdAt),
+      })),
+    )
+
+  // Taśmy termotransferowe — landing istniejący (zaindeksowany) + 12 stron serii + 140 wariantów
+  const ribbonLastMod = new Date('2026-05-30')
+  const ribbonSeriesPages: MetadataRoute.Sitemap = transferRibbonSeries.map((s) => ({
+    url: `${baseUrl}/tasmy-termotransferowe/serie/${s.slug}`,
+    lastModified: ribbonLastMod,
+  }))
+  const ribbonVariantPages: MetadataRoute.Sitemap = products
+    .filter(isRibbonProduct)
+    .flatMap((p) =>
+      (p.variants ?? []).map((v) => ({
+        url: `${baseUrl}/produkt/${p.slug}/${variantSizeSlug(v)}/${v.partNumber}`,
+        lastModified: new Date(p.updatedAt || p.createdAt),
+      })),
+    )
+
   return [
     ...staticPages,
     ...brandPillarPages,
@@ -99,5 +148,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...industryLandingPages,
     ...thermalSeriesPages,
     ...thermalVariantPages,
+    ...transferCategoryPages,
+    ...transferSeriesPages,
+    ...transferVariantPages,
+    ...ribbonSeriesPages,
+    ...ribbonVariantPages,
   ]
 }

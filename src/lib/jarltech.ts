@@ -31,10 +31,11 @@ const ERROR_COOLDOWN = 10 * 1000              // 10s backoff
 export interface JarltechStockInfo {
   partNumber: string
   found: boolean
-  unitPrice?: number        // Raw EUR
+  unitPrice?: number        // Raw EUR (UWAGA: dla części towarów to cena PAKIETU — patrz priceQuantity)
   jarltechPrice?: number    // EUR → PLN (× eurRate) — wypelniane w /api/stock
   price?: number            // PLN × 1.15 margin — wypelniane w /api/stock
   priceBrutto?: number      // PLN × 1.15 × 1.23 — wypelniane w /api/stock
+  priceQuantity?: number    // Ilość szt. w pakiecie do której odnosi się unitPrice (jeśli zwrócone)
   currency?: string
   inventory: number         // On-hand stock
   incomingQty: number       // Expected delivery
@@ -177,10 +178,19 @@ async function fetchItemDetails(jarltechId: string, token: string) {
   // Parse results (graceful — partial failure OK)
   let unitPrice: number | undefined
   let currency = 'EUR'
+  let priceQuantity: number | undefined  // szt. w pakiecie z którego liczono unit_price (jeśli Jarltech zwraca)
   if (priceRes.ok) {
     const p = await priceRes.json()
     unitPrice = typeof p.unit_price === 'string' ? parseFloat(p.unit_price) : p.unit_price
     currency = p.currency || 'EUR'
+    // Heurystyka: niektóre API zwracają qty/quantity/min_quantity razem z ceną.
+    // Logujemy raz na ID dla diagnostyki packagingu.
+    const possibleQty = p.quantity ?? p.min_quantity ?? p.packaging ?? p.pack_quantity
+    if (possibleQty) priceQuantity = Number(possibleQty)
+    if (typeof console !== 'undefined' && !priceLogged.has(jarltechId)) {
+      priceLogged.add(jarltechId)
+      console.log(`[Jarltech Price] ${jarltechId} response keys:`, Object.keys(p), 'sample:', p)
+    }
   } else {
     console.warn(`[Jarltech] Price HTTP ${priceRes.status} for ${jarltechId}`)
   }
@@ -204,8 +214,11 @@ async function fetchItemDetails(jarltechId: string, token: string) {
     }
   }
 
-  return { unitPrice, currency, stock, incomingQty, incomingDate }
+  return { unitPrice, currency, stock, incomingQty, incomingDate, priceQuantity }
 }
+
+// Debug — logujemy strukturę response /price tylko raz per jarltechId per cold-start
+const priceLogged = new Set<string>()
 
 // ============================================
 // CONCURRENT LIMITER — max 4 PNy równolegle
@@ -321,6 +334,7 @@ async function lookupSinglePN(pn: string, now: string): Promise<JarltechStockInf
       partNumber: pn,
       found: true,
       unitPrice: details.unitPrice,
+      priceQuantity: details.priceQuantity,
       currency: details.currency,
       inventory,
       incomingQty,

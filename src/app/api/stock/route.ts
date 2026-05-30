@@ -3,12 +3,14 @@ import { lookupStock as ingramLookup } from '@/lib/ingram'
 import { lookupStock as bluestarLookup } from '@/lib/bluestar'
 import { lookupStock as jarltechLive } from '@/lib/jarltech'
 import { prisma } from '@/lib/db'
+import { isRibbonPN } from '@/data/transfer-ribbon-products'
 import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
 import type { JarltechStockInfo } from '@/lib/jarltech'
 
-const MARGIN = 1.10 // 10% marzy
-const VAT = 1.23    // 23% VAT
+const MARGIN = 1.10        // 10% marży — standardowa dla większości produktów
+const RIBBON_MARGIN = 1.20 // 20% marży dla taśm termotransferowych Zebra
+const VAT = 1.23           // 23% VAT
 
 // ============================================
 // KURS EUR/PLN z NBP API (cache 12h)
@@ -393,19 +395,34 @@ export async function GET(request: NextRequest) {
         + (jlFound ? (jl!.incomingQty ?? 0) : 0)
       const totalStock = stockPL + stockDE + inDelivery
 
-      // Cena: porownanie w PLN
-      // Ingram: juz w PLN | BlueStar + Jarltech: EUR -> PLN po kursie NBP
+      // Cena: porównanie w PLN.
+      // Wszyscy dystrybutorzy zwracają `unitPrice` AS-IS z API. Dla większości produktów
+      // (etykiety, drukarki, terminale) to cena ZA 1 SZTUKĘ — pakowanie 12/BOX itp.
+      // to tylko MOQ (minimum order quantity), nie wpływa na cenę.
+      //
+      // WYJĄTEK: TAŚMY TERMOTRANSFEROWE — BlueStar i Jarltech zwracają cenę PAKIETU
+      // (6 lub 12 rolek), bo tak Zebra je sprzedaje hurtowo. Dla taśm dzielimy przez
+      // `multipleQty` (z BlueStar, źródło prawdy o packagingu Zebra) lub /12 fallback.
+      // Ingram już dla taśm zwraca cenę per-szt., więc go nie ruszamy.
+      const isRibbon = isRibbonPN(pn)
+      const ribbonPackagingUnit = isRibbon
+        ? (bs?.multipleQty && bs.multipleQty > 1 ? bs.multipleQty : 12)
+        : 1
+
       const ingramPLN = ingFound ? ing!.ingramPrice : undefined
       const bluestarPLN = (bsFound && bs!.unitPrice)
-        ? Math.round(bs!.unitPrice * eurRate * 100) / 100
-        : undefined
-      const jarltechPLN = (jlFound && jl!.unitPrice)
-        ? Math.round(jl!.unitPrice * eurRate * 100) / 100
+        ? Math.round((bs!.unitPrice * eurRate / ribbonPackagingUnit) * 100) / 100
         : undefined
 
-      // Min z trzech dystrybutorów
+      let jarltechPLN: number | undefined
+      if (jlFound && jl!.unitPrice) {
+        const rawJarltechPLN = jl!.unitPrice * eurRate
+        jarltechPLN = Math.round((rawJarltechPLN / ribbonPackagingUnit) * 100) / 100
+      }
+
+      // Min z trzech dystrybutorów (po korekcie pakietowej dla taśm)
       const prices = [ingramPLN, bluestarPLN, jarltechPLN].filter(
-        (p): p is number => p != null && p > 0
+        (p): p is number => p != null && p > 0,
       )
       const bestRawPricePLN = prices.length > 0 ? Math.min(...prices) : undefined
 
@@ -414,7 +431,8 @@ export async function GET(request: NextRequest) {
       let ingramPrice: number | undefined
 
       if (bestRawPricePLN != null && bestRawPricePLN > 0) {
-        price = Math.round(bestRawPricePLN * MARGIN * 100) / 100
+        const marginForPN = isRibbonPN(pn) ? RIBBON_MARGIN : MARGIN
+        price = Math.round(bestRawPricePLN * marginForPN * 100) / 100
         priceBrutto = Math.round(price * VAT * 100) / 100
         ingramPrice = bestRawPricePLN // Najlepsza cena zakupu PLN
       }

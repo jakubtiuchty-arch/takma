@@ -59,8 +59,15 @@ interface BlueStarPriceItem {
   listPrice: number
   inventory: number
   qtyExpected: number
-  minimumQty: number
-  multipleQty: number
+  // BlueStar zwraca te pola pod nazwami z sufiksem `ForSales`. Wcześniejsza wersja
+  // odczytywała `minimumQty`/`multipleQty` (zawsze undefined → 1) — co maskowało
+  // pakowanie 6/12 sztuk i sprawiało, że cena `unitPrice` (która jest CENĄ PAKIETU)
+  // traktowana była jako cena za 1 sztukę.
+  minimumQtyForSales?: number
+  multipleQtyForSales?: number
+  // Stare nazwy (backward compatibility, gdyby BlueStar zmienił schemat):
+  minimumQty?: number
+  multipleQty?: number
 }
 
 interface BlueStarPriceResponse {
@@ -230,6 +237,11 @@ async function sendPriceRequest(partNumbers: string[]): Promise<BlueStarPriceIte
 
     const items = data.items || []
     console.log(`[BlueStar Price] Otrzymano ${items.length} produktów`)
+    // DEBUG: pokaż wszystkie pola raw response dla pierwszego itemu (diagnostyka packaging unit)
+    if (items.length > 0 && process.env.NODE_ENV !== 'production') {
+      console.log('[BlueStar Price] RAW item fields:', Object.keys(items[0]))
+      console.log('[BlueStar Price] RAW first item:', JSON.stringify(items[0], null, 2))
+    }
     return items
 
   } catch (error) {
@@ -307,6 +319,15 @@ export async function lookupStock(partNumbers: string[]): Promise<BlueStarStockI
       continue
     }
 
+    // UWAGA: BlueStar zwraca `unitPrice` **AS-IS** z API. Dla TAŚM jest to cena
+    // pakietu (np. 6/12 rolek za €121.80) — w `/api/stock` dzielimy przez `multipleQty`
+    // TYLKO dla taśm (przez `isRibbonPN(pn)`). Dla etykiet `unitPrice` to cena za
+    // 1 ROLKĘ — pakowanie 12/BOX to tylko MOQ, nie cena pakietu.
+    const multipleQty =
+      found.multipleQtyForSales || found.multipleQty || 1
+    const minimumQty =
+      found.minimumQtyForSales || found.minimumQty || 1
+
     const priceNetto = Math.round(found.unitPrice * MARGIN * 100) / 100
     const priceBrutto = Math.round(priceNetto * VAT * 100) / 100
 
@@ -331,6 +352,8 @@ export async function lookupStock(partNumbers: string[]): Promise<BlueStarStockI
     const result: BlueStarStockInfo = {
       partNumber: pn,
       found: true,
+      // RAW z API — interpretacja (per-szt. vs pakiet) zależy od typu produktu,
+      // robiona w `/api/stock` z dostępem do `isRibbonPN(pn)`.
       unitPrice: found.unitPrice,
       listPrice: found.listPrice,
       price: priceNetto,
@@ -338,8 +361,8 @@ export async function lookupStock(partNumbers: string[]): Promise<BlueStarStockI
       inventory,
       qtyExpected,
       totalStock,
-      minimumQty: found.minimumQty || 1,
-      multipleQty: found.multipleQty || 1,
+      minimumQty,
+      multipleQty,
       availability,
       deliveryText,
       lastSync: now,

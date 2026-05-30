@@ -6,12 +6,72 @@ import {
   getProductBySlug,
   getCategoryById,
   getManufacturerById,
-  thermalSizeSlug,
+  variantSizeSlug,
   findThermalVariant,
   isThermalLabelProduct,
+  isTransferLabelProduct,
+  isRibbonProduct,
+  parseLabelWidth,
+  parseLabelCore,
+  getRibbonVariantImage,
+  type Product,
 } from '@/data/products'
 import { thermalLabelSeries } from '@/data/thermal-label-series'
+import { transferLabelSeries } from '@/data/transfer-label-series'
+import { transferRibbonSeries } from '@/data/transfer-ribbon-series'
+
+// Kontekst serii — normalizuje różnice między etykietą termiczną (DT), etykietą
+// termotransferową (TT) a taśmą termotransferową (ribbon): landing serii, breadcrumb,
+// etykieta kategorii oraz polecane taśmy (tylko etykiety TT).
+function getLabelContext(product: Product) {
+  const thermal = thermalLabelSeries.find((s) => s.productId === product.id)
+  if (thermal) {
+    return {
+      series: thermal,
+      isTransfer: false as const,
+      isRibbon: false as const,
+      categoryLabel: 'Etykiety termiczne',
+      categoryUrl: '/etykiety-termiczne',
+      seriesUrl: `/etykiety-termiczne/serie/${thermal.slug}`,
+      recommendedRibbons: undefined,
+    }
+  }
+  const transfer = transferLabelSeries.find((s) => s.productId === product.id)
+  if (transfer) {
+    return {
+      series: transfer,
+      isTransfer: true as const,
+      isRibbon: false as const,
+      categoryLabel: 'Etykiety termotransferowe',
+      categoryUrl: '/etykiety-termotransferowe-zebra',
+      subcategoryLabel:
+        transfer.subcategory === 'papierowe' ? 'Papierowe' :
+        transfer.subcategory === 'foliowe' ? 'Foliowe' : 'Specjalne',
+      subcategoryUrl: `/etykiety-termotransferowe-zebra/${transfer.subcategory}`,
+      seriesUrl: `/etykiety-termotransferowe-zebra/${transfer.subcategory}/serie/${transfer.slug}`,
+      recommendedRibbons: transfer.recommendedRibbons,
+    }
+  }
+  const ribbon = transferRibbonSeries.find((s) => s.productId === product.id)
+  if (ribbon) {
+    return {
+      series: ribbon,
+      isTransfer: false as const,
+      isRibbon: true as const,
+      categoryLabel: 'Taśmy termotransferowe',
+      categoryUrl: '/tasmy-termotransferowe',
+      seriesUrl: `/tasmy-termotransferowe/serie/${ribbon.slug}`,
+      recommendedRibbons: undefined,
+    }
+  }
+  return null
+}
+
+function isLabelOrRibbonProduct(product: Product): boolean {
+  return isThermalLabelProduct(product) || isTransferLabelProduct(product) || isRibbonProduct(product)
+}
 import { ProductGallery } from '@/components/product'
+import RecommendedRibbonsBlock from '@/components/labels/RecommendedRibbonsBlock'
 import {
   ChevronRightIcon,
   CheckIcon,
@@ -28,6 +88,8 @@ import SmartPrice from '../../SmartPrice'
 import { SmartPriceProvider } from '../../SmartPriceContext'
 import ContextAvailabilityBadge from '../../ContextAvailabilityBadge'
 import ViewItemTracker from '../../ViewItemTracker'
+import RibbonLabelCountWidget from '@/components/calculators/RibbonLabelCountWidget'
+import { parseLengthFromAttribute } from '@/lib/ribbon-math'
 
 const siteUrl = 'https://www.takma.com.pl'
 
@@ -38,13 +100,11 @@ interface PageProps {
 export async function generateStaticParams() {
   const params: { slug: string; size: string; pn: string }[] = []
   for (const product of products) {
-    if (!isThermalLabelProduct(product) || !product.variants) continue
+    if (!isLabelOrRibbonProduct(product) || !product.variants) continue
     for (const v of product.variants) {
-      const rozmiar = v.attributes['Rozmiar']
-      if (!rozmiar) continue
       params.push({
         slug: product.slug,
-        size: thermalSizeSlug(rozmiar),
+        size: variantSizeSlug(v),
         pn: v.partNumber,
       })
     }
@@ -55,18 +115,19 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug, size, pn } = await params
   const product = getProductBySlug(slug)
-  if (!product || !isThermalLabelProduct(product)) return { title: 'Nie znaleziono wariantu' }
+  if (!product || !isLabelOrRibbonProduct(product)) return { title: 'Nie znaleziono wariantu' }
   const variant = findThermalVariant(product, size, pn)
   if (!variant) return { title: 'Nie znaleziono wariantu' }
 
   const rozmiar = variant.attributes['Rozmiar']
-  const gilza = variant.attributes['Rdzeń (gilza)']
+  const gilza = variant.attributes['Rdzeń (gilza)'] ?? variant.attributes['Rdzeń']
   const url = `${siteUrl}/produkt/${product.slug}/${size}/${pn}`
 
+  const sizeLabel = rozmiar ?? variant.name ?? pn
   const priceText = variant.priceFrom
     ? ` od ${variant.priceFrom.toLocaleString('pl-PL')} zł netto`
     : ''
-  const title = `${product.name} ${rozmiar} — PN ${pn}${priceText}`
+  const title = `${product.name} ${sizeLabel} — PN ${pn}${priceText}`
 
   const smartTruncate = (text: string, maxLen: number): string => {
     if (text.length <= maxLen) return text
@@ -78,7 +139,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const desc = smartTruncate(
-    `${product.name} w rozmiarze ${rozmiar}${gilza ? `, gilza ${gilza}` : ''} — PN ${pn}.${priceText ? ` Cena${priceText}.` : ''} ${product.shortDescription} Wysyłka z PL, doradztwo i próbki.`,
+    `${product.name}${rozmiar ? ` w rozmiarze ${rozmiar}` : ''}${gilza ? `, rdzeń ${gilza}` : ''} — PN ${pn}.${priceText ? ` Cena${priceText}.` : ''} ${product.shortDescription} Wysyłka z PL, doradztwo i próbki.`,
     160,
   )
 
@@ -98,7 +159,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       type: 'website',
       locale: 'pl_PL',
       siteName: 'TAKMA',
-      images: ogImage ? [{ url: ogImage, width: 1200, height: 630, alt: `${product.name} ${rozmiar}` }] : undefined,
+      images: ogImage ? [{ url: ogImage, width: 1200, height: 630, alt: `${product.name} ${sizeLabel}` }] : undefined,
     },
     twitter: {
       card: 'summary_large_image',
@@ -118,7 +179,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function ThermalLabelVariantPage({ params }: PageProps) {
   const { slug, size, pn } = await params
   const product = getProductBySlug(slug)
-  if (!product || !isThermalLabelProduct(product)) notFound()
+  if (!product || !isLabelOrRibbonProduct(product)) notFound()
   const variant = findThermalVariant(product, size, pn)
   if (!variant) notFound()
 
@@ -126,21 +187,22 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
 
   // Normalizacja slug-u — jeśli ktoś wpisał inny format niż canonical (np. uppercase),
   // przekieruj na czysty URL żeby uniknąć duplikatów w Google.
-  const canonicalSize = thermalSizeSlug(rozmiar)
+  const canonicalSize = variantSizeSlug(variant)
   if (canonicalSize !== size) {
     permanentRedirect(`/produkt/${product.slug}/${canonicalSize}/${pn}`)
   }
 
-  const series = thermalLabelSeries.find((s) => s.productId === product.id)
+  const ctx = getLabelContext(product)
+  const series = ctx?.series
   const category = getCategoryById(product.categoryId)
   const manufacturer = getManufacturerById(product.manufacturerId)
-  const gilza = variant.attributes['Rdzeń (gilza)']
+  const gilza = variant.attributes['Rdzeń (gilza)'] ?? variant.attributes['Rdzeń']
+  const qtyInRoll = variant.attributes['Etykiet w rolce']
   const url = `${siteUrl}/produkt/${product.slug}/${size}/${pn}`
 
-  const variantTitle = `${product.name} ${rozmiar}`
-  const variantH1 = manufacturer
-    ? `${product.name} ${rozmiar}${gilza ? ` (gilza ${gilza})` : ''}`
-    : variantTitle
+  // Etykieta rozmiaru — fallback na nazwę wariantu/PN gdy brak Rozmiar (część wariantów TT)
+  const sizeLabel = rozmiar ?? variant.name ?? pn
+  const variantH1 = `${product.name} ${sizeLabel}${gilza ? ` (rdzeń ${gilza})` : ''}`
 
   // Inne warianty tej samej serii (do "Inne rozmiary" CTA)
   const otherVariants = (product.variants || [])
@@ -167,7 +229,7 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
     '@type': 'Product',
     url,
     name: variantH1,
-    description: `${product.name} w rozmiarze ${rozmiar}${gilza ? `, gilza ${gilza}` : ''}. ${product.shortDescription}`,
+    description: `${product.name}${rozmiar ? ` w rozmiarze ${rozmiar}` : ''}${gilza ? `, rdzeń ${gilza}` : ''}. ${product.shortDescription}`,
     image: product.images.map((i) => `${siteUrl}${i}`),
     brand: manufacturer ? { '@type': 'Brand', name: manufacturer.name } : undefined,
     manufacturer: manufacturer
@@ -184,11 +246,12 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
     isVariantOf: {
       '@type': 'ProductGroup',
       name: product.name,
-      url: series ? `${siteUrl}/etykiety-termiczne/serie/${series.slug}` : `${siteUrl}/produkt/${product.slug}`,
+      url: ctx ? `${siteUrl}${ctx.seriesUrl}` : `${siteUrl}/produkt/${product.slug}`,
     },
     additionalProperty: [
-      { '@type': 'PropertyValue', name: 'Rozmiar', value: rozmiar },
-      ...(gilza ? [{ '@type': 'PropertyValue', name: 'Rdzeń (gilza)', value: gilza }] : []),
+      ...(rozmiar ? [{ '@type': 'PropertyValue', name: 'Rozmiar', value: rozmiar }] : []),
+      ...(gilza ? [{ '@type': 'PropertyValue', name: 'Rdzeń', value: gilza }] : []),
+      ...(qtyInRoll ? [{ '@type': 'PropertyValue', name: 'Etykiet w rolce', value: qtyInRoll }] : []),
       { '@type': 'PropertyValue', name: 'Part Number', value: variant.partNumber },
       ...(typDruku ? [{ '@type': 'PropertyValue', name: 'Typ druku', value: typDruku }] : []),
       ...(materialSpec ? [{ '@type': 'PropertyValue', name: 'Materiał', value: materialSpec }] : []),
@@ -213,25 +276,66 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
   }
 
   // ── JSON-LD: BreadcrumbList ────────────────────────────────────────
-  const breadcrumbItems = [
-    { '@type': 'ListItem', position: 1, name: 'Strona główna', item: siteUrl },
-    { '@type': 'ListItem', position: 2, name: 'Materiały eksploatacyjne', item: `${siteUrl}/materialy-eksploatacyjne` },
-    { '@type': 'ListItem', position: 3, name: 'Etykiety termiczne', item: `${siteUrl}/etykiety-termiczne` },
-    ...(series
-      ? [{ '@type': 'ListItem', position: 4, name: series.title, item: `${siteUrl}/etykiety-termiczne/serie/${series.slug}` }]
-      : []),
-    {
-      '@type': 'ListItem',
-      position: series ? 5 : 4,
-      name: `${rozmiar} (${variant.partNumber})`,
-      item: url,
-    },
+  const crumbs: { name: string; item: string }[] = [
+    { name: 'Strona główna', item: siteUrl },
+    { name: 'Materiały eksploatacyjne', item: `${siteUrl}/materialy-eksploatacyjne` },
   ]
+  if (ctx) {
+    crumbs.push({ name: ctx.categoryLabel, item: `${siteUrl}${ctx.categoryUrl}` })
+    if (ctx.isTransfer) {
+      crumbs.push({ name: ctx.subcategoryLabel, item: `${siteUrl}${ctx.subcategoryUrl}` })
+    }
+    crumbs.push({ name: ctx.series.title, item: `${siteUrl}${ctx.seriesUrl}` })
+  }
+  crumbs.push({ name: `${sizeLabel} (${variant.partNumber})`, item: url })
+
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: breadcrumbItems,
+    itemListElement: crumbs.map((c, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: c.name,
+      item: c.item,
+    })),
   }
+
+  // ── Kalkulator zużycia taśmy — tylko dla taśm termotransferowych ──
+  const isRibbon = product.subcategoryIds?.includes('tasmy-termotransferowe') ?? false
+  const rollLengthAttr = variant.attributes['Długość']
+  const rollLength = rollLengthAttr ? parseLengthFromAttribute(rollLengthAttr) : null
+  const ribbonPrice = variant.priceFrom ?? product.priceFrom ?? 0
+
+  // ── JSON-LD: HowTo schema "Jak obliczyć ilość etykiet z rolki" (tylko taśmy) ──
+  const howToSchema = isRibbon && rollLength
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: `Jak obliczyć ilość etykiet z rolki ${product.name}`,
+        description: `Obliczanie liczby etykiet możliwych do wydruku z rolki taśmy ${product.name} (${rollLength} m) dla zadanej wysokości etykiety.`,
+        totalTime: 'PT1M',
+        step: [
+          {
+            '@type': 'HowToStep',
+            position: 1,
+            name: 'Sprawdź długość rolki',
+            text: `Rolka ${variant.partNumber} ma ${rollLength} metrów taśmy.`,
+          },
+          {
+            '@type': 'HowToStep',
+            position: 2,
+            name: 'Określ wysokość etykiety',
+            text: 'Wpisz wysokość Twojej etykiety w mm (np. 80 mm dla typowej etykiety magazynowej).',
+          },
+          {
+            '@type': 'HowToStep',
+            position: 3,
+            name: 'Oblicz',
+            text: 'Liczba etykiet = (długość_rolki × 1000 − 2000 mm strat) / (wysokość_etykiety + 3 mm odstępu).',
+          },
+        ],
+      }
+    : null
 
   return (
     <SmartPriceProvider product={product} forcedPn={variant.partNumber}>
@@ -249,6 +353,12 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {howToSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
+      )}
 
       <div className="container-main py-6 lg:py-10">
         {/* Breadcrumb */}
@@ -256,22 +366,23 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
           <Link href="/" className="hover:text-primary-600 transition-colors">Strona główna</Link>
           <ChevronRightIcon size={16} className="flex-shrink-0" />
           <Link href="/materialy-eksploatacyjne" className="hover:text-primary-600 transition-colors">Materiały eksploatacyjne</Link>
-          <ChevronRightIcon size={16} className="flex-shrink-0" />
-          <Link href="/etykiety-termiczne" className="hover:text-primary-600 transition-colors">Etykiety termiczne</Link>
-          {series && (
+          {ctx && (
             <>
               <ChevronRightIcon size={16} className="flex-shrink-0" />
-              <Link
-                href={`/etykiety-termiczne/serie/${series.slug}`}
-                className="hover:text-primary-600 transition-colors"
-              >
-                {series.title}
-              </Link>
+              <Link href={ctx.categoryUrl} className="hover:text-primary-600 transition-colors">{ctx.categoryLabel}</Link>
+              {ctx.isTransfer && (
+                <>
+                  <ChevronRightIcon size={16} className="flex-shrink-0" />
+                  <Link href={ctx.subcategoryUrl} className="hover:text-primary-600 transition-colors">{ctx.subcategoryLabel}</Link>
+                </>
+              )}
+              <ChevronRightIcon size={16} className="flex-shrink-0" />
+              <Link href={ctx.seriesUrl} className="hover:text-primary-600 transition-colors">{ctx.series.title}</Link>
             </>
           )}
           <ChevronRightIcon size={16} className="flex-shrink-0" />
           <span className="text-gray-900 font-medium">
-            {rozmiar} ({variant.partNumber})
+            {sizeLabel} ({variant.partNumber})
           </span>
         </nav>
 
@@ -280,7 +391,16 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
           {/* Gallery */}
           <div className="min-w-0">
             <ProductGallery
-              images={product.images}
+              images={(() => {
+                // Dla taśm — pokaż obraz adekwatny do długości wariantu (desktop vs industrial).
+                const variantImage = getRibbonVariantImage(product, variant)
+                if (!variantImage || !product.images.includes(variantImage)) {
+                  // variantImage to dedicated desktop/industrial URL — podstawiamy na pierwszą pozycję.
+                  return variantImage ? [variantImage, ...product.images.filter(i => i !== variantImage)] : product.images
+                }
+                // variantImage jest już w images[] — przenosimy go na początek galerii.
+                return [variantImage, ...product.images.filter(i => i !== variantImage)]
+              })()}
               productName={variantH1}
               imageDescriptions={product.imageDescriptions}
             />
@@ -291,10 +411,10 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
             <div className="flex items-start justify-between gap-4">
               <div className="mb-4">
                 <h1 className="text-2xl xs:text-3xl lg:text-4xl font-bold text-gray-900">
-                  {product.name} <span className="text-gray-700">{rozmiar}</span>
+                  {product.name} <span className="text-gray-700">{sizeLabel}</span>
                 </h1>
                 <p className="text-sm xs:text-base lg:text-lg font-medium text-gray-500 mt-1">
-                  {series ? `Etykiety termiczne — seria ${series.title}` : 'Etykiety termiczne'}
+                  {ctx ? `${ctx.categoryLabel} — seria ${ctx.series.title}` : 'Etykiety'}
                 </p>
               </div>
               {manufacturer?.logo && (
@@ -313,7 +433,10 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
             </div>
 
             <div className="mb-6">
-              <ContextAvailabilityBadge staticAvailability={variant.availability} />
+              <ContextAvailabilityBadge
+                staticAvailability={variant.availability}
+                treatUnknownAsUnavailable={product.categoryId === 'materialy-eksploatacyjne'}
+              />
             </div>
 
             <SmartPrice product={product} />
@@ -321,7 +444,7 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
             <div className="space-y-3">
               <AddToRFQButton product={product} />
               <AskAboutProductButton
-                productName={`${product.name} ${rozmiar} (PN ${variant.partNumber})`}
+                productName={`${product.name} ${sizeLabel} (PN ${variant.partNumber})`}
                 productSlug={product.slug}
               />
             </div>
@@ -330,10 +453,12 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
             <div className="mt-8 pt-8 border-t border-gray-200">
               <h2 className="font-semibold text-gray-900 mb-4">Kluczowe parametry</h2>
               <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <dt className="text-sm text-gray-500">Rozmiar</dt>
-                  <dd className="font-medium text-gray-900">{rozmiar}</dd>
-                </div>
+                {rozmiar && (
+                  <div>
+                    <dt className="text-sm text-gray-500">Rozmiar</dt>
+                    <dd className="font-medium text-gray-900">{rozmiar}</dd>
+                  </div>
+                )}
                 {gilza && (
                   <div>
                     <dt className="text-sm text-gray-500">Rdzeń (gilza)</dt>
@@ -344,6 +469,12 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
                   <dt className="text-sm text-gray-500">Part Number</dt>
                   <dd className="font-mono font-medium text-gray-900">{variant.partNumber}</dd>
                 </div>
+                {qtyInRoll && (
+                  <div>
+                    <dt className="text-sm text-gray-500">Etykiet w rolce</dt>
+                    <dd className="font-medium text-gray-900">{qtyInRoll}</dd>
+                  </div>
+                )}
                 {typDruku && (
                   <div>
                     <dt className="text-sm text-gray-500">Typ druku</dt>
@@ -364,28 +495,39 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
                 )}
               </dl>
             </div>
+
+            {/* Kalkulator zużycia taśmy — tylko dla taśm TT z długością rolki i ceną */}
+            {isRibbon && rollLength && ribbonPrice > 0 && (
+              <div className="mt-8 pt-8 border-t border-gray-200">
+                <RibbonLabelCountWidget
+                  rollLengthM={rollLength}
+                  pricePerRoll={ribbonPrice}
+                  defaultLabelHeight={80}
+                />
+              </div>
+            )}
           </div>
         </div>
 
         {/* Tabs / Details */}
         <div className="mt-12 lg:mt-16 space-y-12 lg:space-y-16">
-          {/* Opis serii — z thermalLabelSeries (krótki) z linkiem do pełnego przewodnika */}
-          {series && (
+          {/* Opis serii — krótki, z linkiem do pełnego przewodnika */}
+          {ctx && (
             <section id="opis">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 Czym jest {product.name}
               </h2>
               <div className="prose prose-gray max-w-none text-[15px] leading-relaxed">
                 <p className="text-gray-700 mb-4">
-                  <LinkedText text={series.heroIntro} />
+                  <LinkedText text={ctx.series.heroIntro} />
                 </p>
 
-                {series.keyHighlights.length > 0 && (
+                {ctx.series.keyHighlights.length > 0 && (
                   <>
                     <h3 className="text-lg font-bold text-gray-900 mt-6 mb-3">Kluczowe cechy</h3>
                     <ul className="list-disc pl-5 space-y-1.5 mb-4 text-gray-700 marker:text-gray-400">
-                      {series.keyHighlights.map((h, i) => (
-                        <li key={i}>{h}</li>
+                      {ctx.series.keyHighlights.map((h, i) => (
+                        <li key={i}><LinkedText text={h} /></li>
                       ))}
                     </ul>
                   </>
@@ -393,14 +535,25 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
 
                 <p className="mt-6">
                   <Link
-                    href={`/etykiety-termiczne/serie/${series.slug}`}
+                    href={ctx.seriesUrl}
                     className="inline-flex items-center gap-1 text-primary-600 font-semibold hover:underline"
                   >
-                    Pełny przewodnik po serii {series.title} <ArrowRightIcon size={14} />
+                    Pełny przewodnik po serii {ctx.series.title} <ArrowRightIcon size={14} />
                   </Link>
                 </p>
               </div>
             </section>
+          )}
+
+          {/* Polecane taśmy barwiące — kluczowe dla TT. Komponent dobiera konkretny
+              wariant taśmy (szerokość) dopasowany do szerokości etykiety. */}
+          {ctx?.isTransfer && ctx.recommendedRibbons && (
+            <RecommendedRibbonsBlock
+              recommendedRibbons={ctx.recommendedRibbons}
+              seriesTitle={`${ctx.series.title}${rozmiar ? ` ${rozmiar}` : ''}`}
+              labelWidthMm={parseLabelWidth(rozmiar) ?? undefined}
+              labelCoreMm={parseLabelCore(gilza) ?? undefined}
+            />
           )}
 
           {/* Specyfikacja techniczna serii (wspólna dla wariantów) */}
@@ -419,7 +572,7 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
                 {product.applications.map((app, i) => (
                   <li key={i} className="flex items-center gap-3 text-gray-600">
                     <CheckIcon size={20} className="text-green-500 flex-shrink-0" />
-                    {app}
+                    <LinkedText text={app} />
                   </li>
                 ))}
               </ul>
@@ -427,17 +580,17 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
           )}
 
           {/* Atesty (z serii) */}
-          {series && series.certifications.length > 0 && (
+          {ctx && ctx.series.certifications.length > 0 && (
             <section id="atesty">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Atesty i certyfikaty</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {series.certifications.map((cert, i) => (
+                {ctx.series.certifications.map((cert, i) => (
                   <div key={i} className="bg-white border border-slate-200 rounded-xl p-5">
                     <div className="flex items-start gap-3">
                       <ShieldCheckIcon size={20} className="text-emerald-600 flex-shrink-0 mt-0.5" />
                       <div>
                         <h3 className="font-semibold text-gray-900 mb-1">{cert.name}</h3>
-                        <p className="text-sm text-gray-600 leading-relaxed">{cert.description}</p>
+                        <p className="text-sm text-gray-600 leading-relaxed"><LinkedText text={cert.description} /></p>
                       </div>
                     </div>
                   </div>
@@ -451,11 +604,11 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
             <section id="inne-rozmiary">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-2xl font-bold text-gray-900">
-                  Inne rozmiary {series ? series.title : product.name}
+                  Inne rozmiary {ctx ? ctx.series.title : product.name}
                 </h2>
-                {series && (
+                {ctx && (
                   <Link
-                    href={`/etykiety-termiczne/serie/${series.slug}#warianty`}
+                    href={`${ctx.seriesUrl}#warianty`}
                     className="text-sm font-semibold text-primary-600 hover:underline whitespace-nowrap"
                   >
                     Wszystkie warianty →
@@ -465,15 +618,14 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
                 {otherVariants.map((v) => {
                   const otherSize = v.attributes['Rozmiar']
-                  if (!otherSize) return null
-                  const otherSlug = thermalSizeSlug(otherSize)
+                  const otherSlug = variantSizeSlug(v)
                   return (
                     <Link
                       key={v.partNumber}
                       href={`/produkt/${product.slug}/${otherSlug}/${v.partNumber}`}
                       className="block bg-white border border-slate-200 rounded-xl p-3 hover:border-slate-400 hover:shadow-sm transition-all text-center"
                     >
-                      <div className="font-semibold text-gray-900 text-sm">{otherSize}</div>
+                      <div className="font-semibold text-gray-900 text-sm">{otherSize ?? v.name}</div>
                       <div className="text-xs text-gray-500 font-mono mt-0.5">{v.partNumber}</div>
                       {v.priceFrom && (
                         <div className="text-xs text-gray-700 mt-1">
@@ -488,12 +640,12 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
           )}
 
           {/* Kompatybilne drukarki (z serii) */}
-          {series && (
+          {ctx && (
             <section id="kompatybilne-drukarki">
               <h2 className="text-2xl font-bold text-gray-900 mb-2">Kompatybilne drukarki Zebra</h2>
               <p className="text-gray-600 mb-6 text-sm">
-                {product.name} {rozmiar} jest media-tested dla następujących modeli drukarek Zebra
-                obsługujących direct thermal.
+                {product.name}{sizeLabel ? ` ${sizeLabel}` : ''} jest media-tested dla następujących modeli drukarek Zebra
+                obsługujących {ctx.isTransfer ? 'druk termotransferowy (z taśmą)' : 'direct thermal'}.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {(['desktop', 'midRange', 'industrial', 'mobile'] as const).map((cat) => {
@@ -501,7 +653,7 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
                     cat === 'desktop' ? 'Drukarki biurkowe' :
                     cat === 'midRange' ? 'Mid-range' :
                     cat === 'industrial' ? 'Industrialne' : 'Mobilne'
-                  const models = series.compatiblePrinters[cat]
+                  const models = ctx.series.compatiblePrinters[cat]
                   if (!models || models.length === 0) return null
                   return (
                     <div key={cat} className="bg-white border border-slate-200 rounded-xl p-5">

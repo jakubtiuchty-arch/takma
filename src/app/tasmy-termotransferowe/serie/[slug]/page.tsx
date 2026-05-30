@@ -2,12 +2,13 @@ import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import {
-  thermalLabelSeries,
-  getThermalLabelSeriesBySlug,
-  getAllThermalLabelSeriesSlugs,
-  type ThermalLabelSeries,
-} from '@/data/thermal-label-series'
+  transferRibbonSeries,
+  getRibbonSeriesBySlug,
+  getAllRibbonSeriesSlugs,
+} from '@/data/transfer-ribbon-series'
+import { transferLabelSeries } from '@/data/transfer-label-series'
 import { getProductBySlug } from '@/data/products'
+import { getThermalLabelSeriesBySlug } from '@/data/thermal-label-series'
 import {
   ChevronRightIcon,
   CheckIcon,
@@ -17,7 +18,7 @@ import {
 } from '@/components/ui/Icons'
 import LinkedText from '@/components/ui/LinkedText'
 import { stripMarkdown } from '@/lib/strip-markdown'
-import SeriesVariantsTable from './SeriesVariantsTable'
+import RibbonVariantsTable from './RibbonVariantsTable'
 
 const siteUrl = 'https://www.takma.com.pl'
 
@@ -26,13 +27,13 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  return getAllThermalLabelSeriesSlugs().map(slug => ({ slug }))
+  return getAllRibbonSeriesSlugs().map(slug => ({ slug }))
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params
-  const series = getThermalLabelSeriesBySlug(slug)
-  if (!series) return { title: 'Nie znaleziono serii' }
+  const series = getRibbonSeriesBySlug(slug)
+  if (!series) return { title: 'Nie znaleziono modelu' }
 
   return {
     title: series.seoTitle,
@@ -40,18 +41,35 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: series.seoTitle,
       description: series.seoDescription,
-      url: `${siteUrl}/etykiety-termiczne/serie/${series.slug}`,
+      url: `${siteUrl}/tasmy-termotransferowe/serie/${series.slug}`,
       type: 'article',
     },
     alternates: {
-      canonical: `${siteUrl}/etykiety-termiczne/serie/${series.slug}`,
+      canonical: `${siteUrl}/tasmy-termotransferowe/serie/${series.slug}`,
     },
   }
 }
 
-export default async function SeriesPage({ params }: PageProps) {
+/** Helper — subcategory etykiety TT (papierowe/foliowe/specjalne) po slug serii.
+ *  Fallback do 'papierowe' (najpopularniejsza), gdy brak danych. */
+function labelSubcategoryOf(seriesSlug: string): string {
+  const s = transferLabelSeries.find(x => x.slug === seriesSlug)
+  return s?.subcategory ?? 'papierowe'
+}
+
+/** Resolver URL etykiety po slug — najpierw TT (foliowe/papierowe/specjalne), potem DT. */
+function labelSeriesUrl(seriesSlug: string): string {
+  const tt = transferLabelSeries.find(x => x.slug === seriesSlug)
+  if (tt) return `/etykiety-termotransferowe-zebra/${tt.subcategory}/serie/${tt.slug}`
+  const dt = getThermalLabelSeriesBySlug(seriesSlug)
+  if (dt) return `/etykiety-termiczne/serie/${dt.slug}`
+  // Fallback — przyjmuje że to TT papierowe
+  return `/etykiety-termotransferowe-zebra/${labelSubcategoryOf(seriesSlug)}/serie/${seriesSlug}`
+}
+
+export default async function RibbonSeriesPage({ params }: PageProps) {
   const { slug } = await params
-  const series = getThermalLabelSeriesBySlug(slug)
+  const series = getRibbonSeriesBySlug(slug)
   if (!series) notFound()
 
   const product = getProductBySlug(series.productId)
@@ -70,9 +88,9 @@ export default async function SeriesPage({ params }: PageProps) {
       name: 'TAKMA',
       logo: { '@type': 'ImageObject', url: `${siteUrl}/images/takma-logo.png` },
     },
-    datePublished: '2026-05-18',
-    dateModified: '2026-05-18',
-    mainEntityOfPage: `${siteUrl}/etykiety-termiczne/serie/${series.slug}`,
+    datePublished: '2026-05-29',
+    dateModified: '2026-05-29',
+    mainEntityOfPage: `${siteUrl}/tasmy-termotransferowe/serie/${series.slug}`,
   }
 
   const breadcrumbSchema = {
@@ -81,8 +99,8 @@ export default async function SeriesPage({ params }: PageProps) {
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Strona główna', item: siteUrl },
       { '@type': 'ListItem', position: 2, name: 'Materiały eksploatacyjne', item: `${siteUrl}/materialy-eksploatacyjne` },
-      { '@type': 'ListItem', position: 3, name: 'Etykiety termiczne', item: `${siteUrl}/etykiety-termiczne` },
-      { '@type': 'ListItem', position: 4, name: series.title, item: `${siteUrl}/etykiety-termiczne/serie/${series.slug}` },
+      { '@type': 'ListItem', position: 3, name: 'Taśmy termotransferowe', item: `${siteUrl}/tasmy-termotransferowe` },
+      { '@type': 'ListItem', position: 4, name: series.title, item: `${siteUrl}/tasmy-termotransferowe/serie/${series.slug}` },
     ],
   }
 
@@ -96,6 +114,10 @@ export default async function SeriesPage({ params }: PageProps) {
     })),
   }
 
+  // Polecane etykiety — primary i alternative
+  const primaryLabels = series.recommendedForLabels.filter(l => l.role === 'primary')
+  const altLabels = series.recommendedForLabels.filter(l => l.role === 'alternative')
+
   return (
     <main className="bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
@@ -104,7 +126,6 @@ export default async function SeriesPage({ params }: PageProps) {
 
       {/* ── HERO ───────────────────────────────────────────────────── */}
       <section className="relative bg-slate-950 text-white overflow-hidden">
-        {/* Tło: subtelne, kolorowane akcentem serii */}
         <div
           className="absolute inset-0 opacity-30"
           style={{
@@ -119,7 +140,7 @@ export default async function SeriesPage({ params }: PageProps) {
             <ChevronRightIcon size={14} className="text-slate-500" />
             <Link href="/materialy-eksploatacyjne" className="hover:text-white whitespace-nowrap">Materiały eksploatacyjne</Link>
             <ChevronRightIcon size={14} className="text-slate-500" />
-            <Link href="/etykiety-termiczne" className="hover:text-white whitespace-nowrap">Etykiety termiczne</Link>
+            <Link href="/tasmy-termotransferowe" className="hover:text-white whitespace-nowrap">Taśmy termotransferowe</Link>
             <ChevronRightIcon size={14} className="text-slate-500" />
             <span className="text-white font-medium whitespace-nowrap">{series.title}</span>
           </nav>
@@ -132,13 +153,12 @@ export default async function SeriesPage({ params }: PageProps) {
               <LinkedText text={series.heroIntro} />
             </p>
 
-            {/* CTA — kompaktowo, link do sekcji opisu poniżej */}
             <div className="flex flex-wrap items-center gap-3">
               <a
                 href="#opis"
                 className="inline-flex items-center gap-1.5 bg-[#A8F000] hover:bg-[#94d600] text-gray-900 px-4 py-2 rounded-lg font-semibold text-sm transition-colors"
               >
-                Pełen opis serii ↓
+                Pełny opis modelu ↓
               </a>
               <a
                 href="#warianty"
@@ -151,7 +171,7 @@ export default async function SeriesPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* ── WARIANTY ROZMIAROWE — pod hero, przed opisami ──────────── */}
+      {/* ── WARIANTY ROZMIAROWE — pod hero ──────────── */}
       {product?.variants && product.variants.length > 0 && (
         <section id="warianty" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 scroll-mt-20">
           <div className="mb-6">
@@ -159,21 +179,22 @@ export default async function SeriesPage({ params }: PageProps) {
               Warianty rozmiarowe — {series.title}
             </h2>
             <p className="text-gray-600">
-              Wszystkie {product.variants.length} {product.variants.length === 1 ? 'wariant' : product.variants.length < 5 ? 'warianty' : 'wariantów'} z serii {series.title}. Użyj filtrów po lewej (szerokość, wysokość, gilza), żeby zawęzić listę.
+              Wszystkie {product.variants.length} {product.variants.length === 1 ? 'wariant' : product.variants.length < 5 ? 'warianty' : 'wariantów'} z modelu {series.title}. Użyj filtrów po lewej (szerokość, długość, rdzeń), żeby zawęzić listę.
             </p>
           </div>
-          <SeriesVariantsTable
+          <RibbonVariantsTable
             variants={product.variants}
             productSlug={product.slug}
             productImage={product.images?.[0]}
+            productImageDesktop={product.imageDesktop}
+            productImageIndustrial={product.imageIndustrial}
             seriesTitle={series.title}
             manufacturerName="Zebra"
           />
         </section>
       )}
 
-      {/* ── DESCRIPTIVE SECTIONS — Opis serii (Czym jest, Zastosowania, ...) PRZED specyfikacją ──
-          Pomijamy 'Kiedy NIE używać X' — to duplikat z notRecommendedFor renderowanego niżej jako bullet lista */}
+      {/* ── DESCRIPTIVE SECTIONS — Opis serii ── */}
       <section id="opis" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-slate-100 scroll-mt-20">
         <div className="space-y-10">
           {series.sections
@@ -186,7 +207,6 @@ export default async function SeriesPage({ params }: PageProps) {
               <div className="prose prose-slate max-w-none text-gray-700 leading-relaxed">
                 {sec.content.split('\n\n').map((para, j) => {
                   const trimmed = para.trim()
-                  // Bullet list: każda linia zaczyna się od '- '
                   if (trimmed.split('\n').every(l => l.trim().startsWith('- '))) {
                     const items = trimmed.split('\n').map(l => l.replace(/^\s*-\s*/, ''))
                     return (
@@ -239,13 +259,72 @@ export default async function SeriesPage({ params }: PageProps) {
         </div>
       </section>
 
+      {/* ── POLECANA DLA ETYKIET (kluczowa sekcja cross-link) ── */}
+      {series.recommendedForLabels.length > 0 && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+            Polecana dla etykiet
+          </h2>
+          <p className="text-gray-600 mb-6">
+            {series.title} dobiera się do następujących serii etykiet termotransferowych Zebra. Kliknij, żeby zobaczyć etykietę i jej warianty rozmiarowe.
+          </p>
+
+          {primaryLabels.length > 0 && (
+            <>
+              <h3 className="text-xs font-bold uppercase tracking-wider text-emerald-700 mb-3">
+                Główna rekomendacja ({primaryLabels.length})
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
+                {primaryLabels.map(label => (
+                  <Link
+                    key={label.seriesSlug}
+                    href={labelSeriesUrl(label.seriesSlug)}
+                    className="block bg-white border border-emerald-200 rounded-lg p-4 hover:border-emerald-500 hover:shadow-sm transition-all"
+                  >
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs font-bold uppercase tracking-wide text-emerald-700">Polecana</span>
+                      <ArrowRightIcon size={14} className="text-emerald-500" />
+                    </div>
+                    <h4 className="font-bold text-gray-900 text-sm">{label.seriesName}</h4>
+                  </Link>
+                ))}
+              </div>
+            </>
+          )}
+
+          {altLabels.length > 0 && (
+            <>
+              <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
+                Alternatywa ({altLabels.length})
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {altLabels.map(label => (
+                  <Link
+                    key={label.seriesSlug}
+                    href={labelSeriesUrl(label.seriesSlug)}
+                    className="block bg-white border border-slate-200 rounded-lg p-4 hover:border-slate-400 hover:shadow-sm transition-all"
+                  >
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs font-bold uppercase tracking-wide text-slate-500">Alternatywa</span>
+                      <ArrowRightIcon size={14} className="text-slate-400" />
+                    </div>
+                    <h4 className="font-bold text-gray-900 text-sm">{label.seriesName}</h4>
+                    {label.when && <p className="text-xs text-gray-600 mt-1.5 leading-snug">{label.when}</p>}
+                  </Link>
+                ))}
+              </div>
+            </>
+          )}
+        </section>
+      )}
+
       {/* ── COMPATIBLE PRINTERS ─────────────────────────────────────── */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
           Kompatybilne drukarki Zebra
         </h2>
         <p className="text-gray-600 mb-6">
-          {series.title} jest media-tested dla następujących modeli drukarek Zebra obsługujących direct thermal.
+          {series.title} jest media-tested dla następujących modeli drukarek Zebra obsługujących druk termotransferowy.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -282,14 +361,14 @@ export default async function SeriesPage({ params }: PageProps) {
       {series.comparedWith.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
-            Porównanie z innymi seriami
+            Porównanie z innymi modelami
           </h2>
           <p className="text-gray-600 mb-6">
-            Kiedy wybrać {series.title} a kiedy alternatywną serię.
+            Kiedy wybrać {series.title} a kiedy alternatywny model.
           </p>
           <div className="space-y-4">
             {series.comparedWith.map((comp, i) => {
-              const other = getThermalLabelSeriesBySlug(comp.seriesSlug)
+              const other = getRibbonSeriesBySlug(comp.seriesSlug)
               if (!other) return null
               return (
                 <div key={i} className="bg-white border border-slate-200 rounded-xl p-5">
@@ -307,7 +386,7 @@ export default async function SeriesPage({ params }: PageProps) {
                         <LinkedText text={comp.whenToChooseThis} />
                       </p>
                       <Link
-                        href={`/etykiety-termiczne/serie/${comp.seriesSlug}`}
+                        href={`/tasmy-termotransferowe/serie/${comp.seriesSlug}`}
                         className="text-sm text-primary-600 hover:text-primary-700 font-medium inline-flex items-center gap-1"
                       >
                         Zobacz {other.title} <ArrowRightIcon size={14} />
@@ -321,7 +400,7 @@ export default async function SeriesPage({ params }: PageProps) {
         </section>
       )}
 
-      {/* ── KEY SPECS TABLE — na dole, przed FAQ ────────────────────── */}
+      {/* ── KEY SPECS TABLE ────────────────────── */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
           Specyfikacja techniczna
@@ -379,7 +458,7 @@ export default async function SeriesPage({ params }: PageProps) {
             </div>
             <div className="flex flex-wrap gap-3">
               <Link
-                href={`/produkt/${series.productId}`}
+                href="#warianty"
                 className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-colors"
               >
                 Zobacz warianty <ArrowRightIcon size={16} />

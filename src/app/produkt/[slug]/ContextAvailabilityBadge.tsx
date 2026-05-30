@@ -11,8 +11,14 @@ const config = {
 
 export default function ContextAvailabilityBadge({
   staticAvailability,
+  treatUnknownAsUnavailable = false,
 }: {
   staticAvailability: 'available' | 'on-order' | 'unavailable'
+  /** Gdy true — API `found:false` (brak danych z dystrybutora) → "Niedostępny" zamiast
+   *  fallback do `staticAvailability`. Włącz dla materiałów eksploatacyjnych (taśmy/etykiety)
+   *  gdzie brak u dystrybutorów = realna niedostępność. Dla urządzeń sprzedawanych
+   *  na zamówienie nie używać. */
+  treatUnknownAsUnavailable?: boolean
 }) {
   const { stockData, loading, displayedPn, partNumbers } = useSmartPrice()
 
@@ -31,8 +37,11 @@ export default function ContextAvailabilityBadge({
       if (stock.totalStock > 0) liveAvailability = 'available'
       else if (stock.inDelivery > 0) liveAvailability = 'on-order'
       else liveAvailability = 'unavailable'
+    } else if (treatUnknownAsUnavailable) {
+      // Materiały eksploatacyjne: brak danych z dystrybutora = niedostępne (nie "na zamówienie")
+      liveAvailability = 'unavailable'
     }
-    // Jeśli API nie zna PNu → zostań przy staticAvailability
+    // Inaczej (urządzenia) — zostań przy staticAvailability
   } else if (partNumbers.length > 0) {
     // Brak displayedPn — fallback do logiki "any variant available"
     let anyFound = false
@@ -49,6 +58,9 @@ export default function ContextAvailabilityBadge({
         return stock?.found && stock.inDelivery > 0
       })
       liveAvailability = anyInDelivery ? 'on-order' : 'unavailable'
+    } else if (!anyFound && treatUnknownAsUnavailable) {
+      // Żaden wariant nie znaleziony u dystrybutorów → niedostępny (materiały eksploatacyjne).
+      liveAvailability = 'unavailable'
     }
   }
 

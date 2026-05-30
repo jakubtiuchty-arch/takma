@@ -40,23 +40,27 @@ export default function SmartPrice({ product }: SmartPriceProps) {
         </p>
       )}
       <div className="flex items-baseline gap-2">
-        {loading || !price ? (
+        {loading ? (
           <span className="inline-block h-9 w-40 bg-gray-200 rounded animate-pulse" />
-        ) : (
+        ) : price ? (
           <span className="text-2xl sm:text-3xl font-bold text-gray-900">
             {price.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
           </span>
+        ) : (
+          <span className="text-lg sm:text-xl font-medium text-gray-700">Cena na zapytanie</span>
         )}
-        <span className="text-sm text-gray-500">netto</span>
+        {price && <span className="text-sm text-gray-500">netto</span>}
         {DEVICE_CATEGORIES.has(product.categoryId) && <PriceTooltip />}
       </div>
-      <p className="text-sm text-gray-400 mt-1">
-        {loading || !price ? (
-          <span className="inline-block h-4 w-28 bg-gray-200 rounded animate-pulse" />
-        ) : (
-          <>{(price * 1.23).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł brutto</>
-        )}
-      </p>
+      {(loading || price) && (
+        <p className="text-sm text-gray-400 mt-1">
+          {loading ? (
+            <span className="inline-block h-4 w-28 bg-gray-200 rounded animate-pulse" />
+          ) : (
+            <>{(price! * 1.23).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł brutto</>
+          )}
+        </p>
+      )}
 
       {/* Stany magazynowe — bezpośrednio z kontekstu, bez osobnego fetcha */}
       {loading && displayedPn && (

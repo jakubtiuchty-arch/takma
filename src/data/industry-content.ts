@@ -236,8 +236,8 @@ export const industryPages: IndustryPage[] = [
       { title: 'Zebra ZT620 — 6-calowa drukarka do etykiet paletowych', href: '/produkt/zebra-zt620' },
       { title: 'Drukarki przemysłowe — pełny katalog', href: '/przemyslowe-drukarki-etykiet' },
       { title: 'Taśmy termotransferowe do drukarek Zebra', href: '/tasmy-termotransferowe' },
-      { title: 'Etykiety termotransferowe papierowe', href: '/etykiety-termotransferowe-papierowe' },
-      { title: 'Etykiety termotransferowe foliowe (PP, PET)', href: '/etykiety-termotransferowe-foliowe' }
+      { title: 'Etykiety termotransferowe papierowe', href: '/etykiety-termotransferowe-zebra/papierowe' },
+      { title: 'Etykiety termotransferowe foliowe (PP, PET)', href: '/etykiety-termotransferowe-zebra/foliowe' }
     ]
   },
   {
@@ -1472,7 +1472,7 @@ export const industryPages: IndustryPage[] = [
       { title: 'Biurkowe drukarki etykiet — pełna oferta', href: '/biurkowe-drukarki-etykiet' },
       { title: 'Przemysłowe drukarki etykiet — modele ZT', href: '/przemyslowe-drukarki-etykiet' },
       { title: 'Etykiety termiczne — materiały eksploatacyjne', href: '/etykiety-termiczne' },
-      { title: 'Etykiety termotransferowe papierowe — GS1-128 i SSCC', href: '/etykiety-termotransferowe-papierowe' },
+      { title: 'Etykiety termotransferowe papierowe — GS1-128 i SSCC', href: '/etykiety-termotransferowe-zebra/papierowe' },
       { title: 'Katalog produktów TAKMA', href: '/katalog' },
     ],
   },
@@ -1709,7 +1709,7 @@ export const industryPages: IndustryPage[] = [
       { title: 'Biurkowe drukarki etykiet — pełna oferta', href: '/biurkowe-drukarki-etykiet' },
       { title: 'Przemysłowe drukarki etykiet — modele ZT do GMP', href: '/przemyslowe-drukarki-etykiet' },
       { title: 'Etykiety termiczne — materiały do aptek', href: '/etykiety-termiczne' },
-      { title: 'Etykiety termotransferowe papierowe', href: '/etykiety-termotransferowe-papierowe' },
+      { title: 'Etykiety termotransferowe papierowe', href: '/etykiety-termotransferowe-zebra/papierowe' },
       { title: 'Opaski identyfikacyjne pacjenta Z-Band', href: '/opaski-identyfikacyjne' },
     ],
   },

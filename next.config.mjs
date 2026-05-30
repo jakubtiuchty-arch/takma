@@ -186,7 +186,18 @@ const nextConfig = {
       { source: '/tasmy-wax', destination: '/tasmy-termotransferowe', permanent: true },
       { source: '/tasmy-wax-resin', destination: '/tasmy-termotransferowe', permanent: true },
       { source: '/tasmy-resin', destination: '/tasmy-termotransferowe', permanent: true },
-      { source: '/etykiety-termotransferowe', destination: '/etykiety-termotransferowe-papierowe', permanent: true },
+
+      // =====================================================
+      // ETYKIETY TERMOTRANSFEROWE — nowa struktura kategorii (2026-05)
+      // Kanoniczny URL: /etykiety-termotransferowe-zebra (sprzedajemy tylko Zebra).
+      // Stary URL /etykiety-termotransferowe + wszystkie podścieżki → -zebra.
+      // Stare flat stuby /etykiety-termotransferowe-{papierowe,foliowe} → nowe zagnieżdżone.
+      // Stare per-SKU produkty (zebra-tt-*, zebra-labels-*) → middleware.ts (OLD_TT_SLUG_REDIRECTS)
+      // =====================================================
+      { source: '/etykiety-termotransferowe', destination: '/etykiety-termotransferowe-zebra', permanent: true },
+      { source: '/etykiety-termotransferowe/:path*', destination: '/etykiety-termotransferowe-zebra/:path*', permanent: true },
+      { source: '/etykiety-termotransferowe-papierowe', destination: '/etykiety-termotransferowe-zebra/papierowe', permanent: true },
+      { source: '/etykiety-termotransferowe-foliowe', destination: '/etykiety-termotransferowe-zebra/foliowe', permanent: true },
 
       // Produkty 404 → konkretne następcy
       { source: '/produkt/zebra-ds8178', destination: '/produkt/zebra-ds8288', permanent: true },

@@ -584,7 +584,7 @@ export const guides: Guide[] = [
     { title: 'ZD421t vs Honeywell PC45t — porównanie', href: '/poradnik/zebra-zd421t-vs-honeywell-pc45t' },
     { title: 'ZD421 vs ZD621 — porównanie Zebra', href: '/poradnik/zebra-zd421-vs-zd621-porownanie' },
     { title: 'Etykiety termiczne', href: '/etykiety-termiczne' },
-    { title: 'Etykiety termotransferowe papierowe', href: '/etykiety-termotransferowe-papierowe' },
+    { title: 'Etykiety termotransferowe papierowe', href: '/etykiety-termotransferowe-zebra/papierowe' },
     { title: 'Taśmy termotransferowe (ribbony)', href: '/tasmy-termotransferowe' },
     { title: 'Materiały eksploatacyjne', href: '/materialy-eksploatacyjne' }
   ]
@@ -725,7 +725,7 @@ export const guides: Guide[] = [
     {
       id: 'koszty',
       heading: 'Koszty druku — termiczna vs termotransferowa',
-      content: `<p>Koszt druku jednej etykiety termicznej (100×50 mm) to ok. 0,047 zł. <a href="/etykiety-termotransferowe-papierowe">Etykieta termotransferowa</a> z ribbonem woskowym kosztuje ok. 0,056 zł (+19%), a z ribbonem żywicznym na folii PP — ok. 0,136 zł (2,9× drożej). Poniżej pełne kalkulacje TCO przy trzech wolumenach.</p>
+      content: `<p>Koszt druku jednej etykiety termicznej (100×50 mm) to ok. 0,047 zł. <a href="/etykiety-termotransferowe-zebra/papierowe">Etykieta termotransferowa</a> z ribbonem woskowym kosztuje ok. 0,056 zł (+19%), a z ribbonem żywicznym na folii PP — ok. 0,136 zł (2,9× drożej). Poniżej pełne kalkulacje TCO przy trzech wolumenach.</p>
 
 <p>Kalkulacje oparte na cenach rynkowych materiałów eksploatacyjnych i drukarek Zebra w I kwartale 2026 r. Wszystkie ceny netto (bez VAT). Przyjęte założenia: etykieta 100×50 mm, 250 dni roboczych w roku, wymiana głowicy po wyczerpaniu resursu.</p>
 
@@ -807,7 +807,7 @@ export const guides: Guide[] = [
 <ul>
 <li><strong>Etykiety produktowe na regały</strong> — etykieta na produkcie musi przetrwać cały okres przydatności (6 mies. – 5 lat). Ribbon woskowy na papierze powlekanym to minimum. Polecany model: <a href="/produkt/zebra-zd421t">Zebra ZD421t od 1 638 zł</a>.</li>
 <li><strong>Etykiety na kable i przewody elektryczne</strong> — oznaczenie kabla w rozdzielni musi przetrwać 10–20 lat. Wymagany ribbon żywiczny na folii poliestrowej (PET) lub poliolefinowej. Tylko drukarka termotransferowa to obsłuży.</li>
-<li><strong>Etykiety na produkty chemiczne (GHS/CLP)</strong> — rozporządzenie CLP wymaga trwałych piktogramów i napisów odpornych na chemikalia. <a href="/tasmy-termotransferowe">Ribbon żywiczny</a> na syntetycznej <a href="/etykiety-termotransferowe-papierowe">etykiecie PP</a> to branżowy standard.</li>
+<li><strong>Etykiety na produkty chemiczne (GHS/CLP)</strong> — rozporządzenie CLP wymaga trwałych piktogramów i napisów odpornych na chemikalia. <a href="/tasmy-termotransferowe">Ribbon żywiczny</a> na syntetycznej <a href="/etykiety-termotransferowe-zebra/papierowe">etykiecie PP</a> to branżowy standard.</li>
 <li><strong>Oznaczenia outdoor</strong> — tabliczki znamionowe, oznaczenia infrastruktury, etykiety na rury — ekspozycja na UV, deszcz i mróz wymaga ribbona żywicznego.</li>
 <li><strong>Etykiety apteczne i farmaceutyczne</strong> — lek na półce apteki może czekać na sprzedaż 2 lata. Wydruk musi być czytelny przez cały okres ważności. Ribbon woskowo-żywiczny na papierze powlekanym to minimum.</li>
 <li><strong>Etykiety inwentaryzacyjne (asset tracking)</strong> — naklejka z kodem kreskowym na laptopie, monitorze czy palecie zwrotnej musi przetrwać wiele lat. Ribbon żywiczny + folia PET = etykieta na dekadę.</li>
@@ -1023,7 +1023,7 @@ export const guides: Guide[] = [
     { title: 'ZD421t vs PC45t — porównanie termotransferowych', href: '/poradnik/zebra-zd421t-vs-honeywell-pc45t' },
     { title: 'ZD421 vs ZD621 — porównanie Zebra', href: '/poradnik/zebra-zd421-vs-zd621-porownanie' },
     { title: 'ZT231 vs ZT411 — porównanie przemysłowych', href: '/poradnik/zebra-zt231-vs-zt411-porownanie' },
-    { title: 'Etykiety termotransferowe', href: '/etykiety-termotransferowe-papierowe' },
+    { title: 'Etykiety termotransferowe', href: '/etykiety-termotransferowe-zebra/papierowe' },
     { title: 'Taśmy termotransferowe', href: '/tasmy-termotransferowe' },
   ]
 },
@@ -1651,7 +1651,7 @@ export const guides: Guide[] = [
     { title: 'ZD421t vs Honeywell PC45t — porównanie', href: '/poradnik/zebra-zd421t-vs-honeywell-pc45t' },
     { title: 'ZD421 vs ZD621 — porównanie Zebra', href: '/poradnik/zebra-zd421-vs-zd621-porownanie' },
     { title: 'Etykiety termiczne', href: '/etykiety-termiczne' },
-    { title: 'Etykiety termotransferowe', href: '/etykiety-termotransferowe-papierowe' },
+    { title: 'Etykiety termotransferowe', href: '/etykiety-termotransferowe-zebra/papierowe' },
     { title: 'Taśmy termotransferowe', href: '/tasmy-termotransferowe' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]
@@ -7516,7 +7516,7 @@ export const guides: Guide[] = [
     { title: 'Drukarka termiczna vs termotransferowa', href: '/poradnik/drukarka-termiczna-vs-termotransferowa' },
     { title: 'Drukarki przemysłowe — katalog', href: '/przemyslowe-drukarki-etykiet' },
     { title: 'Drukarki termotransferowe — katalog', href: '/termotransferowe-drukarki-etykiet' },
-    { title: 'Etykiety termotransferowe', href: '/etykiety-termotransferowe' },
+    { title: 'Etykiety termotransferowe', href: '/etykiety-termotransferowe-zebra' },
     { title: 'Drukarki etykiet — pełna oferta', href: '/drukarki-etykiet' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
   ]

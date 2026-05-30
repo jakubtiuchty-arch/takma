@@ -9,8 +9,13 @@ import {
   getSubcategoriesForProduct,
   brandCategories,
   isThermalLabelProduct,
+  isTransferLabelProduct,
+  isRibbonProduct,
   thermalSizeSlug,
+  variantSizeSlug,
 } from '@/data/products'
+import { getTransferLabelSeriesByProductId } from '@/data/transfer-label-series'
+import { getRibbonSeriesByProductId } from '@/data/transfer-ribbon-series'
 import { ProductGallery } from '@/components/product'
 import { Badge } from '@/components/ui'
 import {
@@ -108,20 +113,28 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
   // OG image — pełny URL z domeną (nie relative path)
   const ogImage = product.images[0] ? `https://www.takma.com.pl${product.images[0]}` : undefined
 
-  // ── Canonical: dla etykiet termicznych przekazujemy autorytet stronie serii.
+  // ── Canonical: dla etykiet (DT i TT) przekazujemy autorytet stronie serii.
   //  • Z ?pn= → canonical na nowy URL wariantu (komponent też robi 301, to backstop)
-  //  • Bez ?pn= → canonical na /etykiety-termiczne/serie/[slug] (rozwiązuje duplicate content
-  //    między /produkt/zebra-z-perform-1000d a series landing page)
+  //  • Bez ?pn= → canonical na landing serii (rozwiązuje duplicate content
+  //    między /produkt/[slug] a series landing page)
   const isThermalLabel = isThermalLabelProduct(product)
+  const isTransferLabel = isTransferLabelProduct(product)
   const thermalSeries = isThermalLabel
     ? thermalLabelSeries.find((s) => s.productId === product.id)
     : null
+  const transferSeries = isTransferLabel ? getTransferLabelSeriesByProductId(product.id) : null
   let canonical = `https://www.takma.com.pl/produkt/${product.slug}`
   if (isThermalLabel) {
     if (variant && variantSize) {
       canonical = `https://www.takma.com.pl/produkt/${product.slug}/${thermalSizeSlug(variantSize)}/${variant.partNumber}`
     } else if (thermalSeries) {
       canonical = `https://www.takma.com.pl/etykiety-termiczne/serie/${thermalSeries.slug}`
+    }
+  } else if (isTransferLabel) {
+    if (variant) {
+      canonical = `https://www.takma.com.pl/produkt/${product.slug}/${variantSizeSlug(variant)}/${variant.partNumber}`
+    } else if (transferSeries) {
+      canonical = `https://www.takma.com.pl/etykiety-termotransferowe-zebra/${transferSeries.subcategory}/serie/${transferSeries.slug}`
     }
   }
 
@@ -179,22 +192,41 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const selectedVariant = pickVariant(product, pn)
   const selectedSize = selectedVariant?.attributes['Rozmiar']
 
-  // ── Etykiety termiczne — redirect na nowy, indeksowalny URL wariantu ─
+  // ── Etykiety (DT i TT) — redirect na nowy, indeksowalny URL wariantu ─
   // /produkt/[slug]?pn=XXX → /produkt/[slug]/[size]/[pn]
   // Stare URLe (np. z zewnętrznych linków, kopii UA) lądują na właściwym wariancie.
-  if (isThermalLabelProduct(product) && selectedVariant && selectedSize) {
+  if ((isThermalLabelProduct(product) || isTransferLabelProduct(product) || isRibbonProduct(product)) && selectedVariant) {
     permanentRedirect(
-      `/produkt/${product.slug}/${thermalSizeSlug(selectedSize)}/${selectedVariant.partNumber}`,
+      `/produkt/${product.slug}/${variantSizeSlug(selectedVariant)}/${selectedVariant.partNumber}`,
     )
+  }
+
+  // ── Rodzic etykiety/taśmy (DT, TT, ribbon) bez wybranego wariantu → 301 na series landing.
+  //    Strona produktu-rodzica jest treściowym duplikatem series page; canonical
+  //    sam nie wystarcza, lepiej redirect żeby Google i użytkownik trafiali tylko
+  //    na series page. Wybór wariantu odbywa się tam (tabela z filtrami).
+  if (!selectedVariant) {
+    if (isThermalLabelProduct(product)) {
+      const series = thermalLabelSeries.find(s => s.productId === product.id)
+      if (series) permanentRedirect(`/etykiety-termiczne/serie/${series.slug}`)
+    } else if (isTransferLabelProduct(product)) {
+      const series = getTransferLabelSeriesByProductId(product.id)
+      if (series) permanentRedirect(`/etykiety-termotransferowe-zebra/${series.subcategory}/serie/${series.slug}`)
+    } else if (isRibbonProduct(product)) {
+      const series = getRibbonSeriesByProductId(product.id)
+      if (series) permanentRedirect(`/tasmy-termotransferowe/serie/${series.slug}`)
+    }
   }
 
   const category = getCategoryById(product.categoryId)
   const manufacturer = getManufacturerById(product.manufacturerId)
   const subcats = getSubcategoriesForProduct(product)
   const primarySubcategory = subcats[0] ?? null
-  // Etykiety termiczne — wybór wariantu odbywa się na /etykiety-termiczne/serie/[slug], tu nie pokazujemy
+  // Etykiety (DT/TT) — wybór wariantu na series page, na rodzicu nie pokazujemy tabeli
+  // (rodzic i tak jest redirectowany wyżej, to backstop dla starych slugów bez series).
   const isThermalLabel = product.subcategoryIds?.includes('etykiety-termiczne') ?? false
-  const showVariants = !!(product.variants && product.variants.length > 0 && !isThermalLabel)
+  const isTransferLabel = product.subcategoryIds?.includes('etykiety-termotransferowe') ?? false
+  const showVariants = !!(product.variants && product.variants.length > 0 && !isThermalLabel && !isTransferLabel)
 
   const availabilityConfig = {
     available: { label: 'Dostępny', variant: 'success' as const, description: 'Produkt dostępny od ręki' },
@@ -583,7 +615,10 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
             {/* Availability — z SmartPriceContext (jedno źródło danych) */}
             <div className="mb-6">
-              <ContextAvailabilityBadge staticAvailability={product.availability} />
+              <ContextAvailabilityBadge
+                staticAvailability={product.availability}
+                treatUnknownAsUnavailable={product.categoryId === 'materialy-eksploatacyjne'}
+              />
             </div>
 
             {/* Variants link — ukryte dla etykiet termicznych (wybór wariantu na /serie/) */}
@@ -864,7 +899,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                           <h3 className="text-lg font-bold text-gray-900 mt-8 mb-3">Kluczowe cechy</h3>
                           <ul className="list-disc pl-5 space-y-1.5 mb-4 text-gray-700 marker:text-gray-400">
                             {series.keyHighlights.map((h, i) => (
-                              <li key={i}>{h}</li>
+                              <li key={i}><LinkedText text={h} /></li>
                             ))}
                           </ul>
                         </>
@@ -902,7 +937,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                           <h3 className="text-lg font-bold text-gray-900 mt-8 mb-3">Główne zastosowania</h3>
                           <ul className="list-disc pl-5 space-y-1.5 mb-4 text-gray-700 marker:text-gray-400">
                             {series.applications.map((app, i) => (
-                              <li key={i}>{app}</li>
+                              <li key={i}><LinkedText text={app} /></li>
                             ))}
                           </ul>
                         </>
@@ -914,7 +949,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                           <h3 className="text-lg font-bold text-gray-900 mt-8 mb-3">Kiedy NIE używać</h3>
                           <ul className="list-disc pl-5 space-y-1.5 mb-4 text-gray-700 marker:text-gray-400">
                             {series.notRecommendedFor.map((nr, i) => (
-                              <li key={i}>{nr}</li>
+                              <li key={i}><LinkedText text={nr} /></li>
                             ))}
                           </ul>
                         </>
@@ -927,7 +962,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                           <ul className="list-disc pl-5 space-y-2 mb-4 text-gray-700 marker:text-gray-400">
                             {series.certifications.map((c, i) => (
                               <li key={i}>
-                                <strong className="text-gray-900">{c.name}</strong> — {c.description}
+                                <strong className="text-gray-900">{c.name}</strong> — <LinkedText text={c.description} />
                               </li>
                             ))}
                           </ul>
@@ -1071,7 +1106,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   {product.applications.map((app, i) => (
                     <li key={i} className="flex items-center gap-3 text-gray-600">
                       <CheckIcon size={20} className="text-green-500 flex-shrink-0" />
-                      {app}
+                      <LinkedText text={app} />
                     </li>
                   ))}
                 </ul>
