@@ -13,12 +13,17 @@ interface LiveData {
 
 const LiveRibbonContext = createContext<LiveData>({ loading: true })
 
-/** Wraper który robi JEDEN fetch /api/stock i udostępnia cenę + dostępność dzieciom. */
+/** Wraper który robi JEDEN fetch /api/stock i udostępnia cenę + dostępność dzieciom.
+ *  Fallback: jeśli live API nie zwraca ceny, używamy statycznego `fallbackPrice` z
+ *  wariantu (najczęściej `variant.priceFrom`). Bez tego niszowe SKU (krótkie rolki
+ *  szerokich taśm, których dystrybutor nie wycenia live) pokazywałyby „Zapytaj o cenę". */
 export function LiveRibbonProvider({
   partNumber,
+  fallbackPrice,
   children,
 }: {
   partNumber: string
+  fallbackPrice?: number
   children: ReactNode
 }) {
   const [data, setData] = useState<LiveData>({ loading: true })
@@ -32,19 +37,19 @@ export function LiveRibbonProvider({
       .then(r => r.ok ? r.json() : null)
       .then(json => {
         if (cancelled || !json?.results?.[0]) {
-          if (!cancelled) setData({ loading: false })
+          if (!cancelled) setData({ loading: false, price: fallbackPrice })
           return
         }
         const r = json.results[0]
         setData({
           loading: false,
-          price: r.found && r.price ? r.price : undefined,
+          price: r.found && r.price ? r.price : fallbackPrice,
           availability: r.availability as Availability | undefined,
         })
       })
-      .catch(() => { if (!cancelled) setData({ loading: false }) })
+      .catch(() => { if (!cancelled) setData({ loading: false, price: fallbackPrice }) })
     return () => { cancelled = true }
-  }, [partNumber])
+  }, [partNumber, fallbackPrice])
 
   return <LiveRibbonContext.Provider value={data}>{children}</LiveRibbonContext.Provider>
 }

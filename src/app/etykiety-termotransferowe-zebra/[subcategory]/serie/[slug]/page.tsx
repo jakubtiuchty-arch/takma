@@ -65,10 +65,14 @@ export default async function TransferSeriesPage({ params }: PageProps) {
   const subUrl = `/etykiety-termotransferowe-zebra/${series.subcategory}`
   const seriesUrl = `${subUrl}/serie/${series.slug}`
 
-  // Schema — Article + BreadcrumbList + FAQPage
+  // Schema — TechArticle + BreadcrumbList + FAQPage
+  // TechArticle (zamiast generic Article) — sygnał dla AI engines, że treść
+  // jest specjalistyczna techniczna, a nie redakcyjna. Zwiększa cytowalność.
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'TechArticle',
+    proficiencyLevel: 'Expert',
+    inLanguage: 'pl-PL',
     headline: series.h1,
     description: series.seoDescription,
     image: product?.images?.[0] ? [product.images[0]] : undefined,
@@ -113,24 +117,28 @@ export default async function TransferSeriesPage({ params }: PageProps) {
 
       {/* ── HERO ── */}
       <section className="relative bg-slate-950 text-white overflow-hidden">
-        {/* Hero image (jeśli seria go ma) — jako tło z dark gradient overlay zapewniającym czytelność białego tekstu.
-            Pole `heroLandingImage` może przesłaniać `heroImage` jeśli landing potrzebuje innego ujęcia (np. bez wbudowanych tekstów). */}
+        {/* Hero image (jeśli seria go ma) — tylko po prawej stronie hero (kontener 3/5–1/2 szerokości).
+            Dzięki temu szerokie zdjęcia produktowe mieszczą się w pełnym pionie zamiast być przycinane top/bottom przez object-cover na pełnej szerokości.
+            Pole `heroLandingImage` może przesłaniać `heroImage` jeśli landing potrzebuje innego ujęcia. */}
         {(series.heroLandingImage ?? series.heroImage) && (
           <>
-            <Image
-              src={(series.heroLandingImage ?? series.heroImage)!}
-              alt=""
-              fill
-              priority
-              sizes="100vw"
-              className="absolute inset-0 object-cover opacity-50"
-              style={{ objectPosition: series.heroLandingImagePosition ?? series.heroImagePosition ?? 'center center' }}
-              aria-hidden="true"
-            />
-            {/* Gradient od lewej (gdzie tekst) — zapewnia kontrast tekstu nad obrazem */}
+            <div className="absolute right-0 top-0 bottom-0 w-3/5 lg:w-1/2 pointer-events-none">
+              <Image
+                src={(series.heroLandingImage ?? series.heroImage)!}
+                alt=""
+                fill
+                priority
+                sizes="(max-width: 1024px) 60vw, 50vw"
+                className="object-cover opacity-80 scale-110"
+                style={{ objectPosition: series.heroLandingImagePosition ?? series.heroImagePosition ?? 'center center' }}
+                aria-hidden="true"
+              />
+            </div>
+            {/* Gradient od lewej — pełen dark do 50% (gdzie zaczyna się obraz, ukrywa boundary),
+                potem fade do transparentnego nad obrazem. Bez widocznego seamu między tłem a zdjęciem. */}
             <span
               aria-hidden="true"
-              className="absolute inset-0 pointer-events-none bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-950/30"
+              className="absolute inset-0 pointer-events-none bg-gradient-to-r from-slate-950 via-slate-950 to-transparent"
             />
           </>
         )}

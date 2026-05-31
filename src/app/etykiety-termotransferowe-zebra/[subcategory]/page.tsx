@@ -104,7 +104,7 @@ const FAQ_BY_SUB: Record<TransferLabelSubcategory, { q: string; a: string }[]> =
     },
     {
       q: 'Dlaczego folia wymaga taśmy żywicznej (resin)?',
-      a: 'Folia jest gładka i nieporowata — taśma wosk lub wosk-żywica nie zwiąże się z nią chemicznie i nadruk schodziłby palcem. Tylko taśma żywiczna (resin, np. Zebra 5095) topi się i tworzy trwałe wiązanie z PET/PP/PE/poliolefiną, dając nadruk odporny na rozpuszczalniki, tarcie i temperatury do +180°C. Użycie taśmy woskowej na folii to najczęstszy błąd w druku TT.',
+      a: 'Etykieta foliowa jest gładka i nieporowata — taśma wosk lub wosk-żywica nie zwiąże się z nią chemicznie i nadruk dałby się zetrzeć palcem. Tylko taśma żywiczna (resin, np. Zebra 5095) topi się i tworzy trwałe wiązanie z PET/PP/PE/poliolefiną, dając nadruk odporny na rozpuszczalniki, tarcie i temperatury do +180°C. Użycie taśmy woskowej na etykiecie foliowej to najczęstszy błąd w druku TT.',
     },
     {
       q: 'Co oznacza certyfikat UL na etykiecie?',
@@ -136,11 +136,11 @@ const FAQ_BY_SUB: Record<TransferLabelSubcategory, { q: string; a: string }[]> =
     },
     {
       q: 'Do jakich drukarek pasują etykiety foliowe?',
-      a: 'Drukarki Zebra z funkcją thermal transfer i obsługą taśmy resin: biurkowe ZD421t/ZD621t, mid-range ZD611t/ZT231, przemysłowe ZT411/ZT421/ZT510/ZT610/ZT620. Druk na folii wymaga wyższej temperatury głowicy i często precyzyjnej kalibracji — w drukarkach industrialnych jest to standard, w desktopowych warto przetestować z konkretną serią.',
+      a: 'Drukarki Zebra z funkcją thermal transfer i obsługą taśmy resin: biurkowe ZD421t/ZD621t, mid-range ZD611t/ZT231, przemysłowe ZT411/ZT421/ZT510/ZT610/ZT620. Druk na etykietach foliowych wymaga wyższej temperatury głowicy i często precyzyjnej kalibracji — w drukarkach przemysłowych jest to standard, w biurkowych warto przetestować z konkretną serią.',
     },
     {
-      q: 'Dlaczego nadruk na mojej folii schodzi palcem? (typowy problem)',
-      a: 'To najczęstszy błąd: użyto taśmy woskowej (Zebra 2300/2100) lub wosk-żywicznej (3200) zamiast żywicznej (resin Zebra 5095). Wosk nie wiąże się chemicznie z PET/PP/PE — nadruk leży tylko na powierzchni i ściera się palcem. Sprawdź taśmę w drukarce: do folii ZAWSZE resin. To naprawia 95% przypadków „nadruk schodzi".',
+      q: 'Dlaczego nadruk na mojej etykiecie foliowej ściera się palcem? (typowy problem)',
+      a: 'To najczęstszy błąd: użyto taśmy woskowej (Zebra 2300/2100) lub wosk-żywicznej (3200) zamiast żywicznej (resin Zebra 5095). Wosk nie wiąże się chemicznie z PET/PP/PE — nadruk leży tylko na powierzchni i ściera się pod palcem. Sprawdź taśmę w drukarce: do etykiet foliowych ZAWSZE resin. To naprawia 95% przypadków „nadruk się ściera".',
     },
     {
       q: 'Co oznacza skrót „BOPP" przy polipropylenie?',
@@ -155,7 +155,7 @@ const FAQ_BY_SUB: Record<TransferLabelSubcategory, { q: string; a: string }[]> =
       a: 'W standardowym katalogu Zebry: biały (PolyPro 3000T Gloss, PolyPro 4000T Matte, Z-Ultimate 3000T White), przezroczysty (PolyPro 3000T Clear) i srebrny metaliczny (Z-Ultimate 3000T Silver). Inne kolory (czerwony, żółty, niebieski) dostępne pod zamówienie z większej partii — kontakt indywidualny dla wyceny.',
     },
     {
-      q: 'Czy mogę drukować kolorowy nadruk na folii TT?',
+      q: 'Czy mogę drukować kolorowy nadruk na etykietach foliowych TT?',
       a: 'Standardowe taśmy resin Zebra dają nadruk czarny — to standard kodów kreskowych i tekstu. Kolorowe taśmy (czerwone, niebieskie, srebrne) istnieją u producentów taśm jak Armor czy Sony, ale są wyspecjalizowane. Do pełnokolorowych etykiet stosuje się drukarki kolorowe inkjet/laser, nie TT. Dla logo kolorowego stosuje się pre-printed folię + druk TT zmiennych danych.',
     },
     {
@@ -165,6 +165,42 @@ const FAQ_BY_SUB: Record<TransferLabelSubcategory, { q: string; a: string }[]> =
     {
       q: 'Czy folie nadają się do cięcia plotterem?',
       a: 'Tak — wszystkie folie BOPP, PET i PE Zebra dają się ciąć plotterem bez problemu. Etykiety mogą być przycięte do nietypowych kształtów (owalne, okrągłe, z wycięciami). Dla małych nakładów wykonujemy cięcie na zamówienie; dla seryjnych produkcji warto rozważyć dedykowane rolki z fabrycznym sztancowaniem (kiss-cut) — niższy koszt jednostkowy.',
+    },
+    {
+      q: 'Co oznacza certyfikat BS5609 i kiedy go potrzebujesz?',
+      a: 'BS5609 to brytyjska norma testująca odporność etykiety na 90-dniowe zanurzenie w słonej wodzie morskiej. Wymagana przez kod IMDG dla transportu chemikaliów niebezpiecznych drogą morską (beczki, IBC, kontenery). Z portfolio Zebry tylko PolyO 3100T (poliolefina) posiada certyfikat BS5609 sekcja 2 i 3 — przeznaczona dla branży chemicznej, naftowej, spedycji morskiej i etykiet GHS dla substancji niebezpiecznych.',
+    },
+    {
+      q: 'Czy folia outdoor wytrzyma rok deszczu i słońca?',
+      a: 'Z-Ultimate 3000T White (poliester) z taśmą resin 5095 — tak, ponad rok na zewnątrz bez utraty czytelności. PolyPro 3000T (Gloss i Clear) — krótkoterminowo (3-12 miesięcy) dzięki klejowi z odpornością UV. Z-Perform/Z-Select (papier) — nie nadają się outdoor, blakną w kilka tygodni. Do trwałych oznaczeń outdoor (tabliczki maszyn, oznaczenia gazowe, urządzenia ogrodowe) wybieraj zawsze Z-Ultimate.',
+    },
+    {
+      q: 'Jaką grubość folii wybrać dla aplikatora automatycznego?',
+      a: 'Dla aplikatorów automatycznych (Label-Aire, Bizerba, Avery Dennison) kluczowa jest sztywność folii. Najlepsze: PolyPro 4000T Matte (208 μm — najgrubsza folia w portfolio, najlepsza sztywność), PolyPro 3000T Gloss/Clear (130 μm) i Z-Ultimate 3000T (128 μm — sztywny PET). Elastyczna PolyE 3100T (155 μm) nadaje się tylko do aplikatorów wspierających elastyczne media. Przed inwestycją w aplikator zawsze przetestuj próbkę z konkretnym mechanizmem.',
+    },
+    {
+      q: 'Czy mogę nakleić folię TT na bardzo zimną powierzchnię (chłodnia, mroźnia)?',
+      a: 'Standardowe folie (PolyPro 3000T, PolyE 3100T, Z-Ultimate 3000T) wymagają minimalnej temperatury aplikacji 5°C. Do aplikacji w chłodni od 0°C lub na produkty z hali produkcyjnej do schłodzenia wybierz PolyPro 4000T Matte (min. -10°C). Do głębokiego mrożenia (-40°C i niżej) wybierz PolyPro 4000T Matte lub serię specjalną 8000T All-Temp (papier z klejem all-temperature). Naklejenie na zbyt zimną powierzchnię = klej nie chwyci, etykieta odpadnie.',
+    },
+    {
+      q: 'Co to jest „dwell time" i dlaczego ma znaczenie dla kleju?',
+      a: 'Dwell time (czas związania kleju) to okres po naklejeniu etykiety, w którym klej osiąga pełną siłę przyczepności — typowo 24-72 godziny w temperaturze pokojowej. Etykieta naklejona i zaraz wystawiona na ekstremalne warunki (mrożenie, chemikalia, woda) odpadnie. Procedura prawidłowej aplikacji: naklejenie w temperaturze pokojowej → dwell time 24h → dopiero wtedy przeniesienie do warunków docelowych. To krytyczne dla etykiet kriogenicznych, chemicznych i medycznych.',
+    },
+    {
+      q: 'Jaki kontrast kodu kreskowego jest wymagany na etykiecie foliowej (ANSI grade)?',
+      a: 'ANSI/ISO 15416 definiuje 5 stopni kontrastu kodu (A=4.0, B=3.0, C=2.0, D=1.0, F=poniżej). Dla skanerów przemysłowych minimum to grade C, ale rekomendacja branżowa to grade B+. Na białej etykiecie foliowej (PolyPro Gloss, Z-Ultimate White) z taśmą resin osiągasz grade A bez problemu. Na przezroczystej etykiecie foliowej (PolyPro Clear) kontrast zależy od podłoża — przetestuj skanowanie z docelową powierzchnią. Etykieta srebrna (Z-Ultimate Silver) wymaga laminowania kodu dla grade B.',
+    },
+    {
+      q: 'Czy mogę preprintować folię u producenta i dodrukować zmienne dane TT?',
+      a: 'Tak — to standard branżowy dla etykiet z kolorowym logo + zmiennymi danymi (kod, data, partia). Producenci jak HERMA, Schreiner czy lokalni dostawcy preprintują rolki etykiet foliowych Zebra ofsetowo lub fleksograficznie (kolorowe logo, fixed text), a Ty dodrukowujesz zmienne pola TT w swojej drukarce Zebra. Etykieta musi być specyfikacji kompatybilnej z TT (np. PolyPro 3000T Gloss). Zamówienie minimalne preprintów: typowo 5000-10 000 sztuk.',
+    },
+    {
+      q: 'Etykiety foliowe TT vs naklejki cyfrowe (laser/inkjet) — kiedy co wybrać?',
+      a: 'Etykiety foliowe TT (termotransfer): trwałość 5+ lat, odporność chemiczna, atesty UL/FDA/BfR, idealne dla zmiennych danych w średnich i dużych wolumenach (1000+ sztuk dziennie). Naklejki cyfrowe (laser, inkjet, pigment): pełen kolor, fotografie, małe nakłady (<1000 sztuk), prototypy. Etykiety foliowe TT wygrywają dla przemysłu, magazynu, medycyny, motoryzacji; naklejki cyfrowe dla marketingu, kreatywnych projektów i krótkich kampanii.',
+    },
+    {
+      q: 'Jak rozpoznać starą folię, której nie warto już używać?',
+      a: 'Objawy zestarzałej folii (powyżej 12 miesięcy magazynowania lub nieprawidłowo przechowywanej): klej żółknie po odklejeniu z podkładu, etykieta nie chwyta przy aplikacji lub odkleja się po kilku godzinach, lico zmatowiało lub wykazuje ślady absorpcji wilgoci. Sprawdź datę produkcji (kod na rolce). Zebra gwarantuje 12 miesięcy przy 20-25°C i RH 40-50%. Starą folię można jeszcze próbować na testy wewnętrzne, ale nie do końcowych aplikacji.',
     },
   ],
   specjalne: [
@@ -238,6 +274,288 @@ const FAQ_BY_SUB: Record<TransferLabelSubcategory, { q: string; a: string }[]> =
     },
   ],
 }
+
+// ── Sekcja edukacyjna dla /foliowe — 4 materiały foliowe w pigułce
+//    Renderowana zaraz po hero. Pomaga użytkownikowi szybko wybrać typ folii
+//    przed zejściem do kart serii. AI engines indeksują to jako zwięzłe
+//    zestawienie kategorii i często cytują w odpowiedziach.
+const FOLIOWE_MATERIALS_QUICK: {
+  name: string
+  short: string
+  grubosc: string
+  zakresTemp: string
+  trwalosc: string
+  bestFor: string
+  cenaRel: string
+  bestSeries: { slug: string; title: string }[]
+  highlight: string
+}[] = [
+  {
+    name: 'Poliester (PET) — Z-Ultimate',
+    short: 'Premium folia o najwyższej odporności chemicznej i mechanicznej. Certyfikat UL Recognized Component.',
+    grubosc: '128 μm',
+    zakresTemp: '-40°C do +150°C',
+    trwalosc: '5 lat indoor / 1+ rok outdoor',
+    bestFor: 'Tabliczki znamionowe, motoryzacja, elektronika, oznaczenia UL, asset tagging',
+    cenaRel: 'Premium (≈4× papier)',
+    bestSeries: [
+      { slug: 'z-ultimate-3000t-white', title: 'Z-Ultimate 3000T White' },
+      { slug: 'z-ultimate-3000t-silver', title: 'Z-Ultimate 3000T Silver' },
+    ],
+    highlight: 'Jedyna folia z UL w portfolio Zebry',
+  },
+  {
+    name: 'Polipropylen (BOPP) — PolyPro',
+    short: 'Standardowa folia foliowa: wodoodporna, sztywna, atest BfR XIV dla suchych, wilgotnych ORAZ tłustych produktów.',
+    grubosc: '130-208 μm',
+    zakresTemp: '-54°C do +120°C (4000T) / -20°C do +80°C (3000T)',
+    trwalosc: '1-2 lata indoor (krótkoterminowo outdoor)',
+    bestFor: 'Przemysł, retail, beczki chemiczne, palety, opakowania spożywcze, etykiety półkowe',
+    cenaRel: 'Średnia (≈3× papier)',
+    bestSeries: [
+      { slug: 'polypro-3000t-gloss', title: 'PolyPro 3000T Gloss (biały)' },
+      { slug: 'polypro-3000t-clear', title: 'PolyPro 3000T Clear (przezroczysty)' },
+      { slug: 'polypro-4000t-matte', title: 'PolyPro 4000T Matte (machine vision)' },
+    ],
+    highlight: 'Najlepszy stosunek ceny do trwałości',
+  },
+  {
+    name: 'Polietylen (PE) — PolyE',
+    short: 'Elastyczna folia, dostosowuje się do zakrzywionych i ściskanych powierzchni. Recyklowalna z opakowaniami PE.',
+    grubosc: '155 μm',
+    zakresTemp: '-20°C do +80°C',
+    trwalosc: '1-2 lata indoor',
+    bestFor: 'Butelki HDPE ściśliwe, tuby, kosmetyki, opakowania elastyczne, chemia gospodarcza',
+    cenaRel: 'Średnia',
+    bestSeries: [
+      { slug: 'polye-3100t-gloss', title: 'PolyE 3100T Gloss' },
+    ],
+    highlight: 'BfR XIV RF≥3 — najszerszy atest spożywczy w foliach',
+  },
+  {
+    name: 'Poliolefina — PolyO',
+    short: 'Ekologiczny zamiennik PVC: bez chloru, BPA-free, recyklowalna. Jedyna folia z certyfikatem BS5609 (transport morski).',
+    grubosc: '105 μm',
+    zakresTemp: '-20°C do +80°C',
+    trwalosc: '1-2 lata indoor / outdoor zgodny z BS5609',
+    bestFor: 'Chemikalia (IBC, beczki), transport morski IMDG, etykiety GHS, branża naftowa',
+    cenaRel: 'Średnia-premium',
+    bestSeries: [
+      { slug: 'polyo-3100t', title: 'PolyO 3100T' },
+    ],
+    highlight: 'Certyfikat BS5609 — IMDG/GHS dla niebezpiecznych',
+  },
+]
+
+// ── Sekcja edukacyjna dla /specjalne — 5 serii niszowych w pigułce.
+//    Każda z osobnym mechanizmem działania (kriogenika, ISO 3826-1, mroźnie,
+//    tamper-evident VOID, destruktywna) — dlatego pokazujemy pełną listę.
+const SPECJALNE_MATERIALS_QUICK: {
+  name: string
+  short: string
+  grubosc: string
+  zakresTemp: string
+  trwalosc: string
+  bestFor: string
+  cenaRel: string
+  bestSeries: { slug: string; title: string }[]
+  highlight: string
+}[] = [
+  {
+    name: '8100T Cryocool — kriogeniczna PET',
+    short: 'Satynowy biały poliester (PET) z trwałym akrylowym klejem do ciekłego azotu (-196°C), suchego lodu i sterylizacji gamma. Trzyma na małych fiolkach 7-15 mm.',
+    grubosc: '142 μm',
+    zakresTemp: '-196°C do +100°C',
+    trwalosc: '1+ rok indoor / do 6 mies. outdoor',
+    bestFor: 'Biobanki, fiolki laboratoryjne, badania kliniczne, IVF, komórki macierzyste',
+    cenaRel: 'Specjalistyczna',
+    bestSeries: [
+      { slug: '8100t-cryocool', title: '8100T Cryocool' },
+    ],
+    highlight: 'Odporność na promieniowanie gamma — unikat w portfolio',
+  },
+  {
+    name: '8000T Blood Bag Deep Freeze — PE medyczna',
+    short: 'Polietylen matowy biały z atestami ISO 3826-1 (brak migracji kleju do krwi) i ISO 10993-5 (brak genotoksyczności). Dedykowana wyłącznie do worków z krwią.',
+    grubosc: '184 μm',
+    zakresTemp: '-50°C do +80°C',
+    trwalosc: '1+ rok indoor',
+    bestFor: 'Banki krwi, stacje krwiodawstwa, transfuzjologia, oznaczenia FFP/KKCz/KKP',
+    cenaRel: 'Specjalistyczna (medyczna)',
+    bestSeries: [
+      { slug: '8000t-blood-bag-deep-freeze', title: '8000T Blood Bag Deep Freeze' },
+    ],
+    highlight: 'Atesty ISO 3826-1 + ISO 10993-5 — bezpośredni kontakt z workami z krwią',
+  },
+  {
+    name: '8000T All-Temp — papier do mroźni',
+    short: 'Ultra-gładki biały papier z klejem all-temperature. Aplikacja od -29°C (na zmrożone opakowania), praca w najszerszym zakresie -54°C do +93°C wśród papierów.',
+    grubosc: '156 μm',
+    zakresTemp: '-54°C do +93°C',
+    trwalosc: '1+ rok indoor',
+    bestFor: 'Chłodnie, mroźnie głębokie, Work-in-Progress, logistyka mrożona, kartony i palety',
+    cenaRel: 'Średnia specjalistyczna',
+    bestSeries: [
+      { slug: '8000t-all-temp', title: '8000T All-Temp' },
+    ],
+    highlight: 'Aplikacja od -29°C — naklejanie na zmrożone opakowania',
+  },
+  {
+    name: '8000T Void Matte — zabezpieczająca z UL',
+    short: 'Matowy srebrny poliester (PET) z metalizowanym klejem zostawiającym napis „VOID" przy próbie zdjęcia. Certyfikat UL Recognized z taśmami 3400 i 5095.',
+    grubosc: '168 μm',
+    zakresTemp: '-40°C do +150°C (VOID do +40°C)',
+    trwalosc: '1+ rok indoor / do 1 roku outdoor',
+    bestFor: 'Plomby gwarancyjne, tabliczki znamionowe, oznakowanie środków trwałych, elektronika UL',
+    cenaRel: 'Specjalistyczna (UL)',
+    bestSeries: [
+      { slug: '8000t-void-matte', title: '8000T Void Matte' },
+    ],
+    highlight: 'Jedyna w portfolio z UL Recognized + funkcją VOID',
+  },
+  {
+    name: '8100T Z-Destruct PE — destruktywna PE',
+    short: 'Matowy biały polietylen z gumowym klejem (rubber). Folia fizycznie rozpada się na drobne kawałki przy próbie zdjęcia — najwyższy poziom zabezpieczenia.',
+    grubosc: '133 μm',
+    zakresTemp: '-40°C do +80°C',
+    trwalosc: '1+ rok indoor / do 1 roku outdoor',
+    bestFor: 'Plomby urzędowe, sprzęt wojskowy, elektronika premium, służby mundurowe, lotnictwo',
+    cenaRel: 'Najwyższa (niche)',
+    bestSeries: [
+      { slug: '8100t-z-destruct-pe', title: '8100T Z-Destruct PE' },
+    ],
+    highlight: 'Najwyższy poziom zabezpieczenia — etykieta przestaje istnieć po próbie zdjęcia',
+  },
+]
+
+// ── Sekcje deep-guide poniżej tabeli porównawczej (TCO, atesty, błędy).
+//    Każda renderowana jako semantyczny H2/H3 — sygnał dla AI engines, że to
+//    treść artykułowa, nie tylko listing produktów (TechArticle schema).
+type GuideSection = {
+  heading: string
+  content: string
+  table?: { headers: string[]; rows: string[][] }
+}
+
+const FOLIOWE_DEEP_GUIDE: GuideSection[] = [
+  {
+    heading: 'Etykieta foliowa czy papierowa? Analiza całkowitego kosztu posiadania (TCO)',
+    content:
+      'Etykieta foliowa kosztuje 3-5× więcej niż papierowa — ale dla oznaczeń trwałych na produktach końcowych **folia opłaca się** w perspektywie 3-letniej. Przykład: etykieta papierowa Z-Perform 1000T na tabliczce maszyny przemysłowej staje się nieczytelna po roku (blakną, ścieranie, oleje), wymaga wymiany. Etykieta foliowa Z-Ultimate 3000T White wytrzymuje 5+ lat indoor bez utraty czytelności. **Całkowity koszt posiadania (TCO)** etykiety foliowej dla trwałych aplikacji jest niższy: jedna naklejka + jedno naklejenie vs 5 naklejek + 5 cykli wymiany przez 5 lat.',
+    table: {
+      headers: ['Aspekt', 'Etykieta papierowa (Z-Select)', 'Etykieta foliowa (Z-Ultimate)'],
+      rows: [
+        ['Cena za rolkę 102×152 mm', '~80 zł', '~290 zł'],
+        ['Trwałość czytelnego nadruku', '1-2 lata indoor', '5+ lat indoor'],
+        ['Liczba wymian w 5 lat', '3-5×', '0×'],
+        ['Koszt wymian (robocizna)', 'wysoki', 'zerowy'],
+        ['Wymagana taśma', 'wosk-żywica (~200 zł)', 'żywiczna (~360 zł)'],
+        ['TCO 5-letni dla 1000 etykiet', '~700 zł + 5h robocizny', '~650 zł + 1h robocizny'],
+        ['Atesty (UL/FDA)', '—', 'tak (Z-Ultimate UL)'],
+      ],
+    },
+  },
+  {
+    heading: 'Atesty i certyfikaty etykiet foliowych Zebra',
+    content:
+      'Folie termotransferowe Zebra posiadają **8 głównych certyfikatów**, każdy oznaczający spełnienie konkretnej normy regulacyjnej. Wybór folii bez właściwego atestu może wyłączyć Twój produkt z możliwości sprzedaży na danym rynku (np. brak FDA = brak sprzedaży w USA dla produktów spożywczych). Zawsze sprawdź wymagania regulacyjne docelowego rynku przed wyborem folii.',
+    table: {
+      headers: ['Certyfikat', 'Co oznacza', 'Kto wymaga', 'Etykieta foliowa z certyfikatem'],
+      rows: [
+        ['UL Recognized Component', 'Bezpieczeństwo komponentów elektrycznych (USA)', 'Producenci sprzętu certyfikowanego UL', 'Z-Ultimate 3000T White'],
+        ['FDA 175.105 (USA)', 'Kontakt z suchymi produktami spożywczymi lub przez barierę', 'Branża spożywcza w USA', 'PolyPro 3000T, PolyE 3100T, PolyO 3100T'],
+        ['EC 1935/2004 (UE)', 'Ramowe rozporządzenie materiałów do kontaktu z żywnością', 'Wszyscy producenci spożywczy w UE', 'Wszystkie folie z atestem spożywczym'],
+        ['EU 10/2011', 'Tworzywa sztuczne w kontakcie z żywnością', 'Producenci opakowań plastikowych UE', 'PolyPro, PolyE, PolyO'],
+        ['BfR XIV (RF≥2)', 'Suche, wilgotne ORAZ tłuste produkty (Niemcy)', 'Branża spożywcza, kosmetyczna', 'PolyPro 3000T Gloss/Clear, PolyO 3100T'],
+        ['BfR XIV (RF≥3)', 'Najszerszy zakres — wszystkie produkty łącznie z tłustymi', 'Producenci żywności tłustej, oleje, masła', 'PolyE 3100T Gloss'],
+        ['BS5609', 'Odporność na 90-dniowe zanurzenie w wodzie morskiej (IMDG)', 'Transport chemikaliów drogą morską, GHS', 'PolyO 3100T'],
+        ['BPA-free, latex-free', 'Bez bisfenolu A i lateksu (alergeny)', 'Healthcare, kosmetyki, żywność dziecięca', 'Wszystkie folie spożywcze Zebra'],
+      ],
+    },
+  },
+  {
+    heading: '5 najczęstszych błędów przy doborze etykiety termotransferowej foliowej',
+    content:
+      'Z naszego doświadczenia (8+ lat doradztwa technicznego) **80% problemów** z etykietami foliowymi wynika z 5 typowych błędów na etapie doboru materiału lub taśmy. Każdy z nich kosztuje firmę realne pieniądze: zmarnowane rolki, wymiana etykiet, zniszczona głowica drukarki, opóźnienia produkcyjne. Sprawdź swoją aplikację:',
+    table: {
+      headers: ['Błąd', 'Skutek', 'Jak naprawić'],
+      rows: [
+        ['Użycie taśmy woskowej (2300, 2100) na etykiecie foliowej', 'Nadruk ściera się palcem, etykieta nieczytelna', 'Zmień na taśmę żywiczną (Zebra 4800 lub 5095)'],
+        ['Sztywna folia (PolyPro) na elastycznym opakowaniu (butelka HDPE)', 'Etykieta odchodzi, marszczy się, traci kontakt', 'Wybierz elastyczny PolyE 3100T Gloss'],
+        ['Brak atestu spożywczego na opakowaniu z żywnością tłustą', 'Wycofanie produktu z rynku, kara regulacyjna', 'PolyE 3100T (RF≥3) lub PolyPro 3000T (RF≥2)'],
+        ['Aplikacja folii poniżej minimalnej temperatury (np. 0°C dla PolyE)', 'Klej nie chwyta, etykieta odpada w godzinach', 'Sprawdź min. temp. aplikacji (5°C dla większości) lub wybierz PolyPro 4000T (-10°C)'],
+        ['Brak certyfikatu UL na tabliczce maszyny w produkcie UL-certyfikowanym', 'Utrata certyfikacji urządzenia, brak sprzedaży na rynkach UL', 'Tylko Z-Ultimate 3000T White ma UL Recognized'],
+      ],
+    },
+  },
+]
+
+const SPECJALNE_DEEP_GUIDE: GuideSection[] = [
+  {
+    heading: 'Łańcuch chłodniczy — który materiał do jakiej temperatury?',
+    content:
+      'Trzy serie specjalne pokrywają różne zakresy temperatur — od chłodni spożywczych po ciekły azot w biobankach. Wybór zależy od **najniższej temperatury, jaką etykieta musi wytrzymać po naklejeniu** oraz od **typu podłoża** (papier kartonowy vs polimerowy worek z krwią vs szklana fiolka). Nie wybieraj materiału droższego niż wymaga aplikacja — różnica kosztów między All-Temp a Cryocool to około 3× za rolkę.',
+    table: {
+      headers: ['Seria', 'Zakres pracy', 'Min. aplikacja', 'Podłoże', 'Typowe zastosowanie'],
+      rows: [
+        ['8000T All-Temp (papier)', '-54°C do +93°C', '-29°C', 'Kartony, palety, opakowania zbiorcze', 'Mroźnie spożywcze i farmaceutyczne, Work-in-Progress'],
+        ['8000T Blood Bag (PE)', '-50°C do +80°C', '-20°C', 'Worki polimerowe na krew', 'Banki krwi, stacje krwiodawstwa, FFP/KKCz/KKP'],
+        ['8100T Cryocool (PET)', '-196°C do +100°C', '+4°C', 'Fiolki szklane/polipropylenowe 7-15 mm', 'Biobanki, ciekły azot, sterylizacja gamma'],
+      ],
+    },
+  },
+  {
+    heading: 'Hierarchia zabezpieczeń: VOID vs destruktywna',
+    content:
+      'Dwie serie specjalne oferują **fundamentalnie różne mechanizmy zabezpieczające przed nieautoryzowanym zdjęciem**. Wybór zależy od tego, czy potrzebny jest **widoczny dowód próby naruszenia** (wystarczy napis VOID, etykieta zostaje w jednym kawałku) czy **fizyczna nieusuwalność etykiety w jednym kawałku** (etykieta przestaje istnieć). 8000T Void Matte dodatkowo posiada **certyfikat UL Recognized** — wymagany dla tabliczek znamionowych na sprzęcie elektronicznym sprzedawanym w USA i Kanadzie.',
+    table: {
+      headers: ['Cecha', '8000T Void Matte', '8100T Z-Destruct PE'],
+      rows: [
+        ['Mechanizm', 'Metalizowany klej zostawia napis „VOID" na powierzchni', 'Folia fizycznie rozpada się na drobne kawałki'],
+        ['Materiał lica', 'Matowy srebrny poliester (PET) 60 μm', 'Matowy biały polietylen (PE) 50 μm'],
+        ['Klej', 'Permanentny metalizowany akrylowy', 'Permanentny gumowy (rubber)'],
+        ['Łączna grubość', '168 μm', '133 μm'],
+        ['Zakres pracy', '-40°C do +150°C (VOID do +40°C)', '-40°C do +80°C'],
+        ['Certyfikat UL Recognized', 'TAK — z taśmami 3400 i 5095', 'NIE'],
+        ['Trwałość outdoor', 'Do 1 roku', 'Do 1 roku'],
+        ['Poziom zabezpieczenia', 'Średni — widoczny dowód naruszenia', 'Najwyższy — fizyczna nieusuwalność'],
+        ['Typowe zastosowanie', 'Tabliczki znamionowe UL, plomby gwarancyjne sprzętu', 'Plomby urzędowe, sprzęt wojskowy, elektronika premium'],
+      ],
+    },
+  },
+  {
+    heading: 'Atesty medyczne i certyfikaty regulacyjne — co dla kogo?',
+    content:
+      'Etykiety specjalne to materiały regulowane: każdy posiada specyficzne atesty, które kwalifikują go do konkretnych zastosowań branżowych. Wybór materiału bez właściwego atestu może oznaczać **wykluczenie z możliwości sprzedaży na danym rynku** (np. brak UL = brak sprzedaży sprzętu elektronicznego w USA) lub **niezgodność z procedurami medycznymi** (brak ISO 3826-1 = niedopuszczalność do oznaczeń worków z krwią). Sprawdź wymagania regulacyjne przed wyborem.',
+    table: {
+      headers: ['Atest', 'Co oznacza', 'Seria z atestem'],
+      rows: [
+        ['UL Recognized Component', 'Bezpieczeństwo elementów elektronicznych (USA/Kanada) — etykieta wytrzyma tak długo jak produkt', '8000T Void Matte (z taśmami 3400 i 5095)'],
+        ['ISO 3826-1', 'Brak migracji kleju do krwi przez worek polimerowy', '8000T Blood Bag Deep Freeze'],
+        ['ISO 10993-5', 'Brak istotnej genotoksyczności (cytotoksyczność wyrobów medycznych)', '8000T Blood Bag Deep Freeze'],
+        ['Odporność na promieniowanie gamma', 'Sterylizacja gamma bez utraty czytelności i przyczepności', '8100T Cryocool'],
+        ['BfR Recommendation XXI', 'Kontakt pośredni z żywnością (Niemcy)', '8000T Blood Bag Deep Freeze'],
+        ['Praca w ciekłym azocie (-196°C)', 'Kriogeniczne przechowywanie próbek — biobanki, IVF', '8100T Cryocool'],
+        ['BPA-free, latex-free', 'Bez bisfenolu A i lateksu — bezpieczne dla pacjentów', 'Wszystkie 5 serii specjalnych'],
+      ],
+    },
+  },
+  {
+    heading: '5 typowych błędów przy doborze etykiet specjalnych',
+    content:
+      'Z naszego doświadczenia (8+ lat doradztwa technicznego) etykiety specjalne to obszar najczęstszych pomyłek przy doborze — wynikają z ich niszowości i mylonych mechanizmów. Każdy błąd kosztuje firmę realne pieniądze: zniszczone próbki w biobankach, wycofane partie produktów, zawiedzione plomby gwarancyjne. Sprawdź, czy unikasz tych pułapek:',
+    table: {
+      headers: ['Błąd', 'Skutek', 'Jak naprawić'],
+      rows: [
+        ['Użycie 8000T All-Temp do ciekłego azotu (-196°C)', 'Etykieta odpada w pierwszym cyklu mróz-rozmróz', 'Wybierz 8100T Cryocool (PET kriogeniczny do -196°C)'],
+        ['Użycie 8100T Cryocool na workach z krwią', 'Klej akrylowy nie jest atestowany ISO 3826-1 — ryzyko medyczne', 'Wybierz 8000T Blood Bag Deep Freeze (atesty medyczne)'],
+        ['Aplikacja 8000T Void Matte powyżej +40°C', 'Funkcja VOID nie zadziała — brak dowodu próby naruszenia', 'Sprawdź temperaturę powierzchni; do wyższych temp. wybierz inne rozwiązania'],
+        ['Drukowanie Z-Destruct PE w drukarce biurkowej', 'Materiał ma rdzeń 76 mm — biurkowa fizycznie nie pomieści rolki', 'Użyj drukarki mid-range (ZD611t) lub przemysłowej (ZT411/ZT421)'],
+        ['Aplikacja Z-Destruct PE na PE/PP/teflon bez faceslits', 'Etykieta odchodzi w całości zamiast się rozpaść — brak destruktywności', 'Zaznacz przy zamówieniu faceslits (fabryczne nacięcia w licu)'],
+      ],
+    },
+  },
+]
 
 const CONFIG: Record<TransferLabelSubcategory, SubConfig> = {
   papierowe: {
@@ -367,11 +685,74 @@ export default async function TransferSubcategoryPage({ params }: PageProps) {
     ],
   }
 
+  // TechArticle schema dla /foliowe i /specjalne — sygnał dla AI engines
+  // (Google AI Overviews, Perplexity, ChatGPT), że strona zawiera autorytatywną
+  // treść techniczną, nie tylko listing produktów. Zwiększa szanse cytowania.
+  const techArticleSchema =
+    subcategory === 'foliowe'
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'TechArticle',
+          headline: 'Etykiety termotransferowe foliowe Zebra — przewodnik wyboru materiału',
+          description: 'Kompletny przewodnik po foliowych etykietach termotransferowych Zebra: 4 typy folii (poliester, polipropylen, polietylen, poliolefina), atesty (UL, FDA, BfR XIV, BS5609), analiza TCO i typowe błędy doboru.',
+          url,
+          inLanguage: 'pl-PL',
+          proficiencyLevel: 'Expert',
+          about: [
+            { '@type': 'Thing', name: 'Etykiety termotransferowe' },
+            { '@type': 'Thing', name: 'Folia poliestrowa PET' },
+            { '@type': 'Thing', name: 'Polipropylen BOPP' },
+            { '@type': 'Thing', name: 'Polietylen PE' },
+            { '@type': 'Thing', name: 'Poliolefina' },
+            { '@type': 'Thing', name: 'UL Recognized Component' },
+            { '@type': 'Thing', name: 'BfR XIV' },
+            { '@type': 'Thing', name: 'BS5609' },
+            { '@type': 'Thing', name: 'FDA 175.105' },
+          ],
+          publisher: { '@type': 'Organization', name: 'TAKMA', url: siteUrl },
+          audience: {
+            '@type': 'BusinessAudience',
+            audienceType: 'Specjaliści ds. zakupów technicznych, inżynierowie produkcji, kierownicy magazynów, dział regulacyjny',
+          },
+        }
+      : subcategory === 'specjalne'
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'TechArticle',
+          headline: 'Etykiety termotransferowe specjalne Zebra — przewodnik po 5 seriach niszowych',
+          description: 'Kompletny przewodnik po specjalnych etykietach termotransferowych Zebra: kriogeniczne 8100T Cryocool (-196°C), worki z krwią 8000T Blood Bag (ISO 3826-1), papier do mroźni 8000T All-Temp, zabezpieczające 8000T Void Matte (UL) i destruktywne 8100T Z-Destruct PE.',
+          url,
+          inLanguage: 'pl-PL',
+          proficiencyLevel: 'Expert',
+          about: [
+            { '@type': 'Thing', name: 'Etykiety kriogeniczne' },
+            { '@type': 'Thing', name: 'Ciekły azot' },
+            { '@type': 'Thing', name: 'Biobanki' },
+            { '@type': 'Thing', name: 'Etykiety na worki z krwią' },
+            { '@type': 'Thing', name: 'ISO 3826-1' },
+            { '@type': 'Thing', name: 'ISO 10993-5' },
+            { '@type': 'Thing', name: 'Etykiety zabezpieczające VOID' },
+            { '@type': 'Thing', name: 'Etykiety destruktywne' },
+            { '@type': 'Thing', name: 'UL Recognized Component' },
+            { '@type': 'Thing', name: 'Sterylizacja gamma' },
+            { '@type': 'Thing', name: 'Mroźnie głębokie' },
+          ],
+          publisher: { '@type': 'Organization', name: 'TAKMA', url: siteUrl },
+          audience: {
+            '@type': 'BusinessAudience',
+            audienceType: 'Banki krwi, biobanki, laboratoria medyczne, służby mundurowe, dział bezpieczeństwa, producenci sprzętu UL-certyfikowanego',
+          },
+        }
+      : null
+
   return (
     <main className="bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      {techArticleSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(techArticleSchema) }} />
+      )}
 
       {/* HERO */}
       <section className="relative bg-slate-950 text-white overflow-hidden">
@@ -424,7 +805,7 @@ export default async function TransferSubcategoryPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* SERIE */}
+      {/* SERIE — kafelki najpierw pod hero, opis pod kafelkami */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         {bestsellers.length > 0 && (
           <div className="mb-10">
@@ -447,8 +828,155 @@ export default async function TransferSubcategoryPage({ params }: PageProps) {
         </div>
       </section>
 
+      {/* 4 TYPY ETYKIET FOLIOWYCH W PIGUŁCE — tylko dla /foliowe.
+          Renderowane pod kafelkami serii (opis pod listingiem). */}
+      {subcategory === 'foliowe' && (
+        <section className="bg-slate-50 border-y border-slate-200">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <div className="max-w-3xl mb-10">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
+                4 typy etykiet termotransferowych foliowych — który materiał wybrać?
+              </h2>
+              <p className="text-gray-700 leading-relaxed">
+                Portfolio etykiet termotransferowych foliowych Zebry obejmuje cztery rodziny materiałów syntetycznych.
+                Każdy z nich rozwiązuje inny typ problemu: poliester walczy o trwałość, polipropylen o uniwersalność,
+                polietylen o elastyczność, poliolefina o ekologię i transport chemikaliów. Wybierz materiał według
+                aplikacji, potem konkretną serię.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              {FOLIOWE_MATERIALS_QUICK.map(m => (
+                <article key={m.name} className="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+                  <div className="flex items-start justify-between mb-3 gap-3">
+                    <h3 className="text-lg font-bold text-gray-900 leading-tight">{m.name}</h3>
+                    <span className="inline-flex items-center text-[11px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 whitespace-nowrap shrink-0">
+                      {m.cenaRel.split(' ')[0]}
+                    </span>
+                  </div>
+                  <p className="text-sm text-gray-700 leading-relaxed mb-4">{m.short}</p>
+                  <div className="grid grid-cols-2 gap-3 text-xs text-gray-600 mb-4">
+                    <div>
+                      <span className="block text-[10px] uppercase tracking-wide text-slate-500 font-semibold mb-0.5">Grubość</span>
+                      <span className="text-gray-900 font-medium">{m.grubosc}</span>
+                    </div>
+                    <div>
+                      <span className="block text-[10px] uppercase tracking-wide text-slate-500 font-semibold mb-0.5">Zakres temp.</span>
+                      <span className="text-gray-900 font-medium">{m.zakresTemp}</span>
+                    </div>
+                    <div>
+                      <span className="block text-[10px] uppercase tracking-wide text-slate-500 font-semibold mb-0.5">Trwałość</span>
+                      <span className="text-gray-900 font-medium">{m.trwalosc}</span>
+                    </div>
+                    <div>
+                      <span className="block text-[10px] uppercase tracking-wide text-slate-500 font-semibold mb-0.5">Cena vs papier</span>
+                      <span className="text-gray-900 font-medium">{m.cenaRel}</span>
+                    </div>
+                  </div>
+                  <div className="mb-4 pb-4 border-b border-slate-100">
+                    <span className="block text-[10px] uppercase tracking-wide text-slate-500 font-semibold mb-1">Najlepsze do</span>
+                    <p className="text-xs text-gray-700 leading-relaxed">{m.bestFor}</p>
+                  </div>
+                  <div className="mb-3">
+                    <span className="block text-[10px] uppercase tracking-wide text-slate-500 font-semibold mb-2">Serie</span>
+                    <div className="flex flex-wrap gap-1.5">
+                      {m.bestSeries.map(s => (
+                        <Link
+                          key={s.slug}
+                          href={`/etykiety-termotransferowe-zebra/foliowe/serie/${s.slug}`}
+                          className="inline-flex items-center text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 hover:bg-slate-200 transition-colors"
+                        >
+                          {s.title} <ArrowRightIcon size={11} className="ml-1" />
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-xs text-emerald-700 font-medium leading-snug">
+                    <CheckIcon size={12} className="inline mr-1" />{m.highlight}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 5 SERII SPECJALNYCH W PIGUŁCE — tylko dla /specjalne.
+          Pełna lista (każda seria ma jeden mechanizm: kriogenika / krew /
+          mróz / VOID / destrukcja). Renderowana pod kafelkami serii. */}
+      {subcategory === 'specjalne' && (
+        <section className="bg-slate-50 border-y border-slate-200">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <div className="max-w-3xl mb-10">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
+                5 serii etykiet specjalnych Zebra — który materiał wybrać?
+              </h2>
+              <p className="text-gray-700 leading-relaxed">
+                Portfolio etykiet specjalnych Zebry obejmuje pięć niszowych serii — każda rozwiązuje inny krytyczny
+                problem. Trzy z nich (Cryocool, Blood Bag, All-Temp) pokrywają różne zakresy niskich temperatur w
+                łańcuchu chłodniczym; dwie (Void Matte, Z-Destruct PE) różnymi mechanizmami zabezpieczają przed
+                nieautoryzowanym zdjęciem etykiety. Wybierz mechanizm, potem konkretną serię.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              {SPECJALNE_MATERIALS_QUICK.map(m => (
+                <article key={m.name} className="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+                  <div className="flex items-start justify-between mb-3 gap-3">
+                    <h3 className="text-lg font-bold text-gray-900 leading-tight">{m.name}</h3>
+                    <span className="inline-flex items-center text-[11px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded bg-amber-50 text-amber-700 whitespace-nowrap shrink-0">
+                      {m.cenaRel.split(' ')[0]}
+                    </span>
+                  </div>
+                  <p className="text-sm text-gray-700 leading-relaxed mb-4">{m.short}</p>
+                  <div className="grid grid-cols-2 gap-3 text-xs text-gray-600 mb-4">
+                    <div>
+                      <span className="block text-[10px] uppercase tracking-wide text-slate-500 font-semibold mb-0.5">Grubość</span>
+                      <span className="text-gray-900 font-medium">{m.grubosc}</span>
+                    </div>
+                    <div>
+                      <span className="block text-[10px] uppercase tracking-wide text-slate-500 font-semibold mb-0.5">Zakres temp.</span>
+                      <span className="text-gray-900 font-medium">{m.zakresTemp}</span>
+                    </div>
+                    <div>
+                      <span className="block text-[10px] uppercase tracking-wide text-slate-500 font-semibold mb-0.5">Trwałość</span>
+                      <span className="text-gray-900 font-medium">{m.trwalosc}</span>
+                    </div>
+                    <div>
+                      <span className="block text-[10px] uppercase tracking-wide text-slate-500 font-semibold mb-0.5">Klasa cenowa</span>
+                      <span className="text-gray-900 font-medium">{m.cenaRel}</span>
+                    </div>
+                  </div>
+                  <div className="mb-4 pb-4 border-b border-slate-100">
+                    <span className="block text-[10px] uppercase tracking-wide text-slate-500 font-semibold mb-1">Najlepsze do</span>
+                    <p className="text-xs text-gray-700 leading-relaxed">{m.bestFor}</p>
+                  </div>
+                  <div className="mb-3">
+                    <span className="block text-[10px] uppercase tracking-wide text-slate-500 font-semibold mb-2">Seria</span>
+                    <div className="flex flex-wrap gap-1.5">
+                      {m.bestSeries.map(s => (
+                        <Link
+                          key={s.slug}
+                          href={`/etykiety-termotransferowe-zebra/specjalne/serie/${s.slug}`}
+                          className="inline-flex items-center text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 hover:bg-slate-200 transition-colors"
+                        >
+                          {s.title} <ArrowRightIcon size={11} className="ml-1" />
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-xs text-amber-700 font-medium leading-snug">
+                    <CheckIcon size={12} className="inline mr-1" />{m.highlight}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* TABELA PORÓWNAWCZA */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 lg:pt-16 pb-12">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
           Porównanie serii — {cfg.label.toLowerCase()}
         </h2>
@@ -482,10 +1010,92 @@ export default async function TransferSubcategoryPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* FAQ — 10 pytań specyficznych dla podkategorii (AEO/GEO: LLM-y skanują FAQPage) */}
+      {/* DEEP-GUIDE — tylko dla /foliowe. Każda karta = własny H2 (autonomiczna
+          sekcja informacyjna). Bez wrappera „przed zakupem" — duplikował temat. */}
+      {subcategory === 'foliowe' && (
+        <section className="bg-slate-50 border-y border-slate-200">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <div className="space-y-10">
+              {FOLIOWE_DEEP_GUIDE.map((sec, idx) => (
+                <article key={idx} className="bg-white border border-slate-200 rounded-xl p-6 lg:p-8">
+                  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 leading-tight">{sec.heading}</h2>
+                  <p className="text-gray-700 leading-relaxed mb-5">
+                    <LinkedText text={sec.content} />
+                  </p>
+                  {sec.table && (
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm">
+                        <thead className="bg-slate-50 border-b border-slate-200">
+                          <tr>
+                            {sec.table.headers.map((h, i) => (
+                              <th key={i} className="text-left p-3 font-semibold text-gray-900">{h}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-slate-200">
+                          {sec.table.rows.map((row, i) => (
+                            <tr key={i} className="hover:bg-slate-50">
+                              {row.map((cell, j) => (
+                                <td key={j} className={`p-3 ${j === 0 ? 'font-medium text-gray-900' : 'text-gray-700'}`}>{cell}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  )}
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* DEEP-GUIDE dla /specjalne — łańcuch chłodniczy, hierarchia zabezpieczeń,
+          atesty medyczne i typowe błędy. Każda karta = własny H2. */}
+      {subcategory === 'specjalne' && (
+        <section className="bg-slate-50 border-y border-slate-200">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <div className="space-y-10">
+              {SPECJALNE_DEEP_GUIDE.map((sec, idx) => (
+                <article key={idx} className="bg-white border border-slate-200 rounded-xl p-6 lg:p-8">
+                  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 leading-tight">{sec.heading}</h2>
+                  <p className="text-gray-700 leading-relaxed mb-5">
+                    <LinkedText text={sec.content} />
+                  </p>
+                  {sec.table && (
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm">
+                        <thead className="bg-slate-50 border-b border-slate-200">
+                          <tr>
+                            {sec.table.headers.map((h, i) => (
+                              <th key={i} className="text-left p-3 font-semibold text-gray-900">{h}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-slate-200">
+                          {sec.table.rows.map((row, i) => (
+                            <tr key={i} className="hover:bg-slate-50">
+                              {row.map((cell, j) => (
+                                <td key={j} className={`p-3 ${j === 0 ? 'font-medium text-gray-900' : 'text-gray-700'}`}>{cell}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  )}
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* FAQ — 10+ pytań specyficznych dla podkategorii (AEO/GEO: LLM-y skanują FAQPage) */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
-          Najczęściej zadawane pytania — etykiety {cfg.label.toLowerCase()}
+          Najczęściej zadawane pytania — etykiety {cfg.label.toLowerCase()} Zebra
         </h2>
         <p className="text-gray-600 mb-6 max-w-2xl">
           Konkretne odpowiedzi na pytania, które klienci najczęściej zadają o etykiety {cfg.label.toLowerCase()}. Jeśli czegoś brakuje, napisz lub zadzwoń — doradzimy.
@@ -508,6 +1118,7 @@ export default async function TransferSubcategoryPage({ params }: PageProps) {
           ))}
         </div>
       </section>
+
     </main>
   )
 }

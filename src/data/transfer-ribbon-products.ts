@@ -321,7 +321,7 @@ const rawRibbonProducts: RawProduct[] = [
       { partNumber: '03400BK08345', name: '83×450 mm/m, rdzeń 25 mm', priceFrom: 694.66, availability: 'on-order', attributes: { 'Szerokość': '83 mm', 'Długość': '450 m', 'Rdzeń': '25 mm' } },
       { partNumber: '03400BK08945', name: '89×450 mm/m, rdzeń 25 mm', priceFrom: 744.33, availability: 'on-order', attributes: { 'Szerokość': '89 mm', 'Długość': '450 m', 'Rdzeń': '25 mm' } },
       { partNumber: '03400BK10245', name: '102×450 mm/m, rdzeń 25 mm', priceFrom: 852.69, availability: 'on-order', attributes: { 'Szerokość': '102 mm', 'Długość': '450 m', 'Rdzeń': '25 mm' } },
-      { partNumber: '03400BK11005', name: '110×50 mm/m, rdzeń 25 mm', availability: 'on-order', attributes: { 'Szerokość': '110 mm', 'Długość': '50 m', 'Rdzeń': '25 mm' } },
+      { partNumber: '03400BK11005', name: '110×50 mm/m, rdzeń 25 mm', priceFrom: 145.0, availability: 'on-order', attributes: { 'Szerokość': '110 mm', 'Długość': '50 m', 'Rdzeń': '25 mm' } },
       { partNumber: '03400BK11045', name: '110×450 mm/m, rdzeń 25 mm', priceFrom: 920.42, availability: 'on-order', attributes: { 'Szerokość': '110 mm', 'Długość': '450 m', 'Rdzeń': '25 mm' } },
       { partNumber: '03400BK13145', name: '131×450 mm/m, rdzeń 25 mm', priceFrom: 1096.18, availability: 'on-order', attributes: { 'Szerokość': '131 mm', 'Długość': '450 m', 'Rdzeń': '25 mm' } },
       { partNumber: '03400BK15645', name: '156×450 mm/m, rdzeń 25 mm', priceFrom: 1305.8, availability: 'on-order', attributes: { 'Szerokość': '156 mm', 'Długość': '450 m', 'Rdzeń': '25 mm' } },

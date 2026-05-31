@@ -156,7 +156,7 @@ function RibbonVariantCard({
   // (statyczne `variant.availability` i `priceFrom` w danych bywają nieaktualne).
 
   return (
-    <LiveRibbonProvider partNumber={variant.partNumber}>
+    <LiveRibbonProvider partNumber={variant.partNumber} fallbackPrice={variant.priceFrom}>
     <Link
       href={href}
       className={`group bg-white rounded-2xl overflow-hidden transition-all flex flex-col ${

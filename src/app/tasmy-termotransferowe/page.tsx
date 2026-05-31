@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { getSubcategoryBySlug } from '@/data/products'
 import { transferRibbonSeries, type RibbonSeries, type RibbonCategory } from '@/data/transfer-ribbon-series'
 import {
@@ -108,8 +109,6 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Page() {
   const sub = getSubcategoryBySlug(SLUG)!
 
-  // 2300 Wax — najtańsza taśma woskowa do USP badge
-  const wax2300 = seriesBySlug('2300-wax')
   const totalVariants = transferRibbonSeries
     .map(s => 0) // placeholder; faktyczna liczba w opisie statycznym (140) — wyciągamy z products
     .reduce((a, b) => a + b, 140)
@@ -154,8 +153,25 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      {/* HERO — gradient bez obrazu (nie mamy hero png dla taśm) */}
+      {/* HERO z obrazem — kontener obrazu po prawej (3/5 mobile, 1/2 desktop). Gradient
+          od lewej pełen dark do 50% (ukrywa krawędź kontenera), potem fade do transparent. */}
       <section className="relative bg-slate-950 text-white overflow-hidden">
+        <div className="absolute right-0 top-0 bottom-0 w-3/4 lg:w-2/3 pointer-events-none">
+          <Image
+            src="/images/tasmy-hero.png"
+            alt=""
+            fill
+            priority
+            sizes="(max-width: 1024px) 75vw, 66vw"
+            className="object-cover opacity-80"
+            style={{ objectPosition: 'right center' }}
+            aria-hidden="true"
+          />
+        </div>
+        <span
+          aria-hidden="true"
+          className="absolute inset-0 pointer-events-none bg-gradient-to-r from-slate-950 via-slate-950 to-transparent"
+        />
         <div
           className="absolute inset-0 opacity-40"
           style={{
@@ -192,11 +208,6 @@ export default function Page() {
             <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur rounded-full px-3 py-1.5 border border-white/20">
               <CheckIcon size={14} className="text-emerald-400" /> Doradztwo techniczne
             </span>
-            {wax2300 && (
-              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur rounded-full px-3 py-1.5 border border-white/20">
-                <CheckIcon size={14} className="text-emerald-400" /> Bestseller 2300 Wax od {wax2300.priceFrom.toLocaleString('pl-PL', { maximumFractionDigits: 0 })} zł
-              </span>
-            )}
           </div>
 
           <a href="#modele" className="inline-flex items-center gap-1.5 mt-8 text-sm text-emerald-400 hover:text-emerald-300 transition-colors">
