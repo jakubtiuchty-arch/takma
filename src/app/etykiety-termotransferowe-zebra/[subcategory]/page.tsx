@@ -527,23 +527,27 @@ function SeriesCard({
       className={`group relative overflow-hidden bg-white border border-slate-200 rounded-xl hover:border-slate-300 hover:shadow-lg transition-all flex flex-col ${large ? 'p-7' : 'p-5'}`}
     >
       {/* Hero image (jeśli seria go ma) — jako tło z white overlay zapewniającym
-          czytelność tekstu. Skala lekka na hover. */}
+          czytelność tekstu. Skala lekka na hover.
+          Tryb `cardImageFull`: obraz wypełnia całą kartę bez nakładki, tekstów ani
+          gradientu — używane dla obrazów które mają już wpisany kompletny opis. */}
       {s.heroImage && (
         <>
           <Image
             src={s.heroImage}
-            alt=""
+            alt={s.cardImageFull ? `${s.title} — etykieta termotransferowa Zebra` : ''}
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
-            className="absolute inset-0 object-cover opacity-90 group-hover:scale-[1.03] transition-transform duration-500 ease-out"
+            className={`absolute inset-0 object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-out ${s.cardImageFull ? '' : 'opacity-90'}`}
             style={{ objectPosition: s.heroImagePosition ?? 'center 20%' }}
-            aria-hidden="true"
+            aria-hidden={s.cardImageFull ? undefined : 'true'}
           />
-          {/* Biały gradient od dołu — tekst nad obrazem zostaje czytelny */}
-          <span
-            aria-hidden="true"
-            className="absolute inset-0 pointer-events-none bg-gradient-to-t from-white via-white/85 to-white/40"
-          />
+          {/* Biały gradient — tylko gdy obraz pełni rolę tła pod tekstem */}
+          {!s.cardImageFull && (
+            <span
+              aria-hidden="true"
+              className="absolute inset-0 pointer-events-none bg-gradient-to-t from-white via-white/85 to-white/40"
+            />
+          )}
         </>
       )}
       {!s.heroImage && (
@@ -553,6 +557,12 @@ function SeriesCard({
           style={{ background: `radial-gradient(ellipse 65% 35% at bottom right, ${s.accent}28 0%, ${s.accent}0d 40%, transparent 80%)` }}
         />
       )}
+      {/* Tryb cardImageFull — tylko strzałka w prawym górnym rogu (badge/tytuł/tagline na obrazie) */}
+      {s.cardImageFull ? (
+        <div className="relative z-10 flex justify-end h-full min-h-[140px]">
+          <ArrowRightIcon size={large ? 18 : 16} className="text-slate-600 group-hover:text-slate-900 group-hover:translate-x-0.5 transition-all" />
+        </div>
+      ) : (
       <div className="relative z-10 flex flex-col h-full">
         <div className="flex items-center justify-between mb-3">
           <span className="inline-flex items-center text-[11px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded bg-slate-100 text-slate-700">
@@ -563,6 +573,7 @@ function SeriesCard({
         <h3 className={`font-bold text-gray-900 leading-tight mb-2 ${large ? 'text-2xl' : 'text-lg'}`}>{s.title}</h3>
         <p className={`text-gray-700 leading-snug flex-1 ${large ? 'text-base' : 'text-sm'}`}>{s.tagline}</p>
       </div>
+      )}
     </Link>
   )
 }

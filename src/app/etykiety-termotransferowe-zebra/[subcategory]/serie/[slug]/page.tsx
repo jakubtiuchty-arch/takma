@@ -113,11 +113,12 @@ export default async function TransferSeriesPage({ params }: PageProps) {
 
       {/* ── HERO ── */}
       <section className="relative bg-slate-950 text-white overflow-hidden">
-        {/* Hero image (jeśli seria go ma) — jako tło z dark gradient overlay zapewniającym czytelność białego tekstu */}
-        {series.heroImage && (
+        {/* Hero image (jeśli seria go ma) — jako tło z dark gradient overlay zapewniającym czytelność białego tekstu.
+            Pole `heroLandingImage` może przesłaniać `heroImage` jeśli landing potrzebuje innego ujęcia (np. bez wbudowanych tekstów). */}
+        {(series.heroLandingImage ?? series.heroImage) && (
           <>
             <Image
-              src={series.heroImage}
+              src={(series.heroLandingImage ?? series.heroImage)!}
               alt=""
               fill
               priority
