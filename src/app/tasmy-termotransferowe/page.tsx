@@ -45,6 +45,7 @@ function BannerCard({
   size?: 'normal' | 'large'
 }) {
   const isLarge = size === 'large'
+  const hasImage = Boolean(s.heroImage)
   return (
     <Link
       href={`/tasmy-termotransferowe/serie/${s.slug}`}
@@ -52,14 +53,30 @@ function BannerCard({
         isLarge ? 'p-7' : 'p-5'
       }`}
     >
-      {/* Subtelny radial gradient z prawego-dolnego rogu z accent koloru serii */}
-      <span
-        aria-hidden="true"
-        className="absolute inset-0 pointer-events-none transition-opacity duration-300 opacity-80 group-hover:opacity-100"
-        style={{
-          background: `radial-gradient(ellipse 65% 35% at bottom right, ${s.accent}55 0%, ${s.accent}1A 40%, transparent 80%)`,
-        }}
-      />
+      {hasImage ? (
+        // Tapeta — obraz wypełnia całą kartę (bg-cover bg-center). Półprzezroczysty biały
+        // overlay (75%) nad obrazem zapewnia czytelność tekstu pełnej szerokości karty.
+        <>
+          <span
+            aria-hidden="true"
+            className="absolute inset-0 pointer-events-none bg-no-repeat bg-cover transition-transform duration-300 group-hover:scale-[1.02]"
+            style={{ backgroundImage: `url('${s.heroImage}')`, backgroundPosition: s.heroImagePosition ?? '50% center' }}
+          />
+          <span
+            aria-hidden="true"
+            className="absolute inset-0 pointer-events-none bg-white/75"
+          />
+        </>
+      ) : (
+        // Bez obrazu — subtelny radial gradient z prawego-dolnego rogu z accent koloru serii
+        <span
+          aria-hidden="true"
+          className="absolute inset-0 pointer-events-none transition-opacity duration-300 opacity-80 group-hover:opacity-100"
+          style={{
+            background: `radial-gradient(ellipse 65% 35% at bottom right, ${s.accent}55 0%, ${s.accent}1A 40%, transparent 80%)`,
+          }}
+        />
+      )}
 
       <div className="relative z-10 flex flex-col h-full">
         {/* Chip + strzałka */}
@@ -227,16 +244,18 @@ export default function Page() {
           </p>
         </div>
 
-        {/* ── SEKCJA 1: Najczęściej wybierane (bestsellery, 3 duże karty) ── */}
+        {/* ── SEKCJA 1: Najczęściej wybierane (3 bestsellery) ── */}
         <div className="mb-10">
           <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
             Najczęściej wybierane
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {/* max-w-4xl (896 px) — 3 karty po ~290 px, identyczna szerokość jak karta 5555
+              w 4-kolumnowym gridzie pozostałych sekcji. */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl">
             {bestsellerSlugs.map(slug => {
               const s = seriesBySlug(slug)
               if (!s) return null
-              return <BannerCard key={s.slug} series={s} size="large" />
+              return <BannerCard key={s.slug} series={s} />
             })}
           </div>
         </div>

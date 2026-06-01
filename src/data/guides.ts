@@ -7153,7 +7153,7 @@ export const guides: Guide[] = [
 
 <h3>Farmacja i laboratoria — etykiety na ampułki, fiolki i probówki</h3>
 <p>Dyrektywa FMD (Falsified Medicines Directive) w UE i regulacja UDI (Unique Device Identification) wymagają serializacji produktów farmaceutycznych i wyrobów medycznych kodem GS1 DataMatrix. Na ampułce o średnicy 10 mm etykieta ma szerokość zaledwie 30 mm i wysokość 8-12 mm — musi pomieścić kod 2D, numer serii, datę ważności i numer GTIN.</p>
-<p>W laboratoriach etykiety na probówkach i krioprobówkach muszą wytrzymać zamrażanie do -196°C (azot ciekły) i autoklawowanie w 134°C. Materiał: <strong>Z-Supreme 4000T</strong> — poliester o ekstremalnej odporności termicznej. Druk wymaga 600 dpi, aby kod DataMatrix na etykiecie 12 x 6 mm był weryfikowalny wg normy ISO 15415 na poziomie co najmniej grade C.</p>
+<p>W laboratoriach etykiety na probówkach i krioprobówkach muszą wytrzymać zamrażanie do -196°C (azot ciekły) i autoklawowanie w 134°C. Materiał: <strong>8100T Cryocool</strong> — poliester kriogeniczny (-196°C do +100°C, BPA-free, odporność na promieniowanie gamma) lub <strong>Z-Ultimate 3000T White</strong> dla aplikacji w temperaturze otoczenia z reflow do 300°C. Druk wymaga 600 dpi, aby kod DataMatrix na etykiecie 12 x 6 mm był weryfikowalny wg normy ISO 15415 na poziomie co najmniej grade C.</p>
 
 <h3>Jubilerstwo — metki na biżuterię</h3>
 <p>Etykiety jubilerskie (zawieszki butterfly, owijki na pierścionki, metki na naszyjniki) muszą być estetyczne, trwałe i pomieścić dużo informacji na małej powierzchni: cenę, numer referencyjny, kod QR z certyfikatem autentyczności, próbę metalu i wagę kamieni. Typowe wymiary etykiety jubilerskiej: 56 x 13 mm (zawieszka) lub 25 x 12 mm (oklejka).</p>
@@ -7240,16 +7240,10 @@ export const guides: Guide[] = [
       <td>od 25 x 12 mm</td>
     </tr>
     <tr>
-      <td><strong>Z-Supreme 4000T White</strong></td>
-      <td>Laboratorium, farmacja, kriogenika</td>
-      <td>od -196°C do +300°C</td>
-      <td>od 12 x 6 mm</td>
-    </tr>
-    <tr>
-      <td><strong>Z-Supreme 4000T White ESD</strong></td>
-      <td>Elektronika (antystatyczna)</td>
-      <td>do 300°C</td>
-      <td>od 8 x 5 mm</td>
+      <td><strong>8100T Cryocool</strong></td>
+      <td>Laboratorium, farmacja, kriogenika (próbki, krioprobówki, fiolki)</td>
+      <td>od -196°C do +100°C, odporność na promieniowanie gamma</td>
+      <td>od 25 x 13 mm</td>
     </tr>
   </tbody>
 </table>
@@ -7476,7 +7470,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Jakie materiały (etykiety i taśmy) nadają się do druku mikroetykiet?',
-      answer: 'Do druku mikroetykiet 600 dpi stosuje się wyłącznie taśmy żywiczne (resin), np. Zebra 5095 Performance Resin. Materiał etykiet zależy od zastosowania: Z-Ultimate 3000T (PCB, elektronika — odporność do 300°C), Z-Ultimate 3000T Silver (biżuteria), Z-Supreme 4000T (farmacja, laboratoria — od -196°C do +300°C), Z-Supreme 4000T ESD (elektronika, antystatyczne). Taśmy woskowe nie zapewniają wystarczającej ostrości na mikroetykietach.'
+      answer: 'Do druku mikroetykiet 600 dpi stosuje się wyłącznie taśmy żywiczne (resin), np. Zebra 5095 Performance Resin. Materiał etykiet zależy od zastosowania: Z-Ultimate 3000T White (PCB, elektronika — odporność do 300°C, przechodzi lutowanie reflow), Z-Ultimate 3000T Silver (biżuteria, zegarki, optyka), 8100T Cryocool (farmacja, laboratoria, kriogenika — od -196°C do +100°C, odporność na promieniowanie gamma). Taśmy woskowe nie zapewniają wystarczającej ostrości na mikroetykietach.'
     },
     {
       question: 'Czy drukarka do mikroetykiet może pracować z automatycznym aplikatorem?',
@@ -7492,7 +7486,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Jakie etykiety na komponenty elektroniczne SMD polecacie?',
-      answer: 'Do oznaczania komponentów SMD na płytkach PCB rekomendujemy etykiety Z-Ultimate 3000T White (poliester, odporność do 300°C — przechodzi lutowanie reflow) w rozmiarze od 8 x 6 mm z taśmą żywiczną Zebra 5095. Dla zastosowań antystatycznych (ESD): Z-Supreme 4000T White ESD. Druk na <a href="/produkt/zebra-zt610">Zebra ZT610 Micro Label</a> w rozdzielczości 600 dpi gwarantuje czytelny kod DataMatrix 10 x 10 modułów na etykiecie 5 x 5 mm.'
+      answer: 'Do oznaczania komponentów SMD na płytkach PCB rekomendujemy etykiety Z-Ultimate 3000T White (poliester, odporność do 300°C — przechodzi lutowanie reflow) w rozmiarze od 8 x 6 mm z taśmą żywiczną Zebra 5095. Druk na <a href="/produkt/zebra-zt610">Zebra ZT610 Micro Label</a> w rozdzielczości 600 dpi gwarantuje czytelny kod DataMatrix 10 x 10 modułów na etykiecie 5 x 5 mm. Dla aplikacji wymagających dodatkowej odporności antystatycznej (ESD) skontaktuj się z TAKMA — dobierzemy materiał specjalistyczny pod konkretne wymagania linii SMT.'
     },
     {
       question: 'Czy drukarka 600 dpi drukuje wolniej niż 203 dpi?',
@@ -7577,7 +7571,7 @@ export const guides: Guide[] = [
       content: `
 <p><strong>Zebra ZQ521 z egzoszkieletem oferuje najwyższą odporność w tej klasie</strong> — upadek z 3 m na beton, klasa IP65 (pyło- i wodoszczelność) oraz certyfikat MIL-STD-810G potwierdzający odporność na wibracje, szok termiczny i wilgoć. Bez egzoszkieletu parametry są zbliżone do Brother: upadek z 2 m i IP54.</p>
 
-<p>Brother RJ-4230B wytrzymuje upadek z 2,1 m (według specyfikacji producenta) przy klasie szczelności IP54. To solidna ochrona na potrzeby pracy wewnątrz budynków — magazyn, sklep, punkt serwisowy. Według karty katalogowej Brother, drukarka przeszła testy upadku zgodne z MIL-STD-810G Method 516.6, ale Brother nie komunikuje tego certyfikatu tak wyraźnie jak Zebra.</p>
+<p>Brother RJ-4230B wytrzymuje upadek z 2,1 m (według specyfikacji producenta) przy klasie szczelności IP54. To solidna ochrona na potrzeby pracy wewnątrz budynków — magazyn, sklep, punkt serwisowy. Drukarka przeszła testy upadku zgodne z MIL-STD-810G Method 516.6, ale Brother nie komunikuje tego certyfikatu tak wyraźnie jak Zebra.</p>
 
 <p><strong>Wniosek praktyczny:</strong></p>
 <ul>
@@ -13155,7 +13149,7 @@ export const guides: Guide[] = [
     {
       id: 'cena-dostepnosc',
       heading: 'Cena i dostępność Skorpio X40 / X45 w Polsce',
-      content: `<p>Skorpio X40/X45 to nowość rynkowa <strong>z premierą światową w kwietniu 2026</strong> (oznaczenie wersji karty katalogowej Datalogic: DS-SKORPIOX40-X45-EN Rev A 20260421). Dostępność w Polsce (TAKMA, autoryzowany partner Datalogic): pierwsze sztuki spodziewane w <strong>Q3 2026</strong>, sprzedaż wolumenowa Q4 2026 / Q1 2027. Oficjalny polski cennik MSRP zostanie opublikowany po podpisaniu umowy dystrybucyjnej.</p>
+      content: `<p>Skorpio X40/X45 to nowość rynkowa <strong>z premierą światową w kwietniu 2026</strong>. Dostępność w Polsce (TAKMA, autoryzowany partner Datalogic): pierwsze sztuki spodziewane w <strong>Q3 2026</strong>, sprzedaż wolumenowa Q4 2026 / Q1 2027. Oficjalny polski cennik MSRP zostanie opublikowany po podpisaniu umowy dystrybucyjnej.</p>
 
 <p>Wstępne szacunki cenowe (na podstawie pozycjonowania Datalogic vs Skorpio X5 i analogii do serii Memor 30/35):</p>
 
@@ -13526,7 +13520,7 @@ export const guides: Guide[] = [
     {
       id: 'cena-dostepnosc',
       heading: 'Cena i dostępność Falcon X60 / X65 w Polsce',
-      content: `<p>Falcon X60/X65 to nowość rynkowa <strong>z premierą światową w kwietniu 2026 r.</strong> (oznaczenie wersji karty katalogowej Datalogic: DS-FALCONX60-X65-EN Rev A 20260421). Dostępność w Polsce (TAKMA jako autoryzowany partner Datalogic): pierwsze sztuki spodziewane w <strong>Q3 2026</strong>, sprzedaż wolumenowa Q4 2026 / Q1 2027. Oficjalny polski cennik MSRP zostanie opublikowany po podpisaniu umowy dystrybucyjnej.</p>
+      content: `<p>Falcon X60/X65 to nowość rynkowa <strong>z premierą światową w kwietniu 2026 r.</strong> Dostępność w Polsce (TAKMA jako autoryzowany partner Datalogic): pierwsze sztuki spodziewane w <strong>Q3 2026</strong>, sprzedaż wolumenowa Q4 2026 / Q1 2027. Oficjalny polski cennik MSRP zostanie opublikowany po podpisaniu umowy dystrybucyjnej.</p>
 
 <p>Wstępne szacunki cenowe (na podstawie pozycjonowania Falcon vs Skorpio X40/X45 i analogii do <a href="/produkt/zebra-mc9400">Zebra MC9400</a>):</p>
 

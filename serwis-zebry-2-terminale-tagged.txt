@@ -1,0 +1,38 @@
+serwis zebra tc20, service, terminale
+serwis zebra tc21, service, terminale
+naprawa terminala zebra tc21, service, terminale
+serwis zebra tc22, service, terminale
+naprawa terminala zebra tc22, service, terminale
+serwis zebra tc25, service, terminale
+serwis zebra tc26, service, terminale
+naprawa terminala zebra tc26, service, terminale
+serwis zebra tc27, service, terminale
+naprawa terminala zebra tc27, service, terminale
+serwis zebra tc52, service, terminale
+naprawa terminala zebra tc52, service, terminale
+serwis zebra tc53, service, terminale
+naprawa terminala zebra tc53, service, terminale
+serwis zebra tc55, service, terminale
+serwis zebra tc56, service, terminale
+serwis zebra tc57, service, terminale
+naprawa terminala zebra tc57, service, terminale
+serwis zebra tc58, service, terminale
+naprawa terminala zebra tc58, service, terminale
+serwis zebra mc3300, service, terminale
+naprawa kolektora zebra mc3300, service, terminale
+serwis zebra mc3400, service, terminale
+naprawa kolektora zebra mc3400, service, terminale
+usterka mc3400 zebra, service, terminale
+serwis zebra mc9300, service, terminale
+naprawa kolektora zebra mc9300, service, terminale
+serwis zebra mc9400, service, terminale
+naprawa kolektora zebra mc9400, service, terminale
+serwis zebra et40, service, terminale
+serwis zebra et50, service, terminale
+serwis zebra et51, service, terminale
+serwis zebra et55, service, terminale
+serwis zebra et60, service, terminale
+serwis zebra ec50, service, terminale
+serwis zebra ec55, service, terminale
+serwis zebra em45, service, terminale
+naprawa zebra em45, service, terminale

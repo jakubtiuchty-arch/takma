@@ -1,0 +1,54 @@
+# Keywords generyczne (kategorii) — opcjonalne, do dodania na końcu
+# Łącznie: 50 keywords
+# Filtrowane z already_tracked + new product names
+#
+terminale mobilne
+terminale mobilne zebra
+terminale mobilne honeywell
+terminale mobilne datalogic
+terminale mobilne m3
+terminale mobilne newland
+kolektor danych
+kolektor danych zebra
+kolektor danych android
+drukarki etykiet
+drukarki etykiet zebra
+drukarki etykiet honeywell
+drukarki etykiet brother
+drukarki etykiet tsc
+drukarki etykiet citizen
+biurkowe drukarki etykiet
+przemyslowe drukarki etykiet
+termiczne drukarki etykiet
+termotransferowe drukarki etykiet
+mobilne drukarki etykiet
+drukarka termiczna
+drukarka termotransferowa
+drukarka kodow kreskowych
+skanery kodow kreskowych
+skanery kodow kreskowych zebra
+skanery kodow kreskowych honeywell
+skanery kodow kreskowych newland
+skaner kodow kreskowych
+skaner kodow 2d
+czytnik kodow kreskowych
+czytnik kodow zebra
+tablety przemyslowe
+tablety zebra
+tablet rugged
+drukarka kart
+drukarka opasek
+drukarka kart plastikowych
+rfid uhf
+etykiety termotransferowe
+etykiety termiczne
+tasma barwiaca zebra
+ribbon zebra
+drukarka etykiet dla magazynu
+drukarka etykiet do logistyki
+drukarka etykiet do apteki
+drukarka etykiet dla e-commerce
+drukarka etykiet dla produkcji
+drukarka etykiet dla gastronomii
+terminal mobilny do magazynu
+kolektor danych do magazynu

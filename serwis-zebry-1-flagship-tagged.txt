@@ -1,0 +1,5 @@
+serwis zebra, service, flagship
+zebra serwis, service, flagship
+serwis pogwarancyjny zebra, service, flagship
+autoryzowany serwis zebra, service, flagship
+zebra wrocław, service, flagship

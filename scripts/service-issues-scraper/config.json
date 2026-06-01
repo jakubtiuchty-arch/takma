@@ -1,0 +1,108 @@
+{
+  "brands": {
+    "godex": {
+      "name": "Godex",
+      "models": ["G500", "G530", "EZ1100", "EZ1200", "EZ2250i", "EZ6200", "RT700", "RT730", "RT860i", "ZX1200i", "ZX1300i"],
+      "queries_pl": [
+        "Godex G500 problem",
+        "Godex G500 nie drukuje",
+        "Godex RT700 awaria",
+        "Godex EZ2250i nie drukuje",
+        "Godex EZ1100 błąd",
+        "Godex RT860i problem",
+        "Godex kalibracja błąd",
+        "Godex media out mimo etykiet",
+        "Godex głowica wymiana",
+        "Godex drukarka pionowe pasy"
+      ],
+      "queries_en": [
+        "Godex G500 problem",
+        "Godex G500 not printing",
+        "Godex RT700 error",
+        "Godex EZ2250i issue",
+        "Godex printer media out error",
+        "Godex printhead replacement"
+      ],
+      "reddit_subs": ["printers", "labels"]
+    },
+    "sato": {
+      "name": "SATO",
+      "models": ["CL4NX", "CL6NX", "CT4-LX", "CT4i", "WS4", "PW2NX"],
+      "queries_pl": [
+        "SATO CL4NX problem",
+        "SATO drukarka nie drukuje",
+        "SATO CT4-LX awaria",
+        "SATO głowica wymiana",
+        "SATO kalibracja czujnika"
+      ],
+      "queries_en": [
+        "SATO CL4NX issue",
+        "SATO printer not printing",
+        "SATO CT4-LX error",
+        "SATO printhead replacement"
+      ],
+      "reddit_subs": ["printers", "labels"]
+    },
+    "m3-mobile": {
+      "name": "M3 Mobile",
+      "models": ["UL20", "UL20W", "UL20X", "SM10", "SM15", "SM20", "SM25", "SL10", "SL10H", "SL20"],
+      "queries_pl": [
+        "M3 Mobile UL20 problem",
+        "M3 Mobile SM20 awaria",
+        "M3 Mobile terminal nie ładuje",
+        "M3 Mobile ekran wymiana",
+        "M3 Mobile bateria"
+      ],
+      "queries_en": [
+        "M3 Mobile UL20 issue",
+        "M3 Mobile SM20 problem",
+        "M3 Mobile terminal not charging",
+        "M3 Mobile screen replacement"
+      ],
+      "reddit_subs": ["sysadmin", "androidenterprise"]
+    },
+    "honeywell": {
+      "name": "Honeywell",
+      "models": ["PM45", "PM43", "PM45c", "PX45", "PX940", "PD45", "PD45s", "PC42", "PC43", "PM4i", "PX4i", "PX6i", "CT40", "CT45", "CT47", "CT60", "CT70", "EDA51", "EDA52", "EDA61K", "EDA71", "CK65", "CK75", "EDA10A", "RT10A", "Voyager 1200g", "Voyager 1250g", "Voyager 1452g", "Xenon 1900", "Xenon 1950", "Xenon 1952"],
+      "queries_pl": [
+        "Honeywell PM45 problem",
+        "Honeywell PM45 nie drukuje",
+        "Honeywell CT40 nie ładuje",
+        "Honeywell CT40 ekran",
+        "Honeywell EDA51 problem",
+        "Honeywell EDA51 bateria",
+        "Honeywell Voyager nie skanuje",
+        "Honeywell Xenon nie czyta",
+        "Honeywell CK65 awaria",
+        "Honeywell PD45 błąd",
+        "Intermec PM4i problem",
+        "Intermec PX6i awaria"
+      ],
+      "queries_en": [
+        "Honeywell PM45 not printing",
+        "Honeywell PM45 white lines",
+        "Honeywell PM43 printhead",
+        "Honeywell PX940 verifier failed",
+        "Honeywell PD45 media out",
+        "Honeywell CT40 charging issue",
+        "Honeywell CT40 screen replacement",
+        "Honeywell CT60 not booting",
+        "Honeywell EDA51 battery drain",
+        "Honeywell EDA52 wifi problem",
+        "Honeywell CK65 keyboard not working",
+        "Honeywell Voyager 1250g not scanning",
+        "Honeywell Xenon 1900 imager error",
+        "Honeywell EDA10A tablet broken screen",
+        "Intermec PM4i printhead replacement",
+        "Intermec PX6i error"
+      ],
+      "reddit_subs": ["printers", "sysadmin", "labels", "androidenterprise"]
+    }
+  },
+  "limits": {
+    "reddit_results_per_query": 25,
+    "elektroda_results_per_query": 20,
+    "min_text_length": 80,
+    "max_text_length": 4000
+  }
+}

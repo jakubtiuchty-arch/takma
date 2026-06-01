@@ -2609,7 +2609,7 @@ Interfejsy: USB HID (plug-and-play bez sterowników), USB COM, RS-232 (standard 
       },
       {
         question: 'Ile waży i ile miejsca zajmuje skaner prezentacyjny?',
-        answer: 'Kompaktowe modele: 200–450 g z podstawką, footprint 10–14 cm × 10–14 cm, wysokość 12–20 cm. Modele z wbudowaną wagą (scanner-scale): 30–40 cm × 40–50 cm. Sprawdź wymiary w karcie katalogowej przed zamówieniem.',
+        answer: 'Kompaktowe modele: 200–450 g z podstawką, footprint 10–14 cm × 10–14 cm, wysokość 12–20 cm. Modele z wbudowaną wagą (scanner-scale): 30–40 cm × 40–50 cm. Sprawdź wymiary w specyfikacji modelu przed zamówieniem.',
       },
       {
         question: 'Jakie sygnały zwrotne oferują skanery prezentacyjne?',

@@ -1,0 +1,491 @@
+# Disavow file for takma.com.pl
+# Generated: 2026-05-07 from Ahrefs refdomains analysis
+# 
+# Format: Google Search Console Disavow Tool
+# Submit at: https://search.google.com/search-console/disavow-links
+#
+# All entries below are domains identified as:
+# - Negative SEO attack (May 2022 wave)
+# - Spam directories / link farms
+# - Low-quality foreign domains with 0 traffic
+# - Ahrefs is_spam=true flag
+# - Norwegian/Swedish content farm anchors (porn/dating spam)
+#
+# Total domains disavowed: 224
+# Total spam backlinks neutralized: 89,276
+#
+# After submitting, allow 4-6 weeks for Google to reprocess.
+# Then expect: DR increase, organic keyword count increase, traffic recovery.
+
+# ==========================================
+# HIGH-IMPACT NEGATIVE SEO (>1000 links each)
+# ==========================================
+
+# revolpro.com: 4493 links, DR 12.0, Ahrefs is_spam=true
+domain:revolpro.com
+# apvea.org.pe: 4404 links, DR 2.5, Ahrefs is_spam=true
+domain:apvea.org.pe
+# pefras.co.ke: 4363 links, DR 1.3, low quality (DR 1.3, traffic 0, foreign=True)
+domain:pefras.co.ke
+# rinnapp.com: 4066 links, DR 23.0, Ahrefs is_spam=true
+domain:rinnapp.com
+# optikhazoptika.hu: 3916 links, DR 4.0, Ahrefs is_spam=true
+domain:optikhazoptika.hu
+# bodosjakk.no: 3625 links, DR 21.0, Ahrefs is_spam=true
+domain:bodosjakk.no
+# newmarts.pk: 3264 links, DR 1.7, low quality (DR 1.7, traffic 0, foreign=True)
+domain:newmarts.pk
+# ddeatzakaya.com: 2440 links, DR 9.0, Ahrefs is_spam=true
+domain:ddeatzakaya.com
+# dtmke.com: 2357 links, DR 0.5, low quality (DR 0.5, traffic 0, foreign=False)
+domain:dtmke.com
+# mellanchefsboost.se: 2054 links, DR 1.3, low quality (DR 1.3, traffic 0, foreign=False)
+domain:mellanchefsboost.se
+# verduremd.com: 2009 links, DR 9.0, Ahrefs is_spam=true
+domain:verduremd.com
+# bena-india.com: 1937 links, DR 2.5, Ahrefs is_spam=true
+domain:bena-india.com
+# wachiramumbilaw.com: 1921 links, DR 2.2, low quality (DR 2.2, traffic 0, foreign=False)
+domain:wachiramumbilaw.com
+# nestechindia.com: 1877 links, DR 0.6, Ahrefs is_spam=true
+domain:nestechindia.com
+# corvalautoservicios.es: 1632 links, DR 8.0, Ahrefs is_spam=true
+domain:corvalautoservicios.es
+# enterprisecaresupport.org.uk: 1598 links, DR 2.4, Ahrefs is_spam=true
+domain:enterprisecaresupport.org.uk
+# peterkarayaassociates.co.ke: 1459 links, DR 10.0, foreign + low metrics (DR 10.0, traffic 0)
+domain:peterkarayaassociates.co.ke
+# nceonline.com: 1442 links, DR 1.7, Ahrefs is_spam=true
+domain:nceonline.com
+# stpaulsguesthouse.biz: 1435 links, DR 1.5, low quality (DR 1.5, traffic 0, foreign=True)
+domain:stpaulsguesthouse.biz
+# eastwaysgroup.co.ke: 1429 links, DR 6.0, foreign + low metrics (DR 6.0, traffic 0)
+domain:eastwaysgroup.co.ke
+# realxpressionz.com: 1276 links, DR 1.2, low quality (DR 1.2, traffic 0, foreign=False)
+domain:realxpressionz.com
+# thejubamirror.com: 1193 links, DR 4.8, very low metrics (DR 4.8, traffic 6)
+domain:thejubamirror.com
+# chefrose.com.my: 1134 links, DR 8.0, Ahrefs is_spam=true
+domain:chefrose.com.my
+# studentmarg.com: 1096 links, DR 0.9, Ahrefs is_spam=true
+domain:studentmarg.com
+# smartguysmarketing.com: 1066 links, DR 6.0, very low metrics (DR 6.0, traffic 0)
+domain:smartguysmarketing.com
+# interpreterapprentice.com: 1062 links, DR 3.5, Ahrefs is_spam=true
+domain:interpreterapprentice.com
+# blackhillprivatefinance.com: 1038 links, DR 3.8, Ahrefs is_spam=true
+domain:blackhillprivatefinance.com
+
+# ==========================================
+# MEDIUM NEGATIVE SEO (100-1000 links each)
+# ==========================================
+
+# lichosyt.com.pl: 905 links, DR 1.2, Ahrefs is_spam=true
+domain:lichosyt.com.pl
+# majuelos.wine: 900 links, DR 1.8, Ahrefs is_spam=true
+domain:majuelos.wine
+# lovewillfindu.com: 889 links, DR 5.0, Ahrefs is_spam=true
+domain:lovewillfindu.com
+# medicosecompanhia.pt: 876 links, DR 3.6, low quality (DR 3.6, traffic 0, foreign=False)
+domain:medicosecompanhia.pt
+# ramingenieria.cl: 850 links, DR 0.3, Ahrefs is_spam=true
+domain:ramingenieria.cl
+# magnanigroup.com.br: 830 links, DR 1.7, foreign + low metrics (DR 1.7, traffic 9)
+domain:magnanigroup.com.br
+# alilawservices.com: 792 links, DR 1.1, Ahrefs is_spam=true
+domain:alilawservices.com
+# thabethetp.co.za: 788 links, DR 0.9, Ahrefs is_spam=true
+domain:thabethetp.co.za
+# stevenshousingllc.com: 783 links, DR 8.0, Ahrefs is_spam=true
+domain:stevenshousingllc.com
+# schnizer.it: 769 links, DR 1.8, Ahrefs is_spam=true
+domain:schnizer.it
+# cppn.com.br: 723 links, DR 28.0, foreign + low metrics (DR 28.0, traffic 0)
+domain:cppn.com.br
+# gotryus.com: 644 links, DR 5.0, very low metrics (DR 5.0, traffic 0)
+domain:gotryus.com
+# souldynamite.com: 606 links, DR 2.1, low quality (DR 2.1, traffic 0, foreign=False)
+domain:souldynamite.com
+# thefloorgallery.ie: 562 links, DR 0.2, Ahrefs is_spam=true
+domain:thefloorgallery.ie
+# tienequevenirasiestadicho.com: 548 links, DR 1.7, Ahrefs is_spam=true
+domain:tienequevenirasiestadicho.com
+# eugeniotorre.it: 534 links, DR 4.6, Ahrefs is_spam=true
+domain:eugeniotorre.it
+# drpawolka.de: 522 links, DR 10.0, foreign + low metrics (DR 10.0, traffic 1)
+domain:drpawolka.de
+# acatema.es: 510 links, DR 1.6, low quality (DR 1.6, traffic 0, foreign=True)
+domain:acatema.es
+# se-sol-agency.com: 510 links, DR 1.2, low quality (DR 1.2, traffic 0, foreign=False)
+domain:se-sol-agency.com
+# wamamall.com: 453 links, DR 1.4, Ahrefs is_spam=true
+domain:wamamall.com
+# harim.co.ke: 442 links, DR 16.0, foreign + low metrics (DR 16.0, traffic 0)
+domain:harim.co.ke
+# pioneercampervans.co.uk: 438 links, DR 1.5, low quality (DR 1.5, traffic 0, foreign=True)
+domain:pioneercampervans.co.uk
+# himsoftech.com: 433 links, DR 7.0, very low metrics (DR 7.0, traffic 0)
+domain:himsoftech.com
+# ahararhossain.com: 431 links, DR 1.8, low quality (DR 1.8, traffic 0, foreign=False)
+domain:ahararhossain.com
+# yakehvac.com: 425 links, DR 1.4, low quality (DR 1.4, traffic 0, foreign=False)
+domain:yakehvac.com
+# car-body-repairs-swansea.co.uk: 421 links, DR 0.6, low quality (DR 0.6, traffic 0, foreign=True)
+domain:car-body-repairs-swansea.co.uk
+# globus-xchange.com.mx: 411 links, DR 2.4, Ahrefs is_spam=true
+domain:globus-xchange.com.mx
+# aurelie-coachsportif.fr: 408 links, DR 8.0, Ahrefs is_spam=true
+domain:aurelie-coachsportif.fr
+# datanerv.com: 394 links, DR 2.4, Ahrefs is_spam=true
+domain:datanerv.com
+# elcito.dk: 394 links, DR 8.0, foreign + low metrics (DR 8.0, traffic 0)
+domain:elcito.dk
+# tanzaken.com: 389 links, DR 0.1, Ahrefs is_spam=true
+domain:tanzaken.com
+# pushkargold.com: 382 links, DR 28.0, Ahrefs is_spam=true
+domain:pushkargold.com
+# guangzhou.institute: 375 links, DR 24.0, Ahrefs is_spam=true
+domain:guangzhou.institute
+# smginc.jp: 372 links, DR 8.0, very low metrics (DR 8.0, traffic 0)
+domain:smginc.jp
+# friendshipbaptistcorning.org: 368 links, DR 2.9, low quality (DR 2.9, traffic 0, foreign=False)
+domain:friendshipbaptistcorning.org
+# zieltraders.com: 359 links, DR 4.1, low quality (DR 4.1, traffic 0, foreign=False)
+domain:zieltraders.com
+# virendravikramsuman.com: 359 links, DR 2.5, Ahrefs is_spam=true
+domain:virendravikramsuman.com
+# bekanjus.com: 357 links, DR 2.2, low quality (DR 2.2, traffic 0, foreign=False)
+domain:bekanjus.com
+# vivasvannaexports.com: 357 links, DR 3.1, low quality (DR 3.1, traffic 0, foreign=False)
+domain:vivasvannaexports.com
+# sonargajewellers.com: 356 links, DR 6.0, very low metrics (DR 6.0, traffic 1)
+domain:sonargajewellers.com
+# dhillonzcab.com: 356 links, DR 5.0, very low metrics (DR 5.0, traffic 0)
+domain:dhillonzcab.com
+# solutosa.com.ec: 355 links, DR 9.0, Ahrefs is_spam=true
+domain:solutosa.com.ec
+# shooddho.com: 352 links, DR 0.9, low quality (DR 0.9, traffic 0, foreign=False)
+domain:shooddho.com
+# girlscandreamtoo.com: 349 links, DR 4.0, Ahrefs is_spam=true
+domain:girlscandreamtoo.com
+# madhurarts.com: 349 links, DR 9.0, very low metrics (DR 9.0, traffic 0)
+domain:madhurarts.com
+# weaversbpo.com: 346 links, DR 20.0, Ahrefs is_spam=true
+domain:weaversbpo.com
+# kimoanhdatxanh.vn: 333 links, DR 0.9, low quality (DR 0.9, traffic 0, foreign=True)
+domain:kimoanhdatxanh.vn
+# imandarpk.com: 332 links, DR 2.7, Ahrefs is_spam=true
+domain:imandarpk.com
+# hairkronesantander.es: 331 links, DR 1.9, foreign + low metrics (DR 1.9, traffic 4)
+domain:hairkronesantander.es
+# heavencenter.ir: 327 links, DR 3.3, low quality (DR 3.3, traffic 0, foreign=True)
+domain:heavencenter.ir
+# homedaze.co.uk: 324 links, DR 6.0, foreign + low metrics (DR 6.0, traffic 0)
+domain:homedaze.co.uk
+# yazan-studio.com: 317 links, DR 2.1, low quality (DR 2.1, traffic 0, foreign=False)
+domain:yazan-studio.com
+# theopticalstreet.com: 315 links, DR 3.5, Ahrefs is_spam=true
+domain:theopticalstreet.com
+# ushadentalclinic.co.in: 313 links, DR 2.8, low quality (DR 2.8, traffic 0, foreign=True)
+domain:ushadentalclinic.co.in
+# starshairstudio.ro: 310 links, DR 1.4, very low metrics (DR 1.4, traffic 9)
+domain:starshairstudio.ro
+# sycafe.net: 308 links, DR 1.7, low quality (DR 1.7, traffic 0, foreign=False)
+domain:sycafe.net
+# jirathaimassage.co.uk: 306 links, DR 6.0, Ahrefs is_spam=true
+domain:jirathaimassage.co.uk
+# codexsoftwaretesting.com: 306 links, DR 0.6, low quality (DR 0.6, traffic 0, foreign=False)
+domain:codexsoftwaretesting.com
+# gpcorporacion.com: 305 links, DR 5.0, very low metrics (DR 5.0, traffic 0)
+domain:gpcorporacion.com
+# indiandataprovider.com: 303 links, DR 6.0, very low metrics (DR 6.0, traffic 0)
+domain:indiandataprovider.com
+# danicaconcepts.co.ke: 300 links, DR 18.0, foreign + low metrics (DR 18.0, traffic 0)
+domain:danicaconcepts.co.ke
+# mcm.ch: 300 links, DR 9.0, foreign + low metrics (DR 9.0, traffic 0)
+domain:mcm.ch
+# roka-translations.com: 118 links, DR 0.0, Ahrefs is_spam=true
+domain:roka-translations.com
+
+# ==========================================
+# SPAM LINK DIRECTORIES (rank*, link*, *directory*)
+# ==========================================
+
+# kingranks.com: DR 55.0, Ahrefs is_spam=true
+domain:kingranks.com
+# wayranks.com: DR 57.0, Ahrefs is_spam=true
+domain:wayranks.com
+# microlinksite.com: DR 48.0, Ahrefs is_spam=true
+domain:microlinksite.com
+# buybacklinks.agency: DR 79.0, Ahrefs is_spam=true
+domain:buybacklinks.agency
+# linkpitcherdirectory.com: DR 58.0, Ahrefs is_spam=true
+domain:linkpitcherdirectory.com
+# linkpointdirectory.com: DR 57.0, Ahrefs is_spam=true
+domain:linkpointdirectory.com
+# socialzonedirectory.com: DR 56.0, Ahrefs is_spam=true
+domain:socialzonedirectory.com
+# smartwaydirectory.com: DR 56.0, Ahrefs is_spam=true
+domain:smartwaydirectory.com
+# superbhubdirectory.com: DR 56.0, Ahrefs is_spam=true
+domain:superbhubdirectory.com
+# webguestpostsdirectory.com: DR 56.0, Ahrefs is_spam=true
+domain:webguestpostsdirectory.com
+# worldzonedirectory.com: DR 55.0, Ahrefs is_spam=true
+domain:worldzonedirectory.com
+# postsdirectory.com: DR 55.0, Ahrefs is_spam=true
+domain:postsdirectory.com
+# rankfastdirectory.com: DR 55.0, Ahrefs is_spam=true
+domain:rankfastdirectory.com
+# topworlddirectory.com: DR 55.0, Ahrefs is_spam=true
+domain:topworlddirectory.com
+# topviraldirectory.com: DR 55.0, Ahrefs is_spam=true
+domain:topviraldirectory.com
+# websiteworlddirectory.com: DR 55.0, Ahrefs is_spam=true
+domain:websiteworlddirectory.com
+# worldwebsitesdirectory.com: DR 55.0, Ahrefs is_spam=true
+domain:worldwebsitesdirectory.com
+# besttopdirectory.com: DR 55.0, Ahrefs is_spam=true
+domain:besttopdirectory.com
+# rankingwebdirectory.com: DR 55.0, Ahrefs is_spam=true
+domain:rankingwebdirectory.com
+# mostrankingdirectory.com: DR 55.0, Ahrefs is_spam=true
+domain:mostrankingdirectory.com
+# mediapostdirectory.com: DR 55.0, Ahrefs is_spam=true
+domain:mediapostdirectory.com
+# socialnewsdirectory.com: DR 55.0, Ahrefs is_spam=true
+domain:socialnewsdirectory.com
+# topdomaindirectory.com: DR 55.0, Ahrefs is_spam=true
+domain:topdomaindirectory.com
+# raretopsitesdirectory.com: DR 54.0, Ahrefs is_spam=true
+domain:raretopsitesdirectory.com
+# busniessdirectory.com: DR 52.0, Ahrefs is_spam=true
+domain:busniessdirectory.com
+# 99sitedirectory.com: DR 52.0, Ahrefs is_spam=true
+domain:99sitedirectory.com
+# rankmakerdirectory.com: DR 51.0, Ahrefs is_spam=true
+domain:rankmakerdirectory.com
+# seohelperdirectory.com: DR 51.0, Ahrefs is_spam=true
+domain:seohelperdirectory.com
+# webhubdirectory.com: DR 51.0, Ahrefs is_spam=true
+domain:webhubdirectory.com
+# webjunctiondirectory.com: DR 51.0, Ahrefs is_spam=true
+domain:webjunctiondirectory.com
+# atomizelink.icu: DR 51.0, Ahrefs is_spam=true
+domain:atomizelink.icu
+# linkingdirectory.com: DR 50.0, Ahrefs is_spam=true
+domain:linkingdirectory.com
+# topwebdirectoy.com: DR 49.0, Ahrefs is_spam=true
+domain:topwebdirectoy.com
+# topdomadirectory.com: DR 49.0, Ahrefs is_spam=true
+domain:topdomadirectory.com
+# webrankdirectory.com: DR 48.0, Ahrefs is_spam=true
+domain:webrankdirectory.com
+# topmillionwebdirectory.com: DR 47.0, Ahrefs is_spam=true
+domain:topmillionwebdirectory.com
+# rankva.com: DR 45.0, Ahrefs is_spam=true
+domain:rankva.com
+# premiumseolinks.shop: DR 0.0, spam pattern: premiumseolinks
+domain:premiumseolinks.shop
+# postlinkdirectory.com: DR 58.0, Ahrefs is_spam=true
+domain:postlinkdirectory.com
+# worldranksite.com: DR 52.0, Ahrefs is_spam=true
+domain:worldranksite.com
+# exlinko.net: DR 50.0, Ahrefs is_spam=true
+domain:exlinko.net
+# listodirectory.com: DR 49.0, Ahrefs is_spam=true
+domain:listodirectory.com
+# seotopdirectory.com: DR 46.0, Ahrefs is_spam=true
+domain:seotopdirectory.com
+
+# ==========================================
+# LOW-QUALITY FOREIGN DOMAINS
+# ==========================================
+
+# nashvillepavers.com: 26 links, DR 0.0
+domain:nashvillepavers.com
+# overligger.dk: 24 links, DR 0.0
+domain:overligger.dk
+# hengchenglaw.com: 16 links, DR 0.0
+domain:hengchenglaw.com
+# christinaholderco.com: 16 links, DR 0.0
+domain:christinaholderco.com
+# qubaa-eg.com: 15 links, DR 0.0
+domain:qubaa-eg.com
+# eliss.com.my: 14 links, DR 0.0
+domain:eliss.com.my
+# prestimmoci.net: 10 links, DR 0.0
+domain:prestimmoci.net
+# associazionefamilia.it: 7 links, DR 0.0
+domain:associazionefamilia.it
+# appliedecology.com.au: 6 links, DR 0.0
+domain:appliedecology.com.au
+# abrigojesusesperancaevida.com.br: 4 links, DR 0.0
+domain:abrigojesusesperancaevida.com.br
+# ldnuujungpangkah.org: 3 links, DR 0.0
+domain:ldnuujungpangkah.org
+# multipackas.no: 2 links, DR 0.0
+domain:multipackas.no
+# afprologs.com: 2 links, DR 0.0
+domain:afprologs.com
+# quero.party: 1 links, DR 54.0
+domain:quero.party
+# ewin.biz: 1 links, DR 50.0
+domain:ewin.biz
+# directmedianews.in: 1 links, DR 0.0
+domain:directmedianews.in
+# tknews.in: 1 links, DR 0.0
+domain:tknews.in
+# gangajal.org: 1 links, DR 0.0
+domain:gangajal.org
+# rigosomosperusanignacio.com: 1 links, DR 0.0
+domain:rigosomosperusanignacio.com
+# jaroslav-klouda.cz: 1 links, DR 0.0
+domain:jaroslav-klouda.cz
+# vhcommunicatie.nl: 1 links, DR 0.0
+domain:vhcommunicatie.nl
+# sapronat.kz: 1 links, DR 0.0
+domain:sapronat.kz
+# marketeros.fr: 1 links, DR 0.0
+domain:marketeros.fr
+# metaphornetworks.com: 1 links, DR 0.0
+domain:metaphornetworks.com
+# studiomasmas.com: 1 links, DR 0.0
+domain:studiomasmas.com
+# mandestocks.in: 1 links, DR 0.0
+domain:mandestocks.in
+# muttikulangaraoil.in: 1 links, DR 0.0
+domain:muttikulangaraoil.in
+# digigodev.com: 1 links, DR 0.0
+domain:digigodev.com
+# lawrencericketts.com: 1 links, DR 0.0
+domain:lawrencericketts.com
+# matilashes.com.au: 1 links, DR 0.0
+domain:matilashes.com.au
+
+# ==========================================
+# OTHER SPAM (Ahrefs flagged + low metrics)
+# ==========================================
+
+# iarifbd.info: 47 links, DR 0.0
+domain:iarifbd.info
+# nawakaafrica.org: 31 links, DR 0.0
+domain:nawakaafrica.org
+# friidamedica.com: 30 links, DR 0.0
+domain:friidamedica.com
+# saankhyatech.com: 16 links, DR 0.0
+domain:saankhyatech.com
+# lonestarfencestain.com: 14 links, DR 0.0
+domain:lonestarfencestain.com
+# trade1024.com: 13 links, DR 0.0
+domain:trade1024.com
+# katalogseo.net.pl: 10 links, DR 63.0
+domain:katalogseo.net.pl
+# rado-odit.com: 10 links, DR 0.0
+domain:rado-odit.com
+# dktecnics.com: 10 links, DR 0.0
+domain:dktecnics.com
+# maryemme.com: 9 links, DR 0.0
+domain:maryemme.com
+# bunnacoffeehouse.africa: 7 links, DR 0.0
+domain:bunnacoffeehouse.africa
+# evaexp.com: 7 links, DR 0.0
+domain:evaexp.com
+# gemsnet.pl: 6 links, DR 49.0
+domain:gemsnet.pl
+# barlaas.com: 6 links, DR 0.0
+domain:barlaas.com
+# iqbcoin.net: 5 links, DR 0.0
+domain:iqbcoin.net
+# kostasvadoklis.com: 5 links, DR 0.0
+domain:kostasvadoklis.com
+# za.com: 4 links, DR 90.0
+domain:za.com
+# webscountry.com: 4 links, DR 60.0
+domain:webscountry.com
+# heavenarticle.com: 4 links, DR 59.0
+domain:heavenarticle.com
+# topmillion.net: 4 links, DR 46.0
+domain:topmillion.net
+# dodaj-strone.com.pl: 4 links, DR 45.0
+domain:dodaj-strone.com.pl
+# restructconsult.org: 4 links, DR 0.0
+domain:restructconsult.org
+# nettpresten.com: 4 links, DR 0.0
+domain:nettpresten.com
+# beijsuites.com: 4 links, DR 0.0
+domain:beijsuites.com
+# rolconghana.com: 3 links, DR 0.0
+domain:rolconghana.com
+# sriniinfotech.com: 3 links, DR 0.0
+domain:sriniinfotech.com
+# itxoft.com: 2 links, DR 85.0
+domain:itxoft.com
+# starcourts.com: 2 links, DR 70.0
+domain:starcourts.com
+# articlement.com: 2 links, DR 56.0
+domain:articlement.com
+# toptohigh.com: 2 links, DR 55.0
+domain:toptohigh.com
+# bye.fyi: 2 links, DR 54.0
+domain:bye.fyi
+# clicktoselldirectoy.com: 2 links, DR 52.0
+domain:clicktoselldirectoy.com
+# sureprofitscoach.com: 2 links, DR 50.0
+domain:sureprofitscoach.com
+# websitescrawl.com: 2 links, DR 45.0
+domain:websitescrawl.com
+# developmentmi.com: 2 links, DR 45.0
+domain:developmentmi.com
+# mqinternationalschooling.com: 2 links, DR 0.0
+domain:mqinternationalschooling.com
+# بتامکس.com: 2 links, DR 0.0
+domain:بتامکس.com
+# bujue.love: 2 links, DR 0.0
+domain:bujue.love
+# 217.97.137.100: 2 links, DR 0.0
+domain:217.97.137.100
+# sophrologie-dynamique.fr: 2 links, DR 0.0
+domain:sophrologie-dynamique.fr
+# kukaj.pl: 2 links, DR 0.0
+domain:kukaj.pl
+# simplygoodwines.be: 2 links, DR 0.0
+domain:simplygoodwines.be
+# expleos.com: 2 links, DR 0.0
+domain:expleos.com
+# factmags.com: 1 links, DR 73.0
+domain:factmags.com
+# sparltech.com: 1 links, DR 69.0
+domain:sparltech.com
+# printwhatyoulike.com: 1 links, DR 59.0
+domain:printwhatyoulike.com
+# urls-shortener.eu: 1 links, DR 52.0
+domain:urls-shortener.eu
+# shortenurls.eu: 1 links, DR 51.0
+domain:shortenurls.eu
+# mmwatches.co.uk: 1 links, DR 50.0
+domain:mmwatches.co.uk
+# seoflx.net: 1 links, DR 50.0
+domain:seoflx.net
+# naxgaming.org: 1 links, DR 0.0
+domain:naxgaming.org
+# starsnyou.com: 1 links, DR 0.0
+domain:starsnyou.com
+# autoloanpe.com: 1 links, DR 0.0
+domain:autoloanpe.com
+# asrafulalamin.com: 1 links, DR 0.0
+domain:asrafulalamin.com
+# teacherappreciationproject.com: 1 links, DR 0.0
+domain:teacherappreciationproject.com
+# whatsapin.com: 1 links, DR 0.0
+domain:whatsapin.com
+# mtechschool.xyz: 1 links, DR 0.0
+domain:mtechschool.xyz
+# settlewiseinternational.com: 1 links, DR 0.0
+domain:settlewiseinternational.com
+# александр-терентьев.рф: 1 links, DR 0.0
+domain:александр-терентьев.рф
+# diestro.org: 1 links, DR 0.0
+domain:diestro.org
+# seoxio.com: 1 links, DR 0.0
+domain:seoxio.com

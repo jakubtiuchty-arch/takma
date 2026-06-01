@@ -17,6 +17,7 @@ import {
 import { useCartStore, type CartItem } from '@/store/cartStore'
 import { products, type Product } from '@/data/products'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
+import LiveRibbonPrice, { LiveRibbonProvider } from '@/components/labels/LiveRibbonPrice'
 import { createCheckoutSession, createProformaOrder } from '@/actions/checkout'
 import { trackBeginCheckout, trackAddPaymentInfo, trackPurchase } from '@/lib/ga-events'
 
@@ -109,6 +110,26 @@ function findProductPrice(productId: string): number | undefined {
   return product?.priceFrom
 }
 
+/**
+ * Szuka rozmiaru wariantu po PartNumber. Iteruje wszystkie produkty (mała tablica
+ * na takma, ~10k wariantów łącznie — akceptowalne dla render-time lookup).
+ * Format wyjścia: "102×64 mm, rdzeń 25 mm" (z atrybutów Rozmiar + Rdzeń).
+ */
+function findVariantSize(partNumber: string | undefined): string | null {
+  if (!partNumber) return null
+  for (const p of products) {
+    if (!p.variants) continue
+    const v = p.variants.find((x) => x.partNumber === partNumber)
+    if (!v) continue
+    const rozmiar = v.attributes['Rozmiar']
+    const rdzen = v.attributes['Rdzeń (gilza)'] ?? v.attributes['Rdzeń']
+    if (rozmiar && rdzen) return `${rozmiar}, rdzeń ${rdzen}`
+    if (rozmiar) return rozmiar
+    return null
+  }
+  return null
+}
+
 // ── Komponent ───────────────────────────────────────────────────
 
 export default function CheckoutPage() {
@@ -121,6 +142,7 @@ export default function CheckoutPage() {
     getVatAmount,
     getTotalBrutto,
     getCrossSellProducts,
+    getRibbonSuggestions,
     addItem,
   } = useCartStore()
 
@@ -239,6 +261,15 @@ export default function CheckoutPage() {
     }
 
     return allSuggestions
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mounted, items])
+
+  // ── Sugestie taśm dla etykiet TT w koszyku (z konkretnym rozmiarem SKU) ─────
+  // Jeśli klient dodał etykietę termotransferową, podpowiadamy taśmę barwiącą
+  // dopasowaną do szerokości i rdzenia tej etykiety (algorytm `pickRibbonVariantForLabel`).
+  const ribbonSuggestions = useMemo(() => {
+    if (!mounted || items.length === 0) return []
+    return getRibbonSuggestions()
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mounted, items])
 
@@ -483,6 +514,19 @@ export default function CheckoutPage() {
     })
   }
 
+  /** Dodaje konkretny wariant taśmy do koszyka (z dopasowanego SKU rozmiarowego). */
+  const handleAddRibbonSuggestion = (s: ReturnType<typeof getRibbonSuggestions>[number]) => {
+    addItem({
+      id: `${s.product.id}__${s.variant.partNumber}`,
+      name: `${s.product.name} ${s.sizeLabel}`,
+      slug: s.productSlug,
+      image: s.product.images?.[0],
+      partNumber: s.variant.partNumber,
+      priceNetto: s.priceFrom,
+      categoryId: s.product.categoryId,
+    })
+  }
+
   // ── Skeleton loading ──────────────────────────────────────────
 
   if (!mounted) {
@@ -666,8 +710,70 @@ export default function CheckoutPage() {
               </ul>
             </div>
 
-            {/* Cross-sell */}
-            {crossSellProducts.length > 0 && (
+            {/* Polecane taśmy dla etykiet TT w koszyku — z konkretnym wariantem rozmiaru */}
+            {ribbonSuggestions.length > 0 && (
+              <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+                <div className="px-4 sm:px-6 py-4 border-b border-gray-200">
+                  <h2 className="font-semibold text-gray-900">
+                    Polecane taśmy
+                  </h2>
+                  <p className="text-sm text-gray-500 mt-0.5">
+                    Druk termotransferowy wymaga taśmy barwiącej. Dobraliśmy konkretne warianty rozmiarowe dopasowane do etykiet w koszyku.
+                  </p>
+                </div>
+
+                <div className="p-3 sm:p-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {ribbonSuggestions.map((s) => (
+                    <LiveRibbonProvider
+                      key={`${s.product.id}__${s.variant.partNumber}`}
+                      partNumber={s.variant.partNumber}
+                      fallbackPrice={s.priceFrom}
+                    >
+                      <div className="flex items-center gap-3 p-3 rounded-xl border border-gray-100 hover:border-primary-200 hover:bg-primary-50/30 transition-all">
+                        {s.product.images?.[0] && (
+                          <div className="relative w-16 h-16 rounded-lg flex-shrink-0 overflow-hidden bg-gray-50">
+                            <Image
+                              src={s.product.images[0]}
+                              alt={`${s.product.name} ${s.sizeLabel}`}
+                              fill
+                              className="object-contain p-1"
+                              sizes="64px"
+                            />
+                          </div>
+                        )}
+                        <div className="flex-1 min-w-0">
+                          <Link
+                            href={`/produkt/${s.productSlug}`}
+                            className="text-sm font-medium text-gray-900 hover:text-primary-600 transition-colors line-clamp-2"
+                          >
+                            {s.product.name.replace(/^Taśma termotransferowa\s+/i, '')}
+                          </Link>
+                          <p className="text-xs text-gray-600 mt-0.5">
+                            <span className="font-medium text-gray-900">{s.sizeLabel}</span>
+                            <span className="mx-1 text-gray-300">·</span>
+                            <span className="font-mono text-[11px] text-gray-500">{s.variant.partNumber}</span>
+                          </p>
+                          <div className="mt-1 flex items-baseline gap-1 text-sm font-semibold text-primary-600">
+                            <LiveRibbonPrice />
+                          </div>
+                        </div>
+                        <button
+                          onClick={() => handleAddRibbonSuggestion(s)}
+                          className="flex-shrink-0 w-9 h-9 rounded-lg bg-primary-600 hover:bg-primary-700 text-white flex items-center justify-center transition-colors"
+                          aria-label={`Dodaj ${s.product.name} ${s.sizeLabel} do koszyka`}
+                        >
+                          <PlusIcon size={18} />
+                        </button>
+                      </div>
+                    </LiveRibbonProvider>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Generic cross-sell (drukarki, terminale, akcesoria) — pokazujemy tylko gdy NIE
+                mamy etykiet w koszyku (etykieta + taśma jako podstawowa kombinacja TT). */}
+            {ribbonSuggestions.length === 0 && crossSellProducts.length > 0 && (
               <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
                 <div className="px-4 sm:px-6 py-4 border-b border-gray-200">
                   <h2 className="font-semibold text-gray-900">
@@ -704,7 +810,7 @@ export default function CheckoutPage() {
                         </Link>
                         {product.priceFrom && (
                           <p className="text-sm font-semibold text-primary-600 mt-0.5">
-                            {formatPrice(product.priceFrom)} zl netto
+                            {formatPrice(product.priceFrom)} zł netto
                           </p>
                         )}
                       </div>
@@ -995,8 +1101,17 @@ function CartItemRow({
             {item.productName}
           </Link>
           {item.partNumber && (
-            <p className="text-xs text-gray-500 mt-0.5 font-mono">
-              {item.partNumber}
+            <p className="text-xs text-gray-500 mt-0.5">
+              {(() => {
+                const size = findVariantSize(item.partNumber)
+                return (
+                  <>
+                    {size && <span className="text-gray-700">{size}</span>}
+                    {size && <span className="mx-1.5 text-gray-300">·</span>}
+                    <span className="font-mono">{item.partNumber}</span>
+                  </>
+                )
+              })()}
             </p>
           )}
 

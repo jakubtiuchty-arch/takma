@@ -930,7 +930,7 @@ Zebra ZD421t jest objęta 36-miesięczną gwarancją producenta na drukarkę ora
 
 Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).
 
 Szukasz tańszej wersji bez ribbona? Sprawdź [Zebra ZD421d](/produkt/zebra-zd421d) — ten sam model w wersji termicznej do etykiet kurierskich i cenówek.`,
     categoryId: 'drukarki-etykiet',
@@ -1260,7 +1260,7 @@ Platforma Link-OS umożliwia zdalne zarządzanie flotą drukarek z poziomu Print
 
 Szacunkowy TCO na 3 lata (500 etykiet/dzień, 250 dni/rok): drukarka od 1 472 zł + etykiety termiczne Z-Select 2000D 102×38 mm ok. 60 zł/rolka × ~38 rolek/rok × 3 = ~6 840 zł + 1 głowica (~350 zł) = ok. 8 660 zł. Dla porównania: [ZD230d](/produkt/zebra-zd230d) od 1 087 zł (bez MCS, bez Link-OS), model termotransferowy [ZD421t](/produkt/zebra-zd421t) dolicza koszt ribbona ok. 0,01–0,02 zł/etykietę.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, marzec 2026).
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).
 
 Szukasz wersji z drukiem trwałym (termotransferowym)? Sprawdź [Zebra ZD421t](/produkt/zebra-zd421t) — ten sam model z obsługą ribbona do etykiet odpornych na UV i chemikalia.`,
     categoryId: 'drukarki-etykiet',
@@ -1531,7 +1531,7 @@ ZD621t to drukarka stworzona do środowisk o wysokim nakładzie druku, w któryc
 
 Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -1950,7 +1950,7 @@ W porównaniu do termotransferowego bliźniaka ZD621t, model ZD621d eliminuje ko
 
 Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -2308,7 +2308,7 @@ Dla kogo jest Zebra ZD411d? To optymalny wybór dla firm potrzebujących kompakt
 
 Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -2560,7 +2560,7 @@ Dla kogo jest Zebra ZD411t? To optymalny wybór dla firm potrzebujących trwały
 
 Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -2832,7 +2832,7 @@ ZD220d to optymalny wybór, gdy drukujesz wyłącznie etykiety o ograniczonej tr
 
 Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -3046,7 +3046,7 @@ Podsumowanie: Dla kogo jest Zebra ZD230d? To optymalny wybór dla firm drukując
 
 Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -3314,7 +3314,7 @@ ZD220t to doskonały wybór dla firm szukających niezawodnej drukarki etykiet b
 
 Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -3580,7 +3580,7 @@ Podsumowanie: Dla kogo jest Zebra ZD230t? To optymalny wybór dla firm drukując
 
 Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -3896,7 +3896,7 @@ Interfejsy standardowe: USB 2.0, USB Host, Ethernet 10/100 i Bluetooth Low Energ
 
 Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-opasek',
     subcategoryIds: [],
     manufacturerId: 'zebra',
@@ -4089,7 +4089,7 @@ Honeywell PC45d to najnowsza generacja biurkowych drukarek etykiet Honeywell —
 
 Honeywell PC45d obsługuje Wi-Fi 6 (802.11ax) i Bluetooth 5.2 — nowsze standardy łączności bezprzewodowej niż konkurencyjne modele Zebra ZD421d (Wi-Fi 5, BT 4.1) i ZD621d (Wi-Fi 5, BT 5.0). Drukarka osiąga prędkość do 203 mm/s (8 ips) w rozdzielczości 203 dpi — o 33% szybciej niż Zebra ZD421d (152 mm/s). Platforma Honeywell Operational Intelligence umożliwia zdalne monitorowanie stanu drukarki, alertów o niskim poziomie mediów i diagnostykę w czasie rzeczywistym.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Honeywell PC45 (źródło: automation.honeywell.com, marzec 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'honeywell',
@@ -4266,7 +4266,7 @@ Honeywell PC45t to najnowsza generacja drukarek termotransferowych Honeywell —
 
 Honeywell PC45t obsługuje taśmy barwiące (ribbony) woskowe, woskowo-żywiczne i żywiczne o długości do 450 m — co zapewnia długie serie druku bez wymiany. Drukarka osiąga prędkość do 203 mm/s (8 ips) przy 203 dpi i 152 mm/s (6 ips) przy 300 dpi. Opcja rozdzielczości 300 dpi pozwala drukować drobne kody 2D (QR, DataMatrix) i tekst na małych etykietach z zachowaniem czytelności.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Honeywell PC45 (źródło: automation.honeywell.com, grudzień 2025).`,
+Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'honeywell',
@@ -4452,7 +4452,7 @@ Honeywell PC42E-T to następca popularnego modelu PC42t Plus — drukarka entry-
 
 Honeywell PC42E-T jest dostępna w dwóch kolorach obudowy (czarny i biały), co pozwala dopasować wygląd drukarki do stanowiska pracy — np. biała wersja do aptek, kas i recepcji. Opcjonalny moduł Wi-Fi 5 + Bluetooth 5.0 umożliwia bezprzewodowe drukowanie z urządzeń mobilnych. Platforma Honeywell Printer Edge zapewnia zdalny monitoring i zarządzanie flotą drukarek z poziomu przeglądarki.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Honeywell PC42E-T (źródło: automation.honeywell.com, grudzień 2025).`,
+Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'honeywell',
@@ -4645,7 +4645,7 @@ Kluczową przewagą Brother TD-4D jest emulacja ZPL II, CPCL i DPL — drukarka 
 
 Brother TD-4D współpracuje z platformami e-commerce i systemami logistycznymi: BaseLinker, Allegro, Amazon Seller Central, Shoper, PrestaShop, WooCommerce, IdoSell i Magento. Integracja odbywa się przez sterownik drukarki (Windows/Linux) lub emulację ZPL — systemy wysyłające etykiety w formacie ZPL do dowolnej drukarki Zebra będą działały z Brother TD-4D bez modyfikacji. Brother TD-4D to jedna z najtańszych drukarek etykiet 4 cale na rynku — tańsza niż Zebra ZD421d o 222 zł, szybsza o 34% (203 vs 152 mm/s). Tania drukarka etykiet do paczek, łącząca niską cenę zakupu z brakiem kosztów taśmy barwiącej i 3-letnią gwarancją obejmującą głowicę drukującą.
 
-Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukującą i wałek dociskowy (po rejestracji na brother.pl) — to najdłuższa gwarancja w klasie biurkowych drukarek etykiet, obejmująca elementy eksploatacyjne, które u konkurencji ([Zebra](/drukarki-etykiet), [Honeywell PC45d](/produkt/honeywell-pc45d)) są wyłączone z gwarancji lub objęte gwarancją maksymalnie 6–12 miesięcy. Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja zgodna z oficjalną kartą katalogową Brother (źródło: brother.pl, marzec 2026).`,
+Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukującą i wałek dociskowy (po rejestracji na brother.pl) — to najdłuższa gwarancja w klasie biurkowych drukarek etykiet, obejmująca elementy eksploatacyjne, które u konkurencji ([Zebra](/drukarki-etykiet), [Honeywell PC45d](/produkt/honeywell-pc45d)) są wyłączone z gwarancji lub objęte gwarancją maksymalnie 6–12 miesięcy. Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'brother',
@@ -4906,7 +4906,7 @@ Brother TD-2020A emuluje język ZPL II (P-touch Template 2.0), co umożliwia wsp
 
 Brother TD-2020A działa z systemami POS i kasowymi: Comarch POS, Subiekt 123, PC-Market, SmallBusiness oraz innymi systemami obsługującymi druk ZPL II przez USB. W handlu detalicznym drukarka do cenówek Brother TD-2020A drukuje metki cenowe z kodem EAN-13, nazwą produktu i datą ważności. W aptekach — etykiety na leki z dawkowaniem i kodem kreskowym. Drukarka etykiet do apteki Brother TD-2020A spełnia wymagania farmaceutyczne dzięki rozdzielczości 203 dpi i obsłudze kodów DataMatrix.
 
-Brother TD-2020A to najtańsza drukarka etykiet w ofercie TAKMA i jedna z najtańszych drukarek etykiet 2 cale na rynku — od 461 zł netto. Tania drukarka etykiet Brother TD-2020A kosztuje mniej niż [Zebra ZD220d](/produkt/zebra-zd220d) (od 639 zł) i [Honeywell PC42e-t](/produkt/honeywell-pc42e-t) (od ~900 zł). Producent udziela gwarancji po rejestracji na brother.pl. Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja zgodna z oficjalną kartą katalogową Brother (źródło: brother.pl, marzec 2026).`,
+Brother TD-2020A to najtańsza drukarka etykiet w ofercie TAKMA i jedna z najtańszych drukarek etykiet 2 cale na rynku — od 461 zł netto. Tania drukarka etykiet Brother TD-2020A kosztuje mniej niż [Zebra ZD220d](/produkt/zebra-zd220d) (od 639 zł) i [Honeywell PC42e-t](/produkt/honeywell-pc42e-t) (od ~900 zł). Producent udziela gwarancji po rejestracji na brother.pl. Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'brother',
@@ -5100,7 +5100,7 @@ Brother TD-4T emuluje języki ZPL II, EPL, DPL i CPCL — szablony etykiet z sys
 
 Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukującą i wałek dociskowy (po rejestracji na brother.pl) — to najdłuższa gwarancja w klasie biurkowych drukarek etykiet. Porównujesz z Zebrą? Zobacz [Zebra ZD421t](/produkt/zebra-zd421t) (od 1 834 zł) lub nasze szczegółowe [porównanie Brother vs Zebra](#faq) w FAQ poniżej. Wymiary: 204 × 280 × 178 mm, waga 2,5 kg.
 
-Brother TD-4T integruje się z systemami WMS (Comarch WMS, SAP WM), ERP (Comarch ERP, SAP, Subiekt GT) i platformami e-commerce (BaseLinker, Allegro, Amazon) dzięki emulacji ZPL II — istniejące szablony etykiet kurierskich działają bez zmian. Brother Printer Management Tool umożliwia zdalną konfigurację i monitoring floty drukarek TD-4T w sieci Ethernet lub Wi-Fi. Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja zgodna z oficjalną kartą katalogową Brother (źródło: brother.pl, marzec 2026).`,
+Brother TD-4T integruje się z systemami WMS (Comarch WMS, SAP WM), ERP (Comarch ERP, SAP, Subiekt GT) i platformami e-commerce (BaseLinker, Allegro, Amazon) dzięki emulacji ZPL II — istniejące szablony etykiet kurierskich działają bez zmian. Brother Printer Management Tool umożliwia zdalną konfigurację i monitoring floty drukarek TD-4T w sieci Ethernet lub Wi-Fi. Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'brother',
@@ -5407,7 +5407,7 @@ Kluczową przewagą Citizen CL-E300 jest technologia Cross-Emulation™ — druk
 
 Szacunkowy TCO na 3 lata (500 etykiet/dzień, 250 dni/rok): drukarka od 1 133 zł + etykiety termiczne 102×38 mm ok. 60 zł/rolka × ~38 rolek/rok × 3 = ~6 840 zł + głowica (~300 zł) = ok. 8 270 zł. Dla porównania: [Zebra ZD421d](/produkt/zebra-zd421d) od 1 472 zł + moduł Ethernet ~350 zł = ~1 820 zł start, [Brother TD-4D](/produkt/brother-td-4d) od 1 250 zł (Ethernet w modelu TD-4420DN). CL-E300 to najtańsza drukarka 4" z Ethernet w standardzie na polskim rynku.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E300 (źródło: citizen-systems.com, marzec 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'citizen',
@@ -5615,7 +5615,7 @@ Citizen CL-E303 ma Ethernet 10/100, USB 2.0 i RS-232 w standardzie — bez dodat
 
 Szacunkowy TCO na 3 lata (500 etykiet/dzień, 250 dni/rok): drukarka od 1 514 zł + etykiety termiczne 102×38 mm ok. 60 zł/rolka × ~38 rolek/rok × 3 = ~6 840 zł + głowica 300 dpi (~400 zł) = ok. 8 750 zł. Dla porównania: [Zebra ZD421d](/produkt/zebra-zd421d) 300 dpi od 1 779 zł + Ethernet ~350 zł = ~2 130 zł start. [Brother TD-4D](/produkt/brother-td-4d) 300 dpi (TD-4520DN) od 1 650 zł.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E303 (źródło: citizen-systems.com, marzec 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'citizen',
@@ -5808,7 +5808,7 @@ Kluczową przewagą CL-E321 jest kompletny zestaw interfejsów w standardzie: Et
 
 Szacunkowy TCO na 3 lata (500 etykiet/dzień, 250 dni/rok): drukarka od 1 410 zł + etykiety TT 102×38 mm ok. 50 zł/rolka × ~38 rolek/rok × 3 = ~5 700 zł + taśmy woskowe 110×300 m ok. 25 zł × ~19 szt./rok × 3 = ~1 425 zł + głowica (~350 zł) = ok. 8 885 zł. Dla porównania: [Zebra ZD421t](/produkt/zebra-zd421t) od 1 649 zł + moduł Ethernet ~350 zł = ~2 000 zł start.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-E321 (źródło: citizen-systems.com, marzec 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'citizen',
@@ -6018,7 +6018,7 @@ Kluczową cechą CL-S521II jest wbudowany zasilacz sieciowy (internal PSU) — b
 
 Szacunkowy TCO na 3 lata (500 etykiet/dzień, 250 dni/rok): drukarka od 1 578 zł + etykiety termiczne 102×38 mm ok. 60 zł/rolka × ~38 rolek/rok × 3 = ~6 840 zł + głowica (~350 zł) = ok. 8 770 zł. Dla porównania: [CL-E300](/produkt/citizen-cl-e300) od 1 133 zł (z Ethernet, ale mniejsze rolki 5"), [Zebra ZD421d](/produkt/zebra-zd421d) od 1 472 zł + moduł Ethernet ~350 zł.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-S521II (źródło: citizen-systems.com, marzec 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'citizen',
@@ -6240,7 +6240,7 @@ Kluczową cechą CL-S531II jest wbudowany zasilacz sieciowy (internal PSU) — b
 
 Szacunkowy TCO na 3 lata (500 etykiet/dzień, 250 dni/rok): drukarka od 1 972 zł + etykiety termiczne 102×38 mm ok. 60 zł/rolka × ~38 rolek/rok × 3 = ~6 840 zł + głowica 300 dpi (~400 zł) = ok. 9 210 zł. Dla porównania: [CL-E303](/produkt/citizen-cl-e303) od 1 514 zł (300 dpi, z Ethernet, ale mniejsze rolki 5"), [CL-S521II](/produkt/citizen-cl-s521ii) od 1 578 zł (203 dpi, rolki 8", 150 mm/s).
 
-Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-S531II (źródło: citizen-systems.com, marzec 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'citizen',
@@ -6462,7 +6462,7 @@ Kluczowe cechy: wbudowany zasilacz sieciowy (internal PSU, jeden kabel), metalow
 
 Szacunkowy TCO na 3 lata (500 etykiet/dzień, 250 dni/rok): drukarka od 1 851 zł + etykiety termotransferowe 102×38 mm ok. 25 zł/rolka × ~38 rolek/rok × 3 = ~2 850 zł + taśma woskowa 110 mm × 300 m ok. 18 zł × ~30/rok × 3 = ~1 620 zł + głowica (~350 zł) = ok. 6 670 zł. Dla porównania: [CL-E321](/produkt/citizen-cl-e321) od 1 410 zł (kompaktowa TT, mniejsze rolki 5"), [Zebra ZD421t](/produkt/zebra-zd421t) od 1 649 zł + moduł Ethernet ~350 zł.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-S621II (źródło: citizen-systems.com, marzec 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'citizen',
@@ -6686,7 +6686,7 @@ Kluczowe cechy: wbudowany zasilacz sieciowy (internal PSU), metalowy mechanizm H
 
 Szacunkowy TCO na 3 lata (500 etykiet/dzień, 250 dni/rok): drukarka od 2 249 zł + etykiety TT 102×38 mm ok. 25 zł/rolka × ~38 rolek/rok × 3 = ~2 850 zł + taśma woskowa 110 mm × 300 m ok. 18 zł × ~30/rok × 3 = ~1 620 zł + głowica 300 dpi (~400 zł) = ok. 7 120 zł. Dla porównania: [CL-S621II](/produkt/citizen-cl-s621ii) od 1 851 zł (203 dpi, ten sam chassis, 150 mm/s), [CL-S531II](/produkt/citizen-cl-s531ii) od 1 972 zł (300 dpi DT only, bez ribbon).
 
-Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-S631II (źródło: citizen-systems.com, marzec 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'citizen',
@@ -6900,7 +6900,7 @@ Kluczową przewagą Citizen CL-S400DT jest technologia Cross-Emulation — druka
 
 Szacunkowy TCO na 3 lata (500 etykiet/dzień, 250 dni/rok): drukarka od 1 547 zł + etykiety termiczne 102×38 mm ok. 60 zł/rolka × ~38 rolek/rok × 3 = ~6 840 zł + głowica (~300 zł) = ok. 8 690 zł. Dla porównania: [CL-E300](/produkt/citizen-cl-e300) od 1 133 zł (z Ethernet w standardzie, szybsza 200 mm/s), [Zebra ZD421d](/produkt/zebra-zd421d) od 1 472 zł (bez Ethernet, plastikowa obudowa), [Zebra ZD220d](/produkt/zebra-zd220d) od 635 zł (ekonomiczna, bez LCD, bez Cross-Emulation).
 
-Specyfikacja zgodna z oficjalną kartą katalogową Citizen CL-S400DT (źródło: citizen-systems.com, marzec 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'citizen',
@@ -7145,7 +7145,7 @@ Zebra ZT231 to uniwersalna drukarka etykiet klasy light-industrial, która spraw
 
 Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -7412,7 +7412,7 @@ Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etyk
 
 Porównanie ZT111 z modelem wyższej klasy: [ZT111 vs ZT231 — kiedy wybrać który?](/poradnik/kiedy-wybrac-zebra-zt111-a-kiedy-zt231-porownanie)
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -7667,7 +7667,7 @@ Potrzebujesz pełnego konfiguratora wariantów ZT411 z aktualnym cennikiem, kalk
 
 Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -7949,7 +7949,7 @@ Podsumowanie: Dla kogo jest Zebra ZT421? To optymalny wybór gdy potrzebujesz sz
 
 Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -8184,7 +8184,7 @@ Kluczowa przewaga Brother TJ-4020TN nad drukarkami biurkowymi to duża pojemnoś
 
 Brother TJ-4020TN emuluje języki ZPL II, EPL2 i DPL (FBPL-EZD) — szablony etykiet z systemów zaprojektowanych dla drukarek [Zebra ZT231](/produkt/zebra-zt231), [ZT111](/produkt/zebra-zt111) czy starszych Zebra S4M działają bez zmian. Standardowe interfejsy: USB 2.0, USB Host, RS-232C i Ethernet 10/100 Mbps. Opcjonalnie moduł Wi-Fi 802.11 a/b/g/n (PA-WI-002) dla instalacji bezprzewodowych. W zestawie BarTender Ultra Lite Edition i Brother Printer Management Tool do zdalnego zarządzania flotą drukarek. Szukasz odpowiedniej drukarki? Sprawdź nasz [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet) lub porównaj z [drukarkami przemysłowymi Zebra](/przemyslowe-drukarki-etykiet).
 
-Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.pl). Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja zgodna z oficjalną kartą katalogową Brother (źródło: brother.pl, marzec 2026).`,
+Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.pl). Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'brother',
@@ -8392,7 +8392,7 @@ Kluczowa przewaga Brother TJ-4021TN nad drukarkami biurkowymi to duża pojemnoś
 
 Brother TJ-4021TN emuluje języki ZPL II, EPL2 i DPL (FBPL-EZD) — szablony etykiet z systemów zaprojektowanych dla drukarek [Zebra ZT231](/produkt/zebra-zt231), [ZT111](/produkt/zebra-zt111) czy starszych Zebra S4M działają bez zmian. Standardowe interfejsy: USB 2.0, USB Host, RS-232C i Ethernet 10/100 Mbps. Opcjonalnie moduł Wi-Fi 802.11 a/b/g/n (PA-WI-002). W zestawie BarTender Ultra Lite Edition i Brother Printer Management Tool. Szukasz odpowiedniej drukarki? Sprawdź nasz [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet) lub porównaj z [drukarkami przemysłowymi Zebra](/przemyslowe-drukarki-etykiet).
 
-Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.pl). Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja zgodna z oficjalną kartą katalogową Brother (źródło: brother.pl, marzec 2026).`,
+Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.pl). Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'brother',
@@ -8597,7 +8597,7 @@ Kluczowa przewaga Brother TJ-4120TN nad drukarkami biurkowymi to duża pojemnoś
 
 Brother TJ-4120TN emuluje języki ZPL II, EPL2 i DPL (FBPL-EZD) — szablony etykiet z systemów zaprojektowanych dla drukarek [Zebra ZT231](/produkt/zebra-zt231), [ZT111](/produkt/zebra-zt111) czy starszych Zebra S4M działają bez zmian. Standardowe interfejsy: USB 2.0, USB Host, RS-232C i Ethernet 10/100 Mbps. Opcjonalnie moduł Wi-Fi 802.11 a/b/g/n (PA-WI-002). W zestawie BarTender Ultra Lite Edition i Brother Printer Management Tool. Szukasz odpowiedniej drukarki? Sprawdź nasz [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).
 
-Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.pl). Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja zgodna z oficjalną kartą katalogową Brother (źródło: brother.pl, marzec 2026).`,
+Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.pl). Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'brother',
@@ -8798,7 +8798,7 @@ Kluczowa przewaga Brother TJ-4121TN nad drukarkami biurkowymi to duża pojemnoś
 
 Brother TJ-4121TN emuluje języki ZPL II, EPL2 i DPL (FBPL-EZD) — szablony etykiet z systemów zaprojektowanych dla drukarek [Zebra ZT231](/produkt/zebra-zt231), [ZT111](/produkt/zebra-zt111) czy starszych Zebra S4M działają bez zmian. Standardowe interfejsy: USB 2.0, USB Host, RS-232C i Ethernet 10/100 Mbps. Opcjonalnie moduł Wi-Fi 802.11 a/b/g/n (PA-WI-002). W zestawie BarTender Ultra Lite Edition i Brother Printer Management Tool. Szukasz odpowiedniej drukarki? Sprawdź nasz [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).
 
-Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.pl). Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja zgodna z oficjalną kartą katalogową Brother (źródło: brother.pl, marzec 2026).`,
+Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.pl). Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'brother',
@@ -9016,7 +9016,7 @@ Ethernet 10/100 w standardzie umożliwia integrację z siecią firmową bez doda
 
 TCO na 3 lata: drukarka od 3 179 zł + głowice (~200–300 USD vs ~350–500 USD za Zebra ZT231) + [taśmy termotransferowe](/tasmy-termotransferowe) 360 m × 74 mm. Przy 5 000 etykiet/dzień CL-E720 oferuje niższy koszt eksploatacji niż [Zebra ZT231](/produkt/zebra-zt231) (od 3 551 zł) dzięki tańszym głowicom i certyfikatowi ENERGY STAR (pobór 2,6 W w standby). Tańsza alternatywa: [Zebra ZT111](/produkt/zebra-zt111) (od 2 179 zł) — bez ekranu LCD i Cross-Emulation. Więcej [drukarek półprzemysłowych](/przemyslowe-drukarki-etykiet) w ofercie TAKMA.
 
-Specyfikacja techniczna na podstawie oficjalnej [karty katalogowej CL-E720](/downloads/datasheet-cl-e720-pl.pdf).`,
+Pełna [specyfikacja techniczna CL-E720](/downloads/datasheet-cl-e720-pl.pdf).`,
     specifications: [
       { name: 'Metoda druku', value: 'Termotransferowa (TT) + Termiczna (DT)' },
       { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm)' },
@@ -9135,7 +9135,7 @@ Dla kogo? Dla firm drukujących wyłącznie etykiety termiczne (wysyłkowe, kuri
 
 Cross-Emulation automatycznie rozpoznaje strumień ZPL II lub DMX i przełącza emulację bez konfiguracji — migracja z Zebry lub Datamaxu jest bezproblemowa. Ethernet 10/100 w standardzie z wbudowanym LinkServer do zarządzania przez przeglądarkę. Szukasz [drukarki półprzemysłowej z TT+DT?](/produkt/citizen-cl-e720) — model CL-E720 obsługuje oba tryby druku.
 
-Specyfikacja techniczna na podstawie oficjalnej [karty katalogowej CL-E720DT](/downloads/datasheet-cl-e720dt-pl.pdf).`,
+Pełna [specyfikacja techniczna CL-E720DT](/downloads/datasheet-cl-e720dt-pl.pdf).`,
     specifications: [
       { name: 'Metoda druku', value: 'Termiczna bezpośrednia (Direct Thermal)' },
       { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm)' },
@@ -9251,7 +9251,7 @@ Cross-Emulation automatycznie rozpoznaje strumień ZPL II lub DMX i przełącza 
 
 **Niższy TCO niż Zebra w klasie 300 dpi.** Głowica 300 dpi do CL-E730 (PPM80016-00) kosztuje ok. 250–350 USD — wyraźnie taniej niż porównywalna głowica Zebra 300 dpi (400–550 USD). Przy wymianie głowicy co 50 km wydruku oszczędzasz 150–200 USD na każdej głowicy. Dodaj do tego niższy pobór energii (ENERGY STAR) i [tańsze taśmy termotransferowe](/materialy-eksploatacyjne) — CL-E730 oferuje jeden z najniższych kosztów posiadania w segmencie półprzemysłowych drukarek 300 dpi.
 
-Specyfikacja techniczna na podstawie oficjalnej [karty katalogowej CL-E730](/downloads/datasheet-cl-e730-pl.pdf).`,
+Pełna [specyfikacja techniczna CL-E730](/downloads/datasheet-cl-e730-pl.pdf).`,
     specifications: [
       { name: 'Metoda druku', value: 'Termotransferowa (TT) + Termiczna bezpośrednia (DT)' },
       { name: 'Rozdzielczość', value: '300 dpi (12 dots/mm)' },
@@ -9372,7 +9372,7 @@ Cross-Emulation automatycznie rozpoznaje strumień ZPL II, EPL2 lub DMX i przeł
 
 **Niższy TCO niż Zebra w tej klasie.** Głowica 203 dpi do CL-S700III (JN09802-00F) kosztuje szacunkowo 200–350 USD — wyraźnie taniej niż porównywalna głowica Zebra (350–500 USD). Taśmy 450 m oznaczają mniej wymian niż przy standardowych 300 m. Dodaj do tego ENERGY STAR i tańsze [taśmy termotransferowe](/materialy-eksploatacyjne) — CL-S700III oferuje jeden z najniższych kosztów posiadania w segmencie półprzemysłowym.
 
-Specyfikacja techniczna na podstawie oficjalnej [karty katalogowej CL-S700III](/downloads/datasheet-cl-s700iii-pl.pdf).`,
+Pełna [specyfikacja techniczna CL-S700III](/downloads/datasheet-cl-s700iii-pl.pdf).`,
     specifications: [
       { name: 'Metoda druku', value: 'Termotransferowa (TT) + Termiczna bezpośrednia (DT)' },
       { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm)' },
@@ -9502,7 +9502,7 @@ Dla kogo? Dla firm potrzebujących druku drobnych kodów 2D (DataMatrix, QR), mi
 
 **Niższy TCO niż Zebra w tej klasie.** Głowica 300 dpi do CL-S703III kosztuje szacunkowo 250–400 USD — taniej niż porównywalna głowica Zebra 300 dpi (400–600 USD). Taśmy 450 m oznaczają mniej wymian niż przy standardowych 300 m. Certyfikat ENERGY STAR i wbudowany zasilacz o niskim poborze mocy w standby. Dodaj do tego tańsze [taśmy termotransferowe](/materialy-eksploatacyjne) — CL-S703III oferuje jeden z najniższych kosztów posiadania wśród drukarek 300 dpi.
 
-Specyfikacja techniczna na podstawie oficjalnej [karty katalogowej CL-S703III](/downloads/datasheet-cl-s703iii-pl.pdf).`,
+Pełna [specyfikacja techniczna CL-S703III](/downloads/datasheet-cl-s703iii-pl.pdf).`,
     specifications: [
       { name: 'Metoda druku', value: 'Termotransferowa (TT) + Termiczna bezpośrednia (DT)' },
       { name: 'Rozdzielczość', value: '300 dpi (12 dots/mm)' },
@@ -9631,7 +9631,7 @@ Zebra ZT510 to idealna drukarka dla firm, które potrzebują przemysłowej wytrz
 
 Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -9891,7 +9891,7 @@ Nowa wersja do druku mikroetykiet — ZT610 Micro Label (seria ZT61A) — drukuj
 
 Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia. Serwis przemysłowych drukarek Zebra w Polsce: [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-drukarek-zebra).
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, marzec 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -10153,7 +10153,7 @@ Zebra ZT620 to idealna drukarka dla centrów dystrybucji, magazynów cross-docki
 
 Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -10390,7 +10390,7 @@ Honeywell PD45 to następca popularnych modeli PD43 i PD43c — nowa generacja d
 
 Honeywell PD45 wyposażono w metalową ramę o kompaktowych wymiarach, system szybkiej wymiany głowicy drukującej bez narzędzi i obsługę ribbonów do 450 m — co przekłada się na mniej przestojów i niższe koszty eksploatacji. Platforma Honeywell Operational Intelligence umożliwia zdalne monitorowanie stanu drukarki i proaktywną diagnostykę z poziomu panelu administracyjnego.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Honeywell PD45/PD45S (źródło: automation.honeywell.com, marzec 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'honeywell',
@@ -10587,7 +10587,7 @@ Honeywell PD45S to następca popularnych modeli PD43c i PD43s — premium wersja
 
 Honeywell PD45S obsługuje rozszerzone akcesoria niedostępne w bazowym PD45: odklejak z nawijakiem wewnętrznym, aplikator etykiet, port równoległy (Parallel IEEE 1284) i przemysłowe GPIO. Opatentowany system podwójnych czujników pozycjonowania zapewnia dokładność ±0,5 mm i minimalną wysokość etykiety 5 mm. Obsługa ribbonów do 450 m i kompaktowa metalowa obudowa gwarantują niezawodność w środowiskach produkcyjnych.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Honeywell PD45S (źródło: automation.honeywell.com, marzec 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'honeywell',
@@ -10801,7 +10801,7 @@ Honeywell PM45 oferuje cztery rozdzielczości druku (203/300/406/600 dpi) i prę
 
 Kluczowa przewaga Honeywell PM45 to łączność: Gigabit Ethernet (1000 Mbps), opcjonalny modem WWAN CAT4 LTE (pierwsza przemysłowa drukarka z modemem komórkowym), Bluetooth 5.0 i Wi-Fi 802.11ac. Interfejs przemysłowy (8 I/O cyfrowych + 4 przekaźniki analogowe) umożliwia natywną integrację z PLC i systemami automatyki. Platforma C# Smart Printing pozwala programować aplikacje standalone bezpośrednio na drukarce — bez serwera.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Honeywell PM45/PM45C (źródło: automation.honeywell.com, marzec 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'honeywell',
@@ -11077,7 +11077,7 @@ Kluczowa przewaga — PM65 to najnowsza generacja 6-calowych drukarek Honeywell 
 
 Zastosowania — etykiety paletowe i logistyczne SSCC/GS1-128 w centrach dystrybucyjnych, oznakowanie kartonów zbiorczych i kontenerów, etykiety GHS na beczki i pojemniki z substancjami chemicznymi, szerokie etykiety wysyłkowe w branży e-commerce i 3PL, etykiety identyfikacyjne na duże komponenty w przemyśle automotive i elektronicznym, etykiety RFID UHF na palety i zasoby.
 
-Emulacja wielu języków — PM65 obsługuje ZSim2 (emulacja ZPL-II), DPL, IPL, Fingerprint, Direct Protocol, C# Smart Printing, XML i PDF — migracja z Zebra, Datamax czy Intermec nie wymaga przepisywania szablonów etykiet. Pełna specyfikacja zgodna z oficjalną kartą katalogową Honeywell ([źródło](https://automation.honeywell.com/us/en/products/productivity-solutions/printers/industrial-printers/pm65-industrial-printer)).`,
+Emulacja wielu języków — PM65 obsługuje ZSim2 (emulacja ZPL-II), DPL, IPL, Fingerprint, Direct Protocol, C# Smart Printing, XML i PDF — migracja z Zebra, Datamax czy Intermec nie wymaga przepisywania szablonów etykiet. Pełna [specyfikacja techniczna na stronie producenta](https://automation.honeywell.com/us/en/products/productivity-solutions/printers/industrial-printers/pm65-industrial-printer).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'honeywell',
@@ -11337,7 +11337,7 @@ Zastosowania — etykiety produktowe i logistyczne na liniach pakowania, etykiet
 
 Inteligentny druk — PX45 może hostować standalone aplikacje w C# i Fingerprint, eliminując potrzebę zewnętrznego PC. Obsługuje emulacje ZSim2 (ZPL-II), DPL, IPL, Fingerprint, Direct Protocol, XML i PDF — migracja z drukarek Zebra, Datamax czy Intermec nie wymaga przepisywania szablonów etykiet. Platforma Honeywell Operational Intelligence umożliwia zdalne zarządzanie flotą drukarek z poziomu przeglądarki.
 
-Pełna specyfikacja techniczna zgodna z oficjalną kartą katalogową Honeywell ([źródło](https://automation.honeywell.com/us/en/products/productivity-solutions/printers/industrial-printers/px45-industrial-printer)).`,
+Pełna [specyfikacja techniczna na stronie producenta](https://automation.honeywell.com/us/en/products/productivity-solutions/printers/industrial-printers/px45-industrial-printer).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'honeywell',
@@ -11591,7 +11591,7 @@ Zastosowania — etykiety paletowe i logistyczne SSCC/GS1-128 w centrach dystryb
 
 Inteligentny druk — PX65 może hostować standalone aplikacje w C# i Fingerprint, eliminując potrzebę zewnętrznego PC. Obsługuje emulacje ZSim2 (ZPL-II), DPL, IPL, Fingerprint, Direct Protocol, XML i PDF — migracja z drukarek Zebra, Datamax czy Intermec nie wymaga przepisywania szablonów etykiet. Platforma Honeywell Operational Intelligence umożliwia zdalne zarządzanie flotą drukarek z poziomu przeglądarki. PX65 to bezpośredni następca modelu Intermec PX6ie z zachowaniem kompatybilności z akcesoriami i aplikatorem.
 
-Pełna specyfikacja techniczna zgodna z oficjalną kartą katalogową Honeywell ([źródło](https://automation.honeywell.com/us/en/products/productivity-solutions/printers/industrial-printers/px65-industrial-printer)).`,
+Pełna [specyfikacja techniczna na stronie producenta](https://automation.honeywell.com/us/en/products/productivity-solutions/printers/industrial-printers/px65-industrial-printer).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'honeywell',
@@ -12066,7 +12066,7 @@ Zebra ZQ511 zastępuje model ZQ510. Baterie PowerPrecision+ i ładowarki są wsp
 
 Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -12342,7 +12342,7 @@ Zebra ZQ521 zastępuje model ZQ520. Baterie PowerPrecision+ i ładowarki są wsp
 
 Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -12608,7 +12608,7 @@ Baterie PowerPrecision+ (3250 mAh i 6500 mAh) oraz ładowarki 1- i 3-gniazdowe s
 
 Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -12847,7 +12847,7 @@ Baterie PowerPrecision+ (3250 mAh i 6500 mAh) oraz ładowarki 1- i 3-gniazdowe s
 
 Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -13101,7 +13101,7 @@ Waga 1,113 kg z baterią to o 383 g więcej niż ZQ620 Plus (730 g), ale wciąż
 
 Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -13355,7 +13355,7 @@ Zebra ZQ310 Plus to następca modelu ZQ310 z serii ZQ300 — nowa generacja entr
 
 Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -13593,7 +13593,7 @@ Zebra ZQ320 Plus to upgrade modelu ZQ320: USB-C zamiast Micro-USB, ulepszona ele
 
 Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -13832,7 +13832,7 @@ Zebra ZQ220 Plus to idealna drukarka dla handlu detalicznego, gastronomii, kurie
 
 Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -14041,7 +14041,7 @@ Zebra ZQ210 to drukarka dla handlu detalicznego, gastronomii, targów i eventów
 
 Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -14252,7 +14252,7 @@ Honeywell RP2f drukuje z prędkością do 127 mm/s (5 ips) w rozdzielczości 203
 
 Wzmocniona obudowa IP54 wytrzymuje upadki z 2 m na beton i 1000 upadków obrotowych z 0,5 m. Bateria Li-Ion 2500 mAh z hot-swap utrzymuje łączność bezprzewodową podczas wymiany — zero przestojów. Zakres temperatury pracy od -20°C do +55°C pozwala na pracę w chłodniach i na rampach załadunkowych.
 
-Platforma Honeywell Printer Edge umożliwia zdalne zarządzanie flotą drukarek przez SOTI Connect i Operational Intelligence. Programowanie w C# (Smart Printing) pozwala uruchamiać aplikacje drukujące bezpośrednio na drukarce bez serwera pośredniczącego. Natywna obsługa CPCL, ZPL II, DPL, IPL i EZ-Print eliminuje koszty migracji z drukarek Zebra i Intermec. Specyfikacja na podstawie oficjalnej karty katalogowej Honeywell (źródło: honeywell.com, marzec 2026).`,
+Platforma Honeywell Printer Edge umożliwia zdalne zarządzanie flotą drukarek przez SOTI Connect i Operational Intelligence. Programowanie w C# (Smart Printing) pozwala uruchamiać aplikacje drukujące bezpośrednio na drukarce bez serwera pośredniczącego. Natywna obsługa CPCL, ZPL II, DPL, IPL i EZ-Print eliminuje koszty migracji z drukarek Zebra i Intermec. Pełna specyfikacja techniczna na stronie producenta (honeywell.com, marzec 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'honeywell',
@@ -14409,7 +14409,7 @@ Honeywell RP4f drukuje etykiety o szerokości do 104,1 mm z prędkością 127 mm
 
 Bateria Li-Ion 4900 mAh z technologią hot-swap utrzymuje łączność bezprzewodową podczas wymiany — zero przestojów. Wzmocniona obudowa IP54 wytrzymuje upadki z 2 m na beton i 1000 upadków obrotowych z 0,5 m. Zakres pracy od -20°C do +55°C pozwala na druk etykiet w chłodniach, na rampach załadunkowych i w terenie.
 
-Natywna obsługa ZPL II (ZSim2), CPCL, DPL i IPL eliminuje koszty migracji z drukarek Zebra, Intermec i Datamax. Platforma Honeywell Printer Edge z SOTI Connect i Operational Intelligence umożliwia zdalne zarządzanie flotą drukarek. Specyfikacja na podstawie oficjalnej karty katalogowej Honeywell (źródło: honeywell.com, marzec 2026).`,
+Natywna obsługa ZPL II (ZSim2), CPCL, DPL i IPL eliminuje koszty migracji z drukarek Zebra, Intermec i Datamax. Platforma Honeywell Printer Edge z SOTI Connect i Operational Intelligence umożliwia zdalne zarządzanie flotą drukarek. Pełna specyfikacja techniczna na stronie producenta (honeywell.com, marzec 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'honeywell',
@@ -14560,7 +14560,7 @@ Honeywell LNX3 drukuje etykiety i paragony z prędkością do 127 mm/s (5 ips) n
 
 Obudowa IP54 z odpornością na upadki z 1,8 m (z etui) i 1000 cykli obrotowych z 0,5 m. Wymienna bateria Li-Ion 2800 mAh z technologią hot-swap utrzymuje łączność podczas wymiany. Złącze USB-C do ładowania i komunikacji. Zakres temperatury pracy od -15°C do +55°C pozwala na pracę na rampach załadunkowych i w lekkich chłodniach.
 
-Natywna obsługa ZPL-II, CPCL, ESC/P, ESC/POS i XSim umożliwia migrację z drukarek Zebra, Intermec i systemów POS bez zmiany oprogramowania. Specyfikacja na podstawie oficjalnej karty katalogowej Honeywell (źródło: honeywell.com, marzec 2026).`,
+Natywna obsługa ZPL-II, CPCL, ESC/P, ESC/POS i XSim umożliwia migrację z drukarek Zebra, Intermec i systemów POS bez zmiany oprogramowania. Pełna specyfikacja techniczna na stronie producenta (honeywell.com, marzec 2026).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'honeywell',
@@ -14724,7 +14724,7 @@ Obudowa z certyfikatem IP54 wytrzymuje upadki z 2,1 m na beton (MIL-STD-810G) i 
 
 Brother RJ-4230B emuluje języki ZPL i CPCL — bezproblemowa migracja z drukarek Zebra bez zmiany oprogramowania. Tryb AirPrint i kompatybilność z systemami WMS/ERP/TMS. Wersja RJ-4250WB dodaje moduł Wi-Fi 802.11 a/b/g/n do druku przez sieć firmową. Obie wersje obsługują druk bez podkładu (linerless) z opcjonalną głowicą. Gwarancja Brother na RJ-4230B wynosi 3 lata po rejestracji na brother.pl.
 
-Specyfikacja zgodna z oficjalną kartą katalogową [Brother](https://www.brother.pl/drukarki/drukarki-etykiet/mobilne/rj4230b) (źródło: brother.pl, marzec 2026). Pełna oferta [drukarek etykiet Brother](/drukarki-etykiet-brother) w TAKMA. Poradnik [jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet) pomoże dobrać model.`,
+Pełna [specyfikacja techniczna RJ-4230B](https://www.brother.pl/drukarki/drukarki-etykiet/mobilne/rj4230b) na stronie producenta. Pełna oferta [drukarek etykiet Brother](/drukarki-etykiet-brother) w TAKMA. Poradnik [jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet) pomoże dobrać model.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'brother',
@@ -14891,7 +14891,7 @@ Kluczową przewagą Citizen CMP-20II jest potrójna emulacja: ESC/POS (standardo
 
 Szacunkowy TCO na 2 lata (200 paragonów/dzień, 250 dni/rok): drukarka od 1 116 zł + rolki papieru termicznego 58 mm ok. 3 zł/rolka × ~500 rolek/rok × 2 = ~3 000 zł + bateria zapasowa (~300 zł) = ok. 4 420 zł. Dla porównania: [Citizen CMP-25L](/produkt/citizen-cmp-25l) od 2 265 zł (szybsza 127 mm/s, LCD, Wi-Fi), [Zebra ZQ310 Plus](/produkt/zebra-zq310-plus) od 1 496 zł (IP54, Print DNA), [Honeywell RP2f](/produkt/honeywell-rp2f) od 2 694 zł (premium, hot-swap baterii).
 
-TAKMA jest partnerem Citizen w Polsce — oferujemy doradztwo, konfigurację i serwis. Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-20II (źródło: [karta katalogowa PDF](/downloads/datasheet-cmp-20ii-pl.pdf), marzec 2026).`,
+TAKMA jest partnerem Citizen w Polsce — oferujemy doradztwo, konfigurację i serwis. Pełna [specyfikacja techniczna CMP-20II](/downloads/datasheet-cmp-20ii-pl.pdf).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'citizen',
@@ -15140,7 +15140,7 @@ Kluczową przewagą CMP-25L jest wyświetlacz LCD 128x64 pikseli z podświetleni
 
 Szacunkowy TCO na 2 lata (200 paragonów/dzień, 250 dni/rok): drukarka od 2 265 zł + rolki 58 mm ~3 zł/rolka x ~500 rolek/rok x 2 = ~3 000 zł + bateria zapasowa (~250 zł) = ok. 5 515 zł. Dla porównania: [CMP-20II](/produkt/citizen-cmp-20ii) od 1 116 zł (niższa cena, ale wolniejsza 80 mm/s i mniejsza bateria), [Zebra ZQ310 Plus](/produkt/zebra-zq310-plus) od 1 496 zł (IP54, Print DNA), [Honeywell RP2f](/produkt/honeywell-rp2f) od 2 694 zł (premium, hot-swap baterii).
 
-TAKMA jest partnerem Citizen w Polsce — oferujemy doradztwo, konfigurację i serwis. Specyfikacja zgodna z oficjalną kartą katalogową Citizen CMP-25L (źródło: [karta katalogowa PDF](/downloads/datasheet-cmp-25l-pl.pdf), marzec 2026).`,
+TAKMA jest partnerem Citizen w Polsce — oferujemy doradztwo, konfigurację i serwis. Pełna [specyfikacja techniczna CMP-25L](/downloads/datasheet-cmp-25l-pl.pdf).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet'],
     manufacturerId: 'citizen',
@@ -18585,7 +18585,7 @@ IP52, upadki z 1,8 m na beton (wielokrotne), 2000 obrotów w tumblerze. Waga zal
 
 Koszt posiadania (TCO): skaner Zebra DS4678 z gwarancją 3 lata (dostępny OneCare do 5 lat). Technologia Connect+ (ładowanie bezstykowe) eliminuje koszty wymiany korodujących pinów w stacji — niższy TCO od skanerów ze stykami kontaktowymi. Serwis w Polsce: serwis-zebry.pl.
 
-Dokumentacja i karta katalogowa: zebra.com/ds4600.`,
+Pełna dokumentacja techniczna: zebra.com/ds4600.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-bezprzewodowe'],
     manufacturerId: 'zebra',
@@ -21535,7 +21535,7 @@ Interfejsy: USB HID (plug-and-play), RS-232 TTL (5V), Keyboard Wedge. Kompatybil
 
 Porównanie z rodziną Granit XP: 1990iSR (Standard Range, do 84 cm) → 1990iXR FlexRange (do 10 m) → 1990iXLR (eXtra Long Range, do 24 m). Wszystkie mają identyczną obudowę ultra-rugged (IP67, 3 m, 7 000 tumble). Dla 90% operacji magazynowych FlexRange (XR) to optymalny wybór — skanuje od kontaktu do 10 m, co pokrywa większość wysokości regałów.
 
-Pełna specyfikacja techniczna w karcie katalogowej Honeywell: wymiary, zasięgi skanowania, symbologie, certyfikaty.`,
+Pełna specyfikacja techniczna na stronie producenta: wymiary, zasięgi skanowania, symbologie, certyfikaty.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-przewodowe'],
     manufacturerId: 'honeywell',
@@ -25180,7 +25180,7 @@ Pakiet Zebra Mobility DNA Professional w cenie urządzenia: DataWedge (skanowani
 
 Typowe zastosowania kliniczne: **BCMA (Bar Code Medication Administration)** — weryfikacja "pięciu Ż" przed podaniem leku (właściwy pacjent, lek, dawka, droga, czas) przez skanowanie opaski pacjenta i etykiety leku. **EHR/EPR access** — dostęp do elektronicznej dokumentacji medycznej przy łóżku pacjenta. **Lab specimen tracking** — etykietowanie i śledzenie próbek krwi/moczu/tkanek. **UDI (Unique Device Identifier) scanning** — rejestracja sprzętu i materiałów eksploatacyjnych. **Patient ID** — szybka identyfikacja pacjenta przed zabiegiem. **In-home caregiving** — dokumentacja wizyt domowych pielęgniarek środowiskowych.
 
-Koszt posiadania (TCO): kompatybilność akcesoriów z całą serią HC2X/HC5X i częściowo z TC22/TC27 (baterie BTRY-TC2L-2X, stacje CRD-TC2L) — jeden ekosystem akcesoriów dla mieszanej floty szpitalnej (oddziały + administracja). Android z gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Rekomendowana usługa: Zebra OneCare Special Value (SV) z naprawami uszkodzeń mechanicznych. Drukarka opasek pacjentów do skanowania przez HC20: [Zebra ZD510-HC](/produkt/zebra-zd510-hc). Pełna karta katalogowa i lista akcesoriów na zebra.com oraz [serwis-zebry.pl](https://www.serwis-zebry.pl).`,
+Koszt posiadania (TCO): kompatybilność akcesoriów z całą serią HC2X/HC5X i częściowo z TC22/TC27 (baterie BTRY-TC2L-2X, stacje CRD-TC2L) — jeden ekosystem akcesoriów dla mieszanej floty szpitalnej (oddziały + administracja). Android z gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Rekomendowana usługa: Zebra OneCare Special Value (SV) z naprawami uszkodzeń mechanicznych. Drukarka opasek pacjentów do skanowania przez HC20: [Zebra ZD510-HC](/produkt/zebra-zd510-hc). Pełna dokumentacja techniczna i lista akcesoriów na zebra.com oraz [serwis-zebry.pl](https://www.serwis-zebry.pl).`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc20.html',
@@ -26979,7 +26979,7 @@ Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = min
     seoTitle: 'Zebra TC501 — kolektor danych z AI i RFID | od 3 730 zł',
     seoDescription: 'Zebra TC501 — kolektor danych z AI, RFID UHF, Wi-Fi 7, AMOLED 1500 nit. Następca TC53, Android 15→19. 15 konfiguracji od 3 730 zł netto | TAKMA.',
     shortDescription: 'Zebra TC501 — terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6" AMOLED 1500 nit, następca TC52/TC53',
-    description: `Dla kogo? Zebra TC501 to flagowy kolektor danych (terminal mobilny) nowej generacji, zaprojektowany jako następca TC52/[TC53](/produkt/zebra-tc53) dla firm, które potrzebują najnowszej technologii AI, RFID i Wi-Fi 7 w jednym urządzeniu — od dużych magazynów i centrów logistycznych, przez sieci handlowe, po szpitale i zakłady produkcyjne.\n\nWydajność i AI na pierwszej linii. Procesor Qualcomm Dragonwing Q-6690 (8 rdzeni, do 2,9 GHz) z dedykowanym silnikiem AI (NPU) zapewnia 300% więcej mocy obliczeniowej niż TC53. Przetwarzanie AI odbywa się lokalnie — rozpoznawanie produktów, weryfikacja etykiet, OCR bez chmury, zgodnie z RODO. Pamięć 8 GB/128 GB lub 12 GB/256 GB (UFS 3.1) z opcją rozszerzenia microSD do 2 TB.\n\nEkran AMOLED — pierwszy w klasie enterprise. Wyświetlacz 6" Full HD+ (2160×1080) z matrycą AMOLED i jasnością 1500 nitów — 2,5× jaśniejszy niż IPS w TC53 (600 nit). Doskonale czytelny w pełnym słońcu, z głęboką czernią zmniejszającą zmęczenie oczu na długich zmianach. Szkło Corning Gorilla Glass Victus, panel dotykowy reagujący w rękawicach i z mokrymi palcami.\n\nZintegrowany RFID UHF — bez dodatkowych modułów. TC501 to pierwszy terminal z serii TC5x z wbudowanym czytnikiem RFID UHF w KAŻDEJ konfiguracji. Odczyt ponad 200 tagów na sekundę z zasięgu do 2 metrów. Do długiego zasięgu (9+ m) można podłączyć sled RFD40/RFD90. W TC53 RFID wymagał osobnego modułu — teraz jest w standardzie.\n\nTrzy silniki skanowania do każdego zadania. SR500 (Standard Range) — skanowanie z bliska, kasa, lada, kompletacja. SR560 — ulepszony finder 2D, szybsze dekodowanie uszkodzonych kodów. AC670 (Advanced Color) — zasięg do 30 m, kolorowy imager, skanuje kody na najwyższych regałach bez drabiny. Kamera tylna 50 MP z opcją ultrawide 13 MP do dokumentacji fotograficznej.\n\nŁączność przyszłości. Wi-Fi 7 (802.11be) z 2×2 MU-MIMO i MLO — przepustowość 2× wyższa niż Wi-Fi 6E, stabilność w gęstych środowiskach z setkami urządzeń. Bluetooth 6.0 z większym zasięgiem. NFC do identyfikacji pracowników i tagów. Wersje WAN (TC501G) dodają 5G Release 17, dual eSIM, CBRS i GPS z potrójną bandą GNSS.\n\nWytrzymałość klasy enterprise. Obudowa IP68+IP65 — pyłoszczelna, wodoodporna (zanurzenie + strumień pod ciśnieniem). Upadki z 2,4 m na beton (2,7 m z rugged boot) wg MIL-STD-810H. 2–4× więcej tumbles niż TC53. Temperatura pracy od -20°C do +50°C. Bateria 5000 mAh (standard) lub 7240 mAh (rozszerzona), wymienna hot-swap — szybkie ładowanie 0→70% w 45 minut.\n\nAndroid 15 z najdłuższym wsparciem. Gwarancja aktualizacji do 4 kolejnych wersji systemu. LifeGuard for Android — comiesięczne łatki bezpieczeństwa OTA. Mobility DNA w cenie: StageNow, Device Tracker, Enterprise Home Screen. Kompatybilny z MDM: SOTI, Intune, VMware, Zebra Cloud.\n\nKoszt posiadania (TCO): Kolektor danych Zebra TC501 z Android 15 i gwarancją aktualizacji do Android 19 (4 generacje) = minimum 8 lat wsparcia LifeGuard™ — najdłuższy cykl życia w klasie. Uwaga: akcesoria TC53 (baterie, stacje) NIE są kompatybilne z TC501 — przy planowaniu migracji uwzględnij wymianę infrastruktury. Szczegółowa specyfikacja, karta katalogowa i instrukcja obsługi w języku polskim dostępne na stronie serwis-zebry.pl.`,
+    description: `Dla kogo? Zebra TC501 to flagowy kolektor danych (terminal mobilny) nowej generacji, zaprojektowany jako następca TC52/[TC53](/produkt/zebra-tc53) dla firm, które potrzebują najnowszej technologii AI, RFID i Wi-Fi 7 w jednym urządzeniu — od dużych magazynów i centrów logistycznych, przez sieci handlowe, po szpitale i zakłady produkcyjne.\n\nWydajność i AI na pierwszej linii. Procesor Qualcomm Dragonwing Q-6690 (8 rdzeni, do 2,9 GHz) z dedykowanym silnikiem AI (NPU) zapewnia 300% więcej mocy obliczeniowej niż TC53. Przetwarzanie AI odbywa się lokalnie — rozpoznawanie produktów, weryfikacja etykiet, OCR bez chmury, zgodnie z RODO. Pamięć 8 GB/128 GB lub 12 GB/256 GB (UFS 3.1) z opcją rozszerzenia microSD do 2 TB.\n\nEkran AMOLED — pierwszy w klasie enterprise. Wyświetlacz 6" Full HD+ (2160×1080) z matrycą AMOLED i jasnością 1500 nitów — 2,5× jaśniejszy niż IPS w TC53 (600 nit). Doskonale czytelny w pełnym słońcu, z głęboką czernią zmniejszającą zmęczenie oczu na długich zmianach. Szkło Corning Gorilla Glass Victus, panel dotykowy reagujący w rękawicach i z mokrymi palcami.\n\nZintegrowany RFID UHF — bez dodatkowych modułów. TC501 to pierwszy terminal z serii TC5x z wbudowanym czytnikiem RFID UHF w KAŻDEJ konfiguracji. Odczyt ponad 200 tagów na sekundę z zasięgu do 2 metrów. Do długiego zasięgu (9+ m) można podłączyć sled RFD40/RFD90. W TC53 RFID wymagał osobnego modułu — teraz jest w standardzie.\n\nTrzy silniki skanowania do każdego zadania. SR500 (Standard Range) — skanowanie z bliska, kasa, lada, kompletacja. SR560 — ulepszony finder 2D, szybsze dekodowanie uszkodzonych kodów. AC670 (Advanced Color) — zasięg do 30 m, kolorowy imager, skanuje kody na najwyższych regałach bez drabiny. Kamera tylna 50 MP z opcją ultrawide 13 MP do dokumentacji fotograficznej.\n\nŁączność przyszłości. Wi-Fi 7 (802.11be) z 2×2 MU-MIMO i MLO — przepustowość 2× wyższa niż Wi-Fi 6E, stabilność w gęstych środowiskach z setkami urządzeń. Bluetooth 6.0 z większym zasięgiem. NFC do identyfikacji pracowników i tagów. Wersje WAN (TC501G) dodają 5G Release 17, dual eSIM, CBRS i GPS z potrójną bandą GNSS.\n\nWytrzymałość klasy enterprise. Obudowa IP68+IP65 — pyłoszczelna, wodoodporna (zanurzenie + strumień pod ciśnieniem). Upadki z 2,4 m na beton (2,7 m z rugged boot) wg MIL-STD-810H. 2–4× więcej tumbles niż TC53. Temperatura pracy od -20°C do +50°C. Bateria 5000 mAh (standard) lub 7240 mAh (rozszerzona), wymienna hot-swap — szybkie ładowanie 0→70% w 45 minut.\n\nAndroid 15 z najdłuższym wsparciem. Gwarancja aktualizacji do 4 kolejnych wersji systemu. LifeGuard for Android — comiesięczne łatki bezpieczeństwa OTA. Mobility DNA w cenie: StageNow, Device Tracker, Enterprise Home Screen. Kompatybilny z MDM: SOTI, Intune, VMware, Zebra Cloud.\n\nKoszt posiadania (TCO): Kolektor danych Zebra TC501 z Android 15 i gwarancją aktualizacji do Android 19 (4 generacje) = minimum 8 lat wsparcia LifeGuard™ — najdłuższy cykl życia w klasie. Uwaga: akcesoria TC53 (baterie, stacje) NIE są kompatybilne z TC501 — przy planowaniu migracji uwzględnij wymianę infrastruktury. Szczegółowa specyfikacja techniczna i instrukcja obsługi w języku polskim dostępne na stronie serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -27336,7 +27336,7 @@ Android 15 z długim wsparciem. Aktualizacja do Android 19 (4 generacje). LifeGu
 
 Koszt posiadania (TCO): Android 15 z gwarancją aktualizacji do Android 19 (4 generacje) = minimum 8 lat wsparcia LifeGuard™ z comiesięcznymi łatkami OTA. Baterie hot-swap współdzielone z TC501 — jeden magazyn baterii obsługuje całą flotę. RFID UHF w każdej konfiguracji eliminuje osobny czytnik RFID (oszczędność ~2 000–5 000 zł/urządzenie). Zebra OneCare Essential od 1 238 zł netto/3 lata — naprawa priorytetowa, wymiana obudowy i baterii.
 
-Wersja enterprise (lżejsza, upadki 2,4 m, tańsza): [Zebra TC501](/produkt/zebra-tc501). Szczegółowa specyfikacja, karta katalogowa i instrukcja obsługi dostępne na stronie serwis-zebry.pl.`,
+Wersja enterprise (lżejsza, upadki 2,4 m, tańsza): [Zebra TC501](/produkt/zebra-tc501). Szczegółowa specyfikacja techniczna i instrukcja obsługi dostępne na stronie serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -44849,7 +44849,7 @@ Kody kreskowe pozostają czytelne przez cały czas pobytu pacjenta — odporne n
 
 Opakowanie: 6 kartridży × 200 opasek = 1 200 szt./opak. Sufiks "K" w numerze katalogowym oznacza opakowanie zbiorcze (case).
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['opaski-identyfikacyjne'],
     manufacturerId: 'zebra',
@@ -44929,7 +44929,7 @@ Kartridż Smart Chip — automatyczna kalibracja w drukarkach ZD510-HC i HC100. 
 
 Opakowanie: 6 kartridży × 300 opasek = 1 800 szt./opak.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['opaski-identyfikacyjne'],
     manufacturerId: 'zebra',
@@ -45000,7 +45000,7 @@ Dla skrajnie delikatnej skóry (np. wcześniaki) rekomendujemy opaski Z-Band Ult
 
 Opakowanie: 6 kartridży × 350 opasek = 2 100 szt./opak.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['opaski-identyfikacyjne'],
     manufacturerId: 'zebra',
@@ -45417,7 +45417,7 @@ const zd510Accessories: Product[] = [
 
 Zalecana wymiana co ok. 50 000–100 000 opasek w zależności od intensywności użytkowania i typu materiału Z-Band. Gwarancja producenta 12 miesięcy pod warunkiem stosowania oryginalnych materiałów Zebra Z-Band.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
@@ -45455,7 +45455,7 @@ Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com,
 
 Zalecana wymiana przy pogorszeniu jakości druku lub nierównym nadruku. Gwarancja producenta 12 miesięcy.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
@@ -45504,7 +45504,7 @@ Opcjonalne kodowanie paskiem magnetycznym (HiCo/LoCo) pozwala tworzyć karty hot
 
 Łączność: USB 2.0 standardowo, Ethernet 10/100 opcjonalnie. Platforma Link-OS umożliwia zdalne zarządzanie przez przeglądarkę. Wymiary: 202 × 348 × 215 mm, waga 3,5 kg. Gwarancja producenta: 2 lata (drukarka) + 2 lata (głowica).
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-kart',
     subcategoryIds: [],
     manufacturerId: 'zebra',
@@ -45625,7 +45625,7 @@ Zaawansowane opcje kodowania: pasek magnetyczny HiCo/LoCo, enkoder RFID/NFC (Mif
 
 Wariant z zestawem startowym (ZC31-000CQ00EM00 / ZC32-000CQ00EM00) zawiera taśmę YMCKO, 200 kart PVC i CardStudio Classic. Gwarancja: 2 lata drukarka + 2 lata głowica.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-kart',
     subcategoryIds: [],
     manufacturerId: 'zebra',
@@ -45754,7 +45754,7 @@ Zaawansowane opcje kodowania: pasek magnetyczny HiCo/LoCo, enkoder RFID/NFC (Mif
 
 Gwarancja producenta: 3 lata drukarka + głowica (EMEA). Pełna kompatybilność z taśmami Zebra serii ZC350 (800350-xxx) i kartami PVC Zebra. Oprogramowanie: Zebra CardStudio 2.0 w wersjach od Classic do Enterprise.
 
-Specyfikacja zgodna z oficjalną kartą katalogową Zebra (źródło: zebra.com, luty 2026).`,
+Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-kart',
     subcategoryIds: [],
     manufacturerId: 'zebra',
@@ -49643,7 +49643,7 @@ Platforma Honeywell Mobility Edge gwarantuje wsparcie od Android 15 do Android 1
 
 Koszt posiadania (TCO): platforma Mobility Edge z gwarantowanymi aktualizacjami od Android 15 do Android 19 — 5 generacji OS bez wymiany sprzętu. Ładowanie bezprzewodowe Qi eliminuje zużycie mechaniczne złącza USB. Operational Intelligence monitoruje stan baterii w czasie rzeczywistym, redukując koszty awarii.
 
-Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CT70 (PDF w sekcji Dokumenty).`,
+Pełna specyfikacja techniczna na stronie producenta.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'honeywell',
     tags: ['magazyn', 'logistyka', 'retail', 'produkcja', 'outdoor'],
@@ -49787,7 +49787,7 @@ Platforma Honeywell Mobility Edge gwarantuje bezpieczeństwo i długi cykl życi
 
 Koszt posiadania (TCO): platforma Mobility Edge z gwarancją aktualizacji Android 14→18 — 5 lat bez wymiany sprzętu. Kompatybilność z akcesoriami EDA52 chroni inwestycję w infrastrukturę stacji dokujących. Waga 269 g (najlżejszy terminal 6" w klasie) redukuje zmęczenie pracowników i koszty wypadków przy pracy.
 
-Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CT32 (PDF w sekcji Dokumenty).`,
+Pełna specyfikacja techniczna na stronie producenta.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'honeywell',
     tags: ['magazyn', 'logistyka', 'retail', 'produkcja', 'outdoor'],
@@ -49943,7 +49943,7 @@ Platforma Mobility Edge: CK67 działa na Android 14 z gwarantowaną ścieżką a
 
 Koszt posiadania (TCO): bateria 7 000 mAh hot-swap z deklarowanym czasem pracy do 28 godzin eliminuje konieczność posiadania dużego zapasu baterii w magazynach. Platforma Mobility Edge z gwarancją Android 14→18 — 4 generacje OS bez wymiany sprzętu. Waga 508 g (vs 765 g MC9400) redukuje zmęczenie pracowników przy wielogodzinnej pracy. Kolektor danych CK67 oferuje najlepszy stosunek cena/czas pracy w segmencie ultra-rugged gun.
 
-Honeywell CK67 współpracuje z systemami WMS (SAP WM/EWM, Comarch WMS, Logifact, DataConsult WMS.net), ERP (SAP, Comarch ERP, Subiekt GT) i platformami e-commerce (BaseLinker, Allegro Fulfillment). Emulacja terminala (Velocity by Ivanti, StayLinked) umożliwia migrację z legacy systemów (Windows CE/Mobile) bez przepisywania aplikacji. Zero-touch enrollment pozwala wdrożyć flotę 100+ kolektorów danych w jeden dzień. Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CK67 na stronie producenta (honeywell.com).`,
+Honeywell CK67 współpracuje z systemami WMS (SAP WM/EWM, Comarch WMS, Logifact, DataConsult WMS.net), ERP (SAP, Comarch ERP, Subiekt GT) i platformami e-commerce (BaseLinker, Allegro Fulfillment). Emulacja terminala (Velocity by Ivanti, StayLinked) umożliwia migrację z legacy systemów (Windows CE/Mobile) bez przepisywania aplikacji. Zero-touch enrollment pozwala wdrożyć flotę 100+ kolektorów danych w jeden dzień. Pełna specyfikacja techniczna na stronie producenta (honeywell.com).`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'honeywell',
     tags: ['magazyn', 'logistyka', 'produkcja', 'outdoor'],
@@ -51068,7 +51068,7 @@ Bateria: standardowa 4 775 mAh (pełna zmiana 10-12 h), rozszerzona 7 692 mAh (1
 
 Koszt posiadania (TCO): platforma Mobility Edge z gwarantowanymi aktualizacjami systemu Android — wieloletnie wsparcie bez wymiany sprzętu. Wspólna bateria 4 775 mAh / 7 692 mAh z CT40 i CT45 chroni inwestycję w zapas baterii. IP65+IP68 z dropem 3,0 m redukuje koszty napraw i wymian — średni czas życia terminala 5+ lat. Waga 314 g minimalizuje zmęczenie pracowników na długich zmianach.
 
-Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CT47 (PDF w sekcji Dokumenty).`,
+Pełna specyfikacja techniczna na stronie producenta.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'honeywell',
     tags: ['magazyn', 'logistyka', 'retail', 'produkcja', 'outdoor'],
@@ -51386,7 +51386,7 @@ Bateria 7 000 mAh z hot-swap: CK62 korzysta z tej samej baterii co CK67 (CK67-BT
 
 Koszt posiadania (TCO): platforma Mobility Edge z gwarantowaną ścieżką aktualizacji Android 14→18 — 5 generacji OS bez wymiany sprzętu. Współdzielona bateria z CK67 (CK67-BTSC-001) i ładowarki CK6X — floty mieszane CK62+CK67 korzystają z tej samej infrastruktury ładowania. Waga 440 g (najlżejszy terminal gun w klasie) redukuje zmęczenie pracowników i koszty wypadków przy pracy w długich zmianach.
 
-Pełna specyfikacja techniczna dostępna w karcie katalogowej Honeywell CK62 (PDF w sekcji Dokumenty).`,
+Pełna specyfikacja techniczna na stronie producenta.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'honeywell',
     tags: ['magazyn', 'logistyka', 'retail', 'produkcja'],
@@ -55223,7 +55223,7 @@ Kluczowe przewagi M3 SM24: hot-swap baterii 4000 mAh (wymiana bez wyłączania u
 
 Warianty: SM24 W (Wi-Fi only) do pracy w zasięgu sieci bezprzewodowej, SM24 X (Wi-Fi + 4G LTE + GPS) z dual SIM (nano + eSIM) do pracy w terenie. Oba warianty: Gorilla Glass 5, IP67, upadki z 1,5 m (1,8 m z bootem ochronnym), 2000 tumble wg MIL-STD-810H, praca od -20°C do +50°C.
 
-M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami i uproszczonego wdrożenia. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Gdzie kupić M3 SM24? Zamów bezpośrednio w TAKMA lub skontaktuj się po indywidualną wycenę. Pełna specyfikacja techniczna dostępna w karcie katalogowej M3 SM24 (PDF w sekcji Dokumenty).`,
+M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami i uproszczonego wdrożenia. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Gdzie kupić M3 SM24? Zamów bezpośrednio w TAKMA lub skontaktuj się po indywidualną wycenę. Pełna specyfikacja techniczna na stronie producenta.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['terminale-mobilne'],
@@ -55414,7 +55414,7 @@ Kluczowe przewagi M3 SM25 nad tańszym [SM24](/produkt/m3-sm24): ekran FHD+ zami
 
 Warianty: SM25 W (Wi-Fi only) do pracy w zasięgu sieci bezprzewodowej, SM25 X (Wi-Fi + 5G/4G LTE + GPS) z dual SIM (nano + eSIM) do pracy w terenie i logistyki mobilnej. Oba warianty: Gorilla Glass 5, IP67, upadki z 1,5 m (1,8 m z bootem ochronnym), 1000 tumble wg MIL-STD-810H, praca od -20°C do +50°C, hot-swap baterii 4000/6000 mAh.
 
-M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Premiera M3 SM25 w Polsce: czerwiec 2026 — skontaktuj się z TAKMA po rezerwację i indywidualną wycenę. Pełna specyfikacja techniczna dostępna w karcie katalogowej M3 SM25 (PDF w sekcji Dokumenty).`,
+M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Premiera M3 SM25 w Polsce: czerwiec 2026 — skontaktuj się z TAKMA po rezerwację i indywidualną wycenę. Pełna specyfikacja techniczna na stronie producenta.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['terminale-mobilne'],
@@ -55594,7 +55594,7 @@ Kluczowe przewagi M3 SM30: procesor QCM6490 (ten sam co w Zebra TC53e) z wydajno
 
 Warianty: SM300E (Wi-Fi 6E only) do pracy w zasięgu sieci bezprzewodowej, SM305E (Wi-Fi 6E + 5G/4G LTE + GPS) z eSIM do pracy w terenie i logistyki mobilnej. Oba warianty: Android 14 z gwarantowaną aktualizacją do Android 18, BLE 5.3 z Beaconing (działa nawet po wyłączeniu urządzenia), USB 3.1 OTG, NFC z emulacją kart, praca od -20°C do +55°C.
 
-M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Pełna specyfikacja techniczna dostępna w karcie katalogowej M3 SM30 (PDF w sekcji Dokumenty).`,
+M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Pełna specyfikacja techniczna na stronie producenta.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['terminale-mobilne'],
@@ -56024,7 +56024,7 @@ Kluczowe przewagi M3 SL20K: 30 klawiszy fizycznych z podświetleniem + 5 program
 
 Wariant L2KX4C: 4G LTE + Wi-Fi 5 + GPS + Bluetooth 5.0 + NFC. Kamera tylna 13 MP do dokumentacji fotograficznej uszkodzeń i etykiet, przednia 5 MP do wideokonferencji. Android 13 z aktualizacjami do Android 15, karta microSD do 256 GB, USB 2.0 OTG. Opcjonalny uchwyt pistoletowy (trigger handle) do intensywnego skanowania.
 
-M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Pełna specyfikacja techniczna dostępna w karcie katalogowej M3 SL20K (PDF w sekcji Dokumenty).`,
+M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Pełna specyfikacja techniczna na stronie producenta.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['terminale-mobilne'],
@@ -56620,7 +56620,7 @@ Dla kogo? M3 US20 to terminal zaprojektowany dla firm potrzebujących niezawodne
 
 Kluczowe przewagi M3 US20: hot-swap baterii 6700 mAh (wymiana bez wyłączania, sesje BT/WWAN/WLAN utrzymane), IP65, upadki z 1,8 m wg MIL-STD-810G, 2000× tumble z 1 m. Szeroki wybór skanerów — SE4770 (standard 2D), SE4770 pod kątem 45° (ergonomiczne skanowanie), SE5500 Smart Focus (daleki zasięg do 15 m), SE4850 ERI (Long Range) i SE4750. Kamera tylna 16 MP z autofokusem. Dwie wersje łączności: US20W (Wi-Fi a/b/g/n/ac) i US20X (Wi-Fi + 4G LTE + GPS).
 
-M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. Bogaty ekosystem akcesoriów: stacje dokujące 2- i 5-gniazdowe z Ethernet, ładowarki 4- i 20-gniazdowe baterii, uchwyty pistoletowe, stacja wózkowa z zasilaniem 24-96V, kabury i booty ochronne. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Pełna specyfikacja techniczna dostępna w karcie katalogowej M3 US20 (PDF w sekcji Dokumenty).`,
+M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. Bogaty ekosystem akcesoriów: stacje dokujące 2- i 5-gniazdowe z Ethernet, ładowarki 4- i 20-gniazdowe baterii, uchwyty pistoletowe, stacja wózkowa z zasilaniem 24-96V, kabury i booty ochronne. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Pełna specyfikacja techniczna na stronie producenta.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['terminale-mobilne'],
@@ -56825,7 +56825,7 @@ Dla kogo? M3 US30 to terminal zaprojektowany dla firm potrzebujących niezawodne
 
 Kluczowe przewagi M3 US30 vs [US20](/produkt/m3-us20): Android 13 (z 10), Wi-Fi 6 802.11ax (z ac), nowy skaner SE5800 (następca SE5500 z rozszerzonym zasięgiem i wyższą szybkością), 4 typy klawiatury (nowa: funkcyjno-numeryczna 38 klawiszy). Zachowana konstrukcja: hot-swap baterii 6700 mAh (wymiana bez wyłączania, sesje BT/WLAN utrzymane), IP65, upadki z 1,8 m wg MIL-STD-810G, 2000× tumble z 1 m. Skanery: SE4770 (standard 2D), SE5500 Smart Focus (daleki zasięg do 15 m), SE5800 (najnowszy, rozszerzony zasięg). Kamera tylna 16 MP z autofokusem.
 
-M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. US30 jest w pełni kompatybilny z akcesoriami US20 — stacje dokujące 2- i 5-gniazdowe z Ethernet, ładowarki 4- i 20-gniazdowe baterii, uchwyty pistoletowe, stacja wózkowa z zasilaniem 24-96V, kabury i booty ochronne. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Pełna specyfikacja techniczna dostępna w karcie katalogowej M3 US30 (PDF w sekcji Dokumenty).`,
+M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. US30 jest w pełni kompatybilny z akcesoriami US20 — stacje dokujące 2- i 5-gniazdowe z Ethernet, ładowarki 4- i 20-gniazdowe baterii, uchwyty pistoletowe, stacja wózkowa z zasilaniem 24-96V, kabury i booty ochronne. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Pełna specyfikacja techniczna na stronie producenta.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['terminale-mobilne'],

@@ -1,0 +1,92 @@
+brother rj 4230b
+brother td 2020a
+brother td 4d
+brother td 4t
+brother tj 4020tn
+brother tj 4021tn
+brother tj 4120tn
+brother tj 4121tn
+citizen cl e300
+citizen cl e303
+citizen cl e321
+citizen cl e720
+citizen cl e720dt
+citizen cl e730
+citizen cl s400dt
+citizen cl s521ii
+citizen cl s531ii
+citizen cl s621ii
+citizen cl s631ii
+citizen cl s700iii
+citizen cl s703iii
+citizen cmp 20ii
+citizen cmp 25l
+datalogic memor 30
+datalogic memor 35
+honeywell lnx3
+honeywell pc42e t
+honeywell pd45s
+honeywell pm65
+honeywell px65
+honeywell granit ultra 2100i
+honeywell granit ultra 2105i
+honeywell granit xp 1990isr
+honeywell granit xp 1990ixlr
+honeywell granit xp 1990ixr
+honeywell granit xp 1991isr
+honeywell granit xp 1991ixlr
+honeywell granit xp 1991ixr
+honeywell voyager xp 1470g
+honeywell voyager xp 1472g
+honeywell xenon ultra 1960
+honeywell xenon ultra 1962
+honeywell eda10a
+honeywell rt10a
+honeywell rt10w
+honeywell ct47
+m3 sm25
+newland hr11 aringa
+newland hr15 wahoo
+newland hr23 dorada bt
+newland hr33 marlin bt
+newland nvh300
+newland mt93 megattera standard plus
+newland mt95 kambur pro ii
+newland n7 cachalot pro ii
+tsc mb341t
+tsc mh261t
+tsc mh341t
+tsc mh641t
+tsc ml341p
+tsc ttp 286mt
+tsc ttp 384mt
+zebra zd411t
+zebra zq210
+zebra zq220 plus
+zebra zq310 plus
+zebra zq320 plus
+zebra zq610 plus
+zebra zq620 plus
+zebra zq630 plus
+zebra zc100
+zebra zd510 hc
+zebra ds3608 hd
+zebra ds3608 hp
+zebra ds3608 sr
+zebra ds3608 xr
+zebra ds3678 hd
+zebra ds3678 hp
+zebra ds3678 sr
+zebra ds3678 xr
+zebra ds4678 dpe
+zebra li3608 er
+zebra li3608 sr
+zebra et60w
+zebra et65
+zebra et65w
+zebra em45
+zebra mc3300x
+zebra mc3450
+zebra mc9450
+zebra tc73
+zebra tc78

@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import {
   transferRibbonSeries,
   getRibbonSeriesBySlug,
@@ -125,7 +126,38 @@ export default async function RibbonSeriesPage({ params }: PageProps) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* ── HERO ───────────────────────────────────────────────────── */}
-      <section className="relative bg-slate-950 text-white overflow-hidden">
+      {/* Jeśli seria ma `heroBackgroundGradient`, użyj go (matchuje kolor tła zdjęcia, brak widocznego
+          łączenia). W przeciwnym razie domyślne `bg-slate-950`. */}
+      <section
+        className={`relative text-white overflow-hidden ${series.heroBackgroundGradient ? '' : 'bg-slate-950'}`}
+        style={series.heroBackgroundGradient ? { backgroundImage: series.heroBackgroundGradient } : undefined}
+      >
+        {series.heroImage && (
+          <>
+            <div className="absolute right-0 top-0 bottom-0 w-3/5 lg:w-1/2 pointer-events-none">
+              <Image
+                src={series.heroImage}
+                alt=""
+                fill
+                priority
+                sizes="(max-width: 1024px) 60vw, 50vw"
+                className="object-contain opacity-80"
+                style={{ objectPosition: 'right center' }}
+                aria-hidden="true"
+              />
+            </div>
+            {/* Gradient overlay tylko po lewej żeby tekst pozostał czytelny — gdy używamy custom
+                heroBackgroundGradient, krócej (zostaje miejsce na widoczność gradientu tła). */}
+            <span
+              aria-hidden="true"
+              className={`absolute inset-0 pointer-events-none bg-gradient-to-r ${
+                series.heroBackgroundGradient
+                  ? 'from-[#0f172a] via-[#0f172a] via-35% to-transparent'
+                  : 'from-slate-950 via-slate-950 via-60% to-transparent'
+              }`}
+            />
+          </>
+        )}
         <div
           className="absolute inset-0 opacity-30"
           style={{

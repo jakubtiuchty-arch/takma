@@ -1,0 +1,860 @@
+# Disavow file for takma.com.pl — MERGED (final)
+# Created: 2026-05-07
+# Sources:
+#   - disavow-tight.txt (2026-04-19): 221 domains
+#   - Ahrefs audit (2026-05-07): 224 domains
+#   - Overlap: 60 domains
+#   - Total unique: 385 domains
+#
+# Format: Google Search Console Disavow Tool
+# Submit at: https://search.google.com/search-console/disavow-links
+#
+# IMPORTANT: GSC replaces the entire file on upload.
+# This merged file ensures NO domain previously disavowed is forgotten.
+#
+# Categories included:
+# - Negative SEO attack from May 2022 (Norwegian/Swedish/Asian content farms)
+# - Spam directories (rank*, link*, *directory*)
+# - Low-quality foreign domains with 0 traffic
+# - Ahrefs is_spam=true flagged domains
+# - Domains with toxic anchor patterns (porn/dating/SEO scam)
+
+# source: new
+domain:217.97.137.100
+# source: old
+domain:99-best.site
+# source: new
+domain:99sitedirectory.com
+# source: new
+domain:abrigojesusesperancaevida.com.br
+# source: new
+domain:acatema.es
+# source: new
+domain:afprologs.com
+# source: new
+domain:ahararhossain.com
+# source: old
+domain:ahrefs-links.com
+# source: old
+domain:aiarticledirectory.com
+# source: old
+domain:alexgeorgieva.com
+# source: old, new
+domain:alilawservices.com
+# source: old
+domain:allbusinessweb.site
+# source: old
+domain:allistingdirectory.com
+# source: old
+domain:alljobs.info
+# source: old
+domain:annawang.com
+# source: old
+domain:antalyaweb.ru
+# source: old, new
+domain:appliedecology.com.au
+# source: new
+domain:apvea.org.pe
+# source: old, new
+domain:articlement.com
+# source: old
+domain:artsjc.org
+# source: new
+domain:asrafulalamin.com
+# source: new
+domain:associazionefamilia.it
+# source: old, new
+domain:atomizelink.icu
+# source: new
+domain:aurelie-coachsportif.fr
+# source: old
+domain:authorityprodirectory.com
+# source: new
+domain:autoloanpe.com
+# source: old
+domain:backlinker.shop
+# source: old, new
+domain:barlaas.com
+# source: old, new
+domain:beijsuites.com
+# source: new
+domain:bekanjus.com
+# source: old, new
+domain:bena-india.com
+# source: old
+domain:benlandscaping.co.uk
+# source: old
+domain:bestbusniessdirectory.com
+# source: old, new
+domain:besttopdirectory.com
+# source: old, new
+domain:blackhillprivatefinance.com
+# source: new
+domain:bodosjakk.no
+# source: old
+domain:bookme.agency
+# source: old
+domain:booksreadr.org
+# source: new
+domain:bujue.love
+# source: new
+domain:bunnacoffeehouse.africa
+# source: old
+domain:businesslistingportal.com
+# source: old
+domain:businessvocal.com
+# source: old
+domain:businesswebsitesdirectory.com
+# source: new
+domain:busniessdirectory.com
+# source: old, new
+domain:buybacklinks.agency
+# source: new
+domain:bye.fyi
+# source: old
+domain:campbellah.com
+# source: new
+domain:car-body-repairs-swansea.co.uk
+# source: old
+domain:cascade-demoteam.com
+# source: old
+domain:ceremoniiumaniste.ro
+# source: new
+domain:chefrose.com.my
+# source: new
+domain:christinaholderco.com
+# source: old
+domain:clicktobuydirectory.com
+# source: old
+domain:clicktorankdirectoy.com
+# source: new
+domain:clicktoselldirectoy.com
+# source: new
+domain:codexsoftwaretesting.com
+# source: old
+domain:codzaloghomes.co.za
+# source: new
+domain:corvalautoservicios.es
+# source: new
+domain:cppn.com.br
+# source: old
+domain:credit-resolutions.com
+# source: new
+domain:danicaconcepts.co.ke
+# source: old
+domain:databoostdirectory.com
+# source: old, new
+domain:datanerv.com
+# source: new
+domain:ddeatzakaya.com
+# source: old, new
+domain:developmentmi.com
+# source: new
+domain:dhillonzcab.com
+# source: new
+domain:diestro.org
+# source: new
+domain:digigodev.com
+# source: new
+domain:directmedianews.in
+# source: old
+domain:directorycloudhub.com
+# source: old
+domain:diwakararyal.com
+# source: old, new
+domain:dktecnics.com
+# source: old
+domain:doctorcleanrx.com
+# source: old, new
+domain:dodaj-strone.com.pl
+# source: old
+domain:domain.com.lc
+# source: old
+domain:domainanalysis.org
+# source: old
+domain:domainsc.com
+# source: old
+domain:domodco.com
+# source: new
+domain:drpawolka.de
+# source: new
+domain:dtmke.com
+# source: new
+domain:eastwaysgroup.co.ke
+# source: old
+domain:egyptiandirectory.com
+# source: new
+domain:elcito.dk
+# source: new
+domain:eliss.com.my
+# source: old
+domain:eliterankdirectory.com
+# source: old
+domain:elpostrebodas.es
+# source: old, new
+domain:enterprisecaresupport.org.uk
+# source: old
+domain:enterprisedirectoryhub.com
+# source: new
+domain:eugeniotorre.it
+# source: new
+domain:evaexp.com
+# source: new
+domain:ewin.biz
+# source: new
+domain:exlinko.net
+# source: new
+domain:expleos.com
+# source: new
+domain:factmags.com
+# source: old
+domain:farzedi.com
+# source: new
+domain:friendshipbaptistcorning.org
+# source: old, new
+domain:friidamedica.com
+# source: old
+domain:fullhidraulica.cl
+# source: new
+domain:gangajal.org
+# source: old, new
+domain:gemsnet.pl
+# source: old
+domain:getwebsiteworth.com
+# source: new
+domain:girlscandreamtoo.com
+# source: old
+domain:globalecommerce.org
+# source: new
+domain:globus-xchange.com.mx
+# source: new
+domain:gotryus.com
+# source: new
+domain:gpcorporacion.com
+# source: new
+domain:guangzhou.institute
+# source: old
+domain:guestpostsdirectory.com
+# source: old
+domain:guestpostwebdirectory.com
+# source: new
+domain:hairkronesantander.es
+# source: new
+domain:harim.co.ke
+# source: old, new
+domain:heavenarticle.com
+# source: new
+domain:heavencenter.ir
+# source: new
+domain:hengchenglaw.com
+# source: old
+domain:highauthoritydirectory.com
+# source: new
+domain:himsoftech.com
+# source: old
+domain:hnbc.ie
+# source: new
+domain:homedaze.co.uk
+# source: old
+domain:hotentique.com
+# source: old
+domain:howtorankfast.site
+# source: new
+domain:iarifbd.info
+# source: new
+domain:imandarpk.com
+# source: new
+domain:indiandataprovider.com
+# source: old
+domain:indiansleaks.com
+# source: old
+domain:indtryk.com
+# source: old, new
+domain:interpreterapprentice.com
+# source: new
+domain:iqbcoin.net
+# source: new
+domain:itxoft.com
+# source: new
+domain:jaroslav-klouda.cz
+# source: old
+domain:jeleed.ly
+# source: old, new
+domain:jirathaimassage.co.uk
+# source: old, new
+domain:katalogseo.net.pl
+# source: old
+domain:kestam.com.mx
+# source: new
+domain:kimoanhdatxanh.vn
+# source: old
+domain:king-labs.com
+# source: old, new
+domain:kingranks.com
+# source: old
+domain:kirokurt.dk
+# source: old
+domain:kostar.org
+# source: old, new
+domain:kostasvadoklis.com
+# source: new
+domain:kukaj.pl
+# source: old
+domain:landscapingparmaohio.com
+# source: old
+domain:lawnservicenear-me.com
+# source: new
+domain:lawrencericketts.com
+# source: new
+domain:ldnuujungpangkah.org
+# source: old, new
+domain:lichosyt.com.pl
+# source: old
+domain:linkboostdirectory.com
+# source: old
+domain:linkdirectoryzone.com
+# source: old
+domain:linkflowdirectory.com
+# source: old, new
+domain:linkingdirectory.com
+# source: old, new
+domain:linkpitcherdirectory.com
+# source: old, new
+domain:linkpointdirectory.com
+# source: new
+domain:listodirectory.com
+# source: new
+domain:lonestarfencestain.com
+# source: old, new
+domain:lovewillfindu.com
+# source: old
+domain:lubricanteszamora.cl
+# source: old
+domain:luxegroups.com
+# source: new
+domain:madhurarts.com
+# source: old
+domain:maedchendiskothek.de
+# source: new
+domain:magnanigroup.com.br
+# source: old, new
+domain:majuelos.wine
+# source: old
+domain:maksymalnie.pl
+# source: new
+domain:mandestocks.in
+# source: new
+domain:marketeros.fr
+# source: old
+domain:marketingdirectoy.com
+# source: old
+domain:marketingexperts.click
+# source: old
+domain:marketinghubdirectory.com
+# source: old
+domain:marketinghubdirectoy.com
+# source: old, new
+domain:maryemme.com
+# source: old
+domain:masztu.pl
+# source: new
+domain:matilashes.com.au
+# source: old
+domain:matkopen.be
+# source: old
+domain:mattresstalent.com
+# source: new
+domain:mcm.ch
+# source: old, new
+domain:mediapostdirectory.com
+# source: old
+domain:mediazonedirectory.com
+# source: new
+domain:medicosecompanhia.pt
+# source: old
+domain:mediedirectory.com
+# source: new
+domain:mellanchefsboost.se
+# source: new
+domain:metaphornetworks.com
+# source: old
+domain:metatecnocultural.org
+# source: old
+domain:microlinkofworld.site
+# source: old, new
+domain:microlinksite.com
+# source: old
+domain:mjmconsult.uk
+# source: new
+domain:mmwatches.co.uk
+# source: old
+domain:mostrankdirectory.com
+# source: old, new
+domain:mostrankingdirectory.com
+# source: old
+domain:motherhoodcorner.com
+# source: new
+domain:mqinternationalschooling.com
+# source: new
+domain:mtechschool.xyz
+# source: old
+domain:mulchdeliveredparmaohio.com
+# source: old
+domain:mulchdeliveryparmaohio.com
+# source: new
+domain:multipackas.no
+# source: old
+domain:musweb.org
+# source: new
+domain:muttikulangaraoil.in
+# source: old, new
+domain:nashvillepavers.com
+# source: old
+domain:natafoxy.ru
+# source: new
+domain:nawakaafrica.org
+# source: new
+domain:naxgaming.org
+# source: new
+domain:nceonline.com
+# source: old
+domain:neobiznes.pl
+# source: new
+domain:nestechindia.com
+# source: new
+domain:nettpresten.com
+# source: new
+domain:newmarts.pk
+# source: old
+domain:nexusnext.agency
+# source: old
+domain:oakbrookpark.org
+# source: new
+domain:optikhazoptika.hu
+# source: new
+domain:overligger.dk
+# source: old
+domain:pantoficurati.ro
+# source: old
+domain:parmamulchdelivery.com
+# source: old
+domain:parmaohiolawnservice.com
+# source: new
+domain:pefras.co.ke
+# source: new
+domain:peterkarayaassociates.co.ke
+# source: old
+domain:pgdue.com
+# source: old
+domain:pick4d.live
+# source: new
+domain:pioneercampervans.co.uk
+# source: old
+domain:polhit.com.pl
+# source: new
+domain:postlinkdirectory.com
+# source: old, new
+domain:postsdirectory.com
+# source: old
+domain:powerlinkdirectory.com
+# source: new
+domain:premiumseolinks.shop
+# source: new
+domain:prestimmoci.net
+# source: old
+domain:primecompanydirectory.com
+# source: old
+domain:primeseodirectory.com
+# source: old
+domain:primesolodirectory.com
+# source: old
+domain:printritemedia.co.ke
+# source: new
+domain:printwhatyoulike.com
+# source: old
+domain:prolistingdirectory.com
+# source: new
+domain:pushkargold.com
+# source: old
+domain:quayaks.com
+# source: new
+domain:qubaa-eg.com
+# source: old, new
+domain:quero.party
+# source: new
+domain:rado-odit.com
+# source: old, new
+domain:ramingenieria.cl
+# source: old, new
+domain:rankfastdirectory.com
+# source: old, new
+domain:rankingwebdirectory.com
+# source: new
+domain:rankmakerdirectory.com
+# source: old
+domain:rankongoogle.agency
+# source: old
+domain:rankpilot.shop
+# source: new
+domain:rankva.com
+# source: old
+domain:rankzonedirectory.com
+# source: new
+domain:raretopsitesdirectory.com
+# source: new
+domain:realxpressionz.com
+# source: old
+domain:remorquage-ile-de-france.com
+# source: new
+domain:restructconsult.org
+# source: new
+domain:revolpro.com
+# source: old
+domain:rigarts.id
+# source: new
+domain:rigosomosperusanignacio.com
+# source: new
+domain:rinnapp.com
+# source: new
+domain:roka-translations.com
+# source: new
+domain:rolconghana.com
+# source: new
+domain:saankhyatech.com
+# source: old
+domain:saasdirectoryzone.com
+# source: old
+domain:salis.or.at
+# source: new
+domain:sapronat.kz
+# source: new
+domain:schnizer.it
+# source: new
+domain:se-sol-agency.com
+# source: old
+domain:searchstackdirectory.com
+# source: old
+domain:seguro-cr.com
+# source: old
+domain:semrushdirectory.com
+# source: old
+domain:seoagency.sale
+# source: old
+domain:seoboast.site
+# source: old
+domain:seodirectorypro.com
+# source: new
+domain:seoflx.net
+# source: new
+domain:seohelperdirectory.com
+# source: old
+domain:seologixdirectory.com
+# source: old
+domain:seoprodirectory.com
+# source: new
+domain:seotopdirectory.com
+# source: old
+domain:seotrafficdirectory.com
+# source: old
+domain:seowebsitesdirectory.com
+# source: new
+domain:seoxio.com
+# source: new
+domain:settlewiseinternational.com
+# source: old
+domain:seventinolights.gr
+# source: new
+domain:shooddho.com
+# source: old
+domain:shopbetreiber-blog.shop
+# source: new
+domain:shortenurls.eu
+# source: old
+domain:signature-services.fr
+# source: new
+domain:simplygoodwines.be
+# source: old
+domain:skylinkseo.site
+# source: old
+domain:smartdirectoryhub.com
+# source: new
+domain:smartguysmarketing.com
+# source: old, new
+domain:smartwaydirectory.com
+# source: new
+domain:smginc.jp
+# source: old
+domain:snowplowingparmaohio.com
+# source: old, new
+domain:socialnewsdirectory.com
+# source: old, new
+domain:socialzonedirectory.com
+# source: old
+domain:solidnypartner.eu
+# source: new
+domain:solutosa.com.ec
+# source: new
+domain:sonargajewellers.com
+# source: new
+domain:sophrologie-dynamique.fr
+# source: new
+domain:souldynamite.com
+# source: new
+domain:sparltech.com
+# source: new
+domain:sriniinfotech.com
+# source: old, new
+domain:starcourts.com
+# source: new
+domain:starshairstudio.ro
+# source: new
+domain:starsnyou.com
+# source: new
+domain:stevenshousingllc.com
+# source: new
+domain:stpaulsguesthouse.biz
+# source: new
+domain:studentmarg.com
+# source: new
+domain:studiomasmas.com
+# source: old, new
+domain:superbhubdirectory.com
+# source: old, new
+domain:sureprofitscoach.com
+# source: new
+domain:sycafe.net
+# source: old
+domain:szukaj24.pl
+# source: old
+domain:taichiperson.com
+# source: new
+domain:tanzaken.com
+# source: new
+domain:teacherappreciationproject.com
+# source: old
+domain:teamconcept.fr
+# source: old, new
+domain:thabethetp.co.za
+# source: old, new
+domain:thefloorgallery.ie
+# source: new
+domain:thejubamirror.com
+# source: old
+domain:themasterdirectory.com
+# source: new
+domain:theopticalstreet.com
+# source: old
+domain:theseohighranking.shop
+# source: old
+domain:ticketingadvisor.com
+# source: old, new
+domain:tienequevenirasiestadicho.com
+# source: new
+domain:tknews.in
+# source: old
+domain:tkplumbing.co.za
+# source: old
+domain:top-wanted.pl
+# source: old
+domain:topbillion.site
+# source: new
+domain:topdomadirectory.com
+# source: old, new
+domain:topdomaindirectory.com
+# source: old
+domain:topmarketingweb.site
+# source: new
+domain:topmillion.net
+# source: old
+domain:topmillion.site
+# source: new
+domain:topmillionwebdirectory.com
+# source: old
+domain:topsiterankdirectory.com
+# source: old
+domain:toptierdirectory.com
+# source: old, new
+domain:toptohigh.com
+# source: old, new
+domain:topviraldirectory.com
+# source: new
+domain:topwebdirectoy.com
+# source: old, new
+domain:topworlddirectory.com
+# source: old
+domain:torreguil4.com
+# source: new
+domain:trade1024.com
+# source: old
+domain:traffichubdirectory.com
+# source: old
+domain:tree-tech.co.uk
+# source: old
+domain:uniallianze.com
+# source: old
+domain:unique-scarves.com
+# source: old
+domain:universallearningacademy.com
+# source: new
+domain:urls-shortener.eu
+# source: old
+domain:usaseodirectory.com
+# source: old
+domain:usdirectorylist.com
+# source: new
+domain:ushadentalclinic.co.in
+# source: old
+domain:velesonline.ru
+# source: new
+domain:verduremd.com
+# source: old
+domain:verifieddirectory.com
+# source: old, new
+domain:vhcommunicatie.nl
+# source: new
+domain:virendravikramsuman.com
+# source: new
+domain:vivasvannaexports.com
+# source: new
+domain:wachiramumbilaw.com
+# source: old, new
+domain:wamamall.com
+# source: old, new
+domain:wayranks.com
+# source: new
+domain:weaversbpo.com
+# source: old
+domain:webbranddirectory.com
+# source: old
+domain:webdirectoryofworld.site
+# source: old, new
+domain:webguestpostsdirectory.com
+# source: new
+domain:webhubdirectory.com
+# source: new
+domain:webjunctiondirectory.com
+# source: old
+domain:webpostdirectory.com
+# source: new
+domain:webrankdirectory.com
+# source: old
+domain:webranksofworld.site
+# source: old, new
+domain:webscountry.com
+# source: new
+domain:websitescrawl.com
+# source: old
+domain:websiteslinkdirectory.com
+# source: old
+domain:websiteworld.site
+# source: old, new
+domain:websiteworlddirectory.com
+# source: old
+domain:webzonedirectory.com
+# source: new
+domain:whatsapin.com
+# source: old
+domain:workers.directory
+# source: old
+domain:worldbusinesspromote.com
+# source: old
+domain:worldmarketingdirectoy.com
+# source: new
+domain:worldranksite.com
+# source: old
+domain:worldseodirectory.com
+# source: old
+domain:worldsitedirectory.com
+# source: old
+domain:worldtopwebsite.com
+# source: old, new
+domain:worldwebsitesdirectory.com
+# source: old
+domain:worldwidetopweb.site
+# source: old
+domain:worldwidetopwebsite.site
+# source: old, new
+domain:worldzonedirectory.com
+# source: new
+domain:yakehvac.com
+# source: new
+domain:yazan-studio.com
+# source: old
+domain:yuenyr.ru
+# source: new
+domain:za.com
+# source: new
+domain:zieltraders.com
+# source: new
+domain:александр-терентьев.рф
+# source: new
+domain:بتامکس.com
+
+# ===========================================================================
+# AKTUALIZACJA: 16.05.2026
+# Negative SEO Attack — farma PBN seoexpress.org
+# ===========================================================================
+# 60 domen wstawiających identyczny tekst "case study" z linkiem do takma.com.pl
+# Cel atakującego: promować SEOExpress.org używając wzmianek o realnych markach
+# Wszystkie wpisy nofollow (Google ich nie liczy), ale wpływają na DR w Ahrefs
+# Fala 1 (15-17 kwietnia 2026): domeny .shop, .website, .online, .site, .space
+# Fala 2 (15-16 maja 2026): domeny .store z prefiksami "luxury", "prime", "elite"
+# ===========================================================================
+domain:123webshop.shop
+domain:activeshop.shop
+domain:advanced-ranking-seoexpress-specialists.store
+domain:advanced-search-seoexpress-pros.store
+domain:advanced-seo-firm-seoexpress.store
+domain:authentic-seoexpress-keyword-firm.store
+domain:best-seoexpress-off-page-network.store
+domain:certified-seoexpress-organic-services.store
+domain:ekenkoshop.shop
+domain:elite-authority-marketplace-seoexpress.store
+domain:elite-high-da-center-seoexpress.store
+domain:exclusive-backlink-seoexpress-firm.store
+domain:expert-organic-seoexpress.store
+domain:expert-search-seoexpress-team.store
+domain:global-keyword-seoexpress.store
+domain:highseo.shop
+domain:highseoranking.shop
+domain:kawaiishop.shop
+domain:kmoshops.shop
+domain:luxury-niche-edit-seoexpress-services.store
+domain:luxury-seoexpress-tier-1-house.store
+domain:master-seoexpress-content-consultants.store
+domain:master-seoexpress-guest-post-partners.store
+domain:master-seoexpress-search-agency.store
+domain:mysky-shop.shop
+domain:official-domain-seoexpress.store
+domain:official-seoexpress-white-hat-team.store
+domain:premium-seoexpress-digital-solutions.store
+domain:prime-white-hat-seoexpress-network.store
+domain:rankinghighseo.shop
+domain:rankingseohigh.shop
+domain:rent-a-shop.shop
+domain:seo-high-ranking.shop
+domain:seoexpress-content-experts.store
+domain:seoexpress-pbn-company.store
+domain:seoexpress-verified-high-da-consultants.store
+domain:seoexpress.online
+domain:seoexpress.shop
+domain:seoexpress.site
+domain:seoexpress.space
+domain:seoexpress.store
+domain:seoexpress.website
+domain:seohighranking.shop
+domain:shop-inframe.shop
+domain:simplywebshop.shop
+domain:smart-indexer-seoexpress.store
+domain:thebacklink.shop
+domain:thebacklinks.shop
+domain:theguestpost.shop
+domain:thehighrankseo.shop
+domain:thehighseo.shop
+domain:thehighseoranking.shop
+domain:therankboostseo.shop
+domain:therankinghighseo.shop
+domain:therankingseohigh.shop
+domain:theseomasterhigh.shop
+domain:theseorankinghigh.shop
+domain:verified-digital-firm-seoexpress.store
