@@ -447,6 +447,22 @@ export default function RibbonVariantsTable({
   )
 }
 
+/** Kolor taśmy 5319 wyprowadzony z numeru katalogowego (BK/BL/RD/GD/GL = kolory; 800132-* = czarny legacy).
+ *  Tylko 5319 jest dostępna w kolorach — pozostałe taśmy są czarne, więc nie pokazujemy etykiety koloru. */
+const RIBBON_5319_COLORS: Record<string, { label: string; hex: string }> = {
+  BK: { label: 'czarny', hex: '#1f2937' },
+  BL: { label: 'niebieski', hex: '#2563eb' },
+  RD: { label: 'czerwony', hex: '#dc2626' },
+  GD: { label: 'złoty', hex: '#c79a3a' },
+  GL: { label: 'złoty', hex: '#c79a3a' },
+}
+function ribbon5319Color(pn: string): { label: string; hex: string } | null {
+  const m = pn.match(/^0?5319(BK|BL|RD|GD|GL)/i)
+  if (m) return RIBBON_5319_COLORS[m[1].toUpperCase()] ?? null
+  if (/^800132-/.test(pn)) return RIBBON_5319_COLORS.BK // starsze PN-y czarnej 5319
+  return null
+}
+
 /** Pojedyncza karta wariantu taśmy */
 function VariantCard({
   variant: v,
@@ -486,6 +502,9 @@ function VariantCard({
     ? `${parseNumber(sz)}×${parseNumber(dl)}`
     : v.name
 
+  // Kolor (tylko 5319 — jedyna kolorowa taśma w gamie)
+  const color = productSlug === 'zebra-5319-wax' ? ribbon5319Color(v.partNumber) : null
+
   return (
     <Link
       href={variantHref}
@@ -516,6 +535,17 @@ function VariantCard({
 
         <h4 className="text-base font-bold text-gray-900 leading-snug mb-1">
           {manufacturerName} {seriesTitle} {sizeLabel}
+          {color && (
+            <span className="inline-flex items-center gap-1 align-baseline">
+              {' — '}
+              <span
+                aria-hidden
+                className="inline-block w-3 h-3 rounded-full border border-black/10 align-middle"
+                style={{ backgroundColor: color.hex }}
+              />
+              {color.label}
+            </span>
+          )}
         </h4>
 
         {/* Sub-info: rdzeń + PN */}

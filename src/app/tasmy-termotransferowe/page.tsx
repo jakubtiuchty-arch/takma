@@ -13,10 +13,12 @@ import {
 const SLUG = 'tasmy-termotransferowe'
 const siteUrl = 'https://www.takma.com.pl'
 
-// Grupowanie 12 modeli — hierarchia UX (bestseller > woskowe i wax/resin > resin i niche)
-const bestsellerSlugs = ['2300-wax', '3200-wax-resin', '5095-resin']
-const waxAndWaxResinSlugs = ['1600-wax', '2100-wax', '5319-wax', '3300-wax-resin', '3400-wax-resin']
-const resinAndNicheSlugs = ['5555-wax-resin', '4800-resin', '5100-resin', '8000-chemresist']
+// Grupowanie 12 modeli wg kategorii — w każdej sekcji flagowiec (duży kafelek) + reszta w rzędzie obok
+const ribbonSections: { label: string; flagship: string; rest: string[] }[] = [
+  { label: 'Woskowe', flagship: '2300-wax', rest: ['1600-wax', '2100-wax', '5319-wax'] },
+  { label: 'Woskowo-żywiczne', flagship: '3200-wax-resin', rest: ['3300-wax-resin', '3400-wax-resin', '5555-wax-resin'] },
+  { label: 'Żywiczne', flagship: '5095-resin', rest: ['4800-resin', '5100-resin', '8000-chemresist'] },
+]
 
 function seriesBySlug(slug: string): RibbonSeries | undefined {
   return transferRibbonSeries.find(s => s.slug === slug)
@@ -40,18 +42,22 @@ function positioningLabel(p: RibbonSeries['positioning']): string {
 function BannerCard({
   series: s,
   size = 'normal',
+  className = '',
 }: {
   series: RibbonSeries
   size?: 'normal' | 'large'
+  className?: string
 }) {
   const isLarge = size === 'large'
-  const hasImage = Boolean(s.heroImage)
+  // Tapeta ze zdjęciem tylko na flagowcach (duże karty). Mała karta używa radial-gradientu,
+  // nawet jeśli seria ma `heroImage` (to zdjęcie służy wyłącznie hero strony serii).
+  const hasImage = isLarge && Boolean(s.heroImage)
   return (
     <Link
       href={`/tasmy-termotransferowe/serie/${s.slug}`}
-      className={`group relative overflow-hidden bg-white border border-slate-200 rounded-xl hover:border-[#A8F000] hover:shadow-lg transition-all flex flex-col ${
+      className={`group relative h-full overflow-hidden bg-white border border-slate-200 rounded-xl hover:border-[#A8F000] hover:shadow-lg transition-all flex flex-col ${
         isLarge ? 'p-7' : 'p-5'
-      }`}
+      } ${className}`}
     >
       {hasImage ? (
         // Tapeta — obraz wypełnia całą kartę (bg-cover bg-center). Półprzezroczysty biały
@@ -60,7 +66,7 @@ function BannerCard({
           <span
             aria-hidden="true"
             className="absolute inset-0 pointer-events-none bg-no-repeat bg-cover transition-transform duration-300 group-hover:scale-[1.02]"
-            style={{ backgroundImage: `url('${s.heroImage}')`, backgroundPosition: s.heroImagePosition ?? '50% center' }}
+            style={{ backgroundImage: `url('${s.heroImage}')`, backgroundPosition: s.cardImagePosition ?? s.heroImagePosition ?? '50% center' }}
           />
           <span
             aria-hidden="true"
@@ -244,48 +250,32 @@ export default function Page() {
           </p>
         </div>
 
-        {/* ── SEKCJA 1: Najczęściej wybierane (3 bestsellery) ── */}
-        <div className="mb-10">
-          <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
-            Najczęściej wybierane
-          </h3>
-          {/* max-w-4xl (896 px) — 3 karty po ~290 px, identyczna szerokość jak karta 5555
-              w 4-kolumnowym gridzie pozostałych sekcji. */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl">
-            {bestsellerSlugs.map(slug => {
-              const s = seriesBySlug(slug)
-              if (!s) return null
-              return <BannerCard key={s.slug} series={s} />
-            })}
-          </div>
-        </div>
-
-        {/* ── SEKCJA 2: Woskowe i woskowo-żywiczne (5 kart) ── */}
-        <div className="mb-10">
-          <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
-            Woskowe i woskowo-żywiczne — papier i mieszane zastosowania
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-            {waxAndWaxResinSlugs.map(slug => {
-              const s = seriesBySlug(slug)
-              if (!s) return null
-              return <BannerCard key={s.slug} series={s} />
-            })}
-          </div>
-        </div>
-
-        {/* ── SEKCJA 3: Żywiczne i specjalistyczne (4 karty) ── */}
-        <div>
-          <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
-            Żywiczne i specjalistyczne — folia, chemia, ekstremalne warunki
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {resinAndNicheSlugs.map(slug => {
-              const s = seriesBySlug(slug)
-              if (!s) return null
-              return <BannerCard key={s.slug} series={s} />
-            })}
-          </div>
+        {/* ── 3 sekcje wg kategorii: flagowiec (duży, col-span-2) + reszta w rzędzie obok ── */}
+        <div className="space-y-10">
+          {ribbonSections.map(({ label, flagship, rest }) => {
+            const flag = seriesBySlug(flagship)
+            return (
+              <div key={label}>
+                <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
+                  {label}
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 items-stretch">
+                  {flag && (
+                    <BannerCard
+                      series={flag}
+                      size="large"
+                      className="sm:col-span-2 lg:col-span-2"
+                    />
+                  )}
+                  {rest.map(slug => {
+                    const s = seriesBySlug(slug)
+                    if (!s) return null
+                    return <BannerCard key={s.slug} series={s} />
+                  })}
+                </div>
+              </div>
+            )
+          })}
         </div>
       </section>
 
@@ -328,7 +318,7 @@ function CategoryGuide() {
         name: 'Którą taśmę Zebra wybrać do mojego zastosowania?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Zebra 2300 Wax — bestseller, papier ekonomiczny, magazyn, wysyłki, sprzedaż detaliczna. Zebra 2100 European Wax — chłodnia, mroźnia, papier premium z atestami. Zebra 3200 Wax/Resin — kompromis cena/jakość, handel z wymaganiami odpornościowymi, niektóre folie polipropylenowe. Zebra 3400 Wax/Resin — folia polietylenowa (kosmetyki), mróz z tarciem. Zebra 5095 Resin — wszystkie folie poliestrowe (Z-Ultimate), elektronika, oznaczenia mienia. Zebra 5100 Premium Resin — tabliczki znamionowe, UL/cUL, długoterminowa trwałość. Zebra 8000 ChemResist — chemia, paliwa, lotnictwo (ekstremalna odporność).',
+          text: 'Zebra 2300 Wax — bestseller, papier ekonomiczny, magazyn, wysyłki, sprzedaż detaliczna. Zebra 2100 European Wax — najwyższa prędkość (print-and-apply), druk na matowych syntetykach, lepsza odporność nadruku na ścieranie. Zebra 3200 Wax/Resin — kompromis cena/jakość, handel z wymaganiami odpornościowymi, niektóre folie polipropylenowe. Zebra 3400 Wax/Resin — folia polietylenowa (kosmetyki), mróz z tarciem. Zebra 5095 Resin — wszystkie folie poliestrowe (Z-Ultimate), elektronika, oznaczenia mienia. Zebra 5100 Premium Resin — tabliczki znamionowe, UL/cUL, długoterminowa trwałość. Zebra 8000 ChemResist — chemia, paliwa, lotnictwo (ekstremalna odporność).',
         },
       },
       {
@@ -360,7 +350,7 @@ function CategoryGuide() {
         name: 'Czy taśma 2300 Wax wystarczy do mojego magazynu?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'W zdecydowanej większości przypadków — tak. Zebra 2300 Wax to absolutny bestseller — najczęściej kupowana taśma w Polsce. Drukuje na większości papierowych etykiet (powlekanych i niepowlekanych) z prędkością do 304 mm/s (12 ips). Idealna do oznaczeń lokalizacyjnych, wysyłek kurierskich (DHL, DPD, InPost, GLS), kompletacji zamówień. Wymień na 2100 European Wax tylko gdy: drukujesz w chłodni/mroźni, potrzebujesz ostrzejszego nadruku kodów wysokiej rozdzielczości, prędkość druku >12 ips. Wymień na 3200 Wax/Resin gdy etykieta ma kontakt z wilgocią lub tarciem.',
+          text: 'W zdecydowanej większości przypadków — tak. Zebra 2300 Wax to absolutny bestseller — najczęściej kupowana taśma w Polsce. Drukuje na większości papierowych etykiet (powlekanych i niepowlekanych) z prędkością do 304 mm/s (12 ips). Idealna do oznaczeń lokalizacyjnych, wysyłek kurierskich (DHL, DPD, InPost, GLS), kompletacji zamówień. Wymień na 2100 European Wax tylko gdy: potrzebujesz najwyższej prędkości (print-and-apply), druku na matowych syntetykach lub lepszej odporności nadruku na ścieranie. Wymień na 3200 Wax/Resin gdy etykieta ma kontakt z wilgocią lub tarciem.',
         },
       },
       {
@@ -586,8 +576,8 @@ function CategoryGuide() {
               </tr>
               <tr>
                 <td className="p-3 font-medium">Papier z atestem żywności (8000T All-Temp)</td>
-                <td className="p-3"><Link href="/tasmy-termotransferowe/serie/2100-wax" className="text-primary-600 hover:underline">Zebra 2100 European Wax</Link></td>
-                <td className="p-3 text-gray-600">Zebra 3400 Wax/Resin (mróz + tarcie)</td>
+                <td className="p-3"><Link href="/tasmy-termotransferowe/serie/2300-wax" className="text-primary-600 hover:underline">Zebra 2300 Wax</Link></td>
+                <td className="p-3 text-gray-600">Zebra 3400 Wax/Resin (gdy mróz + tarcie)</td>
               </tr>
               <tr>
                 <td className="p-3 font-medium">Polipropylen biały (PolyPro 3000T)</td>

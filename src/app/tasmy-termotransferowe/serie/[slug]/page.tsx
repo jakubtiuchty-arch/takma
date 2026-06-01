@@ -134,15 +134,30 @@ export default async function RibbonSeriesPage({ params }: PageProps) {
       >
         {series.heroImage && (
           <>
-            <div className="absolute right-0 top-0 bottom-0 w-3/5 lg:w-1/2 pointer-events-none">
+            <div
+              className="absolute right-0 top-0 bottom-0 w-3/5 lg:w-1/2 pointer-events-none"
+              style={
+                series.heroMaskLeft
+                  ? {
+                      WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 45%)',
+                      maskImage: 'linear-gradient(to right, transparent 0%, black 45%)',
+                    }
+                  : undefined
+              }
+            >
               <Image
                 src={series.heroImage}
                 alt=""
                 fill
                 priority
                 sizes="(max-width: 1024px) 60vw, 50vw"
-                className="object-contain opacity-80"
-                style={{ objectPosition: 'right center' }}
+                className={series.heroImageCover ? 'object-cover opacity-100' : 'object-contain opacity-80'}
+                style={{
+                  objectPosition: 'right center',
+                  ...(series.heroImageScale
+                    ? { transform: `scale(${series.heroImageScale})`, transformOrigin: 'right center' }
+                    : {}),
+                }}
                 aria-hidden="true"
               />
             </div>

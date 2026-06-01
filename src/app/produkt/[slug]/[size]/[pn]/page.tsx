@@ -93,6 +93,18 @@ import { parseLengthFromAttribute } from '@/lib/ribbon-math'
 
 const siteUrl = 'https://www.takma.com.pl'
 
+/** Kolor taśmy 5319 z numeru katalogowego (jedyna kolorowa taśma w gamie). Zwraca etykietę lub null. */
+const RIBBON_5319_COLOR_LABELS: Record<string, string> = {
+  BK: 'czarny', BL: 'niebieski', RD: 'czerwony', GD: 'złoty', GL: 'złoty',
+}
+function ribbon5319ColorLabel(slug: string, pn: string): string | null {
+  if (slug !== 'zebra-5319-wax') return null
+  const m = pn.match(/^0?5319(BK|BL|RD|GD|GL)/i)
+  if (m) return RIBBON_5319_COLOR_LABELS[m[1].toUpperCase()] ?? null
+  if (/^800132-/.test(pn)) return 'czarny'
+  return null
+}
+
 interface PageProps {
   params: Promise<{ slug: string; size: string; pn: string }>
 }
@@ -124,10 +136,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const url = `${siteUrl}/produkt/${product.slug}/${size}/${pn}`
 
   const sizeLabel = rozmiar ?? variant.name ?? pn
+  const colorLabel = ribbon5319ColorLabel(product.slug, pn)
   const priceText = variant.priceFrom
     ? ` od ${variant.priceFrom.toLocaleString('pl-PL')} zł netto`
     : ''
-  const title = `${product.name} ${sizeLabel} — PN ${pn}${priceText}`
+  const title = `${product.name} ${sizeLabel}${colorLabel ? ` ${colorLabel}` : ''} — PN ${pn}${priceText}`
 
   const smartTruncate = (text: string, maxLen: number): string => {
     if (text.length <= maxLen) return text
@@ -202,7 +215,8 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
 
   // Etykieta rozmiaru — fallback na nazwę wariantu/PN gdy brak Rozmiar (część wariantów TT)
   const sizeLabel = rozmiar ?? variant.name ?? pn
-  const variantH1 = `${product.name} ${sizeLabel}${gilza ? ` (rdzeń ${gilza})` : ''}`
+  const colorLabel = ribbon5319ColorLabel(product.slug, pn)
+  const variantH1 = `${product.name} ${sizeLabel}${colorLabel ? ` ${colorLabel}` : ''}${gilza ? ` (rdzeń ${gilza})` : ''}`
 
   // Inne warianty tej samej serii (do "Inne rozmiary" CTA)
   const otherVariants = (product.variants || [])
@@ -305,6 +319,17 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
   const rollLengthAttr = variant.attributes['Długość']
   const rollLength = rollLengthAttr ? parseLengthFromAttribute(rollLengthAttr) : null
   const ribbonPrice = variant.priceFrom ?? product.priceFrom ?? 0
+
+  // Dane konkretnego wariantu taśmy — do unikalnej, transakcyjnej treści karty
+  // (anty-kanibalizacja względem landingu serii: tu „ten rozmiar", tam pełny przewodnik).
+  const ribbonWidthMm = isRibbon ? (parseInt(variant.attributes['Szerokość'] ?? '', 10) || null) : null
+  const ribbonCoreMm = isRibbon && gilza ? (parseInt(gilza, 10) || null) : null
+  const ribbonPrinterHint = !isRibbon ? null
+    : ribbonCoreMm === 12
+      ? 'Rdzeń 12 mm (0,5") — drukarki biurkowe Zebra (ZD611t, ZD621t).'
+    : ribbonCoreMm === 25
+      ? 'Rdzeń 25 mm (1") — drukarki mid-range, przemysłowe oraz napędy drukujące Zebra (ZT231, ZT411, ZT421, ZT510, ZT610, ZT620, ZE511/ZE521).'
+    : null
 
   // ── JSON-LD: HowTo schema "Jak obliczyć ilość etykiet z rolki" (tylko taśmy) ──
   const howToSchema = isRibbon && rollLength
@@ -411,7 +436,7 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
             <div className="flex items-start justify-between gap-4">
               <div className="mb-4">
                 <h1 className="text-2xl xs:text-3xl lg:text-4xl font-bold text-gray-900">
-                  {product.name} <span className="text-gray-700">{sizeLabel}</span>
+                  {product.name} <span className="text-gray-700">{sizeLabel}{colorLabel ? ` ${colorLabel}` : ''}</span>
                 </h1>
                 <p className="text-sm xs:text-base lg:text-lg font-medium text-gray-500 mt-1">
                   {ctx ? `${ctx.categoryLabel} — seria ${ctx.series.title}` : 'Etykiety'}
@@ -511,8 +536,35 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
 
         {/* Tabs / Details */}
         <div className="mt-12 lg:mt-16 space-y-12 lg:space-y-16">
-          {/* Opis serii — krótki, z linkiem do pełnego przewodnika */}
-          {ctx && (
+          {/* Opis — dla taśm krótkie, UNIKALNE podsumowanie wariantu (anty-kanibalizacja:
+              pełny przewodnik żyje na landingu serii). Dla etykiet zostaje pełny opis serii. */}
+          {ctx && isRibbon ? (
+            <section id="opis">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                {ctx.series.title} — wariant {sizeLabel}
+              </h2>
+              <div className="prose prose-gray max-w-none text-[15px] leading-relaxed">
+                <p className="text-gray-700 mb-4">
+                  {ctx.series.tagline} Ten wariant to <strong>{sizeLabel}</strong>
+                  {gilza && !/rdze/i.test(sizeLabel) ? <> na rdzeniu <strong>{gilza}</strong></> : null}, numer katalogowy{' '}
+                  <strong className="font-mono">{variant.partNumber}</strong>
+                  {rollLength ? <>, długość rolki <strong>{rollLength} m</strong></> : null}.
+                </p>
+                <p className="text-gray-700 mb-4">
+                  Pełną specyfikację techniczną modelu {ctx.series.title}, atesty, porównania z innymi
+                  taśmami Zebra oraz dobór do konkretnych etykiet znajdziesz w przewodniku po serii.
+                </p>
+                <p className="mt-6">
+                  <Link
+                    href={ctx.seriesUrl}
+                    className="inline-flex items-center gap-1 text-primary-600 font-semibold hover:underline"
+                  >
+                    Pełny przewodnik po serii {ctx.series.title} <ArrowRightIcon size={14} />
+                  </Link>
+                </p>
+              </div>
+            </section>
+          ) : ctx ? (
             <section id="opis">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 Czym jest {product.name}
@@ -542,6 +594,45 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
                   </Link>
                 </p>
               </div>
+            </section>
+          ) : null}
+
+          {/* Dobór i kompatybilność TEGO wariantu taśmy — treść transakcyjna, unikalna per wariant */}
+          {isRibbon && (ribbonWidthMm || ribbonPrinterHint || rollLength) && (
+            <section id="dobor-wariantu">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Dobór i kompatybilność tego wariantu</h2>
+              <ul className="space-y-3">
+                {ribbonWidthMm && (
+                  <li className="flex items-start gap-3 text-gray-700">
+                    <CheckIcon size={20} className="text-green-500 flex-shrink-0 mt-0.5" />
+                    <span>
+                      Szerokość <strong>{ribbonWidthMm} mm</strong> — pasuje do etykiet o szerokości
+                      do ok. <strong>{ribbonWidthMm - 2} mm</strong>. Taśma powinna być 2–5 mm szersza
+                      niż etykieta, co chroni głowicę przed bezpośrednim kontaktem z podłożem.
+                    </span>
+                  </li>
+                )}
+                {ribbonPrinterHint && (
+                  <li className="flex items-start gap-3 text-gray-700">
+                    <CheckIcon size={20} className="text-green-500 flex-shrink-0 mt-0.5" />
+                    <span>{ribbonPrinterHint}</span>
+                  </li>
+                )}
+                {rollLength && (
+                  <li className="flex items-start gap-3 text-gray-700">
+                    <CheckIcon size={20} className="text-green-500 flex-shrink-0 mt-0.5" />
+                    <span>
+                      Długość rolki <strong>{rollLength} m</strong>
+                      {ribbonCoreMm === 25 ? ' — format przemysłowy.' : ribbonCoreMm === 12 ? ' — format biurkowy.' : '.'}{' '}
+                      Liczbę etykiet z tej rolki policzysz kalkulatorem zużycia taśmy powyżej.
+                    </span>
+                  </li>
+                )}
+                <li className="flex items-start gap-3 text-gray-700">
+                  <CheckIcon size={20} className="text-green-500 flex-shrink-0 mt-0.5" />
+                  <span>Konstrukcja nawój zewnętrzny (Outside Coated) — pasuje do drukarek Zebra bez dodatkowej konfiguracji.</span>
+                </li>
+              </ul>
             </section>
           )}
 
@@ -579,8 +670,8 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
             </section>
           )}
 
-          {/* Atesty (z serii) */}
-          {ctx && ctx.series.certifications.length > 0 && (
+          {/* Atesty (z serii) — dla taśm pomijamy (żyją na landingu serii, anty-kanibalizacja) */}
+          {ctx && !isRibbon && ctx.series.certifications.length > 0 && (
             <section id="atesty">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Atesty i certyfikaty</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
