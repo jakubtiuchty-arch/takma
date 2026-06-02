@@ -233,7 +233,7 @@ export default async function RibbonSeriesPage({ params }: PageProps) {
               Warianty rozmiarowe — {series.title}
             </h2>
             <p className="text-gray-600">
-              Wszystkie {product.variants.length} {product.variants.length === 1 ? 'wariant' : product.variants.length < 5 ? 'warianty' : 'wariantów'} z modelu {series.title}. Użyj filtrów po lewej (szerokość, długość, rdzeń), żeby zawęzić listę.
+              Wszystkie {product.variants.length} {product.variants.length === 1 ? 'wariant' : product.variants.length < 5 ? 'warianty' : 'wariantów'} z modelu {series.title}. Użyj filtrów (szerokość, długość, rdzeń), żeby zawęzić listę.
             </p>
           </div>
           <RibbonVariantsTable

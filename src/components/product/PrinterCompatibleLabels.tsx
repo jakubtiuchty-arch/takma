@@ -96,8 +96,11 @@ function VariantCard({
   const rozmiar = variant.attributes['Rozmiar'] ?? ''
   const productImage = product.images[0]
   const hasRealImage = !!productImage && !productImage.includes('placeholder')
-  const liveAvailability = stockInfo?.found ? stockInfo.availability : variant.availability
-  const livePrice = stockInfo?.found && stockInfo.price ? stockInfo.price : variant.priceFrom
+  // Live nadpisuje editorial gdy dystrybutor zwrócił realny sygnał: found=true LUB totalStock>0
+  // (np. override Jarltech, który nie ustawia found). Brak sygnału → editorial fallback.
+  const liveSignal = !!stockInfo && (stockInfo.found || stockInfo.totalStock > 0)
+  const liveAvailability = liveSignal ? stockInfo!.availability : variant.availability
+  const livePrice = liveSignal && stockInfo!.price ? stockInfo!.price : variant.priceFrom
   const isUnavailable = liveAvailability === 'unavailable'
   const availability = AVAILABILITY_CONFIG[liveAvailability]
 

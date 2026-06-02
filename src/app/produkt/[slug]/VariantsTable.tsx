@@ -237,12 +237,15 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
 }) {
   const inRFQ = mounted ? isInCart(`${productSlug}__${variant.partNumber}`) : false
   const stock = stockData.get(variant.partNumber)
-  const avail = stock?.found
-    ? availabilityConfig[stock.availability]
+  // Live nadpisuje editorial gdy dystrybutor zwrócił realny sygnał: found=true LUB totalStock>0
+  // (np. override Jarltech, który nie ustawia found). Brak sygnału → editorial fallback.
+  const liveSignal = !!stock && (stock.found || stock.stockPL > 0 || stock.stockDE > 0 || stock.inDelivery > 0)
+  const avail = liveSignal
+    ? availabilityConfig[stock!.availability]
     : availabilityConfig[variant.availability]
-  const effectiveAvailability = stock?.found ? stock.availability : variant.availability
+  const effectiveAvailability = liveSignal ? stock!.availability : variant.availability
   const isUnavailable = !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
-  const livePrice = stock?.found && stock?.price ? stock.price : variant.priceFrom
+  const livePrice = liveSignal && stock!.price ? stock!.price : variant.priceFrom
   const cartPrice = variant.promoPrice || livePrice
 
   return (
@@ -326,12 +329,15 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
 }) {
   const inRFQ = mounted ? isInCart(`${productSlug}__${variant.partNumber}`) : false
   const stock = stockData.get(variant.partNumber)
-  const avail = stock?.found
-    ? availabilityConfig[stock.availability]
+  // Live nadpisuje editorial gdy dystrybutor zwrócił realny sygnał: found=true LUB totalStock>0
+  // (np. override Jarltech, który nie ustawia found). Brak sygnału → editorial fallback.
+  const liveSignal = !!stock && (stock.found || stock.stockPL > 0 || stock.stockDE > 0 || stock.inDelivery > 0)
+  const avail = liveSignal
+    ? availabilityConfig[stock!.availability]
     : availabilityConfig[variant.availability]
-  const effectiveAvailability = stock?.found ? stock.availability : variant.availability
+  const effectiveAvailability = liveSignal ? stock!.availability : variant.availability
   const isUnavailable = !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
-  const livePrice = stock?.found && stock?.price ? stock.price : variant.priceFrom
+  const livePrice = liveSignal && stock!.price ? stock!.price : variant.priceFrom
   const cartPrice = variant.promoPrice || livePrice
 
   return (
@@ -355,7 +361,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
         ))}
       </div>
 
-      {!stockLoading && stock?.found && (stock.stockPL > 0 || stock.stockDE > 0) && (
+      {!stockLoading && stock && (stock.stockPL > 0 || stock.stockDE > 0) && (
         <div className="flex items-center gap-3 text-xs text-gray-600">
           {stock.stockPL > 0 && (
             <span className="flex items-center gap-1">
@@ -371,7 +377,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
           )}
         </div>
       )}
-      {!stockLoading && stock?.found && stock.stockPL === 0 && stock.stockDE === 0 && stock.inDelivery > 0 && (
+      {!stockLoading && stock && stock.stockPL === 0 && stock.stockDE === 0 && stock.inDelivery > 0 && (
         <div className="flex items-center gap-2 text-xs text-gray-600">
           <span className="flex items-center gap-1">
             <span className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
@@ -465,7 +471,8 @@ export default function VariantsTable({ productSlug, productName, productImage, 
     const unavailable: ProductVariant[] = []
     for (const v of variants) {
       const stock = stockData.get(v.partNumber)
-      const effectiveAvailability = stock?.found ? stock.availability : v.availability
+      const liveSignal = !!stock && (stock.found || stock.stockPL > 0 || stock.stockDE > 0 || stock.inDelivery > 0)
+      const effectiveAvailability = liveSignal ? stock!.availability : v.availability
       if (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order') {
         unavailable.push(v)
       } else {

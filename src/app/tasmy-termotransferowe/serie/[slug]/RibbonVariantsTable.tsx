@@ -138,6 +138,8 @@ export default function RibbonVariantsTable({
   const [filterDlugosc, setFilterDlugosc] = useState<Set<number>>(new Set())
   const [filterRdzen, setFilterRdzen] = useState<Set<string>>(new Set())
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE)
+  // Mobile: panel filtrów zwinięty domyślnie, żeby produkty były od razu widoczne. Desktop (lg) zawsze widoczny.
+  const [showFilters, setShowFilters] = useState(false)
 
   /**
    * Cross-filtering: opcje danego filtra liczymy z wariantów pasujących do POZOSTAŁYCH filtrów.
@@ -289,19 +291,41 @@ export default function RibbonVariantsTable({
     setFilterRdzen(new Set())
     setVisibleCount(INITIAL_VISIBLE)
   }
-  const hasFilters =
-    search ||
-    filterSzerokosc.size > 0 ||
-    filterDlugosc.size > 0 ||
-    filterRdzen.size > 0
+  const activeFilterCount =
+    (search ? 1 : 0) +
+    filterSzerokosc.size +
+    filterDlugosc.size +
+    filterRdzen.size
+  const hasFilters = activeFilterCount > 0
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[260px,1fr] gap-6">
       {/* ── SIDEBAR FILTRÓW ─────────────────────────────────────── */}
       <aside className="space-y-4">
-        <div className="bg-white border border-slate-200 rounded-xl p-4 space-y-4 lg:sticky lg:top-6">
-          <div className="flex items-center justify-between">
-            <h3 className="text-sm font-bold text-gray-900">Filtry wariantów</h3>
+        {/* Mobile: przełącznik zwijający panel filtrów (na desktopie ukryty — panel zawsze widoczny). */}
+        <button
+          type="button"
+          onClick={() => setShowFilters(s => !s)}
+          aria-expanded={showFilters}
+          className="lg:hidden flex items-center justify-between w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm font-bold text-gray-900"
+        >
+          <span className="flex items-center gap-2">
+            Filtry wariantów
+            {activeFilterCount > 0 && (
+              <span className="bg-primary-600 text-white text-[10px] rounded-full min-w-[16px] h-4 px-1 flex items-center justify-center leading-none">
+                {activeFilterCount}
+              </span>
+            )}
+          </span>
+          <ChevronDownIcon
+            size={16}
+            className={`text-gray-400 transition-transform duration-200 ${showFilters ? 'rotate-180' : ''}`}
+          />
+        </button>
+
+        <div className={`${showFilters ? 'block' : 'hidden'} lg:block bg-white border border-slate-200 rounded-xl p-4 space-y-4 lg:sticky lg:top-6`}>
+          <div className="flex items-center justify-end lg:justify-between">
+            <h3 className="hidden lg:block text-sm font-bold text-gray-900">Filtry wariantów</h3>
             {hasFilters && (
               <button
                 onClick={clearAll}
@@ -403,7 +427,7 @@ export default function RibbonVariantsTable({
           </div>
         ) : (
           <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 gap-3 sm:gap-4">
               {visible.map(v => {
                 // Per-variant image: industrial dla ≥ 200 m, desktop dla < 200 m.
                 const lengthM = parseNumber(attr(v, 'Długość')) ?? 0
@@ -486,12 +510,15 @@ function VariantCard({
   const rdzen = attr(v, 'Rdzeń')
   const hasImage = !!productImage
 
-  // Live availability
+  // Live nadpisuje editorial gdy dystrybutor zwrócił realny sygnał: found=true (dane produktowe/cenowe)
+  // LUB totalStock>0 (np. override Jarltech, który nie ustawia found). Brak sygnału (found=false, stock 0
+  // = „Brak danych z dystrybutora") → zostaje editorial fallback (v.availability).
+  const liveSignal = !!stockInfo && (stockInfo.found || stockInfo.totalStock > 0)
   const liveAvailability: ProductVariant['availability'] =
-    stockInfo?.found ? stockInfo.availability : v.availability
+    liveSignal ? stockInfo!.availability : v.availability
 
   // Live price
-  const livePrice = stockInfo?.found && stockInfo.price ? stockInfo.price : v.priceFrom
+  const livePrice = liveSignal && stockInfo!.price ? stockInfo!.price : v.priceFrom
 
   // URL wariantu: /produkt/[slug]/[size]/[pn]
   const sizeSlug = ribbonSizeSlug(v)
@@ -517,8 +544,8 @@ function VariantCard({
             src={productImage}
             alt={`${manufacturerName} ${seriesTitle} ${sizeLabel}`}
             fill
-            sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
-            className="object-contain p-4"
+            sizes="(max-width: 640px) 50vw, (max-width: 1280px) 50vw, 33vw"
+            className="object-contain p-3 sm:p-4"
           />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center text-slate-300 text-xs">
@@ -528,12 +555,12 @@ function VariantCard({
       </div>
 
       {/* Body */}
-      <div className="p-5 flex flex-col flex-1 border-t border-slate-100">
+      <div className="p-3 sm:p-5 flex flex-col flex-1 border-t border-slate-100">
         <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-500 mb-1.5">
           {manufacturerName}
         </div>
 
-        <h4 className="text-base font-bold text-gray-900 leading-snug mb-1">
+        <h4 className="text-sm sm:text-base font-bold text-gray-900 leading-snug mb-1">
           {manufacturerName} {seriesTitle} {sizeLabel}
           {color && (
             <span className="inline-flex items-center gap-1 align-baseline">
@@ -569,17 +596,17 @@ function VariantCard({
           <div className="flex items-baseline gap-1.5 mb-3 min-h-[28px]">
             {livePrice ? (
               <>
-                <span className="text-xl font-bold text-gray-900">
+                <span className="text-lg sm:text-xl font-bold text-gray-900">
                   {livePrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
                 </span>
-                <span className="text-sm text-gray-500">netto</span>
+                <span className="text-xs sm:text-sm text-gray-500">netto</span>
               </>
             ) : (
               <span className="text-gray-400 text-sm">Zapytaj o cenę</span>
             )}
           </div>
 
-          <span className="block w-full text-center bg-[#A8F000] group-hover:bg-[#94d600] text-gray-900 font-semibold py-3 rounded-lg transition-colors text-sm">
+          <span className="block w-full text-center bg-[#A8F000] group-hover:bg-[#94d600] text-gray-900 font-semibold py-2.5 sm:py-3 rounded-lg transition-colors text-sm">
             Zobacz więcej
           </span>
         </div>

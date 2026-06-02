@@ -198,7 +198,7 @@ export default async function TransferSeriesPage({ params }: PageProps) {
               Warianty rozmiarowe — {series.title}
             </h2>
             <p className="text-gray-600">
-              Wszystkie {product.variants.length} {product.variants.length === 1 ? 'wariant' : product.variants.length < 5 ? 'warianty' : 'wariantów'} z serii {series.title}. Użyj filtrów po lewej (szerokość, wysokość, rdzeń), żeby zawęzić listę.
+              Wszystkie {product.variants.length} {product.variants.length === 1 ? 'wariant' : product.variants.length < 5 ? 'warianty' : 'wariantów'} z serii {series.title}. Użyj filtrów (szerokość, wysokość, rdzeń), żeby zawęzić listę.
             </p>
           </div>
           <SeriesVariantsTable

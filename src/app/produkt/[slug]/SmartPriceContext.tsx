@@ -173,8 +173,10 @@ export function SmartPriceProvider({
     // API odpowiedziało z danymi — buduj listę z cenami live
     const withLivePrices = allVariants.map(v => {
       const s = stockData.get(v.partNumber)
+      // Realny sygnał dostępności: found=true LUB totalStock>0 (override Jarltech bez found).
+      const liveSignal = !!s && (s.found || s.totalStock > 0)
       const livePrice = (s?.found && s?.price) ? s.price : null
-      const isAvailable = s?.found ? s.availability === 'available' : false
+      const isAvailable = liveSignal ? s!.availability === 'available' : false
       return { ...v, effectivePrice: livePrice ?? v.price, hasStock: isAvailable, apiFound: !!s?.found }
     })
     // Sortuj: warianty z ceną live PRZED wariantami ze statyczną ceną, potem po cenie
