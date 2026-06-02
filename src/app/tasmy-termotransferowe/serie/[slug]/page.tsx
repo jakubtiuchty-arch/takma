@@ -135,7 +135,9 @@ export default async function RibbonSeriesPage({ params }: PageProps) {
         {series.heroImage && (
           <>
             <div
-              className="absolute right-0 top-0 bottom-0 w-3/5 lg:w-1/2 pointer-events-none"
+              className={`absolute top-0 bottom-0 pointer-events-none ${
+                series.heroImageCover ? 'inset-x-0' : 'right-0 w-3/5 lg:w-1/2'
+              }`}
               style={
                 series.heroMaskLeft
                   ? {
