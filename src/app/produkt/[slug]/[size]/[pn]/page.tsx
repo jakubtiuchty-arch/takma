@@ -211,6 +211,9 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
   const manufacturer = getManufacturerById(product.manufacturerId)
   const gilza = variant.attributes['Rdzeń (gilza)'] ?? variant.attributes['Rdzeń']
   const qtyInRoll = variant.attributes['Etykiet w rolce']
+  // Wersja wariantu (np. 8000D Jewelry: ze skrzydełkami / bez skrzydełek) — różnicuje warianty
+  // o identycznym rozmiarze. Wyświetlana w "Kluczowych parametrach", nie w nazwie.
+  const wersja = variant.attributes['Wersja']
   const url = `${siteUrl}/produkt/${product.slug}/${size}/${pn}`
 
   // Etykieta rozmiaru — fallback na nazwę wariantu/PN gdy brak Rozmiar (część wariantów TT)
@@ -329,6 +332,19 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
       ? 'Rdzeń 12 mm (0,5") — drukarki biurkowe Zebra (ZD611t, ZD621t).'
     : ribbonCoreMm === 25
       ? 'Rdzeń 25 mm (1") — drukarki mid-range, przemysłowe oraz napędy drukujące Zebra (ZT231, ZT411, ZT421, ZT510, ZT610, ZT620, ZE511/ZE521).'
+    : null
+
+  // Dane konkretnego wariantu etykiety (termicznej/TT) — unikalna, transakcyjna treść per wariant,
+  // żeby każdy rozmiar/PN miał własny opis (brak duplicate content między wariantami serii).
+  const wersjaLabel = !isRibbon ? (variant.attributes['Wersja'] || null) : null
+  const labelCoreMm = !isRibbon && gilza ? (parseInt(gilza, 10) || null) : null
+  const labelCoreHint = isRibbon ? null
+    : labelCoreMm === 76
+      ? 'rdzeń 76 mm (3") — drukarki przemysłowe Zebra (ZT411, ZT421, ZT510, ZT610, ZT620).'
+    : labelCoreMm === 25
+      ? 'rdzeń 25 mm (1") — drukarki biurkowe, mid-range i przemysłowe Zebra.'
+    : labelCoreMm === 19
+      ? 'rdzeń 19 mm (3/4") — kompaktowe drukarki biurkowe Zebra.'
     : null
 
   // ── JSON-LD: HowTo schema "Jak obliczyć ilość etykiet z rolki" (tylko taśmy) ──
@@ -484,6 +500,12 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
                     <dd className="font-medium text-gray-900">{rozmiar}</dd>
                   </div>
                 )}
+                {wersja && (
+                  <div>
+                    <dt className="text-sm text-gray-500">Wersja</dt>
+                    <dd className="font-medium text-gray-900">{wersja}</dd>
+                  </div>
+                )}
                 {gilza && (
                   <div>
                     <dt className="text-sm text-gray-500">Rdzeń (gilza)</dt>
@@ -567,24 +589,20 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
           ) : ctx ? (
             <section id="opis">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                Czym jest {product.name}
+                {ctx.series.title} — wariant {sizeLabel}
               </h2>
               <div className="prose prose-gray max-w-none text-[15px] leading-relaxed">
                 <p className="text-gray-700 mb-4">
-                  <LinkedText text={ctx.series.heroIntro} />
+                  {ctx.series.tagline} Ten wariant to <strong>{sizeLabel}</strong>
+                  {wersjaLabel ? <> w wersji <strong>{wersjaLabel}</strong></> : null}
+                  {gilza && !/rdze/i.test(sizeLabel) ? <> na rdzeniu <strong>{gilza}</strong></> : null}
+                  {qtyInRoll ? <>, <strong>{qtyInRoll}</strong> na rolce</> : null}, numer katalogowy{' '}
+                  <strong className="font-mono">{variant.partNumber}</strong>.
                 </p>
-
-                {ctx.series.keyHighlights.length > 0 && (
-                  <>
-                    <h3 className="text-lg font-bold text-gray-900 mt-6 mb-3">Kluczowe cechy</h3>
-                    <ul className="list-disc pl-5 space-y-1.5 mb-4 text-gray-700 marker:text-gray-400">
-                      {ctx.series.keyHighlights.map((h, i) => (
-                        <li key={i}><LinkedText text={h} /></li>
-                      ))}
-                    </ul>
-                  </>
-                )}
-
+                <p className="text-gray-700 mb-4">
+                  Pełny opis serii {ctx.series.title}, parametry techniczne, atesty i dobór do
+                  zastosowań znajdziesz w przewodniku po serii.
+                </p>
                 <p className="mt-6">
                   <Link
                     href={ctx.seriesUrl}
@@ -596,6 +614,46 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
               </div>
             </section>
           ) : null}
+
+          {/* Dobór i kompatybilność TEGO wariantu etykiety — treść unikalna per wariant (SEO/anty-duplikacja) */}
+          {ctx && !isRibbon && (rozmiar || labelCoreHint || qtyInRoll || wersjaLabel) && (
+            <section id="dobor-wariantu">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Ten wariant w praktyce</h2>
+              <ul className="space-y-3">
+                {rozmiar && (
+                  <li className="flex items-start gap-3 text-gray-700">
+                    <CheckIcon size={20} className="text-green-500 flex-shrink-0 mt-0.5" />
+                    <span>
+                      Rozmiar <strong>{rozmiar}</strong> — upewnij się, że szerokość nośnika obsługuje
+                      Twoja drukarka (np. ZD230d do 104 mm, ZT411 do 114 mm).
+                    </span>
+                  </li>
+                )}
+                {wersjaLabel && (
+                  <li className="flex items-start gap-3 text-gray-700">
+                    <CheckIcon size={20} className="text-green-500 flex-shrink-0 mt-0.5" />
+                    <span>Wersja <strong>{wersjaLabel}</strong> — różnicuje sposób mocowania względem drugiego wariantu o tym samym rozmiarze.</span>
+                  </li>
+                )}
+                {labelCoreHint && (
+                  <li className="flex items-start gap-3 text-gray-700">
+                    <CheckIcon size={20} className="text-green-500 flex-shrink-0 mt-0.5" />
+                    <span>Gilza — {labelCoreHint}</span>
+                  </li>
+                )}
+                {qtyInRoll && (
+                  <li className="flex items-start gap-3 text-gray-700">
+                    <CheckIcon size={20} className="text-green-500 flex-shrink-0 mt-0.5" />
+                    <span><strong>{qtyInRoll}</strong> na rolce — im więcej etykiet, tym rzadsza wymiana rolki w drukarce.</span>
+                  </li>
+                )}
+                <li className="flex items-start gap-3 text-gray-700">
+                  <CheckIcon size={20} className="text-green-500 flex-shrink-0 mt-0.5" />
+                  <span>Druk direct thermal — bez taśmy barwiącej, pasuje do drukarek Zebra obsługujących druk termiczny.</span>
+                </li>
+              </ul>
+            </section>
+          )}
 
           {/* Dobór i kompatybilność TEGO wariantu taśmy — treść transakcyjna, unikalna per wariant */}
           {isRibbon && (ribbonWidthMm || ribbonPrinterHint || rollLength) && (
