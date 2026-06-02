@@ -396,28 +396,33 @@ export async function GET(request: NextRequest) {
       const totalStock = stockPL + stockDE + inDelivery
 
       // Cena: porównanie w PLN.
-      // Wszyscy dystrybutorzy zwracają `unitPrice` AS-IS z API. Dla większości produktów
-      // (etykiety, drukarki, terminale) to cena ZA 1 SZTUKĘ — pakowanie 12/BOX itp.
-      // to tylko MOQ (minimum order quantity), nie wpływa na cenę.
+      // Korekta pakietowa. Kupujemy w kartonach/pakietach, sprzedajemy na sztuki (rolki),
+      // więc cenę pakietu trzeba podzielić przez liczbę sztuk w pakiecie.
       //
-      // WYJĄTEK: TAŚMY TERMOTRANSFEROWE — BlueStar i Jarltech zwracają cenę PAKIETU
-      // (6 lub 12 rolek), bo tak Zebra je sprzedaje hurtowo. Dla taśm dzielimy przez
-      // `multipleQty` (z BlueStar, źródło prawdy o packagingu Zebra) lub /12 fallback.
-      // Ingram już dla taśm zwraca cenę per-szt., więc go nie ruszamy.
+      // BLUESTAR: `unitPrice` to ZAWSZE cena PAKIETU (kartonu). BlueStar podaje
+      // `multipleQty` (= multipleQtyForSales) = liczba sztuk w kartonie. Dzielimy przez nią.
+      //   - Etykiety: karton np. 4 rolki (multipleQty=4) — POTWIERDZONE na PN 3011713,
+      //     gdzie BlueStar 117,48 EUR/karton ÷ 4 = 29,37 EUR/rolkę (≈ Jarltech 29,87 EUR/rolkę).
+      //   - Taśmy: pakiet 6/12 rolek; gdy API nie poda multipleQty → fallback /12.
+      //   - multipleQty=1 → brak podziału.
+      // JARLTECH: dla TAŚM cena pakietu (jak BlueStar) → dziel; dla ETYKIET cena za 1 rolkę
+      //   (PN 3011713: 29,87 EUR/rolkę) → NIE dziel.
+      // INGRAM: zawsze cena per-szt. (PLN) → nigdy nie dzielimy.
       const isRibbon = isRibbonPN(pn)
-      const ribbonPackagingUnit = isRibbon
-        ? (bs?.multipleQty && bs.multipleQty > 1 ? bs.multipleQty : 12)
-        : 1
+      const bsPackagingUnit = bs?.multipleQty && bs.multipleQty > 1
+        ? bs.multipleQty
+        : (isRibbon ? 12 : 1)
+      const jarltechPackagingUnit = isRibbon ? bsPackagingUnit : 1
 
       const ingramPLN = ingFound ? ing!.ingramPrice : undefined
       const bluestarPLN = (bsFound && bs!.unitPrice)
-        ? Math.round((bs!.unitPrice * eurRate / ribbonPackagingUnit) * 100) / 100
+        ? Math.round((bs!.unitPrice * eurRate / bsPackagingUnit) * 100) / 100
         : undefined
 
       let jarltechPLN: number | undefined
       if (jlFound && jl!.unitPrice) {
         const rawJarltechPLN = jl!.unitPrice * eurRate
-        jarltechPLN = Math.round((rawJarltechPLN / ribbonPackagingUnit) * 100) / 100
+        jarltechPLN = Math.round((rawJarltechPLN / jarltechPackagingUnit) * 100) / 100
       }
 
       // Min z trzech dystrybutorów (po korekcie pakietowej dla taśm)

@@ -3,13 +3,15 @@ import { prisma } from '@/lib/db'
 import { lookupStock as ingramLookup } from '@/lib/ingram'
 import { lookupStock as bluestarLookup } from '@/lib/bluestar'
 import { products } from '@/data/products'
+import { isRibbonPN } from '@/data/transfer-ribbon-products'
 import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
 
 export const maxDuration = 300 // 5 minutes
 
-const MARGIN = 1.10 // 10% margin (same as /api/stock)
-const VAT = 1.23    // 23% VAT
+const MARGIN = 1.10        // 10% margin (same as /api/stock)
+const RIBBON_MARGIN = 1.20 // 20% margin dla taśm (same as /api/stock)
+const VAT = 1.23           // 23% VAT
 
 const EUR_RATE_FALLBACK = 4.30
 
@@ -173,14 +175,24 @@ export async function GET(request: NextRequest) {
           const inDelivery = (ing?.inDelivery ?? 0) + (bsFound ? (bs!.qtyExpected ?? 0) : 0) + jtIncoming
           const totalStock = stockPL + stockDE + inDelivery
 
-          // Price: compare in PLN (Ingram already PLN, BlueStar EUR->PLN)
+          // Price: compare in PLN (Ingram already PLN, BlueStar/Jarltech EUR->PLN).
+          // Korekta pakietowa — identyczna jak w /api/stock: kupujemy w kartonach, sprzedajemy
+          // na sztuki. BlueStar `unitPrice` to ZAWSZE cena pakietu → dziel przez multipleQty
+          // (etykiety: karton np. 4 rolki; taśmy: 6/12, fallback /12). Jarltech: dla taśm cena
+          // pakietu → dziel; dla etykiet cena za 1 rolkę → nie dziel. Ingram zawsze per-szt.
+          const isRibbon = isRibbonPN(pn)
+          const bsPackagingUnit = bs?.multipleQty && bs.multipleQty > 1
+            ? bs.multipleQty
+            : (isRibbon ? 12 : 1)
+          const jarltechPackagingUnit = isRibbon ? bsPackagingUnit : 1
+
           const ingramPLN = ingFound ? ing!.ingramPrice : undefined
           const bluestarPLN = (bsFound && bs!.unitPrice)
-            ? Math.round(bs!.unitPrice * eurRate * 100) / 100
+            ? Math.round((bs!.unitPrice * eurRate / bsPackagingUnit) * 100) / 100
             : undefined
 
           const jarltechPLN = (jtFound && jt!.unitPrice)
-            ? Math.round(jt!.unitPrice * eurRate * 100) / 100
+            ? Math.round((jt!.unitPrice * eurRate / jarltechPackagingUnit) * 100) / 100
             : undefined
 
           const prices = [ingramPLN, bluestarPLN, jarltechPLN].filter(
@@ -193,7 +205,8 @@ export async function GET(request: NextRequest) {
           let ingramPrice: number | undefined
 
           if (bestRawPricePLN != null && bestRawPricePLN > 0) {
-            price = Math.round(bestRawPricePLN * MARGIN * 100) / 100
+            const marginForPN = isRibbon ? RIBBON_MARGIN : MARGIN
+            price = Math.round(bestRawPricePLN * marginForPN * 100) / 100
             priceBrutto = Math.round(price * VAT * 100) / 100
             ingramPrice = bestRawPricePLN
           }
