@@ -161,24 +161,29 @@ export default async function RibbonSeriesPage({ params }: PageProps) {
                 aria-hidden="true"
               />
             </div>
-            {/* Gradient overlay tylko po lewej żeby tekst pozostał czytelny — gdy używamy custom
-                heroBackgroundGradient, krócej (zostaje miejsce na widoczność gradientu tła). */}
-            <span
-              aria-hidden="true"
-              className={`absolute inset-0 pointer-events-none bg-gradient-to-r ${
-                series.heroBackgroundGradient
-                  ? 'from-[#0f172a] via-[#0f172a] via-35% to-transparent'
-                  : 'from-slate-950 via-slate-950 via-60% to-transparent'
-              }`}
-            />
+            {/* Gradient overlay tylko po lewej żeby tekst pozostał czytelny. Pomijamy dla banerów
+                cover (heroImageCover) — to czyste, gotowe grafiki z ciemną lewą stroną. */}
+            {!series.heroImageCover && (
+              <span
+                aria-hidden="true"
+                className={`absolute inset-0 pointer-events-none bg-gradient-to-r ${
+                  series.heroBackgroundGradient
+                    ? 'from-[#0f172a] via-[#0f172a] via-35% to-transparent'
+                    : 'from-slate-950 via-slate-950 via-60% to-transparent'
+                }`}
+              />
+            )}
           </>
         )}
-        <div
-          className="absolute inset-0 opacity-30"
-          style={{
-            background: `radial-gradient(circle at 80% 20%, ${series.accent}, transparent 60%), radial-gradient(circle at 20% 80%, ${series.accent}40, transparent 50%)`,
-          }}
-        />
+        {/* Radialny akcent koloru — pomijamy dla banerów cover (mają własną kolorystykę i glow). */}
+        {!series.heroImageCover && (
+          <div
+            className="absolute inset-0 opacity-30"
+            style={{
+              background: `radial-gradient(circle at 80% 20%, ${series.accent}, transparent 60%), radial-gradient(circle at 20% 80%, ${series.accent}40, transparent 50%)`,
+            }}
+          />
+        )}
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
           {/* Breadcrumbs */}

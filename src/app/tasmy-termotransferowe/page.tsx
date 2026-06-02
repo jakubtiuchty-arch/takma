@@ -318,7 +318,7 @@ function CategoryGuide() {
         name: 'Którą taśmę Zebra wybrać do mojego zastosowania?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Zebra 2300 Wax — bestseller, papier ekonomiczny, magazyn, wysyłki, sprzedaż detaliczna. Zebra 2100 European Wax — najwyższa prędkość (print-and-apply), druk na matowych syntetykach, lepsza odporność nadruku na ścieranie. Zebra 3200 Wax/Resin — kompromis cena/jakość, handel z wymaganiami odpornościowymi, niektóre folie polipropylenowe. Zebra 3400 Wax/Resin — folia polietylenowa (kosmetyki), mróz z tarciem. Zebra 5095 Resin — wszystkie folie poliestrowe (Z-Ultimate), elektronika, oznaczenia mienia. Zebra 5100 Premium Resin — tabliczki znamionowe, UL/cUL, długoterminowa trwałość. Zebra 8000 ChemResist — chemia, paliwa, lotnictwo (ekstremalna odporność).',
+          text: 'Zebra 2300 Wax — bestseller, papier ekonomiczny, magazyn, wysyłki, sprzedaż detaliczna. Zebra 2100 European Wax — najwyższa prędkość (print-and-apply), druk na matowych syntetykach, lepsza odporność nadruku na ścieranie. Zebra 3200 Wax/Resin — kompromis cena/jakość, handel z wymaganiami odpornościowymi, niektóre folie polipropylenowe. Zebra 3400 Wax/Resin — trudne warunki: ciepło, para, ścieranie, tarcie (huty stali, motoryzacja, tabliczki znamionowe). Zebra 5095 Resin — wszystkie folie poliestrowe (Z-Ultimate), elektronika, oznaczenia mienia. Zebra 5100 Premium Resin — tabliczki znamionowe, UL/cUL, długoterminowa trwałość. Zebra 8000 ChemResist — chemia, paliwa, lotnictwo (ekstremalna odporność).',
         },
       },
       {
@@ -577,7 +577,7 @@ function CategoryGuide() {
               <tr>
                 <td className="p-3 font-medium">Papier z atestem żywności (8000T All-Temp)</td>
                 <td className="p-3"><Link href="/tasmy-termotransferowe/serie/2300-wax" className="text-primary-600 hover:underline">Zebra 2300 Wax</Link></td>
-                <td className="p-3 text-gray-600">Zebra 3400 Wax/Resin (gdy mróz + tarcie)</td>
+                <td className="p-3 text-gray-600">Zebra 3400 Wax/Resin (gdy ciepło + ścieranie)</td>
               </tr>
               <tr>
                 <td className="p-3 font-medium">Polipropylen biały (PolyPro 3000T)</td>
