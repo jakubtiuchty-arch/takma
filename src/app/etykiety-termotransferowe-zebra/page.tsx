@@ -8,6 +8,7 @@ import {
   type TransferLabelSubcategory,
 } from '@/data/transfer-label-series'
 import { ChevronRightIcon, CheckIcon, ArrowRightIcon, ShieldCheckIcon } from '@/components/ui/Icons'
+import CommonDefinitionsSchema from '@/components/schemas/CommonDefinitions'
 
 const siteUrl = 'https://www.takma.com.pl'
 const SLUG = 'etykiety-termotransferowe'
@@ -137,11 +138,58 @@ export default function Page() {
     })),
   }
 
+  // TechArticle — symetria ze stronami [subcategory] i serie. Sygnał treści technicznej
+  // dla AI engines + dateModified (fresh signal).
+  const techArticleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: 'Etykiety termotransferowe Zebra — przewodnik wyboru (papier, folia, specjalne)',
+    description: 'Kompletny przewodnik po etykietach termotransferowych Zebra: różnica DT vs TT, trzy grupy materiałowe (papier, folia poliestrowa/BOPP/PE, specjalne), dobór taśmy barwiącej i 16 serii w 950+ wariantach.',
+    url,
+    inLanguage: 'pl-PL',
+    proficiencyLevel: 'Expert',
+    about: [
+      { '@type': 'Thing', name: 'Etykiety termotransferowe' },
+      { '@type': 'Thing', name: 'Druk termotransferowy' },
+      { '@type': 'Thing', name: 'Druk termiczny bezpośredni' },
+      { '@type': 'Thing', name: 'Folia poliestrowa PET' },
+      { '@type': 'Thing', name: 'Polipropylen BOPP' },
+      { '@type': 'Thing', name: 'Taśma barwiąca' },
+      { '@type': 'Thing', name: 'UL Recognized Component' },
+    ],
+    publisher: { '@type': 'Organization', name: 'TAKMA', url: siteUrl },
+    audience: {
+      '@type': 'BusinessAudience',
+      audienceType: 'Specjaliści ds. zakupów technicznych, inżynierowie produkcji, kierownicy magazynów, dział regulacyjny',
+    },
+    datePublished: '2026-05-29',
+    dateModified: '2026-05-31',
+  }
+
+  // HowTo — odwzorowuje sekcje "Jak wybrać materiał" + "Jak dobrać taśmę barwiącą" (widoczne na stronie).
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'Jak dobrać etykietę termotransferową',
+    description: 'Pięć kroków doboru etykiety termotransferowej Zebra: trwałość, materiał, taśma barwiąca, drukarka i rozmiar.',
+    inLanguage: 'pl-PL',
+    step: [
+      { '@type': 'HowToStep', position: 1, name: 'Określ wymaganą trwałość', text: 'Do 1–2 lat bez chemikaliów → papier. Lata, kontakt z rozpuszczalnikami, produkt końcowy, certyfikat UL → folia. Krioprzechowywanie, plomby, worki z krwią → etykiety specjalne.' },
+      { '@type': 'HowToStep', position: 2, name: 'Wybierz materiał', text: 'Papier (Z-Perform, Z-Select) — ekonomia, magazyn, wysyłka. Folia (Z-Ultimate PET, PolyPro BOPP, PolyE) — odporność na wodę, chemikalia, UV. Specjalne — zastosowania niszowe.' },
+      { '@type': 'HowToStep', position: 3, name: 'Dobierz taśmę barwiącą', text: 'Papier → taśma woskowa (Zebra 2300) lub woskowo-żywiczna (3200). Folia poliestrowa → taśma żywiczna (5095). Zła kombinacja media + taśma to najczęstsza przyczyna ścieralnego nadruku.' },
+      { '@type': 'HowToStep', position: 4, name: 'Sprawdź drukarkę', text: 'Etykiety TT wymagają drukarki z funkcją druku termotransferowego (modele z literą „t”: ZD230t, ZD421t, ZT411). Drukarki tylko termiczne bezpośrednie nie obsługują taśm.' },
+      { '@type': 'HowToStep', position: 5, name: 'Dobierz rozmiar i rdzeń', text: 'Wybierz wymiar etykiety i średnicę rdzenia rolki zgodną z drukarką (25 mm dla biurkowych, 76 mm dla przemysłowych). Filtry rozmiarowe na stronie serii zawężą listę wariantów.' },
+    ],
+  }
+
   return (
     <main className="bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(techArticleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <CommonDefinitionsSchema />
 
       {/* HERO */}
       <section className="relative bg-slate-950 text-white overflow-hidden">

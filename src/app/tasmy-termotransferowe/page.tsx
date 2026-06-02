@@ -9,6 +9,7 @@ import {
   ArrowRightIcon,
   ShieldCheckIcon,
 } from '@/components/ui/Icons'
+import CommonDefinitionsSchema from '@/components/schemas/CommonDefinitions'
 
 const SLUG = 'tasmy-termotransferowe'
 const siteUrl = 'https://www.takma.com.pl'
@@ -165,6 +166,52 @@ export default function Page() {
     ],
   }
 
+  // TechArticle — sygnał dla AI engines, że to autorytatywna treść techniczna
+  // (symetria ze stronami etykiet TT). Zawiera dateModified (fresh signal).
+  const techArticleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: 'Taśmy termotransferowe Zebra — przewodnik wyboru (woskowe, woskowo-żywiczne, żywiczne)',
+    description: sub.seoDescription,
+    url: `${siteUrl}/${sub.slug}`,
+    inLanguage: 'pl-PL',
+    proficiencyLevel: 'Expert',
+    about: [
+      { '@type': 'Thing', name: 'Taśmy termotransferowe' },
+      { '@type': 'Thing', name: 'Taśma woskowa' },
+      { '@type': 'Thing', name: 'Taśma woskowo-żywiczna' },
+      { '@type': 'Thing', name: 'Taśma żywiczna' },
+      { '@type': 'Thing', name: 'Druk termotransferowy' },
+      { '@type': 'Thing', name: 'Nawój zewnętrzny' },
+      { '@type': 'Thing', name: 'Dobór taśmy do drukarki' },
+      { '@type': 'Thing', name: 'Dobór taśmy do etykiety' },
+    ],
+    publisher: { '@type': 'Organization', name: 'TAKMA', url: siteUrl },
+    audience: {
+      '@type': 'BusinessAudience',
+      audienceType: 'Specjaliści ds. zakupów, kierownicy magazynów, inżynierowie produkcji, działy logistyki',
+    },
+    datePublished: '2026-05-29',
+    dateModified: '2026-05-31',
+  }
+
+  // HowTo — odwzorowuje sekcję "Jak dobrać taśmę do drukarki" (widoczna na stronie).
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'Jak dobrać taśmę termotransferową do drukarki',
+    description: 'Sześć kroków doboru taśmy termotransferowej Zebra: technologia druku, nawój, rdzeń, długość rolki, szerokość i prędkość druku.',
+    inLanguage: 'pl-PL',
+    step: [
+      { '@type': 'HowToStep', position: 1, name: 'Sprawdź technologię druku', text: 'Upewnij się, że drukarka obsługuje druk termotransferowy — modele z literą „t” w nazwie (ZD230t, ZD411t, ZT411). Drukarki tylko termiczne bezpośrednie (ZD230d) nie biorą taśm.' },
+      { '@type': 'HowToStep', position: 2, name: 'Nawój zewnętrzny', text: 'Wszystkie taśmy Zebra mają warstwę barwiącą na zewnętrznej stronie rolki (standard producenta) — pasują do wszystkich drukarek Zebra bez konfiguracji.' },
+      { '@type': 'HowToStep', position: 3, name: 'Średnica rdzenia', text: 'Drukarki biurkowe (rodzina ZD) biorą rdzeń 12 mm, średnie i przemysłowe — rdzeń 25 mm (1″). Sprawdź specyfikację drukarki.' },
+      { '@type': 'HowToStep', position: 4, name: 'Maksymalna długość rolki', text: 'Biurkowe: 74 m. Średniej wydajności (ZD611t, ZT231): do 300 m. Przemysłowe (ZT411, ZT421, ZT510): 450, 600 lub 900 m.' },
+      { '@type': 'HowToStep', position: 5, name: 'Szerokość taśmy', text: 'Dobierz taśmę o 2–5 mm szerszą niż etykieta (np. do etykiety 102 mm taśma 110 mm) — chroni głowicę przed bezpośrednim kontaktem z papierem.' },
+      { '@type': 'HowToStep', position: 6, name: 'Prędkość druku', text: 'Taśmy woskowe i woskowo-żywiczne drukują do 304 mm/s (12 ips), żywiczne do 254 mm/s (10 ips) — żywica potrzebuje więcej czasu na związanie.' },
+    ],
+  }
+
   return (
     <main className="bg-white">
       <script
@@ -175,6 +222,15 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(techArticleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
+      <CommonDefinitionsSchema />
 
       {/* HERO z obrazem — kontener obrazu po prawej (3/5 mobile, 1/2 desktop). Gradient
           od lewej pełen dark do 50% (ukrywa krawędź kontenera), potem fade do transparent. */}

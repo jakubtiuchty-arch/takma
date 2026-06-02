@@ -10,6 +10,7 @@ import {
 } from '@/data/transfer-label-series'
 import { ChevronRightIcon, CheckIcon, ArrowRightIcon, ShieldCheckIcon } from '@/components/ui/Icons'
 import LinkedText from '@/components/ui/LinkedText'
+import CommonDefinitionsSchema from '@/components/schemas/CommonDefinitions'
 
 const siteUrl = 'https://www.takma.com.pl'
 
@@ -714,6 +715,8 @@ export default async function TransferSubcategoryPage({ params }: PageProps) {
             '@type': 'BusinessAudience',
             audienceType: 'Specjaliści ds. zakupów technicznych, inżynierowie produkcji, kierownicy magazynów, dział regulacyjny',
           },
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-31',
         }
       : subcategory === 'specjalne'
       ? {
@@ -742,6 +745,34 @@ export default async function TransferSubcategoryPage({ params }: PageProps) {
             '@type': 'BusinessAudience',
             audienceType: 'Banki krwi, biobanki, laboratoria medyczne, służby mundurowe, dział bezpieczeństwa, producenci sprzętu UL-certyfikowanego',
           },
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-31',
+        }
+      : subcategory === 'papierowe'
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'TechArticle',
+          headline: 'Etykiety termotransferowe papierowe Zebra — przewodnik wyboru (Z-Perform, Z-Select)',
+          description: 'Przewodnik po papierowych etykietach termotransferowych Zebra: papier powlekany i niepowlekany, dobór taśmy woskowej i woskowo-żywiczej, analiza TCO oraz typowe błędy w magazynie i wysyłce.',
+          url,
+          inLanguage: 'pl-PL',
+          proficiencyLevel: 'Expert',
+          about: [
+            { '@type': 'Thing', name: 'Etykiety termotransferowe papierowe' },
+            { '@type': 'Thing', name: 'Papier powlekany' },
+            { '@type': 'Thing', name: 'Papier niepowlekany' },
+            { '@type': 'Thing', name: 'Taśma woskowa' },
+            { '@type': 'Thing', name: 'Taśma woskowo-żywiczna' },
+            { '@type': 'Thing', name: 'Etykiety magazynowe' },
+            { '@type': 'Thing', name: 'Etykiety wysyłkowe' },
+          ],
+          publisher: { '@type': 'Organization', name: 'TAKMA', url: siteUrl },
+          audience: {
+            '@type': 'BusinessAudience',
+            audienceType: 'Kierownicy magazynów, działy logistyki i wysyłki, specjaliści ds. zakupów',
+          },
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-31',
         }
       : null
 
@@ -753,6 +784,7 @@ export default async function TransferSubcategoryPage({ params }: PageProps) {
       {techArticleSchema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(techArticleSchema) }} />
       )}
+      <CommonDefinitionsSchema />
 
       {/* HERO */}
       <section className="relative bg-slate-950 text-white overflow-hidden">

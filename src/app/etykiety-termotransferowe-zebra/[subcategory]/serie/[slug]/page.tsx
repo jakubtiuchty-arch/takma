@@ -17,6 +17,7 @@ import {
 } from '@/components/ui/Icons'
 import LinkedText from '@/components/ui/LinkedText'
 import { stripMarkdown } from '@/lib/strip-markdown'
+import CommonDefinitionsSchema from '@/components/schemas/CommonDefinitions'
 import SeriesVariantsTable from './SeriesVariantsTable'
 
 const siteUrl = 'https://www.takma.com.pl'
@@ -109,11 +110,36 @@ export default async function TransferSeriesPage({ params }: PageProps) {
     })),
   }
 
+  // Product + AggregateOffer — lowPrice = series.priceFrom (zgodny z widocznym na
+  // stronie "od X zł netto"). offerCount = liczba wariantów rozmiarowych.
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: `Etykiety termotransferowe Zebra ${series.title}`,
+    description: series.seoDescription,
+    brand: { '@type': 'Brand', name: 'Zebra Technologies' },
+    category: 'Etykiety termotransferowe',
+    ...(product?.images?.[0] ? { image: product.images[0] } : {}),
+    ...(series.priceFrom
+      ? {
+          offers: {
+            '@type': 'AggregateOffer',
+            priceCurrency: 'PLN',
+            lowPrice: series.priceFrom,
+            offerCount: variantCount || undefined,
+            seller: { '@type': 'Organization', name: 'TAKMA', url: siteUrl },
+          },
+        }
+      : {}),
+  }
+
   return (
     <main className="bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      <CommonDefinitionsSchema />
 
       {/* ── HERO ── */}
       <section className="relative bg-slate-950 text-white overflow-hidden">

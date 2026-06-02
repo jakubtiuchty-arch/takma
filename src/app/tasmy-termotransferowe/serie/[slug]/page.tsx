@@ -19,6 +19,7 @@ import {
 } from '@/components/ui/Icons'
 import LinkedText from '@/components/ui/LinkedText'
 import { stripMarkdown } from '@/lib/strip-markdown'
+import CommonDefinitionsSchema from '@/components/schemas/CommonDefinitions'
 import RibbonVariantsTable from './RibbonVariantsTable'
 
 const siteUrl = 'https://www.takma.com.pl'
@@ -76,10 +77,13 @@ export default async function RibbonSeriesPage({ params }: PageProps) {
   const product = getProductBySlug(series.productId)
   const variantCount = product?.variants?.length ?? 0
 
-  // Schema — Article + BreadcrumbList + FAQPage
+  // Schema — TechArticle (zamiast generic Article — sygnał treści technicznej dla AI
+  // engines, symetria ze stronami etykiet TT) + BreadcrumbList + FAQPage + Product
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'TechArticle',
+    proficiencyLevel: 'Expert',
+    inLanguage: 'pl-PL',
     headline: series.h1,
     description: series.seoDescription,
     image: product?.images?.[0] ? [product.images[0]] : undefined,
@@ -92,6 +96,29 @@ export default async function RibbonSeriesPage({ params }: PageProps) {
     datePublished: '2026-05-29',
     dateModified: '2026-05-29',
     mainEntityOfPage: `${siteUrl}/tasmy-termotransferowe/serie/${series.slug}`,
+  }
+
+  // Product + AggregateOffer — lowPrice = series.priceFrom (zgodny z widocznym na
+  // stronie "od X zł netto"). offerCount = liczba wariantów rozmiarowych.
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: `Taśma termotransferowa Zebra ${series.title}`,
+    description: series.seoDescription,
+    brand: { '@type': 'Brand', name: 'Zebra Technologies' },
+    category: 'Taśmy termotransferowe',
+    ...(product?.images?.[0] ? { image: product.images[0] } : {}),
+    ...(series.priceFrom
+      ? {
+          offers: {
+            '@type': 'AggregateOffer',
+            priceCurrency: 'PLN',
+            lowPrice: series.priceFrom,
+            offerCount: variantCount || undefined,
+            seller: { '@type': 'Organization', name: 'TAKMA', url: siteUrl },
+          },
+        }
+      : {}),
   }
 
   const breadcrumbSchema = {
@@ -124,6 +151,8 @@ export default async function RibbonSeriesPage({ params }: PageProps) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      <CommonDefinitionsSchema />
 
       {/* ── HERO ───────────────────────────────────────────────────── */}
       {/* Jeśli seria ma `heroBackgroundGradient`, użyj go (matchuje kolor tła zdjęcia, brak widocznego
