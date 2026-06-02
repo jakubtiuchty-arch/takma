@@ -153,7 +153,7 @@ export default async function RibbonSeriesPage({ params }: PageProps) {
                 fill
                 priority
                 sizes="(max-width: 1024px) 60vw, 50vw"
-                className={series.heroImageCover ? 'object-cover opacity-100' : 'object-contain opacity-80'}
+                className={series.heroImageCover ? 'object-contain object-right opacity-100' : 'object-contain opacity-80'}
                 style={{
                   objectPosition: 'right center',
                   ...(series.heroImageScale
