@@ -142,7 +142,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
     productId: 'zebra-z-select-2000d',
     badge: 'Z-Select 2000D',
     title: 'Z-Select 2000D',
-    tagline: 'All-temp premium z klejem gumowym — aplikacja do −40 °C, atesty BfR XIV, FDA, EC 1935/2004.',
+    tagline: 'Premium powlekana z klejem gumowym all-temp — trzyma do −40 °C w chłodni, atesty BfR XIV, FDA, EC 1935/2004.',
     positioning: 'premium',
     material: 'papier-powlekany',
     glue: 'permanentny',
@@ -271,7 +271,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
     comparedWith: [
       {
         seriesSlug: 'z-perform-1000d',
-        whenToChooseThis: 'Wybierz Z-Select 2000D gdy potrzebujesz lepszej jakości skanu kodu, dłuższego życia etykiety (>12 mies.) lub atestów żywnościowych. Z-Perform 1000D wystarczy dla budżetowych wysyłek i pickingu.',
+        whenToChooseThis: 'Wybierz Z-Select 2000D do chłodni i mroźni (klej gumowy all-temp trzyma do −40 °C), do żywności w zimnie oraz gdy liczy się ostrość i ochrona nadruku (top-coat). Z-Perform 1000D to tańszy, niepowlekany papier z klejem akrylowym — lepszy do masowych wysyłek w temperaturze otoczenia i przy wyższym cieple (trzyma do +80 °C). Trwałość obu serii jest porównywalna (~1 rok indoor).',
       },
       {
         seriesSlug: 'polypro-4000d',
@@ -285,31 +285,31 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
     faq: [
       {
         question: 'Czym różni się Z-Select 2000D od Z-Perform 1000D?',
-        answer: 'Z-Select 2000D ma powłokę top-coat (ostrzejszy nadruk, dłuższe życie głowicy, do 24 mies. trwałości) i atesty żywnościowe. Z-Perform 1000D to tańszy papier niepowlekany do 12 mies. trwałości. Z-Select 2000D wybierasz dla retail, healthcare, żywności. Z-Perform 1000D dla wysyłek, pickingu, magazynu o krótkim cyklu życia etykiety.',
+        answer: 'Dwie kluczowe różnice. (1) Klej: Z-Select 2000D ma klej gumowy all-temperature, który trzyma od −40 °C do +50 °C — to wybór do chłodni i mroźni. Z-Perform 1000D ma klej akrylowy o zakresie −20 °C do +80 °C — lepszy przy wyższym cieple. (2) Powłoka: Z-Select 2000D jest powlekana (top-coat) — ostrzejszy nadruk kodów i ochrona przed wilgocią oraz olejami; Z-Perform 1000D jest niepowlekana i tańsza. Trwałość obu jest porównywalna (~1 rok indoor).',
       },
       {
         question: 'Czy Z-Select 2000D nadaje się do kontaktu z żywnością?',
-        answer: 'Tak — Z-Select 2000D ma pełen pakiet atestów żywnościowych: BfR XIV (Niemcy), FDA 175.105 (USA), ISEGA, EC 1935/2004 i EU 10/2011. Klej jest BPA-free i bez lateksu. Może być stosowana w kontakcie z żywnością suchą i wilgotną, a tłustą poprzez funkcjonalną barierę.',
+        answer: 'Tak. Klej Z-Select 2000D spełnia EC 1935/2004, EU 10/2011 oraz rekomendację BfR XIV dla bezpośredniego kontaktu z żywnością suchą i wilgotną nieoleistą, a także FDA 175.105 dla żywności suchej (lub przez funkcjonalną barierę). Materiał jest BPA-free i bez lateksu. W połączeniu z klejem all-temp to standard dla świeżej i mrożonej żywności w łańcuchu chłodniczym.',
       },
       {
         question: 'Czy Z-Select 2000D działa w chłodniach i mroźniach?',
-        answer: 'Zakres temperatur pracy: −20 °C do +80 °C (po prawidłowej aplikacji i 24 h dwell time). Minimalna temperatura aplikacji standardowej wersji to 0 °C. Dla aplikacji na zamrożone produkty bezpośrednio z chłodni/zamrażarki wybierz wariant All-Temp z klejem niskotemperaturowym.',
+        answer: 'Tak — to jej główny wyróżnik. Dzięki klejowi gumowemu all-temperature po prawidłowej aplikacji i czasie dwell time (~24 h) etykieta trzyma w zakresie −40 °C do +50 °C. Minimalna temperatura aplikacji to 0 °C — etykietę naklejasz w temperaturze pokojowej lub chłodni dodatniej, a następnie produkt może trafić do mroźni. To różnica vs Z-Perform 1000D (klej akrylowy, dolna granica −20 °C).',
       },
       {
         question: 'Do jakich drukarek Zebra pasuje Z-Select 2000D?',
-        answer: 'Pasuje do wszystkich drukarek Zebra obsługujących direct thermal: desktopowe (ZD220d, ZD230d, ZD411d, ZD421d, ZD621d, GK420d), mid-range (ZD611, ZT231), industrial (ZT411, ZT421, ZT510, ZT610, ZT620) i mobilne (ZQ511-630, QLn220-320). Dostępna w gilzach 19/25/35/76 mm — sprawdź który rozmiar obsługuje Twoja drukarka.',
+        answer: 'Do wszystkich drukarek Zebra obsługujących direct thermal: desktopowe (ZD220d, ZD230d, ZD411d, ZD421d, ZD621d, GK420d), mid-range (ZD611, ZT231), industrial (ZT411, ZT421, ZT510, ZT610, ZT620) i mobilne (ZQ511-630, QLn220-320). Dostępna w gilzach 19/25/35/76 mm — sprawdź który rozmiar obsługuje Twoja drukarka.',
       },
       {
         question: 'Jak długo trzyma nadruk na Z-Select 2000D?',
-        answer: 'Do 24 miesięcy w warunkach indoor (bez bezpośredniego słońca, temp. do +80 °C). To 2× więcej niż Z-Perform 1000D dzięki powłoce top-coat chroniącej facestock przed ścieraniem i UV. Dla nadruków >2 lat lub outdoor wybierz Z-Ultimate 3000T (termotransfer) lub PolyPro 4000D.',
+        answer: 'Przewidywany okres eksploatacji to do 1 roku w warunkach indoor (po prawidłowej aplikacji i ~24 h dwell time). Przewagą top-coatu nie jest dłuższe życie niż Z-Perform 1000D (oba ~1 rok), lecz ostrość i ochrona nadruku — powłoka chroni przed ścieraniem, wilgocią i olejami, co utrzymuje czytelność kodów. Dla nadruków o cyklu życia powyżej roku lub na zewnątrz wybierz etykiety termotransferowe (np. Z-Ultimate 3000T).',
       },
       {
         question: 'Czy są dostępne próbki Z-Select 2000D przed zakupem?',
-        answer: 'Tak. Zebra oferuje oficjalne rolki próbne: SAMPLE30820 dla drukarek mid-range/industrial, SAMPLE30820-D dla desktopowych. W TAKMA pomagamy dobrać próbkę pod Twoją drukarkę i powierzchnię docelową. Skontaktuj się przez formularz lub telefonicznie — próbki są darmowe dla klientów rozważających zamówienie od 10 rolek.',
+        answer: 'Tak. Zebra oferuje oficjalne rolki próbne: SAMPLE5311 dla drukarek mid-range/industrial oraz SAMPLE5311-D dla desktopowych (numer materiału RM 05311RM). W TAKMA pomagamy dobrać próbkę pod Twoją drukarkę i powierzchnię docelową — zalecamy 24-godzinny test przyczepności w realnych warunkach przed większym zamówieniem.',
       },
       {
-        question: 'Czy mogę używać Z-Select 2000D bez powłoki top-coat (tańsza wersja)?',
-        answer: 'Top-coat jest stałą cechą Z-Select 2000D — to ona odróżnia tę serię od tańszej Z-Perform 1000D. Jeśli nie potrzebujesz powłoki ochronnej i chcesz oszczędzić — wybierz Z-Perform 1000D (niepowlekana, do 12 mies. trwałości, bez top-coatu).',
+        question: 'Kiedy wybrać Z-Select 2000D zamiast taniej Z-Perform 1000D?',
+        answer: 'Gdy: (1) etykieta pracuje w chłodni lub mroźni (klej all-temp trzyma do −40 °C), (2) ma kontakt z żywnością w zimnie, (3) drukujesz drobne kody 2D wymagające ostrości, lub (4) etykieta jest narażona na wilgoć i oleje (chroni top-coat). Dla masowych wysyłek w temperaturze otoczenia, bez tych wymagań, tańszy Z-Perform 1000D jest wystarczający.',
       },
     ],
   },
@@ -433,7 +433,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
     comparedWith: [
       {
         seriesSlug: 'z-select-2000d',
-        whenToChooseThis: 'Wybierz Z-Perform 1000D gdy budżet jest priorytetem i etykieta ma krótkie życie (do 12 mies., wysyłki/picking). Z-Select 2000D wybierz dla lepszej jakości skanu, dłuższego życia i atestów żywnościowych premium.',
+        whenToChooseThis: 'Wybierz Z-Perform 1000D do masowych wysyłek i pickingu w temperaturze otoczenia — tańszy, niepowlekany, klej akrylowy trzyma do +80 °C. Z-Select 2000D wybierz do chłodni i mroźni (klej gumowy all-temp do −40 °C), do żywności w zimnie oraz gdy potrzebujesz ostrzejszego, chronionego nadruku (top-coat). Trwałość obu serii jest porównywalna (~1 rok indoor).',
       },
       {
         seriesSlug: 'z-essentials-1000d',
@@ -506,7 +506,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
       'Tear-resistant — odporny na rozdarcie (reusable totes, skrzynki)',
       'Atest FDA 175.105 dla indirect food contact (shrink wrap, opakowania)',
       'Suitable for fan-folding (składanka)',
-      'BPA-free / latex-free',
+      'Klej tak silny, że na stali i poliwęglanie materiał rwie się przed odklejeniem',
     ],
     sections: [
       {
@@ -547,7 +547,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
       {
         heading: 'Przechowywanie i okres eksploatacji',
         content:
-          'Zalecane warunki przechowywania: **6 miesięcy** w temperaturze **22 °C** przy wilgotności względnej **50%**. Przewidywany okres eksploatacji po aplikacji: **do 1 roku indoor** (po prawidłowej aplikacji i ~24 h dwell time).\n\nNumer materiału (Raw Material): **65843RM**. PDF nie podaje numeru rolki próbnej (Sample PN) — Zebra rekomenduje "Material Testing in End Application" — sprawdź w swoich warunkach przed dużym zamówieniem.',
+          'Zalecane warunki przechowywania: **6 miesięcy** w temperaturze **22 °C** przy wilgotności względnej **50%**. Przewidywany okres eksploatacji po aplikacji: **do 1 roku indoor** (po prawidłowej aplikacji i ~24 h dwell time).\n\nNumer materiału (Raw Material): **65843RM**. Przed dużym zamówieniem zalecamy test w docelowych warunkach — w TAKMA pomagamy dobrać próbkę pod konkretną drukarkę i powierzchnię.',
       },
     ],
     techSpecs: [
@@ -597,25 +597,23 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
     },
     certifications: [
       { name: 'FDA 175.105 (indirect food contact)', description: 'Atest do bezpośredniego kontaktu z suchą żywnością LUB rozdzielonej funkcjonalną barierą. Aplikacja na shrink wrap i opakowania żywności.' },
-      { name: 'BPA-free', description: 'Facestock polipropylenowy bez bisfenolu A.' },
-      { name: 'Latex-free adhesive', description: 'Klej akrylowy bez lateksu.' },
       { name: 'ISO 9001 certified', description: '23-punktowy proces kontroli jakości — spójność wydajności między partiami.' },
-      { name: 'Tear-resistant', description: 'Folia polipropylenowa odporna na rozdarcie — wytrzymuje wymiany etykiet w reusable totes i skrzynkach.' },
+      { name: 'Tear-resistant', description: 'Folia polipropylenowa odporna na rozdarcie — wytrzymuje wymiany etykiet w pojemnikach wielokrotnych i skrzynkach.' },
     ],
     comparedWith: [
       {
         seriesSlug: 'z-select-2000d',
-        whenToChooseThis: 'Wybierz PolyPro 4000D gdy etykieta ma kontakt z wodą, wilgocią, mrożeniem lub chemią. Z-Select 2000D do zastosowań indoor z atestem żywnościowym (papier, nie syntetyk).',
+        whenToChooseThis: 'Obie serie radzą sobie w chłodni, ale różni je materiał i atest. Wybierz PolyPro 4000D, gdy etykieta ma kontakt z wodą i wilgocią, musi być odporna na rozdarcie lub zdejmowana w całości (pojemniki wielokrotne) — to syntetyk z atestem indirect food (shrink wrap, opakowania). Z-Select 2000D to papier do bezpośredniego kontaktu z żywnością (BfR XIV, EC 1935/2004) z powłoką top-coat dla ostrego nadruku.',
       },
       {
         seriesSlug: 'z-perform-1000d',
-        whenToChooseThis: 'Wybierz PolyPro 4000D dla wodoodporności i wytrzymałości. Z-Perform 1000D to budżetowy papier do suchych etykiet wysyłkowych — nie wytrzymuje wilgoci.',
+        whenToChooseThis: 'Wybierz PolyPro 4000D dla wodoodporności, odporności na rozdarcie i pracy w chłodni/mroźni (synthetyk). Z-Perform 1000D to budżetowy papier do suchych etykiet wysyłkowych w temperaturze otoczenia — tańszy, ale nie wytrzymuje wilgoci ani mrożenia.',
       },
     ],
     faq: [
       {
         question: 'Czy PolyPro 4000D jest naprawdę wodoodporny?',
-        answer: 'Tak. Polipropylen jest naturalnie wodoodporny — nie wchłania wilgoci, nie pęka, nie strzępi się. Etykieta wytrzymuje deszcz, kondensację z chłodni, mrożenie. Materiał jest też tear-resistant (odporny na rozdarcie). UWAGA: wodoodporność dotyczy CZYSTEJ wody — dla rozpuszczalników i agresywnych chemikaliów PDF Zebry mówi "Not recommended".',
+        answer: 'Tak. Polipropylen jest naturalnie wodoodporny — nie wchłania wilgoci, nie pęka, nie strzępi się. Etykieta wytrzymuje deszcz, kondensację z chłodni i mrożenie. Materiał jest też odporny na rozdarcie (tear-resistant). Uwaga: wodoodporność dotyczy czystej wody i wilgoci — dla rozpuszczalników i agresywnych chemikaliów materiał nie jest rekomendowany.',
       },
       {
         question: 'Czy PolyPro 4000D nadaje się do żywności?',
@@ -627,15 +625,15 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
       },
       {
         question: 'Czy mogę używać PolyPro 4000D outdoor?',
-        answer: 'Tak, ale z ograniczeniami. Wodoodporność: bez problemu (deszcz, śnieg, wilgoć). UV: facestock DT ciemnieje pod długotrwałym słońcem (>30 dni) nawet pod top-coatem. Dla outdoor długoterminowo (>1 mies. na słońcu) wybierz etykietę termotransferową z lakierem UV (np. Z-Ultimate 3000T + UV laminat).',
+        answer: 'Tak, ale z ograniczeniami. Wodoodporność: bez problemu (deszcz, śnieg, wilgoć, kondensacja). UV: facestock direct thermal ciemnieje pod długotrwałym słońcem (>30 dni). Dla zastosowań zewnętrznych długoterminowych (powyżej miesiąca na słońcu) wybierz etykietę termotransferową z lakierem UV (np. Z-Ultimate 3000T).',
       },
       {
-        question: 'Czy PolyPro 4000D wytrzymuje rozpuszczalniki?',
-        answer: 'Większość typowych — tak (alkohol izopropylowy, etanol, oleje, smary, środki czystości). Agresywne (aceton, MEK, ksylen, toluen) mogą zniszczyć top-coat i nadruk. Dla kontaktu z silnymi chemikaliami wybierz etykietę z poliestru (termotransfer resin) lub Kapton.',
+        question: 'Czy PolyPro 4000D wytrzymuje chemikalia?',
+        answer: 'Ograniczenie. Słabe chemikalia (woda, woda słona, krew, płyny ustrojowe, środek do mycia szyb) — testuj w swojej aplikacji. Chemikalia średnie (alkohol, IPA, amoniak, wybielacz), agresywne (benzyna, smar, olej) oraz ekstremalne (aceton, MEK, TCE, ksylen) — nie są rekomendowane. Wodoodporność polipropylenu dotyczy wody i wilgoci, nie rozpuszczalników. Dla kontaktu z silnymi chemikaliami wybierz etykietę z poliestru (termotransfer żywiczny).',
       },
       {
         question: 'Do jakich drukarek Zebra pasuje PolyPro 4000D?',
-        answer: 'Do wszystkich Zebra obsługujących direct thermal: desktop (ZD220d, ZD230d, ZD411d, ZD421d, ZD621d), mid-range (ZD611, ZT231), industrial (ZT411, ZT421, ZT510, ZT610, ZT620) i mobile (ZQ511-630). UWAGA: przy druku na syntetyku ustaw darkness 2-3 stopnie wyżej niż dla papieru — głowica potrzebuje więcej ciepła.',
+        answer: 'Do drukarek Zebra direct thermal: desktopowych (ZD220d, ZD230d, ZD411d, ZD421d, ZD621d), przemysłowych (ZT411, ZT421, ZT510, ZT610, ZT620) oraz mobilnych (ZQ511-630). Uwaga: przy druku na syntetyku ustaw zaczernienie (darkness) o 2-3 stopnie wyżej niż dla papieru — głowica potrzebuje więcej ciepła, by nadruk dobrze związał się z polipropylenem.',
       },
     ],
   },
@@ -681,7 +679,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
       {
         heading: 'Główne zastosowania',
         content:
-          'ZeroLiner 2000D został zaprojektowany do użytku **wewnątrz pomieszczeń**, doskonale sprawdza się w **drukarkach mobilnych Zebra** oraz w drukarkach biurkowych. Branże i zastosowania według Zebry:\n\n- **Zakłady produkcyjne** — etykietowanie produkcji w toku (WIP)\n- **Handel detaliczny** — etykietowanie produktów i cen\n- **Usługi logistyczne** — etykiety wysyłkowe, zarządzanie zapasami i magazynami\n- **Inne** — zastosowania niepozwalające na użycie podkładu (gdzie liner byłby utrudnieniem)\n\nKlej kauczukowy daje stabilną przyczepność w typowych warunkach indoor — od **−10 °C do +60 °C** po prawidłowej aplikacji i dwell time ~24 h.',
+          'ZeroLiner 2000D został zaprojektowany do użytku **wewnątrz pomieszczeń**, doskonale sprawdza się w **drukarkach mobilnych Zebra** oraz w drukarkach biurkowych. Branże i zastosowania:\n\n- **Zakłady produkcyjne** — etykietowanie produkcji w toku (WIP)\n- **Handel detaliczny** — etykietowanie produktów i cen\n- **Usługi logistyczne** — etykiety wysyłkowe, zarządzanie zapasami i magazynami\n- **Inne** — zastosowania niepozwalające na użycie podkładu (gdzie liner byłby utrudnieniem)\n\nKlej kauczukowy daje stabilną przyczepność w typowych warunkach indoor — od **−10 °C do +60 °C** po prawidłowej aplikacji i dwell time ~24 h.',
       },
       {
         heading: 'Parametry techniczne',
@@ -753,11 +751,11 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
     comparedWith: [
       {
         seriesSlug: 'zeroliner-1100d',
-        whenToChooseThis: 'Wybierz ZeroLiner 2000D dla premium jakości (top-coat, ostry nadruk kodów, dłuższe życie). ZeroLiner 1100D to ekonomiczna wersja bez top-coatu — taniej, krótszy lifespan.',
+        whenToChooseThis: 'Obie to bezpodkładowy papier z klejem kauczukowym i silikonowaną powłoką. ZeroLiner 2000D (klasa wysoka) jest przetestowany także do drukarek mobilnych Zebra obok biurkowych. ZeroLiner 1100D (klasa podstawowa) jest sizowany pod drukarki biurkowe przy niskim/średnim nakładzie. Trwałość obu jest porównywalna (~1 rok indoor).',
       },
       {
         seriesSlug: 'zeroliner-4500d',
-        whenToChooseThis: 'Wybierz ZeroLiner 2000D dla standardowych operacji. ZeroLiner 4500D ma najdłuższy metraż na rolce — wybierz dla bardzo wysokich wolumenów gdzie chcesz maksymalnie zminimalizować wymiany rolki.',
+        whenToChooseThis: 'Wybierz ZeroLiner 2000D (klej kauczukowy, do +60 °C) do drukarek biurkowych i mobilnych w typowych warunkach. ZeroLiner 4500D (klej akrylowy, do +100 °C) wybierz do druku wysokonakładowego w trudnych warunkach na drukarkach przemysłowych.',
       },
       {
         seriesSlug: 'z-select-2000d',
@@ -771,7 +769,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
       },
       {
         question: 'Czy moja drukarka obsługuje linerless?',
-        answer: 'Sprawdź czy ma "linerless platen roller" lub opcję linerless. Drukarki Zebra z natywnym wsparciem: ZD611 Linerless, ZD621 Linerless, ZT411 z opcją linerless, mobilne ZQ510/520/630 Linerless. Jeśli masz standardową drukarkę bez tej opcji — wymień platen roller na linerless (ok. 200-400 zł) lub wybierz etykietę z linerem.',
+        answer: 'Sprawdź czy ma "linerless platen roller" lub opcję linerless. ZeroLiner 2000D jest sizowany pod drukarki mobilne i biurkowe Zebra z obsługą linerless: ZD611 Linerless, ZD621 Linerless oraz mobilne ZQ510/520/630 Linerless. Jeśli masz standardową drukarkę bez tej opcji — wymień platen roller na linerless lub wybierz etykietę z linerem.',
       },
       {
         question: 'Czy ZeroLiner 2000D jest droższy niż standardowa etykieta?',
@@ -779,7 +777,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
       },
       {
         question: 'Czy ZeroLiner 2000D nadaje się do żywności?',
-        answer: 'Nie ma oficjalnych atestów żywnościowych (BfR, FDA, ISEGA). Dla kontaktu z żywnością wybierz Z-Select 2000D (premium powlekana z atestami) lub Z-Perform 1000D (ekonomiczna z atestami). ZeroLiner 2000D używaj do etykiet wysyłkowych, sortowni, oznaczeń napojów.',
+        answer: 'Nie ma oficjalnych atestów żywnościowych (BfR XIV, FDA 175.105). Materiał jest natomiast bezfenolowy i zgodny z REACH, RoHS oraz EN71-3. Dla kontaktu z żywnością wybierz Z-Select 2000D lub Z-Perform 1000D (z pełnym pakietem atestów). ZeroLiner 2000D używaj do etykiet produktowych i cenowych w retailu, etykiet wysyłkowych, prac w toku oraz zarządzania zapasami.',
       },
       {
         question: 'Czy etykiety linerless się sklejają w rolce?',
@@ -833,7 +831,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
       {
         heading: 'Główne zastosowania',
         content:
-          'Branże i zastosowania według Zebry:\n\n- **Sektor produkcji** — etykietowanie produkcji w toku (WIP)\n- **Logistyka** — etykiety wysyłkowe, zarządzanie zapasami i magazynami\n- **Sektor publiczny** — poczta\n- **Inne** — zastosowania niepozwalające na użycie podkładu\n\nDobra odporność na **rozmazywanie i zarysowania** (silikonowana powłoka wierzchnia) sprawia, że nadruk pozostaje czytelny podczas transportu i obsługi paczek.',
+          'Branże i zastosowania:\n\n- **Sektor produkcji** — etykietowanie produkcji w toku (WIP)\n- **Logistyka** — etykiety wysyłkowe, zarządzanie zapasami i magazynami\n- **Sektor publiczny** — poczta\n- **Inne** — zastosowania niepozwalające na użycie podkładu\n\nDobra odporność na **rozmazywanie i zarysowania** (silikonowana powłoka wierzchnia) sprawia, że nadruk pozostaje czytelny podczas transportu i obsługi paczek.',
       },
       {
         heading: 'Parametry techniczne',
@@ -858,7 +856,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
       {
         heading: 'Porównanie z innymi etykietami ZeroLiner',
         content:
-          'Według noty Zebry dla rodziny ZeroLiner:\n\n- **ZeroLiner 1100D** — klasa podstawowa, do **drukarek biurkowych**, transport i logistyka standardowa\n- **ZeroLiner 2000D** — klasa wysoka, do **drukarek mobilnych i biurkowych**, wiele zastosowań\n- **ZeroLiner 4500D** — klasa premium, druk wysokonakładowy w trudnych warunkach, do **drukarek przemysłowych i biurkowych**',
+          'Rodzina ZeroLiner dzieli się według klasy i docelowej drukarki:\n\n- **ZeroLiner 1100D** — klasa podstawowa, do **drukarek biurkowych**, transport i logistyka standardowa (niski/średni nakład)\n- **ZeroLiner 2000D** — klasa wysoka, do **drukarek mobilnych i biurkowych**, wiele zastosowań\n- **ZeroLiner 4500D** — klasa premium, druk wysokonakładowy w trudnych warunkach, do **drukarek przemysłowych i biurkowych**\n\nWszystkie trzy są bezpodkładowe, bezfenolowe, z klejem kauczukowym i silikonowaną powłoką wierzchnią. Wybór zależy od typu drukarki i wolumenu, nie od jakości nadruku.',
       },
     ],
     techSpecs: [
@@ -913,7 +911,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
     comparedWith: [
       {
         seriesSlug: 'zeroliner-2000d',
-        whenToChooseThis: 'Wybierz ZeroLiner 1100D dla niskiej ceny i krótkiego cyklu życia (wysyłki paczkowe). ZeroLiner 2000D wybierz dla premium jakości nadruku i dłuższego życia (top-coat).',
+        whenToChooseThis: 'Obie to bezpodkładowy papier z klejem kauczukowym i silikonowaną powłoką. Wybierz ZeroLiner 1100D (klasa podstawowa) do drukarek biurkowych przy niskim/średnim nakładzie. ZeroLiner 2000D (klasa wysoka) wybierz, gdy drukujesz także na drukarkach mobilnych Zebra. Trwałość obu jest porównywalna (~1 rok indoor).',
       },
       {
         seriesSlug: 'z-perform-1000d',
@@ -923,19 +921,19 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
     faq: [
       {
         question: 'Czym różni się ZeroLiner 1100D od ZeroLiner 2000D?',
-        answer: '1100D nie ma powłoki top-coat — tańszy, krótszy lifespan nadruku, mniej ostry kod kreskowy. 2000D ma top-coat — droższy, do 24 mies. trwałości, ostry nadruk kodów. Wybierz 1100D dla budżetowych wysyłek paczkowych, 2000D dla premium operacji e-commerce.',
+        answer: 'Różni je klasa i docelowa drukarka, nie jakość nadruku — obie mają silikonowaną powłokę wierzchnią i klej kauczukowy. 1100D to klasa podstawowa zalecana do drukarek biurkowych (niski/średni nakład), z minimalną temperaturą aplikacji 5 °C. 2000D to klasa wysoka, przetestowana także do drukarek mobilnych Zebra, z minimalną temperaturą aplikacji 10 °C. Trwałość obu jest porównywalna (~1 rok indoor).',
       },
       {
         question: 'Czy ZeroLiner 1100D wymaga specjalnej drukarki?',
-        answer: 'Tak — wymaga drukarki z linerless platen rollerem (silikonowy, odporny na klej). Drukarki Zebra: ZD611/ZD621 Linerless, ZT411 z opcją linerless, mobilne ZQ510/520/630 Linerless. Bez linerless wałka NIE drukuj — zniszczysz standardowy gumowy wałek.',
+        answer: 'Tak — wymaga drukarki Zebra z linerless platen rollerem (silikonowy wałek odporny na klej) i obcinakiem. 1100D jest sizowany pod drukarki biurkowe: ZD611 Linerless, ZD621 Linerless. Do drukarek mobilnych wybierz ZeroLiner 2000D, a do przemysłowych (druk wysokonakładowy) ZeroLiner 4500D. Bez wałka linerless nie drukuj — zniszczysz standardowy gumowy wałek.',
       },
       {
         question: 'Czy ZeroLiner 1100D nadaje się do długoterminowych oznaczeń?',
-        answer: 'Nie. ZeroLiner 1100D ma krótki cykl życia (do 12 mies. indoor) bo brak top-coatu. Dla etykiet trwałych wybierz ZeroLiner 2000D (do 24 mies.) lub etykiety termotransferowe.',
+        answer: 'Nie. Jak każda etykieta direct thermal, ZeroLiner 1100D ma przewidywaną żywotność do 1 roku indoor — nadruk termiczny z czasem blaknie. Dla oznaczeń trwałych powyżej roku lub na zewnątrz wybierz etykiety termotransferowe (np. Z-Ultimate 3000T).',
       },
       {
         question: 'Jakie wolumeny operacji wymagają linerless?',
-        answer: 'ROI z linerless najlepiej widać dla operacji >2000 etykiet/dzień — bo wtedy oszczędność na wymianach rolki i utylizacji odpadu przewyższa wyższą cenę za rolkę. Dla <500 etykiet/dzień wybierz tańszą papierową z linerem (Z-Perform 1000D).',
+        answer: 'Korzyść z linerless najlepiej widać przy regularnym, dużym wolumenie — oszczędność na wymianach rolki, miejscu magazynowym i utylizacji podkładu przewyższa wtedy wyższą cenę za rolkę. Dla niewielkich, sporadycznych wydruków tańsza bywa zwykła etykieta papierowa z linerem (np. Z-Perform 1000D).',
       },
     ],
   },
@@ -982,7 +980,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
       {
         heading: 'Główne zastosowania',
         content:
-          'Branże i zastosowania według Zebry:\n\n- **Zakłady produkcyjne** — etykietowanie produkcji w toku (WIP) w warunkach przemysłowych\n- **Usługi logistyczne** — etykiety wysyłkowe, zarządzanie zapasami i magazynami\n- **Administracja publiczna** — poczta (duże wolumeny)\n- **Inne** — zastosowania niepozwalające na użycie podkładu, druk wysokonakładowy\n\nKlej akrylowy + wysoki zakres temperatur (do +100 °C) sprawiają, że 4500D jest najlepszym wyborem do trudnych warunków: hale produkcyjne z podwyższoną temperaturą, magazyny z wahaniami klimatu, druk 24/7 w sortowniach.',
+          'Branże i zastosowania:\n\n- **Zakłady produkcyjne** — etykietowanie produkcji w toku (WIP) w warunkach przemysłowych\n- **Usługi logistyczne** — etykiety wysyłkowe, zarządzanie zapasami i magazynami\n- **Administracja publiczna** — poczta (duże wolumeny)\n- **Inne** — zastosowania niepozwalające na użycie podkładu, druk wysokonakładowy\n\nKlej akrylowy + wysoki zakres temperatur (do +100 °C) sprawiają, że 4500D jest najlepszym wyborem do trudnych warunków: hale produkcyjne z podwyższoną temperaturą, magazyny z wahaniami klimatu, druk 24/7 w sortowniach.',
       },
       {
         heading: 'Parametry techniczne',
@@ -1053,29 +1051,29 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
     comparedWith: [
       {
         seriesSlug: 'zeroliner-2000d',
-        whenToChooseThis: 'Wybierz ZeroLiner 4500D dla maksymalnej długości nawoju (bardzo wysokie wolumeny, automatyczne linie). ZeroLiner 2000D dla standardowych operacji e-commerce z drukarką desktop/mid-range.',
+        whenToChooseThis: 'Wybierz ZeroLiner 4500D do druku wysokonakładowego w trudnych warunkach na drukarkach przemysłowych — ma klej akrylowy i najwyższy w rodzinie zakres pracy (do +100 °C). ZeroLiner 2000D (klej kauczukowy, do +60 °C) wybierz do drukarek biurkowych i mobilnych w typowych warunkach.',
       },
       {
         seriesSlug: 'zeroliner-1100d',
-        whenToChooseThis: 'ZeroLiner 4500D ma top-coat (premium, do 24 mies.) i dłuższą rolkę dla wysokich wolumenów. ZeroLiner 1100D to budżetowy linerless bez top-coatu, krótszy lifespan.',
+        whenToChooseThis: 'ZeroLiner 4500D to klasa premium z klejem akrylowym do warunków przemysłowych i wyższych temperatur (do +100 °C). ZeroLiner 1100D to klasa podstawowa z klejem kauczukowym (do +60 °C) do drukarek biurkowych przy niskim/średnim nakładzie. Trwałość obu jest porównywalna (~1 rok indoor).',
       },
     ],
     faq: [
       {
         question: 'Do jakich drukarek pasuje ZeroLiner 4500D?',
-        answer: 'Tylko industrialne z linerless platen rollerem i miejscem na dużą rolkę: ZT411/ZT421 z opcją linerless, ZT510/ZT610/ZT620. Desktopowe NIE mieszczą rolki 4500D (mniejszy OD). Sprawdź konfigurację swojej drukarki przed zamówieniem.',
+        answer: 'Do drukarek Zebra z obsługą linerless — przede wszystkim przemysłowych (ZT411/ZT421 z opcją linerless, ZT510/ZT610/ZT620), a także biurkowych (ZD611/ZD621 Linerless). To klasa premium projektowana pod druk wysokonakładowy w trudnych warunkach. Wymaga linerless platen rollera i obcinaka odpornego na klej.',
       },
       {
-        question: 'Czy ZeroLiner 4500D ma sens dla małych operacji?',
-        answer: 'Nie. Dla wolumenów <5000 etykiet/dzień wybierz ZeroLiner 2000D (mniejsza rolka, działa w desktopach) lub ZeroLiner 1100D (taniej). 4500D ma sens tylko gdy chcesz maksymalnie zminimalizować wymiany rolki (sortownie 20 000+ etykiet/zmianę).',
+        question: 'Czym 4500D różni się od 1100D i 2000D?',
+        answer: 'Trzy rzeczy. (1) Klej: 4500D ma klej akrylowy (1100D i 2000D — kauczukowy), co daje wyższy zakres pracy: do +100 °C wobec +60 °C w pozostałych. (2) Klasa i drukarka: 4500D to premium do drukarek przemysłowych, 2000D — wysoka do biurkowych i mobilnych, 1100D — podstawowa do biurkowych. (3) Grubość: 4500D 96 µm, 1100D 90 µm, 2000D 88 µm. Wszystkie są bezpodkładowe, bezfenolowe i mają ~1 rok żywotności indoor.',
       },
       {
-        question: 'Ile etykiet mieści rolka ZeroLiner 4500D?',
-        answer: 'Zależy od rozmiaru etykiety, ale typowo do 4× więcej niż etykieta z linerem o tej samej OD. Dla popularnego rozmiaru 102×152 mm (etykieta wysyłkowa A6): ok. 1500-2000 etykiet vs 500-700 standardowo.',
+        question: 'Dlaczego ZeroLiner 4500D wytrzymuje wyższe temperatury?',
+        answer: 'Dzięki klejowi akrylowemu. W odróżnieniu od kauczukowego (w 1100D i 2000D, do +60 °C) klej akrylowy 4500D utrzymuje przyczepność po prawidłowej aplikacji w zakresie −10 °C do +100 °C. To czyni 4500D wyborem do hal produkcyjnych z podwyższoną temperaturą i trudnych warunków przemysłowych.',
       },
       {
-        question: 'Czy ZeroLiner 4500D ma top-coat?',
-        answer: 'Tak — w przeciwieństwie do 1100D, 4500D ma powłokę top-coat. Zapewnia ostry nadruk kodów kreskowych premium i do 24 mies. trwałości indoor.',
+        question: 'Czy ZeroLiner 4500D nadaje się do kontaktu z żywnością?',
+        answer: 'Nie — 4500D nie ma atestów żywnościowych (BfR XIV, FDA 175.105). Spełnia REACH, RoHS i jest bezfenolowy. Dla kontaktu z żywnością wybierz papierowe Z-Select 2000D lub Z-Perform 1000D z pełnym pakietem atestów.',
       },
     ],
   },
@@ -1122,7 +1120,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
       {
         heading: 'Główne zastosowania',
         content:
-          'Zastosowania według Zebry:\n\n- **Zdejmowalne etykiety cenowe w handlu detalicznym**\n- **Zdejmowalne etykiety półkowe**\n- **Identyfikacja produktów**\n- **Zdejmowalne etykiety na opakowaniach** — kartony, palety, pojemniki wielokrotne w magazynach\n\nKluczowa różnica vs zwykłe etykiety zdejmowalne: **klej ma doskonałą odporność na niskie temperatury** — sprawdza się w chłodniach i mroźniach głębokich.',
+          'Typowe zastosowania:\n\n- **Zdejmowalne etykiety cenowe w handlu detalicznym**\n- **Zdejmowalne etykiety półkowe**\n- **Identyfikacja produktów**\n- **Zdejmowalne etykiety na opakowaniach** — kartony, palety, pojemniki wielokrotne w magazynach\n\nKluczowa różnica vs zwykłe etykiety zdejmowalne: **klej ma doskonałą odporność na niskie temperatury** — sprawdza się w chłodniach i mroźniach głębokich.',
       },
       {
         heading: 'Atesty żywnościowe i bezpieczeństwo materiału',
@@ -1217,19 +1215,19 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
       },
       {
         question: 'Jak długo trzyma klej removable?',
-        answer: 'Do 6 miesięcy w warunkach indoor. Po tym czasie klej może wysychać i etykieta odpadać samoczynnie. To celowa cecha — kompromis dla możliwości czystego odklejenia. Dla ekspozycji 1-3 miesiące idealnie. Dla dłuższych — wybierz permanentną Z-Select 2000D.',
+        answer: 'Przewidywana żywotność w zastosowaniu to do 1 roku indoor (po prawidłowej aplikacji i ~24 h dwell time) — tak jak w standardowej Z-Select 2000D. Różnica polega na tym, że klej zdejmowalny pozwala odkleić etykietę czysto, bez pozostałości, gdy zajdzie taka potrzeba. Dla etykiet, które mają trzymać na stałe, wybierz Z-Select 2000D z klejem permanentnym.',
       },
       {
         question: 'Czy można aplikować Z-Select 2000D Removable w chłodni?',
-        answer: 'Minimalna temperatura aplikacji to +5 °C — wyższa niż dla standardowej Z-Select 2000D (0 °C). To wynika z natury klejów removable — potrzebują wyższej temp. do prawidłowego rozprowadzenia. Dla chłodni wybierz wariant All-Temp lub Z-Select 2000D standardową.',
+        answer: 'Tak — to jej mocna strona. Minimalna temperatura aplikacji to −20 °C, czyli NIŻSZA niż w standardowej Z-Select 2000D (0 °C). Klej kauczukowy zdejmowalny ma doskonałą odporność na niskie temperatury (Cold Temperature + Deep Freeze), a po aplikacji etykieta trzyma w zakresie −40 °C do +50 °C. Idealna do chłodni i mroźni, gdzie etykieta ma być później zdjęta bez śladu.',
       },
       {
         question: 'Czy Z-Select 2000D Removable trzyma na zatłuszczonych powierzchniach?',
-        answer: 'Słabo. Klej removable ma niższą siłę przyczepności niż permanentny — łatwiej traci kontakt z brudem, kurzem, tłuszczem. Przed aplikacją wytrzyj powierzchnię izopropanolem lub środkiem odtłuszczającym. Dla zatłuszczonych powierzchni wybierz permanentny klej lub etykietę high-tack.',
+        answer: 'Słabiej. Klej zdejmowalny ma z założenia niższą siłę przyczepności niż permanentny — łatwiej traci kontakt z brudem, kurzem i tłuszczem. Przed aplikacją wytrzyj powierzchnię izopropanolem lub środkiem odtłuszczającym. Dla powierzchni zatłuszczonych wybierz klej permanentny lub etykietę o wysokiej przyczepności (high-tack).',
       },
       {
         question: 'Czy można drukować Z-Select 2000D Removable w tej samej drukarce co standardową?',
-        answer: 'Tak — używaj tej samej drukarki Zebra DT. Czasami trzeba lekko zmniejszyć "darkness" (temp. głowicy) o 1 stopień — klej removable ma cieńsze warstwy. Zacznij od ustawień jak dla Z-Select 2000D standardowej i dostosuj jeśli nadruk jest zbyt ciemny.',
+        answer: 'Tak — używaj tej samej drukarki Zebra direct thermal. Materiał wierzchni jest identyczny jak w standardowej Z-Select 2000D (powlekany papier 81 µm), więc zacznij od tych samych ustawień zaczernienia (darkness). Różni je tylko klej (zdejmowalny zamiast permanentnego), co nie wpływa na parametry druku.',
       },
     ],
   },
@@ -1275,9 +1273,9 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
           'Z-Perform 1000D Removable to **bardzo adaptowalne i niezawodne rozwiązanie etykietowe** zaprojektowane dla różnorodnych zastosowań indoor wymagających **czystego odklejenia (clean removability) i wyjątkowej wydajności**. Jako papierowa etykieta direct thermal nie wymaga taśm barwiących, co usprawnia operacje. **Matte finish, cold temperature capability i BPA-free face stock** odzwierciedlają przemyślaną konstrukcję spełniającą wymogi nowoczesnego etykietowania.\n\nKlej zaprojektowany dla **tymczasowych potrzeb etykietowania** — zapewnia mocną przyczepność do szerokiej gamy powierzchni przy gwarancji **odklejenia bez pozostałości (residue-free removal)**.',
       },
       {
-        heading: 'Główne zastosowania (Markets and Applications)',
+        heading: 'Główne zastosowania',
         content:
-          'Według Zebry:\n\n- **Etykietowanie ogólnego zastosowania wewnątrz pomieszczeń** (w tym etykiety do żywności)\n- **Etykietowanie większości materiałów opakowaniowych**\n- **Zdejmowalne etykiety półkowe, produktowe i cenowe** w handlu detalicznym\n- **Identyfikacja produktów**\n- **Etykietowanie produkcji w toku** (WIP)\n- **Zdejmowalne etykiety na kartony, palety, półki i pojemniki wielokrotne**\n\nIdealnie pasuje do aplikacji takich jak etykiety retailowe, opakowania spożywcze i inne ogólnego przeznaczenia.',
+          'Typowe zastosowania:\n\n- **Etykietowanie ogólnego zastosowania wewnątrz pomieszczeń** (w tym etykiety do żywności)\n- **Etykietowanie większości materiałów opakowaniowych**\n- **Zdejmowalne etykiety półkowe, produktowe i cenowe** w handlu detalicznym\n- **Identyfikacja produktów**\n- **Etykietowanie produkcji w toku** (WIP)\n- **Zdejmowalne etykiety na kartony, palety, półki i pojemniki wielokrotne**\n\nIdealnie pasuje do etykiet retailowych, opakowań spożywczych i innych zastosowań ogólnego przeznaczenia, w których etykieta ma być później zdjęta bez śladu.',
       },
       {
         heading: 'Atesty żywnościowe',
@@ -1354,7 +1352,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
     comparedWith: [
       {
         seriesSlug: 'z-select-2000d-removable',
-        whenToChooseThis: 'Wybierz Z-Perform 1000D Removable dla budżetowych zastosowań tymczasowych. Z-Select 2000D Removable dla retail premium z drobnym kodem 2D (lepsza jakość nadruku, top-coat).',
+        whenToChooseThis: 'Oba mają klej kauczukowy zdejmowalny i atesty żywnościowe. Wybierz Z-Perform 1000D Removable (niepowlekana, tańsza, 18 wariantów) do budżetowych zastosowań tymczasowych indoor — pracuje do +70 °C. Z-Select 2000D Removable (powlekana, top-coat) wybierz, gdy potrzebujesz ostrego nadruku drobnych kodów 2D lub aplikacji w chłodni/mroźni (min. aplikacja −20 °C, praca do −40 °C).',
       },
       {
         seriesSlug: 'z-perform-1000d',
@@ -1364,11 +1362,11 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
     faq: [
       {
         question: 'Czy Z-Perform 1000D Removable jest tańsza od Z-Select Removable?',
-        answer: 'Tak — bo nie ma powłoki top-coat. Z-Perform Removable to budżetowa wersja klejów zdejmowalnych Zebra. Wadą jest krótszy lifespan nadruku i niższa jakość kodów kreskowych 2D. Zalety: tańsza i 18 wariantów rozmiarowych (vs 4 dla Z-Select Removable).',
+        answer: 'Tak — bo jest niepowlekana (bez top-coatu). To budżetowa wersja etykiet zdejmowalnych Zebra. Bez powłoki nadruk jest mniej ostry przy gęstych kodach 2D i ma mniejszą odporność na wilgoć oraz oleje. Zalety: niższa cena i 18 wariantów rozmiarowych (vs 4 w Z-Select 2000D Removable). Trwałość obu jest porównywalna (~1 rok indoor).',
       },
       {
         question: 'Jak długo trzyma klej Z-Perform 1000D Removable?',
-        answer: 'Do 6 miesięcy w warunkach indoor — tak samo jak Z-Select Removable. Klej jest ten sam (akrylowy zdejmowalny), różnica jest tylko w facestocku (papier niepowlekany vs powlekany).',
+        answer: 'Przewidywana żywotność w zastosowaniu to do 1 roku indoor (po prawidłowej aplikacji i ~24 h dwell time). Klej kauczukowy zdejmowalny zapewnia mocną przyczepność do szerokiej gamy powierzchni, a jednocześnie pozwala odkleić etykietę czysto, bez pozostałości. Względem Z-Select 2000D Removable różni je materiał wierzchni (papier niepowlekany vs powlekany), nie sam klej.',
       },
       {
         question: 'Czy Z-Perform 1000D Removable nadaje się do drobnego nadruku?',
@@ -1423,7 +1421,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
       {
         heading: 'Główne zastosowania',
         content:
-          'Według Zebry:\n\n- **Retail shelf edge labelling** — etykiety półkowe w retailu\n- **High quality receipts or tickets** — paragony i bilety wysokiej jakości\n- **Passenger public transport tickets** — bilety komunikacji publicznej\n- **Visitor identification tags** — identyfikatory dla gości (konferencje, eventy)\n- **Packing inserts** — wkładki do paczek\n- **Pallet tags and shop floor inventory tracking** — tagi paletowe, śledzenie zapasów w sklepie\n\nUWAGA Zebra: **Z-Perform 1000D 110 Tag NIE jest rekomendowany dla długotrwałego wystawienia na słońce lub skrajne ciepło**.',
+          'Typowe zastosowania:\n\n- **Etykiety półkowe** w handlu detalicznym\n- **Paragony i bilety** wysokiej jakości\n- **Bilety komunikacji publicznej**\n- **Identyfikatory dla gości** (konferencje, eventy)\n- **Wkładki do paczek** (packing inserts)\n- **Tagi paletowe i śledzenie zapasów** na hali produkcyjnej\n\nUwaga: 110 Tag **nie jest rekomendowany dla długotrwałego wystawienia na słońce ani skrajnego ciepła**.',
       },
       {
         heading: 'Trwałość archiwalna (Archive Conditions)',
@@ -1496,7 +1494,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
     comparedWith: [
       {
         seriesSlug: 'z-perform-1000d',
-        whenToChooseThis: 'Z-Perform 1000D 110 Tag = bez kleju, perforowane paski (do paragonów, identyfikatorów). Z-Perform 1000D standardowa = z klejem akrylowym (etykiety samoprzylepne na produkty).',
+        whenToChooseThis: 'Z-Perform 1000D 110 Tag to grubszy tag bez kleju (104 g/m²) do mechanicznego przyczepiania — paragony, bilety, identyfikatory, archiwum (do 12 lat). Z-Perform 1000D standardowa to etykieta samoprzylepna z klejem akrylowym do oznaczania produktów i opakowań.',
       },
     ],
     faq: [
@@ -1505,8 +1503,8 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
         answer: '"Tag" w terminologii Zebra to etykieta BEZ kleju — pasek papieru do owijania, wieszania lub przyczepiania mechanicznie (zszywka, sznurek, dziurka). To różnica vs standardowa etykieta, która ma klej na spodzie.',
       },
       {
-        question: 'Jak działa perforacja między etykietami?',
-        answer: 'Linia mikronacięcia między etykietami pozwala oddzielić je ręcznie bez nożyczek lub gilotyny. Po wydruku rwiesz tag palcami — szybkie i wygodne dla aplikacji typu paragony przy kasie lub identyfikatory eventowe.',
+        question: 'Jak długo nadruk na 110 Tag pozostaje czytelny?',
+        answer: 'W standardowym użytkowaniu indoor — do 1 roku, w zastosowaniach archiwalnych indoor — do 5 lat. W specyficznych warunkach archiwalnych (temperatura 18–24 °C, wilgotność 40–60%, przechowywanie w ciemności, bez kontaktu z rozpuszczalnikami i PVC z plastyfikatorami) producent przewiduje czytelność drukowanego obrazu nawet do 12 lat. To wyróżnia 110 Tag spośród mediów direct thermal — dobra odporność na blaknięcie obrazu.',
       },
       {
         question: 'Czy Z-Perform 1000D 110 Tag pasuje do drukarek fiskalnych?',
@@ -1655,7 +1653,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
       },
       {
         question: 'Czym różni się Z-Essentials 1000D od 500D?',
-        answer: 'Tylko liczbą etykiet na rolce. 1000D = większa rolka (więcej etykiet), 500D = mniejsza rolka. Materiał, klej i format identyczne. 1000D wybierz dla rzadszej wymiany rolki, 500D dla niższej ceny za rolkę i mniejszego stocku.',
+        answer: 'Główna różnica to powłoka wierzchnia. Z-Essentials 1000D jest powlekana (top-coat, facestock 72 µm) — daje pewną odporność na ścieranie, wilgoć i czynniki środowiskowe, więc nadruk pozostaje skanowalny dłużej. Z-Essentials 500D jest niepowlekana (70 µm) — tańsza, ale mniej odporna. Oba materiały mają klej akrylowy permanentny, zakres pracy 0–40 °C (indoor), są BPA-free i bez atestów żywnościowych. 1000D wybierz, gdy skanujesz kody po kilku dniach/tygodniach; 500D do najprostszych, krótkoterminowych etykiet.',
       },
       {
         question: 'Czy Z-Essentials 1000D nadaje się do żywności?',
@@ -1683,83 +1681,140 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
     outdoor: false,
     priceFrom: 1346.12,
     accent: '#475569',
-    seoTitle: 'Z-Essentials 500D — najtańsza etykieta termiczna Zebra | entry-level',
-    seoDescription: 'Zebra Z-Essentials 500D — najtańsza entry-level etykieta termiczna z portfolio Zebra. Mniejsza rolka, krótki cykl życia, niewrażliwe zastosowania.',
+    seoTitle: 'Z-Essentials 500D — ekonomiczna etykieta termiczna Zebra | entry-level',
+    seoDescription: 'Zebra Z-Essentials 500D — ekonomiczna, niepowlekana etykieta termiczna do zastosowań masowych o niskiej trwałości. Papier 70 µm, klej akrylowy trwały, zakres 0–40 °C (indoor), BPA-free. Do wysyłek, pickingu i prac w toku.',
     h1: 'Etykiety termiczne Zebra Z-Essentials 500D',
-    heroIntro: 'Z-Essentials 500D to najbardziej budżetowa etykieta termiczna Zebra — z mniejszą rolką niż Z-Essentials 1000D, papier niepowlekany, klej standardowy. Idealna dla krótkoterminowych etykiet wysyłkowych, oznaczeń tymczasowych i paragonów gdzie nie potrzebujesz żadnych premium cech.',
+    heroIntro: 'Z-Essentials 500D to ekonomiczna, papierowa etykieta termiczna Zebra do druku bezpośredniego (direct thermal) — zaprojektowana do zastosowań masowych o wysokim nakładzie i krótkim cyklu życia. Niepowlekany matowy facestock 70 µm z trwałym klejem akrylowym, łączna grubość 138 µm ±10%. Pracuje wewnątrz pomieszczeń w zakresie 0–40 °C. Inteligentny wybór tam, gdzie liczy się koszt, a etykieta nie musi przetrwać długo: wysyłka, kompletacja, przyjmowanie, identyfikacja produktów i prace w toku.',
     keyHighlights: [
-      'Najtańsza etykieta termiczna w portfolio Zebra',
-      'Papier niepowlekany, klej akrylowy permanentny standardowy',
-      'Mniejsza rolka — niższa cena, częstsze wymiany',
-      'Krótki cykl życia — do krótkoterminowych zastosowań',
-      'Bez atestów, bez top-coatu',
-      'Tylko 1 wariant rozmiarowy',
+      'Niepowlekany papier termoczuły — facestock 70 µm, total 138 µm ±10%',
+      'Trwały klej akrylowy (13 µm) — BPA-free',
+      'Zakres pracy 0–40 °C, min. temperatura aplikacji 0 °C (tylko indoor)',
+      'Druk direct thermal — bez taśmy barwiącej, prosty proces, niski TCO',
+      'Do zastosowań masowych o krótkim cyklu życia (do 12 miesięcy indoor)',
+      'Produkcja w 23-punktowym procesie kontroli jakości ISO 9001',
+      'Format 102×152 mm — najpopularniejszy rozmiar wysyłkowy',
     ],
     sections: [
       {
-        heading: 'Czy Z-Essentials 500D ma sens?',
+        heading: 'Czym jest Z-Essentials 500D?',
         content:
-          'Z-Essentials 500D to najtańszy poziom w portfolio etykiet termicznych Zebra — bez atestów, bez top-coatu, z mniejszą rolką (500 etykiet zamiast 1000+). Sens ma TYLKO dla bardzo specyficznych przypadków: pilne zamówienie minimalnej liczby etykiet, test pojedynczej drukarki przed większym zakupem, etykiety tymczasowe z bardzo krótkim cyklem życia.\n\nDla 95% magazynów i wysyłek lepszym wyborem jest Z-Perform 1000D — taniej w przeliczeniu na etykietę, 216 wariantów rozmiarowych, atesty żywnościowe.',
+          'Z-Essentials 500D to ekonomiczna, papierowa seria etykiet termicznych Zebra do druku bezpośredniego (direct thermal). Należy do linii budżetowej Z-Essentials, przeznaczonej do zastosowań masowych o wysokim nakładzie i niskiej trwałości — wszędzie tam, gdzie kluczowy jest stosunek ceny do jakości, a etykieta ma krótki cykl życia. Brak taśmy barwiącej oznacza prostszy proces druku, niższy TCO i mniej części zużywających się w drukarce.\n\nKonstrukcja jest trójwarstwowa: matowy biały niepowlekany papier termoczuły (facestock 70 µm) + trwały klej akrylowy (13 µm) + biały podkład glassine 60 g/m² (55 µm). Łączna grubość 138 µm ±10%. Materiał jest BPA-free i produkowany w 23-punktowym procesie kontroli jakości z certyfikatem ISO 9001 — co zapewnia powtarzalną jakość druku przy każdym zamówieniu.\n\nZ-Essentials 500D NIE ma powłoki ochronnej top-coat (to różnica vs Z-Essentials 1000D) — bez niej materiał jest tańszy, ale nadruk jest mniej odporny na ścieranie i ma niższą ostrość drobnych kodów 2D.',
       },
       {
-        heading: 'Z-Essentials 500D vs 1000D',
+        heading: 'Główne zastosowania',
         content:
-          'Dwie istotne różnice: (1) Powłoka top-coat — Z-Essentials 500D NIE ma powłoki, Z-Essentials 1000D MA. Top-coat poprawia ostrość nadruku kodów kreskowych i wydłuża życie głowicy drukarki. (2) Pojemność rolki — 500D ma ~2× mniej etykiet niż 1000D.\n\n500D wybierz gdy: nie skanujesz drobnych kodów (top-coat niepotrzebny), masz mały wolumen i nie chcesz "zostawać" z dużą rolką, kupujesz jako test/próbkę, liczy się minimalna cena za rolkę. 1000D wybierz dla regularnych operacji wymagających skanowania kodów — top-coat + rzadsza wymiana rolki.',
+          'Z-Essentials 500D sprawdza się w operacjach o dużej rotacji, w których etykieta nie musi przetrwać długo:\n\n- **Usługi logistyczne** — etykiety wysyłkowe, przeładunek (cross-docking)\n- **Magazyn** — wysyłka, kompletacja zamówień (picking), przyjmowanie towaru (receiving)\n- **Produkcja** — wysyłka, etykiety prac w toku (WIP), identyfikacja produktów\n- **Handel detaliczny i e-commerce** — etykiety wysyłkowe\n- **Transport** — oznaczenia przesyłek\n\nDla nadruków, które muszą wytrzymać dłużej niż rok, mieć kontakt z żywnością lub pracować poza zakresem 0–40 °C, wybierz Z-Perform 1000D, Z-Select 2000D lub etykietę termotransferową.',
+      },
+      {
+        heading: 'Parametry techniczne',
+        content:
+          'Trójwarstwowa konstrukcja: matowy biały niepowlekany papier termoczuły 70 µm (facestock) + trwały klej akrylowy 13 µm + biały podkład glassine 60 g/m² jako liner (55 µm). Łączna grubość: 138 µm ±10% (numer materiału RM 10026927RM).\n\nMinimalna temperatura aplikacji to 0 °C — poniżej tej wartości klej nie rozprowadzi się prawidłowo. Po prawidłowej aplikacji i odczekaniu czasu dwell time (zwykle 24 h) etykieta wytrzymuje pracę w zakresie 0–40 °C. Zalecane warunki przechowywania: 6 miesięcy w temperaturze poniżej 20 °C i wilgotności względnej 40–50%. Numer próbki do testów: SAMPLE26927D.',
+      },
+      {
+        heading: 'Środowisko pracy i temperatura',
+        content:
+          'Z-Essentials 500D jest przeznaczona wyłącznie do **temperatur otoczenia wewnątrz pomieszczeń**. Zakres temperatury użytkowej to **0–40 °C** — znacznie węższy niż w seriach Z-Perform 1000D czy Z-Select 2000D (które wytrzymują od −20 °C do +80 °C).\n\nW praktyce oznacza to, że Z-Essentials 500D **nie nadaje się do chłodni, mroźni, hal produkcyjnych powyżej 40 °C ani do zastosowań zewnętrznych (outdoor)**. Dla aplikacji w niskich temperaturach wybierz Z-Select 2000D z klejem All-Temp, a dla warunków wymagających większej odporności — etykiety termotransferowe.',
+      },
+      {
+        heading: 'Siła kleju (przyczepność)',
+        content:
+          'Trwały klej akrylowy buduje przyczepność w czasie. Wartości siły odrywania (po 5 minutach / po 24 godzinach, N/25 mm):\n\n- **Stal** — 12 / pełne związanie (final tack): najlepsza przyczepność na powierzchniach metalowych\n- **Poliwęglan** — 16 / 17: bardzo dobra przyczepność na twardych tworzywach\n- **Tektura falista** — 2 / 5: typowe opakowania kartonowe\n- **Polietylen** — 3 / 5: słabsza przyczepność na miękkich tworzywach PE\n\nNajwyższą przyczepność etykieta osiąga na metalu i twardych plastikach. Na tekturze i polietylenie wiązanie jest słabsze — przy aplikacji na te powierzchnie zostaw etykiecie pełne 24 h na związanie przed transportem.',
+      },
+      {
+        heading: 'Z-Essentials 500D vs 1000D — który wybrać',
+        content:
+          'Dwie istotne różnice: (1) **Powłoka top-coat** — Z-Essentials 500D jest niepowlekana, Z-Essentials 1000D ma powłokę wierzchnią. Top-coat poprawia ostrość nadruku kodów kreskowych, daje pewną odporność na ścieranie i wilgoć oraz wydłuża żywotność głowicy drukującej. (2) **Pojemność rolki** — 500D ma mniejszą rolkę (oznaczenie „500"), 1000D większą („1000").\n\n500D wybierz gdy: nie skanujesz drobnych kodów 2D (top-coat zbędny), masz mały wolumen i liczy się minimalna cena za rolkę. 1000D wybierz dla regularnych operacji ze skanowaniem kodów — top-coat poprawia odczyt, a większa rolka oznacza rzadszą wymianę.',
+      },
+      {
+        heading: 'Kiedy NIE używać Z-Essentials 500D',
+        content:
+          'Sytuacje, w których lepiej sięgnąć po inną serię: (1) **Temperatury poza 0–40 °C** — chłodnie, mroźnie, hale >40 °C; wybierz Z-Select 2000D (All-Temp) lub termotransfer. (2) **Kontakt z żywnością** — Z-Essentials 500D nie ma atestów żywnościowych; wybierz Z-Perform 1000D lub Z-Select 2000D. (3) **Drobny nadruk 2D wymagający najwyższej ostrości** — brak top-coatu; wybierz Z-Essentials 1000D lub Z-Select 2000D. (4) **Zastosowania zewnętrzne, wilgotne lub długoterminowe (>12 miesięcy)** — wybierz PolyPro 4000D (syntetyk) lub etykietę termotransferową.',
       },
     ],
     techSpecs: [
-      { label: 'Materiał facestock', value: 'Papier termoczuły niepowlekany' },
-      { label: 'Klej', value: 'Akrylowy permanentny standardowy' },
-      { label: 'Top-coat', value: 'Nie' },
-      { label: 'Atesty żywnościowe', value: 'Brak' },
+      { label: 'Materiał facestock', value: 'Matowy biały niepowlekany papier termoczuły (70 µm)' },
+      { label: 'Klej', value: 'Trwały akrylowy permanentny (13 µm)' },
+      { label: 'Podkład (liner)', value: 'Biały papier glassine 60 g/m² (55 µm)' },
+      { label: 'Łączna grubość', value: '138 µm ±10%' },
+      { label: 'Numer materiału (RM)', value: '10026927RM' },
+      { label: 'Top-coat', value: 'Nie (niepowlekany)' },
+      { label: 'Środowisko', value: 'Wewnątrz pomieszczeń (indoor)' },
+      { label: 'Zakres temperatur pracy', value: '0 °C do +40 °C' },
+      { label: 'Min. temperatura aplikacji', value: '0 °C' },
       { label: 'Trwałość nadruku indoor', value: 'Do 12 miesięcy' },
+      { label: 'Warunki przechowywania', value: '6 mies., poniżej 20 °C, RH 40–50%' },
+      { label: 'Atesty żywnościowe', value: 'Brak (materiał BPA-free)' },
       { label: 'Format', value: '102×152 mm' },
-      { label: 'Gilza', value: '25 mm' },
-      { label: 'Pojemność rolki', value: '~500 etykiet (mniejsza niż 1000D)' },
+      { label: 'Gilza (rdzeń)', value: '25 mm' },
+      { label: 'Pojemność rolki', value: '~500 etykiet' },
+      { label: 'Numer próbki', value: 'SAMPLE26927D' },
       { label: 'Liczba wariantów', value: '1' },
     ],
     applications: [
-      'Krótkoterminowe etykiety wysyłkowe',
-      'Pilne zamówienia minimalnej liczby etykiet',
-      'Test pojedynczej drukarki przed większym zakupem',
-      'Oznaczenia tymczasowe',
+      'Etykiety wysyłkowe (logistyka, transport, e-commerce, kurierzy)',
+      'Kompletacja zamówień (picking) i przyjmowanie towaru (receiving) w magazynie',
+      'Identyfikacja produktów',
+      'Etykiety prac w toku (WIP) w zakładach produkcyjnych',
+      'Przeładunek (cross-docking) w usługach logistycznych',
+      'Oznaczenia tymczasowe o krótkim cyklu życia',
+      'Test pojedynczej drukarki przed większym zakupem materiału',
     ],
     notRecommendedFor: [
-      'Regularne wysyłki — wybierz Z-Perform 1000D (taniej za etykietę)',
-      'Kontakt z żywnością (brak atestów)',
-      'Drobny nadruk 2D (brak top-coatu)',
-      'Wodoodporne zastosowania',
-      'Operacje z dużymi wolumenami (zbyt częste wymiany rolki)',
+      'Chłodnie i mroźnie — zakres pracy tylko 0–40 °C (wybierz Z-Select 2000D All-Temp)',
+      'Aplikacja poniżej 0 °C — klej nie rozprowadzi się prawidłowo',
+      'Kontakt z żywnością — brak atestów (wybierz Z-Perform 1000D lub Z-Select 2000D)',
+      'Drobny nadruk 2D najwyższej ostrości — brak top-coatu (wybierz Z-Essentials 1000D)',
+      'Zastosowania zewnętrzne i wilgotne — wybierz PolyPro 4000D (syntetyk)',
+      'Etykiety długoterminowe (>12 miesięcy) — wybierz termotransfer lub Z-Select 2000D',
     ],
     compatiblePrinters: {
       desktop: ['ZD220d', 'ZD230d', 'ZD411d', 'ZD421d', 'ZD621d'],
       midRange: ['ZD611', 'ZT231'],
-      industrial: ['ZT411', 'ZT421'],
+      industrial: ['ZT411', 'ZT421', 'ZT510', 'ZT610', 'ZT620'],
       mobile: [],
     },
-    certifications: [],
+    certifications: [
+      { name: 'BPA-free', description: 'Facestock papierowy bez bisfenolu A — zgodny z restrykcjami EU dla mediów termicznych.' },
+      { name: 'ISO 9001 (23-punktowy proces kontroli)', description: 'Materiał produkowany w certyfikowanym procesie kontroli jakości zapewniającym powtarzalną jakość druku przy każdym zamówieniu.' },
+    ],
     comparedWith: [
       {
         seriesSlug: 'z-essentials-1000d',
-        whenToChooseThis: 'Z-Essentials 500D bez powłoki top-coat — taniej, mniej kontrastowy nadruk. Z-Essentials 1000D z powłoką top-coat (ostrzejszy nadruk kodów) i większą rolką — wybierz gdy skanujesz kody lub potrzebujesz mniej wymian.',
+        whenToChooseThis: 'Z-Essentials 500D jest niepowlekana — taniej, mniej kontrastowy nadruk. Z-Essentials 1000D ma powłokę top-coat (ostrzejszy nadruk kodów, większa odporność) i większą rolkę — wybierz gdy skanujesz kody lub potrzebujesz mniej wymian.',
       },
       {
         seriesSlug: 'z-perform-1000d',
-        whenToChooseThis: 'Z-Perform 1000D to znacznie lepszy wybór dla regularnych operacji — taniej w przeliczeniu na etykietę, 216 wariantów. Z-Essentials 500D tylko dla małych zamówień testowych lub bardzo specyficznych przypadków.',
+        whenToChooseThis: 'Z-Perform 1000D to lepszy wybór dla regularnych operacji — szerszy zakres temperatur (−20 do +80 °C), atesty żywnościowe i 216 wariantów rozmiarowych. Z-Essentials 500D wybierz dla skrajnie budżetowych, krótkoterminowych zastosowań indoor.',
       },
     ],
     faq: [
       {
-        question: 'Czy Z-Essentials 500D jest naprawdę najtańsza?',
-        answer: 'Cena ZA ROLKĘ — tak, najtańsza w portfolio. Ale cena ZA ETYKIETĘ często wyższa niż Z-Perform 1000D dzięki większej skali produkcji tej drugiej serii. Sprawdź przelicznik (cena rolki ÷ liczba etykiet) przed decyzją.',
+        question: 'Czy Z-Essentials 500D wymaga taśmy barwiącej?',
+        answer: 'Nie. Z-Essentials 500D to etykieta direct thermal (DT) — nadruk powstaje bezpośrednio na papierze termoczułym pod wpływem ciepła głowicy drukującej. Brak taśmy oznacza niższy koszt eksploatacji i prostszy proces druku. Pasuje do dowolnej drukarki termicznej Zebra.',
       },
       {
-        question: 'Kiedy wybrać Z-Essentials 500D zamiast 1000D?',
-        answer: 'Gdy: (1) Potrzebujesz mniejszej rolki w drukarce, (2) Masz mały wolumen i nie chcesz "zostawać" z dużą rolką, (3) Kupujesz jako test/próbkę pojedynczej drukarki. W innych przypadkach 1000D jest lepszy (rzadsze wymiany).',
+        question: 'Jaki jest zakres temperatur pracy Z-Essentials 500D?',
+        answer: '0–40 °C, wyłącznie wewnątrz pomieszczeń, przy minimalnej temperaturze aplikacji 0 °C. To znacznie węższy zakres niż Z-Perform 1000D czy Z-Select 2000D (−20 do +80 °C). Z-Essentials 500D nie nadaje się do chłodni, mroźni ani hal powyżej 40 °C — dla takich warunków wybierz Z-Select 2000D All-Temp lub etykietę termotransferową.',
+      },
+      {
+        question: 'Czy Z-Essentials 500D nadaje się do kontaktu z żywnością?',
+        answer: 'Nie — Z-Essentials 500D nie ma atestów żywnościowych (BfR XIV, FDA, ISEGA). Materiał jest jedynie BPA-free. Do etykiet w kontakcie z żywnością wybierz Z-Perform 1000D lub Z-Select 2000D, które mają pełny pakiet atestów.',
+      },
+      {
+        question: 'Czym różni się Z-Essentials 500D od 1000D?',
+        answer: 'Dwie różnice: powłoka i pojemność rolki. 500D jest niepowlekana (bez top-coatu), 1000D ma powłokę wierzchnią (ostrzejszy nadruk kodów, większa odporność na ścieranie i wilgoć, dłuższe życie głowicy). 500D ma też mniejszą rolkę. 500D wybierz dla skrajnego budżetu i prostych etykiet; 1000D gdy skanujesz kody lub chcesz rzadszej wymiany rolki.',
+      },
+      {
+        question: 'Czy Z-Essentials 500D jest naprawdę najtańsza?',
+        answer: 'Cena za rolkę bywa najniższa, ale cena za pojedynczą etykietę często jest wyższa niż w Z-Perform 1000D — dzięki większej skali produkcji tej drugiej serii. Przed decyzją policz przelicznik: cena rolki ÷ liczba etykiet na rolce.',
+      },
+      {
+        question: 'Na jakich powierzchniach najlepiej trzyma klej Z-Essentials 500D?',
+        answer: 'Najlepiej na metalu (stal — pełne związanie po 24 h) i twardych tworzywach (poliwęglan 17 N/25 mm). Słabiej na tekturze falistej (5 N/25 mm) i polietylenie (5 N/25 mm). Przy aplikacji na karton lub miękkie tworzywa zostaw etykiecie pełne 24 h na związanie przed transportem.',
       },
       {
         question: 'Czy mogę używać Z-Essentials 500D do regularnych wysyłek?',
-        answer: 'Możesz, ale nieoptymalnie — Z-Perform 1000D jest taniej w przeliczeniu na etykietę i ma 216 wariantów rozmiarowych. Z-Essentials 500D ma sens tylko dla bardzo małych wolumenów lub konkretnego rozmiaru 102×152 mm.',
+        answer: 'Możesz, ale nieoptymalnie — dla regularnych operacji Z-Perform 1000D jest taniej w przeliczeniu na etykietę, ma szerszy zakres temperatur i 216 wariantów rozmiarowych. Z-Essentials 500D ma sens głównie dla małych wolumenów, krótkiego cyklu życia etykiety lub testu drukarki.',
       },
     ],
   },
@@ -1772,7 +1827,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
     productId: 'zebra-8000d-jewelry',
     badge: '8000D Jewelry',
     title: '8000D Jewelry',
-    tagline: 'Syntetyczna **polipropylenowa** etykieta DT do biżuterii — UV resistant varnish, **Moderate chemical resistance**, klej akrylowy. Butterfly / dumbbell shape.',
+    tagline: 'Syntetyczna polipropylenowa etykieta DT do biżuterii — powłoka UV, dobra odporność chemiczna, klej akrylowy. Praca −40 °C do +49 °C.',
     positioning: 'specjalna',
     material: 'polipropylen-syntetyczny',
     glue: 'permanentny',
@@ -1784,95 +1839,88 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
     priceFrom: 1477.69,
     accent: '#E11D48',
     seoTitle: '8000D Jewelry — polipropylenowa etykieta DT Zebra do biżuterii | UV resistant',
-    seoDescription: 'Zebra 8000D Jewelry — polipropylenowa (syntetyczna) etykieta DT do biżuterii i drobnych komponentów. UV resistant varnish, klej akrylowy, butterfly/dumbbell shape. Cold Temperature + Deep Freeze (−40 °C do +49 °C). BPA-free, latex-free.',
+    seoDescription: 'Zebra 8000D Jewelry — syntetyczna polipropylenowa etykieta direct thermal do biżuterii i drobnych kabli. Powłoka UV, dobra odporność chemiczna, klej akrylowy. Praca −40 °C do +49 °C, min. aplikacja −23 °C. Dwie wersje: ze skrzydełkami i bez skrzydełek.',
     h1: 'Etykiety termiczne Zebra 8000D Jewelry',
-    heroIntro: '8000D Jewelry to **syntetyczna polipropylenowa etykieta direct thermal** zaprojektowana dla branży jubilerskiej. Facestock **gloss white thermal imaging polypropylene 84 µm** + **permanent high-performance acrylic adhesive 26 µm** + white kraft paper liner 81 µm, **total 191 µm ±10%**. **UV resistant varnish** zapewnia doskonałą odporność na silne światło w retail. Cold Temperature + Deep Freeze + **Moderate Chemical Resistance**. Dwie formy: **butterfly** (z strefą bez kleju) i **dumbbell** (z pełnym klejem). **BPA-free, latex-free adhesive**.',
+    heroIntro: '8000D Jewelry to syntetyczna, **polipropylenowa etykieta termiczna (direct thermal)** zaprojektowana do oznaczania biżuterii i drobnych komponentów. Biały powlekany polipropylen z **powłoką UV** daje doskonałą trwałość i odporność chemiczną nieosiągalną dla papieru, a permanentny klej akrylowy trzyma w szerokim zakresie temperatur **od −40 °C do +49 °C** (min. aplikacja −23 °C). Dobra odporność na rozmazywanie i zarysowania. Dostępna w **dwóch wersjach: ze skrzydełkami (with flaps) i bez skrzydełek (without flaps)** — skrzydełka owija się wokół drobnej biżuterii.',
     keyHighlights: [
-      'Material Type: **Synthetic** (NIE papier!) — Film Type: **Polypropylene**',
-      'Facestock gloss white thermal imaging polypropylene, **84 µm**',
-      'Klej **permanent high-performance acrylic**, 26 µm',
-      '**UV resistant varnish** — odporność na silne światło w retail',
-      'Properties: Cold Temperature, Deep Freeze, **Moderate Chemical Resistance**',
-      'Zakres pracy **−40 °C do +49 °C**, min. aplikacja **−23 °C**',
-      'Indoor use, 1 year+',
-      'Dwie formy: **butterfly** (strefa bez kleju) lub **dumbbell** (pełny klej)',
-      '**BPA-free, latex-free adhesive**',
-      'Good smear and scratch resistance',
+      'Syntetyk — biały powlekany polipropylen (nie papier), 84 µm',
+      'Powłoka UV — doskonała trwałość i odporność chemiczna',
+      'Permanentny klej akrylowy (26 µm), łączna grubość 191 µm ±10%',
+      'Dobra odporność na rozmazywanie i zarysowania',
+      'Zakres pracy −40 °C do +49 °C, min. aplikacja −23 °C',
+      'Dobra odporność chemiczna — woda, krew, słona woda, alkohol, IPA, amoniak, wybielacz',
+      'Dwie wersje: **ze skrzydełkami** (with flaps) i **bez skrzydełek** (without flaps)',
+      'Do użytku wewnątrz pomieszczeń (nie do zastosowań zewnętrznych)',
     ],
     sections: [
       {
         heading: 'Czym jest 8000D Jewelry?',
         content:
-          '8000D Jewelry to **syntetyczna polipropylenowa etykieta direct thermal** Zebry zaprojektowana pod biżuterię i drobne komponenty. W przeciwieństwie do większości etykiet DT na rynku, **NIE jest papierem** — Material Type: **Synthetic**, Film Type: **Polypropylene**. Daje to wytrzymałość mechaniczną i chemiczną nieosiągalną dla papieru.\n\nKonstrukcja: facestock **gloss white thermal imaging polypropylene, 84 µm** + **permanent high-performance acrylic adhesive, 26 µm** + white kraft paper liner, 81 µm. Łączna grubość **191 µm ±10%**.\n\nDostępna w dwóch kształtach (Available in two shapes):\n\n- **Butterfly shape** — z strefą **bez kleju** (adhesive free zone) na drobne elementy biżuterii\n- **Dumbbell shape** — z **pełnym klejem** (full adhesive)',
+          '8000D Jewelry to **syntetyczna, polipropylenowa etykieta direct thermal** zaprojektowana do oznaczania biżuterii i drobnych komponentów. W przeciwieństwie do większości etykiet termicznych nie jest papierem — to **biały powlekany polipropylen**, co daje wytrzymałość mechaniczną i odporność chemiczną nieosiągalną dla papieru.\n\nKonstrukcja: facestock z białego powlekanego polipropylenu **84 µm (3,3 mil)** + permanentny klej akrylowy **26 µm (1,0 mil)** + podkład z półbielonego papieru kraft **81 µm (3,2 mil)**. Łączna grubość **191 µm (7,5 mil) ±10%**. Numer materiału: **05870RM** (biały).\n\nEtykieta jest dostępna w **dwóch wersjach** dopasowanych do sposobu mocowania na drobnej biżuterii: **ze skrzydełkami (with flaps)** — boczne zakładki owija się wokół elementu i skleja ze sobą — oraz **bez skrzydełek (without flaps)** — wersja płaska. To dwa osobne numery katalogowe o tym samym materiale i wymiarze.',
       },
       {
         heading: 'Główne zastosowania',
         content:
-          'Według Zebry:\n\n- **Tagi do biżuterii i pierścionków** (kształt skrzydełkowy do owijania)\n- **Oznaczenia drobnych kabli i przewodów**\n- **Etykiety na oprawkach okularów i okularów przeciwsłonecznych**\n\nDodatkowo poza biżuterią: drobne komponenty elektroniczne, oznaczenia w warsztatach złotniczych, aukcjach biżuterii i serwisach jubilerskich.',
+          'Typowe zastosowania:\n\n- **Tagi do biżuterii i pierścionków** — etykieta owija się wokół drobnego elementu\n- **Oznaczanie drobnych kabli i przewodów**\n\nDodatkowo sprawdza się w salonach i serwisach jubilerskich (etykiety cenowe w gablotach z mocnym oświetleniem — chroni powłoka UV), w e-commerce biżuterii (kody do kompletacji) oraz przy drobnych komponentach, których nie da się oznaczyć standardową etykietą.',
       },
       {
-        heading: 'Odporność chemiczna (Expected Chemical Resistance)',
+        heading: 'Odporność chemiczna',
         content:
-          'Z UV Coating — **Moderate Chemical Resistance** (acceptable resistance):\n\n- **Weak (akceptowalne)**: krew, płyny ustrojowe, woda słona, woda, środki do czyszczenia szyb\n- **Moderate (akceptowalne)**: amoniak, wybielacz, IPA. **Alcohol — NIE akceptowalne**\n- **Harsh (NIE akceptowalne)**: benzyna, smar, olej\n- **Extreme (NIE akceptowalne)**: aceton, IR Reflow, MEK, TCE, ksylen\n\nZakres odporności jest większy niż w przypadku papierowych Z-Select/Z-Perform — kluczowa zaleta syntetycznej polipropylenowej konstrukcji.',
+          'Dzięki powłoce UV i polipropylenowej konstrukcji 8000D Jewelry ma **dobrą odporność chemiczną** — znacznie szerszą niż papierowe Z-Select/Z-Perform:\n\n- **Chemikalia słabe — odporna**: krew, płyny ustrojowe, woda słona, woda, środek do mycia szyb\n- **Chemikalia średnie — odporna**: alkohol, amoniak, wybielacz, IPA\n- **Chemikalia agresywne — nierekomendowana**: benzyna, smar, olej\n- **Chemikalia ekstremalne — nierekomendowana**: aceton, IR reflow, MEK, TCE, ksylen\n\nDla kontaktu z agresywnymi rozpuszczalnikami wybierz etykietę z poliestru (termotransfer żywiczny).',
       },
       {
-        heading: 'UV resistant varnish i odporność mechaniczna',
+        heading: 'Powłoka UV i odporność mechaniczna',
         content:
-          'Dodatkowe cechy (Additional Features) według Zebry:\n\n- **Good smear and scratch resistance** — dobra odporność na rozmazywanie i zarysowania\n- **UV resistant varnish** — odporność na silne światło w środowiskach retail (gabloty z mocnym oświetleniem)\n- **BPA free** — bez bisfenolu A\n- **Latex free adhesive** — bez lateksu',
+          'Wierzchnia **powłoka UV** zapewnia doskonałą trwałość i odporność chemiczną oraz chroni nadruk w środowiskach z mocnym oświetleniem (gabloty jubilerskie). Materiał ma też **dobrą odporność na rozmazywanie i zarysowania** — istotne dla etykiet, które ocierają się o biżuterię i opakowania podczas obrotu towarem.',
       },
       {
         heading: 'Parametry techniczne',
         content:
-          'Material Construction:\n\n- **Facestock**: gloss white thermal imaging polypropylene, **84 µm**\n- **Adhesive**: permanent high-performance acrylic adhesive, **26 µm**\n- **Liner**: white kraft paper liner, **81 µm**\n- **Total**: **191 µm ±10%**\n\nTemperature Performance:\n\n- **Minimum Application Temperature**: **−23 °C**\n- **Service Temperature Range**: **−40 °C do +49 °C**\n\nProperties: **Cold Temperature, Deep Freeze, Moderate Chemical Resistance**.',
+          'Konstrukcja materiału:\n\n- **Facestock**: biały powlekany polipropylen do druku termicznego, **84 µm (3,3 mil)**\n- **Klej**: permanentny akrylowy, **26 µm (1,0 mil)**\n- **Podkład**: półbielony papier kraft, **81 µm (3,2 mil)**\n- **Łączna grubość**: **191 µm (7,5 mil) ±10%**\n- **Numer materiału**: 05870RM (biały)\n\nWydajność temperaturowa:\n\n- **Minimalna temperatura aplikacji**: **−23 °C (−10 °F)**\n- **Zakres temperatury użytkowej**: **−40 °C do +49 °C** (−40 °F do 120 °F)\n- **Optymalne przechowywanie**: 22 °C przy wilgotności względnej 50%',
       },
       {
         heading: 'Kompatybilność z drukarkami Zebra',
         content:
-          'Recommended Zebra Printers: **desktop, mid-range and high-performance thermal printers** (NIE mobilne). Druk Direct Thermal — bez taśmy barwiącej.',
+          'Druk **direct thermal** — bez taśmy barwiącej. 8000D Jewelry drukuje się na drukarkach Zebra direct thermal; ze względu na bardzo mały format etykiety optymalne są drukarki biurkowe (desktop), które precyzyjnie pozycjonują drobny nośnik.',
       },
       {
-        heading: 'Przechowywanie i okres eksploatacji',
+        heading: 'Przechowywanie i zastosowanie zewnętrzne',
         content:
-          'Recommended Storage Conditions: **1 rok** przy temperaturze **22 °C** i wilgotności względnej **50%**.\n\nExpected Life Span in Application: **indoor use, 1 year+** (po prawidłowej aplikacji i dwell time ~24 h).',
+          'Optymalne warunki przechowywania: temperatura **22 °C** przy wilgotności względnej **50%**. Produkt jest przeznaczony do **użytku wewnątrz pomieszczeń** — **nie jest rekomendowany do zastosowań zewnętrznych (outdoor)**.',
       },
     ],
     techSpecs: [
-      { label: 'Facestock', value: 'Gloss white thermal imaging **polypropylene**, 84 µm' },
-      { label: 'Klej', value: 'Permanent **high-performance acrylic** adhesive, 26 µm' },
-      { label: 'Liner', value: 'White kraft paper liner, 81 µm' },
-      { label: 'Łączna grubość (Total)', value: '191 µm ±10%' },
-      { label: 'Material Type', value: 'Synthetic' },
-      { label: 'Film Type', value: 'Polypropylene' },
-      { label: 'Finish', value: 'Gloss' },
-      { label: 'Środowisko', value: 'Indoor' },
-      { label: 'Properties', value: 'Cold Temperature, Deep Freeze, Moderate Chemical Resistance' },
-      { label: 'Kształty (Available in two shapes)', value: 'Butterfly (adhesive-free zone) / Dumbbell (full adhesive)' },
-      { label: 'Min. temperatura aplikacji', value: '−23 °C' },
+      { label: 'Materiał facestock', value: 'Biały powlekany polipropylen do druku termicznego, 84 µm (3,3 mil)' },
+      { label: 'Klej', value: 'Permanentny akrylowy, 26 µm (1,0 mil)' },
+      { label: 'Podkład (liner)', value: 'Półbielony papier kraft, 81 µm (3,2 mil)' },
+      { label: 'Łączna grubość', value: '191 µm (7,5 mil) ±10%' },
+      { label: 'Materiał', value: 'Syntetyk — polipropylen' },
+      { label: 'Powłoka UV', value: 'Tak — trwałość i odporność chemiczna, ochrona w mocnym świetle' },
+      { label: 'Środowisko', value: 'Wewnątrz pomieszczeń (nie do outdoor)' },
+      { label: 'Odporność chemiczna', value: 'Dobra — woda, krew, słona woda, alkohol, IPA, amoniak, wybielacz' },
+      { label: 'Wersje', value: 'Ze skrzydełkami (with flaps) / bez skrzydełek (without flaps)' },
+      { label: 'Min. temperatura aplikacji', value: '−23 °C (−10 °F)' },
       { label: 'Zakres temperatur pracy', value: '−40 °C do +49 °C' },
-      { label: 'Warunki przechowywania', value: '1 rok, 22 °C, RH 50%' },
-      { label: 'Okres eksploatacji', value: 'Indoor — 1 year+' },
-      { label: 'UV resistant varnish', value: 'Tak — odporność na silne światło w retail' },
-      { label: 'Odporność mechaniczna', value: 'Good smear and scratch resistance' },
-      { label: 'BPA / lateks', value: 'BPA-free, latex-free adhesive' },
-      { label: 'Liczba wariantów', value: '2' },
+      { label: 'Optymalne przechowywanie', value: '22 °C, RH 50%' },
+      { label: 'Odporność mechaniczna', value: 'Dobra odporność na rozmazywanie i zarysowania' },
+      { label: 'Numer materiału (RM)', value: '05870RM (biały)' },
+      { label: 'Liczba wariantów', value: '2 (ze skrzydełkami / bez skrzydełek)' },
     ],
     applications: [
-      'Tagi do biżuterii i pierścionków (kształt skrzydełkowy)',
-      'Oznaczenia drobnych kabli i przewodów',
-      'Etykiety na oprawkach okularów i okularów przeciwsłonecznych',
-      'Salony jubilerskie — etykiety cenowe w gablotach (UV resistant)',
-      'E-commerce biżuterii — etykiety z kodem dla pickingu',
-      'Aukcje biżuterii — numery aukcyjne',
-      'Drobne komponenty elektroniczne',
+      'Tagi do biżuterii i pierścionków (etykieta owijana wokół elementu)',
+      'Oznaczanie drobnych kabli i przewodów',
+      'Salony jubilerskie — etykiety cenowe w gablotach z mocnym oświetleniem (powłoka UV)',
+      'E-commerce biżuterii — etykiety z kodem do kompletacji',
+      'Aukcje i serwisy jubilerskie — numery i opisy',
+      'Drobne komponenty, których nie da się oznaczyć standardową etykietą',
     ],
     notRecommendedFor: [
-      'Kontakt z alkoholem (etanol/isopropanol — alcohol nieakceptowalny)',
-      'Kontakt z benzyną, smarem, olejem (Harsh chemicals)',
-      'Kontakt z acetonem, MEK, TCE, ksylenem (Extreme chemicals)',
-      'IR reflow (procesy lutowania)',
-      'Aplikacje outdoor — produkt indoor (mimo high tolerancji temperatur)',
-      'Etykiety wysyłkowe (standardowy format) — to specjalistyczny tag jubilerski',
-      'Kontakt z żywnością (brak atestów)',
+      'Kontakt z chemikaliami agresywnymi (benzyna, smar, olej)',
+      'Kontakt z chemikaliami ekstremalnymi (aceton, MEK, TCE, ksylen)',
+      'Procesy IR reflow (lutowanie elektroniczne)',
+      'Zastosowania zewnętrzne (outdoor) — produkt do użytku wewnątrz pomieszczeń',
+      'Standardowe etykiety wysyłkowe — to specjalistyczny, mały tag jubilerski',
+      'Kontakt z żywnością (brak atestów żywnościowych)',
     ],
     compatiblePrinters: {
       desktop: ['ZD220d', 'ZD230d', 'ZD411d', 'ZD421d', 'ZD621d', 'GK420d'],
@@ -1881,33 +1929,32 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
       mobile: [],
     },
     certifications: [
-      { name: 'UV resistant varnish', description: 'Lakier UV — odporność na silne światło w środowisku retail (gabloty z mocnym oświetleniem).' },
-      { name: 'BPA free', description: 'Materiał bez bisfenolu A.' },
-      { name: 'Latex-free adhesive', description: 'Klej bez lateksu — bezpieczny dla alergików.' },
-      { name: 'Moderate Chemical Resistance', description: 'Odporność na słabe (woda, krew, salt water) i moderate (amoniak, bleach, IPA) chemikalia.' },
+      { name: 'Powłoka UV', description: 'Doskonała trwałość i odporność chemiczna oraz ochrona nadruku w środowiskach z mocnym oświetleniem (gabloty jubilerskie).' },
+      { name: 'Dobra odporność chemiczna', description: 'Odporna na chemikalia słabe (woda, krew, słona woda) i średnie (alkohol, amoniak, wybielacz, IPA). Nierekomendowana dla agresywnych i ekstremalnych.' },
+      { name: 'Odporność mechaniczna', description: 'Dobra odporność na rozmazywanie i zarysowania.' },
     ],
     comparedWith: [
       {
         seriesSlug: 'z-select-2000d',
-        whenToChooseThis: 'Wybierz 8000D Jewelry dla biżuterii i drobnych komponentów które trzeba owinąć (skrzydełka). Z-Select 2000D dla płaskich etykiet samoprzylepnych z atestami żywnościowymi.',
+        whenToChooseThis: 'Wybierz 8000D Jewelry do oznaczania biżuterii i drobnych komponentów — to mały, syntetyczny tag (polipropylen z powłoką UV) owijany wokół elementu, z dobrą odpornością chemiczną. Z-Select 2000D to standardowa, płaska etykieta samoprzylepna na papierze z atestami żywnościowymi.',
       },
     ],
     faq: [
       {
-        question: 'Co to są "skrzydełka" w etykiecie jubilerskiej?',
-        answer: 'Dwa wąskie pasma po obu stronach środkowej części etykiety, które owija się wokół biżuterii (pierścionka, łańcuszka). Po owinięciu skrzydełka sklejają się ze sobą tworząc wystający tag, który można skanować lub odczytać bez odklejania.',
+        question: 'Czym różnią się dwie wersje 8000D Jewelry (ze skrzydełkami i bez)?',
+        answer: '8000D Jewelry występuje w dwóch wersjach o tym samym materiale i wymiarze, jako dwa osobne numery katalogowe. Wersja ze skrzydełkami (with flaps) ma boczne zakładki, które owija się wokół biżuterii i skleja ze sobą — wygodne dla pierścionków, kolczyków i łańcuszków. Wersja bez skrzydełek (without flaps) to płaski tag. Wybór zależy od sposobu mocowania na oznaczanym elemencie.',
       },
       {
         question: 'Czy 8000D Jewelry trzyma na metalu (złoto, srebro)?',
-        answer: 'Tak — klej akrylowy permanentny dobrze trzyma na powierzchniach metalowych. Skrzydełka owija się wokół biżuterii i sklejają ze sobą — etykieta trzyma się stabilnie nawet bez kontaktu z metalem.',
+        answer: 'Tak — permanentny klej akrylowy dobrze trzyma na powierzchniach metalowych. W praktyce etykietę najczęściej owija się wokół biżuterii tak, że skleja się sama ze sobą, więc trzyma stabilnie nawet przy minimalnym kontakcie z metalem.',
       },
       {
-        question: 'Czy mogę drukować 8000D Jewelry na zwykłej drukarce Zebra?',
-        answer: 'Tak — pasuje do drukarek Zebra DT desktop: ZD220d, ZD230d, ZD411d, ZD421d, ZD621d, GK420d. Większa drukarka industrial może mieć problemy z dokładnym pozycjonowaniem (etykieta jest mała) — desktop jest optymalny.',
+        question: 'Na jakiej drukarce drukować 8000D Jewelry?',
+        answer: 'Na drukarce Zebra direct thermal (bez taśmy). Ze względu na bardzo mały format etykiety optymalne są drukarki biurkowe (desktop), które precyzyjnie pozycjonują drobny nośnik. Większe drukarki przemysłowe bywają mniej dokładne przy tak małej etykiecie.',
       },
       {
-        question: 'Czy etykieta jubilerska wystarczy na drobny font (próba 585, kod 2D)?',
-        answer: 'Tak — dzięki powłoce top-coat. 8000D Jewelry ma powlekany papier, który zapewnia ostry nadruk drobnego tekstu i kodów 2D. Możesz zmieścić: cenę, kod produktu, próbę (Au 585), masę (3.5 g), opis kamieni, kod QR.',
+        question: 'Czy 8000D Jewelry wytrzyma drobny nadruk i kontakt z chemią?',
+        answer: 'Tak. To powlekany polipropylen (nie papier) z powłoką UV — daje ostry nadruk drobnego tekstu i kodów 2D (cena, próba, masa, kod QR) oraz dobrą odporność chemiczną: znosi wodę, krew, słoną wodę, alkohol, IPA, amoniak i wybielacz. Nie jest rekomendowany dla chemikaliów agresywnych (benzyna, oleje) i ekstremalnych (aceton, MEK, ksylen).',
       },
     ],
   },

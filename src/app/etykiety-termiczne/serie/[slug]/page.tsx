@@ -17,6 +17,7 @@ import {
 } from '@/components/ui/Icons'
 import LinkedText from '@/components/ui/LinkedText'
 import { stripMarkdown } from '@/lib/strip-markdown'
+import CommonDefinitionsSchema from '@/components/schemas/CommonDefinitions'
 import SeriesVariantsTable from './SeriesVariantsTable'
 
 const siteUrl = 'https://www.takma.com.pl'
@@ -60,7 +61,9 @@ export default async function SeriesPage({ params }: PageProps) {
   // Schema — Article + BreadcrumbList + FAQPage
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'TechArticle',
+    proficiencyLevel: 'Expert',
+    inLanguage: 'pl-PL',
     headline: series.h1,
     description: series.seoDescription,
     image: product?.images?.[0] ? [product.images[0]] : undefined,
@@ -73,6 +76,28 @@ export default async function SeriesPage({ params }: PageProps) {
     datePublished: '2026-05-18',
     dateModified: '2026-05-18',
     mainEntityOfPage: `${siteUrl}/etykiety-termiczne/serie/${series.slug}`,
+  }
+
+  // Product + AggregateOffer — lowPrice = series.priceFrom (zgodny z widocznym "od X zł netto").
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: `Etykiety termiczne Zebra ${series.title}`,
+    description: series.seoDescription,
+    brand: { '@type': 'Brand', name: 'Zebra Technologies' },
+    category: 'Etykiety termiczne',
+    ...(product?.images?.[0] ? { image: product.images[0] } : {}),
+    ...(series.priceFrom
+      ? {
+          offers: {
+            '@type': 'AggregateOffer',
+            priceCurrency: 'PLN',
+            lowPrice: series.priceFrom,
+            offerCount: variantCount || undefined,
+            seller: { '@type': 'Organization', name: 'TAKMA', url: siteUrl },
+          },
+        }
+      : {}),
   }
 
   const breadcrumbSchema = {
@@ -101,6 +126,8 @@ export default async function SeriesPage({ params }: PageProps) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      <CommonDefinitionsSchema />
 
       {/* ── HERO ───────────────────────────────────────────────────── */}
       <section className="relative bg-slate-950 text-white overflow-hidden">
@@ -159,7 +186,7 @@ export default async function SeriesPage({ params }: PageProps) {
               Warianty rozmiarowe — {series.title}
             </h2>
             <p className="text-gray-600">
-              Wszystkie {product.variants.length} {product.variants.length === 1 ? 'wariant' : product.variants.length < 5 ? 'warianty' : 'wariantów'} z serii {series.title}. Użyj filtrów po lewej (szerokość, wysokość, gilza), żeby zawęzić listę.
+              Wszystkie {product.variants.length} {product.variants.length === 1 ? 'wariant' : product.variants.length < 5 ? 'warianty' : 'wariantów'} z serii {series.title}. Użyj filtrów (szerokość, wysokość, gilza), żeby zawęzić listę.
             </p>
           </div>
           <SeriesVariantsTable

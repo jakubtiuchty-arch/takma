@@ -10,6 +10,7 @@ import {
   ShieldCheckIcon,
 } from '@/components/ui/Icons'
 import InfoTooltip from '@/components/ui/InfoTooltip'
+import CommonDefinitionsSchema from '@/components/schemas/CommonDefinitions'
 
 const SLUG = 'etykiety-termiczne'
 const siteUrl = 'https://www.takma.com.pl'
@@ -143,6 +144,49 @@ export default function Page() {
     ],
   }
 
+  // TechArticle — sygnał treści technicznej dla AI engines (parytet z etykietami TT) + dateModified.
+  const techArticleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: 'Etykiety termiczne Zebra — przewodnik wyboru (direct thermal, bez taśmy)',
+    description: sub.seoDescription,
+    url: `${siteUrl}/${sub.slug}`,
+    inLanguage: 'pl-PL',
+    proficiencyLevel: 'Expert',
+    about: [
+      { '@type': 'Thing', name: 'Etykiety termiczne' },
+      { '@type': 'Thing', name: 'Druk termiczny bezpośredni' },
+      { '@type': 'Thing', name: 'Direct thermal' },
+      { '@type': 'Thing', name: 'Papier termoczuły' },
+      { '@type': 'Thing', name: 'Etykiety linerless' },
+      { '@type': 'Thing', name: 'Etykiety wysyłkowe' },
+      { '@type': 'Thing', name: 'Atesty żywnościowe BfR XIV' },
+    ],
+    publisher: { '@type': 'Organization', name: 'TAKMA', url: siteUrl },
+    audience: {
+      '@type': 'BusinessAudience',
+      audienceType: 'Kierownicy magazynów, działy logistyki i e-commerce, retail, specjaliści ds. zakupów',
+    },
+    datePublished: '2026-05-21',
+    dateModified: '2026-06-02',
+  }
+
+  // HowTo — odwzorowuje sekcję "Jak dobrać etykietę termiczną do drukarki Zebra?" (widoczną na stronie).
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'Jak dobrać etykietę termiczną do drukarki Zebra',
+    description: 'Pięć kroków doboru etykiety termicznej (direct thermal): szerokość druku, średnica gilzy, średnica zewnętrzna rolki, wymóg linerless i technologia DT vs TT.',
+    inLanguage: 'pl-PL',
+    step: [
+      { '@type': 'HowToStep', position: 1, name: 'Sprawdź szerokość druku drukarki', text: 'Etykieta nie może być szersza niż maksymalna szerokość nośnika obsługiwana przez głowicę (np. ZD230d max 104 mm, ZT411 max 114 mm).' },
+      { '@type': 'HowToStep', position: 2, name: 'Średnica gilzy (rdzeń)', text: 'Typowo 19 mm (3/4″), 25 mm (1″) lub 76 mm (3″). Drukarki desktopowe biorą 19/25 mm, mid-range i przemysłowe także 76 mm.' },
+      { '@type': 'HowToStep', position: 3, name: 'Maksymalna średnica zewnętrzna rolki (OD)', text: 'Określa ile materiału się zmieści. Desktop ~127 mm OD, przemysłowe nawet 203 mm.' },
+      { '@type': 'HowToStep', position: 4, name: 'Sprawdź wymóg linerless', text: 'Etykiety linerless wymagają specjalnego wałka (linerless platen roller). Standardowy wałek ulegnie zniszczeniu przy materiale bez podkładu.' },
+      { '@type': 'HowToStep', position: 5, name: 'Technologia DT vs TT', text: 'Etykiety termiczne (DT) działają w drukarkach DT i kombinowanych DT/TT. Drukarki wyłącznie termotransferowe nie zadrukują etykiet termicznych.' },
+    ],
+  }
+
   return (
     <main className="bg-white">
       <script
@@ -153,6 +197,15 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(techArticleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
+      <CommonDefinitionsSchema />
 
       {/* HERO */}
       <section className="relative bg-slate-950 text-white overflow-hidden">
