@@ -11,6 +11,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import Script from 'next/script'
 
 const ChatWidget = dynamic(() => import('@/components/chat/ChatWidget'), { ssr: false })
+const MaterialsAdvisorGate = dynamic(() => import('@/components/chat/MaterialsAdvisorGate'), { ssr: false })
 
 const inter = Inter({
   subsets: ['latin', 'latin-ext'],
@@ -177,8 +178,10 @@ gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', { send_page_view: true });`}
       <PostHogProvider>
         <LayoutShell>{children}</LayoutShell>
       </PostHogProvider>
-      {/* ChatWidget wyłączony tymczasowo — kalibracja w toku */}
+      {/* ChatWidget (ogólny doradca urządzeń) wyłączony tymczasowo — kalibracja w toku */}
       {/* {!isAdmin && !isPanel && <ChatWidget />} */}
+      {/* Doradca materiałów — tylko na stronach etykiet i taśm (gate kliencki) */}
+      {!isAdmin && !isPanel && <MaterialsAdvisorGate />}
       <Analytics />
       <SpeedInsights />
       {!isAdmin && !isPanel && <AutoLinkTracking />}
