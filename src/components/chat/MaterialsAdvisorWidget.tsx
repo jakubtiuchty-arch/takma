@@ -24,23 +24,32 @@ function getText(m: UIMessage): string {
   return m.parts.filter((p): p is { type: 'text'; text: string } => p.type === 'text').map(p => p.text).join('')
 }
 
-// Renderuje tekst z **pogrubieniem** i [linkami](/url)
-function renderText(text: string) {
-  return text.split('\n').map((line, i) => {
-    const nodes: React.ReactNode[] = []
-    const regex = /\*\*(.+?)\*\*|\[([^\]]+)\]\(([^)]+)\)/g
-    let last = 0, m: RegExpExecArray | null, k = 0
-    while ((m = regex.exec(line)) !== null) {
-      if (m.index > last) nodes.push(line.slice(last, m.index))
-      if (m[1]) nodes.push(<strong key={k++}>{m[1]}</strong>)
-      else if (m[2] && m[3]) nodes.push(
-        <a key={k++} href={m[3]} className="text-emerald-700 hover:text-emerald-900 underline">{m[2]}</a>,
+// Parsuje inline **pogrubienie** i [linki](/url) — rekurencyjnie, więc obsługuje
+// też pogrubiony link **[tekst](/url)** (model często tak formatuje).
+function parseInline(text: string, keyBase = ''): React.ReactNode[] {
+  const nodes: React.ReactNode[] = []
+  const regex = /\*\*(.+?)\*\*|\[([^\]]+)\]\(([^)]+)\)/g
+  let last = 0, m: RegExpExecArray | null, k = 0
+  while ((m = regex.exec(text)) !== null) {
+    if (m.index > last) nodes.push(text.slice(last, m.index))
+    if (m[1] !== undefined) {
+      nodes.push(<strong key={`${keyBase}b${k++}`}>{parseInline(m[1], `${keyBase}b${k}`)}</strong>)
+    } else if (m[2] && m[3]) {
+      nodes.push(
+        <a key={`${keyBase}a${k++}`} href={m[3]} className="text-emerald-700 hover:text-emerald-900 underline">{m[2]}</a>,
       )
-      last = regex.lastIndex
     }
-    if (last < line.length) nodes.push(line.slice(last))
-    return <p key={i} className={i > 0 ? 'mt-1.5' : ''}>{nodes}</p>
-  })
+    last = regex.lastIndex
+  }
+  if (last < text.length) nodes.push(text.slice(last))
+  return nodes
+}
+
+// Renderuje wieloliniowy tekst
+function renderText(text: string) {
+  return text.split('\n').map((line, i) => (
+    <p key={i} className={i > 0 ? 'mt-1.5' : ''}>{parseInline(line, `l${i}-`)}</p>
+  ))
 }
 
 interface CartPayload {

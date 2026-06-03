@@ -1,7 +1,6 @@
 import { thermalLabelSeries } from '@/data/thermal-label-series'
 import { transferLabelSeries } from '@/data/transfer-label-series'
 import { transferRibbonSeries } from '@/data/transfer-ribbon-series'
-import { products } from '@/data/products'
 import { stripMarkdown } from '@/lib/strip-markdown'
 
 /**
@@ -11,60 +10,47 @@ import { stripMarkdown } from '@/lib/strip-markdown'
  * getMaterialSeries.
  */
 
-function sizesFor(productId: string): string {
-  const p = products.find(x => x.id === productId)
-  const variants = (p?.variants ?? []).map(v => v.name).filter(Boolean)
-  if (variants.length === 0) return ''
-  const shown = variants.slice(0, 24)
-  const extra = variants.length - shown.length
-  return shown.join(', ') + (extra > 0 ? ` (+${extra} więcej)` : '')
+// Zakres temperatur z techSpecs (różne nazwy etykiet), gdy brak pola temperatureRange.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function tempOf(s: any): string {
+  if (s.temperatureRange) return String(s.temperatureRange)
+  const t = (s.techSpecs ?? []).find((x: { label: string }) => /temperat|zakres prac/i.test(x.label))
+  return t?.value ?? ''
 }
 
-function line(label: string, value: unknown): string {
-  if (value == null || value === '' || (Array.isArray(value) && value.length === 0)) return ''
-  const v = Array.isArray(value) ? value.join(', ') : String(value)
-  return `${label}: ${v}\n`
-}
-
+/**
+ * KOMPAKTOWY wpis serii (~150-250 tokenów). Tylko parametry różnicujące — głębia
+ * (pełne specyfikacje, FAQ, rozmiary, porównania) dostępna przez narzędzia.
+ */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function serialize(s: any, type: 'termiczna' | 'termotransferowa' | 'tasma', url: string): string {
-  const specs = (s.techSpecs ?? []).map((t: { label: string; value: string }) => `${t.label}: ${t.value}`).join(' | ')
   const certs = (s.certifications ?? []).map((c: { name: string }) => c.name).join(', ')
-  const compared = (s.comparedWith ?? [])
-    .map((c: { title?: string; seriesSlug?: string; whenToChooseThis: string }) =>
-      `  • ${c.title ?? c.seriesSlug ?? ''}: ${stripMarkdown(c.whenToChooseThis)}`)
-    .join('\n')
-  const faq = (s.faq ?? [])
-    .map((f: { question: string; answer: string }) => `  Q: ${f.question}\n  A: ${stripMarkdown(f.answer)}`)
-    .join('\n')
+  // cechy różnicujące — tylko te, które występują
+  const feats: string[] = []
+  if (s.material) feats.push(String(s.material))
+  if (s.glue) feats.push(`klej ${s.glue}`)
+  if (s.removable === true) feats.push('klej zdejmowalny')
+  if (s.topcoat === true) feats.push('top-coat')
+  if (s.linerless === true) feats.push('bez podkładu (linerless)')
+  if (s.foodSafe === true) feats.push('kontakt z żywnością')
+  if (s.outdoor === true || s.outdoorResistant === true) feats.push('odporna na zewnątrz')
+  if (s.chemicalResistant === true || s.chemicalResistance) feats.push('odporność chemiczna')
+  if (s.uvResistance) feats.push(`UV: ${s.uvResistance}`)
+  if (s.cryogenic === true) feats.push('kriogeniczna')
+  if (s.printSpeedMax) feats.push(`do ${s.printSpeedMax}`)
+  if (s.ulCertified === true) feats.push('UL')
+  const temp = tempOf(s)
+  if (temp) feats.push(`temp. ${temp}`)
 
-  let out = `\n### ${s.title}  [${type}]\n`
-  out += `URL: ${url}\n`
-  out += line('Pozycjonowanie', s.positioning)
-  out += line('Cena od (netto)', s.priceFrom ? `${s.priceFrom} zł` : '')
-  out += `Opis: ${stripMarkdown(s.heroIntro ?? s.tagline ?? '')}\n`
-  // cechy materiałowe (różne per typ — bierzemy co istnieje)
-  out += line('Materiał', s.material)
-  out += line('Klej', s.glue)
-  out += line('Powłoka ochronna (top-coat)', s.topcoat === true ? 'tak' : s.topcoat === false ? 'nie' : '')
-  out += line('Bez podkładu (linerless)', s.linerless === true ? 'tak' : '')
-  out += line('Klej zdejmowalny', s.removable === true ? 'tak' : '')
-  out += line('Kontakt z żywnością', s.foodSafe === true ? 'tak' : '')
-  out += line('Odporność zewnętrzna/UV', s.outdoor === true || s.outdoorResistant === true || s.uvResistance ? (s.uvResistance ?? 'tak') : '')
-  out += line('Odporność chemiczna', s.chemicalResistant === true ? 'tak' : s.chemicalResistance)
-  out += line('Kriogeniczna', s.cryogenic === true ? 'tak' : '')
-  out += line('Zakres temperatur', s.temperatureRange)
-  out += line('Maks. prędkość druku', s.printSpeedMax)
-  out += line('UL', s.ulCertified === true ? 'tak' : '')
-  out += line('Atesty', certs)
-  out += line('Najważniejsze', (s.keyHighlights ?? []).map((h: string) => stripMarkdown(h)))
-  out += line('Specyfikacja', specs)
-  out += line('Zastosowania', s.applications)
-  out += line('NIE używać do', s.notRecommendedFor)
-  const sizes = sizesFor(s.productId)
-  out += line('Dostępne rozmiary', sizes)
-  if (compared) out += `Kiedy wybrać alternatywę:\n${compared}\n`
-  if (faq) out += `FAQ:\n${faq}\n`
+  const apps = (s.applications ?? []).slice(0, 4).join(', ')
+  const slug = s.slug
+
+  let out = `\n### ${s.title} [${type}]${s.priceFrom ? ` — od ${s.priceFrom} zł` : ''}\n`
+  out += `slug: ${slug} | URL: ${url}\n`
+  out += `${stripMarkdown(s.tagline ?? '')}\n`
+  if (feats.length) out += `Cechy: ${feats.join('; ')}.\n`
+  if (certs) out += `Atesty: ${certs}.\n`
+  if (apps) out += `Zastosowania: ${apps}.\n`
   return out
 }
 
@@ -74,8 +60,9 @@ export function buildMaterialsKnowledge(): string {
   if (_cached) return _cached
   const parts: string[] = []
 
-  parts.push('# KATALOG MATERIAŁÓW EKSPLOATACYJNYCH TAKMA (Zebra)\n')
-  parts.push('Trzy grupy: (1) etykiety termiczne — druk bezpośredni, bez taśmy; (2) etykiety termotransferowe — wymagają taśmy barwiącej, trwały nadruk; (3) taśmy barwiące (ribbony) do druku termotransferowego.\n')
+  parts.push('# KATALOG MATERIAŁÓW EKSPLOATACYJNYCH TAKMA (Zebra) — INDEKS\n')
+  parts.push('Trzy grupy: (1) etykiety termiczne — druk bezpośredni, bez taśmy; (2) etykiety termotransferowe — wymagają taśmy barwiącej, trwały nadruk; (3) taśmy barwiące (ribbony) do druku termotransferowego.')
+  parts.push('To skrócony indeks (parametry różnicujące). Po PEŁNĄ specyfikację, FAQ i atesty serii użyj getMaterialSeries(slug). Po dobór ROZMIARU użyj findClosestSize(slug, szer, wys). Po cenę/dostępność użyj checkMaterialStock(PN).\n')
 
   parts.push('\n## ETYKIETY TERMICZNE (direct thermal, bez taśmy)')
   for (const s of thermalLabelSeries) {

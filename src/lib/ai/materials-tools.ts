@@ -111,6 +111,61 @@ export const getMaterialSeries = tool({
   },
 })
 
+function num(s: unknown): number { return parseFloat(String(s).replace(',', '.')) }
+
+// Parsuje wymiar wariantu (szer × wys) w mm. Etykiety: attributes.Rozmiar lub name
+// („102×152 mm"). Taśmy: Szerokość (mm) × Długość (m).
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function parseDim(v: any): { w: number; h: number } | null {
+  const rozmiar = v.attributes?.['Rozmiar'] || v.attributes?.['Wymiar etykiety']
+  const re = /(\d+(?:[.,]\d+)?)\s*[×xX]\s*(\d+(?:[.,]\d+)?)/
+  let mm = rozmiar ? String(rozmiar).match(re) : null
+  if (!mm && v.attributes?.['Szerokość'] && v.attributes?.['Długość']) {
+    const w = num(v.attributes['Szerokość']); const h = num(v.attributes['Długość'])
+    if (w > 0 && h > 0) return { w, h }
+  }
+  if (!mm && v.name) mm = String(v.name).match(re)
+  if (mm) { const w = num(mm[1]); const h = num(mm[2]); if (w > 0 && h > 0) return { w, h } }
+  return null
+}
+
+export const findClosestSize = tool({
+  description: 'Znajdź warianty serii o rozmiarze NAJBLIŻSZYM żądanemu (szer × wys w mm). Używaj ZAWSZE, gdy klient podaje rozmiar — NIGDY nie dobieraj rozmiaru ręcznie ani „na oko".',
+  inputSchema: z.object({
+    slug: z.string().describe('Slug serii (np. "z-ultimate-3000t-white")'),
+    width: z.number().describe('Żądana szerokość w mm'),
+    height: z.number().describe('Żądana wysokość (etykiety) lub długość w m (taśmy)'),
+    limit: z.number().optional().default(5),
+  }),
+  execute: async ({ slug, width, height, limit }) => {
+    const m = allMaterials().find(x => x.s.slug === slug)
+    if (!m) return { error: `Nie znaleziono serii: ${slug}` }
+    const product = products.find(p => p.id === m.s.productId)
+    const variants = product?.variants ?? []
+    const ranked = variants
+      .map(v => {
+        const d = parseDim(v)
+        if (!d) return null
+        return {
+          partNumber: v.partNumber,
+          size: `${d.w}×${d.h} mm`,
+          distance: Math.round((Math.abs(d.w - width) + Math.abs(d.h - height)) * 10) / 10,
+          availability: v.availability,
+        }
+      })
+      .filter((x): x is NonNullable<typeof x> => x !== null)
+      .sort((a, b) => a.distance - b.distance)
+      .slice(0, limit ?? 5)
+    if (ranked.length === 0) return { error: 'Brak wariantów z rozpoznawalnym rozmiarem.' }
+    return {
+      series: m.s.title,
+      requested: `${width}×${height} mm`,
+      closest: ranked,
+      note: 'Polecaj wariant o najmniejszej wartości distance. distance=0 oznacza dokładne trafienie.',
+    }
+  },
+})
+
 function findVariant(partNumber: string) {
   const product = products.find(p => p.variants?.some(v => v.partNumber === partNumber))
   const variant = product?.variants?.find(v => v.partNumber === partNumber)
@@ -188,6 +243,7 @@ export const prepareCartItem = tool({
 export const materialsTools = {
   searchMaterials,
   getMaterialSeries,
+  findClosestSize,
   checkMaterialStock,
   prepareCartItem,
 }
