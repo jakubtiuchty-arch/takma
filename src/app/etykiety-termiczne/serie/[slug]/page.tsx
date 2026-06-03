@@ -79,6 +79,8 @@ export default async function SeriesPage({ params }: PageProps) {
   }
 
   // Product + AggregateOffer — lowPrice = series.priceFrom (zgodny z widocznym "od X zł netto").
+  // Google wymaga priceValidUntil w Offer/AggregateOffer dla rich snippets ceny (od 2024).
+  const priceValidUntil = new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().split('T')[0]
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -93,6 +95,7 @@ export default async function SeriesPage({ params }: PageProps) {
             '@type': 'AggregateOffer',
             priceCurrency: 'PLN',
             lowPrice: series.priceFrom,
+            priceValidUntil,
             offerCount: variantCount || undefined,
             seller: { '@type': 'Organization', name: 'TAKMA', url: siteUrl },
           },

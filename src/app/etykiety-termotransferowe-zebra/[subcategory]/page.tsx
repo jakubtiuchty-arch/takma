@@ -11,6 +11,7 @@ import {
 import { ChevronRightIcon, CheckIcon, ArrowRightIcon, ShieldCheckIcon } from '@/components/ui/Icons'
 import LinkedText from '@/components/ui/LinkedText'
 import CommonDefinitionsSchema from '@/components/schemas/CommonDefinitions'
+import { stripMarkdown } from '@/lib/strip-markdown'
 
 const siteUrl = 'https://www.takma.com.pl'
 
@@ -1214,7 +1215,7 @@ function SeriesCard({
           <ArrowRightIcon size={large ? 18 : 16} className="text-slate-400 group-hover:text-slate-900 group-hover:translate-x-0.5 transition-all" />
         </div>
         <h3 className={`font-bold text-gray-900 leading-tight mb-2 ${large ? 'text-2xl' : 'text-lg'}`}>{s.title}</h3>
-        <p className={`text-gray-700 leading-snug flex-1 ${large ? 'text-base' : 'text-sm'}`}>{s.tagline}</p>
+        <p className={`text-gray-700 leading-snug flex-1 ${large ? 'text-base' : 'text-sm'}`}>{stripMarkdown(s.tagline)}</p>
       </div>
       )}
     </Link>

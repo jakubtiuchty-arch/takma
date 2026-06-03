@@ -44,6 +44,11 @@ function getItemPrice(
   item: CartItem,
   stockData: Map<string, { found: boolean; price?: number }>
 ): number | undefined {
+  // Pozycja kartonowa (taśma) — cena kartonowa (marża 13%) jest zapisana w priceNetto;
+  // NIE podmieniaj jej żywą ceną pojedynczej rolki (marża 20%), mimo tego samego PN.
+  if (item.productId.endsWith('__karton')) {
+    return item.priceNetto ?? findStaticPrice(item.productId)
+  }
   // 1. Live cena z API (najświeższa)
   if (item.partNumber) {
     const stock = stockData.get(item.partNumber)

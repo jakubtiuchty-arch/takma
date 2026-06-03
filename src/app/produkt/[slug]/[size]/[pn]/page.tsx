@@ -81,6 +81,7 @@ import {
   PhoneIcon,
 } from '@/components/ui/Icons'
 import LinkedText from '@/components/ui/LinkedText'
+import { stripMarkdown } from '@/lib/strip-markdown'
 import AddToRFQButton from '../../AddToRFQButton'
 import AskAboutProductButton from '../../AskAboutProductButton'
 import SpecsAccordion from '../../SpecsAccordion'
@@ -548,7 +549,6 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <RibbonLabelCountWidget
                   rollLengthM={rollLength}
-                  pricePerRoll={ribbonPrice}
                   defaultLabelHeight={80}
                 />
               </div>
@@ -567,7 +567,7 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
               </h2>
               <div className="prose prose-gray max-w-none text-[15px] leading-relaxed">
                 <p className="text-gray-700 mb-4">
-                  {ctx.series.tagline} Ten wariant to <strong>{sizeLabel}</strong>
+                  {stripMarkdown(ctx.series.tagline)} Ten wariant to <strong>{sizeLabel}</strong>
                   {gilza && !/rdze/i.test(sizeLabel) ? <> na rdzeniu <strong>{gilza}</strong></> : null}, numer katalogowy{' '}
                   <strong className="font-mono">{variant.partNumber}</strong>
                   {rollLength ? <>, długość rolki <strong>{rollLength} m</strong></> : null}.
@@ -593,7 +593,7 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
               </h2>
               <div className="prose prose-gray max-w-none text-[15px] leading-relaxed">
                 <p className="text-gray-700 mb-4">
-                  {ctx.series.tagline} Ten wariant to <strong>{sizeLabel}</strong>
+                  {stripMarkdown(ctx.series.tagline)} Ten wariant to <strong>{sizeLabel}</strong>
                   {wersjaLabel ? <> w wersji <strong>{wersjaLabel}</strong></> : null}
                   {gilza && !/rdze/i.test(sizeLabel) ? <> na rdzeniu <strong>{gilza}</strong></> : null}
                   {qtyInRoll ? <>, <strong>{qtyInRoll}</strong> na rolce</> : null}, numer katalogowy{' '}

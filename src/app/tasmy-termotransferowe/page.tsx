@@ -10,6 +10,7 @@ import {
   ShieldCheckIcon,
 } from '@/components/ui/Icons'
 import CommonDefinitionsSchema from '@/components/schemas/CommonDefinitions'
+import { stripMarkdown } from '@/lib/strip-markdown'
 
 const SLUG = 'tasmy-termotransferowe'
 const siteUrl = 'https://www.takma.com.pl'
@@ -104,7 +105,7 @@ function BannerCard({
 
         {/* Tagline */}
         <p className={`text-gray-700 leading-snug flex-1 ${isLarge ? 'text-base' : 'text-sm'}`}>
-          {s.tagline}
+          {stripMarkdown(s.tagline)}
         </p>
 
         {/* Cena od */}

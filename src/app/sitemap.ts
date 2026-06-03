@@ -54,12 +54,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Stare flat slugi TT (etykiety-termotransferowe-papierowe/-foliowe/-specjalne)
   // 301-redirectują na zagnieżdżony URL /etykiety-termotransferowe-zebra/{sub} — wykluczamy.
   // Rodzic ma slug 'etykiety-termotransferowe-zebra' i jest dodawany w transferCategoryPages niżej.
+  // Daty świeżości dla przebudowanych landingów (spójne z dateModified w schema na stronie).
+  const reworkedLandingLastMod: Record<string, Date> = {
+    'tasmy-termotransferowe': new Date('2026-05-31'),
+    'etykiety-termiczne': new Date('2026-06-03'),
+  }
   const subcategoryPages: MetadataRoute.Sitemap = subcategories
     .filter((sub) => !/^etykiety-termotransferowe-(papierowe|foliowe|specjalne)$/.test(sub.slug))
     .filter((sub) => sub.slug !== 'etykiety-termotransferowe-zebra')
     .map((sub) => ({
       url: `${baseUrl}/${sub.slug}`,
-      lastModified: lastUpdated,
+      lastModified: reworkedLandingLastMod[sub.slug] ?? lastUpdated,
     }))
 
   const guidePages: MetadataRoute.Sitemap = [

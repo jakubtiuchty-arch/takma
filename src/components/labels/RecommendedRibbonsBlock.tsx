@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { ArrowRightIcon } from '@/components/ui/Icons'
 import LiveRibbonPrice, { LiveRibbonAvailability, LiveRibbonProvider } from './LiveRibbonPrice'
 import { ribbonNameToSlug } from '@/lib/ribbon-name-to-slug'
+import { stripMarkdown } from '@/lib/strip-markdown'
 import { getRibbonSeriesBySlug } from '@/data/transfer-ribbon-series'
 import {
   getProductBySlug,
@@ -214,7 +215,7 @@ function RibbonVariantCard({
 
         {/* Tagline — krótki argument wyboru, NAJWAŻNIEJSZE info dla klienta na liście */}
         <p className="text-sm text-gray-600 mb-3 leading-snug line-clamp-2">
-          {tagline}
+          {stripMarkdown(tagline)}
         </p>
 
         <p className="text-xs text-gray-500 mb-3 flex items-center gap-1.5 flex-wrap">

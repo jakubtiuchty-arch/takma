@@ -4,6 +4,10 @@ import { useState, useRef, useEffect, useCallback } from 'react'
 import { createPortal } from 'react-dom'
 import { Product } from '@/data/products'
 import { useSmartPrice } from './SmartPriceContext'
+import { useCartStore } from '@/store/cartStore'
+import { ribbonCartonQty } from '@/data/ribbon-carton-qty'
+import { Button } from '@/components/ui'
+import { PlusIcon, CheckIcon } from '@/components/ui/Icons'
 
 interface SmartPriceProps {
   product: Product
@@ -17,6 +21,9 @@ const DEVICE_CATEGORIES = new Set([
 
 export default function SmartPrice({ product }: SmartPriceProps) {
   const { displayedPn, price, loading, variantName, stockData } = useSmartPrice()
+  const { addItem, updateQuantity, isInCart, openDrawer } = useCartStore()
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
 
   // Brak wariantów i brak PNa → "Cena na zapytanie"
   if (!displayedPn && !product.priceFrom) {
@@ -30,6 +37,34 @@ export default function SmartPrice({ product }: SmartPriceProps) {
   // Stock info z kontekstu — zero osobnych fetchów
   const stock = displayedPn ? stockData.get(displayedPn) : undefined
   const hasStockData = !loading && stock?.found
+
+  // Cena kartonowa (tylko taśmy) — zakup całego opakowania wychodzi taniej za rolkę:
+  // liczymy marżę 13% zamiast 20%. Raw (ingramPrice) gdy live, fallback z ceny per-rolkę.
+  // Liczba rolek w kartonie ze snapshotu BlueStar (ribbon-carton-qty.ts).
+  const isRibbon = product.subcategoryIds?.includes('tasmy-termotransferowe') ?? false
+  const cartonQty = isRibbon && displayedPn ? ribbonCartonQty(displayedPn) : null
+  const cartonPerRollRaw = isRibbon && price
+    ? (stock?.ingramPrice ? stock.ingramPrice * 1.13 : (price * 1.13) / 1.20)
+    : undefined
+  const cartonPerRoll = cartonPerRollRaw ? Math.round(cartonPerRollRaw * 100) / 100 : undefined
+  const showCarton = !!(cartonQty && cartonQty > 1 && cartonPerRoll)
+  const cartonId = displayedPn ? `${displayedPn}__karton` : undefined
+  const cartonInCart = mounted && cartonId ? isInCart(cartonId) : false
+
+  const handleAddCarton = () => {
+    if (!cartonId || !showCarton || cartonInCart) return
+    addItem({
+      id: cartonId,
+      name: `${product.name}${variantName ? ` ${variantName}` : ''} — karton (${cartonQty} szt.)`,
+      slug: product.slug,
+      image: product.images[0],
+      partNumber: displayedPn,
+      priceNetto: cartonPerRoll,
+      categoryId: product.categoryId,
+    })
+    updateQuantity(cartonId, cartonQty!)
+    openDrawer()
+  }
 
   return (
     <div className="bg-gray-100 shadow-sm rounded-xl p-4 sm:p-6 mb-6">
@@ -60,6 +95,27 @@ export default function SmartPrice({ product }: SmartPriceProps) {
             <>{(price! * 1.23).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł brutto</>
           )}
         </p>
+      )}
+
+      {/* Cena kartonowa (taśmy) — pełne opakowanie taniej za rolkę, z dodaniem do koszyka */}
+      {!loading && showCarton && (
+        <div className="mt-3 rounded-lg border border-slate-200 bg-white px-3 py-3 flex items-center justify-between gap-3 flex-wrap">
+          <p className="text-sm text-gray-700">
+            <strong className="text-gray-900">
+              {cartonPerRoll!.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł netto
+            </strong>
+            <span className="text-gray-500">/szt.</span> przy zakupie kartonu{' '}
+            <strong className="text-gray-900">({cartonQty} szt.)</strong>
+          </p>
+          <Button
+            size="sm"
+            variant={cartonInCart ? 'secondary' : 'primary'}
+            onClick={handleAddCarton}
+            leftIcon={cartonInCart ? <CheckIcon size={16} /> : <PlusIcon size={16} />}
+          >
+            {cartonInCart ? 'Karton w koszyku' : 'Zamów karton'}
+          </Button>
+        </div>
       )}
 
       {/* Stany magazynowe — bezpośrednio z kontekstu, bez osobnego fetcha */}

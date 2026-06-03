@@ -211,6 +211,12 @@ export default function CheckoutPage() {
   const itemPrices = useMemo(() => {
     const prices = new Map<string, number | undefined>()
     for (const item of items) {
+      // Pozycja kartonowa (taśma) — cena kartonowa (marża 13%) w priceNetto; nie podmieniaj
+      // żywą ceną pojedynczej rolki (×20%), mimo tego samego PN. Dotyczy też ceny w zamówieniu.
+      if (item.productId.endsWith('__karton')) {
+        prices.set(item.productId, item.priceNetto ?? findProductPrice(item.productId))
+        continue
+      }
       // 1. Live cena z API
       if (item.partNumber) {
         const stock = stockData.get(item.partNumber)

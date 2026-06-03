@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/Icons'
 import InfoTooltip from '@/components/ui/InfoTooltip'
 import CommonDefinitionsSchema from '@/components/schemas/CommonDefinitions'
+import { stripMarkdown } from '@/lib/strip-markdown'
 
 const SLUG = 'etykiety-termiczne'
 const siteUrl = 'https://www.takma.com.pl'
@@ -27,6 +28,16 @@ const nicheSlugs = [
   '8000d-jewelry',
 ]
 
+const cardBackgroundImages: Partial<Record<string, string>> = {
+  'z-perform-1000d': '/images/zebra-z-perform-1000d-kafelek-v2.png',
+  'z-select-2000d': '/images/zebra-z-select-2000d-kafelek-v3.png',
+  'polypro-4000d': '/images/zebra-polypro-4000d-kafelek-v2.png',
+  'z-select-2000d-removable': '/images/zebra-z-select-2000d-removable-kafelek.png',
+  'z-perform-1000d-removable': '/images/zebra-z-perform-1000d-removable-kafelek.png',
+  'z-perform-1000d-110-tag': '/images/zebra-z-perform-1000d-110-tag-kafelek.png',
+  'z-essentials-1000d': '/images/zebra-z-essentials-1000d-kafelek.png',
+}
+
 function seriesBySlug(slug: string) {
   return thermalLabelSeries.find(s => s.slug === slug)
 }
@@ -40,6 +51,7 @@ function BannerCard({
   size?: 'normal' | 'large'
 }) {
   const isLarge = size === 'large'
+  const cardBackgroundImage = cardBackgroundImages[s.slug]
   return (
     <Link
       href={`/etykiety-termiczne/serie/${s.slug}`}
@@ -47,15 +59,28 @@ function BannerCard({
         isLarge ? 'p-7' : 'p-5'
       }`}
     >
-      {/* Subtelny radial gradient z prawego-dolnego rogu */}
-      <span
-        aria-hidden="true"
-        className="absolute inset-0 pointer-events-none transition-opacity duration-300 opacity-80 group-hover:opacity-100"
-        style={{
-          background:
-            'radial-gradient(ellipse 65% 35% at bottom right, rgba(168,240,0,0.32) 0%, rgba(168,240,0,0.10) 40%, transparent 80%)',
-        }}
-      />
+      {cardBackgroundImage ? (
+        <>
+          <span
+            aria-hidden="true"
+            className="absolute inset-0 pointer-events-none bg-no-repeat bg-cover bg-center transition-transform duration-300 group-hover:scale-[1.02]"
+            style={{ backgroundImage: `url('${cardBackgroundImage}')` }}
+          />
+          <span
+            aria-hidden="true"
+            className="absolute inset-0 pointer-events-none bg-white/75"
+          />
+        </>
+      ) : (
+        <span
+          aria-hidden="true"
+          className="absolute inset-0 pointer-events-none transition-opacity duration-300 opacity-80 group-hover:opacity-100"
+          style={{
+            background:
+              'radial-gradient(ellipse 65% 35% at bottom right, rgba(168,240,0,0.32) 0%, rgba(168,240,0,0.10) 40%, transparent 80%)',
+          }}
+        />
+      )}
 
       <div className="relative z-10 flex flex-col h-full">
         {/* Chip + strzałka */}
@@ -90,7 +115,7 @@ function BannerCard({
 
         {/* Tagline */}
         <p className={`text-gray-700 leading-snug flex-1 ${isLarge ? 'text-base' : 'text-sm'}`}>
-          {s.tagline}
+          {stripMarkdown(s.tagline)}
         </p>
       </div>
     </Link>
@@ -209,16 +234,17 @@ export default function Page() {
 
       {/* HERO */}
       <section className="relative bg-slate-950 text-white overflow-hidden">
-        <div className="absolute inset-0">
+        {/* Obraz po prawej stronie hero — ten sam co w etykietach termotransferowych */}
+        <div className="absolute right-0 top-0 bottom-0 w-3/5 lg:w-1/2 pointer-events-none">
           <Image
-            src="/images/etykiety-termiczne-hero.png"
+            src="/images/hero-etykiety-termotransfer.png"
             alt=""
             fill
             priority
-            sizes="100vw"
-            className="object-cover opacity-35"
+            sizes="(max-width: 1024px) 60vw, 50vw"
+            className="object-cover object-right"
+            aria-hidden="true"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/70 to-slate-950/40" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">

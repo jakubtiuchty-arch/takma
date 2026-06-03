@@ -6,7 +6,6 @@ import { labelsPerRoll } from '@/lib/ribbon-math'
 
 interface Props {
   rollLengthM: number
-  pricePerRoll: number
   defaultLabelHeight?: number
 }
 
@@ -16,27 +15,16 @@ function fmt(n: number) {
   return new Intl.NumberFormat('pl-PL').format(n)
 }
 
-function fmtPerLabel(n: number) {
-  if (n < 0.01) return n.toFixed(4).replace('.', ',') + ' zł'
-  if (n < 0.1) return n.toFixed(3).replace('.', ',') + ' zł'
-  return n.toFixed(2).replace('.', ',') + ' zł'
-}
-
 export default function RibbonLabelCountWidget({
   rollLengthM,
-  pricePerRoll,
   defaultLabelHeight = 80,
 }: Props) {
   const [h, setH] = useState(defaultLabelHeight)
 
   const result = useMemo(() => {
     const count = labelsPerRoll(rollLengthM, h)
-    return {
-      count,
-      costPerLabel: count > 0 ? pricePerRoll / count : 0,
-      daysAt90: count > 0 ? Math.round(count / 90) : 0,
-    }
-  }, [rollLengthM, pricePerRoll, h])
+    return { count }
+  }, [rollLengthM, h])
 
   // GA4 event ribbon_calc_used — debounce 500 ms, tylko przy zmianie wysokości
   const debounce = useRef<ReturnType<typeof setTimeout> | null>(null)
@@ -96,17 +84,6 @@ export default function RibbonLabelCountWidget({
           {fmt(result.count)}
         </div>
         <div className="text-sm text-gray-600 mt-1">etykiet o wysokości {h} mm</div>
-
-        <div className="mt-3 pt-3 border-t border-gray-200 flex gap-6 flex-wrap">
-          <div>
-            <div className="text-[11px] text-gray-500">Koszt jednej etykiety</div>
-            <div className="text-base font-medium">{fmtPerLabel(result.costPerLabel)}</div>
-          </div>
-          <div>
-            <div className="text-[11px] text-gray-500">Wystarczy na</div>
-            <div className="text-base font-medium">~ {result.daysAt90} dni przy 90 etykiet/dobę</div>
-          </div>
-        </div>
       </div>
 
       <p className="text-[11px] text-amber-800 mt-3">
