@@ -152,7 +152,7 @@ export default function Page() {
         '@type': 'ListItem',
         position: i + 1,
         url: `${siteUrl}/tasmy-termotransferowe/serie/${s.slug}`,
-        name: `Taśma termotransferowa Zebra ${s.title}`,
+        name: `Taśma termotransferowa ${s.title}`,
       })),
     },
   }

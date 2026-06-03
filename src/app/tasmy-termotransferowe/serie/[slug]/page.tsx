@@ -105,7 +105,7 @@ export default async function RibbonSeriesPage({ params }: PageProps) {
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
-    name: `Taśma termotransferowa Zebra ${series.title}`,
+    name: `Taśma termotransferowa ${series.title}`,
     description: series.seoDescription,
     brand: { '@type': 'Brand', name: 'Zebra Technologies' },
     category: 'Taśmy termotransferowe',

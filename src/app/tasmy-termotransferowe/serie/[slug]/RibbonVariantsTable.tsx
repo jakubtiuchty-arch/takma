@@ -542,7 +542,7 @@ function VariantCard({
         {hasImage ? (
           <Image
             src={productImage}
-            alt={`${manufacturerName} ${seriesTitle} ${sizeLabel}`}
+            alt={`${seriesTitle} ${sizeLabel}`}
             fill
             sizes="(max-width: 640px) 50vw, (max-width: 1280px) 50vw, 33vw"
             className="object-contain p-3 sm:p-4"
@@ -561,7 +561,7 @@ function VariantCard({
         </div>
 
         <h4 className="text-sm sm:text-base font-bold text-gray-900 leading-snug mb-1">
-          {manufacturerName} {seriesTitle} {sizeLabel}
+          {seriesTitle} {sizeLabel}
           {color && (
             <span className="inline-flex items-center gap-1 align-baseline">
               {' — '}
