@@ -387,7 +387,7 @@ export default function Page() {
             </table>
           </div>
           <p className="text-sm text-gray-600 mt-3">
-            Jeśli potrzebujesz druku bez taśmy, sprawdź pełną kategorię <Link href="/etykiety-termiczne" className="text-primary-600 hover:underline">etykiety termiczne Zebra</Link>.
+            Jeśli potrzebujesz druku bez taśmy, sprawdź pełną kategorię <Link href="/etykiety-termiczne-zebra" className="text-primary-600 hover:underline">etykiety termiczne Zebra</Link>.
           </p>
         </div>
 

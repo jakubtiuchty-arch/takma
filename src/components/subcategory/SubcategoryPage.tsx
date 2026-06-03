@@ -60,7 +60,7 @@ const sidebarFilters: Record<string, FilterDefinition[]> = {
     { specKey: 'Wymiar etykiety', label: 'Szerokość', sort: 'numeric', transform: 'extract-width', style: 'dropdown' },
     { specKey: 'Wymiar etykiety', label: 'Wysokość', sort: 'numeric', transform: 'extract-height', style: 'dropdown' },
   ],
-  'etykiety-termiczne': [
+  'etykiety-termiczne-zebra': [
     { specKey: 'Wymiar etykiety', label: 'Szerokość', sort: 'numeric', transform: 'extract-width', style: 'dropdown' },
     { specKey: 'Wymiar etykiety', label: 'Wysokość', sort: 'numeric', transform: 'extract-height', style: 'dropdown' },
   ],

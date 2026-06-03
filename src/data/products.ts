@@ -456,7 +456,7 @@ export const subcategories: Subcategory[] = [
   },
   {
     id: 'etykiety-termiczne',
-    slug: 'etykiety-termiczne',
+    slug: 'etykiety-termiczne-zebra',
     name: 'Etykiety termiczne',
     parentCategoryId: 'materialy-eksploatacyjne',
     description: 'Etykiety do druku termicznego bezpośredniego — bez taśmy barwiącej',

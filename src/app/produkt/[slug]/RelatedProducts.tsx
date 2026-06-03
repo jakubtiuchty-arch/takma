@@ -208,7 +208,7 @@ export default function RelatedProducts({ title, products, initialLimit, labels,
             {isSeriesView && (
               <div className="mt-6 pt-5 border-t border-gray-100 text-center">
                 <Link
-                  href="/etykiety-termiczne"
+                  href="/etykiety-termiczne-zebra"
                   className="inline-flex items-center gap-1.5 text-sm font-medium text-primary-600 hover:text-primary-800 transition-colors"
                 >
                   Zobacz wszystkie etykiety termiczne (12 serii, 582 warianty)

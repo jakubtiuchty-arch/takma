@@ -128,7 +128,7 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
     if (variant && variantSize) {
       canonical = `https://www.takma.com.pl/produkt/${product.slug}/${thermalSizeSlug(variantSize)}/${variant.partNumber}`
     } else if (thermalSeries) {
-      canonical = `https://www.takma.com.pl/etykiety-termiczne/serie/${thermalSeries.slug}`
+      canonical = `https://www.takma.com.pl/etykiety-termiczne-zebra/serie/${thermalSeries.slug}`
     }
   } else if (isTransferLabel) {
     if (variant) {
@@ -208,7 +208,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   if (!selectedVariant) {
     if (isThermalLabelProduct(product)) {
       const series = thermalLabelSeries.find(s => s.productId === product.id)
-      if (series) permanentRedirect(`/etykiety-termiczne/serie/${series.slug}`)
+      if (series) permanentRedirect(`/etykiety-termiczne-zebra/serie/${series.slug}`)
     } else if (isTransferLabelProduct(product)) {
       const series = getTransferLabelSeriesByProductId(product.id)
       if (series) permanentRedirect(`/etykiety-termotransferowe-zebra/${series.subcategory}/serie/${series.slug}`)
@@ -867,7 +867,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
           </div>
 
           <div className="py-8 lg:py-12 space-y-12 lg:space-y-16">
-            {/* Warianty — ukryte dla etykiet termicznych (wybór wariantu odbywa się na /etykiety-termiczne/serie/[slug]) */}
+            {/* Warianty — ukryte dla etykiet termicznych (wybór wariantu odbywa się na /etykiety-termiczne-zebra/serie/[slug]) */}
             {showVariants && (
               <VariantsTable
                 productSlug={product.slug}
@@ -972,7 +972,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                       {/* Link do pełnego landingu serii */}
                       <p className="mt-6 text-sm">
                         <Link
-                          href={`/etykiety-termiczne/serie/${series.slug}`}
+                          href={`/etykiety-termiczne-zebra/serie/${series.slug}`}
                           className="text-primary-600 font-semibold hover:underline"
                         >
                           Zobacz pełny przewodnik po serii {series.title} →

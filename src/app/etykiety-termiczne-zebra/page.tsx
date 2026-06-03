@@ -13,7 +13,7 @@ import InfoTooltip from '@/components/ui/InfoTooltip'
 import CommonDefinitionsSchema from '@/components/schemas/CommonDefinitions'
 import { stripMarkdown } from '@/lib/strip-markdown'
 
-const SLUG = 'etykiety-termiczne'
+const SLUG = 'etykiety-termiczne-zebra'
 const siteUrl = 'https://www.takma.com.pl'
 
 // Grupowanie serii — kolejność wierszy: budżetowe → bestsellery → removable → specjalistyczne
@@ -58,7 +58,7 @@ function BannerCard({
   const cardBackgroundImage = cardBackgroundImages[s.slug]
   return (
     <Link
-      href={`/etykiety-termiczne/serie/${s.slug}`}
+      href={`/etykiety-termiczne-zebra/serie/${s.slug}`}
       className={`group relative overflow-hidden bg-white border border-slate-200 rounded-xl hover:border-[#A8F000] hover:shadow-lg transition-all flex flex-col ${
         isLarge ? 'p-7' : 'p-5'
       }`}
@@ -161,7 +161,7 @@ export default function Page() {
       itemListElement: thermalLabelSeries.map((s, i) => ({
         '@type': 'ListItem',
         position: i + 1,
-        url: `${siteUrl}/etykiety-termiczne/serie/${s.slug}`,
+        url: `${siteUrl}/etykiety-termiczne-zebra/serie/${s.slug}`,
         name: `Etykiety termiczne Zebra ${s.title}`,
       })),
     },
@@ -548,7 +548,7 @@ function CategoryGuide() {
               {thermalLabelSeries.map(s => (
                 <tr key={s.slug} className="hover:bg-slate-50">
                   <td className="p-3 font-medium">
-                    <Link href={`/etykiety-termiczne/serie/${s.slug}`} className="text-primary-600 hover:underline">
+                    <Link href={`/etykiety-termiczne-zebra/serie/${s.slug}`} className="text-primary-600 hover:underline">
                       {s.title}
                     </Link>
                   </td>

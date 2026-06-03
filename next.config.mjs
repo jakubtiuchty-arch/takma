@@ -199,6 +199,11 @@ const nextConfig = {
       { source: '/etykiety-termotransferowe-papierowe', destination: '/etykiety-termotransferowe-zebra/papierowe', permanent: true },
       { source: '/etykiety-termotransferowe-foliowe', destination: '/etykiety-termotransferowe-zebra/foliowe', permanent: true },
 
+      // ETYKIETY TERMICZNE — ujednolicenie z -zebra (2026-06). Kanoniczny: /etykiety-termiczne-zebra.
+      // Stary /etykiety-termiczne + podścieżki (/serie/[slug]) → -zebra.
+      { source: '/etykiety-termiczne', destination: '/etykiety-termiczne-zebra', permanent: true },
+      { source: '/etykiety-termiczne/:path*', destination: '/etykiety-termiczne-zebra/:path*', permanent: true },
+
       // Produkty 404 → konkretne następcy
       { source: '/produkt/zebra-ds8178', destination: '/produkt/zebra-ds8288', permanent: true },
       { source: '/produkt/zebra-zc350', destination: '/drukarki-kart', permanent: true },

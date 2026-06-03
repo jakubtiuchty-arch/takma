@@ -583,7 +583,7 @@ export const guides: Guide[] = [
     { title: 'Drukarki termotransferowe', href: '/termotransferowe-drukarki-etykiet' },
     { title: 'ZD421t vs Honeywell PC45t — porównanie', href: '/poradnik/zebra-zd421t-vs-honeywell-pc45t' },
     { title: 'ZD421 vs ZD621 — porównanie Zebra', href: '/poradnik/zebra-zd421-vs-zd621-porownanie' },
-    { title: 'Etykiety termiczne', href: '/etykiety-termiczne' },
+    { title: 'Etykiety termiczne', href: '/etykiety-termiczne-zebra' },
     { title: 'Etykiety termotransferowe papierowe', href: '/etykiety-termotransferowe-zebra/papierowe' },
     { title: 'Taśmy termotransferowe (ribbony)', href: '/tasmy-termotransferowe' },
     { title: 'Materiały eksploatacyjne', href: '/materialy-eksploatacyjne' }
@@ -1650,7 +1650,7 @@ export const guides: Guide[] = [
     { title: 'Drukarki przemysłowe', href: '/przemyslowe-drukarki-etykiet' },
     { title: 'ZD421t vs Honeywell PC45t — porównanie', href: '/poradnik/zebra-zd421t-vs-honeywell-pc45t' },
     { title: 'ZD421 vs ZD621 — porównanie Zebra', href: '/poradnik/zebra-zd421-vs-zd621-porownanie' },
-    { title: 'Etykiety termiczne', href: '/etykiety-termiczne' },
+    { title: 'Etykiety termiczne', href: '/etykiety-termiczne-zebra' },
     { title: 'Etykiety termotransferowe', href: '/etykiety-termotransferowe-zebra/papierowe' },
     { title: 'Taśmy termotransferowe', href: '/tasmy-termotransferowe' },
     { title: 'Kontakt i doradztwo', href: '/kontakt' },
@@ -6426,7 +6426,7 @@ export const guides: Guide[] = [
 <ol>
   <li><strong>Drukarka etykiet Zebra</strong> — dowolny model 4-calowy (ZD220d, ZD230d, ZD421d/t, ZD621t, ZT231 lub ZT411)</li>
   <li><strong>Kabel USB A-B</strong> — do podłączenia drukarki do komputera (dołączony do zestawu) lub <strong>kabel Ethernet RJ-45</strong> (dla modeli z portem sieciowym)</li>
-  <li><strong>Rolka <a href="/etykiety-termiczne">etykiet termicznych</a> 100x150 mm</strong> — standardowy format etykiet kurierskich InPost, DPD, DHL, UPS i GLS. Rdzeń 25 mm (drukarki biurkowe) lub 76 mm (drukarki przemysłowe)</li>
+  <li><strong>Rolka <a href="/etykiety-termiczne-zebra">etykiet termicznych</a> 100x150 mm</strong> — standardowy format etykiet kurierskich InPost, DPD, DHL, UPS i GLS. Rdzeń 25 mm (drukarki biurkowe) lub 76 mm (drukarki przemysłowe)</li>
   <li><strong>Komputer z Windows, macOS lub Linux</strong> — aplikacja BaseLinker Printer działa na wszystkich systemach</li>
   <li><strong>Konto BaseLinker</strong> z aktywnym kontem kuriera (InPost, DPD, DHL, UPS, GLS, Poczta Polska)</li>
   <li><strong>Aplikacja BaseLinker Printer</strong> — darmowa, pobierzesz ją w kroku 2</li>

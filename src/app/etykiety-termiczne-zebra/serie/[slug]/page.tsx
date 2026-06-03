@@ -41,11 +41,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: series.seoTitle,
       description: series.seoDescription,
-      url: `${siteUrl}/etykiety-termiczne/serie/${series.slug}`,
+      url: `${siteUrl}/etykiety-termiczne-zebra/serie/${series.slug}`,
       type: 'article',
     },
     alternates: {
-      canonical: `${siteUrl}/etykiety-termiczne/serie/${series.slug}`,
+      canonical: `${siteUrl}/etykiety-termiczne-zebra/serie/${series.slug}`,
     },
   }
 }
@@ -75,7 +75,7 @@ export default async function SeriesPage({ params }: PageProps) {
     },
     datePublished: '2026-05-18',
     dateModified: '2026-05-18',
-    mainEntityOfPage: `${siteUrl}/etykiety-termiczne/serie/${series.slug}`,
+    mainEntityOfPage: `${siteUrl}/etykiety-termiczne-zebra/serie/${series.slug}`,
   }
 
   // Product + AggregateOffer — lowPrice = series.priceFrom (zgodny z widocznym "od X zł netto").
@@ -109,8 +109,8 @@ export default async function SeriesPage({ params }: PageProps) {
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Strona główna', item: siteUrl },
       { '@type': 'ListItem', position: 2, name: 'Materiały eksploatacyjne', item: `${siteUrl}/materialy-eksploatacyjne` },
-      { '@type': 'ListItem', position: 3, name: 'Etykiety termiczne', item: `${siteUrl}/etykiety-termiczne` },
-      { '@type': 'ListItem', position: 4, name: series.title, item: `${siteUrl}/etykiety-termiczne/serie/${series.slug}` },
+      { '@type': 'ListItem', position: 3, name: 'Etykiety termiczne', item: `${siteUrl}/etykiety-termiczne-zebra` },
+      { '@type': 'ListItem', position: 4, name: series.title, item: `${siteUrl}/etykiety-termiczne-zebra/serie/${series.slug}` },
     ],
   }
 
@@ -149,7 +149,7 @@ export default async function SeriesPage({ params }: PageProps) {
             <ChevronRightIcon size={14} className="text-slate-500" />
             <Link href="/materialy-eksploatacyjne" className="hover:text-white whitespace-nowrap">Materiały eksploatacyjne</Link>
             <ChevronRightIcon size={14} className="text-slate-500" />
-            <Link href="/etykiety-termiczne" className="hover:text-white whitespace-nowrap">Etykiety termiczne</Link>
+            <Link href="/etykiety-termiczne-zebra" className="hover:text-white whitespace-nowrap">Etykiety termiczne</Link>
             <ChevronRightIcon size={14} className="text-slate-500" />
             <span className="text-white font-medium whitespace-nowrap">{series.title}</span>
           </nav>
@@ -337,7 +337,7 @@ export default async function SeriesPage({ params }: PageProps) {
                         <LinkedText text={comp.whenToChooseThis} />
                       </p>
                       <Link
-                        href={`/etykiety-termiczne/serie/${comp.seriesSlug}`}
+                        href={`/etykiety-termiczne-zebra/serie/${comp.seriesSlug}`}
                         className="text-sm text-primary-600 hover:text-primary-700 font-medium inline-flex items-center gap-1"
                       >
                         Zobacz {other.title} <ArrowRightIcon size={14} />

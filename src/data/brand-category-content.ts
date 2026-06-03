@@ -82,7 +82,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       {
         title: 'Retail i POS — ZD220d',
         description:
-          'Najtańsza drukarka etykiet Zebra (od 639 zł netto) idealna do drukowania etykiet cenowych, oznaczeń półkowych i etykiet promocyjnych w sklepach detalicznych. Technologia termiczna bezpośrednia eliminuje koszt taśmy barwiącej — wystarczą same etykiety. Prosty interfejs USB i kompaktowe wymiary pozwalają umieścić drukarkę przy kasie lub na zapleczu. Drukuje do 300 etykiet dziennie przy bardzo niskim koszcie eksploatacji (~15 zł/miesiąc w [materiałach eksploatacyjnych](/etykiety-termiczne)).',
+          'Najtańsza drukarka etykiet Zebra (od 639 zł netto) idealna do drukowania etykiet cenowych, oznaczeń półkowych i etykiet promocyjnych w sklepach detalicznych. Technologia termiczna bezpośrednia eliminuje koszt taśmy barwiącej — wystarczą same etykiety. Prosty interfejs USB i kompaktowe wymiary pozwalają umieścić drukarkę przy kasie lub na zapleczu. Drukuje do 300 etykiet dziennie przy bardzo niskim koszcie eksploatacji (~15 zł/miesiąc w [materiałach eksploatacyjnych](/etykiety-termiczne-zebra)).',
       },
     ],
     uniqueInsights: {

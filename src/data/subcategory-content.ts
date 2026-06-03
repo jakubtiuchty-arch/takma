@@ -791,7 +791,7 @@ Profesjonalna analiza zakupowa powinna uwzględniać całkowity koszt posiadania
   // ============================================
   // ETYKIETY TERMICZNE
   // ============================================
-  'etykiety-termiczne': {
+  'etykiety-termiczne-zebra': {
     definition: {
       heading: 'Etykiety termiczne Zebra — druk bez taśmy barwiącej',
       content: 'Etykiety termiczne (ang. direct thermal labels) to specjalne etykiety, które ciemnieją pod wpływem ciepła z głowicy drukującej — nie wymagają taśmy barwiącej (ribbon). To najprostszy i najtańszy sposób drukowania etykiet. Zebra oferuje dwie serie: Z-Select 2000D (powlekana, premium — ostrzejszy nadruk, lepsza czytelność) i Z-Perform 2000D (niepowlekana, ekonomiczna). Etykiety termiczne są idealne do zastosowań tymczasowych: etykiety wysyłkowe, kurierskie, cenówki, paragony, bilety. Ważne: nadruk termiczny blaknie z czasem (6–12 miesięcy) i pod wpływem ciepła, światła i tarcia — do etykiet trwałych należy wybrać etykiety termotransferowe.',

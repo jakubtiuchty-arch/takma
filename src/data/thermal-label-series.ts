@@ -2,8 +2,8 @@
  * Dane 12 serii etykiet termicznych Zebra.
  *
  * Używane na:
- *  - /etykiety-termiczne (kafelki serii, tabela porównawcza)
- *  - /etykiety-termiczne/serie/[slug] (pełny landing serii)
+ *  - /etykiety-termiczne-zebra (kafelki serii, tabela porównawcza)
+ *  - /etykiety-termiczne-zebra/serie/[slug] (pełny landing serii)
  *
  * Każda seria mapuje się 1:1 na produkt w data/products.ts (productId — strona "Kup").
  * Strona /serie/[slug] = SEO landing z porównaniami, atestami, FAQ, kompatybilnością.
@@ -68,7 +68,7 @@ export interface SeriesCompatiblePrinters {
 
 export interface ThermalLabelSeries {
   // ── IDENTITY ─────────────────────────────────────────────────────
-  /** slug do URL /etykiety-termiczne/serie/[slug] */
+  /** slug do URL /etykiety-termiczne-zebra/serie/[slug] */
   slug: string
   /** id produktu w data/products.ts (link do strony kupna) */
   productId: string

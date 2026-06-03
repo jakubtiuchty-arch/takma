@@ -57,7 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Daty świeżości dla przebudowanych landingów (spójne z dateModified w schema na stronie).
   const reworkedLandingLastMod: Record<string, Date> = {
     'tasmy-termotransferowe': new Date('2026-05-31'),
-    'etykiety-termiczne': new Date('2026-06-03'),
+    'etykiety-termiczne-zebra': new Date('2026-06-03'),
   }
   const subcategoryPages: MetadataRoute.Sitemap = subcategories
     .filter((sub) => !/^etykiety-termotransferowe-(papierowe|foliowe|specjalne)$/.test(sub.slug))
@@ -85,9 +85,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: lastUpdated,
   }))
 
-  // Landing pages dla serii etykiet termicznych — /etykiety-termiczne/serie/[slug]
+  // Landing pages dla serii etykiet termicznych — /etykiety-termiczne-zebra/serie/[slug]
   const thermalSeriesPages: MetadataRoute.Sitemap = thermalLabelSeries.map((s) => ({
-    url: `${baseUrl}/etykiety-termiczne/serie/${s.slug}`,
+    url: `${baseUrl}/etykiety-termiczne-zebra/serie/${s.slug}`,
     lastModified: new Date('2026-05-18'),
   }))
 

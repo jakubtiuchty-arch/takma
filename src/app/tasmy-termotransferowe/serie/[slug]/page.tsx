@@ -64,7 +64,7 @@ function labelSeriesUrl(seriesSlug: string): string {
   const tt = transferLabelSeries.find(x => x.slug === seriesSlug)
   if (tt) return `/etykiety-termotransferowe-zebra/${tt.subcategory}/serie/${tt.slug}`
   const dt = getThermalLabelSeriesBySlug(seriesSlug)
-  if (dt) return `/etykiety-termiczne/serie/${dt.slug}`
+  if (dt) return `/etykiety-termiczne-zebra/serie/${dt.slug}`
   // Fallback — przyjmuje że to TT papierowe
   return `/etykiety-termotransferowe-zebra/${labelSubcategoryOf(seriesSlug)}/serie/${seriesSlug}`
 }

@@ -25,13 +25,13 @@ function getPartNumbers(product: Product): string[] {
 
 /**
  * Link do karty produktu. Dla serii etykiet termicznych (subcategoryId 'etykiety-termiczne')
- * kierujemy do variant browsera /etykiety-termiczne/serie/[slug] zamiast strony parent — klient
+ * kierujemy do variant browsera /etykiety-termiczne-zebra/serie/[slug] zamiast strony parent — klient
  * od razu widzi wszystkie 200+ wariantów rozmiarowych z filtrem szerokość/wysokość/gilza.
  */
 function getProductHref(product: Product): string {
   if (product.subcategoryIds?.includes('etykiety-termiczne')) {
     const seriesSlug = product.slug.replace(/^zebra-/, '')
-    return `/etykiety-termiczne/serie/${seriesSlug}`
+    return `/etykiety-termiczne-zebra/serie/${seriesSlug}`
   }
   return `/produkt/${product.slug}`
 }

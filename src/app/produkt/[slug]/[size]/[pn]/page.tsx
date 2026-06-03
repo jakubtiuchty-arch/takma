@@ -31,8 +31,8 @@ function getLabelContext(product: Product) {
       isTransfer: false as const,
       isRibbon: false as const,
       categoryLabel: 'Etykiety termiczne',
-      categoryUrl: '/etykiety-termiczne',
-      seriesUrl: `/etykiety-termiczne/serie/${thermal.slug}`,
+      categoryUrl: '/etykiety-termiczne-zebra',
+      seriesUrl: `/etykiety-termiczne-zebra/serie/${thermal.slug}`,
       recommendedRibbons: undefined,
     }
   }

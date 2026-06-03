@@ -122,7 +122,7 @@ const navigation: NavItem[] = [
     children: [
       { name: 'Wszystkie materiały', href: '/materialy-eksploatacyjne' },
       { name: 'Etykiety termotransferowe', href: '/etykiety-termotransferowe-zebra' },
-      { name: 'Etykiety termiczne', href: '/etykiety-termiczne' },
+      { name: 'Etykiety termiczne', href: '/etykiety-termiczne-zebra' },
       { name: 'Taśmy termotransferowe', href: '/tasmy-termotransferowe' },
       { name: 'Opaski identyfikacyjne', href: '/opaski-identyfikacyjne' },
       { name: 'Karty PCV', href: '/karty-pcv' },
