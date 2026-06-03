@@ -31,7 +31,7 @@ const TILES: Tile[] = [
     desc: 'Ekonomiczne — Z-Perform 1000T, Z-Select 2000T. Do magazynu, wysyłki i opakowań.',
     accent: '#2563EB',
     badge: 'Bestseller',
-    image: '/images/etykiety-termotransfer-zebra-papier.png',
+    image: '/images/etykiety-termotransfer-zebra-papier.webp',
   },
   {
     sub: 'foliowe',
@@ -39,7 +39,7 @@ const TILES: Tile[] = [
     desc: 'Trwałe syntetyki — Z-Ultimate 3000T, PolyPro, PolyE. Odporne na wodę, chemikalia i UV.',
     accent: '#059669',
     badge: 'Trwałe',
-    image: '/images/etykiety-termotransfer-zebra-folia.png',
+    image: '/images/etykiety-termotransfer-zebra-folia.webp',
   },
   {
     sub: 'specjalne',
@@ -47,7 +47,7 @@ const TILES: Tile[] = [
     desc: 'Niszowe — kriogeniczne (-196°C), worki z krwią, plomby VOID i destruktywne.',
     accent: '#D97706',
     badge: 'Niszowe',
-    image: '/images/etykiety-termotransfer-zebra-special.png',
+    image: '/images/etykiety-termotransfer-zebra-special.webp',
   },
 ]
 

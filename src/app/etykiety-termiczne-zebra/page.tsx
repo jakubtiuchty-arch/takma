@@ -31,15 +31,15 @@ const specialistSlugs = [
 ]
 
 const cardBackgroundImages: Partial<Record<string, string>> = {
-  'z-perform-1000d': '/images/zebra-z-perform-1000d-kafelek-v2.png',
-  'z-select-2000d': '/images/zebra-z-select-2000d-kafelek-v3.png',
-  'polypro-4000d': '/images/zebra-polypro-4000d-kafelek-v2.png',
-  'z-select-2000d-removable': '/images/zebra-z-select-2000d-removable-kafelek.png',
-  'z-perform-1000d-removable': '/images/zebra-z-perform-1000d-removable-kafelek.png',
-  'z-perform-1000d-110-tag': '/images/zebra-z-perform-1000d-110-tag-kafelek.png',
-  'z-essentials-1000d': '/images/zebra-z-essentials-1000d-kafelek.png',
-  'z-essentials-500d': '/images/zebra-z-essentials-500d-kafelek.png',
-  '8000d-jewelry': '/images/zebra-8000d-jewelry-kafelek.png',
+  'z-perform-1000d': '/images/zebra-z-perform-1000d-kafelek-v2.webp',
+  'z-select-2000d': '/images/zebra-z-select-2000d-kafelek-v3.webp',
+  'polypro-4000d': '/images/zebra-polypro-4000d-kafelek-v2.webp',
+  'z-select-2000d-removable': '/images/zebra-z-select-2000d-removable-kafelek.webp',
+  'z-perform-1000d-removable': '/images/zebra-z-perform-1000d-removable-kafelek.webp',
+  'z-perform-1000d-110-tag': '/images/zebra-z-perform-1000d-110-tag-kafelek.webp',
+  'z-essentials-1000d': '/images/zebra-z-essentials-1000d-kafelek.webp',
+  'z-essentials-500d': '/images/zebra-z-essentials-500d-kafelek.webp',
+  '8000d-jewelry': '/images/zebra-8000d-jewelry-kafelek.webp',
 }
 
 function seriesBySlug(slug: string) {
