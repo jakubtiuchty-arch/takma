@@ -9,9 +9,10 @@ export const maxDuration = 30
 
 const MAX_MESSAGE_LENGTH = 2000
 const MAX_MESSAGES = 20
-// Domyślnie Opus 4.8 (najwyższa jakość doradztwa). Można zmienić w env, gdyby koszt
-// wymagał downgrade'u (np. claude-sonnet-4-6 / claude-haiku-4-5).
-const MODEL = process.env.DORADCA_MODEL || 'claude-opus-4-8'
+// Domyślnie Sonnet 4.6 — trzyma reguły jak Opus (czyste słownictwo dostępności, właściwe
+// użycie narzędzi), ~5× taniej niż Opus. Można zmienić w env (DORADCA_MODEL):
+// claude-haiku-4-5-20251001 (taniej, luźniej) lub claude-opus-4-8 (max jakość).
+const MODEL = process.env.DORADCA_MODEL || 'claude-sonnet-4-6'
 
 function extractText(parts: Array<{ type: string; text?: string }>): string {
   return parts.filter(p => p.type === 'text' && p.text).map(p => p.text!).join('')
@@ -55,12 +56,21 @@ export async function POST(request: Request) {
 
     const result = streamText({
       model: anthropic(MODEL),
-      system: materialsSystemPrompt(),
-      messages: modelMessages,
+      // System jako PIERWSZA wiadomość z cacheControl na bloku — tak Anthropic faktycznie
+      // cache'uje stały prefiks (persona + indeks katalogu). Kolejne kroki tej samej rozmowy
+      // czytają go ~10× taniej zamiast płacić pełną stawkę za każdym razem.
+      messages: [
+        {
+          role: 'system' as const,
+          content: materialsSystemPrompt(),
+          providerOptions: { anthropic: { cacheControl: { type: 'ephemeral' as const } } },
+        },
+        ...modelMessages,
+      ],
       tools: materialsTools,
-      stopWhen: stepCountIs(5),
-      // Cache statycznego prefiksu (persona + cały katalog) — duża oszczędność na Opus.
-      providerOptions: { anthropic: { cacheControl: { type: 'ephemeral' } } },
+      // Limit kroków — balans między kompletnością odpowiedzi (Haiku robi krok/narzędzie)
+      // a kosztem (każdy krok przetwarza kontekst od nowa).
+      stopWhen: stepCountIs(4),
     })
 
     return result.toUIMessageStreamResponse()

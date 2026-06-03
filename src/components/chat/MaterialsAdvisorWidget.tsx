@@ -8,20 +8,21 @@ import ChatInput from './ChatInput'
 
 const STORAGE_KEY = 'takma-doradca-messages'
 const WELCOME =
-  'Cześć! Jestem Doradcą materiałów TAKMA. Pomogę dobrać etykiety i taśmy barwiące do Twojej drukarki i zastosowania. Napisz, co drukujesz i na czym.'
-const STARTERS = [
-  'Etykieta do mrożonek w chłodni',
-  'Taśma do folii PP',
-  'Etykieta do kontaktu z żywnością',
-  'Najtańsza etykieta wysyłkowa',
-]
+  'Cześć! Jestem doradcą materiałów eksploatacyjnych. Pomogę dobrać etykiety i taśmy barwiące do Twojej drukarki i zastosowania.'
 
 function hasText(m: UIMessage): boolean {
   return m.parts.some(p => p.type === 'text' && p.text.length > 0)
 }
 
+// Pokazujemy TYLKO finalną odpowiedź — tekst PO ostatnim wywołaniu narzędzia.
+// Ukrywa „narrację procesu" tańszych modeli („Sprawdzam…") między krokami.
 function getText(m: UIMessage): string {
-  return m.parts.filter((p): p is { type: 'text'; text: string } => p.type === 'text').map(p => p.text).join('')
+  const parts = m.parts as Array<{ type: string; text?: string }>
+  let lastTool = -1
+  parts.forEach((p, i) => { if (p.type.startsWith('tool-')) lastTool = i })
+  const after = parts.filter((p, i) => p.type === 'text' && p.text && i > lastTool)
+  const chosen = after.length ? after : parts.filter(p => p.type === 'text' && p.text)
+  return chosen.map(p => p.text!).join('')
 }
 
 // Parsuje inline **pogrubienie** i [linki](/url) — rekurencyjnie, więc obsługuje
@@ -147,8 +148,6 @@ export default function MaterialsAdvisorWidget() {
     sendMessage({ text })
   }
 
-  const ask = (text: string) => { if (!isLoading) sendMessage({ text }) }
-
   const visible = messages.filter(m => (m.role === 'user' || m.role === 'assistant') && (hasText(m) || cartPayloads(m).length > 0))
 
   return (
@@ -163,7 +162,7 @@ export default function MaterialsAdvisorWidget() {
               </div>
               <div>
                 <div className="font-semibold text-sm">Doradca materiałów</div>
-                <div className="text-[11px] text-emerald-100">Etykiety i taśmy — dobór 24/7</div>
+                <div className="text-[11px] text-emerald-100">Etykiety i taśmy</div>
               </div>
             </div>
             <div className="flex items-center gap-1">
@@ -181,16 +180,9 @@ export default function MaterialsAdvisorWidget() {
           {/* Messages */}
           <div className="flex-1 overflow-y-auto px-3 py-4 space-y-2">
             {visible.length === 0 && !isLoading && (
-              <>
-                <div className="flex justify-start mb-2">
-                  <div className="max-w-[85%] rounded-2xl rounded-bl-md bg-gray-100 text-gray-900 px-4 py-2.5 text-sm leading-relaxed">{WELCOME}</div>
-                </div>
-                <div className="flex flex-wrap gap-1.5">
-                  {STARTERS.map(s => (
-                    <button key={s} onClick={() => ask(s)} className="text-xs px-2.5 py-1.5 rounded-full border border-emerald-200 text-emerald-800 bg-emerald-50 hover:bg-emerald-100 transition-colors">{s}</button>
-                  ))}
-                </div>
-              </>
+              <div className="flex justify-start mb-2">
+                <div className="max-w-[85%] rounded-2xl rounded-bl-md bg-gray-100 text-gray-900 px-4 py-2.5 text-sm leading-relaxed">{WELCOME}</div>
+              </div>
             )}
 
             {visible.map(m => {

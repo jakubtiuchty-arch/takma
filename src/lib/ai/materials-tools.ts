@@ -93,7 +93,7 @@ export const getMaterialSeries = tool({
     const m = allMaterials().find(x => x.s.slug === slug)
     if (!m) return { error: `Nie znaleziono serii: ${slug}` }
     const s = m.s
-    const product = products.find(p => p.id === s.productId)
+    // Rozmiary celowo POMIJAMY — od doboru rozmiaru jest findClosestSize (taniej w kontekście).
     return {
       type: m.type,
       name: s.title,
@@ -102,11 +102,10 @@ export const getMaterialSeries = tool({
       priceFrom: s.priceFrom ?? null,
       description: stripMarkdown(s.heroIntro ?? s.tagline ?? ''),
       techSpecs: (s.techSpecs ?? []).map((t: { label: string; value: string }) => ({ label: t.label, value: t.value })),
-      certifications: (s.certifications ?? []).map((c: { name: string; description: string }) => ({ name: c.name, description: stripMarkdown(c.description) })),
+      certifications: (s.certifications ?? []).map((c: { name: string }) => c.name),
       applications: s.applications ?? [],
       notRecommendedFor: s.notRecommendedFor ?? [],
-      faq: (s.faq ?? []).map((f: { question: string; answer: string }) => ({ q: f.question, a: stripMarkdown(f.answer) })),
-      sizes: (product?.variants ?? []).map(v => ({ name: v.name, partNumber: v.partNumber })).slice(0, 40),
+      faq: (s.faq ?? []).slice(0, 4).map((f: { question: string; answer: string }) => ({ q: f.question, a: stripMarkdown(f.answer) })),
     }
   },
 })
@@ -200,13 +199,22 @@ export const checkMaterialStock = tool({
     const { product, variant } = findVariant(partNumber)
     if (!variant) return { error: `Nie znaleziono wariantu o PN ${partNumber}.` }
     const live = await liveStock(partNumber)
-    const available = live ? (live.stockPL > 0 || live.stockEU > 0) : variant.availability === 'available'
+    const stockPL = live?.stockPL ?? 0
+    const stockEU = live?.stockEU ?? 0
+    const available = live ? (stockPL > 0 || stockEU > 0) : variant.availability === 'available'
+    // UWAGA: stan w magazynie EU = również DOSTĘPNA (tylko dłuższa wysyłka), NIE „na zamówienie".
+    const delivery = stockPL > 0
+      ? 'magazyn PL — wysyłka 24h'
+      : stockEU > 0
+        ? 'magazyn EU — wysyłka 2-3 dni'
+        : null
     return {
       partNumber,
       name: `${product?.name ?? ''} ${variant.name}`.trim(),
       price: live?.price ?? variant.priceFrom ?? null,
+      status: available ? 'Dostępna' : 'Niedostępna',
       available,
-      stockPL: live?.stockPL ?? null,
+      delivery,
       hint: available ? null : 'Aktualnie niedostępna w magazynie — zapytaj o termin: takma@takma.com.pl',
     }
   },
