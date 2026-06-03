@@ -16,16 +16,18 @@ import { stripMarkdown } from '@/lib/strip-markdown'
 const SLUG = 'etykiety-termiczne'
 const siteUrl = 'https://www.takma.com.pl'
 
-// Grupowanie serii — hierarchia UX (bestseller > specjalistyczne > niche)
+// Grupowanie serii — kolejność wierszy: budżetowe → bestsellery → removable → specjalistyczne
+const budgetSlugs = ['z-essentials-500d', 'z-essentials-1000d']
 const bestsellerSlugs = ['z-perform-1000d', 'z-select-2000d']
-const specialistSlugs = ['polypro-4000d', 'zeroliner-2000d', 'zeroliner-1100d', 'zeroliner-4500d']
-const nicheSlugs = [
-  'z-select-2000d-removable',
-  'z-perform-1000d-removable',
+const removableSlugs = ['z-select-2000d-removable', 'z-perform-1000d-removable']
+const specialistSlugs = [
+  'polypro-4000d',
   'z-perform-1000d-110-tag',
-  'z-essentials-1000d',
-  'z-essentials-500d',
   '8000d-jewelry',
+  // ZeroLiner (linerless) w dolnym wierszu — siatka 3-kolumnowa
+  'zeroliner-2000d',
+  'zeroliner-1100d',
+  'zeroliner-4500d',
 ]
 
 const cardBackgroundImages: Partial<Record<string, string>> = {
@@ -36,6 +38,8 @@ const cardBackgroundImages: Partial<Record<string, string>> = {
   'z-perform-1000d-removable': '/images/zebra-z-perform-1000d-removable-kafelek.png',
   'z-perform-1000d-110-tag': '/images/zebra-z-perform-1000d-110-tag-kafelek.png',
   'z-essentials-1000d': '/images/zebra-z-essentials-1000d-kafelek.png',
+  'z-essentials-500d': '/images/zebra-z-essentials-500d-kafelek.png',
+  '8000d-jewelry': '/images/zebra-8000d-jewelry-kafelek.png',
 }
 
 function seriesBySlug(slug: string) {
@@ -68,7 +72,11 @@ function BannerCard({
           />
           <span
             aria-hidden="true"
-            className="absolute inset-0 pointer-events-none bg-white/75"
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                'linear-gradient(to right, rgba(255,255,255,0.96) 0%, rgba(255,255,255,0.93) 52%, rgba(255,255,255,0.66) 100%)',
+            }}
           />
         </>
       ) : (
@@ -297,10 +305,24 @@ export default function Page() {
           </p>
         </div>
 
-        {/* ── SEKCJA 1: Najczęściej wybierane (bestsellery, 2 duże karty) ── */}
+        {/* ── SEKCJA 1: Budżetowe (najniższy koszt) ── */}
         <div className="mb-10">
           <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
-            Najczęściej wybierane
+            Budżetowe — najniższy koszt
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {budgetSlugs.map(slug => {
+              const s = seriesBySlug(slug)
+              if (!s) return null
+              return <BannerCard key={s.slug} series={s} />
+            })}
+          </div>
+        </div>
+
+        {/* ── SEKCJA 2: Bestsellery (najczęściej wybierane, 2 duże karty) ── */}
+        <div className="mb-10">
+          <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
+            Bestsellery — najczęściej wybierane
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {bestsellerSlugs.map(slug => {
@@ -311,13 +333,13 @@ export default function Page() {
           </div>
         </div>
 
-        {/* ── SEKCJA 2: Etykiety specjalistyczne (wodoodporne + linerless) ── */}
+        {/* ── SEKCJA 3: Klej zdejmowalny (removable) ── */}
         <div className="mb-10">
           <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
-            Specjalistyczne — gdy zwykły papier nie wystarcza
+            Klej zdejmowalny (removable)
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {specialistSlugs.map(slug => {
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {removableSlugs.map(slug => {
               const s = seriesBySlug(slug)
               if (!s) return null
               return <BannerCard key={s.slug} series={s} />
@@ -325,13 +347,13 @@ export default function Page() {
           </div>
         </div>
 
-        {/* ── SEKCJA 3: Klej zdejmowalny + dedykowane / budżetowe ── */}
+        {/* ── SEKCJA 4: Specjalistyczne (wodoodporne, linerless, dedykowane) ── */}
         <div>
           <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
-            Klej zdejmowalny i etykiety dedykowane
+            Specjalistyczne — gdy zwykły papier nie wystarcza
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {nicheSlugs.map(slug => {
+            {specialistSlugs.map(slug => {
               const s = seriesBySlug(slug)
               if (!s) return null
               return <BannerCard key={s.slug} series={s} />
