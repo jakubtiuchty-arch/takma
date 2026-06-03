@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowRightIcon } from '@/components/ui/Icons'
-import LiveRibbonPrice, { LiveRibbonAvailability, LiveRibbonProvider } from './LiveRibbonPrice'
+import LiveRibbonPrice, { LiveRibbonAvailability, LiveRibbonProvider, LiveRibbonCartActions } from './LiveRibbonPrice'
 import { ribbonNameToSlug } from '@/lib/ribbon-name-to-slug'
 import { stripMarkdown } from '@/lib/strip-markdown'
 import { getRibbonSeriesBySlug } from '@/data/transfer-ribbon-series'
@@ -158,87 +158,97 @@ function RibbonVariantCard({
 
   return (
     <LiveRibbonProvider partNumber={variant.partNumber} fallbackPrice={variant.priceFrom}>
-    <Link
-      href={href}
+    <div
       className={`group bg-white rounded-2xl overflow-hidden transition-all flex flex-col ${
         isPrimary
           ? 'border-2 border-emerald-200 hover:border-emerald-400 hover:shadow-md'
           : 'border border-slate-200 hover:border-slate-300 hover:shadow-md'
       }`}
     >
-      {/* Image area */}
-      <div className="relative aspect-square bg-white">
-        {image ? (
-          <Image
-            src={image}
-            alt={`Zebra ${seriesNameClean} ${sizeDescriptor}`}
-            fill
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            className="object-contain p-4"
-          />
-        ) : (
-          <div className="absolute inset-0 flex items-center justify-center text-slate-300 text-xs">
-            brak zdjęcia
+      {/* Klikalny obszar: obraz + treść */}
+      <Link href={href} className="flex flex-col flex-1">
+        {/* Image area */}
+        <div className="relative aspect-square bg-white">
+          {image ? (
+            <Image
+              src={image}
+              alt={`Zebra ${seriesNameClean} ${sizeDescriptor}`}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              className="object-contain p-4"
+            />
+          ) : (
+            <div className="absolute inset-0 flex items-center justify-center text-slate-300 text-xs">
+              brak zdjęcia
+            </div>
+          )}
+          {isPrimary && (
+            <span className="absolute top-3 left-3 inline-flex items-center text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded bg-emerald-600 text-white">
+              ✓ Polecana
+            </span>
+          )}
+          {!isPrimary && (
+            <span className="absolute top-3 left-3 inline-flex items-center text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded bg-slate-700 text-white">
+              Alternatywa
+            </span>
+          )}
+        </div>
+
+        {/* Body */}
+        <div className="p-5 flex flex-col flex-1 border-t border-slate-100">
+          <div className="flex items-center gap-2 mb-1.5">
+            <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-500">
+              ZEBRA
+            </span>
+            <span aria-hidden className="text-slate-300 text-[11px]">·</span>
+            <span className={`text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded ${
+              isPrimary
+                ? 'bg-emerald-50 text-emerald-700'
+                : 'bg-slate-100 text-slate-600'
+            }`}>
+              {highlight}
+            </span>
           </div>
-        )}
-        {isPrimary && (
-          <span className="absolute top-3 left-3 inline-flex items-center text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded bg-emerald-600 text-white">
-            ✓ Polecana
-          </span>
-        )}
-        {!isPrimary && (
-          <span className="absolute top-3 left-3 inline-flex items-center text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded bg-slate-700 text-white">
-            Alternatywa
-          </span>
-        )}
-      </div>
 
-      {/* Body */}
-      <div className="p-5 flex flex-col flex-1 border-t border-slate-100">
-        <div className="flex items-center gap-2 mb-1.5">
-          <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-500">
-            ZEBRA
-          </span>
-          <span aria-hidden className="text-slate-300 text-[11px]">·</span>
-          <span className={`text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded ${
-            isPrimary
-              ? 'bg-emerald-50 text-emerald-700'
-              : 'bg-slate-100 text-slate-600'
-          }`}>
-            {highlight}
-          </span>
+          <h4 className="text-base font-bold text-gray-900 leading-snug mb-1">
+            Zebra {seriesNameClean} {sizeDescriptor}
+          </h4>
+
+          {/* Tagline — krótki argument wyboru, NAJWAŻNIEJSZE info dla klienta na liście */}
+          <p className="text-sm text-gray-600 mb-3 leading-snug line-clamp-2">
+            {stripMarkdown(tagline)}
+          </p>
+
+          <p className="text-xs text-gray-500 mb-3 flex items-center gap-1.5 flex-wrap">
+            <span className="text-[10px] font-medium text-gray-400 uppercase tracking-wide">{groupLabel}</span>
+            <span aria-hidden className="text-gray-300">·</span>
+            <span className="font-mono">{variant.partNumber}</span>
+          </p>
+
+          <div className="min-h-[26px]">
+            <LiveRibbonAvailability />
+          </div>
         </div>
+      </Link>
 
-        <h4 className="text-base font-bold text-gray-900 leading-snug mb-1">
-          Zebra {seriesNameClean} {sizeDescriptor}
-        </h4>
-
-        {/* Tagline — krótki argument wyboru, NAJWAŻNIEJSZE info dla klienta na liście */}
-        <p className="text-sm text-gray-600 mb-3 leading-snug line-clamp-2">
-          {stripMarkdown(tagline)}
-        </p>
-
-        <p className="text-xs text-gray-500 mb-3 flex items-center gap-1.5 flex-wrap">
-          <span className="text-[10px] font-medium text-gray-400 uppercase tracking-wide">{groupLabel}</span>
-          <span aria-hidden className="text-gray-300">·</span>
-          <span className="font-mono">{variant.partNumber}</span>
-        </p>
-
-        <div className="mb-4 min-h-[26px]">
-          <LiveRibbonAvailability />
-        </div>
-
-        <div className="mt-auto pt-3 border-t border-slate-100">
+      {/* Footer: cena + akcje (poza linkiem — koszyk to button) */}
+      <div className="px-5 pb-5">
+        <div className="pt-3 border-t border-slate-100">
           <div className="flex items-baseline gap-1.5 mb-3 min-h-[28px]">
             <LiveRibbonPrice />
           </div>
-
-          <span className="block w-full text-center bg-[#A8F000] group-hover:bg-[#94d600] text-gray-900 font-semibold py-3 rounded-lg transition-colors text-sm">
-            Zobacz więcej
-          </span>
+          <LiveRibbonCartActions
+            id={`${product.slug}__${variant.partNumber}`}
+            name={`Zebra ${seriesNameClean} ${sizeDescriptor}`}
+            slug={product.slug}
+            image={image}
+            partNumber={variant.partNumber}
+            categoryId={product.categoryId}
+            href={href}
+          />
         </div>
       </div>
-    </Link>
+    </div>
     </LiveRibbonProvider>
   )
 }

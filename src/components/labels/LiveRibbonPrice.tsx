@@ -1,7 +1,10 @@
 'use client'
 
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react'
+import Link from 'next/link'
 import { Badge } from '@/components/ui'
+import { useCartStore } from '@/store/cartStore'
+import { PlusIcon, CheckIcon } from '@/components/ui/Icons'
 
 type Availability = 'available' | 'on-order' | 'unavailable'
 
@@ -54,10 +57,74 @@ export function LiveRibbonProvider({
   return <LiveRibbonContext.Provider value={data}>{children}</LiveRibbonContext.Provider>
 }
 
+/** Hook dostępu do live ceny/dostępności (cena do koszyka). */
+export function useLiveRibbon() {
+  return useContext(LiveRibbonContext)
+}
+
+// Taśma → forma żeńska; każdy stan poza „dostępna" jako „Niedostępna".
 const AVAILABILITY_LABEL: Record<Availability, { label: string; variant: 'success' | 'warning' | 'danger' }> = {
-  available: { label: 'Dostępny', variant: 'success' },
-  'on-order': { label: 'Na zamówienie', variant: 'warning' },
-  unavailable: { label: 'Niedostępny', variant: 'danger' },
+  available: { label: 'Dostępna', variant: 'success' },
+  'on-order': { label: 'Niedostępna', variant: 'danger' },
+  unavailable: { label: 'Niedostępna', variant: 'danger' },
+}
+
+/** Akcje karty taśmy — „Koszyk" (live cena z kontekstu) + „Więcej". */
+export function LiveRibbonCartActions({
+  id, name, slug, image, partNumber, categoryId, href,
+}: {
+  id: string
+  name: string
+  slug: string
+  image?: string
+  partNumber: string
+  categoryId: string
+  href: string
+}) {
+  const { price, loading } = useContext(LiveRibbonContext)
+  const { addItem, isInCart, openDrawer } = useCartStore()
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
+  const inCart = mounted ? isInCart(id) : false
+
+  const handleAdd = (e: React.MouseEvent) => {
+    e.preventDefault()
+    e.stopPropagation()
+    if (!price) return
+    addItem({ id, name, slug, image, partNumber, priceNetto: price, categoryId })
+    openDrawer()
+  }
+
+  const moreBtn = (
+    <Link
+      href={href}
+      className="flex items-center justify-center text-sm font-medium text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-lg px-4 py-3 whitespace-nowrap transition-colors"
+    >
+      Więcej
+    </Link>
+  )
+
+  return (
+    <div className="flex gap-2">
+      {!loading && price ? (
+        <button
+          onClick={handleAdd}
+          className="flex-1 inline-flex items-center justify-center gap-1.5 text-sm font-semibold rounded-lg px-3 py-3 transition-all active:scale-[0.98] text-gray-900 bg-[#A8F000] hover:bg-[#94d600]"
+        >
+          {inCart ? <CheckIcon size={16} /> : <PlusIcon size={16} />}
+          {inCart ? 'W koszyku' : 'Koszyk'}
+        </button>
+      ) : (
+        <Link
+          href={href}
+          className="flex-1 inline-flex items-center justify-center text-sm font-semibold rounded-lg px-3 py-3 text-gray-900 bg-[#A8F000] hover:bg-[#94d600] transition-colors"
+        >
+          Zobacz więcej
+        </Link>
+      )}
+      {moreBtn}
+    </div>
+  )
 }
 
 /** Badge dostępności pobierany z live API. */
