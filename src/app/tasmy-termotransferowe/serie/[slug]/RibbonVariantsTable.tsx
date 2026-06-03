@@ -99,23 +99,17 @@ function InfoTooltip({ text }: { text: string }) {
 
 /** Badge dostępności wariantu */
 function AvailabilityBadge({ value }: { value: ProductVariant['availability'] }) {
+  // Taśma → forma żeńska. Każdy stan poza „dostępna" pokazujemy jako „Niedostępna”.
   if (value === 'available') {
     return (
       <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-100">
-        Dostępny
-      </span>
-    )
-  }
-  if (value === 'on-order') {
-    return (
-      <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-amber-50 text-amber-700 border border-amber-100">
-        Na zamówienie
+        Dostępna
       </span>
     )
   }
   return (
     <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-red-50 text-red-700 border border-red-100">
-      Niedostępny
+      Niedostępna
     </span>
   )
 }

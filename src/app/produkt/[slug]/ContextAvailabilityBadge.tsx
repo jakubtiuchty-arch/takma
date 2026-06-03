@@ -12,6 +12,7 @@ const config = {
 export default function ContextAvailabilityBadge({
   staticAvailability,
   treatUnknownAsUnavailable = false,
+  feminine = false,
 }: {
   staticAvailability: 'available' | 'on-order' | 'unavailable'
   /** Gdy true — API `found:false` (brak danych z dystrybutora) → "Niedostępny" zamiast
@@ -19,12 +20,20 @@ export default function ContextAvailabilityBadge({
    *  gdzie brak u dystrybutorów = realna niedostępność. Dla urządzeń sprzedawanych
    *  na zamówienie nie używać. */
   treatUnknownAsUnavailable?: boolean
+  /** Forma żeńska etykiety (np. taśma → „Dostępna / Niedostępna"). */
+  feminine?: boolean
 }) {
   const { stockData, loading, displayedPn, partNumbers } = useSmartPrice()
 
+  // Forma żeńska (taśma): każdy stan poza „dostępna" pokazujemy jako „Niedostępna".
+  const labelFor = (a: 'available' | 'on-order' | 'unavailable') =>
+    feminine ? (a === 'available' ? 'Dostępna' : 'Niedostępna') : config[a].label
+  const variantFor = (a: 'available' | 'on-order' | 'unavailable') =>
+    feminine && a === 'on-order' ? ('danger' as const) : config[a].variant
+
   // Podczas ładowania — pokaż statyczną dostępność
   if (loading) {
-    return <Badge variant={config[staticAvailability].variant}>{config[staticAvailability].label}</Badge>
+    return <Badge variant={variantFor(staticAvailability)}>{labelFor(staticAvailability)}</Badge>
   }
 
   let liveAvailability: 'available' | 'on-order' | 'unavailable' = staticAvailability
@@ -64,6 +73,5 @@ export default function ContextAvailabilityBadge({
     }
   }
 
-  const c = config[liveAvailability]
-  return <Badge variant={c.variant}>{c.label}</Badge>
+  return <Badge variant={variantFor(liveAvailability)}>{labelFor(liveAvailability)}</Badge>
 }

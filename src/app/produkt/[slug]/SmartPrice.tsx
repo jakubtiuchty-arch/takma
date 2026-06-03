@@ -156,7 +156,7 @@ export default function SmartPrice({ product }: SmartPriceProps) {
           {stock!.stockPL === 0 && stock!.stockDE === 0 && stock!.inDelivery === 0 && (
             <div className="flex items-center gap-2 text-sm">
               <div className="w-2 h-2 bg-red-400 rounded-full" />
-              <span className="text-gray-500">Chwilowo niedostępny</span>
+              <span className="text-gray-500">Chwilowo niedostępn{isRibbon ? 'a' : 'y'}</span>
             </div>
           )}
         </div>
