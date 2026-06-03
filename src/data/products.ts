@@ -60696,6 +60696,25 @@ export function getProductBySlug(slug: string): Product | undefined {
   return products.find(p => p.slug === slug)
 }
 
+// PN-y etykiet (termiczne + termotransferowe) — do osobnej marży i kartonów.
+// NIE obejmuje taśm (tasmy-termotransferowe) — te mają isRibbonPN.
+const LABEL_SUBCATEGORY_IDS = new Set(['etykiety-termiczne', 'etykiety-termotransferowe'])
+let _labelPNs: Set<string> | null = null
+export function getAllLabelPartNumbers(): Set<string> {
+  if (_labelPNs) return _labelPNs
+  const s = new Set<string>()
+  for (const p of products) {
+    if (p.subcategoryIds?.some(id => LABEL_SUBCATEGORY_IDS.has(id))) {
+      for (const v of (p.variants ?? [])) s.add(v.partNumber)
+    }
+  }
+  _labelPNs = s
+  return s
+}
+export function isLabelPN(partNumber: string): boolean {
+  return getAllLabelPartNumbers().has(partNumber)
+}
+
 // Helper do filtrowania produktów
 export function filterProducts(params: {
   categoryId?: string

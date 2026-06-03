@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { lookupStock as ingramLookup } from '@/lib/ingram'
 import { lookupStock as bluestarLookup } from '@/lib/bluestar'
-import { products } from '@/data/products'
+import { products, isLabelPN } from '@/data/products'
 import { isRibbonPN } from '@/data/transfer-ribbon-products'
 import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
@@ -11,6 +11,7 @@ export const maxDuration = 300 // 5 minutes
 
 const MARGIN = 1.10        // 10% margin (same as /api/stock)
 const RIBBON_MARGIN = 1.20 // 20% margin dla taśm (same as /api/stock)
+const LABEL_MARGIN = 1.15  // 15% margin dla etykiet (same as /api/stock)
 const VAT = 1.23           // 23% VAT
 
 const EUR_RATE_FALLBACK = 4.30
@@ -181,6 +182,7 @@ export async function GET(request: NextRequest) {
           // (etykiety: karton np. 4 rolki; taśmy: 6/12, fallback /12). Jarltech: dla taśm cena
           // pakietu → dziel; dla etykiet cena za 1 rolkę → nie dziel. Ingram zawsze per-szt.
           const isRibbon = isRibbonPN(pn)
+          const isLabel = !isRibbon && isLabelPN(pn)
           const bsPackagingUnit = bs?.multipleQty && bs.multipleQty > 1
             ? bs.multipleQty
             : (isRibbon ? 12 : 1)
@@ -205,7 +207,7 @@ export async function GET(request: NextRequest) {
           let ingramPrice: number | undefined
 
           if (bestRawPricePLN != null && bestRawPricePLN > 0) {
-            const marginForPN = isRibbon ? RIBBON_MARGIN : MARGIN
+            const marginForPN = isRibbon ? RIBBON_MARGIN : isLabel ? LABEL_MARGIN : MARGIN
             price = Math.round(bestRawPricePLN * marginForPN * 100) / 100
             priceBrutto = Math.round(price * VAT * 100) / 100
             ingramPrice = bestRawPricePLN

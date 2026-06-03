@@ -6,6 +6,7 @@ import { Product } from '@/data/products'
 import { useSmartPrice } from './SmartPriceContext'
 import { useCartStore } from '@/store/cartStore'
 import { ribbonCartonQty } from '@/data/ribbon-carton-qty'
+import { labelCartonQty } from '@/data/label-carton-qty'
 import { Button } from '@/components/ui'
 import { PlusIcon, CheckIcon } from '@/components/ui/Icons'
 
@@ -38,13 +39,20 @@ export default function SmartPrice({ product }: SmartPriceProps) {
   const stock = displayedPn ? stockData.get(displayedPn) : undefined
   const hasStockData = !loading && stock?.found
 
-  // Cena kartonowa (tylko taśmy) — zakup całego opakowania wychodzi taniej za rolkę:
-  // liczymy marżę 13% zamiast 20%. Raw (ingramPrice) gdy live, fallback z ceny per-rolkę.
-  // Liczba rolek w kartonie ze snapshotu BlueStar (ribbon-carton-qty.ts).
+  // Cena kartonowa (taśmy + etykiety) — zakup całego opakowania wychodzi taniej za rolkę:
+  // niższa marża niż jednostkowa (taśmy 13% vs 20%, etykiety 10% vs 15%). Raw (ingramPrice)
+  // gdy live, fallback z ceny per-rolkę. Liczba rolek w kartonie ze snapshotu BlueStar.
   const isRibbon = product.subcategoryIds?.includes('tasmy-termotransferowe') ?? false
-  const cartonQty = isRibbon && displayedPn ? ribbonCartonQty(displayedPn) : null
-  const cartonPerRollRaw = isRibbon && price
-    ? (stock?.ingramPrice ? stock.ingramPrice * 1.13 : (price * 1.13) / 1.20)
+  const isLabel = product.subcategoryIds?.some(
+    id => id === 'etykiety-termiczne' || id === 'etykiety-termotransferowe',
+  ) ?? false
+  const cartonQty = displayedPn
+    ? (isRibbon ? ribbonCartonQty(displayedPn) : isLabel ? labelCartonQty(displayedPn) : null)
+    : null
+  const cartonMargin = isRibbon ? 1.13 : 1.10   // etykiety: 10%
+  const singleMargin = isRibbon ? 1.20 : 1.15   // etykiety: 15%
+  const cartonPerRollRaw = (isRibbon || isLabel) && price
+    ? (stock?.ingramPrice ? stock.ingramPrice * cartonMargin : (price * cartonMargin) / singleMargin)
     : undefined
   const cartonPerRoll = cartonPerRollRaw ? Math.round(cartonPerRollRaw * 100) / 100 : undefined
   const showCarton = !!(cartonQty && cartonQty > 1 && cartonPerRoll)

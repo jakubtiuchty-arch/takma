@@ -4,12 +4,14 @@ import { lookupStock as bluestarLookup } from '@/lib/bluestar'
 import { lookupStock as jarltechLive } from '@/lib/jarltech'
 import { prisma } from '@/lib/db'
 import { isRibbonPN } from '@/data/transfer-ribbon-products'
+import { isLabelPN } from '@/data/products'
 import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
 import type { JarltechStockInfo } from '@/lib/jarltech'
 
 const MARGIN = 1.10        // 10% marży — standardowa dla większości produktów
 const RIBBON_MARGIN = 1.20 // 20% marży dla taśm termotransferowych Zebra
+const LABEL_MARGIN = 1.15  // 15% marży dla etykiet (termiczne + termotransferowe)
 const VAT = 1.23           // 23% VAT
 
 // ============================================
@@ -436,7 +438,7 @@ export async function GET(request: NextRequest) {
       let ingramPrice: number | undefined
 
       if (bestRawPricePLN != null && bestRawPricePLN > 0) {
-        const marginForPN = isRibbonPN(pn) ? RIBBON_MARGIN : MARGIN
+        const marginForPN = isRibbonPN(pn) ? RIBBON_MARGIN : isLabelPN(pn) ? LABEL_MARGIN : MARGIN
         price = Math.round(bestRawPricePLN * marginForPN * 100) / 100
         priceBrutto = Math.round(price * VAT * 100) / 100
         ingramPrice = bestRawPricePLN // Najlepsza cena zakupu PLN
