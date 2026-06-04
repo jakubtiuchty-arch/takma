@@ -1294,7 +1294,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {printerRibbons.length > 0 && (
               <PrinterMaterialVariants
                 id="tasmy-barwiace"
-                title="Taśmy barwiące do tej drukarki"
+                title="Taśmy termotransferowe"
                 productIds={['zebra-2300-wax', 'zebra-3200-wax-resin', 'zebra-5095-resin']}
                 kind="ribbon"
                 printWidthMm={printWidthMm}

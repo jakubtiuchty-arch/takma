@@ -120,6 +120,11 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
   // Sprawdź czy produkt jest niedostępny (live dane lub statyczna availability)
   const hasVariants = product.variants && product.variants.length > 0
   const isUnavailable = !stockLoading && (() => {
+    // Priorytet: WYŚWIETLANY wariant (karta wariantu). Jego stan decyduje, nie „dowolny wariant serii".
+    if (displayedPn) {
+      const s = stockData.get(displayedPn)
+      if (s?.found) return s.totalStock <= 0
+    }
     if (partNumbers.length > 0) {
       let anyFound = false
       for (const pn of partNumbers) {

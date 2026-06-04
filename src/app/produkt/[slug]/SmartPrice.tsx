@@ -55,7 +55,9 @@ export default function SmartPrice({ product }: SmartPriceProps) {
     ? (stock?.ingramPrice ? stock.ingramPrice * cartonMargin : (price * cartonMargin) / singleMargin)
     : undefined
   const cartonPerRoll = cartonPerRollRaw ? Math.round(cartonPerRollRaw * 100) / 100 : undefined
-  const showCarton = !!(cartonQty && cartonQty > 1 && cartonPerRoll)
+  // Wariant niedostępny (brak stanu PL/EU/w drodze) → bez opcji kartonu (koszyk wyłączony).
+  const variantUnavailable = !!hasStockData && stock!.stockPL === 0 && stock!.stockDE === 0 && stock!.inDelivery === 0
+  const showCarton = !!(cartonQty && cartonQty > 1 && cartonPerRoll) && !variantUnavailable
   const cartonId = displayedPn ? `${displayedPn}__karton` : undefined
   const cartonInCart = mounted && cartonId ? isInCart(cartonId) : false
 
