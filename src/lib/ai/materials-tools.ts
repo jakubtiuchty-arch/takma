@@ -17,7 +17,6 @@ type MatType = 'etykieta termiczna' | 'etykieta termotransferowa' | 'taśma barw
 interface MatEntry {
   type: MatType
   url: string
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   s: any
 }
 
@@ -114,7 +113,6 @@ function num(s: unknown): number { return parseFloat(String(s).replace(',', '.')
 
 // Parsuje wymiar wariantu (szer × wys) w mm. Etykiety: attributes.Rozmiar lub name
 // („102×152 mm"). Taśmy: Szerokość (mm) × Długość (m).
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function parseDim(v: any): { w: number; h: number } | null {
   const rozmiar = v.attributes?.['Rozmiar'] || v.attributes?.['Wymiar etykiety']
   const re = /(\d+(?:[.,]\d+)?)\s*[×xX]\s*(\d+(?:[.,]\d+)?)/

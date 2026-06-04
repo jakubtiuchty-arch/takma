@@ -11,7 +11,6 @@ import { stripMarkdown } from '@/lib/strip-markdown'
  */
 
 // Zakres temperatur z techSpecs (różne nazwy etykiet), gdy brak pola temperatureRange.
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function tempOf(s: any): string {
   if (s.temperatureRange) return String(s.temperatureRange)
   const t = (s.techSpecs ?? []).find((x: { label: string }) => /temperat|zakres prac/i.test(x.label))
@@ -22,7 +21,6 @@ function tempOf(s: any): string {
  * KOMPAKTOWY wpis serii (~150-250 tokenów). Tylko parametry różnicujące — głębia
  * (pełne specyfikacje, FAQ, rozmiary, porównania) dostępna przez narzędzia.
  */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function serialize(s: any, type: 'termiczna' | 'termotransferowa' | 'tasma', url: string): string {
   const certs = (s.certifications ?? []).map((c: { name: string }) => c.name).join(', ')
   // cechy różnicujące — tylko te, które występują
