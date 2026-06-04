@@ -30,6 +30,7 @@ import AskAboutProductButton from './AskAboutProductButton'
 import ServicePlansBox from './ServicePlansBox'
 import RelatedProducts from './RelatedProducts'
 import PrinterCompatibleLabels from '@/components/product/PrinterCompatibleLabels'
+import PrinterMaterialVariants from '@/components/product/PrinterMaterialVariants'
 import VariantsTable from './VariantsTable'
 import StockInfo from './StockInfo'
 import SmartPrice from './SmartPrice'
@@ -1250,6 +1251,14 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 c) drukarki kart/opasek → RelatedProducts (taśmy/opaski) */}
             {isLabelPrinter && !isTTprinter ? (
               <PrinterCompatibleLabels printerSlug={product.slug} printWidthMm={printWidthMm} />
+            ) : isTTprinter && compatibleConsumables.length > 0 ? (
+              <PrinterMaterialVariants
+                id="etykiety-papierowe"
+                title="Etykiety papierowe termotransferowe"
+                productIds={compatibleConsumables.map((c) => c!.id)}
+                kind="label"
+                printWidthMm={printWidthMm}
+              />
             ) : compatibleConsumables.length > 0 ? (
               <RelatedProducts
                 id="etykiety-papierowe"
@@ -1260,25 +1269,35 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               />
             ) : null}
 
-            {/* Etykiety foliowe termotransferowe */}
+            {/* Etykiety foliowe termotransferowe — konkretne warianty dobrane do głowicy */}
             {compatibleFoilLabels.length > 0 && (
-              <RelatedProducts
-                id="etykiety-foliowe"
-                title="Etykiety foliowe termotransferowe"
-                products={compatibleFoilLabels as typeof products}
-                labels
-                showDualButtons
-              />
+              isTTprinter ? (
+                <PrinterMaterialVariants
+                  id="etykiety-foliowe"
+                  title="Etykiety foliowe termotransferowe"
+                  productIds={compatibleFoilLabels.map((c) => c!.id)}
+                  kind="label"
+                  printWidthMm={printWidthMm}
+                />
+              ) : (
+                <RelatedProducts
+                  id="etykiety-foliowe"
+                  title="Etykiety foliowe termotransferowe"
+                  products={compatibleFoilLabels as typeof products}
+                  labels
+                  showDualButtons
+                />
+              )
             )}
 
-            {/* Taśmy barwiące — wymagane do druku termotransferowego (drukarki TT) */}
+            {/* Taśmy barwiące — wymagane do druku termotransferowego (konkretne warianty) */}
             {printerRibbons.length > 0 && (
-              <RelatedProducts
+              <PrinterMaterialVariants
                 id="tasmy-barwiace"
                 title="Taśmy barwiące do tej drukarki"
-                products={printerRibbons as typeof products}
-                labels
-                showDualButtons
+                productIds={['zebra-2300-wax', 'zebra-3200-wax-resin', 'zebra-5095-resin']}
+                kind="ribbon"
+                printWidthMm={printWidthMm}
               />
             )}
 
