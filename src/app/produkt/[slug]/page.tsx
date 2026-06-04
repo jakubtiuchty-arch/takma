@@ -246,6 +246,22 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     .map((id) => products.find((p) => p.id === id))
     .filter(Boolean)
 
+  // ── Dobór materiałów do drukarki: technologia + szerokość głowicy ──────────
+  const isLabelPrinter = product.categoryId === 'drukarki-etykiet'
+  const isTTprinter = product.subcategoryIds?.includes('termotransferowe-drukarki-etykiet') ?? false
+  // Szerokość druku (głowicy) w mm — z pola specyfikacji „Szerokość druku".
+  const printWidthMm = (() => {
+    const v = product.specifications?.find((s) => s.name === 'Szerokość druku')?.value
+    const m = v?.match(/(\d+(?:[.,]\d+)?)\s*mm/)
+    return m ? parseFloat(m[1].replace(',', '.')) : undefined
+  })()
+  // Taśmy barwiące do drukarek TT — 3 podstawowe serie (wosk / wosk-żywica / żywica).
+  const printerRibbons = isTTprinter
+    ? ['zebra-2300-wax', 'zebra-3200-wax-resin', 'zebra-5095-resin']
+        .map((id) => products.find((p) => p.id === id))
+        .filter(Boolean)
+    : []
+
   // Akcesoria — grupowane wg kategorii
   const allRelated = (product.relatedAccessories || [])
     .map((id) => products.find((p) => p.id === id))
@@ -1227,11 +1243,13 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               </section>
             )}
 
-            {/* Etykiety — dwa tryby:
-                a) drukarka termiczna (DT/TT) → PrinterCompatibleLabels (8 konkretnych wariantów z live ceną i dostępnością)
-                b) drukarki kart/opasek → RelatedProducts (stary mechanizm — taśmy/opaski) */}
-            {compatibleConsumables.length > 0 && compatibleConsumables.some(c => c?.subcategoryIds?.includes('etykiety-termiczne')) ? (
-              <PrinterCompatibleLabels printerSlug={product.slug} />
+            {/* Etykiety — dobór wg technologii i szerokości głowicy:
+                a) drukarka DT (termiczna, w tym mobilne) → PrinterCompatibleLabels — etykiety
+                   termiczne filtrowane do szerokości głowicy (live cena/dostępność)
+                b) drukarka TT → etykiety papierowe termotransferowe (compatibleAccessories)
+                c) drukarki kart/opasek → RelatedProducts (taśmy/opaski) */}
+            {isLabelPrinter && !isTTprinter ? (
+              <PrinterCompatibleLabels printerSlug={product.slug} printWidthMm={printWidthMm} />
             ) : compatibleConsumables.length > 0 ? (
               <RelatedProducts
                 id="etykiety-papierowe"
@@ -1248,6 +1266,17 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 id="etykiety-foliowe"
                 title="Etykiety foliowe termotransferowe"
                 products={compatibleFoilLabels as typeof products}
+                labels
+                showDualButtons
+              />
+            )}
+
+            {/* Taśmy barwiące — wymagane do druku termotransferowego (drukarki TT) */}
+            {printerRibbons.length > 0 && (
+              <RelatedProducts
+                id="tasmy-barwiace"
+                title="Taśmy barwiące do tej drukarki"
+                products={printerRibbons as typeof products}
                 labels
                 showDualButtons
               />

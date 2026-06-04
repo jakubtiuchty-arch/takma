@@ -226,11 +226,46 @@ function VariantCard({
  * konkretnych wariantów rozmiarowych (PN, nie serii) z live ceną i dostępnością z API
  * Ingram/BlueStar/Jarltech. Każda karta linkuje do /produkt/{seria}?pn={PN}.
  */
-export default function PrinterCompatibleLabels({ printerSlug }: { printerSlug?: string }) {
+/** Parsuje szerokość etykiety (mm) z atrybutu „Rozmiar" (np. „102×38 mm" → 102). */
+function labelWidthMm(rozmiar?: string): number | null {
+  const m = rozmiar?.match(/(\d+(?:[.,]\d+)?)\s*[×xX]/)
+  return m ? parseFloat(m[1].replace(',', '.')) : null
+}
+
+export default function PrinterCompatibleLabels({
+  printerSlug,
+  printWidthMm,
+}: {
+  printerSlug?: string
+  printWidthMm?: number
+}) {
   const bestsellers = getBestsellerVariants(printerSlug)
-  const variantData = bestsellers.map(getVariantData).filter(
+  let variantData = bestsellers.map(getVariantData).filter(
     (v): v is VariantData => v !== null,
   )
+
+  // Filtr szerokości głowicy — etykieta nie może być szersza niż głowica drukarki
+  // (np. drukarka 2"/56 mm nie dostaje etykiet 102 mm). Tolerancja 2 mm.
+  if (printWidthMm) {
+    const fits = (v: VariantData) => {
+      const w = labelWidthMm(v.variant.attributes['Rozmiar'])
+      return w == null || w <= printWidthMm + 2
+    }
+    variantData = variantData.filter(fits)
+    // Za mało dla wąskiej drukarki → dobierz węższe warianty z Z-Perform 1000D.
+    if (variantData.length < 4) {
+      const zp = products.find(p => p.id === 'zebra-z-perform-1000d')
+      const series = thermalLabelSeries.find(s => s.productId === 'zebra-z-perform-1000d')
+      const seen = new Set(variantData.map(v => v.variant.partNumber))
+      const extra = (zp?.variants ?? [])
+        .map(v => ({ v, w: labelWidthMm(v.attributes['Rozmiar']) }))
+        .filter(x => x.w != null && x.w <= printWidthMm + 2 && !seen.has(x.v.partNumber))
+        .sort((a, b) => (b.w! - a.w!)) // najszersze mieszczące się najpierw
+        .map(x => ({ product: zp!, variant: x.v, seriesTitle: series?.title ?? 'Z-Perform 1000D' }))
+      variantData = [...variantData, ...extra].slice(0, 8)
+    }
+  }
+
   const partNumbers = variantData.map(v => v.variant.partNumber)
   const { stockData, loading: stockLoading } = useStockData(partNumbers)
 
