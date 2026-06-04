@@ -12068,7 +12068,7 @@ Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribb
 
 Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
-    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 2287.74,
     images: ['/images/products/zq511_1_s.png', '/images/products/zq511_2_s.png'],
@@ -12344,7 +12344,7 @@ Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribb
 
 Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
-    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 2979.18,
     images: ['/images/products/zq521_1_s.png', '/images/products/zq521_2_s.png', '/images/products/zq521_3_s.png'],
@@ -12610,7 +12610,7 @@ Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribb
 
 Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
-    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 3256.06,
     images: ['/images/products/zq610plus_3_s.png', '/images/products/zq610plus_2_s.png', '/images/products/zq610plus_1_s.png'],
@@ -12849,7 +12849,7 @@ Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribb
 
 Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
-    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 3621.95,
     images: ['/images/products/zq620plus_1_s.png', '/images/products/zq620plus_2_s.png', '/images/products/zq620plus_3_s.png'],
@@ -13103,7 +13103,7 @@ Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribb
 
 Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
-    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 4257.45,
     images: ['/images/products/zq630plus_2_s.png', '/images/products/zq630plus_1_s.png', '/images/products/zq630plus_3_s.png'],
@@ -13357,7 +13357,7 @@ Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribb
 
 Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
-    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 1496.16,
     images: ['/images/products/zq310plus_1_s.png', '/images/products/zq310plus_2_s.png', '/images/products/zq310plus_3_s.png'],
@@ -13595,7 +13595,7 @@ Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribb
 
 Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
-    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 1712.58,
     images: ['/images/products/zq320plus_1_s.png', '/images/products/zq320plus_2_s.png', '/images/products/zq320plus_3_s.png'],
@@ -13834,7 +13834,7 @@ Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribb
 
 Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
-    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 576.47,
     images: ['/images/products/placeholder.svg'],
@@ -14043,7 +14043,7 @@ Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribb
 
 Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-etykiet',
-    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 999.12,
     images: ['/images/products/placeholder.svg'],
@@ -14254,7 +14254,7 @@ Wzmocniona obudowa IP54 wytrzymuje upadki z 2 m na beton i 1000 upadków obrotow
 
 Platforma Honeywell Printer Edge umożliwia zdalne zarządzanie flotą drukarek przez SOTI Connect i Operational Intelligence. Programowanie w C# (Smart Printing) pozwala uruchamiać aplikacje drukujące bezpośrednio na drukarce bez serwera pośredniczącego. Natywna obsługa CPCL, ZPL II, DPL, IPL i EZ-Print eliminuje koszty migracji z drukarek Zebra i Intermec. Pełna specyfikacja techniczna na stronie producenta (honeywell.com, marzec 2026).`,
     categoryId: 'drukarki-etykiet',
-    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'honeywell',
     priceFrom: 2694.13,
     images: ['/images/products/RP2_1.png'],
@@ -14411,7 +14411,7 @@ Bateria Li-Ion 4900 mAh z technologią hot-swap utrzymuje łączność bezprzewo
 
 Natywna obsługa ZPL II (ZSim2), CPCL, DPL i IPL eliminuje koszty migracji z drukarek Zebra, Intermec i Datamax. Platforma Honeywell Printer Edge z SOTI Connect i Operational Intelligence umożliwia zdalne zarządzanie flotą drukarek. Pełna specyfikacja techniczna na stronie producenta (honeywell.com, marzec 2026).`,
     categoryId: 'drukarki-etykiet',
-    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'honeywell',
     priceFrom: 3563.23,
     images: ['/images/products/RP4_1.png'],
@@ -14562,7 +14562,7 @@ Obudowa IP54 z odpornością na upadki z 1,8 m (z etui) i 1000 cykli obrotowych 
 
 Natywna obsługa ZPL-II, CPCL, ESC/P, ESC/POS i XSim umożliwia migrację z drukarek Zebra, Intermec i systemów POS bez zmiany oprogramowania. Pełna specyfikacja techniczna na stronie producenta (honeywell.com, marzec 2026).`,
     categoryId: 'drukarki-etykiet',
-    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'honeywell',
     priceFrom: 1158.27,
     images: ['/images/products/LNX3_1.png', '/images/products/LNX3_2.png', '/images/products/LNX3_3.png', '/images/products/LNX3_4.png'],
@@ -14726,7 +14726,7 @@ Brother RJ-4230B emuluje języki ZPL i CPCL — bezproblemowa migracja z drukare
 
 Pełna [specyfikacja techniczna RJ-4230B](https://www.brother.pl/drukarki/drukarki-etykiet/mobilne/rj4230b) na stronie producenta. Pełna oferta [drukarek etykiet Brother](/drukarki-etykiet-brother) w TAKMA. Poradnik [jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet) pomoże dobrać model.`,
     categoryId: 'drukarki-etykiet',
-    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'brother',
     priceFrom: 2352.61,
     images: ['/images/products/RJ_1.png', '/images/products/RJ_2.png', '/images/products/RJ_3.png'],
@@ -14893,7 +14893,7 @@ Szacunkowy TCO na 2 lata (200 paragonów/dzień, 250 dni/rok): drukarka od 1 116
 
 TAKMA jest partnerem Citizen w Polsce — oferujemy doradztwo, konfigurację i serwis. Pełna [specyfikacja techniczna CMP-20II](/downloads/datasheet-cmp-20ii-pl.pdf).`,
     categoryId: 'drukarki-etykiet',
-    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'citizen',
     priceFrom: 1115.76,
     images: ['/images/products/CMP20IIXUXCX.png', '/images/products/CMP20IIXUXCX-2.png', '/images/products/CMP20IIXUXCX-3.png'],
@@ -15142,7 +15142,7 @@ Szacunkowy TCO na 2 lata (200 paragonów/dzień, 250 dni/rok): drukarka od 2 265
 
 TAKMA jest partnerem Citizen w Polsce — oferujemy doradztwo, konfigurację i serwis. Pełna [specyfikacja techniczna CMP-25L](/downloads/datasheet-cmp-25l-pl.pdf).`,
     categoryId: 'drukarki-etykiet',
-    subcategoryIds: ['mobilne-drukarki-etykiet'],
+    subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'citizen',
     priceFrom: 2265.18,
     images: ['/images/products/CMP25XUXZL.png', '/images/products/CMP25XUXZL-2.png', '/images/products/CMP25XUXZL-3.png'],

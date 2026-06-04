@@ -262,6 +262,17 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         .map((id) => products.find((p) => p.id === id))
         .filter(Boolean)
     : []
+  // Etykiety TT — dobór niezależny od producenta drukarki: per-produkt (gdy uzupełnione,
+  // głównie Zebra) lub standardowe serie Zebra (pozostali producenci). Sprzedajemy materiały
+  // Zebra do każdej drukarki, a TT bez etykiet nie ma sensu.
+  const STANDARD_TT_PAPER = ['zebra-z-perform-1000t', 'zebra-z-select-2000t']
+  const STANDARD_TT_FOIL = ['zebra-z-ultimate-3000t-white', 'zebra-z-ultimate-3000t-silver']
+  const ttPaperIds = isTTprinter
+    ? (compatibleConsumables.length ? compatibleConsumables.map((c) => c!.id) : STANDARD_TT_PAPER)
+    : []
+  const ttFoilIds = isTTprinter
+    ? (compatibleFoilLabels.length ? compatibleFoilLabels.map((c) => c!.id) : STANDARD_TT_FOIL)
+    : []
 
   // Akcesoria — grupowane wg kategorii
   const allRelated = (product.relatedAccessories || [])
@@ -1251,11 +1262,11 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 c) drukarki kart/opasek → RelatedProducts (taśmy/opaski) */}
             {isLabelPrinter && !isTTprinter ? (
               <PrinterCompatibleLabels printerSlug={product.slug} printWidthMm={printWidthMm} />
-            ) : isTTprinter && compatibleConsumables.length > 0 ? (
+            ) : isTTprinter && ttPaperIds.length > 0 ? (
               <PrinterMaterialVariants
                 id="etykiety-papierowe"
                 title="Etykiety papierowe termotransferowe"
-                productIds={compatibleConsumables.map((c) => c!.id)}
+                productIds={ttPaperIds}
                 kind="label"
                 printWidthMm={printWidthMm}
               />
@@ -1270,25 +1281,23 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             ) : null}
 
             {/* Etykiety foliowe termotransferowe — konkretne warianty dobrane do głowicy */}
-            {compatibleFoilLabels.length > 0 && (
-              isTTprinter ? (
-                <PrinterMaterialVariants
-                  id="etykiety-foliowe"
-                  title="Etykiety foliowe termotransferowe"
-                  productIds={compatibleFoilLabels.map((c) => c!.id)}
-                  kind="label"
-                  printWidthMm={printWidthMm}
-                />
-              ) : (
-                <RelatedProducts
-                  id="etykiety-foliowe"
-                  title="Etykiety foliowe termotransferowe"
-                  products={compatibleFoilLabels as typeof products}
-                  labels
-                  showDualButtons
-                />
-              )
-            )}
+            {isTTprinter && ttFoilIds.length > 0 ? (
+              <PrinterMaterialVariants
+                id="etykiety-foliowe"
+                title="Etykiety foliowe termotransferowe"
+                productIds={ttFoilIds}
+                kind="label"
+                printWidthMm={printWidthMm}
+              />
+            ) : compatibleFoilLabels.length > 0 ? (
+              <RelatedProducts
+                id="etykiety-foliowe"
+                title="Etykiety foliowe termotransferowe"
+                products={compatibleFoilLabels as typeof products}
+                labels
+                showDualButtons
+              />
+            ) : null}
 
             {/* Taśmy barwiące — wymagane do druku termotransferowego (konkretne warianty) */}
             {printerRibbons.length > 0 && (
