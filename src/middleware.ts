@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { jwtVerify } from 'jose'
 import { OLD_TT_SLUG_REDIRECTS } from '@/data/transfer-label-migration'
+import { OLD_RIBBON_SLUG_REDIRECTS } from '@/data/ribbon-redirects'
 
 const ADMIN_SECRET = new TextEncoder().encode(
   process.env.ADMIN_JWT_SECRET || ''
@@ -41,6 +42,11 @@ export async function middleware(request: NextRequest) {
   // Musi być PRZED catch-all niżej, bo stare slugi zaczynają się od "zebra-".
   if (OLD_TT_SLUG_REDIRECTS[pathname]) {
     return NextResponse.redirect(new URL(OLD_TT_SLUG_REDIRECTS[pathname], request.url), 301)
+  }
+
+  // 301 — stare produkty TAŚM (zebra-tasma-*) → nowy URL wariantu serii.
+  if (OLD_RIBBON_SLUG_REDIRECTS[pathname]) {
+    return NextResponse.redirect(new URL(OLD_RIBBON_SLUG_REDIRECTS[pathname], request.url), 301)
   }
 
   // -------------------------------------------------------------------------
