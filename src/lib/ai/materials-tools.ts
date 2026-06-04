@@ -246,10 +246,83 @@ export const prepareCartItem = tool({
   },
 })
 
+// ─── Dobór materiałów do KONKRETNEJ drukarki ────────────────────────────────
+
+function norm(s: string): string {
+  return s.toLowerCase().replace(/[\s\-_/]+/g, '')
+}
+
+function findPrinter(query: string) {
+  const q = norm(query)
+  const printers = products.filter(p => p.categoryId === 'drukarki-etykiet')
+  // dokładne/zawiera w id, potem w nazwie
+  return (
+    printers.find(p => norm(p.id).includes(q) || q.includes(norm(p.id).replace('zebra', ''))) ||
+    printers.find(p => norm(p.name).includes(q)) ||
+    printers.find(p => q.length >= 3 && norm(p.name).includes(q.slice(0, Math.max(4, q.length))))
+  )
+}
+
+function printerHeadWidthMm(p: { specifications?: { name: string; value: string }[]; keyParams?: { szerokoscDruku?: string } }): number | null {
+  const candidates = [
+    (p.specifications ?? []).find((s: { name: string }) => s.name === 'Szerokość druku')?.value,
+    p.keyParams?.szerokoscDruku,
+    (p.specifications ?? []).find((s: { name: string }) => s.name === 'Szerokość mediów')?.value,
+  ]
+  for (const v of candidates) {
+    const m = v?.match(/(\d+(?:[.,]\d+)?)\s*mm/)
+    if (m) return parseFloat(m[1].replace(',', '.'))
+  }
+  return null
+}
+
+function seriesByProductIds(ids: string[]) {
+  return ids
+    .map(id => allMaterials().find(x => x.s.productId === id))
+    .filter(Boolean)
+    .map(m => ({ name: m!.s.title, slug: m!.s.slug, url: m!.url, priceFrom: m!.s.priceFrom ?? null }))
+}
+
+export const getPrinterMaterials = tool({
+  description: 'Gdy klient MA konkretną drukarkę i pyta, jakie etykiety/taśmy do niej pasują — podaj jej model. Zwraca technologię drukarki, szerokość głowicy i dopasowane serie materiałów. To nadal doradztwo MATERIAŁOWE (nie polecanie/sprzedaż drukarek).',
+  inputSchema: z.object({
+    printer: z.string().describe('Model/nazwa drukarki, np. „ZD421t", „Honeywell PD45", „ZT411", „ZD220d"'),
+  }),
+  execute: async ({ printer }) => {
+    const p = findPrinter(printer)
+    if (!p) return { error: `Nie znalazłem drukarki „${printer}" w katalogu. Poproś klienta o dokładny model.` }
+    const tt = p.subcategoryIds?.includes('termotransferowe-drukarki-etykiet') ?? false
+    const widthMm = printerHeadWidthMm(p)
+    const widthNote = widthMm ? `maks. szerokość etykiety/taśmy ~${widthMm} mm` : 'sprawdź szerokość głowicy w specyfikacji'
+
+    if (tt) {
+      return {
+        printer: p.name,
+        technologia: 'termotransferowa (wymaga taśmy barwiącej; drukuje też termicznie)',
+        szerokoscGlowicyMm: widthMm,
+        wskazowka: `Dobierz rozmiar do szerokości głowicy — ${widthNote}. Taśma powinna być nieco szersza niż etykieta. Do konkretnego rozmiaru użyj findClosestSize.`,
+        etykietyPapierowe: seriesByProductIds(['zebra-z-perform-1000t', 'zebra-z-select-2000t']),
+        etykietyFoliowe: seriesByProductIds(['zebra-z-ultimate-3000t-white', 'zebra-z-ultimate-3000t-silver']),
+        tasmy: seriesByProductIds(['zebra-2300-wax', 'zebra-3200-wax-resin', 'zebra-5095-resin']),
+      }
+    }
+    return {
+      printer: p.name,
+      technologia: 'termiczna (direct thermal — bez taśmy barwiącej)',
+      szerokoscGlowicyMm: widthMm,
+      wskazowka: `Druk bezpośredni — NIE potrzeba taśmy. Dobierz rozmiar do szerokości głowicy — ${widthNote}. Do konkretnego rozmiaru użyj findClosestSize.`,
+      etykietyTermiczne: seriesByProductIds([
+        'zebra-z-perform-1000d', 'zebra-z-select-2000d', 'zebra-polypro-4000d', 'zebra-z-essentials-500d',
+      ]),
+    }
+  },
+})
+
 export const materialsTools = {
   searchMaterials,
   getMaterialSeries,
   findClosestSize,
   checkMaterialStock,
   prepareCartItem,
+  getPrinterMaterials,
 }
