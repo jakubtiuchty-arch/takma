@@ -3,6 +3,15 @@ import { anthropic } from '@ai-sdk/anthropic'
 import { materialsTools } from '@/lib/ai/materials-tools'
 import { materialsSystemPrompt } from '@/lib/ai/materials-system-prompt'
 import { checkChatRateLimit, getClientIp } from '@/lib/spam-protection'
+import { prisma } from '@/lib/db'
+
+// Fire-and-forget log do DoradcaLog — nie blokuje odpowiedzi, błędy ignorowane.
+function logDoradca(row: { sessionId: string; role: string; content: string; ip?: string }) {
+  if (!row.content.trim()) return
+  prisma.doradcaLog
+    .create({ data: { sessionId: row.sessionId, role: row.role, content: row.content.slice(0, 8000), ip: row.ip } })
+    .catch(() => { /* logowanie nie może wywrócić czatu */ })
+}
 
 export const runtime = 'nodejs'
 export const maxDuration = 30
@@ -31,6 +40,7 @@ export async function POST(request: Request) {
   try {
     const body = await request.json()
     const { messages } = body
+    const sessionId: string = typeof body.sessionId === 'string' && body.sessionId ? body.sessionId : `ip:${ip}`
     if (!Array.isArray(messages) || messages.length === 0) {
       return new Response(JSON.stringify({ error: 'Brak wiadomości.' }), {
         status: 400, headers: { 'Content-Type': 'application/json' },
@@ -54,8 +64,13 @@ export async function POST(request: Request) {
       })
     }
 
+    // Log pytania klienta (ostatnia wiadomość użytkownika).
+    const lastUser = [...modelMessages].reverse().find(m => m.role === 'user')
+    if (lastUser) logDoradca({ sessionId, role: 'user', content: lastUser.content, ip })
+
     const result = streamText({
       model: anthropic(MODEL),
+      onFinish: ({ text }) => { if (text) logDoradca({ sessionId, role: 'assistant', content: text, ip }) },
       // System jako PIERWSZA wiadomość z cacheControl na bloku — tak Anthropic faktycznie
       // cache'uje stały prefiks (persona + indeks katalogu). Kolejne kroki tej samej rozmowy
       // czytają go ~10× taniej zamiast płacić pełną stawkę za każdym razem.

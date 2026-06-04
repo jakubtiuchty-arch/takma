@@ -540,3 +540,17 @@ model SeoDigestArticle {
   @@index([source, fetchedAt])
   @@index([isRead, fetchedAt])
 }
+
+/// Logi rozmów z Doradcą materiałów (AI) — wgląd w pytania klientów.
+model DoradcaLog {
+  id        String   @id @default(cuid())
+  sessionId String
+  role      String // 'user' | 'assistant'
+  content   String   @db.Text
+  ip        String?
+  pathname  String?
+  createdAt DateTime @default(now())
+
+  @@index([sessionId])
+  @@index([createdAt])
+}

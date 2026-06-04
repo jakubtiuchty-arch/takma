@@ -113,8 +113,21 @@ export default function MaterialsAdvisorWidget() {
     return []
   }, [])
 
+  // Stabilny identyfikator rozmowy (do grupowania logów w /admin).
+  const sessionId = useRef<string>('')
+  if (!sessionId.current && typeof window !== 'undefined') {
+    try {
+      let id = localStorage.getItem('takma-doradca-session')
+      if (!id) {
+        id = (window.crypto?.randomUUID?.() ?? `${Date.now()}-${Math.random().toString(36).slice(2)}`)
+        localStorage.setItem('takma-doradca-session', id)
+      }
+      sessionId.current = id
+    } catch { sessionId.current = `${Date.now()}` }
+  }
+
   const { messages, sendMessage, status, setMessages } = useChat({
-    transport: new DefaultChatTransport({ api: '/api/doradca' }),
+    transport: new DefaultChatTransport({ api: '/api/doradca', body: { sessionId: sessionId.current } }),
     messages: getInitial(),
     onError: (e) => console.error('Doradca error:', e),
   })
