@@ -132,7 +132,7 @@ export default function TakmaTransferPage() {
         {progress && (
           <div className="mt-3 flex items-center gap-2 text-sm text-blue-700">
             <span className="inline-block w-3 h-3 border-2 border-blue-300 border-t-blue-600 rounded-full animate-spin" />
-            Wysyłanie „{progress.name}"…
+            Wysyłanie „{progress.name}”…
           </div>
         )}
         {error && <div className="mt-3 rounded-lg bg-red-50 border border-red-200 text-red-700 text-sm px-3 py-2">{error}</div>}
