@@ -126,21 +126,33 @@ export default function PrinterMaterialVariants({
       .map(v => ({ v, w: widthMm(v) }))
       .filter(x => x.w != null && (!printWidthMm || x.w <= printWidthMm + tol))
       .sort((a, b) => (b.w! - a.w!))
-      .slice(0, perSeries)
+      .slice(0, Math.max(perSeries, 8)) // głębsza pula — po stanie pokażemy tylko dostępne
       .map(x => ({ product, variant: x.v, title: t }))
     picks.push(...fitting)
   }
-  const finalPicks = picks.slice(0, maxTotal)
-  const partNumbers = finalPicks.map(p => p.variant.partNumber)
+  // Pula kandydatów większa niż wyświetlamy — po sprawdzeniu stanu pokazujemy tylko dostępne.
+  const candidates = picks.slice(0, 24)
+  const partNumbers = candidates.map(p => p.variant.partNumber)
   const { stockData, loading } = useStockData(partNumbers)
 
-  if (finalPicks.length === 0) return null
+  if (candidates.length === 0) return null
+
+  // Pokazujemy WYŁĄCZNIE dostępne (stan PL lub EU). Podczas ładowania — pierwsze maxTotal.
+  const isAvailable = (pn: string) => {
+    const s = stockData.get(pn)
+    return !!s && (s.found || s.totalStock > 0) && s.availability === 'available'
+  }
+  const shown = loading
+    ? candidates.slice(0, maxTotal)
+    : candidates.filter(p => isAvailable(p.variant.partNumber)).slice(0, maxTotal)
+
+  if (!loading && shown.length === 0) return null
 
   return (
     <section id={id} className="scroll-mt-24">
       <h2 className="text-2xl font-bold text-gray-900 mb-4">{title}</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {finalPicks.map(pick => (
+        {shown.map(pick => (
           <Card key={`${pick.product.slug}-${pick.variant.partNumber}`} pick={pick} kind={kind}
             stockInfo={stockData.get(pick.variant.partNumber)} stockLoading={loading} />
         ))}

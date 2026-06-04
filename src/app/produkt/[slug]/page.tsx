@@ -250,11 +250,19 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // ── Dobór materiałów do drukarki: technologia + szerokość głowicy ──────────
   const isLabelPrinter = product.categoryId === 'drukarki-etykiet'
   const isTTprinter = product.subcategoryIds?.includes('termotransferowe-drukarki-etykiet') ?? false
-  // Szerokość druku (głowicy) w mm — z pola specyfikacji „Szerokość druku".
+  // Szerokość druku (głowicy) w mm — szukamy w wielu polach, bo część drukarek ma to
+  // tylko w keyParams.szerokoscDruku, a nie w specifications (np. Honeywell PD45/PM45).
   const printWidthMm = (() => {
-    const v = product.specifications?.find((s) => s.name === 'Szerokość druku')?.value
-    const m = v?.match(/(\d+(?:[.,]\d+)?)\s*mm/)
-    return m ? parseFloat(m[1].replace(',', '.')) : undefined
+    const candidates = [
+      product.specifications?.find((s) => s.name === 'Szerokość druku')?.value,
+      product.keyParams?.szerokoscDruku,
+      product.specifications?.find((s) => s.name === 'Szerokość mediów')?.value,
+    ]
+    for (const v of candidates) {
+      const m = v?.match(/(\d+(?:[.,]\d+)?)\s*mm/)
+      if (m) return parseFloat(m[1].replace(',', '.'))
+    }
+    return undefined
   })()
   // Taśmy barwiące do drukarek TT — 3 podstawowe serie (wosk / wosk-żywica / żywica).
   const printerRibbons = isTTprinter

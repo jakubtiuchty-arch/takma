@@ -240,36 +240,46 @@ export default function PrinterCompatibleLabels({
   printWidthMm?: number
 }) {
   const bestsellers = getBestsellerVariants(printerSlug)
-  let variantData = bestsellers.map(getVariantData).filter(
-    (v): v is VariantData => v !== null,
-  )
-
   // Filtr szerokości głowicy — etykieta nie może być szersza niż głowica drukarki
   // (np. drukarka 2"/56 mm nie dostaje etykiet 102 mm). Tolerancja 2 mm.
-  if (printWidthMm) {
-    const fits = (v: VariantData) => {
-      const w = labelWidthMm(v.variant.attributes['Rozmiar'])
-      return w == null || w <= printWidthMm + 2
-    }
-    variantData = variantData.filter(fits)
-    // Za mało dla wąskiej drukarki → dobierz węższe warianty z Z-Perform 1000D.
-    if (variantData.length < 4) {
-      const zp = products.find(p => p.id === 'zebra-z-perform-1000d')
-      const series = thermalLabelSeries.find(s => s.productId === 'zebra-z-perform-1000d')
-      const seen = new Set(variantData.map(v => v.variant.partNumber))
-      const extra = (zp?.variants ?? [])
-        .map(v => ({ v, w: labelWidthMm(v.attributes['Rozmiar']) }))
-        .filter(x => x.w != null && x.w <= printWidthMm + 2 && !seen.has(x.v.partNumber))
-        .sort((a, b) => (b.w! - a.w!)) // najszersze mieszczące się najpierw
-        .map(x => ({ product: zp!, variant: x.v, seriesTitle: series?.title ?? 'Z-Perform 1000D' }))
-      variantData = [...variantData, ...extra].slice(0, 8)
-    }
+  const fits = (rozmiar?: string) => {
+    if (!printWidthMm) return true
+    const w = labelWidthMm(rozmiar)
+    return w == null || w <= printWidthMm + 2
+  }
+  let candidates = bestsellers
+    .map(getVariantData)
+    .filter((v): v is VariantData => v !== null && fits(v.variant.attributes['Rozmiar']))
+
+  // Zawsze powiększamy pulę z Z-Perform 1000D — po sprawdzeniu stanu pokażemy tylko
+  // DOSTĘPNE, więc potrzeba więcej kandydatów (mieszczących się w głowicy).
+  {
+    const zp = products.find(p => p.id === 'zebra-z-perform-1000d')
+    const series = thermalLabelSeries.find(s => s.productId === 'zebra-z-perform-1000d')
+    const seen = new Set(candidates.map(v => v.variant.partNumber))
+    const extra = (zp?.variants ?? [])
+      .map(v => ({ v, w: labelWidthMm(v.attributes['Rozmiar']) }))
+      .filter(x => x.w != null && (!printWidthMm || x.w! <= printWidthMm + 2) && !seen.has(x.v.partNumber))
+      .sort((a, b) => (b.w! - a.w!)) // najszersze mieszczące się najpierw
+      .map(x => ({ product: zp!, variant: x.v, seriesTitle: series?.title ?? 'Z-Perform 1000D' }))
+    candidates = [...candidates, ...extra].slice(0, 16)
   }
 
-  const partNumbers = variantData.map(v => v.variant.partNumber)
+  const partNumbers = candidates.map(v => v.variant.partNumber)
   const { stockData, loading: stockLoading } = useStockData(partNumbers)
 
-  if (variantData.length === 0) return null
+  if (candidates.length === 0) return null
+
+  // Pokazujemy WYŁĄCZNIE dostępne (stan PL lub EU). Podczas ładowania — pierwsze 8.
+  const isAvailable = (pn: string) => {
+    const s = stockData.get(pn)
+    return !!s && (s.found || s.totalStock > 0) && s.availability === 'available'
+  }
+  const shown = stockLoading
+    ? candidates.slice(0, 8)
+    : candidates.filter(v => isAvailable(v.variant.partNumber)).slice(0, 8)
+
+  if (!stockLoading && shown.length === 0) return null
 
   return (
     <section id="etykiety-papierowe" className="scroll-mt-24">
@@ -279,7 +289,7 @@ export default function PrinterCompatibleLabels({
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {variantData.map(({ product, variant, seriesTitle }) => (
+        {shown.map(({ product, variant, seriesTitle }) => (
           <VariantCard
             key={variant.partNumber}
             product={product}
