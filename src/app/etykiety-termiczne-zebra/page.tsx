@@ -109,7 +109,7 @@ function BannerCard({
             <span>Wymaga drukarki linerless</span>
             <InfoTooltip
               size={13}
-              text="Etykieta bez papierowego podkładu — wymaga drukarki z linerless platen rollerem. Zebra: ZD611/ZD621 Linerless, ZT411 z opcją, mobilne ZQ Linerless. Zwykła drukarka zniszczy się od kleju."
+              text="Etykieta bez papierowego podkładu — wymaga drukarki ze specjalnym, silikonowym wałkiem. Zebra: ZD611/ZD621 Linerless, ZT411 z opcją, mobilne ZQ Linerless. Zwykła drukarka zniszczy się od kleju."
               ariaLabel="Wyjaśnienie technologii linerless"
               className="inline-flex items-center justify-center text-amber-700 hover:text-amber-900 focus:text-amber-900 focus:outline-none rounded-full transition-colors"
             />
@@ -181,7 +181,7 @@ export default function Page() {
   const techArticleSchema = {
     '@context': 'https://schema.org',
     '@type': 'TechArticle',
-    headline: 'Etykiety termiczne Zebra — przewodnik wyboru (direct thermal, bez taśmy)',
+    headline: 'Etykiety termiczne Zebra — przewodnik wyboru (druk bezpośredni, bez taśmy)',
     description: sub.seoDescription,
     url: `${siteUrl}/${sub.slug}`,
     inLanguage: 'pl-PL',
@@ -189,7 +189,6 @@ export default function Page() {
     about: [
       { '@type': 'Thing', name: 'Etykiety termiczne' },
       { '@type': 'Thing', name: 'Druk termiczny bezpośredni' },
-      { '@type': 'Thing', name: 'Direct thermal' },
       { '@type': 'Thing', name: 'Papier termoczuły' },
       { '@type': 'Thing', name: 'Etykiety linerless' },
       { '@type': 'Thing', name: 'Etykiety wysyłkowe' },
@@ -209,14 +208,14 @@ export default function Page() {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
     name: 'Jak dobrać etykietę termiczną do drukarki Zebra',
-    description: 'Pięć kroków doboru etykiety termicznej (direct thermal): szerokość druku, średnica gilzy, średnica zewnętrzna rolki, wymóg linerless i technologia DT vs TT.',
+    description: 'Pięć kroków doboru etykiety termicznej: szerokość druku, średnica gilzy, średnica zewnętrzna rolki, wymóg druku bez podkładu i technologia (bezpośrednia vs termotransfer).',
     inLanguage: 'pl-PL',
     step: [
       { '@type': 'HowToStep', position: 1, name: 'Sprawdź szerokość druku drukarki', text: 'Etykieta nie może być szersza niż maksymalna szerokość nośnika obsługiwana przez głowicę (np. ZD230d max 104 mm, ZT411 max 114 mm).' },
-      { '@type': 'HowToStep', position: 2, name: 'Średnica gilzy (rdzeń)', text: 'Typowo 19 mm (3/4″), 25 mm (1″) lub 76 mm (3″). Drukarki desktopowe biorą 19/25 mm, mid-range i przemysłowe także 76 mm.' },
-      { '@type': 'HowToStep', position: 3, name: 'Maksymalna średnica zewnętrzna rolki (OD)', text: 'Określa ile materiału się zmieści. Desktop ~127 mm OD, przemysłowe nawet 203 mm.' },
-      { '@type': 'HowToStep', position: 4, name: 'Sprawdź wymóg linerless', text: 'Etykiety linerless wymagają specjalnego wałka (linerless platen roller). Standardowy wałek ulegnie zniszczeniu przy materiale bez podkładu.' },
-      { '@type': 'HowToStep', position: 5, name: 'Technologia DT vs TT', text: 'Etykiety termiczne (DT) działają w drukarkach DT i kombinowanych DT/TT. Drukarki wyłącznie termotransferowe nie zadrukują etykiet termicznych.' },
+      { '@type': 'HowToStep', position: 2, name: 'Średnica gilzy (rdzeń)', text: 'Typowo 19 mm (3/4″), 25 mm (1″) lub 76 mm (3″). Drukarki biurkowe przyjmują 19/25 mm, klasy średniej i przemysłowe także 76 mm.' },
+      { '@type': 'HowToStep', position: 3, name: 'Maksymalna średnica zewnętrzna rolki', text: 'Decyduje, ile materiału się zmieści. Drukarki biurkowe ok. 127 mm, przemysłowe nawet 203 mm.' },
+      { '@type': 'HowToStep', position: 4, name: 'Sprawdź wymóg druku bez podkładu', text: 'Etykiety bez podkładu (linerless) wymagają specjalnego, silikonowego wałka. Zwykły wałek ulegnie zniszczeniu przy materiale bez podkładu.' },
+      { '@type': 'HowToStep', position: 5, name: 'Technologia druku', text: 'Etykiety termiczne działają w drukarkach do druku bezpośredniego i kombinowanych. Drukarki wyłącznie termotransferowe nie zadrukują etykiet termicznych.' },
     ],
   }
 
@@ -269,7 +268,7 @@ export default function Page() {
             Etykiety termiczne Zebra
           </h1>
           <p className="text-base sm:text-lg lg:text-xl text-slate-200 max-w-2xl mb-6">
-            Oryginalne etykiety do druku termicznego bezpośredniego (direct thermal) — bez taśmy barwiącej, niższy koszt eksploatacji. <strong className="text-white">12 serii Zebra</strong>: papierowe powlekane i ekonomiczne, syntetyczne wodoodporne, linerless oraz z klejem zdejmowalnym.
+            Oryginalne etykiety do druku termicznego bezpośredniego — bez taśmy barwiącej, niższy koszt eksploatacji. <strong className="text-white">12 serii Zebra</strong>: papierowe powlekane i ekonomiczne, syntetyczne wodoodporne, bez podkładu (linerless) oraz z klejem zdejmowalnym.
           </p>
 
           {/* USP badges */}
@@ -382,10 +381,10 @@ function CategoryGuide() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'Czym różni się druk termiczny bezpośredni (DT) od termotransferowego (TT)?',
+        name: 'Czym różni się druk termiczny bezpośredni od termotransferowego?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Druk termiczny bezpośredni (Direct Thermal) wykorzystuje papier termoczuły — obraz powstaje pod wpływem ciepła głowicy, bez taśmy barwiącej. Nadruk blaknie z czasem (do 12-24 mies. indoor). Druk termotransferowy (Thermal Transfer) wymaga taśmy barwiącej (wax/wax-resin/resin) — nadruk jest trwały (lata, outdoor) ale koszt eksploatacji wyższy. DT wybierz do etykiet wysyłkowych, cenowych i krótkoterminowych. TT do oznaczeń trwałych, produktów elektronicznych, mienia, znaków magazynowych.',
+          text: 'Druk termiczny bezpośredni wykorzystuje papier termoczuły — obraz powstaje pod wpływem ciepła głowicy, bez taśmy barwiącej. Nadruk z czasem blaknie (do 12-24 miesięcy wewnątrz pomieszczeń). Druk termotransferowy wymaga taśmy barwiącej (woskowej, woskowo-żywicznej lub żywicznej) — nadruk jest trwały (lata, także na zewnątrz), ale koszt eksploatacji jest wyższy. Druk bezpośredni wybierz do etykiet wysyłkowych, cenowych i krótkoterminowych; termotransfer do oznaczeń trwałych, elektroniki, oznaczeń mienia i znaków magazynowych.',
         },
       },
       {
@@ -393,15 +392,15 @@ function CategoryGuide() {
         name: 'Która seria etykiet termicznych Zebra jest najlepsza dla mojego zastosowania?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Z-Perform 1000D — najtańsza i wystarczająca dla 70% magazynów, wysyłek InPost/DPD/DHL, picking. Z-Select 2000D — premium powlekany, lepszy kontrast kodów, atesty żywnościowe (BfR XIV, FDA), retail i healthcare. PolyPro 4000D — wodoodporny polipropylen, chłodnie, mroźnie, outdoor. ZeroLiner — linerless (bez podkładu), 2× więcej etykiet na rolce, zero odpadu. Removable — klej zdejmowalny, ekspozycje retail, etykiety tymczasowe. 8000D Jewelry — biżuteryjne skrzydełkowe.',
+          text: 'Z-Perform 1000D — najtańsza, wystarcza w większości magazynów, do wysyłek InPost/DPD/DHL i kompletacji. Z-Select 2000D — powlekana z najwyższej półki, lepszy kontrast kodów, atesty żywnościowe (BfR XIV, FDA), do handlu i ochrony zdrowia. PolyPro 4000D — wodoodporna folia polipropylenowa, do chłodni, mroźni i zastosowań na zewnątrz. ZeroLiner — bez podkładu (linerless), 2× więcej etykiet na rolce, zero odpadu. Wersje z klejem zdejmowalnym (Removable) — do ekspozycji w sklepie i etykiet tymczasowych. 8000D Jewelry — do biżuterii, ze skrzydełkami.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Czy etykiety termiczne wymagają taśmy barwiącej (ribbon)?',
+        name: 'Czy etykiety termiczne wymagają taśmy barwiącej?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Nie. Etykiety termiczne (direct thermal) DRUKUJĄ BEZ taśmy — nadruk powstaje bezpośrednio na specjalnym papierze termicznym pod wpływem ciepła głowicy. To główna zaleta vs termotransfer (niższy TCO, mniej części zużywających się). Taśmy barwiące potrzebujesz tylko do etykiet termotransferowych (Z-Ultimate 3000T, Z-Select 4000T itp.).',
+          text: 'Nie. Etykiety termiczne drukują BEZ taśmy — nadruk powstaje bezpośrednio na papierze termoczułym pod wpływem ciepła głowicy. To główna zaleta wobec termotransferu: niższy koszt eksploatacji i mniej części zużywających się w drukarce. Taśma barwiąca jest potrzebna tylko do etykiet termotransferowych (np. Z-Ultimate 3000T).',
         },
       },
       {
@@ -409,7 +408,7 @@ function CategoryGuide() {
         name: 'Czy mogę używać etykiet termicznych do żywności?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Tak — serie Z-Select 2000D i Z-Perform 1000D mają oficjalne atesty żywnościowe Zebra: BfR XIV (Niemcy), FDA 175.105 (USA), ISEGA (UE) oraz zgodność z EC 1935/2004 i EU 10/2011. Klej jest BPA-free i bez lateksu. Z-Select 2000D — żywność wilgotna i tłusta (poprzez funkcjonalną barierę). Z-Perform 1000D — żywność sucha i wilgotna. Nadają się do piekarni, masarni, gastronomii, sklepów typu fresh.',
+          text: 'Tak — serie Z-Select 2000D i Z-Perform 1000D mają oficjalne atesty żywnościowe Zebra: BfR XIV (Niemcy), FDA 175.105 (USA), ISEGA (UE) oraz zgodność z EC 1935/2004 i EU 10/2011. Klej jest bez BPA i bez lateksu. Z-Select 2000D — żywność wilgotna i tłusta (poprzez funkcjonalną barierę). Z-Perform 1000D — żywność sucha i wilgotna. Nadają się do piekarni, masarni, gastronomii i sklepów ze świeżą żywnością.',
         },
       },
       {
@@ -417,7 +416,7 @@ function CategoryGuide() {
         name: 'Czy etykiety termiczne nadają się do mrożonek i chłodni?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Tak, ale wybierz odpowiednią serię. Z-Select 2000D w wariancie All-Temp — klej zachowuje przyczepność do -40°C, minimalna temperatura aplikacji 0°C. Z-Perform 1000D — aplikacja od 0°C, praca w -20°C. PolyPro 4000D — syntetyk odporny na wilgoć (skropliny po wyjęciu z chłodni). Nie używaj zwykłego Z-Perform 1000D do bezpośredniej aplikacji na zamrożone produkty — wybierz wariant All-Temp lub Z-Select 2000D.',
+          text: 'Tak, ale wybierz odpowiednią serię. Z-Select 2000D w wariancie do niskich temperatur (All-Temp) — klej zachowuje przyczepność do -40°C, minimalna temperatura naklejania 0°C. Z-Perform 1000D — naklejanie od 0°C, praca w -20°C. PolyPro 4000D — folia odporna na wilgoć (skropliny po wyjęciu z chłodni). Nie używaj zwykłego Z-Perform 1000D do naklejania bezpośrednio na zamrożone produkty — wybierz wariant All-Temp lub Z-Select 2000D.',
         },
       },
       {
@@ -425,7 +424,7 @@ function CategoryGuide() {
         name: 'Czym jest etykieta linerless (bez podkładu) i czy się opłaca?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Linerless to etykieta bez papierowego nośnika (lineru) — etykieta nawinięta jest bezpośrednio na siebie z silikonową warstwą antiblock. Plus: 2× więcej etykiet na rolce (mniej przestojów wymiany), zero odpadu papierowego (ekologia, mniej kosztów utylizacji), mniejsze magazynowanie. Minus: wymaga drukarki z linerless platen rollerem i opcjonalnie nożem (cutterem) — nie każda drukarka obsługuje. Polecane dla e-commerce, paczek, sortowni. Serie Zebra: ZeroLiner 1100D, 2000D, 4500D.',
+          text: 'Etykieta bez podkładu (linerless) nie ma papierowego nośnika — nawinięta jest bezpośrednio na siebie, z silikonową warstwą zapobiegającą sklejaniu. Zalety: 2× więcej etykiet na rolce (rzadsza wymiana), zero odpadu papierowego (ekologia, niższe koszty utylizacji), mniej miejsca w magazynie. Wada: wymaga drukarki ze specjalnym, silikonowym wałkiem i opcjonalnie obcinakiem — nie każda drukarka to obsługuje. Polecane do sklepów internetowych, paczek i sortowni. Serie Zebra: ZeroLiner 1100D, 2000D, 4500D.',
         },
       },
       {
@@ -433,7 +432,7 @@ function CategoryGuide() {
         name: 'Do jakich drukarek Zebra pasują etykiety termiczne?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Wszystkie etykiety termiczne Zebra (Z-Select, Z-Perform, PolyPro, ZeroLiner, Z-Essentials, 8000D Jewelry) są kompatybilne z całą gamą drukarek Zebra obsługujących direct thermal: mobilne (ZQ511, ZQ521, ZQ610-630, QLn220-320), desktopowe (ZD220d, ZD230d, ZD411d, ZD421d, ZD621d, GK420d), mid-range (ZD611, ZT231) i industrial (ZT411, ZT421, ZT510, ZT610, ZT620). Linerless (ZeroLiner) wymaga drukarki z linerless platenem — sprawdź specyfikację konkretnego modelu.',
+          text: 'Wszystkie etykiety termiczne Zebra (Z-Select, Z-Perform, PolyPro, ZeroLiner, Z-Essentials, 8000D Jewelry) są kompatybilne z całą gamą drukarek Zebra do druku bezpośredniego: mobilne (ZQ511, ZQ521, ZQ610-630, QLn220-320), biurkowe (ZD220d, ZD230d, ZD411d, ZD421d, ZD621d, GK420d), klasy średniej (ZD611, ZT231) i przemysłowe (ZT411, ZT421, ZT510, ZT610, ZT620). Etykiety bez podkładu (ZeroLiner) wymagają drukarki ze specjalnym, silikonowym wałkiem — sprawdź specyfikację konkretnego modelu.',
         },
       },
       {
@@ -441,7 +440,7 @@ function CategoryGuide() {
         name: 'Jak długo trzyma nadruk na etykiecie termicznej?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Zależy od serii i warunków. Z-Perform 1000D — do 12 miesięcy indoor (najkrótszy lifespan, najtańszy). Z-Select 2000D — do 24 miesięcy indoor (powłoka top-coat chroni). PolyPro 4000D — kilka lat (syntetyk + top-coat). Wszystkie blakną pod UV (bezpośrednie słońce) i w temperaturach powyżej +80°C. Do nadruków, które muszą wytrzymać >2 lata lub outdoor — wybierz termotransfer (Z-Ultimate 3000T) zamiast termicznych.',
+          text: 'Zależy od serii i warunków. Z-Perform 1000D — do 12 miesięcy wewnątrz pomieszczeń (najkrótsza trwałość, najtańsza). Z-Select 2000D — do 24 miesięcy wewnątrz (chroni powłoka ochronna). PolyPro 4000D — kilka lat (folia + powłoka ochronna). Wszystkie blakną pod wpływem promieni UV (bezpośrednie słońce) i w temperaturze powyżej +80°C. Do nadruków, które muszą przetrwać ponad 2 lata lub na zewnątrz, wybierz termotransfer (Z-Ultimate 3000T) zamiast etykiet termicznych.',
         },
       },
       {
@@ -449,7 +448,7 @@ function CategoryGuide() {
         name: 'Czy oferujecie próbki etykiet przed zakupem?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Tak. Zebra udostępnia oficjalne rolki próbne dla potwierdzenia kompatybilności i jakości nadruku: SAMPLE30820 dla drukarek mid-range/industrial, SAMPLE30820-D dla desktopowych. W TAKMA pomagamy dobrać próbkę pod konkretną drukarkę i powierzchnię docelową — skontaktuj się przez formularz lub telefonicznie. Próbki są darmowe dla klientów rozważających większe zamówienie (od 10 rolek).',
+          text: 'Tak. Zebra udostępnia oficjalne rolki próbne do potwierdzenia kompatybilności i jakości nadruku: SAMPLE30820 dla drukarek klasy średniej i przemysłowych, SAMPLE30820-D dla biurkowych. W TAKMA pomagamy dobrać próbkę pod konkretną drukarkę i powierzchnię docelową — skontaktuj się przez formularz lub telefonicznie. Próbki są darmowe dla klientów rozważających większe zamówienie (od 10 rolek).',
         },
       },
     ],
@@ -469,10 +468,10 @@ function CategoryGuide() {
         </h2>
         <div className="prose prose-slate max-w-none text-gray-700 leading-relaxed">
           <p>
-            Etykiety termiczne (direct thermal, DT) to specjalny papier termoczuły, na którym obraz powstaje bezpośrednio pod wpływem ciepła z głowicy drukującej — <strong>bez taśmy barwiącej (ribbona)</strong>. To główna zaleta technologii DT: niższy koszt eksploatacji, mniej części zużywających się w drukarce, prostszy proces. Druk termiczny jest standardem dla etykiet wysyłkowych InPost/DPD/DHL/GLS, oznaczeń półkowych w retailu, identyfikacji w magazynach WMS oraz oznaczeń krótkoterminowych w pharma, healthcare i produkcji.
+            Etykiety termiczne (druk termiczny bezpośredni) to papier termoczuły, na którym obraz powstaje bezpośrednio pod wpływem ciepła z głowicy drukującej — <strong>bez taśmy barwiącej</strong>. To główna zaleta tej technologii: niższy koszt eksploatacji, mniej części zużywających się w drukarce, prostszy proces. Druk termiczny jest standardem etykiet wysyłkowych (InPost, DPD, DHL, GLS), oznaczeń półkowych w sklepach, identyfikacji w magazynach oraz oznaczeń krótkoterminowych w farmacji, ochronie zdrowia i produkcji.
           </p>
           <p>
-            Wadą jest <strong>krótszy lifespan nadruku</strong>: typowo 12-24 miesiące w warunkach indoor. UV bezpośrednie i temperatury powyżej +80°C powodują ciemnienie i blaknięcie. Dla nadruków o długim cyklu życia lub outdoor wybierz <Link href="/etykiety-termotransferowe-zebra/papierowe" className="text-primary-600 hover:underline">etykiety termotransferowe</Link> — wymagają taśmy, ale są trwałe (lata).
+            Wadą jest <strong>krótsza trwałość nadruku</strong>: typowo 12-24 miesiące wewnątrz pomieszczeń. Bezpośrednie słońce (promienie UV) i temperatury powyżej +80°C powodują ciemnienie i blaknięcie. Do nadruków o długim cyklu życia lub do zastosowań na zewnątrz wybierz <Link href="/etykiety-termotransferowe-zebra/papierowe" className="text-primary-600 hover:underline">etykiety termotransferowe</Link> — wymagają taśmy, ale są trwałe (lata).
           </p>
         </div>
       </section>
@@ -480,22 +479,22 @@ function CategoryGuide() {
       {/* H2: DT vs TT */}
       <section>
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-          Direct Thermal vs Thermal Transfer — kiedy co wybrać?
+          Druk termiczny bezpośredni vs termotransferowy — kiedy co wybrać?
         </h2>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead className="bg-slate-50 border-b border-slate-200">
               <tr>
                 <th className="text-left p-3 font-semibold text-gray-900">Kryterium</th>
-                <th className="text-left p-3 font-semibold text-gray-900">Direct Thermal (DT)</th>
-                <th className="text-left p-3 font-semibold text-gray-900">Thermal Transfer (TT)</th>
+                <th className="text-left p-3 font-semibold text-gray-900">Termiczny bezpośredni</th>
+                <th className="text-left p-3 font-semibold text-gray-900">Termotransferowy</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-200">
               <tr>
                 <td className="p-3 font-medium">Taśma barwiąca</td>
                 <td className="p-3">Nie wymaga</td>
-                <td className="p-3">Wymaga (wax/wax-resin/resin)</td>
+                <td className="p-3">Wymaga (woskowa / woskowo-żywiczna / żywiczna)</td>
               </tr>
               <tr>
                 <td className="p-3 font-medium">Koszt eksploatacji</td>
@@ -504,23 +503,23 @@ function CategoryGuide() {
               </tr>
               <tr>
                 <td className="p-3 font-medium">Trwałość nadruku</td>
-                <td className="p-3">12-24 mies. indoor</td>
-                <td className="p-3 text-emerald-700">Lata, outdoor, UV-resist</td>
+                <td className="p-3">12-24 mies. wewnątrz</td>
+                <td className="p-3 text-emerald-700">Lata, na zewnątrz, odporny na UV</td>
               </tr>
               <tr>
                 <td className="p-3 font-medium">Odporność na ciepło</td>
                 <td className="p-3">Do +80°C</td>
-                <td className="p-3 text-emerald-700">Do +180°C (resin)</td>
+                <td className="p-3 text-emerald-700">Do +180°C (żywiczna)</td>
               </tr>
               <tr>
                 <td className="p-3 font-medium">Główne zastosowania</td>
-                <td className="p-3">Wysyłki, picking, cenówki, paragony</td>
-                <td className="p-3">Elektronika, lab, oznaczenia mienia, outdoor</td>
+                <td className="p-3">Wysyłki, kompletacja, cenówki, paragony</td>
+                <td className="p-3">Elektronika, laboratorium, oznaczenia mienia, na zewnątrz</td>
               </tr>
               <tr>
                 <td className="p-3 font-medium">Drukarki</td>
-                <td className="p-3">Mobilne, desktop, mid-range, industrial DT</td>
-                <td className="p-3">Desktop, mid-range, industrial TT</td>
+                <td className="p-3">Mobilne, biurkowe, klasy średniej, przemysłowe</td>
+                <td className="p-3">Biurkowe, klasy średniej, przemysłowe</td>
               </tr>
             </tbody>
           </table>
@@ -539,7 +538,7 @@ function CategoryGuide() {
                 <th className="text-left p-3 font-semibold text-gray-900">Seria</th>
                 <th className="text-left p-3 font-semibold text-gray-900">Materiał</th>
                 <th className="text-left p-3 font-semibold text-gray-900">Klej</th>
-                <th className="text-left p-3 font-semibold text-gray-900">Top-coat</th>
+                <th className="text-left p-3 font-semibold text-gray-900">Powłoka ochronna</th>
                 <th className="text-left p-3 font-semibold text-gray-900">Atest FDA/BfR</th>
                 <th className="text-left p-3 font-semibold text-gray-900">Od (zł)</th>
               </tr>
@@ -571,7 +570,7 @@ function CategoryGuide() {
         </h2>
         <div className="prose prose-slate max-w-none text-gray-700 leading-relaxed">
           <p>
-            Etykiety Zebra w seriach Z-Select 2000D i Z-Perform 1000D mają atesty do bezpośredniego kontaktu z żywnością. To krytyczne dla piekarni, masarni, gastronomii, producentów spożywczych i sklepów typu fresh.
+            Etykiety Zebra w seriach Z-Select 2000D i Z-Perform 1000D mają atesty do bezpośredniego kontaktu z żywnością. To istotne dla piekarni, masarni, gastronomii, producentów spożywczych i sklepów ze świeżą żywnością.
           </p>
           <ul className="list-disc pl-6 space-y-2 mt-3">
             <li><strong>BfR XIV (Niemcy)</strong> — niemieckie rekomendacje Federalnego Instytutu Oceny Ryzyka dla klejów w kontakcie z żywnością. Wymóg w EU dla detalistów typu Aldi, Lidl, Rewe.</li>
@@ -590,10 +589,10 @@ function CategoryGuide() {
         <div className="prose prose-slate max-w-none text-gray-700 leading-relaxed">
           <ol className="list-decimal pl-6 space-y-2">
             <li><strong>Sprawdź szerokość druku drukarki</strong> — etykieta nie może być szersza niż maksymalna szerokość nośnika obsługiwana przez głowicę (np. ZD230d max 104 mm, ZT411 max 114 mm).</li>
-            <li><strong>Średnica gilzy (rdzeń)</strong> — typowo 19 mm (3/4″), 25 mm (1″) lub 76 mm (3″). Drukarki desktopowe biorą 19/25 mm, mid-range/industrial mogą brać też 76 mm.</li>
-            <li><strong>Maksymalna średnica zewnętrzna rolki (OD)</strong> — ile materiału się zmieści. Desktop ~127 mm OD, industrial nawet 203 mm.</li>
-            <li><strong>Linerless wymaga linerless platen rollera</strong> — sprawdź czy Twoja drukarka ma. Standardowy platen zniszczy się przy linerless.</li>
-            <li><strong>Type (DT vs TT)</strong> — etykiety termiczne (DT) działają w drukarkach DT i kombinowanych DT/TT. Drukarki tylko TT nie zadrukują etykiet termicznych.</li>
+            <li><strong>Średnica gilzy (rdzeń)</strong> — typowo 19 mm (3/4″), 25 mm (1″) lub 76 mm (3″). Drukarki biurkowe przyjmują 19/25 mm, klasy średniej i przemysłowe także 76 mm.</li>
+            <li><strong>Maksymalna średnica zewnętrzna rolki</strong> — decyduje, ile materiału się zmieści. Drukarki biurkowe ok. 127 mm, przemysłowe nawet 203 mm.</li>
+            <li><strong>Druk bez podkładu (linerless) wymaga specjalnego wałka</strong> — silikonowego, odpornego na klej. Sprawdź, czy Twoja drukarka go ma — zwykły wałek zniszczy się przy druku bez podkładu.</li>
+            <li><strong>Technologia druku</strong> — etykiety termiczne działają w drukarkach do druku bezpośredniego i kombinowanych. Drukarki wyłącznie termotransferowe nie zadrukują etykiet termicznych.</li>
           </ol>
         </div>
       </section>
@@ -630,7 +629,7 @@ function materialLabel(m: string): string {
     'papier-powlekany': 'Papier powlekany',
     'papier-niepowlekany': 'Papier niepowlekany',
     'polipropylen-syntetyczny': 'Polipropylen (syntetyk)',
-    'papier-linerless': 'Papier linerless',
+    'papier-linerless': 'Papier bez podkładu',
     'papier-specjalny': 'Papier specjalny',
   }
   return map[m] ?? m

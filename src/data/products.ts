@@ -461,8 +461,8 @@ export const subcategories: Subcategory[] = [
     parentCategoryId: 'materialy-eksploatacyjne',
     description: 'Etykiety do druku termicznego bezpośredniego — bez taśmy barwiącej',
     seoTitle: 'Etykiety termiczne Zebra | Z-Select 2000D, Z-Perform 1000D',
-    seoDescription: 'Oryginalne etykiety termiczne Zebra do druku bezpośredniego (direct thermal). Bez taśmy barwiącej — niższe koszty eksploatacji. Z-Select 2000D, Z-Perform 2000D. Idealne do etykiet wysyłkowych i cenowych.',
-    longDescription: 'Etykiety termiczne (direct thermal) nie wymagają taśmy barwiącej — obraz powstaje bezpośrednio na specjalnym papierze termicznym pod wpływem ciepła z głowicy drukującej. To oznacza niższe koszty eksploatacji i prostszą obsługę. Idealne do etykiet wysyłkowych, kurierskich, cenowych i tymczasowych. Serie Zebra: Z-Select 2000D (powlekane, premium) i Z-Perform 2000D (ekonomiczne). Uwaga: nadruk termiczny blaknie z czasem — do etykiet trwałych wybierz etykiety termotransferowe.',
+    seoDescription: 'Oryginalne etykiety termiczne Zebra do druku bezpośredniego. Bez taśmy barwiącej — niższe koszty eksploatacji. Z-Select 2000D, Z-Perform 1000D. Idealne do etykiet wysyłkowych i cenowych.',
+    longDescription: 'Etykiety termiczne (druk bezpośredni) nie wymagają taśmy barwiącej — obraz powstaje bezpośrednio na papierze termoczułym pod wpływem ciepła z głowicy drukującej. To niższe koszty eksploatacji i prostsza obsługa. Idealne do etykiet wysyłkowych, kurierskich, cenowych i tymczasowych. Serie Zebra: Z-Select 2000D (powlekane, z najwyższej półki) i Z-Perform 1000D (ekonomiczne). Uwaga: nadruk termiczny z czasem blaknie — do etykiet trwałych wybierz etykiety termotransferowe.',
     icon: 'tag',
     productIds: [
       'zebra-z-select-2000d',
