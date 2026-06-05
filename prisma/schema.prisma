@@ -554,3 +554,15 @@ model DoradcaLog {
   @@index([sessionId])
   @@index([createdAt])
 }
+
+model AllegroToken {
+  id           String   @id @default(cuid())
+  environment  String   @unique // "sandbox" | "prod"
+  accessToken  String   @db.Text
+  refreshToken String   @db.Text
+  expiresAt    DateTime
+  scope        String   @db.Text
+  allegroLogin String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
