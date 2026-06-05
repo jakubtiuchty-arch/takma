@@ -4,6 +4,7 @@ import { ALLEGRO_ENV } from './auth'
 import { allegroPriceForPN } from './pricing'
 import { buildOfferPayload, type AllegroOfferPayload } from './mapper'
 import { uploadImageByUrl } from './images'
+import { offerServices } from './selling-policies'
 import type { AllegroProductKind } from './categories'
 import { transferRibbonProducts } from '@/data/transfer-ribbon-products'
 import { products as allProducts } from '@/data/products'
@@ -84,7 +85,14 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
     return { ok: false, partNumber, kind, status: 'ERROR', error: `Nie udało się wgrać obrazu do Allegro: ${(e as Error).message}` }
   }
 
-  const payload: AllegroOfferPayload = buildOfferPayload({ kind, product, variant, price, images })
+  const payload: AllegroOfferPayload = buildOfferPayload({
+    kind,
+    product,
+    variant,
+    price,
+    images,
+    services: offerServices(),
+  })
 
   // Edycja istniejącego szkicu (PATCH) zamiast tworzenia nowego (POST) — bez osieroconych ofert.
   const existing = await prisma.allegroOffer.findUnique({

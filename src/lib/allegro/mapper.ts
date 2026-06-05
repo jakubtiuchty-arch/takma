@@ -1,6 +1,7 @@
 import type { Product, ProductVariant } from '@/data/products'
 import { ALLEGRO_PARAM, ALLEGRO_DICT, ALLEGRO_CATEGORY, type AllegroProductKind } from './categories'
 import type { AllegroPrice } from './pricing'
+import type { OfferServices } from './selling-policies'
 
 /**
  * Budowa payloadu oferty Allegro z wariantu katalogu TAKMA (taśmy i etykiety).
@@ -53,6 +54,8 @@ export interface AllegroOfferPayload {
   sellingMode: { price: { amount: string; currency: 'PLN' } }
   stock: { available: number }
   description: { sections: Array<{ items: Array<{ type: 'TEXT'; content: string }> }> }
+  delivery?: OfferServices['delivery']
+  afterSalesServices?: OfferServices['afterSalesServices']
   publication: { status: 'INACTIVE' }
 }
 
@@ -104,6 +107,8 @@ export interface BuildOfferInput {
   available?: number
   /** URL-e obrazów po stronie Allegro (z uploadImageByUrl). Min. 1 wymagany. */
   images?: string[]
+  /** Polityki dostawy/posprzedaży (z offerServices()) — żeby szkic był gotowy do aktywacji. */
+  services?: OfferServices
 }
 
 /** Buduje payload draftu oferty dla taśmy (17254) lub etykiety (17255). */
@@ -114,6 +119,7 @@ export function buildOfferPayload({
   price,
   available = 10,
   images = [],
+  services = {},
 }: BuildOfferInput): AllegroOfferPayload {
   const name = buildOfferName(product, variant)
   return {
@@ -136,6 +142,8 @@ export function buildOfferPayload({
     sellingMode: { price: { amount: price.gross.toFixed(2), currency: 'PLN' } },
     stock: { available },
     description: buildOfferDescription(product, variant),
+    ...(services.delivery ? { delivery: services.delivery } : {}),
+    ...(services.afterSalesServices ? { afterSalesServices: services.afterSalesServices } : {}),
     publication: { status: 'INACTIVE' },
   }
 }
