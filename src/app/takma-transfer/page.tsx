@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback, useRef } from 'react'
 import { createClient } from '@supabase/supabase-js'
 
 const BUCKET = 'takma-transfer'
-const MAX_BYTES = 40 * 1024 * 1024
+const MAX_BYTES = 100 * 1024 * 1024
 const SB_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
 const SB_ANON = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
 
@@ -48,7 +48,7 @@ export default function TakmaTransferPage() {
 
   const upload = async (file: File) => {
     setError(null)
-    if (file.size > MAX_BYTES) { setError(`„${file.name}" ma ${humanSize(file.size)} — limit to 40 MB.`); return }
+    if (file.size > MAX_BYTES) { setError(`„${file.name}" ma ${humanSize(file.size)} — limit to 100 MB.`); return }
     setProgress({ name: file.name })
     try {
       const signRes = await fetch('/api/takma-transfer', {
@@ -106,7 +106,7 @@ export default function TakmaTransferPage() {
     <main className="min-h-screen bg-slate-50">
       <div className="max-w-3xl mx-auto px-4 py-10">
         <h1 className="text-2xl font-bold text-gray-900 mb-1">TAKMA Transfer</h1>
-        <p className="text-sm text-gray-500 mb-6">Wymiana plików z zespołem. Maksymalnie 40 MB na plik.</p>
+        <p className="text-sm text-gray-500 mb-6">Wymiana plików z zespołem. Maksymalnie 100 MB na plik.</p>
 
         {!configured && (
           <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
@@ -126,7 +126,7 @@ export default function TakmaTransferPage() {
             <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 7.5 7.5 12M12 7.5v9" />
           </svg>
           <div className="text-sm font-medium text-gray-700">Przeciągnij pliki tutaj lub kliknij, aby wybrać</div>
-          <div className="text-xs text-gray-400 mt-1">max 40 MB / plik</div>
+          <div className="text-xs text-gray-400 mt-1">max 100 MB / plik</div>
         </div>
 
         {progress && (

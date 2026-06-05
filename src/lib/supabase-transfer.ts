@@ -7,7 +7,10 @@ import { createClient } from '@supabase/supabase-js'
  */
 
 export const TRANSFER_BUCKET = 'takma-transfer'
-export const MAX_FILE_BYTES = 40 * 1024 * 1024 // 40 MB
+// Limit pliku. Maksimum ogranicza globalny "Upload file size limit" projektu Supabase
+// (Project Settings → Storage) — bucket nie może go przekroczyć. ensureBucket synchronizuje
+// limit bucketu z tą stałą przy starcie procesu.
+export const MAX_FILE_BYTES = 100 * 1024 * 1024 // 100 MB
 
 const SUPABASE_URL = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL || ''
 const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || ''
@@ -26,7 +29,8 @@ export function supabaseAdmin() {
 }
 
 let bucketEnsured = false
-/** Tworzy prywatny bucket z limitem 40MB, jeśli nie istnieje (idempotentne). */
+/** Tworzy prywatny bucket z limitem MAX_FILE_BYTES, jeśli nie istnieje; w przeciwnym razie
+ *  synchronizuje jego limit z kodem (idempotentne, raz na proces). */
 export async function ensureBucket() {
   if (bucketEnsured) return
   const sb = supabaseAdmin()
@@ -36,6 +40,9 @@ export async function ensureBucket() {
       public: false,
       fileSizeLimit: MAX_FILE_BYTES,
     })
+  } else if (data.file_size_limit !== MAX_FILE_BYTES) {
+    // Synchronizuj limit istniejącego bucketu z kodem (np. po podniesieniu 40MB -> 100MB).
+    await sb.storage.updateBucket(TRANSFER_BUCKET, { public: false, fileSizeLimit: MAX_FILE_BYTES })
   }
   bucketEnsured = true
 }
