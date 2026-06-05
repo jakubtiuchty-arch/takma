@@ -9345,11 +9345,11 @@ export const guides: Guide[] = [
   title: 'Taśma termotransferowa woskowa, woskowo-żywiczna czy żywiczna?',
   seoTitle: 'Taśmy termotransferowe: woskowa, woskowo-żywiczna, żywiczna',
   seoDescription: 'Woskowa, woskowo-żywiczna czy żywiczna? Dowiedz się, która taśma pasuje do Twojej drukarki i materiału etykiety. Tabele, koszty, wybór krok po kroku.',
-  excerpt: 'Porównanie 12 parametrów, macierz doboru podłoża i kalkulator rocznych kosztów — z cenami netto z marca 2026.',
+  excerpt: 'Woskowa, woskowo-żywiczna czy żywiczna — która taśma do jakiego materiału etykiety. Pełna mapa 12 modeli Zebra, macierz doboru podłoża, atesty UL i BS5609 oraz względny koszt eksploatacji.',
   category: 'poradnik',
   tags: ['drukarki-etykiet', 'materialy-eksploatacyjne', 'poradnik', 'tasmy-termotransferowe', 'termotransferowa'],
   publishedAt: '2026-03-18',
-  updatedAt: '2026-03-18',
+  updatedAt: '2026-06-05',
   readTime: '10 min',
   heroImage: '/images/guides/jak-dobrac-tasme-termotransferowa.jpg',
   heroImageAlt: 'Taśma termotransferowa woskowa, woskowo-żywiczna i żywiczna — porównanie trzech typów ribbonów do drukarek etykiet',
@@ -9364,14 +9364,14 @@ export const guides: Guide[] = [
 <p><strong>Trzy rodzaje taśm termotransferowych (ribbonów)</strong> w skrócie:</p>
 
 <ul>
-<li><strong>Woskowa (WAX)</strong> — do papierowych etykiet w suchych, temperowanych warunkach. Najtańsza, najszybsza. Od 7,04 zł/rolka.</li>
-<li><strong>Woskowo-żywiczna (WAX/RESIN)</strong> — do papieru powlekanego i syntetyków matowych w środowiskach z wilgocią, alkoholem lub olejami. Od 10,81 zł/rolka.</li>
-<li><strong>Żywiczna (RESIN)</strong> — do syntetyków (PP, PE, PET) w warunkach ekstremalnych: aceton, UV, temperatura do 120°C. Od 17,65 zł/rolka.</li>
+<li><strong>Woskowa (WAX)</strong> — do papierowych etykiet w suchych, temperowanych warunkach. Najtańsza, najszybsza.</li>
+<li><strong>Woskowo-żywiczna (WAX/RESIN)</strong> — do papieru powlekanego i syntetyków matowych w środowiskach z wilgocią, alkoholem lub olejami.</li>
+<li><strong>Żywiczna (RESIN)</strong> — do syntetyków (PP, PE, PET) w warunkach ekstremalnych: aceton, UV, temperatura do 120°C.</li>
 </ul>
 
 <p>Jeśli dopiero wybierasz drukarkę — przeczytaj najpierw: <a href="/poradnik/drukarka-termiczna-vs-termotransferowa">Drukarka termiczna vs termotransferowa — różnice i koszty</a>. Jeśli masz już drukarkę termotransferową i szukasz taśmy — ten artykuł jest dla Ciebie.</p>
 
-<p>W tym poradniku znajdziesz: tabelę porównawczą 12 parametrów, macierz doboru taśmy do materiału etykiety, tabelę kompatybilności z drukarkami Zebra i TSC oraz kalkulator rocznych kosztów z cenami netto (dane z marca 2026).</p>`
+<p>W tym poradniku znajdziesz: pełną mapę 12 modeli taśm Zebra z katalogu TAKMA, tabelę porównawczą 12 parametrów, macierz doboru taśmy do materiału etykiety, tabelę kompatybilności z drukarkami Zebra i TSC oraz względny koszt eksploatacji trzech klas. Aktualne ceny każdej serii znajdziesz na jej stronie.</p>`
     },
     {
       id: 'jak-dziala-tasma',
@@ -9429,24 +9429,26 @@ export const guides: Guide[] = [
 <li>Etykiety na foliach syntetycznych (PP, PE, PET) — wosk nie przylega do syntetyków</li>
 </ul>
 
-<h3>Serie taśm woskowych Zebra — ceny i parametry</h3>
+<h3>Serie taśm woskowych Zebra — parametry</h3>
 
 <table style="width:100%">
-<caption>Porównanie serii taśm woskowych Zebra — ceny netto i parametry techniczne</caption>
+<caption>Porównanie serii taśm woskowych Zebra — parametry techniczne</caption>
 <thead>
-<tr><th>Seria</th><th>Format</th><th>Grubość</th><th>Max prędkość</th><th>Certyfikaty</th><th>Cena od</th></tr>
+<tr><th>Seria</th><th>Format</th><th>Grubość</th><th>Max prędkość</th><th>Certyfikaty</th></tr>
 </thead>
 <tbody>
-<tr><td><strong><a href="/tasmy-termotransferowe?typ=woskowa">2300 Standard Wax</a></strong></td><td>Desktop + Industrial</td><td>8,0 µm</td><td>304 mm/s</td><td>BPA-free, halogen-free, latex-free, FDA, REACH</td><td>7,04 zł (desktop 84mm x 74m)</td></tr>
-<tr><td><strong>2100 High-Performance Wax</strong></td><td>Tylko Industrial</td><td>7,5 µm</td><td>355 mm/s</td><td>REACH</td><td>17,89 zł (40mm x 450m)</td></tr>
+<tr><td><strong><a href="/tasmy-termotransferowe/serie/2300-wax">2300 Standard Wax</a></strong></td><td>Desktop + Industrial</td><td>8,0 µm</td><td>304 mm/s</td><td>BPA-free, halogen-free, latex-free, FDA, REACH</td></tr>
+<tr><td><strong><a href="/tasmy-termotransferowe/serie/5319-wax">5319 Performance Wax</a></strong></td><td>Industrial</td><td>—</td><td>203 mm/s</td><td>Jedyna kolorowa (czarna, niebieska, czerwona, złota); atesty żywnościowe</td></tr>
+<tr><td><strong><a href="/tasmy-termotransferowe/serie/2100-wax">2100 European Wax</a></strong></td><td>Tylko Industrial</td><td>7,5 µm</td><td>355 mm/s</td><td>REACH, atesty żywnościowe</td></tr>
+<tr><td><strong><a href="/tasmy-termotransferowe/serie/1600-wax">1600 Wax</a></strong></td><td>Industrial</td><td>—</td><td>254 mm/s</td><td>FDA, UE 1935/2004, LFGB; do starszych instalacji</td></tr>
 </tbody>
 </table>
 
-<p><strong>2300 Standard Wax</strong> to bestseller — dostępna w formatach desktop (rdzeń 12,7 mm, nawój IN, rolka 74 m) i industrial (rdzeń 25,4 mm, nawój OUT, rolki 300 m i 450 m). Ceny: desktop od 7,04 zł (84 mm) do 9,56 zł (110 mm); industrial od 16,28 zł (60 mm x 300 m) do 37,97 zł (110 mm x 450 m).</p>
+<p><strong>2300 Standard Wax</strong> to bestseller — dostępna w formatach desktop (rdzeń 12,7 mm, nawój IN, rolka 74 m) i industrial (rdzeń 25,4 mm, nawój OUT, rolki 300 m i 450 m). Najtańsza klasa taśmy i najniższy koszt na etykietę.</p>
 
-<p><strong>2100 High-Performance Wax</strong> — cieńsza warstwa barwna (7,5 µm vs 8,0 µm) daje wyższy kontrast i pozwala na druk do 355 mm/s. Tylko format industrial. Ceny: od 17,89 zł (40 mm x 450 m) do 45,54 zł (102 mm x 450 m). Wybieraj 2100, gdy drukujesz na szybkich liniach produkcyjnych powyżej 304 mm/s.</p>
+<p><strong>2100 European Wax</strong> — cieńsza warstwa barwna (7,5 µm vs 8,0 µm) daje wyższy kontrast i pozwala na druk do 355 mm/s. Tylko format industrial. Wybieraj 2100, gdy drukujesz na szybkich liniach produkcyjnych powyżej 304 mm/s.</p>
 
-<p><strong>Werdykt:</strong> Taśma woskowa to domyślny wybór dla etykiet papierowych w suchym, temperowanym środowisku. Najniższy koszt eksploatacji — ok. 0,007 zł na etykietę 100 x 50 mm (format desktop 110 mm x 74 m, dane z marca 2026).</p>`
+<p><strong>Werdykt:</strong> Taśma woskowa to domyślny wybór dla etykiet papierowych w suchym, temperowanym środowisku — najniższy koszt eksploatacji spośród trzech klas. Aktualne ceny wariantów znajdziesz na stronie serii.</p>`
     },
     {
       id: 'tasma-woskowo-zywiczna',
@@ -9472,26 +9474,30 @@ export const guides: Guide[] = [
 <h3>Zastosowania</h3>
 <p>Etykiety GHS na pojemnikach z chemią (na papierze), etykiety laboratoryjne, oznaczenia produktów spożywczych (food processing — kontakt z wilgocią), farmacja na podłożu papierowym, etykiety logistyczne narażone na wilgoć lub IPA, etykiety outdoor do 2–3 lat.</p>
 
-<h3>Serie woskowo-żywiczne Zebra — ceny i parametry</h3>
+<h3>Serie woskowo-żywiczne Zebra — parametry</h3>
 
 <table style="width:100%">
-<caption>Porównanie serii taśm woskowo-żywicznych Zebra — ceny netto i parametry</caption>
+<caption>Porównanie serii taśm woskowo-żywicznych Zebra — parametry</caption>
 <thead>
-<tr><th>Seria</th><th>Format</th><th>Grubość</th><th>Max prędkość</th><th>Certyfikaty</th><th>Cena od</th></tr>
+<tr><th>Seria</th><th>Format</th><th>Grubość</th><th>Max prędkość</th><th>Certyfikaty</th></tr>
 </thead>
 <tbody>
-<tr><td><strong><a href="/tasmy-termotransferowe?typ=woskowo-zywiczna">3200 Premium Wax/Resin</a></strong></td><td>Desktop + Industrial</td><td>7,0 µm</td><td>254 mm/s</td><td>UL certified</td><td>10,81 zł (desktop 64mm x 74m)</td></tr>
-<tr><td><strong>3400 High-Performance Wax/Resin</strong></td><td>Tylko Industrial</td><td>7,0 µm</td><td>200 mm/s</td><td>UL recognized</td><td>26,13 zł (40mm x 450m)</td></tr>
+<tr><td><strong><a href="/tasmy-termotransferowe/serie/3200-wax-resin">3200 Premium Wax/Resin</a></strong></td><td>Desktop + Industrial</td><td>7,0 µm</td><td>254 mm/s</td><td>UL Recognized</td></tr>
+<tr><td><strong><a href="/tasmy-termotransferowe/serie/3300-wax-resin">3300 Wax/Resin</a></strong></td><td>Desktop + Industrial</td><td>—</td><td>400 mm/s (najszybsza)</td><td>UL 969, FDA, UE 1935/2004</td></tr>
+<tr><td><strong><a href="/tasmy-termotransferowe/serie/3400-wax-resin">3400 High-Performance Wax/Resin</a></strong></td><td>Tylko Industrial</td><td>7,0 µm</td><td>203 mm/s</td><td>UL Recognised, FDA, UE 1935/2004, LFGB</td></tr>
+<tr><td><strong><a href="/tasmy-termotransferowe/serie/5555-wax-resin">5555 Wax/Resin (kartridż)</a></strong></td><td>Mobilna P4T</td><td>—</td><td>76 mm/s</td><td>UL Recognised; kartridż wyłącznie do Zebra P4T</td></tr>
 </tbody>
 </table>
 
-<p><strong>3200 Premium Wax/Resin</strong> — dostępna w formatach desktop (rdzeń 12,7 mm, nawój IN, 74 m) i industrial (rdzeń 25,4 mm, nawój OUT, 300 m i 450 m). Ceny desktop: od 10,81 zł (64 mm) do 18,48 zł (110 mm). Ceny industrial: od 33,28 zł (60 mm x 300 m) do 49,47 zł (60 mm x 450 m). Certyfikat UL — odpowiednia do etykiet regulacyjnych i GHS.</p>
+<p><strong>3200 Premium Wax/Resin</strong> — dostępna w formatach desktop (rdzeń 12,7 mm, nawój IN, 74 m) i industrial (rdzeń 25,4 mm, nawój OUT, 300 m i 450 m). Certyfikat UL Recognized — odpowiednia do etykiet regulacyjnych i GHS.</p>
 
-<p><strong>3400 High-Performance Wax/Resin</strong> — wyższa odporność na ścieranie niż 3200, ale niższa maksymalna prędkość druku (200 mm/s vs 254 mm/s). Tylko format industrial. Ceny: od 26,13 zł (40 mm x 450 m) do 39,19 zł (60 mm x 450 m).</p>
+<p><strong>3300 Wax/Resin</strong> — najszybsza taśma w całym portfolio (400 mm/s, 16 ips), drukuje na wszystkich podłożach przy niskiej energii głowicy. Wybór do drukarek line-speed (print engines ZE511, ZE521).</p>
+
+<p><strong>3400 High-Performance Wax/Resin</strong> — wyższa odporność na ścieranie niż 3200 (ciepło, para, rozpuszczalniki), ale niższa prędkość (203 mm/s). Tylko format industrial. Certyfikowana z etykietą 8000T Void Matte dla UL Recognised.</p>
 
 <p><strong>Ważne:</strong> Taśmy woskowo-żywiczne mają niższe prędkości maksymalne niż woskowe. Jeśli drukujesz na drukarce industrial powyżej 254 mm/s i potrzebujesz odporności WAX/RESIN — sprawdź, czy Twoja drukarka pozwala na ustawienie prędkości w zakresie 200–254 mm/s. Drukarki <a href="/produkt/zebra-zt231">Zebra ZT231</a> (max 304 mm/s) i <a href="/produkt/zebra-zt411">ZT411</a> (max 356 mm/s) umożliwiają regulację prędkości w oprogramowaniu.</p>
 
-<p><strong>Werdykt:</strong> Taśma woskowo-żywiczna to optymalny kompromis cena-odporność dla środowisk przemysłowych, food processing i healthcare. Koszt: ok. 0,013 zł na etykietę 100 x 50 mm — niecałe 2x więcej niż woskowa, ale odporna na IPA, wilgoć i temperatury do 90°C.</p>`
+<p><strong>Werdykt:</strong> Taśma woskowo-żywiczna to optymalny kompromis cena-odporność dla środowisk przemysłowych, food processing i healthcare. Koszt na etykietę niecałe 2× wyższy niż woskowa, ale nadruk odporny na IPA, wilgoć i temperatury do 90°C.</p>`
     },
     {
       id: 'tasma-zywiczna',
@@ -9520,28 +9526,33 @@ export const guides: Guide[] = [
 <h3>Zastosowania</h3>
 <p>Tabliczki znamionowe (nameplate) na maszynach i urządzeniach, etykiety kablowe i PCB (elektronika), oznaczenia chemiczne GHS na foliach syntetycznych, etykiety outdoor — asset tracking, etykiety farmaceutyczne na syntetyku (wymóg trwałości), etykiety laboratoryjne odporne na rozpuszczalniki.</p>
 
-<h3>Seria żywiczna Zebra — ceny i parametry</h3>
+<h3>Serie żywiczne Zebra — parametry</h3>
 
 <table style="width:100%">
-<caption>Seria taśm żywicznych Zebra 5095 — cena netto i parametry</caption>
+<caption>Serie taśm żywicznych Zebra — parametry</caption>
 <thead>
-<tr><th>Seria</th><th>Format</th><th>Grubość</th><th>Max prędkość</th><th>Certyfikaty</th><th>Cena od</th></tr>
+<tr><th>Seria</th><th>Format</th><th>Grubość</th><th>Max prędkość</th><th>Certyfikaty</th></tr>
 </thead>
 <tbody>
-<tr><td><strong><a href="/tasmy-termotransferowe?typ=zywiczna">5095 High-Performance Resin</a></strong></td><td>Desktop</td><td>6,5 µm</td><td>203 mm/s</td><td>UL/cUL approved</td><td>17,65 zł (desktop 64mm x 74m)</td></tr>
+<tr><td><strong><a href="/tasmy-termotransferowe/serie/5095-resin">5095 High-Performance Resin</a></strong></td><td>Desktop + Industrial</td><td>6,5 µm</td><td>203 mm/s</td><td>UL 969, BS 5609, FDA, UE 1935/2004</td></tr>
+<tr><td><strong><a href="/tasmy-termotransferowe/serie/4800-resin">4800 Performance Resin</a></strong></td><td>Industrial</td><td>—</td><td>152 mm/s</td><td>REACH, RoHS (brak UL)</td></tr>
+<tr><td><strong><a href="/tasmy-termotransferowe/serie/5100-resin">5100 Premium Resin</a></strong></td><td>Industrial</td><td>—</td><td>152 mm/s</td><td>UL/cUL, odporność UV długoterminowa</td></tr>
+<tr><td><strong><a href="/tasmy-termotransferowe/serie/8000-chemresist">8000 ChemResist</a></strong></td><td>Industrial</td><td>—</td><td>203 mm/s</td><td>REACH, RoHS — aceton, ksylen, Skydrol</td></tr>
 </tbody>
 </table>
 
-<p><strong>5095 High-Performance Resin</strong> — dostępna w formacie desktop (rdzeń 12,7 mm, nawój IN, 74 m). Ceny: od 17,65 zł (64 mm) do 30,31 zł (110 mm). Certyfikat UL/cUL — wymagany do etykiet bezpieczeństwa w panelach elektrycznych i systemach HVAC (standard UL 969).</p>
+<p><strong>5095 High-Performance Resin</strong> to bestseller żywicy — 20 wariantów szerokości (33–220 mm), skanowalność ANSI A. Certyfikat UL 969 — wymagany do etykiet bezpieczeństwa w panelach elektrycznych i systemach HVAC.</p>
 
-<p><strong>BS5609 i transport morski:</strong> Norma BS5609 (etykietowanie pojemników chemicznych w transporcie morskim wg IMO) wymaga testowania kompletnego systemu: taśma + etykieta + klej + drukarka. Taśma 5095 z certyfikatem UL/cUL spełnia wymagania materiałowe, ale pełna zgodność BS5609 Section 3 wymaga testów całego zestawu u akredytowanego laboratorium.</p>
+<p><strong>5095 i atest BS5609 (transport morski).</strong> Norma BS5609 (etykietowanie pojemników chemicznych w transporcie morskim wg IMO) wymaga testowania kompletnego systemu: taśma + etykieta + klej + drukarka. W polskim portfolio jedyną taśmą z BS5609 jest 5095 — w kombinacji z folią poliolefinową <a href="/etykiety-termotransferowe-zebra/foliowe/serie/polyo-3100t">PolyO 3100T</a> lub poliestrem Z-Ultimate.</p>
 
-<p><strong>Werdykt:</strong> Taśma żywiczna jest niezbędna dla syntetyków i warunków ekstremalnych. Koszt: ok. 0,022 zł na etykietę 100 x 50 mm — ok. 3,2x więcej niż woskowa, ale w zastosowaniach outdoor zastępuje wymianę etykiet co 6 miesięcy (woskowa) jedną etykietą na 3–7 lat. Nie używaj żywicznej na papierze — przepłacasz bez korzyści. Do pełnej odporności na aceton i ksylen potrzebna jest taśma Zebra ChemResist — <a href="/kontakt">zapytaj o dostępność</a>.</p>`
+<p><strong>Pełna chemia: 8000 ChemResist.</strong> Zebra 5095 ma rating „Not Recommended" dla acetonu i ksylenu. Do pełnej odporności na te rozpuszczalniki, Skydrol i paliwa wybierz <a href="/tasmy-termotransferowe/serie/8000-chemresist">Zebra 8000 ChemResist</a> (ekstremalna odporność chemiczna, bez UL).</p>
+
+<p><strong>Werdykt:</strong> Taśma żywiczna jest niezbędna dla syntetyków i warunków ekstremalnych. Koszt na etykietę ok. 3,2× wyższy niż woskowa, ale w zastosowaniach outdoor zastępuje wymianę etykiet co 6 miesięcy (woskowa) jedną etykietą na 3–7 lat. Nie używaj żywicznej na papierze — przepłacasz bez korzyści.</p>`
     },
     {
       id: 'tabela-porownawcza',
       heading: 'WAX vs WAX/RESIN vs RESIN — tabela porównawcza 12 parametrów',
-      content: `<p>Porównanie trzech typów taśm termotransferowych w 12 kluczowych wymiarach. Ceny i dane z serii Zebra, stan na marzec 2026 — <a href="/tasmy-termotransferowe">pełny katalog taśm w sklepie</a>.</p>
+      content: `<p>Porównanie trzech typów taśm termotransferowych w kluczowych wymiarach. Dane z serii Zebra dostępnych w <a href="/tasmy-termotransferowe">katalogu taśm</a> — aktualne ceny każdej serii na jej stronie.</p>
 
 <table style="width:100%">
 <caption>WAX vs WAX/RESIN vs RESIN — porównanie 12 parametrów taśm termotransferowych</caption>
@@ -9549,9 +9560,7 @@ export const guides: Guide[] = [
 <tr><th>Parametr</th><th>WAX (woskowa)</th><th>WAX/RESIN</th><th>RESIN (żywiczna)</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Cena (serie Zebra)</strong></td><td>od 7,04 zł</td><td>od 10,81 zł</td><td>od 17,65 zł</td></tr>
-<tr><td><strong>Koszt / etykietę 100x50 mm</strong></td><td>~0,007 zł</td><td>~0,013 zł</td><td>~0,022 zł</td></tr>
-<tr><td><strong>Roczny koszt (50 000 et.)</strong></td><td>~340 zł</td><td>~660 zł</td><td>~1 085 zł</td></tr>
+<tr><td><strong>Koszt na etykietę (względny)</strong></td><td>1× (najtańsza)</td><td>~2×</td><td>~3,2×</td></tr>
 <tr><td><strong>Materiały docelowe</strong></td><td>Papier</td><td>Papier powl. + syntetyki matowe</td><td>Syntetyki PP/PE/PET</td></tr>
 <tr><td><strong>Grubość warstwy (Zebra)</strong></td><td>8,0 µm (2300)</td><td>7,0 µm (3200)</td><td>6,5 µm (5095)</td></tr>
 <tr><td><strong>Max prędkość druku</strong></td><td>304–355 mm/s</td><td>200–254 mm/s</td><td>203 mm/s</td></tr>
@@ -9564,7 +9573,7 @@ export const guides: Guide[] = [
 </tbody>
 </table>
 
-<p><strong>Metodologia kalkulacji kosztów:</strong> Etykieta 100 x 50 mm, konsumpcja taśmy 53 mm na etykietę (50 mm wysokość + 3 mm przerwa), taśma 110 mm x 74 m (desktop) — format dostępny we wszystkich trzech typach. Ceny netto z dystrybucji (marzec 2026). Przy rolkach industrial 110 mm x 450 m (dostępnych dla WAX 2300) koszt woskowej spada do ~0,0045 zł/etykietę.</p>`
+<p><strong>O koszcie względnym:</strong> przyjmując taśmę woskową jako bazę (1×), woskowo-żywiczna kosztuje na etykietę około 2×, a żywiczna około 3,2× więcej (ten sam format i rozmiar etykiety). Rolki industrial (dłuższe, 300–450 m) obniżają koszt na etykietę względem rolek desktop (74 m). Aktualne ceny wariantów — na stronie każdej serii.</p>`
     },
     {
       id: 'dobor-do-podloza',
@@ -9641,33 +9650,28 @@ export const guides: Guide[] = [
     },
     {
       id: 'kalkulator-kosztow',
-      heading: 'Ile kosztuje taśma rocznie? Kalkulator dla 4 wolumenów i 3 typów',
-      content: `<p>Koszt taśmy na etykietę zależy od: ceny rolki, długości rolki i rozmiaru etykiety. Poniższy kalkulator bazuje na taśmach Zebra w formacie desktop 110 mm x 74 m (etykieta 100 x 50 mm, konsumpcja 53 mm taśmy na etykietę). Ceny netto z dystrybucji, marzec 2026.</p>
+      heading: 'Koszt eksploatacji — kiedy opłaca się droższa taśma',
+      content: `<p>Koszt taśmy na etykietę zależy od ceny rolki, jej długości i rozmiaru etykiety. W ujęciu względnym (taśma woskowa = baza 1×) koszt na etykietę wygląda tak:</p>
 
 <table style="width:100%">
-<caption>Kalkulator rocznych kosztów taśmy termotransferowej — WAX vs WAX/RESIN vs RESIN</caption>
+<caption>Względny koszt na etykietę — WAX vs WAX/RESIN vs RESIN</caption>
 <thead>
-<tr><th>Wolumen / rok</th><th>WAX 2300 (9,56 zł/rolka)</th><th>WAX/RESIN 3200 (18,48 zł/rolka)</th><th>RESIN 5095 (30,31 zł/rolka)</th></tr>
+<tr><th>Klasa</th><th>Koszt na etykietę (względny)</th><th>Czynnik obniżający koszt</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>20 000 etykiet</strong></td><td>~136 zł</td><td>~265 zł</td><td>~434 zł</td></tr>
-<tr><td><strong>50 000 etykiet</strong></td><td>~340 zł</td><td>~660 zł</td><td>~1 085 zł</td></tr>
-<tr><td><strong>200 000 etykiet</strong></td><td>~1 360 zł</td><td>~2 640 zł</td><td>~4 340 zł</td></tr>
-<tr><td><strong>500 000 etykiet</strong></td><td>~3 400 zł</td><td>~6 600 zł</td><td>~10 850 zł</td></tr>
+<tr><td><strong>WAX (woskowa)</strong></td><td>1× (baza)</td><td>Rolki industrial (300–450 m) zamiast desktop (74 m)</td></tr>
+<tr><td><strong>WAX/RESIN</strong></td><td>~2×</td><td>Format industrial w popularnych szerokościach</td></tr>
+<tr><td><strong>RESIN (żywiczna)</strong></td><td>~3,2×</td><td>Dłuższe rolki, większe wolumeny</td></tr>
 </tbody>
 </table>
 
-<p><strong>Tańsza alternatywa dla dużych wolumenów WAX:</strong> Przy rolkach industrial 110 mm x 450 m (37,97 zł/rolka) koszt woskowej spada do ~0,0045 zł/etykietę — roczny koszt przy 50 000 etykiet to zaledwie 225 zł. Rolki industrial dostępne dla WAX 2300 i WAX/RESIN 3200 (w węższych szerokościach do 60 mm).</p>
+<p>Im dłuższa rolka (industrial 300–450 m vs desktop 74 m), tym niższy koszt na pojedynczą etykietę — przy dużych wolumenach różnica jest wyraźna. <strong>Aktualne ceny każdej serii i wariantu znajdziesz na jej stronie</strong> w <a href="/tasmy-termotransferowe">katalogu taśm</a>.</p>
 
 <h3>Kiedy opłaca się przejść z WAX na WAX/RESIN?</h3>
-<p>Różnica roczna przy 50 000 etykiet: 660 zł - 340 zł = <strong>320 zł/rok</strong>. Jeden incydent powtórnego etykietowania z powodu uszkodzonego nadruku (10 min pracy x 40 zł/h) kosztuje 6,67 zł. Aby przejście na WAX/RESIN się opłaciło, wystarczy:</p>
-<ul>
-<li>320 zł / 6,67 zł = <strong>48 incydentów/rok</strong> — czyli ok. 1 incydent tygodniowo</li>
-<li>Jeśli Twoje etykiety woskowe regularnie się ścierają, rozmazują pod wpływem wilgoci lub wymagają ponownego druku — przejście na WAX/RESIN zwraca się w mniej niż 12 miesięcy</li>
-</ul>
+<p>Dopłata do woskowo-żywicznej jest niewielka (ok. 2× koszt na etykietę, ale w liczbach bezwzględnych to grosze). Wystarczy kilkadziesiąt incydentów powtórnego etykietowania rocznie z powodu startego nadruku, żeby ta dopłata się zwróciła. Jeśli Twoje etykiety woskowe regularnie się ścierają, rozmazują pod wpływem wilgoci lub wymagają ponownego druku — przejście na WAX/RESIN zwraca się w mniej niż 12 miesięcy.</p>
 
 <h3>Kiedy opłaca się przejść na RESIN?</h3>
-<p>Różnica roczna WAX → RESIN: 1 085 zł - 340 zł = <strong>745 zł/rok</strong>. Ale jedna etykieta outdoor z taśmy woskowej wymaga wymiany co 6–12 mies. — etykieta żywiczna wytrzymuje 5–10 lat. Dla 1 000 etykiet outdoor wymiana co rok: koszt pracy + materiał = znacznie więcej niż 745 zł różnicy na taśmie.</p>`
+<p>Żywica jest droższa na etykietę, ale jedna etykieta outdoor z taśmy woskowej wymaga wymiany co 6–12 miesięcy, a żywiczna wytrzymuje 3–7 lat. Przy etykietach narażonych na słońce, chemię lub ścieranie koszt pracy przy ponownym etykietowaniu szybko przewyższa różnicę w cenie taśmy.</p>`
     },
     {
       id: 'podsumowanie-i-polecane',
@@ -9683,16 +9687,17 @@ export const guides: Guide[] = [
 <h3>Polecane taśmy wg zastosowania</h3>
 
 <table style="width:100%">
-<caption>Polecane taśmy termotransferowe Zebra wg zastosowania — z cenami netto</caption>
+<caption>Polecane taśmy termotransferowe Zebra wg zastosowania</caption>
 <thead>
-<tr><th>Zastosowanie</th><th>Seria</th><th>Cena od</th><th>Link</th></tr>
+<tr><th>Zastosowanie</th><th>Seria</th><th>Strona serii</th></tr>
 </thead>
 <tbody>
-<tr><td>Logistyka, wysyłka, cenówki</td><td>Zebra 2300 Standard Wax</td><td>7,04 zł</td><td><a href="/tasmy-termotransferowe?typ=woskowa">Taśmy woskowe</a></td></tr>
-<tr><td>Food processing, farmacja (papier)</td><td>Zebra 3200 Premium Wax/Resin</td><td>10,81 zł</td><td><a href="/tasmy-termotransferowe?typ=woskowo-zywiczna">Taśmy woskowo-żywiczne</a></td></tr>
-<tr><td>Chemikalia GHS na syntetykach</td><td>Zebra 5095 High-Performance Resin</td><td>17,65 zł</td><td><a href="/tasmy-termotransferowe?typ=zywiczna">Taśmy żywiczne</a></td></tr>
-<tr><td>Szybkie linie >300 mm/s (papier)</td><td>Zebra 2100 High-Performance Wax</td><td>17,89 zł</td><td><a href="/tasmy-termotransferowe?typ=woskowa">Taśmy woskowe HP</a></td></tr>
-<tr><td>Outdoor, PCB, tabliczki znamionowe</td><td>Zebra 5095 High-Performance Resin</td><td>17,65 zł</td><td><a href="/tasmy-termotransferowe?typ=zywiczna">Taśmy żywiczne</a></td></tr>
+<tr><td>Logistyka, wysyłka, cenówki</td><td>Zebra 2300 Standard Wax</td><td><a href="/tasmy-termotransferowe/serie/2300-wax">2300 Wax</a></td></tr>
+<tr><td>Food processing, farmacja (papier)</td><td>Zebra 3200 Premium Wax/Resin</td><td><a href="/tasmy-termotransferowe/serie/3200-wax-resin">3200 Wax/Resin</a></td></tr>
+<tr><td>Chemikalia GHS na syntetykach</td><td>Zebra 5095 High-Performance Resin</td><td><a href="/tasmy-termotransferowe/serie/5095-resin">5095 Resin</a></td></tr>
+<tr><td>Szybkie linie >300 mm/s (papier)</td><td>Zebra 2100 European Wax / 3300 Wax/Resin</td><td><a href="/tasmy-termotransferowe/serie/3300-wax-resin">3300 Wax/Resin</a></td></tr>
+<tr><td>Outdoor, PCB, tabliczki znamionowe</td><td>Zebra 5095 / 5100 Resin</td><td><a href="/tasmy-termotransferowe/serie/5100-resin">5100 Resin</a></td></tr>
+<tr><td>Agresywna chemia (aceton, ksylen)</td><td>Zebra 8000 ChemResist</td><td><a href="/tasmy-termotransferowe/serie/8000-chemresist">8000 ChemResist</a></td></tr>
 </tbody>
 </table>
 
@@ -9705,12 +9710,12 @@ export const guides: Guide[] = [
       heading: 'Podsumowanie — 7 kluczowych wniosków',
       content: `<ol>
 <li><strong>Materiał etykiety determinuje typ taśmy</strong> — papier = WAX, papier powlekany/syntetyk matowy = WAX/RESIN, folia syntetyczna (PP, PE, PET) = RESIN.</li>
-<li><strong>Taśma woskowa (WAX) wystarcza w 70% zastosowań</strong> — logistyka, wysyłka, cenówki, magazyn. Cena od 7,04 zł/rolka (Zebra 2300).</li>
-<li><strong>WAX/RESIN to złoty środek</strong> — gdy etykieta styka się z wilgocią, alkoholem IPA lub olejami. Cena od 10,81 zł/rolka (Zebra 3200).</li>
-<li><strong>RESIN jest niezbędna dla syntetyków i warunków ekstremalnych</strong> — aceton, UV, temperatura do 120°C. Cena od 17,65 zł/rolka (Zebra 5095).</li>
+<li><strong>Taśma woskowa (WAX) wystarcza w 70% zastosowań</strong> — logistyka, wysyłka, cenówki, magazyn. Najtańsza klasa (Zebra 2300).</li>
+<li><strong>WAX/RESIN to złoty środek</strong> — gdy etykieta styka się z wilgocią, alkoholem IPA lub olejami (Zebra 3200, 3300, 3400).</li>
+<li><strong>RESIN jest niezbędna dla syntetyków i warunków ekstremalnych</strong> — aceton, UV, temperatura do 120°C (Zebra 5095, 5100, 8000 ChemResist).</li>
 <li><strong>Szerokość taśmy = szerokość etykiety + 2–5 mm</strong> — chroni głowicę drukującą przed zużyciem.</li>
 <li><strong>Nawój IN (desktop) i OUT (industrial) nie są zamienne</strong> — użycie niewłaściwego nawoju powoduje brak nadruku.</li>
-<li><strong>Koszt taśmy na etykietę to 0,007–0,022 zł</strong> — różnica między WAX a RESIN wynosi ok. 3,2× na etykietę, ale RESIN eliminuje koszty wymiany etykiet w trudnych warunkach.</li>
+<li><strong>Koszt na etykietę rośnie z klasą</strong> — różnica między WAX a RESIN to ok. 3,2× na etykietę, ale RESIN eliminuje koszty wymiany etykiet w trudnych warunkach. Aktualne ceny — na stronach serii.</li>
 </ol>
 
 <p>Potrzebujesz pomocy w doborze? <a href="/kontakt">Skontaktuj się z nami</a> — dobierzemy taśmę do Twojej drukarki, materiału etykiet i zastosowania. Wysyłamy próbki do testów.</p>`
@@ -9720,7 +9725,7 @@ export const guides: Guide[] = [
   faq: [
     {
       question: 'Czym różni się taśma woskowa od woskowo-żywicznej?',
-      answer: 'Taśma woskowa (WAX) składa się głównie z wosków i jest przeznaczona do papieru w suchych warunkach. Nadruk jest podatny na ścieranie i rozpuszczalniki. Taśma woskowo-żywiczna (WAX/RESIN) zawiera mieszankę wosku i żywicy — nadruk jest odporny na alkohol izopropylowy (IPA), wilgoć i oleje. Nadaje się do papieru powlekanego i syntetyków matowych. Ceny: woskowa <a href="/tasmy-termotransferowe?typ=woskowa">Zebra 2300 od 7,04 zł</a>, woskowo-żywiczna <a href="/tasmy-termotransferowe?typ=woskowo-zywiczna">Zebra 3200 od 10,81 zł</a> (ceny netto, marzec 2026).',
+      answer: 'Taśma woskowa (WAX) składa się głównie z wosków i jest przeznaczona do papieru w suchych warunkach. Nadruk jest podatny na ścieranie i rozpuszczalniki. Taśma woskowo-żywiczna (WAX/RESIN) zawiera mieszankę wosku i żywicy — nadruk jest odporny na alkohol izopropylowy (IPA), wilgoć i oleje. Nadaje się do papieru powlekanego i syntetyków matowych. Woskowa jest najtańsza, woskowo-żywiczna kosztuje na etykietę około 2× więcej. Polecane serie: woskowa <a href="/tasmy-termotransferowe/serie/2300-wax">Zebra 2300</a>, woskowo-żywiczna <a href="/tasmy-termotransferowe/serie/3200-wax-resin">Zebra 3200</a>.',
     },
     {
       question: 'Jaka taśma do drukarki Zebra ZT231?',
@@ -9740,7 +9745,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Ile kosztuje taśma do drukarki etykiet?',
-      answer: 'Taśmy desktop (74 m): woskowa Zebra 2300 od 7,04 zł, woskowo-żywiczna Zebra 3200 od 10,81 zł, żywiczna Zebra 5095 od 17,65 zł. Taśmy industrial (300–450 m): woskowa Zebra 2300 od 16,28 zł, woskowo-żywiczna Zebra 3200 od 33,28 zł. Koszt na etykietę 100 x 50 mm (format desktop 110 mm x 74 m): woskowa ~0,007 zł, woskowo-żywiczna ~0,013 zł, żywiczna ~0,022 zł. Ceny netto z marca 2026.',
+      answer: 'Cena zależy od klasy taśmy, formatu rolki (desktop 74 m vs industrial 300–450 m) i szerokości. Najtańsza jest woskowa (Zebra 2300), woskowo-żywiczna kosztuje na etykietę około 2× więcej, a żywiczna około 3,2× więcej. W liczbach bezwzględnych koszt na pojedynczą etykietę to grosze, a dłuższe rolki industrial dodatkowo go obniżają. Aktualne ceny netto każdego wariantu znajdziesz na stronie danej serii w <a href="/tasmy-termotransferowe">katalogu taśm</a>.',
     },
     {
       question: 'Jak szeroka powinna być taśma termotransferowa?',
@@ -9757,6 +9762,22 @@ export const guides: Guide[] = [
     {
       question: 'Jak długo wytrzyma etykieta z taśmy woskowej na zewnątrz?',
       answer: 'Etykieta papierowa z taśmą woskową na zewnątrz: 6–12 miesięcy (blaknięcie pod UV, wrażliwość na deszcz). Woskowo-żywiczna na syntetyku matowym: 1–3 lata. Żywiczna (Zebra 5095) na syntetyku PP/PE/PET: 3–7 lat czytelności outdoor (do 10+ lat na podłożu poliimidowym). Jeśli etykieta ma być czytelna przez ponad 1 rok na zewnątrz — wybierz taśmę żywiczną i podłoże syntetyczne. Więcej o różnicach: <a href="/poradnik/drukarka-termiczna-vs-termotransferowa">drukarka termiczna vs termotransferowa</a>.',
+    },
+    {
+      question: 'Do czego służy taśma termotransferowa?',
+      answer: 'Taśma termotransferowa (ribbon) to nośnik barwnika dla druku termotransferowego — drukarka rozgrzewa głowicę i topi barwnik z taśmy, przenosząc go na powierzchnię etykiety. Powstaje permanentny nadruk, znacznie trwalszy niż druk termiczny bez taśmy. Taśma jest niezbędna w każdej drukarce termotransferowej; w drukarce łączącej DT/TT pracuje tylko w trybie termotransferowym. Bez taśmy drukarka termotransferowa nie zostawi żadnego śladu na etykiecie.',
+    },
+    {
+      question: 'Ile etykiet wydrukuję z jednej rolki taśmy?',
+      answer: 'Zależy od długości taśmy i wysokości etykiety. Na karcie każdego wariantu taśmy w sklepie TAKMA znajdziesz kalkulator — wpisujesz wysokość swojej etykiety, a system od razu wylicza liczbę etykiet z rolki. Orientacyjnie: rolka 300 m + etykieta 100×150 mm (z odstępem 3 mm) to około 1 950 etykiet, a rolka 600 m + etykieta 50×30 mm — około 18 000 etykiet. Taśma zużywa się na całą wysokość etykiety plus odstęp, niezależnie od ilości nadruku. Drukarki przemysłowe mieszczą dłuższe rolki (300–900 m), biurkowe krótsze (74–300 m).',
+    },
+    {
+      question: 'Czy każda taśma żywiczna ma certyfikat UL?',
+      answer: 'Nie. W katalogu TAKMA UL mają taśmy żywiczne Zebra 5095 Resin (UL 969) i 5100 Premium Resin (UL/cUL), natomiast Zebra 4800 Performance Resin i Zebra 8000 ChemResist UL nie mają. Pełen UL Recognized to zawsze kombinacja taśma + etykieta — np. 5095 z folią poliestrową Z-Ultimate 3000T White, Silver lub 8000T Void Matte. Jeśli wymagasz UL na rynki USA/Kanada, wybierz 5095 lub 5100, a nie 4800/8000.',
+    },
+    {
+      question: 'Po czym poznać, że taśma kończy się w drukarce?',
+      answer: 'Większość drukarek Zebra ma czujnik ribbon-out, który wykrywa koniec rolki i wyświetla komunikat na panelu lub w sterowniku. W tańszych drukarkach biurkowych bez czujnika sprawdzaj wizualnie średnicę rolki resztkowej. Planowa wymiana co znaną liczbę etykiet zapobiega zatrzymaniu linii — np. rolka woskowa 300 m starcza na ok. 1 950–2 000 etykiet 100×150 mm, więc po tej liczbie planuj wymianę.',
     },
   ],
 

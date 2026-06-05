@@ -170,7 +170,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
       name: item.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: item.answer,
+        text: item.answer.replace(/<[^>]+>/g, ''),
       },
     })),
   } : null
@@ -355,9 +355,11 @@ export default function GuidePage({ guide }: GuidePageProps) {
                           <span>{item.question}</span>
                           <ChevronRightIcon size={18} className="text-gray-400 group-open:text-gray-700 transition-transform group-open:rotate-90 flex-shrink-0 ml-3" />
                         </summary>
-                        <div className="px-5 pb-4 text-gray-600 leading-relaxed">
-                          {item.answer}
-                        </div>
+                        <div
+                          className="px-5 pb-4 text-gray-600 leading-relaxed prose prose-sm prose-gray max-w-none prose-p:my-0 prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline"
+                          dangerouslySetInnerHTML={{ __html: item.answer }}
+                        />
+
                       </details>
                     ))}
                   </div>
