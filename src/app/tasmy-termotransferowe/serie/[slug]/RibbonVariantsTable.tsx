@@ -220,6 +220,21 @@ export default function RibbonVariantsTable({
   }
 
   // Filtrowanie + sortowanie po cenie ASC (default)
+  // ── LIVE STOCK (zasilane serwerowo) — do sortowania (dostępne na górze) i wyświetlania ──
+  const [stockMap, setStockMap] = useState<Map<string, StockInfo>>(
+    () => new Map((initialStock ?? []).map(s => [s.partNumber, s])),
+  )
+  const [stockLoading, setStockLoading] = useState(false)
+
+  // Ranga dostępności: dostępne (0) → na zamówienie (1) → niedostępne (2)
+  const availabilityRank = useCallback((v: ProductVariant): number => {
+    const s = stockMap.get(v.partNumber)
+    const live = !!s && (s.found || s.totalStock > 0)
+    const avail = live ? s!.availability : v.availability
+    return avail === 'available' ? 0 : avail === 'on-order' ? 1 : 2
+  }, [stockMap])
+
+  // Filtr + sort po cenie (rosnąco)
   const filtered = useMemo(() => {
     const list = variants.filter(v => matchesExcept(v, null))
     return list.sort((a, b) => {
@@ -228,15 +243,17 @@ export default function RibbonVariantsTable({
       return pa - pb
     })
   }, [variants, matchesExcept])
-
-  const visible = filtered.slice(0, visibleCount)
-  const hasMore = filtered.length > visibleCount
-
-  // ── LIVE STOCK fetch dla widocznych wariantów ──
-  const [stockMap, setStockMap] = useState<Map<string, StockInfo>>(
-    () => new Map((initialStock ?? []).map(s => [s.partNumber, s])),
+  // Dostępne na górze, niedostępne na dole — cena pozostaje secondary (sort stabilny przez indeks)
+  const sorted = useMemo(
+    () => filtered
+      .map((v, i) => [v, i] as const)
+      .sort(([a, ia], [b, ib]) => availabilityRank(a) - availabilityRank(b) || ia - ib)
+      .map(([v]) => v),
+    [filtered, availabilityRank],
   )
-  const [stockLoading, setStockLoading] = useState(false)
+
+  const visible = sorted.slice(0, visibleCount)
+  const hasMore = filtered.length > visibleCount
 
   const visiblePnsKey = visible.map(v => v.partNumber).join(',')
   useEffect(() => {

@@ -242,19 +242,35 @@ export default function SeriesVariantsTable({
   }
 
   // Filtrowanie wszystkimi filtrami
-  const filtered = useMemo(
-    () => variants.filter(v => matchesExcept(v, null)),
-    [variants, matchesExcept],
-  )
-
-  const visible = filtered.slice(0, visibleCount)
-  const hasMore = filtered.length > visibleCount
-
-  // ── LIVE STOCK fetch dla widocznych wariantów (Ingram/Jarltech) ──
+  // ── LIVE STOCK (zasilane serwerowo) — do sortowania (dostępne na górze) i wyświetlania ──
   const [stockMap, setStockMap] = useState<Map<string, StockInfo>>(
     () => new Map((initialStock ?? []).map(s => [s.partNumber, s])),
   )
   const [stockLoading, setStockLoading] = useState(false)
+
+  // Ranga dostępności: dostępne (0) → na zamówienie (1) → niedostępne (2)
+  const availabilityRank = useCallback((v: ProductVariant): number => {
+    const s = stockMap.get(v.partNumber)
+    const live = !!s && (s.found || s.totalStock > 0)
+    const avail = live ? s!.availability : v.availability
+    return avail === 'available' ? 0 : avail === 'on-order' ? 1 : 2
+  }, [stockMap])
+
+  const filtered = useMemo(
+    () => variants.filter(v => matchesExcept(v, null)),
+    [variants, matchesExcept],
+  )
+  // Dostępne na górze, niedostępne na dole (sort stabilny przez indeks)
+  const sorted = useMemo(
+    () => filtered
+      .map((v, i) => [v, i] as const)
+      .sort(([a, ia], [b, ib]) => availabilityRank(a) - availabilityRank(b) || ia - ib)
+      .map(([v]) => v),
+    [filtered, availabilityRank],
+  )
+
+  const visible = sorted.slice(0, visibleCount)
+  const hasMore = filtered.length > visibleCount
 
   const visiblePnsKey = visible.map(v => v.partNumber).join(',')
   useEffect(() => {
