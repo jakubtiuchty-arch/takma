@@ -23,10 +23,10 @@ export default async function AllegroDashboardPage() {
           </p>
         </Link>
 
-        <div className="rounded-xl border border-gray-200 bg-white p-5 opacity-60">
-          <div className="font-semibold text-gray-900 mb-1">Oferty</div>
-          <p className="text-sm text-gray-500">Wkrótce — wystawianie i synchronizacja ofert.</p>
-        </div>
+        <Link href="/admin/allegro/oferty" className="rounded-xl border border-gray-200 bg-white p-5 hover:border-gray-300 transition-colors">
+          <div className="font-semibold text-gray-900 mb-1">Oferty — taśmy</div>
+          <p className="text-sm text-gray-500">Wystaw warianty taśm TT jako szkice (cena ze sklepu × 1,12 × VAT).</p>
+        </Link>
       </div>
     </div>
   )

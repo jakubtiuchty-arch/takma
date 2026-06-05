@@ -566,3 +566,24 @@ model AllegroToken {
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 }
+
+// Oferta wystawiona z katalogu TAKMA na Allegro (1 wariant = 1 oferta).
+// Tworzona jako DRAFT (publication INACTIVE) — aktywację robi się w panelu Allegro.
+model AllegroOffer {
+  id          String   @id @default(cuid())
+  environment String // "sandbox" | "prod"
+  partNumber  String
+  seriesSlug  String?
+  productKind String   @default("ribbon") // "ribbon" | "label"
+  allegroId   String? // id oferty zwrócone przez Allegro
+  allegroUrl  String?
+  status      String   @default("DRAFT") // DRAFT | ACTIVE | ERROR
+  priceNet    Float?
+  priceGross  Float?
+  lastError   String?  @db.Text
+  payload     String?  @db.Text // ostatni wysłany payload (debug)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@unique([environment, partNumber])
+}
