@@ -13,6 +13,8 @@ interface Props {
   productImage?: string
   seriesTitle: string
   manufacturerName?: string
+  /** Stock żywy ze StockCache, pobrany po stronie serwera — zasila SSR realnymi cenami. */
+  initialStock?: StockInfo[]
 }
 
 function attr(v: ProductVariant, key: string): string {
@@ -125,6 +127,7 @@ export default function SeriesVariantsTable({
   productImage,
   seriesTitle,
   manufacturerName = 'Zebra',
+  initialStock,
 }: Props) {
   const [search, setSearch] = useState('')
   const [filterSzerokosc, setFilterSzerokosc] = useState<Set<number>>(new Set())
@@ -216,7 +219,9 @@ export default function SeriesVariantsTable({
   const hasMore = filtered.length > visibleCount
 
   // ── LIVE STOCK fetch dla widocznych wariantów ──
-  const [stockMap, setStockMap] = useState<Map<string, StockInfo>>(new Map())
+  const [stockMap, setStockMap] = useState<Map<string, StockInfo>>(
+    () => new Map((initialStock ?? []).map(s => [s.partNumber, s])),
+  )
   const [stockLoading, setStockLoading] = useState(false)
 
   const visiblePnsKey = visible.map(v => v.partNumber).join(',')

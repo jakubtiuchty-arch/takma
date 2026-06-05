@@ -17,6 +17,8 @@ interface Props {
   productImageIndustrial?: string
   seriesTitle: string
   manufacturerName?: string
+  /** Stock żywy ze StockCache, pobrany po stronie serwera — zasila SSR realnymi cenami. */
+  initialStock?: StockInfo[]
 }
 
 /** Bezpieczne wyciągnięcie atrybutu */
@@ -125,6 +127,7 @@ export default function RibbonVariantsTable({
   productImageIndustrial,
   seriesTitle,
   manufacturerName = 'Zebra',
+  initialStock,
 }: Props) {
   // Stan filtrów — taśma: Szerokość / Długość / Rdzeń
   const [search, setSearch] = useState('')
@@ -230,7 +233,9 @@ export default function RibbonVariantsTable({
   const hasMore = filtered.length > visibleCount
 
   // ── LIVE STOCK fetch dla widocznych wariantów ──
-  const [stockMap, setStockMap] = useState<Map<string, StockInfo>>(new Map())
+  const [stockMap, setStockMap] = useState<Map<string, StockInfo>>(
+    () => new Map((initialStock ?? []).map(s => [s.partNumber, s])),
+  )
   const [stockLoading, setStockLoading] = useState(false)
 
   const visiblePnsKey = visible.map(v => v.partNumber).join(',')

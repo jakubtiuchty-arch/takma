@@ -301,14 +301,14 @@ export default function GuidePage({ guide }: GuidePageProps) {
             {/* Sidebar — TOC */}
             <aside className="lg:w-72 flex-shrink-0">
               <div className="lg:sticky lg:top-28">
-                <nav className="bg-gray-50 rounded-xl p-5 border-t-2 border-[#A8F000] hidden lg:block max-h-[calc(100vh-8rem)] overflow-y-auto">
+                <nav className="bg-gray-50 rounded-xl p-5 border border-gray-200 hidden lg:block max-h-[calc(100vh-8rem)] overflow-y-auto">
                   <p className="text-sm font-bold text-gray-900 uppercase tracking-wider mb-3">Spis treści</p>
                   <ol className="space-y-2">
                     {guide.sections.map((section, i) => (
                       <li key={section.id}>
                         <a
                           href={`#${section.id}`}
-                          className="text-sm text-gray-600 hover:text-[#A8F000] transition-colors flex gap-2"
+                          className="text-sm text-gray-600 hover:text-primary-600 transition-colors flex gap-2"
                         >
                           <span className="text-gray-400 font-medium">{i + 1}.</span>
                           <span>{section.heading.split(' — ')[0]}</span>
@@ -317,7 +317,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
                     ))}
                     {guide.faq.length > 0 && (
                       <li>
-                        <a href="#faq" className="text-sm text-gray-600 hover:text-[#A8F000] transition-colors flex gap-2">
+                        <a href="#faq" className="text-sm text-gray-600 hover:text-primary-600 transition-colors flex gap-2">
                           <span className="text-gray-400 font-medium">{guide.sections.length + 1}.</span>
                           <span>Najczęstsze pytania (FAQ)</span>
                         </a>
@@ -350,10 +350,10 @@ export default function GuidePage({ guide }: GuidePageProps) {
                   <h2 className="text-2xl font-bold text-gray-900 mb-6">Najczęstsze pytania (FAQ)</h2>
                   <div className="space-y-4">
                     {guide.faq.map((item, i) => (
-                      <details key={i} className="group bg-gray-50 rounded-xl overflow-hidden border-l-2 border-transparent group-open:border-[#A8F000]">
+                      <details key={i} className="group bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
                         <summary className="cursor-pointer px-5 py-4 text-gray-900 font-semibold flex items-center justify-between hover:bg-gray-100 transition-colors">
                           <span>{item.question}</span>
-                          <ChevronRightIcon size={18} className="text-gray-400 group-open:text-[#A8F000] transition-transform group-open:rotate-90 flex-shrink-0 ml-3" />
+                          <ChevronRightIcon size={18} className="text-gray-400 group-open:text-gray-700 transition-transform group-open:rotate-90 flex-shrink-0 ml-3" />
                         </summary>
                         <div className="px-5 pb-4 text-gray-600 leading-relaxed">
                           {item.answer}
@@ -366,7 +366,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
 
               {/* Author byline (E-E-A-T: visible author) */}
               <div className="mt-10 pt-6 border-t border-gray-200 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#A8F000]/20 flex items-center justify-center text-gray-900 font-bold text-sm">JT</div>
+                <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-900 font-bold text-sm">JT</div>
                 <div>
                   <p className="text-sm font-semibold text-gray-900">Jakub Tiuchty</p>
                   <p className="text-xs text-gray-500">Specjalista AutoID w TAKMA | 25 lat doświadczenia w AutoID</p>

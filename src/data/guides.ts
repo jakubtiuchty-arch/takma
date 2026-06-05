@@ -13612,6 +13612,154 @@ export const guides: Guide[] = [
     { title: 'Kontakt — wycena floty Falcon X60/X65', href: '/kontakt' },
   ],
 },
+{
+  slug: 'etykiety-termiczne-czy-termotransferowe',
+  title: 'Etykiety termiczne czy termotransferowe — przewodnik wyboru 2026',
+  seoTitle: 'Etykiety termiczne czy termotransferowe? Przewodnik 2026',
+  seoDescription: 'Tabela decyzyjna, 5+5 zastosowań, atesty BfR i BS5609, klej do -40°C. Porównanie etykiet termicznych i termotransferowych Zebra w katalogu TAKMA.',
+  excerpt: 'Wybór „DT czy TT" to nie pytanie o technologię nadruku, lecz o trwałość etykiety w jej docelowym środowisku i o całkowity koszt etykietowania. Tabela decyzyjna, dziesięć scenariuszy zastosowań, pięć typowych błędów i polecane serie Zebra dostępne w katalogu TAKMA.',
+  category: 'przewodnik',
+  tags: ['etykiety-termiczne', 'etykiety-termotransferowe', 'tasmy-termotransferowe', 'porownanie'],
+  publishedAt: '2026-06-04',
+  updatedAt: '2026-06-04',
+  readTime: '11 min',
+
+  sections: [
+    {
+      id: 'roznice',
+      heading: 'Czym się różnią etykiety termiczne od termotransferowych',
+      content: `<p>Pytanie „etykiety termiczne czy termotransferowe" pada w naszym dziale zakupów kilka razy w tygodniu — od osoby kupującej pierwszą rolkę dla małego sklepu po zaopatrzeniowca z fabryki, gdzie roczne zamówienie idzie w pół miliona sztuk. W obu przypadkach prawidłowa odpowiedź jest taka sama: to nie jest pytanie o technologię nadruku, lecz o <strong>trwałość nadruku w jego docelowym środowisku</strong> i o <strong>całkowity koszt etykietowania</strong> — nie tylko cenę rolki.</p>
+<p><strong>Etykieta termiczna</strong> (skrót DT, od druku termicznego bezpośredniego): nadruk powstaje w samej powierzchni etykiety pod wpływem ciepła głowicy drukarki, bez taśmy barwiącej.</p>
+<p><strong>Etykieta termotransferowa</strong> (TT, od druku termotransferowego): nadruk przenosi się z taśmy barwiącej na powierzchnię etykiety. Wymaga drukarki obsługującej taśmę.</p>
+<p>Decydująca nie jest sama technologia — to dwa różne typy materiału, dwie klasy trwałości i dwa różne koszty eksploatacji. Wybierając „DT czy TT", w praktyce wybierasz między „tanio i krótko" a „drożej i trwale". Poniżej znajdziesz tabelę decyzyjną, dziesięć scenariuszy zastosowań i listę polecanych serii Zebra dostępnych w <a href="/etykiety-termiczne-zebra">katalogu etykiet termicznych</a> oraz <a href="/etykiety-termotransferowe-zebra">termotransferowych</a> TAKMA.</p>`,
+    },
+    {
+      id: 'tabela-decyzyjna',
+      heading: 'Tabela decyzyjna — kiedy DT, kiedy TT',
+      content: `<blockquote><p>Etykieta termiczna kosztuje mniej, ale tylko jeśli żyje krócej niż 12 miesięcy w warunkach magazynowych. Dla nadruków o długim okresie życia różnica się odwraca.</p></blockquote>
+<table>
+<thead><tr><th>Cecha</th><th>Etykieta termiczna (DT)</th><th>Etykieta termotransferowa (TT)</th></tr></thead>
+<tbody>
+<tr><td>Trwałość nadruku</td><td>Do 12 miesięcy (Z-Perform 1000D), do roku z powłoką ochronną (Z-Select 2000D)</td><td>Wiele lat — z odpowiednim materiałem i taśmą żywiczną „tak długo, jak długo istnieje produkt" (Z-Ultimate 3000T z certyfikatem UL)</td></tr>
+<tr><td>Koszt etykiety</td><td>Niższy — od 159 zł netto za rolkę (Z-Perform 1000D)</td><td>Wyższy — folie syntetyczne są droższe</td></tr>
+<tr><td>Koszt taśmy barwiącej</td><td>Zero (nie wymaga)</td><td>Konieczny — taśma woskowa, woskowo-żywiczna lub żywiczna</td></tr>
+<tr><td>Odporność na UV (słońce)</td><td>Bardzo niska — papier termoczuły blednie pod UV</td><td>Wysoka — zwłaszcza na foliach syntetycznych</td></tr>
+<tr><td>Zakres temperatur pracy</td><td>Do +80°C (Z-Perform 1000D), do +50°C (Z-Select 2000D z klejem gumowym)</td><td>Szeroki: -196°C (8100T Cryocool) do +150°C (8000T Void Matte)</td></tr>
+<tr><td>Klej dla niskich temperatur</td><td>Klej gumowy do -40°C (Z-Select 2000D), klej akrylowy do aplikacji w -40°C (PolyPro 4000D)</td><td>Klej do -196°C (8100T Cryocool)</td></tr>
+<tr><td>Dostępne materiały</td><td>Papier niepowlekany, papier powlekany, polipropylen, linerless</td><td>Papier, polipropylen, polietylen, poliester (PET), poliolefina, syntetyk specjalistyczny</td></tr>
+<tr><td>Drukarka</td><td>Drukarka tylko DT lub łącząca DT/TT</td><td>Drukarka termotransferowa lub łącząca</td></tr>
+<tr><td>Atesty żywnościowe</td><td>BfR XIV, FDA 175.105, EC 1935/2004, EU 10/2011 (Z-Select 2000D, Z-Perform 1000D)</td><td>Zazwyczaj brak — etykiety TT to materiały syntetyczne do zastosowań nie-spożywczych</td></tr>
+</tbody>
+</table>
+<p><strong>Klucz do interpretacji:</strong> jeśli etykieta ma być czytelna i potrzebna <strong>dłużej niż 12 miesięcy</strong>, automatycznie myśl TT. Jeśli krócej — DT zwykle wygrywa kosztowo.</p>`,
+    },
+    {
+      id: 'zastosowania-dt',
+      heading: 'Pięć zastosowań, w których wybrać etykietę termiczną (DT)',
+      content: `<h3>1. Wysyłki kurierskie InPost, DPD, DHL, GLS — masowe</h3>
+<p>Trwałość potrzebna: 5-14 dni. Etykieta jedzie z magazynu do klienta i kończy żywot w koszu. Termotransferowa to przepłacanie za niepotrzebną trwałość plus koszt taśmy — tu wystarczy zwykła, tania etykieta termiczna. Polecana seria: <a href="/etykiety-termiczne-zebra/serie/z-essentials-500d">Z-Essentials 500D</a> — najtańsza linia etykiet termicznych Zebra, papier niepowlekany z trwałym klejem akrylowym, w rozmiarze 102×152 mm na gilzie 25 mm, czyli dokładnie standard listu przewozowego do drukarek biurkowych. Praca 0-40°C w pomieszczeniu (etykietę nakładasz w magazynie) i krótki cykl życia przesyłki to jej naturalne środowisko — niższy koszt etykiety obniża całkowity koszt etykietowania przy dużych wolumenach.</p>
+<p>Gdy potrzebujesz większego wyboru rozmiarów, szerszego zakresu temperatur albo atestów żywnościowych, sięgnij po <a href="/etykiety-termiczne-zebra/serie/z-perform-1000d">Z-Perform 1000D</a> — papier niepowlekany, klej akrylowy do +80°C, 216 wariantów rozmiarowych, od 159 zł netto za rolkę.</p>
+<h3>2. Magazyn z atestem żywnościowym, chłodnie i mroźnie</h3>
+<p>Klej gumowy działa od <strong>-40°C do +50°C</strong> — etykieta trzyma się nawet w mroźni, gdzie zwykłe akrylowe odpadają. Polecana seria: <a href="/etykiety-termiczne-zebra/serie/z-select-2000d">Z-Select 2000D</a> — papier powlekany z powłoką ochronną, komplet atestów żywnościowych (BfR XIV, FDA 175.105, EC 1935/2004, EU 10/2011), standard w sklepach spożywczych, ochronie zdrowia i farmacji. 37 wariantów rozmiarowych (od 510 zł netto).</p>
+<h3>3. Opakowania wodoodporne — pojemniki wielokrotnego użytku, paczki w deszczu</h3>
+<p>Słoik dżemu, butelka soku, pojemnik na półce zewnętrznej. Folia polipropylenowa zamiast papieru daje wodoodporność i odporność na rozdarcie. Polecana seria: <a href="/etykiety-termiczne-zebra/serie/polypro-4000d">PolyPro 4000D</a> — matowy biały polipropylen, klej akrylowy do aplikacji już w -40°C, zakres pracy -54°C do +55°C, atest FDA 175.105 do pośredniego kontaktu z żywnością. Uwaga: PolyPro 4000D nie ma atestu BfR XIV — jeśli go potrzebujesz, wybierz Z-Select 2000D.</p>
+<h3>4. Linerless — gdy wymieniasz rolkę co godzinę i chcesz mniej odpadu</h3>
+<p>Etykiety bez papierowego podkładu to <strong>więcej etykiet na rolce o tej samej średnicy</strong> i zero odpadu silikonu. Polecana seria: <a href="/etykiety-termiczne-zebra/serie/zeroliner-2000d">ZeroLiner 2000D</a> — premium linerless z klejem kauczukowym, błyszczące wykończenie, bezfenolowa (REACH, RoHS, EN71-3), zakres pracy -10°C do +60°C, do drukarek mobilnych i biurkowych. Dla podstawowych zastosowań (transport, logistyka, poczta) wybierz <a href="/etykiety-termiczne-zebra/serie/zeroliner-1100d">ZeroLiner 1100D</a>, a dla dużych nakładów w trudnych warunkach do +100°C — <a href="/etykiety-termiczne-zebra/serie/zeroliner-4500d">ZeroLiner 4500D</a>.</p>
+<h3>5. Etykiety specjalistyczne — biżuteria, drobne elementy</h3>
+<p>Powlekana folia polipropylenowa z powłoką UV i klejem akrylowym dla niezwykle drobnych produktów. Polecana seria: <a href="/etykiety-termiczne-zebra/serie/8000d-jewelry">8000D Jewelry</a> — dostępna w dwóch wersjach: ze skrzydełkami i bez (skrzydełka owija się wokół biżuterii, żeby zmieściła się cała treść). Zakres pracy -40°C do +49°C, odporność na rozmazywanie i zarysowania.</p>`,
+    },
+    {
+      id: 'zastosowania-tt',
+      heading: 'Pięć zastosowań, w których wybrać etykietę termotransferową (TT)',
+      content: `<h3>1. Maszyny, urządzenia, tabliczki znamionowe — trwałe oznaczenia przemysłowe</h3>
+<p>Tabliczka znamionowa na maszynie, etykieta części, oznakowanie obudowy urządzenia elektronicznego — z certyfikatem UL Recognized Component. W polskim katalogu mamy tylko trzy etykiety TT z tym certyfikatem. Polecana seria: <a href="/etykiety-termotransferowe-zebra/foliowe/serie/z-ultimate-3000t-white">Z-Ultimate 3000T White</a> — folia poliestrowa, certyfikat UL z taśmą <a href="/tasmy-termotransferowe/serie/5095-resin">Zebra 5095</a>. Etykieta wytrzyma tak długo, jak długo istnieje produkt. Dla matowego srebrnego wykończenia: <a href="/etykiety-termotransferowe-zebra/foliowe/serie/z-ultimate-3000t-silver">Z-Ultimate 3000T Silver</a>.</p>
+<h3>2. Farmacja, kosmetyki, suplementy — długoterminowe etykietowanie produktów</h3>
+<p>Lek leży w aptece przez 24-36 miesięcy, a nadruk musi być czytelny do końca. Wymóg twardy: TT na folii z taśmą żywiczną. Polecane serie: <a href="/etykiety-termotransferowe-zebra/foliowe/serie/polye-3100t-gloss">PolyE 3100T Gloss</a> (folia poliestrowa do farmacji) lub <a href="/etykiety-termotransferowe-zebra/foliowe/serie/polypro-3000t-gloss">PolyPro 3000T Gloss</a> dla produktów konsumenckich. Dla efektu transparentnej etykiety („niewidocznej na butelce"): <a href="/etykiety-termotransferowe-zebra/foliowe/serie/polypro-3000t-clear">PolyPro 3000T Clear</a>.</p>
+<h3>3. Transport morski chemikaliów — atest BS5609 (etykiety GHS)</h3>
+<p>Beczki, kanistry i opakowania zbiorcze z substancjami niebezpiecznymi transportowane drogą morską muszą mieć etykiety przechodzące <strong>test 3-miesięcznego zanurzenia w słonej wodzie</strong> (BS5609 Sekcja 2 — materiał, Sekcja 3 — z taśmą). W polskim katalogu jedyna seria z tym atestem to <a href="/etykiety-termotransferowe-zebra/foliowe/serie/polyo-3100t">PolyO 3100T</a> — satynowa folia poliolefinowa z klejem kauczukowym wzmocnionej przyczepności, alternatywa dla PVC (zgodna z RoHS i REACH). Wymaga taśmy żywicznej: <a href="/tasmy-termotransferowe/serie/4800-resin">Zebra 4800 Resin</a> lub <a href="/tasmy-termotransferowe/serie/5095-resin">Zebra 5095 Resin</a>, a w lżejszych aplikacjach wystarczy <a href="/tasmy-termotransferowe/serie/3200-wax-resin">Zebra 3200 Premium Wax/Resin</a>.</p>
+<h3>4. Mrożenie głębokie, kriogenika, laboratorium biobankowe</h3>
+<p>Próbki w biobanku przechowywane w ciekłym azocie w -196°C. Etykieta musi trzymać się w cyklach głębokiego mrożenia i rozmrażania, zwykle z odpornością na promieniowanie gamma. Polecana seria: <a href="/etykiety-termotransferowe-zebra/specjalne/serie/8100t-cryocool">8100T Cryocool</a> — etykieta kriogeniczna do laboratoriów. Dla worków z krwią i głębokiego mrożenia organicznego: <a href="/etykiety-termotransferowe-zebra/specjalne/serie/8000t-blood-bag-deep-freeze">8000T Blood Bag Deep Freeze</a>. Dla mroźni głębokich i wysokich temperatur przemysłowych (zakres -54°C do +120°C, wytrzymały klej do stali): <a href="/etykiety-termotransferowe-zebra/foliowe/serie/polypro-4000t-matte">PolyPro 4000T Matte</a>.</p>
+<h3>5. Etykiety zabezpieczające — funkcja VOID z certyfikatem UL</h3>
+<p>Plomby gwarancyjne na sprzęcie elektronicznym, oznakowanie środków trwałych, etykiety autentyczności. Po próbie zdjęcia etykieta zostawia trwały napis <strong>VOID</strong> na powierzchni produktu — udokumentowany dowód naruszenia. Polecana seria: <a href="/etykiety-termotransferowe-zebra/specjalne/serie/8000t-void-matte">8000T Void Matte</a> — matowy srebrny poliester z metalizowanym klejem akrylowym, certyfikat UL Recognized z taśmami <a href="/tasmy-termotransferowe/serie/3400-wax-resin">Zebra 3400 Wax/Resin</a> lub <a href="/tasmy-termotransferowe/serie/5095-resin">Zebra 5095 Resin</a>, zakres pracy -40°C do +150°C. Ważne ograniczenie: efekt VOID jest funkcjonalny tylko do +40°C — powyżej materiał wytrzymuje, ale funkcja zabezpieczająca może się nie ujawnić. Dla aplikacji wymagających pełnego zniszczenia etykiety przy próbie zdjęcia: <a href="/etykiety-termotransferowe-zebra/specjalne/serie/8100t-z-destruct-pe">8100T Z-Destruct PE</a> — etykieta rozpadająca się na drobne kawałki.</p>`,
+    },
+    {
+      id: 'mit-trwalosci',
+      heading: 'Mit „etykiety termotransferowe są zawsze trwalsze" — kiedy nieprawda',
+      content: `<p>Powtarzane w branży „wybierz TT, na pewno będzie trwalsze" to <strong>częściowa prawda</strong>, która prowadzi do realnych, kosztownych pomyłek. Trzy sytuacje, w których termotransferowa nie jest automatycznie trwalsza:</p>
+<p><strong>Po pierwsze — termotransferowa na papierze może być mniej trwała niż termiczna z powłoką ochronną.</strong> Nadruk z taśmy woskowej na zwykłym papierze ściera się od tarcia. Etykieta DT z powłoką ochronną na tym samym papierze (np. Z-Select 2000D) trzyma się lepiej przez 12 miesięcy magazynowych.</p>
+<p><strong>Po drugie — etykiety termotransferowe foliowe to inny produkt niż termotransferowe papierowe.</strong> Mówiąc „termotransferowa", trzeba doprecyzować materiał. Folia poliestrowa (Z-Ultimate 3000T) z taśmą żywiczną 5095 daje pełną trwałość i certyfikat UL. Papierowa termotransferowa (Z-Perform 1000T) z taśmą woskową wystarcza dla zastosowań standardowych, ale daleko jej do trwałości foliowej. Cena też różni się kilkukrotnie.</p>
+<p><strong>Po trzecie — decydujący jest materiał i atest, nie sama technologia nadruku.</strong> Etykieta termiczna Z-Select 2000D z atestem BfR XIV jest bezpieczna do kontaktu z żywnością. Etykieta termotransferowa bez atestu — nie. Atest dotyczy konkretnej partii materiału, a nie technologii.</p>
+<blockquote><p>Wybór „DT czy TT" w oderwaniu od konkretnego materiału, atestu i zastosowania prowadzi do błędu w 30-40% przypadków, które obserwujemy u nowych klientów.</p></blockquote>`,
+    },
+    {
+      id: 'ktora-tasma',
+      heading: 'Etykieta termotransferowa — która taśma do której serii',
+      content: `<p>Dobranie taśmy do materiału etykiety jest równie ważne jak wybór samej etykiety. Trzy klasy taśm w katalogu TAKMA:</p>
+<p><strong>Taśma woskowa</strong> — do papieru niepowlekanego. Najtańsza, kompromis trwałości. Serie: <a href="/tasmy-termotransferowe/serie/1600-wax">Zebra 1600 Wax</a>, <a href="/tasmy-termotransferowe/serie/2100-wax">Zebra 2100 European Wax</a>, <a href="/tasmy-termotransferowe/serie/2300-wax">Zebra 2300 Wax</a>, <a href="/tasmy-termotransferowe/serie/5319-wax">Zebra 5319 Performance Wax</a>. Wszystkie z atestami spożywczymi (FDA, UE 1935/2004, LFGB).</p>
+<p><strong>Taśma woskowo-żywiczna</strong> — do papieru powlekanego i niektórych folii BOPP. Kompromis ceny i trwałości. Serie: <a href="/tasmy-termotransferowe/serie/3200-wax-resin">Zebra 3200 Premium Wax/Resin</a>, <a href="/tasmy-termotransferowe/serie/3300-wax-resin">Zebra 3300 Wax/Resin</a>, <a href="/tasmy-termotransferowe/serie/3400-wax-resin">Zebra 3400 Wax/Resin</a>, <a href="/tasmy-termotransferowe/serie/5555-wax-resin">Zebra 5555 Wax/Resin</a>. Taśma 3400 jest certyfikowana razem z 8000T Void Matte dla UL Recognized.</p>
+<p><strong>Taśma żywiczna</strong> — do folii poliestrowych (PET), poliolefinowych i syntetyków specjalistycznych. Najwyższa odporność chemiczna i temperaturowa. Serie: <a href="/tasmy-termotransferowe/serie/4800-resin">Zebra 4800 Resin</a>, <a href="/tasmy-termotransferowe/serie/5095-resin">Zebra 5095 Resin</a> (certyfikowana razem z Z-Ultimate 3000T White, Z-Ultimate 3000T Silver i 8000T Void Matte dla UL), <a href="/tasmy-termotransferowe/serie/5100-resin">Zebra 5100 Resin</a> oraz <a href="/tasmy-termotransferowe/serie/8000-chemresist">Zebra 8000 ChemResist</a> — odporna na agresywne chemikalia.</p>
+<p>Pełna tabela kompatybilności taśm i etykiet znajduje się na stronie każdej serii w sekcji „Polecane taśmy" / „Polecane etykiety", a cały asortyment taśm — w <a href="/tasmy-termotransferowe">katalogu taśm termotransferowych</a>.</p>`,
+    },
+    {
+      id: 'bledy',
+      heading: 'Pięć najczęstszych błędów przy wyborze',
+      content: `<p><strong>Błąd 1: „Wszędzie wybieram termiczne, bo tańsze".</strong> Tania etykieta termiczna w zastosowaniu wymagającym termotransferowej oznacza wymianę partii za 3 miesiące, gdy nadruk zblednie. Oszczędzasz 200 zł, tracisz 5 000 zł na reklamacjach i dodatkowej produkcji.</p>
+<p><strong>Błąd 2: „Wszędzie wybieram termotransferowe, bo trwalsze".</strong> Termotransferowa do paragonu z wagi sklepowej to absurd. Paragon żyje 3 minuty — kupujesz droższą etykietę i dodatkowo taśmę barwiącą.</p>
+<p><strong>Błąd 3: „Termiczne nie nadają się do żywności".</strong> Fałsz. Z-Select 2000D i Z-Perform 1000D mają komplet atestów żywnościowych (BfR XIV, FDA 175.105, EC 1935/2004, EU 10/2011) i są bezpieczne do kontaktu z żywnością suchą i wilgotną nieoleistą. Decyduje atest konkretnej partii, nie sama technologia. Uwaga: PolyPro 4000D ma tylko FDA 175.105 (pośredni kontakt) — jeśli potrzebujesz BfR XIV, wybierz Z-Select 2000D.</p>
+<p><strong>Błąd 4: „Termotransferowa to ten sam rozmiar gilzy co termiczna".</strong> Nie zawsze. Etykiety przemysłowe termotransferowe często mają gilzę 76 mm (3″), a drukarka biurkowa obsługuje tylko 25 mm (1″). Sprawdź drukarkę zanim zamówisz dużą rolkę.</p>
+<p><strong>Błąd 5: „Termotransferowa to ten sam rozmiar etykiety co termiczna".</strong> Lista standardowych rozmiarów dla DT i TT pokrywa się częściowo, ale nie w pełni. Niektóre rozmiary istnieją tylko w jednej technologii — sprawdź katalog zanim zaprojektujesz układ wydruku.</p>`,
+    },
+    {
+      id: 'drukarka-dt-tt',
+      heading: 'Drukarka do DT, drukarka do TT — szybkie przypomnienie',
+      content: `<p>Etykieta termiczna idzie do <strong>drukarki termicznej</strong> (obsługującej tylko DT) lub <strong>drukarki łączącej DT i TT</strong>. Modele Zebra ZD230d, ZD421d, ZD611d obsługują wyłącznie DT. Modele z literką „T" w nazwie (ZD421T, ZT231T, ZT411T) obsługują obie technologie.</p>
+<p>Etykieta termotransferowa wymaga <strong>drukarki termotransferowej</strong> lub <strong>łączącej</strong>. Drukarka wyłącznie DT nie zadrukuje etykiety termotransferowej, bo nie ma mechanizmu prowadzenia taśmy barwiącej.</p>
+<p>Pełny przewodnik wyboru drukarki znajdziesz w artykule <a href="/poradnik/drukarka-termiczna-vs-termotransferowa">Drukarka termiczna czy termotransferowa — co wybrać</a>.</p>`,
+    },
+  ],
+
+  faq: [
+    {
+      question: 'Czym dokładnie różni się druk termiczny od termotransferowego?',
+      answer: 'Druk termiczny powstaje w samej etykiecie pod wpływem ciepła głowicy — etykieta jest powlekana warstwą reagującą na ciepło. Druk termotransferowy wymaga taśmy barwiącej: głowica topi barwnik z taśmy i przenosi go na etykietę. Pierwsza technologia jest tańsza w eksploatacji, ale daje nadruk mniej trwały. Druga droższa, ale trwalsza.',
+    },
+    {
+      question: 'Czy etykiety termiczne wymagają taśmy barwiącej?',
+      answer: 'Nie. To główna zaleta technologii DT — drukarka pracuje bez taśmy. Etykiety termotransferowe natomiast wymagają taśmy dopasowanej do materiału etykiety: woskowa do papieru niepowlekanego, woskowo-żywiczna do papieru powlekanego, żywiczna do folii poliestrowej.',
+    },
+    {
+      question: 'Jak długo trzyma nadruk na etykiecie termicznej?',
+      answer: 'Zależy od materiału i warunków. Z-Perform 1000D (papier niepowlekany) — do 12 miesięcy w pomieszczeniu. Z-Select 2000D (papier powlekany z powłoką ochronną) — do roku, z odpornością na wilgoć i oleje. W samochodzie kuriera latem (powyżej +80°C) — kilka tygodni. W pełnym słońcu na zewnątrz — 2-6 tygodni dla papierów termoczułych. Termotransferowe na folii poliestrowej z taśmą żywiczną — wiele lat (etykiety z certyfikatem UL wytrzymują tak długo, jak długo istnieje produkt).',
+    },
+    {
+      question: 'Czy etykiety termotransferowe są lepsze niż termiczne?',
+      answer: 'Zazwyczaj trwalsze, ale nie zawsze lepsze. Termotransferowa jest droższa w eksploatacji o koszt taśmy barwiącej. Dla wysyłek kurierskich, paragonów, etykiet wagowych i magazynowych krótkoterminowych termiczna jest bezpieczniejszym wyborem ekonomicznie. Dla maszyn, farmaceutyków, chemii morskiej i eksportu na rynki UL — termotransferowa.',
+    },
+    {
+      question: 'Czy mogę używać etykiet termicznych w drukarce termotransferowej?',
+      answer: 'Technicznie tak — drukarka łącząca DT i TT zadrukuje obie. Jeśli masz drukarkę termotransferową bez trybu DT, włącz tryb DT w sterowniku (większość drukarek Zebra ma tę opcję) i nie zakładaj taśmy. Drukarka termotransferowa pracująca w trybie TT bez taśmy może uszkodzić głowicę.',
+    },
+    {
+      question: 'Czy etykiety termiczne nadają się do żywności?',
+      answer: 'Tak, pod warunkiem właściwego atestu. Z-Select 2000D ma komplet atestów: BfR XIV (Niemcy — wymóg sieci Aldi, Lidl, Rewe), FDA 175.105, EC 1935/2004, EU 10/2011. Z-Perform 1000D ma identyczny komplet. Obie są bezpieczne do kontaktu z żywnością suchą i wilgotną nieoleistą. PolyPro 4000D ma tylko FDA 175.105 (pośredni kontakt) — jeśli potrzebujesz BfR XIV, wybierz Z-Select 2000D.',
+    },
+    {
+      question: 'Co to jest atest BS5609 i kiedy go potrzebuję?',
+      answer: 'BS5609 to brytyjska norma dla etykiet na opakowaniach z substancjami niebezpiecznymi transportowanymi drogą morską (kod IMDG, etykiety GHS). Składa się z trzech sekcji: Sekcja 1 (wymagania ogólne), Sekcja 2 (test materiału — 3 miesiące w słonej wodzie, UV, abrazja), Sekcja 3 (test druku z konkretną taśmą). W polskim katalogu TAKMA jedyna etykieta z tym atestem to PolyO 3100T — wymaga taśmy żywicznej Zebra 4800 lub 5095, a w lżejszych aplikacjach wystarczy Zebra 3200.',
+    },
+  ],
+
+  relatedLinks: [
+    { title: 'Etykiety termiczne Zebra — katalog', href: '/etykiety-termiczne-zebra' },
+    { title: 'Etykiety termotransferowe Zebra — katalog', href: '/etykiety-termotransferowe-zebra' },
+    { title: 'Taśmy termotransferowe — katalog', href: '/tasmy-termotransferowe' },
+    { title: 'Z-Perform 1000D — etykiety kurierskie', href: '/etykiety-termiczne-zebra/serie/z-perform-1000d' },
+    { title: 'Z-Select 2000D — etykiety spożywcze', href: '/etykiety-termiczne-zebra/serie/z-select-2000d' },
+    { title: 'Z-Ultimate 3000T White — etykiety UL', href: '/etykiety-termotransferowe-zebra/foliowe/serie/z-ultimate-3000t-white' },
+    { title: 'Jak dobrać taśmę termotransferową?', href: '/poradnik/jak-dobrac-tasme-termotransferowa' },
+    { title: 'Drukarka termiczna czy termotransferowa?', href: '/poradnik/drukarka-termiczna-vs-termotransferowa' },
+  ],
+},
 ]
 
 // Helper functions

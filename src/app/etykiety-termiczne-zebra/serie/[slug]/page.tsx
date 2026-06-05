@@ -8,6 +8,7 @@ import {
   type ThermalLabelSeries,
 } from '@/data/thermal-label-series'
 import { getProductBySlug } from '@/data/products'
+import { getSeriesStock, minAvailablePrice } from '@/lib/series-price'
 import {
   ChevronRightIcon,
   CheckIcon,
@@ -21,6 +22,9 @@ import CommonDefinitionsSchema from '@/components/schemas/CommonDefinitions'
 import SeriesVariantsTable from './SeriesVariantsTable'
 
 const siteUrl = 'https://www.takma.com.pl'
+
+// ISR — odświeżaj cenę „od X zł" (StockCache) co 6h, zgodnie z cyklem crona stocku.
+export const revalidate = 21600
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -58,6 +62,12 @@ export default async function SeriesPage({ params }: PageProps) {
   const product = getProductBySlug(series.productId)
   const variantCount = product?.variants?.length ?? 0
 
+  // Stock żywy ze StockCache (jedno zapytanie): zasila tabelę wariantów po stronie serwera
+  // ORAZ wyznacza cenę „od X zł" (nagłówek + schema). Fallback: statyczny priceFrom.
+  // Dzięki temu cena widoczna, schema Google i tabela są zgodne i samonaprawialne (ISR).
+  const seriesStock = await getSeriesStock(product?.variants?.map(v => v.partNumber) ?? [])
+  const priceFrom = minAvailablePrice(seriesStock) ?? series.priceFrom
+
   // Schema — Article + BreadcrumbList + FAQPage
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -89,12 +99,12 @@ export default async function SeriesPage({ params }: PageProps) {
     brand: { '@type': 'Brand', name: 'Zebra Technologies' },
     category: 'Etykiety termiczne',
     ...(product?.images?.[0] ? { image: product.images[0] } : {}),
-    ...(series.priceFrom
+    ...(priceFrom
       ? {
           offers: {
             '@type': 'AggregateOffer',
             priceCurrency: 'PLN',
-            lowPrice: series.priceFrom,
+            lowPrice: priceFrom,
             priceValidUntil,
             offerCount: variantCount || undefined,
             seller: { '@type': 'Organization', name: 'TAKMA', url: siteUrl },
@@ -198,6 +208,7 @@ export default async function SeriesPage({ params }: PageProps) {
             productImage={product.images?.[0]}
             seriesTitle={series.title}
             manufacturerName="Zebra"
+            initialStock={seriesStock}
           />
         </section>
       )}
@@ -403,7 +414,7 @@ export default async function SeriesPage({ params }: PageProps) {
                 Gotowy zamówić {series.title}?
               </h2>
               <p className="text-gray-600 text-sm">
-                {variantCount} wariantów rozmiarowych od {series.priceFrom.toLocaleString('pl-PL', { maximumFractionDigits: 0 })} zł netto.
+                {variantCount} wariantów rozmiarowych od {priceFrom.toLocaleString('pl-PL', { maximumFractionDigits: 0 })} zł netto.
                 Doradzimy w doborze i wyślemy próbki.
               </p>
             </div>
