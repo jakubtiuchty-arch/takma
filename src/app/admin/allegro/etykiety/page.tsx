@@ -20,7 +20,7 @@ export default async function AllegroEtykietyPage() {
         </Link>
       </div>
       <p className="text-sm text-gray-500 mb-5">
-        Środowisko: {ALLEGRO_ENV}. Kategoria 17255 „Etykiety, naklejki" (jak taśmy — bez liczby etykiet na rolce).
+        Środowisko: {ALLEGRO_ENV}. Kategoria 17255 „Etykiety, naklejki” (jak taśmy — bez liczby etykiet na rolce).
         Szkic (INACTIVE), aktywacja w panelu. Cena Allegro = cena sklepu × 1,12 × 1,23 (VAT).
       </p>
 
