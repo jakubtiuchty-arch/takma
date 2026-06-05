@@ -13623,6 +13623,8 @@ export const guides: Guide[] = [
   publishedAt: '2026-06-04',
   updatedAt: '2026-06-04',
   readTime: '11 min',
+  heroImage: '/images/guides/etykiety-termiczne-czy-termotransferowe-przewodnik-2026.webp',
+  heroImageAlt: 'Porównanie etykiety termicznej Z-Perform 1000D na paczce kurierskiej i termotransferowej Z-Ultimate 3000T na części przemysłowej',
 
   sections: [
     {
