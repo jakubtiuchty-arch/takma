@@ -7248,7 +7248,7 @@ export const guides: Guide[] = [
   </tbody>
 </table>
 
-<p>Materiały dostępne są w rozmiarach standardowych (ZipShip — wysyłka z magazynu Zebra w 24-48h) oraz na wymiar (EaziPrice — produkcja na zamówienie). Dla mikroetykiet mniejszych niż 25 mm typowo potrzebna jest wymiarówka EaziPrice, ponieważ standardowe rozmiary ZipShip zaczynają się od 25 x 13 mm.</p>
+<p>Materiały dostępne są w rozmiarach standardowych (wysyłka z magazynu w 24-48h) oraz na wymiar (produkcja na zamówienie). Dla mikroetykiet mniejszych niż 25 mm typowo potrzebna jest wymiarówka na zamówienie, ponieważ standardowe rozmiary z magazynu zaczynają się od 25 x 13 mm.</p>
 
 <p>Więcej o różnicach między etykietami termicznymi a termotransferowymi przeczytasz w naszym <a href="/poradnik/drukarka-termiczna-vs-termotransferowa">porównaniu technologii druku</a>. Pełną ofertę etykiet termotransferowych znajdziesz w kategorii <a href="/termotransferowe-drukarki-etykiet">drukarki termotransferowe</a>.</p>`
     },

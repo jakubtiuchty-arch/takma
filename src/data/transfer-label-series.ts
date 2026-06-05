@@ -156,9 +156,9 @@ export const transferLabelSeries: TransferLabelSeries[] = [
     priceFrom: 151.25,
     accent: '#2563EB',
     seoTitle: 'Zebra Z-Perform 1000T — papier TT do magazynu i wysyłki',
-    seoDescription: 'Zebra Z-Perform 1000T — ekonomiczny papier termotransferowy z atestami BfR XIV, EC 1935/2004 i FDA 175.105. 458 wariantów od 151 zł netto, ZipShip od ręki.',
+    seoDescription: 'Zebra Z-Perform 1000T — ekonomiczny papier termotransferowy z atestami BfR XIV, EC 1935/2004 i FDA 175.105. 458 wariantów od 151 zł netto, dostępne od ręki.',
     h1: 'Etykiety termotransferowe Zebra Z-Perform 1000T',
-    heroIntro: 'Z-Perform 1000T to **najczęściej kupowana papierowa etykieta termotransferowa Zebra** — niepowlekane matowe etykiety ze superkalandrowanego papieru **67 μm** z permanentnym klejem akrylowym **12 μm** o **wysokiej początkowej przyczepności **, zwłaszcza do tektury falistej. Drukujesz z taśmą **wosk Zebra 2300 lub 2100** w dowolnej drukarce TT Zebra. Komplet atestów żywnościowych UE i USA: **EC 1935/2004, EU 10/2011, BfR XIV** (suche i wilgotne nietłuste) oraz **FDA 175.105**. **BPA-free**, **latex-free**. Trwałość indoor **1 rok+**, zakres pracy **-20°C do +80°C**. Dostępny w programie **Zebra ZipShip** (od ręki z magazynu).',
+    heroIntro: 'Z-Perform 1000T to **najczęściej kupowana papierowa etykieta termotransferowa Zebra** — niepowlekane matowe etykiety ze superkalandrowanego papieru **67 μm** z permanentnym klejem akrylowym **12 μm** o **wysokiej początkowej przyczepności **, zwłaszcza do tektury falistej. Drukujesz z taśmą **wosk Zebra 2300 lub 2100** w dowolnej drukarce TT Zebra. Komplet atestów żywnościowych UE i USA: **EC 1935/2004, EU 10/2011, BfR XIV** (suche i wilgotne nietłuste) oraz **FDA 175.105**. **BPA-free**, **latex-free**. Trwałość indoor **1 rok+**, zakres pracy **-20°C do +80°C**. Dostępne od ręki z magazynu europejskiego.',
     heroImage: '/images/etykiety-zebra-z-perform-1000t.png',
     keyHighlights: [
       'Bestseller TT Zebra — najczęściej kupowana papierowa etykieta TT w polskim B2B',
@@ -169,13 +169,13 @@ export const transferLabelSeries: TransferLabelSeries[] = [
       'BPA-free i latex-free — bezpieczne dla healthcare i farmacji',
       'Trwałość indoor **1 rok+**, zakres pracy **-20°C do +80°C**',
       '458 wariantów (32×25 do 152×210 mm), gilze 25/76 mm i Fanfold',
-      'Dostępny w **Zebra ZipShip** (od ręki) i programie EaziPrice',
+      'Dostępne od ręki z magazynu europejskiego; rozmiary na wymiar na zamówienie',
     ],
     sections: [
       {
         heading: 'Czym jest Z-Perform 1000T?',
         content:
-          'Z-Perform 1000T to **ekonomiczna papierowa etykieta termotransferowa Zebra** — odpowiednik bestsellerowego Z-Perform 1000D, ale do druku z taśmą barwiącą (Thermal Transfer), a nie bezpośredniego (Direct Thermal). Różnica jest kluczowa: nadruk termotransferowy jest **trwały, odporny na ścieranie i nie blaknie** z czasem ani od ciepła — w odróżnieniu od termicznego, który po kilkunastu miesiącach ciemnieje.\n\nMateriał to **superkalandrowany niepowlekany matowy papier 67 μm** (proces walcowania pod ciśnieniem ujednolicający strukturę powierzchni — dla wierniejszego druku) z **permanentnym klejem akrylowym 12 μm** o wysokiej początkowej przyczepności . Doskonale trzyma się kartonów, papieru tekturowego, palet, opakowań foliowych. Łączna grubość 130 μm (±10%).\n\nTo **najczęściej kupowana etykieta termotransferowa w Zebra** dostępny w programie **ZipShip** (od ręki z magazynu europejskiego), z 458 wariantami rozmiarowymi pokrywającymi praktycznie każde standardowe zastosowanie magazynowe i wysyłkowe.',
+          'Z-Perform 1000T to **ekonomiczna papierowa etykieta termotransferowa Zebra** — odpowiednik bestsellerowego Z-Perform 1000D, ale do druku z taśmą barwiącą (Thermal Transfer), a nie bezpośredniego (Direct Thermal). Różnica jest kluczowa: nadruk termotransferowy jest **trwały, odporny na ścieranie i nie blaknie** z czasem ani od ciepła — w odróżnieniu od termicznego, który po kilkunastu miesiącach ciemnieje.\n\nMateriał to **superkalandrowany niepowlekany matowy papier 67 μm** (proces walcowania pod ciśnieniem ujednolicający strukturę powierzchni — dla wierniejszego druku) z **permanentnym klejem akrylowym 12 μm** o wysokiej początkowej przyczepności . Doskonale trzyma się kartonów, papieru tekturowego, palet, opakowań foliowych. Łączna grubość 130 μm (±10%).\n\nTo **najczęściej kupowana etykieta termotransferowa w Zebra**, dostępna od ręki z magazynu europejskiego, z 458 wariantami rozmiarowymi pokrywającymi praktycznie każde standardowe zastosowanie magazynowe i wysyłkowe.',
       },
       {
         heading: 'Konstrukcja i parametry techniczne',
@@ -217,7 +217,7 @@ export const transferLabelSeries: TransferLabelSeries[] = [
       { label: 'Atest żywnościowy (UE)', value: 'EC 1935/2004, EU 10/2011, BfR XIV (suche, wilgotne nietłuste)' },
       { label: 'Atest żywnościowy (US)', value: 'FDA 175.105 (suche / przez warstwę barierową)' },
       { label: 'BPA / lateks', value: 'BPA-free, latex-free' },
-      { label: 'Program Zebra', value: 'ZipShip (od ręki) + EaziPrice' },
+      { label: 'Dostępność', value: 'Od ręki z magazynu europejskiego' },
       { label: 'Numery próbek', value: 'SAMPLE5147 (industrial), SAMPLE5147-D (do drukarek biurkowych)' },
       { label: 'Gilze (rdzeń)', value: '25 mm, 76 mm, Fanfold (bez gilzy)' },
       { label: 'Liczba wariantów', value: '458 (od 32×25 do 152×210 mm)' },
@@ -273,7 +273,6 @@ export const transferLabelSeries: TransferLabelSeries[] = [
       { question: 'W jakich temperaturach mogę aplikować i używać?', answer: 'Minimalna temperatura aplikacji: **0°C** (poniżej klej akrylowy nie aktywuje się prawidłowo). Zakres temperatury pracy po naklejeniu i 24-godzinnej aklimatyzacji: **-20°C do +80°C**. Do aplikacji w chłodni (od -15°C) wybierz **Z-Perform 1000T Removable** (specjalnie odporny na zimno klej). Do mroźni głębokich (od -40°C) wybierz **8000T All-Temp**.' },
       { question: 'Jak długo etykieta zachowuje czytelność?', answer: '**W pomieszczeniach 1 rok i więcej** — czytelność nadruku po prawidłowej aplikacji i 24h aklimatyzacji. Po 1 roku zarówno klej jak i nadruk pozostają zwykle czytelne, ale Zebra nie gwarantuje dłuższego okresu. Do etykiet które muszą żyć **>2 lata** wybierz folię (Z-Ultimate 3000T White lub PolyPro 3000T).' },
       { question: 'Ile wariantów rozmiarowych jest dostępnych?', answer: '**458 wariantów** — od 32×25 mm do 152×210 mm, w rdzeniu (gilzie) **25 mm**, **76 mm** oraz w wersji **Fanfold** (składanka bez gilzy do masowego druku w drukarkach przemysłowych). Użyj filtrów rozmiaru i gilzy na liście wariantów, żeby zawęzić wybór.' },
-      { question: 'Co to jest program Zebra ZipShip?', answer: '**ZipShip to program Zebry oferujący szybką dostawę** najpopularniejszych etykiet z magazynu europejskiego — od ręki, bez czekania na produkcję na zamówienie. Z-Perform 1000T jest oznaczony jako "Available From stock on ZipShip" — większość standardowych rozmiarów dociera w 1-3 dni robocze. Mniej popularne rozmiary lub niestandardowe konfiguracje to 5-10 dni (sprowadzane z EU). EaziPrice to z kolei program **stałych, transparentnych cen** dla popularnych wariantów.' },
       { question: 'Jak przechowywać rolki przed użyciem?', answer: 'Optymalnie: **20–25°C, wilgotność względna 40–50%**, w oryginalnym opakowaniu, z dala od bezpośredniego światła słonecznego. W tych warunkach materiał zachowuje pełną wydajność przez **1 rok** od daty produkcji. Przechowywanie w wysokiej wilgotności (>70%) lub temperaturze >30°C skraca trwałość kleju i może powodować zwijanie rolki.' },
       { question: 'Czy mogę zamówić własny rozmiar lub nadruk?', answer: 'Tak. Zebra produkuje Z-Perform 1000T **w praktycznie dowolnych rozmiarach, kształtach i konfiguracjach** — od 25×10 mm do 200×300 mm, prostokątne, owalne, perforowane. Drukarki fleksograficzne Zebry umożliwiają dodanie **wstępnie nadrukowanych elementów** (logo, kolory, ramki) na masowych zamówieniach. Skontaktuj się z TAKMA — przygotujemy wycenę dla nietypowych rozmiarów i nadruków pre-printed.' },
       { question: 'Co znaczy "superkalandrowany papier"?', answer: 'Superkalandrowanie to **proces walcowania papieru pod wysokim ciśnieniem i temperaturą**, który ujednolica strukturę powierzchni — zmniejsza chropowatość i zwiększa gęstość. W praktyce papier superkalandrowany przyjmuje wierniej nadruk z taśmy termotransferowej, daje ostrzejsze krawędzie liter i kodów niż zwykły papier offsetowy. To dlatego nawet bez powłoki top-coat Z-Perform 1000T zapewnia czytelność druku akceptowalną do większości zastosowań przemysłowych.' },
@@ -457,13 +456,13 @@ export const transferLabelSeries: TransferLabelSeries[] = [
       'Komplet atestów żywnościowych: EC 1935/2004, EU 10/2011, BfR XIV (UE), FDA 175.105 (USA)',
       'Bez bisfenolu A i bez lateksu — bezpieczna dla aptek, szpitali i opakowań żywności',
       'Trwałość w pomieszczeniach **1 rok i więcej**, zakres pracy **-20°C do +80°C**',
-      '46 wariantów rozmiarowych, gilze 25 mm i 76 mm, dostępna od ręki z magazynu europejskiego (program Zebra ZipShip)',
+      '46 wariantów rozmiarowych, gilze 25 mm i 76 mm, dostępna od ręki z magazynu europejskiego',
     ],
     sections: [
       {
         heading: 'Czym jest Z-Select 2000T?',
         content:
-          'Z-Select 2000T to **premium papierowa etykieta termotransferowa Zebra z ochronną powłoką top-coat** na wierzchu papieru. Powłoka to cienka warstwa polimerowa, która tworzy ultra-gładką powierzchnię — przyjmuje nadruk z taśmy precyzyjniej niż papier niepowlekany, krawędzie kodów i znaków są ostre, a poniżej widać wyraźną przewagę nad ekonomiczną serią Z-Perform 1000T.\n\nMateriał jest **dostępny w programie Zebra ZipShip** (od ręki z magazynu europejskiego). 46 wariantów rozmiarowych w rdzeniu (gilzie) 25 mm i 76 mm. To wybór tam, gdzie **jakość nadruku, niezawodność skanowania i odporność etykiety** są ważniejsze niż najniższa cena za rolkę.',
+          'Z-Select 2000T to **premium papierowa etykieta termotransferowa Zebra z ochronną powłoką top-coat** na wierzchu papieru. Powłoka to cienka warstwa polimerowa, która tworzy ultra-gładką powierzchnię — przyjmuje nadruk z taśmy precyzyjniej niż papier niepowlekany, krawędzie kodów i znaków są ostre, a poniżej widać wyraźną przewagę nad ekonomiczną serią Z-Perform 1000T.\n\nMateriał jest **dostępny od ręki z magazynu europejskiego**. 46 wariantów rozmiarowych w rdzeniu (gilzie) 25 mm i 76 mm. To wybór tam, gdzie **jakość nadruku, niezawodność skanowania i odporność etykiety** są ważniejsze niż najniższa cena za rolkę.',
       },
       {
         heading: 'Cztery korzyści powłoki top-coat względem papieru niepowlekanego',
@@ -512,7 +511,7 @@ export const transferLabelSeries: TransferLabelSeries[] = [
       { label: 'Atest żywnościowy (UE)', value: 'EC 1935/2004, EU 10/2011, BfR XIV (suche, wilgotne nietłuste)' },
       { label: 'Atest żywnościowy (USA)', value: 'FDA 175.105 (suche lub przez warstwę barierową)' },
       { label: 'Bezpieczeństwo materiału', value: 'Bez bisfenolu A (BPA-free), bez lateksu' },
-      { label: 'Program dystrybucji Zebra', value: 'ZipShip (od ręki z magazynu europejskiego)' },
+      { label: 'Dostępność', value: 'Od ręki z magazynu europejskiego' },
       { label: 'Numer próbki', value: 'SAMPLE5257' },
       { label: 'Rdzeń (gilza)', value: '25 mm, 76 mm' },
       { label: 'Liczba wariantów', value: '46' },
@@ -1067,7 +1066,7 @@ export const transferLabelSeries: TransferLabelSeries[] = [
       'Dobra odporność na rozdarcie i wodę',
       'Trwałość: **w pomieszczeniach 1 rok i więcej, na zewnątrz do 1 roku** (rośliny, ogrodnictwo, DIY)',
       'Zakres pracy -20°C do +80°C, minimalna temperatura aplikacji 5°C',
-      '9 wariantów, dostępna w programie Zebra ZipShip z magazynu europejskiego',
+      '9 wariantów, dostępna od ręki z magazynu europejskiego',
     ],
     sections: [
       {
@@ -1984,7 +1983,7 @@ export const transferLabelSeries: TransferLabelSeries[] = [
     seoTitle: 'Zebra 8000T All-Temp — papier do mroźni głębokich -54°C',
     seoDescription: 'Papier TT z klejem all-temperature: aplikacja od -29°C, praca -54°C do +93°C. Chłodnie, mroźnie, etykiety procesowe ze zmienną temp. 8 wariantów od 920 zł.',
     h1: 'Etykiety termotransferowe Zebra 8000T All-Temp',
-    heroIntro: '8000T All-Temp to **papierowa etykieta termotransferowa Zebra** z ultra-gładkim białym licem (top-coat) i **specjalnym klejem all-temperature** — można naklejać już w temperaturze **-29°C** (bezpośrednio na zmrożone opakowania), a po aplikacji etykieta pracuje w zakresie **-54°C do +93°C**. To **najszerszy zakres temperatury wśród papierowych etykiet Zebra** — pokrywa mroźnie głębokie, chłodnie, magazyny ze zmienną temperaturą oraz procesy Work-in-Progress. Druk taśmą woskową (Zebra 2300/2100) lub wosk-żywicową (3200/3400). Dostępne na **ZipShip** — ekspresowa wysyłka z magazynu EU Zebry.',
+    heroIntro: '8000T All-Temp to **papierowa etykieta termotransferowa Zebra** z ultra-gładkim białym licem (top-coat) i **specjalnym klejem all-temperature** — można naklejać już w temperaturze **-29°C** (bezpośrednio na zmrożone opakowania), a po aplikacji etykieta pracuje w zakresie **-54°C do +93°C**. To **najszerszy zakres temperatury wśród papierowych etykiet Zebra** — pokrywa mroźnie głębokie, chłodnie, magazyny ze zmienną temperaturą oraz procesy Work-in-Progress. Druk taśmą woskową (Zebra 2300/2100) lub wosk-żywicową (3200/3400). Dostępne od ręki — ekspresowa wysyłka z magazynu europejskiego.',
     heroImage: '/images/etykiety-termotransferowe-zebra-8000t-all-temp.png',
     heroImagePosition: '70% 40%',
     keyHighlights: [
@@ -1997,7 +1996,7 @@ export const transferLabelSeries: TransferLabelSeries[] = [
       'Znakomita przyczepność do szerokiej gamy powierzchni (kartony, plastiki, drewno, metal)',
       'Bez bisfenolu A (BPA-free) i bez lateksu — bezpieczne dla branży spożywczej i farmaceutycznej',
       'Trwałość w pomieszczeniach **1 rok i więcej**',
-      'Dostępne na ZipShip — ekspresowa wysyłka z magazynu EU',
+      'Dostępne od ręki — ekspresowa wysyłka z magazynu europejskiego',
     ],
     sections: [
       {
@@ -2041,7 +2040,7 @@ export const transferLabelSeries: TransferLabelSeries[] = [
       { label: 'Dwell time', value: '24 godziny — czas na pełne związanie kleju' },
       { label: 'Zalecane taśmy', value: 'Wosk: Zebra 2300, 2100 / Wosk-żywica: Zebra 3200, 3400' },
       { label: 'Zalecane drukarki', value: 'Zebra P4T (mobilna), biurkowe, mid-range, przemysłowe' },
-      { label: 'Dostępność ZipShip', value: 'Tak — ekspresowa wysyłka z magazynu EU Zebry' },
+      { label: 'Dostępność', value: 'Od ręki — ekspresowa wysyłka z magazynu europejskiego' },
       { label: 'Cechy lica', value: 'Doskonały obraz dla obróconych kodów kreskowych, grafiki i drobnych znaków nawet przy wysokich prędkościach druku' },
       { label: 'Przyczepność', value: 'Znakomita przyczepność do szerokiej gamy powierzchni — kartony, plastiki sztywne, drewno, metal' },
       { label: 'Atest BPA', value: 'Bez bisfenolu A (BPA-free)' },
@@ -2102,7 +2101,7 @@ export const transferLabelSeries: TransferLabelSeries[] = [
       { question: 'Czy ma atesty żywnościowe (BfR, FDA)?', answer: 'Materiał ma tylko **BPA-free i latex-free** — bez specyficznych atestów BfR czy FDA dla kontaktu z żywnością. To znaczy: **8000T All-Temp nadaje się na opakowania zbiorcze** (kartony, palety) w przemyśle spożywczym, ale **NIE na opakowania w bezpośrednim kontakcie z żywnością**. Dla bezpośredniego kontaktu wybierz **Z-Perform 1000T** (BfR XXI), **Z-Select 2000T** (BfR XXI) lub folie z atestami spożywczymi (PolyE 3100T, PolyPro 3000T).' },
       { question: 'Czy etykieta nadaje się do Work-in-Progress?', answer: 'Tak — **Work-in-Progress (WIP) ze zmiennymi temperaturami** to jedno z sześciu głównych zastosowań tej serii. Klej all-temperature wytrzymuje wahania temperatury podczas procesu produkcyjnego: produkt przechodzi przez halę produkcyjną (+20°C), chłodnię (+4°C), schłodzenie do -20°C, transport mroźniczy do -30°C, magazyn docelowy. Etykieta WIP musi przetrwać wszystkie te etapy — All-Temp jest do tego stworzony.' },
       { question: 'Jakie są wymiary i grubość materiału?', answer: 'Lico: ultra-gładki biały papier z powłoką top-coat **74 μm**. Klej akrylowy all-temperature **18 μm**. Podkład kraft półbielony **64 μm**. **Łączna grubość 156 μm (±10%)**. Wykończenie: **matowe (matte)** — bez połysku, bez refleksów świetlnych zakłócających odczyt kodów przez skanery. Standardowy rdzeń (gilza) **76 mm** dla drukarek przemysłowych (ZT411, ZT421). Dla drukarek biurkowych dobierz wariant z gilzą 25 mm po wycenie indywidualnej.' },
-      { question: 'Czy mogę zamówić próbki?', answer: 'Tak — Zebra udostępnia próbną rolkę **SAMPLE5024** do testów w docelowych warunkach (chłodnia, mroźnia, proces WIP). Skontaktuj się z TAKMA — pomożemy zamówić próbkę i dobrać taśmę (wosk 2100/2300 lub wosk-żywica 3200/3400) do Twojej drukarki. **Próbka jest szczególnie zalecana** dla aplikacji w mroźniach głębokich (sprawdź siłę kleju w Twoich warunkach przed dużym zamówieniem). 8000T All-Temp jest dostępne na **ZipShip** — ekspresowa wysyłka z magazynu EU Zebry.' },
+      { question: 'Czy mogę zamówić próbki?', answer: 'Tak — Zebra udostępnia próbną rolkę **SAMPLE5024** do testów w docelowych warunkach (chłodnia, mroźnia, proces WIP). Skontaktuj się z TAKMA — pomożemy zamówić próbkę i dobrać taśmę (wosk 2100/2300 lub wosk-żywica 3200/3400) do Twojej drukarki. **Próbka jest szczególnie zalecana** dla aplikacji w mroźniach głębokich (sprawdź siłę kleju w Twoich warunkach przed dużym zamówieniem). 8000T All-Temp jest dostępne od ręki — ekspresowa wysyłka z magazynu europejskiego.' },
     ],
     recommendedRibbons: {
       waxResin: ['Zebra 2100 European Wax', 'Zebra 3400 Wax/Resin'],

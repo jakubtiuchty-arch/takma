@@ -210,7 +210,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
       {
         heading: 'Próbki i testowanie przed zakupem',
         content:
-          'Zebra udostępnia oficjalne rolki próbne Z-Select 2000D: **SAMPLE5311** (mid-range/industrial) lub **SAMPLE5311-D** (desktop). Numer materiału (Raw Material): **05311RM**. Dostępna w programie Zebra ZipShip (minimum zamówienia: 1 rolka). W TAKMA pomagamy dobrać próbkę pod konkretną drukarkę i powierzchnię docelową — zalecamy 24-godzinny test przyczepności w realnych warunkach operacyjnych przed dużym zamówieniem.',
+          'Zebra udostępnia oficjalne rolki próbne Z-Select 2000D: **SAMPLE5311** (mid-range/industrial) lub **SAMPLE5311-D** (desktop). Numer materiału (Raw Material): **05311RM** (minimum zamówienia: 1 rolka). W TAKMA pomagamy dobrać próbkę pod konkretną drukarkę i powierzchnię docelową — zalecamy 24-godzinny test przyczepności w realnych warunkach operacyjnych przed dużym zamówieniem.',
       },
     ],
     techSpecs: [
@@ -1145,7 +1145,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
       {
         heading: 'Próbki przed zakupem',
         content:
-          'Numery próbek Zebra dostępne w programie ZipShip:\n\n- **SAMPLE5648** — dla drukarek mid-range/industrial/high-performance\n- **SAMPLE5648-D** — dla drukarek desktopowych\n\nW TAKMA pomagamy dobrać próbkę pod konkretną drukarkę i powierzchnię docelową — zalecamy 24-godzinny test przyczepności i odklejenia w realnych warunkach operacyjnych przed dużym zamówieniem.',
+          'Numery próbek Zebra:\n\n- **SAMPLE5648** — dla drukarek mid-range/industrial/high-performance\n- **SAMPLE5648-D** — dla drukarek desktopowych\n\nW TAKMA pomagamy dobrać próbkę pod konkretną drukarkę i powierzchnię docelową — zalecamy 24-godzinny test przyczepności i odklejenia w realnych warunkach operacyjnych przed dużym zamówieniem.',
       },
     ],
     techSpecs: [
@@ -1300,7 +1300,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
       {
         heading: 'Próbki przed zakupem',
         content:
-          'Numer próbki Zebra: **SAMPLE40762** (dostępna w programie ZipShip). W TAKMA pomagamy dobrać próbkę pod Twoją drukarkę i powierzchnię docelową — zalecamy test przyczepności i odklejenia w realnych warunkach przed dużym zamówieniem.',
+          'Numer próbki Zebra: **SAMPLE40762**. W TAKMA pomagamy dobrać próbkę pod Twoją drukarkę i powierzchnię docelową — zalecamy test przyczepności i odklejenia w realnych warunkach przed dużym zamówieniem.',
       },
     ],
     techSpecs: [
@@ -1441,7 +1441,7 @@ export const thermalLabelSeries: ThermalLabelSeries[] = [
       {
         heading: 'Próbki przed zakupem',
         content:
-          'Numer próbki Zebra: **SAMPLE30818** (dostępna w programie ZipShip). W TAKMA pomagamy dobrać próbkę pod Twoją drukarkę i zastosowanie — szczególnie polecane dla aplikacji archiwalnych (testy fading w realnym świetle).',
+          'Numer próbki Zebra: **SAMPLE30818**. W TAKMA pomagamy dobrać próbkę pod Twoją drukarkę i zastosowanie — szczególnie polecane dla aplikacji archiwalnych (testy fading w realnym świetle).',
       },
     ],
     techSpecs: [
