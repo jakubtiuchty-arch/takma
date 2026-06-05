@@ -282,7 +282,7 @@ export default function PrinterCompatibleLabels({
   if (!stockLoading && shown.length === 0) return null
 
   return (
-    <section id="etykiety-papierowe" className="scroll-mt-24">
+    <section id="etykiety-papierowe" className="scroll-mt-20 lg:scroll-mt-44">
       <div className="flex items-baseline justify-between mb-4">
         <h2 className="text-2xl font-bold text-gray-900">Etykiety termiczne</h2>
         <span className="text-sm text-gray-400">Najpopularniejsze rozmiary</span>

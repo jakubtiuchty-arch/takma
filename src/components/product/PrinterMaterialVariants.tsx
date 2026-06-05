@@ -102,13 +102,16 @@ function Card({ pick, kind, stockInfo, stockLoading }: {
 }
 
 export default function PrinterMaterialVariants({
-  id, title, productIds, kind, printWidthMm, perSeries = 3, maxTotal = 8,
+  id, title, productIds, kind, printWidthMm, requiredCore, perSeries = 3, maxTotal = 8,
 }: {
   id: string
   title: string
   productIds: string[]
   kind: 'label' | 'ribbon'
   printWidthMm?: number
+  /** Wymagany rdzeń taśmy dla danej drukarki ('12' biurkowa / '25' przemysłowa).
+   *  Filtruje rekomendowane taśmy — np. rolka 12 mm nie wejdzie na wieszaki przemysłówki. */
+  requiredCore?: string
   perSeries?: number
   maxTotal?: number
 }) {
@@ -117,7 +120,10 @@ export default function PrinterMaterialVariants({
   // Taśma jest zwykle nieco szersza niż głowica (104 mm głowica → ~110 mm taśma),
   // więc dla taśm dajemy większą tolerancję niż dla etykiet.
   const tol = kind === 'ribbon' ? 12 : 2
-  const picks: Pick[] = []
+  // Budujemy listy per-seria, a potem przeplatamy je round-robin (najpierw po 1 z każdej serii,
+  // potem po 2…) — żeby rekomendacje pokazywały różnorodność klas (np. wosk / wosk-żywica / żywica),
+  // a nie były zdominowane przez jedną serię.
+  const groups: Pick[][] = []
   for (const pid of productIds) {
     const product = products.find(p => p.id === pid)
     if (!product?.variants) continue
@@ -125,10 +131,18 @@ export default function PrinterMaterialVariants({
     const fitting = product.variants
       .map(v => ({ v, w: widthMm(v) }))
       .filter(x => x.w != null && (!printWidthMm || x.w <= printWidthMm + tol))
+      // Rdzeń: dla taśm rolka musi pasować do wieszaków drukarki (12 mm biurkowa / 25 mm przemysłowa).
+      .filter(x => kind !== 'ribbon' || !requiredCore || String(x.v.attributes?.['Rdzeń'] ?? '').startsWith(requiredCore))
       .sort((a, b) => (b.w! - a.w!))
       .slice(0, Math.max(perSeries, 8)) // głębsza pula — po stanie pokażemy tylko dostępne
       .map(x => ({ product, variant: x.v, title: t }))
-    picks.push(...fitting)
+    if (fitting.length) groups.push(fitting)
+  }
+  // Przeplatanie round-robin: kolumna 0 = po jednym wariancie z każdej serii, potem kolumna 1, itd.
+  const picks: Pick[] = []
+  const maxLen = groups.reduce((m, g) => Math.max(m, g.length), 0)
+  for (let i = 0; i < maxLen; i++) {
+    for (const g of groups) if (g[i]) picks.push(g[i])
   }
   // Pula kandydatów większa niż wyświetlamy — po sprawdzeniu stanu pokazujemy tylko dostępne.
   const candidates = picks.slice(0, 24)
@@ -149,7 +163,7 @@ export default function PrinterMaterialVariants({
   if (!loading && shown.length === 0) return null
 
   return (
-    <section id={id} className="scroll-mt-24">
+    <section id={id} className="scroll-mt-20 lg:scroll-mt-44">
       <h2 className="text-2xl font-bold text-gray-900 mb-4">{title}</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {shown.map(pick => (

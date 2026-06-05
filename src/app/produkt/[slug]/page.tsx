@@ -250,6 +250,13 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // ── Dobór materiałów do drukarki: technologia + szerokość głowicy ──────────
   const isLabelPrinter = product.categoryId === 'drukarki-etykiet'
   const isTTprinter = product.subcategoryIds?.includes('termotransferowe-drukarki-etykiet') ?? false
+  // Wymagany rdzeń taśmy: przemysłowe = 25 mm (1"), biurkowe = 12 mm (1/2").
+  // Rolka 12 mm nie wejdzie na wieszaki przemysłówki i odwrotnie — filtrujemy rekomendowane taśmy.
+  const printerRibbonCore = product.subcategoryIds?.includes('przemyslowe-drukarki-etykiet')
+    ? '25'
+    : product.subcategoryIds?.includes('biurkowe-drukarki-etykiet')
+      ? '12'
+      : undefined
   // Szerokość druku (głowicy) w mm — szukamy w wielu polach, bo część drukarek ma to
   // tylko w keyParams.szerokoscDruku, a nie w specifications (np. Honeywell PD45/PM45).
   const printWidthMm = (() => {
@@ -281,6 +288,11 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const ttFoilIds = isTTprinter
     ? (compatibleFoilLabels.length ? compatibleFoilLabels.map((c) => c!.id) : STANDARD_TT_FOIL)
     : []
+
+  // Widoczność kotwic nawigacji = sekcje materiałów, które faktycznie się renderują niżej.
+  const showLabelsNav = (isLabelPrinter && !isTTprinter) || (isTTprinter && ttPaperIds.length > 0) || compatibleConsumables.length > 0
+  const showFoilNav = (isTTprinter && ttFoilIds.length > 0) || compatibleFoilLabels.length > 0
+  const showRibbonNav = printerRibbons.length > 0
 
   // Akcesoria — grupowane wg kategorii
   const allRelated = (product.relatedAccessories || [])
@@ -851,20 +863,12 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   Do pobrania
                 </a>
               )}
-              {compatibleConsumables.length > 0 && (
+              {(showLabelsNav || showFoilNav || showRibbonNav) && (
                 <a
                   href="#etykiety-papierowe"
                   className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
-                  {product.categoryId === 'drukarki-kart' ? 'Taśmy' : product.categoryId === 'drukarki-opasek' ? 'Opaski' : product.subcategoryIds?.includes('termiczne-drukarki-etykiet') ? 'Etykiety termiczne' : 'Etykiety papierowe'}
-                </a>
-              )}
-              {compatibleFoilLabels.length > 0 && (
-                <a
-                  href="#etykiety-foliowe"
-                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
-                >
-                  Etykiety foliowe
+                  {product.categoryId === 'drukarki-kart' ? 'Taśmy' : product.categoryId === 'drukarki-opasek' ? 'Opaski' : 'Materiały eksploatacyjne'}
                 </a>
               )}
               {relatedCards.length > 0 && (
@@ -1315,6 +1319,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 productIds={['zebra-2300-wax', 'zebra-3200-wax-resin', 'zebra-5095-resin']}
                 kind="ribbon"
                 printWidthMm={printWidthMm}
+                requiredCore={printerRibbonCore}
               />
             )}
 
