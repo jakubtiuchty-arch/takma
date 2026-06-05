@@ -1,32 +1,33 @@
 import type { Product, ProductVariant } from '@/data/products'
-import type { RibbonSeries } from '@/data/transfer-ribbon-series'
-import { ALLEGRO_PARAM, ALLEGRO_DICT, ALLEGRO_CATEGORY } from './categories'
+import { ALLEGRO_PARAM, ALLEGRO_DICT, ALLEGRO_CATEGORY, type AllegroProductKind } from './categories'
 import type { AllegroPrice } from './pricing'
 
 /**
- * Budowa payloadu oferty Allegro z wariantu katalogu TAKMA.
+ * Budowa payloadu oferty Allegro z wariantu katalogu TAKMA (taśmy i etykiety).
  *
  * Tworzymy DRAFT (publication.status = INACTIVE) — minimalny, ale poprawny:
- *  - productSet[0].product: kategoria + Producent (Zebra) + Kod producenta (PN)
- *    → parametry KATALOGOWE muszą być w product, nie w offer (inaczej 422
- *      „Producent should not be specified in section offer").
+ *  - productSet[0].product: kategoria (17254 taśmy / 17255 etykiety) + Producent (Zebra)
+ *    + Kod producenta (PN) + obraz. Parametry KATALOGOWE muszą być w product, nie w offer.
  *  - offer.parameters: Stan = Nowy (parametr OFERTOWY).
- *  - sellingMode.price = cena BRUTTO (Allegro operuje brutto), stock.available.
+ *  - sellingMode.price = cena BRUTTO, stock.available, opis HTML (sekcje TEXT).
  *
- * EAN POMIJAMY świadomie (zwolnienie z GTIN na koncie). Obrazy i opis HTML
- * dokładamy w kolejnej iteracji (po potwierdzeniu draftu w panelu) — draft bez
- * nich jest poprawny, a to minimalizuje ryzyko walidacji przy pierwszym wystawieniu.
+ * EAN POMIJAMY świadomie (zwolnienie z GTIN na koncie).
  */
 
 const MAX_NAME = 75
 
-/** Zwięzły opis rozmiaru wariantu z atrybutów, np. „110×300 mm, rdzeń 25 mm". */
+/** Zwięzły opis rozmiaru wariantu — obsługuje etykiety (Rozmiar) i taśmy (Szerokość/Długość). */
 export function variantSizeLabel(v: ProductVariant): string {
   const a = v.attributes || {}
-  const w = (a['Szerokość'] || '').replace(/\s*mm$/, '').trim()
-  const len = (a['Długość'] || '').trim()
   const core = (a['Rdzeń'] || '').trim()
-  const dim = w && len ? `${w}×${len}` : v.name
+  let dim: string
+  if (a['Rozmiar']) {
+    dim = a['Rozmiar'].trim()
+  } else {
+    const w = (a['Szerokość'] || '').replace(/\s*mm$/, '').trim()
+    const len = (a['Długość'] || '').trim()
+    dim = w && len ? `${w}×${len}` : v.name
+  }
   return core ? `${dim}, rdzeń ${core}` : dim
 }
 
@@ -34,7 +35,6 @@ export function variantSizeLabel(v: ProductVariant): string {
 export function buildOfferName(product: Product, variant: ProductVariant): string {
   const base = `${product.name} ${variantSizeLabel(variant)}`.replace(/\s+/g, ' ').trim()
   if (base.length <= MAX_NAME) return base
-  // przytnij na granicy słowa
   return base.slice(0, MAX_NAME).replace(/\s+\S*$/, '').trim()
 }
 
@@ -61,24 +61,28 @@ function esc(s: string): string {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 }
 
-/** Opis oferty w formacie Allegro (sekcje z elementami TEXT). */
-export function buildRibbonDescription(
+/** Opis oferty w formacie Allegro (sekcje z elementami TEXT) — wspólny dla taśm i etykiet. */
+export function buildOfferDescription(
   product: Product,
   variant: ProductVariant,
 ): AllegroOfferPayload['description'] {
   const a = variant.attributes || {}
-  const specRows = [
+  const rozmiar =
+    a['Rozmiar'] ||
+    (a['Szerokość'] && a['Długość'] ? `${a['Szerokość']} × ${a['Długość']}` : '')
+  const specRows: Array<[string, string | undefined]> = [
     ['Part Number', variant.partNumber],
-    ['Szerokość', a['Szerokość']],
-    ['Długość', a['Długość']],
+    ['Rozmiar', rozmiar],
     ['Rdzeń', a['Rdzeń']],
-    ['Typ taśmy', product.specifications?.find((s) => s.name === 'Typ taśmy')?.value],
     ['Producent', 'Zebra Technologies'],
-  ].filter(([, v]) => v)
-  const specHtml = `<ul>${specRows.map(([k, v]) => `<li><b>${esc(String(k))}:</b> ${esc(String(v))}</li>`).join('')}</ul>`
+  ]
+  const rows = specRows.filter(([, v]) => v)
+  const specHtml = `<ul>${rows.map(([k, v]) => `<li><b>${esc(k)}:</b> ${esc(String(v))}</li>`).join('')}</ul>`
 
   const apps = (product.applications || []).slice(0, 6)
-  const appsHtml = apps.length ? `<h2>Zastosowania</h2><ul>${apps.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''
+  const appsHtml = apps.length
+    ? `<h2>Zastosowania</h2><ul>${apps.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>`
+    : ''
 
   const intro = esc(product.shortDescription || product.description || product.name)
 
@@ -92,19 +96,19 @@ export function buildRibbonDescription(
 }
 
 export interface BuildOfferInput {
-  series: RibbonSeries
+  kind: AllegroProductKind
   product: Product
   variant: ProductVariant
   price: AllegroPrice
-  /** Ilość sztuk do wystawienia (dostępność magazynowa). Domyślnie 10. */
+  /** Ilość sztuk do wystawienia. Domyślnie 10. */
   available?: number
   /** URL-e obrazów po stronie Allegro (z uploadImageByUrl). Min. 1 wymagany. */
   images?: string[]
 }
 
-/** Buduje payload draftu oferty dla taśmy termotransferowej (kategoria 17254). */
-export function buildRibbonOfferPayload({
-  series,
+/** Buduje payload draftu oferty dla taśmy (17254) lub etykiety (17255). */
+export function buildOfferPayload({
+  kind,
   product,
   variant,
   price,
@@ -118,7 +122,7 @@ export function buildRibbonOfferPayload({
       {
         product: {
           name,
-          category: { id: ALLEGRO_CATEGORY.ribbon },
+          category: { id: ALLEGRO_CATEGORY[kind] },
           parameters: [
             { id: ALLEGRO_PARAM.producent, valuesIds: [ALLEGRO_DICT.producentZebra] },
             { id: ALLEGRO_PARAM.kodProducenta, values: [variant.partNumber] },
@@ -131,7 +135,7 @@ export function buildRibbonOfferPayload({
     parameters: [{ id: ALLEGRO_PARAM.stan, valuesIds: [ALLEGRO_DICT.stanNowy] }],
     sellingMode: { price: { amount: price.gross.toFixed(2), currency: 'PLN' } },
     stock: { available },
-    description: buildRibbonDescription(product, variant),
+    description: buildOfferDescription(product, variant),
     publication: { status: 'INACTIVE' },
   }
 }

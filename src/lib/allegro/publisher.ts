@@ -2,25 +2,35 @@ import { prisma } from '@/lib/db'
 import { allegroFetch } from './client'
 import { ALLEGRO_ENV } from './auth'
 import { allegroPriceForPN } from './pricing'
-import { buildRibbonOfferPayload, type AllegroOfferPayload } from './mapper'
+import { buildOfferPayload, type AllegroOfferPayload } from './mapper'
 import { uploadImageByUrl } from './images'
+import type { AllegroProductKind } from './categories'
 import { transferRibbonProducts } from '@/data/transfer-ribbon-products'
-import { getRibbonSeriesByProductId } from '@/data/transfer-ribbon-series'
+import { products as allProducts } from '@/data/products'
 import type { Product, ProductVariant } from '@/data/products'
 
-export interface ResolvedRibbonVariant {
+/** Wszystkie produkty etykiet (TT + DT) z głównej listy — po subkategoriach. */
+export const labelProducts: Product[] = allProducts.filter((p) =>
+  (p.subcategoryIds || []).some(
+    (s) => s === 'etykiety-termiczne' || s.startsWith('etykiety-termotransferowe'),
+  ),
+)
+
+export interface ResolvedVariant {
+  kind: AllegroProductKind
   product: Product
   variant: ProductVariant
-  series: ReturnType<typeof getRibbonSeriesByProductId>
 }
 
-/** Znajdź produkt + wariant + serię taśmy po Part Number. */
-export function resolveRibbonByPN(partNumber: string): ResolvedRibbonVariant | null {
+/** Znajdź produkt + wariant + rodzaj (taśma/etykieta) po Part Number. */
+export function resolveByPN(partNumber: string): ResolvedVariant | null {
   for (const product of transferRibbonProducts) {
     const variant = product.variants?.find((v) => v.partNumber === partNumber)
-    if (variant) {
-      return { product, variant, series: getRibbonSeriesByProductId(product.id) }
-    }
+    if (variant) return { kind: 'ribbon', product, variant }
+  }
+  for (const product of labelProducts) {
+    const variant = product.variants?.find((v) => v.partNumber === partNumber)
+    if (variant) return { kind: 'label', product, variant }
   }
   return null
 }
@@ -28,6 +38,7 @@ export function resolveRibbonByPN(partNumber: string): ResolvedRibbonVariant | n
 export interface PublishResult {
   ok: boolean
   partNumber: string
+  kind?: AllegroProductKind
   allegroId?: string
   status: 'DRAFT' | 'ERROR'
   error?: string
@@ -40,47 +51,42 @@ interface AllegroOfferResponse {
 }
 
 /**
- * Wystaw wariant taśmy jako DRAFT na Allegro i zapisz w AllegroOffer.
+ * Wystaw wariant (taśma lub etykieta) jako DRAFT na Allegro i zapisz w AllegroOffer.
  * Nie publikuje (status INACTIVE) — aktywację robi się ręcznie w panelu.
  */
-export async function publishRibbonDraft(partNumber: string): Promise<PublishResult> {
-  const resolved = resolveRibbonByPN(partNumber)
-  if (!resolved || !resolved.series) {
-    return { ok: false, partNumber, status: 'ERROR', error: 'Nie znaleziono wariantu/serii dla PN.' }
+export async function publishDraft(partNumber: string): Promise<PublishResult> {
+  const resolved = resolveByPN(partNumber)
+  if (!resolved) {
+    return { ok: false, partNumber, status: 'ERROR', error: 'Nie znaleziono wariantu dla PN.' }
   }
+  const { kind, product, variant } = resolved
 
   const price = await allegroPriceForPN(partNumber)
   if (!price) {
     return {
       ok: false,
       partNumber,
+      kind,
       status: 'ERROR',
       error: 'Brak żywej ceny w StockCache — pomijam (nie wystawiam z błędną ceną).',
     }
   }
 
   // Allegro wymaga min. 1 obrazu przy tworzeniu inline-produktu — wgrywamy do /sale/images.
-  const imgPath =
-    resolved.product.images?.[0] || resolved.product.imageDesktop || resolved.product.imageIndustrial
+  const imgPath = product.images?.[0] || product.imageDesktop || product.imageIndustrial
   if (!imgPath) {
-    return { ok: false, partNumber, status: 'ERROR', error: 'Brak obrazu produktu — Allegro wymaga zdjęcia.' }
+    return { ok: false, partNumber, kind, status: 'ERROR', error: 'Brak obrazu produktu — Allegro wymaga zdjęcia.' }
   }
   let images: string[]
   try {
     images = [await uploadImageByUrl(imgPath)]
   } catch (e) {
-    return { ok: false, partNumber, status: 'ERROR', error: `Nie udało się wgrać obrazu do Allegro: ${(e as Error).message}` }
+    return { ok: false, partNumber, kind, status: 'ERROR', error: `Nie udało się wgrać obrazu do Allegro: ${(e as Error).message}` }
   }
 
-  const payload: AllegroOfferPayload = buildRibbonOfferPayload({
-    series: resolved.series,
-    product: resolved.product,
-    variant: resolved.variant,
-    price,
-    images,
-  })
+  const payload: AllegroOfferPayload = buildOfferPayload({ kind, product, variant, price, images })
 
-  // Edycja istniejącego szkicu (PUT) zamiast tworzenia nowego (POST) — bez osieroconych ofert.
+  // Edycja istniejącego szkicu (PATCH) zamiast tworzenia nowego (POST) — bez osieroconych ofert.
   const existing = await prisma.allegroOffer.findUnique({
     where: { environment_partNumber: { environment: ALLEGRO_ENV, partNumber } },
     select: { allegroId: true },
@@ -89,17 +95,14 @@ export async function publishRibbonDraft(partNumber: string): Promise<PublishRes
   const path = existing?.allegroId ? `/sale/product-offers/${existing.allegroId}` : '/sale/product-offers'
 
   try {
-    const res = await allegroFetch<AllegroOfferResponse>(path, {
-      method,
-      body: JSON.stringify(payload),
-    })
+    const res = await allegroFetch<AllegroOfferResponse>(path, { method, body: JSON.stringify(payload) })
     await prisma.allegroOffer.upsert({
       where: { environment_partNumber: { environment: ALLEGRO_ENV, partNumber } },
       create: {
         environment: ALLEGRO_ENV,
         partNumber,
-        seriesSlug: resolved.series.slug,
-        productKind: 'ribbon',
+        seriesSlug: product.slug,
+        productKind: kind,
         allegroId: res.id,
         status: 'DRAFT',
         priceNet: price.net,
@@ -115,7 +118,7 @@ export async function publishRibbonDraft(partNumber: string): Promise<PublishRes
         payload: JSON.stringify(payload),
       },
     })
-    return { ok: true, partNumber, allegroId: res.id, status: 'DRAFT', priceNet: price.net, priceGross: price.gross }
+    return { ok: true, partNumber, kind, allegroId: res.id, status: 'DRAFT', priceNet: price.net, priceGross: price.gross }
   } catch (e) {
     const error = (e as Error).message
     await prisma.allegroOffer
@@ -124,8 +127,8 @@ export async function publishRibbonDraft(partNumber: string): Promise<PublishRes
         create: {
           environment: ALLEGRO_ENV,
           partNumber,
-          seriesSlug: resolved.series.slug,
-          productKind: 'ribbon',
+          seriesSlug: product.slug,
+          productKind: kind,
           status: 'ERROR',
           priceNet: price.net,
           priceGross: price.gross,
@@ -135,6 +138,6 @@ export async function publishRibbonDraft(partNumber: string): Promise<PublishRes
         update: { status: 'ERROR', lastError: error.slice(0, 1000), payload: JSON.stringify(payload) },
       })
       .catch(() => {})
-    return { ok: false, partNumber, status: 'ERROR', error, priceNet: price.net, priceGross: price.gross }
+    return { ok: false, partNumber, kind, status: 'ERROR', error, priceNet: price.net, priceGross: price.gross }
   }
 }

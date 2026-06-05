@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { getSessionFromCookie } from '@/lib/auth'
-import { publishRibbonDraft } from '@/lib/allegro/publisher'
+import { publishDraft } from '@/lib/allegro/publisher'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
@@ -20,6 +20,6 @@ export async function POST(request: Request) {
   }
   if (!partNumber) return NextResponse.json({ error: 'Brak partNumber.' }, { status: 400 })
 
-  const result = await publishRibbonDraft(partNumber)
+  const result = await publishDraft(partNumber)
   return NextResponse.json(result, { status: result.ok ? 200 : 422 })
 }

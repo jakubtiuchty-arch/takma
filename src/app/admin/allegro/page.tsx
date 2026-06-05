@@ -27,6 +27,11 @@ export default async function AllegroDashboardPage() {
           <div className="font-semibold text-gray-900 mb-1">Oferty — taśmy</div>
           <p className="text-sm text-gray-500">Wystaw warianty taśm TT jako szkice (cena ze sklepu × 1,12 × VAT).</p>
         </Link>
+
+        <Link href="/admin/allegro/etykiety" className="rounded-xl border border-gray-200 bg-white p-5 hover:border-gray-300 transition-colors">
+          <div className="font-semibold text-gray-900 mb-1">Oferty — etykiety</div>
+          <p className="text-sm text-gray-500">Etykiety termiczne i TT (kategoria 17255, bez liczby etykiet).</p>
+        </Link>
       </div>
     </div>
   )

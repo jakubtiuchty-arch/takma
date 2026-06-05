@@ -1,32 +1,38 @@
 /**
  * Mapowanie katalogu TAKMA → kategorie i parametry Allegro.
  *
- * ID kategorii i parametrów ustalone z GET /sale/categories i
- * /sale/categories/{id}/parameters (środowisko produkcyjne; w sandbox te same).
+ * ID kategorii i parametrów potwierdzone z GET /sale/categories/{id}/parameters
+ * (środowisko produkcyjne).
  *
- * Parametry produktowe (Producent, Kod producenta, EAN) idą do
- * productSet[0].product.parameters. Parametry ofertowe (Stan) — do offer.parameters.
- * Tej zasady pilnuje Allegro: „Producent should not be specified in section offer".
+ * Taśmy i etykiety Zebry siedzą w siostrzanych kategoriach pod „Drukarki › Papiery, folie",
+ * które mają IDENTYCZNY, minimalny zestaw parametrów wymaganych:
+ *   Stan (11323) + Kod producenta (224017) + Producent (248914) + EAN (225693).
+ * EAN pomijamy (zwolnienie z GTIN na koncie) — działa, bo konto ma wyłączenie.
+ *
+ * UWAGA: NIE używać kategorii 64536 „Etykiety samoprzylepne" (pod Biuro/Pakowanie) —
+ * wymaga „Liczby etykiet na rolce", Materiału, Rodzaju (danych, których nie mamy).
+ * Właściwa dla etykiet Zebry to 17255 „Etykiety, naklejki" (pod Drukarki).
+ *
+ * Parametry produktowe (Producent, Kod producenta, EAN) idą do productSet[0].product.parameters.
+ * Parametry ofertowe (Stan) — do offer.parameters.
  */
 
 export type AllegroProductKind = 'ribbon' | 'label'
 
 /** Kategorie liściaste (tylko w takich można wystawiać oferty). */
 export const ALLEGRO_CATEGORY = {
-  /** Folie, termotransfery — taśmy TT */
+  /** Folie, termotransfery — taśmy TT (Drukarki › Papiery, folie) */
   ribbon: '17254',
-  /** Etykiety samoprzylepne */
-  label: '64536',
+  /** Etykiety, naklejki — etykiety DT i TT (Drukarki › Papiery, folie) */
+  label: '17255',
 } as const
 
-/** ID parametrów Allegro (wspólne dla obu kategorii, chyba że zaznaczono). */
+/** ID parametrów Allegro (wspólne dla obu kategorii). */
 export const ALLEGRO_PARAM = {
   producent: '248914', // dict (productSet.product)
-  kodProducenta: '224017', // text (productSet.product)
-  ean: '225693', // text (productSet.product) — POMIJAMY (zwolnienie z GTIN)
+  kodProducenta: '224017', // string (productSet.product)
+  ean: '225693', // string (productSet.product) — POMIJAMY (zwolnienie z GTIN)
   stan: '11323', // dict (offer.parameters)
-  /** Liczba etykiet na rolce — wymagany w kategorii etykiet (64536). */
-  liczbaEtykiet: '223697', // numeric (offer.parameters)
 } as const
 
 /** Wartości słownikowe (valuesIds). */
