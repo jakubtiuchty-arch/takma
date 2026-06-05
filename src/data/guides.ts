@@ -13783,6 +13783,194 @@ export const guides: Guide[] = [
     { title: 'Drukarka termiczna czy termotransferowa?', href: '/poradnik/drukarka-termiczna-vs-termotransferowa' },
   ],
 },
+{
+  slug: 'etykiety-termiczne-100x150-kurierskie',
+  title: 'Etykiety termiczne 100×150 mm do kuriera — przewodnik wyboru 2026 (InPost, DPD, DHL, GLS)',
+  seoTitle: 'Etykiety termiczne 100×150 mm do kuriera — przewodnik 2026',
+  seoDescription: 'Standard kurierski w Polsce — InPost, DPD, DHL, GLS. Ile etykiet na rolce, jaka drukarka, polecane modele Zebra do wysyłek kurierskich i e-commerce.',
+  excerpt: 'Najczęściej kupowany rozmiar etykiety termicznej w Polsce — i ten, w którym najłatwiej popełnić kosztowny błąd przy zakupie. Pięć decyzji: standard rozmiaru, wymagania kurierów, ile etykiet na rolce, próg wolumenu, dobór drukarki i polecane modele Zebra.',
+  category: 'przewodnik',
+  tags: ['etykiety-termiczne', 'kurierskie', 'jak-wybrac'],
+  publishedAt: '2026-06-05',
+  updatedAt: '2026-06-05',
+  readTime: '11 min',
+  heroImage: '/images/guides/etykiety-kurierskie-przewodnik-2026.webp',
+  heroImageAlt: 'Rolka etykiet termicznych 100×150 mm do wysyłek kurierskich obok paczek z etykietami UPS, DPD, InPost i Kurier 48',
+
+  sections: [
+    {
+      id: 'standard-kurierski',
+      heading: 'Dlaczego 100×150 mm to standard kurierski w Polsce',
+      content: `<p><strong>100×150 mm</strong> to najczęściej kupowany rozmiar etykiety termicznej w Polsce — i jednocześnie ten, w którym najłatwiej popełnić kosztowny błąd przy zakupie. Najczęstsza pomyłka to nie wybór konkretnego modelu, lecz <strong>niedopasowanie rolki do drukarki</strong>: etykieta 100×150 zmieści się w prawie każdej drukarce biurkowej, ale rolka o średnicy 200 mm z gilzą 76 mm — już nie. Taka rolka <strong>fizycznie nie wejdzie do obudowy drukarki biurkowej</strong> — pokrywa się po prostu nie zamknie. Zamiast drukować czekasz na właściwą rolkę: to przestój i opóźnione wysyłki.</p>
+<p>Rozmiar 100×150 mm pojawił się w branży kurierskiej z trzech powodów technicznych:</p>
+<p><strong>Powierzchnia wystarcza na adres + nadawcę + kod kreskowy.</strong> Etykieta kurierska zawiera adres nadawcy, adres odbiorcy, kod kreskowy z numerem przesyłki, kod 2D (QR/DataMatrix) i dane sortowni. 100×150 mm to praktyczne minimum dla tego układu z marginesami czytelności.</p>
+<p><strong>Sortownie skanują z dystansu.</strong> Skanery w sortowniach pracują z odległości 30–50 cm od taśmy transportowej. Kod o szerokości poniżej 80 mm staje się trudny do odczytania pod kątem przy szybkości sortowania kilku tysięcy paczek na godzinę.</p>
+<p><strong>Standard 4″×6″ (102×152 mm)</strong> pochodzi z USA (pierwsza specyfikacja UPS i FedEx). Europa przyjęła zbliżony 100×150 mm jako odpowiednik metryczny. Różnica 2 mm w obu wymiarach jest tolerowana przez większość drukarek i sortowni, ale <strong>DHL Express i FedEx dla eksportu wymagają dokładnie 102×152 mm</strong>.</p>
+<blockquote><p>100×150 mm działa dla 95% wysyłek krajowych w Polsce. DHL Express międzynarodowy i FedEx eksportowy wymagają dokładnie 102×152 mm — sprawdź zanim zamówisz dużą rolkę.</p></blockquote>`,
+    },
+    {
+      id: 'ktory-kurier',
+      heading: 'Który kurier wymaga jakiego rozmiaru',
+      content: `<table>
+<thead><tr><th>Kurier</th><th>Rozmiar standardowy</th><th>Uwagi</th></tr></thead>
+<tbody>
+<tr><td>InPost (Paczkomat i kurier)</td><td>100×150 mm (±2 mm)</td><td>Uniwersalny dla całego serwisu InPost</td></tr>
+<tr><td>DPD (krajowy i międzynarodowy)</td><td>100×150 mm (±2 mm)</td><td>Dla DPD Premium niektóre regiony wymagają 100×174 mm</td></tr>
+<tr><td>DHL Parcel (krajowy)</td><td>100×150 mm (±2 mm)</td><td>Standard dla wysyłek krajowych</td></tr>
+<tr><td>DHL Express (międzynarodowy)</td><td>102×152 mm</td><td>Sztywny standard — sprawdź konkretną etykietę</td></tr>
+<tr><td>GLS</td><td>100×150 mm (±2 mm)</td><td>Standard krajowy i międzynarodowy w Europie</td></tr>
+<tr><td>UPS</td><td>100×150 mm; 102×152 mm dla USA</td><td>Dla eksportu do USA wymagany 4″×6″</td></tr>
+<tr><td>FedEx (eksport)</td><td>102×152 mm (4″×6″)</td><td>Wymóg amerykański, brak tolerancji</td></tr>
+<tr><td>Allegro Smart!</td><td>100×150 mm (±2 mm)</td><td>Korzysta z infrastruktury InPost i DPD</td></tr>
+<tr><td>Orlen Paczka</td><td>100×150 mm (±2 mm)</td><td>Standard krajowy</td></tr>
+<tr><td>Poczta Polska (Pocztex, Kurier48)</td><td>100×150 mm akceptowalny</td><td>Szerszy zakres rozmiarów — sprawdź usługę</td></tr>
+</tbody>
+</table>
+<p><strong>Klucz do interpretacji:</strong> 100×150 mm pokrywa 95% potrzeb kurierskich w Polsce. Jeśli wysyłasz wyłącznie InPost/DPD/GLS — wystarczy. Jeśli eksportujesz przez DHL Express lub FedEx, kup dodatkową rolkę 102×152 mm dla wysyłek międzynarodowych (w katalogu ten rozmiar ma <a href="/etykiety-termiczne-zebra/serie/z-essentials-1000d">Z-Essentials 1000D</a>).</p>`,
+    },
+    {
+      id: 'ile-etykiet',
+      heading: 'Ile etykiet na rolce 100×150',
+      content: `<p>Liczba etykiet na rolce zależy od dwóch parametrów: <strong>średnicy gilzy</strong> (rdzenia) i <strong>średnicy zewnętrznej rolki</strong> (OD — Outer Diameter). Gilza nie zmienia liczby etykiet — średnica zewnętrzna jak najbardziej.</p>
+<table>
+<thead><tr><th>Gilza (rdzeń)</th><th>Średnica zewnętrzna</th><th>Liczba etykiet 100×150 (orientacyjnie)</th><th>Drukarka</th></tr></thead>
+<tbody>
+<tr><td>25 mm (1″)</td><td>127 mm</td><td>~250 etykiet</td><td>Biurkowa (Zebra ZD230d, ZD421d)</td></tr>
+<tr><td>25 mm (1″)</td><td>152 mm</td><td>~500 etykiet</td><td>Większa rolka biurkowa</td></tr>
+<tr><td>76 mm (3″)</td><td>200 mm</td><td>~750 etykiet</td><td>Półprzemysłowa (Zebra ZT231)</td></tr>
+<tr><td>76 mm (3″)</td><td>213 mm</td><td>~1 000 etykiet</td><td>Przemysłowa (Zebra ZT411)</td></tr>
+<tr><td>76 mm (3″)</td><td>254 mm</td><td>~1 500 etykiet</td><td>Przemysłowa, długie cykle pracy</td></tr>
+</tbody>
+</table>
+<blockquote><p>Większa gilza nie znaczy więcej etykiet. Większa średnica zewnętrzna — tak. Drukarka biurkowa nie zmieści rolki 200 mm fizycznie.</p></blockquote>
+<p><strong>Uwaga praktyczna:</strong> drukarka biurkowa Zebra ZD230d ma maksymalną średnicę zewnętrzną rolki 127 mm (5″). Próba włożenia większej rolki kończy się tym, że pokrywa się nie zamyka. Sprawdź specyfikację drukarki <strong>zanim</strong> zamówisz dużą rolkę.</p>`,
+    },
+    {
+      id: 'prog-wolumenu',
+      heading: 'Próg ekonomiczny — kiedy 500, 1000, 5000 etykiet',
+      content: `<p>Wybór rolki to nie tylko cena za sztukę — to też <strong>częstość wymiany</strong> w drukarce. Każda wymiana to przestój 5–15 minut, ryzyko złej kalibracji i pierwsze 5–10 etykiet „do śmietnika" po założeniu nowej rolki.</p>
+<table>
+<thead><tr><th>Twój wolumen wysyłki</th><th>Polecany rozmiar rolki</th><th>Koszt jednostkowy</th></tr></thead>
+<tbody>
+<tr><td>5–20 paczek dziennie</td><td>500 sztuk (gilza 25 mm)</td><td>Wyższy o ~30% vs duża rolka</td></tr>
+<tr><td>20–100 paczek dziennie</td><td>1 000–2 000 sztuk (gilza 25/76 mm)</td><td>Optymalny</td></tr>
+<tr><td>100–500 paczek dziennie</td><td>5 000 sztuk (gilza 76 mm, drukarka przemysłowa)</td><td>Najniższy</td></tr>
+<tr><td>500+ paczek dziennie</td><td>Rolki przemysłowe + wymiana planowana</td><td>Najtańszy, wymaga drukarki przemysłowej</td></tr>
+</tbody>
+</table>
+<p><strong>Klucz do interpretacji:</strong> przy 5–20 paczkach dziennie rolka 500 sztuk daje wygodę i niski koszt wstępny. Powyżej 100 paczek dziennie inwestycja w drukarkę przemysłową (Zebra ZT231 lub ZT411) i rolki 5 000+ zwraca się w 3–6 miesięcy dzięki oszczędności czasu wymiany.</p>`,
+    },
+    {
+      id: 'drukarka',
+      heading: 'Drukarka — Zebra ZD230d, ZD421d, ZT231 czy ZT411?',
+      content: `<p>Każda drukarka termiczna Zebra obsłuży rozmiar 100×150 mm. Wybór zależy od <strong>wolumenu wysyłek</strong> i <strong>wymaganej prędkości druku</strong>.</p>
+<table>
+<thead><tr><th>Drukarka</th><th>Maks. szer. druku</th><th>Maks. średnica rolki</th><th>Prędkość</th><th>Polecana dla</th></tr></thead>
+<tbody>
+<tr><td>Zebra ZD230d</td><td>108 mm</td><td>127 mm</td><td>do 152 mm/s (6 ips)</td><td>5–50 paczek dziennie</td></tr>
+<tr><td>Zebra ZD421d</td><td>104 mm</td><td>127 mm</td><td>do 152 mm/s (6 ips)</td><td>50–200 paczek, wyższa jakość druku</td></tr>
+<tr><td>Zebra ZD611d</td><td>108 mm</td><td>127 mm</td><td>do 203 mm/s (8 ips)</td><td>100–300 paczek, premium biurkowa</td></tr>
+<tr><td>Zebra ZT231</td><td>104 mm</td><td>203 mm</td><td>do 305 mm/s (12 ips)</td><td>200–1 000 paczek, półprzemysłowa</td></tr>
+<tr><td>Zebra ZT411</td><td>104 mm</td><td>213 mm</td><td>do 356 mm/s (14 ips)</td><td>1 000+ paczek, przemysłowa</td></tr>
+</tbody>
+</table>
+<p><strong>Kluczowy parametr:</strong> maksymalna szerokość druku drukarki musi być co najmniej 100 mm (etykieta) — wszystkie wymienione modele to spełniają z marginesem. Pełny katalog drukarek do wysyłek: <a href="/termiczne-drukarki-etykiet">drukarki termiczne</a>.</p>`,
+    },
+    {
+      id: 'problemy',
+      heading: 'Pięć najczęstszych problemów z etykietą 100×150 (i jak ich uniknąć)',
+      content: `<h3>1. Etykieta wyjeżdża po skosie</h3>
+<p>Przesunięcie etykiety o kilka milimetrów na bok, pojawiające się po wymianie rolki. Powód: drukarka <strong>nie zrobiła kalibracji nośnika</strong> po założeniu rolki. Rozwiązanie: wykonaj kalibrację ze sterownika (Calibrate Media) lub z panelu drukarki (zwykle przytrzymanie FEED przez 3 sekundy). Pierwsze 3–5 etykiet po kalibracji może iść do śmietnika — to standard.</p>
+<h3>2. Blaknięcie nadruku po 2 tygodniach w samochodzie kuriera</h3>
+<p>Latem temperatura w aucie dostawczym sięga +60°C, a paczka czeka 24–48 h. Papier termiczny niepowlekany (np. <a href="/etykiety-termiczne-zebra/serie/z-essentials-500d">Z-Essentials 500D</a>) zaczyna ciemnieć i tracić kontrast. Rozwiązanie: dla wysyłek dłuższych niż 5 dni używaj <a href="/etykiety-termiczne-zebra/serie/z-perform-1000d">Z-Perform 1000D</a> (zakres do +80°C) lub <a href="/etykiety-termiczne-zebra/serie/z-select-2000d">Z-Select 2000D</a> z powłoką ochronną (lepsza odporność na UV i wilgoć).</p>
+<h3>3. Rolka rozmięknie w deszczu</h3>
+<p>Papierowa etykieta wchłania wilgoć, klej traci przyczepność, kod się rozmazuje. Rozwiązanie: <a href="/etykiety-termiczne-zebra/serie/polypro-4000d">PolyPro 4000D</a> — folia polipropylenowa wodoodporna, klej akrylowy aplikowalny już w -40°C, atest FDA 175.105 dla opakowań spożywczych. Droższa, ale dla wysyłek do branży spożywczej, kosmetycznej i farmaceutycznej często wymagana.</p>
+<h3>4. Pierwsze 5–10 etykiet po wymianie rolki idzie do śmietnika</h3>
+<p>Drukarka nie ma jeszcze skalibrowanej nowej rolki, a pierwsze etykiety przesuwają się przez wałek i powodują skos. Przy 10 wymianach dziennie to dziesiątki tysięcy etykiet rocznie do kosza. Rozwiązanie: większe rolki (1 000–5 000 sztuk) → mniej wymian → mniej odpadu.</p>
+<h3>5. Klej zostaje na opakowaniu po zdjęciu</h3>
+<p>Klej permanentny zostawia residuum po próbie usunięcia etykiety. Dla pojemników wielokrotnego użytku (skrzynki, regały, palety) wybierz <a href="/etykiety-termiczne-zebra/serie/z-select-2000d-removable">Z-Select 2000D Removable</a> (klej zdejmowalny premium) lub <a href="/etykiety-termiczne-zebra/serie/z-perform-1000d-removable">Z-Perform 1000D Removable</a> (klej zdejmowalny ekonomiczny, 18 wariantów rozmiarowych).</p>`,
+    },
+    {
+      id: 'oryginalne',
+      heading: 'Dlaczego warto kupić oryginalne etykiety Zebra (a nie tańsze „kompatybilne")',
+      content: `<p>Głowica termiczna to najdroższy element zużywający się w drukarce — wymiana w drukarce biurkowej to wydatek rzędu kilkuset złotych, w przemysłowej kilku tysięcy. Typowa żywotność głowicy to 25–50 km wydrukowanego materiału, a jego jakość bezpośrednio na nią wpływa.</p>
+<p>Tania „kompatybilna" etykieta z marketplace potrafi mieć:</p>
+<ul>
+<li><strong>Niespójną grubość papieru</strong> w obrębie partii — głowica naciska z różną siłą, drukuje nierównomiernie, kalibracja co kilka rolek,</li>
+<li><strong>Pylenie się materiału</strong> — drobne włókna osadzają się na głowicy i wałku, zwiększają tarcie, skracają żywotność,</li>
+<li><strong>Niewłaściwą temperaturę aktywacji</strong> — warstwa termoczuła reaguje przy innej temperaturze, więc głowica musi pracować mocniej,</li>
+<li><strong>Klej o niewłaściwym składzie</strong> — wycieka spod etykiety, gromadzi się na wałku, prowadzi do skosu druku.</li>
+</ul>
+<p>Z naszego doświadczenia oryginalne etykiety Zebra (Zebra Certified Supplies) dają powtarzalną jakość partia po partii: kontrolowaną grubość i gramaturę, temperaturę aktywacji dopasowaną do głowic Zebra, udokumentowane atesty (BfR XIV, FDA, EC 1935/2004 dla Z-Select 2000D i Z-Perform 1000D) oraz BPA-free w całym portfolio. W połączeniu z drukarką i taśmami Zebra potrafią wydłużyć żywotność głowicy nawet o około 30% względem nieautoryzowanych materiałów — i utrzymują warunki gwarancji producenta drukarki (uszkodzenie głowicy z winy pylącego się „kompatybilnego" papieru bywa podstawą odmowy naprawy gwarancyjnej).</p>
+<blockquote><p>Tania etykieta kosztuje kilkadziesiąt złotych mniej za rolkę. Nowa głowica drukarki — od kilkuset do kilku tysięcy. Plus 2–3 dni przestoju wysyłki. Matematyka jest jednoznaczna.</p></blockquote>`,
+    },
+    {
+      id: 'modele',
+      heading: 'Polecane modele Zebra dla 100×150 mm',
+      content: `<p>Główni kandydaci dla rozmiaru 100×150 mm (i siostrzanego 102×152 mm) w katalogu TAKMA — każdy z innym profilem zastosowania. Aktualne ceny każdej serii i wariantu znajdziesz na jej stronie.</p>
+<h3>Z-Essentials 500D — dedykowany entry-level do wysyłek kurierskich</h3>
+<p><a href="/etykiety-termiczne-zebra/serie/z-essentials-500d">Z-Essentials 500D</a> to najtańsza etykieta termiczna w portfolio Zebry, dostępna wyłącznie w formacie 102×152 mm — najpopularniejszym rozmiarze wysyłkowym w Polsce. Niepowlekany matowy papier termoczuły o grubości 70 µm (mikrometrów, czyli 0,07 mm — cienki, lekki papier wysyłkowy) z trwałym klejem akrylowym, zakres pracy 0–40°C wyłącznie w pomieszczeniu, BPA-free. To seria zaprojektowana specjalnie pod wysyłki kurierskie o krótkim cyklu życia etykiety (≤12 miesięcy indoor) — idealna dla e-commerce o stałym wolumenie krajowym i zagranicznym oraz do testu pojedynczej drukarki przed dużym zakupem. <strong>Kiedy NIE wybierać:</strong> chłodnie i mroźnie (zakres tylko 0–40°C), kontakt z żywnością (brak atestów BfR XIV/FDA), wysyłki długoterminowe powyżej 12 miesięcy, outdoor.</p>
+<h3>Z-Perform 1000D — domyślny wybór dla 90% kurierów</h3>
+<p><a href="/etykiety-termiczne-zebra/serie/z-perform-1000d">Z-Perform 1000D</a> to bestseller B2B Zebry dla wysyłek kurierskich w Polsce. Niepowlekany papier z klejem akrylowym, zakres pracy -20°C do +80°C, 216 wariantów rozmiarowych (zawiera 100×150 mm w wielu wariantach średnicy rolki), atesty BfR XIV, FDA 175.105, EC 1935/2004, EU 10/2011. Najniższy koszt jednostkowy przy dużych nakładach — typowe wysyłki InPost/DPD/DHL/GLS/Allegro, od 5 do 500 paczek dziennie.</p>
+<h3>Z-Select 2000D — premium z atestem żywnościowym i chłodnią</h3>
+<p><a href="/etykiety-termiczne-zebra/serie/z-select-2000d">Z-Select 2000D</a> to etykieta powlekana z klejem gumowym all-temperature — działa od -40°C do +50°C (chłodnie i mroźnie). Pełen pakiet atestów żywnościowych (BfR XIV, FDA 175.105, EC 1935/2004, EU 10/2011) plus powłoka ochronna dająca odporność na wilgoć, oleje i UV. 37 wariantów rozmiarowych. Dla wysyłek produktów spożywczych, chłodni i sieci wymagających BfR XIV (Aldi, Lidl, Rewe).</p>
+<h3>PolyPro 4000D — wodoodporna folia dla paczek wilgotnych</h3>
+<p><a href="/etykiety-termiczne-zebra/serie/polypro-4000d">PolyPro 4000D</a> to etykieta z folii polipropylenowej zamiast papieru — wodoodporna, odporna na rozdarcie, klej akrylowy aplikowalny już w -40°C, zakres pracy -54°C do +55°C, atest FDA 175.105 do pośredniego kontaktu z żywnością (brak BfR XIV). Dla paczek narażonych na deszcz, chłodni i pojemników wielokrotnego użytku.</p>
+<h3>Z-Essentials 1000D — budżetowa powlekana w rozmiarze 102×152 (DHL Express, FedEx)</h3>
+<p><a href="/etykiety-termiczne-zebra/serie/z-essentials-1000d">Z-Essentials 1000D</a> to budżetowa powlekana etykieta w standardowym rozmiarze amerykańskim 102×152 mm (4″×6″). Powłoka ochronna daje odporność na ścieranie i wilgoć (brak atestów żywnościowych). Dla wysyłek DHL Express międzynarodowych i FedEx do USA, gdzie wymagany jest dokładnie 4″×6″.</p>
+<h3>ZeroLiner 1100D / 2000D / 4500D — bez podkładu dla wysokich wolumenów</h3>
+<p>Etykiety linerless (bez podkładu silikonowego) dają 30–40% więcej etykiet na rolce o tej samej średnicy zewnętrznej i zero odpadu silikonu w koszu. Polecane przy 50+ paczkach dziennie: <a href="/etykiety-termiczne-zebra/serie/zeroliner-2000d">ZeroLiner 2000D</a> (premium, błyszczące wykończenie, klej kauczukowy), <a href="/etykiety-termiczne-zebra/serie/zeroliner-1100d">ZeroLiner 1100D</a> (podstawowa do transportu) oraz <a href="/etykiety-termiczne-zebra/serie/zeroliner-4500d">ZeroLiner 4500D</a> (klej akrylowy, zakres -10°C do +100°C). <strong>Wymóg sprzętowy:</strong> drukarka musi mieć wałek do linerless — standardowy wałek zniszczy się w ciągu kilku dni pracy bez podkładu.</p>`,
+    },
+  ],
+
+  faq: [
+    {
+      question: 'Jakie etykiety termiczne 100×150 mm kupić do InPost?',
+      answer: 'Domyślny wybór to Z-Perform 1000D w rozmiarze 100×150 mm — niepowlekany papier z klejem akrylowym, zakres pracy -20°C do +80°C, atesty żywnościowe BfR XIV i FDA. 216 wariantów rozmiarowych — wybierasz gilzę 25 mm (drukarka biurkowa) lub 76 mm (drukarka przemysłowa). Te same etykiety pasują do DPD, DHL Parcel, GLS, Allegro Smart i Orlen Paczka.',
+    },
+    {
+      question: 'Czy etykieta 100×150 mm pasuje do DHL Express?',
+      answer: 'Nie zawsze. DHL Express międzynarodowy wymaga dokładnie 102×152 mm (standard 4″×6″). Dla wysyłek krajowych DHL Parcel używa 100×150 mm. W katalogu TAKMA rozmiar 102×152 mm dostępny jest jako Z-Essentials 1000D oraz Z-Essentials 500D.',
+    },
+    {
+      question: 'Ile etykiet 100×150 mm zmieści się na rolce do Zebra ZD230d?',
+      answer: 'ZD230d obsługuje maksymalną średnicę zewnętrzną rolki 127 mm (5″). Przy gilzie 25 mm zmieści się około 500 etykiet, przy mniejszej średnicy 102 mm — około 250 etykiet. Większa drukarka (ZD611d, ZT231) bierze rolki o większej średnicy zewnętrznej, więc i więcej etykiet na rolce.',
+    },
+    {
+      question: 'Jakie etykiety dla wysyłek mrożonek do supermarketów (Aldi, Lidl)?',
+      answer: 'Sieci Aldi, Lidl, Rewe wymagają atestu BfR XIV. W katalogu TAKMA atest BfR XIV mają Z-Select 2000D (klej gumowy -40°C, premium) i Z-Perform 1000D (papier niepowlekany, ekonomiczna). Dla mrożonek wybierz Z-Select 2000D — klej działa w -40°C, a Z-Perform 1000D tylko do -20°C.',
+    },
+    {
+      question: 'Czy mogę wydrukować etykietę DHL/InPost z telefonu na drukarce Zebra?',
+      answer: 'Tak — Zebra ZD230d, ZD421d i nowsze obsługują druk przez Wi-Fi lub Bluetooth z aplikacji mobilnych InPost, DPD, DHL. Sprawdź konkretną aplikację — wymaga sterownika ZPL (Zebra Programming Language), który jest standardem wszystkich drukarek Zebra.',
+    },
+    {
+      question: 'Co zrobić, gdy etykieta wyjeżdża z drukarki po skosie?',
+      answer: 'Wykonaj kalibrację nośnika (Calibrate Media) ze sterownika lub panelu drukarki. Pierwsze 3–5 etykiet po kalibracji może iść do śmietnika. Jeśli skos pojawia się ponownie po kilku rolkach, sprawdź czy: wkładasz rolkę centralnie między prowadnice, prowadnice są dociśnięte do brzegów rolki, a wałek (platen roller) nie ma śladów zużycia.',
+    },
+    {
+      question: 'Jaka różnica między 100×150 mm a 4″×6″?',
+      answer: '4″×6″ to standard amerykański w calach: 4×25,4 mm = 101,6 mm, 6×25,4 mm = 152,4 mm, czyli faktycznie 101,6×152,4 mm, zaokrąglane do 102×152 mm. Różnica między 100×150 a 102×152 to po 2 mm w każdym wymiarze — większość drukarek toleruje, ale DHL Express i FedEx wymagają dokładnie 102×152 mm.',
+    },
+    {
+      question: 'Jaka jest najtańsza etykieta termiczna Zebra do wysyłek kurierskich?',
+      answer: 'Z-Essentials 500D — najtańsza w portfolio Zebry, dostępna wyłącznie w formacie 102×152 mm (najpopularniejszy rozmiar wysyłkowy). Niepowlekany papier, klej akrylowy, zakres 0–40°C w pomieszczeniu, BPA-free. Idealna dla e-commerce o stałym wolumenie i do testu pojedynczej drukarki przed dużym zakupem. Aktualną cenę znajdziesz na stronie serii.',
+    },
+    {
+      question: 'Czy używanie „kompatybilnych" etykiet skraca żywotność drukarki Zebra?',
+      answer: 'Tak — przy nieprzewidywalnej grubości papieru, pylących się włóknach i niewłaściwej temperaturze aktywacji termoczuła głowica pracuje mocniej i zużywa się szybciej. Oryginalne etykiety Zebra (Zebra Certified Supplies) z taśmami Zebra potrafią wydłużyć żywotność głowicy nawet o około 30% względem nieautoryzowanych materiałów — i utrzymują warunki gwarancji producenta drukarki.',
+    },
+  ],
+
+  relatedLinks: [
+    { title: 'Etykiety termiczne Zebra — katalog', href: '/etykiety-termiczne-zebra' },
+    { title: 'Drukarki termiczne — katalog', href: '/termiczne-drukarki-etykiet' },
+    { title: 'Z-Essentials 500D — etykiety kurierskie', href: '/etykiety-termiczne-zebra/serie/z-essentials-500d' },
+    { title: 'Z-Perform 1000D — bestseller kurierski', href: '/etykiety-termiczne-zebra/serie/z-perform-1000d' },
+    { title: 'Z-Select 2000D — etykiety spożywcze i chłodnia', href: '/etykiety-termiczne-zebra/serie/z-select-2000d' },
+    { title: 'Etykiety termiczne czy termotransferowe?', href: '/poradnik/etykiety-termiczne-czy-termotransferowe' },
+  ],
+},
 ]
 
 // Helper functions
