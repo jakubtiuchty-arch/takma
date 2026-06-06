@@ -85,6 +85,12 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
     return { ok: false, partNumber, kind, status: 'ERROR', error: `Nie udało się wgrać obrazu do Allegro: ${(e as Error).message}` }
   }
 
+  // EAN/GTIN z ProductEan (klucze trzymane wielkimi literami) — wymagany do aktywacji.
+  const eanRow = await prisma.productEan.findUnique({
+    where: { partNumber: partNumber.toUpperCase() },
+    select: { ean: true },
+  })
+
   const payload: AllegroOfferPayload = buildOfferPayload({
     kind,
     product,
@@ -92,6 +98,7 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
     price,
     images,
     services: offerServices(),
+    ean: eanRow?.ean,
   })
 
   // Edycja istniejącego szkicu (PATCH) zamiast tworzenia nowego (POST) — bez osieroconych ofert.

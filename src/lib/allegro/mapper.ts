@@ -109,6 +109,8 @@ export interface BuildOfferInput {
   images?: string[]
   /** Polityki dostawy/posprzedaży (z offerServices()) — żeby szkic był gotowy do aktywacji. */
   services?: OfferServices
+  /** EAN/GTIN produktu (z ProductEan) — gdy jest, dodajemy param 225693 (wymagany do aktywacji). */
+  ean?: string
 }
 
 /** Buduje payload draftu oferty dla taśmy (17254) lub etykiety (17255). */
@@ -120,6 +122,7 @@ export function buildOfferPayload({
   available = 10,
   images = [],
   services = {},
+  ean,
 }: BuildOfferInput): AllegroOfferPayload {
   const name = buildOfferName(product, variant)
   return {
@@ -132,6 +135,7 @@ export function buildOfferPayload({
           parameters: [
             { id: ALLEGRO_PARAM.producent, valuesIds: [ALLEGRO_DICT.producentZebra] },
             { id: ALLEGRO_PARAM.kodProducenta, values: [variant.partNumber] },
+            ...(ean ? [{ id: ALLEGRO_PARAM.ean, values: [ean] }] : []),
           ],
           ...(images.length ? { images } : {}),
         },

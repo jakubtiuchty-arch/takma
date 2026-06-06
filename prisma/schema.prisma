@@ -587,3 +587,12 @@ model AllegroOffer {
 
   @@unique([environment, partNumber])
 }
+
+// EAN/GTIN produktów (master data od dystrybutora) — do wystawiania na Allegro.
+// Źródło: content feed Ingram (DescriptionPL.csv, kolumny ProductCode/EANCode).
+model ProductEan {
+  partNumber String   @id
+  ean        String
+  source     String   @default("ingram")
+  updatedAt  DateTime @updatedAt
+}
