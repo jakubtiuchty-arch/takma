@@ -10,7 +10,7 @@ export default async function AllegroDashboardPage() {
   let unread = 0
   if (conn?.connected) {
     try {
-      unread = (await listThreads(50)).filter((t) => !t.read).length
+      unread = (await listThreads(20)).filter((t) => !t.read).length
     } catch {
       unread = 0
     }

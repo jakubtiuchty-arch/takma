@@ -25,7 +25,7 @@ export default async function AllegroWiadomosciPage({
   const sp = await searchParams
   const configured = allegroConfigured()
   const conn = configured ? await getConnection() : null
-  const threads = conn?.connected ? await listThreads(50) : []
+  const threads = conn?.connected ? await listThreads(20) : []
 
   const activeId = sp.thread || threads[0]?.id
   let messages: Awaited<ReturnType<typeof getThreadMessages>> = []

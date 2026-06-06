@@ -20,13 +20,15 @@ export interface Message {
   subject?: string
 }
 
-export async function listThreads(limit = 50, offset = 0): Promise<MessagingThread[]> {
-  const j = await allegroFetch<{ threads?: MessagingThread[] }>(`/messaging/threads?limit=${limit}&offset=${offset}`)
+export async function listThreads(limit = 20, offset = 0): Promise<MessagingThread[]> {
+  const lim = Math.min(limit, 20) // Allegro: max 20
+  const j = await allegroFetch<{ threads?: MessagingThread[] }>(`/messaging/threads?limit=${lim}&offset=${offset}`)
   return j.threads || []
 }
 
-export async function getThreadMessages(threadId: string, limit = 100): Promise<Message[]> {
-  const j = await allegroFetch<{ messages?: Message[] }>(`/messaging/threads/${threadId}/messages?limit=${limit}`)
+export async function getThreadMessages(threadId: string, limit = 20): Promise<Message[]> {
+  const lim = Math.min(limit, 20) // Allegro: max 20
+  const j = await allegroFetch<{ messages?: Message[] }>(`/messaging/threads/${threadId}/messages?limit=${lim}`)
   return j.messages || []
 }
 
