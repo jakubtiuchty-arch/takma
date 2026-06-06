@@ -12,14 +12,28 @@ interface Props {
   products: Product[]
   priceByPN: Map<string, number | null>
   offerByPN: Map<string, OfferRow>
+  eanByPN: Map<string, string>
   connected: boolean
 }
 
-/** Tabela wariantów (taśmy lub etykiety) z żywą ceną Allegro i przyciskiem „Wystaw". */
-export default function AllegroOfferTable({ products, priceByPN, offerByPN, connected }: Props) {
+/**
+ * Tabela wariantów (taśmy/etykiety) z żywą ceną Allegro i przyciskiem „Wystaw".
+ * Pokazujemy WYŁĄCZNIE warianty z poprawnym GTIN (eanByPN) — te bez EAN
+ * pomijamy (Allegro i tak nie pozwoli ich aktywować).
+ */
+export default function AllegroOfferTable({ products, priceByPN, offerByPN, eanByPN, connected }: Props) {
+  // produkty z przynajmniej jednym wariantem mającym GTIN
+  const withVariants = products
+    .map((p) => ({ p, variants: (p.variants || []).filter((v) => eanByPN.has(v.partNumber.toUpperCase())) }))
+    .filter((x) => x.variants.length > 0)
+
+  if (withVariants.length === 0) {
+    return <p className="text-sm text-gray-500">Brak wariantów z GTIN do wystawienia.</p>
+  }
+
   return (
     <div className="space-y-6">
-      {products.map((product) => (
+      {withVariants.map(({ p: product, variants }) => (
         <div key={product.id} className="rounded-xl border border-gray-200 bg-white overflow-hidden">
           <div className="px-4 py-3 border-b border-gray-100 bg-gray-50">
             <div className="font-semibold text-gray-900">{product.name}</div>
@@ -30,6 +44,7 @@ export default function AllegroOfferTable({ products, priceByPN, offerByPN, conn
                 <tr className="text-left text-gray-500 border-b border-gray-100">
                   <th className="px-4 py-2 font-medium">Part Number</th>
                   <th className="px-4 py-2 font-medium">Rozmiar</th>
+                  <th className="px-4 py-2 font-medium">EAN</th>
                   <th className="px-4 py-2 font-medium">Cena sklepu (netto)</th>
                   <th className="px-4 py-2 font-medium">Allegro (brutto)</th>
                   <th className="px-4 py-2 font-medium">Status</th>
@@ -37,14 +52,16 @@ export default function AllegroOfferTable({ products, priceByPN, offerByPN, conn
                 </tr>
               </thead>
               <tbody>
-                {(product.variants || []).map((v) => {
+                {variants.map((v) => {
                   const shopNet = priceByPN.get(v.partNumber)
                   const ap = shopNet ? allegroPriceFromShopNet(shopNet) : null
                   const offer = offerByPN.get(v.partNumber)
+                  const ean = eanByPN.get(v.partNumber.toUpperCase())
                   return (
                     <tr key={v.partNumber} className="border-b border-gray-50 last:border-0">
                       <td className="px-4 py-2 font-mono text-xs text-gray-700">{v.partNumber}</td>
                       <td className="px-4 py-2 text-gray-700">{variantSizeLabel(v)}</td>
+                      <td className="px-4 py-2 font-mono text-xs text-gray-500">{ean}</td>
                       <td className="px-4 py-2 text-gray-700">
                         {shopNet ? zl(shopNet) : <span className="text-gray-400">brak</span>}
                       </td>

@@ -9,7 +9,8 @@ export const dynamic = 'force-dynamic'
 export default async function AllegroOfertyPage() {
   const configured = allegroConfigured()
   const conn = configured ? await getConnection() : null
-  const { priceByPN, offerByPN, total, withPrice, published } = await loadOfferListing(transferRibbonProducts)
+  const { priceByPN, offerByPN, eanByPN, total, withEan, published } =
+    await loadOfferListing(transferRibbonProducts)
 
   return (
     <div className="max-w-5xl">
@@ -36,10 +37,10 @@ export default async function AllegroOfertyPage() {
 
       <div className="mb-5 flex flex-wrap gap-3 text-sm">
         <span className="rounded-lg border border-gray-200 bg-white px-3 py-1.5">
-          Warianty: <strong>{total}</strong>
+          Z GTIN (do wystawienia): <strong>{withEan}</strong>
         </span>
         <span className="rounded-lg border border-gray-200 bg-white px-3 py-1.5">
-          Z żywą ceną: <strong>{withPrice}</strong>
+          Bez GTIN (ukryte): <strong>{total - withEan}</strong>
         </span>
         <span className="rounded-lg border border-gray-200 bg-white px-3 py-1.5">
           Szkice na Allegro: <strong>{published}</strong>
@@ -50,6 +51,7 @@ export default async function AllegroOfertyPage() {
         products={transferRibbonProducts}
         priceByPN={priceByPN}
         offerByPN={offerByPN}
+        eanByPN={eanByPN}
         connected={!!conn?.connected}
       />
     </div>
