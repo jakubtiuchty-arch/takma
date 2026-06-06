@@ -64,34 +64,53 @@ function esc(s: string): string {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 }
 
-/** Opis oferty w formacie Allegro (sekcje z elementami TEXT) — wspólny dla taśm i etykiet. */
+/** Opis oferty w formacie Allegro (sekcje TEXT) — wspólny dla taśm i etykiet. */
 export function buildOfferDescription(
   product: Product,
   variant: ProductVariant,
+  ean?: string,
 ): AllegroOfferPayload['description'] {
   const a = variant.attributes || {}
   const rozmiar =
-    a['Rozmiar'] ||
-    (a['Szerokość'] && a['Długość'] ? `${a['Szerokość']} × ${a['Długość']}` : '')
+    a['Rozmiar'] || (a['Szerokość'] && a['Długość'] ? `${a['Szerokość']} × ${a['Długość']}` : '')
+
+  // Sekcja 1: nazwa + krótki wstęp + pełny opis (jeśli różny i dłuższy)
+  const short = (product.shortDescription || '').trim()
+  const long = (product.description || '').trim()
+  const introParts = [short]
+  if (long && long !== short) introParts.push(long)
+  const introHtml = introParts.filter(Boolean).map((p) => `<p>${esc(p)}</p>`).join('')
+
+  // Sekcja 2: specyfikacja — atrybuty wariantu + pełna specyfikacja produktu + EAN
   const specRows: Array<[string, string | undefined]> = [
     ['Part Number', variant.partNumber],
     ['Rozmiar', rozmiar],
     ['Rdzeń', a['Rdzeń']],
+    ...Object.entries(a)
+      .filter(([k]) => !['Rozmiar', 'Rdzeń', 'Szerokość', 'Długość'].includes(k))
+      .map(([k, v]) => [k, v] as [string, string]),
+    ...(product.specifications || []).map((s) => [s.name, s.value] as [string, string]),
+    ...(ean ? [['EAN', ean] as [string, string]] : []),
     ['Producent', 'Zebra Technologies'],
   ]
-  const rows = specRows.filter(([, v]) => v)
+  // dedup po nazwie (pierwsze wystąpienie wygrywa), pomiń puste
+  const seen = new Set<string>()
+  const rows = specRows.filter(([k, v]) => {
+    if (!v || seen.has(k)) return false
+    seen.add(k)
+    return true
+  })
   const specHtml = `<ul>${rows.map(([k, v]) => `<li><b>${esc(k)}:</b> ${esc(String(v))}</li>`).join('')}</ul>`
 
-  const apps = (product.applications || []).slice(0, 6)
+  // Sekcja 3: zastosowania
+  const apps = (product.applications || []).slice(0, 8)
   const appsHtml = apps.length
     ? `<h2>Zastosowania</h2><ul>${apps.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>`
     : ''
 
-  const intro = esc(product.shortDescription || product.description || product.name)
-
   return {
     sections: [
-      { items: [{ type: 'TEXT', content: `<h2>${esc(product.name)}</h2><p>${intro}</p>` }] },
+      { items: [{ type: 'TEXT', content: `<h2>${esc(product.name)}</h2>${introHtml || `<p>${esc(product.name)}</p>`}` }] },
       { items: [{ type: 'TEXT', content: `<h2>Specyfikacja</h2>${specHtml}` }] },
       ...(appsHtml ? [{ items: [{ type: 'TEXT' as const, content: appsHtml }] }] : []),
     ],
@@ -145,7 +164,7 @@ export function buildOfferPayload({
     parameters: [{ id: ALLEGRO_PARAM.stan, valuesIds: [ALLEGRO_DICT.stanNowy] }],
     sellingMode: { price: { amount: price.gross.toFixed(2), currency: 'PLN' } },
     stock: { available },
-    description: buildOfferDescription(product, variant),
+    description: buildOfferDescription(product, variant, ean),
     ...(services.delivery ? { delivery: services.delivery } : {}),
     ...(services.afterSalesServices ? { afterSalesServices: services.afterSalesServices } : {}),
     publication: { status: 'INACTIVE' },

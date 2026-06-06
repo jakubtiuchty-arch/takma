@@ -6,6 +6,7 @@ import { buildOfferPayload, type AllegroOfferPayload } from './mapper'
 import { uploadImageByUrl } from './images'
 import { offerServices } from './selling-policies'
 import { isValidGtin } from './gtin'
+import { liveAvailableForPN } from './stock'
 import type { AllegroProductKind } from './categories'
 import { transferRibbonProducts } from '@/data/transfer-ribbon-products'
 import { products as allProducts } from '@/data/products'
@@ -94,8 +95,11 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
   })
   const ean = isValidGtin(eanRow?.ean) ? eanRow!.ean : undefined
 
+  // Żywy stan z StockCache (min(totalStock, 30)) — synchronizowany później cronem.
+  const available = await liveAvailableForPN(partNumber)
+
   const services = offerServices()
-  let payload: AllegroOfferPayload = buildOfferPayload({ kind, product, variant, price, images, services, ean })
+  let payload: AllegroOfferPayload = buildOfferPayload({ kind, product, variant, price, images, services, ean, available })
 
   // Edycja istniejącego szkicu (PATCH) zamiast tworzenia nowego (POST) — bez osieroconych ofert.
   const existing = await prisma.allegroOffer.findUnique({
@@ -132,6 +136,7 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
         status: 'DRAFT',
         priceNet: price.net,
         priceGross: price.gross,
+        stockAvailable: available,
         payload: JSON.stringify(payload),
       },
       update: {
@@ -139,6 +144,7 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
         status: 'DRAFT',
         priceNet: price.net,
         priceGross: price.gross,
+        stockAvailable: available,
         lastError: null,
         payload: JSON.stringify(payload),
       },

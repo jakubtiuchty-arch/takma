@@ -578,12 +578,13 @@ model AllegroOffer {
   allegroId   String? // id oferty zwrócone przez Allegro
   allegroUrl  String?
   status      String   @default("DRAFT") // DRAFT | ACTIVE | ERROR
-  priceNet    Float?
-  priceGross  Float?
-  lastError   String?  @db.Text
-  payload     String?  @db.Text // ostatni wysłany payload (debug)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  priceNet      Float?
+  priceGross    Float?
+  stockAvailable Int?    // ostatni stan wypchnięty do Allegro (do synchronizacji)
+  lastError     String?  @db.Text
+  payload       String?  @db.Text // ostatni wysłany payload (debug)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 
   @@unique([environment, partNumber])
 }
