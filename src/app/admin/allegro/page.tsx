@@ -1,11 +1,20 @@
 import Link from 'next/link'
 import { getConnection, allegroConfigured, ALLEGRO_ENV } from '@/lib/allegro/auth'
+import { listThreads } from '@/lib/allegro/messaging'
 
 export const dynamic = 'force-dynamic'
 
 export default async function AllegroDashboardPage() {
   const configured = allegroConfigured()
   const conn = configured ? await getConnection() : null
+  let unread = 0
+  if (conn?.connected) {
+    try {
+      unread = (await listThreads(50)).filter((t) => !t.read).length
+    } catch {
+      unread = 0
+    }
+  }
 
   return (
     <div>
@@ -36,6 +45,18 @@ export default async function AllegroDashboardPage() {
         <Link href="/admin/allegro/stare-oferty" className="rounded-xl border border-gray-200 bg-white p-5 hover:border-gray-300 transition-colors">
           <div className="font-semibold text-gray-900 mb-1">Stare oferty</div>
           <p className="text-sm text-gray-500">Wygaś dawne, generyczne oferty materiałów (zastępowane nowymi).</p>
+        </Link>
+
+        <Link href="/admin/allegro/wiadomosci" className="rounded-xl border border-gray-200 bg-white p-5 hover:border-gray-300 transition-colors">
+          <div className="flex items-center gap-2 mb-1">
+            <span className="font-semibold text-gray-900">Wiadomości</span>
+            {unread > 0 && (
+              <span className="inline-flex items-center justify-center min-w-5 h-5 px-1.5 rounded-full bg-blue-600 text-white text-xs font-semibold">
+                {unread}
+              </span>
+            )}
+          </div>
+          <p className="text-sm text-gray-500">Komunikacja z klientami — czytaj i odpowiadaj na wiadomości.</p>
         </Link>
       </div>
     </div>
