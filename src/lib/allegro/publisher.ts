@@ -7,6 +7,7 @@ import { uploadImageByUrl } from './images'
 import { offerServices } from './selling-policies'
 import { isValidGtin } from './gtin'
 import { liveAvailableForPN } from './stock'
+import { gpsrForProductSet, ALLEGRO_AUTO_PUBLISH } from './gpsr'
 import type { AllegroProductKind } from './categories'
 import { transferRibbonProducts } from '@/data/transfer-ribbon-products'
 import { products as allProducts } from '@/data/products'
@@ -43,7 +44,7 @@ export interface PublishResult {
   partNumber: string
   kind?: AllegroProductKind
   allegroId?: string
-  status: 'DRAFT' | 'ERROR'
+  status: 'DRAFT' | 'ACTIVE' | 'ERROR'
   error?: string
   priceNet?: number
   priceGross?: number
@@ -99,7 +100,11 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
   const available = await liveAvailableForPN(partNumber)
 
   const services = offerServices()
-  let payload: AllegroOfferPayload = buildOfferPayload({ kind, product, variant, price, images, services, ean, available })
+  const gpsr = gpsrForProductSet()
+  const active = ALLEGRO_AUTO_PUBLISH
+  let payload: AllegroOfferPayload = buildOfferPayload({
+    kind, product, variant, price, images, services, ean, available, gpsr, active,
+  })
 
   // Edycja istniejącego szkicu (PATCH) zamiast tworzenia nowego (POST) — bez osieroconych ofert.
   const existing = await prisma.allegroOffer.findUnique({
@@ -119,12 +124,15 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
     } catch (e) {
       // Allegro odrzucił GTIN — ponów bez EAN (zostanie do uzupełnienia przy aktywacji).
       if (ean && /GTIN|225693/i.test((e as Error).message)) {
-        payload = buildOfferPayload({ kind, product, variant, price, images, services, ean: undefined })
+        payload = buildOfferPayload({
+          kind, product, variant, price, images, services, ean: undefined, available, gpsr, active,
+        })
         res = await send(payload)
       } else {
         throw e
       }
     }
+    const offerStatus = active ? 'ACTIVE' : 'DRAFT'
     await prisma.allegroOffer.upsert({
       where: { environment_partNumber: { environment: ALLEGRO_ENV, partNumber } },
       create: {
@@ -133,7 +141,7 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
         seriesSlug: product.slug,
         productKind: kind,
         allegroId: res.id,
-        status: 'DRAFT',
+        status: offerStatus,
         priceNet: price.net,
         priceGross: price.gross,
         stockAvailable: available,
@@ -141,7 +149,7 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
       },
       update: {
         allegroId: res.id,
-        status: 'DRAFT',
+        status: offerStatus,
         priceNet: price.net,
         priceGross: price.gross,
         stockAvailable: available,
@@ -149,7 +157,7 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
         payload: JSON.stringify(payload),
       },
     })
-    return { ok: true, partNumber, kind, allegroId: res.id, status: 'DRAFT', priceNet: price.net, priceGross: price.gross }
+    return { ok: true, partNumber, kind, allegroId: res.id, status: offerStatus, priceNet: price.net, priceGross: price.gross }
   } catch (e) {
     const error = (e as Error).message
     await prisma.allegroOffer

@@ -69,7 +69,11 @@ export default function AllegroOfferTable({ products, priceByPN, offerByPN, eanB
                         {ap ? zl(ap.gross) : <span className="text-gray-400">—</span>}
                       </td>
                       <td className="px-4 py-2">
-                        {offer?.status === 'DRAFT' ? (
+                        {offer?.status === 'ACTIVE' ? (
+                          <span className="inline-flex items-center gap-1.5 text-emerald-700 font-medium">
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" /> Aktywna
+                          </span>
+                        ) : offer?.status === 'DRAFT' ? (
                           <span className="inline-flex items-center gap-1.5 text-emerald-700">
                             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" /> Szkic
                           </span>
@@ -85,7 +89,7 @@ export default function AllegroOfferTable({ products, priceByPN, offerByPN, eanB
                         <AllegroPublishButton
                           partNumber={v.partNumber}
                           disabled={!connected || !ap}
-                          published={offer?.status === 'DRAFT'}
+                          published={offer?.status === 'DRAFT' || offer?.status === 'ACTIVE'}
                         />
                       </td>
                     </tr>

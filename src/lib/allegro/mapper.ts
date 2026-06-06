@@ -2,6 +2,7 @@ import type { Product, ProductVariant } from '@/data/products'
 import { ALLEGRO_PARAM, ALLEGRO_DICT, ALLEGRO_CATEGORY, type AllegroProductKind } from './categories'
 import type { AllegroPrice } from './pricing'
 import type { OfferServices } from './selling-policies'
+import type { GpsrFields } from './gpsr'
 
 /**
  * Budowa payloadu oferty Allegro z wariantu katalogu TAKMA (taśmy i etykiety).
@@ -49,6 +50,8 @@ export interface AllegroOfferPayload {
       images?: string[]
     }
     quantity: { value: number }
+    responsibleProducer?: { id: string }
+    safetyInformation?: { type: 'TEXT'; description: string }
   }>
   parameters: Array<{ id: string; valuesIds?: string[]; values?: string[] }>
   sellingMode: { price: { amount: string; currency: 'PLN' } }
@@ -56,7 +59,7 @@ export interface AllegroOfferPayload {
   description: { sections: Array<{ items: Array<{ type: 'TEXT'; content: string }> }> }
   delivery?: OfferServices['delivery']
   afterSalesServices?: OfferServices['afterSalesServices']
-  publication: { status: 'INACTIVE' }
+  publication: { status: 'ACTIVE' | 'INACTIVE' }
 }
 
 /** Escape do treści HTML opisu (dozwolone tagi Allegro: h1,h2,p,ul,ol,li,b). */
@@ -130,6 +133,10 @@ export interface BuildOfferInput {
   services?: OfferServices
   /** EAN/GTIN produktu (z ProductEan) — gdy jest, dodajemy param 225693 (wymagany do aktywacji). */
   ean?: string
+  /** GPSR (producent + bezpieczeństwo) — z gpsrForProductSet(). */
+  gpsr?: GpsrFields
+  /** true → publikuj od razu jako ACTIVE; false → szkic (INACTIVE). */
+  active?: boolean
 }
 
 /** Buduje payload draftu oferty dla taśmy (17254) lub etykiety (17255). */
@@ -142,6 +149,8 @@ export function buildOfferPayload({
   images = [],
   services = {},
   ean,
+  gpsr = {},
+  active = false,
 }: BuildOfferInput): AllegroOfferPayload {
   const name = buildOfferName(product, variant)
   return {
@@ -159,6 +168,8 @@ export function buildOfferPayload({
           ...(images.length ? { images } : {}),
         },
         quantity: { value: 1 },
+        ...(gpsr.responsibleProducer ? { responsibleProducer: gpsr.responsibleProducer } : {}),
+        ...(gpsr.safetyInformation ? { safetyInformation: gpsr.safetyInformation } : {}),
       },
     ],
     parameters: [{ id: ALLEGRO_PARAM.stan, valuesIds: [ALLEGRO_DICT.stanNowy] }],
@@ -167,6 +178,6 @@ export function buildOfferPayload({
     description: buildOfferDescription(product, variant, ean),
     ...(services.delivery ? { delivery: services.delivery } : {}),
     ...(services.afterSalesServices ? { afterSalesServices: services.afterSalesServices } : {}),
-    publication: { status: 'INACTIVE' },
+    publication: { status: active ? 'ACTIVE' : 'INACTIVE' },
   }
 }
