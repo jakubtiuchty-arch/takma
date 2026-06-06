@@ -7,9 +7,10 @@ interface Props {
   partNumber: string
   disabled?: boolean
   published?: boolean
+  autoPublish?: boolean
 }
 
-export default function AllegroPublishButton({ partNumber, disabled, published }: Props) {
+export default function AllegroPublishButton({ partNumber, disabled, published, autoPublish }: Props) {
   const router = useRouter()
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -43,7 +44,15 @@ export default function AllegroPublishButton({ partNumber, disabled, published }
         disabled={disabled || loading}
         className="inline-flex items-center justify-center px-3 py-1.5 text-xs font-semibold rounded-lg transition-colors bg-[#ff5a00] text-white hover:bg-[#e65100] disabled:opacity-40 disabled:cursor-not-allowed"
       >
-        {loading ? 'Wystawiam…' : published ? 'Wystaw ponownie' : 'Wystaw szkic'}
+        {loading
+          ? 'Wystawiam…'
+          : autoPublish
+            ? published
+              ? 'Publikuj ponownie'
+              : 'Publikuj (live)'
+            : published
+              ? 'Wystaw ponownie'
+              : 'Wystaw szkic'}
       </button>
       {error && <span className="text-[11px] text-red-600 max-w-[220px] text-right">{error}</span>}
     </div>

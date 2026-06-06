@@ -14,6 +14,7 @@ interface Props {
   offerByPN: Map<string, OfferRow>
   eanByPN: Map<string, string>
   connected: boolean
+  autoPublish?: boolean
 }
 
 /**
@@ -21,7 +22,7 @@ interface Props {
  * Pokazujemy WYŁĄCZNIE warianty z poprawnym GTIN (eanByPN) — te bez EAN
  * pomijamy (Allegro i tak nie pozwoli ich aktywować).
  */
-export default function AllegroOfferTable({ products, priceByPN, offerByPN, eanByPN, connected }: Props) {
+export default function AllegroOfferTable({ products, priceByPN, offerByPN, eanByPN, connected, autoPublish }: Props) {
   // produkty z przynajmniej jednym wariantem mającym GTIN
   const withVariants = products
     .map((p) => ({ p, variants: (p.variants || []).filter((v) => eanByPN.has(v.partNumber.toUpperCase())) }))
@@ -90,6 +91,7 @@ export default function AllegroOfferTable({ products, priceByPN, offerByPN, eanB
                           partNumber={v.partNumber}
                           disabled={!connected || !ap}
                           published={offer?.status === 'DRAFT' || offer?.status === 'ACTIVE'}
+                          autoPublish={autoPublish}
                         />
                       </td>
                     </tr>

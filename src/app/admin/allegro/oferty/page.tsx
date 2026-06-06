@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { allegroConfigured, getConnection, ALLEGRO_ENV } from '@/lib/allegro/auth'
 import { loadOfferListing } from '@/lib/allegro/offer-listing'
 import { transferRibbonProducts } from '@/data/transfer-ribbon-products'
+import { ALLEGRO_AUTO_PUBLISH } from '@/lib/allegro/gpsr'
 import AllegroOfferTable from '@/components/admin/AllegroOfferTable'
 
 export const dynamic = 'force-dynamic'
@@ -53,6 +54,7 @@ export default async function AllegroOfertyPage() {
         offerByPN={offerByPN}
         eanByPN={eanByPN}
         connected={!!conn?.connected}
+        autoPublish={ALLEGRO_AUTO_PUBLISH}
       />
     </div>
   )
