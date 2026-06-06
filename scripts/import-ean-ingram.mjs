@@ -31,6 +31,20 @@ if (!DATABASE_URL) {
 // Indeksy kolumn (z nagłówka feedu)
 const IDX = { SKU: 1, ProductCode: 11, EANCode: 12 }
 
+/** GTIN: struktura + suma kontrolna + odrzucenie placeholderów (jak src/lib/allegro/gtin.ts). */
+function isValidGtin(ean) {
+  if (!ean || !/^\d{8,14}$/.test(ean)) return false
+  if (![8, 12, 13, 14].includes(ean.length)) return false
+  if (/^(\d)\1+$/.test(ean)) return false
+  if (/^(\d\d)\1+\d?$/.test(ean)) return false
+  if (/^0+/.test(ean)) return false
+  const digits = ean.split('').map(Number)
+  const check = digits.pop()
+  let sum = 0
+  digits.reverse().forEach((d, i) => (sum += d * (i % 2 === 0 ? 3 : 1)))
+  return (10 - (sum % 10)) % 10 === check
+}
+
 function parseAndCollect(data) {
   const map = new Map() // PN(upper) -> ean
   let field = '',
@@ -82,8 +96,28 @@ function parseAndCollect(data) {
 async function main() {
   console.log('Czytam', csvPath)
   const data = fs.readFileSync(csvPath, 'utf8')
-  const map = parseAndCollect(data)
-  console.log('Zebrano par PN→EAN:', map.size)
+  const raw = parseAndCollect(data)
+  console.log('Zebrano par PN→EAN (surowe):', raw.size)
+
+  // Filtr 1: poprawny GTIN (struktura + suma kontrolna + nie-placeholder)
+  // Filtr 2: odrzuć EAN współdzielone przez >3 PN (prawdziwy GTIN jest unikalny per produkt)
+  const freq = new Map()
+  for (const ean of raw.values()) freq.set(ean, (freq.get(ean) || 0) + 1)
+  const map = new Map()
+  let badGtin = 0,
+    shared = 0
+  for (const [pn, ean] of raw) {
+    if (!isValidGtin(ean)) {
+      badGtin++
+      continue
+    }
+    if (freq.get(ean) > 3) {
+      shared++
+      continue
+    }
+    map.set(pn, ean)
+  }
+  console.log(`Po filtrach: ${map.size} (odrzucone: zły GTIN ${badGtin}, współdzielone ${shared})`)
 
   const client = new pg.Client({ connectionString: DATABASE_URL })
   await client.connect()

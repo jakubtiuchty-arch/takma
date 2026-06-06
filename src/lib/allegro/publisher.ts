@@ -5,6 +5,7 @@ import { allegroPriceForPN } from './pricing'
 import { buildOfferPayload, type AllegroOfferPayload } from './mapper'
 import { uploadImageByUrl } from './images'
 import { offerServices } from './selling-policies'
+import { isValidGtin } from './gtin'
 import type { AllegroProductKind } from './categories'
 import { transferRibbonProducts } from '@/data/transfer-ribbon-products'
 import { products as allProducts } from '@/data/products'
@@ -86,20 +87,15 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
   }
 
   // EAN/GTIN z ProductEan (klucze trzymane wielkimi literami) — wymagany do aktywacji.
+  // Filtrujemy placeholdery Ingrama walidatorem; gdyby coś przeszło, ponawiamy bez EAN.
   const eanRow = await prisma.productEan.findUnique({
     where: { partNumber: partNumber.toUpperCase() },
     select: { ean: true },
   })
+  const ean = isValidGtin(eanRow?.ean) ? eanRow!.ean : undefined
 
-  const payload: AllegroOfferPayload = buildOfferPayload({
-    kind,
-    product,
-    variant,
-    price,
-    images,
-    services: offerServices(),
-    ean: eanRow?.ean,
-  })
+  const services = offerServices()
+  let payload: AllegroOfferPayload = buildOfferPayload({ kind, product, variant, price, images, services, ean })
 
   // Edycja istniejącego szkicu (PATCH) zamiast tworzenia nowego (POST) — bez osieroconych ofert.
   const existing = await prisma.allegroOffer.findUnique({
@@ -109,8 +105,22 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
   const method = existing?.allegroId ? 'PATCH' : 'POST'
   const path = existing?.allegroId ? `/sale/product-offers/${existing.allegroId}` : '/sale/product-offers'
 
+  const send = (p: AllegroOfferPayload) =>
+    allegroFetch<AllegroOfferResponse>(path, { method, body: JSON.stringify(p) })
+
   try {
-    const res = await allegroFetch<AllegroOfferResponse>(path, { method, body: JSON.stringify(payload) })
+    let res: AllegroOfferResponse
+    try {
+      res = await send(payload)
+    } catch (e) {
+      // Allegro odrzucił GTIN — ponów bez EAN (zostanie do uzupełnienia przy aktywacji).
+      if (ean && /GTIN|225693/i.test((e as Error).message)) {
+        payload = buildOfferPayload({ kind, product, variant, price, images, services, ean: undefined })
+        res = await send(payload)
+      } else {
+        throw e
+      }
+    }
     await prisma.allegroOffer.upsert({
       where: { environment_partNumber: { environment: ALLEGRO_ENV, partNumber } },
       create: {
