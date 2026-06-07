@@ -131,17 +131,19 @@ export default function Sidebar() {
           // Pozycja z podkategoriami (drzewko) — np. Allegro
           if (children && children.length > 0) {
             return (
-              <div key={item.href}>
+              <div key={item.href} className="pt-1">
                 <div
                   className={clsx(
-                    'flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-semibold',
-                    isActive ? 'text-white' : 'text-slate-300'
+                    'flex items-center gap-3 px-3 py-2 text-xs font-bold uppercase tracking-wider',
+                    isActive ? 'text-blue-400' : 'text-slate-400'
                   )}
                 >
-                  {item.icon}
+                  <span className={clsx('transition-colors', isActive ? 'text-blue-400' : 'text-slate-500')}>
+                    {item.icon}
+                  </span>
                   {item.label}
                 </div>
-                <div className="mt-1 ml-4 pl-3 border-l border-slate-700 space-y-0.5">
+                <div className="mt-0.5 ml-[1.35rem] pl-3 border-l border-slate-700/70 space-y-0.5">
                   {children.map((child) => {
                     const childActive = isChildActive(pathname, child.href)
                     return (
@@ -149,12 +151,18 @@ export default function Sidebar() {
                         key={child.href}
                         href={child.href}
                         className={clsx(
-                          'block px-3 py-2 rounded-lg text-sm transition-colors',
+                          'group flex items-center gap-2.5 rounded-md px-3 py-1.5 text-[13px] transition-all',
                           childActive
-                            ? 'bg-blue-600 text-white font-medium'
-                            : 'text-slate-300 hover:bg-slate-700 hover:text-white'
+                            ? 'bg-blue-600 text-white font-medium shadow-sm shadow-blue-900/40'
+                            : 'text-slate-400 hover:bg-slate-700/60 hover:text-white'
                         )}
                       >
+                        <span
+                          className={clsx(
+                            'w-1.5 h-1.5 rounded-full flex-shrink-0 transition-colors',
+                            childActive ? 'bg-white' : 'bg-slate-600 group-hover:bg-slate-300'
+                          )}
+                        />
                         {child.label}
                       </Link>
                     )
