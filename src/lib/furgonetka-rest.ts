@@ -140,30 +140,26 @@ export function carrierKeyword(methodName?: string): string {
   return ''
 }
 
-interface FurgService {
-  service_id?: number
-  id?: number
-  carrier?: string
-  name?: string
-  price?: { gross?: number } | number
+export interface FurgService {
+  id: number
+  service: string // slug: dpd, inpost, dhl, gls, ups, orlen, poczta, fedex…
+  name: string
 }
 
-/** Wycena — zwraca dostępne usługi z cenami. */
-export async function calculatePrice(receiver: FurgAddress, parcels: FurgParcel[]): Promise<FurgService[]> {
-  const body = { sender: senderAddress(), pickup: senderAddress(), receiver, parcels, type: 'package' }
-  const j = await furgFetch<{ services?: FurgService[]; price?: FurgService[] }>(`/packages/calculate-price`, {
-    method: 'POST',
-    body: JSON.stringify(body),
-  })
-  return j.services || j.price || []
+/** Lista usług kurierskich skonfigurowanych na koncie (z id). */
+export async function getServices(): Promise<FurgService[]> {
+  const j = await furgFetch<{ services?: FurgService[] }>(`/account/services`)
+  return j.services || []
 }
 
-/** Wybiera usługę pasującą do przewoźnika z zamówienia Allegro. */
+/** Wybiera service_id pasujący do przewoźnika z zamówienia Allegro (po slug). */
 export function pickService(o: AllegroOrder, services: FurgService[]): number | null {
   const kw = carrierKeyword(o.delivery?.method?.name)
-  const match = services.find((s) => ((s.carrier || s.name || '') as string).toLowerCase().includes(kw))
-  const chosen = match || services[0]
-  return (chosen?.service_id ?? chosen?.id) ?? null
+  if (kw) {
+    const match = services.find((s) => (s.service || '').toLowerCase().startsWith(kw))
+    if (match) return match.id
+  }
+  return services[0]?.id ?? null
 }
 
 /** Tworzy przesyłkę → zwraca id paczki + numer listu (jeśli zwrócony). */

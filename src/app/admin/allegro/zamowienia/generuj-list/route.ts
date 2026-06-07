@@ -6,7 +6,7 @@ import {
   furgonetkaConfigured,
   receiverAddress,
   buildParcels,
-  calculatePrice,
+  getServices,
   pickService,
   createPackage,
   getPackageTracking,
@@ -39,7 +39,7 @@ export async function POST(request: Request) {
     const receiver = receiverAddress(order)
     const parcels = buildParcels(order)
 
-    const services = await calculatePrice(receiver, parcels)
+    const services = await getServices()
     const serviceId = pickService(order, services)
     if (!serviceId) {
       return NextResponse.json({ error: 'Brak dopasowanej usługi Furgonetki dla tej dostawy.' }, { status: 422 })
