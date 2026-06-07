@@ -604,6 +604,9 @@ model AllegroOrderNotified {
   // numer listu przewozowego (Furgonetka) — gdy utworzymy przesyłkę
   trackingNumber String?
   shipmentId     String?
+  // wewnętrzny znacznik działu realizacji (niezależny od statusu Allegro)
+  fulfilled   Boolean   @default(false)
+  fulfilledAt DateTime?
 }
 
 // EAN/GTIN produktów (master data od dystrybutora) — do wystawiania na Allegro.

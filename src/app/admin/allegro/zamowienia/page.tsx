@@ -5,6 +5,7 @@ import { listOrders, getOrder, ORDER_STATUS_PL, FULFILLMENT_STATUS_PL, type Alle
 import { findThreadByBuyerId } from '@/lib/allegro/messaging'
 import AllegroGenerateLabelButton from '@/components/admin/AllegroGenerateLabelButton'
 import AllegroThreadView from '@/components/admin/AllegroThreadView'
+import AllegroFulfillCheckbox from '@/components/admin/AllegroFulfillCheckbox'
 
 export const dynamic = 'force-dynamic'
 
@@ -173,6 +174,10 @@ export default async function AllegroZamowieniaPage({
 
   // Lista
   const { orders, count } = await listOrders(25)
+  const fulfilledRows = await prisma.allegroOrderNotified
+    .findMany({ where: { orderId: { in: orders.map((o) => o.id) } }, select: { orderId: true, fulfilled: true } })
+    .catch(() => [])
+  const fulfilledMap = new Map(fulfilledRows.map((r) => [r.orderId, r.fulfilled]))
 
   return (
     <div className="max-w-5xl">
@@ -196,6 +201,7 @@ export default async function AllegroZamowieniaPage({
                 <th className="px-4 py-2 font-medium">Pozycje</th>
                 <th className="px-4 py-2 font-medium">Status</th>
                 <th className="px-4 py-2 font-medium">Realizacja</th>
+                <th className="px-4 py-2 font-medium">Zrealizowano</th>
                 <th className="px-4 py-2 font-medium text-right">Kwota</th>
               </tr>
             </thead>
@@ -215,6 +221,9 @@ export default async function AllegroZamowieniaPage({
                   <td className="px-4 py-2 text-gray-600">{o.lineItems?.length || 0}</td>
                   <td className="px-4 py-2"><StatusBadge status={o.status} /></td>
                   <td className="px-4 py-2"><FulfillmentBadge status={o.fulfillment?.status} /></td>
+                  <td className="px-4 py-2">
+                    <AllegroFulfillCheckbox orderId={o.id} initial={fulfilledMap.get(o.id) ?? false} />
+                  </td>
                   <td className="px-4 py-2 text-right font-medium text-gray-900">{money(o.summary?.totalToPay)}</td>
                 </tr>
               ))}
