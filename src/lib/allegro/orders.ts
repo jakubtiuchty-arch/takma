@@ -32,12 +32,12 @@ export interface AllegroOrder {
   lineItems?: OrderLineItem[]
   delivery?: {
     address?: OrderAddress
-    method?: { name?: string }
+    method?: { id?: string; name?: string }
     cost?: { amount: string; currency: string }
-    pickupPoint?: { name?: string; address?: { street?: string; city?: string; zipCode?: string } }
+    pickupPoint?: { id?: string; name?: string; address?: { street?: string; city?: string; zipCode?: string } }
   }
-  payment?: { type?: string; finishedAt?: string }
-  invoice?: { required?: boolean }
+  payment?: { type?: string; finishedAt?: string; paidAmount?: { amount: string; currency: string } }
+  invoice?: { required?: boolean; address?: OrderAddress & { taxId?: string; company?: { name?: string; taxId?: string } } }
   messageToSeller?: string | null
   note?: { text?: string } | null
   updatedAt?: string
@@ -61,6 +61,34 @@ export const ORDER_STATUS_PL: Record<string, string> = {
   FILLED_IN: 'Dane uzupełnione',
   READY_FOR_PROCESSING: 'Opłacone — do realizacji',
   CANCELLED: 'Anulowane',
+}
+
+/** Mapowanie nazwy przewoźnika (z Furgonetki) na carrierId Allegro. */
+export function mapCourierToAllegroCarrier(name: string): { carrierId: string; carrierName?: string } {
+  const n = (name || '').toUpperCase()
+  if (n.includes('INPOST') || n.includes('PACZKOMAT')) return { carrierId: 'INPOST' }
+  if (n.includes('DPD')) return { carrierId: 'DPD' }
+  if (n.includes('DHL')) return { carrierId: 'DHL' }
+  if (n.includes('GLS')) return { carrierId: 'GLS' }
+  if (n.includes('UPS')) return { carrierId: 'UPS' }
+  if (n.includes('FEDEX')) return { carrierId: 'FEDEX' }
+  if (n.includes('ORLEN')) return { carrierId: 'ORLEN_PACZKA' }
+  if (n.includes('POCZTA') || n.includes('POLSKA')) return { carrierId: 'POCZTA_POLSKA' }
+  if (n.includes('GEIS')) return { carrierId: 'GEIS' }
+  if (n.includes('AMBRO')) return { carrierId: 'AMBRO_EXPRESS' }
+  // nieznany → OTHER + nazwa własna
+  return { carrierId: 'OTHER', carrierName: name || 'Kurier' }
+}
+
+/** Dodaj list przewozowy (tracking) do zamówienia Allegro — kupujący zobaczy nr + status „wysłane". */
+export async function addShipment(orderId: string, waybill: string, courierService: string): Promise<void> {
+  const { carrierId, carrierName } = mapCourierToAllegroCarrier(courierService)
+  const body: Record<string, unknown> = { carrierId, waybill }
+  if (carrierName) body.carrierName = carrierName
+  await allegroFetch(`/order/checkout-forms/${orderId}/shipments`, {
+    method: 'POST',
+    body: JSON.stringify(body),
+  })
 }
 
 export const FULFILLMENT_STATUS_PL: Record<string, string> = {
