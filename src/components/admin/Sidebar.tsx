@@ -107,45 +107,37 @@ export default function Sidebar() {
   const pathname = usePathname()
 
   return (
-    <aside className="w-60 bg-slate-800 text-white min-h-screen flex flex-col flex-shrink-0">
+    <aside className="w-64 bg-gradient-to-b from-slate-900 to-slate-950 text-white min-h-screen flex flex-col flex-shrink-0 border-r border-slate-800/70">
       {/* Logo */}
-      <div className="px-5 py-2.5 border-b border-slate-700 flex justify-center">
+      <div className="h-16 px-5 flex items-center justify-center border-b border-slate-800/70">
         <Link href="/admin">
-          <Image
-            src="/images/takma_logo.png"
-            alt="TAKMA"
-            width={140}
-            height={28}
-            className="brightness-0 invert"
-          />
+          <Image src="/images/takma_logo.png" alt="TAKMA" width={140} height={28} className="brightness-0 invert" />
         </Link>
       </div>
 
       {/* Nav */}
-      <nav className="flex-1 px-3 py-4 space-y-1">
+      <nav className="flex-1 px-3 py-5 space-y-1 overflow-y-auto">
         {navItems.map((item) => {
           const children = (item as { children?: { label: string; href: string }[] }).children
           const isActive =
-            item.href === '/admin'
-              ? pathname === '/admin'
-              : pathname.startsWith(item.href)
+            item.href === '/admin' ? pathname === '/admin' : pathname.startsWith(item.href)
 
           // Pozycja z podkategoriami (drzewko) — np. Allegro
           if (children && children.length > 0) {
             return (
-              <div key={item.href} className="pt-1">
+              <div key={item.href} className="pt-3">
                 <div
                   className={clsx(
-                    'flex items-center gap-3 px-3 py-2 text-xs font-bold uppercase tracking-wider',
-                    isActive ? 'text-blue-400' : 'text-slate-400'
+                    'flex items-center gap-3 px-3 pb-1 text-[11px] font-semibold uppercase tracking-[0.1em]',
+                    isActive ? 'text-blue-400' : 'text-slate-500'
                   )}
                 >
-                  <span className={clsx('transition-colors', isActive ? 'text-blue-400' : 'text-slate-500')}>
+                  <span className={clsx('transition-colors', isActive ? 'text-blue-400' : 'text-slate-600')}>
                     {item.icon}
                   </span>
                   {item.label}
                 </div>
-                <div className="mt-0.5 ml-[1.35rem] pl-3 border-l border-slate-700/70 space-y-0.5">
+                <div className="mt-1 ml-[1.4rem] pl-3 border-l border-slate-800 space-y-0.5">
                   {children.map((child) => {
                     const childActive = isChildActive(pathname, child.href)
                     return (
@@ -153,16 +145,16 @@ export default function Sidebar() {
                         key={child.href}
                         href={child.href}
                         className={clsx(
-                          'group flex items-center gap-2.5 rounded-md px-3 py-1.5 text-[13px] transition-all',
+                          'group flex items-center gap-2.5 rounded-lg px-3 py-2 text-[13px] transition-all',
                           childActive
-                            ? 'bg-blue-600 text-white font-medium shadow-sm shadow-blue-900/40'
-                            : 'text-slate-400 hover:bg-slate-700/60 hover:text-white'
+                            ? 'bg-blue-600 text-white font-medium shadow-md shadow-blue-600/25'
+                            : 'text-slate-400 hover:bg-slate-800 hover:text-white'
                         )}
                       >
                         <span
                           className={clsx(
                             'w-1.5 h-1.5 rounded-full flex-shrink-0 transition-colors',
-                            childActive ? 'bg-white' : 'bg-slate-600 group-hover:bg-slate-300'
+                            childActive ? 'bg-white' : 'bg-slate-600 group-hover:bg-slate-400'
                           )}
                         />
                         {child.label}
@@ -179,13 +171,16 @@ export default function Sidebar() {
               key={item.href}
               href={item.href}
               className={clsx(
-                'flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors',
+                'group relative flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-all',
                 isActive
-                  ? 'bg-blue-600 text-white'
-                  : 'text-slate-300 hover:bg-slate-700 hover:text-white'
+                  ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/25'
+                  : 'text-slate-400 hover:bg-slate-800 hover:text-white'
               )}
             >
-              {item.icon}
+              {isActive && <span className="absolute left-0 top-1/2 -translate-y-1/2 h-5 w-1 rounded-r-full bg-white/80" />}
+              <span className={clsx('shrink-0 transition-colors', isActive ? 'text-white' : 'text-slate-500 group-hover:text-slate-300')}>
+                {item.icon}
+              </span>
               {item.label}
             </Link>
           )
@@ -193,12 +188,12 @@ export default function Sidebar() {
       </nav>
 
       {/* Back to site */}
-      <div className="px-3 py-4 border-t border-slate-700">
+      <div className="px-3 py-4 border-t border-slate-800/70">
         <Link
           href="/"
-          className="flex items-center gap-2 px-3 py-2 text-sm text-slate-400 hover:text-white transition-colors"
+          className="group flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm text-slate-500 hover:bg-slate-800 hover:text-white transition-colors"
         >
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+          <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
           </svg>
           Wróć do sklepu
