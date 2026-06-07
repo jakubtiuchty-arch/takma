@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { allegroConfigured, getConnection } from '@/lib/allegro/auth'
 import { listOldMaterialOffers } from '@/lib/allegro/existing-offers'
 import AllegroEndOfferButton from '@/components/admin/AllegroEndOfferButton'
+import AllegroEndAllButton from '@/components/admin/AllegroEndAllButton'
 
 export const dynamic = 'force-dynamic'
 
@@ -37,8 +38,11 @@ export default async function AllegroStareOfertyPage() {
         </div>
       ) : (
         <>
-          <div className="mb-4 text-sm text-gray-600">
-            Znaleziono <strong>{offers.length}</strong> starych ofert materiałów.
+          <div className="mb-4 flex items-center justify-between gap-4">
+            <span className="text-sm text-gray-600">
+              Znaleziono <strong>{offers.length}</strong> starych ofert materiałów.
+            </span>
+            <AllegroEndAllButton count={offers.length} />
           </div>
           <div className="rounded-xl border border-gray-200 bg-white overflow-hidden">
             <table className="w-full text-sm">

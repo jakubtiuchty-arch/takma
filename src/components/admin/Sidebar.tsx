@@ -92,6 +92,7 @@ const navItems = [
       { label: 'Wiadomości', href: '/admin/allegro/wiadomosci' },
       { label: 'Oferty — taśmy', href: '/admin/allegro/oferty' },
       { label: 'Oferty — etykiety', href: '/admin/allegro/etykiety' },
+      { label: 'Wystaw hurtowo', href: '/admin/allegro/hurtowe' },
       { label: 'Stare oferty', href: '/admin/allegro/stare-oferty' },
       { label: 'Konfiguracja', href: '/admin/allegro/konfiguracja' },
     ],
