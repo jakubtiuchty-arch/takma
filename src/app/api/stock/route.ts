@@ -414,7 +414,8 @@ export async function GET(request: NextRequest) {
       const bsPackagingUnit = bs?.multipleQty && bs.multipleQty > 1
         ? bs.multipleQty
         : (isRibbon ? 12 : 1)
-      const jarltechPackagingUnit = isRibbon ? bsPackagingUnit : 1
+      // Jarltech: cena ZA SZTUKĘ (potwierdzone: 03300GS08407 = 2 EUR = Ingram per-szt). NIE dzielimy.
+      const jarltechPackagingUnit = 1
 
       const ingramPLN = ingFound ? ing!.ingramPrice : undefined
       const bluestarPLN = (bsFound && bs!.unitPrice)
@@ -427,11 +428,15 @@ export async function GET(request: NextRequest) {
         jarltechPLN = Math.round((rawJarltechPLN / jarltechPackagingUnit) * 100) / 100
       }
 
-      // Min z trzech dystrybutorów (po korekcie pakietowej dla taśm)
-      const prices = [ingramPLN, bluestarPLN, jarltechPLN].filter(
+      // Min z trzech dystrybutorów + bezpiecznik: Ingram jest per-szt, więc odrzuć źródła
+      // rażąco poniżej (≈ błąd dzielenia pakietowego) — nigdy nie sprzedajemy poniżej kosztu.
+      const rawPrices = [ingramPLN, bluestarPLN, jarltechPLN].filter(
         (p): p is number => p != null && p > 0,
       )
-      const bestRawPricePLN = prices.length > 0 ? Math.min(...prices) : undefined
+      const priceFloor = ingramPLN && ingramPLN > 0 ? ingramPLN * 0.5 : 0
+      const sanePrices = priceFloor > 0 ? rawPrices.filter((p) => p >= priceFloor) : rawPrices
+      const usablePrices = sanePrices.length > 0 ? sanePrices : rawPrices
+      const bestRawPricePLN = usablePrices.length > 0 ? Math.min(...usablePrices) : undefined
 
       let price: number | undefined
       let priceBrutto: number | undefined
