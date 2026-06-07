@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
+import { useState } from 'react'
 import clsx from 'clsx'
 
 const navItems = [
@@ -105,6 +106,7 @@ function isChildActive(pathname: string, href: string): boolean {
 
 export default function Sidebar() {
   const pathname = usePathname()
+  const [openGroups, setOpenGroups] = useState<Record<string, boolean>>({})
 
   return (
     <aside className="w-64 bg-gradient-to-b from-slate-900 to-slate-950 text-white min-h-screen flex flex-col flex-shrink-0 border-r border-slate-800/70">
@@ -122,22 +124,40 @@ export default function Sidebar() {
           const isActive =
             item.href === '/admin' ? pathname === '/admin' : pathname.startsWith(item.href)
 
-          // Pozycja z podkategoriami (drzewko) — np. Allegro
+          // Pozycja z podkategoriami (dropdown) — np. Allegro
           if (children && children.length > 0) {
+            const open = openGroups[item.href] ?? isActive
             return (
-              <div key={item.href} className="pt-3">
-                <div
+              <div key={item.href} className="pt-1">
+                <button
+                  type="button"
+                  onClick={() => setOpenGroups((p) => ({ ...p, [item.href]: !open }))}
                   className={clsx(
-                    'flex items-center gap-3 px-3 pb-1 text-[11px] font-semibold uppercase tracking-[0.1em]',
-                    isActive ? 'text-blue-400' : 'text-slate-500'
+                    'group w-full flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-all',
+                    isActive ? 'text-blue-400' : 'text-slate-400 hover:bg-slate-800 hover:text-white'
                   )}
                 >
-                  <span className={clsx('transition-colors', isActive ? 'text-blue-400' : 'text-slate-600')}>
+                  <span className={clsx('shrink-0 transition-colors', isActive ? 'text-blue-400' : 'text-slate-500 group-hover:text-slate-300')}>
                     {item.icon}
                   </span>
-                  {item.label}
-                </div>
-                <div className="mt-1 ml-[1.4rem] pl-3 border-l border-slate-800 space-y-0.5">
+                  <span className="flex-1 text-left">{item.label}</span>
+                  <svg
+                    className={clsx('w-4 h-4 shrink-0 transition-transform', open && 'rotate-180')}
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </button>
+                <div
+                  className={clsx(
+                    'overflow-hidden transition-all duration-200',
+                    open ? 'max-h-[600px] opacity-100 mt-1' : 'max-h-0 opacity-0'
+                  )}
+                >
+                  <div className="ml-[1.4rem] pl-3 border-l border-slate-800 space-y-0.5">
                   {children.map((child) => {
                     const childActive = isChildActive(pathname, child.href)
                     return (
@@ -161,6 +181,7 @@ export default function Sidebar() {
                       </Link>
                     )
                   })}
+                  </div>
                 </div>
               </div>
             )
