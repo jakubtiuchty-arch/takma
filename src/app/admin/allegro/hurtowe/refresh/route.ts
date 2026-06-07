@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 import { getSessionFromCookie } from '@/lib/auth'
 import { refreshBatch } from '@/lib/allegro/bulk'
 
@@ -6,10 +6,16 @@ export const runtime = 'nodejs'
 export const maxDuration = 300
 export const dynamic = 'force-dynamic'
 
-// Odśwież opisy już wystawionych ofert (paczka).
-export async function POST() {
+// Odśwież opisy już wystawionych ofert (paczka 20, od najdawniej aktualizowanych).
+// Autoryzacja: sesja admina (cookie) LUB Bearer CRON_SECRET (do masowego re-PATCHu).
+export async function POST(request: NextRequest) {
   const session = await getSessionFromCookie()
-  if (!session) return NextResponse.json({ error: 'Brak autoryzacji.' }, { status: 401 })
+  const authHeader = request.headers.get('authorization')
+  const cronSecret = process.env.CRON_SECRET
+  const isCron = cronSecret && authHeader === `Bearer ${cronSecret}`
+  if (!session && !isCron) {
+    return NextResponse.json({ error: 'Brak autoryzacji.' }, { status: 401 })
+  }
   try {
     const res = await refreshBatch(20)
     return NextResponse.json({ ok: true, ...res })

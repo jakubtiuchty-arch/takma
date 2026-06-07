@@ -1450,7 +1450,6 @@ const rawTransferLabelProducts: RawTransferProduct[] = [
     ],
     variants: [
       { partNumber: '3011159', name: '51×25 mm, rdzeń 25 mm', availability: 'on-order', attributes: { 'Rozmiar': '51×25 mm', 'Rdzeń': '25 mm' } },
-      { partNumber: '3011159', name: '51×25 mm, rdzeń 25 mm', availability: 'on-order', attributes: { 'Rozmiar': '51×25 mm', 'Rdzeń': '25 mm' } },
       { partNumber: '3012949', name: '51×25 mm, rdzeń 25 mm', availability: 'on-order', attributes: { 'Rozmiar': '51×25 mm', 'Rdzeń': '25 mm' } },
       { partNumber: '3012949', name: '51×25 mm, rdzeń 76 mm', availability: 'on-order', attributes: { 'Rozmiar': '51×25 mm', 'Rdzeń': '76 mm' } },
       { partNumber: '3012403', name: '102×152 mm, rdzeń 76 mm', availability: 'on-order', attributes: { 'Rozmiar': '102×152 mm', 'Rdzeń': '76 mm' } },
