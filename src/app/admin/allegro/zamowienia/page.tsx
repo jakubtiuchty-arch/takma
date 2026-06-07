@@ -2,7 +2,9 @@ import Link from 'next/link'
 import { prisma } from '@/lib/db'
 import { allegroConfigured, getConnection } from '@/lib/allegro/auth'
 import { listOrders, getOrder, ORDER_STATUS_PL, FULFILLMENT_STATUS_PL, type AllegroOrder } from '@/lib/allegro/orders'
+import { findThreadByBuyerId } from '@/lib/allegro/messaging'
 import AllegroGenerateLabelButton from '@/components/admin/AllegroGenerateLabelButton'
+import AllegroThreadView from '@/components/admin/AllegroThreadView'
 
 export const dynamic = 'force-dynamic'
 
@@ -74,6 +76,7 @@ export default async function AllegroZamowieniaPage({
     const tracked = await prisma.allegroOrderNotified
       .findUnique({ where: { orderId: sp.order }, select: { trackingNumber: true } })
       .catch(() => null)
+    const thread = await findThreadByBuyerId(o.buyer?.id).catch(() => null)
     return (
       <div className="max-w-3xl">
         <div className="flex items-center justify-between gap-4 mb-4">
@@ -151,10 +154,19 @@ export default async function AllegroZamowieniaPage({
 
         {o.messageToSeller && (
           <div className="rounded-xl border border-gray-200 bg-white p-4 mt-4">
-            <h2 className="font-semibold text-gray-900 mb-1 text-sm">Wiadomość od kupującego</h2>
+            <h2 className="font-semibold text-gray-900 mb-1 text-sm">Wiadomość od kupującego (do zamówienia)</h2>
             <p className="text-sm text-gray-700 whitespace-pre-wrap">{o.messageToSeller}</p>
           </div>
         )}
+
+        <div className="rounded-xl border border-gray-200 bg-white p-4 mt-4">
+          <h2 className="font-semibold text-gray-900 mb-3 text-sm">Wiadomości z klientem (Allegro)</h2>
+          {thread ? (
+            <AllegroThreadView threadId={thread.id} maxH="max-h-96" />
+          ) : (
+            <p className="text-sm text-gray-500">Brak wątku wiadomości z tym kupującym na Allegro.</p>
+          )}
+        </div>
       </div>
     )
   }

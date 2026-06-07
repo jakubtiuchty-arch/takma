@@ -27,7 +27,7 @@ export interface AllegroOrder {
   id: string
   status: string
   fulfillment?: { status?: string; shipmentSummary?: { lineItemsSent?: string } }
-  buyer?: { login?: string; firstName?: string; lastName?: string; companyName?: string; email?: string; phoneNumber?: string }
+  buyer?: { id?: string; login?: string; firstName?: string; lastName?: string; companyName?: string; email?: string; phoneNumber?: string }
   summary?: { totalToPay?: { amount: string; currency: string } }
   lineItems?: OrderLineItem[]
   delivery?: {

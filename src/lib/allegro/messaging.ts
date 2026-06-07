@@ -37,6 +37,21 @@ export async function listThreads(limit = 20, offset = 0): Promise<MessagingThre
   return j.threads || []
 }
 
+/** Znajdź wątek z danym kupującym (interlocutor „Client:<id>") — przez kilka stron listy. */
+export async function findThreadByBuyerId(buyerId?: string, maxPages = 4): Promise<MessagingThread | null> {
+  if (!buyerId) return null
+  for (let page = 0; page < maxPages; page++) {
+    const threads = await listThreads(20, page * 20)
+    const hit = threads.find((t) => {
+      const login = t.interlocutor?.login || ''
+      return login === `Client:${buyerId}` || login.replace(/^Client:/, '') === buyerId || login === buyerId
+    })
+    if (hit) return hit
+    if (threads.length < 20) break
+  }
+  return null
+}
+
 export async function getThreadMessages(threadId: string, limit = 20): Promise<Message[]> {
   const lim = Math.min(limit, 20)
   const j = await allegroFetch<{ messages?: Message[] }>(`/messaging/threads/${threadId}/messages?limit=${lim}`)
