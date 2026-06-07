@@ -6,6 +6,7 @@ import { findThreadByBuyerId } from '@/lib/allegro/messaging'
 import AllegroGenerateLabelButton from '@/components/admin/AllegroGenerateLabelButton'
 import AllegroThreadView from '@/components/admin/AllegroThreadView'
 import AllegroFulfillCheckbox from '@/components/admin/AllegroFulfillCheckbox'
+import AllegroManualTrackingForm from '@/components/admin/AllegroManualTrackingForm'
 
 export const dynamic = 'force-dynamic'
 
@@ -93,8 +94,9 @@ export default async function AllegroZamowieniaPage({
           <span className="text-sm text-gray-400">{fmt(o.updatedAt)}</span>
         </div>
 
-        <div className="mb-4">
+        <div className="mb-4 space-y-3">
           <AllegroGenerateLabelButton orderId={o.id} existingTracking={tracked?.trackingNumber} />
+          <AllegroManualTrackingForm orderId={o.id} />
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2">
