@@ -84,10 +84,47 @@ function stripMd(s: string): string {
     .trim()
 }
 
+/** Czy produkt jest etykietą (po subkategoriach). */
+function isLabelProduct(product: Product): boolean {
+  return (product.subcategoryIds || []).some((s) => s.startsWith('etykiety'))
+}
+
 /**
- * Opis oferty — KONKRET, bez lania wody: nazwa, specyfikacja (model, rozmiar,
- * rdzeń, PN, EAN), zastosowania. Świadomie NIE używamy marketingowych
- * description/shortDescription (zawierają prozę i artefakty markdown).
+ * Materiał etykiety: „Papier" lub „Folia". Kolejność pewności:
+ *  1) subkategoria TT (-foliowe / -papierowe) — definitywna,
+ *  2) „Materiał lica" ze specyfikacji (papier vs polipropylen/poliester/folia…),
+ *  3) etykiety specjalne → folia, termiczne (DT) → papier (domyślnie).
+ * Dla taśm/innych → undefined (nie dodajemy wiersza).
+ */
+export function labelMaterial(product: Product): 'Papier' | 'Folia' | undefined {
+  if (!isLabelProduct(product)) return undefined
+  const sub = product.subcategoryIds || []
+  if (sub.includes('etykiety-termotransferowe-foliowe')) return 'Folia'
+  if (sub.includes('etykiety-termotransferowe-papierowe')) return 'Papier'
+
+  const lica = (product.specifications?.find((s) => /materia/i.test(s.name))?.value || '').toLowerCase()
+  if (/papier/.test(lica)) return 'Papier'
+  if (/foli|poliester|polipropylen|polietylen|poliolefin|bopp|\bpp\b|\bpet\b|\bpe\b|winyl|syntetyc/.test(lica)) return 'Folia'
+
+  if (sub.includes('etykiety-termotransferowe-specjalne')) return 'Folia'
+  if (sub.includes('etykiety-termiczne')) return 'Papier'
+  return undefined
+}
+
+/** Zwięzły wstęp serii (z shortDescription) — oczyszczony z markdown, przycięty. */
+function seriesIntro(product: Product): string {
+  const raw = stripMd(product.shortDescription || '')
+  if (!raw) return ''
+  if (raw.length <= 600) return raw
+  // przytnij do granicy zdania w okolicach 600 znaków
+  const cut = raw.slice(0, 600)
+  const lastDot = cut.lastIndexOf('. ')
+  return (lastDot > 200 ? cut.slice(0, lastDot + 1) : cut.replace(/\s+\S*$/, '')).trim()
+}
+
+/**
+ * Opis oferty — KONKRET, bez lania wody: zwięzły wstęp serii (shortDescription,
+ * oczyszczony), specyfikacja (model, materiał, rozmiar, rdzeń, PN, EAN) i zastosowania.
  */
 export function buildOfferDescription(
   product: Product,
@@ -114,6 +151,7 @@ export function buildOfferDescription(
   const specRows: Array<[string, string | undefined]> = [
     ['Model', product.specifications?.find((s) => s.name === 'Model')?.value],
     ['Typ', product.specifications?.find((s) => /typ/i.test(s.name))?.value],
+    ['Materiał', labelMaterial(product)],
     ...sizeRows,
     ['Wersja', variantWersja(variant) || undefined],
     ['Rdzeń', a['Rdzeń']],
@@ -134,9 +172,12 @@ export function buildOfferDescription(
     ? `<h2>Zastosowania</h2><ul>${apps.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>`
     : ''
 
+  const intro = seriesIntro(product)
+  const introHtml = intro ? `<p>${esc(intro)}</p>` : ''
+
   return {
     sections: [
-      { items: [{ type: 'TEXT', content: `<h2>${esc(product.name)}</h2><h2>Specyfikacja</h2>${specHtml}` }] },
+      { items: [{ type: 'TEXT', content: `<h2>${esc(product.name)}</h2>${introHtml}<h2>Specyfikacja</h2>${specHtml}` }] },
       ...(appsHtml ? [{ items: [{ type: 'TEXT' as const, content: appsHtml }] }] : []),
     ],
   }
