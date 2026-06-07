@@ -12,8 +12,13 @@ export const dynamic = 'force-dynamic'
  * czasu (~240 s) lub liczby wsadów (?batches=N, domyślnie 20 → ~400 ofert).
  */
 export async function GET(request: NextRequest) {
+  // Autoryzacja: Bearer CRON_SECRET (Vercel cron) LUB włączony tryb hurtowy
+  // ALLEGRO_BULK_PUBLISH=true (ta sama bramka co publikacja; gdy operator wyłączy
+  // tryb hurtowy — endpoint też się zamyka).
   const auth = request.headers.get('authorization')
-  if (!process.env.CRON_SECRET || auth !== `Bearer ${process.env.CRON_SECRET}`) {
+  const okCron = !!process.env.CRON_SECRET && auth === `Bearer ${process.env.CRON_SECRET}`
+  const okFlag = process.env.ALLEGRO_BULK_PUBLISH === 'true'
+  if (!okCron && !okFlag) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
