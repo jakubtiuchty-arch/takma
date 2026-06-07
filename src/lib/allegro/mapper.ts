@@ -18,7 +18,12 @@ import type { GpsrFields } from './gpsr'
 
 const MAX_NAME = 75
 
-/** Zwięzły opis rozmiaru wariantu — obsługuje etykiety (Rozmiar) i taśmy (Szerokość/Długość). */
+/** Wersja wariantu (np. „ze skrzydełkami") bez angielskiego nawiasu — odróżnia warianty o tym samym rozmiarze. */
+export function variantWersja(v: ProductVariant): string {
+  return (v.attributes?.['Wersja'] || '').replace(/\s*\([^)]*\)/g, '').trim()
+}
+
+/** Zwięzły opis rozmiaru wariantu — obsługuje etykiety (Rozmiar) i taśmy (Szerokość/Długość) + wersję. */
 export function variantSizeLabel(v: ProductVariant): string {
   const a = v.attributes || {}
   const core = (a['Rdzeń'] || '').trim()
@@ -30,7 +35,10 @@ export function variantSizeLabel(v: ProductVariant): string {
     const len = (a['Długość'] || '').trim()
     dim = w && len ? `${w}×${len}` : v.name
   }
-  return core ? `${dim}, rdzeń ${core}` : dim
+  let label = core ? `${dim}, rdzeń ${core}` : dim
+  const wersja = variantWersja(v)
+  if (wersja) label += `, ${wersja}`
+  return label
 }
 
 /** Tytuł oferty ≤ 75 znaków: „<nazwa produktu> <rozmiar>". */
@@ -107,6 +115,7 @@ export function buildOfferDescription(
     ['Model', product.specifications?.find((s) => s.name === 'Model')?.value],
     ['Typ', product.specifications?.find((s) => /typ/i.test(s.name))?.value],
     ...sizeRows,
+    ['Wersja', variantWersja(variant) || undefined],
     ['Rdzeń', a['Rdzeń']],
     ['Part Number', variant.partNumber],
     ...(ean ? [['EAN', ean] as [string, string]] : []),
