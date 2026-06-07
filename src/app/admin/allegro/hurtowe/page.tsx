@@ -3,6 +3,7 @@ import { allegroConfigured, getConnection } from '@/lib/allegro/auth'
 import { getBulkProgress } from '@/lib/allegro/bulk'
 import { ALLEGRO_AUTO_PUBLISH } from '@/lib/allegro/gpsr'
 import AllegroBulkRunButton from '@/components/admin/AllegroBulkRunButton'
+import AllegroRefreshDescButton from '@/components/admin/AllegroRefreshDescButton'
 
 export const dynamic = 'force-dynamic'
 
@@ -57,7 +58,10 @@ export default async function AllegroHurtowePage() {
             </div>
           </div>
 
-          <AllegroBulkRunButton />
+          <div className="space-y-2">
+            <AllegroBulkRunButton />
+            <AllegroRefreshDescButton />
+          </div>
 
           <div className="mt-5 rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-xs text-gray-500">
             Automat: ustaw <code>ALLEGRO_BULK_PUBLISH=true</code> w env → cron co 5 min dokłada paczki, aż wystawi

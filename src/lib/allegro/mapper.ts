@@ -67,7 +67,20 @@ function esc(s: string): string {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 }
 
-/** Opis oferty w formacie Allegro (sekcje TEXT) — wspólny dla taśm i etykiet. */
+/** Usuń artefakty markdown ([tekst](url), **pogrubienia**) — w danych bywają. */
+function stripMd(s: string): string {
+  return s
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1') // [tekst](url) → tekst
+    .replace(/\*\*([^*]+)\*\*/g, '$1') // **tekst** → tekst
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+/**
+ * Opis oferty — KONKRET, bez lania wody: nazwa, specyfikacja (model, rozmiar,
+ * rdzeń, PN, EAN), zastosowania. Świadomie NIE używamy marketingowych
+ * description/shortDescription (zawierają prozę i artefakty markdown).
+ */
 export function buildOfferDescription(
   product: Product,
   variant: ProductVariant,
@@ -77,26 +90,15 @@ export function buildOfferDescription(
   const rozmiar =
     a['Rozmiar'] || (a['Szerokość'] && a['Długość'] ? `${a['Szerokość']} × ${a['Długość']}` : '')
 
-  // Sekcja 1: nazwa + krótki wstęp + pełny opis (jeśli różny i dłuższy)
-  const short = (product.shortDescription || '').trim()
-  const long = (product.description || '').trim()
-  const introParts = [short]
-  if (long && long !== short) introParts.push(long)
-  const introHtml = introParts.filter(Boolean).map((p) => `<p>${esc(p)}</p>`).join('')
-
-  // Sekcja 2: specyfikacja — atrybuty wariantu + pełna specyfikacja produktu + EAN
   const specRows: Array<[string, string | undefined]> = [
-    ['Part Number', variant.partNumber],
+    ['Model', product.specifications?.find((s) => s.name === 'Model')?.value],
+    ['Typ', product.specifications?.find((s) => /typ/i.test(s.name))?.value],
     ['Rozmiar', rozmiar],
     ['Rdzeń', a['Rdzeń']],
-    ...Object.entries(a)
-      .filter(([k]) => !['Rozmiar', 'Rdzeń', 'Szerokość', 'Długość'].includes(k))
-      .map(([k, v]) => [k, v] as [string, string]),
-    ...(product.specifications || []).map((s) => [s.name, s.value] as [string, string]),
+    ['Part Number', variant.partNumber],
     ...(ean ? [['EAN', ean] as [string, string]] : []),
     ['Producent', 'Zebra Technologies'],
   ]
-  // dedup po nazwie (pierwsze wystąpienie wygrywa), pomiń puste
   const seen = new Set<string>()
   const rows = specRows.filter(([k, v]) => {
     if (!v || seen.has(k)) return false
@@ -105,16 +107,14 @@ export function buildOfferDescription(
   })
   const specHtml = `<ul>${rows.map(([k, v]) => `<li><b>${esc(k)}:</b> ${esc(String(v))}</li>`).join('')}</ul>`
 
-  // Sekcja 3: zastosowania
-  const apps = (product.applications || []).slice(0, 8)
+  const apps = (product.applications || []).map((x) => stripMd(x)).filter(Boolean).slice(0, 8)
   const appsHtml = apps.length
     ? `<h2>Zastosowania</h2><ul>${apps.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>`
     : ''
 
   return {
     sections: [
-      { items: [{ type: 'TEXT', content: `<h2>${esc(product.name)}</h2>${introHtml || `<p>${esc(product.name)}</p>`}` }] },
-      { items: [{ type: 'TEXT', content: `<h2>Specyfikacja</h2>${specHtml}` }] },
+      { items: [{ type: 'TEXT', content: `<h2>${esc(product.name)}</h2><h2>Specyfikacja</h2>${specHtml}` }] },
       ...(appsHtml ? [{ items: [{ type: 'TEXT' as const, content: appsHtml }] }] : []),
     ],
   }

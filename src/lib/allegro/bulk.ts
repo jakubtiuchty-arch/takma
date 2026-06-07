@@ -54,6 +54,28 @@ export async function getBulkProgress(): Promise<{ total: number; published: num
   return { total: candidates.length, published, errors, remaining: Math.max(0, candidates.length - published) }
 }
 
+/**
+ * Odświeżenie opisów już wystawionych ofert (re-PATCH). Bierze najdawniej
+ * aktualizowane (orderBy updatedAt asc) — re-publikacja zaktualizuje updatedAt,
+ * więc kolejne wywołania przechodzą przez resztę.
+ */
+export async function refreshBatch(limit = 20): Promise<{ processed: number; succeeded: number; failed: number }> {
+  const offers = await prisma.allegroOffer.findMany({
+    where: { environment: ALLEGRO_ENV, status: { in: ['DRAFT', 'ACTIVE'] } },
+    orderBy: { updatedAt: 'asc' },
+    take: limit,
+    select: { partNumber: true },
+  })
+  let succeeded = 0
+  let failed = 0
+  for (const o of offers) {
+    const r = await publishDraft(o.partNumber)
+    if (r.ok) succeeded++
+    else failed++
+  }
+  return { processed: offers.length, succeeded, failed }
+}
+
 export interface BulkProgress {
   totalCandidates: number
   alreadyPublished: number
