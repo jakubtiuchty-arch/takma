@@ -44,11 +44,22 @@ async function getToken(): Promise<string> {
   const id = process.env.FURGONETKA_CLIENT_ID || ''
   const secret = process.env.FURGONETKA_CLIENT_SECRET || ''
   if (!id || !secret) throw new Error('Brak FURGONETKA_CLIENT_ID / SECRET w env.')
+  const username = process.env.FURGONETKA_USERNAME || ''
+  const password = process.env.FURGONETKA_PASSWORD || ''
   const basic = Buffer.from(`${id}:${secret}`).toString('base64')
+
+  // Operacje na koncie (tworzenie przesyłek) wymagają kontekstu użytkownika →
+  // grant_type=password (login+hasło konta Furgonetka). client_credentials daje
+  // token aplikacji bez dostępu do /account/* (401 user authentication).
+  const body =
+    username && password
+      ? new URLSearchParams({ grant_type: 'password', scope: 'api', username, password })
+      : new URLSearchParams({ grant_type: 'client_credentials', scope: 'api' })
+
   const res = await fetch(`${API}/oauth/token`, {
     method: 'POST',
     headers: { Authorization: `Basic ${basic}`, 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams({ grant_type: 'client_credentials', scope: 'api' }),
+    body,
   })
   const txt = await res.text()
   if (!res.ok) throw new Error(`Furgonetka OAuth ${res.status}: ${txt.slice(0, 200)}`)
