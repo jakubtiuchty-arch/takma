@@ -5,6 +5,7 @@ import clsx from 'clsx'
 import { OrderStatus } from '@/generated/prisma/client'
 import OrderStatusForm from './OrderStatusForm'
 import OrderTrackingForm from './OrderTrackingForm'
+import OrderFurgonetkaButton from './OrderFurgonetkaButton'
 import OrderNotesForm from './OrderNotesForm'
 
 const statusLabels: Record<OrderStatus, string> = {
@@ -134,7 +135,13 @@ export default async function OrderDetailPage({ params }: PageProps) {
                 {order.shippedAt && <div><span className="text-gray-500">Data wysyłki:</span> {order.shippedAt.toLocaleDateString('pl-PL')}</div>}
               </div>
             ) : (
-              <OrderTrackingForm orderId={order.id} />
+              <div className="space-y-4">
+                <OrderFurgonetkaButton orderId={order.id} />
+                <div className="flex items-center gap-3 text-xs text-gray-400">
+                  <span className="h-px flex-1 bg-gray-200" /> lub wpisz numer ręcznie <span className="h-px flex-1 bg-gray-200" />
+                </div>
+                <OrderTrackingForm orderId={order.id} />
+              </div>
             )}
           </div>
 

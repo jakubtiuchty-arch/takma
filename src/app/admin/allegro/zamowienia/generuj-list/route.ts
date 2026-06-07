@@ -40,12 +40,12 @@ export async function POST(request: Request) {
     const parcels = buildParcels(order)
 
     const services = await getServices()
-    const serviceId = pickService(order, services)
+    const serviceId = pickService(order.delivery?.method?.name, services)
     if (!serviceId) {
       return NextResponse.json({ error: 'Brak dopasowanej usługi Furgonetki dla tej dostawy.' }, { status: 422 })
     }
 
-    const pkg = await createPackage(order, serviceId, receiver, parcels)
+    const pkg = await createPackage(order.id, serviceId, receiver, parcels)
     if (!pkg.id) return NextResponse.json({ error: 'Furgonetka nie zwróciła id przesyłki.' }, { status: 422 })
 
     const tracking = pkg.tracking || (await getPackageTracking(pkg.id))

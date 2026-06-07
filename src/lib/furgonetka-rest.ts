@@ -152,9 +152,9 @@ export async function getServices(): Promise<FurgService[]> {
   return j.services || []
 }
 
-/** Wybiera service_id pasujący do przewoźnika z zamówienia Allegro (po slug). */
-export function pickService(o: AllegroOrder, services: FurgService[]): number | null {
-  const kw = carrierKeyword(o.delivery?.method?.name)
+/** Wybiera service_id pasujący do nazwy przewoźnika (po slug). */
+export function pickService(carrierName: string | undefined, services: FurgService[]): number | null {
+  const kw = carrierKeyword(carrierName)
   if (kw) {
     const match = services.find((s) => (s.service || '').toLowerCase().startsWith(kw))
     if (match) return match.id
@@ -162,9 +162,20 @@ export function pickService(o: AllegroOrder, services: FurgService[]): number | 
   return services[0]?.id ?? null
 }
 
+/** Parsuje adres-tekst sklepu (np. „Morska 15e, 76-270 Przewłoka") → ulica/kod/miasto. */
+export function parseAddress(text?: string): { street: string; postcode: string; city: string } {
+  const t = (text || '').replace(/\n/g, ', ').replace(/\s+/g, ' ').trim()
+  const pc = t.match(/(\d{2}-\d{3})/)
+  if (!pc) return { street: t, postcode: '', city: '' }
+  const postcode = pc[1]
+  const before = t.slice(0, pc.index).replace(/[,\s]+$/, '').trim()
+  const after = t.slice((pc.index || 0) + postcode.length).replace(/^[,\s]+/, '').trim()
+  return { street: before, postcode, city: after }
+}
+
 /** Tworzy przesyłkę → zwraca id paczki + numer listu (jeśli zwrócony). */
 export async function createPackage(
-  o: AllegroOrder,
+  reference: string,
   serviceId: number,
   receiver: FurgAddress,
   parcels: FurgParcel[],
@@ -176,7 +187,7 @@ export async function createPackage(
     service_id: serviceId,
     parcels,
     type: 'package',
-    user_reference_number: o.id,
+    user_reference_number: reference,
   }
   const j = await furgFetch<{ id?: string; package_id?: string; tracking_number?: string }>(`/packages`, {
     method: 'POST',
