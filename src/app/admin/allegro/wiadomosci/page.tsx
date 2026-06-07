@@ -3,8 +3,25 @@ import { allegroConfigured, getConnection } from '@/lib/allegro/auth'
 import { listThreads, getThreadMessages, setThreadRead } from '@/lib/allegro/messaging'
 import AllegroReplyForm from '@/components/admin/AllegroReplyForm'
 import AllegroMarkUnreadButton from '@/components/admin/AllegroMarkUnreadButton'
+import AllegroScrollToBottom from '@/components/admin/AllegroScrollToBottom'
 
 export const dynamic = 'force-dynamic'
+
+const ENT: Record<string, string> = {
+  amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', ndash: '–', mdash: '—', hellip: '…',
+  oacute: 'ó', Oacute: 'Ó', aogon: 'ą', Aogon: 'Ą', eogon: 'ę', Eogon: 'Ę', cacute: 'ć', Cacute: 'Ć',
+  lstrok: 'ł', Lstrok: 'Ł', nacute: 'ń', Nacute: 'Ń', sacute: 'ś', Sacute: 'Ś', zacute: 'ź', Zacute: 'Ź',
+  zdot: 'ż', Zdot: 'Ż', aacute: 'á', eacute: 'é',
+}
+
+/** Dekoduje encje HTML (&oacute;, &ndash;, &#123;) w treści wiadomości. */
+function decodeEntities(s?: string): string {
+  if (!s) return ''
+  return s
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(parseInt(d, 10)))
+    .replace(/&([a-zA-Z]+);/g, (m, n) => ENT[n] ?? m)
+}
 
 function fmt(d: string): string {
   try {
@@ -136,7 +153,7 @@ export default async function AllegroWiadomosciPage({
 
                 {/* Wiadomości */}
                 <div className="flex-1 px-5 py-4 space-y-3 overflow-y-auto max-h-[55vh]">
-                  {messages.map((m) => {
+                  {[...messages].reverse().map((m) => {
                     const mine = !m.author?.isInterlocutor
                     return (
                       <div key={m.id} className={`flex ${mine ? 'justify-end' : 'justify-start'}`}>
@@ -149,8 +166,8 @@ export default async function AllegroWiadomosciPage({
                             <span className="font-semibold">{mine ? 'Ty (TAKMA)' : clientLabel(m.author?.login)}</span>
                             <span>{fmt(m.createdAt)}</span>
                           </div>
-                          {m.subject && <div className={`text-[11px] mb-1 ${mine ? 'text-blue-100' : 'text-gray-500'}`}>{m.subject}</div>}
-                          <div className="whitespace-pre-wrap">{m.text}</div>
+                          {m.subject && <div className={`text-[11px] mb-1 ${mine ? 'text-blue-100' : 'text-gray-500'}`}>{decodeEntities(m.subject)}</div>}
+                          <div className="whitespace-pre-wrap">{decodeEntities(m.text)}</div>
                           {m.attachments && m.attachments.length > 0 && (
                             <div className="flex flex-wrap gap-2 mt-2">
                               {m.attachments.map((a, i) =>
@@ -176,6 +193,7 @@ export default async function AllegroWiadomosciPage({
                       </div>
                     )
                   })}
+                  <AllegroScrollToBottom dep={activeId ?? ''} />
                 </div>
 
                 {/* Odpowiedź */}
