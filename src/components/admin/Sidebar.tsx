@@ -86,8 +86,20 @@ const navItems = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
       </svg>
     ),
+    children: [
+      { label: 'Przegląd', href: '/admin/allegro' },
+      { label: 'Oferty — taśmy', href: '/admin/allegro/oferty' },
+      { label: 'Oferty — etykiety', href: '/admin/allegro/etykiety' },
+      { label: 'Stare oferty', href: '/admin/allegro/stare-oferty' },
+      { label: 'Wiadomości', href: '/admin/allegro/wiadomosci' },
+      { label: 'Konfiguracja', href: '/admin/allegro/konfiguracja' },
+    ],
   },
 ]
+
+function isChildActive(pathname: string, href: string): boolean {
+  return href === '/admin/allegro' ? pathname === href : pathname.startsWith(href)
+}
 
 export default function Sidebar() {
   const pathname = usePathname()
@@ -110,10 +122,47 @@ export default function Sidebar() {
       {/* Nav */}
       <nav className="flex-1 px-3 py-4 space-y-1">
         {navItems.map((item) => {
+          const children = (item as { children?: { label: string; href: string }[] }).children
           const isActive =
             item.href === '/admin'
               ? pathname === '/admin'
               : pathname.startsWith(item.href)
+
+          // Pozycja z podkategoriami (drzewko) — np. Allegro
+          if (children && children.length > 0) {
+            return (
+              <div key={item.href}>
+                <div
+                  className={clsx(
+                    'flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-semibold',
+                    isActive ? 'text-white' : 'text-slate-300'
+                  )}
+                >
+                  {item.icon}
+                  {item.label}
+                </div>
+                <div className="mt-1 ml-4 pl-3 border-l border-slate-700 space-y-0.5">
+                  {children.map((child) => {
+                    const childActive = isChildActive(pathname, child.href)
+                    return (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        className={clsx(
+                          'block px-3 py-2 rounded-lg text-sm transition-colors',
+                          childActive
+                            ? 'bg-blue-600 text-white font-medium'
+                            : 'text-slate-300 hover:bg-slate-700 hover:text-white'
+                        )}
+                      >
+                        {child.label}
+                      </Link>
+                    )
+                  })}
+                </div>
+              </div>
+            )
+          }
 
           return (
             <Link
