@@ -41,8 +41,10 @@ export async function candidatePNsWithGtin(): Promise<string[]> {
  * martwy allegroId, oferta już aktywna). Wykluczamy je z ponawiania, żeby cron
  * nie walił w kółko w Allegro — wymagają ręcznej obsługi w kreatorze.
  */
+// Uwaga: „cannot be changed to INACTIVE" i 404 NIE są tu — publisher je odzyskuje
+// (ACTIVE / POST od nowa) przy jednym ponowieniu, więc warto je przepuścić przez retry.
 export const PERMANENT_ERROR =
-  /does not match the existing parameter|does not match the existing product category|Existing Product related to submitted data|cannot be changed to INACTIVE|\b404\b|Not Found/i
+  /does not match the existing parameter|does not match the existing product category|Existing Product related to submitted data/i
 
 /** Postęp hurtowego wystawiania (bez publikowania) — do wyświetlenia. */
 export async function getBulkProgress(): Promise<{
