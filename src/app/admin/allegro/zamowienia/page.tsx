@@ -1,6 +1,8 @@
 import Link from 'next/link'
+import { prisma } from '@/lib/db'
 import { allegroConfigured, getConnection } from '@/lib/allegro/auth'
 import { listOrders, getOrder, ORDER_STATUS_PL, FULFILLMENT_STATUS_PL, type AllegroOrder } from '@/lib/allegro/orders'
+import AllegroGenerateLabelButton from '@/components/admin/AllegroGenerateLabelButton'
 
 export const dynamic = 'force-dynamic'
 
@@ -69,6 +71,9 @@ export default async function AllegroZamowieniaPage({
   if (sp.order) {
     const o = await getOrder(sp.order)
     const addr = o.delivery?.address
+    const tracked = await prisma.allegroOrderNotified
+      .findUnique({ where: { orderId: sp.order }, select: { trackingNumber: true } })
+      .catch(() => null)
     return (
       <div className="max-w-3xl">
         <div className="flex items-center justify-between gap-4 mb-4">
@@ -82,6 +87,10 @@ export default async function AllegroZamowieniaPage({
           <StatusBadge status={o.status} />
           <FulfillmentBadge status={o.fulfillment?.status} />
           <span className="text-sm text-gray-400">{fmt(o.updatedAt)}</span>
+        </div>
+
+        <div className="mb-4">
+          <AllegroGenerateLabelButton orderId={o.id} existingTracking={tracked?.trackingNumber} />
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2">
