@@ -4,7 +4,11 @@ import { isValidGtin } from './gtin'
 import { publishDraft, labelProducts } from './publisher'
 import { transferRibbonProducts } from '@/data/transfer-ribbon-products'
 
-/** Wszystkie PN taśm + etykiet, które mają poprawny GTIN (tylko te da się aktywować). */
+/**
+ * PN taśm + etykiet kwalifikujące się do hurtowego wystawienia:
+ *  - mają poprawny GTIN (inaczej Allegro nie aktywuje),
+ *  - mają stan magazynowy > 0 (Allegro nie wystawi oferty z ilością 0 → „Invalid quantity").
+ */
 export async function candidatePNsWithGtin(): Promise<string[]> {
   const pns: string[] = []
   for (const p of transferRibbonProducts) for (const v of p.variants || []) pns.push(v.partNumber)
@@ -12,15 +16,23 @@ export async function candidatePNsWithGtin(): Promise<string[]> {
   const unique = Array.from(new Set(pns))
 
   const gtin = new Set<string>()
+  const inStock = new Set<string>() // PN (oryginalna wielkość liter) z totalStock > 0
   for (let i = 0; i < unique.length; i += 500) {
-    const chunk = unique.slice(i, i + 500).map((s) => s.toUpperCase())
-    const rows = await prisma.productEan.findMany({
-      where: { partNumber: { in: chunk } },
-      select: { partNumber: true, ean: true },
-    })
-    for (const r of rows) if (isValidGtin(r.ean)) gtin.add(r.partNumber)
+    const chunk = unique.slice(i, i + 500)
+    const [eanRows, stockRows] = await Promise.all([
+      prisma.productEan.findMany({
+        where: { partNumber: { in: chunk.map((s) => s.toUpperCase()) } },
+        select: { partNumber: true, ean: true },
+      }),
+      prisma.stockCache.findMany({
+        where: { partNumber: { in: chunk }, totalStock: { gt: 0 } },
+        select: { partNumber: true },
+      }),
+    ])
+    for (const r of eanRows) if (isValidGtin(r.ean)) gtin.add(r.partNumber)
+    for (const r of stockRows) inStock.add(r.partNumber)
   }
-  return unique.filter((pn) => gtin.has(pn.toUpperCase()))
+  return unique.filter((pn) => gtin.has(pn.toUpperCase()) && inStock.has(pn))
 }
 
 /** Postęp hurtowego wystawiania (bez publikowania) — do wyświetlenia. */
