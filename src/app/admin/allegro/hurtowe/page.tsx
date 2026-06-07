@@ -52,6 +52,11 @@ export default async function AllegroHurtowePage() {
               {(progress?.errors ?? 0) > 0 && (
                 <span className="rounded-lg border border-red-200 bg-red-50 px-3 py-1.5 text-red-700">Błędy: {progress?.errors}</span>
               )}
+              {(progress?.manual ?? 0) > 0 && (
+                <span className="rounded-lg border border-amber-200 bg-amber-50 px-3 py-1.5 text-amber-700" title="Kolizje z katalogiem Allegro — wymagają ręcznego wystawienia w kreatorze (wybór/propozycja produktu).">
+                  Do ręcznej obsługi: {progress?.manual}
+                </span>
+              )}
               <span className={`rounded-lg border px-3 py-1.5 ${bulkOn ? 'border-emerald-200 bg-emerald-50 text-emerald-700' : 'border-gray-200 text-gray-500'}`}>
                 Cron: {bulkOn ? 'WŁĄCZONY' : 'wyłączony'}
               </span>

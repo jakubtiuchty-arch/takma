@@ -35,23 +35,39 @@ export async function candidatePNsWithGtin(): Promise<string[]> {
   return unique.filter((pn) => gtin.has(pn.toUpperCase()) && inStock.has(pn))
 }
 
+/**
+ * Błędy TRWAŁE — kolizje z istniejącym katalogiem Allegro, których ślepy retry
+ * nie naprawi (nasz EAN/nazwa trafia w cudzą kartę produktu z innym kodem PN,
+ * martwy allegroId, oferta już aktywna). Wykluczamy je z ponawiania, żeby cron
+ * nie walił w kółko w Allegro — wymagają ręcznej obsługi w kreatorze.
+ */
+export const PERMANENT_ERROR =
+  /does not match the existing parameter|does not match the existing product category|Existing Product related to submitted data|cannot be changed to INACTIVE|\b404\b|Not Found/i
+
 /** Postęp hurtowego wystawiania (bez publikowania) — do wyświetlenia. */
-export async function getBulkProgress(): Promise<{ total: number; published: number; errors: number; remaining: number }> {
+export async function getBulkProgress(): Promise<{
+  total: number; published: number; errors: number; manual: number; remaining: number
+}> {
   const candidates = await candidatePNsWithGtin()
   let published = 0
   let errors = 0
+  let manual = 0
   for (let i = 0; i < candidates.length; i += 500) {
     const chunk = candidates.slice(i, i + 500)
     const rows = await prisma.allegroOffer.findMany({
       where: { environment: ALLEGRO_ENV, partNumber: { in: chunk } },
-      select: { status: true },
+      select: { status: true, lastError: true },
     })
     for (const r of rows) {
       if (r.status === 'DRAFT' || r.status === 'ACTIVE') published++
-      else if (r.status === 'ERROR') errors++
+      else if (r.status === 'ERROR') {
+        if (PERMANENT_ERROR.test(r.lastError || '')) manual++
+        else errors++
+      }
     }
   }
-  return { total: candidates.length, published, errors, remaining: Math.max(0, candidates.length - published) }
+  // „Zostało" = to, co cron jeszcze realnie domieli (bez trwałych kolizji).
+  return { total: candidates.length, published, errors, manual, remaining: Math.max(0, candidates.length - published - manual) }
 }
 
 /**
@@ -94,22 +110,25 @@ export async function bulkPublishBatch(limit = 30): Promise<BulkProgress> {
   const candidates = await candidatePNsWithGtin()
 
   const publishedSet = new Set<string>() // DRAFT/ACTIVE — gotowe
-  const erroredSet = new Set<string>()   // ERROR — do ponowienia
+  const erroredSet = new Set<string>()   // ERROR przejściowy — do ponowienia
+  const recordedSet = new Set<string>()  // ma JAKIKOLWIEK rekord (też trwały błąd)
   for (let i = 0; i < candidates.length; i += 500) {
     const chunk = candidates.slice(i, i + 500)
     const rows = await prisma.allegroOffer.findMany({
       where: { environment: ALLEGRO_ENV, partNumber: { in: chunk } },
-      select: { partNumber: true, status: true },
+      select: { partNumber: true, status: true, lastError: true },
     })
     for (const r of rows) {
+      recordedSet.add(r.partNumber)
       if (r.status === 'DRAFT' || r.status === 'ACTIVE') publishedSet.add(r.partNumber)
-      else if (r.status === 'ERROR') erroredSet.add(r.partNumber)
+      // Trwałe kolizje katalogowe pomijamy — ślepy retry ich nie naprawi.
+      else if (r.status === 'ERROR' && !PERMANENT_ERROR.test(r.lastError || '')) erroredSet.add(r.partNumber)
     }
   }
 
   // Najpierw NIETKNIĘTE (bez żadnego rekordu) — żeby powtarzalne ERROR-y nie zapychały
-  // batcha i nie blokowały reszty kolejki. ERROR-y ponawiamy dopiero po nich.
-  const untried = candidates.filter((pn) => !publishedSet.has(pn) && !erroredSet.has(pn))
+  // batcha i nie blokowały reszty kolejki. Przejściowe ERROR-y ponawiamy po nich.
+  const untried = candidates.filter((pn) => !recordedSet.has(pn))
   const errored = candidates.filter((pn) => erroredSet.has(pn))
   const todo = [...untried, ...errored].slice(0, limit)
   let succeeded = 0

@@ -190,6 +190,17 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
     return { ok: true, partNumber, kind, allegroId: res.id, status: offerStatus, priceNet: price.net, priceGross: price.gross }
   } catch (e) {
     const error = (e as Error).message
+    // „cannot be changed to INACTIVE" = oferta JEST już aktywna na Allegro (próba zrobienia
+    // z niej szkicu bez EAN). To nie błąd — uznajemy ją za ACTIVE i przestajemy ponawiać.
+    if (existing?.allegroId && /cannot be changed to INACTIVE/i.test(error)) {
+      await prisma.allegroOffer
+        .update({
+          where: { environment_partNumber: { environment: ALLEGRO_ENV, partNumber } },
+          data: { status: 'ACTIVE', lastError: null },
+        })
+        .catch(() => {})
+      return { ok: true, partNumber, kind, allegroId: existing.allegroId, status: 'ACTIVE', priceNet: price.net, priceGross: price.gross }
+    }
     await prisma.allegroOffer
       .upsert({
         where: { environment_partNumber: { environment: ALLEGRO_ENV, partNumber } },
