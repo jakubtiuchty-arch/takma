@@ -87,13 +87,26 @@ export function buildOfferDescription(
   ean?: string,
 ): AllegroOfferPayload['description'] {
   const a = variant.attributes || {}
-  const rozmiar =
-    a['Rozmiar'] || (a['Szerokość'] && a['Długość'] ? `${a['Szerokość']} × ${a['Długość']}` : '')
+
+  // Rozmiar rozbity na osobne pola (czytelniej): taśmy → Szerokość/Długość,
+  // etykiety → Szerokość/Wysokość (z „57×64 mm").
+  let sizeRows: Array<[string, string]> = []
+  if (a['Szerokość'] && a['Długość']) {
+    sizeRows = [['Szerokość', a['Szerokość']], ['Długość', a['Długość']]]
+  } else if (a['Rozmiar']) {
+    const m = a['Rozmiar'].match(/([\d.,]+)\s*[×x]\s*([\d.,]+)\s*([a-zA-Z]+)?/)
+    if (m) {
+      const unit = m[3] || 'mm'
+      sizeRows = [['Szerokość', `${m[1]} ${unit}`], ['Wysokość', `${m[2]} ${unit}`]]
+    } else {
+      sizeRows = [['Rozmiar', a['Rozmiar']]]
+    }
+  }
 
   const specRows: Array<[string, string | undefined]> = [
     ['Model', product.specifications?.find((s) => s.name === 'Model')?.value],
     ['Typ', product.specifications?.find((s) => /typ/i.test(s.name))?.value],
-    ['Rozmiar', rozmiar],
+    ...sizeRows,
     ['Rdzeń', a['Rdzeń']],
     ['Part Number', variant.partNumber],
     ...(ean ? [['EAN', ean] as [string, string]] : []),
