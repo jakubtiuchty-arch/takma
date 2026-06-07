@@ -93,17 +93,25 @@ export interface BulkProgress {
 export async function bulkPublishBatch(limit = 30): Promise<BulkProgress> {
   const candidates = await candidatePNsWithGtin()
 
-  const publishedSet = new Set<string>()
+  const publishedSet = new Set<string>() // DRAFT/ACTIVE — gotowe
+  const erroredSet = new Set<string>()   // ERROR — do ponowienia
   for (let i = 0; i < candidates.length; i += 500) {
     const chunk = candidates.slice(i, i + 500)
     const rows = await prisma.allegroOffer.findMany({
-      where: { environment: ALLEGRO_ENV, partNumber: { in: chunk }, status: { in: ['DRAFT', 'ACTIVE'] } },
-      select: { partNumber: true },
+      where: { environment: ALLEGRO_ENV, partNumber: { in: chunk } },
+      select: { partNumber: true, status: true },
     })
-    rows.forEach((r) => publishedSet.add(r.partNumber))
+    for (const r of rows) {
+      if (r.status === 'DRAFT' || r.status === 'ACTIVE') publishedSet.add(r.partNumber)
+      else if (r.status === 'ERROR') erroredSet.add(r.partNumber)
+    }
   }
 
-  const todo = candidates.filter((pn) => !publishedSet.has(pn)).slice(0, limit)
+  // Najpierw NIETKNIĘTE (bez żadnego rekordu) — żeby powtarzalne ERROR-y nie zapychały
+  // batcha i nie blokowały reszty kolejki. ERROR-y ponawiamy dopiero po nich.
+  const untried = candidates.filter((pn) => !publishedSet.has(pn) && !erroredSet.has(pn))
+  const errored = candidates.filter((pn) => erroredSet.has(pn))
+  const todo = [...untried, ...errored].slice(0, limit)
   let succeeded = 0
   let failed = 0
   for (const pn of todo) {

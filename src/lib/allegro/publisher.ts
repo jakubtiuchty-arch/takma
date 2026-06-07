@@ -114,25 +114,55 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
   const method = existing?.allegroId ? 'PATCH' : 'POST'
   const path = existing?.allegroId ? `/sale/product-offers/${existing.allegroId}` : '/sale/product-offers'
 
-  const send = (p: AllegroOfferPayload) =>
-    allegroFetch<AllegroOfferResponse>(path, { method, body: JSON.stringify(p) })
+  const send = (
+    p: AllegroOfferPayload,
+    m: 'POST' | 'PATCH' = method,
+    pa: string = path,
+  ) => allegroFetch<AllegroOfferResponse>(pa, { method: m, body: JSON.stringify(p) })
+
+  // Błędy „kolizji z katalogiem" Allegro: nasz EAN/kod trafił w istniejący produkt
+  // (inna kategoria lub inny kod producenta). Bez EAN Allegro tworzy świeży produkt
+  // w NASZEJ kategorii. Allegro nie pozwala na ofertę AKTYWNĄ bez GTIN → zapisujemy
+  // wtedy jako SZKIC (do ręcznej aktywacji / uzupełnienia realnego EAN).
+  const COLLISION =
+    /GTIN|225693|Existing Product related to submitted data|does not match the existing parameter|does not match the existing product category/i
+
+  // Ponów bez EAN jako SZKIC (zwraca [res, forcedDraft]).
+  const retryWithoutEan = async (m: 'POST' | 'PATCH', pa: string) => {
+    const draft = buildOfferPayload({
+      kind, product, variant, price, images, services, ean: undefined, available, gpsr, active: false,
+    })
+    payload = draft
+    return send(draft, m, pa)
+  }
 
   try {
     let res: AllegroOfferResponse
+    let forcedDraft = false
     try {
       res = await send(payload)
-    } catch (e) {
-      // Allegro odrzucił GTIN — ponów bez EAN (zostanie do uzupełnienia przy aktywacji).
-      if (ean && /GTIN|225693/i.test((e as Error).message)) {
-        payload = buildOfferPayload({
-          kind, product, variant, price, images, services, ean: undefined, available, gpsr, active,
-        })
-        res = await send(payload)
+    } catch (e1) {
+      const m1 = (e1 as Error).message
+      if (method === 'PATCH' && /\b404\b|Not Found/i.test(m1)) {
+        // Zapisany allegroId nie istnieje (oferta usunięta na Allegro) — utwórz od nowa (POST).
+        try {
+          res = await send(payload, 'POST', '/sale/product-offers')
+        } catch (e2) {
+          if (ean && COLLISION.test((e2 as Error).message)) {
+            res = await retryWithoutEan('POST', '/sale/product-offers')
+            forcedDraft = true
+          } else {
+            throw e2
+          }
+        }
+      } else if (ean && COLLISION.test(m1)) {
+        res = await retryWithoutEan(method, path)
+        forcedDraft = true
       } else {
-        throw e
+        throw e1
       }
     }
-    const offerStatus = active ? 'ACTIVE' : 'DRAFT'
+    const offerStatus = !forcedDraft && active ? 'ACTIVE' : 'DRAFT'
     await prisma.allegroOffer.upsert({
       where: { environment_partNumber: { environment: ALLEGRO_ENV, partNumber } },
       create: {
