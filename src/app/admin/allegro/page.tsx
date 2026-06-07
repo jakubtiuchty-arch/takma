@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { getConnection, allegroConfigured, ALLEGRO_ENV } from '@/lib/allegro/auth'
 import { listThreads } from '@/lib/allegro/messaging'
+import { listOrders } from '@/lib/allegro/orders'
 
 export const dynamic = 'force-dynamic'
 
@@ -8,11 +9,17 @@ export default async function AllegroDashboardPage() {
   const configured = allegroConfigured()
   const conn = configured ? await getConnection() : null
   let unread = 0
+  let newOrders = 0
   if (conn?.connected) {
     try {
       unread = (await listThreads(20)).filter((t) => !t.read).length
     } catch {
       unread = 0
+    }
+    try {
+      newOrders = (await listOrders(25)).orders.filter((o) => o.fulfillment?.status === 'NEW').length
+    } catch {
+      newOrders = 0
     }
   }
 
@@ -30,6 +37,18 @@ export default async function AllegroDashboardPage() {
           <p className="text-sm text-gray-500">
             {!configured ? 'Brak konfiguracji (env)' : conn?.connected ? `Połączono${conn.allegroLogin ? ` jako ${conn.allegroLogin}` : ''}` : 'Niepołączono — kliknij, aby połączyć'}
           </p>
+        </Link>
+
+        <Link href="/admin/allegro/zamowienia" className="rounded-xl border border-gray-200 bg-white p-5 hover:border-gray-300 transition-colors">
+          <div className="flex items-center gap-2 mb-1">
+            <span className="font-semibold text-gray-900">Zamówienia</span>
+            {newOrders > 0 && (
+              <span className="inline-flex items-center justify-center min-w-5 h-5 px-1.5 rounded-full bg-emerald-600 text-white text-xs font-semibold">
+                {newOrders}
+              </span>
+            )}
+          </div>
+          <p className="text-sm text-gray-500">Zamówienia z Allegro — podgląd, status, dane do wysyłki.</p>
         </Link>
 
         <Link href="/admin/allegro/oferty" className="rounded-xl border border-gray-200 bg-white p-5 hover:border-gray-300 transition-colors">

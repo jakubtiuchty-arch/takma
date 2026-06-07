@@ -88,10 +88,11 @@ const navItems = [
     ),
     children: [
       { label: 'Przegląd', href: '/admin/allegro' },
+      { label: 'Zamówienia', href: '/admin/allegro/zamowienia' },
+      { label: 'Wiadomości', href: '/admin/allegro/wiadomosci' },
       { label: 'Oferty — taśmy', href: '/admin/allegro/oferty' },
       { label: 'Oferty — etykiety', href: '/admin/allegro/etykiety' },
       { label: 'Stare oferty', href: '/admin/allegro/stare-oferty' },
-      { label: 'Wiadomości', href: '/admin/allegro/wiadomosci' },
       { label: 'Konfiguracja', href: '/admin/allegro/konfiguracja' },
     ],
   },
