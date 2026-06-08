@@ -163,25 +163,11 @@ function buildOffer(opts: {
   return lines.join('\n')
 }
 
-/**
- * Tylko materiały eksploatacyjne (etykiety termiczne/termotransferowe + taśmy TT).
- * Urządzenia (drukarki, terminale, skanery, akcesoria) są już na koncie Ceneo,
- * więc feed dokłada wyłącznie materiały dodane do oferty.
- */
-function isMaterial(product: Product): boolean {
-  const subs = product.subcategoryIds || []
-  return subs.some(
-    (s) =>
-      s === 'etykiety-termiczne' ||
-      s.startsWith('etykiety-termotransferowe') ||
-      s.startsWith('tasmy-termotransferowe'),
-  )
-}
-
 interface Candidate {
   product: Product
   variant?: ProductVariant
-  pn: string
+  pn: string // klucz wyszukania StockCache/EAN + atrybut „Kod producenta"
+  id: string // ID oferty Ceneo (stabilne): wariant→PN, produkt→product.id (jak dotąd)
 }
 
 interface StockRow {
@@ -193,15 +179,16 @@ interface StockRow {
 
 export async function GET() {
   // 1) Zbierz wszystkich kandydatów (produkt lub wariant) z numerem PN.
+  // Pełny katalog (urządzenia + materiały) — Ceneo pobiera ten plik jako jedyne
+  // źródło ofert sklepu, więc musi zawierać wszystko, co ma być na Ceneo.
   const candidates: Candidate[] = []
   for (const product of products) {
     if (!product.images?.length) continue // Ceneo wymaga zdjęcia
-    if (!isMaterial(product)) continue // tylko materiały (urządzenia już są na Ceneo)
     if (product.variants && product.variants.length > 0) {
-      for (const v of product.variants) candidates.push({ product, variant: v, pn: v.partNumber })
+      for (const v of product.variants) candidates.push({ product, variant: v, pn: v.partNumber, id: v.partNumber })
     } else {
       const pn = product.specifications.find(s => s.name === 'Part Number')?.value || product.id
-      candidates.push({ product, pn })
+      candidates.push({ product, pn, id: product.id })
     }
   }
 
@@ -231,12 +218,13 @@ export async function GET() {
   }
 
   // 3) Zbuduj oferty — tylko dostępne, z ceną live (fallback: priceFrom).
-  // Deduplikacja po PN: ten sam akcesoryjny PN bywa cross-listowany na kilku
-  // stronach produktu (np. gilotyna 2000424) — w feedzie musi być raz.
-  const seenPns = new Set<string>()
+  // Deduplikacja po ID oferty — zabezpieczenie przed tym samym SKU (PN wariantu)
+  // cross-listowanym na kilku stronach. Urządzenia mają ID = product.id (stabilne,
+  // jak dotąd), więc to samo akcesorium na dwóch stronach to dwie różne oferty.
+  const seenIds = new Set<string>()
   const offers: string[] = []
   for (const c of candidates) {
-    if (seenPns.has(c.pn)) continue
+    if (seenIds.has(c.id)) continue
     const sc = stockMap.get(c.pn)
 
     // Cena netto: live ze StockCache (preferowana) → fallback priceFrom (statyczna).
@@ -275,7 +263,7 @@ export async function GET() {
     const name = c.variant ? `${c.product.name} — ${c.variant.name}` : c.product.name
 
     offers.push(buildOffer({
-      id: c.pn,
+      id: c.id,
       url,
       price: priceBrutto,
       avail,
@@ -291,7 +279,7 @@ export async function GET() {
       size,
       certs,
     }))
-    seenPns.add(c.pn)
+    seenIds.add(c.id)
   }
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
