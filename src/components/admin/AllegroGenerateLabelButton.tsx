@@ -2,13 +2,15 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { carrierTrackingUrl } from '@/lib/carrier-tracking'
 
 interface Props {
   orderId: string
   existingTracking?: string | null
+  carrier?: string | null
 }
 
-export default function AllegroGenerateLabelButton({ orderId, existingTracking }: Props) {
+export default function AllegroGenerateLabelButton({ orderId, existingTracking, carrier }: Props) {
   const router = useRouter()
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -64,7 +66,20 @@ export default function AllegroGenerateLabelButton({ orderId, existingTracking }
         <div>
           <h2 className="font-semibold text-gray-900 text-sm">List przewozowy (Furgonetka)</h2>
           {tracking ? (
-            <p className="text-sm text-emerald-700 mt-0.5">Nr listu: <span className="font-mono">{tracking}</span></p>
+            <p className="text-sm text-emerald-700 mt-0.5">
+              Nr listu: <span className="font-mono">{tracking}</span>
+              {(() => {
+                const t = carrierTrackingUrl(carrier, tracking)
+                return t ? (
+                  <>
+                    {' · '}
+                    <a href={t.url} target="_blank" className="text-blue-600 hover:underline font-sans">
+                      Śledź u przewoźnika ({t.carrier}) →
+                    </a>
+                  </>
+                ) : null
+              })()}
+            </p>
           ) : (
             <p className="text-sm text-gray-500 mt-0.5">Wygeneruj list i wydrukuj etykietę.</p>
           )}

@@ -95,6 +95,7 @@ const navItems = [
       { label: 'Oferty — etykiety', href: '/admin/allegro/etykiety' },
       { label: 'Wystaw hurtowo', href: '/admin/allegro/hurtowe' },
       { label: 'Stare oferty', href: '/admin/allegro/stare-oferty' },
+      { label: 'Duplikaty przesyłek', href: '/admin/allegro/duplikaty' },
       { label: 'Konfiguracja', href: '/admin/allegro/konfiguracja' },
     ],
   },

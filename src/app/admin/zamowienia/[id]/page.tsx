@@ -8,6 +8,7 @@ import OrderTrackingForm from './OrderTrackingForm'
 import OrderFurgonetkaButton from './OrderFurgonetkaButton'
 import OrderNotesForm from './OrderNotesForm'
 import ShipmentTimeline from '@/components/admin/ShipmentTimeline'
+import { carrierTrackingUrl } from '@/lib/carrier-tracking'
 
 const statusLabels: Record<OrderStatus, string> = {
   PENDING_PAYMENT: 'Oczekuje na płatność',
@@ -132,7 +133,15 @@ export default async function OrderDetailPage({ params }: PageProps) {
             {order.trackingNumber ? (
               <div className="space-y-2 text-sm">
                 <div><span className="text-gray-500">Kurier:</span> {order.carrierName}</div>
-                <div><span className="text-gray-500">Nr przesyłki:</span> <span className="font-mono">{order.trackingNumber}</span></div>
+                <div>
+                  <span className="text-gray-500">Nr przesyłki:</span> <span className="font-mono">{order.trackingNumber}</span>
+                  {(() => {
+                    const t = carrierTrackingUrl(order.carrierName, order.trackingNumber)
+                    return t ? (
+                      <> · <a href={t.url} target="_blank" className="text-blue-600 hover:underline">Śledź u przewoźnika ({t.carrier}) →</a></>
+                    ) : null
+                  })()}
+                </div>
                 {order.shippedAt && <div><span className="text-gray-500">Data wysyłki:</span> {order.shippedAt.toLocaleDateString('pl-PL')}</div>}
                 <div className="pt-2"><ShipmentTimeline orderRef={order.id} /></div>
               </div>

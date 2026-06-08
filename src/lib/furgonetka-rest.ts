@@ -208,6 +208,61 @@ export async function getPackageTracking(packageId: string): Promise<string> {
   }
 }
 
+export interface FurgPackageSummary {
+  id: string
+  ref: string | null // user_reference_number = nasz orderId
+  tracking: string | null
+  state: string
+  stateDescription: string
+  receiverName: string | null
+  receiverPostcode: string | null
+  datetimeAdd: string | null
+  cancelAvailable: boolean
+  editUrl: string | null
+}
+
+interface FurgListItem {
+  package_id: string | number
+  user_reference_number?: string | number | null
+  datetime_add?: string | null
+  cancel_available?: boolean
+  edit_url?: string | null
+  state?: string
+  receiver?: { name?: string; postcode?: string }
+  parcels?: Array<{ package_no?: string | null; tracking_number?: string | null; state?: string; state_description?: string }>
+}
+
+/** Lista paczek z konta (paginacja). Do wykrywania duplikatów. */
+export async function listAllPackages(maxPages = 10): Promise<FurgPackageSummary[]> {
+  const out: FurgPackageSummary[] = []
+  for (let page = 1; page <= maxPages; page++) {
+    const j = await furgFetch<{ packages?: FurgListItem[]; data?: FurgListItem[] }>(`/packages?page=${page}&limit=100`)
+    const arr = j.packages || j.data || []
+    for (const p of arr) {
+      const pcl = p.parcels?.[0] || {}
+      out.push({
+        id: String(p.package_id),
+        ref: p.user_reference_number != null ? String(p.user_reference_number) : null,
+        tracking: pcl.package_no || pcl.tracking_number || null,
+        state: pcl.state || p.state || 'unknown',
+        stateDescription: pcl.state_description || '',
+        receiverName: p.receiver?.name || null,
+        receiverPostcode: p.receiver?.postcode || null,
+        datetimeAdd: p.datetime_add || null,
+        cancelAvailable: !!p.cancel_available,
+        editUrl: p.edit_url || null,
+      })
+    }
+    if (arr.length < 100) break
+  }
+  return out
+}
+
+/** Anuluj paczkę (gdy cancel_available). Best-effort. */
+export async function cancelPackage(packageId: string): Promise<void> {
+  await furgFetch(`/packages/${packageId}/cancel`, { method: 'POST', body: '{}' })
+}
+
 export interface FurgPackageStatus {
   state: string
   description: string

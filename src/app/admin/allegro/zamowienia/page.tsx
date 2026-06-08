@@ -96,7 +96,7 @@ export default async function AllegroZamowieniaPage({
         </div>
 
         <div className="mb-4 space-y-3">
-          <AllegroGenerateLabelButton orderId={o.id} existingTracking={tracked?.trackingNumber} />
+          <AllegroGenerateLabelButton orderId={o.id} existingTracking={tracked?.trackingNumber} carrier={o.delivery?.method?.name} />
           <ShipmentTimeline orderRef={o.id} />
           <AllegroManualTrackingForm orderId={o.id} />
         </div>
