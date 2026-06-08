@@ -1,7 +1,27 @@
 import { NextResponse } from 'next/server'
-import { products, getCategoryById, getSubcategoryById, getManufacturerById } from '@/data/products'
+import {
+  products,
+  getCategoryById,
+  getSubcategoryById,
+  getManufacturerById,
+  variantSizeSlug,
+  type Product,
+  type ProductVariant,
+} from '@/data/products'
+import { prisma } from '@/lib/db'
+import { isValidGtin } from '@/lib/allegro/gtin'
+
+export const runtime = 'nodejs'
+export const dynamic = 'force-dynamic'
+export const maxDuration = 60
 
 const SITE_URL = 'https://www.takma.com.pl'
+
+// Narzut Ceneo (CPC) — analogicznie do prowizji Allegro. UWAGA: Ceneo wymaga, by cena
+// w feedzie odpowiadała cenie na stronie docelowej. Jeśli strona NIE ma tego narzutu,
+// ustaw 1.0 (feed = cena sklepu ×VAT), inaczej robot Ceneo wykryje rozbieżność i ukryje oferty.
+const CENEO_MARKUP = 1.12
+const VAT = 1.23
 
 // Ceneo availability codes: 1 = 24h, 3 = 3 days, 7 = 7 days, 99 = check
 const availabilityMap: Record<string, number> = {
@@ -67,7 +87,7 @@ function getWeight(specs: Array<{ name: string; value: string }>): string | null
 }
 
 function stripMarkdown(text: string): string {
-  return text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+  return text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\*\*([^*]+)\*\*/g, '$1')
 }
 
 /** Truncate description to max chars, respecting word boundaries */
@@ -96,6 +116,7 @@ function buildOffer(opts: {
   manufacturerId: string
   partNumber: string
   ean?: string
+  size?: string
   certs: string
 }): string {
   const weightAttr = opts.weight ? ` weight="${opts.weight}"` : ''
@@ -119,9 +140,10 @@ function buildOffer(opts: {
   // Attributes
   lines.push('    <attrs>')
   lines.push(`      <a name="Producent">${cdata(opts.manufacturer)}</a>`)
-  lines.push(`      <a name="Part Number">${cdata(opts.partNumber)}</a>`)
-
-  // EAN
+  lines.push(`      <a name="Kod producenta">${cdata(opts.partNumber)}</a>`)
+  if (opts.size) {
+    lines.push(`      <a name="Rozmiar">${cdata(opts.size)}</a>`)
+  }
   if (opts.ean) {
     lines.push(`      <a name="EAN">${cdata(opts.ean)}</a>`)
   }
@@ -137,86 +159,118 @@ function buildOffer(opts: {
   }
 
   lines.push('    </attrs>')
-
   lines.push('  </o>')
   return lines.join('\n')
 }
 
+interface Candidate {
+  product: Product
+  variant?: ProductVariant
+  pn: string
+}
+
+interface StockRow {
+  price: number | null
+  availability: string
+  totalStock: number
+  found: boolean
+}
+
 export async function GET() {
-  const offers: string[] = []
-
+  // 1) Zbierz wszystkich kandydatów (produkt lub wariant) z numerem PN.
+  const candidates: Candidate[] = []
   for (const product of products) {
-    const manufacturer = getManufacturerById(product.manufacturerId)
-    const brand = manufacturer?.name || ''
-    const imageLinks = product.images.map(img => `${SITE_URL}${img}`)
-    const link = `${SITE_URL}/produkt/${product.slug}`
-    const cat = getCategoryPath(product.categoryId, product.subcategoryIds)
-    const weight = getWeight(product.specifications)
-    const certs = getCertificates(product.specifications)
-
-    // Full description: description (stripped of markdown) > shortDescription fallback
-    const fullDesc = product.description
-      ? truncateDesc(stripMarkdown(product.description), 5000)
-      : stripMarkdown(product.shortDescription)
-
-    // EAN from specifications if available
-    const eanSpec = product.specifications.find(s => s.name === 'EAN' || s.name === 'GTIN')
-    const ean = eanSpec?.value
-
-    // Skip products without images or prices
-    if (imageLinks.length === 0 || !product.priceFrom || product.priceFrom <= 0) continue
-
-    // Skip unavailable products
-    if (product.availability === 'unavailable') continue
-
+    if (!product.images?.length) continue // Ceneo wymaga zdjęcia
     if (product.variants && product.variants.length > 0) {
-      for (const variant of product.variants) {
-        if (!variant.priceFrom || variant.priceFrom <= 0) continue
-        if (variant.availability === 'unavailable') continue
-
-        const avail = availabilityMap[variant.availability] ?? 99
-
-        offers.push(
-          buildOffer({
-            id: variant.partNumber,
-            url: link,
-            price: variant.priceFrom * 1.23,
-            avail,
-            weight,
-            cat,
-            name: `${product.name} — ${variant.name}`,
-            desc: fullDesc,
-            images: imageLinks,
-            manufacturer: brand,
-            manufacturerId: product.manufacturerId,
-            partNumber: variant.partNumber,
-            ean,
-            certs,
-          })
-        )
-      }
+      for (const v of product.variants) candidates.push({ product, variant: v, pn: v.partNumber })
     } else {
-      const avail = availabilityMap[product.availability] ?? 99
-
-      offers.push(
-        buildOffer({
-          id: product.id,
-          url: link,
-          price: product.priceFrom * 1.23,
-          avail,
-          weight,
-          cat,
-          name: product.name,
-          desc: fullDesc,
-          images: imageLinks,
-          manufacturer: brand,
-          manufacturerId: product.manufacturerId,
-          partNumber: product.specifications.find(s => s.name === 'Part Number')?.value || product.id,
-          ean,
-          certs,
-        })
-      )
+      const pn = product.specifications.find(s => s.name === 'Part Number')?.value || product.id
+      candidates.push({ product, pn })
     }
+  }
+
+  // 2) Pobierz LIVE ceny/stan (StockCache) i EAN (ProductEan) wsadowo. StockCache.price
+  //    to cena sprzedaży netto z marżą sklepu (po bezpieczniku kosztowym ze stock-sync).
+  const pns = Array.from(new Set(candidates.map(c => c.pn)))
+  const stockMap = new Map<string, StockRow>()
+  const eanMap = new Map<string, string>() // klucz: PN wielkimi literami
+  try {
+    for (let i = 0; i < pns.length; i += 500) {
+      const chunk = pns.slice(i, i + 500)
+      const [sc, eans] = await Promise.all([
+        prisma.stockCache.findMany({
+          where: { partNumber: { in: chunk } },
+          select: { partNumber: true, price: true, availability: true, totalStock: true, found: true },
+        }),
+        prisma.productEan.findMany({
+          where: { partNumber: { in: chunk.map(s => s.toUpperCase()) } },
+          select: { partNumber: true, ean: true },
+        }),
+      ])
+      for (const r of sc) stockMap.set(r.partNumber, r)
+      for (const r of eans) if (isValidGtin(r.ean)) eanMap.set(r.partNumber, r.ean)
+    }
+  } catch (err) {
+    console.error('[ceneo-feed] błąd pobierania StockCache/ProductEan — fallback do cen statycznych:', err)
+  }
+
+  // 3) Zbuduj oferty — tylko dostępne, z ceną live (fallback: priceFrom).
+  const offers: string[] = []
+  for (const c of candidates) {
+    const sc = stockMap.get(c.pn)
+
+    // Cena netto: live ze StockCache (preferowana) → fallback priceFrom (statyczna).
+    const liveNet = sc?.found && sc.price && sc.price > 0
+      ? sc.price
+      : (c.variant?.priceFrom ?? c.product.priceFrom)
+    if (!liveNet || liveNet <= 0) continue
+
+    // Dostępność: live ze StockCache (preferowana) → fallback statyczna.
+    const availRaw = sc?.found ? sc.availability : (c.variant?.availability ?? c.product.availability)
+    if (availRaw === 'unavailable') continue
+    // Gdy mamy live stan — wymagamy realnej dostępności (nie płacimy CPC za braki).
+    if (sc?.found && sc.totalStock <= 0) continue
+
+    const priceBrutto = Math.round(liveNet * CENEO_MARKUP * VAT * 100) / 100
+    const avail = availabilityMap[availRaw] ?? 99
+
+    const manufacturer = getManufacturerById(c.product.manufacturerId)
+    const brand = manufacturer?.name || ''
+    const images = c.product.images.map(img => `${SITE_URL}${img}`)
+    const cat = getCategoryPath(c.product.categoryId, c.product.subcategoryIds)
+    const weight = getWeight(c.product.specifications)
+    const certs = getCertificates(c.product.specifications)
+    const fullDesc = c.product.description
+      ? truncateDesc(stripMarkdown(c.product.description), 5000)
+      : stripMarkdown(c.product.shortDescription || '')
+    const ean = eanMap.get(c.pn.toUpperCase())
+
+    // Deep-link do konkretnego wariantu (SKU), z fallbackiem na stronę serii.
+    const sizeSlug = c.variant ? variantSizeSlug(c.variant) : ''
+    const url = c.variant && sizeSlug
+      ? `${SITE_URL}/produkt/${c.product.slug}/${sizeSlug}/${c.variant.partNumber}`
+      : `${SITE_URL}/produkt/${c.product.slug}`
+
+    const size = c.variant?.attributes?.['Rozmiar'] || c.variant?.name
+    const name = c.variant ? `${c.product.name} — ${c.variant.name}` : c.product.name
+
+    offers.push(buildOffer({
+      id: c.pn,
+      url,
+      price: priceBrutto,
+      avail,
+      weight,
+      cat,
+      name,
+      desc: fullDesc,
+      images,
+      manufacturer: brand,
+      manufacturerId: c.product.manufacturerId,
+      partNumber: c.pn,
+      ean,
+      size,
+      certs,
+    }))
   }
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
