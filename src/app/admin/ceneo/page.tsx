@@ -122,7 +122,7 @@ export default async function CeneoAdminPage() {
                   )}
                 </>
               ) : (
-                <p className="text-sm text-gray-500">Brak danych — kliknij „Waliduj teraz".</p>
+                <p className="text-sm text-gray-500">Brak danych — kliknij przycisk Waliduj teraz.</p>
               )}
 
               <div className="mt-4 pt-3 border-t border-gray-100">
