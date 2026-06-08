@@ -163,6 +163,21 @@ function buildOffer(opts: {
   return lines.join('\n')
 }
 
+/**
+ * Tylko materiały eksploatacyjne (etykiety termiczne/termotransferowe + taśmy TT).
+ * Urządzenia (drukarki, terminale, skanery, akcesoria) są już na koncie Ceneo,
+ * więc feed dokłada wyłącznie materiały dodane do oferty.
+ */
+function isMaterial(product: Product): boolean {
+  const subs = product.subcategoryIds || []
+  return subs.some(
+    (s) =>
+      s === 'etykiety-termiczne' ||
+      s.startsWith('etykiety-termotransferowe') ||
+      s.startsWith('tasmy-termotransferowe'),
+  )
+}
+
 interface Candidate {
   product: Product
   variant?: ProductVariant
@@ -181,6 +196,7 @@ export async function GET() {
   const candidates: Candidate[] = []
   for (const product of products) {
     if (!product.images?.length) continue // Ceneo wymaga zdjęcia
+    if (!isMaterial(product)) continue // tylko materiały (urządzenia już są na Ceneo)
     if (product.variants && product.variants.length > 0) {
       for (const v of product.variants) candidates.push({ product, variant: v, pn: v.partNumber })
     } else {
