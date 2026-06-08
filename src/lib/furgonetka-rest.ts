@@ -208,6 +208,44 @@ export async function getPackageTracking(packageId: string): Promise<string> {
   }
 }
 
+export interface FurgPackageStatus {
+  state: string
+  description: string
+  station: string | null
+  datetimeStatus: string | null
+  trackingUrl: string | null
+  trackingNumber: string | null
+}
+
+/** Bieżący status przesyłki z detali paczki (Furgonetka nie ma historii zdarzeń). */
+export async function getPackageStatus(packageId: string): Promise<FurgPackageStatus | null> {
+  try {
+    const j = await furgFetch<{
+      state?: string
+      tracking_number?: string
+      parcels?: Array<{
+        state?: string
+        state_description?: string
+        station?: string | null
+        datetime_status?: string | null
+        tracking_url?: string | null
+        package_no?: string | null
+      }>
+    }>(`/packages/${packageId}`)
+    const p = j.parcels?.[0] || {}
+    return {
+      state: p.state || j.state || 'unknown',
+      description: p.state_description || '',
+      station: p.station || null,
+      datetimeStatus: p.datetime_status || null,
+      trackingUrl: p.tracking_url || null,
+      trackingNumber: p.package_no || j.tracking_number || null,
+    }
+  } catch {
+    return null
+  }
+}
+
 /** Pobiera etykietę PDF (base64). */
 export async function getLabel(packageId: string): Promise<string> {
   const token = await getToken()

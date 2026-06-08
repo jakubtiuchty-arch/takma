@@ -638,3 +638,41 @@ model FeedValidationRun {
   @@index([feed, startedAt(sort: Desc)])
   @@map("feed_validation_runs")
 }
+
+// Śledzenie przesyłek Furgonetki — własna oś czasu budowana cronem (API Furgonetki
+// nie ma historii zdarzeń, więc pollujemy bieżący stan i dopisujemy zmiany).
+model ShipmentTracking {
+  id             String   @id @default(cuid())
+  packageId      String   @unique // id paczki Furgonetka
+  source         String // 'allegro' | 'shop'
+  orderRef       String // id zamówienia (Allegro order id / shop order id)
+  trackingNumber String?
+  carrier        String?
+  currentState   String?
+  currentDesc    String?
+  currentStation String?
+  trackingUrl    String?
+  delivered      Boolean  @default(false)
+  lastPolledAt   DateTime?
+  createdAt      DateTime @default(now())
+
+  events ShipmentTrackingEvent[]
+
+  @@index([orderRef])
+  @@index([delivered])
+  @@map("shipment_tracking")
+}
+
+model ShipmentTrackingEvent {
+  id             String           @id @default(cuid())
+  tracking       ShipmentTracking @relation(fields: [trackingId], references: [id], onDelete: Cascade)
+  trackingId     String
+  state          String
+  description    String?
+  station        String?
+  datetimeStatus String? // ISO od Furgonetki (kiedy kurier zeskanował)
+  recordedAt     DateTime @default(now())
+
+  @@index([trackingId, recordedAt])
+  @@map("shipment_tracking_events")
+}

@@ -4,6 +4,7 @@ import { allegroConfigured, getConnection } from '@/lib/allegro/auth'
 import { listOrders, getOrder, ORDER_STATUS_PL, FULFILLMENT_STATUS_PL, type AllegroOrder } from '@/lib/allegro/orders'
 import { findThreadByBuyerId } from '@/lib/allegro/messaging'
 import AllegroGenerateLabelButton from '@/components/admin/AllegroGenerateLabelButton'
+import ShipmentTimeline from '@/components/admin/ShipmentTimeline'
 import AllegroThreadView from '@/components/admin/AllegroThreadView'
 import AllegroFulfillCheckbox from '@/components/admin/AllegroFulfillCheckbox'
 import AllegroManualTrackingForm from '@/components/admin/AllegroManualTrackingForm'
@@ -96,6 +97,7 @@ export default async function AllegroZamowieniaPage({
 
         <div className="mb-4 space-y-3">
           <AllegroGenerateLabelButton orderId={o.id} existingTracking={tracked?.trackingNumber} />
+          <ShipmentTimeline orderRef={o.id} />
           <AllegroManualTrackingForm orderId={o.id} />
         </div>
 

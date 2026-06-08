@@ -38,6 +38,10 @@
     {
       "path": "/api/cron/ceneo-validate",
       "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/cron/furgonetka-tracking",
+      "schedule": "*/30 * * * *"
     }
   ]
 }
