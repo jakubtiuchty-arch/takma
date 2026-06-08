@@ -257,6 +257,12 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     : product.subcategoryIds?.includes('biurkowe-drukarki-etykiet')
       ? '12'
       : undefined
+  // Rdzeń (gilza) ETYKIET: biurkowe akceptują małe gilzy (12/19/25 mm) — NIE 76 mm
+  // (etykieta fi76 fizycznie nie wejdzie na drukarkę desktop). Przemysłowe i pozostałe:
+  // bez filtra (mieszczą każdą gilzę, w tym 25 mm na adapterze).
+  const printerLabelCore: string[] | undefined = product.subcategoryIds?.includes('biurkowe-drukarki-etykiet')
+    ? ['12', '19', '25']
+    : undefined
   // Szerokość druku (głowicy) w mm — szukamy w wielu polach, bo część drukarek ma to
   // tylko w keyParams.szerokoscDruku, a nie w specifications (np. Honeywell PD45/PM45).
   const printWidthMm = (() => {
@@ -1281,6 +1287,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 productIds={ttPaperIds}
                 kind="label"
                 printWidthMm={printWidthMm}
+                requiredCore={printerLabelCore}
               />
             ) : compatibleConsumables.length > 0 ? (
               <RelatedProducts
@@ -1300,6 +1307,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 productIds={ttFoilIds}
                 kind="label"
                 printWidthMm={printWidthMm}
+                requiredCore={printerLabelCore}
               />
             ) : compatibleFoilLabels.length > 0 ? (
               <RelatedProducts

@@ -109,12 +109,25 @@ export default function PrinterMaterialVariants({
   productIds: string[]
   kind: 'label' | 'ribbon'
   printWidthMm?: number
-  /** Wymagany rdzeń taśmy dla danej drukarki ('12' biurkowa / '25' przemysłowa).
-   *  Filtruje rekomendowane taśmy — np. rolka 12 mm nie wejdzie na wieszaki przemysłówki. */
-  requiredCore?: string
+  /** Dozwolony rdzeń (gilza) dla danej drukarki. Taśmy: pojedyncza wartość
+   *  ('12' biurkowa / '25' przemysłowa). Etykiety: lista akceptowanych gilz
+   *  (np. biurkowe ['12','19','25'] — bez 76 mm). Brak → bez filtra. */
+  requiredCore?: string | string[]
   perSeries?: number
   maxTotal?: number
 }) {
+  // Czy rdzeń (gilza) wariantu pasuje do drukarki. Czyta 'Rdzeń' lub 'Rdzeń (gilza)'.
+  // Taśmy: zachowanie jak dotąd (rdzeń musi zaczynać się od wymaganej wartości; brak → odrzuć).
+  // Etykiety: dopasowanie po liczbie gilzy; rolki bez gilzy liczbowej (fanfold) — nie odrzucamy.
+  const coreOk = (v: ProductVariant): boolean => {
+    if (!requiredCore) return true
+    const allowed = Array.isArray(requiredCore) ? requiredCore : [requiredCore]
+    const core = String(v.attributes?.['Rdzeń'] ?? v.attributes?.['Rdzeń (gilza)'] ?? '').trim()
+    if (kind === 'ribbon') return allowed.some(a => core.startsWith(a))
+    const num = core.match(/\d+/)?.[0]
+    if (!num) return true
+    return allowed.some(a => num.startsWith(a))
+  }
   // Z każdej serii bierzemy kilka wariantów mieszczących się w szerokości głowicy,
   // od najszerszego (najbardziej uniwersalny dla danej drukarki).
   // Taśma jest zwykle nieco szersza niż głowica (104 mm głowica → ~110 mm taśma),
@@ -131,8 +144,9 @@ export default function PrinterMaterialVariants({
     const fitting = product.variants
       .map(v => ({ v, w: widthMm(v) }))
       .filter(x => x.w != null && (!printWidthMm || x.w <= printWidthMm + tol))
-      // Rdzeń: dla taśm rolka musi pasować do wieszaków drukarki (12 mm biurkowa / 25 mm przemysłowa).
-      .filter(x => kind !== 'ribbon' || !requiredCore || String(x.v.attributes?.['Rdzeń'] ?? '').startsWith(requiredCore))
+      // Rdzeń (gilza): rolka musi pasować do wieszaków drukarki — np. etykiety fi76
+      // nie wejdą na drukarkę biurkową (akceptuje 12/19/25 mm).
+      .filter(x => coreOk(x.v))
       .sort((a, b) => (b.w! - a.w!))
       .slice(0, Math.max(perSeries, 8)) // głębsza pula — po stanie pokażemy tylko dostępne
       .map(x => ({ product, variant: x.v, title: t }))
