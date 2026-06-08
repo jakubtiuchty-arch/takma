@@ -224,3 +224,21 @@ export async function getLabel(packageId: string): Promise<string> {
   const buf = Buffer.from(await res.arrayBuffer())
   return buf.toString('base64')
 }
+
+/**
+ * Etykieta z ponawianiem — Furgonetka generuje PDF asynchronicznie, więc tuż po
+ * utworzeniu paczki `getLabel` często zwraca 400 (jeszcze nie gotowe). Zwraca
+ * base64 albo null (po wyczerpaniu prób), bez rzucania — przesyłka i tak istnieje.
+ */
+export async function getLabelRetry(packageId: string, attempts = 5, delayMs = 2000): Promise<string | null> {
+  for (let i = 0; i < attempts; i++) {
+    try {
+      const b64 = await getLabel(packageId)
+      if (b64) return b64
+    } catch {
+      /* etykieta jeszcze się generuje — ponawiamy */
+    }
+    if (i < attempts - 1) await new Promise((r) => setTimeout(r, delayMs))
+  }
+  return null
+}

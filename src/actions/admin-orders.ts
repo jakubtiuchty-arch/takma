@@ -10,7 +10,7 @@ import {
   pickService,
   createPackage,
   getPackageTracking,
-  getLabel,
+  getLabelRetry,
   parseAddress,
   type FurgAddress,
 } from '@/lib/furgonetka-rest'
@@ -25,6 +25,18 @@ export async function generateFurgonetkaShipment(orderId: string, carrier: strin
   }
   const order = await prisma.order.findUnique({ where: { id: orderId }, include: { customer: true, items: true } })
   if (!order) return { ok: false as const, error: 'Nie znaleziono zamówienia.' }
+
+  // Paczka już istnieje (ponowne kliknięcie / wcześniejszy błąd etykiety) — NIE twórz
+  // drugiego kuriera, tylko pobierz etykietę.
+  if (order.shipmentId) {
+    const labelBase64 = await getLabelRetry(order.shipmentId)
+    return {
+      ok: true as const,
+      tracking: order.trackingNumber,
+      labelBase64,
+      ...(labelBase64 ? {} : { warning: 'Etykieta jeszcze się generuje — spróbuj ponownie za chwilę.' }),
+    }
+  }
 
   const cu = order.customer
   const addr = parseAddress(cu.shippingAddress || cu.address || '')
@@ -53,17 +65,26 @@ export async function generateFurgonetkaShipment(orderId: string, carrier: strin
     const pkg = await createPackage(order.orderNumber, serviceId, receiver, parcels)
     if (!pkg.id) return { ok: false as const, error: 'Furgonetka nie zwróciła id przesyłki.' }
     const tracking = pkg.tracking || (await getPackageTracking(pkg.id))
-    const labelBase64 = await getLabel(pkg.id)
 
+    // ZAPISZ paczkę OD RAZU (zanim etykieta) — nawet jeśli etykieta padnie, nie zgubimy
+    // przesyłki i nie utworzymy drugiej przy ponownym kliknięciu.
     await prisma.order.update({
       where: { id: orderId },
-      data: { trackingNumber: tracking || null, carrierName: carrier, status: OrderStatus.SHIPPED, shippedAt: new Date() },
+      data: { trackingNumber: tracking || null, carrierName: carrier, shipmentId: pkg.id, status: OrderStatus.SHIPPED, shippedAt: new Date() },
     })
     if (tracking) {
       await sendShippingNotification(cu.email, order.orderNumber, tracking, carrier).catch(() => {})
     }
     revalidatePath(`/admin/zamowienia/${orderId}`)
-    return { ok: true as const, tracking, labelBase64 }
+
+    // Etykieta z ponawianiem (async generacja). Brak etykiety NIE jest błędem.
+    const labelBase64 = await getLabelRetry(pkg.id)
+    return {
+      ok: true as const,
+      tracking,
+      labelBase64,
+      ...(labelBase64 ? {} : { warning: 'List utworzony, etykieta jeszcze się generuje — kliknij ponownie za chwilę.' }),
+    }
   } catch (e) {
     return { ok: false as const, error: (e as Error).message }
   }

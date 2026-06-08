@@ -10,7 +10,7 @@ import {
   pickService,
   createPackage,
   getPackageTracking,
-  getLabel,
+  getLabelRetry,
 } from '@/lib/furgonetka-rest'
 
 export const runtime = 'nodejs'
@@ -35,6 +35,24 @@ export async function POST(request: Request) {
   if (!orderId) return NextResponse.json({ error: 'Brak orderId.' }, { status: 400 })
 
   try {
+    // Paczka już istnieje (ponowne kliknięcie / wcześniejszy błąd etykiety) —
+    // NIE twórz drugiego kuriera, tylko pobierz etykietę.
+    const existing = await prisma.allegroOrderNotified.findUnique({
+      where: { orderId },
+      select: { shipmentId: true, trackingNumber: true },
+    })
+    if (existing?.shipmentId) {
+      const labelBase64 = await getLabelRetry(existing.shipmentId)
+      return NextResponse.json({
+        ok: true,
+        reused: true,
+        tracking: existing.trackingNumber,
+        packageId: existing.shipmentId,
+        labelBase64,
+        ...(labelBase64 ? {} : { warning: 'Etykieta jeszcze się generuje — spróbuj ponownie za chwilę.' }),
+      })
+    }
+
     const order = await getOrder(orderId)
     const receiver = receiverAddress(order)
     const parcels = buildParcels(order)
@@ -49,9 +67,16 @@ export async function POST(request: Request) {
     if (!pkg.id) return NextResponse.json({ error: 'Furgonetka nie zwróciła id przesyłki.' }, { status: 422 })
 
     const tracking = pkg.tracking || (await getPackageTracking(pkg.id))
-    const labelBase64 = await getLabel(pkg.id)
 
-    // wpięcie trackingu w zamówienie Allegro (kupujący widzi list, status „wysłane")
+    // ZAPISZ paczkę OD RAZU (zanim etykieta) — nawet jeśli etykieta padnie, nie zgubimy
+    // przesyłki i nie utworzymy drugiej przy ponownym kliknięciu.
+    await prisma.allegroOrderNotified.upsert({
+      where: { orderId },
+      create: { orderId, trackingNumber: tracking || null, shipmentId: pkg.id },
+      update: { trackingNumber: tracking || null, shipmentId: pkg.id },
+    })
+
+    // Wpięcie trackingu w zamówienie Allegro (kupujący widzi list, status „wysłane").
     if (tracking) {
       try {
         await addShipment(orderId, tracking, order.delivery?.method?.name || '')
@@ -60,13 +85,17 @@ export async function POST(request: Request) {
       }
     }
 
-    await prisma.allegroOrderNotified.upsert({
-      where: { orderId },
-      create: { orderId, trackingNumber: tracking || null, shipmentId: pkg.id },
-      update: { trackingNumber: tracking || null, shipmentId: pkg.id },
-    })
+    // Etykieta z ponawianiem (async generacja). Brak etykiety NIE jest błędem —
+    // przesyłka istnieje, etykietę można pobrać później przyciskiem „Generuj ponownie".
+    const labelBase64 = await getLabelRetry(pkg.id)
 
-    return NextResponse.json({ ok: true, tracking, packageId: pkg.id, labelBase64 })
+    return NextResponse.json({
+      ok: true,
+      tracking,
+      packageId: pkg.id,
+      labelBase64,
+      ...(labelBase64 ? {} : { warning: 'List utworzony, etykieta jeszcze się generuje — kliknij „Generuj ponownie" za chwilę.' }),
+    })
   } catch (e) {
     return NextResponse.json({ error: (e as Error).message }, { status: 422 })
   }

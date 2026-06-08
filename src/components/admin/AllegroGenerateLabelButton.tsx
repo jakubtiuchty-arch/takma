@@ -12,6 +12,7 @@ export default function AllegroGenerateLabelButton({ orderId, existingTracking }
   const router = useRouter()
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [notice, setNotice] = useState<string | null>(null)
   const [tracking, setTracking] = useState<string | null>(existingTracking || null)
 
   function openPdf(base64: string) {
@@ -30,6 +31,7 @@ export default function AllegroGenerateLabelButton({ orderId, existingTracking }
   async function generate() {
     setLoading(true)
     setError(null)
+    setNotice(null)
     try {
       const res = await fetch('/admin/allegro/zamowienia/generuj-list', {
         method: 'POST',
@@ -41,7 +43,12 @@ export default function AllegroGenerateLabelButton({ orderId, existingTracking }
         setError(data?.error || `Błąd ${res.status}`)
       } else {
         if (data.tracking) setTracking(data.tracking)
-        if (data.labelBase64) openPdf(data.labelBase64)
+        if (data.labelBase64) {
+          openPdf(data.labelBase64)
+          setNotice('Etykieta otwarta do druku.')
+        } else if (data.warning) {
+          setNotice(data.warning)
+        }
         router.refresh()
       }
     } catch (e) {
@@ -61,6 +68,7 @@ export default function AllegroGenerateLabelButton({ orderId, existingTracking }
           ) : (
             <p className="text-sm text-gray-500 mt-0.5">Wygeneruj list i wydrukuj etykietę.</p>
           )}
+          {notice && <p className="text-xs text-amber-700 mt-1">{notice}</p>}
           {error && <p className="text-xs text-red-600 mt-1">{error}</p>}
         </div>
         <button

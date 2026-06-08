@@ -30,7 +30,8 @@ export default function OrderFurgonetkaButton({ orderId }: { orderId: string }) 
       const res = await generateFurgonetkaShipment(orderId, carrier)
       if (!res.ok) setError(res.error)
       else {
-        setMsg(`List utworzony${res.tracking ? `: ${res.tracking}` : ''} — mail do klienta wysłany.`)
+        const warning = 'warning' in res ? res.warning : undefined
+        setMsg(warning || `List utworzony${res.tracking ? `: ${res.tracking}` : ''} — mail do klienta wysłany.`)
         if (res.labelBase64) openPdf(res.labelBase64)
       }
     })
