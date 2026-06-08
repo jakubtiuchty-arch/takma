@@ -136,6 +136,7 @@ export default async function OrderDetailPage({ params }: PageProps) {
                 <div>
                   <span className="text-gray-500">Nr przesyłki:</span> <span className="font-mono">{order.trackingNumber}</span>
                   {(() => {
+                    if (order.shipmentId) return null // Furgonetka → link jest w timeline
                     const t = carrierTrackingUrl(order.carrierName, order.trackingNumber)
                     return t ? (
                       <> · <a href={t.url} target="_blank" className="text-blue-600 hover:underline">Śledź u przewoźnika ({t.carrier}) →</a></>

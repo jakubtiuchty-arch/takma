@@ -8,9 +8,11 @@ interface Props {
   orderId: string
   existingTracking?: string | null
   carrier?: string | null
+  /** Czy to przesyłka Furgonetki (ma shipmentId → jest timeline z linkiem). Wtedy NIE dublujemy linku. */
+  isFurgonetka?: boolean
 }
 
-export default function AllegroGenerateLabelButton({ orderId, existingTracking, carrier }: Props) {
+export default function AllegroGenerateLabelButton({ orderId, existingTracking, carrier, isFurgonetka }: Props) {
   const router = useRouter()
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -69,6 +71,7 @@ export default function AllegroGenerateLabelButton({ orderId, existingTracking, 
             <p className="text-sm text-emerald-700 mt-0.5">
               Nr listu: <span className="font-mono">{tracking}</span>
               {(() => {
+                if (isFurgonetka) return null // Furgonetka → link jest w timeline, nie dublujemy
                 const t = carrierTrackingUrl(carrier, tracking)
                 return t ? (
                   <>

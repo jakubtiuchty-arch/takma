@@ -77,7 +77,7 @@ export default async function AllegroZamowieniaPage({
     const o = await getOrder(sp.order)
     const addr = o.delivery?.address
     const tracked = await prisma.allegroOrderNotified
-      .findUnique({ where: { orderId: sp.order }, select: { trackingNumber: true } })
+      .findUnique({ where: { orderId: sp.order }, select: { trackingNumber: true, shipmentId: true } })
       .catch(() => null)
     const thread = await findThreadByBuyerId(o.buyer?.id).catch(() => null)
     return (
@@ -96,7 +96,7 @@ export default async function AllegroZamowieniaPage({
         </div>
 
         <div className="mb-4 space-y-3">
-          <AllegroGenerateLabelButton orderId={o.id} existingTracking={tracked?.trackingNumber} carrier={o.delivery?.method?.name} />
+          <AllegroGenerateLabelButton orderId={o.id} existingTracking={tracked?.trackingNumber} carrier={o.delivery?.method?.name} isFurgonetka={!!tracked?.shipmentId} />
           <ShipmentTimeline orderRef={o.id} />
           <AllegroManualTrackingForm orderId={o.id} />
         </div>
