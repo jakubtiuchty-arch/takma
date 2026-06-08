@@ -215,8 +215,12 @@ export async function GET() {
   }
 
   // 3) Zbuduj oferty — tylko dostępne, z ceną live (fallback: priceFrom).
+  // Deduplikacja po PN: ten sam akcesoryjny PN bywa cross-listowany na kilku
+  // stronach produktu (np. gilotyna 2000424) — w feedzie musi być raz.
+  const seenPns = new Set<string>()
   const offers: string[] = []
   for (const c of candidates) {
+    if (seenPns.has(c.pn)) continue
     const sc = stockMap.get(c.pn)
 
     // Cena netto: live ze StockCache (preferowana) → fallback priceFrom (statyczna).
@@ -271,6 +275,7 @@ export async function GET() {
       size,
       certs,
     }))
+    seenPns.add(c.pn)
   }
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

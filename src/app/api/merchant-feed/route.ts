@@ -138,8 +138,12 @@ export async function GET() {
   }
 
   // 3) Itemy — tylko dostępne, cena brutto live (fallback priceFrom).
+  // Deduplikacja po PN: ten sam akcesoryjny PN bywa cross-listowany na kilku
+  // stronach produktu — w feedzie musi wystąpić raz (Google odrzuca duplikaty id).
+  const seenPns = new Set<string>()
   const items: string[] = []
   for (const c of candidates) {
+    if (seenPns.has(c.pn)) continue
     const sc = stockMap.get(c.pn)
     const liveNet = sc?.found && sc.price && sc.price > 0
       ? sc.price
@@ -184,6 +188,7 @@ export async function GET() {
       itemGroupId: c.variant ? c.product.slug : undefined,
       productType,
     }))
+    seenPns.add(c.pn)
   }
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
