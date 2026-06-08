@@ -235,13 +235,18 @@ interface FurgListItem {
 /** Lista paczek z konta (paginacja). Do wykrywania duplikatów. */
 export async function listAllPackages(maxPages = 10): Promise<FurgPackageSummary[]> {
   const out: FurgPackageSummary[] = []
+  const seen = new Set<string>() // dedup po package_id (Furgonetka bywa ignoruje ?page → powtarza stronę)
   for (let page = 1; page <= maxPages; page++) {
     const j = await furgFetch<{ packages?: FurgListItem[]; data?: FurgListItem[] }>(`/packages?page=${page}&limit=100`)
     const arr = j.packages || j.data || []
+    let added = 0
     for (const p of arr) {
+      const id = String(p.package_id)
+      if (seen.has(id)) continue
+      seen.add(id)
       const pcl = p.parcels?.[0] || {}
       out.push({
-        id: String(p.package_id),
+        id,
         ref: p.user_reference_number != null ? String(p.user_reference_number) : null,
         tracking: pcl.package_no || pcl.tracking_number || null,
         state: pcl.state || p.state || 'unknown',
@@ -252,8 +257,10 @@ export async function listAllPackages(maxPages = 10): Promise<FurgPackageSummary
         cancelAvailable: !!p.cancel_available,
         editUrl: p.edit_url || null,
       })
+      added++
     }
-    if (arr.length < 100) break
+    // koniec listy LUB strona się powtórzyła (page ignorowany) → przerwij
+    if (arr.length < 100 || added === 0) break
   }
   return out
 }
