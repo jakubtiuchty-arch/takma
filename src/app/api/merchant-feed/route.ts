@@ -1,12 +1,27 @@
 import { NextResponse } from 'next/server'
-import { products, getCategoryById, getManufacturerById } from '@/data/products'
+import {
+  products,
+  getCategoryById,
+  getSubcategoryById,
+  getManufacturerById,
+  variantSizeSlug,
+  type Product,
+  type ProductVariant,
+} from '@/data/products'
+import { prisma } from '@/lib/db'
+import { isValidGtin } from '@/lib/allegro/gtin'
+
+export const runtime = 'nodejs'
+export const dynamic = 'force-dynamic'
+export const maxDuration = 60
 
 const SITE_URL = 'https://www.takma.com.pl'
+const VAT = 1.23 // Google Shopping PL: cena brutto. Feed = cena sklepowa (StockCache.price) × VAT.
 
+// Google availability: in_stock / out_of_stock / preorder / backorder
 const availabilityMap: Record<string, string> = {
   available: 'in_stock',
-  'on-order': 'preorder',
-  unavailable: 'out_of_stock',
+  'on-order': 'backorder',
 }
 
 function escapeXml(str: string): string {
@@ -18,20 +33,39 @@ function escapeXml(str: string): string {
     .replace(/'/g, '&apos;')
 }
 
+function stripMarkdown(text: string): string {
+  return text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\*\*([^*]+)\*\*/g, '$1')
+}
+
+function truncate(text: string, max: number): string {
+  if (text.length <= max) return text
+  const cut = text.lastIndexOf(' ', max)
+  return (cut > 0 ? text.slice(0, cut) : text.slice(0, max)) + '...'
+}
+
+function getCategoryPath(categoryId: string, subcategoryIds?: string[]): string {
+  const category = getCategoryById(categoryId)
+  if (!category) return ''
+  if (subcategoryIds?.length) {
+    const sub = subcategoryIds.map(id => getSubcategoryById(id)).find(s => s && !s.id.startsWith('akcesoria'))
+    if (sub) return `${category.name} > ${sub.name}`
+  }
+  return category.name
+}
+
 function buildItem(opts: {
   id: string
   title: string
   description: string
   link: string
   imageLink: string
-  price: string
+  price: string // brutto, np. "124.55"
   availability: string
   brand: string
   mpn: string
-  condition: string
+  gtin?: string
   itemGroupId?: string
   productType?: string
-  variantAttributes?: Record<string, string>
 }): string {
   const lines = [
     '    <item>',
@@ -44,76 +78,112 @@ function buildItem(opts: {
     `      <g:availability>${opts.availability}</g:availability>`,
     `      <g:brand>${escapeXml(opts.brand)}</g:brand>`,
     `      <g:mpn>${escapeXml(opts.mpn)}</g:mpn>`,
-    `      <g:condition>${opts.condition}</g:condition>`,
+    `      <g:condition>new</g:condition>`,
   ]
-
-  if (opts.itemGroupId) {
-    lines.push(`      <g:item_group_id>${escapeXml(opts.itemGroupId)}</g:item_group_id>`)
-  }
-
-  if (opts.productType) {
-    lines.push(`      <g:product_type>${escapeXml(opts.productType)}</g:product_type>`)
-  }
-
+  if (opts.gtin) lines.push(`      <g:gtin>${escapeXml(opts.gtin)}</g:gtin>`)
+  if (opts.itemGroupId) lines.push(`      <g:item_group_id>${escapeXml(opts.itemGroupId)}</g:item_group_id>`)
+  if (opts.productType) lines.push(`      <g:product_type>${escapeXml(opts.productType)}</g:product_type>`)
   lines.push('    </item>')
   return lines.join('\n')
 }
 
+interface Candidate {
+  product: Product
+  variant?: ProductVariant
+  pn: string
+}
+
+interface StockRow {
+  price: number | null
+  availability: string
+  totalStock: number
+  found: boolean
+}
+
 export async function GET() {
-  const items: string[] = []
-
+  // 1) Kandydaci (produkt lub wariant) z PN.
+  const candidates: Candidate[] = []
   for (const product of products) {
-    const manufacturer = getManufacturerById(product.manufacturerId)
-    const category = getCategoryById(product.categoryId)
-    const brand = manufacturer?.name || 'Zebra'
-    const imageLink = product.images[0] ? `${SITE_URL}${product.images[0]}` : ''
-    const link = `${SITE_URL}/produkt/${product.slug}`
-    const productType = category?.name || ''
-
-    // Skip products without images or prices
-    if (!imageLink || !product.priceFrom) continue
-
+    if (!product.images?.length) continue
     if (product.variants && product.variants.length > 0) {
-      // Products with variants — each variant is a separate item
-      for (const variant of product.variants) {
-        if (!variant.priceFrom) continue
-
-        items.push(
-          buildItem({
-            id: variant.partNumber,
-            title: `${product.name} — ${variant.name}`,
-            description: product.shortDescription,
-            link,
-            imageLink,
-            price: variant.priceFrom.toFixed(2),
-            availability: availabilityMap[variant.availability] || 'out_of_stock',
-            brand,
-            mpn: variant.partNumber,
-            condition: 'new',
-            itemGroupId: product.slug,
-            productType,
-            variantAttributes: variant.attributes,
-          })
-        )
-      }
+      for (const v of product.variants) candidates.push({ product, variant: v, pn: v.partNumber })
     } else {
-      // Products without variants — single item
-      items.push(
-        buildItem({
-          id: product.id,
-          title: product.name,
-          description: product.shortDescription,
-          link,
-          imageLink,
-          price: product.priceFrom.toFixed(2),
-          availability: availabilityMap[product.availability] || 'out_of_stock',
-          brand,
-          mpn: product.id,
-          condition: 'new',
-          productType,
-        })
-      )
+      const pn = product.specifications.find(s => s.name === 'Part Number')?.value || product.id
+      candidates.push({ product, pn })
     }
+  }
+
+  // 2) Live ceny/stan (StockCache) + EAN (ProductEan) wsadowo.
+  const pns = Array.from(new Set(candidates.map(c => c.pn)))
+  const stockMap = new Map<string, StockRow>()
+  const eanMap = new Map<string, string>()
+  try {
+    for (let i = 0; i < pns.length; i += 500) {
+      const chunk = pns.slice(i, i + 500)
+      const [sc, eans] = await Promise.all([
+        prisma.stockCache.findMany({
+          where: { partNumber: { in: chunk } },
+          select: { partNumber: true, price: true, availability: true, totalStock: true, found: true },
+        }),
+        prisma.productEan.findMany({
+          where: { partNumber: { in: chunk.map(s => s.toUpperCase()) } },
+          select: { partNumber: true, ean: true },
+        }),
+      ])
+      for (const r of sc) stockMap.set(r.partNumber, r)
+      for (const r of eans) if (isValidGtin(r.ean)) eanMap.set(r.partNumber, r.ean)
+    }
+  } catch (err) {
+    console.error('[merchant-feed] błąd StockCache/ProductEan — fallback do cen statycznych:', err)
+  }
+
+  // 3) Itemy — tylko dostępne, cena brutto live (fallback priceFrom).
+  const items: string[] = []
+  for (const c of candidates) {
+    const sc = stockMap.get(c.pn)
+    const liveNet = sc?.found && sc.price && sc.price > 0
+      ? sc.price
+      : (c.variant?.priceFrom ?? c.product.priceFrom)
+    if (!liveNet || liveNet <= 0) continue
+
+    const availRaw = sc?.found ? sc.availability : (c.variant?.availability ?? c.product.availability)
+    if (availRaw === 'unavailable') continue
+    if (sc?.found && sc.totalStock <= 0) continue
+
+    const priceGross = (Math.round(liveNet * VAT * 100) / 100).toFixed(2)
+    const availability = availabilityMap[availRaw] || 'in_stock'
+
+    const manufacturer = getManufacturerById(c.product.manufacturerId)
+    const brand = manufacturer?.name || 'Zebra'
+    const imageLink = `${SITE_URL}${c.product.images[0]}`
+    const productType = getCategoryPath(c.product.categoryId, c.product.subcategoryIds)
+    const description = truncate(
+      stripMarkdown(c.product.description || c.product.shortDescription || ''),
+      5000,
+    )
+    const gtin = eanMap.get(c.pn.toUpperCase())
+
+    const sizeSlug = c.variant ? variantSizeSlug(c.variant) : ''
+    const link = c.variant && sizeSlug
+      ? `${SITE_URL}/produkt/${c.product.slug}/${sizeSlug}/${c.variant.partNumber}`
+      : `${SITE_URL}/produkt/${c.product.slug}`
+
+    const title = c.variant ? `${c.product.name} — ${c.variant.name}` : c.product.name
+
+    items.push(buildItem({
+      id: c.pn,
+      title,
+      description,
+      link,
+      imageLink,
+      price: priceGross,
+      availability,
+      brand,
+      mpn: c.pn,
+      gtin,
+      itemGroupId: c.variant ? c.product.slug : undefined,
+      productType,
+    }))
   }
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -121,7 +191,7 @@ export async function GET() {
   <channel>
     <title>TAKMA — Produkty AutoID</title>
     <link>${SITE_URL}</link>
-    <description>Drukarki etykiet, skanery kodów, terminale mobilne — B2B AutoID e-commerce</description>
+    <description>Drukarki etykiet, skanery kodów, terminale mobilne, materiały eksploatacyjne — B2B AutoID</description>
 ${items.join('\n')}
   </channel>
 </rss>`

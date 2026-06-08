@@ -17,10 +17,10 @@ export const maxDuration = 60
 
 const SITE_URL = 'https://www.takma.com.pl'
 
-// Narzut Ceneo (CPC) — analogicznie do prowizji Allegro. UWAGA: Ceneo wymaga, by cena
-// w feedzie odpowiadała cenie na stronie docelowej. Jeśli strona NIE ma tego narzutu,
-// ustaw 1.0 (feed = cena sklepu ×VAT), inaczej robot Ceneo wykryje rozbieżność i ukryje oferty.
-const CENEO_MARKUP = 1.12
+// Ceneo wymaga, by cena w feedzie = cena na stronie docelowej. Strona pokazuje cenę
+// sklepową (StockCache.price netto), więc feed = ta sama cena × VAT (brutto). Bez
+// dodatkowego narzutu — koszt CPC pokrywamy z marży/budżetu w panelu Ceneo.
+const CENEO_MARKUP = 1.0
 const VAT = 1.23
 
 // Ceneo availability codes: 1 = 24h, 3 = 3 days, 7 = 7 days, 99 = check
