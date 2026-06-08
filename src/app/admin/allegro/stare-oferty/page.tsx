@@ -42,8 +42,15 @@ export default async function AllegroStareOfertyPage() {
             <span className="text-sm text-gray-600">
               Znaleziono <strong>{offers.length}</strong> starych ofert materiałów.
             </span>
-            <AllegroEndAllButton count={offers.length} />
+            <div className="flex items-center gap-3">
+              <AllegroEndAllButton matchedOnly count={offers.filter((o) => o.match === 'exact').length} />
+              <AllegroEndAllButton count={offers.length} />
+            </div>
           </div>
+          <p className="mb-3 text-xs text-gray-500">
+            Zielony przycisk kończy tylko stare oferty, które mają już żywą nową ofertę o tym samym rozmiarze i serii
+            — bezpieczne, nie zostawia luki. Pozycje bez odpowiednika wygaszaj pojedynczo z głową.
+          </p>
           <div className="rounded-xl border border-gray-200 bg-white overflow-hidden">
             <table className="w-full text-sm">
               <thead>
@@ -51,7 +58,7 @@ export default async function AllegroStareOfertyPage() {
                   <th className="px-4 py-2 font-medium">Oferta</th>
                   <th className="px-4 py-2 font-medium">Cena</th>
                   <th className="px-4 py-2 font-medium">Stan</th>
-                  <th className="px-4 py-2 font-medium">Status</th>
+                  <th className="px-4 py-2 font-medium">Nowy odpowiednik</th>
                   <th className="px-4 py-2 font-medium text-right">Akcja</th>
                 </tr>
               </thead>
@@ -61,7 +68,15 @@ export default async function AllegroStareOfertyPage() {
                     <td className="px-4 py-2 text-gray-800">{o.name}</td>
                     <td className="px-4 py-2 text-gray-600">{o.price ? `${o.price} zł` : '—'}</td>
                     <td className="px-4 py-2 text-gray-600">{o.stock ?? '—'}</td>
-                    <td className="px-4 py-2 text-gray-600">{o.status}</td>
+                    <td className="px-4 py-2">
+                      {o.match === 'exact' ? (
+                        <span className="text-emerald-700" title={o.replacement}>✓ tak{o.replacement ? ` — ${o.replacement}` : ''}</span>
+                      ) : o.match === 'size' ? (
+                        <span className="text-amber-700" title={o.replacement}>~ sam rozmiar{o.replacement ? ` (${o.replacement})` : ''}</span>
+                      ) : (
+                        <span className="text-red-600">✗ brak</span>
+                      )}
+                    </td>
                     <td className="px-4 py-2 text-right">
                       <AllegroEndOfferButton offerId={o.id} />
                     </td>

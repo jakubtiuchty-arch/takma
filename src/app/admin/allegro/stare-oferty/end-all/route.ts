@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 import { getSessionFromCookie } from '@/lib/auth'
 import { listOldMaterialOffers, endOffer } from '@/lib/allegro/existing-offers'
 
@@ -6,13 +6,17 @@ export const runtime = 'nodejs'
 export const maxDuration = 200
 export const dynamic = 'force-dynamic'
 
-// Wygaś WSZYSTKIE stare oferty materiałów (nie nasze) — masowo.
-export async function POST() {
+// Wygaś stare oferty materiałów (nie nasze). ?matched=1 → tylko te z żywym
+// odpowiednikiem (match=exact) — bezpieczny tryb, nie zostawia luki.
+export async function POST(request: NextRequest) {
   const session = await getSessionFromCookie()
   if (!session) return NextResponse.json({ error: 'Brak autoryzacji.' }, { status: 401 })
 
+  const matchedOnly = request.nextUrl.searchParams.get('matched') === '1'
+
   try {
-    const offers = await listOldMaterialOffers()
+    let offers = await listOldMaterialOffers()
+    if (matchedOnly) offers = offers.filter((o) => o.match === 'exact')
     let ended = 0
     let err = 0
     for (const o of offers) {
