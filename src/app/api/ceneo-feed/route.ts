@@ -102,6 +102,31 @@ function getCertificates(specs: Array<{ name: string; value: string }>): string 
   return certSpec?.value || ''
 }
 
+/** Atrybut „Model" dla Ceneo — ze spec „Model" lub wyliczony z nazwy (seria + rozmiar). */
+function deriveModel(product: Product, variant?: ProductVariant): string {
+  const spec = product.specifications.find(s => s.name === 'Model')?.value
+  if (spec) return spec
+  let base = product.name
+    .replace(/^Etykiety\s+\w+\s+Zebra\s+/i, '')
+    .replace(/^Taśm[ay]\s+termotransferow[ae]\s+Zebra\s+/i, '')
+    .replace(/^Zebra\s+/i, '')
+    .trim()
+  const size = variant?.attributes?.['Rozmiar']
+  if (size && !base.includes(size)) base += ` ${size}`
+  return base.trim().slice(0, 80)
+}
+
+/** Wzmacnia cienki opis kluczowymi specyfikacjami (Ceneo karze za słaby opis). */
+function enrichDesc(desc: string, specs: Array<{ name: string; value: string }>): string {
+  if (desc.length >= 250) return desc
+  const lines = specs
+    .filter(s => s.value && !/^(Part Number|EAN|GTIN|Numer próbki|Klasa cenowa)$/i.test(s.name))
+    .slice(0, 12)
+    .map(s => `${s.name}: ${s.value}`)
+    .join('. ')
+  return [desc, lines].filter(Boolean).join('. ').trim()
+}
+
 function buildOffer(opts: {
   id: string
   url: string
@@ -117,6 +142,7 @@ function buildOffer(opts: {
   partNumber: string
   ean?: string
   size?: string
+  model?: string
   certs: string
 }): string {
   const weightAttr = opts.weight ? ` weight="${opts.weight}"` : ''
@@ -141,6 +167,9 @@ function buildOffer(opts: {
   lines.push('    <attrs>')
   lines.push(`      <a name="Producent">${cdata(opts.manufacturer)}</a>`)
   lines.push(`      <a name="Kod producenta">${cdata(opts.partNumber)}</a>`)
+  if (opts.model) {
+    lines.push(`      <a name="Model">${cdata(opts.model)}</a>`)
+  }
   if (opts.size) {
     lines.push(`      <a name="Rozmiar">${cdata(opts.size)}</a>`)
   }
@@ -248,9 +277,11 @@ export async function GET() {
     const cat = getCategoryPath(c.product.categoryId, c.product.subcategoryIds)
     const weight = getWeight(c.product.specifications)
     const certs = getCertificates(c.product.specifications)
-    const fullDesc = c.product.description
+    const baseDesc = c.product.description
       ? truncateDesc(stripMarkdown(c.product.description), 5000)
       : stripMarkdown(c.product.shortDescription || '')
+    const fullDesc = enrichDesc(baseDesc, c.product.specifications)
+    const model = deriveModel(c.product, c.variant)
     const ean = eanMap.get(c.pn.toUpperCase())
 
     // Deep-link do konkretnego wariantu (SKU), z fallbackiem na stronę serii.
@@ -277,6 +308,7 @@ export async function GET() {
       partNumber: c.pn,
       ean,
       size,
+      model,
       certs,
     }))
     seenIds.add(c.id)
