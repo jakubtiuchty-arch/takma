@@ -41,21 +41,35 @@ export async function pollShipments(): Promise<{ tracked: number; updated: numbe
     where: { shipmentId: { not: null } },
     select: { orderId: true, shipmentId: true, trackingNumber: true },
   })
+  // Legacy: zamówienia z numerem w Order.* (sprzed wielo-przesyłkowości).
   const shop = await prisma.order.findMany({
     where: { shipmentId: { not: null }, status: { notIn: ['DELIVERED', 'CANCELLED', 'EXPIRED', 'REFUNDED'] } },
     select: { id: true, shipmentId: true, trackingNumber: true, carrierName: true },
+  })
+  // Wiele przesyłek Furgonetki per zamówienie (część sprzętu z różnych lokalizacji).
+  const shopShipments = await prisma.orderShipment.findMany({
+    where: {
+      shipmentId: { not: null },
+      order: { status: { notIn: ['DELIVERED', 'CANCELLED', 'EXPIRED', 'REFUNDED'] } },
+    },
+    select: { orderId: true, shipmentId: true, trackingNumber: true, carrierName: true },
   })
 
   const sources: Source[] = [
     ...allegro.map((a) => ({ packageId: a.shipmentId!, source: 'allegro', orderRef: a.orderId, trackingNumber: a.trackingNumber, carrier: null })),
     ...shop.map((o) => ({ packageId: o.shipmentId!, source: 'shop', orderRef: o.id, trackingNumber: o.trackingNumber, carrier: o.carrierName })),
+    ...shopShipments.map((s) => ({ packageId: s.shipmentId!, source: 'shop', orderRef: s.orderId, trackingNumber: s.trackingNumber, carrier: s.carrierName })),
   ]
+
+  // Dedup po packageId — pierwsza przesyłka zapisuje i Order.shipmentId, i wiersz OrderShipment.
+  const seen = new Set<string>()
+  const uniqueSources = sources.filter((s) => (seen.has(s.packageId) ? false : (seen.add(s.packageId), true)))
 
   let tracked = 0
   let updated = 0
   let newEvents = 0
 
-  for (const src of sources) {
+  for (const src of uniqueSources) {
     const tr = await prisma.shipmentTracking.upsert({
       where: { packageId: src.packageId },
       create: {

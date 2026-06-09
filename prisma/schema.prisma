@@ -137,6 +137,7 @@ model Order {
 
   items                  OrderItem[]
   invoices               Invoice[]
+  shipments              OrderShipment[]
 
   createdAt              DateTime      @default(now())
   updatedAt              DateTime      @updatedAt
@@ -144,6 +145,30 @@ model Order {
   @@index([status])
   @@index([customerId])
   @@index([orderNumber])
+}
+
+// ---------------------------------------------------------------------------
+// OrderShipment — wiele przesyłek per zamówienie (część sprzętu z różnych
+// lokalizacji). Furgonetka (shipmentId=id paczki) lub ręczny numer (shipmentId=null).
+// Legacy: stare zamówienia mają numer w Order.trackingNumber (renderowany syntetycznie).
+// ---------------------------------------------------------------------------
+
+model OrderShipment {
+  id             String    @id @default(cuid())
+
+  order          Order     @relation(fields: [orderId], references: [id])
+  orderId        String
+
+  carrierName    String
+  trackingNumber String?
+  shipmentId     String?   // id paczki Furgonetka (null = numer wpisany ręcznie)
+  source         String    @default("manual") // 'furgonetka' | 'manual'
+  emailedAt      DateTime?
+
+  createdAt      DateTime  @default(now())
+
+  @@index([orderId])
+  @@index([shipmentId])
 }
 
 // ---------------------------------------------------------------------------

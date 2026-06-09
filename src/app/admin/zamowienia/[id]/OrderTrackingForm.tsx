@@ -13,6 +13,7 @@ export default function OrderTrackingForm({ orderId }: { orderId: string }) {
     if (!trackingNumber.trim()) return
     startTransition(async () => {
       await addOrderTracking(orderId, trackingNumber.trim(), carrier)
+      setTrackingNumber('')
     })
   }
 

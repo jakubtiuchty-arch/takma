@@ -26,18 +26,6 @@ export async function generateFurgonetkaShipment(orderId: string, carrier: strin
   const order = await prisma.order.findUnique({ where: { id: orderId }, include: { customer: true, items: true } })
   if (!order) return { ok: false as const, error: 'Nie znaleziono zamówienia.' }
 
-  // Paczka już istnieje (ponowne kliknięcie / wcześniejszy błąd etykiety) — NIE twórz
-  // drugiego kuriera, tylko pobierz etykietę.
-  if (order.shipmentId) {
-    const labelBase64 = await getLabelRetry(order.shipmentId)
-    return {
-      ok: true as const,
-      tracking: order.trackingNumber,
-      labelBase64,
-      ...(labelBase64 ? {} : { warning: 'Etykieta jeszcze się generuje — spróbuj ponownie za chwilę.' }),
-    }
-  }
-
   const cu = order.customer
   const addr = parseAddress(cu.shippingAddress || cu.address || '')
   const receiver: FurgAddress = {
@@ -66,15 +54,31 @@ export async function generateFurgonetkaShipment(orderId: string, carrier: strin
     if (!pkg.id) return { ok: false as const, error: 'Furgonetka nie zwróciła id przesyłki.' }
     const tracking = pkg.tracking || (await getPackageTracking(pkg.id))
 
-    // ZAPISZ paczkę OD RAZU (zanim etykieta) — nawet jeśli etykieta padnie, nie zgubimy
-    // przesyłki i nie utworzymy drugiej przy ponownym kliknięciu.
+    // ZAPISZ przesyłkę OD RAZU (zanim etykieta) — nawet jeśli etykieta padnie, nie zgubimy
+    // jej. Dopisujemy KOLEJNĄ przesyłkę (część sprzętu może iść z innej lokalizacji).
+    const emailed = tracking
+      ? await sendShippingNotification(cu.email, order.orderNumber, tracking, carrier).then(() => true).catch(() => false)
+      : false
+    await prisma.orderShipment.create({
+      data: {
+        orderId,
+        carrierName: carrier,
+        trackingNumber: tracking || null,
+        shipmentId: pkg.id,
+        source: 'furgonetka',
+        emailedAt: emailed ? new Date() : null,
+      },
+    })
+    // Pierwsza przesyłka ustawia status Wysłane + datę (kolejne nie cofają).
     await prisma.order.update({
       where: { id: orderId },
-      data: { trackingNumber: tracking || null, carrierName: carrier, shipmentId: pkg.id, status: OrderStatus.SHIPPED, shippedAt: new Date() },
+      data: {
+        status: OrderStatus.SHIPPED,
+        shippedAt: order.shippedAt ?? new Date(),
+        ...(order.trackingNumber ? {} : { trackingNumber: tracking || null, carrierName: carrier, shipmentId: pkg.id }),
+      },
     })
-    if (tracking) {
-      await sendShippingNotification(cu.email, order.orderNumber, tracking, carrier).catch(() => {})
-    }
+    revalidatePath('/admin/zamowienia')
     revalidatePath(`/admin/zamowienia/${orderId}`)
 
     // Etykieta z ponawianiem (async generacja). Brak etykiety NIE jest błędem.
@@ -118,29 +122,47 @@ export async function addOrderNote(orderId: string, note: string) {
 }
 
 export async function addOrderTracking(orderId: string, trackingNumber: string, carrierName: string) {
-  const order = await prisma.order.update({
+  const order = await prisma.order.findUnique({ where: { id: orderId }, include: { customer: true } })
+  if (!order) return { success: false as const, error: 'Nie znaleziono zamówienia.' }
+
+  // Wyślij maila i dopisz KOLEJNĄ przesyłkę (numer ręczny z innej lokalizacji).
+  const emailed = await sendShippingNotification(order.customer.email, order.orderNumber, trackingNumber, carrierName)
+    .then(() => true)
+    .catch(() => false)
+
+  await prisma.orderShipment.create({
+    data: { orderId, carrierName, trackingNumber, source: 'manual', emailedAt: emailed ? new Date() : null },
+  })
+  await prisma.order.update({
     where: { id: orderId },
     data: {
-      trackingNumber,
-      carrierName,
       status: OrderStatus.SHIPPED,
-      shippedAt: new Date(),
+      shippedAt: order.shippedAt ?? new Date(),
+      ...(order.trackingNumber ? {} : { trackingNumber, carrierName }),
     },
-    include: { customer: true },
   })
-
-  // Send shipping notification email
-  await sendShippingNotification(
-    order.customer.email,
-    order.orderNumber,
-    trackingNumber,
-    carrierName
-  )
 
   revalidatePath('/admin/zamowienia')
   revalidatePath(`/admin/zamowienia/${orderId}`)
 
-  return { success: true }
+  return { success: true as const }
+}
+
+/** Pobiera etykietę PDF (base64) istniejącej przesyłki Furgonetki — bez tworzenia nowej. */
+export async function getFurgonetkaLabel(shipmentId: string) {
+  const labelBase64 = await getLabelRetry(shipmentId)
+  return labelBase64
+    ? { ok: true as const, labelBase64 }
+    : { ok: false as const, error: 'Etykieta jeszcze się generuje — spróbuj ponownie za chwilę.' }
+}
+
+/** Usuwa błędnie dodaną przesyłkę z zamówienia (nie anuluje paczki w Furgonetce). */
+export async function deleteOrderShipment(shipmentRowId: string) {
+  const row = await prisma.orderShipment.findUnique({ where: { id: shipmentRowId } })
+  if (!row) return { success: false as const, error: 'Nie znaleziono przesyłki.' }
+  await prisma.orderShipment.delete({ where: { id: shipmentRowId } })
+  revalidatePath(`/admin/zamowienia/${row.orderId}`)
+  return { success: true as const }
 }
 
 export async function deleteOrder(orderId: string) {

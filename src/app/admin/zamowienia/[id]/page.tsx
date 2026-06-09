@@ -6,6 +6,7 @@ import { OrderStatus } from '@/generated/prisma/client'
 import OrderStatusForm from './OrderStatusForm'
 import OrderTrackingForm from './OrderTrackingForm'
 import OrderFurgonetkaButton from './OrderFurgonetkaButton'
+import OrderShipmentActions from './OrderShipmentActions'
 import OrderNotesForm from './OrderNotesForm'
 import ShipmentTimeline from '@/components/admin/ShipmentTimeline'
 import { carrierTrackingUrl } from '@/lib/carrier-tracking'
@@ -42,10 +43,27 @@ export default async function OrderDetailPage({ params }: PageProps) {
   const { id } = await params
   const order = await prisma.order.findUnique({
     where: { id },
-    include: { items: true, customer: true, invoices: true },
+    include: { items: true, customer: true, invoices: true, shipments: { orderBy: { createdAt: 'asc' } } },
   })
 
   if (!order) notFound()
+
+  // Lista przesyłek do wyświetlenia. Stare zamówienia (sprzed wielo-przesyłkowości)
+  // mają numer w Order.* — pokazujemy je jako syntetyczną pozycję (legacy, bez usuwania).
+  const shipments =
+    order.shipments.length > 0
+      ? order.shipments.map((s) => ({ ...s, legacy: false }))
+      : order.trackingNumber
+        ? [{
+            id: 'legacy',
+            carrierName: order.carrierName || '—',
+            trackingNumber: order.trackingNumber,
+            shipmentId: order.shipmentId,
+            source: order.shipmentId ? 'furgonetka' : 'manual',
+            emailedAt: order.shippedAt,
+            legacy: true,
+          }]
+        : []
 
   return (
     <div>
@@ -127,34 +145,52 @@ export default async function OrderDetailPage({ params }: PageProps) {
             </div>
           </div>
 
-          {/* Tracking */}
+          {/* Przesyłki (wiele per zamówienie) */}
           <div className="bg-white rounded-xl border border-gray-200 p-6">
-            <h2 className="text-lg font-semibold mb-4">Przesyłka</h2>
-            {order.trackingNumber ? (
-              <div className="space-y-2 text-sm">
-                <div><span className="text-gray-500">Kurier:</span> {order.carrierName}</div>
-                <div>
-                  <span className="text-gray-500">Nr przesyłki:</span> <span className="font-mono">{order.trackingNumber}</span>
-                  {(() => {
-                    if (order.shipmentId) return null // Furgonetka → link jest w timeline
-                    const t = carrierTrackingUrl(order.carrierName, order.trackingNumber)
-                    return t ? (
-                      <> · <a href={t.url} target="_blank" className="text-blue-600 hover:underline">Śledź u przewoźnika ({t.carrier}) →</a></>
-                    ) : null
-                  })()}
-                </div>
-                {order.shippedAt && <div><span className="text-gray-500">Data wysyłki:</span> {order.shippedAt.toLocaleDateString('pl-PL')}</div>}
-                <div className="pt-2"><ShipmentTimeline orderRef={order.id} /></div>
-              </div>
-            ) : (
-              <div className="space-y-4">
-                <OrderFurgonetkaButton orderId={order.id} />
-                <div className="flex items-center gap-3 text-xs text-gray-400">
-                  <span className="h-px flex-1 bg-gray-200" /> lub wpisz numer ręcznie <span className="h-px flex-1 bg-gray-200" />
-                </div>
-                <OrderTrackingForm orderId={order.id} />
+            <h2 className="text-lg font-semibold mb-4">Przesyłki</h2>
+
+            {shipments.length > 0 && (
+              <div className="space-y-4 mb-6">
+                {shipments.map((s) => {
+                  const t = !s.shipmentId ? carrierTrackingUrl(s.carrierName, s.trackingNumber) : null
+                  return (
+                    <div key={s.id} className="rounded-lg border border-gray-200 p-4 space-y-2 text-sm">
+                      <div className="flex items-start justify-between gap-3">
+                        <div>
+                          <span className="text-gray-500">Kurier:</span> {s.carrierName}
+                          <span className="ml-2 px-1.5 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600">
+                            {s.source === 'furgonetka' ? 'Furgonetka' : 'ręczny'}
+                          </span>
+                        </div>
+                        <OrderShipmentActions rowId={s.id} shipmentId={s.shipmentId} legacy={s.legacy} />
+                      </div>
+                      {s.trackingNumber && (
+                        <div>
+                          <span className="text-gray-500">Nr przesyłki:</span> <span className="font-mono">{s.trackingNumber}</span>
+                          {t && (
+                            <> · <a href={t.url} target="_blank" className="text-blue-600 hover:underline">Śledź u przewoźnika ({t.carrier}) →</a></>
+                          )}
+                        </div>
+                      )}
+                      <div className="text-xs text-gray-400">
+                        {s.emailedAt ? `Mail do klienta wysłany ${s.emailedAt.toLocaleDateString('pl-PL')}` : 'Mail nie został wysłany'}
+                      </div>
+                      {s.shipmentId && <ShipmentTimeline packageId={s.shipmentId} />}
+                    </div>
+                  )
+                })}
               </div>
             )}
+
+            {/* Dodaj kolejną przesyłkę */}
+            <div className="space-y-4 pt-2">
+              <h3 className="text-sm font-semibold text-gray-700">{shipments.length > 0 ? 'Dodaj kolejną przesyłkę' : 'Dodaj przesyłkę'}</h3>
+              <OrderFurgonetkaButton orderId={order.id} />
+              <div className="flex items-center gap-3 text-xs text-gray-400">
+                <span className="h-px flex-1 bg-gray-200" /> lub wpisz numer ręcznie <span className="h-px flex-1 bg-gray-200" />
+              </div>
+              <OrderTrackingForm orderId={order.id} />
+            </div>
           </div>
 
           {/* Notes */}

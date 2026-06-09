@@ -8,13 +8,23 @@ function fmt(d?: string | Date | null): string {
   return date.toLocaleString('pl-PL', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })
 }
 
-/** Oś czasu przesyłki Furgonetki (budowana cronem). Renderuje się tylko gdy jest paczka. */
-export default async function ShipmentTimeline({ orderRef }: { orderRef: string }) {
-  const tr = await prisma.shipmentTracking.findFirst({
-    where: { orderRef },
-    orderBy: { createdAt: 'desc' },
-    include: { events: { orderBy: { recordedAt: 'asc' } } },
-  })
+/**
+ * Oś czasu przesyłki Furgonetki (budowana cronem). Renderuje się tylko gdy jest paczka.
+ * `packageId` → konkretna przesyłka (wiele per zamówienie); `orderRef` → najnowsza (legacy).
+ */
+export default async function ShipmentTimeline({ orderRef, packageId }: { orderRef?: string; packageId?: string }) {
+  const tr = packageId
+    ? await prisma.shipmentTracking.findUnique({
+        where: { packageId },
+        include: { events: { orderBy: { recordedAt: 'asc' } } },
+      })
+    : orderRef
+      ? await prisma.shipmentTracking.findFirst({
+          where: { orderRef },
+          orderBy: { createdAt: 'desc' },
+          include: { events: { orderBy: { recordedAt: 'asc' } } },
+        })
+      : null
   if (!tr) return null
 
   const problem = isProblem(tr.currentState || '', tr.currentDesc)
