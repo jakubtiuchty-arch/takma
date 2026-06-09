@@ -1,4 +1,5 @@
 import type { Product, ProductVariant } from '@/data/products'
+import { LABEL_CORE } from '@/data/label-core'
 import { ALLEGRO_PARAM, ALLEGRO_DICT, ALLEGRO_CATEGORY, type AllegroProductKind } from './categories'
 import type { AllegroPrice } from './pricing'
 import type { OfferServices } from './selling-policies'
@@ -26,7 +27,7 @@ export function variantWersja(v: ProductVariant): string {
 /** Zwięzły opis rozmiaru wariantu — obsługuje etykiety (Rozmiar) i taśmy (Szerokość/Długość) + wersję. */
 export function variantSizeLabel(v: ProductVariant): string {
   const a = v.attributes || {}
-  const core = (a['Rdzeń'] || a['Rdzeń (gilza)'] || '').trim()
+  const core = (a['Rdzeń'] || a['Rdzeń (gilza)'] || LABEL_CORE[v.partNumber] || '').trim()
   let dim: string
   if (a['Rozmiar']) {
     dim = a['Rozmiar'].trim()
@@ -154,7 +155,7 @@ export function buildOfferDescription(
     ['Materiał', labelMaterial(product)],
     ...sizeRows,
     ['Wersja', variantWersja(variant) || undefined],
-    ['Rdzeń', a['Rdzeń'] || a['Rdzeń (gilza)']],
+    ['Rdzeń', a['Rdzeń'] || a['Rdzeń (gilza)'] || LABEL_CORE[variant.partNumber]],
     ['Part Number', variant.partNumber],
     ...(ean ? [['EAN', ean] as [string, string]] : []),
     ['Producent', 'Zebra Technologies'],
