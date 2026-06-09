@@ -16,6 +16,10 @@
       "schedule": "0 6 * * *"
     },
     {
+      "path": "/api/cron/ga-digest",
+      "schedule": "0 5 * * *"
+    },
+    {
       "path": "/api/cron/stock-sync",
       "schedule": "0 6,13 * * *"
     },

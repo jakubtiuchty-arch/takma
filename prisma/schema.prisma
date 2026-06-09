@@ -701,3 +701,14 @@ model ShipmentTrackingEvent {
   @@index([trackingId, recordedAt])
   @@map("shipment_tracking_events")
 }
+
+// Codzienna analiza AI ruchu z GA4 (panel /admin/analytics). 1 wpis = 1 dzień.
+model GaDigest {
+  id        String   @id @default(cuid())
+  date      String   @unique // YYYY-MM-DD (dzień analizy = wczoraj)
+  summary   String   @db.Text // markdown: analiza Claude
+  metrics   String?  @db.Text // JSON: snapshot kluczowych liczb (current/previous)
+  createdAt DateTime @default(now())
+
+  @@map("ga_digest")
+}
