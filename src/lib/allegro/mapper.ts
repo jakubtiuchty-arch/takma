@@ -26,7 +26,7 @@ export function variantWersja(v: ProductVariant): string {
 /** Zwięzły opis rozmiaru wariantu — obsługuje etykiety (Rozmiar) i taśmy (Szerokość/Długość) + wersję. */
 export function variantSizeLabel(v: ProductVariant): string {
   const a = v.attributes || {}
-  const core = (a['Rdzeń'] || '').trim()
+  const core = (a['Rdzeń'] || a['Rdzeń (gilza)'] || '').trim()
   let dim: string
   if (a['Rozmiar']) {
     dim = a['Rozmiar'].trim()
@@ -154,7 +154,7 @@ export function buildOfferDescription(
     ['Materiał', labelMaterial(product)],
     ...sizeRows,
     ['Wersja', variantWersja(variant) || undefined],
-    ['Rdzeń', a['Rdzeń']],
+    ['Rdzeń', a['Rdzeń'] || a['Rdzeń (gilza)']],
     ['Part Number', variant.partNumber],
     ...(ean ? [['EAN', ean] as [string, string]] : []),
     ['Producent', 'Zebra Technologies'],
