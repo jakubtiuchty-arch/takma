@@ -38,7 +38,7 @@ function loadSeed(): Record<string, string> {
   if (!fs.existsSync(OUT)) return map
   const prev = fs.readFileSync(OUT, 'utf8')
   // klucze: '3006291-T' lub gołe liczby 10010064: '25 mm'
-  for (const m of prev.matchAll(/(?:'([^']+)'|(\d+))\s*:\s*'([^']+)'/g)) {
+  for (const m of Array.from(prev.matchAll(/(?:'([^']+)'|(\d+))\s*:\s*'([^']+)'/g))) {
     const key = m[1] ?? m[2]
     if (key) map[key] = m[3]
   }
@@ -62,21 +62,25 @@ function fromFeaturesPL(ourPns: Set<string>): Map<string, string> {
 }
 
 // DataFeedPL.json to ~664 MB (line-delimited JSON) — czytamy strumieniowo, linia po linii.
-async function fromDataFeed(ourPns: Set<string>): Promise<Map<string, string>> {
-  const out = new Map<string, string>()
-  const file = path.join(FEED_DIR, 'DataFeedPL.json')
-  if (!fs.existsSync(file)) return out
-  const rl = readline.createInterface({ input: fs.createReadStream(file), crlfDelay: Infinity })
-  for await (const line of rl) {
-    if (line.length < 2 || line[0] !== '{') continue
-    const vpn = line.match(/"VPN":"([^"]+)"/)
-    if (!vpn || !ourPns.has(vpn[1])) continue
-    const core = line.match(/"DescriptionShort":"[^"]*?(\d+(?:\.\d+)?)\s*mm Core/i)
-    if (!core) continue
-    const norm = normalizeCore(`${core[1]} mm`)
-    if (norm) out.set(vpn[1], norm)
-  }
-  return out
+// readline event-based (nie for-await) — unika downlevelIteration przy niskim targecie tsconfig.
+function fromDataFeed(ourPns: Set<string>): Promise<Map<string, string>> {
+  return new Promise((resolve, reject) => {
+    const out = new Map<string, string>()
+    const file = path.join(FEED_DIR, 'DataFeedPL.json')
+    if (!fs.existsSync(file)) return resolve(out)
+    const rl = readline.createInterface({ input: fs.createReadStream(file), crlfDelay: Infinity })
+    rl.on('line', line => {
+      if (line.length < 2 || line[0] !== '{') return
+      const vpn = line.match(/"VPN":"([^"]+)"/)
+      if (!vpn || !ourPns.has(vpn[1])) return
+      const core = line.match(/"DescriptionShort":"[^"]*?(\d+(?:\.\d+)?)\s*mm Core/i)
+      if (!core) return
+      const norm = normalizeCore(`${core[1]} mm`)
+      if (norm) out.set(vpn[1], norm)
+    })
+    rl.on('close', () => resolve(out))
+    rl.on('error', reject)
+  })
 }
 
 async function main() {
@@ -96,16 +100,16 @@ async function main() {
 
   // FeaturesPL ma pierwszeństwo nad DataFeed; oba tylko dopełniają seed.
   const feedMerged = new Map<string, string>(data)
-  for (const [pn, v] of feat) feedMerged.set(pn, v)
+  feat.forEach((v, pn) => feedMerged.set(pn, v))
 
-  for (const [pn, v] of feedMerged) {
+  feedMerged.forEach((v, pn) => {
     if (seed[pn] === undefined) {
       map[pn] = v
       added++
     } else if (seed[pn] !== v) {
       conflicts.push(`  ${pn}: seed='${seed[pn]}' vs Ingram='${v}'`)
     }
-  }
+  })
 
   if (conflicts.length) {
     console.log(`\n⚠ KONFLIKTY (${conflicts.length}) — zachowano seed, sprawdź ręcznie:`)
