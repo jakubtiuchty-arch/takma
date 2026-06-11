@@ -145,6 +145,62 @@ export default async function OrderDetailPage({ params }: PageProps) {
             </div>
           </div>
 
+          {/* Płatność */}
+          <div className="bg-white rounded-xl border border-gray-200 p-6">
+            <h2 className="text-lg font-semibold mb-4">Płatność</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
+              <div>
+                <div className="text-xs font-medium text-gray-500 uppercase mb-1">Metoda</div>
+                <div className="text-gray-900">
+                  {order.paymentMethod === 'ONLINE'
+                    ? order.p24OrderId || order.p24SessionId
+                      ? 'Przelewy24'
+                      : order.stripeSessionId
+                        ? 'Stripe'
+                        : 'Online'
+                    : 'Pro forma'}
+                </div>
+              </div>
+              <div>
+                <div className="text-xs font-medium text-gray-500 uppercase mb-1">Status</div>
+                {order.paidAt ? (
+                  <span className="inline-block rounded-full px-2.5 py-0.5 text-xs font-medium bg-green-100 text-green-700">
+                    Opłacone
+                  </span>
+                ) : (
+                  <span className="inline-block rounded-full px-2.5 py-0.5 text-xs font-medium bg-amber-100 text-amber-700">
+                    Oczekuje na płatność
+                  </span>
+                )}
+              </div>
+              <div>
+                <div className="text-xs font-medium text-gray-500 uppercase mb-1">Kwota brutto</div>
+                <div className="text-gray-900 font-medium tabular-nums">
+                  {(order.totalBrutto / 100).toLocaleString('pl-PL', { minimumFractionDigits: 2 })} zł
+                </div>
+              </div>
+              <div>
+                <div className="text-xs font-medium text-gray-500 uppercase mb-1">Opłacono</div>
+                <div className="text-gray-900">
+                  {order.paidAt
+                    ? order.paidAt.toLocaleString('pl-PL', {
+                        day: '2-digit',
+                        month: '2-digit',
+                        year: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit',
+                      })
+                    : '—'}
+                </div>
+              </div>
+            </div>
+            {order.p24OrderId && (
+              <p className="mt-3 text-xs text-gray-500">
+                Nr transakcji Przelewy24: <span className="font-mono">{order.p24OrderId}</span>
+              </p>
+            )}
+          </div>
+
           {/* Przesyłki (wiele per zamówienie) */}
           <div className="bg-white rounded-xl border border-gray-200 p-6">
             <h2 className="text-lg font-semibold mb-4">Przesyłki</h2>
