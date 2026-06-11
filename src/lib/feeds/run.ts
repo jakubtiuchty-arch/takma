@@ -11,15 +11,22 @@ function alertEmail(): string {
   return process.env.FEED_ALERT_EMAIL || process.env.ALLEGRO_NOTIFY_EMAIL || 'handlowy@takma.com.pl'
 }
 
+const PUBLIC_ORIGIN = 'https://www.takma.com.pl'
+
 /**
  * Waliduje oba feedy (Ceneo + Google Merchant), zapisuje wynik do bazy
  * i — gdy notify=true — wysyła mail alertowy, jeśli któryś ma błędy.
  * `origin` to baza URL bieżącego deploya (np. https://www.takma.com.pl).
+ *
+ * Cron Vercela woła deployment po adresie *.vercel.app, który jest za
+ * Deployment Protection (401) — wtedy podmieniamy na publiczną domenę,
+ * bo tylko ona jest osiągalna bez logowania (i to ją widzą Ceneo/Google).
  */
 export async function runFeedValidations(
   origin: string,
   opts: { notify?: boolean } = {},
 ): Promise<FeedValidationResult[]> {
+  if (/\.vercel\.app$/i.test(new URL(origin).hostname)) origin = PUBLIC_ORIGIN
   const feeds: [FeedKind, string][] = [
     ['ceneo', `${origin}/api/ceneo-feed`],
     ['merchant', `${origin}/api/merchant-feed`],

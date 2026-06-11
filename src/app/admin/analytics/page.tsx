@@ -1,41 +1,12 @@
 import { prisma } from '@/lib/db'
 import { gaConfigured, gaDashboard, type GaRow } from '@/lib/ga'
+import { AnalyticsTabs, Card, fmt, fmtDuration, pct } from './_ui'
 import Link from 'next/link'
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
 
 const RANGES = [7, 28, 90]
-
-function fmt(v: number): string {
-  return v.toLocaleString('pl-PL')
-}
-function fmtDuration(s: number): string {
-  const m = Math.floor(s / 60)
-  const sec = Math.round(s % 60)
-  return m > 0 ? `${m}m ${sec}s` : `${sec}s`
-}
-function pct(v: number): string {
-  return `${(v * 100).toFixed(1)}%`
-}
-function delta(cur: number, prev: number): { txt: string; up: boolean | null } {
-  if (!prev) return { txt: cur ? '—' : '0%', up: null }
-  const d = (cur - prev) / prev
-  return { txt: `${d > 0 ? '+' : ''}${(d * 100).toFixed(0)}%`, up: d === 0 ? null : d > 0 }
-}
-
-function Card({ label, value, cur, prev }: { label: string; value: string; cur: number; prev: number }) {
-  const d = delta(cur, prev)
-  return (
-    <div className="bg-white rounded-xl border border-gray-200 p-4">
-      <div className="text-xs text-gray-500">{label}</div>
-      <div className="mt-1 text-2xl font-bold text-gray-900 tabular-nums">{value}</div>
-      <div className={`mt-0.5 text-xs ${d.up === null ? 'text-gray-400' : d.up ? 'text-emerald-600' : 'text-red-500'}`}>
-        {d.txt} <span className="text-gray-400">vs poprzedni okres</span>
-      </div>
-    </div>
-  )
-}
 
 function Table({ title, rows, fmtVal = fmt, col1 = 'value', col2 }: { title: string; rows: GaRow[]; fmtVal?: (v: number) => string; col1?: string; col2?: string }) {
   return (
@@ -65,12 +36,16 @@ function Table({ title, rows, fmtVal = fmt, col1 = 'value', col2 }: { title: str
 
 function Trend({ data }: { data: { date: string; users: number; sessions: number }[] }) {
   const max = Math.max(1, ...data.map((d) => d.sessions))
+  // GA zwraca datę jako YYYYMMDD
+  const iso = (d: string) => `${d.slice(0, 4)}-${d.slice(4, 6)}-${d.slice(6, 8)}`
   return (
     <div className="bg-white rounded-xl border border-gray-200 p-5">
-      <h3 className="text-sm font-semibold text-gray-700 mb-3">Sesje dziennie</h3>
+      <h3 className="text-sm font-semibold text-gray-700 mb-3">Sesje dziennie <span className="font-normal text-gray-400">(klik w słupek → szczegóły dnia)</span></h3>
       <div className="flex items-end gap-0.5 h-32">
         {data.map((d, i) => (
-          <div key={i} className="flex-1 bg-blue-500/80 rounded-t hover:bg-blue-600 transition-colors" style={{ height: `${(d.sessions / max) * 100}%` }} title={`${d.date}: ${d.sessions} sesji, ${d.users} użytk.`} />
+          <Link key={i} href={`/admin/analytics/dzien?date=${iso(d.date)}`} className="flex-1 flex flex-col justify-end h-full" title={`${iso(d.date)}: ${d.sessions} sesji, ${d.users} użytk.`}>
+            <div className="bg-blue-500/80 rounded-t hover:bg-blue-600 transition-colors min-h-[2px]" style={{ height: `${(d.sessions / max) * 100}%` }} />
+          </Link>
         ))}
       </div>
     </div>
@@ -118,6 +93,10 @@ export default async function AnalyticsPage({ searchParams }: { searchParams: Pr
   }
 
   const digest = await prisma.gaDigest.findFirst({ orderBy: { date: 'desc' } })
+  let digestAlerts: string[] = []
+  try {
+    digestAlerts = (JSON.parse(digest?.metrics || '{}') as { alerts?: string[] }).alerts || []
+  } catch { /* stare wpisy bez alertów */ }
 
   return (
     <div>
@@ -136,11 +115,22 @@ export default async function AnalyticsPage({ searchParams }: { searchParams: Pr
           ))}
         </div>
       </div>
+      <AnalyticsTabs active="przeglad" />
 
       {error && (
         <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-sm text-red-700 mb-6">
           <b>Błąd GA4 Data API:</b> {error}
           <div className="text-xs text-red-500 mt-1">Najczęściej: service account nie ma dostępu Viewer do usługi, albo zły GA_PROPERTY_ID.</div>
+        </div>
+      )}
+
+      {/* Twarde alerty z ostatniego digestu */}
+      {digestAlerts.length > 0 && (
+        <div className="bg-red-50 border border-red-200 rounded-xl p-4 mb-6">
+          <div className="text-sm font-semibold text-red-700 mb-1.5">⚠️ Alerty ({digest?.date})</div>
+          <ul className="text-sm text-red-700 space-y-1 list-disc list-inside">
+            {digestAlerts.map((a, i) => <li key={i}>{a}</li>)}
+          </ul>
         </div>
       )}
 

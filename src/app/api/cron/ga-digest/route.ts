@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import Anthropic from '@anthropic-ai/sdk'
 import { prisma } from '@/lib/db'
-import { gaConfigured, gaDashboard, type GaRow, type GaMetrics } from '@/lib/ga'
+import { gaConfigured, gaDashboard, gaDayDetail, LEAD_EVENTS, type GaRow, type GaMetrics, type GaDayDetail } from '@/lib/ga'
 
 export const maxDuration = 120
 
@@ -17,6 +17,37 @@ function topList(rows: GaRow[], n = 8): string {
 
 function metricsLine(m: GaMetrics): string {
   return `użytkownicy ${m.activeUsers}, nowi ${m.newUsers}, sesje ${m.sessions}, odsłony ${m.screenPageViews}, zaangażowanie ${(m.engagementRate * 100).toFixed(1)}%, śr. czas sesji ${m.averageSessionDuration.toFixed(0)}s, bounce ${(m.bounceRate * 100).toFixed(1)}%, zdarzenia ${m.eventCount}, przychód ${m.totalRevenue.toFixed(0)} zł`
+}
+
+/**
+ * Twarde reguły alertowe dla wczorajszego dnia (porównanie: ten sam dzień
+ * tygodnia tydzień wcześniej). Zwraca listę komunikatów — pusta = spokój.
+ */
+function dayAlerts(date: string, day: GaDayDetail): string[] {
+  const alerts: string[] = []
+  const cur = day.summary
+  const prev = day.previous
+
+  if (prev.sessions >= 20 && cur.sessions < prev.sessions * 0.7) {
+    alerts.push(`Sesje spadły o ${Math.round((1 - cur.sessions / prev.sessions) * 100)}% (${cur.sessions} vs ${prev.sessions} tydzień wcześniej)`)
+  }
+  if (cur.sessions >= 20 && cur.bounceRate - prev.bounceRate >= 0.2) {
+    alerts.push(`Współczynnik odrzuceń skoczył o ${((cur.bounceRate - prev.bounceRate) * 100).toFixed(0)} p.p. (${(cur.bounceRate * 100).toFixed(0)}% vs ${(prev.bounceRate * 100).toFixed(0)}%)`)
+  }
+
+  const leadNames = new Set<string>(LEAD_EVENTS)
+  const leads = day.events.filter((e) => leadNames.has(e.label)).reduce((s, e) => s + e.value, 0)
+  const weekday = new Date(`${date}T12:00:00Z`).getUTCDay()
+  if (weekday >= 1 && weekday <= 5 && cur.sessions >= 20 && leads === 0) {
+    alerts.push(`Zero leadów (telefon/mail/formularz) w dzień roboczy przy ${cur.sessions} sesjach`)
+  }
+
+  const notSet = day.sourceLanding.filter((r) => r.landing === '(not set)').reduce((s, r) => s + r.sessions, 0)
+  if (cur.sessions >= 20 && notSet / cur.sessions > 0.15) {
+    alerts.push(`${Math.round((notSet / cur.sessions) * 100)}% sesji z landingiem "(not set)" (${notSet} z ${cur.sessions}) — możliwy problem z tagiem GA / consent`)
+  }
+
+  return alerts
 }
 
 export async function GET(request: NextRequest) {
@@ -37,9 +68,11 @@ export async function GET(request: NextRequest) {
   }
 
   // Analizujemy ostatnie 7 dni vs poprzednie 7 dni (świeży obraz, mniej szumu niż 1 dzień).
-  const data = await gaDashboard(7)
+  const [data, day] = await Promise.all([gaDashboard(7), gaDayDetail(date)])
+  const alerts = dayAlerts(date, day)
 
   const prompt = `Jesteś analitykiem ruchu e-commerce B2B (takma.com.pl — sprzedaż etykiet, taśm i terminali Zebra). Przeanalizuj dane GA4 z ostatnich 7 dni względem poprzednich 7 dni. Pisz po polsku, konkretnie, liczbami. Bez ogólników.
+${alerts.length ? `\n## ⚠️ ALERTY za wczoraj (${date}) — odnieś się do nich w analizie\n${alerts.map((a) => `  - ${a}`).join('\n')}\n` : ''}
 
 ## Metryki (ostatnie 7 dni)
 ${metricsLine(data.current)}
@@ -83,11 +116,12 @@ Napisz zwięzłą analizę (markdown, ~250-400 słów) w sekcjach:
   })
   const summary = msg.content.filter((b) => b.type === 'text').map((b) => (b as { text: string }).text).join('\n').trim()
 
+  const metrics = JSON.stringify({ current: data.current, previous: data.previous, alerts })
   await prisma.gaDigest.upsert({
     where: { date },
-    create: { date, summary, metrics: JSON.stringify({ current: data.current, previous: data.previous }) },
-    update: { summary, metrics: JSON.stringify({ current: data.current, previous: data.previous }) },
+    create: { date, summary, metrics },
+    update: { summary, metrics },
   })
 
-  return NextResponse.json({ ok: true, date, length: summary.length })
+  return NextResponse.json({ ok: true, date, alerts, length: summary.length })
 }
