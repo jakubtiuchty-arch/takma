@@ -287,7 +287,7 @@ export function buildOrderConfirmationEmail(data: {
       </tr>`
   }).join('')
 
-  const paymentLabel = data.paymentMethod === 'ONLINE' ? 'Online (Stripe)' : 'Przelew (pro forma)'
+  const paymentLabel = data.paymentMethod === 'ONLINE' ? 'Online (Przelewy24)' : 'Przelew (pro forma)'
   const shippingLabel = data.shippingNetto > 0 ? `${fmtPLN(data.shippingNetto)} z&#322;` : 'Gratis'
   const deliveryAddress = data.customer.shippingAddress || data.customer.address || '&mdash;'
   const c = data.customer
@@ -495,7 +495,7 @@ export function buildAdminOrderNotificationEmail(data: {
   paymentMethod: string
   customerNotes?: string | null
 }): string {
-  const paymentLabel = data.paymentMethod === 'ONLINE' ? 'Stripe (online)' : 'Pro forma (przelew)'
+  const paymentLabel = data.paymentMethod === 'ONLINE' ? 'Przelewy24 (online)' : 'Pro forma (przelew)'
 
   const itemRows = data.items.map((i, idx) => [
     String(idx + 1),
