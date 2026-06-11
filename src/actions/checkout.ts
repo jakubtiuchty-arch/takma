@@ -1,6 +1,6 @@
 'use server'
 
-import { stripe, toStripeAmount } from '@/lib/stripe'
+import { p24Register, p24Configured } from '@/lib/p24'
 import { createOrder } from '@/lib/orders'
 
 interface CheckoutItem {
@@ -33,8 +33,8 @@ export async function createCheckoutSession(
   shippingNetto: number,
   notes?: string
 ): Promise<{ url: string; orderNumber: string }> {
-  if (!stripe) {
-    throw new Error('Stripe nie jest skonfigurowany. Skontaktuj się z obsługą.')
+  if (!p24Configured()) {
+    throw new Error('Płatności online nie są skonfigurowane. Skontaktuj się z obsługą.')
   }
 
   // 1. Create order in DB with status PENDING_PAYMENT
@@ -62,78 +62,28 @@ export async function createCheckoutSession(
     customerNotes: notes,
   })
 
-  // 2. Build Stripe line items — ceny BRUTTO (netto + 23% VAT)
-  // Stripe pobiera kwotę brutto od klienta. VAT rozliczamy po naszej stronie (faktura).
-  const VAT_RATE = 1.23
-
-  const lineItems: Array<{
-    price_data: {
-      currency: string
-      product_data: { name: string; metadata?: Record<string, string>; images?: string[] }
-      unit_amount: number
-    }
-    quantity: number
-  }> = items.map(item => ({
-    price_data: {
-      currency: 'pln',
-      product_data: {
-        name: item.productName,
-        metadata: { partNumber: item.partNumber, productId: item.productId },
-        ...(item.image && { images: [`https://www.takma.com.pl${item.image}`] }),
-      },
-      unit_amount: toStripeAmount(item.priceNetto * VAT_RATE),
-    },
-    quantity: item.quantity,
-  }))
-
-  // Add shipping line item (brutto)
-  if (shippingNetto > 0) {
-    lineItems.push({
-      price_data: {
-        currency: 'pln',
-        product_data: { name: 'Dostawa kurierska' },
-        unit_amount: toStripeAmount(shippingNetto * VAT_RATE),
-      },
-      quantity: 1,
-    })
-  }
-
-  // 3. Create Stripe Checkout Session
-  const session = await stripe.checkout.sessions.create({
-    mode: 'payment',
-    payment_method_types: ['card', 'blik'],
-    line_items: lineItems,
-    currency: 'pln',
-    locale: 'pl',
-
-    // Collect tax ID (NIP)
-    tax_id_collection: { enabled: true },
-
-    // Customer info
-    customer_email: customer.email,
-
-    // Metadata to link back to our order
-    metadata: {
-      orderId: order.id,
-      orderNumber: order.orderNumber,
-    },
-
-    // Redirects
-    success_url: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.takma.com.pl'}/zamowienie/potwierdzenie?order=${order.orderNumber}&session_id={CHECKOUT_SESSION_ID}`,
-    cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.takma.com.pl'}/zamowienie?cancelled=true`,
-
-    // Session expires in 30 minutes
-    expires_at: Math.floor(Date.now() / 1000) + 30 * 60,
+  // 2. Rejestracja transakcji w Przelewy24.
+  // Kwota = totalBrutto z zamówienia (grosze) — jedno źródło prawdy, bez
+  // rozjazdów groszowych z zaokrąglania per pozycja.
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.takma.com.pl'
+  const { redirectUrl } = await p24Register({
+    sessionId: order.id, // cuid — unikalny i niezgadywalny (chroni stronę potwierdzenia)
+    amount: order.totalBrutto,
+    description: `Zamówienie ${order.orderNumber} — takma.com.pl`,
+    email: customer.email,
+    client: [customer.firstName, customer.lastName].filter(Boolean).join(' '),
+    urlReturn: `${baseUrl}/zamowienie/potwierdzenie?order=${order.orderNumber}&sid=${order.id}`,
+    urlStatus: `${baseUrl}/api/p24/webhook`,
   })
 
-  // 4. Save Stripe session ID
+  // 3. Zapisz id sesji P24 (= order.id) — webhook i strona potwierdzenia dopasują po nim
   await (await import('@/lib/db')).prisma.order.update({
     where: { id: order.id },
-    data: { stripeSessionId: session.id },
+    data: { p24SessionId: order.id },
   })
 
-  // 5. Return URL for client-side redirect
-  return { url: session.url!, orderNumber: order.orderNumber }
+  // 4. Return URL for client-side redirect
+  return { url: redirectUrl, orderNumber: order.orderNumber }
 }
 
 export async function createProformaOrder(

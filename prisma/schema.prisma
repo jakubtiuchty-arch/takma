@@ -120,6 +120,8 @@ model Order {
   paymentMethod          PaymentMethod @default(ONLINE)
   stripeSessionId        String?
   stripePaymentIntentId  String?
+  p24SessionId           String?       @unique // nasz identyfikator sesji P24 (= order.id)
+  p24OrderId             Int? // orderId nadany przez Przelewy24 (potrzebny do verify/refund)
 
   proformaUrl            String?
   proformaSentAt         DateTime?

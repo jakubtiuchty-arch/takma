@@ -190,7 +190,7 @@ export default function CheckoutPage() {
       trackBeginCheckout(ga4Items, total)
     }
 
-    // Obsługa powrotu ze Stripe po anulowaniu płatności
+    // Obsługa powrotu z bramki po anulowaniu płatności
     const params = new URLSearchParams(window.location.search)
     if (params.get('cancelled') === 'true') {
       setSubmitError('Płatność została anulowana. Możesz spróbować ponownie lub wybrać płatność pro forma.')
@@ -462,15 +462,15 @@ export default function CheckoutPage() {
         clearAll()
         window.scrollTo({ top: 0, behavior: 'instant' })
       } else {
-        // Online payment — Stripe
-        // GA4: add_payment_info (purchase tracked after Stripe redirect success)
+        // Online payment — Przelewy24
+        // GA4: add_payment_info (purchase tracked after P24 redirect success)
         const ga4Items = items.map(item => ({
           item_id: item.productId,
           item_name: item.productName,
           quantity: item.quantity,
           price: itemPrices.get(item.productId),
         }))
-        trackAddPaymentInfo(ga4Items, totalNetto, 'stripe')
+        trackAddPaymentInfo(ga4Items, totalNetto, 'przelewy24')
 
         const result = await createCheckoutSession(
           checkoutItems,
@@ -479,10 +479,10 @@ export default function CheckoutPage() {
           formData.notes || undefined
         )
 
-        // Clear cart before redirecting to Stripe
+        // Clear cart before redirecting to Przelewy24
         clearAll()
 
-        // Redirect to Stripe Checkout
+        // Redirect to Przelewy24
         window.location.href = result.url
       }
     } catch (error) {
@@ -943,7 +943,7 @@ export default function CheckoutPage() {
                 </button>
                 {formData.paymentMethod === 'online' && (
                   <p className="text-xs text-gray-400 text-center">
-                    Zostaniesz przekierowany do bezpiecznej strony płatnośći
+                    Zostaniesz przekierowany do bezpiecznej strony płatności Przelewy24
                   </p>
                 )}
               </div>
@@ -1022,7 +1022,7 @@ export default function CheckoutPage() {
                 <div className="flex-1">
                   <span className="text-sm font-semibold text-gray-900">Płatność online</span>
                   <span className="ml-2 inline-block text-xs font-medium text-green-700 bg-green-100 rounded-full px-2.5 py-0.5">Zalecane</span>
-                  <span className="text-xs text-gray-500 mt-0.5 block">Karta płatnicza, BLIK, przelewy24. Szybka i bezpieczna płatność przez Stripe.</span>
+                  <span className="text-xs text-gray-500 mt-0.5 block">BLIK, przelew z Twojego banku, karta płatnicza. Szybka i bezpieczna płatność przez Przelewy24.</span>
                 </div>
               </label>
 

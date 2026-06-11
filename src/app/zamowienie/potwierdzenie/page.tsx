@@ -3,6 +3,7 @@ import { CheckIcon } from '@/components/ui/Icons'
 import { prisma } from '@/lib/db'
 import type { GA4Item } from '@/lib/ga-events'
 import PurchaseTracker from './PurchaseTracker'
+import PaymentPending from './PaymentPending'
 
 export const metadata = {
   title: 'Zamówienie potwierdzone — TAKMA',
@@ -13,48 +14,64 @@ export const dynamic = 'force-dynamic'
 
 /**
  * Dane do GA4 `purchase` — zamówienie dopasowane po numerze ORAZ id sesji
- * Stripe z URL-a (nie da się podejrzeć cudzego zamówienia zgadując numer).
+ * płatności z URL-a (P24 `sid` lub historycznie Stripe `session_id`) — nie da
+ * się podejrzeć cudzego zamówienia zgadując numer. `purchase` wysyłamy tylko
+ * dla statusu PAID; dla PENDING_PAYMENT strona pokazuje stan „przetwarzanie"
+ * (klient mógł wrócić z P24 zanim dotarł webhook).
  */
-async function getPurchaseData(
+async function getOrderState(
   orderNumber?: string,
   sessionId?: string
-): Promise<{ orderNumber: string; items: GA4Item[]; value: number; shipping: number } | null> {
-  if (!orderNumber || !sessionId) return null
+): Promise<{
+  pending: boolean
+  purchase: { orderNumber: string; items: GA4Item[]; value: number; shipping: number } | null
+}> {
+  if (!orderNumber || !sessionId) return { pending: false, purchase: null }
   try {
     const order = await prisma.order.findFirst({
-      where: { orderNumber, stripeSessionId: sessionId },
+      where: { orderNumber, OR: [{ p24SessionId: sessionId }, { stripeSessionId: sessionId }] },
       select: {
         orderNumber: true,
+        status: true,
         subtotalNetto: true,
         shippingNetto: true,
         items: { select: { productId: true, productName: true, quantity: true, priceNetto: true } },
       },
     })
-    if (!order) return null
+    if (!order) return { pending: false, purchase: null }
+    if (order.status === 'PENDING_PAYMENT') return { pending: true, purchase: null }
     return {
-      orderNumber: order.orderNumber,
-      items: order.items.map((i) => ({
-        item_id: i.productId,
-        item_name: i.productName,
-        quantity: i.quantity,
-        price: i.priceNetto / 100,
-      })),
-      // jednostki jak w checkoucie: zł netto, value = towar + dostawa
-      value: (order.subtotalNetto + order.shippingNetto) / 100,
-      shipping: order.shippingNetto / 100,
+      pending: false,
+      purchase: {
+        orderNumber: order.orderNumber,
+        items: order.items.map((i) => ({
+          item_id: i.productId,
+          item_name: i.productName,
+          quantity: i.quantity,
+          price: i.priceNetto / 100,
+        })),
+        // jednostki jak w checkoucie: zł netto, value = towar + dostawa
+        value: (order.subtotalNetto + order.shippingNetto) / 100,
+        shipping: order.shippingNetto / 100,
+      },
     }
   } catch {
-    return null
+    return { pending: false, purchase: null }
   }
 }
 
 export default async function OrderConfirmationPage({
   searchParams,
 }: {
-  searchParams: { order?: string; session_id?: string }
+  searchParams: { order?: string; session_id?: string; sid?: string }
 }) {
   const orderNumber = searchParams.order
-  const purchase = await getPurchaseData(orderNumber, searchParams.session_id)
+  const sessionId = searchParams.sid || searchParams.session_id
+  const { pending, purchase } = await getOrderState(orderNumber, sessionId)
+
+  if (pending && orderNumber && sessionId) {
+    return <PaymentPending orderNumber={orderNumber} sid={sessionId} />
+  }
 
   return (
     <div className="container-main py-16 lg:py-24">
