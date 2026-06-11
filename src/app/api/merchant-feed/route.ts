@@ -5,6 +5,9 @@ import {
   getSubcategoryById,
   getManufacturerById,
   variantSizeSlug,
+  isThermalLabelProduct,
+  isTransferLabelProduct,
+  isRibbonProduct,
   type Product,
   type ProductVariant,
 } from '@/data/products'
@@ -167,9 +170,15 @@ export async function GET() {
     )
     const gtin = eanMap.get(c.pn.toUpperCase())
 
+    // Strony statyczne wariantów istnieją tylko dla etykiet/taśm — urządzenia
+    // przez ?pn= (bez tego Google dostawał 404 dla 45% ofert; szczegóły: ceneo-feed).
+    const hasStaticVariantPage =
+      isThermalLabelProduct(c.product) || isTransferLabelProduct(c.product) || isRibbonProduct(c.product)
     const sizeSlug = c.variant ? variantSizeSlug(c.variant) : ''
-    const link = c.variant && sizeSlug
-      ? `${SITE_URL}/produkt/${c.product.slug}/${sizeSlug}/${c.variant.partNumber}`
+    const link = c.variant
+      ? hasStaticVariantPage && sizeSlug
+        ? `${SITE_URL}/produkt/${c.product.slug}/${sizeSlug}/${c.variant.partNumber}`
+        : `${SITE_URL}/produkt/${c.product.slug}?pn=${encodeURIComponent(c.variant.partNumber)}`
       : `${SITE_URL}/produkt/${c.product.slug}`
 
     const title = c.variant ? `${c.product.name} — ${c.variant.name}` : c.product.name

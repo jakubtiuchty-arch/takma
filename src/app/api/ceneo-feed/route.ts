@@ -5,6 +5,9 @@ import {
   getSubcategoryById,
   getManufacturerById,
   variantSizeSlug,
+  isThermalLabelProduct,
+  isTransferLabelProduct,
+  isRibbonProduct,
   type Product,
   type ProductVariant,
 } from '@/data/products'
@@ -284,10 +287,18 @@ export async function GET() {
     const model = deriveModel(c.product, c.variant)
     const ean = eanMap.get(c.pn.toUpperCase())
 
-    // Deep-link do konkretnego wariantu (SKU), z fallbackiem na stronę serii.
+    // Deep-link do wariantu. Strony statyczne /produkt/[slug]/[size]/[pn] istnieją
+    // TYLKO dla etykiet i taśm — dla urządzeń (terminale, drukarki, skanery)
+    // variantSizeSlug zwracał fallback 'bez-rozmiaru' i feed linkował na 404
+    // (45% ofert!). Urządzenia linkujemy przez ?pn= — strona produktu preselektuje
+    // wariant i pokazuje jego cenę.
+    const hasStaticVariantPage =
+      isThermalLabelProduct(c.product) || isTransferLabelProduct(c.product) || isRibbonProduct(c.product)
     const sizeSlug = c.variant ? variantSizeSlug(c.variant) : ''
-    const url = c.variant && sizeSlug
-      ? `${SITE_URL}/produkt/${c.product.slug}/${sizeSlug}/${c.variant.partNumber}`
+    const url = c.variant
+      ? hasStaticVariantPage && sizeSlug
+        ? `${SITE_URL}/produkt/${c.product.slug}/${sizeSlug}/${c.variant.partNumber}`
+        : `${SITE_URL}/produkt/${c.product.slug}?pn=${encodeURIComponent(c.variant.partNumber)}`
       : `${SITE_URL}/produkt/${c.product.slug}`
 
     const size = c.variant?.attributes?.['Rozmiar'] || c.variant?.name
