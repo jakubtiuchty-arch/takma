@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import { trackPurchase, type GA4Item } from '@/lib/ga-events'
+import { useCartStore } from '@/store/cartStore'
 
 interface Props {
   orderNumber: string
@@ -16,6 +17,14 @@ interface Props {
  * poszedł raz — guard w localStorage + deduplikacja GA po transaction_id.
  */
 export default function PurchaseTracker({ orderNumber, items, value, shipping }: Props) {
+  const clearAll = useCartStore((s) => s.clearAll)
+
+  // Zamówienie opłacone → dopiero teraz czyścimy koszyk (nie przed redirectem
+  // do P24 — re-render pokazywał „koszyk pusty"; porzucona płatność = koszyk zostaje).
+  useEffect(() => {
+    clearAll()
+  }, [clearAll])
+
   useEffect(() => {
     const key = `ga_purchase_${orderNumber}`
     try {

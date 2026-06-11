@@ -479,8 +479,9 @@ export default function CheckoutPage() {
           formData.notes || undefined
         )
 
-        // Clear cart before redirecting to Przelewy24
-        clearAll()
+        // Koszyka NIE czyścimy tutaj — re-render pokazywał „koszyk pusty" przed
+        // przekierowaniem. Czyści go PurchaseTracker na potwierdzeniu opłaconego
+        // zamówienia; przy porzuconej płatności koszyk zostaje do ponowienia.
 
         // Redirect to Przelewy24
         window.location.href = result.url
