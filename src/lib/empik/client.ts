@@ -84,6 +84,23 @@ export async function empikOfferImportInfo(importId: number): Promise<EmpikImpor
   return empikFetch<EmpikImportInfo>(`/offers/imports/${importId}`)
 }
 
+export interface EmpikOffer {
+  offer_id: number
+  shop_sku: string
+  product_title?: string
+  product_references?: Array<{ reference: string; reference_type: string }>
+  price: number
+  quantity: number
+  active: boolean
+  state_code?: string
+}
+
+/** OF21 — lista naszych ofert. */
+export async function empikListOffers(max = 100, offset = 0): Promise<{ offers: EmpikOffer[]; total: number }> {
+  const d = await empikFetch<{ offers: EmpikOffer[]; total_count: number }>(`/offers?max=${max}&offset=${offset}`)
+  return { offers: d.offers || [], total: d.total_count ?? 0 }
+}
+
 /** OF03 — raport błędów importu (CSV jako tekst). */
 export async function empikOfferImportErrorReport(importId: number): Promise<string> {
   const res = await fetch(`${EMPIK_API_BASE}/offers/imports/${importId}/error_report`, {

@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import {
   empikProductsByEans,
@@ -33,8 +33,8 @@ export const dynamic = 'force-dynamic'
  *
  * Diagnostyka: GET ?check=<import_id> zwraca status OF02 + raport błędów OF03.
  */
-export async function GET(req: NextRequest) {
-  const checkId = req.nextUrl.searchParams.get('check')
+export async function GET(req: Request) {
+  const checkId = new URL(req.url).searchParams.get('check')
   if (checkId) {
     const info = await empikOfferImportInfo(Number(checkId))
     let errorReport: string | null = null
