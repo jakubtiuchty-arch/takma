@@ -1,20 +1,64 @@
 import Link from 'next/link'
 import { CheckIcon } from '@/components/ui/Icons'
+import { prisma } from '@/lib/db'
+import type { GA4Item } from '@/lib/ga-events'
+import PurchaseTracker from './PurchaseTracker'
 
 export const metadata = {
   title: 'Zamówienie potwierdzone — TAKMA',
   robots: { index: false },
 }
 
-export default function OrderConfirmationPage({
+export const dynamic = 'force-dynamic'
+
+/**
+ * Dane do GA4 `purchase` — zamówienie dopasowane po numerze ORAZ id sesji
+ * Stripe z URL-a (nie da się podejrzeć cudzego zamówienia zgadując numer).
+ */
+async function getPurchaseData(
+  orderNumber?: string,
+  sessionId?: string
+): Promise<{ orderNumber: string; items: GA4Item[]; value: number; shipping: number } | null> {
+  if (!orderNumber || !sessionId) return null
+  try {
+    const order = await prisma.order.findFirst({
+      where: { orderNumber, stripeSessionId: sessionId },
+      select: {
+        orderNumber: true,
+        subtotalNetto: true,
+        shippingNetto: true,
+        items: { select: { productId: true, productName: true, quantity: true, priceNetto: true } },
+      },
+    })
+    if (!order) return null
+    return {
+      orderNumber: order.orderNumber,
+      items: order.items.map((i) => ({
+        item_id: i.productId,
+        item_name: i.productName,
+        quantity: i.quantity,
+        price: i.priceNetto / 100,
+      })),
+      // jednostki jak w checkoucie: zł netto, value = towar + dostawa
+      value: (order.subtotalNetto + order.shippingNetto) / 100,
+      shipping: order.shippingNetto / 100,
+    }
+  } catch {
+    return null
+  }
+}
+
+export default async function OrderConfirmationPage({
   searchParams,
 }: {
   searchParams: { order?: string; session_id?: string }
 }) {
   const orderNumber = searchParams.order
+  const purchase = await getPurchaseData(orderNumber, searchParams.session_id)
 
   return (
     <div className="container-main py-16 lg:py-24">
+      {purchase && <PurchaseTracker {...purchase} />}
       <div className="max-w-lg mx-auto text-center">
         {/* Success icon */}
         <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
