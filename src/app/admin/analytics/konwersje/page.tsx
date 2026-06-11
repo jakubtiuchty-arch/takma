@@ -94,7 +94,7 @@ export default async function ConversionsPage({ searchParams }: { searchParams: 
           {/* Zdrowie tagowania */}
           {notSetShare > 0.15 && (
             <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-sm text-red-700 mb-6">
-              <b>{pct(notSetShare)} sesji bez strony wejścia „(not set)"</b> ({fmt(data.notSetSessions)} z {fmt(data.totalSessions)}) — tag GA nie zdążył się załadować albo blokuje go consent. Przy ruchu z płatnych kampanii to przepalone kliknięcia.
+              <b>{pct(notSetShare)} sesji bez strony wejścia „(not set)&rdquo;</b> ({fmt(data.notSetSessions)} z {fmt(data.totalSessions)}) — tag GA nie zdążył się załadować albo blokuje go consent. Przy ruchu z płatnych kampanii to przepalone kliknięcia.
             </div>
           )}
 
