@@ -140,8 +140,13 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
         // Te wyniki są mało istotne
         if (score === 0) score = 1
 
-        // Sprawdź wariant
-        const matchedVariant = matchedPN
+        // Sprawdź wariant — ale tylko gdy zapytanie celuje w Part Number, a nie
+        // w nazwę modelu. „zt610" zawiera się w PN „ZT61042-T0E0100Z", więc bez
+        // tego warunku szukanie modelu podbijało losowy wariant z linkiem ?pn=
+        // zamiast czystej strony produktu.
+        const queryMatchesName =
+          nameLower.includes(queryNormalized) || nameLower.replace(/\s+/g, '').includes(queryNormalized)
+        const matchedVariant = matchedPN && !queryMatchesName
           ? product.variants?.find((v) => v.partNumber.toLowerCase().includes(queryNormalized))
           : null
 
