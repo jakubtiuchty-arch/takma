@@ -28,6 +28,10 @@
       "schedule": "0 7,14 * * *"
     },
     {
+      "path": "/api/cron/empik-sync",
+      "schedule": "15 7,14 * * *"
+    },
+    {
       "path": "/api/cron/allegro-autoreply",
       "schedule": "*/15 * * * *"
     },
