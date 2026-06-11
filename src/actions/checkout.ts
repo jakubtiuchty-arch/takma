@@ -36,6 +36,8 @@ export async function createCheckoutSession(
   if (!p24Configured()) {
     throw new Error('Płatności online nie są skonfigurowane. Skontaktuj się z obsługą.')
   }
+  // Pomiary czasu — diagnoza wolnego redirectu do P24 (2026-06-11: ~20-40 s)
+  const t0 = Date.now()
 
   // 1. Create order in DB with status PENDING_PAYMENT
   const order = await createOrder({
@@ -62,10 +64,13 @@ export async function createCheckoutSession(
     customerNotes: notes,
   })
 
+  console.log(`[checkout] createOrder ${order.orderNumber}: ${Date.now() - t0}ms`)
+
   // 2. Rejestracja transakcji w Przelewy24.
   // Kwota = totalBrutto z zamówienia (grosze) — jedno źródło prawdy, bez
   // rozjazdów groszowych z zaokrąglania per pozycja.
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.takma.com.pl'
+  const t1 = Date.now()
   const { redirectUrl } = await p24Register({
     sessionId: order.id, // cuid — unikalny i niezgadywalny (chroni stronę potwierdzenia)
     amount: order.totalBrutto,
@@ -76,11 +81,14 @@ export async function createCheckoutSession(
     urlStatus: `${baseUrl}/api/p24/webhook`,
   })
 
+  console.log(`[checkout] p24Register ${order.orderNumber}: ${Date.now() - t1}ms`)
+
   // 3. Zapisz id sesji P24 (= order.id) — webhook i strona potwierdzenia dopasują po nim
   await (await import('@/lib/db')).prisma.order.update({
     where: { id: order.id },
     data: { p24SessionId: order.id },
   })
+  console.log(`[checkout] total ${order.orderNumber}: ${Date.now() - t0}ms`)
 
   // 4. Return URL for client-side redirect
   return { url: redirectUrl, orderNumber: order.orderNumber }

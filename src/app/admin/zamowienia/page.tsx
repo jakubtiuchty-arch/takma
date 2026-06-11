@@ -137,7 +137,7 @@ export default async function OrdersPage({ searchParams }: PageProps) {
                       </span>
                     </td>
                     <td className="px-4 py-3 text-center text-sm text-gray-600">
-                      {order.paymentMethod === 'ONLINE' ? 'Stripe' : 'Proforma'}
+                      {order.paymentMethod === 'ONLINE' ? 'Przelewy24' : 'Proforma'}
                     </td>
                     <td className="px-4 py-3 text-center">
                       <DeleteOrderButton orderId={order.id} orderNumber={order.orderNumber} />
