@@ -1,6 +1,7 @@
 import { prisma } from '@/lib/db'
 import { gaConfigured, gaDashboard, type GaRow } from '@/lib/ga'
 import { AnalyticsTabs, Card, fmt, fmtDuration, pct } from './_ui'
+import { Md } from './_markdown'
 import Link from 'next/link'
 
 export const dynamic = 'force-dynamic'
@@ -140,7 +141,7 @@ export default async function AnalyticsPage({ searchParams }: { searchParams: Pr
           <div className="flex items-center justify-between mb-3">
             <h2 className="text-lg font-semibold">Analiza dnia ({digest.date})</h2>
           </div>
-          <div className="prose prose-sm max-w-none text-gray-700 whitespace-pre-wrap">{digest.summary}</div>
+          <Md text={digest.summary} />
         </div>
       )}
 
