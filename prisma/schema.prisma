@@ -121,7 +121,7 @@ model Order {
   stripeSessionId        String?
   stripePaymentIntentId  String?
   p24SessionId           String?       @unique // nasz identyfikator sesji P24 (= order.id)
-  p24OrderId             Int? // orderId nadany przez Przelewy24 (potrzebny do verify/refund)
+  p24OrderId             String? // orderId nadany przez P24 (String — wartości > zakres int4, np. 4506613438)
 
   proformaUrl            String?
   proformaSentAt         DateTime?
