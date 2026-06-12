@@ -8,6 +8,7 @@ import { isLabelPN } from '@/data/products'
 import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
 import type { JarltechStockInfo } from '@/lib/jarltech'
+import { applyStockOverrides } from '@/lib/stock-overrides'
 
 const MARGIN = 1.10        // 10% marży — standardowa dla większości produktów
 const RIBBON_MARGIN = 1.20 // 20% marży dla taśm termotransferowych Zebra
@@ -236,6 +237,7 @@ export async function GET(request: NextRequest) {
           lastSync: c.lastSync.toISOString(),
         }
       })
+      results.forEach(applyStockOverrides)
 
       // Background write-through: jeśli były override'y, zaktualizuj StockCache
       // (fire-and-forget — nie blokuje response)
@@ -486,6 +488,7 @@ export async function GET(request: NextRequest) {
         lastSync: now,
       }
     })
+    results.forEach(applyStockOverrides)
 
     // Write-through: save live results to StockCache for future requests
     // Fire-and-forget — don't block the response

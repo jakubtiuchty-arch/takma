@@ -6,6 +6,7 @@ import { products, isLabelPN } from '@/data/products'
 import { isRibbonPN } from '@/data/transfer-ribbon-products'
 import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
+import { applyStockOverrides } from '@/lib/stock-overrides'
 
 export const maxDuration = 300 // 5 minutes
 
@@ -239,6 +240,9 @@ export async function GET(request: NextRequest) {
             deliveryText = 'Niedostepny'
           }
 
+          // Ręczne korekty per PN (np. przedsprzedaż — patrz lib/stock-overrides)
+          const o = applyStockOverrides({ partNumber: pn, found: true, availability, deliveryText, stockPL, stockDE, totalStock, inDelivery })
+
           await prisma.stockCache.upsert({
             where: { partNumber: pn },
             create: {
@@ -247,24 +251,24 @@ export async function GET(request: NextRequest) {
               price: price ?? null,
               priceBrutto: priceBrutto ?? null,
               ingramPrice: ingramPrice ?? null,
-              stockPL,
-              stockDE,
-              inDelivery,
-              totalStock,
-              availability,
-              deliveryText,
+              stockPL: o.stockPL,
+              stockDE: o.stockDE,
+              inDelivery: o.inDelivery,
+              totalStock: o.totalStock,
+              availability: o.availability,
+              deliveryText: o.deliveryText,
             },
             update: {
               found: true,
               price: price ?? null,
               priceBrutto: priceBrutto ?? null,
               ingramPrice: ingramPrice ?? null,
-              stockPL,
-              stockDE,
-              inDelivery,
-              totalStock,
-              availability,
-              deliveryText,
+              stockPL: o.stockPL,
+              stockDE: o.stockDE,
+              inDelivery: o.inDelivery,
+              totalStock: o.totalStock,
+              availability: o.availability,
+              deliveryText: o.deliveryText,
             },
           })
 
