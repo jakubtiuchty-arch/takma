@@ -65,15 +65,45 @@ function buildTitle(p: Product, v: ProductVariant): string {
   return title.slice(0, 200)
 }
 
+/**
+ * Opis HTML — Empik renderował czysty tekst jako ścianę; Mirakl LONG_TEXT
+ * przyjmuje HTML (akapity, listy). Struktura: lead → akapity opisu →
+ * lista zastosowań → specyfikacja wariantu → nota sprzedawcy.
+ */
 function buildDescription(p: Product, v: ProductVariant): string {
   const label = variantLabel(v)
-  const base = stripMarkdown(p.description || p.shortDescription || '')
-  const parts = [
-    `${p.name} — wariant ${label} (nr kat. ${v.partNumber}).`,
-    base,
-    'Sprzedawca: TAKMA — od 1994 roku specjalizujemy się w automatycznej identyfikacji; Premier Partner i autoryzowany serwis Zebra Technologies.',
+  const esc = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+
+  const base = sanitize(stripMarkdown(p.description || p.shortDescription || ''))
+  // Prozę tnę na akapity po ~2-3 zdaniach, żeby nie było ściany tekstu
+  const sentences = base.split(/(?<=\.)\s+(?=[A-ZŻŹĆĄŚĘŁÓŃ])/)
+  const paras: string[] = []
+  for (let i = 0; i < sentences.length; i += 3) {
+    const chunk = sentences.slice(i, i + 3).join(' ').trim()
+    if (chunk) paras.push(`<p>${esc(chunk)}</p>`)
+  }
+
+  const specs: string[] = []
+  const rozmiar = v.attributes['Rozmiar']
+  const rdzen = v.attributes['Rdzeń (gilza)'] ?? v.attributes['Rdzeń']
+  const szer = v.attributes['Szerokość']
+  const dl = v.attributes['Długość']
+  if (rozmiar) specs.push(`Rozmiar etykiety: ${rozmiar}`)
+  if (szer && !rozmiar) specs.push(`Szerokość: ${szer}`)
+  if (dl && !rozmiar) specs.push(`Długość nawoju: ${dl}`)
+  if (rdzen) specs.push(`Rdzeń (gilza): ${rdzen}`)
+  specs.push(`Numer katalogowy producenta: ${v.partNumber}`)
+
+  const apps = (p.applications || []).slice(0, 6)
+
+  const html = [
+    `<p><strong>${esc(p.name)} — ${esc(label)}</strong></p>`,
+    ...paras.slice(0, 4),
+    apps.length ? `<p><strong>Główne zastosowania:</strong></p><ul>${apps.map((a) => `<li>${esc(sanitize(a))}</li>`).join('')}</ul>` : '',
+    `<p><strong>Dane wariantu:</strong></p><ul>${specs.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>`,
+    '<p>Sprzedawca: TAKMA — od 1994 roku specjalizujemy się w automatycznej identyfikacji; Premier Partner i autoryzowany serwis Zebra Technologies.</p>',
   ]
-  return sanitize(parts.filter(Boolean).join(' ')).slice(0, 4900)
+  return html.filter(Boolean).join('').slice(0, 4900)
 }
 
 interface Row {
@@ -164,14 +194,21 @@ async function waitTransform(importId: number): Promise<Record<string, unknown>>
 }
 
 const mode = process.argv[2] || 'all'
-const rows = await collectRows()
+let rows = await collectRows()
+// Tryb pilotażowy: `one:<PN>` — wysyła tylko jedną kartę (test renderowania HTML itp.)
+if (mode.startsWith('one:')) {
+  const pn = mode.slice(4)
+  rows = rows.filter((r) => r.pn === pn)
+  if (!rows.length) throw new Error(`Brak wiersza dla PN ${pn}`)
+  console.log('PILOT — opis HTML:\n', rows[0].desc.slice(0, 1500))
+}
 const labels = rows.filter((r) => r.isLabel)
 const ribbons = rows.filter((r) => !r.isLabel)
 console.log(`Kandydaci: ${rows.length} unikalnych EAN (etykiety: ${labels.length}, taśmy: ${ribbons.length})`)
 
 const results: Record<string, unknown>[] = []
 for (const [kind, set] of [['labels', labels], ['ribbons', ribbons]] as const) {
-  if (mode !== 'all' && mode !== kind) continue
+  if (mode !== 'all' && mode !== kind && !mode.startsWith('one:')) continue
   if (!set.length) continue
   const csv = buildCsv(set, kind)
   writeFileSync(`/tmp/empik-p41-${kind}.csv`, csv)
