@@ -217,20 +217,17 @@ export default function MaterialsAdvisorWidget() {
                   {[
                     {
                       q: 'Dobierz taśmę do mojej drukarki',
-                      icon: (
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="8" /><circle cx="12" cy="12" r="3" /></svg>
-                      ),
+                      // Emoji 3D jak w projekcie Higgsfield #1 (rolka)
+                      icon: <span className="text-base leading-none">🧻</span>,
                     },
                     {
                       q: 'Szukam etykiet kurierskich',
-                      icon: (
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" /><path d="M8 9h8M8 13h8M8 17h5" /></svg>
-                      ),
+                      icon: <span className="text-base leading-none">🏷️</span>,
                     },
                     {
                       q: 'Jaka etykieta do mrożonek?',
                       icon: (
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9" /><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3" /><circle cx="12" cy="17" r="0.5" fill="currentColor" /></svg>
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9" /><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3" /><circle cx="12" cy="17" r="0.6" fill="currentColor" /></svg>
                       ),
                     },
                   ].map(({ q, icon }) => (
