@@ -37,7 +37,7 @@ function parseInline(text: string, keyBase = ''): React.ReactNode[] {
       nodes.push(<strong key={`${keyBase}b${k++}`}>{parseInline(m[1], `${keyBase}b${k}`)}</strong>)
     } else if (m[2] && m[3]) {
       nodes.push(
-        <a key={`${keyBase}a${k++}`} href={m[3]} className="text-emerald-700 hover:text-emerald-900 underline">{m[2]}</a>,
+        <a key={`${keyBase}a${k++}`} href={m[3]} className="text-primary-700 hover:text-primary-900 underline">{m[2]}</a>,
       )
     }
     last = regex.lastIndex
@@ -73,7 +73,8 @@ function CartButton({ item }: { item: CartPayload }) {
     openDrawer()
   }
   return (
-    <div className="mt-2 rounded-xl border border-slate-200 bg-white p-3">
+    <div className="mt-2 rounded-xl border border-slate-200 bg-white p-3 shadow-sm">
+      <div className="text-[11px] font-medium text-primary-600 uppercase tracking-wide mb-1">Propozycja dla Ciebie</div>
       <div className="text-sm font-medium text-gray-900 leading-snug">{item.name}</div>
       <div className="text-xs text-gray-500 mb-2">
         {item.priceNetto.toLocaleString('pl-PL', { minimumFractionDigits: 2 })} zł netto
@@ -167,15 +168,16 @@ export default function MaterialsAdvisorWidget() {
     <>
       {isOpen && (
         <div className="fixed bottom-20 right-4 z-50 w-[380px] max-w-[calc(100vw-2rem)] h-[560px] max-h-[calc(100vh-6rem)] bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col overflow-hidden max-[480px]:!w-full max-[480px]:!max-w-full max-[480px]:!h-full max-[480px]:!max-h-full max-[480px]:!bottom-0 max-[480px]:!right-0 max-[480px]:!rounded-none">
-          {/* Header */}
-          <div className="flex items-center justify-between px-4 py-3 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white flex-shrink-0">
+          {/* Header — brand blue (koncept #1, 2026-06-12) */}
+          <div className="flex items-center justify-between px-4 py-3 bg-gradient-to-r from-[#1B9DD9] to-primary-700 text-white flex-shrink-0">
             <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg>
+              <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center shadow-sm">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/takma-glob.png" alt="" className="w-6 h-6" />
               </div>
               <div>
                 <div className="font-semibold text-sm">Doradca materiałów</div>
-                <div className="text-[11px] text-emerald-100">Etykiety i taśmy</div>
+                <div className="text-[11px] text-blue-100">Etykiety i taśmy</div>
               </div>
             </div>
             <div className="flex items-center gap-1">
@@ -193,9 +195,27 @@ export default function MaterialsAdvisorWidget() {
           {/* Messages */}
           <div className="flex-1 overflow-y-auto px-3 py-4 space-y-2">
             {visible.length === 0 && !isLoading && (
-              <div className="flex justify-start mb-2">
-                <div className="max-w-[85%] rounded-2xl rounded-bl-md bg-gray-100 text-gray-900 px-4 py-2.5 text-sm leading-relaxed">{WELCOME}</div>
-              </div>
+              <>
+                <div className="flex justify-start mb-2">
+                  <div className="max-w-[85%] rounded-2xl rounded-bl-md bg-gray-100 text-gray-900 px-4 py-2.5 text-sm leading-relaxed">{WELCOME}</div>
+                </div>
+                {/* Chipy szybkiego startu — klient nie musi wymyślać pierwszego zdania */}
+                <div className="flex flex-col items-start gap-1.5 pl-1">
+                  {[
+                    'Dobierz taśmę do mojej drukarki',
+                    'Szukam etykiet kurierskich',
+                    'Jaka etykieta do mrożonek?',
+                  ].map((q) => (
+                    <button
+                      key={q}
+                      onClick={() => sendMessage({ text: q })}
+                      className="rounded-full border border-primary-200 bg-primary-50 px-3.5 py-1.5 text-[13px] font-medium text-primary-700 hover:bg-primary-100 hover:border-primary-300 transition-colors"
+                    >
+                      {q}
+                    </button>
+                  ))}
+                </div>
+              </>
             )}
 
             {visible.map(m => {
@@ -203,7 +223,7 @@ export default function MaterialsAdvisorWidget() {
               const carts = cartPayloads(m)
               return (
                 <div key={m.id} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-                  <div className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${m.role === 'user' ? 'bg-emerald-600 text-white rounded-br-md' : 'bg-gray-100 text-gray-900 rounded-bl-md'}`}>
+                  <div className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${m.role === 'user' ? 'bg-primary-600 text-white rounded-br-md' : 'bg-gray-100 text-gray-900 rounded-bl-md'}`}>
                     {text && <div>{renderText(text)}</div>}
                     {carts.map((c, i) => <CartButton key={i} item={c} />)}
                   </div>
@@ -226,14 +246,14 @@ export default function MaterialsAdvisorWidget() {
           </div>
 
           <div className="px-3 pb-1">
-            <a href="/kontakt" className="block text-center text-xs text-gray-500 hover:text-emerald-700 transition-colors py-1">Wolisz porozmawiać z człowiekiem? Napisz do nas</a>
+            <a href="/kontakt" className="block text-center text-xs text-gray-500 hover:text-primary-700 transition-colors py-1">Wolisz porozmawiać z człowiekiem? Napisz do nas</a>
           </div>
 
           <ChatInput input={input} disabled={isLoading} onInputChange={setInput} onSubmit={submit} />
         </div>
       )}
 
-      <button onClick={() => { setIsOpen(!isOpen); if (!isOpen) setHasNew(false) }} className="fixed bottom-4 right-4 z-50 w-14 h-14 rounded-full bg-emerald-600 text-white shadow-lg hover:bg-emerald-700 hover:shadow-xl transition-all flex items-center justify-center" aria-label={isOpen ? 'Zamknij doradcę' : 'Otwórz doradcę materiałów'}>
+      <button onClick={() => { setIsOpen(!isOpen); if (!isOpen) setHasNew(false) }} className="fixed bottom-4 right-4 z-50 w-14 h-14 rounded-full bg-gradient-to-br from-[#1B9DD9] to-primary-700 text-white shadow-lg shadow-primary-500/30 hover:shadow-xl hover:shadow-primary-500/40 hover:scale-105 transition-all flex items-center justify-center" aria-label={isOpen ? 'Zamknij doradcę' : 'Otwórz doradcę materiałów'}>
         {isOpen ? (
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6L6 18" /><path d="M6 6l12 12" /></svg>
         ) : (
