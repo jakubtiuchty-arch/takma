@@ -17,7 +17,9 @@ export default function LiveNow() {
     let alive = true
     const load = async () => {
       try {
-        const res = await fetch('/api/admin/analytics/realtime', { cache: 'no-store' })
+        // Endpoint pod /admin/* — cookie sesji admina ma path '/admin' i nie jest
+        // wysyłane na /api/*, stąd route obok strony (wzorzec jak /admin/empik/*).
+        const res = await fetch('/admin/analytics/realtime', { cache: 'no-store' })
         const d = await res.json()
         if (!alive) return
         if (!res.ok) { setError(d.error || `HTTP ${res.status}`); return }
