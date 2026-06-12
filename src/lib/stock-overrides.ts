@@ -21,7 +21,7 @@ export const PRELAUNCH_PNS = new Set<string>([
   '946450001', '946450002', '946450003',
 ])
 
-const PRELAUNCH_TEXT = 'Przedsprzedaż — wysyłka po premierze (ok. 2-4 tygodnie)'
+const PRELAUNCH_TEXT = 'Przedsprzedaż — dostawy w drodze do dystrybucji'
 
 interface StockLike {
   partNumber: string
@@ -37,14 +37,14 @@ interface StockLike {
 /** Nakłada korekty na pojedynczy wiersz stanu (mutuje i zwraca ten sam obiekt). */
 export function applyStockOverrides<T extends StockLike>(row: T): T {
   if (row.found && PRELAUNCH_PNS.has(row.partNumber.toUpperCase())) {
-    // Stan z API nie jest sprzedażowo dostępny — pokazujemy przedsprzedaż,
-    // ilości przenosimy do „w drodze", cena zostaje (jest prawdziwa).
-    const qty = (row.stockPL || 0) + (row.stockDE || 0) + (row.inDelivery || 0) || row.totalStock || 0
+    // Stan z API nie jest sprzedażowo dostępny. Zasada sklepu (2026-06-12):
+    // binarnie — brak stanu = Niedostępny; informacja o przedsprzedaży tylko
+    // w deliveryText. Cena zostaje (jest prawdziwa).
     row.stockPL = 0
     row.stockDE = 0
-    row.inDelivery = qty
+    row.inDelivery = 0
     row.totalStock = 0
-    row.availability = 'on-order'
+    row.availability = 'unavailable'
     row.deliveryText = PRELAUNCH_TEXT
   }
   return row

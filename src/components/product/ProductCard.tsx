@@ -56,18 +56,14 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   const anyFound = !stockLoading && partNumbers.length > 0 && stockData.size > 0 &&
     partNumbers.some(pn => stockData.get(pn)?.found)
 
-  // 'available' gdy cokolwiek na stanie; 'on-order' gdy brak stanu, ale któryś
-  // wariant jest zamawialny (np. przedsprzedaż / dostawa w drodze — patrz
-  // lib/stock-overrides); 'unavailable' dopiero gdy nic z powyższych.
+  // Zasada sklepu (2026-06-12): binarnie — jest na stanie → Dostępny,
+  // brak stanu → Niedostępny. Bez stanów pośrednich na badge'ach.
   const liveStatus = anyFound ? (() => {
-    let anyOnOrder = false
     for (const pn of partNumbers) {
       const stock = stockData.get(pn)
-      if (!stock?.found) continue
-      if (stock.totalStock > 0) return 'available' as const
-      if (stock.availability === 'on-order' || stock.inDelivery > 0) anyOnOrder = true
+      if (stock?.found && stock.totalStock > 0) return 'available' as const
     }
-    return anyOnOrder ? ('on-order' as const) : ('unavailable' as const)
+    return 'unavailable' as const
   })() : null
 
   // Statyczna cena: product.priceFrom lub najtańszy wariant

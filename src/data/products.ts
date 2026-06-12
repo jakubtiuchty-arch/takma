@@ -24544,7 +24544,7 @@ Wytrzymałość klasy przemysłowej: IP65 i IP67, upadki z 2,4 m na beton (MIL-S
       'Datalogic Skorpio X40 i X45 w stacjach dokujących na hali magazynowej',
     ],
     tags: ['magazyn', 'retail', 'produkcja'],
-    availability: 'on-order',
+    availability: 'unavailable',
     isNew: true,
     isBestseller: false,
     specifications: [
@@ -24578,19 +24578,19 @@ Wytrzymałość klasy przemysłowej: IP65 i IP67, upadki z 2,4 m na beton (MIL-S
     },
     variants: [
       // --- Standard Range, obudowa kompaktowa ---
-      { partNumber: '946400008', name: 'SR, 29 kl., kompakt', priceFrom: 5225.20, availability: 'on-order', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '29 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946400009', name: 'SR, 39 kl., kompakt', priceFrom: 5225.20, availability: 'on-order', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '39 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946400007', name: 'SR, 48 kl., kompakt', priceFrom: 5225.20, availability: 'on-order', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '48 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400008', name: 'SR, 29 kl., kompakt', priceFrom: 5225.20, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '29 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400009', name: 'SR, 39 kl., kompakt', priceFrom: 5225.20, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '39 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400007', name: 'SR, 48 kl., kompakt', priceFrom: 5225.20, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '48 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
       // --- Standard Range, uchwyt pistoletowy ---
-      { partNumber: '946400002', name: 'SR, 29 kl., uchwyt pistoletowy', priceFrom: 5532.56, availability: 'on-order', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '29 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946400003', name: 'SR, 39 kl., uchwyt pistoletowy', priceFrom: 5532.56, availability: 'on-order', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '39 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946400001', name: 'SR, 48 kl., uchwyt pistoletowy', priceFrom: 5532.56, availability: 'on-order', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946400011', name: 'SR, 48 kl., uchwyt pistoletowy, ładowanie bezprzewodowe', priceFrom: 5532.56, availability: 'on-order', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'bezprzewodowe (Qi)' } },
+      { partNumber: '946400002', name: 'SR, 29 kl., uchwyt pistoletowy', priceFrom: 5532.56, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '29 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400003', name: 'SR, 39 kl., uchwyt pistoletowy', priceFrom: 5532.56, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '39 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400001', name: 'SR, 48 kl., uchwyt pistoletowy', priceFrom: 5532.56, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400011', name: 'SR, 48 kl., uchwyt pistoletowy, ładowanie bezprzewodowe', priceFrom: 5532.56, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'bezprzewodowe (Qi)' } },
       // --- Extended Range (do 10 m) ---
-      { partNumber: '946400010', name: 'LR, 29 kl., kompakt', priceFrom: 5711.88, availability: 'on-order', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '29 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946400005', name: 'LR, 29 kl., uchwyt pistoletowy', priceFrom: 6019.24, availability: 'on-order', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '29 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946400006', name: 'LR, 39 kl., uchwyt pistoletowy', priceFrom: 6019.24, availability: 'on-order', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '39 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946400004', name: 'LR, 48 kl., uchwyt pistoletowy', priceFrom: 6019.24, availability: 'on-order', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400010', name: 'LR, 29 kl., kompakt', priceFrom: 5711.88, availability: 'unavailable', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '29 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400005', name: 'LR, 29 kl., uchwyt pistoletowy', priceFrom: 6019.24, availability: 'unavailable', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '29 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400006', name: 'LR, 39 kl., uchwyt pistoletowy', priceFrom: 6019.24, availability: 'unavailable', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '39 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400004', name: 'LR, 48 kl., uchwyt pistoletowy', priceFrom: 6019.24, availability: 'unavailable', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
     ],
     faq: [
       { question: 'Ile kosztuje Datalogic Skorpio X40?', answer: 'Ceny Datalogic Skorpio X40 zaczynają się od 5 225 zł netto za wariant Standard Range w obudowie kompaktowej (946400007/8/9). Wersje z uchwytem pistoletowym: od 5 533 zł. Extended Range (odczyt do 10 m): od 5 712 zł w obudowie kompaktowej i od 6 019 zł z uchwytem. Ceny przy wariantach aktualizujemy na bieżąco ze stanów dystrybucyjnych. Przy wdrożeniach flotowych (5+ sztuk) przygotowujemy wyceny projektowe — zapytaj o ofertę.' },
@@ -24647,7 +24647,7 @@ Stacje dokujące i akcesoria Skorpio X5 pasują bez zmian — a X40 i X45 dziel�
       'Datalogic Skorpio X40 i X45 w stacjach dokujących na hali magazynowej',
     ],
     tags: ['logistyka', 'outdoor'],
-    availability: 'on-order',
+    availability: 'unavailable',
     isNew: true,
     isBestseller: false,
     specifications: [
@@ -24676,9 +24676,9 @@ Stacje dokujące i akcesoria Skorpio X5 pasują bez zmian — a X40 i X45 dziel�
       'Klawiatura': '29 klawiszy — numeryczna, do szybkiego wpisywania ilości.\n\n39 klawiszy — funkcyjno-numeryczna z F1–F12, najpopularniejsza w WMS i emulacji terminala.\n\n48 klawiszy — alfanumeryczna A–Z, gdy operator wpisuje też tekst.',
     },
     variants: [
-      { partNumber: '946450002', name: '5G, 29 kl., uchwyt pistoletowy', priceFrom: 6070.47, availability: 'on-order', attributes: { 'Klawiatura': '29 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Łączność': '5G + Wi-Fi 6E' } },
-      { partNumber: '946450003', name: '5G, 39 kl., uchwyt pistoletowy', priceFrom: 6070.47, availability: 'on-order', attributes: { 'Klawiatura': '39 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Łączność': '5G + Wi-Fi 6E' } },
-      { partNumber: '946450001', name: '5G, 48 kl., uchwyt pistoletowy', priceFrom: 6070.47, availability: 'on-order', attributes: { 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Łączność': '5G + Wi-Fi 6E' } },
+      { partNumber: '946450002', name: '5G, 29 kl., uchwyt pistoletowy', priceFrom: 6070.47, availability: 'unavailable', attributes: { 'Klawiatura': '29 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Łączność': '5G + Wi-Fi 6E' } },
+      { partNumber: '946450003', name: '5G, 39 kl., uchwyt pistoletowy', priceFrom: 6070.47, availability: 'unavailable', attributes: { 'Klawiatura': '39 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Łączność': '5G + Wi-Fi 6E' } },
+      { partNumber: '946450001', name: '5G, 48 kl., uchwyt pistoletowy', priceFrom: 6070.47, availability: 'unavailable', attributes: { 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Łączność': '5G + Wi-Fi 6E' } },
     ],
     faq: [
       { question: 'Ile kosztuje Datalogic Skorpio X45?', answer: 'Ceny Datalogic Skorpio X45 zaczynają się od 6 070 zł netto — wszystkie trzy warianty premierowe (klawiatura 29, 39 lub 48 klawiszy, uchwyt pistoletowy, 5G) mają tę samą cenę. Dopłata za 5G i GPS względem Skorpio X40 w analogicznej konfiguracji to około 540 zł netto. Ceny aktualizujemy na bieżąco ze stanów dystrybucyjnych; przy flotach 5+ sztuk przygotowujemy wyceny projektowe.' },
