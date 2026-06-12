@@ -19,6 +19,13 @@ export const PRELAUNCH_PNS = new Set<string>([
   '946400011',
   // Datalogic Skorpio X45 (5G) — premiera razem z X40
   '946450001', '946450002', '946450003',
+  // Datalogic Falcon X60 — premiera (Ingram: 0 + dostawy w drodze)
+  '946600001', '946600002', '946600003', '946600004', '946600005',
+  '946600006', '946600007', '946600008', '946600009', '946600010',
+  '946600011', '946600012', '946600013', '946600014',
+  // Datalogic Falcon X65 (5G) — premiera razem z X60
+  '946650001', '946650002', '946650003', '946650004', '946650005',
+  '946650006',
 ])
 
 const PRELAUNCH_TEXT = 'Przedsprzedaż — dostawy w drodze do dystrybucji'
