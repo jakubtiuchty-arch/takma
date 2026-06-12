@@ -17,6 +17,8 @@ export const PRELAUNCH_PNS = new Set<string>([
   '946400001', '946400002', '946400003', '946400004', '946400005',
   '946400006', '946400007', '946400008', '946400009', '946400010',
   '946400011',
+  // Datalogic Skorpio X45 (5G) — premiera razem z X40
+  '946450001', '946450002', '946450003',
 ])
 
 const PRELAUNCH_TEXT = 'Przedsprzedaż — wysyłka po premierze (ok. 2-4 tygodnie)'
