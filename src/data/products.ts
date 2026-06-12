@@ -24517,8 +24517,8 @@ Koszt posiadania (TCO): pełna kompatybilność wsteczna z akcesoriami MC9300 �
     id: 'datalogic-skorpio-x40',
     slug: 'datalogic-skorpio-x40',
     name: 'Datalogic Skorpio X40',
-    seoTitle: 'Datalogic Skorpio X40 — terminal mobilny / kolektor danych | od 4 542 zł',
-    seoDescription: 'Datalogic Skorpio X40 — nowy kolektor danych do magazynu, retail i produkcji. Następca Skorpio X5: Wi-Fi 6E, Android 15→19, Green Spot, imager do 10 m, klawiatury 29/39/48, ładowanie bezprzewodowe. Od 4 542 zł netto.',
+    seoTitle: 'Datalogic Skorpio X40 — terminal mobilny / kolektor danych | od 5 225 zł',
+    seoDescription: 'Datalogic Skorpio X40 — nowy kolektor danych do magazynu, retail i produkcji. Następca Skorpio X5: Wi-Fi 6E, Android 15→19, Green Spot, imager do 10 m, klawiatury 29/39/48, ładowanie bezprzewodowe. Od 5 225 zł netto, dostawa 2-3 dni.',
     shortDescription: 'Datalogic Skorpio X40 — następca Skorpio X5: Wi-Fi 6E, Android 15 (do 19), Green Spot, 2D imager SR/LR do 10 m, 3 klawiatury, odpinany uchwyt pistoletowy, ładowanie bezprzewodowe Qi',
     description: `Dla kogo? Datalogic Skorpio X40 to terminal mobilny z fizyczną klawiaturą zaprojektowany do intensywnego skanowania w handlu detalicznym, lekkim magazynie i produkcji — inwentaryzacja i uzupełnianie półek, kompletacja zamówień e-commerce, przyjęcia towaru, kontrola cen, prace na wózkach i przy linii produkcyjnej. Następca popularnego Skorpio X5 — z pełną kompatybilnością z jego stacjami dokującymi i akcesoriami, więc wymiana floty nie wymaga wymiany infrastruktury.
 
@@ -24532,7 +24532,7 @@ Wytrzymałość klasy przemysłowej: IP65 i IP67, upadki z 2,4 m na beton (MIL-S
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'datalogic',
-    priceFrom: 4542.24,
+    priceFrom: 5225.20,
     images: [
       '/images/products/datalogic-skorpio-x40_1.png',
       '/images/products/datalogic-skorpio-x40_2.png',
@@ -24578,22 +24578,22 @@ Wytrzymałość klasy przemysłowej: IP65 i IP67, upadki z 2,4 m na beton (MIL-S
     },
     variants: [
       // --- Standard Range, obudowa kompaktowa ---
-      { partNumber: '946400008', name: 'SR, 29 kl., kompakt', priceFrom: 4542.24, availability: 'on-order', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '29 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946400009', name: 'SR, 39 kl., kompakt', priceFrom: 4542.24, availability: 'on-order', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '39 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946400007', name: 'SR, 48 kl., kompakt', priceFrom: 4542.24, availability: 'on-order', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '48 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400008', name: 'SR, 29 kl., kompakt', priceFrom: 5225.20, availability: 'available', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '29 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400009', name: 'SR, 39 kl., kompakt', priceFrom: 5225.20, availability: 'available', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '39 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400007', name: 'SR, 48 kl., kompakt', priceFrom: 5225.20, availability: 'available', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '48 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
       // --- Standard Range, uchwyt pistoletowy ---
-      { partNumber: '946400002', name: 'SR, 29 kl., uchwyt pistoletowy', priceFrom: 4809.42, availability: 'on-order', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '29 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946400003', name: 'SR, 39 kl., uchwyt pistoletowy', priceFrom: 4809.42, availability: 'on-order', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '39 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946400001', name: 'SR, 48 kl., uchwyt pistoletowy', priceFrom: 4809.42, availability: 'on-order', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946400011', name: 'SR, 48 kl., uchwyt pistoletowy, ładowanie bezprzewodowe', priceFrom: 4809.42, availability: 'on-order', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'bezprzewodowe (Qi)' } },
+      { partNumber: '946400002', name: 'SR, 29 kl., uchwyt pistoletowy', priceFrom: 5532.56, availability: 'available', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '29 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400003', name: 'SR, 39 kl., uchwyt pistoletowy', priceFrom: 5532.56, availability: 'available', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '39 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400001', name: 'SR, 48 kl., uchwyt pistoletowy', priceFrom: 5532.56, availability: 'available', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400011', name: 'SR, 48 kl., uchwyt pistoletowy, ładowanie bezprzewodowe', priceFrom: 5532.56, availability: 'on-order', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'bezprzewodowe (Qi)' } },
       // --- Extended Range (do 10 m) ---
-      { partNumber: '946400010', name: 'LR, 29 kl., kompakt', priceFrom: 4965.26, availability: 'on-order', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '29 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946400005', name: 'LR, 29 kl., uchwyt pistoletowy', priceFrom: 5232.49, availability: 'on-order', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '29 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946400006', name: 'LR, 39 kl., uchwyt pistoletowy', priceFrom: 5232.49, availability: 'on-order', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '39 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946400004', name: 'LR, 48 kl., uchwyt pistoletowy', priceFrom: 5232.49, availability: 'on-order', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400010', name: 'LR, 29 kl., kompakt', priceFrom: 5711.88, availability: 'on-order', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '29 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400005', name: 'LR, 29 kl., uchwyt pistoletowy', priceFrom: 6019.24, availability: 'available', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '29 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400006', name: 'LR, 39 kl., uchwyt pistoletowy', priceFrom: 6019.24, availability: 'available', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '39 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400004', name: 'LR, 48 kl., uchwyt pistoletowy', priceFrom: 6019.24, availability: 'available', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
     ],
     faq: [
-      { question: 'Ile kosztuje Datalogic Skorpio X40?', answer: 'Ceny Datalogic Skorpio X40 zaczynają się od 4 542 zł netto za wariant Standard Range w obudowie kompaktowej (946400007/8/9). Wersje z uchwytem pistoletowym: od 4 809 zł. Extended Range (odczyt do 10 m): od 4 965 zł w obudowie kompaktowej i od 5 232 zł z uchwytem. Przy wdrożeniach flotowych (5+ sztuk) przygotowujemy wyceny projektowe.' },
+      { question: 'Ile kosztuje Datalogic Skorpio X40?', answer: 'Ceny Datalogic Skorpio X40 zaczynają się od 5 225 zł netto za wariant Standard Range w obudowie kompaktowej (946400007/8/9). Wersje z uchwytem pistoletowym: od 5 533 zł. Extended Range (odczyt do 10 m): od 5 712 zł w obudowie kompaktowej i od 6 019 zł z uchwytem. Ceny przy wariantach aktualizujemy na bieżąco ze stanów dystrybucyjnych. Przy wdrożeniach flotowych (5+ sztuk) przygotowujemy wyceny projektowe — zapytaj o ofertę.' },
       { question: 'Czym Skorpio X40 różni się od Skorpio X5?', answer: 'Skorpio X40 to następca Skorpio X5: nowszy procesor Qualcomm 4490 (2,4 GHz), więcej pamięci (6/128 GB vs 4/64 GB), Wi-Fi 6/6E zamiast Wi-Fi 5, Bluetooth 5.3, Android 15 z aktualizacjami do Androida 19 (X5 kończy na Androidzie 13), ładowanie bezprzewodowe Qi oraz odpinany w terenie uchwyt pistoletowy. Stacje dokujące i akcesoria Skorpio X5 pasują do X40 — migracja floty nie wymaga wymiany infrastruktury.' },
       { question: 'Czym różni się Skorpio X40 od X45?', answer: 'Skorpio X45 to ta sama konstrukcja z dodaną łącznością komórkową 5G/LTE (nano SIM + eSIM), GPS (GPS/Galileo/GLONASS/BeiDou, dual band L1+L5) i barometrem. X40 łączy się wyłącznie przez Wi-Fi 6/6E — wystarcza w magazynie i sklepie. X45 wybierz, gdy operatorzy pracują w terenie lub między obiektami. X45 dostępny u nas na zamówienie.' },
       { question: 'Jaki zasięg skanowania ma Skorpio X40?', answer: 'Wersja Standard Range (Halogen DE2121-DL) czyta kody 1D/2D z typowych dystansów roboczych — półki, paczki, palety na wprost. Wersja Extended Range (DE2121-ER) odczytuje kody nawet z 10 metrów — najwyższe poziomy regałów i magazyn wysokiego składowania. Obie wersje mają Green Spot: zielone potwierdzenie odczytu rzucane wprost na etykietę.' },
