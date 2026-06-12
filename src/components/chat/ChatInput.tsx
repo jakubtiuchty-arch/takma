@@ -7,9 +7,11 @@ interface ChatInputProps {
   disabled: boolean
   onInputChange: (value: string) => void
   onSubmit: (e: FormEvent<HTMLFormElement>) => void
+  /** Wariant „pigułka" (doradca materiałów, projekt 2026-06-12): pole na cieniu bez ramki, gradientowy send. */
+  pill?: boolean
 }
 
-export default function ChatInput({ input, disabled, onInputChange, onSubmit }: ChatInputProps) {
+export default function ChatInput({ input, disabled, onInputChange, onSubmit, pill }: ChatInputProps) {
   const textareaRef = useRef<HTMLTextAreaElement>(null)
 
   // Auto-resize textarea
@@ -32,7 +34,14 @@ export default function ChatInput({ input, disabled, onInputChange, onSubmit }: 
   }
 
   return (
-    <form onSubmit={onSubmit} className="flex items-end gap-2 p-3 border-t border-gray-200 bg-white">
+    <form
+      onSubmit={onSubmit}
+      className={
+        pill
+          ? 'flex items-end gap-2.5 px-4 pb-4 pt-1'
+          : 'flex items-end gap-2 p-3 border-t border-gray-200 bg-white'
+      }
+    >
       <textarea
         ref={textareaRef}
         value={input}
@@ -42,12 +51,20 @@ export default function ChatInput({ input, disabled, onInputChange, onSubmit }: 
         rows={1}
         maxLength={2000}
         disabled={disabled}
-        className="flex-1 resize-none rounded-xl border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:opacity-50 placeholder:text-gray-400"
+        className={
+          pill
+            ? 'flex-1 resize-none rounded-3xl bg-white px-4 py-3 text-sm shadow-[0_2px_10px_rgba(16,58,99,0.10)] border-0 focus:outline-none focus:ring-2 focus:ring-primary-400 disabled:opacity-50 placeholder:text-gray-400'
+            : 'flex-1 resize-none rounded-xl border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:opacity-50 placeholder:text-gray-400'
+        }
       />
       <button
         type="submit"
         disabled={!input.trim() || disabled}
-        className="flex-shrink-0 w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+        className={
+          pill
+            ? 'flex-shrink-0 w-11 h-11 rounded-full bg-gradient-to-b from-[#33B1EE] to-[#1377DB] text-white flex items-center justify-center shadow-[0_4px_12px_rgba(19,119,219,0.35)] hover:brightness-110 disabled:opacity-40 disabled:cursor-not-allowed transition-all'
+            : 'flex-shrink-0 w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors'
+        }
         aria-label="Wyślij wiadomość"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
