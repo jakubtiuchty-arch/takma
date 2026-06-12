@@ -24622,8 +24622,8 @@ Wytrzymałość klasy przemysłowej: IP65 i IP67, upadki z 2,4 m na beton (MIL-S
     id: 'datalogic-skorpio-x45',
     slug: 'datalogic-skorpio-x45',
     name: 'Datalogic Skorpio X45',
-    seoTitle: 'Datalogic Skorpio X45 — terminal 5G z GPS / kolektor danych | od 6 293 zł',
-    seoDescription: 'Datalogic Skorpio X45 — kolektor danych 5G z GPS do logistyki terenowej, transportu i pracy między obiektami. Skorpio X40 + moduł 5G/LTE, eSIM, GPS dual band L1+L5. Wi-Fi 6E, Green Spot, Android 15→19. Od 6 293 zł netto, przedsprzedaż.',
+    seoTitle: 'Datalogic Skorpio X45 — terminal 5G z GPS / kolektor danych | od 6 070 zł',
+    seoDescription: 'Datalogic Skorpio X45 — kolektor danych 5G z GPS do logistyki terenowej, transportu i pracy między obiektami. Skorpio X40 + moduł 5G/LTE, eSIM, GPS dual band L1+L5. Wi-Fi 6E, Green Spot, Android 15→19. Od 6 070 zł netto, przedsprzedaż.',
     shortDescription: 'Datalogic Skorpio X45 — wersja 5G terminala Skorpio X40: łączność komórkowa 5G/LTE (nano SIM + eSIM), GPS dual band L1+L5, barometr; reszta identyczna — Green Spot, Wi-Fi 6E, Android 15→19',
     description: `Dla kogo? Datalogic Skorpio X45 to wersja terminala [Skorpio X40](/produkt/datalogic-skorpio-x40) z łącznością komórkową 5G i nawigacją satelitarną — dla operacji wychodzących poza zasięg firmowego Wi-Fi: dostawy bezpośrednie do sklepów (DSD), praca kurierska i transportowa, inwentaryzacje w terenie i w obiektach klienta, serwis z potwierdzaniem dostaw, operacje między halami i placami. Tam, gdzie X40 kończy łączność na bramie magazynu, X45 jedzie dalej z operatorem.
 
@@ -24635,7 +24635,7 @@ Stacje dokujące i akcesoria Skorpio X5 pasują bez zmian — a X40 i X45 dziel�
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'datalogic',
-    priceFrom: 6292.52,
+    priceFrom: 6070.47,
     images: [
       '/images/products/datalogic-skorpio-x40_2.png',
       '/images/products/datalogic-skorpio-x40_3.png',
@@ -24674,12 +24674,12 @@ Stacje dokujące i akcesoria Skorpio X5 pasują bez zmian — a X40 i X45 dziel�
       'Klawiatura': '29 klawiszy — numeryczna, do szybkiego wpisywania ilości.\n\n39 klawiszy — funkcyjno-numeryczna z F1–F12, najpopularniejsza w WMS i emulacji terminala.\n\n48 klawiszy — alfanumeryczna A–Z, gdy operator wpisuje też tekst.',
     },
     variants: [
-      { partNumber: '946450002', name: '5G, 29 kl., uchwyt pistoletowy', priceFrom: 6292.52, availability: 'on-order', attributes: { 'Klawiatura': '29 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Łączność': '5G + Wi-Fi 6E' } },
-      { partNumber: '946450003', name: '5G, 39 kl., uchwyt pistoletowy', priceFrom: 6292.52, availability: 'on-order', attributes: { 'Klawiatura': '39 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Łączność': '5G + Wi-Fi 6E' } },
-      { partNumber: '946450001', name: '5G, 48 kl., uchwyt pistoletowy', priceFrom: 6292.52, availability: 'on-order', attributes: { 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Łączność': '5G + Wi-Fi 6E' } },
+      { partNumber: '946450002', name: '5G, 29 kl., uchwyt pistoletowy', priceFrom: 6070.47, availability: 'on-order', attributes: { 'Klawiatura': '29 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Łączność': '5G + Wi-Fi 6E' } },
+      { partNumber: '946450003', name: '5G, 39 kl., uchwyt pistoletowy', priceFrom: 6070.47, availability: 'on-order', attributes: { 'Klawiatura': '39 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Łączność': '5G + Wi-Fi 6E' } },
+      { partNumber: '946450001', name: '5G, 48 kl., uchwyt pistoletowy', priceFrom: 6070.47, availability: 'on-order', attributes: { 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Łączność': '5G + Wi-Fi 6E' } },
     ],
     faq: [
-      { question: 'Ile kosztuje Datalogic Skorpio X45?', answer: 'Ceny Datalogic Skorpio X45 zaczynają się od 6 293 zł netto — wszystkie trzy warianty premierowe (klawiatura 29, 39 lub 48 klawiszy, uchwyt pistoletowy, 5G) mają tę samą cenę. Dopłata za 5G i GPS względem Skorpio X40 w analogicznej konfiguracji to około 760 zł netto. Ceny aktualizujemy na bieżąco ze stanów dystrybucyjnych; przy flotach 5+ sztuk przygotowujemy wyceny projektowe.' },
+      { question: 'Ile kosztuje Datalogic Skorpio X45?', answer: 'Ceny Datalogic Skorpio X45 zaczynają się od 6 070 zł netto — wszystkie trzy warianty premierowe (klawiatura 29, 39 lub 48 klawiszy, uchwyt pistoletowy, 5G) mają tę samą cenę. Dopłata za 5G i GPS względem Skorpio X40 w analogicznej konfiguracji to około 540 zł netto. Ceny aktualizujemy na bieżąco ze stanów dystrybucyjnych; przy flotach 5+ sztuk przygotowujemy wyceny projektowe.' },
       { question: 'Czym Skorpio X45 różni się od Skorpio X40?', answer: 'X45 = X40 + łączność komórkowa i lokalizacja: moduł 5G NR/LTE-Advanced (także sieci prywatne CBRS), dual SIM (nano + eSIM), nawigacja GPS/Galileo/GLONASS/BeiDou z dwuzakresowym odbiornikiem L1+L5 oraz barometr do lokalizacji piętrowej. Cała reszta — obudowa, klawiatury, skaner z Green Spot, bateria, odporność, Android 15→19 — jest identyczna. X40 wybierz do pracy w zasięgu Wi-Fi, X45 gdy operator wychodzi w teren.' },
       { question: 'Czy Skorpio X45 ma eSIM?', answer: 'Tak — X45 ma dual SIM w układzie 1× nano SIM + 1× eSIM. Flotę z eSIM można aktywować i przełączać między operatorami zdalnie, bez fizycznego dostępu do urządzeń — przy kilkudziesięciu terminalach w terenie to realna oszczędność logistyki IT.' },
       { question: 'Jak dokładny jest GPS w Skorpio X45?', answer: 'X45 używa dwuzakresowego odbiornika GNSS (L1 + L5) z obsługą GPS, Galileo, GLONASS i BeiDou oraz A-GPS. Drugi zakres L5 znacząco poprawia dokładność w trudnych warunkach — gęsta zabudowa miejska, doki załadunkowe, parkingi wielopoziomowe. Dodatkowy barometr pozwala określić kondygnację (Z-axis) w budynkach wielopiętrowych.' },
