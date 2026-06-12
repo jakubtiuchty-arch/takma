@@ -194,6 +194,62 @@ export async function gaDashboard(rangeDays = 28): Promise<GaDashboard> {
   }
 }
 
+// --- Na żywo -----------------------------------------------------------------
+
+export interface GaRealtime {
+  activeUsers: number
+  /** Aktywni per minuta (ostatnie 30 min), od najstarszej */
+  byMinute: { minutesAgo: number; users: number }[]
+  /** Strony, na których ktoś jest TERAZ (tytuły, bez sufiksu „| TAKMA") */
+  pages: GaRow[]
+  /** Skąd przyszli DZISIAJ (sessionSourceMedium) — Realtime API nie udostępnia
+   *  wymiarów źródła, więc to intraday runReport (opóźnienie minut, nie sekund). */
+  sourcesToday: GaRow[]
+}
+
+export async function gaRealtime(): Promise<GaRealtime> {
+  const [total, byMin, pages, sources] = await Promise.all([
+    callApi('runRealtimeReport', { metrics: [{ name: 'activeUsers' }] }),
+    callApi('runRealtimeReport', { dimensions: [{ name: 'minutesAgo' }], metrics: [{ name: 'activeUsers' }] }),
+    callApi('runRealtimeReport', {
+      dimensions: [{ name: 'unifiedScreenName' }],
+      metrics: [{ name: 'activeUsers' }],
+      orderBys: [{ metric: { metricName: 'activeUsers' }, desc: true }],
+      limit: 12,
+    }),
+    callApi('runReport', {
+      dateRanges: [{ startDate: 'today', endDate: 'today' }],
+      dimensions: [{ name: 'sessionSourceMedium' }],
+      metrics: [{ name: 'sessions' }, { name: 'activeUsers' }],
+      orderBys: [{ metric: { metricName: 'sessions' }, desc: true }],
+      limit: 10,
+    }),
+  ])
+
+  const minutes = new Map<number, number>()
+  for (const r of byMin.rows || []) {
+    minutes.set(Number(r.dimensionValues?.[0]?.value), n(r.metricValues?.[0]?.value))
+  }
+  const byMinute = Array.from({ length: 30 }, (_, i) => {
+    const ago = 29 - i
+    return { minutesAgo: ago, users: minutes.get(ago) || 0 }
+  })
+
+  return {
+    activeUsers: n(total.rows?.[0]?.metricValues?.[0]?.value),
+    byMinute,
+    pages: rows(pages, (r) => ({
+      label: (r.dimensionValues?.[0]?.value || '').replace(/\s*\|\s*TAKMA\s*$/i, '').trim() || '(bez tytułu)',
+      value: n(r.metricValues?.[0]?.value),
+    })),
+    sourcesToday: rows(sources, (r) => ({
+      label: r.dimensionValues?.[0]?.value || '(not set)',
+      value: n(r.metricValues?.[0]?.value),
+      value2: n(r.metricValues?.[1]?.value),
+    })),
+  }
+}
+
 // --- Konwersje / leady -------------------------------------------------------
 
 /** Zdarzenia kontaktowe = lead (zgodnie z ga-events.ts na froncie). */

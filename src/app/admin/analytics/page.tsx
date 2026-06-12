@@ -2,6 +2,7 @@ import { prisma } from '@/lib/db'
 import { gaConfigured, gaDashboard, type GaRow } from '@/lib/ga'
 import { AnalyticsTabs, Card, fmt, fmtDuration, pct } from './_ui'
 import { Md } from './_markdown'
+import LiveNow from './LiveNow'
 import Link from 'next/link'
 
 export const dynamic = 'force-dynamic'
@@ -117,6 +118,9 @@ export default async function AnalyticsPage({ searchParams }: { searchParams: Pr
         </div>
       </div>
       <AnalyticsTabs active="przeglad" />
+
+      {/* Na żywo: kto jest teraz + skąd przyszli dzisiaj (poll co 30 s) */}
+      <LiveNow />
 
       {error && (
         <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-sm text-red-700 mb-6">
