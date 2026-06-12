@@ -24637,11 +24637,13 @@ Stacje dokujące i akcesoria Skorpio X5 pasują bez zmian — a X40 i X45 dziel�
     manufacturerId: 'datalogic',
     priceFrom: 6070.47,
     images: [
+      '/images/products/datalogic-skorpio-x40_1.png',
       '/images/products/datalogic-skorpio-x40_2.png',
       '/images/products/datalogic-skorpio-x40_3.png',
     ],
     imageDescriptions: [
-      'Datalogic Skorpio X45 z uchwytem pistoletowym — konstrukcja identyczna ze Skorpio X40, wewnątrz moduł 5G i GPS',
+      'Datalogic Skorpio X45 — widok z przodu; konstrukcja identyczna ze Skorpio X40, wewnątrz moduł 5G i GPS',
+      'Datalogic Skorpio X45 z odpinanym uchwytem pistoletowym',
       'Datalogic Skorpio X40 i X45 w stacjach dokujących na hali magazynowej',
     ],
     tags: ['logistyka', 'outdoor'],

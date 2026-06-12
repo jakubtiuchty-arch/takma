@@ -56,13 +56,19 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   const anyFound = !stockLoading && partNumbers.length > 0 && stockData.size > 0 &&
     partNumbers.some(pn => stockData.get(pn)?.found)
 
-  const isUnavailable = anyFound && (() => {
+  // 'available' gdy cokolwiek na stanie; 'on-order' gdy brak stanu, ale któryś
+  // wariant jest zamawialny (np. przedsprzedaż / dostawa w drodze — patrz
+  // lib/stock-overrides); 'unavailable' dopiero gdy nic z powyższych.
+  const liveStatus = anyFound ? (() => {
+    let anyOnOrder = false
     for (const pn of partNumbers) {
       const stock = stockData.get(pn)
-      if (stock?.found && stock.totalStock > 0) return false
+      if (!stock?.found) continue
+      if (stock.totalStock > 0) return 'available' as const
+      if (stock.availability === 'on-order' || stock.inDelivery > 0) anyOnOrder = true
     }
-    return true
-  })()
+    return anyOnOrder ? ('on-order' as const) : ('unavailable' as const)
+  })() : null
 
   // Statyczna cena: product.priceFrom lub najtańszy wariant
   const staticPrice = useMemo(() => {
@@ -85,9 +91,9 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
     return livePrices[0] ?? staticPrice
   }, [stockLoading, anyFound, partNumbers, stockData, staticPrice])
 
-  const liveAvailability = !anyFound
-    ? product.availability
-    : isUnavailable ? 'unavailable' as const : 'available' as const
+  const liveAvailability = liveStatus ?? product.availability
+  // 'on-order' jest zamawialne (przedsprzedaż) — dzwonek tylko dla twardego braku
+  const isUnavailable = liveAvailability === 'unavailable'
 
   const availabilityConfig = {
     available: { label: 'Dostępny', variant: 'success' as const },
