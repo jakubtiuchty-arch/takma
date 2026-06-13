@@ -1,0 +1,71 @@
+{
+  "product": "Zebra MC3400",
+  "slug": "zebra-mc3400",
+  "url": "https://www.takma.com.pl/produkt/zebra-mc3400",
+  "collected_at": "2026-06-13",
+  "sources": ["GSC (Ahrefs MCP, projekt 9640671)", "GA4 (service account)", "Ahrefs keywords-explorer/serp", "fetch konkurencji"],
+
+  "gsc": {
+    "period_days": 90,
+    "note": "Strona świeża — niski wolumen. Quick wins = pozycja 5-20, CTR 0% (poniżej średniej).",
+    "quick_wins": [
+      { "keyword": "zebra mc3400", "impressions": 55, "position": 14.9, "ctr": 0.0 },
+      { "keyword": "zebra terminale", "impressions": 24, "position": 19.7, "ctr": 0.0 },
+      { "keyword": "mc3400", "impressions": 2, "position": 10.5, "ctr": 0.0 },
+      { "keyword": "zebra mc 3400", "impressions": 2, "position": 8.0, "ctr": 0.0 }
+    ]
+  },
+
+  "ga4": {
+    "period_days": 90,
+    "pageviews": 79,
+    "active_users": 40,
+    "engagement_rate": 0.753,
+    "events": { "view_item": 79, "form_start": 2, "wyslanie_formularza": 0, "generate_lead": 0 },
+    "conversions": 0,
+    "note": "Engagement 75% (dobry), ale 0 leadów przy 2 form_start — ruch jest, konwersji brak. SEO ma dowieźć więcej dopasowanego ruchu."
+  },
+
+  "ahrefs": {
+    "country": "pl",
+    "keywords": [
+      { "keyword": "kolektor danych zebra", "volume_monthly": 128, "difficulty": 0, "traffic_potential": 200, "note": "główna fraza pieniężna" },
+      { "keyword": "zebra mc3300", "volume_monthly": 100, "difficulty": 0, "traffic_potential": 90, "note": "poprzednik — anchor 'następca MC3300'" },
+      { "keyword": "zebra mc3400", "volume_monthly": 60 },
+      { "keyword": "mc3400", "volume_monthly": 40 }
+    ],
+    "related_terms": [],
+    "serp_top10": [],
+    "serp_note": "Ahrefs nie zwraca jeszcze SERP/related dla 'zebra mc3400' — fraza niszowa/nowa. Greenfield."
+  },
+
+  "competitors": {
+    "method": "fetch + parser: editorial words = treść z <p>/<li>/<td>/<h2>/<h3> (bez chrome/koszyka)",
+    "data": [
+      { "name": "netselekt", "editorial_words": 4593, "json_ld_product": false, "json_ld_offer": true, "h2": 18, "h3": 62 },
+      { "name": "bcmarket", "editorial_words": 2370, "json_ld_product": true, "json_ld_offer": true, "h2": 0, "h3": 0 },
+      { "name": "elmatech", "editorial_words": 1114, "json_ld_product": false, "json_ld_offer": false, "h2": 30, "h3": 0 },
+      { "name": "agbit", "editorial_words": 733, "json_ld_product": false, "json_ld_offer": false, "h2": 1, "h3": 2 }
+    ],
+    "aspekt_skipped": "certyfikat SSL wygasły — pominięty (benchmark na 4 konkurentach)",
+    "median_editorial_words": 1742,
+    "schema_product_count": 1,
+    "note": "Tylko bcmarket ma JSON-LD Product. Reszta bez schematu — nasza przewaga już istnieje."
+  },
+
+  "audit_rules": {
+    "min_content_words": 1916,
+    "min_content_words_basis": "110% mediany editorial konkurencji (1742)",
+    "quick_win_phrases": ["zebra mc3400", "zebra terminale", "mc3400", "zebra mc 3400"],
+    "competitor_gap_phrases": ["zebra mc3400", "mc3400", "se58", "se4770", "android", "mc3300", "terminal mobilny", "wi-fi 6e", "zebra mc3300"],
+    "gap_phrases_basis": "frazy pokryte przez ≥2 konkurentów + 'zebra mc3300' (poprzednik, fraza 100/mies KD0)"
+  },
+
+  "baseline_takma": {
+    "source_editorial_words": 2053,
+    "json_ld_product": true,
+    "json_ld_offer": true,
+    "phrases_present": ["zebra mc3400", "kolektor danych zebra", "mc3400", "kolektor danych", "terminal mobilny", "se58", "se4770", "wi-fi 6e", "android", "mc3300"],
+    "phrases_missing": ["zebra mc3300", "zebra terminale"]
+  }
+}
