@@ -1,0 +1,48 @@
+{
+  "product": "Zebra ZD421D (termiczna / direct thermal)",
+  "slug": "zebra-zd421d",
+  "url": "https://www.takma.com.pl/produkt/zebra-zd421d",
+  "collected_at": "2026-06-14",
+  "role": "Właściciel intencji TERMICZNA BEZPOŚREDNIA (ZD421D). Problem: dziś kanibalizowana przez stronę ZD421T (która rankuje na 'zebra zd421d' poz. 22). Cel: ta strona ma OWNOWAĆ swój wariant.",
+
+  "gsc": {
+    "period_days": 90,
+    "note": "Strona prawie nie rankuje — 'zebra zd421d' (20 imp) trafia na stronę ZD421T (poz. 22,25). Trzeba odzyskać własną frazę treścią pod direct-thermal.",
+    "quick_wins": [
+      { "keyword": "zebra zd421d", "impressions": 20, "position": 22.25, "ctr": 0.0, "note": "obecnie łapie to strona T — odzyskać" },
+      { "keyword": "drukarka termiczna zebra zd421", "impressions": 3, "position": 21.0, "ctr": 0.0 },
+      { "keyword": "zebra 421d", "impressions": 1, "position": 11.0, "ctr": 0.0 }
+    ]
+  },
+
+  "ga4": { "period_days": 90, "pageviews": 155, "active_users": 104, "engagement_rate": 0.669, "form_start": 3, "conversions_form": 0 },
+
+  "ahrefs": {
+    "country": "pl",
+    "keywords": [
+      { "keyword": "zebra zd421d", "volume_monthly": 100, "difficulty": 0, "traffic_potential": 40, "note": "główna fraza tej strony" },
+      { "keyword": "drukarka zebra zd421", "volume_monthly": 100 },
+      { "keyword": "drukarka etykiet zebra", "volume_monthly": 208, "difficulty": 1, "traffic_potential": 300 },
+      { "keyword": "zebra zd420", "volume_monthly": 203, "note": "poprzednik ZD420d" }
+    ]
+  },
+
+  "competitors": {
+    "method": "fetch + parser editorial words (<p>/<li>/<td>/<h2>/<h3>)",
+    "data": [
+      { "name": "bcmarket-d", "editorial_words": 1957, "json_ld_product": true, "json_ld_offer": true },
+      { "name": "bcmarket-t", "editorial_words": 1861, "json_ld_product": true, "json_ld_offer": true },
+      { "name": "agbit", "editorial_words": 448, "json_ld_product": false, "json_ld_offer": false }
+    ],
+    "median_editorial_words": 1861
+  },
+
+  "anti_cannibalization": "Ta strona = TERMICZNA BEZPOŚREDNIA (direct thermal): etykiety wysyłkowe/kurierskie, paragony, bez taśmy, krótka żywotność. Wariant termotransferowy linkować do zebra-zd421t. Treść MA się różnić od T (inne zastosowania, inna intencja).",
+
+  "audit_rules": {
+    "min_content_words": 2047,
+    "min_content_words_basis": "110% mediany editorial konkurencji (1861)",
+    "quick_win_phrases": ["zebra zd421d", "zd421d", "drukarka termiczna zebra zd421", "drukarka etykiet zebra zd421d"],
+    "competitor_gap_phrases": ["zebra zd421", "zebra zd421d", "zd421", "termiczna", "drukarka termiczna", "203 dpi", "300 dpi", "zd420", "ethernet", "bluetooth", "drukarka etykiet"]
+  }
+}

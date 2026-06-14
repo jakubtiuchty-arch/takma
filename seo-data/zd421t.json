@@ -1,0 +1,55 @@
+{
+  "product": "Zebra ZD421T (termotransferowa)",
+  "slug": "zebra-zd421t",
+  "url": "https://www.takma.com.pl/produkt/zebra-zd421t",
+  "collected_at": "2026-06-14",
+  "role": "Strona-parasol dla 'zebra zd421' + właściciel intencji TERMOTRANSFER (ZD421T). Wyższy wolumen wariantu (337 vs 100).",
+
+  "gsc": {
+    "period_days": 90,
+    "note": "Ta strona łapie ~80% ruchu ZD421 (609 odsłon GA4). Quick wins = poz. 5-20, CTR poniżej średniej.",
+    "quick_wins": [
+      { "keyword": "zebra zd421t", "impressions": 102, "position": 12.1, "ctr": 0.98 },
+      { "keyword": "zd421t", "impressions": 52, "position": 9.0, "ctr": 0.0 },
+      { "keyword": "zebra zd421", "impressions": 26, "position": 15.8, "ctr": 15.4, "note": "parasol — ta strona ma go bronić" },
+      { "keyword": "zebra zd421 cena", "impressions": 17, "position": 7.9, "ctr": 5.9 },
+      { "keyword": "drukarka etykiet zebra zd421t", "impressions": 17, "position": 11.2, "ctr": 0.0 },
+      { "keyword": "zebra zd421t 300 dpi", "impressions": 7, "position": 12.4, "ctr": 0.0 },
+      { "keyword": "zebra zd421t ethernet", "impressions": 5, "position": 10.4, "ctr": 0.0 },
+      { "keyword": "drukarka zebra zd421t", "impressions": 5, "position": 11.2, "ctr": 0.0 }
+    ]
+  },
+
+  "ga4": { "period_days": 90, "pageviews": 609, "form_start": 12, "add_to_cart": 8, "conversions_form": 0, "note": "Najmocniejsza strona z rodziny — ruch jest, dosprzedaż słaba." },
+
+  "ahrefs": {
+    "country": "pl",
+    "keywords": [
+      { "keyword": "zebra zd421", "volume_monthly": 814, "difficulty": 0, "traffic_potential": 150, "note": "parasol — ta strona główny właściciel" },
+      { "keyword": "zebra zd421t", "volume_monthly": 337, "difficulty": 0, "traffic_potential": 250 },
+      { "keyword": "zd421", "volume_monthly": 252, "difficulty": 0, "traffic_potential": 150 },
+      { "keyword": "drukarka etykiet zebra", "volume_monthly": 208, "difficulty": 1, "traffic_potential": 300 },
+      { "keyword": "drukarka zebra zd421", "volume_monthly": 100 }
+    ]
+  },
+
+  "competitors": {
+    "method": "fetch + parser editorial words (<p>/<li>/<td>/<h2>/<h3>)",
+    "data": [
+      { "name": "bcmarket-t", "editorial_words": 1861, "json_ld_product": true, "json_ld_offer": true },
+      { "name": "bcmarket-d", "editorial_words": 1957, "json_ld_product": true, "json_ld_offer": true },
+      { "name": "agbit", "editorial_words": 448, "json_ld_product": false, "json_ld_offer": false }
+    ],
+    "elmatech_skipped": "fetch zwrócił 0 słów (blokada/JS) — wykluczony",
+    "median_editorial_words": 1861
+  },
+
+  "anti_cannibalization": "Ta strona = TERMOTRANSFER (taśmy, trwałe etykiety) + parasol 'zebra zd421'. Wariant termiczny linkować do zebra-zd421d. NIE dublować treści D.",
+
+  "audit_rules": {
+    "min_content_words": 2047,
+    "min_content_words_basis": "110% mediany editorial konkurencji (1861)",
+    "quick_win_phrases": ["zebra zd421t", "zd421t", "zebra zd421", "zebra zd421 cena", "drukarka etykiet zebra zd421t", "zebra zd421t 300 dpi", "zebra zd421t ethernet", "drukarka zebra zd421t"],
+    "competitor_gap_phrases": ["zebra zd421", "zebra zd421t", "zd421", "termotransfer", "203 dpi", "300 dpi", "zd420", "ethernet", "bluetooth", "drukarka etykiet"]
+  }
+}
