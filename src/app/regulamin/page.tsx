@@ -542,7 +542,8 @@ export default function RegulaminPage() {
                 <li>Zwrot następuje przy użyciu tych samych metod płatności.</li>
                 <li>Sprzedawca może wstrzymać się ze zwrotem do chwili otrzymania Towaru.</li>
                 <li>Quasi-konsument odsyła Towar w ciągu <strong>14 dni</strong> od dnia
-                  odstąpienia. Koszty zwrotu ponosi Kupujący.</li>
+                  odstąpienia na adres do zwrotu: <strong>TAKMA Tadeusz Tiuchty,
+                  ul. Poświęcka 1a, 51-128 Wrocław</strong>. Koszty zwrotu ponosi Kupujący.</li>
                 <li>Quasi-konsument odpowiada za zmniejszenie wartości Towaru wynikające
                   z korzystania z niego ponad miarę konieczną do stwierdzenia jego charakteru.</li>
               </ul>

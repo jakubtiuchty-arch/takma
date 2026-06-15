@@ -220,6 +220,33 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
+
+          {/* Dane rejestrowe sprzedawcy */}
+          <div className="mt-4 lg:mt-6 bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <div>
+                <p className="text-sm text-gray-500 mb-1">Dane firmy (sprzedawca)</p>
+                <p className="text-base font-bold text-gray-900">TAKMA Tadeusz Tiuchty</p>
+                <p className="text-sm text-gray-600 mt-0.5">ul. Poświęcka 1a, 51-128 Wrocław</p>
+                <p className="text-sm text-gray-600 mt-1">NIP: 915-100-43-77</p>
+                <p className="text-sm text-gray-600">REGON: 932677161</p>
+              </div>
+              <div>
+                <p className="text-sm text-gray-500 mb-1">Adres do zwrotu towarów</p>
+                <p className="text-base font-semibold text-gray-900">TAKMA Tadeusz Tiuchty</p>
+                <p className="text-sm text-gray-600 mt-0.5">ul. Poświęcka 1a, 51-128 Wrocław</p>
+                <p className="text-xs text-gray-400 mt-1">Zwroty i odstąpienie od umowy — szczegóły w{' '}
+                  <Link href="/regulamin" className="text-primary-600 hover:underline">regulaminie</Link>.
+                </p>
+              </div>
+              <div>
+                <p className="text-sm text-gray-500 mb-1">Kontakt w sprawie zamówień</p>
+                <p className="text-base font-semibold text-gray-900">takma@takma.com.pl</p>
+                <p className="text-sm text-gray-600 mt-0.5">+48 607 819 688</p>
+                <p className="text-xs text-gray-400 mt-1">Pon-Pt: 7:30 - 15:30</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

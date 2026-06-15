@@ -42,6 +42,7 @@ interface CheckoutFormData {
   notes: string
   paymentMethod: PaymentMethod
   consent: boolean
+  acceptTerms: boolean
 }
 
 interface FormErrors {
@@ -58,6 +59,7 @@ interface FormErrors {
   shippingPostalCode?: string
   shippingCity?: string
   consent?: string
+  acceptTerms?: string
 }
 
 // ── Stale ────────────────────────────────────────────────────────
@@ -169,6 +171,7 @@ export default function CheckoutPage() {
     notes: '',
     paymentMethod: 'online',
     consent: false,
+    acceptTerms: false,
   })
 
   const [errors, setErrors] = useState<FormErrors>({})
@@ -343,6 +346,10 @@ export default function CheckoutPage() {
 
     if (!formData.consent) {
       newErrors.consent = 'Zgoda jest wymagana do złożenia zamówienia'
+    }
+
+    if (!formData.acceptTerms) {
+      newErrors.acceptTerms = 'Akceptacja regulaminu jest wymagana do złożenia zamówienia'
     }
 
     setErrors(newErrors)
@@ -926,6 +933,12 @@ export default function CheckoutPage() {
                   onChange={(e) => { setFormData((prev) => ({ ...prev, consent: e.target.checked })); if (errors.consent) { setErrors((prev) => ({ ...prev, consent: undefined })) } }}
                   error={errors.consent}
                 />
+                <Checkbox
+                  label={<span className="text-sm text-gray-600">Zapoznałem się i akceptuję <Link href="/regulamin" target="_blank" className="text-primary-600 hover:underline">Regulamin</Link> sklepu.</span>}
+                  checked={formData.acceptTerms}
+                  onChange={(e) => { setFormData((prev) => ({ ...prev, acceptTerms: e.target.checked })); if (errors.acceptTerms) { setErrors((prev) => ({ ...prev, acceptTerms: undefined })) } }}
+                  error={errors.acceptTerms}
+                />
                 <Button
                   fullWidth
                   size="lg"
@@ -1043,6 +1056,12 @@ export default function CheckoutPage() {
                 checked={formData.consent}
                 onChange={(e) => { setFormData((prev) => ({ ...prev, consent: e.target.checked })); if (errors.consent) { setErrors((prev) => ({ ...prev, consent: undefined })) } }}
                 error={errors.consent}
+              />
+              <Checkbox
+                label={<span className="text-sm text-gray-600">Zapoznałem się i akceptuję <Link href="/regulamin" target="_blank" className="text-primary-600 hover:underline">Regulamin</Link> sklepu.</span>}
+                checked={formData.acceptTerms}
+                onChange={(e) => { setFormData((prev) => ({ ...prev, acceptTerms: e.target.checked })); if (errors.acceptTerms) { setErrors((prev) => ({ ...prev, acceptTerms: undefined })) } }}
+                error={errors.acceptTerms}
               />
               {submitError && (
                 <div className="bg-red-50 border border-red-200 rounded-lg p-3 text-sm text-red-700">
