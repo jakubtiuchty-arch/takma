@@ -219,8 +219,7 @@ export default function Hero() {
         >
           {slide.type === 'info' ? (
             <>
-              <div className="inline-flex items-center gap-2 px-3 py-1 md:px-4 md:py-1.5 rounded-full bg-white/[0.06] border border-white/[0.08] text-xs md:text-sm text-[#A8F000] font-medium mb-3 md:mb-5">
-                <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#A8F000]" />
+              <div className="inline-flex items-center px-3 py-1 md:px-4 md:py-1.5 rounded-full bg-white/[0.06] border border-white/[0.08] text-xs md:text-sm text-[#A8F000] font-medium mb-3 md:mb-5">
                 Od 2001 roku
               </div>
 
