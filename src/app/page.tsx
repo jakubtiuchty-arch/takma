@@ -10,6 +10,7 @@ import { ProductCard } from '@/components/product'
 import { getBestsellers, getNewProducts } from '@/data/products'
 import { guides, guideCategoryLabels } from '@/data/guides'
 import Hero from '@/components/home/Hero'
+import { FeatureIcon } from '@/components/home/FeatureIcons'
 
 /* ── SEO Metadata ── */
 export const metadata: Metadata = {
@@ -326,32 +327,32 @@ export default function HomePage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 mb-8 lg:mb-12">
             {[
               {
-                image: '/images/ikony/25_lat.jpeg',
+                variant: 'medal' as const,
                 title: '25 lat doświadczenia',
                 desc: 'Tysiące zrealizowanych projektów i zadowolonych klientów w całej Polsce',
               },
               {
-                image: '/images/ikony/Szybka_dostawa.jpeg',
+                variant: 'delivery' as const,
                 title: 'Szybka dostawa',
                 desc: 'Wysyłka 24–48h — większość produktów dostępna od ręki z magazynu',
               },
               {
-                image: '/images/ikony/Autoryzowany.jpeg',
+                variant: 'service' as const,
                 title: 'Autoryzowany serwis',
                 desc: 'Naprawy gwarancyjne i pogwarancyjne urządzeń Zebra, Honeywell, Datalogic i innych',
               },
               {
-                image: '/images/ikony/Doradztwo.jpeg',
+                variant: 'consulting' as const,
                 title: 'Doradztwo techniczne',
                 desc: 'Pomożemy dobrać rozwiązanie idealne dla Twojej branży i potrzeb',
               },
             ].map((item, i) => (
               <div
                 key={i}
-                className={`bento-card p-4 lg:p-7 flex flex-col reveal reveal-delay-${Math.min(i + 1, 5)}`}
+                className={`bento-card group p-4 lg:p-7 flex flex-col reveal reveal-delay-${Math.min(i + 1, 5)}`}
               >
-                <div className="w-12 h-12 lg:w-[72px] lg:h-[72px] mb-3 lg:mb-5">
-                  <Image src={item.image} alt={item.title} width={72} height={72} className="w-full h-full object-contain mix-blend-multiply" />
+                <div className="mb-3 lg:mb-5">
+                  <FeatureIcon variant={item.variant} />
                 </div>
                 <h3 className="font-bold text-gray-900 text-sm lg:text-base mb-1 lg:mb-2">{item.title}</h3>
                 <p className="text-xs lg:text-sm text-gray-500 leading-relaxed">{item.desc}</p>

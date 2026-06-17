@@ -185,8 +185,8 @@ export default function ContactPage() {
               href="tel:+48607819688"
               className="group bg-white rounded-2xl shadow-lg hover:shadow-xl border border-gray-100 p-6 flex items-center gap-5 transition-all hover:-translate-y-0.5"
             >
-              <div className="w-12 h-12 rounded-xl bg-primary-50 flex items-center justify-center flex-shrink-0">
-                <PhoneIcon size={24} className="text-primary-600" />
+              <div className="w-[62px] h-[62px] flex-shrink-0">
+                <Image src="/images/ikony/clay-telefon.png" alt="Telefon" width={224} height={224} className="w-full h-full object-contain motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:-translate-y-1" />
               </div>
               <div>
                 <p className="text-sm text-gray-500 mb-0.5">Zadzwoń do nas</p>
@@ -199,8 +199,8 @@ export default function ContactPage() {
               href="mailto:takma@takma.com.pl"
               className="group bg-white rounded-2xl shadow-lg hover:shadow-xl border border-gray-100 p-6 flex items-center gap-5 transition-all hover:-translate-y-0.5"
             >
-              <div className="w-12 h-12 rounded-xl bg-primary-50 flex items-center justify-center flex-shrink-0">
-                <MailIcon size={24} className="text-primary-600" />
+              <div className="w-[62px] h-[62px] flex-shrink-0">
+                <Image src="/images/ikony/clay-koperta.png" alt="E-mail" width={224} height={224} className="w-full h-full object-contain motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:-translate-y-1" />
               </div>
               <div>
                 <p className="text-sm text-gray-500 mb-0.5">Napisz do nas</p>
@@ -210,8 +210,8 @@ export default function ContactPage() {
             </a>
 
             <div className="group bg-white rounded-2xl shadow-lg border border-gray-100 p-6 flex items-center gap-5">
-              <div className="w-12 h-12 rounded-xl bg-primary-50 flex items-center justify-center flex-shrink-0">
-                <LocationIcon size={24} className="text-primary-600" />
+              <div className="w-[62px] h-[62px] flex-shrink-0">
+                <Image src="/images/ikony/clay-pinezka.png" alt="Lokalizacja" width={224} height={224} className="w-full h-full object-contain motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:-translate-y-1" />
               </div>
               <div>
                 <p className="text-sm text-gray-500 mb-0.5">Odwiedź nas</p>

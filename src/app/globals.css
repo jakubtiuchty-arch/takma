@@ -175,6 +175,11 @@
   }
 }
 
+/* Animowane ikony korzyści (SVG) — elementy ożywają przy hover karty (.group).
+   Wszystko pod prefers-reduced-motion: no-preference (dostępność). */
+/* Ikony korzyści 3D (claymorphism) — delikatny „float" przy hover karty */
+@keyframes ti-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+
 /* Accessibility: reduce motion */
 @media (prefers-reduced-motion: reduce) {
   .reveal {
