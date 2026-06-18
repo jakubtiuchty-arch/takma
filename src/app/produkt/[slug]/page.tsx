@@ -29,6 +29,7 @@ import AddToRFQButton from './AddToRFQButton'
 import AskAboutProductButton from './AskAboutProductButton'
 import ServicePlansBox from './ServicePlansBox'
 import RelatedProducts from './RelatedProducts'
+import ProductFunnelBanner from './ProductFunnelBanner'
 import PrinterCompatibleLabels from '@/components/product/PrinterCompatibleLabels'
 import PrinterMaterialVariants from '@/components/product/PrinterMaterialVariants'
 import VariantsTable from './VariantsTable'
@@ -923,6 +924,19 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 variantAttributeTooltips={product.variantAttributeTooltips}
                 manufacturerId={product.manufacturerId}
               />
+            )}
+
+            {/* Baner produktowy (nowości) — most do wdrożenia/wyceny */}
+            {product.slug === 'zebra-et401' && (
+              <div className="mb-8">
+                <ProductFunnelBanner
+                  headline="Zebra ET401 — nowa generacja tabletów przemysłowych Zebra"
+                  sub="Dobierzemy konfigurację (RFID, 5G, skaner kodów, pamięć) pod Twoje wdrożenie i wyślemy urządzenie gotowe do pracy — bez konfiguracji po Twojej stronie."
+                  ctaLabel="Zapytaj o wdrożenie ET401"
+                  ctaHref="/kontakt"
+                  alt="Zebra ET401 — nowy tablet przemysłowy Zebra w ofercie TAKMA"
+                />
+              </div>
             )}
 
             {/* Opis — dla etykiet termicznych bogaty content z thermal-label-series */}
