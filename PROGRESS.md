@@ -5,6 +5,19 @@
 
 ---
 
+## 2026-06-19 — blog: wpis Zebra TC201 vs TC22 (SEO seeding przed premierą 21.07)
+
+- **Cel:** zasiać treść pod „zebra tc201" przed premierą 21 lipca 2026; porównanie do TC22; hero z prawdziwego renderu 1:1.
+- Nowy guide `zebra-tc201-vs-tc22` (`src/data/guides.ts`, wstawiony na początek tablicy = pierwszy w siatce /poradnik). Kategoria `porownanie`, 9 sekcji + 14 FAQ. Fakty z karty TC201 głosem eksperta (bez cytowania PDF). Wzorzec: istniejący `zebra-tc22-vs-tc27`.
+- **Fakty TC201:** 4. gen TC2x, Qualcomm Dragonwing Q-6690 (+150%), Wi-Fi 7, BT 6.0, 5G NR Sub-6 Rel-17 + Dual eSIM, skanery SR500/AC670(30 m, kolor)/SR560(60°), zintegrowany RFID (opcja, EMEA Q4 2026), IP68/IP65, najwytrzymalszy TC2 (750 tumble +50%, upadki do 2,13 m z bootem, -20°C), FIPS 140-3 + Common Criteria, wstecznie zgodny z akcesoriami TC22/TC27. Premiera 21.07.2026, ceny po premierze (nie wymyślam). TC22 od 2 417 zł.
+- **Hero 1:1:** kompozycja ImageMagick z prawdziwych renderów (folder TC201/, przezroczyste PNG 3750×5000) — front na pierwszym planie + tył ze skanerem za nim, ciemne tło #020102 + poświata + cienie. `public/images/guides/zebra-tc201-vs-tc22-hero.webp` (2000×848). Rendery do treści: `public/images/products/tc201_front.png`, `tc201_back.png`.
+- Brak karty `/produkt/zebra-tc201` → linki kierują na `/kontakt` i `/terminale-mobilne-zebra` (bez 404). Sitemap łapie slug automatycznie.
+- `.gitignore`: dodane `TC201/` i `Karty*/` (surowe rendery, nie do repo).
+- Build OK (exit 0), tsc 0, strona w SSG. Commit: <uzupełnić>. Deploy: <uzupełnić>.
+- TODO: gdy powstanie karta produktu TC201 → podmienić linki `/kontakt` na `/produkt/zebra-tc201`; po premierze uzupełnić ceny w tabeli i FAQ.
+
+---
+
 ## 2026-06-19 — analytics: dialog z AI o analizie (kontekst → codzienna analiza)
 
 - **Cel:** właściciel chce prowadzić dialog z AI przy „Analizie dnia" — dopisywać kontekst (np. „spadek bo inwentaryzacja"), żeby AI nie alarmowało codziennie o wyjaśnionych anomaliach.

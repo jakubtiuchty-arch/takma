@@ -47,6 +47,275 @@ export const guideCategoryLabels: Record<Guide['category'], string> = {
 }
 
 export const guides: Guide[] = [
+// ============================================================
+// 0. Zebra TC201 vs TC22 — nowy terminal TC2x (4. generacja), premiera 21.07.2026
+// ============================================================
+{
+  slug: 'zebra-tc201-vs-tc22',
+  title: 'Zebra TC201 vs TC22 — nowy terminal mobilny TC2x (porównanie 2026)',
+  seoTitle: 'Zebra TC201 vs TC22 — porównanie terminali 2026 | Wi-Fi 7, 5G, premiera 21.07',
+  seoDescription: 'Zebra TC201 vs TC22 — nowy terminal mobilny TC2x 2026: Qualcomm Dragonwing, Wi-Fi 7, Bluetooth 6, 5G, skaner do 30 m, FIPS 140-3. Premiera 21 lipca — co wybrać?',
+  excerpt: 'Zebra TC201 to czwarta generacja serii TC2x i następca bestsellerowego TC22 — nawet 150% więcej wydajności, Wi-Fi 7, Bluetooth 6, 5G, skaner dalekiego zasięgu do 30 m i najwyższa odporność w całej rodzinie TC2. Porównujemy TC201 z TC22 parametr po parametrze i podpowiadamy, kto powinien poczekać na premierę 21 lipca, a komu wystarczy TC22 dostępny od ręki.',
+  category: 'porownanie' as const,
+  tags: ['terminale-mobilne', 'porownanie', 'zebra', 'tc201', 'tc22', 'tc2x', 'wi-fi-7', '5g', 'kolektor-danych', 'Zebra TC201', 'Zebra TC22', 'TC201 vs TC22', 'nowość'],
+  publishedAt: '2026-06-19',
+  updatedAt: '2026-06-19',
+  readTime: '13 min',
+  heroImage: '/images/guides/zebra-tc201-vs-tc22-hero.webp',
+  heroImageAlt: 'Zebra TC201 — nowy terminal mobilny (kolektor danych) z serii TC2x, widok z przodu i z tyłu',
+  sections: [
+    {
+      id: 'podsumowanie',
+      heading: 'Zebra TC201 vs TC22 — następca bestsellera. Co się zmienia?',
+      content: `<div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:24px;justify-content:center">
+<div style="min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
+<img src="/images/products/tc201_front.png" alt="Kolektor danych Zebra TC201 — nowy terminal mobilny TC2x, widok z przodu" style="max-height:180px;margin:0 auto" loading="lazy" />
+<p><strong>Zebra TC201</strong><br/>4. gen TC2x · Wi-Fi 7 + 5G · premiera 21 lipca 2026</p>
+</div>
+<div style="min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
+<img src="/images/products/tc22_front.png" alt="Kolektor danych Zebra TC22 — terminal mobilny Wi-Fi 6E, widok z przodu" style="max-height:180px;margin:0 auto" loading="lazy" />
+<p><strong><a href="/produkt/zebra-tc22">Zebra TC22</a></strong><br/>3. gen TC2x · Wi-Fi 6E · od 2 417 zł netto, od ręki</p>
+</div>
+</div>
+
+<p><strong>Zebra TC201</strong> to czwarta generacja serii TC2x — najpopularniejszej rodziny ekonomicznych terminali mobilnych (kolektorów danych) klasy enterprise w Europie. To bezpośredni następca TC22 i TC27: jedna platforma, która łączy Wi-Fi 7 z opcjonalnym modułem 5G, dodaje procesor Qualcomm Dragonwing Q-6690 (do 150% wyższa wydajność niż starsze TC2x), skaner dalekiego zasięgu sięgający 30 m, zabezpieczenia klasy rządowej (FIPS 140-3, Common Criteria) i najwyższą odporność w całej historii serii TC2. Premiera w Polsce: <strong>21 lipca 2026</strong>.</p>
+
+<p><strong>Zebra TC22</strong> to obecny bestseller — wytrzymały terminal z Wi-Fi 6E, procesorem Qualcomm 5430, ekranem 6" FHD+, skanerem SE4710 lub SE55 i obudową IP68. Cena od 2 417 zł netto, dostępny od ręki. Dla wielu magazynów, sklepów i aptek to wciąż w pełni wystarczające urządzenie — i przez najbliższe lata pozostaje w ofercie Zebry.</p>
+
+<p><strong>Kluczowe pytanie nie brzmi „który jest lepszy?" — TC201 jest nowszy i mocniejszy w każdym parametrze. Pytanie brzmi: „czy potrzebujesz tego, co dokłada TC201, na tyle, by poczekać na premię i zapłacić za najnowszą platformę?"</strong> Jeśli kupujesz terminale na 5–7 lat i zależy Ci na maksymalnie długim wsparciu, 5G w jednym urządzeniu i skanerze dalekiego zasięgu — TC201 jest naturalnym wyborem. Jeśli potrzebujesz sprawdzonego terminala od ręki w najniższej cenie do pracy wewnątrz budynku — TC22 zrobi swoje.</p>
+
+<p>W tym artykule porównujemy TC201 i TC22 parametr po parametrze — wydajność, łączność, skanery, wytrzymałość, bezpieczeństwo i akcesoria — i podpowiadamy, kto powinien wstrzymać zakup do premiery, a kto kupić TC22 już teraz. Ceny TC22 to netto PLN z oferty hurtowej TAKMA, czerwiec 2026.</p>`
+    },
+    {
+      id: 'tabela-porownawcza',
+      heading: 'Tabela porównawcza: Zebra TC201 vs TC22 — pełna specyfikacja',
+      content: `<p><strong>Poniższa tabela zestawia TC201 z TC22 parametr po parametrze.</strong> Kolorem wyróżniono pozycje, w których TC201 przynosi realny postęp względem TC22.</p>
+
+<table>
+<thead><tr><th>Parametr</th><th>Zebra TC22</th><th>Zebra TC201</th></tr></thead>
+<tbody>
+<tr><td><strong>Generacja TC2x</strong></td><td>3. generacja</td><td>4. generacja (nowy standard)</td></tr>
+<tr><td><strong>Dostępność</strong></td><td>Od ręki</td><td>Premiera 21 lipca 2026</td></tr>
+<tr><td><strong>Cena od (netto)</strong></td><td>2 417 zł</td><td>Wkrótce (premiera)</td></tr>
+<tr style="background:#e8f5e9"><td><strong>Procesor</strong></td><td>Qualcomm 5430, 2,1 GHz</td><td>Qualcomm Dragonwing Q-6690, do 2,0 GHz <strong>(do +150% wydajności)</strong></td></tr>
+<tr><td><strong>Pamięć</strong></td><td>6/64 GB lub 8/128 GB</td><td>6/64 GB (UFS 2.2) lub 8/128 GB (UFS 3.1)</td></tr>
+<tr><td><strong>Wyświetlacz</strong></td><td>6,0" FHD+ (2160×1080), 450 nit, Gorilla Glass</td><td>6,0" FHD+ (2160×1080), 450 nit, laminowany optycznie, Gorilla Glass</td></tr>
+<tr style="background:#e8f5e9"><td><strong>Wi-Fi</strong></td><td>Wi-Fi 6/6E</td><td>Wi-Fi 7 (tri-band, 2×2 MU-MIMO, MLO)</td></tr>
+<tr style="background:#e8f5e9"><td><strong>Bluetooth</strong></td><td>5.2</td><td>6.0 (2×2 Tx, BLE beacon)</td></tr>
+<tr style="background:#fff3e0"><td><strong>Sieć komórkowa</strong></td><td>— (5G dopiero w TC27)</td><td>5G NR Sub-6 Rel-17 + Gigabit LTE-A (wariant WWAN)</td></tr>
+<tr style="background:#fff3e0"><td><strong>SIM</strong></td><td>— (dual SIM w TC27)</td><td>1× SIM fizyczny + Dual eSIM</td></tr>
+<tr style="background:#fff3e0"><td><strong>GNSS</strong></td><td>— (GPS w TC27)</td><td>Dwuzakresowy L1/L5: GPS, GLONASS, Galileo, BeiDou, QZSS</td></tr>
+<tr style="background:#e8f5e9"><td><strong>Skanery</strong></td><td>SE4710 (do 35 cm), SE55 (do 7,6 m)</td><td>SR500 (standard), AC670 Advanced Range kolor (do 30 m + zdjęcia), SR560 (kątowy 60°)</td></tr>
+<tr style="background:#e8f5e9"><td><strong>RFID</strong></td><td>Nakładka RFD40 (opcja)</td><td>Zintegrowany UHF RFID (opcja): >200 tagów/s, do 1,2 m</td></tr>
+<tr><td><strong>Kamera</strong></td><td>16 MP (tył) + 5 MP (przód)</td><td>16 MP AF + flash (tył) + 5 MP (przód)</td></tr>
+<tr><td><strong>Bateria</strong></td><td>3 800 / 5 200 mAh, hot-swap</td><td>3 800 mAh (14,63 Wh) / 5 200 mAh (20,02 Wh), hot-swap (wybrane SKU)</td></tr>
+<tr><td><strong>Odporność (IP)</strong></td><td>IP68 / IP65</td><td>IP68 / IP65</td></tr>
+<tr style="background:#e8f5e9"><td><strong>Upadki</strong></td><td>1,5 m na beton</td><td>1,53 m (do 1,83 m w temp. pokojowej; z bootem do 2,13 m)</td></tr>
+<tr style="background:#e8f5e9"><td><strong>Tumble</strong></td><td>500 × 0,5 m</td><td>750 × 0,5 m <strong>(+50%)</strong></td></tr>
+<tr style="background:#e8f5e9"><td><strong>Temperatura pracy</strong></td><td>-10°C do +50°C</td><td>-20°C do +50°C</td></tr>
+<tr style="background:#e8f5e9"><td><strong>Bezpieczeństwo</strong></td><td>Standard (Verified Boot)</td><td>FIPS 140-3, Common Criteria, Android Strongbox + Secure Element (wybrane SKU)</td></tr>
+<tr><td><strong>Wymiary</strong></td><td>165 × 76,3 × 12,5 mm</td><td>165 × 77,95 × 12,5 mm</td></tr>
+<tr><td><strong>Waga</strong></td><td>236 g</td><td>245 g (270 g z rozszerzoną baterią)</td></tr>
+<tr><td><strong>System operacyjny</strong></td><td>Android (do Android 16)</td><td>Android (nowsza platforma, dłuższe wsparcie)</td></tr>
+<tr style="background:#e8f5e9"><td><strong>Akcesoria</strong></td><td>Seria TC2L</td><td>Wstecznie zgodne z większością akcesoriów TC22/TC27 (baterie, stacje)</td></tr>
+</tbody>
+</table>
+
+<p><strong>Kluczowy wniosek:</strong> TC201 to nie kosmetyczny lifting, lecz pełnoprawna nowa generacja. Nowy procesor, Wi-Fi 7, Bluetooth 6, opcjonalne 5G w jednym urządzeniu, skaner sięgający 30 m, wyższa odporność i certyfikaty bezpieczeństwa, jakich w TC22 nie znajdziesz. A mimo to zachowuje zgodność z większością akcesoriów TC22/TC27 — co znacząco obniża koszt migracji.</p>`
+    },
+    {
+      id: 'co-nowego',
+      heading: 'Co TC201 dokłada względem TC22 — pięć realnych zmian',
+      content: `<p style="background:#f8fee6;border-left:4px solid #A8F000;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:16px"><strong>TC201 przynosi pięć konkretnych przewag nad TC22: (1) nowy procesor Qualcomm Dragonwing z wydajnością wyższą nawet o 150%, (2) Wi-Fi 7 i Bluetooth 6, (3) opcjonalne 5G i nawigację satelitarną w jednym urządzeniu (TC22 ich nie ma — to domena TC27), (4) skaner dalekiego zasięgu do 30 m z kolorowym aparatem, (5) zabezpieczenia FIPS 140-3 i Common Criteria. Do tego najwyższa odporność w całej serii TC2.</strong></p>
+
+<p>TC22 i TC201 z zewnątrz są podobne — to ten sam, sprawdzony format kompaktowego terminala dotykowego z 6-calowym ekranem. Różnica tkwi w środku i w zakresie zastosowań.</p>
+
+<h3>1. Wydajność — nowa architektura, nie tylko wyższy zegar</h3>
+<p>TC22 pracuje na procesorze Qualcomm 5430 (2,1 GHz). TC201 dostaje układ <strong>Qualcomm Dragonwing Q-6690</strong> (do 2,0 GHz). Pozornie niższy zegar myli — liczy się architektura: nowy procesor daje <strong>nawet 150% wyższą wydajność</strong> niż starsze terminale TC2x. W praktyce to płynniejsza praca kilku aplikacji jednocześnie (WMS + skaner + komunikator + przeglądarka) i zapas mocy na aplikacje wykorzystujące AI w chmurze. Szybsza pamięć UFS 3.1 (w wariancie 8/128 GB) skraca czas uruchamiania aplikacji i zapisu danych.</p>
+
+<h3>2. Łączność nowej generacji — Wi-Fi 7 i Bluetooth 6</h3>
+<p>TC201 jako jeden z pierwszych terminali Zebra dostaje <strong>Wi-Fi 7</strong> — z technologią Multi-Link Operation (MLO), która jednocześnie korzysta z kilku pasm, ograniczając zakłócenia i opóźnienia. To podwojona przepustowość i pojemność sieci względem Wi-Fi 6 w TC22. <strong>Bluetooth 6.0</strong> dokłada większy zasięg i niższe zużycie energii przy łączeniu się z drukarkami, czytnikami czy słuchawkami.</p>
+
+<h3>3. 5G i GPS w jednym urządzeniu</h3>
+<p>To największa różnica koncepcyjna. W obecnej serii TC22 jest „tylko Wi-Fi", a 5G i GPS oferuje osobny model <a href="/produkt/zebra-tc27">TC27</a>. TC201 <strong>scala obie role w jednej platformie</strong>: wariant z modułem WWAN ma 5G NR Sub-6 (Rel-17), Gigabit LTE-A, jeden SIM fizyczny + Dual eSIM oraz dwuzakresową nawigację satelitarną L1/L5. Jeśli planujesz flotę mieszaną (magazyn + teren), nie musisz już wybierać między dwoma modelami — wystarczy dobrać warianty TC201 z 5G lub bez.</p>
+
+<h3>4. Skaner dalekiego zasięgu z kolorowym aparatem</h3>
+<p>TC22 oferuje skanery SE4710 (do 35 cm) i SE55 (do 7,6 m). TC201 idzie dalej: skaner <strong>AC670 Advanced Range</strong> odczytuje kody z odległości <strong>do 30 metrów</strong>, a przy tym rejestruje zdjęcia w wysokiej rozdzielczości — przydatne do dokumentacji uszkodzeń czy potwierdzania dostaw. W ofercie jest też SR500 (zakres standardowy) oraz SR560 z głowicą pod kątem 60° do ergonomicznego skanowania na taśmie i przy kompletacji.</p>
+
+<h3>5. Bezpieczeństwo klasy rządowej</h3>
+<p>TC201 (w wybranych konfiguracjach) dokłada <strong>Android Strongbox z dedykowanym układem Secure Element</strong> oraz certyfikaty <strong>FIPS 140-3</strong> i <strong>Common Criteria</strong> — wymagane w sektorze publicznym, finansach, ochronie zdrowia i wszędzie tam, gdzie obowiązują rygorystyczne polityki bezpieczeństwa danych. TC22 takich certyfikatów nie ma.</p>`
+    },
+    {
+      id: 'skanery',
+      heading: 'Skanery — SR500, AC670 (30 m) i SR560 vs SE4710/SE55',
+      content: `<p style="background:#f8fee6;border-left:4px solid #A8F000;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:16px"><strong>TC201 wprowadza nową rodzinę skanerów: SR500 (zakres standardowy), AC670 Advanced Range odczytujący kody do 30 m i robiący kolorowe zdjęcia, oraz SR560 z głowicą pod kątem 60°. TC22 oferuje SE4710 (do 35 cm) i SE55 (do 7,6 m). Skaner dalekiego zasięgu TC201 sięga niemal 4× dalej niż SE55.</strong></p>
+
+<img src="/images/products/tc201_back.png" alt="Kolektor danych Zebra TC201 — widok z tyłu: okno skanera, aparat 16 MP z lampą i antena RFID" style="max-width:240px;margin:0 auto 16px;display:block" loading="lazy" />
+
+<p><strong>Wybór skanera definiuje zastosowanie terminala.</strong> TC201 daje tu więcej opcji niż TC22 — łącznie z odczytem na bardzo dużych dystansach.</p>
+
+<table>
+<thead><tr><th>Skaner</th><th>Model</th><th>Zasięg</th><th>Zastosowanie</th></tr></thead>
+<tbody>
+<tr><td><strong>TC22 — standard</strong></td><td>SE4710</td><td>do 35 cm</td><td>Retail, apteka, lada, niskie półki</td></tr>
+<tr><td><strong>TC22 — daleki zasięg</strong></td><td>SE55</td><td>do 7,6 m</td><td>Magazyn z wysokimi regałami</td></tr>
+<tr><td><strong>TC201 — standard</strong></td><td>SR500</td><td>standardowy (kontakt–kilkadziesiąt cm)</td><td>Retail, kompletacja, inwentaryzacja</td></tr>
+<tr><td><strong>TC201 — daleki zasięg</strong></td><td>AC670 Advanced Range</td><td>do 30 m + kolorowe zdjęcia</td><td>Wysoki skład, plac, doki, dokumentacja</td></tr>
+<tr><td><strong>TC201 — kątowy</strong></td><td>SR560 (60°)</td><td>standardowy, głowica pod kątem</td><td>Taśma, stół pakowy, skanowanie bez obracania nadgarstka</td></tr>
+</tbody>
+</table>
+
+<p><strong>Po co skaner do 30 m?</strong> W wysokim składzie i na placu manewrowym operator odczytuje kody na paletach piętrzonych na wysokości kilku–kilkunastu metrów albo etykiety na naczepach bez schodzenia z wózka. AC670 zdejmuje te kody z poziomu podłogi, a dodatkowo robi zdjęcia — można od razu udokumentować stan towaru przy przyjęciu. SE55 w TC22 sięga 7,6 m; AC670 w TC201 idzie znacznie dalej.</p>
+
+<p>Skaner kątowy SR560 (60°) to rozwiązanie ergonomiczne — przy intensywnym pakowaniu i kompletacji operator nie musi obracać nadgarstka, by wycelować w kod. Przy kilkuset skanach na zmianę realnie odciąża rękę.</p>`
+    },
+    {
+      id: 'wytrzymalosc',
+      heading: 'Wytrzymałość — najbardziej odporny terminal serii TC2',
+      content: `<p style="background:#f8fee6;border-left:4px solid #A8F000;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:16px"><strong>TC201 to najbardziej wytrzymały terminal w całej serii TC2: upadki na beton z 1,53 m (do 1,83 m w temperaturze pokojowej, z etui ochronnym do 2,13 m), 750 upadków w teście tumble (o 50% więcej niż TC22) i praca w mrozie do -20°C. TC22 odporny na upadki z 1,5 m, 500 tumble i -10°C. Oba mają IP68/IP65.</strong></p>
+
+<p><strong>Obudowa TC201 jest zaprojektowana twardziej niż w TC22</strong> — przy zachowaniu tego samego, kompaktowego formatu i klasy szczelności.</p>
+
+<ul>
+<li><strong>IP68 i IP65</strong> — pełna pyłoszczelność, zanurzenie oraz odporność na strumień wody (jak w TC22)</li>
+<li><strong>Upadki</strong>: 1,53 m na beton w pełnym zakresie temperatur, do 1,83 m w temperaturze pokojowej, a z etui ochronnym (rugged boot) nawet do 2,13 m</li>
+<li><strong>Tumble</strong>: 750 upadków z 0,5 m — o 50% więcej niż 500 w TC22; symulacja codziennego upuszczania na posadzkę</li>
+<li><strong>Mróz</strong>: praca już od -20°C (TC22: -10°C) — istotne dla chłodni, mroźni i pracy na zewnątrz zimą</li>
+<li><strong>Corning Gorilla Glass</strong> chroni zarówno ekran, jak i okno skanera</li>
+<li><strong>MIL-STD-810H</strong> — terminal przechodzi normy wojskowe dla wstrząsów, wibracji i wahań temperatury</li>
+</ul>
+
+<p><strong>Dlaczego to ma znaczenie?</strong> W magazynie, chłodni i terenie to nie upadek z biurka decyduje o żywotności terminala, lecz setki drobnych uderzeń o regały, posadzkę i burty wózków. Wyższy wynik testu tumble i niższa temperatura pracy przekładają się wprost na mniej awarii i niższy koszt serwisu w skali floty.</p>
+
+<p>Zintegrowany czytnik RFID (opcja w wybranych konfiguracjach TC201) odczytuje ponad 200 tagów na sekundę z odległości do 1,2 m, z funkcją „licznika Geigera" do precyzyjnego namierzania pojedynczego towaru. W TC22 RFID realizuje się dopiero nakładką RFD40. Dostępność wariantów RFID dla TC201 na rynku europejskim planowana jest na koniec 2026 roku.</p>`
+    },
+    {
+      id: 'akcesoria-bateria',
+      heading: 'Bateria i akcesoria — migracja z TC22/TC27 bez wymiany całej infrastruktury',
+      content: `<p style="background:#f8fee6;border-left:4px solid #A8F000;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:16px"><strong>TC201 jest wstecznie zgodny z większością akcesoriów TC22 i TC27 — w tym z bateriami i stacjami ładowania. To kluczowa zaleta: firma z flotą TC22/TC27 może wdrażać TC201 stopniowo, bez wymiany całej infrastruktury ładowania od zera. Baterie: 3 800 mAh i 5 200 mAh, wymiana hot-swap (wybrane SKU).</strong></p>
+
+<p><strong>Największą barierą przy zmianie generacji terminali zwykle nie jest cena samego urządzenia, lecz koszt wymiany akcesoriów</strong> — stacji, baterii, etui, ładowarek. Zebra rozwiązała to w TC201, zachowując zgodność z większością osprzętu TC22/TC27.</p>
+
+<table>
+<thead><tr><th>Element</th><th>Zebra TC22</th><th>Zebra TC201</th></tr></thead>
+<tbody>
+<tr><td><strong>Baterie</strong></td><td>3 800 / 5 200 mAh</td><td>3 800 mAh (14,63 Wh) / 5 200 mAh (20,02 Wh) — zgodne z TC22/TC27</td></tr>
+<tr><td><strong>Wymiana baterii</strong></td><td>Hot-swap</td><td>Hot-swap (wybrane SKU)</td></tr>
+<tr><td><strong>Stacje ładowania</strong></td><td>Seria TC2L</td><td>Zgodne z większością stacji TC22/TC27; nowe ShareCradle wysokiej gęstości</td></tr>
+<tr><td><strong>Etui (boot)</strong></td><td>SG-TC2L-BOOT-01</td><td>Nowe etui ochronne (zwiększa odporność na upadki)</td></tr>
+<tr><td><strong>Trigger handle / uchwyt</strong></td><td>TRG-TC2L-SNP1-01</td><td>Modułowe uchwyty: trigger handle, mocowanie naramienne</td></tr>
+</tbody>
+</table>
+
+<p><strong>Co to oznacza w praktyce:</strong> jeśli masz dziś flotę TC22 lub TC27 ze stacjami i zapasem baterii, wdrożenie TC201 nie wymaga kupowania wszystkiego od nowa. Baterie i większość stacji ładowania przejdą do nowych urządzeń. Doposażyć trzeba głównie etui ochronne (nowa, twardsza konstrukcja) oraz — jeśli wybierasz nowy skaner — odpowiedni uchwyt. To realnie obniża koszt migracji względem sytuacji, w której nowa generacja zrywa zgodność z osprzętem (jak miało to miejsce przy przejściu z TC21/TC26 na TC22/TC27).</p>
+
+<p>Zasilanie ciągłe (perpetual power) z wymianą baterii hot-swap pozwala utrzymać terminal w pracy przez całą zmianę bez wyłączania — operator podmienia baterię w kilka sekund, a urządzenie podtrzymuje stan z bufora.</p>`
+    },
+    {
+      id: 'kiedy-co',
+      heading: 'TC201 czy TC22? Kto powinien poczekać, a kto kupić teraz',
+      content: `<p><strong>Wybór między TC201 a TC22 sprowadza się do horyzontu inwestycji i zakresu zastosowań.</strong> Poniżej praktyczne rekomendacje według scenariusza.</p>
+
+<h3>Kup TC22 teraz, jeśli:</h3>
+<ul>
+<li><strong>Potrzebujesz terminali od ręki</strong> — TC201 wchodzi na rynek dopiero 21 lipca 2026</li>
+<li><strong>Praca odbywa się wyłącznie wewnątrz budynku z Wi-Fi</strong> (magazyn, sklep, apteka) i nie potrzebujesz 5G ani GPS</li>
+<li><strong>Liczy się najniższa cena wejścia</strong> — TC22 od 2 417 zł netto to najtańszy enterprise terminal z IP68 na rynku</li>
+<li>Skanujesz na dystansie do 7,6 m (SE55 w zupełności wystarcza)</li>
+<li>Nie obowiązują Cię certyfikaty FIPS 140-3 / Common Criteria</li>
+</ul>
+
+<h3>Poczekaj na TC201, jeśli:</h3>
+<ul>
+<li><strong>Kupujesz flotę na 5–7 lat</strong> i zależy Ci na maksymalnie długim wsparciu systemowym — nowsza platforma będzie aktualizowana dłużej</li>
+<li><strong>Chcesz 5G i GPS w jednym modelu</strong> dla pracowników terenowych (kurierzy, serwis, przedstawiciele) — bez dzielenia floty na dwa urządzenia</li>
+<li><strong>Potrzebujesz skanowania na dużych dystansach</strong> (wysoki skład, plac, doki) — AC670 sięga do 30 m</li>
+<li><strong>Działasz w sektorze regulowanym</strong> (publiczny, finanse, ochrona zdrowia) i wymagasz FIPS 140-3 / Common Criteria</li>
+<li><strong>Pracujesz w mrozie</strong> (chłodnia, mroźnia, teren zimą) — TC201 działa do -20°C</li>
+<li>Planujesz aplikacje wykorzystujące AI — zapas mocy nowego procesora ma tu znaczenie</li>
+</ul>
+
+<h3>Masz już flotę TC22/TC27?</h3>
+<p>Nie ma potrzeby wymiany sprawnych urządzeń. TC201 warto wprowadzać <strong>stopniowo</strong> — przy rozbudowie floty lub wymianie najbardziej zużytych sztuk. Dzięki zgodności baterii i większości stacji ładowania nowe TC201 wpasują się w istniejącą infrastrukturę bez budowania jej od zera. Mieszana flota TC22 + TC201 będzie współdzielić część osprzętu.</p>
+
+<p>Nie masz pewności, który wariant i ile sztuk 5G naprawdę potrzebujesz? <a href="/kontakt">Skontaktuj się z nami</a> — pomożemy dobrać konfigurację i policzyć koszt posiadania dla Twojej floty, a TC201 możesz u nas zarezerwować przed premierą.</p>`
+    },
+    {
+      id: 'premiera-dostepnosc',
+      heading: 'Premiera i dostępność TC201 — 21 lipca 2026',
+      content: `<p><strong>Zebra TC201 wchodzi na rynek 21 lipca 2026.</strong> Do tego czasu w pełni dostępny pozostaje TC22 (od 2 417 zł netto) oraz TC27 z 5G — obie pozycje znajdziesz w naszej ofercie terminali mobilnych Zebra.</p>
+
+<ul>
+<li><strong>Premiera TC201:</strong> 21 lipca 2026</li>
+<li><strong>Warianty z 5G (WWAN):</strong> dostępne w ofercie premierowej</li>
+<li><strong>Warianty z RFID:</strong> na rynku europejskim planowane na koniec 2026 roku</li>
+<li><strong>Ceny TC201:</strong> publikowane wraz z premierą — zapytaj o ofertę i rezerwację przedpremierową</li>
+</ul>
+
+<p>Jeśli rozważasz większe wdrożenie w drugiej połowie 2026 roku, warto już teraz porozmawiać o konfiguracji TC201 — pomożemy dobrać skaner, wariant łączności i akcesoria, a zamówienie zarezerwować na premierę. Bieżąco dostępne terminale: <a href="/terminale-mobilne-zebra">terminale mobilne Zebra</a>. Porównanie obecnej pary Wi-Fi/5G: <a href="/poradnik/zebra-tc22-vs-tc27">Zebra TC22 vs TC27</a>.</p>`
+    },
+    {
+      id: 'podsumowanie-koncowe',
+      heading: 'Podsumowanie — TC201 czy TC22?',
+      content: `<p><strong>TC201 to czwarta generacja serii TC2x i realny skok względem TC22: mocniejszy procesor, Wi-Fi 7, Bluetooth 6, opcjonalne 5G i GPS w jednym urządzeniu, skaner do 30 m, najwyższa odporność w serii i certyfikaty bezpieczeństwa.</strong> TC22 pozostaje świetnym, tańszym i dostępnym od ręki terminalem do pracy wewnątrz budynku.</p>
+
+<div style="display:flex;gap:24px;flex-wrap:wrap;margin:20px 0">
+<div style="flex:1;min-width:260px;border:2px solid #1976d2;border-radius:12px;padding:20px">
+<h3 style="color:#1976d2;margin-top:0">Wybierz TC22, jeśli:</h3>
+<ul>
+<li>Potrzebujesz terminali od ręki (przed 21 lipca)</li>
+<li>Praca tylko wewnątrz budynku z Wi-Fi</li>
+<li>Liczy się najniższa cena (od 2 417 zł netto)</li>
+<li>Skanujesz na dystansie do 7,6 m</li>
+<li>Nie wymagasz 5G, GPS ani certyfikatów FIPS</li>
+</ul>
+<p><strong><a href="/produkt/zebra-tc22">→ Zobacz Zebra TC22</a></strong></p>
+</div>
+<div style="flex:1;min-width:260px;border:2px solid #e65100;border-radius:12px;padding:20px">
+<h3 style="color:#e65100;margin-top:0">Wybierz TC201, jeśli:</h3>
+<ul>
+<li>Kupujesz flotę na 5–7 lat (dłuższe wsparcie)</li>
+<li>Chcesz 5G i GPS w jednym modelu</li>
+<li>Potrzebujesz skanera dalekiego zasięgu (do 30 m)</li>
+<li>Działasz w sektorze regulowanym (FIPS, Common Criteria)</li>
+<li>Pracujesz w mrozie (do -20°C) lub planujesz aplikacje AI</li>
+</ul>
+<p><strong><a href="/kontakt">→ Zapytaj o TC201 / rezerwacja</a></strong></p>
+</div>
+</div>
+
+<p><strong>Masz już TC22 lub TC27?</strong> Nie wymieniaj sprawnych urządzeń — wprowadzaj TC201 stopniowo, korzystając ze zgodności baterii i stacji ładowania. <a href="/kontakt">Skontaktuj się z nami</a>, a dobierzemy konfigurację i policzymy koszt posiadania dla Twojej floty.</p>
+
+<p>Powiązane artykuły: <a href="/poradnik/zebra-tc22-vs-tc27">Zebra TC22 vs TC27 — porównanie</a> · <a href="/poradnik/jak-wybrac-terminal-mobilny">Jak wybrać terminal mobilny? Poradnik 2026</a> · <a href="/poradnik/top-10-terminali-mobilnych-2026">Top 10 terminali mobilnych 2026</a>.</p>`
+    }
+  ],
+  faq: [
+    { question: 'Co to jest Zebra TC201?', answer: 'Zebra TC201 to wytrzymały terminal mobilny (kolektor danych) czwartej generacji serii TC2x — następca TC22 i TC27. Ma procesor Qualcomm Dragonwing Q-6690 (wydajność wyższa nawet o 150% względem starszych TC2x), Wi-Fi 7, Bluetooth 6, ekran 6" FHD+, opcjonalne 5G i GPS, skaner dalekiego zasięgu do 30 m oraz obudowę IP68. Premiera w Polsce: 21 lipca 2026.' },
+    { question: 'Czym różni się Zebra TC201 od TC22?', answer: 'TC201 to nowsza generacja: procesor Qualcomm Dragonwing (do +150% wydajności vs Qualcomm 5430 w TC22), Wi-Fi 7 (zamiast Wi-Fi 6E), Bluetooth 6 (zamiast 5.2), opcjonalne 5G i GPS w jednym modelu (TC22 jest tylko Wi-Fi), skaner do 30 m (AC670) zamiast 7,6 m (SE55), wyższa odporność (750 tumble vs 500, praca do -20°C vs -10°C) oraz certyfikaty FIPS 140-3 i Common Criteria. TC22 jest tańszy i dostępny od ręki.' },
+    { question: 'Kiedy premiera Zebra TC201?', answer: 'Zebra TC201 wchodzi na rynek 21 lipca 2026. Warianty z modułem 5G dostępne są w ofercie premierowej, a warianty z RFID na rynku europejskim planowane są na koniec 2026 roku. Do czasu premiery dostępny od ręki pozostaje TC22 oraz TC27.' },
+    { question: 'Ile kosztuje Zebra TC201?', answer: 'Ceny Zebra TC201 będą publikowane wraz z premierą 21 lipca 2026. Dla porównania, dostępny od ręki TC22 kosztuje od 2 417 zł netto. Po informacje o cenie i rezerwacji przedpremierowej TC201 skontaktuj się z nami — pomożemy dobrać konfigurację.' },
+    { question: 'Czy warto czekać na TC201, czy kupić TC22 teraz?', answer: 'Kup TC22 teraz, jeśli potrzebujesz terminali od ręki, pracujesz wewnątrz budynku z Wi-Fi i zależy Ci na najniższej cenie. Poczekaj na TC201, jeśli kupujesz flotę na 5–7 lat, potrzebujesz 5G i GPS w jednym urządzeniu, skanera dalekiego zasięgu (do 30 m), certyfikatów bezpieczeństwa albo pracy w mrozie do -20°C.' },
+    { question: 'Czy TC201 ma 5G?', answer: 'Tak — w wariancie z modułem WWAN. TC201 obsługuje 5G NR Sub-6 (Release 17), Gigabit LTE-A, jeden SIM fizyczny plus Dual eSIM oraz dwuzakresową nawigację satelitarną L1/L5 (GPS, GLONASS, Galileo, BeiDou, QZSS). To istotna różnica względem TC22, który ma wyłącznie Wi-Fi — w obecnej serii 5G oferuje dopiero osobny model TC27.' },
+    { question: 'Jaki skaner ma Zebra TC201?', answer: 'TC201 oferuje trzy skanery: SR500 (zakres standardowy), AC670 Advanced Range, który odczytuje kody z odległości do 30 m i robi kolorowe zdjęcia w wysokiej rozdzielczości, oraz SR560 z głowicą pod kątem 60° do ergonomicznego skanowania. Skaner dalekiego zasięgu TC201 sięga znacznie dalej niż SE55 w TC22 (do 7,6 m).' },
+    { question: 'Czy akcesoria TC22 i TC27 pasują do TC201?', answer: 'Tak — TC201 jest wstecznie zgodny z większością akcesoriów TC22 i TC27, w tym z bateriami (3 800 i 5 200 mAh) oraz stacjami ładowania. Dzięki temu firma z flotą TC22/TC27 może wdrażać TC201 stopniowo, bez wymiany całej infrastruktury. Doposażyć trzeba głównie etui ochronne (nowa, twardsza konstrukcja) i uchwyt do wybranego skanera.' },
+    { question: 'Czy Zebra TC201 jest wodoodporny?', answer: 'Tak. TC201 ma klasę ochrony IP68 (pyłoszczelność i zanurzenie) oraz IP65 (strumień wody) — tak jak TC22. Dodatkowo to najbardziej wytrzymały terminal serii TC2: upadki na beton z 1,53 m (do 1,83 m w temperaturze pokojowej, z etui do 2,13 m), 750 upadków w teście tumble i praca w zakresie -20°C do +50°C. Ekran i okno skanera chroni Corning Gorilla Glass.' },
+    { question: 'Jaki procesor ma TC201?', answer: 'TC201 napędza Qualcomm Dragonwing Q-6690 (do 2,0 GHz) — nowa architektura, która daje nawet 150% wyższą wydajność niż starsze terminale TC2x (w tym TC22 z układem Qualcomm 5430). W praktyce to płynniejsza praca wielu aplikacji jednocześnie i zapas mocy na rozwiązania wykorzystujące AI w chmurze. Wariant 8/128 GB korzysta z szybkiej pamięci UFS 3.1.' },
+    { question: 'Czy TC201 obsługuje RFID?', answer: 'Tak, w wybranych konfiguracjach TC201 ma zintegrowany czytnik UHF RFID — odczytuje ponad 200 tagów na sekundę z odległości do 1,2 m, z funkcją precyzyjnego namierzania pojedynczego towaru. W TC22 RFID realizuje się dopiero nakładką RFD40. Warianty RFID dla TC201 na rynku europejskim planowane są na koniec 2026 roku.' },
+    { question: 'Czy TC201 ma certyfikaty bezpieczeństwa?', answer: 'Tak. TC201 w wybranych konfiguracjach oferuje Android Strongbox z dedykowanym układem Secure Element oraz certyfikaty FIPS 140-3 i Common Criteria — wymagane w sektorze publicznym, finansach i ochronie zdrowia. TC22 takich certyfikatów nie posiada. Oba modele obsługują Secure Boot i Verified Boot.' },
+    { question: 'Czy TC201 ma Wi-Fi 7?', answer: 'Tak — TC201 to jeden z pierwszych terminali Zebra z Wi-Fi 7, w tym technologią Multi-Link Operation (MLO), która jednocześnie korzysta z kilku pasm, ograniczając zakłócenia i opóźnienia. To podwojona przepustowość i pojemność sieci względem Wi-Fi 6/6E w TC22. TC201 ma też Bluetooth 6.0.' },
+    { question: 'Gdzie kupić i serwisować Zebra TC201 w Polsce?', answer: 'Zebra TC201 będzie dostępny w ofercie TAKMA od premiery 21 lipca 2026 — można go zarezerwować przed premierą. Autoryzowany serwis terminali Zebra w Polsce prowadzi serwis-zebry.pl we Wrocławiu (naprawy gwarancyjne i pogwarancyjne na poziomie komponentów). Do czasu premiery dostępne są TC22 i TC27.' },
+  ],
+  relatedLinks: [
+    { title: 'Zebra TC22 — karta produktu', href: '/produkt/zebra-tc22' },
+    { title: 'Zebra TC27 — karta produktu', href: '/produkt/zebra-tc27' },
+    { title: 'Zebra TC22 vs TC27 — porównanie', href: '/poradnik/zebra-tc22-vs-tc27' },
+    { title: 'Jak wybrać terminal mobilny? Poradnik 2026', href: '/poradnik/jak-wybrac-terminal-mobilny' },
+    { title: 'Top 10 terminali mobilnych 2026', href: '/poradnik/top-10-terminali-mobilnych-2026' },
+    { title: 'Terminale mobilne Zebra — pełna oferta', href: '/terminale-mobilne-zebra' },
+    { title: 'Serwis terminali Zebra w Polsce', href: 'https://www.serwis-zebry.pl/serwis-terminali-zebra' },
+    { title: 'Skontaktuj się — dobór i rezerwacja TC201', href: '/kontakt' },
+  ]
+},
 {
   slug: 'jak-wybrac-drukarke-etykiet',
   title: 'Jak wybrać drukarkę etykiet? Kompletny poradnik 2026',

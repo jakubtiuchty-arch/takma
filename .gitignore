@@ -44,3 +44,7 @@ next-env.d.ts
 # Wielkie feedy produktowe (setki MB, >limit GitHuba 100 MB) — nie commitować
 PLL_content_feed*/
 tmp-banner/
+
+# Surowe rendery produktowe (źródła, dziesiątki MB) — webp/png trafiają do public/
+TC201/
+Karty*/
