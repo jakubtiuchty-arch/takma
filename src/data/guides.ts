@@ -48,35 +48,37 @@ export const guideCategoryLabels: Record<Guide['category'], string> = {
 
 export const guides: Guide[] = [
 // ============================================================
-// 0. Zebra TC201 vs TC22 — nowy terminal TC2x (4. generacja), premiera 21.07.2026
+// 0. Zebra TC201 — nowy terminal TC2x (4. generacja), premiera 21.07.2026
 // ============================================================
 {
-  slug: 'zebra-tc201-vs-tc22',
-  title: 'Zebra TC201 vs TC22 — nowy terminal mobilny TC2x (porównanie 2026)',
-  seoTitle: 'Zebra TC201 vs TC22 — porównanie terminali 2026 | Wi-Fi 7, 5G, premiera 21.07',
-  seoDescription: 'Zebra TC201 vs TC22 — nowy terminal mobilny TC2x 2026: Qualcomm Dragonwing, Wi-Fi 7, Bluetooth 6, 5G, skaner do 30 m, FIPS 140-3. Premiera 21 lipca — co wybrać?',
-  excerpt: 'Zebra TC201 to czwarta generacja serii TC2x i następca bestsellerowego TC22 — nawet 150% więcej wydajności, Wi-Fi 7, Bluetooth 6, 5G, skaner dalekiego zasięgu do 30 m i najwyższa odporność w całej rodzinie TC2. Porównujemy TC201 z TC22 parametr po parametrze i podpowiadamy, kto powinien poczekać na premierę 21 lipca, a komu wystarczy TC22 dostępny od ręki.',
-  category: 'porownanie' as const,
-  tags: ['terminale-mobilne', 'porownanie', 'zebra', 'tc201', 'tc22', 'tc2x', 'wi-fi-7', '5g', 'kolektor-danych', 'Zebra TC201', 'Zebra TC22', 'TC201 vs TC22', 'nowość'],
+  slug: 'zebra-tc201',
+  title: 'Zebra TC201 — nowy terminal mobilny (kolektor danych)',
+  seoTitle: 'Zebra TC201 — nowy terminal mobilny TC2x 2026 | Wi-Fi 7, 5G, skaner 30 m',
+  seoDescription: 'Zebra TC201 — nowy kolektor danych serii TC2x: Qualcomm Dragonwing, Wi-Fi 7, Bluetooth 6, 5G, skaner do 30 m, FIPS 140-3, IP68. Premiera w Polsce 21 lipca 2026.',
+  excerpt: 'Zebra TC201 to czwarta generacja serii TC2x — wytrzymały terminal mobilny (kolektor danych) z procesorem Qualcomm Dragonwing, Wi-Fi 7, Bluetooth 6, opcjonalnym 5G, skanerem dalekiego zasięgu do 30 m i zabezpieczeniami klasy rządowej. Omawiamy specyfikację, zastosowania i to, czym TC201 różni się od dostępnego dziś TC22. Premiera w Polsce: 21 lipca 2026.',
+  category: 'przewodnik' as const,
+  tags: ['terminale-mobilne', 'przewodnik', 'zebra', 'tc201', 'tc2x', 'wi-fi-7', '5g', 'kolektor-danych', 'Zebra TC201', 'nowość', 'tc22'],
   publishedAt: '2026-06-19',
   updatedAt: '2026-06-19',
   readTime: '13 min',
-  heroImage: '/images/guides/zebra-tc201-vs-tc22-hero.webp',
-  heroImageAlt: 'Zebra TC201 — nowy terminal mobilny (kolektor danych) z serii TC2x, widok z przodu i z tyłu',
+  heroImage: '/images/guides/zebra-tc201-hero.webp',
+  heroImageAlt: 'Zebra TC201 — nowy terminal mobilny (kolektor danych) z serii TC2x',
   sections: [
     {
       id: 'podsumowanie',
-      heading: 'Zebra TC201 vs TC22 — następca bestsellera. Co się zmienia?',
-      content: `<div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:24px;justify-content:center">
-<div style="min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
-<img src="/images/products/tc201_front.png" alt="Kolektor danych Zebra TC201 — nowy terminal mobilny TC2x, widok z przodu" style="max-height:180px;margin:0 auto" loading="lazy" />
-<p><strong>Zebra TC201</strong><br/>4. gen TC2x · Wi-Fi 7 + 5G · premiera 21 lipca 2026</p>
+      heading: 'Zebra TC201 — nowy standard terminala mobilnego serii TC2x',
+      content: `<div style="display:flex;gap:32px;flex-wrap:wrap;margin-bottom:24px;justify-content:center;align-items:flex-end">
+<div style="min-width:180px;text-align:center;display:flex;flex-direction:column;align-items:center">
+<img src="/images/products/tc201_front.png" alt="Kolektor danych Zebra TC201 — nowy terminal mobilny TC2x, widok z przodu (ekran 6 cali FHD+)" style="max-height:200px;margin:0 auto" loading="lazy" />
+<p><strong>Zebra TC201 — przód</strong><br/>ekran 6" FHD+, klawisze skanowania</p>
 </div>
-<div style="min-width:200px;text-align:center;display:flex;flex-direction:column;align-items:center">
-<img src="/images/products/tc22_front.png" alt="Kolektor danych Zebra TC22 — terminal mobilny Wi-Fi 6E, widok z przodu" style="max-height:180px;margin:0 auto" loading="lazy" />
-<p><strong><a href="/produkt/zebra-tc22">Zebra TC22</a></strong><br/>3. gen TC2x · Wi-Fi 6E · od 2 417 zł netto, od ręki</p>
+<div style="min-width:180px;text-align:center;display:flex;flex-direction:column;align-items:center">
+<img src="/images/products/tc201_back.png" alt="Kolektor danych Zebra TC201 — widok z tyłu: okno skanera, aparat 16 MP z lampą i antena RFID" style="max-height:200px;margin:0 auto" loading="lazy" />
+<p><strong>Zebra TC201 — tył</strong><br/>skaner, aparat 16 MP, opcja RFID</p>
 </div>
 </div>
+
+<p style="text-align:center;margin:-8px 0 24px;color:#475569"><strong>4. generacja TC2x</strong> · Qualcomm Dragonwing · Wi-Fi 7 · Bluetooth 6 · opcja 5G · skaner do 30 m · IP68 · premiera 21 lipca 2026</p>
 
 <p><strong>Zebra TC201</strong> to czwarta generacja serii TC2x — najpopularniejszej rodziny ekonomicznych terminali mobilnych (kolektorów danych) klasy enterprise w Europie. To bezpośredni następca TC22 i TC27: jedna platforma, która łączy Wi-Fi 7 z opcjonalnym modułem 5G, dodaje procesor Qualcomm Dragonwing Q-6690 (do 150% wyższa wydajność niż starsze TC2x), skaner dalekiego zasięgu sięgający 30 m, zabezpieczenia klasy rządowej (FIPS 140-3, Common Criteria) i najwyższą odporność w całej historii serii TC2. Premiera w Polsce: <strong>21 lipca 2026</strong>.</p>
 
@@ -150,7 +152,10 @@ export const guides: Guide[] = [
       heading: 'Skanery — SR500, AC670 (30 m) i SR560 vs SE4710/SE55',
       content: `<p style="background:#f8fee6;border-left:4px solid #A8F000;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:16px"><strong>TC201 wprowadza nową rodzinę skanerów: SR500 (zakres standardowy), AC670 Advanced Range odczytujący kody do 30 m i robiący kolorowe zdjęcia, oraz SR560 z głowicą pod kątem 60°. TC22 oferuje SE4710 (do 35 cm) i SE55 (do 7,6 m). Skaner dalekiego zasięgu TC201 sięga niemal 4× dalej niż SE55.</strong></p>
 
-<img src="/images/products/tc201_back.png" alt="Kolektor danych Zebra TC201 — widok z tyłu: okno skanera, aparat 16 MP z lampą i antena RFID" style="max-width:240px;margin:0 auto 16px;display:block" loading="lazy" />
+<div style="display:flex;gap:86px;flex-wrap:wrap;justify-content:center;margin:0 auto 16px">
+<img src="/images/products/tc201_front_right.png" alt="Kolektor danych Zebra TC201 — ujęcie 3/4 z prawej, klawisz skanowania i kołyska głośności" style="max-height:240px" loading="lazy" />
+<img src="/images/products/tc201_front_left.png" alt="Kolektor danych Zebra TC201 — ujęcie 3/4 z lewej, boczny klawisz skanowania" style="max-height:240px" loading="lazy" />
+</div>
 
 <p><strong>Wybór skanera definiuje zastosowanie terminala.</strong> TC201 daje tu więcej opcji niż TC22 — łącznie z odczytem na bardzo dużych dystansach.</p>
 
@@ -259,28 +264,30 @@ export const guides: Guide[] = [
       heading: 'Podsumowanie — TC201 czy TC22?',
       content: `<p><strong>TC201 to czwarta generacja serii TC2x i realny skok względem TC22: mocniejszy procesor, Wi-Fi 7, Bluetooth 6, opcjonalne 5G i GPS w jednym urządzeniu, skaner do 30 m, najwyższa odporność w serii i certyfikaty bezpieczeństwa.</strong> TC22 pozostaje świetnym, tańszym i dostępnym od ręki terminalem do pracy wewnątrz budynku.</p>
 
-<div style="display:flex;gap:24px;flex-wrap:wrap;margin:20px 0">
-<div style="flex:1;min-width:260px;border:2px solid #1976d2;border-radius:12px;padding:20px">
-<h3 style="color:#1976d2;margin-top:0">Wybierz TC22, jeśli:</h3>
-<ul>
-<li>Potrzebujesz terminali od ręki (przed 21 lipca)</li>
-<li>Praca tylko wewnątrz budynku z Wi-Fi</li>
-<li>Liczy się najniższa cena (od 2 417 zł netto)</li>
-<li>Skanujesz na dystansie do 7,6 m</li>
-<li>Nie wymagasz 5G, GPS ani certyfikatów FIPS</li>
+<div style="display:flex;gap:20px;flex-wrap:wrap;margin:24px 0">
+<div style="flex:1;min-width:280px;display:flex;flex-direction:column;text-align:left;border:1px solid #e2e8f0;border-radius:12px;padding:24px">
+<img src="/images/products/tc22_front.png" alt="Zebra TC22 — terminal mobilny (kolektor danych), widok z przodu" style="max-height:140px;display:block;margin:0 auto 18px" loading="lazy" />
+<h3 style="margin:0 0 14px;font-size:18px;color:#0f172a">Wybierz TC22, jeśli:</h3>
+<ul style="margin:0;padding-left:20px;color:#334155">
+<li style="margin:0 0 8px">Potrzebujesz terminali od ręki (przed 21 lipca)</li>
+<li style="margin:0 0 8px">Praca tylko wewnątrz budynku z Wi-Fi</li>
+<li style="margin:0 0 8px">Liczy się najniższa cena (od 2 417 zł netto)</li>
+<li style="margin:0 0 8px">Skanujesz na dystansie do 7,6 m</li>
+<li style="margin:0">Nie wymagasz 5G, GPS ani certyfikatów FIPS</li>
 </ul>
-<p><strong><a href="/produkt/zebra-tc22">→ Zobacz Zebra TC22</a></strong></p>
+<p style="margin-top:auto;padding-top:20px;margin-bottom:0"><a href="/produkt/zebra-tc22" style="display:inline-block;background:#2563eb;color:#ffffff;font-weight:600;padding:10px 18px;border-radius:8px;text-decoration:none">Zobacz Zebra TC22 →</a></p>
 </div>
-<div style="flex:1;min-width:260px;border:2px solid #e65100;border-radius:12px;padding:20px">
-<h3 style="color:#e65100;margin-top:0">Wybierz TC201, jeśli:</h3>
-<ul>
-<li>Kupujesz flotę na 5–7 lat (dłuższe wsparcie)</li>
-<li>Chcesz 5G i GPS w jednym modelu</li>
-<li>Potrzebujesz skanera dalekiego zasięgu (do 30 m)</li>
-<li>Działasz w sektorze regulowanym (FIPS, Common Criteria)</li>
-<li>Pracujesz w mrozie (do -20°C) lub planujesz aplikacje AI</li>
+<div style="flex:1;min-width:280px;display:flex;flex-direction:column;text-align:left;border:1px solid #e2e8f0;border-radius:12px;padding:24px">
+<img src="/images/products/tc201_front.png" alt="Zebra TC201 — nowy terminal mobilny (kolektor danych), widok z przodu" style="max-height:140px;display:block;margin:0 auto 18px" loading="lazy" />
+<h3 style="margin:0 0 14px;font-size:18px;color:#0f172a">Wybierz TC201, jeśli:</h3>
+<ul style="margin:0;padding-left:20px;color:#334155">
+<li style="margin:0 0 8px">Kupujesz flotę na 5–7 lat (dłuższe wsparcie)</li>
+<li style="margin:0 0 8px">Chcesz 5G i GPS w jednym modelu</li>
+<li style="margin:0 0 8px">Potrzebujesz skanera dalekiego zasięgu (do 30 m)</li>
+<li style="margin:0 0 8px">Działasz w sektorze regulowanym (FIPS, Common Criteria)</li>
+<li style="margin:0">Pracujesz w mrozie (do -20°C) lub planujesz aplikacje AI</li>
 </ul>
-<p><strong><a href="/kontakt">→ Zapytaj o TC201 / rezerwacja</a></strong></p>
+<p style="margin-top:auto;padding-top:20px;margin-bottom:0"><a href="/kontakt" style="display:inline-block;background:#2563eb;color:#ffffff;font-weight:600;padding:10px 18px;border-radius:8px;text-decoration:none">Zapytaj o TC201 / rezerwacja →</a></p>
 </div>
 </div>
 

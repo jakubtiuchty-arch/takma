@@ -5,6 +5,19 @@
 
 ---
 
+## 2026-06-19 — TC201: przebudowa wpisu na pierwszoplanowo TC201 + hero Higgsfield + UI
+
+- **Slug** zmieniony `zebra-tc201-vs-tc22` → `zebra-tc201`; tytuł/SEO/excerpt przestawione na TC201 (porównanie z TC22 zostaje w treści), kategoria `przewodnik`. Usunięte „serii TC2x 2026" z H1.
+- **Hero**: generowany W CAŁOŚCI w Higgsfield (nano_banana_pro) z renderami TC201 jako referencją (NIE composite ImageMag! — patrz [[feedback_hero-generate-whole-in-higgsfield]]). Finalnie ujęcie 3/4 (Front-Left ref → poprawne klawisze), pełne rozpoznawalne urządzenie, scena magazynu zalana firmową zielenią #A8F000. Warianty w `TC201/hero-34-w*.png`.
+- **GuidePage.tsx**: zmiękczony gradient nakładki hero (mniej przykrywa obraz); `overflow-x-hidden` → `overflow-x-clip` na <article> (hover-zoom nie ucinał góry); dodany hover-zoom obrazów w treści (`[&_img:hover]:scale-[1.7]`).
+- **Treść**: blok góra = 2× TC201 (przód+tył, bez TC22); sekcja skanery = 2 ujęcia 3/4 (FR+FL, gap 86px); back render podmieniony na prosty tył. Boxy decyzyjne przerobione na CZYSTE (jednolita ramka, bez badge/gradientu/cienia = anty-AI-slop), CTA jako solidny przycisk #2563eb przypięty do dołu (flex+margin-top:auto), zdjęcia TC22/TC201 na górze boksów.
+- **Nowe rendery**: `tc201_front_right.png`, `tc201_front_left.png`; `tc201_back.png` (prosty tył); hero `zebra-tc201-hero.webp` (usunięty stary `...-vs-tc22-hero.webp`).
+- **SEO/AEO/GEO zweryfikowane (localhost)**: title z frazą, meta desc 162 zn., canonical OK, OG+hero, H1 wiodący modelem, 11×H2; JSON-LD: Article(author/dates), BreadcrumbList, FAQPage 14 Q&A, SpeakableSpecification (AEO), ImageObject, Organization, WebSite; 0 img bez alt; bogata treść (296× „TC201", tabele specyfikacji, encje Qualcomm/Wi-Fi7/FIPS → GEO). Uwaga: author w schema = „Jakub Tiuchty" (globalne w GuidePage, nie zmieniam).
+- Pamięć: nowe [[reference_zebra-brand-color]] (#A8F000), [[feedback_hero-generate-whole-in-higgsfield]], rozszerzony [[feedback_no-colored-left-border]] (badge/gradient/cień/pigułka = slop).
+- tsc 0, strona 200. Commit: <ten>. Wdrożenie: po akceptacji (user zlecił commit+push tego etapu).
+
+---
+
 ## 2026-06-19 — blog: wpis Zebra TC201 vs TC22 (SEO seeding przed premierą 21.07)
 
 - **Cel:** zasiać treść pod „zebra tc201" przed premierą 21 lipca 2026; porównanie do TC22; hero z prawdziwego renderu 1:1.

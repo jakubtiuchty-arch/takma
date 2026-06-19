@@ -223,7 +223,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
                 className="absolute inset-0 pointer-events-none hidden sm:block"
                 style={{
                   background:
-                    'linear-gradient(to right, #020102 0%, #020102 50%, rgba(2,1,2,0.92) 60%, rgba(2,1,2,0.55) 72%, rgba(2,1,2,0.2) 86%, rgba(2,1,2,0) 100%)',
+                    'linear-gradient(to right, #020102 0%, #020102 22%, rgba(2,1,2,0.9) 38%, rgba(2,1,2,0.6) 52%, rgba(2,1,2,0.28) 70%, rgba(2,1,2,0.08) 86%, rgba(2,1,2,0) 100%)',
                 }}
               />
               <div className="relative">
@@ -330,14 +330,14 @@ export default function GuidePage({ guide }: GuidePageProps) {
             </aside>
 
             {/* Main Content */}
-            <article className="flex-1 max-w-3xl min-w-0 overflow-x-hidden">
+            <article className="flex-1 max-w-3xl min-w-0 overflow-x-clip">
               {/* Content Sections */}
               <div className="space-y-10">
                 {guide.sections.map(section => (
                   <section key={section.id} id={section.id}>
                     <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 break-words">{section.heading}</h2>
                     <div
-                      className="prose prose-gray max-w-none sm:text-justify prose-headings:text-gray-900 prose-headings:text-left prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl [&_img]:max-h-48 sm:[&_img]:max-h-64 [&_table]:!text-[10px] sm:[&_table]:!text-xs md:[&_table]:!text-sm [&_table]:w-full [&_table]:border-collapse [&_table]:shadow-sm [&_table]:border [&_table]:border-gray-200 [&_th]:bg-gray-800 [&_th]:text-white [&_th]:text-left [&_th]:font-semibold [&_th]:!normal-case [&_th]:!tracking-normal [&_th]:!px-1.5 [&_th]:!py-1.5 sm:[&_th]:!px-3 sm:[&_th]:!py-2 md:[&_th]:!px-4 md:[&_th]:!py-3 [&_td]:!px-1.5 [&_td]:!py-1.5 sm:[&_td]:!px-3 sm:[&_td]:!py-2 md:[&_td]:!px-4 md:[&_td]:!py-3 [&_td]:border-t [&_td]:border-gray-100 [&_tbody_tr:nth-child(even)]:bg-gray-50/60 [&_tbody_tr:hover]:bg-blue-50/40 [&_tbody_tr]:transition-colors [&_td:first-child]:font-semibold [&_td:first-child]:text-gray-900 [&_th_a]:text-white [&_th_a]:underline [&_caption]:text-left [&_caption]:text-xs [&_caption]:text-gray-500 [&_caption]:mb-2 [&_caption]:font-medium"
+                      className="prose prose-gray max-w-none sm:text-justify prose-headings:text-gray-900 prose-headings:text-left prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl [&_img]:max-h-48 sm:[&_img]:max-h-64 [&_img]:transition-transform [&_img]:duration-300 [&_img]:ease-out [&_img]:cursor-zoom-in [&_img]:relative [&_img:hover]:scale-[1.7] [&_img:hover]:z-20 [&_table]:!text-[10px] sm:[&_table]:!text-xs md:[&_table]:!text-sm [&_table]:w-full [&_table]:border-collapse [&_table]:shadow-sm [&_table]:border [&_table]:border-gray-200 [&_th]:bg-gray-800 [&_th]:text-white [&_th]:text-left [&_th]:font-semibold [&_th]:!normal-case [&_th]:!tracking-normal [&_th]:!px-1.5 [&_th]:!py-1.5 sm:[&_th]:!px-3 sm:[&_th]:!py-2 md:[&_th]:!px-4 md:[&_th]:!py-3 [&_td]:!px-1.5 [&_td]:!py-1.5 sm:[&_td]:!px-3 sm:[&_td]:!py-2 md:[&_td]:!px-4 md:[&_td]:!py-3 [&_td]:border-t [&_td]:border-gray-100 [&_tbody_tr:nth-child(even)]:bg-gray-50/60 [&_tbody_tr:hover]:bg-blue-50/40 [&_tbody_tr]:transition-colors [&_td:first-child]:font-semibold [&_td:first-child]:text-gray-900 [&_th_a]:text-white [&_th_a]:underline [&_caption]:text-left [&_caption]:text-xs [&_caption]:text-gray-500 [&_caption]:mb-2 [&_caption]:font-medium"
                       dangerouslySetInnerHTML={{ __html: wrapTablesInScroll(boldifyModels(section.content)) }}
                     />
                   </section>
