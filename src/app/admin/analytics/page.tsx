@@ -3,6 +3,7 @@ import { gaConfigured, gaDashboard, type GaRow } from '@/lib/ga'
 import { AnalyticsTabs, Card, fmt, fmtDuration, pct } from './_ui'
 import { Md } from './_markdown'
 import LiveNow from './LiveNow'
+import AnalizaChat from './AnalizaChat'
 import Link from 'next/link'
 
 export const dynamic = 'force-dynamic'
@@ -148,6 +149,9 @@ export default async function AnalyticsPage({ searchParams }: { searchParams: Pr
           <Md text={digest.summary} />
         </div>
       )}
+
+      {/* Dialog z AI: właściciel dopisuje kontekst, AI uwzględnia go w codziennej analizie */}
+      <AnalizaChat />
 
       {data && (
         <>

@@ -71,8 +71,21 @@ export async function GET(request: NextRequest) {
   const [data, day] = await Promise.all([gaDashboard(7), gaDayDetail(date)])
   const alerts = dayAlerts(date, day)
 
+  // Kontekst od właściciela z czatu w panelu: wiadomości przypięte (zawsze) +
+  // wiadomości użytkownika z ostatnich 21 dni. Dzięki temu AI nie alarmuje
+  // o anomaliach, które właściciel już wyjaśnił.
+  const ctxSince = new Date(Date.now() - 21 * 24 * 60 * 60 * 1000)
+  const ownerNotes = await prisma.gaChatMessage.findMany({
+    where: { role: 'user', OR: [{ pinned: true }, { createdAt: { gte: ctxSince } }] },
+    orderBy: { createdAt: 'asc' },
+    take: 60,
+  })
+  const ownerContext = ownerNotes
+    .map((m) => `  - [${new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Warsaw' }).format(m.createdAt)}]${m.pinned ? ' (trwałe)' : ''} ${m.content.replace(/\s+/g, ' ').trim()}`)
+    .join('\n')
+
   const prompt = `Jesteś analitykiem ruchu e-commerce B2B (takma.com.pl — sprzedaż etykiet, taśm i terminali Zebra). Przeanalizuj dane GA4 z ostatnich 7 dni względem poprzednich 7 dni. Pisz po polsku, konkretnie, liczbami. Bez ogólników.
-${alerts.length ? `\n## ⚠️ ALERTY za wczoraj (${date}) — odnieś się do nich w analizie\n${alerts.map((a) => `  - ${a}`).join('\n')}\n` : ''}
+${ownerContext ? `\n## 🗣️ KONTEKST OD WŁAŚCICIELA (z czatu w panelu) — BEZWZGLĘDNIE UWZGLĘDNIJ\nWłaściciel wyjaśnił poniższe sytuacje. NIE zgłaszaj ponownie jako anomalii niczego, co już wyjaśnił. Jeśli alert dotyczy wyjaśnionej sprawy — zamiast alarmować, krótko odnotuj „zgodnie z wyjaśnieniem właściciela: …". Uwzględniaj daty (wyjaśnienie może dotyczyć konkretnego okresu).\n${ownerContext}\n` : ''}${alerts.length ? `\n## ⚠️ ALERTY za wczoraj (${date}) — odnieś się do nich w analizie (ale pomiń te już wyjaśnione przez właściciela)\n${alerts.map((a) => `  - ${a}`).join('\n')}\n` : ''}
 
 ## Metryki (ostatnie 7 dni)
 ${metricsLine(data.current)}

@@ -5,6 +5,21 @@
 
 ---
 
+## 2026-06-19 — analytics: dialog z AI o analizie (kontekst → codzienna analiza)
+
+- **Cel:** właściciel chce prowadzić dialog z AI przy „Analizie dnia" — dopisywać kontekst (np. „spadek bo inwentaryzacja"), żeby AI nie alarmowało codziennie o wyjaśnionych anomaliach.
+- Nowe/zmienione pliki:
+  - `prisma/schema.prisma` — model `GaChatMessage` (role/content/pinned/createdAt). `db push` wykonany.
+  - `src/app/admin/analytics/chat/route.ts` (nowy) — GET historia (60), POST: wiadomość→odpowiedź Sonnet (system = ostatni digest+metryki+alerty, historia 30); akcje `pin`/`delete`. Pod `/admin/*` (cookie).
+  - `src/app/admin/analytics/AnalizaChat.tsx` (nowy) — czat pod „Analizą dnia": dymki, Enter wysyła, 📌 przypina trwały kontekst, usuwanie. Odpowiedzi AI renderowane przez `Md`.
+  - `src/app/admin/analytics/page.tsx` — render `<AnalizaChat/>` pod digestem.
+  - `src/app/api/cron/ga-digest/route.ts` — wstrzyknięcie kontekstu właściciela (przypięte + user msgs z 21 dni) do promptu: „NIE zgłaszaj ponownie wyjaśnionych anomalii".
+- **Jak działa pętla:** piszesz w czacie → trafia do tabeli → następny cron `ga-digest` czyta Twoje wyjaśnienia i pomija wyjaśnione alerty. 📌 = kontekst trwały (zawsze w analizie, bez wygasania po 21 dniach).
+- Build OK (exit 0), tsc 0. Commit: <uzupełnić>. Deploy: <uzupełnić>.
+- TODO: zweryfikować w panelu (napisać testową wiadomość, sprawdzić odpowiedź); ewentualnie cron `ga-digest --force` by zobaczyć efekt kontekstu od razu.
+
+---
+
 ## 2026-06-19 — analytics: wyłącznik GA per-urządzenie + log IP na żywo
 
 - **Cel:** (1) wykluczyć siebie z analityki mimo dynamicznego IP, (2) pokazać w `/admin/analytics` kto teraz na stronie (IP).

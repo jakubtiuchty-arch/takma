@@ -715,6 +715,19 @@ model GaDigest {
   @@map("ga_digest")
 }
 
+// Dialog właściciela z AI o analizie ruchu — kontekst, który AI uwzględnia
+// w codziennej analizie (np. wyjaśnione anomalie, których nie ma już zgłaszać).
+model GaChatMessage {
+  id        String   @id @default(cuid())
+  role      String // 'user' | 'assistant'
+  content   String   @db.Text
+  pinned    Boolean  @default(false) // trwały kontekst — zawsze trafia do codziennej analizy
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@map("ga_chat_message")
+}
+
 // Log odwiedzin na żywo — IP + strona + miasto, do podglądu „kto teraz na stronie"
 // w /admin/analytics. RODO: dane techniczne (uzasadniony interes/ops), tylko admin,
 // retencja 48 h (auto-kasowanie przy odczycie). NIE łączymy z danymi osobowymi klienta.
