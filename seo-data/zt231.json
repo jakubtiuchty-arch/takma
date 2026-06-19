@@ -1,0 +1,49 @@
+{
+  "product": "Zebra ZT231 (drukarka półprzemysłowa)",
+  "slug": "zebra-zt231",
+  "url": "https://www.takma.com.pl/produkt/zebra-zt231",
+  "collected_at": "2026-06-19",
+  "context": "Strona uciekła na granicę strony 1/2 Google (śr. poz. 11,3). Cel: dopchnąć na stałe na stronę 1.",
+
+  "gsc": {
+    "period_days": 90,
+    "quick_wins": [
+      { "keyword": "zebra zt231", "impressions": 38, "position": 11.3, "ctr": 0.0 },
+      { "keyword": "zt231", "impressions": 5, "position": 6.4, "ctr": 0.0 },
+      { "keyword": "zebra zt231 rfid", "impressions": 2, "position": 9.0, "ctr": 0.0 },
+      { "keyword": "zebra zt231 manual", "impressions": 3, "position": 9.3, "ctr": 0.0 }
+    ]
+  },
+
+  "ga4": { "period_days": 90, "pageviews": 86, "active_users": 65, "engagement_rate": 0.773, "form_start": 2, "conversions": 0, "note": "Ruch jest, 77% eng, 0 leadów." },
+
+  "ahrefs": {
+    "country": "pl",
+    "keywords": [
+      { "keyword": "zebra zt231", "volume_monthly": 119, "difficulty": 0, "traffic_potential": 70, "note": "główna fraza" },
+      { "keyword": "zebra zt230", "volume_monthly": 166, "difficulty": 0, "traffic_potential": 100, "note": "poprzednik — anchor 'następca ZT230'" },
+      { "keyword": "zt231", "volume_monthly": 100 },
+      { "keyword": "drukarka etykiet przemysłowa", "volume_monthly": 100, "cpc": 70, "note": "money keyword kategorii" },
+      { "keyword": "zebra zt411", "volume_monthly": 383, "note": "większy brat — cross-link" },
+      { "keyword": "drukarka zebra zt231", "volume_monthly": 20 }
+    ]
+  },
+
+  "competitors": {
+    "method": "fetch + parser editorial words (<p>/<li>/<td>/<h2>/<h3>)",
+    "data": [
+      { "name": "netselekt", "editorial_words": 4480, "json_ld_product": false, "json_ld_offer": true },
+      { "name": "bcmarket", "editorial_words": 1729, "json_ld_product": true, "json_ld_offer": true },
+      { "name": "elmatech", "editorial_words": 656, "json_ld_product": false, "json_ld_offer": false }
+    ],
+    "median_editorial_words": 1729,
+    "note": "Tylko bcmarket ma JSON-LD Product. My mamy Product+Offer+FAQ — przewaga."
+  },
+
+  "audit_rules": {
+    "min_content_words": 1902,
+    "min_content_words_basis": "110% mediany editorial konkurencji (1729)",
+    "quick_win_phrases": ["zebra zt231", "zt231", "zebra zt231 rfid", "zebra zt231 manual"],
+    "competitor_gap_phrases": ["zebra zt231", "zt231", "termotransfer", "300 dpi", "rfid", "zt230", "zt411", "ethernet", "bluetooth", "przemysłowa", "drukarka etykiet", "zebra zt230", "drukarka etykiet przemysłowa"]
+  }
+}
