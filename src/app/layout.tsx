@@ -6,6 +6,7 @@ import './globals.css'
 import LayoutShell from '@/components/layout/LayoutShell'
 import PostHogProvider from '@/components/PostHogProvider'
 import { AutoLinkTracking } from '@/components/tracking/AutoLinkTracking'
+import LiveBeacon from '@/components/LiveBeacon'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Script from 'next/script'
@@ -148,7 +149,16 @@ export default async function RootLayout({
               strategy="afterInteractive"
             />
             <Script id="ga4-init" strategy="afterInteractive">
-              {`window.dataLayer = window.dataLayer || [];
+              {`(function(){
+  var GA='${process.env.NEXT_PUBLIC_GA_ID}';
+  try {
+    var p=new URLSearchParams(location.search);
+    if(p.get('ga-off')==='1'){ localStorage.setItem('ga_optout','1'); console.info('GA: wyłączone na tym urządzeniu (?ga-off)'); }
+    if(p.get('ga-on')==='1'){ localStorage.removeItem('ga_optout'); console.info('GA: włączone na tym urządzeniu (?ga-on)'); }
+    if(localStorage.getItem('ga_optout')==='1'){ window['ga-disable-'+GA]=true; }
+  } catch(e){}
+})();
+window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', { send_page_view: true });`}
@@ -185,6 +195,7 @@ gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', { send_page_view: true });`}
       <Analytics />
       <SpeedInsights />
       {!isAdmin && !isPanel && <AutoLinkTracking />}
+      {!isAdmin && !isPanel && <LiveBeacon />}
       {!isAdmin && !isPanel && (
         <>
           <Script id="skapiec-dlapi-init" strategy="afterInteractive">

@@ -714,3 +714,18 @@ model GaDigest {
 
   @@map("ga_digest")
 }
+
+// Log odwiedzin na żywo — IP + strona + miasto, do podglądu „kto teraz na stronie"
+// w /admin/analytics. RODO: dane techniczne (uzasadniony interes/ops), tylko admin,
+// retencja 48 h (auto-kasowanie przy odczycie). NIE łączymy z danymi osobowymi klienta.
+model LiveVisitor {
+  id        String   @id @default(cuid())
+  ip        String
+  path      String
+  city      String?
+  country   String?
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@map("live_visitor")
+}

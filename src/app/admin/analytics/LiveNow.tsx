@@ -3,13 +3,16 @@
 import { useEffect, useState } from 'react'
 import type { GaRealtime } from '@/lib/ga'
 
+interface LiveIp { ip: string; path: string; city: string | null; country: string | null; minutesAgo: number }
+type LiveData = GaRealtime & { liveIps?: LiveIp[] }
+
 /**
  * Sekcja „Na żywo": kto jest teraz na stronie (Realtime API, ostatnie 30 min)
  * + skąd przyszły dzisiejsze sesje (intraday — GA4 nie udostępnia źródeł
  * w realtime). Odświeża się co 30 s.
  */
 export default function LiveNow() {
-  const [data, setData] = useState<GaRealtime | null>(null)
+  const [data, setData] = useState<LiveData | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [updatedAt, setUpdatedAt] = useState<string>('')
 
@@ -103,6 +106,40 @@ export default function LiveNow() {
             </table>
           )}
         </div>
+      </div>
+
+      {/* Adresy IP teraz na stronie (własny log żądań — retencja 48 h) */}
+      <div className="mt-5 pt-5 border-t border-gray-100">
+        <h3 className="text-sm font-semibold text-gray-700 mb-2">
+          Adresy IP na stronie{' '}
+          <span className="font-normal text-gray-400" title="Z własnego logu żądań (Vercel). Unikalne IP z ostatnich 10 minut. Dane techniczne, retencja 48 h.">
+            (ostatnie 10 min)
+          </span>
+        </h3>
+        {!data?.liveIps || data.liveIps.length === 0 ? (
+          <p className="text-xs text-gray-400">Brak aktywnych adresów w ostatnich 10 minutach.</p>
+        ) : (
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="text-left text-xs text-gray-400">
+                <th className="font-medium pb-1">IP</th>
+                <th className="font-medium pb-1">Miasto</th>
+                <th className="font-medium pb-1">Strona</th>
+                <th className="font-medium pb-1 text-right">Aktywność</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {data.liveIps.map((v, i) => (
+                <tr key={i}>
+                  <td className="py-1.5 pr-2 font-mono text-xs text-gray-800 whitespace-nowrap">{v.ip}</td>
+                  <td className="py-1.5 pr-2 text-gray-600 whitespace-nowrap">{[v.city, v.country].filter(Boolean).join(', ') || '—'}</td>
+                  <td className="py-1.5 pr-2 text-gray-600 truncate max-w-[280px]" title={v.path}>{v.path}</td>
+                  <td className="py-1.5 text-right text-gray-400 whitespace-nowrap">{v.minutesAgo === 0 ? 'teraz' : `${v.minutesAgo} min temu`}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
       </div>
     </div>
   )

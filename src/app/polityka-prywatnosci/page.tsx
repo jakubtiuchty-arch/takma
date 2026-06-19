@@ -277,6 +277,11 @@ export default function PrivacyPolicyPage() {
                 <li><strong>Zapytanie / formularz kontaktowy:</strong> imię i nazwisko, e-mail, telefon, treść wiadomości</li>
                 <li><strong>Dane techniczne (automatycznie):</strong> adres IP, przeglądarka, system, czas wizyty</li>
               </ul>
+              <p>Adres IP wraz z otwieraną podstroną zapisujemy także w wewnętrznym logu
+                bieżącego ruchu (podgląd aktywności serwisu dla administratora) — na podstawie
+                prawnie uzasadnionego interesu (bezpieczeństwo i monitoring techniczny,
+                art. 6 ust. 1 lit. f RODO). Wpisy te są dostępne wyłącznie dla administratora
+                i automatycznie usuwane po 48 godzinach.</p>
               <p>Podanie danych niezbędnych do realizacji zamówienia jest wymogiem umownym.
                 Podanie pozostałych danych jest dobrowolne.</p>
             </div>

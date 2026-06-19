@@ -40,3 +40,7 @@ next-env.d.ts
 *.swo
 
 /src/generated/prisma
+
+# Wielkie feedy produktowe (setki MB, >limit GitHuba 100 MB) — nie commitować
+PLL_content_feed*/
+tmp-banner/
