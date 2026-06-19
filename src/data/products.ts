@@ -7136,8 +7136,8 @@ const industrialLightPrinters: Product[] = [
     slug: 'zebra-zt231',
     name: 'Zebra ZT231',
     shortDescription: 'Zebra ZT231 — drukarka przemysłowa 4" z kolorowym ekranem dotykowym 4,3", metalową konstrukcją i opcjonalnym RFID UHF, następca ZT230',
-    seoTitle: 'Zebra ZT231 — drukarka etykiet RFID LCD 4,3" | od 2 551 zł',
-    seoDescription: 'Zebra ZT231 — półprzemysłowa 4" RFID dla logistyki, magazynów i dystrybucji. LCD 4,3", 304 mm/s. ZT23142-D0E000FZ od 2 551 zł netto.',
+    seoTitle: 'Zebra ZT231 — drukarka etykiet półprzemysłowa 4" | od 2 551 zł',
+    seoDescription: 'Zebra ZT231 — półprzemysłowa drukarka etykiet 4" do magazynu i logistyki. Druk termiczny i termotransfer, kolorowy LCD 4,3", opcja RFID. Od 2 551 zł netto.',
     description: `Zebra ZT231 to najlepszy wybór dla firm produkcyjnych i magazynów przechodzących z biurkowych drukarek etykiet na przemysłowe, które potrzebują kompaktowej drukarki z ekranem dotykowym i metalową konstrukcją.
 
 Zebra ZT231 to przemysłowa drukarka etykiet klasy light-industrial zaprojektowana jako bezpośredni następca popularnego modelu ZT230. Łączy kompaktowe wymiary (432 × 241 × 279 mm) z wytrzymałą metalową ramą i metalowymi obudowami, zapewniając trwałość na poziomie klasy przemysłowej przy jednoczesnej oszczędności przestrzeni na stanowisku pracy. Dwuskrzydłowe drzwi mediów (bi-fold) wymagają jedynie 10 cm wolnej przestrzeni nad drukarką do otwarcia — idealne rozwiązanie do ciasnych pomieszczeń produkcyjnych i magazynowych.
