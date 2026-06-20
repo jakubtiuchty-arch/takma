@@ -134,7 +134,8 @@ export function profileForPrompt(p: GbpProfile): string {
     `Opis (editorial): ${p.summary || 'BRAK'}`,
     `Zdjęcia (widoczne w API): ${p.photoCount}`,
     `Godziny: ${p.hours.join(' | ') || 'BRAK'}`,
-    `Najnowsze opinie:`,
+    `Najnowsze opinie (max 5 z Places API):`,
     ...p.reviews.map((r) => `  - [${r.rating}★ ${r.relativeTime}] ${r.author}: ${r.text.slice(0, 240)}`),
+    `WAŻNE: Places API NIE zwraca odpowiedzi właściciela na opinie — NIE wnioskuj, że firma nie odpowiedziała. Informacja o odpowiedziach będzie dostępna dopiero w Fazie 2 (Business Profile API).`,
   ].join('\n')
 }

@@ -33,7 +33,7 @@ Zwróć WYŁĄCZNIE poprawny JSON (bez markdown fences) w formacie:
     {"title": "<krótkie zadanie>", "detail": "<1-2 zdania jak i dlaczego>", "priority": "high|med|low", "category": "opinie|tresc|zdjecia|dane|aktywnosc|ogolne"}
   ]
 }
-Zasady: 4-7 zadań, posortowane od najważniejszego. Priorytet wg realnego wpływu na zaufanie i konwersję (dla B2B: kompletność danych, opinie i odpowiedzi na nie, zdjęcia, opis, aktualność). Nie wymyślaj danych, których nie ma. Jeśli czegoś brakuje (np. opis, telefon) — to zadanie wysokiego priorytetu.`
+Zasady: 4-7 zadań, posortowane od najważniejszego. Priorytet wg realnego wpływu na zaufanie i konwersję (dla B2B: kompletność danych, zdjęcia, opis, aktualność, reagowanie na opinie). Nie wymyślaj danych, których nie ma. Jeśli czegoś brakuje (np. opis, telefon) — to zadanie wysokiego priorytetu. KRYTYCZNE: Places API nie zwraca odpowiedzi właściciela na opinie — NIE twierdź, że firma „nie odpowiedziała" / „brak reakcji" na opinie (nie wiesz tego). Możesz co najwyżej zasugerować „upewnij się, że każda negatywna opinia ma odpowiedź" jako ogólną dobrą praktykę.`
 
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
   const msg = await client.messages.create({

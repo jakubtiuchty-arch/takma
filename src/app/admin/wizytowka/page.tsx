@@ -115,7 +115,7 @@ export default async function WizytowkaPage() {
 
           <div className="bg-white rounded-xl border border-gray-200 p-5 mb-6">
             <h2 className="text-lg font-semibold text-gray-900 mb-1">Opinie</h2>
-            <p className="text-xs text-gray-400 mb-3">Places API udostępnia do 5 najnowszych opinii. {businessApiConfigured() ? 'Faza 2 aktywna — odpowiedzi można publikować automatycznie.' : 'Odpowiedzi: na razie draft do skopiowania (auto-publikacja po włączeniu Business Profile API).'}</p>
+            <p className="text-xs text-gray-400 mb-3">Places API udostępnia do 5 najnowszych opinii i <b>nie pokazuje Waszych odpowiedzi</b> (te będą widoczne w Fazie 2 — Business Profile API). {businessApiConfigured() ? 'Faza 2 aktywna — odpowiedzi można publikować automatycznie.' : 'Tu generujemy draft do skopiowania do GBP.'}</p>
             <Reviews reviews={profile.reviews} />
           </div>
 
