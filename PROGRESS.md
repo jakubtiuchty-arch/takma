@@ -5,6 +5,18 @@
 
 ---
 
+## 2026-06-20 — Panel „Wizytówka Google" (/admin/wizytowka) — Faza 1
+
+- **Cel:** mini-Localo dla wizytówki TAKMA (nie geo-grid — ogólnopolscy; nacisk na jakość profilu). Decyzja: TAKMA tak, serwis-zebry pominięty (ma dobrą 4,6★).
+- **Faza 1 (Places API New):** kafelki (ocena/opinie/zdjęcia/status) + kompletność danych, **audyt AI** (score 0-100) + **inteligentne zadania** (priorytety, odhaczanie), **opinie** (do 5) z AI-draftem odpowiedzi, **doradca AI** (czat, zna profil+audyt).
+- **Plumbing Fazy 2** (Business Profile API): `businessApiConfigured()` + miejsca w UI (statystyki telefonów/tras, auto-odpowiedzi, posty, ochrona) — kod dopiszemy po dostępie Google.
+- Pliki: `src/lib/gbp.ts` (Places New), `src/lib/gbp-snapshot.ts` (cache 12h), `src/app/admin/wizytowka/{page,WizytowkaChat,WizytowkaUI}.tsx` + trasy `{audit,chat,reply,task}/route.ts`; modele Prisma `GbpSnapshot/GbpTask/GbpAudit/GbpChatMessage` (db push OK); pozycja w Sidebar; `INSTRUKCJA-wizytowka-google-setup.md`.
+- **Konfiguracja:** `GOOGLE_PLACES_API_KEY` + `GBP_PLACE_ID=ChIJ2fZ3X3_pD0cRz2tBiCg5N_c` (TAKMA – Centrum Systemów Mobilnych, 3,7★/13 opinii) — w .env.local + Vercel prod. Druga wizytówka (Serwis Zebra 4,6★) = serwis-zebry, pominięta.
+- tsc 0, build exit 0. Commit: <ten>. Deploy: auto z push.
+- TODO Faza 2: wniosek Business Profile API + OAuth → statystyki/auto-odpowiedzi/posty/ochrona. Po deployu: zalogować się → „Uruchom audyt AI".
+
+---
+
 ## 2026-06-19 — TC201: przebudowa wpisu na pierwszoplanowo TC201 + hero Higgsfield + UI
 
 - **Slug** zmieniony `zebra-tc201-vs-tc22` → `zebra-tc201`; tytuł/SEO/excerpt przestawione na TC201 (porównanie z TC22 zostaje w treści), kategoria `przewodnik`. Usunięte „serii TC2x 2026" z H1.

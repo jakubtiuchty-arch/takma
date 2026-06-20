@@ -742,3 +742,52 @@ model LiveVisitor {
   @@index([createdAt])
   @@map("live_visitor")
 }
+
+// Wizytówka Google (Google Business Profile) — panel /admin/wizytowka.
+// Snapshot stanu profilu (z Places API) — historia do trendów i wykrywania zmian (ochrona).
+model GbpSnapshot {
+  id        String   @id @default(cuid())
+  data      String   @db.Text // JSON: znormalizowany profil (ocena, opinie, godziny, kategorie, zdjęcia...)
+  rating    Float? // szybki dostęp do trendu
+  reviews   Int? // liczba opinii
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@map("gbp_snapshot")
+}
+
+// AI „inteligentne zadania" optymalizacji wizytówki + zapisany audyt (markdown).
+model GbpTask {
+  id        String   @id @default(cuid())
+  title     String
+  detail    String   @db.Text
+  priority  String   @default("med") // high | med | low
+  category  String   @default("ogolne") // opinie | tresc | zdjecia | dane | aktywnosc | ogolne
+  done      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@map("gbp_task")
+}
+
+// Najnowszy audyt AI wizytówki (1 aktywny wpis = ostatni; trzymamy markdown + score).
+model GbpAudit {
+  id        String   @id @default(cuid())
+  summary   String   @db.Text // markdown
+  score     Int? // 0-100 kompletność/jakość
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@map("gbp_audit")
+}
+
+// Dialog właściciela z AI o strategii wizytówki (jak GaChatMessage dla analytics).
+model GbpChatMessage {
+  id        String   @id @default(cuid())
+  role      String // user | assistant
+  content   String   @db.Text
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@map("gbp_chat_message")
+}
