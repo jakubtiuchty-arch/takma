@@ -7135,9 +7135,9 @@ const industrialLightPrinters: Product[] = [
     id: 'zebra-zt231',
     slug: 'zebra-zt231',
     name: 'Zebra ZT231',
-    shortDescription: 'Zebra ZT231 — drukarka przemysłowa 4" z kolorowym ekranem dotykowym 4,3", metalową konstrukcją i opcjonalnym RFID UHF, następca ZT230',
-    seoTitle: 'Zebra ZT231 — drukarka etykiet półprzemysłowa 4" | od 2 551 zł',
-    seoDescription: 'Zebra ZT231 — półprzemysłowa drukarka etykiet 4" do magazynu i logistyki. Druk termiczny i termotransfer, kolorowy LCD 4,3", opcja RFID. Od 2 551 zł netto.',
+    shortDescription: 'Zebra ZT231 — drukarka przemysłowa 4" z kolorowym ekranem dotykowym 4,3", metalową konstrukcją i prędkością druku do 304 mm/s, następca ZT230',
+    seoTitle: 'Drukarka przemysłowa Zebra ZT231 — 203/300 dpi 4" | od 2 551 zł',
+    seoDescription: 'Drukarka przemysłowa Zebra ZT231 — 4" do magazynu, logistyki i produkcji. Druk termiczny i termotransferowy, 203/300 dpi, kolorowy LCD 4,3". Od 2 551 zł netto.',
     description: `Zebra ZT231 to najlepszy wybór dla firm produkcyjnych i magazynów przechodzących z biurkowych drukarek etykiet na przemysłowe, które potrzebują kompaktowej drukarki z ekranem dotykowym i metalową konstrukcją.
 
 Zebra ZT231 to przemysłowa drukarka etykiet klasy light-industrial zaprojektowana jako bezpośredni następca popularnego modelu ZT230. Łączy kompaktowe wymiary (432 × 241 × 279 mm) z wytrzymałą metalową ramą i metalowymi obudowami, zapewniając trwałość na poziomie klasy przemysłowej przy jednoczesnej oszczędności przestrzeni na stanowisku pracy. Dwuskrzydłowe drzwi mediów (bi-fold) wymagają jedynie 10 cm wolnej przestrzeni nad drukarką do otwarcia — idealne rozwiązanie do ciasnych pomieszczeń produkcyjnych i magazynowych.
@@ -7152,7 +7152,7 @@ Standardowe interfejsy: USB 2.0, RS-232, Ethernet 10/100, USB Host i Bluetooth L
 
 Platforma Zebra Print DNA zapewnia kompletny zestaw narzędzi IT: Printer Profile Manager Enterprise do zdalnego zarządzania flotą, PrintSecure do ochrony przed cyberatakami, Visibility Services do monitoringu statusu i Cloud Connect do integracji z chmurą. Analityka on-board oraz wykrywanie uszkodzonych elementów głowicy (printhead element out detection) pomagają planować konserwację predykcyjną. Certyfikat ENERGY STAR potwierdza niskie zużycie energii.
 
-Kluczowa przewaga ZT231 nad modelem ZT111: kolorowy ekran dotykowy 4,3" (vs 5-kolorowe diody LED i 3 przyciski w ZT111), metalowe obudowy (vs plastikowe w ZT111), wyższa prędkość druku 304 mm/s (vs 254 mm/s), obsługa opcjonalnego kodowania RFID UHF i emulacja drukarek EPL/EPL2. ZT231 jest idealnym wyborem dla firm produkcyjnych, logistycznych i magazynowych, które potrzebują niezawodnej drukarki przemysłowej o kompaktowych wymiarach i intuicyjnej obsłudze — bez kompromisów w zakresie prędkości, jakości druku i możliwości rozbudowy.
+Kluczowa przewaga ZT231 nad modelem ZT111: kolorowy ekran dotykowy 4,3" (vs 5-kolorowe diody LED i 3 przyciski w ZT111), metalowe obudowy (vs plastikowe w ZT111), wyższa prędkość druku 304 mm/s (vs 254 mm/s) i emulacja drukarek EPL/EPL2. ZT231 jest idealnym wyborem dla firm produkcyjnych, logistycznych i magazynowych, które potrzebują niezawodnej drukarki przemysłowej o kompaktowych wymiarach i intuicyjnej obsłudze — bez kompromisów w zakresie prędkości, jakości druku i możliwości rozbudowy.
 
 Zebra ZT231 to uniwersalna drukarka etykiet klasy light-industrial, która sprawdzi się jako drukarka kodów kreskowych w magazynach, centrach dystrybucyjnych i na liniach produkcyjnych. Jako drukarka termotransferowa obsługuje trwałe etykiety na taśmach woskowych, woskowo-żywicznych i żywicznych — od papierowych etykiet magazynowych po syntetyczne oznaczenia produktów. Jeśli potrzebujesz 600 dpi, linerless lub nawijaka full rewind, rozważ model [ZT411](/produkt/zebra-zt411) — pełne porównanie z cenami i TCO: [ZT231 vs ZT411](/poradnik/zebra-zt231-vs-zt411-porownanie).
 
@@ -7208,7 +7208,6 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Wilgotność pracy', value: '20–85% bez kondensacji' },
       { name: 'Zasilanie', value: '100–240 VAC, 50/60 Hz' },
       { name: 'Certyfikaty', value: 'ENERGY STAR, CE, FCC Class B, IEC 62368-1' },
-      { name: 'Opcje RFID', value: 'UHF RFID (zestaw do montażu w terenie)' },
       { name: 'Gwarancja', value: '1 rok (rozszerzenie: Zebra OneCare)' },
     ],
     applications: [
@@ -7220,7 +7219,6 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'Etykiety laboratoryjne i próbek',
       'Oznaczenia banku krwi i farmacji',
       'Etykiety cenowe i oznaczenia sklepowe',
-      'Kodowanie RFID UHF (opcja)',
       'Cross-docking i centra dystrybucyjne',
     ],
     variants: [
@@ -7296,11 +7294,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     faq: [
       {
         question: 'Czym różni się Zebra ZT231 od ZT111?',
-        answer: 'ZT231 to wyższy model w linii drukarek przemysłowych Zebra. Kluczowe różnice: kolorowy dotykowy wyświetlacz 4,3" (vs 5-kolorowe diody LED i 3 przyciski w ZT111), metalowe obudowy (vs plastikowe w ZT111), wyższa prędkość druku 304 mm/s (vs 254 mm/s), obsługa opcjonalnego kodowania RFID UHF i emulacja drukarek EPL/EPL2. ZT231 waży 9,1 kg (vs 7,7 kg) i jest przeznaczona do bardziej wymagających środowisk przemysłowych.',
-      },
-      {
-        question: 'Czy Zebra ZT231 obsługuje kodowanie RFID?',
-        answer: 'Tak — ZT231 obsługuje opcjonalne kodowanie UHF RFID poprzez zestaw do montażu w terenie (field-installable RFID kit). Adaptacyjna technologia kodowania Zebra eliminuje skomplikowane wytyczne dotyczące rozmieszczenia tagów RFID, co upraszcza kalibrację i zapewnia elastyczność w doborze mediów RFID.',
+        answer: 'ZT231 to wyższy model w linii drukarek przemysłowych Zebra. Kluczowe różnice: kolorowy dotykowy wyświetlacz 4,3" (vs 5-kolorowe diody LED i 3 przyciski w ZT111), metalowe obudowy (vs plastikowe w ZT111), wyższa prędkość druku 304 mm/s (vs 254 mm/s) i emulacja drukarek EPL/EPL2. ZT231 waży 9,1 kg (vs 7,7 kg) i jest przeznaczona do bardziej wymagających środowisk przemysłowych.',
       },
       {
         question: 'Jakie rolki etykiet pasują do drukarki Zebra ZT231?',
@@ -7308,7 +7302,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Czy Zebra ZT231 zastępuje model ZT230?',
-        answer: 'Tak — ZT231 jest bezpośrednim następcą ZT230. Oferuje pełną kompatybilność wsteczną z formatami etykiet ZPL/ZPL II i EPL/EPL2, co oznacza że istniejące szablony etykiet i integracje oprogramowania działają bez zmian. Kluczowe ulepszenia: kolorowy ekran dotykowy 4,3" (vs monochromatyczny LCD), nowsza architektura procesora, obsługa RFID UHF, Wi-Fi 802.11ac i BLE.',
+        answer: 'Tak — ZT231 jest bezpośrednim następcą ZT230. Oferuje pełną kompatybilność wsteczną z formatami etykiet ZPL/ZPL II i EPL/EPL2, co oznacza że istniejące szablony etykiet i integracje oprogramowania działają bez zmian. Kluczowe ulepszenia: kolorowy ekran dotykowy 4,3" (vs monochromatyczny LCD), nowsza architektura procesora, Wi-Fi 802.11ac i BLE.',
       },
       {
         question: 'Jaka jest maksymalna prędkość druku Zebra ZT231?',
@@ -7348,9 +7342,8 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Jakie są alternatywy dla Zebra ZT231?',
-        answer: 'Alternatywami dla Zebra ZT231 w klasie light-industrial 4" są: Zebra ZT411 (droższa, ale z 600 dpi, linerless i 2-letnią gwarancją — pełne porównanie: [ZT231 vs ZT411](/poradnik/zebra-zt231-vs-zt411-porownanie)), Honeywell PM45 (porównywalny zakres, 600 dpi opcja), TSC MH241T (najniższa cena w segmencie) i Zebra ZT111 (tańsza, bez ekranu dotykowego i RFID). Wybór zależy od wolumenu druku, wymaganej rozdzielczości i budżetu.',
+        answer: 'Alternatywami dla Zebra ZT231 w klasie light-industrial 4" są: Zebra ZT411 (droższa, ale z 600 dpi, linerless i 2-letnią gwarancją — pełne porównanie: [ZT231 vs ZT411](/poradnik/zebra-zt231-vs-zt411-porownanie)), Honeywell PM45 (porównywalny zakres, 600 dpi opcja), TSC MH241T (najniższa cena w segmencie) i Zebra ZT111 (tańsza, bez ekranu dotykowego). Wybór zależy od wolumenu druku, wymaganej rozdzielczości i budżetu.',
       },
-      { question: 'Czy Zebra ZT231 jest dostępna w wersji RFID?', answer: 'Tak. Zebra ZT231 RFID to wariant z wbudowanym enkoderem UHF, który jednocześnie drukuje etykietę i koduje tag RFID (EPC Gen2). Sprawdza się w inwentaryzacji, śledzeniu zasobów i logistyce, gdzie sam kod kreskowy nie wystarcza. Enkoder w ZT231 RFID jest regulowany pod krótkie odstępy między tagami (on-pitch), więc obsłuży także mniejsze etykiety RFID. Jeśli rozważasz wdrożenie RFID, pomożemy dobrać konfigurację Zebra ZT231 RFID wraz z odpowiednimi etykietami i taśmą.' },
       { question: 'Czym Zebra ZT231 różni się od poprzednika ZT230?', answer: 'Zebra ZT231 to bezpośredni następca modelu Zebra ZT230. W stosunku do poprzednika dostała kolorowy ekran z czytelnym interfejsem, szybszą elektronikę, prostszą wymianę głowicy i wałka (bez narzędzi) oraz nowocześniejszą łączność (USB, USB Host, RS232, Bluetooth, opcjonalnie Wi-Fi i Ethernet). To nadal kompaktowa, metalowa drukarka etykiet przemysłowa do średnich wolumenów — idealna tam, gdzie pełna drukarka przemysłowa jak ZT411 jest za duża, a biurkowa ZD421 za słaba. Szablony etykiet w języku ZPL ze starego ZT230 działają na ZT231 bez przeróbek.' },
       { question: 'Gdzie pobrać instrukcję obsługi Zebra ZT231?', answer: 'Pełną dokumentację techniczną i instrukcję obsługi (po angielsku jako Zebra ZT231 manual) udostępnia producent na zebra.com w sekcji wsparcia danego modelu. Znajdziesz tam skróconą instrukcję instalacji, przewodnik użytkownika oraz sterowniki ZDesigner. W razie pytań o konfigurację, kalibrację mediów czy podłączenie do systemu pomożemy bezpośrednio — wspieramy wdrożenie Zebra ZT231 po stronie TAKMA.' },
     ],
@@ -7365,7 +7358,6 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
             'Prędkość druku': '254 mm/s',
             'Wyświetlacz': 'Monochromatyczny LCD',
             'Konstrukcja': 'Metal + plastik',
-            'RFID UHF': 'Nie',
             'Waga': '7,7 kg',
           },
         },
@@ -7378,7 +7370,6 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
             'Prędkość druku': '304 mm/s',
             'Wyświetlacz': 'Kolorowy dotykowy 4,3"',
             'Konstrukcja': 'Metal + metal',
-            'RFID UHF': 'Opcja',
             'Waga': '9,1 kg',
           },
         },
@@ -7390,7 +7381,6 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
             'Prędkość druku': '356 mm/s',
             'Wyświetlacz': 'Kolorowy dotykowy 4,3"',
             'Konstrukcja': 'Metal + metal',
-            'RFID UHF': 'Opcja',
             'Waga': '12,5 kg',
           },
         },
