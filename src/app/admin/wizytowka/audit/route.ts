@@ -25,37 +25,49 @@ export async function POST() {
 ${profileForPrompt(profile)}
 
 ## Zadanie
-Zwróć WYŁĄCZNIE poprawny JSON (bez markdown fences) w formacie:
-{
-  "score": <0-100 ocena kompletności i jakości wizytówki>,
-  "audit": "<markdown: 2-4 zdania podsumowania co jest dobrze, a co kuleje — z konkretami z danych>",
-  "tasks": [
-    {
-      "title": "<krótkie zadanie>",
-      "detail": "<1-2 zdania jak i dlaczego>",
-      "proposal": "<GOTOWA do wklejenia treść/wartość — np. pełny draft opisu firmy (250-750 znaków), konkretna nazwa kategorii, lista usług do dodania, poprawiona nazwa wizytówki. Po polsku, gotowiec, bez placeholderów. Jeśli zadanie nie wymaga konkretnej treści (np. 'dodaj 5 zdjęć produktów'), wpisz konkretną instrukcję/checklistę co dokładnie dodać. Może być wieloliniowe.>",
-      "where": "<dokładnie gdzie to zrobić w Profilu Firmy Google, np. 'Edytuj profil → Informacje → Opis' lub 'Edytuj profil → Kategoria'>",
-      "priority": "high|med|low",
-      "category": "opinie|tresc|zdjecia|dane|aktywnosc|ogolne"
-    }
-  ]
-}
-Zasady: 4-7 zadań, posortowane od najważniejszego. KLUCZOWE — pole "proposal" ma być GOTOWE DO WKLEJENIA (właściciel ma móc skopiować i wstawić bez przeróbek): dla opisu firmy napisz pełny, naturalny opis TAKMA głosem firmy; dla kategorii podaj konkretne nazwy; dla usług podaj konkretną listę. Nie pisz ogólników typu „napisz opis" — napisz TEN opis. Priorytet wg realnego wpływu (B2B: kompletność, opis, kategoria, zdjęcia, usługi/atrybuty, aktualność). Nie wymyślaj danych kontaktowych, których nie ma. KRYTYCZNE: Places API nie zwraca odpowiedzi właściciela na opinie — NIE twierdź, że firma „nie odpowiedziała" / „brak reakcji" (nie wiesz tego); co najwyżej ogólna dobra praktyka.`
+Wykonaj audyt i wywołaj narzędzie "zapisz_audyt".
+Zasady: 4-7 zadań, posortowanych od najważniejszego. KLUCZOWE — pole "proposal" ma być GOTOWE DO WKLEJENIA (właściciel kopiuje i wstawia bez przeróbek): dla opisu firmy napisz pełny, naturalny opis TAKMA głosem firmy (250-750 znaków); dla kategorii podaj konkretne nazwy; dla usług podaj konkretną listę. Nie pisz ogólników typu „napisz opis" — napisz TEN opis. Jeśli zadanie nie wymaga treści (np. zdjęcia) — w "proposal" daj konkretną checklistę co dodać. "where" = dokładne miejsce w profilu (np. "Edytuj profil → Informacje → Opis"). Priorytet wg realnego wpływu (B2B: kompletność, opis, kategoria, zdjęcia, usługi/atrybuty, aktualność). Nie wymyślaj danych kontaktowych, których nie ma. KRYTYCZNE: Places API nie zwraca odpowiedzi właściciela na opinie — NIE twierdź, że firma „nie odpowiedziała" / „brak reakcji" (nie wiesz tego); co najwyżej ogólna dobra praktyka.`
 
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
   const msg = await client.messages.create({
     model: 'claude-sonnet-4-6',
-    max_tokens: 2000,
+    max_tokens: 3000,
+    tools: [{
+      name: 'zapisz_audyt',
+      description: 'Zapisuje audyt i listę zadań optymalizacyjnych wizytówki.',
+      input_schema: {
+        type: 'object',
+        properties: {
+          score: { type: 'integer', description: 'Ocena kompletności i jakości 0-100' },
+          audit: { type: 'string', description: 'Markdown: 2-4 zdania podsumowania z konkretami' },
+          tasks: {
+            type: 'array',
+            items: {
+              type: 'object',
+              properties: {
+                title: { type: 'string' },
+                detail: { type: 'string' },
+                proposal: { type: 'string', description: 'Gotowa do wklejenia treść/wartość (może być wieloliniowa)' },
+                where: { type: 'string', description: 'Gdzie w profilu to wkleić' },
+                priority: { type: 'string', enum: ['high', 'med', 'low'] },
+                category: { type: 'string', enum: ['opinie', 'tresc', 'zdjecia', 'dane', 'aktywnosc', 'ogolne'] },
+              },
+              required: ['title', 'detail', 'priority', 'category'],
+            },
+          },
+        },
+        required: ['score', 'audit', 'tasks'],
+      },
+    }],
+    tool_choice: { type: 'tool', name: 'zapisz_audyt' },
     messages: [{ role: 'user', content: prompt }],
   })
-  const raw = msg.content.filter((b) => b.type === 'text').map((b) => (b as { text: string }).text).join('').trim()
 
-  let parsed: { score?: number; audit?: string; tasks?: Array<{ title: string; detail: string; proposal?: string; where?: string; priority?: string; category?: string }> }
-  try {
-    parsed = JSON.parse(raw.replace(/^```json\s*/i, '').replace(/```$/i, '').trim())
-  } catch {
-    return NextResponse.json({ error: 'AI zwróciło nieparsowalny JSON.', raw: raw.slice(0, 400) }, { status: 502 })
+  const toolUse = msg.content.find((b) => b.type === 'tool_use')
+  if (!toolUse || toolUse.type !== 'tool_use') {
+    return NextResponse.json({ error: 'AI nie zwróciło wyniku audytu.' }, { status: 502 })
   }
+  const parsed = toolUse.input as { score?: number; audit?: string; tasks?: Array<{ title: string; detail: string; proposal?: string; where?: string; priority?: string; category?: string }> }
 
   // Zapis audytu + podmiana zadań (zachowaj „done" dla pasujących tytułów)
   const prevDone = new Set((await prisma.gbpTask.findMany({ where: { done: true } })).map((t) => t.title))
