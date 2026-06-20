@@ -761,6 +761,8 @@ model GbpTask {
   id        String   @id @default(cuid())
   title     String
   detail    String   @db.Text
+  proposal  String?  @db.Text // gotowa do wklejenia treść/wartość (np. draft opisu, kategoria, lista usług)
+  where     String? // gdzie w GBP to wkleić (np. "Edytuj profil → Opis")
   priority  String   @default("med") // high | med | low
   category  String   @default("ogolne") // opinie | tresc | zdjecia | dane | aktywnosc | ogolne
   done      Boolean  @default(false)

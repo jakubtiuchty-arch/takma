@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
-export interface Task { id: string; title: string; detail: string; priority: string; category: string; done: boolean }
+export interface Task { id: string; title: string; detail: string; proposal?: string | null; where?: string | null; priority: string; category: string; done: boolean }
 export interface Review { author: string; rating: number; text: string; relativeTime: string }
 
 const PRIO: Record<string, { label: string; cls: string }> = {
@@ -43,25 +43,36 @@ export function Tasks({ initial }: { initial: Task[] }) {
     await fetch('/admin/wizytowka/task', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: 'toggle', id: t.id, done: !t.done }) }).catch(() => {})
   }
   if (tasks.length === 0) return <p className="text-sm text-gray-400">Brak zadań — uruchom audyt AI.</p>
+  return <ul className="space-y-2">{tasks.map((t) => <TaskItem key={t.id} t={t} onToggle={() => toggle(t)} />)}</ul>
+}
+
+function TaskItem({ t, onToggle }: { t: Task; onToggle: () => void }) {
+  const p = PRIO[t.priority] || PRIO.med
+  const [copied, setCopied] = useState(false)
+  const copy = () => { if (t.proposal) { navigator.clipboard?.writeText(t.proposal); setCopied(true); setTimeout(() => setCopied(false), 1500) } }
   return (
-    <ul className="space-y-2">
-      {tasks.map((t) => {
-        const p = PRIO[t.priority] || PRIO.med
-        return (
-          <li key={t.id} className="flex items-start gap-3 rounded-lg border border-gray-200 p-3">
-            <input type="checkbox" checked={t.done} onChange={() => toggle(t)} className="mt-1 h-4 w-4 accent-blue-600 cursor-pointer" />
-            <div className="min-w-0 flex-1">
-              <div className="flex items-center gap-2 flex-wrap">
-                <span className={`text-sm font-medium ${t.done ? 'line-through text-gray-400' : 'text-gray-900'}`}>{t.title}</span>
-                <span className={`text-[11px] px-1.5 py-0.5 rounded-full ${p.cls}`}>{p.label}</span>
-                <span className="text-[11px] px-1.5 py-0.5 rounded-full bg-gray-100 text-gray-500">{t.category}</span>
-              </div>
-              <p className={`text-xs mt-0.5 ${t.done ? 'text-gray-300' : 'text-gray-500'}`}>{t.detail}</p>
+    <li className="flex items-start gap-3 rounded-lg border border-gray-200 p-3">
+      <input type="checkbox" checked={t.done} onChange={onToggle} className="mt-1 h-4 w-4 accent-blue-600 cursor-pointer" />
+      <div className="min-w-0 flex-1">
+        <div className="flex items-center gap-2 flex-wrap">
+          <span className={`text-sm font-medium ${t.done ? 'line-through text-gray-400' : 'text-gray-900'}`}>{t.title}</span>
+          <span className={`text-[11px] px-1.5 py-0.5 rounded-full ${p.cls}`}>{p.label}</span>
+          <span className="text-[11px] px-1.5 py-0.5 rounded-full bg-gray-100 text-gray-500">{t.category}</span>
+        </div>
+        <p className={`text-xs mt-0.5 ${t.done ? 'text-gray-300' : 'text-gray-500'}`}>{t.detail}</p>
+        {t.proposal && (
+          <div className="mt-2 rounded-lg bg-gray-50 border border-gray-200 p-2.5">
+            <div className="flex items-center justify-between gap-2 mb-1">
+              <span className="text-[11px] font-medium text-gray-500">
+                Gotowe do wklejenia{t.where ? ` · ${t.where}` : ''}
+              </span>
+              <button onClick={copy} className="text-[11px] text-blue-600 hover:underline shrink-0">{copied ? 'skopiowano ✓' : 'kopiuj'}</button>
             </div>
-          </li>
-        )
-      })}
-    </ul>
+            <p className="text-sm text-gray-800 whitespace-pre-wrap leading-relaxed">{t.proposal}</p>
+          </div>
+        )}
+      </div>
+    </li>
   )
 }
 

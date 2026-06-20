@@ -110,7 +110,7 @@ export default async function WizytowkaPage() {
 
           <div className="bg-white rounded-xl border border-gray-200 p-5 mb-6">
             <h2 className="text-lg font-semibold text-gray-900 mb-3">Inteligentne zadania</h2>
-            <Tasks initial={tasks.map((t) => ({ id: t.id, title: t.title, detail: t.detail, priority: t.priority, category: t.category, done: t.done }))} />
+            <Tasks initial={tasks.map((t) => ({ id: t.id, title: t.title, detail: t.detail, proposal: t.proposal, where: t.where, priority: t.priority, category: t.category, done: t.done }))} />
           </div>
 
           <div className="bg-white rounded-xl border border-gray-200 p-5 mb-6">
