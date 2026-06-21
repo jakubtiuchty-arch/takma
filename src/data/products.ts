@@ -26846,7 +26846,7 @@ Koszt posiadania (TCO): Kolektor danych Zebra TC58 z Android i gwarancją aktual
     faq: [
       { question: 'Co to jest Zebra TC58 (kolektor danych)?', answer: 'Zebra TC58 to kolektor danych (terminal mobilny) klasy enterprise z łącznością 5G/LTE, procesorem Qualcomm 6490, ekranem 6" FHD+ i skanerem SE55 do 12 m. Następca serii TC57 — z 5G, WiFi 6E, dual SIM (nano + eSIM) i IP68. Zaprojektowany do pracy kurierskiej, serwisu terenowego i logistyki rozproszonej poza zasięgiem WiFi.' },
       { question: 'Ile kosztuje kolektor danych Zebra TC58?', answer: 'Ceny kolektora danych Zebra TC58 zaczynają się od ok. 6 751 zł netto za wariant SE55 4/64 GB. Konfiguracja SE4720 4/64 GB kosztuje ok. 6 794 zł, SE55 8/128 GB ok. 7 797 zł, a topowy wariant Premium z czujnikiem ToF ok. 8 229 zł netto. Ceny netto, dane z marca 2026.' },
-      { question: 'Zebra TC58 czy nowszy TC501 — co wybrać?', answer: 'Kolektor danych Zebra TC501 (od 3 730 zł) ma RFID, AI, AMOLED 1500 nit, Wi-Fi 7, skaner AC670 30 m i Android do v19. TC58 (od 6 751 zł) ma 5G w standardzie i kompatybilność z TC53. Nowe wdrożenia → TC501. Rozbudowa floty TC53/TC58 → TC58. Porównanie: [TC501 vs TC58](/poradnik/zebra-tc501-vs-tc58).' },
+      { question: 'Zebra TC58 czy nowszy TC501 — co wybrać?', answer: 'Kolektor danych Zebra TC501 (od 6 541 zł) ma RFID, AI, AMOLED 1500 nit, Wi-Fi 7, skaner AC670 30 m i Android do v19. TC58 (od 6 751 zł) ma 5G w standardzie i kompatybilność z TC53. Nowe wdrożenia → TC501. Rozbudowa floty TC53/TC58 → TC58. Porównanie: [TC501 vs TC58](/poradnik/zebra-tc501-vs-tc58).' },
       { question: 'Czym różni się Zebra TC58 od TC53?', answer: 'TC58 to wersja TC53 z dodatkową łącznością komórkową 5G/4G LTE/3G/2G i slotem nano SIM + eSIM. Reszta specyfikacji jest identyczna: ten sam procesor Qualcomm 6490, ekran 6" FHD, skanery SE4720/SE55, bateria 4680/7000 mAh, IP68. TC58 jest o ok. 300-500 zł droższy. Jeśli urządzenie pracuje wyłącznie w zasięgu WiFi — wybierz TC53. Jeśli potrzebujesz łączności poza budynkiem — TC58.' },
       { question: 'Czy Zebra TC58 obsługuje 5G w Polsce?', answer: 'Tak. TC58 obsługuje pasma 5G FR1 używane przez polskich operatorów: n1 (2100 MHz), n3 (1800 MHz), n7 (2600 MHz), n28 (700 MHz), n41 (2500 MHz), n78 (3500 MHz). Obsługuje zarówno nano SIM, jak i eSIM — można korzystać z dwóch operatorów jednocześnie.' },
       { question: 'Jaka jest żywotność baterii TC58 z 5G?', answer: 'Bateria standardowa 4680 mAh zapewnia ok. 15 godzin pracy z aktywnym 5G i skanowaniem. Bateria rozszerzona 7000 mAh wydłuża czas pracy do ok. 22 godzin. Obie baterie są wymienne warm/hot swap — wymiana bez wyłączania urządzenia. Technologia PowerPrecision+ monitoruje kondycję baterii w czasie rzeczywistym.' },
@@ -26857,7 +26857,7 @@ Koszt posiadania (TCO): Kolektor danych Zebra TC58 z Android i gwarancją aktual
       { question: 'Czy kolektor danych TC58 zastąpi TC57?', answer: 'Tak. Kolektor danych Zebra TC58 to oficjalny następca serii TC57/TC57x z istotnymi ulepszeniami: 5G (zamiast samego LTE), WiFi 6E (tri-band), procesor Qualcomm 6490 (o 60% szybszy), ekran 6" FHD (zamiast 5"), bateria 4680 mAh z hot swap. Zebra zapewnia wsparcie TC57 do końca cyklu życia, ale nowe wdrożenia powinny bazować na TC58.' },
       { question: 'Gdzie serwisować Zebra TC58 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC58, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 260 zł netto/3 lata) dostępna jest naprawa priorytetowa.' },
       { question: 'Co to jest Mobility DNA i DataWedge w Zebra TC58?', answer: 'Mobility DNA to pakiet oprogramowania Zebra dołączony w cenie każdego TC58. Kluczowe narzędzia: DataWedge — uniwersalny moduł skanowania integrujący się z każdą aplikacją WMS/ERP bez kodowania, StageNow — masowe wdrożenie urządzeń, Device Tracker — lokalizacja zgubionych terminali, LifeGuard™ — aktualizacje bezpieczeństwa. Mobility DNA eliminuje potrzebę zakupu dodatkowych licencji MDM do podstawowego zarządzania flotą.' },
-      { question: 'Jakie są alternatywy dla kolektora danych Zebra TC58?', answer: 'W portfolio Zebra: TC501 (nowy — RFID, AI, AMOLED, Wi-Fi 7, od 3 730 zł — najlepsza opcja dla nowych wdrożeń), TC53 (WiFi-only, tańsza o ~500 zł, kompatybilne akcesoria), TC58e (essential, Qualcomm 4490, 5G Gen 2, od 5 337 zł — nowszy procesor, dłuższe wsparcie Android 17), TC78 (ultra-rugged, bateria 7 742 mAh, IP68). Konkurencja: Honeywell CT47 (5G, FlexRange do 24 m), Honeywell CT70 (Wi-Fi 7). TC58 wyróżnia się sprawdzoną stabilnością i kompatybilnością z flotami TC53.' },
+      { question: 'Jakie są alternatywy dla kolektora danych Zebra TC58?', answer: 'W portfolio Zebra: TC501 (nowy — RFID, AI, AMOLED, Wi-Fi 7, od 6 541 zł — najlepsza opcja dla nowych wdrożeń), TC53 (WiFi-only, tańsza o ~500 zł, kompatybilne akcesoria), TC58e (essential, Qualcomm 4490, 5G Gen 2, od 5 337 zł — nowszy procesor, dłuższe wsparcie Android 17), TC78 (ultra-rugged, bateria 7 742 mAh, IP68). Konkurencja: Honeywell CT47 (5G, FlexRange do 24 m), Honeywell CT70 (Wi-Fi 7). TC58 wyróżnia się sprawdzoną stabilnością i kompatybilnością z flotami TC53.' },
       { question: 'Gdzie kupić kolektor danych Zebra TC58 w Polsce?', answer: 'Kolektor danych Zebra TC58 kupisz w sklepie TAKMA (takma.com.pl) — autoryzowany partner Zebra z ponad 20-letnim doświadczeniem. 6 konfiguracji od 6 751 zł netto z dostawą w 24–48 h. Serwis gwarancyjny i pogwarancyjny: serwis-zebry.pl. Potrzebujesz wyceny na flotę 10+ urządzeń? Napisz na kontakt@takma.com.pl — przygotujemy ofertę z rabatem ilościowym.' },
     ],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc53-tc58.html',
@@ -27371,14 +27371,14 @@ Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = min
     slug: 'zebra-tc501',
     name: 'Zebra TC501',
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc501.html',
-    seoTitle: 'Zebra TC501 — kolektor danych z AI i RFID | od 3 730 zł',
-    seoDescription: 'Zebra TC501 — kolektor danych z AI, RFID UHF, Wi-Fi 7, AMOLED 1500 nit. Następca TC53, Android 15→19. 15 konfiguracji od 3 730 zł netto | TAKMA.',
-    shortDescription: 'Zebra TC501 — terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6" AMOLED 1500 nit, następca TC52/TC53',
+    seoTitle: 'Zebra TC501 — kolektor danych z AI i RFID | od 6 541 zł',
+    seoDescription: 'Zebra TC501 — kolektor danych z AI, RFID UHF, Wi-Fi 7, AMOLED 1500 nit. Następca TC53, Android 15→19. 15 konfiguracji od 6 541 zł netto | TAKMA.',
+    shortDescription: 'Zebra TC501 — terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6" AMOLED 1500 nit, następca TC53/TC58',
     description: `Dla kogo? Zebra TC501 to flagowy kolektor danych (terminal mobilny) nowej generacji, zaprojektowany jako następca TC52/[TC53](/produkt/zebra-tc53) dla firm, które potrzebują najnowszej technologii AI, RFID i Wi-Fi 7 w jednym urządzeniu — od dużych magazynów i centrów logistycznych, przez sieci handlowe, po szpitale i zakłady produkcyjne.\n\nWydajność i AI na pierwszej linii. Procesor Qualcomm Dragonwing Q-6690 (8 rdzeni, do 2,9 GHz) z dedykowanym silnikiem AI (NPU) zapewnia 300% więcej mocy obliczeniowej niż TC53. Przetwarzanie AI odbywa się lokalnie — rozpoznawanie produktów, weryfikacja etykiet, OCR bez chmury, zgodnie z RODO. Pamięć 8 GB/128 GB lub 12 GB/256 GB (UFS 3.1) z opcją rozszerzenia microSD do 2 TB.\n\nEkran AMOLED — pierwszy w klasie enterprise. Wyświetlacz 6" Full HD+ (2160×1080) z matrycą AMOLED i jasnością 1500 nitów — 2,5× jaśniejszy niż IPS w TC53 (600 nit). Doskonale czytelny w pełnym słońcu, z głęboką czernią zmniejszającą zmęczenie oczu na długich zmianach. Szkło Corning Gorilla Glass Victus, panel dotykowy reagujący w rękawicach i z mokrymi palcami.\n\nZintegrowany RFID UHF — bez dodatkowych modułów. TC501 to pierwszy terminal z serii TC5x z wbudowanym czytnikiem RFID UHF w KAŻDEJ konfiguracji. Odczyt ponad 200 tagów na sekundę z zasięgu do 2 metrów. Do długiego zasięgu (9+ m) można podłączyć sled RFD40/RFD90. W TC53 RFID wymagał osobnego modułu — teraz jest w standardzie.\n\nTrzy silniki skanowania do każdego zadania. SR500 (Standard Range) — skanowanie z bliska, kasa, lada, kompletacja. SR560 — ulepszony finder 2D, szybsze dekodowanie uszkodzonych kodów. AC670 (Advanced Color) — zasięg do 30 m, kolorowy imager, skanuje kody na najwyższych regałach bez drabiny. Kamera tylna 50 MP z opcją ultrawide 13 MP do dokumentacji fotograficznej.\n\nŁączność przyszłości. Wi-Fi 7 (802.11be) z 2×2 MU-MIMO i MLO — przepustowość 2× wyższa niż Wi-Fi 6E, stabilność w gęstych środowiskach z setkami urządzeń. Bluetooth 6.0 z większym zasięgiem. NFC do identyfikacji pracowników i tagów. Wersje WAN (TC501G) dodają 5G Release 17, dual eSIM, CBRS i GPS z potrójną bandą GNSS.\n\nWytrzymałość klasy enterprise. Obudowa IP68+IP65 — pyłoszczelna, wodoodporna (zanurzenie + strumień pod ciśnieniem). Upadki z 2,4 m na beton (2,7 m z rugged boot) wg MIL-STD-810H. 2–4× więcej tumbles niż TC53. Temperatura pracy od -20°C do +50°C. Bateria 5000 mAh (standard) lub 7240 mAh (rozszerzona), wymienna hot-swap — szybkie ładowanie 0→70% w 45 minut.\n\nAndroid 15 z najdłuższym wsparciem. Gwarancja aktualizacji do 4 kolejnych wersji systemu. LifeGuard for Android — comiesięczne łatki bezpieczeństwa OTA. Mobility DNA w cenie: StageNow, Device Tracker, Enterprise Home Screen. Kompatybilny z MDM: SOTI, Intune, VMware, Zebra Cloud.\n\nKoszt posiadania (TCO): Kolektor danych Zebra TC501 z Android 15 i gwarancją aktualizacji do Android 19 (4 generacje) = minimum 8 lat wsparcia LifeGuard™ — najdłuższy cykl życia w klasie. Uwaga: akcesoria TC53 (baterie, stacje) NIE są kompatybilne z TC501 — przy planowaniu migracji uwzględnij wymianę infrastruktury. Szczegółowa specyfikacja techniczna i instrukcja obsługi w języku polskim dostępne na stronie serwis-zebry.pl.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
-    priceFrom: 3730,
+    priceFrom: 6541,
     images: [
       '/images/products/zebra-tc501_1.png',
       '/images/products/zebra-tc501_2.png',
@@ -27426,7 +27426,7 @@ Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = min
       {
         partNumber: 'TC5010-021A1A0001-A6',
         name: 'TC501 WiFi, SR500, 8/128 GB',
-        priceFrom: 5688,
+        priceFrom: 6541,
         availability: 'available',
         attributes: {
           'Skaner': 'SR500',
@@ -27436,7 +27436,7 @@ Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = min
       {
         partNumber: 'TC501G-321A1A1A01-A6',
         name: 'TC501 5G, SR500, 8/128 GB',
-        priceFrom: 3730,
+        priceFrom: 6541,
         availability: 'available',
         attributes: {
           '5G': 'Tak',
@@ -27447,7 +27447,7 @@ Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = min
       {
         partNumber: 'TC5010-021B1A0001-A6',
         name: 'TC501 WiFi, SR560, 8/128 GB',
-        priceFrom: 5874,
+        priceFrom: 6541,
         availability: 'available',
         attributes: {
           'Skaner': 'SR560',
@@ -27591,9 +27591,9 @@ Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = min
       },
     ],
     faq: [
-      { question: 'Co to jest Zebra TC501 (kolektor danych)?', answer: 'Zebra TC501 to kolektor danych nowej generacji z wbudowanym RFID UHF, procesorem AI Dragonwing Q-6690, ekranem AMOLED 1500 nit i Wi-Fi 7. Jest następcą serii TC52/TC53 i pierwszym terminalem enterprise z RFID w standardzie. Ceny od 3 730 zł netto (wersja 5G) do 7 605 zł (WiFi, 12/256 GB, ToF). Android 15 z aktualizacjami do v19 — ~8 lat wsparcia LifeGuard. Dostępny w 15 konfiguracjach w TAKMA.' },
-      { question: 'Ile kosztuje kolektor danych Zebra TC501?', answer: 'Ceny kolektora danych Zebra TC501 zaczynają się od ok. 3 730 zł netto (5G, SR500, 8/128 GB) do ok. 7 605 zł netto za konfigurację WiFi z SR560, 12/256 GB i czujnikiem ToF. Wersje WiFi-only 8/128 GB kosztują od ok. 5 688 zł netto, a wersje 12/256 GB od ok. 6 925 zł netto. Ceny netto, dane z marca 2026.' },
-      { question: 'Zebra TC501 vs TC58 — czym się różnią?', answer: 'Kolektor danych TC501 to nowa generacja (2025/2026) z RFID, AI, AMOLED 1500 nit, Wi-Fi 7 i skanerem AC670 do 30 m — od 3 730 zł. TC58 to sprawdzony terminal 5G (2023) z Qualcomm 6490 i skanerem SE55 do 12 m — od 6 751 zł. TC501 wygrywa w 9/10 kategorii i jest tańszy. TC58 ma jedną przewagę: kompatybilność akcesoriów z TC53. Pełne porównanie: takma.com.pl/poradnik/zebra-tc501-vs-tc58.' },
+      { question: 'Co to jest Zebra TC501 (kolektor danych)?', answer: 'Zebra TC501 to kolektor danych nowej generacji z wbudowanym RFID UHF, procesorem AI Dragonwing Q-6690, ekranem AMOLED 1500 nit i Wi-Fi 7. Jest następcą serii TC53/TC58 i pierwszym terminalem enterprise z RFID w standardzie. Ceny od 6 541 zł netto do ok. 8 469 zł netto (12/256 GB, ToF). Android 15 z aktualizacjami do v19 — ~8 lat wsparcia LifeGuard. Dostępny w 15 konfiguracjach w TAKMA.' },
+      { question: 'Ile kosztuje kolektor danych Zebra TC501?', answer: 'Ceny kolektora danych Zebra TC501 zaczynają się od ok. 6 541 zł netto (8/128 GB) do ok. 8 469 zł netto za konfigurację 12/256 GB z czujnikiem ToF. Ceny netto, dane z czerwca 2026.' },
+      { question: 'Zebra TC501 vs TC58 — czym się różnią?', answer: 'Kolektor danych TC501 to nowa generacja (2025/2026) z RFID, AI, AMOLED 1500 nit, Wi-Fi 7 i skanerem AC670 do 30 m — od 6 541 zł. TC58 to sprawdzony terminal 5G (2023) z Qualcomm 6490 i skanerem SE55 do 12 m — od 6 751 zł. TC501 wygrywa w większości kategorii przy zbliżonej cenie. TC58 ma jedną przewagę: kompatybilność akcesoriów z TC53. Pełne porównanie: takma.com.pl/poradnik/zebra-tc501-vs-tc58.' },
       { question: 'Czym różni się Zebra TC501 od TC53?', answer: 'TC501 to generacyjny następca TC53 z istotnymi ulepszeniami: procesor Dragonwing Q-6690 (300% więcej mocy vs TC53), ekran AMOLED 1500 nit (vs IPS 600 nit), Wi-Fi 7 (vs 6E), Bluetooth 6.0 (vs 5.2), RFID UHF w standardzie (vs opcjonalny moduł), kamera 50 MP (vs 16 MP), upadki z 2,4 m (vs 1,5 m), lżejszy (273 g vs 281 g). Akcesoria TC53 NIE są kompatybilne z TC501 — inne baterie, stacje i obudowy.' },
       { question: 'Czy Zebra TC501 ma wbudowany RFID?', answer: 'Tak — TC501 to pierwszy terminal z serii TC5x z zintegrowanym czytnikiem UHF RFID w KAŻDEJ konfiguracji (WiFi i 5G). Odczytuje ponad 200 tagów RAIN RFID na sekundę z zasięgu do 2 m. Do dłuższego zasięgu (9+ m) można podłączyć sled RFD40/RFD90. W TC53 RFID wymagał osobnego modułu — teraz jest w standardzie, co eliminuje dodatkowy koszt i wagę.' },
       { question: 'Czym różnią się skanery SR500, SR560 i AC670?', answer: 'SR500 (Standard Range) — podstawowy skaner 1D/2D do skanowania z bliska na kasie, ladzie i w kompletacji. SR560 — ulepszony silnik 2D z szybszym dekodowaniem uszkodzonych i zabrudzonych kodów, lepszy w warunkach produkcyjnych. AC670 (Advanced Color) — zaawansowany skaner kolorowy z zasięgiem do 30 metrów, skanuje etykiety na najwyższych regałach bez drabiny. W dużym magazynie wysokiego składowania AC670 oszczędza czas i eliminuje pracę na wysokości.' },
@@ -27605,7 +27605,7 @@ Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = min
       { question: 'Gdzie serwisować Zebra TC501 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC501, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 238 zł netto/3 lata) dostępna jest naprawa priorytetowa.' },
       { question: 'Co to jest Mobility DNA i DataWedge w Zebra TC501?', answer: 'Mobility DNA to pakiet oprogramowania Zebra dołączony w cenie każdego TC501. Kluczowe narzędzia: DataWedge — uniwersalny moduł skanowania integrujący się z każdą aplikacją WMS/ERP bez kodowania, StageNow — masowe wdrożenie urządzeń, Device Tracker — lokalizacja zgubionych terminali, LifeGuard™ — aktualizacje bezpieczeństwa. Mobility DNA eliminuje potrzebę zakupu dodatkowych licencji MDM do podstawowego zarządzania flotą.' },
       { question: 'Jakie są alternatywy dla Zebra TC501?', answer: 'W portfolio Zebra: TC701 (ultra-rugged, chłodnia/outdoor, upadki z 3,66 m, od -30°C), TC53e (tańsza alternatywa jeśli nie potrzebujesz Wi-Fi 7 i RFID w standardzie). Konkurencja: Honeywell CT47 (5G, FlexRange do 24 m, Mobility Edge — ale brak RFID, mniejszy ekran 5,5", brak Wi-Fi 7), Datalogic Memor 35 (6" FHD, Wi-Fi 6, Android 13 — starszy procesor, brak RFID, krótsze wsparcie). TC501 wyróżnia się jako jedyny kolektor danych z RFID UHF w standardzie, procesorem AI, Wi-Fi 7 i ekranem AMOLED 1500 nit w jednym urządzeniu.' },
-      { question: 'Gdzie kupić kolektor danych Zebra TC501 w Polsce?', answer: 'Kolektor danych Zebra TC501 jest dostępny w autoryzowanym sklepie TAKMA (takma.com.pl) — oficjalny partner Zebra Technologies. 15 konfiguracji od 3 730 zł netto. TAKMA oferuje: doradztwo w wyborze konfiguracji, wycenę flotową z rabatami od 5 szt., konfigurację MDM, serwis gwarancyjny (serwis-zebry.pl) i kontrakty Zebra OneCare od 1 238 zł/3 lata.' },
+      { question: 'Gdzie kupić kolektor danych Zebra TC501 w Polsce?', answer: 'Kolektor danych Zebra TC501 jest dostępny w autoryzowanym sklepie TAKMA (takma.com.pl) — oficjalny partner Zebra Technologies. 15 konfiguracji od 6 541 zł netto. TAKMA oferuje: doradztwo w wyborze konfiguracji, wycenę flotową z rabatami od 5 szt., konfigurację MDM, serwis gwarancyjny (serwis-zebry.pl) i kontrakty Zebra OneCare od 1 238 zł/3 lata.' },
     ],
     comparison: {
       title: 'TC501 vs TC53 vs Honeywell CT47',
@@ -27629,7 +27629,7 @@ Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = min
             'AI NPU': 'Tak (dedykowany)',
             'Waga': '273 g',
             'Android': 'do Android 19',
-            'Cena od': '3 730 zł',
+            'Cena od': '6 541 zł',
             'Najlepszy do': 'Enterprise AI, RFID, magazyn — flagowy',
           },
         },
@@ -27708,10 +27708,10 @@ Koszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = min
     slug: 'zebra-tc701',
     name: 'Zebra TC701',
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc701.html',
-    seoTitle: 'Zebra TC701 — terminal ultra-rugged z RFID i AI | od 4 017 zł ',
-    seoDescription: 'Zebra TC701 — ultra-rugged terminal z RFID UHF, AI NPU i ekranem AMOLED 1500 nit. Upadki z 3,66 m, IP68. 12 konfiguracji od 4 017 zł netto.',
-    shortDescription: 'Zebra TC701 — ultra-wytrzymały terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6" AMOLED 1500 nit, następca TC72/TC77',
-    description: `Dla kogo? Zebra TC701 to ultra-wytrzymały (ultra-rugged) terminal mobilny nowej generacji, zaprojektowany jako następca TC72/TC77 dla firm pracujących w najtrudniejszych warunkach — chłodnie, doki załadunkowe, magazyny mrożone, porty, kopalnie, budowy i praca outdoorowa w ekstremalnych temperaturach od -20°C do +50°C.
+    seoTitle: 'Zebra TC701 — terminal ultra-rugged z RFID i AI | od 8 361 zł ',
+    seoDescription: 'Zebra TC701 — ultra-rugged terminal z RFID UHF, AI NPU i ekranem AMOLED 1500 nit. Upadki z 3,66 m, IP68. 12 konfiguracji od 8 361 zł netto.',
+    shortDescription: 'Zebra TC701 — ultra-wytrzymały terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6" AMOLED 1500 nit, następca TC73/TC78',
+    description: `Dla kogo? Zebra TC701 to ultra-wytrzymały (ultra-rugged) terminal mobilny nowej generacji, zaprojektowany jako następca TC73/TC78 dla firm pracujących w najtrudniejszych warunkach — chłodnie, doki załadunkowe, magazyny mrożone, porty, kopalnie, budowy i praca outdoorowa w ekstremalnych temperaturach od -20°C do +50°C.
 
 Najwyższa wytrzymałość w klasie. Obudowa IP68+IP65 certyfikowana MIL-STD-810H z przetrwalnością upadków z 3,66 m (12 ft) na beton — 50% więcej niż TC501 (2,4 m). Test tumble 3 500 cykli z 1 m (3,5× więcej niż [TC53](/produkt/zebra-tc53)). Test szoku termicznego — cykl mrożenie/nagrzewanie bez restartu. Gorilla Glass Victus na wyświetlaczu i okienku skanera. Waga zaledwie 284 g z baterią standardową — lżejszy od poprzednika [TC73](/produkt/zebra-tc73) (349 g).
 
@@ -27735,7 +27735,7 @@ Wersja enterprise (lżejsza, upadki 2,4 m, tańsza): [Zebra TC501](/produkt/zebr
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
-    priceFrom: 4017,
+    priceFrom: 8361,
     images: [
       '/images/products/zebra-tc701_1.png',
       '/images/products/zebra-tc701_2.png',
@@ -27783,7 +27783,7 @@ Wersja enterprise (lżejsza, upadki 2,4 m, tańsza): [Zebra TC501](/produkt/zebr
       {
         partNumber: 'TC7010-021B1A0001-A6',
         name: 'TC701 WiFi, SR560, 8/128 GB',
-        priceFrom: 6183,
+        priceFrom: 8361,
         availability: 'available',
         attributes: {
           'Skaner': 'SR560',
@@ -27836,7 +27836,7 @@ Wersja enterprise (lżejsza, upadki 2,4 m, tańsza): [Zebra TC501](/produkt/zebr
       {
         partNumber: 'TC701G-321B1A1A01-A6',
         name: 'TC701 5G, SR560, 8/128 GB',
-        priceFrom: 4017,
+        priceFrom: 8361,
         availability: 'available',
         attributes: {
           '5G': 'Tak',
@@ -27918,8 +27918,8 @@ Wersja enterprise (lżejsza, upadki 2,4 m, tańsza): [Zebra TC501](/produkt/zebr
       },
     ],
     faq: [
-      { question: 'Ile kosztuje Zebra TC701?', answer: 'Ceny Zebra TC701 zaczynają się od ok. 4 017 zł netto (5G, SR560, 8/128 GB) do ok. 8 099 zł netto za konfigurację WiFi z SR560, 12/256 GB i czujnikiem ToF. Wersje WiFi-only 8/128 GB od ok. 6 183 zł netto, wersje AC670 (long range 30 m) od ok. 6 554 zł netto. Ceny netto, dane z lutego 2026.' },
-      { question: 'Czym różni się Zebra TC701 od TC501?', answer: 'TC701 to wersja ultra-rugged terminala TC501 — ten sam procesor Dragonwing Q-6690, ekran AMOLED 1500 nit, Wi-Fi 7, RFID UHF i baterie. Kluczowa różnica: TC701 wytrzymuje upadki z 3,66 m na beton (vs 2,4 m w TC501), przechodzi 3 500 tumble testów z 1 m (vs mniej w TC501) i posiada certyfikat szoku termicznego. TC701 dodaje portfel zbliżeniowy (contactless wallet), OCR numerów VIN/opon i czujnik ToF do wymiarowania paczek. TC701 zastępuje TC72/TC77, TC501 zastępuje TC52/TC53.' },
+      { question: 'Ile kosztuje Zebra TC701?', answer: 'Ceny Zebra TC701 zaczynają się od ok. 8 361 zł netto (8/128 GB) do ok. 9 020 zł netto za konfigurację 12/256 GB z czujnikiem ToF. Ceny netto, dane z czerwca 2026.' },
+      { question: 'Czym różni się Zebra TC701 od TC501?', answer: 'TC701 to wersja ultra-rugged terminala TC501 — ten sam procesor Dragonwing Q-6690, ekran AMOLED 1500 nit, Wi-Fi 7, RFID UHF i baterie. Kluczowa różnica: TC701 wytrzymuje upadki z 3,66 m na beton (vs 2,4 m w TC501), przechodzi 3 500 tumble testów z 1 m (vs mniej w TC501) i posiada certyfikat szoku termicznego. TC701 dodaje portfel zbliżeniowy (contactless wallet), OCR numerów VIN/opon i czujnik ToF do wymiarowania paczek. TC701 zastępuje TC73/TC78, TC501 zastępuje TC53/TC58.' },
       { question: 'Czy Zebra TC701 ma wbudowany RFID?', answer: 'Tak — TC701 ma zintegrowany czytnik UHF RFID RAIN w KAŻDEJ konfiguracji (WiFi i 5G). Odczytuje ponad 200 tagów na sekundę z zasięgu do 2 m. Do dłuższego zasięgu (9+ m) można podłączyć sled RFD40/RFD90. W poprzedniku TC73 RFID wymagał osobnego modułu — w TC701 jest w standardzie.' },
       { question: 'Czym różnią się skanery SR560 i AC670?', answer: 'SR560 — ulepszony silnik 2D z szybszym dekodowaniem uszkodzonych i zabrudzonych kodów, zasięg do kilku metrów. Do codziennej kompletacji, kas i produkcji. AC670 (Advanced Color) — zaawansowany skaner kolorowy z zasięgiem do 30 metrów, skanuje etykiety na najwyższych regałach bez drabiny. W dużym magazynie wysokiego składowania AC670 oszczędza czas i eliminuje pracę na wysokości.' },
       { question: 'Czy TC701 działa w chłodniach i mroźniach?', answer: 'Tak — TC701 jest specjalnie projektowany do ekstremalnych warunków. Zakres temperatur pracy od -20°C do +50°C. Certyfikowany test szoku termicznego (szybkie przejście z chłodni do ciepłego pomieszczenia bez restartu). IP68 chroni przed kondensacją. Ekran AMOLED 1500 nit zachowuje czytelność w chłodnym oświetleniu. Bateria hot-swap — wymieniasz baterię w kilka sekund bez przerywania pracy.' },
@@ -27927,9 +27927,9 @@ Wersja enterprise (lżejsza, upadki 2,4 m, tańsza): [Zebra TC501](/produkt/zebr
       { question: 'Czy TC701 obsługuje 5G?', answer: 'Tak — wersje TC701G (WAN) obsługują 5G Release 17, private 5G i CBRS z dual eSIM (nano + eSIM) oraz GPS z potrójną bandą GNSS. Wersje TC7010 (LAN) mają wyłącznie Wi-Fi 7. Wi-Fi wystarczy do pracy wewnątrz budynku. 5G jest konieczne dla pracowników terenowych, kierowców, serwisantów i operacji na otwartych placach bez Wi-Fi.' },
       { question: 'Co to jest czujnik Time-of-Flight (ToF) w TC701?', answer: 'ToF to czujnik głębi 3D mierzący odległość za pomocą podczerwieni. W TC701 służy do automatycznego wymiarowania paczek (dimensioning) — odczyt długości, szerokości i wysokości przesyłki bez ręcznego mierzenia. Przyspiesza procesy shipping w logistyce i e-commerce. Dostępny jako opcja w wariantach z oznaczeniem „2C" w Part Number.' },
       { question: 'Jaki Android ma TC701 i jak długo będzie wspierany?', answer: 'TC701 dostarczany z Androidem 15 GMS, gwarancja aktualizacji do Android 19 (4 generacje). LifeGuard for Android — comiesięczne łatki OTA. Prognozowany koniec wsparcia: minimum 2030. Mobility DNA Professional w cenie: DataWedge, StageNow, Device Tracker, Enterprise Home Screen, LifeGuard.' },
-      { question: 'Gdzie serwisować Zebra TC701 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC701, wymiana ekranów AMOLED, okienek skanera, modułów RFID i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential dostępna jest naprawa priorytetowa z substytutem zastępczym. Serwis obsługuje całą linię TC7x (TC701, TC73, TC78) oraz poprzednie generacje TC72/TC77.' },
+      { question: 'Gdzie serwisować Zebra TC701 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC701, wymiana ekranów AMOLED, okienek skanera, modułów RFID i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential dostępna jest naprawa priorytetowa z substytutem zastępczym. Serwis obsługuje całą linię TC7x (TC701, TC73, TC78) oraz poprzednie generacje TC73/TC78.' },
       { question: 'Co to jest Mobility DNA i DataWedge w Zebra TC701?', answer: 'Mobility DNA to pakiet oprogramowania Zebra dołączony w cenie każdego TC701. Najważniejsze narzędzia: DataWedge — przechwytuje dane ze skanera i kieruje je bezpośrednio do dowolnej aplikacji (WMS, ERP, Excel) bez pisania kodu; StageNow — masowe wdrożenie i konfiguracja całej floty urządzeń przez skanowanie kodu QR; Device Tracker — lokalizacja zgubionych urządzeń w magazynie; Enterprise Home Screen — zablokowany launcher dla pracowników; LifeGuard for Android — comiesięczne łatki bezpieczeństwa OTA. Mobility DNA Professional (dołączone do TC701) rozszerza o narzędzia AI i analitykę.' },
-      { question: 'Jakie są alternatywy dla Zebra TC701?', answer: 'W portfolio Zebra: TC501 (enterprise, lżejszy, upadki 2,4 m, tańszy od ok. 3 730 zł), TC73 (poprzednia generacja ultra-rugged, Wi-Fi 6E, brak RFID w standardzie). Konkurencja: Honeywell CT47 (5G, FlexRange do 24 m, IP68, upadki 2,4 m — ale brak RFID, brak Wi-Fi 7, brak AMOLED, cięższy 314 g), Datalogic Skorpio X5 (ultra-rugged, klawiatura fizyczna — ale starszy procesor, brak AI NPU). TC701 wyróżnia się jako jedyny ultra-rugged terminal z RFID UHF w standardzie, AI NPU, Wi-Fi 7, ekranem AMOLED 1500 nit i upadkami z 3,66 m.' },
+      { question: 'Jakie są alternatywy dla Zebra TC701?', answer: 'W portfolio Zebra: TC501 (enterprise, lżejszy, upadki 2,4 m, tańszy od ok. 6 541 zł), TC73 (poprzednia generacja ultra-rugged, Wi-Fi 6E, brak RFID w standardzie). Konkurencja: Honeywell CT47 (5G, FlexRange do 24 m, IP68, upadki 2,4 m — ale brak RFID, brak Wi-Fi 7, brak AMOLED, cięższy 314 g), Datalogic Skorpio X5 (ultra-rugged, klawiatura fizyczna — ale starszy procesor, brak AI NPU). TC701 wyróżnia się jako jedyny ultra-rugged terminal z RFID UHF w standardzie, AI NPU, Wi-Fi 7, ekranem AMOLED 1500 nit i upadkami z 3,66 m.' },
       { question: 'Czy baterie z Zebra TC501 pasują do TC701?', answer: 'Tak — TC701 i TC501 współdzielą baterie PowerPrecision+ (5000 mAh i 7240 mAh). Bateria z jednego modelu pasuje do drugiego. To duża zaleta przy mieszanej flocie — jeden zapas baterii obsługuje oba terminale. Baterie obsługują hot-swap z kondensatorem podtrzymującym zasilanie przez 30 sekund.' },
       { question: 'Ile kosztuje kontrakt serwisowy Zebra OneCare do TC701?', answer: 'Zebra OneCare Essential na TC701 kosztuje od 1 238 zł netto za 3 lata lub od 1 957 zł netto za 5 lat. Kontrakty obejmują naprawy sprzętowe z wymianą urządzenia (advance exchange), wsparcie techniczne i aktualizacje LifeGuard. Kontrakt należy zakupić w ciągu 30 dni od zakupu terminala.' },
     ],
@@ -27955,7 +27955,7 @@ Wersja enterprise (lżejsza, upadki 2,4 m, tańsza): [Zebra TC501](/produkt/zebr
             'AI NPU': 'Tak (dedykowany)',
             'Waga': '284 g',
             'Android': 'do Android 19',
-            'Cena od': '4 017 zł',
+            'Cena od': '8 361 zł',
             'Najlepszy do': 'Ultra-rugged, chłodnia, outdoor — flagowy',
           },
         },
@@ -27977,7 +27977,7 @@ Wersja enterprise (lżejsza, upadki 2,4 m, tańsza): [Zebra TC501](/produkt/zebr
             'AI NPU': 'Tak (dedykowany)',
             'Waga': '273 g',
             'Android': 'do Android 19',
-            'Cena od': '3 730 zł',
+            'Cena od': '6 541 zł',
             'Najlepszy do': 'Enterprise, magazyn, retail — flagowy',
           },
         },
@@ -28121,7 +28121,7 @@ Wersja bliźniacza z łącznością 5G/4G LTE i GPS: [Zebra TC78](/produkt/zebra
       { question: 'Czy Zebra TC73 jest wodoodporny?', answer: 'Tak. TC73 ma podwójną klasę ochrony IP68 (zanurzenie) + IP65 (strumień wody pod ciśnieniem). Certyfikacja MIL-STD-810H obejmuje wielokrotne upadki z 3,05 m na beton (temperatura pokojowa), 2,4 m w pełnym zakresie temperatur, tumble test 2000×1,0 m, wibracje 4g PK i szok termiczny. Pełna praca od -20°C do +50°C.' },
       { question: 'Jak długo Zebra wspiera TC73?', answer: 'Zebra zapewnia 5 lat dostępności produktu TC73 na rynku i 10 lat wsparcia serwisowego. Aktualizacje systemu Android do wersji 16, comiesięczne łatki bezpieczeństwa LifeGuard. Realne użytkowanie do ok. 2032–2034 roku.' },
       { question: 'Czy stacje dokujące TC53 pasują do TC73?', answer: 'Nie — TC73 ma większą obudowę ultra-rugged, dlatego wymaga dedykowanych stacji dokujących (seria CRD-NGTC7). Natomiast baterie, ładowarka baterii 4-portowa (SAC-NGTC5TC7-4SCHG), kabura i pasek na rękę są współdzielone z TC53/TC58.' },
-      { question: 'Gdzie serwisować Zebra TC73 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC73, wymiana ekranów, okienek skanera SE4770/SE55, baterii i obudów z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 533 zł netto/3 lata) dostępna naprawa priorytetowa. Serwis obsługuje całą linię TC7x i poprzednie generacje TC72/TC77.' },
+      { question: 'Gdzie serwisować Zebra TC73 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC73, wymiana ekranów, okienek skanera SE4770/SE55, baterii i obudów z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 533 zł netto/3 lata) dostępna naprawa priorytetowa. Serwis obsługuje całą linię TC7x i poprzednie generacje TC73/TC78.' },
       { question: 'Co to jest Mobility DNA i DataWedge w Zebra TC73?', answer: 'Mobility DNA Professional to pakiet oprogramowania Zebra dołączony w cenie każdego TC73. Kluczowe narzędzia: DataWedge — automatyczne przechwytywanie danych ze skanera do WMS/ERP/Excel bez pisania kodu; StageNow — masowe wdrożenie całej floty przez skanowanie kodu QR; Device Tracker — lokalizacja urządzeń w magazynie; Enterprise Home Screen — zablokowany launcher dla pracowników; LifeGuard for Android — comiesięczne łatki bezpieczeństwa OTA. Wszystko bez dodatkowych opłat licencyjnych.' },
       { question: 'Jakie są alternatywy dla Zebra TC73?', answer: 'W klasie ultra-rugged alternatywami są: Honeywell CT47 (IP68, upadki 2,4 m, Snapdragon 778G), Datalogic Skorpio X5 (klawiatura fizyczna, upadki 1,8 m). W ofercie TAKMA: TC53 (enterprise, lżejszy, upadki 1,8 m, od 6 418 zł) lub TC22 (ekonomiczny, od 2 417 zł). TC73 wyróżnia się najwyższą odpornością na upadki (3,05 m) i najdłuższym cyklem wsparcia w tej klasie.' },
     ],
@@ -28309,7 +28309,7 @@ Wersja bliźniacza WiFi-only: [Zebra TC73](/produkt/zebra-tc73). Wersja enterpri
       { question: 'Czy Zebra TC78 jest wodoodporny?', answer: 'Tak. TC78 ma podwójną klasę ochrony IP68 (zanurzenie) + IP65 (strumień wody). Certyfikacja MIL-STD-810H: wielokrotne upadki z 3,05 m na beton, 2,4 m w pełnym zakresie temperatur, tumble test 2000×1,0 m. Pełna praca od -20°C do +50°C. Idealne dla pracowników outdoorowych — deszcz, mróz, budowa.' },
       { question: 'Jakie łączności komórkowe obsługuje TC78?', answer: 'TC78 obsługuje 5G Sub-6 GHz (FR1) na pasmach n2/5/7/12/13/14/25/26/29/38/41/48/66/71/77/78 oraz 4G LTE Cat 20. Dual SIM: fizyczny nano SIM + eSIM. Wbudowany GPS/GLONASS/Galileo/BeiDou (dual-band L1/L5). Łączność WiFi 6E działa równolegle z 5G — inteligentny roaming między sieciami.' },
       { question: 'Jak długo Zebra wspiera TC78?', answer: 'Zebra zapewnia 5 lat dostępności produktu TC78 na rynku i 10 lat wsparcia serwisowego. Aktualizacje systemu Android do wersji 16, comiesięczne łatki bezpieczeństwa LifeGuard. Realne użytkowanie do ok. 2032–2034 roku.' },
-      { question: 'Gdzie serwisować Zebra TC78 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC78, wymiana ekranów, okienek skanera SE4770/SE55, modułów 5G, baterii i obudów z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 533 zł netto/3 lata) dostępna naprawa priorytetowa z substytutem zastępczym. Serwis obsługuje całą linię TC7x (TC701, TC73, TC78) i poprzednie generacje TC72/TC77.' },
+      { question: 'Gdzie serwisować Zebra TC78 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC78, wymiana ekranów, okienek skanera SE4770/SE55, modułów 5G, baterii i obudów z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 533 zł netto/3 lata) dostępna naprawa priorytetowa z substytutem zastępczym. Serwis obsługuje całą linię TC7x (TC701, TC73, TC78) i poprzednie generacje TC73/TC78.' },
       { question: 'Co to jest Mobility DNA i DataWedge w Zebra TC78?', answer: 'Mobility DNA Professional to pakiet oprogramowania Zebra dołączony w cenie każdego TC78. Kluczowe narzędzia: DataWedge — automatyczne przechwytywanie danych ze skanera do WMS/ERP/Excel bez pisania kodu; StageNow — masowe wdrożenie całej floty przez skanowanie kodu QR; Device Tracker — lokalizacja urządzeń; Enterprise Home Screen — zablokowany launcher dla pracowników; LifeGuard for Android — comiesięczne łatki bezpieczeństwa OTA. Opcja Zebra Dimensioning (Premium) do wymiarowania paczek w terenie — bez dedykowanego stanowiska pomiarowego.' },
       { question: 'Jakie są alternatywy dla Zebra TC78?', answer: 'W klasie ultra-rugged z 5G: Honeywell CT47 (IP68, upadki 2,4 m, 5G), Datalogic Skorpio X5 (klawiatura, upadki 1,8 m). W ofercie TAKMA: TC58 (enterprise 5G, lżejszy, upadki 1,8 m, od 6 751 zł), TC27 (ekonomiczny 5G, od 2 690 zł). TC78 wyróżnia się najwyższą odpornością na upadki (3,05 m) z łącznością 5G w tej klasie.' },
     ],

@@ -260,6 +260,34 @@ export const guides: Guide[] = [
 <p>Jeśli rozważasz większe wdrożenie w drugiej połowie 2026 roku, warto już teraz porozmawiać o konfiguracji TC201 — pomożemy dobrać skaner, wariant łączności i akcesoria, a zamówienie zarezerwować na premierę. Bieżąco dostępne terminale: <a href="/terminale-mobilne-zebra">terminale mobilne Zebra</a>. Porównanie obecnej pary Wi-Fi/5G: <a href="/poradnik/zebra-tc22-vs-tc27">Zebra TC22 vs TC27</a>.</p>`
     },
     {
+      id: 'rodzina-bezklawiaturowa',
+      heading: 'TC201, TC501 i TC701 — nowa generacja bezklawiaturowych terminali Zebra',
+      content: `<p><strong>TC201 zamyka odświeżenie bezklawiaturowych terminali mobilnych Zebra nowej generacji.</strong> Razem z nim rodzinę tworzą dwa mocniejsze modele: <a href="/produkt/zebra-tc501">Zebra TC501</a> (flagowy enterprise, następca TC53/TC58) oraz <a href="/produkt/zebra-tc701">Zebra TC701</a> (ultra-wytrzymały, następca TC73/TC78). To trzy klasy jednej rodziny — od ekonomicznej pierwszej linii (TC201), przez flagowiec (TC501), po pracę w najcięższych warunkach (TC701).</p>
+
+<p>Wszystkie trzy dzielą ten sam fundament: procesor Qualcomm Dragonwing Q-6690, Wi-Fi 7, Bluetooth 6, ekran 6" FHD+ (2160×1080), obudowę IP68/IP65, pracę w zakresie -20°C do +50°C, opcję 5G (Rel-17) oraz integrację RFID UHF. Poniżej zestawiamy <strong>wyłącznie to, czym się różnią</strong> — bo to różnice decydują o wyborze.</p>
+
+<table>
+<thead><tr><th>Parametr</th><th>Zebra TC201</th><th>Zebra TC501</th><th>Zebra TC701</th></tr></thead>
+<tbody>
+<tr><td><strong>Klasa / następca</strong></td><td>Ekonomiczny, pierwsza linia (TC21/22/26/27)</td><td>Flagowy enterprise (TC53/TC58)</td><td>Ultra-wytrzymały (TC73/TC78)</td></tr>
+<tr><td><strong>Procesor</strong></td><td>Dragonwing Q-6690, do 2,0 GHz</td><td>Dragonwing Q-6690, do 2,9 GHz + NPU AI</td><td>Dragonwing Q-6690, do 2,9 GHz + NPU AI</td></tr>
+<tr><td><strong>Pamięć</strong></td><td>6/64 lub 8/128 GB</td><td>8/128 lub 12/256 GB</td><td>8/128 lub 12/256 GB</td></tr>
+<tr><td><strong>Ekran</strong></td><td>IPS LED, 450 nit</td><td>AMOLED, 1500 nit</td><td>AMOLED, 1500 nit</td></tr>
+<tr><td><strong>Szkło</strong></td><td>Gorilla Glass</td><td>Gorilla Glass Victus</td><td>Gorilla Glass Victus</td></tr>
+<tr><td><strong>Skanery</strong></td><td>SR500, AC670 (30 m), SR560 (kątowy 60°)</td><td>SR500, SR560, AC670 (30 m)</td><td>SR560, AC670 (30 m)</td></tr>
+<tr><td><strong>RFID UHF</strong></td><td>Opcja (wybrane SKU), do 1,2 m</td><td>W standardzie, do 2 m</td><td>W standardzie, do 2 m</td></tr>
+<tr><td><strong>Aparat tylny</strong></td><td>16 MP</td><td>50 MP (+13 MP ultrawide)</td><td>50 MP (+13 MP ultrawide, ToF)</td></tr>
+<tr><td><strong>Aparat przedni</strong></td><td>5 MP</td><td>8 MP</td><td>8 MP</td></tr>
+<tr><td><strong>Bateria</strong></td><td>3 800 / 5 200 mAh, hot-swap</td><td>5 000 / 7 240 mAh, hot-swap + Qi</td><td>5 000 / 7 240 mAh, hot-swap + Qi</td></tr>
+<tr><td><strong>Odporność na upadki</strong></td><td>1,53 m (do 2,13 m z etui)</td><td>2,4 m (2,7 m z etui)</td><td>3,66 m</td></tr>
+<tr><td><strong>Tumble</strong></td><td>750 × 0,5 m</td><td>podwyższony (2–4× TC53)</td><td>3 500 × 1,0 m</td></tr>
+<tr><td><strong>Grubość / waga</strong></td><td>12,5 mm / 245 g</td><td>15,5 mm / 273 g</td><td>15,5 mm / 284 g</td></tr>
+</tbody>
+</table>
+
+<p><strong>Jak to czytać:</strong> <a href="/produkt/zebra-tc201">TC201</a> to najlżejszy i najtańszy wybór do pracy wewnątrz budynku i lekkiego terenu. <a href="/produkt/zebra-tc501">TC501</a> dokłada ekran AMOLED 1500 nit, mocniejszy procesor z NPU, aparat 50 MP, RFID w standardzie i ładowanie Qi — flagowiec do intensywnej pracy i AI on-device. <a href="/produkt/zebra-tc701">TC701</a> bierze elektronikę TC501 i pakuje ją w obudowę przeżywającą upadki z 3,66 m oraz 3 500 cykli tumble — do chłodni, doków, portów i ekstremalnych warunków. Pomożemy dobrać model i konfigurację: <a href="/kontakt">skontaktuj się z nami</a>.</p>`
+    },
+    {
       id: 'podsumowanie-koncowe',
       heading: 'Podsumowanie — TC201 czy TC22?',
       content: `<p><strong>TC201 to czwarta generacja serii TC2x i realny skok względem TC22: mocniejszy procesor, Wi-Fi 7, Bluetooth 6, opcjonalne 5G i GPS w jednym urządzeniu, skaner do 30 m, najwyższa odporność w serii i certyfikaty bezpieczeństwa.</strong> TC22 pozostaje świetnym, tańszym i dostępnym od ręki terminalem do pracy wewnątrz budynku.</p>
@@ -2274,7 +2302,7 @@ export const guides: Guide[] = [
   </thead>
   <tbody>
     <tr><td>Zebra EM45</td><td>do 5 m</td><td>100+</td><td>Brick ze zintegrowaną anteną</td><td>2 951 zł</td></tr>
-    <tr><td>Zebra TC501</td><td>do 6 m</td><td>200+</td><td>Brick premium</td><td>3 730 zł</td></tr>
+    <tr><td>Zebra TC501</td><td>do 6 m</td><td>200+</td><td>Brick premium</td><td>6 541 zł</td></tr>
   </tbody>
 </table>
 <p><strong>Nasza rekomendacja:</strong> Zebra EM45 dla podstawowej inwentaryzacji RFID. Zebra TC501 dla zaawansowanych wdrożeń (retail asset tracking, zarządzanie narzędziami, healthcare). Zebra dominuje segment RFID handheld — brak realnej konkurencji w tej klasie cenowej.</p>`
@@ -2434,7 +2462,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Co to jest RFID w terminalu mobilnym i kiedy go potrzebuję?',
-      answer: 'RFID (Radio-Frequency Identification) to technologia bezstykowej identyfikacji — terminal odczytuje tagi RFID UHF z odległości do 5–10 m, nawet przez opakowanie. Jeden przejazd korytarzem = odczyt 100+ tagów na sekundę (vs. skanowanie kodów kreskowych jeden po drugim). Kiedy potrzebujesz RFID: inwentaryzacja dużych stanów (1 000+ SKU — RFID 10× szybszy), retail (śledzenie odzieży, zapobieganie kradzieżom), zarządzanie narzędziami/aktywami, healthcare (identyfikacja sprzętu medycznego). Polecane: Zebra EM45 (2 951 zł) dla podstawowych potrzeb, Zebra TC501 (3 730 zł) dla zaawansowanych wdrożeń.'
+      answer: 'RFID (Radio-Frequency Identification) to technologia bezstykowej identyfikacji — terminal odczytuje tagi RFID UHF z odległości do 5–10 m, nawet przez opakowanie. Jeden przejazd korytarzem = odczyt 100+ tagów na sekundę (vs. skanowanie kodów kreskowych jeden po drugim). Kiedy potrzebujesz RFID: inwentaryzacja dużych stanów (1 000+ SKU — RFID 10× szybszy), retail (śledzenie odzieży, zapobieganie kradzieżom), zarządzanie narzędziami/aktywami, healthcare (identyfikacja sprzętu medycznego). Polecane: Zebra EM45 (2 951 zł) dla podstawowych potrzeb, Zebra TC501 (6 541 zł) dla zaawansowanych wdrożeń.'
     },
     {
       question: 'Jakie są alternatywy dla terminali mobilnych?',
@@ -2524,8 +2552,8 @@ export const guides: Guide[] = [
 <tr><td>4</td><td><strong><a href="/produkt/newland-n7-cachalot-pro-ii">Newland N7 Cachalot</a></strong></td><td>3 346 PLN</td><td>4" WVGA</td><td>IP65 / 1,8 m</td><td>2D Duo Near & Far</td><td>Wi-Fi ac, BT 5.0</td><td>13</td><td>360 g</td></tr>
 <tr><td>5</td><td><strong><a href="/produkt/honeywell-ct32">Honeywell CT32</a></strong></td><td>3 389 PLN</td><td>6" FHD GG5</td><td>IP65/68 / 1,8 m</td><td>S0703 / FlexRange 11 m</td><td>Wi-Fi 6E, BT 5.3</td><td>14 → 18</td><td>269 g</td></tr>
 <tr><td>6</td><td><strong><a href="/produkt/newland-mt95-kambur-pro-ii">Newland MT95</a></strong></td><td>3 546 PLN</td><td>6,1" FHD+</td><td>IP67 / 1,5 m</td><td>DE5L 2D</td><td>5G, Wi-Fi 6, BT 5.1</td><td>13</td><td>287 g</td></tr>
-<tr><td>7</td><td><strong><a href="/produkt/zebra-tc501">Zebra TC501</a></strong></td><td>3 730 PLN</td><td>6" AMOLED 1500 nit</td><td>IP68 / 2,4 m</td><td>SR500 / AC670 30 m</td><td>Wi-Fi 7, BT 6.0</td><td>→ 19</td><td>273 g</td></tr>
-<tr><td>8</td><td><strong><a href="/produkt/zebra-tc701">Zebra TC701</a></strong></td><td>4 017 PLN</td><td>6" AMOLED 1500 nit</td><td>IP68 / 3,66 m</td><td>SR560 / AC670 30 m</td><td>Wi-Fi 7, BT 6.0</td><td>→ 19</td><td>284 g</td></tr>
+<tr><td>7</td><td><strong><a href="/produkt/zebra-tc501">Zebra TC501</a></strong></td><td>6 541 PLN</td><td>6" AMOLED 1500 nit</td><td>IP68 / 2,4 m</td><td>SR500 / AC670 30 m</td><td>Wi-Fi 7, BT 6.0</td><td>→ 19</td><td>273 g</td></tr>
+<tr><td>8</td><td><strong><a href="/produkt/zebra-tc701">Zebra TC701</a></strong></td><td>8 361 PLN</td><td>6" AMOLED 1500 nit</td><td>IP68 / 3,66 m</td><td>SR560 / AC670 30 m</td><td>Wi-Fi 7, BT 6.0</td><td>→ 19</td><td>284 g</td></tr>
 <tr><td>9</td><td><strong><a href="/produkt/m3-mobile-sm30">M3 Mobile SM30</a></strong></td><td>~4 200 PLN</td><td>5,5" FHD</td><td>IP68 / 1,5 m</td><td>2D AI imager</td><td>5G, Wi-Fi 6E, BT 5.x</td><td>14 → 18</td><td>~280 g</td></tr>
 <tr><td>10</td><td><strong><a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a></strong></td><td>4 490 PLN</td><td>6" FHD+ GG7</td><td>IP67 / 1,3 m</td><td>Halogen DE2121</td><td>Wi-Fi 6E, BT 5.3</td><td>→ 18</td><td>242 g</td></tr>
 <tr><td>11</td><td><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a></strong></td><td>4 561 PLN</td><td>4" WVGA</td><td>IP67 / 2,4 m</td><td>SE55 / SE58 30 m</td><td>Wi-Fi 6E, BT 5.3</td><td>→ 18</td><td>442 g</td></tr>
@@ -2675,7 +2703,7 @@ export const guides: Guide[] = [
       heading: '#6 Newland MT95 Kambur Pro II — kolektor danych 5G z IP67',
       content: `<p><strong>Cena od: <a href="/produkt/newland-mt95-kambur-pro-ii">3 546 PLN netto</a></strong> | Waga: 287 g | IP67 | 5G | Wi-Fi 6 | Android 13</p>
 
-<p><strong>Dla kogo:</strong> Firmy potrzebujące 5G w terminalu za mniej niż 4 000 PLN — kurierzy, field service, transport, logistyka. Newland MT95 Kambur Pro II to kolektor danych (terminal mobilny) premium klasy Newland — z 5G, Wi-Fi 6, IP67 i baterią 6 000 mAh za cenę niższą niż Zebra TC501 (3 730 PLN).</p>
+<p><strong>Dla kogo:</strong> Firmy potrzebujące 5G w terminalu za mniej niż 4 000 PLN — kurierzy, field service, transport, logistyka. Newland MT95 Kambur Pro II to kolektor danych (terminal mobilny) premium klasy Newland — z 5G, Wi-Fi 6, IP67 i baterią 6 000 mAh za cenę niższą niż Zebra TC501 (6 541 PLN).</p>
 
 <h3>Kluczowe zalety</h3>
 <ul>
@@ -2685,7 +2713,7 @@ export const guides: Guide[] = [
 <li><strong>Ekran 6,1" FHD+</strong> — największy w segmencie budżetowym, czytelny na słońcu</li>
 <li><strong>Wi-Fi 6 + Bluetooth 5.1 + NFC</strong> — nowoczesna łączność do zastosowań enterprise</li>
 <li><strong>Skaner DE5L z AcuScan</strong> — szybki odczyt kodów 1D/2D z laserem naprowadzającym</li>
-<li><strong>O 184 PLN taniej niż TC501</strong> (3 546 vs 3 730 PLN) i o 856 PLN taniej niż TC27 z 5G (2 690 PLN) ale z lepszą baterią i IP67</li>
+<li><strong>O ok. 3 000 PLN tańszy niż Zebra TC501</strong> (3 546 vs 6 541 PLN), z większą baterią i IP67 — przy zachowaniu 5G</li>
 </ul>
 
 <h3>Na co uważać</h3>
@@ -2701,7 +2729,7 @@ export const guides: Guide[] = [
     {
       id: 'top7-tc501',
       heading: '#7 Zebra TC501 — pierwszy kolektor danych z AI i ekranem AMOLED',
-      content: `<p><strong>Cena od: <a href="/produkt/zebra-tc501">3 730 PLN netto</a></strong> | Waga: 273 g | IP68 | Wi-Fi 7 | AMOLED 1500 nit | Android → 19</p>
+      content: `<p><strong>Cena od: <a href="/produkt/zebra-tc501">6 541 PLN netto</a></strong> | Waga: 273 g | IP68 | Wi-Fi 7 | AMOLED 1500 nit | Android → 19</p>
 
 <p><strong>Dla kogo:</strong> Firmy stawiające na przyszłość — AI w magazynie, rozpoznawanie obrazów, OCR, RFID. TC501 to flagowy kolektor danych Zebra (premiera 2025/2026) z dedykowanym procesorem AI, wyświetlaczem AMOLED o jasności 1500 nit i Wi-Fi 7. Pierwszy terminal enterprise w historii z tak zaawansowanymi parametrami w cenie poniżej 4 000 PLN.</p>
 
@@ -2720,7 +2748,7 @@ export const guides: Guide[] = [
 <h3>Na co uważać</h3>
 <ul>
 <li>Nowość na rynku — ekosystem akcesoriów jeszcze się buduje. TC22/TC53 mają szerszy wybór etui i stacji</li>
-<li>Cena bazowa 3 730 PLN to wariant bez RFID — z RFID (TC530R) cena rośnie o ~30%</li>
+<li>Cena bazowa 6 541 PLN to wariant bez RFID — z RFID (TC530R) cena rośnie o ~30%</li>
 </ul>
 
 <p><strong>Rekomendacja TAKMA:</strong> TC501 to terminal przyszłości w cenie teraźniejszości. Jeśli planujesz wdrożenie na 5–7 lat i chcesz mieć AI, RFID i Wi-Fi 7 „out of the box", to najlepsza inwestycja na rynku. Szczególnie polecamy dla retail (rozpoznawanie produktów), magazynów z RFID i firm planujących migrację na Wi-Fi 7. <a href="/produkt/zebra-tc501">Pełna specyfikacja →</a></p>`
@@ -2728,7 +2756,7 @@ export const guides: Guide[] = [
     {
       id: 'top8-tc701',
       heading: '#8 Zebra TC701 — ultra-rugged kolektor danych z AI do najtrudniejszych warunków',
-      content: `<p><strong>Cena od: <a href="/produkt/zebra-tc701">4 017 PLN netto</a></strong> | Waga: 284 g | IP68 | Drop 3,66 m | Wi-Fi 7 | AMOLED | Android → 19</p>
+      content: `<p><strong>Cena od: <a href="/produkt/zebra-tc701">8 361 PLN netto</a></strong> | Waga: 284 g | IP68 | Drop 3,66 m | Wi-Fi 7 | AMOLED | Android → 19</p>
 
 <p><strong>Dla kogo:</strong> Centra dystrybucyjne, porty, place składowe, chłodnie, produkcja — wszędzie tam, gdzie terminale spadają, uderzają o beton i pracują w ekstremalnych temperaturach. TC701 to ultra-wytrzymały kolektor danych — wersja TC501 z identycznym procesorem AI i AMOLED, ale z drop spec 3,66 m — 50% wyższym niż TC501.</p>
 
@@ -2982,9 +3010,9 @@ export const guides: Guide[] = [
 <h3>5. Jaki budżet na 1 terminal?</h3>
 <ul>
 <li><strong>Do 3 000 PLN</strong> → MT93 (2 207), TC22 (2 417), TC27 (2 690)</li>
-<li><strong>3 000–5 000 PLN</strong> → N7 Cachalot (3 346), CT32 (3 389), MT95 (3 546), TC501 (3 730), TC701 (4 017), SM30 (~4 200), Memor 12 (4 490), MC3400 (4 561), TC53e (4 926)</li>
-<li><strong>5 000–7 000 PLN</strong> → US30 (~5 500 — keyboard gun ze skanerami Zebry)</li>
-<li><strong>Powyżej 7 000 PLN</strong> → MC9400 (7 638), CT47 (7 901)</li>
+<li><strong>3 000–5 000 PLN</strong> → N7 Cachalot (3 346), CT32 (3 389), MT95 (3 546), SM30 (~4 200), Memor 12 (4 490), MC3400 (4 561), TC53e (4 926)</li>
+<li><strong>5 000–7 000 PLN</strong> → US30 (~5 500 — keyboard gun ze skanerami Zebry), TC501 (6 541)</li>
+<li><strong>Powyżej 7 000 PLN</strong> → MC9400 (7 638), CT47 (7 901), TC701 (8 361)</li>
 </ul>
 
 <p>Potrzebujesz indywidualnego doradztwa? <a href="/kontakt">Skontaktuj się z nami</a> — bezpłatnie dobierzemy terminal do Twoich procesów na podstawie 25 lat doświadczenia.</p>`
@@ -3031,7 +3059,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Ile kosztuje kolektor danych (terminal mobilny) w 2026?',
-      answer: 'Ceny kolektorów danych enterprise w 2026 roku wahają się od 2 207 PLN netto (Newland MT93 — najtańszy z Wi-Fi 6E i 4G LTE) do 7 901 PLN netto (Honeywell CT47 — FlexRange XLR 24 m, 5G). Popularne modele: Zebra TC22 — 2 417 PLN, Zebra TC27 z 5G — 2 690 PLN, Newland N7 Cachalot z klawiaturą — 3 346 PLN, Zebra TC501 z AI i AMOLED — 3 730 PLN, Zebra MC3400 z klawiaturą — 4 561 PLN. Do TCO (całkowitego kosztu posiadania) na 5 lat dodaj ~2 500–4 700 PLN na baterie, stację ładowania i kontrakt serwisowy.'
+      answer: 'Ceny kolektorów danych enterprise w 2026 roku wahają się od 2 207 PLN netto (Newland MT93 — najtańszy z Wi-Fi 6E i 4G LTE) do 7 901 PLN netto (Honeywell CT47 — FlexRange XLR 24 m, 5G). Popularne modele: Zebra TC22 — 2 417 PLN, Zebra TC27 z 5G — 2 690 PLN, Newland N7 Cachalot z klawiaturą — 3 346 PLN, Zebra TC501 z AI i AMOLED — 6 541 PLN, Zebra MC3400 z klawiaturą — 4 561 PLN. Do TCO (całkowitego kosztu posiadania) na 5 lat dodaj ~2 500–4 700 PLN na baterie, stację ładowania i kontrakt serwisowy.'
     },
     {
       question: 'Czym się różni terminal mobilny od zwykłego smartfona?',
@@ -3051,7 +3079,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Jaki terminal mobilny do chłodni i mroźni?',
-      answer: 'Do pracy w temperaturach poniżej −20°C najlepszym wyborem jest Zebra MC9400 (7 638 PLN) z dedykowaną baterią freezer 5 000 mAh, zakresem temperatur −30°C do +50°C, drop spec 3,65 m i klawiaturą fizyczną obsługiwaną w grubych rękawicach. Alternatywa w niższym budżecie: Zebra TC701 (4 017 PLN) z zakresem −20°C do +50°C, drop 3,66 m i ekranem dotykowym obsługiwanym w rękawicach (AMOLED 1500 nit, czytelny w każdych warunkach).'
+      answer: 'Do pracy w temperaturach poniżej −20°C najlepszym wyborem jest Zebra MC9400 (7 638 PLN) z dedykowaną baterią freezer 5 000 mAh, zakresem temperatur −30°C do +50°C, drop spec 3,65 m i klawiaturą fizyczną obsługiwaną w grubych rękawicach. Alternatywa w niższym budżecie: Zebra TC701 (8 361 PLN) z zakresem −20°C do +50°C, drop 3,66 m i ekranem dotykowym obsługiwanym w rękawicach (AMOLED 1500 nit, czytelny w każdych warunkach).'
     },
     {
       question: 'Czy terminal mobilny wymaga kontraktu serwisowego (OneCare)?',
@@ -3075,7 +3103,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Jaki kolektor danych z RFID wybrać w 2026?',
-      answer: 'W 2026 roku najlepsze kolektory danych z wbudowanym czytnikiem RFID UHF to: Zebra TC501 wariant TC530R (od 3 730 PLN bazowy, z RFID ~30% droższy) — najnowszy, z AI, AMOLED i Wi-Fi 7, odczyt >200 tagów/s do 2 m. Zebra TC53e wariant TC530R (od 4 926 PLN) — ekonomiczna alternatywa z tymi samymi możliwościami RFID. Oba terminale obsługują RAIN RFID (UHF, standard EPC Gen2v2/ISO 18000-63). Do inwentaryzacji odzieży, środków trwałych i farmacji RFID przyspiesza odczyt o 10–50× vs skanowanie kodów kreskowych.'
+      answer: 'W 2026 roku najlepsze kolektory danych z wbudowanym czytnikiem RFID UHF to: Zebra TC501 wariant TC530R (od 6 541 PLN bazowy, z RFID ~30% droższy) — najnowszy, z AI, AMOLED i Wi-Fi 7, odczyt >200 tagów/s do 2 m. Zebra TC53e wariant TC530R (od 4 926 PLN) — ekonomiczna alternatywa z tymi samymi możliwościami RFID. Oba terminale obsługują RAIN RFID (UHF, standard EPC Gen2v2/ISO 18000-63). Do inwentaryzacji odzieży, środków trwałych i farmacji RFID przyspiesza odczyt o 10–50× vs skanowanie kodów kreskowych.'
     },
     {
       question: 'Terminal mobilny z Wi-Fi 7 — czy warto w 2026?',
@@ -5193,8 +5221,8 @@ export const guides: Guide[] = [
   slug: 'zebra-tc501-vs-tc58',
   title: 'Zebra TC501 vs TC58 — porównanie kolektorów danych 2026',
   seoTitle: 'Zebra TC501 vs TC58 — porównanie kolektorów danych 2026',
-  seoDescription: 'Zebra TC501 vs TC58: RFID, AI NPU, AMOLED 1500 nit, Wi-Fi 7, skaner 30 m. TC501 od 3 730 zł, TC58 od 6 751 zł. TCO, porównanie i rekomendacje TAKMA.',
-  excerpt: 'Zebra TC501 (kolektor danych z AI i RFID od 3 730 zł) vs TC58 (terminal 5G od 6 751 zł) — porównanie procesorów, wyświetlaczy, skanerów, RFID, łączności, TCO na 5 lat i rekomendacje wg zastosowania. Pierwszy tak szczegółowy poradnik w języku polskim.',
+  seoDescription: 'Zebra TC501 vs TC58: RFID, AI NPU, AMOLED 1500 nit, Wi-Fi 7, skaner 30 m. TC501 od 6 541 zł, TC58 od 6 751 zł. TCO, porównanie i rekomendacje TAKMA.',
+  excerpt: 'Zebra TC501 (kolektor danych z AI i RFID od 6 541 zł) vs TC58 (terminal 5G od 6 751 zł) — porównanie procesorów, wyświetlaczy, skanerów, RFID, łączności, TCO na 5 lat i rekomendacje wg zastosowania. Pierwszy tak szczegółowy poradnik w języku polskim.',
   category: 'porownanie' as const,
   tags: ['terminale-mobilne', 'porownanie', 'zebra', 'tc501', 'tc58', 'kolektor-danych', 'rfid', 'ai', 'tco', 'wifi-7', 'amoled', 'komputer-mobilny', 'magazyn', '5g'],
   publishedAt: '2026-03-14',
@@ -5205,9 +5233,9 @@ export const guides: Guide[] = [
     {
       id: 'podsumowanie',
       heading: 'Zebra TC501 vs TC58 — który kolektor danych wybrać w 2026 roku?',
-      content: `<p><strong>Zebra TC501 to kolektor danych nowej generacji z wbudowanym RFID UHF, procesorem AI Dragonwing Q-6690 i ekranem AMOLED 1500 nit — od 3 730 zł netto. Zebra TC58 to sprawdzony terminal 5G z procesorem Qualcomm 6490 i skanerem SE55 — od 6 751 zł netto.</strong></p>
+      content: `<p><strong>Zebra TC501 to kolektor danych nowej generacji z wbudowanym RFID UHF, procesorem AI Dragonwing Q-6690 i ekranem AMOLED 1500 nit — od 6 541 zł netto. Zebra TC58 to sprawdzony terminal 5G z procesorem Qualcomm 6490 i skanerem SE55 — od 6 751 zł netto.</strong></p>
 
-<p>TC501 i TC58 to dwa flagowe kolektory danych Zebra, ale należą do <strong>różnych generacji</strong>. TC501 (premiera 2025/2026) to następca linii TC52/TC53 z przełomowymi technologiami: RFID w standardzie, AI on-device i Wi-Fi 7. TC58 (premiera 2023) to wersja TC53 z łącznością 5G/LTE — sprawdzona, stabilna, z szerokim ekosystemem akcesoriów wspólnych z TC53.</p>
+<p>TC501 i TC58 to dwa flagowe kolektory danych Zebra, ale należą do <strong>różnych generacji</strong>. TC501 (premiera 2025/2026) to następca linii TC53/TC58 z przełomowymi technologiami: RFID w standardzie, AI on-device i Wi-Fi 7. TC58 (premiera 2023) to wersja TC53 z łącznością 5G/LTE — sprawdzona, stabilna, z szerokim ekosystemem akcesoriów wspólnych z TC53.</p>
 
 <p><strong>Kluczowe pytanie: czy potrzebujesz RFID i AI, czy sprawdzonego terminala 5G?</strong> Poniżej znajdziesz szczegółowe porównanie 10 kategorii — od procesora po TCO na 5 lat.</p>
 
@@ -5225,7 +5253,7 @@ export const guides: Guide[] = [
 <tr style="background:#f8fafc"><td style="padding:8px 12px;font-weight:600">Waga</td><td style="padding:8px 12px;text-align:center"><strong>273 g</strong></td><td style="padding:8px 12px;text-align:center">293 g</td></tr>
 <tr><td style="padding:8px 12px;font-weight:600">Android (do wersji)</td><td style="padding:8px 12px;text-align:center"><strong>Android 19</strong> (4 aktualizacje)</td><td style="padding:8px 12px;text-align:center">Android 16 (1 aktualizacja)</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px 12px;font-weight:600">5G</td><td style="padding:8px 12px;text-align:center">Release 17 (wersje TC501G)</td><td style="padding:8px 12px;text-align:center">5G FR1 (standard)</td></tr>
-<tr><td style="padding:8px 12px;font-weight:600">Cena od (netto)</td><td style="padding:8px 12px;text-align:center"><strong>3 730 zł</strong> (5G) / 5 688 zł (WiFi)</td><td style="padding:8px 12px;text-align:center">6 751 zł</td></tr>
+<tr><td style="padding:8px 12px;font-weight:600">Cena od (netto)</td><td style="padding:8px 12px;text-align:center"><strong>6 541 zł</strong></td><td style="padding:8px 12px;text-align:center">6 751 zł</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px 12px;font-weight:600">Warianty</td><td style="padding:8px 12px;text-align:center"><strong>15 konfiguracji</strong></td><td style="padding:8px 12px;text-align:center">6 konfiguracji</td></tr>
 </tbody></table>
 
@@ -5338,8 +5366,8 @@ export const guides: Guide[] = [
 <table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem">
 <thead><tr style="background:#1e3a5f;color:#fff"><th style="padding:10px 12px;text-align:left">Rozwiązanie</th><th style="padding:10px 12px;text-align:center">Koszt urządzenia</th><th style="padding:10px 12px;text-align:center">Koszt RFID</th><th style="padding:10px 12px;text-align:center">Suma</th></tr></thead>
 <tbody>
-<tr style="background:#f8fafc"><td style="padding:8px 12px"><strong>TC501 WiFi + RFID wbudowany</strong></td><td style="padding:8px 12px;text-align:center">5 688 zł</td><td style="padding:8px 12px;text-align:center">0 zł (w cenie)</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>5 688 zł</strong></td></tr>
-<tr><td style="padding:8px 12px"><strong>TC501 5G + RFID wbudowany</strong></td><td style="padding:8px 12px;text-align:center">3 730 zł</td><td style="padding:8px 12px;text-align:center">0 zł (w cenie)</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>3 730 zł</strong></td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px"><strong>TC501 WiFi + RFID wbudowany</strong></td><td style="padding:8px 12px;text-align:center">6 541 zł</td><td style="padding:8px 12px;text-align:center">0 zł (w cenie)</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>6 541 zł</strong></td></tr>
+<tr><td style="padding:8px 12px"><strong>TC501 5G + RFID wbudowany</strong></td><td style="padding:8px 12px;text-align:center">6 541 zł</td><td style="padding:8px 12px;text-align:center">0 zł (w cenie)</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>6 541 zł</strong></td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px 12px">TC58 + sled RFD40</td><td style="padding:8px 12px;text-align:center">6 751 zł</td><td style="padding:8px 12px;text-align:center">~6 000 zł</td><td style="padding:8px 12px;text-align:center;color:#dc2626"><strong>~12 751 zł</strong></td></tr>
 <tr><td style="padding:8px 12px">TC58 + sled RFD90</td><td style="padding:8px 12px;text-align:center">6 751 zł</td><td style="padding:8px 12px;text-align:center">~9 000 zł</td><td style="padding:8px 12px;text-align:center;color:#dc2626"><strong>~15 751 zł</strong></td></tr>
 </tbody></table>
@@ -5415,7 +5443,7 @@ export const guides: Guide[] = [
     {
       id: 'tco',
       heading: 'TCO i cykl życia — Android 19 vs Android 16',
-      content: `<p><strong>Kolektor danych Zebra TC501 z Android 15 i gwarancją aktualizacji do Android 19 oferuje minimum 8 lat wsparcia LifeGuard — 2× dłużej niż TC58 z Android do wersji 16. W kalkulacji 5-letniej TC501 jest tańszy w TCO mimo wyższej ceny WiFi-only.</strong></p>
+      content: `<p><strong>Kolektor danych Zebra TC501 z Android 15 i gwarancją aktualizacji do Android 19 oferuje minimum 8 lat wsparcia LifeGuard — 2× dłużej niż TC58 z Android do wersji 16. W kalkulacji 5-letniej TC501 wychodzi taniej w TCO — dzięki niższej cenie w równoważnej konfiguracji (8/128) i 2× dłuższemu cyklowi życia.</strong></p>
 
 <h3>Cykl życia oprogramowania</h3>
 <table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem">
@@ -5432,17 +5460,17 @@ export const guides: Guide[] = [
 <table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem">
 <thead><tr style="background:#1e3a5f;color:#fff"><th style="padding:10px 12px;text-align:left">Koszt</th><th style="padding:10px 12px;text-align:center">10× TC501 WiFi<br>(SR560, 8/128)</th><th style="padding:10px 12px;text-align:center">10× TC58<br>(SE55, 8/128)</th></tr></thead>
 <tbody>
-<tr style="background:#f8fafc"><td style="padding:8px 12px">Zakup urządzeń</td><td style="padding:8px 12px;text-align:center">58 740 zł</td><td style="padding:8px 12px;text-align:center">77 969 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px">Zakup urządzeń</td><td style="padding:8px 12px;text-align:center">65 410 zł</td><td style="padding:8px 12px;text-align:center">77 969 zł</td></tr>
 <tr><td style="padding:8px 12px">OneCare 5 lat</td><td style="padding:8px 12px;text-align:center">20 218 zł</td><td style="padding:8px 12px;text-align:center">20 587 zł</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px 12px">Baterie zapasowe (2/urz.)</td><td style="padding:8px 12px;text-align:center">~6 000 zł</td><td style="padding:8px 12px;text-align:center">~5 600 zł</td></tr>
 <tr><td style="padding:8px 12px">Stacja ładująca 5-slot</td><td style="padding:8px 12px;text-align:center">~4 500 zł</td><td style="padding:8px 12px;text-align:center">~4 500 zł</td></tr>
-<tr style="background:#f8fafc"><td style="padding:8px 12px"><strong>SUMA 5-letnia</strong></td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>~89 458 zł</strong></td><td style="padding:8px 12px;text-align:center">~108 656 zł</td></tr>
-<tr><td style="padding:8px 12px"><strong>Koszt / urządzenie / rok</strong></td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>~1 789 zł</strong></td><td style="padding:8px 12px;text-align:center">~2 173 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px"><strong>SUMA 5-letnia</strong></td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>~96 128 zł</strong></td><td style="padding:8px 12px;text-align:center">~108 656 zł</td></tr>
+<tr><td style="padding:8px 12px"><strong>Koszt / urządzenie / rok</strong></td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>~1 923 zł</strong></td><td style="padding:8px 12px;text-align:center">~2 173 zł</td></tr>
 </tbody></table>
 
-<p><strong>TC501 jest tańszy o ~19 200 zł na 10 urządzeniach w 5 lat</strong> — głównie dzięki niższej cenie zakupu i dłuższemu cyklowi życia (możliwość eksploatacji 8 lat zamiast 5).</p>
+<p><strong>TC501 jest tańszy o ~12 500 zł na 10 urządzeniach w 5 lat</strong> — głównie dzięki niższej cenie zakupu i dłuższemu cyklowi życia (możliwość eksploatacji 8 lat zamiast 5).</p>
 
-<p>Jeśli doliczysz koszt RFID: TC58 z 10 sled'ami RFD40 dodaje ~60 000 zł — łączny koszt rośnie do ~168 656 zł vs ~89 458 zł za TC501 z RFID w standardzie.</p>`
+<p>Jeśli doliczysz koszt RFID: TC58 z 10 sled'ami RFD40 dodaje ~60 000 zł — łączny koszt rośnie do ~168 656 zł vs ~96 128 zł za TC501 z RFID w standardzie.</p>`
     },
     {
       id: 'akcesoria',
@@ -5479,7 +5507,7 @@ export const guides: Guide[] = [
 <li>Potrzebujesz <strong>skanera dalekiego zasięgu powyżej 12 m</strong> — AC670 sięga do 30 m</li>
 <li>Zależy Ci na <strong>najdłuższym cyklu życia</strong> — Android do v19, ~8 lat wsparcia</li>
 <li>Startujesz <strong>nowe wdrożenie</strong> bez bagażu kompatybilności z TC53</li>
-<li>Szukasz <strong>najlepszej ceny terminala 5G</strong> — TC501G od 3 730 zł vs TC58 od 6 751 zł</li>
+<li>Szukasz <strong>najlepszej ceny terminala 5G</strong> — TC501G od 6 541 zł vs TC58 od 6 751 zł</li>
 </ul>
 
 <h3>Wybierz Zebra TC58, jeśli:</h3>
@@ -5498,7 +5526,7 @@ export const guides: Guide[] = [
 <tr style="background:#f8fafc"><td style="padding:8px 12px">Magazyn z RFID</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501</strong></td><td style="padding:8px 12px">RFID w standardzie, AC670 do 30 m, tańszy o 7 000+ zł</td></tr>
 <tr><td style="padding:8px 12px">Magazyn bez RFID (nowa flota)</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501</strong></td><td style="padding:8px 12px">Lepszy ekran, procesor, bateria, dłuższy cykl życia, niższa cena</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px 12px">Rozbudowa floty TC53/TC58</td><td style="padding:8px 12px;text-align:center;color:#2563eb"><strong>TC58</strong></td><td style="padding:8px 12px">Te same baterie i stacje, zero kosztów migracji</td></tr>
-<tr><td style="padding:8px 12px">Kurier / serwis terenowy</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501G (5G)</strong></td><td style="padding:8px 12px">Tańszy 5G (3 730 zł), lżejszy, GPS Triple-Band</td></tr>
+<tr><td style="padding:8px 12px">Kurier / serwis terenowy</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501G (5G)</strong></td><td style="padding:8px 12px">Tańszy 5G (6 541 zł), lżejszy, GPS Triple-Band</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px 12px">Retail / sklep</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501</strong></td><td style="padding:8px 12px">RFID do inwentaryzacji, AMOLED czytelny pod lampami, AI OCR</td></tr>
 <tr><td style="padding:8px 12px">Produkcja / kontrola jakości</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501</strong></td><td style="padding:8px 12px">AI NPU weryfikuje etykiety i rozpoznaje produkty kamerą</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px 12px">Healthcare</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501</strong></td><td style="padding:8px 12px">RFID identyfikacja pacjentów, AMOLED czytelny na korytarzu</td></tr>
@@ -5512,7 +5540,7 @@ export const guides: Guide[] = [
   faq: [
     {
       question: 'Co to jest Zebra TC501 (kolektor danych)?',
-      answer: 'Zebra TC501 to kolektor danych nowej generacji z wbudowanym RFID UHF, procesorem AI Dragonwing Q-6690 z NPU, ekranem AMOLED 1500 nit, Wi-Fi 7 i skanerem AC670 do 30 m — od 3 730 zł netto (5G) lub od 5 688 zł (WiFi). Premiera: 2025/2026. TC501 zastępuje linię TC52/TC53 i jest pierwszym terminalem enterprise z RFID w standardzie i AI on-device. Android 15 z gwarancją aktualizacji do v19 (~8 lat wsparcia LifeGuard). Dostępny w TAKMA — autoryzowany partner Zebra Technologies w Polsce.'
+      answer: 'Zebra TC501 to kolektor danych nowej generacji z wbudowanym RFID UHF, procesorem AI Dragonwing Q-6690 z NPU, ekranem AMOLED 1500 nit, Wi-Fi 7 i skanerem AC670 do 30 m — od 6 541 zł netto. Premiera: 2025/2026. TC501 zastępuje linię TC53/TC58 i jest pierwszym terminalem enterprise z RFID w standardzie i AI on-device. Android 15 z gwarancją aktualizacji do v19 (~8 lat wsparcia LifeGuard). Dostępny w TAKMA — autoryzowany partner Zebra Technologies w Polsce.'
     },
     {
       question: 'Czym różni się kolektor danych Zebra TC501 od TC58?',
@@ -5520,7 +5548,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Ile kosztuje Zebra TC501 vs TC58?',
-      answer: 'Zebra TC501 5G (kolektor danych) startuje od 3 730 zł netto, wersje WiFi od 5 688 zł (karta produktu: takma.com.pl/produkt/zebra-tc501). Zebra TC58 kosztuje od 6 751 zł netto (karta produktu: takma.com.pl/produkt/zebra-tc58). TC501 jest paradoksalnie tańszy od starszego TC58, oferując więcej technologii (RFID, AI, AMOLED). Ceny netto, marzec 2026.'
+      answer: 'Zebra TC501 5G (kolektor danych) startuje od 6 541 zł netto (karta produktu: takma.com.pl/produkt/zebra-tc501). Zebra TC58 kosztuje od 6 751 zł netto (karta produktu: takma.com.pl/produkt/zebra-tc58). TC501 ma cenę zbliżoną do starszego TC58, oferując znacznie więcej technologii (RFID i AI w standardzie, AMOLED 1500 nit, Wi-Fi 7). Ceny netto, czerwiec 2026.'
     },
     {
       question: 'Czy Zebra TC501 ma wbudowany RFID UHF?',
@@ -5548,7 +5576,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Czy TC501 jest następcą TC58?',
-      answer: 'Nie bezpośrednio. TC501 to następca linii TC52/TC53 — nowa klasa z RFID i AI. TC58 to wersja TC53 z 5G. W praktyce TC501 5G (TC501G) zastępuje zarówno TC53, jak i TC58 — oferuje wszystko co miał TC58 plus RFID, AI, AMOLED, Wi-Fi 7 w niższej cenie. TC58 pozostaje aktualny dla firm rozbudowujących istniejące floty TC53.'
+      answer: 'Nie bezpośrednio. TC501 to następca linii TC53/TC58 — nowa klasa z RFID i AI. TC58 to wersja TC53 z 5G. W praktyce TC501 5G (TC501G) zastępuje zarówno TC53, jak i TC58 — oferuje wszystko co miał TC58 plus RFID, AI, AMOLED, Wi-Fi 7 w niższej cenie. TC58 pozostaje aktualny dla firm rozbudowujących istniejące floty TC53.'
     },
     {
       question: 'Który kolektor danych jest lepszy do magazynu: TC501 czy TC58?',
@@ -6986,7 +7014,7 @@ export const guides: Guide[] = [
 <p>Inwentaryzacja cykliczna polega na priorytetyzacji: produkty A (wysoka wartość) = co miesiąc, B = co kwartał, C = co pół roku. Wymaga: kolektor danych z trybem offline (dla stref bez Wi-Fi), bateria wymienna hot-swap. Rekomendowane kolektory: <a href="/produkt/zebra-tc22">Zebra TC22</a>, <a href="/produkt/honeywell-ct32">Honeywell CT32</a> (hot-swap bateria).</p>
 
 <h3>Inwentaryzacja RFID (masowa)</h3>
-<p>Inwentaryzacja RFID to skanowanie setek tagów jednocześnie z odległości do 5 metrów — bez kontaktu wzrokowego z etykietą. Jeden operator z kolektorem danych RFID liczy 3 000-5 000 pozycji na godzinę (vs 500-800 z kodem kreskowym). Wymaga: terminal mobilny z wbudowanym czytnikiem RFID UHF. Rekomendowane kolektory danych: <a href="/produkt/zebra-tc501">Zebra TC501</a> (3 730 zł — najtańszy z wbudowanym RFID). Porównanie: <a href="/poradnik/zebra-tc501-vs-tc58">TC501 vs TC58</a>.</p>
+<p>Inwentaryzacja RFID to skanowanie setek tagów jednocześnie z odległości do 5 metrów — bez kontaktu wzrokowego z etykietą. Jeden operator z kolektorem danych RFID liczy 3 000-5 000 pozycji na godzinę (vs 500-800 z kodem kreskowym). Wymaga: terminal mobilny z wbudowanym czytnikiem RFID UHF. Rekomendowane kolektory danych: <a href="/produkt/zebra-tc501">Zebra TC501</a> (6 541 zł — najtańszy z wbudowanym RFID). Porównanie: <a href="/poradnik/zebra-tc501-vs-tc58">TC501 vs TC58</a>.</p>
 
 <h3>Inwentaryzacja środków trwałych</h3>
 <p>Inwentaryzacja środków trwałych to coroczne sprawdzenie wyposażenia: meble, komputery, maszyny, narzędzia. Wymaga: lekki kolektor danych + kamera do zdjęć stanu. Rekomendowane terminale mobilne: <a href="/produkt/honeywell-ct70">Honeywell CT70</a> (kamera 48 MP, IP68), <a href="/produkt/zebra-em45">Zebra EM45</a> (kamera 50 MP — najlepsza do dokumentacji fotograficznej), <a href="/produkt/datalogic-memor-30">Datalogic Memor 30</a> (16 MP, IP68). Porównanie: <a href="/poradnik/zebra-tc22-vs-tc27">TC22 vs TC27</a>.</p>
@@ -7006,7 +7034,7 @@ export const guides: Guide[] = [
     <tr><td>Pełna (roczna)</td><td>1x/rok</td><td>2-5 dni</td><td><a href="/produkt/zebra-mc3400">Zebra MC3400</a> / <a href="/produkt/honeywell-ck67">Honeywell CK67</a></td><td>od <span data-live-price="zebra-mc3400">4 561 zł</span></td></tr>
     <tr><td>Ciągła (permanentna)</td><td>codziennie</td><td>1-2 h/dzień</td><td><a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a> / <a href="/produkt/zebra-tc22">Zebra TC22</a></td><td>od <span data-live-price="datalogic-memor-12">2 687 zł</span></td></tr>
     <tr><td>Cykliczna (ABC)</td><td>co tydzień/miesiąc</td><td>4-8 h</td><td><a href="/produkt/honeywell-ct32">Honeywell CT32</a> / <a href="/produkt/zebra-tc22">Zebra TC22</a></td><td>od <span data-live-price="zebra-tc22">2 417 zł</span></td></tr>
-    <tr><td>RFID (masowa)</td><td>dowolna</td><td>90% szybsza</td><td><a href="/produkt/zebra-tc501">Zebra TC501</a></td><td><span data-live-price="zebra-tc501">3 730 zł</span></td></tr>
+    <tr><td>RFID (masowa)</td><td>dowolna</td><td>90% szybsza</td><td><a href="/produkt/zebra-tc501">Zebra TC501</a></td><td><span data-live-price="zebra-tc501">6 541 zł</span></td></tr>
     <tr><td>Środki trwałe</td><td>1x/rok</td><td>1-3 dni</td><td><a href="/produkt/honeywell-ct70">Honeywell CT70</a> / <a href="/produkt/zebra-em45">Zebra EM45</a></td><td>od <span data-live-price="zebra-em45">2 951 zł</span></td></tr>
   </tbody>
 </table>`
@@ -7031,7 +7059,7 @@ export const guides: Guide[] = [
     <tr><td>Odczyt wielu naraz</td><td>NIE (1 kod = 1 skan)</td><td>TAK (200+ tagów/sek)</td></tr>
     <tr><td>Czas inwentaryzacji 10 000 szt.</td><td>~14 h</td><td>~1,5 h</td></tr>
     <tr><td>Trwałość nośnika</td><td>Niska (papier)</td><td>Wysoka (polimer/metal)</td></tr>
-    <tr><td>Koszt kolektora danych</td><td>od <span data-live-price="newland-mt93-megattera-standard-plus">2 207 zł</span></td><td>od <span data-live-price="zebra-tc501">3 730 zł</span></td></tr>
+    <tr><td>Koszt kolektora danych</td><td>od <span data-live-price="newland-mt93-megattera-standard-plus">2 207 zł</span></td><td>od <span data-live-price="zebra-tc501">6 541 zł</span></td></tr>
     <tr><td>Najlepszy dla</td><td>Magazyn, retail, logistyka</td><td>Retail (odzież), środki trwałe, pharma</td></tr>
   </tbody>
 </table>
@@ -7043,7 +7071,7 @@ export const guides: Guide[] = [
 <p>Inwentaryzacja RFID opłaca się gdy: magazyn ma ponad 30 000 SKU, firma prowadzi retail z dużą rotacją towaru (odzież, FMCG), inwentaryzacja środków trwałych obejmuje tysiące pozycji (meble, IT, narzędzia), branża wymaga traceability (farmacja, motoryzacja), lub firma przeprowadza inwentaryzację ciągłą/cykliczną (>2 razy w roku).</p>
 
 <h3>ROI inwentaryzacji RFID</h3>
-<p>Inwentaryzacja RFID jest 10x szybsza niż z kodami kreskowymi, ale tag RFID kosztuje 10x więcej niż etykieta z kodem kreskowym. ROI pojawia się przy dużych wolumenach: oszczędność czasu pracy > koszt tagów. Punkt zwrotny: od 50 000+ tagów i więcej niż 2 inwentaryzacje rocznie — RFID zaczyna się opłacać. Kolektory danych z RFID w TAKMA: <a href="/produkt/zebra-tc501">Zebra TC501</a> (<span data-live-price="zebra-tc501">3 730 zł</span>), <a href="/produkt/zebra-tc701">Zebra TC701</a> (4 017 zł), <a href="/produkt/zebra-tc53e">Zebra TC53e</a> z opcją RFID (<span data-live-price="zebra-tc53e">4 926 zł</span>).</p>`
+<p>Inwentaryzacja RFID jest 10x szybsza niż z kodami kreskowymi, ale tag RFID kosztuje 10x więcej niż etykieta z kodem kreskowym. ROI pojawia się przy dużych wolumenach: oszczędność czasu pracy > koszt tagów. Punkt zwrotny: od 50 000+ tagów i więcej niż 2 inwentaryzacje rocznie — RFID zaczyna się opłacać. Kolektory danych z RFID w TAKMA: <a href="/produkt/zebra-tc501">Zebra TC501</a> (<span data-live-price="zebra-tc501">6 541 zł</span>), <a href="/produkt/zebra-tc701">Zebra TC701</a> (8 361 zł), <a href="/produkt/zebra-tc53e">Zebra TC53e</a> z opcją RFID (<span data-live-price="zebra-tc53e">4 926 zł</span>).</p>`
     },
     {
       id: 'wymagania-techniczne',
@@ -7118,8 +7146,8 @@ export const guides: Guide[] = [
     <tr><td><a href="/produkt/newland-n7-cachalot-pro-ii">Newland N7 Cachalot</a></td><td><span data-live-price="newland-n7-cachalot-pro-ii">3 346 zł</span></td><td>IP67 / 1,5 m</td><td>klawiatura</td><td>Magazyn z klawiaturą (budżet)</td></tr>
     <tr><td><a href="/produkt/honeywell-ct32">Honeywell CT32</a></td><td><span data-live-price="honeywell-ct32">3 389 zł</span></td><td>IP65 / 1,5 m</td><td>—</td><td>Magazyn (hot-swap)</td></tr>
     <tr><td><a href="/produkt/newland-mt95-kambur-pro-ii">Newland MT95 Kambur</a></td><td><span data-live-price="newland-mt95-kambur-pro-ii">3 546 zł</span></td><td>IP67 / 1,5 m</td><td>—</td><td>Teren 5G (budżetowy)</td></tr>
-    <tr><td><strong><a href="/produkt/zebra-tc501">Zebra TC501</a></strong></td><td><span data-live-price="zebra-tc501">3 730 zł</span></td><td>IP68 / 2,4 m</td><td>—</td><td><strong>RFID inwentaryzacja</strong></td></tr>
-    <tr><td><a href="/produkt/zebra-tc701">Zebra TC701</a></td><td><span data-live-price="zebra-tc701">4 017 zł</span></td><td>IP68 / 3,66 m</td><td>—</td><td>RFID ultra-rugged</td></tr>
+    <tr><td><strong><a href="/produkt/zebra-tc501">Zebra TC501</a></strong></td><td><span data-live-price="zebra-tc501">6 541 zł</span></td><td>IP68 / 2,4 m</td><td>—</td><td><strong>RFID inwentaryzacja</strong></td></tr>
+    <tr><td><a href="/produkt/zebra-tc701">Zebra TC701</a></td><td><span data-live-price="zebra-tc701">8 361 zł</span></td><td>IP68 / 3,66 m</td><td>—</td><td>RFID ultra-rugged</td></tr>
     <tr><td><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a></strong></td><td><span data-live-price="zebra-mc3400">4 561 zł</span></td><td>IP67 / 2,4 m</td><td>3 klawiatury</td><td><strong>Duży magazyn — optymalny</strong></td></tr>
     <tr><td><a href="/produkt/datalogic-skorpio-x5">Datalogic Skorpio X5</a></td><td><span data-live-price="datalogic-skorpio-x5">4 858 zł</span></td><td>IP65 / 1,8 m</td><td>klawiatura</td><td>Magazyn gun (Datalogic)</td></tr>
     <tr><td><a href="/produkt/datalogic-memor-30">Datalogic Memor 30</a></td><td><span data-live-price="datalogic-memor-30">4 869 zł</span></td><td>IP68 / 1,8 m</td><td>—</td><td>Magazyn (Datalogic)</td></tr>
@@ -7145,7 +7173,7 @@ export const guides: Guide[] = [
   <li><strong><a href="/produkt/honeywell-ct32">Honeywell CT32</a> (<span data-live-price="honeywell-ct32">3 389 zł</span>)</strong> — bateria hot-swap. Jedyny terminal mobilny Honeywell z wymienną baterią w cenie poniżej 3 500 zł. Inwentaryzacja cykliczna bez przestojów na ładowanie.</li>
   <li><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a> (<span data-live-price="zebra-mc3400">4 561 zł</span>)</strong> — gun z klawiaturą do dużych magazynów. Skaner SE58 do 30,5 m, hot-swap bateria, 3 opcje klawiatury. Alternatywa: <a href="/produkt/honeywell-ck67">Honeywell CK67</a> (<span data-live-price="honeywell-ck67">7 765 zł</span>) z FlexRange XLR.</li>
   <li><strong><a href="/produkt/datalogic-memor-30">Datalogic Memor 30</a> (<span data-live-price="datalogic-memor-30">4 869 zł</span>)</strong> — premium touch od Datalogic. Ekran 6", IP68, skaner Mega 1.4 MP. Dla firm preferujących ekosystem Datalogic (DL-AXIST, Wavelink).</li>
-  <li><strong><a href="/produkt/zebra-tc501">Zebra TC501</a> (<span data-live-price="zebra-tc501">3 730 zł</span>)</strong> — RFID UHF wbudowany. Jedyny terminal z czytnikiem RFID poniżej 4 000 zł. Inwentaryzacja 3 000-5 000 tagów/h bez osobnego czytnika.</li>
+  <li><strong><a href="/produkt/zebra-tc501">Zebra TC501</a> (<span data-live-price="zebra-tc501">6 541 zł</span>)</strong> — RFID UHF wbudowany. Jedyny terminal z czytnikiem RFID poniżej 4 000 zł. Inwentaryzacja 3 000-5 000 tagów/h bez osobnego czytnika.</li>
 </ol>
 
 <p>Pełny ranking terminali mobilnych z cenami: <a href="/poradnik/top-10-terminali-mobilnych-2026">TOP 15 kolektorów danych 2026 — ranking z cenami</a>. Porównanie marek: <a href="/poradnik/zebra-vs-honeywell-terminale-mobilne">Zebra vs Honeywell — terminale mobilne</a>.</p>`
@@ -7263,7 +7291,7 @@ export const guides: Guide[] = [
     <tr><td>Hot-swap bateria</td><td><a href="/produkt/honeywell-ct32">Honeywell CT32</a></td><td><span data-live-price="honeywell-ct32">3 389 zł</span></td></tr>
     <tr><td>Duży magazyn + klawiatura</td><td><a href="/produkt/zebra-mc3400">Zebra MC3400</a> / <a href="/produkt/honeywell-ck67">Honeywell CK67</a></td><td>od <span data-live-price="zebra-mc3400">4 561 zł</span></td></tr>
     <tr><td>Premium touch (Datalogic)</td><td><a href="/produkt/datalogic-memor-30">Datalogic Memor 30</a></td><td><span data-live-price="datalogic-memor-30">4 869 zł</span></td></tr>
-    <tr><td>Inwentaryzacja RFID</td><td><a href="/produkt/zebra-tc501">Zebra TC501</a></td><td><span data-live-price="zebra-tc501">3 730 zł</span></td></tr>
+    <tr><td>Inwentaryzacja RFID</td><td><a href="/produkt/zebra-tc501">Zebra TC501</a></td><td><span data-live-price="zebra-tc501">6 541 zł</span></td></tr>
     <tr><td>Teren 5G</td><td><a href="/produkt/honeywell-ct47">Honeywell CT47</a> / <a href="/produkt/newland-mt95-kambur-pro-ii">Newland MT95</a></td><td>od <span data-live-price="newland-mt95-kambur-pro-ii">3 546 zł</span></td></tr>
     <tr><td>Mroźnia -30°C</td><td><a href="/produkt/zebra-mc9400">Zebra MC9400</a></td><td><span data-live-price="zebra-mc9400">7 638 zł</span></td></tr>
   </tbody>
@@ -7286,7 +7314,7 @@ export const guides: Guide[] = [
     { question: 'Jak długo wytrzymuje bateria kolektora przy ciągłym skanowaniu?', answer: '<a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a>: 8-10 h (4 300 mAh). <a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a>: 8-10 h. <a href="/produkt/zebra-tc22">Zebra TC22</a>: 8-12 h. <a href="/produkt/honeywell-ct32">Honeywell CT32</a>: 10-12 h (hot-swap!). <a href="/produkt/zebra-mc3400">MC3400</a>: 10-14 h (5 200/7 000 mAh, hot-swap). <a href="/produkt/honeywell-ck67">Honeywell CK67</a>: 12-14 h. Przy inwentaryzacji pełnej (>8 h) polecamy kolektor z hot-swap baterią: CT32, MC3400, CK67, MC9400.' },
     { question: 'Czy kolektor danych do inwentaryzacji można podłączyć do WMS?', answer: 'Tak — kolektory danych z Android działają z polskimi WMS-ami: Comarch WMS, Sellasist WMS, Logifact, SAP EWM, Qguar, Asseco WAMAS. Zebra DataWedge pozwala na integrację skanera kodów kreskowych bez programowania (output: keystroke do pola WMS).' },
     { question: 'Czy mogę używać zwykłego smartfona zamiast kolektora danych?', answer: 'Technicznie tak (kamera skanuje kody), ale: smartfon nie ma dedykowanego skanera kodów kreskowych (wolniejszy 5-10x), brak IP67 (mokry magazyn = awaria), brak gun grip, brak DataWedge, brak wsparcia MDM. Kolektor danych za 2 207 zł (<a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a>) jest 10x szybszy i 5x trwalszy niż smartfon za 1 500 zł.' },
-    { question: 'Kiedy opłaca się inwentaryzacja RFID zamiast kodów kreskowych?', answer: 'Gdy masz >30 000 SKU i robisz inwentaryzację >2x/rok. Inwentaryzacja RFID kolektorem danych jest 10x szybsza, ale tag RFID kosztuje 10x więcej niż etykieta z kodem kreskowym. ROI przy dużych wolumenach: oszczędność czasu > koszt tagów. Kolektory danych RFID: <a href="/produkt/zebra-tc501">Zebra TC501</a> (<span data-live-price="zebra-tc501">3 730 zł</span>), <a href="/produkt/zebra-tc701">Zebra TC701</a> (<span data-live-price="zebra-tc701">4 017 zł</span>).' },
+    { question: 'Kiedy opłaca się inwentaryzacja RFID zamiast kodów kreskowych?', answer: 'Gdy masz >30 000 SKU i robisz inwentaryzację >2x/rok. Inwentaryzacja RFID kolektorem danych jest 10x szybsza, ale tag RFID kosztuje 10x więcej niż etykieta z kodem kreskowym. ROI przy dużych wolumenach: oszczędność czasu > koszt tagów. Kolektory danych RFID: <a href="/produkt/zebra-tc501">Zebra TC501</a> (<span data-live-price="zebra-tc501">6 541 zł</span>), <a href="/produkt/zebra-tc701">Zebra TC701</a> (<span data-live-price="zebra-tc701">8 361 zł</span>).' },
     { question: 'Czy mogę skanować kody kreskowe i RFID jednym kolektorem danych?', answer: 'Tak — <a href="/produkt/zebra-tc501">Zebra TC501</a> i <a href="/produkt/zebra-tc701">TC701</a> mają zarówno skaner kodów kreskowych (AC670, do 30 m), jak i czytnik RFID UHF wbudowany. Jeden kolektor danych, dwie metody inwentaryzacji. <a href="/produkt/zebra-tc53e">Zebra TC53e</a> (4 926 zł) oferuje RFID jako opcję.' },
     { question: 'Czy TAKMA pomaga w konfiguracji kolektora danych do inwentaryzacji?', answer: 'Tak — oferujemy bezpłatne doradztwo techniczne, pomoc w konfiguracji DataWedge i integracji kolektora danych z WMS. Dostarczamy skonfigurowane terminale mobilne gotowe do pracy "out of the box". <a href="/kontakt">Kontakt</a> lub telefon.' },
     { question: 'Czy mogę zamówić zestaw: kolektor danych + drukarka etykiet + etykiety?', answer: 'Tak — kompletujemy zestawy inwentaryzacyjne. Przykład: <a href="/produkt/zebra-tc22">Zebra TC22</a> (2 417 zł) + <a href="/produkt/zebra-zd421d">drukarka ZD421d</a> (1 472 zł) + etykiety Z-Perform 102x152 mm (75 zł/rolka) = gotowy pakiet kolektor danych + drukarka etykiet od ~4 000 zł netto. <a href="/kontakt">Doradztwo i zamówienia</a>.' },
@@ -11335,14 +11363,14 @@ export const guides: Guide[] = [
       <td class="border border-gray-200 px-2 sm:px-3 py-2"><a href="/produkt/zebra-tc501">Zebra TC501</a></td>
       <td class="border border-gray-200 px-2 sm:px-3 py-2">Nowa (2025+)</td>
       <td class="border border-gray-200 px-2 sm:px-3 py-2">WiFi+ToF, 5G+ToF</td>
-      <td class="border border-gray-200 px-2 sm:px-3 py-2">4 734 zł</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">6 541 zł</td>
       <td class="border border-gray-200 px-2 sm:px-3 py-2">Logistyka, field service</td>
     </tr>
     <tr>
       <td class="border border-gray-200 px-2 sm:px-3 py-2"><a href="/produkt/zebra-tc701">Zebra TC701</a></td>
       <td class="border border-gray-200 px-2 sm:px-3 py-2">Nowa (2025+)</td>
       <td class="border border-gray-200 px-2 sm:px-3 py-2">WiFi+ToF, 5G+ToF</td>
-      <td class="border border-gray-200 px-2 sm:px-3 py-2">8 099 zł</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">8 361 zł</td>
       <td class="border border-gray-200 px-2 sm:px-3 py-2">Ultra-rugged, outdoor</td>
     </tr>
     <tr>
@@ -11398,7 +11426,7 @@ export const guides: Guide[] = [
   <tbody>
     <tr>
       <td class="border border-gray-200 px-2 sm:px-3 py-2"><strong>Koszt</strong></td>
-      <td class="border border-gray-200 px-2 sm:px-3 py-2">Terminal z ToF od 4 734 zł</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Terminal z ToF od 6 541 zł</td>
       <td class="border border-gray-200 px-2 sm:px-3 py-2">30 000 -- 100 000 zł</td>
       <td class="border border-gray-200 px-2 sm:px-3 py-2">0 zł (ale koszty błędów)</td>
     </tr>
@@ -11442,7 +11470,7 @@ export const guides: Guide[] = [
 </table>
 
 <h3>Kiedy wybrać dimensioning mobilny?</h3>
-<p>Dimensioning mobilny na terminalu Zebra sprawdza się najlepiej, gdy paczki są rozproszone — kurier odbierający przesyłki u klientów, pracownik przyjęcia towaru w magazynie, operator na rampie załadunkowej. Nie wymaga stałej infrastruktury, a terminal pełni jednocześnie funkcję skanera kodów, komputera z WMS i urządzenia pomiarowego. Koszt wejścia (od 4 734 zł za TC501 z ToF) jest wielokrotnie niższy niż systemu stacjonarnego.</p>
+<p>Dimensioning mobilny na terminalu Zebra sprawdza się najlepiej, gdy paczki są rozproszone — kurier odbierający przesyłki u klientów, pracownik przyjęcia towaru w magazynie, operator na rampie załadunkowej. Nie wymaga stałej infrastruktury, a terminal pełni jednocześnie funkcję skanera kodów, komputera z WMS i urządzenia pomiarowego. Koszt wejścia (od 6 541 zł za TC501 z ToF) jest wielokrotnie niższy niż systemu stacjonarnego.</p>
 
 <h3>Kiedy wybrać system stacjonarny?</h3>
 <p>Systemy stacjonarne (Cubiscan, Mettler Toledo) są uzasadnione przy bardzo dużych wolumenach (tysiące paczek dziennie) w jednym punkcie — np. sortownia centralna firmy kurierskiej. Oferują najwyższą dokładność (+/-0,1 cm), zintegrowaną wagę i pomiar na taśmociągu, ale wymagają inwestycji rzędu 30 000-100 000 zł i stałego stanowiska.</p>
@@ -11492,7 +11520,7 @@ export const guides: Guide[] = [
 
 <h3>Kalkulacja zwrotu z inwestycji</h3>
 <ul>
-  <li><strong>Koszt terminala z ToF:</strong> <a href="/produkt/zebra-tc501">Zebra TC501</a> od 4 734 zł (najtańszy model z kamerą ToF)</li>
+  <li><strong>Koszt terminala z ToF:</strong> <a href="/produkt/zebra-tc501">Zebra TC501</a> od 6 541 zł (najtańszy model z kamerą ToF)</li>
   <li><strong>Licencja:</strong> MD Client jest częścią pakietu Mobility DNA Professional — wliczona w cenę terminala w wersji Professional/Premium</li>
   <li><strong>Miesięczne oszczędności:</strong> ok. 945 zł (czas) + redukcja strat na błędach wymiarowych</li>
   <li><strong>Zwrot z inwestycji:</strong> ok. 5 miesięcy (uwzględniając tylko oszczędność czasu)</li>
