@@ -5,7 +5,6 @@ import { useState } from 'react'
 export default function AiSummary({ slug }: { slug: string }) {
   const [open, setOpen] = useState(false)
   const [summary, setSummary] = useState<string | null>(null)
-  const [provider, setProvider] = useState<string>('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
 
@@ -28,7 +27,6 @@ export default function AiSummary({ slug }: { slug: string }) {
       const data = await res.json()
       if (data.summary) {
         setSummary(data.summary)
-        setProvider(data.provider || 'AI')
       } else {
         setError(true)
       }
@@ -47,9 +45,9 @@ export default function AiSummary({ slug }: { slug: string }) {
         className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 font-medium text-sm transition-colors"
       >
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
         </svg>
-        Podsumowanie AI
+        Podsumowanie
         <svg
           className={`w-4 h-4 transition-transform ${open ? 'rotate-180' : ''}`}
           fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"
@@ -71,7 +69,7 @@ export default function AiSummary({ slug }: { slug: string }) {
           ) : summary ? (
             <>
               <p className="text-[15px] text-gray-800 leading-relaxed">{summary}</p>
-              <p className="text-[11px] text-gray-400 mt-3">Wygenerowane przez AI ({provider}). Podsumowanie ma charakter informacyjny.</p>
+              <p className="text-[11px] text-gray-400 mt-3">Podsumowanie ma charakter informacyjny.</p>
             </>
           ) : null}
         </div>
