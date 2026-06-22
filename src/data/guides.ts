@@ -12647,7 +12647,15 @@ export const guides: Guide[] = [
 
 <p>Każde stanowisko kancelaryjne pracujące z EZD RP potrzebuje minimum trzech urządzeń: <strong>skanera dokumentów z OCR i wsparciem PDF/A</strong> (do digitalizacji wpływów), <strong>drukarki etykiet termotransferowej</strong> (do oznaczania teczek aktowych i segregatorów w Składzie Chronologicznym), oraz <strong>czytnika kodów kreskowych</strong> (do szybkiej rejestracji wpływów przez skanowanie etykiet RPW na kopertach). W większych urzędach dochodzą dodatkowe stanowiska — punkty pobrań, sekretariaty, archiwum.</p>
 
-<p>Niniejszy przewodnik systematycznie omawia każdy z tych elementów: wymagania techniczne narzucone przez NASK, polecane modele od wiodących producentów (Zebra, Epson), realne koszty wdrożenia oraz proces dobierania zestawu pod wielkość jednostki. Wszystkie rekomendacje pochodzą z naszych wdrożeń w polskich urzędach gminnych, miejskich i administracji rządowej.</p>`
+<p>Niniejszy przewodnik systematycznie omawia każdy z tych elementów: wymagania techniczne narzucone przez NASK, polecane modele od wiodących producentów (Zebra, Epson), realne koszty wdrożenia oraz proces dobierania zestawu pod wielkość jednostki. Wszystkie rekomendacje pochodzą z naszych wdrożeń w polskich urzędach gminnych, miejskich i administracji rządowej.</p>
+
+<a href="https://www.ezdrp24.com.pl/" style="display:block;position:relative;margin:2rem 0;border-radius:16px;overflow:hidden;text-decoration:none;min-height:220px;background-image:linear-gradient(90deg, rgba(13,20,48,0.97) 0%, rgba(13,20,48,0.86) 42%, rgba(13,20,48,0.12) 100%), url('/images/guides/ezd-rp-banner.webp');background-size:cover;background-position:right center;">
+  <div style="position:relative;max-width:36rem;padding:2rem;text-align:left;">
+    <p style="margin:0;font-size:1.5rem;line-height:1.2;font-weight:700;color:#ffffff;">Sprzęt do EZD RP zgodny z wymaganiami NASK</p>
+    <p style="margin:0.75rem 0 0;font-size:1rem;line-height:1.55;color:#dbe2f0;">Kompletne zestawy dobrane i wdrożone w Twoim urzędzie.</p>
+    <span style="display:inline-flex;align-items:center;gap:0.5rem;margin-top:1.25rem;background:#ffffff;color:#0d1430;padding:0.75rem 1.25rem;border-radius:10px;font-size:0.9rem;font-weight:600;text-decoration:none;">Przejdź do ezdrp24.com.pl →</span>
+  </div>
+</a>`
     },
     {
       id: 'wymagania',
