@@ -252,8 +252,11 @@ export async function gaRealtime(): Promise<GaRealtime> {
 
 // --- Konwersje / leady -------------------------------------------------------
 
-/** Zdarzenia kontaktowe = lead (zgodnie z ga-events.ts na froncie). */
-export const LEAD_EVENTS = ['klik_tel', 'klik_mail', 'wyslanie_formularza', 'generate_lead'] as const
+/** Zdarzenia kontaktowe = lead (zgodnie z ga-events.ts na froncie).
+ *  Formularze liczone przez `wyslanie_formularza` (pada na WSZYSTKICH formularzach
+ *  przez trackFormSubmit). `generate_lead` celowo poza listą — padał równolegle
+ *  i podwajałby leady formularzowe. */
+export const LEAD_EVENTS = ['klik_tel', 'klik_mail', 'wyslanie_formularza'] as const
 const FUNNEL_EVENTS = ['view_item', 'add_to_cart', 'begin_checkout', 'purchase'] as const
 
 const inList = (field: string, values: readonly string[]) => ({
@@ -274,7 +277,15 @@ export interface GaConversions {
   /** Zdrowie tagowania: sesje z landingiem "(not set)" vs wszystkie */
   notSetSessions: number
   totalSessions: number
+  /** Ruch z asystentów AI (chatgpt.com, perplexity, gemini, claude, copilot…) */
+  aiReferrals: { source: string; sessions: number; users: number }[]
+  aiSessionsTotal: number
 }
+
+/** Hosty źródeł rozpoznawane jako asystenci AI (LLM). Dopasowanie regexem
+ *  po `sessionSource` — łapie warianty (chatgpt.com, chat.openai.com itd.). */
+export const AI_SOURCE_REGEX =
+  'chatgpt|openai|perplexity|gemini\\.google|bard\\.google|claude\\.ai|anthropic|copilot|bing.*chat|edgeservices|you\\.com|poe\\.com|phind|deepseek|mistral'
 
 /** Konwersje, leady, kampanie i produkty za ostatnie `rangeDays` dni. */
 export async function gaConversions(rangeDays = 28): Promise<GaConversions> {
@@ -282,7 +293,7 @@ export async function gaConversions(rangeDays = 28): Promise<GaConversions> {
   const prev = { startDate: `${rangeDays * 2}daysAgo`, endDate: `${rangeDays + 1}daysAgo` }
   const allEvents = [...LEAD_EVENTS, ...FUNNEL_EVENTS]
 
-  const [events, srcSessions, srcLeads, pageLeads, campSessions, campLeads, products, notSet, totals] =
+  const [events, srcSessions, srcLeads, pageLeads, campSessions, campLeads, products, notSet, totals, aiRef] =
     await Promise.all([
       callApi('runReport', { dateRanges: [cur, prev], dimensions: [{ name: 'eventName' }], metrics: [{ name: 'eventCount' }], dimensionFilter: inList('eventName', allEvents) }),
       callApi('runReport', { dateRanges: [cur], dimensions: [{ name: 'sessionSourceMedium' }], metrics: [{ name: 'sessions' }], orderBys: [{ metric: { metricName: 'sessions' }, desc: true }], limit: 20 }),
@@ -293,6 +304,14 @@ export async function gaConversions(rangeDays = 28): Promise<GaConversions> {
       callApi('runReport', { dateRanges: [cur], dimensions: [{ name: 'itemName' }], metrics: [{ name: 'itemsViewed' }, { name: 'itemsAddedToCart' }, { name: 'itemsPurchased' }, { name: 'itemRevenue' }], orderBys: [{ metric: { metricName: 'itemsViewed' }, desc: true }], limit: 15 }),
       callApi('runReport', { dateRanges: [cur], dimensions: [{ name: 'landingPagePlusQueryString' }], metrics: [{ name: 'sessions' }], dimensionFilter: { filter: { fieldName: 'landingPagePlusQueryString', stringFilter: { value: '(not set)' } } } }),
       callApi('runReport', { dateRanges: [cur], metrics: [{ name: 'sessions' }] }),
+      callApi('runReport', {
+        dateRanges: [cur],
+        dimensions: [{ name: 'sessionSource' }],
+        metrics: [{ name: 'sessions' }, { name: 'activeUsers' }],
+        dimensionFilter: { filter: { fieldName: 'sessionSource', stringFilter: { matchType: 'PARTIAL_REGEXP', value: AI_SOURCE_REGEX, caseSensitive: false } } },
+        orderBys: [{ metric: { metricName: 'sessions' }, desc: true }],
+        limit: 20,
+      }),
     ])
 
   // events: wiersze [eventName, dateRange] — rozdziel bieżący i poprzedni okres
@@ -339,6 +358,12 @@ export async function gaConversions(rangeDays = 28): Promise<GaConversions> {
     })),
     notSetSessions: n(notSet.rows?.[0]?.metricValues?.[0]?.value),
     totalSessions: n(totals.rows?.[0]?.metricValues?.[0]?.value),
+    aiReferrals: (aiRef.rows || []).map((r) => ({
+      source: r.dimensionValues?.[0]?.value || '(brak)',
+      sessions: n(r.metricValues?.[0]?.value),
+      users: n(r.metricValues?.[1]?.value),
+    })),
+    aiSessionsTotal: (aiRef.rows || []).reduce((s, r) => s + n(r.metricValues?.[0]?.value), 0),
   }
 }
 

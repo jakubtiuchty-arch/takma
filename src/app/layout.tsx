@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Suspense } from 'react'
 import { Inter } from 'next/font/google'
 import { headers } from 'next/headers'
 import dynamic from 'next/dynamic'
@@ -6,6 +7,7 @@ import './globals.css'
 import LayoutShell from '@/components/layout/LayoutShell'
 import PostHogProvider from '@/components/PostHogProvider'
 import { AutoLinkTracking } from '@/components/tracking/AutoLinkTracking'
+import GARouteTracker from '@/components/tracking/GARouteTracker'
 import LiveBeacon from '@/components/LiveBeacon'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -195,6 +197,11 @@ gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', { send_page_view: true });`}
       <Analytics />
       <SpeedInsights />
       {!isAdmin && !isPanel && <AutoLinkTracking />}
+      {!isAdmin && !isPanel && process.env.NEXT_PUBLIC_GA_ID && (
+        <Suspense fallback={null}>
+          <GARouteTracker />
+        </Suspense>
+      )}
       {!isAdmin && !isPanel && <LiveBeacon />}
       {!isAdmin && !isPanel && (
         <>

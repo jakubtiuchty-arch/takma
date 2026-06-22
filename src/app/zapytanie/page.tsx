@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
-import { trackGenerateLead } from '@/lib/ga-events'
+import { trackGenerateLead, trackFormSubmit } from '@/lib/ga-events'
 import { Button, Input, Textarea, Checkbox, Select } from '@/components/ui'
 import {
   ChevronRightIcon,
@@ -117,6 +117,7 @@ export default function RFQPage() {
     console.log('RFQ Submission:', { formData, items })
 
     trackGenerateLead('zapytanie_ofertowe')
+    trackFormSubmit('zapytanie_ofertowe', '/zapytanie')
 
     setIsSubmitting(false)
     setIsSuccess(true)

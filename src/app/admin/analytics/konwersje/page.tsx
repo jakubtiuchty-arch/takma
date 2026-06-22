@@ -156,6 +156,42 @@ export default async function ConversionsPage({ searchParams }: { searchParams: 
             </div>
           </div>
 
+          {/* Asystenci AI (LLM) — chatgpt.com, perplexity, gemini, claude… */}
+          <div className="bg-white rounded-xl border border-gray-200 p-5 mb-6">
+            <div className="flex items-center justify-between mb-3">
+              <h3 className="text-sm font-semibold text-gray-700">Ruch z asystentów AI</h3>
+              <span className="text-xs text-gray-500">
+                {fmt(data.aiSessionsTotal)} sesji
+                {data.totalSessions ? ` · ${pct(data.aiSessionsTotal / data.totalSessions)} całości` : ''}
+              </span>
+            </div>
+            {data.aiReferrals.length === 0 ? (
+              <p className="text-xs text-gray-400">
+                Brak ruchu z asystentów AI w tym okresie. Kanał pojawia się, gdy LLM
+                (ChatGPT, Perplexity, Gemini) cytuje takma.com.pl w odpowiedzi.
+              </p>
+            ) : (
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="text-[11px] uppercase tracking-wide text-gray-400 text-left">
+                    <th className="py-1.5 pr-2 font-medium">Źródło</th>
+                    <th className="py-1.5 pl-3 font-medium text-right">Sesje</th>
+                    <th className="py-1.5 pl-3 font-medium text-right">Użytkownicy</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100">
+                  {data.aiReferrals.map((r, i) => (
+                    <tr key={i}>
+                      <td className="py-1.5 pr-2 text-gray-800 max-w-[260px] truncate" title={r.source}>{r.source}</td>
+                      <td className="py-1.5 pl-3 text-right tabular-nums font-medium text-gray-900">{fmt(r.sessions)}</td>
+                      <td className="py-1.5 pl-3 text-right tabular-nums text-gray-700">{fmt(r.users)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            )}
+          </div>
+
           {/* Kampanie */}
           <div className="bg-white rounded-xl border border-gray-200 p-5 mb-6">
             <h3 className="text-sm font-semibold text-gray-700 mb-3">Kampanie</h3>

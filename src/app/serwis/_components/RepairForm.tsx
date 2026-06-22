@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { trackGenerateLead } from '@/lib/ga-events'
+import { trackGenerateLead, trackFormSubmit } from '@/lib/ga-events'
 import * as z from 'zod'
 import { RegistrationLightbox } from './RegistrationLightbox'
 import {
@@ -254,6 +254,7 @@ export default function RepairForm() {
 
       // GA4: service request lead
       trackGenerateLead(`serwis_${data.deviceType}`)
+      trackFormSubmit(`serwis_${data.deviceType}`, '/serwis')
 
       // Pokaz lightbox rejestracji
       setSubmittedRepairId(result.requestId || null)

@@ -158,8 +158,27 @@ export function trackEmailClick(emailAddress: string, location?: string) {
   })
 }
 
-/** Form submission success (wyslanie_formularza) */
+/** Form submission success. Emituje DWA zdarzenia:
+ *
+ *  - `form_submit` — standardowy event GA4. Paruje się z auto-`form_start`
+ *    (Enhanced Measurement). Naprawia raport "74 form_start / 0 form_submit":
+ *    formularze są AJAX-owe (preventDefault + fetch), więc GA nie wykrywał
+ *    wysyłki automatycznie. W GA4 NIE oznaczaj go jako konwersji — służy tylko
+ *    do raportu interakcji z formularzami.
+ *
+ *  - `wyslanie_formularza` — KANONICZNA konwersja formularza (już skonfigurowana
+ *    w GA4 jako kluczowe zdarzenie i czytana przez panel /admin/analytics,
+ *    LEAD_EVENTS w src/lib/ga.ts). Wcześniej padała tylko na /kontakt — teraz,
+ *    przez wywołanie trackFormSubmit we wszystkich formularzach, liczy KAŻDY
+ *    lead formularzowy.
+ *
+ *  UWAGA: nie licz jednocześnie `wyslanie_formularza` i `generate_lead` jako
+ *  leadów (podwojenie) — `generate_lead` usunięty z LEAD_EVENTS. */
 export function trackFormSubmit(formName: string, formLocation?: string) {
+  gtag('event', 'form_submit', {
+    form_name: formName,
+    form_destination: formLocation ?? 'unknown',
+  })
   gtag('event', 'wyslanie_formularza', {
     form_name: formName,
     form_location: formLocation ?? 'unknown',
