@@ -23,6 +23,7 @@ import { granitXp1991iPl } from './manual-content/honeywell-granit-xp-1991i-pl'
 import { honeywellGranitUltra2105iPl } from './manual-content/honeywell-granit-ultra-2105i-pl'
 import { granitXp1991ixlrPl } from './manual-content/honeywell-granit-xp-1991ixlr-pl'
 import { honeywellXenonUltra1962Pl } from './manual-content/honeywell-xenon-ultra-1962-pl'
+import { honeywellXenonUltra1960Pl } from './manual-content/honeywell-xenon-ultra-1960-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -806,6 +807,29 @@ export const manuals: Manual[] = [
       'xenon ultra 1962 instrukcja obsługi pdf',
       '1962 bluetooth healthcare konfiguracja',
       'honeywell 1962 manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-xenon-ultra-1960',
+    model: 'Xenon Ultra 1960g',
+    name: 'Honeywell Xenon Ultra 1960g',
+    brand: 'Honeywell',
+    category: 'skanery',
+    description:
+      'Przewodowy uniwersalny skaner kodów 1D/2D do handlu i ochrony zdrowia, wariant Healthcare (obudowa odporna na dezynfekcję). Skrócona instrukcja po polsku — podłączenie, skanowanie, tryb healthcare, konfiguracja.',
+    productSlug: 'honeywell-xenon-ultra-1960',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia Xenon Ultra 1960', lang: 'en', file: '/instrukcje/honeywell-xenon-ultra-1960-qs-en.pdf', size: '310 KB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi / programowania serii 196X (User Guide)', lang: 'en', file: '/instrukcje/honeywell-xenon-ultra-1960-ug-en.pdf', size: '6,1 MB' },
+    ],
+    polishManual: honeywellXenonUltra1960Pl,
+    keywords: [
+      'honeywell xenon ultra 1960g instrukcja',
+      'xenon 1960g instrukcja po polsku',
+      'xenon ultra 1960 instrukcja obsługi pdf',
+      '1960g usb healthcare konfiguracja',
+      'honeywell 1960g manual pdf',
     ],
     updatedAt: '2026-06-22',
   },
