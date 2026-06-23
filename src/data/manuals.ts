@@ -473,7 +473,8 @@ export const manuals: Manual[] = [
     category: 'drukarki-etykiet',
     description:
       'Kompaktowa przemysłowa drukarka etykiet 4", druk termotransferowy i termiczny, ekran dotykowy 3,5", ZPL-II. Skrócona instrukcja po polsku — etykiety i taśma, kalibracja, sieć, czyszczenie głowicy.',
-    productSlug: 'honeywell-pm45c',
+    // PM45c to kompaktowy wariant PM45 — w sklepie sprzedawany jako PM45 (brak osobnego produktu).
+    productSlug: 'honeywell-pm45',
     documents: [
       { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia PM45 / PM45c / PM65', lang: 'en', file: '/instrukcje/honeywell-pm45-qs-en.pdf', size: '1,9 MB' },
       { type: 'user-guide', title: 'Pełna instrukcja obsługi PM45 / PM45c / PM65 (User Guide)', lang: 'en', file: '/instrukcje/honeywell-pm45-65-ug-en.pdf', size: '10,0 MB' },

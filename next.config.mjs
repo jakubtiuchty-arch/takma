@@ -31,6 +31,20 @@ const nextConfig = {
   async redirects() {
     return [
       // =====================================================
+      // INSTRUKCJE — stare PDF-y instrukcji (/downloads) → kanoniczny dom /instrukcje
+      // PL PDF → strona po polsku; EN PDF → hub modelu
+      // =====================================================
+      { source: '/downloads/honeywell/hon-ia-pss-ct70-a-pl-qs.pdf', destination: '/instrukcje/honeywell-ct70/instrukcja-po-polsku', permanent: true },
+      { source: '/downloads/honeywell/hon-ia-pss-ct70-a-en-qs.pdf', destination: '/instrukcje/honeywell-ct70', permanent: true },
+      { source: '/downloads/honeywell/hon-ia-pss-ct32-a-en-qs.pdf', destination: '/instrukcje/honeywell-ct32', permanent: true },
+      { source: '/downloads/honeywell/sps-ppr-ck62-a-pl-qs.pdf', destination: '/instrukcje/honeywell-ck62/instrukcja-po-polsku', permanent: true },
+      { source: '/downloads/hon-ia-pss-ck67-a-pl-qs.pdf', destination: '/instrukcje/honeywell-ck67/instrukcja-po-polsku', permanent: true },
+      { source: '/downloads/skorpiox5_um.pdf', destination: '/instrukcje/honeywell-ck67', permanent: true },
+      { source: '/downloads/sps-ppr-px940-quick-start-guide.pdf', destination: '/instrukcje/honeywell-px940', permanent: true },
+      { source: '/downloads/4250wb_4230b_pol_ug_01.pdf', destination: '/instrukcje/honeywell-rp4f/instrukcja-po-polsku', permanent: true },
+      { source: '/downloads/instrukcja-cmp-25l-en.pdf', destination: '/instrukcje/honeywell-rp2f', permanent: true },
+
+      // =====================================================
       // TRAILING SLASH: stara strona WordPress miała /
       // =====================================================
 
