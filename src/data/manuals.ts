@@ -21,6 +21,7 @@ import { honeywellGranitUltra2100iPl } from './manual-content/honeywell-granit-u
 import { granitXp1990iPl } from './manual-content/honeywell-granit-xp-1990i-pl'
 import { granitXp1991iPl } from './manual-content/honeywell-granit-xp-1991i-pl'
 import { honeywellGranitUltra2105iPl } from './manual-content/honeywell-granit-ultra-2105i-pl'
+import { granitXp1991ixlrPl } from './manual-content/honeywell-granit-xp-1991ixlr-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -758,6 +759,29 @@ export const manuals: Manual[] = [
       'granit ultra 2105i instrukcja obsługi pdf',
       '2105i bluetooth bateria baza',
       'honeywell 2105i manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-granit-xp-1991ixlr',
+    model: 'Granit XP 1991iXLR',
+    name: 'Honeywell Granit XP 1991iXLR',
+    brand: 'Honeywell',
+    category: 'skanery',
+    description:
+      'Bezprzewodowy (Bluetooth) przemysłowy skaner kodów 1D/2D dalekiego zasięgu (XLR), z baterią i bazą ładującą, ultrawytrzymały. Skrócona instrukcja po polsku — bateria, baza, parowanie Bluetooth, konfiguracja.',
+    productSlug: 'honeywell-granit-xp-1991ixlr',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia Granit XP 1990i', lang: 'en', file: '/instrukcje/honeywell-granit-xp-1990i-qs-en.pdf', size: '550 KB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi / programowania serii 199xi (User Guide)', lang: 'en', file: '/instrukcje/honeywell-granit-xp-199x-ug-en.pdf', size: '9,1 MB' },
+    ],
+    polishManual: granitXp1991ixlrPl,
+    keywords: [
+      'honeywell granit xp 1991ixlr instrukcja',
+      'granit xp 1991ixlr instrukcja po polsku',
+      'granit 1991ixlr instrukcja obsługi pdf',
+      '1991i xlr daleki zasięg bluetooth',
+      'honeywell 1991ixlr manual pdf',
     ],
     updatedAt: '2026-06-22',
   },
