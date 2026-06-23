@@ -6,7 +6,6 @@ import { ChevronRightIcon } from '@/components/ui/Icons'
 import {
   manuals,
   getManualBySlug,
-  categoryLabel,
   docTypeMeta,
   docSlug,
   docBanner,
@@ -105,10 +104,7 @@ export default async function ManualHubPage({ params }: PageProps) {
             </nav>
 
             <header className="container-main pt-2 pb-12">
-              <span className={`inline-block text-xs font-semibold px-2.5 py-1 rounded ${accent.badge}`}>
-                {categoryLabel(manual.category)} · {manual.brand}
-              </span>
-              <h1 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900">
                 {manual.name} — instrukcje i dokumentacja
               </h1>
             </header>

@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { ChevronRightIcon, DownloadIcon } from '@/components/ui/Icons'
-import { manuals, getManualBySlug, categoryLabel } from '@/data/manuals'
+import { manuals, getManualBySlug } from '@/data/manuals'
 import { getProductBySlug } from '@/data/products'
 import { ManualBlocks } from '@/app/instrukcje/_components/ManualBlocks'
 
@@ -86,10 +86,7 @@ export default async function PolishManualPage({ params }: PageProps) {
 
         {/* Hero */}
         <header className="container-main pt-6 pb-8">
-          <span className="text-xs font-medium text-slate-500 bg-slate-100 px-2.5 py-1 rounded">
-            {categoryLabel(manual.category)} · {manual.brand}
-          </span>
-          <h1 className="mt-3 text-3xl md:text-4xl font-bold text-slate-900">{heading}</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-slate-900">{heading}</h1>
         </header>
 
         <div className="container-main pb-16 grid lg:grid-cols-3 gap-8">
