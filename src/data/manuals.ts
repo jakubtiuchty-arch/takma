@@ -14,6 +14,8 @@ import { honeywellPm65Pl } from './manual-content/honeywell-pm65-pl'
 import { honeywellPx45Pl } from './manual-content/honeywell-px45-pl'
 import { honeywellPx65Pl } from './manual-content/honeywell-px65-pl'
 import { honeywellPx940Pl } from './manual-content/honeywell-px940-pl'
+import { honeywellRp2fPl } from './manual-content/honeywell-rp2f-pl'
+import { honeywellRp4fPl } from './manual-content/honeywell-rp4f-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -544,6 +546,52 @@ export const manuals: Manual[] = [
       'px940 instrukcja obsługi pdf',
       'px940 weryfikator',
       'honeywell px940 manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-rp2f',
+    model: 'RP2f',
+    name: 'Honeywell RP2f',
+    brand: 'Honeywell',
+    category: 'drukarki-etykiet',
+    description:
+      'Mobilna drukarka 2" z drukiem termicznym, baterią hot-swap, Bluetooth 5.0 i Wi-Fi. Skrócona instrukcja po polsku — bateria, ładowanie nośnika, łączność i konserwacja.',
+    productSlug: 'honeywell-rp2f',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia RP2f / RP4f', lang: 'en', file: '/instrukcje/honeywell-rp2f-4f-qs-en.pdf', size: '690 KB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi RP2f / RP4f (User Guide)', lang: 'en', file: '/instrukcje/honeywell-rp2f-4f-ug-en.pdf', size: '2,5 MB' },
+    ],
+    polishManual: honeywellRp2fPl,
+    keywords: [
+      'honeywell rp2f instrukcja',
+      'rp2f instrukcja po polsku',
+      'rp2f instrukcja obsługi pdf',
+      'rp2f szybki start',
+      'honeywell rp2f manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-rp4f',
+    model: 'RP4f',
+    name: 'Honeywell RP4f',
+    brand: 'Honeywell',
+    category: 'drukarki-etykiet',
+    description:
+      'Mobilna drukarka etykiet 4" (etykiety kurierskie 100×150) z drukiem termicznym, baterią hot-swap, Bluetooth 5.0 i Wi-Fi. Skrócona instrukcja po polsku.',
+    productSlug: 'honeywell-rp4f',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia RP2f / RP4f', lang: 'en', file: '/instrukcje/honeywell-rp2f-4f-qs-en.pdf', size: '690 KB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi RP2f / RP4f (User Guide)', lang: 'en', file: '/instrukcje/honeywell-rp2f-4f-ug-en.pdf', size: '2,5 MB' },
+    ],
+    polishManual: honeywellRp4fPl,
+    keywords: [
+      'honeywell rp4f instrukcja',
+      'rp4f instrukcja po polsku',
+      'rp4f instrukcja obsługi pdf',
+      'rp4f etykiety kurierskie',
+      'honeywell rp4f manual pdf',
     ],
     updatedAt: '2026-06-22',
   },
