@@ -28,6 +28,7 @@ import { honeywellVoyagerXp1470gPl } from './manual-content/honeywell-voyager-xp
 import { honeywellVoyagerXp1472gPl } from './manual-content/honeywell-voyager-xp-1472g-pl'
 import { honeywellEda10aPl } from './manual-content/honeywell-eda10a-pl'
 import { honeywellRt10aPl } from './manual-content/honeywell-rt10a-pl'
+import { honeywellRt10wPl } from './manual-content/honeywell-rt10w-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -925,6 +926,29 @@ export const manuals: Manual[] = [
       'rt10a instrukcja obsługi pdf',
       'rt10a tablet szybki start',
       'honeywell rt10a manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-rt10w',
+    model: 'RT10W',
+    name: 'Honeywell RT10W',
+    brand: 'Honeywell',
+    category: 'tablety',
+    description:
+      'Wytrzymały tablet enterprise 10,1" z systemem Windows 10 IoT Enterprise (IP65), baterią hot-swap, opcjonalnym skanerem 2D (FlexRange) oraz WWAN/GPS. Skrócona instrukcja po polsku — konfiguracja, bateria, skanowanie, sieci, akcesoria.',
+    productSlug: 'honeywell-rt10w',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia RT10W', lang: 'en', file: '/instrukcje/honeywell-rt10w-qs-en.pdf', size: '2,0 MB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi RT10W (User Guide)', lang: 'en', file: '/instrukcje/honeywell-rt10w-ug-en.pdf', size: '5,5 MB' },
+    ],
+    polishManual: honeywellRt10wPl,
+    keywords: [
+      'honeywell rt10w instrukcja',
+      'rt10w instrukcja po polsku',
+      'rt10w instrukcja obsługi pdf',
+      'rt10w tablet windows szybki start',
+      'honeywell rt10w manual pdf',
     ],
     updatedAt: '2026-06-22',
   },
