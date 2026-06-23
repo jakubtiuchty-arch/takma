@@ -39,6 +39,7 @@ import ContextAvailabilityBadge from './ContextAvailabilityBadge'
 import ComparisonTable from './ComparisonTable'
 import SpecsAccordion from './SpecsAccordion'
 import { getBrandBySlug as getServiceBrandBySlug } from '@/app/serwis/_data/brands'
+import { getManualByProductSlug } from '@/data/manuals'
 import ViewItemTracker from './ViewItemTracker'
 import { thermalLabelSeries } from '@/data/thermal-label-series'
 
@@ -188,6 +189,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   if (!product) {
     notFound()
   }
+
+  // Instrukcja obsługi dla tego produktu (jeśli istnieje w /instrukcje)
+  const manual = getManualByProductSlug(product.slug)
 
   // Wybrany wariant z ?pn=... — wpływa na H1, badge, cenę i specyfikację
   const selectedVariant = pickVariant(product, pn)
@@ -1242,6 +1246,27 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                     )
                   })}
                 </div>
+              </section>
+            )}
+
+            {/* Instrukcja obsługi — link do /instrukcje/[slug] */}
+            {manual && (
+              <section>
+                <Link
+                  href={`/instrukcje/${manual.slug}`}
+                  className="flex items-center gap-3 p-4 rounded-xl border border-slate-200 hover:border-blue-300 hover:bg-slate-50 transition-colors group"
+                >
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors shrink-0">
+                    <DownloadIcon size={24} />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="font-medium text-gray-900">Instrukcja obsługi {product.name} (PDF)</p>
+                    <p className="text-sm text-gray-500">
+                      Szybki start, konfiguracja i obsługa po polsku — przeglądaj online lub pobierz
+                    </p>
+                  </div>
+                  <ChevronRightIcon size={20} className="text-slate-400 group-hover:translate-x-0.5 transition-transform shrink-0" />
+                </Link>
               </section>
             )}
 

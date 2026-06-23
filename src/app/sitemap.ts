@@ -9,6 +9,7 @@ import {
   isTransferLabelProduct,
 } from '@/data/products'
 import { guides } from '@/data/guides'
+import { manuals, docSlug, PL_MANUAL_SLUG } from '@/data/manuals'
 import { industryPages } from '@/data/industry-content'
 import { thermalLabelSeries } from '@/data/thermal-label-series'
 import { transferLabelSeries } from '@/data/transfer-label-series'
@@ -73,6 +74,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/poradnik/${guide.slug}`,
       lastModified: new Date(guide.updatedAt),
     })),
+  ]
+
+  const manualPages: MetadataRoute.Sitemap = [
+    { url: `${baseUrl}/instrukcje`, lastModified: lastUpdated },
+    ...manuals.flatMap((m) => {
+      const lm = new Date(m.updatedAt)
+      const pages: MetadataRoute.Sitemap = [
+        { url: `${baseUrl}/instrukcje/${m.slug}`, lastModified: lm },
+        // każdy dokument = osobny URL do pozycjonowania
+        ...m.documents.map((d) => ({
+          url: `${baseUrl}/instrukcje/${m.slug}/${docSlug(d.type)}`,
+          lastModified: lm,
+        })),
+      ]
+      if (m.polishManual) {
+        pages.push({
+          url: `${baseUrl}/instrukcje/${m.slug}/${PL_MANUAL_SLUG}`,
+          lastModified: new Date(m.polishManual.updatedAt),
+        })
+      }
+      return pages
+    }),
   ]
 
   const industryLandingPages: MetadataRoute.Sitemap = industryPages.map((page) => ({
@@ -150,6 +173,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...brandCategoryPages,
     ...productPages,
     ...guidePages,
+    ...manualPages,
     ...industryLandingPages,
     ...thermalSeriesPages,
     ...thermalVariantPages,
