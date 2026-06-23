@@ -20,6 +20,7 @@ import { honeywellLnx3Pl } from './manual-content/honeywell-lnx3-pl'
 import { honeywellGranitUltra2100iPl } from './manual-content/honeywell-granit-ultra-2100i-pl'
 import { granitXp1990iPl } from './manual-content/honeywell-granit-xp-1990i-pl'
 import { granitXp1991iPl } from './manual-content/honeywell-granit-xp-1991i-pl'
+import { honeywellGranitUltra2105iPl } from './manual-content/honeywell-granit-ultra-2105i-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -734,6 +735,29 @@ export const manuals: Manual[] = [
       'granit 1991ixr instrukcja obsługi pdf',
       '1991i xr bluetooth konfiguracja',
       'honeywell 1991ixr manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-granit-ultra-2105i',
+    model: 'Granit Ultra 2105i',
+    name: 'Honeywell Granit Ultra 2105i',
+    brand: 'Honeywell',
+    category: 'skanery',
+    description:
+      'Bezprzewodowy (Bluetooth) przemysłowy skaner kodów 1D/2D z baterią i bazą ładującą, ultrawytrzymały IP65/IP68 (warianty SR/XR). Skrócona instrukcja po polsku — bateria, baza, parowanie Bluetooth, konfiguracja.',
+    productSlug: 'honeywell-granit-ultra-2105i',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia Granit Ultra 2105i (Cordless)', lang: 'en', file: '/instrukcje/honeywell-granit-ultra-2105i-qs-en.pdf', size: '245 KB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi / programowania serii 210Xi (User Guide)', lang: 'en', file: '/instrukcje/honeywell-granit-ultra-2105i-ug-en.pdf', size: '6,0 MB' },
+    ],
+    polishManual: honeywellGranitUltra2105iPl,
+    keywords: [
+      'honeywell granit ultra 2105i instrukcja',
+      'granit 2105i instrukcja po polsku',
+      'granit ultra 2105i instrukcja obsługi pdf',
+      '2105i bluetooth bateria baza',
+      'honeywell 2105i manual pdf',
     ],
     updatedAt: '2026-06-22',
   },
