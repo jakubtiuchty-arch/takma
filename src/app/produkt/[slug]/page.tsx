@@ -872,7 +872,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   Wideo
                 </a>
               )}
-              {downloads.length > 0 && (
+              {(downloads.length > 0 || manual) && (
                 <a
                   href="#pliki"
                   className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
@@ -1225,55 +1225,55 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             )}
 
             {/* Pliki do pobrania */}
-            {downloads.length > 0 && (
+            {(downloads.length > 0 || manual) && (
               <section id="pliki">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Pliki do pobrania</h2>
-                <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
-                  {downloads.map((download, i) => {
-                    const isExternal = download.url.startsWith('http')
-                    const isSerwisZebry = download.url.includes('serwis-zebry.pl')
-                    const externalRel = isSerwisZebry ? 'noopener' : 'noopener nofollow'
-                    return (
-                      <a
-                        key={i}
-                        href={download.url}
-                        {...(isExternal ? { target: '_blank', rel: externalRel } : {})}
-                        className="flex items-center gap-3 p-3 sm:gap-4 sm:p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group"
-                      >
-                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors">
-                          <DownloadIcon size={24} />
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <p className="font-medium text-gray-900 truncate">{download.name}</p>
-                          <p className="text-sm text-gray-500">
-                            {download.type.toUpperCase()} • {download.size}
-                          </p>
-                        </div>
-                      </a>
-                    )
-                  })}
-                </div>
-              </section>
-            )}
+                {downloads.length > 0 && (
+                  <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
+                    {downloads.map((download, i) => {
+                      const isExternal = download.url.startsWith('http')
+                      const isSerwisZebry = download.url.includes('serwis-zebry.pl')
+                      const externalRel = isSerwisZebry ? 'noopener' : 'noopener nofollow'
+                      return (
+                        <a
+                          key={i}
+                          href={download.url}
+                          {...(isExternal ? { target: '_blank', rel: externalRel } : {})}
+                          className="flex items-center gap-3 p-3 sm:gap-4 sm:p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group"
+                        >
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors">
+                            <DownloadIcon size={24} />
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <p className="font-medium text-gray-900 truncate">{download.name}</p>
+                            <p className="text-sm text-gray-500">
+                              {download.type.toUpperCase()} • {download.size}
+                            </p>
+                          </div>
+                        </a>
+                      )
+                    })}
+                  </div>
+                )}
 
-            {/* Instrukcja obsługi — link do /instrukcje/[slug] */}
-            {manual && (
-              <section>
-                <Link
-                  href={`/instrukcje/${manual.slug}`}
-                  className="flex items-center gap-3 p-4 rounded-xl border border-slate-200 hover:border-blue-300 hover:bg-slate-50 transition-colors group"
-                >
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors shrink-0">
-                    <DownloadIcon size={24} />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="font-medium text-gray-900">Instrukcja obsługi {product.name} (PDF)</p>
-                    <p className="text-sm text-gray-500">
-                      Szybki start, konfiguracja i obsługa po polsku — przeglądaj online lub pobierz
-                    </p>
-                  </div>
-                  <ChevronRightIcon size={20} className="text-slate-400 group-hover:translate-x-0.5 transition-transform shrink-0" />
-                </Link>
+                {/* Instrukcja obsługi — link do /instrukcje/[slug] */}
+                {manual && (
+                  <Link
+                    href={`/instrukcje/${manual.slug}`}
+                    className="flex items-center gap-3 p-4 rounded-xl border border-slate-200 hover:border-blue-300 hover:bg-slate-50 transition-colors group mt-3 sm:mt-4"
+                  >
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors shrink-0">
+                      <DownloadIcon size={24} />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <p className="font-medium text-gray-900">Instrukcja obsługi {product.name} (PDF)</p>
+                      <p className="text-sm text-gray-500">
+                        Szybki start, konfiguracja i obsługa po polsku — przeglądaj online lub pobierz
+                      </p>
+                    </div>
+                    <ChevronRightIcon size={20} className="text-slate-400 group-hover:translate-x-0.5 transition-transform shrink-0" />
+                  </Link>
+                )}
               </section>
             )}
 
