@@ -5,6 +5,7 @@ import { honeywellCk62Pl } from './manual-content/honeywell-ck62-pl'
 import { honeywellCk67Pl } from './manual-content/honeywell-ck67-pl'
 import { honeywellPc45dPl } from './manual-content/honeywell-pc45d-pl'
 import { honeywellPc45tPl } from './manual-content/honeywell-pc45t-pl'
+import { honeywellPc42etPl } from './manual-content/honeywell-pc42e-t-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -330,6 +331,29 @@ export const manuals: Manual[] = [
       'pc45t instrukcja obsługi pdf',
       'pc45t szybki start',
       'honeywell pc45t manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-pc42e-t',
+    model: 'PC42E-T',
+    name: 'Honeywell PC42E-T',
+    brand: 'Honeywell',
+    category: 'drukarki-etykiet',
+    description:
+      'Ekonomiczna biurkowa drukarka etykiet termotransferowa (z taśmą), USB, tryb ECO. Skrócona instrukcja po polsku — etykiety i taśma, kalibracja, panel LED, czyszczenie głowicy.',
+    productSlug: 'honeywell-pc42e-t',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia (wielojęzyczna)', lang: 'pl', file: '/instrukcje/honeywell-pc42e-t-qs-ml.pdf', size: '11,2 MB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi PC42E-T (User Guide)', lang: 'en', file: '/instrukcje/honeywell-pc42e-t-ug-en.pdf', size: '2,9 MB' },
+    ],
+    polishManual: honeywellPc42etPl,
+    keywords: [
+      'honeywell pc42e-t instrukcja',
+      'pc42e-t instrukcja po polsku',
+      'pc42e instrukcja obsługi pdf',
+      'pc42e-t szybki start',
+      'honeywell pc42e manual pdf',
     ],
     updatedAt: '2026-06-22',
   },
