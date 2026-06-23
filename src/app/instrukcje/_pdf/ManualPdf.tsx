@@ -77,11 +77,13 @@ export function ManualPdfDoc({ manual, logoSrc }: { manual: Manual; logoSrc?: st
 
         <View fixed style={s.footer}>
           <View style={{ flex: 1 }}>
-            <Text style={{ fontWeight: 'bold', color: C.ink }}>TAKMA · Centrum Systemów Mobilnych</Text>
-            <Text style={{ marginTop: 1.5 }}>ul. Poświęcka 1a, 51-128 Wrocław · NIP 915-100-43-77</Text>
-            <Text style={{ marginTop: 1.5 }}>takma@takma.com.pl · +48 607 819 688 · +48 71 781 71 28</Text>
+            <Text>ul. Poświęcka 1a, 51-128 Wrocław · NIP 915-100-43-77</Text>
+            <Text style={{ marginTop: 2 }}>takma@takma.com.pl · +48 607 819 688 · +48 71 781 71 28</Text>
           </View>
-          <Text style={{ marginLeft: 12 }} render={({ pageNumber, totalPages }) => `${pageNumber}/${totalPages}`} />
+          <Text
+            style={{ marginLeft: 12 }}
+            render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`}
+          />
         </View>
       </Page>
     </Document>
