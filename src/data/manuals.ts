@@ -26,6 +26,7 @@ import { honeywellXenonUltra1962Pl } from './manual-content/honeywell-xenon-ultr
 import { honeywellXenonUltra1960Pl } from './manual-content/honeywell-xenon-ultra-1960-pl'
 import { honeywellVoyagerXp1470gPl } from './manual-content/honeywell-voyager-xp-1470g-pl'
 import { honeywellVoyagerXp1472gPl } from './manual-content/honeywell-voyager-xp-1472g-pl'
+import { honeywellEda10aPl } from './manual-content/honeywell-eda10a-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -877,6 +878,29 @@ export const manuals: Manual[] = [
       'voyager xp 1472g instrukcja obsługi pdf',
       '1472g bluetooth bateria baza',
       'honeywell 1472g manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-eda10a',
+    model: 'EDA10A',
+    name: 'Honeywell EDA10A',
+    brand: 'Honeywell',
+    category: 'tablety',
+    description:
+      'Wytrzymały tablet enterprise 10,1" z Androidem, baterią hot-swap, opcjonalnym skanerem 2D i WWAN/5G (IP65). Skrócona instrukcja po polsku — konfiguracja, bateria, skanowanie, sieci, akcesoria.',
+    productSlug: 'honeywell-eda10a',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia EDA10A', lang: 'pl', file: '/instrukcje/honeywell-eda10a-qs-pl.pdf', size: '800 KB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi EDA10A (User Guide)', lang: 'en', file: '/instrukcje/honeywell-eda10a-ug-en.pdf', size: '2,6 MB' },
+    ],
+    polishManual: honeywellEda10aPl,
+    keywords: [
+      'honeywell eda10a instrukcja',
+      'eda10a instrukcja po polsku',
+      'eda10a instrukcja obsługi pdf',
+      'eda10a tablet szybki start',
+      'honeywell eda10a manual pdf',
     ],
     updatedAt: '2026-06-22',
   },
