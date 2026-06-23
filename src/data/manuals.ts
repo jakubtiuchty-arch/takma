@@ -8,6 +8,9 @@ import { honeywellPc45tPl } from './manual-content/honeywell-pc45t-pl'
 import { honeywellPc42etPl } from './manual-content/honeywell-pc42e-t-pl'
 import { honeywellPd45Pl } from './manual-content/honeywell-pd45-pl'
 import { honeywellPd45sPl } from './manual-content/honeywell-pd45s-pl'
+import { honeywellPm45Pl } from './manual-content/honeywell-pm45-pl'
+import { honeywellPm45cPl } from './manual-content/honeywell-pm45c-pl'
+import { honeywellPm65Pl } from './manual-content/honeywell-pm65-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -402,6 +405,75 @@ export const manuals: Manual[] = [
       'pd45s instrukcja obsługi pdf',
       'pd45s szybki start',
       'honeywell pd45s manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-pm45',
+    model: 'PM45',
+    name: 'Honeywell PM45',
+    brand: 'Honeywell',
+    category: 'drukarki-etykiet',
+    description:
+      'Przemysłowa drukarka etykiet 4", druk termotransferowy i termiczny, do 350 mm/s, 203–600 dpi, Gigabit Ethernet, opcje RFID UHF i LTE, ZPL-II. Skrócona instrukcja po polsku.',
+    productSlug: 'honeywell-pm45',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia PM45 / PM45c / PM65', lang: 'en', file: '/instrukcje/honeywell-pm45-qs-en.pdf', size: '1,9 MB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi PM45 / PM45c / PM65 (User Guide)', lang: 'en', file: '/instrukcje/honeywell-pm45-65-ug-en.pdf', size: '10,0 MB' },
+    ],
+    polishManual: honeywellPm45Pl,
+    keywords: [
+      'honeywell pm45 instrukcja',
+      'pm45 instrukcja po polsku',
+      'pm45 instrukcja obsługi pdf',
+      'pm45 szybki start',
+      'honeywell pm45 manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-pm45c',
+    model: 'PM45c',
+    name: 'Honeywell PM45c',
+    brand: 'Honeywell',
+    category: 'drukarki-etykiet',
+    description:
+      'Kompaktowa przemysłowa drukarka etykiet 4", druk termotransferowy i termiczny, ekran dotykowy 3,5", ZPL-II. Skrócona instrukcja po polsku — etykiety i taśma, kalibracja, sieć, czyszczenie głowicy.',
+    productSlug: 'honeywell-pm45c',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia PM45 / PM45c / PM65', lang: 'en', file: '/instrukcje/honeywell-pm45-qs-en.pdf', size: '1,9 MB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi PM45 / PM45c / PM65 (User Guide)', lang: 'en', file: '/instrukcje/honeywell-pm45-65-ug-en.pdf', size: '10,0 MB' },
+    ],
+    polishManual: honeywellPm45cPl,
+    keywords: [
+      'honeywell pm45c instrukcja',
+      'pm45c instrukcja po polsku',
+      'pm45c instrukcja obsługi pdf',
+      'pm45c szybki start',
+      'honeywell pm45c manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-pm65',
+    model: 'PM65',
+    name: 'Honeywell PM65',
+    brand: 'Honeywell',
+    category: 'drukarki-etykiet',
+    description:
+      'Szerokoformatowa przemysłowa drukarka etykiet 6", druk termotransferowy i termiczny, do 300 mm/s, Wi-Fi 6, ruchomy sprzęg RFID, ZPL-II. Skrócona instrukcja po polsku.',
+    productSlug: 'honeywell-pm65',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia PM45 / PM45c / PM65', lang: 'en', file: '/instrukcje/honeywell-pm45-qs-en.pdf', size: '1,9 MB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi PM45 / PM45c / PM65 (User Guide)', lang: 'en', file: '/instrukcje/honeywell-pm45-65-ug-en.pdf', size: '10,0 MB' },
+    ],
+    polishManual: honeywellPm65Pl,
+    keywords: [
+      'honeywell pm65 instrukcja',
+      'pm65 instrukcja po polsku',
+      'pm65 instrukcja obsługi pdf',
+      'pm65 szybki start',
+      'honeywell pm65 manual pdf',
     ],
     updatedAt: '2026-06-22',
   },
