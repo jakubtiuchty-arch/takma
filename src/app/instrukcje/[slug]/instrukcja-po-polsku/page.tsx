@@ -109,9 +109,9 @@ export default async function PolishManualPage({ params }: PageProps) {
               {pm.sections.length > 1 && (
                 <nav className="my-8 rounded-xl border border-slate-200 p-4">
                   <p className="text-sm font-semibold text-slate-700 mb-2">Spis treści</p>
-                  <ol className="grid sm:grid-cols-2 gap-1.5 text-sm">
+                  <ol className="columns-1 gap-x-8 text-sm sm:columns-2">
                     {pm.sections.map((s, i) => (
-                      <li key={i}>
+                      <li key={i} className="mb-1.5 break-inside-avoid">
                         <a href={`#sekcja-${i}`} className="text-blue-600 hover:underline">{i + 1}. {s.title}</a>
                       </li>
                     ))}
