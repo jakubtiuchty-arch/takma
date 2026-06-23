@@ -193,6 +193,13 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // Instrukcja obsługi dla tego produktu (jeśli istnieje w /instrukcje)
   const manual = getManualByProductSlug(product.slug)
 
+  // Gdy produkt ma instrukcję w /instrukcje, nie dublujemy plików typu „manual"
+  // w sekcji „Pliki do pobrania" — instrukcje mają jeden kanoniczny dom (/instrukcje).
+  // Zostają karty katalogowe (datasheet) i inne pliki niebędące instrukcją.
+  const downloads = manual
+    ? product.downloads.filter((d) => d.type !== 'manual')
+    : product.downloads
+
   // Wybrany wariant z ?pn=... — wpływa na H1, badge, cenę i specyfikację
   const selectedVariant = pickVariant(product, pn)
   const selectedSize = selectedVariant?.attributes['Rozmiar']
@@ -865,7 +872,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   Wideo
                 </a>
               )}
-              {product.downloads.length > 0 && (
+              {downloads.length > 0 && (
                 <a
                   href="#pliki"
                   className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
@@ -1218,11 +1225,11 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             )}
 
             {/* Pliki do pobrania */}
-            {product.downloads.length > 0 && (
+            {downloads.length > 0 && (
               <section id="pliki">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Pliki do pobrania</h2>
                 <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
-                  {product.downloads.map((download, i) => {
+                  {downloads.map((download, i) => {
                     const isExternal = download.url.startsWith('http')
                     const isSerwisZebry = download.url.includes('serwis-zebry.pl')
                     const externalRel = isSerwisZebry ? 'noopener' : 'noopener nofollow'
