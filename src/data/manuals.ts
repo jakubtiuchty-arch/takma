@@ -18,6 +18,8 @@ import { honeywellRp2fPl } from './manual-content/honeywell-rp2f-pl'
 import { honeywellRp4fPl } from './manual-content/honeywell-rp4f-pl'
 import { honeywellLnx3Pl } from './manual-content/honeywell-lnx3-pl'
 import { honeywellGranitUltra2100iPl } from './manual-content/honeywell-granit-ultra-2100i-pl'
+import { granitXp1990iPl } from './manual-content/honeywell-granit-xp-1990i-pl'
+import { granitXp1991iPl } from './manual-content/honeywell-granit-xp-1991i-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -640,6 +642,98 @@ export const manuals: Manual[] = [
       'granit ultra 2100i instrukcja obsługi pdf',
       '2100i sr xr konfiguracja',
       'honeywell 2100i manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-granit-xp-1990isr',
+    model: 'Granit XP 1990iSR',
+    name: 'Honeywell Granit XP 1990iSR',
+    brand: 'Honeywell',
+    category: 'skanery',
+    description:
+      'Przewodowy przemysłowy skaner kodów 1D/2D o standardowym zasięgu (SR), ultrawytrzymały. Skrócona instrukcja po polsku — podłączenie, skanowanie, konfiguracja kodami i EZConfig.',
+    productSlug: 'honeywell-granit-xp-1990isr',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia Granit XP 1990i', lang: 'en', file: '/instrukcje/honeywell-granit-xp-1990i-qs-en.pdf', size: '550 KB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi / programowania serii 199xi (User Guide)', lang: 'en', file: '/instrukcje/honeywell-granit-xp-199x-ug-en.pdf', size: '9,1 MB' },
+    ],
+    polishManual: granitXp1990iPl,
+    keywords: [
+      'honeywell granit xp 1990isr instrukcja',
+      'granit xp 1990i instrukcja po polsku',
+      'granit 1990isr instrukcja obsługi pdf',
+      '1990i sr konfiguracja',
+      'honeywell 1990isr manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-granit-xp-1990ixr',
+    model: 'Granit XP 1990iXR',
+    name: 'Honeywell Granit XP 1990iXR',
+    brand: 'Honeywell',
+    category: 'skanery',
+    description:
+      'Przewodowy przemysłowy skaner kodów 1D/2D o rozszerzonym zasięgu (XR), ultrawytrzymały. Skrócona instrukcja po polsku — podłączenie, skanowanie, konfiguracja kodami i EZConfig.',
+    productSlug: 'honeywell-granit-xp-1990ixr',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia Granit XP 1990i', lang: 'en', file: '/instrukcje/honeywell-granit-xp-1990i-qs-en.pdf', size: '550 KB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi / programowania serii 199xi (User Guide)', lang: 'en', file: '/instrukcje/honeywell-granit-xp-199x-ug-en.pdf', size: '9,1 MB' },
+    ],
+    polishManual: granitXp1990iPl,
+    keywords: [
+      'honeywell granit xp 1990ixr instrukcja',
+      'granit xp 1990ixr instrukcja po polsku',
+      'granit 1990ixr instrukcja obsługi pdf',
+      '1990i xr konfiguracja',
+      'honeywell 1990ixr manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-granit-xp-1991isr',
+    model: 'Granit XP 1991iSR',
+    name: 'Honeywell Granit XP 1991iSR',
+    brand: 'Honeywell',
+    category: 'skanery',
+    description:
+      'Bezprzewodowy (Bluetooth) przemysłowy skaner kodów 1D/2D o standardowym zasięgu (SR), z baterią i bazą ładującą. Skrócona instrukcja po polsku — bateria, baza, parowanie, konfiguracja.',
+    productSlug: 'honeywell-granit-xp-1991isr',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia Granit XP 1990i', lang: 'en', file: '/instrukcje/honeywell-granit-xp-1990i-qs-en.pdf', size: '550 KB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi / programowania serii 199xi (User Guide)', lang: 'en', file: '/instrukcje/honeywell-granit-xp-199x-ug-en.pdf', size: '9,1 MB' },
+    ],
+    polishManual: granitXp1991iPl,
+    keywords: [
+      'honeywell granit xp 1991isr instrukcja',
+      'granit xp 1991i instrukcja po polsku',
+      'granit 1991isr instrukcja obsługi pdf',
+      '1991i sr bluetooth konfiguracja',
+      'honeywell 1991isr manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-granit-xp-1991ixr',
+    model: 'Granit XP 1991iXR',
+    name: 'Honeywell Granit XP 1991iXR',
+    brand: 'Honeywell',
+    category: 'skanery',
+    description:
+      'Bezprzewodowy (Bluetooth) przemysłowy skaner kodów 1D/2D o rozszerzonym zasięgu (XR), z baterią i bazą ładującą. Skrócona instrukcja po polsku — bateria, baza, parowanie, konfiguracja.',
+    productSlug: 'honeywell-granit-xp-1991ixr',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia Granit XP 1990i', lang: 'en', file: '/instrukcje/honeywell-granit-xp-1990i-qs-en.pdf', size: '550 KB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi / programowania serii 199xi (User Guide)', lang: 'en', file: '/instrukcje/honeywell-granit-xp-199x-ug-en.pdf', size: '9,1 MB' },
+    ],
+    polishManual: granitXp1991iPl,
+    keywords: [
+      'honeywell granit xp 1991ixr instrukcja',
+      'granit xp 1991ixr instrukcja po polsku',
+      'granit 1991ixr instrukcja obsługi pdf',
+      '1991i xr bluetooth konfiguracja',
+      'honeywell 1991ixr manual pdf',
     ],
     updatedAt: '2026-06-22',
   },
