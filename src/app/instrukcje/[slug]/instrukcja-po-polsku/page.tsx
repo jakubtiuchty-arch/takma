@@ -87,24 +87,23 @@ export default async function PolishManualPage({ params }: PageProps) {
         {/* Hero */}
         <header className="container-main pt-6 pb-8">
           <h1 className="text-3xl md:text-4xl font-bold text-slate-900">{heading}</h1>
+          {pm.intro && <p className="mt-4 max-w-3xl text-lg text-slate-600">{pm.intro}</p>}
+
+          {/* Pobranie brandowanego PDF (dane TAKMA) */}
+          <a
+            href={`/api/instrukcja-pdf/${manual.slug}`}
+            className="mt-6 inline-flex items-center gap-2 rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold text-white hover:bg-blue-700 transition-colors"
+          >
+            <DownloadIcon size={16} /> Pobierz skróconą instrukcję (PDF)
+          </a>
         </header>
 
         <div className="container-main pb-16 grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
             <article>
-              {pm.intro && <p className="text-lg text-slate-600 mb-6">{pm.intro}</p>}
-
-              {/* Pobranie brandowanego PDF (dane TAKMA) */}
-              <a
-                href={`/api/instrukcja-pdf/${manual.slug}`}
-                className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold text-white hover:bg-blue-700 transition-colors"
-              >
-                <DownloadIcon size={16} /> Pobierz skróconą instrukcję (PDF)
-              </a>
-
               {/* Spis treści */}
               {pm.sections.length > 1 && (
-                <nav className="my-8 rounded-xl border border-slate-200 p-4">
+                <nav className="mb-8 rounded-xl border border-slate-200 p-4">
                   <p className="text-sm font-semibold text-slate-700 mb-2">Spis treści</p>
                   <ol className="columns-1 gap-x-8 text-sm sm:columns-2">
                     {pm.sections.map((s, i) => (
