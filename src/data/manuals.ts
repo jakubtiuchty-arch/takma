@@ -17,6 +17,7 @@ import { honeywellPx940Pl } from './manual-content/honeywell-px940-pl'
 import { honeywellRp2fPl } from './manual-content/honeywell-rp2f-pl'
 import { honeywellRp4fPl } from './manual-content/honeywell-rp4f-pl'
 import { honeywellLnx3Pl } from './manual-content/honeywell-lnx3-pl'
+import { honeywellGranitUltra2100iPl } from './manual-content/honeywell-granit-ultra-2100i-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -616,6 +617,29 @@ export const manuals: Manual[] = [
       'lnx3 instrukcja obsługi pdf',
       'lnx3 szybki start',
       'honeywell lnx3 manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-granit-ultra-2100i',
+    model: 'Granit Ultra 2100i',
+    name: 'Honeywell Granit Ultra 2100i',
+    brand: 'Honeywell',
+    category: 'skanery',
+    description:
+      'Przemysłowy przewodowy skaner kodów 1D/2D (warianty SR/XR), ultrawytrzymały IP65/IP68, konfiguracja kodami i narzędziem EZConfig. Skrócona instrukcja po polsku — podłączenie, skanowanie, symbologie, konfiguracja.',
+    productSlug: 'honeywell-granit-ultra-2100i',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia Granit Ultra 2100i', lang: 'en', file: '/instrukcje/honeywell-granit-ultra-2100i-qs-en.pdf', size: '250 KB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi / programowania (User Guide)', lang: 'en', file: '/instrukcje/honeywell-granit-ultra-2100i-ug-en.pdf', size: '4,9 MB' },
+    ],
+    polishManual: honeywellGranitUltra2100iPl,
+    keywords: [
+      'honeywell granit ultra 2100i instrukcja',
+      'granit 2100i instrukcja po polsku',
+      'granit ultra 2100i instrukcja obsługi pdf',
+      '2100i sr xr konfiguracja',
+      'honeywell 2100i manual pdf',
     ],
     updatedAt: '2026-06-22',
   },
