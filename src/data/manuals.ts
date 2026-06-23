@@ -16,6 +16,7 @@ import { honeywellPx65Pl } from './manual-content/honeywell-px65-pl'
 import { honeywellPx940Pl } from './manual-content/honeywell-px940-pl'
 import { honeywellRp2fPl } from './manual-content/honeywell-rp2f-pl'
 import { honeywellRp4fPl } from './manual-content/honeywell-rp4f-pl'
+import { honeywellLnx3Pl } from './manual-content/honeywell-lnx3-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -592,6 +593,29 @@ export const manuals: Manual[] = [
       'rp4f instrukcja obsługi pdf',
       'rp4f etykiety kurierskie',
       'honeywell rp4f manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-lnx3',
+    model: 'LNX3',
+    name: 'Honeywell LNX3',
+    brand: 'Honeywell',
+    category: 'drukarki-etykiet',
+    description:
+      'Mobilna drukarka etykiet 3" z drukiem termicznym, baterią hot-swap, Bluetooth, NFC i USB-C. Skrócona instrukcja po polsku — bateria, ładowanie nośnika, łączność i konserwacja.',
+    productSlug: 'honeywell-lnx3',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia LNX3', lang: 'en', file: '/instrukcje/honeywell-lnx3-qs-en.pdf', size: '800 KB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi LNX3 (User Guide)', lang: 'en', file: '/instrukcje/honeywell-lnx3-ug-en.pdf', size: '1,7 MB' },
+    ],
+    polishManual: honeywellLnx3Pl,
+    keywords: [
+      'honeywell lnx3 instrukcja',
+      'lnx3 instrukcja po polsku',
+      'lnx3 instrukcja obsługi pdf',
+      'lnx3 szybki start',
+      'honeywell lnx3 manual pdf',
     ],
     updatedAt: '2026-06-22',
   },
