@@ -129,6 +129,11 @@ export default function InstrukcjeGrid() {
               </p>
 
               <div className="flex flex-wrap gap-1.5 mb-3">
+                {m.polishManual && (
+                  <span className="px-1.5 py-0.5 rounded text-[11px] font-medium bg-rose-100 text-rose-700">
+                    Instrukcja PL
+                  </span>
+                )}
                 {m.documents.map((d, i) => (
                   <span
                     key={i}

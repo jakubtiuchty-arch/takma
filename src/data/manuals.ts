@@ -3,6 +3,8 @@ import { honeywellCt32Pl } from './manual-content/honeywell-ct32-pl'
 import { honeywellCt47Pl } from './manual-content/honeywell-ct47-pl'
 import { honeywellCk62Pl } from './manual-content/honeywell-ck62-pl'
 import { honeywellCk67Pl } from './manual-content/honeywell-ck67-pl'
+import { honeywellPc45dPl } from './manual-content/honeywell-pc45d-pl'
+import { honeywellPc45tPl } from './manual-content/honeywell-pc45t-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -282,6 +284,52 @@ export const manuals: Manual[] = [
       'ck67 instrukcja obsługi pdf',
       'ck67 szybki start',
       'honeywell ck67 manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-pc45d',
+    model: 'PC45d',
+    name: 'Honeywell PC45d',
+    brand: 'Honeywell',
+    category: 'drukarki-etykiet',
+    description:
+      'Biurkowa drukarka etykiet z drukiem termicznym bezpośrednim (bez taśmy), ekran 3,5" LCD, Wi-Fi 6. Skrócona instrukcja po polsku — ładowanie etykiet, kalibracja, sieć, czyszczenie głowicy.',
+    productSlug: 'honeywell-pc45d',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia PC45d / PC45t', lang: 'pl', file: '/instrukcje/honeywell-pc45-qs-pl.pdf', size: '2,2 MB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi PC45d / PC45t (User Guide)', lang: 'en', file: '/instrukcje/honeywell-pc45-ug-en.pdf', size: '7,2 MB' },
+    ],
+    polishManual: honeywellPc45dPl,
+    keywords: [
+      'honeywell pc45d instrukcja',
+      'pc45d instrukcja po polsku',
+      'pc45d instrukcja obsługi pdf',
+      'pc45d szybki start',
+      'honeywell pc45d manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-pc45t',
+    model: 'PC45t',
+    name: 'Honeywell PC45t',
+    brand: 'Honeywell',
+    category: 'drukarki-etykiet',
+    description:
+      'Biurkowa drukarka etykiet termotransferowa (z taśmą), ekran 3,5" LCD, Wi-Fi 6. Skrócona instrukcja po polsku — etykiety i taśma, kalibracja, sieć, czyszczenie głowicy.',
+    productSlug: 'honeywell-pc45t',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia PC45d / PC45t', lang: 'pl', file: '/instrukcje/honeywell-pc45-qs-pl.pdf', size: '2,2 MB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi PC45d / PC45t (User Guide)', lang: 'en', file: '/instrukcje/honeywell-pc45-ug-en.pdf', size: '7,2 MB' },
+    ],
+    polishManual: honeywellPc45tPl,
+    keywords: [
+      'honeywell pc45t instrukcja',
+      'pc45t instrukcja po polsku',
+      'pc45t instrukcja obsługi pdf',
+      'pc45t szybki start',
+      'honeywell pc45t manual pdf',
     ],
     updatedAt: '2026-06-22',
   },

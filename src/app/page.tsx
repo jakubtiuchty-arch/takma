@@ -427,7 +427,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
-            {['jak-wybrac-terminal-mobilny', 'zebra-zd421-vs-zd621-porownanie', 'zebra-vs-honeywell-terminale-mobilne', 'skanery-kodow-kreskowych-zebra-przewodnik'].map(s => guides.find(g => g.slug === s)!).map((guide, i) => (
+            {[...guides].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt)).slice(0, 4).map((guide, i) => (
               <Link
                 key={guide.slug}
                 href={`/poradnik/${guide.slug}`}
