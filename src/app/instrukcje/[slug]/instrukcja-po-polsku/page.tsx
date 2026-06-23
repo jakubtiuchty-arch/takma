@@ -152,12 +152,13 @@ export default async function PolishManualPage({ params }: PageProps) {
               </div>
             )}
             <div className="rounded-xl border border-slate-200 bg-slate-50 p-5">
-              <h3 className="font-bold text-slate-900">Potrzebujesz pomocy z {manual.model}?</h3>
+              <h3 className="font-bold text-slate-900">Masz problem z {manual.name}?</h3>
               <p className="text-sm text-slate-600 mt-1">
-                Doradzimy w konfiguracji, wdrożeniu floty i serwisie urządzeń auto-ID.
+                Nie skanuje, nie włącza się albo zgłasza błąd? Zdiagnozujemy usterkę, naprawimy
+                urządzenie i pomożemy w konfiguracji oraz wdrożeniu floty.
               </p>
-              <Link href="/kontakt" className="inline-flex items-center justify-center w-full mt-4 px-4 py-2.5 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition-colors">
-                Skontaktuj się
+              <Link href={`/serwis/${manual.brand.toLowerCase()}`} className="inline-flex items-center justify-center w-full mt-4 px-4 py-2.5 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition-colors">
+                Zgłoś do serwisu
               </Link>
             </div>
           </aside>
