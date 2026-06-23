@@ -216,7 +216,7 @@ export default function Navbar() {
         <nav className="container-main">
           <div className="flex items-center justify-between h-16 lg:h-16">
             {/* Logo */}
-            <Link href="/" className="flex items-center lg:w-48">
+            <Link href="/" className="flex items-center shrink-0 -ml-1 lg:-ml-3">
               <Image
                 src="/images/takma_logo.png"
                 alt="TAKMA"
@@ -369,7 +369,7 @@ export default function Navbar() {
             </div>
 
             {/* Desktop RFQ only */}
-            <div className="hidden lg:flex items-center justify-end lg:w-48 gap-1">
+            <div className="hidden lg:flex items-center shrink-0 gap-1">
               <Link
                 href="/panel"
                 className="p-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-colors"
