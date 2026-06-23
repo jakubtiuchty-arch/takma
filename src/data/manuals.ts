@@ -24,6 +24,8 @@ import { honeywellGranitUltra2105iPl } from './manual-content/honeywell-granit-u
 import { granitXp1991ixlrPl } from './manual-content/honeywell-granit-xp-1991ixlr-pl'
 import { honeywellXenonUltra1962Pl } from './manual-content/honeywell-xenon-ultra-1962-pl'
 import { honeywellXenonUltra1960Pl } from './manual-content/honeywell-xenon-ultra-1960-pl'
+import { honeywellVoyagerXp1470gPl } from './manual-content/honeywell-voyager-xp-1470g-pl'
+import { honeywellVoyagerXp1472gPl } from './manual-content/honeywell-voyager-xp-1472g-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -830,6 +832,51 @@ export const manuals: Manual[] = [
       'xenon ultra 1960 instrukcja obsługi pdf',
       '1960g usb healthcare konfiguracja',
       'honeywell 1960g manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-voyager-xp-1470g',
+    model: 'Voyager XP 1470g',
+    name: 'Honeywell Voyager XP 1470g',
+    brand: 'Honeywell',
+    category: 'skanery',
+    description:
+      'Przewodowy uniwersalny skaner kodów 1D/2D klasy handlowej (czujnik stojaka, odczyt z ekranów telefonów). Skrócona instrukcja po polsku — podłączenie, skanowanie, tryby pracy, konfiguracja.',
+    productSlug: 'honeywell-voyager-xp-1470g',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia Voyager XP 1470g', lang: 'en', file: '/instrukcje/honeywell-voyager-xp-1470g-qs-en.pdf', size: '490 KB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi / programowania serii 147x (User Guide)', lang: 'en', file: '/instrukcje/honeywell-voyager-xp-147x-ug-en.pdf', size: '4,4 MB' },
+    ],
+    polishManual: honeywellVoyagerXp1470gPl,
+    keywords: [
+      'honeywell voyager xp 1470g instrukcja',
+      'voyager 1470g instrukcja po polsku',
+      'voyager xp 1470g instrukcja obsługi pdf',
+      '1470g usb konfiguracja',
+      'honeywell 1470g manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-voyager-xp-1472g',
+    model: 'Voyager XP 1472g',
+    name: 'Honeywell Voyager XP 1472g',
+    brand: 'Honeywell',
+    category: 'skanery',
+    description:
+      'Bezprzewodowy (Bluetooth) uniwersalny skaner kodów 1D/2D klasy handlowej, z baterią i bazą ładującą. Skrócona instrukcja po polsku — bateria, baza, parowanie Bluetooth, konfiguracja.',
+    productSlug: 'honeywell-voyager-xp-1472g',
+    documents: [
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi / programowania serii 147x (User Guide)', lang: 'en', file: '/instrukcje/honeywell-voyager-xp-147x-ug-en.pdf', size: '4,4 MB' },
+    ],
+    polishManual: honeywellVoyagerXp1472gPl,
+    keywords: [
+      'honeywell voyager xp 1472g instrukcja',
+      'voyager 1472g instrukcja po polsku',
+      'voyager xp 1472g instrukcja obsługi pdf',
+      '1472g bluetooth bateria baza',
+      'honeywell 1472g manual pdf',
     ],
     updatedAt: '2026-06-22',
   },
