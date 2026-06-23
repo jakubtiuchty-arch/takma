@@ -13,6 +13,7 @@ import { honeywellPm45cPl } from './manual-content/honeywell-pm45c-pl'
 import { honeywellPm65Pl } from './manual-content/honeywell-pm65-pl'
 import { honeywellPx45Pl } from './manual-content/honeywell-px45-pl'
 import { honeywellPx65Pl } from './manual-content/honeywell-px65-pl'
+import { honeywellPx940Pl } from './manual-content/honeywell-px940-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -520,6 +521,29 @@ export const manuals: Manual[] = [
       'px65 instrukcja obsługi pdf',
       'px65 user guide',
       'honeywell px65 manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-px940',
+    model: 'PX940',
+    name: 'Honeywell PX940',
+    brand: 'Honeywell',
+    category: 'drukarki-etykiet',
+    description:
+      'Przemysłowa drukarka etykiet 4" wysokiej precyzji (±0,2 mm) z opcjonalnym wbudowanym weryfikatorem kodów 1D/2D (PX940V), druk termotransferowy i termiczny, ZPL-II. Skrócona instrukcja po polsku.',
+    productSlug: 'honeywell-px940',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia PX940', lang: 'en', file: '/instrukcje/honeywell-px940-qs-en.pdf', size: '7,5 MB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi PX940 (User Guide)', lang: 'en', file: '/instrukcje/honeywell-px940-ug-en.pdf', size: '3,7 MB' },
+    ],
+    polishManual: honeywellPx940Pl,
+    keywords: [
+      'honeywell px940 instrukcja',
+      'px940 instrukcja po polsku',
+      'px940 instrukcja obsługi pdf',
+      'px940 weryfikator',
+      'honeywell px940 manual pdf',
     ],
     updatedAt: '2026-06-22',
   },
