@@ -11,6 +11,8 @@ import { honeywellPd45sPl } from './manual-content/honeywell-pd45s-pl'
 import { honeywellPm45Pl } from './manual-content/honeywell-pm45-pl'
 import { honeywellPm45cPl } from './manual-content/honeywell-pm45c-pl'
 import { honeywellPm65Pl } from './manual-content/honeywell-pm65-pl'
+import { honeywellPx45Pl } from './manual-content/honeywell-px45-pl'
+import { honeywellPx65Pl } from './manual-content/honeywell-px65-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -474,6 +476,50 @@ export const manuals: Manual[] = [
       'pm65 instrukcja obsługi pdf',
       'pm65 szybki start',
       'honeywell pm65 manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-px45',
+    model: 'PX45',
+    name: 'Honeywell PX45',
+    brand: 'Honeywell',
+    category: 'drukarki-etykiet',
+    description:
+      'Przemysłowa drukarka etykiet premium 4", metalowa obudowa, druk termotransferowy i termiczny, do 300 mm/s, głowica QuickMount, Smart Calibration, ZPL-II. Skrócona instrukcja po polsku.',
+    productSlug: 'honeywell-px45',
+    documents: [
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi PX45 / PX65 (User Guide)', lang: 'en', file: '/instrukcje/honeywell-px45-65-ug-en.pdf', size: '13,0 MB' },
+    ],
+    polishManual: honeywellPx45Pl,
+    keywords: [
+      'honeywell px45 instrukcja',
+      'px45 instrukcja po polsku',
+      'px45 instrukcja obsługi pdf',
+      'px45 user guide',
+      'honeywell px45 manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-px65',
+    model: 'PX65',
+    name: 'Honeywell PX65',
+    brand: 'Honeywell',
+    category: 'drukarki-etykiet',
+    description:
+      'Przemysłowa drukarka etykiet heavy-duty 6", IP64, metalowa obudowa, druk termotransferowy i termiczny, głowica QuickMount, Smart Calibration, ZPL-II. Skrócona instrukcja po polsku.',
+    productSlug: 'honeywell-px65',
+    documents: [
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi PX45 / PX65 (User Guide)', lang: 'en', file: '/instrukcje/honeywell-px45-65-ug-en.pdf', size: '13,0 MB' },
+    ],
+    polishManual: honeywellPx65Pl,
+    keywords: [
+      'honeywell px65 instrukcja',
+      'px65 instrukcja po polsku',
+      'px65 instrukcja obsługi pdf',
+      'px65 user guide',
+      'honeywell px65 manual pdf',
     ],
     updatedAt: '2026-06-22',
   },
