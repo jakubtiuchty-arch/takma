@@ -64,8 +64,9 @@ export function ManualPdfDoc({ manual, logoSrc }: { manual: Manual; logoSrc?: st
         {pm.intro ? <Text style={s.lead}>{pm.intro}</Text> : null}
 
         {pm.sections.map((sec, i) => (
-          <View key={i} wrap={false}>
-            <Text style={s.h2}>{i + 1}. {sec.title}</Text>
+          <View key={i}>
+            {/* tytuł trzyma się początku treści; długie sekcje mogą przejść na kolejną stronę */}
+            <Text style={s.h2} minPresenceAhead={28}>{i + 1}. {sec.title}</Text>
             {sec.blocks.map((b, j) => <Block key={j} block={b} />)}
           </View>
         ))}

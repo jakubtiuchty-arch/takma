@@ -7,6 +7,7 @@ import { honeywellPc45dPl } from './manual-content/honeywell-pc45d-pl'
 import { honeywellPc45tPl } from './manual-content/honeywell-pc45t-pl'
 import { honeywellPc42etPl } from './manual-content/honeywell-pc42e-t-pl'
 import { honeywellPd45Pl } from './manual-content/honeywell-pd45-pl'
+import { honeywellPd45sPl } from './manual-content/honeywell-pd45s-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -378,6 +379,29 @@ export const manuals: Manual[] = [
       'pd45 instrukcja obsługi pdf',
       'pd45 szybki start',
       'honeywell pd45 manual pdf',
+    ],
+    updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'honeywell-pd45s',
+    model: 'PD45S',
+    name: 'Honeywell PD45S',
+    brand: 'Honeywell',
+    category: 'drukarki-etykiet',
+    description:
+      'Półprzemysłowa drukarka etykiet z ekranem dotykowym 3,5", druk termotransferowy i termiczny, 256 MB RAM, do 250 mm/s, ZPL-II. Skrócona instrukcja po polsku — etykiety i taśma, kalibracja, sieć, czyszczenie głowicy.',
+    productSlug: 'honeywell-pd45s',
+    documents: [
+      { type: 'quick-start', title: 'Instrukcja szybkiego uruchomienia PD45', lang: 'en', file: '/instrukcje/honeywell-pd45-qs-en.pdf', size: '13,0 MB' },
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi PD45S (User Guide)', lang: 'en', file: '/instrukcje/honeywell-pd45s-ug-en.pdf', size: '4,7 MB' },
+    ],
+    polishManual: honeywellPd45sPl,
+    keywords: [
+      'honeywell pd45s instrukcja',
+      'pd45s instrukcja po polsku',
+      'pd45s instrukcja obsługi pdf',
+      'pd45s szybki start',
+      'honeywell pd45s manual pdf',
     ],
     updatedAt: '2026-06-22',
   },
