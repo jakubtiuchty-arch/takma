@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import {
   SearchIcon,
@@ -11,6 +12,7 @@ import {
   manuals,
   manualCategories,
   docTypeMeta,
+  brandLogos,
   categoryLabel,
   type ManualCategory,
 } from '@/data/manuals'
@@ -27,6 +29,7 @@ const docTagClass: Record<string, string> = {
 
 export default function InstrukcjeGrid() {
   const [selectedCategory, setSelectedCategory] = useState<FilterKey>('all')
+  const [selectedBrand, setSelectedBrand] = useState<string | null>(null)
   const [query, setQuery] = useState('')
 
   // Kategorie, które faktycznie mają instrukcje (puste nie pokazujemy)
@@ -38,9 +41,24 @@ export default function InstrukcjeGrid() {
     [],
   )
 
+  // Marki, które faktycznie mają instrukcje i znany logotyp
+  const activeBrands = useMemo(() => {
+    const seen = new Set<string>()
+    return manuals
+      .map((m) => m.brand)
+      .filter((b) => {
+        if (seen.has(b) || !brandLogos[b]) return false
+        seen.add(b)
+        return true
+      })
+  }, [])
+
   const filtered = useMemo(() => {
     return manuals.filter((m) => {
       if (selectedCategory !== 'all' && m.category !== selectedCategory) {
+        return false
+      }
+      if (selectedBrand && m.brand !== selectedBrand) {
         return false
       }
       if (query) {
@@ -54,7 +72,7 @@ export default function InstrukcjeGrid() {
       }
       return true
     })
-  }, [selectedCategory, query])
+  }, [selectedCategory, selectedBrand, query])
 
   return (
     <div>
@@ -72,6 +90,39 @@ export default function InstrukcjeGrid() {
           aria-label="Szukaj instrukcji"
         />
       </div>
+
+      {/* Filtr po producencie (logotypy) */}
+      {activeBrands.length > 0 && (
+        <div className="flex flex-wrap items-center gap-2.5 mb-5">
+          {activeBrands.map((brand) => {
+            const active = selectedBrand === brand
+            return (
+              <button
+                key={brand}
+                type="button"
+                onClick={() => setSelectedBrand(active ? null : brand)}
+                aria-pressed={active}
+                title={`Pokaż instrukcje ${brand}`}
+                className={`flex h-12 w-28 items-center justify-center rounded-xl border bg-white px-3 transition-all ${
+                  active
+                    ? 'border-blue-600 ring-2 ring-blue-500/30'
+                    : 'border-slate-200 hover:border-slate-300'
+                }`}
+              >
+                <Image
+                  src={brandLogos[brand]}
+                  alt={brand}
+                  width={96}
+                  height={32}
+                  className={`max-h-7 w-auto object-contain transition ${
+                    active ? '' : 'opacity-60 grayscale hover:opacity-100 hover:grayscale-0'
+                  }`}
+                />
+              </button>
+            )
+          })}
+        </div>
+      )}
 
       {/* Filtry kategorii */}
       <div className="flex flex-wrap gap-2 mb-8">

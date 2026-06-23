@@ -106,6 +106,22 @@ export const manualCategories: { id: ManualCategory; label: string }[] = [
   { id: 'oprogramowanie', label: 'Oprogramowanie' },
 ]
 
+// --- Logotypy producentów (filtr po marce) ----------------------------------
+// Klucz = brand (dokładnie jak w polu `brand` urządzenia).
+
+export const brandLogos: Record<string, string> = {
+  Honeywell: '/images/partners/logo_honeywell.png',
+  Zebra: '/images/partners/logo_zebra.png',
+  Datalogic: '/images/partners/logo_datalogic.png',
+  Newland: '/images/partners/logo_newland.png',
+  'M3 Mobile': '/images/partners/logo_m3mobile.png',
+  Citizen: '/images/partners/logo_citizen.png',
+  SATO: '/images/partners/logo_sato.png',
+  Godex: '/images/partners/logo-godex.png',
+  TSC: '/images/partners/logo_tsc.png',
+  Brother: '/images/partners/brother_logo.png',
+}
+
 // --- Metadane typów dokumentów (etykieta + opis) ----------------------------
 
 export const docTypeMeta: Record<
