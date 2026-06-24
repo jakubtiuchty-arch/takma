@@ -207,46 +207,70 @@ export interface GaRealtime {
   sourcesToday: GaRow[]
 }
 
+// Serwerowy cache „Na żywo": wiele kart/adminów i polling dzielą jedno pobranie,
+// dzięki czemu nie przepalamy godzinnego limitu tokenów GA4 Realtime.
+const REALTIME_TTL = 60_000 // 60 s
+let realtimeCache: { at: number; data: GaRealtime } | null = null
+
 export async function gaRealtime(): Promise<GaRealtime> {
-  const [total, byMin, pages, sources] = await Promise.all([
-    callApi('runRealtimeReport', { metrics: [{ name: 'activeUsers' }] }),
-    callApi('runRealtimeReport', { dimensions: [{ name: 'minutesAgo' }], metrics: [{ name: 'activeUsers' }] }),
-    callApi('runRealtimeReport', {
-      dimensions: [{ name: 'unifiedScreenName' }],
-      metrics: [{ name: 'activeUsers' }],
-      orderBys: [{ metric: { metricName: 'activeUsers' }, desc: true }],
-      limit: 12,
-    }),
-    callApi('runReport', {
-      dateRanges: [{ startDate: 'today', endDate: 'today' }],
-      dimensions: [{ name: 'sessionSourceMedium' }],
-      metrics: [{ name: 'sessions' }, { name: 'activeUsers' }],
-      orderBys: [{ metric: { metricName: 'sessions' }, desc: true }],
-      limit: 10,
-    }),
-  ])
-
-  const minutes = new Map<number, number>()
-  for (const r of byMin.rows || []) {
-    minutes.set(Number(r.dimensionValues?.[0]?.value), n(r.metricValues?.[0]?.value))
+  if (realtimeCache && Date.now() - realtimeCache.at < REALTIME_TTL) {
+    return realtimeCache.data
   }
-  const byMinute = Array.from({ length: 30 }, (_, i) => {
-    const ago = 29 - i
-    return { minutesAgo: ago, users: minutes.get(ago) || 0 }
-  })
 
-  return {
-    activeUsers: n(total.rows?.[0]?.metricValues?.[0]?.value),
-    byMinute,
-    pages: rows(pages, (r) => ({
-      label: (r.dimensionValues?.[0]?.value || '').replace(/\s*\|\s*TAKMA\s*$/i, '').trim() || '(bez tytułu)',
-      value: n(r.metricValues?.[0]?.value),
-    })),
-    sourcesToday: rows(sources, (r) => ({
-      label: r.dimensionValues?.[0]?.value || '(not set)',
-      value: n(r.metricValues?.[0]?.value),
-      value2: n(r.metricValues?.[1]?.value),
-    })),
+  try {
+    // 2 zapytania realtime (zamiast 3): total bierzemy z metricAggregations TOTAL
+    // tego samego zapytania co byMinute — dla activeUsers GA liczy unikalny total
+    // natywnie, więc to nadal poprawna liczba, a oszczędzamy jedno wywołanie.
+    const [byMin, pages, sources] = await Promise.all([
+      callApi('runRealtimeReport', {
+        dimensions: [{ name: 'minutesAgo' }],
+        metrics: [{ name: 'activeUsers' }],
+        metricAggregations: ['TOTAL'],
+      }),
+      callApi('runRealtimeReport', {
+        dimensions: [{ name: 'unifiedScreenName' }],
+        metrics: [{ name: 'activeUsers' }],
+        orderBys: [{ metric: { metricName: 'activeUsers' }, desc: true }],
+        limit: 12,
+      }),
+      callApi('runReport', {
+        dateRanges: [{ startDate: 'today', endDate: 'today' }],
+        dimensions: [{ name: 'sessionSourceMedium' }],
+        metrics: [{ name: 'sessions' }, { name: 'activeUsers' }],
+        orderBys: [{ metric: { metricName: 'sessions' }, desc: true }],
+        limit: 10,
+      }),
+    ])
+
+    const minutes = new Map<number, number>()
+    for (const r of byMin.rows || []) {
+      minutes.set(Number(r.dimensionValues?.[0]?.value), n(r.metricValues?.[0]?.value))
+    }
+    const byMinute = Array.from({ length: 30 }, (_, i) => {
+      const ago = 29 - i
+      return { minutesAgo: ago, users: minutes.get(ago) || 0 }
+    })
+
+    const data: GaRealtime = {
+      activeUsers: n(byMin.totals?.[0]?.metricValues?.[0]?.value),
+      byMinute,
+      pages: rows(pages, (r) => ({
+        label: (r.dimensionValues?.[0]?.value || '').replace(/\s*\|\s*TAKMA\s*$/i, '').trim() || '(bez tytułu)',
+        value: n(r.metricValues?.[0]?.value),
+      })),
+      sourcesToday: rows(sources, (r) => ({
+        label: r.dimensionValues?.[0]?.value || '(not set)',
+        value: n(r.metricValues?.[0]?.value),
+        value2: n(r.metricValues?.[1]?.value),
+      })),
+    }
+
+    realtimeCache = { at: Date.now(), data }
+    return data
+  } catch (e) {
+    // 429 / błąd przejściowy → pokaż ostatnie znane dane zamiast wywalać panel
+    if (realtimeCache) return realtimeCache.data
+    throw e
   }
 }
 

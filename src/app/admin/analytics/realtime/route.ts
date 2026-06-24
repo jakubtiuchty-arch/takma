@@ -48,13 +48,9 @@ export async function GET() {
   const session = await getSessionFromCookie()
   if (!session) return NextResponse.json({ error: 'Brak autoryzacji.' }, { status: 401 })
 
-  try {
-    const [ga, liveIps] = await Promise.all([
-      gaConfigured() ? gaRealtime() : Promise.resolve(null),
-      recentIps().catch(() => [] as LiveIp[]),
-    ])
-    return NextResponse.json({ ...(ga || {}), liveIps }, { headers: { 'Cache-Control': 'no-store' } })
-  } catch (e) {
-    return NextResponse.json({ error: (e as Error).message }, { status: 502 })
-  }
+  const [ga, liveIps] = await Promise.all([
+    gaConfigured() ? gaRealtime().catch(() => null) : Promise.resolve(null),
+    recentIps().catch(() => [] as LiveIp[]),
+  ])
+  return NextResponse.json({ ...(ga || {}), liveIps }, { headers: { 'Cache-Control': 'no-store' } })
 }

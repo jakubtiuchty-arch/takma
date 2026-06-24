@@ -34,7 +34,8 @@ export default function LiveNow() {
       }
     }
     load()
-    const timer = setInterval(load, 30000)
+    // 60 s = zgodne z serwerowym cache GA Realtime (TTL) → nie przepala limitu tokenów
+    const timer = setInterval(load, 60000)
     return () => { alive = false; clearInterval(timer) }
   }, [])
 
