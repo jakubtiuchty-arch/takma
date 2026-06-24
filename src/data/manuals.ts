@@ -29,6 +29,7 @@ import { honeywellVoyagerXp1472gPl } from './manual-content/honeywell-voyager-xp
 import { honeywellEda10aPl } from './manual-content/honeywell-eda10a-pl'
 import { honeywellRt10aPl } from './manual-content/honeywell-rt10a-pl'
 import { honeywellRt10wPl } from './manual-content/honeywell-rt10w-pl'
+import { newlandN7CachalotProIiPl } from './manual-content/newland-n7-cachalot-pro-ii-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -968,6 +969,28 @@ export const manuals: Manual[] = [
       'honeywell rt10w manual pdf',
     ],
     updatedAt: '2026-06-22',
+  },
+  {
+    slug: 'newland-n7-cachalot-pro-ii',
+    model: 'N7 Cachalot Pro II',
+    name: 'Newland N7 Cachalot Pro II',
+    brand: 'Newland',
+    category: 'terminale',
+    description:
+      'Wytrzymały terminal mobilny Android 4" z fizyczną klawiaturą, dwoma slotami SIM (2G/3G/4G), skanerem 2D i NFC. Skrócona instrukcja po polsku — bateria, karty SIM/microSD, skanowanie, ScanSettings, sieci.',
+    productSlug: 'newland-n7-cachalot-pro-ii',
+    documents: [
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi N7 Cachalot Pro II (User Guide)', lang: 'en', file: '/instrukcje/newland-n7-cachalot-pro-ii-ug-en.pdf', size: '3,8 MB' },
+    ],
+    polishManual: newlandN7CachalotProIiPl,
+    keywords: [
+      'newland n7 instrukcja',
+      'n7 cachalot pro ii instrukcja po polsku',
+      'newland n7 cachalot instrukcja obsługi pdf',
+      'newland n7 scansettings',
+      'newland n7 cachalot pro ii manual pdf',
+    ],
+    updatedAt: '2026-06-24',
   },
 ]
 
