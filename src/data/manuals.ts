@@ -30,6 +30,7 @@ import { honeywellEda10aPl } from './manual-content/honeywell-eda10a-pl'
 import { honeywellRt10aPl } from './manual-content/honeywell-rt10a-pl'
 import { honeywellRt10wPl } from './manual-content/honeywell-rt10w-pl'
 import { newlandN7CachalotProIiPl } from './manual-content/newland-n7-cachalot-pro-ii-pl'
+import { newlandMt93MegatteraPl } from './manual-content/newland-mt93-megattera-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -989,6 +990,28 @@ export const manuals: Manual[] = [
       'newland n7 cachalot instrukcja obsługi pdf',
       'newland n7 scansettings',
       'newland n7 cachalot pro ii manual pdf',
+    ],
+    updatedAt: '2026-06-24',
+  },
+  {
+    slug: 'newland-mt93-megattera',
+    model: 'MT93 Megattera',
+    name: 'Newland MT93 Megattera',
+    brand: 'Newland',
+    category: 'terminale',
+    description:
+      'Wytrzymały terminal mobilny Android 13 z ekranem dotykowym 6", skanerem 2D, dual SIM (4G LTE), NFC i dużą baterią. Skrócona instrukcja po polsku — bateria, karty, skanowanie, ScanSettings, sieci, Whitelist Manager.',
+    productSlug: 'newland-mt93-megattera',
+    documents: [
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi MT93 Megattera (User Guide)', lang: 'en', file: '/instrukcje/newland-mt93-megattera-ug-en.pdf', size: '7,1 MB' },
+    ],
+    polishManual: newlandMt93MegatteraPl,
+    keywords: [
+      'newland mt93 instrukcja',
+      'mt93 megattera instrukcja po polsku',
+      'newland mt93 megattera instrukcja obsługi pdf',
+      'newland mt93 scansettings',
+      'newland mt93 megattera manual pdf',
     ],
     updatedAt: '2026-06-24',
   },
