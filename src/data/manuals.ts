@@ -31,6 +31,7 @@ import { honeywellRt10aPl } from './manual-content/honeywell-rt10a-pl'
 import { honeywellRt10wPl } from './manual-content/honeywell-rt10w-pl'
 import { newlandN7CachalotProIiPl } from './manual-content/newland-n7-cachalot-pro-ii-pl'
 import { newlandMt93MegatteraPl } from './manual-content/newland-mt93-megattera-pl'
+import { newlandMt95KamburProIiiPl } from './manual-content/newland-mt95-kambur-pro-iii-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -1012,6 +1013,29 @@ export const manuals: Manual[] = [
       'newland mt93 megattera instrukcja obsługi pdf',
       'newland mt93 scansettings',
       'newland mt93 megattera manual pdf',
+    ],
+    updatedAt: '2026-06-24',
+  },
+  {
+    slug: 'newland-mt95-kambur-pro-iii',
+    model: 'MT95 Kambur Pro III',
+    name: 'Newland MT95 Kambur Pro III',
+    brand: 'Newland',
+    category: 'terminale',
+    // Sklep oferuje rewizję Pro II — boks „Kup" kieruje do dostępnego produktu.
+    description:
+      'Wytrzymały terminal mobilny Android 15 ze skanerem 2D, 5G/4G (dual SIM + eSIM), NFC, czytnikiem linii papilarnych i microSD. Skrócona instrukcja po polsku — bateria, karty, skanowanie, ScanSettings, sieci, Whitelist Manager.',
+    productSlug: 'newland-mt95-kambur-pro-ii',
+    documents: [
+      { type: 'user-guide', title: 'Pełna instrukcja obsługi MT95 Kambur Pro III (User Guide)', lang: 'en', file: '/instrukcje/newland-mt95-kambur-pro-iii-ug-en.pdf', size: '6,3 MB' },
+    ],
+    polishManual: newlandMt95KamburProIiiPl,
+    keywords: [
+      'newland mt95 instrukcja',
+      'mt95 kambur instrukcja po polsku',
+      'newland mt95 kambur pro iii instrukcja obsługi pdf',
+      'newland mt95 scansettings',
+      'newland mt95 kambur manual pdf',
     ],
     updatedAt: '2026-06-24',
   },
