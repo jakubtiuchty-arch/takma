@@ -76,10 +76,9 @@ export function ManualPdfDoc({ manual, logoSrc }: { manual: Manual; logoSrc?: st
         </Text>
 
         <View fixed style={s.footer}>
-          <View style={{ flex: 1 }}>
-            <Text>ul. Poświęcka 1a, 51-128 Wrocław · NIP 915-100-43-77</Text>
-            <Text style={{ marginTop: 2 }}>takma@takma.com.pl · +48 607 819 688 · +48 71 781 71 28</Text>
-          </View>
+          <Text style={{ flex: 1 }}>
+            ul. Poświęcka 1a, 51-128 Wrocław · takma@takma.com.pl · +48 607 819 688 · +48 71 781 71 28
+          </Text>
           <Text
             style={{ marginLeft: 12 }}
             render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`}
