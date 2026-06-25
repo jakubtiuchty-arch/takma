@@ -43,7 +43,6 @@ export async function GET(request: NextRequest) {
         <td>
           <div class="service-name">${escapeHtml(item.productName)}</div>
           ${item.partNumber ? `<div class="service-notes">PN: ${escapeHtml(item.partNumber)}</div>` : ''}
-          ${item.description ? `<div class="service-notes">${escapeHtml(item.description)}</div>` : ''}
         </td>
         <td>${item.quantity} szt.</td>
         <td class="amount">${formatPrice(item.priceNetto)} zł</td>
