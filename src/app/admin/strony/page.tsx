@@ -141,7 +141,7 @@ export default async function StronyPage() {
       </div>
 
       <p className="text-xs text-gray-400">
-        Źródło: Vercel Web Analytics. „Na żywo" = odwiedzający w bieżącej i poprzedniej godzinie (najdrobniejsza
+        Źródło: Vercel Web Analytics. „Na żywo&rdquo; = odwiedzający w bieżącej i poprzedniej godzinie (najdrobniejsza
         granulacja API), odświeżane co 60 s.
       </p>
     </div>
