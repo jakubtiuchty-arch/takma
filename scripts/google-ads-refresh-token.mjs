@@ -21,7 +21,7 @@ if (!CLIENT_ID || !CLIENT_SECRET) {
 
 const PORT = 53682
 const REDIRECT = `http://127.0.0.1:${PORT}`
-const SCOPE = 'https://www.googleapis.com/auth/adwords'
+const SCOPE = process.env.OAUTH_SCOPE || 'https://www.googleapis.com/auth/adwords'
 
 const authUrl =
   'https://accounts.google.com/o/oauth2/v2/auth?' +

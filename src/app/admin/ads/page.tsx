@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { adsConfigured, adsOverview, type AdsCampaign } from '@/lib/googleAds'
+import { adsConfigured, adsOverview, adsMerchantSummary, type AdsCampaign, type MerchantSummary } from '@/lib/googleAds'
 import { fmt, pct } from '../analytics/_ui'
 
 export const dynamic = 'force-dynamic'
@@ -140,8 +140,10 @@ export default async function AdsPage({ searchParams }: { searchParams: Promise<
   }
 
   let data
+  let merchant: MerchantSummary | null = null
   try {
     data = await adsOverview(rangeDays)
+    merchant = await adsMerchantSummary().catch(() => null)
   } catch (e) {
     return (
       <div className="max-w-5xl">
@@ -184,6 +186,33 @@ export default async function AdsPage({ searchParams }: { searchParams: Promise<
 
       <CostTrend data={data.daily} />
       <CampaignsTable campaigns={data.campaigns} />
+
+      {merchant && (
+        <div className="bg-white rounded-xl border border-gray-200 p-5">
+          <h3 className="text-sm font-semibold text-gray-700 mb-1">Merchant Center — produkty (GMC)</h3>
+          <p className="text-xs text-gray-400 mb-3">
+            <span className="text-emerald-600 font-semibold">{fmt(merchant.eligible)}</span> aktywnych ·{' '}
+            <span className="text-amber-600 font-semibold">{fmt(merchant.limited)}</span> ograniczonych ·{' '}
+            <span className="text-rose-600 font-semibold">{fmt(merchant.notEligible)}</span> odrzuconych/wygasłych ·{' '}
+            {fmt(merchant.total)} łącznie
+          </p>
+          {merchant.byType.length > 0 && (
+            <table className="w-full text-sm">
+              <tbody className="divide-y divide-gray-100">
+                {merchant.byType.map((t, i) => (
+                  <tr key={i}>
+                    <td className="py-1.5 pr-2 text-gray-800 truncate max-w-[300px]">{t.label}</td>
+                    <td className="py-1.5 pl-2 text-right tabular-nums whitespace-nowrap">
+                      <span className={t.eligible > 0 ? 'text-emerald-600 font-medium' : 'text-rose-500'}>{fmt(t.eligible)}</span>
+                      <span className="text-gray-400"> / {fmt(t.total)}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </div>
+      )}
 
       <div className="bg-white rounded-xl border border-gray-200 p-5">
         <h3 className="text-sm font-semibold text-gray-700 mb-1">

@@ -223,3 +223,41 @@ export async function adsOverview(rangeDays = 30): Promise<AdsOverview> {
 
   return { rangeDays, totals, campaigns, daily, wastedTerms }
 }
+
+// --- Merchant Center: statusy produktów (zasób shopping_product) ------------
+
+export interface MerchantSummary {
+  total: number
+  eligible: number
+  limited: number
+  notEligible: number
+  byType: { label: string; eligible: number; total: number }[]
+}
+
+export async function adsMerchantSummary(): Promise<MerchantSummary> {
+  const rows = await adsQuery(`
+    SELECT shopping_product.status, shopping_product.product_type_level1, shopping_product.product_type_level2
+    FROM shopping_product
+    LIMIT 5000`)
+  const sum: MerchantSummary = { total: 0, eligible: 0, limited: 0, notEligible: 0, byType: [] }
+  const types = new Map<string, { eligible: number; total: number }>()
+  for (const r of rows as unknown as { shoppingProduct?: { status?: string; productTypeLevel1?: string; productTypeLevel2?: string } }[]) {
+    const sp = r.shoppingProduct
+    if (!sp) continue
+    sum.total++
+    const ok = sp.status === 'ELIGIBLE'
+    if (ok) sum.eligible++
+    else if (sp.status === 'ELIGIBLE_LIMITED') sum.limited++
+    else sum.notEligible++
+    const label = sp.productTypeLevel2 || sp.productTypeLevel1 || '(bez kategorii)'
+    const e = types.get(label) || { eligible: 0, total: 0 }
+    e.total++
+    if (ok || sp.status === 'ELIGIBLE_LIMITED') e.eligible++
+    types.set(label, e)
+  }
+  sum.byType = [...types.entries()]
+    .map(([label, v]) => ({ label, ...v }))
+    .sort((a, b) => b.total - a.total)
+    .slice(0, 10)
+  return sum
+}
