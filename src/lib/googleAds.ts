@@ -255,7 +255,7 @@ export async function adsMerchantSummary(): Promise<MerchantSummary> {
     if (ok || sp.status === 'ELIGIBLE_LIMITED') e.eligible++
     types.set(label, e)
   }
-  sum.byType = [...types.entries()]
+  sum.byType = Array.from(types.entries())
     .map(([label, v]) => ({ label, ...v }))
     .sort((a, b) => b.total - a.total)
     .slice(0, 10)
