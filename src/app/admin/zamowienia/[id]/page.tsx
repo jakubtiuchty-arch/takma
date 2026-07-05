@@ -8,6 +8,7 @@ import OrderTrackingForm from './OrderTrackingForm'
 import OrderFurgonetkaButton from './OrderFurgonetkaButton'
 import OrderShipmentActions from './OrderShipmentActions'
 import OrderNotesForm from './OrderNotesForm'
+import AttributionCard from '@/components/admin/AttributionCard'
 import ShipmentTimeline from '@/components/admin/ShipmentTimeline'
 import { carrierTrackingUrl } from '@/lib/carrier-tracking'
 
@@ -259,6 +260,16 @@ export default async function OrderDetailPage({ params }: PageProps) {
               </div>
             )}
             <OrderNotesForm orderId={order.id} currentNotes={order.adminNotes || ''} />
+
+            {/* Atrybucja: droga klienta od kliknięcia */}
+            <AttributionCard data={{
+              id: order.id, kind: 'order',
+              gclid: order.gclid, gclidAt: order.gclidAt,
+              utmSource: order.utmSource, utmMedium: order.utmMedium, utmCampaign: order.utmCampaign,
+              landingPage: order.landingPage, journey: order.journey,
+              adsCampaign: order.adsCampaign, adsAdGroup: order.adsAdGroup, adsKeyword: order.adsKeyword,
+              adsResolvedAt: order.adsResolvedAt, createdAt: order.createdAt,
+            }} />
           </div>
         </div>
 

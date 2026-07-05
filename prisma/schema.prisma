@@ -50,27 +50,27 @@ enum AdminRole {
 // ---------------------------------------------------------------------------
 
 model Customer {
-  id                String    @id @default(cuid())
-  email             String    @unique
-  firstName         String
-  lastName          String
-  company           String
-  nip               String?
-  phone             String?
-  address           String?
-  shippingAddress   String?
-  stripeCustomerId  String?   @unique
-  hashedPassword    String?   // null = customer has not activated account yet
-  isActive          Boolean   @default(false)
-  activatedAt       DateTime?
+  id               String    @id @default(cuid())
+  email            String    @unique
+  firstName        String
+  lastName         String
+  company          String
+  nip              String?
+  phone            String?
+  address          String?
+  shippingAddress  String?
+  stripeCustomerId String?   @unique
+  hashedPassword   String? // null = customer has not activated account yet
+  isActive         Boolean   @default(false)
+  activatedAt      DateTime?
 
-  orders            Order[]
-  invoices          Invoice[]
-  quotes            Quote[]
-  devices           Device[]
+  orders   Order[]
+  invoices Invoice[]
+  quotes   Quote[]
+  devices  Device[]
 
-  createdAt         DateTime  @default(now())
-  updatedAt         DateTime  @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 // ---------------------------------------------------------------------------
@@ -78,24 +78,24 @@ model Customer {
 // ---------------------------------------------------------------------------
 
 model Device {
-  id              String    @id @default(cuid())
+  id String @id @default(cuid())
 
-  customer        Customer  @relation(fields: [customerId], references: [id])
-  customerId      String
+  customer   Customer @relation(fields: [customerId], references: [id])
+  customerId String
 
-  productName     String    // e.g. "Zebra TC22"
-  productSlug     String?   // link to product page
-  partNumber      String?
-  serialNumber    String?
+  productName  String // e.g. "Zebra TC22"
+  productSlug  String? // link to product page
+  partNumber   String?
+  serialNumber String?
 
-  purchaseDate    DateTime?
-  warrantyEnd     DateTime?
-  oneCareEnd      DateTime? // Zebra OneCare service contract
+  purchaseDate DateTime?
+  warrantyEnd  DateTime?
+  oneCareEnd   DateTime? // Zebra OneCare service contract
 
-  notes           String?
+  notes String?
 
-  createdAt       DateTime  @default(now())
-  updatedAt       DateTime  @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@index([customerId])
 }
@@ -105,44 +105,57 @@ model Device {
 // ---------------------------------------------------------------------------
 
 model Order {
-  id                     String        @id @default(cuid())
-  orderNumber            String        @unique
-  status                 OrderStatus   @default(PENDING_PAYMENT)
+  id          String      @id @default(cuid())
+  orderNumber String      @unique
+  status      OrderStatus @default(PENDING_PAYMENT)
 
-  customer               Customer      @relation(fields: [customerId], references: [id])
-  customerId             String
+  customer   Customer @relation(fields: [customerId], references: [id])
+  customerId String
 
-  subtotalNetto          Int
-  vatAmount              Int
-  shippingNetto          Int           @default(0)
-  totalBrutto            Int
+  subtotalNetto Int
+  vatAmount     Int
+  shippingNetto Int @default(0)
+  totalBrutto   Int
 
-  paymentMethod          PaymentMethod @default(ONLINE)
-  stripeSessionId        String?
-  stripePaymentIntentId  String?
-  p24SessionId           String?       @unique // nasz identyfikator sesji P24 (= order.id)
-  p24OrderId             String? // orderId nadany przez P24 (String — wartości > zakres int4, np. 4506613438)
+  paymentMethod         PaymentMethod @default(ONLINE)
+  stripeSessionId       String?
+  stripePaymentIntentId String?
+  p24SessionId          String?       @unique // nasz identyfikator sesji P24 (= order.id)
+  p24OrderId            String? // orderId nadany przez P24 (String — wartości > zakres int4, np. 4506613438)
 
-  proformaUrl            String?
-  proformaSentAt         DateTime?
-  paidAt                 DateTime?
+  proformaUrl    String?
+  proformaSentAt DateTime?
+  paidAt         DateTime?
 
-  ingramOrderId          String?
-  trackingNumber         String?
-  carrierName            String?
-  shipmentId             String? // id paczki Furgonetka (do ponownego pobrania etykiety, bez duplikatu)
-  shippedAt              DateTime?
-  deliveredAt            DateTime?
+  ingramOrderId  String?
+  trackingNumber String?
+  carrierName    String?
+  shipmentId     String? // id paczki Furgonetka (do ponownego pobrania etykiety, bez duplikatu)
+  shippedAt      DateTime?
+  deliveredAt    DateTime?
 
-  customerNotes          String?
-  adminNotes             String?
+  customerNotes String?
+  adminNotes    String?
 
-  items                  OrderItem[]
-  invoices               Invoice[]
-  shipments              OrderShipment[]
+  items     OrderItem[]
+  invoices  Invoice[]
+  shipments OrderShipment[]
 
-  createdAt              DateTime      @default(now())
-  updatedAt              DateTime      @updatedAt
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+  // --- Atrybucja marketingowa (droga od kliknięcia) ---
+  gclid             String?
+  gclidAt           DateTime?
+  utmSource         String?
+  utmMedium         String?
+  utmCampaign       String?
+  landingPage       String?
+  journey           String? // ścieżka wizyty: JSON array stron
+  adsCampaign       String? // rozwiązane z click_view
+  adsAdGroup        String?
+  adsKeyword        String?
+  adsResolvedAt     DateTime?
+  adsConvUploadedAt DateTime? // kiedy wysłano konwersję offline (marża) do Google Ads
 
   @@index([status])
   @@index([customerId])
@@ -156,18 +169,18 @@ model Order {
 // ---------------------------------------------------------------------------
 
 model OrderShipment {
-  id             String    @id @default(cuid())
+  id String @id @default(cuid())
 
-  order          Order     @relation(fields: [orderId], references: [id])
-  orderId        String
+  order   Order  @relation(fields: [orderId], references: [id])
+  orderId String
 
   carrierName    String
   trackingNumber String?
-  shipmentId     String?   // id paczki Furgonetka (null = numer wpisany ręcznie)
+  shipmentId     String? // id paczki Furgonetka (null = numer wpisany ręcznie)
   source         String    @default("manual") // 'furgonetka' | 'manual'
   emailedAt      DateTime?
 
-  createdAt      DateTime  @default(now())
+  createdAt DateTime @default(now())
 
   @@index([orderId])
   @@index([shipmentId])
@@ -178,20 +191,20 @@ model OrderShipment {
 // ---------------------------------------------------------------------------
 
 model OrderItem {
-  id                   String  @id @default(cuid())
+  id String @id @default(cuid())
 
-  order                Order   @relation(fields: [orderId], references: [id])
-  orderId              String
+  order   Order  @relation(fields: [orderId], references: [id])
+  orderId String
 
-  productId            String
-  productName          String
-  productSlug          String
-  partNumber           String
-  quantity             Int
-  priceNetto           Int
-  totalNetto           Int
-  note                 String?
-  ingramPriceSnapshot  Int?
+  productId           String
+  productName         String
+  productSlug         String
+  partNumber          String
+  quantity            Int
+  priceNetto          Int
+  totalNetto          Int
+  note                String?
+  ingramPriceSnapshot Int?
 }
 
 // ---------------------------------------------------------------------------
@@ -205,8 +218,8 @@ model AdminUser {
   name           String
   role           AdminRole @default(ADMIN)
 
-  createdAt      DateTime  @default(now())
-  updatedAt      DateTime  @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 // ---------------------------------------------------------------------------
@@ -214,43 +227,43 @@ model AdminUser {
 // ---------------------------------------------------------------------------
 
 model Quote {
-  id              String      @id @default(cuid())
-  quoteNumber     String      @unique
+  id          String @id @default(cuid())
+  quoteNumber String @unique
 
-  status          QuoteStatus @default(DRAFT)
+  status QuoteStatus @default(DRAFT)
 
-  customerId      String?
-  customer        Customer?   @relation(fields: [customerId], references: [id])
+  customerId String?
+  customer   Customer? @relation(fields: [customerId], references: [id])
 
-  clientCompany   String
-  clientNip       String?
-  clientContact   String?
-  clientEmail     String?
-  clientPhone     String?
-  clientAddress   String?
+  clientCompany String
+  clientNip     String?
+  clientContact String?
+  clientEmail   String?
+  clientPhone   String?
+  clientAddress String?
 
-  validUntil      DateTime
-  paymentTerms    String      @default("7 dni")
-  deliveryTerms   String      @default("2-5 dni roboczych")
-  notes           String?
-  internalNotes   String?
+  validUntil    DateTime
+  paymentTerms  String   @default("7 dni")
+  deliveryTerms String   @default("2-5 dni roboczych")
+  notes         String?
+  internalNotes String?
 
-  subtotalNetto   Int
-  vatAmount       Int
-  totalBrutto     Int
+  subtotalNetto Int
+  vatAmount     Int
+  totalBrutto   Int
 
-  freebiesNote    String?
+  freebiesNote String?
 
-  zebraServiceBanner Boolean  @default(false)
+  zebraServiceBanner Boolean @default(false)
 
-  items           QuoteItem[]
+  items QuoteItem[]
 
-  sentAt          DateTime?
-  acceptedAt      DateTime?
-  pdfUrl          String?
+  sentAt     DateTime?
+  acceptedAt DateTime?
+  pdfUrl     String?
 
-  createdAt       DateTime    @default(now())
-  updatedAt       DateTime    @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@index([status])
   @@index([quoteNumber])
@@ -261,27 +274,27 @@ model Quote {
 // ---------------------------------------------------------------------------
 
 model QuoteItem {
-  id              String  @id @default(cuid())
+  id String @id @default(cuid())
 
-  quote           Quote   @relation(fields: [quoteId], references: [id], onDelete: Cascade)
-  quoteId         String
+  quote   Quote  @relation(fields: [quoteId], references: [id], onDelete: Cascade)
+  quoteId String
 
-  position        Int
+  position Int
 
-  source          String  @default("catalog")
+  source String @default("catalog")
 
-  productId       String?
-  productName     String
-  partNumber      String?
-  description     String?
+  productId   String?
+  productName String
+  partNumber  String?
+  description String?
 
-  quantity        Int
+  quantity Int
 
-  purchasePrice   Int?
-  priceNetto      Int
-  totalNetto      Int
+  purchasePrice Int?
+  priceNetto    Int
+  totalNetto    Int
 
-  marginPercent   Float?
+  marginPercent Float?
 }
 
 // ---------------------------------------------------------------------------
@@ -305,28 +318,28 @@ enum SeoAlertSeverity {
 // ---------------------------------------------------------------------------
 
 model SeoReport {
-  id            String          @id @default(cuid())
-  generatedAt   DateTime        @default(now())
-  periodStart   DateTime
-  periodEnd     DateTime
-  status        SeoReportStatus @default(RUNNING)
+  id          String          @id @default(cuid())
+  generatedAt DateTime        @default(now())
+  periodStart DateTime
+  periodEnd   DateTime
+  status      SeoReportStatus @default(RUNNING)
 
-  scoreOverall  Int             @default(0)
-  scoreSeo      Int             @default(0)
-  scoreAeo      Int             @default(0)
-  scoreGeo      Int             @default(0)
-  scoreDelta    Int             @default(0)
-  alertsCount   Int             @default(0)
+  scoreOverall Int @default(0)
+  scoreSeo     Int @default(0)
+  scoreAeo     Int @default(0)
+  scoreGeo     Int @default(0)
+  scoreDelta   Int @default(0)
+  alertsCount  Int @default(0)
 
-  reportJson    Json?           // Pełny raport JSON (GSC + GA4 + scoring)
-  errorMessage  String?
+  reportJson   Json? // Pełny raport JSON (GSC + GA4 + scoring)
+  errorMessage String?
 
   metrics       SeoMetricsHistory[]
   serpPositions SeoSerpPosition[]
   competitors   SeoCompetitorSnapshot[]
   alerts        SeoAlert[]
 
-  createdAt     DateTime        @default(now())
+  createdAt DateTime @default(now())
 
   @@index([generatedAt(sort: Desc)])
   @@index([status])
@@ -337,10 +350,10 @@ model SeoReport {
 // ---------------------------------------------------------------------------
 
 model SeoMetricsHistory {
-  id               String    @id @default(cuid())
+  id String @id @default(cuid())
 
-  report           SeoReport @relation(fields: [reportId], references: [id], onDelete: Cascade)
-  reportId         String
+  report   SeoReport @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  reportId String
 
   date             DateTime
   totalClicks      Int?
@@ -350,7 +363,7 @@ model SeoMetricsHistory {
   totalSessions    Int?
   totalConversions Int?
 
-  createdAt        DateTime  @default(now())
+  createdAt DateTime @default(now())
 
   @@index([reportId])
   @@index([date(sort: Desc)])
@@ -361,19 +374,19 @@ model SeoMetricsHistory {
 // ---------------------------------------------------------------------------
 
 model SeoSerpPosition {
-  id                   String    @id @default(cuid())
+  id String @id @default(cuid())
 
-  report               SeoReport @relation(fields: [reportId], references: [id], onDelete: Cascade)
-  reportId             String
+  report   SeoReport @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  reportId String
 
-  keyword              String
-  keywordGroup         String?   // "brand", "generic", "comparison"
-  takmaPosition        Int?      // null = nie rankuje
-  competitorPositions  Json?     // {"bcmarket": 5, "aspekt": null, ...}
-  hasRichSnippet       Boolean   @default(false)
-  searchVolume         Int?
+  keyword             String
+  keywordGroup        String? // "brand", "generic", "comparison"
+  takmaPosition       Int? // null = nie rankuje
+  competitorPositions Json? // {"bcmarket": 5, "aspekt": null, ...}
+  hasRichSnippet      Boolean @default(false)
+  searchVolume        Int?
 
-  createdAt            DateTime  @default(now())
+  createdAt DateTime @default(now())
 
   @@index([reportId])
   @@index([keyword, createdAt(sort: Desc)])
@@ -384,26 +397,26 @@ model SeoSerpPosition {
 // ---------------------------------------------------------------------------
 
 model SeoCompetitorSnapshot {
-  id              String    @id @default(cuid())
+  id String @id @default(cuid())
 
-  report          SeoReport @relation(fields: [reportId], references: [id], onDelete: Cascade)
-  reportId        String
+  report   SeoReport @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  reportId String
 
   competitor      String
   url             String
   title           String?
   metaDescription String?
   contentLength   Int?
-  hasPrice        Boolean   @default(false)
+  hasPrice        Boolean  @default(false)
   price           String?
-  hasFaq          Boolean   @default(false)
-  faqCount        Int       @default(0)
-  hasSchema       Boolean   @default(false)
+  hasFaq          Boolean  @default(false)
+  faqCount        Int      @default(0)
+  hasSchema       Boolean  @default(false)
   schemaTypes     String[]
   contentHash     String?
-  contentChanged  Boolean   @default(false)
+  contentChanged  Boolean  @default(false)
 
-  createdAt       DateTime  @default(now())
+  createdAt DateTime @default(now())
 
   @@index([reportId])
   @@index([competitor, contentHash])
@@ -414,21 +427,21 @@ model SeoCompetitorSnapshot {
 // ---------------------------------------------------------------------------
 
 model SeoAlert {
-  id          String           @id @default(cuid())
+  id String @id @default(cuid())
 
-  report      SeoReport        @relation(fields: [reportId], references: [id], onDelete: Cascade)
-  reportId    String
+  report   SeoReport @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  reportId String
 
   severity    SeoAlertSeverity
-  category    String           // "ranking", "competitor", "technical", "content", "aeo"
+  category    String // "ranking", "competitor", "technical", "content", "aeo"
   title       String
   description String?
   action      String?
 
-  isRead      Boolean          @default(false)
-  isResolved  Boolean          @default(false)
+  isRead     Boolean @default(false)
+  isResolved Boolean @default(false)
 
-  createdAt   DateTime         @default(now())
+  createdAt DateTime @default(now())
 
   @@index([reportId])
   @@index([isRead, severity])
@@ -468,56 +481,56 @@ enum InvoiceStatus {
 }
 
 model Invoice {
-  id              String        @id @default(cuid())
-  invoiceNumber   String        @unique  // e.g. FV/2026/04/001
+  id            String @id @default(cuid())
+  invoiceNumber String @unique // e.g. FV/2026/04/001
 
-  order           Order         @relation(fields: [orderId], references: [id])
-  orderId         String
+  order   Order  @relation(fields: [orderId], references: [id])
+  orderId String
 
-  customer        Customer      @relation(fields: [customerId], references: [id])
-  customerId      String
+  customer   Customer @relation(fields: [customerId], references: [id])
+  customerId String
 
   // Amounts (in grosze, like Order)
-  subtotalNetto   Int
-  vatAmount       Int
-  totalBrutto     Int
-  vatRate         Int           @default(23)
+  subtotalNetto Int
+  vatAmount     Int
+  totalBrutto   Int
+  vatRate       Int @default(23)
 
   // Dates
-  issueDate       DateTime      @default(now())
-  saleDate        DateTime?
-  dueDate         DateTime?
+  issueDate DateTime  @default(now())
+  saleDate  DateTime?
+  dueDate   DateTime?
 
   // Seller info (cached)
-  sellerName      String        @default("TAKMA Tadeusz Tiuchty")
-  sellerNip       String        @default("9151004377")
-  sellerAddress   String        @default("ul. Poświęcka 1a, 51-128 Wrocław")
+  sellerName    String @default("TAKMA Tadeusz Tiuchty")
+  sellerNip     String @default("9151004377")
+  sellerAddress String @default("ul. Poświęcka 1a, 51-128 Wrocław")
 
   // Buyer info (cached from customer)
-  buyerName       String
-  buyerNip        String?
-  buyerAddress    String?
+  buyerName    String
+  buyerNip     String?
+  buyerAddress String?
 
   // KSeF integration
-  ksefStatus      InvoiceStatus @default(DRAFT)
-  ksefNumber      String?       // KSeF reference number (e.g. 1234567890-20260404-ABC123DEF456)
-  ksefSessionId   String?
-  ksefXml         String?       // Generated FA(3) XML content
-  ksefUpo         String?       // UPO (Urzędowe Potwierdzenie Odbioru) XML
-  ksefError       String?       // Error message from KSeF
-  ksefSentAt      DateTime?
-  ksefAcceptedAt  DateTime?
+  ksefStatus     InvoiceStatus @default(DRAFT)
+  ksefNumber     String? // KSeF reference number (e.g. 1234567890-20260404-ABC123DEF456)
+  ksefSessionId  String?
+  ksefXml        String? // Generated FA(3) XML content
+  ksefUpo        String? // UPO (Urzędowe Potwierdzenie Odbioru) XML
+  ksefError      String? // Error message from KSeF
+  ksefSentAt     DateTime?
+  ksefAcceptedAt DateTime?
 
   // Line items stored as JSON
-  items           Json          // Array of { name, quantity, unitPrice, totalNetto, vatRate, totalBrutto }
+  items Json // Array of { name, quantity, unitPrice, totalNetto, vatRate, totalBrutto }
 
   // PDF
-  pdfUrl          String?
+  pdfUrl String?
 
-  notes           String?
+  notes String?
 
-  createdAt       DateTime      @default(now())
-  updatedAt       DateTime      @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@index([orderId])
   @@index([customerId])
@@ -532,9 +545,9 @@ model Invoice {
 model StockCache {
   partNumber   String   @id
   found        Boolean  @default(false)
-  price        Float?   // sell price (with margin)
+  price        Float? // sell price (with margin)
   priceBrutto  Float?
-  ingramPrice  Float?   // purchase price
+  ingramPrice  Float? // purchase price
   stockPL      Int      @default(0)
   stockDE      Int      @default(0)
   inDelivery   Int      @default(0)
@@ -550,20 +563,20 @@ model StockCache {
 // ---------------------------------------------------------------------------
 
 model SeoDigestArticle {
-  id            String   @id @default(cuid())
-  guid          String   @unique  // RSS guid or link as unique identifier
-  source        String   // e.g. "searchengineland", "semrush", "moz"
-  sourceName    String   // e.g. "Search Engine Land"
+  id            String    @id @default(cuid())
+  guid          String    @unique // RSS guid or link as unique identifier
+  source        String // e.g. "searchengineland", "semrush", "moz"
+  sourceName    String // e.g. "Search Engine Land"
   originalTitle String
   originalUrl   String
-  titlePl       String?  // Polish translation
-  summaryPl     String?  // Polish summary
-  contentPl     String?  // Full article translated to Polish
+  titlePl       String? // Polish translation
+  summaryPl     String? // Polish summary
+  contentPl     String? // Full article translated to Polish
   author        String?
   publishedAt   DateTime?
-  fetchedAt     DateTime @default(now())
-  isRead        Boolean  @default(false)
-  isStarred     Boolean  @default(false)
+  fetchedAt     DateTime  @default(now())
+  isRead        Boolean   @default(false)
+  isStarred     Boolean   @default(false)
 
   @@index([source, fetchedAt])
   @@index([isRead, fetchedAt])
@@ -598,21 +611,21 @@ model AllegroToken {
 // Oferta wystawiona z katalogu TAKMA na Allegro (1 wariant = 1 oferta).
 // Tworzona jako DRAFT (publication INACTIVE) — aktywację robi się w panelu Allegro.
 model AllegroOffer {
-  id          String   @id @default(cuid())
-  environment String // "sandbox" | "prod"
-  partNumber  String
-  seriesSlug  String?
-  productKind String   @default("ribbon") // "ribbon" | "label"
-  allegroId   String? // id oferty zwrócone przez Allegro
-  allegroUrl  String?
-  status      String   @default("DRAFT") // DRAFT | ACTIVE | ERROR
-  priceNet      Float?
-  priceGross    Float?
-  stockAvailable Int?    // ostatni stan wypchnięty do Allegro (do synchronizacji)
-  lastError     String?  @db.Text
-  payload       String?  @db.Text // ostatni wysłany payload (debug)
-  createdAt     DateTime @default(now())
-  updatedAt     DateTime @updatedAt
+  id             String   @id @default(cuid())
+  environment    String // "sandbox" | "prod"
+  partNumber     String
+  seriesSlug     String?
+  productKind    String   @default("ribbon") // "ribbon" | "label"
+  allegroId      String? // id oferty zwrócone przez Allegro
+  allegroUrl     String?
+  status         String   @default("DRAFT") // DRAFT | ACTIVE | ERROR
+  priceNet       Float?
+  priceGross     Float?
+  stockAvailable Int? // ostatni stan wypchnięty do Allegro (do synchronizacji)
+  lastError      String?  @db.Text
+  payload        String?  @db.Text // ostatni wysłany payload (debug)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
 
   @@unique([environment, partNumber])
 }
@@ -627,14 +640,14 @@ model AllegroAutoReply {
 
 // Powiadomienie handlowca o nowym zamówieniu Allegro (1 zamówienie = 1 mail).
 model AllegroOrderNotified {
-  orderId    String   @id
-  notifiedAt DateTime @default(now())
+  orderId        String    @id
+  notifiedAt     DateTime  @default(now())
   // numer listu przewozowego (Furgonetka) — gdy utworzymy przesyłkę
   trackingNumber String?
   shipmentId     String?
   // wewnętrzny znacznik działu realizacji (niezależny od statusu Allegro)
-  fulfilled   Boolean   @default(false)
-  fulfilledAt DateTime?
+  fulfilled      Boolean   @default(false)
+  fulfilledAt    DateTime?
 }
 
 // EAN/GTIN produktów (master data od dystrybutora) — do wystawiania na Allegro.
@@ -669,8 +682,8 @@ model FeedValidationRun {
 // Śledzenie przesyłek Furgonetki — własna oś czasu budowana cronem (API Furgonetki
 // nie ma historii zdarzeń, więc pollujemy bieżący stan i dopisujemy zmiany).
 model ShipmentTracking {
-  id             String   @id @default(cuid())
-  packageId      String   @unique // id paczki Furgonetka
+  id             String    @id @default(cuid())
+  packageId      String    @unique // id paczki Furgonetka
   source         String // 'allegro' | 'shop'
   orderRef       String // id zamówienia (Allegro order id / shop order id)
   trackingNumber String?
@@ -679,9 +692,9 @@ model ShipmentTracking {
   currentDesc    String?
   currentStation String?
   trackingUrl    String?
-  delivered      Boolean  @default(false)
+  delivered      Boolean   @default(false)
   lastPolledAt   DateTime?
-  createdAt      DateTime @default(now())
+  createdAt      DateTime  @default(now())
 
   events ShipmentTrackingEvent[]
 
@@ -698,7 +711,7 @@ model ShipmentTrackingEvent {
   description    String?
   station        String?
   datetimeStatus String? // ISO od Furgonetki (kiedy kurier zeskanował)
-  recordedAt     DateTime @default(now())
+  recordedAt     DateTime         @default(now())
 
   @@index([trackingId, recordedAt])
   @@map("shipment_tracking_events")
@@ -792,4 +805,35 @@ model GbpChatMessage {
 
   @@index([createdAt])
   @@map("gbp_chat_message")
+}
+
+// Leady z formularzy (kontakt, zapytanie o produkt) + atrybucja
+model Lead {
+  id          String  @id @default(cuid())
+  source      String // 'kontakt' | 'inquiry'
+  name        String?
+  email       String?
+  phone       String?
+  subject     String?
+  message     String? @db.Text
+  productSlug String?
+
+  gclid String?
+
+  gclidAt     DateTime?
+  utmSource   String?
+  utmMedium   String?
+  utmCampaign String?
+  landingPage String?
+  journey     String? // JSON array stron
+
+  adsCampaign   String?
+  adsAdGroup    String?
+  adsKeyword    String?
+  adsResolvedAt DateTime?
+
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([gclid])
 }

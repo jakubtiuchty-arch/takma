@@ -261,3 +261,51 @@ export async function adsMerchantSummary(): Promise<MerchantSummary> {
     .slice(0, 10)
   return sum
 }
+
+// --- Atrybucja: gclid → kampania / grupa / słowo kluczowe (click_view) ------
+
+export interface GclidResolution {
+  campaign: string | null
+  adGroup: string | null
+  keyword: string | null
+}
+
+/** click_view wymaga filtra na JEDEN dzień — próbujemy datę kliknięcia,
+ *  potem kilka dni wstecz od daty utworzenia rekordu (max 90 dni wstecz od dziś). */
+export async function resolveGclid(gclid: string, dateHints: Date[]): Promise<GclidResolution | null> {
+  const tried = new Set<string>()
+  const days: string[] = []
+  for (const d of dateHints) {
+    if (!d) continue
+    for (const off of [0, -1, -2]) {
+      const dt = new Date(d)
+      dt.setDate(dt.getDate() + off)
+      const iso = dt.toISOString().slice(0, 10)
+      if (!tried.has(iso)) { tried.add(iso); days.push(iso) }
+    }
+  }
+  for (const day of days.slice(0, 6)) {
+    try {
+      const rows = await adsQuery(`
+        SELECT campaign.name, ad_group.name, click_view.keyword_info.text
+        FROM click_view
+        WHERE segments.date = '${day}' AND click_view.gclid = '${gclid.replace(/'/g, '')}'
+        LIMIT 1`)
+      const r = rows[0] as unknown as {
+        campaign?: { name?: string }
+        adGroup?: { name?: string }
+        clickView?: { keywordInfo?: { text?: string } }
+      } | undefined
+      if (r) {
+        return {
+          campaign: r.campaign?.name ?? null,
+          adGroup: r.adGroup?.name ?? null,
+          keyword: r.clickView?.keywordInfo?.text ?? null,
+        }
+      }
+    } catch {
+      // np. dzień poza zakresem 90 dni — próbuj kolejny
+    }
+  }
+  return null
+}

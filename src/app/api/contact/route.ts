@@ -3,6 +3,8 @@ import { sendEmail } from '@/lib/email'
 import { buildAdminContactNotificationEmail, buildContactConfirmationEmail } from '@/lib/email-templates'
 import { checkSpam, getClientIp } from '@/lib/spam-protection'
 import { verifyTurnstile } from '@/lib/turnstile'
+import { prisma } from '@/lib/db'
+import { readAttribution } from '@/lib/attribution'
 
 const REASON_LABELS: Record<string, string> = {
   quote: 'Zapytanie ofertowe',
@@ -48,6 +50,22 @@ export async function POST(request: NextRequest) {
     }
 
     const reasonLabel = REASON_LABELS[reason] || reason || 'Brak tematu'
+
+    // Lead do bazy z atrybucją (droga od kliknięcia) — nie blokuje wysyłki maili
+    try {
+      const attr = await readAttribution()
+      await prisma.lead.create({
+        data: {
+          source: 'kontakt',
+          name, email, phone: phone || null,
+          subject: reasonLabel,
+          message: String(message).slice(0, 4000),
+          ...attr,
+        },
+      })
+    } catch (e) {
+      console.error('[Contact] Lead save failed:', (e as Error).message)
+    }
     const adminEmails = [
       process.env.ADMIN_EMAIL || 'takma@takma.com.pl',
       'jakub.tiuchty@takma.com.pl',

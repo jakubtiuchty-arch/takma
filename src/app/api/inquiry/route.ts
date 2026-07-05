@@ -3,6 +3,8 @@ import { sendEmail } from '@/lib/email'
 import { buildAdminInquiryEmail, buildInquiryConfirmationEmail } from '@/lib/email-templates'
 import { checkSpam, getClientIp } from '@/lib/spam-protection'
 import { verifyTurnstile } from '@/lib/turnstile'
+import { prisma } from '@/lib/db'
+import { readAttribution } from '@/lib/attribution'
 
 /**
  * POST /api/inquiry
@@ -63,6 +65,23 @@ export async function POST(request: NextRequest) {
       productName: productName || '',
       productSlug: productSlug || '',
       createdAt: new Date().toISOString(),
+    }
+
+    // Lead do bazy z atrybucją (dotąd tylko in-memory + mail)
+    try {
+      const attr = await readAttribution()
+      await prisma.lead.create({
+        data: {
+          source: 'inquiry',
+          name, email, phone: phone || null,
+          subject: `Zapytanie o produkt: ${productName}`,
+          message: String(message).slice(0, 4000),
+          productSlug: productSlug || null,
+          ...attr,
+        },
+      })
+    } catch (e) {
+      console.error('[Inquiry] Lead save failed:', (e as Error).message)
     }
 
     inquiries.push(entry)

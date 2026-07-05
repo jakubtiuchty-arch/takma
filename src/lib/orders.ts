@@ -1,3 +1,4 @@
+import { readAttribution } from '@/lib/attribution'
 import { prisma } from './db'
 import { OrderStatus, PaymentMethod } from '@/generated/prisma/client'
 
@@ -79,6 +80,8 @@ interface CreateOrderInput {
 export async function createOrder(input: CreateOrderInput) {
   const orderNumber = await generateOrderNumber()
   const customer = await findOrCreateCustomer(input.customer)
+  // Atrybucja marketingowa z ciasteczek (gclid/UTM/ścieżka) — droga od kliknięcia
+  const attr = await readAttribution().catch(() => null)
 
   const subtotalNetto = input.items.reduce((sum, item) =>
     sum + Math.round(item.priceNetto * 100) * item.quantity, 0
@@ -98,6 +101,15 @@ export async function createOrder(input: CreateOrderInput) {
       totalBrutto,
       paymentMethod: input.paymentMethod as PaymentMethod,
       customerNotes: input.customerNotes,
+      ...(attr ? {
+        gclid: attr.gclid,
+        gclidAt: attr.gclidAt,
+        utmSource: attr.utmSource,
+        utmMedium: attr.utmMedium,
+        utmCampaign: attr.utmCampaign,
+        landingPage: attr.landingPage,
+        journey: attr.journey,
+      } : {}),
       items: {
         create: input.items.map(item => ({
           productId: item.productId,

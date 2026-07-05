@@ -5,6 +5,7 @@ import { headers } from 'next/headers'
 import dynamic from 'next/dynamic'
 import './globals.css'
 import LayoutShell from '@/components/layout/LayoutShell'
+import AttributionTracker from '@/components/AttributionTracker'
 import PostHogProvider from '@/components/PostHogProvider'
 import { AutoLinkTracking } from '@/components/tracking/AutoLinkTracking'
 import GARouteTracker from '@/components/tracking/GARouteTracker'
@@ -211,6 +212,12 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         </Suspense>
       )}
       {!isAdmin && !isPanel && <LiveBeacon />}
+      {/* Atrybucja: gclid/UTM + ścieżka wizyty → ciasteczka (czytane przy leadach i zamówieniach) */}
+      {!isAdmin && !isPanel && (
+        <Suspense fallback={null}>
+          <AttributionTracker />
+        </Suspense>
+      )}
       {!isAdmin && !isPanel && (
         <>
           <Script id="skapiec-dlapi-init" strategy="afterInteractive">
