@@ -146,7 +146,7 @@ function during(rangeDays: number): string {
   return `segments.date BETWEEN '${iso(from)}' AND '${iso(to)}'`
 }
 
-/** Komplet danych panelu /admin/ads. */
+/** Komplet danych przeglądu Ads (panel przeniesiony do kokpitu; tu zostaje dla cronów/atrybucji). */
 export async function adsOverview(rangeDays = 30): Promise<AdsOverview> {
   const where = during(rangeDays)
 
