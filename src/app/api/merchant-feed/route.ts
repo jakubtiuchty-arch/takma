@@ -21,10 +21,12 @@ export const maxDuration = 60
 const SITE_URL = 'https://www.takma.com.pl'
 const VAT = 1.23 // Google Shopping PL: cena brutto. Feed = cena sklepowa (StockCache.price) × VAT.
 
-// Google availability: in_stock / out_of_stock / preorder / backorder
+// Google availability: in_stock / out_of_stock / preorder / backorder.
+// 'on-order' → out_of_stock: backorder wymaga availability_date (Google odrzuca bez niej),
+// a dostępność trzymamy binarnie — jest na stanie albo nie ma.
 const availabilityMap: Record<string, string> = {
   available: 'in_stock',
-  'on-order': 'backorder',
+  'on-order': 'out_of_stock',
 }
 
 function escapeXml(str: string): string {
