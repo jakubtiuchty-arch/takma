@@ -322,3 +322,12 @@ Otwarte na kolejne sesje:
 - Dane: GSC quick-winy (zebra zt231 poz11,3 / zt231 poz6,4 / rfid / manual, CTR 0); GA4 86 odsłon, 77% eng, 0 leadów; Ahrefs zebra zt231 119/KD0, zebra zt230 166 (poprzednik), drukarka etykiet przemysłowa 100/CPC70; konkurenci mediana 1729 słów.
 - Fix: 3 FAQ (RFID, vs ZT230 + „drukarka etykiet przemysłowa", instrukcja/manual). Treść 1797→2001. Audyt 29/0, build czysty. Deploy takma-kk0klp92a.
 - seo-data/zt231.json. 4. karta przepuszczona przez pipeline (po MC3400, ZD421T, ZD421D).
+
+## 2026-07-05 — Atrybucja "droga klienta od kliknięcia" + konwersje offline + alerty + GSC w kokpicie
+- **Tracking**: AttributionTracker (cookies takma_attr 90d gclid/UTM/landing + takma_journey sesja, max 15 stron); zapis na Lead (nowy model, /api/contact + /api/inquiry) i Order (createOrder). Schema przez `prisma db push` (NIE migrate — drift).
+- **Wzbogacanie**: resolveGclid (click_view GAQL, okno 90 dni, dni z ±2 offsetem) → kampania/grupa/słowo; AttributionCard (lazy-resolve przy otwarciu) w /admin/zamowienia/[id]; nowa strona /admin/leady (lista+rozwijane szczegóły+ścieżka) + link w Sidebar.
+- **Konwersje offline**: akcja "Zakup (marża) — offline" `conversionActions/7673894850` (UPLOAD_CLICKS, PURCHASE, secondary); cron /api/cron/ads-conversions (5:30 UTC) — PAID+ z gclid ≤60 dni, marża = totalNetto − ingramPriceSnapshot (fallback 80%), partial failure → retry. Test prod OK (0 kandydatów — dane od dziś).
+- **Alerty**: cron /api/cron/alerts (5:45 UTC) — Ads koszt >2× śr. 7d, koszt>50zł przy 0 konw., HTTP check 5 stron, GA4 sesje>30 przy 0 keyEvents; mail Resend tylko gdy coś nie gra. Test prod: alerts:0 OK.
+- **Kokpit GSC**: lib gsc.ts na tym samym SA (webmasters.readonly!) — SA już był siteOwner sc-domain:takma.com.pl; sekcja "Google (wyszukiwarka)" w /s/[id]: kliknięcia/wyświetlenia/pozycja (okno D-9..D-3 vs poprzednie) + top 10 fraz. Bug: rows bez dimensions nie mają `keys` → `r.keys?.[0]`. Pozostałe 4 strony: dodać SA w GSC.
+- Commity: 7fa8a07 (atrybucja), konwersje+alerty, fix escape; kokpit deploy prod.
+- TODO: obserwować pierwsze gclid w leadach/zamówieniach; dodać SA do GSC pozostałych 4 stron.
