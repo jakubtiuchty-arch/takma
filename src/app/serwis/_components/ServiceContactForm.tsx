@@ -5,6 +5,7 @@ import Button from '@/components/ui/Button'
 import Input from '@/components/ui/Input'
 import Textarea from '@/components/ui/Textarea'
 import Turnstile from '@/components/Turnstile'
+import { trackGenerateLead, trackFormSubmit } from '@/lib/ga-events'
 
 export function ServiceContactForm() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
@@ -60,6 +61,8 @@ export function ServiceContactForm() {
         throw new Error(data.error || 'Błąd wysyłania zgłoszenia')
       }
 
+      trackGenerateLead('serwis_kontakt')
+      trackFormSubmit('serwis_kontakt', '/serwis')
       setStatus('success')
       form.reset()
     } catch (err) {
