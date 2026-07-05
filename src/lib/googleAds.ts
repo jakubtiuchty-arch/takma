@@ -309,3 +309,105 @@ export async function resolveGclid(gclid: string, dateHints: Date[]): Promise<Gc
   }
   return null
 }
+
+// --- Konwersje offline (upload marży po opłaceniu zamówienia) ----------------
+
+/** POST do dowolnej metody REST Google Ads (poza googleAds:search). */
+async function adsPost(method: string, body: unknown): Promise<Record<string, unknown>> {
+  const token = await getAccessToken()
+  const cid = process.env.GOOGLE_ADS_CUSTOMER_ID!
+  const loginCid = process.env.GOOGLE_ADS_LOGIN_CUSTOMER_ID
+  const res = await fetch(`https://googleads.googleapis.com/${API_VERSION}/customers/${cid}${method}`, {
+    method: 'POST',
+    headers: {
+      authorization: `Bearer ${token}`,
+      'content-type': 'application/json',
+      'developer-token': process.env.GOOGLE_ADS_DEVELOPER_TOKEN!,
+      ...(loginCid ? { 'login-customer-id': loginCid } : {}),
+    },
+    body: JSON.stringify(body),
+  })
+  if (!res.ok) throw new Error(`Ads ${method} ${res.status}: ${await res.text()}`)
+  return (await res.json()) as Record<string, unknown>
+}
+
+const OFFLINE_CONV_NAME = 'Zakup (marża) — offline'
+let convActionCache: string | null = null
+
+/** Resource name akcji konwersji offline (lookup po nazwie, cache w ciepłej instancji). */
+export async function offlineConversionAction(): Promise<string | null> {
+  if (convActionCache) return convActionCache
+  const rows = (await adsQuery(
+    `SELECT conversion_action.resource_name, conversion_action.name FROM conversion_action WHERE conversion_action.name = '${OFFLINE_CONV_NAME}'`,
+  )) as Array<{ conversionAction?: { resourceName?: string } }>
+  convActionCache = rows[0]?.conversionAction?.resourceName ?? null
+  return convActionCache
+}
+
+/** Format czasu wymagany przez Ads API: 'yyyy-MM-dd HH:mm:ss+HH:mm' w Europe/Warsaw. */
+export function adsDateTime(d: Date): string {
+  const parts = new Intl.DateTimeFormat('sv-SE', {
+    timeZone: 'Europe/Warsaw',
+    year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', second: '2-digit',
+    hour12: false,
+  }).format(d) // 'yyyy-MM-dd HH:mm:ss'
+  // offset Warszawy dla tej daty (CET +01:00 / CEST +02:00)
+  const utcH = new Date(d.toLocaleString('en-US', { timeZone: 'UTC' })).getTime()
+  const plH = new Date(d.toLocaleString('en-US', { timeZone: 'Europe/Warsaw' })).getTime()
+  const offMin = Math.round((plH - utcH) / 60_000)
+  const sign = offMin >= 0 ? '+' : '-'
+  const abs = Math.abs(offMin)
+  const off = `${sign}${String(Math.floor(abs / 60)).padStart(2, '0')}:${String(abs % 60).padStart(2, '0')}`
+  return `${parts}${off}`
+}
+
+export interface ClickConversion {
+  gclid: string
+  conversionDateTime: string // z adsDateTime()
+  conversionValue: number // PLN
+  orderId?: string
+}
+
+export interface ConversionUploadResult {
+  uploaded: number
+  failedIndices: number[]
+  errors: string[]
+}
+
+/** Upload konwersji offline (UploadClickConversions, partial failure). */
+export async function uploadClickConversions(conversions: ClickConversion[]): Promise<ConversionUploadResult> {
+  const action = await offlineConversionAction()
+  if (!action) return { uploaded: 0, failedIndices: conversions.map((_, i) => i), errors: [`Brak akcji konwersji "${OFFLINE_CONV_NAME}" na koncie`] }
+
+  const json = await adsPost(':uploadClickConversions', {
+    conversions: conversions.map((c) => ({
+      gclid: c.gclid,
+      conversionAction: action,
+      conversionDateTime: c.conversionDateTime,
+      conversionValue: c.conversionValue,
+      currencyCode: 'PLN',
+      ...(c.orderId ? { orderId: c.orderId } : {}),
+    })),
+    partialFailure: true,
+  })
+
+  const errors: string[] = []
+  const pfe = json.partialFailureError as { message?: string; details?: Array<{ errors?: Array<{ message?: string; location?: { fieldPathElements?: Array<{ index?: number }> } }> }> } | undefined
+  const failedIdx = new Set<number>()
+  if (pfe?.details) {
+    for (const d of pfe.details) {
+      for (const e of d.errors || []) {
+        const idx = e.location?.fieldPathElements?.find((p) => typeof p.index === 'number')?.index
+        if (typeof idx === 'number') failedIdx.add(idx)
+        errors.push(`[${idx ?? '?'}] ${e.message || 'unknown'}`)
+      }
+    }
+  } else if (pfe?.message) {
+    // globalny błąd bez szczegółów — traktuj wszystko jako nieudane
+    errors.push(pfe.message)
+    conversions.forEach((_, i) => failedIdx.add(i))
+  }
+  const failedIndices = Array.from(failedIdx).sort((a, b) => a - b)
+  return { uploaded: conversions.length - failedIndices.length, failedIndices, errors }
+}

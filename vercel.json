@@ -50,6 +50,10 @@
     {
       "path": "/api/cron/furgonetka-tracking",
       "schedule": "*/30 * * * *"
+    },
+    {
+      "path": "/api/cron/ads-conversions",
+      "schedule": "30 5 * * *"
     }
   ]
 }
