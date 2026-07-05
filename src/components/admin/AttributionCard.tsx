@@ -60,7 +60,7 @@ export default async function AttributionCard({ data }: { data: AttrData }) {
               <p className="text-amber-900 mt-0.5">
                 Kampania: <span className="font-medium">{adsCampaign}</span>
                 {adsAdGroup && <> · grupa: {adsAdGroup}</>}
-                {adsKeyword && <> · słowo: <span className="font-medium">„{adsKeyword}"</span></>}
+                {adsKeyword && <> · słowo: <span className="font-medium">„{adsKeyword}&rdquo;</span></>}
               </p>
             ) : (
               <p className="text-amber-700/70 mt-0.5 text-xs">Kliknięcie reklamy (szczegóły kampanii niedostępne — poza oknem 90 dni)</p>
