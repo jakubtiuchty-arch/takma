@@ -6,22 +6,39 @@ async function getStats() {
   const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate())
   const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000)
 
-  const [ordersToday, ordersWeek, pendingOrders, activeQuotes, totalCustomers] = await Promise.all([
-    prisma.order.count({ where: { createdAt: { gte: todayStart } } }),
-    prisma.order.findMany({
-      where: { createdAt: { gte: weekAgo } },
-      select: { totalBrutto: true },
-    }),
-    prisma.order.count({
-      where: { status: { in: ['PENDING_PAYMENT', 'AWAITING_PAYMENT', 'PROCESSING'] } },
-    }),
-    prisma.quote.count({ where: { status: { in: ['DRAFT', 'SENT'] } } }),
-    prisma.customer.count(),
-  ])
+  const monthAgo = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000)
+  const quarterAgo = new Date(now.getTime() - 91 * 24 * 60 * 60 * 1000)
+  const yearAgo = new Date(now.getTime() - 365 * 24 * 60 * 60 * 1000)
 
-  const weekRevenue = ordersWeek.reduce((sum, o) => sum + o.totalBrutto, 0) / 100
+  const revenueSince = (gte: Date) =>
+    prisma.order.aggregate({ _sum: { totalBrutto: true }, where: { createdAt: { gte } } })
 
-  return { ordersToday, weekRevenue, pendingOrders, activeQuotes, totalCustomers }
+  const [ordersToday, revWeek, revMonth, revQuarter, revYear, pendingOrders, activeQuotes, totalCustomers] =
+    await Promise.all([
+      prisma.order.count({ where: { createdAt: { gte: todayStart } } }),
+      revenueSince(weekAgo),
+      revenueSince(monthAgo),
+      revenueSince(quarterAgo),
+      revenueSince(yearAgo),
+      prisma.order.count({
+        where: { status: { in: ['PENDING_PAYMENT', 'AWAITING_PAYMENT', 'PROCESSING'] } },
+      }),
+      prisma.quote.count({ where: { status: { in: ['DRAFT', 'SENT'] } } }),
+      prisma.customer.count(),
+    ])
+
+  const zl = (sum: { _sum: { totalBrutto: number | null } }) => (sum._sum.totalBrutto ?? 0) / 100
+
+  return {
+    ordersToday,
+    weekRevenue: zl(revWeek),
+    monthRevenue: zl(revMonth),
+    quarterRevenue: zl(revQuarter),
+    yearRevenue: zl(revYear),
+    pendingOrders,
+    activeQuotes,
+    totalCustomers,
+  }
 }
 
 export default async function AdminDashboard() {
@@ -38,6 +55,27 @@ export default async function AdminDashboard() {
     {
       label: 'Obrót (7 dni)',
       value: `${stats.weekRevenue.toLocaleString('pl-PL', { minimumFractionDigits: 2 })} zł`,
+      color: 'bg-green-50 text-green-700',
+      iconColor: 'text-green-500',
+      href: '/admin/zamowienia',
+    },
+    {
+      label: 'Obrót (30 dni)',
+      value: `${stats.monthRevenue.toLocaleString('pl-PL', { minimumFractionDigits: 2 })} zł`,
+      color: 'bg-green-50 text-green-700',
+      iconColor: 'text-green-500',
+      href: '/admin/zamowienia',
+    },
+    {
+      label: 'Obrót (3 miesiące)',
+      value: `${stats.quarterRevenue.toLocaleString('pl-PL', { minimumFractionDigits: 2 })} zł`,
+      color: 'bg-green-50 text-green-700',
+      iconColor: 'text-green-500',
+      href: '/admin/zamowienia',
+    },
+    {
+      label: 'Obrót (12 miesięcy)',
+      value: `${stats.yearRevenue.toLocaleString('pl-PL', { minimumFractionDigits: 2 })} zł`,
       color: 'bg-green-50 text-green-700',
       iconColor: 'text-green-500',
       href: '/admin/zamowienia',
