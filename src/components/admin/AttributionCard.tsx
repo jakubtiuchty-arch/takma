@@ -1,5 +1,5 @@
 import { prisma } from '@/lib/db'
-import { adsConfigured, resolveGclid } from '@/lib/googleAds'
+import { adsConfigured, resolveGclid, clickCost } from '@/lib/googleAds'
 
 interface AttrData {
   id: string
@@ -14,13 +14,14 @@ interface AttrData {
   adsCampaign: string | null
   adsAdGroup: string | null
   adsKeyword: string | null
+  adsClickCost: number | null
   adsResolvedAt: Date | null
   createdAt: Date
 }
 
 /** Karta „Skąd przyszedł klient" — rozwiązuje gclid przy pierwszym wyświetleniu. */
 export default async function AttributionCard({ data }: { data: AttrData }) {
-  let { adsCampaign, adsAdGroup, adsKeyword } = data
+  let { adsCampaign, adsAdGroup, adsKeyword, adsClickCost } = data
 
   // leniwe rozwiązanie gclid → kampania/słowo (raz, wynik do bazy)
   if (data.gclid && !data.adsResolvedAt && adsConfigured()) {
@@ -36,6 +37,19 @@ export default async function AttributionCard({ data }: { data: AttrData }) {
       else await prisma.lead.update({ where: { id: data.id }, data: upd })
       adsCampaign = upd.adsCampaign; adsAdGroup = upd.adsAdGroup; adsKeyword = upd.adsKeyword
     } catch { /* pokaż co mamy */ }
+  }
+
+  // leniwe dociągnięcie kosztu kliknięcia (śr. CPC frazy/grupy w dniu kliknięcia)
+  if (adsCampaign && adsClickCost == null && adsConfigured()) {
+    const cc = await clickCost(adsCampaign, adsAdGroup, adsKeyword, [data.gclidAt ?? data.createdAt, data.createdAt]).catch(() => null)
+    if (cc) {
+      adsClickCost = cc.costGrosze
+      const updCost = { adsClickCost: cc.costGrosze }
+      try {
+        if (data.kind === 'order') await prisma.order.update({ where: { id: data.id }, data: updCost })
+        else await prisma.lead.update({ where: { id: data.id }, data: updCost })
+      } catch { /* pokaż bez zapisu */ }
+    }
   }
 
   const journey: string[] = (() => { try { return JSON.parse(data.journey || '[]') } catch { return [] } })()
@@ -61,6 +75,9 @@ export default async function AttributionCard({ data }: { data: AttrData }) {
                 Kampania: <span className="font-medium">{adsCampaign}</span>
                 {adsAdGroup && <> · grupa: {adsAdGroup}</>}
                 {adsKeyword && <> · słowo: <span className="font-medium">„{adsKeyword}&rdquo;</span></>}
+                {adsClickCost != null && (
+                  <> · kliknięcie: <span className="font-semibold">{(adsClickCost / 100).toLocaleString('pl-PL', { minimumFractionDigits: 2 })} zł</span></>
+                )}
               </p>
             ) : (
               <p className="text-amber-700/70 mt-0.5 text-xs">Kliknięcie reklamy (szczegóły kampanii niedostępne — poza oknem 90 dni)</p>

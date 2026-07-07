@@ -411,3 +411,48 @@ export async function uploadClickConversions(conversions: ClickConversion[]): Pr
   const failedIndices = Array.from(failedIdx).sort((a, b) => a - b)
   return { uploaded: conversions.length - failedIndices.length, failedIndices, errors }
 }
+
+/** Koszt kliknięcia: koszt/kliknięcia frazy (lub grupy — np. DSA) w dniu kliknięcia.
+ *  Przy 1 kliknięciu dziennie = dokładny koszt; przy większej liczbie — średni CPC. */
+export async function clickCost(
+  campaign: string,
+  adGroup: string | null,
+  keyword: string | null,
+  dateHints: Date[],
+): Promise<{ costGrosze: number; clicks: number } | null> {
+  const days = new Set<string>()
+  for (const d of dateHints) {
+    if (!d) continue
+    for (const off of [0, -1, -2]) {
+      const x = new Date(d)
+      x.setDate(x.getDate() + off)
+      days.add(x.toISOString().slice(0, 10))
+    }
+  }
+  const esc = (s: string) => s.replace(/'/g, "\\'")
+  for (const day of Array.from(days).slice(0, 6)) {
+    try {
+      const rows = keyword
+        ? await adsQuery(`
+            SELECT metrics.cost_micros, metrics.clicks
+            FROM keyword_view
+            WHERE segments.date = '${day}'
+              AND campaign.name = '${esc(campaign)}'
+              AND ad_group_criterion.keyword.text = '${esc(keyword)}'`)
+        : await adsQuery(`
+            SELECT metrics.cost_micros, metrics.clicks
+            FROM ad_group
+            WHERE segments.date = '${day}'
+              AND campaign.name = '${esc(campaign)}'
+              ${adGroup ? `AND ad_group.name = '${esc(adGroup)}'` : ''}`)
+      let cost = 0
+      let clicks = 0
+      for (const r of rows) {
+        cost += Number(r.metrics?.costMicros || 0)
+        clicks += Number(r.metrics?.clicks || 0)
+      }
+      if (clicks > 0) return { costGrosze: Math.round(cost / clicks / 10_000), clicks }
+    } catch { /* następny dzień */ }
+  }
+  return null
+}

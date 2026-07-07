@@ -267,7 +267,7 @@ export default async function OrderDetailPage({ params }: PageProps) {
               gclid: order.gclid, gclidAt: order.gclidAt,
               utmSource: order.utmSource, utmMedium: order.utmMedium, utmCampaign: order.utmCampaign,
               landingPage: order.landingPage, journey: order.journey,
-              adsCampaign: order.adsCampaign, adsAdGroup: order.adsAdGroup, adsKeyword: order.adsKeyword,
+              adsCampaign: order.adsCampaign, adsAdGroup: order.adsAdGroup, adsKeyword: order.adsKeyword, adsClickCost: order.adsClickCost,
               adsResolvedAt: order.adsResolvedAt, createdAt: order.createdAt,
             }} />
           </div>

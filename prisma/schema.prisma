@@ -154,6 +154,7 @@ model Order {
   adsCampaign       String? // rozwiązane z click_view
   adsAdGroup        String?
   adsKeyword        String?
+  adsClickCost Int?
   adsResolvedAt     DateTime?
   adsConvUploadedAt DateTime? // kiedy wysłano konwersję offline (marża) do Google Ads
 
@@ -830,10 +831,26 @@ model Lead {
   adsCampaign   String?
   adsAdGroup    String?
   adsKeyword    String?
+  adsClickCost Int?
   adsResolvedAt DateTime?
 
   createdAt DateTime @default(now())
 
   @@index([createdAt])
   @@index([gclid])
+}
+
+// Tabela agenta AI kokpitu (kokpit-lyart.vercel.app) — pisana przez kokpit przez `pg`,
+// tu zamapowana tylko po to, żeby `db push` jej nie kasował.
+model KokpitAiDigest {
+  id        Int      @id @default(autoincrement())
+  site      String
+  kind      String
+  periodEnd DateTime @map("period_end") @db.Date
+  content   String
+  urgent    String?
+  createdAt DateTime? @default(now()) @map("created_at") @db.Timestamptz(6)
+
+  @@unique([site, kind, periodEnd])
+  @@map("kokpit_ai_digest")
 }
