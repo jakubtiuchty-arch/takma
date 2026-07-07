@@ -337,3 +337,7 @@ Otwarte na kolejne sesje:
 - **Porównania jako wpisy bloga (NIE COMMITOWANE, working tree!)**: 2 wpisy w `src/data/guides.ts` (kategoria porownanie, slugi honeywell-ct32-vs-zebra-tc22 i honeywell-pc45d-vs-zebra-zd421d, styl 1:1 jak wpis Brother RJ vs ZQ521) + hero z Higgsfield (nano_banana_pro, referencje = zdjęcia produktów z repo, 1584×672 webp w public/images/guides/). Standalone /porownania usunięte. WDROŻONE 7.07 wieczorem: wpisy na prodzie (200), grupa porównań podzielona na terminale (198082567413) i drukarki, RSA z landingami /poradnik/<slug>, obie grupy ENABLED. Hero v2 (TC22 wierny referencji), treść SEO-first (zdjęcia produktów, sekcje zastosowań, FAQ ×7).
 - Dodane 6 grup przemysłowych (2026-07-07 po południu): PM45, PM65, PD45, PX940 (weryfikator!), PX45, PX65 — słowa PHRASE + RSA per model.
 - Kontekst decyzji: marża Honeywell > Zebra; NIE bijemy w czyste frazy modelowe Zebry (jedno konto = jeden slot, kanibalizacja własnych reklam TC22/ZD421).
+
+## 2026-07-07 (późny wieczór) — trzecia para porównawcza w Ads
+- Grupa "Porównania drukarki TT (PC45t vs ZD421t)" w kampanii Honeywell: 5 fraz PHRASE (m.in. "zamiennik zebra gk420t") + RSA → istniejący wpis /poradnik/zebra-zd421t-vs-honeywell-pc45t. Sitelink "ZD421t czy PC45t?" (asset 387735147080) dopięty do grup ZD421 + drukarki zebra.
+- TODO przy następnej edycji bloga: linki krzyżowe między wpisami porównań d↔t.
