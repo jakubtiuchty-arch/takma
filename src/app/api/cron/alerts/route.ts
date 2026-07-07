@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { sendEmail } from '@/lib/email'
+import { prisma } from '@/lib/db'
 import { adsConfigured, adsQuery } from '@/lib/googleAds'
 import { gaConfigured, getGoogleAccessToken } from '@/lib/ga'
 
@@ -71,6 +72,19 @@ async function checkSites(alerts: string[]) {
   )
 }
 
+async function checkOnlinePayments(alerts: string[]) {
+  // płatności online: ≥2 zamówienia ONLINE wiszące w PENDING_PAYMENT z ost. 24h
+  // przy zerze opłaconych w tym oknie = prawdopodobna awaria ścieżki P24
+  const since = new Date(Date.now() - 24 * 3600 * 1000)
+  const [pending, paid] = await Promise.all([
+    prisma.order.count({ where: { paymentMethod: 'ONLINE', status: 'PENDING_PAYMENT', createdAt: { gte: since } } }),
+    prisma.order.count({ where: { paymentMethod: 'ONLINE', paidAt: { gte: since } } }),
+  ])
+  if (pending >= 2 && paid === 0) {
+    alerts.push(`Płatności online: ${pending} zamówień z ost. 24h wisi w PENDING_PAYMENT i ŻADNE nie zostało opłacone — sprawdź Przelewy24 (panel P24, webhook).`)
+  }
+}
+
 async function checkGaEvents(alerts: string[]) {
   if (!gaConfigured()) return
   const token = await getGoogleAccessToken()
@@ -108,6 +122,7 @@ export async function GET(request: NextRequest) {
   await Promise.all([
     checkAds(alerts).catch((e) => alerts.push(`Nie udało się sprawdzić Google Ads: ${e instanceof Error ? e.message.slice(0, 200) : e}`)),
     checkSites(alerts),
+    checkOnlinePayments(alerts).catch((e) => alerts.push(`Nie udało się sprawdzić płatności online: ${e instanceof Error ? e.message.slice(0, 200) : e}`)),
     checkGaEvents(alerts).catch((e) => alerts.push(`Nie udało się sprawdzić GA4: ${e instanceof Error ? e.message.slice(0, 200) : e}`)),
   ])
 
