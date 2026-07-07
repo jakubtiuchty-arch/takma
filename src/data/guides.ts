@@ -14283,6 +14283,251 @@ export const guides: Guide[] = [
     { title: 'Etykiety termiczne czy termotransferowe?', href: '/poradnik/etykiety-termiczne-czy-termotransferowe' },
   ],
 },
+{
+  slug: 'honeywell-ct32-vs-zebra-tc22',
+  title: 'Honeywell CT32 vs Zebra TC22 — który terminal wybrać?',
+  seoTitle: 'Honeywell CT32 vs Zebra TC22 — porównanie terminali mobilnych 2026',
+  seoDescription: 'Porównanie terminali Honeywell CT32 i Zebra TC22: procesor, wsparcie Androida (18 vs 16), skaner FlexRange 11 m, bateria, Wi-Fi 6E, warianty 5G. Który kolektor danych wybrać do magazynu, logistyki i handlu.',
+  excerpt: 'Honeywell CT32 daje więcej sprzętu w standardzie i dwa lata dłuższe wsparcie systemu — mocniejszy procesor, zawsze 128 GB pamięci, większa bateria i Android aktualizowany do wersji 18. Zebra TC22 wygrywa niższą ceną startową i lepszą kamerą główną. Porównujemy oba terminale klasy podstawowej parametr po parametrze.',
+  category: 'porownanie' as const,
+  tags: ['terminale-mobilne', 'porownanie', 'honeywell', 'zebra', 'ct32', 'tc22', 'kolektor-danych'],
+  publishedAt: '2026-07-07',
+  updatedAt: '2026-07-07',
+  readTime: '9 min',
+  heroImage: '/images/guides/honeywell-ct32-vs-zebra-tc22.webp',
+  heroImageAlt: 'Terminale Honeywell CT32 i Zebra TC22 obok siebie w magazynie — porównanie',
+  sections: [
+    {
+      id: 'tldr',
+      heading: 'Honeywell CT32 vs Zebra TC22 — TL;DR',
+      content: `
+<p><strong>Honeywell CT32</strong> daje więcej sprzętu w standardzie i dwa lata dłuższe wsparcie systemu — mocniejszy procesor, zawsze 128 GB pamięci, większa bateria i Android aktualizowany do wersji 18. <strong>Zebra TC22</strong> wygrywa niższą ceną startową i lepszą kamerą główną. Oba to solidne terminale klasy podstawowej do magazynu, logistyki i handlu.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:20px 0">
+<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px">
+<p><strong>Wybierz Honeywell CT32, jeśli:</strong></p>
+<ul>
+<li>planujesz używać terminali 5–7 lat — wsparcie do Androida 18 realnie wydłuża cykl życia,</li>
+<li>skanujesz z odległości (regały wysokiego składowania) — FlexRange czyta kody z 11 metrów,</li>
+<li>praca zmianowa wymaga baterii hot-swap o większej pojemności w standardzie,</li>
+<li>potrzebujesz wariantu 5G z eSIM bez przesiadki na wyższy model.</li>
+</ul>
+</div>
+<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px">
+<p><strong>Wybierz Zebra TC22, jeśli:</strong></p>
+<ul>
+<li>budżet na sztukę jest twardym ograniczeniem — TC22 startuje z niższej półki cenowej,</li>
+<li>robisz dokumentację zdjęciową uszkodzeń — kamera 16 MP robi wyraźnie lepsze zdjęcia,</li>
+<li>masz już wdrożony ekosystem Zebry (DataWedge, StageNow, wspólne akcesoria),</li>
+<li>wystarcza Ci praca wyłącznie w zasięgu Wi-Fi.</li>
+</ul>
+</div>
+</div>`,
+    },
+    {
+      id: 'specyfikacje',
+      heading: 'Specyfikacje obok siebie',
+      content: `
+<table>
+<thead><tr><th>Parametr</th><th>Honeywell CT32</th><th>Zebra TC22</th></tr></thead>
+<tbody>
+<tr><td>Procesor</td><td>Qualcomm QCS4490, 8 rdzeni, do 2,4 GHz</td><td>Qualcomm 5430, 6 rdzeni, 2,1 GHz</td></tr>
+<tr><td>System i wsparcie</td><td><strong>Android 14, aktualizacje do Androida 18</strong></td><td>Android, aktualizacje do Androida 16</td></tr>
+<tr><td>Pamięć</td><td>6 lub 8 GB RAM, zawsze 128 GB flash</td><td>6 GB/64 GB lub 8 GB/128 GB</td></tr>
+<tr><td>Wyświetlacz</td><td>6,0″ FHD, 450 nitów, Gorilla Glass 5</td><td>6,0″ FHD+, 450 nitów, Gorilla Glass</td></tr>
+<tr><td>Skaner (opcja zasięgowa)</td><td><strong>FlexRange S0803 — odczyt do 11 m</strong></td><td>SE55 Advanced Range</td></tr>
+<tr><td>Bateria standardowa</td><td><strong>4 500 mAh, hot-swap, Quick Charge 4.0</strong></td><td>3 800 mAh, hot-swap (opcja 5 200 mAh)</td></tr>
+<tr><td>Kamera tył / przód</td><td>13 MP / 8 MP</td><td><strong>16 MP</strong> / 5 MP</td></tr>
+<tr><td>Łączność</td><td>Wi-Fi 6E, Bluetooth 5.3, NFC</td><td>Wi-Fi 6/6E, Bluetooth 5.2, NFC</td></tr>
+<tr><td>Wersja komórkowa</td><td><strong>5G w wariantach X1N (eSIM + nano SIM)</strong></td><td>Tylko Wi-Fi — wersją komórkową jest TC27</td></tr>
+<tr><td>GPS</td><td>Dwuzakresowy GNSS (L1+L5)</td><td>GNSS</td></tr>
+</tbody>
+</table>`,
+    },
+    {
+      id: 'urzadzenia',
+      heading: 'Honeywell CT32 i Zebra TC22 z bliska',
+      content: `
+<div style="display:flex;gap:32px;flex-wrap:wrap;margin-bottom:24px;justify-content:center;align-items:flex-end">
+<div style="min-width:180px;text-align:center;display:flex;flex-direction:column;align-items:center">
+<img src="/images/products/ct32_1.png" alt="Honeywell CT32 — terminal mobilny (kolektor danych) z ekranem 6 cali, Android 14 ze wsparciem do Androida 18" style="max-height:220px;margin:0 auto" loading="lazy" />
+<p><strong>Honeywell CT32</strong><br/>ekran 6″ FHD, Android 14→18, bateria 4 500 mAh</p>
+</div>
+<div style="min-width:180px;text-align:center;display:flex;flex-direction:column;align-items:center">
+<img src="/images/products/tc22_front.png" alt="Zebra TC22 — terminal mobilny (kolektor danych) z ekranem 6 cali FHD+ i skanerem SE4710" style="max-height:220px;margin:0 auto" loading="lazy" />
+<p><strong>Zebra TC22</strong><br/>ekran 6″ FHD+, Android →16, skaner SE4710/SE55</p>
+</div>
+</div>
+<p>Oba terminale celują w ten sam segment: <strong>kolektor danych klasy podstawowej</strong> do magazynu, logistyki, produkcji i handlu — następcy popularnych EDA52 (Honeywell) i TC21 (Zebra). Formatem przypominają wzmocniony smartfon: ekran 6 cali, skanowanie przyciskami bocznymi, wymienna bateria hot-swap. Różnice zaczynają się w środku — i to one decydują, który model będzie tańszy w całym cyklu życia, a nie tylko na fakturze zakupowej.</p>`,
+    },
+    {
+      id: 'roznice-w-pracy',
+      heading: 'Trzy różnice, które czuć w pracy',
+      content: `
+<p><strong>Wsparcie systemu to ukryty koszt, o którym mało kto myśli przy zakupie.</strong> CT32 dostanie aktualizacje do Androida 18, TC22 — do 16. W praktyce oznacza to około dwóch lat różnicy w momencie, w którym urządzenie przestaje spełniać wymogi bezpieczeństwa korporacyjnego MDM. Przy flocie 20 terminali odsunięcie wymiany o dwa lata robi realną różnicę w budżecie.</p>
+<p><strong>Zasięg skanowania decyduje o tym, czy pracownik schodzi z wózka.</strong> Opcjonalny FlexRange w CT32 czyta kody z 11 metrów — etykiety na najwyższych poziomach regałów skanuje się z podłogi. Zebra ma odpowiedź w postaci skanera SE55, ale to opcja podnosząca cenę TC22, co zmniejsza różnicę cenową między modelami.</p>
+<p><strong>Bateria w standardzie kontra bateria za dopłatą.</strong> CT32 ma w bazowej konfiguracji 4 500 mAh — realnie pełna zmiana robocza. W TC22 standard to 3 800 mAh, a rozszerzona bateria 5 200 mAh oznacza dopłatę i grubszą obudowę.</p>`,
+    },
+    {
+      id: 'zastosowania',
+      heading: 'Który terminal do magazynu, logistyki i sklepu?',
+      content: `
+<p><strong>Magazyn wysokiego składowania:</strong> przewaga CT32 — opcjonalny skaner FlexRange odczytuje etykiety z 11 metrów, więc operator wózka nie schodzi na poziom zero, żeby zeskanować kod z najwyższej półki. U Zebry podobną rolę pełni skaner SE55, ale podnosi cenę TC22 na tyle, że różnica między modelami maleje.</p>
+<p><strong>Kurier, serwis terenowy, praca poza budynkiem:</strong> tu TC22 odpada z definicji — występuje wyłącznie w wersji Wi-Fi. Honeywell CT32 ma warianty 5G z eSIM w tej samej linii; u Zebry trzeba przeskoczyć na droższy model TC27.</p>
+<p><strong>Sklep i inwentaryzacja:</strong> oba modele sprawdzą się tak samo dobrze — decyduje cena zakupu (przewaga TC22) kontra długość wsparcia systemu (przewaga CT32). Przy 2–3-letniej rotacji sprzętu TC22 będzie racjonalniejszy; przy flocie planowanej na 5 i więcej lat rachunek odwraca się na korzyść CT32.</p>
+<p><strong>Dokumentacja zdjęciowa (dowody dostawy, uszkodzenia):</strong> kamera 16 MP w TC22 robi zauważalnie ostrzejsze zdjęcia niż 13 MP w CT32 — jeśli zdjęcia są rdzeniem procesu, punkt dla Zebry.</p>
+<p><strong>Migracja z floty Zebry:</strong> aplikacje WMS działają na obu (standardowy Android). Przy przesiadce odtwarzamy profil skanowania DataWedge w Honeywell Mobility Edge 1:1 — pracownicy nie zauważają różnicy w obsłudze. Wymiany wymagają za to akcesoria: stacje dokujące i uchwyty samochodowe nie są kompatybilne między markami.</p>`,
+    },
+  ],
+  faq: [
+    {
+      question: 'Czy Honeywell CT32 zadziała z systemem WMS napisanym pod terminale Zebry?',
+      answer: 'Tak. Obie platformy to standardowy Android — aplikacje WMS działają na obu. Różnice dotyczą narzędzi wdrożeniowych (Honeywell Mobility Edge zamiast Zebra StageNow); przy migracji pomagamy skonfigurować profil skanowania 1:1.',
+    },
+    {
+      question: 'Który terminal jest tańszy w zakupie — CT32 czy TC22?',
+      answer: 'Niższą cenę startową ma Zebra TC22. Aktualne ceny obu modeli sprawdzisz na kartach produktów — pokazujemy je na żywo z dystrybucji.',
+    },
+    {
+      question: 'Potrzebuję łączności komórkowej poza magazynem. Który wybrać?',
+      answer: 'Honeywell CT32 ma warianty 5G z eSIM w tej samej linii produktowej. U Zebry TC22 występuje wyłącznie w wersji Wi-Fi — modelem komórkowym jest osobny TC27.',
+    },
+    {
+      question: 'Jaki skaner wybrać w Honeywell CT32 — Standard Range czy FlexRange?',
+      answer: 'Standard Range (S0703) wystarcza do skanowania z ręki na dystansie do ok. 1 m — sklep, inwentaryzacja, przyjęcia. FlexRange (S0803) czyta kody od bliska i z odległości do 11 m — wybierz go, jeśli operatorzy skanują etykiety z wózków widłowych albo z wysokich regałów.',
+    },
+    {
+      question: 'Czy Zebra TC22 i Honeywell CT32 mają wymienną baterię?',
+      answer: 'Tak, oba terminale mają baterie wymienne w trybie hot-swap — można zmienić baterię bez wyłączania urządzenia i wylogowywania z aplikacji. CT32 ma w standardzie 4 500 mAh, TC22 — 3 800 mAh (opcjonalnie 5 200 mAh).',
+    },
+    {
+      question: 'Do kiedy będą wspierane CT32 i TC22?',
+      answer: 'Honeywell deklaruje aktualizacje CT32 do Androida 18 (platforma Mobility Edge), Zebra dla TC22 — do Androida 16. W praktyce CT32 zostanie dłużej zgodny z wymogami bezpieczeństwa MDM, co wydłuża sensowny okres eksploatacji floty.',
+    },
+  ],
+  relatedLinks: [
+    { title: 'Honeywell CT32 — cena i warianty', href: '/produkt/honeywell-ct32' },
+    { title: 'Zebra TC22 — cena i warianty', href: '/produkt/zebra-tc22' },
+    { title: 'Jak wybrać terminal mobilny — przewodnik 2026', href: '/poradnik/jak-wybrac-terminal-mobilny' },
+  ],
+},
+{
+  slug: 'honeywell-pc45d-vs-zebra-zd421d',
+  title: 'Honeywell PC45d vs Zebra ZD421d — którą drukarkę etykiet wybrać?',
+  seoTitle: 'Honeywell PC45d vs Zebra ZD421d — porównanie drukarek etykiet',
+  seoDescription: 'Porównanie biurkowych drukarek etykiet Honeywell PC45d i Zebra ZD421d: Ethernet w standardzie, ekran dotykowy, prędkość druku 203 vs 152 mm/s, języki ZPL/DPL, opcja 300 dpi. Co wybrać do biura, magazynu i e-commerce.',
+  excerpt: 'Honeywell PC45d daje w standardzie to, za co u Zebry się dopłaca — Ethernet, kolorowy ekran dotykowy i szybszy druk — a dzięki obsłudze ZPL-II podmieni drukarkę Zebry bez zmiany ani linijki w systemie. Zebra ZD421d wygrywa opcją 300 dpi i ekosystemem Link-OS. Porównujemy obie biurkowe drukarki termiczne.',
+  category: 'porownanie' as const,
+  tags: ['drukarki-etykiet', 'porownanie', 'honeywell', 'zebra', 'pc45d', 'zd421d', 'biurkowe'],
+  publishedAt: '2026-07-07',
+  updatedAt: '2026-07-07',
+  readTime: '8 min',
+  heroImage: '/images/guides/honeywell-pc45d-vs-zebra-zd421d.webp',
+  heroImageAlt: 'Drukarki etykiet Honeywell PC45d i Zebra ZD421d obok siebie na stanowisku pakowania',
+  sections: [
+    {
+      id: 'tldr',
+      heading: 'Honeywell PC45d vs Zebra ZD421d — TL;DR',
+      content: `
+<p><strong>Honeywell PC45d</strong> daje w standardzie to, za co u Zebry się dopłaca — Ethernet, kolorowy ekran dotykowy i szybszy druk — a dzięki obsłudze ZPL-II podmienisz nią drukarkę Zebry bez zmiany ani linijki w systemie. <strong>Zebra ZD421d</strong> wygrywa opcją 300 dpi (drobne etykiety, małe kody) i ekosystemem Link-OS. Obie to biurkowe drukarki termiczne tej samej klasy.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:20px 0">
+<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px">
+<p><strong>Wybierz Honeywell PC45d, jeśli:</strong></p>
+<ul>
+<li>drukarka ma stać w sieci — Ethernet jest w standardzie, bez dopłat,</li>
+<li>obsługują ją różni pracownicy — ekran dotykowy pokazuje status i błędy po ludzku,</li>
+<li>drukujesz dużo w godzinach szczytu — 203 mm/s to o jedną trzecią szybciej,</li>
+<li>wymieniasz starszą drukarkę Zebry lub Datamax — PC45d rozumie ZPL-II, DPL i IPL.</li>
+</ul>
+</div>
+<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px">
+<p><strong>Wybierz Zebra ZD421d, jeśli:</strong></p>
+<ul>
+<li>drukujesz bardzo małe etykiety z drobnymi kodami — wariant 300 dpi robi różnicę,</li>
+<li>drukujesz długie etykiety logistyczne — ZD421d obsługuje media do 991 mm,</li>
+<li>zarządzasz flotą drukarek przez Zebra Link-OS / Printer Profile Manager,</li>
+<li>standaryzujesz park urządzeń na jednej marce z istniejącymi Zebrami.</li>
+</ul>
+</div>
+</div>`,
+    },
+    {
+      id: 'specyfikacje',
+      heading: 'Specyfikacje obok siebie',
+      content: `
+<table>
+<thead><tr><th>Parametr</th><th>Honeywell PC45d</th><th>Zebra ZD421d</th></tr></thead>
+<tbody>
+<tr><td>Metoda druku</td><td>Termiczna bezpośrednia</td><td>Termiczna bezpośrednia</td></tr>
+<tr><td>Rozdzielczość</td><td>203 dpi</td><td>203 dpi lub <strong>300 dpi</strong></td></tr>
+<tr><td>Prędkość druku</td><td><strong>do 203 mm/s</strong></td><td>do 152 mm/s (203 dpi)</td></tr>
+<tr><td>Szerokość druku</td><td>do 108 mm</td><td>do 104 mm</td></tr>
+<tr><td>Szerokość mediów</td><td>19–118 mm</td><td>15–108 mm</td></tr>
+<tr><td>Wyświetlacz</td><td><strong>Kolorowy dotykowy LCD 3,5″</strong></td><td>Diody LED i przyciski (bez ekranu)</td></tr>
+<tr><td>Ethernet</td><td><strong>W standardzie (10/100)</strong></td><td>Opcja</td></tr>
+<tr><td>USB / USB Host</td><td>W standardzie</td><td>W standardzie</td></tr>
+<tr><td>Wi-Fi (opcja)</td><td>Wi-Fi 6 (802.11ax)</td><td>802.11ac</td></tr>
+<tr><td>Języki druku</td><td><strong>ZPL-II, DPL, IPL, DP, XML, PDF</strong></td><td>ZPL II, EPL2, PDF Direct</td></tr>
+<tr><td>Pamięć</td><td>512 MB flash / 256 MB RAM</td><td>512 MB flash / 256 MB RAM</td></tr>
+</tbody>
+</table>`,
+    },
+    {
+      id: 'urzadzenia',
+      heading: 'Honeywell PC45d i Zebra ZD421d z bliska',
+      content: `
+<div style="display:flex;gap:32px;flex-wrap:wrap;margin-bottom:24px;justify-content:center;align-items:flex-end">
+<div style="min-width:180px;text-align:center;display:flex;flex-direction:column;align-items:center">
+<img src="/images/products/pc45d_1.png" alt="Honeywell PC45d — biurkowa drukarka etykiet termiczna 203 dpi z kolorowym ekranem dotykowym i Ethernetem" style="max-height:200px;margin:0 auto" loading="lazy" />
+<p><strong>Honeywell PC45d</strong><br/>ekran dotykowy 3,5″, Ethernet w standardzie, 203 mm/s</p>
+</div>
+<div style="min-width:180px;text-align:center;display:flex;flex-direction:column;align-items:center">
+<img src="/images/products/zd421d_1_s.png" alt="Zebra ZD421d — biurkowa drukarka etykiet termiczna 203/300 dpi z systemem Link-OS" style="max-height:200px;margin:0 auto" loading="lazy" />
+<p><strong>Zebra ZD421d</strong><br/>203 lub 300 dpi, Link-OS, media do 991 mm</p>
+</div>
+</div>
+<p>Obie to <strong>biurkowe drukarki etykiet termicznych</strong> (bez taśmy barwiącej) do e-commerce, magazynu, punktów nadań i gastronomii: etykiety kurierskie, adresowe, cenowe i logistyczne do ok. 104–108 mm szerokości. To najczęściej kupowana klasa drukarek etykiet w Polsce — i najczęstszy dylemat przy wymianie starszej Zebry GK420d/ZD420.</p>`,
+    },
+    {
+      id: 'przed-zakupem',
+      heading: 'Na co zwrócić uwagę przed zakupem',
+      content: `
+<p><strong>Migracja bez dotykania systemu.</strong> Najczęstszy scenariusz zakupu PC45d to wymiana wysłużonej drukarki Zebry. Ponieważ PC45d natywnie rozumie ZPL-II, system wysyła dokładnie te same wydruki — podłączasz, wskazujesz adres IP i drukujesz. To samo dotyczy szablonów etykiet: nie trzeba niczego projektować od nowa.</p>
+<p><strong>Ekran zmienia codzienną obsługę.</strong> Na kolorowym dotykowym LCD widać wprost komunikat „brak etykiet" czy „otwarta pokrywa". W ZD421d stan drukarki odczytuje się z diod — wystarczające przy jednym operatorze, uciążliwe, gdy do drukarki podchodzi cała zmiana.</p>
+<p><strong>300 dpi tylko u Zebry.</strong> Jeśli drukujesz etykiety poniżej 25 mm szerokości albo kody Data Matrix na elektronice, wariant ZD421d w 300 dpi jest w tej parze jedynym wyborem — PC45d występuje wyłącznie w 203 dpi.</p>`,
+    },
+  ],
+  faq: [
+    {
+      question: 'Czy PC45d zadziała z etykietami, których używam w Zebrze?',
+      answer: 'Tak — obie drukarki przyjmują standardowe etykiety termiczne do około 108 mm szerokości. PC45d akceptuje nawet nieco szersze media (do 118 mm).',
+    },
+    {
+      question: 'Która drukarka jest tańsza — PC45d czy ZD421d?',
+      answer: 'To ta sama półka cenowa — różnice zależą od konfiguracji (interfejsy, rozdzielczość). Aktualne ceny obu modeli pokazujemy na żywo na kartach produktów.',
+    },
+    {
+      question: 'Potrzebuję druku termotransferowego (z taśmą barwiącą). Co wtedy?',
+      answer: 'Odpowiednikami są Honeywell PC45t i Zebra ZD421t — układ różnic między nimi jest ten sam co w parze PC45d/ZD421d.',
+    },
+    {
+      question: 'Czy PC45d wydrukuje etykiety kurierskie InPost, DPD i DHL?',
+      answer: 'Tak — standardowe etykiety kurierskie 100×150 mm to typowa praca dla obu drukarek. PC45d drukuje je szybciej (do 203 mm/s), co czuć przy seriach kilkudziesięciu paczek dziennie.',
+    },
+    {
+      question: 'Czy Honeywell PC45d zastąpi starą Zebrę GK420d bez zmian w systemie?',
+      answer: 'Tak — PC45d natywnie obsługuje język ZPL-II, więc system wysyła te same polecenia wydruku co do Zebry. Podłączasz drukarkę, wskazujesz port lub adres IP i drukujesz bez przerabiania szablonów.',
+    },
+    {
+      question: 'Kiedy warto dopłacić do wersji 300 dpi?',
+      answer: 'Gdy drukujesz etykiety węższe niż ok. 25 mm, drobne kody Data Matrix (elektronika, farmacja) albo małe czcionki na etykietach produktowych. W tej parze 300 dpi oferuje wyłącznie Zebra ZD421d.',
+    },
+  ],
+  relatedLinks: [
+    { title: 'Honeywell PC45d — cena i warianty', href: '/produkt/honeywell-pc45d' },
+    { title: 'Zebra ZD421d — cena i warianty', href: '/produkt/zebra-zd421d' },
+    { title: 'Drukarka termiczna czy termotransferowa — różnice', href: '/poradnik/drukarka-termiczna-vs-termotransferowa' },
+  ],
+},
 ]
 
 // Helper functions

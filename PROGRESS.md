@@ -331,3 +331,9 @@ Otwarte na kolejne sesje:
 - **Kokpit GSC**: lib gsc.ts na tym samym SA (webmasters.readonly!) — SA już był siteOwner sc-domain:takma.com.pl; sekcja "Google (wyszukiwarka)" w /s/[id]: kliknięcia/wyświetlenia/pozycja (okno D-9..D-3 vs poprzednie) + top 10 fraz. Bug: rows bez dimensions nie mają `keys` → `r.keys?.[0]`. Pozostałe 4 strony: dodać SA w GSC.
 - Commity: 7fa8a07 (atrybucja), konwersje+alerty, fix escape; kokpit deploy prod.
 - TODO: obserwować pierwsze gclid w leadach/zamówieniach; dodać SA do GSC pozostałych 4 stron.
+
+## 2026-07-07 — kampania Honeywell + strony porównań (DRAFT na localhost)
+- **Ads**: kampania "Honeywell — terminale i drukarki [API]" (id 24010303919, budżet 15 zł/dz, Maximize Clicks z sufitem CPC 5 zł, PL+polski): grupy CT32/CT47/PC45d/PC45t z RSA i słowami PHRASE; grupa "Porównania Zebra→Honeywell" ZAPAUZOWANA (7 słów, bez reklam) — czeka na akceptację stron porównań. Wykluczenia kampanii: serwis/naprawa/sterowniki/instrukcja/używany/olx/allegro.
+- **Porównania jako wpisy bloga (NIE COMMITOWANE, working tree!)**: 2 wpisy w `src/data/guides.ts` (kategoria porownanie, slugi honeywell-ct32-vs-zebra-tc22 i honeywell-pc45d-vs-zebra-zd421d, styl 1:1 jak wpis Brother RJ vs ZQ521) + hero z Higgsfield (nano_banana_pro, referencje = zdjęcia produktów z repo, 1584×672 webp w public/images/guides/). Standalone /porownania usunięte. Po akceptacji: commit+push, RSA do grupy porównań (final URL = /poradnik/<slug>) i odpauzowanie grupy.
+- Dodane 6 grup przemysłowych (2026-07-07 po południu): PM45, PM65, PD45, PX940 (weryfikator!), PX45, PX65 — słowa PHRASE + RSA per model.
+- Kontekst decyzji: marża Honeywell > Zebra; NIE bijemy w czyste frazy modelowe Zebry (jedno konto = jeden slot, kanibalizacja własnych reklam TC22/ZD421).
