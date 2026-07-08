@@ -19,11 +19,16 @@ export async function readAttribution(): Promise<Attribution> {
   try {
     const store = await cookies()
     const attrRaw = store.get('takma_attr')?.value
+    const srcRaw = store.get('takma_src')?.value
     const journeyRaw = store.get('takma_journey')?.value
 
     let attr: Partial<Attribution> & { ts?: number } = {}
     if (attrRaw) {
       try { attr = JSON.parse(attrRaw) } catch { /* uszkodzone — pomiń */ }
+    }
+    // fallback: źródło sesji z referrera (organic/direct/referral) — gdy brak płatnej atrybucji
+    if (!attr.gclid && !attr.utmSource && srcRaw) {
+      try { attr = { ...JSON.parse(srcRaw), gclid: null } } catch { /* pomiń */ }
     }
     let journey: string | null = null
     if (journeyRaw) {

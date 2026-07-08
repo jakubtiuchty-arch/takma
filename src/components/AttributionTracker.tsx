@@ -46,6 +46,29 @@ export default function AttributionTracker() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams])
 
+  // Źródło sesji z referrera — dla wejść NIEoznaczonych (organic/direct/referral).
+  // Ustawiane raz na sesję; wejścia z gclid/UTM obsługuje efekt wyżej (takma_attr).
+  useEffect(() => {
+    try {
+      if (getCookie('takma_src')) return
+      const sp = new URLSearchParams(location.search)
+      if (sp.get('gclid') || sp.get('gbraid') || sp.get('wbraid') || sp.get('utm_source')) return
+      const ref = document.referrer
+      let utmSource = '(direct)'
+      let utmMedium = '(none)'
+      if (ref) {
+        const host = new URL(ref).hostname.replace(/^www\./, '')
+        if (host === location.hostname.replace(/^www\./, '')) return // nawigacja wewnętrzna
+        if (/google\./.test(host)) { utmSource = 'google'; utmMedium = 'organic' }
+        else if (/bing\./.test(host)) { utmSource = 'bing'; utmMedium = 'organic' }
+        else if (/duckduckgo/.test(host)) { utmSource = 'duckduckgo'; utmMedium = 'organic' }
+        else { utmSource = host; utmMedium = 'referral' }
+      }
+      setCookie('takma_src', JSON.stringify({ utmSource, utmMedium, landingPage: location.pathname, ts: Date.now() }))
+    } catch { /* pomiń */ }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   // Ścieżka wizyty (cookie sesyjne) — bez powtórzeń pod rząd, max 15 wpisów
   useEffect(() => {
     if (!pathname || pathname.startsWith('/admin') || pathname.startsWith('/panel')) return

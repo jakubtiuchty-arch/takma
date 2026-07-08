@@ -83,6 +83,13 @@ export default async function AttributionCard({ data }: { data: AttrData }) {
               <p className="text-amber-700/70 mt-0.5 text-xs">Kliknięcie reklamy (szczegóły kampanii niedostępne — poza oknem 90 dni)</p>
             )}
           </div>
+        ) : data.utmMedium === 'organic' ? (
+          <div className="rounded-lg bg-emerald-50 border border-emerald-200 px-3 py-2">
+            <p className="font-semibold text-emerald-800">🟢 Wyszukiwarka (organic)</p>
+            <p className="text-emerald-900 mt-0.5">Wejście z bezpłatnych wyników: <span className="font-medium">{data.utmSource}</span></p>
+          </div>
+        ) : data.utmSource === '(direct)' ? (
+          <p><span className="text-gray-500">Źródło:</span> wejście bezpośrednie (adres z ręki / zakładka / link poza www)</p>
         ) : data.utmSource ? (
           <p><span className="text-gray-500">Źródło:</span> {data.utmSource}{data.utmMedium && ` / ${data.utmMedium}`}{data.utmCampaign && ` · kampania: ${data.utmCampaign}`}</p>
         ) : null}
