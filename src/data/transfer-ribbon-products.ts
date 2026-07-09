@@ -98,7 +98,6 @@ const rawRibbonProducts: RawProduct[] = [
       { partNumber: '02100BK17445', name: '174×450 mm/m', priceFrom: 2066.58, availability: 'on-order', attributes: { 'Szerokość': '174 mm', 'Długość': '450 m', 'Rdzeń': '25 mm' } },
       { partNumber: '02100BK17460', name: '174×600 mm/m', priceFrom: 229.62, availability: 'on-order', attributes: { 'Szerokość': '174 mm', 'Długość': '600 m', 'Rdzeń': '25 mm' } },
       { partNumber: '02100BK22045', name: '220×450 mm/m', priceFrom: 2614.83, availability: 'on-order', attributes: { 'Szerokość': '220 mm', 'Długość': '450 m', 'Rdzeń': '25 mm' } },
-      { partNumber: '02100BK11005', name: '2100 Wax', availability: 'on-order', attributes: { 'Rdzeń': '25 mm' } },
     ],
   },
   {
@@ -162,8 +161,6 @@ const rawRibbonProducts: RawProduct[] = [
       { partNumber: '02300BK17045', name: '170×450 mm/m, rdzeń 25 mm', priceFrom: 1734.4, availability: 'on-order', attributes: { 'Szerokość': '170 mm', 'Długość': '450 m', 'Rdzeń': '25 mm' } },
       { partNumber: '02300BK17090', name: '170×900 mm/m, rdzeń 25 mm', priceFrom: 1735.37, availability: 'on-order', attributes: { 'Szerokość': '170 mm', 'Długość': '900 m', 'Rdzeń': '25 mm' } },
       { partNumber: '02300BK22045', name: '220×450 mm/m, rdzeń 25 mm', priceFrom: 2245.89, availability: 'on-order', attributes: { 'Szerokość': '220 mm', 'Długość': '450 m', 'Rdzeń': '25 mm' } },
-      { partNumber: '02300BK06090', name: '2300 Wax', priceFrom: 1122.94, availability: 'on-order', attributes: { 'Rdzeń': '25 mm' } },
-      { partNumber: '02300BK06045', name: '2300 Wax', priceFrom: 612.75, availability: 'on-order', attributes: { 'Rdzeń': '25 mm' } },
     ],
   },
   {
@@ -206,8 +203,6 @@ const rawRibbonProducts: RawProduct[] = [
       { partNumber: '05319RD11005', name: '110×50 mm/m, rdzeń 25 mm', availability: 'on-order', attributes: { 'Szerokość': '110 mm', 'Długość': '50 m', 'Rdzeń': '25 mm' } },
       { partNumber: '05319BK11045', name: '110×450 mm/m', priceFrom: 1141.33, availability: 'on-order', attributes: { 'Szerokość': '110 mm', 'Długość': '450 m', 'Rdzeń': '25 mm' } },
       { partNumber: '05319BK13145', name: '131×450 mm/m', priceFrom: 1043.29, availability: 'on-order', attributes: { 'Szerokość': '131 mm', 'Długość': '450 m', 'Rdzeń': '25 mm' } },
-      { partNumber: '05319BL13145', name: '5319 Wax', priceFrom: 16426.86, availability: 'on-order', attributes: { 'Rdzeń': '25 mm' } },
-      { partNumber: '05319GD06030', name: '5319 Wax', priceFrom: 6252.63, availability: 'on-order', attributes: { 'Rdzeń': '25 mm' } },
     ],
   },
   {
