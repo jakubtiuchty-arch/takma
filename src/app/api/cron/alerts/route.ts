@@ -54,8 +54,15 @@ async function checkAds(alerts: string[]) {
   if (avg > 5 && y.cost > 2 * avg) {
     alerts.push(`Google Ads: wczoraj (${yDate}) wydane ${zl(y.cost)} — ponad 2× średnia z poprzednich dni (${zl(avg)}). Sprawdź stawki/budżety.`)
   }
-  if (y.cost > 50 && y.conv === 0) {
-    alerts.push(`Google Ads: wczoraj (${yDate}) ${zl(y.cost)} wydane i ZERO konwersji. Sprawdź kampanie i pomiar konwersji.`)
+  // Zero konwersji: NIE liczymy pojedynczego dnia — konwersje z GA4 importują się do Ads
+  // z opóźnieniem 24-48 h, więc "wczoraj" prawie zawsze pokaże 0 rano. Alarmujemy dopiero,
+  // gdy w oknie 3 dni zakończonych 2 dni temu (dane już rozliczone) jest 0 konwersji przy realnym koszcie.
+  const settled = days.filter((d) => d <= day(2)) // do przedwczoraj włącznie
+  const window3 = settled.slice(-3)
+  const winCost = window3.reduce((a, d) => a + byDay.get(d)!.cost, 0)
+  const winConv = window3.reduce((a, d) => a + byDay.get(d)!.conv, 0)
+  if (window3.length >= 3 && winCost > 300 && winConv === 0) {
+    alerts.push(`Google Ads: przez 3 dni (${window3[0]}–${window3[window3.length - 1]}) wydane ${zl(winCost)} przy ZERO konwersji. To już trend — sprawdź kampanie i pomiar konwersji.`)
   }
 }
 
