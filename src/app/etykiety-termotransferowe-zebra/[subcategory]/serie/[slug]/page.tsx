@@ -46,6 +46,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!series || series.subcategory !== subcategory) return { title: 'Nie znaleziono serii' }
 
   const url = `${siteUrl}/etykiety-termotransferowe-zebra/${series.subcategory}/serie/${series.slug}`
+  const seriesProduct = getProductBySlug(series.productId)
+  const ogImage = seriesProduct?.images?.[0]
+    ? [seriesProduct.images[0].startsWith('http') ? seriesProduct.images[0] : `${siteUrl}${seriesProduct.images[0]}`]
+    : undefined
   return {
     title: series.seoTitle,
     description: series.seoDescription,
@@ -54,7 +58,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: series.seoDescription,
       url,
       type: 'article',
+      ...(ogImage ? { images: ogImage } : {}),
     },
+    ...(ogImage ? { twitter: { card: 'summary_large_image', images: ogImage } } : {}),
     alternates: { canonical: url },
   }
 }

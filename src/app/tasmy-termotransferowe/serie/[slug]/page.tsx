@@ -41,6 +41,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const series = getRibbonSeriesBySlug(slug)
   if (!series) return { title: 'Nie znaleziono modelu' }
 
+  const seriesProduct = getProductBySlug(series.productId)
+  const ogImage = seriesProduct?.images?.[0]
+    ? [seriesProduct.images[0].startsWith('http') ? seriesProduct.images[0] : `${siteUrl}${seriesProduct.images[0]}`]
+    : undefined
+
   return {
     title: series.seoTitle,
     description: series.seoDescription,
@@ -49,7 +54,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: series.seoDescription,
       url: `${siteUrl}/tasmy-termotransferowe/serie/${series.slug}`,
       type: 'article',
+      ...(ogImage ? { images: ogImage } : {}),
     },
+    ...(ogImage ? { twitter: { card: 'summary_large_image', images: ogImage } } : {}),
     alternates: {
       canonical: `${siteUrl}/tasmy-termotransferowe/serie/${series.slug}`,
     },

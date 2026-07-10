@@ -39,6 +39,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const series = getThermalLabelSeriesBySlug(slug)
   if (!series) return { title: 'Nie znaleziono serii' }
 
+  // Zdjęcie etykiety do og:image/twitter — bez tego Google wybiera losowy obraz
+  // z treści (np. drukarkę z sekcji „pasujące drukarki"). Absolutny URL.
+  const seriesProduct = getProductBySlug(series.productId)
+  const ogImage = seriesProduct?.images?.[0]
+    ? [seriesProduct.images[0].startsWith('http') ? seriesProduct.images[0] : `${siteUrl}${seriesProduct.images[0]}`]
+    : undefined
+
   return {
     title: series.seoTitle,
     description: series.seoDescription,
@@ -47,7 +54,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: series.seoDescription,
       url: `${siteUrl}/etykiety-termiczne-zebra/serie/${series.slug}`,
       type: 'article',
+      ...(ogImage ? { images: ogImage } : {}),
     },
+    ...(ogImage ? { twitter: { card: 'summary_large_image', images: ogImage } } : {}),
     alternates: {
       canonical: `${siteUrl}/etykiety-termiczne-zebra/serie/${series.slug}`,
     },
