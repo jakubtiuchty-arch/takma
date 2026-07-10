@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
+      images: ['/images/takma-og.png'],
     title: 'TAKMA — Drukarki etykiet, Terminale mobilne, Skanery kodów',
     description: 'Drukarki etykiet od 800 zł netto, terminale mobilne, skanery. Zebra, Honeywell, Datalogic i inne marki. Doradztwo, sprzedaż i serwis dla firm B2B w całej Polsce.',
   },

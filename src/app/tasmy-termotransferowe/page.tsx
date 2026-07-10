@@ -123,6 +123,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: sub.seoTitle,
     description: sub.seoDescription,
     openGraph: {
+      images: ['/images/takma-og.png'],
       title: sub.seoTitle,
       description: sub.seoDescription,
       url: `${siteUrl}/${sub.slug}`,

@@ -10,6 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: cat.seoTitle,
     description: cat.seoDescription,
     openGraph: {
+      images: ['/images/takma-og.png'],
       title: cat.seoTitle,
       description: cat.seoDescription,
       url: `https://www.takma.com.pl/${cat.slug}`,

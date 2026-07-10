@@ -20,6 +20,7 @@ export async function generateMetadata({ searchParams }: CatalogPageProps): Prom
       title: category.seoTitle,
       description: category.seoDescription,
       openGraph: {
+      images: ['/images/takma-og.png'],
         title: category.seoTitle,
         description: category.seoDescription,
       },

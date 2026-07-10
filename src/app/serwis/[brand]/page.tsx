@@ -22,6 +22,7 @@ export function generateMetadata({ params }: Props): Metadata {
     description: brand.metaDescription,
     alternates: { canonical: `https://www.takma.com.pl/serwis/${brand.slug}` },
     openGraph: {
+      images: ['/images/takma-og.png'],
       type: 'website',
       locale: 'pl_PL',
       url: `https://www.takma.com.pl/serwis/${brand.slug}`,

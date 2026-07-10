@@ -26,7 +26,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description,
     keywords: manual.keywords,
-    openGraph: { title: `${title} | TAKMA`, description, url },
+    openGraph: {
+      images: ['/images/takma-og.png'], title: `${title} | TAKMA`, description, url },
     alternates: { canonical: url },
   }
 }

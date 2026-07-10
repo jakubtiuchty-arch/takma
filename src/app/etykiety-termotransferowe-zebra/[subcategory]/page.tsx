@@ -607,6 +607,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: sub?.seoTitle ?? CONFIG[subcategory].h1,
     description: sub?.seoDescription ?? CONFIG[subcategory].intro,
     openGraph: {
+      images: ['/images/takma-og.png'],
       title: sub?.seoTitle ?? CONFIG[subcategory].h1,
       description: sub?.seoDescription ?? CONFIG[subcategory].intro,
       url,

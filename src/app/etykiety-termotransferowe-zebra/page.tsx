@@ -58,6 +58,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: sub?.seoTitle ?? 'Etykiety termotransferowe Zebra | TAKMA',
     description: sub?.seoDescription ?? 'Pełna gama etykiet termotransferowych Zebra: papierowe, foliowe i specjalne.',
     openGraph: {
+      images: ['/images/takma-og.png'],
       title: sub?.seoTitle ?? 'Etykiety termotransferowe Zebra',
       description: sub?.seoDescription ?? '',
       url,
