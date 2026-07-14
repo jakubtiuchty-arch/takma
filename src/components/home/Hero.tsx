@@ -28,10 +28,15 @@ interface InfoSlide {
   type: 'info'
 }
 
-type HeroSlide = InfoSlide | ProductSlide
+interface MaterialsSlide {
+  type: 'materials'
+}
+
+type HeroSlide = InfoSlide | ProductSlide | MaterialsSlide
 
 const slides: HeroSlide[] = [
   { type: 'info' },
+  { type: 'materials' },
   {
     type: 'product',
     image: '/images/zebra-tc501-baner.webp',
@@ -117,12 +122,12 @@ export default function Hero() {
   const isLifestyle = slide.type === 'product' && slide.imageType === 'lifestyle'
   const isBanner = slide.type === 'product' && slide.noOverlay
   const isImageLeft = slide.type === 'product' && slide.imageLeft
-  const sectionBg = (slide.type === 'product' && slide.bgColor) ? slide.bgColor : '#0c1525'
+  const sectionBg = slide.type === 'materials' ? '#0d0d0d' : (slide.type === 'product' && slide.bgColor) ? slide.bgColor : '#0c1525'
 
   return (
     <section className="relative overflow-hidden w-full h-[400px] md:h-[420px] lg:h-[520px]" style={{ backgroundColor: sectionBg }}>
       {/* Tło — gradient mesh (nie dla info ani banner) */}
-      {slide.type !== 'info' && !isBanner && <div className="absolute inset-0 bg-gradient-mesh-dark" />}
+      {slide.type !== 'info' && slide.type !== 'materials' && !isBanner && <div className="absolute inset-0 bg-gradient-mesh-dark" />}
 
       {/* Info slide — obraz po prawej, tło sekcji dopasowane do koloru tła obrazu */}
       {slide.type === 'info' && (
@@ -138,6 +143,27 @@ export default function Hero() {
             fill
             className="object-contain object-right"
             priority
+          />
+        </div>
+      )}
+
+      {/* Materials slide — baner etykiet i taśm, obraz od prawej z maską w tło */}
+      {slide.type === 'materials' && (
+        <div
+          className={clsx(
+            'absolute inset-0 transition-opacity duration-700 ease-in-out',
+            isTransitioning ? 'opacity-0' : 'opacity-100'
+          )}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/hero-materialy.webp"
+            alt="Etykiety termiczne i taśmy termotransferowe Zebra — rolki materiałów eksploatacyjnych"
+            className="absolute right-0 top-0 h-full w-auto max-w-[85%] object-contain object-right"
+            style={{
+              maskImage: 'linear-gradient(to right, transparent 0%, black 25%)',
+              WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 25%)',
+            }}
           />
         </div>
       )}
@@ -251,6 +277,35 @@ export default function Hero() {
                     Przeglądaj katalog
                   </Button>
                 </Link>
+              </div>
+            </>
+          ) : slide.type === 'materials' ? (
+            <>
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-3 md:mb-4 leading-[1.15]">
+                Etykiety termiczne,<br />
+                etykiety termotransferowe<br />
+                i&nbsp;taśmy termotransferowe
+              </h2>
+              <p className="text-sm md:text-base text-gray-300 max-w-md mb-4 md:mb-6 leading-relaxed">
+                Ponad 1400 wariantów oryginalnych materiałów Zebra z&nbsp;żywym stanem magazynowym.
+              </p>
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3">
+                {[
+                  { label: 'Taśmy', href: '/tasmy-termotransferowe' },
+                  { label: 'Etykiety termiczne', href: '/etykiety-termiczne-zebra' },
+                  { label: 'Etykiety termotransferowe', href: '/etykiety-termotransferowe-zebra' },
+                ].map(({ label, href }) => (
+                  <Link key={href} href={href}>
+                    <Button
+                      size="md"
+                      variant="ghost"
+                      className="!text-white hover:!text-gray-900 hover:!bg-[#A8F000] !border !border-[#A8F000]/60 font-semibold"
+                      rightIcon={<ArrowRightIcon size={16} />}
+                    >
+                      {label}
+                    </Button>
+                  </Link>
+                ))}
               </div>
             </>
           ) : (
