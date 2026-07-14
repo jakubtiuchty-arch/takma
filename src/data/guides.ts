@@ -4842,6 +4842,139 @@ export const guides: Guide[] = [
 // 9. Skanery kodów kreskowych Zebra — przewodnik kupującego 2026
 // ============================================================
 {
+  slug: 'zebra-mc3400-vs-honeywell-ck62',
+  title: 'Zebra MC3400 vs Honeywell CK62 — który terminal z klawiaturą wybrać?',
+  seoTitle: 'Zebra MC3400 vs Honeywell CK62 — porównanie terminali gun 2026',
+  seoDescription: 'Porównanie terminali z klawiaturą Zebra MC3400 i Honeywell CK62: skaner 30,5 m vs 24 m, IP67 vs IP65, upadki 2,4 m vs 1,8 m, klawiatury, bateria 7000 mAh. Który kolektor danych gun do magazynu wybrać.',
+  excerpt: 'Zebra MC3400 i Honeywell CK62 to bezpośredni rywale: terminale z fizyczną klawiaturą, tym samym procesorem Qualcomm QCS4490 i baterią 7 000 mAh hot-swap. Różnice siedzą w detalach — zasięgu skanera (30,5 vs 24 m), szczelności (IP67 vs IP65), odporności na upadki i liczbie konfiguracji. Porównujemy oba parametr po parametrze.',
+  category: 'porownanie' as const,
+  tags: ['terminale-mobilne', 'porownanie', 'zebra', 'honeywell', 'mc3400', 'ck62', 'kolektor-danych'],
+  publishedAt: '2026-07-14',
+  updatedAt: '2026-07-14',
+  readTime: '9 min',
+  heroImage: '/images/guides/zebra-mc3400-vs-honeywell-ck62.webp',
+  heroImageAlt: 'Terminale Zebra MC3400 i Honeywell CK62 obok siebie w magazynie — porównanie',
+  sections: [
+    {
+      id: 'tldr',
+      heading: 'Zebra MC3400 vs Honeywell CK62 — TL;DR',
+      content: `
+<p><strong>Zebra MC3400</strong> wygrywa wytrzymałością i elastycznością: pełna wodoodporność IP65/IP67, upadki z 2,4 m, skaner SE58 czytający kody z 30,5 m, trzy klawiatury i dwie obudowy do wyboru — łącznie 14 konfiguracji. <strong>Honeywell CK62</strong> odpowiada większą pamięcią w standardzie (zawsze 8 GB RAM / 128 GB) i deklaracją do 28 godzin pracy na baterii. Serce mają identyczne: procesor Qualcomm QCS4490, Android 14 z aktualizacjami do 18, Wi-Fi 6E i baterię 7 000 mAh z hot-swap.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:20px 0">
+<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px">
+<p><strong>Wybierz Zebra MC3400, jeśli:</strong></p>
+<ul>
+<li>terminal bywa myty pod bieżącą wodą albo pracuje w kurzu i wilgoci — IP67 kontra IP65 to realna różnica klasy szczelności,</li>
+<li>skanujesz najwyższe regały — SE58 z zielonym laserem czyta kody z 30,5 m (CK62: 24 m),</li>
+<li>operatorzy upuszczają sprzęt z wózków — 2,4 m na beton i 4 000 cykli tumble z 1 m,</li>
+<li>migrujesz z MC3300/MC3300x — baterie, stacje i ładowarki pasują 1:1, bez wymiany infrastruktury.</li>
+</ul>
+</div>
+<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px">
+<p><strong>Wybierz Honeywell CK62, jeśli:</strong></p>
+<ul>
+<li>aplikacja WMS jest pamięciożerna — CK62 ma zawsze 8 GB RAM / 128 GB, u Zebry to szczyt oferty,</li>
+<li>priorytetem jest czas pracy — producent deklaruje do 28 h na jednym ładowaniu,</li>
+<li>masz już flotę CK67 — CK62 współdzieli z nim baterię i ładowarki CK6X,</li>
+<li>wystarcza skanowanie do 24 m, a cenisz platformę Mobility Edge z jednym BSP dla całej floty.</li>
+</ul>
+</div>
+</div>`,
+    },
+    {
+      id: 'specyfikacje',
+      heading: 'Specyfikacje obok siebie',
+      content: `
+<table>
+<thead><tr><th>Parametr</th><th>Zebra MC3400</th><th>Honeywell CK62</th></tr></thead>
+<tbody>
+<tr><td>Procesor</td><td>Qualcomm QCS4490, 8 rdzeni, 2,4 GHz</td><td>Qualcomm QCS4490, 8 rdzeni, 2,4 GHz</td></tr>
+<tr><td>System i wsparcie</td><td>Android 14, aktualizacje do Androida 18 (LifeGuard)</td><td>Android 14, aktualizacje do Androida 18 (Mobility Edge)</td></tr>
+<tr><td>Pamięć</td><td>4/64, 6/64 lub 6/128 GB (zależnie od wariantu)</td><td><strong>Zawsze 8 GB RAM / 128 GB flash</strong></td></tr>
+<tr><td>Wyświetlacz</td><td>4″ WVGA, 350–600 nitów, dotyk w rękawicach</td><td>4″ WVGA, 450 nitów, Gorilla Glass 5</td></tr>
+<tr><td>Klawiatura</td><td><strong>29 / 38 / 47 klawiszy</strong> (klawisze 20% większe niż w MC3300x)</td><td>38 / 47 klawiszy, podświetlana</td></tr>
+<tr><td>Skaner (opcja zasięgowa)</td><td><strong>SE58 Extended Range — do 30,5 m, zielony laser</strong></td><td>FlexRange XLR S0E03 — 8 cm do 24 m</td></tr>
+<tr><td>Bateria</td><td>7 000 mAh, hot-swap</td><td>7 000 mAh, hot-swap (deklarowane do 28 h)</td></tr>
+<tr><td>Szczelność</td><td><strong>IP65 + IP67 (zanurzenie do 1 m, mycie pod wodą)</strong></td><td>IP65</td></tr>
+<tr><td>Upadki / tumble</td><td><strong>2,4 m na beton / 4 000× z 1 m</strong></td><td>1,8 m na beton / 3 000× z 0,5 m</td></tr>
+<tr><td>Obudowy</td><td><strong>Pistoletowa (Gun) i prosta (Straight)</strong></td><td>Jedna obudowa (uchwyt skanowy jako akcesorium)</td></tr>
+<tr><td>Waga</td><td>442 g (Straight) / 528 g (Gun)</td><td>440 g</td></tr>
+<tr><td>Łączność</td><td>Wi-Fi 6E, Bluetooth 5.3, NFC</td><td>Wi-Fi 6E, Bluetooth 5.3, NFC</td></tr>
+<tr><td>Kamera</td><td>13 MP tylna + 5 MP przednia (warianty Full)</td><td>13 MP tylna</td></tr>
+<tr><td>Wersja komórkowa</td><td>Osobny model: Zebra MC3450 (5G/LTE + GPS)</td><td>Osobny model: CK67 w wariantach 5G</td></tr>
+</tbody>
+</table>`,
+    },
+    {
+      id: 'urzadzenia',
+      heading: 'Zebra MC3400 i Honeywell CK62 z bliska',
+      content: `
+<div style="display:flex;gap:32px;flex-wrap:wrap;margin-bottom:24px;justify-content:center;align-items:flex-end">
+<div style="min-width:180px;text-align:center;display:flex;flex-direction:column;align-items:center">
+<img src="/images/products/zebra-mc3400_1.png" alt="Zebra MC3400 — terminal mobilny (kolektor danych) z klawiaturą fizyczną, ekran 4 cale, Android 14 ze wsparciem do Androida 18" style="max-height:220px;margin:0 auto" loading="lazy" />
+<p><strong>Zebra MC3400</strong><br/>ekran 4″, klawiatura 29/38/47, skaner do 30,5 m</p>
+</div>
+<div style="min-width:180px;text-align:center;display:flex;flex-direction:column;align-items:center">
+<img src="/images/products/CK62-X00-57S1ACG.png" alt="Honeywell CK62 — terminal mobilny (kolektor danych) z klawiaturą fizyczną, ekran 4 cale, FlexRange XLR do 24 m" style="max-height:220px;margin:0 auto" loading="lazy" />
+<p><strong>Honeywell CK62</strong><br/>ekran 4″, klawiatura 38/47, FlexRange XLR do 24 m</p>
+</div>
+</div>
+<p>Oba terminale celują w ten sam segment: <strong>kolektor danych z fizyczną klawiaturą do magazynu, produkcji i logistyki</strong> — następcy bestsellerowych serii MC3300 (Zebra) i CK65 (Honeywell). To urządzenia dla operatorów, którzy przez całą zmianę wpisują ilości, numery partii i kody lokalizacji — fizyczne klawisze są przy takiej pracy kilkukrotnie szybsze od ekranowej klawiatury. Co ciekawe, oba mają identyczny procesor Qualcomm QCS4490 i tę samą ścieżkę aktualizacji Androida — dlatego o wyborze decydują obudowa, skaner i szczegóły wytrzymałości, nie moc obliczeniowa.</p>`,
+    },
+    {
+      id: 'roznice-w-pracy',
+      heading: 'Cztery różnice, które czuć w pracy',
+      content: `
+<p><strong>Szczelność IP67 to nie parametr z tabelki, tylko procedura sprzątania.</strong> MC3400 można umyć pod bieżącą wodą i przetrwa zanurzenie do 1 metra — w zakładach spożywczych i chłodniach, gdzie sprzęt regularnie się dezynfekuje, to warunek wejścia. CK62 z IP65 zniesie strugę wody, ale nie zanurzenie; mycie pod kranem skraca jego życie.</p>
+<p><strong>Zasięg skanera decyduje, czy operator schodzi z wózka.</strong> SE58 w MC3400 czyta kody z 30,5 m — z zapasem obejmuje najwyższe regały magazynów wysokiego składowania. FlexRange XLR w CK62 sięga 24 m, co w większości hal też wystarcza, ale przy najwyższych gniazdach paletowych zapas znika. Jeśli hala ma regały powyżej 12 m, różnica robi się praktyczna, nie teoretyczna.</p>
+<p><strong>Upadki i koziołkowanie — tu Zebra dała wyraźnie więcej.</strong> 2,4 m na beton kontra 1,8 m oraz 4 000 cykli tumble z metra kontra 3 000 z pół metra. Terminal gun żyje na wózkach widłowych i taśmociągach; im wyższa odporność, tym mniejszy budżet na naprawy po drugim roku floty.</p>
+<p><strong>Pamięć w standardzie kontra pamięć w topowym wariancie.</strong> CK62 ma zawsze 8 GB RAM i 128 GB flash — bez dopłat i kombinowania z konfiguratorem. W MC3400 bazowe warianty startują z 4/64 GB, a 6/128 GB dostają dopiero wersje Full z kamerą. Przy ciężkich aplikacjach WMS z lokalnym cache to argument, który realnie przemawia za Honeywellem.</p>`,
+    },
+    {
+      id: 'zastosowania',
+      heading: 'Który terminal do magazynu, produkcji i chłodni?',
+      content: `
+<p><strong>Magazyn wysokiego składowania (regały powyżej 12 m):</strong> przewaga MC3400 — SE58 z zielonym laserem IntelliFocus czyta kody z 30,5 m, operator nie schodzi z wózka nawet przy najwyższych gniazdach. CK62 z FlexRange XLR (24 m) obsłuży większość hal, ale bez zapasu na najwyższych poziomach.</p>
+<p><strong>Produkcja spożywcza, chłodnia, częsta dezynfekcja:</strong> MC3400 — pełna wodoodporność IP67 pozwala myć terminal pod bieżącą wodą. To pierwszy model serii MC3000 z taką szczelnością; CK62 kończy na IP65.</p>
+<p><strong>Kompletacja z intensywnym wpisywaniem danych:</strong> remis z przewagą Zebry w elastyczności — MC3400 ma trzy układy klawiatury (29/38/47), w tym prostą 29-klawiszową numeryczną, której CK62 nie oferuje. Honeywell odpowiada podświetlanymi klawiszami 38/47 o wyraźnym skoku.</p>
+<p><strong>Praca wielozmianowa 24/7:</strong> obie baterie mają 7 000 mAh i hot-swap — wymiana bez wyłączania urządzenia. Honeywell deklaruje do 28 godzin pracy; deklaracje producentów mierzone są różnymi scenariuszami, więc traktuj je porównawczo, nie absolutnie. W praktyce oba modele domykają dwie zmiany, a floty 24/7 i tak opierają się na zapasowych bateriach w ładowarkach wielogniazdowych.</p>
+<p><strong>Migracja z istniejącej floty:</strong> tu decyduje to, co już masz. MC3400 przejmuje baterie, stacje dokujące i ładowarki po MC3300/MC3300x — wymiana floty bez wymiany infrastruktury to oszczędność, której nie widać na fakturze za terminale. Analogicznie CK62 współdzieli baterię i ładowarki CK6X z CK67. Aplikacje WMS działają na obu (standardowy Android); przy zmianie marki odtwarzamy profil skanowania DataWedge lub Mobility Edge 1:1.</p>`,
+    },
+  ],
+  faq: [
+    {
+      question: 'Czym różni się Zebra MC3400 od Honeywell CK62, skoro mają ten sam procesor?',
+      answer: 'Elektronika jest niemal identyczna (Qualcomm QCS4490, Wi-Fi 6E, Android 14 z aktualizacjami do 18, bateria 7 000 mAh hot-swap). Różnice siedzą w mechanice i optyce: MC3400 ma wyższą szczelność (IP67 vs IP65), większą odporność na upadki (2,4 vs 1,8 m), dalszy zasięg skanera (30,5 vs 24 m), trzy układy klawiatury i dwie obudowy. CK62 kontruje pamięcią 8/128 GB w standardzie i deklaracją do 28 h pracy.',
+    },
+    {
+      question: 'Który terminal jest tańszy — MC3400 czy CK62?',
+      answer: 'Ceny obu modeli zmieniają się na bieżąco wraz z kursami i stanami dystrybucji — aktualne kwoty netto sprawdzisz na kartach produktów, pokazujemy je na żywo. MC3400 ma szerszą rozpiętość konfiguracji (14 wariantów), więc łatwiej dopasować budżet do realnych potrzeb zamiast płacić za topową wersję.',
+    },
+    {
+      question: 'Czy Zebra MC3400 naprawdę wytrzyma mycie pod wodą?',
+      answer: 'Tak — MC3400 ma podwójną klasę IP65/IP67, co oznacza odporność na strugi wody i zanurzenie do 1 metra. To pierwszy terminal serii MC3000 z pełną wodoodpornością. CK62 z klasą IP65 zniesie polewanie, ale nie zanurzenie.',
+    },
+    {
+      question: 'Mam flotę MC3300x. Czy akcesoria będą pasować do MC3400?',
+      answer: 'Tak, to jeden z najmocniejszych argumentów za MC3400: baterie, stacje dokujące, ładowarki i holstery z MC3300/MC3300x pasują bez adapterów. Wymieniasz terminale, a cała infrastruktura ładowania zostaje.',
+    },
+    {
+      question: 'Potrzebuję terminala z kartą SIM do pracy w terenie. Który wybrać?',
+      answer: 'Żaden z porównywanych — oba to wersje Wi-Fi. Odpowiednikiem komórkowym MC3400 jest Zebra MC3450 (5G/LTE + GPS), a w rodzinie Honeywell rolę tę pełni CK67 w wariantach 5G.',
+    },
+    {
+      question: 'Czy aplikacja WMS napisana pod Zebrę zadziała na Honeywell CK62?',
+      answer: 'Tak — oba terminale pracują na standardowym Androidzie, więc aplikacje WMS działają na obu. Różnią się narzędzia wdrożeniowe (Zebra Mobility DNA / StageNow kontra Honeywell Mobility Edge); przy migracji odtwarzamy profil skanowania 1:1, a pracownicy nie odczuwają różnicy w obsłudze.',
+    },
+  ],
+  relatedLinks: [
+    { title: 'Zebra MC3400 — cena i 14 konfiguracji', href: '/produkt/zebra-mc3400' },
+    { title: 'Honeywell CK62 — cena i warianty', href: '/produkt/honeywell-ck62' },
+    { title: 'Zebra MC3400 vs MC9400 — porównanie', href: '/poradnik/zebra-mc3400-vs-mc9400' },
+    { title: 'Zebra vs Honeywell — porównanie ekosystemów', href: '/poradnik/zebra-vs-honeywell-terminale-mobilne' },
+  ],
+},
+{
   slug: 'skanery-kodow-kreskowych-zebra-przewodnik',
   title: 'Skanery kodów kreskowych Zebra — jak wybrać? Przewodnik 2026',
   seoTitle: 'Skanery (czytniki) kodów kreskowych Zebra — przewodnik 2026 | DS2208, DS3608, DS8208',
