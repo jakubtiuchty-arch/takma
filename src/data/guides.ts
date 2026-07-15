@@ -14663,124 +14663,40 @@ export const guides: Guide[] = [
 },
 {
   slug: 'zebra-kc401-kiosk-samoobslugowy',
-  title: 'Zebra KC401 — kiosk samoobsługowy nowej generacji',
-  seoTitle: 'Zebra KC401 — kiosk samoobsługowy Android 10", Wi-Fi 7, NFC | TAKMA',
-  seoDescription: 'Zebra KC401 — 10-calowy kiosk samoobsługowy z Androidem, skanerem SR500, płatnościami zbliżeniowymi NFC, Wi-Fi 7 i zasilaniem PoE. Następca CC6000 do handlu, hotelarstwa, logistyki i ochrony zdrowia. Specyfikacja, zastosowania i migracja.',
-  excerpt: 'Zebra KC401 to kiosk samoobsługowy nowej generacji: 10-calowy ekran dotykowy, Android, skaner 1D/2D, płatności zbliżeniowe NFC, Wi-Fi 7 i zasilanie przez Ethernet (PoE). Zastępuje popularny kiosk CC6000 bez wymiany obudowy i uchwytów. Omawiamy specyfikację, zastosowania w handlu, hotelarstwie, logistyce i ochronie zdrowia oraz to, co odróżnia KC401 od poprzednika.',
+  title: 'Zebra KC401 — kiosk samoobsługowy nowej generacji [zapowiedź]',
+  seoTitle: 'Zebra KC401 — kiosk samoobsługowy. Premiera 17 września 2026 | TAKMA',
+  seoDescription: 'Zebra KC401 — nowy kiosk samoobsługowy Zebra. Oficjalna premiera 17 września 2026. Pełna specyfikacja, zdjęcia i ceny w dniu premiery. Zapytaj o dostępność przedpremierową w TAKMA.',
+  excerpt: 'Zebra zapowiedziała KC401 — kiosk samoobsługowy nowej generacji. Oficjalna premiera odbędzie się 17 września 2026 i do tego dnia szczegóły produktu objęte są embargiem producenta. W dniu premiery uzupełnimy ten wpis o pełną specyfikację, zdjęcia, zastosowania i ceny.',
   category: 'przewodnik' as const,
-  tags: ['kiosk', 'samoobsługa', 'zebra', 'kc401', 'android', 'wi-fi-7', 'nfc', 'płatności zbliżeniowe', 'cc6000', 'handel', 'hotelarstwo', 'ochrona zdrowia', 'nowość', 'Zebra KC401'],
+  tags: ['kiosk', 'samoobsługa', 'zebra', 'kc401', 'zapowiedź', 'nowość'],
   publishedAt: '2026-07-09',
-  updatedAt: '2026-07-09',
-  readTime: '11 min',
+  updatedAt: '2026-07-15',
+  readTime: '2 min',
   heroImage: '/images/guides/zebra-kc401-hero.webp',
-  heroImageAlt: 'Zebra KC401 — kiosk samoobsługowy z 10-calowym ekranem i zielonymi paskami LED, na ladzie w nowoczesnym wnętrzu',
+  heroImageAlt: 'Zebra KC401 — zapowiedź kiosku samoobsługowego, premiera 17 września 2026',
   sections: [
     {
-      id: 'podsumowanie',
-      heading: 'Zebra KC401 — samoobsługa w każdym miejscu placówki',
-      content: `<style>.kc401-gallery img{max-height:230px}.kc401-gallery>div:first-child img:hover{transform-origin:left center}.kc401-gallery>div:last-child img:hover{transform-origin:right center}.kc401-gallery img:hover{transform:scale(1.4)!important}</style>
-<div class="kc401-gallery" style="display:flex;gap:32px;flex-wrap:wrap;margin-bottom:24px;justify-content:center;align-items:flex-end">
-<div style="min-width:180px;text-align:center;display:flex;flex-direction:column;align-items:center">
-<img src="/images/products/kc401_portrait.png" alt="Zebra KC401 w orientacji pionowej — kiosk samoobsługowy z ekranem 10 cali i skanerem 1D/2D" style="max-height:230px;margin:0 auto" loading="lazy" />
-<p><strong>KC401 — pion</strong><br/>ekran 10", zielone paski LED, skaner u dołu</p>
-</div>
-<div style="min-width:180px;text-align:center;display:flex;flex-direction:column;align-items:center">
-<img src="/images/products/kc401_landscape.png" alt="Zebra KC401 w orientacji poziomej — kiosk samoobsługowy z montażem VESA" style="max-height:230px;margin:0 auto" loading="lazy" />
-<p><strong>KC401 — poziom</strong><br/>montaż VESA, przód i tył z uchwytem</p>
-</div>
-</div>
-<p><strong>Zebra KC401</strong> to <strong>10-calowy kiosk samoobsługowy z systemem Android</strong>, zaprojektowany tak, aby przenieść część obsługi na samych klientów i pracowników pierwszej linii — od sprawdzania cen i dostępności towaru, przez meldowanie gości, po płatności zbliżeniowe i kontrolę dostępu. Urządzenie działa w orientacji pionowej lub poziomej, montuje się je na ścianie, słupku, ladzie lub w istniejącej szafce, a intuicyjny interfejs prowadzi użytkownika krok po kroku.</p>
-<p>Najważniejsze z perspektywy firm, które już mają kioski: KC401 to <strong>bezpośredni następca modelu CC6000</strong> — można go zamontować w tej samej obudowie i na tych samych uchwytach, bez przebudowy stanowiska.</p>`,
-    },
-    {
-      id: 'specyfikacja',
-      heading: 'Kluczowa specyfikacja Zebra KC401',
+      id: 'zapowiedz',
+      heading: 'Zebra KC401 — premiera 17 września 2026',
       content: `
-<table>
-<thead><tr><th>Parametr</th><th>Zebra KC401</th></tr></thead>
-<tbody>
-<tr><td>Ekran</td><td>10,1" dotykowy, 1280×800, 350 nitów, szkło o twardości 9H, odporne na zarysowania i odciski palców</td></tr>
-<tr><td>Obsługa dotyku</td><td>Palcem, w rękawiczce lub rysikiem pojemnościowym</td></tr>
-<tr><td>Orientacja</td><td>Pionowa lub pozioma</td></tr>
-<tr><td>System</td><td>Android z aktualizacjami bezpieczeństwa LifeGuard</td></tr>
-<tr><td>Procesor</td><td>Qualcomm Dragonwing Q-6690, do 2,0 GHz</td></tr>
-<tr><td>Pamięć</td><td>6 GB RAM (LPDDR5) / 64 GB (UFS 2.2), microSD do 2 TB</td></tr>
-<tr><td>Skanowanie</td><td>Aparat 5 MP (standard) lub opcjonalny skaner 1D/2D SR500; trzy kąty montażu skanera (0°, −25°, +25°)</td></tr>
-<tr><td>Płatności / NFC</td><td>NFC zgodne z EMVCO, Apple VAS, Google Smart Tap, portfele Apple, Google i Samsung</td></tr>
-<tr><td>Łączność</td><td><strong>Wi-Fi 7</strong> (oraz Wi-Fi 6), Bluetooth 6.0, Ethernet 10/100/1000 (RJ45)</td></tr>
-<tr><td>Zasilanie</td><td>12 V DC 36 W, <strong>Power over Ethernet (PoE, 30 W)</strong> lub 5,4 V DC 16 W</td></tr>
-<tr><td>Porty</td><td>USB-C, 2× USB-A, RJ45</td></tr>
-<tr><td>Sygnalizacja</td><td>Programowalne, wielokolorowe paski LED (dowolny kolor), sygnał dźwiękowy, wibracja</td></tr>
-<tr><td>Odporność</td><td>Szczelność IP65, testowany na uderzenia, ESD do ±15 kV</td></tr>
-<tr><td>Audio</td><td>Głośniki stereo, 3 mikrofony, VoIP z PTT, redukcja szumów Qualcomm Fluence</td></tr>
-<tr><td>Montaż</td><td>Uchwyty VESA — ściana, słupek, lada, szafka</td></tr>
-<tr><td>Waga</td><td>920 g (bez skanera) / 947 g (ze skanerem)</td></tr>
-</tbody>
-</table>`,
-    },
-    {
-      id: 'co-nowego',
-      heading: 'Co odróżnia KC401 od kiosku CC6000',
-      content: `
-<p>Jeśli korzystasz dziś z kiosków Zebra CC6000, przejście na KC401 jest bezbolesne — to <strong>zamiennik montowany w istniejącej infrastrukturze</strong>. Ale pod obudową zmienia się bardzo dużo:</p>
-<p><strong>Łączność następnej generacji.</strong> KC401 wprowadza <strong>Wi-Fi 7</strong> i Bluetooth 6.0. W praktyce oznacza to płynniejsze działanie interfejsu i szybsze ładowanie treści nawet w zatłoczonej sieci sklepowej czy hotelowej. Dochodzi też pełne <strong>zasilanie przez Ethernet (PoE)</strong> — jeden kabel doprowadza prąd i sieć, więc kiosk można powiesić tam, gdzie nie ma gniazdka.</p>
-<p><strong>Płatności zbliżeniowe wbudowane na stałe.</strong> Technologia NFC „dotknij ekranu" obsługuje karty, portfele mobilne (Apple, Google, Samsung) oraz bilety i karty lojalnościowe w Apple VAS i Google Smart Tap. Klient, który chce ominąć kolejkę, płaci jednym gestem.</p>
-<p><strong>Sygnalizacja świetlna, którą sam ustawiasz.</strong> Wbudowane paski LED świecą dowolnym kolorem — możesz nimi prowadzić użytkownika (np. zielony = gotowe, czerwony = błąd) i ułatwić odnalezienie kiosku w przestrzeni.</p>
-<p><strong>Dłuższe bezpieczeństwo.</strong> Aktualizacje LifeGuard dla Androida chronią kiosk przed nowymi zagrożeniami przez lata, a Ty decydujesz, które urządzenia i kiedy aktualizować.</p>`,
-    },
-    {
-      id: 'skanowanie-platnosci',
-      heading: 'Skanowanie i płatności — serce samoobsługi',
-      content: `
-<p><strong>Skanowanie bez trzymania w ręku.</strong> W wersji standardowej KC401 skanuje aparatem 5 MP, a po dołożeniu opcjonalnego skanera <strong>SR500 1D/2D</strong> odczytuje praktycznie każdy kod kreskowy w trudnych warunkach — z ekranu telefonu, ze zmiętej etykiety, z odbicia. Skaner montuje się pod jednym z trzech kątów (0°, −25°, +25°), więc kąt odczytu dopasujesz do sposobu, w jaki klient podchodzi do kiosku.</p>
-<p>To otwiera typowe scenariusze samoobsługi: sprawdzenie ceny i dostępności, skanowanie kart lojalnościowych, weryfikacja promocji, rozpoczęcie zwrotu, a w hotelarstwie i eventach — meldowanie gości oraz kontrola biletów z telefonu lub wydruku.</p>
-<p><strong>Płatności i bilety jednym dotknięciem.</strong> Moduł NFC zamienia oczekiwanie w błyskawiczną transakcję: płatność kartą lub portfelem mobilnym, realizacja biletu cyfrowego, wykorzystanie karty podarunkowej, naliczenie rabatu lojalnościowego. Skrócenie kolejek przekłada się wprost na wyższą przepustowość stanowiska i zadowolenie klienta.</p>`,
-    },
-    {
-      id: 'zastosowania',
-      heading: 'Gdzie sprawdza się KC401 — zastosowania branżowe',
-      content: `
-<p><strong>Handel i hotelarstwo:</strong> sprawdzanie cen i stanów magazynowych, stanowisko zwrotów, kiosk POS, meldowanie gości, rejestracja czasu pracy personelu, kontrola dostępu na identyfikator, inteligentny wyświetlacz przy półce oraz stanowisko „osobistego doradcy" wspierającego zakupy.</p>
-<p><strong>Logistyka, magazyn i produkcja:</strong> rejestracja czasu pracy, stanowiska zwrotów, kontrola dostępu na identyfikator, kiosk wydruku, a także panel sterujący do szafek wydających (np. narzędzia, sprzęt).</p>
-<p><strong>Ochrona zdrowia:</strong> samodzielna rejestracja pacjenta, kontrola dostępu personelu na identyfikator, inteligentny wyświetlacz przed salą oraz rejestracja czasu pracy. Szczelność IP65 pozwala na częste mycie i dezynfekcję powierzchni, co jest krytyczne w placówkach medycznych i gastronomii.</p>
-<p><strong>Kiosk, który staje się zegarem rejestracji czasu.</strong> W połączeniu z systemem Zebra Workcloud KC401 rejestruje wejścia i wyjścia pracowników — wystarczy zeskanować kod QR z identyfikatora lub wpisać numer, aby precyzyjnie ewidencjonować obecność w całej firmie.</p>
-<p><strong>Wezwanie pomocy jednym przyciskiem.</strong> Gdy klient potrzebuje wsparcia, KC401 może wysłać powiadomienie do terminala mobilnego najbliższego pracownika wraz z lokalizacją kiosku, a dzięki dobremu układowi audio pracownik odpowie głosowo. Samoobsługa nie oznacza więc pozostawienia klienta samemu sobie.</p>`,
-    },
-    {
-      id: 'wdrozenie',
-      heading: 'Wdrożenie i utrzymanie',
-      content: `
-<p><strong>Montaż tam, gdzie potrzebujesz.</strong> Uchwyty VESA w kilku rozmiarach pozwalają zamontować KC401 na ścianie, słupku, ladzie lub w istniejącej szafce. Brak gniazdka nie jest problemem — zasilanie PoE prowadzi prąd i sieć jednym kablem Ethernet, co skraca czas i koszt instalacji oraz daje swobodę w rozmieszczeniu stanowisk.</p>
-<p><strong>Trwałość dopasowana do intensywnego ruchu.</strong> Ekran o twardości 9H jest odporny na zarysowania i utrzymuje estetyczny wygląd mimo setek dotknięć dziennie. Konstrukcja przeszła testy udarności, a szczelność IP65 chroni elektronikę przed kurzem i zalaniem.</p>
-<p><strong>Zarządzanie flotą.</strong> Pakiet oprogramowania Zebra DNA upraszcza konfigurację, zabezpieczenie i zdalne zarządzanie kioskami z jednego pulpitu — od pierwszego uruchomienia po codzienne aktualizacje. To realne obniżenie nakładu pracy działu IT przy większej liczbie stanowisk.</p>`,
+<p><strong>Zebra KC401</strong> to zapowiedziany kiosk samoobsługowy nowej generacji. Oficjalna premiera odbędzie się <strong>17 września 2026</strong> — do tego dnia szczegółowe dane produktu (specyfikacja, zdjęcia, ceny i dostępność) objęte są embargiem producenta, dlatego nie możemy ich jeszcze publikować.</p>
+<p>W dniu premiery uzupełnimy ten wpis o pełny przewodnik: specyfikację techniczną, zastosowania branżowe, porównanie z dotychczasowymi kioskami Zebra oraz informacje o migracji i wdrożeniu.</p>
+<p>Jeśli planujesz wdrożenie kiosków samoobsługowych i chcesz porozmawiać o KC401 przed premierą — <a href="/kontakt">skontaktuj się z nami</a>. Jako autoryzowany partner Zebra przygotowujemy ofertę premierową i możemy zarezerwować dostawy z pierwszej partii.</p>`,
     },
   ],
   faq: [
     {
-      question: 'Czy Zebra KC401 zastąpi mój kiosk CC6000 bez przebudowy stanowiska?',
-      answer: 'Tak. KC401 zaprojektowano jako bezpośredni następca CC6000 — pasuje do istniejącej obudowy, uchwytów i infrastruktury montażowej, więc wymiana odbywa się bez przebudowy stanowiska i z minimalnym przestojem.',
+      question: 'Kiedy będzie dostępny kiosk Zebra KC401?',
+      answer: 'Oficjalna premiera Zebra KC401 zaplanowana jest na 17 września 2026. Po tym terminie opublikujemy pełną specyfikację, ceny i dostępność magazynową.',
     },
     {
-      question: 'Czy KC401 obsługuje płatności zbliżeniowe?',
-      answer: 'Tak. Wbudowany moduł NFC obsługuje płatności kartami i portfelami mobilnymi (Apple, Google, Samsung) oraz bilety i karty lojalnościowe w standardach Apple VAS i Google Smart Tap. Obsługa płatności wymaga odpowiedniej umowy serwisowej Zebra.',
-    },
-    {
-      question: 'Czy kiosk można zasilić bez gniazdka elektrycznego?',
-      answer: 'Tak. KC401 obsługuje zasilanie Power over Ethernet (PoE) — jeden kabel Ethernet doprowadza jednocześnie prąd i sieć. Alternatywnie można użyć zasilacza 12 V DC. To duża swoboda przy wyborze miejsca montażu.',
-    },
-    {
-      question: 'W jakiej orientacji działa KC401 — pionowej czy poziomej?',
-      answer: 'W obu. 10-calowy ekran można ustawić pionowo lub poziomo, a interfejs dostosowuje się do orientacji. Wybór zależy od zastosowania i miejsca montażu.',
-    },
-    {
-      question: 'Czy KC401 nadaje się do placówek medycznych?',
-      answer: 'Tak. Szczelność IP65 pozwala na częste mycie i dezynfekcję powierzchni, a scenariusze takie jak samodzielna rejestracja pacjenta, kontrola dostępu personelu i inteligentny wyświetlacz przed salą należą do typowych zastosowań kiosku w ochronie zdrowia.',
+      question: 'Czy można zamówić KC401 przed premierą?',
+      answer: 'Skontaktuj się z nami — jako autoryzowany partner Zebra zbieramy zamówienia przedpremierowe i rezerwujemy dostawy z pierwszej partii.',
     },
   ],
   relatedLinks: [
-    { title: 'Terminale mobilne Zebra — pełna oferta', href: '/terminale-mobilne-zebra' },
-    { title: 'Tablety przemysłowe Zebra', href: '/tablety-przemyslowe-zebra' },
-    { title: 'Jak wybrać terminal mobilny — przewodnik 2026', href: '/poradnik/jak-wybrac-terminal-mobilny' },
+    { title: 'Kontakt — zapytaj o ofertę premierową', href: '/kontakt' },
+    { title: 'Urządzenia Zebra w TAKMA', href: '/terminale-mobilne-zebra' },
   ],
 },
 ]
