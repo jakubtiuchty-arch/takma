@@ -428,7 +428,8 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
-            {[...guides].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt)).slice(0, 4).map((guide, i) => (
+            {/* KC401 wykluczony do premiery 17.09.2026 (embargo) — Google rankował home zamiast wpisu na frazę "zebra kc401" */}
+            {[...guides].filter(g => g.slug !== 'zebra-kc401-kiosk-samoobslugowy').sort((a, b) => b.publishedAt.localeCompare(a.publishedAt)).slice(0, 4).map((guide, i) => (
               <Link
                 key={guide.slug}
                 href={`/poradnik/${guide.slug}`}
