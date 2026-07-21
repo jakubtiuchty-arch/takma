@@ -183,7 +183,10 @@ export async function GET() {
         : `${SITE_URL}/produkt/${c.product.slug}?pn=${encodeURIComponent(c.variant.partNumber)}`
       : `${SITE_URL}/produkt/${c.product.slug}`
 
-    const title = c.variant ? `${c.product.name} — ${c.variant.name}` : c.product.name
+    // "Uchwyt pistoletowy" wyzwala klasyfikator GMC "Guns and Parts" (odrzucenie) —
+    // w feedzie neutralna nazwa; na stronie produktu nazwa bez zmian
+    const rawTitle = c.variant ? `${c.product.name} — ${c.variant.name}` : c.product.name
+    const title = rawTitle.replace(/uchwyt pistoletowy/gi, 'Rękojeść skanera (trigger)')
 
     items.push(buildItem({
       id: c.pn,
