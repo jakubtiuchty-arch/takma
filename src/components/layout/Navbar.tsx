@@ -301,15 +301,15 @@ export default function Navbar() {
                             >
                               <div>
                               <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-3">Polecany produkt</p>
-                              <div className={clsx("relative w-full mb-3", item.featuredProduct.imageHeight || 'h-40')}>
-                                <Image
-                                  src={item.featuredProduct.image}
-                                  alt={item.featuredProduct.name}
-                                  fill
-                                  className="object-contain"
-                                  sizes="260px"
-                                />
-                              </div>
+                              {/* CSS background zamiast <img> — obrazy menu nie mogą konkurować
+                                  o miniaturę SERP z obrazem produktu na kartach (Google wybierał
+                                  drukarkę z menu zamiast np. białej rolki etykiet) */}
+                              <div
+                                role="img"
+                                aria-label={item.featuredProduct.name}
+                                className={clsx("relative w-full mb-3 bg-contain bg-center bg-no-repeat", item.featuredProduct.imageHeight || 'h-40')}
+                                style={{ backgroundImage: `url(${item.featuredProduct.image})` }}
+                              />
                               <p className="text-sm font-bold text-gray-900 group-hover/featured:text-primary-600 transition-colors">
                                 {item.featuredProduct.name}
                               </p>
