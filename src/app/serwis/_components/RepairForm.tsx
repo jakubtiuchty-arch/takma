@@ -32,7 +32,7 @@ const repairFormSchema = z.object({
     message: 'Wybierz typ urzadzenia',
   }),
   deviceModel: z.string().min(1, 'Wpisz model urzadzenia'),
-  serialNumber: z.string().optional(),
+  serialNumber: z.string().min(1, 'Podaj numer seryjny lub zaznacz, ze jest nieczytelny'),
   purchaseDate: z.string().optional(),
   isWarranty: z.enum(['tak', 'nie', 'nie_wiem']),
 
@@ -110,12 +110,15 @@ export default function RepairForm() {
   const [submittedLastName, setSubmittedLastName] = useState<string>('')
   const [submittedPhone, setSubmittedPhone] = useState<string>('')
 
+  const [serialUnreadable, setSerialUnreadable] = useState(false)
+
   const {
     register,
     handleSubmit,
     formState: { errors },
     watch,
     trigger,
+    setValue,
   } = useForm<RepairFormData>({
     resolver: zodResolver(repairFormSchema),
     defaultValues: {
@@ -142,7 +145,7 @@ export default function RepairForm() {
     if (currentStep === 1) {
       fieldsToValidate = ['firstName', 'lastName', 'email', 'phone', 'company', 'nip']
     } else if (currentStep === 2) {
-      fieldsToValidate = ['deviceType', 'deviceModel', 'isWarranty']
+      fieldsToValidate = ['deviceType', 'deviceModel', 'serialNumber', 'isWarranty']
     } else if (currentStep === 3) {
       fieldsToValidate = ['issueDescription', 'urgency']
     } else if (currentStep === 4) {
@@ -497,15 +500,31 @@ export default function RepairForm() {
 
                 <div>
                   <label htmlFor="serialNumber" className="block text-sm font-medium text-gray-700 mb-2">
-                    Numer seryjny (opcjonalnie)
+                    Numer seryjny *
                   </label>
                   <input
                     {...register('serialNumber')}
                     id="serialNumber"
                     type="text"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-full focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    disabled={serialUnreadable}
+                    className={`w-full px-3 py-2 border rounded-full focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100 disabled:text-gray-500 ${errors.serialNumber ? 'border-red-500' : 'border-gray-300'}`}
                     placeholder="S/N: XXXXXXXXXXXX"
                   />
+                  <label className="mt-2 flex items-center gap-2 text-sm text-gray-600 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      checked={serialUnreadable}
+                      onChange={(e) => {
+                        setSerialUnreadable(e.target.checked)
+                        setValue('serialNumber', e.target.checked ? 'NIECZYTELNY' : '', { shouldValidate: true })
+                      }}
+                      className="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    Numer seryjny jest nieczytelny lub zatarty
+                  </label>
+                  {errors.serialNumber && (
+                    <p className="mt-1 text-sm text-red-600">{errors.serialNumber.message}</p>
+                  )}
                 </div>
 
                 <div>
