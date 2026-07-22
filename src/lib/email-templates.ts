@@ -786,6 +786,8 @@ export function buildRepairSubmittedEmail(data: {
   deviceModel: string
   problemDescription: string
   isWarranty: boolean
+  loginEmail?: string
+  generatedPassword?: string
 }): string {
   const deviceTypeText: Record<string, string> = {
     drukarka: 'Drukarka etykiet',
@@ -819,6 +821,14 @@ export function buildRepairSubmittedEmail(data: {
           '3. Otrzymasz wycen&#281; naprawy na email<br />' +
           '4. Po akceptacji &mdash; naprawa i wysy&#322;ka zwrotna'
         ) +
+        (data.generatedPassword && data.loginEmail
+          ? emailSectionTitle('Twoje dane do panelu klienta') +
+            emailDataTable([
+              { label: 'Login (email)', value: `<strong>${esc(data.loginEmail)}</strong>` },
+              { label: 'Has&#322;o', value: `<strong style="font-family:monospace">${esc(data.generatedPassword)}</strong>` },
+            ]) +
+            emailText('Has&#322;o mo&#380;esz zmieni&#263; w panelu klienta po zalogowaniu.')
+          : '') +
         emailInfoBlue(
           '&#346;led&#378; status naprawy i pisz z serwisem w <a href="https://www.serwis-zebry.pl/logowanie" style="color:#1e40af;font-weight:600">panelu klienta</a>.'
         ) +

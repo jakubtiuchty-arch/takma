@@ -167,6 +167,7 @@ export async function sendRepairSubmittedEmail(data: {
   deviceModel: string
   problemDescription: string
   isWarranty: boolean
+  generatedPassword?: string
 }) {
   return sendEmail({
     to: data.to,
@@ -179,6 +180,8 @@ export async function sendRepairSubmittedEmail(data: {
       deviceModel: data.deviceModel,
       problemDescription: data.problemDescription,
       isWarranty: data.isWarranty,
+      loginEmail: data.to,
+      generatedPassword: data.generatedPassword,
     }),
   })
 }

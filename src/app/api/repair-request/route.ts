@@ -138,6 +138,56 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Auto-rejestracja — utworz konto jesli nie istnieje (jak w serwis-zebry)
+    let generatedPassword: string | undefined
+    try {
+      const { data: existingProfile } = await supabase
+        .from('profiles')
+        .select('id')
+        .ilike('email', validatedData.email)
+        .maybeSingle()
+
+      let userId: string | null = null
+
+      if (existingProfile) {
+        userId = existingProfile.id
+      } else {
+        generatedPassword = `Serwis${Math.random().toString(36).slice(2, 8)}!`
+        const { data: authData, error: authError } = await supabase.auth.admin.createUser({
+          email: validatedData.email,
+          password: generatedPassword,
+          email_confirm: true,
+          user_metadata: {
+            first_name: validatedData.firstName,
+            last_name: validatedData.lastName,
+          },
+        })
+
+        if (authError) {
+          console.error('Auto-register error:', authError.message)
+          generatedPassword = undefined
+        } else {
+          userId = authData.user.id
+          await supabase.from('profiles').update({
+            phone: validatedData.phone,
+            company_name: validatedData.company || null,
+            nip: validatedData.nip || null,
+            street: validatedData.street,
+            city: validatedData.city,
+            postal_code: validatedData.zipCode,
+          }).eq('id', userId)
+        }
+      }
+
+      if (userId) {
+        await supabase.from('repair_requests')
+          .update({ user_id: userId })
+          .eq('id', newRequest.id)
+      }
+    } catch (autoRegError) {
+      console.error('Auto-register failed (non-blocking):', autoRegError)
+    }
+
     // Upload zdjec
     let photoUrls: string[] = []
     if (files.length > 0) {
@@ -168,6 +218,7 @@ export async function POST(request: NextRequest) {
         deviceModel: validatedData.deviceModel,
         problemDescription: validatedData.issueDescription,
         isWarranty: isWarrantyRepair,
+        generatedPassword,
       })
 
       const ADMIN_EMAILS = ['jakub.tiuchty@takma.com.pl', 'serwis@takma.com.pl']

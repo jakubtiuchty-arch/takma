@@ -20,6 +20,8 @@ export async function POST(request: Request) {
     const supabaseAdmin = createSerwisServiceClient()
 
     // 1. Create user in Supabase Auth
+    let user: { id: string; email?: string } | null = null
+
     const { data: authData, error: authError } = await supabaseAdmin.auth.admin.createUser({
       email: validatedData.email,
       password: validatedData.password,
@@ -34,14 +36,54 @@ export async function POST(request: Request) {
     })
 
     if (authError) {
-      console.error('[REGISTER] Auth error:', authError)
-      return NextResponse.json(
-        { error: authError.message },
-        { status: 400 }
-      )
+      // Konto moglo juz powstac przez auto-rejestracje przy zgloszeniu —
+      // wtedy nadpisz wygenerowane haslo haslem wybranym przez klienta,
+      // ale tylko na koncie podpietym do tego zgloszenia i bez zadnego logowania
+      const emailExists = authError.code === 'email_exists' ||
+        authError.message.toLowerCase().includes('already been registered')
+
+      if (emailExists) {
+        const { data: repair } = await supabaseAdmin
+          .from('repair_requests')
+          .select('user_id, email')
+          .eq('id', validatedData.repairId)
+          .maybeSingle()
+
+        if (repair?.user_id) {
+          const { data: existingUser } = await supabaseAdmin.auth.admin.getUserById(repair.user_id)
+          const u = existingUser?.user
+          if (
+            u &&
+            u.email?.toLowerCase() === validatedData.email.toLowerCase() &&
+            !u.last_sign_in_at
+          ) {
+            const { data: updated, error: pwError } = await supabaseAdmin.auth.admin.updateUserById(u.id, {
+              password: validatedData.password,
+              user_metadata: {
+                ...u.user_metadata,
+                marketing_consent: validatedData.marketingConsent,
+                source: 'takma',
+              },
+            })
+            if (!pwError && updated.user) {
+              user = updated.user
+            }
+          }
+        }
+      }
+
+      if (!user) {
+        console.error('[REGISTER] Auth error:', authError)
+        return NextResponse.json(
+          { error: authError.message },
+          { status: 400 }
+        )
+      }
+    } else {
+      user = authData.user
     }
 
-    if (!authData.user) {
+    if (!user) {
       return NextResponse.json(
         { error: 'Nie udalo sie utworzyc uzytkownika' },
         { status: 500 }
@@ -51,7 +93,7 @@ export async function POST(request: Request) {
     // 2. Link repair request with user_id
     const { error: updateError } = await supabaseAdmin
       .from('repair_requests')
-      .update({ user_id: authData.user.id })
+      .update({ user_id: user.id })
       .eq('id', validatedData.repairId)
 
     if (updateError) {
@@ -62,7 +104,7 @@ export async function POST(request: Request) {
     const { error: profileError } = await supabaseAdmin
       .from('profiles')
       .upsert({
-        id: authData.user.id,
+        id: user.id,
         email: validatedData.email,
         first_name: validatedData.firstName || null,
         last_name: validatedData.lastName || null,
@@ -91,8 +133,8 @@ export async function POST(request: Request) {
     return NextResponse.json({
       success: true,
       user: {
-        id: authData.user.id,
-        email: authData.user.email,
+        id: user.id,
+        email: user.email,
       },
       tokenHash,
       message: 'Konto utworzone pomyslnie',
