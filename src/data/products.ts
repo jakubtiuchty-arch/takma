@@ -25295,7 +25295,109 @@ Zebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCo
     createdAt: '2025-06-01',
     updatedAt: '2026-05-07',
   },
+    // Zebra TC201 — terminal mobilny 4. generacji TC2x (premiera 21.07.2026)
   {
+    id: 'zebra-tc201',
+    slug: 'zebra-tc201',
+    name: 'Zebra TC201',
+    shortDescription: 'Zebra TC201 — terminal mobilny 4. generacji TC2x: Qualcomm Dragonwing Q-6690, Wi-Fi 7, Bluetooth 6, 5G, skaner SR500, IP68. Następca TC21/TC22/TC26/TC27',
+    description: `Zebra TC201 to terminal mobilny (kolektor danych) czwartej generacji serii TC2x — następca bestsellerowych [TC21](/produkt/zebra-tc22), [TC22](/produkt/zebra-tc22), TC26 i [TC27](/produkt/zebra-tc27), który po raz pierwszy w tej klasie łączy 5G i Wi-Fi 7 w jednym urządzeniu. Premiera w Polsce: 21 lipca 2026.
+
+Sercem TC201 jest procesor Qualcomm Dragonwing Q-6690 (do 2,0 GHz) — nowa architektura o wydajności wyższej nawet o 150% względem starszych terminali TC2x. Oferowany wariant WWAN łączy modem 5G NR Sub-6 (Rel-17) z Gigabit LTE-A, Wi-Fi 7 (tri-band, 2×2 MU-MIMO, MLO) i Bluetooth 6.0 — do tego fizyczny SIM, dual eSIM oraz dwuzakresowy GNSS L1/L5 (GPS, GLONASS, Galileo, BeiDou, QZSS). Kurier, serwisant i magazynier dostają jedną platformę zamiast wyboru „Wi-Fi albo komórka" jak w poprzedniej generacji (TC22 vs TC27).
+
+Ekran 6" FHD+ (2160×1080, 450 nitów) jest laminowany optycznie i chroniony szkłem Corning Gorilla Glass. Skaner SR500 obsługuje kody 1D/2D; w serii dostępne są też AC670 Advanced Range (odczyt do 30 m + zdjęcia) i kątowy SR560 (60°). Obudowa IP68/IP65 znosi upadki z 1,53 m na beton (do 2,13 m z bootem ochronnym), 750 cykli tumble z 0,5 m i pracę od -20°C do +50°C — to najwyższa odporność w historii serii TC2.
+
+TC201 celuje też w sektory regulowane: certyfikaty FIPS 140-3 i Common Criteria oraz Android Strongbox z dedykowanym układem Secure Element (wybrane SKU) — wymagane w administracji publicznej, finansach i ochronie zdrowia. Zintegrowany czytnik UHF RFID (ponad 200 tagów/s, zasięg do 1,2 m) pojawi się w wariantach EMEA planowo w IV kwartale 2026. Pełne omówienie nowości: [Zebra TC201 — przewodnik](/poradnik/zebra-tc201).`,
+    categoryId: 'terminale-mobilne',
+    manufacturerId: 'zebra',
+    tags: ['logistyka', 'retail', 'magazyn'],
+    images: [
+      '/images/products/tc201_front.png',
+      '/images/products/tc201_front_left.png',
+      '/images/products/tc201_front_right.png',
+      '/images/products/tc201_back.png',
+    ],
+    imageDescriptions: [
+      'Zebra TC201 — terminal mobilny 4. generacji TC2x, widok z przodu, ekran 6 cali FHD+',
+      'Zebra TC201 — widok z przodu pod kątem, przyciski skanowania boczne',
+      'Zebra TC201 — widok z przodu z prawej, obudowa IP68',
+      'Zebra TC201 — widok z tyłu, kamera 16 MP z autofokusem i okno skanera SR500',
+    ],
+    seoTitle: 'Zebra TC201 — terminal mobilny 4. gen | 5G, Wi-Fi 7, od 2 958 zł',
+    seoDescription: 'Zebra TC201 — terminal mobilny (kolektor danych) 4. generacji TC2x: Qualcomm Dragonwing Q-6690, 5G + Wi-Fi 7 w jednym, Bluetooth 6, skaner SR500, IP68, FIPS 140-3. Następca TC22/TC27. Kontrakty OneCare 3 i 5 lat.',
+    availability: 'on-order',
+    isNew: true,
+    isBestseller: false,
+    priceFrom: 2957.69,
+    variants: [
+      {
+        partNumber: 'TC201G-3S3P6BA00-TR',
+        name: 'TC201 5G + Wi-Fi 7, SR500, 6/64 GB',
+        attributes: { 'Łączność': '5G + Wi-Fi 7', 'Skaner': 'SR500', 'Pamięć': '6/64 GB' },
+        priceFrom: 2957.69,
+        availability: 'on-order',
+      },
+    ],
+    specifications: [
+      { name: 'System operacyjny', value: 'Android (wsparcie aktualizacji do Android 16)' },
+      { name: 'Procesor', value: 'Qualcomm Dragonwing Q-6690, do 2,0 GHz (do +150% wydajności vs starsze TC2x)' },
+      { name: 'Pamięć', value: '6 GB RAM / 64 GB Flash (UFS 2.2)' },
+      { name: 'Wyświetlacz', value: '6,0" FHD+ (2160×1080), 450 nitów, laminowany optycznie, Corning Gorilla Glass' },
+      { name: 'Skaner', value: 'SR500 1D/2D (w serii także AC670 Advanced Range do 30 m i kątowy SR560)' },
+      { name: 'Sieć komórkowa', value: '5G NR Sub-6 (Rel-17) + Gigabit LTE-A' },
+      { name: 'SIM', value: '1× SIM fizyczny + Dual eSIM' },
+      { name: 'WLAN', value: 'Wi-Fi 7 (tri-band, 2×2 MU-MIMO, MLO)' },
+      { name: 'Bluetooth', value: 'v6.0 (2×2 Tx, BLE beacon)' },
+      { name: 'GNSS', value: 'Dwuzakresowy L1/L5: GPS, GLONASS, Galileo, BeiDou, QZSS' },
+      { name: 'Kamery', value: '16 MP AF z lampą (tył) + 5 MP (przód)' },
+      { name: 'Bateria', value: '3 800 mAh (14,63 Wh), standardowa' },
+      { name: 'Klasa ochrony', value: 'IP68 / IP65' },
+      { name: 'Upadki', value: '1,53 m na beton (do 2,13 m z bootem ochronnym)' },
+      { name: 'Tumble', value: '750 cykli z 0,5 m' },
+      { name: 'Temperatura pracy', value: '-20°C do +50°C' },
+      { name: 'Bezpieczeństwo', value: 'FIPS 140-3, Common Criteria, Android Strongbox + Secure Element (wybrane SKU)' },
+      { name: 'RFID', value: 'Zintegrowany UHF RFID (opcja, EMEA planowo Q4 2026): >200 tagów/s, do 1,2 m' },
+    ],
+    servicePlans: [
+      { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-TC201XX-3C00', duration: '3 lata', priceNetto: 911.55 },
+      { name: 'Zebra OneCare Essential — 5 lat', partNumber: 'Z1AE-TC201XX-5C00', duration: '5 lat', priceNetto: 1519.23 },
+    ],
+    faq: [
+      {
+        question: 'Czy Zebra TC201 jest już dostępna?',
+        answer: 'Premiera TC201 odbyła się 21 lipca 2026. Pierwsze dostawy realizowane są na zamówienie — aktualną dostępność i termin dostawy pokazujemy na żywo przy wariancie, a przy zamówieniu potwierdzamy go indywidualnie.',
+      },
+      {
+        question: 'Czym TC201 różni się od TC22 i TC27?',
+        answer: 'TC201 to czwarta generacja serii TC2x. Największa zmiana: 5G i Wi-Fi 7 w jednym urządzeniu (wcześniej trzeba było wybierać między TC22 Wi-Fi a TC27 5G), procesor Dragonwing Q-6690 o wydajności wyższej do 150%, Bluetooth 6, skaner AC670 do 30 m w opcji oraz certyfikaty FIPS 140-3 i Common Criteria, których poprzednie modele nie miały.',
+      },
+      {
+        question: 'Kiedy będzie wariant TC201 z RFID?',
+        answer: 'Warianty ze zintegrowanym czytnikiem UHF RFID (ponad 200 tagów/s, zasięg do 1,2 m) mają pojawić się w regionie EMEA planowo w IV kwartale 2026.',
+      },
+      {
+        question: 'Co obejmuje kontrakt Zebra OneCare Essential dla TC201?',
+        answer: 'OneCare Essential to pełna ochrona serwisowa (comprehensive) z naprawą w 3 dni robocze (TAT) — obejmuje także uszkodzenia przypadkowe, np. zbity ekran. Dla TC201 oferujemy warianty 3-letnie (Z1AE-TC201XX-3C00) i 5-letnie (Z1AE-TC201XX-5C00); kontrakt trzeba dokupić w ciągu 30 dni od zakupu terminala.',
+      },
+      {
+        question: 'Czy warto wymieniać TC22 na TC201?',
+        answer: 'Jeśli flota TC22 działa bez zarzutu — nie ma pośpiechu, TC22 pozostaje w sprzedaży i wsparciu. TC201 warto wybrać przy nowych wdrożeniach, gdy potrzebujesz 5G i Wi-Fi 7 w jednym urządzeniu, dalekiego skanowania (AC670 do 30 m) albo certyfikacji FIPS/Common Criteria do sektora regulowanego.',
+      },
+    ],
+    applications: [
+      'Kurierzy i logistyka ostatniej mili — 5G, dual eSIM i GNSS L1/L5 w jednym urządzeniu',
+      'Magazyn i zaplecze sklepu — skanowanie 1D/2D, opcja AC670 do 30 m',
+      'Retail — inwentaryzacja, sprawdzanie cen, komunikacja zespołu',
+      'Sektor regulowany (administracja, finanse, zdrowie) — FIPS 140-3, Common Criteria',
+    ],
+    compatibleAccessories: [],
+    downloads: [],
+    relatedProducts: ['zebra-tc22', 'zebra-tc27', 'zebra-tc501'],
+    createdAt: '2026-07-24',
+    updatedAt: '2026-07-24',
+    sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc201.html',
+  },
+{
     id: 'zebra-tc22',
     slug: 'zebra-tc22',
     name: 'Zebra TC22',
