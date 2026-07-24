@@ -25303,7 +25303,7 @@ Zebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCo
     shortDescription: 'Zebra TC201 — terminal mobilny 4. generacji TC2x: Qualcomm Dragonwing Q-6690, Wi-Fi 7, Bluetooth 6, 5G, skaner SR500, IP68. Następca TC21/TC22/TC26/TC27',
     description: `Zebra TC201 to terminal mobilny (kolektor danych) czwartej generacji serii TC2x — następca bestsellerowych [TC21](/produkt/zebra-tc22), [TC22](/produkt/zebra-tc22), TC26 i [TC27](/produkt/zebra-tc27), który po raz pierwszy w tej klasie łączy 5G i Wi-Fi 7 w jednym urządzeniu. Premiera w Polsce: 21 lipca 2026.
 
-Sercem TC201 jest procesor Qualcomm Dragonwing Q-6690 (do 2,0 GHz) — nowa architektura o wydajności wyższej nawet o 150% względem starszych terminali TC2x. Oferowany wariant WWAN łączy modem 5G NR Sub-6 (Rel-17) z Gigabit LTE-A, Wi-Fi 7 (tri-band, 2×2 MU-MIMO, MLO) i Bluetooth 6.0 — do tego fizyczny SIM, dual eSIM oraz dwuzakresowy GNSS L1/L5 (GPS, GLONASS, Galileo, BeiDou, QZSS). Kurier, serwisant i magazynier dostają jedną platformę zamiast wyboru „Wi-Fi albo komórka" jak w poprzedniej generacji (TC22 vs TC27).
+Sercem TC201 jest procesor Qualcomm Dragonwing Q-6690 (do 2,0 GHz) — nowa architektura o wydajności wyższej nawet o 150% względem starszych terminali TC2x. Wariant WWAN (TC201G) łączy modem 5G NR Sub-6 (Rel-17) z Gigabit LTE-A, Wi-Fi 7 (tri-band, 2×2 MU-MIMO, MLO) i Bluetooth 6.0 — do tego fizyczny SIM, dual eSIM oraz dwuzakresowy GNSS L1/L5 (GPS, GLONASS, Galileo, BeiDou, QZSS). Kurier, serwisant i magazynier dostają jedną platformę zamiast wyboru „Wi-Fi albo komórka" jak w poprzedniej generacji (TC22 vs TC27).
 
 Ekran 6" FHD+ (2160×1080, 450 nitów) jest laminowany optycznie i chroniony szkłem Corning Gorilla Glass. Skaner SR500 obsługuje kody 1D/2D; w serii dostępne są też AC670 Advanced Range (odczyt do 30 m + zdjęcia) i kątowy SR560 (60°). Obudowa IP68/IP65 znosi upadki z 1,53 m na beton (do 2,13 m z bootem ochronnym), 750 cykli tumble z 0,5 m i pracę od -20°C do +50°C — to najwyższa odporność w historii serii TC2.
 
@@ -25323,34 +25323,81 @@ TC201 celuje też w sektory regulowane: certyfikaty FIPS 140-3 i Common Criteria
       'Zebra TC201 — widok z przodu z prawej, obudowa IP68',
       'Zebra TC201 — widok z tyłu, kamera 16 MP z autofokusem i okno skanera SR500',
     ],
-    seoTitle: 'Zebra TC201 — terminal mobilny 4. gen | 5G, Wi-Fi 7, od 2 958 zł',
+    seoTitle: 'Zebra TC201 — terminal mobilny 4. gen | 5G, Wi-Fi 7, od 2 658 zł',
     seoDescription: 'Zebra TC201 — terminal mobilny (kolektor danych) 4. generacji TC2x: Qualcomm Dragonwing Q-6690, 5G + Wi-Fi 7 w jednym, Bluetooth 6, skaner SR500, IP68, FIPS 140-3. Następca TC22/TC27. Kontrakty OneCare 3 i 5 lat.',
     availability: 'on-order',
     isNew: true,
     isBestseller: false,
-    priceFrom: 2957.69,
+    priceFrom: 2657.59,
+    variantAttributeTooltips: {
+      'Skaner': 'SR500 — standardowy 1D/2D.\n\nAC670 — Advanced Range: odczyt do 30 m + tryb zdjęć.',
+      'Bateria': 'Standardowa 3 800 mAh (14,63 Wh).\n\nRozszerzona 5 200 mAh (20,02 Wh).',
+      'Opcje': 'Secure Element — układ bezpieczeństwa (FIPS 140-3, sektor regulowany).\n\nHot swap — wymiana baterii bez wyłączania terminala.',
+    },
     variants: [
+      {
+        partNumber: 'TC2010-0S3P6BA00-A6',
+        name: 'TC201 Wi-Fi 7, SR500, 6/64 GB',
+        attributes: { 'Łączność': 'Wi-Fi 7', 'Skaner': 'SR500', 'Pamięć': '6/64 GB', 'Bateria': 'Standardowa', 'Opcje': '—' },
+        priceFrom: 2657.59,
+        availability: 'on-order',
+      },
+      {
+        partNumber: 'TC2010-0S3P6BE00-A6',
+        name: 'TC201 Wi-Fi 7, SR500, 6/64 GB, bateria rozszerzona',
+        attributes: { 'Łączność': 'Wi-Fi 7', 'Skaner': 'SR500', 'Pamięć': '6/64 GB', 'Bateria': 'Rozszerzona', 'Opcje': '—' },
+        priceFrom: 2788.04,
+        availability: 'on-order',
+      },
+      {
+        partNumber: 'TC2010-083P4BA01-A6',
+        name: 'TC201 Wi-Fi 7, SR500, 8/128 GB, Secure Element',
+        attributes: { 'Łączność': 'Wi-Fi 7', 'Skaner': 'SR500', 'Pamięć': '8/128 GB', 'Bateria': 'Standardowa', 'Opcje': 'Secure Element' },
+        priceFrom: 3048.99,
+        availability: 'on-order',
+      },
+      {
+        partNumber: 'TC2010-083P4BA11-A6',
+        name: 'TC201 Wi-Fi 7, SR500, 8/128 GB, hot swap + Secure Element',
+        attributes: { 'Łączność': 'Wi-Fi 7', 'Skaner': 'SR500', 'Pamięć': '8/128 GB', 'Bateria': 'Standardowa', 'Opcje': 'Hot swap + Secure Element' },
+        priceFrom: 3253.98,
+        availability: 'on-order',
+      },
+      {
+        partNumber: 'TC2010-0S3S6BA00-A6',
+        name: 'TC201 Wi-Fi 7, AC670 (30 m), 6/64 GB',
+        attributes: { 'Łączność': 'Wi-Fi 7', 'Skaner': 'AC670 (30 m)', 'Pamięć': '6/64 GB', 'Bateria': 'Standardowa', 'Opcje': '—' },
+        priceFrom: 3309.89,
+        availability: 'on-order',
+      },
+      {
+        partNumber: 'TC2010-083S4BA01-A6',
+        name: 'TC201 Wi-Fi 7, AC670 (30 m), 8/128 GB, Secure Element',
+        attributes: { 'Łączność': 'Wi-Fi 7', 'Skaner': 'AC670 (30 m)', 'Pamięć': '8/128 GB', 'Bateria': 'Standardowa', 'Opcje': 'Secure Element' },
+        priceFrom: 3813.08,
+        availability: 'on-order',
+      },
       {
         partNumber: 'TC201G-3S3P6BA00-TR',
         name: 'TC201 5G + Wi-Fi 7, SR500, 6/64 GB',
-        attributes: { 'Łączność': '5G + Wi-Fi 7', 'Skaner': 'SR500', 'Pamięć': '6/64 GB' },
-        priceFrom: 2957.69,
+        attributes: { 'Łączność': '5G + Wi-Fi 7', 'Skaner': 'SR500', 'Pamięć': '6/64 GB', 'Bateria': 'Standardowa', 'Opcje': '—' },
+        priceFrom: 2657.59,
         availability: 'on-order',
       },
     ],
     specifications: [
       { name: 'System operacyjny', value: 'Android (wsparcie aktualizacji do Android 16)' },
       { name: 'Procesor', value: 'Qualcomm Dragonwing Q-6690, do 2,0 GHz (do +150% wydajności vs starsze TC2x)' },
-      { name: 'Pamięć', value: '6 GB RAM / 64 GB Flash (UFS 2.2)' },
+      { name: 'Pamięć', value: '6 GB / 64 GB (UFS 2.2) lub 8 GB / 128 GB (UFS 3.1) — zależnie od wariantu' },
       { name: 'Wyświetlacz', value: '6,0" FHD+ (2160×1080), 450 nitów, laminowany optycznie, Corning Gorilla Glass' },
-      { name: 'Skaner', value: 'SR500 1D/2D (w serii także AC670 Advanced Range do 30 m i kątowy SR560)' },
-      { name: 'Sieć komórkowa', value: '5G NR Sub-6 (Rel-17) + Gigabit LTE-A' },
+      { name: 'Skaner', value: 'SR500 1D/2D lub AC670 Advanced Range (do 30 m, tryb zdjęć) — zależnie od wariantu' },
+      { name: 'Sieć komórkowa', value: '5G NR Sub-6 (Rel-17) + Gigabit LTE-A (wariant WWAN TC201G)' },
       { name: 'SIM', value: '1× SIM fizyczny + Dual eSIM' },
       { name: 'WLAN', value: 'Wi-Fi 7 (tri-band, 2×2 MU-MIMO, MLO)' },
       { name: 'Bluetooth', value: 'v6.0 (2×2 Tx, BLE beacon)' },
       { name: 'GNSS', value: 'Dwuzakresowy L1/L5: GPS, GLONASS, Galileo, BeiDou, QZSS' },
       { name: 'Kamery', value: '16 MP AF z lampą (tył) + 5 MP (przód)' },
-      { name: 'Bateria', value: '3 800 mAh (14,63 Wh), standardowa' },
+      { name: 'Bateria', value: '3 800 mAh (14,63 Wh) standardowa lub 5 200 mAh (20,02 Wh) rozszerzona; hot swap w wybranych wariantach' },
       { name: 'Klasa ochrony', value: 'IP68 / IP65' },
       { name: 'Upadki', value: '1,53 m na beton (do 2,13 m z bootem ochronnym)' },
       { name: 'Tumble', value: '750 cykli z 0,5 m' },
