@@ -25444,6 +25444,8 @@ TC201 celuje też w sektory regulowane: certyfikaty FIPS 140-3 i Common Criteria
       models: [
         {
           name: 'Zebra TC201',
+          slug: 'zebra-tc201',
+          highlight: true,
           specs: {
             'Łączność': 'Wi-Fi 7 + BT 6.0; 5G w wariancie WWAN',
             'Procesor': 'Dragonwing Q-6690, 2,0 GHz (do +150%)',
@@ -25459,6 +25461,7 @@ TC201 celuje też w sektory regulowane: certyfikaty FIPS 140-3 i Common Criteria
         },
         {
           name: 'Zebra TC22',
+          slug: 'zebra-tc22',
           specs: {
             'Łączność': 'Wi-Fi 6/6E + BT 5.2 (5G: osobny TC27)',
             'Procesor': 'Qualcomm 5430, 2,1 GHz',
@@ -25474,6 +25477,7 @@ TC201 celuje też w sektory regulowane: certyfikaty FIPS 140-3 i Common Criteria
         },
         {
           name: 'Honeywell CT32',
+          slug: 'honeywell-ct32',
           specs: {
             'Łączność': 'Wi-Fi 6E + BT 5.3; 5G w wariantach X1N',
             'Procesor': 'Qualcomm QCS4490, 2,4 GHz',
