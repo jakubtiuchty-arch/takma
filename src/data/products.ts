@@ -25301,7 +25301,7 @@ Zebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCo
     slug: 'zebra-tc201',
     name: 'Zebra TC201',
     shortDescription: 'Zebra TC201 — terminal mobilny 4. generacji TC2x: Qualcomm Dragonwing Q-6690, Wi-Fi 7, Bluetooth 6, 5G, skaner SR500, IP68. Następca TC21/TC22/TC26/TC27',
-    description: `Zebra TC201 to terminal mobilny (kolektor danych) czwartej generacji serii TC2x — następca bestsellerowych [TC21](/produkt/zebra-tc22), [TC22](/produkt/zebra-tc22), TC26 i [TC27](/produkt/zebra-tc27), który po raz pierwszy w tej klasie łączy 5G i Wi-Fi 7 w jednym urządzeniu. Premiera w Polsce: 21 lipca 2026.
+    description: `Zebra TC201 to terminal mobilny (kolektor danych) czwartej generacji serii TC2x — następca bestsellerowych [TC21](/produkt/zebra-tc22), [TC22](/produkt/zebra-tc22), TC26 i [TC27](/produkt/zebra-tc27), który po raz pierwszy w tej klasie łączy 5G i Wi-Fi 7 w jednym urządzeniu.
 
 Sercem TC201 jest procesor Qualcomm Dragonwing Q-6690 (do 2,0 GHz) — nowa architektura o wydajności wyższej nawet o 150% względem starszych terminali TC2x. Wariant WWAN (TC201G) łączy modem 5G NR Sub-6 (Rel-17) z Gigabit LTE-A, Wi-Fi 7 (tri-band, 2×2 MU-MIMO, MLO) i Bluetooth 6.0 — do tego fizyczny SIM, dual eSIM oraz dwuzakresowy GNSS L1/L5 (GPS, GLONASS, Galileo, BeiDou, QZSS). Kurier, serwisant i magazynier dostają jedną platformę zamiast wyboru „Wi-Fi albo komórka" jak w poprzedniej generacji (TC22 vs TC27).
 
@@ -25430,7 +25430,7 @@ W cenie terminala jest pakiet Zebra DNA Core (m.in. Enterprise Browser, Device C
     faq: [
       {
         question: 'Czy Zebra TC201 jest już dostępna?',
-        answer: 'Premiera TC201 odbyła się 21 lipca 2026. Pierwsze dostawy realizowane są na zamówienie — aktualną dostępność i termin dostawy pokazujemy na żywo przy wariancie, a przy zamówieniu potwierdzamy go indywidualnie.',
+        answer: 'Tak, TC201 jest już w sprzedaży — pierwsze partie są w drodze do dystrybucji. Aktualną dostępność i termin dostawy pokazujemy na żywo przy każdym wariancie, a przy zamówieniu potwierdzamy go indywidualnie.',
       },
       {
         question: 'Czym TC201 różni się od TC22 i TC27?',
