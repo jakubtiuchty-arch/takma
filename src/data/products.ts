@@ -25427,6 +25427,42 @@ TC201 celuje też w sektory regulowane: certyfikaty FIPS 140-3 i Common Criteria
         answer: 'OneCare Essential to pełna ochrona serwisowa (comprehensive) z naprawą w 3 dni robocze (TAT) — obejmuje także uszkodzenia przypadkowe, np. zbity ekran. Dla TC201 oferujemy warianty 3-letnie (Z1AE-TC201XX-3C00) i 5-letnie (Z1AE-TC201XX-5C00); kontrakt trzeba dokupić w ciągu 30 dni od zakupu terminala.',
       },
       {
+        question: 'Czy Zebra TC201 ma 5G?',
+        answer: 'Tak, w wariancie WWAN (TC201G): modem 5G NR Sub-6 (Rel-17) z Gigabit LTE-A, fizyczny SIM + dual eSIM oraz dwuzakresowy GNSS L1/L5. Warianty WLAN (TC2010) łączą się przez Wi-Fi 7 i Bluetooth 6.0 — do pracy w zasięgu sieci firmowej.',
+      },
+      {
+        question: 'Jaki skaner wybrać w TC201 — SR500 czy AC670?',
+        answer: 'SR500 to standardowy skaner 1D/2D do typowej pracy z ręki — sklep, przyjęcia, inwentaryzacja. AC670 Advanced Range czyta kody z odległości do 30 m i ma tryb zdjęć — wybierz go, jeśli operatorzy skanują etykiety z wózków widłowych albo z wysokich regałów.',
+      },
+      {
+        question: 'Czy TC201 działa z akcesoriami po TC22 i TC27?',
+        answer: 'Tak — TC201 zachowuje kompatybilność z akcesoriami TC22/TC27, w tym z bateriami i stacjami ładowania. Przy migracji floty istniejące ładowarki i stacje przechodzą do nowych urządzeń, co znacząco obniża koszt wdrożenia.',
+      },
+      {
+        question: 'Czy bateria w TC201 jest wymienna? Co z hot swap?',
+        answer: 'Tak, bateria jest wymienna: standardowa 3 800 mAh (14,63 Wh) lub rozszerzona 5 200 mAh (20,02 Wh). Wymiana bez wyłączania terminala (hot swap) dostępna jest w wybranych wariantach — w naszej ofercie to TC2010-083P4BA11-A6.',
+      },
+      {
+        question: 'Czym różnią się warianty 6/64 GB i 8/128 GB?',
+        answer: 'Poza pojemnością różni je typ pamięci: 6/64 GB pracuje na UFS 2.2, a 8/128 GB na szybszym UFS 3.1. Warianty 8/128 GB w naszej ofercie mają też układ Secure Element. Przy rozbudowanych aplikacjach WMS z lokalnym cache wybierz 8/128 GB.',
+      },
+      {
+        question: 'Co daje Secure Element i certyfikat FIPS 140-3 w TC201?',
+        answer: 'To zabezpieczenia klasy rządowej: Android Strongbox z dedykowanym układem Secure Element oraz certyfikaty FIPS 140-3 i Common Criteria — wymagane w administracji publicznej, finansach i ochronie zdrowia. Poprzednie modele TC2x takich certyfikatów nie miały.',
+      },
+      {
+        question: 'Po co terminalowi Wi-Fi 7?',
+        answer: 'Wi-Fi 7 z MLO (Multi-Link Operation) korzysta jednocześnie z kilku pasm (2,4/5/6 GHz), ograniczając zakłócenia i opóźnienia — różnicę czuć w gęstych sieciach magazynowych z dziesiątkami urządzeń na jeden punkt dostępowy i przy roamingu między AP w trakcie pracy.',
+      },
+      {
+        question: 'Czy TC201 nadaje się do pracy w chłodni lub na zewnątrz?',
+        answer: 'TC201 pracuje w zakresie od -20°C do +50°C (starsze TC2x: od -10°C) i ma szczelność IP68/IP65 — wytrzymuje deszcz, kurz i mycie. Znosi upadki z 1,53 m na beton (do 2,13 m z bootem ochronnym) i 750 cykli tumble z 0,5 m.',
+      },
+      {
+        question: 'Ile kosztuje Zebra TC201?',
+        answer: 'Warianty Wi-Fi 7 zaczynają się od ok. 2 658 zł netto (SR500, 6/64 GB), wersja 5G od ok. 2 958 zł, a topowa konfiguracja z AC670 i 8/128 GB to ok. 3 813 zł. Ceny zmieniają się z kursem i dostępnością — aktualne kwoty pokazujemy na żywo przy każdym wariancie.',
+      },
+      {
         question: 'Czy warto wymieniać TC22 na TC201?',
         answer: 'Jeśli flota TC22 działa bez zarzutu — nie ma pośpiechu, TC22 pozostaje w sprzedaży i wsparciu. TC201 warto wybrać przy nowych wdrożeniach, gdy potrzebujesz 5G i Wi-Fi 7 w jednym urządzeniu, dalekiego skanowania (AC670 do 30 m) albo certyfikacji FIPS/Common Criteria do sektora regulowanego.',
       },
