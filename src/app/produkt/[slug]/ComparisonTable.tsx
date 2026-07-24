@@ -36,7 +36,10 @@ export default function ComparisonTable({ title, models }: ComparisonTableProps)
   const specKeys = Object.keys(models[0].specs)
 
   return (
-    <section id="porownanie">
+    /* data-nosnippet: Google potrafił cytować w snippecie SERP kolumnę KONKURENTA
+       (np. wagę i cenę CT32 przy karcie TC201) — tabela porównawcza nie może
+       zasilać snippetów */
+    <section id="porownanie" data-nosnippet>
       <h2 className="text-2xl font-bold text-gray-900 mb-1">{title}</h2>
       <p className="text-sm text-gray-500 mb-4">
         {models.map(m => m.name).join(' vs ')}
