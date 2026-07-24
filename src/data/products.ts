@@ -25493,7 +25493,11 @@ W cenie terminala jest pakiet Zebra DNA Core (m.in. Enterprise Browser, Device C
       'Sektor regulowany (administracja, finanse, zdrowie) — FIPS 140-3, Common Criteria, Secure Element',
     ],
     compatibleAccessories: [],
-    downloads: [],
+    downloads: [
+      { name: 'Specyfikacja techniczna TC201 (EN)', type: 'datasheet', url: '/datasheets/tc201-spec-sheet-en-us.pdf', size: 'PDF, 215 KB' },
+      { name: 'Strona produktu Zebra TC201 (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/tc201.html', size: 'Online' },
+      { name: 'Sterowniki i wsparcie Zebra', type: 'software', url: 'https://serwis-zebry.pl/sterowniki', size: 'Online' },
+    ],
     comparison: {
       title: 'Porównanie: Zebra TC201 vs TC22 vs Honeywell CT32',
       models: [
