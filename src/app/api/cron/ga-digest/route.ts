@@ -85,6 +85,11 @@ export async function GET(request: NextRequest) {
     .join('\n')
 
   const prompt = `Jesteś analitykiem ruchu e-commerce B2B (takma.com.pl — sprzedaż etykiet, taśm i terminali Zebra). Przeanalizuj dane GA4 z ostatnich 7 dni względem poprzednich 7 dni. Pisz po polsku, konkretnie, liczbami. Bez ogólników.
+
+## ZASADY ANOMALII (stosuj zanim coś nazwiesz „pilnym")
+1. SEZONOWOŚĆ TYGODNIOWA: porównuj dzień z TYM SAMYM dniem tygodnia tydzień wcześniej, nie ze średnią. W tym B2B soboty/niedziele normalnie mają 0 zdarzeń kluczowych (klik_tel/klik_mail/formularz) — zero zdarzeń w weekend to NIE anomalia.
+2. LAG ATRYBUCJI GA4: dla najświeższej doby kanał „Unassigned" i pusty landing page to zwykle NIEDOMKNIĘTE przetwarzanie atrybucji (dopina się do 24-48 h), a nie zepsute UTM-y. Skok Unassigned wyłącznie w ostatniej dobie ignoruj; alarmuj dopiero, gdy utrzymuje się w dobach starszych niż 48 h.
+3. Zanim zasugerujesz „zepsuty pomiar", sprawdź w danych, czy page_view/session_start w ogóle spadły — jeśli lecą normalnie, tag żyje.
 ${ownerContext ? `\n## 🗣️ KONTEKST OD WŁAŚCICIELA (z czatu w panelu) — BEZWZGLĘDNIE UWZGLĘDNIJ\nWłaściciel wyjaśnił poniższe sytuacje. NIE zgłaszaj ponownie jako anomalii niczego, co już wyjaśnił. Jeśli alert dotyczy wyjaśnionej sprawy — zamiast alarmować, krótko odnotuj „zgodnie z wyjaśnieniem właściciela: …". Uwzględniaj daty (wyjaśnienie może dotyczyć konkretnego okresu).\n${ownerContext}\n` : ''}${alerts.length ? `\n## ⚠️ ALERTY za wczoraj (${date}) — odnieś się do nich w analizie (ale pomiń te już wyjaśnione przez właściciela)\n${alerts.map((a) => `  - ${a}`).join('\n')}\n` : ''}
 
 ## Metryki (ostatnie 7 dni)

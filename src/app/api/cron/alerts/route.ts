@@ -101,7 +101,12 @@ async function checkGaEvents(alerts: string[]) {
       method: 'POST',
       headers: { authorization: `Bearer ${token}`, 'content-type': 'application/json' },
       body: JSON.stringify({
-        dateRanges: [{ startDate: 'yesterday', endDate: 'yesterday' }],
+        // wczoraj + ten sam dzień tygodnia tydzień wcześniej (baseline sezonowości:
+        // sobota/niedziela w B2B normalnie ma 0 zdarzeń kluczowych — fałszywe alarmy 19.07 i 25.07)
+        dateRanges: [
+          { startDate: 'yesterday', endDate: 'yesterday' },
+          { startDate: '8daysAgo', endDate: '8daysAgo' },
+        ],
         metrics: [{ name: 'sessions' }, { name: 'keyEvents' }],
       }),
     },
@@ -110,12 +115,22 @@ async function checkGaEvents(alerts: string[]) {
     alerts.push(`GA4: raport nie działa (HTTP ${res.status}).`)
     return
   }
-  const json = (await res.json()) as { rows?: { metricValues?: { value: string }[] }[] }
-  const v = json.rows?.[0]?.metricValues || []
-  const sessions = Number(v[0]?.value || 0)
-  const keyEvents = Number(v[1]?.value || 0)
-  if (sessions > 30 && keyEvents === 0) {
-    alerts.push(`GA4 takma: wczoraj ${sessions} sesji i ZERO zdarzeń kluczowych — prawdopodobnie zepsuty pomiar (gtag/consent).`)
+  const json = (await res.json()) as { rows?: { dimensionValues?: { value: string }[]; metricValues?: { value: string }[] }[] }
+  const byRange: Record<string, { sessions: number; keyEvents: number }> = {}
+  for (const row of json.rows || []) {
+    // przy wielu dateRanges GA4 dokleja wymiar dateRange (date_range_0 / date_range_1)
+    const range = row.dimensionValues?.[0]?.value || 'date_range_0'
+    byRange[range] = {
+      sessions: Number(row.metricValues?.[0]?.value || 0),
+      keyEvents: Number(row.metricValues?.[1]?.value || 0),
+    }
+  }
+  const yst = byRange['date_range_0'] || { sessions: 0, keyEvents: 0 }
+  const ref = byRange['date_range_1'] || { sessions: 0, keyEvents: 0 }
+  // Alarmuj tylko, jeśli ten sam dzień tygodnia tydzień temu MIAŁ zdarzenia —
+  // inaczej to wzorzec sezonowy (weekend), nie awaria pomiaru.
+  if (yst.sessions > 30 && yst.keyEvents === 0 && ref.keyEvents > 0) {
+    alerts.push(`GA4 takma: wczoraj ${yst.sessions} sesji i ZERO zdarzeń kluczowych (ten sam dzień tygodnia tydzień temu: ${ref.keyEvents}) — prawdopodobnie zepsuty pomiar (gtag/consent).`)
   }
 }
 
