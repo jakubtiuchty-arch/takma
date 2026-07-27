@@ -82,29 +82,38 @@ function matchesPrefilter(n: BzpNotice): boolean {
 async function fetchCandidates(fromDate: string, toDate: string): Promise<{ candidates: BzpNotice[]; raw: number }> {
   const uniq = new Map<string, BzpNotice>()
   let raw = 0
+  const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
+  // BZP rate-limituje burst requesty (HTTP 403) — retry z backoffem
   const fetchPage = async (day: string, page: number): Promise<BzpNotice[]> => {
     const url = `${BZP_API}?NoticeType=ContractNotice&PublicationDateFrom=${day}&PublicationDateTo=${day}&pageSize=100&pageNo=${page}`
-    const res = await fetch(url, { headers: { Accept: 'application/json' } })
-    if (!res.ok) throw new Error(`BZP API HTTP ${res.status} (${day} s.${page})`)
-    const rows = (await res.json()) as BzpNotice[]
-    return Array.isArray(rows) ? rows : []
+    for (let attempt = 0; attempt < 4; attempt++) {
+      const res = await fetch(url, { headers: { Accept: 'application/json' } })
+      if (res.ok) {
+        const rows = (await res.json()) as BzpNotice[]
+        return Array.isArray(rows) ? rows : []
+      }
+      if (res.status === 403 || res.status === 429 || res.status >= 500) {
+        await sleep(1500 * (attempt + 1) ** 2) // 1.5s, 6s, 13.5s
+        continue
+      }
+      throw new Error(`BZP API HTTP ${res.status} (${day} s.${page})`)
+    }
+    throw new Error(`BZP API rate limit — 4 próby nieudane (${day} s.${page})`)
   }
   const days: string[] = []
   for (let d = new Date(fromDate + 'T00:00:00Z'); d <= new Date(toDate + 'T00:00:00Z'); d = new Date(d.getTime() + 86400_000)) {
     days.push(d.toISOString().slice(0, 10))
   }
   for (const day of days) {
-    for (let start = 1; start <= 60; start += 5) {
-      const pages = await Promise.all([0, 1, 2, 3, 4].map((i) => fetchPage(day, start + i)))
-      let done = false
-      for (const rows of pages) {
-        raw += rows.length
-        for (const n of rows) {
-          if (n.noticeNumber && !uniq.has(n.noticeNumber) && matchesPrefilter(n)) uniq.set(n.noticeNumber, n)
-        }
-        if (rows.length < 100) done = true
+    // sekwencyjnie z odstępem — równoległe strony wyzwalały 403
+    for (let page = 1; page <= 60; page++) {
+      const rows = await fetchPage(day, page)
+      raw += rows.length
+      for (const n of rows) {
+        if (n.noticeNumber && !uniq.has(n.noticeNumber) && matchesPrefilter(n)) uniq.set(n.noticeNumber, n)
       }
-      if (done) break
+      if (rows.length < 100) break
+      await sleep(200)
     }
   }
   return { candidates: Array.from(uniq.values()), raw }
