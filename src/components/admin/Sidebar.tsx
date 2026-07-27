@@ -62,6 +62,15 @@ const navItems = [
     ),
   },
   {
+    label: 'Przetargi',
+    href: '/admin/przetargi',
+    icon: (
+      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 3h6m-6-6h6M5.25 4.5h13.5A1.5 1.5 0 0120.25 6v13.5a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V6a1.5 1.5 0 011.5-1.5zM9 4.5V3a1.5 1.5 0 013 0v1.5" />
+      </svg>
+    ),
+  },
+  {
     label: 'Analytics',
     href: '/admin/analytics',
     icon: (

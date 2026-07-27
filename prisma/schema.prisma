@@ -854,3 +854,29 @@ model KokpitAiDigest {
   @@unique([site, kind, periodEnd])
   @@map("kokpit_ai_digest")
 }
+
+// Monitor przetargów AutoID (BZP e-Zamówienia)
+model Tender {
+  id                   String    @id @default(cuid())
+  noticeNumber         String    @unique
+  bzpNumber            String?
+  objectId             String?
+  source               String    @default("BZP")
+  orderObject          String
+  organizationName     String?
+  organizationCity     String?
+  organizationProvince String?
+  cpvCodes             String?
+  publicationDate      DateTime?
+  submittingOffersDate DateTime?
+  url                  String?
+  score                Int       @default(0)
+  aiReason             String?
+  status               String    @default("new") // new | watched | dismissed
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+
+  @@index([status, score])
+  @@index([submittingOffersDate])
+  @@map("tenders")
+}

@@ -58,6 +58,10 @@
     {
       "path": "/api/cron/alerts",
       "schedule": "45 5 * * *"
+    },
+    {
+      "path": "/api/cron/przetargi",
+      "schedule": "15 4 * * *"
     }
   ]
 }
