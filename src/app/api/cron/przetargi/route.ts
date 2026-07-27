@@ -77,8 +77,11 @@ function matchesPrefilter(n: BzpNotice): boolean {
  * niestabilna (duplikaty i potencjalne ubytki między stronami); okno 1-dniowe
  * (~15-25 stron) minimalizuje problem. Strony w paczkach po 5 równolegle.
  */
-async function fetchNotices(fromDate: string, toDate: string): Promise<BzpNotice[]> {
-  const all: BzpNotice[] = []
+/** Zwraca TYLKO kandydatów (prefiltr + dedup w locie) — surowe ogłoszenia z htmlBody
+ *  są zbyt ciężkie, by je akumulować (4 dni ≈ >1 GB → OOM na Vercelu). */
+async function fetchCandidates(fromDate: string, toDate: string): Promise<{ candidates: BzpNotice[]; raw: number }> {
+  const uniq = new Map<string, BzpNotice>()
+  let raw = 0
   const fetchPage = async (day: string, page: number): Promise<BzpNotice[]> => {
     const url = `${BZP_API}?NoticeType=ContractNotice&PublicationDateFrom=${day}&PublicationDateTo=${day}&pageSize=100&pageNo=${page}`
     const res = await fetch(url, { headers: { Accept: 'application/json' } })
@@ -95,13 +98,16 @@ async function fetchNotices(fromDate: string, toDate: string): Promise<BzpNotice
       const pages = await Promise.all([0, 1, 2, 3, 4].map((i) => fetchPage(day, start + i)))
       let done = false
       for (const rows of pages) {
-        all.push(...rows)
+        raw += rows.length
+        for (const n of rows) {
+          if (n.noticeNumber && !uniq.has(n.noticeNumber) && matchesPrefilter(n)) uniq.set(n.noticeNumber, n)
+        }
         if (rows.length < 100) done = true
       }
       if (done) break
     }
   }
-  return all
+  return { candidates: Array.from(uniq.values()), raw }
 }
 
 const TAKMA_PROFILE = `TAKMA (takma.com.pl) — autoryzowany partner Zebra, Honeywell, Datalogic, Newland, M3 Mobile. Sprzedaje i serwisuje:
@@ -142,11 +148,7 @@ export async function GET(request: NextRequest) {
   const fromDate = request.nextUrl.searchParams.get('from') || fmt(new Date(Date.now() - days * 86400_000))
   const toDate = request.nextUrl.searchParams.get('to') || fmt(new Date())
 
-  const notices = await fetchNotices(fromDate, toDate)
-  // BZP paginuje niestabilnie — te same ogłoszenia potrafią wracać na kilku stronach
-  const uniq = new Map<string, BzpNotice>()
-  for (const n of notices) if (n.noticeNumber && !uniq.has(n.noticeNumber)) uniq.set(n.noticeNumber, n)
-  const candidates = Array.from(uniq.values()).filter(matchesPrefilter)
+  const { candidates, raw } = await fetchCandidates(fromDate, toDate)
 
   // dedup względem DB
   const existing = new Set(
@@ -172,7 +174,7 @@ export async function GET(request: NextRequest) {
     }))
     scored.push(...results)
   }
-  console.log(`[przetargi] pobrane=${notices.length} prefiltr=${candidates.length} nowe=${fresh.length}`)
+  console.log(`[przetargi] pobrane=${raw} prefiltr=${candidates.length} nowe=${fresh.length}`)
 
   if (!dry) {
     for (const n of scored) {
@@ -227,7 +229,7 @@ export async function GET(request: NextRequest) {
     okno: `${fromDate}..${toDate}`,
     days,
     dry,
-    pobrane: notices.length,
+    pobrane: raw,
     poPrefiltrze: candidates.length,
     nowe: fresh.length,
     doMaila: forMail.length,
