@@ -440,7 +440,7 @@ export default function HomePage() {
                     <img
                       src={guide.heroImage}
                       alt=""
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: '100% center' }}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: guide.cardImagePosition || '100% center' }}
                     />
                     <span className={`absolute top-3 left-3 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold backdrop-blur-sm ${
                       guide.category === 'poradnik' ? 'bg-blue-100/90 text-blue-700' :
