@@ -51734,6 +51734,148 @@ const ck67Accessories: Product[] = [
 
 const ct47Product: Product[] = [
   {
+    id: 'honeywell-ct37',
+    slug: 'honeywell-ct37',
+    name: 'Honeywell CT37',
+    shortDescription: 'Honeywell CT37 — smukły terminal mobilny 6" z 5G, Wi-Fi 6E, FlexRange z zielonym laserem do 11 m, hot swap, IP65+IP68, 241 g',
+    description: `Dla kogo? Honeywell CT37 to lekki terminal mobilny (kolektor danych) klasy enterprise z ekranem 6" FHD, zaprojektowany dla handlu detalicznego, ochrony zdrowia i logistyki ostatniej mili. Smukła obudowa (12,6 mm, 241 g) z zaokrąglonymi krawędziami pasuje do pracy z klientem w salonie sprzedaży czy hotelu, a jednocześnie znosi upadki z 1,8 m na beton i ma podwójną certyfikację IP65 + IP68.
+
+Dlaczego CT37? To urządzenie na platformie Mobility Edge z gwarantowanymi aktualizacjami od Androida 14 do 18 — flota kupiona dziś będzie wspierana latami. Procesor Qualcomm QCS4490/QCM4490 (8 rdzeni, do 2,4 GHz) z pamięcią 8 GB DDR5 i 128 GB UFS 3.1 obsłuży wymagające aplikacje WMS i wideorozmowy. Bateria z prawdziwym hot swap — wymiana bez wyłączania urządzenia i logowania od nowa — plus wariant rozszerzony 5 550 mAh na pracę wielozmianową. Ładowanie Quick Charge 4.0 w niecałe 3 godziny.
+
+Skaner FlexRange S0803 z jasnozielonym laserem celowniczym czyta kody 1D/2D z odległości do 11 m — zielony punkt jest znacznie lepiej widoczny z daleka i w pełnym słońcu niż klasyczny czerwony. Jeden terminal obsługuje więc i kasę, i wysokie regały zaplecza. W tańszym wariancie dostępny jest skaner Standard Range S0703 do typowej pracy z ręki.
+
+Łączność w wariancie WWAN: 5G (NSA/SA, prywatne sieci 5G i CBRS) + Gigabit LTE, eSIM + nano SIM, dual SIM/dual standby i dwuzakresowy GNSS L1/L5 (GPS, GLONASS, Galileo, BeiDou, QZSS, NavIC) — komplet dla kurierów i pracowników terenowych. Wszystkie warianty mają Wi-Fi 6E (tri-band, 2×2 MU-MIMO), Bluetooth 5.3 z drugim radiem BLE oraz NFC z obsługą płatności zbliżeniowych (ECP 1.0/2.0). Układ Secure Element chroni wrażliwe dane przed atakami sprzętowymi.
+
+Ekosystem akcesoriów obejmuje uchwyt nadgarstkowy do pracy bez użycia rąk (wearable), uchwyt pistoletowy do intensywnego skanowania, uchwyt z czytnikiem RFID do szybkiej inwentaryzacji, boot ochronny (upadki do 2,1 m) oraz ładowarki na platformie Universal Dock — wspólnej dla kolejnych terminali Honeywell.`,
+    categoryId: 'terminale-mobilne',
+    manufacturerId: 'honeywell',
+    tags: ['retail', 'logistyka', 'magazyn'],
+    images: [
+      '/images/products/ct37_1.png',
+      '/images/products/ct37_2.png',
+      '/images/products/ct37_3.png',
+      '/images/products/ct37_4.png',
+    ],
+    imageDescriptions: [
+      'Honeywell CT37 — terminal mobilny z ekranem 6 cali FHD, widok z przodu',
+      'Honeywell CT37 — widok z tyłu, kamera 13 MP i okno skanera FlexRange',
+      'Honeywell CT37 — widok pod kątem, smukła obudowa 12,6 mm',
+      'Honeywell CT37 — z bootem ochronnym',
+    ],
+    seoTitle: 'Honeywell CT37 — terminal mobilny 6" 5G, FlexRange 11 m | od 6 065 zł',
+    seoDescription: 'Honeywell CT37 — smukły terminal mobilny (kolektor danych) na platformie Mobility Edge: 5G + Wi-Fi 6E, FlexRange z zielonym laserem do 11 m, 8/128 GB, hot swap, IP65+IP68, 241 g, Android 14→18. Do retail, healthcare i logistyki.',
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    priceFrom: 6064.55,
+    variantAttributeTooltips: {
+      'Skaner': 'S0703 Standard Range — 1D/2D do ok. 50 cm.\n\nFlexRange S0803 — zielony laser, odczyt do 11 m.',
+      'Łączność': 'Wi-Fi 6E — praca w zasięgu sieci firmowej.\n\n5G + Wi-Fi 6E — kurierzy, teren, prywatne sieci 5G/CBRS.',
+    },
+    variants: [
+      {
+        partNumber: 'CT37-X1N-57S10DG',
+        name: 'CT37 5G + Wi-Fi 6E, S0703, 8/128 GB',
+        attributes: { 'Łączność': '5G + Wi-Fi 6E', 'Skaner': 'S0703' },
+        priceFrom: 6455.81,
+        availability: 'available' as const,
+      },
+      {
+        partNumber: 'CT37-X1N-58S10DG',
+        name: 'CT37 5G + Wi-Fi 6E, FlexRange (11 m), 8/128 GB',
+        attributes: { 'Łączność': '5G + Wi-Fi 6E', 'Skaner': 'FlexRange (11 m)' },
+        priceFrom: 6847.06,
+        availability: 'available' as const,
+      },
+      {
+        partNumber: 'CT37-X0N-57S10DG',
+        name: 'CT37 Wi-Fi 6E, S0703, 8/128 GB',
+        attributes: { 'Łączność': 'Wi-Fi 6E', 'Skaner': 'S0703' },
+        priceFrom: 6064.55,
+        availability: 'on-order' as const,
+      },
+      {
+        partNumber: 'CT37-X0N-58S10DG',
+        name: 'CT37 Wi-Fi 6E, FlexRange (11 m), 8/128 GB',
+        attributes: { 'Łączność': 'Wi-Fi 6E', 'Skaner': 'FlexRange (11 m)' },
+        priceFrom: 6455.81,
+        availability: 'on-order' as const,
+      },
+    ],
+    specifications: [
+      { name: 'System operacyjny', value: 'Android — gwarantowane aktualizacje od Android 14 do 18 (Mobility Edge)' },
+      { name: 'Procesor', value: 'Qualcomm QCS4490/QCM4490, 8 rdzeni, do 2,4 GHz' },
+      { name: 'Pamięć', value: '8 GB DDR5 RAM / 128 GB UFS 3.1' },
+      { name: 'Karta microSD', value: 'Do 2 TB (dostępna dla użytkownika)' },
+      { name: 'Wyświetlacz', value: '6,0" FHD (2280×1080), 600 nitów, Corning Gorilla Glass Victus' },
+      { name: 'Panel dotykowy', value: 'Wielodotykowy — obsługa w rękawiczkach, rysikiem i w deszczu; odrzucanie kropel wody' },
+      { name: 'Skaner', value: 'FlexRange S0803 (zielony laser, do 11 m) lub S0703 Standard Range — zależnie od wariantu' },
+      { name: 'Kamery', value: '13 MP (tył) + 8 MP (przód)' },
+      { name: 'Sieć komórkowa', value: '5G NSA/SA + Gigabit LTE; dual SIM/dual standby; prywatne 5G i CBRS (wariant WWAN X1N)' },
+      { name: 'SIM', value: '1× eSIM + 1× nano SIM' },
+      { name: 'WLAN', value: 'Wi-Fi 6E (802.11ax), tri-band 2,4/5/6 GHz, 2×2 MU-MIMO' },
+      { name: 'Bluetooth', value: 'v5.3 + BLE; drugie radio BLE we wszystkich wariantach' },
+      { name: 'NFC / płatności', value: 'ISO 14443 A/B, ISO 15693, MIFARE, DESFire, FeliCa; płatności zbliżeniowe, ECP 1.0/2.0' },
+      { name: 'GNSS', value: 'Dwuzakresowy L1/L5: GPS, GLONASS, Galileo, BeiDou, QZSS, NavIC; a-GPS (wariant WWAN)' },
+      { name: 'Audio', value: 'Głośnik, 3 mikrofony z redukcją szumów, PTT, VoIP, zgodność HAC' },
+      { name: 'Bateria', value: '3 846 mAh standardowa lub 5 550 mAh rozszerzona; inteligentna diagnostyka' },
+      { name: 'Hot swap', value: 'Tak — wymiana baterii bez wyłączania (do -10°C)' },
+      { name: 'Ładowanie', value: 'Quick Charge 4.0 — pełne ładowanie w mniej niż 3 h; 12+ h pracy na baterii standardowej' },
+      { name: 'Porty', value: 'USB-C (USB 3.1, OTG) + płaskie złącze dokujące; platforma Universal Dock' },
+      { name: 'Klasa ochrony', value: 'IP65 + IP68 (certyfikacja niezależna)' },
+      { name: 'Upadki', value: 'MIL-STD-810H: 1,8 m na beton w temp. pokojowej (z bootem 2,1 m); 1,5 m w -10°C do +50°C' },
+      { name: 'Tumble', value: '1 500 cykli z 0,5 m (z bootem: 750 z 1,0 m), IEC 60068-2-32' },
+      { name: 'Temperatura pracy', value: '-20°C do +50°C (przechowywanie: -30°C do +70°C); wilgotność 5–95%' },
+      { name: 'ESD', value: '±15 kV w powietrzu, ±8 kV kontaktowo' },
+      { name: 'Bezpieczeństwo', value: 'Secure Element — sprzętowa izolacja wrażliwych danych' },
+      { name: 'Czujniki', value: 'Światła, zbliżeniowy, akcelerometr, żyroskop, magnetometr, eCompass, Halla; barometr (wybrane SKU)' },
+      { name: 'Wymiary i waga', value: '167,4 × 76,0 × 12,6 mm; 241 g (bateria standardowa) / 275 g (rozszerzona)' },
+      { name: 'Akcesoria', value: 'Uchwyt wearable (praca bez rąk), uchwyt pistoletowy, uchwyt RFID, boot ochronny, Universal Dock' },
+      { name: 'Gwarancja', value: '12 miesięcy' },
+    ],
+    applications: [
+      'Retail — obsługa klienta na sali, mobilny POS z płatnościami NFC, inwentaryzacja',
+      'Ochrona zdrowia — obchody, identyfikacja pacjentów i leków',
+      'Logistyka ostatniej mili — 5G, dual SIM, GNSS L1/L5, potwierdzenia dostaw',
+      'Praca bez użycia rąk — dedykowany uchwyt wearable z szybkim przepinaniem między pracownikami',
+    ],
+    compatibleAccessories: [],
+    downloads: [
+      { name: 'Strona produktu Honeywell CT37 (EN)', type: 'manual', url: 'https://automation.honeywell.com', size: 'Online' },
+      { name: 'Sterowniki i wsparcie', type: 'software', url: 'https://serwis-zebry.pl/sterowniki', size: 'Online' },
+    ],
+    faq: [
+      {
+        question: 'Czym Honeywell CT37 różni się od CT32 i CT47?',
+        answer: 'CT37 plasuje się między nimi: ma większy ekran (6" FHD) i mocniejszą konfigurację pamięci (zawsze 8/128 GB DDR5/UFS 3.1) niż CT32 oraz smuklejszą, lżejszą obudowę (241 g, 12,6 mm) niż CT47. Wyróżnia go FlexRange z zielonym laserem — lepiej widocznym z daleka i w słońcu — oraz prawdziwy hot swap baterii.',
+      },
+      {
+        question: 'Co daje zielony laser w skanerze FlexRange?',
+        answer: 'Zielony punkt celowniczy jest znacznie lepiej widoczny na dystansie i w pełnym słońcu niż klasyczny czerwony — przy odczycie z 11 m operator od razu widzi, w który kod celuje. To zasięg klasy przemysłowej w kieszonkowym urządzeniu.',
+      },
+      {
+        question: 'Czy CT37 ma wymienną baterię?',
+        answer: 'Tak, z prawdziwym hot swap — baterię wymienisz bez wyłączania terminala i ponownego logowania (w temperaturze do -10°C). Dostępna jest bateria standardowa 3 846 mAh (12+ h pracy) i rozszerzona 5 550 mAh do pracy wielozmianowej.',
+      },
+      {
+        question: 'Który wariant CT37 wybrać — Wi-Fi czy 5G?',
+        answer: 'Warianty X0N (Wi-Fi 6E) wystarczą do pracy w budynku z siecią firmową. Warianty X1N dodają 5G z eSIM + nano SIM, dual standby i nawigację GNSS L1/L5 — wybierz je dla kurierów, serwisu terenowego i wszędzie tam, gdzie potrzebna jest łączność poza zasięgiem Wi-Fi albo prywatna sieć 5G/CBRS.',
+      },
+      {
+        question: 'Czy CT37 nadaje się do środowisk wymagających dezynfekcji?',
+        answer: 'CT37 ma szczelność IP65 + IP68, więc znosi mycie i wilgoć, a ekran obsługuje pracę w rękawiczkach. Do zastosowań medycznych Honeywell przewiduje dedykowane warianty healthcare — zapytaj nas o dostępność konkretnej konfiguracji.',
+      },
+      {
+        question: 'Jak długo CT37 będzie wspierany aktualizacjami Androida?',
+        answer: 'Platforma Mobility Edge gwarantuje aktualizacje od Androida 14 do Androida 18 (z zastrzeżeniem wykonalności technicznej Qualcomma) — to pięć generacji systemu, co realnie oznacza wieloletni cykl życia floty bez wymiany sprzętu.',
+      },
+    ],
+    relatedProducts: ['honeywell-ct32', 'honeywell-ct47', 'honeywell-ck62'],
+    createdAt: '2026-07-28',
+    updatedAt: '2026-07-28',
+    sameAs: 'https://automation.honeywell.com',
+  },
+  {
     id: 'honeywell-ct47',
     slug: 'honeywell-ct47',
     name: 'Honeywell CT47',
