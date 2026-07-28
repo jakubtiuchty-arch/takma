@@ -51841,8 +51841,8 @@ Ekosystem akcesoriów obejmuje uchwyt nadgarstkowy do pracy bez użycia rąk (we
     ],
     compatibleAccessories: [],
     downloads: [
+      { name: 'Specyfikacja techniczna CT37 (EN)', type: 'datasheet', url: '/datasheets/ct37-spec-sheet-en.pdf', size: 'PDF, 235 KB' },
       { name: 'Strona produktu Honeywell CT37 (EN)', type: 'manual', url: 'https://automation.honeywell.com', size: 'Online' },
-      { name: 'Sterowniki i wsparcie', type: 'software', url: 'https://serwis-zebry.pl/sterowniki', size: 'Online' },
     ],
     faq: [
       {
