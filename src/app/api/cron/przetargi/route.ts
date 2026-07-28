@@ -19,7 +19,7 @@ import { sendEmail } from '@/lib/email'
 export const maxDuration = 300
 
 const BZP_API = 'https://ezamowienia.gov.pl/mo-board/api/v1/notice'
-const NOTICE_URL = (objectId: string) => `https://ezamowienia.gov.pl/mo-client-board/bzp/notice-details/${objectId}`
+const NOTICE_URL = (objectId: string) => `https://ezamowienia.gov.pl/mo-client-board/bzp/notice-details/id/${objectId}`
 const DIGEST_TO = 'jakub.tiuchty@takma.com.pl'
 const MIN_SCORE_FOR_MAIL = 40
 
