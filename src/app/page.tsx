@@ -7,7 +7,7 @@ import {
   ChevronRightIcon,
 } from '@/components/ui/Icons'
 import { ProductCard } from '@/components/product'
-import { getBestsellers, getNewProducts } from '@/data/products'
+import { getNewProducts, getProductBySlug } from '@/data/products'
 import { guides, guideCategoryLabels } from '@/data/guides'
 import Hero from '@/components/home/Hero'
 import { FeatureIcon } from '@/components/home/FeatureIcons'
@@ -219,7 +219,10 @@ const jsonLdFaq = {
 
 export default function HomePage() {
   // Dynamiczne bestsellery z fallback na isNew
-  const best = getBestsellers(4)
+  // Bestsellery: mix marek (1× Honeywell, 1× Newland, 1× Brother, 1× Zebra) — jawny dobór
+  const best = ['honeywell-ct37', 'newland-hr23-dorada', 'brother-td-4t', 'zebra-zd421t']
+    .map(getProductBySlug)
+    .filter((p): p is NonNullable<ReturnType<typeof getProductBySlug>> => Boolean(p))
   const bestsellers = best.length >= 4
     ? best
     : [...best, ...getNewProducts(4 - best.length)]
