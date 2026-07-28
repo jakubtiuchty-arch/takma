@@ -4853,6 +4853,7 @@ export const guides: Guide[] = [
   updatedAt: '2026-07-14',
   readTime: '9 min',
   heroImage: '/images/guides/zebra-mc3400-vs-honeywell-ck62.webp',
+  cardImagePosition: '45% center',
   heroImageAlt: 'Terminale Zebra MC3400 i Honeywell CK62 obok siebie w magazynie — porównanie',
   sections: [
     {
