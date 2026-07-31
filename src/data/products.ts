@@ -24526,7 +24526,7 @@ Koszt posiadania (TCO): pełna kompatybilność wsteczna z akcesoriami MC9300 �
     slug: 'datalogic-skorpio-x40',
     name: 'Datalogic Skorpio X40',
     seoTitle: 'Datalogic Skorpio X40 — terminal mobilny / kolektor danych | od 5 225 zł',
-    seoDescription: 'Datalogic Skorpio X40 — nowy kolektor danych do magazynu, retail i produkcji. Następca Skorpio X5: Wi-Fi 6E, Android 15→19, Green Spot, imager do 10 m, klawiatury 29/39/48, ładowanie bezprzewodowe. Od 5 225 zł netto, przedsprzedaż.',
+    seoDescription: 'Datalogic Skorpio X40 — nowy kolektor danych do magazynu, retail i produkcji. Następca Skorpio X5: Wi-Fi 6E, Android 15→19, Green Spot, imager do 10 m, klawiatury 29/39/48, ładowanie bezprzewodowe. Od 5 225 zł netto, dostępny w dystrybucji.',
     shortDescription: 'Datalogic Skorpio X40 — następca Skorpio X5: Wi-Fi 6E, Android 15 (do 19), Green Spot, 2D imager SR/LR do 10 m, 3 klawiatury, odpinany uchwyt pistoletowy, ładowanie bezprzewodowe Qi',
     description: `Dla kogo? Datalogic Skorpio X40 to terminal mobilny z fizyczną klawiaturą zaprojektowany do intensywnego skanowania w handlu detalicznym, lekkim magazynie i produkcji — inwentaryzacja i uzupełnianie półek, kompletacja zamówień e-commerce, przyjęcia towaru, kontrola cen, prace na wózkach i przy linii produkcyjnej. Następca popularnego Skorpio X5 — z pełną kompatybilnością z jego stacjami dokującymi i akcesoriami, więc wymiana floty nie wymaga wymiany infrastruktury.
 
@@ -24552,7 +24552,7 @@ Wytrzymałość klasy przemysłowej: IP65 i IP67, upadki z 2,4 m na beton (MIL-S
       'Datalogic Skorpio X40 i X45 w stacjach dokujących na hali magazynowej',
     ],
     tags: ['magazyn', 'retail', 'produkcja'],
-    availability: 'unavailable',
+    availability: 'available',
     isNew: true,
     isBestseller: false,
     specifications: [
@@ -24590,15 +24590,15 @@ Wytrzymałość klasy przemysłowej: IP65 i IP67, upadki z 2,4 m na beton (MIL-S
       { partNumber: '946400009', name: 'SR, 39 kl., kompakt', priceFrom: 5225.20, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '39 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
       { partNumber: '946400007', name: 'SR, 48 kl., kompakt', priceFrom: 5225.20, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '48 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
       // --- Standard Range, uchwyt pistoletowy ---
-      { partNumber: '946400002', name: 'SR, 29 kl., uchwyt pistoletowy', priceFrom: 5532.56, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '29 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400002', name: 'SR, 29 kl., uchwyt pistoletowy', priceFrom: 5532.56, availability: 'available', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '29 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
       { partNumber: '946400003', name: 'SR, 39 kl., uchwyt pistoletowy', priceFrom: 5532.56, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '39 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946400001', name: 'SR, 48 kl., uchwyt pistoletowy', priceFrom: 5532.56, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400001', name: 'SR, 48 kl., uchwyt pistoletowy', priceFrom: 5532.56, availability: 'available', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
       { partNumber: '946400011', name: 'SR, 48 kl., uchwyt pistoletowy, ładowanie bezprzewodowe', priceFrom: 5532.56, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'bezprzewodowe (Qi)' } },
       // --- Extended Range (do 10 m) ---
       { partNumber: '946400010', name: 'LR, 29 kl., kompakt', priceFrom: 5711.88, availability: 'unavailable', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '29 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
       { partNumber: '946400005', name: 'LR, 29 kl., uchwyt pistoletowy', priceFrom: 6019.24, availability: 'unavailable', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '29 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
       { partNumber: '946400006', name: 'LR, 39 kl., uchwyt pistoletowy', priceFrom: 6019.24, availability: 'unavailable', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '39 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946400004', name: 'LR, 48 kl., uchwyt pistoletowy', priceFrom: 6019.24, availability: 'unavailable', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946400004', name: 'LR, 48 kl., uchwyt pistoletowy', priceFrom: 6019.24, availability: 'available', attributes: { 'Skaner': 'Extended Range (10 m)', 'Klawiatura': '48 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
     ],
     faq: [
       { question: 'Ile kosztuje Datalogic Skorpio X40?', answer: 'Ceny Datalogic Skorpio X40 zaczynają się od 5 225 zł netto za wariant Standard Range w obudowie kompaktowej (946400007/8/9). Wersje z uchwytem pistoletowym: od 5 533 zł. Extended Range (odczyt do 10 m): od 5 712 zł w obudowie kompaktowej i od 6 019 zł z uchwytem. Ceny przy wariantach aktualizujemy na bieżąco ze stanów dystrybucyjnych. Przy wdrożeniach flotowych (5+ sztuk) przygotowujemy wyceny projektowe — zapytaj o ofertę.' },
@@ -24717,7 +24717,7 @@ Stacje dokujące i akcesoria Skorpio X5 pasują bez zmian — a X40 i X45 dziel�
     slug: 'datalogic-falcon-x60',
     name: 'Datalogic Falcon X60',
     seoTitle: 'Datalogic Falcon X60 — pancerny terminal magazynowy, imager XLR do 20 m | od 5 731 zł',
-    seoDescription: 'Datalogic Falcon X60 — terminal mobilny klasy rugged do ciężkiego magazynu i logistyki. Imager XLR do 20 m z Green Spot, spust TrueAim, ekran 4,3" 600 nitów Gorilla Glass 7, podświetlane klawiatury, IP65/IP68, upadki z 2,8 m. Od 5 731 zł netto, przedsprzedaż.',
+    seoDescription: 'Datalogic Falcon X60 — terminal mobilny klasy rugged do ciężkiego magazynu i logistyki. Imager XLR do 20 m z Green Spot, spust TrueAim, ekran 4,3" 600 nitów Gorilla Glass 7, podświetlane klawiatury, IP65/IP68, upadki z 2,8 m. Od 5 731 zł netto, dostępny w dystrybucji.',
     shortDescription: 'Datalogic Falcon X60 — pancerny terminal z klawiaturą: imager Standard/Long Range/XLR (do 20 m), spust TrueAim, ekran 4,3" 600 nitów GG7, podświetlane klawiatury 31/41/53, IP65/IP68, 2,8 m, Wi-Fi 6E, Android 15→19',
     description: `Dla kogo? Datalogic Falcon X60 to pancerny terminal mobilny do najcięższych zastosowań magazynowych i logistycznych — magazyny wysokiego składowania, operacje wózkowe (załadunek i rozładunek), intralogistyka produkcyjna, sortownie i doki przeładunkowe. Następca legendarnej serii Falcon X3/X4: tam, gdzie kompaktowy [Skorpio X40](/produkt/datalogic-skorpio-x40) jest za lekki, Falcon X60 pracuje bez taryfy ulgowej.
 
@@ -24743,7 +24743,7 @@ Stacje dokujące Skorpio X5 pasują bez zmian — Falcon X60 dzieli infrastruktu
       'Datalogic Falcon X60 i X65 w środowisku magazynowym',
     ],
     tags: ['magazyn', 'logistyka', 'produkcja'],
-    availability: 'unavailable',
+    availability: 'available',
     isNew: true,
     isBestseller: false,
     specifications: [
@@ -24774,18 +24774,18 @@ Stacje dokujące Skorpio X5 pasują bez zmian — Falcon X60 dzieli infrastruktu
     },
     variants: [
       // --- Standard Range ---
-      { partNumber: '946600009', name: 'SR, 31 kl., kompakt', priceFrom: 5731.26, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '31 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946600009', name: 'SR, 31 kl., kompakt', priceFrom: 5731.26, availability: 'available', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '31 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'stykowe' } },
       { partNumber: '946600014', name: 'SR, 31 kl., kompakt, ładowanie bezprzewodowe', priceFrom: 5731.26, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '31 klawiszy', 'Obudowa': 'kompaktowa', 'Ładowanie': 'bezprzewodowe (Qi)' } },
-      { partNumber: '946600002', name: 'SR, 31 kl., uchwyt pistoletowy', priceFrom: 6191.81, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '31 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946600002', name: 'SR, 31 kl., uchwyt pistoletowy', priceFrom: 6191.81, availability: 'available', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '31 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
       { partNumber: '946600003', name: 'SR, 41 kl., uchwyt pistoletowy', priceFrom: 6191.81, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '41 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946600001', name: 'SR, 53 kl., uchwyt pistoletowy', priceFrom: 6191.81, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '53 klawisze', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946600001', name: 'SR, 53 kl., uchwyt pistoletowy', priceFrom: 6191.81, availability: 'available', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '53 klawisze', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
       { partNumber: '946600010', name: 'SR, 53 kl., uchwyt pistoletowy, ładowanie bezprzewodowe', priceFrom: 6191.81, availability: 'unavailable', attributes: { 'Skaner': 'Standard Range', 'Klawiatura': '53 klawisze', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'bezprzewodowe (Qi)' } },
       // --- Long Range ---
       { partNumber: '946600008', name: 'LR, 31 kl., uchwyt pistoletowy', priceFrom: 6677.97, availability: 'unavailable', attributes: { 'Skaner': 'Long Range', 'Klawiatura': '31 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946600007', name: 'LR, 53 kl., uchwyt pistoletowy', priceFrom: 6677.97, availability: 'unavailable', attributes: { 'Skaner': 'Long Range', 'Klawiatura': '53 klawisze', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946600007', name: 'LR, 53 kl., uchwyt pistoletowy', priceFrom: 6677.97, availability: 'available', attributes: { 'Skaner': 'Long Range', 'Klawiatura': '53 klawisze', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
       // --- XLR (do 20 m) ---
       { partNumber: '946600005', name: 'XLR, 31 kl., uchwyt pistoletowy', priceFrom: 7010.56, availability: 'unavailable', attributes: { 'Skaner': 'XLR (do 20 m)', 'Klawiatura': '31 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
-      { partNumber: '946600006', name: 'XLR, 41 kl., uchwyt pistoletowy', priceFrom: 7010.56, availability: 'unavailable', attributes: { 'Skaner': 'XLR (do 20 m)', 'Klawiatura': '41 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
+      { partNumber: '946600006', name: 'XLR, 41 kl., uchwyt pistoletowy', priceFrom: 7010.56, availability: 'available', attributes: { 'Skaner': 'XLR (do 20 m)', 'Klawiatura': '41 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
       { partNumber: '946600004', name: 'XLR, 53 kl., uchwyt pistoletowy', priceFrom: 7010.56, availability: 'unavailable', attributes: { 'Skaner': 'XLR (do 20 m)', 'Klawiatura': '53 klawisze', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'stykowe' } },
       { partNumber: '946600012', name: 'XLR, 31 kl., uchwyt pistoletowy, ładowanie bezprzewodowe', priceFrom: 7010.56, availability: 'unavailable', attributes: { 'Skaner': 'XLR (do 20 m)', 'Klawiatura': '31 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'bezprzewodowe (Qi)' } },
       { partNumber: '946600013', name: 'XLR, 41 kl., uchwyt pistoletowy, ładowanie bezprzewodowe', priceFrom: 7010.56, availability: 'unavailable', attributes: { 'Skaner': 'XLR (do 20 m)', 'Klawiatura': '41 klawiszy', 'Obudowa': 'uchwyt pistoletowy', 'Ładowanie': 'bezprzewodowe (Qi)' } },

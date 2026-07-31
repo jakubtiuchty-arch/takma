@@ -13,17 +13,11 @@
  */
 
 export const PRELAUNCH_PNS = new Set<string>([
-  // Datalogic Skorpio X40 — premiera, dostawy w drodze do dystrybucji
-  '946400001', '946400002', '946400003', '946400004', '946400005',
-  '946400006', '946400007', '946400008', '946400009', '946400010',
-  '946400011',
-  // Datalogic Skorpio X45 (5G) — premiera razem z X40
+  // Skorpio X40 i Falcon X60 zdjęte z listy 2026-07-31 — Jarltech ma realny
+  // stan magazynowy (X40: 57/12/3 szt., X60: 33/8/7/13 szt.).
+  // Datalogic Skorpio X45 (5G) — nadal przedsprzedaż (brak stanów w dystrybucji)
   '946450001', '946450002', '946450003',
-  // Datalogic Falcon X60 — premiera (Ingram: 0 + dostawy w drodze)
-  '946600001', '946600002', '946600003', '946600004', '946600005',
-  '946600006', '946600007', '946600008', '946600009', '946600010',
-  '946600011', '946600012', '946600013', '946600014',
-  // Datalogic Falcon X65 (5G) — premiera razem z X60
+  // Datalogic Falcon X65 (5G) — nadal przedsprzedaż (brak stanów w dystrybucji)
   '946650001', '946650002', '946650003', '946650004', '946650005',
   '946650006',
 ])
