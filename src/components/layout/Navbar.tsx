@@ -167,6 +167,11 @@ export default function Navbar() {
   const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [expandedMobileItem, setExpandedMobileItem] = useState<string | null>(null)
+  // Obrazy „Polecany produkt" w mega-menu wchodzą do DOM dopiero po pierwszym
+  // najechaniu myszą — Googlebot nie hoveruje, więc nie widzi tych URL-i i nie
+  // wybiera drukarki z menu jako miniatury SERP dla kart innych produktów
+  // (sam CSS background nie wystarczył: URL i tak był w wyrenderowanym HTML).
+  const [menuImagesArmed, setMenuImagesArmed] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -236,7 +241,7 @@ export default function Navbar() {
 
                 if (item.children) {
                   return (
-                    <div key={item.name} className="relative group">
+                    <div key={item.name} className="relative group" onMouseEnter={() => setMenuImagesArmed(true)}>
                       <Link
                         href={item.href}
                         className={clsx(
@@ -308,7 +313,7 @@ export default function Navbar() {
                                 role="img"
                                 aria-label={item.featuredProduct.name}
                                 className={clsx("relative w-full mb-3 bg-contain bg-center bg-no-repeat", item.featuredProduct.imageHeight || 'h-40')}
-                                style={{ backgroundImage: `url(${item.featuredProduct.image})` }}
+                                style={menuImagesArmed ? { backgroundImage: `url(${item.featuredProduct.image})` } : undefined}
                               />
                               <p className="text-sm font-bold text-gray-900 group-hover/featured:text-primary-600 transition-colors">
                                 {item.featuredProduct.name}
