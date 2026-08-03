@@ -61,9 +61,12 @@ export async function GET(request: NextRequest) {
   <style>
     @media print {
       .no-print { display: none !important; }
-      body { padding: 20px; margin: 0; }
+      body { padding: 15mm; margin: 0; }
     }
-    @page { size: A4; margin: 15mm; }
+    /* margin: 0 — nagłówki/stopki wydruku przeglądarki (data, tytuł, URL)
+       renderują się w marginesie strony; bez marginesu znikają z PDF-a.
+       Margines wizualny daje padding body w @media print. */
+    @page { size: A4; margin: 0; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
