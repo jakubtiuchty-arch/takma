@@ -61,12 +61,22 @@ export async function GET(request: NextRequest) {
   <style>
     @media print {
       .no-print { display: none !important; }
-      body { padding: 15mm; margin: 0; }
+      body { padding: 0 15mm; margin: 0; max-width: none; }
+      /* thead/tfoot tabeli-ramki powtarzają się na KAŻDEJ stronie wydruku —
+         dają górny/dolny margines także na stronie 2+, mimo @page margin 0 */
+      .page-frame > thead .page-spacer,
+      .page-frame > tfoot .page-spacer { height: 12mm; }
     }
     /* margin: 0 — nagłówki/stopki wydruku przeglądarki (data, tytuł, URL)
-       renderują się w marginesie strony; bez marginesu znikają z PDF-a.
-       Margines wizualny daje padding body w @media print. */
+       renderują się w marginesie strony; bez marginesu znikają z PDF-a. */
     @page { size: A4; margin: 0; }
+    .page-frame { width: 100%; border-collapse: collapse; }
+    .page-frame > thead td, .page-frame > tbody > tr > td, .page-frame > tfoot td { padding: 0; border: none; }
+    /* Ramki i wiersze nie mogą łamać się między stronami */
+    .parties, .dates, .summary, .summary-box, .freebies, .conditions,
+    .zebra-banner, .footer, .document tbody tr {
+      break-inside: avoid; page-break-inside: avoid;
+    }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -169,6 +179,10 @@ export async function GET(request: NextRequest) {
     <button class="print-btn" onclick="window.print()">Drukuj / Zapisz PDF</button>
   </div>
 
+  <table class="page-frame">
+    <thead><tr><td><div class="page-spacer"></div></td></tr></thead>
+    <tfoot><tr><td><div class="page-spacer"></div></td></tr></tfoot>
+    <tbody><tr><td>
   <div class="document">
     <div class="header">
       <div><img src="${baseUrl}/images/takma_logo.png" alt="TAKMA" class="logo-img" /></div>
@@ -290,6 +304,8 @@ export async function GET(request: NextRequest) {
       <p>TAKMA — Autoryzowany Partner Zebra Technologies | www.takma.com.pl | +48 607 819 688</p>
     </div>
   </div>
+    </td></tr></tbody>
+  </table>
 
   <script>window.onload = function() { setTimeout(function() { window.print(); }, 500); }</script>
 </body>
