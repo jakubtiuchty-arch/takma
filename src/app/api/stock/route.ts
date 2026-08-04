@@ -94,11 +94,17 @@ export async function GET(request: NextRequest) {
     // jarltech-sync was still syncing).
     // ============================================
     const CACHE_MAX_AGE_MS = 24 * 60 * 60 * 1000 // 24h
+    // Jarltech: wpisy starsze niż 7 dni traktujemy jak BRAK wpisu — jarltech-sync
+    // rotuje pulę (~350 PN/przebieg), a stęchły stan (112 szt. z kwietnia przy
+    // realnym 0) nie może zawyżać override'u. Brak wpisu = odpala się live
+    // fallback (STEP 1b), który write-through odświeża cache.
+    const JT_CACHE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000
     const cacheCheckTime = new Date()
+    const jtFreshSince = new Date(cacheCheckTime.getTime() - JT_CACHE_MAX_AGE_MS)
 
     const [cachedRows, jarltechRows] = await Promise.all([
       prisma.stockCache.findMany({ where: { partNumber: { in: partNumbers } } }),
-      prisma.jarltechStockCache.findMany({ where: { partNumber: { in: partNumbers } } }),
+      prisma.jarltechStockCache.findMany({ where: { partNumber: { in: partNumbers }, lastSync: { gte: jtFreshSince } } }),
     ])
 
     const jarltechCacheMap = new Map(jarltechRows.map(j => [j.partNumber, j]))
@@ -299,7 +305,7 @@ export async function GET(request: NextRequest) {
     const jarltechFromCache = async (): Promise<JarltechStockInfo[]> => {
       try {
         const cached = await prisma.jarltechStockCache.findMany({
-          where: { partNumber: { in: uncachedPNs } },
+          where: { partNumber: { in: uncachedPNs }, lastSync: { gte: jtFreshSince } },
         })
         return cached.map(c => ({
           partNumber: c.partNumber,
