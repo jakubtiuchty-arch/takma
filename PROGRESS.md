@@ -350,3 +350,8 @@ Otwarte na kolejne sesje:
 - Panel /admin/przetargi: badge źródła BZP/TED·UE. Mail: znacznik źródła + stopka.
 - LEKCJE TED API: pola w `fields` walidowane ściśle (deadline-receipt-tender-date-lot, NIE ...-tenders-date-time); pola tekstowe to `{pol: string[]}`; tytuł ma prefiks "Polska – <kategoria> – "; deadline per-lot (bierzemy najwcześniejszy).
 - TODO po deployu: odpalić cron z from=2026-07-28 (nadrobienie zaległego okna z GCI).
+
+## 2026-08-04 — Stock: fix stęchłych stanów Jarltech (SL204C pokazywał 112 szt. z kwietnia)
+- jarltech-sync ubijany na maxDuration=300s robił ~350/2898 PN zawsze od początku listy products.ts — ogon (202 wpisy) wisiał na danych z 15.04. Fix: stale-first + czyste zatrzymanie przed limitem (commit 98d9b05); pełna rotacja puli co ~8 przebiegów/dni.
+- Bezpiecznik 7 dni: stock-sync i /api/stock (fast-path override + slow-path) ignorują wpisy JarltechStockCache starsze niż 7 dni — stęchły wpis = brak wpisu = live fallback (commit eba1f07).
+- Nadrobione ręcznie: 6 przebiegów jarltech-sync (~2510 PN), StockCache SL204C wyczyszczony → live przeliczył: 0 szt., „W dostawie (79 szt., ETA 17.09)". UWAGA: pełny stock-sync też nie mieści się w 300 s (504 przy ręcznym wywołaniu) — działa bo pisze batchami, ale warto kiedyś dodać ten sam wzorzec deadline+rotacja.
