@@ -34,7 +34,7 @@ export default async function PrzetargiPage({ searchParams }: { searchParams: Pr
     <div className="p-6 max-w-6xl">
       <div className="flex items-center justify-between mb-1">
         <h1 className="text-2xl font-bold text-gray-900">Przetargi AutoID</h1>
-        <div className="text-sm text-gray-500">Źródło: BZP (e-Zamówienia) · cron codziennie 6:15</div>
+        <div className="text-sm text-gray-500">Źródła: BZP (e-Zamówienia) + TED (UE) · cron codziennie 6:15</div>
       </div>
       <p className="text-sm text-gray-500 mb-5">
         Dopasowanie AI do profilu TAKMA (0–100). Digest maili: trafienia ≥ 40.
@@ -71,6 +71,7 @@ export default async function PrzetargiPage({ searchParams }: { searchParams: Pr
                     </a>
                     {t.aiReason && <p className="text-sm text-gray-500 mt-1">{t.aiReason}</p>}
                     <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-xs text-gray-500">
+                      <span className={`px-1.5 py-0.5 rounded ${t.source === 'TED' ? 'bg-blue-50 text-blue-600' : 'bg-gray-100 text-gray-500'}`}>{t.source === 'TED' ? 'TED · UE' : 'BZP'}</span>
                       <span>{t.organizationName}{t.organizationCity ? ` · ${t.organizationCity}` : ''}</span>
                       {t.cpvCodes && <span>CPV {t.cpvCodes}</span>}
                       <span>publikacja {t.publicationDate?.toLocaleDateString('pl-PL') || '—'}</span>

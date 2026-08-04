@@ -341,3 +341,12 @@ Otwarte na kolejne sesje:
 ## 2026-07-07 (późny wieczór) — trzecia para porównawcza w Ads
 - Grupa "Porównania drukarki TT (PC45t vs ZD421t)" w kampanii Honeywell: 5 fraz PHRASE (m.in. "zamiennik zebra gk420t") + RSA → istniejący wpis /poradnik/zebra-zd421t-vs-honeywell-pc45t. Sitelink "ZD421t czy PC45t?" (asset 387735147080) dopięty do grup ZD421 + drukarki zebra.
 - TODO przy następnej edycji bloga: linki krzyżowe między wpisami porównań d↔t.
+
+## 2026-08-04 — Monitor przetargów: TED (przetargi UE) + fix CPV + scoring lotów
+- **Powód**: Mimira pokazywała przetargi (np. GCI Gdynia — sprzęt do EZD z drukarkami etykiet i czytnikami kodów), a nasz monitor milczał. Diagnoza: to przetarg POWYŻEJ progów UE → publikowany TYLKO w TED, nie w BZP (zweryfikowane skanem BZP 30.07-4.08: brak; TED: publikacja 535307-2026 z 3.08).
+- **TED jako drugie źródło** w `/api/cron/przetargi`: api.ted.europa.eu/v3/notices/search (bez klucza), kwerenda expert = CPV branżowe OR full-text PL (drukarki etykiet, kolektory, czytniki kodów, terminale mobilne...) + buyer-country=POL + notice-type cn-*. ~3-5 ogłoszeń/dzień. noticeNumber=`TED/<pub>`, source='TED' (kolumna była w schemacie), url na ted.europa.eu. Awaria TED nie wywala crona (try/catch, pole tedError w odpowiedzi).
+- **Fix bug CPV w prefiltrze BZP**: `cpvCode` to string z WIELOMA kodami — stary `startsWith` sprawdzał tylko pierwszy (drukarki etykiet jako CPV dodatkowy przepadały); teraz `includes`.
+- **Scoring lotów**: prompt Haiku rozszerzony — zamówienie podzielone na części, z których choć jedna to rdzeń AutoID → 60-85 (można ofertować sam lot). TED dostaje jawny opis "Zamówienie podzielone na N części". Efekt: GCI 35→75 pkt; 3.08 dałby 4 trafienia ≥40 do maila (w tym Stalowa Wola: 39 drukarek kodów kreskowych).
+- Panel /admin/przetargi: badge źródła BZP/TED·UE. Mail: znacznik źródła + stopka.
+- LEKCJE TED API: pola w `fields` walidowane ściśle (deadline-receipt-tender-date-lot, NIE ...-tenders-date-time); pola tekstowe to `{pol: string[]}`; tytuł ma prefiks "Polska – <kategoria> – "; deadline per-lot (bierzemy najwcześniejszy).
+- TODO po deployu: odpalić cron z from=2026-07-28 (nadrobienie zaległego okna z GCI).

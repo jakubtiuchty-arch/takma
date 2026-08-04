@@ -6,9 +6,11 @@ import { sendEmail } from '@/lib/email'
 /**
  * Monitor przetargów AutoID — cron dzienny (6:15).
  *
- * 1. Pobiera ogłoszenia ContractNotice z BZP (publiczne API e-Zamówienia,
- *    bez klucza) z ostatnich N dni (domyślnie 2 — zakładka na opóźnienia publikacji).
- * 2. Pre-filtr: kody CPV branżowe LUB słowa kluczowe w przedmiocie/treści.
+ * 1. Pobiera ogłoszenia ContractNotice z BZP (publiczne API e-Zamówienia, bez klucza)
+ *    oraz ogłoszenia unijne z TED (api.ted.europa.eu, bez klucza) — przetargi powyżej
+ *    progów UE trafiają TYLKO do TED, w BZP ich nie ma.
+ * 2. Pre-filtr: kody CPV branżowe LUB słowa kluczowe w przedmiocie/treści
+ *    (TED: filtr CPV + full-text już w kwerendzie API).
  * 3. Scoring AI (Haiku): dopasowanie 0-100 do profilu TAKMA + uzasadnienie.
  * 4. Zapis do DB (dedup po noticeNumber) + mail dzienny z nowymi trafieniami.
  *
@@ -59,6 +61,8 @@ interface BzpNotice {
   submittingOffersDate?: string
   htmlBody?: string
   noticeType?: string
+  source?: 'BZP' | 'TED'
+  url?: string
 }
 
 function stripHtml(html: string): string {
@@ -66,8 +70,10 @@ function stripHtml(html: string): string {
 }
 
 function matchesPrefilter(n: BzpNotice): boolean {
-  const cpv = (n.cpvCode || '').replace(/-\d$/, '')
-  if (CPV_PREFIXES.some((p) => cpv.startsWith(p))) return true
+  // cpvCode to string z WIELOMA kodami: "30200000-1 (Urządzenia...),30232100-4 (Drukarki...)"
+  // — includes, nie startsWith, bo kody branżowe bywają dopiero na dalszych pozycjach
+  const cpv = n.cpvCode || ''
+  if (CPV_PREFIXES.some((p) => cpv.includes(p))) return true
   const blob = `${n.orderObject || ''} ${stripHtml(n.htmlBody || '')}`.toLowerCase()
   return KEYWORDS.some((k) => blob.includes(k))
 }
@@ -119,6 +125,82 @@ async function fetchCandidates(fromDate: string, toDate: string): Promise<{ cand
   return { candidates: Array.from(uniq.values()), raw }
 }
 
+/**
+ * TED (Tenders Electronic Daily) — ogłoszenia powyżej progów UE, których NIE ma w BZP.
+ * Publiczne API bez klucza. Filtr CPV + full-text już w kwerendzie (expert query),
+ * więc bez osobnego prefiltru; wolumen ~3-5 ogłoszeń/dzień dla PL.
+ */
+const TED_API = 'https://api.ted.europa.eu/v3/notices/search'
+const TED_NOTICE_URL = (pub: string) => `https://ted.europa.eu/pl/notice/-/detail/${pub}`
+
+function tedPol(v: unknown): string {
+  // pola tekstowe TED: { pol: string | string[] } lub string
+  if (v && typeof v === 'object') {
+    const o = v as Record<string, unknown>
+    const first = o.pol ?? Object.values(o)[0]
+    return Array.isArray(first) ? first.join(' | ') : String(first ?? '')
+  }
+  return v == null ? '' : String(v)
+}
+
+async function fetchTedCandidates(fromDate: string, toDate: string): Promise<BzpNotice[]> {
+  const fmt = (d: string) => d.replace(/-/g, '')
+  const query =
+    `((classification-cpv IN (${CPV_PREFIXES.join(' ')})) OR ` +
+    `FT~("drukarki etykiet" OR "drukarek etykiet" OR "kolektory danych" OR "kolektorów danych" OR "czytniki kodów" OR "czytników kodów" OR "terminale mobilne" OR "etykiety samoprzylepne" OR "taśmy termotransferowe")) ` +
+    `AND buyer-country=POL AND publication-date>=${fmt(fromDate)} AND publication-date<=${fmt(toDate)} ` +
+    `AND notice-type IN (cn-standard cn-social cn-desg)`
+  const out: BzpNotice[] = []
+  for (let page = 1; page <= 5; page++) {
+    const res = await fetch(TED_API, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({
+        query,
+        page,
+        limit: 100,
+        fields: ['publication-number', 'notice-title', 'buyer-name', 'buyer-city', 'publication-date',
+          'deadline-receipt-tender-date-lot', 'classification-cpv', 'description-lot'],
+      }),
+    })
+    if (!res.ok) throw new Error(`TED API HTTP ${res.status} (s.${page})`)
+    const data = (await res.json()) as { notices?: Record<string, unknown>[]; totalNoticeCount?: number }
+    const notices = data.notices || []
+    for (const n of notices) {
+      const pub = String(n['publication-number'] || '')
+      if (!pub) continue
+      // deadline per-lot — bierzemy najwcześniejszy; format "2026-09-08+02:00"
+      const deadlines = (Array.isArray(n['deadline-receipt-tender-date-lot']) ? n['deadline-receipt-tender-date-lot'] as string[] : [])
+        .map((d) => d.slice(0, 10)).filter(Boolean).sort()
+      const cpv = Array.isArray(n['classification-cpv'])
+        ? Array.from(new Set(n['classification-cpv'] as string[])).join(',')
+        : String(n['classification-cpv'] || '')
+      // tytuł TED: "Polska – <kategoria CPV> – <właściwy tytuł>" — zostawiamy część merytoryczną
+      const title = tedPol(n['notice-title']).replace(/^Polska\s+–\s+/, '')
+      const descLot = n['description-lot'] as Record<string, unknown> | undefined
+      const lotArr = descLot && typeof descLot === 'object' ? (Object.values(descLot)[0] as unknown) : undefined
+      const lotCount = Array.isArray(lotArr) ? lotArr.length : 1
+      out.push({
+        noticeNumber: `TED/${pub}`,
+        source: 'TED',
+        url: TED_NOTICE_URL(pub),
+        orderObject: title,
+        organizationName: tedPol(n['buyer-name']),
+        organizationCity: tedPol(n['buyer-city']),
+        cpvCode: cpv,
+        publicationDate: String(n['publication-date'] || '').slice(0, 10) || undefined,
+        submittingOffersDate: deadlines[0] || undefined,
+        // opisy per-lot rozdzielone " | " — jawnie mówimy scorerowi, że to osobne części
+        htmlBody: lotCount > 1
+          ? `Zamówienie podzielone na ${lotCount} części (osobne loty, można ofertować wybrane): ${tedPol(n['description-lot'])}`
+          : tedPol(n['description-lot']),
+      })
+    }
+    if (notices.length < 100) break
+  }
+  return out
+}
+
 const TAKMA_PROFILE = `TAKMA (takma.com.pl) — autoryzowany partner Zebra, Honeywell, Datalogic, Newland, M3 Mobile. Sprzedaje i serwisuje:
 - drukarki etykiet (biurkowe, przemysłowe, mobilne), drukarki kart plastikowych
 - terminale mobilne / kolektory danych, tablety przemysłowe
@@ -134,7 +216,7 @@ async function scoreNotice(client: Anthropic, n: BzpNotice): Promise<{ score: nu
     max_tokens: 150,
     messages: [{
       role: 'user',
-      content: `Profil firmy:\n${TAKMA_PROFILE}\n\nPrzetarg (BZP):\n${text}\n\nOceń dopasowanie przetargu do profilu firmy w skali 0-100 (100 = idealny rdzeń oferty, np. dostawa drukarek etykiet Zebra; 0 = zupełnie obok, np. drukarki 3D, tonery, meble). Jeśli sprzęt AutoID jest tylko małą częścią większego pakietu IT — oceń 30-50. Odpowiedz WYŁĄCZNIE JSON-em: {"score": <int>, "reason": "<1 zdanie po polsku>"}`,
+      content: `Profil firmy:\n${TAKMA_PROFILE}\n\nPrzetarg:\n${text}\n\nOceń dopasowanie przetargu do profilu firmy w skali 0-100 (100 = idealny rdzeń oferty, np. dostawa drukarek etykiet Zebra; 0 = zupełnie obok, np. drukarki 3D, tonery, meble). WAŻNE: jeśli zamówienie jest podzielone na części (loty/pakiety) i choć jedna część to rdzeń AutoID (drukarki etykiet, czytniki/skanery kodów, kolektory, etykiety, taśmy) — oceń 60-85, bo można złożyć ofertę tylko na tę część. Jeśli sprzęt AutoID jest wymieszany w jednym niepodzielnym pakiecie IT — oceń 30-50. Odpowiedz WYŁĄCZNIE JSON-em: {"score": <int>, "reason": "<1 zdanie po polsku>"}`,
     }],
   })
   const raw = msg.content.filter((b) => b.type === 'text').map((b) => (b as { text: string }).text).join('').trim()
@@ -157,7 +239,17 @@ export async function GET(request: NextRequest) {
   const fromDate = request.nextUrl.searchParams.get('from') || fmt(new Date(Date.now() - days * 86400_000))
   const toDate = request.nextUrl.searchParams.get('to') || fmt(new Date())
 
-  const { candidates, raw } = await fetchCandidates(fromDate, toDate)
+  const { candidates: bzpCandidates, raw } = await fetchCandidates(fromDate, toDate)
+  let tedCandidates: BzpNotice[] = []
+  let tedError: string | null = null
+  try {
+    tedCandidates = await fetchTedCandidates(fromDate, toDate)
+  } catch (e) {
+    // awaria TED nie może zabić całego crona (BZP dalej się liczy)
+    tedError = e instanceof Error ? e.message : String(e)
+    console.error('[przetargi] TED:', tedError)
+  }
+  const candidates = [...bzpCandidates, ...tedCandidates]
 
   // dedup względem DB
   const existing = new Set(
@@ -183,7 +275,7 @@ export async function GET(request: NextRequest) {
     }))
     scored.push(...results)
   }
-  console.log(`[przetargi] pobrane=${raw} prefiltr=${candidates.length} nowe=${fresh.length}`)
+  console.log(`[przetargi] BZP pobrane=${raw} prefiltr=${bzpCandidates.length} TED=${tedCandidates.length} nowe=${fresh.length}`)
 
   if (!dry) {
     for (const n of scored) {
@@ -193,6 +285,7 @@ export async function GET(request: NextRequest) {
           noticeNumber: n.noticeNumber,
           bzpNumber: n.bzpNumber || null,
           objectId: n.objectId || null,
+          source: n.source || 'BZP',
           orderObject: (n.orderObject || '(brak przedmiotu)').slice(0, 1000),
           organizationName: n.organizationName || null,
           organizationCity: n.organizationCity || null,
@@ -200,7 +293,7 @@ export async function GET(request: NextRequest) {
           cpvCodes: n.cpvCode || null,
           publicationDate: n.publicationDate ? new Date(n.publicationDate) : null,
           submittingOffersDate: n.submittingOffersDate ? new Date(n.submittingOffersDate) : null,
-          url: n.objectId ? NOTICE_URL(n.objectId) : null,
+          url: n.url || (n.objectId ? NOTICE_URL(n.objectId) : null),
           score: n.score,
           aiReason: n.reason,
         },
@@ -215,7 +308,7 @@ export async function GET(request: NextRequest) {
     const rows = forMail.map((n) => `
       <tr>
         <td style="padding:8px;border-bottom:1px solid #e5e7eb;font-weight:700;color:${n.score >= 70 ? '#16a34a' : '#d97706'}">${n.score}</td>
-        <td style="padding:8px;border-bottom:1px solid #e5e7eb"><a href="${n.objectId ? NOTICE_URL(n.objectId) : '#'}" style="color:#2563eb;text-decoration:none">${(n.orderObject || '').slice(0, 140)}</a><br/><span style="color:#6b7280;font-size:12px">${n.reason}</span></td>
+        <td style="padding:8px;border-bottom:1px solid #e5e7eb"><a href="${n.url || (n.objectId ? NOTICE_URL(n.objectId) : '#')}" style="color:#2563eb;text-decoration:none">${(n.orderObject || '').slice(0, 140)}</a> <span style="color:#9ca3af;font-size:11px">[${n.source === 'TED' ? 'TED · UE' : 'BZP'}]</span><br/><span style="color:#6b7280;font-size:12px">${n.reason}</span></td>
         <td style="padding:8px;border-bottom:1px solid #e5e7eb;font-size:13px">${n.organizationName || ''}<br/><span style="color:#6b7280">${n.organizationCity || ''}</span></td>
         <td style="padding:8px;border-bottom:1px solid #e5e7eb;white-space:nowrap">${(n.submittingOffersDate || '').slice(0, 10)}</td>
       </tr>`).join('')
@@ -228,7 +321,7 @@ export async function GET(request: NextRequest) {
           <thead><tr style="text-align:left;color:#6b7280;font-size:12px"><th style="padding:8px">Ocena</th><th style="padding:8px">Przedmiot</th><th style="padding:8px">Zamawiający</th><th style="padding:8px">Oferty do</th></tr></thead>
           <tbody>${rows}</tbody>
         </table>
-        <p style="color:#6b7280;font-size:12px;margin-top:16px">Pełna lista i statusy: <a href="https://www.takma.com.pl/admin/przetargi">panel przetargów</a>. Źródło: BZP (e-Zamówienia).</p>
+        <p style="color:#6b7280;font-size:12px;margin-top:16px">Pełna lista i statusy: <a href="https://www.takma.com.pl/admin/przetargi">panel przetargów</a>. Źródła: BZP (e-Zamówienia) + TED (przetargi UE).</p>
       </div>`,
     })
   }
@@ -239,7 +332,9 @@ export async function GET(request: NextRequest) {
     days,
     dry,
     pobrane: raw,
-    poPrefiltrze: candidates.length,
+    poPrefiltrze: bzpCandidates.length,
+    ted: tedCandidates.length,
+    tedError,
     nowe: fresh.length,
     doMaila: forMail.length,
     top: scored.sort((a, b) => b.score - a.score).slice(0, 10).map((n) => ({ score: n.score, przedmiot: (n.orderObject || '').slice(0, 90), reason: n.reason })),
