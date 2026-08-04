@@ -35,15 +35,32 @@ export async function GET(request: NextRequest) {
     }
   }
 
+  // Pełna pula (~1600+ PN) NIE mieści się w maxDuration=300s (~350 PN/run) —
+  // dawniej sync szedł zawsze w kolejności products.ts i Vercel ubijał go w tym
+  // samym miejscu, więc ogon listy NIGDY się nie odświeżał (wpisy z kwietnia
+  // pokazywały stany magazynowe sprzed miesięcy). Teraz: najpierw PN-y bez
+  // wpisu w cache, potem od najdawniej synchronizowanych — pełna rotacja co ~4-5 dni.
+  const cacheAges = new Map(
+    (await prisma.jarltechStockCache.findMany({ select: { partNumber: true, lastSync: true } }))
+      .map((r) => [r.partNumber, r.lastSync.getTime()]),
+  )
   const uniquePNs = Array.from(new Set(allPNs))
-  console.log(`[Jarltech Sync] Starting sync for ${uniquePNs.length} PNs`)
+    .sort((a, b) => (cacheAges.get(a) ?? 0) - (cacheAges.get(b) ?? 0))
+  console.log(`[Jarltech Sync] Starting sync for ${uniquePNs.length} PNs (stale-first)`)
 
   // Process PNs in batches of 10 (Jarltech concurrency=4 inside lookupStock)
   const BATCH_SIZE = 10
+  const DEADLINE = Date.now() + 270_000 // zapas 30s przed ubiciem funkcji (maxDuration=300)
   let synced = 0
   let found = 0
+  let stoppedEarly = false
 
   for (let i = 0; i < uniquePNs.length; i += BATCH_SIZE) {
+    if (Date.now() > DEADLINE) {
+      stoppedEarly = true
+      console.log(`[Jarltech Sync] Deadline — przerwano po ${synced} PN, reszta w kolejnym przebiegu (stale-first)`)
+      break
+    }
     const batch = uniquePNs.slice(i, i + BATCH_SIZE)
 
     try {
@@ -98,6 +115,8 @@ export async function GET(request: NextRequest) {
     total: uniquePNs.length,
     synced,
     found,
+    stoppedEarly,
+    remaining: uniquePNs.length - synced,
     timestamp: new Date().toISOString(),
   })
 }

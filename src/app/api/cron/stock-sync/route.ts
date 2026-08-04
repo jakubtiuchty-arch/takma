@@ -117,9 +117,16 @@ export async function GET(request: NextRequest) {
         console.error(`[Stock Sync] BlueStar error batch ${batchNum}:`, bluestarResult.reason)
       }
 
-      // Also read Jarltech cache for this batch (Jarltech carries Zebra/Honeywell too)
+      // Also read Jarltech cache for this batch (Jarltech carries Zebra/Honeywell too).
+      // Bezpiecznik: wpisy starsze niż 7 dni ignorujemy — jarltech-sync rotuje pulę
+      // (~350 PN/przebieg), a stęchły stan (np. 112 szt. z kwietnia przy realnym 0)
+      // nie może trafiać do sklepu.
       const jarltechCache = await prisma.jarltechStockCache.findMany({
-        where: { partNumber: { in: batch }, found: true },
+        where: {
+          partNumber: { in: batch },
+          found: true,
+          lastSync: { gte: new Date(Date.now() - 7 * 86400_000) },
+        },
       })
       const jarltechMap = new Map<string, typeof jarltechCache[0]>()
       for (const j of jarltechCache) jarltechMap.set(j.partNumber, j)
