@@ -29,7 +29,7 @@ export default function SmartPrice({ product }: SmartPriceProps) {
   // Brak wariantów i brak PNa → "Cena na zapytanie"
   if (!displayedPn && !product.priceFrom) {
     return (
-      <div className="bg-gray-100 shadow-sm rounded-xl p-4 sm:p-6 mb-6">
+      <div className="relative z-[1] bg-gray-100 shadow-sm rounded-xl p-4 sm:p-6 mb-6">
         <p className="text-lg text-gray-600">Cena na zapytanie</p>
       </div>
     )
@@ -77,7 +77,7 @@ export default function SmartPrice({ product }: SmartPriceProps) {
   }
 
   return (
-    <div className="bg-gray-100 shadow-sm rounded-xl p-4 sm:p-6 mb-6">
+    <div className="relative z-[1] bg-gray-100 shadow-sm rounded-xl p-4 sm:p-6 mb-6">
       {displayedPn && (
         <p className="text-xs font-mono text-gray-500 mb-2 flex items-center gap-1.5">
           PN: {displayedPn}

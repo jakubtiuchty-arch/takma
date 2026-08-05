@@ -4,6 +4,7 @@ import { createContext, useContext, useMemo, useState, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { Product } from '@/data/products'
 import type { StockInfo as StockResult } from '@/lib/ingram'
+import { activePromo } from '@/data/promos'
 
 interface SmartPriceState {
   /** Wybrany PN do wyświetlenia */
@@ -140,10 +141,14 @@ export function SmartPriceProvider({
 
     const anyFound = partNumbers.some(pn => stockData.get(pn)?.found)
 
+    // Przy aktywnej promocji box ceny pokazuje wariant PROMOCYJNY (np. komplet
+    // z kablem i podstawką), nie najtańszy okrojony — spójność z banerem promo.
+    const preferredPn = activePromo(product.slug)?.sku
+
     // Podczas ładowania — pokaż najtańszy ze statyczną ceną
     if (loading) {
       const withPrice = allVariants.filter(v => v.price !== null)
-      const best = withPrice.length > 0 ? withPrice[0] : allVariants[0]
+      const best = (preferredPn && allVariants.find(v => v.partNumber === preferredPn)) || (withPrice.length > 0 ? withPrice[0] : allVariants[0])
       return {
         displayedPn: best.partNumber,
         price: best.price ?? product.priceFrom ?? undefined,
@@ -158,7 +163,7 @@ export function SmartPriceProvider({
     // API nie znalazło żadnego PN — pokaż statyczną cenę (bez stock info)
     if (!anyFound) {
       const withPrice = allVariants.filter(v => v.price !== null)
-      const best = withPrice.length > 0 ? withPrice[0] : allVariants[0]
+      const best = (preferredPn && allVariants.find(v => v.partNumber === preferredPn)) || (withPrice.length > 0 ? withPrice[0] : allVariants[0])
       return {
         displayedPn: best.partNumber,
         price: best.price ?? product.priceFrom ?? undefined,
@@ -189,7 +194,10 @@ export function SmartPriceProvider({
     let best = withLivePrices[0]
     let isFallback = false
 
-    if (anyFound) {
+    const preferred = preferredPn ? withLivePrices.find(v => v.partNumber === preferredPn) : undefined
+    if (preferred) {
+      best = preferred
+    } else if (anyFound) {
       const cheapestAvailable = withLivePrices.find(v => v.hasStock)
       if (cheapestAvailable) {
         isFallback = cheapestAvailable.partNumber !== withLivePrices[0].partNumber

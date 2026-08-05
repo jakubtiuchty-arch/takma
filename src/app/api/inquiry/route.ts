@@ -41,7 +41,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ ok: true })
     }
 
-    const { name, email, phone, message, productName, productSlug } = body
+    const { name, email, phone, message, productName, productSlug, promo } = body
 
     if (!name || !email || !message) {
       return NextResponse.json(
@@ -74,7 +74,7 @@ export async function POST(request: NextRequest) {
         data: {
           source: 'inquiry',
           name, email, phone: phone || null,
-          subject: `Zapytanie o produkt: ${productName}`,
+          subject: promo ? `🏷️ PROMOCJA — zamówienie: ${productName}` : `Zapytanie o produkt: ${productName}`,
           message: String(message).slice(0, 4000),
           productSlug: productSlug || null,
           ...attr,
@@ -96,14 +96,14 @@ export async function POST(request: NextRequest) {
     // Mail do admina — nowe zapytanie o produkt
     await sendEmail({
       to: adminEmails,
-      subject: `[Zapytanie] ${productName || 'Produkt'} — ${name}`,
+      subject: promo ? `🏷️ [PROMOCJA — zamówienie] ${productName || 'Produkt'} — ${name}` : `[Zapytanie] ${productName || 'Produkt'} — ${name}`,
       html: buildAdminInquiryEmail({ name, email, phone, productName: productName || 'Brak nazwy produktu', productLink: productLink || undefined, message }),
     })
 
     // Mail do klienta — potwierdzenie otrzymania zapytania
     await sendEmail({
       to: email,
-      subject: `Potwierdzenie zapytania: ${productName || 'produkt'} — TAKMA`,
+      subject: promo ? `Potwierdzenie zamówienia promocyjnego: ${productName || 'produkt'} — TAKMA` : `Potwierdzenie zapytania: ${productName || 'produkt'} — TAKMA`,
       html: buildInquiryConfirmationEmail({ name, productName: productName || '', message }),
     })
 

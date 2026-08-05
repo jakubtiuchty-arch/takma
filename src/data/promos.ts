@@ -7,7 +7,8 @@
  * zapytania — nie przez koszyk (koszyk liczy ceny regularne). Baner znika po endDate.
  *
  * Kalkulacja (kurs bezpieczny 4,30; koszt = cena voucherowa od dystrybutora):
- *   DS2208  — koszt ~314 zł → promo 349 zł (marża ~11%), regularnie ~388 zł
+ *   DS2208  — koszt ~314 zł → promo 349 zł (marża ~11%), regularnie ~388 zł;
+ *   box ceny pokazuje wtedy wariant promocyjny (komplet SGW), nie najtańszy okrojony.
  *   DS4608  — koszt ~475 zł → promo 549 zł (marża ~15%), regularnie ~972 zł
  *   ZD230t  — koszt ~744 zł → promo 879 zł (marża ~18%), regularnie ~1069 zł
  *   ZD230d  — koszt ~730 zł → promo 859 zł (marża ~18%), regularnie ~1087 zł

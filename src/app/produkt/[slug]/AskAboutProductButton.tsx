@@ -16,6 +16,8 @@ interface AskAboutProductButtonProps {
   label?: string
   /** styl "promo" — limonkowy przycisk do banera promocji */
   promoStyle?: boolean
+  /** zapytanie promocyjne — inny tytuł modala i temat maila (rozróżnienie w skrzynce) */
+  promo?: boolean
 }
 
 function InquiryModal({
@@ -23,11 +25,13 @@ function InquiryModal({
   productSlug,
   onClose,
   initialMessage,
+  promo = false,
 }: {
   productName: string
   productSlug: string
   onClose: () => void
   initialMessage?: string
+  promo?: boolean
 }) {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -72,12 +76,12 @@ function InquiryModal({
       const res = await fetch('/api/inquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, phone, message, productName, productSlug, _ts: loadedAt, _hp: '', turnstileToken }),
+        body: JSON.stringify({ name, email, phone, message, productName, productSlug, promo, _ts: loadedAt, _hp: '', turnstileToken }),
       })
       if (res.ok) {
         setStatus('done')
-        trackGenerateLead(`zapytanie_produkt_${productSlug}`)
-        trackFormSubmit('zapytanie_produkt', `/produkt/${productSlug}`)
+        trackGenerateLead(promo ? `zamowienie_promo_${productSlug}` : `zapytanie_produkt_${productSlug}`)
+        trackFormSubmit(promo ? 'zamowienie_promo' : 'zapytanie_produkt', `/produkt/${productSlug}`)
       } else {
         setStatus('error')
       }
@@ -107,7 +111,7 @@ function InquiryModal({
       >
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
-          <h2 className="text-lg font-bold text-gray-900">Zapytaj o produkt</h2>
+          <h2 className="text-lg font-bold text-gray-900">{promo ? 'Zamówienie w cenie promocyjnej' : 'Zapytaj o produkt'}</h2>
           <button
             onClick={onClose}
             className="p-1.5 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors"
@@ -274,6 +278,7 @@ export default function AskAboutProductButton({
   initialMessage,
   label,
   promoStyle = false,
+  promo = false,
 }: AskAboutProductButtonProps) {
   const [open, setOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
@@ -300,6 +305,7 @@ export default function AskAboutProductButton({
             productSlug={productSlug}
             onClose={handleClose}
             initialMessage={initialMessage}
+            promo={promo}
           />
         )}
       </>
@@ -322,6 +328,8 @@ export default function AskAboutProductButton({
           productName={productName}
           productSlug={productSlug}
           onClose={handleClose}
+          initialMessage={initialMessage}
+          promo={promo}
         />
       )}
     </>

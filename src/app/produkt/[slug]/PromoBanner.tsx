@@ -25,7 +25,9 @@ export default function PromoBanner({
   const savingPct = Math.round((1 - promo.promoNetto / promo.regularNetto) * 100)
 
   return (
-    <div className="relative overflow-hidden rounded-2xl bg-gray-950 p-5 sm:p-6 mb-6">
+    <div className="relative z-0 overflow-hidden rounded-2xl bg-gray-950 px-5 sm:px-6 pb-4 pt-7 sm:pt-8 mb-6 mx-3 sm:mx-5 -mt-10 shadow-[0_24px_50px_-16px_rgba(4,10,6,0.6)]">
+      {/* cień u góry — wrażenie, że kafel wychodzi spod boxa ceny */}
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-8 bg-gradient-to-b from-black/50 to-transparent" />
       {/* poświata w rogu — subtelny akcent */}
       <div
         aria-hidden
@@ -33,7 +35,7 @@ export default function PromoBanner({
         style={{ background: '#A8F000' }}
       />
       <div className="relative">
-        <div className="flex items-center justify-between gap-3 mb-4">
+        <div className="flex items-center justify-between gap-3 mb-2">
           <p className="text-[11px] font-bold uppercase tracking-[0.18em]" style={{ color: '#A8F000' }}>
             Promocja
           </p>
@@ -44,7 +46,7 @@ export default function PromoBanner({
 
         {/* Cena promo — duża, z przekreśloną regularną i procentem */}
         <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-1">
-          <span className="text-3xl sm:text-4xl font-extrabold tracking-tight" style={{ color: '#A8F000' }}>
+          <span className="text-2xl sm:text-3xl font-extrabold tracking-tight" style={{ color: '#A8F000' }}>
             {fmt(promo.promoNetto)} zł <span className="text-base font-semibold text-white/70">netto</span>
           </span>
           <span className="text-base text-white/45 line-through">{fmt(promo.regularNetto)} zł</span>
@@ -52,17 +54,15 @@ export default function PromoBanner({
             −{savingPct}%
           </span>
         </div>
-        <p className="text-sm text-white/60 mt-1">
-          {fmt(Math.round(promo.promoNetto * VAT))} zł brutto &nbsp;·&nbsp; wariant {promo.sku}
-        </p>
-        <p className="text-sm text-white/60 leading-relaxed mt-2.5 mb-5">
-          Zamówienie przez formularz — potwierdzamy w&nbsp;24&nbsp;h w&nbsp;dni robocze.
+        <p className="text-[13px] text-white/60 mt-0.5 mb-3.5">
+          {fmt(Math.round(promo.promoNetto * VAT))} zł brutto &nbsp;·&nbsp; {promo.sku} &nbsp;·&nbsp; zamówienie przez formularz, potwierdzenie w&nbsp;24&nbsp;h
         </p>
 
         <AskAboutProductButton
           productName={productName}
           productSlug={productSlug}
           promoStyle
+          promo
           label="Zamów w cenie promocyjnej"
           initialMessage={`Dzień dobry, zamawiam ${productName} (${promo.sku}) w cenie promocyjnej ${fmt(promo.promoNetto)} zł netto/szt. Liczba sztuk: `}
         />
