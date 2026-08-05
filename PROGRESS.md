@@ -355,3 +355,9 @@ Otwarte na kolejne sesje:
 - jarltech-sync ubijany na maxDuration=300s robił ~350/2898 PN zawsze od początku listy products.ts — ogon (202 wpisy) wisiał na danych z 15.04. Fix: stale-first + czyste zatrzymanie przed limitem (commit 98d9b05); pełna rotacja puli co ~8 przebiegów/dni.
 - Bezpiecznik 7 dni: stock-sync i /api/stock (fast-path override + slow-path) ignorują wpisy JarltechStockCache starsze niż 7 dni — stęchły wpis = brak wpisu = live fallback (commit eba1f07).
 - Nadrobione ręcznie: 6 przebiegów jarltech-sync (~2510 PN), StockCache SL204C wyczyszczony → live przeliczył: 0 szt., „W dostawie (79 szt., ETA 17.09)". UWAGA: pełny stock-sync też nie mieści się w 300 s (504 przy ręcznym wywołaniu) — działa bo pisze batchami, ale warto kiedyś dodać ten sam wzorzec deadline+rotacja.
+
+## 2026-08-05 — Promocja Zebra CEE Voucher (do 4.10) na kartach + w Ads
+- Biuletyn PartnerConnect: rabaty voucherowe per imienny end-user — DS2208 56,2%, DS4608 72,5%, ZD230t 63,8%, ZD230d 62,9% od ceny kat. (dziś wszędzie ~50%). Ceny zakupu sprawdzone live u 3 dystrybutorów (skrypt z lib ingram/bluestar/jarltech; wymaga `npx tsx --env-file=.env --env-file=.env.local`).
+- Karty produktów: baner promo (PromoBanner, config `src/data/promos.ts`, sam znika po endDate) — cena promo z buforem: DS2208 349 zł (marża ~11%), DS4608 549 zł (~15%), ZD230d 859 zł, ZD230t 879 zł (~18%); zamówienie przez formularz (koszyk = ceny regularne, bo rabat wymaga vouchera per klient). Promocyjne SKU wyniesione na wariant nr 1. CTA banera BIAŁE (limonka tylko akcent — konflikt z koszykiem).
+- Ads: 4 promotion assets (44%/21%/18%/10%, redemption 5.08-4.10) podpięte do SW Zebra, SW Modele, DSA, SW brand przez API.
+- GMC: sale_price NIE dodane — cena promo nie obowiązuje w koszyku, mismatch groziłby zawieszeniem konta Merchant.
