@@ -34,7 +34,9 @@ import PrinterMaterialVariants from '@/components/product/PrinterMaterialVariant
 import VariantsTable from './VariantsTable'
 import StockInfo from './StockInfo'
 import SmartPrice from './SmartPrice'
+import PromoBanner from './PromoBanner'
 import { SmartPriceProvider } from './SmartPriceContext'
+import { activePromo } from '@/data/promos'
 import ContextAvailabilityBadge from './ContextAvailabilityBadge'
 import ComparisonTable from './ComparisonTable'
 import SpecsAccordion from './SpecsAccordion'
@@ -698,6 +700,14 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
             {/* Price — smart fallback na najtańszy dostępny wariant */}
             <SmartPrice product={product} />
+
+            {/* Promocja producencka (np. Zebra CEE Voucher) — znika po terminie */}
+            {(() => {
+              const promo = activePromo(product.slug)
+              return promo ? (
+                <PromoBanner productName={product.name} productSlug={product.slug} promo={promo} />
+              ) : null
+            })()}
 
             {/* CTA */}
             <div className="space-y-3">

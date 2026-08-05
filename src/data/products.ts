@@ -3115,6 +3115,13 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     ],
     variants: [
       {
+        partNumber: 'ZD23042-D0EC00EZ',
+        name: 'USB + Ethernet, czarny',
+        attributes: { 'Ethernet': 'Tak', 'Kolor': 'Czarny' },
+        priceFrom: 1087.43,
+        availability: 'available',
+      },
+      {
         partNumber: 'ZD23042-D0EG00EZ',
         name: 'USB, czarny',
         attributes: { 'Kolor': 'Czarny' },
@@ -3140,13 +3147,6 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
         name: 'USB, Bluetooth + Wi-Fi, czarny',
         attributes: { 'Wi-Fi': 'Tak', 'Kolor': 'Czarny' },
         priceFrom: 1468.26,
-        availability: 'available',
-      },
-      {
-        partNumber: 'ZD23042-D0EC00EZ',
-        name: 'USB + Ethernet, czarny',
-        attributes: { 'Ethernet': 'Tak', 'Kolor': 'Czarny' },
-        priceFrom: 1087.43,
         availability: 'available',
       },
       {
@@ -3653,6 +3653,13 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     ],
     variants: [
       {
+        partNumber: 'ZD23042-30EC00EZ',
+        name: 'USB + Ethernet, czarny',
+        attributes: { 'Ethernet': 'Tak', 'Kolor': 'Czarny' },
+        priceFrom: 1135.42,
+        availability: 'available',
+      },
+      {
         partNumber: 'ZD23042-30EG00EZ',
         name: 'USB, czarny',
         attributes: { 'Kolor': 'Czarny' },
@@ -3678,13 +3685,6 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
         name: 'USB, Bluetooth + Wi-Fi, czarny',
         attributes: { 'Wi-Fi': 'Tak', 'Kolor': 'Czarny' },
         priceFrom: 1518.28,
-        availability: 'available',
-      },
-      {
-        partNumber: 'ZD23042-30EC00EZ',
-        name: 'USB + Ethernet, czarny',
-        attributes: { 'Ethernet': 'Tak', 'Kolor': 'Czarny' },
-        priceFrom: 1135.42,
         availability: 'available',
       },
       {
@@ -15451,6 +15451,17 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
     ],
     variants: [
       {
+        partNumber: 'DS2208-SR7U2100SGW',
+        name: 'DS2208 czarny — kabel USB + podstawka',
+        priceFrom: 388,
+        availability: 'available',
+        attributes: {
+          'Kabel USB': 'Tak',
+          'Podstawka': 'Gooseneck',
+          'Kolor': 'Czarny',
+        },
+      },
+      {
         partNumber: 'DS2208-SR00007ZZWW',
         name: 'DS2208 czarny — sam skaner + podstawka',
         priceFrom: 352,
@@ -15478,17 +15489,6 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
         attributes: {
           'Kabel USB': 'Tak',
           'Kolor': 'Biały',
-        },
-      },
-      {
-        partNumber: 'DS2208-SR7U2100SGW',
-        name: 'DS2208 czarny — kabel USB + podstawka',
-        priceFrom: 388,
-        availability: 'available',
-        attributes: {
-          'Kabel USB': 'Tak',
-          'Podstawka': 'Gooseneck',
-          'Kolor': 'Czarny',
         },
       },
       {
@@ -15907,6 +15907,18 @@ Dokumentacja: zebra.com/ds4608.`,
     ],
     variants: [
       {
+        partNumber: 'DS4608-SR7U2100SGW',
+        name: 'DS4608 SR ciemnoszary — kabel USB + podstawka',
+        priceFrom: 972,
+        availability: 'available',
+        attributes: {
+          'Optyka': 'SR (Standard Range)',
+          'Kabel USB': 'Tak',
+          'Podstawka': 'Tak',
+          'Kolor': 'Ciemnoszary',
+        },
+      },
+      {
         partNumber: 'DS4608-SR00007ZZWW',
         name: 'DS4608 SR ciemnoszary — sam skaner',
         priceFrom: 814,
@@ -15924,18 +15936,6 @@ Dokumentacja: zebra.com/ds4608.`,
         attributes: {
           'Optyka': 'SR (Standard Range)',
           'Kabel USB': 'Tak',
-          'Kolor': 'Ciemnoszary',
-        },
-      },
-      {
-        partNumber: 'DS4608-SR7U2100SGW',
-        name: 'DS4608 SR ciemnoszary — kabel USB + podstawka',
-        priceFrom: 972,
-        availability: 'available',
-        attributes: {
-          'Optyka': 'SR (Standard Range)',
-          'Kabel USB': 'Tak',
-          'Podstawka': 'Tak',
           'Kolor': 'Ciemnoszary',
         },
       },

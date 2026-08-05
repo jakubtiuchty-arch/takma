@@ -10,22 +10,30 @@ interface AskAboutProductButtonProps {
   productName: string
   productSlug: string
   compact?: boolean
+  /** własna treść startowa wiadomości (np. zapytanie o cenę promocyjną) */
+  initialMessage?: string
+  /** własna etykieta przycisku */
+  label?: string
+  /** styl "promo" — limonkowy przycisk do banera promocji */
+  promoStyle?: boolean
 }
 
 function InquiryModal({
   productName,
   productSlug,
   onClose,
+  initialMessage,
 }: {
   productName: string
   productSlug: string
   onClose: () => void
+  initialMessage?: string
 }) {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
   const [message, setMessage] = useState(
-    `Dzień dobry, proszę o informacje na temat ${productName}.`
+    initialMessage || `Dzień dobry, proszę o informacje na temat ${productName}.`
   )
   const [consent, setConsent] = useState(false)
   const [status, setStatus] = useState<'idle' | 'sending' | 'done' | 'error'>('idle')
@@ -263,6 +271,9 @@ export default function AskAboutProductButton({
   productName,
   productSlug,
   compact = false,
+  initialMessage,
+  label,
+  promoStyle = false,
 }: AskAboutProductButtonProps) {
   const [open, setOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
@@ -288,6 +299,7 @@ export default function AskAboutProductButton({
             productName={productName}
             productSlug={productSlug}
             onClose={handleClose}
+            initialMessage={initialMessage}
           />
         )}
       </>
@@ -298,10 +310,12 @@ export default function AskAboutProductButton({
     <>
       <button
         onClick={() => setOpen(true)}
-        className="w-full flex items-center justify-center gap-2.5 px-6 py-3 border-2 border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+        className={promoStyle
+          ? "w-full flex items-center justify-center gap-2.5 px-6 py-3 bg-white text-gray-900 font-bold rounded-lg hover:bg-gray-100 transition-all duration-200 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+          : "w-full flex items-center justify-center gap-2.5 px-6 py-3 border-2 border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"}
       >
         <MailIcon size={20} />
-        Zapytaj o produkt
+        {label || 'Zapytaj o produkt'}
       </button>
       {mounted && open && (
         <InquiryModal
