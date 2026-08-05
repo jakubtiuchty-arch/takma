@@ -22,6 +22,10 @@ interface ProductSlide {
   imageLeft?: boolean
   /** Kolor tła sekcji dopasowany do banera */
   bgColor?: string
+  /** Opcjonalne wideo w pętli (cinemagraph) zamiast statycznego obrazu; image = poster */
+  video?: string
+  /** Nakładka CSS z animowanym impulsem światła (obraz 5:1 kotwiczony do lewej) */
+  lightArtifacts?: boolean
 }
 
 interface InfoSlide {
@@ -39,13 +43,14 @@ const slides: HeroSlide[] = [
   { type: 'materials' },
   {
     type: 'product',
-    image: '/images/zebra-tc501-baner.webp',
+    image: '/images/zebra-tc501-baner-v2.webp',
+    lightArtifacts: true,
     name: 'Zebra TC501',
     slug: 'zebra-tc501',
     tagline: 'Flagowy kolektor danych z AI, RFID UHF i Wi-Fi 7. Ekran AMOLED 6" 1500 nit, skaner AC670 do 30 m i Android 15 ze wsparciem do v19.',
     imageType: 'lifestyle',
-    imageClassName: 'object-cover',
-    bgColor: '#1a1a1a',
+    imageClassName: 'object-cover object-left',
+    bgColor: '#11150f',
   },
   {
     type: 'product',
@@ -170,8 +175,10 @@ export default function Hero() {
 
       {slide.type === 'product' && (
         <div
+          key={`img-${activeIndex}`}
           className={clsx(
-            'absolute inset-0 transition-opacity duration-700 ease-in-out',
+            'absolute inset-0 transition-opacity duration-700 ease-in-out origin-center',
+            !slide.lightArtifacts && 'animate-hero-zoom',
             isTransitioning ? 'opacity-0' : 'opacity-100'
           )}
         >
@@ -199,6 +206,18 @@ export default function Hero() {
                 WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 25%)',
               }}
             />
+          ) : slide.video ? (
+            /* Cinemagraph — wideo w pętli, poster = statyczny obraz */
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster={slide.image}
+              className={clsx('absolute inset-0 h-full w-full', slide.imageClassName)}
+            >
+              <source src={slide.video} type="video/mp4" />
+            </video>
           ) : (
             <Image
               src={slide.image}
@@ -211,6 +230,31 @@ export default function Hero() {
               priority={current <= 1}
             />
           )}
+        </div>
+      )}
+
+      {/* Artefakty świetlne (CSS) — box 5:1 kotwiczony do lewej śledzi obraz 1:1 */}
+      {slide.type === 'product' && slide.lightArtifacts && (
+        <div key={`fx-${activeIndex}`} aria-hidden className="pointer-events-none absolute left-0 top-0 h-full aspect-[5/1] z-[5] hidden sm:block">
+          {/* poświata belki — oddycha */}
+          <div
+            className="absolute animate-hero-glow"
+            style={{
+              left: '15%', top: '17%', width: '11.5%', height: '17%',
+              background: 'radial-gradient(ellipse at center, rgba(168,240,0,0.28) 0%, rgba(168,240,0,0) 70%)',
+              filter: 'blur(8px)',
+              transform: 'rotate(9deg)',
+            }}
+          />
+          {/* poświata słupa — oddycha w kontrze */}
+          <div
+            className="absolute animate-hero-glow-alt"
+            style={{
+              left: '21.8%', top: '30%', width: '4%', height: '42%',
+              background: 'radial-gradient(ellipse at center, rgba(168,240,0,0.22) 0%, rgba(168,240,0,0) 70%)',
+              filter: 'blur(9px)',
+            }}
+          />
         </div>
       )}
 
@@ -237,10 +281,11 @@ export default function Hero() {
         isLifestyle ? 'justify-end' : 'justify-start'
       )}>
         <div
+          key={`txt-${activeIndex}`}
           className={clsx(
-            'transition-all duration-500 ease-in-out',
+            'transition-opacity duration-500 ease-in-out animate-hero-fade-up',
             isLifestyle ? 'max-w-md text-right translate-y-[10%]' : 'max-w-2xl',
-            isTransitioning ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'
+            isTransitioning ? 'opacity-0' : 'opacity-100'
           )}
         >
           {slide.type === 'info' ? (
