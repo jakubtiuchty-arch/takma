@@ -361,3 +361,8 @@ Otwarte na kolejne sesje:
 - Karty produktów: baner promo (PromoBanner, config `src/data/promos.ts`, sam znika po endDate) — cena promo z buforem: DS2208 349 zł (marża ~11%), DS4608 549 zł (~15%), ZD230d 859 zł, ZD230t 879 zł (~18%); zamówienie przez formularz (koszyk = ceny regularne, bo rabat wymaga vouchera per klient). Promocyjne SKU wyniesione na wariant nr 1. CTA banera BIAŁE (limonka tylko akcent — konflikt z koszykiem).
 - Ads: 4 promotion assets (44%/21%/18%/10%, redemption 5.08-4.10) podpięte do SW Zebra, SW Modele, DSA, SW brand przez API.
 - GMC: sale_price NIE dodane — cena promo nie obowiązuje w koszyku, mismatch groziłby zawieszeniem konta Merchant.
+
+## 2026-08-05 — Hero TC501 na stronie głównej (baner + artefakty CSS)
+- Nowa scena z Higgsfield (nano_banana_pro, referencje 1:1: front + bok TC501; 2 rundy korekt urządzenia — zmyślony przycisk boczny, logo ZEBRA na dolnej ramce). Ultrapanorama 5:1 (3600×720, dopadding prawej ciemnej strony PIL-em) + `object-cover object-left` — kadr mieści się na każdej szerokości.
+- Animacja: WIDEO/GIF odrzucone (kling animował całą scenę mimo promptów; wersja z maskedmerge też nie przeszła wizualnie, „latająca kulka" też nie) — finalnie czysty CSS: pulsująca poświata limonkowej linii na regale (2 patche, fazy naprzemienne 4,5 s), Ken Burns + fade-up na pozostałych slajdach, prefers-reduced-motion. LEKCJA: artefakty na banerach webowych = nakładka CSS w boxie aspect-[5/1] kotwiczonym jak obraz, nie wideo.
+- Hero.tsx ma gotową obsługę slajdów wideo (video?: string) na przyszłość.
