@@ -366,3 +366,8 @@ Otwarte na kolejne sesje:
 - Nowa scena z Higgsfield (nano_banana_pro, referencje 1:1: front + bok TC501; 2 rundy korekt urządzenia — zmyślony przycisk boczny, logo ZEBRA na dolnej ramce). Ultrapanorama 5:1 (3600×720, dopadding prawej ciemnej strony PIL-em) + `object-cover object-left` — kadr mieści się na każdej szerokości.
 - Animacja: WIDEO/GIF odrzucone (kling animował całą scenę mimo promptów; wersja z maskedmerge też nie przeszła wizualnie, „latająca kulka" też nie) — finalnie czysty CSS: pulsująca poświata limonkowej linii na regale (2 patche, fazy naprzemienne 4,5 s), Ken Burns + fade-up na pozostałych slajdach, prefers-reduced-motion. LEKCJA: artefakty na banerach webowych = nakładka CSS w boxie aspect-[5/1] kotwiczonym jak obraz, nie wideo.
 - Hero.tsx ma gotową obsługę slajdów wideo (video?: string) na przyszłość.
+
+## 2026-08-06 — Hero: slajd promocji Zebra CEE (2. pozycja karuzeli)
+- Packshot z Higgsfield (nano_banana_pro + rendery 1:1 z repo): DS4608/DS2208 frontem, ZD230d i ZD230t jako RÓŻNE obudowy (kopułowa vs piętrowa — UWAGA: to nie ten sam korpus!), osobne postumenty z limonkowymi krawędziami. 6 rund korekt: skanery zawsze frontem, bez zmyślonych stacji dokujących, proporcje ZD230d (za wysoka za pierwszym podejściem).
+- CTA per produkt (−44/−21/−18/−10), pigułka „Promocja · tylko do 4 października", slajd znika sam po endDate (import z data/promos.ts). Puls poświaty: JEDEN delikatny radial mix-blend-screen (mocniejszy przysłaniał urządzenia).
+- LEKCJA: rendery boczne ≠ frontalne — biała wersja produktu bywa jedynym frontalnym kadrem (poza + kolory z czarnej wersji przez 2 referencje).
