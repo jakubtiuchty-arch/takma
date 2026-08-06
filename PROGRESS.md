@@ -371,3 +371,8 @@ Otwarte na kolejne sesje:
 - Packshot z Higgsfield (nano_banana_pro + rendery 1:1 z repo): DS4608/DS2208 frontem, ZD230d i ZD230t jako RÓŻNE obudowy (kopułowa vs piętrowa — UWAGA: to nie ten sam korpus!), osobne postumenty z limonkowymi krawędziami. 6 rund korekt: skanery zawsze frontem, bez zmyślonych stacji dokujących, proporcje ZD230d (za wysoka za pierwszym podejściem).
 - CTA per produkt (−44/−21/−18/−10), pigułka „Promocja · tylko do 4 października", slajd znika sam po endDate (import z data/promos.ts). Puls poświaty: JEDEN delikatny radial mix-blend-screen (mocniejszy przysłaniał urządzenia).
 - LEKCJA: rendery boczne ≠ frontalne — biała wersja produktu bywa jedynym frontalnym kadrem (poza + kolory z czarnej wersji przez 2 referencje).
+
+## 2026-08-06 — Promocja Zebra na materiały (Printhead/ZipShip) na kartach + GMC serwis-zebry
+- Kafel promo na kartach etykiet/taśm (ZipShipBanner card, pod boxem ceny): "PROMOCJA · DO −15% / 3 kartony taniej do Twojej drukarki Zebra", CTA→formularz z prośbą o nr seryjny. Kategorie/serie CZYSTE (tam się nie zamawia). KRYTYCZNE: rabat 56% to POUFNY warunek partnerski PartnerConnect — na froncie tylko −15% od NASZYCH cen. Config+notka w src/data/promos.ts (kod ZP2607-000-ZEBRASUP, próg 5000 EUR/rok, bez RFID/opasek). Marże policzone: etykiety koszt 59% katalogu (voucher pełny → koszt 44%, marża 15%→~30%), taśmy 49%.
+- GMC serwis-zebry.pl: setup dokończony 5/5 (brakowała polityka zwrotów), feed 88 poz. zaciągnięty, moderacja Google trwa. Subkonto 5833239240.
+- Program Zebra "głowice za 0 zł" (Printhead Protection, STAŁY, próg 5000 EUR/rok, wyłączność na oryg. materiały): landing pod niego = głowice w GMC + baza seryjna serwis-zebry. Do rozplanowania.
