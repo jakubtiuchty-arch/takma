@@ -142,6 +142,9 @@ export default async function RootLayout({
   const pathname = headersList.get('x-next-pathname') || headersList.get('x-invoke-path') || ''
   const isAdmin = pathname.startsWith('/admin')
   const isPanel = pathname.startsWith('/panel')
+  // Boty datacenter z Singapuru zawyżały bazę GA4 o ~28% (213 sesji/tydz.,
+  // desktop, source (not set), sesje 7 s) — nie ładujemy im analityki.
+  const isBotGeo = headersList.get('x-vercel-ip-country') === 'SG' 
 
   return (
     <html lang="pl" className={inter.variable}>
@@ -150,7 +153,7 @@ export default async function RootLayout({
         <link rel="preconnect" href="https://analytics.ahrefs.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://analytics.ahrefs.com" />
-        {!isAdmin && !isPanel && process.env.NEXT_PUBLIC_GA_ID && (
+        {!isAdmin && !isPanel && !isBotGeo && process.env.NEXT_PUBLIC_GA_ID && (
           <>
             <Script
               src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
@@ -211,7 +214,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
       <Analytics />
       <SpeedInsights />
       {!isAdmin && !isPanel && <AutoLinkTracking />}
-      {!isAdmin && !isPanel && process.env.NEXT_PUBLIC_GA_ID && (
+      {!isAdmin && !isPanel && !isBotGeo && process.env.NEXT_PUBLIC_GA_ID && (
         <Suspense fallback={null}>
           <GARouteTracker />
         </Suspense>

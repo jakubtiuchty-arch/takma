@@ -295,11 +295,13 @@ export async function GET() {
     const hasStaticVariantPage =
       isThermalLabelProduct(c.product) || isTransferLabelProduct(c.product) || isRibbonProduct(c.product)
     const sizeSlug = c.variant ? variantSizeSlug(c.variant) : ''
-    const url = c.variant
+    const baseUrl = c.variant
       ? hasStaticVariantPage && sizeSlug
         ? `${SITE_URL}/produkt/${c.product.slug}/${sizeSlug}/${c.variant.partNumber}`
         : `${SITE_URL}/produkt/${c.product.slug}?pn=${encodeURIComponent(c.variant.partNumber)}`
       : `${SITE_URL}/produkt/${c.product.slug}`
+    // UTM: Ceneo to ruch płatny per klik — bez tagów wpadał do referral/unassigned
+    const url = `${baseUrl}${baseUrl.includes('?') ? '&' : '?'}utm_source=ceneo&utm_medium=cpc&utm_campaign=ceneo-feed`
 
     const size = c.variant?.attributes?.['Rozmiar'] || c.variant?.name
     const name = c.variant ? `${c.product.name} — ${c.variant.name}` : c.product.name
