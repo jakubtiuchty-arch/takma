@@ -6,6 +6,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 import { Button } from '@/components/ui'
 import { ArrowRightIcon } from '@/components/ui/Icons'
+import { ZEBRA_CEE_PROMO } from '@/data/promos'
 
 interface ProductSlide {
   type: 'product'
@@ -36,10 +37,22 @@ interface MaterialsSlide {
   type: 'materials'
 }
 
-type HeroSlide = InfoSlide | ProductSlide | MaterialsSlide
+interface PromoSaleSlide {
+  type: 'promoSale'
+  image: string
+  /** etykieta wariantu do porównania (tymczasowo, do wyboru finalnego) */
+  variant?: string
+}
+
+type HeroSlide = InfoSlide | ProductSlide | MaterialsSlide | PromoSaleSlide
+
+const promoSaleActive = new Date() <= new Date(`${ZEBRA_CEE_PROMO.endDate}T23:59:59+02:00`)
 
 const slides: HeroSlide[] = [
   { type: 'info' },
+  ...(promoSaleActive
+    ? ([{ type: 'promoSale', image: '/images/hero-promo-zebra-v3.webp' }] as PromoSaleSlide[])
+    : []),
   { type: 'materials' },
   {
     type: 'product',
@@ -127,12 +140,12 @@ export default function Hero() {
   const isLifestyle = slide.type === 'product' && slide.imageType === 'lifestyle'
   const isBanner = slide.type === 'product' && slide.noOverlay
   const isImageLeft = slide.type === 'product' && slide.imageLeft
-  const sectionBg = slide.type === 'materials' ? '#0d0d0d' : (slide.type === 'product' && slide.bgColor) ? slide.bgColor : '#0c1525'
+  const sectionBg = slide.type === 'promoSale' ? '#0a0d08' : slide.type === 'materials' ? '#0d0d0d' : (slide.type === 'product' && slide.bgColor) ? slide.bgColor : '#0c1525'
 
   return (
     <section className="relative overflow-hidden w-full h-[400px] md:h-[420px] lg:h-[520px]" style={{ backgroundColor: sectionBg }}>
       {/* Tło — gradient mesh (nie dla info ani banner) */}
-      {slide.type !== 'info' && slide.type !== 'materials' && !isBanner && <div className="absolute inset-0 bg-gradient-mesh-dark" />}
+      {slide.type !== 'info' && slide.type !== 'materials' && slide.type !== 'promoSale' && !isBanner && <div className="absolute inset-0 bg-gradient-mesh-dark" />}
 
       {/* Info slide — obraz po prawej, tło sekcji dopasowane do koloru tła obrazu */}
       {slide.type === 'info' && (
@@ -148,6 +161,33 @@ export default function Hero() {
             fill
             className="object-contain object-right"
             priority
+          />
+        </div>
+      )}
+
+      {/* PromoSale — packshot urządzeń promocyjnych od prawej z maską w tło */}
+      {slide.type === 'promoSale' && (
+        <div
+          className={clsx(
+            'absolute inset-0 transition-opacity duration-700 ease-in-out',
+            isTransitioning ? 'opacity-0' : 'opacity-100'
+          )}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={slide.image}
+            alt="Promocja Zebra — skanery DS2208 i DS4608 oraz drukarki ZD230"
+            className="absolute right-0 top-0 h-full w-auto max-w-[80%] object-contain object-right"
+            style={{
+              maskImage: 'linear-gradient(to right, transparent 0%, black 30%)',
+              WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 30%)',
+            }}
+          />
+          {/* delikatny puls poświaty za urządzeniami */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-y-0 right-0 w-[60%] mix-blend-screen animate-hero-glow hidden sm:block"
+            style={{ background: 'radial-gradient(ellipse at 58% 42%, rgba(168,240,0,0.14) 0%, transparent 55%)' }}
           />
         </div>
       )}
@@ -322,6 +362,44 @@ export default function Hero() {
                     Przeglądaj katalog
                   </Button>
                 </Link>
+              </div>
+            </>
+          ) : slide.type === 'promoSale' ? (
+            <>
+              <div className="inline-flex items-center px-3 py-1 md:px-4 md:py-1.5 rounded-full bg-[#A8F000]/10 border border-[#A8F000]/30 text-xs md:text-sm text-[#A8F000] font-semibold mb-3 md:mb-5">
+                Promocja &nbsp;·&nbsp; tylko do 4 października
+              </div>
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-3 md:mb-4 leading-[1.15]">
+                Skanery i drukarki Zebra<br />taniej nawet o&nbsp;<span className="text-[#A8F000]">44%</span>
+              </h2>
+              <p className="text-sm md:text-base text-gray-300 max-w-md mb-4 md:mb-6 leading-relaxed">
+                Ceny specjalne dla firm na 4 modele. Zamówienie przez formularz — potwierdzenie w&nbsp;24&nbsp;h.
+              </p>
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3">
+                <Link href="/produkt/zebra-ds4608">
+                  <Button
+                    size="md"
+                    className="!bg-[#A8F000] !text-gray-900 hover:!bg-[#9AE000] font-bold"
+                    rightIcon={<ArrowRightIcon size={16} />}
+                  >
+                    DS4608 −44%
+                  </Button>
+                </Link>
+                {[
+                  { label: 'DS2208 −10%', href: '/produkt/zebra-ds2208' },
+                  { label: 'ZD230d −21%', href: '/produkt/zebra-zd230d' },
+                  { label: 'ZD230t −18%', href: '/produkt/zebra-zd230t' },
+                ].map(({ label, href }) => (
+                  <Link key={href} href={href}>
+                    <Button
+                      size="md"
+                      variant="ghost"
+                      className="!text-white hover:!text-gray-900 hover:!bg-[#A8F000] !border !border-[#A8F000]/50 font-semibold"
+                    >
+                      {label}
+                    </Button>
+                  </Link>
+                ))}
               </div>
             </>
           ) : slide.type === 'materials' ? (
