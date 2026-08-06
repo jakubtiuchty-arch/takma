@@ -62,6 +62,10 @@
     {
       "path": "/api/cron/przetargi",
       "schedule": "15 4 * * *"
+    },
+    {
+      "path": "/api/cron/promo-teardown",
+      "schedule": "5 4 5 10 *"
     }
   ]
 }
