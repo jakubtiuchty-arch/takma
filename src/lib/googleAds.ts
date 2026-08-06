@@ -14,11 +14,11 @@
  *   GOOGLE_ADS_CUSTOMER_ID       — konto reklamowe, np. 3421931664 (bez myślników)
  *   GOOGLE_ADS_LOGIN_CUSTOMER_ID — ID konta MCC (bez myślników)
  * Opcjonalnie:
- *   GOOGLE_ADS_API_VERSION       — domyślnie v21
+ *   GOOGLE_ADS_API_VERSION       — domyślnie v24 (v21 zablokowane 08.2026)
  */
 
 const TOKEN_URL = 'https://oauth2.googleapis.com/token'
-const API_VERSION = process.env.GOOGLE_ADS_API_VERSION || 'v21'
+const API_VERSION = process.env.GOOGLE_ADS_API_VERSION || 'v24'
 
 export function adsConfigured(): boolean {
   return Boolean(
