@@ -158,7 +158,7 @@ export default async function TransferSeriesPage({ params }: PageProps) {
       <CommonDefinitionsSchema />
 
       {/* ── HERO ── */}
-      <section className="relative bg-slate-950 text-white overflow-hidden">
+      <section className="relative z-[1] bg-slate-950 text-white overflow-hidden">
         {/* Hero image (jeśli seria go ma) — tylko po prawej stronie hero (kontener 3/5–1/2 szerokości).
             Dzięki temu szerokie zdjęcia produktowe mieszczą się w pełnym pionie zamiast być przycinane top/bottom przez object-cover na pełnej szerokości.
             Pole `heroLandingImage` może przesłaniać `heroImage` jeśli landing potrzebuje innego ujęcia. */}

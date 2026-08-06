@@ -35,6 +35,7 @@ import VariantsTable from './VariantsTable'
 import StockInfo from './StockInfo'
 import SmartPrice from './SmartPrice'
 import PromoBanner from './PromoBanner'
+import ZipShipBanner from '@/components/promo/ZipShipBanner'
 import { SmartPriceProvider } from './SmartPriceContext'
 import { activePromo } from '@/data/promos'
 import ContextAvailabilityBadge from './ContextAvailabilityBadge'
@@ -708,6 +709,11 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 <PromoBanner productName={product.name} productSlug={product.slug} promo={promo} />
               ) : null
             })()}
+
+            {/* Promocja ZipShip na kartach materiałów (etykiety/taśmy) — znika po 31.12 */}
+            {(isThermalLabel || isTransferLabel || isRibbonProduct(product)) && (
+              <ZipShipBanner context={product.name} variant="card" />
+            )}
 
             {/* CTA */}
             <div className="space-y-3">

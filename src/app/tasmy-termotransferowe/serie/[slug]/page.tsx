@@ -175,7 +175,7 @@ export default async function RibbonSeriesPage({ params }: PageProps) {
       {/* Jeśli seria ma `heroBackgroundGradient`, użyj go (matchuje kolor tła zdjęcia, brak widocznego
           łączenia). W przeciwnym razie domyślne `bg-slate-950`. */}
       <section
-        className={`relative text-white overflow-hidden ${series.heroBackgroundGradient ? '' : 'bg-slate-950'}`}
+        className={`relative z-[1] text-white overflow-hidden ${series.heroBackgroundGradient ? '' : 'bg-slate-950'}`}
         style={series.heroBackgroundGradient ? { backgroundImage: series.heroBackgroundGradient } : undefined}
       >
         {series.heroImage && (

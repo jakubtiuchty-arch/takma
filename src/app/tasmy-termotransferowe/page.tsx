@@ -236,7 +236,7 @@ export default function Page() {
 
       {/* HERO z obrazem — kontener obrazu po prawej (3/5 mobile, 1/2 desktop). Gradient
           od lewej pełen dark do 50% (ukrywa krawędź kontenera), potem fade do transparent. */}
-      <section className="relative bg-slate-950 text-white overflow-hidden">
+      <section className="relative z-[1] bg-slate-950 text-white overflow-hidden">
         <div className="absolute right-0 top-0 bottom-0 w-3/4 lg:w-2/3 pointer-events-none">
           <Image
             src="/images/tasmy-hero.png"

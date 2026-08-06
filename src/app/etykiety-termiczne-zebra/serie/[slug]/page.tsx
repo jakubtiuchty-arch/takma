@@ -152,7 +152,7 @@ export default async function SeriesPage({ params }: PageProps) {
       <CommonDefinitionsSchema />
 
       {/* ── HERO ───────────────────────────────────────────────────── */}
-      <section className="relative bg-slate-950 text-white overflow-hidden">
+      <section className="relative z-[1] bg-slate-950 text-white overflow-hidden">
         {/* Tło: subtelne, kolorowane akcentem serii */}
         <div
           className="absolute inset-0 opacity-30"

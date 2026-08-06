@@ -18,6 +18,8 @@ interface AskAboutProductButtonProps {
   promoStyle?: boolean
   /** zapytanie promocyjne — inny tytuł modala i temat maila (rozróżnienie w skrzynce) */
   promo?: boolean
+  /** pełne nadpisanie klas przycisku (np. ciemny przycisk na limonkowym tle) */
+  buttonClassName?: string
 }
 
 function InquiryModal({
@@ -279,6 +281,7 @@ export default function AskAboutProductButton({
   label,
   promoStyle = false,
   promo = false,
+  buttonClassName,
 }: AskAboutProductButtonProps) {
   const [open, setOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
@@ -316,9 +319,9 @@ export default function AskAboutProductButton({
     <>
       <button
         onClick={() => setOpen(true)}
-        className={promoStyle
+        className={buttonClassName || (promoStyle
           ? "w-full flex items-center justify-center gap-2.5 px-6 py-3 bg-white text-gray-900 font-bold rounded-lg hover:bg-gray-100 transition-all duration-200 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
-          : "w-full flex items-center justify-center gap-2.5 px-6 py-3 border-2 border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"}
+          : "w-full flex items-center justify-center gap-2.5 px-6 py-3 border-2 border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500")}
       >
         <MailIcon size={20} />
         {label || 'Zapytaj o produkt'}

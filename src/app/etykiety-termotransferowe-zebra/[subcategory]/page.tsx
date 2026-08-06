@@ -789,7 +789,7 @@ export default async function TransferSubcategoryPage({ params }: PageProps) {
       <CommonDefinitionsSchema />
 
       {/* HERO */}
-      <section className="relative bg-slate-950 text-white overflow-hidden">
+      <section className="relative z-[1] bg-slate-950 text-white overflow-hidden">
         {/* Tło abstrakcyjne — kolorowe światła neonowe tylko po prawej stronie hero */}
         <div className="absolute right-0 top-0 bottom-0 w-3/5 lg:w-1/2 pointer-events-none">
           <Image

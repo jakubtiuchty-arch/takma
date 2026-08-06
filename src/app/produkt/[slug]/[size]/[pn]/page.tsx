@@ -86,6 +86,7 @@ import AddToRFQButton from '../../AddToRFQButton'
 import AskAboutProductButton from '../../AskAboutProductButton'
 import SpecsAccordion from '../../SpecsAccordion'
 import SmartPrice from '../../SmartPrice'
+import ZipShipBanner from '@/components/promo/ZipShipBanner'
 import { SmartPriceProvider } from '../../SmartPriceContext'
 import ContextAvailabilityBadge from '../../ContextAvailabilityBadge'
 import ViewItemTracker from '../../ViewItemTracker'
@@ -483,6 +484,9 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
             </div>
 
             <SmartPrice product={product} />
+
+            {/* Promocja Zebra na materiały — kafel-szuflada pod boxem ceny (znika po 31.12) */}
+            <ZipShipBanner context={`${product.name} ${variant.partNumber}`} variant="card" />
 
             <div className="space-y-3">
               <AddToRFQButton product={product} />

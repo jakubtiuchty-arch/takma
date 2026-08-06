@@ -36,3 +36,16 @@ export function activePromo(productSlug: string): ProductPromo | null {
   const end = new Date(`${ZEBRA_CEE_PROMO.endDate}T23:59:59+02:00`)
   return new Date() <= end ? promo : null
 }
+
+/**
+ * Zebra ZipShip — rabat na materiały eksploatacyjne (do 3 opakowań etykiet/taśm
+ * na drukarkę — nową lub posiadaną, wystarczy nr seryjny). Flyer PartnerConnect
+ * 07.2026; rabat partnerski DO 56% od cennika Zebra — POUFNE (PartnerConnect), NIGDY nie publikować na froncie! Publicznie: do −15% od NASZYCH cen (nasza decyzja cenowa, 6.08). Kod dystrybucyjny ZP2607-000-ZEBRASUP lub Demo Voucher Tool; bez RFID i opasek, tylko asortyment magazynowy.
+ */
+export const ZEBRA_ZIPSHIP = {
+  endDate: '2026-12-31', // ostatni dzień promocji (włącznie)
+}
+
+export function zipshipActive(): boolean {
+  return new Date() <= new Date(`${ZEBRA_ZIPSHIP.endDate}T23:59:59+01:00`)
+}
