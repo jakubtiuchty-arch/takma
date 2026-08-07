@@ -91,8 +91,10 @@ export default function ZipShipBanner({
                   )}
                 </span>
               </p>
-              {tipOpen && (
-                <div className="sm:hidden mt-3 rounded-xl border border-white/10 bg-gray-900 p-4">
+              <span className="shrink-0 text-[11px] font-semibold text-white/60 tabular-nums">do 31 grudnia</span>
+            </div>
+            {tipOpen && (
+              <div className="sm:hidden mt-3 rounded-xl border border-white/10 bg-gray-900 p-4">
                   <p className="text-[13px] font-bold text-white mb-2">Jak działa promocja?</p>
                   <ul className="space-y-1.5">
                     <li className="text-[12px] leading-relaxed text-white/75">• <b className="text-white">Do 3 kartonów na każdą drukarkę</b> — można kupić 1, 2 lub 3, bez minimum. Masz 5 drukarek? Limit liczy się osobno dla każdej.</li>
@@ -102,8 +104,6 @@ export default function ZipShipBanner({
                   </ul>
                 </div>
               )}
-              <span className="shrink-0 text-[11px] font-semibold text-white/60 tabular-nums">do 31 grudnia</span>
-            </div>
             <p className="text-[13px] text-white/60 mb-3.5">
               Promocja na wybrane etykiety i taśmy z asortymentu magazynowego Zebra.
               Podaj numer seryjny drukarki — przygotujemy wycenę.
