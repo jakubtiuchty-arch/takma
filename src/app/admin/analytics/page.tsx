@@ -18,7 +18,8 @@ function Table({ title, rows, fmtVal = fmt, col1 = 'value', col2 }: { title: str
       {rows.length === 0 ? (
         <p className="text-xs text-gray-400">Brak danych</p>
       ) : (
-        <table className="w-full text-sm">
+        <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+          <table className="w-full text-sm">
           <tbody className="divide-y divide-gray-100">
             {rows.map((r, i) => (
               <tr key={i}>
@@ -32,6 +33,7 @@ function Table({ title, rows, fmtVal = fmt, col1 = 'value', col2 }: { title: str
             ))}
           </tbody>
         </table>
+        </div>
       )}
     </div>
   )

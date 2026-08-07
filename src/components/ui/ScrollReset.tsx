@@ -31,7 +31,7 @@ export default function ScrollReset({ children }: { children: React.ReactNode })
   }, [pathname, scrollToTop])
 
   return (
-    <div ref={containerRef} className="flex-1 p-6 overflow-auto">
+    <div ref={containerRef} className="flex-1 p-4 sm:p-6 overflow-auto">
       {children}
     </div>
   )

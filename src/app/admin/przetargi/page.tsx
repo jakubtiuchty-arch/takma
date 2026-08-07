@@ -31,7 +31,7 @@ export default async function PrzetargiPage({ searchParams }: { searchParams: Pr
   ) as Record<string, number>
 
   return (
-    <div className="p-6 max-w-6xl">
+    <div className="max-w-6xl">
       <div className="flex items-center justify-between mb-1">
         <h1 className="text-2xl font-bold text-gray-900">Przetargi AutoID</h1>
         <div className="text-sm text-gray-500">Źródła: BZP (e-Zamówienia) + TED (UE) · cron codziennie 6:15</div>

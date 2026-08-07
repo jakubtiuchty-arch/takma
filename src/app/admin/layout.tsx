@@ -1,7 +1,6 @@
 import { headers } from 'next/headers'
 import { getSessionFromCookie } from '@/lib/auth'
-import Sidebar from '@/components/admin/Sidebar'
-import TopBar from '@/components/admin/TopBar'
+import AdminShell from '@/components/admin/AdminShell'
 import ScrollReset from '@/components/ui/ScrollReset'
 
 export const metadata = {
@@ -27,14 +26,10 @@ export default async function AdminLayout({ children }: { children: React.ReactN
   }
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
-      <Sidebar />
-      <div className="flex-1 flex flex-col min-w-0">
-        <TopBar adminName={session.name} />
-        <ScrollReset>
-          {children}
-        </ScrollReset>
-      </div>
-    </div>
+    <AdminShell adminName={session.name}>
+      <ScrollReset>
+        {children}
+      </ScrollReset>
+    </AdminShell>
   )
 }

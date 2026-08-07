@@ -167,15 +167,37 @@ function isChildActive(pathname: string, href: string): boolean {
   return href === '/admin/allegro' || href === '/admin/empik' ? pathname === href : pathname.startsWith(href)
 }
 
-export default function Sidebar() {
+export default function Sidebar({ open = false, onClose }: { open?: boolean; onClose?: () => void } = {}) {
   const pathname = usePathname()
   const [openGroups, setOpenGroups] = useState<Record<string, boolean>>({})
 
+  // zamknij szufladę po wejściu w link (mobile)
+  const handleNavigate = () => onClose?.()
+
   return (
-    <aside className="w-64 bg-gradient-to-b from-slate-900 to-slate-950 text-white min-h-screen flex flex-col flex-shrink-0 border-r border-slate-800/70">
+    <>
+      {/* overlay pod szufladą — tylko mobile */}
+      {open && (
+        <div
+          role="button"
+          tabIndex={-1}
+          aria-label="Zamknij menu"
+          onClick={onClose}
+          className="fixed inset-0 z-40 bg-black/50 lg:hidden"
+        />
+      )}
+      <aside
+        className={clsx(
+          'w-64 bg-gradient-to-b from-slate-900 to-slate-950 text-white flex flex-col flex-shrink-0 border-r border-slate-800/70',
+          // mobile: szuflada z lewej; desktop: kolumna w layoucie
+          'fixed inset-y-0 left-0 z-50 transform transition-transform duration-300 overflow-y-auto',
+          open ? 'translate-x-0' : '-translate-x-full',
+          'lg:static lg:translate-x-0 lg:min-h-screen lg:z-auto lg:transform-none'
+        )}
+      >
       {/* Logo */}
       <div className="h-16 px-5 flex items-center justify-center border-b border-slate-800/70">
-        <Link href="/admin">
+        <Link href="/admin" onClick={handleNavigate}>
           <Image src="/images/takma_logo.png" alt="TAKMA" width={140} height={28} className="brightness-0 invert" />
         </Link>
       </div>
@@ -283,6 +305,7 @@ export default function Sidebar() {
           Wróć do sklepu
         </Link>
       </div>
-    </aside>
+      </aside>
+    </>
   )
 }
