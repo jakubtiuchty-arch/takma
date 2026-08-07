@@ -433,3 +433,13 @@
 @media (prefers-reduced-motion: reduce) {
   .animate-hero-glow, .animate-hero-glow-alt { animation: none; opacity: 0; }
 }
+
+/* --- Promo: podskakująca strzałka na pasku-zajawce --------------------------- */
+@keyframes promo-arrow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
+}
+.animate-promo-arrow { animation: promo-arrow 1.6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .animate-promo-arrow { animation: none; }
+}
