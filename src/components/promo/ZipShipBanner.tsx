@@ -37,13 +37,13 @@ export default function ZipShipBanner({
         type="button"
         onClick={() => { setOpen((v) => !v); setSettled(false); setTipOpen(false) }}
         aria-expanded={open}
-        className="relative w-full flex items-center justify-between gap-3 px-5 sm:px-6 pt-8 pb-4 text-left focus:outline-none"
+        className="relative w-full flex items-center justify-between gap-2 px-4 sm:px-6 pt-8 pb-4 text-left focus:outline-none"
       >
         <span className="inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-gray-950" style={{ background: '#A8F000' }}>
           Promocja&nbsp;·&nbsp;do −15%
         </span>
         <span className="flex items-center gap-2 text-[12px] font-semibold text-white/70">
-          {open ? 'zwiń' : 'zobacz szczegóły'}
+          <span className="hidden xs:inline">{open ? 'zwiń' : 'zobacz szczegóły'}</span><span className="xs:hidden">{open ? 'zwiń' : 'szczegóły'}</span>
           <svg
             width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A8F000" strokeWidth="2.5"
             strokeLinecap="round" strokeLinejoin="round"
@@ -60,7 +60,7 @@ export default function ZipShipBanner({
         onTransitionEnd={() => setSettled(open)}
       >
         <div className={open && settled ? 'overflow-visible' : 'overflow-hidden'}>
-          <div className="relative px-5 sm:px-6 pb-4">
+          <div className="relative px-4 sm:px-6 pb-4">
             <div className="flex items-center justify-between gap-3 mb-2">
               <p className="text-white font-bold leading-snug text-[15px]">
                 Do 3 kartonów nawet 15% taniej do Twojej drukarki Zebra{' '}
@@ -78,7 +78,7 @@ export default function ZipShipBanner({
                     ?
                   </button>
                   {tipOpen && (
-                    <span className="absolute bottom-full left-1/2 z-20 mb-2 w-72 -translate-x-1/2 rounded-xl border border-white/10 bg-gray-900 p-4 text-left shadow-2xl sm:w-80">
+                    <span className="hidden sm:block absolute bottom-full left-1/2 z-20 mb-2 w-80 -translate-x-1/2 rounded-xl border border-white/10 bg-gray-900 p-4 text-left shadow-2xl">
                       <span className="block text-[13px] font-bold text-white mb-2">Jak działa promocja?</span>
                       <span className="block space-y-1.5">
                         <span className="block text-[12px] leading-relaxed text-white/75">• <b className="text-white">Do 3 kartonów na każdą drukarkę</b> — można kupić 1, 2 lub 3, bez minimum. Masz 5 drukarek? Limit liczy się osobno dla każdej.</span>
@@ -91,6 +91,17 @@ export default function ZipShipBanner({
                   )}
                 </span>
               </p>
+              {tipOpen && (
+                <div className="sm:hidden mt-3 rounded-xl border border-white/10 bg-gray-900 p-4">
+                  <p className="text-[13px] font-bold text-white mb-2">Jak działa promocja?</p>
+                  <ul className="space-y-1.5">
+                    <li className="text-[12px] leading-relaxed text-white/75">• <b className="text-white">Do 3 kartonów na każdą drukarkę</b> — można kupić 1, 2 lub 3, bez minimum. Masz 5 drukarek? Limit liczy się osobno dla każdej.</li>
+                    <li className="text-[12px] leading-relaxed text-white/75">• Przy etykietach termotransferowych <b className="text-white">dodatkowo do 3 kartonów taśm</b> w promocji.</li>
+                    <li className="text-[12px] leading-relaxed text-white/75">• Dotyczy wybranych etykiet i taśm z magazynowego asortymentu Zebra — nowej lub już posiadanej drukarki (także kupionej gdzie indziej).</li>
+                    <li className="text-[12px] leading-relaxed text-white/75">• Podajesz numer seryjny drukarki, my w <b className="text-white">24 h</b> odsyłamy wycenę. Promocja do <b className="text-white">31 grudnia 2026</b>.</li>
+                  </ul>
+                </div>
+              )}
               <span className="shrink-0 text-[11px] font-semibold text-white/60 tabular-nums">do 31 grudnia</span>
             </div>
             <p className="text-[13px] text-white/60 mb-3.5">
