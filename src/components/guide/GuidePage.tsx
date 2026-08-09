@@ -87,7 +87,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
     datePublished: guide.publishedAt,
     dateModified: guide.updatedAt,
     mainEntityOfPage: `https://www.takma.com.pl/poradnik/${guide.slug}`,
-    image: guide.heroImage ? `https://www.takma.com.pl${guide.heroImage}` : undefined,
+    image: (guide.ogImage || guide.heroImage) ? `https://www.takma.com.pl${guide.ogImage || guide.heroImage}` : undefined,
     speakable: {
       '@type': 'SpeakableSpecification',
       cssSelector: ['h1', `#${guide.sections[0]?.id} p:first-of-type`, '#faq'],
@@ -209,12 +209,28 @@ export default function GuidePage({ guide }: GuidePageProps) {
           <>
             {/* Hero with background image */}
             <div className="relative bg-[#020102] overflow-hidden sm:min-h-[400px]">
-              {/* Background image — right-aligned, vertically centered, never cropped */}
-              <img
-                src={guide.heroImage}
-                alt={guide.heroImageAlt || guide.title}
-                className="absolute right-0 top-0 h-full w-auto max-w-[70%] object-contain object-right hidden sm:block"
-              />
+              {/* Background — right-aligned, vertically centered, never cropped.
+                  Wideo (gdy podane) odtwarza się raz, bez dźwięku, i zatrzymuje na ostatniej klatce
+                  — narracja ma dobiec do końca, a nie wracać do punktu wyjścia.
+                  Obraz służy jako plakat i fallback. */}
+              {guide.heroVideo ? (
+                <video
+                  src={guide.heroVideo}
+                  poster={guide.ogImage || guide.heroImage}
+                  autoPlay
+                  muted
+                  playsInline
+                  preload="metadata"
+                  aria-label={guide.heroImageAlt || guide.title}
+                  className="absolute right-0 top-0 h-full w-auto max-w-[70%] object-contain object-right hidden sm:block"
+                />
+              ) : (
+                <img
+                  src={guide.heroImage}
+                  alt={guide.heroImageAlt || guide.title}
+                  className="absolute right-0 top-0 h-full w-auto max-w-[70%] object-contain object-right hidden sm:block"
+                />
+              )}
               {/* Gradient overlay — płynne przejście z czarnego tła na zdjęcie (eliminuje ostrą krawędź).
                   Zakres dosięga prawej krawędzi (100%), bo obraz z max-w-[70%] object-contain efektywnie
                   zaczyna się ~50-60% szerokości viewport. */}

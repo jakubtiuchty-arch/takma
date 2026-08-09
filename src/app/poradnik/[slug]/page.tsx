@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: guide.publishedAt,
       modifiedTime: guide.updatedAt,
       authors: ['TAKMA'],
-      ...(guide.heroImage ? { images: [{ url: `https://www.takma.com.pl${guide.heroImage}`, width: 1200, height: 630 }] } : {}),
+      ...((guide.ogImage || guide.heroImage) ? { images: [{ url: `https://www.takma.com.pl${guide.ogImage || guide.heroImage}`, width: 1200, height: 630 }] } : {}),
     },
     alternates: { canonical: `https://www.takma.com.pl/poradnik/${guide.slug}` },
   }

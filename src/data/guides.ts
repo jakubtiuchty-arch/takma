@@ -30,6 +30,10 @@ export interface Guide {
   readTime: string
   heroImage?: string
   heroImageAlt?: string
+  /** statyczny wariant hero do Open Graph i danych strukturalnych (gdy heroImage jest animowany) */
+  ogImage?: string
+  /** wideo w tle hero (zapętlone, bez dźwięku); heroImage służy wtedy jako plakat */
+  heroVideo?: string
   /** CSS object-position override for card thumbnail (doesn't affect hero in guide page) */
   cardImagePosition?: string
   sections: GuideSection[]
@@ -47,6 +51,137 @@ export const guideCategoryLabels: Record<Guide['category'], string> = {
 }
 
 export const guides: Guide[] = [
+// ============================================================
+// 0. Brady przejmuje Honeywell PSS — zamknięcie transakcji 03.08.2026
+// ============================================================
+{
+  slug: 'brady-przejmuje-honeywell-pss',
+  title: 'Brady przejmuje Honeywell PSS — co to oznacza dla Twoich skanerów i terminali',
+  seoTitle: 'Brady przejmuje Honeywell PSS (2026) — co ze sprzętem, gwarancją i serwisem',
+  seoDescription: 'Brady Corporation zamknęła przejęcie Honeywell Productivity Solutions and Services za 1,4 mld USD. Wyjaśniamy, co zmienia się dla firm używających skanerów, terminali i drukarek Honeywell — gwarancje, serwis, części, nazewnictwo.',
+  excerpt: 'Trzeciego sierpnia 2026 roku Brady Corporation sfinalizowała przejęcie segmentu Productivity Solutions and Services od Honeywella. Za 1,4 miliarda dolarów zmienił właściciela biznes odpowiadający za skanery kodów, terminale mobilne, drukarki etykiet i systemy głosowe. Tłumaczymy, co to praktycznie oznacza dla firm, które mają ten sprzęt w magazynie: gwarancje, serwis, części zamienne i zmianę nazewnictwa.',
+  category: 'branzowy' as const,
+  tags: ['honeywell', 'brady', 'przejecie', 'rynek-autoid', 'skanery-kodow', 'terminale-mobilne', 'drukarki-etykiet', 'serwis', 'Brady Intelligent Productivity Solutions', 'aktualnosci'],
+  publishedAt: '2026-08-09',
+  updatedAt: '2026-08-09',
+  readTime: '9 min',
+  heroImage: '/images/guides/brady-honeywell-pss-hero.webp',
+  heroImageAlt: 'Logo Honeywell przechodzące w logo Brady na tle hali magazynowej — przejęcie segmentu Productivity Solutions and Services',
+  heroVideo: '/images/guides/brady-honeywell-pss-hero.mp4',
+  sections: [
+    {
+      id: 'co-sie-stalo',
+      heading: 'Co dokładnie się wydarzyło',
+      content: `<p><strong>3 sierpnia 2026 roku Brady Corporation sfinalizowała przejęcie segmentu Productivity Solutions and Services (PSS) od Honeywella.</strong> Transakcję ogłoszono 20 kwietnia, a jej wartość to 1,4 miliarda dolarów płatne w całości gotówką. Przejęty biznes wypracował w 2025 roku około 1,1 miliarda dolarów przychodu i zatrudnia ponad trzy tysiące osób w czterdziestu zakładach produkcyjnych i dystrybucyjnych na świecie.</p>
+
+<p>Dla Honeywella to domknięcie wieloletniej restrukturyzacji. Vimal Kapur, prezes Honeywell Technologies, ujął to jednym zdaniem: sprzedaż PSS jest ostatnim krokiem w przekształceniu firmy w spółkę skupioną wyłącznie na automatyce. Wcześniej odeszły środki ochrony indywidualnej, biznes magazynowy oraz materiały zaawansowane, a wydzielenie segmentu lotniczego zaplanowano na trzeci kwartał tego roku.</p>
+
+<p>Dla Brady to największa transakcja w historii firmy. Producent znany dotąd z systemów identyfikacji, oznaczeń przemysłowych i rozwiązań bezpieczeństwa — obecny na rynku od ponad stu lat, z siedzibą w Milwaukee — z dnia na dzień podwoił skalę działania i zatrudnia dziś około dziewięciu i pół tysiąca osób. Zdaniem analityków branżowych ten ruch stawia Brady na drugim miejscu rynku automatycznej identyfikacji, zaraz za Zebrą.</p>
+
+<table>
+<thead><tr><th>Fakt</th><th>Wartość</th></tr></thead>
+<tbody>
+<tr><td><strong>Data zamknięcia transakcji</strong></td><td>3 sierpnia 2026</td></tr>
+<tr><td><strong>Wartość</strong></td><td>1,4 mld USD, płatne gotówką</td></tr>
+<tr><td><strong>Przychody przejmowanego segmentu</strong></td><td>ok. 1,1 mld USD (2025)</td></tr>
+<tr><td><strong>Pracownicy</strong></td><td>ponad 3 000</td></tr>
+<tr><td><strong>Zakłady na świecie</strong></td><td>40</td></tr>
+<tr><td><strong>Przejęte patenty</strong></td><td>ok. 4 000</td></tr>
+<tr><td><strong>Przejęte kontrakty serwisowe</strong></td><td>ok. 4 mln</td></tr>
+<tr><td><strong>Nazwa nowego segmentu</strong></td><td>Intelligent Productivity Solutions (IPS)</td></tr>
+</tbody>
+</table>`
+    },
+    {
+      id: 'co-obejmuje',
+      heading: 'Co konkretnie zmieniło właściciela',
+      content: `<p>Przejęty segment to dokładnie ta część oferty Honeywella, którą znają magazyny, firmy produkcyjne i logistyczne. Wchodzą do niego cztery główne grupy urządzeń oraz towarzyszące im oprogramowanie i usługi serwisowe.</p>
+
+<p><strong>Skanery kodów kreskowych</strong> — między innymi rodziny Xenon, Granit i Genesis, czyli klasyczne czytniki ręczne używane przy kompletacji i przyjęciach towaru. <strong>Terminale mobilne</strong> — serie CT, CK i EDA, w tym popularne w Polsce modele używane w magazynach wysokiego składowania. <strong>Drukarki etykiet</strong> — biurkowe z serii PC, przemysłowe PM i mobilne RP. <strong>Systemy głosowe</strong> do kompletacji, oparte na terminalach Talkman, pozwalające pracownikom kompletować zamówienia bez zajmowania rąk.</p>
+
+<p>Warto znać rodowód tego portfela, bo tłumaczy, dlaczego jest tak rozległy. PSS nigdy nie było organicznym wynalazkiem Honeywella — powstało ze skupowania firm, które przez dekady budowały ten rynek. Metrologic trafił do Honeywella w 2008 roku, LXE w 2011, w tym samym roku <strong>Intermec</strong>, dwa lata później <strong>Vocollect</strong> — twórca technologii głosowej — a w 2014 roku <strong>Datamax-O'Neil</strong>, marka drukarek etykiet. Wszystkie te nazwy zniknęły z rynku, wchłonięte przez wspólne logo Honeywella. Teraz cały ten dorobek zmienił właściciela po raz kolejny.</p>`
+    },
+    {
+      id: 'co-z-twoim-sprzetem',
+      heading: 'Co to oznacza dla sprzętu pracującego w Twojej firmie',
+      content: `<p>To pytanie zadaje sobie każdy, kto ma na stanie kilkadziesiąt terminali albo skanerów. Odpowiedź jest krótka: w codziennej pracy nie zmienia się nic.</p>
+
+<p><strong>Sprzęt działa i będzie działał tak samo.</strong> Zmiana właściciela nie ingeruje w urządzenia — nic nie przestaje się łączyć, skanować ani drukować. Nie ma tu żadnego mechanizmu, który mógłby cokolwiek wyłączyć.</p>
+
+<p><strong>Zobowiązania serwisowe przeszły razem z biznesem.</strong> W ramach transakcji Brady przejęła około czterech milionów kontraktów serwisowych. Umowa serwisowa nie znika dlatego, że firma zmieniła właściciela — przechodzi na nabywcę wraz z całym segmentem. Sześć dni po zamknięciu transakcji infrastruktura wsparcia działa zresztą bez zmian: zgłoszenia napraw, portal wsparcia technicznego i lista autoryzowanych partnerów serwisowych funkcjonują pod dotychczasowymi adresami Honeywella.</p>
+
+<p><strong>Części zamienne i naprawy realizujemy bez zmian.</strong> Przejęcie objęło zakłady produkcyjne, magazyny części i cały łańcuch dostaw, więc dostępność podzespołów opiera się na tej samej bazie co wcześniej. Dotyczy to zarówno urządzeń kupionych niedawno, jak i modeli pracujących w firmach od kilku lat.</p>
+
+<p><strong>Nasze stanowisko jest proste: serwisujemy sprzęt Honeywell tak samo jak dotąd.</strong> Naprawy, diagnostyka i dobór części nie zależą od tego, czyje logo widnieje na obudowie ani w papierach korporacyjnych. Jeśli masz pytanie o konkretne urządzenie, jego gwarancję albo dostępność podzespołów — <a href="/kontakt">napisz do nas</a>, sprawdzimy to indywidualnie.</p>`
+    },
+    {
+      id: 'nazewnictwo',
+      heading: 'Nowa nazwa i tempo zmiany marki',
+      content: `<p>Brady raportuje wyniki w dwóch segmentach: dotychczasowy biznes to Identification Solutions, a przejęte PSS działa jako <strong>Intelligent Productivity Solutions</strong>, w skrócie IPS. To nie jest wyłącznie nazwa księgowa — jest już w użyciu marketingowym. Sześć dni po zamknięciu transakcji serwis internetowy przejętego segmentu przedstawia się w tytule strony jako „Brady Intelligent Productivity Solutions", choć wciąż pod dawnym adresem.</p>
+
+<p>Na dziś rebranding widać wyłącznie w warstwie korporacyjnej. <strong>Nazwy rodzin produktowych pozostają bez zmian</strong> — Xenon, Granit i Genesis wśród skanerów, serie PC, PM i RP wśród drukarek, CT, CK i EDA wśród terminali, Talkman w systemach głosowych. Technologia głosowa jest nadal opisywana jako Honeywell Voice.</p>
+
+<p>Zmiana marki na samych urządzeniach będzie procesem stopniowym — Brady zapowiada, że logo Honeywell będzie sukcesywnie zastępowane w komunikacji, sklepie internetowym i na produktach. Z doświadczenia rynkowego takie przejścia rozkładają się zwykle na okres od kilkunastu miesięcy do kilku lat, bo obejmują zapasy magazynowe, opakowania i dokumentację techniczną.</p>
+
+<p>Praktyczny wniosek dla kupujących: przez najbliższy czas ten sam model może występować w materiałach pod dwoma nazwami — dawną Honeywella i nową Brady. Przy zamawianiu warto opierać się na numerze katalogowym urządzenia, a nie na nazwie marki, bo numer pozostaje niezmienny.</p>`
+    },
+    {
+      id: 'czy-kupowac',
+      heading: 'Czy warto teraz kupować sprzęt Honeywell',
+      content: `<p>Odpowiadamy krótko: <strong>tak, przejęcie nie jest powodem, by wstrzymywać zakup.</strong> Kilka argumentów.</p>
+
+<p>Brady zapłaciła 1,4 miliarda dolarów za biznes, którego wartość opiera się na relacjach z klientami korporacyjnymi i na czterech milionach kontraktów serwisowych. Nabywca, który wykłada takie pieniądze, nie ma żadnego interesu w porzuceniu obsługi tych klientów — to właśnie ona stanowi przedmiot zakupu. Deklarowane synergie kosztowe wynoszą co najmniej 25 milionów dolarów rocznie w perspektywie trzech lat i dotyczą kosztów wewnętrznych, a nie ograniczania oferty.</p>
+
+<p>Warto też zauważyć, że portfele obu firm w niewielkim stopniu się pokrywają. Brady to identyfikacja i oznaczenia przemysłowe, PSS to urządzenia do zbierania danych. Nakładają się w zasadzie tylko na drukarkach etykiet — a to obszar, w którym, zdaniem analityków, przejęty segment radził sobie najsłabiej. Oznacza to niewielkie ryzyko wycinania modeli z powodu wewnętrznej konkurencji.</p>
+
+<p>Jeśli natomiast planujesz wymianę floty terminali i chcesz mieć pewność stabilnego wsparcia przez najbliższe pięć czy siedem lat, sytuacja jest dobrym momentem, żeby porównać dostępne platformy — również z ofertą Zebry, która przez ten czas nie zmienia właściciela. Przygotowaliśmy takie zestawienie w osobnym artykule: <a href="/poradnik/zebra-vs-honeywell-terminale-mobilne">Zebra kontra Honeywell — porównanie terminali mobilnych</a>.</p>`
+    },
+    {
+      id: 'co-dalej',
+      heading: 'Co to zmienia na rynku',
+      content: `<p>Do tej pory rynek automatycznej identyfikacji w Europie miał jednego wyraźnego lidera — Zebrę — i rozproszoną resztę stawki. Po przejęciu PSS Brady staje się drugim graczem dysponującym pełnym portfelem: od etykiety i oznaczenia, przez drukarkę, po skaner, terminal i system głosowy. To pierwsza od lat zmiana w układzie sił, która może realnie przełożyć się na konkurencję cenową.</p>
+
+<p>Analitycy branżowi zwracają jednak uwagę, że przejęty biznes wchodzi do Brady z bagażem. Przychody PSS spadły w 2025 roku o około sześć procent, a prace badawczo-rozwojowe były przez lata niedofinansowane, co widać zwłaszcza w obszarze RFID. Honeywell rozpoznał zresztą odpis wartości firmy na ponad siedemset milionów dolarów. Innymi słowy: Brady kupiła solidną technologię i ogromną bazę klientów, ale ma przed sobą sporo pracy nad nadrobieniem zaległości.</p>
+
+<p>Dla klientów w Polsce najbliższe miesiące nie powinny przynieść odczuwalnych zmian. Warto natomiast obserwować dwie rzeczy: moment, w którym w cennikach dystrybutorów zaczną pojawiać się nazwy Brady zamiast Honeywell, oraz ewentualne komunikaty o zmianach w programie partnerskim. Będziemy ten temat aktualizować.</p>
+
+<p><strong>Masz w firmie skanery, terminale lub drukarki Honeywell i chcesz sprawdzić ich status serwisowy?</strong> <a href="/serwis/honeywell">Serwisujemy urządzenia Honeywell</a> niezależnie od zmian własnościowych u producenta — <a href="/kontakt">skontaktuj się z nami</a>, a sprawdzimy konkretne modele.</p>`
+    }
+  ],
+  faq: [
+    {
+      question: 'Czy moja gwarancja na sprzęt Honeywell jest nadal ważna po przejęciu przez Brady?',
+      answer: 'Tak. Zobowiązania serwisowe, w tym około czterech milionów kontraktów, przeszły na Brady razem z całym przejmowanym segmentem — taki jest standardowy mechanizm przy sprzedaży zorganizowanej części przedsiębiorstwa. Gwarancja producenta obowiązuje na dotychczasowych zasadach. Jeśli chcesz potwierdzić status konkretnego urządzenia, skontaktuj się z nami — sprawdzimy to indywidualnie.'
+    },
+    {
+      question: 'Czy urządzenia Honeywell będą dalej produkowane?',
+      answer: 'Tak. Brady przejęła cały segment razem z zakładami produkcyjnymi, patentami i zespołem liczącym ponad trzy tysiące osób. Wszystkie linie produktowe pozostają w ofercie. Portfele obu firm w niewielkim stopniu się pokrywają, więc ryzyko wycinania modeli z powodu wewnętrznej konkurencji jest niewielkie.'
+    },
+    {
+      question: 'Kiedy marka Honeywell zniknie z urządzeń?',
+      answer: 'Zmiana będzie stopniowa i rozłoży się na dłuższy czas — obejmuje przecież zapasy magazynowe, opakowania i dokumentację. Na dziś zmieniła się warstwa korporacyjna: przejęty segment występuje jako Brady Intelligent Productivity Solutions. Nazwy rodzin produktowych, takie jak Xenon, Granit, PM czy Talkman, pozostają bez zmian. Przy zamawianiu warto posługiwać się numerem katalogowym urządzenia, który się nie zmienia.'
+    },
+    {
+      question: 'Co to jest Brady Intelligent Productivity Solutions?',
+      answer: 'To nazwa segmentu, w ramach którego Brady prowadzi przejęty od Honeywella biznes Productivity Solutions and Services. Brady raportuje wyniki w dwóch segmentach: Identification Solutions, czyli dotychczasowa działalność związana z identyfikacją i oznaczeniami przemysłowymi, oraz Intelligent Productivity Solutions, w skrócie IPS, obejmujący skanery, terminale mobilne, drukarki etykiet i systemy głosowe.'
+    },
+    {
+      question: 'Czy przejęcie wpłynie na ceny sprzętu Honeywell w Polsce?',
+      answer: 'Transakcja nie pociąga za sobą zmian cennikowych. Brady deklaruje synergie kosztowe rzędu co najmniej 25 milionów dolarów rocznie w perspektywie trzech lat, ale dotyczą one kosztów wewnętrznych firmy, a nie cen katalogowych. Ceny w Polsce zależą przede wszystkim od cenników dystrybucyjnych i kursu walut.'
+    },
+    {
+      question: 'Czy powinienem wstrzymać się z zakupem sprzętu Honeywell?',
+      answer: 'Nie ma ku temu powodu. Wartość przejętego biznesu opiera się na bazie klientów korporacyjnych i kontraktach serwisowych, więc nabywca ma silny interes w utrzymaniu ciągłości obsługi. Jeśli jednak planujesz wymianę całej floty na kolejne pięć czy siedem lat, to dobry moment, żeby porównać dostępne platformy — również z ofertą Zebry.'
+    }
+  ],
+  relatedLinks: [
+    { title: 'Zebra vs Honeywell — porównanie terminali mobilnych', href: '/poradnik/zebra-vs-honeywell-terminale-mobilne' },
+    { title: 'Serwis urządzeń Honeywell', href: '/serwis/honeywell' },
+    { title: 'Skanery kodów kreskowych Honeywell', href: '/skanery-honeywell' },
+    { title: 'Terminale mobilne Honeywell', href: '/terminale-honeywell' },
+    { title: 'Drukarki etykiet Honeywell', href: '/drukarki-etykiet-honeywell' },
+  ],
+},
 // ============================================================
 // 0. Zebra TC201 — nowy terminal TC2x (4. generacja), premiera 21.07.2026
 // ============================================================
