@@ -204,11 +204,11 @@ export const guides: Guide[] = [
       heading: 'Zebra TC201 — nowy standard terminala mobilnego serii TC2x',
       content: `<div style="display:flex;gap:32px;flex-wrap:wrap;margin-bottom:24px;justify-content:center;align-items:flex-end">
 <div style="min-width:180px;text-align:center;display:flex;flex-direction:column;align-items:center">
-<img src="/images/products/tc201_front.png" alt="Kolektor danych Zebra TC201 — nowy terminal mobilny TC2x, widok z przodu (ekran 6 cali FHD+)" style="max-height:200px;margin:0 auto" loading="lazy" />
+<img src="/images/products/tc201_1.png" alt="Kolektor danych Zebra TC201 — nowy terminal mobilny TC2x, widok z przodu (ekran 6 cali FHD+)" style="max-height:200px;margin:0 auto" loading="lazy" />
 <p><strong>Zebra TC201 — przód</strong><br/>ekran 6" FHD+, klawisze skanowania</p>
 </div>
 <div style="min-width:180px;text-align:center;display:flex;flex-direction:column;align-items:center">
-<img src="/images/products/tc201_back.png" alt="Kolektor danych Zebra TC201 — widok z tyłu: okno skanera, aparat 16 MP z lampą i antena RFID" style="max-height:200px;margin:0 auto" loading="lazy" />
+<img src="/images/products/tc201_4.png" alt="Kolektor danych Zebra TC201 — widok z tyłu: okno skanera, aparat 16 MP z lampą i antena RFID" style="max-height:200px;margin:0 auto" loading="lazy" />
 <p><strong>Zebra TC201 — tył</strong><br/>skaner, aparat 16 MP, opcja RFID</p>
 </div>
 </div>
@@ -288,8 +288,8 @@ export const guides: Guide[] = [
       content: `<p style="background:#f8fee6;border-left:4px solid #A8F000;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:16px"><strong>TC201 wprowadza nową rodzinę skanerów: SR500 (zakres standardowy), AC670 Advanced Range odczytujący kody do 30 m i robiący kolorowe zdjęcia, oraz SR560 z głowicą pod kątem 60°. TC22 oferuje SE4710 (do 35 cm) i SE55 (do 7,6 m). Skaner dalekiego zasięgu TC201 sięga niemal 4× dalej niż SE55.</strong></p>
 
 <div style="display:flex;gap:86px;flex-wrap:wrap;justify-content:center;margin:0 auto 16px">
-<img src="/images/products/tc201_front_right.png" alt="Kolektor danych Zebra TC201 — ujęcie 3/4 z prawej, klawisz skanowania i kołyska głośności" style="max-height:240px" loading="lazy" />
-<img src="/images/products/tc201_front_left.png" alt="Kolektor danych Zebra TC201 — ujęcie 3/4 z lewej, boczny klawisz skanowania" style="max-height:240px" loading="lazy" />
+<img src="/images/products/tc201_2.png" alt="Kolektor danych Zebra TC201 — ujęcie 3/4 z prawej, klawisz skanowania i kołyska głośności" style="max-height:240px" loading="lazy" />
+<img src="/images/products/tc201_3.png" alt="Kolektor danych Zebra TC201 — ujęcie 3/4 z lewej, boczny klawisz skanowania" style="max-height:240px" loading="lazy" />
 </div>
 
 <p><strong>Wybór skanera definiuje zastosowanie terminala.</strong> TC201 daje tu więcej opcji niż TC22 — łącznie z odczytem na bardzo dużych dystansach.</p>
@@ -441,7 +441,7 @@ export const guides: Guide[] = [
 <p style="margin-top:auto;padding-top:20px;margin-bottom:0"><a href="/produkt/zebra-tc22" style="display:inline-block;background:#2563eb;color:#ffffff;font-weight:600;padding:10px 18px;border-radius:8px;text-decoration:none">Zobacz Zebra TC22 →</a></p>
 </div>
 <div style="flex:1;min-width:280px;display:flex;flex-direction:column;text-align:left;border:1px solid #e2e8f0;border-radius:12px;padding:24px">
-<img src="/images/products/tc201_front.png" alt="Zebra TC201 — nowy terminal mobilny (kolektor danych), widok z przodu" style="max-height:140px;display:block;margin:0 auto 18px" loading="lazy" />
+<img src="/images/products/tc201_1.png" alt="Zebra TC201 — nowy terminal mobilny (kolektor danych), widok z przodu" style="max-height:140px;display:block;margin:0 auto 18px" loading="lazy" />
 <h3 style="margin:0 0 14px;font-size:18px;color:#0f172a">Wybierz TC201, jeśli:</h3>
 <ul style="margin:0;padding-left:20px;color:#334155">
 <li style="margin:0 0 8px">Kupujesz flotę na 5–7 lat (dłuższe wsparcie)</li>
