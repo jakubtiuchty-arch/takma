@@ -430,7 +430,7 @@ export const guides: Guide[] = [
 <div style="display:flex;gap:20px;flex-wrap:wrap;margin:24px 0">
 <div style="flex:1;min-width:280px;display:flex;flex-direction:column;text-align:left;border:1px solid #e2e8f0;border-radius:12px;padding:24px">
 <img src="/images/products/tc22_front.png" alt="Zebra TC22 — terminal mobilny (kolektor danych), widok z przodu" style="max-height:140px;display:block;margin:0 auto 18px" loading="lazy" />
-<h3 style="margin:0 0 14px;font-size:18px;color:#0f172a">Wybierz TC22, jeśli:</h3>
+<h3 style="margin:0 0 14px;font-size:18px;color:#0f172a;text-align:center">Wybierz TC22, jeśli:</h3>
 <ul style="margin:0;padding-left:20px;color:#334155">
 <li style="margin:0 0 8px">Potrzebujesz terminali od ręki (przed 21 lipca)</li>
 <li style="margin:0 0 8px">Praca tylko wewnątrz budynku z Wi-Fi</li>
@@ -438,11 +438,11 @@ export const guides: Guide[] = [
 <li style="margin:0 0 8px">Skanujesz na dystansie do 7,6 m</li>
 <li style="margin:0">Nie wymagasz 5G, GPS ani certyfikatów FIPS</li>
 </ul>
-<p style="margin-top:auto;padding-top:20px;margin-bottom:0"><a href="/produkt/zebra-tc22" style="display:inline-block;background:#2563eb;color:#ffffff;font-weight:600;padding:10px 18px;border-radius:8px;text-decoration:none">Zobacz Zebra TC22 →</a></p>
+<p style="margin-top:auto;padding-top:20px;margin-bottom:0;text-align:center"><a href="/produkt/zebra-tc22" style="display:inline-block;background:#2563eb;color:#ffffff;font-weight:600;padding:10px 18px;border-radius:8px;text-decoration:none">Zobacz Zebra TC22 →</a></p>
 </div>
 <div style="flex:1;min-width:280px;display:flex;flex-direction:column;text-align:left;border:1px solid #e2e8f0;border-radius:12px;padding:24px">
-<img src="/images/products/tc201_1.png" alt="Zebra TC201 — nowy terminal mobilny (kolektor danych), widok z przodu" style="max-height:140px;display:block;margin:0 auto 18px" loading="lazy" />
-<h3 style="margin:0 0 14px;font-size:18px;color:#0f172a">Wybierz TC201, jeśli:</h3>
+<img src="/images/products/tc201_1.png" alt="Zebra TC201 — nowy terminal mobilny (kolektor danych), widok z przodu" style="max-height:168px;display:block;margin:0 auto 18px" loading="lazy" />
+<h3 style="margin:0 0 14px;font-size:18px;color:#0f172a;text-align:center">Wybierz TC201, jeśli:</h3>
 <ul style="margin:0;padding-left:20px;color:#334155">
 <li style="margin:0 0 8px">Kupujesz flotę na 5–7 lat (dłuższe wsparcie)</li>
 <li style="margin:0 0 8px">Chcesz 5G i GPS w jednym modelu</li>
@@ -450,7 +450,7 @@ export const guides: Guide[] = [
 <li style="margin:0 0 8px">Działasz w sektorze regulowanym (FIPS, Common Criteria)</li>
 <li style="margin:0">Pracujesz w mrozie (do -20°C) lub planujesz aplikacje AI</li>
 </ul>
-<p style="margin-top:auto;padding-top:20px;margin-bottom:0"><a href="/kontakt" style="display:inline-block;background:#2563eb;color:#ffffff;font-weight:600;padding:10px 18px;border-radius:8px;text-decoration:none">Zapytaj o TC201 / rezerwacja →</a></p>
+<p style="margin-top:auto;padding-top:20px;margin-bottom:0;text-align:center"><a href="/produkt/zebra-tc201" style="display:inline-block;background:#2563eb;color:#ffffff;font-weight:600;padding:10px 18px;border-radius:8px;text-decoration:none">Zobacz Zebra TC201 →</a></p>
 </div>
 </div>
 

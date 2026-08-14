@@ -167,6 +167,12 @@ export default async function RootLayout({
     if(p.get('ga-off')==='1'){ localStorage.setItem('ga_optout','1'); console.info('GA: wyłączone na tym urządzeniu (?ga-off)'); }
     if(p.get('ga-on')==='1'){ localStorage.removeItem('ga_optout'); console.info('GA: włączone na tym urządzeniu (?ga-on)'); }
     if(localStorage.getItem('ga_optout')==='1'){ window['ga-disable-'+GA]=true; }
+    // Ruch deweloperski: wejścia z lokalnych serwerów (np. localhost:3002 przy
+    // testach cross-linkingu) zaśmiecały statystyki jako osobne źródło referral.
+    if(/^https?:\/\/(localhost|127\.0\.0\.1|\[::1\])(:|\/)/.test(document.referrer||'')){
+      window['ga-disable-'+GA]=true;
+      try{ localStorage.setItem('ga_optout','1'); }catch(e){}
+    }
   } catch(e){}
 })();
 window.dataLayer = window.dataLayer || [];
