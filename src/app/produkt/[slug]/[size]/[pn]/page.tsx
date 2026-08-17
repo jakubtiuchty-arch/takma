@@ -82,6 +82,7 @@ import {
 } from '@/components/ui/Icons'
 import LinkedText from '@/components/ui/LinkedText'
 import { stripMarkdown } from '@/lib/strip-markdown'
+import { getStockSnapshot, schemaPrice } from '@/lib/stock-snapshot'
 import AddToRFQButton from '../../AddToRFQButton'
 import AskAboutProductButton from '../../AskAboutProductButton'
 import SpecsAccordion from '../../SpecsAccordion'
@@ -110,6 +111,11 @@ function ribbon5319ColorLabel(slug: string, pn: string): string | null {
 interface PageProps {
   params: Promise<{ slug: string; size: string; pn: string }>
 }
+
+// Ceny w JSON-LD pochodzą z migawki StockCache, więc strona musi się odświeżać
+// niezależnie od deployów — inaczej schema trzymałaby cenę z dnia builda, a Google
+// karze rozjazd między ceną w danych strukturalnych a ceną na stronie.
+export const revalidate = 21600 // 6 h
 
 export async function generateStaticParams() {
   const params: { slug: string; size: string; pn: string }[] = []
@@ -243,6 +249,15 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
     .toISOString()
     .split('T')[0]
 
+  // Live cena/dostępność z StockCache (jedna migawka na proces — patrz lib/stock-snapshot)
+  const stockSnapshot = await getStockSnapshot()
+  const liveStock = stockSnapshot.get(variant.partNumber.toUpperCase())
+  const schemaOfferPrice = schemaPrice(stockSnapshot, variant.partNumber, variant.priceFrom)
+  const schemaAvailability =
+    liveStock && liveStock.totalStock > 0
+      ? 'https://schema.org/InStock'
+      : availabilityMap[variant.availability]
+
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -275,7 +290,10 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
       ...(typDruku ? [{ '@type': 'PropertyValue', name: 'Typ druku', value: typDruku }] : []),
       ...(materialSpec ? [{ '@type': 'PropertyValue', name: 'Materiał', value: materialSpec }] : []),
     ],
-    ...(variant.priceFrom && variant.priceFrom > 0
+    // Cena do schema: najpierw live ze StockCache, potem statyczny priceFrom.
+    // Bez tego warianty bez `priceFrom` szły w świat jako produkty bez ceny —
+    // Google robił z nich oferty w Merchant Center i odrzucał je hurtowo.
+    ...(schemaOfferPrice
       ? {
           offers: {
             '@type': 'Offer',
@@ -283,9 +301,9 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
             sku: variant.partNumber,
             mpn: variant.partNumber,
             name: variantH1,
-            price: variant.priceFrom.toFixed(2),
+            price: schemaOfferPrice.toFixed(2),
             priceCurrency: 'PLN',
-            availability: availabilityMap[variant.availability],
+            availability: schemaAvailability,
             itemCondition: 'https://schema.org/NewCondition',
             priceValidUntil,
             seller: { '@type': 'Organization', name: 'TAKMA', url: siteUrl },

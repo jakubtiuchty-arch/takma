@@ -105,11 +105,20 @@ interface StockRow {
   found: boolean
 }
 
+/** Pierwszy obraz nadający się do Merchant Center.
+ *  Google odrzuca SVG („Unsupported image type"), a placeholder.svg wystawiał
+ *  w feedzie produkty bez własnego zdjęcia. Na stronie placeholder zostaje —
+ *  z feedu taka oferta wypada, bo lepiej jej nie mieć niż mieć odrzuconą. */
+function feedImage(images?: string[]): string | null {
+  const raster = (images ?? []).find(src => /\.(jpe?g|png|webp|gif|bmp|tiff?)$/i.test(src))
+  return raster ?? null
+}
+
 export async function GET() {
   // 1) Kandydaci (produkt lub wariant) z PN.
   const candidates: Candidate[] = []
   for (const product of products) {
-    if (!product.images?.length) continue
+    if (!feedImage(product.images)) continue
     if (product.variants && product.variants.length > 0) {
       for (const v of product.variants) candidates.push({ product, variant: v, pn: v.partNumber })
     } else {
@@ -164,7 +173,7 @@ export async function GET() {
 
     const manufacturer = getManufacturerById(c.product.manufacturerId)
     const brand = manufacturer?.name || 'Zebra'
-    const imageLink = `${SITE_URL}${c.product.images[0]}`
+    const imageLink = `${SITE_URL}${feedImage(c.product.images)}`
     const productType = getCategoryPath(c.product.categoryId, c.product.subcategoryIds)
     const description = truncate(
       stripMarkdown(c.product.description || c.product.shortDescription || ''),
