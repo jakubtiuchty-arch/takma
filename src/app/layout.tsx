@@ -169,9 +169,14 @@ export default async function RootLayout({
     if(localStorage.getItem('ga_optout')==='1'){ window['ga-disable-'+GA]=true; }
     // Ruch deweloperski: wejścia z lokalnych serwerów (np. localhost:3002 przy
     // testach cross-linkingu) zaśmiecały statystyki jako osobne źródło referral.
-    if(/^https?:\/\/(localhost|127\.0\.0\.1|\[::1\])(:|\/)/.test(document.referrer||'')){
+    // BEZ wyrażeń regularnych: ten skrypt jest budowany w template literalu,
+    // który zjada backslashe — regex trafiał do przeglądarki połamany i wywalał
+    // cały blok GA (SyntaxError = zero pomiaru). Bez zapisu do localStorage,
+    // żeby jedno wejście z localhosta nie wyłączało pomiaru na stałe.
+    var refHost='';
+    try{ refHost=document.referrer ? new URL(document.referrer).hostname : ''; }catch(e){}
+    if(refHost==='localhost'||refHost==='127.0.0.1'||refHost==='::1'||refHost==='[::1]'){
       window['ga-disable-'+GA]=true;
-      try{ localStorage.setItem('ga_optout','1'); }catch(e){}
     }
   } catch(e){}
 })();
