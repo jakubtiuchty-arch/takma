@@ -10,7 +10,10 @@
  *   GOOGLE_ADS_DEVELOPER_TOKEN   — z Centrum API konta MCC
  *   GOOGLE_ADS_CLIENT_ID         — OAuth client (Desktop app) z Google Cloud
  *   GOOGLE_ADS_CLIENT_SECRET
- *   GOOGLE_ADS_REFRESH_TOKEN     — ze skryptu scripts/google-ads-refresh-token.mjs
+ *   GOOGLE_ADS_REFRESH_TOKEN     — ze skryptu scripts/google-ads-refresh-token.mjs;
+ *                                  scope MUSI zawierać auth/datamanager (konwersje
+ *                                  offline idą przez Data Manager API), obok
+ *                                  auth/adwords i auth/content
  *   GOOGLE_ADS_CUSTOMER_ID       — konto reklamowe, np. 3421931664 (bez myślników)
  *   GOOGLE_ADS_LOGIN_CUSTOMER_ID — ID konta MCC (bez myślników)
  * Opcjonalnie:
@@ -312,25 +315,6 @@ export async function resolveGclid(gclid: string, dateHints: Date[]): Promise<Gc
 
 // --- Konwersje offline (upload marży po opłaceniu zamówienia) ----------------
 
-/** POST do dowolnej metody REST Google Ads (poza googleAds:search). */
-async function adsPost(method: string, body: unknown): Promise<Record<string, unknown>> {
-  const token = await getAccessToken()
-  const cid = process.env.GOOGLE_ADS_CUSTOMER_ID!
-  const loginCid = process.env.GOOGLE_ADS_LOGIN_CUSTOMER_ID
-  const res = await fetch(`https://googleads.googleapis.com/${API_VERSION}/customers/${cid}${method}`, {
-    method: 'POST',
-    headers: {
-      authorization: `Bearer ${token}`,
-      'content-type': 'application/json',
-      'developer-token': process.env.GOOGLE_ADS_DEVELOPER_TOKEN!,
-      ...(loginCid ? { 'login-customer-id': loginCid } : {}),
-    },
-    body: JSON.stringify(body),
-  })
-  if (!res.ok) throw new Error(`Ads ${method} ${res.status}: ${await res.text()}`)
-  return (await res.json()) as Record<string, unknown>
-}
-
 const OFFLINE_CONV_NAME = 'Zakup (marża) — offline'
 let convActionCache: string | null = null
 
@@ -373,43 +357,107 @@ export interface ConversionUploadResult {
   uploaded: number
   failedIndices: number[]
   errors: string[]
+  /** ID żądania Data Manager — do reklamacji w supporcie Google, gdy konwersje nie dojdą. */
+  requestId?: string
 }
 
-/** Upload konwersji offline (UploadClickConversions, partial failure). */
-export async function uploadClickConversions(conversions: ClickConversion[]): Promise<ConversionUploadResult> {
-  const action = await offlineConversionAction()
-  if (!action) return { uploaded: 0, failedIndices: conversions.map((_, i) => i), errors: [`Brak akcji konwersji "${OFFLINE_CONV_NAME}" na koncie`] }
+// --- Data Manager API (konwersje offline) ------------------------------------
+//
+// Google zamknął ConversionUploadService.UploadClickConversions dla nowych
+// integracji — nasza (5.07.2026) dostawała przy każdej próbie
+// CUSTOMER_NOT_ALLOWLISTED_FOR_THIS_FEATURE, więc ani jedna konwersja z marżą
+// nie doszła do konta. Jedyna droga to Data Manager API.
+//
+// Uwaga na scope: datamanager NIE wchodzi w zakres auth/adwords. Refresh token
+// trzeba wydać ponownie ze scope'ami:
+//   https://www.googleapis.com/auth/adwords
+//   https://www.googleapis.com/auth/content
+//   https://www.googleapis.com/auth/datamanager
+// (OAUTH_SCOPE="..." node scripts/google-ads-refresh-token.mjs) oraz włączyć
+// Data Manager API w projekcie Google Cloud.
+const DATA_MANAGER_URL = 'https://datamanager.googleapis.com/v1/events:ingest'
 
-  const json = await adsPost(':uploadClickConversions', {
-    conversions: conversions.map((c) => ({
-      gclid: c.gclid,
-      conversionAction: action,
-      conversionDateTime: c.conversionDateTime,
-      conversionValue: c.conversionValue,
-      currencyCode: 'PLN',
-      ...(c.orderId ? { orderId: c.orderId } : {}),
-    })),
-    partialFailure: true,
+/** ID akcji konwersji (ostatni segment resource name) — productDestinationId. */
+async function offlineConversionActionId(): Promise<string | null> {
+  const rn = await offlineConversionAction()
+  return rn ? (rn.split('/').pop() ?? null) : null
+}
+
+/** 'yyyy-MM-dd HH:mm:ss+02:00' (adsDateTime) → RFC 3339 wymagany przez Data Manager. */
+function toRfc3339(adsFormat: string): string {
+  return adsFormat.replace(' ', 'T')
+}
+
+async function dataManagerIngest(
+  conversions: ClickConversion[],
+  actionId: string,
+  validateOnly: boolean,
+): Promise<{ ok: boolean; requestId?: string; errors: string[] }> {
+  const token = await getAccessToken()
+  const loginCid = process.env.GOOGLE_ADS_LOGIN_CUSTOMER_ID
+  const res = await fetch(DATA_MANAGER_URL, {
+    method: 'POST',
+    headers: { authorization: `Bearer ${token}`, 'content-type': 'application/json' },
+    body: JSON.stringify({
+      destinations: [
+        {
+          operatingAccount: { accountType: 'GOOGLE_ADS', accountId: process.env.GOOGLE_ADS_CUSTOMER_ID! },
+          ...(loginCid ? { loginAccount: { accountType: 'GOOGLE_ADS', accountId: loginCid } } : {}),
+          productDestinationId: actionId,
+        },
+      ],
+      events: conversions.map((c) => ({
+        eventTimestamp: toRfc3339(c.conversionDateTime),
+        eventSource: 'WEB',
+        conversionValue: c.conversionValue,
+        currency: 'PLN',
+        adIdentifiers: { gclid: c.gclid },
+        // transactionId = numer zamówienia: Google odsiewa po nim duplikaty,
+        // więc ponowne wysłanie tego samego zamówienia nie zawyży konwersji.
+        ...(c.orderId ? { transactionId: c.orderId } : {}),
+      })),
+      // Pola consent świadomie pominięte — nie zbieramy zgód na personalizację
+      // reklam (brak CMP na stronie). Gdy pojawi się CMP, wstawić realne wartości
+      // zamiast deklarowania zgody, której nie mamy.
+      validateOnly,
+    }),
   })
-
-  const errors: string[] = []
-  const pfe = json.partialFailureError as { message?: string; details?: Array<{ errors?: Array<{ message?: string; location?: { fieldPathElements?: Array<{ index?: number }> } }> }> } | undefined
-  const failedIdx = new Set<number>()
-  if (pfe?.details) {
-    for (const d of pfe.details) {
-      for (const e of d.errors || []) {
-        const idx = e.location?.fieldPathElements?.find((p) => typeof p.index === 'number')?.index
-        if (typeof idx === 'number') failedIdx.add(idx)
-        errors.push(`[${idx ?? '?'}] ${e.message || 'unknown'}`)
-      }
-    }
-  } else if (pfe?.message) {
-    // globalny błąd bez szczegółów — traktuj wszystko jako nieudane
-    errors.push(pfe.message)
-    conversions.forEach((_, i) => failedIdx.add(i))
+  const json = (await res.json().catch(() => ({}))) as {
+    requestId?: string
+    error?: { message?: string; details?: unknown }
   }
-  const failedIndices = Array.from(failedIdx).sort((a, b) => a - b)
-  return { uploaded: conversions.length - failedIndices.length, failedIndices, errors }
+  if (!res.ok) {
+    const detail = json.error?.message ?? `HTTP ${res.status}`
+    return { ok: false, errors: [`Data Manager ${validateOnly ? '(walidacja)' : ''} ${res.status}: ${detail}`] }
+  }
+  return { ok: true, requestId: json.requestId, errors: [] }
+}
+
+/** Upload konwersji offline przez Data Manager API: najpierw walidacja, potem wysyłka.
+ *  Data Manager nie raportuje błędów per zdarzenie w odpowiedzi na ingest, dlatego
+ *  ten sam payload leci najpierw z validateOnly — dopiero czysta walidacja
+ *  przepuszcza go dalej. Wynik zachowuje kształt ConversionUploadResult. */
+export async function uploadClickConversions(conversions: ClickConversion[]): Promise<ConversionUploadResult> {
+  if (conversions.length === 0) return { uploaded: 0, failedIndices: [], errors: [] }
+  const all = conversions.map((_, i) => i)
+
+  const actionId = await offlineConversionActionId()
+  if (!actionId) {
+    return { uploaded: 0, failedIndices: all, errors: [`Brak akcji konwersji "${OFFLINE_CONV_NAME}" na koncie`] }
+  }
+
+  const check = await dataManagerIngest(conversions, actionId, true)
+  if (!check.ok) return { uploaded: 0, failedIndices: all, errors: check.errors }
+
+  const sent = await dataManagerIngest(conversions, actionId, false)
+  if (!sent.ok) return { uploaded: 0, failedIndices: all, errors: sent.errors }
+
+  return {
+    uploaded: conversions.length,
+    failedIndices: [],
+    errors: [],
+    requestId: sent.requestId,
+  }
 }
 
 /** Koszt kliknięcia: koszt/kliknięcia frazy (lub grupy — np. DSA) w dniu kliknięcia.

@@ -60,6 +60,11 @@ const server = http.createServer(async (req, res) => {
     console.error('\nODPOWIEDŹ BEZ refresh_token:', JSON.stringify(json, null, 2))
     process.exit(1)
   }
+  // Nakładka (scripts/ads-token-datamanager.mjs) może przejąć zapis tokena.
+  if (typeof globalThis.__adsTokenSink === 'function') {
+    globalThis.__adsTokenSink(json.refresh_token)
+    process.exit(0)
+  }
   console.log('\n================= REFRESH TOKEN =================')
   console.log(json.refresh_token)
   console.log('=================================================')

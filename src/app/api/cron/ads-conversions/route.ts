@@ -63,12 +63,17 @@ export async function GET(request: NextRequest) {
     await prisma.order.updateMany({ where: { id: { in: okIds } }, data: { adsConvUploadedAt: new Date() } })
   }
 
-  console.log(`[Ads Conversions] wysłano ${result.uploaded}/${orders.length}`, result.errors.length ? result.errors : '')
+  console.log(
+    `[Ads Conversions] wysłano ${result.uploaded}/${orders.length}`,
+    result.requestId ? `requestId=${result.requestId}` : '',
+    result.errors.length ? result.errors : '',
+  )
   return NextResponse.json({
     ok: result.errors.length === 0,
     candidates: orders.length,
     uploaded: result.uploaded,
     marked: okIds.length,
+    requestId: result.requestId,
     errors: result.errors.slice(0, 10),
   })
 }
