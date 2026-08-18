@@ -7,6 +7,7 @@ import { isRibbonPN } from '@/data/transfer-ribbon-products'
 import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
 import { applyStockOverrides } from '@/lib/stock-overrides'
+import { selectPurchasePrice } from '@/lib/price-selection'
 
 export const maxDuration = 300 // 5 minutes
 
@@ -88,6 +89,8 @@ export async function GET(request: NextRequest) {
   const BATCH_SIZE = 10
   const BATCH_DELAY_MS = 2000
   let synced = 0
+  // PN-y, przy których cena Ingrama okazała się odstająca — do raportu z crona
+  const suspectPrices: string[] = []
   let found = 0
   let errors = 0
   const totalBatches = Math.ceil(allPNs.length / BATCH_SIZE)
@@ -208,15 +211,19 @@ export async function GET(request: NextRequest) {
             ? Math.round((jt!.unitPrice * eurRate / jarltechPackagingUnit) * 100) / 100
             : undefined
 
-          const rawPrices = [ingramPLN, bluestarPLN, jarltechPLN].filter(
-            (p): p is number => p != null && p > 0
-          )
-          // Bezpiecznik: Ingram jest zawsze per-szt; odrzuć źródła rażąco poniżej (≈ błąd
-          // dzielenia pakietowego), żeby NIGDY nie sprzedawać poniżej kosztu.
-          const priceFloor = ingramPLN && ingramPLN > 0 ? ingramPLN * 0.5 : 0
-          const sanePrices = priceFloor > 0 ? rawPrices.filter((p) => p >= priceFloor) : rawPrices
-          const usablePrices = sanePrices.length > 0 ? sanePrices : rawPrices
-          const bestRawPricePLN = usablePrices.length > 0 ? Math.min(...usablePrices) : undefined
+          // Bezpiecznik dwustronny — patrz lib/price-selection: odrzuca zarówno źródła
+          // rażąco poniżej Ingrama (błąd pakietowy), jak i samego Ingrama, gdy to on
+          // podaje cenę odstającą w górę.
+          const selection = selectPurchasePrice({
+            ingram: ingramPLN,
+            bluestar: bluestarPLN,
+            jarltech: jarltechPLN,
+          })
+          const bestRawPricePLN = selection.best
+          if (selection.ingramSuspect) {
+            suspectPrices.push(pn)
+            console.warn(`[stock-sync] ${pn}: ${selection.rejected.map((r) => `${r.source} ${r.reason}`).join('; ')}`)
+          }
 
           let price: number | undefined
           let priceBrutto: number | undefined
@@ -300,12 +307,18 @@ export async function GET(request: NextRequest) {
   const elapsed = Math.round((Date.now() - startTime) / 1000)
   console.log(`[Stock Sync] Done in ${elapsed}s: ${synced}/${allPNs.length} synced, ${found} found, ${errors} errors`)
 
+  if (suspectPrices.length) {
+    console.warn(`[Stock Sync] Cena Ingrama odrzucona jako odstająca dla ${suspectPrices.length} PN: ${suspectPrices.slice(0, 20).join(', ')}`)
+  }
+
   return NextResponse.json({
     success: true,
     total: allPNs.length,
     synced,
     found,
     errors,
+    // PN-y, przy których cena Ingrama była odstająca — warto zgłosić dystrybutorowi
+    suspectIngramPrices: suspectPrices,
     elapsedSeconds: elapsed,
     timestamp: new Date().toISOString(),
   })

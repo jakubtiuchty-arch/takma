@@ -9,6 +9,7 @@ import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
 import type { JarltechStockInfo } from '@/lib/jarltech'
 import { applyStockOverrides } from '@/lib/stock-overrides'
+import { selectPurchasePrice } from '@/lib/price-selection'
 
 const MARGIN = 1.10        // 10% marży — standardowa dla większości produktów
 const RIBBON_MARGIN = 1.20 // 20% marży dla taśm termotransferowych Zebra
@@ -436,15 +437,19 @@ export async function GET(request: NextRequest) {
         jarltechPLN = Math.round((rawJarltechPLN / jarltechPackagingUnit) * 100) / 100
       }
 
-      // Min z trzech dystrybutorów + bezpiecznik: Ingram jest per-szt, więc odrzuć źródła
-      // rażąco poniżej (≈ błąd dzielenia pakietowego) — nigdy nie sprzedajemy poniżej kosztu.
-      const rawPrices = [ingramPLN, bluestarPLN, jarltechPLN].filter(
-        (p): p is number => p != null && p > 0,
-      )
-      const priceFloor = ingramPLN && ingramPLN > 0 ? ingramPLN * 0.5 : 0
-      const sanePrices = priceFloor > 0 ? rawPrices.filter((p) => p >= priceFloor) : rawPrices
-      const usablePrices = sanePrices.length > 0 ? sanePrices : rawPrices
-      const bestRawPricePLN = usablePrices.length > 0 ? Math.min(...usablePrices) : undefined
+      // Wybór ceny zakupu z bezpiecznikiem dwustronnym — patrz lib/price-selection.
+      // Odrzuca źródła rażąco poniżej Ingrama (błąd pakietowy) ORAZ samego Ingrama,
+      // gdy to on podaje cenę odstającą w górę (ET401EA-3V101F2P-A6: 164 922 zł
+      // wobec 547 EUR w Jarltechu).
+      const selection = selectPurchasePrice({
+        ingram: ingramPLN,
+        bluestar: bluestarPLN,
+        jarltech: jarltechPLN,
+      })
+      const bestRawPricePLN = selection.best
+      if (selection.ingramSuspect) {
+        console.warn(`[stock] ${pn}: ${selection.rejected.map((r) => `${r.source} ${r.reason}`).join('; ')}`)
+      }
 
       let price: number | undefined
       let priceBrutto: number | undefined
