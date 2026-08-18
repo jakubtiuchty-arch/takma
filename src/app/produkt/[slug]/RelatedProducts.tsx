@@ -133,6 +133,11 @@ export default function RelatedProducts({ title, products, initialLimit, labels,
   // Dla etykiet termicznych pokazujemy od razu 2 wiersze (8 kafelków serii) gdy produktów >4
   const defaultRows = labels && products.length > ROW_SIZE ? 2 : 1
   const [visibleRows, setVisibleRows] = useState(defaultRows)
+  // Tryb domyślny rozwija się jednym kliknięciem. Wcześniej liczyliśmy widoczne
+  // kafelki jako max(initialLimit, wiersze × 4), przez co przy initialLimit=4
+  // pierwsze kliknięcie nie zmieniało nic (max(4, 2×4) = 8 = tyle samo co po
+  // poprzednim kroku) — użytkownik klikał dwa razy, żeby zobaczyć kolejny wiersz.
+  const [showAll, setShowAll] = useState(false)
   const [selectedWidth, setSelectedWidth] = useState('')
   const [selectedHeight, setSelectedHeight] = useState('')
 
@@ -222,13 +227,12 @@ export default function RelatedProducts({ title, products, initialLimit, labels,
     )
   }
 
-  // Tryb domyślny: wiersz po wierszu (ROW_SIZE = 4)
-  const limit = initialLimit ?? products.length
-  const visibleCount = visibleRows * ROW_SIZE
-  const capped = Math.max(limit, visibleCount)
+  // Tryb domyślny: początkowo initialLimit kafelków, klik = pokaż wszystkie pozostałe
+  const limit = Math.min(initialLimit ?? products.length, products.length)
+  const capped = showAll ? products.length : limit
   const visible = products.slice(0, capped)
   const hasMore = capped < products.length
-  const isExpanded = visibleRows > 1 && capped >= products.length
+  const isExpanded = showAll && products.length > limit
 
   return (
     <section id={id} className="scroll-mt-24">
@@ -242,15 +246,15 @@ export default function RelatedProducts({ title, products, initialLimit, labels,
       <div className="mt-5 text-center flex justify-center gap-3">
         {hasMore && (
           <button
-            onClick={() => setVisibleRows(v => v + 1)}
+            onClick={() => setShowAll(true)}
             className="inline-flex items-center gap-2 px-6 py-2.5 text-sm font-medium text-primary-700 bg-primary-50 hover:bg-primary-100 border border-primary-200 rounded-xl transition-colors"
           >
-            Pokaż kolejne ({products.length - capped})
+            Pokaż pozostałe ({products.length - capped})
           </button>
         )}
         {isExpanded && (
           <button
-            onClick={() => setVisibleRows(1)}
+            onClick={() => setShowAll(false)}
             className="inline-flex items-center gap-2 px-6 py-2.5 text-sm font-medium text-gray-600 bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-xl transition-colors"
           >
             Zwiń

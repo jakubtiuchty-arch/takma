@@ -23,8 +23,13 @@ export default function ProductGrid({
   showDualButtons = false,
   maxInitial,
 }: ProductGridProps) {
-  const limit = maxInitial || products.length
-  const [visible, setVisible] = useState(limit)
+  // Bez `maxInitial` komponent NIE stronicuje — pokazuje dokładnie to, co dostał.
+  // Wcześniej liczba widocznych kafli była stanem inicjalizowanym raz, z długości
+  // pierwszej listy. Gdy rodzic rozwijał listę (RelatedProducts po kliknięciu
+  // „Pokaż pozostałe"), grid zostawał przy starej liczbie i dokładał własny
+  // przycisk — użytkownik musiał kliknąć dwa razy, w dwóch różnych miejscach.
+  const [extraLoaded, setExtraLoaded] = useState(0)
+  const visible = maxInitial ? Math.min(maxInitial + extraLoaded, products.length) : products.length
   const displayedProducts = products.slice(0, visible)
   const hasMore = visible < products.length
 
@@ -44,7 +49,7 @@ export default function ProductGrid({
     )
   }
 
-  const loadMore = () => setVisible(prev => Math.min(prev + LOAD_MORE_STEP, products.length))
+  const loadMore = () => setExtraLoaded(prev => prev + LOAD_MORE_STEP)
 
   const showMoreButton = hasMore && (
     <div className="flex justify-center mt-8">
