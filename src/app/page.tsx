@@ -477,6 +477,18 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+
+          {/* Wejście do pełnej bazy — sekcja pokazuje 4 najnowsze wpisy z kilkudziesięciu,
+              a bez tego linku reszta poradników nie ma dojścia ze strony głównej */}
+          <div className="mt-8 lg:mt-10 text-center">
+            <Link
+              href="/poradnik"
+              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-primary-700 bg-primary-50 hover:bg-primary-100 border border-primary-200 rounded-xl transition-colors"
+            >
+              Zobacz wszystkie poradniki ({guides.filter(g => g.slug !== 'zebra-kc401-kiosk-samoobslugowy').length})
+              <ArrowRightIcon size={16} />
+            </Link>
+          </div>
         </div>
       </section>
 
