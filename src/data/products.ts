@@ -910,8 +910,8 @@ const desktopPrinters: Product[] = [
     slug: 'zebra-zd421t',
     name: 'Zebra ZD421t',
     shortDescription: 'Zebra ZD421t — drukarka termotransferowa biurkowa 4", następca GK420t',
-    seoTitle: 'Zebra ZD421t - biurkowa drukarka etykiet | od 1 649 zł',
-    seoDescription: 'Zebra ZD421t — biurkowa drukarka etykiet termotransferowa 4", następca GK420t. Ribbon do 300 m, 203/300 dpi, 152 mm/s, Wi-Fi, MCS. Od 1 649 zł netto. TAKMA.',
+    seoTitle: 'Zebra ZD421t 203/300 dpi — drukarka termotransferowa',
+    seoDescription: 'Zebra ZD421t — biurkowa drukarka etykiet termotransferowa 4", następca GK420t. Ribbon do 300 m, 203/300 dpi, 152 mm/s, Wi-Fi, MCS. Od 1 652 zł netto. TAKMA.',
     description: `Zebra ZD421t to biurkowa drukarka etykiet termotransferowa 4 cale — następca popularnej GK420t. Drukuje z taśmą barwiącą (ribbonem), co zapewnia trwałe wydruki odporne na UV, wilgoć i chemikalia. 203/300 dpi, do 152 mm/s. Modularna konstrukcja MCS. Idealna do logistyki, produkcji, etykiet produktowych i oznaczeń trwałych.
 
 Zebra ZD421t to najlepszy wybór dla firm logistycznych, magazynów i e-commerce, które potrzebują niezawodnej biurkowej drukarki termotransferowej z możliwością rozbudowy o sieć Wi-Fi i Ethernet.
