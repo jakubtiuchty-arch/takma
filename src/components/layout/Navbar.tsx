@@ -134,6 +134,7 @@ const navigation: NavItem[] = [
     href: '/poradnik',
     children: [
       { name: 'Wszystkie poradniki', href: '/poradnik' },
+      { name: 'Instrukcje obsługi urządzeń', href: '/instrukcje' },
       { name: 'Jak wybrać drukarkę etykiet', href: '/poradnik/jak-wybrac-drukarke-etykiet' },
       { name: 'Termiczna vs termotransferowa', href: '/poradnik/drukarka-termiczna-vs-termotransferowa' },
       { name: 'Przewodnik po drukarkach Zebra', href: '/poradnik/drukarki-etykiet-zebra-przewodnik' },
@@ -157,7 +158,6 @@ const navigation: NavItem[] = [
     ],
   },
   { name: 'Promocje', href: '/promocje' },
-  { name: 'Instrukcje', href: '/instrukcje' },
   { name: 'Serwis', href: '/serwis' },
   { name: 'Kontakt', href: '/kontakt' },
 ]
