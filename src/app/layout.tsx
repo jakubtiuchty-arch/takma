@@ -216,38 +216,45 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         )}
       </head>
       <PostHogProvider>
-        <LayoutShell>{children}</LayoutShell>
+        <LayoutShell
+          after={
+            <>
+          {/* ChatWidget (ogólny doradca urządzeń) wyłączony tymczasowo — kalibracja w toku */}
+          {/* {!isAdmin && !isPanel && <ChatWidget />} */}
+          {/* Doradca materiałów — tylko na stronach etykiet i taśm (gate kliencki) */}
+          {!isAdmin && !isPanel && <MaterialsAdvisorGate />}
+          <Analytics />
+          <SpeedInsights />
+          {!isAdmin && !isPanel && <AutoLinkTracking />}
+          {!isAdmin && !isPanel && !isBotGeo && process.env.NEXT_PUBLIC_GA_ID && (
+            <Suspense fallback={null}>
+              <GARouteTracker />
+            </Suspense>
+          )}
+          {!isAdmin && !isPanel && <LiveBeacon />}
+          {/* Atrybucja: gclid/UTM + ścieżka wizyty → ciasteczka (czytane przy leadach i zamówieniach) */}
+          {!isAdmin && !isPanel && (
+            <Suspense fallback={null}>
+              <AttributionTracker />
+            </Suspense>
+          )}
+          {!isAdmin && !isPanel && (
+            <>
+              <Script id="skapiec-dlapi-init" strategy="afterInteractive">
+                {`dlApi = { cmd: [] };`}
+              </Script>
+              <Script
+                src="https://lib.onet.pl/s.csr/build/dlApi/minit.boot.min.js"
+                strategy="afterInteractive"
+              />
+            </>
+          )}
+            </>
+          }
+        >
+          {children}
+        </LayoutShell>
       </PostHogProvider>
-      {/* ChatWidget (ogólny doradca urządzeń) wyłączony tymczasowo — kalibracja w toku */}
-      {/* {!isAdmin && !isPanel && <ChatWidget />} */}
-      {/* Doradca materiałów — tylko na stronach etykiet i taśm (gate kliencki) */}
-      {!isAdmin && !isPanel && <MaterialsAdvisorGate />}
-      <Analytics />
-      <SpeedInsights />
-      {!isAdmin && !isPanel && <AutoLinkTracking />}
-      {!isAdmin && !isPanel && !isBotGeo && process.env.NEXT_PUBLIC_GA_ID && (
-        <Suspense fallback={null}>
-          <GARouteTracker />
-        </Suspense>
-      )}
-      {!isAdmin && !isPanel && <LiveBeacon />}
-      {/* Atrybucja: gclid/UTM + ścieżka wizyty → ciasteczka (czytane przy leadach i zamówieniach) */}
-      {!isAdmin && !isPanel && (
-        <Suspense fallback={null}>
-          <AttributionTracker />
-        </Suspense>
-      )}
-      {!isAdmin && !isPanel && (
-        <>
-          <Script id="skapiec-dlapi-init" strategy="afterInteractive">
-            {`dlApi = { cmd: [] };`}
-          </Script>
-          <Script
-            src="https://lib.onet.pl/s.csr/build/dlApi/minit.boot.min.js"
-            strategy="afterInteractive"
-          />
-        </>
-      )}
     </html>
   )
 }

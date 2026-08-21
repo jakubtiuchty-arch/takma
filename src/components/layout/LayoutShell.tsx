@@ -6,7 +6,19 @@ import Footer from '@/components/layout/Footer'
 import RFQDrawer from '@/components/rfq/RFQDrawer'
 import CookieConsent from '@/components/layout/CookieConsent'
 
-export default function LayoutShell({ children }: { children: React.ReactNode }) {
+/**
+ * `after` renderuje się WEWNĄTRZ <body>, na jego końcu. To nie kosmetyka:
+ * <body> powstaje tutaj, więc komponenty wypisane w layoucie obok <LayoutShell>
+ * byłyby rodzeństwem body, a nie jego dziećmi. React zostawiał wtedy znaczniki
+ * Suspense bezpośrednio w <html> i hydracja padała na każdej podstronie.
+ */
+export default function LayoutShell({
+  children,
+  after,
+}: {
+  children: React.ReactNode
+  after?: React.ReactNode
+}) {
   const pathname = usePathname()
   const isAdmin = pathname.startsWith('/admin')
   const isPanel = pathname.startsWith('/panel')
@@ -37,6 +49,7 @@ export default function LayoutShell({ children }: { children: React.ReactNode })
           <CookieConsent />
         </>
       )}
+      {after}
     </body>
   )
 }
