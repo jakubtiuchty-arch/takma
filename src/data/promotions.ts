@@ -108,7 +108,7 @@ export const PROMOTIONS: Promotion[] = [
     cards: [
       {
         title: 'Dla kogo',
-        body: 'Z promocji korzystają firmy kupujące sprzęt na fakturę — zarówno przy wyposażaniu pojedynczego stanowiska, jak i całego magazynu. Liczba urządzeń objętych promocją jest ograniczona.',
+        body: 'Nie ma progu ilościowego — promocyjna cena obowiązuje tak samo przy jednym urządzeniu, jak i przy wyposażaniu całego magazynu. Pula urządzeń w tych cenach jest ograniczona i obowiązuje do wyczerpania.',
       },
       {
         title: 'Co dostajesz',

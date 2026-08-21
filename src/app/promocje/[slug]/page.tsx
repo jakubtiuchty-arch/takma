@@ -95,9 +95,14 @@ export default async function PromotionPage({ params }: { params: Promise<{ slug
           <p className="text-gray-300 max-w-2xl text-base lg:text-lg leading-relaxed">{promo.lead}</p>
 
           {brand && (
-            <div className="mt-8 flex items-center gap-3 border-t border-white/10 pt-5 max-w-2xl">
-              <Image src={brand.logo} alt={brand.name} width={110} height={32} className="h-8 w-auto object-contain brightness-0 invert opacity-80" />
-              <span className="text-xs text-gray-500">Autoryzowany partner {brand.name}</span>
+            <div className="mt-8 flex items-center border-t border-white/10 pt-6 max-w-2xl">
+              <Image
+                src={brand.logo}
+                alt={brand.name}
+                width={220}
+                height={64}
+                className="h-14 w-auto object-contain brightness-0 invert opacity-90"
+              />
             </div>
           )}
         </div>
