@@ -1,6 +1,7 @@
 import { prisma } from '@/lib/db'
 import Link from 'next/link'
 import clsx from 'clsx'
+import DeleteQuoteButton from './DeleteQuoteButton'
 import { QuoteStatus } from '@/generated/prisma/client'
 
 const statusLabels: Record<QuoteStatus, string> = {
@@ -62,12 +63,13 @@ export default async function QuotesPage() {
                 <th className="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">Status</th>
                 <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Ważna do</th>
                 <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Utworzona</th>
+                <th className="px-4 py-3 w-10"><span className="sr-only">Akcje</span></th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-100">
               {quotes.length === 0 ? (
                 <tr>
-                  <td colSpan={7} className="px-4 py-12 text-center text-gray-500">
+                  <td colSpan={8} className="px-4 py-12 text-center text-gray-500">
                     Brak ofert. <Link href="/admin/oferty/nowa" className="text-blue-600 hover:underline">Utwórz pierwszą ofertę</Link>
                   </td>
                 </tr>
@@ -97,6 +99,9 @@ export default async function QuotesPage() {
                     </td>
                     <td className="px-4 py-3 text-sm text-gray-600">
                       {quote.createdAt.toLocaleDateString('pl-PL')}
+                    </td>
+                    <td className="px-4 py-3 text-right">
+                      <DeleteQuoteButton quoteId={quote.id} quoteNumber={quote.quoteNumber} />
                     </td>
                   </tr>
                 ))

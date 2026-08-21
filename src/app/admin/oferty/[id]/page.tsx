@@ -178,7 +178,7 @@ export default async function QuoteDetailPage({ params }: PageProps) {
 
         {/* Sidebar */}
         <div className="space-y-6">
-          <QuoteActions quoteId={quote.id} status={quote.status} hasEmail={!!quote.clientEmail} />
+          <QuoteActions quoteId={quote.id} quoteNumber={quote.quoteNumber} status={quote.status} hasEmail={!!quote.clientEmail} />
 
           {/* Client */}
           <div className="bg-white rounded-xl border border-gray-200 p-6">

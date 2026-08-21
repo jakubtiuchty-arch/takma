@@ -2,18 +2,22 @@
 
 import { useState, useTransition } from 'react'
 import Link from 'next/link'
-import { updateQuoteStatus, sendQuoteEmail, duplicateQuote } from '@/actions/admin-quotes'
+import { useRouter } from 'next/navigation'
+import { updateQuoteStatus, sendQuoteEmail, duplicateQuote, deleteQuote } from '@/actions/admin-quotes'
 import { QuoteStatus } from '@/generated/prisma/client'
 
 interface QuoteActionsProps {
   quoteId: string
+  quoteNumber: string
   status: QuoteStatus
   hasEmail: boolean
 }
 
-export default function QuoteActions({ quoteId, status, hasEmail }: QuoteActionsProps) {
+export default function QuoteActions({ quoteId, quoteNumber, status, hasEmail }: QuoteActionsProps) {
+  const router = useRouter()
   const [isPending, startTransition] = useTransition()
   const [message, setMessage] = useState('')
+  const [confirmDelete, setConfirmDelete] = useState(false)
 
   const handleSendEmail = () => {
     if (!hasEmail) {
@@ -43,6 +47,18 @@ export default function QuoteActions({ quoteId, status, hasEmail }: QuoteActions
 
   const handleDownloadPdf = () => {
     window.open(`/api/admin/quote-pdf?id=${quoteId}`, '_blank')
+  }
+
+  const handleDelete = () => {
+    startTransition(async () => {
+      const result = await deleteQuote(quoteId)
+      if (result.success) {
+        router.push('/admin/oferty')
+      } else {
+        setMessage(`Błąd: ${result.error}`)
+        setConfirmDelete(false)
+      }
+    })
   }
 
   return (
@@ -125,6 +141,42 @@ export default function QuoteActions({ quoteId, status, hasEmail }: QuoteActions
           {status !== 'EXPIRED' && status !== 'REJECTED' && (
             <button onClick={() => handleStatusChange('EXPIRED')} disabled={isPending} className="w-full px-3 py-1.5 text-sm text-yellow-700 bg-yellow-50 rounded-lg hover:bg-yellow-100 disabled:opacity-50">
               Wygasła
+            </button>
+          )}
+        </div>
+
+        {/* Kasowanie — dwustopniowe, bo nie ma cofnięcia */}
+        <div className="pt-3 border-t border-gray-200">
+          {confirmDelete ? (
+            <div className="space-y-2">
+              <p className="text-xs text-gray-600">
+                Skasować ofertę <strong>{quoteNumber}</strong> razem z pozycjami? Link
+                „zamów z oferty" z wysłanego maila przestanie działać.
+              </p>
+              <div className="flex gap-2">
+                <button
+                  onClick={handleDelete}
+                  disabled={isPending}
+                  className="flex-1 px-3 py-1.5 text-sm text-white bg-red-600 rounded-lg hover:bg-red-700 disabled:opacity-50 font-medium"
+                >
+                  {isPending ? 'Kasuję…' : 'Tak, skasuj'}
+                </button>
+                <button
+                  onClick={() => setConfirmDelete(false)}
+                  disabled={isPending}
+                  className="flex-1 px-3 py-1.5 text-sm text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 disabled:opacity-50"
+                >
+                  Anuluj
+                </button>
+              </div>
+            </div>
+          ) : (
+            <button
+              onClick={() => setConfirmDelete(true)}
+              disabled={isPending}
+              className="w-full px-3 py-1.5 text-sm text-red-600 rounded-lg hover:bg-red-50 disabled:opacity-50"
+            >
+              Skasuj ofertę
             </button>
           )}
         </div>

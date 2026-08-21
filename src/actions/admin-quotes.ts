@@ -366,3 +366,26 @@ export async function duplicateQuote(quoteId: string) {
   revalidatePath('/admin/oferty')
   redirect(`/admin/oferty/${copy.id}`)
 }
+
+/**
+ * Kasuje ofertę wraz z pozycjami (QuoteItem ma onDelete: Cascade).
+ *
+ * Zapytania ofertowe od klientów (status REQUESTED) też da się skasować — to ten
+ * sam rekord, a w panelu bywają duble i spam. Link „zamów z oferty" z wysłanego
+ * maila przestaje wtedy działać: pokazuje „Nie znaleźliśmy tej oferty".
+ */
+export async function deleteQuote(quoteId: string) {
+  const quote = await prisma.quote.findUnique({
+    where: { id: quoteId },
+    select: { quoteNumber: true },
+  })
+  if (!quote) {
+    return { success: false, error: 'Oferta już nie istnieje' }
+  }
+
+  await prisma.quote.delete({ where: { id: quoteId } })
+
+  revalidatePath('/admin/oferty')
+  revalidatePath('/panel/oferty')
+  return { success: true, quoteNumber: quote.quoteNumber }
+}
