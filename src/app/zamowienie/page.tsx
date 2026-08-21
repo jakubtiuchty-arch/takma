@@ -145,6 +145,7 @@ export default function CheckoutPage() {
     getTotalBrutto,
     getCrossSellProducts,
     getRibbonSuggestions,
+    getLabelSuggestions,
     addItem,
   } = useCartStore()
 
@@ -288,6 +289,13 @@ export default function CheckoutPage() {
   const ribbonSuggestions = useMemo(() => {
     if (!mounted || items.length === 0) return []
     return getRibbonSuggestions()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mounted, items])
+
+  // ── Sugestie etykiet dla drukarek w koszyku (konkretne SKU, nie serie) ─────
+  const labelSuggestions = useMemo(() => {
+    if (!mounted || items.length === 0) return []
+    return getLabelSuggestions()
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mounted, items])
 
@@ -539,6 +547,18 @@ export default function CheckoutPage() {
   }
 
   /** Dodaje konkretny wariant taśmy do koszyka (z dopasowanego SKU rozmiarowego). */
+  const handleAddLabelSuggestion = (s: ReturnType<typeof getLabelSuggestions>[number]) => {
+    addItem({
+      id: `${s.product.id}__${s.variant.partNumber}`,
+      name: `${s.product.name} ${s.sizeLabel}`,
+      slug: s.product.slug,
+      image: s.product.images?.[0],
+      partNumber: s.variant.partNumber,
+      priceNetto: s.priceFrom,
+      categoryId: s.product.categoryId,
+    })
+  }
+
   const handleAddRibbonSuggestion = (s: ReturnType<typeof getRibbonSuggestions>[number]) => {
     addItem({
       id: `${s.product.id}__${s.variant.partNumber}`,
@@ -710,10 +730,6 @@ export default function CheckoutPage() {
             {quoteNumber && (
               <div className="rounded-2xl border border-gray-200 bg-white px-4 sm:px-6 py-4">
                 <p className="font-semibold text-gray-900">Zamówienie z oferty {quoteNumber}</p>
-                <p className="text-sm text-gray-600 mt-1 leading-relaxed">
-                  Ceny poniżej pochodzą z tej wyceny — są niższe niż cennik sklepu i obowiązują
-                  do końca jej ważności. Wystarczy uzupełnić dane do faktury.
-                </p>
               </div>
             )}
 
@@ -806,9 +822,69 @@ export default function CheckoutPage() {
               </div>
             )}
 
-            {/* Generic cross-sell (drukarki, terminale, akcesoria) — pokazujemy tylko gdy NIE
-                mamy etykiet w koszyku (etykieta + taśma jako podstawowa kombinacja TT). */}
-            {ribbonSuggestions.length === 0 && crossSellProducts.length > 0 && (
+            {/* Etykiety do drukarki w koszyku — konkretne SKU z rozmiarem i żywą ceną,
+                dobrane do rodzaju druku („d" → termiczne, „t" → termotransferowe). */}
+            {ribbonSuggestions.length === 0 && labelSuggestions.length > 0 && (
+              <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+                <div className="px-4 sm:px-6 py-4 border-b border-gray-200">
+                  <h2 className="font-semibold text-gray-900">Etykiety do tej drukarki</h2>
+                  <p className="text-sm text-gray-500 mt-0.5">
+                    Gotowe rozmiary pasujące do modelu z koszyka
+                  </p>
+                </div>
+
+                <div className="p-3 sm:p-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {labelSuggestions.map((s) => (
+                    <LiveRibbonProvider
+                      key={`${s.product.id}__${s.variant.partNumber}`}
+                      partNumber={s.variant.partNumber}
+                      fallbackPrice={s.priceFrom}
+                    >
+                      <div className="flex items-center gap-3 p-3 rounded-xl border border-gray-100 hover:border-primary-200 hover:bg-primary-50/30 transition-all">
+                        {s.product.images?.[0] && (
+                          <div className="relative w-16 h-16 rounded-lg flex-shrink-0 overflow-hidden bg-gray-50">
+                            <Image
+                              src={s.product.images[0]}
+                              alt={`${s.product.name} ${s.sizeLabel}`}
+                              fill
+                              className="object-contain p-1"
+                              sizes="64px"
+                            />
+                          </div>
+                        )}
+                        <div className="flex-1 min-w-0">
+                          <Link
+                            href={s.href}
+                            className="text-sm font-medium text-gray-900 hover:text-primary-600 transition-colors line-clamp-2"
+                          >
+                            {s.product.name}
+                          </Link>
+                          <p className="text-xs text-gray-600 mt-0.5">
+                            <span className="font-medium text-gray-900">{s.sizeLabel}</span>
+                            <span className="mx-1 text-gray-300">·</span>
+                            <span className="font-mono text-[11px] text-gray-500">{s.variant.partNumber}</span>
+                          </p>
+                          <div className="mt-1 flex items-baseline gap-1 text-sm font-semibold text-primary-600">
+                            <LiveRibbonPrice />
+                          </div>
+                        </div>
+                        <button
+                          onClick={() => handleAddLabelSuggestion(s)}
+                          className="flex-shrink-0 w-9 h-9 rounded-lg bg-primary-600 hover:bg-primary-700 text-white flex items-center justify-center transition-colors"
+                          aria-label={`Dodaj ${s.product.name} ${s.sizeLabel} do koszyka`}
+                        >
+                          <PlusIcon size={18} />
+                        </button>
+                      </div>
+                    </LiveRibbonProvider>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Generic cross-sell (terminale, akcesoria) — tylko gdy nie mamy nic lepszego:
+                ani taśm do etykiet, ani etykiet do drukarki. */}
+            {ribbonSuggestions.length === 0 && labelSuggestions.length === 0 && crossSellProducts.length > 0 && (
               <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
                 <div className="px-4 sm:px-6 py-4 border-b border-gray-200">
                   <h2 className="font-semibold text-gray-900">
