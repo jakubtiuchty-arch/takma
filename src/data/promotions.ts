@@ -22,6 +22,8 @@ export interface PromotionProduct {
   pct: number
   /** wycinanka urządzenia (przezroczyste tło) wystająca poza obrys kafla */
   image?: string
+  /** nagłówek grupy — modele jednego rodzaju trzymamy w osobnym rzędzie */
+  group?: string
 }
 
 /**
@@ -95,10 +97,10 @@ export const PROMOTIONS: Promotion[] = [
     badge: 'do −44%',
     cardImage: '/images/promo-card-urzadzenia.webp',
     products: [
-      { slug: 'zebra-ds4608', name: 'Skaner Zebra DS4608', pct: 44, image: '/images/promocje/zebra-ds4608.png' },
-      { slug: 'zebra-zd230d', name: 'Drukarka Zebra ZD230d', pct: 21, image: '/images/promocje/zebra-zd230d.png' },
-      { slug: 'zebra-zd230t', name: 'Drukarka Zebra ZD230t', pct: 18, image: '/images/promocje/zebra-zd230t.png' },
-      { slug: 'zebra-ds2208', name: 'Skaner Zebra DS2208', pct: 10, image: '/images/promocje/zebra-ds2208.png' },
+      { slug: 'zebra-ds4608', name: 'Skaner Zebra DS4608', pct: 44, image: '/images/promocje/zebra-ds4608.png', group: 'Skanery' },
+      { slug: 'zebra-zd230d', name: 'Drukarka Zebra ZD230d', pct: 21, image: '/images/promocje/zebra-zd230d.png', group: 'Drukarki etykiet' },
+      { slug: 'zebra-zd230t', name: 'Drukarka Zebra ZD230t', pct: 18, image: '/images/promocje/zebra-zd230t.png', group: 'Drukarki etykiet' },
+      { slug: 'zebra-ds2208', name: 'Skaner Zebra DS2208', pct: 10, image: '/images/promocje/zebra-ds2208.png', group: 'Skanery' },
     ],
     cards: [
       {
@@ -312,4 +314,22 @@ export function daysLeft(p: Promotion): number | null {
   if (!p.endDate) return null
   const end = new Date(`${p.endDate}T23:59:59+01:00`)
   return Math.max(0, Math.ceil((end.getTime() - Date.now()) / 86_400_000))
+}
+
+/**
+ * Modele promocji rozbite na grupy (skanery osobno, drukarki osobno).
+ * Kolejność grup wynika z kolejności produktów, więc steruje się nią w PROMOTIONS.
+ * Produkty bez `group` trafiają do jednej grupy bez nagłówka.
+ */
+export function promotionProductGroups(
+  promo: Promotion,
+): { label: string | null; items: PromotionProduct[] }[] {
+  const groups: { label: string | null; items: PromotionProduct[] }[] = []
+  for (const product of promo.products ?? []) {
+    const label = product.group ?? null
+    const existing = groups.find((g) => g.label === label)
+    if (existing) existing.items.push(product)
+    else groups.push({ label, items: [product] })
+  }
+  return groups
 }

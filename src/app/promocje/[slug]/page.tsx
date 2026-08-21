@@ -8,6 +8,7 @@ import { ZEBRA_CEE_PROMO } from '@/data/promos'
 import {
   PROMOTIONS,
   getPromotion,
+  promotionProductGroups,
   isPromotionActive,
   deadlineLabel,
   daysLeft,
@@ -112,18 +113,28 @@ export default async function PromotionPage({ params }: { params: Promise<{ slug
       {promo.products && promo.products.length > 0 && (
         <section className="container-main py-12 lg:py-16">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Modele objęte promocją</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {promo.products.map((prod) => {
+          {promotionProductGroups(promo).map((group) => (
+          <div key={group.label ?? 'all'} className="mb-8 last:mb-0">
+            {group.label && (
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-3">
+                {group.label}
+              </h3>
+            )}
+            <div className="grid gap-4 sm:grid-cols-2">
+            {group.items.map((prod) => {
               const price = ZEBRA_CEE_PROMO.bySlug[prod.slug]
+              // Drukarki są na zdjęciach poziome — przy tej samej szerokości co skaner
+              // wychodziłyby dwa razy mniejsze, więc dostają szerszy kadr.
+              const wide = /drukark/i.test(prod.name)
               return (
                 <Link
                   key={prod.slug}
                   href={`/produkt/${prod.slug}`}
-                  className="group relative block pr-14 transition-transform hover:-translate-y-0.5"
+                  className={`group relative block transition-transform hover:-translate-y-0.5 ${wide ? 'pr-20 sm:pr-32' : 'pr-14 sm:pr-20'}`}
                 >
                   {/* Ciemny kafel jest węższy od komórki siatki, żeby urządzenie mogło
                       wyjść poza jego obrys po prawej — jak w kaflach operatorów. */}
-                  <div className="relative overflow-hidden rounded-2xl bg-gray-950 p-5 pr-8">
+                  <div className="relative overflow-hidden rounded-2xl bg-gray-950 p-5 pr-10 min-h-[190px]">
                     <div aria-hidden className="pointer-events-none absolute -top-12 -right-12 h-32 w-32 rounded-full opacity-20 blur-2xl" style={{ background: promo.accent.light }} />
                     <span className="inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide mb-4" style={{ background: promo.accent.base, color: promo.accent.on }}>
                       −{prod.pct}%
@@ -152,13 +163,17 @@ export default async function PromotionPage({ params }: { params: Promise<{ slug
                       aria-hidden
                       width={400}
                       height={800}
-                      className="pointer-events-none absolute right-0 bottom-5 w-24 h-auto max-h-[68%] object-contain object-bottom drop-shadow-[0_12px_24px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:scale-105"
+                      className={`pointer-events-none absolute right-0 bottom-5 h-auto object-contain object-bottom drop-shadow-[0_12px_24px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:scale-105 ${
+                        wide ? 'w-36 sm:w-56 max-h-[92%]' : 'w-24 sm:w-36 max-h-[88%]'
+                      }`}
                     />
                   )}
                 </Link>
               )
             })}
+            </div>
           </div>
+          ))}
         </section>
       )}
 
