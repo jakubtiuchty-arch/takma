@@ -24,6 +24,9 @@ export interface PromotionProduct {
   image?: string
   /** nagłówek grupy — modele jednego rodzaju trzymamy w osobnym rzędzie */
   group?: string
+  /** dodatkowe wsunięcie zdjęcia w głąb kafla (%), gdy urządzenie siedzi
+   *  w kadrze inaczej niż reszta — obsługiwane wartości w NUDGE na landingu */
+  imageNudge?: 20
 }
 
 /**
@@ -97,7 +100,7 @@ export const PROMOTIONS: Promotion[] = [
     badge: 'do −44%',
     cardImage: '/images/promo-card-urzadzenia.webp',
     products: [
-      { slug: 'zebra-ds4608', name: 'Skaner Zebra DS4608', pct: 44, image: '/images/promocje/zebra-ds4608.png', group: 'Skanery' },
+      { slug: 'zebra-ds4608', name: 'Skaner Zebra DS4608', pct: 44, image: '/images/promocje/zebra-ds4608.png', group: 'Skanery', imageNudge: 20 },
       { slug: 'zebra-zd230d', name: 'Drukarka Zebra ZD230d', pct: 21, image: '/images/promocje/zebra-zd230d.png', group: 'Drukarki etykiet' },
       { slug: 'zebra-zd230t', name: 'Drukarka Zebra ZD230t', pct: 18, image: '/images/promocje/zebra-zd230t.png', group: 'Drukarki etykiet' },
       { slug: 'zebra-ds2208', name: 'Skaner Zebra DS2208', pct: 10, image: '/images/promocje/zebra-ds2208.png', group: 'Skanery' },

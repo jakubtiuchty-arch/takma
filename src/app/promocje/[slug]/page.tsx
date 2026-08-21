@@ -16,6 +16,15 @@ import {
 
 const SITE = 'https://www.takma.com.pl'
 
+/**
+ * Dodatkowe wsunięcie zdjęcia w kafel dla pojedynczych modeli. Klasy muszą być
+ * literałami w tym pliku — Tailwind skanuje src/app i src/components, ale nie src/data,
+ * więc klasa zapisana w danych promocji zostałaby wycięta z arkusza.
+ */
+const NUDGE: Record<number, string> = {
+  20: '-translate-x-[40%] sm:-translate-x-[80%]',
+}
+
 export function generateStaticParams() {
   return PROMOTIONS.map((p) => ({ slug: p.slug }))
 }
@@ -173,7 +182,10 @@ export default async function PromotionPage({ params }: { params: Promise<{ slug
                         wide
                           ? 'w-36 sm:w-60 max-h-[86%] -bottom-2 -translate-x-[6%] sm:-translate-x-[25%]'
                           // skaner jest wąski i wysoki — wsuwamy go 30% szerokości w głąb kafla
-                          : 'w-24 sm:w-40 max-h-[88%] bottom-3 -translate-x-[20%] sm:-translate-x-[60%]'
+                          : `w-24 sm:w-40 max-h-[88%] bottom-3 ${
+                              (prod.imageNudge && NUDGE[prod.imageNudge]) ||
+                              '-translate-x-[20%] sm:-translate-x-[60%]'
+                            }`
                       }`}
                     />
                   )}
