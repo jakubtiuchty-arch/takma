@@ -1,12 +1,29 @@
 'use client'
 
 import { useState, useMemo, useCallback, useRef, useEffect } from 'react'
-import { products, type Product } from '@/data/products'
+import { products, type Product, type ProductVariant } from '@/data/products'
 import { useQuoteStore } from '@/store/quoteStore'
+
+/** Do porównań PN-ów: same znaki alfanumeryczne, małe litery („BTRY-MC3X-70MA-01" → „btrymc3x70ma01"). */
+const normalizePn = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '')
+
+/**
+ * Numery katalogowe produktu. Urządzenia trzymają je w wariantach, ale akcesoria
+ * wariantów nie mają — ich PN siedzi w specyfikacji jako „Part Number". Bez tego
+ * drugiego źródła baterie, ładowarki czy kable były w ogóle nie do wyszukania.
+ */
+export function productPartNumbers(p: Product): string[] {
+  const fromVariants = (p.variants ?? []).map((v) => v.partNumber)
+  if (fromVariants.length > 0) return fromVariants
+
+  const spec = p.specifications?.find((s) => /^(part number|numer katalogowy|pn)$/i.test(s.name))
+  if (!spec) return []
+  return spec.value.split(/[\/,;]/).map((x) => x.trim()).filter(Boolean)
+}
 
 function buildIndex() {
   return products.map((p) => {
-    const partNumbers = (p.variants || []).map((v) => v.partNumber.toLowerCase())
+    const partNumbers = productPartNumbers(p)
     const searchText = [
       p.name,
       p.slug.replace(/-/g, ' '),
@@ -16,13 +33,26 @@ function buildIndex() {
     ]
       .join(' ')
       .toLowerCase()
-    return { product: p, searchText, partNumbers }
+    return {
+      product: p,
+      searchText,
+      /** znormalizowane PN-y produktu (bez myślników) — do trafień „dokładnie ten PN" */
+      normalizedPns: partNumbers.map(normalizePn),
+    }
   })
+}
+
+/** Trafienie wyszukiwarki: albo konkretny wariant (gdy wpisano PN), albo cały produkt. */
+interface SearchHit {
+  product: Product
+  variant?: ProductVariant
+  /** PN akcesorium ze specyfikacji — produkt nie ma wariantu, ale ma numer */
+  accessoryPn?: string
 }
 
 export default function ProductSearch() {
   const [query, setQuery] = useState('')
-  const [results, setResults] = useState<Product[]>([])
+  const [results, setResults] = useState<SearchHit[]>([])
   const [expanded, setExpanded] = useState<string | null>(null)
   const addItem = useQuoteStore((s) => s.addItem)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -36,13 +66,42 @@ export default function ProductSearch() {
         return
       }
       const tokens = q.toLowerCase().split(/\s+/).filter(Boolean)
-      const found: Product[] = []
-      for (const entry of index) {
-        if (found.length >= 20) break
-        if (tokens.every((t) => entry.searchText.includes(t))) {
-          found.push(entry.product)
+      const normalizedQuery = normalizePn(q)
+      const found: SearchHit[] = []
+
+      // 1. Trafienie w numer katalogowy — pokazujemy DOKŁADNIE ten wariant, a nie
+      //    całą listę PN-ów urządzenia. Przy terminalach wariantów bywa kilkanaście.
+      if (normalizedQuery.length >= 4) {
+        for (const entry of index) {
+          if (found.length >= 20) break
+          const hitPns = entry.normalizedPns
+            .map((pn, i) => ({ pn, i }))
+            .filter(({ pn }) => pn.includes(normalizedQuery))
+          if (hitPns.length === 0) continue
+
+          const variants = entry.product.variants ?? []
+          for (const { i } of hitPns) {
+            if (found.length >= 20) break
+            found.push(
+              variants[i]
+                ? { product: entry.product, variant: variants[i] }
+                : { product: entry.product, accessoryPn: productPartNumbers(entry.product)[i] },
+            )
+          }
         }
       }
+
+      // 2. Zwykłe szukanie po nazwie/opisie — tylko dla produktów, których nie
+      //    złapaliśmy już po PN-ie.
+      const alreadyFound = new Set(found.map((h) => h.product.id))
+      for (const entry of index) {
+        if (found.length >= 20) break
+        if (alreadyFound.has(entry.product.id)) continue
+        if (tokens.every((t) => entry.searchText.includes(t))) {
+          found.push({ product: entry.product })
+        }
+      }
+
       setResults(found)
     },
     [index]
@@ -63,7 +122,8 @@ export default function ProductSearch() {
     // Cena bazowa musi być tą, którą klient widzi dziś w sklepie — to ona trafia do
     // maila jako przekreślona. `priceFrom` z katalogu bywa nieaktualny (karta liczy
     // cenę na żywo), więc pytamy o żywą i zostawiamy statyczną tylko jako zapas.
-    const pn = variant?.partNumber || product.variants?.[0]?.partNumber
+    // Dla akcesoriów PN bierzemy ze specyfikacji — one nie mają wariantów.
+    const pn = variant?.partNumber || productPartNumbers(product)[0]
     let catalogPrice = staticPrice
     if (pn) {
       try {
@@ -80,7 +140,7 @@ export default function ProductSearch() {
       source: 'catalog',
       productId: product.id,
       productName: variant ? `${product.name} — ${variant.name}` : product.name,
-      partNumber: variant?.partNumber || product.variants?.[0]?.partNumber,
+      partNumber: pn,
       description: product.shortDescription,
       quantity: 1,
       catalogPrice,
@@ -109,30 +169,43 @@ export default function ProductSearch() {
 
       {results.length > 0 && (
         <div className="border border-gray-200 rounded-lg max-h-80 overflow-y-auto bg-white">
-          {results.map((product) => (
-            <div key={product.id} className="border-b border-gray-100 last:border-0">
+          {results.map((hit) => {
+            const { product, variant, accessoryPn } = hit
+            const pn = variant?.partNumber ?? accessoryPn
+            const price = variant?.priceFrom ?? product.priceFrom
+            const canExpand = !variant && !accessoryPn && (product.variants?.length ?? 0) > 1
+
+            return (
+            <div key={pn ?? product.id} className="border-b border-gray-100 last:border-0">
               <button
                 type="button"
                 onClick={() => {
-                  if (product.variants && product.variants.length > 1) {
+                  if (canExpand) {
                     setExpanded(expanded === product.id ? null : product.id)
                   } else {
-                    addFromCatalog(product, product.variants?.[0])
+                    addFromCatalog(product, variant ?? product.variants?.[0])
                   }
                 }}
                 className="w-full flex items-center justify-between px-3 py-2.5 text-left hover:bg-gray-50 text-sm"
               >
                 <div className="min-w-0">
-                  <div className="font-medium text-gray-900 truncate">{product.name}</div>
-                  <div className="text-xs text-gray-500 truncate">{product.shortDescription}</div>
+                  <div className="font-medium text-gray-900 truncate">
+                    {product.name}
+                    {variant?.name && <span className="text-gray-500"> — {variant.name}</span>}
+                  </div>
+                  {pn ? (
+                    <div className="font-mono text-xs text-gray-500 truncate">{pn}</div>
+                  ) : (
+                    <div className="text-xs text-gray-500 truncate">{product.shortDescription}</div>
+                  )}
                 </div>
                 <div className="flex items-center gap-2 flex-shrink-0 ml-2">
-                  {product.priceFrom && (
+                  {price && (
                     <span className="text-sm font-medium tabular-nums">
-                      {product.priceFrom.toLocaleString('pl-PL', { minimumFractionDigits: 2 })} zł
+                      {price.toLocaleString('pl-PL', { minimumFractionDigits: 2 })} zł
                     </span>
                   )}
-                  {product.variants && product.variants.length > 1 && (
+                  {canExpand && (
                     <svg
                       className={`w-4 h-4 text-gray-400 transition-transform ${expanded === product.id ? 'rotate-180' : ''}`}
                       fill="none"
@@ -169,7 +242,8 @@ export default function ProductSearch() {
                 </div>
               )}
             </div>
-          ))}
+            )
+          })}
         </div>
       )}
     </div>
