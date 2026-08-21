@@ -142,22 +142,22 @@ export default async function PromotionPage({ params }: { params: Promise<{ slug
                     }`}
                   >
                     <div aria-hidden className="pointer-events-none absolute -top-12 -right-12 h-32 w-32 rounded-full opacity-20 blur-2xl" style={{ background: promo.accent.light }} />
-                    <span className="inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide mb-4" style={{ background: promo.accent.base, color: promo.accent.on }}>
+                    <span className="inline-flex items-center rounded-full px-3 py-1 text-[11px] sm:text-xs font-bold uppercase tracking-wide mb-4" style={{ background: promo.accent.base, color: promo.accent.on }}>
                       −{prod.pct}%
                     </span>
-                    <p className="text-white font-bold leading-snug mb-3">{prod.name}</p>
+                    <p className="text-white font-bold leading-snug mb-3 text-lg sm:text-xl">{prod.name}</p>
                     {price && active && (
                       <>
-                        <p className="text-2xl font-extrabold tracking-tight" style={{ color: promo.accent.light }}>
+                        <p className="text-3xl sm:text-4xl font-extrabold tracking-tight" style={{ color: promo.accent.light }}>
                           {price.promoNetto.toLocaleString('pl-PL')} zł{' '}
-                          <span className="text-sm font-semibold text-white/60">netto</span>
+                          <span className="text-base sm:text-lg font-semibold text-white/60">netto</span>
                         </p>
-                        <p className="text-sm text-white/45 line-through mb-4">
+                        <p className="text-base sm:text-lg text-white/45 line-through mb-4">
                           {price.regularNetto.toLocaleString('pl-PL')} zł
                         </p>
                       </>
                     )}
-                    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-white transition-colors group-hover:[color:var(--promo-accent)]" style={{ '--promo-accent': promo.accent.light } as React.CSSProperties}>
+                    <span className="inline-flex items-center gap-1.5 text-base sm:text-lg font-semibold text-white transition-colors group-hover:[color:var(--promo-accent)]" style={{ '--promo-accent': promo.accent.light } as React.CSSProperties}>
                       Zobacz produkt <span aria-hidden>→</span>
                     </span>
                   </div>
