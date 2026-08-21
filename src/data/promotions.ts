@@ -20,6 +20,8 @@ export interface PromotionProduct {
   slug: string
   name: string
   pct: number
+  /** wycinanka urządzenia (przezroczyste tło) wystająca poza obrys kafla */
+  image?: string
 }
 
 /**
@@ -93,10 +95,10 @@ export const PROMOTIONS: Promotion[] = [
     badge: 'do −44%',
     cardImage: '/images/promo-card-urzadzenia.webp',
     products: [
-      { slug: 'zebra-ds4608', name: 'Skaner Zebra DS4608', pct: 44 },
-      { slug: 'zebra-zd230d', name: 'Drukarka Zebra ZD230d', pct: 21 },
-      { slug: 'zebra-zd230t', name: 'Drukarka Zebra ZD230t', pct: 18 },
-      { slug: 'zebra-ds2208', name: 'Skaner Zebra DS2208', pct: 10 },
+      { slug: 'zebra-ds4608', name: 'Skaner Zebra DS4608', pct: 44, image: '/images/promocje/zebra-ds4608.png' },
+      { slug: 'zebra-zd230d', name: 'Drukarka Zebra ZD230d', pct: 21, image: '/images/promocje/zebra-zd230d.png' },
+      { slug: 'zebra-zd230t', name: 'Drukarka Zebra ZD230t', pct: 18, image: '/images/promocje/zebra-zd230t.png' },
+      { slug: 'zebra-ds2208', name: 'Skaner Zebra DS2208', pct: 10, image: '/images/promocje/zebra-ds2208.png' },
     ],
     cards: [
       {

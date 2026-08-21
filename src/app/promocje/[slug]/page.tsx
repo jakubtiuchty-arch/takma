@@ -119,27 +119,42 @@ export default async function PromotionPage({ params }: { params: Promise<{ slug
                 <Link
                   key={prod.slug}
                   href={`/produkt/${prod.slug}`}
-                  className="group relative overflow-hidden rounded-2xl bg-gray-950 p-5 transition-transform hover:-translate-y-0.5"
+                  className="group relative block pr-14 transition-transform hover:-translate-y-0.5"
                 >
-                  <div aria-hidden className="pointer-events-none absolute -top-12 -right-12 h-32 w-32 rounded-full opacity-20 blur-2xl" style={{ background: promo.accent.light }} />
-                  <span className="inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide mb-4" style={{ background: promo.accent.base, color: promo.accent.on }}>
-                    −{prod.pct}%
-                  </span>
-                  <p className="text-white font-bold leading-snug mb-3">{prod.name}</p>
-                  {price && active && (
-                    <>
-                      <p className="text-2xl font-extrabold tracking-tight" style={{ color: promo.accent.light }}>
-                        {price.promoNetto.toLocaleString('pl-PL')} zł{' '}
-                        <span className="text-sm font-semibold text-white/60">netto</span>
-                      </p>
-                      <p className="text-sm text-white/45 line-through mb-4">
-                        {price.regularNetto.toLocaleString('pl-PL')} zł
-                      </p>
-                    </>
+                  {/* Ciemny kafel jest węższy od komórki siatki, żeby urządzenie mogło
+                      wyjść poza jego obrys po prawej — jak w kaflach operatorów. */}
+                  <div className="relative overflow-hidden rounded-2xl bg-gray-950 p-5 pr-8">
+                    <div aria-hidden className="pointer-events-none absolute -top-12 -right-12 h-32 w-32 rounded-full opacity-20 blur-2xl" style={{ background: promo.accent.light }} />
+                    <span className="inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide mb-4" style={{ background: promo.accent.base, color: promo.accent.on }}>
+                      −{prod.pct}%
+                    </span>
+                    <p className="text-white font-bold leading-snug mb-3">{prod.name}</p>
+                    {price && active && (
+                      <>
+                        <p className="text-2xl font-extrabold tracking-tight" style={{ color: promo.accent.light }}>
+                          {price.promoNetto.toLocaleString('pl-PL')} zł{' '}
+                          <span className="text-sm font-semibold text-white/60">netto</span>
+                        </p>
+                        <p className="text-sm text-white/45 line-through mb-4">
+                          {price.regularNetto.toLocaleString('pl-PL')} zł
+                        </p>
+                      </>
+                    )}
+                    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-white transition-colors group-hover:[color:var(--promo-accent)]" style={{ '--promo-accent': promo.accent.light } as React.CSSProperties}>
+                      Zobacz produkt <span aria-hidden>→</span>
+                    </span>
+                  </div>
+
+                  {prod.image && (
+                    <Image
+                      src={prod.image}
+                      alt=""
+                      aria-hidden
+                      width={400}
+                      height={800}
+                      className="pointer-events-none absolute right-0 bottom-5 w-24 h-auto max-h-[68%] object-contain object-bottom drop-shadow-[0_12px_24px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:scale-105"
+                    />
                   )}
-                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-white transition-colors group-hover:[color:var(--promo-accent)]" style={{ '--promo-accent': promo.accent.light } as React.CSSProperties}>
-                    Zobacz produkt <span aria-hidden>→</span>
-                  </span>
                 </Link>
               )
             })}
