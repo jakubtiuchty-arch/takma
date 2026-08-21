@@ -130,7 +130,7 @@ export default async function PromotionPage({ params }: { params: Promise<{ slug
                 <Link
                   key={prod.slug}
                   href={`/produkt/${prod.slug}`}
-                  className={`group relative block transition-transform hover:-translate-y-0.5 ${wide ? 'pr-20 sm:pr-32' : 'pr-14 sm:pr-20'}`}
+                  className={`group relative block transition-transform hover:-translate-y-0.5 ${wide ? 'pr-20 sm:pr-40' : 'pr-14 sm:pr-28'}`}
                 >
                   {/* Ciemny kafel jest węższy od komórki siatki, żeby urządzenie mogło
                       wyjść poza jego obrys po prawej — jak w kaflach operatorów. */}
@@ -163,8 +163,10 @@ export default async function PromotionPage({ params }: { params: Promise<{ slug
                       aria-hidden
                       width={400}
                       height={800}
-                      className={`pointer-events-none absolute right-0 bottom-5 h-auto object-contain object-bottom drop-shadow-[0_12px_24px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:scale-105 ${
-                        wide ? 'w-36 sm:w-56 max-h-[92%]' : 'w-24 sm:w-36 max-h-[88%]'
+                      className={`pointer-events-none absolute right-0 h-auto object-contain object-bottom drop-shadow-[0_12px_24px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:scale-105 ${
+                        wide
+                          ? 'w-36 sm:w-60 max-h-[86%] -bottom-2'
+                          : 'w-24 sm:w-40 max-h-[88%] bottom-3'
                       }`}
                     />
                   )}
