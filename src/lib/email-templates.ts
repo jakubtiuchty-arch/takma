@@ -765,7 +765,9 @@ export function buildQuoteEmail(data: {
           ? emailText(
               '<strong>Cena Ci odpowiada?</strong> Nie musisz nic przepisywa&#263; ani odpisywa&#263; na tego maila. ' +
               'Klikni&#281;cie poni&#380;ej otwiera zam&#243;wienie z t&#261; ofert&#261; ju&#380; w &#347;rodku — w cenach z tej wyceny.',
-            ) + emailButton('Zam&#243;w w cenach z oferty', data.orderUrl, '#15803d')
+            // uwaga: emailButton sam escapuje etykietę — tu podajemy czysty tekst,
+            // inaczej encje wychodzą podwójnie zakodowane („Zam&#243;w")
+            ) + emailButton('Zamów w cenach z oferty', data.orderUrl, '#15803d')
           : '') +
         (data.notes ? emailInfoAmber(esc(data.notes)) : '') +
         emailSignature()
