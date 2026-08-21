@@ -45,7 +45,11 @@ export async function GET(request: NextRequest) {
           ${item.partNumber ? `<div class="service-notes">PN: ${escapeHtml(item.partNumber)}</div>` : ''}
         </td>
         <td>${item.quantity} szt.</td>
-        <td class="amount">${formatPrice(item.priceNetto)} zł</td>
+        <td class="amount">${
+          item.catalogPriceNetto && item.catalogPriceNetto > item.priceNetto
+            ? `<span style="color:#9ca3af;text-decoration:line-through;font-size:11px;">${formatPrice(item.catalogPriceNetto)} zł</span><br />`
+            : ''
+        }${formatPrice(item.priceNetto)} zł</td>
         <td style="text-align:center;">23%</td>
         <td class="amount">${formatPrice(totalBrutto)} zł</td>
       </tr>`

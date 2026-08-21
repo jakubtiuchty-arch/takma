@@ -211,9 +211,18 @@ export default function CheckoutPage() {
 
   const { stockData, loading: priceLoading } = useStockData(cartPartNumbers)
 
+  /** Numer oferty, jeśli koszyk przyszedł z linku „zamów z oferty". */
+  const quoteNumber = useMemo(() => items.find((i) => i.quoteNumber)?.quoteNumber, [items])
+
   const itemPrices = useMemo(() => {
     const prices = new Map<string, number | undefined>()
     for (const item of items) {
+      // Pozycja z oferty handlowej — cena wynegocjowana, zamrożona do końca ważności
+      // oferty. Podmiana na żywą pokazałaby klientowi wyższą kwotę niż w mailu.
+      if (item.quoteNumber) {
+        prices.set(item.productId, item.priceNetto)
+        continue
+      }
       // Pozycja kartonowa (taśma) — cena kartonowa (marża 13%) w priceNetto; nie podmieniaj
       // żywą ceną pojedynczej rolki (×20%), mimo tego samego PN. Dotyczy też ceny w zamówieniu.
       if (item.productId.endsWith('__karton')) {
@@ -379,6 +388,7 @@ export default function CheckoutPage() {
         priceNetto: itemPrices.get(item.productId) ?? 0,
         image: item.productImage,
         note: item.note || undefined,
+        quoteNumber: item.quoteNumber,
       }))
 
       // Walidacja: żaden produkt nie może mieć ceny 0 zł
@@ -696,6 +706,17 @@ export default function CheckoutPage() {
       {step === 1 && (
         <div className="grid lg:grid-cols-5 gap-6 lg:gap-10 items-start">
           <div className="lg:col-span-3 space-y-6">
+            {/* Zamówienie z oferty handlowej — ceny wynegocjowane, nie cennikowe */}
+            {quoteNumber && (
+              <div className="rounded-2xl border border-gray-200 bg-white px-4 sm:px-6 py-4">
+                <p className="font-semibold text-gray-900">Zamówienie z oferty {quoteNumber}</p>
+                <p className="text-sm text-gray-600 mt-1 leading-relaxed">
+                  Ceny poniżej pochodzą z tej wyceny — są niższe niż cennik sklepu i obowiązują
+                  do końca jej ważności. Wystarczy uzupełnić dane do faktury.
+                </p>
+              </div>
+            )}
+
             {/* Lista produktow */}
             <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
               <div className="px-4 sm:px-6 py-4 border-b border-gray-200 flex items-center justify-between">

@@ -4,8 +4,11 @@ import { prisma } from '@/lib/db'
 import { generateQuoteNumber, calculateQuoteTotals } from '@/lib/quotes'
 import { sendEmail } from '@/lib/email'
 import { buildQuoteEmail } from '@/lib/email-templates'
+import { randomBytes } from 'crypto'
 import { revalidatePath } from 'next/cache'
 import { redirect } from 'next/navigation'
+
+const SITE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.takma.com.pl'
 
 interface QuoteItemInput {
   source: string
@@ -17,6 +20,8 @@ interface QuoteItemInput {
   purchasePrice?: number // grosze
   priceNetto: number     // grosze
   marginPercent?: number
+  catalogPrice?: number  // grosze — cena sklepowa z dnia wystawienia
+  discountPercent?: number
 }
 
 interface CreateQuoteInput {
@@ -88,6 +93,8 @@ export async function createQuote(input: CreateQuoteInput) {
           priceNetto: item.priceNetto,
           totalNetto: item.priceNetto * item.quantity,
           marginPercent: item.marginPercent,
+          catalogPriceNetto: item.catalogPrice,
+          discountPercent: item.discountPercent,
         })),
       },
     },
@@ -122,6 +129,15 @@ export async function sendQuoteEmail(quoteId: string) {
     return { success: false, error: 'Brak adresu email klienta' }
   }
 
+  // Token linku „zamów z oferty" — jeden na ofertę, nadawany przy pierwszej wysyłce,
+  // żeby ponowne wysłanie tej samej oferty nie unieważniało linku z poprzedniego maila.
+  let orderToken = quote.orderToken
+  if (!orderToken) {
+    orderToken = randomBytes(24).toString('base64url')
+    await prisma.quote.update({ where: { id: quoteId }, data: { orderToken } })
+  }
+  const orderUrl = `${SITE_URL}/oferta/${encodeURIComponent(quote.quoteNumber)}/zamow?t=${orderToken}`
+
   const result = await sendEmail({
     to: quote.clientEmail,
     subject: `Oferta ${quote.quoteNumber} — TAKMA`,
@@ -135,6 +151,7 @@ export async function sendQuoteEmail(quoteId: string) {
         quantity: item.quantity,
         priceNetto: item.priceNetto,
         totalNetto: item.totalNetto,
+        catalogPriceNetto: item.catalogPriceNetto,
       })),
       subtotalNetto: quote.subtotalNetto,
       vatAmount: quote.vatAmount,
@@ -144,6 +161,7 @@ export async function sendQuoteEmail(quoteId: string) {
       deliveryTerms: quote.deliveryTerms,
       notes: quote.notes,
       freebiesNote: quote.freebiesNote,
+      orderUrl,
     }),
   })
 
@@ -207,6 +225,8 @@ export async function priceRfqQuote(rfqQuoteId: string, input: {
           priceNetto: item.priceNetto,
           totalNetto: item.priceNetto * item.quantity,
           marginPercent: item.marginPercent,
+          catalogPriceNetto: item.catalogPrice,
+          discountPercent: item.discountPercent,
         })),
       },
     },
@@ -278,6 +298,8 @@ export async function updateQuote(quoteId: string, input: CreateQuoteInput) {
           priceNetto: item.priceNetto,
           totalNetto: item.priceNetto * item.quantity,
           marginPercent: item.marginPercent,
+          catalogPriceNetto: item.catalogPrice,
+          discountPercent: item.discountPercent,
         })),
       },
     },
@@ -334,6 +356,8 @@ export async function duplicateQuote(quoteId: string) {
           priceNetto: item.priceNetto,
           totalNetto: item.totalNetto,
           marginPercent: item.marginPercent,
+          catalogPriceNetto: item.catalogPriceNetto,
+          discountPercent: item.discountPercent,
         })),
       },
     },

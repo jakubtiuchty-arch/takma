@@ -688,7 +688,16 @@ export function buildInquiryConfirmationEmail(data: {
 export function buildQuoteEmail(data: {
   quoteNumber: string
   clientContact?: string | null
-  items: { position: number; productName: string; partNumber?: string | null; quantity: number; priceNetto: number; totalNetto: number }[]
+  items: {
+    position: number
+    productName: string
+    partNumber?: string | null
+    quantity: number
+    priceNetto: number
+    totalNetto: number
+    /** cena sklepowa z dnia wystawienia (grosze) — przekreślana, gdy wyższa od oferowanej */
+    catalogPriceNetto?: number | null
+  }[]
   subtotalNetto: number
   vatAmount: number
   totalBrutto: number
@@ -697,16 +706,33 @@ export function buildQuoteEmail(data: {
   deliveryTerms: string
   notes?: string | null
   freebiesNote?: string | null
+  /** pełny URL „zamów z oferty" — bez niego mail wygląda jak dotąd */
+  orderUrl?: string | null
 }): string {
-  const rows = data.items
-    .sort((a, b) => a.position - b.position)
-    .map(item => [
+  const items = [...data.items].sort((a, b) => a.position - b.position)
+
+  /** Ile klient oszczędza względem cen sklepowych (grosze). */
+  const savings = items.reduce((sum, item) => {
+    const list = item.catalogPriceNetto
+    if (!list || list <= item.priceNetto) return sum
+    return sum + (list - item.priceNetto) * item.quantity
+  }, 0)
+
+  const rows = items.map(item => {
+    const list = item.catalogPriceNetto
+    const discounted = !!list && list > item.priceNetto
+    const priceCell = discounted
+      ? `<span style="color:#9ca3af;text-decoration:line-through;font-size:13px">${fmtPLN(list / 100)} z&#322;</span>` +
+        `<br /><strong style="color:#15803d">${fmtPLN(item.priceNetto / 100)} z&#322;</strong>`
+      : `${fmtPLN(item.priceNetto / 100)} z&#322;`
+    return [
       String(item.position),
       `${esc(item.productName)}${item.partNumber ? `<br /><span style="font-size:12px;color:#6b7280">PN: ${esc(item.partNumber)}</span>` : ''}`,
       String(item.quantity),
-      `${fmtPLN(item.priceNetto / 100)} z&#322;`,
+      priceCell,
       `${fmtPLN(item.totalNetto / 100)} z&#322;`,
-    ])
+    ]
+  })
 
   const contactName = data.clientContact ? `, ${data.clientContact}` : ''
 
@@ -723,12 +749,24 @@ export function buildQuoteEmail(data: {
           { label: 'VAT 23%:', value: `${fmtPLN(data.vatAmount / 100)} z&#322;` },
           { label: 'Brutto:', value: `${fmtPLN(data.totalBrutto / 100)} z&#322;`, bold: true },
         ]) +
+        (savings > 0
+          ? emailInfoGreen(
+              `Ceny w tej ofercie s&#261; ni&#380;sze od cen w naszym sklepie — ` +
+              `<strong>oszcz&#281;dzasz ${fmtPLN(savings / 100)} z&#322; netto</strong>.`,
+            )
+          : '') +
         (data.freebiesNote ? emailInfoGreen(`<strong>Gratis:</strong> ${esc(data.freebiesNote)}`) : '') +
         emailDataTable([
           { label: 'Wa&#380;no&#347;&#263; oferty', value: `do ${data.validUntil.toLocaleDateString('pl-PL')}` },
           { label: 'Warunki p&#322;atno&#347;ci', value: esc(data.paymentTerms) },
           { label: 'Termin dostawy', value: esc(data.deliveryTerms) },
         ]) +
+        (data.orderUrl
+          ? emailText(
+              '<strong>Cena Ci odpowiada?</strong> Nie musisz nic przepisywa&#263; ani odpisywa&#263; na tego maila. ' +
+              'Klikni&#281;cie poni&#380;ej otwiera zam&#243;wienie z t&#261; ofert&#261; ju&#380; w &#347;rodku — w cenach z tej wyceny.',
+            ) + emailButton('Zam&#243;w w cenach z oferty', data.orderUrl, '#15803d')
+          : '') +
         (data.notes ? emailInfoAmber(esc(data.notes)) : '') +
         emailSignature()
       ),

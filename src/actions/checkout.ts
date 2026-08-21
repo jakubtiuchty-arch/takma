@@ -2,6 +2,7 @@
 
 import { p24Register, p24Configured } from '@/lib/p24'
 import { createOrder } from '@/lib/orders'
+import { applyQuotePricing } from '@/lib/quote-pricing'
 
 interface CheckoutItem {
   productId: string
@@ -12,6 +13,8 @@ interface CheckoutItem {
   priceNetto: number // PLN
   image?: string
   note?: string
+  /** ustawiane przez link „zamów z oferty" — cena jest wtedy brana z bazy, nie stąd */
+  quoteNumber?: string
 }
 
 interface CustomerData {
@@ -38,6 +41,9 @@ export async function createCheckoutSession(
   }
   // Pomiary czasu — diagnoza wolnego redirectu do P24 (2026-06-11: ~20-40 s)
   const t0 = Date.now()
+
+  // Ceny pozycji z oferty czytamy z bazy — nie ufamy temu, co przyszło z koszyka.
+  items = await applyQuotePricing(items)
 
   // 1. Create order in DB with status PENDING_PAYMENT
   const order = await createOrder({
@@ -100,6 +106,8 @@ export async function createProformaOrder(
   shippingNetto: number,
   notes?: string
 ): Promise<{ orderNumber: string }> {
+  items = await applyQuotePricing(items)
+
   // 1. Create order in DB with status AWAITING_PAYMENT
   const order = await createOrder({
     customer: {

@@ -53,12 +53,28 @@ export default function ProductSearch() {
     return () => clearTimeout(timer)
   }, [query, search])
 
-  const addFromCatalog = (product: Product, variant?: { partNumber: string; name: string; priceFrom?: number }) => {
-    const catalogPrice = variant?.priceFrom
+  const addFromCatalog = async (product: Product, variant?: { partNumber: string; name: string; priceFrom?: number }) => {
+    const staticPrice = variant?.priceFrom
       ? Math.round(variant.priceFrom * 100)
       : product.priceFrom
       ? Math.round(product.priceFrom * 100)
       : 0
+
+    // Cena bazowa musi być tą, którą klient widzi dziś w sklepie — to ona trafia do
+    // maila jako przekreślona. `priceFrom` z katalogu bywa nieaktualny (karta liczy
+    // cenę na żywo), więc pytamy o żywą i zostawiamy statyczną tylko jako zapas.
+    const pn = variant?.partNumber || product.variants?.[0]?.partNumber
+    let catalogPrice = staticPrice
+    if (pn) {
+      try {
+        const res = await fetch(`/api/stock?pn=${encodeURIComponent(pn)}`)
+        const data = await res.json()
+        const live = data?.results?.[0]
+        if (live?.found && live?.price > 0) catalogPrice = Math.round(live.price * 100)
+      } catch {
+        // brak odpowiedzi API — zostaje cena statyczna
+      }
+    }
 
     addItem({
       source: 'catalog',

@@ -163,6 +163,8 @@ export default function QuoteBuilder({ rfqData, editData }: QuoteBuilderProps) {
       purchasePrice: item.purchasePrice,
       priceNetto: item.priceNetto,
       marginPercent: item.marginPercent,
+      catalogPrice: item.catalogPrice,
+      discountPercent: item.discountPercent,
     }))
 
     const commonPayload = {

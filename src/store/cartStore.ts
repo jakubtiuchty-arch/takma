@@ -41,6 +41,9 @@ export interface CartItem {
   note: string
   priceNetto?: number // cena jednostkowa netto w PLN (do wyświetlania)
   categoryId?: string // dla logiki cross-sell
+  /** Numer oferty, z której pochodzi pozycja — cena jest wtedy zamrożona
+   *  (kasa nie podmienia jej na żywą) i weryfikowana po stronie serwera. */
+  quoteNumber?: string
 }
 
 interface CartStore {
@@ -57,6 +60,8 @@ interface CartStore {
     priceNetto?: number
     categoryId?: string
   }) => void
+  /** Zastępuje zawartość koszyka pozycjami z oferty (link „zamów z oferty" w mailu). */
+  loadFromQuote: (quoteNumber: string, items: Omit<CartItem, 'note' | 'quoteNumber'>[]) => void
   removeItem: (productId: string) => void
   updateQuantity: (productId: string, quantity: number) => void
   updateNote: (productId: string, note: string) => void
@@ -126,6 +131,15 @@ export const useCartStore = create<CartStore>()(
         if (typeof window !== 'undefined' && !window.location.pathname.startsWith('/zamowienie')) {
           set({ isDrawerOpen: true })
         }
+      },
+
+      loadFromQuote: (quoteNumber, quoteItems) => {
+        // Podmiana, nie doklejanie: klient przyszedł z konkretną wyceną i ma zobaczyć
+        // dokładnie ją, a nie wymieszaną z tym, co zostawił w koszyku tydzień temu.
+        set({
+          items: quoteItems.map((item) => ({ ...item, note: '', quoteNumber })),
+          isDrawerOpen: false,
+        })
       },
 
       removeItem: (productId) => {

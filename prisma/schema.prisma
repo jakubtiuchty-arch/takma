@@ -263,6 +263,10 @@ model Quote {
   acceptedAt DateTime?
   pdfUrl     String?
 
+  // Token do linku „zamów z oferty" w mailu (/oferta/[numer]/zamow?t=…).
+  // Bez niego numer oferty wystarczyłby do podejrzenia cudzej wyceny.
+  orderToken String? @unique
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -296,6 +300,12 @@ model QuoteItem {
   totalNetto    Int
 
   marginPercent Float?
+
+  // Cena sklepowa z dnia wystawienia oferty (grosze) — pokazywana w mailu jako
+  // przekreślona, żeby klient widział wysokość rabatu. Zamrożona celowo: gdyby
+  // czytać ją na żywo, rabat zmieniałby się sam po każdej zmianie cennika.
+  catalogPriceNetto Int?
+  discountPercent   Float?
 }
 
 // ---------------------------------------------------------------------------

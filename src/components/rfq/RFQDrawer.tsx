@@ -44,6 +44,10 @@ function getItemPrice(
   item: CartItem,
   stockData: Map<string, { found: boolean; price?: number }>
 ): number | undefined {
+  // Pozycja z oferty handlowej — cena wynegocjowana, zamrożona jak w kasie.
+  if (item.quoteNumber && item.priceNetto) {
+    return item.priceNetto
+  }
   // Pozycja kartonowa (taśma) — cena kartonowa (marża 13%) jest zapisana w priceNetto;
   // NIE podmieniaj jej żywą ceną pojedynczej rolki (marża 20%), mimo tego samego PN.
   if (item.productId.endsWith('__karton')) {
