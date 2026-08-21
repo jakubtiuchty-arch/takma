@@ -130,11 +130,17 @@ export default async function PromotionPage({ params }: { params: Promise<{ slug
                 <Link
                   key={prod.slug}
                   href={`/produkt/${prod.slug}`}
-                  className={`group relative block transition-transform hover:-translate-y-0.5 ${wide ? 'pr-20 sm:pr-40' : 'pr-14 sm:pr-28'}`}
+                  className="group relative block transition-transform hover:-translate-y-0.5"
                 >
                   {/* Ciemny kafel jest węższy od komórki siatki, żeby urządzenie mogło
-                      wyjść poza jego obrys po prawej — jak w kaflach operatorów. */}
-                  <div className="relative overflow-hidden rounded-2xl bg-gray-950 p-5 pr-10 min-h-[190px]">
+                      wyjść poza jego obrys po prawej — jak w kaflach operatorów.
+                      Szerokość podana wprost (a nie odstępem), bo tylko wtedy da się
+                      ją świadomie zmniejszać o konkretny procent. */}
+                  <div
+                    className={`relative overflow-hidden rounded-2xl bg-gray-950 p-5 pr-10 min-h-[190px] ${
+                      wide ? 'w-[86%] sm:w-[60%]' : 'w-[88%] sm:w-[66%]'
+                    }`}
+                  >
                     <div aria-hidden className="pointer-events-none absolute -top-12 -right-12 h-32 w-32 rounded-full opacity-20 blur-2xl" style={{ background: promo.accent.light }} />
                     <span className="inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide mb-4" style={{ background: promo.accent.base, color: promo.accent.on }}>
                       −{prod.pct}%
@@ -165,9 +171,9 @@ export default async function PromotionPage({ params }: { params: Promise<{ slug
                       height={800}
                       className={`pointer-events-none absolute right-0 h-auto object-contain object-bottom drop-shadow-[0_12px_24px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:scale-105 ${
                         wide
-                          ? 'w-36 sm:w-60 max-h-[86%] -bottom-2'
+                          ? 'w-36 sm:w-60 max-h-[86%] -bottom-2 -translate-x-[6%] sm:-translate-x-[25%]'
                           // skaner jest wąski i wysoki — wsuwamy go 30% szerokości w głąb kafla
-                          : 'w-24 sm:w-40 max-h-[88%] bottom-3 -translate-x-[30%]'
+                          : 'w-24 sm:w-40 max-h-[88%] bottom-3 -translate-x-[20%] sm:-translate-x-[60%]'
                       }`}
                     />
                   )}
