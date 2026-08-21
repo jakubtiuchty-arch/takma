@@ -156,6 +156,7 @@ const navigation: NavItem[] = [
       { name: 'Gastronomia i HoReCa', href: '/drukarki-etykiet-gastronomia' },
     ],
   },
+  { name: 'Promocje', href: '/promocje' },
   { name: 'Instrukcje', href: '/instrukcje' },
   { name: 'Serwis', href: '/serwis' },
   { name: 'Kontakt', href: '/kontakt' },

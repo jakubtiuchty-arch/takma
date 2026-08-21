@@ -63,7 +63,7 @@ export default function ZipShipBanner({
           <div className="relative px-4 sm:px-6 pb-4">
             <div className="flex items-center justify-between gap-3 mb-2">
               <p className="text-white font-bold leading-snug text-[15px]">
-                Do 3 kartonów nawet 15% taniej do Twojej drukarki Zebra{' '}
+                Do każdej drukarki Zebra — 3 kartony materiałów z rabatem{' '}
                 <span
                   className="relative inline-block align-middle"
                   onMouseEnter={() => setTipOpen(true)}
@@ -81,10 +81,10 @@ export default function ZipShipBanner({
                     <span className="hidden sm:block absolute bottom-full left-1/2 z-20 mb-2 w-80 -translate-x-1/2 rounded-xl border border-white/10 bg-gray-900 p-4 text-left shadow-2xl">
                       <span className="block text-[13px] font-bold text-white mb-2">Jak działa promocja?</span>
                       <span className="block space-y-1.5">
-                        <span className="block text-[12px] leading-relaxed text-white/75">• <b className="text-white">Do 3 kartonów na każdą drukarkę</b> — można kupić 1, 2 lub 3, bez minimum. Masz 5 drukarek? Limit liczy się osobno dla każdej.</span>
-                        <span className="block text-[12px] leading-relaxed text-white/75">• Przy etykietach termotransferowych <b className="text-white">dodatkowo do 3 kartonów taśm</b> w promocji.</span>
-                        <span className="block text-[12px] leading-relaxed text-white/75">• Dotyczy wybranych etykiet i taśm z magazynowego asortymentu Zebra — nowej lub już posiadanej drukarki (także kupionej gdzie indziej).</span>
-                        <span className="block text-[12px] leading-relaxed text-white/75">• Podajesz numer seryjny drukarki, my w <b className="text-white">24 h</b> odsyłamy wycenę. Promocja do <b className="text-white">31 grudnia 2026</b>.</span>
+                        <span className="block text-[12px] leading-relaxed text-white/75">• <b className="text-white">Do 3 kartonów na każdą drukarkę</b> — bez dolnego limitu, możesz kupić jeden, dwa albo trzy. Przy pięciu drukarkach limit liczy się osobno dla każdej z nich.</span>
+                        <span className="block text-[12px] leading-relaxed text-white/75">• Do zamówienia etykiet termotransferowych dokupisz <b className="text-white">dodatkowo do 3 kartonów taśm</b> w promocyjnej cenie.</span>
+                        <span className="block text-[12px] leading-relaxed text-white/75">• Promocja obejmuje wybrane etykiety i taśmy z magazynowego asortymentu Zebry. Liczy się każda drukarka Zebra w firmie — także kupiona w innym miejscu.</span>
+                        <span className="block text-[12px] leading-relaxed text-white/75">• Podajesz numer seryjny drukarki, a my odsyłamy wycenę w <b className="text-white">ciągu jednego dnia roboczego</b>. Promocja trwa do <b className="text-white">31 grudnia 2026 roku</b>.</span>
                       </span>
                       <span aria-hidden className="absolute left-1/2 top-full -translate-x-1/2 border-8 border-transparent border-t-gray-900" />
                     </span>
@@ -97,16 +97,16 @@ export default function ZipShipBanner({
               <div className="sm:hidden mt-3 rounded-xl border border-white/10 bg-gray-900 p-4">
                   <p className="text-[13px] font-bold text-white mb-2">Jak działa promocja?</p>
                   <ul className="space-y-1.5">
-                    <li className="text-[12px] leading-relaxed text-white/75">• <b className="text-white">Do 3 kartonów na każdą drukarkę</b> — można kupić 1, 2 lub 3, bez minimum. Masz 5 drukarek? Limit liczy się osobno dla każdej.</li>
-                    <li className="text-[12px] leading-relaxed text-white/75">• Przy etykietach termotransferowych <b className="text-white">dodatkowo do 3 kartonów taśm</b> w promocji.</li>
-                    <li className="text-[12px] leading-relaxed text-white/75">• Dotyczy wybranych etykiet i taśm z magazynowego asortymentu Zebra — nowej lub już posiadanej drukarki (także kupionej gdzie indziej).</li>
-                    <li className="text-[12px] leading-relaxed text-white/75">• Podajesz numer seryjny drukarki, my w <b className="text-white">24 h</b> odsyłamy wycenę. Promocja do <b className="text-white">31 grudnia 2026</b>.</li>
+                    <li className="text-[12px] leading-relaxed text-white/75">• <b className="text-white">Do 3 kartonów na każdą drukarkę</b> — bez dolnego limitu, możesz kupić jeden, dwa albo trzy. Przy pięciu drukarkach limit liczy się osobno dla każdej z nich.</li>
+                    <li className="text-[12px] leading-relaxed text-white/75">• Do zamówienia etykiet termotransferowych dokupisz <b className="text-white">dodatkowo do 3 kartonów taśm</b> w promocyjnej cenie.</li>
+                    <li className="text-[12px] leading-relaxed text-white/75">• Promocja obejmuje wybrane etykiety i taśmy z magazynowego asortymentu Zebry. Liczy się każda drukarka Zebra w firmie — także kupiona w innym miejscu.</li>
+                    <li className="text-[12px] leading-relaxed text-white/75">• Podajesz numer seryjny drukarki, a my odsyłamy wycenę w <b className="text-white">ciągu jednego dnia roboczego</b>. Promocja trwa do <b className="text-white">31 grudnia 2026 roku</b>.</li>
                   </ul>
                 </div>
               )}
             <p className="text-[13px] text-white/60 mb-3.5">
-              Promocja na wybrane etykiety i taśmy z asortymentu magazynowego Zebra.
-              Podaj numer seryjny drukarki — przygotujemy wycenę.
+              Rabat do 15% na wybrane etykiety i taśmy z magazynowego asortymentu Zebry.
+              Podaj numer seryjny drukarki, a przygotujemy wycenę.
             </p>
             <AskAboutProductButton
               productName={context}

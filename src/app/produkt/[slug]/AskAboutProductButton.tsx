@@ -20,6 +20,10 @@ interface AskAboutProductButtonProps {
   promo?: boolean
   /** pełne nadpisanie klas przycisku (np. ciemny przycisk na limonkowym tle) */
   buttonClassName?: string
+  /** kolory inline — akcent producenta na stronach promocji (Zebra limonka, TSC granat) */
+  buttonStyle?: React.CSSProperties
+  /** strzałka zamiast ikony koperty (CTA na stronach promocji) */
+  arrow?: boolean
 }
 
 function InquiryModal({
@@ -282,6 +286,8 @@ export default function AskAboutProductButton({
   promoStyle = false,
   promo = false,
   buttonClassName,
+  buttonStyle,
+  arrow = false,
 }: AskAboutProductButtonProps) {
   const [open, setOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
@@ -319,12 +325,18 @@ export default function AskAboutProductButton({
     <>
       <button
         onClick={() => setOpen(true)}
+        style={buttonStyle}
         className={buttonClassName || (promoStyle
-          ? "w-full flex items-center justify-center gap-2.5 px-6 py-3 bg-white text-gray-900 font-bold rounded-lg hover:bg-gray-100 transition-all duration-200 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+          ? "w-full flex items-center justify-center gap-2.5 px-5 py-3.5 bg-white text-gray-900 font-bold rounded-lg whitespace-nowrap hover:bg-gray-100 transition-all duration-200 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
           : "w-full flex items-center justify-center gap-2.5 px-6 py-3 border-2 border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500")}
       >
-        <MailIcon size={20} />
+        {!arrow && <MailIcon size={20} />}
         {label || 'Zapytaj o produkt'}
+        {arrow && (
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        )}
       </button>
       {mounted && open && (
         <InquiryModal

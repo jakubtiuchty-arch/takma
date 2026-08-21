@@ -15,6 +15,7 @@ import { thermalLabelSeries } from '@/data/thermal-label-series'
 import { transferLabelSeries } from '@/data/transfer-label-series'
 import { transferRibbonSeries } from '@/data/transfer-ribbon-series'
 import { isRibbonProduct } from '@/data/products'
+import { PROMOTIONS } from '@/data/promotions'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.takma.com.pl'
@@ -67,6 +68,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/${sub.slug}`,
       lastModified: reworkedLandingLastMod[sub.slug] ?? lastUpdated,
     }))
+
+  // Hub promocji + landingi. Wygasłe promocje zostają w mapie: podstrona nadal
+  // odpowiada 200 z komunikatem „oferta zakończona", więc nie chcemy jej wypisywać.
+  const promotionPages: MetadataRoute.Sitemap = [
+    { url: `${baseUrl}/promocje`, lastModified: new Date('2026-08-21') },
+    ...PROMOTIONS.map((promo) => ({
+      url: `${baseUrl}/promocje/${promo.slug}`,
+      lastModified: new Date('2026-08-21'),
+    })),
+  ]
 
   const guidePages: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/poradnik`, lastModified: lastUpdated },
@@ -168,6 +179,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...staticPages,
+    ...promotionPages,
     ...brandPillarPages,
     ...subcategoryPages,
     ...brandCategoryPages,
