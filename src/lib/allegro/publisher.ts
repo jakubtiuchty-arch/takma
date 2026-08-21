@@ -127,14 +127,32 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
   const COLLISION =
     /GTIN|225693|Existing Product related to submitted data|does not match the existing parameter|does not match the existing product category/i
 
-  // Ponów bez EAN jako SZKIC (zwraca [res, forcedDraft]).
+  // Ostatnia deska ratunku: bez EAN i z własną nazwą katalogową, jako SZKIC. Bez EAN-u
+  // Allegro nie pozwala aktywować oferty, ale przynajmniej nie wpada w cudzy wpis.
   const retryWithoutEan = async (m: 'POST' | 'PATCH', pa: string) => {
     const draft = buildOfferPayload({
       kind, product, variant, price, images, services, ean: undefined, available, gpsr, active: false,
+      uniqueCatalogName: true,
     })
     payload = draft
     return send(draft, m, pa)
   }
+
+  // Ponów z WŁASNĄ nazwą produktu katalogowego (z PN na końcu). Dotyczy kolizji, w której
+  // Allegro dopasowało nasz produkt do cudzego wpisu o innym „Kodzie producenta" — wtedy
+  // ani EAN, ani jego brak nie pomagają, bo dopasowanie idzie po nazwie. Zachowujemy EAN,
+  // więc oferta może zostać AKTYWNA (Allegro wymaga GTIN do aktywacji).
+  const retryUniqueCatalogName = async (m: 'POST' | 'PATCH', pa: string) => {
+    const unique = buildOfferPayload({
+      kind, product, variant, price, images, services, ean, available, gpsr, active,
+      uniqueCatalogName: true,
+    })
+    payload = unique
+    return send(unique, m, pa)
+  }
+
+  /** Kolizja nazwy z cudzym wpisem katalogowym — rozwiązywalna własną nazwą produktu. */
+  const NAME_COLLISION = /does not match the existing parameter/i
 
   try {
     let res: AllegroOfferResponse
@@ -148,16 +166,26 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
         try {
           res = await send(payload, 'POST', '/sale/product-offers')
         } catch (e2) {
-          if (ean && COLLISION.test((e2 as Error).message)) {
+          const m2 = (e2 as Error).message
+          if (NAME_COLLISION.test(m2)) {
+            res = await retryUniqueCatalogName('POST', '/sale/product-offers')
+          } else if (ean && COLLISION.test(m2)) {
             res = await retryWithoutEan('POST', '/sale/product-offers')
             forcedDraft = true
           } else {
             throw e2
           }
         }
-      } else if (ean && COLLISION.test(m1)) {
-        res = await retryWithoutEan(method, path)
-        forcedDraft = true
+      } else if (COLLISION.test(m1) || NAME_COLLISION.test(m1)) {
+        // Najpierw własna nazwa produktu katalogowego Z EAN-em — tylko taka oferta może
+        // być AKTYWNA. Dopiero gdy i to odpadnie, schodzimy do szkicu bez EAN.
+        try {
+          res = await retryUniqueCatalogName(method, path)
+        } catch (e3) {
+          if (!ean) throw e3
+          res = await retryWithoutEan(method, path)
+          forcedDraft = true
+        }
       } else {
         throw e1
       }

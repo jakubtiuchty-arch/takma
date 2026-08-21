@@ -49,6 +49,25 @@ export function buildOfferName(product: Product, variant: ProductVariant): strin
   return base.slice(0, MAX_NAME).replace(/\s+\S*$/, '').trim()
 }
 
+/**
+ * Nazwa produktu KATALOGOWEGO z numerem katalogowym na końcu.
+ *
+ * Allegro dopasowuje nowy produkt do katalogu po nazwie w obrębie kategorii. Nasze
+ * nazwy wariantów („Etykiety termiczne Zebra Z-Select 2000D 102×152 mm") trafiają
+ * w produkty założone przez innych sprzedawców, które mają w polu „Kod producenta"
+ * inną wartość — Allegro odrzuca wtedy ofertę błędem 422 „does not match the existing
+ * parameter value". Numer katalogowy w nazwie rozróżnia warianty (te same wymiary
+ * bywają w kilku PN, różniących się liczbą etykiet w rolce) i pozwala założyć własny,
+ * poprawny wpis katalogowy — z naszym GTIN, więc oferta może być od razu aktywna.
+ */
+export function buildCatalogProductName(product: Product, variant: ProductVariant): string {
+  const suffix = ` ${variant.partNumber}`
+  const base = `${product.name} ${variantSizeLabel(variant)}`.replace(/\s+/g, ' ').trim()
+  const room = MAX_NAME - suffix.length
+  const head = base.length <= room ? base : base.slice(0, room).replace(/\s+\S*$/, '').trim()
+  return `${head}${suffix}`
+}
+
 export interface AllegroOfferPayload {
   name: string
   productSet: Array<{
@@ -201,6 +220,8 @@ export interface BuildOfferInput {
   gpsr?: GpsrFields
   /** true → publikuj od razu jako ACTIVE; false → szkic (INACTIVE). */
   active?: boolean
+  /** true → nazwa produktu katalogowego z PN (obejście kolizji z cudzym wpisem). */
+  uniqueCatalogName?: boolean
 }
 
 /** Buduje payload draftu oferty dla taśmy (17254) lub etykiety (17255). */
@@ -215,14 +236,16 @@ export function buildOfferPayload({
   ean,
   gpsr = {},
   active = false,
+  uniqueCatalogName = false,
 }: BuildOfferInput): AllegroOfferPayload {
   const name = buildOfferName(product, variant)
+  const productName = uniqueCatalogName ? buildCatalogProductName(product, variant) : name
   return {
     name,
     productSet: [
       {
         product: {
-          name,
+          name: productName,
           category: { id: ALLEGRO_CATEGORY[kind] },
           parameters: [
             { id: ALLEGRO_PARAM.producent, valuesIds: [ALLEGRO_DICT.producentZebra] },
