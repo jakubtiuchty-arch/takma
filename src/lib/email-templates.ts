@@ -207,19 +207,35 @@ function emailTotalBox(lines: { label: string; value: string; bold?: boolean }[]
   return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:16px 0"><tr><td style="padding:16px;background-color:#f0f9ff;border-radius:8px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0">${rows}</table></td></tr></table>`
 }
 
-function emailButton(text: string, url: string, color: string = '#1e40af'): string {
+/**
+ * Przycisk w mailu. `size: 'lg'` daje wariant „nie do przeoczenia" — większy tekst,
+ * szeroki obszar klikalny i cień. Animacji celowo nie ma: Gmail wycina `@keyframes`,
+ * a Outlook renderuje przycisk przez VML, więc ruch i tak zobaczyłaby garstka
+ * odbiorców — zamiast tego bierzemy rozmiarem i kontrastem.
+ */
+function emailButton(
+  text: string,
+  url: string,
+  color: string = '#1e40af',
+  size: 'md' | 'lg' = 'md',
+): string {
+  const lg = size === 'lg'
+  const pad = lg ? '18px 44px' : '12px 32px'
+  const font = lg ? '18px' : '15px'
+  const radius = lg ? '10px' : '8px'
+  const shadow = lg ? `box-shadow:0 6px 16px -4px ${color}80;` : ''
   return `
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:24px 0">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:${lg ? '28px 0 24px' : '24px 0'}">
                 <tr>
                   <td align="center">
                     <!--[if mso]>
-                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${url}" style="height:44px;v-text-anchor:middle;width:260px;" arcsize="18%" strokecolor="${color}" fillcolor="${color}">
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${url}" style="height:${lg ? 58 : 44}px;v-text-anchor:middle;width:${lg ? 320 : 260}px;" arcsize="18%" strokecolor="${color}" fillcolor="${color}">
                       <w:anchorlock/>
-                      <center style="color:#ffffff;font-family:sans-serif;font-size:15px;font-weight:bold;">${esc(text)}</center>
+                      <center style="color:#ffffff;font-family:sans-serif;font-size:${font};font-weight:bold;">${esc(text)}</center>
                     </v:roundrect>
                     <![endif]-->
                     <!--[if !mso]><!-->
-                    <a href="${url}" target="_blank" style="display:inline-block;padding:12px 32px;background-color:${color};color:#ffffff;font-size:15px;font-weight:600;text-decoration:none;border-radius:8px;line-height:1.2">${esc(text)}</a>
+                    <a href="${url}" target="_blank" style="display:inline-block;padding:${pad};background-color:${color};color:#ffffff;font-size:${font};font-weight:${lg ? '700' : '600'};text-decoration:none;border-radius:${radius};line-height:1.2;${shadow}">${esc(text)}</a>
                     <!--<![endif]-->
                   </td>
                 </tr>
@@ -755,15 +771,9 @@ export function buildQuoteEmail(data: {
           { label: 'Warunki p&#322;atno&#347;ci', value: esc(data.paymentTerms) },
           { label: 'Termin dostawy', value: esc(data.deliveryTerms) },
         ]) +
-        (data.orderUrl
-          ? emailText(
-              'Je&#347;li oferta jest do przyj&#281;cia, zam&#243;wienie mo&#380;na z&#322;o&#380;y&#263; ' +
-              'bezpo&#347;rednio st&#261;d — poni&#380;szy przycisk otwiera koszyk z powy&#380;szymi ' +
-              'pozycjami w cenach z tej wyceny.',
-            // uwaga: emailButton sam escapuje etykietę — tu podajemy czysty tekst,
-            // inaczej encje wychodzą podwójnie zakodowane („Zam&#243;w")
-            ) + emailButton('Zamów w cenach z oferty', data.orderUrl, '#15803d')
-          : '') +
+        // uwaga: emailButton sam escapuje etykietę — tu podajemy czysty tekst,
+        // inaczej encje wychodzą podwójnie zakodowane („Zam&#243;w")
+        (data.orderUrl ? emailButton('Zamów w cenach z oferty', data.orderUrl, '#15803d', 'lg') : '') +
         (data.notes ? emailInfoAmber(esc(data.notes)) : '') +
         emailSignature()
       ),
