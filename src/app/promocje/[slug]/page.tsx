@@ -121,6 +121,10 @@ export default async function PromotionPage({ params }: { params: Promise<{ slug
       {/* Produkty w promocji */}
       {promo.products && promo.products.length > 0 && (
         <section className="container-main py-12 lg:py-16">
+          {/* Urządzenia są wsunięte w lewo, więc siatka nie dochodzi do prawej krawędzi
+              kontenera i blok wygląda na przyklejony do lewej. Przesuwamy całą sekcję
+              (razem z nagłówkami), żeby lewa krawędź kafli i tytułów była wspólna. */}
+          <div className="sm:pl-[60px]">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Modele objęte promocją</h2>
           {promotionProductGroups(promo).map((group) => (
           <div key={group.label ?? 'all'} className="mb-8 last:mb-0">
@@ -195,6 +199,7 @@ export default async function PromotionPage({ params }: { params: Promise<{ slug
             </div>
           </div>
           ))}
+          </div>
         </section>
       )}
 
