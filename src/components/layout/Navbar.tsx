@@ -199,7 +199,7 @@ export default function Navbar() {
         )}
       >
         {/* Top bar - desktop only */}
-        <div className="hidden lg:block bg-gray-900 text-white text-sm">
+        <div className="hidden xl:block bg-gray-900 text-white text-sm">
           <div className="container-main flex items-center justify-between py-1.5">
             <p className="text-gray-300">
               <span className="text-primary-400 font-medium">25 lat</span> doświadczenia na rynku AutoID
@@ -220,21 +220,25 @@ export default function Navbar() {
 
         {/* Main navbar */}
         <nav className="container-main">
-          <div className="flex items-center justify-between h-16 lg:h-16">
+          <div className="flex items-center justify-between h-16 xl:h-16">
             {/* Logo */}
-            <Link href="/" className="flex items-center shrink-0 -ml-1 lg:-ml-3">
+            <Link href="/" className="flex items-center shrink-0 -ml-1 xl:-ml-3">
               <Image
                 src="/images/takma_logo.png"
                 alt="TAKMA"
                 width={568}
                 height={225}
-                className="h-14 lg:h-16 w-auto"
+                className="h-14 xl:h-16 w-auto"
                 priority
               />
             </Link>
 
             {/* Desktop navigation */}
-            <div className="hidden lg:flex items-center justify-center flex-1 gap-6">
+            {/* Jedenaście pozycji nie mieści się poniżej 1280 px (brakuje ~165 px nawet
+                bez odstępów), dlatego pełne menu startuje dopiero od xl — niżej hamburger.
+                Kontener ma stałą szerokość maksymalną, więc szersze odstępy nie dodają
+                powietrza, tylko zjadają margines przy logo i ikonach. */}
+            <div className="hidden xl:flex items-center justify-center flex-1 gap-4 px-4">
               {navigation.map((item) => {
                 const isActive = item.href === '/' 
                   ? pathname === item.href 
@@ -375,7 +379,7 @@ export default function Navbar() {
             </div>
 
             {/* Desktop RFQ only */}
-            <div className="hidden lg:flex items-center shrink-0 gap-1">
+            <div className="hidden xl:flex items-center shrink-0 gap-1 pl-2 border-l border-gray-200">
               <Link
                 href="/panel"
                 className="p-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-colors"
@@ -387,7 +391,7 @@ export default function Navbar() {
             </div>
 
             {/* Mobile actions */}
-            <div className="flex lg:hidden items-center gap-2">
+            <div className="flex xl:hidden items-center gap-2">
               <button
                 onClick={() => setIsMobileSearchOpen(!isMobileSearchOpen)}
                 className="p-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors"
@@ -416,14 +420,14 @@ export default function Navbar() {
 
           {/* Mobile search bar */}
           {isMobileSearchOpen && (
-            <div className="lg:hidden py-3 border-t border-gray-100 animate-slide-in-up">
+            <div className="xl:hidden py-3 border-t border-gray-100 animate-slide-in-up">
               <SearchBar fullWidth onSearch={() => setIsMobileSearchOpen(false)} />
             </div>
           )}
         </nav>
 
         {/* Sub-header: Search bar — desktop only, always visible */}
-        <div className="hidden lg:block border-t border-gray-100 bg-gray-50/80">
+        <div className="hidden xl:block border-t border-gray-100 bg-gray-50/80">
           <div className="container-main py-2 flex justify-center">
             <div className="w-full max-w-xl">
               <SearchBar fullWidth />
@@ -433,7 +437,7 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden bg-white border-t border-gray-100 animate-slide-in-up overflow-y-auto max-h-[calc(100vh-4rem)]">
+          <div className="xl:hidden bg-white border-t border-gray-100 animate-slide-in-up overflow-y-auto max-h-[calc(100vh-4rem)]">
             <nav className="container-main py-4">
               <ul className="space-y-1">
                 {navigation.map((item) => {
@@ -513,7 +517,7 @@ export default function Navbar() {
       </header>
 
       {/* Spacer dla fixed navbar: top bar (32px) + main nav (64px) + sub-header search (52px) */}
-      <div className="h-16 lg:h-[148px]" />
+      <div className="h-16 xl:h-[148px]" />
     </>
   )
 }
