@@ -151,7 +151,7 @@ export default function QuoteActions({ quoteId, quoteNumber, status, hasEmail }:
             <div className="space-y-2">
               <p className="text-xs text-gray-600">
                 Skasować ofertę <strong>{quoteNumber}</strong> razem z pozycjami? Link
-                „zamów z oferty" z wysłanego maila przestanie działać.
+                „zamów z oferty&rdquo; z wysłanego maila przestanie działać.
               </p>
               <div className="flex gap-2">
                 <button
