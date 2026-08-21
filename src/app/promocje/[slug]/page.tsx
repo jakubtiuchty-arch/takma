@@ -258,9 +258,6 @@ export default async function PromotionPage({ params }: { params: Promise<{ slug
                 buttonClassName="w-full inline-flex items-center justify-center gap-2.5 rounded-xl px-6 py-4 text-[15px] font-bold whitespace-nowrap transition-all duration-200 hover:brightness-95 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-950"
                 buttonStyle={{ background: promo.accent.base, color: promo.accent.on }}
               />
-              {promo.cta.note && (
-                <p className="mt-3 text-[12px] leading-relaxed text-white/50">{promo.cta.note}</p>
-              )}
             </div>
           </div>
         </div>

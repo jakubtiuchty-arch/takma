@@ -76,7 +76,6 @@ export interface Promotion {
     initialMessage: string
     productName: string
     productSlug: string
-    note?: string
   }
   /** dodatkowe linki pod treścią */
   links?: { title: string; href: string }[]
@@ -125,7 +124,6 @@ export const PROMOTIONS: Promotion[] = [
       productSlug: 'promocja-zebra-urzadzenia',
       initialMessage:
         'Dzień dobry, proszę o ofertę na urządzenia Zebra w cenach promocyjnych. Interesujące mnie modele i liczba sztuk: ',
-      note: 'Odpowiadamy w ciągu jednego dnia roboczego.',
     },
     links: [
       { title: 'Skanery kodów kreskowych', href: '/skanery-kodow-kreskowych' },
@@ -174,7 +172,6 @@ export const PROMOTIONS: Promotion[] = [
       productSlug: 'promocja-materialy',
       initialMessage:
         'Dzień dobry, chcę skorzystać z promocji Zebra na materiały eksploatacyjne. Numer seryjny mojej drukarki: ',
-      note: 'Wycenę odsyłamy w ciągu jednego dnia roboczego.',
     },
     links: [
       { title: 'Etykiety termiczne Zebra', href: '/etykiety-termiczne-zebra' },
@@ -225,7 +222,6 @@ export const PROMOTIONS: Promotion[] = [
       productSlug: 'program-glowice',
       initialMessage:
         'Dzień dobry, chcę sprawdzić, czy moja firma kwalifikuje się do programu bezpłatnych wymian głowic Zebra.\nModele i numery seryjne drukarek: \nSzacunkowe roczne zużycie etykiet i taśm: ',
-      note: 'Zgłoszenie nie jest zobowiązaniem — najpierw sprawdzamy, czy program się opłaca.',
     },
     links: [
       { title: 'Głowice do drukarek Zebra', href: 'https://www.serwis-zebry.pl/sklep' },
@@ -275,7 +271,6 @@ export const PROMOTIONS: Promotion[] = [
       productSlug: 'promocja-tsc-wymiana',
       initialMessage:
         'Dzień dobry, chcę wymienić starą drukarkę etykiet na nową TSC.\nObecna drukarka (marka i model): \nSzerokość druku i przewidywany wolumen: ',
-      note: 'Wycenę z wysokością zwrotu odsyłamy w ciągu jednego dnia roboczego.',
     },
     links: [
       { title: 'Drukarki etykiet TSC', href: '/drukarki-etykiet-tsc' },
