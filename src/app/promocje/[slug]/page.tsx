@@ -166,7 +166,8 @@ export default async function PromotionPage({ params }: { params: Promise<{ slug
                       className={`pointer-events-none absolute right-0 h-auto object-contain object-bottom drop-shadow-[0_12px_24px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:scale-105 ${
                         wide
                           ? 'w-36 sm:w-60 max-h-[86%] -bottom-2'
-                          : 'w-24 sm:w-40 max-h-[88%] bottom-3'
+                          // skaner jest wąski i wysoki — wsuwamy go 30% szerokości w głąb kafla
+                          : 'w-24 sm:w-40 max-h-[88%] bottom-3 -translate-x-[30%]'
                       }`}
                     />
                   )}
