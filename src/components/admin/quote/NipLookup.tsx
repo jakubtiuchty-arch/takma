@@ -1,12 +1,45 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useQuoteStore } from '@/store/quoteStore'
 
 export default function NipLookup() {
   const { client, setClient } = useQuoteStore()
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+  const [historyInfo, setHistoryInfo] = useState('')
+  /** NIP-y już sprawdzone w historii — żeby nie odpytywać w kółko przy każdym znaku. */
+  const checkedNips = useRef(new Set<string>())
+
+  // Klient wraca po kolejną ofertę: po wpisaniu 10 cyfr dociągamy jego dane
+  // z ostatniej wyceny. Uzupełniamy tylko puste pola — tego, co handlowiec
+  // zdążył wpisać ręcznie, nie nadpisujemy.
+  useEffect(() => {
+    const nip = (client.nip ?? '').replace(/\D/g, '')
+    if (nip.length !== 10 || checkedNips.current.has(nip)) return
+
+    const timer = setTimeout(async () => {
+      checkedNips.current.add(nip)
+      try {
+        const res = await fetch(`/api/admin/klient-nip?nip=${nip}`)
+        if (!res.ok) return
+        const data = await res.json()
+        if (!data.found) return
+
+        const current = useQuoteStore.getState().client
+        const filled: Record<string, string> = {}
+        for (const key of ['company', 'contact', 'email', 'phone', 'address'] as const) {
+          if (!current[key] && data.client[key]) filled[key] = data.client[key]
+        }
+        if (Object.keys(filled).length > 0) setClient(filled)
+        setHistoryInfo(`Dane uzupełnione z ${data.sourceLabel}`)
+      } catch {
+        // brak sieci — handlowiec i tak może wpisać ręcznie albo pobrać z GUS
+      }
+    }, 500)
+
+    return () => clearTimeout(timer)
+  }, [client.nip, setClient])
 
   const lookupNip = async () => {
     const nip = client.nip?.replace(/-/g, '')
@@ -66,6 +99,7 @@ export default function NipLookup() {
         </div>
       </div>
       {error && <p className="text-xs text-red-600">{error}</p>}
+      {historyInfo && !error && <p className="text-xs text-green-700">{historyInfo}</p>}
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <div className="md:col-span-2">
