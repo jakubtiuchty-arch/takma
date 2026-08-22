@@ -183,45 +183,45 @@ export const PROMOTIONS: Promotion[] = [
     slug: 'zebra-glowice-bez-kosztow',
     brandId: 'zebra',
     accent: ACCENT_ZEBRA,
-    title: 'Bezpłatne wymiany głowic drukujących — program Zebry dla stałych klientów',
-    hubTitle: 'Bezpłatne wymiany głowic',
+    title: 'Bezpłatna wymiana głowic drukujących w ramach programu Zebra',
+    hubTitle: 'Bezpłatna wymiana głowic',
     seoTitle: 'Bezpłatne wymiany głowic w drukarkach Zebra — program producenta',
     seoDescription:
-      'Firmy drukujące na oryginalnych materiałach Zebry otrzymują bezpłatne głowice zamienne. Drukarki nie trzeba nigdzie odsyłać, a nową głowicę wysyłamy zwykle w ciągu pięciu dni roboczych.',
+      'Przedsiębiorstwa stosujące oryginalne materiały Zebra otrzymują głowice zamienne bez opłat. Drukarka pozostaje na stanowisku pracy, a głowicę wysyłamy zwykle w ciągu pięciu dni roboczych.',
     lead:
-      'Głowica drukująca zużywa się i jest najdroższym elementem eksploatacyjnym drukarki: w naszym sklepie kosztuje od około 500 zł w modelach biurkowych do blisko 7 000 zł w przemysłowych, a przeciętna wymiana to wydatek rzędu 2 300 zł. W programie producenta ten koszt pokrywa Zebra — pod warunkiem, że drukujesz na jej oryginalnych materiałach.',
+      'Głowica drukująca jest najdroższym elementem eksploatacyjnym drukarki etykiet. Jej cena wynosi od około 500 zł w urządzeniach biurkowych do blisko 7 000 zł w przemysłowych, a przeciętna wymiana stanowi wydatek rzędu 2 300 zł. W programie producenta koszt ten pokrywa Zebra, pod warunkiem stosowania jej oryginalnych materiałów eksploatacyjnych.',
     hubExcerpt:
-      'Zebra pokrywa koszt głowic zamiennych firmom, które kupują jej oryginalne etykiety i taśmy. Drukarki nie trzeba odsyłać do serwisu.',
+      'Zebra pokrywa koszt głowic zamiennych przedsiębiorstwom nabywającym jej oryginalne etykiety i taśmy. Drukarka pozostaje na stanowisku pracy.',
     endDate: '2026-12-31',
     badge: 'program producenta',
     cardImage: '/images/promo-card-glowice.webp',
     cards: [
       {
-        title: 'Na czym polega',
-        body: 'Zgłaszamy firmę do programu, podając modele drukarek oraz przewidywane roczne zużycie materiałów. Na tej podstawie Zebra przyznaje pulę głowic na 12 miesięcy. Gdy głowica się zużyje, otrzymujesz nową bezpłatnie — aż do wyczerpania przyznanej puli.',
+        title: 'Zasady programu',
+        body: 'Zgłoszenie obejmuje modele użytkowanych drukarek oraz prognozowane roczne zużycie materiałów eksploatacyjnych. Na tej podstawie producent przyznaje przedsiębiorstwu pulę głowic na okres dwunastu miesięcy. Wymiana zużytej głowicy następuje bez opłat, aż do wyczerpania przyznanego limitu.',
       },
       {
-        title: 'Warunek',
-        body: 'Firma deklaruje dwie rzeczy: że drukuje wyłącznie na oryginalnych materiałach Zebry kupowanych u nas oraz że zużyte głowice trafiają do utylizacji. Na tym opiera się cały program: certyfikowane etykiety i taśmy są dobrane do głowic Zebry i zużywają je znacznie wolniej niż tańsze zamienniki.',
+        title: 'Warunki uczestnictwa',
+        body: 'Uczestnik zobowiązuje się do stosowania wyłącznie oryginalnych materiałów Zebra nabywanych za naszym pośrednictwem oraz do przekazywania zużytych głowic do utylizacji. Podstawą programu jest zgodność materiału z głowicą: certyfikowane etykiety i taśmy powodują wolniejsze zużycie elementu grzejnego niż tańsze zamienniki.',
       },
       {
-        title: 'Dla kogo',
-        body: 'Program jest przeznaczony dla firm o regularnym, większym zużyciu etykiet i taśm — zakłada minimalny poziom rocznych zakupów materiałów, w przybliżeniu równowartość 5 000 EUR w cenach katalogowych Zebry. Kwalifikację sprawdzamy przed zgłoszeniem, a producent może później poprosić o potwierdzenie, że zadeklarowany poziom zakupów rzeczywiście został osiągnięty.',
+        title: 'Kryteria kwalifikacji',
+        body: 'Program adresowany jest do przedsiębiorstw o regularnym, wysokim zużyciu etykiet i taśm. Warunkiem przystąpienia jest minimalny roczny poziom zakupów materiałów, odpowiadający równowartości około 5 000 EUR w cenach katalogowych producenta. Kwalifikację weryfikujemy przed zgłoszeniem, a Zebra zastrzega sobie prawo do potwierdzenia zadeklarowanego poziomu zakupów po zakończeniu okresu rozliczeniowego.',
       },
     ],
-    stepsHeading: 'Jak to działa w praktyce',
+    stepsHeading: 'Przebieg zgłoszenia',
     steps: [
-      'Kontaktujesz się z nami, a my ustalamy model i numer seryjny każdej drukarki, używane etykiety i taśmy oraz szacunkowe zużycie materiałów w skali roku.',
-      'Rejestrujemy firmę w programie u producenta. Zebra odpowiada zwykle w ciągu trzech dni roboczych i określa pulę głowic na najbliższe 12 miesięcy.',
-      'Kupujesz etykiety i taśmy tak jak dotąd, u nas. Gdy głowica się zużyje, zgłaszasz to nam, a nową wysyłamy zwykle w ciągu pięciu dni roboczych.',
-      'Drukarki nie trzeba nigdzie odsyłać. Głowicę wymienia się na miejscu, a jeśli wolisz, zrobi to nasz serwis.',
+      'Ustalamy model i numer seryjny każdej drukarki, stosowane etykiety i taśmy oraz prognozowane roczne zużycie materiałów.',
+      'Rejestrujemy przedsiębiorstwo w programie. Producent rozpatruje zgłoszenie zwykle w ciągu trzech dni roboczych i wyznacza pulę głowic na kolejnych dwanaście miesięcy.',
+      'Zakupy etykiet i taśm przebiegają bez zmian. Zużycie głowicy zgłasza się nam, a głowicę zamienną wysyłamy zwykle w ciągu pięciu dni roboczych.',
+      'Drukarka pozostaje na stanowisku pracy — wymiana odbywa się na miejscu, a na życzenie przeprowadza ją nasz serwis.',
     ],
     cta: {
       label: 'Sprawdź kwalifikację',
       productName: 'program bezpłatnych wymian głowic Zebra',
       productSlug: 'program-glowice',
       initialMessage:
-        'Dzień dobry, chcę sprawdzić, czy moja firma kwalifikuje się do programu bezpłatnych wymian głowic Zebra.\nModele i numery seryjne drukarek: \nSzacunkowe roczne zużycie etykiet i taśm: ',
+        'Dzień dobry, proszę o weryfikację, czy nasza firma kwalifikuje się do programu bezpłatnej wymiany głowic Zebra.\nModele i numery seryjne drukarek: \nPrognozowane roczne zużycie etykiet i taśm: ',
     },
     links: [
       { title: 'Głowice do drukarek Zebra', href: 'https://www.serwis-zebry.pl/sklep' },
