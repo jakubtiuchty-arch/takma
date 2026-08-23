@@ -184,3 +184,33 @@ export function trackFormSubmit(formName: string, formLocation?: string) {
     form_location: formLocation ?? 'unknown',
   })
 }
+
+// ── Doradca materiałów ────────────────────────────────────────
+// Cztery punkty lejka: ilu widzi bąbel, ilu otwiera, ilu pisze pierwsze
+// pytanie i ilu dodaje z rozmowy do koszyka. Bez tego nie da się odróżnić
+// „nikt nie klika" od „klikają, ale rozmowa nie pomaga".
+
+/** Bąbel doradcy pojawił się na stronie (raz na wyświetlenie strony). */
+export function trackAdvisorShown(pagePath: string) {
+  gtag('event', 'doradca_widoczny', { page_path: pagePath })
+}
+
+/** Klient rozwinął okno doradcy. */
+export function trackAdvisorOpened(pagePath: string, hadHistory: boolean) {
+  gtag('event', 'doradca_otwarty', { page_path: pagePath, wznowiona_rozmowa: hadHistory })
+}
+
+/** Pierwsze pytanie w rozmowie — moment realnego zaangażowania. */
+export function trackAdvisorFirstMessage(pagePath: string) {
+  gtag('event', 'doradca_pierwsze_pytanie', { page_path: pagePath })
+}
+
+/** Kolejne pytania — pokazują, czy rozmowa się toczy, czy urywa po jednym. */
+export function trackAdvisorMessage(pagePath: string, numerWiadomosci: number) {
+  gtag('event', 'doradca_pytanie', { page_path: pagePath, numer_wiadomosci: numerWiadomosci })
+}
+
+/** Doradca zaproponował produkt i klient dodał go do koszyka. */
+export function trackAdvisorAddToCart(productName: string, partNumber?: string) {
+  gtag('event', 'doradca_dodanie_do_koszyka', { item_name: productName, part_number: partNumber ?? '' })
+}

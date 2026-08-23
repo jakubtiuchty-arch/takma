@@ -1,12 +1,18 @@
 'use client'
 
 import { useState, useRef, useEffect, useCallback, type FormEvent } from 'react'
+import { usePathname } from 'next/navigation'
+import {
+  trackAdvisorShown, trackAdvisorOpened, trackAdvisorFirstMessage,
+  trackAdvisorMessage, trackAdvisorAddToCart,
+} from '@/lib/ga-events'
 import { useChat } from '@ai-sdk/react'
 import { DefaultChatTransport, type UIMessage } from 'ai'
 import { useCartStore } from '@/store/cartStore'
 import ChatInput from './ChatInput'
 
 const STORAGE_KEY = 'takma-doradca-messages'
+const TEASER_KEY = 'takma-doradca-zaczepka-do'
 const WELCOME =
   'Cześć! Jestem doradcą materiałów eksploatacyjnych. Pomogę dobrać etykiety i taśmy barwiące do Twojej drukarki i zastosowania.'
 
@@ -69,6 +75,7 @@ function CartButton({ item }: { item: CartPayload }) {
       image: item.image ?? undefined, partNumber: item.partNumber,
       priceNetto: item.priceNetto, categoryId: item.categoryId,
     })
+    trackAdvisorAddToCart(item.name, item.partNumber)
     if (item.quantity > 1) updateQuantity(item.id, item.quantity)
     openDrawer()
   }
@@ -110,8 +117,13 @@ function cartPayloads(m: UIMessage): CartPayload[] {
 }
 
 export default function MaterialsAdvisorWidget() {
+  const pathname = usePathname() ?? ''
   const [isOpen, setIsOpen] = useState(false)
   const [hasNew, setHasNew] = useState(false)
+  // Sam bąbel nie mówi, co potrafi — dlatego po chwili wychodzi z niego zaczepka
+  // z konkretnym pytaniem. Zwinięta znika na dobę (localStorage), żeby nie męczyć
+  // wracających. Kalkulator taśm pokazuje, że narzędzie z jasną obietnicą jest używane.
+  const [teaser, setTeaser] = useState(false)
   const [input, setInput] = useState('')
   const endRef = useRef<HTMLDivElement>(null)
 
@@ -155,6 +167,24 @@ export default function MaterialsAdvisorWidget() {
 
   useEffect(() => { endRef.current?.scrollIntoView({ behavior: 'smooth' }) }, [messages, status])
 
+  // Bąbel wszedł na stronę — punkt odniesienia dla wskaźnika otwarć.
+  useEffect(() => { trackAdvisorShown(pathname) }, [pathname])
+
+  useEffect(() => {
+    if (isOpen || messages.length > 0) return
+    try {
+      const do_ = Number(localStorage.getItem(TEASER_KEY) ?? 0)
+      if (Date.now() < do_) return
+    } catch { /* brak dostępu do storage — pokaż */ }
+    const t = setTimeout(() => setTeaser(true), 6000)
+    return () => clearTimeout(t)
+  }, [isOpen, messages.length])
+
+  const zamknijZaczepke = () => {
+    setTeaser(false)
+    try { localStorage.setItem(TEASER_KEY, String(Date.now() + 24 * 60 * 60 * 1000)) } catch { /* ignore */ }
+  }
+
   useEffect(() => {
     if (!isOpen && messages.length > 0 && messages[messages.length - 1].role === 'assistant') setHasNew(true)
   }, [messages, isOpen])
@@ -169,6 +199,9 @@ export default function MaterialsAdvisorWidget() {
     const text = input.trim()
     if (!text || isLoading) return
     setInput('')
+    const numer = messages.filter(m => m.role === 'user').length + 1
+    if (numer === 1) trackAdvisorFirstMessage(pathname)
+    trackAdvisorMessage(pathname, numer)
     sendMessage({ text })
   }
 
@@ -283,7 +316,31 @@ export default function MaterialsAdvisorWidget() {
         </div>
       )}
 
-      <button onClick={() => { setIsOpen(!isOpen); if (!isOpen) setHasNew(false) }} className="fixed bottom-4 right-4 z-50 w-16 h-16 rounded-full bg-gradient-to-b from-[#33B1EE] to-[#1377DB] text-white shadow-[0_8px_24px_rgba(19,119,219,0.45)] hover:shadow-[0_10px_30px_rgba(19,119,219,0.55)] hover:scale-105 transition-all flex items-center justify-center" aria-label={isOpen ? 'Zamknij doradcę' : 'Otwórz doradcę materiałów'}>
+      {teaser && !isOpen && (
+        <div className="fixed bottom-24 right-4 z-50 w-[268px] rounded-2xl bg-white p-4 shadow-[0_16px_40px_rgba(16,58,99,0.22)] border border-slate-200 animate-slide-in-up">
+          <button
+            onClick={zamknijZaczepke}
+            aria-label="Zamknij podpowiedź"
+            className="absolute top-2 right-2 p-1 text-gray-400 hover:text-gray-700"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M18 6L6 18" /><path d="M6 6l12 12" /></svg>
+          </button>
+          <p className="text-sm font-semibold text-gray-900 pr-4">Nie wiesz, jaka taśma do Twoich etykiet?</p>
+          <p className="text-[13px] text-gray-600 mt-1 leading-relaxed">Podaj model drukarki — dobiorę materiał i sprawdzę dostępność.</p>
+          <button
+            onClick={() => { trackAdvisorOpened(pathname, false); setTeaser(false); setIsOpen(true) }}
+            className="mt-3 w-full rounded-xl bg-[#1377DB] px-4 py-2 text-sm font-semibold text-white hover:brightness-95 transition"
+          >
+            Zapytaj doradcę
+          </button>
+        </div>
+      )}
+
+      <button onClick={() => {
+        if (!isOpen) { trackAdvisorOpened(pathname, messages.length > 0); setHasNew(false) }
+        setTeaser(false)
+        setIsOpen(!isOpen)
+      }} className="fixed bottom-4 right-4 z-50 w-16 h-16 rounded-full bg-gradient-to-b from-[#33B1EE] to-[#1377DB] text-white shadow-[0_8px_24px_rgba(19,119,219,0.45)] hover:shadow-[0_10px_30px_rgba(19,119,219,0.55)] hover:scale-105 transition-all flex items-center justify-center" aria-label={isOpen ? 'Zamknij doradcę' : 'Otwórz doradcę materiałów'}>
         {isOpen ? (
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6L6 18" /><path d="M6 6l12 12" /></svg>
         ) : (

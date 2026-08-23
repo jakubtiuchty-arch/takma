@@ -1,5 +1,6 @@
 import { streamText, stepCountIs } from 'ai'
 import { anthropic } from '@ai-sdk/anthropic'
+import { openai } from '@ai-sdk/openai'
 import { materialsTools } from '@/lib/ai/materials-tools'
 import { materialsSystemPrompt } from '@/lib/ai/materials-system-prompt'
 import { checkChatRateLimit, getClientIp } from '@/lib/spam-protection'
@@ -14,14 +15,28 @@ function logDoradca(row: { sessionId: string; role: string; content: string; ip?
 }
 
 export const runtime = 'nodejs'
-export const maxDuration = 30
+// Model rozumujący odpowiada w 13–20 s (sprawdzone), a przy dłuższej rozmowie i kilku
+// wywołaniach narzędzi potrafi dobić do pół minuty. Obniżenie wysiłku rozumowania
+// skracało czas, ale psuło jakość: model przestawał dobierać rozmiar i zaczynał dopytywać.
+export const maxDuration = 60
 
 const MAX_MESSAGE_LENGTH = 2000
 const MAX_MESSAGES = 20
-// Domyślnie Sonnet 4.6 — trzyma reguły jak Opus (czyste słownictwo dostępności, właściwe
-// użycie narzędzi), ~5× taniej niż Opus. Można zmienić w env (DORADCA_MODEL):
-// claude-haiku-4-5-20251001 (taniej, luźniej) lub claude-opus-4-8 (max jakość).
-const MODEL = process.env.DORADCA_MODEL || 'claude-sonnet-4-6'
+// Model wybiera zmienna DORADCA_MODEL — dostawca rozpoznawany po nazwie, więc powrót
+// do poprzedniego to zmiana jednej wartości w env, bez wdrożenia.
+//   gpt-5.6-sol / gpt-5.5 ...  → OpenAI (przez API Responses; w /v1/chat/completions
+//                                ten model odmawia obsługi narzędzi)
+//   claude-sonnet-4-6 ...      → Anthropic (cache promptu systemowego)
+const MODEL = process.env.DORADCA_MODEL || 'gpt-5.6-sol'
+const CZY_OPENAI = /^(gpt|o[34])/.test(MODEL)
+
+/** Prompt systemowy: przy Anthropic cache'owany, u OpenAI zwykły blok. */
+function wiadomoscSystemowa() {
+  const base = { role: 'system' as const, content: materialsSystemPrompt() }
+  return CZY_OPENAI
+    ? base
+    : { ...base, providerOptions: { anthropic: { cacheControl: { type: 'ephemeral' as const } } } }
+}
 
 function extractText(parts: Array<{ type: string; text?: string }>): string {
   return parts.filter(p => p.type === 'text' && p.text).map(p => p.text!).join('')
@@ -69,19 +84,12 @@ export async function POST(request: Request) {
     if (lastUser) logDoradca({ sessionId, role: 'user', content: lastUser.content, ip })
 
     const result = streamText({
-      model: anthropic(MODEL),
+      model: CZY_OPENAI ? openai.responses(MODEL) : anthropic(MODEL),
       onFinish: ({ text }) => { if (text) logDoradca({ sessionId, role: 'assistant', content: text, ip }) },
       // System jako PIERWSZA wiadomość z cacheControl na bloku — tak Anthropic faktycznie
       // cache'uje stały prefiks (persona + indeks katalogu). Kolejne kroki tej samej rozmowy
       // czytają go ~10× taniej zamiast płacić pełną stawkę za każdym razem.
-      messages: [
-        {
-          role: 'system' as const,
-          content: materialsSystemPrompt(),
-          providerOptions: { anthropic: { cacheControl: { type: 'ephemeral' as const } } },
-        },
-        ...modelMessages,
-      ],
+      messages: [wiadomoscSystemowa(), ...modelMessages],
       tools: materialsTools,
       // Limit kroków — balans między kompletnością odpowiedzi (Haiku robi krok/narzędzie)
       // a kosztem (każdy krok przetwarza kontekst od nowa).
