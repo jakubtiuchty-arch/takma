@@ -12,18 +12,30 @@ export default async function DoradcaLogsPage() {
     take: 600,
   })
 
-  // Grupowanie po sesji; sesje sortowane wg najnowszej wiadomości.
+  // Grupowanie po sesji ORAZ po przerwie w czasie. Identyfikator rozmowy wygasa
+  // dziś po 4 godzinach bezczynności, ale starsze wpisy pochodzą z czasów, gdy żył
+  // bezterminowo — bez tego cięcia kilkanaście rozmów z dwóch miesięcy pokazywało
+  // się jako jedna pozycja.
+  const PRZERWA_MS = 4 * 60 * 60 * 1000
   const bySession = new Map<string, typeof logs>()
-  for (const l of logs) {
-    const arr = bySession.get(l.sessionId) ?? []
+  const rosnaco = [...logs].sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime())
+  const ostatniaWSesji = new Map<string, { klucz: string; czas: number }>()
+  for (const l of rosnaco) {
+    const poprzednia = ostatniaWSesji.get(l.sessionId)
+    const nowaRozmowa = !poprzednia || l.createdAt.getTime() - poprzednia.czas > PRZERWA_MS
+    const klucz = nowaRozmowa
+      ? `${l.sessionId}#${l.createdAt.toISOString()}`
+      : poprzednia!.klucz
+    ostatniaWSesji.set(l.sessionId, { klucz, czas: l.createdAt.getTime() })
+    const arr = bySession.get(klucz) ?? []
     arr.push(l)
-    bySession.set(l.sessionId, arr)
+    bySession.set(klucz, arr)
   }
   const sessions = Array.from(bySession.entries())
     .map(([sessionId, rows]) => ({
       sessionId,
       rows: [...rows].sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime()),
-      last: rows[0].createdAt, // logs były desc, więc rows[0] = najnowszy
+      last: rows[rows.length - 1].createdAt,
       ip: rows.find(r => r.ip)?.ip ?? null,
     }))
     .sort((a, b) => b.last.getTime() - a.last.getTime())

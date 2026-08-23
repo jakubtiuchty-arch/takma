@@ -137,14 +137,23 @@ export default function MaterialsAdvisorWidget() {
   }, [])
 
   // Stabilny identyfikator rozmowy (do grupowania logów w /admin).
+  // Identyfikator rozmowy wygasa po 4 godzinach bezczynności. Wcześniej żył w
+  // localStorage bezterminowo, więc ta sama przeglądarka po tygodniach dostawała
+  // ten sam identyfikator i panel sklejał kilkanaście osobnych rozmów w jedną
+  // pozycję z datą ostatniej wiadomości.
   const sessionId = useRef<string>('')
   if (!sessionId.current && typeof window !== 'undefined') {
+    const PRZERWA_MS = 4 * 60 * 60 * 1000
     try {
+      const teraz = Date.now()
+      const ostatnia = Number(localStorage.getItem('takma-doradca-session-ts') ?? 0)
       let id = localStorage.getItem('takma-doradca-session')
-      if (!id) {
-        id = (window.crypto?.randomUUID?.() ?? `${Date.now()}-${Math.random().toString(36).slice(2)}`)
+      if (!id || teraz - ostatnia > PRZERWA_MS) {
+        id = (window.crypto?.randomUUID?.() ?? `${teraz}-${Math.random().toString(36).slice(2)}`)
         localStorage.setItem('takma-doradca-session', id)
+        localStorage.removeItem(STORAGE_KEY)   // nowa rozmowa zaczyna się od czystej karty
       }
+      localStorage.setItem('takma-doradca-session-ts', String(teraz))
       sessionId.current = id
     } catch { sessionId.current = `${Date.now()}` }
   }
@@ -199,6 +208,7 @@ export default function MaterialsAdvisorWidget() {
     const text = input.trim()
     if (!text || isLoading) return
     setInput('')
+    try { localStorage.setItem('takma-doradca-session-ts', String(Date.now())) } catch { /* ignore */ }
     const numer = messages.filter(m => m.role === 'user').length + 1
     if (numer === 1) trackAdvisorFirstMessage(pathname)
     trackAdvisorMessage(pathname, numer)
