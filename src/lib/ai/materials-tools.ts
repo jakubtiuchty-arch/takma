@@ -75,7 +75,7 @@ export const searchMaterials = tool({
         name: m.s.title,
         url: m.url,
         tagline: stripMarkdown(m.s.tagline ?? ''),
-        priceFrom: m.s.priceFrom ?? null,
+        priceOrientacyjna: m.s.priceFrom ?? null,
         foodSafe: m.s.foodSafe === true,
         applications: (m.s.applications ?? []).slice(0, 4),
       })),
@@ -98,7 +98,7 @@ export const getMaterialSeries = tool({
       name: s.title,
       url: m.url,
       positioning: s.positioning,
-      priceFrom: s.priceFrom ?? null,
+      priceOrientacyjna: s.priceFrom ?? null,
       description: stripMarkdown(s.heroIntro ?? s.tagline ?? ''),
       techSpecs: (s.techSpecs ?? []).map((t: { label: string; value: string }) => ({ label: t.label, value: t.value })),
       certifications: (s.certifications ?? []).map((c: { name: string }) => c.name),
@@ -147,17 +147,28 @@ export const findClosestSize = tool({
           partNumber: v.partNumber,
           size: `${d.w}×${d.h} mm`,
           distance: Math.round((Math.abs(d.w - width) + Math.abs(d.h - height)) * 10) / 10,
-          availability: v.availability,
         }
       })
       .filter((x): x is NonNullable<typeof x> => x !== null)
       .sort((a, b) => a.distance - b.distance)
       .slice(0, limit ?? 5)
     if (ranked.length === 0) return { error: 'Brak wariantów z rozpoznawalnym rozmiarem.' }
+    // Dostępność i cena WYŁĄCZNIE z żywego stanu. Pole `availability` w katalogu bywa
+    // zamrożone na „on-order", a `priceFrom` potrafi być kilkanaście razy wyższe od
+    // bieżącej ceny — doradca cytował te wartości klientom jako aktualne.
+    const zeStanem = await Promise.all(ranked.map(async r => {
+      const live = await liveStock(r.partNumber)
+      const dostepna = !!live && (live.stockPL > 0 || live.stockEU > 0)
+      return {
+        ...r,
+        status: live ? (dostepna ? 'Dostępna' : 'Niedostępna') : 'Nie sprawdzono',
+        price: live?.price ?? null,
+      }
+    }))
     return {
       series: m.s.title,
       requested: `${width}×${height} mm`,
-      closest: ranked,
+      closest: zeStanem,
       note: 'Polecaj wariant o najmniejszej wartości distance. distance=0 oznacza dokładne trafienie.',
     }
   },
@@ -209,7 +220,8 @@ export const checkMaterialStock = tool({
     return {
       partNumber,
       name: `${product?.name ?? ''} ${variant.name}`.trim(),
-      price: live?.price ?? variant.priceFrom ?? null,
+      // Bez żywej ceny lepiej nie podawać żadnej niż podać nieaktualną z katalogu.
+      price: live?.price ?? null,
       status: available ? 'Dostępna' : 'Niedostępna',
       available,
       delivery,
@@ -228,7 +240,7 @@ export const prepareCartItem = tool({
     const { product, variant } = findVariant(partNumber)
     if (!product || !variant) return { error: `Nie znaleziono wariantu o PN ${partNumber}.` }
     const live = await liveStock(partNumber)
-    const price = live?.price ?? variant.priceFrom ?? null
+    const price = live?.price ?? null
     if (!price) return { error: 'Brak ceny dla tego wariantu — zaproponuj kontakt.' }
     return {
       // payload do koszyka (klient woła cartStore.addItem po potwierdzeniu)
@@ -280,7 +292,7 @@ function seriesByProductIds(ids: string[]) {
   return ids
     .map(id => allMaterials().find(x => x.s.productId === id))
     .filter(Boolean)
-    .map(m => ({ name: m!.s.title, slug: m!.s.slug, url: m!.url, priceFrom: m!.s.priceFrom ?? null }))
+    .map(m => ({ name: m!.s.title, slug: m!.s.slug, url: m!.url, priceOrientacyjna: m!.s.priceFrom ?? null }))
 }
 
 export const getPrinterMaterials = tool({

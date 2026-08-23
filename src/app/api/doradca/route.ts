@@ -91,9 +91,11 @@ export async function POST(request: Request) {
       // czytają go ~10× taniej zamiast płacić pełną stawkę za każdym razem.
       messages: [wiadomoscSystemowa(), ...modelMessages],
       tools: materialsTools,
-      // Limit kroków — balans między kompletnością odpowiedzi (Haiku robi krok/narzędzie)
-      // a kosztem (każdy krok przetwarza kontekst od nowa).
-      stopWhen: stepCountIs(4),
+      // Limit kroków. Cztery to było za mało: przy pytaniu „cena i dostępność rozmiaru X"
+      // model robi getPrinterMaterials → findClosestSize → checkMaterialStock dla kilku
+      // serii i wyczerpuje limit ZANIM napisze odpowiedź. W logach widać to jako pytania
+      // klientów bez żadnej odpowiedzi.
+      stopWhen: stepCountIs(8),
     })
 
     return result.toUIMessageStreamResponse()
