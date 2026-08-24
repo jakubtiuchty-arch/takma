@@ -935,6 +935,9 @@ export function buildPromoCodeEmail(data: {
   regularNetto: number
   maxQty: number
   expiresAt: Date
+  /** pozostałe produkty w tej samej promocji — dobrane na zasadzie uzupełnienia
+   *  (kto bierze drukarkę, dostaje skanery; kto skaner — drukarki) */
+  inne: { slug: string; name: string; promoNetto: number; regularNetto: number }[]
 }): string {
   const link = `https://www.takma.com.pl/produkt/${data.productSlug}`
   const wazny = data.expiresAt.toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })
@@ -968,6 +971,23 @@ export function buildPromoCodeEmail(data: {
                 </tr>`).join('')}
               </table>`
 
+  const inne = data.inne.length === 0 ? '' : `
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:12px 0 4px">
+                ${data.inne.map(pozycja => `
+                <tr>
+                  <td style="padding:10px 0;border-bottom:1px solid #f1f5f9">
+                    <a href="https://www.takma.com.pl/produkt/${esc(pozycja.slug)}" style="color:#1e293b;font-size:15px;font-weight:600;text-decoration:none">${esc(pozycja.name)}</a>
+                  </td>
+                  <td align="right" style="padding:10px 0;border-bottom:1px solid #f1f5f9;white-space:nowrap">
+                    <span style="font-size:15px;font-weight:700;color:#1e293b">${fmtPLN(pozycja.promoNetto)} z&#322;</span>
+                    <span style="font-size:13px;color:#94a3b8;text-decoration:line-through;margin-left:8px">${fmtPLN(pozycja.regularNetto)} z&#322;</span>
+                  </td>
+                </tr>`).join('')}
+              </table>
+              <p style="margin:8px 0 16px;font-size:14px;line-height:1.6;color:#6b7280">
+                Ceny netto za sztuk&#281;. Kod na wybrany model wy&#347;lemy po zg&#322;oszeniu z jego karty produktu.
+              </p>`
+
   return emailLayout({
     preheader: `Kod ${data.code} — ${data.productName} w cenie ${fmtPLN(data.promoNetto)} zł netto`,
     content:
@@ -982,11 +1002,14 @@ export function buildPromoCodeEmail(data: {
         kodBox +
         emailSectionTitle('Jak z&#322;o&#380;y&#263; zam&#243;wienie') +
         kroki +
-        emailButton('Przejd&#378; do produktu', link, '#1e40af') +
+        emailButton('Przejdź do produktu', link, '#1e40af') +
         emailInfoBlue(
           `Kod jest przypisany do Pa&#324;stwa zg&#322;oszenia i obowi&#261;zuje w jednym zam&#243;wieniu, ` +
           `do ${data.maxQty} sztuk. Wi&#281;ksze zam&#243;wienie wycenimy indywidualnie &mdash; wystarczy odpisa&#263; na t&#281; wiadomo&#347;&#263;.`
         ) +
+        (data.inne.length > 0
+          ? emailSectionTitle('Ta sama promocja obejmuje') + inne
+          : '') +
         emailText('W razie pyta&#324; prosimy o kontakt &mdash; odpowiadamy w ci&#261;gu jednego dnia roboczego.') +
         emailSignature()
       ),

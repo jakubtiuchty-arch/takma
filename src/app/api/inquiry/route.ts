@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { sendEmail } from '@/lib/email'
 import { buildAdminInquiryEmail, buildInquiryConfirmationEmail, buildPromoCodeEmail } from '@/lib/email-templates'
 import { wystawKod } from '@/lib/promo-codes'
+import { promocjeUzupelniajace } from '@/data/promos'
 import { checkSpam, getClientIp } from '@/lib/spam-protection'
 import { verifyTurnstile } from '@/lib/turnstile'
 import { prisma } from '@/lib/db'
@@ -138,6 +139,7 @@ export async function POST(request: NextRequest) {
             regularNetto: kod.regularNetto,
             maxQty: kod.maxQty,
             expiresAt: kod.expiresAt,
+            inne: promocjeUzupelniajace(productSlug),
           })
         : buildInquiryConfirmationEmail({ name, productName: productName || '', message }),
     })

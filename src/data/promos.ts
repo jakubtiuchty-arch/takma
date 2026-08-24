@@ -18,15 +18,18 @@ export interface ProductPromo {
   sku: string
   promoNetto: number // nasza cena promocyjna netto (zł)
   regularNetto: number // cena regularna netto do przekreślenia (zł)
+  name: string
+  /** do doboru propozycji uzupełniającej: kto bierze drukarkę, dostaje skanery */
+  kategoria: 'drukarka' | 'skaner'
 }
 
 export const ZEBRA_CEE_PROMO = {
   endDate: '2026-10-04', // ostatni dzień promocji (włącznie)
   bySlug: {
-    'zebra-ds2208': { sku: 'DS2208-SR7U2100SGW', promoNetto: 349, regularNetto: 388 },
-    'zebra-ds4608': { sku: 'DS4608-SR7U2100SGW', promoNetto: 549, regularNetto: 972 },
-    'zebra-zd230d': { sku: 'ZD23042-D0EC00EZ', promoNetto: 859, regularNetto: 1087 },
-    'zebra-zd230t': { sku: 'ZD23042-30EC00EZ', promoNetto: 879, regularNetto: 1069 },
+    'zebra-ds2208': { sku: 'DS2208-SR7U2100SGW', promoNetto: 349, regularNetto: 388, name: 'Zebra DS2208', kategoria: 'skaner' },
+    'zebra-ds4608': { sku: 'DS4608-SR7U2100SGW', promoNetto: 549, regularNetto: 972, name: 'Zebra DS4608', kategoria: 'skaner' },
+    'zebra-zd230d': { sku: 'ZD23042-D0EC00EZ', promoNetto: 859, regularNetto: 1087, name: 'Zebra ZD230d (termiczna)', kategoria: 'drukarka' },
+    'zebra-zd230t': { sku: 'ZD23042-30EC00EZ', promoNetto: 879, regularNetto: 1069, name: 'Zebra ZD230t (termotransferowa)', kategoria: 'drukarka' },
   } as Record<string, ProductPromo>,
 }
 
@@ -41,6 +44,21 @@ export const ZEBRA_CEE_PROMO = {
  * Zmiana wartości = jedna liczba tutaj (dotyczy kodów wystawianych od tej chwili).
  */
 export const MAX_PROMO_QTY = 3
+
+/**
+ * Pozostałe produkty z tej samej promocji, dobrane na zasadzie uzupełnienia:
+ * kto kupuje drukarkę, dostaje propozycję skanerów, kto skaner — drukarek.
+ * Sprzęt z tej samej półki tylko odciągałby uwagę od decyzji już podjętej.
+ */
+export function promocjeUzupelniajace(
+  productSlug: string,
+): { slug: string; name: string; promoNetto: number; regularNetto: number }[] {
+  const promo = activePromo(productSlug)
+  if (!promo) return []
+  return Object.entries(ZEBRA_CEE_PROMO.bySlug)
+    .filter(([, p]) => p.kategoria !== promo.kategoria)
+    .map(([slug, p]) => ({ slug, name: p.name, promoNetto: p.promoNetto, regularNetto: p.regularNetto }))
+}
 
 /**
  * Czy formularz zgłoszenia sam wystawia kod rabatowy i wysyła go klientowi.
