@@ -140,7 +140,7 @@ export default function UsedDeviceForm({
             placeholder="Terminal po jednym najemcy, wymieniona bateria, pełna sprawność potwierdzona testem." />
         </div>
         <div>
-          <label className={etykieta} htmlFor="specs">Dane techniczne <span className="text-gray-400 font-normal">— jedna linia = jeden wiersz, format „Nazwa: wartość"</span></label>
+          <label className={etykieta} htmlFor="specs">Dane techniczne <span className="text-gray-400 font-normal">— jedna linia = jeden wiersz, format &bdquo;Nazwa: wartość&rdquo;</span></label>
           <textarea id="specs" name="specs" rows={5} defaultValue={specsDoPola(sztuka?.specs)} className={`${pole} font-mono text-xs`}
             placeholder={'Ekran: 5 cali, 1280×720\nSystem: Android 11\nSkaner: SE4770'} />
         </div>
