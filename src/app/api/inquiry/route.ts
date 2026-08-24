@@ -144,7 +144,7 @@ export async function POST(request: NextRequest) {
         : buildInquiryConfirmationEmail({ name, productName: productName || '', message }),
     })
 
-    return NextResponse.json({ ok: true })
+    return NextResponse.json({ ok: true, kod: !!kod })
   } catch {
     return NextResponse.json(
       { error: 'Błąd przetwarzania żądania' },

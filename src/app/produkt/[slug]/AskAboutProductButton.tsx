@@ -5,7 +5,7 @@ import { createPortal } from 'react-dom'
 import { MailIcon, CloseIcon, CheckIcon } from '@/components/ui/Icons'
 import Turnstile from '@/components/Turnstile'
 import { KODY_RABATOWE_AUTO } from '@/data/promos'
-import { trackGenerateLead, trackFormSubmit } from '@/lib/ga-events'
+import { trackGenerateLead, trackFormSubmit, trackPromoCodeIssued } from '@/lib/ga-events'
 
 interface AskAboutProductButtonProps {
   productName: string
@@ -89,6 +89,8 @@ function InquiryModal({
         setStatus('done')
         trackGenerateLead(promo ? `zamowienie_promo_${productSlug}` : `zapytanie_produkt_${productSlug}`)
         trackFormSubmit(promo ? 'zamowienie_promo' : 'zapytanie_produkt', `/produkt/${productSlug}`)
+        const dane = await res.json().catch(() => null)
+        if (dane?.kod) trackPromoCodeIssued(productSlug)
       } else {
         setStatus('error')
       }

@@ -24,7 +24,7 @@ async function getOrderState(
   sessionId?: string
 ): Promise<{
   pending: boolean
-  purchase: { orderNumber: string; items: GA4Item[]; value: number; shipping: number } | null
+  purchase: { orderNumber: string; items: GA4Item[]; value: number; shipping: number; coupon?: string } | null
 }> {
   if (!orderNumber || !sessionId) return { pending: false, purchase: null }
   try {
@@ -40,6 +40,12 @@ async function getOrderState(
     })
     if (!order) return { pending: false, purchase: null }
     if (order.status === 'PENDING_PAYMENT') return { pending: true, purchase: null }
+    // Kod rabatowy czytamy z bazy, nie z koszyka — koszyk jest już wyczyszczony,
+    // a powiązanie kod → zamówienie i tak zapisuje się przy składaniu.
+    const kod = await prisma.promoCode.findFirst({
+      where: { orderNumber: order.orderNumber },
+      select: { code: true },
+    })
     return {
       pending: false,
       purchase: {
@@ -53,6 +59,7 @@ async function getOrderState(
         // jednostki jak w checkoucie: zł netto, value = towar + dostawa
         value: (order.subtotalNetto + order.shippingNetto) / 100,
         shipping: order.shippingNetto / 100,
+        coupon: kod?.code,
       },
     }
   } catch {

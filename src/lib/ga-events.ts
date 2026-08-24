@@ -90,7 +90,9 @@ export function trackPurchase(
   transactionId: string,
   items: GA4Item[],
   value: number,
-  shipping: number
+  shipping: number,
+  /** kod rabatowy użyty w zamówieniu — GA4 pokazuje go w raportach jako „coupon" */
+  coupon?: string
 ) {
   gtag('event', 'purchase', {
     transaction_id: transactionId,
@@ -98,6 +100,7 @@ export function trackPurchase(
     value,
     shipping,
     tax: value * 0.23,
+    coupon: coupon ?? undefined,
     items,
   })
 }
@@ -213,4 +216,31 @@ export function trackAdvisorMessage(pagePath: string, numerWiadomosci: number) {
 /** Doradca zaproponował produkt i klient dodał go do koszyka. */
 export function trackAdvisorAddToCart(productName: string, partNumber?: string) {
   gtag('event', 'doradca_dodanie_do_koszyka', { item_name: productName, part_number: partNumber ?? '' })
+}
+
+// ── Kody rabatowe ─────────────────────────────────────────────
+//
+// Ścieżka kodu ma trzy punkty pomiaru: wystawienie po zgłoszeniu z karty,
+// wpisanie w koszyku i zamówienie (kod jedzie w parametrze `coupon` zdarzenia
+// purchase). Dopiero zestawienie tych trzech mówi, ile kodów schodzi na marne,
+// a ile kończy się sprzedażą.
+
+/** Zgłoszenie z karty produktu skończyło się wystawieniem kodu. */
+export function trackPromoCodeIssued(productSlug: string) {
+  gtag('event', 'kod_wystawiony', { product_slug: productSlug })
+}
+
+/** Klient wpisał kod w koszyku i cena się przeliczyła. */
+export function trackPromoCodeApplied(code: string, partNumber: string, promoNetto: number) {
+  gtag('event', 'kod_zastosowany', {
+    kod_rabatowy: code,
+    part_number: partNumber,
+    currency: 'PLN',
+    value: promoNetto,
+  })
+}
+
+/** Kod odrzucony — powód pokazuje, czy to literówka, czy kod zużyty albo po terminie. */
+export function trackPromoCodeRejected(powod: string) {
+  gtag('event', 'kod_odrzucony', { powod_odrzucenia: powod })
 }

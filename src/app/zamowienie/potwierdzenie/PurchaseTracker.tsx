@@ -9,6 +9,8 @@ interface Props {
   items: GA4Item[]
   value: number
   shipping: number
+  /** kod rabatowy użyty w zamówieniu — do parametru `coupon` w GA4 */
+  coupon?: string
 }
 
 /**
@@ -16,7 +18,7 @@ interface Props {
  * Czeka aż załaduje się gtag (Script afterInteractive) i pilnuje, żeby event
  * poszedł raz — guard w localStorage + deduplikacja GA po transaction_id.
  */
-export default function PurchaseTracker({ orderNumber, items, value, shipping }: Props) {
+export default function PurchaseTracker({ orderNumber, items, value, shipping, coupon }: Props) {
   const clearAll = useCartStore((s) => s.clearAll)
 
   // Zamówienie opłacone → dopiero teraz czyścimy koszyk (nie przed redirectem
@@ -36,7 +38,7 @@ export default function PurchaseTracker({ orderNumber, items, value, shipping }:
     let tries = 0
     const timer = setInterval(() => {
       if (typeof window.gtag === 'function') {
-        trackPurchase(orderNumber, items, value, shipping)
+        trackPurchase(orderNumber, items, value, shipping, coupon)
         try {
           localStorage.setItem(key, '1')
         } catch {}
@@ -47,7 +49,7 @@ export default function PurchaseTracker({ orderNumber, items, value, shipping }:
     }, 250)
 
     return () => clearInterval(timer)
-  }, [orderNumber, items, value, shipping])
+  }, [orderNumber, items, value, shipping, coupon])
 
   return null
 }

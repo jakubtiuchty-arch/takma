@@ -19,7 +19,7 @@ import { products, type Product } from '@/data/products'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import LiveRibbonPrice, { LiveRibbonProvider } from '@/components/labels/LiveRibbonPrice'
 import { createCheckoutSession, createProformaOrder } from '@/actions/checkout'
-import { trackBeginCheckout, trackAddPaymentInfo, trackPurchase } from '@/lib/ga-events'
+import { trackBeginCheckout, trackAddPaymentInfo, trackPurchase, trackPromoCodeApplied, trackPromoCodeRejected } from '@/lib/ga-events'
 
 // ── Typy ────────────────────────────────────────────────────────
 
@@ -496,7 +496,7 @@ export default function CheckoutPage() {
           price: itemPrices.get(item.productId),
         }))
         trackAddPaymentInfo(ga4Items, totalNetto, 'proforma')
-        trackPurchase(result.orderNumber, ga4Items, totalNetto, shippingNetto)
+        trackPurchase(result.orderNumber, ga4Items, totalNetto, shippingNetto, promoCode?.code)
 
         setOrderNumber(result.orderNumber)
         setIsSubmitting(false)
@@ -1439,9 +1439,11 @@ function PromoCodeBox({
       const dane = await res.json()
       if (dane.ok) {
         onApply(dane.kod)
+        trackPromoCodeApplied(dane.kod.code, dane.kod.sku, dane.kod.promoNetto)
         setWpisany('')
       } else {
         setBlad(dane.blad || 'Nie udało się sprawdzić kodu.')
+        trackPromoCodeRejected(dane.blad || 'nieznany')
       }
     } catch {
       setBlad('Nie udało się sprawdzić kodu. Spróbuj ponownie.')
