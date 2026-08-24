@@ -356,11 +356,6 @@ function emailPromoTiles(
   return `
         <table role="presentation" width="600" class="outer" cellpadding="0" cellspacing="0" style="margin-top:24px">
           ${rzedy.join('')}
-          <tr>
-            <td style="padding:2px 0 0;font-size:13px;line-height:1.6;color:#9ca3af">
-              Ceny netto za sztuk&#281;. Kod na wybrany model wy&#347;lemy po zg&#322;oszeniu z jego karty produktu.
-            </td>
-          </tr>
         </table>`
 }
 
