@@ -917,3 +917,39 @@ model PromoCode {
   @@index([createdAt])
   @@map("promo_codes")
 }
+
+/// Urządzenie używane — jedna sztuka, jeden numer seryjny, jedna cena.
+/// W odróżnieniu od katalogu (products.ts + żywe stany dystrybutorów) tu każdy
+/// wiersz to konkretny egzemplarz z magazynu, więc po sprzedaży musi zniknąć z
+/// oferty — status pilnuje, żeby dwie osoby nie kupiły tego samego terminala.
+model UsedDevice {
+  id             String    @id @default(cuid())
+  slug           String    @unique
+  name           String
+  brand          String    @default("Zebra")
+  category       String    @default("terminal") // terminal | drukarka | skaner | tablet | inne
+  partNumber     String?
+  serialNumber   String?   // wewnętrznie — na froncie nie pokazujemy
+
+  conditionGrade String    @default("B") // A = jak nowe, B = ślady używania, C = widoczne zużycie
+  conditionNote  String?   // co dokładnie widać na tej sztuce
+  accessories    String?   // co jest w zestawie (zasilacz, bateria, stacja)
+  description    String?
+  specs          Json?     // pary nazwa/wartość do tabeli danych technicznych
+
+  priceNetto     Int       // grosze
+  newPriceNetto  Int?      // cena nowego egzemplarza — do porównania
+  warrantyMonths Int       @default(6)
+
+  images         String[]  @default([])
+
+  status         String    @default("AVAILABLE") // AVAILABLE | RESERVED | SOLD
+  orderNumber    String?
+  soldAt         DateTime?
+
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  @@index([status, createdAt])
+  @@map("used_devices")
+}

@@ -14,6 +14,7 @@ import {
   ShoppingCartIcon,
   TruckIcon,
 } from '@/components/ui/Icons'
+import { usedSlugFromProductId } from '@/lib/used-devices'
 import { useCartStore, type CartItem, type AppliedPromoCode } from '@/store/cartStore'
 import { products, type Product } from '@/data/products'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
@@ -222,6 +223,12 @@ export default function CheckoutPage() {
     const prices = new Map<string, number | undefined>()
     let objeteKodem = 0
     for (const item of items) {
+      // Używka: cena dotyczy tego egzemplarza, nie modelu. Żywy cennik pod tym
+      // samym numerem katalogowym podałby cenę nowej sztuki.
+      if (usedSlugFromProductId(item.productId)) {
+        prices.set(item.productId, item.priceNetto)
+        continue
+      }
       // Pozycja objęta imiennym kodem rabatowym z promocji producenckiej.
       // Kod obejmuje maxQty sztuk; przy większej liczbie pozycja liczy się
       // po cenie regularnej — informacja o tym jest w boksie kodu.
@@ -414,6 +421,24 @@ export default function CheckoutPage() {
         note: item.note || undefined,
         quoteNumber: item.quoteNumber,
       }))
+
+      // Używki: jedna sztuka na wpis, więc ktoś mógł kupić ją, zanim klient
+      // doszedł do kasy. Lepiej powiedzieć to teraz niż po wpisaniu danych.
+      const slugiUzywek = items
+        .map(i => usedSlugFromProductId(i.productId))
+        .filter((s): s is string => !!s)
+      if (slugiUzywek.length > 0) {
+        const res = await fetch(`/api/uzywane/dostepnosc?slugi=${slugiUzywek.join(',')}`)
+        const dane = await res.json().catch(() => ({ niedostepne: [] }))
+        if (dane.niedostepne?.length > 0) {
+          const nazwy = dane.niedostepne.map((n: { name: string }) => n.name).join(', ')
+          setSubmitError(
+            `${nazwy} — ten egzemplarz został w międzyczasie sprzedany. Usuń go z koszyka; chętnie poszukamy podobnego.`
+          )
+          setIsSubmitting(false)
+          return
+        }
+      }
 
       // Walidacja: żaden produkt nie może mieć ceny 0 zł
       const zeroPriceItem = checkoutItems.find(item => !item.priceNetto || item.priceNetto <= 0)
@@ -1277,7 +1302,10 @@ function CartItemRow({
             </p>
           )}
 
-          {/* Ilosc */}
+          {/* Ilość — używka jest jedną sztuką, więc licznika nie pokazujemy wcale */}
+          {usedSlugFromProductId(item.productId) ? (
+            <p className="text-xs text-gray-500 mt-3">Jedna sztuka — sprzęt używany</p>
+          ) : (
           <div className="flex items-center gap-2 mt-3">
             <span className="text-xs text-gray-500">Ilość:</span>
             <button
@@ -1304,6 +1332,7 @@ function CartItemRow({
               <PlusIcon size={14} />
             </button>
           </div>
+          )}
         </div>
 
         {/* Prawa strona: subtotal + delete */}

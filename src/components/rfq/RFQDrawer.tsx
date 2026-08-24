@@ -45,6 +45,10 @@ function getItemPrice(
   stockData: Map<string, { found: boolean; price?: number }>,
   promoCode?: AppliedPromoCode | null
 ): number | undefined {
+  // Używka — cena dotyczy konkretnego egzemplarza, nie modelu.
+  if (item.productId.startsWith('uzywane__')) {
+    return item.priceNetto
+  }
   // Pozycja objęta kodem rabatowym — jak w kasie, do limitu sztuk z kodu.
   if (promoCode && item.partNumber === promoCode.sku && item.quantity <= promoCode.maxQty) {
     return promoCode.promoNetto
@@ -254,7 +258,10 @@ export default function RFQDrawer() {
                             </p>
                           ) : null}
 
-                          {/* Quantity controls */}
+                          {/* Quantity controls — używka to jedna sztuka, bez licznika */}
+                          {item.productId.startsWith('uzywane__') ? (
+                            <p className="text-xs text-gray-500 mt-2">Jedna sztuka — sprzęt używany</p>
+                          ) : (
                           <div className="flex items-center gap-2 mt-2">
                             <button
                               onClick={() => updateQuantity(item.productId, item.quantity - 1)}
@@ -282,6 +289,7 @@ export default function RFQDrawer() {
                               </span>
                             )}
                           </div>
+                          )}
 
                           {/* Note input */}
                           <input

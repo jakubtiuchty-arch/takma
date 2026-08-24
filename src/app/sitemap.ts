@@ -16,8 +16,9 @@ import { transferLabelSeries } from '@/data/transfer-label-series'
 import { transferRibbonSeries } from '@/data/transfer-ribbon-series'
 import { isRibbonProduct } from '@/data/products'
 import { PROMOTIONS } from '@/data/promotions'
+import { prisma } from '@/lib/db'
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://www.takma.com.pl'
   const lastUpdated = new Date('2026-02-15')
 
@@ -177,8 +178,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       })),
     )
 
+  // Sprzęt używany żyje w bazie, nie w plikach — sztuka sprzedana wypada z mapy.
+  // Awaria bazy nie może wywalić całego sitemapu, więc lecimy na pustej liście.
+  let usedPages: MetadataRoute.Sitemap = []
+  try {
+    const sztuki = await prisma.usedDevice.findMany({
+      where: { status: 'AVAILABLE' },
+      select: { slug: true, updatedAt: true },
+    })
+    usedPages = [
+      { url: `${baseUrl}/uzywane`, lastModified: sztuki[0]?.updatedAt ?? lastUpdated },
+      ...sztuki.map((s) => ({ url: `${baseUrl}/uzywane/${s.slug}`, lastModified: s.updatedAt })),
+    ]
+  } catch (e) {
+    console.error('[sitemap] Nie udało się wczytać używek:', (e as Error).message)
+  }
+
   return [
     ...staticPages,
+    ...usedPages,
     ...promotionPages,
     ...brandPillarPages,
     ...subcategoryPages,

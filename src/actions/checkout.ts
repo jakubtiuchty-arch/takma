@@ -4,6 +4,7 @@ import { p24Register, p24Configured } from '@/lib/p24'
 import { createOrder } from '@/lib/orders'
 import { applyQuotePricing } from '@/lib/quote-pricing'
 import { zastosujKod, oznaczKodJakoUzyty } from '@/lib/promo-codes'
+import { applyUsedDevicePricing, markUsedDevicesSold } from '@/lib/used-devices-db'
 
 interface CheckoutItem {
   productId: string
@@ -44,9 +45,10 @@ export async function createCheckoutSession(
   // Pomiary czasu — diagnoza wolnego redirectu do P24 (2026-06-11: ~20-40 s)
   const t0 = Date.now()
 
-  // Ceny pozycji z oferty czytamy z bazy, a cenę promocyjną z kodu liczymy od
-  // nowa — nie ufamy temu, co przyszło z koszyka.
-  items = await zastosujKod(await applyQuotePricing(items), promoCode)
+  // Ceny pozycji z oferty czytamy z bazy, cenę promocyjną z kodu liczymy od
+  // nowa, a używki sprawdzamy co do sztuki — nie ufamy temu, co przyszło z
+  // koszyka. Sprzedany egzemplarz przerywa checkout wyjątkiem.
+  items = await applyUsedDevicePricing(await zastosujKod(await applyQuotePricing(items), promoCode))
 
   // 1. Create order in DB with status PENDING_PAYMENT
   const order = await createOrder({
@@ -74,6 +76,7 @@ export async function createCheckoutSession(
   })
 
   await oznaczKodJakoUzyty(promoCode, order.orderNumber)
+  await markUsedDevicesSold(items, order.orderNumber)
 
   console.log(`[checkout] createOrder ${order.orderNumber}: ${Date.now() - t0}ms`)
 
@@ -112,7 +115,7 @@ export async function createProformaOrder(
   notes?: string,
   promoCode?: string
 ): Promise<{ orderNumber: string }> {
-  items = await zastosujKod(await applyQuotePricing(items), promoCode)
+  items = await applyUsedDevicePricing(await zastosujKod(await applyQuotePricing(items), promoCode))
 
   // 1. Create order in DB with status AWAITING_PAYMENT
   const order = await createOrder({
@@ -140,6 +143,7 @@ export async function createProformaOrder(
   })
 
   await oznaczKodJakoUzyty(promoCode, order.orderNumber)
+  await markUsedDevicesSold(items, order.orderNumber)
 
   return { orderNumber: order.orderNumber }
 }
