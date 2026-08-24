@@ -12,6 +12,19 @@
  * dostępność nie mogą pochodzić stamtąd.
  */
 
+/**
+ * Czy sekcja jest widoczna publicznie.
+ *
+ * Wyłączona do czasu dopracowania: /uzywane i karty egzemplarzy zwracają wtedy
+ * 404, zakładka znika z menu, a sitemap ich nie wypisuje. Panel /admin/uzywane
+ * działa niezależnie, a zalogowany administrator widzi strony normalnie — można
+ * spokojnie przygotować całą ofertę przed premierą.
+ *
+ * Włączenie: zmiana na `true` (i przywrócenie `revalidate` w obu stronach,
+ * bo podgląd dla admina wymusił render dynamiczny).
+ */
+export const UZYWANE_WIDOCZNE = false
+
 /** Prefiks id pozycji koszyka — po nim poznajemy używkę wśród zwykłych produktów. */
 export const USED_PREFIX = 'uzywane__'
 

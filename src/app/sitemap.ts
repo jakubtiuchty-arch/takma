@@ -17,6 +17,7 @@ import { transferRibbonSeries } from '@/data/transfer-ribbon-series'
 import { isRibbonProduct } from '@/data/products'
 import { PROMOTIONS } from '@/data/promotions'
 import { prisma } from '@/lib/db'
+import { UZYWANE_WIDOCZNE } from '@/lib/used-devices'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://www.takma.com.pl'
@@ -182,6 +183,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Awaria bazy nie może wywalić całego sitemapu, więc lecimy na pustej liście.
   let usedPages: MetadataRoute.Sitemap = []
   try {
+    if (!UZYWANE_WIDOCZNE) throw new Error('sekcja ukryta')
     const sztuki = await prisma.usedDevice.findMany({
       where: { status: 'AVAILABLE' },
       select: { slug: true, updatedAt: true },
@@ -190,8 +192,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       { url: `${baseUrl}/uzywane`, lastModified: sztuki[0]?.updatedAt ?? lastUpdated },
       ...sztuki.map((s) => ({ url: `${baseUrl}/uzywane/${s.slug}`, lastModified: s.updatedAt })),
     ]
-  } catch (e) {
-    console.error('[sitemap] Nie udało się wczytać używek:', (e as Error).message)
+  } catch {
+    // Sekcja ukryta albo baza niedostępna — sitemap idzie dalej bez używek.
   }
 
   return [

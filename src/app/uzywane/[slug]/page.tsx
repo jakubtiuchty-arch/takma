@@ -3,10 +3,12 @@ import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { prisma } from '@/lib/db'
-import { KATEGORIE, stanOpis, usedProductId } from '@/lib/used-devices'
+import { KATEGORIE, stanOpis, usedProductId, UZYWANE_WIDOCZNE } from '@/lib/used-devices'
+import { getSessionFromCookie } from '@/lib/auth'
 import AddUsedToCart from './AddUsedToCart'
 
-export const revalidate = 300
+// Jak na liście: podgląd dla admina wymusza render dynamiczny do czasu premiery.
+export const dynamic = 'force-dynamic'
 
 const fmt = (grosze: number) => (grosze / 100).toLocaleString('pl-PL', { maximumFractionDigits: 0 })
 
@@ -25,12 +27,14 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       `${s.name} po serwisie i testach. ${stanOpis(s.conditionGrade).etykieta}, gwarancja ${s.warrantyMonths} mies., ` +
       `faktura VAT. Jedna sztuka, cena ${cena}.`,
     alternates: { canonical: `https://www.takma.com.pl/uzywane/${s.slug}` },
-    robots: s.status === 'AVAILABLE' ? undefined : { index: false },
+    robots: s.status === 'AVAILABLE' && UZYWANE_WIDOCZNE ? undefined : { index: false },
     openGraph: s.images[0] ? { images: [s.images[0]] } : undefined,
   }
 }
 
 export default async function UzywanaSztukaPage({ params }: { params: { slug: string } }) {
+  if (!UZYWANE_WIDOCZNE && !(await getSessionFromCookie())) notFound()
+
   const s = await pobierz(params.slug)
   if (!s) notFound()
 

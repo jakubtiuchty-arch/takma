@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { UZYWANE_WIDOCZNE } from '@/lib/used-devices'
 import clsx from 'clsx'
 import { SearchIcon, MenuIcon, CloseIcon, PhoneIcon, ChevronDownIcon, UserIcon } from '@/components/ui/Icons'
 import RFQBadge from '@/components/rfq/RFQBadge'
@@ -157,7 +158,8 @@ const navigation: NavItem[] = [
       { name: 'Gastronomia i HoReCa', href: '/drukarki-etykiet-gastronomia' },
     ],
   },
-  { name: 'Używane', href: '/uzywane' },
+  // Sekcja sprzętu używanego czeka na premierę — patrz UZYWANE_WIDOCZNE.
+  ...(UZYWANE_WIDOCZNE ? [{ name: 'Używane', href: '/uzywane' }] : []),
   { name: 'Promocje', href: '/promocje' },
   { name: 'Serwis', href: '/serwis' },
   { name: 'Kontakt', href: '/kontakt' },

@@ -2,20 +2,28 @@ import Link from 'next/link'
 import Image from 'next/image'
 import type { Metadata } from 'next'
 import { prisma } from '@/lib/db'
-import { KATEGORIE, stanOpis } from '@/lib/used-devices'
+import { notFound } from 'next/navigation'
+import { KATEGORIE, stanOpis, UZYWANE_WIDOCZNE } from '@/lib/used-devices'
+import { getSessionFromCookie } from '@/lib/auth'
 
-export const revalidate = 300
+// Dopóki sekcja jest ukryta, strona musi sprawdzać sesję admina — stąd render
+// dynamiczny zamiast ISR. Po premierze wraca `export const revalidate = 300`.
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Sprzęt używany — terminale, drukarki i skanery Zebra | TAKMA',
   description:
     'Używane terminale, drukarki etykiet i skanery Zebra ze sprawdzonym stanem technicznym. Każdy egzemplarz z gwarancją TAKMA, faktura VAT, wysyłka z Wrocławia.',
   alternates: { canonical: 'https://www.takma.com.pl/uzywane' },
+  ...(UZYWANE_WIDOCZNE ? {} : { robots: { index: false, follow: false } }),
 }
 
 const fmt = (grosze: number) => (grosze / 100).toLocaleString('pl-PL', { maximumFractionDigits: 0 })
 
 export default async function UzywanePage() {
+  // Sekcja w przygotowaniu — dla świata 404, dla zalogowanego admina podgląd.
+  if (!UZYWANE_WIDOCZNE && !(await getSessionFromCookie())) notFound()
+
   const sztuki = await prisma.usedDevice.findMany({
     where: { status: 'AVAILABLE' },
     orderBy: { createdAt: 'desc' },
