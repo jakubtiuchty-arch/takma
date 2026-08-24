@@ -14,7 +14,6 @@ import {
   ShoppingCartIcon,
   TruckIcon,
 } from '@/components/ui/Icons'
-import { MAX_PROMO_QTY } from '@/data/promos'
 import { useCartStore, type CartItem } from '@/store/cartStore'
 import { products, type Product } from '@/data/products'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
@@ -219,12 +218,6 @@ export default function CheckoutPage() {
   const itemPrices = useMemo(() => {
     const prices = new Map<string, number | undefined>()
     for (const item of items) {
-      // Pozycja objęta promocją producencką — cena z karty produktu, do limitu sztuk.
-      // Powyżej limitu wraca cena regularna (ryzyko odrzucenia vouchera).
-      if (item.promoSku && item.priceNetto && item.quantity <= MAX_PROMO_QTY) {
-        prices.set(item.productId, item.priceNetto)
-        continue
-      }
       // Pozycja z oferty handlowej — cena wynegocjowana, zamrożona do końca ważności
       // oferty. Podmiana na żywą pokazałaby klientowi wyższą kwotę niż w mailu.
       if (item.quoteNumber) {
@@ -404,7 +397,6 @@ export default function CheckoutPage() {
         image: item.productImage,
         note: item.note || undefined,
         quoteNumber: item.quoteNumber,
-        promoSku: item.promoSku,
       }))
 
       // Walidacja: żaden produkt nie może mieć ceny 0 zł
@@ -734,18 +726,6 @@ export default function CheckoutPage() {
       {step === 1 && (
         <div className="grid lg:grid-cols-5 gap-6 lg:gap-10 items-start">
           <div className="lg:col-span-3 space-y-6">
-            {/* Promocja producencka w koszyku — limit sztuk podany wprost, żeby nikt
-                nie odkrył go dopiero przy przeliczeniu koszyka */}
-            {items.some(i => i.promoSku) && (
-              <div className="rounded-2xl border border-gray-200 bg-white px-4 sm:px-6 py-4">
-                <p className="font-semibold text-gray-900">Ceny promocyjne Zebra</p>
-                <p className="text-sm text-gray-600 mt-1 leading-relaxed">
-                  Promocja obejmuje do {MAX_PROMO_QTY} sztuk danego modelu w zamówieniu.
-                  Przy większej liczbie prosimy o kontakt — przygotujemy wycenę indywidualną.
-                </p>
-              </div>
-            )}
-
             {/* Zamówienie z oferty handlowej — ceny wynegocjowane, nie cennikowe */}
             {quoteNumber && (
               <div className="rounded-2xl border border-gray-200 bg-white px-4 sm:px-6 py-4">

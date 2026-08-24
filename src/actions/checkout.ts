@@ -2,7 +2,7 @@
 
 import { p24Register, p24Configured } from '@/lib/p24'
 import { createOrder } from '@/lib/orders'
-import { applyQuotePricing, applyPromoPricing } from '@/lib/quote-pricing'
+import { applyQuotePricing } from '@/lib/quote-pricing'
 
 interface CheckoutItem {
   productId: string
@@ -15,8 +15,6 @@ interface CheckoutItem {
   note?: string
   /** ustawiane przez link „zamów z oferty" — cena jest wtedy brana z bazy, nie stąd */
   quoteNumber?: string
-  /** PN objęty promocją producencką — cena liczona z promos.ts, nie stąd */
-  promoSku?: string
 }
 
 interface CustomerData {
@@ -45,7 +43,7 @@ export async function createCheckoutSession(
   const t0 = Date.now()
 
   // Ceny pozycji z oferty czytamy z bazy — nie ufamy temu, co przyszło z koszyka.
-  items = applyPromoPricing(await applyQuotePricing(items))
+  items = await applyQuotePricing(items)
 
   // 1. Create order in DB with status PENDING_PAYMENT
   const order = await createOrder({
@@ -108,7 +106,7 @@ export async function createProformaOrder(
   shippingNetto: number,
   notes?: string
 ): Promise<{ orderNumber: string }> {
-  items = applyPromoPricing(await applyQuotePricing(items))
+  items = await applyQuotePricing(items)
 
   // 1. Create order in DB with status AWAITING_PAYMENT
   const order = await createOrder({
