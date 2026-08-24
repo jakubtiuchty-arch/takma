@@ -60,7 +60,7 @@ function emailLayout(opts: { preheader: string; content: string; after?: string 
     @media only screen and (max-width: 620px) {
       .outer { width: 100% !important; }
       .inner { padding: 20px 16px !important; }
-      .tile-cell { display: block !important; width: 100% !important; padding-bottom: 14px !important; }
+      .tile-cell { display: block !important; width: 100% !important; padding-left: 0 !important; padding-bottom: 14px !important; }
     }
   </style>
 </head>
@@ -291,6 +291,10 @@ const MAIL_TILE: Record<string, { h: number; l: number; r: number }> = {
 /** Szerokość ciemnego kafla — dwa kafle w rzędzie na 600 px wiadomości. */
 const TILE_DARK = 195
 
+/** Odsunięcie pary kafli w prawo (px). Wcięcie w obu komórkach naraz, więc
+ *  przesuwa oba kafle o tyle samo; na telefonie znoszone przez .tile-cell. */
+const TILE_SHIFT = 60
+
 function emailPromoTiles(
   items: { slug: string; name: string; promoNetto: number; regularNetto: number }[],
 ): string {
@@ -345,7 +349,7 @@ function emailPromoTiles(
             <td style="padding:0 0 14px">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                 <tr>
-                  ${para.map(p => `<td class="tile-cell" width="50%" align="center" valign="bottom" style="width:50%">${tile(p)}</td>`).join('')}
+                  ${para.map(p => `<td class="tile-cell" width="50%" align="center" valign="bottom" style="width:50%;padding-left:${TILE_SHIFT}px">${tile(p)}</td>`).join('')}
                   ${para.length === 1 ? '<td class="tile-cell" width="50%" style="width:50%">&nbsp;</td>' : ''}
                 </tr>
               </table>
