@@ -292,7 +292,6 @@ const MAIL_TILE: Record<string, { h: number; l: number; r: number }> = {
 const TILE_DARK = 195
 
 function emailPromoTiles(
-  label: string,
   items: { slug: string; name: string; promoNetto: number; regularNetto: number }[],
 ): string {
   if (items.length === 0) return ''
@@ -355,10 +354,7 @@ function emailPromoTiles(
   }
 
   return `
-        <table role="presentation" width="600" class="outer" cellpadding="0" cellspacing="0" style="margin-top:20px">
-          <tr>
-            <td style="padding:0 0 12px;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#6b7280">${esc(label)}</td>
-          </tr>
+        <table role="presentation" width="600" class="outer" cellpadding="0" cellspacing="0" style="margin-top:24px">
           ${rzedy.join('')}
           <tr>
             <td style="padding:2px 0 0;font-size:13px;line-height:1.6;color:#9ca3af">
@@ -1092,9 +1088,6 @@ export function buildPromoCodeEmail(data: {
         emailText('W razie pyta&#324; prosimy o kontakt &mdash; odpowiadamy w ci&#261;gu jednego dnia roboczego.') +
         emailSignature()
       ),
-    after: emailPromoTiles(
-      data.inne[0]?.kategoria === 'skaner' ? 'Skanery w promocji' : 'Drukarki etykiet w promocji',
-      data.inne,
-    ),
+    after: emailPromoTiles(data.inne),
   })
 }
