@@ -6,7 +6,7 @@ import clsx from 'clsx'
 import Image from 'next/image'
 import { CloseIcon, TrashIcon, MinusIcon, PlusIcon, ArrowRightIcon } from '@/components/ui/Icons'
 import { Button } from '@/components/ui'
-import { useCartStore, type CartItem } from '@/store/cartStore'
+import { useCartStore, type CartItem, type AppliedPromoCode } from '@/store/cartStore'
 import { products } from '@/data/products'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import { trackRemoveFromCart, trackViewCart } from '@/lib/ga-events'
@@ -42,8 +42,13 @@ function findStaticPrice(productId: string | undefined): number | undefined {
  */
 function getItemPrice(
   item: CartItem,
-  stockData: Map<string, { found: boolean; price?: number }>
+  stockData: Map<string, { found: boolean; price?: number }>,
+  promoCode?: AppliedPromoCode | null
 ): number | undefined {
+  // Pozycja objęta kodem rabatowym — jak w kasie, do limitu sztuk z kodu.
+  if (promoCode && item.partNumber === promoCode.sku && item.quantity <= promoCode.maxQty) {
+    return promoCode.promoNetto
+  }
   // Pozycja z oferty handlowej — cena wynegocjowana, zamrożona jak w kasie.
   if (item.quoteNumber && item.priceNetto) {
     return item.priceNetto
@@ -65,7 +70,7 @@ function getItemPrice(
 }
 
 export default function RFQDrawer() {
-  const { items, isDrawerOpen, closeDrawer, removeItem, updateQuantity, updateNote, clearAll, addItem } =
+  const { items, isDrawerOpen, closeDrawer, removeItem, updateQuantity, updateNote, clearAll, addItem, promoCode } =
     useCartStore()
   const [mounted, setMounted] = useState(false)
 
@@ -120,10 +125,10 @@ export default function RFQDrawer() {
   const itemPrices = useMemo(() => {
     const prices = new Map<string, number | undefined>()
     for (const item of items) {
-      prices.set(item.productId, getItemPrice(item, stockData))
+      prices.set(item.productId, getItemPrice(item, stockData, promoCode))
     }
     return prices
-  }, [items, stockData])
+  }, [items, stockData, promoCode])
 
   // Suma netto (tylko elementy z ceną)
   const subtotalNetto = useMemo(() => {

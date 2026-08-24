@@ -1,5 +1,5 @@
 import AskAboutProductButton from './AskAboutProductButton'
-import { ZEBRA_CEE_PROMO, type ProductPromo } from '@/data/promos'
+import { ZEBRA_CEE_PROMO, KODY_RABATOWE_AUTO, type ProductPromo } from '@/data/promos'
 
 const VAT = 1.23
 const fmt = (n: number) =>
@@ -7,8 +7,9 @@ const fmt = (n: number) =>
 
 /**
  * Baner promocji producenckiej (Zebra CEE Voucher) na karcie produktu.
- * Pokazuje naszą cenę promocyjną (przekreślona regularna); realizacja przez
- * formularz zapytania — koszyk liczy ceny regularne. Znika po endDate.
+ * Pokazuje naszą cenę promocyjną (przekreślona regularna). Rabat wychodzi
+ * imiennym kodem, który klient dostaje mailem po zgłoszeniu — koszyk bez kodu
+ * liczy ceny regularne. Baner znika po endDate.
  */
 export default function PromoBanner({
   productName,
@@ -55,7 +56,7 @@ export default function PromoBanner({
           </span>
         </div>
         <p className="text-[13px] text-white/60 mt-0.5 mb-3.5">
-          {fmt(Math.round(promo.promoNetto * VAT))} zł brutto &nbsp;·&nbsp; {promo.sku} &nbsp;·&nbsp; zamówienie przez formularz, potwierdzenie w&nbsp;24&nbsp;h
+          {fmt(Math.round(promo.promoNetto * VAT))} zł brutto &nbsp;·&nbsp; {promo.sku} &nbsp;·&nbsp; {KODY_RABATOWE_AUTO ? 'cena z kodem rabatowym, wysyłamy go mailem po zgłoszeniu' : 'zamówienie przez formularz, potwierdzenie w 24 h'}
         </p>
 
         <AskAboutProductButton

@@ -14,7 +14,7 @@ import {
   ShoppingCartIcon,
   TruckIcon,
 } from '@/components/ui/Icons'
-import { useCartStore, type CartItem } from '@/store/cartStore'
+import { useCartStore, type CartItem, type AppliedPromoCode } from '@/store/cartStore'
 import { products, type Product } from '@/data/products'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import LiveRibbonPrice, { LiveRibbonProvider } from '@/components/labels/LiveRibbonPrice'
@@ -147,6 +147,8 @@ export default function CheckoutPage() {
     getRibbonSuggestions,
     getLabelSuggestions,
     addItem,
+    promoCode,
+    setPromoCode,
   } = useCartStore()
 
   const [mounted, setMounted] = useState(false)
@@ -215,9 +217,23 @@ export default function CheckoutPage() {
   /** Numer oferty, jeśli koszyk przyszedł z linku „zamów z oferty". */
   const quoteNumber = useMemo(() => items.find((i) => i.quoteNumber)?.quoteNumber, [items])
 
+  /** Ile sztuk objętych kodem już rozdaliśmy między pozycje koszyka. */
   const itemPrices = useMemo(() => {
     const prices = new Map<string, number | undefined>()
+    let objeteKodem = 0
     for (const item of items) {
+      // Pozycja objęta imiennym kodem rabatowym z promocji producenckiej.
+      // Kod obejmuje maxQty sztuk; przy większej liczbie pozycja liczy się
+      // po cenie regularnej — informacja o tym jest w boksie kodu.
+      if (
+        promoCode &&
+        item.partNumber === promoCode.sku &&
+        item.quantity <= promoCode.maxQty - objeteKodem
+      ) {
+        objeteKodem += item.quantity
+        prices.set(item.productId, promoCode.promoNetto)
+        continue
+      }
       // Pozycja z oferty handlowej — cena wynegocjowana, zamrożona do końca ważności
       // oferty. Podmiana na żywą pokazałaby klientowi wyższą kwotę niż w mailu.
       if (item.quoteNumber) {
@@ -242,7 +258,7 @@ export default function CheckoutPage() {
       prices.set(item.productId, item.priceNetto ?? findProductPrice(item.productId))
     }
     return prices
-  }, [items, stockData])
+  }, [items, stockData, promoCode])
 
   const subtotalNetto = useMemo(() => {
     if (!mounted) return 0
@@ -428,7 +444,8 @@ export default function CheckoutPage() {
           checkoutItems,
           customerData,
           shippingNetto,
-          formData.notes || undefined
+          formData.notes || undefined,
+          promoCode?.code
         )
 
         // 2. Generate proforma HTML and open in new tab
@@ -501,7 +518,8 @@ export default function CheckoutPage() {
           checkoutItems,
           customerData,
           shippingNetto,
-          formData.notes || undefined
+          formData.notes || undefined,
+          promoCode?.code
         )
 
         // Koszyka NIE czyścimy tutaj — re-render pokazywał „koszyk pusty" przed
@@ -760,6 +778,20 @@ export default function CheckoutPage() {
                 ))}
               </ul>
             </div>
+
+            {/* Kod rabatowy z promocji producenckiej — wystawiany imiennie po
+                zgłoszeniu z karty produktu, więc pole nie krzyczy do wszystkich */}
+            {!quoteNumber && (
+              <PromoCodeBox
+                promoCode={promoCode}
+                onApply={setPromoCode}
+                hasMatchingItem={!!promoCode && items.some(i => i.partNumber === promoCode.sku)}
+                overLimit={
+                  !!promoCode &&
+                  items.some(i => i.partNumber === promoCode.sku && i.quantity > promoCode.maxQty)
+                }
+              />
+            )}
 
             {/* Polecane taśmy dla etykiet TT w koszyku — z konkretnym wariantem rozmiaru */}
             {ribbonSuggestions.length > 0 && (
@@ -1366,6 +1398,124 @@ function PriceSummary({
           </div>
         </div>
       </div>
+    </div>
+  )
+}
+
+// ── Kod rabatowy ──────────────────────────────────────────────────
+//
+// Cena z promocji producenckiej nie obowiązuje każdego, kto doda produkt do
+// koszyka: rabat Zebry idzie z vouchera wystawianego imiennie, więc klient
+// dostaje kod mailem po zgłoszeniu z karty produktu. Pole jest zwinięte —
+// kto kodu nie ma, nie ma się nad czym zastanawiać.
+
+function PromoCodeBox({
+  promoCode,
+  onApply,
+  hasMatchingItem,
+  overLimit,
+}: {
+  promoCode: AppliedPromoCode | null
+  onApply: (kod: AppliedPromoCode | null) => void
+  hasMatchingItem: boolean
+  overLimit: boolean
+}) {
+  const [otwarte, setOtwarte] = useState(false)
+  const [wpisany, setWpisany] = useState('')
+  const [status, setStatus] = useState<'idle' | 'sprawdzam'>('idle')
+  const [blad, setBlad] = useState('')
+
+  const sprawdz = async (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!wpisany.trim()) return
+    setStatus('sprawdzam')
+    setBlad('')
+    try {
+      const res = await fetch('/api/promo-code', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code: wpisany }),
+      })
+      const dane = await res.json()
+      if (dane.ok) {
+        onApply(dane.kod)
+        setWpisany('')
+      } else {
+        setBlad(dane.blad || 'Nie udało się sprawdzić kodu.')
+      }
+    } catch {
+      setBlad('Nie udało się sprawdzić kodu. Spróbuj ponownie.')
+    }
+    setStatus('idle')
+  }
+
+  if (promoCode) {
+    return (
+      <div className="rounded-2xl border border-gray-200 bg-white px-4 sm:px-6 py-4">
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <p className="font-semibold text-gray-900">
+              Kod {promoCode.code} — cena promocyjna {formatPrice(promoCode.promoNetto)} zl netto
+            </p>
+            <p className="text-sm text-gray-600 mt-1 leading-relaxed">
+              {!hasMatchingItem
+                ? `Kod dotyczy pozycji ${promoCode.productName || promoCode.sku}. Dodaj ją do koszyka, żeby cena się przeliczyła.`
+                : overLimit
+                ? `Cena promocyjna obejmuje ${promoCode.maxQty} szt. Przy większym zamówieniu napisz do nas — przygotujemy wycenę.`
+                : `Obowiązuje do ${promoCode.maxQty} szt. w tym zamówieniu.`}
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={() => onApply(null)}
+            className="text-sm text-gray-500 hover:text-red-500 transition-colors flex-shrink-0"
+          >
+            Usuń
+          </button>
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <div className="rounded-2xl border border-gray-200 bg-white px-4 sm:px-6 py-4">
+      {!otwarte ? (
+        <button
+          type="button"
+          onClick={() => setOtwarte(true)}
+          className="text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors"
+        >
+          Mam kod rabatowy
+        </button>
+      ) : (
+        <form onSubmit={sprawdz} className="space-y-2">
+          <label htmlFor="promo-code" className="block text-sm font-medium text-gray-700">
+            Kod rabatowy
+          </label>
+          <div className="flex gap-2">
+            <input
+              id="promo-code"
+              type="text"
+              autoFocus
+              value={wpisany}
+              onChange={(e) => setWpisany(e.target.value.toUpperCase())}
+              placeholder="ZEBRA-XXXX-XXXX"
+              className="flex-1 rounded-lg border border-gray-200 bg-white px-4 py-2.5 text-sm tracking-wider placeholder:text-gray-400 placeholder:tracking-normal focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20"
+            />
+            <button
+              type="submit"
+              disabled={status === 'sprawdzam' || !wpisany.trim()}
+              className="px-5 py-2.5 bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            >
+              {status === 'sprawdzam' ? 'Sprawdzam...' : 'Zastosuj'}
+            </button>
+          </div>
+          {blad && <p className="text-sm text-red-600">{blad}</p>}
+          <p className="text-xs text-gray-500">
+            Kod otrzymasz mailem po zgłoszeniu z karty produktu objętego promocją.
+          </p>
+        </form>
+      )}
     </div>
   )
 }

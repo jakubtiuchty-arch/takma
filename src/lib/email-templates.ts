@@ -924,3 +924,71 @@ export function buildRepairSubmittedAdminEmail(data: {
       ),
   })
 }
+
+// #17 — Kod rabatowy do promocji producenckiej (Customer)
+export function buildPromoCodeEmail(data: {
+  productName: string
+  productSlug: string
+  code: string
+  sku: string
+  promoNetto: number
+  regularNetto: number
+  maxQty: number
+  expiresAt: Date
+}): string {
+  const link = `https://www.takma.com.pl/produkt/${data.productSlug}`
+  const wazny = data.expiresAt.toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })
+
+  const kodBox = `
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:20px 0">
+                <tr>
+                  <td align="center" style="padding:22px 16px;background-color:#f8fafc;border:1px solid #e2e8f0;border-radius:12px">
+                    <p style="margin:0 0 10px;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:#64748b">Tw&#243;j kod rabatowy</p>
+                    <p style="margin:0;font-size:26px;font-weight:700;letter-spacing:0.12em;color:#0f172a;font-family:'Courier New',Courier,monospace">${esc(data.code)}</p>
+                    <p style="margin:10px 0 0;font-size:13px;color:#64748b">wa&#380;ny do ${wazny} &middot; do ${data.maxQty} szt.</p>
+                  </td>
+                </tr>
+              </table>`
+
+  const kroki = `
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:8px 0 4px">
+                ${[
+                  `Otw&#243;rz kart&#281; produktu <a href="${link}" style="color:#2563eb">${esc(data.productName)}</a> i dodaj do koszyka.`,
+                  'Przejd&#378; do zam&#243;wienia i w polu <strong>Kod rabatowy</strong> wpisz kod z tej wiadomo&#347;ci.',
+                  `Cena pozycji zmieni si&#281; na <strong>${fmtPLN(data.promoNetto)} z&#322; netto</strong> za sztuk&#281;.`,
+                  'Wype&#322;nij dane do faktury i z&#322;&#243;&#380; zam&#243;wienie.',
+                ].map((tekst, i) => `
+                <tr>
+                  <td valign="top" style="width:28px;padding:6px 0">
+                    <table role="presentation" cellpadding="0" cellspacing="0"><tr>
+                      <td align="center" valign="middle" style="width:22px;height:22px;background-color:#1e40af;border-radius:11px;font-size:12px;font-weight:700;color:#ffffff;line-height:22px">${i + 1}</td>
+                    </tr></table>
+                  </td>
+                  <td style="padding:6px 0 6px 10px;font-size:15px;line-height:1.6;color:#374151">${tekst}</td>
+                </tr>`).join('')}
+              </table>`
+
+  return emailLayout({
+    preheader: `Kod ${data.code} — ${data.productName} w cenie ${fmtPLN(data.promoNetto)} zł netto`,
+    content:
+      emailHeader({ title: 'Kod do zam&#243;wienia w cenie promocyjnej', subtitle: esc(data.productName), accent: 'blue' }) +
+      emailBody(
+        emailGreeting() +
+        emailText(
+          `dzi&#281;kujemy za zg&#322;oszenie. Przygotowali&#347;my dla Pa&#324;stwa indywidualny kod, kt&#243;ry obni&#380;a cen&#281; ` +
+          `<strong>${esc(data.productName)}</strong> (nr katalogowy ${esc(data.sku)}) z ${fmtPLN(data.regularNetto)} z&#322; ` +
+          `do <strong>${fmtPLN(data.promoNetto)} z&#322; netto</strong> za sztuk&#281;.`
+        ) +
+        kodBox +
+        emailSectionTitle('Jak z&#322;o&#380;y&#263; zam&#243;wienie') +
+        kroki +
+        emailButton('Przejd&#378; do produktu', link, '#1e40af') +
+        emailInfoBlue(
+          `Kod jest przypisany do Pa&#324;stwa zg&#322;oszenia i obowi&#261;zuje w jednym zam&#243;wieniu, ` +
+          `do ${data.maxQty} sztuk. Wi&#281;ksze zam&#243;wienie wycenimy indywidualnie &mdash; wystarczy odpisa&#263; na t&#281; wiadomo&#347;&#263;.`
+        ) +
+        emailText('W razie pyta&#324; prosimy o kontakt &mdash; odpowiadamy w ci&#261;gu jednego dnia roboczego.') +
+        emailSignature()
+      ),
+  })
+}

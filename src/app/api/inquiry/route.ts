@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { sendEmail } from '@/lib/email'
-import { buildAdminInquiryEmail, buildInquiryConfirmationEmail } from '@/lib/email-templates'
+import { buildAdminInquiryEmail, buildInquiryConfirmationEmail, buildPromoCodeEmail } from '@/lib/email-templates'
+import { wystawKod } from '@/lib/promo-codes'
 import { checkSpam, getClientIp } from '@/lib/spam-protection'
 import { verifyTurnstile } from '@/lib/turnstile'
 import { prisma } from '@/lib/db'
@@ -93,18 +94,52 @@ export async function POST(request: NextRequest) {
     ]
     const productLink = productSlug ? `https://www.takma.com.pl/produkt/${productSlug}` : ''
 
+    // Zgłoszenie promocyjne — imienny kod rabatowy dla tego klienta.
+    // Cena voucherowa nie może obowiązywać każdego, kto doda produkt do koszyka,
+    // więc rabat wychodzi wyłącznie kodem powiązanym z tym zgłoszeniem.
+    let kod = null
+    if (promo && productSlug) {
+      try {
+        kod = await wystawKod({ productSlug, productName: productName || '', name, email, phone })
+      } catch (e) {
+        console.error('[Inquiry] Nie udało się wystawić kodu:', (e as Error).message)
+      }
+    }
+
     // Mail do admina — nowe zapytanie o produkt
     await sendEmail({
       to: adminEmails,
-      subject: promo ? `🏷️ [PROMOCJA — zamówienie] ${productName || 'Produkt'} — ${name}` : `[Zapytanie] ${productName || 'Produkt'} — ${name}`,
-      html: buildAdminInquiryEmail({ name, email, phone, productName: productName || 'Brak nazwy produktu', productLink: productLink || undefined, message }),
+      subject: kod
+        ? `🏷️ [PROMOCJA — kod ${kod.code}] ${productName || 'Produkt'} — ${name}`
+        : promo ? `🏷️ [PROMOCJA — zamówienie] ${productName || 'Produkt'} — ${name}` : `[Zapytanie] ${productName || 'Produkt'} — ${name}`,
+      html: buildAdminInquiryEmail({
+        name, email, phone,
+        productName: productName || 'Brak nazwy produktu',
+        productLink: productLink || undefined,
+        message: kod
+          ? `${message}\n\n— — —\nKod wystawiony automatycznie: ${kod.code}\n${kod.sku} — ${kod.promoNetto} zł netto/szt., do ${kod.maxQty} szt., ważny do ${kod.expiresAt.toLocaleDateString('pl-PL')}.\nDo załatwienia: voucher Zebra CEE na tego klienta.`
+          : message,
+      }),
     })
 
-    // Mail do klienta — potwierdzenie otrzymania zapytania
+    // Mail do klienta — kod z instrukcją zamówienia albo zwykłe potwierdzenie
     await sendEmail({
       to: email,
-      subject: promo ? `Potwierdzenie zamówienia promocyjnego: ${productName || 'produkt'} — TAKMA` : `Potwierdzenie zapytania: ${productName || 'produkt'} — TAKMA`,
-      html: buildInquiryConfirmationEmail({ name, productName: productName || '', message }),
+      subject: kod
+        ? `Kod rabatowy ${kod.code}: ${productName || 'produkt'} za ${kod.promoNetto} zł netto — TAKMA`
+        : promo ? `Potwierdzenie zamówienia promocyjnego: ${productName || 'produkt'} — TAKMA` : `Potwierdzenie zapytania: ${productName || 'produkt'} — TAKMA`,
+      html: kod
+        ? buildPromoCodeEmail({
+            productName: productName || '',
+            productSlug,
+            code: kod.code,
+            sku: kod.sku,
+            promoNetto: kod.promoNetto,
+            regularNetto: kod.regularNetto,
+            maxQty: kod.maxQty,
+            expiresAt: kod.expiresAt,
+          })
+        : buildInquiryConfirmationEmail({ name, productName: productName || '', message }),
     })
 
     return NextResponse.json({ ok: true })

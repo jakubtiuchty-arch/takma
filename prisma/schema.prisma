@@ -890,3 +890,30 @@ model Tender {
   @@index([submittingOffersDate])
   @@map("tenders")
 }
+
+/// Kod rabatowy na promocję producencką, wystawiany imiennie po zgłoszeniu
+/// przez formularz na karcie produktu. Rabat Zebry pochodzi z vouchera na
+/// konkretnego klienta końcowego, więc cena promocyjna nie może być dostępna
+/// dla każdego, kto doda produkt do koszyka — kod wiąże ją z jednym zgłoszeniem,
+/// jednym numerem katalogowym i jednym zamówieniem.
+model PromoCode {
+  id          String    @id @default(cuid())
+  code        String    @unique
+  sku         String    // numer katalogowy objęty ceną promocyjną
+  priceNetto  Int       // cena promocyjna netto w groszach
+  maxQty      Int       @default(3)
+  productName String?
+  productSlug String?
+  name        String
+  email       String
+  phone       String?
+  expiresAt   DateTime
+  usedAt      DateTime?
+  orderNumber String?
+  revoked     Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+
+  @@index([email])
+  @@index([createdAt])
+  @@map("promo_codes")
+}

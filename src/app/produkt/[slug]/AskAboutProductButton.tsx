@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import { createPortal } from 'react-dom'
 import { MailIcon, CloseIcon, CheckIcon } from '@/components/ui/Icons'
 import Turnstile from '@/components/Turnstile'
+import { KODY_RABATOWE_AUTO } from '@/data/promos'
 import { trackGenerateLead, trackFormSubmit } from '@/lib/ga-events'
 
 interface AskAboutProductButtonProps {
@@ -131,9 +132,13 @@ function InquiryModal({
             <div className="mx-auto w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-4">
               <CheckIcon size={28} className="text-green-600" />
             </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">Zapytanie wysłane</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              {promo && KODY_RABATOWE_AUTO ? 'Kod jest w drodze' : 'Zapytanie wysłane'}
+            </h3>
             <p className="text-sm text-gray-500 mb-6">
-              Odpowiemy najszybciej jak to możliwe — zwykle w ciągu 1 godziny roboczej.
+              {promo && KODY_RABATOWE_AUTO
+                ? 'Wysłaliśmy na Twój adres kod rabatowy wraz z instrukcją zamówienia. Sprawdź skrzynkę — wiadomość dociera w ciągu kilku minut.'
+                : 'Odpowiemy najszybciej jak to możliwe — zwykle w ciągu 1 godziny roboczej.'}
             </p>
             <button
               onClick={onClose}
@@ -145,7 +150,9 @@ function InquiryModal({
         ) : (
           <form onSubmit={handleSubmit} className="px-4 py-4 sm:px-6 sm:py-5 space-y-3 sm:space-y-4">
             <p className="text-sm text-gray-500 -mt-1">
-              Wypełnij formularz, a nasz doradca skontaktuje się z Tobą.
+              {promo && KODY_RABATOWE_AUTO
+                ? 'Wypełnij formularz, a wyślemy Ci kod rabatowy do zamówienia w cenie promocyjnej.'
+                : 'Wypełnij formularz, a nasz doradca skontaktuje się z Tobą.'}
             </p>
 
             {/* Imię */}

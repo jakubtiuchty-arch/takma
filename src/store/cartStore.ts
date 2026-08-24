@@ -81,9 +81,21 @@ export interface CartItem {
   quoteNumber?: string
 }
 
+/** Kod rabatowy wpisany w koszyku — dane przyjęte z weryfikacji na serwerze. */
+export interface AppliedPromoCode {
+  code: string
+  /** numer katalogowy objęty ceną promocyjną */
+  sku: string
+  promoNetto: number
+  maxQty: number
+  productName: string | null
+}
+
 interface CartStore {
   items: CartItem[]
   isDrawerOpen: boolean
+  /** Imienny kod z promocji producenckiej; null = ceny regularne. */
+  promoCode: AppliedPromoCode | null
 
   // Actions
   addItem: (product: {
@@ -101,6 +113,7 @@ interface CartStore {
   updateQuantity: (productId: string, quantity: number) => void
   updateNote: (productId: string, note: string) => void
   clearAll: () => void
+  setPromoCode: (code: AppliedPromoCode | null) => void
   toggleDrawer: () => void
   openDrawer: () => void
   closeDrawer: () => void
@@ -130,6 +143,7 @@ export const useCartStore = create<CartStore>()(
     (set, get) => ({
       items: [],
       isDrawerOpen: false,
+      promoCode: null,
 
       addItem: (product) => {
         const { items } = get()
@@ -207,7 +221,11 @@ export const useCartStore = create<CartStore>()(
       },
 
       clearAll: () => {
-        set({ items: [] })
+        set({ items: [], promoCode: null })
+      },
+
+      setPromoCode: (code) => {
+        set({ promoCode: code })
       },
 
       toggleDrawer: () => {
@@ -470,7 +488,7 @@ export const useCartStore = create<CartStore>()(
     }),
     {
       name: 'takma-cart-storage',
-      partialize: (state) => ({ items: state.items }), // Persist tylko items
+      partialize: (state) => ({ items: state.items, promoCode: state.promoCode }),
     }
   )
 )

@@ -3,6 +3,7 @@
 import { p24Register, p24Configured } from '@/lib/p24'
 import { createOrder } from '@/lib/orders'
 import { applyQuotePricing } from '@/lib/quote-pricing'
+import { zastosujKod, oznaczKodJakoUzyty } from '@/lib/promo-codes'
 
 interface CheckoutItem {
   productId: string
@@ -34,7 +35,8 @@ export async function createCheckoutSession(
   items: CheckoutItem[],
   customer: CustomerData,
   shippingNetto: number,
-  notes?: string
+  notes?: string,
+  promoCode?: string
 ): Promise<{ url: string; orderNumber: string }> {
   if (!p24Configured()) {
     throw new Error('Płatności online nie są skonfigurowane. Skontaktuj się z obsługą.')
@@ -42,8 +44,9 @@ export async function createCheckoutSession(
   // Pomiary czasu — diagnoza wolnego redirectu do P24 (2026-06-11: ~20-40 s)
   const t0 = Date.now()
 
-  // Ceny pozycji z oferty czytamy z bazy — nie ufamy temu, co przyszło z koszyka.
-  items = await applyQuotePricing(items)
+  // Ceny pozycji z oferty czytamy z bazy, a cenę promocyjną z kodu liczymy od
+  // nowa — nie ufamy temu, co przyszło z koszyka.
+  items = await zastosujKod(await applyQuotePricing(items), promoCode)
 
   // 1. Create order in DB with status PENDING_PAYMENT
   const order = await createOrder({
@@ -69,6 +72,8 @@ export async function createCheckoutSession(
     shippingNetto,
     customerNotes: notes,
   })
+
+  await oznaczKodJakoUzyty(promoCode, order.orderNumber)
 
   console.log(`[checkout] createOrder ${order.orderNumber}: ${Date.now() - t0}ms`)
 
@@ -104,9 +109,10 @@ export async function createProformaOrder(
   items: CheckoutItem[],
   customer: CustomerData,
   shippingNetto: number,
-  notes?: string
+  notes?: string,
+  promoCode?: string
 ): Promise<{ orderNumber: string }> {
-  items = await applyQuotePricing(items)
+  items = await zastosujKod(await applyQuotePricing(items), promoCode)
 
   // 1. Create order in DB with status AWAITING_PAYMENT
   const order = await createOrder({
@@ -132,6 +138,8 @@ export async function createProformaOrder(
     shippingNetto,
     customerNotes: notes,
   })
+
+  await oznaczKodJakoUzyty(promoCode, order.orderNumber)
 
   return { orderNumber: order.orderNumber }
 }
