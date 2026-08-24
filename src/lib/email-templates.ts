@@ -35,7 +35,7 @@ function fmtPLN(amount: number): string {
 
 // ─── Layout Components ──────────────────────────────────────────────────────
 
-function emailLayout(opts: { preheader: string; content: string }): string {
+function emailLayout(opts: { preheader: string; content: string; after?: string }): string {
   return `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
 <head>
@@ -71,6 +71,7 @@ function emailLayout(opts: { preheader: string; content: string }): string {
         <table role="presentation" class="outer" width="600" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.1)">
           ${opts.content}
         </table>
+        ${opts.after || ''}
         ${emailFooter()}
       </td>
     </tr>
@@ -267,6 +268,66 @@ function emailSectionTitle(title: string): string {
 
 function emailMessageBox(content: string): string {
   return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:16px 0"><tr><td style="padding:14px 16px;border-left:4px solid #d1d5db;background-color:#f9fafb;border-radius:0 8px 8px 0;font-size:14px;line-height:1.6;color:#374151;white-space:pre-wrap">${content}</td></tr></table>`
+}
+
+/**
+ * Ciemne kafle promocyjne pod treścią wiadomości — ta sama forma co sekcja
+ * „Modele objęte promocją" na /promocje. Zdjęcia to pliki PNG z serwisu, więc
+ * przezroczyste tło siada na ciemnym kaflu bez obrysu.
+ */
+function emailPromoTiles(
+  label: string,
+  items: { slug: string; name: string; promoNetto: number; regularNetto: number }[],
+): string {
+  if (items.length === 0) return ''
+
+  // Kwoty bez końcówek groszowych — tak samo jak na kaflach /promocje.
+  const cena = (n: number) => n.toLocaleString('pl-PL', { maximumFractionDigits: 0 })
+  // Najmocniejszy rabat na górze; to on ma zatrzymać wzrok.
+  const posortowane = [...items].sort(
+    (a, b) => a.promoNetto / a.regularNetto - b.promoNetto / b.regularNetto,
+  )
+
+  const tile = (p: { slug: string; name: string; promoNetto: number; regularNetto: number }) => {
+    const pct = Math.round((1 - p.promoNetto / p.regularNetto) * 100)
+    const url = `https://www.takma.com.pl/produkt/${p.slug}`
+    return `
+          <tr>
+            <td style="padding:0 0 12px">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#030712;border-radius:16px">
+                <tr>
+                  <td style="padding:20px 8px 20px 24px" valign="middle">
+                    <a href="${url}" style="display:inline-block;padding:5px 12px;background-color:#A8F000;border-radius:999px;font-size:11px;font-weight:700;color:#030712;text-decoration:none;letter-spacing:0.06em">&minus;${pct}%</a>
+                    <p style="margin:12px 0 8px;font-size:18px;font-weight:700;color:#ffffff;line-height:1.3">
+                      <a href="${url}" style="color:#ffffff;text-decoration:none">${esc(p.name)}</a>
+                    </p>
+                    <p style="margin:0;font-size:28px;font-weight:800;color:#A8F000;line-height:1.1">
+                      ${cena(p.promoNetto)} z&#322; <span style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.6)">netto</span>
+                    </p>
+                    <p style="margin:2px 0 14px;font-size:15px;color:rgba(255,255,255,0.45);text-decoration:line-through">${cena(p.regularNetto)} z&#322;</p>
+                    <a href="${url}" style="font-size:15px;font-weight:600;color:#ffffff;text-decoration:none">Zobacz produkt &rarr;</a>
+                  </td>
+                  <td width="150" align="right" valign="bottom" style="padding:0 8px 8px 0">
+                    <a href="${url}"><img src="https://www.takma.com.pl/images/promocje/${p.slug}.png" width="130" alt="" style="display:block;width:130px;max-width:130px;height:auto" /></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>`
+  }
+
+  return `
+        <table role="presentation" width="600" class="outer" cellpadding="0" cellspacing="0" style="margin-top:20px">
+          <tr>
+            <td style="padding:0 0 10px;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#6b7280">${esc(label)}</td>
+          </tr>
+          ${posortowane.map(tile).join('')}
+          <tr>
+            <td style="padding:2px 0 0;font-size:13px;line-height:1.6;color:#9ca3af">
+              Ceny netto za sztuk&#281;. Kod na wybrany model wy&#347;lemy po zg&#322;oszeniu z jego karty produktu.
+            </td>
+          </tr>
+        </table>`
 }
 
 // ─── Template Builders ──────────────────────────────────────────────────────
@@ -937,7 +998,7 @@ export function buildPromoCodeEmail(data: {
   expiresAt: Date
   /** pozostałe produkty w tej samej promocji — dobrane na zasadzie uzupełnienia
    *  (kto bierze drukarkę, dostaje skanery; kto skaner — drukarki) */
-  inne: { slug: string; name: string; promoNetto: number; regularNetto: number }[]
+  inne: { slug: string; name: string; promoNetto: number; regularNetto: number; kategoria: 'drukarka' | 'skaner' }[]
 }): string {
   const link = `https://www.takma.com.pl/produkt/${data.productSlug}`
   const wazny = data.expiresAt.toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })
@@ -971,23 +1032,6 @@ export function buildPromoCodeEmail(data: {
                 </tr>`).join('')}
               </table>`
 
-  const inne = data.inne.length === 0 ? '' : `
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:12px 0 4px">
-                ${data.inne.map(pozycja => `
-                <tr>
-                  <td style="padding:10px 0;border-bottom:1px solid #f1f5f9">
-                    <a href="https://www.takma.com.pl/produkt/${esc(pozycja.slug)}" style="color:#1e293b;font-size:15px;font-weight:600;text-decoration:none">${esc(pozycja.name)}</a>
-                  </td>
-                  <td align="right" style="padding:10px 0;border-bottom:1px solid #f1f5f9;white-space:nowrap">
-                    <span style="font-size:15px;font-weight:700;color:#1e293b">${fmtPLN(pozycja.promoNetto)} z&#322;</span>
-                    <span style="font-size:13px;color:#94a3b8;text-decoration:line-through;margin-left:8px">${fmtPLN(pozycja.regularNetto)} z&#322;</span>
-                  </td>
-                </tr>`).join('')}
-              </table>
-              <p style="margin:8px 0 16px;font-size:14px;line-height:1.6;color:#6b7280">
-                Ceny netto za sztuk&#281;. Kod na wybrany model wy&#347;lemy po zg&#322;oszeniu z jego karty produktu.
-              </p>`
-
   return emailLayout({
     preheader: `Kod ${data.code} — ${data.productName} w cenie ${fmtPLN(data.promoNetto)} zł netto`,
     content:
@@ -1007,11 +1051,12 @@ export function buildPromoCodeEmail(data: {
           `Kod jest przypisany do Pa&#324;stwa zg&#322;oszenia i obowi&#261;zuje w jednym zam&#243;wieniu, ` +
           `do ${data.maxQty} sztuk. Wi&#281;ksze zam&#243;wienie wycenimy indywidualnie &mdash; wystarczy odpisa&#263; na t&#281; wiadomo&#347;&#263;.`
         ) +
-        (data.inne.length > 0
-          ? emailSectionTitle('Ta sama promocja obejmuje') + inne
-          : '') +
         emailText('W razie pyta&#324; prosimy o kontakt &mdash; odpowiadamy w ci&#261;gu jednego dnia roboczego.') +
         emailSignature()
       ),
+    after: emailPromoTiles(
+      data.inne[0]?.kategoria === 'skaner' ? 'Skanery w promocji' : 'Drukarki etykiet w promocji',
+      data.inne,
+    ),
   })
 }

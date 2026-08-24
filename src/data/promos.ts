@@ -26,10 +26,10 @@ export interface ProductPromo {
 export const ZEBRA_CEE_PROMO = {
   endDate: '2026-10-04', // ostatni dzień promocji (włącznie)
   bySlug: {
-    'zebra-ds2208': { sku: 'DS2208-SR7U2100SGW', promoNetto: 349, regularNetto: 388, name: 'Zebra DS2208', kategoria: 'skaner' },
-    'zebra-ds4608': { sku: 'DS4608-SR7U2100SGW', promoNetto: 549, regularNetto: 972, name: 'Zebra DS4608', kategoria: 'skaner' },
-    'zebra-zd230d': { sku: 'ZD23042-D0EC00EZ', promoNetto: 859, regularNetto: 1087, name: 'Zebra ZD230d (termiczna)', kategoria: 'drukarka' },
-    'zebra-zd230t': { sku: 'ZD23042-30EC00EZ', promoNetto: 879, regularNetto: 1069, name: 'Zebra ZD230t (termotransferowa)', kategoria: 'drukarka' },
+    'zebra-ds2208': { sku: 'DS2208-SR7U2100SGW', promoNetto: 349, regularNetto: 388, name: 'Skaner Zebra DS2208', kategoria: 'skaner' },
+    'zebra-ds4608': { sku: 'DS4608-SR7U2100SGW', promoNetto: 549, regularNetto: 972, name: 'Skaner Zebra DS4608', kategoria: 'skaner' },
+    'zebra-zd230d': { sku: 'ZD23042-D0EC00EZ', promoNetto: 859, regularNetto: 1087, name: 'Drukarka Zebra ZD230d', kategoria: 'drukarka' },
+    'zebra-zd230t': { sku: 'ZD23042-30EC00EZ', promoNetto: 879, regularNetto: 1069, name: 'Drukarka Zebra ZD230t', kategoria: 'drukarka' },
   } as Record<string, ProductPromo>,
 }
 
@@ -52,12 +52,12 @@ export const MAX_PROMO_QTY = 3
  */
 export function promocjeUzupelniajace(
   productSlug: string,
-): { slug: string; name: string; promoNetto: number; regularNetto: number }[] {
+): { slug: string; name: string; promoNetto: number; regularNetto: number; kategoria: 'drukarka' | 'skaner' }[] {
   const promo = activePromo(productSlug)
   if (!promo) return []
   return Object.entries(ZEBRA_CEE_PROMO.bySlug)
     .filter(([, p]) => p.kategoria !== promo.kategoria)
-    .map(([slug, p]) => ({ slug, name: p.name, promoNetto: p.promoNetto, regularNetto: p.regularNetto }))
+    .map(([slug, p]) => ({ slug, name: p.name, promoNetto: p.promoNetto, regularNetto: p.regularNetto, kategoria: p.kategoria }))
 }
 
 /**
