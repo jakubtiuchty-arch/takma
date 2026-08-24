@@ -335,7 +335,9 @@ function emailPromoTiles(
                 </table>`
   }
 
-  // Dwa kafle w rzędzie; na wąskim ekranie komórki schodzą pod siebie (.tile-cell).
+  // Dwa kafle w rzędzie, każdy wyśrodkowany w swojej połowie — inaczej para
+  // zbija się do lewej i pod białą kartą zostaje pusty pas z prawej.
+  // Na wąskim ekranie komórki schodzą pod siebie (.tile-cell).
   const rzedy: string[] = []
   for (let i = 0; i < posortowane.length; i += 2) {
     const para = posortowane.slice(i, i + 2)
@@ -344,7 +346,7 @@ function emailPromoTiles(
             <td style="padding:0 0 14px">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                 <tr>
-                  ${para.map(p => `<td class="tile-cell" width="50%" valign="bottom" style="width:50%">${tile(p)}</td>`).join('')}
+                  ${para.map(p => `<td class="tile-cell" width="50%" align="center" valign="bottom" style="width:50%">${tile(p)}</td>`).join('')}
                   ${para.length === 1 ? '<td class="tile-cell" width="50%" style="width:50%">&nbsp;</td>' : ''}
                 </tr>
               </table>
