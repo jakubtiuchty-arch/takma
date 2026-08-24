@@ -27,11 +27,11 @@ const repairFormSchema = z.object({
   company: z.string().min(1, 'Nazwa firmy jest wymagana'),
   nip: z.string().min(10, 'NIP musi miec 10 cyfr').max(10, 'NIP musi miec 10 cyfr'),
 
-  // KROK 2: Szczegoly urzadzenia
+  // KROK 2: Szczegóły urządzenia
   deviceType: z.enum(['drukarka', 'terminal', 'skaner', 'tablet', 'akcesoria', 'inne'], {
-    message: 'Wybierz typ urzadzenia',
+    message: 'Wybierz typ urządzenia',
   }),
-  deviceModel: z.string().min(1, 'Wpisz model urzadzenia'),
+  deviceModel: z.string().min(1, 'Wpisz model urządzenia'),
   serialNumber: z.string().min(1, 'Podaj numer seryjny lub zaznacz, ze jest nieczytelny'),
   purchaseDate: z.string().optional(),
   isWarranty: z.enum(['tak', 'nie', 'nie_wiem']),
@@ -133,7 +133,7 @@ export default function RepairForm() {
 
   const steps = [
     { number: 1, title: 'Dane kontaktowe' },
-    { number: 2, title: 'Szczegoly urzadzenia' },
+    { number: 2, title: 'Szczegóły urządzenia' },
     { number: 3, title: 'Opis usterki' },
     { number: 4, title: 'Adres odbioru' },
     { number: 5, title: 'Potwierdzenie' },
@@ -248,11 +248,11 @@ export default function RepairForm() {
         if (responseText.includes('Entity Too Large') || responseText.includes('too large') || responseText.includes('FUNCTION_PAYLOAD')) {
           throw new Error('Przesylane dane sa za duze. Zmniejsz rozmiar lub liczbe zdjec i sprobuj ponownie.')
         }
-        throw new Error(`Blad serwera: ${responseText.substring(0, 200)}`)
+        throw new Error(`Błąd serwera: ${responseText.substring(0, 200)}`)
       }
 
       if (!response.ok) {
-        throw new Error(result.error || 'Blad podczas wysylania zgloszenia')
+        throw new Error(result.error || 'Błąd podczas wysyłania zgłoszenia')
       }
 
       // GA4: service request lead
@@ -287,10 +287,10 @@ export default function RepairForm() {
         {/* Header */}
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2">
-            Formularz zgloszenia serwisowego (RMA)
+            Formularz zgłoszenia serwisowego (RMA)
           </h2>
           <p className="text-sm text-gray-600 max-w-2xl mx-auto">
-            Wypelnij formularz, a kurier odbierze urzadzenie z Twojego adresu &mdash; za darmo!
+            Wypełnij formularz — nadamy numer RMA i zamówimy kuriera pod wskazany adres.
           </p>
         </div>
 
@@ -336,7 +336,7 @@ export default function RepairForm() {
           <div className="mb-5 bg-red-50 border border-red-200 rounded-xl p-3 flex items-start gap-2">
             <AlertCircle className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
             <div>
-              <h4 className="font-semibold text-red-900 mb-1">Blad wysylania</h4>
+              <h4 className="font-semibold text-red-900 mb-1">Błąd wysyłania</h4>
               <p className="text-sm text-red-700">{submitError}</p>
             </div>
           </div>
@@ -453,23 +453,23 @@ export default function RepairForm() {
               </div>
             )}
 
-            {/* KROK 2: Szczegoly urzadzenia */}
+            {/* KROK 2: Szczegóły urządzenia */}
             {currentStep === 2 && (
               <div className="space-y-5">
                 <h3 className="text-xl font-semibold text-gray-900 mb-5">
-                  Szczegoly urzadzenia
+                  Szczegóły urządzenia
                 </h3>
 
                 <div>
                   <label htmlFor="deviceType" className="block text-sm font-medium text-gray-700 mb-2">
-                    Typ urzadzenia *
+                    Typ urządzenia *
                   </label>
                   <select
                     {...register('deviceType')}
                     id="deviceType"
                     className="w-full px-3 py-2 border border-gray-300 rounded-full focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
                   >
-                    <option value="">Wybierz typ urzadzenia</option>
+                    <option value="">Wybierz typ urządzenia</option>
                     <option value="drukarka">Drukarka etykiet</option>
                     <option value="terminal">Terminal mobilny</option>
                     <option value="skaner">Skaner kodow</option>
@@ -484,7 +484,7 @@ export default function RepairForm() {
 
                 <div>
                   <label htmlFor="deviceModel" className="block text-sm font-medium text-gray-700 mb-2">
-                    Model urzadzenia *
+                    Model urządzenia *
                   </label>
                   <input
                     {...register('deviceModel')}
@@ -541,7 +541,7 @@ export default function RepairForm() {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Czy urzadzenie jest w gwarancji? *
+                    Czy urządzenie jest w gwarancji? *
                   </label>
                   <div className="space-y-2">
                     {[
@@ -568,7 +568,7 @@ export default function RepairForm() {
                     <div className="mt-3 p-3 bg-green-50 border border-green-200 rounded-lg">
                       <p className="text-sm text-green-800">
                         <span className="font-medium">Wskazowka:</span> Jesli posiadasz kopie faktury zakupu,
-                        mozesz ja przeslac w czacie po zgloszeniu naprawy &mdash; przyspieszy to weryfikacje gwarancji.
+                        możesz ją przesłać w czacie po zgłoszeniu naprawy &mdash; przyspieszy to weryfikację gwarancji.
                       </p>
                     </div>
                   )}
@@ -585,14 +585,14 @@ export default function RepairForm() {
 
                 <div>
                   <label htmlFor="issueDescription" className="block text-sm font-medium text-gray-700 mb-2">
-                    Opisz problem z urzadzeniem *
+                    Opisz problem z urządzeniem *
                   </label>
                   <textarea
                     {...register('issueDescription')}
                     id="issueDescription"
                     rows={5}
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-                    placeholder="Opisz szczegolowo problem, ktory wystepuje w urzadzeniu..."
+                    placeholder="Opisz szczegółowo problem, który występuje w urządzeniu..."
                   />
                   {errors.issueDescription && (
                     <p className="mt-1 text-sm text-red-600">{errors.issueDescription.message}</p>
@@ -706,7 +706,7 @@ export default function RepairForm() {
                 <div className="bg-blue-50 border border-blue-200 rounded-xl p-3 flex items-start gap-2">
                   <AlertCircle className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
                   <p className="text-sm text-blue-900">
-                    Kurier odbierze urzadzenie z podanego adresu. Upewnij sie, ze wszystkie dane sa poprawne.
+                    Kurier odbierze urządzenie z podanego adresu. Sprawdź, czy dane są poprawne.
                   </p>
                 </div>
 
@@ -815,7 +815,7 @@ export default function RepairForm() {
             {currentStep === 5 && (
               <div className="space-y-5">
                 <h3 className="text-xl font-semibold text-gray-900 mb-5">
-                  Podsumowanie zgloszenia
+                  Podsumowanie zgłoszenia
                 </h3>
 
                 <div className="space-y-5">
@@ -956,7 +956,7 @@ export default function RepairForm() {
                   ) : (
                     <>
                       <Check className="w-4 h-4" />
-                      Wyslij zgloszenie
+                      Wyślij zgłoszenie
                     </>
                   )}
                 </button>
