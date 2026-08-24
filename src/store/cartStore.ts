@@ -79,6 +79,9 @@ export interface CartItem {
   /** Numer oferty, z której pochodzi pozycja — cena jest wtedy zamrożona
    *  (kasa nie podmienia jej na żywą) i weryfikowana po stronie serwera. */
   quoteNumber?: string
+  /** PN objęty promocją producencką — cena promocyjna zamiast żywej,
+   *  weryfikowana po stronie serwera tak samo jak cena z oferty. */
+  promoSku?: string
 }
 
 interface CartStore {
@@ -94,6 +97,7 @@ interface CartStore {
     partNumber?: string
     priceNetto?: number
     categoryId?: string
+    promoSku?: string
   }) => void
   /** Zastępuje zawartość koszyka pozycjami z oferty (link „zamów z oferty" w mailu). */
   loadFromQuote: (quoteNumber: string, items: Omit<CartItem, 'note' | 'quoteNumber'>[]) => void
@@ -159,6 +163,7 @@ export const useCartStore = create<CartStore>()(
                 note: '',
                 priceNetto: product.priceNetto,
                 categoryId: product.categoryId,
+                promoSku: product.promoSku,
               },
             ],
           })

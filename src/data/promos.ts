@@ -29,6 +29,25 @@ export const ZEBRA_CEE_PROMO = {
   } as Record<string, ProductPromo>,
 }
 
+/**
+ * Ile sztuk w jednym zamówieniu obejmuje cena promocyjna.
+ *
+ * Rabat pochodzi z vouchera Zebry wystawianego imiennie na klienta końcowego.
+ * Gdyby voucher nie przeszedł, kupujemy w cenie regularnej — przy ZD230d to
+ * 967 zł kosztu wobec 859 zł ceny, czyli 108 zł straty na sztuce. Limit trzyma
+ * tę ekspozycję w ryzach; powyżej niego pozycja liczy się po cenie regularnej.
+ * Zmiana wartości = jedna liczba tutaj.
+ */
+export const MAX_PROMO_QTY = 3
+
+/** Promocja po numerze katalogowym — do weryfikacji ceny po stronie serwera. */
+export function promoBySku(sku: string): ProductPromo | null {
+  const wpis = Object.values(ZEBRA_CEE_PROMO.bySlug).find(p => p.sku === sku)
+  if (!wpis) return null
+  const koniec = new Date(`${ZEBRA_CEE_PROMO.endDate}T23:59:59+02:00`)
+  return new Date() <= koniec ? wpis : null
+}
+
 /** Promocja aktywna dla slugu — null gdy brak / po terminie. */
 export function activePromo(productSlug: string): ProductPromo | null {
   const promo = ZEBRA_CEE_PROMO.bySlug[productSlug]
@@ -48,4 +67,42 @@ export const ZEBRA_ZIPSHIP = {
 
 export function zipshipActive(): boolean {
   return new Date() <= new Date(`${ZEBRA_ZIPSHIP.endDate}T23:59:59+01:00`)
+}
+
+/**
+ * Program testów DS3678 z maskowaniem kanałów BLE (Zebra Demo Offer, do 31.12.2026).
+ *
+ * To NIE jest promocja cenowa i celowo nie podajemy nigdzie procentu rabatu:
+ * oferta dystrybutora dotyczy sprzętu demonstracyjnego, a pula to tylko 3 sztuki.
+ * Publikowanie ceny promocyjnej zakotwiczyłoby cennik DS3678 w dół i nie dałoby
+ * się jej utrzymać przy zamówieniu floty — patrz landing /testy-ds3678.
+ *
+ * Wyłączenie akcji po skompletowaniu klientów: ustaw `slotsTaken: 3` (albo
+ * `active: false`). Znikają wtedy: slajd w hero, baner na kartach DS3678
+ * i sam landing (przekierowanie 404 -> kategoria skanerów).
+ */
+export const DS3678_DEMO = {
+  active: true,
+  endDate: '2026-12-31',
+  slots: 3,
+  slotsTaken: 0,
+  /** karty produktów, na których pokazujemy baner */
+  slugs: [
+    'zebra-ds3678-sr',
+    'zebra-ds3678-xr',
+    'zebra-ds3678-hp',
+    'zebra-ds3678-dp',
+    'zebra-ds3678-hd',
+  ],
+}
+
+export function ds3678DemoActive(): boolean {
+  if (!DS3678_DEMO.active) return false
+  if (DS3678_DEMO.slotsTaken >= DS3678_DEMO.slots) return false
+  return new Date() <= new Date(`${DS3678_DEMO.endDate}T23:59:59+01:00`)
+}
+
+/** Ile stanowisk testowych zostało — używane w treści („zostały 2 z 3"). */
+export function ds3678DemoSlotsLeft(): number {
+  return Math.max(0, DS3678_DEMO.slots - DS3678_DEMO.slotsTaken)
 }

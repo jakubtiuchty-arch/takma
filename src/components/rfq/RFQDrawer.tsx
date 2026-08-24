@@ -6,6 +6,7 @@ import clsx from 'clsx'
 import Image from 'next/image'
 import { CloseIcon, TrashIcon, MinusIcon, PlusIcon, ArrowRightIcon } from '@/components/ui/Icons'
 import { Button } from '@/components/ui'
+import { MAX_PROMO_QTY } from '@/data/promos'
 import { useCartStore, type CartItem } from '@/store/cartStore'
 import { products } from '@/data/products'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
@@ -46,6 +47,10 @@ function getItemPrice(
 ): number | undefined {
   // Pozycja z oferty handlowej — cena wynegocjowana, zamrożona jak w kasie.
   if (item.quoteNumber && item.priceNetto) {
+    return item.priceNetto
+  }
+  // Promocja producencka — cena z karty produktu, do limitu sztuk.
+  if (item.promoSku && item.priceNetto && item.quantity <= MAX_PROMO_QTY) {
     return item.priceNetto
   }
   // Pozycja kartonowa (taśma) — cena kartonowa (marża 13%) jest zapisana w priceNetto;

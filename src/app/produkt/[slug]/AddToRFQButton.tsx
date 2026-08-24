@@ -7,6 +7,7 @@ import { useCartStore } from '@/store/cartStore'
 import { Product } from '@/data/products'
 import { useSmartPrice } from './SmartPriceContext'
 import { trackAddToCart, trackNotifyMe } from '@/lib/ga-events'
+import { promoBySku } from '@/data/promos'
 
 interface AddToRFQButtonProps {
   product: Product
@@ -143,14 +144,19 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
   })()
 
   const handleAdd = () => {
+    // Wariant objęty promocją producencką trafia do koszyka w cenie promocyjnej —
+    // tej samej, którą widać na karcie. Wcześniej karta pokazywała 859 zł, a koszyk
+    // naliczał żywe 1 064 zł, więc kupno „z półki" było droższe niż przez formularz.
+    const promo = displayedPn ? promoBySku(displayedPn) : null
     addItem({
       id: product.id,
       name: product.name,
       slug: product.slug,
       image: product.images[0],
       partNumber: displayedPn,
-      priceNetto: price,
+      priceNetto: promo ? promo.promoNetto : price,
       categoryId: product.categoryId,
+      promoSku: promo ? displayedPn : undefined,
     })
     trackAddToCart({
       item_id: product.id,

@@ -1,4 +1,5 @@
 import { prisma } from '@/lib/db'
+import { promoBySku, MAX_PROMO_QTY } from '@/data/promos'
 
 /**
  * Weryfikacja cen pozycji pochodzących z oferty handlowej.
@@ -18,6 +19,22 @@ export interface PricedItem {
   quantity: number
   priceNetto: number // PLN
   quoteNumber?: string | null
+  promoSku?: string | null
+}
+
+/**
+ * Ceny promocyjne liczone od nowa z promos.ts — tak samo jak przy ofertach nie
+ * ufamy kwocie z koszyka. Powyżej MAX_PROMO_QTY promocja nie obowiązuje i cenę
+ * ustala zwykła ścieżka (żywy cennik), więc pozycja zostaje bez zmian.
+ */
+export function applyPromoPricing<T extends PricedItem>(items: T[]): T[] {
+  return items.map(item => {
+    if (!item.promoSku) return item
+    const promo = promoBySku(item.promoSku)
+    if (!promo) return item                       // promocja wygasła lub zmyślony SKU
+    if (item.quantity > MAX_PROMO_QTY) return item
+    return { ...item, priceNetto: promo.promoNetto }
+  })
 }
 
 export class QuotePricingError extends Error {}
