@@ -1406,8 +1406,9 @@ function PriceSummary({
 //
 // Cena z promocji producenckiej nie obowiązuje każdego, kto doda produkt do
 // koszyka: rabat Zebry idzie z vouchera wystawianego imiennie, więc klient
-// dostaje kod mailem po zgłoszeniu z karty produktu. Pole jest zwinięte —
-// kto kodu nie ma, nie ma się nad czym zastanawiać.
+// dostaje kod mailem po zgłoszeniu z karty produktu. Pole jest od razu
+// widoczne i nazwane tak samo jak w mailu z kodem („Kod rabatowy") — klient,
+// który przepisuje kod z wiadomości, ma trafić bez szukania.
 
 function PromoCodeBox({
   promoCode,
@@ -1420,7 +1421,6 @@ function PromoCodeBox({
   hasMatchingItem: boolean
   overLimit: boolean
 }) {
-  const [otwarte, setOtwarte] = useState(false)
   const [wpisany, setWpisany] = useState('')
   const [status, setStatus] = useState<'idle' | 'sprawdzam'>('idle')
   const [blad, setBlad] = useState('')
@@ -1478,44 +1478,34 @@ function PromoCodeBox({
   }
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white px-4 sm:px-6 py-4">
-      {!otwarte ? (
-        <button
-          type="button"
-          onClick={() => setOtwarte(true)}
-          className="text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors"
-        >
-          Mam kod rabatowy
-        </button>
-      ) : (
-        <form onSubmit={sprawdz} className="space-y-2">
-          <label htmlFor="promo-code" className="block text-sm font-medium text-gray-700">
-            Kod rabatowy
-          </label>
-          <div className="flex gap-2">
-            <input
-              id="promo-code"
-              type="text"
-              autoFocus
-              value={wpisany}
-              onChange={(e) => setWpisany(e.target.value.toUpperCase())}
-              placeholder="ZEBRA-XXXX-XXXX"
-              className="flex-1 rounded-lg border border-gray-200 bg-white px-4 py-2.5 text-sm tracking-wider placeholder:text-gray-400 placeholder:tracking-normal focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20"
-            />
-            <button
-              type="submit"
-              disabled={status === 'sprawdzam' || !wpisany.trim()}
-              className="px-5 py-2.5 bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-            >
-              {status === 'sprawdzam' ? 'Sprawdzam...' : 'Zastosuj'}
-            </button>
-          </div>
-          {blad && <p className="text-sm text-red-600">{blad}</p>}
-          <p className="text-xs text-gray-500">
-            Kod otrzymasz mailem po zgłoszeniu z karty produktu objętego promocją.
-          </p>
-        </form>
-      )}
+    <div className="rounded-2xl border border-gray-200 bg-white overflow-hidden">
+      <div className="px-4 sm:px-6 py-4 border-b border-gray-200">
+        <h2 className="font-semibold text-gray-900">Kod rabatowy</h2>
+        <p className="text-sm text-gray-500 mt-0.5">
+          Masz kod z promocji? Wpisz go tutaj, a cena przeliczy się od razu.
+        </p>
+      </div>
+      <form onSubmit={sprawdz} className="px-4 sm:px-6 py-4 space-y-2">
+        <div className="flex flex-col sm:flex-row gap-2">
+          <input
+            id="promo-code"
+            type="text"
+            value={wpisany}
+            onChange={(e) => setWpisany(e.target.value.toUpperCase())}
+            placeholder="ZEBRA-XXXX-XXXX"
+            aria-label="Kod rabatowy"
+            className="flex-1 rounded-lg border border-gray-300 bg-white px-4 py-3 text-base font-medium tracking-wider placeholder:font-normal placeholder:text-gray-400 placeholder:tracking-normal focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20"
+          />
+          <button
+            type="submit"
+            disabled={status === 'sprawdzam' || !wpisany.trim()}
+            className="px-6 py-3 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors whitespace-nowrap"
+          >
+            {status === 'sprawdzam' ? 'Sprawdzam...' : 'Zastosuj'}
+          </button>
+        </div>
+        {blad && <p className="text-sm text-red-600">{blad}</p>}
+      </form>
     </div>
   )
 }
