@@ -60,6 +60,7 @@ function emailLayout(opts: { preheader: string; content: string; after?: string 
     @media only screen and (max-width: 620px) {
       .outer { width: 100% !important; }
       .inner { padding: 20px 16px !important; }
+      .tile-cell { display: block !important; width: 100% !important; padding-bottom: 14px !important; }
     }
   </style>
 </head>
@@ -281,14 +282,14 @@ function emailMessageBox(content: string): string {
  * robi scripts/promo-mail-tiles.py — stamtąd pochodzą wymiary poniżej.
  */
 const MAIL_TILE: Record<string, { h: number; l: number; r: number }> = {
-  'zebra-ds4608': { h: 215, l: 62, r: 50 },
-  'zebra-ds2208': { h: 215, l: 66, r: 54 },
-  'zebra-zd230d': { h: 165, l: 100, r: 82 },
-  'zebra-zd230t': { h: 165, l: 97, r: 80 },
+  'zebra-ds4608': { h: 125, l: 36, r: 29 },
+  'zebra-ds2208': { h: 125, l: 38, r: 32 },
+  'zebra-zd230d': { h: 95, l: 58, r: 47 },
+  'zebra-zd230t': { h: 95, l: 56, r: 46 },
 }
 
-/** Szerokość ciemnego kafla w mailu — jak na stronie węższy od kolumny. */
-const TILE_DARK = 354
+/** Szerokość ciemnego kafla — dwa kafle w rzędzie na 600 px wiadomości. */
+const TILE_DARK = 195
 
 function emailPromoTiles(
   label: string,
@@ -307,36 +308,48 @@ function emailPromoTiles(
     const pct = Math.round((1 - p.promoNetto / p.regularNetto) * 100)
     const url = `https://www.takma.com.pl/produkt/${p.slug}`
     const img = `https://www.takma.com.pl/images/promocje/mail/${p.slug}`
-    const wym = MAIL_TILE[p.slug] ?? { h: 200, l: 60, r: 50 }
+    const wym = MAIL_TILE[p.slug] ?? { h: 125, l: 36, r: 29 }
     const tekst = TILE_DARK - wym.l
 
     return `
+                <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:separate">
+                  <tr>
+                    <td width="${tekst}" bgcolor="#030712" valign="middle" style="width:${tekst}px;background-color:#030712;border-radius:14px 0 0 14px;padding:14px 0 14px 16px">
+                      <a href="${url}" style="display:inline-block;padding:3px 9px;background-color:#A8F000;border-radius:999px;font-size:10px;font-weight:700;color:#030712;text-decoration:none">&minus;${pct}%</a>
+                      <p style="margin:9px 0 6px;font-size:14px;font-weight:700;color:#ffffff;line-height:1.25">
+                        <a href="${url}" style="color:#ffffff;text-decoration:none">${esc(p.name)}</a>
+                      </p>
+                      <p style="margin:0;font-size:21px;font-weight:800;color:#A8F000;line-height:1.1">
+                        ${cena(p.promoNetto)} z&#322; <span style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.6)">netto</span>
+                      </p>
+                      <p style="margin:2px 0 10px;font-size:13px;color:rgba(255,255,255,0.45);text-decoration:line-through">${cena(p.regularNetto)} z&#322;</p>
+                      <a href="${url}" style="font-size:13px;font-weight:600;color:#ffffff;text-decoration:none">Zobacz produkt &rarr;</a>
+                    </td>
+                    <td width="${wym.l}" bgcolor="#030712" valign="bottom" style="width:${wym.l}px;background-color:#030712;border-radius:0 14px 14px 0;font-size:0;line-height:0">
+                      <a href="${url}"><img src="${img}-l.png" width="${wym.l}" height="${wym.h}" alt="" style="display:block;width:${wym.l}px;height:${wym.h}px" /></a>
+                    </td>
+                    <td width="${wym.r}" valign="bottom" style="width:${wym.r}px;font-size:0;line-height:0">
+                      <a href="${url}"><img src="${img}-r.png" width="${wym.r}" height="${wym.h}" alt="" style="display:block;width:${wym.r}px;height:${wym.h}px" /></a>
+                    </td>
+                  </tr>
+                </table>`
+  }
+
+  // Dwa kafle w rzędzie; na wąskim ekranie komórki schodzą pod siebie (.tile-cell).
+  const rzedy: string[] = []
+  for (let i = 0; i < posortowane.length; i += 2) {
+    const para = posortowane.slice(i, i + 2)
+    rzedy.push(`
           <tr>
             <td style="padding:0 0 14px">
-              <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:separate">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td width="${tekst}" bgcolor="#030712" valign="middle" style="width:${tekst}px;background-color:#030712;border-radius:16px 0 0 16px;padding:20px 0 20px 24px">
-                    <a href="${url}" style="display:inline-block;padding:5px 12px;background-color:#A8F000;border-radius:999px;font-size:11px;font-weight:700;color:#030712;text-decoration:none;letter-spacing:0.04em">&minus;${pct}%</a>
-                    <p style="margin:14px 0 10px;font-size:19px;font-weight:700;color:#ffffff;line-height:1.25">
-                      <a href="${url}" style="color:#ffffff;text-decoration:none">${esc(p.name)}</a>
-                    </p>
-                    <p style="margin:0;font-size:30px;font-weight:800;color:#A8F000;line-height:1.1">
-                      ${cena(p.promoNetto)} z&#322; <span style="font-size:15px;font-weight:600;color:rgba(255,255,255,0.6)">netto</span>
-                    </p>
-                    <p style="margin:3px 0 16px;font-size:16px;color:rgba(255,255,255,0.45);text-decoration:line-through">${cena(p.regularNetto)} z&#322;</p>
-                    <a href="${url}" style="font-size:16px;font-weight:600;color:#ffffff;text-decoration:none">Zobacz produkt &rarr;</a>
-                  </td>
-                  <td width="${wym.l}" bgcolor="#030712" valign="bottom" style="width:${wym.l}px;background-color:#030712;border-radius:0 16px 16px 0;font-size:0;line-height:0">
-                    <a href="${url}"><img src="${img}-l.png" width="${wym.l}" height="${wym.h}" alt="" style="display:block;width:${wym.l}px;height:${wym.h}px" /></a>
-                  </td>
-                  <td width="${wym.r}" valign="bottom" style="width:${wym.r}px;font-size:0;line-height:0">
-                    <a href="${url}"><img src="${img}-r.png" width="${wym.r}" height="${wym.h}" alt="" style="display:block;width:${wym.r}px;height:${wym.h}px" /></a>
-                  </td>
-                  <td style="font-size:0;line-height:0">&nbsp;</td>
+                  ${para.map(p => `<td class="tile-cell" width="50%" valign="bottom" style="width:50%">${tile(p)}</td>`).join('')}
+                  ${para.length === 1 ? '<td class="tile-cell" width="50%" style="width:50%">&nbsp;</td>' : ''}
                 </tr>
               </table>
             </td>
-          </tr>`
+          </tr>`)
   }
 
   return `
@@ -344,7 +357,7 @@ function emailPromoTiles(
           <tr>
             <td style="padding:0 0 12px;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#6b7280">${esc(label)}</td>
           </tr>
-          ${posortowane.map(tile).join('')}
+          ${rzedy.join('')}
           <tr>
             <td style="padding:2px 0 0;font-size:13px;line-height:1.6;color:#9ca3af">
               Ceny netto za sztuk&#281;. Kod na wybrany model wy&#347;lemy po zg&#322;oszeniu z jego karty produktu.

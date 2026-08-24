@@ -14,13 +14,15 @@ Wymiary wypisane na końcu wklej do MAIL_TILE w src/lib/email-templates.ts.
 import json
 from PIL import Image
 
-# Wysokość zdjęcia w mailu (px, 1×). Skanery są pionowe i mogą być wyższe;
-# drukarki poziome — przy tej samej wysokości byłyby nienaturalnie szerokie.
+# Wysokość zdjęcia w mailu (px, 1×). Kafle stoją po dwa w rzędzie na 600 px
+# szerokości wiadomości, więc urządzenia są odpowiednio mniejsze. Skanery są
+# pionowe i mogą być wyższe; drukarki poziome — przy tej samej wysokości
+# byłyby nienaturalnie szerokie.
 WYSOKOSC = {
-    'zebra-ds4608': 215,
-    'zebra-ds2208': 215,
-    'zebra-zd230d': 165,
-    'zebra-zd230t': 165,
+    'zebra-ds4608': 125,
+    'zebra-ds2208': 125,
+    'zebra-zd230d': 95,
+    'zebra-zd230t': 95,
 }
 
 # Ile szerokości zdjęcia leży na ciemnym kaflu; reszta wystaje poza jego obrys.
