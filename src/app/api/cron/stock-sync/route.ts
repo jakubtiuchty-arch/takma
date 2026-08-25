@@ -83,7 +83,24 @@ export async function GET(request: NextRequest) {
   }
 
   const startTime = Date.now()
-  const allPNs = collectAllPartNumbers()
+  const wszystkiePNs = collectAllPartNumbers()
+
+  // Kolejność ma znaczenie: pełna pula nie mieści się w maxDuration, a sync szedł
+  // zawsze w kolejności products.ts — ogon listy (m.in. M3) nigdy nie dostawał ceny.
+  // Najpierw numery bez ceny w StockCache, potem od najdawniej odświeżanych.
+  const stanCache = new Map(
+    (await prisma.stockCache.findMany({ select: { partNumber: true, price: true, lastSync: true } }))
+      .map((r) => [r.partNumber, r]),
+  )
+  const allPNs = [...wszystkiePNs].sort((a, b) => {
+    const ra = stanCache.get(a)
+    const rb = stanCache.get(b)
+    const bezCenyA = !ra || ra.price == null ? 0 : 1
+    const bezCenyB = !rb || rb.price == null ? 0 : 1
+    if (bezCenyA !== bezCenyB) return bezCenyA - bezCenyB
+    return (ra?.lastSync?.getTime() ?? 0) - (rb?.lastSync?.getTime() ?? 0)
+  })
+
   console.log(`[Stock Sync] Starting sync for ${allPNs.length} part numbers`)
 
   // Get EUR/PLN rate once
