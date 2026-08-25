@@ -62,6 +62,28 @@ interface AllegroOfferResponse {
 export async function publishDraft(partNumber: string): Promise<PublishResult> {
   const resolved = resolveByPN(partNumber)
   if (!resolved) {
+    // PN wypadł z katalogu (przebudowa serii, wycofany rozmiar). Oferty nie da się
+    // odbudować, a przy sprzedaży kartonowej nie chcemy zostawiać starej sztukowej —
+    // wygaszamy ją, bo inaczej dalej sprzedaje pojedyncze rolki.
+    const osierocona = await prisma.allegroOffer.findUnique({
+      where: { environment_partNumber: { environment: ALLEGRO_ENV, partNumber } },
+      select: { allegroId: true, status: true },
+    })
+    if (ALLEGRO_SELL_BY_CARTON && osierocona?.allegroId && osierocona.status !== 'ENDED') {
+      try {
+        await allegroFetch(`/sale/product-offers/${osierocona.allegroId}`, {
+          method: 'PATCH',
+          body: JSON.stringify({ publication: { status: 'ENDED' } }),
+        })
+        await prisma.allegroOffer.update({
+          where: { environment_partNumber: { environment: ALLEGRO_ENV, partNumber } },
+          data: { status: 'ENDED', lastError: 'PN poza katalogiem — oferta wygaszona.' },
+        })
+        return { ok: true, partNumber, status: 'ENDED' }
+      } catch (e) {
+        return { ok: false, partNumber, status: 'ERROR', error: `Nie udało się wygasić osieroconej oferty: ${(e as Error).message}` }
+      }
+    }
     return { ok: false, partNumber, status: 'ERROR', error: 'Nie znaleziono wariantu dla PN.' }
   }
   const { kind, product, variant } = resolved
