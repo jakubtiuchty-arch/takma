@@ -39,16 +39,19 @@ async function getEurPlnRate(): Promise<number> {
 }
 
 /**
- * Collect ALL part numbers from all products except M3 Mobile
- * (M3 uses JarltechStockCache via separate cron)
+ * Zbiera numery katalogowe wszystkich produktów — łącznie z M3 Mobile.
+ *
+ * M3 był tu wcześniej pomijany („ma własny cron"), ale jarltech-sync zapisuje
+ * tylko JarltechStockCache, a karty produktów i koszyk czytają StockCache.
+ * Efekt: 101 produktów M3 pokazywało „brak danych z dystrybutora", mimo że
+ * Jarltech miał i cenę, i stan (US300D-T2CWRE-HF: 898,81 EUR, 50 szt.).
+ * M3 sprzedaje wyłącznie przez Jarltech, więc cena zawsze pochodzi stamtąd —
+ * selectPurchasePrice i tak wybierze jedyne dostępne źródło.
  */
 function collectAllPartNumbers(): string[] {
   const pnSet = new Set<string>()
 
   for (const product of products) {
-    // Skip M3 Mobile — uses JarltechStockCache separately
-    if (product.manufacturerId === 'm3-mobile') continue
-
     // From variants
     if (product.variants) {
       for (const v of product.variants) {
