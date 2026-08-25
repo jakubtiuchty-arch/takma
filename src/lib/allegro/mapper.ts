@@ -43,10 +43,11 @@ export function variantSizeLabel(v: ProductVariant): string {
 }
 
 /** Tytuł oferty ≤ 75 znaków: „<nazwa produktu> <rozmiar>". */
-export function buildOfferName(product: Product, variant: ProductVariant): string {
+export function buildOfferName(product: Product, variant: ProductVariant, suffix = ''): string {
   const base = `${product.name} ${variantSizeLabel(variant)}`.replace(/\s+/g, ' ').trim()
-  if (base.length <= MAX_NAME) return base
-  return base.slice(0, MAX_NAME).replace(/\s+\S*$/, '').trim()
+  const room = MAX_NAME - suffix.length
+  if (base.length <= room) return `${base}${suffix}`
+  return `${base.slice(0, room).replace(/\s+\S*$/, '').trim()}${suffix}`
 }
 
 /**
@@ -150,6 +151,7 @@ export function buildOfferDescription(
   product: Product,
   variant: ProductVariant,
   ean?: string,
+  packQty = 1,
 ): AllegroOfferPayload['description'] {
   const a = variant.attributes || {}
 
@@ -195,9 +197,16 @@ export function buildOfferDescription(
   const intro = seriesIntro(product)
   const introHtml = intro ? `<p>${esc(intro)}</p>` : ''
 
+  // Zawartość kartonu na samej górze — kupujący ma wiedzieć, za co płaci,
+  // zanim porówna cenę z ofertami na pojedyncze rolki.
+  const packHtml = packQty > 1
+    ? `<h2>Opakowanie</h2><ul><li><b>W zestawie:</b> ${packQty} rolek (pełny karton producenta)</li>` +
+      `<li>Sprzedajemy w kartonach — dzięki temu cena za rolkę jest niższa niż przy sztukach</li></ul>`
+    : ''
+
   return {
     sections: [
-      { items: [{ type: 'TEXT', content: `<h2>${esc(product.name)}</h2>${introHtml}<h2>Specyfikacja</h2>${specHtml}` }] },
+      { items: [{ type: 'TEXT', content: `<h2>${esc(product.name)}</h2>${introHtml}${packHtml}<h2>Specyfikacja</h2>${specHtml}` }] },
       ...(appsHtml ? [{ items: [{ type: 'TEXT' as const, content: appsHtml }] }] : []),
     ],
   }
@@ -222,6 +231,8 @@ export interface BuildOfferInput {
   active?: boolean
   /** true → nazwa produktu katalogowego z PN (obejście kolizji z cudzym wpisem). */
   uniqueCatalogName?: boolean
+  /** Liczba rolek w jednej sprzedawanej jednostce (karton). 1 = sprzedaż na sztuki. */
+  packQty?: number
 }
 
 /** Buduje payload draftu oferty dla taśmy (17254) lub etykiety (17255). */
@@ -237,9 +248,15 @@ export function buildOfferPayload({
   gpsr = {},
   active = false,
   uniqueCatalogName = false,
+  packQty = 1,
 }: BuildOfferInput): AllegroOfferPayload {
-  const name = buildOfferName(product, variant)
-  const productName = uniqueCatalogName ? buildCatalogProductName(product, variant) : name
+  // Karton sprzedajemy jako jedną pozycję — stąd dopisek w nazwie i quantity.value
+  // po stronie produktu. Kupujący nie ma wtedy opcji „jedna rolka" (Allegro nie zna
+  // minimalnej liczby sztuk w zamówieniu, patrz lib/allegro/pack.ts).
+  const name = packQty > 1
+    ? buildOfferName(product, variant, ` karton ${packQty} szt.`)
+    : buildOfferName(product, variant)
+  const productName = uniqueCatalogName ? buildCatalogProductName(product, variant) : buildOfferName(product, variant)
   return {
     name,
     productSet: [
@@ -254,7 +271,7 @@ export function buildOfferPayload({
           ],
           ...(images.length ? { images } : {}),
         },
-        quantity: { value: 1 },
+        quantity: { value: packQty },
         ...(gpsr.responsibleProducer ? { responsibleProducer: gpsr.responsibleProducer } : {}),
         ...(gpsr.safetyInformation ? { safetyInformation: gpsr.safetyInformation } : {}),
       },
@@ -262,7 +279,7 @@ export function buildOfferPayload({
     parameters: [{ id: ALLEGRO_PARAM.stan, valuesIds: [ALLEGRO_DICT.stanNowy] }],
     sellingMode: { price: { amount: price.gross.toFixed(2), currency: 'PLN' } },
     stock: { available },
-    description: buildOfferDescription(product, variant, ean),
+    description: buildOfferDescription(product, variant, ean, packQty),
     ...(services.delivery ? { delivery: services.delivery } : {}),
     ...(services.afterSalesServices ? { afterSalesServices: services.afterSalesServices } : {}),
     publication: { status: active ? 'ACTIVE' : 'INACTIVE' },

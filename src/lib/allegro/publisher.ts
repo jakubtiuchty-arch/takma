@@ -2,6 +2,7 @@ import { prisma } from '@/lib/db'
 import { allegroFetch } from './client'
 import { ALLEGRO_ENV } from './auth'
 import { allegroPriceForPN } from './pricing'
+import { packQtyForPN, allegroPackPriceForPN, packsFromRolls, ALLEGRO_SELL_BY_CARTON } from './pack'
 import { buildOfferPayload, type AllegroOfferPayload } from './mapper'
 import { uploadImageByUrl } from './images'
 import { offerServices } from './selling-policies'
@@ -44,7 +45,7 @@ export interface PublishResult {
   partNumber: string
   kind?: AllegroProductKind
   allegroId?: string
-  status: 'DRAFT' | 'ACTIVE' | 'ERROR'
+  status: 'DRAFT' | 'ACTIVE' | 'ERROR' | 'ENDED'
   error?: string
   priceNet?: number
   priceGross?: number
@@ -65,7 +66,13 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
   }
   const { kind, product, variant } = resolved
 
-  const price = await allegroPriceForPN(partNumber)
+  // Materiały kupujemy kartonami, więc kartonami je sprzedajemy — Allegro nie ma
+  // minimalnej liczby sztuk w zamówieniu, a karton jako jedna pozycja załatwia to
+  // samo (patrz lib/allegro/pack.ts). Bez znanego pakowania zostaje sprzedaż na sztuki.
+  const packQty = ALLEGRO_SELL_BY_CARTON ? packQtyForPN(partNumber, kind) : null
+  const price = packQty
+    ? (await allegroPackPriceForPN(partNumber, kind, packQty)) ?? (await allegroPriceForPN(partNumber))
+    : await allegroPriceForPN(partNumber)
   if (!price) {
     return {
       ok: false,
@@ -74,6 +81,31 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
       status: 'ERROR',
       error: 'Brak żywej ceny w StockCache — pomijam (nie wystawiam z błędną ceną).',
     }
+  }
+
+  // Sprzedajemy wyłącznie kartonami, więc PN bez znanego pakowania nie ma jak
+  // trafić na Allegro — istniejącą ofertę wygaszamy, nowej nie zakładamy.
+  // (Wystarczy uzupełnić dane w label-carton-qty.ts / ribbon-carton-qty.ts.)
+  if (ALLEGRO_SELL_BY_CARTON && !packQty) {
+    const istniejaca = await prisma.allegroOffer.findUnique({
+      where: { environment_partNumber: { environment: ALLEGRO_ENV, partNumber } },
+      select: { allegroId: true, status: true },
+    })
+    if (istniejaca?.allegroId && istniejaca.status !== 'ENDED') {
+      try {
+        await allegroFetch(`/sale/product-offers/${istniejaca.allegroId}`, {
+          method: 'PATCH',
+          body: JSON.stringify({ publication: { status: 'ENDED' } }),
+        })
+        await prisma.allegroOffer.update({
+          where: { environment_partNumber: { environment: ALLEGRO_ENV, partNumber } },
+          data: { status: 'ENDED', lastError: 'Brak danych o pakowaniu — oferta wygaszona.' },
+        })
+      } catch (e) {
+        return { ok: false, partNumber, kind, status: 'ERROR', error: `Nie udało się wygasić oferty: ${(e as Error).message}` }
+      }
+    }
+    return { ok: true, partNumber, kind, status: 'ENDED', error: undefined }
   }
 
   // Allegro wymaga min. 1 obrazu przy tworzeniu inline-produktu — wgrywamy do /sale/images.
@@ -97,13 +129,17 @@ export async function publishDraft(partNumber: string): Promise<PublishResult> {
   const ean = isValidGtin(eanRow?.ean) ? eanRow!.ean : undefined
 
   // Żywy stan z StockCache (min(totalStock, 30)) — synchronizowany później cronem.
-  const available = await liveAvailableForPN(partNumber)
+  // Przy sprzedaży kartonowej przeliczamy rolki na kartony.
+  const rolls = await liveAvailableForPN(partNumber)
+  const skutecznyPack = packQty && price ? packQty : 1
+  const available = skutecznyPack > 1 ? packsFromRolls(rolls, skutecznyPack) : rolls
 
   const services = offerServices()
   const gpsr = gpsrForProductSet()
   const active = ALLEGRO_AUTO_PUBLISH
   let payload: AllegroOfferPayload = buildOfferPayload({
     kind, product, variant, price, images, services, ean, available, gpsr, active,
+    packQty: skutecznyPack,
   })
 
   // Edycja istniejącego szkicu (PATCH) zamiast tworzenia nowego (POST) — bez osieroconych ofert.
