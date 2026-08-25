@@ -23918,7 +23918,7 @@ Koszt posiadania (TCO): baterie PowerPrecision+, stacje dokujące, ładowarki i 
     name: 'Zebra MC3400',
     seoTitle: 'Zebra MC3400 — kolektor danych z klawiaturą | od 4 561 zł',
     seoDescription: 'Kolektor danych Zebra MC3400 z klawiaturą — Wi-Fi 6E, skaner SE58 do 30 m, IP65/IP67, hot-swap. 14 konfiguracji od 4 561 zł netto. Następca MC3300x.',
-    shortDescription: 'Zebra MC3400 — kolektor danych z fizyczną klawiaturą, Wi-Fi 6E, skaner do 30 m, IP65/IP67, następca MC3300x',
+    shortDescription: 'Zebra MC3400 — kolektor danych z fizyczną klawiaturą w obudowie pistoletowej lub prostej, Wi-Fi 6E, skaner do 30 m, IP65/IP67, następca MC3300x',
     description: `Zebra MC3400 to kolektor danych (terminal mobilny) nowej generacji z fizyczną klawiaturą i skanerem kodów kreskowych 2D. Zaprojektowany dla operatorów magazynów, centrów dystrybucji, linii produkcyjnych i punktów cross-dockingu — wszędzie tam, gdzie szybkie wprowadzanie danych z klawiatury i niezawodne skanowanie kodów kreskowych decydują o wydajności operacji. Następca bestsellerowych serii Zebra MC3300 i [MC3300x](/produkt/zebra-mc3300x). Cena od 4 561 zł netto, 14 konfiguracji w TAKMA.
 
 Kluczowa przewaga kolektora danych MC3400 nad poprzednikiem: procesor Qualcomm 4490 (2,4 GHz) dostarcza 2,5-krotnie większą moc obliczeniową niż Snapdragon 660 w MC3300x, przy jednoczesnym wzroście pamięci RAM do 6 GB i Flash do 128 GB. Wi-Fi 6E (triband 2,4/5/6 GHz) zapewnia do 3× szybszy transfer niż Wi-Fi 5 w poprzedniku — krytyczne w magazynach z 200+ urządzeniami w sieci.
@@ -23996,6 +23996,23 @@ Koszt posiadania kolektora danych MC3400 (TCO): pełna kompatybilność wsteczna
       { partNumber: 'MC3401-0G1R62SS-A6', name: 'MC3400 Gun, SE58, 29 kl., 6/128 GB, Kamera', priceFrom: 5734.04, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '29 klawiszy', 'Pamięć': '6/128 GB', 'Kamera': '13+5 MP' } },
       { partNumber: 'MC3401-0G1R63SS-A6', name: 'MC3400 Gun, SE58, 38 kl., 6/128 GB, Kamera', priceFrom: 5734.04, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '38 klawiszy', 'Pamięć': '6/128 GB', 'Kamera': '13+5 MP' } },
       { partNumber: 'MC3401-0G1R64SS-A6', name: 'MC3400 Gun, SE58, 47 kl., 6/128 GB, Kamera', priceFrom: 5706.14, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '47 klawiszy', 'Pamięć': '6/128 GB', 'Kamera': '13+5 MP' } },
+      // --- Obudowa prosta (Straight Shooter) — te same konfiguracje bez uchwytu
+      //     pistoletowego: lżejsze o 86 g (442 g vs 528 g) i tańsze o ok. 230 zł.
+      //     Klient, który nie chce „pistoletu", nie znajdzie ich pod wariantami Gun. ---
+      { partNumber: 'MC3401-0S1K42SS-A6', name: 'MC3400 Straight, SE55, 29 kl., 4/64 GB', priceFrom: 4608.31, availability: 'available', attributes: { 'Skaner': 'SE55', 'Klawiatura': '29 klawiszy', 'Pamięć': '4/64 GB' } },
+      { partNumber: 'MC3401-0S1K43SS-A6', name: 'MC3400 Straight, SE55, 38 kl., 4/64 GB', priceFrom: 4702.37, availability: 'available', attributes: { 'Skaner': 'SE55', 'Klawiatura': '38 klawiszy', 'Pamięć': '4/64 GB' } },
+      { partNumber: 'MC3401-0S1J52SS-A6', name: 'MC3400 Straight, SE4770, 29 kl., 6/64 GB', priceFrom: 5260.84, availability: 'available', attributes: { 'Skaner': 'SE4770', 'Klawiatura': '29 klawiszy', 'Pamięć': '6/64 GB' } },
+      { partNumber: 'MC3401-0S1J53SS-A6', name: 'MC3400 Straight, SE4770, 38 kl., 6/64 GB', priceFrom: 5260.84, availability: 'available', attributes: { 'Skaner': 'SE4770', 'Klawiatura': '38 klawiszy', 'Pamięć': '6/64 GB' } },
+      { partNumber: 'MC3401-0S1J54SS-A6', name: 'MC3400 Straight, SE4770, 47 kl., 6/64 GB', priceFrom: 5361.85, availability: 'available', attributes: { 'Skaner': 'SE4770', 'Klawiatura': '47 klawiszy', 'Pamięć': '6/64 GB' } },
+      { partNumber: 'MC3401-0S1M52SS-A6', name: 'MC3400 Straight, SE58, 29 kl., 6/64 GB', priceFrom: 5593.47, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '29 klawiszy', 'Pamięć': '6/64 GB' } },
+      { partNumber: 'MC3401-0S1M53SS-A6', name: 'MC3400 Straight, SE58, 38 kl., 6/64 GB', priceFrom: 5707.65, availability: 'on-order', attributes: { 'Skaner': 'SE58', 'Klawiatura': '38 klawiszy', 'Pamięć': '6/64 GB' } },
+      { partNumber: 'MC3401-0S1M54SS-A6', name: 'MC3400 Straight, SE58, 47 kl., 6/64 GB', priceFrom: 5707.65, availability: 'on-order', attributes: { 'Skaner': 'SE58', 'Klawiatura': '47 klawiszy', 'Pamięć': '6/64 GB' } },
+      { partNumber: 'MC3401-0S1P62SS-A6', name: 'MC3400 Straight, SE4770, 29 kl., 6/128 GB, Kamera', priceFrom: 5440.25, availability: 'available', attributes: { 'Skaner': 'SE4770', 'Klawiatura': '29 klawiszy', 'Pamięć': '6/128 GB', 'Kamera': '13+5 MP' } },
+      { partNumber: 'MC3401-0S1P63SS-A6', name: 'MC3400 Straight, SE4770, 38 kl., 6/128 GB, Kamera', priceFrom: 5551.25, availability: 'available', attributes: { 'Skaner': 'SE4770', 'Klawiatura': '38 klawiszy', 'Pamięć': '6/128 GB', 'Kamera': '13+5 MP' } },
+      { partNumber: 'MC3401-0S1P64SS-A6', name: 'MC3400 Straight, SE4770, 47 kl., 6/128 GB, Kamera', priceFrom: 5551.25, availability: 'available', attributes: { 'Skaner': 'SE4770', 'Klawiatura': '47 klawiszy', 'Pamięć': '6/128 GB', 'Kamera': '13+5 MP' } },
+      { partNumber: 'MC3401-0S1R62SS-A6', name: 'MC3400 Straight, SE58, 29 kl., 6/128 GB, Kamera', priceFrom: 5998.05, availability: 'on-order', attributes: { 'Skaner': 'SE58', 'Klawiatura': '29 klawiszy', 'Pamięć': '6/128 GB', 'Kamera': '13+5 MP' } },
+      { partNumber: 'MC3401-0S1R63SS-A6', name: 'MC3400 Straight, SE58, 38 kl., 6/128 GB, Kamera', priceFrom: 5878.08, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '38 klawiszy', 'Pamięć': '6/128 GB', 'Kamera': '13+5 MP' } },
+      { partNumber: 'MC3401-0S1R64SS-A6', name: 'MC3400 Straight, SE58, 47 kl., 6/128 GB, Kamera', priceFrom: 5878.08, availability: 'available', attributes: { 'Skaner': 'SE58', 'Klawiatura': '47 klawiszy', 'Pamięć': '6/128 GB', 'Kamera': '13+5 MP' } },
     ],
     faq: [
       { question: 'Co to jest Zebra MC3400?', answer: 'Zebra MC3400 to kolektor danych (terminal mobilny) nowej generacji z fizyczną klawiaturą i skanerem kodów kreskowych 2D, zaprojektowany do pracy w magazynach, centrach dystrybucji i na liniach produkcyjnych. Następca bestsellerowego MC3300x z procesorem Qualcomm 4490, Wi-Fi 6E (triband 2,4/5/6 GHz), klasą ochrony IP65/IP67 i baterią 7 000 mAh z hot-swap. Dostępny w 14 konfiguracjach — 3 silniki skanera (SE55 do 12,2 m, SE4770, SE58 do 30,5 m) × 3 klawiatury (29/38/47 klawiszy) × 3 warianty pamięci (4/64, 6/64, 6/128 GB). Cena od 4 561 zł netto w TAKMA.' },
@@ -60813,10 +60830,10 @@ const m3UL30: Product[] = [
     slug: 'm3-ul30',
     name: 'M3 UL30',
     priceFrom: 5626,
-    shortDescription: 'M3 UL30 — terminal gun z klawiaturą 28/35/53 kl., 5" FHD, hot-swap 6700 mAh, IP67, SE4770/SE5800',
-    description: `Dla kogo? M3 UL30 to wytrzymały terminal magazynowy gun (kolektor danych do magazynu) z fizyczną klawiaturą i ekranem 5" Full HD (1920x1080), zaprojektowany do intensywnej pracy w magazynach, centrach dystrybucji, produkcji i chłodniach. Terminal pistoletowy M3 UL30 z klawiaturą fizyczną (28, 35 lub 53 klawisze) sprawdza się wszędzie, gdzie operatorzy muszą szybko wpisywać ilości, kody lokalizacji lub identyfikatory partii — bez konieczności używania klawiatury ekranowej. Terminal do picking WMS z hot-swap baterii 6700 mAh i skanerem dalekiego zasięgu.
+    shortDescription: 'M3 UL30 — terminal z pełną klawiaturą 28/35/53 kl., 5" FHD, hot-swap 6700 mAh, IP67, SE4770/SE5800; uchwyt pistoletowy opcjonalnie',
+    description: `Dla kogo? M3 UL30 to wytrzymały terminal magazynowy (kolektor danych do magazynu) z fizyczną klawiaturą i ekranem 5" Full HD (1920x1080), zaprojektowany do intensywnej pracy w magazynach, centrach dystrybucji, produkcji i chłodniach. M3 UL30 ma prostą obudowę (bez wbudowanego uchwytu pistoletowego — trigger UL20-TRIG-S00 dokłada się osobno) i klawiaturę fizyczną 28, 35 lub 53 klawiszy. W gamie M3 to odpowiednik Zebry MC9400; klasę niżej, naprzeciw MC3400, stoi [M3 US30](/produkt/m3-us30). Terminal sprawdza się wszędzie, gdzie operatorzy muszą szybko wpisywać ilości, kody lokalizacji lub identyfikatory partii — bez konieczności używania klawiatury ekranowej. Terminal do picking WMS z hot-swap baterii 6700 mAh i skanerem dalekiego zasięgu.
 
-Kluczowe przewagi M3 UL30: procesor Qualcomm QCS6490 (2,7 GHz, 8 rdzeni, litografia 6 nm) z wbudowanym NPU Hexagon o mocy 12 TOPS do przetwarzania AI bezpośrednio na urządzeniu. Kolektor danych M3 UL30 oferuje hot-swap baterii 6700 mAh (wymiana bez wyłączania — ciągłość sesji WMS/WLAN/BT), 8 GB RAM DDR4, 128 GB UFS Flash i Wi-Fi 6E z 2x2 MU-MIMO. Ekran 5" FHD to największy wyświetlacz w klasie terminali gun z klawiaturą — konkurencja (Zebra MC3400, MC9400, Honeywell CK67) oferuje 4-4,3". Gorilla Glass 3 z obsługą w rękawicach. Terminal przemysłowy z klawiaturą do zastosowań magazynowych, produkcyjnych i logistycznych.
+Kluczowe przewagi M3 UL30: procesor Qualcomm QCS6490 (2,7 GHz, 8 rdzeni, litografia 6 nm) z wbudowanym NPU Hexagon o mocy 12 TOPS do przetwarzania AI bezpośrednio na urządzeniu. Kolektor danych M3 UL30 oferuje hot-swap baterii 6700 mAh (wymiana bez wyłączania — ciągłość sesji WMS/WLAN/BT), 8 GB RAM DDR4, 128 GB UFS Flash i Wi-Fi 6E z 2x2 MU-MIMO. Ekran 5" FHD to największy wyświetlacz w klasie terminali z klawiaturą — konkurencja (Zebra MC9400, MC3400, Honeywell CK67) oferuje 4–4,3". Gorilla Glass 3 z obsługą w rękawicach. Terminal przemysłowy z klawiaturą do zastosowań magazynowych, produkcyjnych i logistycznych.
 
 Warianty skanerów: Zebra SE4770 (zasięg standardowy do ~92 cm — picking, skanowanie z ręki) lub Zebra SE5800 (daleki zasięg do 15 m — regały paletowe, high-bay). Wersja UL30F (Frozen) — terminal do chłodni i mroźni od −30°C z podgrzewaniem okna skanera i podświetlenia LCD. Terminal mobilny z klawiaturą M3 UL30 jest certyfikowany IP67 i MIL-STD-810H z upadkami z 3,0 m (z boot) na beton. Android 14 z gwarancją aktualizacji do Android 18 (4 generacje OS). Terminal Android do magazynu z klawiaturą fizyczną.
 
@@ -60832,13 +60849,13 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych z plat
       '/images/products/m3-ul30-right.png',
     ],
     imageDescriptions: [
-      'M3 UL30 — widok z przodu, ekran 5" FHD, klawiatura 28-klawiszowa, obudowa gun z żółtymi akcentami',
+      'M3 UL30 — widok z przodu, ekran 5" FHD, klawiatura 28-klawiszowa, obudowa z żółtymi akcentami',
       'M3 UL30 — widok z tyłu, aparat 16 MP, głośnik, komora baterii 6700 mAh z hot-swap',
       'M3 UL30 — widok z lewego boku, przyciski skanowania i funkcyjne',
       'M3 UL30 — widok z prawego boku, przycisk skanowania żółty i styki ładowania',
     ],
-    seoTitle: 'M3 UL30 — terminal gun z klawiaturą, 5" FHD, IP67',
-    seoDescription: 'M3 UL30 — terminal gun z klawiaturą 28/35/53 kl., AI 12 TOPS, hot-swap 6700 mAh, IP67. Od 5 626 zł. Wersja Freezer (−30°C). Zamów w TAKMA.',
+    seoTitle: 'M3 UL30 — terminal z klawiaturą 5" FHD, IP67 | odpowiednik MC9400',
+    seoDescription: 'M3 UL30 — terminal z klawiaturą 28/35/53 kl., AI 12 TOPS, hot-swap 6700 mAh, IP67. Uchwyt pistoletowy opcjonalnie. Wersja Freezer (−30°C). Zamów w TAKMA.',
     variantAttributeTooltips: {
       'Skaner': 'SE4770 — zasięg standardowy do ~92 cm, do skanowania z ręki na linii picking.\n\nSE5800 — daleki zasięg do 15 m, do regałów paletowych i high-bay.',
       'Klawiatura': '28 kl. — numeryczna, do szybkiego wpisywania ilości i kodów.\n\n35 kl. — funkcyjna numeryczna, kompromis między kompaktowością a funkcjonalnością.\n\n53 kl. — alfanumeryczna, do pełnego wpisywania tekstu, kodów lokalizacji i opisów.',
