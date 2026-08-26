@@ -57,7 +57,7 @@ export default async function AdminDashboard() {
   const porownanieDnia = zmiana(d.dzis.obrot, d.typowyDzien.obrot)
 
   return (
-    <div className="max-w-6xl space-y-6">
+    <div className="space-y-6">
       {/* Nagłówek — data i jedno zdanie o stanie dnia zamiast samego słowa „Dashboard" */}
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
@@ -78,7 +78,7 @@ export default async function AdminDashboard() {
       </div>
 
       {/* Rząd główny: dziś (duże) + okresy z porównaniem */}
-      <div className="grid lg:grid-cols-3 gap-4">
+      <div className="grid lg:grid-cols-3 2xl:grid-cols-4 gap-4">
         <div className="rounded-2xl border border-gray-200 bg-white p-6">
           <p className="text-sm text-gray-500">Obrót dzisiaj</p>
           <p className="text-4xl font-bold text-gray-900 tabular-nums mt-1">{zl(d.dzis.obrot)} <span className="text-2xl text-gray-400">zł</span></p>
@@ -100,7 +100,7 @@ export default async function AdminDashboard() {
           </div>
         </div>
 
-        <div className="lg:col-span-2 grid sm:grid-cols-3 gap-4">
+        <div className="lg:col-span-2 2xl:col-span-3 grid sm:grid-cols-3 gap-4">
           {d.okresy.map((o) => (
             <Link key={o.etykieta} href="/admin/zamowienia"
               className="rounded-2xl border border-gray-200 bg-white p-5 hover:border-gray-300 transition-colors">
@@ -127,7 +127,7 @@ export default async function AdminDashboard() {
           <h2 className="font-semibold text-gray-900">Wymaga uwagi</h2>
           <p className="text-sm text-gray-500 mt-0.5">sprawy, które czekają na decyzję albo działanie</p>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 divide-y sm:divide-y-0 divide-gray-100">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-6 divide-y sm:divide-y-0 divide-gray-100">
           {d.uwaga.map((u) => (
             <Link key={u.etykieta} href={u.href}
               className="flex items-start gap-4 px-6 py-4 hover:bg-gray-50 transition-colors">
@@ -144,7 +144,7 @@ export default async function AdminDashboard() {
       </div>
 
       {/* Dwie listy: co wpadło i kto pyta */}
-      <div className="grid lg:grid-cols-2 gap-6">
+      <div className="grid lg:grid-cols-2 2xl:grid-cols-3 gap-6 items-start">
         <div className="rounded-2xl border border-gray-200 bg-white overflow-hidden">
           <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200">
             <h2 className="font-semibold text-gray-900">Ostatnie zamówienia</h2>
@@ -197,7 +197,6 @@ export default async function AdminDashboard() {
             </ul>
           )}
         </div>
-      </div>
 
       {/* Co się sprzedaje — pozycje zamówień, nie odsłony kart */}
       <div className="rounded-2xl border border-gray-200 bg-white overflow-hidden">
@@ -230,6 +229,7 @@ export default async function AdminDashboard() {
             })}
           </ul>
         )}
+      </div>
       </div>
 
       {/* Stopka pulpitu — liczby, które warto mieć pod ręką, ale nie w centrum uwagi */}
