@@ -63,11 +63,12 @@ export function promocjeUzupelniajace(
 /**
  * Czy formularz zgłoszenia sam wystawia kod rabatowy i wysyła go klientowi.
  *
- * Wyłączone do czasu sprawdzenia całego obiegu na produkcji — zgłoszenia idą
- * wtedy zwykłą ścieżką (mail „otrzymaliśmy zapytanie"), a kody wystawiamy
- * ręcznie z panelu bazy. Pole kodu w koszyku działa niezależnie od tej flagi.
+ * Włączone 26.08.2026 po sprawdzeniu obiegu na produkcji (zamówienie
+ * 20260824180154 przeszło kodem od maila po płatność). Przy `false` zgłoszenia
+ * idą zwykłą ścieżką („otrzymaliśmy zapytanie"), a kody trzeba wystawiać
+ * ręcznie — i łatwo je przeoczyć. Pole kodu w koszyku działa niezależnie.
  */
-export const KODY_RABATOWE_AUTO = false
+export const KODY_RABATOWE_AUTO = true
 
 /** Promocja po numerze katalogowym — do weryfikacji kodu rabatowego na serwerze. */
 export function promoBySku(sku: string): ProductPromo | null {
