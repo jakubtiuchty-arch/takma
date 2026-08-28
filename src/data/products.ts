@@ -998,7 +998,7 @@ Szukasz tańszej wersji bez ribbona? Sprawdź [Zebra ZD421d](/produkt/zebra-zd42
         availability: 'available',
       },
       {
-        partNumber: 'ZD4A042-30EW02EZ',
+        partNumber: 'ZD4A042-30EX02EZ',
         name: '203 dpi, USB, Bluetooth + Wi-Fi',
         attributes: { 'Rozdzielczość': '203 dpi', 'Wi-Fi': 'Tak' },
         priceFrom: 2168.47,
@@ -1019,7 +1019,7 @@ Szukasz tańszej wersji bez ribbona? Sprawdź [Zebra ZD421d](/produkt/zebra-zd42
         availability: 'available',
       },
       {
-        partNumber: 'ZD4A043-30EW02EZ',
+        partNumber: 'ZD4A043-30EX02EZ',
         name: '300 dpi, USB, Bluetooth + Wi-Fi',
         attributes: { 'Rozdzielczość': '300 dpi', 'Wi-Fi': 'Tak' },
         priceFrom: 2454.01,
@@ -1118,7 +1118,7 @@ Szukasz tańszej wersji bez ribbona? Sprawdź [Zebra ZD421d](/produkt/zebra-zd42
       },
       {
         question: 'Jak podłączyć Zebra ZD421t do sieci Wi-Fi?',
-        answer: 'Do połączenia ZD421t z siecią Wi-Fi potrzebny jest opcjonalny moduł bezprzewodowy (Bluetooth 4.1 + Wi-Fi 802.11ac). Moduł instaluje się beznarzędziowo w gnieździe z tyłu drukarki. Po instalacji konfiguracja Wi-Fi odbywa się za pomocą oprogramowania Zebra Setup Utilities lub zdalnie przez platformę Link-OS. Warianty z fabrycznie zainstalowanym Wi-Fi to: ZD4A042-30EW02EZ (203 dpi) i ZD4A043-30EW02EZ (300 dpi).',
+        answer: 'Do połączenia ZD421t z siecią Wi-Fi potrzebny jest opcjonalny moduł bezprzewodowy (Bluetooth 4.1 + Wi-Fi 802.11ac). Moduł instaluje się beznarzędziowo w gnieździe z tyłu drukarki. Po instalacji konfiguracja Wi-Fi odbywa się za pomocą oprogramowania Zebra Setup Utilities lub zdalnie przez platformę Link-OS. Warianty z fabrycznie zainstalowanym Wi-Fi to: ZD4A042-30EX02EZ (203 dpi) i ZD4A043-30EX02EZ (300 dpi).',
       },
       {
         question: 'Jaka jest gwarancja na drukarkę Zebra ZD421t?',
@@ -1343,7 +1343,7 @@ Szukasz wersji z drukiem trwałym (termotransferowym)? Sprawdź [Zebra ZD421t](/
         availability: 'available',
       },
       {
-        partNumber: 'ZD4A042-D0EW02EZ',
+        partNumber: 'ZD4A042-D0EX02EZ',
         name: '203 dpi, USB, BT + Wi-Fi',
         attributes: { 'Rozdzielczość': '203 dpi', 'Wi-Fi': 'Tak' },
         priceFrom: 2004.97,
@@ -1364,7 +1364,7 @@ Szukasz wersji z drukiem trwałym (termotransferowym)? Sprawdź [Zebra ZD421t](/
         availability: 'available',
       },
       {
-        partNumber: 'ZD4A043-D0EW02EZ',
+        partNumber: 'ZD4A043-D0EX02EZ',
         name: '300 dpi, USB, BT + Wi-Fi',
         attributes: { 'Rozdzielczość': '300 dpi', 'Wi-Fi': 'Tak' },
         priceFrom: 2299.77,
@@ -1432,7 +1432,7 @@ Szukasz wersji z drukiem trwałym (termotransferowym)? Sprawdź [Zebra ZD421t](/
       },
       {
         question: 'Jak podłączyć Zebra ZD421d do sieci Wi-Fi lub Ethernet?',
-        answer: 'ZD421d w wersji podstawowej łączy się przez USB. Do połączenia sieciowego masz dwie opcje: 1) <a href="/produkt/zebra-module-ethernet-zd421">Moduł Ethernet</a> (P1112640-015) — instalacja beznarzędziowa w gnieździe MCS z tyłu drukarki, 2) <a href="/produkt/zebra-module-wifi-zd421">Moduł Wi-Fi + Bluetooth</a> (P1112640-017C) — również instalacja w gnieździe MCS. Możesz też kupić wariant z fabrycznie zainstalowanym interfejsem: ZD4A042-D0EE00EZ (USB + Ethernet, od 1 796 zł) lub ZD4A042-D0EW02EZ (USB + Wi-Fi + BT, od 2 005 zł).',
+        answer: 'ZD421d w wersji podstawowej łączy się przez USB. Do połączenia sieciowego masz dwie opcje: 1) <a href="/produkt/zebra-module-ethernet-zd421">Moduł Ethernet</a> (P1112640-015) — instalacja beznarzędziowa w gnieździe MCS z tyłu drukarki, 2) <a href="/produkt/zebra-module-wifi-zd421">Moduł Wi-Fi + Bluetooth</a> (P1112640-017C) — również instalacja w gnieździe MCS. Możesz też kupić wariant z fabrycznie zainstalowanym interfejsem: ZD4A042-D0EE00EZ (USB + Ethernet, od 1 796 zł) lub ZD4A042-D0EX02EZ (USB + Wi-Fi + BT, od 2 005 zł).',
       },
       {
         question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
