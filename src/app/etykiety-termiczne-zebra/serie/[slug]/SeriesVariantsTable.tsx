@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { thermalSizeSlug, type ProductVariant } from '@/data/products'
 import type { StockInfo } from '@/lib/ingram'
 import { ChevronDownIcon, HelpCircleIcon, SearchIcon, CloseIcon } from '@/components/ui/Icons'
+import { LABEL_CORE } from '@/data/label-core'
 
 interface Props {
   variants: ProductVariant[]
@@ -20,6 +21,12 @@ interface Props {
 /** Bezpieczne wyciągnięcie atrybutu */
 function attr(v: ProductVariant, key: string): string {
   return v.attributes[key] ?? ''
+}
+
+/** Rdzeń wariantu — z atrybutów, a gdy ich brak, z mapy LABEL_CORE (feedy
+ *  dystrybutorów). Ten sam fallback co na kartach produktów. */
+function rdzenWariantu(v: ProductVariant): string {
+  return attr(v, 'Rdzeń (gilza)') || attr(v, 'Rdzeń') || LABEL_CORE[v.partNumber] || ''
 }
 
 
@@ -161,7 +168,7 @@ export default function SeriesVariantsTable({
       if (except !== 'wy' && filterWysokosc.size > 0) {
         if (!size || !filterWysokosc.has(size.height)) return false
       }
-      if (except !== 'gi' && filterGilza.size > 0 && !filterGilza.has(attr(v, 'Rdzeń (gilza)'))) return false
+      if (except !== 'gi' && filterGilza.size > 0 && !filterGilza.has(rdzenWariantu(v))) return false
       if (except !== 'pe' && filterPerforacja.size > 0 && !filterPerforacja.has(perforationLabel(attr(v, 'Perforacja')))) return false
       if (except !== 's' && search.trim()) {
         const q = search.toLowerCase()
@@ -197,7 +204,7 @@ export default function SeriesVariantsTable({
     const set = new Set<string>()
     variants.forEach(v => {
       if (!matchesExcept(v, 'gi')) return
-      const g = attr(v, 'Rdzeń (gilza)')
+      const g = rdzenWariantu(v)
       if (g) set.add(g)
     })
     return Array.from(set).sort((a, b) => (parseInt(a) || 0) - (parseInt(b) || 0))
@@ -527,7 +534,7 @@ function VariantCard({
   stockLoading?: boolean
 }) {
   const rozmiar = attr(v, 'Rozmiar')
-  const gilza = attr(v, 'Rdzeń (gilza)')
+  const gilza = rdzenWariantu(v)
   const hasImage = !!productImage
   // Wersja (np. 8000D Jewelry: ze skrzydełkami / bez skrzydełek) — różnicuje warianty o tym samym rozmiarze.
   const wersja = attr(v, 'Wersja')

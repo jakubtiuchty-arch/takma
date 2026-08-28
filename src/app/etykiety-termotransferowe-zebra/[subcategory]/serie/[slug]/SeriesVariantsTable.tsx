@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { thermalSizeSlug, type ProductVariant } from '@/data/products'
 import type { StockInfo } from '@/lib/ingram'
 import { ChevronDownIcon, HelpCircleIcon, SearchIcon, CloseIcon } from '@/components/ui/Icons'
+import { LABEL_CORE } from '@/data/label-core'
 
 interface Props {
   variants: ProductVariant[]
@@ -19,6 +20,19 @@ interface Props {
 
 function attr(v: ProductVariant, key: string): string {
   return v.attributes[key] ?? ''
+}
+
+/**
+ * Średnica rdzenia wariantu.
+ *
+ * Część wariantów ma rdzeń w atrybutach, część nie — katalog powstawał
+ * partiami. Brakujące uzupełnia LABEL_CORE (mapa PN → rdzeń, generowana z
+ * feedów Ingrama i Jarltecha), której używa już karta produktu. Bez tego
+ * kafelek serii milczał o parametrze, który decyduje, czy rolka w ogóle
+ * wejdzie do drukarki.
+ */
+function rdzenWariantu(v: ProductVariant): string {
+  return attr(v, 'Rdzeń') || attr(v, 'Rdzeń (gilza)') || LABEL_CORE[v.partNumber] || ''
 }
 
 /** Parsowanie "102×152 mm" → { width: 102, height: 152 } */
@@ -147,7 +161,7 @@ export default function SeriesVariantsTable({
       if (except !== 'wy' && filterWysokosc.size > 0) {
         if (!size || !filterWysokosc.has(size.height)) return false
       }
-      if (except !== 'rd' && filterRdzen.size > 0 && !filterRdzen.has(attr(v, 'Rdzeń'))) return false
+      if (except !== 'rd' && filterRdzen.size > 0 && !filterRdzen.has(rdzenWariantu(v))) return false
       if (except !== 's' && search.trim()) {
         const q = search.toLowerCase()
         if (!attr(v, 'Rozmiar').toLowerCase().includes(q) && !v.partNumber.toLowerCase().includes(q)) return false
@@ -181,7 +195,7 @@ export default function SeriesVariantsTable({
     const set = new Set<string>()
     variants.forEach(v => {
       if (!matchesExcept(v, 'rd')) return
-      const g = attr(v, 'Rdzeń')
+      const g = rdzenWariantu(v)
       if (g) set.add(g)
     })
     return Array.from(set).sort((a, b) => (parseInt(a) || 0) - (parseInt(b) || 0))
@@ -479,7 +493,7 @@ function VariantCard({
   stockLoading?: boolean
 }) {
   const rozmiar = attr(v, 'Rozmiar')
-  const rdzen = attr(v, 'Rdzeń')
+  const rdzen = rdzenWariantu(v)
   const qtyInRoll = attr(v, 'Etykiet w rolce')
   const hasImage = !!productImage
 
