@@ -3,7 +3,7 @@ import Anthropic from '@anthropic-ai/sdk'
 import { prisma } from '@/lib/db'
 import { gaConfigured, gaDashboard, gaDayDetail, gaConversions, LEAD_EVENTS, type GaRow, type GaMetrics, type GaDayDetail } from '@/lib/ga'
 
-export const maxDuration = 120
+export const maxDuration = 300
 
 function yesterdayWarsaw(): string {
   const d = new Date(Date.now() - 24 * 60 * 60 * 1000)
@@ -81,10 +81,10 @@ export async function GET(request: NextRequest) {
   }
 
   // Analizujemy ostatnie 7 dni vs poprzednie 7 dni (świeży obraz, mniej szumu niż 1 dzień).
-  const [data, day, konw, zamowienia] = await Promise.all([
-    gaDashboard(7),
-    gaDayDetail(date),
-    gaConversions(7),
+  // GA4 Data API ma limit równoległych zapytań na usługę, a każda z tych
+  // funkcji sama odpala kilkanaście runReportów. Puszczone razem dostawały 429,
+  // więc idą jedna po drugiej; zapytanie do naszej bazy leci równolegle.
+  const zamowieniaP = (
     // Sprzedaż bierzemy z bazy, nie z GA4: analiza zgadywała „to pewnie TC22",
     // mając tylko kwotę przychodu bez pozycji zamówień.
     prisma.order.findMany({
@@ -97,8 +97,13 @@ export async function GET(request: NextRequest) {
         items: { select: { productName: true, partNumber: true, quantity: true, priceNetto: true } },
       },
       orderBy: { createdAt: 'asc' },
-    }),
-  ])
+    })
+  )
+  const data = await gaDashboard(7)
+  const day = await gaDayDetail(date)
+  const konw = await gaConversions(7)
+  const zamowienia = await zamowieniaP
+
   const alerts = dayAlerts(date, day)
 
   const sprzedaz = zamowienia.length
