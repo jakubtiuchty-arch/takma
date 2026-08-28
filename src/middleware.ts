@@ -33,9 +33,19 @@ export async function middleware(request: NextRequest) {
     '/poradnik/m3-mobile-sm24-sm25-porownanie': '/poradnik/m3-sm24-sm25-porownanie',
     '/produkt/m3-mobile-sm24': '/produkt/m3-sm24',
     '/produkt/m3-mobile-sm25': '/produkt/m3-sm25',
+    // „zd421" to nazwa serii — kierujemy na wersję termotransferową. Reguła jest
+    // TU, a nie w next.config, żeby skrócić łańcuch: normalizacja końcowego
+    // slasha przez Next dokładała osobny przeskok, więc stary adres z indeksu
+    // Google (/produkt/zebra-zd421/) szedł przez trzy przekierowania.
+    '/produkt/zebra-zd421': '/produkt/zebra-zd421t',
+    '/produkt/zebra-zd420': '/produkt/zebra-zd421t',
   }
-  if (redirects[pathname]) {
-    return NextResponse.redirect(new URL(redirects[pathname], request.url), 301)
+  // Wariant z końcowym slashem Next normalizuje własnym 308 ZANIM dojdzie tutaj
+  // (adres z indeksu Google, /produkt/zebra-zd421/, kosztuje więc jeden przeskok
+  // więcej). Zostawiamy tak: wyłączenie normalizacji dotyczyłoby całego serwisu.
+  const bezSlasha = pathname.length > 1 && pathname.endsWith('/') ? pathname.slice(0, -1) : pathname
+  if (redirects[bezSlasha]) {
+    return NextResponse.redirect(new URL(redirects[bezSlasha], request.url), 301)
   }
 
   // 301 — stare produkty TT (1 SKU = 1 produkt) → nowy URL wariantu serii.
