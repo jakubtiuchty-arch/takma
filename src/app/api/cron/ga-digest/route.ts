@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import Anthropic from '@anthropic-ai/sdk'
 import { prisma } from '@/lib/db'
-import { gaConfigured, gaDashboard, gaDayDetail, LEAD_EVENTS, type GaRow, type GaMetrics, type GaDayDetail } from '@/lib/ga'
+import { gaConfigured, gaDashboard, gaDayDetail, gaConversions, LEAD_EVENTS, type GaRow, type GaMetrics, type GaDayDetail } from '@/lib/ga'
 
 export const maxDuration = 120
 
@@ -11,8 +11,21 @@ function yesterdayWarsaw(): string {
   return new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Warsaw' }).format(d)
 }
 
+/**
+ * Lista dla modelu. Gdy obcinamy, mówimy to wprost — analiza wcześniej
+ * wnioskowała „brak zdarzenia klik_tel", bo zdarzenie po prostu nie mieściło
+ * się w pierwszej ósemce. Model nie ma jak odróżnić „nie ma" od „nie pokazano",
+ * więc musi to dostać napisane.
+ */
 function topList(rows: GaRow[], n = 8): string {
-  return rows.slice(0, n).map((r) => `  - ${r.label}: ${r.value}${r.value2 != null ? ` / ${r.value2}` : ''}`).join('\n')
+  const widoczne = rows.slice(0, n).map((r) => `  - ${r.label}: ${r.value}${r.value2 != null ? ` / ${r.value2}` : ''}`).join('\n')
+  const reszta = rows.length - n
+  return reszta > 0 ? `${widoczne}\n  - […] lista ucięta, pominięto ${reszta} dalszych pozycji` : widoczne
+}
+
+/** Pełna lista bez obcinania — do zdarzeń, gdzie liczy się też ogon. */
+function fullList(rows: GaRow[]): string {
+  return rows.map((r) => `  - ${r.label}: ${r.value}${r.value2 != null ? ` / ${r.value2}` : ''}`).join('\n')
 }
 
 function metricsLine(m: GaMetrics): string {
@@ -68,8 +81,35 @@ export async function GET(request: NextRequest) {
   }
 
   // Analizujemy ostatnie 7 dni vs poprzednie 7 dni (świeży obraz, mniej szumu niż 1 dzień).
-  const [data, day] = await Promise.all([gaDashboard(7), gaDayDetail(date)])
+  const [data, day, konw, zamowienia] = await Promise.all([
+    gaDashboard(7),
+    gaDayDetail(date),
+    gaConversions(7),
+    // Sprzedaż bierzemy z bazy, nie z GA4: analiza zgadywała „to pewnie TC22",
+    // mając tylko kwotę przychodu bez pozycji zamówień.
+    prisma.order.findMany({
+      where: {
+        createdAt: { gte: new Date(Date.now() - 7 * 86_400_000) },
+        status: { in: ['PAID', 'PROCESSING', 'SHIPPED', 'DELIVERED'] },
+      },
+      select: {
+        orderNumber: true, totalBrutto: true, createdAt: true, utmSource: true, utmMedium: true, gclid: true,
+        items: { select: { productName: true, partNumber: true, quantity: true, priceNetto: true } },
+      },
+      orderBy: { createdAt: 'asc' },
+    }),
+  ])
   const alerts = dayAlerts(date, day)
+
+  const sprzedaz = zamowienia.length
+    ? zamowienia
+        .map((z) => {
+          const zrodlo = z.gclid ? 'Google Ads' : z.utmSource ? `${z.utmSource}/${z.utmMedium ?? '—'}` : 'bez atrybucji'
+          const pozycje = z.items.map((i) => `${i.productName} ×${i.quantity} (${i.partNumber}, ${(i.priceNetto / 100).toFixed(0)} zł)`).join('; ')
+          return `  - ${z.createdAt.toISOString().slice(0, 10)} ${z.orderNumber}: ${(z.totalBrutto / 100).toFixed(0)} zł brutto, źródło ${zrodlo} — ${pozycje}`
+        })
+        .join('\n')
+    : '  - brak opłaconych zamówień w okresie'
 
   // Kontekst od właściciela z czatu w panelu: wiadomości przypięte (zawsze) +
   // wiadomości użytkownika z ostatnich 21 dni. Dzięki temu AI nie alarmuje
@@ -90,6 +130,16 @@ export async function GET(request: NextRequest) {
 1. SEZONOWOŚĆ TYGODNIOWA: porównuj dzień z TYM SAMYM dniem tygodnia tydzień wcześniej, nie ze średnią. W tym B2B soboty/niedziele normalnie mają 0 zdarzeń kluczowych (klik_tel/klik_mail/formularz) — zero zdarzeń w weekend to NIE anomalia.
 2. LAG ATRYBUCJI GA4: dla najświeższej doby kanał „Unassigned" i pusty landing page to zwykle NIEDOMKNIĘTE przetwarzanie atrybucji (dopina się do 24-48 h), a nie zepsute UTM-y. Skok Unassigned wyłącznie w ostatniej dobie ignoruj; alarmuj dopiero, gdy utrzymuje się w dobach starszych niż 48 h.
 3. Zanim zasugerujesz „zepsuty pomiar", sprawdź w danych, czy page_view/session_start w ogóle spadły — jeśli lecą normalnie, tag żyje.
+4. NIE twierdź, że czegoś nie ma, na podstawie listy oznaczonej jako ucięta. Brak pozycji na uciętej liście znaczy tylko tyle, że nie zmieściła się w czołówce. Wnioski o braku wyciągaj wyłącznie z list opisanych jako PEŁNA LISTA.
+5. Nie proponuj wdrożenia czegoś, co już działa. Poniżej masz spis wdrożonych pomiarów — sprawdź go, zanim napiszesz „wdróż śledzenie X".
+
+## CO JEST WDROŻONE (stan pomiaru — nie proponuj tego ponownie)
+- Mikro-konwersje: klik_tel i klik_mail strzelają automatycznie z każdego linku tel:/mailto: w całym serwisie (globalny listener w layoucie). Formularze: form_start, form_submit, wyslanie_formularza, generate_lead.
+- Formularz serwisowy (zgłoszenie RMA) działa na /serwis i podstronach /serwis/<marka> i strzela generate_lead + form_submit.
+- E-commerce: view_item, add_to_cart, view_cart, begin_checkout, add_payment_info, purchase (z parametrem coupon dla kodów rabatowych).
+- Własne zdarzenia: strona_kontakt, doradca_widoczny/doradca_otwarty/doradca_pytanie (czat doradcy materiałowego), ribbon_calc_used (kalkulator taśm), kod_zastosowany/kod_odrzucony (kody rabatowe), search.
+- Ruch „serwis-zebry / instrukcja" to NASZE własne, celowe tagowanie UTM z banerów na serwis-zebry.pl prowadzących do instrukcji obsługi na takma.com.pl. To nie jest zepsuty pomiar cross-domain ani utrata atrybucji — nie zgłaszaj tego jako problemu.
+- IndexNow zgłasza zmiany do Bing (wdrożone 28.08.2026).
 ${ownerContext ? `\n## 🗣️ KONTEKST OD WŁAŚCICIELA (z czatu w panelu) — BEZWZGLĘDNIE UWZGLĘDNIJ\nWłaściciel wyjaśnił poniższe sytuacje. NIE zgłaszaj ponownie jako anomalii niczego, co już wyjaśnił. Jeśli alert dotyczy wyjaśnionej sprawy — zamiast alarmować, krótko odnotuj „zgodnie z wyjaśnieniem właściciela: …". Uwzględniaj daty (wyjaśnienie może dotyczyć konkretnego okresu).\n${ownerContext}\n` : ''}${alerts.length ? `\n## ⚠️ ALERTY za wczoraj (${date}) — odnieś się do nich w analizie (ale pomiń te już wyjaśnione przez właściciela)\n${alerts.map((a) => `  - ${a}`).join('\n')}\n` : ''}
 
 ## Metryki (ostatnie 7 dni)
@@ -116,8 +166,23 @@ ${topList(data.countries, 6)}
 ## Urządzenia (sesje)
 ${topList(data.devices, 4)}
 
-## Zdarzenia (liczba)
-${topList(data.events)}
+## Zdarzenia — PEŁNA LISTA (wszystkie zdarzenia zarejestrowane w okresie, nic nie ucięto)
+${fullList(data.events)}
+
+## Konwersje: zdarzenia leadowe (teraz vs poprzedni okres)
+${konw.leadEvents.map((e) => `  - ${e.name}: ${e.count} (poprzednio ${e.prevCount})`).join('\n') || '  - brak'}
+
+## Leady wg strony — PEŁNA LISTA (na której stronie klient kliknął telefon/mail lub wysłał formularz)
+${konw.leadsByPage.map((p) => `  - ${p.page}: ${p.leads}`).join('\n') || '  - brak leadów w okresie'}
+
+## Leady wg źródła (sesje / leady)
+${konw.leadsBySource.slice(0, 10).map((x) => `  - ${x.source}: ${x.sessions} / ${x.leads}`).join('\n') || '  - brak'}
+
+## Lejek zakupowy
+${konw.funnel.map((f) => `  - ${f.name}: ${f.count}`).join('\n') || '  - brak'}
+
+## Sprzedaż z bazy sklepu (nie z GA4 — to są faktyczne zamówienia)
+${sprzedaz}
 
 ## Zadanie
 Napisz zwięzłą analizę (markdown, ~250-400 słów) w sekcjach:

@@ -165,7 +165,7 @@ export async function gaDashboard(rangeDays = 28): Promise<GaDashboard> {
       callApi('runReport', { dateRanges: [cur], dimensions: [{ name: 'country' }], metrics: [{ name: 'activeUsers' }], orderBys: [{ metric: { metricName: 'activeUsers' }, desc: true }], limit: 10 }),
       callApi('runReport', { dateRanges: [cur], dimensions: [{ name: 'deviceCategory' }], metrics: [{ name: 'sessions' }], orderBys: [{ metric: { metricName: 'sessions' }, desc: true }] }),
       callApi('runReport', { dateRanges: [cur], dimensions: [{ name: 'landingPagePlusQueryString' }], metrics: [{ name: 'sessions' }], orderBys: [{ metric: { metricName: 'sessions' }, desc: true }], limit: 12 }),
-      callApi('runReport', { dateRanges: [cur], dimensions: [{ name: 'eventName' }], metrics: [{ name: 'eventCount' }], orderBys: [{ metric: { metricName: 'eventCount' }, desc: true }], limit: 12 }),
+      callApi('runReport', { dateRanges: [cur], dimensions: [{ name: 'eventName' }], metrics: [{ name: 'eventCount' }], orderBys: [{ metric: { metricName: 'eventCount' }, desc: true }], limit: 100 }),
       callApi('runRealtimeReport', { metrics: [{ name: 'activeUsers' }] }).catch(() => ({ rows: [] }) as GaResponse),
     ])
 
