@@ -6,6 +6,7 @@ import { prisma } from '@/lib/db'
 import { getSessionFromCookie } from '@/lib/auth'
 import { slugFromName } from '@/lib/used-devices'
 import { createSerwisServiceClient } from '@/lib/serwis-supabase/server'
+import { zglosWTle } from '@/lib/indexnow'
 
 const BUCKET = 'uzywane'
 
@@ -103,6 +104,8 @@ export async function dodajUzywke(form: FormData) {
 
   revalidatePath('/admin/uzywane')
   revalidatePath('/uzywane')
+  // Bing dowiaduje się o nowej sztuce od razu, zamiast czekać na kolejny crawl.
+  zglosWTle(['/uzywane', `/uzywane/${slug}`])
   redirect('/admin/uzywane')
 }
 
@@ -131,6 +134,7 @@ export async function zapiszUzywke(id: string, form: FormData) {
   revalidatePath('/admin/uzywane')
   revalidatePath('/uzywane')
   revalidatePath(`/uzywane/${sztuka.slug}`)
+  zglosWTle(['/uzywane', `/uzywane/${sztuka.slug}`])
   redirect('/admin/uzywane')
 }
 
@@ -154,6 +158,7 @@ export async function usunUzywke(id: string) {
 
   revalidatePath('/admin/uzywane')
   revalidatePath('/uzywane')
+  zglosWTle(['/uzywane', `/uzywane/${sztuka.slug}`])
 }
 
 export async function zmienStatus(id: string, status: 'AVAILABLE' | 'RESERVED' | 'SOLD') {
@@ -167,4 +172,6 @@ export async function zmienStatus(id: string, status: 'AVAILABLE' | 'RESERVED' |
   })
   revalidatePath('/admin/uzywane')
   revalidatePath('/uzywane')
+  const sztuka = await prisma.usedDevice.findUnique({ where: { id }, select: { slug: true } })
+  zglosWTle(['/uzywane', ...(sztuka ? [`/uzywane/${sztuka.slug}`] : [])])
 }
