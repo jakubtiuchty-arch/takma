@@ -92,7 +92,7 @@ export default function ListaOfert({ oferty, fraza }: { oferty: OfertaDto[]; fra
                 <th className="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">Status</th>
                 <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Ważna do</th>
                 <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Utworzona</th>
-                <th className="px-4 py-3 w-10"><span className="sr-only">Akcje</span></th>
+                <th className="px-4 py-3 w-10 text-right text-xs font-medium text-gray-500 uppercase">Akcje</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-100">
@@ -132,8 +132,18 @@ export default function ListaOfert({ oferty, fraza }: { oferty: OfertaDto[]; fra
                     </td>
                     <td className="px-4 py-3 text-sm text-gray-600 whitespace-nowrap">{o.validUntil}</td>
                     <td className="px-4 py-3 text-sm text-gray-600 whitespace-nowrap">{o.createdAt}</td>
-                    <td className="px-4 py-3 text-right">
-                      <DeleteQuoteButton quoteId={o.id} quoteNumber={o.quoteNumber} />
+                    <td className="px-4 py-3">
+                      <div className="flex items-center justify-end gap-3 whitespace-nowrap">
+                        {/* Kopia oferty: pozycje i warunki zostają, klient do wpisania */}
+                        <Link
+                          href={`/admin/oferty/nowa?kopiaZ=${o.id}`}
+                          className="text-sm text-blue-600 hover:text-blue-700 hover:underline"
+                          title="Nowa oferta z tymi samymi pozycjami"
+                        >
+                          Dodaj podobną
+                        </Link>
+                        <DeleteQuoteButton quoteId={o.id} quoteNumber={o.quoteNumber} />
+                      </div>
                     </td>
                   </tr>
                 ))

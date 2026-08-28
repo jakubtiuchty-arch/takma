@@ -66,9 +66,12 @@ export interface EditData {
 interface QuoteBuilderProps {
   rfqData?: RfqData
   editData?: EditData
+  /** Kopia istniejącej oferty: pozycje i warunki wchodzą gotowe, dane klienta
+   *  zostają puste. Bez quoteId, więc zapis tworzy NOWĄ ofertę. */
+  copyData?: Omit<EditData, 'quoteId' | 'client'>
 }
 
-export default function QuoteBuilder({ rfqData, editData }: QuoteBuilderProps) {
+export default function QuoteBuilder({ rfqData, editData, copyData }: QuoteBuilderProps) {
   const store = useQuoteStore()
   const [isPending, startTransition] = useTransition()
   const initialized = useRef(false)
@@ -115,6 +118,34 @@ export default function QuoteBuilder({ rfqData, editData }: QuoteBuilderProps) {
         internalNotes: editData.terms.internalNotes || '',
         freebiesNote: editData.terms.freebiesNote || '',
         zebraServiceBanner: editData.terms.zebraServiceBanner ?? false,
+      })
+    } else if (copyData) {
+      // Kopia oferty: przepisujemy pozycje z cenami i marżami oraz warunki
+      // handlowe. Klienta zostawiamy pustego — to jedyna rzecz, którą trzeba
+      // wpisać od nowa, i nie chcemy, żeby ktoś wysłał ofertę pod starą firmę.
+      for (const item of copyData.items) {
+        store.addItem({
+          source: item.source as 'catalog' | 'manual' | 'import',
+          productId: item.productId,
+          productName: item.productName,
+          partNumber: item.partNumber,
+          description: item.description,
+          quantity: item.quantity,
+          priceNetto: item.priceNetto,
+          purchasePrice: item.purchasePrice,
+          marginPercent: item.marginPercent,
+          discountPercent: item.discountPercent,
+          catalogPrice: item.catalogPrice,
+        })
+      }
+      store.setTerms({
+        validDays: copyData.terms.validDays,
+        paymentTerms: copyData.terms.paymentTerms,
+        deliveryTerms: copyData.terms.deliveryTerms,
+        notes: copyData.terms.notes || '',
+        internalNotes: copyData.terms.internalNotes || '',
+        freebiesNote: copyData.terms.freebiesNote || '',
+        zebraServiceBanner: copyData.terms.zebraServiceBanner ?? false,
       })
     } else if (rfqData) {
       // Załaduj dane klienta z zapytania

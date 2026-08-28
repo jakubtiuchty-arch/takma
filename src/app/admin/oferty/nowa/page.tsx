@@ -3,11 +3,65 @@ import Link from 'next/link'
 import { prisma } from '@/lib/db'
 
 interface PageProps {
-  searchParams: Promise<{ fromRfq?: string }>
+  searchParams: Promise<{ fromRfq?: string; kopiaZ?: string }>
 }
 
 export default async function NewQuotePage({ searchParams }: PageProps) {
-  const { fromRfq } = await searchParams
+  const { fromRfq, kopiaZ } = await searchParams
+
+  // „Dodaj podobną": bierzemy pozycje i warunki z istniejącej oferty, dane
+  // klienta zostawiamy puste. Nowa oferta dostaje własny numer — nic nie
+  // nadpisujemy w tej, z której kopiujemy.
+  let kopia: {
+    zrodloNumer: string
+    items: {
+      source: string; productId?: string; productName: string; partNumber?: string
+      description?: string; quantity: number; priceNetto: number; purchasePrice?: number
+      marginPercent?: number; discountPercent?: number; catalogPrice?: number
+    }[]
+    terms: {
+      validDays: number; paymentTerms: string; deliveryTerms: string
+      notes?: string; internalNotes?: string; freebiesNote?: string; zebraServiceBanner?: boolean
+    }
+  } | null = null
+
+  if (kopiaZ) {
+    const zrodlo = await prisma.quote.findUnique({
+      where: { id: kopiaZ },
+      include: { items: { orderBy: { position: 'asc' } } },
+    })
+    if (zrodlo) {
+      const dni = Math.max(
+        1,
+        Math.round((zrodlo.validUntil.getTime() - zrodlo.createdAt.getTime()) / 86_400_000),
+      )
+      kopia = {
+        zrodloNumer: zrodlo.quoteNumber,
+        items: zrodlo.items.map((i) => ({
+          source: i.source,
+          productId: i.productId ?? undefined,
+          productName: i.productName,
+          partNumber: i.partNumber ?? undefined,
+          description: i.description ?? undefined,
+          quantity: i.quantity,
+          priceNetto: i.priceNetto,
+          purchasePrice: i.purchasePrice ?? undefined,
+          marginPercent: i.marginPercent ?? undefined,
+          discountPercent: i.discountPercent ?? undefined,
+          catalogPrice: i.catalogPriceNetto ?? undefined,
+        })),
+        terms: {
+          validDays: dni,
+          paymentTerms: zrodlo.paymentTerms,
+          deliveryTerms: zrodlo.deliveryTerms,
+          notes: zrodlo.notes ?? undefined,
+          internalNotes: zrodlo.internalNotes ?? undefined,
+          freebiesNote: zrodlo.freebiesNote ?? undefined,
+          zebraServiceBanner: zrodlo.zebraServiceBanner,
+        },
+      }
+    }
+  }
 
   // Wczytaj dane z zapytania klienta (jeśli konwersja RFQ → oferta)
   let rfqData: {
@@ -68,9 +122,18 @@ export default async function NewQuotePage({ searchParams }: PageProps) {
           </svg>
         </Link>
         <h1 className="text-2xl font-bold text-gray-900">
-          {rfqData ? 'Wycena zapytania klienta' : 'Nowa oferta'}
+          {rfqData ? 'Wycena zapytania klienta' : kopia ? 'Nowa oferta na wzór poprzedniej' : 'Nowa oferta'}
         </h1>
       </div>
+
+      {kopia && (
+        <div className="mb-6 bg-blue-50 border border-blue-200 rounded-xl p-4">
+          <p className="text-sm text-blue-800">
+            Pozycje i warunki przepisane z oferty <strong>{kopia.zrodloNumer}</strong> ({kopia.items.length} poz.).
+            Uzupełnij dane klienta — reszta jest gotowa, ceny możesz poprawić w tabeli.
+          </p>
+        </div>
+      )}
 
       {rfqData && (
         <div className="mb-6 bg-cyan-50 border border-cyan-200 rounded-xl p-4">
@@ -86,7 +149,7 @@ export default async function NewQuotePage({ searchParams }: PageProps) {
         </div>
       )}
 
-      <QuoteBuilder rfqData={rfqData ? {
+      <QuoteBuilder copyData={kopia ? { items: kopia.items, terms: kopia.terms } : undefined} rfqData={rfqData ? {
         rfqQuoteId: rfqData.rfqQuoteId,
         client: {
           company: rfqData.client.company,

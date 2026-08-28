@@ -108,6 +108,17 @@ export default function QuoteActions({ quoteId, quoteNumber, status, hasEmail }:
         >
           Duplikuj ofertę
         </button>
+        <p className="-mt-1 text-xs text-gray-400">kopia 1:1 razem z danymi klienta</p>
+
+        {/* Ten sam zestaw produktów dla innej firmy — najczęstszy przypadek przy
+            powtarzalnych konfiguracjach (terminal + akcesoria + kontrakt). */}
+        <a
+          href={`/admin/oferty/nowa?kopiaZ=${quoteId}`}
+          className="w-full px-4 py-2.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium hover:bg-blue-100 flex items-center justify-center"
+        >
+          Dodaj podobną dla innego klienta
+        </a>
+        <p className="-mt-1 text-xs text-gray-400">pozycje i warunki zostają, dane klienta puste</p>
 
         {/* Status controls */}
         <div className="pt-3 border-t border-gray-200 space-y-2">
