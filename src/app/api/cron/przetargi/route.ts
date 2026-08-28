@@ -25,16 +25,38 @@ const NOTICE_URL = (objectId: string) => `https://ezamowienia.gov.pl/mo-client-b
 const DIGEST_TO = 'jakub.tiuchty@takma.com.pl'
 const MIN_SCORE_FOR_MAIL = 40
 
-// Kody CPV branżowe (prefiksy, bez sufiksu kontrolnego)
-const CPV_PREFIXES = [
-  '30232100', // drukarki i plotery (szum: 3D — odsiewa AI)
+/**
+ * Poniżej tej oceny w ogóle nie zapisujemy ogłoszenia.
+ *
+ * Przez miesiąc do bazy wpadło 248 przetargów, z czego 205 z oceną 0–19:
+ * laptopy, serwery, oprogramowanie, pomoce dydaktyczne. Scoring rozpoznawał je
+ * poprawnie, ale panel i tak je pokazywał, więc lista była nie do przejrzenia.
+ * Odsiew przy zapisie trzyma bazę czystą; jeśli AI kiedyś odrzuci coś słusznego,
+ * zobaczymy to w liczniku „odrzucone przez scoring" w logu crona.
+ */
+const MIN_SCORE_TO_SAVE = 30
+
+/**
+ * Kody CPV, które SAME wystarczą — trafiają w rdzeń oferty i prawie nie dają szumu.
+ */
+const CPV_RDZEN = [
   '30216130', // czytniki kodów kreskowych
   '30216000', // czytniki magnetyczne i optyczne
   '30192800', // etykiety samoprzylepne
   '30199760', // etykiety
   '30192300', // taśmy barwiące
-  '30213100', // komputery przenośne (tak bywają klasyfikowane kolektory)
+]
+
+/**
+ * Kody szerokie: łapią też laptopy, serwery i drukarki biurowe. Wpuszczamy je
+ * tylko wtedy, gdy w treści pada słowo z branży — inaczej to była główna
+ * fabryka szumu (30213100 „komputery przenośne" to w 95% zwykłe laptopy).
+ */
+const CPV_SZEROKIE = [
+  '30232100', // drukarki i plotery (w tym 3D i biurowe)
+  '30213100', // komputery przenośne
   '30213200', // tablety
+  '30237000', // części i akcesoria komputerowe
 ]
 
 // Słowa kluczowe (lowercase, dopasowanie substring w przedmiocie + treści)
@@ -73,9 +95,14 @@ function matchesPrefilter(n: BzpNotice): boolean {
   // cpvCode to string z WIELOMA kodami: "30200000-1 (Urządzenia...),30232100-4 (Drukarki...)"
   // — includes, nie startsWith, bo kody branżowe bywają dopiero na dalszych pozycjach
   const cpv = n.cpvCode || ''
-  if (CPV_PREFIXES.some((p) => cpv.includes(p))) return true
+  if (CPV_RDZEN.some((p) => cpv.includes(p))) return true
+
   const blob = `${n.orderObject || ''} ${stripHtml(n.htmlBody || '')}`.toLowerCase()
-  return KEYWORDS.some((k) => blob.includes(k))
+  const maSlowo = KEYWORDS.some((k) => blob.includes(k))
+
+  // Szeroki kod przepuszczamy tylko z potwierdzeniem w treści.
+  if (CPV_SZEROKIE.some((p) => cpv.includes(p))) return maSlowo
+  return maSlowo
 }
 
 /**
@@ -146,7 +173,9 @@ function tedPol(v: unknown): string {
 async function fetchTedCandidates(fromDate: string, toDate: string): Promise<BzpNotice[]> {
   const fmt = (d: string) => d.replace(/-/g, '')
   const query =
-    `((classification-cpv IN (${CPV_PREFIXES.join(' ')})) OR ` +
+    // W TED pytamy tylko o kody rdzeniowe — szerokie (laptopy, drukarki biurowe)
+    // zwracały setki ogłoszeń IT, z których nic nie było dla nas.
+    `((classification-cpv IN (${CPV_RDZEN.join(' ')})) OR ` +
     `FT~("drukarki etykiet" OR "drukarek etykiet" OR "kolektory danych" OR "kolektorów danych" OR "czytniki kodów" OR "czytników kodów" OR "terminale mobilne" OR "etykiety samoprzylepne" OR "taśmy termotransferowe")) ` +
     `AND buyer-country=POL AND publication-date>=${fmt(fromDate)} AND publication-date<=${fmt(toDate)} ` +
     `AND notice-type IN (cn-standard cn-social cn-desg)`
@@ -277,8 +306,11 @@ export async function GET(request: NextRequest) {
   }
   console.log(`[przetargi] BZP pobrane=${raw} prefiltr=${bzpCandidates.length} TED=${tedCandidates.length} nowe=${fresh.length}`)
 
+  const doZapisu = scored.filter((n) => n.score >= MIN_SCORE_TO_SAVE)
+  const odsiane = scored.length - doZapisu.length
+
   if (!dry) {
-    for (const n of scored) {
+    for (const n of doZapisu) {
       await prisma.tender.upsert({
         where: { noticeNumber: n.noticeNumber },
         create: {
@@ -336,6 +368,8 @@ export async function GET(request: NextRequest) {
     ted: tedCandidates.length,
     tedError,
     nowe: fresh.length,
+    zapisane: doZapisu.length,
+    odsianeScoringiem: odsiane,
     doMaila: forMail.length,
     top: scored.sort((a, b) => b.score - a.score).slice(0, 10).map((n) => ({ score: n.score, przedmiot: (n.orderObject || '').slice(0, 90), reason: n.reason })),
   })

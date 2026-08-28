@@ -17,15 +17,45 @@ function daysLeft(date: Date | null): { label: string; urgent: boolean } {
   return { label: `${date.toLocaleDateString('pl-PL')} (${d} dni)`, urgent: d <= 7 }
 }
 
-export default async function PrzetargiPage({ searchParams }: { searchParams: Promise<{ status?: string }> }) {
-  const { status } = await searchParams
+/**
+ * Panel przetargów.
+ *
+ * Domyślnie pokazujemy tylko trafienia z oceną ≥ 40 i nieprzeterminowane —
+ * lista ma być listą rzeczy do zrobienia, nie archiwum wszystkiego, co
+ * przewinęło się przez BZP. Niżej ocenione da się obejrzeć zakładką
+ * „Do przejrzenia", a przeterminowane zakładką „Archiwum".
+ */
+const PROG_TRAFIENIA = 40
+
+export default async function PrzetargiPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ status?: string; widok?: string }>
+}) {
+  const { status, widok } = await searchParams
   const filter = status && ['new', 'watched', 'dismissed'].includes(status) ? status : undefined
+  const teraz = new Date()
+
+  // Widoki: trafienia (domyślny), słabsze, archiwum (po terminie)
+  const wgWidoku =
+    widok === 'slabsze'
+      ? { score: { lt: PROG_TRAFIENIA }, OR: [{ submittingOffersDate: null }, { submittingOffersDate: { gte: teraz } }] }
+      : widok === 'archiwum'
+        ? { submittingOffersDate: { lt: teraz } }
+        : { score: { gte: PROG_TRAFIENIA }, OR: [{ submittingOffersDate: null }, { submittingOffersDate: { gte: teraz } }] }
 
   const tenders = await prisma.tender.findMany({
-    where: filter ? { status: filter } : { status: { not: 'dismissed' } },
-    orderBy: [{ status: 'asc' }, { score: 'desc' }, { submittingOffersDate: 'asc' }],
+    where: { ...wgWidoku, ...(filter ? { status: filter } : { status: { not: 'dismissed' } }) },
+    orderBy: [{ score: 'desc' }, { submittingOffersDate: 'asc' }],
     take: 200,
   })
+
+  const aktywne = { OR: [{ submittingOffersDate: null }, { submittingOffersDate: { gte: teraz } }] }
+  const [ileTrafien, ileSlabszych, ileArchiwum] = await Promise.all([
+    prisma.tender.count({ where: { ...aktywne, score: { gte: PROG_TRAFIENIA }, status: { not: 'dismissed' } } }),
+    prisma.tender.count({ where: { ...aktywne, score: { lt: PROG_TRAFIENIA }, status: { not: 'dismissed' } } }),
+    prisma.tender.count({ where: { submittingOffersDate: { lt: teraz } } }),
+  ])
   const counts = Object.fromEntries(
     (await prisma.tender.groupBy({ by: ['status'], _count: true })).map((g) => [g.status, g._count]),
   ) as Record<string, number>
@@ -37,15 +67,28 @@ export default async function PrzetargiPage({ searchParams }: { searchParams: Pr
         <div className="text-sm text-gray-500">Źródła: BZP (e-Zamówienia) + TED (UE) · cron codziennie 6:15</div>
       </div>
       <p className="text-sm text-gray-500 mb-5">
-        Dopasowanie AI do profilu TAKMA (0–100). Digest maili: trafienia ≥ 40.
+        Ocena AI dopasowania do profilu TAKMA (0–100). Do bazy trafiają tylko ogłoszenia ≥ 30,
+        na tej liście ≥ {PROG_TRAFIENIA} i z otwartym terminem składania ofert. Mail dzienny: ≥ 40.
       </p>
+
+      <div className="flex flex-wrap gap-2 mb-3 text-sm">
+        {[
+          { href: '/admin/przetargi', label: `Trafienia (${ileTrafien})`, active: !widok },
+          { href: '/admin/przetargi?widok=slabsze', label: `Do przejrzenia (${ileSlabszych})`, active: widok === 'slabsze' },
+          { href: '/admin/przetargi?widok=archiwum', label: `Archiwum (${ileArchiwum})`, active: widok === 'archiwum' },
+        ].map((t) => (
+          <a key={t.href} href={t.href} className={`px-3 py-1.5 rounded-lg border ${t.active ? 'bg-gray-900 text-white border-gray-900' : 'border-slate-200 text-gray-600 hover:bg-gray-50'}`}>
+            {t.label}
+          </a>
+        ))}
+      </div>
 
       <div className="flex gap-2 mb-5 text-sm">
         {[
-          { href: '/admin/przetargi', label: `Aktywne (${(counts.new || 0) + (counts.watched || 0)})`, active: !filter },
-          { href: '/admin/przetargi?status=new', label: `Nowe (${counts.new || 0})`, active: filter === 'new' },
-          { href: '/admin/przetargi?status=watched', label: `Obserwowane (${counts.watched || 0})`, active: filter === 'watched' },
-          { href: '/admin/przetargi?status=dismissed', label: `Odrzucone (${counts.dismissed || 0})`, active: filter === 'dismissed' },
+          { href: `/admin/przetargi${widok ? `?widok=${widok}` : ''}`, label: `Wszystkie (${(counts.new || 0) + (counts.watched || 0)})`, active: !filter },
+          { href: `/admin/przetargi?status=new${widok ? `&widok=${widok}` : ''}`, label: `Nowe (${counts.new || 0})`, active: filter === 'new' },
+          { href: `/admin/przetargi?status=watched${widok ? `&widok=${widok}` : ''}`, label: `Obserwowane (${counts.watched || 0})`, active: filter === 'watched' },
+          { href: `/admin/przetargi?status=dismissed${widok ? `&widok=${widok}` : ''}`, label: `Odrzucone (${counts.dismissed || 0})`, active: filter === 'dismissed' },
         ].map((t) => (
           <a key={t.href} href={t.href} className={`px-3 py-1.5 rounded-lg border ${t.active ? 'bg-gray-900 text-white border-gray-900' : 'border-slate-200 text-gray-600 hover:bg-gray-50'}`}>
             {t.label}
@@ -55,7 +98,11 @@ export default async function PrzetargiPage({ searchParams }: { searchParams: Pr
 
       {tenders.length === 0 ? (
         <div className="border border-slate-200 rounded-xl p-10 text-center text-gray-500">
-          Brak przetargów w tym widoku. Nowe pojawią się po porannym przebiegu crona.
+          {widok === 'archiwum'
+            ? 'Archiwum jest puste.'
+            : widok === 'slabsze'
+              ? 'Nic do przejrzenia — scoring nie zostawił wątpliwych ogłoszeń.'
+              : 'Brak otwartych trafień. Nowe pojawią się po porannym przebiegu crona (6:15).'}
         </div>
       ) : (
         <div className="space-y-3">
