@@ -260,6 +260,15 @@ export function parsujDokumentCenowy(tekst: string, nazwaPliku?: string): DaneKo
   throw new Error('Nie rozpoznaję dokumentu — czytam koncesje Zebry z PartnerConnect i oferty Jarltecha.')
 }
 
+/**
+ * Gdzie ma trafić przypomnienie o kończącej się cenie. Koncesje wystawiane są
+ * na dwie firmy i każda pilnuje swoich terminów u siebie; przy nieznanej
+ * nazwie mail idzie do nas, żeby nie zginął.
+ */
+export function adresPrzypomnienia(reseller: string): string {
+  return /scanter/i.test(reseller) ? 'biuro@scanter.pl' : 'handlowy@takma.com.pl'
+}
+
 /** Kurs EUR/PLN z NBP (cache 12 h) — koncesje są w euro, oferty w złotych. */
 let kursCache: { kurs: number; o: number } | null = null
 export async function kursEur(): Promise<number> {

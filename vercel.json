@@ -70,6 +70,10 @@
     {
       "path": "/api/cron/indexnow",
       "schedule": "30 6 * * *"
+    },
+    {
+      "path": "/api/cron/koncesje-przypomnienia",
+      "schedule": "0 7 * * *"
     }
   ]
 }

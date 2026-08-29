@@ -72,13 +72,39 @@ export default async function KoncesjePage() {
                 zakup przez {k.distributor || '—'} · {pozycji}
                 {widelki ? ` · ${widelki}` : ''}
               </p>
-              <p className={`text-sm mt-1 ${wygasla ? 'text-gray-400' : dni <= 14 ? 'text-amber-600 font-medium' : 'text-gray-500'}`}>
+              <p className="text-sm mt-1 text-gray-500">
                 {k.startDate.toLocaleDateString('pl-PL')} – {k.endDate.toLocaleDateString('pl-PL')}
-                {wygasla ? ' · wygasła' : ` · zostało ${dni} dni`}
               </p>
             </div>
           </div>
-          <UsunKoncesje id={k.id} etykieta={`${k.source === 'JARLTECH' ? `oferta ${k.docNumber ?? k.requestId}` : k.requestId} (${k.reseller})`} />
+          <div className="flex items-center gap-4 shrink-0">
+            {/* Termin decyduje o wszystkim — po nim cena przepada, więc liczba
+                dni ma być pierwszą rzeczą, którą widać na karcie. Kolor zmienia
+                się na tydzień przed końcem, czyli wtedy, gdy wychodzi mail. */}
+            <span
+              className={`inline-flex flex-col items-center justify-center rounded-xl px-4 py-2 leading-none ${
+                wygasla
+                  ? 'bg-gray-100 text-gray-400'
+                  : dni <= 7
+                    ? 'bg-red-50 text-red-700 ring-1 ring-red-200'
+                    : dni <= 30
+                      ? 'bg-amber-50 text-amber-700 ring-1 ring-amber-200'
+                      : 'bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200'
+              }`}
+            >
+              {wygasla ? (
+                <span className="text-sm font-semibold">wygasła</span>
+              ) : (
+                <>
+                  <span className="text-2xl font-bold tabular-nums">{dni}</span>
+                  <span className="text-[11px] uppercase tracking-wide mt-1">
+                    {dni === 1 ? 'dzień' : 'dni'}
+                  </span>
+                </>
+              )}
+            </span>
+            <UsunKoncesje id={k.id} etykieta={`${k.source === 'JARLTECH' ? `oferta ${k.docNumber ?? k.requestId}` : k.requestId} (${k.reseller})`} />
+          </div>
         </summary>
 
         <table className="w-full text-sm border-t border-gray-200">
@@ -120,7 +146,8 @@ export default async function KoncesjePage() {
         Koncesje Zebry i oferty Jarltecha wystawione na te koncesje. Gdy w kreatorze oferty dodasz numer
         objęty aktywnym dokumentem, zobaczysz podpowiedź z ceną zakupu i pozostałym limitem sztuk.
         Koncesja mówi, ile Zebra pozwala zapłacić; oferta dystrybutora — ile faktycznie zapłacimy.
-        Kliknij kartę, żeby zobaczyć numery i ceny.
+        Kliknij kartę, żeby zobaczyć numery i ceny. Na tydzień przed końcem idzie przypomnienie mailem:
+        ceny TAKMY na handlowy@takma.com.pl, ceny Scantera na biuro@scanter.pl.
       </p>
 
       <ImportKoncesji />

@@ -1090,3 +1090,57 @@ export function buildPromoCodeEmail(data: {
     after: emailPromoTiles(data.inne),
   })
 }
+
+
+/**
+ * Przypomnienie o kończącej się cenie specjalnej (7 dni przed terminem).
+ *
+ * Mail ma jedno zadanie: pokazać, co jeszcze zostało do wykorzystania, zanim
+ * cena przepadnie. Dlatego w tabeli jest pozostały limit, a nie tylko cena —
+ * dokument bez wolnych sztuk nie wymaga już żadnej decyzji.
+ */
+export function buildKoncesjeWygasajaEmail(data: {
+  dokumenty: {
+    naglowek: string          // „koncesja 81463572 rev. 1.0" / „oferta Jarltecha 1617769"
+    endUser?: string | null
+    dniDoKonca: number
+    dataKonca: string
+    pozycje: { partNumber: string; cena: string; cenaPln: string; zostalo: string }[]
+  }[]
+}): string {
+  const najblizszy = Math.min(...data.dokumenty.map((d) => d.dniDoKonca))
+  const dniSlowo = (n: number) => (n === 1 ? 'dzień' : 'dni')
+
+  const sekcje = data.dokumenty
+    .map((d) =>
+      emailSectionTitle(esc(d.naglowek)) +
+      emailInfoAmber(
+        `<strong>Ko&#324;czy si&#281; ${d.dniDoKonca === 0 ? 'dzisiaj' : `za ${d.dniDoKonca} ${dniSlowo(d.dniDoKonca)}`}</strong> &mdash; ostatni dzie&#324; ${esc(d.dataKonca)}` +
+        (d.endUser ? `<br />klient ko&#324;cowy: ${esc(d.endUser)}` : ''),
+      ) +
+      emailTable(
+        ['Numer katalogowy', 'Cena specjalna', '&#8776; PLN', 'Zosta&#322;o'],
+        d.pozycje.map((p) => [esc(p.partNumber), esc(p.cena), esc(p.cenaPln), esc(p.zostalo)]),
+      ),
+    )
+    .join(emailDivider())
+
+  return emailLayout({
+    preheader: `Ceny specjalne ko\u0144cz\u0105 si\u0119 ${najblizszy === 0 ? 'dzisiaj' : `za ${najblizszy} ${dniSlowo(najblizszy)}`}`,
+    content:
+      emailHeader({
+        title: 'Ceny specjalne wkr&#243;tce wygasn&#261;',
+        subtitle: najblizszy === 0 ? 'ostatni dzie&#324;' : `zosta&#322;o ${najblizszy} ${dniSlowo(najblizszy)}`,
+        accent: 'blue',
+      }) +
+      emailBody(
+        emailText(
+          data.dokumenty.length === 1
+            ? 'Poni&#380;sza cena specjalna dobiega ko&#324;ca. Po terminie zakup wraca do zwyk&#322;ego cennika.'
+            : `Poni&#380;sze ceny specjalne (${data.dokumenty.length}) dobiegaj&#261; ko&#324;ca. Po terminie zakup wraca do zwyk&#322;ego cennika.`,
+        ) +
+        sekcje +
+        emailButton('Otw&#243;rz ceny specjalne w panelu', 'https://www.takma.com.pl/admin/koncesje', '#1e40af'),
+      ),
+  })
+}

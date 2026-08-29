@@ -980,6 +980,10 @@ model PriceConcession {
   fileName    String?
   createdAt   DateTime @default(now())
 
+  /// Kiedy poszło przypomnienie o zbliżającym się końcu — pilnuje, żeby
+  /// codzienny cron nie wysyłał tego samego maila przez tydzień z rzędu.
+  reminderSentAt DateTime?
+
   items PriceConcessionItem[]
 
   @@unique([requestId, revision, source])
