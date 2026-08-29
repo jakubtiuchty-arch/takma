@@ -1140,7 +1140,8 @@ export function buildKoncesjeWygasajaEmail(data: {
             : `Poni&#380;sze ceny specjalne (${data.dokumenty.length}) dobiegaj&#261; ko&#324;ca. Po terminie zakup wraca do zwyk&#322;ego cennika.`,
         ) +
         sekcje +
-        emailButton('Otw&#243;rz ceny specjalne w panelu', 'https://www.takma.com.pl/admin/koncesje', '#1e40af'),
+        // emailButton escapuje tekst samo — encje trafiłyby na przycisk dosłownie.
+        emailButton('Otwórz ceny specjalne w panelu', 'https://www.takma.com.pl/admin/koncesje', '#1e40af'),
       ),
   })
 }
