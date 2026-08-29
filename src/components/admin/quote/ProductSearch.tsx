@@ -125,12 +125,17 @@ export default function ProductSearch() {
     // Dla akcesoriów PN bierzemy ze specyfikacji — one nie mają wariantów.
     const pn = variant?.partNumber || productPartNumbers(product)[0]
     let catalogPrice = staticPrice
+    // Cena zakupu (u dystrybutora) — potrzebna, żeby przy udzielaniu rabatu
+    // widzieć podłogę i nie zejść poniżej kosztu. To ta sama liczba, z której
+    // sklep liczy cenę sprzedaży, więc nie wymaga osobnego zapytania.
+    let purchasePrice: number | undefined
     if (pn) {
       try {
         const res = await fetch(`/api/stock?pn=${encodeURIComponent(pn)}`)
         const data = await res.json()
         const live = data?.results?.[0]
         if (live?.found && live?.price > 0) catalogPrice = Math.round(live.price * 100)
+        if (live?.ingramPrice > 0) purchasePrice = Math.round(live.ingramPrice * 100)
       } catch {
         // brak odpowiedzi API — zostaje cena statyczna
       }
@@ -144,6 +149,7 @@ export default function ProductSearch() {
       description: product.shortDescription,
       quantity: 1,
       catalogPrice,
+      purchasePrice,
       priceNetto: catalogPrice, // 0% rabatu na start
       discountPercent: 0,
     })

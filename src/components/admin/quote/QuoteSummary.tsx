@@ -7,12 +7,21 @@ function formatPrice(grosze: number): string {
 }
 
 export default function QuoteSummary() {
-  const { getSubtotalNetto, getVatAmount, getTotalBrutto, setTerms, validDays, paymentTerms, deliveryTerms, notes, internalNotes, freebiesNote, zebraServiceBanner } =
+  const { items, getSubtotalNetto, getVatAmount, getTotalBrutto, setTerms, validDays, paymentTerms, deliveryTerms, notes, internalNotes, freebiesNote, zebraServiceBanner } =
     useQuoteStore()
 
   const subtotal = getSubtotalNetto()
   const vat = getVatAmount()
   const total = getTotalBrutto()
+
+  // Zarobek liczymy tylko z pozycji, dla których znamy cenę zakupu — przy
+  // reszcie zaznaczamy, ilu pozycji nie obejmuje, zamiast po cichu zaniżać.
+  const zCenaZakupu = items.filter((i) => i.purchasePrice && i.purchasePrice > 0)
+  const kosztWlasny = zCenaZakupu.reduce((s, i) => s + i.purchasePrice! * i.quantity, 0)
+  const przychod = zCenaZakupu.reduce((s, i) => s + i.priceNetto * i.quantity, 0)
+  const zarobek = przychod - kosztWlasny
+  const marza = kosztWlasny > 0 ? (zarobek / kosztWlasny) * 100 : 0
+  const bezCeny = items.length - zCenaZakupu.length
 
   return (
     <div className="space-y-6">
@@ -33,6 +42,35 @@ export default function QuoteSummary() {
           </div>
         </div>
       </div>
+
+      {/* Rachunek dla nas — nie trafia do oferty ani do PDF-a */}
+      {zCenaZakupu.length > 0 && (
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Tylko dla nas</p>
+          <div className="space-y-1 text-sm">
+            <div className="flex justify-between">
+              <span className="text-gray-500">Koszt zakupu:</span>
+              <span className="tabular-nums">{formatPrice(kosztWlasny)} zł</span>
+            </div>
+            <div className="flex justify-between font-semibold">
+              <span className={zarobek <= 0 ? 'text-red-600' : 'text-gray-900'}>Zarobek:</span>
+              <span className={`tabular-nums ${zarobek <= 0 ? 'text-red-600' : marza < 5 ? 'text-orange-600' : 'text-green-700'}`}>
+                {formatPrice(zarobek)} zł ({marza.toFixed(1)}%)
+              </span>
+            </div>
+            {bezCeny > 0 && (
+              <p className="text-xs text-gray-400 pt-1">
+                Nie obejmuje {bezCeny} {bezCeny === 1 ? 'pozycji' : 'pozycji'} bez znanej ceny zakupu.
+              </p>
+            )}
+            {zarobek <= 0 && (
+              <p className="text-xs text-red-600 pt-1">
+                Przy tych cenach oferta nie zarabia — sprawdź rabaty na pozycjach.
+              </p>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* Terms */}
       <div className="space-y-3">
