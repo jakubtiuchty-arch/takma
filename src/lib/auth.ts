@@ -81,7 +81,12 @@ export async function setSessionCookie(token: string) {
     httpOnly: true,
     secure: process.env.NODE_ENV === 'production',
     sameSite: 'strict',
-    path: '/admin',
+    // Ścieżka '/' zamiast '/admin': przeglądarka wysyła ciasteczko tylko do
+    // adresów zaczynających się od path, więc przy '/admin' żaden endpoint
+    // /api/admin/* nie dostawał sesji i odpowiadał „Brak autoryzacji" — mimo
+    // że panel działał normalnie. Tak cicho przestawały działać: podpowiedzi
+    // koncesji, autouzupełnianie danych klienta po NIP-ie i import PDF-a.
+    path: '/',
     maxAge: MAX_AGE,
   })
 }
@@ -96,4 +101,7 @@ export async function getSessionFromCookie(): Promise<{ userId: string; email: s
 export async function clearSessionCookie() {
   const cookieStore = await cookies()
   cookieStore.delete(COOKIE_NAME)
+  // Sesje sprzed zmiany ścieżki mają ciasteczko na '/admin' — kasujemy oba,
+  // inaczej stare zostawałoby w przeglądarce po wylogowaniu.
+  cookieStore.set(COOKIE_NAME, '', { path: '/admin', maxAge: 0 })
 }
