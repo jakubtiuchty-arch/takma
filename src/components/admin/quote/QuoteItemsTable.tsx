@@ -69,6 +69,31 @@ function ItemRow({ item, index }: { item: QuoteItemData; index: number }) {
         {item.partNumber && (
           <span className="text-xs text-gray-400 font-mono px-1">{item.partNumber}</span>
         )}
+        {/* Koncesja cenowa Zebry — pokazujemy, nie wstawiamy sami. Cena formalnie
+            dotyczy jednej szansy sprzedaży, więc decyzja należy do handlowca. */}
+        {item.koncesja && (
+          <div className="mt-1 px-1 text-xs leading-relaxed">
+            <span className="text-emerald-700 font-medium">
+              Cena specjalna {(item.koncesja.unitPrice / 100).toFixed(2)} {item.koncesja.currency}
+              {' '}≈ {formatPrice(item.koncesja.unitPricePln)} zł
+            </span>
+            <span className="text-gray-500">
+              {' '}— koncesja {item.koncesja.requestId} ({item.koncesja.reseller}
+              {item.koncesja.endUser ? `, ${item.koncesja.endUser}` : ''})
+              {item.koncesja.pozostaloSztuk != null ? `, zostało ${item.koncesja.pozostaloSztuk} szt.` : ''}
+              , ważna jeszcze {item.koncesja.dniDoKonca} dni
+            </span>
+            {item.purchasePrice !== item.koncesja.unitPricePln && (
+              <button
+                type="button"
+                onClick={() => updateItem(item.id, { purchasePrice: item.koncesja!.unitPricePln })}
+                className="ml-2 text-emerald-700 underline hover:text-emerald-800"
+              >
+                użyj jako ceny zakupu
+              </button>
+            )}
+          </div>
+        )}
       </td>
       <td className="px-3 py-2 w-20">
         <input

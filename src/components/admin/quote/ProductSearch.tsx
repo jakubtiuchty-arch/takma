@@ -141,6 +141,31 @@ export default function ProductSearch() {
       }
     }
 
+    // Koncesja cenowa Zebry na ten numer — jeśli jest aktywna, handlowiec
+    // zobaczy podpowiedź w wierszu pozycji i sam zdecyduje, czy z niej skorzystać.
+    let koncesja: Parameters<typeof addItem>[0]['koncesja']
+    if (pn) {
+      try {
+        const res = await fetch(`/api/admin/koncesje?pn=${encodeURIComponent(pn)}`)
+        const dane = await res.json()
+        const k = dane?.koncesje?.[0]
+        if (k) {
+          koncesja = {
+            requestId: k.requestId,
+            reseller: k.reseller,
+            endUser: k.endUser,
+            unitPrice: k.unitPrice,
+            currency: k.currency,
+            unitPricePln: k.unitPricePln,
+            pozostaloSztuk: k.pozostaloSztuk,
+            dniDoKonca: k.dniDoKonca,
+          }
+        }
+      } catch {
+        // brak odpowiedzi — pozycja po prostu bez podpowiedzi
+      }
+    }
+
     addItem({
       source: 'catalog',
       productId: product.id,
@@ -150,6 +175,7 @@ export default function ProductSearch() {
       quantity: 1,
       catalogPrice,
       purchasePrice,
+      koncesja,
       priceNetto: catalogPrice, // 0% rabatu na start
       discountPercent: 0,
     })

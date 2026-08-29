@@ -953,3 +953,54 @@ model UsedDevice {
   @@index([status, createdAt])
   @@map("used_devices")
 }
+
+/// Koncesja cenowa Zebry (Price Concession z PartnerConnect).
+///
+/// Zebra przyznaje specjalną cenę zakupu na konkretną szansę sprzedaży: dla
+/// wskazanego resellera (TAKMA albo Scanter), na wskazanego klienta końcowego,
+/// z terminem ważności i limitem sztuk na numer katalogowy. Trzymamy to u
+/// siebie, żeby przy wystawianiu oferty od razu było widać, że dany PN ma
+/// tańszy zakup — inaczej koncesja leży w PDF-ie na dysku i nikt o niej nie pamięta.
+model PriceConcession {
+  id          String   @id @default(cuid())
+  requestId   String   // numer PC Request, np. 81463572
+  revision    String?  // rewizja dokumentu, np. 1.0
+  reseller    String   // na kogo wystawiona: TAKMA albo SCANTER
+  resellerNo  String?
+  distributor String?  // przez kogo kupujemy (Account), np. Jarltech Europe GmbH
+  endUser     String?  // klient końcowy z koncesji, np. LASY PANSTWOWE
+  currency    String   @default("EUR")
+  startDate   DateTime
+  endDate     DateTime
+  note        String?
+  fileName    String?
+  createdAt   DateTime @default(now())
+
+  items PriceConcessionItem[]
+
+  @@unique([requestId, revision])
+  @@index([endDate])
+  @@map("price_concessions")
+}
+
+/// Pozycja koncesji — jeden numer katalogowy z ceną specjalną i limitem sztuk.
+model PriceConcessionItem {
+  id           String          @id @default(cuid())
+  concession   PriceConcession @relation(fields: [concessionId], references: [id], onDelete: Cascade)
+  concessionId String
+
+  partNumber  String
+  description String?
+  minQty      Int     @default(1)
+  maxQty      Int?
+  listPrice   Int?    // setne części waluty (eurocenty)
+  unitPrice   Int     // cena specjalna zakupu, setne części waluty
+  discountPct Float?  // łączny rabat z dokumentu
+
+  /// Ile sztuk już wykorzystaliśmy — limit dotyczy całej koncesji, a nie
+  /// pojedynczego zamówienia, więc licznik prowadzimy ręcznie.
+  usedQty Int @default(0)
+
+  @@index([partNumber])
+  @@map("price_concession_items")
+}
