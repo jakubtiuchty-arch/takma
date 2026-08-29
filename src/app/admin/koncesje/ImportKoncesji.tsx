@@ -23,7 +23,10 @@ export default function ImportKoncesji() {
       const res = await fetch('/api/admin/koncesje', { method: 'POST', body: form })
       const dane = await res.json()
       if (res.ok) {
-        setWynik(`Wczytano koncesję ${dane.requestId} dla ${dane.reseller} — ${dane.pozycji} pozycji, ważna do ${new Date(dane.waznaDo).toLocaleDateString('pl-PL')}.`)
+        const co = dane.source === 'JARLTECH'
+          ? `ofertę Jarltecha ${dane.docNumber ?? ''} do koncesji ${dane.requestId}`
+          : `koncesję ${dane.requestId}`
+        setWynik(`Wczytano ${co} dla ${dane.reseller} — ${dane.pozycji} pozycji, ważna do ${new Date(dane.waznaDo).toLocaleDateString('pl-PL')}.`)
         router.refresh()
       } else {
         setBlad(dane.error || 'Nie udało się wczytać dokumentu.')
@@ -36,11 +39,12 @@ export default function ImportKoncesji() {
 
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-5 mb-6">
-      <h2 className="font-semibold text-gray-900">Wczytaj koncesję z PDF</h2>
+      <h2 className="font-semibold text-gray-900">Wczytaj dokument z ceną specjalną</h2>
       <p className="text-sm text-gray-500 mt-0.5 mb-3">
-        Dokument &bdquo;Price Concession&rdquo; z PartnerConnect. Numery katalogowe, ceny specjalne, limity sztuk
-        i termin czytamy z dokumentu — nic nie trzeba przepisywać. Nowa rewizja tego samego numeru PC
-        zastępuje poprzednią.
+        Rozpoznajemy dwa rodzaje: koncesję &bdquo;Price Concession&rdquo; z PartnerConnect i ofertę Jarltecha
+        wystawioną na tę koncesję. Numery katalogowe, ceny, ilości i termin czytamy z pliku — nic nie
+        trzeba przepisywać. Nowa wersja zastępuje poprzednią, ale koncesja Zebry i oferta dystrybutora
+        żyją obok siebie, bo mówią o innej cenie.
       </p>
       <input
         type="file"

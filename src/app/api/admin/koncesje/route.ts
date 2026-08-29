@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { getSessionFromCookie } from '@/lib/auth'
-import { parsujKoncesje, koncesjeDlaPn } from '@/lib/koncesje'
+import { parsujDokumentCenowy, koncesjeDlaPn } from '@/lib/koncesje'
 
 export const runtime = 'nodejs'
 export const maxDuration = 60
@@ -10,7 +10,8 @@ export const maxDuration = 60
  * GET  /api/admin/koncesje?pn=A,B,C — aktywne koncesje dla numerów katalogowych.
  *      Kreator oferty pyta o wszystkie pozycje naraz, więc podpowiedź pojawia
  *      się także przy ofercie wczytanej do edycji albo skopiowanej z innej.
- * POST /api/admin/koncesje          — wgranie PDF-a z PartnerConnect.
+ * POST /api/admin/koncesje          — wgranie PDF-a: koncesji Zebry z
+ *      PartnerConnect albo oferty Jarltecha wystawionej na tę koncesję.
  */
 
 export async function GET(request: NextRequest) {
@@ -71,16 +72,20 @@ export async function POST(request: NextRequest) {
     if (!plik) return NextResponse.json({ error: 'Brak pliku.' }, { status: 400 })
 
     const tekst = await tekstZPdf(Buffer.from(await plik.arrayBuffer()))
-    const dane = parsujKoncesje(tekst, plik.name)
+    const dane = parsujDokumentCenowy(tekst, plik.name)
 
-    // Ta sama koncesja w nowej rewizji zastępuje starą — Zebra wydaje rewizje
-    // przy zmianie ilości albo cen, a obie naraz nie obowiązują.
-    await prisma.priceConcession.deleteMany({ where: { requestId: dane.requestId } })
+    // Nowa wersja dokumentu zastępuje poprzednią — rewizje wydaje się przy
+    // zmianie ilości albo cen i dwie naraz nie obowiązują. Kasujemy tylko w
+    // obrębie tego samego źródła: koncesja Zebry i oferta Jarltecha mają ten
+    // sam numer, a mówią o czym innym (cena od producenta vs. od dystrybutora).
+    await prisma.priceConcession.deleteMany({ where: { requestId: dane.requestId, source: dane.source } })
 
     const zapisana = await prisma.priceConcession.create({
       data: {
+        source: dane.source,
         requestId: dane.requestId,
         revision: dane.revision ?? null,
+        docNumber: dane.docNumber ?? null,
         reseller: dane.reseller,
         resellerNo: dane.resellerNo ?? null,
         distributor: dane.distributor ?? null,
@@ -106,6 +111,8 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({
       ok: true,
+      source: zapisana.source,
+      docNumber: zapisana.docNumber,
       requestId: zapisana.requestId,
       reseller: zapisana.reseller,
       pozycji: zapisana.items.length,

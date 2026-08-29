@@ -36,6 +36,7 @@ import StockInfo from './StockInfo'
 import SmartPrice from './SmartPrice'
 import PromoBanner from './PromoBanner'
 import ZipShipBanner from '@/components/promo/ZipShipBanner'
+import Ds3678DemoBanner from '@/components/promo/Ds3678DemoBanner'
 import { SmartPriceProvider } from './SmartPriceContext'
 import { activePromo } from '@/data/promos'
 import ContextAvailabilityBadge from './ContextAvailabilityBadge'
@@ -714,6 +715,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {(isThermalLabel || isTransferLabel || isRibbonProduct(product)) && (
               <ZipShipBanner context={product.name} variant="card" />
             )}
+
+            {/* Program testów DS3678 — tylko 5 wariantów tej rodziny, znika po zebraniu puli */}
+            <Ds3678DemoBanner productSlug={product.slug} />
 
             {/* CTA */}
             <div className="space-y-3">

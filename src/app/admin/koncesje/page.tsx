@@ -8,9 +8,10 @@ export const dynamic = 'force-dynamic'
 export const revalidate = 0
 
 /**
- * Koncesje cenowe Zebry — ceny specjalne przyznane na konkretną szansę
- * sprzedaży. Panel istnieje po to, żeby przy wystawianiu oferty podpowiedź o
- * tańszym zakupie pojawiała się sama, zamiast czekać w PDF-ie na czyimś dysku.
+ * Ceny specjalne przyznane na konkretną szansę sprzedaży: koncesja od Zebry i
+ * oparta na niej oferta dystrybutora. Panel istnieje po to, żeby przy
+ * wystawianiu oferty podpowiedź o tańszym zakupie pojawiała się sama, zamiast
+ * czekać w PDF-ie na czyimś dysku.
  */
 export default async function KoncesjePage() {
   const teraz = new Date()
@@ -35,7 +36,12 @@ export default async function KoncesjePage() {
           <div>
             <p className="font-semibold text-gray-900">
               {k.reseller}
-              <span className="ml-2 text-sm font-normal text-gray-500">PC {k.requestId}{k.revision ? ` rev. ${k.revision}` : ''}</span>
+              <span className="ml-2 text-sm font-normal text-gray-500">
+                {k.source === 'JARLTECH'
+                  ? `oferta Jarltecha ${k.docNumber ?? ''} → koncesja ${k.requestId}`
+                  : `PC ${k.requestId}`}
+                {k.revision ? ` rev. ${k.revision}` : ''}
+              </span>
             </p>
             <p className="text-sm text-gray-500 mt-0.5">
               {k.endUser ? <>klient końcowy: {k.endUser} · </> : null}
@@ -83,10 +89,11 @@ export default async function KoncesjePage() {
 
   return (
     <div className="max-w-5xl">
-      <h1 className="text-2xl font-bold text-gray-900 mb-1">Koncesje cenowe Zebry</h1>
+      <h1 className="text-2xl font-bold text-gray-900 mb-1">Ceny specjalne</h1>
       <p className="text-sm text-gray-500 mb-5">
-        Ceny specjalne przyznane na konkretną szansę sprzedaży. Gdy w kreatorze oferty dodasz numer
-        objęty aktywną koncesją, zobaczysz podpowiedź z ceną zakupu i pozostałym limitem sztuk.
+        Koncesje Zebry i oferty Jarltecha wystawione na te koncesje. Gdy w kreatorze oferty dodasz numer
+        objęty aktywnym dokumentem, zobaczysz podpowiedź z ceną zakupu i pozostałym limitem sztuk.
+        Koncesja mówi, ile Zebra pozwala zapłacić; oferta dystrybutora — ile faktycznie zapłacimy.
       </p>
 
       <ImportKoncesji />

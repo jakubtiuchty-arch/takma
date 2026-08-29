@@ -37,7 +37,9 @@ function PriceInput({ value, onChange }: { value: number; onChange: (grosze: num
 }
 
 export interface TrafienieKoncesji {
+  source: 'ZEBRA' | 'JARLTECH'
   requestId: string
+  docNumber: string | null
   reseller: string
   endUser: string | null
   unitPrice: number
@@ -47,7 +49,7 @@ export interface TrafienieKoncesji {
   dniDoKonca: number
 }
 
-function ItemRow({ item, index, koncesja }: { item: QuoteItemData; index: number; koncesja?: TrafienieKoncesji }) {
+function ItemRow({ item, index, koncesje = [] }: { item: QuoteItemData; index: number; koncesje?: TrafienieKoncesji[] }) {
   const { updateItem, removeItem, reorderItems } = useQuoteStore()
   const isCatalog = item.source === 'catalog'
 
@@ -80,16 +82,21 @@ function ItemRow({ item, index, koncesja }: { item: QuoteItemData; index: number
         {item.partNumber && (
           <span className="text-xs text-gray-400 font-mono px-1">{item.partNumber}</span>
         )}
-        {/* Koncesja cenowa Zebry — pokazujemy, nie wstawiamy sami. Cena formalnie
-            dotyczy jednej szansy sprzedaży, więc decyzja należy do handlowca. */}
-        {koncesja && (
-          <div className="mt-1 px-1 text-xs leading-relaxed">
+        {/* Ceny specjalne — pokazujemy, nie wstawiamy sami. Cena formalnie
+            dotyczy jednej szansy sprzedaży, więc decyzja należy do handlowca.
+            Ten sam numer bywa i w koncesji Zebry, i w ofercie dystrybutora —
+            wtedy widać obie, bo mówią o innej kwocie. */}
+        {koncesje.map((koncesja) => (
+          <div key={`${koncesja.source}-${koncesja.requestId}`} className="mt-1 px-1 text-xs leading-relaxed">
             <span className="text-emerald-700 font-medium">
               Cena specjalna {(koncesja.unitPrice / 100).toFixed(2)} {koncesja.currency}
               {' '}≈ {formatPrice(koncesja.unitPricePln)} zł
             </span>
             <span className="text-gray-500">
-              {' '}— koncesja {koncesja.requestId} ({koncesja.reseller}
+              {koncesja.source === 'JARLTECH'
+                ? ` — oferta Jarltecha ${koncesja.docNumber ?? ''} do koncesji ${koncesja.requestId}`
+                : ` — koncesja ${koncesja.requestId}`}
+              {' '}({koncesja.reseller}
               {koncesja.endUser ? `, ${koncesja.endUser}` : ''})
               {koncesja.pozostaloSztuk != null ? `, zostało ${koncesja.pozostaloSztuk} szt.` : ''}
               , ważna jeszcze {koncesja.dniDoKonca} dni
@@ -104,7 +111,7 @@ function ItemRow({ item, index, koncesja }: { item: QuoteItemData; index: number
               </button>
             )}
           </div>
-        )}
+        ))}
       </td>
       <td className="px-3 py-2 w-20">
         <input
@@ -225,7 +232,7 @@ export default function QuoteItemsTable() {
    * skopiowanej z innej i przy pozycjach z importu PDF. Jedno zapytanie na
    * zmianę zestawu numerów katalogowych.
    */
-  const [koncesje, setKoncesje] = useState<Record<string, TrafienieKoncesji>>({})
+  const [koncesje, setKoncesje] = useState<Record<string, TrafienieKoncesji[]>>({})
   const numery = items.map((i) => i.partNumber).filter(Boolean).join(',')
 
   useEffect(() => {
@@ -238,11 +245,7 @@ export default function QuoteItemsTable() {
       .then((r) => r.json())
       .then((d) => {
         if (!aktualne) return
-        const mapa: Record<string, TrafienieKoncesji> = {}
-        for (const [pn, lista] of Object.entries((d?.wgPn ?? {}) as Record<string, TrafienieKoncesji[]>)) {
-          if (lista[0]) mapa[pn] = lista[0]
-        }
-        setKoncesje(mapa)
+        setKoncesje((d?.wgPn ?? {}) as Record<string, TrafienieKoncesji[]>)
       })
       .catch(() => {
         /* brak podpowiedzi to nie powód, żeby psuć tabelę */
@@ -277,7 +280,7 @@ export default function QuoteItemsTable() {
         </thead>
         <tbody>
           {items.map((item, i) => (
-            <ItemRow key={item.id} item={item} index={i} koncesja={item.partNumber ? koncesje[item.partNumber] : undefined} />
+            <ItemRow key={item.id} item={item} index={i} koncesje={item.partNumber ? koncesje[item.partNumber] : undefined} />
           ))}
         </tbody>
       </table>

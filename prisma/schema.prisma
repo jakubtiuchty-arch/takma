@@ -963,8 +963,12 @@ model UsedDevice {
 /// tańszy zakup — inaczej koncesja leży w PDF-ie na dysku i nikt o niej nie pamięta.
 model PriceConcession {
   id          String   @id @default(cuid())
-  requestId   String   // numer PC Request, np. 81463572
+  /// Skąd cena: ZEBRA = dokument Price Concession z PartnerConnect,
+  /// JARLTECH = oferta dystrybutora wystawiona na tę koncesję.
+  source      String   @default("ZEBRA")
+  requestId   String   // numer koncesji, np. 81463572
   revision    String?  // rewizja dokumentu, np. 1.0
+  docNumber   String?  // numer oferty dystrybutora, np. 1617769
   reseller    String   // na kogo wystawiona: TAKMA albo SCANTER
   resellerNo  String?
   distributor String?  // przez kogo kupujemy (Account), np. Jarltech Europe GmbH
@@ -978,7 +982,7 @@ model PriceConcession {
 
   items PriceConcessionItem[]
 
-  @@unique([requestId, revision])
+  @@unique([requestId, revision, source])
   @@index([endDate])
   @@map("price_concessions")
 }

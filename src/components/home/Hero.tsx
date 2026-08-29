@@ -6,7 +6,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 import { Button } from '@/components/ui'
 import { ArrowRightIcon } from '@/components/ui/Icons'
-import { ZEBRA_CEE_PROMO } from '@/data/promos'
+import { ZEBRA_CEE_PROMO, ds3678DemoActive } from '@/data/promos'
 
 interface ProductSlide {
   type: 'product'
@@ -14,6 +14,11 @@ interface ProductSlide {
   name: string
   slug: string
   tagline: string
+  /** Docelowy adres CTA — domyślnie karta produktu /produkt/<slug>.
+   *  Slajdy akcji (np. program testów) prowadzą na własny landing. */
+  href?: string
+  /** Etykieta przycisku — domyślnie „Zobacz więcej" */
+  ctaLabel?: string
   imageClassName?: string
   /** 'lifestyle' = gradient od prawej, tekst po prawej; 'packshot' = gradient od lewej, tekst po lewej */
   imageType?: 'lifestyle' | 'packshot'
@@ -52,6 +57,21 @@ const slides: HeroSlide[] = [
   { type: 'info' },
   ...(promoSaleActive
     ? ([{ type: 'promoSale', image: '/images/hero-promo-zebra-v3.webp' }] as PromoSaleSlide[])
+    : []),
+  ...(ds3678DemoActive()
+    ? ([{
+        type: 'product',
+        image: '/images/ds3678-demo-hero.webp',
+        name: 'Testy Zebra DS3678',
+        slug: 'zebra-ds3678-xr',
+        href: '/testy-ds3678',
+        ctaLabel: 'Zgłoś stanowisko testowe',
+        tagline:
+          'Maskowanie kanałów BLE — skaner przestaje wchodzić w drogę innym urządzeniom radiowym w hali. Dwa tygodnie testu u Ciebie, na Twoich kodach. Trzy stanowiska.',
+        imageType: 'lifestyle',
+        imageClassName: 'object-cover object-left',
+        bgColor: '#0b0f0d',
+      }] as ProductSlide[])
     : []),
   { type: 'materials' },
   {
@@ -439,14 +459,14 @@ export default function Hero() {
               <p className="text-sm md:text-base text-gray-300 max-w-md mb-4 md:mb-5 leading-relaxed">
                 {slide.tagline}
               </p>
-              <Link href={`/produkt/${slide.slug}`}>
+              <Link href={slide.href ?? `/produkt/${slide.slug}`}>
                 <Button
                   size="md"
                   variant="ghost"
                   className="!bg-white !text-gray-900 hover:!bg-gray-100 font-semibold px-6"
                   rightIcon={<ArrowRightIcon size={16} />}
                 >
-                  Zobacz więcej
+                  {slide.ctaLabel ?? 'Zobacz więcej'}
                 </Button>
               </Link>
             </>

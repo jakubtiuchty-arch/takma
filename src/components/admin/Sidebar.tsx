@@ -44,7 +44,7 @@ const navItems = [
     ),
   },
   {
-    label: 'Koncesje Zebra',
+    label: 'Ceny specjalne',
     href: '/admin/koncesje',
     icon: (
       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
