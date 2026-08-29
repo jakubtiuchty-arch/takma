@@ -7,18 +7,27 @@ export const runtime = 'nodejs'
 export const maxDuration = 60
 
 /**
- * GET  /api/admin/koncesje?pn=…  — aktywne koncesje dla numeru katalogowego
- *      (używa kreator oferty, żeby podpowiedzieć cenę specjalną).
- * POST /api/admin/koncesje       — wgranie PDF-a z PartnerConnect.
+ * GET  /api/admin/koncesje?pn=A,B,C — aktywne koncesje dla numerów katalogowych.
+ *      Kreator oferty pyta o wszystkie pozycje naraz, więc podpowiedź pojawia
+ *      się także przy ofercie wczytanej do edycji albo skopiowanej z innej.
+ * POST /api/admin/koncesje          — wgranie PDF-a z PartnerConnect.
  */
 
 export async function GET(request: NextRequest) {
   if (!(await getSessionFromCookie())) {
     return NextResponse.json({ error: 'Brak autoryzacji.' }, { status: 401 })
   }
-  const pn = request.nextUrl.searchParams.get('pn')?.trim()
-  if (!pn) return NextResponse.json({ koncesje: [] })
-  return NextResponse.json({ koncesje: await koncesjeDlaPn(pn) })
+  const surowe = request.nextUrl.searchParams.get('pn') || ''
+  const numery = Array.from(new Set(surowe.split(',').map((x) => x.trim()).filter(Boolean))).slice(0, 100)
+  if (numery.length === 0) return NextResponse.json({ koncesje: [], wgPn: {} })
+
+  const wgPn: Record<string, Awaited<ReturnType<typeof koncesjeDlaPn>>> = {}
+  for (const pn of numery) {
+    const trafienia = await koncesjeDlaPn(pn)
+    if (trafienia.length > 0) wgPn[pn] = trafienia
+  }
+  // `koncesje` zostaje dla zgodności z pojedynczym zapytaniem
+  return NextResponse.json({ wgPn, koncesje: numery.length === 1 ? (wgPn[numery[0]] ?? []) : [] })
 }
 
 /**

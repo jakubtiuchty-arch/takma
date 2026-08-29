@@ -13,18 +13,6 @@ export interface QuoteItemData {
   priceNetto: number       // grosze — cena sprzedaży netto (końcowa)
   discountPercent?: number // % rabatu (catalog: cena = catalogPrice × (1 - rabat/100))
   marginPercent?: number   // % marży (manual/import: cena = purchasePrice × (1 + marża/100))
-  /** Podpowiedź o koncesji cenowej Zebry dla tego PN. Tylko po stronie
-   *  przeglądarki — do bazy trafia dopiero cena, którą handlowiec zatwierdzi. */
-  koncesja?: {
-    requestId: string
-    reseller: string
-    endUser?: string | null
-    unitPrice: number      // w walucie koncesji (setne)
-    currency: string
-    unitPricePln: number   // grosze
-    pozostaloSztuk?: number | null
-    dniDoKonca: number
-  }
 }
 
 export interface QuoteClientData {

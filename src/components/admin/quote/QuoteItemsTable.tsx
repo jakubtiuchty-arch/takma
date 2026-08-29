@@ -36,7 +36,18 @@ function PriceInput({ value, onChange }: { value: number; onChange: (grosze: num
   )
 }
 
-function ItemRow({ item, index }: { item: QuoteItemData; index: number }) {
+export interface TrafienieKoncesji {
+  requestId: string
+  reseller: string
+  endUser: string | null
+  unitPrice: number
+  currency: string
+  unitPricePln: number
+  pozostaloSztuk: number | null
+  dniDoKonca: number
+}
+
+function ItemRow({ item, index, koncesja }: { item: QuoteItemData; index: number; koncesja?: TrafienieKoncesji }) {
   const { updateItem, removeItem, reorderItems } = useQuoteStore()
   const isCatalog = item.source === 'catalog'
 
@@ -71,22 +82,22 @@ function ItemRow({ item, index }: { item: QuoteItemData; index: number }) {
         )}
         {/* Koncesja cenowa Zebry — pokazujemy, nie wstawiamy sami. Cena formalnie
             dotyczy jednej szansy sprzedaży, więc decyzja należy do handlowca. */}
-        {item.koncesja && (
+        {koncesja && (
           <div className="mt-1 px-1 text-xs leading-relaxed">
             <span className="text-emerald-700 font-medium">
-              Cena specjalna {(item.koncesja.unitPrice / 100).toFixed(2)} {item.koncesja.currency}
-              {' '}≈ {formatPrice(item.koncesja.unitPricePln)} zł
+              Cena specjalna {(koncesja.unitPrice / 100).toFixed(2)} {koncesja.currency}
+              {' '}≈ {formatPrice(koncesja.unitPricePln)} zł
             </span>
             <span className="text-gray-500">
-              {' '}— koncesja {item.koncesja.requestId} ({item.koncesja.reseller}
-              {item.koncesja.endUser ? `, ${item.koncesja.endUser}` : ''})
-              {item.koncesja.pozostaloSztuk != null ? `, zostało ${item.koncesja.pozostaloSztuk} szt.` : ''}
-              , ważna jeszcze {item.koncesja.dniDoKonca} dni
+              {' '}— koncesja {koncesja.requestId} ({koncesja.reseller}
+              {koncesja.endUser ? `, ${koncesja.endUser}` : ''})
+              {koncesja.pozostaloSztuk != null ? `, zostało ${koncesja.pozostaloSztuk} szt.` : ''}
+              , ważna jeszcze {koncesja.dniDoKonca} dni
             </span>
-            {item.purchasePrice !== item.koncesja.unitPricePln && (
+            {item.purchasePrice !== koncesja.unitPricePln && (
               <button
                 type="button"
-                onClick={() => updateItem(item.id, { purchasePrice: item.koncesja!.unitPricePln })}
+                onClick={() => updateItem(item.id, { purchasePrice: koncesja.unitPricePln })}
                 className="ml-2 text-emerald-700 underline hover:text-emerald-800"
               >
                 użyj jako ceny zakupu
@@ -208,6 +219,39 @@ function ItemRow({ item, index }: { item: QuoteItemData; index: number }) {
 export default function QuoteItemsTable() {
   const items = useQuoteStore((s) => s.items)
 
+  /**
+   * Koncesje pobieramy dla wszystkich pozycji naraz, a nie przy dodawaniu —
+   * dzięki temu podpowiedź działa też przy ofercie wczytanej do edycji,
+   * skopiowanej z innej i przy pozycjach z importu PDF. Jedno zapytanie na
+   * zmianę zestawu numerów katalogowych.
+   */
+  const [koncesje, setKoncesje] = useState<Record<string, TrafienieKoncesji>>({})
+  const numery = items.map((i) => i.partNumber).filter(Boolean).join(',')
+
+  useEffect(() => {
+    if (!numery) {
+      setKoncesje({})
+      return
+    }
+    let aktualne = true
+    fetch(`/api/admin/koncesje?pn=${encodeURIComponent(numery)}`)
+      .then((r) => r.json())
+      .then((d) => {
+        if (!aktualne) return
+        const mapa: Record<string, TrafienieKoncesji> = {}
+        for (const [pn, lista] of Object.entries((d?.wgPn ?? {}) as Record<string, TrafienieKoncesji[]>)) {
+          if (lista[0]) mapa[pn] = lista[0]
+        }
+        setKoncesje(mapa)
+      })
+      .catch(() => {
+        /* brak podpowiedzi to nie powód, żeby psuć tabelę */
+      })
+    return () => {
+      aktualne = false
+    }
+  }, [numery])
+
   if (items.length === 0) {
     return (
       <div className="text-center py-8 text-gray-400 text-sm">
@@ -233,7 +277,7 @@ export default function QuoteItemsTable() {
         </thead>
         <tbody>
           {items.map((item, i) => (
-            <ItemRow key={item.id} item={item} index={i} />
+            <ItemRow key={item.id} item={item} index={i} koncesja={item.partNumber ? koncesje[item.partNumber] : undefined} />
           ))}
         </tbody>
       </table>
