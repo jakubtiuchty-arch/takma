@@ -79,24 +79,16 @@ function ItemRow({ item, index }: { item: QuoteItemData; index: number }) {
           className="w-full text-sm text-center border border-gray-200 rounded px-2 py-1"
         />
       </td>
-      {/* Ile płacimy dystrybutorowi i ile z tego zostaje — bez tej liczby rabat
-          udziela się na ślepo. „Zarobek" to kwota na sztukę, bo procent marży
-          przy drogim sprzęcie potrafi uśpić czujność (3% z 5000 zł to 150 zł). */}
-      <td className="px-3 py-2 w-32 text-right">
+      {/* Ile płacimy dystrybutorowi — podłoga przy udzielaniu rabatu. Zarobek
+          liczy się zbiorczo w podsumowaniu, żeby wiersz został czytelny. */}
+      <td className="px-3 py-2 w-28 text-right">
         {item.purchasePrice && item.purchasePrice > 0 ? (
-          <>
-            <div className="text-xs text-gray-500 tabular-nums">{formatPrice(item.purchasePrice)} zł</div>
-            {(() => {
-              const zarobek = item.priceNetto - item.purchasePrice
-              const proc = (zarobek / item.purchasePrice) * 100
-              const kolor = zarobek <= 0 ? 'text-red-600 font-semibold' : proc < 5 ? 'text-orange-600' : 'text-green-700'
-              return (
-                <div className={`text-xs tabular-nums ${kolor}`}>
-                  {zarobek >= 0 ? '+' : '−'}{formatPrice(Math.abs(zarobek))} zł ({proc.toFixed(1)}%)
-                </div>
-              )
-            })()}
-          </>
+          <span
+            className={`text-sm tabular-nums ${item.priceNetto <= item.purchasePrice ? 'text-red-600 font-semibold' : 'text-gray-500'}`}
+            title={item.priceNetto <= item.purchasePrice ? 'Cena sprzedaży nie pokrywa kosztu zakupu' : undefined}
+          >
+            {formatPrice(item.purchasePrice)} zł
+          </span>
         ) : (
           <span className="text-xs text-gray-300">brak danych</span>
         )}
@@ -207,7 +199,7 @@ export default function QuoteItemsTable() {
             <th className="px-3 py-2 text-center text-xs font-medium text-gray-500 uppercase w-10">Lp.</th>
             <th className="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Nazwa</th>
             <th className="px-3 py-2 text-center text-xs font-medium text-gray-500 uppercase w-20">Ilość</th>
-            <th className="px-3 py-2 text-right text-xs font-medium text-gray-500 uppercase w-32">Zakup / zarobek</th>
+            <th className="px-3 py-2 text-right text-xs font-medium text-gray-500 uppercase w-28">Zakup</th>
             <th className="px-3 py-2 text-right text-xs font-medium text-gray-500 uppercase w-32">Cena netto</th>
             <th className="px-3 py-2 text-right text-xs font-medium text-gray-500 uppercase w-28">Razem netto</th>
             <th className="px-3 py-2 text-center text-xs font-medium text-gray-500 uppercase w-28">Rabat/Marża</th>
