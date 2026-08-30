@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { etykietaPowiazania } from '@/lib/koncesja-etykieta'
 import { useQuoteStore, type QuoteItemData } from '@/store/quoteStore'
 
 function formatPrice(grosze: number): string {
@@ -94,7 +95,7 @@ function ItemRow({ item, index, koncesje = [] }: { item: QuoteItemData; index: n
             </span>
             <span className="text-gray-500">
               {koncesja.source === 'JARLTECH'
-                ? ` — oferta Jarltecha ${koncesja.docNumber ?? ''} do koncesji ${koncesja.requestId}`
+                ? ` — oferta Jarltecha ${koncesja.docNumber ?? ''} na ${etykietaPowiazania(koncesja.requestId)}`
                 : ` — koncesja ${koncesja.requestId}`}
               {' '}({koncesja.reseller}
               {koncesja.endUser ? `, ${koncesja.endUser}` : ''})

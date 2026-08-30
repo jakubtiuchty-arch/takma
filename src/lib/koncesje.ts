@@ -146,12 +146,18 @@ export function parsujOferteJarltech(tekst: string): DaneKoncesji {
   const caly = tekst
 
   const docNumber = caly.match(/Oferta:\t(\d+)/)?.[1] || caly.match(/^Oferta (\d+)$/m)?.[1]
-  // Numer koncesji: wprost ze zdania wstępnego, a gdy go brak — z pola Projekt.
+  // Numer wiążący: najpierw koncesja Zebry ze zdania wstępnego (same cyfry),
+  // a gdy oferta na koncesji nie stoi — numer projektu Jarltecha z nagłówka.
+  // Sprzęt spoza PartnerConnect (M3 Mobile) koncesji Zebry nie ma i mieć nie
+  // będzie, a wycena projektowa i tak obowiązuje, więc nie odrzucamy dokumentu.
   const requestId =
-    caly.match(/koncesji\s+(\d{5,})/i)?.[1] ||
-    caly.match(/Projekt:\t(\d{5,})/)?.[1] ||
-    caly.match(/Referencje:\t(\d{5,})/)?.[1]
-  if (!requestId) throw new Error('To oferta Jarltecha, ale nie ma w niej numeru koncesji — nie wiem, do czego ją przypiąć.')
+    caly.match(/koncesji\s+([A-Za-z0-9][\w-]{4,})/i)?.[1] ||
+    caly.match(/Projekt:\t([A-Za-z0-9][\w-]{4,})/)?.[1] ||
+    caly.match(/Referencje:\t([A-Za-z0-9][\w-]{4,})/)?.[1]
+  if (!requestId)
+    throw new Error(
+      'To oferta Jarltecha, ale nie ma w niej ani numeru koncesji, ani numeru projektu — nie wiem, do czego ją przypiąć.'
+    )
 
   const startDate = dataPl(caly.match(/Data:\t([\d.]+)/)?.[1] || '')
   const endDate =
@@ -164,9 +170,18 @@ export function parsujOferteJarltech(tekst: string): DaneKoncesji {
   const reseller =
     linie.find((l, i) => i > 0 && !l.includes('\t') && /\S/.test(l) && !/^Oferta\b/.test(l))?.trim() || '(nieznany)'
 
+  // Klient końcowy stoi w zdaniu wstępnym, ale dłuższa nazwa łamie się na dwa
+  // wiersze („…Sp. z" / „o.o.,:"), a justowanie rozstrzeliwuje wyrazy podwójnymi
+  // spacjami. Czytamy więc z tekstu sklejonego w jeden ciąg, do dwukropka
+  // zamykającego zdanie. Pole „Referencje" zostaje jako zapasowe, choć w
+  // kolumnowym układzie widać z niego tylko pierwszy wyraz nazwy.
+  const ciagly = caly.replace(/\s+/g, ' ')
   const endUser =
-    caly.match(/dotycz\S+ projektu\s+(.+?):\s*$/m)?.[1]?.trim() ||
-    caly.match(/Referencje:\t\d+\s*\/\s*(.+)$/m)?.[1]?.trim()
+    ciagly
+      .match(/dotycz\S+ projektu\s+(.{3,80}?)\s*,?\s*:/)?.[1]
+      ?.replace(/[,;]\s*$/, '')
+      .trim() ||
+    caly.match(/Referencje:\t\S+\s*\/\s*(.+)$/m)?.[1]?.trim()
 
   const items: PozycjaKoncesji[] = []
   let biezaca: PozycjaKoncesji | null = null

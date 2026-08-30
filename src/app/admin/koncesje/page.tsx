@@ -1,5 +1,6 @@
 import { prisma } from '@/lib/db'
 import { kursEur } from '@/lib/koncesje'
+import { etykietaPowiazania } from '@/lib/koncesja-etykieta'
 import ImportKoncesji from './ImportKoncesji'
 import WierszPozycji from './WierszPozycji'
 import UsunKoncesje from './UsunKoncesje'
@@ -62,7 +63,7 @@ export default async function KoncesjePage() {
                 {k.reseller}
                 <span className="ml-2 text-sm font-normal text-gray-500">
                   {k.source === 'JARLTECH'
-                    ? `oferta Jarltecha ${k.docNumber ?? ''} → koncesja ${k.requestId}`
+                    ? `oferta Jarltecha ${k.docNumber ?? ''} → ${etykietaPowiazania(k.requestId)}`
                     : `PC ${k.requestId}`}
                   {k.revision ? ` rev. ${k.revision}` : ''}
                 </span>

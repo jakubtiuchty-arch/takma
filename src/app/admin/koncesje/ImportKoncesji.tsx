@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { etykietaPowiazania } from '@/lib/koncesja-etykieta'
 import { useRouter } from 'next/navigation'
 
 /**
@@ -24,7 +25,7 @@ export default function ImportKoncesji() {
       const dane = await res.json()
       if (res.ok) {
         const co = dane.source === 'JARLTECH'
-          ? `ofertę Jarltecha ${dane.docNumber ?? ''} do koncesji ${dane.requestId}`
+          ? `ofertę Jarltecha ${dane.docNumber ?? ''} na ${etykietaPowiazania(dane.requestId)}`
           : `koncesję ${dane.requestId}`
         setWynik(`Wczytano ${co} dla ${dane.reseller} — ${dane.pozycji} pozycji, ważna do ${new Date(dane.waznaDo).toLocaleDateString('pl-PL')}.`)
         router.refresh()
