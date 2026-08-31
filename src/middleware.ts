@@ -325,7 +325,21 @@ export async function middleware(request: NextRequest) {
 
   try {
     await jwtVerify(token, ADMIN_SECRET)
-    return NextResponse.next({ request: { headers: requestHeaders } })
+    const response = NextResponse.next({ request: { headers: requestHeaders } })
+    // Sesje sprzed 29.08.2026 mają ciasteczko przypięte do ścieżki '/admin',
+    // więc nie docierają do /api/admin/* i panel po cichu gubi podpowiedzi
+    // koncesji, autouzupełnianie po NIP-ie i import PDF-a. Przy każdym wejściu
+    // dokładamy to samo ciasteczko na '/', żeby nikt nie musiał wylogowywać
+    // się ręcznie. Token ma własny termin ważności, więc nie przedłuża to
+    // sesji ponad siedem dni od zalogowania.
+    response.cookies.set('admin-session', token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'strict',
+      path: '/',
+      maxAge: 7 * 24 * 60 * 60,
+    })
+    return response
   } catch {
     const response = NextResponse.redirect(new URL('/admin/login', request.url))
     response.cookies.delete('admin-session')
