@@ -730,6 +730,16 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
           'Czyszczenie okna skanera: miękka szmatka z alkoholem izopropylowym (IPA 70%) co tydzień lub gdy spadnie jakość odczytu. Nie używać rozpuszczalników, acetonu, benzyny — uszkadzają powłokę antyodblaskową. Obudowa: ściereczka z łagodnym detergentem lub chusteczki dezynfekujące (modele HC). Kabel USB: sprawdzić złącze co miesiąc — luźne połączenie powoduje przerywany odczyt. Wymiana kabla: co 2–3 lata przy intensywnym użytkowaniu (zagięcia przy złączu). Firmware: aktualizacja przez 123Scan — nowe symbologie i poprawki dekodowania. Skanery Zebra nie wymagają kalibracji — fabryczne ustawienie jest trwałe.',
       },
       {
+        question: 'Jak odblokować skaner Zebra, gdy przestał czytać kody?',
+        answer:
+          'W większości przypadków to nie awaria, tylko ustawienie zapisane w pamięci skanera. Kolejność sprawdzania: (1) skaner piszczy, ale nic nie trafia do aplikacji — wyłączony jest interfejs albo skaner pracuje w trybie [DataWedge](/terminale-mobilne-zebra) zamiast klawiatury (HID); (2) skaner nie reaguje na konkretny rodzaj kodu — wyłączona symbologia (fabrycznie nieaktywne są m.in. Code 39 Full ASCII, GS1 DataBar Expanded); (3) model bezprzewodowy nie odpowiada — zgubił parowanie z bazą, wystarczy odłożyć go do bazy i zeskanować kod parowania z jej spodu. Ustawienia kasujemy kodem „Set Factory Defaults" z instrukcji modelu albo aplikacją 123Scan po USB. Skaner zablokowany hasłem zdarza się wyłącznie po konfiguracji przez poprzedniego integratora — wtedy potrzebny jest plik konfiguracyjny albo reset w serwisie.',
+      },
+      {
+        question: 'Jaka jest aplikacja do skanera Zebra?',
+        answer:
+          'Zależy od tego, do czego skaner jest podłączony. Do komputera: 123Scan (Windows, bezpłatna) — konfiguruje symbologie, prefiksy i sufiksy, generuje kody konfiguracyjne i raporty, aktualizuje firmware. Do telefonu i tabletu: Scanner Control App (Android, iOS) — parowanie po Bluetooth i podgląd odczytów. Na terminalach z Androidem skanerem steruje DataWedge — wbudowana warstwa, która wkleja odczyt do dowolnej aplikacji bez pisania kodu. Programiści korzystają z Zebra Scanner SDK (Windows, Linux, Android). Do samego skanowania na stanowisku POS żadna aplikacja nie jest potrzebna — skaner w trybie HID zachowuje się jak klawiatura.',
+      },
+      {
         question: 'Jakie są alternatywy dla skanerów kodów kreskowych Zebra?',
         answer:
           'Główni konkurenci to: Honeywell (Voyager 1472g, Hyperion 1300g, Granit 1910i — szeroka oferta, porównywalny segment cenowy, dobra jakość, ale gwarancja krótsza o 2 lata od Zebra DS2208). Datalogic (QuickScan QW2520, Gryphon GM4500, PowerScan PD9531 — włoska jakość, tańsze o 10–15% w segmencie budget, dobry serwis w PL). Newland (HR2260, FR4080 — chińskie, budżetowe, krótka żywotność). Keyence (SR-2000, SR-5000 — japońskie, specjalizacja w produkcji, drogie). Dla firm z istniejącą infrastrukturą Zebra (drukarki, terminale) rekomendujemy pozostanie przy marce — wspólna platforma zarządzania ([DataCapture DNA](https://www.zebra.com/us/en/software/mobile-computer-software/datawedge.html) + Mobility DNA + Link-OS) i kompatybilność kabli/podstawek.',

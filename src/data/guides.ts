@@ -5113,7 +5113,7 @@ export const guides: Guide[] = [
 {
   slug: 'skanery-kodow-kreskowych-zebra-przewodnik',
   title: 'Skanery kodów kreskowych Zebra — jak wybrać? Przewodnik 2026',
-  seoTitle: 'Skanery (czytniki) kodów kreskowych Zebra — przewodnik 2026 | DS2208, DS3608, DS8208',
+  seoTitle: 'Jak wybrać skaner kodów kreskowych Zebra — poradnik 2026 | DS2208, DS3608, DS8208',
   seoDescription: 'Czytniki i skanery kodów kreskowych Zebra — porównanie 2026: DS2208 od 352 zł do kasy, DS3608-XR do 32 m w magazynie, DS9308 hands-free do apteki. Tabela, ceny, TCO, drzewo decyzyjne, 18 FAQ.',
   excerpt: 'DS2208 od 352 zł do kasy, DS3608-XR do 32 m w magazynie, DS9308 hands-free do apteki. Pełne porównanie 10+ skanerów Zebra — specyfikacja, ceny, TCO i drzewo decyzyjne.',
   category: 'przewodnik',

@@ -35,15 +35,8 @@ export default async function KoncesjePage() {
     const dni = Math.ceil((k.endDate.getTime() - teraz.getTime()) / 86_400_000)
     // Dokumentów będzie przybywać, a każdy ma po kilkanaście numerów — karty
     // startują zwinięte, żeby lista mieściła się na ekranie. Nagłówek niesie
-    // tyle, ile trzeba do wyboru: kto, na co, do kiedy i w jakich cenach.
-    const ceny = k.items.map((i) => i.unitPrice)
-    const widelki =
-      ceny.length === 0
-        ? null
-        : Math.min(...ceny) === Math.max(...ceny)
-          ? `${kwota(ceny[0])} ${k.currency}`
-          : `${kwota(Math.min(...ceny))}–${kwota(Math.max(...ceny))} ${k.currency}`
-    const pozycji = `${k.items.length} ${k.items.length === 1 ? 'pozycja' : k.items.length % 10 >= 2 && k.items.length % 10 <= 4 && (k.items.length % 100 < 12 || k.items.length % 100 > 14) ? 'pozycje' : 'pozycji'}`
+    // tyle, ile trzeba do wyboru: kto, na co i do kiedy. Liczby pozycji ani
+    // widełek cen tam nie ma — konkret i tak czyta się z rozwiniętej tabeli.
 
     return (
       <details className={`group rounded-2xl border bg-white overflow-hidden mb-3 ${wygasla ? 'border-gray-200 opacity-70' : 'border-gray-200'}`}>
@@ -70,8 +63,7 @@ export default async function KoncesjePage() {
               </p>
               <p className="text-sm text-gray-500 mt-0.5">
                 {k.endUser ? <>klient końcowy: {k.endUser} · </> : null}
-                zakup przez {k.distributor || '—'} · {pozycji}
-                {widelki ? ` · ${widelki}` : ''}
+                zakup przez {k.distributor || '—'}
               </p>
               <p className="text-sm mt-1 text-gray-500">
                 {k.startDate.toLocaleDateString('pl-PL')} – {k.endDate.toLocaleDateString('pl-PL')}
