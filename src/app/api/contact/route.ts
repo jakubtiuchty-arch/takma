@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { sendEmail } from '@/lib/email'
+import { sendEmail, adminRecipients } from '@/lib/email'
 import { buildAdminContactNotificationEmail, buildContactConfirmationEmail } from '@/lib/email-templates'
 import { checkSpam, getClientIp } from '@/lib/spam-protection'
 import { verifyTurnstile } from '@/lib/turnstile'
@@ -66,10 +66,7 @@ export async function POST(request: NextRequest) {
     } catch (e) {
       console.error('[Contact] Lead save failed:', (e as Error).message)
     }
-    const adminEmails = [
-      process.env.ADMIN_EMAIL || 'takma@takma.com.pl',
-      'jakub.tiuchty@takma.com.pl',
-    ]
+    const adminEmails = adminRecipients()
 
     // Send notification to admin
     await sendEmail({

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { sendEmail } from '@/lib/email'
+import { sendEmail, adminRecipients } from '@/lib/email'
 import { buildAdminInquiryEmail, buildInquiryConfirmationEmail, buildPromoCodeEmail } from '@/lib/email-templates'
 import { wystawKod } from '@/lib/promo-codes'
 import { promocjeUzupelniajace } from '@/data/promos'
@@ -89,10 +89,7 @@ export async function POST(request: NextRequest) {
     inquiries.push(entry)
     console.log(`[Inquiry] Nowe zapytanie od ${name} (${email}) o ${productName}`)
 
-    const adminEmails = [
-      process.env.ADMIN_EMAIL || 'takma@takma.com.pl',
-      'jakub.tiuchty@takma.com.pl',
-    ]
+    const adminEmails = adminRecipients()
     const productLink = productSlug ? `https://www.takma.com.pl/produkt/${productSlug}` : ''
 
     // Zgłoszenie promocyjne — imienny kod rabatowy dla tego klienta.

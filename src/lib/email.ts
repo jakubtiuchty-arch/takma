@@ -22,6 +22,15 @@ function getResend(): Resend | null {
   return _resend
 }
 
+/**
+ * Adresat powiadomień wewnętrznych (zgłoszenia, kontakt, RFQ, zamówienia).
+ * Gmail, a nie skrzynka @takma.com.pl: serwer cyberfolks odrzuca część maili
+ * z puli IP Amazon SES (550 hostkarma.junkemailfilter.com) i powiadomienia przepadały.
+ */
+export function adminRecipients(): string[] {
+  return ['jakub.tiuchty@gmail.com']
+}
+
 interface EmailOptions {
   to: string | string[]
   subject: string
@@ -145,10 +154,7 @@ export async function sendAdminNotification(data: {
   paymentMethod: string
   customerNotes?: string | null
 }) {
-  const adminEmails = [
-    process.env.ADMIN_EMAIL || 'takma@takma.com.pl',
-    'jakub.tiuchty@takma.com.pl',
-  ]
+  const adminEmails = adminRecipients()
   return sendEmail({
     to: adminEmails,
     from: 'TAKMA Zamówienia <noreply@serwis-zebry.pl>',

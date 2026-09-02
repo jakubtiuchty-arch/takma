@@ -2,7 +2,7 @@
 
 import { prisma } from '@/lib/db'
 import { generateQuoteNumber } from '@/lib/quotes'
-import { sendEmail } from '@/lib/email'
+import { sendEmail, adminRecipients } from '@/lib/email'
 import { buildAdminRfqEmail } from '@/lib/email-templates'
 import { getCustomerFromCookie } from '@/lib/customer-auth'
 import { revalidatePath } from 'next/cache'
@@ -78,10 +78,7 @@ export async function submitRfq(data: {
     include: { items: true },
   })
 
-  const adminEmails = [
-    process.env.ADMIN_EMAIL || 'takma@takma.com.pl',
-    'jakub.tiuchty@takma.com.pl',
-  ]
+  const adminEmails = adminRecipients()
 
   await sendEmail({
     to: adminEmails,
