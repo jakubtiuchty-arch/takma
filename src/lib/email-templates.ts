@@ -164,6 +164,33 @@ function emailDivider(): string {
   return '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:20px 0"><tr><td style="border-top:1px solid #e5e7eb"></td></tr></table>'
 }
 
+/**
+ * Gratis w ofercie jako wyraźny callout: solidna zielona etykieta „GRATIS”
+ * (biały tekst na #15803d, jak przycisk zamówienia) i ciemna, pogrubiona nazwa.
+ * Pole w panelu to jedna linijka „po przecinku” (np. „Etykiety testowe 1 rolka,
+ * kabel USB”), więc rozbijamy ją na pozycje — każda w osobnej linii.
+ * Powtórzone „gratis” w treści zdejmujemy, żeby nie było „Gratis: … - gratis”.
+ */
+function splitFreebies(note: string): string[] {
+  const strip = (t: string) =>
+    t.replace(/^\s*gratis\s*[:\-–—]?\s*/i, '').replace(/\s*[\-–—(]?\s*gratis\s*[)]?\s*[.!]?\s*$/i, '').trim()
+  const parts = note.split(/\r?\n|;|,/).map(strip).filter(Boolean)
+  return parts.length ? parts : [note.trim()]
+}
+
+function emailFreebie(note: string): string {
+  const items = splitFreebies(note)
+  const list = items.length === 1
+    ? `<strong>${esc(items[0])}</strong>`
+    : items.map(i => `<div style="padding:2px 0"><strong>${esc(i)}</strong></div>`).join('')
+  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:16px 0"><tr>` +
+    `<td style="padding:14px 16px;background-color:#f0fdf4;border:2px solid #15803d;border-radius:8px">` +
+    `<table role="presentation" cellpadding="0" cellspacing="0"><tr>` +
+    `<td style="padding:0 14px 0 0;vertical-align:middle">` +
+    `<span style="display:inline-block;padding:6px 12px;background-color:#15803d;color:#ffffff;font-size:12px;font-weight:700;letter-spacing:1px;border-radius:6px">GRATIS</span>` +
+    `</td><td style="vertical-align:middle;font-size:15px;line-height:1.4;color:#14532d">${list}</td></tr></table></td></tr></table>`
+}
+
 function emailInfoBox(content: string, bgColor: string, borderColor: string): string {
   return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:16px 0"><tr><td style="padding:14px 16px;background-color:${bgColor};border:1px solid ${borderColor};border-radius:8px;font-size:14px;line-height:1.6;color:#374151">${content}</td></tr></table>`
 }
@@ -820,6 +847,8 @@ export function buildQuoteEmail(data: {
   freebiesNote?: string | null
   /** pełny URL „zamów z oferty" — bez niego mail wygląda jak dotąd */
   orderUrl?: string | null
+  /** oferta poszła z PDF w załączniku — dopisek pod przyciskiem */
+  pdfAttached?: boolean
 }): string {
   const items = [...data.items].sort((a, b) => a.position - b.position)
 
@@ -873,7 +902,7 @@ export function buildQuoteEmail(data: {
           { label: 'VAT 23%:', value: `${fmtPLN(data.vatAmount / 100)} z&#322;` },
           { label: 'Brutto:', value: `${fmtPLN(data.totalBrutto / 100)} z&#322;`, bold: true },
         ]) +
-        (data.freebiesNote ? emailInfoGreen(`<strong>Gratis:</strong> ${esc(data.freebiesNote)}`) : '') +
+        (data.freebiesNote ? emailFreebie(data.freebiesNote) : '') +
         emailDataTable([
           { label: 'Wa&#380;no&#347;&#263; oferty', value: `do ${data.validUntil.toLocaleDateString('pl-PL')}` },
           { label: 'Warunki p&#322;atno&#347;ci', value: esc(data.paymentTerms) },
@@ -882,6 +911,9 @@ export function buildQuoteEmail(data: {
         // uwaga: emailButton sam escapuje etykietę — tu podajemy czysty tekst,
         // inaczej encje wychodzą podwójnie zakodowane („Zam&#243;w")
         (data.orderUrl ? emailButton('Zamów w cenach z oferty', data.orderUrl, '#15803d', 'lg') : '') +
+        (data.pdfAttached
+          ? `<p style="margin:0 0 8px;text-align:center;font-size:13px;color:#6b7280">Oferta r&#243;wnie&#380; do pobrania z za&#322;&#261;cznika.</p>`
+          : '') +
         (data.notes ? emailInfoAmber(esc(data.notes)) : '') +
         serviceBox +
         emailSignature()

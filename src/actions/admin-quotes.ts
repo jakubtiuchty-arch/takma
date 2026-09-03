@@ -4,6 +4,7 @@ import { prisma } from '@/lib/db'
 import { generateQuoteNumber, calculateQuoteTotals } from '@/lib/quotes'
 import { sendEmail } from '@/lib/email'
 import { buildQuoteEmail } from '@/lib/email-templates'
+import { renderQuotePdf, quotePdfFilename } from '@/lib/quote-pdf/render'
 import { randomBytes } from 'crypto'
 import { revalidatePath } from 'next/cache'
 import { redirect } from 'next/navigation'
@@ -138,9 +139,40 @@ export async function sendQuoteEmail(quoteId: string) {
   }
   const orderUrl = `${SITE_URL}/oferta/${encodeURIComponent(quote.quoteNumber)}/zamow?t=${orderToken}`
 
+  // PDF oferty w załączniku. Ten sam plik jest też pod /oferta/[numer]/pdf?t=token,
+  // gdyby kiedyś trzeba było podać link zamiast załącznika.
+  let attachments: { filename: string; content: Buffer }[] | undefined
+  try {
+    const pdf = await renderQuotePdf({
+      quoteNumber: quote.quoteNumber,
+      issuedAt: quote.sentAt ?? quote.createdAt,
+      validUntil: quote.validUntil,
+      clientCompany: quote.clientCompany,
+      clientContact: quote.clientContact,
+      clientAddress: quote.clientAddress,
+      clientNip: quote.clientNip,
+      clientEmail: quote.clientEmail,
+      clientPhone: quote.clientPhone,
+      items: quote.items,
+      subtotalNetto: quote.subtotalNetto,
+      vatAmount: quote.vatAmount,
+      totalBrutto: quote.totalBrutto,
+      paymentTerms: quote.paymentTerms,
+      deliveryTerms: quote.deliveryTerms,
+      freebiesNote: quote.freebiesNote,
+      notes: quote.notes,
+      zebraServiceBanner: quote.zebraServiceBanner,
+    })
+    attachments = [{ filename: quotePdfFilename(quote.quoteNumber), content: pdf }]
+  } catch (err) {
+    // Brak PDF nie może zatrzymać oferty — mail idzie z samym linkiem
+    console.error('[Oferta] PDF nie wygenerował się, wysyłka bez załącznika:', err)
+  }
+
   const result = await sendEmail({
     to: quote.clientEmail,
     subject: `Oferta ${quote.quoteNumber} — TAKMA`,
+    attachments,
     html: buildQuoteEmail({
       quoteNumber: quote.quoteNumber,
       clientContact: quote.clientContact,
@@ -162,6 +194,7 @@ export async function sendQuoteEmail(quoteId: string) {
       notes: quote.notes,
       freebiesNote: quote.freebiesNote,
       orderUrl,
+      pdfAttached: Boolean(attachments),
     }),
   })
 
