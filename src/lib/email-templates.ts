@@ -17,6 +17,8 @@ const ACCENT: Record<AccentColor, { bg: string; light: string }> = {
 const IMG = {
   logo: 'https://www.serwis-zebry.pl/takma_logo_white.png',
   premierPartner: 'https://www.serwis-zebry.pl/premier-partner-1.png',
+  /** boks „Autoryzowany serwis Zebra” w ofercie — public/images/email/ */
+  serwisZebra: 'https://www.takma.com.pl/images/email/autoryzowany-serwis-zebra.png',
 }
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -846,21 +848,17 @@ export function buildQuoteEmail(data: {
 
   const contactName = data.clientContact ? `, ${data.clientContact}` : ''
 
-  // Pochodzenie sprzętu i serwis — pod warunkami oferty. Zdanie o autoryzowanym
-  // serwisie Zebry tylko wtedy, gdy w ofercie jest sprzęt Zebry; przy innych markach
-  // zostaje samo pochodzenie z oficjalnej dystrybucji.
+  // Boks „Autoryzowany serwis Zebra” pod warunkami oferty — tylko gdy w ofercie
+  // jest sprzęt Zebry. Grafika 1200×300 (w mailu 600×150) z prawdziwym logo Zebry,
+  // bez linku — to informacja, nie wejście na serwis; treść powtórzona w alt.
   const hasZebra = items.some(item => /\bzebra\b/i.test(item.productName))
-  const originNote = emailInfoBlue(
-    `<strong style="color:#1d4ed8">Pochodzenie sprz&#281;tu i serwis</strong><br />` +
-      (hasZebra
-        ? `Oferowany sprz&#281;t pochodzi z oficjalnej dystrybucji Zebra Technologies. ` +
-          `TAKMA jest autoryzowanym serwisem Zebra &mdash; obs&#322;ug&#281; posprzeda&#380;ow&#261;, ` +
-          `czyli naprawy gwarancyjne i pogwarancyjne, wykonujemy we w&#322;asnym serwisie ` +
-          `(<a href="https://www.serwis-zebry.pl" style="color:#1d4ed8">serwis-zebry.pl</a>).`
-        : `Oferowany sprz&#281;t pochodzi z oficjalnej dystrybucji producenta. ` +
-          `Obs&#322;ug&#281; posprzeda&#380;ow&#261;, czyli naprawy gwarancyjne i pogwarancyjne, ` +
-          `prowadzimy we w&#322;asnym serwisie.`),
-  )
+  const serviceBox = hasZebra
+    ? emailDivider() +
+      `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:20px 0 16px"><tr><td>` +
+      `<img src="${IMG.serwisZebra}" width="600" alt="Autoryzowany serwis Zebra — naprawy gwarancyjne i pogwarancyjne wykonujemy we w&#322;asnym serwisie" ` +
+      `style="display:block;width:100%;max-width:600px;height:auto;border-radius:8px" />` +
+      `</td></tr></table>`
+    : ''
 
   return emailLayout({
     preheader: `Oferta ${data.quoteNumber} — ${fmtPLN(data.totalBrutto / 100)} zł brutto`,
@@ -885,7 +883,7 @@ export function buildQuoteEmail(data: {
         // inaczej encje wychodzą podwójnie zakodowane („Zam&#243;w")
         (data.orderUrl ? emailButton('Zamów w cenach z oferty', data.orderUrl, '#15803d', 'lg') : '') +
         (data.notes ? emailInfoAmber(esc(data.notes)) : '') +
-        originNote +
+        serviceBox +
         emailSignature()
       ),
   })
