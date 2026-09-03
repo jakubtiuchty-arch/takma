@@ -161,7 +161,6 @@ export async function sendQuoteEmail(quoteId: string) {
       deliveryTerms: quote.deliveryTerms,
       freebiesNote: quote.freebiesNote,
       notes: quote.notes,
-      zebraServiceBanner: quote.zebraServiceBanner,
     })
     attachments = [{ filename: quotePdfFilename(quote.quoteNumber), content: pdf }]
   } catch (err) {
@@ -184,6 +183,7 @@ export async function sendQuoteEmail(quoteId: string) {
         priceNetto: item.priceNetto,
         totalNetto: item.totalNetto,
         catalogPriceNetto: item.catalogPriceNetto,
+        productId: item.productId,
       })),
       subtotalNetto: quote.subtotalNetto,
       vatAmount: quote.vatAmount,

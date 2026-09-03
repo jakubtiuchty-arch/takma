@@ -1,6 +1,7 @@
 import { createElement } from 'react'
 import { Font, renderToBuffer } from '@react-pdf/renderer'
 import { QuotePdfDoc, type QuotePdfData } from './QuotePdf'
+import { quoteHasZebra } from '@/lib/quote-zebra'
 
 /**
  * Renderuje ofertę do PDF (Buffer). Czcionka i logotypy idą z public/ pod
@@ -24,14 +25,9 @@ function ensureFonts() {
   fontsRegistered = true
 }
 
-export type QuoteForPdf = Omit<QuotePdfData, 'logoSrc' | 'zebraLogoSrc' | 'zebraService' | 'issuedAt'> & {
+export type QuoteForPdf = Omit<QuotePdfData, 'logoSrc' | 'zebraLogoSrc' | 'zebraService' | 'issuedAt' | 'items'> & {
   issuedAt?: Date | null
-  zebraServiceBanner?: boolean
-}
-
-/** Sprzęt Zebry w ofercie → boks serwisu w PDF, tak samo jak w mailu. */
-export function quoteHasZebra(items: { productName: string }[]): boolean {
-  return items.some((i) => /\bzebra\b/i.test(i.productName))
+  items: (QuotePdfData['items'][number] & { productId?: string | null })[]
 }
 
 export async function renderQuotePdf(quote: QuoteForPdf): Promise<Buffer> {
@@ -39,7 +35,8 @@ export async function renderQuotePdf(quote: QuoteForPdf): Promise<Buffer> {
   const data: QuotePdfData = {
     ...quote,
     issuedAt: quote.issuedAt ?? new Date(),
-    zebraService: Boolean(quote.zebraServiceBanner) || quoteHasZebra(quote.items),
+    // baner serwisu tylko przy sprzęcie Zebry — jedna reguła dla maila i PDF
+    zebraService: quoteHasZebra(quote.items),
     logoSrc: `${SITE_URL}/images/takma_logo.png`,
     zebraLogoSrc: `${SITE_URL}/images/partners/logo_zebra.png`,
   }

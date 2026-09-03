@@ -1,3 +1,4 @@
+import { quoteHasZebra } from '@/lib/quote-zebra'
 // ─── TAKMA Email Design System ───────────────────────────────────────────────
 // Profesjonalny system szablonów email B2B — table-based layout, Outlook compatible
 // Zero dependencies — plain TypeScript helpers returning HTML strings
@@ -836,6 +837,8 @@ export function buildQuoteEmail(data: {
     totalNetto: number
     /** cena sklepowa z dnia wystawienia (grosze) — przekreślana, gdy wyższa od oferowanej */
     catalogPriceNetto?: number | null
+    /** id produktu z katalogu — po nim rozpoznajemy producenta */
+    productId?: string | null
   }[]
   subtotalNetto: number
   vatAmount: number
@@ -880,7 +883,7 @@ export function buildQuoteEmail(data: {
   // Boks „Autoryzowany serwis Zebra” pod warunkami oferty — tylko gdy w ofercie
   // jest sprzęt Zebry. Grafika 1200×300 (w mailu 600×150) z prawdziwym logo Zebry,
   // bez linku — to informacja, nie wejście na serwis; treść powtórzona w alt.
-  const hasZebra = items.some(item => /\bzebra\b/i.test(item.productName))
+  const hasZebra = quoteHasZebra(items)
   const serviceBox = hasZebra
     ? emailDivider() +
       `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:20px 0 16px"><tr><td>` +

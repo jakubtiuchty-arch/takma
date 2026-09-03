@@ -39,7 +39,6 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ nume
     deliveryTerms: quote.deliveryTerms,
     freebiesNote: quote.freebiesNote,
     notes: quote.notes,
-    zebraServiceBanner: quote.zebraServiceBanner,
   })
 
   return new NextResponse(pdf as unknown as BodyInit, {
