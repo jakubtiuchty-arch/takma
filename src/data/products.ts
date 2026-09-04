@@ -898,6 +898,14 @@ export const manufacturers: Manufacturer[] = [
     seoTitle: 'Terminale mobilne M3 Mobile | SM24, SM25',
     seoDescription: 'Terminale mobilne M3 Mobile — koreański producent urządzeń enterprise z hot-swap baterii, Wi-Fi 6E i Android 16. SM24 i SM25 do magazynów, retail i logistyki. TAKMA — partner AutoID w Polsce.'
   },
+  {
+    id: 'magicard',
+    slug: 'magicard',
+    name: 'Magicard by Brady',
+    logo: '/images/partners/logo_magicard.svg',
+    seoTitle: 'Drukarki kart Magicard by Brady | Identyfikatory PVC',
+    seoDescription: 'Drukarki kart Magicard by Brady do personalizacji identyfikatorów i kart PVC — druk Direct-to-Card i retransferowy, zabezpieczenia HoloKote oraz kodowanie kart.'
+  },
 ]
 
 // ============================================

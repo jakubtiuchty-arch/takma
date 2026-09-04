@@ -116,7 +116,7 @@ function CatalogContent() {
           {filteredProducts.length}{' '}
           {filteredProducts.length === 1
             ? 'produkt'
-            : filteredProducts.length < 5
+            : filteredProducts.length >= 2 && filteredProducts.length <= 4
             ? 'produkty'
             : 'produktów'}
         </p>
