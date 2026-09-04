@@ -919,64 +919,70 @@ const desktopPrinters: Product[] = [
     name: 'Zebra ZD421t',
     shortDescription: 'Zebra ZD421t — drukarka termotransferowa biurkowa 4", następca GK420t',
     seoTitle: 'Zebra ZD421t 203/300 dpi — drukarka termotransferowa',
-    seoDescription: 'Zebra ZD421t — biurkowa drukarka etykiet termotransferowa 4", następca GK420t. Ribbon do 300 m, 203/300 dpi, 152 mm/s, Wi-Fi, MCS. Od 1 652 zł netto. TAKMA.',
-    description: `Zebra ZD421t to biurkowa drukarka etykiet termotransferowa 4 cale — następca popularnej GK420t. Drukuje z taśmą barwiącą (ribbonem), co zapewnia trwałe wydruki odporne na UV, wilgoć i chemikalia. 203/300 dpi, do 152 mm/s. Modularna konstrukcja MCS. Idealna do logistyki, produkcji, etykiet produktowych i oznaczeń trwałych.
+    seoDescription: 'Zebra ZD421t do druku trwałych etykiet. Wybierz 203 lub 300 dpi, USB, Ethernet albo Wi-Fi. Porównaj 6 wariantów i dobierz etykiety oraz taśmy w TAKMA.',
+    description: `Zebra ZD421t drukuje etykiety produktowe, magazynowe i oznaczenia zasobów. Możesz używać taśmy barwiącej do termotransferu albo drukować bez niej na etykietach termicznych. Jeśli oznaczenie ma przetrwać transport, mycie lub kontakt z chemikaliami, trzeba dobrać do siebie etykietę i taśmę. Sama drukarka nie zapewnia takiej odporności.
 
-Zebra ZD421t to najlepszy wybór dla firm logistycznych, magazynów i e-commerce, które potrzebują niezawodnej biurkowej drukarki termotransferowej z możliwością rozbudowy o sieć Wi-Fi i Ethernet.
+## 203 czy 300 dpi?
 
-Zebra ZD421t to kompaktowa drukarka biurkowa do etykiet 4-calowych, będąca bezpośrednim następcą popularnych modeli Zebra GK420t i ZD420t. Łączy sprawdzoną niezawodność serii Zebra z nowoczesną architekturą modularną Link-OS, oferując druk termotransferowy i termiczny bezpośredni w rozdzielczości do 300 dpi z prędkością 152 mm/s.
+Do standardowych etykiet wysyłkowych i magazynowych zwykle wystarcza 203 dpi. Ta wersja drukuje z prędkością do 152 mm/s. Wariant 300 dpi, do 102 mm/s, warto rozważyć przy drobnym tekście i małych kodach 2D. Przed wyborem prześlij nam projekt etykiety, jej rozmiar i informację, jakim skanerem będzie odczytywana. Pomożemy ocenić, która rozdzielczość ma sens w Twoim zastosowaniu.
 
-Modułowa konstrukcja ZD421t pozwala na łatwy upgrade interfejsów — od podstawowej konfiguracji USB po rozbudowane zestawy z Ethernet (LAN), RS-232, a nawet podwójnym radiem bezprzewodowym Bluetooth 4.1 i Wi-Fi 802.11ac. Instalacja modułów nie wymaga narzędzi, co znacząco ułatwia późniejszą rozbudowę floty drukarek.
+## USB, Ethernet lub Wi-Fi
 
-Drukarka wyposażona jest w diody LED sygnalizujące status urządzenia (gotowość, błędy, ładowanie mediów), co pozwala na szybką kontrolę stanu drukarki bez potrzeby podłączania do komputera. Konfiguracja i diagnostyka odbywa się przez oprogramowanie Zebra Setup Utilities lub zdalnie przez platformę Link-OS.
+W tabeli znajdziesz sześć konfiguracji: po trzy dla każdej rozdzielczości. USB sprawdzi się przy jednym komputerze. Ethernet pozwala udostępnić drukarkę w sieci przewodowej. Wersje z końcówką PN EX02EZ mają Wi-Fi 802.11ac i Bluetooth 4.1. Wyposażenie sprawdzaj po pełnym numerze produktu, bo sama nazwa ZD421t nie określa łączności.
 
-ZD421t obsługuje szeroką gamę materiałów: etykiety papierowe, syntetyczne (PP, PE, PET), przywieszki (tags), opaski identyfikacyjne oraz wstążki (ribbony) o szerokości do 110 mm i długości 74 m lub 300 m. Drukarka jest kompatybilna z taśmami woskowymi (wax), woskowo-żywicznymi (wax-resin) i żywicznymi (resin).
+Interfejsy można rozbudowywać zgodnie z wyposażeniem konkretnego egzemplarza. Do pierwszej konfiguracji służy Zebra Setup Utilities, a Link-OS udostępnia narzędzia do zarządzania drukarkami. Obsługa ZPL II i EPL2 ułatwia zastąpienie starszej GK420t lub ZD420t. Przed migracją warto sprawdzić istniejący szablon, sterownik i ustawienia nośnika.
 
-Drukarka obsługuje praktycznie wszystkie popularne symbole kodów kreskowych 1D (Code 39, Code 128, EAN-13, EAN-8, UPC-A, ITF-14, GS1-128) oraz 2D (QR Code, DataMatrix, PDF417, Aztec), co czyni ją uniwersalnym narzędziem do etykietowania w dowolnej branży. Programowanie odbywa się w językach ZPL II i EPL2 z pełną kompatybilnością wsteczną.
+## Etykiety i taśmy do codziennej pracy
 
-Zebra ZD421t jest objęta 36-miesięczną gwarancją producenta na drukarkę oraz 12-miesięczną gwarancją na głowicę drukującą, co potwierdza najwyższą jakość wykonania i trwałość urządzenia.
+Drukarka przyjmuje etykiety o szerokości 25,4–112 mm i rolki o średnicy zewnętrznej do 127 mm. Taśmy barwiące mogą mieć długość 74 lub 300 m i szerokość do 110 mm. Dłuższa rolka oznacza rzadsze wymiany; liczba wydruków zależy od wysokości etykiety oraz odstępu między etykietami.
 
-Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
+Do papieru w zwykłych warunkach często wystarcza taśma woskowa. Przy większym tarciu rozważ woskowo-żywiczną, a do odpowiednio dobranych etykiet syntetycznych taśmę żywiczną. Ważne są też klej, powierzchnia naklejania i temperatura użytkowania. Dobór opisujemy w poradniku [jak dobrać taśmę termotransferową](/poradnik/jak-dobrac-tasme-termotransferowa). Materiały i akcesoria znajdziesz poniżej.
 
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).
+## Gwarancja i serwis
 
-Szukasz tańszej wersji bez ribbona? Sprawdź [Zebra ZD421d](/produkt/zebra-zd421d) — ten sam model w wersji termicznej do etykiet kurierskich i cenówek.`,
+Gwarancja producenta na drukarkę wynosi 24 miesiące. Dla głowicy termotransferowej w regionie EMEA obowiązuje rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej, na warunkach Zebra. Nie jest to deklarowana żywotność głowicy ani liczba etykiet. Zakres dodatkowego kontraktu Zebra OneCare trzeba sprawdzić dla wybranego pakietu.
+
+Parametry pochodzą ze [specyfikacji serii ZD400 producenta](https://www.zebra.com/pl/pl/products/spec-sheets/printers/desktop/zd400-series.html), a okresy ochrony z [warunków gwarancji Zebra](https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/presentation/product-warranty-exceptions-list.pdf).
+
+Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/zebra-zd421d). To mniejsza konstrukcja bez mechanizmu taśmy, z innymi częściami i akcesoriami.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 1648.81,
-    images: ['/images/products/zd421t_1.png', '/images/products/zd421t_2.png', '/images/products/zd421t_3.png'],
+    images: ['/images/products/zd421t_1.webp', '/images/products/zd421t_2.webp', '/images/products/zd421t_3.webp'],
     imageDescriptions: [
-      'Drukarka etykiet Zebra ZD421t — widok z przodu z otwartą pokrywą i mechanizmem etykiet',
-      'Zebra ZD421t — widok boczny z zamkniętą obudową i portami USB oraz Ethernet',
-      'Kompaktowa drukarka termotransferowa Zebra ZD421t 4 cale — widok ogólny',
+      'Zebra ZD421t — zamknięta drukarka z wydrukowaną etykietą, widok pod kątem',
+      'Zebra ZD421t — widok z przodu i prawego boku przy zamkniętej pokrywie',
+      'Zebra ZD421t — otwarta pokrywa, komora etykiet i mechanizm taśmy barwiącej',
     ],
     tags: ['magazyn', 'logistyka', 'retail'],
     availability: 'available',
     isNew: true,
     isBestseller: true,
     keyParams: {
-      rodzajDruku: 'Termotransfer',
-      rozdzielczosc: '203 dpi (8 dots/mm)',
-      predkoscDruku: 'do 152 mm/s (6 ips)',
-      szerokoscDruku: 'max. 104 mm (4,09")',
+      rodzajDruku: 'Termotransferowy i termiczny',
+      rozdzielczosc: '203 lub 300 dpi',
+      predkoscDruku: '203 dpi: do 152 mm/s; 300 dpi: do 102 mm/s',
+      szerokoscDruku: '203 dpi: do 104 mm; 300 dpi: do 106 mm',
       szerokoscEtykiet: '25,4–112 mm',
     },
     specifications: [
-      { name: 'Rodzaj druku', value: 'Termotransfer' },
-      { name: 'Szerokość druku', value: 'max. 104 mm (4,09")' },
+      { name: 'Rodzaj druku', value: 'Termotransferowy i termiczny bezpośredni' },
+      { name: 'Rozdzielczość', value: '203 lub 300 dpi, zależnie od wariantu' },
+      { name: 'Prędkość druku', value: 'Do 152 mm/s przy 203 dpi; do 102 mm/s przy 300 dpi' },
+      { name: 'Szerokość druku', value: 'Do 104 mm przy 203 dpi; do 106 mm przy 300 dpi' },
       { name: 'Max szerokość taśmy', value: '110 mm' },
       { name: 'Max długość taśmy', value: '300 m' },
       { name: 'Rodzaj etykiet', value: 'Papierowe, foliowe' },
       { name: 'Kody 1D', value: 'Code 39, Code 128, EAN-13, EAN-8, UPC-A, UPC-E, ITF-14, GS1-128, Codabar' },
       { name: 'Kody 2D', value: 'QR Code, DataMatrix, PDF417, Aztec, MaxiCode, GS1 DataBar' },
-      { name: 'Wymiary (SxGxW)', value: '206 x 280 x 179 mm' },
-      { name: 'Waga', value: '1,59 kg' },
+      { name: 'Wymiary (SxGxW)', value: '202 × 267 × 189 mm' },
+      { name: 'Waga', value: '2,05 kg' },
       { name: 'Temperatura pracy', value: '4,4–41°C' },
       { name: 'Wilgotność pracy', value: '20–85% (bez kondensacji)' },
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz' },
       { name: 'Certyfikaty', value: 'CE, FCC Class B, ICES, cTUVus, S-Mark, CCC' },
-      { name: 'Gwarancja', value: '36 miesięcy (drukarka), 12 miesięcy (głowica)' },
+      { name: 'Gwarancja', value: '24 miesiące (drukarka); głowica: rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej (EMEA)' },
     ],
     applications: [
       'Etykiety wysyłkowe i kurierskie',
@@ -1108,77 +1114,18 @@ Szukasz tańszej wersji bez ribbona? Sprawdź [Zebra ZD421d](/produkt/zebra-zd42
       'zebra-power-supply-zd421-zd621',
     ],
     faq: [
-      {
-        question: 'Czym różni się Zebra ZD421t od ZD421d?',
-        answer: 'ZD421t to model termotransferowy (thermal transfer), który drukuje z użyciem taśmy barwiącej (ribbon) — dzięki temu etykiety są trwalsze i odporne na ścieranie, wilgoć i temperaturę. ZD421d to model termiczny bezpośredni (direct thermal), który drukuje bez ribbona — etykiety są tańsze, ale z czasem blakną. ZD421t jest lepszym wyborem gdy potrzebujesz trwałych etykiet produktowych, a ZD421d sprawdzi się do etykiet wysyłkowych i tymczasowych.',
-      },
-      {
-        question: 'Czym różni się Zebra ZD421t od ZD621t?',
-        answer: 'ZD621t to model premium w linii biurkowej Zebra: drukuje 33% szybciej (203 vs 152 mm/s), ma kolorowy dotykowy LCD 4,3", standardowy Ethernet i opcję RFID (ZD621R). ZD421t jest tańszy (od 1 649 PLN vs od 2 264 PLN) i ma modularną budowę snap-in. Dopłata za ZD621t z Ethernet to zaledwie 234 PLN. Szczegółowe porównanie z TCO na 3 lata: [ZD421 vs ZD621](/poradnik/zebra-zd421-vs-zd621-porownanie).',
-      },
-      {
-        question: 'Jaką taśmę (ribbon) wybrać do Zebra ZD421t?',
-        answer: 'ZD421t obsługuje trzy rodzaje taśm: woskowe (wax) — najlepsze do standardowych etykiet papierowych, najtańsze w eksploatacji; woskowo-żywiczne (wax-resin) — do etykiet syntetycznych i laminowanych, większa odporność na ścieranie; żywiczne (resin) — do etykiet na materiałach syntetycznych (PP, PE, PET), najwyższa trwałość. Drukarka przyjmuje taśmy o szerokości do 110 mm i długości 74 m lub 300 m (rolka 300 m znacząco obniża koszty per etykieta).',
-      },
-      {
-        question: 'Czy Zebra ZD421t jest następcą GK420t?',
-        answer: 'Tak, Zebra ZD421t jest bezpośrednim następcą modeli GK420t i ZD420t. Oferuje pełną kompatybilność wsteczną z językami programowania ZPL II i EPL2, co oznacza, że istniejące szablony etykiet działają bez zmian. W stosunku do GK420t, ZD421t oferuje: modułową architekturę interfejsów, większą pamięć (512 MB Flash) oraz obsługę Link-OS do zdalnego zarządzania.',
-      },
-      {
-        question: 'Jak podłączyć Zebra ZD421t do sieci Wi-Fi?',
-        answer: 'Do połączenia ZD421t z siecią Wi-Fi potrzebny jest opcjonalny moduł bezprzewodowy (Bluetooth 4.1 + Wi-Fi 802.11ac). Moduł instaluje się beznarzędziowo w gnieździe z tyłu drukarki. Po instalacji konfiguracja Wi-Fi odbywa się za pomocą oprogramowania Zebra Setup Utilities lub zdalnie przez platformę Link-OS. Warianty z fabrycznie zainstalowanym Wi-Fi to: ZD4A042-30EX02EZ (203 dpi) i ZD4A043-30EX02EZ (300 dpi).',
-      },
-      {
-        question: 'Jaka jest gwarancja na drukarkę Zebra ZD421t?',
-        answer: 'Zebra ZD421t jest objęta 36-miesięczną (3 lata) gwarancją producenta na drukarkę oraz 12-miesięczną gwarancją na głowicę drukującą. Jest to jedna z najdłuższych gwarancji w segmencie drukarek biurkowych. Dodatkowo Zebra oferuje płatne kontrakty serwisowe Zebra OneCare Essential i Select, które przedłużają ochronę do 5 lat.',
-      },
-      {
-        question: 'Kiedy wybrać rozdzielczość 203 dpi, a kiedy 300 dpi?',
-        answer: 'Rozdzielczość 203 dpi jest wystarczająca do większości zastosowań: etykiet wysyłkowych, magazynowych, cenowych i kodów kreskowych standardowej wielkości. Drukuje szybciej (152 mm/s vs 102 mm/s) i głowica jest tańsza w wymianie. 300 dpi warto wybrać gdy drukujesz: bardzo małe kody kreskowe lub kody 2D (QR, DataMatrix), etykiety z drobnym tekstem, grafiki o wysokiej szczegółowości, lub etykiety dla branży farmaceutycznej i elektronicznej wymagające precyzji.',
-      },
-      {
-        question: 'Czy Zebra ZD421t drukuje kody QR?',
-        answer: 'Tak, ZD421t obsługuje kody QR oraz inne symbole 2D: DataMatrix, PDF417, Aztec i MaxiCode. Rozdzielczość 203 dpi wystarczy do kodów QR standardowej wielkości, ale do bardzo małych kodów (poniżej 10x10 mm) zalecamy wariant 300 dpi.',
-      },
-      {
-        question: 'Ile kosztuje eksploatacja Zebra ZD421t miesięcznie?',
-        answer: 'Przy 1000 etykiet dziennie koszt eksploatacji to ok. 150–200 zł/miesiąc. Taśma woskowa 300m (ok. 80 zł) wystarcza na ok. 8000–10 000 etykiet. Głowica drukująca wytrzymuje min. 1 mln etykiet. Koszt druku jednej etykiety to ok. 0,10–0,15 zł.',
-      },
-      {
-        question: 'Czy ZD421t współpracuje z systemami WMS i ERP?',
-        answer: 'Tak, ZD421t obsługuje języki ZPL II i EPL2 kompatybilne z praktycznie każdym systemem WMS, ERP i TMS (SAP, Oracle, Comarch, enova, Subiekt). Integracja przez USB, Ethernet lub Wi-Fi. Platforma Link-OS umożliwia zdalne zarządzanie flotą drukarek.',
-      },
-      {
-        question: 'Która wersja ZD421t jest najtańsza?',
-        answer: 'Najtańsza jest wersja ZD4A042-30EM00EZ (203 dpi, USB, bez Wi-Fi) w cenie od 1 649 zł netto. Do większości zastosowań magazynowych i e-commerce ta wersja w pełni wystarcza. Moduły Wi-Fi i Ethernet można dokupić później.',
-      },
-      {
-        question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
-        answer: 'Serwis drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę wałków, kalibrację i aktualizację firmware. Czas naprawy standardowej to 3–5 dni roboczych, dostępna jest również naprawa ekspresowa i wysyłkowa w całej Polsce.',
-      },
-      {
-        question: 'Zebra ZD421t czy Honeywell PC45t — co wybrać?',
-        answer: 'Przy ~129 PLN różnicy (z Ethernet) ZD421t wygrywa ekosystemem Zebra (PrintDNA, MCS), natywnym ZPL II i dłuższą gwarancją (36 vs 24 mies.). PC45t wygrywa prędkością druku (+33%, 203 vs 152 mm/s) i ekranem dotykowym LCD 3,5". TCO na 3 lata jest niemal identyczne (~8 440 vs ~8 769 PLN). Szczegółowe porównanie z kalkulacją TCO: [ZD421t vs PC45t](/poradnik/zebra-zd421t-vs-honeywell-pc45t).',
-      },
-      {
-        question: 'Jakie są alternatywy dla Zebra ZD421t?',
-        answer: 'W wyższym segmencie: [Zebra ZD621t](/produkt/zebra-zd621t) (od 2 264 PLN — LCD 4,3", 203 mm/s, RFID; [porównanie ZD421 vs ZD621](/poradnik/zebra-zd421-vs-zd621-porownanie)). Cross-brand: [Honeywell PC45t](/produkt/honeywell-pc45t) (od 2 159 PLN — ekran dotykowy 3,5", Ethernet w standardzie; [porównanie ZD421t vs PC45t](/poradnik/zebra-zd421t-vs-honeywell-pc45t)). W niższym budżecie: [Zebra ZD220t](/produkt/zebra-zd220t) (od 621 PLN, podstawowa termotransferowa).',
-      },
-      {
-        question: 'ZD421t czy ZD421d — którą drukarkę wybrać?',
-        answer: 'ZD421t drukuje z ribbonem — etykiety trwałe latami, odporne na UV, wilgoć i chemikalia. [ZD421d](/produkt/zebra-zd421d) drukuje termicznie bez ribbona — tańsza eksploatacja, ale etykiety blaknął po 6-12 miesiącach. Wybierz ZD421t do: etykiet produktowych, logistycznych, tekstylnych, outdoor. Wybierz ZD421d do: etykiet kurierskich i krótkotrwałych oznaczeń.',
-      },
-      {
-        question: 'Jaki ribbon wybrać do Zebra ZD421t?',
-        answer: 'Do papieru: taśma woskowa [Zebra 2300](/tasmy-termotransferowe?typ=woskowa) (od 7 zł/rolka). Do syntetyków i etykiet odpornych: woskowo-żywiczna [Zebra 3200](/tasmy-termotransferowe?typ=woskowo-zywiczna) (od 11 zł). Do ekstremalnych warunków (UV, chemikalia): żywiczna [Zebra 5095](/tasmy-termotransferowe?typ=zywiczna) (od 18 zł). Szczegóły: [Jak dobrać taśmę termotransferową](/poradnik/jak-dobrac-tasme-termotransferowa).',
-      },
-      { question: 'Ile kosztuje drukarka Zebra ZD421T i co wpływa na cenę?', answer: 'Cena drukarki Zebra ZD421T zaczyna się od 1 649 zł netto za wersję 203 dpi z USB. Na cenę wpływają: rozdzielczość (Zebra ZD421T 300 dpi jest droższa o ok. 200-300 zł), zestaw łączności (USB w standardzie; Wi-Fi/Bluetooth lub Ethernet to dopłata) oraz opcje mediów. Pełny cennik wszystkich konfiguracji drukarki Zebra ZD421T jest na tej stronie. Porównując oferty pod hasłem zebra zd421 cena, sprawdź czy kwota jest netto czy brutto i jaka łączność jest w zestawie.' },
-      { question: 'Czy Zebra ZD421T ma port Ethernet?', answer: 'Tak — drukarka Zebra ZD421T Ethernet jest dostępna w wersji z portem LAN RJ45, obok wariantów z USB oraz Wi-Fi i Bluetooth. Konfiguracja z Ethernetem sprawdza się, gdy drukarka pracuje jako współdzielone urządzenie sieciowe w magazynie lub biurze, bez zależności od Wi-Fi. Slot komunikacyjny jest wymienny, więc łączność można doposażyć później.' },
-      { question: 'Dla kogo jest drukarka etykiet Zebra ZD421T?', answer: 'Drukarka etykiet Zebra ZD421T to termotransferowy wariant serii Zebra ZD421 — do druku TRWAŁYCH etykiet z taśmą barwiącą (ribbon) na podłożach papierowych powlekanych, foliowych i syntetycznych. To wybór do oznaczeń, które muszą przetrwać miesiące lub lata: etykiety magazynowe, oznaczenia zasobów, etykiety produktowe odporne na ścieranie, wilgoć i temperaturę, etykiety chemiczne i laboratoryjne. Jeśli drukujesz krótkożyciowe etykiety wysyłkowe i kurierskie bez taśmy, tańsza w eksploatacji będzie wersja termiczna [Zebra ZD421D](/produkt/zebra-zd421d) — ten sam korpus rodziny Zebra ZD421, te same akcesoria.' },
-      { question: 'Jakie etykiety i taśmy pasują do Zebra ZD421T?', answer: 'Zebra ZD421T obsługuje rolki etykiet o szerokości do 112 mm i średnicy zewnętrznej do 127 mm na gilzie 25 mm (z adapterem 38 mm). Jako wersja termotransferowa wymaga taśmy barwiącej (ribbon) — drukarka przyjmuje rolki ribbon do 300 m długości, co przy wymianie rzadziej przerywa pracę niż konstrukcje na 74 m. Dobór taśmy zależy od podłoża: wosk do papieru, wosk-żywica do etykiet powlekanych, żywica do folii i zastosowań odpornych chemicznie. Cały asortyment mediów i taśm dobierzemy do Twojego zastosowania — to mocna strona oferty drukarka etykiet Zebra ZD421T w komplecie z materiałami.' },
-      { question: 'Czy warto wymienić starszą drukarkę na Zebra ZD421T?', answer: 'Tak, jeśli pracujesz na Zebra GK420t, ZD420t lub starszych modelach desktop. Zebra ZD421T ma szybszy procesor, większą pamięć, czytelny interfejs ze wskaźnikami stanu, łatwą wymianę głowicy i nowoczesną łączność (USB, Wi-Fi, Bluetooth, Ethernet). Konstrukcja serii Zebra ZD421 jest też prostsza w serwisie — głowicę i wałek wymienia się bez narzędzi. Migrację ułatwia kompatybilność języka ZPL: istniejące szablony etykiet zwykle działają bez przeróbek.' },
-      { question: 'Jak skonfigurować drukarkę Zebra ZD421T pod swój system?', answer: 'Zebra ZD421T instaluje się przez sterownik Windows (ZDesigner) lub bezpośrednio w języku ZPL/EPL z poziomu systemu WMS, ERP czy programu do etykiet (np. BarTender, NiceLabel). Do pierwszej konfiguracji służy darmowe Zebra Setup Utilities: ustawienie sieci Wi-Fi lub Ethernet, kalibracja mediów, wydruk testowy. Drukarka Zebra ZD421T obsługuje też zdalne zarządzanie flotą przez Zebra Printer Profile Manager, co przydaje się przy wielu urządzeniach w firmie. Jeśli potrzebujesz pomocy z wdrożeniem lub integracją — wspieramy konfigurację po stronie TAKMA.' },
-      { question: 'Co oznacza litera T w nazwie Zebra ZD421T?', answer: 'Litera T w oznaczeniu Zebra ZD421T to skrót od „thermal transfer”, czyli druk termotransferowy z taśmą barwiącą. Cała seria Zebra ZD421 występuje w dwóch wariantach: ZD421T (termotransfer, do etykiet trwałych) oraz ZD421D, gdzie D oznacza „direct thermal” — druk termiczny bezpośredni bez taśmy. To ta sama biurkowa obudowa i te same akcesoria, różni je tylko mechanizm druku i przeznaczenie. Klienci często wpisują po prostu „zebra zd421” — jeśli zależy Ci na trwałych etykietach, właściwym modelem jest Zebra ZD421T; do krótkożyciowych etykiet wysyłkowych wystarczy [Zebra ZD421D](/produkt/zebra-zd421d). Obie wersje serii Zebra ZD421 kupisz u nas jako autoryzowanego partnera Zebra, z gwarancją i wsparciem serwisowym w Polsce.' },
+      { question: "Czym różni się ZD421t od ZD421d?", answer: "ZD421t ma mechanizm taśmy barwiącej i obsługuje termotransfer oraz druk termiczny bezpośredni. ZD421d drukuje tylko termicznie. Modele różnią się także obudową i częścią akcesoriów: głowice, obcinacze czy podstawy akumulatorowe dobiera się do konkretnej wersji. Trwałość wydruku zależy od nośnika, taśmy i warunków użytkowania." },
+      { question: "Kiedy wybrać 203 dpi, a kiedy 300 dpi?", answer: "203 dpi zwykle wystarcza do standardowych etykiet logistycznych i większych kodów. 300 dpi daje więcej szczegółów przy drobnym tekście oraz małych kodach QR i DataMatrix. Odczyt zależy również od projektu kodu i skanera, dlatego warto sprawdzić docelową etykietę. Maksymalna prędkość wynosi odpowiednio 152 i 102 mm/s." },
+      { question: "Który wariant ma Ethernet lub Wi-Fi?", answer: "W naszej tabeli konfiguracje ZD4A042-30EE00EZ i ZD4A043-30EE00EZ mają Ethernet. ZD4A042-30EX02EZ i ZD4A043-30EX02EZ mają Wi-Fi 802.11ac oraz Bluetooth 4.1. Wersje z końcówką EM00EZ mają USB bez tych dodatków. Pełny PN pozwala rozróżnić wyposażenie nawet wtedy, gdy nazwa modelu jest taka sama." },
+      { question: "Czy łączność można rozbudować później?", answer: "Seria umożliwia rozbudowę o moduły komunikacyjne. Przed zakupem sprawdź zgodność modułu z numerem i wyposażeniem drukarki. Moduł bezprzewodowy montuje się przez klapkę od spodu, zgodnie z instrukcją producenta. Do ustawienia sieci można użyć Zebra Setup Utilities." },
+      { question: "Jak dobrać etykiety i taśmę?", answer: "Sprawdź materiał, klej, rozmiar etykiety, średnicę rolki i rdzenia. ZD421t przyjmuje nośniki do 112 mm szerokości oraz taśmy do 110 mm szerokości i 300 m długości. Taśma woskowa jest typowym wyborem do papieru; woskowo-żywiczna i żywiczna wymagają dopasowania do podłoża oraz oczekiwanej odporności. Więcej wskazówek: [dobór taśmy termotransferowej](/poradnik/jak-dobrac-tasme-termotransferowa)." },
+      { question: "Czy można drukować bez taśmy barwiącej?", answer: "Tak, w trybie termicznym bezpośrednim, na etykietach przeznaczonych do tego druku. Taśma jest potrzebna w trybie termotransferowym. Zwykły papier do termotransferu nie zastąpi papieru termicznego po wyjęciu taśmy." },
+      { question: "Ile etykiet wydrukuję z taśmy 300 m?", answer: "Podziel długość taśmy przez wysokość etykiety wraz z odstępem. Przykładowo 300 000 mm / (100 mm + 3 mm) daje około 2912 etykiet przed uwzględnieniem strat na kalibrację i wymianę materiałów. Koszt jednej etykiety to koszt nośnika plus koszt zużytej taśmy; w budżecie trzeba uwzględnić też czyszczenie i serwis. Nie ma jednej wiarygodnej kwoty miesięcznej bez znajomości nakładu i materiałów." },
+      { question: "Jaka gwarancja obejmuje drukarkę i głowicę?", answer: "Producent podaje 24 miesiące na drukarkę. Głowica termotransferowa w EMEA jest objęta ochroną przez rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej, na warunkach Zebra. Milion cali to długość wydruku, nie liczba etykiet. Dodatkową ochronę można dobrać w ramach odpowiedniego kontraktu Zebra OneCare." },
+      { question: "Czy mogę zastąpić GK420t lub ZD420t bez zmiany szablonów?", answer: "ZD421t obsługuje ZPL II i EPL2, co ułatwia migrację. Nie należy jednak zakładać, że każdy szablon zadziała bez sprawdzenia. Zweryfikuj rozdzielczość, rozmiar etykiety, sterownik i sposób wysyłania danych z programu, WMS lub ERP. Szczególnie przy przejściu z 203 na 300 dpi mogą być potrzebne zmiany projektu." },
+      { question: "Co wpływa na cenę i dostępność poszczególnych wersji?", answer: "Przede wszystkim rozdzielczość oraz łączność. Aktualną cenę netto i brutto oraz stan dla konkretnego PN pokazujemy w bloku oferty i tabeli wariantów. Porównuj te same numery produktu i wyposażenie. Gdy brak potwierdzonej ceny lub stanu, poproś TAKMA o ofertę." },
+      { question: "Jakie modele warto porównać z ZD421t?", answer: "Sprawdź [Zebra ZD621t](/produkt/zebra-zd621t), jeśli potrzebujesz szybszego druku i szerszych opcji wyposażenia, albo [Zebra ZD220t](/produkt/zebra-zd220t), jeśli wystarczy prostsza konfiguracja USB. Alternatywą innej marki jest [Honeywell PC45t](/produkt/honeywell-pc45t). Ceny, rozdzielczość i wyposażenie porównuj dla konkretnych wariantów, nie samych nazw serii." },
+      { question: "Gdzie znaleźć sterownik i pomoc serwisową?", answer: "Sterowniki oraz instrukcje są podlinkowane w sekcji plików na tej stronie. W sprawie doboru materiałów, konfiguracji lub naprawy skontaktuj się z TAKMA. Informacje o obsłudze serwisowej znajdziesz również w [serwisie drukarek Zebra](https://www.serwis-zebry.pl). Termin i zakres naprawy wymagają potwierdzenia po rozpoznaniu usterki." },
     ],
     comparison: {
       title: 'Porównanie drukarek termotransferowych biurkowych Zebra 4" — ZD220t vs ZD230t vs ZD421t vs ZD621t',
@@ -1194,8 +1141,7 @@ Szukasz tańszej wersji bez ribbona? Sprawdź [Zebra ZD421d](/produkt/zebra-zd42
             'Interfejs': 'USB 2.0',
             'LCD': 'Brak (1 LED)',
             'Łączność sieciowa': 'Brak',
-            'Cena od': '639 zł',
-            'Najlepszy do': 'Niski nakład, jedno stanowisko',
+            'Zastosowanie': 'Niski nakład, jedno stanowisko',
           },
         },
         {
@@ -1209,8 +1155,7 @@ Szukasz tańszej wersji bez ribbona? Sprawdź [Zebra ZD421d](/produkt/zebra-zd42
             'Interfejs': 'USB, Ethernet, BT + Wi-Fi (opcje)',
             'LCD': 'Brak (1 LED)',
             'Łączność sieciowa': 'Ethernet / BT + Wi-Fi (opcja)',
-            'Cena od': '1 069 zł',
-            'Najlepszy do': 'Następca ZD220t, szybszy, taśma 300 m',
+            'Zastosowanie': 'Następca ZD220t, szybszy, taśma 300 m',
           },
         },
         {
@@ -1220,13 +1165,12 @@ Szukasz tańszej wersji bez ribbona? Sprawdź [Zebra ZD421d](/produkt/zebra-zd42
           specs: {
             'Typ druku': 'Termotransfer + DT',
             'Rozdzielczość': 'do 300 dpi',
-            'Prędkość': '152 mm/s',
+            'Prędkość': '203 dpi: 152 mm/s; 300 dpi: 102 mm/s',
             'Taśma (ribbon)': 'do 300 m (wałek 1")',
             'Interfejs': 'USB, Ethernet, Wi-Fi, BT (opcje)',
             'LCD': 'Brak (5 LED)',
             'Łączność sieciowa': 'Ethernet / BT + Wi-Fi (opcja MCS)',
-            'Cena od': '1 649 zł',
-            'Najlepszy do': 'Duży wolumen, flota, Link-OS, 300 dpi',
+            'Zastosowanie': 'Druk biurkowy, Link-OS, drobny tekst przy 300 dpi',
           },
         },
         {
@@ -1235,25 +1179,24 @@ Szukasz tańszej wersji bez ribbona? Sprawdź [Zebra ZD421d](/produkt/zebra-zd42
           specs: {
             'Typ druku': 'Termotransfer + DT',
             'Rozdzielczość': 'do 300 dpi',
-            'Prędkość': '203 mm/s',
+            'Prędkość': '203 dpi: 203 mm/s; 300 dpi: 152 mm/s',
             'Taśma (ribbon)': 'do 300 m (wałek 1")',
             'Interfejs': 'USB, Ethernet, RS-232, BT LE 5 + Wi-Fi (opcja)',
-            'LCD': 'Kolorowy dotykowy LCD 4,3"',
+            'LCD': 'Kolorowy dotykowy 4,3" (opcja)',
             'Łączność sieciowa': 'Ethernet / BT LE 5 + Wi-Fi (opcja MCS)',
-            'Cena od': '2 264 zł',
-            'Najlepszy do': 'Duże wolumeny, >500 etykiet/dzień',
+            'Zastosowanie': 'Szybszy druk biurkowy, opcje rozbudowy',
           },
         },
       ],
     },
     downloads: [
-      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://serwis-zebry.pl/instrukcje/zebra-zd421t', size: 'Online' },
-      { name: 'Sterowniki Windows', type: 'software', url: 'https://serwis-zebry.pl/sterowniki', size: 'Online' },
-      { name: 'Rozwiązywanie problemów', type: 'manual', url: 'https://serwis-zebry.pl/blog/serwis-drukarki-zebra-zd420-zd421-diagnostyka-naprawa', size: 'Online' },
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zd421t', size: 'Online' },
+      { name: 'Sterowniki Windows', type: 'software', url: 'https://www.serwis-zebry.pl/sterowniki', size: 'Online' },
+      { name: 'Rozwiązywanie problemów', type: 'manual', url: 'https://www.serwis-zebry.pl/blog/serwis-drukarki-zebra-zd420-zd421-diagnostyka-naprawa', size: 'Online' },
     ],
     relatedProducts: ['zebra-zd621t', 'zebra-zd230t', 'honeywell-pc45t', 'honeywell-pc42e-t', 'zebra-zd421d'],
     createdAt: '2024-01-15',
-    updatedAt: '2026-04-08',
+    updatedAt: '2026-09-04',
     sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd400-series/zd421.html',
   },
   {

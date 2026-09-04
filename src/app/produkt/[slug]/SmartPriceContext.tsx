@@ -6,6 +6,7 @@ import { Product } from '@/data/products'
 import type { StockInfo as StockResult } from '@/lib/ingram'
 import { activePromo } from '@/data/promos'
 import { getMagicardStock } from '@/lib/magicard-offer'
+import { selectProductVariant } from '@/lib/product-variant-offers'
 
 interface SmartPriceState {
   /** Wybrany PN do wyświetlenia */
@@ -36,12 +37,14 @@ export function SmartPriceProvider({
   product,
   children,
   forcedPn,
+  initialStock,
 }: {
   product: Product
   children: React.ReactNode
   /** Wymusza wybór konkretnego wariantu (z path URL, np. /produkt/[slug]/[size]/[pn]).
    *  Override'uje ?pn= z searchParams. Używane na statycznej stronie wariantu. */
   forcedPn?: string
+  initialStock?: StockResult[]
 }) {
   // ?pn=... — gdy klient przyszedł z karty konkretnego wariantu, pokazujemy TEN wariant
   const searchParams = useSearchParams()
@@ -67,8 +70,8 @@ export function SmartPriceProvider({
   }, [product])
 
   // Bezpośredni fetch — niezależny od globalnego batchera ProductCard
-  const [fetchedStockData, setStockData] = useState<Map<string, StockResult>>(new Map())
-  const [fetchLoading, setLoading] = useState(partNumbers.length > 0)
+  const [fetchedStockData, setStockData] = useState<Map<string, StockResult>>(() => new Map(initialStock?.map(row => [row.partNumber, row])))
+  const [fetchLoading, setLoading] = useState(initialStock === undefined && partNumbers.length > 0)
   const stockData = manualStockData ?? fetchedStockData
   const loading = manualStockData ? false : fetchLoading
 
@@ -79,7 +82,7 @@ export function SmartPriceProvider({
     if (partNumbers.length === 0) { setLoading(false); return }
 
     let cancelled = false
-    setLoading(true)
+    if (initialStock === undefined) setLoading(true)
 
     // Dziel na chunki po 12 PNow (Jarltech concurrent z limitem 4)
     const chunks: string[][] = []
@@ -117,7 +120,7 @@ export function SmartPriceProvider({
       if (process.env.NODE_ENV === 'development') {
         console.log(`[SmartPrice] Stock loaded: ${map.size} items`)
       }
-      setStockData(map)
+      if (map.size > 0) setStockData(previous => new Map([...Array.from(previous), ...Array.from(map)]))
     }).finally(() => {
       if (!cancelled) setLoading(false)
     })
@@ -127,6 +130,16 @@ export function SmartPriceProvider({
   }, [pnKey, manualStockData])
 
   const state = useMemo<SmartPriceState>(() => {
+    if (product.slug === 'zebra-zd421t') {
+      const selected = selectProductVariant(product, Array.from(stockData.values()), urlPn)
+      const stock = selected ? stockData.get(selected.partNumber) : undefined
+      return {
+        displayedPn: selected?.partNumber,
+        price: stock?.found && stock.price && stock.price > 0 ? stock.price : undefined,
+        variantName: selected?.name,
+        isFallback: false, loading, stockData, partNumbers,
+      }
+    }
     if (allVariants.length === 0) {
       return { displayedPn: undefined, price: product.priceFrom ?? undefined, isFallback: false, loading, stockData, partNumbers, variantName: undefined }
     }
@@ -227,7 +240,7 @@ export function SmartPriceProvider({
       partNumbers,
       variantName: best.name || undefined,
     }
-  }, [allVariants, stockData, loading, partNumbers, product.priceFrom, product.slug, urlPn])
+  }, [allVariants, stockData, loading, partNumbers, product, urlPn])
 
   return (
     <SmartPriceContext.Provider value={state}>

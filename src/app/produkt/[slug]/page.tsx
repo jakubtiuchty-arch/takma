@@ -1,6 +1,10 @@
 import { Metadata } from 'next'
 import { notFound, permanentRedirect } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
+import { getProductStock } from '@/lib/product-stock'
+import { selectProductVariant } from '@/lib/product-variant-offers'
+import LiveProductSchema from './LiveProductSchema'
 import {
   products,
   getProductBySlug,
@@ -74,6 +78,10 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
     }
   }
 
+  const initialStock = await getProductStock(product.slug)
+  const offerVariant = initialStock ? selectProductVariant(product, initialStock, Array.isArray(pn) ? pn[0] : pn) : undefined
+  const offerStock = initialStock?.find(row => row.partNumber === offerVariant?.partNumber)
+  const currentNetPrice = initialStock !== undefined ? (offerStock?.found ? offerStock.price : undefined) : product.priceFrom
   const category = getCategoryById(product.categoryId)
   const manufacturer = getManufacturerById(product.manufacturerId)
   const variant = pickVariant(product, pn)
@@ -99,9 +107,9 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
   }
 
   // SEO: dedykowany opis lub fallback na dynamiczny — uzupełniony rozmiarem wariantu
-  const priceText = product.priceFrom ? ` Od ${product.priceFrom.toLocaleString('pl-PL')} zł netto.` : ''
+  const priceText = currentNetPrice ? ` Od ${currentNetPrice.toLocaleString('pl-PL')} zł netto.` : ''
   const variantsText = !variant && product.variants?.length ? ` ${product.variants.length} wariantów.` : ''
-  const variantPrice = variant?.priceFrom ? ` Cena od ${variant.priceFrom.toLocaleString('pl-PL')} zł netto.` : priceText
+  const variantPrice = initialStock !== undefined ? (currentNetPrice ? ` Cena ${currentNetPrice.toLocaleString('pl-PL')} zł netto.` : '') : variant?.priceFrom ? ` Cena od ${variant.priceFrom.toLocaleString('pl-PL')} zł netto.` : priceText
   const variantPrefix = variant
     ? `${product.name}${variantSize ? ` w rozmiarze ${variantSize}` : ''}${variantPN ? ` (PN: ${variantPN})` : ''}. `
     : ''
@@ -153,16 +161,16 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
     description: metaDescription,
     openGraph: {
       title: title,
-      description: smartTruncate(ogDescription, 200),
+      description: product.slug === 'zebra-zd421t' ? metaDescription : smartTruncate(ogDescription, 200),
       type: 'website',
       locale: 'pl_PL',
       siteName: 'TAKMA',
-      images: ogImage ? [{ url: ogImage, width: 1200, height: 630, alt: variant ? `${product.name}${variantSize ? ` ${variantSize}` : ''}` : product.name }] : undefined,
+      images: ogImage ? [{ url: ogImage, width: 1200, height: product.slug === 'zebra-zd421t' ? 1200 : 630, alt: variant ? `${product.name}${variantSize ? ` ${variantSize}` : ''}` : product.name }] : undefined,
       url: canonical,
     },
     other: {
-      ...(product.priceFrom ? {
-        'product:price:amount': magicardOffer?.price ?? product.priceFrom.toFixed(2),
+      ...(currentNetPrice ? {
+        'product:price:amount': initialStock !== undefined ? (Math.round(currentNetPrice * 123) / 100).toFixed(2) : magicardOffer?.price ?? currentNetPrice.toFixed(2),
         'product:price:currency': 'PLN',
       } : {}),
     },
@@ -197,6 +205,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   if (!product) {
     notFound()
   }
+
+  const initialStock = await getProductStock(product.slug)
+  const liveOffers = initialStock !== undefined
 
   // Instrukcja obsługi dla tego produktu (jeśli istnieje w /instrukcje)
   const manual = getManualByProductSlug(product.slug)
@@ -565,7 +576,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   }
 
   // JSON-LD: FAQPage — structured data for product FAQ
-  const faqJsonLd = product.faq && product.faq.length > 0 ? {
+  const faqJsonLd = !liveOffers && product.faq && product.faq.length > 0 ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: product.faq.map(item => ({
@@ -578,18 +589,51 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     })),
   } : null
 
+  const productHeading = (
+    <div className="flex items-start justify-between gap-4">
+              <div className="mb-4">
+                <h1 className="text-2xl xs:text-3xl lg:text-4xl font-bold text-gray-900">
+                  {product.seoH1 || product.name}
+                  {selectedSize && <span className="text-gray-700"> {selectedSize}</span>}
+                </h1>
+                {(primarySubcategory || category) && (
+                  <p className="text-sm xs:text-base lg:text-lg font-medium text-gray-500 mt-1">
+                    {primarySubcategory?.name || category?.name}
+                  </p>
+                )}
+              </div>
+              {manufacturer?.logo && (
+                <Link
+                  href={['zebra', 'honeywell', 'newland'].includes(manufacturer.slug)
+                    ? `/${manufacturer.slug}`
+                    : `/katalog?producent=${manufacturer.slug}`}
+                  className="flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity mt-1"
+                  title={`Wszystkie produkty ${manufacturer.name}`}
+                >
+                  <img
+                    src={manufacturer.logo}
+                    alt={`Logo ${manufacturer.name}`}
+                    className={manufacturer.slug === 'magicard'
+                      ? 'h-12 lg:h-[3.6rem] w-auto'
+                      : 'h-10 lg:h-12 w-auto'}
+                  />
+                </Link>
+              )}
+            </div>
+  )
+
   return (
-    <SmartPriceProvider product={product}>
+    <SmartPriceProvider key={product.slug} product={product} initialStock={initialStock}>
       <ViewItemTracker
         itemId={product.id}
         itemName={product.name}
         itemCategory={product.categoryId}
         price={product.priceFrom}
       />
-      <script
+      {liveOffers ? <LiveProductSchema product={product} /> : <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
-      />
+      />}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
@@ -653,50 +697,23 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         </nav>
 
         {/* Product main section */}
-        <div className="grid lg:grid-cols-2 gap-6 lg:gap-12">
+        <div className={liveOffers ? "grid lg:grid-cols-2 gap-6 lg:gap-x-12 lg:gap-y-2" : "grid lg:grid-cols-2 gap-6 lg:gap-12"}>
+          {liveOffers && <div className="order-first min-w-0 lg:col-start-2 lg:row-start-1">{productHeading}</div>}
           {/* Gallery */}
-          <div className="min-w-0">
+          <div className={liveOffers ? "min-w-0 lg:col-start-1 lg:row-start-1 lg:row-span-2" : "min-w-0"}>
             <ProductGallery images={product.images} productName={product.name} imageDescriptions={product.imageDescriptions} />
           </div>
 
           {/* Product info */}
-          <div className="min-w-0 lg:sticky lg:top-24 lg:self-start lg:pt-10">
+          <div className={liveOffers ? "min-w-0 lg:col-start-2 lg:row-start-2 lg:self-start" : "min-w-0 lg:sticky lg:top-24 lg:self-start lg:pt-10"}>
             {/* Title + Manufacturer logo */}
-            <div className="flex items-start justify-between gap-4">
-              <div className="mb-4">
-                <h1 className="text-2xl xs:text-3xl lg:text-4xl font-bold text-gray-900">
-                  {product.seoH1 || product.name}
-                  {selectedSize && <span className="text-gray-700"> {selectedSize}</span>}
-                </h1>
-                {(primarySubcategory || category) && (
-                  <p className="text-sm xs:text-base lg:text-lg font-medium text-gray-500 mt-1">
-                    {primarySubcategory?.name || category?.name}
-                  </p>
-                )}
-              </div>
-              {manufacturer?.logo && (
-                <Link
-                  href={['zebra', 'honeywell', 'newland'].includes(manufacturer.slug)
-                    ? `/${manufacturer.slug}`
-                    : `/katalog?producent=${manufacturer.slug}`}
-                  className="flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity mt-1"
-                  title={`Wszystkie produkty ${manufacturer.name}`}
-                >
-                  <img
-                    src={manufacturer.logo}
-                    alt={`Logo ${manufacturer.name}`}
-                    className={manufacturer.slug === 'magicard'
-                      ? 'h-12 lg:h-[3.6rem] w-auto'
-                      : 'h-10 lg:h-12 w-auto'}
-                  />
-                </Link>
-              )}
-            </div>
+            {!liveOffers && productHeading}
 
             {/* Availability — z SmartPriceContext (jedno źródło danych) */}
             <div className="mb-6">
               <ContextAvailabilityBadge
                 staticAvailability={product.availability}
+                requireConfirmedStock={liveOffers}
                 treatUnknownAsUnavailable={product.categoryId === 'materialy-eksploatacyjne'}
               />
             </div>
@@ -1127,7 +1144,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                   </svg>
-                  Aktualizacja: {new Date().toLocaleDateString('pl-PL', { month: 'long', year: 'numeric' })}
+                  Aktualizacja: {new Date(product.updatedAt || product.createdAt).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}
                 </span>
               </div>
             </section>
@@ -1166,18 +1183,18 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 <div className="bg-[#A8F000] px-6 py-5 text-center">
                   <h3 className="text-lg font-bold text-gray-900">Certyfikaty Zebra</h3>
                   <p className="text-sm text-gray-800 mt-1">
-                    TAKMA jako jeden z nielicznych partnerów Zebra w Polsce posiada 3 oficjalne certyfikaty potwierdzające najwyższe kompetencje w sprzedaży i serwisie.
+                    Certyfikaty potwierdzają status partnerski TAKMA oraz specjalizacje w programie Zebra. Szczegóły znajdziesz w katalogu partnerów producenta.
                   </p>
                 </div>
-                <div className="bg-gray-50 px-6 py-4 flex items-center justify-center gap-4 sm:gap-6">
+                <div className="bg-gray-50 px-6 py-4 flex flex-wrap items-center justify-center gap-4 sm:gap-6">
                   <div className="bg-white rounded-xl px-3 py-2 shadow-sm">
-                    <img src="/images/certyfikat-1-zebra.png" alt="Zebra Premier Solution Partner — Printer Repair Specialist" className="h-10 sm:h-12 w-auto" />
+                    <Image width={1823} height={540} sizes="162px" loading="lazy" src="/images/certyfikat-1-zebra.png" alt="Zebra Premier Solution Partner — Printer Repair Specialist" className="h-10 sm:h-12 w-auto" />
                   </div>
                   <a href="https://www.zebra.com/pl/pl/partners/partner-application-locator/partner-details.html?id=001i0000019OwOUAA0&viewType=nav" target="_blank" rel="noopener" className="bg-white rounded-xl px-3 py-2 shadow-sm hover:shadow-md transition-shadow">
-                    <img src="/images/certyfikat-3-zebra.png" alt="Zebra Premier Solution Partner" className="h-10 sm:h-12 w-auto" />
+                    <Image width={1823} height={540} sizes="162px" loading="lazy" src="/images/certyfikat-3-zebra.png" alt="Zebra Premier Solution Partner" className="h-10 sm:h-12 w-auto" />
                   </a>
                   <div className="bg-white rounded-xl px-3 py-2 shadow-sm">
-                    <img src="/images/certyfikat-2-zebra.png" alt="Zebra Premier Solution Partner — Public Sector Specialist" className="h-10 sm:h-12 w-auto" />
+                    <Image width={1823} height={540} sizes="162px" loading="lazy" src="/images/certyfikat-2-zebra.png" alt="Zebra Premier Solution Partner — Public Sector Specialist" className="h-10 sm:h-12 w-auto" />
                   </div>
                 </div>
               </div>

@@ -300,6 +300,7 @@ export default function Navbar() {
                                       className="flex items-center justify-center px-3 py-2 rounded-lg hover:bg-primary-50 transition-colors w-full"
                                     >
                                       <img
+                                        loading="lazy"
                                         src={brand.logo}
                                         alt={brand.name}
                                         className={clsx(brand.logoClassName || 'h-[25px]', 'w-auto opacity-70')}

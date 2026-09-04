@@ -13,6 +13,7 @@ export default function ContextAvailabilityBadge({
   staticAvailability,
   treatUnknownAsUnavailable = false,
   feminine = false,
+  requireConfirmedStock = false,
 }: {
   staticAvailability: 'available' | 'on-order' | 'unavailable'
   /** Gdy true — API `found:false` (brak danych z dystrybutora) → "Niedostępny" zamiast
@@ -22,8 +23,15 @@ export default function ContextAvailabilityBadge({
   treatUnknownAsUnavailable?: boolean
   /** Forma żeńska etykiety (np. taśma → „Dostępna / Niedostępna"). */
   feminine?: boolean
+  requireConfirmedStock?: boolean
 }) {
   const { stockData, loading, displayedPn, partNumbers } = useSmartPrice()
+  if (requireConfirmedStock) {
+    const stock = displayedPn ? stockData.get(displayedPn) : undefined
+    if (loading || !stock?.found) return <Badge variant="warning">Dostępność do potwierdzenia</Badge>
+    const availability = stock.availability
+    return <Badge variant={config[availability].variant}>{config[availability].label}</Badge>
+  }
 
   // Forma żeńska (taśma): każdy stan poza „dostępna" pokazujemy jako „Niedostępna".
   const labelFor = (a: 'available' | 'on-order' | 'unavailable') =>

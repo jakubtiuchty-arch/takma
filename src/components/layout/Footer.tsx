@@ -123,7 +123,7 @@ export default function Footer() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8 lg:gap-10">
             {/* Produkty */}
             <div className="text-center">
-              <h4 className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-3 sm:mb-5">Produkty</h4>
+              <h3 className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-3 sm:mb-5">Produkty</h3>
               <ul className="space-y-2 sm:space-y-3">
                 {footerLinks.produkty.map((link) => (
                   <li key={link.href}>
@@ -137,7 +137,7 @@ export default function Footer() {
 
             {/* Producenci */}
             <div className="text-center">
-              <h4 className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-3 sm:mb-5">Producenci</h4>
+              <h3 className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-3 sm:mb-5">Producenci</h3>
               <ul className="space-y-2 sm:space-y-3">
                 {footerLinks.producenci.map((link) => (
                   <li key={link.href}>
@@ -151,7 +151,7 @@ export default function Footer() {
 
             {/* Landingi produktowe */}
             <div className="text-center">
-              <h4 className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-3 sm:mb-5">Landingi</h4>
+              <h3 className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-3 sm:mb-5">Landingi</h3>
               <ul className="space-y-2 sm:space-y-3">
                 {footerLinks.landingi.map((link) => (
                   <li key={link.href}>
@@ -165,11 +165,11 @@ export default function Footer() {
 
             {/* Serwis-Zebry.pl */}
             <div className="text-center">
-              <h4 className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-3 sm:mb-5">
+              <h3 className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-3 sm:mb-5">
                 <a href="https://serwis-zebry.pl" target="_blank" rel="noopener" className="hover:text-white transition-colors">
                   Serwis-Zebry.pl
                 </a>
-              </h4>
+              </h3>
               <ul className="space-y-2 sm:space-y-3">
                 {footerLinks.serwis.map((link) => (
                   <li key={link.href}>
@@ -183,7 +183,7 @@ export default function Footer() {
 
             {/* Firma */}
             <div className="text-center">
-              <h4 className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-3 sm:mb-5">Firma</h4>
+              <h3 className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-3 sm:mb-5">Firma</h3>
               <ul className="space-y-2 sm:space-y-3">
                 {footerLinks.firma.map((link) => (
                   <li key={link.href}>
@@ -197,7 +197,7 @@ export default function Footer() {
 
             {/* Dostępność */}
             <div className="text-center flex flex-col items-center">
-              <h4 className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-3 sm:mb-5">Dostępność</h4>
+              <h3 className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-3 sm:mb-5">Dostępność</h3>
               <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-center gap-2 sm:gap-3">
                   <span className="w-7 sm:w-8 h-7 sm:h-8 bg-white/5 rounded-lg flex items-center justify-center shrink-0">

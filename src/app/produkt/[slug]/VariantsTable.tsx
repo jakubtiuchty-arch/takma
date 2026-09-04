@@ -242,10 +242,10 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   const liveSignal = !!stock && (stock.found || stock.stockPL > 0 || stock.stockDE > 0 || stock.inDelivery > 0)
   const avail = liveSignal
     ? availabilityConfig[stock!.availability]
-    : availabilityConfig[variant.availability]
-  const effectiveAvailability = liveSignal ? stock!.availability : variant.availability
+    : productSlug === 'zebra-zd421t' ? { label: 'Do potwierdzenia', variant: 'warning' as const } : availabilityConfig[variant.availability]
+  const effectiveAvailability = liveSignal ? stock!.availability : productSlug === 'zebra-zd421t' ? 'unavailable' : variant.availability
   const isUnavailable = !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
-  const livePrice = liveSignal && stock!.price ? stock!.price : variant.priceFrom
+  const livePrice = liveSignal && stock!.price ? stock!.price : productSlug === 'zebra-zd421t' ? undefined : variant.priceFrom
   const cartPrice = variant.promoPrice || livePrice
 
   return (
@@ -334,10 +334,10 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
   const liveSignal = !!stock && (stock.found || stock.stockPL > 0 || stock.stockDE > 0 || stock.inDelivery > 0)
   const avail = liveSignal
     ? availabilityConfig[stock!.availability]
-    : availabilityConfig[variant.availability]
-  const effectiveAvailability = liveSignal ? stock!.availability : variant.availability
+    : productSlug === 'zebra-zd421t' ? { label: 'Do potwierdzenia', variant: 'warning' as const } : availabilityConfig[variant.availability]
+  const effectiveAvailability = liveSignal ? stock!.availability : productSlug === 'zebra-zd421t' ? 'unavailable' : variant.availability
   const isUnavailable = !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
-  const livePrice = liveSignal && stock!.price ? stock!.price : variant.priceFrom
+  const livePrice = liveSignal && stock!.price ? stock!.price : productSlug === 'zebra-zd421t' ? undefined : variant.priceFrom
   const cartPrice = variant.promoPrice || livePrice
 
   return (
