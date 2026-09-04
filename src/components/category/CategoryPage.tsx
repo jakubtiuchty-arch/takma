@@ -31,7 +31,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
       name: f.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: f.answer,
+        text: f.answer.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1'),
       },
     })),
   } : null
@@ -65,7 +65,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
     description: category.seoDescription,
     url: `https://www.takma.com.pl/${category.slug}`,
     numberOfItems: products.length,
-    dateModified: '2026-02-22',
+    dateModified: content?.updatedAt || '2026-02-22',
     mainEntity: {
       '@type': 'ItemList',
       itemListElement: products.map((p, i) => ({
@@ -223,6 +223,46 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
             {/* Rich content sections */}
             {content && (
               <div className="mt-12 space-y-10">
+                {content.modelComparison && (
+                  <section aria-labelledby="model-comparison-heading">
+                    <h2 id="model-comparison-heading" className="text-2xl font-bold text-gray-900 mb-4">
+                      {content.modelComparison.heading}
+                    </h2>
+                    <div
+                      role="region"
+                      aria-label={content.modelComparison.heading}
+                      tabIndex={0}
+                      className="overflow-x-auto rounded-xl border border-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-600"
+                    >
+                      <table className="w-full min-w-[640px] text-left text-sm">
+                        <thead className="bg-gray-900 text-white">
+                          <tr>
+                            <th scope="col" className="px-5 py-4 font-semibold">Model</th>
+                            <th scope="col" className="px-5 py-4 font-semibold">Druk</th>
+                            <th scope="col" className="px-5 py-4 font-semibold">Podajnik</th>
+                            <th scope="col" className="px-5 py-4 font-semibold">Łączność</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-200">
+                          {content.modelComparison.models.map((model) => (
+                            <tr key={model.href} className="even:bg-gray-50">
+                              <th scope="row" className="px-5 py-4 font-semibold whitespace-nowrap">
+                                <Link href={model.href} className="text-primary-600 hover:text-primary-800 hover:underline">
+                                  {model.name}
+                                </Link>
+                              </th>
+                              <td className="px-5 py-4 text-gray-600">{model.printing}</td>
+                              <td className="px-5 py-4 text-gray-600 whitespace-nowrap">{model.feeder}</td>
+                              <td className="px-5 py-4 text-gray-600">{model.connectivity}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                    <p className="mt-3 text-sm leading-relaxed text-gray-500">{content.modelComparison.note}</p>
+                  </section>
+                )}
+
                 {/* Definition */}
                 <section className="definition-content">
                   <h2 className="text-2xl font-bold text-gray-900 mb-3">{content.definition.heading}</h2>
@@ -259,13 +299,13 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
 
                 {/* Expert Authority */}
                 <section className="bg-gray-50 rounded-xl p-6">
-                  <h2 className="text-lg font-bold text-gray-900 mb-2">Dlaczego TAKMA? Ekspert na rynku AutoID w Polsce</h2>
+                  <h2 className="text-lg font-bold text-gray-900 mb-2">{content.sectionHeadings?.expertAuthority || 'Dlaczego TAKMA? Ekspert na rynku AutoID w Polsce'}</h2>
                   <p className="text-gray-600 leading-relaxed text-sm sm:text-justify">{content.expertAuthority}</p>
                 </section>
 
                 {/* Technical Deep-Dive */}
                 <section>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-3">Szczegóły techniczne</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-3">{content.sectionHeadings?.technicalDeepDive || 'Szczegóły techniczne'}</h2>
                   <div className="text-gray-600 leading-relaxed space-y-3 sm:text-justify">
                     {content.technicalDeepDive.split('\n\n').map((paragraph, i) => (
                       <p key={i}>{paragraph}</p>
@@ -275,7 +315,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
 
                 {/* Use Cases */}
                 <section>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">Scenariusze zastosowań</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.sectionHeadings?.useCases || 'Scenariusze zastosowań'}</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {content.useCases.map((uc, i) => (
                       <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">
@@ -304,10 +344,10 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
                 {/* Comparisons */}
                 {content.comparisons.length > 0 && (
                   <section>
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Porównania</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.sectionHeadings?.comparisons || 'Porównania'}</h2>
                     <div className="space-y-4">
                       {content.comparisons.map((comp, i) => (
-                        <div key={i} className="border-l-4 border-primary-500 pl-4">
+                        <div key={i} className={slug === 'drukarki-kart' ? undefined : 'border-l-4 border-primary-500 pl-4'}>
                           <h3 className="font-semibold text-gray-900 mb-1">{comp.title}</h3>
                           <p className="text-gray-600 text-sm leading-relaxed sm:text-justify">{comp.content}</p>
                         </div>
@@ -319,7 +359,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
                 {/* HowTo Steps */}
                 {content.howToSteps?.length > 0 && (
                   <section>
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Jak wybrać i wdrożyć {category.name.toLowerCase()}?</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.sectionHeadings?.howToSteps || `Jak wybrać i wdrożyć ${category.name.toLowerCase()}?`}</h2>
                     <ol className="space-y-4">
                       {content.howToSteps.map((step, i) => (
                         <li key={i} className="flex gap-4">

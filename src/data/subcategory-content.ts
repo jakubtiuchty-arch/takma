@@ -28,6 +28,19 @@ export interface TcoComparison {
 }
 
 export interface SubcategoryRichContent {
+  updatedAt?: string
+  sectionHeadings?: {
+    expertAuthority?: string
+    technicalDeepDive?: string
+    useCases?: string
+    comparisons?: string
+    howToSteps?: string
+  }
+  modelComparison?: {
+    heading: string
+    note: string
+    models: { name: string; href: string; printing: string; feeder: string; connectivity: string }[]
+  }
   definition: { heading: string; content: string }
   buyingGuide: { heading: string; items: string[] }
   expertAuthority: string
@@ -1415,88 +1428,102 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
     ],
   },
   'drukarki-kart': {
-    definition: {
-      heading: 'Co to jest drukarka kart plastikowych?',
-      content: 'Drukarka kart plastikowych (ang. card printer) to specjalistyczne urządzenie do personalizacji kart PVC w standardzie CR-80 (85,6 × 54 mm, grubość 0,76 mm). Drukuje pełnokolorowe zdjęcia, logo, tekst i kody kreskowe na kartach identyfikacyjnych, kartach dostępu, legitymacjach, kartach lojalnościowych i przepustkach. Dostępne są dwie technologie druku: termosublimacja (dye-sublimation / direct-to-card) — taśma barwiąca YMCKO sublimuje bezpośrednio na kartę, oraz retransfer (reverse transfer) — obraz drukowany jest najpierw na folię retransferową, a następnie przenoszony na kartę. W katalogu TAKMA znajdziesz kompaktowy Magicard Pronto100 z zabezpieczeniami HoloKote i Digital Shredding, a także modele Zebra ZC100 i ZC300 z opcjami kodowania kart.',
+    updatedAt: '2026-09-04',
+    sectionHeadings: {
+      expertAuthority: 'Pomożemy dobrać drukarkę i materiały',
+      technicalDeepDive: 'Co warto wiedzieć o druku i kodowaniu kart',
+      useCases: 'Gdzie przydaje się własna drukarka kart?',
+      comparisons: 'Zebra czy Magicard?',
+      howToSteps: 'Od wyboru drukarki do pierwszej karty',
     },
-    buyingGuide: {
-      heading: 'Jak wybrać drukarkę kart plastikowych?',
-      items: [
-        'Określ nakład i sposób pracy — do identyfikatorów drukowanych na bieżąco wybierz kompaktowy Magicard Pronto100 lub Zebra ZC100; przy większych partiach i potrzebie druku dwustronnego rozważ Zebra ZC300.',
-        'Jednostronna czy dwustronna — jednostronna wystarcza do prostych identyfikatorów (zdjęcie + imię). Dwustronna potrzebna, gdy na odwrocie drukujesz kod kreskowy, dane kontaktowe lub regulamin.',
-        'Termosublimacja czy retransfer — termosublimacja (ZC100, ZC300, ZC350): tańsza, szybsza, 300 dpi, wystarczy dla 95% zastosowań. Retransfer (ZXP Series 7/9): druk edge-to-edge, 600 dpi, photo-quality — do dokumentów tożsamości, kart finansowych i high-security ID.',
-        'Opcje kodowania — pasek magnetyczny HiCo (hotele, kontrola dostępu) lub LoCo (karty lojalnościowe); RFID/NFC 13,56 MHz Mifare (e-legitymacje, kontrola dostępu); 125 kHz HID Prox (starsze systemy); smart card kontaktowy ISO 7816 (certyfikaty cyfrowe).',
-        'Łączność — USB (standard w każdym modelu), Ethernet (druk sieciowy, wiele stanowisk), Wi-Fi (opcja w ZC300/ZC350 — elastyczność lokalizacji).',
-        'Koszt eksploatacji (TCO) — taśma YMCKO 200–500 wydruków (ok. 1,25 zł/karta) + karta PVC blank (ok. 0,50 zł/szt.) = ok. 2 zł/karta. Porównaj z outsourcingiem: 5–10 zł/karta. Próg opłacalności: ok. 500 kart.',
+    modelComparison: {
+      heading: 'Porównaj drukarki kart w naszej ofercie',
+      note: 'Magicard 300 oferujemy w wersji S Duo, a model 600 w wersji Duo. Obie drukują automatycznie po dwóch stronach. Przy Zebrze ZC300 wybierz odpowiedni wariant.',
+      models: [
+        { name: 'Magicard Pronto100', href: '/produkt/magicard-pronto100', printing: 'Jednostronny', feeder: '50 kart', connectivity: 'USB, Ethernet' },
+        { name: 'Magicard 300', href: '/produkt/magicard-300', printing: 'Dwustronny', feeder: '100 kart', connectivity: 'USB, Ethernet' },
+        { name: 'Magicard 600 Duo', href: '/produkt/magicard-600-duo', printing: 'Dwustronny', feeder: '100 kart', connectivity: 'USB, Ethernet, Wi-Fi' },
+        { name: 'Zebra ZC100', href: '/produkt/zebra-zc100', printing: 'Jednostronny', feeder: '100 kart', connectivity: 'USB; Ethernet opcjonalnie' },
+        { name: 'Zebra ZC300', href: '/produkt/zebra-zc300', printing: 'Jedno- lub dwustronny', feeder: '100 kart', connectivity: 'USB, Ethernet; Wi-Fi opcjonalnie' },
       ],
     },
-    expertAuthority: 'TAKMA to autoryzowany Premier Business Partner Zebra Technologies z 25-letnim doświadczeniem w branży AutoID. Jako Printer Repair Specialist zapewniamy nie tylko sprzedaż, ale także serwis pogwarancyjny, konfigurację kodowania RFID i wsparcie w integracji z systemami kontroli dostępu. Pomagamy dobrać drukarkę kart do konkretnego zastosowania — od prostych identyfikatorów pracowniczych po zaawansowane karty zbliżeniowe z kodowaniem Mifare DESFire.',
-    technicalDeepDive: 'Druk termosublimacyjny (direct-to-card): taśma YMCKO (Yellow-Magenta-Cyan-blacK-Overlay) przesuwa się nad głowicą termiczną o rozdzielczości 300 dpi (11,8 dot/mm). Każdy panel barwny sublimuje kolejno na powierzchnię karty PVC, a panel Overlay nakłada warstwę ochronną UV. Cykl druku jednej karty kolorowej (YMCKO, jednostronnie): ok. 24 s w ZC100, ok. 25 s w ZC300. Monochromatyczny (panel K): ok. 4–5 s/karta. Głowica dotyka karty — żywotność ok. 1–2 mln wydruków.\n\nDruk retransferowy (reverse transfer): obraz drukowany jest najpierw na film retransferowy (przezroczysty), a następnie termicznie laminowany na kartę. Głowica NIE dotyka karty → dłuższa żywotność. Druk edge-to-edge (bez białych ramek), rozdzielczość do 600 dpi — photo-quality porównywalna z drukiem offsetowym. Idealny do kart smart card z wypukłym chipem (termosublimacja źle radzi sobie z nierówną powierzchnią).\n\nKodowanie: enkoder magnetyczny zapisuje dane na 3 ścieżkach paska HiCo (2750 Oe) lub LoCo (300 Oe). Enkoder RFID/NFC komunikuje się z chipem w karcie przez antenę wbudowaną w drukarkę — obsługuje Mifare Classic 1K/4K, Mifare DESFire EV1/EV2/EV3, NTAG 213/215/216, HID iCLASS, HID Prox. Enkoder smart card kontaktowy (ISO 7816) łączy się przez styki złote na karcie.\n\nKoszt eksploatacji ZC300 (YMCKO dwustronnie): taśma 800300-360EM (300 wydruków) ok. 350 zł → 1,17 zł/odcisk × 2 strony = 2,34 zł + karta PVC blank 0,50 zł + amortyzacja drukarki (5 000 zł / 10 000 kart = 0,50 zł) = ok. 3,34 zł/karta dwustronna kolorowa. Outsourcing tego samego: 8–15 zł/karta.',
+    definition: {
+      heading: 'Własne identyfikatory, bez zamawiania całej partii',
+      content: 'Nowy pracownik, zgubiona przepustka, kolejny uczestnik szkolenia. Z własną drukarką przygotujesz potrzebną kartę na miejscu, bez czekania na dostawę z drukarni. Możesz nanieść zdjęcie, logo, dane właściciela i kod kreskowy.\n\nDrukarki z tej kategorii nanoszą obraz bezpośrednio na kartę. Obsługują popularny format CR-80, czyli 85,6 × 54 mm. Przed zakupem kart sprawdź jeszcze ich materiał i grubość: dopuszczalne zakresy różnią się między modelami.',
+    },
+    buyingGuide: {
+      heading: 'Która drukarka pasuje do Twojej pracy?',
+      items: [
+        'Na niewielkie stanowisko — Magicard Pronto100 zajmuje mało miejsca i ma podajnik na 50 kart. Drukuje jednostronnie, a USB i Ethernet są w standardzie. Do prostych identyfikatorów możesz też wybrać Zebrę ZC100 z podajnikiem na 100 kart.',
+        'Do regularnego druku obu stron — Magicard 300 S Duo sam obraca kartę. Na rewersie umieścisz kod, dane kontaktowe lub regulamin. Podajnik mieści 100 kart; producent przewiduje pracę przy nakładach do około 10 000 kart rocznie.',
+        'Gdy potrzebujesz Wi-Fi i drobnego tekstu — Magicard 600 Duo ma łączność bezprzewodową w standardzie. Druk czarny do 600 × 300 dpi przydaje się przy małych literach i numerach. Kolorowe zdjęcia drukuje w 300 dpi.',
+        'Do kart wymagających kodowania — sprawdź warianty Zebra ZC300 z odpowiednim enkoderem. Sam nadruk na karcie RFID nie zapisuje danych w jej chipie. Konfigurację drukarki trzeba dopasować do kart i systemu, w którym będą używane.',
+        'Zabezpieczenie identyfikatora — wszystkie trzy modele Magicard mają HoloKote i Digital Shredding. Pronto100 korzysta z gotowych znaków wodnych, a modele 300 i 600 pozwalają używać własnych wzorów.',
+      ],
+    },
+    expertAuthority: 'Podaj nam, ile kart drukujesz w miesiącu, co ma się znaleźć na odwrocie i czy potrzebujesz kodowania. Na tej podstawie dobierzemy model oraz materiały. TAKMA działa w branży AutoID od 25 lat. Oferujemy drukarki Zebra i Magicard, pomagamy w konfiguracji, a urządzenia Zebra obsługujemy również serwisowo.',
+    technicalDeepDive: 'Do kolorowego zdjęcia i firmowej grafiki służy taśma YMCKO. Jej panele nanoszą kolory, czarny tekst i warstwę ochronną. Jeśli na karcie mają być tylko numery, nazwisko albo kod kreskowy, dobierz taśmę monochromatyczną zamiast zużywać kolorową.\n\nHoloKote to znak wodny widoczny pod kątem, nanoszony w zwykłym cyklu druku Magicard. Nie wymaga osobnego laminatora. Digital Shredding dotyczy czegoś innego: po zakończeniu zadania sprawia, że dane przesłane do drukarki stają się nieczytelne. To zabezpieczenie danych w urządzeniu, a nie kodowanie karty.\n\nKodowanie zapisuje informacje w chipie lub na pasku magnetycznym. Wymaga zgodnego enkodera, kart i oprogramowania. Nie zakładaj, że każda drukarka z danej serii ma taki moduł. Oferowany Magicard 600 Duo o numerze 3652-5021/3 jest wariantem bez enkodera.',
     useCases: [
       {
-        title: 'Kontrola dostępu i identyfikatory pracownicze',
-        description: 'Karty dostępu z kolorowym zdjęciem, imieniem, stanowiskiem i chipem RFID (Mifare lub HID Prox). Nowy pracownik = karta tego samego dnia. Zebra ZC300 z enkoderem RFID 13,56 MHz + oprogramowanie CardStudio = kompletne stanowisko do personalizacji kart w dziale HR.',
+        title: 'Recepcja i dział kadr',
+        description: 'Identyfikator dla nowej osoby albo duplikat zgubionej karty przygotujesz wtedy, gdy jest potrzebny. Do nadruku jednej strony wystarczy Pronto100 lub ZC100. Jeśli rewers też zawiera dane, wybierz wariant dwustronny.',
       },
       {
-        title: 'Hotele i recepcje — key cards',
-        description: 'Karty hotelowe z logo i numerem pokoju. Kodowanie magnetyczne HiCo lub RFID 13,56 MHz. Gość otrzymuje spersonalizowaną kartę przy check-in. Zebra ZC100 z enkoderem magnetycznym — kompaktowa, prosta obsługa, wystarczająca dla hoteli do 100 pokoi.',
+        title: 'Szkoła i uczelnia',
+        description: 'Przy partii identyfikatorów wygodny będzie podajnik na 100 kart i automatyczny druk obu stron. Tak pracują Magicard 300 S Duo i 600 Duo. Jeżeli karta ma działać w bibliotece lub kontroli dostępu, dobór kodowania jest osobnym krokiem.',
       },
       {
-        title: 'Szkoły i uczelnie — e-legitymacje',
-        description: 'E-legitymacje szkolne i studenckie ze zdjęciem, hologramem i chipem Mifare DESFire do kontroli dostępu, stołówki i biblioteki. Druk dwustronny (awers: dane ucznia, rewers: kod kreskowy + regulamin). Zebra ZC300 Dual-sided z enkoderem contactless — druk sezonowy na początku roku szkolnego.',
+        title: 'Klub, sklep i punkt usługowy',
+        description: 'Na karcie członkowskiej lub lojalnościowej możesz wydrukować logo, numer i kod kreskowy. Pronto100 pozwala przygotowywać takie karty na bieżąco, przy obsłudze klienta.',
       },
       {
-        title: 'Retail i usługi — karty lojalnościowe',
-        description: 'Karty rabatowe, karnety fitness i karty członkowskie klubu z kodem kreskowym. Branding: logo, kolory firmowe, indywidualny numer. Magicard Pronto100 lub Zebra ZC100 sprawdzą się w małych sieciach, kawiarniach, restauracjach i salonach usługowych.',
+        title: 'Hotel i kontrola dostępu',
+        description: 'Najpierw sprawdź typ kart obsługiwanych przez zamki lub czytniki. Dopiero potem wybierz drukarkę i enkoder. Ładny nadruk nie wystarczy, żeby karta zaczęła otwierać drzwi.',
       },
     ],
     uniqueInsights: {
-      heading: 'Praktyczne wskazówki od ekspertów TAKMA',
+      heading: 'Taśmy i czyszczenie: dobierz je razem z drukarką',
       items: [
         {
-          title: 'ROI własnej drukarki kart — kiedy się opłaca?',
-          text: 'Próg rentowności: ok. 500 kart. Przy nakładzie 1 000 kart/rok oszczędność vs outsourcing wynosi 3 000–8 000 zł rocznie. Dodatkowa wartość: pełna kontrola danych poufnych (RODO), druk on-demand (karta w 30 sekund), brak minimum zamówienia i szybka wymiana zgubionej karty.',
+          title: 'Do każdej serii pasują inne taśmy kolorowe',
+          text: 'Pronto100 korzysta z taśm YMCKO na 100 lub 200 wydruków. Do Magicard 300 mamy YMCKO na 300 wydruków i czarną KO na 600. Dla 600 Duo dostępne są także taśmy YMCKOK: kolor na przodzie, czarny nadruk na odwrocie. Zgodne materiały znajdziesz przy każdym produkcie.',
         },
         {
-          title: 'HiCo vs LoCo — który pasek magnetyczny wybrać?',
-          text: 'HiCo (High Coercivity, 2750 Oe): odporny na rozmagnesowanie, trwalszy — standard dla hoteli i kontroli dostępu (karta używana wielokrotnie dziennie). LoCo (Low Coercivity, 300 Oe): tańszy, łatwiej się rozmagnesowuje — wystarczający do kart lojalnościowych i gift cards (rzadkie użycie).',
+          title: 'Zestaw czyszczący też musi pasować',
+          text: 'Do Pronto100 służy E9100, a do Magicard 300 i 600 zestaw 3633-0053. Czyść urządzenie zgodnie z jego instrukcją, właściwymi materiałami. Kurz na kartach i rolkach pogarsza nadruk i może uszkodzić głowicę.',
         },
         {
-          title: 'Taśma YMCKO — co oznaczają litery?',
-          text: 'Y = Yellow, M = Magenta, C = Cyan, K = blacK (kontur, tekst, kody), O = Overlay (warstwa ochronna UV). Jedno przejście taśmy = jeden pełnokolorowy wydruk. Taśma 200-odciskowa (ZC100) lub 300-odciskowa (ZC300) — nie da się wydrukować więcej niż paneli na taśmie, nawet jeśli drukowałeś tylko czarno-białe karty.',
-        },
-        {
-          title: 'Czyszczenie drukarki kart — klucz do jakości',
-          text: 'Zalecane czyszczenie co 1 000 kart lub co wymianę taśmy. Zestaw czyszczący Zebra (105999-302 dla ZC100/ZC300): karta czyszcząca + rolki + chusteczki IPA. Brud na rolkach = smugi na kartach i skrócona żywotność głowicy. Czas czyszczenia: 2 minuty.',
-        },
-        {
-          title: 'Kodowanie RFID — Mifare Classic vs DESFire',
-          text: 'Mifare Classic 1K: tani, powszechny, ale podatny na klonowanie (złamane szyfrowanie Crypto-1). DESFire EV2/EV3: szyfrowanie AES-128, odporny na ataki relay — wymagany przez nowe systemy kontroli dostępu i e-legitymacje. Cena karty DESFire: 3–5 zł vs Classic: 1–2 zł, ale bezpieczeństwo nieporównywalne.',
+          title: 'Koszt karty zależy od projektu',
+          text: 'Policz koszt taśmy i samej karty. Uwzględnij też, czy drukujesz jedną stronę, kolor po obu stronach, czy kolorowy przód i czarny tył. Wydajność taśmy oznacza liczbę określonych wydruków, nie zawsze liczbę gotowych kart dwustronnych.',
         },
       ],
     },
     faq: [
-      { question: 'Ile kosztuje drukarka kart plastikowych?', answer: 'Modele entry-level (Zebra ZC100, jednostronna): ok. 4 000 zł netto. Mid-range (ZC300, jedno- lub dwustronna): 4 500–6 000 zł netto. Zaawansowane z rozszerzonym kodowaniem (ZC350): 8 000–12 000 zł netto. Retransfer high-end (ZXP Series 7/9): 15 000–20 000 zł netto.' },
-      { question: 'Jaki jest koszt wydruku jednej karty?', answer: 'Druk kolorowy jednostronny (YMCKO): ok. 1,25 zł (taśma) + 0,50 zł (karta PVC blank) = ok. 1,75 zł/karta. Druk dwustronny: ok. 3,00–3,50 zł/karta. Monochromatyczny (czarny): ok. 0,15 zł/karta + karta. Porównanie: outsourcing kosztuje 5–10 zł/karta.' },
-      { question: 'Czym różni się druk termosublimacyjny od retransferowego?', answer: 'Termosublimacja (direct-to-card): taśma barwiąca sublimuje bezpośrednio na kartę. Zalety: szybsza, tańsza. Wady: biała ramka ok. 1 mm, 300 dpi, głowica dotyka karty. Retransfer: obraz drukowany na folię, potem termicznie laminowany na kartę. Zalety: edge-to-edge (brak ramki), do 600 dpi, dłuższa żywotność głowicy, lepszy druk na kartach z chipem. Wady: droższy (film retransferowy + taśma), wolniejszy.' },
-      { question: 'Czy mogę drukować karty RFID/NFC?', answer: 'Tak. Drukarki Zebra ZC300 i ZC350 oferują wbudowane enkodery RFID obsługujące: Mifare Classic 1K/4K, Mifare DESFire EV1/EV2/EV3, NTAG 213/215/216, HID iCLASS SE, HID Prox (125 kHz). Enkoder zapisuje dane na chipie karty jednocześnie z drukiem — cały proces w jednym przejściu.' },
-      { question: 'Drukarka jednostronna czy dwustronna — co wybrać?', answer: 'Jednostronna (single-sided): wystarczy do prostych identyfikatorów (zdjęcie, imię, logo) i kart lojalnościowych z kodem kreskowym na froncie. Dwustronna (dual-sided): potrzebna, gdy na odwrocie drukujesz dodatkowe informacje — kod kreskowy, dane kontaktowe, regulamin, QR code. Przykład: Zebra ZC300 dostępna w wersji jednostronnej (ZC31-xxx) i dwustronnej (ZC32-xxx).' },
-      { question: 'Jak często trzeba czyścić drukarkę kart?', answer: 'Co 1 000 wydrukowanych kart lub przy każdej wymianie taśmy barwiącej. Zestaw czyszczący Zebra (105999-302): karta czyszcząca do rolki transportowej, rolki klejące zbierające kurz, chusteczki IPA do głowicy. Czyszczenie zajmuje ok. 2 minuty i znacząco wydłuża żywotność głowicy drukującej (1–2 mln wydruków).' },
-      { question: 'Jakie karty do kontroli dostępu w biurze?', answer: 'Dla nowych systemów: karty RFID 13,56 MHz Mifare DESFire EV2/EV3 (szyfrowanie AES-128, odporne na klonowanie). Dla istniejących systemów HID: karty HID iCLASS SE lub HID Prox (125 kHz). Drukarka: Zebra ZC300 z enkoderem contactless — drukuje zdjęcie + koduje chip w jednym przejściu. Koszt: drukarka ok. 5 500 zł + karta DESFire ok. 4 zł/szt.' },
-      { question: 'Zebra czy Magicard — którą drukarkę kart wybrać?', answer: 'Magicard Pronto100 wyróżnia się kompaktową obudową, standardowym Ethernetem oraz zabezpieczeniami HoloKote i Digital Shredding. Zebra ZC100 oferuje prosty druk jednostronny, a ZC300 także wersję dwustronną i szerokie opcje kodowania. Dobór zależy przede wszystkim od nakładu, wymaganych zabezpieczeń i rodzaju kart.' },
+      { question: 'Jakie drukarki kart znajdę w ofercie TAKMA?', answer: 'Mamy pięć modeli: [Magicard Pronto100](/produkt/magicard-pronto100), [Magicard 300 S Duo](/produkt/magicard-300), [Magicard 600 Duo](/produkt/magicard-600-duo), [Zebra ZC100](/produkt/zebra-zc100) i [Zebra ZC300](/produkt/zebra-zc300). Do drukarek dobierzesz też taśmy i materiały do czyszczenia.' },
+      { question: 'Czym różnią się Magicard Pronto100, 300 i 600 Duo?', answer: 'Pronto100 jest mała, drukuje jednostronnie i mieści 50 kart w podajniku. Oferowany Magicard 300 S Duo drukuje obie strony i ma podajnik na 100 kart. Magicard 600 Duo dodaje Wi-Fi w standardzie, druk monochromatyczny do 600 × 300 dpi i większą liczbę własnych wzorów HoloKote.' },
+      { question: 'Które modele drukują po obu stronach?', answer: 'Magicard 300 S Duo i Magicard 600 Duo robią to automatycznie. Zebra ZC300 występuje w wersjach jednostronnych i dwustronnych, więc trzeba wybrać właściwy wariant. Pronto100 i ZC100 są drukarkami jednostronnymi.' },
+      { question: 'Ile kosztuje drukarka kart i jej eksploatacja?', answer: 'Aktualne ceny netto znajdziesz przy produktach powyżej. Cena zależy między innymi od druku dwustronnego, łączności i enkodera. Do budżetu dolicz karty, taśmę oraz zestaw czyszczący. Jeśli chcesz porównać koszt gotowej karty, [napisz do nas](/kontakt), jaki nadruk planujesz i ile kart potrzebujesz.' },
+      { question: 'Czy drukarka kart PVC zapisuje dane RFID?', answer: 'Tylko jeśli wybrana konfiguracja ma odpowiedni enkoder. Można nadrukować zdjęcie na zgodnej karcie RFID bez zapisywania danych w jej chipie. W ZC300 kodowanie jest opcją zależną od wariantu. Magicard 600 Duo 3652-5021/3 z naszej oferty nie ma enkodera.' },
+      { question: 'Co daje HoloKote w drukarce Magicard?', answer: 'To znak wodny widoczny pod kątem, który powstaje podczas zwykłego drukowania. Pronto100 ma wzory gotowe, a Magicard 300 i 600 mogą używać własnych znaków. Do HoloKote nie jest potrzebny osobny laminator.' },
+      { question: 'Czy Magicard 600 Duo drukuje kolorowe zdjęcia w 600 dpi?', answer: 'Kolorowy nadruk ma rozdzielczość 300 dpi. Tryb do 600 × 300 dpi dotyczy druku monochromatycznego i pomaga przy drobnym tekście oraz numerach.' },
+      { question: 'Jakie taśmy i zestawy czyszczące pasują do Magicard?', answer: 'Każda [drukarka Magicard](/magicard) ma na swojej stronie listę zgodnych taśm. Nie dobieraj ich wyłącznie po oznaczeniu YMCKO: sprawdź również serię drukarki. Zestaw E9100 jest do Pronto100, a 3633-0053 do modeli 300 i 600.' },
+      { question: 'Czy można drukować z kilku komputerów?', answer: 'Pronto100, Magicard 300 i 600 Duo mają Ethernet. Model 600 Duo ma również Wi-Fi. ZC300 oferuje Ethernet i opcjonalne Wi-Fi, natomiast w ZC100 Ethernet zależy od konfiguracji. Przed zakupem sprawdź wybrany wariant oraz zgodność sterowników z używanym systemem.' },
     ],
     comparisons: [
       {
-        title: 'Termosublimacja vs retransfer — porównanie technologii druku kart',
-        content: 'Termosublimacja (direct-to-card): koszt urządzenia od 4 000 zł, prędkość 150–900 kart/h, rozdzielczość 300 dpi, biała ramka ok. 1 mm dookoła obrazu, głowica dotyka karty (żywotność 1–2 mln), idealna do identyfikatorów, kart lojalnościowych, kart hotelowych. Modele: Zebra ZC100, ZC300, ZC350. Retransfer (reverse transfer): koszt urządzenia od 15 000 zł, prędkość 140–190 kart/h, rozdzielczość do 600 dpi, druk edge-to-edge (cała powierzchnia karty), głowica NIE dotyka karty (dłuższa żywotność), lepszy druk na kartach z chipem kontaktowym/zbliżeniowym, idealna do dokumentów tożsamości, kart finansowych, government ID. Modele: Zebra ZXP Series 7, ZXP Series 9. Rekomendacja TAKMA: dla 95% zastosowań B2B (identyfikatory, kontrola dostępu, karty lojalnościowe) termosublimacja ZC300 to optymalny wybór. Retransfer wybierz tylko gdy potrzebujesz druku edge-to-edge lub rozdzielczości 600 dpi.',
+        title: 'Przy prostym nadruku porównaj Pronto100 i ZC100',
+        content: 'Oba modele drukują jedną stronę karty. Pronto100 ma mniejszy podajnik, ale od razu dostajesz Ethernet, HoloKote i Digital Shredding. ZC100 mieści 100 kart w podajniku i występuje także w konfiguracjach z koderem magnetycznym. Wybór zależy od tego, czy potrzebujesz samego nadruku, czy również zapisu na pasku.',
+      },
+      {
+        title: 'Przy druku dwustronnym sprawdź wyposażenie wariantu',
+        content: 'Magicard 300 S Duo i 600 Duo z naszej oferty mają automatyczny druk obu stron. W ZC300 trzeba wybrać wersję dwustronną. Gdy potrzebujesz znaków HoloKote, porównaj modele Magicard; gdy kodowania, zacznij od wymagań systemu i odpowiedniej konfiguracji ZC300. Wi-Fi jest standardem w oferowanej 600 Duo, a w ZC300 opcją.',
       },
     ],
     howToSteps: [
-      { name: 'Określ zastosowanie i nakład', text: 'Identyfikatory pracownicze, karty dostępu, e-legitymacje czy karty lojalnościowe? Ustal, czy potrzebujesz druku dwustronnego, kodowania RFID lub paska magnetycznego oraz czy ważne są zabezpieczenia wizualne na każdej karcie.' },
-      { name: 'Wybierz model i konfigurację', text: 'Pronto100: kompaktowa drukarka jednostronna z Ethernetem, HoloKote i Digital Shredding. ZC100: prosty druk jednostronny z opcjonalnym koderem magnetycznym. ZC300: wersja jedno- lub dwustronna z opcjami RFID/NFC, smart card i Wi-Fi. Skontaktuj się z TAKMA po dobór konfiguracji i wycenę.' },
-      { name: 'Zamów materiały eksploatacyjne', text: 'Taśma YMCKO (pełny kolor): 200–500 wydruków. Karty PVC blank CR-80 (białe, 30 mil): opakowania po 100 lub 500 szt. Jeśli kodowanie: karty z chipem Mifare/magnetic stripe. Zestaw czyszczący (105999-302) — od razu na start.' },
-      { name: 'Zainstaluj oprogramowanie', text: 'Zebra CardStudio (Classic lub Professional) do projektowania układu karty: zdjęcie, logo, tekst, kod kreskowy, dane z bazy. Alternatywa: CardPresso (uniwersalny, multi-brand). Podłącz drukarkę przez USB lub Ethernet, zainstaluj sterownik Zebra.' },
-      { name: 'Skonfiguruj i drukuj', text: 'Załaduj taśmę YMCKO i karty blank do podajnika (100 szt.). Uruchom czyszczenie inicjalne (karta czyszcząca w zestawie). Wydrukuj kartę testową. Jeśli kodowanie RFID — skonfiguruj enkoder w CardStudio (typ karty, klucze szyfrowania). Gotowe — druk pierwszej karty w 25 sekund.' },
+      { name: 'Przygotuj wzór karty', text: 'Zbierz logo, zdjęcie i dane. Rozplanuj przód oraz tył. Ustal, czy karta ma tylko identyfikować osobę, czy także działać z czytnikiem lub zamkiem.' },
+      { name: 'Wybierz konkretną konfigurację', text: 'Sprawdź druk dwustronny, sposób połączenia i ewentualny enkoder. Dobierz taśmę, karty oraz zestaw czyszczący do tego modelu.' },
+      { name: 'Zainstaluj sterownik i program', text: 'Użyj sterownika producenta dla swojego systemu. Do projektowania kart możesz wykorzystać na przykład Zebra CardStudio lub zgodną wersję cardPresso. Funkcje programu i licencję dobierz do potrzeb, zwłaszcza przy kodowaniu lub pracy z bazą danych.' },
+      { name: 'Zrób próbny wydruk', text: 'Załaduj materiały zgodnie z instrukcją. Sprawdź czytelność zdjęcia, tekstu i kodu kreskowego oraz ułożenie rewersu. Jeśli karta ma chip lub pasek magnetyczny, przetestuj ją także na docelowym czytniku, zanim wydrukujesz całą partię.' },
     ],
   },
 

@@ -24,6 +24,125 @@ export const PRELAUNCH_PNS = new Set<string>([
 
 const PRELAUNCH_TEXT = 'Przedsprzedaż — dostawy w drodze do dystrybucji'
 
+interface ManualStockOverride {
+  stockPL: number
+  stockDE: number
+  deliveryText: string
+}
+
+/**
+ * Stany utrzymywane ręcznie dla dystrybutorów bez API.
+ * Wartość ma pierwszeństwo przed cache'em i odpowiedziami pozostałych dostawców.
+ */
+export const MANUAL_STOCK_OVERRIDES = new Map<string, ManualStockOverride>([
+  [
+    '3100-0001/3',
+    {
+      stockPL: 10,
+      stockDE: 0,
+      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+    },
+  ],
+  [
+    '3300-0021/S',
+    {
+      stockPL: 10,
+      stockDE: 0,
+      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+    },
+  ],
+  [
+    '3652-5021/3',
+    {
+      stockPL: 10,
+      stockDE: 0,
+      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+    },
+  ],
+  [
+    'MD100YMCKO/S',
+    {
+      stockPL: 10,
+      stockDE: 0,
+      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+    },
+  ],
+  [
+    'MD200YMCKO/S',
+    {
+      stockPL: 10,
+      stockDE: 0,
+      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+    },
+  ],
+  [
+    'MC300YMCKO/S',
+    {
+      stockPL: 10,
+      stockDE: 0,
+      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+    },
+  ],
+  [
+    'MC600KO/S',
+    {
+      stockPL: 10,
+      stockDE: 0,
+      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+    },
+  ],
+  [
+    'MB300YMCKO/S',
+    {
+      stockPL: 10,
+      stockDE: 0,
+      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+    },
+  ],
+  [
+    'MB250YMCKOK/S',
+    {
+      stockPL: 10,
+      stockDE: 0,
+      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+    },
+  ],
+  [
+    'MB600KO/S',
+    {
+      stockPL: 10,
+      stockDE: 0,
+      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+    },
+  ],
+  ...([
+    'MA1000K-BLACK',
+    'MA1000K-WHITE',
+    'MA1000K-BLUE',
+    'MA1000K-GREEN',
+    'MA1000K-RED',
+    'MA1000K-SILVER',
+    'MA1000K-GOLD',
+    'MA1000K-SCRATCH',
+    '3633-0053',
+  ] as const).map((partNumber): [string, ManualStockOverride] => [
+    partNumber,
+    {
+      stockPL: 10,
+      stockDE: 0,
+      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+    },
+  ]),
+  [
+    'E9100',
+    {
+      stockPL: 10,
+      stockDE: 0,
+      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+    },
+  ],
+])
+
 interface StockLike {
   partNumber: string
   found?: boolean
@@ -37,7 +156,21 @@ interface StockLike {
 
 /** Nakłada korekty na pojedynczy wiersz stanu (mutuje i zwraca ten sam obiekt). */
 export function applyStockOverrides<T extends StockLike>(row: T): T {
-  if (row.found && PRELAUNCH_PNS.has(row.partNumber.toUpperCase())) {
+  const partNumber = row.partNumber.toUpperCase()
+  const manualStock = MANUAL_STOCK_OVERRIDES.get(partNumber)
+
+  if (manualStock) {
+    row.found = true
+    row.stockPL = manualStock.stockPL
+    row.stockDE = manualStock.stockDE
+    row.inDelivery = 0
+    row.totalStock = manualStock.stockPL + manualStock.stockDE
+    row.availability = 'available'
+    row.deliveryText = manualStock.deliveryText
+    return row
+  }
+
+  if (row.found && PRELAUNCH_PNS.has(partNumber)) {
     // Stan z API nie jest sprzedażowo dostępny. Zasada sklepu (2026-06-12):
     // binarnie — brak stanu = Niedostępny; informacja o przedsprzedaży tylko
     // w deliveryText. Cena zostaje (jest prawdziwa).

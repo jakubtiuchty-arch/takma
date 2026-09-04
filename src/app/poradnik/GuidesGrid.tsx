@@ -112,12 +112,12 @@ export default function GuidesGrid({ guides }: { guides: Guide[] }) {
           >
             {/* Obrazek */}
             {guide.heroImage && (
-              <div className="relative w-full h-48 bg-gray-900">
+              <div className={`relative w-full h-48 ${guide.cardImageFit === 'contain' ? 'bg-[#020102]' : 'bg-gray-900'}`}>
                 <Image
                   src={guide.heroImage}
                   alt={guide.title}
                   fill
-                  className="object-cover"
+                  className={guide.cardImageFit === 'contain' ? 'object-contain' : 'object-cover'}
                   style={{ objectPosition: guide.cardImagePosition || '70% center' }}
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />

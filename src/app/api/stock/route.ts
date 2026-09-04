@@ -8,7 +8,7 @@ import { isLabelPN } from '@/data/products'
 import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
 import type { JarltechStockInfo } from '@/lib/jarltech'
-import { applyStockOverrides } from '@/lib/stock-overrides'
+import { applyStockOverrides, MANUAL_STOCK_OVERRIDES } from '@/lib/stock-overrides'
 import { selectPurchasePrice } from '@/lib/price-selection'
 
 const MARGIN = 1.10        // 10% marży — standardowa dla większości produktów
@@ -85,6 +85,31 @@ export async function GET(request: NextRequest) {
       { error: 'Maksymalnie 50 Part Numberow na jedno zapytanie.' },
       { status: 400 }
     )
+  }
+
+  // Dystrybutorzy bez API: jeśli cały request dotyczy ręcznie utrzymywanych
+  // stanów, odpowiedz od razu i nie czekaj na integracje zewnętrzne.
+  if (partNumbers.every(pn => MANUAL_STOCK_OVERRIDES.has(pn.toUpperCase()))) {
+    const now = new Date().toISOString()
+    const results: StockInfo[] = partNumbers.map(partNumber => applyStockOverrides({
+      partNumber,
+      found: false,
+      stockPL: 0,
+      stockDE: 0,
+      inDelivery: 0,
+      totalStock: 0,
+      availability: 'unavailable' as const,
+      deliveryText: 'Brak danych z dystrybutora',
+      lastSync: now,
+    }))
+
+    return NextResponse.json({
+      results,
+      count: results.length,
+      found: results.length,
+      _source: 'manual-stock-override',
+      ...(showDebug ? { _debug: { manualStockOverrides: partNumbers } } : {}),
+    })
   }
 
   try {
@@ -572,6 +597,7 @@ export async function GET(request: NextRequest) {
         lastSync: now,
       }
     })
+    finalResults.forEach(applyStockOverrides)
 
     const response: Record<string, unknown> = {
       results: finalResults,

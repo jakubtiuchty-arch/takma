@@ -41,6 +41,8 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
     ? { color: '#EE3124', bg: '#EE3124/10', light: 'rgba(238,49,36,0.08)', border: 'rgba(238,49,36,0.25)', text: '#EE3124', hover: '#D42B1F' }
     : manufacturerId === 'newland'
     ? { color: '#009B3A', bg: 'green-50', light: 'rgba(0,155,58,0.08)', border: 'rgba(0,155,58,0.25)', text: '#009B3A', hover: '#007A2E' }
+    : manufacturerId === 'magicard'
+    ? { color: '#1F5591', bg: 'blue-50', light: 'rgba(31,85,145,0.08)', border: 'rgba(31,85,145,0.25)', text: '#1F5591', hover: '#17416F' }
     : { color: '#2563EB', bg: 'primary-50', light: 'rgba(37,99,235,0.08)', border: 'rgba(37,99,235,0.25)', text: '#2563EB', hover: '#1D4ED8' }
 
   // Schema JSON-LD
@@ -215,9 +217,13 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
         {/* Technologies */}
         {data.technologies.length > 0 && (
           <section className="mb-14">
-            <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">Ekosystem oprogramowania {manufacturer.name}</h2>
+            <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">
+              {manufacturerId === 'magicard' ? 'Technologie Magicard' : `Ekosystem oprogramowania ${manufacturer.name}`}
+            </h2>
             <p className="text-gray-500 text-sm mb-6 max-w-2xl">
-              Każde urządzenie {manufacturer.name} ma wbudowane oprogramowanie, które odróżnia je od konsumenckich tabletów i telefonów. Oto kluczowe platformy.
+              {manufacturerId === 'magicard'
+                ? 'Rozwiązania, które pomagają zabezpieczyć kartę, dane użyte do jej wydruku i cały proces personalizacji.'
+                : `Każde urządzenie ${manufacturer.name} ma wbudowane oprogramowanie, które odróżnia je od konsumenckich tabletów i telefonów. Oto kluczowe platformy.`}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {data.technologies.map((tech, i) => (
@@ -409,6 +415,7 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
                 { name: 'Zebra', href: '/zebra' },
                 { name: 'Honeywell', href: '/honeywell' },
                 { name: 'Newland', href: '/newland' },
+                { name: 'Magicard by Brady', href: '/magicard' },
                 { name: 'Datalogic', href: '/katalog' },
                 { name: 'TSC', href: '/katalog' },
               ].filter(b => b.name !== manufacturer.name).map(brand => (

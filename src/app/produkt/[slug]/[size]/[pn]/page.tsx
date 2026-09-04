@@ -487,7 +487,9 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
                   <img
                     src={manufacturer.logo}
                     alt={`Logo ${manufacturer.name}`}
-                    className="h-10 lg:h-12 w-auto"
+                    className={manufacturer.slug === 'magicard'
+                      ? 'h-12 lg:h-[3.6rem] w-auto'
+                      : 'h-10 lg:h-12 w-auto'}
                   />
                 </Link>
               )}

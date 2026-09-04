@@ -48,6 +48,7 @@ import { getBrandBySlug as getServiceBrandBySlug } from '@/app/serwis/_data/bran
 import { getManualByProductSlug } from '@/data/manuals'
 import ViewItemTracker from './ViewItemTracker'
 import { thermalLabelSeries } from '@/data/thermal-label-series'
+import { absoluteProductImageUrl, getMagicardOffer } from '@/lib/magicard-offer'
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>
@@ -119,11 +120,8 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
       : `${product.shortDescription}. Sprawdź i zamów w TAKMA.`
 
   // OG image — pełny URL z domeną (nie relative path)
-  const ogImage = product.images[0]
-    ? product.images[0].startsWith('http')
-      ? product.images[0]
-      : `https://www.takma.com.pl${product.images[0]}`
-    : undefined
+  const ogImage = product.images[0] ? absoluteProductImageUrl(product.images[0]) : undefined
+  const magicardOffer = getMagicardOffer(product)
 
   // ── Canonical: dla etykiet (DT i TT) przekazujemy autorytet stronie serii.
   //  • Z ?pn= → canonical na nowy URL wariantu (komponent też robi 301, to backstop)
@@ -164,7 +162,7 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
     },
     other: {
       ...(product.priceFrom ? {
-        'product:price:amount': product.priceFrom.toFixed(2),
+        'product:price:amount': magicardOffer?.price ?? product.priceFrom.toFixed(2),
         'product:price:currency': 'PLN',
       } : {}),
     },
@@ -382,7 +380,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const relatedProductsForSchema = [
     ...relatedAccessories.slice(0, 5),
     ...compatibleConsumables.slice(0, 3),
-  ].filter(Boolean).map((p) => ({
+  ].filter(Boolean).map((p) => product.manufacturerId === 'magicard' ? {
+    '@id': `https://www.takma.com.pl/produkt/${p!.slug}`,
+  } : ({
     '@type': 'Product' as const,
     name: p!.name,
     url: `https://www.takma.com.pl/produkt/${p!.slug}`,
@@ -399,6 +399,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // Check if product has any valid price (> 0) at product or variant level
   const hasValidPrice = (product.priceFrom && product.priceFrom > 0) ||
     (product.variants?.some(v => v.priceFrom && v.priceFrom > 0))
+  const magicardOffer = getMagicardOffer(product)
 
   const productJsonLd = {
     '@context': 'https://schema.org',
@@ -406,13 +407,13 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     url: `https://www.takma.com.pl/produkt/${product.slug}`,
     name: product.name,
     description: product.shortDescription,
-    image: product.images.map((img) => `https://www.takma.com.pl${img}`),
+    image: product.images.map(absoluteProductImageUrl),
     brand: manufacturer ? { '@type': 'Brand', name: manufacturer.name } : undefined,
     manufacturer: manufacturer ? { '@type': 'Organization', name: manufacturer.id === 'zebra' ? 'Zebra Technologies' : manufacturer.name, ...(manufacturer.id === 'zebra' ? { url: 'https://www.zebra.com' } : {}) } : undefined,
     model: modelName,
     category: category?.name,
-    sku: product.variants?.[0]?.partNumber || product.id,
-    mpn: product.variants?.[0]?.partNumber || product.id,
+    sku: magicardOffer?.sku || product.variants?.[0]?.partNumber || product.id,
+    mpn: magicardOffer?.sku || product.variants?.[0]?.partNumber || product.id,
     datePublished: product.createdAt,
     dateModified: product.updatedAt || product.createdAt,
     inLanguage: 'pl-PL',
@@ -451,7 +452,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     } : {}),
     // Only include offers when product has valid pricing — prevents GSC schema errors
     ...(hasValidPrice ? {
-      offers: product.variants && product.variants.length > 0
+      offers: magicardOffer ?? (product.variants && product.variants.length > 0
         ? (() => {
             const variantPrices = product.variants.filter((v) => v.priceFrom && v.priceFrom > 0).map((v) => v.priceFrom!)
             const lowPrice = variantPrices.length > 0 ? Math.min(...variantPrices) : (product.priceFrom && product.priceFrom > 0 ? product.priceFrom : undefined)
@@ -508,7 +509,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               itemCondition: 'https://schema.org/NewCondition',
               priceValidUntil,
               seller: sellerOrg,
-            },
+            }),
     } : {}),
   }
 
@@ -684,7 +685,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   <img
                     src={manufacturer.logo}
                     alt={`Logo ${manufacturer.name}`}
-                    className="h-10 lg:h-12 w-auto"
+                    className={manufacturer.slug === 'magicard'
+                      ? 'h-12 lg:h-[3.6rem] w-auto'
+                      : 'h-10 lg:h-12 w-auto'}
                   />
                 </Link>
               )}

@@ -9,6 +9,7 @@ import { ribbonCartonQty } from '@/data/ribbon-carton-qty'
 import { labelCartonQty } from '@/data/label-carton-qty'
 import { Button } from '@/components/ui'
 import { PlusIcon, CheckIcon } from '@/components/ui/Icons'
+import { MANUAL_STOCK_OVERRIDES } from '@/lib/stock-overrides'
 
 interface SmartPriceProps {
   product: Product
@@ -38,6 +39,7 @@ export default function SmartPrice({ product }: SmartPriceProps) {
   // Stock info z kontekstu — zero osobnych fetchów
   const stock = displayedPn ? stockData.get(displayedPn) : undefined
   const hasStockData = !loading && stock?.found
+  const hasManualStock = !!displayedPn && MANUAL_STOCK_OVERRIDES.has(displayedPn.toUpperCase())
 
   // Cena kartonowa (taśmy + etykiety) — zakup całego opakowania wychodzi taniej za rolkę:
   // niższa marża niż jednostkowa (taśmy 13% vs 20%, etykiety 10% vs 15%). Raw (ingramPrice)
@@ -141,8 +143,8 @@ export default function SmartPrice({ product }: SmartPriceProps) {
             <div className="flex items-center gap-2 text-sm">
               <div className="w-2 h-2 bg-green-500 rounded-full" />
               <span className="text-gray-600">
-                Magazyn PL: <strong className="text-gray-900">{stock!.stockPL} szt.</strong>
-                <span className="text-gray-400 ml-1">— wysyłka 24h</span>
+                {hasManualStock ? 'Dostępny u dystrybutora: ' : 'Magazyn PL: '}<strong className="text-gray-900">{stock!.stockPL} szt.</strong>
+                {!hasManualStock && <span className="text-gray-400 ml-1">— wysyłka 24h</span>}
               </span>
             </div>
           )}

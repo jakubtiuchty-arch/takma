@@ -8,6 +8,7 @@ import { PlusIcon, CheckIcon, BellIcon, ChevronDownIcon } from '@/components/ui/
 import { useCartStore } from '@/store/cartStore'
 import { ProductVariant } from '@/data/products'
 import { useSmartPrice } from './SmartPriceContext'
+import { MANUAL_STOCK_OVERRIDES } from '@/lib/stock-overrides'
 
 interface VariantsTableProps {
   productSlug: string
@@ -25,9 +26,13 @@ const availabilityConfig: Record<string, { label: string; variant: 'success' | '
   unavailable: { label: 'Niedostępny', variant: 'danger' },
 }
 
-function StockCell({ stockPL, stockDE, inDelivery, incomingDate, loading }: { stockPL: number; stockDE: number; inDelivery: number; incomingDate?: string; loading: boolean }) {
+function StockCell({ stockPL, stockDE, inDelivery, incomingDate, loading, manual }: { stockPL: number; stockDE: number; inDelivery: number; incomingDate?: string; loading: boolean; manual?: boolean }) {
   if (loading) {
     return <span className="text-xs text-gray-400 animate-pulse">...</span>
+  }
+
+  if (manual && stockPL + stockDE > 0) {
+    return <span className="text-xs text-gray-700">Dystrybutor: {stockPL + stockDE} szt.</span>
   }
 
   if (stockPL === 0 && stockDE === 0 && inDelivery === 0) {
@@ -281,7 +286,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
         }
       </td>
       <td className="px-3 py-3.5">
-        <StockCell stockPL={stock?.stockPL ?? 0} stockDE={stock?.stockDE ?? 0} inDelivery={stock?.inDelivery ?? 0} incomingDate={stock?.incomingDate} loading={stockLoading} />
+        <StockCell stockPL={stock?.stockPL ?? 0} stockDE={stock?.stockDE ?? 0} inDelivery={stock?.inDelivery ?? 0} incomingDate={stock?.incomingDate} loading={stockLoading} manual={MANUAL_STOCK_OVERRIDES.has(variant.partNumber.toUpperCase())} />
       </td>
       <td className="px-3 py-3.5 text-center">
         <Badge variant={avail.variant}>{avail.label}</Badge>
@@ -366,7 +371,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
           {stock.stockPL > 0 && (
             <span className="flex items-center gap-1">
               <span className="w-1.5 h-1.5 bg-green-500 rounded-full" />
-              PL: {stock.stockPL} szt.
+              {MANUAL_STOCK_OVERRIDES.has(variant.partNumber.toUpperCase()) ? 'Dystrybutor' : 'PL'}: {stock.stockPL} szt.
             </span>
           )}
           {stock.stockDE > 0 && (

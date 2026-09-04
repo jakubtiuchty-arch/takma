@@ -394,9 +394,10 @@ export default function GuidePage({ guide }: GuidePageProps) {
               {/* CTA Section */}
               {(() => {
                 const isTerminal = guide.tags.includes('terminale-mobilne')
-                const ctaText = isTerminal ? 'urządzenie' : 'drukarkę'
-                const ctaHref = isTerminal ? '/terminale-mobilne' : '/drukarki-etykiet'
-                const ctaLabel = isTerminal ? 'Przeglądaj terminale' : 'Przeglądaj drukarki'
+                const isCardPrinter = guide.tags.includes('drukarki-kart')
+                const ctaText = isTerminal ? 'urządzenie' : isCardPrinter ? 'drukarkę kart' : 'drukarkę'
+                const ctaHref = isTerminal ? '/terminale-mobilne' : isCardPrinter ? '/drukarki-kart' : '/drukarki-etykiet'
+                const ctaLabel = isTerminal ? 'Przeglądaj terminale' : isCardPrinter ? 'Przeglądaj drukarki kart' : 'Przeglądaj drukarki'
                 return (
                   <section className="mt-12 bg-gray-50 border border-gray-200 rounded-xl p-6 sm:p-8">
                     <h3 className="text-base font-bold text-gray-900 mb-2">Potrzebujesz pomocy w wyborze?</h3>

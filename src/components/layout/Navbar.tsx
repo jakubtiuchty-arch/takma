@@ -25,6 +25,7 @@ interface BrandLink {
   name: string
   href: string
   logo: string
+  logoClassName?: string
 }
 
 interface NavItem {
@@ -81,6 +82,7 @@ const navigation: NavItem[] = [
       { name: 'Brother', href: '/drukarki-etykiet-brother', logo: '/images/partners/brother_logo.png' },
       { name: 'TSC', href: '/drukarki-etykiet-tsc', logo: '/images/partners/logo_tsc.png' },
       { name: 'Citizen', href: '/drukarki-etykiet-citizen', logo: '/images/partners/logo_citizen.png' },
+      { name: 'Magicard by Brady', href: '/katalog?producent=magicard', logo: '/images/partners/logo_magicard.png', logoClassName: 'h-[38px]' },
     ],
     children: [
       { name: 'Wszystkie drukarki', href: '/drukarki-etykiet' },
@@ -300,7 +302,7 @@ export default function Navbar() {
                                       <img
                                         src={brand.logo}
                                         alt={brand.name}
-                                        className="h-[25px] w-auto opacity-70"
+                                        className={clsx(brand.logoClassName || 'h-[25px]', 'w-auto opacity-70')}
                                       />
                                     </Link>
                                   ))}

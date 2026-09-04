@@ -28,8 +28,9 @@ export const metadata: Metadata = {
 }
 
 /* ── Loga producentów (reuse z /o-nas) ── */
-const partnerLogos: { name: string; logo: string; href?: string }[] = [
+const partnerLogos: { name: string; logo: string; href?: string; logoClassName?: string }[] = [
   { name: 'Zebra Technologies', logo: '/images/partners/logo_zebra.png', href: '/zebra' },
+  { name: 'Magicard by Brady', logo: '/images/partners/logo_magicard.png', href: '/magicard', logoClassName: 'h-[129.4%]' },
   { name: 'Honeywell', logo: '/images/partners/logo_honeywell.png', href: '/honeywell' },
   { name: 'Datalogic', logo: '/images/partners/logo_datalogic.png' },
   { name: 'TSC', logo: '/images/partners/logo_tsc.png' },
@@ -99,7 +100,7 @@ const industries = [
 const homepageFaq = [
   {
     q: 'Czym zajmuje się TAKMA?',
-    a: 'TAKMA to polska firma B2B z siedzibą we Wrocławiu, działająca od 2001 roku. Specjalizujemy się w dostawie drukarek etykiet, terminali mobilnych, skanerów kodów kreskowych i materiałów eksploatacyjnych. Współpracujemy z 9 czołowymi producentami: Zebra, Honeywell, Datalogic, TSC, Citizen, Godex, SATO, Newland i M3 Mobile. Prowadzimy również własny serwis napraw na serwis-zebry.pl.',
+    a: 'TAKMA to polska firma B2B z siedzibą we Wrocławiu, działająca od 2001 roku. Specjalizujemy się w dostawie drukarek etykiet i kart, terminali mobilnych, skanerów kodów kreskowych oraz materiałów eksploatacyjnych. Współpracujemy z 10 czołowymi producentami: Zebra, Magicard by Brady, Honeywell, Datalogic, TSC, Citizen, Godex, SATO, Newland i M3 Mobile. Prowadzimy również własny serwis napraw na serwis-zebry.pl.',
   },
   {
     q: 'Jakie drukarki etykiet oferujecie?',
@@ -275,7 +276,7 @@ export default function HomePage() {
                   alt={partner.name}
                   width={110}
                   height={32}
-                  className="h-full w-auto object-contain"
+                  className={`${partner.logoClassName ?? 'h-full'} w-auto object-contain`}
                 />
               )
               const className = "h-5 md:h-7 lg:h-8 flex-shrink-0 flex items-center grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
@@ -443,7 +444,8 @@ export default function HomePage() {
                     <img
                       src={guide.heroImage}
                       alt=""
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: guide.cardImagePosition || '100% center' }}
+                      className={`w-full h-full transition-transform duration-500 ${guide.cardImageFit === 'contain' ? 'object-contain' : 'object-cover group-hover:scale-105'}`}
+                      style={{ objectPosition: guide.cardImagePosition || '100% center' }}
                     />
                     <span className={`absolute top-3 left-3 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold backdrop-blur-sm ${
                       guide.category === 'poradnik' ? 'bg-blue-100/90 text-blue-700' :

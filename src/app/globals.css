@@ -348,6 +348,78 @@
   text-align: left;
 }
 
+/* ── Guide product comparison table ── */
+.prose table.guide-comparison-table {
+  min-width: 720px;
+  table-layout: fixed;
+  border-collapse: separate !important;
+  border-radius: 0.875rem;
+}
+
+.prose table.guide-comparison-table thead {
+  background: #1f2937;
+}
+
+.prose table.guide-comparison-table th,
+.prose table.guide-comparison-table td {
+  vertical-align: middle;
+}
+
+.prose table.guide-comparison-table th {
+  padding: 0.875rem 1rem !important;
+  font-size: 0.75rem;
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
+
+.prose table.guide-comparison-table td {
+  padding: 0.9rem 1rem !important;
+  line-height: 1.35;
+}
+
+.prose table.guide-comparison-table td:nth-child(3),
+.prose table.guide-comparison-table td:nth-child(4),
+.prose table.guide-comparison-table td:nth-child(6) {
+  white-space: nowrap;
+}
+
+.prose table.guide-comparison-table th:last-child,
+.prose table.guide-comparison-table td:last-child {
+  text-align: right;
+}
+
+.prose .guide-table-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 4.5rem;
+  padding: 0.3rem 0.55rem;
+  border: 1px solid #dbeafe;
+  border-radius: 9999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.prose .guide-table-badge--duplex {
+  border-color: #d1fae5;
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.prose .guide-table-connectivity {
+  line-height: 1.45;
+}
+
+.prose .guide-table-price {
+  color: #111827;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 
 /* ── Prose tables mobile responsive ── */
 @media (max-width: 639px) {
@@ -372,6 +444,10 @@
     display: table;
     width: 100%;
     table-layout: fixed;
+  }
+
+  .prose table.guide-comparison-table {
+    min-width: 720px;
   }
 }
 

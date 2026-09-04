@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation'
 import { Product } from '@/data/products'
 import type { StockInfo as StockResult } from '@/lib/ingram'
 import { activePromo } from '@/data/promos'
+import { getMagicardStock } from '@/lib/magicard-offer'
 
 interface SmartPriceState {
   /** Wybrany PN do wyświetlenia */
@@ -60,13 +61,21 @@ export function SmartPriceProvider({
   }, [product])
 
   const partNumbers = useMemo(() => allVariants.map(v => v.partNumber), [allVariants])
+  const manualStockData = useMemo(() => {
+    const rows = getMagicardStock(product)
+    return rows ? new Map(rows.map(row => [row.partNumber, row])) : undefined
+  }, [product])
 
   // Bezpośredni fetch — niezależny od globalnego batchera ProductCard
-  const [stockData, setStockData] = useState<Map<string, StockResult>>(new Map())
-  const [loading, setLoading] = useState(partNumbers.length > 0)
+  const [fetchedStockData, setStockData] = useState<Map<string, StockResult>>(new Map())
+  const [fetchLoading, setLoading] = useState(partNumbers.length > 0)
+  const stockData = manualStockData ?? fetchedStockData
+  const loading = manualStockData ? false : fetchLoading
 
   const pnKey = partNumbers.join(',')
   useEffect(() => {
+    // Brak zewnętrznego API dla tej oferty: cena i stan są już w HTML z serwera.
+    if (manualStockData) { setLoading(false); return }
     if (partNumbers.length === 0) { setLoading(false); return }
 
     let cancelled = false
@@ -115,7 +124,7 @@ export function SmartPriceProvider({
 
     return () => { cancelled = true }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pnKey])
+  }, [pnKey, manualStockData])
 
   const state = useMemo<SmartPriceState>(() => {
     if (allVariants.length === 0) {
@@ -218,7 +227,7 @@ export function SmartPriceProvider({
       partNumbers,
       variantName: best.name || undefined,
     }
-  }, [allVariants, stockData, loading, partNumbers, product.priceFrom, urlPn])
+  }, [allVariants, stockData, loading, partNumbers, product.priceFrom, product.slug, urlPn])
 
   return (
     <SmartPriceContext.Provider value={state}>

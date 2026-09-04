@@ -36,6 +36,8 @@ export interface Guide {
   heroVideo?: string
   /** CSS object-position override for card thumbnail (doesn't affect hero in guide page) */
   cardImagePosition?: string
+  /** Fit mode for card thumbnails; use contain when the whole artwork must remain visible */
+  cardImageFit?: 'cover' | 'contain'
   sections: GuideSection[]
   faq: GuideFAQ[]
   relatedLinks: GuideRelatedLink[]
@@ -51,6 +53,142 @@ export const guideCategoryLabels: Record<Guide['category'], string> = {
 }
 
 export const guides: Guide[] = [
+// ============================================================
+// Magicard w ofercie TAKMA — wdrożenie marki 04.09.2026
+// ============================================================
+{
+  slug: 'magicard-w-ofercie-takma',
+  title: 'Wprowadziliśmy Magicard do oferty. Trzy drukarki kart, które warto znać',
+  seoTitle: 'Magicard w ofercie TAKMA — drukarki kart i identyfikatorów',
+  seoDescription: 'Do oferty TAKMA dołączyły drukarki kart Magicard Pronto100, 300 i 600 Duo, a także dopasowane taśmy oraz zestawy czyszczące. Sprawdź różnice.',
+  excerpt: 'Do naszej oferty dołączyły trzy drukarki kart Magicard: Pronto100, 300 i 600 Duo. Dodaliśmy też dopasowane taśmy i zestawy czyszczące, dzięki czemu całe stanowisko do druku identyfikatorów można skompletować w jednym miejscu.',
+  category: 'branzowy' as const,
+  tags: ['magicard', 'brady', 'drukarki-kart', 'karty-pvc', 'identyfikatory', 'holokote', 'aktualnosci'],
+  publishedAt: '2026-09-04',
+  updatedAt: '2026-09-04',
+  readTime: '7 min',
+  heroImage: '/images/guides/magicard-w-ofercie-takma.webp',
+  heroImageAlt: 'Drukarki kart Magicard Pronto100, Magicard 300 i Magicard 600 Duo na ciemnym tle',
+  cardImagePosition: '100% center',
+  sections: [
+    {
+      id: 'co-wprowadzilismy',
+      heading: 'Magicard jest już w ofercie TAKMA',
+      content: `<p><strong>Rozszerzyliśmy ofertę drukarek kart o markę Magicard by Brady.</strong> Na początek wprowadziliśmy trzy modele: kompaktowy Pronto100 oraz dwustronne Magicard 300 i Magicard 600 Duo. Razem tworzą czytelną gamę — od urządzenia do okazjonalnego druku identyfikatorów po drukarkę do regularnej pracy w firmie, szkole lub instytucji.</p>
+
+<p>Nie skończyliśmy na samych urządzeniach. Do sklepu trafiły również kolorowe i monochromatyczne taśmy do każdego z tych modeli oraz zestawy czyszczące. Chodzi o to, żeby po wyborze drukarki nie trzeba było osobno szukać właściwych materiałów i sprawdzać numerów katalogowych.</p>
+
+<p>Magicard nie jest nową marką. Firma działa od 1993 roku, a projektowanie nowych modeli i produkcja odbywają się w Weymouth w Wielkiej Brytanii. Drukarki trafiają do ponad 100 krajów i służą do przygotowywania identyfikatorów pracowniczych, kart dostępu, legitymacji, kart członkowskich oraz bezpiecznych dokumentów. Od 2021 roku firma należy do Brady Corporation i działa jako <strong>Magicard by Brady</strong>.</p>`
+    },
+    {
+      id: 'trzy-modele',
+      heading: 'Trzy modele, trzy różne sposoby pracy',
+      content: `<p>Wybór zaczyna się od dwóch prostych pytań: czy karta ma być drukowana po jednej, czy po obu stronach oraz ile identyfikatorów powstaje w ciągu dnia. Pozostałe różnice — pojemność podajnika, Wi-Fi czy liczba własnych wzorów HoloKote — wynikają już z tych dwóch decyzji.</p>
+
+<table class="guide-comparison-table">
+<colgroup><col style="width:22%"/><col style="width:13%"/><col style="width:16%"/><col style="width:13%"/><col style="width:22%"/><col style="width:14%"/></colgroup>
+<thead><tr><th>Model</th><th>Zadruk</th><th>Wydajność</th><th>Podajnik</th><th>Łączność</th><th>Cena netto</th></tr></thead>
+<tbody>
+<tr><td><a href="/produkt/magicard-pronto100">Magicard Pronto100</a></td><td><span class="guide-table-badge">1 strona</span></td><td>do&nbsp;200 kart/h</td><td>50 kart</td><td><span class="guide-table-connectivity">USB <span aria-hidden="true">·</span> Ethernet</span></td><td><span class="guide-table-price" data-live-price="magicard-pronto100">od&nbsp;2&nbsp;875&nbsp;zł</span></td></tr>
+<tr><td><a href="/produkt/magicard-300">Magicard 300</a></td><td><span class="guide-table-badge guide-table-badge--duplex">2 strony</span></td><td>do&nbsp;160 kart/h</td><td>100 kart</td><td><span class="guide-table-connectivity">USB <span aria-hidden="true">·</span> Ethernet</span></td><td><span class="guide-table-price" data-live-price="magicard-300">od&nbsp;4&nbsp;025&nbsp;zł</span></td></tr>
+<tr><td><a href="/produkt/magicard-600-duo">Magicard 600 Duo</a></td><td><span class="guide-table-badge guide-table-badge--duplex">2 strony</span></td><td>do&nbsp;190 kart/h</td><td>100 kart</td><td><span class="guide-table-connectivity">USB <span aria-hidden="true">·</span> Ethernet <span aria-hidden="true">·</span> Wi&#8209;Fi</span></td><td><span class="guide-table-price" data-live-price="magicard-600-duo">od&nbsp;5&nbsp;750&nbsp;zł</span></td></tr>
+</tbody>
+</table>
+
+<p>Wydajność w tabeli dotyczy kolorowego druku jednej strony karty. Modele Duo drukują też automatycznie po obu stronach, ale zajmuje to więcej czasu.</p>
+
+<h3>Pronto100 — gdy karty drukujesz na bieżąco</h3>
+<p><a href="/produkt/magicard-pronto100">Magicard Pronto100</a> jest najmniejszym modelem w tej grupie. Drukuje jednostronnie i zajmuje niewiele miejsca, dlatego pasuje do recepcji, sekretariatu, biura albo punktu obsługi. Podajnik i odbiornik mieszczą po 50 kart. Jeśli trzeba przygotować pojedynczy identyfikator, można podać kartę ręcznie.</p>
+
+<p>Pronto100 łączy się z komputerem przez USB lub z siecią przez Ethernet. W szybkim trybie przygotowuje do 200 kolorowych kart na godzinę. Ma trzy gotowe wzory HoloKote i funkcję Digital Shredding, która po zakończeniu zadania sprawia, że przesłane dane stają się nieczytelne.</p>
+
+<h3>Magicard 300 — regularny druk po obu stronach</h3>
+<p><a href="/produkt/magicard-300">Magicard 300</a> wybierz wtedy, gdy na odwrocie karty ma znaleźć się kod kreskowy, regulamin, dane kontaktowe albo dodatkowe informacje. Oferowany przez nas wariant Duo sam obraca kartę, więc operator nie musi przekładać jej ręcznie. Podajnik mieści 100 kart, odbiornik 70, a kolorowy ekran ma menu w języku polskim.</p>
+
+<p>Przy druku jednostronnym drukarka osiąga do 160 kolorowych kart na godzinę. Oprócz trzech standardowych znaków HoloKote może przechowywać trzy własne wzory, na przykład z logo firmy lub szkoły. USB i Ethernet są wyposażeniem standardowym.</p>
+
+<h3>Magicard 600 Duo — więcej szczegółów i Wi-Fi</h3>
+<p><a href="/produkt/magicard-600-duo">Magicard 600 Duo</a> jest najbardziej rozbudowanym z wprowadzonych modeli. Drukuje automatycznie po obu stronach, a przy czarnym nadruku pracuje w rozdzielczości do 600 × 300 dpi. Ma to znaczenie przy drobnym tekście, numerach i elementach zabezpieczających. Kolorowe zdjęcia i grafiki powstają w rozdzielczości 300 dpi.</p>
+
+<p>Przy druku jednostronnym wydajność dochodzi do 190 kolorowych kart na godzinę. Drukarka ma USB, Ethernet i Wi-Fi, a w pamięci można zapisać do 10 własnych wzorów HoloKote. To model dla organizacji, które drukują regularnie i chcą mieć większą swobodę przy projektowaniu zabezpieczeń kart.</p>`
+    },
+    {
+      id: 'holokote',
+      heading: 'HoloKote — zabezpieczenie bez osobnego laminatora',
+      content: `<p>Najbardziej charakterystyczną funkcją drukarek Magicard jest <strong>HoloKote</strong>. Podczas zwykłego cyklu druku urządzenie nanosi na kartę półprzezroczysty znak wodny widoczny pod kątem. Nie wymaga to osobnej stacji laminującej ani dodatkowego laminatu.</p>
+
+<p>W praktyce taki znak utrudnia prostą podmianę zdjęcia lub danych na identyfikatorze. Pronto100 ma trzy wzory fabryczne. Magicard 300 pozwala dodać do trzech własnych, a Magicard 600 Duo — do dziesięciu. Jeśli znak ma być mocniej widoczny, można użyć kart HoloPatch ze specjalnym polem, na którym wzór wyróżnia się wyraźniej.</p>
+
+<p>Każdy z trzech modeli ma też funkcję Digital Shredding. Po wydrukowaniu karty dane użyte w zadaniu są przekształcane tak, aby nie dało się ich później odczytać z pamięci urządzenia. W modelu 600 dochodzi do tego Threat Benchmarking, czyli mechanizm pomagający oceniać oprogramowanie drukarki pod kątem znanych zagrożeń.</p>`
+    },
+    {
+      id: 'tasmy-i-akcesoria',
+      heading: 'Taśmy i zestawy czyszczące też są na miejscu',
+      content: `<p>Drukarka kart bez właściwej taśmy nie zrobi wiele, dlatego równocześnie dodaliśmy materiały do wszystkich trzech serii. Przy każdej drukarce pokazujemy tylko kompatybilne produkty — nie trzeba porównywać oznaczeń między modelami.</p>
+
+<ul>
+<li><strong>Pronto100:</strong> taśmy kolorowe YMCKO na 100 lub 200 wydruków oraz taśmy monochromatyczne.</li>
+<li><strong>Magicard 300:</strong> kolorowa YMCKO na 300 kart, czarna KO na 600 kart i wspólna seria taśm monochromatycznych.</li>
+<li><strong>Magicard 600 Duo:</strong> YMCKO na 300 kart, YMCKOK do kolorowego awersu i czarnego rewersu oraz KO na 600 kart.</li>
+</ul>
+
+<p>Wspólna seria monochromatyczna obejmuje kolor czarny, biały, niebieski, zielony, czerwony, srebrny i złoty. Jest też wariant scratch-off do nanoszenia zdrapywalnej warstwy na kod PIN lub kod aktywacyjny.</p>
+
+<p>Do konserwacji służą dwa zestawy: <a href="/produkt/magicard-zestaw-czyszczacy-pronto100-e9100">E9100 do Pronto100</a> oraz <a href="/produkt/magicard-zestaw-czyszczacy-3633-0053">3633-0053 do modeli 300 i 600</a>. Regularne czyszczenie toru karty i głowicy pomaga uniknąć smug, pyłu pod warstwą ochronną i przedwczesnego zużycia podzespołów.</p>`
+    },
+    {
+      id: 'dostepnosc',
+      heading: 'Drukarki i materiały dostępne od ręki',
+      content: `<p>Wszystkie trzy drukarki oraz przeznaczone do nich taśmy i zestawy czyszczące są dostępne w bieżącej ofercie TAKMA. Dzięki temu całe stanowisko do druku identyfikatorów można skompletować w jednym zamówieniu.</p>`
+    },
+    {
+      id: 'ktory-model',
+      heading: 'Który model wybrać na początek',
+      content: `<p>Jeśli drukujesz pojedyncze identyfikatory w recepcji i wystarcza Ci zadruk jednej strony, zacznij od <a href="/produkt/magicard-pronto100">Pronto100</a>. To najprostszy i najbardziej kompaktowy wariant.</p>
+
+<p>Gdy karty mają zadrukowany awers i rewers, a w podajniku powinno mieścić się 100 sztuk, rozsądnym środkiem jest <a href="/produkt/magicard-300">Magicard 300</a>. Model 600 Duo warto wybrać przy regularnym druku, potrzebie połączenia przez Wi-Fi, drobnym tekście albo własnych zabezpieczeniach HoloKote.</p>
+
+<p>Jeżeli nie masz pewności, policzmy to od strony codziennej pracy: ile kart powstaje w miesiącu, co znajduje się na odwrocie i czy drukarka będzie używana przy jednym komputerze, czy przez kilka osób w sieci. Na tej podstawie dobierzemy model, taśmę oraz karty. Pełną ofertę znajdziesz na stronie <a href="/magicard">Magicard by Brady</a>, a w razie pytań możesz od razu <a href="/kontakt">skontaktować się z TAKMA</a>.</p>`
+    }
+  ],
+  faq: [
+    {
+      question: 'Jakie drukarki Magicard są dostępne w TAKMA?',
+      answer: 'Wprowadziliśmy trzy modele: jednostronną <a href="/produkt/magicard-pronto100">Magicard Pronto100</a> oraz dwustronne <a href="/produkt/magicard-300">Magicard 300</a> i <a href="/produkt/magicard-600-duo">Magicard 600 Duo</a>.'
+    },
+    {
+      question: 'Czym różnią się Magicard Pronto100, 300 i 600 Duo?',
+      answer: 'Pronto100 jest kompaktowym modelem jednostronnym z podajnikiem na 50 kart. Magicard 300 automatycznie drukuje po obu stronach i mieści 100 kart. Magicard 600 Duo również drukuje dwustronnie, a dodatkowo ma Wi-Fi, tryb monochromatyczny 600 × 300 dpi i obsługuje do 10 własnych wzorów HoloKote.'
+    },
+    {
+      question: 'Co to jest HoloKote?',
+      answer: 'HoloKote to półprzezroczysty znak wodny nanoszony na kartę podczas zwykłego drukowania. Nie wymaga osobnego laminatora ani dodatkowego laminatu. Pomaga zabezpieczyć identyfikator przed prostą podmianą danych lub zdjęcia.'
+    },
+    {
+      question: 'Czy drukarki i materiały Magicard są dostępne od ręki?',
+      answer: 'Tak. Wszystkie trzy drukarki oraz przeznaczone do nich taśmy i zestawy czyszczące są dostępne w bieżącej ofercie TAKMA. Aktualną dostępność pokazujemy na stronach produktów.'
+    },
+    {
+      question: 'Czy do drukarek Magicard można kupić taśmy w TAKMA?',
+      answer: 'Tak. Oferujemy taśmy kolorowe YMCKO i YMCKOK, czarne KO oraz taśmy monochromatyczne w kilku kolorach. Przy każdym modelu drukarki pokazujemy wyłącznie kompatybilne materiały.'
+    },
+    {
+      question: 'Które drukarki Magicard drukują dwustronnie?',
+      answer: 'Magicard 300 i Magicard 600 Duo automatycznie drukują obie strony karty. Pronto100 jest modelem jednostronnym — w razie potrzeby kartę można obrócić ręcznie.'
+    },
+    {
+      question: 'Jaką gwarancję mają drukarki Magicard?',
+      answer: 'Wszystkie trzy wprowadzone modele są objęte 3-letnią gwarancją producenta, zgodnie z warunkami programu MagiCover dla danego urządzenia.'
+    }
+  ],
+  relatedLinks: [
+    { title: 'Magicard by Brady — marka i pełna oferta', href: '/magicard' },
+    { title: 'Magicard Pronto100 — drukarka kart jednostronna', href: '/produkt/magicard-pronto100' },
+    { title: 'Magicard 300 — drukarka kart dwustronna', href: '/produkt/magicard-300' },
+    { title: 'Magicard 600 Duo — drukarka kart z Wi-Fi', href: '/produkt/magicard-600-duo' },
+    { title: 'Taśmy do drukarek kart', href: '/tasmy-do-drukarek-kart' },
+  ],
+},
 // ============================================================
 // 0. Brady przejmuje Honeywell PSS — zamknięcie transakcji 03.08.2026
 // ============================================================

@@ -829,4 +829,157 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       { title: 'Jak wybrać drukarkę etykiet — poradnik kupującego', href: '/poradnik/jak-wybrac-drukarke-etykiet' },
     ],
   },
+
+  // ============================================
+  // MAGICARD BY BRADY
+  // ============================================
+  magicard: {
+    heroText: 'Brytyjskie drukarki do kart plastikowych i identyfikatorów. Magicard łączy prostą personalizację kart z wbudowanymi zabezpieczeniami, takimi jak znak wodny HoloKote. W ofercie TAKMA znajdziesz modele Pronto100, 300 i 600 Duo, a także dopasowane taśmy i zestawy czyszczące.',
+
+    categoryTiles: [
+      {
+        categoryId: 'drukarki-kart',
+        name: 'Drukarki kart',
+        href: '/katalog?kategoria=drukarki-kart&producent=magicard',
+        description: 'Pronto100, Magicard 300 i Magicard 600 Duo do identyfikatorów oraz kart PVC.',
+      },
+      {
+        categoryId: 'materialy-eksploatacyjne',
+        name: 'Taśmy do drukarek kart',
+        href: '/katalog?kategoria=materialy-eksploatacyjne&producent=magicard',
+        description: 'Taśmy kolorowe YMCKO, czarne, białe i pozostałe warianty monochromatyczne.',
+      },
+      {
+        categoryId: 'akcesoria',
+        name: 'Czyszczenie i konserwacja',
+        href: '/katalog?kategoria=akcesoria&producent=magicard',
+        description: 'Oryginalne zestawy czyszczące do regularnej konserwacji drukarek Magicard.',
+      },
+    ],
+
+    featuredSlugs: [
+      'magicard-pronto100',
+      'magicard-300',
+      'magicard-600-duo',
+    ],
+
+    technologies: [
+      {
+        name: 'HoloKote',
+        badge: 'Zabezpieczenie karty',
+        description: 'Znak wodny nanoszony na powierzchnię karty podczas zwykłego cyklu druku. Jest wbudowany w drukarki Magicard, więc nie wymaga osobnego laminowania karty.',
+      },
+      {
+        name: 'Kodowanie kart inteligentnych',
+        badge: 'Identyfikacja',
+        description: 'Drukarki Magicard mogą kodować karty inteligentne w tym samym procesie, w którym nanoszą zdjęcie, dane właściciela i pozostałe elementy identyfikatora.',
+      },
+      {
+        name: 'Projekt i produkcja w Wielkiej Brytanii',
+        badge: 'Weymouth',
+        description: 'Projektowanie, rozwój nowych urządzeń i produkcja odbywają się w siedzibie Magicard w Weymouth. Na miejscu pracuje również zespół brytyjskich inżynierów producenta.',
+      },
+    ],
+
+    industries: [
+      {
+        name: 'Firmy i biura',
+        description: 'Identyfikatory pracownicze, karty dostępu i przepustki dla gości drukowane na miejscu, wtedy gdy są potrzebne.',
+        products: '[Pronto100](/produkt/magicard-pronto100), [Magicard 300](/produkt/magicard-300)',
+      },
+      {
+        name: 'Szkoły i uczelnie',
+        description: 'Legitymacje, identyfikatory uczniów i pracowników oraz karty używane w szkolnych systemach dostępu.',
+        products: '[Magicard 300](/produkt/magicard-300), [Magicard 600 Duo](/produkt/magicard-600-duo)',
+      },
+      {
+        name: 'Ochrona zdrowia',
+        description: 'Imienne identyfikatory personelu i karty, które pomagają kontrolować dostęp do wybranych pomieszczeń oraz danych.',
+        products: '[Magicard 300](/produkt/magicard-300), [Magicard 600 Duo](/produkt/magicard-600-duo)',
+      },
+      {
+        name: 'Transport i administracja',
+        description: 'Karty dostępu, identyfikatory ze zdjęciem i dokumenty wymagające wyraźnego nadruku oraz dodatkowego zabezpieczenia wizualnego.',
+        products: '[Magicard 600 Duo](/produkt/magicard-600-duo)',
+      },
+    ],
+
+    timeline: [
+      {
+        year: '1993',
+        event: 'Powstaje Magicard. Firma od początku skupia się na drukarkach kart wykorzystywanych m.in. do identyfikacji osób, kontroli dostępu, płatności i przechowywania danych.',
+      },
+      {
+        year: '2021',
+        event: 'Magicard dołącza do Brady Corporation i od tej pory działa jako Magicard by Brady.',
+      },
+    ],
+
+    aboutParagraphs: [
+      'Magicard działa od 1993 roku i specjalizuje się w drukarkach kart identyfikacyjnych. Urządzenia tej marki służą do przygotowywania identyfikatorów ze zdjęciem, kart dostępu, kart płatniczych oraz nośników danych. Korzystają z nich firmy, szkoły, placówki ochrony zdrowia, administracja i operatorzy infrastruktury.',
+      'Projektowanie nowych modeli, rozwój produktów i produkcja są skupione w siedzibie firmy w Weymouth w Wielkiej Brytanii. Każdego roku z tamtejszej fabryki wyjeżdżają dziesiątki tysięcy drukarek do ponad 100 krajów. Powstają na nich miliony zabezpieczonych kart — od zwykłych kart członkowskich po prawa jazdy i dokumenty tożsamości.',
+      'Od 2021 roku Magicard jest częścią Brady Corporation i działa pod nazwą Magicard by Brady. Nadal rozwija własne drukarki oraz zabezpieczenia kart, w tym HoloKote — znak wodny nanoszony bezpośrednio podczas drukowania.',
+    ],
+
+    partnership: [],
+    service: [],
+    comparisonIntro: '',
+    comparison: [],
+
+    whyBuyItems: [
+      {
+        title: 'Trzy modele do różnych nakładów',
+        text: 'Kompaktowy Pronto100 do bieżącego druku kart, Magicard 300 do regularnej pracy i 600 Duo do bardziej wymagających zastosowań.',
+      },
+      {
+        title: 'Materiały dobrane do drukarki',
+        text: 'Przy każdym modelu znajdziesz pasujące taśmy kolorowe i monochromatyczne oraz właściwy zestaw czyszczący.',
+      },
+      {
+        title: 'Dostępność bez czekania na import',
+        text: 'Drukarki i materiały Magicard w naszej ofercie mają stałą dostępność magazynową, dzięki czemu zamówienie można zrealizować bez oczekiwania na kolejną dostawę.',
+      },
+      {
+        title: 'Pomoc w doborze modelu',
+        text: 'Dobieramy drukarkę do liczby kart, druku jedno- lub dwustronnego, rodzaju zabezpieczenia i sposobu podłączenia w firmie.',
+      },
+    ],
+
+    faq: [
+      {
+        question: 'Czym zajmuje się Magicard?',
+        answer: 'Magicard produkuje drukarki do kart identyfikacyjnych. Służą one m.in. do przygotowywania identyfikatorów ze zdjęciem, kart dostępu, kart płatniczych i kart przechowujących dane.',
+      },
+      {
+        question: 'Gdzie produkowane są drukarki Magicard?',
+        answer: 'Projektowanie, rozwój nowych modeli i produkcja odbywają się w siedzibie firmy w Weymouth w Wielkiej Brytanii.',
+      },
+      {
+        question: 'Co oznacza nazwa Magicard by Brady?',
+        answer: 'Od 2021 roku Magicard jest częścią Brady Corporation — międzynarodowego producenta rozwiązań służących do identyfikacji i ochrony ludzi, produktów oraz miejsc.',
+      },
+      {
+        question: 'Co to jest HoloKote?',
+        answer: 'HoloKote to zabezpieczający znak wodny nanoszony na kartę w czasie jej drukowania. Jest wbudowany w drukarki Magicard i nie wymaga osobnego laminowania.',
+      },
+      {
+        question: 'Czy drukarki Magicard mogą kodować karty inteligentne?',
+        answer: 'Tak. Drukarki Magicard mogą kodować karty inteligentne w tym samym procesie, w którym wykonywany jest nadruk.',
+      },
+      {
+        question: 'Do czego wykorzystuje się drukarki Magicard?',
+        answer: 'Najczęściej do identyfikatorów pracowniczych, legitymacji, kart członkowskich oraz kart kontroli dostępu. Producent dostarcza rozwiązania m.in. dla firm, transportu, szkół i uczelni oraz ochrony zdrowia.',
+      },
+      {
+        question: 'Którą drukarkę Magicard wybrać?',
+        answer: '[Pronto100](/produkt/magicard-pronto100) sprawdzi się przy prostym druku jednostronnym. [Magicard 300](/produkt/magicard-300) automatycznie drukuje po obu stronach i jest przeznaczona do regularnej pracy. [Magicard 600 Duo](/produkt/magicard-600-duo) oferuje wyższą jakość drobnego tekstu, Wi-Fi i więcej własnych wzorów HoloKote.',
+      },
+      {
+        question: 'Czy TAKMA oferuje taśmy i akcesoria do Magicard?',
+        answer: 'Tak. W ofercie są oryginalne taśmy kolorowe i monochromatyczne do modeli Pronto100, 300 i 600 oraz zestawy do czyszczenia drukarek.',
+      },
+    ],
+
+    guideLinks: [],
+  },
 }
