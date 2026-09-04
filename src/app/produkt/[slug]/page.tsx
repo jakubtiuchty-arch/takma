@@ -35,6 +35,8 @@ import VariantsTable from './VariantsTable'
 import StockInfo from './StockInfo'
 import SmartPrice from './SmartPrice'
 import PromoBanner from './PromoBanner'
+import PriceIncreaseNotice from './PriceIncreaseNotice'
+import { priceIncreaseFor } from '@/data/price-increase'
 import ZipShipBanner from '@/components/promo/ZipShipBanner'
 import Ds3678DemoBanner from '@/components/promo/Ds3678DemoBanner'
 import { SmartPriceProvider } from './SmartPriceContext'
@@ -712,9 +714,16 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {/* Promocja producencka (np. Zebra CEE Voucher) — znika po terminie */}
             {(() => {
               const promo = activePromo(product.slug)
-              return promo ? (
-                <PromoBanner productName={product.name} productSlug={product.slug} promo={promo} />
-              ) : null
+              const increase = priceIncreaseFor(product)
+              return (
+                <>
+                  {promo ? (
+                    <PromoBanner productName={product.name} productSlug={product.slug} promo={promo} />
+                  ) : null}
+                  {/* Podwyżka cen Zebry od 5.10.2026 — tylko grupy z tabeli producenta, znika po terminie */}
+                  {increase ? <PriceIncreaseNotice priceFrom={product.priceFrom} info={increase} /> : null}
+                </>
+              )
             })()}
 
             {/* Promocja ZipShip na kartach materiałów (etykiety/taśmy) — znika po 31.12 */}
