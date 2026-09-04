@@ -40,7 +40,7 @@ export const MANUAL_STOCK_OVERRIDES = new Map<string, ManualStockOverride>([
     {
       stockPL: 10,
       stockDE: 0,
-      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+      deliveryText: 'Dostępny — wysyłka 24h (10 szt.)',
     },
   ],
   [
@@ -48,7 +48,7 @@ export const MANUAL_STOCK_OVERRIDES = new Map<string, ManualStockOverride>([
     {
       stockPL: 10,
       stockDE: 0,
-      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+      deliveryText: 'Dostępny — wysyłka 24h (10 szt.)',
     },
   ],
   [
@@ -56,7 +56,7 @@ export const MANUAL_STOCK_OVERRIDES = new Map<string, ManualStockOverride>([
     {
       stockPL: 10,
       stockDE: 0,
-      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+      deliveryText: 'Dostępny — wysyłka 24h (10 szt.)',
     },
   ],
   [
@@ -64,7 +64,7 @@ export const MANUAL_STOCK_OVERRIDES = new Map<string, ManualStockOverride>([
     {
       stockPL: 10,
       stockDE: 0,
-      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+      deliveryText: 'Dostępny — wysyłka 24h (10 szt.)',
     },
   ],
   [
@@ -72,7 +72,7 @@ export const MANUAL_STOCK_OVERRIDES = new Map<string, ManualStockOverride>([
     {
       stockPL: 10,
       stockDE: 0,
-      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+      deliveryText: 'Dostępny — wysyłka 24h (10 szt.)',
     },
   ],
   [
@@ -80,7 +80,7 @@ export const MANUAL_STOCK_OVERRIDES = new Map<string, ManualStockOverride>([
     {
       stockPL: 10,
       stockDE: 0,
-      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+      deliveryText: 'Dostępny — wysyłka 24h (10 szt.)',
     },
   ],
   [
@@ -88,7 +88,7 @@ export const MANUAL_STOCK_OVERRIDES = new Map<string, ManualStockOverride>([
     {
       stockPL: 10,
       stockDE: 0,
-      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+      deliveryText: 'Dostępny — wysyłka 24h (10 szt.)',
     },
   ],
   [
@@ -96,7 +96,7 @@ export const MANUAL_STOCK_OVERRIDES = new Map<string, ManualStockOverride>([
     {
       stockPL: 10,
       stockDE: 0,
-      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+      deliveryText: 'Dostępny — wysyłka 24h (10 szt.)',
     },
   ],
   [
@@ -104,7 +104,7 @@ export const MANUAL_STOCK_OVERRIDES = new Map<string, ManualStockOverride>([
     {
       stockPL: 10,
       stockDE: 0,
-      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+      deliveryText: 'Dostępny — wysyłka 24h (10 szt.)',
     },
   ],
   [
@@ -112,7 +112,7 @@ export const MANUAL_STOCK_OVERRIDES = new Map<string, ManualStockOverride>([
     {
       stockPL: 10,
       stockDE: 0,
-      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+      deliveryText: 'Dostępny — wysyłka 24h (10 szt.)',
     },
   ],
   ...([
@@ -130,7 +130,7 @@ export const MANUAL_STOCK_OVERRIDES = new Map<string, ManualStockOverride>([
     {
       stockPL: 10,
       stockDE: 0,
-      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+      deliveryText: 'Dostępny — wysyłka 24h (10 szt.)',
     },
   ]),
   [
@@ -138,7 +138,7 @@ export const MANUAL_STOCK_OVERRIDES = new Map<string, ManualStockOverride>([
     {
       stockPL: 10,
       stockDE: 0,
-      deliveryText: 'Dostępny u dystrybutora — 10 szt.',
+      deliveryText: 'Dostępny — wysyłka 24h (10 szt.)',
     },
   ],
 ])

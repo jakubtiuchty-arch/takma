@@ -75,7 +75,8 @@ for (const model of models) {
   const format = price => price.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).replace(/\s/g, ' ')
   assert(text.includes(`${format(model.net)} zł netto`), `${model.slug}: net price missing from server HTML`)
   assert(text.includes(`${format(Number(model.gross))} zł brutto`), `${model.slug}: gross price missing from server HTML`)
-  assert(text.includes('Dostępny u dystrybutora: 10 szt.'), `${model.slug}: manual stock missing from server HTML`)
+  assert(text.includes('Magazyn PL: 10 szt. — wysyłka 24h'), `${model.slug}: PL stock/shipping missing from server HTML`)
+  assert(!text.includes('Dostępny u dystrybutora:'), `${model.slug}: outdated stock label`)
   const ogPrice = metaTags.find(tag => attribute(tag, 'name') === 'product:price:amount' || attribute(tag, 'property') === 'product:price:amount')
   assert.equal(attribute(ogPrice || '', 'content'), model.gross, `${model.slug}: Open Graph price`)
   if (model.slug !== 'magicard-pronto100') {
