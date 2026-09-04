@@ -250,11 +250,11 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
 
   return (
     <tr className={`${rowIndex % 2 === 0 ? 'bg-white' : 'bg-gray-50'} hover:bg-primary-50/50 transition-colors`}>
-      <td className="px-3 py-3.5 text-sm font-mono font-semibold text-gray-900 whitespace-nowrap">
+      <td className={`${attributeKeys.length >= 5 ? 'px-2' : 'px-3'} py-3.5 text-sm font-mono font-semibold text-gray-900 whitespace-nowrap`}>
         {variant.partNumber}
       </td>
       {attributeKeys.map((key) => (
-        <td key={key} className="px-3 py-3.5 text-sm text-gray-700 text-center">
+        <td key={key} className={`${attributeKeys.length >= 5 ? 'px-2' : 'px-3'} py-3.5 text-sm text-gray-700 text-center`}>
           {variant.attributes[key] || '—'}
         </td>
       ))}
@@ -286,7 +286,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
       <td className="px-3 py-3.5 text-center">
         <Badge variant={avail.variant}>{avail.label}</Badge>
       </td>
-      <td className="px-3 py-3.5 text-center whitespace-nowrap">
+      <td className="sticky right-0 z-10 bg-inherit px-3 py-3.5 text-center whitespace-nowrap shadow-[-8px_0_12px_-8px_rgba(0,0,0,0.12)]">
         {isUnavailable ? (
           <NotifyButton partNumber={variant.partNumber} productName={`${productName} (${variant.partNumber})`} />
         ) : !cartPrice ? (
@@ -486,6 +486,9 @@ export default function VariantsTable({ productSlug, productName, productImage, 
 
   const sharedProps = { productSlug, productName, productImage, attributeKeys, mounted, stockData, stockLoading, addItem, isInCart, variantAttributeTooltips, manufacturerId }
   const colCount = 4 + attributeKeys.length // PN + attrs + cena + magazyn + status + akcja
+  // Przy wielu atrybutach (np. TC501: 6) tabela nie mieściła się w kolumnie —
+  // ciaśniejsze odstępy i nagłówki łamane na dwie linie zamiast jednej długiej
+  const dense = attributeKeys.length >= 5
 
   return (
     <section id="warianty" className="scroll-mt-28">
@@ -497,11 +500,11 @@ export default function VariantsTable({ productSlug, productName, productImage, 
           <caption className="sr-only">Warianty i konfiguracje {productName}</caption>
           <thead>
             <tr className="bg-gray-100 border-b border-gray-200">
-              <th scope="col" className="px-3 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider first:rounded-tl-xl">
+              <th scope="col" className={`${dense ? 'px-2' : 'px-3'} py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider first:rounded-tl-xl`}>
                 Part Number
               </th>
               {attributeKeys.map((key) => (
-                <th key={key} scope="col" className="px-3 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider whitespace-nowrap">
+                <th key={key} scope="col" className={`${dense ? 'px-2' : 'px-3'} py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider leading-tight ${dense ? 'max-w-[6.5rem]' : 'whitespace-nowrap'}`}>
                   <AttributeLabel label={key} extraTooltips={variantAttributeTooltips} />
                 </th>
               ))}
@@ -514,7 +517,7 @@ export default function VariantsTable({ productSlug, productName, productImage, 
               <th scope="col" className="px-3 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider">
                 Status
               </th>
-              <th scope="col" className="px-3 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider rounded-tr-xl">
+              <th scope="col" className="sticky right-0 z-10 bg-gray-100 px-3 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider rounded-tr-xl shadow-[-8px_0_12px_-8px_rgba(0,0,0,0.12)]">
                 Akcja
               </th>
             </tr>
