@@ -164,11 +164,11 @@ export const categories: Category[] = [
     slug: 'drukarki-kart',
     name: 'Drukarki kart plastikowych',
     description: 'Drukarki kart plastikowych PVC — identyfikatory, karty dostępu, karty lojalnościowe, kodowanie RFID/NFC',
-    seoTitle: 'Drukarki kart plastikowych Zebra | ZC100, ZC300, ZC350',
-    seoDescription: 'Drukarki kart plastikowych Zebra: ZC100, ZC300, ZC350 — druk termosublimacyjny i retransferowy. Karty pracownicze, identyfikatory, karty RFID/NFC, magnetic stripe. Kodowanie Mifare, HID Prox, iCLASS. Ceny netto B2B, dostawa 24h.',
-    longDescription: 'Drukarki kart plastikowych (card printers) to specjalistyczne urządzenia do personalizacji kart PVC w standardzie CR-80 (85,6 × 54 mm). Drukują identyfikatory pracownicze, karty dostępu, legitymacje szkolne, karty lojalnościowe i przepustki — z pełnokolorowym nadrukiem zdjęć, logo i kodów kreskowych. Dostępne w technologii termosublimacyjnej (direct-to-card, 300 dpi) i retransferowej (edge-to-edge, do 600 dpi). Opcje kodowania: pasek magnetyczny HiCo/LoCo, smart card kontaktowy (ISO 7816), zbliżeniowy RFID/NFC (Mifare Classic, DESFire, HID Prox, iCLASS). W ofercie TAKMA modele Zebra ZC100 (entry-level), ZC300 (mid-range, jedno- i dwustronna) oraz ZC350 (zaawansowane kodowanie). Koszt druku własnego: ok. 2 zł/karta vs 5–10 zł przy outsourcingu — zwrot inwestycji już od 500 kart.',
+    seoTitle: 'Drukarki kart plastikowych | Zebra i Magicard',
+    seoDescription: 'Drukarki kart plastikowych Zebra i Magicard — ZC100, ZC300 i Pronto100. Identyfikatory, karty dostępu i lojalnościowe, druk kolorowy oraz zabezpieczenia HoloKote.',
+    longDescription: 'Drukarki kart plastikowych (card printers) to specjalistyczne urządzenia do personalizacji kart PVC w standardzie CR-80 (85,6 × 54 mm). Drukują identyfikatory pracownicze, karty dostępu, legitymacje szkolne, karty lojalnościowe i przepustki — z pełnokolorowym nadrukiem zdjęć, logo i kodów kreskowych. W ofercie TAKMA znajdują się drukarki bezpośredniego druku na kartach: Magicard Pronto100 z zabezpieczeniami HoloKote i Digital Shredding oraz modele Zebra ZC100 i ZC300, dostępne także z opcjami kodowania kart.',
     icon: 'printer',
-    productCount: 2,
+    productCount: 3,
   },
   {
     id: 'drukarki-opasek',
@@ -46195,6 +46195,136 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
 // ============================================
 
 const cardPrinters: Product[] = [
+  {
+    id: 'magicard-pronto100',
+    slug: 'magicard-pronto100',
+    name: 'Magicard Pronto100',
+    shortDescription: 'Magicard Pronto100 — kompaktowa, jednostronna drukarka kart PVC z Ethernetem, HoloKote, Digital Shredding i drukiem do 200 kart/h',
+    seoTitle: 'Magicard Pronto100 — drukarka kart PVC z HoloKote',
+    seoDescription: 'Magicard Pronto100 — kompaktowa drukarka kart i identyfikatorów. Kolor do 200 kart/h, Ethernet, 3 wzory HoloKote, Digital Shredding i 3 lata gwarancji.',
+    description: `Dla kogo? Magicard Pronto100 to kompaktowa drukarka kart plastikowych dla recepcji, biur, szkół, klubów i punktów obsługi, które chcą samodzielnie drukować identyfikatory, karty członkowskie, lojalnościowe oraz przepustki.
+
+Urządzenie drukuje jednostronnie, bezpośrednio na kartach PVC CR-80. W standardowym trybie kolorowym przygotowuje kartę w około 23 sekundy (do 157 kart/h), a w trybie wysokiej prędkości w około 18 sekund (do 200 kart/h). Druk monochromatyczny osiąga do 766 kart/h. Podajnik i odbiornik mieszczą po 50 kart, a pojedyncze karty można podawać ręcznie.
+
+Pronto100 ma wbudowane trzy wzory zabezpieczenia HoloKote, nanoszone na powierzchnię karty bez osobnego laminatu. Funkcja Digital Shredding po wydruku usuwa dane w sposób uniemożliwiający ich odczytanie, wspierając ochronę danych osobowych. Opcjonalne karty HoloPatch dodatkowo zwiększają widoczność znaku zabezpieczającego.
+
+Interfejs Clix pozwala zdalnie przeprowadzać konfigurację, diagnostykę i podstawowe czynności obsługowe. Drukarka ma standardowo USB 2.0 oraz Ethernet 10/100, współpracuje z Windows 10/11, macOS i systemami Linux z CUPS. Europejski wariant urządzenia ma numer 3100-0001/3.
+
+Wymiary: 179 × 309 × 208 mm, masa 2,9 kg. Producent obejmuje urządzenie 3-letnią ograniczoną gwarancją MagiCover, w tym gwarancją głowicy do 50 000 kart lub 250 000 paneli — zgodnie z warunkami programu.`,
+    categoryId: 'drukarki-kart',
+    subcategoryIds: [],
+    manufacturerId: 'magicard',
+    images: [
+      'https://moduluscardprinters.co.uk/wp-content/uploads/2021/04/Magicard_Pronto100_ID_Card_Printer_3100-0001_Left-1536x1536.jpg',
+      'https://identicard.com/cdn/shop/products/MagicardPronto100Right.jpg?v=1641299781',
+      'https://www.thecardnetwork.co.uk/cdn/shop/files/magicard-pronto100-starter-id-card-printer.png?v=1707927844',
+    ],
+    imageDescriptions: [
+      'Magicard Pronto100 — widok z lewej strony',
+      'Magicard Pronto100 — widok z prawej strony',
+      'Magicard Pronto100 — widok produktu na przezroczystym tle',
+    ],
+    tags: ['retail', 'healthcare'],
+    availability: 'on-order',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Technologia druku', value: 'Direct-to-card, termosublimacja / druk termotransferowy monochromatyczny' },
+      { name: 'Druk jedno-/dwustronny', value: 'Jednostronny' },
+      { name: 'Prędkość druku kolorowego', value: 'Do 200 kart/h (tryb szybki) lub 157 kart/h (tryb jakości HD)' },
+      { name: 'Prędkość druku monochromatycznego', value: 'Do 766 kart/h' },
+      { name: 'Format kart', value: 'CR-80 / CR-79, PVC, karty rewritable i HoloPatch' },
+      { name: 'Grubość kart', value: '0,50–1,00 mm' },
+      { name: 'Pojemność podajnika', value: '50 kart' },
+      { name: 'Pojemność odbiornika', value: '50 kart' },
+      { name: 'Podawanie ręczne', value: 'Tak' },
+      { name: 'Zabezpieczenia wizualne', value: '3 standardowe wzory HoloKote; HoloPatch opcjonalnie' },
+      { name: 'Bezpieczeństwo danych', value: 'Digital Shredding, Threat Benchmarking' },
+      { name: 'Zarządzanie', value: 'Clix — zdalna konfiguracja, obsługa i diagnostyka' },
+      { name: 'Łączność', value: 'USB 2.0 Type A, Ethernet 10/100' },
+      { name: 'Systemy operacyjne', value: 'Windows 10/11, macOS, Linux z CUPS' },
+      { name: 'Wymiary (szer.×gł.×wys.)', value: '179 × 309 × 208 mm' },
+      { name: 'Waga', value: '2,9 kg' },
+      { name: 'Part Number (Europa)', value: '3100-0001/3' },
+      { name: 'Gwarancja', value: '3 lata MagiCover Limited; głowica do 50 000 kart / 250 000 paneli' },
+    ],
+    applications: [
+      'Identyfikatory pracownicze',
+      'Karty dostępu z nadrukiem',
+      'Karty członkowskie i klubowe',
+      'Karty lojalnościowe i rabatowe',
+      'Legitymacje i identyfikatory szkolne',
+      'Przepustki dla gości i uczestników wydarzeń',
+    ],
+    variants: [
+      {
+        partNumber: '3100-0001/3',
+        name: 'Pronto100 — wariant europejski',
+        availability: 'on-order',
+        attributes: { 'Druk': 'Jednostronny', 'Ethernet': 'Tak', 'Region': 'Europa' },
+      },
+    ],
+    compatibleAccessories: [],
+    relatedAccessories: [],
+    faq: [
+      { question: 'Czy Magicard Pronto100 drukuje dwustronnie?', answer: 'Nie. Pronto100 jest drukarką jednostronną. Jeśli informacje mają znaleźć się na obu stronach, kartę trzeba obrócić ręcznie lub wybrać model z automatycznym modułem druku dwustronnego.' },
+      { question: 'Jak szybko drukuje Pronto100?', answer: 'W trybie wysokiej prędkości druk kolorowy trwa około 18 sekund, czyli do 200 kart na godzinę. Tryb jakości HD to około 23 sekundy i do 157 kart na godzinę. Druk monochromatyczny osiąga do 766 kart na godzinę.' },
+      { question: 'Co to jest HoloKote?', answer: 'HoloKote to technologia Magicard, która podczas druku nanosi na powierzchnię karty znak wodny. Pronto100 oferuje trzy standardowe wzory bez potrzeby stosowania osobnego laminatu.' },
+      { question: 'Jak Pronto100 chroni dane osobowe?', answer: 'Funkcja Digital Shredding po zakończeniu zadania przekształca dane wysłane do drukarki w nieczytelną postać. Pomaga to ograniczyć ryzyko odzyskania danych użytych do personalizacji identyfikatora.' },
+      { question: 'Czy Pronto100 można podłączyć do sieci?', answer: 'Tak. Ethernet 10/100 i USB 2.0 są wyposażeniem standardowym, dlatego drukarka może pracować lokalnie lub jako urządzenie sieciowe.' },
+      { question: 'Jakie materiały pasują do Pronto100?', answer: 'Drukarka korzysta z dedykowanych taśm Magicard Pronto100, m.in. kolorowych YMCKO o wydajności 100 lub 200 kart oraz taśm monochromatycznych. Obsługuje karty CR-80/CR-79 o grubości 0,50–1,00 mm.' },
+      { question: 'Jaka jest gwarancja na Magicard Pronto100?', answer: 'W Polsce i innych objętych programem krajach UE producent oferuje 3-letnią ograniczoną gwarancję MagiCover. Obejmuje ona głowicę do 50 000 kart lub 250 000 paneli, zgodnie z warunkami producenta i przy stosowaniu zatwierdzonych materiałów Magicard.' },
+    ],
+    comparison: {
+      title: 'Porównanie kompaktowych drukarek kart',
+      models: [
+        {
+          name: 'Magicard Pronto100',
+          slug: 'magicard-pronto100',
+          highlight: true,
+          specs: {
+            'Druk': 'Jednostronny',
+            'Prędkość (kolor)': 'Do 200 kart/h',
+            'Podajnik / odbiornik': '50 / 50 kart',
+            'Zabezpieczenia': 'HoloKote, Digital Shredding',
+            'Łączność': 'USB, Ethernet',
+            'Gwarancja': '3 lata',
+          },
+        },
+        {
+          name: 'Zebra ZC100',
+          slug: 'zebra-zc100',
+          specs: {
+            'Druk': 'Jednostronny',
+            'Prędkość (kolor)': '150 kart/h',
+            'Podajnik / odbiornik': '100 / 50 kart',
+            'Zabezpieczenia': 'Opcjonalny pasek magnetyczny',
+            'Łączność': 'USB, Ethernet (opcja)',
+            'Gwarancja': '2 lata',
+          },
+        },
+        {
+          name: 'Zebra ZC300',
+          slug: 'zebra-zc300',
+          specs: {
+            'Druk': 'Jedno-/dwustronny',
+            'Prędkość (kolor)': '140 kart/h',
+            'Podajnik / odbiornik': '100 / 100 kart',
+            'Zabezpieczenia': 'Opcje kodowania RFID/NFC',
+            'Łączność': 'USB, Ethernet, Wi-Fi (opcja)',
+            'Gwarancja': '2 lata',
+          },
+        },
+      ],
+    },
+    downloads: [
+      { name: 'Instrukcja obsługi Pronto100 (EN)', type: 'manual', url: 'https://support.magicard.com/support-solution/user-guide-pronto100/', size: '4,89 MB' },
+      { name: 'Karta katalogowa Pronto100 (EN)', type: 'datasheet', url: 'https://magicard.com/download/Class_Class_Attachments/f7f03f82-f9fa-11eb-850d-06a63d65978a/', size: 'PDF' },
+      { name: 'Magicard HUB', type: 'software', url: 'https://magicard.com/printers-and-software/magicard-hub/', size: 'Online' },
+    ],
+    createdAt: '2026-09-04',
+    sameAs: 'https://magicard.com/printers-and-software/pronto100/',
+  },
   {
     id: 'zebra-zc100',
     slug: 'zebra-zc100',

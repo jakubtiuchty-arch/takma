@@ -117,7 +117,11 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
       : `${product.shortDescription}. Sprawdź i zamów w TAKMA.`
 
   // OG image — pełny URL z domeną (nie relative path)
-  const ogImage = product.images[0] ? `https://www.takma.com.pl${product.images[0]}` : undefined
+  const ogImage = product.images[0]
+    ? product.images[0].startsWith('http')
+      ? product.images[0]
+      : `https://www.takma.com.pl${product.images[0]}`
+    : undefined
 
   // ── Canonical: dla etykiet (DT i TT) przekazujemy autorytet stronie serii.
   //  • Z ?pn= → canonical na nowy URL wariantu (komponent też robi 301, to backstop)
@@ -669,7 +673,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               </div>
               {manufacturer?.logo && (
                 <Link
-                  href={`/${manufacturer.slug}`}
+                  href={['zebra', 'honeywell', 'newland'].includes(manufacturer.slug)
+                    ? `/${manufacturer.slug}`
+                    : `/katalog?producent=${manufacturer.slug}`}
                   className="flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity mt-1"
                   title={`Wszystkie produkty ${manufacturer.name}`}
                 >

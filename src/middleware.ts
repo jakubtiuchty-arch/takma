@@ -85,7 +85,7 @@ export async function middleware(request: NextRequest) {
       'zebra-futeral-zq310', 'zebra-futeral-zq320-plus',
       'zebra-futeral-zq210', 'zebra-futeral-zq220-plus',
       // Drukarki kart
-      'zebra-zc100', 'zebra-zc300', 'zebra-zc350',
+      'magicard-pronto100', 'zebra-zc100', 'zebra-zc300', 'zebra-zc350',
       // Terminale
       'zebra-mc2200', 'zebra-mc2700', 'zebra-mc3300x', 'zebra-mc3400', 'zebra-mc3450',
       'zebra-mc9400', 'zebra-mc9450', 'zebra-em45',
