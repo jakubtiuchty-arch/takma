@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect, useCallback } from 'react'
+import Image from 'next/image'
 import { SHIPPING_COST_NETTO, FREE_SHIPPING_FROM_NETTO, isFreeShipping } from '@/lib/shipping'
 import { createPortal } from 'react-dom'
 import { Product } from '@/data/products'
@@ -173,22 +174,45 @@ export default function SmartPrice({ product }: SmartPriceProps) {
         </div>
       )}
 
-      {/* Koszt dostawy — te same progi co w koszyku (src/lib/shipping.ts) */}
+      {/* Koszt dostawy — te same progi co w koszyku (src/lib/shipping.ts).
+          Kafel z ikoną 3D z serii „clay” (jak na /kontakt): gratis na zielono,
+          poniżej progu konkretna kwota, której brakuje do darmowej dostawy. */}
       {!loading && price && (
-        <p className="mt-3 pt-3 border-t border-gray-200 text-sm text-gray-600">
-          Dostawa:{' '}
-          {isFreeShipping(price) ? (
-            <>
-              <strong className="text-green-700">gratis</strong>
-              <span className="text-gray-400 ml-1">— zamówienie powyżej {FREE_SHIPPING_FROM_NETTO} zł netto</span>
-            </>
-          ) : (
-            <>
-              <strong className="text-gray-900">{SHIPPING_COST_NETTO} zł netto</strong>
-              <span className="text-gray-400 ml-1">— gratis od {FREE_SHIPPING_FROM_NETTO} zł netto</span>
-            </>
-          )}
-        </p>
+        <div
+          className={`mt-4 flex items-center gap-3 rounded-xl border px-3.5 py-3 ${
+            isFreeShipping(price) ? 'border-green-200 bg-green-50' : 'border-gray-200 bg-white'
+          }`}
+        >
+          <Image
+            src="/images/ikony/clay-delivery-alpha.png"
+            alt=""
+            width={112}
+            height={112}
+            className="w-12 h-12 sm:w-14 sm:h-14 shrink-0 object-contain"
+          />
+          <div className="min-w-0">
+            {isFreeShipping(price) ? (
+              <>
+                <p className="text-base font-bold text-gray-900 leading-tight">
+                  Dostawa <span className="text-green-700">gratis</span>
+                </p>
+                <p className="text-xs text-gray-600 mt-0.5">Kurier w cenie przy zamówieniu od {FREE_SHIPPING_FROM_NETTO} zł netto</p>
+              </>
+            ) : (
+              <>
+                <p className="text-base font-bold text-gray-900 leading-tight">
+                  Dostawa {SHIPPING_COST_NETTO} zł <span className="text-sm font-medium text-gray-500">netto</span>
+                </p>
+                <p className="text-xs text-gray-600 mt-0.5">
+                  Do darmowej dostawy brakuje{' '}
+                  <strong className="text-gray-900">
+                    {(FREE_SHIPPING_FROM_NETTO - price).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł netto
+                  </strong>
+                </p>
+              </>
+            )}
+          </div>
+        </div>
       )}
     </div>
   )
