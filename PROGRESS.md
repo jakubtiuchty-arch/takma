@@ -476,3 +476,10 @@ Otwarte na kolejne sesje:
 - **Callouty** ×3 na tych grupach (24 powiązania). **Budżety**: SW Zebra 40→60 zł, SW Modele 50→75 zł/dzień.
 - Tablety, drukarki, skanery — bez zmian (zgodnie z decyzją: komunikat tylko na terminalach).
 - Składnia licznika przez API: bez cudzysłowów i języka, `daysBefore` obowiązkowe. Skrypt: `~/takma-ads-podwyzka-2026-10/mutate-podwyzka.ts`. **Po 4.10 cofnąć** (lista w pamięci `project_takma-podwyzka-zebra-2026-10`).
+
+## 2026-09-05 — Kampania Ads „Drukarki kart — szkoły i instytucje [API]”
+- Research (artefakt „Drukarki kart dla szkół i instytucji”) sugerował najpierw landing; user zdecydował: kampania od razu na frazy ścisłe, landing dopiero po ocenie ruchu.
+- Utworzona przez `googleAds:mutate` (201 operacji, tymczasowe ID): kampania **24213061119**, Search bez partnerów, 16 województw, język PL, maksymalizacja kliknięć z limitem CPC 4 zł, budżet 25 zł/dzień.
+- 4 grupy: Drukarki kart plastikowych (203518458441 → /drukarki-kart), Legitymacje szkolne (197687065857 → /drukarki-kart), Zebra ZC100/ZC300 (202802279671 → /produkt/zebra-zc100), Magicard (198629695903 → /produkt/magicard-300). 58 fraz × EXACT+PHRASE = 116 słów, 40 wykluczeń (zdjęcie, wymiary, numer, mobywatel, studencka, sterownik, używane, olx, etykiety…), 5 sitelinków, 4 callouty.
+- Stan po utworzeniu: SERVING / LEARNING, 4 RSA w REVIEW_IN_PROGRESS. Skrypt: `~/takma-ads-drukarki-kart-2026-09/drukarki-kart-campaign.ts`.
+- Do oceny po ~2 tyg.: wyszukiwane hasła (dopisać wykluczenia), CTR per grupa, sygnały kontaktu → decyzja o landingu dla szkół.
