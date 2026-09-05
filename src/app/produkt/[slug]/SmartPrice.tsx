@@ -175,7 +175,7 @@ export default function SmartPrice({ product }: SmartPriceProps) {
       )}
 
       {/* Koszt dostawy — te same progi co w koszyku (src/lib/shipping.ts).
-          Kafel z ikoną 3D z serii „clay” (jak na /kontakt): gratis na zielono,
+          Kafel z płaską ikoną dostawy (ta sama co na stronie głównej): gratis na zielono,
           poniżej progu konkretna kwota, której brakuje do darmowej dostawy. */}
       {!loading && price && (
         <div
@@ -184,7 +184,7 @@ export default function SmartPrice({ product }: SmartPriceProps) {
           }`}
         >
           <Image
-            src="/images/ikony/clay-delivery-alpha.png"
+            src="/images/ikony/flat-delivery.png"
             alt=""
             width={112}
             height={112}
