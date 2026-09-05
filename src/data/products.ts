@@ -942,8 +942,6 @@ Do papieru w zwykłych warunkach często wystarcza taśma woskowa. Przy większy
 
 Gwarancja producenta na drukarkę wynosi 24 miesiące. Dla głowicy termotransferowej w regionie EMEA obowiązuje rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej, na warunkach Zebra. Nie jest to deklarowana żywotność głowicy ani liczba etykiet. Zakres dodatkowego kontraktu Zebra OneCare trzeba sprawdzić dla wybranego pakietu.
 
-Parametry pochodzą ze [specyfikacji serii ZD400 producenta](https://www.zebra.com/pl/pl/products/spec-sheets/printers/desktop/zd400-series.html), a okresy ochrony z [warunków gwarancji Zebra](https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/presentation/product-warranty-exceptions-list.pdf).
-
 Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/zebra-zd421d). To mniejsza konstrukcja bez mechanizmu taśmy, z innymi częściami i akcesoriami.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
