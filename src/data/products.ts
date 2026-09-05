@@ -981,6 +981,7 @@ Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz' },
       { name: 'Certyfikaty', value: 'CE, FCC Class B, ICES, cTUVus, S-Mark, CCC' },
       { name: 'Gwarancja', value: '24 miesiące (drukarka); głowica: rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej (EMEA)' },
+      { name: 'W zestawie', value: 'Drukarka Zebra ZD421t (termotransferowa, drukuje też termicznie), zasilacz z kablem zasilającym, kabel USB, instrukcja szybkiego uruchamiania' },
     ],
     applications: [
       'Etykiety wysyłkowe i kurierskie',
