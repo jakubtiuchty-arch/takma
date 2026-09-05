@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect, useCallback } from 'react'
+import { SHIPPING_COST_NETTO, FREE_SHIPPING_FROM_NETTO, isFreeShipping } from '@/lib/shipping'
 import { createPortal } from 'react-dom'
 import { Product } from '@/data/products'
 import { useSmartPrice } from './SmartPriceContext'
@@ -170,6 +171,24 @@ export default function SmartPrice({ product }: SmartPriceProps) {
             </div>
           )}
         </div>
+      )}
+
+      {/* Koszt dostawy — te same progi co w koszyku (src/lib/shipping.ts) */}
+      {!loading && price && (
+        <p className="mt-3 pt-3 border-t border-gray-200 text-sm text-gray-600">
+          Dostawa:{' '}
+          {isFreeShipping(price) ? (
+            <>
+              <strong className="text-green-700">gratis</strong>
+              <span className="text-gray-400 ml-1">— zamówienie powyżej {FREE_SHIPPING_FROM_NETTO} zł netto</span>
+            </>
+          ) : (
+            <>
+              <strong className="text-gray-900">{SHIPPING_COST_NETTO} zł netto</strong>
+              <span className="text-gray-400 ml-1">— gratis od {FREE_SHIPPING_FROM_NETTO} zł netto</span>
+            </>
+          )}
+        </p>
       )}
     </div>
   )

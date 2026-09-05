@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useMemo } from 'react'
+import { SHIPPING_COST_NETTO, FREE_SHIPPING_FROM_NETTO } from '@/lib/shipping'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button, Input, Textarea, Checkbox } from '@/components/ui'
@@ -65,8 +66,9 @@ interface FormErrors {
 
 // ── Stale ────────────────────────────────────────────────────────
 
-const FREE_SHIPPING_THRESHOLD = 1000 // netto PLN
-const SHIPPING_COST = 25 // netto PLN
+// progi dostawy: jedno źródło z kartą produktu i regulaminem
+const FREE_SHIPPING_THRESHOLD = FREE_SHIPPING_FROM_NETTO
+const SHIPPING_COST = SHIPPING_COST_NETTO
 
 // ── Helpers ─────────────────────────────────────────────────────
 
