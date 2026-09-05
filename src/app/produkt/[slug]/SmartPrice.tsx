@@ -175,14 +175,10 @@ export default function SmartPrice({ product }: SmartPriceProps) {
       )}
 
       {/* Koszt dostawy — te same progi co w koszyku (src/lib/shipping.ts).
-          Kafel z płaską ikoną dostawy (ta sama co na stronie głównej): gratis na zielono,
+          Wiersz z płaską ikoną dostawy (ta sama co na stronie głównej), wtopiony w box ceny: gratis na zielono,
           poniżej progu konkretna kwota, której brakuje do darmowej dostawy. */}
       {!loading && price && (
-        <div
-          className={`mt-4 flex items-center gap-3 rounded-xl border px-3.5 py-3 ${
-            isFreeShipping(price) ? 'border-green-200 bg-green-50' : 'border-gray-200 bg-white'
-          }`}
-        >
+        <div className="mt-3 pt-3 border-t border-gray-200 flex items-center gap-3">
           <Image
             src="/images/ikony/flat-delivery.png"
             alt=""
