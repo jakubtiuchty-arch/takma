@@ -178,7 +178,7 @@ export default function SmartPrice({ product }: SmartPriceProps) {
           Wiersz z płaską ikoną dostawy (ta sama co na stronie głównej), wtopiony w box ceny: gratis na zielono,
           poniżej progu konkretna kwota, której brakuje do darmowej dostawy. */}
       {!loading && price && (
-        <div className="mt-3 pt-3 border-t border-gray-200 flex items-center gap-3">
+        <div className="mt-4 pt-4 border-t border-gray-200 flex items-center gap-3">
           <Image
             src="/images/ikony/flat-delivery.png"
             alt=""
