@@ -167,19 +167,7 @@ function NotifyButton({ partNumber, productName }: { partNumber: string; product
   )
 }
 
-// Pełny słownik w src/data/variant-attribute-tooltips.ts; poniższe, dłuższe opisy mają pierwszeństwo.
-const attributeTooltips: Record<string, string> = {
-  ...variantAttributeTooltips,
-  'Odklejak': 'Odklejak (dyspenser) automatycznie oddziela etykietę od podłoża (liner) podczas druku. Dzięki temu etykieta jest gotowa do natychmiastowego naklejenia — nie musisz jej ręcznie odrywać. Przydatny przy dużych ilościach etykiet naklejanych ręcznie.',
-  'Gilotyna': 'Gilotyna (obcinacz) automatycznie odcina etykietę po wydrukowaniu. Idealna przy druku pojedynczych etykiet lub krótkich serii — każda etykieta jest od razu gotowa do użycia, bez ręcznego odrywania.',
-  'Nawijak': 'Nawijak (rewinder) nawija zużyty liner (podłoże) po odklejeniu etykiety, utrzymując porządek na stanowisku pracy. Niezbędny przy dużych wolumenach druku z odklejakiem — bez niego liner spada na podłogę i plącze się.',
-  'Linerless': 'Tryb linerless pozwala drukować na etykietach bez podłoża (linera). Eliminuje odpady — nie ma wstęgi do wyrzucenia. Na jednej rolce mieści się nawet 40% więcej etykiet. Wymaga specjalnej głowicy i wałka dociskowego przystosowanego do kleju.',
-  'RFID-ready': 'Wariant z gniazdem do montażu czytnika RFID (np. Zebra RFD40). Pozwala dodać funkcję odczytu znaczników RFID bez wymiany terminala. Przydatne w magazynach i sklepach do szybkiej inwentaryzacji — skanowanie całej półki w sekundach zamiast pojedynczych kodów kreskowych.',
-  'Lokalizator BLE': 'Wbudowany beacon Bluetooth Low Energy umożliwia śledzenie lokalizacji urządzenia w budynku. Jeśli terminal zostanie zgubiony, administrator widzi jego pozycję na mapie w aplikacji Zebra Device Tracker. Przydatne przy dużych flotach urządzeń.',
-  'Zasięg': 'Typ fokusa optyki skanera:\n• SR (Standard Range) — standardowe kody do ~1 m, najczęstszy wybór do retail i magazynu.\n• HD (High Density) — małe kody do ~22 cm, apteki, elektronika, farmacja.\n• Ultra HD (tylko wariant li) — kody od 2 mil + DPM z metalu/plastiku, produkcja.',
-  'Ładowanie': 'Sposób ładowania skanera w bazie:\n• Stykowe (contact) — metalowe styki w bazie, tańsze.\n• Indukcyjne (contactless) — bezstykowe, eliminuje korozję styków i wydłuża żywotność bazy. Droższe o ~15–40 zł.',
-  'Zasilanie': 'Źródło energii skanera:\n• Li-ion (3 300 mAh) — 80 000 skanów / 22 h pracy, ładowanie 4,5 h. Gwarancja 1 rok.\n• Superkondensator — 450+ skanów, ładowanie < 60 s, gwarancja 5 lat. Lżejszy (218 g vs 247 g). Idealny do kas POS.',
-}
+const attributeTooltips = variantAttributeTooltips
 
 
 function AttributeLabel({ label, extraTooltips }: { label: string; extraTooltips?: Record<string, string> }) {
@@ -189,6 +177,12 @@ function AttributeLabel({ label, extraTooltips }: { label: string; extraTooltips
   const triggerRef = useRef<HTMLSpanElement>(null)
 
   if (!tooltip) return <>{label}</>
+  // Słownik: „definicja\n• opcja…” → pierwsza linia pogrubiona, reszta w punktach.
+  // Opisy per produkt bywają zwykłymi akapitami — wtedy bez pogrubienia, każdy akapit osobno.
+  const rawLines = tooltip.split('\n').map(l => l.trim()).filter(Boolean)
+  const structured = rawLines.length > 1 && rawLines.slice(1).every(l => l.trimStart().startsWith('•'))
+  const tooltipLead = structured ? rawLines[0] : null
+  const tooltipLines = structured ? rawLines.slice(1) : rawLines
 
   const handleEnter = () => {
     if (triggerRef.current) {
@@ -213,9 +207,13 @@ function AttributeLabel({ label, extraTooltips }: { label: string; extraTooltips
       {show && pos && createPortal(
         <span
           style={{ top: pos.top, left: pos.left }}
-          className="fixed -translate-x-1/2 w-72 px-3 py-2 bg-gray-900 text-white text-xs font-normal rounded-lg text-left leading-relaxed z-[9999] whitespace-pre-line shadow-lg"
+          className="fixed -translate-x-1/2 w-80 px-3.5 py-2.5 bg-gray-900 text-white text-xs font-normal rounded-lg text-left leading-snug z-[9999] shadow-lg"
         >
-          {tooltip}
+          {/* pierwsza linia = definicja (pogrubiona), kolejne = opcje w punktach */}
+          {tooltipLead ? <span className="block font-semibold text-white mb-1">{tooltipLead}</span> : null}
+          {tooltipLines.map((line, i) => (
+            <span key={i} className={structured ? 'block text-gray-200 pl-3 -indent-3 mt-0.5' : `block text-gray-100 ${i ? 'mt-1.5' : ''}`}>{line}</span>
+          ))}
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 border-4 border-transparent border-b-gray-900" />
         </span>,
         document.body
