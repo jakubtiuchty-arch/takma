@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState, useMemo, useRef } from 'react'
+import { variantAttributeTooltips } from '@/data/variant-attribute-tooltips'
 import { createPortal } from 'react-dom'
 import { Badge } from '@/components/ui'
 import { Button } from '@/components/ui'
@@ -166,7 +167,9 @@ function NotifyButton({ partNumber, productName }: { partNumber: string; product
   )
 }
 
+// Pełny słownik w src/data/variant-attribute-tooltips.ts; poniższe, dłuższe opisy mają pierwszeństwo.
 const attributeTooltips: Record<string, string> = {
+  ...variantAttributeTooltips,
   'Odklejak': 'Odklejak (dyspenser) automatycznie oddziela etykietę od podłoża (liner) podczas druku. Dzięki temu etykieta jest gotowa do natychmiastowego naklejenia — nie musisz jej ręcznie odrywać. Przydatny przy dużych ilościach etykiet naklejanych ręcznie.',
   'Gilotyna': 'Gilotyna (obcinacz) automatycznie odcina etykietę po wydrukowaniu. Idealna przy druku pojedynczych etykiet lub krótkich serii — każda etykieta jest od razu gotowa do użycia, bez ręcznego odrywania.',
   'Nawijak': 'Nawijak (rewinder) nawija zużyty liner (podłoże) po odklejeniu etykiety, utrzymując porządek na stanowisku pracy. Niezbędny przy dużych wolumenach druku z odklejakiem — bez niego liner spada na podłogę i plącze się.',
