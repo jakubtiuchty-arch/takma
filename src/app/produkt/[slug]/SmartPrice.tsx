@@ -2,7 +2,6 @@
 
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { SHIPPING_COST_NETTO, FREE_SHIPPING_FROM_NETTO, isFreeShipping } from '@/lib/shipping'
-import { hasDarkPromoBox } from '@/lib/dark-promo-boxes'
 import { createPortal } from 'react-dom'
 import { Product } from '@/data/products'
 import { useSmartPrice } from './SmartPriceContext'
@@ -24,11 +23,6 @@ const DEVICE_CATEGORIES = new Set([
 
 export default function SmartPrice({ product }: SmartPriceProps) {
   const { displayedPn, price, loading, variantName, stockData } = useSmartPrice()
-  const ledVideoRef = useRef<HTMLVideoElement>(null)
-  useEffect(() => {
-    // Ograniczony ruch w systemie: zatrzymaj pętlę, zostaje plakat / pierwsza klatka.
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) ledVideoRef.current?.pause()
-  }, [])
   const { addItem, updateQuantity, isInCart, openDrawer } = useCartStore()
   const [mounted, setMounted] = useState(false)
   useEffect(() => setMounted(true), [])
@@ -67,8 +61,6 @@ export default function SmartPrice({ product }: SmartPriceProps) {
   const showCarton = !!(cartonQty && cartonQty > 1 && cartonPerRoll) && !variantUnavailable
   const cartonId = displayedPn ? `${displayedPn}__karton` : undefined
   const cartonInCart = mounted && cartonId ? isInCart(cartonId) : false
-  // Pod boksem ceny stoi już ciemny kafel (promocja, ZipShip, DS3678, podwyżka) → dostawa w płaskiej formie, żeby dwa ciemne boksy nie stały obok siebie.
-  const flatShipping = hasDarkPromoBox(product)
 
   const handleAddCarton = () => {
     if (!cartonId || !showCarton || cartonInCart) return
@@ -184,9 +176,9 @@ export default function SmartPrice({ product }: SmartPriceProps) {
       {/* Koszt dostawy — te same progi co w koszyku (src/lib/shipping.ts).
           Panel jak ściana LED: zapętlone wideo z Higgsfield (Seedance 2.5) z jadącą furgonetką kurierską,
           tekst na ciemnym gradiencie po lewej. Przy ograniczonym ruchu w systemie wideo stoi na plakacie. */}
-      {/* Karty z ciemnym kaflem pod boksem (promocja, ZipShip, DS3678, podwyżka): dostawa jako pasek progu darmowej
-          wysyłki — inna forma niż lista stanów i niż kafel poniżej; przy materiałach zachęca do większego zamówienia. */}
-      {!loading && price && flatShipping && (
+      {/* Koszt dostawy — te same progi co w koszyku (src/lib/shipping.ts). Pasek progu darmowej wysyłki:
+          inna forma niż lista stanów i niż ciemne kafle poniżej; przy materiałach zachęca do większego zamówienia. */}
+      {!loading && price && (
         <div className="mt-3 pt-3 border-t border-gray-200">
           <div className="flex items-baseline justify-between gap-3 text-xs">
             {isFreeShipping(price) ? (
@@ -215,49 +207,6 @@ export default function SmartPrice({ product }: SmartPriceProps) {
               className={`h-full rounded-full ${isFreeShipping(price) ? 'bg-green-600' : 'bg-blue-500'}`}
               style={{ width: `${Math.min(100, Math.max(4, (price / FREE_SHIPPING_FROM_NETTO) * 100))}%` }}
             />
-          </div>
-        </div>
-      )}
-      {!loading && price && !flatShipping && (
-        <div className="mt-4 -mx-4 -mb-4 sm:-mx-6 sm:-mb-6">
-          {/* Ujemne marginesy: panel wychodzi na pełną szerokość boksu ceny i domyka go od dołu (rounded-b-xl jak boks). */}
-          <div className="relative h-20 sm:h-24 overflow-hidden rounded-b-xl bg-gray-950 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)]">
-            <video
-              ref={ledVideoRef}
-              className="absolute inset-y-0 right-0 h-full w-auto max-w-none"
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              poster="/video/dostawa-kurier.jpg"
-              aria-hidden="true"
-            >
-              <source src="/video/dostawa-kurier.mp4" type="video/mp4" />
-            </video>
-            <div className="absolute inset-0 bg-gradient-to-r from-gray-950 from-40% via-gray-950/60 via-60% to-transparent" aria-hidden="true" />
-            <div className="relative h-full max-w-[70%] flex flex-col justify-center px-4 sm:px-6">
-              {isFreeShipping(price) ? (
-                <>
-                  <p className="text-base sm:text-lg font-bold text-white leading-tight">
-                    Dostawa <span className="text-lime-400">gratis</span>
-                  </p>
-                  <p className="text-xs text-gray-300 mt-0.5">Kurier w cenie przy zamówieniu od {FREE_SHIPPING_FROM_NETTO} zł netto</p>
-                </>
-              ) : (
-                <>
-                  <p className="text-base sm:text-lg font-bold text-white leading-tight">
-                    Dostawa {SHIPPING_COST_NETTO} zł <span className="text-sm font-medium text-gray-400">netto</span>
-                  </p>
-                  <p className="text-xs text-gray-300 mt-0.5">
-                    Do darmowej dostawy brakuje{' '}
-                    <strong className="text-white">
-                      {(FREE_SHIPPING_FROM_NETTO - price).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł netto
-                    </strong>
-                  </p>
-                </>
-              )}
-            </div>
           </div>
         </div>
       )}
