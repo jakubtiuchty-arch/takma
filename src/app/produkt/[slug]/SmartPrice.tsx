@@ -201,7 +201,7 @@ export default function SmartPrice({ product }: SmartPriceProps) {
                   Dostawa <strong className="text-gray-900">{SHIPPING_COST_NETTO} zł netto</strong>
                 </span>
                 <span className="text-gray-500">
-                  gratis od {FREE_SHIPPING_FROM_NETTO} zł · brakuje{' '}
+                  darmowa od {FREE_SHIPPING_FROM_NETTO} zł · brakuje{' '}
                   <strong className="text-gray-900">
                     {(FREE_SHIPPING_FROM_NETTO - price).toLocaleString('pl-PL', { minimumFractionDigits: 0, maximumFractionDigits: 0 })} zł
                   </strong>
