@@ -32,6 +32,8 @@ interface ProductSlide {
   video?: string
   /** Nakładka CSS z animowanym impulsem światła (obraz 5:1 kotwiczony do lewej) */
   lightArtifacts?: boolean
+  /** Bez powolnego zoomu obrazu (np. gdy ruch daje samo wideo) */
+  noZoom?: boolean
 }
 
 interface InfoSlide {
@@ -72,13 +74,15 @@ const slides: HeroSlide[] = [
   },
   {
     type: 'product',
-    image: '/images/hero-zt231.webp',
-    name: 'Zebra ZT231',
-    slug: 'zebra-zt231',
-    tagline: 'Drukarka etykiet klasy light-industrial z ekranem dotykowym 4,3" i metalowa obudowa. Kompaktowa, 304 mm/s, RFID opcja — nastepca ZT230.',
+    image: '/images/hero-magicard-300.webp',
+    video: '/video/hero-magicard-300.mp4',
+    noZoom: true,
+    name: 'Magicard 300',
+    slug: 'magicard-300',
+    tagline: 'Drukarka kart identyfikacyjnych do szkół i firm: druk dwustronny, 300 dpi, do 160 kart na godzinę. Program do projektowania kart Magicard HUB bez opłat.',
     imageType: 'packshot',
     noOverlay: true,
-    bgColor: '#090f0e',
+    bgColor: '#08080c',
   },
   {
     type: 'product',
@@ -223,7 +227,7 @@ export default function Hero() {
           key={`img-${activeIndex}`}
           className={clsx(
             'absolute inset-0 transition-opacity duration-700 ease-in-out origin-center',
-            !slide.lightArtifacts && 'animate-hero-zoom',
+            !slide.lightArtifacts && !slide.noZoom && 'animate-hero-zoom',
             isTransitioning ? 'opacity-0' : 'opacity-100'
           )}
         >
@@ -239,6 +243,22 @@ export default function Hero() {
                 WebkitMaskImage: 'linear-gradient(to left, transparent 0%, black 20%)',
               }}
             />
+          ) : isBanner && slide.video ? (
+            /* Banner + cinemagraph — wideo w pętli ułożone jak obraz banera (od prawej, maska po lewej) */
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster={slide.image}
+              className="absolute right-0 top-0 h-full w-auto max-w-[85%] object-contain object-right"
+              style={{
+                maskImage: 'linear-gradient(to right, transparent 0%, black 25%)',
+                WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 25%)',
+              }}
+            >
+              <source src={slide.video} type="video/mp4" />
+            </video>
           ) : isBanner ? (
             /* Banner mode — image right-aligned, mask fades left edge into bgColor */
             /* eslint-disable-next-line @next/next/no-img-element */
