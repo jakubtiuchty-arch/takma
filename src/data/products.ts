@@ -64,6 +64,19 @@ export interface Product {
   videoUrl?: string
   /** Lokalne wideo MP4 (np. z Remotion) — natywny odtwarzacz, nie iframe */
   videoFile?: string
+  /** Kilka filmów (np. instrukcje producenta z YouTube) — sekcja „Wideo” pokazuje je w siatce */
+  videos?: { url: string; title: string }[]
+  /** Bezpłatne oprogramowanie: zamiast koszyka przycisk „Pobierz” (plik w Vercel Blob, link przez /pobierz/[slug]) */
+  download?: {
+    url: string
+    fileName: string
+    version: string
+    /** rozmiar do wyświetlenia, np. „136 MB” */
+    size: string
+    os: string
+    /** data wydania pliku (ISO) — pokazywana przy wersji */
+    releasedAt: string
+  }
   relatedProducts?: string[]
 }
 
@@ -46185,6 +46198,7 @@ Obudowa ma 179 mm szerokości, 309 mm głębokości i 208 mm wysokości, a całe
     isNew: true,
     isBestseller: false,
     specifications: [
+      { name: 'Oprogramowanie', value: 'Magicard HUB — bezpłatny program producenta do instalacji drukarki i projektowania kart, do pobrania z naszej strony' },
       { name: 'Technologia druku', value: 'Bezpośrednio na karcie (direct-to-card); termosublimacja w kolorze, termotransfer w trybie mono' },
       { name: 'Druk jedno-/dwustronny', value: 'Jednostronny' },
       { name: 'Prędkość druku kolorowego', value: 'Do 200 kart/h (tryb szybki) lub 157 kart/h (tryb jakości HD)' },
@@ -46315,6 +46329,7 @@ USB i Ethernet są w standardzie. Ustawienia można zmieniać z kolorowego ekran
     isNew: true,
     isBestseller: false,
     specifications: [
+      { name: 'Oprogramowanie', value: 'Magicard HUB — bezpłatny program producenta do instalacji drukarki i projektowania kart, do pobrania z naszej strony' },
       { name: 'Technologia druku', value: 'Bezpośrednio na karcie; termosublimacja w kolorze, termotransfer w trybie mono, TRW' },
       { name: 'Rozdzielczość', value: '300 dpi; druk od krawędzi do krawędzi' },
       { name: 'Druk jedno-/dwustronny', value: 'Dwustronny automatyczny (wariant Duo)' },
@@ -46447,6 +46462,7 @@ USB, Ethernet i Wi-Fi są w standardzie. Magicard 600 Duo może więc pracować 
     isNew: true,
     isBestseller: false,
     specifications: [
+      { name: 'Oprogramowanie', value: 'Magicard HUB — bezpłatny program producenta do instalacji drukarki i projektowania kart, do pobrania z naszej strony' },
       { name: 'Technologia druku', value: 'Bezpośrednio na karcie; termosublimacja w kolorze i termotransfer w trybie mono' },
       { name: 'Rozdzielczość', value: '300 dpi w kolorze; do 600 × 300 dpi przy druku monochromatycznym' },
       { name: 'Druk jedno-/dwustronny', value: 'Dwustronny automatyczny (wariant Duo)' },
@@ -47632,6 +47648,68 @@ Kompatybilne z Windows 7/8/10/11. Obsługuje druk jedno- i dwustronny, kodowanie
     ],
     createdAt: '2026-02-14',
     sameAs: 'https://www.zebra.com/us/en/support-downloads/software/card-studio.html',
+  },
+  {
+    id: 'magicard-hub',
+    slug: 'magicard-hub',
+    name: 'Magicard HUB',
+    shortDescription: 'Bezpłatny program do drukarek kart Magicard: instalacja drukarki, projektowanie identyfikatorów i legitymacji, dane z bazy, kody QR, pomoc techniczna w jednym oknie',
+    seoTitle: 'Magicard HUB — bezpłatny program do projektowania kart',
+    seoDescription: 'Magicard HUB do pobrania bez opłat: instalacja drukarki Magicard przez USB, Wi-Fi lub Ethernet, projektant kart i legitymacji, import danych, kody QR. Windows 10/11.',
+    description: `Magicard HUB to program producenta dostarczany bez opłat do drukarek kart Magicard. Łączy w jednym oknie cztery rzeczy, które wcześniej wymagały osobnych narzędzi: instalację drukarki, projektowanie kart, obsługę danych i pomoc techniczną. Dla sekretariatu szkoły albo działu kadr oznacza to, że po rozpakowaniu drukarki pierwszą legitymację lub identyfikator drukuje się tego samego dnia, bez kupowania dodatkowego oprogramowania.
+
+Instalacja drukarki sprowadza się do wyboru sposobu połączenia: USB, Wi-Fi albo Ethernet. Program sam znajduje drukarkę, pobiera sterownik i pokazuje jej stan, poziom taśmy oraz numer zalecanej taśmy do wybranego projektu. Rozpoznaje włożone materiały eksploatacyjne, więc nie trzeba sprawdzać oznaczeń na rolce.
+
+Projektant kart działa jak prosty edytor graficzny: tło, zdjęcie, logo, pola tekstowe, kod kreskowy i kod QR przeciąga się na podgląd karty CR80, osobno dla przodu i tyłu. Pola można powiązać z bazą danych, wtedy imię, numer albo kod QR wypełniają się z listy uczniów lub pracowników, a druk serii kart to jedno polecenie. Zdjęcie do karty pobiera się z pliku albo z kamery.
+
+Program działa z drukarkami Magicard Pronto100, 300, 600, D, K, E+ oraz PCP 100 i PCP FLEX+. Wymaga systemu Windows 10 lub 11 w wersji 64-bitowej. Plik instalacyjny udostępniamy z własnego serwera, bez formularza i rejestracji, w wersji otrzymanej od producenta.`,
+    categoryId: 'oprogramowanie',
+    manufacturerId: 'magicard',
+    images: ['/images/products/magicard-hub.png'],
+    imageDescriptions: ['Magicard HUB — bezpłatny program do projektowania kart'],
+    tags: [],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Producent', value: 'Magicard (Brady)' },
+      { name: 'Wersja', value: '2.0.9' },
+      { name: 'Licencja', value: 'Bezpłatna, bez klucza aktywacyjnego' },
+      { name: 'System operacyjny', value: 'Windows 10 lub 11, 64-bit' },
+      { name: 'Wymagania sprzętowe', value: 'Procesor 64-bit 1,5 GHz lub szybszy, 8 GB RAM, 700 MB na dysku' },
+      { name: 'Obsługiwane drukarki', value: 'Magicard Pronto100, 300, 600, D, K, E+, PCP 100, PCP FLEX+' },
+      { name: 'Połączenie z drukarką', value: 'USB, Wi-Fi, Ethernet' },
+      { name: 'Projektowanie kart', value: 'Przód i tył karty CR80, zdjęcie, logo, tekst, kod kreskowy, kod QR' },
+      { name: 'Dane', value: 'Pola powiązane z bazą danych, druk serii kart, kody QR z danych' },
+      { name: 'Materiały eksploatacyjne', value: 'Rozpoznawanie taśmy, podpowiedź taśmy do projektu' },
+      { name: 'Pomoc', value: 'Instrukcje i diagnostyka w programie' },
+      { name: 'Plik', value: 'MagicardHUB_2.0.9_x64_Setup.msi, 136 MB' },
+    ],
+    applications: ['Legitymacje szkolne i identyfikatory uczniów', 'Identyfikatory pracownicze', 'Karty członkowskie i klubowe', 'Karty dostępu z kodem QR', 'Instalacja i diagnostyka drukarki Magicard'],
+    compatibleAccessories: [],
+    relatedProducts: ['magicard-pronto100', 'magicard-300', 'magicard-600-duo'],
+    faq: [
+      { question: 'Czy Magicard HUB jest naprawdę bezpłatny?', answer: 'Tak. Producent dostarcza go bez opłat do wszystkich obsługiwanych drukarek Magicard. Nie ma klucza aktywacyjnego ani wersji płatnej. Wystarczy pobrać plik i zainstalować na komputerze z Windows 10 lub 11.' },
+      { question: 'Czy zadziała z drukarką innej marki?', answer: 'Nie. Magicard HUB obsługuje wyłącznie drukarki Magicard: Pronto100, 300, 600, D, K, E+, PCP 100 i PCP FLEX+. Do drukarek Zebra służy CardStudio.' },
+      { question: 'Czy wydrukuję legitymacje szkolne z listy uczniów?', answer: 'Tak. Pola na karcie (imię, nazwisko, numer, kod QR) można powiązać z bazą danych, a program drukuje serię kart z kolejnych wierszy. Zdjęcie ucznia dodaje się z pliku albo z kamery.' },
+      { question: 'Skąd pochodzi plik instalacyjny?', answer: 'Plik otrzymaliśmy od producenta i udostępniamy z własnego serwera, bez formularza. Numer wersji i data pliku są podane przy przycisku pobierania.' },
+      { question: 'Czy jest wersja na macOS?', answer: 'Nie. Magicard HUB działa tylko na Windows 10 i 11 w wersji 64-bitowej.' },
+    ],
+    videos: [
+      { url: 'https://www.youtube-nocookie.com/embed/51GudGPvNNE', title: 'Instalacja drukarki Magicard w programie HUB' },
+      { url: 'https://www.youtube-nocookie.com/embed/dUuDyt2CmsM', title: 'Pierwsza karta w projektancie Magicard HUB' },
+    ],
+    download: {
+      url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/magicard-hub/MagicardHUB_2.0.9_x64_Setup-eLxV12tB66Y5wDcXQomsLTKDx0MQ0Q.msi',
+      fileName: 'MagicardHUB_2.0.9_x64_Setup.msi',
+      version: '2.0.9',
+      size: '136 MB',
+      os: 'Windows 10/11, 64-bit',
+      releasedAt: '2026-08-07',
+    },
+    downloads: [],
+    createdAt: '2026-09-07',
+    sameAs: 'https://magicard.com/printers-and-software/magicard-hub/',
   },
 ]
 

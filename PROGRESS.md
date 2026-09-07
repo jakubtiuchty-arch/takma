@@ -483,3 +483,11 @@ Otwarte na kolejne sesje:
 - 4 grupy: Drukarki kart plastikowych (203518458441 → /drukarki-kart), Legitymacje szkolne (197687065857 → /drukarki-kart), Zebra ZC100/ZC300 (202802279671 → /produkt/zebra-zc100), Magicard (198629695903 → /produkt/magicard-300). 58 fraz × EXACT+PHRASE = 116 słów, 40 wykluczeń (zdjęcie, wymiary, numer, mobywatel, studencka, sterownik, używane, olx, etykiety…), 5 sitelinków, 4 callouty.
 - Stan po utworzeniu: SERVING / LEARNING, 4 RSA w REVIEW_IN_PROGRESS. Skrypt: `~/takma-ads-drukarki-kart-2026-09/drukarki-kart-campaign.ts`.
 - Do oceny po ~2 tyg.: wyszukiwane hasła (dopisać wykluczenia), CTR per grupa, sygnały kontaktu → decyzja o landingu dla szkół.
+
+## 2026-09-07 — Magicard HUB: bezpłatny program jako karta z przyciskiem „Pobierz”
+- Karta `/produkt/magicard-hub` (kategoria oprogramowanie): pole `download` w `Product` → `DownloadButton` zamiast koszyka, boks „Bezpłatny” w `SmartPrice`, schema SoftwareApplication (oferta 0 zł), dwa filmy YouTube producenta (`videos`, siatka 2 kolumny), FAQ, zdjęcia = kadry UI z filmów.
+- Plik MSI (136 MB, v2.0.9) w Vercel Blob (store `takma-downloads`, public) — nie w repo. Stały link `/pobierz/magicard-hub` (route 302 → Blob, `X-Robots-Tag: noindex`), klik zgłasza GA4 `file_download`.
+- Baner `MagicardHubBanner` (tło Higgsfield, tekst na ciemnej części) po opisie na Pronto100 / 300 / 600 Duo + wiersz „Oprogramowanie” w specyfikacji. Slug w allowliście middleware.
+- Ads 24213061119: nagłówek „Program do kart bez opłat” w RSA grup Magicard i Legitymacje, sitelink „Magicard HUB bez opłat”. Skrypt `~/takma-ads-drukarki-kart-2026-09/add-magicard-hub.ts`.
+- Decyzja: promować Magicard, nie replikować „Pobierz” dla CardStudio.
+- Uzupełnienia 7.09 wieczorem: zdjęcie karty = render pudełka programu z logo (Higgsfield, referencja logo z filmu producenta); boks ceny „Bezpłatny” tylko z wersją i systemem; CSP `frame-src` + YouTube (youtube-nocookie), inaczej filmy nie ładują się; badge dostępności przeniesiony do prawego górnego rogu boksu ceny (obie strony produktu); baner Magicard HUB z pętlą wideo: na pustej karcie powstaje projekt (start/end frame z gpt_image_2, Seedance 2.5, hold + fade w ffmpeg) — `public/video/magicard-hub-card.mp4`.

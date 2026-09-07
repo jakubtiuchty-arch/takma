@@ -30,6 +30,7 @@ import {
 } from '@/components/ui/Icons'
 import LinkedText from '@/components/ui/LinkedText'
 import AddToRFQButton from './AddToRFQButton'
+import DownloadButton from './DownloadButton'
 import AskAboutProductButton from './AskAboutProductButton'
 import ServicePlansBox from './ServicePlansBox'
 import RelatedProducts from './RelatedProducts'
@@ -42,6 +43,7 @@ import PromoBanner from './PromoBanner'
 import PriceIncreaseNotice from './PriceIncreaseNotice'
 import { priceIncreaseFor } from '@/data/price-increase'
 import ZipShipBanner from '@/components/promo/ZipShipBanner'
+import MagicardHubBanner from '@/components/promo/MagicardHubBanner'
 import Ds3678DemoBanner from '@/components/promo/Ds3678DemoBanner'
 import { SmartPriceProvider } from './SmartPriceContext'
 import { activePromo } from '@/data/promos'
@@ -414,8 +416,17 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
   const productJsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Product',
+    '@type': product.download ? 'SoftwareApplication' : 'Product',
     url: `https://www.takma.com.pl/produkt/${product.slug}`,
+    // bezpłatne oprogramowanie: pola SoftwareApplication + oferta 0 zł (Google wymaga offers przy tym typie)
+    ...(product.download ? {
+      applicationCategory: 'DesignApplication',
+      operatingSystem: product.download.os,
+      softwareVersion: product.download.version,
+      fileSize: product.download.size,
+      downloadUrl: `https://www.takma.com.pl/pobierz/${product.slug}`,
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'PLN', availability: 'https://schema.org/InStock' },
+    } : {}),
     name: product.name,
     description: product.shortDescription,
     image: product.images.map(absoluteProductImageUrl),
@@ -709,15 +720,6 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {/* Title + Manufacturer logo */}
             {!liveOffers && productHeading}
 
-            {/* Availability — z SmartPriceContext (jedno źródło danych) */}
-            <div className="mb-6">
-              <ContextAvailabilityBadge
-                staticAvailability={product.availability}
-                requireConfirmedStock={liveOffers}
-                treatUnknownAsUnavailable={product.categoryId === 'materialy-eksploatacyjne'}
-              />
-            </div>
-
             {/* Variants link — ukryte dla etykiet termicznych (wybór wariantu na /serie/) */}
             {showVariants && (
               <a
@@ -729,7 +731,17 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             )}
 
             {/* Price — smart fallback na najtańszy dostępny wariant */}
-            <SmartPrice product={product} />
+            {/* Badge dostępności (z SmartPriceContext) siedzi w prawym górnym rogu boksu ceny */}
+            <SmartPrice
+              product={product}
+              badge={product.download ? undefined : (
+                <ContextAvailabilityBadge
+                  staticAvailability={product.availability}
+                  requireConfirmedStock={liveOffers}
+                  treatUnknownAsUnavailable={product.categoryId === 'materialy-eksploatacyjne'}
+                />
+              )}
+            />
 
             {/* Promocja producencka (np. Zebra CEE Voucher) — znika po terminie */}
             {(() => {
@@ -754,9 +766,13 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {/* Program testów DS3678 — tylko 5 wariantów tej rodziny, znika po zebraniu puli */}
             <Ds3678DemoBanner productSlug={product.slug} />
 
-            {/* CTA */}
+            {/* CTA — bezpłatne oprogramowanie ma „Pobierz” zamiast koszyka */}
             <div className="space-y-3">
-              <AddToRFQButton product={product} />
+              {product.download ? (
+                <DownloadButton product={product} />
+              ) : (
+                <AddToRFQButton product={product} />
+              )}
               <AskAboutProductButton productName={product.name} productSlug={product.slug} />
             </div>
 
@@ -919,7 +935,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   FAQ
                 </a>
               )}
-              {(product.videoUrl || product.videoFile) && (
+              {(product.videoUrl || product.videoFile || product.videos?.length) && (
                 <a
                   href="#video"
                   className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
@@ -1148,6 +1164,35 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 </span>
               </div>
             </section>
+
+            {/* Drukarki kart Magicard: bezpłatny program Magicard HUB do pobrania z naszej strony */}
+            {product.manufacturerId === 'magicard' && product.categoryId === 'drukarki-kart' && (
+              <MagicardHubBanner printerName={product.name} />
+            )}
+
+            {/* Kilka filmów (np. instrukcje producenta) — siatka 2 kolumny */}
+            {product.videos?.length ? (
+              <section id="video">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">Wideo: jak to działa</h2>
+                <div className="grid gap-5 sm:grid-cols-2">
+                  {product.videos.map((v) => (
+                    <figure key={v.url}>
+                      <div className="aspect-video rounded-xl overflow-hidden bg-gray-100">
+                        <iframe
+                          src={v.url}
+                          className="w-full h-full"
+                          allowFullScreen
+                          allow="autoplay; fullscreen; picture-in-picture"
+                          title={v.title}
+                          loading="lazy"
+                        />
+                      </div>
+                      <figcaption className="mt-2 text-sm text-gray-600">{v.title}</figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </section>
+            ) : null}
 
             {/* Video — embed Vidyard/YouTube or native MP4 */}
             {(product.videoUrl || product.videoFile) && (

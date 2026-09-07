@@ -244,3 +244,16 @@ export function trackPromoCodeApplied(code: string, partNumber: string, promoNet
 export function trackPromoCodeRejected(powod: string) {
   gtag('event', 'kod_odrzucony', { powod_odrzucenia: powod })
 }
+
+// ── Pobrania plików (np. bezpłatne oprogramowanie) ────────────
+
+/** Kliknięcie „Pobierz” na karcie programu — zalecane zdarzenie GA4 file_download. */
+export function trackFileDownload(params: { fileName: string; productName: string; version?: string }) {
+  gtag('event', 'file_download', {
+    file_name: params.fileName,
+    file_extension: params.fileName.split('.').pop(),
+    link_text: 'Pobierz',
+    item_name: params.productName,
+    software_version: params.version,
+  })
+}

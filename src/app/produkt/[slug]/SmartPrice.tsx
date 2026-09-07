@@ -13,6 +13,8 @@ import { PlusIcon, CheckIcon } from '@/components/ui/Icons'
 
 interface SmartPriceProps {
   product: Product
+  /** Badge dostępności — renderowany w prawym górnym rogu boksu ceny (zamiast osobnego wiersza nad boksem) */
+  badge?: React.ReactNode
 }
 
 /** Kategorie urządzeń — tooltip "oferta projektowa" wyświetlany tylko dla nich */
@@ -21,16 +23,35 @@ const DEVICE_CATEGORIES = new Set([
   'terminale-mobilne', 'skanery-kodow-kreskowych', 'tablety-przemyslowe',
 ])
 
-export default function SmartPrice({ product }: SmartPriceProps) {
+export default function SmartPrice({ product, badge }: SmartPriceProps) {
   const { displayedPn, price, loading, variantName, stockData } = useSmartPrice()
   const { addItem, updateQuantity, isInCart, openDrawer } = useCartStore()
   const [mounted, setMounted] = useState(false)
   useEffect(() => setMounted(true), [])
 
+  // Bezpłatne oprogramowanie — zamiast ceny: informacja o wersji i pliku (przycisk „Pobierz” jest w CTA poniżej)
+  if (product.download) {
+    const d = product.download
+    return (
+      <div className="relative z-[1] bg-gray-100 shadow-sm rounded-xl p-4 sm:p-6 mb-6">
+        <div className="flex items-baseline gap-2">
+          <span className="text-2xl sm:text-3xl font-bold text-gray-900">Bezpłatny</span>
+        </div>
+        <dl className="mt-3 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-sm">
+          <dt className="text-gray-500">Wersja</dt>
+          <dd className="text-gray-900 font-medium">{d.version}</dd>
+          <dt className="text-gray-500">System</dt>
+          <dd className="text-gray-900">{d.os}</dd>
+        </dl>
+      </div>
+    )
+  }
+
   // Brak wariantów i brak PNa → "Cena na zapytanie"
   if (!displayedPn && !product.priceFrom) {
     return (
       <div className="relative z-[1] bg-gray-100 shadow-sm rounded-xl p-4 sm:p-6 mb-6">
+        {badge && <div className="absolute top-4 right-4 sm:top-5 sm:right-5">{badge}</div>}
         <p className="text-lg text-gray-600">Cena na zapytanie</p>
       </div>
     )
@@ -79,6 +100,7 @@ export default function SmartPrice({ product }: SmartPriceProps) {
 
   return (
     <div className="relative z-[1] bg-gray-100 shadow-sm rounded-xl p-4 sm:p-6 mb-6">
+      {badge && <div className="absolute top-4 right-4 sm:top-5 sm:right-5">{badge}</div>}
       {displayedPn && (
         <p className="text-xs font-mono text-gray-500 mb-2 flex items-center gap-1.5">
           PN: {displayedPn}

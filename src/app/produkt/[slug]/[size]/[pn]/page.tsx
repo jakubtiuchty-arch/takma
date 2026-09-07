@@ -495,15 +495,16 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
               )}
             </div>
 
-            <div className="mb-6">
-              <ContextAvailabilityBadge
-                staticAvailability={variant.availability}
-                treatUnknownAsUnavailable={product.categoryId === 'materialy-eksploatacyjne'}
-                feminine={!!ctx?.isRibbon}
-              />
-            </div>
-
-            <SmartPrice product={product} />
+            <SmartPrice
+              product={product}
+              badge={
+                <ContextAvailabilityBadge
+                  staticAvailability={variant.availability}
+                  treatUnknownAsUnavailable={product.categoryId === 'materialy-eksploatacyjne'}
+                  feminine={!!ctx?.isRibbon}
+                />
+              }
+            />
 
             {/* Promocja Zebra na materiały — kafel-szuflada pod boxem ceny (znika po 31.12) */}
             <ZipShipBanner context={`${product.name} ${variant.partNumber}`} variant="card" />

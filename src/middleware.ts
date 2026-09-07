@@ -257,7 +257,7 @@ export async function middleware(request: NextRequest) {
       'honeywell-rt10a-ladowarka-baterii', 'honeywell-rt10a-hand-strap', 'honeywell-rt10a-folia-ochronna', 'honeywell-rt10a-zasilacz',
       'honeywell-rt10w',
       // Oprogramowanie
-      'zebra-cardstudio',
+      'zebra-cardstudio', 'magicard-hub',
     ])
 
     // Jeśli slug NIE istnieje na nowej stronie → redirect do strony przebudowy
