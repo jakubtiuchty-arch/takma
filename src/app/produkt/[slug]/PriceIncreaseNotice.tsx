@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect, useRef } from 'react'
 import { useSmartPrice } from './SmartPriceContext'
 import { PRICE_INCREASE, priceIncreaseActive, priceIncreaseDaysLeft, type PriceIncreaseInfo } from '@/data/price-increase'
 
@@ -13,8 +14,9 @@ const fmt = (n: number) => n.toLocaleString('pl-PL', { minimumFractionDigits: 0,
  * straty działa ok. dwa razy mocniej niż obietnica zysku), licznik dni, jedno
  * wezwanie. Termin jest prawdziwy i boks znika sam po nim.
  *
- * Wygląd jak pozostałe ciemne kafle na karcie (PromoBanner): tło z Higgsfield
- * z limonkową poświatą po prawej, tekst wyłącznie na ciemnej części.
+ * Tło: zapętlone wideo z Higgsfield (Seedance 2.5, klatka startowa = końcowa =
+ * dotychczasowa grafika), limonkowa poświata po prawej pulsuje, tekst wyłącznie
+ * na ciemnej części. Przy ograniczonym ruchu wideo stoi na plakacie (ta sama grafika).
  * Bez własnego przycisku — wezwaniem są przyciski zamówienia tuż pod boksem.
  */
 export default function PriceIncreaseNotice({
@@ -26,6 +28,10 @@ export default function PriceIncreaseNotice({
 }) {
   // cena z tego samego źródła co box ceny (live z magazynu, z fallbackiem do katalogu)
   const { price: livePrice } = useSmartPrice()
+  const videoRef = useRef<HTMLVideoElement>(null)
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) videoRef.current?.pause()
+  }, [])
   if (!priceIncreaseActive()) return null
   const basePrice = livePrice ?? priceFrom
 
@@ -39,14 +45,20 @@ export default function PriceIncreaseNotice({
   const daysLabel = daysLeft === 0 ? 'ostatni dzień' : daysLeft === 1 ? 'został 1 dzień' : `zostało ${daysLeft} dni`
 
   return (
-    <div
-      className="relative z-0 overflow-hidden rounded-2xl bg-gray-950 px-5 sm:px-6 py-5 sm:py-6 mb-6 mx-3 sm:mx-5 shadow-[0_24px_50px_-16px_rgba(4,10,6,0.6)]"
-      style={{
-        backgroundImage: "url('/images/promo/podwyzka-zebra-bg.webp')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'right center',
-      }}
-    >
+    <div className="relative z-0 overflow-hidden rounded-2xl bg-gray-950 px-5 sm:px-6 py-5 sm:py-6 mb-6 mx-3 sm:mx-5 shadow-[0_24px_50px_-16px_rgba(4,10,6,0.6)]">
+      <video
+        ref={videoRef}
+        className="absolute inset-0 h-full w-full object-cover object-right"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        poster="/images/promo/podwyzka-zebra-bg.webp"
+        aria-hidden="true"
+      >
+        <source src="/video/podwyzka-zebra-bg.mp4" type="video/mp4" />
+      </video>
       {/* domknięcie kontrastu po lewej — tekst ma leżeć wyłącznie na ciemnym polu */}
       <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-r from-gray-950 from-55% via-gray-950/90 via-80% to-gray-950/20" />
 
