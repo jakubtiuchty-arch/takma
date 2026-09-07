@@ -3,7 +3,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { SHIPPING_COST_NETTO, FREE_SHIPPING_FROM_NETTO, isFreeShipping } from '@/lib/shipping'
 import { hasDarkPromoBox } from '@/lib/dark-promo-boxes'
-import Image from 'next/image'
 import { createPortal } from 'react-dom'
 import { Product } from '@/data/products'
 import { useSmartPrice } from './SmartPriceContext'
@@ -185,14 +184,16 @@ export default function SmartPrice({ product }: SmartPriceProps) {
       {/* Koszt dostawy — te same progi co w koszyku (src/lib/shipping.ts).
           Panel jak ściana LED: zapętlone wideo z Higgsfield (Seedance 2.5) z jadącą furgonetką kurierską,
           tekst na ciemnym gradiencie po lewej. Przy ograniczonym ruchu w systemie wideo stoi na plakacie. */}
-      {/* Etykiety i taśmy: karta ma już boks kartonu i stany, więc dostawa jako pasek progu darmowej wysyłki —
-          inna forma niż lista stanów, a przy materiałach działa jak zachęta do większego zamówienia. */}
-      {!loading && price && flatShipping && (isRibbon || isLabel) && (
+      {/* Karty z ciemnym kaflem pod boksem (promocja, ZipShip, DS3678, podwyżka): dostawa jako pasek progu darmowej
+          wysyłki — inna forma niż lista stanów i niż kafel poniżej; przy materiałach zachęca do większego zamówienia. */}
+      {!loading && price && flatShipping && (
         <div className="mt-3 pt-3 border-t border-gray-200">
           <div className="flex items-baseline justify-between gap-3 text-xs">
             {isFreeShipping(price) ? (
               <>
-                <span className="font-semibold text-green-700">Dostawa gratis</span>
+                <span className="text-gray-700">
+                  Dostawa <strong className="text-green-700">darmowa</strong>
+                </span>
                 <span className="text-gray-500">kurier w cenie od {FREE_SHIPPING_FROM_NETTO} zł netto</span>
               </>
             ) : (
@@ -214,33 +215,6 @@ export default function SmartPrice({ product }: SmartPriceProps) {
               className={`h-full rounded-full ${isFreeShipping(price) ? 'bg-green-600' : 'bg-blue-500'}`}
               style={{ width: `${Math.min(100, Math.max(4, (price / FREE_SHIPPING_FROM_NETTO) * 100))}%` }}
             />
-          </div>
-        </div>
-      )}
-      {!loading && price && flatShipping && !(isRibbon || isLabel) && (
-        <div className="mt-3 pt-3 border-t border-gray-200 flex items-center gap-2">
-          <Image src="/images/ikony/flat-delivery.png" alt="" width={112} height={112} className="w-7 h-7 sm:w-[2.1rem] sm:h-[2.1rem] shrink-0 object-contain" />
-          <div className="min-w-0">
-            {isFreeShipping(price) ? (
-              <>
-                <p className="text-sm font-bold text-gray-900 leading-tight">
-                  Dostawa <span className="text-green-700">gratis</span>
-                </p>
-                <p className="text-[11px] text-gray-600 leading-tight mt-0.5">Kurier w cenie przy zamówieniu od {FREE_SHIPPING_FROM_NETTO} zł netto</p>
-              </>
-            ) : (
-              <>
-                <p className="text-sm font-bold text-gray-900 leading-tight">
-                  Dostawa {SHIPPING_COST_NETTO} zł <span className="text-xs font-medium text-gray-500">netto</span>
-                </p>
-                <p className="text-[11px] text-gray-600 leading-tight mt-0.5">
-                  Do darmowej dostawy brakuje{' '}
-                  <strong className="text-gray-900">
-                    {(FREE_SHIPPING_FROM_NETTO - price).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł netto
-                  </strong>
-                </p>
-              </>
-            )}
           </div>
         </div>
       )}
