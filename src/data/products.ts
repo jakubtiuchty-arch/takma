@@ -47632,10 +47632,10 @@ Kompatybilne z Windows 7/8/10/11. Obsługuje druk jedno- i dwustronny, kodowanie
     ],
     applications: ['Projektowanie identyfikatorów pracowniczych', 'Druk kart lojalnościowych', 'Personalizacja e-legitymacji', 'Kodowanie kart RFID/NFC', 'Automatyzacja produkcji kart'],
     variants: [
-      { partNumber: 'CSR2C-SW00-E', name: 'CardStudio 2.0 Classic', priceFrom: 259.60, availability: 'available', attributes: {} },
-      { partNumber: 'CSR2S-SW00-E', name: 'CardStudio 2.0 Standard', priceFrom: 908.60, availability: 'available', attributes: { 'Bazy danych': 'Tak', 'Kodowanie magnetyczne': 'Tak' } },
-      { partNumber: 'CSR2E-SW00-E', name: 'CardStudio 2.0 Enterprise', priceFrom: 2206.59, availability: 'available', attributes: { 'API/SDK': 'Tak', 'Multi-printer': 'Tak' } },
-      { partNumber: 'CSR2P-SW00-E', name: 'CardStudio 2.0 Professional', priceFrom: 3439.66, availability: 'available', attributes: { 'Smart Card': 'Tak', 'RFID/NFC': 'Tak', 'UV/Watermark': 'Tak' } },
+      { partNumber: 'CSR2C-SW00-E', name: 'CardStudio 2.0 Classic', priceFrom: 259.60, availability: 'available', attributes: { 'Wersja': 'Classic', 'Zakres': 'Projektowanie i druk kart, import zdjęć' } },
+      { partNumber: 'CSR2S-SW00-E', name: 'CardStudio 2.0 Standard', priceFrom: 908.60, availability: 'available', attributes: { 'Wersja': 'Standard', 'Zakres': '+ bazy danych, numeracja seryjna, kodowanie magnetyczne' } },
+      { partNumber: 'CSR2E-SW00-E', name: 'CardStudio 2.0 Enterprise', priceFrom: 2206.59, availability: 'available', attributes: { 'Wersja': 'Enterprise', 'Zakres': '+ API/SDK, automatyzacja, wiele drukarek' } },
+      { partNumber: 'CSR2P-SW00-E', name: 'CardStudio 2.0 Professional', priceFrom: 3439.66, availability: 'available', attributes: { 'Wersja': 'Professional', 'Zakres': '+ Smart Card, RFID/NFC, druk UV, znak wodny' } },
     ],
     compatibleAccessories: [],
     faq: [

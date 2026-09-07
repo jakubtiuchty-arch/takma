@@ -193,7 +193,7 @@ function AttributeLabel({ label, extraTooltips }: { label: string; extraTooltips
   }
 
   return (
-    <span className="inline-flex items-center gap-1.5">
+    <span className="inline-flex flex-wrap items-center justify-center gap-x-1.5 gap-y-0.5">
       {label}
       <span
         ref={triggerRef}
@@ -505,7 +505,7 @@ export default function VariantsTable({ productSlug, productName, productImage, 
                 Part Number
               </th>
               {attributeKeys.map((key) => (
-                <th key={key} scope="col" className={`${dense ? 'px-2' : 'px-3'} py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider leading-tight ${dense ? 'max-w-[6.5rem]' : 'whitespace-nowrap'}`}>
+                <th key={key} scope="col" className={`${dense ? 'px-2' : 'px-3'} py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider leading-tight ${dense ? 'max-w-[6.5rem] min-w-[4.5rem] break-words' : 'whitespace-nowrap'}`}>
                   <AttributeLabel label={key} extraTooltips={variantAttributeTooltips} />
                 </th>
               ))}
