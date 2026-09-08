@@ -12,6 +12,8 @@ import {
 import { subcategoryContent } from '@/data/subcategory-content'
 import ServiceBanner from '@/components/ui/ServiceBanner'
 import LinkedText from '@/components/ui/LinkedText'
+import FilterableProductGrid from '@/components/subcategory/FilterableProductGrid'
+import { categoryFilters } from '@/data/category-filters'
 
 interface CategoryPageProps {
   slug: string
@@ -22,6 +24,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
   const products = getProductsByCategory(category.id)
   const subcats = getSubcategoriesForCategory(category.id)
   const content = subcategoryContent[slug]
+  const filters = categoryFilters[slug]
 
   const faqJsonLd = content?.faq?.length ? {
     '@context': 'https://schema.org',
@@ -93,133 +96,8 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
       ? 'produkty'
       : 'produktów'
 
-  return (
+  const richContent = (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
-      />
-      {faqJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
-      )}
-      {howToJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
-        />
-      )}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
-      />
-
-      <div className="container-main py-8 lg:py-12">
-        {/* Breadcrumbs */}
-        <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6 overflow-x-auto">
-          <Link href="/" className="hover:text-primary-600 transition-colors whitespace-nowrap">
-            Strona główna
-          </Link>
-          <ChevronRightIcon size={14} className="flex-shrink-0 text-gray-400" />
-          <span className="text-gray-900 font-medium whitespace-nowrap">{category.name}</span>
-        </nav>
-
-        {/* H1 + intro */}
-        <div className="mb-8">
-          <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
-            {category.name}
-          </h1>
-          <p className="text-gray-600 sm:text-justify">
-            <LinkedText text={category.longDescription} />
-          </p>
-          <p className="text-gray-500 text-sm mt-3">
-            {products.length} {productWord}
-          </p>
-        </div>
-
-        {/* Sidebar + Content layout */}
-        <div className="flex flex-col lg:flex-row gap-8">
-          {/* Sidebar - desktop only */}
-          <aside className="hidden lg:block w-60 flex-shrink-0">
-            <div className="sticky top-32">
-              <h2 className="font-semibold text-gray-900 mb-3">Kategoria</h2>
-              <ul className="space-y-1">
-                {categories.map((cat) => {
-                  const subs = getSubcategoriesForCategory(cat.id)
-                  const isCurrent = cat.id === category.id
-                  return (
-                    <li key={cat.id}>
-                      <Link
-                        href={`/${cat.slug}`}
-                        className={`block px-3 py-2 rounded-lg text-sm transition-colors ${
-                          isCurrent
-                            ? 'bg-primary-50 text-primary-700 font-medium'
-                            : 'text-gray-600 hover:bg-gray-50'
-                        }`}
-                      >
-                        {cat.name}
-                        <span className="text-gray-400 ml-1">({cat.productCount})</span>
-                      </Link>
-                      {isCurrent && (brandCategories.filter(b => b.categoryId === cat.id).length > 0 || subs.length > 0) && (
-                        <ul className="ml-3 mt-1 space-y-0.5">
-                          {brandCategories.filter(b => b.categoryId === cat.id).map((bc) => (
-                            <li key={bc.id}>
-                              <Link
-                                href={`/${bc.slug}`}
-                                className="block px-3 py-1.5 rounded-lg text-sm text-gray-500 hover:bg-primary-50 hover:text-primary-600 transition-colors"
-                              >
-                                {bc.name}
-                              </Link>
-                            </li>
-                          ))}
-                          {subs.map((sub) => {
-                            const children = getChildSubcategories(sub.id)
-                            return (
-                              <li key={sub.id}>
-                                <Link
-                                  href={`/${sub.slug}`}
-                                  className="block px-3 py-1.5 rounded-lg text-sm text-gray-500 hover:bg-primary-50 hover:text-primary-600 transition-colors"
-                                >
-                                  {sub.name}
-                                  <span className="text-gray-400 ml-1">({sub.productCount})</span>
-                                </Link>
-                                {children.length > 0 && (
-                                  <ul className="ml-3 mt-0.5 space-y-0.5">
-                                    {children.map((child) => (
-                                      <li key={child.id}>
-                                        <Link
-                                          href={`/${child.slug}`}
-                                          className="block px-3 py-1.5 rounded-lg text-xs text-gray-500 hover:bg-primary-50 hover:text-primary-600 transition-colors"
-                                        >
-                                          {child.name}
-                                          <span className="text-gray-400 ml-1">({child.productCount})</span>
-                                        </Link>
-                                      </li>
-                                    ))}
-                                  </ul>
-                                )}
-                              </li>
-                            )
-                          })}
-                        </ul>
-                      )}
-                    </li>
-                  )
-                })}
-              </ul>
-            </div>
-          </aside>
-
-          {/* Main content */}
-          <div className="flex-1 min-w-0">
-            <ProductGrid products={products} variant="grid" columns={3} maxInitial={48} />
-
             {/* Rich content sections */}
             {content && (
               <div className="mt-12 space-y-10">
@@ -400,9 +278,158 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
               </div>
             )}
 
-            <ServiceBanner categoryId={category.id} />
+      <ServiceBanner categoryId={category.id} />
+    </>
+  )
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+      />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
+      {howToJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+        />
+      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
+      />
+
+      <div className="container-main py-8 lg:py-12">
+        {/* Breadcrumbs */}
+        <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6 overflow-x-auto">
+          <Link href="/" className="hover:text-primary-600 transition-colors whitespace-nowrap">
+            Strona główna
+          </Link>
+          <ChevronRightIcon size={14} className="flex-shrink-0 text-gray-400" />
+          <span className="text-gray-900 font-medium whitespace-nowrap">{category.name}</span>
+        </nav>
+
+        {/* H1 + intro */}
+        <div className="mb-8">
+          <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
+            {category.name}
+          </h1>
+          <p className="text-gray-600 sm:text-justify">
+            <LinkedText text={category.longDescription} />
+          </p>
+          <p className="text-gray-500 text-sm mt-3">
+            {products.length} {productWord}
+          </p>
+        </div>
+
+        {/* Układ z filtrami (kategorie z konfiguracją w category-filters.ts): sidebar = nawigacja + checkboxy z licznikiem */}
+        {filters ? (
+          <FilterableProductGrid
+            products={products}
+            filters={filters}
+            columns={3}
+            filtersFirst
+            categoryNav={categories.map((cat) => {
+              const subs = getSubcategoriesForCategory(cat.id)
+              const isParent = cat.id === category.id
+              const brandChildren = brandCategories.filter(b => b.categoryId === cat.id).map(bc => ({ id: bc.id, slug: bc.slug, name: bc.name, productCount: 0, isCurrent: false }))
+              const subChildren = subs.map(sub => ({ id: sub.id, slug: sub.slug, name: sub.name, productCount: sub.productCount, isCurrent: false }))
+              return { id: cat.id, slug: cat.slug, name: cat.name, productCount: cat.productCount, isParent, children: isParent ? [...brandChildren, ...subChildren] : [] }
+            })}
+          >
+            {richContent}
+          </FilterableProductGrid>
+        ) : (
+        <div className="flex flex-col lg:flex-row gap-8">
+          {/* Sidebar - desktop only */}
+          <aside className="hidden lg:block w-60 flex-shrink-0">
+            <div className="sticky top-32">
+              <h2 className="font-semibold text-gray-900 mb-3">Kategoria</h2>
+              <ul className="space-y-1">
+                {categories.map((cat) => {
+                  const subs = getSubcategoriesForCategory(cat.id)
+                  const isCurrent = cat.id === category.id
+                  return (
+                    <li key={cat.id}>
+                      <Link
+                        href={`/${cat.slug}`}
+                        className={`block px-3 py-2 rounded-lg text-sm transition-colors ${
+                          isCurrent
+                            ? 'bg-primary-50 text-primary-700 font-medium'
+                            : 'text-gray-600 hover:bg-gray-50'
+                        }`}
+                      >
+                        {cat.name}
+                        <span className="text-gray-400 ml-1">({cat.productCount})</span>
+                      </Link>
+                      {isCurrent && (brandCategories.filter(b => b.categoryId === cat.id).length > 0 || subs.length > 0) && (
+                        <ul className="ml-3 mt-1 space-y-0.5">
+                          {brandCategories.filter(b => b.categoryId === cat.id).map((bc) => (
+                            <li key={bc.id}>
+                              <Link
+                                href={`/${bc.slug}`}
+                                className="block px-3 py-1.5 rounded-lg text-sm text-gray-500 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                              >
+                                {bc.name}
+                              </Link>
+                            </li>
+                          ))}
+                          {subs.map((sub) => {
+                            const children = getChildSubcategories(sub.id)
+                            return (
+                              <li key={sub.id}>
+                                <Link
+                                  href={`/${sub.slug}`}
+                                  className="block px-3 py-1.5 rounded-lg text-sm text-gray-500 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                                >
+                                  {sub.name}
+                                  <span className="text-gray-400 ml-1">({sub.productCount})</span>
+                                </Link>
+                                {children.length > 0 && (
+                                  <ul className="ml-3 mt-0.5 space-y-0.5">
+                                    {children.map((child) => (
+                                      <li key={child.id}>
+                                        <Link
+                                          href={`/${child.slug}`}
+                                          className="block px-3 py-1.5 rounded-lg text-xs text-gray-500 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                                        >
+                                          {child.name}
+                                          <span className="text-gray-400 ml-1">({child.productCount})</span>
+                                        </Link>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </li>
+                            )
+                          })}
+                        </ul>
+                      )}
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+          </aside>
+
+          {/* Main content */}
+          <div className="flex-1 min-w-0">
+            <ProductGrid products={products} variant="grid" columns={3} maxInitial={48} />
+
+            {richContent}
           </div>
         </div>
+        )}
       </div>
     </>
   )

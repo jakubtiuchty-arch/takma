@@ -494,3 +494,10 @@ Otwarte na kolejne sesje:
 
 ## 2026-09-07 — Ads: 13 nowych grup terminali Zebry z komunikatem o podwyżce
 - W SW Zebra (20247613655) grupy „Zebra <model> [API]” dla TC53, TC58, TC73, TC78, MC3300x, MC9450, TC501, TC201, MC3450, MC2200, MC2700, EM45, TC701 — do tej pory te modele miał tylko DSA. Każda: 6–8 słów EXACT + 1 PHRASE, RSA (13 nagłówków, 4 opisy) z licznikiem do 5.10, 3 callouty podwyżki. 162 operacje jedną mutacją. IDs w pamięci `project_takma-podwyzka-zebra-2026-10`. Po 4.10 wyciąć teksty podwyżki, grupy zostają.
+
+## 2026-09-08 — Filtry na stronach kategorii (start: /drukarki-kart)
+- `CategoryPage` używa `FilterableProductGrid` (ten sam sidebar co podkategorie: checkboxy z licznikiem, cross-filtrowanie, drawer na mobile), gdy kategoria ma konfigurację w `src/data/category-filters.ts`. Filtry nad listą kategorii (`filtersFirst`).
+- Silnik: nowe reguły pochodne `derived` w `FilterDefinition` (regex na wartości specyfikacji, producent, przedział ceny) — produkt może mieć kilka wartości (np. USB + Ethernet). Reguły są danymi, więc przechodzą do komponentu klienckiego.
+- /drukarki-kart: Producent, Druk (jedno-/dwustronny), Łączność (USB/Ethernet/Wi-Fi), Kodowanie kart, Program do projektowania (HUB w cenie / CardStudio osobno), Cena netto. Tooltipy „?” z wyjaśnieniem dla laika.
+- Naprawiony zagnieżdżony `<button>` w tooltipie filtra (błąd hydracji, gdy checkbox-grupa ma opis).
+- Kolejne kategorie: dopisać wpis w `category-filters.ts` — nic więcej.

@@ -16,13 +16,50 @@ export interface FilterDefinition {
   style?: 'checkbox' | 'dropdown'
   /** Łopatologiczne wyjaśnienie dla klienta — pojawia się w tooltipie po najechaniu na ikonę ? */
   description?: string
+  /**
+   * Filtr pochodny (serializowalny, bo komponent jest kliencki): produkt dostaje wartość reguły, gdy spełnia jej warunki.
+   * Produkt może mieć kilka wartości (np. Łączność: USB + Ethernet). Gdy `derived` jest ustawione, `specKey` służy tylko jako id.
+   */
+  derived?: DerivedRule[]
+}
+
+export interface DerivedRule {
+  value: string
+  /** Wyrażenie regularne (bez flag, testowane bez wielkości liter) na WARTOŚCI wybranych specyfikacji */
+  pattern?: string
+  /** Ogranicz test wzorca do specyfikacji o tych nazwach (domyślnie wszystkie) */
+  specs?: string[]
+  manufacturer?: string
+  priceMin?: number
+  priceMax?: number
+}
+
+/** Wszystkie wartości filtra dla produktu (dla filtrów zwykłych 0–1 wartość, dla pochodnych 0–n). */
+function productValues(product: Product, def: FilterDefinition): string[] {
+  if (def.derived) {
+    const out: string[] = []
+    for (const rule of def.derived) {
+      if (rule.manufacturer && product.manufacturerId !== rule.manufacturer) continue
+      if (rule.priceMin !== undefined && !(product.priceFrom !== undefined && product.priceFrom >= rule.priceMin)) continue
+      if (rule.priceMax !== undefined && !(product.priceFrom !== undefined && product.priceFrom < rule.priceMax)) continue
+      if (rule.pattern) {
+        const re = new RegExp(rule.pattern, 'i')
+        const specs = rule.specs ? product.specifications.filter(sp => rule.specs!.includes(sp.name)) : product.specifications
+        if (!specs.some(sp => re.test(sp.value))) continue
+      }
+      out.push(rule.value)
+    }
+    return out
+  }
+  const spec = product.specifications.find(sp => sp.name === def.specKey)
+  return spec ? [applyTransform(spec.value, def.transform)] : []
 }
 
 /** Ikona ? z tooltipem — fixed position żeby uciekać przed overflow-hidden kontenera */
 function FilterInfoTooltip({ text }: { text: string }) {
   const [show, setShow] = useState(false)
   const [coords, setCoords] = useState<{ top: number; left: number } | null>(null)
-  const btnRef = useRef<HTMLButtonElement>(null)
+  const btnRef = useRef<HTMLSpanElement>(null)
 
   const updateCoords = useCallback(() => {
     if (!btnRef.current) return
@@ -49,19 +86,22 @@ function FilterInfoTooltip({ text }: { text: string }) {
 
   return (
     <>
-      <button
+      {/* span z rolą button, nie <button>: nagłówek grupy filtrów sam jest <button>, a zagnieżdżony button psuje hydrację */}
+      <span
         ref={btnRef}
-        type="button"
+        role="button"
+        tabIndex={0}
         aria-label="Pokaż wyjaśnienie filtra"
         onMouseEnter={() => { updateCoords(); setShow(true) }}
         onMouseLeave={() => setShow(false)}
         onFocus={() => { updateCoords(); setShow(true) }}
         onBlur={() => setShow(false)}
         onClick={e => { e.stopPropagation(); e.preventDefault() }}
-        className="inline-flex items-center justify-center text-gray-400 hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-300 rounded-full transition-colors"
+        onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); e.stopPropagation(); updateCoords(); setShow(v => !v) } }}
+        className="inline-flex items-center justify-center text-gray-400 hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-300 rounded-full transition-colors cursor-help"
       >
         <HelpCircleIcon size={14} />
-      </button>
+      </span>
       {show && coords && (
         <span
           role="tooltip"
@@ -72,9 +112,23 @@ function FilterInfoTooltip({ text }: { text: string }) {
             transform: 'translate(-50%, -100%)',
             zIndex: 9999,
           }}
-          className="w-64 p-2.5 rounded-md bg-gray-900 text-white text-xs font-normal leading-relaxed shadow-lg normal-case tracking-normal pointer-events-none"
+          className="w-72 px-3.5 py-2.5 rounded-md bg-gray-900 text-white text-xs font-normal leading-snug text-left shadow-lg normal-case tracking-normal pointer-events-none"
         >
-          {text}
+          {/* pierwsza linia = definicja (pogrubiona), linie „• …” = opcje w punktach; zwykły tekst = akapit */}
+          {(() => {
+            const lines = text.split('\n').map(l => l.trim()).filter(Boolean)
+            const bullets = lines.filter(l => l.startsWith('•'))
+            if (bullets.length === 0) return <span className="block">{text}</span>
+            const lead = lines.find(l => !l.startsWith('•'))
+            return (
+              <>
+                {lead && <span className="block font-semibold text-white mb-1">{lead}</span>}
+                {bullets.map((l, i) => (
+                  <span key={i} className="block text-gray-200 pl-3 -indent-3 mt-0.5">{l}</span>
+                ))}
+              </>
+            )
+          })()}
           <span className="absolute left-1/2 -translate-x-1/2 top-full w-0 h-0 border-x-4 border-x-transparent border-t-4 border-t-gray-900" />
         </span>
       )}
@@ -99,6 +153,8 @@ interface FilterableProductGridProps {
   variant?: 'grid' | 'list' | 'compact'
   columns?: 2 | 3 | 4
   children?: React.ReactNode
+  /** Filtry nad nawigacją kategorii (strony kategorii: filtry są celem, lista kategorii tylko pomocą) */
+  filtersFirst?: boolean
 }
 
 function extractNumeric(val: string): number {
@@ -125,6 +181,7 @@ export default function FilterableProductGrid({
   variant = 'grid',
   columns = 3,
   children,
+  filtersFirst = false,
 }: FilterableProductGridProps) {
   const [activeFilters, setActiveFilters] = useState<Record<string, Set<string>>>({})
   const [expandedGroups, setExpandedGroups] = useState<Record<string, boolean>>(
@@ -144,12 +201,12 @@ export default function FilterableProductGrid({
     for (const filter of filters) {
       const id = fId(filter)
       const values = new Set<string>()
-      for (const product of products) {
-        const spec = product.specifications.find(s => s.name === filter.specKey)
-        if (spec) values.add(applyTransform(spec.value, filter.transform))
-      }
+      for (const product of products) for (const v of productValues(product, filter)) values.add(v)
       let sorted = Array.from(values)
-      if (filter.sort === 'numeric') {
+      if (filter.derived) {
+        const order = filter.derived.map(r => r.value)
+        sorted.sort((a, b) => order.indexOf(a) - order.indexOf(b))
+      } else if (filter.sort === 'numeric') {
         sorted.sort((a, b) => extractNumeric(a) - extractNumeric(b))
       } else if (filter.sort !== 'none') {
         sorted.sort((a, b) => a.localeCompare(b, 'pl'))
@@ -173,18 +230,16 @@ export default function FilterableProductGrid({
         : products.filter(p => otherActive.every(([otherId, sv]) => {
             const otherDef = filterLookup[otherId]
             if (!otherDef) return true
-            const s = p.specifications.find(sp => sp.name === otherDef.specKey)
-            if (!s) return false
-            return sv.has(applyTransform(s.value, otherDef.transform))
+            return productValues(p, otherDef).some(v => sv.has(v))
           }))
 
       const values = new Set<string>()
-      for (const product of matchingProducts) {
-        const spec = product.specifications.find(s => s.name === filter.specKey)
-        if (spec) values.add(applyTransform(spec.value, filter.transform))
-      }
+      for (const product of matchingProducts) for (const v of productValues(product, filter)) values.add(v)
       let sorted = Array.from(values)
-      if (filter.sort === 'numeric') {
+      if (filter.derived) {
+        const order = filter.derived.map(r => r.value)
+        sorted.sort((a, b) => order.indexOf(a) - order.indexOf(b))
+      } else if (filter.sort === 'numeric') {
         sorted.sort((a, b) => extractNumeric(a) - extractNumeric(b))
       } else if (filter.sort !== 'none') {
         sorted.sort((a, b) => a.localeCompare(b, 'pl'))
@@ -202,9 +257,7 @@ export default function FilterableProductGrid({
       return activeKeys.every(([id, selectedValues]) => {
         const def = filterLookup[id]
         if (!def) return true
-        const spec = product.specifications.find(s => s.name === def.specKey)
-        if (!spec) return false
-        return selectedValues.has(applyTransform(spec.value, def.transform))
+        return productValues(product, def).some(v => selectedValues.has(v))
       })
     })
   }, [products, activeFilters, filterLookup])
@@ -247,9 +300,7 @@ export default function FilterableProductGrid({
       ? 'produkty'
       : 'produktów'
 
-  const filterSidebarContent = (
-    <>
-      {/* Nawigacja kategorii */}
+  const categoryNavBlock = (
       <div className="mb-6">
         <h2 className="font-semibold text-gray-900 mb-3">Kategoria</h2>
         <ul className="space-y-1">
@@ -289,11 +340,9 @@ export default function FilterableProductGrid({
           ))}
         </ul>
       </div>
+  )
 
-      {/* Separator */}
-      <div className="border-t border-gray-200 mb-5" />
-
-      {/* Filtry */}
+  const filtersBlock = (
       <div>
         <div className="flex items-center justify-between mb-4">
           <h2 className="font-semibold text-gray-900 flex items-center gap-2">
@@ -354,9 +403,9 @@ export default function FilterableProductGrid({
               <div key={id} className="border border-gray-200 rounded-lg overflow-hidden">
                 <button
                   onClick={() => toggleGroup(id)}
-                  className="flex items-center justify-between w-full px-3 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-50 transition-colors"
+                  className="flex items-center justify-between gap-2 w-full px-3 py-2.5 text-sm font-medium text-gray-900 text-left hover:bg-gray-50 transition-colors"
                 >
-                  <span className="flex items-center gap-1.5">
+                  <span className="flex items-center gap-1.5 min-w-0 flex-wrap">
                     {filter.label}
                     {filter.description && <FilterInfoTooltip text={filter.description} />}
                     {selected.size > 0 && (
@@ -380,14 +429,11 @@ export default function FilterableProductGrid({
                       const otherKeys = Object.entries(activeFilters)
                         .filter(([k, v]) => k !== id && v.size > 0)
                       const count = products.filter(p => {
-                        const spec = p.specifications.find(s => s.name === filter.specKey)
-                        if (!spec || applyTransform(spec.value, filter.transform) !== value) return false
+                        if (!productValues(p, filter).includes(value)) return false
                         return otherKeys.every(([otherId, sv]) => {
                           const otherDef = filterLookup[otherId]
                           if (!otherDef) return true
-                          const s = p.specifications.find(sp => sp.name === otherDef.specKey)
-                          if (!s) return false
-                          return sv.has(applyTransform(s.value, otherDef.transform))
+                          return productValues(p, otherDef).some(v => sv.has(v))
                         })
                       }).length
 
@@ -409,7 +455,7 @@ export default function FilterableProductGrid({
                             onChange={() => toggleFilter(id, value)}
                             className="w-3.5 h-3.5 rounded border-gray-300 text-primary-600 focus:ring-primary-500 focus:ring-1 disabled:opacity-30"
                           />
-                          <span className="flex-1 leading-tight">{displayLabel}</span>
+                          <span className="flex-1 leading-snug">{displayLabel}</span>
                           <span className={`text-xs ${isSelected ? 'text-primary-500' : 'text-gray-400'}`}>
                             {count}
                           </span>
@@ -423,6 +469,19 @@ export default function FilterableProductGrid({
           })}
         </div>
       </div>
+  )
+
+  const filterSidebarContent = filtersFirst ? (
+    <>
+      {filtersBlock}
+      <div className="border-t border-gray-200 my-6" />
+      {categoryNavBlock}
+    </>
+  ) : (
+    <>
+      {categoryNavBlock}
+      <div className="border-t border-gray-200 mb-5" />
+      {filtersBlock}
     </>
   )
 
