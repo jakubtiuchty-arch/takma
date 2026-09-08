@@ -491,3 +491,6 @@ Otwarte na kolejne sesje:
 - Ads 24213061119: nagłówek „Program do kart bez opłat” w RSA grup Magicard i Legitymacje, sitelink „Magicard HUB bez opłat”. Skrypt `~/takma-ads-drukarki-kart-2026-09/add-magicard-hub.ts`.
 - Decyzja: promować Magicard, nie replikować „Pobierz” dla CardStudio.
 - Uzupełnienia 7.09 wieczorem: zdjęcie karty = render pudełka programu z logo (Higgsfield, referencja logo z filmu producenta); boks ceny „Bezpłatny” tylko z wersją i systemem; CSP `frame-src` + YouTube (youtube-nocookie), inaczej filmy nie ładują się; badge dostępności przeniesiony do prawego górnego rogu boksu ceny (obie strony produktu); baner Magicard HUB z pętlą wideo: na pustej karcie powstaje projekt (start/end frame z gpt_image_2, Seedance 2.5, hold + fade w ffmpeg) — `public/video/magicard-hub-card.mp4`.
+
+## 2026-09-07 — Ads: 13 nowych grup terminali Zebry z komunikatem o podwyżce
+- W SW Zebra (20247613655) grupy „Zebra <model> [API]” dla TC53, TC58, TC73, TC78, MC3300x, MC9450, TC501, TC201, MC3450, MC2200, MC2700, EM45, TC701 — do tej pory te modele miał tylko DSA. Każda: 6–8 słów EXACT + 1 PHRASE, RSA (13 nagłówków, 4 opisy) z licznikiem do 5.10, 3 callouty podwyżki. 162 operacje jedną mutacją. IDs w pamięci `project_takma-podwyzka-zebra-2026-10`. Po 4.10 wyciąć teksty podwyżki, grupy zostają.
