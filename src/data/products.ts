@@ -63303,6 +63303,23 @@ export const brandCategories: BrandCategory[] = [
       { question: 'Czy drukarka Citizen jest dobrym zamiennikiem Zebry ZD220 lub ZD421?', answer: 'Tak — Cross-Emulation automatycznie rozpoznaje ZPL II, EPL2, DPL. [CL-E300](/produkt/citizen-cl-e300) (od 1 133 zł) zastępuje [ZD220d](/produkt/zebra-zd220d): szybsza, z Ethernetem w standardzie. [CL-E321](/produkt/citizen-cl-e321) (od 1 410 zł) zastępuje [ZD421t](/produkt/zebra-zd421t) w segmencie TT. Migracja bez zmian w WMS/ERP.' },
     ],
   },
+  {
+    id: 'drukarki-kart-magicard',
+    slug: 'drukarki-kart-magicard',
+    manufacturerId: 'magicard',
+    categoryId: 'drukarki-kart',
+    name: 'Drukarki kart Magicard',
+    seoTitle: 'Drukarki kart Magicard — Pronto100, 300, 600 Duo od 2 875 zł netto',
+    seoDescription: 'Drukarki kart plastikowych Magicard: Pronto100, 300 i 600 Duo od 2 875 zł netto. Bezpłatny program Magicard HUB, 3 lata gwarancji, taśmy i karty od ręki. Legitymacje, identyfikatory, karty dostępu.',
+    longDescription: 'Trzy drukarki kart Magicard do wyboru: kompaktowa Pronto100 do kilkuset kart rocznie, dwustronna Magicard 300 dla szkół i firm oraz Magicard 600 Duo z Wi-Fi do większych nakładów. Każda drukuje na kartach PVC w formacie CR-80, ma znak wodny HoloKote zabezpieczający przed podrobieniem i 3 lata gwarancji producenta. Do wszystkich modeli producent dostarcza bezpłatny program Magicard HUB: instalacja drukarki, projektowanie identyfikatorów i legitymacji, dane z listy uczniów lub pracowników, kody QR. TAKMA ma na stanie taśmy YMCKO i monochromatyczne, karty PVC oraz zestawy czyszczące, a dobór modelu do liczby kart i sposobu ich użycia konsultujemy przed zakupem.',
+    faq: [
+      { question: 'Która drukarka Magicard do szkoły?', answer: 'Do legitymacji szkolnych najczęściej wybierana jest [Magicard 300](/produkt/magicard-300): drukuje dwustronnie, ma Ethernet do sieci szkolnej i podajnik na 100 kart. Dla mniejszej szkoły albo przedszkola wystarczy [Pronto100](/produkt/magicard-pronto100), która drukuje jednostronnie i kosztuje mniej. Program do projektowania kart jest w obu przypadkach bezpłatny.' },
+      { question: 'Czy do drukarki Magicard trzeba dokupić program?', answer: 'Nie. Producent dostarcza bezpłatnie [Magicard HUB](/produkt/magicard-hub): instaluje drukarkę, pozwala zaprojektować kartę ze zdjęciem, danymi i kodem QR oraz drukować serie kart z listy. Plik do pobrania jest na naszej stronie, bez formularza.' },
+      { question: 'Czym różni się Magicard 300 od 600 Duo?', answer: '[Magicard 600 Duo](/produkt/magicard-600-duo) drukuje szybciej (do 190 kart na godzinę w kolorze), ma Wi-Fi obok USB i Ethernetu, do 10 własnych wzorów znaku wodnego HoloKote i wyższą zalecaną wydajność roczną. [Magicard 300](/produkt/magicard-300) wystarcza do kilku tysięcy kart rocznie i jest tańsza o około 1 700 zł netto.' },
+      { question: 'Jakie karty i taśmy pasują do drukarek Magicard?', answer: 'Karty PVC w formacie CR-80 o grubości 0,76 mm, także z chipem lub paskiem magnetycznym. Taśmy są przypisane do serii: [Pronto100](/produkt/magicard-pronto100) ma własne taśmy YMCKO na 100 i 200 kart, Magicard 300 i 600 mają taśmy na 300 kart kolorowych lub 600 czarnych, a taśmy monochromatyczne MA1000K pasują do wszystkich trzech modeli. Pełna lista jest w [taśmach do drukarek kart](/tasmy-do-drukarek-kart).' },
+      { question: 'Jaka jest gwarancja i gdzie serwis?', answer: 'Drukarki Magicard mają 3 lata gwarancji producenta MagiCover, w tym na głowicę do określonej liczby kart. Zgłoszenia serwisowe prowadzi TAKMA, a wymianę materiałów eksploatacyjnych i kalibrację można wykonać samodzielnie według instrukcji w programie Magicard HUB.' },
+    ],
+  },
 ]
 
 // Brand category helpers

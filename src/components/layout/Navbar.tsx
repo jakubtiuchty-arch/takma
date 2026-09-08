@@ -82,7 +82,7 @@ const navigation: NavItem[] = [
       { name: 'Brother', href: '/drukarki-etykiet-brother', logo: '/images/partners/brother_logo.png' },
       { name: 'TSC', href: '/drukarki-etykiet-tsc', logo: '/images/partners/logo_tsc.png' },
       { name: 'Citizen', href: '/drukarki-etykiet-citizen', logo: '/images/partners/logo_citizen.png' },
-      { name: 'Magicard by Brady', href: '/katalog?producent=magicard', logo: '/images/partners/logo_magicard.png', logoClassName: 'h-[38px]' },
+      { name: 'Magicard by Brady', href: '/drukarki-kart-magicard', logo: '/images/partners/logo_magicard.png', logoClassName: 'h-[38px]' },
     ],
     children: [
       { name: 'Wszystkie drukarki', href: '/drukarki-etykiet' },

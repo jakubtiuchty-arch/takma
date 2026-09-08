@@ -32,6 +32,14 @@ export interface DerivedRule {
   manufacturer?: string
   priceMin?: number
   priceMax?: number
+  /** Produkt NIE może mieć żadnej specyfikacji o tych nazwach (np. „biurkowa” = brak wiersza Bateria) */
+  notSpecs?: string[]
+  /** Wprost po slugach — gdy specyfikacja nie daje się sparsować; reguła spełniona, gdy slug jest na liście */
+  slugs?: string[]
+  /** Wyrażenie regularne na NAZWIE produktu (bez wielkości liter) — np. rodzaj akcesorium */
+  namePattern?: string
+  /** Produkt należy do tej podkategorii (subcategoryIds) */
+  subcategory?: string
 }
 
 /** Wszystkie wartości filtra dla produktu (dla filtrów zwykłych 0–1 wartość, dla pochodnych 0–n). */
@@ -40,14 +48,19 @@ function productValues(product: Product, def: FilterDefinition): string[] {
     const out: string[] = []
     for (const rule of def.derived) {
       if (rule.manufacturer && product.manufacturerId !== rule.manufacturer) continue
-      if (rule.priceMin !== undefined && !(product.priceFrom !== undefined && product.priceFrom >= rule.priceMin)) continue
-      if (rule.priceMax !== undefined && !(product.priceFrom !== undefined && product.priceFrom < rule.priceMax)) continue
+      if (rule.notSpecs && product.specifications.some(sp => rule.notSpecs!.includes(sp.name))) continue
+      if (rule.slugs && !rule.slugs.includes(product.slug)) continue
+      if (rule.namePattern && !new RegExp(rule.namePattern, 'i').test(product.name)) continue
+      if (rule.subcategory && !product.subcategoryIds?.includes(rule.subcategory)) continue
+      // cena 0 / brak = „na zapytanie” — poza przedziałami cenowymi
+      if (rule.priceMin !== undefined && !(product.priceFrom && product.priceFrom >= rule.priceMin)) continue
+      if (rule.priceMax !== undefined && !(product.priceFrom && product.priceFrom < rule.priceMax)) continue
       if (rule.pattern) {
         const re = new RegExp(rule.pattern, 'i')
         const specs = rule.specs ? product.specifications.filter(sp => rule.specs!.includes(sp.name)) : product.specifications
         if (!specs.some(sp => re.test(sp.value))) continue
       }
-      out.push(rule.value)
+      if (!out.includes(rule.value)) out.push(rule.value) // kilka reguł może dawać tę samą wartość (różne specyfikacje)
     }
     return out
   }

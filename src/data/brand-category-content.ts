@@ -4,6 +4,128 @@
 import { SubcategoryRichContent } from './subcategory-content'
 
 export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
+  'drukarki-kart-magicard': {
+    updatedAt: '2026-09-08',
+    sectionHeadings: {
+      expertAuthority: 'Dlaczego Magicard kupuje się u nas',
+      technicalDeepDive: 'Trzy modele obok siebie: parametry i koszty',
+      useCases: 'Gdzie sprawdza się która drukarka',
+      comparisons: 'Magicard a inne drukarki kart',
+      howToSteps: 'Jak wdrożyć własny druk kart w tydzień',
+    },
+    definition: {
+      heading: 'Drukarki kart Magicard: co dostajesz w cenie',
+      content:
+        'Magicard to brytyjski producent drukarek kart plastikowych, od 2021 roku część grupy Brady. W Polsce najczęściej spotkasz go w szkołach, klubach sportowych i firmach, które drukują identyfikatory same, zamiast zamawiać je na zewnątrz. Mamy w ofercie trzy modele: [Pronto100](/produkt/magicard-pronto100) do małych nakładów, dwustronną [Magicard 300](/produkt/magicard-300) i najszybszą [600 Duo](/produkt/magicard-600-duo) z Wi-Fi. Wszystkie drukują na zwykłych kartach PVC w formacie CR-80, czyli takim samym jak karta płatnicza, i mają trzy lata gwarancji MagiCover. Dwie rzeczy odróżniają Magicarda od konkurencji. Pierwsza to HoloKote, znak wodny nanoszony podczas druku bez dodatkowej taśmy: karta z takim znakiem jest trudna do podrobienia, a nic to nie kosztuje. Druga to program [Magicard HUB](/produkt/magicard-hub), który producent oddaje za darmo. Instaluje drukarkę, ma projektant kart i drukuje serie z listy uczniów albo pracowników. U innych producentów za taki program płaci się osobno.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać drukarkę Magicard? Pięć pytań, które zadajemy klientom',
+      items: [
+        'Ile kart rocznie — do kilkuset wystarczy [Pronto100](/produkt/magicard-pronto100) z podajnikiem na 50 kart. Szkoła z kilkuset uczniami drukuje legitymacje raz w roku plus duplikaty, więc [Magicard 300](/produkt/magicard-300) z podajnikiem na 100 kart i zalecanym obciążeniem do 10 000 kart rocznie ma spory zapas. Powyżej tego, albo gdy karty drukuje kilka osób, bierz [600 Duo](/produkt/magicard-600-duo).',
+        'Jedna strona czy dwie — na rewersie legitymacji zwykle jest regulamin, dane szkoły albo kod QR. Pronto100 drukuje tylko awers, więc rewers musi być nadrukowany fabrycznie na blankiecie. Magicard 300 i 600 Duo odwracają kartę same.',
+        'Podłączenie — USB do jednego komputera mają wszystkie trzy. Ethernet też, więc drukarka może stać w sekretariacie, a drukować z niej kadry i wychowawcy. Wi-Fi ma tylko 600 Duo.',
+        'Zabezpieczenia — HoloKote jest w każdym modelu, ale Pronto100 ma trzy gotowe wzory, Magicard 300 pozwala dodać trzy własne (np. logo szkoły), a 600 Duo dziesięć. Jeśli karta ma otwierać drzwi, potrzebny jest wariant z kodowaniem paska magnetycznego, chipu albo zbliżeniowe. Pomożemy to sprawdzić z firmą od kontroli dostępu.',
+        'Koszt karty — liczy się taśma i blankiet, nie sama drukarka. Kolorowa karta na Magicard 300 wychodzi około 1,20 zł, na Pronto100 około 1,40 zł, a czarno-biała na taśmie monochromatycznej około 40 groszy. Personalizacja zamawiana na zewnątrz kosztuje 8,50–12,50 zł za sztukę.',
+      ],
+    },
+    expertAuthority:
+      'Drukarki kart sprzedajemy od lat razem z całą resztą: blankietami, taśmami, zestawami czyszczącymi i programem. Przed wysyłką konfigurujemy drukarkę, a jeśli klient chce, drukujemy na jego karcie testowej. Zgłoszenia gwarancyjne załatwiamy my, nie infolinia producenta. Do tego dochodzi doświadczenie z drukarkami etykiet Zebra i Honeywell, więc gdy w szkole obok drukarki kart stoi drukarka etykiet do biblioteki, obsługa jest w jednym miejscu.',
+    technicalDeepDive: `Trzy modele różnią się prędkością, podajnikiem i łącznością, ale mechanizm druku jest ten sam: termosublimacja bezpośrednio na karcie, 300 dpi, taśma YMCKO na kolor albo monochromatyczna na tekst i kody. Poniżej zestawienie z cenami z września 2026.\n\n• Pronto100 (kompaktowa, jednostronna): do 200 kart/h w kolorze, podajnik 50 kart, USB i Ethernet, HoloKote 3 wzory, od 2 875 zł netto — dla małej szkoły, przedszkola, klubu albo recepcji, gdzie karty drukuje się kilka razy w roku.\n• Magicard 300 (dwustronna, do 10 000 kart rocznie): 160 kart/h w kolorze, podajnik 100 kart, USB i Ethernet, wyświetlacz z menu po polsku, HoloKote 3 własne wzory, kodowanie jako opcja, od 4 025 zł netto — najczęstszy wybór do legitymacji szkolnych i identyfikatorów pracowniczych.\n• Magicard 600 Duo (dwustronna, szybka): 190 kart/h w kolorze, do 750 mono, podajnik 100 kart, USB, Ethernet i Wi-Fi, do 10 wzorów HoloKote, gniazdo Kensington, od 5 750 zł netto — dla zespołów szkół, uczelni i firm z kilkoma lokalizacjami.\n\nTaśmy: do Pronto100 YMCKO na 100 kart za 172,50 zł albo na 200 kart za 217,35 zł. Do Magicard 300 taśma na 300 kart kolorowych za 270,25 zł lub czarna z warstwą ochronną na 600 kart za 205,85 zł. Do 600 Duo YMCKO na 300 kart za 278,30 zł, dwustronna YMCKOK na 250 kart za 345 zł. Taśmy monochromatyczne MA1000K na 1 000 kart pasują do wszystkich trzech modeli: czarna 100,05 zł, kolorowe 166,75 zł, srebrna i złota 391 zł. Karty PVC 0,76 mm w standardzie CR-80 kupisz u nas od 148,93 zł za 500 sztuk.`,
+    tcoComparisons: [
+      {
+        title: 'Co się bardziej opłaca: własna drukarka czy zamawianie legitymacji? 500 kart rocznie, 3 lata',
+        variants: [
+          {
+            label: 'Zamawianie na zewnątrz',
+            items: [
+              { name: '500 legitymacji × 3 lata, po 10 zł', cost: '15 000 zł' },
+              { name: 'Duplikaty w ciągu roku (ok. 5%), 75 szt.', cost: '~750 zł' },
+              { name: 'Czekanie na dostawę i zbieranie zdjęć', cost: 'czas sekretariatu' },
+            ],
+            total: '~15 750 zł',
+          },
+          {
+            label: 'Magicard 300 w sekretariacie',
+            items: [
+              { name: 'Drukarka Magicard 300', cost: '4 025 zł' },
+              { name: 'Taśmy YMCKO, 6 szt. na 3 lata', cost: '~1 620 zł' },
+              { name: 'Karty PVC, 1 600 szt.', cost: '~480 zł' },
+              { name: 'Program Magicard HUB', cost: '0 zł' },
+            ],
+            total: '~6 125 zł',
+          },
+        ],
+        conclusion: 'Drukarka zwraca się w pierwszym roku, a duplikat legitymacji robi się w pięć minut, nie w dwa tygodnie.',
+      },
+    ],
+    useCases: [
+      {
+        title: 'Legitymacje szkolne',
+        description:
+          'Od lipca 2024 nowe legitymacje są plastikowe, a aplikacja mObywatel jest tylko dodatkiem do karty. Szkoła kupuje blankiety z giloszem i drukuje na nich zdjęcie oraz dane ucznia. Magicard 300 robi to dwustronnie, a listę uczniów wczytuje się do programu z arkusza.',
+      },
+      {
+        title: 'Identyfikatory pracownicze',
+        description:
+          'Zdjęcie, imię, dział, kod kreskowy do rejestracji czasu pracy. Przy zatrudnieniu nowej osoby identyfikator jest gotowy tego samego dnia. Wariant z kodowaniem zbliżeniowym pozwala od razu wpiąć kartę w kontrolę dostępu.',
+      },
+      {
+        title: 'Karty członkowskie i lojalnościowe',
+        description:
+          'Kluby fitness, biblioteki, baseny. Karta z kodem kreskowym albo QR obsługuje wejście i zniżki, a znak wodny HoloKote utrudnia przekazanie karty komuś innemu.',
+      },
+      {
+        title: 'Przepustki gości i wykonawców',
+        description:
+          'Recepcja drukuje przepustkę na miejscu, z datą ważności i zdjęciem. Do tego wystarczy Pronto100 i taśma monochromatyczna, na której karta kosztuje kilkadziesiąt groszy.',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Trzy rzeczy, które warto wiedzieć przed zakupem',
+      items: [
+        {
+          title: 'Blankiet ma znaczenie tak samo jak drukarka',
+          text: 'Legitymacja szkolna wymaga blankietu z zabezpieczeniami. Drukarka personalizuje taki blankiet, nie tworzy go od zera. Przy zakupie dla szkoły od razu wskazujemy, skąd wziąć blankiety, żeby nie zostać z drukarką bez kart.',
+        },
+        {
+          title: 'Taśma kolorowa drukuje zawsze pełny panel',
+          text: 'YMCKO zużywa jeden zestaw paneli na kartę, nawet gdy na karcie jest tylko mały kolorowy element. Jeśli większość kart jest czarno-biała, tańsza jest taśma monochromatyczna i kolorowy blankiet.',
+        },
+        {
+          title: 'Czyszczenie co wymianę taśmy',
+          text: 'Rolka czyszcząca jest w zestawie z taśmą. Pominięcie czyszczenia kończy się smugami na kartach i szybszym zużyciem głowicy. Gwarancja na głowicę jest liczona w kartach, więc lepiej jej nie skracać.',
+        },
+      ],
+    },
+    comparisons: [
+      {
+        title: 'Magicard 300 a Zebra ZC300',
+        content:
+          'Obie drukują dwustronnie w 300 dpi i mają podobną cenę. ZC300 ma szerszą ofertę kodowania i firmowy program CardStudio, ale za jego pełne wersje trzeba zapłacić. Magicard daje program w cenie, znak wodny HoloKote bez dodatkowych materiałów i trzy lata gwarancji zamiast dwóch. Nieoficjalnie wiemy też, że Zebra nie planuje następców obecnych ZC, więc na kolejne lata Magicard jest bezpieczniejszym wyborem.',
+      },
+      {
+        title: 'Pronto100 a Magicard 300',
+        content:
+          'Różnica to 1 150 zł netto. Za tę kwotę dostajesz druk dwustronny, dwa razy większy podajnik, wyświetlacz z menu po polsku i własne wzory znaku wodnego. Jeśli karty mają nadruk tylko z jednej strony i drukujesz ich kilkaset rocznie, Pronto100 wystarczy. Przy legitymacjach z rewersem od razu bierz 300.',
+      },
+    ],
+    howToSteps: [
+      { name: 'Policz karty i zdecyduj o rewersie', text: 'Liczba kart rocznie plus duplikaty i to, czy rewers ma być drukowany. To ustawia wybór między Pronto100 a modelami dwustronnymi.' },
+      { name: 'Zamów drukarkę z taśmą i blankietami', text: 'Do drukarki dokładamy taśmę startową i karty. Przy legitymacjach wskazujemy dostawcę blankietów z giloszem.' },
+      { name: 'Zainstaluj Magicard HUB i przygotuj projekt', text: 'Program pobierzesz z naszej strony. Projekt karty to tło, pole na zdjęcie, dane i kod. Pola łączy się z arkuszem z listą osób.' },
+      { name: 'Wydrukuj partię testową', text: 'Pięć kart z prawdziwymi danymi pokaże, czy zdjęcia są dobrze przycięte, a kody czytelne. Potem druk serii to jedno polecenie.' },
+    ],
+    faq: [
+      { question: 'Która drukarka Magicard do szkoły?', answer: 'Do legitymacji szkolnych najczęściej [Magicard 300](/produkt/magicard-300): drukuje dwustronnie, ma Ethernet do sieci szkolnej i podajnik na 100 kart. Dla małej szkoły albo przedszkola wystarczy [Pronto100](/produkt/magicard-pronto100), która drukuje jednostronnie i kosztuje mniej. Program do projektowania kart jest w obu przypadkach bezpłatny.' },
+      { question: 'Czy do drukarki Magicard trzeba dokupić program?', answer: 'Nie. Producent dostarcza bezpłatnie [Magicard HUB](/produkt/magicard-hub): instaluje drukarkę, pozwala zaprojektować kartę ze zdjęciem, danymi i kodem QR oraz drukować serie kart z listy. Plik do pobrania jest na naszej stronie, bez formularza.' },
+      { question: 'Czym różni się Magicard 300 od 600 Duo?', answer: '[Magicard 600 Duo](/produkt/magicard-600-duo) drukuje szybciej, do 190 kart na godzinę w kolorze, ma Wi-Fi obok USB i Ethernetu, do 10 własnych wzorów HoloKote i wyższą zalecaną wydajność roczną. [Magicard 300](/produkt/magicard-300) wystarcza do kilku tysięcy kart rocznie i jest tańsza o około 1 700 zł netto.' },
+      { question: 'Jakie karty i taśmy pasują do drukarek Magicard?', answer: 'Karty PVC w formacie CR-80 o grubości 0,76 mm, także z chipem lub paskiem magnetycznym. Taśmy są przypisane do serii: [Pronto100](/produkt/magicard-pronto100) ma własne taśmy YMCKO na 100 i 200 kart, Magicard 300 i 600 mają taśmy na 300 kart kolorowych lub 600 czarnych, a taśmy monochromatyczne MA1000K pasują do wszystkich trzech. Pełna lista jest w [taśmach do drukarek kart](/tasmy-do-drukarek-kart).' },
+      { question: 'Czy Magicard wydrukuje legitymację na blankiecie z giloszem?', answer: 'Tak, drukarka personalizuje gotowy blankiet: zdjęcie, dane, numer, kod. Blankiety z zabezpieczeniami kupuje się osobno u producentów druków zabezpieczonych. Przy zamówieniu dla szkoły podpowiadamy, gdzie je zamówić.' },
+      { question: 'Ile kosztuje wydruk jednej karty?', answer: 'Kolorowa karta na Magicard 300 to około 90 groszy za taśmę i 30 groszy za blankiet PVC, razem około 1,20 zł. Na Pronto100 około 1,40 zł, bo taśmy są krótsze. Karta czarno-biała na taśmie monochromatycznej kosztuje około 40 groszy.' },
+      { question: 'Czy drukarka Magicard zakoduje kartę zbliżeniową?', answer: 'W wariancie z modułem kodowania tak: Magicard 300 i 600 Duo mają opcję kodowania paska magnetycznego, chipu stykowego i kart zbliżeniowych. Wariant trzeba wybrać przy zamówieniu, bo modułu nie dokłada się później. Sprawdzimy zgodność z systemem kontroli dostępu, jeśli podasz jego producenta.' },
+      { question: 'Jaka jest gwarancja i gdzie serwis?', answer: 'Drukarki Magicard mają 3 lata gwarancji producenta MagiCover, w tym na głowicę do określonej liczby kart. Zgłoszenia gwarancyjne prowadzi TAKMA, a wymianę taśmy i czyszczenie wykonuje się samodzielnie według instrukcji w programie Magicard HUB.' },
+    ],
+  },
   'drukarki-etykiet-zebra': {
     definition: {
       heading: 'Drukarki etykiet Zebra — ponad 50% rynku enterprise na świecie',

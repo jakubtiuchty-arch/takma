@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { ChevronRightIcon } from '@/components/ui/Icons'
 import { ProductGrid } from '@/components/product'
 import FilterableProductGrid, { FilterDefinition, CategoryNavItem } from '@/components/subcategory/FilterableProductGrid'
+import { categoryFilters } from '@/data/category-filters'
 import {
   getSubcategoryBySlug,
   getSubcategoryById,
@@ -236,11 +237,12 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
         </div>
 
         {/* Sidebar + Content layout */}
-        {sidebarFilters[slug] ? (
-          /* Layout z filtrami — FilterableProductGrid renderuje sidebar (kategorie+filtry) + grid */
+        {(sidebarFilters[slug] || categoryFilters[slug]) ? (
+          /* Layout z filtrami — FilterableProductGrid renderuje sidebar (kategorie+filtry) + grid; konfiguracja tu (materiały) albo w category-filters.ts (reguły pochodne) */
           <FilterableProductGrid
             products={products}
-            filters={sidebarFilters[slug]}
+            filters={sidebarFilters[slug] || categoryFilters[slug]}
+            filtersFirst={!sidebarFilters[slug]}
             categoryNav={categories.map(cat => {
               const subs = getSubcategoriesForCategory(cat.id)
               const catBrands = brandCategories.filter(b => b.categoryId === cat.id)
