@@ -972,7 +972,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       ],
     },
   ],
-  'karty-pcv': [
+  'karty-pvc': [
     {
       specKey: 'rodzaj',
       label: 'Rodzaj karty',

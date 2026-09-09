@@ -536,7 +536,7 @@ export const subcategories: Subcategory[] = [
   },
   {
     id: 'karty-pcv',
-    slug: 'karty-pcv',
+    slug: 'karty-pvc',
     name: 'Karty PVC',
     parentCategoryId: 'materialy-eksploatacyjne',
     description: 'Karty plastikowe PVC do drukarek kart identyfikacyjnych i dostępowych',

@@ -1019,7 +1019,7 @@ Koszty eksploatacji (TCO): opaska Z-Band Direct = ok. 0,70–0,90 zł/szt. Brak 
   // ============================================
   // KARTY PVC
   // ============================================
-  'karty-pcv': {
+  'karty-pvc': {
     definition: {
       heading: 'Karty PVC Zebra — identyfikatory, karty dostępowe i lojalnościowe',
       content: 'Karty PVC (PVC — polichlorek winylu) to plastikowe karty w standardowym formacie CR-80 (85,6 × 54 mm, grubość 0,76 mm) — tym samym co karty płatnicze i dowody osobiste. Drukowane na specjalistycznych drukarkach kart Zebra (ZC100, ZC300, ZC350, ZXP Series 7), służą do tworzenia identyfikatorów pracowniczych ze zdjęciem, kart dostępowych RFID, kart lojalnościowych, kart członkowskich i legitymacji. Zebra oferuje karty Premier PVC w wariantach: białe (standard), z paskiem magnetycznym (HiCo/LoCo), z chipem RFID (Mifare, DESFire, HID iKey), z hologramem zabezpieczającym. Drukarki kart Zebra umożliwiają druk full-color (YMCKO) jedno- lub dwustronny z personalizacją w czasie rzeczywistym.',

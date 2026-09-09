@@ -30,6 +30,8 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // podkategoria kart przeniesiona z błędnej pisowni „PCV” na „PVC” (2026-09-09)
+      { source: '/karty-pcv', destination: '/karty-pvc', permanent: true },
       // =====================================================
       // INSTRUKCJE — stare PDF-y instrukcji (/downloads) → kanoniczny dom /instrukcje
       // PL PDF → strona po polsku; EN PDF → hub modelu
