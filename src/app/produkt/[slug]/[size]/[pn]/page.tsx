@@ -500,7 +500,7 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
               badge={
                 <ContextAvailabilityBadge
                   staticAvailability={variant.availability}
-                  treatUnknownAsUnavailable={product.categoryId === 'materialy-eksploatacyjne'}
+                  treatUnknownAsUnavailable={product.categoryId === 'materialy-eksploatacyjne' && product.manufacturerId !== 'acss'}
                   feminine={!!ctx?.isRibbon}
                 />
               }

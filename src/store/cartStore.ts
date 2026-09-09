@@ -1,5 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
+import { tierPrice, type PriceTier } from '@/lib/price-tiers'
 import {
   products,
   getProductBySlug,
@@ -75,6 +76,10 @@ export interface CartItem {
   quantity: number
   note: string
   priceNetto?: number // cena jednostkowa netto w PLN (do wyświetlania)
+  /** Rabat ilościowy (sprzedaż na sztuki): przy zmianie ilości `priceNetto` jest przeliczane
+   *  z `basePriceNetto` i progów — patrz src/lib/price-tiers.ts. */
+  priceTiers?: PriceTier[]
+  basePriceNetto?: number
   categoryId?: string // dla logiki cross-sell
   /** Numer oferty, z której pochodzi pozycja — cena jest wtedy zamrożona
    *  (kasa nie podmienia jej na żywą) i weryfikowana po stronie serwera. */
@@ -105,6 +110,7 @@ interface CartStore {
     image?: string
     partNumber?: string
     priceNetto?: number
+    priceTiers?: PriceTier[]
     categoryId?: string
   }) => void
   /** Zastępuje zawartość koszyka pozycjami z oferty (link „zamów z oferty" w mailu). */
@@ -138,6 +144,12 @@ interface CartStore {
   getRibbonSuggestions: () => RibbonSuggestion[]
 }
 
+/** Pozycja z rabatem ilościowym dostaje cenę za sztukę właściwą dla nowej ilości; reszta bez zmian. */
+function repriceForQuantity(item: CartItem): CartItem {
+  if (!item.priceTiers || item.basePriceNetto === undefined) return item
+  return { ...item, priceNetto: tierPrice(item.basePriceNetto, item.priceTiers, item.quantity) }
+}
+
 export const useCartStore = create<CartStore>()(
   persist(
     (set, get) => ({
@@ -154,12 +166,13 @@ export const useCartStore = create<CartStore>()(
           set({
             items: items.map((item) =>
               item.productId === product.id
-                ? { ...item, quantity: item.quantity + 1 }
+                ? repriceForQuantity({ ...item, quantity: item.quantity + 1 })
                 : item
             ),
           })
         } else {
           // Dodaj nowy element
+          const hasTiers = !!(product.priceTiers && product.priceTiers.length > 0 && product.priceNetto !== undefined)
           set({
             items: [
               ...items,
@@ -172,6 +185,7 @@ export const useCartStore = create<CartStore>()(
                 quantity: 1,
                 note: '',
                 priceNetto: product.priceNetto,
+                ...(hasTiers ? { priceTiers: product.priceTiers, basePriceNetto: product.priceNetto } : {}),
                 categoryId: product.categoryId,
               },
             ],
@@ -207,7 +221,7 @@ export const useCartStore = create<CartStore>()(
 
         set({
           items: get().items.map((item) =>
-            item.productId === productId ? { ...item, quantity } : item
+            item.productId === productId ? repriceForQuantity({ ...item, quantity }) : item
           ),
         })
       },

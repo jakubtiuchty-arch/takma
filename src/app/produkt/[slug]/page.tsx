@@ -341,6 +341,12 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const relatedSoftware = allRelated.filter((p) => p!.categoryId === 'oprogramowanie')
   const relatedAccessories = allRelated.filter((p) => !p!.subcategoryIds?.includes('karty-pcv') && p!.categoryId !== 'oprogramowanie')
 
+  // Karty PVC / zbliżeniowe: drukarki, do których pasują — odwrotność sekcji „Karty PVC” na karcie
+  // drukarki (drukarka ma kartę w relatedAccessories), więc jedna lista w danych wystarcza
+  const printersForCard = product.subcategoryIds?.includes('karty-pcv')
+    ? products.filter((p) => p.categoryId === 'drukarki-kart' && (p.relatedAccessories || []).includes(product.id))
+    : []
+
   // Podobne produkty (relatedProducts) — dynamiczny tytuł per kategoria
   const relatedProductsList = (product.relatedProducts || [])
     .map((id) => products.find((p) => p.id === id))
@@ -738,7 +744,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 <ContextAvailabilityBadge
                   staticAvailability={product.availability}
                   requireConfirmedStock={liveOffers}
-                  treatUnknownAsUnavailable={product.categoryId === 'materialy-eksploatacyjne'}
+                  // brak stanu u Jarltecha/Ingrama = brak towaru, ale tylko dla marek, które tam są;
+                  // karty ACSS kupujemy bezpośrednio, więc zostaje dostępność z katalogu
+                  treatUnknownAsUnavailable={product.categoryId === 'materialy-eksploatacyjne' && product.manufacturerId !== 'acss'}
                 />
               )}
             />
@@ -964,7 +972,15 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   href="#karty-pcv"
                   className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
-                  Karty PCV
+                  Karty PVC
+                </a>
+              )}
+              {printersForCard.length > 0 && (
+                <a
+                  href="#drukarki"
+                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                >
+                  Drukarki
                 </a>
               )}
               {relatedSoftware.length > 0 && (
@@ -1427,6 +1443,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 title={product.categoryId === 'drukarki-kart' ? 'Taśmy do drukarek kart' : product.categoryId === 'drukarki-opasek' ? 'Opaski identyfikacyjne' : 'Etykiety papierowe termotransferowe'}
                 products={compatibleConsumables as typeof products}
                 labels={product.categoryId !== 'drukarki-kart' && product.categoryId !== 'drukarki-opasek'}
+                // drukarki kart: 4 taśmy + „Pokaż pozostałe”, jak sekcja „Karty PVC” niżej
+                initialLimit={product.categoryId === 'drukarki-kart' ? 4 : undefined}
                 showDualButtons
               />
             ) : null}
@@ -1463,12 +1481,23 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               />
             )}
 
-            {/* Karty PCV */}
+            {/* Karty PVC */}
             {relatedCards.length > 0 && (
               <RelatedProducts
                 id="karty-pcv"
-                title="Karty PCV"
+                title="Karty PVC"
                 products={relatedCards as typeof products}
+                initialLimit={4}
+                showDualButtons
+              />
+            )}
+
+            {/* Drukarki kart, do których pasuje ta karta */}
+            {printersForCard.length > 0 && (
+              <RelatedProducts
+                id="drukarki"
+                title="Pasuje do drukarek"
+                products={printersForCard}
                 showDualButtons
               />
             )}

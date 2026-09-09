@@ -974,22 +974,46 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
   ],
   'karty-pcv': [
     {
-      specKey: 'grubosc',
-      label: 'Grubość karty',
-      description: 'Standard to 0,76 mm.\n• 0,76 mm (30 mil) — zwykła karta: identyfikator, legitymacja, karta dostępu\n• 0,25 mm (10 mil) — cienka, samoprzylepna lub do naklejania na karty zbliżeniowe',
+      specKey: 'rodzaj',
+      label: 'Rodzaj karty',
+      description: 'Wszystkie drukuje się tak samo.\n• Zwykła PVC — identyfikator, legitymacja, karta lojalnościowa\n• Unique 125 kHz — numer tylko do odczytu; otwiera drzwi w systemach Roger i Satel\n• MIFARE 1K — pamięć 1 kB z zapisem: dostęp, czas pracy, stołówka na jednej karcie\n• DESFire EV1 / EV3 — szyfrowanie AES, wiele aplikacji; strefy chronione, e-legitymacje, karty miejskie\n• NTAG213 / NTAG216 — czytana telefonem; wizytówka NFC, link do opinii\n• Dualna — dwa chipy: 125 kHz do szlabanu i starszych czytników + 13,56 MHz do drzwi',
       derived: [
-        { value: '0,76 mm — standard', pattern: '0,76|30 mil', specs: ['Grubość'] },
-        { value: '0,25 mm — cienka', pattern: '0,25|10 mil', specs: ['Grubość'] },
+        { value: 'Zwykła PVC', notSpecs: ['Chip'] },
+        { value: 'Unique 125 kHz', pattern: '^Zbliżeniowa Unique', specs: ['Rodzaj karty'] },
+        { value: 'MIFARE 1K', pattern: '^Zbliżeniowa MIFARE Classic 1K', specs: ['Rodzaj karty'] },
+        { value: 'DESFire EV1', pattern: '^Zbliżeniowa MIFARE DESFire EV1', specs: ['Rodzaj karty'] },
+        { value: 'DESFire EV3', pattern: '^Zbliżeniowa MIFARE DESFire EV3', specs: ['Rodzaj karty'] },
+        { value: 'NFC NTAG213 / 216', pattern: 'NTAG21', specs: ['Rodzaj karty'] },
+        { value: 'Dualna 125 kHz + 13,56 MHz', pattern: '^Dualna', specs: ['Rodzaj karty'] },
       ],
     },
     {
-      specKey: 'cena',
-      label: 'Cena netto',
+      specKey: 'numer',
+      label: 'Nadrukowany numer',
+      description: 'Dotyczy kart zbliżeniowych. Numer na karcie pozwala wpisać ją do systemu dostępu bez czytnika. Dla MIFARE i DESFire nadruk numeru na zamówienie.',
       derived: [
-        { value: 'do 150 zł', priceMax: 150 },
-        { value: 'powyżej 150 zł', priceMin: 150 },
+        { value: 'Bez numeru', pattern: '^Brak', specs: ['Numer nadrukowany'] },
+        { value: 'Z numerem', pattern: '^Tak', specs: ['Numer nadrukowany'] },
       ],
     },
+    {
+      specKey: 'drukarka',
+      label: 'Do drukarki',
+      derived: [
+        { value: 'Magicard', pattern: 'Magicard', specs: ['Kompatybilność'] },
+        { value: 'Zebra ZC', pattern: 'ZC100|ZC300', specs: ['Kompatybilność'] },
+      ],
+    },
+    {
+      specKey: 'grubosc',
+      label: 'Grubość karty',
+      description: 'Standard to 0,76 mm.\n• 0,76–0,8 mm — zwykła karta: identyfikator, legitymacja, karta dostępu; karty dualne z dwiema antenami mają 0,8 mm\n• 0,25 mm (10 mil) — cienka, samoprzylepna lub do naklejania na karty zbliżeniowe',
+      derived: [
+        { value: '0,76–0,8 mm — standard', pattern: '0,76|0,80|30 mil', specs: ['Grubość'] },
+        { value: '0,25 mm — cienka', pattern: '0,25|10 mil', specs: ['Grubość'] },
+      ],
+    },
+    // bez filtra ceny: karty Zebra są wyceniane za opakowanie, karty Unique za sztukę — jedna skala nie ma sensu
   ],
   'tasmy-do-drukarek-kart': [
     {

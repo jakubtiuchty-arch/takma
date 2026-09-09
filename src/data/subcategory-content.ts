@@ -1017,15 +1017,15 @@ Koszty eksploatacji (TCO): opaska Z-Band Direct = ok. 0,70–0,90 zł/szt. Brak 
   },
 
   // ============================================
-  // KARTY PCV
+  // KARTY PVC
   // ============================================
   'karty-pcv': {
     definition: {
-      heading: 'Karty PCV Zebra — identyfikatory, karty dostępowe i lojalnościowe',
-      content: 'Karty PCV (PVC — polichlorek winylu) to plastikowe karty w standardowym formacie CR-80 (85,6 × 54 mm, grubość 0,76 mm) — tym samym co karty płatnicze i dowody osobiste. Drukowane na specjalistycznych drukarkach kart Zebra (ZC100, ZC300, ZC350, ZXP Series 7), służą do tworzenia identyfikatorów pracowniczych ze zdjęciem, kart dostępowych RFID, kart lojalnościowych, kart członkowskich i legitymacji. Zebra oferuje karty Premier PVC w wariantach: białe (standard), z paskiem magnetycznym (HiCo/LoCo), z chipem RFID (Mifare, DESFire, HID iKey), z hologramem zabezpieczającym. Drukarki kart Zebra umożliwiają druk full-color (YMCKO) jedno- lub dwustronny z personalizacją w czasie rzeczywistym.',
+      heading: 'Karty PVC Zebra — identyfikatory, karty dostępowe i lojalnościowe',
+      content: 'Karty PVC (PVC — polichlorek winylu) to plastikowe karty w standardowym formacie CR-80 (85,6 × 54 mm, grubość 0,76 mm) — tym samym co karty płatnicze i dowody osobiste. Drukowane na specjalistycznych drukarkach kart Zebra (ZC100, ZC300, ZC350, ZXP Series 7), służą do tworzenia identyfikatorów pracowniczych ze zdjęciem, kart dostępowych RFID, kart lojalnościowych, kart członkowskich i legitymacji. Zebra oferuje karty Premier PVC w wariantach: białe (standard), z paskiem magnetycznym (HiCo/LoCo), z chipem RFID (Mifare, DESFire, HID iKey), z hologramem zabezpieczającym. Drukarki kart Zebra umożliwiają druk full-color (YMCKO) jedno- lub dwustronny z personalizacją w czasie rzeczywistym.',
     },
     buyingGuide: {
-      heading: 'Jak wybrać karty PCV do drukarki Zebra?',
+      heading: 'Jak wybrać karty PVC do drukarki Zebra?',
       items: [
         'Format: CR-80 (85,6 × 54 × 0,76 mm) — standard dla drukarek kart Zebra',
         'Typ: białe (standardowe, do nadruku), z paskiem magnetycznym (HiCo 2750 Oe lub LoCo 300 Oe), z chipem kontaktowym/bezkontaktowym (RFID)',
@@ -1043,18 +1043,18 @@ Koszty eksploatacji (TCO): opaska Z-Band Direct = ok. 0,70–0,90 zł/szt. Brak 
       { title: 'Legitymacje i przepustki', description: 'Karty PVC + hologram zabezpieczający + drukarka ZC300 z laminatorem — legitymacje szkolne, przepustki na obiekt, karty członkowskie z zabezpieczeniem przed fałszerstwem.' },
     ],
     uniqueInsights: {
-      heading: 'Praktyczne wskazówki dot. kart PCV',
+      heading: 'Praktyczne wskazówki dot. kart PVC',
       items: [
         { title: 'PVC vs PVC/PET kompozyt — dlaczego to ma znaczenie', text: 'Oryginalne karty Zebra Premier są z czystego PVC — gwarantuje to kompatybilność z drukarką i brak zacięć. Tanie zamienniki z kompozytu PVC/PET mogą się zacinać, powodować smugi i skracać żywotność głowicy drukującej.' },
         { title: 'Taśma YMCKO — co oznaczają litery?', text: 'Y=Yellow (żółty), M=Magenta (purpurowy), C=Cyan (niebieski), K=Black (czarny), O=Overlay (transparentny laminat ochronny). Jedna sekcja YMCKO = jeden kolorowy nadruk jednej strony karty. Rolka 200 paneli = 200 kart jednostronnych lub 100 dwustronnych.' },
       ],
     },
     faq: [
-      { question: 'Jakie drukarki Zebra drukują na kartach PCV?', answer: 'Zebra ZC100 (single-sided, economy), ZC300 (dual-sided, standard), ZC350 (dual-sided, enkodowanie RFID/mag), ZXP Series 7 (high-volume). Każda wymaga taśmy barwiącej YMCKO i kart PVC w formacie CR-80.' },
+      { question: 'Jakie drukarki Zebra drukują na kartach PVC?', answer: 'Zebra ZC100 (single-sided, economy), ZC300 (dual-sided, standard), ZC350 (dual-sided, enkodowanie RFID/mag), ZXP Series 7 (high-volume). Każda wymaga taśmy barwiącej YMCKO i kart PVC w formacie CR-80.' },
       { question: 'Ile kart wydrukuję z jednej taśmy YMCKO?', answer: 'Standardowa taśma YMCKO do ZC300 ma 200 paneli — wydrukujesz 200 kart jednostronnych (kolor+overlay) lub 100 kart dwustronnych (kolor+overlay na obu stronach). Taśma KdO (mono black + overlay) ma 2000 paneli do druku czarno-białego.' },
       { question: 'Czym różnią się karty HiCo od LoCo?', answer: 'HiCo (High Coercivity, 2750 Oe): odporne na rozmagnesowanie — do kart dostępowych i identyfikatorów. LoCo (Low Coercivity, 300 Oe): łatwe do zaprogramowania, ale podatne na rozmagnesowanie — do kart jednorazowych. W 90% zastosowań zalecamy HiCo.' },
       { question: 'Czy mogę drukować karty RFID na drukarce Zebra?', answer: 'Tak — drukarki ZC350 i ZXP7 mają opcjonalny moduł enkodowania RFID (Mifare, DESFire, HID iCLASS). Drukarka jednocześnie drukuje graficznie na karcie i programuje chip RFID — personalizacja w jednym przejściu.' },
-      { question: 'Ile kosztują karty PCV Zebra?', answer: 'Białe standardowe: od 0,25 zł/szt. (opakowanie 500 szt. = ok. 125 zł). Z paskiem magnetycznym HiCo: od 0,55 zł/szt. Z chipem RFID Mifare: od 3,50 zł/szt. Hologram zabezpieczający: od 0,10 zł/szt. (nakładka).' },
+      { question: 'Ile kosztują karty PVC Zebra?', answer: 'Białe standardowe: od 0,25 zł/szt. (opakowanie 500 szt. = ok. 125 zł). Z paskiem magnetycznym HiCo: od 0,55 zł/szt. Z chipem RFID Mifare: od 3,50 zł/szt. Hologram zabezpieczający: od 0,10 zł/szt. (nakładka).' },
     ],
     comparisons: [
       { title: 'Karty białe vs z paskiem magnetycznym vs RFID', content: 'Białe: najtańsze, do identyfikatorów wizualnych i kart lojalnościowych z kodem kreskowym. Pasek magnetyczny: do kontroli dostępu i systemów rejestracji czasu pracy (RCP), HiCo zalecany. RFID: bezkontaktowe, najwygodniejsze, do nowoczesnych systemów kontroli dostępu — przyłóż kartę do czytnika bez wyjmowania z portfela.' },

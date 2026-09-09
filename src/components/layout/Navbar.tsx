@@ -128,7 +128,7 @@ const navigation: NavItem[] = [
       { name: 'Etykiety termiczne', href: '/etykiety-termiczne-zebra' },
       { name: 'Taśmy termotransferowe', href: '/tasmy-termotransferowe' },
       { name: 'Opaski identyfikacyjne', href: '/opaski-identyfikacyjne' },
-      { name: 'Karty PCV', href: '/karty-pcv' },
+      { name: 'Karty PVC', href: '/karty-pcv' },
       { name: 'Taśmy do drukarek kart', href: '/tasmy-do-drukarek-kart' },
     ],
   },

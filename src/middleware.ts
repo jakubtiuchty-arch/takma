@@ -258,6 +258,11 @@ export async function middleware(request: NextRequest) {
       'honeywell-rt10w',
       // Oprogramowanie
       'zebra-cardstudio', 'magicard-hub',
+      // Karty zbliżeniowe Unique (ACSS)
+      'karta-unique-iso-unqe1bn', 'karta-unique-iso-unqe1u', 'karta-unique-iso-unqe1',
+      'karta-mifare-1k-iso-mfrc1', 'karta-desfire-ev1-2k-iso-mdev12', 'karta-desfire-ev1-4k-iso-mdev14', 'karta-desfire-ev1-8k-iso-mdev18',
+      'karta-desfire-ev3-2k-mdev32', 'karta-desfire-ev3-4k-iso-mdev34', 'karta-desfire-ev3-8k-mdev38', 'karta-nfc-ntag213-ntag213c',
+      'karta-nfc-ntag216-ntag216c', 'karta-dualna-unique-mifare-1k-unq-mfrc1', 'karta-dualna-unique-desfire-ev1-2k-mdev12-unq', 'karta-dualna-unique-desfire-ev1-4k-mdev14-unq', 'karta-dualna-unique-desfire-ev3-4k-mdev34-unq',
     ])
 
     // Jeśli slug NIE istnieje na nowej stronie → redirect do strony przebudowy

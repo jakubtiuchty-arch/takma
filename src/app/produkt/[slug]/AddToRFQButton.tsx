@@ -150,6 +150,7 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
       image: product.images[0],
       partNumber: displayedPn,
       priceNetto: price,
+      priceTiers: product.priceTiers,
       categoryId: product.categoryId,
     })
     trackAddToCart({

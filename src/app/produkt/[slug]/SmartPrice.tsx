@@ -9,7 +9,7 @@ import { useCartStore } from '@/store/cartStore'
 import { ribbonCartonQty } from '@/data/ribbon-carton-qty'
 import { labelCartonQty } from '@/data/label-carton-qty'
 import { Button } from '@/components/ui'
-import { PlusIcon, CheckIcon } from '@/components/ui/Icons'
+import { PlusIcon, CheckIcon, ShoppingCartIcon } from '@/components/ui/Icons'
 
 interface SmartPriceProps {
   product: Product
@@ -25,7 +25,7 @@ const DEVICE_CATEGORIES = new Set([
 
 export default function SmartPrice({ product, badge }: SmartPriceProps) {
   const { displayedPn, price, loading, variantName, stockData } = useSmartPrice()
-  const { addItem, updateQuantity, isInCart, openDrawer } = useCartStore()
+  const { addItem, updateQuantity, isInCart, openDrawer, getItem } = useCartStore()
   const [mounted, setMounted] = useState(false)
   useEffect(() => setMounted(true), [])
 
@@ -83,6 +83,29 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
   const cartonId = displayedPn ? `${displayedPn}__karton` : undefined
   const cartonInCart = mounted && cartonId ? isInCart(cartonId) : false
 
+  // Rabat ilościowy (sprzedaż na sztuki): progi z danych produktu, ilość w koszyku do podświetlenia progu
+  const tiers = product.priceTiers ?? []
+  const hasTiers = tiers.length > 0
+  const tierQtyInCart = mounted && hasTiers ? getItem(product.id)?.quantity : undefined
+  const fmt = (v: number) => v.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+  const handleAddTier = (qty: number) => {
+    if (!price) return
+    if (!isInCart(product.id)) {
+      addItem({
+        id: product.id,
+        name: product.name,
+        slug: product.slug,
+        image: product.images[0],
+        partNumber: displayedPn,
+        priceNetto: price,
+        priceTiers: tiers,
+        categoryId: product.categoryId,
+      })
+    }
+    updateQuantity(product.id, qty)
+    openDrawer()
+  }
+
   const handleAddCarton = () => {
     if (!cartonId || !showCarton || cartonInCart) return
     addItem({
@@ -117,7 +140,7 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
         ) : (
           <span className="text-lg sm:text-xl font-medium text-gray-700">Cena na zapytanie</span>
         )}
-        {price && <span className="text-sm text-gray-500">netto</span>}
+        {price && <span className="text-sm text-gray-500">netto{hasTiers ? ' / szt.' : ''}</span>}
         {DEVICE_CATEGORIES.has(product.categoryId) && <PriceTooltip />}
       </div>
       {(loading || price) && (
@@ -128,6 +151,42 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
             <>{(price! * 1.23).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł brutto</>
           )}
         </p>
+      )}
+
+      {/* Rabat ilościowy (sprzedaż na sztuki, np. karty zbliżeniowe): cena za sztukę od progu,
+          przycisk wrzuca do koszyka od razu ilość z progu; w koszyku cena przelicza się przy zmianie ilości */}
+      {!loading && hasTiers && price && (
+        <div className="mt-3 rounded-lg border border-slate-200 bg-white px-3 py-2.5">
+          <p className="text-xs text-gray-500">Cena za sztukę zależy od ilości</p>
+          <ul className="mt-1 divide-y divide-slate-100 text-sm">
+            <li className="flex items-center justify-between gap-3 py-1.5">
+              <span className="text-gray-600">1–{tiers[0].minQty - 1} szt.</span>
+              <strong className="text-gray-900 tabular-nums">{fmt(price)} zł</strong>
+            </li>
+            {tiers.map((t) => (
+              <li key={t.minQty} className="flex items-center justify-between gap-3 py-1.5 flex-wrap">
+                <span className="text-gray-600">od {t.minQty} szt.</span>
+                <span className="flex items-center gap-3">
+                  <strong className="text-gray-900 tabular-nums">{fmt(t.priceNetto)} zł</strong>
+                  {/* sama ikona koszyka: pełny przycisk z tekstem był za duży jak na wiersz tabeli */}
+                  <button
+                    type="button"
+                    onClick={() => handleAddTier(t.minQty)}
+                    aria-label={tierQtyInCart === t.minQty ? `${t.minQty} szt. w koszyku` : `Do koszyka ${t.minQty} szt.`}
+                    title={tierQtyInCart === t.minQty ? `${t.minQty} szt. w koszyku` : `Do koszyka: ${t.minQty} szt.`}
+                    className={`inline-flex h-9 w-9 items-center justify-center rounded-md text-white shadow-sm transition-colors ${
+                      tierQtyInCart === t.minQty
+                        ? 'bg-green-600 hover:bg-green-700'
+                        : 'bg-blue-600 hover:bg-blue-700'
+                    }`}
+                  >
+                    {tierQtyInCart === t.minQty ? <CheckIcon size={18} /> : <ShoppingCartIcon size={18} />}
+                  </button>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
 
       {/* Cena kartonowa (taśmy) — pełne opakowanie taniej za rolkę, z dodaniem do koszyka */}
