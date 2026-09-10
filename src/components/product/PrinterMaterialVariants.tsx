@@ -41,8 +41,8 @@ const AVAIL = {
   unavailable: { label: 'Niedostępny', variant: 'danger' as const },
 }
 
-function Card({ pick, kind, stockInfo, stockLoading }: {
-  pick: Pick; kind: 'label' | 'ribbon'; stockInfo?: StockInfo; stockLoading: boolean
+function Card({ pick, kind, stockInfo, stockLoading, printerSlug }: {
+  pick: Pick; kind: 'label' | 'ribbon'; stockInfo?: StockInfo; stockLoading: boolean; printerSlug?: string
 }) {
   const { product, variant, title } = pick
   const { addItem, isInCart } = useCartStore()
@@ -54,9 +54,11 @@ function Card({ pick, kind, stockInfo, stockLoading }: {
   const hasImg = !!img && !img.includes('placeholder')
   const liveSignal = !!stockInfo && (stockInfo.found || stockInfo.totalStock > 0)
   const avail = liveSignal ? stockInfo!.availability : variant.availability
-  const price = liveSignal && stockInfo!.price ? stockInfo!.price : variant.priceFrom
+  // Taśmy: cena tylko live — statyczne priceFrom jest nieaktualne i myliło (344,75 → 32,68 zł). Etykiety: fallback zostaje.
+  const price = liveSignal && stockInfo!.price ? stockInfo!.price : (kind === 'ribbon' ? undefined : variant.priceFrom)
   const cfg = AVAIL[avail]
-  const href = `/produkt/${product.slug}/${variantSizeSlug(variant)}/${variant.partNumber}`
+  // ?drukarka= niesie kontekst drukarki na kartę etykiety, żeby dobór taśmy nie polecił rolki 450 m do ZD421t (audyt ZD-07)
+  const href = `/produkt/${product.slug}/${variantSizeSlug(variant)}/${variant.partNumber}${kind === 'label' && printerSlug ? `?drukarka=${printerSlug}` : ''}`
   const fullName = `Zebra ${title} ${size}`.trim()
   const cartId = `${product.slug}__${variant.partNumber}`
   const inCart = mounted ? isInCart(cartId) : false
@@ -102,7 +104,7 @@ function Card({ pick, kind, stockInfo, stockLoading }: {
 }
 
 export default function PrinterMaterialVariants({
-  id, title, productIds, kind, printWidthMm, requiredCore, perSeries = 3, maxTotal = 8,
+  id, title, productIds, kind, printWidthMm, requiredCore, perSeries = 3, maxTotal = 8, printerSlug,
 }: {
   id: string
   title: string
@@ -115,6 +117,8 @@ export default function PrinterMaterialVariants({
   requiredCore?: string | string[]
   perSeries?: number
   maxTotal?: number
+  /** Slug drukarki, z której karty pochodzi lista — trafia do linku etykiety jako ?drukarka= */
+  printerSlug?: string
 }) {
   // Czy rdzeń (gilza) wariantu pasuje do drukarki. Czyta 'Rdzeń' lub 'Rdzeń (gilza)'.
   // Taśmy: zachowanie jak dotąd (rdzeń musi zaczynać się od wymaganej wartości; brak → odrzuć).
@@ -144,6 +148,9 @@ export default function PrinterMaterialVariants({
     const fitting = product.variants
       .map(v => ({ v, w: widthMm(v) }))
       .filter(x => x.w != null && (!printWidthMm || x.w <= printWidthMm + tol))
+      // Formaty specjalne (kartridż ZD421c, rolki 30 m do P4T/RP4T) mają te same wymiary co zwykła rolka,
+      // ale inny mechanizm — atrybut 'Format' wyklucza je z doboru do drukarek z rolką (audyt ZD-01)
+      .filter(x => kind !== 'ribbon' || !x.v.attributes?.['Format'])
       // Rdzeń (gilza): rolka musi pasować do wieszaków drukarki — np. etykiety fi76
       // nie wejdą na drukarkę biurkową (akceptuje 12/19/25 mm).
       .filter(x => coreOk(x.v))
@@ -162,6 +169,7 @@ export default function PrinterMaterialVariants({
   const candidates = picks.slice(0, 24)
   const partNumbers = candidates.map(p => p.variant.partNumber)
   const { stockData, loading } = useStockData(partNumbers)
+  const [mobileExpanded, setMobileExpanded] = useState(false)
 
   if (candidates.length === 0) return null
 
@@ -176,15 +184,29 @@ export default function PrinterMaterialVariants({
 
   if (!loading && shown.length === 0) return null
 
+  // Telefon: 8 kafli w dwóch kolumnach to ~1400 px scrolla; pokazujemy 4 i resztę po kliknięciu
+  const MOBILE_LIMIT = 4
+  const hasMoreMobile = shown.length > MOBILE_LIMIT
+
   return (
     <section id={id} className="scroll-mt-20 lg:scroll-mt-44">
       <h2 className="text-2xl font-bold text-gray-900 mb-4">{title}</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {shown.map(pick => (
-          <Card key={`${pick.product.slug}-${pick.variant.partNumber}`} pick={pick} kind={kind}
-            stockInfo={stockData.get(pick.variant.partNumber)} stockLoading={loading} />
+        {shown.map((pick, i) => (
+          <div key={`${pick.product.slug}-${pick.variant.partNumber}`} className={i >= MOBILE_LIMIT && !mobileExpanded ? 'hidden md:block' : ''}>
+            <Card pick={pick} kind={kind}
+              stockInfo={stockData.get(pick.variant.partNumber)} stockLoading={loading} printerSlug={printerSlug} />
+          </div>
         ))}
       </div>
+      {hasMoreMobile && !mobileExpanded && (
+        <div className="mt-4 md:hidden">
+          <button type="button" onClick={() => setMobileExpanded(true)}
+            className="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50">
+            Pokaż pozostałe ({shown.length - MOBILE_LIMIT})
+          </button>
+        </div>
+      )}
       <div className="mt-5 pt-4 border-t border-gray-100 text-center">
         <Link href={`/produkt/${productIds[0]}`} className="inline-flex items-center gap-1.5 text-sm font-medium text-primary-600 hover:text-primary-800">
           Zobacz wszystkie rozmiary <ArrowRightIcon size={14} />

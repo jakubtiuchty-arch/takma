@@ -145,7 +145,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const sizeLabel = rozmiar ?? variant.name ?? pn
   const colorLabel = ribbon5319ColorLabel(product.slug, pn)
-  const priceText = variant.priceFrom
+  // Taśmy: statyczne priceFrom bywa nieaktualne (cena live idzie z Jarltecha), więc nie wstawiamy go do title
+  const isRibbonMeta = product.subcategoryIds?.includes('tasmy-termotransferowe') ?? false
+  const priceText = variant.priceFrom && !isRibbonMeta
     ? ` od ${variant.priceFrom.toLocaleString('pl-PL')} zł netto`
     : ''
   const title = `${product.name} ${sizeLabel}${colorLabel ? ` ${colorLabel}` : ''} — PN ${pn}${priceText}`
@@ -341,7 +343,6 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
   const isRibbon = product.subcategoryIds?.includes('tasmy-termotransferowe') ?? false
   const rollLengthAttr = variant.attributes['Długość']
   const rollLength = rollLengthAttr ? parseLengthFromAttribute(rollLengthAttr) : null
-  const ribbonPrice = variant.priceFrom ?? product.priceFrom ?? 0
 
   // Dane konkretnego wariantu taśmy — do unikalnej, transakcyjnej treści karty
   // (anty-kanibalizacja względem landingu serii: tu „ten rozmiar", tam pełny przewodnik).
@@ -570,8 +571,8 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
               </dl>
             </div>
 
-            {/* Kalkulator zużycia taśmy — tylko dla taśm TT z długością rolki i ceną */}
-            {isRibbon && rollLength && ribbonPrice > 0 && (
+            {/* Kalkulator liczby etykiet z rolki — liczy z długości taśmy i wysokości etykiety, cena nie jest potrzebna */}
+            {isRibbon && rollLength && (
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <RibbonLabelCountWidget
                   rollLengthM={rollLength}
@@ -673,10 +674,18 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
                     <span><strong>{qtyInRoll}</strong> na rolce — im więcej etykiet, tym rzadsza wymiana rolki w drukarce.</span>
                   </li>
                 )}
-                <li className="flex items-start gap-3 text-gray-700">
-                  <CheckIcon size={20} className="text-green-500 flex-shrink-0 mt-0.5" />
-                  <span>Druk direct thermal — bez taśmy barwiącej, pasuje do drukarek Zebra obsługujących druk termiczny.</span>
-                </li>
+                {/* Technologia zależy od materiału: etykieta TT bez taśmy nie zadrukuje się (audyt ZD421t, ZD-02) */}
+                {isThermalLabelProduct(product) ? (
+                  <li className="flex items-start gap-3 text-gray-700">
+                    <CheckIcon size={20} className="text-green-500 flex-shrink-0 mt-0.5" />
+                    <span>Druk termiczny bezpośredni — bez taśmy barwiącej, do drukarek Zebra z trybem direct thermal.</span>
+                  </li>
+                ) : (
+                  <li className="flex items-start gap-3 text-gray-700">
+                    <CheckIcon size={20} className="text-green-500 flex-shrink-0 mt-0.5" />
+                    <span>Druk termotransferowy — wymaga taśmy barwiącej (wosk do papieru, wosk-żywica lub żywica do folii); bez taśmy etykieta zostanie pusta.</span>
+                  </li>
+                )}
               </ul>
             </section>
           )}

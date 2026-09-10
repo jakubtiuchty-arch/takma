@@ -69,11 +69,11 @@ function StockCell({ stockPL, stockDE, inDelivery, incomingDate, loading }: { st
       <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-2 bg-gray-900 text-white text-xs rounded-lg whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-10">
         <div className="flex items-center gap-1.5 mb-1">
           <span className="w-1.5 h-1.5 bg-green-400 rounded-full" />
-          PL — Dostawa 24h
+          PL — wysyłka 24 h
         </div>
         <div className="flex items-center gap-1.5">
           <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full" />
-          EU — Dostawa 72h
+          EU — wysyłka 2–3 dni
         </div>
         <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-900" />
       </div>

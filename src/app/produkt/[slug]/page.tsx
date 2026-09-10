@@ -27,6 +27,8 @@ import {
   DownloadIcon,
   CheckIcon,
   PhoneIcon,
+  PackageIcon,
+  ArrowRightIcon,
 } from '@/components/ui/Icons'
 import LinkedText from '@/components/ui/LinkedText'
 import AddToRFQButton from './AddToRFQButton'
@@ -54,6 +56,7 @@ import { getBrandBySlug as getServiceBrandBySlug } from '@/app/serwis/_data/bran
 import { getManualByProductSlug } from '@/data/manuals'
 import ViewItemTracker from './ViewItemTracker'
 import { thermalLabelSeries } from '@/data/thermal-label-series'
+import StarterKits from '@/components/product/StarterKits'
 import { absoluteProductImageUrl, getMagicardOffer } from '@/lib/magicard-offer'
 
 interface ProductPageProps {
@@ -784,6 +787,49 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               <AskAboutProductButton productName={product.name} productSlug={product.slug} />
             </div>
 
+            {/* Zawartość pudełka przy zakupie, zamiast 17. wiersza specyfikacji (audyt ZD421t, ZD-09) */}
+            {(() => {
+              const box = product.specifications.find((s) => /^(W zestawie|Zawartość (zestawu|opakowania)|W opakowaniu|W pudełku)$/i.test(s.name))
+              if (!box || !box.value) return null
+              const items = box.value.split(/,\s+(?![^(]*\))/).map((t) => t.trim()).filter(Boolean)
+              const isLabelPrinter = product.categoryId === 'drukarki-etykiet'
+              return (
+                <div className="mt-4 rounded-xl border border-slate-200 bg-white overflow-hidden">
+                  {/* Akordeon bez JS: lista zwinięta, w nagłówku liczba pozycji; stopka o materiałach zawsze widoczna */}
+                  <details className="group">
+                    <summary className="flex items-center gap-2 px-4 py-2.5 bg-slate-50 cursor-pointer list-none select-none [&::-webkit-details-marker]:hidden">
+                      <PackageIcon size={18} className="text-gray-500" />
+                      <span className="text-sm font-semibold text-gray-900">Co jest w kartonie?</span>
+                      <span className="text-xs text-gray-500">{items.length} {items.length === 1 ? 'pozycja' : items.length < 5 ? 'pozycje' : 'pozycji'}</span>
+                      <span className="ml-auto inline-flex items-center gap-1 text-sm font-semibold text-primary-700 group-hover:text-primary-800">
+                        <span className="group-open:hidden">Pokaż listę</span>
+                        <span className="hidden group-open:inline">Zwiń</span>
+                        <ChevronRightIcon size={16} className="transition-transform rotate-90 group-open:-rotate-90" />
+                      </span>
+                    </summary>
+                    <ul className="px-4 py-3 space-y-1.5 border-t border-slate-200">
+                      {items.map((it) => (
+                        <li key={it} className="flex items-start gap-2.5 text-sm text-gray-700">
+                          <CheckIcon size={16} className="text-green-600 flex-shrink-0 mt-0.5" />
+                          <span>{it}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    {isLabelPrinter && (
+                      <div className="px-4 py-3 border-t border-slate-200 flex items-center justify-between gap-3 flex-wrap text-sm">
+                        <span className="text-gray-600">Bez etykiet{isTTprinter ? ' i taśmy' : ''}: dokupujesz osobno</span>
+                        {product.starterKits?.length ? (
+                          <a href="#komplet" className="inline-flex items-center gap-1 font-semibold text-primary-700 hover:text-primary-800">
+                            Komplet na pierwszy wydruk <ArrowRightIcon size={14} />
+                          </a>
+                        ) : null}
+                      </div>
+                    )}
+                  </details>
+                </div>
+              )
+            })()}
+
             {/* Service Plans — OneCare upsell */}
             {product.servicePlans && product.servicePlans.length > 0 && (
               <ServicePlansBox
@@ -896,18 +942,19 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         {/* Tabs / Details */}
         <div className="mt-12 lg:mt-16">
           <div className="border-b border-gray-200">
-            <nav className="flex gap-1 sm:gap-6 -mb-px overflow-x-auto scrollbar-hide">
+            {/* Zakładki zawijają się do drugiego wiersza zamiast chować za krawędzią (ukryty scrollbar nie zdradzał, że jest więcej) */}
+            <nav className="flex flex-wrap gap-x-1 sm:gap-x-3 lg:gap-x-4 -mb-px">
               {showVariants && (
                 <a
                   href="#warianty"
-                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-primary-600 border-b-2 border-primary-600 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-primary-600 border-b-2 border-primary-600 whitespace-nowrap"
                 >
                   Warianty
                 </a>
               )}
               <a
                 href="#opis"
-                className={`px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium whitespace-nowrap ${
+                className={`px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium whitespace-nowrap ${
                   product.variants && product.variants.length > 0
                     ? 'text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300'
                     : 'text-primary-600 border-b-2 border-primary-600'
@@ -917,20 +964,20 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               </a>
               <a
                 href="#specyfikacja"
-                className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
               >
                 Specyfikacja
               </a>
               <a
                 href="#zastosowania"
-                className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
               >
                 Zastosowania
               </a>
               {product.comparison && (
                 <a
                   href="#porownanie"
-                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   Porównanie
                 </a>
@@ -938,7 +985,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               {product.faq && product.faq.length > 0 && (
                 <a
                   href="#faq"
-                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   FAQ
                 </a>
@@ -946,7 +993,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               {(product.videoUrl || product.videoFile || product.videos?.length) && (
                 <a
                   href="#video"
-                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   Wideo
                 </a>
@@ -954,7 +1001,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               {(downloads.length > 0 || manual) && (
                 <a
                   href="#pliki"
-                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   Do pobrania
                 </a>
@@ -962,7 +1009,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               {(showLabelsNav || showFoilNav || showRibbonNav) && (
                 <a
                   href="#etykiety-papierowe"
-                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   {product.categoryId === 'drukarki-kart' ? 'Taśmy' : product.categoryId === 'drukarki-opasek' ? 'Opaski' : 'Materiały eksploatacyjne'}
                 </a>
@@ -970,7 +1017,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               {relatedCards.length > 0 && (
                 <a
                   href="#karty-pvc"
-                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   Karty PVC
                 </a>
@@ -978,7 +1025,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               {printersForCard.length > 0 && (
                 <a
                   href="#drukarki"
-                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   Drukarki
                 </a>
@@ -986,7 +1033,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               {relatedSoftware.length > 0 && (
                 <a
                   href="#oprogramowanie"
-                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   Oprogramowanie
                 </a>
@@ -994,7 +1041,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               {relatedAccessories.length > 0 && (
                 <a
                   href="#akcesoria"
-                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   {isDevice ? 'Akcesoria' : 'Powiązane produkty'}
                 </a>
@@ -1002,7 +1049,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               {relatedProductsList.length > 0 && (
                 <a
                   href="#podobne-produkty"
-                  className="px-1.5 py-3 sm:px-3 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   {relatedProductsTitle}
                 </a>
@@ -1434,6 +1481,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 title="Etykiety papierowe termotransferowe"
                 productIds={ttPaperIds}
                 kind="label"
+                printerSlug={product.slug}
                 printWidthMm={printWidthMm}
                 requiredCore={printerLabelCore}
               />
@@ -1456,6 +1504,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 title="Etykiety foliowe termotransferowe"
                 productIds={ttFoilIds}
                 kind="label"
+                printerSlug={product.slug}
                 printWidthMm={printWidthMm}
                 requiredCore={printerLabelCore}
               />
@@ -1479,6 +1528,11 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 printWidthMm={printWidthMm}
                 requiredCore={printerRibbonCore}
               />
+            )}
+
+            {/* Komplet na pierwszy wydruk: wycenione pary etykieta + taśma (audyt ZD421t, ZD-10) */}
+            {product.starterKits && product.starterKits.length > 0 && (
+              <StarterKits kits={product.starterKits} printerName={product.name} printerSlug={product.slug} />
             )}
 
             {/* Karty PVC */}

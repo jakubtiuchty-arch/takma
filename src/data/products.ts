@@ -17,6 +17,8 @@ export interface Product {
   priceFrom?: number
   /** Rabat ilościowy dla sprzedaży na sztuki: cena za sztukę od danego progu (patrz src/lib/price-tiers.ts). */
   priceTiers?: { minQty: number; priceNetto: number }[]
+  /** Gotowe komplety materiałów do pierwszego wydruku na karcie drukarki: PN-y z katalogu, ceny live (audyt ZD421t, ZD-10) */
+  starterKits?: { title: string; description: string; partNumbers: string[]; image?: string; facts?: string[] }[]
   images: string[]
   /** Alternatywny obraz dla wariantów typu desktop (krótkie taśmy, gilza 12 mm,
    *  długość < 200 m). Używane przez `getRibbonVariantImage()`. Optional — bez tego
@@ -949,13 +951,13 @@ Interfejsy można rozbudowywać zgodnie z wyposażeniem konkretnego egzemplarza.
 
 ## Etykiety i taśmy do codziennej pracy
 
-Drukarka przyjmuje etykiety o szerokości 25,4–112 mm i rolki o średnicy zewnętrznej do 127 mm. Taśmy barwiące mogą mieć długość 74 lub 300 m i szerokość do 110 mm. Dłuższa rolka oznacza rzadsze wymiany; liczba wydruków zależy od wysokości etykiety oraz odstępu między etykietami.
+Drukarka przyjmuje etykiety o szerokości 15–112 mm i rolki o średnicy zewnętrznej do 127 mm. Taśmy barwiące mogą mieć długość 74 lub 300 m i szerokość do 110 mm. Dłuższa rolka oznacza rzadsze wymiany; liczba wydruków zależy od wysokości etykiety oraz odstępu między etykietami.
 
 Do papieru w zwykłych warunkach często wystarcza taśma woskowa. Przy większym tarciu rozważ woskowo-żywiczną, a do odpowiednio dobranych etykiet syntetycznych taśmę żywiczną. Ważne są też klej, powierzchnia naklejania i temperatura użytkowania. Dobór opisujemy w poradniku [jak dobrać taśmę termotransferową](/poradnik/jak-dobrac-tasme-termotransferowa). Materiały i akcesoria znajdziesz poniżej.
 
 ## Gwarancja i serwis
 
-Gwarancja producenta na drukarkę wynosi 24 miesiące. Dla głowicy termotransferowej w regionie EMEA obowiązuje rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej, na warunkach Zebra. Nie jest to deklarowana żywotność głowicy ani liczba etykiet. Zakres dodatkowego kontraktu Zebra OneCare trzeba sprawdzić dla wybranego pakietu.
+Gwarancja producenta na drukarkę wynosi 36 miesięcy dla urządzeń kupionych w regionie EMEA po 1 kwietnia 2024 r. (wykaz wyjątków gwarancyjnych Zebra, sierpień 2026). Dla głowicy termotransferowej w regionie EMEA obowiązuje rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej, na warunkach Zebra. Nie jest to deklarowana żywotność głowicy ani liczba etykiet. Zakres dodatkowego kontraktu Zebra OneCare trzeba sprawdzić dla wybranego pakietu.
 
 Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/zebra-zd421d). To mniejsza konstrukcja bez mechanizmu taśmy, z innymi częściami i akcesoriami.`,
     categoryId: 'drukarki-etykiet',
@@ -977,7 +979,7 @@ Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/
       rozdzielczosc: '203 lub 300 dpi',
       predkoscDruku: '203 dpi: do 152 mm/s; 300 dpi: do 102 mm/s',
       szerokoscDruku: '203 dpi: do 104 mm; 300 dpi: do 106 mm',
-      szerokoscEtykiet: '25,4–112 mm',
+      szerokoscEtykiet: '15–112 mm',
     },
     specifications: [
       { name: 'Rodzaj druku', value: 'Termotransferowy i termiczny bezpośredni' },
@@ -986,6 +988,9 @@ Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/
       { name: 'Szerokość druku', value: 'Do 104 mm przy 203 dpi; do 106 mm przy 300 dpi' },
       { name: 'Max szerokość taśmy', value: '110 mm' },
       { name: 'Max długość taśmy', value: '300 m' },
+      { name: 'Rolka taśmy', value: '74 m na gilzie 12,7 mm (średnica zewn. do 34 mm) lub 300 m na gilzie 25,4 mm (średnica zewn. do 66 mm); nawój OUT; szerokość 33,8–110 mm' },
+      { name: 'Szerokość nośnika (z podkładem)', value: '15–112 mm' },
+      { name: 'Rolka etykiet', value: 'Średnica zewnętrzna do 127 mm; gilza 12,7 lub 25,4 mm, opcjonalnie 38,1 mm z adapterem; rolka lub składanka' },
       { name: 'Rodzaj etykiet', value: 'Papierowe, foliowe' },
       { name: 'Kody 1D', value: 'Code 39, Code 128, EAN-13, EAN-8, UPC-A, UPC-E, ITF-14, GS1-128, Codabar' },
       { name: 'Kody 2D', value: 'QR Code, DataMatrix, PDF417, Aztec, MaxiCode, GS1 DataBar' },
@@ -995,8 +1000,9 @@ Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/
       { name: 'Wilgotność pracy', value: '20–85% (bez kondensacji)' },
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz' },
       { name: 'Certyfikaty', value: 'CE, FCC Class B, ICES, cTUVus, S-Mark, CCC' },
-      { name: 'Gwarancja', value: '24 miesiące (drukarka); głowica: rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej (EMEA)' },
-      { name: 'W zestawie', value: 'Drukarka Zebra ZD421t (termotransferowa, drukuje też termicznie), zasilacz z kablem zasilającym, kabel USB, instrukcja szybkiego uruchamiania' },
+      { name: 'Gwarancja', value: '36 miesięcy na drukarkę (EMEA, zakup po 1.04.2024); głowica: rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej (EMEA)' },
+      { name: 'Oprogramowanie', value: 'ZebraDesigner Essentials (bezpłatny projektant etykiet dla Windows: tekst, kody, grafika, pola wpisywane przy druku, data, czas, liczniki), ZebraDesigner Professional (płatny: bazy danych i Excel, skrypty, RFID), sterownik Windows z Zebra Setup Utilities; macOS i Linux przez CUPS lub bezpośrednio ZPL' },
+      { name: 'W zestawie', value: 'Drukarka Zebra ZD421t (termotransferowa, drukuje też termicznie), zasilacz i kabel zasilający, kabel USB, pusta gilza odbiorcza 12,7 mm do taśmy 74 m, pusta gilza odbiorcza 25,4 mm do taśmy 300 m, 2 adaptery gilzy 300 m do taśm innych marek, instrukcja szybkiego uruchamiania, informacja o zgodności' },
     ],
     applications: [
       'Etykiety wysyłkowe i kurierskie',
@@ -1127,7 +1133,12 @@ Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/
       'zebra-module-wifi-zd421',
       'zebra-power-supply-zd421-zd621',
     ],
+    starterKits: [
+      { title: 'Etykiety papierowe', description: 'Z-Select 2000T 102×64 mm i woskowa taśma 2300, rolka 74 m na gilzie 12,7 mm.', facts: ['Magazyn, półka, wysyłka', 'Wnętrze, ponad rok trwałości', 'Najtańszy komplet'], image: '/images/kits/zd421t-papier.webp', partNumbers: ['3007206-T', '02300GS11007'] },
+      { title: 'Etykiety foliowe', description: 'PolyPro 3000T 51×25 mm i żywiczna taśma 5095, rolka 64 mm × 74 m.', facts: ['Sprzęt, majątek, inwentaryzacja', 'Odporna na wilgoć, oleje i ścieranie', 'Odporna na wodę i rozdarcie'], image: '/images/kits/zd421t-folia.webp', partNumbers: ['3011159', '05095GS06407'] },
+    ],
     faq: [
+      { question: "Jaki program do projektowania etykiet dostanę?", answer: "Bezpłatny ZebraDesigner Essentials dla Windows wystarcza do projektu etykiety z tekstem, kodem kreskowym i logo, obsługuje też pola wpisywane przy druku, datę, czas i liczniki. Płatna wersja Professional jest potrzebna dopiero przy danych z bazy albo arkusza Excel, skryptach i kodowaniu RFID. Do druku z programu magazynowego lub ERP nie potrzeba żadnego z nich: system wysyła gotowy ZPL przez sterownik albo bezpośrednio do portu drukarki." },
       { question: "Czym różni się ZD421t od ZD421d?", answer: "ZD421t ma mechanizm taśmy barwiącej i obsługuje termotransfer oraz druk termiczny bezpośredni. ZD421d drukuje tylko termicznie. Modele różnią się także obudową i częścią akcesoriów: głowice, obcinacze czy podstawy akumulatorowe dobiera się do konkretnej wersji. Trwałość wydruku zależy od nośnika, taśmy i warunków użytkowania." },
       { question: "Kiedy wybrać 203 dpi, a kiedy 300 dpi?", answer: "203 dpi zwykle wystarcza do standardowych etykiet logistycznych i większych kodów. 300 dpi daje więcej szczegółów przy drobnym tekście oraz małych kodach QR i DataMatrix. Odczyt zależy również od projektu kodu i skanera, dlatego warto sprawdzić docelową etykietę. Maksymalna prędkość wynosi odpowiednio 152 i 102 mm/s." },
       { question: "Który wariant ma Ethernet lub Wi-Fi?", answer: "W naszej tabeli konfiguracje ZD4A042-30EE00EZ i ZD4A043-30EE00EZ mają Ethernet. ZD4A042-30EX02EZ i ZD4A043-30EX02EZ mają Wi-Fi 802.11ac oraz Bluetooth 4.1. Wersje z końcówką EM00EZ mają USB bez tych dodatków. Pełny PN pozwala rozróżnić wyposażenie nawet wtedy, gdy nazwa modelu jest taka sama." },
@@ -1135,7 +1146,7 @@ Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/
       { question: "Jak dobrać etykiety i taśmę?", answer: "Sprawdź materiał, klej, rozmiar etykiety, średnicę rolki i rdzenia. ZD421t przyjmuje nośniki do 112 mm szerokości oraz taśmy do 110 mm szerokości i 300 m długości. Taśma woskowa jest typowym wyborem do papieru; woskowo-żywiczna i żywiczna wymagają dopasowania do podłoża oraz oczekiwanej odporności. Więcej wskazówek: [dobór taśmy termotransferowej](/poradnik/jak-dobrac-tasme-termotransferowa)." },
       { question: "Czy można drukować bez taśmy barwiącej?", answer: "Tak, w trybie termicznym bezpośrednim, na etykietach przeznaczonych do tego druku. Taśma jest potrzebna w trybie termotransferowym. Zwykły papier do termotransferu nie zastąpi papieru termicznego po wyjęciu taśmy." },
       { question: "Ile etykiet wydrukuję z taśmy 300 m?", answer: "Podziel długość taśmy przez wysokość etykiety wraz z odstępem. Przykładowo 300 000 mm / (100 mm + 3 mm) daje około 2912 etykiet przed uwzględnieniem strat na kalibrację i wymianę materiałów. Koszt jednej etykiety to koszt nośnika plus koszt zużytej taśmy; w budżecie trzeba uwzględnić też czyszczenie i serwis. Nie ma jednej wiarygodnej kwoty miesięcznej bez znajomości nakładu i materiałów." },
-      { question: "Jaka gwarancja obejmuje drukarkę i głowicę?", answer: "Producent podaje 24 miesiące na drukarkę. Głowica termotransferowa w EMEA jest objęta ochroną przez rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej, na warunkach Zebra. Milion cali to długość wydruku, nie liczba etykiet. Dodatkową ochronę można dobrać w ramach odpowiedniego kontraktu Zebra OneCare." },
+      { question: "Jaka gwarancja obejmuje drukarkę i głowicę?", answer: "Producent podaje 36 miesięcy na drukarkę kupioną w regionie EMEA po 1 kwietnia 2024 r.; ogólna tabela mówi o 24 miesiącach, ale dla Polski obowiązuje wyjątek regionalny. Głowica termotransferowa w EMEA jest objęta ochroną przez rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej, na warunkach Zebra. Milion cali to długość wydruku, nie liczba etykiet. Dodatkową ochronę można dobrać w ramach odpowiedniego kontraktu Zebra OneCare." },
       { question: "Czy mogę zastąpić GK420t lub ZD420t bez zmiany szablonów?", answer: "ZD421t obsługuje ZPL II i EPL2, co ułatwia migrację. Nie należy jednak zakładać, że każdy szablon zadziała bez sprawdzenia. Zweryfikuj rozdzielczość, rozmiar etykiety, sterownik i sposób wysyłania danych z programu, WMS lub ERP. Szczególnie przy przejściu z 203 na 300 dpi mogą być potrzebne zmiany projektu." },
       { question: "Co wpływa na cenę i dostępność poszczególnych wersji?", answer: "Przede wszystkim rozdzielczość oraz łączność. Aktualną cenę netto i brutto oraz stan dla konkretnego PN pokazujemy w bloku oferty i tabeli wariantów. Porównuj te same numery produktu i wyposażenie. Gdy brak potwierdzonej ceny lub stanu, poproś TAKMA o ofertę." },
       { question: "Jakie modele warto porównać z ZD421t?", answer: "Sprawdź [Zebra ZD621t](/produkt/zebra-zd621t), jeśli potrzebujesz szybszego druku i szerszych opcji wyposażenia, albo [Zebra ZD220t](/produkt/zebra-zd220t), jeśli wystarczy prostsza konfiguracja USB. Alternatywą innej marki jest [Honeywell PC45t](/produkt/honeywell-pc45t). Ceny, rozdzielczość i wyposażenie porównuj dla konkretnych wariantów, nie samych nazw serii." },
@@ -1531,7 +1542,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       rozdzielczosc: '203 dpi (8 dots/mm) / 300 dpi (12 dots/mm)',
       predkoscDruku: 'do 203 mm/s (8 ips)',
       szerokoscDruku: 'max. 108 mm (4,25")',
-      szerokoscEtykiet: '25,4–112 mm',
+      szerokoscEtykiet: '15–112 mm',
     },
     specifications: [
       { name: 'Rodzaj druku', value: 'Termotransfer' },
@@ -1558,6 +1569,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz' },
       { name: 'Certyfikaty', value: 'CE, FCC Class B, ICES, cTUVus, S-Mark, CCC, ENERGY STAR' },
       { name: 'Gwarancja', value: '36 miesięcy (drukarka), 12 miesięcy (głowica)' },
+      { name: 'Oprogramowanie', value: 'ZebraDesigner Essentials (bezpłatny projektant etykiet dla Windows: tekst, kody, grafika, pola wpisywane przy druku, data, czas, liczniki), ZebraDesigner Professional (płatny: bazy danych i Excel, skrypty, RFID), sterownik Windows z Zebra Setup Utilities; macOS i Linux przez CUPS lub ZPL' },
     ],
     applications: [
       'Druk dużych wolumenów etykiet wysyłkowych i kurierskich (ponad 500 sztuk dziennie)',
@@ -1972,7 +1984,8 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Wilgotność pracy', value: '10–90% (bez kondensacji)' },
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz (auto-detect)' },
       { name: 'Certyfikaty', value: 'CE, FCC Class B, ICES, cTUVus, S-Mark, CCC, ENERGY STAR' },
-      { name: 'Gwarancja', value: '24 miesiące drukarka, 6 miesięcy głowica, do 36 miesięcy z Zebra OneCare' },
+      { name: 'Gwarancja', value: '36 miesięcy na drukarkę (EMEA, zakup po 1.04.2024), 12 miesięcy głowica' },
+      { name: 'Oprogramowanie', value: 'ZebraDesigner Essentials (bezpłatny projektant etykiet dla Windows: tekst, kody, grafika, pola wpisywane przy druku, data, czas, liczniki), ZebraDesigner Professional (płatny: bazy danych i Excel, skrypty, RFID), sterownik Windows z Zebra Setup Utilities; macOS i Linux przez CUPS lub ZPL' },
     ],
     applications: [
       'Druk dużych wolumenów etykiet wysyłkowych i kurierskich (ponad 500 sztuk dziennie)',
@@ -2330,7 +2343,8 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Wilgotność pracy', value: '10–90% (bez kondensacji)' },
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz' },
       { name: 'Certyfikaty', value: 'CE, FCC Class B, ENERGY STAR, IEC 62368-1' },
-      { name: 'Gwarancja', value: 'Standardowa producenta, 6 miesięcy na głowicę' },
+      { name: 'Gwarancja', value: '36 miesięcy na drukarkę (EMEA, zakup po 1.04.2024), 6 miesięcy na głowicę' },
+      { name: 'Oprogramowanie', value: 'ZebraDesigner Essentials (bezpłatny projektant etykiet dla Windows: tekst, kody, grafika, pola wpisywane przy druku, data, czas, liczniki), ZebraDesigner Professional (płatny: bazy danych i Excel, skrypty, RFID), sterownik Windows z Zebra Setup Utilities; macOS i Linux przez CUPS lub ZPL' },
     ],
     applications: [
       'Etykiety jubilerskie — cenówki na biżuterię z kodem kreskowym',
@@ -2443,7 +2457,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Jaka jest gwarancja na Zebra ZD411d?',
-        answer: 'ZD411d objęta jest standardową gwarancją producenta. Gwarancja na głowicę drukującą wynosi 6 miesięcy. Gwarancję można rozszerzyć w ramach kontraktów serwisowych Zebra OneCare Essential lub Select. Serwis autoryzowany w Polsce: serwis-zebry.pl.',
+        answer: 'ZD411d objęta jest 36-miesięczną gwarancją producenta na drukarkę (urządzenia kupione w regionie EMEA po 1 kwietnia 2024 r.). Gwarancja na głowicę drukującą wynosi 6 miesięcy. Gwarancję można rozszerzyć w ramach kontraktów serwisowych Zebra OneCare Essential lub Select. Serwis autoryzowany w Polsce: serwis-zebry.pl.',
       },
       {
         question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
@@ -2584,7 +2598,8 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Wilgotność pracy', value: '10–90% (bez kondensacji)' },
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz' },
       { name: 'Certyfikaty', value: 'CE, FCC Class B, ENERGY STAR, IEC 62368-1' },
-      { name: 'Gwarancja', value: 'Standardowa producenta, 6 miesięcy na głowicę' },
+      { name: 'Gwarancja', value: '36 miesięcy na drukarkę (EMEA, zakup po 1.04.2024), 6 miesięcy na głowicę' },
+      { name: 'Oprogramowanie', value: 'ZebraDesigner Essentials (bezpłatny projektant etykiet dla Windows: tekst, kody, grafika, pola wpisywane przy druku, data, czas, liczniki), ZebraDesigner Professional (płatny: bazy danych i Excel, skrypty, RFID), sterownik Windows z Zebra Setup Utilities; macOS i Linux przez CUPS lub ZPL' },
     ],
     applications: [
       'Etykiety jubilerskie — trwałe cenówki z kodem kreskowym na biżuterię (taśma żywiczna + etykieta syntetyczna)',
@@ -2717,7 +2732,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Jaka jest gwarancja na ZD411t?',
-        answer: 'ZD411t objęta jest standardową gwarancją producenta Zebra. Gwarancja na głowicę drukującą wynosi 6 miesięcy. Gwarancję można rozszerzyć w ramach Zebra OneCare Essential lub Select. Autoryzowany serwis w Polsce: serwis-zebry.pl.',
+        answer: 'ZD411t objęta jest 36-miesięczną gwarancją producenta na drukarkę (urządzenia kupione w regionie EMEA po 1 kwietnia 2024 r.). Gwarancja na głowicę drukującą wynosi 6 miesięcy. Gwarancję można rozszerzyć w ramach Zebra OneCare Essential lub Select. Autoryzowany serwis w Polsce: serwis-zebry.pl.',
       },
       {
         question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
@@ -2851,6 +2866,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz (zasilacz 24V/2,5A)' },
       { name: 'Certyfikaty', value: 'CE, FCC Class B, ENERGY STAR' },
       { name: 'Gwarancja', value: '36 miesięcy (drukarka), 12 miesięcy (głowica)' },
+      { name: 'Oprogramowanie', value: 'ZebraDesigner Essentials (bezpłatny projektant etykiet dla Windows: tekst, kody, grafika, pola wpisywane przy druku, data, czas, liczniki), ZebraDesigner Professional (płatny: bazy danych i Excel, skrypty, RFID), sterownik Windows z Zebra Setup Utilities; macOS i Linux przez CUPS lub ZPL' },
     ],
     applications: [
       'Etykiety kurierskie i wysyłkowe (InPost, DPD, DHL, UPS, GLS)',
@@ -3042,7 +3058,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       rozdzielczosc: '203 dpi (8 dots/mm)',
       predkoscDruku: 'do 152 mm/s (6 ips)',
       szerokoscDruku: 'max. 104 mm (4,09")',
-      szerokoscEtykiet: '15–112 mm',
+      szerokoscEtykiet: '25,4–112 mm',
     },
     specifications: [
       { name: 'Rodzaj druku', value: 'Termiczny bezpośredni (direct thermal)' },
@@ -3065,6 +3081,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz (zasilacz 24V/2,5A)' },
       { name: 'Certyfikaty', value: 'CE, FCC Class B, ENERGY STAR' },
       { name: 'Gwarancja', value: '36 miesięcy (drukarka), 12 miesięcy (głowica)' },
+      { name: 'Oprogramowanie', value: 'ZebraDesigner Essentials (bezpłatny projektant etykiet dla Windows: tekst, kody, grafika, pola wpisywane przy druku, data, czas, liczniki), ZebraDesigner Professional (płatny: bazy danych i Excel, skrypty, RFID), sterownik Windows z Zebra Setup Utilities; macOS i Linux przez CUPS lub ZPL' },
     ],
     applications: [
       'Etykiety kurierskie i wysyłkowe (InPost, DPD, DHL, UPS, GLS, Pocztex)',
@@ -3336,6 +3353,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz (zasilacz 24V/2,5A)' },
       { name: 'Certyfikaty', value: 'CE, FCC Class B, ENERGY STAR' },
       { name: 'Gwarancja', value: '36 miesięcy (drukarka), 12 miesięcy (głowica)' },
+      { name: 'Oprogramowanie', value: 'ZebraDesigner Essentials (bezpłatny projektant etykiet dla Windows: tekst, kody, grafika, pola wpisywane przy druku, data, czas, liczniki), ZebraDesigner Professional (płatny: bazy danych i Excel, skrypty, RFID), sterownik Windows z Zebra Setup Utilities; macOS i Linux przez CUPS lub ZPL' },
     ],
     applications: [
       'Etykiety kurierskie i wysyłkowe',
@@ -3578,7 +3596,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       rozdzielczosc: '203 dpi (8 dots/mm)',
       predkoscDruku: 'do 152 mm/s (6 ips)',
       szerokoscDruku: 'max. 104 mm (4,09")',
-      szerokoscEtykiet: '15–112 mm',
+      szerokoscEtykiet: '25,4–112 mm',
     },
     specifications: [
       { name: 'Rodzaj druku', value: 'Termotransfer + Termiczna' },
@@ -3588,7 +3606,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Szerokość etykiet', value: '25,4–112 mm' },
       { name: 'Max długość etykiety', value: '991 mm' },
       { name: 'Max średnica rolki', value: '127 mm (5")' },
-      { name: 'Max długość taśmy', value: '300 m (wałek 1")' },
+      { name: 'Max długość taśmy', value: '300 m (wałek 1") lub 74 m (wałek 0,5")' },
       { name: 'Szerokość taśmy', value: '33,8–109,2 mm' },
       { name: 'Interfejsy', value: 'USB 2.0 (standard); Ethernet, Bluetooth 4.1, Wi-Fi 802.11ac (zależnie od wariantu)' },
       { name: 'Pamięć', value: '256 MB Flash, 128 MB SDRAM' },
@@ -3603,6 +3621,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz (zasilacz 24V/2,5A)' },
       { name: 'Certyfikaty', value: 'CE, FCC Class B, ENERGY STAR' },
       { name: 'Gwarancja', value: '36 miesięcy (drukarka), 12 miesięcy (głowica)' },
+      { name: 'Oprogramowanie', value: 'ZebraDesigner Essentials (bezpłatny projektant etykiet dla Windows: tekst, kody, grafika, pola wpisywane przy druku, data, czas, liczniki), ZebraDesigner Professional (płatny: bazy danych i Excel, skrypty, RFID), sterownik Windows z Zebra Setup Utilities; macOS i Linux przez CUPS lub ZPL' },
     ],
     applications: [
       'Etykiety produktowe z trwałym nadrukiem (inwentaryzacja, środki trwałe, oznaczenia)',
@@ -3938,7 +3957,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'ZBI 2.0', value: 'Opcjonalny' },
       { name: 'Kody 1D', value: 'Code 39, 93, 128, Codabar, EAN-8/13, UPC-A/E, I2of5, GS1 DataBar, Postnet' },
       { name: 'Kody 2D', value: 'QR Code, Data Matrix, PDF417, Aztec, MaxiCode' },
-      { name: 'Gwarancja', value: '2 lata (głowica 12 miesięcy)' },
+      { name: 'Gwarancja', value: '36 miesięcy na drukarkę (EMEA, zakup po 1.04.2024), 12 miesięcy głowica' },
     ],
     applications: [
       'Identyfikacja pacjentów w szpitalach (SOR, oddziały, blok operacyjny)',
@@ -4021,7 +4040,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
             'Waga': '1,4 kg',
             'Zasilacz medyczny': 'Tak (IEC 60601-1)',
             'Link-OS / Print DNA': 'Tak',
-            'Gwarancja': '2 lata',
+            'Gwarancja': '3 lata (EMEA, zakup po 1.04.2024)',
             'Cena od': '2 674 zł',
           },
         },
@@ -63703,10 +63722,17 @@ export function pickRibbonVariantForLabel(
   ribbonProduct: Product,
   labelWidthMm: number,
   labelCoreMm?: number,
+  /** Kontekst drukarki, z której klient przyszedł (audyt ZD-07): klasa decyduje o rdzeniu,
+   *  a maksymalna długość rolki odrzuca np. 450 m przy ZD421t (limit 300 m). */
+  printer?: { printerClass: 'desktop' | 'industrial'; maxRibbonLengthM?: number; maxRibbonWidthMm?: number; allowedCoresMm?: number[] },
 ): ProductVariant | undefined {
   if (!ribbonProduct.variants?.length) return undefined
+  // Z kontekstem drukarki dobór jest ścisły: żadnych fallbacków do odrzuconych wariantów
+  const strict = !!printer
 
   const parsed = ribbonProduct.variants
+    // kartridże ZD421c i rolki 30 m do P4T mają atrybut 'Format' — nie polecamy ich do zwykłych drukarek
+    .filter(v => !v.attributes['Format'])
     .map(v => {
       const w = parseFloat(v.attributes['Szerokość']?.match(/(\d+(?:[.,]\d+)?)/)?.[1] ?? '0')
       const l = parseFloat(v.attributes['Długość']?.match(/(\d+)/)?.[1] ?? '0')
@@ -63715,13 +63741,19 @@ export function pickRibbonVariantForLabel(
       return { v, w, l, c }
     })
     .filter(x => x.w > 0)
+    // Limit długości rolki z drukarki: taśma 450 m nie zmieści się w drukarce biurkowej
+    .filter(x => !printer?.maxRibbonLengthM || x.l === 0 || x.l <= printer.maxRibbonLengthM)
+    // Szerokość taśmy: ZD411t przyjmuje do 58 mm, taśma 110 mm nie wejdzie
+    .filter(x => !printer?.maxRibbonWidthMm || x.w <= printer.maxRibbonWidthMm + 1)
+    // Gilza taśmy musi pasować do wieszaków drukarki (12,7 mm, 25,4 mm albo obie)
+    .filter(x => !printer?.allowedCoresMm?.length || printer.allowedCoresMm.some(c => Math.abs(c - x.c) <= 1))
 
-  if (parsed.length === 0) return ribbonProduct.variants[0]
+  if (parsed.length === 0) return strict ? undefined : ribbonProduct.variants[0]
 
   // ── DOPASOWANIE GILZA ETYKIETY → KLASA DRUKARKI → DŁUGOŚĆ I RDZEŃ TAŚMY ──
   // Etykiety z gilzą ≤ 25 mm → drukarki desktop (ZD230/ZD421) → taśmy z rdzeń 12 mm i krótkie role
   // Etykiety z gilzą ≥ 38 mm → drukarki industrial (ZT231/ZT411) → taśmy z rdzeń 25 mm i długie role
-  const isDesktop = labelCoreMm !== undefined && labelCoreMm <= 25
+  const isDesktop = printer ? printer.printerClass === 'desktop' : (labelCoreMm !== undefined && labelCoreMm <= 25)
 
   // Score długości taśmy: niższe = lepsze dopasowanie do klasy drukarki.
   const lengthScore = (length: number): number => {
@@ -63742,7 +63774,7 @@ export function pickRibbonVariantForLabel(
   // Desktop: rdzeń taśmy 12 mm. Industrial: 25 mm. Jeśli wariant z preferowanym rdzeniem
   // istnieje — używamy go; inaczej fallback do wszystkich (część taśm nie ma atrybutu Rdzeń).
   let candidates = parsed
-  if (labelCoreMm !== undefined) {
+  if (labelCoreMm !== undefined || printer) {
     const preferredCore = isDesktop ? 12 : 25
     const matchingCore = parsed.filter(x => x.c === preferredCore)
     if (matchingCore.length > 0) candidates = matchingCore
@@ -63762,7 +63794,8 @@ export function pickRibbonVariantForLabel(
   const wider = candidates.filter(x => x.w >= labelWidthMm).sort((a, b) => a.w - b.w || lengthScore(a.l) - lengthScore(b.l))
   if (wider.length > 0) return wider[0].v
 
-  // 3. Fallback — najszersza dostępna (z pełnej puli, ignorując preferencję rdzenia)
+  // 3. Fallback — najszersza dostępna (z pełnej puli, ignorując preferencję rdzenia); nie przy kontekście drukarki
+  if (strict) return undefined
   parsed.sort((a, b) => b.w - a.w || lengthScore(a.l) - lengthScore(b.l))
   return parsed[0].v
 }

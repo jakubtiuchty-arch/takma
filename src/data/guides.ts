@@ -10107,20 +10107,20 @@ export const guides: Guide[] = [
 <p>Taśma woskowa (np. <a href="/tasmy-termotransferowe?typ=woskowa">Zebra 2300</a>) ma warstwę barwną 8,0 µm — grubszą, co daje więcej pigmentu i wysoki kontrast na papierze. Taśma żywiczna (<a href="/tasmy-termotransferowe?typ=zywiczna">Zebra 5095</a>) ma warstwę 6,5 µm — cieńszą, ale żywica penetruje głębiej w podłoże syntetyczne, dając ekstremalną odporność na ścieranie i chemikalia.</p>
 
 <h3>Nawój IN vs OUT — co pasuje do Twojej drukarki?</h3>
-<p>Taśma termotransferowa jest nawinięta na rdzeń w jednym z dwóch kierunków, zależnie od konstrukcji mechanizmu drukarki:</p>
+<p>Taśma termotransferowa jest nawinięta na rdzeń barwnikiem do środka (IN, CSI) albo na zewnątrz (OUT, CSO). Oryginalne taśmy Zebra są nawinięte OUT i z takim nawojem fabrycznie pracują wszystkie drukarki Zebra. Wyjątki dotyczą tylko przemysłowych: ZT610 i ZT620 obsługują oba nawoje, ZT411 i ZT421 przyjmują IN po zamontowaniu opcjonalnego wałka. W drukarce bez takiej obsługi taśma IN daje pusty wydruk. Między klasami drukarek Zebra różnią się przede wszystkim gilza i długość rolki:</p>
 
 <table style="width:100%">
 <caption>Nawój IN vs OUT — kierunek nawinięcia taśmy termotransferowej</caption>
 <thead>
-<tr><th>Nawój</th><th>Opis</th><th>Rdzeń</th><th>Drukarki</th></tr>
+<tr><th>Klasa drukarki</th><th>Nawój</th><th>Rdzeń i długość rolki</th><th>Drukarki</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>IN (CSI)</strong></td><td>Warstwa barwna skierowana do rdzenia (wewnątrz)</td><td>12,7 mm (0,5")</td><td>Desktop: <a href="/produkt/zebra-zd421t">ZD421t</a>, <a href="/produkt/zebra-zd621t">ZD621t</a></td></tr>
-<tr><td><strong>OUT (CSO)</strong></td><td>Warstwa barwna na zewnątrz rolki</td><td>25,4 mm (1")</td><td>Industrial: <a href="/produkt/zebra-zt231">ZT231</a>, <a href="/produkt/zebra-zt411">ZT411</a>, <a href="/produkt/zebra-zt610">ZT610</a></td></tr>
+<tr><td><strong>Biurkowe</strong></td><td>OUT (CSO)</td><td>74 m na gilzie 12,7 mm (0,5") albo 300 m na gilzie 25,4 mm (1"); szerokość do 110 mm</td><td><a href="/produkt/zebra-zd421t">ZD421t</a>, <a href="/produkt/zebra-zd621t">ZD621t</a></td></tr>
+<tr><td><strong>Przemysłowe</strong></td><td>OUT (CSO); ZT610 i ZT620 także IN, ZT411 i ZT421 IN tylko z opcjonalnym wałkiem</td><td>300 lub 450 m na gilzie 25,4 mm (1")</td><td><a href="/produkt/zebra-zt231">ZT231</a>, <a href="/produkt/zebra-zt411">ZT411</a>, <a href="/produkt/zebra-zt610">ZT610</a></td></tr>
 </tbody>
 </table>
 
-<p><strong>Użycie niewłaściwego nawoju</strong> powoduje brak nadruku lub bardzo słabą jakość — barwnik nie styka się z etykietą. Rdzenie 12,7 mm (desktop) i 25,4 mm (industrial) nie są wymienne — nie zmieścisz rolki desktop w drukarce industrial i odwrotnie.</p>
+<p><strong>Taśma z nawojem IN</strong> w drukarce, która go nie obsługuje, daje brak nadruku: barwnik nie styka się z etykietą. <strong>Długość rolki</strong> ogranicza dobór bardziej niż gilza. ZD421t i ZD621t przyjmują obie gilze, ale rolka nie może mieć więcej niż 300 m, więc taśma 450 m z drukarki przemysłowej się w nich nie zmieści. W drugą stronę rolka 74 m na gilzie 12,7 mm nie założy się na wieszak drukarki przemysłowej. Osobne formaty to kartridż do ZD421c i rolki 30 m do drukarek mobilnych P4T/RP4T: mają te same wymiary co zwykła taśma, ale inny mechanizm, więc sprawdzaj pełny numer katalogowy.</p>
 
 <p><strong>Jak sprawdzić nawój?</strong> Rozwiń fragment taśmy. Przyłóż kawałek etykiety samoprzylepnej do obu stron — strona, do której barwnik przylega (zostaje ślad), to strona barwna. Jeśli barwnik jest na wewnętrznej stronie rolki (bliżej rdzenia) — to nawój IN. Jeśli na zewnętrznej — nawój OUT.</p>`
     },
@@ -10159,7 +10159,7 @@ export const guides: Guide[] = [
 </tbody>
 </table>
 
-<p><strong>2300 Standard Wax</strong> to bestseller — dostępna w formatach desktop (rdzeń 12,7 mm, nawój IN, rolka 74 m) i industrial (rdzeń 25,4 mm, nawój OUT, rolki 300 m i 450 m). Najtańsza klasa taśmy i najniższy koszt na etykietę.</p>
+<p><strong>2300 Standard Wax</strong> to bestseller — dostępna w formatach desktop (rolka 74 m na gilzie 12,7 mm) i industrial (rolki 300 m i 450 m na gilzie 25,4 mm; 300 m pasuje też do ZD421t), zawsze z nawojem OUT. Najtańsza klasa taśmy i najniższy koszt na etykietę.</p>
 
 <p><strong>2100 European Wax</strong> — cieńsza warstwa barwna (7,5 µm vs 8,0 µm) daje wyższy kontrast i pozwala na druk do 355 mm/s. Tylko format industrial. Wybieraj 2100, gdy drukujesz na szybkich liniach produkcyjnych powyżej 304 mm/s.</p>
 
@@ -10204,7 +10204,7 @@ export const guides: Guide[] = [
 </tbody>
 </table>
 
-<p><strong>3200 Premium Wax/Resin</strong> — dostępna w formatach desktop (rdzeń 12,7 mm, nawój IN, 74 m) i industrial (rdzeń 25,4 mm, nawój OUT, 300 m i 450 m). Certyfikat UL Recognized — odpowiednia do etykiet regulacyjnych i GHS.</p>
+<p><strong>3200 Premium Wax/Resin</strong> — dostępna w formatach desktop (74 m na gilzie 12,7 mm) i industrial (300 m i 450 m na gilzie 25,4 mm), zawsze z nawojem OUT. Certyfikat UL Recognized — odpowiednia do etykiet regulacyjnych i GHS.</p>
 
 <p><strong>3300 Wax/Resin</strong> — najszybsza taśma w całym portfolio (400 mm/s, 16 ips), drukuje na wszystkich podłożach przy niskiej energii głowicy. Wybór do drukarek line-speed (print engines ZE511, ZE521).</p>
 
@@ -10361,7 +10361,7 @@ export const guides: Guide[] = [
 </tbody>
 </table>
 
-<p><strong>Uwaga:</strong> Rdzeń desktop (12,7 mm / 0,5") i industrial (25,4 mm / 1") nie są wymienne — rolka desktop nie zmieści się w drukarce industrial i odwrotnie. Przy zamawianiu zawsze weryfikuj rdzeń i nawój.</p>`
+<p><strong>Uwaga:</strong> Rolka 74 m na gilzie 12,7 mm nie założy się na wieszak drukarki przemysłowej, a rolka 450 m nie zmieści się w drukarce biurkowej. ZD421t i ZD621t przyjmują 74 m na 12,7 mm oraz 300 m na 25,4 mm. Przy zamawianiu sprawdzaj gilzę, długość i pełny numer katalogowy, bo kartridż ZD421c i rolki 30 m do P4T mają te same wymiary co zwykła taśma.</p>`
     },
     {
       id: 'kalkulator-kosztow',
@@ -10429,7 +10429,7 @@ export const guides: Guide[] = [
 <li><strong>WAX/RESIN to złoty środek</strong> — gdy etykieta styka się z wilgocią, alkoholem IPA lub olejami (Zebra 3200, 3300, 3400).</li>
 <li><strong>RESIN jest niezbędna dla syntetyków i warunków ekstremalnych</strong> — aceton, UV, temperatura do 120°C (Zebra 5095, 5100, 8000 ChemResist).</li>
 <li><strong>Szerokość taśmy = szerokość etykiety + 2–5 mm</strong> — chroni głowicę drukującą przed zużyciem.</li>
-<li><strong>Nawój IN (desktop) i OUT (industrial) nie są zamienne</strong> — użycie niewłaściwego nawoju powoduje brak nadruku.</li>
+<li><strong>Zebra pracuje z nawojem OUT</strong> — taśma IN daje pusty wydruk poza ZT610/ZT620 i ZT411/ZT421 z opcjonalnym wałkiem; klasy drukarek różnią się gilzą i długością rolki.</li>
 <li><strong>Koszt na etykietę rośnie z klasą</strong> — różnica między WAX a RESIN to ok. 3,2× na etykietę, ale RESIN eliminuje koszty wymiany etykiet w trudnych warunkach. Aktualne ceny — na stronach serii.</li>
 </ol>
 
@@ -10456,7 +10456,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Co to znaczy nawój wewnętrzny (IN) i zewnętrzny (OUT)?',
-      answer: 'Nawój IN (CSI — Coated Side In) — warstwa barwna skierowana do rdzenia rolki. Używany w drukarkach desktop (Zebra ZD421t, ZD621t, rdzeń 12,7 mm). Nawój OUT (CSO — Coated Side Out) — warstwa barwna na zewnątrz rolki. Używany w drukarkach industrial (<a href="/produkt/zebra-zt231">Zebra ZT231</a>, <a href="/produkt/zebra-zt411">ZT411</a>, rdzeń 25,4 mm). Użycie niewłaściwego nawoju powoduje brak nadruku lub bardzo słabą jakość.',
+      answer: 'Nawój IN (CSI, Coated Side In) to warstwa barwna skierowana do rdzenia rolki, nawój OUT (CSO, Coated Side Out) to warstwa barwna na zewnątrz. Drukarki Zebra, biurkowe ZD421t i ZD621t oraz przemysłowe <a href="/produkt/zebra-zt231">ZT231</a> i <a href="/produkt/zebra-zt411">ZT411</a>, pracują z nawojem OUT i takie są oryginalne taśmy Zebra. Taśma IN daje pusty wydruk w każdej drukarce bez jej obsługi; wyjątkiem są ZT610 i ZT620 oraz ZT411 i ZT421 z opcjonalnym wałkiem. Klasy drukarek różnią się gilzą i długością rolki: biurkowe 74 m na 12,7 mm albo 300 m na 25,4 mm, przemysłowe 300 lub 450 m na 25,4 mm.',
     },
     {
       question: 'Ile kosztuje taśma do drukarki etykiet?',
@@ -10472,7 +10472,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Czy taśmy Zebra pasują do drukarek TSC?',
-      answer: 'Tak — taśmy Zebra industrial (rdzeń 25,4 mm, nawój OUT) pasują do <a href="/produkt/tsc-ml241p">TSC ML241P</a> i <a href="/produkt/tsc-ml341p">ML341P</a>. Taśmy desktop Zebra (rdzeń 12,7 mm, nawój IN) pasują do drukarek desktop TSC. Kluczowe: zawsze sprawdź rdzeń (12,7 mm vs 25,4 mm) i kierunek nawoju (IN vs OUT) — to jedyne dwa parametry kompatybilności.',
+      answer: 'Tak — taśmy Zebra industrial 300 i 450 m na gilzie 25,4 mm, nawój OUT, pasują do <a href="/produkt/tsc-ml241p">TSC ML241P</a> i <a href="/produkt/tsc-ml341p">ML341P</a>, a modele MB241T i MB341T przyjmują IN i OUT. Taśmy desktop Zebra 74 m na gilzie 12,7 mm pasują do biurkowych TSC z wieszakiem na taką gilzę. Przed zakupem sprawdź gilzę, szerokość taśmy, maksymalną długość rolki i nawój obsługiwany przez drukarkę, a chemię taśmy dobierz do nośnika.',
     },
     {
       question: 'Jak długo wytrzyma etykieta z taśmy woskowej na zewnątrz?',

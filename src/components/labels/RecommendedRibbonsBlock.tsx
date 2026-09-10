@@ -1,3 +1,6 @@
+'use client'
+
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowRightIcon } from '@/components/ui/Icons'
@@ -39,9 +42,39 @@ interface ResolvedRibbon {
   tagline: string
 }
 
+/** Kontekst drukarki z `?drukarka=<slug>` (link z karty drukarki, audyt ZD-07): klasa i limit
+ *  długości rolki, żeby np. przy ZD421t nie polecać taśmy 450 m. Czytany po stronie klienta
+ *  po zamontowaniu, więc statyczny HTML karty etykiety zostaje bez zmian. */
+interface PrinterCtx {
+  name: string; slug: string; printerClass: 'desktop' | 'industrial'
+  maxRibbonLengthM?: number; maxRibbonWidthMm?: number; allowedCoresMm?: number[]
+}
+/** Parametry taśmy z wierszy specyfikacji drukarki („Max długość taśmy”, „Szerokość taśmy”,
+ *  „Rolka taśmy”, „Rdzeń taśmy”). Brak wiersza → ostrożne domyślne dla klasy drukarki. */
+function resolvePrinter(slug: string | null): PrinterCtx | undefined {
+  if (!slug) return undefined
+  const p = getProductBySlug(slug)
+  if (!p || p.categoryId !== 'drukarki-etykiet') return undefined
+  const printerClass = p.subcategoryIds?.includes('przemyslowe-drukarki-etykiet') ? 'industrial' : 'desktop'
+  const specs = p.specifications
+  const lengthSpec = specs.find(s => /d[łl]ugo[śs][ćc] ta[śs]my/i.test(s.name))?.value ?? ''
+  const widthSpec = specs.find(s => /szeroko[śs][ćc] ta[śs]my|szeroko[śs][ćc] ribbon/i.test(s.name))?.value ?? ''
+  const coreText = specs.filter(s => /ta[śs]m|ribbon/i.test(s.name)).map(s => s.value).join(' ')
+  const lengths = Array.from(lengthSpec.matchAll(/(\d{2,4})\s*m\b/g)).map(m => parseInt(m[1], 10))
+  const maxRibbonLengthM = lengths.length ? Math.max(...lengths) : (printerClass === 'desktop' ? 300 : undefined)
+  const widths = Array.from(widthSpec.matchAll(/(\d{2,3}(?:[.,]\d)?)\s*mm/g)).map(m => parseFloat(m[1].replace(',', '.')))
+  // Zebra pisze 109,2 mm (4,3"), a własne taśmy 110 mm (4,33") — zaokrąglamy do pełnych mm dla czytelności
+  const maxRibbonWidthMm = widths.length ? Math.ceil(Math.max(...widths)) : undefined
+  const cores: number[] = []
+  if (/12[,.]7|0[,.]5\s*["”]/.test(coreText)) cores.push(12.7)
+  if (/25[,.]4|(?:^|[^\d,.])1\s*["”]/.test(coreText)) cores.push(25.4)
+  const allowedCoresMm = cores.length ? cores : (printerClass === 'desktop' ? [12.7] : [25.4])
+  return { name: p.name, slug: p.slug, printerClass, maxRibbonLengthM, maxRibbonWidthMm, allowedCoresMm }
+}
+
 /** Mapuje nazwę taśmy z `recommendedRibbons` (np. "Zebra 5095 Resin") na konkretny wariant
- *  produktu w katalogu, opcjonalnie dopasowany do szerokości i gilzy etykiety. */
-function resolveRibbon(modelName: string, labelWidthMm?: number, labelCoreMm?: number): ResolvedRibbon | null {
+ *  produktu w katalogu, opcjonalnie dopasowany do szerokości i gilzy etykiety oraz drukarki. */
+function resolveRibbon(modelName: string, labelWidthMm?: number, labelCoreMm?: number, printer?: PrinterCtx): ResolvedRibbon | null {
   const slug = ribbonNameToSlug(modelName)
   const series = getRibbonSeriesBySlug(slug)
   if (!series) return null
@@ -49,7 +82,7 @@ function resolveRibbon(modelName: string, labelWidthMm?: number, labelCoreMm?: n
   if (!product || !product.variants?.length) return null
 
   const variant = labelWidthMm
-    ? pickRibbonVariantForLabel(product, labelWidthMm, labelCoreMm)
+    ? pickRibbonVariantForLabel(product, labelWidthMm, labelCoreMm, printer && { printerClass: printer.printerClass, maxRibbonLengthM: printer.maxRibbonLengthM, maxRibbonWidthMm: printer.maxRibbonWidthMm, allowedCoresMm: printer.allowedCoresMm })
     : product.variants.find(v => parseFloat(v.attributes['Szerokość']?.match(/(\d+)/)?.[1] ?? '0') === 110)
       ?? product.variants[0]
 
@@ -63,14 +96,37 @@ export default function RecommendedRibbonsBlock({
   labelWidthMm,
   labelCoreMm,
 }: Props) {
+  const [printer, setPrinter] = useState<PrinterCtx | undefined>(undefined)
+  useEffect(() => {
+    try { setPrinter(resolvePrinter(new URLSearchParams(window.location.search).get('drukarka'))) } catch { /* brak window */ }
+  }, [])
   const waxResin = (rr.waxResin ?? [])
-    .map(name => resolveRibbon(name, labelWidthMm, labelCoreMm))
+    .map(name => resolveRibbon(name, labelWidthMm, labelCoreMm, printer))
     .filter((r): r is ResolvedRibbon => r !== null)
   const resin = (rr.resin ?? [])
-    .map(name => resolveRibbon(name, labelWidthMm, labelCoreMm))
+    .map(name => resolveRibbon(name, labelWidthMm, labelCoreMm, printer))
     .filter((r): r is ResolvedRibbon => r !== null)
 
-  if (waxResin.length === 0 && resin.length === 0) return null
+  if (waxResin.length === 0 && resin.length === 0) {
+    // Z kontekstem drukarki brak wyniku jest informacją, nie pustą sekcją
+    if (!printer) return null
+    return (
+      <section id="tasmy" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="bg-slate-50 rounded-2xl p-6 sm:p-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Jaką taśmę barwiącą dokupić?</h2>
+          <p className="text-gray-600 text-sm sm:text-base">
+            Wśród taśm polecanych do serii {seriesTitle} nie ma rolki zgodnej z drukarką{' '}
+            <Link href={`/produkt/${printer.slug}`} className="font-semibold text-gray-900 underline">{printer.name}</Link>
+            {printer.maxRibbonWidthMm ? <> (szerokość do {printer.maxRibbonWidthMm} mm</> : null}
+            {printer.allowedCoresMm?.length ? <>{printer.maxRibbonWidthMm ? ', ' : ' ('}gilza {printer.allowedCoresMm.map(c => c.toString().replace('.', ',')).join(' lub ')} mm</> : null}
+            {printer.maxRibbonLengthM ? <>, rolka do {printer.maxRibbonLengthM} m</> : null}
+            {printer.maxRibbonWidthMm || printer.allowedCoresMm?.length ? ')' : ''}.{' '}
+            Napisz do nas, dobierzemy taśmę z pełnej oferty.
+          </p>
+        </div>
+      </section>
+    )
+  }
 
   return (
     <section id="tasmy" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -84,6 +140,16 @@ export default function RecommendedRibbonsBlock({
             <> Dla etykiety <strong>{seriesTitle}</strong> dobraliśmy taśmy o szerokości pasującej do {labelWidthMm} mm:</>
           ) : (
             <> Dla serii {seriesTitle} polecane modele taśm:</>
+          )}
+          {printer && (
+            <> Dobór uwzględnia drukarkę{' '}
+              <Link href={`/produkt/${printer.slug}`} className="font-semibold text-gray-900 underline">{printer.name}</Link>
+              {printer.maxRibbonWidthMm || printer.allowedCoresMm?.length || printer.maxRibbonLengthM ? <>: {[
+                printer.maxRibbonWidthMm ? `szerokość do ${printer.maxRibbonWidthMm} mm` : null,
+                printer.allowedCoresMm?.length ? `gilza ${printer.allowedCoresMm.map(c => c.toString().replace('.', ',')).join(' lub ')} mm` : null,
+                printer.maxRibbonLengthM ? `rolka do ${printer.maxRibbonLengthM} m` : null,
+              ].filter(Boolean).join(', ')}</> : null}.
+            </>
           )}
         </p>
 

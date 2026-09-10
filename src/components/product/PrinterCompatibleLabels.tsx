@@ -82,12 +82,14 @@ function VariantCard({
   seriesTitle,
   stockInfo,
   stockLoading,
+  printerSlug,
 }: {
   product: Product
   variant: ProductVariant
   seriesTitle: string
   stockInfo?: StockInfo
   stockLoading: boolean
+  printerSlug?: string
 }) {
   const { addItem, isInCart } = useCartStore()
   const [mounted, setMounted] = useState(false)
@@ -106,8 +108,9 @@ function VariantCard({
 
   // URL wariantu: /produkt/[slug]/[size]/[pn] — statyczny, indeksowalny per SKU
   const sizeSlug = rozmiar ? thermalSizeSlug(rozmiar) : ''
+  // ?drukarka= niesie kontekst drukarki na kartę etykiety (dobór taśmy pod jej limit długości rolki)
   const variantHref = sizeSlug
-    ? `/produkt/${product.slug}/${sizeSlug}/${variant.partNumber}`
+    ? `/produkt/${product.slug}/${sizeSlug}/${variant.partNumber}${printerSlug ? `?drukarka=${printerSlug}` : ''}`
     : `/produkt/${product.slug}`
 
   const fullName = `Zebra ${seriesTitle}${rozmiar ? ` ${rozmiar}` : ''}`
@@ -297,6 +300,7 @@ export default function PrinterCompatibleLabels({
             seriesTitle={seriesTitle}
             stockInfo={stockData.get(variant.partNumber)}
             stockLoading={stockLoading}
+            printerSlug={printerSlug}
           />
         ))}
       </div>
