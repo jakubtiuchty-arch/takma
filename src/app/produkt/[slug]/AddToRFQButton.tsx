@@ -109,13 +109,16 @@ function NotifyForm({ partNumber, productName, compact }: { partNumber: string; 
 export default function AddToRFQButton({ product, compact = false }: AddToRFQButtonProps) {
   const { addItem, isInCart } = useCartStore()
   const [mounted, setMounted] = useState(false)
-  const { displayedPn, price, loading: stockLoading, stockData, partNumbers } = useSmartPrice()
+  const { displayedPn, price, loading: stockLoading, stockData, partNumbers, variantName } = useSmartPrice()
 
   useEffect(() => {
     setMounted(true)
   }, [])
 
-  const inRFQ = mounted ? isInCart(product.id) : false
+  // Produkt z wariantami: osobna pozycja koszyka per PN (jak w tabeli wariantów), z nazwą konfiguracji
+  const cartId = displayedPn && product.variants?.length ? `${product.slug}__${displayedPn}` : product.id
+  const cartName = variantName && product.variants?.length ? `${product.name} — ${variantName}` : product.name
+  const inRFQ = mounted ? isInCart(cartId) : false
 
   // Sprawdź czy produkt jest niedostępny (live dane lub statyczna availability)
   const hasVariants = product.variants && product.variants.length > 0
@@ -144,8 +147,8 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
 
   const handleAdd = () => {
     addItem({
-      id: product.id,
-      name: product.name,
+      id: cartId,
+      name: cartName,
       slug: product.slug,
       image: product.images[0],
       partNumber: displayedPn,

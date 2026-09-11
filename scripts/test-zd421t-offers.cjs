@@ -34,8 +34,8 @@ assert.equal(productVariantSchema(product, [{ ...rows[0], availability: 'on-orde
 for (const missing of [[], [{ ...rows[0], found: false }], [{ ...rows[0], price: 0 }], [{ ...rows[0], price: undefined }]]) {
   assert(productVariantSchema(product, missing).hasVariant.every(v => !v.offers))
 }
-assert.equal(product.faq.length, 12)
-assert(!/36.mies|min\. 1 mln etykiet|ten sam korpus|te same akcesoria/.test(product.description + JSON.stringify(product.faq)))
+assert.equal(product.faq.length, 13)
+assert(/36 miesięcy/.test(product.description) && !/24 miesiące|min\. 1 mln etykiet|ten sam korpus|te same akcesoria|wykaz wyjątków|sierpień 2026/.test(product.description + JSON.stringify(product.faq)))
 assert(product.specifications.some(s => s.name === 'Waga' && s.value === '2,05 kg'))
 assert(product.specifications.some(s => s.value === '202 × 267 × 189 mm'))
 assert.equal(product.updatedAt, '2026-09-04')

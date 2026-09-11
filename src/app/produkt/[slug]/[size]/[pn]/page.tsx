@@ -348,9 +348,17 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
   // (anty-kanibalizacja względem landingu serii: tu „ten rozmiar", tam pełny przewodnik).
   const ribbonWidthMm = isRibbon ? (parseInt(variant.attributes['Szerokość'] ?? '', 10) || null) : null
   const ribbonCoreMm = isRibbon && gilza ? (parseInt(gilza, 10) || null) : null
+  // Formaty specjalne (atrybut 'Format') mają własną zgodność: kartridż tylko ZD421c, rolka 30 m tylko P4T/RP4T
+  const ribbonFormat = isRibbon ? (variant.attributes['Format'] ?? '') : ''
   const ribbonPrinterHint = !isRibbon ? null
+    : /kartrid/i.test(ribbonFormat)
+      ? 'Kartridż do drukarki Zebra ZD421c z mechanizmem kartridżowym. Nie pasuje do ZD421t, ZD611t ani ZD621t z taśmą w rolce.'
+    : /P4T/i.test(ribbonFormat)
+      ? 'Rolka 30 m do drukarek mobilnych Zebra P4T i RP4T. Nie pasuje do drukarek biurkowych ani przemysłowych.'
     : ribbonCoreMm === 12
-      ? 'Rdzeń 12 mm (0,5") — drukarki biurkowe Zebra (ZD611t, ZD621t).'
+      ? 'Rdzeń 12 mm (0,5") — drukarki biurkowe Zebra (ZD220t, ZD230t, ZD411t, ZD421t, ZD611t, ZD621t).'
+    : ribbonCoreMm === 25 && rollLength !== null && rollLength <= 300
+      ? 'Rdzeń 25 mm (1") — drukarki przemysłowe Zebra (ZT231, ZT411, ZT421, ZT510, ZT610, ZT620) oraz biurkowe z obsługą rolki 300 m (ZD230t, ZD421t, ZD621t).'
     : ribbonCoreMm === 25
       ? 'Rdzeń 25 mm (1") — drukarki mid-range, przemysłowe oraz napędy drukujące Zebra (ZT231, ZT411, ZT421, ZT510, ZT610, ZT620, ZE511/ZE521).'
     : null
@@ -829,7 +837,7 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
               <h2 className="text-2xl font-bold text-gray-900 mb-2">Kompatybilne drukarki Zebra</h2>
               <p className="text-gray-600 mb-6 text-sm">
                 {product.name}{sizeLabel ? ` ${sizeLabel}` : ''} jest media-tested dla następujących modeli drukarek Zebra
-                obsługujących {ctx.isTransfer ? 'druk termotransferowy (z taśmą)' : 'direct thermal'}.
+                obsługujących {ctx.isTransfer || ctx.isRibbon ? 'druk termotransferowy (z taśmą)' : 'direct thermal'}.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {(['desktop', 'midRange', 'industrial', 'mobile'] as const).map((cat) => {
@@ -837,7 +845,13 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
                     cat === 'desktop' ? 'Drukarki biurkowe' :
                     cat === 'midRange' ? 'Mid-range' :
                     cat === 'industrial' ? 'Industrialne' : 'Mobilne'
-                  const models = ctx.series.compatiblePrinters[cat]
+                  // Formaty specjalne taśm mają własną, wąską zgodność niezależnie od listy serii:
+                  // kartridż CT tylko ZD421c, rolka 30 m tylko P4T/RP4T (audyt ZD421t, ZD-01)
+                  const models = /kartrid/i.test(ribbonFormat)
+                    ? (cat === 'desktop' ? ['ZD421c'] : [])
+                    : /P4T/i.test(ribbonFormat)
+                      ? (cat === 'mobile' ? ['P4T', 'RP4T'] : [])
+                      : ctx.series.compatiblePrinters[cat]
                   if (!models || models.length === 0) return null
                   return (
                     <div key={cat} className="bg-white border border-slate-200 rounded-xl p-5">

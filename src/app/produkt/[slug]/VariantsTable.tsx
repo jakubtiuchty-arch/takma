@@ -298,7 +298,8 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
             variant={inRFQ ? 'secondary' : manufacturerId === 'zebra' ? 'zebra' : 'primary'}
             onClick={() => addItem({
               id: `${productSlug}__${variant.partNumber}`,
-              name: productName,
+              // nazwa z konfiguracją: w koszyku klient ma widzieć, co wybrał, nie tylko PN
+              name: variant.name ? `${productName} — ${variant.name}` : productName,
               slug: productSlug,
               image: productImage,
               partNumber: variant.partNumber,
@@ -431,7 +432,8 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
             variant={inRFQ ? 'secondary' : manufacturerId === 'zebra' ? 'zebra' : 'primary'}
             onClick={() => addItem({
               id: `${productSlug}__${variant.partNumber}`,
-              name: productName,
+              // nazwa z konfiguracją: w koszyku klient ma widzieć, co wybrał, nie tylko PN
+              name: variant.name ? `${productName} — ${variant.name}` : productName,
               slug: productSlug,
               image: productImage,
               partNumber: variant.partNumber,

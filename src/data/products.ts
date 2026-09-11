@@ -957,7 +957,7 @@ Do papieru w zwykłych warunkach często wystarcza taśma woskowa. Przy większy
 
 ## Gwarancja i serwis
 
-Gwarancja producenta na drukarkę wynosi 36 miesięcy dla urządzeń kupionych w regionie EMEA po 1 kwietnia 2024 r. (wykaz wyjątków gwarancyjnych Zebra, sierpień 2026). Dla głowicy termotransferowej w regionie EMEA obowiązuje rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej, na warunkach Zebra. Nie jest to deklarowana żywotność głowicy ani liczba etykiet. Zakres dodatkowego kontraktu Zebra OneCare trzeba sprawdzić dla wybranego pakietu.
+Gwarancja producenta na drukarkę wynosi 36 miesięcy dla urządzeń kupionych w Polsce (region EMEA) po 1 kwietnia 2024 r. Dla głowicy termotransferowej w regionie EMEA obowiązuje rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej, na warunkach Zebra. Nie jest to deklarowana żywotność głowicy ani liczba etykiet. Zakres dodatkowego kontraktu Zebra OneCare trzeba sprawdzić dla wybranego pakietu.
 
 Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/zebra-zd421d). To mniejsza konstrukcja bez mechanizmu taśmy, z innymi częściami i akcesoriami.`,
     categoryId: 'drukarki-etykiet',
@@ -1135,7 +1135,7 @@ Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/
     ],
     starterKits: [
       { title: 'Etykiety papierowe', description: 'Z-Select 2000T 102×64 mm i woskowa taśma 2300, rolka 74 m na gilzie 12,7 mm.', facts: ['Magazyn, półka, wysyłka', 'Wnętrze, ponad rok trwałości', 'Najtańszy komplet'], image: '/images/kits/zd421t-papier.webp', partNumbers: ['3007206-T', '02300GS11007'] },
-      { title: 'Etykiety foliowe', description: 'PolyPro 3000T 51×25 mm i żywiczna taśma 5095, rolka 64 mm × 74 m.', facts: ['Sprzęt, majątek, inwentaryzacja', 'Odporna na wilgoć, oleje i ścieranie', 'Odporna na wodę i rozdarcie'], image: '/images/kits/zd421t-folia.webp', partNumbers: ['3011159', '05095GS06407'] },
+      { title: 'Etykiety foliowe', description: 'PolyPro 3000T 51×25 mm i żywiczna taśma 5095, rolka 64 mm × 74 m.', facts: ['Sprzęt, majątek, inwentaryzacja', 'Odporna na wilgoć i ścieranie', 'Wnętrze, do roku użytkowania'], image: '/images/kits/zd421t-folia.webp', partNumbers: ['3011159', '05095GS06407'] },
     ],
     faq: [
       { question: "Jaki program do projektowania etykiet dostanę?", answer: "Bezpłatny ZebraDesigner Essentials dla Windows wystarcza do projektu etykiety z tekstem, kodem kreskowym i logo, obsługuje też pola wpisywane przy druku, datę, czas i liczniki. Płatna wersja Professional jest potrzebna dopiero przy danych z bazy albo arkusza Excel, skryptach i kodowaniu RFID. Do druku z programu magazynowego lub ERP nie potrzeba żadnego z nich: system wysyła gotowy ZPL przez sterownik albo bezpośrednio do portu drukarki." },
@@ -1146,7 +1146,7 @@ Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/
       { question: "Jak dobrać etykiety i taśmę?", answer: "Sprawdź materiał, klej, rozmiar etykiety, średnicę rolki i rdzenia. ZD421t przyjmuje nośniki do 112 mm szerokości oraz taśmy do 110 mm szerokości i 300 m długości. Taśma woskowa jest typowym wyborem do papieru; woskowo-żywiczna i żywiczna wymagają dopasowania do podłoża oraz oczekiwanej odporności. Więcej wskazówek: [dobór taśmy termotransferowej](/poradnik/jak-dobrac-tasme-termotransferowa)." },
       { question: "Czy można drukować bez taśmy barwiącej?", answer: "Tak, w trybie termicznym bezpośrednim, na etykietach przeznaczonych do tego druku. Taśma jest potrzebna w trybie termotransferowym. Zwykły papier do termotransferu nie zastąpi papieru termicznego po wyjęciu taśmy." },
       { question: "Ile etykiet wydrukuję z taśmy 300 m?", answer: "Podziel długość taśmy przez wysokość etykiety wraz z odstępem. Przykładowo 300 000 mm / (100 mm + 3 mm) daje około 2912 etykiet przed uwzględnieniem strat na kalibrację i wymianę materiałów. Koszt jednej etykiety to koszt nośnika plus koszt zużytej taśmy; w budżecie trzeba uwzględnić też czyszczenie i serwis. Nie ma jednej wiarygodnej kwoty miesięcznej bez znajomości nakładu i materiałów." },
-      { question: "Jaka gwarancja obejmuje drukarkę i głowicę?", answer: "Producent podaje 36 miesięcy na drukarkę kupioną w regionie EMEA po 1 kwietnia 2024 r.; ogólna tabela mówi o 24 miesiącach, ale dla Polski obowiązuje wyjątek regionalny. Głowica termotransferowa w EMEA jest objęta ochroną przez rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej, na warunkach Zebra. Milion cali to długość wydruku, nie liczba etykiet. Dodatkową ochronę można dobrać w ramach odpowiedniego kontraktu Zebra OneCare." },
+      { question: "Jaka gwarancja obejmuje drukarkę i głowicę?", answer: "Producent daje 36 miesięcy na drukarkę kupioną w Polsce (region EMEA) po 1 kwietnia 2024 r. Głowica termotransferowa w EMEA jest objęta ochroną przez rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej, na warunkach Zebra. Milion cali to długość wydruku, nie liczba etykiet. Dodatkową ochronę można dobrać w ramach odpowiedniego kontraktu Zebra OneCare." },
       { question: "Czy mogę zastąpić GK420t lub ZD420t bez zmiany szablonów?", answer: "ZD421t obsługuje ZPL II i EPL2, co ułatwia migrację. Nie należy jednak zakładać, że każdy szablon zadziała bez sprawdzenia. Zweryfikuj rozdzielczość, rozmiar etykiety, sterownik i sposób wysyłania danych z programu, WMS lub ERP. Szczególnie przy przejściu z 203 na 300 dpi mogą być potrzebne zmiany projektu." },
       { question: "Co wpływa na cenę i dostępność poszczególnych wersji?", answer: "Przede wszystkim rozdzielczość oraz łączność. Aktualną cenę netto i brutto oraz stan dla konkretnego PN pokazujemy w bloku oferty i tabeli wariantów. Porównuj te same numery produktu i wyposażenie. Gdy brak potwierdzonej ceny lub stanu, poproś TAKMA o ofertę." },
       { question: "Jakie modele warto porównać z ZD421t?", answer: "Sprawdź [Zebra ZD621t](/produkt/zebra-zd621t), jeśli potrzebujesz szybszego druku i szerszych opcji wyposażenia, albo [Zebra ZD220t](/produkt/zebra-zd220t), jeśli wystarczy prostsza konfiguracja USB. Alternatywą innej marki jest [Honeywell PC45t](/produkt/honeywell-pc45t). Ceny, rozdzielczość i wyposażenie porównuj dla konkretnych wariantów, nie samych nazw serii." },
@@ -1289,7 +1289,7 @@ Szukasz wersji z drukiem trwałym (termotransferowym)? Sprawdź [Zebra ZD421t](/
       { name: 'Temperatura pracy', value: '4,4–41°C' },
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz (wyjście 12V, 9A, 108W)' },
       { name: 'Certyfikaty', value: 'CE, FCC Class B, cTUVus, ENERGY STAR Level VI, IEC 60950-1, IEC 62368-1' },
-      { name: 'Gwarancja', value: '36 miesięcy (drukarka), 6 miesięcy (głowica)' },
+      { name: 'Gwarancja', value: '36 miesięcy na drukarkę (EMEA, zakup po 1.04.2024); głowica: rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej' },
     ],
     applications: [
       'Etykiety wysyłkowe i kurierskie (InPost, DPD, DHL, GLS, UPS, Poczta Polska)',
@@ -1400,7 +1400,7 @@ Szukasz wersji z drukiem trwałym (termotransferowym)? Sprawdź [Zebra ZD421t](/
       },
       {
         question: 'Jaka jest gwarancja na Zebra ZD421d?',
-        answer: 'Zebra ZD421d objęta jest 36-miesięczną (3 lata) gwarancją producenta na drukarkę. Gwarancja na głowicę drukującą wynosi 6 miesięcy lub 500 000 etykiet (co nastąpi pierwsze). Gwarancję można rozszerzyć do 5 lat w ramach kontraktów serwisowych Zebra OneCare Essential lub Select.',
+        answer: 'Zebra ZD421d objęta jest 36-miesięczną (3 lata) gwarancją producenta na drukarkę. Gwarancja na głowicę drukującą to rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej. Gwarancję można rozszerzyć do 5 lat w ramach kontraktów serwisowych Zebra OneCare Essential lub Select.',
       },
       {
         question: 'Czy Zebra ZD421d obsługuje kody QR i DataMatrix?',
@@ -2295,7 +2295,7 @@ Modułowa architektura MCS (Modular Connectivity Slot) pozwala rozbudować łąc
 
 Platforma Zebra Print DNA zapewnia zestaw narzędzi diagnostycznych i zarządzających: Browser Print (druk z przeglądarki), Visibility Services (monitoring statusu), Printer Profile Manager (klonowanie konfiguracji) oraz Link-OS SDK do integracji z systemami WMS, ERP i platformami e-commerce. Drukarka jest kompatybilna z językami ZPL II i EPL2, co gwarantuje pełną kompatybilność wsteczną z istniejącymi szablonami etykiet z ZD410, LP2824 i TLP2824.
 
-Dla kogo jest Zebra ZD411d? To optymalny wybór dla firm potrzebujących kompaktowej drukarki do małych etykiet: jubilerzy (cenówki na biżuterię), apteki (etykiety na recepturę), laboratoria (próbówki, fiolki), szpitale (opaski pacjentów — dostępna wersja healthcare ZD411d-HC z certyfikatem IEC 60601-1), sklepy detaliczne (małe cenówki półkowe), branża elektroniczna (etykiety na komponenty SMD) i e-commerce (małe etykiety zwrotne). Gwarancja producenta na drukarkę i 6 miesięcy na głowicę drukującą. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies.
+Dla kogo jest Zebra ZD411d? To optymalny wybór dla firm potrzebujących kompaktowej drukarki do małych etykiet: jubilerzy (cenówki na biżuterię), apteki (etykiety na recepturę), laboratoria (próbówki, fiolki), szpitale (opaski pacjentów — dostępna wersja healthcare ZD411d-HC z certyfikatem IEC 60601-1), sklepy detaliczne (małe cenówki półkowe), branża elektroniczna (etykiety na komponenty SMD) i e-commerce (małe etykiety zwrotne). Gwarancja producenta 36 miesięcy na drukarkę i rok lub milion cali wydruku na głowicę. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies.
 
 Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
@@ -2343,7 +2343,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Wilgotność pracy', value: '10–90% (bez kondensacji)' },
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz' },
       { name: 'Certyfikaty', value: 'CE, FCC Class B, ENERGY STAR, IEC 62368-1' },
-      { name: 'Gwarancja', value: '36 miesięcy na drukarkę (EMEA, zakup po 1.04.2024), 6 miesięcy na głowicę' },
+      { name: 'Gwarancja', value: '36 miesięcy na drukarkę (EMEA, zakup po 1.04.2024); głowica: rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej' },
       { name: 'Oprogramowanie', value: 'ZebraDesigner Essentials (bezpłatny projektant etykiet dla Windows: tekst, kody, grafika, pola wpisywane przy druku, data, czas, liczniki), ZebraDesigner Professional (płatny: bazy danych i Excel, skrypty, RFID), sterownik Windows z Zebra Setup Utilities; macOS i Linux przez CUPS lub ZPL' },
     ],
     applications: [
@@ -2457,7 +2457,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Jaka jest gwarancja na Zebra ZD411d?',
-        answer: 'ZD411d objęta jest 36-miesięczną gwarancją producenta na drukarkę (urządzenia kupione w regionie EMEA po 1 kwietnia 2024 r.). Gwarancja na głowicę drukującą wynosi 6 miesięcy. Gwarancję można rozszerzyć w ramach kontraktów serwisowych Zebra OneCare Essential lub Select. Serwis autoryzowany w Polsce: serwis-zebry.pl.',
+        answer: 'ZD411d objęta jest 36-miesięczną gwarancją producenta na drukarkę (urządzenia kupione w regionie EMEA po 1 kwietnia 2024 r.). Gwarancja na głowicę drukującą to rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej. Gwarancję można rozszerzyć w ramach kontraktów serwisowych Zebra OneCare Essential lub Select. Serwis autoryzowany w Polsce: serwis-zebry.pl.',
       },
       {
         question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
@@ -2548,7 +2548,7 @@ Modułowa architektura MCS (Modular Connectivity Slot) pozwala rozbudować łąc
 
 Opcjonalnie dostępny odklejak/peeler (P1117258-230) do automatycznego oddzielania etykiet od podłoża i gilotyna/cutter (P1117258-231) do automatycznego cięcia — oba montowane w terenie bez narzędzi. ZD411t drukuje również w trybie termicznym bezpośrednim (direct thermal) bez ribbona.
 
-Dla kogo jest Zebra ZD411t? To optymalny wybór dla firm potrzebujących trwałych małych etykiet: jubilerzy (cenówki odporne na ścieranie — taśma żywiczna na etykiecie syntetycznej), branża elektroniczna (etykiety na komponenty, PCB, SMD z rozdzielczością 300 dpi), telekomunikacja (etykiety flagowe na kable), producenci (oznaczenia trwałe na częściach), farmacja i kosmetyka (małe etykiety produktowe). Gwarancja producenta na drukarkę i 6 miesięcy na głowicę. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies.
+Dla kogo jest Zebra ZD411t? To optymalny wybór dla firm potrzebujących trwałych małych etykiet: jubilerzy (cenówki odporne na ścieranie — taśma żywiczna na etykiecie syntetycznej), branża elektroniczna (etykiety na komponenty, PCB, SMD z rozdzielczością 300 dpi), telekomunikacja (etykiety flagowe na kable), producenci (oznaczenia trwałe na częściach), farmacja i kosmetyka (małe etykiety produktowe). Gwarancja producenta 36 miesięcy na drukarkę i rok lub milion cali wydruku na głowicę. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies.
 
 Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
 
@@ -2598,7 +2598,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Wilgotność pracy', value: '10–90% (bez kondensacji)' },
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz' },
       { name: 'Certyfikaty', value: 'CE, FCC Class B, ENERGY STAR, IEC 62368-1' },
-      { name: 'Gwarancja', value: '36 miesięcy na drukarkę (EMEA, zakup po 1.04.2024), 6 miesięcy na głowicę' },
+      { name: 'Gwarancja', value: '36 miesięcy na drukarkę (EMEA, zakup po 1.04.2024); głowica: rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej' },
       { name: 'Oprogramowanie', value: 'ZebraDesigner Essentials (bezpłatny projektant etykiet dla Windows: tekst, kody, grafika, pola wpisywane przy druku, data, czas, liczniki), ZebraDesigner Professional (płatny: bazy danych i Excel, skrypty, RFID), sterownik Windows z Zebra Setup Utilities; macOS i Linux przez CUPS lub ZPL' },
     ],
     applications: [
@@ -2732,7 +2732,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Jaka jest gwarancja na ZD411t?',
-        answer: 'ZD411t objęta jest 36-miesięczną gwarancją producenta na drukarkę (urządzenia kupione w regionie EMEA po 1 kwietnia 2024 r.). Gwarancja na głowicę drukującą wynosi 6 miesięcy. Gwarancję można rozszerzyć w ramach Zebra OneCare Essential lub Select. Autoryzowany serwis w Polsce: serwis-zebry.pl.',
+        answer: 'ZD411t objęta jest 36-miesięczną gwarancją producenta na drukarkę (urządzenia kupione w regionie EMEA po 1 kwietnia 2024 r.). Gwarancja na głowicę drukującą to rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej. Gwarancję można rozszerzyć w ramach Zebra OneCare Essential lub Select. Autoryzowany serwis w Polsce: serwis-zebry.pl.',
       },
       {
         question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
