@@ -190,7 +190,7 @@ export const magicard300Pl: PolishManual = {
       blocks: [
         {
           type: 'video',
-          src: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-zawartosc-pudelka-pl.mp4',
+          src: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-zawartosc-pudelka-pl-v2.mp4',
           poster: '/images/products/magicard-300-zawartosc-pudelka-poster.webp',
           captions: '/video/napisy/magicard-300-zawartosc-pudelka-pl.vtt',
           caption: 'Zawartość pudełka: zasilacz z kablem, kabel USB, podajnik na 100 kart, odbiornik na 70 kart, karta czyszcząca, skrócona instrukcja i dokument gwarancyjny. Film producenta z polskim lektorem, 1:03.',

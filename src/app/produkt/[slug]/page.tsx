@@ -1192,7 +1192,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
             {/* Zestaw startowy drukarki kart: baner w tym samym miejscu co komplety drukarek etykiet */}
             {starterBundle && (
-              <BundleBanner bundle={starterBundle} image={`/images/kits/${starterBundle.slug}.webp`} />
+              <BundleBanner bundle={starterBundle} image={`/images/kits/${starterBundle.slug}.webp`} compact={starterBundle.bundleBannerCompact} />
             )}
 
             {/* Opis — dla etykiet termicznych bogaty content z thermal-label-series */}

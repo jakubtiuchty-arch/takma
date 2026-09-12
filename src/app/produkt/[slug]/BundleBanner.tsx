@@ -20,7 +20,7 @@ function shortName(p: Product) {
  * Niski baner zestawu startowego na karcie drukarki kart, między tabelą wariantów a opisem.
  * Obraz z Higgsfield (produkty 1:1 z renderów), cały tekst w HTML. Jeden przycisk: zestaw do koszyka.
  */
-export default function BundleBanner({ bundle, image }: { bundle: Product; image: string }) {
+export default function BundleBanner({ bundle, image, compact }: { bundle: Product; image: string; compact?: boolean }) {
   const items = (bundle.bundleItems ?? [])
     .map((i) => {
       const p = products.find((x) => x.id === i.productId)
@@ -31,6 +31,52 @@ export default function BundleBanner({ bundle, image }: { bundle: Product; image
   const separately = items.reduce((s, i) => s + (i.product.priceFrom ?? 0) * i.quantity, 0)
   const saving = separately - bundle.priceFrom
   const pn = bundle.specifications.find((s) => s.name === 'Part Number')?.value
+  const cartBundle = { id: bundle.id, name: bundle.name, slug: bundle.slug, image: bundle.images[0], partNumber: pn, priceNetto: bundle.priceFrom, categoryId: bundle.categoryId }
+
+  if (compact) {
+    // Wariant niski: jeden wiersz — obraz, tekst ze składem w jednej linii, cena i przycisk
+    return (
+      <section id="zestaw-startowy" aria-labelledby="zestaw-startowy-h" className="rounded-2xl border border-slate-200 bg-white overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-[minmax(0,17rem)_1fr_auto] md:items-center">
+          <div className="relative min-w-0 aspect-[16/9] md:aspect-auto md:h-full md:min-h-[150px] bg-white">
+            <Image src={image} alt={`${bundle.name}: drukarka, taśma i karty`} fill sizes="(min-width: 768px) 17rem, 100vw" className="object-contain" />
+          </div>
+          <div className="min-w-0 px-5 py-4 sm:px-6">
+            <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">Zestaw startowy</p>
+            <h2 id="zestaw-startowy-h" className="mt-0.5 text-lg font-bold text-gray-900 leading-tight text-balance">
+              Drukuj identyfikatory od pierwszego dnia
+            </h2>
+            <p className="mt-1.5 text-sm text-gray-700">
+              {items.map(({ product, quantity }, i) => (
+                <span key={product.id}>
+                  {i > 0 && <span className="mx-1.5 text-gray-300">·</span>}
+                  <Link href={`/produkt/${product.slug}`} className="hover:text-blue-700 hover:underline underline-offset-2">
+                    {shortName(product)}
+                  </Link>
+                  {product.subcategoryIds?.includes('karty-plastikowe') && quantity === 1 ? '' : quantity > 1 ? ` ×${quantity}` : ''}
+                </span>
+              ))}
+            </p>
+            <p className="mt-1 text-xs text-gray-500">Drukarka jest sprzedawana bez taśmy i kart. Taśma wystarcza na {fmtInt(300)} stron w kolorze.</p>
+          </div>
+          <div className="flex flex-col gap-2 border-t border-slate-100 px-5 py-4 sm:px-6 md:border-t-0 md:border-l md:items-end md:text-right">
+            <p className="text-2xl font-bold text-gray-900 tabular-nums leading-none">
+              {fmt(bundle.priceFrom)} zł <span className="text-sm font-normal text-gray-500">netto</span>
+            </p>
+            <p className="text-xs text-gray-500 tabular-nums">
+              {saving > 0 && <>zamiast <span className="line-through">{fmt(separately)} zł</span> · <span className="font-semibold text-green-700">oszczędzasz {fmt(saving)} zł</span></>}
+            </p>
+            <div className="mt-1 flex items-center gap-4 md:justify-end">
+              <BundleAddButton bundle={cartBundle} />
+              <Link href={`/produkt/${bundle.slug}`} className="text-sm font-medium text-gray-700 hover:text-blue-700 underline underline-offset-4 whitespace-nowrap">
+                Szczegóły
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
 
   return (
     <section id="zestaw-startowy" aria-labelledby="zestaw-startowy-h" className="rounded-2xl border border-slate-200 bg-white overflow-hidden">

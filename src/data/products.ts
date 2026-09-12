@@ -78,6 +78,8 @@ export interface Product {
   /** Zestaw (np. startowy do drukarki kart): składniki z ilościami; produkt zestawu ma własną, stałą cenę
    *  i trafia do koszyka jako jedna pozycja. Karta składnika (drukarki) pokazuje boks „Zestaw startowy”. */
   bundleItems?: { productId: string; quantity: number }[]
+  /** Niski baner zestawu na karcie drukarki (jeden wiersz, ~połowa wysokości pełnego banera). */
+  bundleBannerCompact?: boolean
   /** Bezpłatne oprogramowanie: zamiast koszyka przycisk „Pobierz” (plik w Vercel Blob, link przez /pobierz/[slug]) */
   download?: {
     url: string
@@ -46365,7 +46367,7 @@ Obudowa ma 179 mm szerokości, 309 mm głębokości i 208 mm wysokości, a całe
     // Film producenta (niemy, napisy EN) z polskim lektorem nagranym w ElevenLabs; plik w Vercel Blob (store takma-downloads)
     videos: [
       {
-        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-zawartosc-pudelka-pl.mp4',
+        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-zawartosc-pudelka-pl-v2.mp4',
         title: 'Co jest w pudełku Magicard 300: zasilacz, kabel USB, podajnik, odbiornik, karta czyszcząca (lektor po polsku, 1:03)',
         native: true,
         poster: '/images/products/magicard-300-zawartosc-pudelka-poster.webp',
@@ -48804,6 +48806,7 @@ Zestaw kosztuje mniej niż trzy pozycje kupione osobno i trafia do koszyka jako 
       { productId: 'magicard-mc300ymcko-s', quantity: 1 },
       { productId: 'acss-wf76-af', quantity: 1 },
     ],
+    bundleBannerCompact: true,
     images: ['/images/products/magicard-300-zestaw-startowy.png'],
     imageDescriptions: ['Zestaw startowy Magicard 300: drukarka, taśma YMCKO i karty PVC Premium'],
     tags: ['retail', 'healthcare'],
