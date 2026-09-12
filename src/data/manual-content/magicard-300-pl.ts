@@ -86,6 +86,13 @@ export const magicard300Pl: PolishManual = {
           ],
         },
         {
+          type: 'video',
+          src: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-podawanie-reczne-pl-v5.mp4',
+          poster: '/images/products/magicard-300-podawanie-reczne-poster.webp',
+          captions: '/video/napisy/magicard-300-podawanie-reczne-pl.vtt',
+          caption: 'Podawanie ręczne kart: włączenie trybu Hand feed w menu, druk pojedynczej karty z komputera i karty testowej. Film producenta z polskim lektorem, 1:39.',
+        },
+        {
           type: 'p',
           text: 'Menu serwisowe (Turn Rollers, Calibrate, Soak Test, Sensor Test) służy do diagnozy. Bez wyraźnej potrzeby nie zmieniaj w nim niczego. Wyjątek: **Calibrate** wykonuje się po wyjęciu taśmy, gdy drukarka nie rozpoznaje paneli koloru (błąd 5:2).',
         },
@@ -151,6 +158,13 @@ export const magicard300Pl: PolishManual = {
           type: 'p',
           text: 'Kod regionu ma znaczenie: taśmy dla Europy mają końcówkę /3. Taśma z rynku amerykańskiego (/2) nie zadziała i drukarka pokaże błąd 6:2. Do każdej oryginalnej taśmy dołączony jest nowy niebieski wałek czyszczący. Wszystkie taśmy do drukarek kart są w [osobnej kategorii](/tasmy-do-drukarek-kart).',
         },
+        {
+          type: 'video',
+          src: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-wymiana-tasmy-pl.mp4',
+          poster: '/images/products/magicard-300-wymiana-tasmy-poster.webp',
+          captions: '/video/napisy/magicard-300-wymiana-tasmy-pl.vtt',
+          caption: 'Wymiana taśmy: wyjęcie zużytych rolek, nowy niebieski wałek z prętem, założenie taśmy i zamknięcie pokrywy. Film producenta z polskim lektorem, 1:19.',
+        },
       ],
     },
     {
@@ -174,6 +188,13 @@ export const magicard300Pl: PolishManual = {
     {
       title: 'Pierwsze uruchomienie',
       blocks: [
+        {
+          type: 'video',
+          src: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-zawartosc-pudelka-pl.mp4',
+          poster: '/images/products/magicard-300-zawartosc-pudelka-poster.webp',
+          captions: '/video/napisy/magicard-300-zawartosc-pudelka-pl.vtt',
+          caption: 'Zawartość pudełka: zasilacz z kablem, kabel USB, podajnik na 100 kart, odbiornik na 70 kart, karta czyszcząca, skrócona instrukcja i dokument gwarancyjny. Film producenta z polskim lektorem, 1:03.',
+        },
         {
           type: 'list',
           ordered: true,
@@ -231,6 +252,13 @@ export const magicard300Pl: PolishManual = {
     {
       title: 'Czyszczenie',
       blocks: [
+        {
+          type: 'video',
+          src: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-czyszczenie-pl.mp4',
+          poster: '/images/products/magicard-300-czyszczenie-poster.webp',
+          captions: '/video/napisy/magicard-300-czyszczenie-pl.vtt',
+          caption: 'Czyszczenie Magicard 300 krok po kroku: karta czyszcząca, drugi przebieg odwróconą kartą, wymiana niebieskiego wałka. Film producenta z polskim lektorem, 2:42.',
+        },
         {
           type: 'p',
           text: 'Czyść drukarkę co 700 kart albo przy każdej wymianie taśmy, w zależności od tego, co nastąpi pierwsze. Brud pod głowicą to najczęstsza przyczyna białych kresek na kartach i przedwczesnego zużycia głowicy. Potrzebny jest [zestaw czyszczący 3633-0053](/produkt/magicard-zestaw-czyszczacy-3633-0053): dziesięć kart czyszczących i pisak z alkoholem izopropylowym.',

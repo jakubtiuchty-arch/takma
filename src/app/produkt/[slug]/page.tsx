@@ -41,6 +41,8 @@ import PrinterMaterialVariants from '@/components/product/PrinterMaterialVariant
 import VariantsTable from './VariantsTable'
 import StockInfo from './StockInfo'
 import SmartPrice from './SmartPrice'
+import { BundleContents } from './BundleBox'
+import BundleBanner from './BundleBanner'
 import PromoBanner from './PromoBanner'
 import PriceIncreaseNotice from './PriceIncreaseNotice'
 import { priceIncreaseFor } from '@/data/price-increase'
@@ -349,9 +351,16 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     .map((id) => products.find((p) => p.id === id))
     .filter(Boolean)
 
-  const relatedCards = allRelated.filter((p) => p!.subcategoryIds?.includes('karty-pcv'))
+  // Karty: dwie osobne sekcje (plastikowe bez chipu / zbliżeniowe), bo jedna lista „Karty PVC” była nieczytelna
+  const relatedPlainCards = allRelated.filter((p) => p!.subcategoryIds?.includes('karty-plastikowe'))
+  const relatedRfidCards = allRelated.filter((p) => p!.subcategoryIds?.includes('karty-zblizeniowe'))
   const relatedSoftware = allRelated.filter((p) => p!.categoryId === 'oprogramowanie')
   const relatedAccessories = allRelated.filter((p) => !p!.subcategoryIds?.includes('karty-pcv') && p!.categoryId !== 'oprogramowanie')
+
+  // Zestaw startowy: karta drukarki pokazuje boks zestawu, którego jest składnikiem (tylko urządzenia, nie taśmy/karty)
+  const starterBundle = product.categoryId === 'drukarki-kart' && !product.bundleItems
+    ? products.find((p) => p.bundleItems?.some((i) => i.productId === product.id))
+    : undefined
 
   // Karty PVC / zbliżeniowe: drukarki, do których pasują — odwrotność sekcji „Karty PVC” na karcie
   // drukarki (drukarka ma kartę w relatedAccessories), więc jedna lista w danych wystarcza
@@ -649,6 +658,81 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 </Link>
               )}
             </div>
+  )
+
+  const faqAndFilesJsx = (
+    <>
+            {/* FAQ */}
+            {product.faq && product.faq.length > 0 && (
+              <section id="faq">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">Najczęściej zadawane pytania</h2>
+                <div className="space-y-4">
+                  {product.faq.map((item, i) => (
+                    <details
+                      key={i}
+                      className="group bg-gray-50 rounded-xl overflow-hidden"
+                    >
+                      <summary className="flex items-center justify-between px-4 py-3 sm:px-6 sm:py-4 cursor-pointer hover:bg-gray-100 transition-colors">
+                        <h3 className="text-sm font-semibold text-gray-900 pr-4">{item.question}</h3>
+                        <ChevronRightIcon size={20} className="text-gray-400 flex-shrink-0 transition-transform group-open:rotate-90" />
+                      </summary>
+                      <div className="px-4 pb-3 sm:px-6 sm:pb-4">
+                        <p className="text-sm text-gray-600 leading-relaxed"><LinkedText text={item.answer} /></p>
+                      </div>
+                    </details>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Pliki do pobrania */}
+            {(downloads.length > 0 || manual) && (
+              <section id="pliki">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">Pliki do pobrania</h2>
+                {fileDownloads.length > 0 && (
+                  <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
+                    {fileDownloads.map((download, i) => (
+                      <DownloadCard key={i} download={download} />
+                    ))}
+                  </div>
+                )}
+
+                {/* Instrukcja obsługi — link do /instrukcje/[slug] */}
+                {manual && (
+                  <Link
+                    href={`/instrukcje/${manual.slug}`}
+                    className="flex items-center gap-3 p-4 rounded-xl border border-slate-200 hover:border-blue-300 hover:bg-slate-50 transition-colors group mt-3 sm:mt-4"
+                  >
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors shrink-0">
+                      <DownloadIcon size={24} />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <p className="font-medium text-gray-900">Instrukcja obsługi {product.name} (PDF)</p>
+                      <p className="text-sm text-gray-500">
+                        {manual.polishManual
+                          ? 'Szybki start, konfiguracja i obsługa po polsku — przeglądaj online lub pobierz'
+                          : `${manual.documents.map((d) => d.title).join(', ')} — przeglądaj online lub pobierz`}
+                      </p>
+                    </div>
+                    <ChevronRightIcon size={20} className="text-slate-400 group-hover:translate-x-0.5 transition-transform shrink-0" />
+                  </Link>
+                )}
+
+                {/* Sterowniki — osobna podsekcja */}
+                {driverDownloads.length > 0 && (
+                  <div id="sterowniki" className="mt-8">
+                    <h3 className="text-xl font-bold text-gray-900">Sterowniki</h3>
+                    <p className="mt-1 mb-4 text-sm text-gray-600">Wybierz wersję dla swojego systemu operacyjnego.</p>
+                    <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
+                      {driverDownloads.map((download, i) => (
+                        <DownloadCard key={i} download={download} />
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </section>
+            )}
+    </>
   )
 
   return (
@@ -952,13 +1036,29 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         <div className="mt-12 lg:mt-16">
           <div className="border-b border-gray-200">
             {/* Zakładki zawijają się do drugiego wiersza zamiast chować za krawędzią (ukryty scrollbar nie zdradzał, że jest więcej) */}
-            <nav className="flex flex-wrap gap-x-1 sm:gap-x-3 lg:gap-x-4 -mb-px">
+            <nav className="flex flex-nowrap overflow-x-auto scrollbar-hide gap-x-1 sm:gap-x-3 lg:gap-x-4 -mb-px">
               {showVariants && (
                 <a
                   href="#warianty"
                   className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-primary-600 border-b-2 border-primary-600 whitespace-nowrap"
                 >
                   Warianty
+                </a>
+              )}
+              {product.bundleItems && (
+                <a
+                  href="#w-zestawie"
+                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                >
+                  W zestawie
+                </a>
+              )}
+              {starterBundle && (
+                <a
+                  href="#zestaw-startowy"
+                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                >
+                  Zestaw startowy
                 </a>
               )}
               <a
@@ -1023,12 +1123,12 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   {product.categoryId === 'drukarki-kart' ? 'Taśmy' : product.categoryId === 'drukarki-opasek' ? 'Opaski' : 'Materiały eksploatacyjne'}
                 </a>
               )}
-              {relatedCards.length > 0 && (
+              {(relatedPlainCards.length > 0 || relatedRfidCards.length > 0) && (
                 <a
-                  href="#karty-pvc"
+                  href={relatedPlainCards.length > 0 ? '#karty-plastikowe' : '#karty-zblizeniowe'}
                   className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
-                  Karty PVC
+                  Karty
                 </a>
               )}
               {printersForCard.length > 0 && (
@@ -1085,6 +1185,14 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {/* Komplet na pierwszy wydruk tuż pod wyborem wariantu, nie za opisem i FAQ (audyt ZD-10) */}
             {product.starterKits && product.starterKits.length > 0 && (
               <StarterKits kits={product.starterKits} printerName={product.name} printerSlug={product.slug} />
+            )}
+
+            {/* Karta zestawu: skład z cenami osobno, nad opisem (nie w kolumnie ceny, żeby nie rozpychać CTA) */}
+            {product.bundleItems ? <BundleContents bundle={product} /> : null}
+
+            {/* Zestaw startowy drukarki kart: baner w tym samym miejscu co komplety drukarek etykiet */}
+            {starterBundle && (
+              <BundleBanner bundle={starterBundle} image={`/images/kits/${starterBundle.slug}.webp`} />
             )}
 
             {/* Opis — dla etykiet termicznych bogaty content z thermal-label-series */}
@@ -1258,14 +1366,28 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   {product.videos.map((v) => (
                     <figure key={v.url}>
                       <div className="aspect-video rounded-xl overflow-hidden bg-gray-100">
-                        <iframe
-                          src={v.url}
-                          className="w-full h-full"
-                          allowFullScreen
-                          allow="autoplay; fullscreen; picture-in-picture"
-                          title={v.title}
-                          loading="lazy"
-                        />
+                        {v.native ? (
+                          <video
+                            src={v.url}
+                            poster={v.poster}
+                            className="w-full h-full object-contain bg-black"
+                            controls
+                            preload="none"
+                            playsInline
+                            title={v.title}
+                          >
+                            {v.captions && <track kind="subtitles" src={v.captions} srcLang="pl" label="Polski" default />}
+                          </video>
+                        ) : (
+                          <iframe
+                            src={v.url}
+                            className="w-full h-full"
+                            allowFullScreen
+                            allow="autoplay; fullscreen; picture-in-picture"
+                            title={v.title}
+                            loading="lazy"
+                          />
+                        )}
                       </div>
                       <figcaption className="mt-2 text-sm text-gray-600">{v.title}</figcaption>
                     </figure>
@@ -1381,76 +1503,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               />
             )}
 
-            {/* FAQ */}
-            {product.faq && product.faq.length > 0 && (
-              <section id="faq" className={faqLast ? 'order-last' : undefined}>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Najczęściej zadawane pytania</h2>
-                <div className="space-y-4">
-                  {product.faq.map((item, i) => (
-                    <details
-                      key={i}
-                      className="group bg-gray-50 rounded-xl overflow-hidden"
-                    >
-                      <summary className="flex items-center justify-between px-4 py-3 sm:px-6 sm:py-4 cursor-pointer hover:bg-gray-100 transition-colors">
-                        <h3 className="text-sm font-semibold text-gray-900 pr-4">{item.question}</h3>
-                        <ChevronRightIcon size={20} className="text-gray-400 flex-shrink-0 transition-transform group-open:rotate-90" />
-                      </summary>
-                      <div className="px-4 pb-3 sm:px-6 sm:pb-4">
-                        <p className="text-sm text-gray-600 leading-relaxed"><LinkedText text={item.answer} /></p>
-                      </div>
-                    </details>
-                  ))}
-                </div>
-              </section>
-            )}
-
-            {/* Pliki do pobrania */}
-            {(downloads.length > 0 || manual) && (
-              <section id="pliki" className={faqLast ? 'order-last' : undefined}>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">Pliki do pobrania</h2>
-                {fileDownloads.length > 0 && (
-                  <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
-                    {fileDownloads.map((download, i) => (
-                      <DownloadCard key={i} download={download} />
-                    ))}
-                  </div>
-                )}
-
-                {/* Instrukcja obsługi — link do /instrukcje/[slug] */}
-                {manual && (
-                  <Link
-                    href={`/instrukcje/${manual.slug}`}
-                    className="flex items-center gap-3 p-4 rounded-xl border border-slate-200 hover:border-blue-300 hover:bg-slate-50 transition-colors group mt-3 sm:mt-4"
-                  >
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors shrink-0">
-                      <DownloadIcon size={24} />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <p className="font-medium text-gray-900">Instrukcja obsługi {product.name} (PDF)</p>
-                      <p className="text-sm text-gray-500">
-                        {manual.polishManual
-                          ? 'Szybki start, konfiguracja i obsługa po polsku — przeglądaj online lub pobierz'
-                          : `${manual.documents.map((d) => d.title).join(', ')} — przeglądaj online lub pobierz`}
-                      </p>
-                    </div>
-                    <ChevronRightIcon size={20} className="text-slate-400 group-hover:translate-x-0.5 transition-transform shrink-0" />
-                  </Link>
-                )}
-
-                {/* Sterowniki — osobna podsekcja */}
-                {driverDownloads.length > 0 && (
-                  <div id="sterowniki" className="mt-8">
-                    <h3 className="text-xl font-bold text-gray-900">Sterowniki</h3>
-                    <p className="mt-1 mb-4 text-sm text-gray-600">Wybierz wersję dla swojego systemu operacyjnego.</p>
-                    <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
-                      {driverDownloads.map((download, i) => (
-                        <DownloadCard key={i} download={download} />
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </section>
-            )}
+            {/* FAQ i pliki: przy faq-last renderowane fizycznie na końcu (czytnik ekranu i klawiatura = kolejność wizualna) */}
+            {!faqLast && faqAndFilesJsx}
 
             {/* Serwis gwarancyjny — urządzenia Zebra + akcesoria serwisowe (głowice, wałki, obcinaki, odklejaki) */}
             {product.manufacturerId === 'zebra' && (product.variants?.length || /głowic|wałek|wałk|obcinak|odklejak|cutter|dispenser|platen|printhead/i.test(product.name)) && (
@@ -1542,12 +1596,23 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               />
             )}
 
-            {/* Karty PVC */}
-            {relatedCards.length > 0 && (
+            {/* Karty plastikowe bez chipu */}
+            {relatedPlainCards.length > 0 && (
               <RelatedProducts
-                id="karty-pvc"
-                title="Karty PVC"
-                products={relatedCards as typeof products}
+                id="karty-plastikowe"
+                title="Karty plastikowe PVC"
+                products={relatedPlainCards as typeof products}
+                initialLimit={4}
+                showDualButtons
+              />
+            )}
+
+            {/* Karty zbliżeniowe RFID / NFC */}
+            {relatedRfidCards.length > 0 && (
+              <RelatedProducts
+                id="karty-zblizeniowe"
+                title="Karty zbliżeniowe RFID i NFC"
+                products={relatedRfidCards as typeof products}
                 initialLimit={4}
                 showDualButtons
               />
@@ -1593,12 +1658,14 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 initialLimit={4}
               />
             )}
+
+            {faqLast && faqAndFilesJsx}
           </div>
         </div>
       </div>
 
       {/* Stały pasek na telefonie: zakup wybranego wariantu z ceną, skrót do wariantów, telefon */}
-      <MobileCta product={product} hasVariants={showVariants} />
+      <MobileCta product={product} hasVariants={showVariants} bundle={starterBundle?.priceFrom ? { price: starterBundle.priceFrom, href: '#zestaw-startowy' } : undefined} />
 
       {/* Spacer for mobile sticky CTA */}
       <div className="h-20 lg:hidden" />

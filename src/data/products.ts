@@ -69,11 +69,15 @@ export interface Product {
   /** Lokalne wideo MP4 (np. z Remotion) — natywny odtwarzacz, nie iframe */
   videoFile?: string
   /** Kilka filmów (np. instrukcje producenta z YouTube) — sekcja „Wideo” pokazuje je w siatce */
-  videos?: { url: string; title: string }[]
+  /** Filmy na karcie: domyślnie iframe (YouTube/Vidyard); `native: true` = własny MP4 (np. z Vercel Blob) z plakatem. */
+  videos?: { url: string; title: string; native?: boolean; poster?: string; /** ścieżka do napisów WebVTT (pl) */ captions?: string }[]
   /** Obrót 360° w galerii: krótki MP4 bez dźwięku (pętla) + plakat na miniaturę. */
   spinVideo?: { file: string; poster: string }
   /** 'faq-last': FAQ i „Pliki do pobrania” na samym dole karty, za materiałami i akcesoriami (test UX na Magicard 300). */
   sectionOrder?: 'faq-last'
+  /** Zestaw (np. startowy do drukarki kart): składniki z ilościami; produkt zestawu ma własną, stałą cenę
+   *  i trafia do koszyka jako jedna pozycja. Karta składnika (drukarki) pokazuje boks „Zestaw startowy”. */
+  bundleItems?: { productId: string; quantity: number }[]
   /** Bezpłatne oprogramowanie: zamiast koszyka przycisk „Pobierz” (plik w Vercel Blob, link przez /pobierz/[slug]) */
   download?: {
     url: string
@@ -189,7 +193,7 @@ export const categories: Category[] = [
     seoDescription: 'Porównaj drukarki kart PVC Magicard Pronto100, 300 i 600 Duo oraz Zebra ZC100 i ZC300. Druk jedno- i dwustronny, taśmy, ceny netto i pomoc w doborze.',
     longDescription: 'Drukuj identyfikatory pracownicze, karty lojalnościowe i przepustki wtedy, gdy są potrzebne. W ofercie znajdziesz drukarki [Zebra](/zebra) ZC100 i ZC300 oraz [Magicard by Brady](/magicard): kompaktową Pronto100 i dwustronne modele 300 oraz 600 Duo. Wybierz druk jednej lub obu stron, a do urządzenia dobierz taśmę i zestaw czyszczący. Jeśli karta ma też otwierać drzwi, sprawdzimy z Tobą wymagania systemu kontroli dostępu i potrzebne kodowanie.',
     icon: 'printer',
-    productCount: 5,
+    productCount: 6,
   },
   {
     id: 'drukarki-opasek',
@@ -537,21 +541,49 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Oryginalne taśmy barwiące do drukarek kart Zebra oraz Magicard Pronto100, 300 i 600. Taśmy YMCKO, YMCKOK i monochromatyczne z warstwą Overlay.',
     longDescription: 'Taśmy barwiące do drukarek kart plastikowych są niezbędne do druku termosublimacyjnego na kartach PVC. Taśma YMCKO (Yellow-Magenta-Cyan-blacK-Overlay) służy do druku pełnokolorowego ze zdjęciami — panele barwne tworzą obraz, a panel Overlay nakłada przezroczystą warstwę ochronną. W tej kategorii znajdują się taśmy do drukarek Zebra ZC100, ZC300 i ZC350 oraz dedykowane materiały Magicard do modeli Pronto100, 300 i 600.',
     icon: 'tag',
-    productIds: ['zebra-ribbon-ymcko-zc', 'zebra-ribbon-black-zc', 'zebra-ribbon-white-zc', 'magicard-md100ymcko-s', 'magicard-md200ymcko-s', 'magicard-mc300ymcko-s', 'magicard-mc600ko-s', 'magicard-mb300ymcko-s', 'magicard-mb250ymckok-s', 'magicard-mb600ko-s', 'magicard-ma1000k-black', 'magicard-ma1000k-white', 'magicard-ma1000k-blue', 'magicard-ma1000k-green', 'magicard-ma1000k-red', 'magicard-ma1000k-silver', 'magicard-ma1000k-gold', 'magicard-ma1000k-scratch'],
-    productCount: 18,
+    productIds: ['zebra-ribbon-ymcko-zc', 'zebra-ribbon-black-zc', 'zebra-ribbon-white-zc', 'magicard-md100ymcko-s', 'magicard-md200ymcko-s', 'magicard-mc300ymcko-s', 'magicard-mc250ymcko-s', 'magicard-mc600ko-s', 'magicard-mb300ymcko-s', 'magicard-mb250ymckok-s', 'magicard-mb600ko-s', 'magicard-ma1000k-black', 'magicard-ma1000k-white', 'magicard-ma1000k-blue', 'magicard-ma1000k-green', 'magicard-ma1000k-red', 'magicard-ma1000k-silver', 'magicard-ma1000k-gold', 'magicard-ma1000k-scratch'],
+    productCount: 19,
   },
   {
     id: 'karty-pcv',
     slug: 'karty-pvc',
     name: 'Karty PVC',
     parentCategoryId: 'materialy-eksploatacyjne',
-    description: 'Karty plastikowe PVC do drukarek kart identyfikacyjnych i dostępowych',
-    seoTitle: 'Karty PVC i karty zbliżeniowe Unique | Karty do drukarek kart',
-    seoDescription: 'Karty PVC Zebra Premier oraz karty zbliżeniowe Unique 125 kHz do drukarek kart Zebra ZC100, ZC300 i Magicard. Białe karty do identyfikatorów, legitymacji i kart dostępu.',
-    longDescription: 'Karty PVC to plastikowe karty w formacie CR-80 (85,6 × 54 mm), na których drukarka kart nanosi identyfikator, legitymację albo kartę lojalnościową. W ofercie są zwykłe białe karty Zebra Premier o grubości 0,76 i 0,25 mm oraz karty zbliżeniowe: Unique 125 kHz do prostych systemów Roger i Satel, MIFARE 1K oraz DESFire EV1 i EV3 na 13,56 MHz tam, gdzie karta ma też zapisywać dane albo chronić dostęp szyfrowaniem, NTAG213 i NTAG216 do wizytówek NFC czytanych telefonem, a karty dualne z chipami 125 kHz i 13,56 MHz tam, gdzie parking i drzwi pracują na różnych czytnikach. Wszystkie są białe i zadrukowuje się je w tej samej drukarce, więc jedna karta jest jednocześnie identyfikatorem ze zdjęciem i kartą dostępu. Wszystkie pasują do drukarek Zebra ZC100, ZC300, ZC350 oraz Magicard Pronto100, 300 i 600 Duo.',
+    description: 'Karty plastikowe i zbliżeniowe do drukarek kart Magicard i Zebra ZC',
+    seoTitle: 'Karty PVC do drukarek kart: plastikowe i zbliżeniowe RFID | TAKMA',
+    seoDescription: 'Karty PVC CR-80 do drukarek Magicard i Zebra ZC: białe i kolorowe karty plastikowe od 38 gr/szt. oraz karty zbliżeniowe Unique, MIFARE, DESFire i NFC. Wysyłka z Wrocławia.',
+    longDescription: 'Karty PVC to plastikowe karty w formacie CR-80 (85,6 × 54 mm), na których drukarka kart nanosi identyfikator, legitymację albo kartę lojalnościową. Dzielimy je na dwie grupy. Karty plastikowe bez chipu: białe Standard i Premium, kolorowe, HoloPatch pod znak wodny Magicard i samoprzylepne do naklejania na grube karty dostępu. Karty zbliżeniowe z chipem: Unique 125 kHz do systemów Roger i Satel, MIFARE 1K oraz DESFire EV1 i EV3 na 13,56 MHz tam, gdzie karta ma zapisywać dane albo chronić dostęp szyfrowaniem, NTAG213 i NTAG216 czytane telefonem, a karty dualne z dwoma chipami tam, gdzie parking i drzwi pracują na różnych czytnikach. Wszystkie zadrukowuje się w tej samej drukarce: Zebra ZC100, ZC300, ZC350 albo Magicard Pronto100, 300 i 600 Duo.',
     icon: 'tag',
-    productIds: ['zebra-cards-premier-025', 'zebra-cards-premier-076', 'acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq'],
-    productCount: 18,
+    productIds: ['zebra-cards-premier-076', 'zebra-cards-premier-025', 'acss-ac-76s', 'acss-wf76-af', 'acss-hp6-76-gd-a', 'acss-pvc1-sa40', 'acss-si76-a-sc', 'acss-bk76-a-sc', 'acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq'],
+    productCount: 24,
+  },
+  {
+    id: 'karty-plastikowe',
+    slug: 'karty-plastikowe',
+    name: 'Karty plastikowe PVC',
+    parentCategoryId: 'materialy-eksploatacyjne',
+    parentSubcategoryId: 'karty-pcv',
+    description: 'Białe, kolorowe, HoloPatch i samoprzylepne karty PVC bez chipu, opakowania 100 i 500 szt.',
+    seoTitle: 'Karty plastikowe PVC do drukarek kart, białe i kolorowe | TAKMA',
+    seoDescription: 'Karty plastikowe PVC CR-80 0,76 mm bez chipu: białe Standard od 38 gr/szt., Premium Fotodek, srebrne, czarne, HoloPatch do Magicard i samoprzylepne. Do drukarek Magicard i Zebra ZC.',
+    longDescription: 'Karty plastikowe PVC bez chipu to podstawowy materiał do drukarki kart: identyfikatory, legitymacje, karty klubowe i lojalnościowe, wizytówki plastikowe. Wszystkie mają format CR-80 (85,6 × 54 mm) i standardową grubość 0,76 mm, czyli tyle, ile karta bankowa. Białe Standard kosztują niecałe 40 groszy za sztukę, Premium Fotodek dają równiejszy druk zdjęć i mniej brudzą głowicę, srebrne i czarne są barwione w masie i przeznaczone pod taśmy jednokolorowe. Karty HoloPatch mają złote pole, na którym znak wodny HoloKote z drukarki Magicard wygląda jak hologram. Karty samoprzylepne 0,40 mm drukuje się jak zwykłe, a potem nakleja na grube karty clamshell, których drukarka nie przyjmie. Do tego oryginalne karty Zebra Premier w opakowaniach po 500 sztuk.',
+    icon: 'tag',
+    productIds: ['zebra-cards-premier-076', 'zebra-cards-premier-025', 'acss-ac-76s', 'acss-wf76-af', 'acss-hp6-76-gd-a', 'acss-pvc1-sa40', 'acss-si76-a-sc', 'acss-bk76-a-sc'],
+    productCount: 8,
+  },
+  {
+    id: 'karty-zblizeniowe',
+    slug: 'karty-zblizeniowe',
+    name: 'Karty zbliżeniowe RFID i NFC',
+    parentCategoryId: 'materialy-eksploatacyjne',
+    parentSubcategoryId: 'karty-pcv',
+    description: 'Karty Unique 125 kHz, MIFARE, DESFire, NTAG i dualne do zadruku w drukarkach kart, sprzedaż na sztuki',
+    seoTitle: 'Karty zbliżeniowe RFID i NFC do zadruku: Unique, MIFARE, DESFire | TAKMA',
+    seoDescription: 'Karty zbliżeniowe PVC do drukarek kart: Unique 125 kHz od 1,85 zł, MIFARE 1K, DESFire EV1 i EV3, NTAG213/216 i dualne. Białe, do zadruku w Magicard i Zebra ZC, działają z Roger i Satel. Na sztuki, taniej od 100 szt.',
+    longDescription: 'Karty zbliżeniowe to białe karty PVC z chipem i anteną zalaminowanymi w środku. Z zewnątrz nie różnią się od zwykłej karty, więc drukarka nanosi na nie zdjęcie i dane tak samo, a jedna karta jest identyfikatorem i kluczem do drzwi. Unique 125 kHz ma numer tylko do odczytu i działa z systemami Roger, Satel i większością domofonów oraz szlabanów. MIFARE Classic 1K ma pamięć z zapisem: dostęp, rejestracja czasu pracy i stołówka na jednej karcie. DESFire EV1 i EV3 szyfrują dane AES i obsługują wiele aplikacji naraz: strefy chronione, e-legitymacje, karty miejskie. NTAG213 i NTAG216 czyta każdy telefon, więc nadają się na wizytówki NFC i linki do opinii. Karty dualne łączą chip 125 kHz i 13,56 MHz, gdy parking pracuje na starych czytnikach, a drzwi na nowych. Sprzedajemy na sztuki, a od 100 i od 1000 sztuk cena za sztukę spada.',
+    icon: 'tag',
+    productIds: ['acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq'],
+    productCount: 16,
   },
   // --- Podkategorie: Akcesoria do terminali mobilnych ---
   {
@@ -46224,7 +46256,7 @@ Obudowa ma 179 mm szerokości, 309 mm głębokości i 208 mm wysokości, a całe
     isNew: true,
     isBestseller: false,
     specifications: [
-      { name: 'Oprogramowanie', value: 'Magicard HUB — bezpłatny program producenta do instalacji drukarki i projektowania kart, do pobrania z naszej strony' },
+      { name: 'Oprogramowanie', value: 'Magicard HUB (Windows 10/11, 64-bit) — bezpłatny program producenta do instalacji drukarki i projektowania kart, do pobrania z naszej strony; sterowniki także dla macOS i Linuksa' },
       { name: 'Technologia druku', value: 'Bezpośrednio na karcie (direct-to-card); termosublimacja w kolorze, termotransfer w trybie mono' },
       { name: 'Druk jedno-/dwustronny', value: 'Jednostronny' },
       { name: 'Prędkość druku kolorowego', value: 'Do 200 kart/h (tryb szybki) lub 157 kart/h (tryb jakości HD)' },
@@ -46262,7 +46294,7 @@ Obudowa ma 179 mm szerokości, 309 mm głębokości i 208 mm wysokości, a całe
       },
     ],
     compatibleAccessories: ['magicard-md100ymcko-s', 'magicard-md200ymcko-s', ...magicardSharedMonochromeAccessoryIds],
-    relatedAccessories: ['magicard-e9100', 'acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq'],
+    relatedAccessories: ['magicard-e9100', 'acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq', 'acss-ac-76s', 'acss-wf76-af', 'acss-hp6-76-gd-a', 'acss-pvc1-sa40', 'acss-si76-a-sc', 'acss-bk76-a-sc'],
     faq: [
       { question: 'Czy Magicard Pronto100 drukuje dwustronnie?', answer: 'Nie, to model jednostronny. Jeśli nadruk ma znaleźć się także na odwrocie, kartę trzeba obrócić ręcznie. Przy regularnym druku po obu stronach lepiej wybrać drukarkę z automatycznym modułem dwustronnym.' },
       { question: 'Jak szybko drukuje Pronto100?', answer: 'Kolorowa karta w trybie szybkim powstaje w około 18 sekund, co daje do 200 kart na godzinę. W trybie jakości HD trwa to około 23 sekund. Przy druku monochromatycznym wydajność dochodzi do 766 kart na godzinę.' },
@@ -46330,6 +46362,37 @@ Obudowa ma 179 mm szerokości, 309 mm głębokości i 208 mm wysokości, a całe
     slug: 'magicard-300',
     spinVideo: { file: '/video/magicard-300-obrot-360.mp4', poster: '/images/products/magicard-300-obrot-360-poster.webp' },
     sectionOrder: 'faq-last',
+    // Film producenta (niemy, napisy EN) z polskim lektorem nagranym w ElevenLabs; plik w Vercel Blob (store takma-downloads)
+    videos: [
+      {
+        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-zawartosc-pudelka-pl.mp4',
+        title: 'Co jest w pudełku Magicard 300: zasilacz, kabel USB, podajnik, odbiornik, karta czyszcząca (lektor po polsku, 1:03)',
+        native: true,
+        poster: '/images/products/magicard-300-zawartosc-pudelka-poster.webp',
+        captions: '/video/napisy/magicard-300-zawartosc-pudelka-pl.vtt',
+      },
+      {
+        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-czyszczenie-pl.mp4',
+        title: 'Jak wyczyścić Magicard 300: karta czyszcząca, wymiana niebieskiego wałka (lektor po polsku, 2:42)',
+        native: true,
+        poster: '/images/products/magicard-300-czyszczenie-poster.webp',
+        captions: '/video/napisy/magicard-300-czyszczenie-pl.vtt',
+      },
+      {
+        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-podawanie-reczne-pl-v5.mp4',
+        title: 'Podawanie ręczne kart w Magicard 300: tryb Hand feed, druk pojedynczej karty i karta testowa (lektor po polsku, 1:39)',
+        native: true,
+        poster: '/images/products/magicard-300-podawanie-reczne-poster.webp',
+        captions: '/video/napisy/magicard-300-podawanie-reczne-pl.vtt',
+      },
+      {
+        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-wymiana-tasmy-pl.mp4',
+        title: 'Wymiana taśmy w Magicard 300: zużyte rolki, nowy niebieski wałek, założenie taśmy (lektor po polsku, 1:19)',
+        native: true,
+        poster: '/images/products/magicard-300-wymiana-tasmy-poster.webp',
+        captions: '/video/napisy/magicard-300-wymiana-tasmy-pl.vtt',
+      },
+    ],
     name: 'Magicard 300',
     shortDescription: 'Dwustronna drukarka kart PVC do firm i szkół. Przy druku jednostronnym osiąga do 160 kolorowych kart/h. Ma Ethernet, HoloKote i Digital Shredding',
     seoTitle: 'Magicard 300 Duo — dwustronna drukarka kart PVC',
@@ -46340,9 +46403,9 @@ Kolorowy nadruk powstaje bezpośrednio na karcie, w rozdzielczości 300 dpi i od
 
 Do podajnika można włożyć 100 kart, a odbiornik mieści 70 gotowych wydruków. Jeśli trzeba przygotować tylko jedną kartę, można podać ją ręcznie bez wyjmowania pozostałych. Obsługiwane są formaty CR-80 i CR-79 o grubości od 0,48 do 1,27 mm. Drukarka radzi sobie z kartami PVC, PET, PC, PVH i ABS, a także z kartami wielokrotnego zapisu.
 
-HoloKote nanosi na kartę znak wodny widoczny pod kątem. Do wyboru są trzy gotowe wzory, a w drukarce można zapisać również trzy własne, na przykład logo firmy. Na kartach HoloPatch znak jest jeszcze lepiej widoczny. Po zakończeniu drukowania funkcja Digital Shredding usuwa dane w sposób, który uniemożliwia ich późniejsze odzyskanie.
+HoloKote nanosi na kartę znak wodny widoczny pod kątem. Do wyboru są cztery gotowe wzory, a w drukarce można zapisać również cztery własne, na przykład logo firmy. Na kartach HoloPatch znak jest jeszcze lepiej widoczny. Po zakończeniu drukowania funkcja Digital Shredding usuwa dane w sposób, który uniemożliwia ich późniejsze odzyskanie.
 
-USB i Ethernet są w standardzie. Ustawienia można zmieniać z kolorowego ekranu LCD, również w menu po polsku. Magicard 300 działa z Windows, macOS i Linuksem z CUPS. Gwarancja producenta trwa 3 lata.`,
+USB i Ethernet są w standardzie. Ustawienia można zmieniać z kolorowego ekranu LCD, również w menu po polsku. Drukarka pracuje z Windows, macOS i Linuksem z CUPS przez sterownik producenta. Bezpłatny program Magicard HUB do projektowania kart działa w Windows 10 i 11; na Macu i Linuksie projekt przygotowuje się w innym programie i drukuje przez sterownik. Gwarancja producenta trwa 3 lata.`,
     categoryId: 'drukarki-kart',
     subcategoryIds: [],
     manufacturerId: 'magicard',
@@ -46365,14 +46428,14 @@ USB i Ethernet są w standardzie. Ustawienia można zmieniać z kolorowego ekran
       { name: 'Rozdzielczość', value: '300 dpi; druk od krawędzi do krawędzi' },
       { name: 'Druk jedno-/dwustronny', value: 'Dwustronny automatyczny (wariant Duo)' },
       { name: 'Prędkość druku kolorowego', value: 'Do 160 kart/h przy druku jednostronnym' },
-      { name: 'Prędkość druku monochromatycznego', value: '720–1000 kart/h przy druku jednostronnym, zależnie od grafiki' },
+      { name: 'Prędkość druku monochromatycznego', value: 'Do 720 kart/h przy druku jednostronnym' },
       { name: 'Format kart', value: 'CR-80 (85,6 × 54 mm) i CR-79 (83,9 × 52,1 mm)' },
       { name: 'Grubość kart', value: '0,48–1,27 mm' },
       { name: 'Materiały kart', value: 'PVC, PET, PC, PVH, ABS i karty wielokrotnego zapisu' },
       { name: 'Pojemność podajnika', value: '100 kart' },
       { name: 'Pojemność odbiornika', value: '70 kart' },
       { name: 'Podawanie ręczne', value: 'Tak, pojedyncza karta' },
-      { name: 'Zabezpieczenia wizualne', value: '3 standardowe i do 3 własnych wzorów HoloKote; HoloPatch opcjonalnie' },
+      { name: 'Zabezpieczenia wizualne', value: '4 standardowe i do 4 własnych wzorów HoloKote; HoloPatch opcjonalnie' },
       { name: 'Bezpieczeństwo danych', value: 'Digital Shredding' },
       { name: 'Łączność', value: 'USB i Ethernet' },
       { name: 'Panel obsługi', value: 'Kolorowy wyświetlacz LCD z menu w języku polskim' },
@@ -46398,17 +46461,17 @@ USB i Ethernet są w standardzie. Ustawienia można zmieniać z kolorowego ekran
         attributes: { 'Druk': 'Dwustronny', 'Ethernet': 'Tak', 'Region': 'Europa' },
       },
     ],
-    compatibleAccessories: ['magicard-mc300ymcko-s', 'magicard-mc600ko-s', ...magicardSharedMonochromeAccessoryIds],
-    relatedAccessories: ['magicard-3633-0053', 'acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq'],
+    compatibleAccessories: ['magicard-mc300ymcko-s', 'magicard-mc250ymcko-s', 'magicard-mc600ko-s', ...magicardSharedMonochromeAccessoryIds],
+    relatedAccessories: ['magicard-3633-0053', 'acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq', 'acss-ac-76s', 'acss-wf76-af', 'acss-hp6-76-gd-a', 'acss-pvc1-sa40', 'acss-si76-a-sc', 'acss-bk76-a-sc'],
     faq: [
       { question: 'Czy Magicard 300 drukuje dwustronnie?', answer: 'Tak. Oferowany wariant Magicard 300 S Duo automatycznie drukuje obie strony karty bez ręcznego obracania.' },
-      { question: 'Ile kart na godzinę drukuje Magicard 300?', answer: 'Przy druku jednostronnym drukarka osiąga do 160 kolorowych kart na godzinę lub 720–1000 kart z nadrukiem monochromatycznym, zależnie od grafiki. Druk obu stron karty wymaga więcej czasu.' },
+      { question: 'Ile kart na godzinę drukuje Magicard 300?', answer: 'Przy druku jednostronnym drukarka osiąga do 160 kolorowych kart na godzinę lub do 720 kart z nadrukiem monochromatycznym. Druk obu stron karty wymaga więcej czasu.' },
       { question: 'Do jakich nakładów nadaje się Magicard 300?', answer: 'Producent rekomenduje ten model organizacjom drukującym do około 10 000 zabezpieczonych kart rocznie.' },
       { question: 'Jak Magicard 300 zabezpiecza identyfikatory?', answer: 'Drukarka nanosi znak wodny HoloKote na całą powierzchnię karty. Ma trzy wzory standardowe i obsługuje do trzech własnych wzorów. Można też używać kart HoloPatch.' },
       { question: 'Czy Magicard 300 usuwa dane po wydruku?', answer: 'Tak. Funkcja Digital Shredding fragmentuje dane wykorzystane podczas wydruku, dzięki czemu nie pozostają w pamięci drukarki w postaci możliwej do odzyskania.' },
       { question: 'Czy Magicard 300 ma Ethernet?', answer: 'Tak. USB oraz Ethernet są wyposażeniem standardowym, więc drukarka może pracować przy jednym komputerze lub jako urządzenie sieciowe.' },
       { question: 'Jakie karty obsługuje Magicard 300?', answer: 'Drukarka obsługuje formaty CR-80 i CR-79 oraz karty o grubości od 0,48 do 1,27 mm. Może drukować na PVC i innych tworzywach, a także na kartach wielokrotnego zapisu.' },
-      { question: 'Jaka jest gwarancja na Magicard 300?', answer: 'Magicard 300 jest objęta 3-letnią gwarancją producenta, zgodnie z warunkami programu MagiCover.' },
+      { question: 'Jaka jest gwarancja na Magicard 300 i jak z niej skorzystać?', answer: 'Producent daje 3 lata gwarancji MagiCover na drukarkę. Głowica drukująca jest objęta gwarancją do 50 000 kart albo 250 000 paneli taśmy, zależnie od tego, co nastąpi wcześniej. Warunkiem jest rejestracja numeru seryjnego na stronie Magicard po zakupie (robi to klient, link jest w skróconej instrukcji w pudełku) oraz używanie oryginalnych taśm i regularne czyszczenie kartą czyszczącą co 700 kart. Usterkę zgłasza się do serwisu TAKMA we Wrocławiu, my prowadzimy naprawę gwarancyjną i kontakt z producentem.' },
     ],
     comparison: {
       title: 'Porównanie drukarek kart Magicard i Zebra',
@@ -46536,7 +46599,7 @@ USB, Ethernet i Wi-Fi są w standardzie. Magicard 600 Duo może więc pracować 
       },
     ],
     compatibleAccessories: ['magicard-mb300ymcko-s', 'magicard-mb250ymckok-s', 'magicard-mb600ko-s', ...magicardSharedMonochromeAccessoryIds],
-    relatedAccessories: ['magicard-3633-0053', 'acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq'],
+    relatedAccessories: ['magicard-3633-0053', 'acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq', 'acss-ac-76s', 'acss-wf76-af', 'acss-hp6-76-gd-a', 'acss-pvc1-sa40', 'acss-si76-a-sc', 'acss-bk76-a-sc'],
     faq: [
       { question: 'Czy Magicard 600 Duo drukuje dwustronnie?', answer: 'Tak. Wariant Duo automatycznie obraca kartę i drukuje jej drugą stronę bez ręcznego przekładania.' },
       { question: 'Jak szybko drukuje Magicard 600 Duo?', answer: 'Przy druku jednostronnym drukarka osiąga do 190 kolorowych kart na godzinę lub do 750 kart z nadrukiem monochromatycznym. Kolorowy nadruk jednej strony trwa około 19 sekund. Druk obu stron karty wymaga więcej czasu.' },
@@ -46570,7 +46633,7 @@ USB, Ethernet i Wi-Fi są w standardzie. Magicard 600 Duo może więc pracować 
             'Druk': 'Dwustronny',
             'Prędkość (kolor)': 'Do 160 kart/h jednostronnie',
             'Podajnik / odbiornik': '100 / 70 kart',
-            'Zabezpieczenia': '3 własne HoloKote, Digital Shredding',
+            'Zabezpieczenia': '4 własne HoloKote, Digital Shredding',
             'Łączność': 'USB, Ethernet',
             'Gwarancja': '3 lata',
           },
@@ -46660,7 +46723,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { partNumber: 'ZC11-0000Q00EM00', name: 'ZC100 USB + Zestaw startowy', priceFrom: 3704.06, availability: 'available', attributes: { 'CardStudio': 'Tak', 'Taśma YMCKO': 'Tak', 'Karty PVC': '200 szt.' } },
     ],
     compatibleAccessories: ['zebra-ribbon-ymcko-zc', 'zebra-ribbon-black-zc', 'zebra-ribbon-white-zc'],
-    relatedAccessories: ['zebra-cards-premier-025', 'zebra-cards-premier-076', 'zebra-cardstudio', 'acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq'],
+    relatedAccessories: ['zebra-cards-premier-025', 'zebra-cards-premier-076', 'zebra-cardstudio', 'acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq', 'acss-ac-76s', 'acss-wf76-af', 'acss-hp6-76-gd-a', 'acss-pvc1-sa40', 'acss-si76-a-sc', 'acss-bk76-a-sc'],
     faq: [
       { question: 'Czym różni się Zebra ZC100 od ZC300?', answer: 'ZC100 to model entry-level — wyłącznie jednostronny, bez opcji Wi-Fi i kodowania RFID. ZC300 oferuje druk dwustronny, enkodery RFID/smart card, Wi-Fi i większą elastyczność konfiguracji. ZC100 jest idealny do małych nakładów (do 500 kart/rok), ZC300 do średnich i dużych.' },
       { question: 'Ile kosztuje wydruk jednej karty na ZC100?', answer: 'Druk kolorowy YMCKO: taśma 800300-250EM (200 wydruków) ok. 146 zł → 0,73 zł/odcisk + karta PVC blank ok. 0,50 zł = ok. 1,23 zł/karta. Mono czarny: taśma 800300-301 (1500 wydruków) ok. 77 zł → 0,05 zł/odcisk + karta = ok. 0,55 zł/karta.' },
@@ -46789,7 +46852,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { partNumber: 'ZC32-000W000EM00', name: 'ZC300 dwustr. + Wi-Fi', priceFrom: 6088.50, availability: 'available', attributes: { 'Druk dwustronny': 'Tak', 'Wi-Fi': 'Tak' } },
     ],
     compatibleAccessories: ['zebra-ribbon-ymcko-zc', 'zebra-ribbon-black-zc', 'zebra-ribbon-white-zc'],
-    relatedAccessories: ['zebra-cards-premier-025', 'zebra-cards-premier-076', 'zebra-cardstudio', 'acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq'],
+    relatedAccessories: ['zebra-cards-premier-025', 'zebra-cards-premier-076', 'zebra-cardstudio', 'acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq', 'acss-ac-76s', 'acss-wf76-af', 'acss-hp6-76-gd-a', 'acss-pvc1-sa40', 'acss-si76-a-sc', 'acss-bk76-a-sc'],
     faq: [
       { question: 'Czy ZC300 drukuje dwustronnie?', answer: 'Tak, ale tylko w wersji Dual-sided (ZC32-xxx). Wersja Single-sided (ZC31-xxx) drukuje wyłącznie jednostronnie. Druk dwustronny YMCKO: ok. 120 kart/h (30 s/karta).' },
       { question: 'Jakie kodowanie RFID obsługuje ZC300?', answer: 'Enkoder RFID/NFC w ZC300 obsługuje: Mifare Classic 1K/4K, Mifare DESFire EV1/EV2/EV3, NTAG 213/215/216, HID iCLASS SE, HID Prox (125 kHz), SEOS. Kodowanie odbywa się równocześnie z drukiem — w jednym przejściu.' },
@@ -46913,7 +46976,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { partNumber: 'ZC36-FM0C000EM00', name: 'ZC350 dwustr. + Mag + RFID UHF', availability: 'on-order', attributes: { 'Druk dwustronny': 'Tak', 'Koder magnetyczny': 'Tak', 'RFID UHF': 'Tak' } },
     ],
     compatibleAccessories: ['zebra-ribbon-ymcko-zc', 'zebra-ribbon-black-zc', 'zebra-ribbon-white-zc'],
-    relatedAccessories: ['zebra-cards-premier-025', 'zebra-cards-premier-076', 'zebra-cardstudio', 'acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq'],
+    relatedAccessories: ['zebra-cards-premier-025', 'zebra-cards-premier-076', 'zebra-cardstudio', 'acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq', 'acss-ac-76s', 'acss-wf76-af', 'acss-hp6-76-gd-a', 'acss-pvc1-sa40', 'acss-si76-a-sc', 'acss-bk76-a-sc'],
     faq: [
       { question: 'Czym różni się ZC350 od ZC300?', answer: 'ZC350 obsługuje taśmy specialty (UV fluorescencyjne, holograficzne, scratch-off) do kart z zabezpieczeniami. Dodatkowo ZC350 oferuje kodowanie RFID UHF (EPC Gen2, zasięg do 6 m) — niedostępne w ZC300. Pod względem prędkości druku, rozdzielczości i formy fizycznej oba modele są identyczne.' },
       { question: 'Do czego potrzebuję taśm specialty?', answer: 'Taśmy UV fluorescencyjne — weryfikacja autentyczności karty pod lampą UV (kontrola na wejściu, karty rządowe). Taśmy holograficzne — zabezpieczenie karty przed kopiowaniem (karty do data center, strefy restricted). Scratch-off — karty zdrapki z ukrytym kodem (karty podarunkowe, PIN-y).' },
@@ -47367,6 +47430,44 @@ Jedna taśma wystarcza na 250 kart zadrukowanych po obu stronach. W zestawie zna
     sameAs: 'https://www.magicard.com.pl/karta/100/',
   },
   {
+    id: 'magicard-mc250ymcko-s',
+    slug: 'magicard-tasma-ymckok-300-250-mc250ymcko-s',
+    name: 'Taśma kolorowa YMCKOK Magicard 300 — 250 wydruków dwustronnych',
+    shortDescription: 'Oryginalna taśma YMCKOK do Magicard 300 Duo: kolorowy przód, czarny nadruk na odwrocie i 250 kompletów kart',
+    seoTitle: 'Taśma YMCKOK Magicard 300 Duo | MC250YMCKO/S',
+    seoDescription: 'Oryginalna taśma Magicard MC250YMCKO/S do Magicard 300 Duo. 250 kart dwustronnych: kolorowy przód, czarny rewers i warstwa Overlay.',
+    description: `Oryginalna taśma YMCKOK do dwustronnej drukarki Magicard 300 Duo. Na przedniej stronie karty drukuje zdjęcie i grafikę w kolorze, a na odwrocie czarny tekst, numer lub kod kreskowy. Panel Overlay zabezpiecza kolorową stronę przed ścieraniem. To najbardziej opłacalny wybór do identyfikatorów z danymi na rewersie: taśma kolorowa YMCKO zużywa na drugą stronę cały komplet paneli, YMCKOK tylko jeden czarny.
+
+Jedna taśma wystarcza na 250 kart zadrukowanych po obu stronach. W zestawie znajduje się nowy niebieski wałek czyszczący. Numer katalogowy: MC250YMCKO/S.`,
+    categoryId: 'materialy-eksploatacyjne',
+    subcategoryIds: ['tasmy-do-drukarek-kart'],
+    manufacturerId: 'magicard',
+    priceFrom: 335,
+    images: ['/images/products/magicard-mc250ymcko-s.jpeg'],
+    imageDescriptions: ['Taśma kolorowa YMCKOK Magicard MC250YMCKO/S z rolką czyszczącą'],
+    tags: ['retail'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Typ taśmy', value: 'YMCKOK (Yellow, Magenta, Cyan, Black, Overlay, Black)' },
+      { name: 'Wydajność', value: '250 wydruków dwustronnych' },
+      { name: 'Układ nadruku', value: 'Przód pełnokolorowy z Overlay, tył czarny' },
+      { name: 'Kompatybilność', value: 'Magicard 300 Duo' },
+      { name: 'Zawartość zestawu', value: 'Taśma YMCKOK i wałek czyszczący' },
+      { name: 'Part Number', value: 'MC250YMCKO/S' },
+    ],
+    applications: ['Dwustronne identyfikatory pracownicze', 'Legitymacje z informacjami na rewersie', 'Karty dostępu z kodem kreskowym na odwrocie'],
+    compatibleAccessories: [],
+    faq: [
+      { question: 'Do jakiej drukarki pasuje taśma MC250YMCKO/S?', answer: 'Do dwustronnej drukarki Magicard 300 Duo. Do Magicard 600 Duo jest odpowiednik MB250YMCKOK/S, a do Pronto100 taśmy z serii MD.' },
+      { question: 'Czym różni się YMCKOK od YMCKO przy druku dwustronnym?', answer: 'YMCKO na każdą stronę zużywa pełny komplet paneli, więc taśma na 300 wydruków daje 150 kart dwustronnych. YMCKOK ma dodatkowy czarny panel na rewers: 250 kart dwustronnych z jednej taśmy, o ile tył karty jest czarno-biały.' },
+      { question: 'Ile kart można wydrukować z jednej taśmy?', answer: 'Taśma wystarcza na 250 kompletnych kart zadrukowanych po obu stronach.' },
+    ],
+    downloads: [],
+    createdAt: '2026-09-12',
+  },
+  {
     id: 'magicard-mb600ko-s',
     slug: 'magicard-tasma-czarna-overlay-600-mb600ko-s',
     name: 'Taśma czarna KO Magicard 600 — 600 wydruków',
@@ -47575,7 +47676,7 @@ const pvcCards: Product[] = [
     shortDescription: 'Karty PVC Zebra Premier 0,25 mm — karty plastikowe Zebra Premier PVC CR-80, grubość 0,25 mm (10 mil), opakowanie 500 szt.',
     description: `Oryginalne karty plastikowe Zebra Premier PVC w standardowym formacie CR-80 (85,6 × 54 mm) o grubości 0,25 mm (10 mil). Cieńsze od standardowych kart 0,76 mm — idealne do kart tymczasowych, identyfikatorów gości i kart lojalnościowych. Białe, dwustronne, do druku termosublimacyjnego. Opakowanie: 500 szt. Part Number: 104523-210. Kompatybilne z drukarkami Zebra ZC100, ZC300, ZC350, ZXP Series 7.`,
     categoryId: 'materialy-eksploatacyjne',
-    subcategoryIds: ['karty-pcv'],
+    subcategoryIds: ['karty-plastikowe', 'karty-pcv'],
     manufacturerId: 'zebra',
     priceFrom: 174.64,
     images: ['/images/products/104523-210.png'],
@@ -47605,7 +47706,7 @@ const pvcCards: Product[] = [
     shortDescription: 'Karty PVC Zebra Premier 0,76 mm — karty plastikowe Zebra Premier PVC CR-80, grubość 0,76 mm (30 mil), opakowanie 500 szt.',
     description: `Oryginalne karty plastikowe Zebra Premier PVC w standardowym formacie CR-80 (85,6 × 54 mm) o standardowej grubości 0,76 mm (30 mil). Najpopularniejsza grubość — identyczna jak karty bankowe i kredytowe. Białe, dwustronne, do druku termosublimacyjnego. Opakowanie: 500 szt. Part Number: 104523-111. Kompatybilne z drukarkami Zebra ZC100, ZC300, ZC350, ZXP Series 7.`,
     categoryId: 'materialy-eksploatacyjne',
-    subcategoryIds: ['karty-pcv'],
+    subcategoryIds: ['karty-plastikowe', 'karty-pcv'],
     manufacturerId: 'zebra',
     priceFrom: 148.93,
     images: ['/images/products/104523-111.png'],
@@ -47637,7 +47738,7 @@ const pvcCards: Product[] = [
 
 To wersja dla tych, którzy nie chcą numeru na karcie. Identyfikator ze zdjęciem wygląda wtedy czysto, a numer do systemu odczytuje się czytnikiem przy rejestracji karty. Drukarki Magicard i Zebra ZC drukują na niej bez żadnych zmian w ustawieniach. Sprzedajemy na sztuki, a od 100 i od 1000 sztuk cena za sztukę spada.`,
     categoryId: 'materialy-eksploatacyjne',
-    subcategoryIds: ['karty-pcv'],
+    subcategoryIds: ['karty-zblizeniowe', 'karty-pcv'],
     manufacturerId: 'acss',
     priceFrom: 1.85,
     priceTiers: [
@@ -47686,7 +47787,7 @@ To wersja dla tych, którzy nie chcą numeru na karcie. Identyfikator ze zdjęci
 
 Poza tym to zwykła karta do zadruku: 85,6 × 54 mm, grubość 0,76 mm, PVC, obie strony gładkie. Drukarki Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300 drukują na niej jak na każdej innej karcie. Przy projektowaniu warto zostawić wolny pasek na dole, żeby grafika nie zakryła numeru. Sprzedajemy na sztuki, a od 100 i od 1000 sztuk cena za sztukę spada.`,
     categoryId: 'materialy-eksploatacyjne',
-    subcategoryIds: ['karty-pcv'],
+    subcategoryIds: ['karty-zblizeniowe', 'karty-pcv'],
     manufacturerId: 'acss',
     priceFrom: 1.85,
     priceTiers: [
@@ -47735,7 +47836,7 @@ Poza tym to zwykła karta do zadruku: 85,6 × 54 mm, grubość 0,76 mm, PVC, obi
 
 Format i grubość są standardowe: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Nadaje się do zadruku w drukarkach Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300, na przykład jako legitymacja szkolna albo identyfikator pracownika, który jednocześnie otwiera drzwi. Numer jest w prawym dolnym rogu, projekt karty powinien omijać to miejsce. Sprzedajemy na sztuki, a od 100 i od 1000 sztuk cena za sztukę spada.`,
     categoryId: 'materialy-eksploatacyjne',
-    subcategoryIds: ['karty-pcv'],
+    subcategoryIds: ['karty-zblizeniowe', 'karty-pcv'],
     manufacturerId: 'acss',
     priceFrom: 1.85,
     priceTiers: [
@@ -47784,7 +47885,7 @@ Format i grubość są standardowe: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu st
 
 Do zadruku to zwykła karta: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Drukarki Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300 drukują na niej jak na każdej innej. Karta jest bez nadrukowanego numeru, numer na zamówienie. Sprzedajemy na sztuki, a od 100 i od 1000 sztuk cena za sztukę spada.`,
     categoryId: 'materialy-eksploatacyjne',
-    subcategoryIds: ['karty-pcv'],
+    subcategoryIds: ['karty-zblizeniowe', 'karty-pcv'],
     manufacturerId: 'acss',
     priceFrom: 1.8,
     priceTiers: [
@@ -47835,7 +47936,7 @@ Do zadruku to zwykła karta: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Dr
 
 Do zadruku to zwykła karta: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Drukarki Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300 drukują na niej jak na każdej innej, a Zebra ZC300 z koderem RFID może ją od razu zaprogramować. Karta bez nadrukowanego numeru, numer na zamówienie. Sprzedajemy na sztuki, a od 100 i od 1000 sztuk cena za sztukę spada.`,
     categoryId: 'materialy-eksploatacyjne',
-    subcategoryIds: ['karty-pcv'],
+    subcategoryIds: ['karty-zblizeniowe', 'karty-pcv'],
     manufacturerId: 'acss',
     priceFrom: 8.7,
     priceTiers: [
@@ -47885,7 +47986,7 @@ Do zadruku to zwykła karta: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Dr
 
 Do zadruku to zwykła karta: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Drukarki Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300 drukują na niej jak na każdej innej, a Zebra ZC300 z koderem RFID może ją od razu zaprogramować. Karta bez nadrukowanego numeru, numer na zamówienie. Sprzedajemy na sztuki, a od 100 i od 1000 sztuk cena za sztukę spada.`,
     categoryId: 'materialy-eksploatacyjne',
-    subcategoryIds: ['karty-pcv'],
+    subcategoryIds: ['karty-zblizeniowe', 'karty-pcv'],
     manufacturerId: 'acss',
     priceFrom: 11.95,
     priceTiers: [
@@ -47935,7 +48036,7 @@ Do zadruku to zwykła karta: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Dr
 
 Do zadruku to zwykła karta: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Drukarki Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300 drukują na niej jak na każdej innej, a Zebra ZC300 z koderem RFID może ją od razu zaprogramować. Karta bez nadrukowanego numeru, numer na zamówienie. Sprzedajemy na sztuki, a od 100 i od 1000 sztuk cena za sztukę spada.`,
     categoryId: 'materialy-eksploatacyjne',
-    subcategoryIds: ['karty-pcv'],
+    subcategoryIds: ['karty-zblizeniowe', 'karty-pcv'],
     manufacturerId: 'acss',
     priceFrom: 11.9,
     priceTiers: [
@@ -47985,7 +48086,7 @@ Do zadruku to zwykła karta: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Dr
 
 Do zadruku to zwykła karta: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Drukarki Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300 drukują na niej jak na każdej innej, a Zebra ZC300 z koderem RFID może ją od razu zaprogramować. Karta bez nadrukowanego numeru, numer na zamówienie. Sprzedajemy na sztuki, a od 100 i od 1000 sztuk cena za sztukę spada.`,
     categoryId: 'materialy-eksploatacyjne',
-    subcategoryIds: ['karty-pcv'],
+    subcategoryIds: ['karty-zblizeniowe', 'karty-pcv'],
     manufacturerId: 'acss',
     priceFrom: 11.3,
     priceTiers: [
@@ -48038,7 +48139,7 @@ Do zadruku to zwykła karta: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Dr
 
 Do zadruku to zwykła karta: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Drukarki Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300 drukują na niej jak na każdej innej, a Zebra ZC300 z koderem RFID może ją od razu zaprogramować. Karta bez nadrukowanego numeru, numer na zamówienie. Sprzedajemy na sztuki, a od 100 i od 1000 sztuk cena za sztukę spada.`,
     categoryId: 'materialy-eksploatacyjne',
-    subcategoryIds: ['karty-pcv'],
+    subcategoryIds: ['karty-zblizeniowe', 'karty-pcv'],
     manufacturerId: 'acss',
     priceFrom: 12.45,
     priceTiers: [
@@ -48091,7 +48192,7 @@ Do zadruku to zwykła karta: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Dr
 
 Do zadruku to zwykła karta: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Drukarki Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300 drukują na niej jak na każdej innej, a Zebra ZC300 z koderem RFID może ją od razu zaprogramować. Karta bez nadrukowanego numeru, numer na zamówienie. Sprzedajemy na sztuki, a od 100 i od 1000 sztuk cena za sztukę spada.`,
     categoryId: 'materialy-eksploatacyjne',
-    subcategoryIds: ['karty-pcv'],
+    subcategoryIds: ['karty-zblizeniowe', 'karty-pcv'],
     manufacturerId: 'acss',
     priceFrom: 12.5,
     priceTiers: [
@@ -48144,7 +48245,7 @@ Do zadruku to zwykła karta: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Dr
 
 Najczęściej używana jako wizytówka NFC, karta do opinii Google w lokalu, karta lojalnościowa z linkiem do aplikacji albo identyfikator na wydarzeniu. Do zadruku to zwykła karta: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Drukarki Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300 drukują na niej jak na każdej innej. Karta bez nadrukowanego numeru. Sprzedajemy na sztuki, a od 100 i od 1000 sztuk cena za sztukę spada.`,
     categoryId: 'materialy-eksploatacyjne',
-    subcategoryIds: ['karty-pcv'],
+    subcategoryIds: ['karty-zblizeniowe', 'karty-pcv'],
     manufacturerId: 'acss',
     priceFrom: 2.3,
     priceTiers: [
@@ -48195,7 +48296,7 @@ Najczęściej używana jako wizytówka NFC, karta do opinii Google w lokalu, kar
 
 Wybiera się ją tam, gdzie NTAG213 jest za mała: wizytówki z kompletem danych, karty produktu z opisem i linkami, identyfikatory na wydarzenia z programem, karty informacyjne w hotelach. Do zadruku to zwykła karta: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Drukarki Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300 drukują na niej jak na każdej innej. Karta bez nadrukowanego numeru. Sprzedajemy na sztuki, a od 100 i od 1000 sztuk cena za sztukę spada.`,
     categoryId: 'materialy-eksploatacyjne',
-    subcategoryIds: ['karty-pcv'],
+    subcategoryIds: ['karty-zblizeniowe', 'karty-pcv'],
     manufacturerId: 'acss',
     priceFrom: 3.55,
     priceTiers: [
@@ -48246,7 +48347,7 @@ Wybiera się ją tam, gdzie NTAG213 jest za mała: wizytówki z kompletem danych
 
 Do zadruku to zwykła karta: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Drukarki Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300 drukują na niej jak na każdej innej. Karta bez nadrukowanego numeru, numer na zamówienie. Sprzedajemy na sztuki, a od 100 i od 1000 sztuk cena za sztukę spada.`,
     categoryId: 'materialy-eksploatacyjne',
-    subcategoryIds: ['karty-pcv'],
+    subcategoryIds: ['karty-zblizeniowe', 'karty-pcv'],
     manufacturerId: 'acss',
     priceFrom: 3.35,
     priceTiers: [
@@ -48296,7 +48397,7 @@ Do zadruku to zwykła karta: 85,6 × 54 mm, 0,76 mm, PVC, biała z obu stron. Dr
 
 Do zadruku to zwykła karta: 85,6 × 54 mm, PVC, biała z obu stron, 0,76 mm grubości. Drukarki Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300 drukują na niej jak na każdej innej, a Zebra ZC300 z koderem RFID może od razu zaprogramować część DESFire. Karta bez nadrukowanego numeru, numer na zamówienie. Sprzedajemy na sztuki, a od 100 i od 1000 sztuk cena za sztukę spada.`,
     categoryId: 'materialy-eksploatacyjne',
-    subcategoryIds: ['karty-pcv'],
+    subcategoryIds: ['karty-zblizeniowe', 'karty-pcv'],
     manufacturerId: 'acss',
     priceFrom: 16.2,
     priceTiers: [
@@ -48346,7 +48447,7 @@ Do zadruku to zwykła karta: 85,6 × 54 mm, PVC, biała z obu stron, 0,76 mm gru
 
 Do zadruku to zwykła karta: 85,6 × 54 mm, PVC, biała z obu stron, 0,80 mm grubości. Drukarki Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300 drukują na niej jak na każdej innej, a Zebra ZC300 z koderem RFID może od razu zaprogramować część DESFire. Karta bez nadrukowanego numeru, numer na zamówienie. Sprzedajemy na sztuki, a od 100 i od 1000 sztuk cena za sztukę spada.`,
     categoryId: 'materialy-eksploatacyjne',
-    subcategoryIds: ['karty-pcv'],
+    subcategoryIds: ['karty-zblizeniowe', 'karty-pcv'],
     manufacturerId: 'acss',
     priceFrom: 17.7,
     priceTiers: [
@@ -48397,7 +48498,7 @@ Do zadruku to zwykła karta: 85,6 × 54 mm, PVC, biała z obu stron, 0,80 mm gru
 
 Do zadruku to zwykła karta: 85,6 × 54 mm, PVC, biała z obu stron, 0,80 mm grubości. Drukarki Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300 drukują na niej jak na każdej innej, a Zebra ZC300 z koderem RFID może od razu zaprogramować część DESFire. Karta bez nadrukowanego numeru, numer na zamówienie. Sprzedajemy na sztuki, a od 100 i od 1000 sztuk cena za sztukę spada.`,
     categoryId: 'materialy-eksploatacyjne',
-    subcategoryIds: ['karty-pcv'],
+    subcategoryIds: ['karty-zblizeniowe', 'karty-pcv'],
     manufacturerId: 'acss',
     priceFrom: 18.05,
     priceTiers: [
@@ -48439,6 +48540,305 @@ Do zadruku to zwykła karta: 85,6 × 54 mm, PVC, biała z obu stron, 0,80 mm gru
     ],
     downloads: [],
     createdAt: '2026-09-09',
+  },
+  {
+    id: 'acss-ac-76s',
+    slug: 'karty-pvc-standard-biale-ac-76s',
+    name: 'Karty PVC białe Standard 0,76 mm, 100 szt. (AC-76S)',
+    shortDescription: 'Śnieżnobiałe karty PVC CR-80 o grubości 0,76 mm, bez chipu, do zadruku w drukarkach Magicard i Zebra ZC. Najtańsza karta w ofercie, opakowanie 100 sztuk.',
+    description: `Zwykła biała karta plastikowa do drukarki kart: 85,6 × 54 mm, grubość 0,76 mm, czyli tyle, ile ma karta bankowa. Bez chipu i bez paska magnetycznego, obie strony gładkie i gotowe do zadruku termosublimacyjnego. To karta do codziennych identyfikatorów, kart klubowych, przepustek gości i wszystkiego, co nie musi otwierać drzwi.
+
+Drukarki Magicard Pronto100, 300 i 600 Duo oraz Zebra ZC100 i ZC300 przyjmują ją bez zmian w ustawieniach. Jedna karta kosztuje niecałe 40 groszy, więc przy pierwszych wdrożeniach i testach projektu warto zacząć właśnie od niej. Opakowanie ma 100 sztuk.`,
+    categoryId: 'materialy-eksploatacyjne',
+    subcategoryIds: ['karty-plastikowe', 'karty-pcv'],
+    manufacturerId: 'acss',
+    priceFrom: 38.15,
+    images: ['/images/products/acss-ac-76s.png'],
+    imageDescriptions: ['Białe karty PVC Standard, opakowanie 100 sztuk'],
+    tags: ['retail'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Rodzaj karty', value: 'Zwykła PVC bez chipu, do zadruku' },
+      { name: 'Format', value: 'CR-80 (85,6 × 54 mm) ISO 7810 ID-1' },
+      { name: 'Grubość', value: '0,76 mm (30 mil)' },
+      { name: 'Materiał', value: 'PVC 100%' },
+      { name: 'Kolor', value: 'Śnieżnobiały, obie strony do zadruku' },
+      { name: 'Powierzchnia', value: 'Gładka, standardowa' },
+      { name: 'Chip / pasek magnetyczny', value: 'Brak' },
+      { name: 'Opakowanie', value: '100 szt.' },
+      { name: 'Part Number', value: 'AC-76S' },
+      { name: 'Kompatybilność', value: 'Magicard Pronto100, Magicard 300, Magicard 600 Duo, Zebra ZC100, Zebra ZC300, Zebra ZC350' },
+    ],
+    applications: ['Identyfikatory pracownicze i gościnne', 'Karty klubowe i lojalnościowe', 'Legitymacje bez kontroli dostępu', 'Testy projektu przed drukiem na kartach z chipem', 'Karty rabatowe i podarunkowe'],
+    compatibleAccessories: [],
+    faq: [
+      { question: 'Czym różni się karta Standard od Premium?', answer: 'Standard ma zwykłą gładką powierzchnię i kosztuje mniej. Premium ma powierzchnię Fotodek w ciepłym odcieniu bieli, na której kolory wychodzą równiej i głowica mniej się brudzi. Do identyfikatorów z tekstem i logo Standard w zupełności wystarcza. Przy zdjęciach na całą kartę różnica jest widoczna.' },
+      { question: 'Czy ta karta działa z systemem kontroli dostępu?', answer: 'Nie, to karta bez chipu. Do drzwi, szlabanów i rejestratorów czasu pracy potrzebna jest karta zbliżeniowa Unique albo MIFARE z kategorii Karty zbliżeniowe RFID i NFC.' },
+      { question: 'Czy drukarka Magicard wydrukuje na niej znak wodny HoloKote?', answer: 'Tak, HoloKote nanosi się warstwą ochronną taśmy na każdą białą kartę. Jeśli znak ma być wyraźnie widoczny jak hologram, potrzebna jest karta HoloPatch ze złotym polem.' },
+    ],
+    downloads: [],
+    createdAt: '2026-09-12',
+  },
+  {
+    id: 'acss-wf76-af',
+    slug: 'karty-pvc-premium-fotodek-wf76-af',
+    name: 'Karty PVC Premium Fotodek 0,76 mm, 100 szt. (WF76-AF)',
+    shortDescription: 'Karty PVC CR-80 0,76 mm z powierzchnią Fotodek w ciepłym odcieniu bieli. Równiejszy druk zdjęć i mniej brudu na głowicy. Opakowanie 100 sztuk, taniej od 5 opakowań.',
+    description: `Karta z powierzchnią Fotodek, przygotowaną pod druk termosublimacyjny. Odcień ciepłej bieli i równa powierzchnia dają czystsze kolory na zdjęciach i gładkie przejścia tonalne, a karty przechodzą ostrzejszą kontrolę jakości niż zwykłe: mniej pyłu i zadziorów oznacza mniej brudu na głowicy drukującej. Przy nakładach liczonych w tysiącach to realna oszczędność na czyszczeniu i żywotności głowicy.
+
+Format CR-80, 85,6 × 54 mm, grubość 0,76 mm, bez chipu i paska magnetycznego. Drukarki Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300 drukują na niej bez zmian w ustawieniach. Opakowanie ma 100 sztuk, od pięciu opakowań cena za opakowanie spada.`,
+    categoryId: 'materialy-eksploatacyjne',
+    subcategoryIds: ['karty-plastikowe', 'karty-pcv'],
+    manufacturerId: 'acss',
+    priceFrom: 62.15,
+    priceTiers: [
+      { minQty: 5, priceNetto: 59.05 },
+    ],
+    images: ['/images/products/acss-wf76-af.png'],
+    imageDescriptions: ['Karty PVC Premium Fotodek, ciepła biel, opakowanie 100 sztuk'],
+    tags: ['retail'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Rodzaj karty', value: 'Zwykła PVC bez chipu, do zadruku' },
+      { name: 'Format', value: 'CR-80 (85,6 × 54 mm) ISO 7810 ID-1' },
+      { name: 'Grubość', value: '0,76 mm (30 mil)' },
+      { name: 'Materiał', value: 'PVC 100%' },
+      { name: 'Kolor', value: 'Ciepła biel, obie strony do zadruku' },
+      { name: 'Powierzchnia', value: 'Fotodek' },
+      { name: 'Chip / pasek magnetyczny', value: 'Brak' },
+      { name: 'Opakowanie', value: '100 szt.; niższa cena od 5 opakowań' },
+      { name: 'Part Number', value: 'WF76-AF' },
+      { name: 'Kompatybilność', value: 'Magicard Pronto100, Magicard 300, Magicard 600 Duo, Zebra ZC100, Zebra ZC300, Zebra ZC350' },
+    ],
+    applications: ['Identyfikatory ze zdjęciem', 'Legitymacje szkolne i studenckie', 'Karty członkowskie z grafiką na całej powierzchni', 'Karty VIP i lojalnościowe', 'Druk w dużych nakładach'],
+    compatibleAccessories: [],
+    faq: [
+      { question: 'Kiedy warto dopłacić do karty Premium?', answer: 'Gdy na karcie jest zdjęcie albo grafika na całej powierzchni i gdy drukujesz regularnie. Równiejsza powierzchnia daje lepszy obraz, a czystsze karty rzadziej brudzą głowicę, która jest najdroższą częścią drukarki.' },
+      { question: 'Czy ciepła biel jest widoczna?', answer: 'Obok śnieżnobiałej karty tak, na samej karcie nie. Odcień jest dobrany tak, żeby skóra na zdjęciach nie wpadała w sinawy ton, jak bywa na kartach o zimnej bieli.' },
+      { question: 'Czy ta karta działa z systemem kontroli dostępu?', answer: 'Nie, to karta bez chipu. Do drzwi i szlabanów potrzebna jest karta zbliżeniowa Unique albo MIFARE z kategorii Karty zbliżeniowe RFID i NFC.' },
+    ],
+    downloads: [],
+    createdAt: '2026-09-12',
+  },
+  {
+    id: 'acss-hp6-76-gd-a',
+    slug: 'karty-pvc-holopatch-magicard-hp6-76-gd-a',
+    name: 'Karty PVC HoloPatch do Magicard 0,76 mm, 100 szt. (HP6-76-GD-A)',
+    shortDescription: 'Białe karty PVC CR-80 ze złotym polem HoloPatch. Znak wodny HoloKote z drukarki Magicard wychodzi na nim jak hologram, widoczny pod każdym kątem. Opakowanie 100 sztuk.',
+    description: `Karta dla drukarek Magicard, które nanoszą znak wodny HoloKote. Na zwykłej białej karcie znak jest przezroczysty i widać go dopiero pod światło. Na karcie HoloPatch, w miejscu złotego pola, ten sam znak wygląda jak hologram: mieni się i jest widoczny od razu, pod każdym kątem. Efekt wychodzi z każdej Magicard 300 i 600 Duo bez dodatkowych taśm i bez zmiany procedury druku, wystarczy włączyć HoloKote w sterowniku.
+
+Poza polem to karta Fotodek: 85,6 × 54 mm, 0,76 mm, śnieżnobiała, bez chipu i paska magnetycznego. Projekt karty warto ułożyć tak, żeby zdjęcie i tekst nie zachodziły na złote pole. Opakowanie ma 100 sztuk.`,
+    categoryId: 'materialy-eksploatacyjne',
+    subcategoryIds: ['karty-plastikowe', 'karty-pcv'],
+    manufacturerId: 'acss',
+    priceFrom: 117.40,
+    images: ['/images/products/acss-hp6-76-gd-a.png'],
+    imageDescriptions: ['Karta PVC HoloPatch ze złotym polem pod znak HoloKote'],
+    tags: ['retail'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Rodzaj karty', value: 'Zwykła PVC bez chipu, z polem HoloPatch' },
+      { name: 'Format', value: 'CR-80 (85,6 × 54 mm) ISO 7810 ID-1' },
+      { name: 'Grubość', value: '0,76 mm (30 mil)' },
+      { name: 'Materiał', value: 'PVC 100%' },
+      { name: 'Kolor', value: 'Śnieżnobiały ze złotym polem HoloPatch' },
+      { name: 'Powierzchnia', value: 'Fotodek' },
+      { name: 'Zabezpieczenie', value: 'Pole HoloPatch pod znak wodny HoloKote drukarek Magicard' },
+      { name: 'Chip / pasek magnetyczny', value: 'Brak' },
+      { name: 'Opakowanie', value: '100 szt.' },
+      { name: 'Part Number', value: 'HP6-76-GD-A' },
+      { name: 'Kompatybilność', value: 'Magicard Pronto100, Magicard 300, Magicard 600 Duo (efekt HoloPatch tylko z HoloKote)' },
+    ],
+    applications: ['Identyfikatory trudne do podrobienia', 'Legitymacje i karty uprawnień', 'Karty wstępu na imprezy i obiekty', 'Przepustki firmowe z logo w hologramie', 'Karty członkowskie klasy premium'],
+    compatibleAccessories: [],
+    faq: [
+      { question: 'Czym jest HoloKote i czy muszę coś dokupić?', answer: 'HoloKote to znak wodny, który drukarki Magicard nanoszą w warstwie ochronnej taśmy. Jest w każdej Magicard 300 i 600 Duo bez dopłaty, wystarczy włączyć go w sterowniku. W Magicard 600 Duo można wgrać własny wzór znaku, na przykład logo firmy.' },
+      { question: 'Czy karta HoloPatch działa w drukarkach Zebra?', answer: 'Zebra zadrukuje ją jak zwykłą kartę, ale efektu hologramu nie będzie, bo tylko Magicard nanosi znak HoloKote. Do Zebry lepiej wziąć karty białe Standard albo Premium.' },
+      { question: 'Gdzie na karcie jest złote pole?', answer: 'W jednym stałym miejscu, tak samo na każdej karcie z opakowania. Przed drukiem serii warto wydrukować jedną kartę testową i sprawdzić, czy zdjęcie i tekst nie zachodzą na pole.' },
+      { question: 'Da się podrobić taką kartę?', answer: 'Znacznie trudniej niż zwykłą. Do odtworzenia potrzebna jest drukarka Magicard z tym samym wzorem HoloKote i karta HoloPatch. Przy własnym wzorze znaku w Magicard 600 Duo kopia bez dostępu do drukarki jest praktycznie niewykonalna.' },
+    ],
+    downloads: [],
+    createdAt: '2026-09-12',
+  },
+  {
+    id: 'acss-pvc1-sa40',
+    slug: 'karty-pvc-samoprzylepne-pvc1-sa40',
+    name: 'Karty PVC samoprzylepne 0,40 mm, 100 szt. (PVC1-SA40)',
+    shortDescription: 'Cienkie białe karty PVC CR-80 z klejem na spodzie. Drukujesz w drukarce kart, odklejasz papier i naklejasz na grubą kartę zbliżeniową, której drukarka nie przyjmie. Opakowanie 100 sztuk.',
+    description: `Karta do naklejania na inne karty. Ma 0,40 mm PVC z warstwą kleju i papierowym podkładem, razem 0,575 mm, więc przechodzi przez drukarkę kart jak zwykła karta. Po wydruku zdejmuje się podkład i przykleja kartę na grubą kartę zbliżeniową typu clamshell, brelok w formacie karty albo kartę, na której drukarka nie może drukować bezpośrednio, na przykład z wypukłym numerem.
+
+Format CR-80, 85,6 × 54 mm, biała, powierzchnia bez zadziorów pod druk termosublimacyjny. Drukarki Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300 drukują na niej bez zmian w ustawieniach. Opakowanie ma 100 sztuk.`,
+    categoryId: 'materialy-eksploatacyjne',
+    subcategoryIds: ['karty-plastikowe', 'karty-pcv'],
+    manufacturerId: 'acss',
+    priceFrom: 158.30,
+    images: ['/images/products/acss-pvc1-sa40.png'],
+    imageDescriptions: ['Karta PVC samoprzylepna z papierowym podkładem'],
+    tags: ['retail'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Rodzaj karty', value: 'Zwykła PVC bez chipu, samoprzylepna' },
+      { name: 'Format', value: 'CR-80 (85,6 × 54 mm) ISO 7810 ID-1' },
+      { name: 'Grubość', value: '0,40 mm PVC + 0,175 mm podkład papierowy (0,575 mm w druku)' },
+      { name: 'Materiał', value: 'PVC 100% z warstwą kleju' },
+      { name: 'Kolor', value: 'Biały, jedna strona do zadruku' },
+      { name: 'Chip / pasek magnetyczny', value: 'Brak' },
+      { name: 'Opakowanie', value: '100 szt.' },
+      { name: 'Part Number', value: 'PVC1-SA40' },
+      { name: 'Kompatybilność', value: 'Magicard Pronto100, Magicard 300, Magicard 600 Duo, Zebra ZC100, Zebra ZC300, Zebra ZC350' },
+    ],
+    applications: ['Personalizacja grubych kart clamshell 125 kHz', 'Naklejki na karty z wypukłym numerem', 'Identyfikatory na istniejących kartach dostępu', 'Karty o niestandardowej grubości', 'Odświeżenie starych kart bez ich wymiany'],
+    compatibleAccessories: [],
+    faq: [
+      { question: 'Po co karta samoprzylepna, skoro drukarka drukuje na kartach zbliżeniowych?', answer: 'Na cienkich kartach ISO tak. Karty clamshell mają 1,8 mm grubości i nie wejdą do żadnej drukarki kart. Wtedy drukuje się kartę samoprzylepną i nakleja na clamshell. To też sposób na karty z wypukłym numerem albo już zadrukowane, które trzeba odświeżyć.' },
+      { question: 'Czy drukować z podkładem, czy bez?', answer: 'Z podkładem. Papier usztywnia kartę i daje grubość 0,575 mm, którą drukarka prowadzi bez problemu. Podkład zdejmuje się dopiero po wydruku, tuż przed naklejeniem.' },
+      { question: 'Jak trwały jest klej?', answer: 'Klej jest permanentny, karta po dociśnięciu trzyma się gładkiego plastiku przez lata. Karty przed naklejeniem trzeba przetrzeć, żeby nie było kurzu ani tłuszczu.' },
+    ],
+    downloads: [],
+    createdAt: '2026-09-12',
+  },
+  {
+    id: 'acss-si76-a-sc',
+    slug: 'karty-pvc-srebrne-si76-a-sc',
+    name: 'Karty PVC srebrne metaliczne 0,76 mm, 100 szt. (SI76-A-SC)',
+    shortDescription: 'Karty PVC CR-80 0,76 mm w kolorze srebrnym metalicznym, barwione w masie łącznie z krawędziami. Do zadruku w drukarkach Magicard i Zebra ZC. Opakowanie 100 sztuk.',
+    description: `Srebrna karta barwiona w masie: kolor jest w całym plastiku, także na krawędziach, więc nie wytrze się i nie odpryśnie. Powierzchnia Fotodek jest przygotowana pod druk termosublimacyjny. Najlepiej wygląda na niej czarny druk z taśmy jednokolorowej albo panel K z taśmy kolorowej: logo, imię i nazwisko, numer. Jasne kolory na srebrze są słabo widoczne, bo taśma nie ma białego panelu.
+
+Format CR-80, 85,6 × 54 mm, grubość 0,76 mm, bez chipu i paska magnetycznego. Drukarki Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300 drukują na niej jak na białej. Opakowanie ma 100 sztuk.`,
+    categoryId: 'materialy-eksploatacyjne',
+    subcategoryIds: ['karty-plastikowe', 'karty-pcv'],
+    manufacturerId: 'acss',
+    priceFrom: 83.10,
+    images: ['/images/products/acss-si76-a-sc.png'],
+    imageDescriptions: ['Srebrna metaliczna karta PVC'],
+    tags: ['retail'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Rodzaj karty', value: 'Zwykła PVC bez chipu, kolorowa' },
+      { name: 'Format', value: 'CR-80 (85,6 × 54 mm) ISO 7810 ID-1' },
+      { name: 'Grubość', value: '0,76 mm (30 mil)' },
+      { name: 'Materiał', value: 'PVC 100%, barwiony w masie' },
+      { name: 'Kolor', value: 'Srebrny metaliczny, łącznie z krawędziami' },
+      { name: 'Powierzchnia', value: 'Fotodek' },
+      { name: 'Chip / pasek magnetyczny', value: 'Brak' },
+      { name: 'Opakowanie', value: '100 szt.' },
+      { name: 'Part Number', value: 'SI76-A-SC' },
+      { name: 'Kompatybilność', value: 'Magicard Pronto100, Magicard 300, Magicard 600 Duo, Zebra ZC100, Zebra ZC300, Zebra ZC350' },
+    ],
+    applications: ['Karty VIP i członkowskie', 'Karty podarunkowe', 'Wizytówki plastikowe', 'Karty lojalnościowe klasy srebrnej', 'Identyfikatory kadry zarządzającej'],
+    compatibleAccessories: [],
+    faq: [
+      { question: 'Jaką taśmą drukować na srebrnej karcie?', answer: 'Najlepiej czarną taśmą jednokolorową, na przykład MA1000K do Magicard. Czarny na srebrze jest czytelny i elegancki. Taśma kolorowa YMCKO też zadziała, ale jasne barwy będą przygaszone, bo druk termosublimacyjny nie ma białego.' },
+      { question: 'Czy kolor nie zejdzie z krawędzi?', answer: 'Nie, karta jest barwiona w masie, a nie lakierowana. Kolor jest w całym plastiku, także na krawędziach po docięciu.' },
+      { question: 'Czy ta karta działa z systemem kontroli dostępu?', answer: 'Nie, to karta bez chipu. Do drzwi i szlabanów potrzebna jest karta zbliżeniowa Unique albo MIFARE z kategorii Karty zbliżeniowe RFID i NFC.' },
+    ],
+    downloads: [],
+    createdAt: '2026-09-12',
+  },
+  {
+    id: 'acss-bk76-a-sc',
+    slug: 'karty-pvc-czarne-bk76-a-sc',
+    name: 'Karty PVC czarne 0,76 mm, 100 szt. (BK76-A-SC)',
+    shortDescription: 'Karty PVC CR-80 0,76 mm w kolorze czarnym, barwione w masie łącznie z krawędziami. Do druku srebrną, złotą lub białą taśmą w drukarkach Magicard i Zebra ZC. Opakowanie 100 sztuk.',
+    description: `Czarna karta barwiona w masie: kolor jest w całym plastiku, także na krawędziach, więc nie wytrze się ani nie odpryśnie. Powierzchnia Fotodek jest przygotowana pod druk termosublimacyjny. Na czerni najlepiej wychodzi taśma jednokolorowa srebrna, złota albo biała: logo, nazwisko, numer karty. Taśma kolorowa YMCKO na czarnej karcie nie ma sensu, bo nie ma białego panelu i kolory giną.
+
+Format CR-80, 85,6 × 54 mm, grubość 0,76 mm, bez chipu i paska magnetycznego. Drukarki Magicard Pronto100, 300, 600 Duo oraz Zebra ZC100 i ZC300 drukują na niej jak na białej. Opakowanie ma 100 sztuk.`,
+    categoryId: 'materialy-eksploatacyjne',
+    subcategoryIds: ['karty-plastikowe', 'karty-pcv'],
+    manufacturerId: 'acss',
+    priceFrom: 93.70,
+    images: ['/images/products/acss-bk76-a-sc.png'],
+    imageDescriptions: ['Czarna karta PVC barwiona w masie'],
+    tags: ['retail'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Rodzaj karty', value: 'Zwykła PVC bez chipu, kolorowa' },
+      { name: 'Format', value: 'CR-80 (85,6 × 54 mm) ISO 7810 ID-1' },
+      { name: 'Grubość', value: '0,76 mm (30 mil)' },
+      { name: 'Materiał', value: 'PVC 100%, barwiony w masie' },
+      { name: 'Kolor', value: 'Czarny, łącznie z krawędziami' },
+      { name: 'Powierzchnia', value: 'Fotodek' },
+      { name: 'Chip / pasek magnetyczny', value: 'Brak' },
+      { name: 'Opakowanie', value: '100 szt.' },
+      { name: 'Part Number', value: 'BK76-A-SC' },
+      { name: 'Kompatybilność', value: 'Magicard Pronto100, Magicard 300, Magicard 600 Duo, Zebra ZC100, Zebra ZC300, Zebra ZC350' },
+    ],
+    applications: ['Karty VIP i klubowe', 'Wizytówki plastikowe', 'Karty podarunkowe premium', 'Identyfikatory na eventy', 'Karty lojalnościowe klasy black'],
+    compatibleAccessories: [],
+    faq: [
+      { question: 'Jaką taśmą drukować na czarnej karcie?', answer: 'Jednokolorową srebrną, złotą albo białą. Do Magicard to taśma MA1000K w wersji silver, gold albo white, 1000 kart z rolki. Srebro i złoto na czerni dają efekt tłoczenia bez tłoczenia.' },
+      { question: 'Czy da się wydrukować zdjęcie na czarnej karcie?', answer: 'Nie w dobrej jakości. Druk termosublimacyjny nakłada półprzezroczyste barwniki, które na czarnym tle są niewidoczne. Karty ze zdjęciem drukuje się na białych, a czarne zostawia na tekst i logo.' },
+      { question: 'Czy ta karta działa z systemem kontroli dostępu?', answer: 'Nie, to karta bez chipu. Do drzwi i szlabanów potrzebna jest karta zbliżeniowa Unique albo MIFARE z kategorii Karty zbliżeniowe RFID i NFC.' },
+    ],
+    downloads: [],
+    createdAt: '2026-09-12',
+  },
+  {
+    id: 'magicard-300-zestaw-startowy',
+    slug: 'magicard-300-zestaw-startowy',
+    name: 'Zestaw startowy Magicard 300: drukarka, taśma i 100 kart',
+    shortDescription: 'Drukarka Magicard 300 S Duo, taśma kolorowa YMCKO na 300 wydruków i 100 białych kart PVC Premium Fotodek. Komplet do druku pierwszych identyfikatorów w dniu dostawy.',
+    description: `Drukarka kart jest sprzedawana bez taśmy i kart; w opakowaniu producenta znajduje się tylko karta czyszcząca. Zestaw startowy uzupełnia ten brak: dwustronna drukarka Magicard 300 S Duo, taśma kolorowa YMCKO MC300YMCKO/S na 300 wydruków oraz opakowanie 100 białych kart PVC Premium Fotodek. Taki komplet pozwala uruchomić druk identyfikatorów w dniu dostawy, a po zużyciu kart wystarczy dokupić kolejne opakowanie: przy druku jednostronnym taśma wystarcza na trzy takie serie, przy dwustronnym na 150 kart.
+
+Karty Premium mają powierzchnię Fotodek w ciepłym odcieniu bieli, na której zdjęcia wychodzą równiej niż na kartach standardowych, a głowica drukująca mniej się brudzi. Taśma YMCKO drukuje pełny kolor z warstwą ochronną, na której drukarka nanosi także znak wodny HoloKote. Sterownik i program Magicard HUB do projektowania kart są bezpłatne, linki do pobrania znajdują się na karcie drukarki.
+
+Zestaw kosztuje mniej niż trzy pozycje kupione osobno i trafia do koszyka jako jedna pozycja. Gwarancja producenta na drukarkę wynosi 3 lata.`,
+    categoryId: 'drukarki-kart',
+    subcategoryIds: [],
+    manufacturerId: 'magicard',
+    priceFrom: 4270,
+    bundleItems: [
+      { productId: 'magicard-300', quantity: 1 },
+      { productId: 'magicard-mc300ymcko-s', quantity: 1 },
+      { productId: 'acss-wf76-af', quantity: 1 },
+    ],
+    images: ['/images/products/magicard-300-zestaw-startowy.png'],
+    imageDescriptions: ['Zestaw startowy Magicard 300: drukarka, taśma YMCKO i karty PVC Premium'],
+    tags: ['retail', 'healthcare'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Drukarka', value: 'Magicard 300 S Duo, druk dwustronny, USB i Ethernet, 3 lata gwarancji' },
+      { name: 'Taśma', value: 'MC300YMCKO/S, kolor YMCKO z warstwą ochronną, 300 wydruków jednostronnych' },
+      { name: 'Karty', value: '100 szt. PVC Premium Fotodek WF76-AF, białe, 0,76 mm, CR-80' },
+      { name: 'Wydajność zestawu', value: '100 kart z opakowania; taśma wystarcza na 300 wydruków jednostronnych albo 150 dwustronnych' },
+      { name: 'Oprogramowanie', value: 'Sterownik (Windows, macOS, Linux) i Magicard HUB (Windows 10/11) bezpłatnie, do pobrania z karty drukarki' },
+      { name: 'Format kart', value: 'CR-80 (85,6 × 54 mm)' },
+      { name: 'Łączność', value: 'USB i Ethernet' },
+      { name: 'Gwarancja', value: '3 lata na drukarkę' },
+      { name: 'Part Number', value: 'ZESTAW-M300-START' },
+    ],
+    applications: [
+      'Pierwsza drukarka kart w firmie albo szkole',
+      'Identyfikatory pracownicze drukowane dwustronnie',
+      'Legitymacje szkolne i studenckie ze zdjęciem',
+      'Karty członkowskie i klubowe',
+      'Przepustki dla gości i uczestników wydarzeń',
+    ],
+    compatibleAccessories: ['magicard-mc300ymcko-s', 'magicard-mc250ymcko-s', 'magicard-mc600ko-s', ...magicardSharedMonochromeAccessoryIds],
+    relatedAccessories: ['magicard-3633-0053', 'acss-ac-76s', 'acss-wf76-af', 'acss-hp6-76-gd-a', 'acss-unqe1bn', 'acss-unqe1u', 'acss-mfrc1', 'acss-mdev32'],
+    faq: [
+      { question: 'Czy w zestawie jest wszystko, żeby zacząć drukować?', answer: 'Tak. Drukarka, taśma i karty to komplet do druku. W pudełku drukarki są też zasilacz, kabel USB, podajnik, odbiornik i karta czyszcząca. Sterownik i program Magicard HUB pobierzesz bezpłatnie z karty drukarki. HUB działa w Windows 10 i 11; na macOS i Linuksie drukarka pracuje przez sterownik, a projekt karty przygotowuje się w innym programie.' },
+      { question: 'Na ile wystarczy zestaw?', answer: 'W zestawie jest 100 kart. Taśma YMCKO wystarcza na 300 wydruków jednostronnych albo 150 dwustronnych, więc po zużyciu kart można dokupić kolejne opakowania bez wymiany taśmy.' },
+      { question: 'Czy mogę zamienić karty na zbliżeniowe?', answer: 'Zestaw ma stały skład, ale karty zbliżeniowe Unique, MIFARE i DESFire dodasz do tego samego zamówienia z kategorii Karty zbliżeniowe RFID i NFC. Drukuje się je tak samo jak zwykłe karty.' },
+      { question: 'Czy zestaw jest tańszy niż zakup osobno?', answer: 'Tak, o kilkadziesiąt złotych względem sumy trzech pozycji. Ceny składników są na ich kartach produktów, a na karcie zestawu pokazujemy sumę i różnicę.' },
+      { question: 'Jak zestaw jest wysyłany?', answer: 'W jednej przesyłce, zwykle w dniu zamówienia przy zamówieniu do 12:00. Drukarka jedzie w oryginalnym pudełku producenta, taśma i karty osobno zapakowane w tym samym kartonie.' },
+    ],
+    downloads: [],
+    createdAt: '2026-09-12',
   },
 ]
 

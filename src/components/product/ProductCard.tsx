@@ -271,10 +271,10 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
                 {displayPrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
               </span>
               <span className="text-[10px] sm:text-xs text-gray-400 ml-0.5 sm:ml-1">
-                {product.priceTiers
-                  ? 'netto/szt.'
-                  : product.subcategoryIds?.includes('karty-pcv')
-                    ? 'netto/opak.'
+                {product.subcategoryIds?.includes('karty-plastikowe')
+                  ? 'netto/opak.'
+                  : product.priceTiers
+                    ? 'netto/szt.'
                     : product.categoryId === 'materialy-eksploatacyjne' ? 'netto/rolka' : 'netto'}
               </span>
             </div>

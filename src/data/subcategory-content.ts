@@ -1020,49 +1020,155 @@ Koszty eksploatacji (TCO): opaska Z-Band Direct = ok. 0,70–0,90 zł/szt. Brak 
   // KARTY PVC
   // ============================================
   'karty-pvc': {
+    updatedAt: '2026-09-12',
     definition: {
-      heading: 'Karty PVC Zebra — identyfikatory, karty dostępowe i lojalnościowe',
-      content: 'Karty PVC (PVC — polichlorek winylu) to plastikowe karty w standardowym formacie CR-80 (85,6 × 54 mm, grubość 0,76 mm) — tym samym co karty płatnicze i dowody osobiste. Drukowane na specjalistycznych drukarkach kart Zebra (ZC100, ZC300, ZC350, ZXP Series 7), służą do tworzenia identyfikatorów pracowniczych ze zdjęciem, kart dostępowych RFID, kart lojalnościowych, kart członkowskich i legitymacji. Zebra oferuje karty Premier PVC w wariantach: białe (standard), z paskiem magnetycznym (HiCo/LoCo), z chipem RFID (Mifare, DESFire, HID iKey), z hologramem zabezpieczającym. Drukarki kart Zebra umożliwiają druk full-color (YMCKO) jedno- lub dwustronny z personalizacją w czasie rzeczywistym.',
+      heading: 'Karty PVC do drukarek kart: plastikowe i zbliżeniowe',
+      content: 'Karta PVC to plastikowa karta w formacie CR-80: 85,6 × 54 mm i 0,76 mm grubości, tyle co karta bankowa. Drukarka kart nanosi na nią zdjęcie, dane i grafikę metodą termosublimacyjną, z taśmy kolorowej albo jednokolorowej. Dzielimy karty na dwie grupy. Karty plastikowe bez chipu służą jako identyfikatory, legitymacje, karty klubowe i wizytówki. Karty zbliżeniowe mają w środku chip i antenę, więc oprócz identyfikatora są kluczem do drzwi, szlabanu albo rejestratora czasu pracy. Obie grupy drukuje się w tej samej drukarce, bez zmiany ustawień: Zebra ZC100, ZC300, ZC350 albo Magicard Pronto100, 300 i 600 Duo.',
     },
     buyingGuide: {
-      heading: 'Jak wybrać karty PVC do drukarki Zebra?',
+      heading: 'Którą grupę wybrać?',
       items: [
-        'Format: CR-80 (85,6 × 54 × 0,76 mm) — standard dla drukarek kart Zebra',
-        'Typ: białe (standardowe, do nadruku), z paskiem magnetycznym (HiCo 2750 Oe lub LoCo 300 Oe), z chipem kontaktowym/bezkontaktowym (RFID)',
-        'Grubość: 0,76 mm (standard), 0,50 mm (cieńsze, do tymczasowych identyfikatorów)',
-        'Ilość: opakowania 100 lub 500 szt. — oblicz roczne zapotrzebowanie + 10% na testy i błędy',
-        'Zabezpieczenia: hologram (overlay holograficzny), laminat UV, mikrotekst — dla kart wymagających ochrony przed fałszerstwem',
+        'Identyfikator, legitymacja, karta klubowa bez dostępu do budynku — karta plastikowa biała Standard albo Premium',
+        'Karta ma otwierać drzwi w systemie Roger albo Satel — karta zbliżeniowa Unique 125 kHz, na sztuki od 1,85 zł',
+        'Karta ma też zapisywać dane: czas pracy, stołówka, e-legitymacja — MIFARE 1K albo DESFire EV1 / EV3',
+        'Wizytówka NFC czytana telefonem — NTAG213 albo NTAG216',
+        'Parking na starych czytnikach 125 kHz, drzwi na 13,56 MHz — karta dualna z dwoma chipami',
+        'Karta VIP, wizytówka, karta podarunkowa — karta srebrna albo czarna pod taśmę jednokolorową',
       ],
     },
-    expertAuthority: 'TAKMA wdraża systemy identyfikacji wizualnej i kontroli dostępu oparte na drukarkach kart Zebra. Od single-sided identyfikatorów dla 50-osobowej firmy po systemy dual-sided z RFID i hologramem dla korporacji z tysiącami pracowników. Doradzamy w wyborze kart, taśm drukujących (ribbon YMCKO) i drukarek kart Zebra.',
-    technicalDeepDive: 'Karty Zebra Premier PVC są produkowane z czystego PVC (nie PVC/PET kompozyt) o jednorodnej strukturze, co zapewnia bezbłędne podawanie w drukarce i równomierny transfer barwnika z taśmy YMCKO. Biała powierzchnia ma gładkość Ra < 0,5 µm — kluczowe dla ostrego druku zdjęć i mikrotekstu. Karty z paskiem magnetycznym HiCo (2750 Oe) są odporne na przypadkowe rozmagnesowanie przez telefony i magnesy — standard w kontroli dostępu. Karty RFID zawierają antenę i chip (Mifare Classic 1K, Mifare DESFire EV2/EV3, lub HID iCLASS SE/iKey) zalaminowane wewnątrz struktury PVC — niewidoczne z zewnątrz, wytrzymałe na zginanie.',
+    expertAuthority: 'TAKMA sprzedaje i serwisuje drukarki kart Magicard i Zebra ZC od pierwszej instalacji po wymianę głowicy. Przy wdrożeniu dobieramy karty do systemu kontroli dostępu, który już działa u klienta: sprawdzamy typ czytników, potrzebę nadruku numeru i grubość, jaką przyjmie drukarka. Jeśli nie wiesz, jaki chip czytają Twoje czytniki, wyślij zdjęcie karty, którą dziś używasz, a dobierzemy odpowiednik.',
+    technicalDeepDive: 'Format CR-80 określa norma ISO 7810 ID-1: 85,6 × 53,98 mm z zaokrąglonymi rogami o promieniu 3,18 mm. Standardowa grubość to 0,76 mm z tolerancją ±0,08 mm; drukarki Magicard przyjmują karty od 0,5 do 1,27 mm, Zebra ZC od 0,25 do 1,02 mm. Karty zbliżeniowe mają chip i antenę zalaminowane między warstwami PVC, dlatego karty dualne z dwiema antenami są grubsze, 0,80 mm. Powierzchnia Fotodek na kartach Premium i kolorowych to gładszy laminat o mniejszej ilości pyłu, który równiej przyjmuje barwnik z taśmy i mniej brudzi głowicę. Karty samoprzylepne mają 0,40 mm PVC i 0,175 mm papierowego podkładu, razem 0,575 mm, więc przechodzą przez drukarkę, a po zdjęciu podkładu nakleja się je na karty clamshell o grubości 1,8 mm.',
     useCases: [
-      { title: 'Identyfikatory pracownicze', description: 'Karty białe PVC + drukarka ZC300 (dual-sided) — pełnokolorowe identyfikatory ze zdjęciem, imieniem, stanowiskiem i kodem kreskowym. Druk dwustronny: awers ze zdjęciem, rewers z danymi kontaktowymi i regulaminem.' },
-      { title: 'Karty dostępowe RFID', description: 'Karty PVC z chipem Mifare DESFire EV3 + drukarka ZC350 z modułem enkodowania — personalizowane karty dostępowe z graficzną identyfikacją i kodem RFID w jednym cyklu druku.' },
-      { title: 'Karty lojalnościowe retail', description: 'Karty białe PVC + drukarka ZC100 (single-sided) — karty lojalnościowe z logo firmy, numerem członkowskim i kodem kreskowym. Ekonomiczne rozwiązanie dla sklepów i sieci handlowych.' },
-      { title: 'Legitymacje i przepustki', description: 'Karty PVC + hologram zabezpieczający + drukarka ZC300 z laminatorem — legitymacje szkolne, przepustki na obiekt, karty członkowskie z zabezpieczeniem przed fałszerstwem.' },
+      { title: 'Identyfikatory pracownicze z dostępem', description: 'Karta Unique 125 kHz bez numeru albo z numerem, zdjęcie i dane z drukarki Magicard 300. Jedna karta do bramki, drzwi i rejestratora czasu pracy w systemie Roger albo Satel.' },
+      { title: 'Legitymacje szkolne', description: 'Białe karty Premium Fotodek pod zdjęcie ucznia, taśma YMCKO, drukarka Pronto100 albo Magicard 300 w sekretariacie. Przy stołówce albo bibliotece elektronicznej karta MIFARE 1K.' },
+      { title: 'Karty klubowe i lojalnościowe', description: 'Białe Standard z kodem kreskowym albo srebrne i czarne z logo w kolorze taśmy jednokolorowej. Od 38 groszy za kartę.' },
+      { title: 'Przepustki trudne do podrobienia', description: 'Karty HoloPatch ze złotym polem i znak wodny HoloKote z drukarki Magicard. W Magicard 600 Duo znak może być własnym logo firmy.' },
     ],
     uniqueInsights: {
-      heading: 'Praktyczne wskazówki dot. kart PVC',
+      heading: 'Co warto wiedzieć przed zamówieniem',
       items: [
-        { title: 'PVC vs PVC/PET kompozyt — dlaczego to ma znaczenie', text: 'Oryginalne karty Zebra Premier są z czystego PVC — gwarantuje to kompatybilność z drukarką i brak zacięć. Tanie zamienniki z kompozytu PVC/PET mogą się zacinać, powodować smugi i skracać żywotność głowicy drukującej.' },
-        { title: 'Taśma YMCKO — co oznaczają litery?', text: 'Y=Yellow (żółty), M=Magenta (purpurowy), C=Cyan (niebieski), K=Black (czarny), O=Overlay (transparentny laminat ochronny). Jedna sekcja YMCKO = jeden kolorowy nadruk jednej strony karty. Rolka 200 paneli = 200 kart jednostronnych lub 100 dwustronnych.' },
+        { title: 'Drukarka nie zapisuje chipu 125 kHz', text: 'Karty Unique mają numer zapisany fabrycznie i tylko do odczytu. Drukarka nanosi grafikę, a numer wpisuje się w programie kontroli dostępu albo odczytuje czytnikiem. Chipy MIFARE i DESFire może zaprogramować Zebra ZC300 z koderem albo osobny programator.' },
+        { title: 'Numer na karcie ułatwia rejestrację', text: 'Karta Unique z nadrukowanym numerem pozwala wpisać ją do systemu bez czytnika administracyjnego. Bez numeru identyfikator wygląda czyściej, ale każdą kartę trzeba przyłożyć do czytnika przy rejestracji. Przy projekcie zostaw pasek na dole karty, żeby grafika nie zakryła numeru.' },
+        { title: 'Kolorowa taśma na czarnej karcie nie zadziała', text: 'Druk termosublimacyjny nakłada półprzezroczyste barwniki bez białego. Na srebrnej i czarnej karcie drukuj taśmą jednokolorową: czarną na srebrze, srebrną, złotą albo białą na czerni.' },
       ],
     },
     faq: [
-      { question: 'Jakie drukarki Zebra drukują na kartach PVC?', answer: 'Zebra ZC100 (single-sided, economy), ZC300 (dual-sided, standard), ZC350 (dual-sided, enkodowanie RFID/mag), ZXP Series 7 (high-volume). Każda wymaga taśmy barwiącej YMCKO i kart PVC w formacie CR-80.' },
-      { question: 'Ile kart wydrukuję z jednej taśmy YMCKO?', answer: 'Standardowa taśma YMCKO do ZC300 ma 200 paneli — wydrukujesz 200 kart jednostronnych (kolor+overlay) lub 100 kart dwustronnych (kolor+overlay na obu stronach). Taśma KdO (mono black + overlay) ma 2000 paneli do druku czarno-białego.' },
-      { question: 'Czym różnią się karty HiCo od LoCo?', answer: 'HiCo (High Coercivity, 2750 Oe): odporne na rozmagnesowanie — do kart dostępowych i identyfikatorów. LoCo (Low Coercivity, 300 Oe): łatwe do zaprogramowania, ale podatne na rozmagnesowanie — do kart jednorazowych. W 90% zastosowań zalecamy HiCo.' },
-      { question: 'Czy mogę drukować karty RFID na drukarce Zebra?', answer: 'Tak — drukarki ZC350 i ZXP7 mają opcjonalny moduł enkodowania RFID (Mifare, DESFire, HID iCLASS). Drukarka jednocześnie drukuje graficznie na karcie i programuje chip RFID — personalizacja w jednym przejściu.' },
-      { question: 'Ile kosztują karty PVC Zebra?', answer: 'Białe standardowe: od 0,25 zł/szt. (opakowanie 500 szt. = ok. 125 zł). Z paskiem magnetycznym HiCo: od 0,55 zł/szt. Z chipem RFID Mifare: od 3,50 zł/szt. Hologram zabezpieczający: od 0,10 zł/szt. (nakładka).' },
+      { question: 'Czy karty zbliżeniowe drukuje się tak samo jak zwykłe?', answer: 'Tak. Chip i antena są w środku, powierzchnia jest gładka i biała, więc drukarka nie wymaga żadnych zmian w ustawieniach. Jedyna różnica to grubość kart dualnych, 0,80 mm zamiast 0,76 mm, która nadal mieści się w zakresie każdej drukarki kart.' },
+      { question: 'Jakie karty pasują do systemu Roger albo Satel?', answer: 'Do czytników 125 kHz karty Unique, z numerem albo bez. Nowsze czytniki Rogera na 13,56 MHz obsługują MIFARE Classic i DESFire. Jeśli nie masz pewności, jaki chip czytają Twoje czytniki, wyślij zdjęcie obecnej karty albo model czytnika, a dobierzemy odpowiednik.' },
+      { question: 'Czym różni się karta Standard od Premium?', answer: 'Standard ma zwykłą gładką powierzchnię i kosztuje niecałe 40 groszy za sztukę. Premium ma powierzchnię Fotodek w ciepłym odcieniu bieli: kolory na zdjęciach wychodzą równiej, a karty mniej brudzą głowicę. Do identyfikatorów z tekstem i logo wystarczy Standard, do zdjęć na całej karcie lepsza jest Premium.' },
+      { question: 'Ile kart wydrukuję z jednej taśmy?', answer: 'Taśma kolorowa YMCKO do Magicard 300 daje 300 kart jednostronnych, do Pronto100 100 kart, do Zebra ZC300 200 kart. Taśma jednokolorowa MA1000K daje 1000 kart. Druk dwustronny w kolorze zużywa dwa panele na kartę.' },
+      { question: 'Czy sprzedajecie karty na sztuki?', answer: 'Karty zbliżeniowe tak, od jednej sztuki, a od 100 i od 1000 sztuk cena spada. Karty plastikowe bez chipu sprzedajemy w opakowaniach po 100 sztuk, karty Zebra Premier po 500.' },
     ],
     comparisons: [
-      { title: 'Karty białe vs z paskiem magnetycznym vs RFID', content: 'Białe: najtańsze, do identyfikatorów wizualnych i kart lojalnościowych z kodem kreskowym. Pasek magnetyczny: do kontroli dostępu i systemów rejestracji czasu pracy (RCP), HiCo zalecany. RFID: bezkontaktowe, najwygodniejsze, do nowoczesnych systemów kontroli dostępu — przyłóż kartę do czytnika bez wyjmowania z portfela.' },
+      { title: 'Karta plastikowa vs karta zbliżeniowa', content: 'Plastikowa: 38 groszy do 1,20 zł za sztukę, identyfikator wizualny, kod kreskowy, karta klubowa. Zbliżeniowa: od 1,85 zł za Unique do kilkunastu złotych za DESFire, otwiera drzwi i zapisuje dane. Jeśli karta ma kiedykolwiek otwierać drzwi, od razu weź zbliżeniową: dodruk drugiej karty i wymiana wszystkich identyfikatorów kosztuje więcej niż różnica w cenie.' },
+      { title: 'Unique 125 kHz vs MIFARE i DESFire 13,56 MHz', content: 'Unique jest najtańsza i działa z większością starszych czytników, ale numer da się skopiować prostym urządzeniem. MIFARE Classic 1K ma pamięć z zapisem, DESFire EV3 do tego szyfrowanie AES i certyfikat EAL5+. Do biura i szkoły wystarczy Unique, do stref chronionych, e-legitymacji i portmonetki elektronicznej DESFire.' },
     ],
     howToSteps: [
-      { name: 'Określ zastosowanie karty', text: 'Identyfikator wizualny → karta biała. Kontrola dostępu kontaktowa → pasek magnetyczny HiCo. Kontrola dostępu bezkontaktowa → RFID (Mifare DESFire). Lojalność → karta biała z kodem kreskowym.' },
-      { name: 'Wybierz drukarkę kart', text: 'Economy/jednorazowe → ZC100 (single-sided). Standard/dwustronne → ZC300. RFID/enkodowanie → ZC350. Duży wolumen → ZXP Series 7.' },
-      { name: 'Zamów karty i taśmy', text: 'Karty PVC CR-80 (100 lub 500 szt.) + taśma YMCKO (200 paneli). Taśma czarno-biała KdO (2000 paneli) do druku mono. Dodaj hologram jeśli wymaga zabezpieczeń.' },
+      { name: 'Sprawdź system dostępu', text: 'Jeśli karta ma otwierać drzwi, ustal typ czytników: 125 kHz (Unique) czy 13,56 MHz (MIFARE, DESFire). Bez dostępu do budynku wybierz kartę plastikową bez chipu.' },
+      { name: 'Wybierz powierzchnię i kolor', text: 'Zdjęcia i grafika na całej karcie: biała Premium Fotodek. Tekst i logo: biała Standard. Karty VIP: srebrna albo czarna pod taśmę jednokolorową. Zabezpieczenie: HoloPatch do Magicard.' },
+      { name: 'Dobierz taśmę i ilość', text: 'Taśma YMCKO do kolorowych identyfikatorów, MA1000K do druku w jednym kolorze. Karty plastikowe po 100 sztuk, zbliżeniowe na sztuki; od 100 sztuk cena za sztukę spada.' },
+    ],
+  },
+
+  'karty-plastikowe': {
+    updatedAt: '2026-09-12',
+    definition: {
+      heading: 'Karty plastikowe PVC bez chipu',
+      content: 'Karta plastikowa PVC to biała albo kolorowa karta w formacie CR-80 (85,6 × 54 mm, 0,76 mm) bez chipu i paska magnetycznego, przeznaczona do zadruku w drukarce kart. Drukarka nanosi na nią zdjęcie, dane i grafikę termosublimacyjnie, z taśmy kolorowej YMCKO albo jednokolorowej. To najtańszy materiał do identyfikatorów, legitymacji, kart klubowych, lojalnościowych i wizytówek plastikowych. Białe Standard kosztują niecałe 40 groszy za sztukę, Premium Fotodek dają lepszy druk zdjęć, kolorowe są barwione w masie, HoloPatch mają pole pod znak wodny Magicard, a samoprzylepne nakleja się na grube karty dostępu. Wszystkie pasują do drukarek Magicard Pronto100, 300, 600 Duo i Zebra ZC100, ZC300, ZC350.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać kartę plastikową?',
+      items: [
+        'Identyfikator z tekstem i logo — biała Standard AC-76S, 100 szt. za 38,15 zł',
+        'Zdjęcie i grafika na całej karcie — biała Premium Fotodek, ciepły odcień bieli, równiejszy druk',
+        'Karta VIP, wizytówka, karta podarunkowa — srebrna albo czarna, druk taśmą jednokolorową',
+        'Przepustka trudna do podrobienia — HoloPatch ze złotym polem pod znak HoloKote z drukarki Magicard',
+        'Karty clamshell 1,8 mm, których drukarka nie przyjmie — karta samoprzylepna 0,40 mm do naklejenia',
+        'Karty tymczasowe dla gości — cienkie Zebra Premier 0,25 mm, 500 szt.',
+      ],
+    },
+    expertAuthority: 'TAKMA sprzedaje i serwisuje drukarki kart Magicard i Zebra ZC. Głowica drukująca to najdroższa część drukarki, a najczęściej niszczy ją pył z tanich kart. Dlatego w ofercie są karty Fotodek z ostrzejszą kontrolą jakości i oryginalne Zebra Premier, a przy każdym zamówieniu podpowiadamy, jak często czyścić drukarkę: co 700 kart w Magicard 300.',
+    technicalDeepDive: 'Karty są z czystego PVC, bez domieszki PET, co daje równomierne podawanie i jednolity odbiór barwnika z taśmy. Grubość 0,76 mm (30 mil) z tolerancją ±0,08 mm odpowiada kartom bankowym i mieści się w zakresie każdej drukarki kart: Magicard od 0,5 do 1,27 mm, Zebra ZC od 0,25 do 1,02 mm. Powierzchnia Fotodek to gładszy laminat o mniejszej ilości pyłu i zadziorów, który przyjmuje barwnik równiej i mniej brudzi głowicę. Karty kolorowe są barwione w masie, więc kolor jest także na krawędziach i nie wytrze się. Karta HoloPatch ma w stałym miejscu złote pole; znak wodny HoloKote, który drukarka Magicard nanosi warstwą ochronną taśmy, na tym polu odbija światło jak hologram i jest widoczny pod każdym kątem. Karta samoprzylepna ma 0,40 mm PVC, klej permanentny i 0,175 mm papierowego podkładu; drukuje się ją z podkładem, który zdejmuje się tuż przed naklejeniem.',
+    useCases: [
+      { title: 'Identyfikatory pracownicze', description: 'Biała Standard albo Premium, zdjęcie, imię, stanowisko i kod kreskowy z drukarki Magicard 300 albo Zebra ZC300. Druk dwustronny: awers ze zdjęciem, rewers z regulaminem i kontaktem.' },
+      { title: 'Legitymacje szkolne', description: 'Biała Premium Fotodek pod zdjęcie ucznia, taśma YMCKO, drukarka Pronto100 albo Magicard 300 w sekretariacie. Znak HoloKote na karcie HoloPatch, gdy legitymacja ma być trudna do podrobienia.' },
+      { title: 'Karty klubowe i lojalnościowe', description: 'Biała Standard z kodem kreskowym i logo, od 38 groszy za kartę. Wersja premium: karta srebrna albo czarna z logo w kolorze taśmy jednokolorowej.' },
+      { title: 'Personalizacja kart clamshell', description: 'Grube karty 125 kHz nie wejdą do drukarki. Karta samoprzylepna 0,40 mm: druk, zdjęcie podkładu, naklejenie. Identyfikator ze zdjęciem na karcie, która już otwiera drzwi.' },
+    ],
+    uniqueInsights: {
+      heading: 'Co warto wiedzieć przed zamówieniem',
+      items: [
+        { title: 'Kolorowa taśma na czarnej karcie nie zadziała', text: 'Druk termosublimacyjny nakłada półprzezroczyste barwniki bez białego. Na srebrnej i czarnej karcie drukuj taśmą jednokolorową MA1000K: czarną na srebrze, srebrną, złotą albo białą na czerni. Zdjęcia zostaw na kartach białych.' },
+        { title: 'HoloPatch działa tylko z Magicard', text: 'Efekt hologramu daje znak wodny HoloKote, który nanoszą wyłącznie drukarki Magicard. Zebra zadrukuje kartę HoloPatch jak zwykłą, ale złote pole zostanie puste. Przed serią wydrukuj jedną kartę testową i sprawdź, czy zdjęcie nie zachodzi na pole.' },
+        { title: 'Tanie karty kosztują głowicę', text: 'Pył i zadziory z kart niskiej jakości osiadają na głowicy i zostawiają białe kreski na wydrukach. Wymiana głowicy w Magicard 300 kosztuje więcej niż kilka tysięcy kart Fotodek. Czyść drukarkę kartą czyszczącą co 700 kart albo przy każdej wymianie taśmy.' },
+      ],
+    },
+    faq: [
+      { question: 'Czym różni się karta Standard od Premium?', answer: 'Standard ma zwykłą gładką powierzchnię i kosztuje niecałe 40 groszy za sztukę. Premium ma powierzchnię Fotodek w ciepłym odcieniu bieli: kolory na zdjęciach wychodzą równiej, skóra nie wpada w siny ton, a karty mniej brudzą głowicę. Do identyfikatorów z tekstem i logo wystarczy Standard, do zdjęć na całej karcie lepsza jest Premium.' },
+      { question: 'Czy te karty działają z kontrolą dostępu?', answer: 'Nie, to karty bez chipu. Do drzwi, szlabanów i rejestratorów czasu pracy potrzebna jest karta zbliżeniowa Unique albo MIFARE z kategorii Karty zbliżeniowe RFID i NFC. Drukuje się ją tak samo.' },
+      { question: 'Jaką taśmą drukować na kartach kolorowych?', answer: 'Jednokolorową: czarną na srebrnej, srebrną, złotą albo białą na czarnej. Do Magicard to taśma MA1000K, 1000 kart z rolki. Taśma kolorowa YMCKO na ciemnej karcie daje przygaszone barwy, bo nie ma białego panelu.' },
+      { question: 'Ile kart jest w opakowaniu?', answer: 'Karty plastikowe ACSS po 100 sztuk, karty Zebra Premier po 500. Przy zamówieniu od 5 opakowań kart Premium cena za opakowanie spada.' },
+      { question: 'Co to jest HoloPatch?', answer: 'Karta ze złotym polem w stałym miejscu. Drukarka Magicard nanosi na każdą kartę przezroczysty znak wodny HoloKote, widoczny pod światło. Na złotym polu ten sam znak mieni się jak hologram i widać go od razu. W Magicard 600 Duo znak może być własnym logo firmy, więc kopia bez dostępu do drukarki jest praktycznie niewykonalna.' },
+    ],
+    comparisons: [
+      { title: 'Standard vs Premium Fotodek vs Zebra Premier', content: 'Standard: 38,15 zł za 100 sztuk, gładka śnieżnobiała powierzchnia, do tekstu i logo. Premium Fotodek: 62,15 zł za 100, ciepła biel, równiejszy druk zdjęć, mniej pyłu na głowicy. Zebra Premier: oryginalne karty producenta drukarek ZC, opakowanie 500 sztuk, w wersji 0,76 i cienkiej 0,25 mm.' },
+    ],
+    howToSteps: [
+      { name: 'Ustal, co będzie na karcie', text: 'Tekst, logo i kod kreskowy: biała Standard. Zdjęcie i grafika na całej powierzchni: biała Premium Fotodek. Logo w jednym kolorze na karcie VIP: srebrna albo czarna.' },
+      { name: 'Dobierz taśmę do karty', text: 'Białe karty: taśma kolorowa YMCKO albo czarna MA1000K. Karty srebrne i czarne: wyłącznie taśma jednokolorowa. HoloPatch: dowolna taśma z warstwą ochronną, HoloKote włączony w sterowniku.' },
+      { name: 'Wydrukuj kartę testową', text: 'Przed serią sprawdź jedną kartę: położenie zdjęcia względem złotego pola HoloPatch, czytelność kodu kreskowego, brak białych kresek. Kreski oznaczają brud na głowicy, przeczyść drukarkę kartą czyszczącą.' },
+    ],
+  },
+
+  'karty-zblizeniowe': {
+    updatedAt: '2026-09-12',
+    definition: {
+      heading: 'Karty zbliżeniowe RFID i NFC do zadruku',
+      content: 'Karta zbliżeniowa to biała karta PVC w formacie CR-80 z chipem i anteną zalaminowanymi w środku. Czytnik zasila chip przez pole radiowe i odczytuje numer albo dane bez dotykania karty, z odległości kilku centymetrów. Z zewnątrz karta nie różni się od zwykłej, więc drukarka kart nanosi na nią zdjęcie i dane tak samo, a jedna karta jest identyfikatorem i kluczem do drzwi, szlabanu, rejestratora czasu pracy albo stołówki. W ofercie są karty Unique 125 kHz do systemów Roger i Satel, MIFARE Classic 1K i DESFire EV1 / EV3 na 13,56 MHz, NTAG213 i NTAG216 czytane telefonem oraz karty dualne z dwoma chipami. Sprzedajemy na sztuki, od 1,85 zł, a od 100 i od 1000 sztuk cena spada.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać kartę zbliżeniową?',
+      items: [
+        'Czytniki 125 kHz: Roger, Satel, domofony, szlabany — Unique, bez numeru albo z nadrukowanym numerem',
+        'Karta ma zapisywać dane: czas pracy, stołówka, biblioteka — MIFARE Classic 1K',
+        'Strefy chronione, e-legitymacja, portmonetka elektroniczna — DESFire EV3 z szyfrowaniem AES; EV1 tam, gdzie system nie obsługuje EV3',
+        'Wizytówka NFC, link do opinii Google, menu w restauracji — NTAG213 (144 B) albo NTAG216 (888 B)',
+        'Parking na 125 kHz, drzwi na 13,56 MHz — karta dualna Unique + MIFARE albo Unique + DESFire',
+        'Rejestracja bez czytnika administracyjnego — wersja z nadrukowanym numerem',
+      ],
+    },
+    expertAuthority: 'TAKMA dobiera karty do systemu, który już działa u klienta: sprawdzamy typ czytników, format numeru w programie kontroli dostępu i grubość, jaką przyjmie drukarka. Sprzedajemy i serwisujemy drukarki Magicard i Zebra ZC, więc wiemy, jak karta z chipem zachowuje się w podajniku i przy druku dwustronnym. Jeśli nie znasz typu swoich czytników, wyślij zdjęcie obecnej karty albo model czytnika, a dobierzemy odpowiednik.',
+    technicalDeepDive: 'Unique (EM4100, TK4100) pracuje na 125 kHz i ma 64-bitowy numer zapisany fabrycznie, tylko do odczytu; to standard starszych systemów kontroli dostępu w Polsce. MIFARE Classic 1K na 13,56 MHz (ISO 14443A) ma 1 kB pamięci w 16 sektorach z zapisem, chip NXP. DESFire EV1 i EV3 to chipy NXP z systemem plików, wieloma aplikacjami na jednej karcie i szyfrowaniem AES-128; EV3 ma certyfikat Common Criteria EAL5+ i pojemności 2K, 4K albo 8K. NTAG213 i NTAG216 to chipy NFC Forum Type 2 czytane każdym telefonem z NFC, bez aplikacji. Karty dualne mają dwie niezależne anteny i dlatego 0,80 mm grubości zamiast 0,76 mm. Chip 125 kHz nie da się zaprogramować drukarką; chipy 13,56 MHz programuje Zebra ZC300 z koderem albo osobny programator USB.',
+    useCases: [
+      { title: 'Identyfikator i klucz w jednym', description: 'Unique 125 kHz z nadrukowanym numerem, zdjęcie i dane z drukarki Magicard 300. Numer przepisuje się do programu Rogera albo Satela, karta otwiera drzwi i bramkę od pierwszego dnia.' },
+      { title: 'Elektroniczna legitymacja', description: 'DESFire EV3 4K: legitymacja ze zdjęciem, dostęp do budynku, biblioteka i stołówka w osobnych aplikacjach z szyfrowaniem. Druk w Pronto100 albo Magicard 300, programowanie chipu programatorem USB.' },
+      { title: 'Rejestracja czasu pracy', description: 'MIFARE Classic 1K albo Unique, zależnie od rejestratora. Zapis zdarzeń w systemie, identyfikator ze zdjęciem na karcie, tania wymiana zgubionej karty.' },
+      { title: 'Wizytówka NFC', description: 'NTAG216 z zapisanym linkiem do strony, profilu LinkedIn albo opinii Google. Zadruk logo i danych w drukarce kart, odczyt każdym telefonem bez aplikacji.' },
+    ],
+    uniqueInsights: {
+      heading: 'Co warto wiedzieć przed zamówieniem',
+      items: [
+        { title: 'Drukarka nie zapisuje chipu 125 kHz', text: 'Karty Unique mają numer fabryczny, tylko do odczytu. Drukarka nanosi grafikę, a numer wpisuje się w programie kontroli dostępu albo odczytuje czytnikiem w trybie dodawania użytkownika. Kartę bez numeru trzeba przyłożyć do czytnika przy rejestracji, kartę z numerem można wpisać ręcznie.' },
+        { title: 'Numer w dwóch zapisach', text: 'Karty Unique z nadrukiem mają numer w zapisie dziesięciocyfrowym i 3+5 cyfr, bo programy kontroli dostępu używają różnych formatów. Przy projekcie karty zostaw wolny pasek na dole, żeby zdjęcie i grafika nie zakryły numeru.' },
+        { title: 'Unique da się skopiować', text: 'Numer karty 125 kHz kopiuje proste urządzenie za kilkadziesiąt złotych. Do biura i szkoły to zwykle wystarcza, ale do stref chronionych, e-legitymacji i portmonetki weź DESFire EV3: szyfrowanie AES i klucze, których nie da się odczytać z karty.' },
+      ],
+    },
+    faq: [
+      { question: 'Czy karty zbliżeniowe drukuje się tak samo jak zwykłe?', answer: 'Tak. Chip i antena są w środku, powierzchnia jest gładka i biała, więc drukarki Magicard i Zebra ZC nie wymagają zmian w ustawieniach. Karty dualne mają 0,80 mm zamiast 0,76 mm, co nadal mieści się w zakresie każdej drukarki kart.' },
+      { question: 'Jaką kartę do systemu Roger albo Satel?', answer: 'Do czytników 125 kHz kartę Unique. Nowsze czytniki Rogera na 13,56 MHz obsługują MIFARE Classic i DESFire. Jeśli nie wiesz, jaki chip czytają Twoje czytniki, wyślij zdjęcie obecnej karty albo model czytnika.' },
+      { question: 'Czy drukarka może zaprogramować chip?', answer: 'Chipu 125 kHz nie programuje nikt, numer jest fabryczny. Chipy MIFARE i DESFire programuje Zebra ZC300 z koderem w tym samym przejściu co druk albo osobny programator USB. Magicard Pronto100, 300 i 600 Duo tylko drukują.' },
+      { question: 'Czym różni się DESFire EV1 od EV3?', answer: 'EV3 jest nowszy: szybszy odczyt, certyfikat EAL5+, funkcje transakcyjne i wykrywanie zbliżenia. EV1 jest tańszy i nadal obsługiwany przez większość systemów. Jeśli system dostępu jest nowy, weź EV3; jeśli już pracuje na EV1, zostań przy EV1, chyba że integrator potwierdzi zgodność.' },
+      { question: 'Czy karty mają nadrukowany numer?', answer: 'Karty Unique tak, w wersji UNQE1U i UNQE1. Karty MIFARE, DESFire, NTAG i dualne bez numeru, nadruk numeru robimy na zamówienie.' },
+      { question: 'Ile kosztuje karta zbliżeniowa?', answer: 'Unique od 1,85 zł za sztukę, MIFARE 1K od 1,80 zł, NTAG213 od 2,30 zł, DESFire EV1 2K od 8,70 zł, DESFire EV3 od 11,30 zł, karty dualne od 3,35 zł. Od 100 sztuk cena za sztukę spada, od 1000 sztuk jeszcze raz.' },
+    ],
+    comparisons: [
+      { title: 'Unique 125 kHz vs MIFARE Classic 1K vs DESFire EV3', content: 'Unique: najtańsza, numer tylko do odczytu, działa z większością starszych czytników, łatwa do skopiowania. MIFARE Classic 1K: pamięć 1 kB z zapisem, dostęp i czas pracy na jednej karcie, szyfrowanie Crypto-1 uznawane za słabe. DESFire EV3: szyfrowanie AES-128, wiele aplikacji, certyfikat EAL5+, do stref chronionych i e-legitymacji.' },
+      { title: 'Karta z numerem vs bez numeru', content: 'Z numerem: rejestracja w systemie bez czytnika, łatwiejsza obsługa zgubionych kart, ale numer widać na identyfikatorze. Bez numeru: czysty wygląd, każdą kartę trzeba przyłożyć do czytnika przy rejestracji. Przy dużych nakładach warto wziąć z numerem i zostawić pasek na dole projektu.' },
+    ],
+    howToSteps: [
+      { name: 'Sprawdź czytniki', text: 'Zajrzyj do dokumentacji systemu albo wyślij nam zdjęcie obecnej karty i model czytnika. 125 kHz to Unique, 13,56 MHz to MIFARE, DESFire albo NTAG.' },
+      { name: 'Wybierz wersję numeru', text: 'Z nadrukowanym numerem, gdy rejestrujesz karty ręcznie w programie. Bez numeru, gdy identyfikator ma wyglądać czysto i masz czytnik administracyjny.' },
+      { name: 'Zamów na sztuki', text: 'Od 1 sztuki, od 100 sztuk taniej, od 1000 sztuk jeszcze taniej. Koszyk przelicza cenę przy zmianie ilości. Do druku dobierz taśmę YMCKO albo jednokolorową MA1000K.' },
     ],
   },
 

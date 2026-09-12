@@ -263,6 +263,11 @@ export async function middleware(request: NextRequest) {
       'karta-mifare-1k-iso-mfrc1', 'karta-desfire-ev1-2k-iso-mdev12', 'karta-desfire-ev1-4k-iso-mdev14', 'karta-desfire-ev1-8k-iso-mdev18',
       'karta-desfire-ev3-2k-mdev32', 'karta-desfire-ev3-4k-iso-mdev34', 'karta-desfire-ev3-8k-mdev38', 'karta-nfc-ntag213-ntag213c',
       'karta-nfc-ntag216-ntag216c', 'karta-dualna-unique-mifare-1k-unq-mfrc1', 'karta-dualna-unique-desfire-ev1-2k-mdev12-unq', 'karta-dualna-unique-desfire-ev1-4k-mdev14-unq', 'karta-dualna-unique-desfire-ev3-4k-mdev34-unq',
+      // Karty PVC bez chipu (ACSS)
+      'karty-pvc-standard-biale-ac-76s', 'karty-pvc-premium-fotodek-wf76-af', 'karty-pvc-holopatch-magicard-hp6-76-gd-a',
+      'karty-pvc-samoprzylepne-pvc1-sa40', 'karty-pvc-srebrne-si76-a-sc', 'karty-pvc-czarne-bk76-a-sc',
+      // Zestawy startowe drukarek kart
+      'magicard-300-zestaw-startowy', 'magicard-tasma-ymckok-300-250-mc250ymcko-s',
     ])
 
     // Jeśli slug NIE istnieje na nowej stronie → redirect do strony przebudowy

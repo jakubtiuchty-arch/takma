@@ -187,6 +187,8 @@ export const PL_MANUAL_BANNER = '/images/instrukcje/banner-pl.webp'
 export type ManualBlock =
   | { type: 'p'; text: string }
   | { type: 'list'; ordered?: boolean; items: string[] }
+  /** Własny film MP4 (np. instruktaż z polskim lektorem) z plakatem i podpisem; w PDF zostaje sam podpis. */
+  | { type: 'video'; src: string; poster?: string; caption: string; /** napisy WebVTT (pl) */ captions?: string }
 
 export interface PolishManualSection {
   title: string

@@ -48,6 +48,6 @@ tmp-banner/
 
 # Surowe rendery produktowe (źródła, dziesiątki MB) — webp/png trafiają do public/
 TC201/
-Karty*/
+/Karty*/
 .image-backup/
 ET401_acc/

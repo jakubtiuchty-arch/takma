@@ -11,7 +11,7 @@ import type { Product } from '@/data/products'
  * wariantu (cena w przycisku), obok skrót do wyboru wariantu i telefon. Bez ceny zostaje
  * zapytanie o produkt. Wcześniej pasek zawsze promował tylko zapytanie i telefon.
  */
-export default function MobileCta({ product, hasVariants }: { product: Product; hasVariants: boolean }) {
+export default function MobileCta({ product, hasVariants, bundle }: { product: Product; hasVariants: boolean; bundle?: { price: number; href: string } }) {
   const { price, loading } = useSmartPrice()
   const canBuy = loading || !!price
   return (
@@ -24,7 +24,16 @@ export default function MobileCta({ product, hasVariants }: { product: Product; 
             <AskAboutProductButton productName={product.name} productSlug={product.slug} compact />
           )}
         </div>
-        {canBuy && hasVariants && (
+        {canBuy && bundle && (
+          <a
+            href={bundle.href}
+            className="flex flex-col items-center justify-center h-12 px-3 rounded-lg border border-gray-300 bg-white text-xs font-medium text-gray-800 shrink-0 leading-tight"
+          >
+            <span>Zestaw</span>
+            <span className="tabular-nums text-gray-500">{bundle.price.toLocaleString('pl-PL')} zł</span>
+          </a>
+        )}
+        {canBuy && hasVariants && !bundle && (
           <a
             href="#warianty"
             className="flex items-center justify-center h-12 px-3 rounded-lg border border-gray-300 bg-white text-sm font-medium text-gray-800 shrink-0"
@@ -42,7 +51,7 @@ export default function MobileCta({ product, hasVariants }: { product: Product; 
       </div>
       {canBuy && !loading && price && (
         <p className="mt-1 text-center text-xs text-gray-500 tabular-nums">
-          {price.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł netto za wybrany wariant
+          {price.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł netto {bundle ? 'za samą drukarkę, bez taśmy i kart' : 'za wybrany wariant'}
         </p>
       )}
     </div>

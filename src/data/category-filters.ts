@@ -1015,6 +1015,87 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
     },
     // bez filtra ceny: karty Zebra są wyceniane za opakowanie, karty Unique za sztukę — jedna skala nie ma sensu
   ],
+  'karty-plastikowe': [
+    {
+      specKey: 'kolor',
+      label: 'Kolor',
+      description: 'Białe pod druk kolorowy i zdjęcia. Srebrne i czarne pod taśmy jednokolorowe: logo, nazwisko, numer.',
+      derived: [
+        { value: 'Białe', pattern: '^(Biał|Śnieżnobiał|Ciepła biel)', specs: ['Kolor'] },
+        { value: 'Srebrne', pattern: '^Srebrn', specs: ['Kolor'] },
+        { value: 'Czarne', pattern: '^Czarn', specs: ['Kolor'] },
+      ],
+    },
+    {
+      specKey: 'typ',
+      label: 'Typ karty',
+      description: '• Zwykła — do identyfikatorów i kart klubowych\n• HoloPatch — złote pole, na którym znak HoloKote z Magicard wygląda jak hologram\n• Samoprzylepna — do naklejenia na grubą kartę dostępu, której drukarka nie przyjmie',
+      derived: [
+        { value: 'Zwykła', pattern: 'do zadruku$|kolorowa$', specs: ['Rodzaj karty'] },
+        { value: 'HoloPatch (Magicard)', pattern: 'HoloPatch', specs: ['Rodzaj karty'] },
+        { value: 'Samoprzylepna', pattern: 'samoprzylepna', specs: ['Rodzaj karty'] },
+      ],
+    },
+    {
+      specKey: 'grubosc',
+      label: 'Grubość karty',
+      description: 'Standard to 0,76 mm, tyle co karta bankowa. 0,40 mm to karta samoprzylepna, 0,25 mm cienka do kart tymczasowych.',
+      derived: [
+        { value: '0,76 mm — standard', pattern: '0,76|30 mil', specs: ['Grubość'] },
+        { value: '0,40 mm — samoprzylepna', pattern: '0,40', specs: ['Grubość'] },
+        { value: '0,25 mm — cienka', pattern: '0,25|10 mil', specs: ['Grubość'] },
+      ],
+    },
+    {
+      specKey: 'opakowanie',
+      label: 'Opakowanie',
+      derived: [
+        { value: '100 szt.', pattern: '^100', specs: ['Opakowanie'] },
+        { value: '500 szt.', pattern: '^500', specs: ['Opakowanie'] },
+      ],
+    },
+  ],
+  'karty-zblizeniowe': [
+    {
+      specKey: 'rodzaj',
+      label: 'Rodzaj chipu',
+      description: '• Unique 125 kHz — numer tylko do odczytu; otwiera drzwi w systemach Roger i Satel\n• MIFARE 1K — pamięć 1 kB z zapisem: dostęp, czas pracy, stołówka na jednej karcie\n• DESFire EV1 / EV3 — szyfrowanie AES, wiele aplikacji; strefy chronione, e-legitymacje, karty miejskie\n• NTAG213 / NTAG216 — czytana telefonem; wizytówka NFC, link do opinii\n• Dualna — dwa chipy: 125 kHz do szlabanu i starszych czytników + 13,56 MHz do drzwi',
+      derived: [
+        { value: 'Unique 125 kHz', pattern: '^Zbliżeniowa Unique', specs: ['Rodzaj karty'] },
+        { value: 'MIFARE 1K', pattern: '^Zbliżeniowa MIFARE Classic 1K', specs: ['Rodzaj karty'] },
+        { value: 'DESFire EV1', pattern: '^Zbliżeniowa MIFARE DESFire EV1', specs: ['Rodzaj karty'] },
+        { value: 'DESFire EV3', pattern: '^Zbliżeniowa MIFARE DESFire EV3', specs: ['Rodzaj karty'] },
+        { value: 'NFC NTAG213 / 216', pattern: 'NTAG21', specs: ['Rodzaj karty'] },
+        { value: 'Dualna 125 kHz + 13,56 MHz', pattern: '^Dualna', specs: ['Rodzaj karty'] },
+      ],
+    },
+    {
+      specKey: 'czestotliwosc',
+      label: 'Częstotliwość',
+      description: '125 kHz to starsze systemy: Roger, Satel, domofony, szlabany. 13,56 MHz to MIFARE, DESFire i NFC w telefonie.',
+      derived: [
+        { value: '125 kHz', pattern: '125 kHz', specs: ['Częstotliwość'] },
+        { value: '13,56 MHz', pattern: '13,56 MHz', specs: ['Częstotliwość'] },
+      ],
+    },
+    {
+      specKey: 'numer',
+      label: 'Nadrukowany numer',
+      description: 'Numer na karcie pozwala wpisać ją do systemu dostępu bez czytnika. Dla MIFARE i DESFire nadruk numeru na zamówienie.',
+      derived: [
+        { value: 'Bez numeru', pattern: '^Brak', specs: ['Numer nadrukowany'] },
+        { value: 'Z numerem', pattern: '^Tak', specs: ['Numer nadrukowany'] },
+      ],
+    },
+    {
+      specKey: 'drukarka',
+      label: 'Do drukarki',
+      derived: [
+        { value: 'Magicard', pattern: 'Magicard', specs: ['Kompatybilność'] },
+        { value: 'Zebra ZC', pattern: 'ZC100|ZC300', specs: ['Kompatybilność'] },
+      ],
+    },
+  ],
   'tasmy-do-drukarek-kart': [
     {
       specKey: 'producent',

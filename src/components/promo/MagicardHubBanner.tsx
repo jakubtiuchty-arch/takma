@@ -52,8 +52,8 @@ export default function MagicardHubBanner({ printerName }: { printerName: string
         <p className="mb-2 text-[11px] font-bold uppercase tracking-[0.18em] text-sky-300">Program w cenie drukarki</p>
         <p className="text-lg sm:text-xl font-extrabold tracking-tight leading-tight">Magicard HUB: projektowanie kart bez opłat</p>
         <p className="mt-2 text-[13.5px] sm:text-sm text-white/75 leading-relaxed max-w-[30rem]">
-          Do drukarki {printerName} producent dostarcza bezpłatny program: instalacja przez USB, Wi-Fi lub Ethernet,
-          projektant identyfikatorów i legitymacji, dane z listy uczniów lub pracowników, kody QR.
+          Do drukarki {printerName} producent dostarcza bezpłatny program dla Windows 10/11: instalacja drukarki,
+          projektant identyfikatorów i legitymacji, dane z listy uczniów lub pracowników, kody QR. Sterowniki są też dla macOS i Linuksa.
         </p>
         <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-white group-hover:underline">
           <DownloadIcon size={16} />
