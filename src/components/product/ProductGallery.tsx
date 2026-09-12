@@ -5,31 +5,52 @@ import Image from 'next/image'
 import clsx from 'clsx'
 import { ChevronLeftIcon, ChevronRightIcon } from '@/components/ui/Icons'
 
+/** Obrót 360° jako ostatni slajd galerii: krótki MP4 bez dźwięku w pętli, miniatura z plakatem i znaczkiem 360°. */
+export type SpinVideo = { file: string; poster: string }
+
 interface ProductGalleryProps {
   images: string[]
   productName: string
   imageDescriptions?: string[]
+  spin?: SpinVideo
 }
 
-export default function ProductGallery({ images, productName, imageDescriptions }: ProductGalleryProps) {
+export default function ProductGallery({ images, productName, imageDescriptions, spin }: ProductGalleryProps) {
   const [activeIndex, setActiveIndex] = useState(0)
 
   const displayImages = images.length > 0 ? images : ['/images/products/placeholder.svg']
   const hasRealImages = images.length > 0 && images[0] !== '/images/products/placeholder.svg'
+  // Slajdy = zdjęcia + (opcjonalnie) obrót 360° na końcu
+  const slideCount = displayImages.length + (spin ? 1 : 0)
+  const spinIndex = spin ? displayImages.length : -1
+  const isSpin = activeIndex === spinIndex
 
   const goToPrev = () => {
-    setActiveIndex((prev) => (prev === 0 ? displayImages.length - 1 : prev - 1))
+    setActiveIndex((prev) => (prev === 0 ? slideCount - 1 : prev - 1))
   }
 
   const goToNext = () => {
-    setActiveIndex((prev) => (prev === displayImages.length - 1 ? 0 : prev + 1))
+    setActiveIndex((prev) => (prev === slideCount - 1 ? 0 : prev + 1))
   }
 
   return (
     <div className="space-y-4">
       {/* Main image */}
       <figure className="relative aspect-[4/3] sm:aspect-square bg-white rounded-2xl overflow-hidden group">
-        {hasRealImages ? (
+        {isSpin && spin ? (
+          <video
+            key="spin"
+            src={spin.file}
+            poster={spin.poster}
+            className="absolute inset-0 w-full h-full object-contain bg-white"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-label={`${productName} — obrót 360°`}
+          />
+        ) : hasRealImages ? (
           <Image
             src={displayImages[activeIndex]}
             alt={imageDescriptions?.[activeIndex] || `${productName} — zdjęcie ${activeIndex + 1}`}
@@ -49,8 +70,20 @@ export default function ProductGallery({ images, productName, imageDescriptions 
           </div>
         )}
 
+        {/* Skrót do obrotu 360°, gdy oglądamy zdjęcie */}
+        {spin && !isSpin && (
+          <button
+            type="button"
+            onClick={() => setActiveIndex(spinIndex)}
+            className="absolute top-4 right-4 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gray-900/85 text-white text-xs font-semibold hover:bg-gray-900 transition-colors"
+            aria-label="Pokaż obrót 360°"
+          >
+            <span aria-hidden="true">↻</span> 360°
+          </button>
+        )}
+
         {/* Navigation arrows */}
-        {displayImages.length > 1 && (
+        {slideCount > 1 && (
           <>
             <button
               onClick={goToPrev}
@@ -70,18 +103,18 @@ export default function ProductGallery({ images, productName, imageDescriptions 
         )}
 
         {/* Image counter */}
-        {displayImages.length > 1 && (
+        {slideCount > 1 && (
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 px-3 py-1 bg-black/60 text-white text-sm rounded-full">
-            {activeIndex + 1} / {displayImages.length}
+            {isSpin ? 'Obrót 360°' : `${activeIndex + 1} / ${slideCount}`}
           </div>
         )}
         <figcaption className="sr-only">
-          {imageDescriptions?.[activeIndex] || `${productName} — zdjęcie produktu`}
+          {isSpin ? `${productName} — obrót 360°` : imageDescriptions?.[activeIndex] || `${productName} — zdjęcie produktu`}
         </figcaption>
       </figure>
 
       {/* Thumbnails */}
-      {displayImages.length > 1 && (
+      {slideCount > 1 && (
         <div className="flex gap-3 overflow-x-auto scrollbar-hide px-0.5">
           {displayImages.map((src, index) => (
             <button
@@ -111,6 +144,20 @@ export default function ProductGallery({ images, productName, imageDescriptions 
               )}
             </button>
           ))}
+          {spin && (
+            <button
+              onClick={() => setActiveIndex(spinIndex)}
+              className={clsx(
+                'w-16 h-16 xs:w-20 xs:h-20 flex-shrink-0 bg-white rounded-lg overflow-hidden transition-all relative',
+                isSpin ? 'opacity-100 ring-2 ring-primary-500' : 'opacity-50 hover:opacity-80'
+              )}
+              aria-label="Obrót 360°"
+              aria-current={isSpin ? 'true' : 'false'}
+            >
+              <Image src={spin.poster} alt={`${productName} — obrót 360°`} fill className="object-contain p-1" sizes="(max-width: 374px) 64px, 80px" />
+              <span className="absolute inset-x-0 bottom-0 bg-gray-900/80 text-white text-[10px] font-semibold text-center py-0.5">360°</span>
+            </button>
+          )}
         </div>
       )}
     </div>

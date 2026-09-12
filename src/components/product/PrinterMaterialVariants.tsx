@@ -189,7 +189,7 @@ export default function PrinterMaterialVariants({
   const hasMoreMobile = shown.length > MOBILE_LIMIT
 
   return (
-    <section id={id} className="scroll-mt-20 lg:scroll-mt-44">
+    <section id={id}>
       <h2 className="text-2xl font-bold text-gray-900 mb-4">{title}</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {shown.map((pick, i) => (

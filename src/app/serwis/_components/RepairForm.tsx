@@ -28,7 +28,7 @@ const repairFormSchema = z.object({
   nip: z.string().min(10, 'NIP musi miec 10 cyfr').max(10, 'NIP musi miec 10 cyfr'),
 
   // KROK 2: Szczegóły urządzenia
-  deviceType: z.enum(['drukarka', 'terminal', 'skaner', 'tablet', 'akcesoria', 'inne'], {
+  deviceType: z.enum(['drukarka', 'drukarka-kart', 'terminal', 'skaner', 'tablet', 'akcesoria', 'inne'], {
     message: 'Wybierz typ urządzenia',
   }),
   deviceModel: z.string().min(1, 'Wpisz model urządzenia'),
@@ -471,10 +471,11 @@ export default function RepairForm() {
                   >
                     <option value="">Wybierz typ urządzenia</option>
                     <option value="drukarka">Drukarka etykiet</option>
+                    <option value="drukarka-kart">Drukarka kart</option>
                     <option value="terminal">Terminal mobilny</option>
-                    <option value="skaner">Skaner kodow</option>
-                    <option value="tablet">Tablet przemyslowy</option>
-                    <option value="akcesoria">Akcesoria (glowica, walek, zasilacz...)</option>
+                    <option value="skaner">Skaner kodów</option>
+                    <option value="tablet">Tablet przemysłowy</option>
+                    <option value="akcesoria">Akcesoria (głowica, wałek, zasilacz…)</option>
                     <option value="inne">Inne</option>
                   </select>
                   {errors.deviceType && (
@@ -837,9 +838,10 @@ export default function RepairForm() {
                     <div className="space-y-2 text-sm">
                       <p><span className="text-gray-600">Typ:</span> <span className="font-medium">
                         {formData.deviceType === 'drukarka' && 'Drukarka etykiet'}
+                        {formData.deviceType === 'drukarka-kart' && 'Drukarka kart'}
                         {formData.deviceType === 'terminal' && 'Terminal mobilny'}
-                        {formData.deviceType === 'skaner' && 'Skaner kodow'}
-                        {formData.deviceType === 'tablet' && 'Tablet przemyslowy'}
+                        {formData.deviceType === 'skaner' && 'Skaner kodów'}
+                        {formData.deviceType === 'tablet' && 'Tablet przemysłowy'}
                         {formData.deviceType === 'akcesoria' && 'Akcesoria'}
                         {formData.deviceType === 'inne' && 'Inne'}
                       </span></p>

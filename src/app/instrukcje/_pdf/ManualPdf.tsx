@@ -1,4 +1,4 @@
-import { Document, Page, View, Text, Image, StyleSheet } from '@react-pdf/renderer'
+import { Document, Page, View, Text, Image, Link, StyleSheet } from '@react-pdf/renderer'
 import type { Manual, ManualBlock } from '@/data/manuals'
 
 const C = {
@@ -26,13 +26,18 @@ const s = StyleSheet.create({
   note: { marginTop: 18, paddingTop: 8, borderTopWidth: 1, borderTopColor: C.line, fontSize: 8, color: C.muted },
 })
 
-/** Zamienia **pogrubienie** na <Text> z fontWeight bold. */
+/** Zamienia **pogrubienie** na <Text> bold, a [tekst](/sciezka) na klikalny link do takma.com.pl. */
 function inline(text: string) {
-  return text.split(/(\*\*[^*]+\*\*)/g).filter(Boolean).map((part, i) =>
-    part.startsWith('**') && part.endsWith('**')
-      ? <Text key={i} style={{ fontWeight: 'bold', color: C.ink }}>{part.slice(2, -2)}</Text>
-      : <Text key={i}>{part}</Text>,
-  )
+  return text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\(\/[^)\s]*\))/g).filter(Boolean).map((part, i) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return <Text key={i} style={{ fontWeight: 'bold', color: C.ink }}>{part.slice(2, -2)}</Text>
+    }
+    const link = part.match(/^\[([^\]]+)\]\((\/[^)\s]*)\)$/)
+    if (link) {
+      return <Link key={i} src={`https://www.takma.com.pl${link[2]}`} style={{ color: C.brand, textDecoration: 'none' }}>{link[1]}</Link>
+    }
+    return <Text key={i}>{part}</Text>
+  })
 }
 
 function Block({ block }: { block: ManualBlock }) {

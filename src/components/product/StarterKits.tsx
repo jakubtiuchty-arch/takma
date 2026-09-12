@@ -10,8 +10,9 @@ import { PlusIcon, CheckIcon } from '@/components/ui/Icons'
 import AskAboutProductButton from '@/app/produkt/[slug]/AskAboutProductButton'
 
 /**
- * Komplet na pierwszy wydruk (audyt ZD421t, ZD-10): dwie sprawdzone pary etykieta + taśma
- * z konkretnymi PN-ami, cenami live z magazynu i jednym przyciskiem do koszyka.
+ * Komplet na pierwszy wydruk (audyt ZD421t, ZD-10): dwie pary etykieta + taśma z cenami live
+ * i jednym przyciskiem do koszyka. To dodatek pod wyborem wariantu, nie osobna sekcja jak opis:
+ * zwarta karta z miniaturą, jedną linią pozycji i jedną liczbą wydruków.
  * Dane kompletów siedzą w `Product.starterKits`; tu tylko rozwiązujemy PN → produkt/wariant.
  */
 type Kit = { title: string; description: string; partNumbers: string[]; image?: string; facts?: string[] }
@@ -26,6 +27,14 @@ function resolve(pn: string): Row | null {
 }
 
 const fmt = (v: number) => v.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+const fmtInt = (v: number) => Math.round(v).toLocaleString('pl-PL')
+const isLabelRow = (r: Row) => !!r.product.subcategoryIds?.some(id => id.startsWith('etykiety'))
+const labelsPerRoll = (r: Row) => parseInt((r.variant.attributes['Etykiet w rolce'] ?? '').replace(/\s/g, ''), 10) || null
+const labelHeightMm = (r: Row) => { const m = (r.variant.attributes['Rozmiar'] ?? '').match(/\d+\s*[×x]\s*(\d+)/); return m ? parseInt(m[1], 10) : null }
+const ribbonLengthM = (r: Row) => parseInt((r.variant.attributes['Długość'] ?? '').replace(/\s/g, ''), 10) || null
+/** Ile etykiet o danej wysokości zadrukuje rolka taśmy (odstęp między etykietami 3 mm). */
+const ribbonPrints = (lengthM: number, labelH: number) => Math.floor((lengthM * 1000) / (labelH + 3))
+const shortName = (r: Row) => `${r.product.name.replace(/^(Etykiety termotransferowe|Taśma termotransferowa) Zebra /, '')} ${(r.variant.attributes['Rozmiar'] ?? r.variant.name ?? '').replace(/\s*mm\/m.*$/, ' mm')}`.trim()
 
 export default function StarterKits({ kits, printerName, printerSlug }: { kits: Kit[]; printerName: string; printerSlug: string }) {
   const resolved = kits.map(k => ({ ...k, rows: k.partNumbers.map(resolve).filter((r): r is Row => r !== null) })).filter(k => k.rows.length > 0)
@@ -43,17 +52,25 @@ export default function StarterKits({ kits, printerName, printerSlug }: { kits: 
   const cartId = (r: Row) => `${r.product.slug}__${r.variant.partNumber}`
 
   return (
-    <section id="komplet" className="scroll-mt-24">
-      <h2 className="text-2xl font-bold text-gray-900 mb-2">Komplet na pierwszy wydruk</h2>
-      <p className="text-gray-600 mb-6">
-        Drukarka {printerName} jest sprzedawana bez materiałów. Dwa zestawy etykieta + taśma dobrane do niej rozmiarem, gilzą i długością rolki.
-      </p>
-      <div className="grid gap-5 md:grid-cols-2">
+    <section id="komplet">
+      <div className="flex items-baseline justify-between gap-3 flex-wrap mb-3">
+        <h2 className="text-lg font-bold text-gray-900">Komplet na pierwszy wydruk</h2>
+        <p className="text-sm text-gray-500">W pudełku drukarki {printerName} nie ma etykiet ani taśmy.</p>
+      </div>
+      <div className="grid gap-3 md:grid-cols-2">
         {resolved.map(kit => {
           const prices = kit.rows.map(r => livePrice(r.variant.partNumber))
           const complete = prices.every(p => p !== undefined)
           const total = complete ? prices.reduce((a, p) => a + (p ?? 0), 0) : undefined
           const allInCart = mounted && kit.rows.every(r => isInCart(cartId(r)))
+          const labelRow = kit.rows.find(isLabelRow)
+          const ribbonRow = kit.rows.find(r => !isLabelRow(r))
+          const labelsInRoll = labelRow ? labelsPerRoll(labelRow) : null
+          const labelH = labelRow ? labelHeightMm(labelRow) : null
+          const ribbonLen = ribbonRow ? ribbonLengthM(ribbonRow) : null
+          const prints = ribbonLen && labelH ? ribbonPrints(ribbonLen, labelH) : null
+          const kitPrints = labelsInRoll && prints ? Math.min(labelsInRoll, prints) : (labelsInRoll ?? prints)
+          const ribbonsForRoll = labelsInRoll && prints && prints < labelsInRoll ? Math.ceil(labelsInRoll / prints) : null
           const addKit = () => {
             kit.rows.forEach((r, i) => {
               if (isInCart(cartId(r))) return
@@ -69,76 +86,62 @@ export default function StarterKits({ kits, printerName, printerSlug }: { kits: 
             })
           }
           return (
-            <article key={kit.title} className="rounded-xl border border-slate-200 bg-white overflow-hidden flex flex-col">
+            <article key={kit.title} className="rounded-xl border border-slate-200 bg-white p-3 sm:p-4 flex flex-col sm:flex-row gap-3 sm:gap-4">
               {kit.image && (
-                <div className="relative aspect-[16/9] bg-slate-100">
-                  <Image src={kit.image} alt={kit.title} fill className="object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
+                <div className="relative w-full h-32 sm:w-32 sm:h-32 shrink-0 rounded-lg overflow-hidden bg-slate-100">
+                  <Image src={kit.image} alt={kit.title} fill className="object-cover" sizes="(min-width: 640px) 128px, 100vw" />
                 </div>
               )}
-              <div className="p-5 flex flex-col flex-1">
-              <h3 className="text-lg font-bold text-gray-900">{kit.title}</h3>
-              <p className="text-sm text-gray-600 mt-1">{kit.description}</p>
-              {kit.facts && kit.facts.length > 0 && (
-                <ul className="mt-3 mb-4 flex flex-wrap gap-x-4 gap-y-1 text-sm text-gray-700">
-                  {kit.facts.map(f => (
-                    <li key={f} className="inline-flex items-center gap-1.5"><CheckIcon size={14} className="text-green-600" />{f}</li>
+              <div className="min-w-0 flex-1 flex flex-col">
+                {/* Tytuł + jedno zdanie o zastosowaniu (fakty są w tym zdaniu, nie w osobnej linii) */}
+                <h3 className="font-bold text-gray-900 leading-tight">{kit.title}</h3>
+                <p className="text-sm text-gray-600 mt-0.5">{kit.facts?.length ? kit.facts.join(' · ') : kit.description}</p>
+                {/* Dwie pozycje jako czytelne wiersze: nazwa i jedna liczba; PN w dymku */}
+                <ul className="mt-3 space-y-1">
+                  {kit.rows.map(r => (
+                    <li key={r.variant.partNumber} className="flex items-baseline justify-between gap-3 text-sm">
+                      <Link
+                        href={`/produkt/${r.product.slug}/${variantSizeSlug(r.variant)}/${r.variant.partNumber}`}
+                        title={`PN ${r.variant.partNumber}`}
+                        className="font-medium text-gray-900 hover:text-primary-700 truncate"
+                      >
+                        {shortName(r)}
+                      </Link>
+                      <span className="text-gray-500 whitespace-nowrap tabular-nums">
+                        {isLabelRow(r) && labelsInRoll ? `${fmtInt(labelsInRoll)} etykiet` : !isLabelRow(r) && ribbonLen ? `rolka ${ribbonLen} m` : ''}
+                      </span>
+                    </li>
                   ))}
                 </ul>
-              )}
-              <ul className="divide-y divide-slate-100 border-y border-slate-100">
-                {kit.rows.map((r, i) => {
-                  const size = r.variant.attributes['Rozmiar'] ?? r.variant.name ?? ''
-                  const href = `/produkt/${r.product.slug}/${variantSizeSlug(r.variant)}/${r.variant.partNumber}`
-                  const img = r.product.images[0]
-                  return (
-                    <li key={r.variant.partNumber} className="flex items-center gap-3 py-3">
-                      <div className="relative h-12 w-12 shrink-0 bg-white">
-                        {img && !img.includes('placeholder') && <Image src={img} alt="" fill className="object-contain" sizes="48px" />}
-                      </div>
-                      <div className="min-w-0 flex-1">
-                        <Link href={href} className="text-sm font-semibold text-gray-900 hover:text-primary-700 leading-snug block">
-                          {r.product.name.replace(/^(Etykiety termotransferowe|Taśma termotransferowa) Zebra /, '')} {size}
-                        </Link>
-                        <p className="text-xs font-mono text-gray-500 whitespace-nowrap">PN {r.variant.partNumber}</p>
-                      </div>
-                      <div className="text-right text-sm tabular-nums whitespace-nowrap shrink-0">
-                        {loading ? <span className="inline-block h-4 w-16 bg-slate-100 rounded animate-pulse" />
-                          : prices[i] !== undefined ? <><strong className="text-gray-900">{fmt(prices[i]!)} zł</strong> <span className="text-gray-500">netto</span></>
-                          : <span className="text-gray-400">na zapytanie</span>}
-                      </div>
-                    </li>
-                  )
-                })}
-              </ul>
-              <div className="mt-4 flex items-center justify-between gap-3 flex-wrap">
-                <p className="text-sm text-gray-600">
-                  Razem{' '}
-                  {loading ? <span className="inline-block h-4 w-20 bg-slate-100 rounded animate-pulse align-middle" />
-                    : total !== undefined ? <strong className="text-gray-900 text-base tabular-nums">{fmt(total)} zł netto</strong>
-                    : <span className="text-gray-400">część pozycji na zapytanie</span>}
-                </p>
-                <button
-                  type="button"
-                  onClick={addKit}
-                  disabled={!complete || loading}
-                  className={`inline-flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-semibold transition-colors ${
-                    allInCart ? 'bg-green-600 text-white' : 'bg-blue-600 text-white hover:bg-blue-700 disabled:bg-slate-200 disabled:text-slate-500'
-                  }`}
-                >
-                  {allInCart ? <CheckIcon size={16} /> : <PlusIcon size={16} />}
-                  {allInCart ? 'Komplet w koszyku' : 'Dodaj komplet do koszyka'}
-                </button>
-              </div>
-              {/* Inny rozmiar, materiał albo nakład: zapytanie z gotową treścią, doradca odpisuje z propozycją */}
-              <div className="mt-3">
-                <AskAboutProductButton
-                  productName={printerName}
-                  productSlug={printerSlug}
-                  label="Zaproponuj inne warianty"
-                  initialMessage={`Dzień dobry, proszę o propozycję innego kompletu etykieta + taśma do drukarki ${printerName} niż „${kit.title}”. Potrzebuję etykiet o wymiarach ... mm, na ... (papier / folia), w nakładzie ok. ... szt. miesięcznie.`}
-                  buttonClassName="w-full inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 hover:border-slate-400 transition-colors"
-                />
-              </div>
+                <div className="mt-auto pt-4 flex items-end justify-between gap-3 flex-wrap">
+                  <div className="tabular-nums">
+                    {loading ? <span className="inline-block h-6 w-24 bg-slate-100 rounded animate-pulse" />
+                      : total !== undefined ? <p className="text-xl font-bold text-gray-900 leading-none">{fmt(total)} zł <span className="text-sm font-normal text-gray-500">netto</span></p>
+                      : <p className="text-sm text-gray-400">część pozycji na zapytanie</p>}
+                    {kitPrints ? <p className="mt-1 text-xs text-gray-500">wystarczy na ok. {fmtInt(kitPrints)} wydruków{ribbonsForRoll ? `, na całą rolkę ${ribbonsForRoll} rolki taśmy` : ''}</p> : null}
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <AskAboutProductButton
+                      productName={printerName}
+                      productSlug={printerSlug}
+                      label="Inne warianty"
+                      arrow
+                      initialMessage={`Dzień dobry, proszę o propozycję innego kompletu etykieta + taśma do drukarki ${printerName} niż „${kit.title}”. Potrzebuję etykiet o wymiarach ... mm, na ... (papier / folia), w nakładzie ok. ... szt. miesięcznie.`}
+                      buttonClassName="inline-flex items-center gap-1 whitespace-nowrap text-sm font-medium text-gray-600 hover:text-primary-700"
+                    />
+                    <button
+                      type="button"
+                      onClick={addKit}
+                      disabled={!complete || loading}
+                      className={`inline-flex items-center gap-1.5 whitespace-nowrap rounded-lg px-3.5 py-2 text-sm font-semibold transition-colors ${
+                        allInCart ? 'bg-green-600 text-white' : 'bg-blue-600 text-white hover:bg-blue-700 disabled:bg-slate-200 disabled:text-slate-500'
+                      }`}
+                    >
+                      {allInCart ? <CheckIcon size={16} /> : <PlusIcon size={16} />}
+                      {allInCart ? 'W koszyku' : 'Dodaj komplet'}
+                    </button>
+                  </div>
+                </div>
               </div>
             </article>
           )

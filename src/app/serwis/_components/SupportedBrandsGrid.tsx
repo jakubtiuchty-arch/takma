@@ -11,7 +11,7 @@ export function SupportedBrandsGrid() {
             Producenci, których urządzenia serwisujemy
           </h2>
           <p className="mt-2 text-gray-500">
-            Nasi certyfikowani inżynierowie serwisują pogwarancyjnie sprzęt AutoID wiodących producentów — terminale mobilne, skanery kodów i drukarki etykiet. Kliknij logo, aby zobaczyć szczegóły serwisu per marka.
+            Nasi certyfikowani inżynierowie serwisują pogwarancyjnie sprzęt AutoID wiodących producentów — terminale mobilne, skanery kodów, drukarki etykiet i drukarki kart. Kliknij logo, aby zobaczyć szczegóły serwisu per marka.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5 sm:gap-6 lg:gap-8 items-start justify-items-center">

@@ -5,6 +5,8 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Kotwice sekcji nie chowają się pod przyklejonym nagłówkiem: 64 px na telefonie, 155 px na desktopie */
+    scroll-padding-top: 5rem;
     overflow-x: clip;
   }
 
@@ -518,4 +520,10 @@
 .animate-promo-arrow { animation: promo-arrow 1.6s ease-in-out infinite; }
 @media (prefers-reduced-motion: reduce) {
   .animate-promo-arrow { animation: none; }
+}
+
+@media (min-width: 1024px) {
+  html {
+    scroll-padding-top: 11rem;
+  }
 }

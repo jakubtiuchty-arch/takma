@@ -32,6 +32,9 @@ import { honeywellRt10wPl } from './manual-content/honeywell-rt10w-pl'
 import { newlandN7CachalotProIiPl } from './manual-content/newland-n7-cachalot-pro-ii-pl'
 import { newlandMt93MegatteraPl } from './manual-content/newland-mt93-megattera-pl'
 import { newlandMt95KamburProIiiPl } from './manual-content/newland-mt95-kambur-pro-iii-pl'
+import { magicard300Pl } from './manual-content/magicard-300-pl'
+import { magicardPronto100Pl } from './manual-content/magicard-pronto100-pl'
+import { magicard600Pl } from './manual-content/magicard-600-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -123,6 +126,7 @@ export const brandLogos: Record<string, string> = {
   Godex: '/images/partners/logo-godex.png',
   TSC: '/images/partners/logo_tsc.png',
   Brother: '/images/partners/brother_logo.png',
+  Magicard: '/images/partners/logo_magicard.png',
 }
 
 // --- Metadane typów dokumentów (etykieta + opis) ----------------------------
@@ -1038,6 +1042,98 @@ export const manuals: Manual[] = [
       'newland mt95 kambur manual pdf',
     ],
     updatedAt: '2026-06-24',
+  },
+  {
+    slug: 'magicard-300',
+    model: '300',
+    name: 'Magicard 300',
+    brand: 'Magicard',
+    category: 'drukarki-kart',
+    description:
+      'Drukarka kart identyfikacyjnych do szkół i firm. Pełna instrukcja producenta: menu drukarki, instalacja sterownika w Windows i macOS, dobór taśm i kart, konfiguracja Ethernetu, rozszerzenie do druku dwustronnego, czyszczenie i kody błędów.',
+    productSlug: 'magicard-300',
+    polishManual: magicard300Pl,
+    documents: [
+      {
+        type: 'user-guide',
+        title: 'Instrukcja obsługi Magicard 300 (User Guide, wyd. 1.06)',
+        lang: 'en',
+        file: '/instrukcje/magicard-300-ug-en.pdf',
+        size: '4,3 MB',
+      },
+    ],
+    keywords: [
+      'magicard 300 instrukcja',
+      'magicard 300 instrukcja obsługi pdf',
+      'magicard 300 user guide',
+      'magicard 300 sterownik',
+      'magicard 300 czyszczenie',
+      'magicard 300 kody błędów',
+      'magicard 300 duo',
+      'magicard 300 holokote',
+    ],
+    updatedAt: '2026-09-11',
+  },
+  {
+    slug: 'magicard-pronto100',
+    model: 'Pronto100',
+    name: 'Magicard Pronto100',
+    brand: 'Magicard',
+    category: 'drukarki-kart',
+    description:
+      'Kompaktowa drukarka kart na 50 kart w podajniku, sterowana jednym przyciskiem. Pełna instrukcja producenta: sygnały diod, instalacja sterownika w Windows i macOS, taśmy MD, konfiguracja Ethernetu, panel Clix w przeglądarce, czyszczenie i kody błędów.',
+    productSlug: 'magicard-pronto100',
+    polishManual: magicardPronto100Pl,
+    documents: [
+      {
+        type: 'user-guide',
+        title: 'Instrukcja obsługi Magicard Pronto100 (User Guide, wyd. 1.05)',
+        lang: 'en',
+        file: '/instrukcje/magicard-pronto100-ug-en.pdf',
+        size: '4,9 MB',
+      },
+    ],
+    keywords: [
+      'magicard pronto100 instrukcja',
+      'magicard pronto 100 instrukcja obsługi pdf',
+      'magicard pronto100 user guide',
+      'magicard pronto100 sterownik',
+      'magicard pronto100 diody',
+      'magicard pronto100 czyszczenie',
+      'magicard pronto100 kody błędów',
+    ],
+    updatedAt: '2026-09-11',
+  },
+  {
+    slug: 'magicard-600',
+    model: '600',
+    name: 'Magicard 600',
+    brand: 'Magicard',
+    category: 'drukarki-kart',
+    description:
+      'Drukarka kart z Wi-Fi i Ethernetem, w wersji Duo z drukiem dwustronnym. Pełna instrukcja producenta: menu drukarki, instalacja sterownika w Windows i macOS, taśmy MB, konfiguracja Wi-Fi i Ethernetu, panel Clix, HoloKote, czyszczenie i kody błędów.',
+    productSlug: 'magicard-600-duo',
+    polishManual: magicard600Pl,
+    documents: [
+      {
+        type: 'user-guide',
+        title: 'Instrukcja obsługi Magicard 600 (User Guide, wyd. 1.06)',
+        lang: 'en',
+        file: '/instrukcje/magicard-600-ug-en.pdf',
+        size: '5,2 MB',
+      },
+    ],
+    keywords: [
+      'magicard 600 instrukcja',
+      'magicard 600 duo instrukcja obsługi pdf',
+      'magicard 600 user guide',
+      'magicard 600 sterownik',
+      'magicard 600 wifi',
+      'magicard 600 czyszczenie',
+      'magicard 600 kody błędów',
+      'magicard 600 holokote',
+    ],
+    updatedAt: '2026-09-11',
   },
 ]
 

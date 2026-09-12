@@ -494,7 +494,7 @@ export default function VariantsTable({ productSlug, productName, productImage, 
   const dense = attributeKeys.length >= 5
 
   return (
-    <section id="warianty" className="scroll-mt-28">
+    <section id="warianty">
       <h2 className="text-2xl font-bold text-gray-900 mb-4">Dostępne warianty</h2>
 
       {/* Desktop: tabela */}

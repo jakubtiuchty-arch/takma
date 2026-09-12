@@ -184,7 +184,7 @@ export default function SerwisLayout({
           "@type": "Country",
           "name": "Polska"
         },
-        "description": "Profesjonalny serwis pogwarancyjny drukarek etykiet, terminali mobilnych i skanerów kodów kreskowych. Autoryzowany serwis Zebra Technologies. Naprawiamy: Honeywell, Datalogic, Brother, M3 Mobile, Newland, Citizen, Godex, TSC, Sato.",
+        "description": "Profesjonalny serwis pogwarancyjny drukarek etykiet, drukarek kart, terminali mobilnych i skanerów kodów kreskowych. Autoryzowany serwis Zebra Technologies. Naprawiamy: Honeywell, Datalogic, Brother, M3 Mobile, Newland, Citizen, Godex, TSC, Sato, Magicard.",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Usługi serwisowe AutoID",

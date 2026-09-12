@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { ClipboardDocumentCheckIcon, TruckIcon, WrenchIcon, CheckIcon } from '@/components/ui/Icons'
 
-const steps = [
+const baseSteps = [
   {
     name: 'Krok 1: Zgłoszenie RMA',
     description: 'Wypełnij formularz zgłoszeniowy na dole tej strony, podając markę (np. Honeywell, Datalogic), model i opis usterki urządzenia. Otrzymasz numer zgłoszenia i dostęp do panelu serwisowego.',
@@ -26,7 +26,11 @@ const steps = [
   },
 ]
 
-export function RmaProcessSteps() {
+/** `brandExample` podmienia przykład marki w kroku 1 na stronach /serwis/<marka>. */
+export function RmaProcessSteps({ brandExample }: { brandExample?: string } = {}) {
+  const steps = brandExample
+    ? baseSteps.map((s, i) => (i === 0 ? { ...s, description: s.description.replace('np. Honeywell, Datalogic', `np. ${brandExample}`) } : s))
+    : baseSteps
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
 

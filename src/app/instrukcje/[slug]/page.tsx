@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import { getBrandBySlug } from '@/app/serwis/_data/brands'
 import Image from 'next/image'
 import { ChevronRightIcon } from '@/components/ui/Icons'
 import {
@@ -192,8 +193,9 @@ export default async function ManualHubPage({ params }: PageProps) {
                 Nie skanuje, nie włącza się albo zgłasza błąd? Zdiagnozujemy usterkę, naprawimy
                 urządzenie i pomożemy w konfiguracji oraz wdrożeniu floty.
               </p>
+              {/* Marki bez własnej strony serwisu (np. Magicard) kierują do kontaktu, żeby nie było 404 */}
               <Link
-                href={`/serwis/${manual.brand.toLowerCase()}`}
+                href={getBrandBySlug(manual.brand.toLowerCase()) ? `/serwis/${manual.brand.toLowerCase()}` : '/kontakt'}
                 className="inline-flex items-center justify-center w-full mt-4 px-4 py-2.5 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition-colors"
               >
                 Zgłoś do serwisu

@@ -22,7 +22,7 @@ export function generateMetadata({ params }: Props): Metadata {
     description: brand.metaDescription,
     alternates: { canonical: `https://www.takma.com.pl/serwis/${brand.slug}` },
     openGraph: {
-      images: ['/images/takma-og.png'],
+      images: [brand.ogImage ?? '/images/takma-og.png'],
       type: 'website',
       locale: 'pl_PL',
       url: `https://www.takma.com.pl/serwis/${brand.slug}`,
@@ -38,29 +38,9 @@ export default function BrandServicePage({ params }: Props) {
 
   const brandServiceSchema = {
     '@context': 'https://schema.org',
+    // Encja organizacji (LocalBusiness, NAP, godziny) jest raz w src/app/serwis/layout.tsx pod #organization;
+    // tu tylko odwołanie przez provider, żeby nie było dwóch węzłów z tym samym @id i różnymi telefonami.
     '@graph': [
-      {
-        '@type': 'LocalBusiness',
-        '@id': 'https://www.takma.com.pl/#organization',
-        name: 'TAKMA',
-        url: 'https://www.takma.com.pl',
-        telephone: '+48-601-619-898',
-        address: {
-          '@type': 'PostalAddress',
-          streetAddress: 'ul. Poświęcka 1a',
-          postalCode: '51-128',
-          addressLocality: 'Wrocław',
-          addressCountry: 'PL',
-        },
-        areaServed: { '@type': 'Country', name: 'Polska' },
-        priceRange: '$$',
-        openingHoursSpecification: [{
-          '@type': 'OpeningHoursSpecification',
-          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-          opens: '07:30',
-          closes: '15:30',
-        }],
-      },
       {
         '@type': 'Service',
         '@id': `https://www.takma.com.pl/serwis/${brand.slug}#service`,
@@ -281,11 +261,35 @@ export default function BrandServicePage({ params }: Props) {
         </div>
       </section>
 
+      {/* Linki do kart produktów, instrukcji i stron marki (opcjonalne, per marka) */}
+      {brand.relatedLinks && brand.relatedLinks.length > 0 && (
+        <section className="bg-gray-50 py-12 sm:py-16 border-b border-gray-100">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 mb-3">
+              Instrukcje, części i drukarki {brand.name}
+            </h2>
+            <p className="text-sm text-gray-500 mb-6">
+              Zanim wyślesz urządzenie: skrócone instrukcje po polsku z kodami błędów, zestawy czyszczące i karty produktów.
+            </p>
+            <ul className="grid gap-2 sm:grid-cols-2">
+              {brand.relatedLinks.map(l => (
+                <li key={l.href}>
+                  <Link href={l.href} className="flex items-center gap-2 p-3 rounded-xl border border-gray-200 bg-white hover:border-lime-500 hover:shadow-sm transition-all text-sm font-medium text-gray-900">
+                    <span className="text-lime-600" aria-hidden="true">→</span>
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
       {/* Cennik — wariant dopasowany do kategorii marki (override w brand.pricingVariant) */}
       <PricingTable variant={brand.pricingVariant ?? (brand.category === 'drukarki' ? 'printers' : 'devices')} />
 
       {/* Proces RMA (reused) */}
-      <RmaProcessSteps />
+      <RmaProcessSteps brandExample={brand.name} />
 
       {/* Contact Manager (reused) */}
       <ServiceManagerContact />
@@ -316,7 +320,7 @@ export default function BrandServicePage({ params }: Props) {
             Szukasz nowego urządzenia {brand.name}?
           </h2>
           <p className="text-sm text-gray-600 mb-5 max-w-xl mx-auto">
-            Zobacz aktualną ofertę sprzętu {brand.name} w sklepie TAKMA — drukarki, terminale, skanery i akcesoria w cenach B2B.
+            Zobacz aktualną ofertę sprzętu {brand.name} w sklepie TAKMA — {brand.crossSell ?? 'drukarki, terminale, skanery i akcesoria w cenach B2B'}.
           </p>
           <Link
             href={`/katalog?producent=${brand.slug}`}

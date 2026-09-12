@@ -1,15 +1,27 @@
+import Link from 'next/link'
 import type { ManualBlock } from '@/data/manuals'
 
-/** Inline **pogrubienie** → <strong>. */
+/**
+ * Inline: **pogrubienie** → <strong>, [tekst](/sciezka) → <Link>.
+ * Linki wewnętrzne w instrukcjach prowadzą do kart produktów, kategorii i kontaktu;
+ * adres musi zaczynać się od „/”, zewnętrzne adresy zostają zwykłym tekstem.
+ */
+const INLINE_RE = /(\*\*[^*]+\*\*|\[[^\]]+\]\(\/[^)\s]*\))/g
+
 export function renderInline(text: string) {
   return text
-    .split(/(\*\*[^*]+\*\*)/g)
+    .split(INLINE_RE)
     .filter(Boolean)
-    .map((part, i) =>
-      part.startsWith('**') && part.endsWith('**')
-        ? <strong key={i} className="font-semibold text-slate-900">{part.slice(2, -2)}</strong>
-        : <span key={i}>{part}</span>,
-    )
+    .map((part, i) => {
+      if (part.startsWith('**') && part.endsWith('**')) {
+        return <strong key={i} className="font-semibold text-slate-900">{part.slice(2, -2)}</strong>
+      }
+      const link = part.match(/^\[([^\]]+)\]\((\/[^)\s]*)\)$/)
+      if (link) {
+        return <Link key={i} href={link[2]} className="text-blue-600 hover:underline">{link[1]}</Link>
+      }
+      return <span key={i}>{part}</span>
+    })
 }
 
 export function ManualBlocks({ blocks }: { blocks: ManualBlock[] }) {

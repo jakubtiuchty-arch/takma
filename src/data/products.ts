@@ -70,6 +70,10 @@ export interface Product {
   videoFile?: string
   /** Kilka filmów (np. instrukcje producenta z YouTube) — sekcja „Wideo” pokazuje je w siatce */
   videos?: { url: string; title: string }[]
+  /** Obrót 360° w galerii: krótki MP4 bez dźwięku (pętla) + plakat na miniaturę. */
+  spinVideo?: { file: string; poster: string }
+  /** 'faq-last': FAQ i „Pliki do pobrania” na samym dole karty, za materiałami i akcesoriami (test UX na Magicard 300). */
+  sectionOrder?: 'faq-last'
   /** Bezpłatne oprogramowanie: zamiast koszyka przycisk „Pobierz” (plik w Vercel Blob, link przez /pobierz/[slug]) */
   download?: {
     url: string
@@ -101,7 +105,7 @@ export interface ProductSpecification {
 
 export interface ProductDownload {
   name: string
-  type: 'pdf' | 'datasheet' | 'manual' | 'software'
+  type: 'pdf' | 'datasheet' | 'manual' | 'software' | 'driver'
   url: string
   size: string
 }
@@ -1134,8 +1138,8 @@ Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/
       'zebra-power-supply-zd421-zd621',
     ],
     starterKits: [
-      { title: 'Etykiety papierowe', description: 'Z-Select 2000T 102×64 mm i woskowa taśma 2300, rolka 74 m na gilzie 12,7 mm.', facts: ['Magazyn, półka, wysyłka', 'Wnętrze, ponad rok trwałości', 'Najtańszy komplet'], image: '/images/kits/zd421t-papier.webp', partNumbers: ['3007206-T', '02300GS11007'] },
-      { title: 'Etykiety foliowe', description: 'PolyPro 3000T 51×25 mm i żywiczna taśma 5095, rolka 64 mm × 74 m.', facts: ['Sprzęt, majątek, inwentaryzacja', 'Odporna na wilgoć i ścieranie', 'Wnętrze, do roku użytkowania'], image: '/images/kits/zd421t-folia.webp', partNumbers: ['3011159', '05095GS06407'] },
+      { title: 'Etykiety papierowe', description: 'Papierowa etykieta i woskowa taśma do zwykłych oznaczeń w suchym pomieszczeniu.', facts: ['Magazyn, półka, wysyłka', 'Wnętrze, ponad rok trwałości', 'Najtańszy komplet'], image: '/images/kits/zd421t-papier.webp', partNumbers: ['3007206-T', '02300GS11007'] },
+      { title: 'Etykiety foliowe', description: 'Mała etykieta z folii i żywiczna taśma do znakowania sprzętu, który się ściera i moczy.', facts: ['Sprzęt, majątek, inwentaryzacja', 'Odporna na wilgoć i ścieranie', 'Wnętrze, do roku użytkowania'], image: '/images/kits/zd421t-folia.webp', partNumbers: ['3011159', '05095GS06407'] },
     ],
     faq: [
       { question: "Jaki program do projektowania etykiet dostanę?", answer: "Bezpłatny ZebraDesigner Essentials dla Windows wystarcza do projektu etykiety z tekstem, kodem kreskowym i logo, obsługuje też pola wpisywane przy druku, datę, czas i liczniki. Płatna wersja Professional jest potrzebna dopiero przy danych z bazy albo arkusza Excel, skryptach i kodowaniu RFID. Do druku z programu magazynowego lub ERP nie potrzeba żadnego z nich: system wysyła gotowy ZPL przez sterownik albo bezpośrednio do portu drukarki." },
@@ -46185,6 +46189,7 @@ const cardPrinters: Product[] = [
   {
     id: 'magicard-pronto100',
     slug: 'magicard-pronto100',
+    sectionOrder: 'faq-last',
     name: 'Magicard Pronto100',
     shortDescription: 'Kompaktowa drukarka do identyfikatorów i kart PVC. Drukuje jednostronnie, ma Ethernet oraz zabezpieczenia HoloKote i Digital Shredding',
     seoTitle: 'Magicard Pronto100 — drukarka kart PVC z HoloKote',
@@ -46311,7 +46316,10 @@ Obudowa ma 179 mm szerokości, 309 mm głębokości i 208 mm wysokości, a całe
     },
     downloads: [
       { name: 'Instrukcja obsługi Pronto100 (EN)', type: 'manual', url: 'https://support.magicard.com/support-solution/user-guide-pronto100/', size: '4,89 MB' },
-      { name: 'Karta katalogowa Pronto100 (EN)', type: 'datasheet', url: 'https://magicard.com/download/Class_Class_Attachments/f7f03f82-f9fa-11eb-850d-06a63d65978a/', size: 'PDF' },
+      { name: 'Karta katalogowa Pronto100 (PL)', type: 'datasheet', url: '/downloads/magicard-pronto100-karta-katalogowa-pl.pdf', size: '771 KB' },
+      { name: 'Sterownik Windows 10/11 — wszystkie modele Magicard', type: 'driver', url: 'https://storage.googleapis.com/public_drivers/windows/magicard/3.1.2.1095/Magicard_Driver_v3.1.2.1095.exe', size: '77 MB' },
+      { name: 'Sterownik macOS 1.4.0 — Apple Silicon (M1–M4)', type: 'driver', url: 'https://storage.googleapis.com/public_drivers/macos/1.4.0/magicard_ltd-mac-os-driver-1.4.0-arm64.pkg', size: '9 MB' },
+      { name: 'Sterownik macOS 1.4.0 — Intel', type: 'driver', url: 'https://storage.googleapis.com/public_drivers/macos/1.4.0/magicard_ltd-mac-os-driver-1.4.0-x86_64.pkg', size: '9 MB' },
       { name: 'Magicard HUB', type: 'software', url: 'https://magicard.com/printers-and-software/magicard-hub/', size: 'Online' },
     ],
     createdAt: '2026-09-04',
@@ -46320,6 +46328,8 @@ Obudowa ma 179 mm szerokości, 309 mm głębokości i 208 mm wysokości, a całe
   {
     id: 'magicard-300',
     slug: 'magicard-300',
+    spinVideo: { file: '/video/magicard-300-obrot-360.mp4', poster: '/images/products/magicard-300-obrot-360-poster.webp' },
+    sectionOrder: 'faq-last',
     name: 'Magicard 300',
     shortDescription: 'Dwustronna drukarka kart PVC do firm i szkół. Przy druku jednostronnym osiąga do 160 kolorowych kart/h. Ma Ethernet, HoloKote i Digital Shredding',
     seoTitle: 'Magicard 300 Duo — dwustronna drukarka kart PVC',
@@ -46444,7 +46454,10 @@ USB i Ethernet są w standardzie. Ustawienia można zmieniać z kolorowego ekran
     },
     downloads: [
       { name: 'Instrukcja obsługi Magicard 300 (EN)', type: 'manual', url: 'https://support.magicard.com/support-solution/user-guide-magicard-300/', size: 'PDF' },
-      { name: 'Karta katalogowa Magicard 300 (PL)', type: 'datasheet', url: 'https://www.magicard.com.pl/files/pdf/magicard_product_1_91_20190704.pdf', size: 'PDF' },
+      { name: 'Karta katalogowa Magicard 300 (PL)', type: 'datasheet', url: '/downloads/magicard-300-karta-katalogowa-pl.pdf', size: '1,0 MB' },
+      { name: 'Sterownik Windows 10/11 — wszystkie modele Magicard', type: 'driver', url: 'https://storage.googleapis.com/public_drivers/windows/magicard/3.1.2.1095/Magicard_Driver_v3.1.2.1095.exe', size: '77 MB' },
+      { name: 'Sterownik macOS 1.4.0 — Apple Silicon (M1–M4)', type: 'driver', url: 'https://storage.googleapis.com/public_drivers/macos/1.4.0/magicard_ltd-mac-os-driver-1.4.0-arm64.pkg', size: '9 MB' },
+      { name: 'Sterownik macOS 1.4.0 — Intel', type: 'driver', url: 'https://storage.googleapis.com/public_drivers/macos/1.4.0/magicard_ltd-mac-os-driver-1.4.0-x86_64.pkg', size: '9 MB' },
       { name: 'Magicard HUB', type: 'software', url: 'https://magicard.com/printers-and-software/magicard-hub/', size: 'Online' },
     ],
     createdAt: '2026-09-04',
@@ -46453,6 +46466,8 @@ USB i Ethernet są w standardzie. Ustawienia można zmieniać z kolorowego ekran
   {
     id: 'magicard-600-duo',
     slug: 'magicard-600-duo',
+    spinVideo: { file: '/video/magicard-600-duo-obrot-360.mp4', poster: '/images/products/magicard-600-duo-obrot-360-poster.webp' },
+    sectionOrder: 'faq-last',
     name: 'Magicard 600 Duo',
     shortDescription: 'Dwustronna drukarka kart dla firm i instytucji. Przy druku jednostronnym osiąga do 190 kolorowych kart/h. Ma Wi-Fi, Ethernet, HoloKote i Digital Shredding',
     seoTitle: 'Magicard 600 Duo — dwustronna drukarka kart PVC',
@@ -46575,7 +46590,10 @@ USB, Ethernet i Wi-Fi są w standardzie. Magicard 600 Duo może więc pracować 
       ],
     },
     downloads: [
-      { name: 'Karta katalogowa Magicard 600 (PL)', type: 'datasheet', url: 'https://www.magicard.com.pl/files/pdf/magicard_product_1_90_20190704.pdf', size: 'PDF' },
+      { name: 'Karta katalogowa Magicard 600 (PL)', type: 'datasheet', url: '/downloads/magicard-600-karta-katalogowa-pl.pdf', size: '1,0 MB' },
+      { name: 'Sterownik Windows 10/11 — wszystkie modele Magicard', type: 'driver', url: 'https://storage.googleapis.com/public_drivers/windows/magicard/3.1.2.1095/Magicard_Driver_v3.1.2.1095.exe', size: '77 MB' },
+      { name: 'Sterownik macOS 1.4.0 — Apple Silicon (M1–M4)', type: 'driver', url: 'https://storage.googleapis.com/public_drivers/macos/1.4.0/magicard_ltd-mac-os-driver-1.4.0-arm64.pkg', size: '9 MB' },
+      { name: 'Sterownik macOS 1.4.0 — Intel', type: 'driver', url: 'https://storage.googleapis.com/public_drivers/macos/1.4.0/magicard_ltd-mac-os-driver-1.4.0-x86_64.pkg', size: '9 MB' },
       { name: 'Wsparcie i materiały Magicard 600 (EN)', type: 'manual', url: 'https://support.magicard.com/solution/magicard-600/', size: 'Online' },
       { name: 'Magicard HUB', type: 'software', url: 'https://magicard.com/printers-and-software/magicard-hub/', size: 'Online' },
     ],

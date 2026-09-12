@@ -6,7 +6,7 @@ type ServiceRow = {
   highlight?: boolean
 }
 
-type PricingVariant = 'all' | 'printers' | 'devices'
+type PricingVariant = 'all' | 'printers' | 'devices' | 'cardPrinters'
 
 // Wspólne: diagnostyka, płyta główna, czyszczenie, Wi-Fi
 const SHARED_SERVICES: ServiceRow[] = [
@@ -39,6 +39,20 @@ const DEVICE_SERVICES: ServiceRow[] = [
   { name: 'Kontrola szczelności IP65/IP67', price: 'od 180 PLN', time: '3–5 dni', warranty: '—' },
 ]
 
+// Tylko drukarki kart PVC (Magicard) — robocizna, część wyceniana po diagnozie
+const CARD_PRINTER_SERVICES: ServiceRow[] = [
+  { name: 'Wymiana głowicy drukarki kart (robocizna + kalibracja)', price: 'od 450 PLN + głowica', time: '3–5 dni', warranty: '6 mies.' },
+  { name: 'Wymiana wałków czyszczących i transportowych', price: 'od 150 PLN', time: '2–4 dni', warranty: '6 mies.' },
+  { name: 'Kalibracja czujnika taśmy i czujników kart', price: 'od 100 PLN', time: '1–2 dni', warranty: '3 mies.' },
+  { name: 'Naprawa modułu obracania kart (Duo / flipper)', price: 'od 300 PLN', time: '3–5 dni', warranty: '3 mies.' },
+  { name: 'Naprawa kodera pasków magnetycznych', price: 'od 300 PLN', time: '5–7 dni', warranty: '3 mies.' },
+  { name: 'Wymiana zasilacza', price: 'od 200 PLN', time: '2–4 dni', warranty: '6 mies.' },
+  { name: 'Czyszczenie / konserwacja drukarki kart', price: 'od 150 PLN', time: '1–2 dni', warranty: '—' },
+  { name: 'Naprawa płyty głównej', price: 'od 300 PLN', time: '5–10 dni', warranty: '3 mies.' },
+  { name: 'Naprawa modułu sieciowego (Ethernet/Wi-Fi)', price: 'od 250 PLN', time: '5–7 dni', warranty: '3 mies.' },
+  { name: 'Aktualizacja firmware i konfiguracja sieci', price: 'od 100 PLN', time: '1–2 dni', warranty: '—' },
+]
+
 // Wszystko (strona główna /serwis — każdy kategoria urządzeń)
 const ALL_SERVICES: ServiceRow[] = [
   ...PRINTER_SERVICES.slice(0, 3), // głowice + wałek
@@ -52,10 +66,17 @@ const ALL_SERVICES: ServiceRow[] = [
 function getServices(variant: PricingVariant): ServiceRow[] {
   if (variant === 'printers') return [...SHARED_SERVICES, ...PRINTER_SERVICES]
   if (variant === 'devices') return [...SHARED_SERVICES, ...DEVICE_SERVICES]
+  if (variant === 'cardPrinters') return [...SHARED_SERVICES, ...CARD_PRINTER_SERVICES]
   return [...SHARED_SERVICES, ...ALL_SERVICES]
 }
 
 function getHeadline(variant: PricingVariant): { title: string; subtitle: string } {
+  if (variant === 'cardPrinters') {
+    return {
+      title: 'Cennik orientacyjny — naprawa drukarek kart',
+      subtitle: 'Ceny netto robocizny przy naprawie drukarek kart PVC. Koszt części (głowica, moduły) podajemy po bezpłatnej diagnostyce.',
+    }
+  }
   if (variant === 'printers') {
     return {
       title: 'Cennik orientacyjny — naprawa drukarek',

@@ -18,6 +18,7 @@ import { isRibbonProduct } from '@/data/products'
 import { PROMOTIONS } from '@/data/promotions'
 import { prisma } from '@/lib/db'
 import { UZYWANE_WIDOCZNE } from '@/lib/used-devices'
+import { serviceBrands } from '@/app/serwis/_data/brands'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://www.takma.com.pl'
@@ -50,6 +51,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/regulamin`, lastModified: new Date('2026-02-17') },
     { url: `${baseUrl}/mapa-strony`, lastModified: lastUpdated },
   ]
+
+  // Strony serwisowe per marka (/serwis/honeywell … /serwis/magicard)
+  const serviceBrandPages: MetadataRoute.Sitemap = serviceBrands.map((brand) => ({
+    url: `${baseUrl}/serwis/${brand.slug}`,
+    lastModified: brand.slug === 'magicard' ? new Date('2026-09-11') : lastUpdated,
+  }))
 
   const productPages: MetadataRoute.Sitemap = products.map((product) => ({
     url: `${baseUrl}/produkt/${product.slug}`,
@@ -199,6 +206,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     ...staticPages,
+    ...serviceBrandPages,
     ...usedPages,
     ...promotionPages,
     ...brandPillarPages,

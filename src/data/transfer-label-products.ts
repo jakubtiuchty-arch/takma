@@ -715,7 +715,7 @@ const rawTransferLabelProducts: RawTransferProduct[] = [
     ],
     variants: [
       { partNumber: '3007205-T', name: '70×32 mm, rdzeń 25 mm', availability: 'on-order', attributes: { 'Rozmiar': '70×32 mm', 'Rdzeń': '25 mm' } },
-      { partNumber: '3007206-T', name: '102×64 mm, rdzeń 25 mm', availability: 'on-order', attributes: { 'Rozmiar': '102×64 mm', 'Rdzeń': '25 mm' } },
+      { partNumber: '3007206-T', name: '102×64 mm, rdzeń 25 mm', availability: 'on-order', attributes: { 'Rozmiar': '102×64 mm', 'Rdzeń': '25 mm', 'Etykiet w rolce': '1100' } },
       { partNumber: '3007201-T', name: '51×25 mm, rdzeń 25 mm', availability: 'on-order', attributes: { 'Rozmiar': '51×25 mm', 'Rdzeń': '25 mm' } },
       { partNumber: '800271-105', name: '31×25 mm, rdzeń 25 mm', availability: 'on-order', attributes: { 'Rozmiar': '31×25 mm', 'Rdzeń': '25 mm' } },
       { partNumber: '3007200-T', name: '31×22 mm, rdzeń 25 mm', availability: 'on-order', attributes: { 'Rozmiar': '31×22 mm', 'Rdzeń': '25 mm' } },
@@ -1420,7 +1420,7 @@ const rawTransferLabelProducts: RawTransferProduct[] = [
       { name: 'Karta katalogowa PolyPro 3000T Gloss (EN)', type: 'datasheet', url: '/datasheets/polypro-3000t-gloss-spec-sheet-en-gb.pdf', size: '157 KB' },
     ],
     variants: [
-      { partNumber: '3011159', name: '51×25 mm, rdzeń 25 mm', availability: 'on-order', attributes: { 'Rozmiar': '51×25 mm', 'Rdzeń': '25 mm' } },
+      { partNumber: '3011159', name: '51×25 mm, rdzeń 25 mm', availability: 'on-order', attributes: { 'Rozmiar': '51×25 mm', 'Rdzeń': '25 mm', 'Etykiet w rolce': '2905' } },
       { partNumber: '3012949', name: '51×25 mm, rdzeń 76 mm', availability: 'on-order', attributes: { 'Rozmiar': '51×25 mm', 'Rdzeń': '76 mm' } },
       { partNumber: '3012403', name: '102×152 mm, rdzeń 76 mm', availability: 'on-order', attributes: { 'Rozmiar': '102×152 mm', 'Rdzeń': '76 mm' } },
       { partNumber: '3012403', name: '102×152 mm, rdzeń 76 mm', availability: 'on-order', attributes: { 'Rozmiar': '102×152 mm', 'Rdzeń': '76 mm' } },

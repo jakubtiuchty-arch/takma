@@ -116,13 +116,18 @@ function InquiryModal({
       {/* Modal — fullscreen na mobile, centered card na desktop */}
       <div
         ref={modalRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="inquiry-title"
         className="relative bg-white w-full h-full sm:h-auto sm:max-w-lg sm:rounded-2xl sm:max-h-[90vh] overflow-y-auto shadow-2xl animate-slide-in-up"
       >
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
-          <h2 className="text-lg font-bold text-gray-900">{promo ? 'Zamówienie w cenie promocyjnej' : 'Zapytaj o produkt'}</h2>
+          <h2 id="inquiry-title" className="text-lg font-bold text-gray-900">{promo ? 'Zamówienie w cenie promocyjnej' : 'Zapytaj o produkt'}</h2>
           <button
+            type="button"
             onClick={onClose}
+            aria-label="Zamknij"
             className="p-1.5 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors"
           >
             <CloseIcon size={20} />

@@ -980,6 +980,7 @@ export function buildRepairSubmittedEmail(data: {
 }): string {
   const deviceTypeText: Record<string, string> = {
     drukarka: 'Drukarka etykiet',
+    'drukarka-kart': 'Drukarka kart',
     terminal: 'Terminal mobilny',
     skaner: 'Skaner kod&#243;w',
     tablet: 'Tablet przemys&#322;owy',

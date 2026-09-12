@@ -57,6 +57,9 @@ import { getManualByProductSlug } from '@/data/manuals'
 import ViewItemTracker from './ViewItemTracker'
 import { thermalLabelSeries } from '@/data/thermal-label-series'
 import StarterKits from '@/components/product/StarterKits'
+import MobileCta from './MobileCta'
+import VariantQuickPick from './VariantQuickPick'
+import DownloadCard from './DownloadCard'
 import { absoluteProductImageUrl, getMagicardOffer } from '@/lib/magicard-offer'
 
 interface ProductPageProps {
@@ -223,6 +226,12 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const downloads = manual
     ? product.downloads.filter((d) => d.type !== 'manual')
     : product.downloads
+  // Sterowniki dostają własną podsekcję, żeby nie mieszały się z kartami katalogowymi i programami
+  const driverDownloads = downloads.filter((d) => d.type === 'driver')
+  const fileDownloads = downloads.filter((d) => d.type !== 'driver')
+  // Kolejność sekcji: 'faq-last' przesuwa FAQ i pliki na koniec (kontener sekcji jest flex-col, używamy order-last)
+  const faqLast = product.sectionOrder === 'faq-last'
+  const lastCls = faqLast ? ' order-last' : ''
 
   // Wybrany wariant z ?pn=... — wpływa na H1, badge, cenę i specyfikację
   const selectedVariant = pickVariant(product, pn)
@@ -721,7 +730,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
           {liveOffers && <div className="order-first min-w-0 lg:col-start-2 lg:row-start-1">{productHeading}</div>}
           {/* Gallery */}
           <div className={liveOffers ? "min-w-0 lg:col-start-1 lg:row-start-1 lg:row-span-2" : "min-w-0"}>
-            <ProductGallery images={product.images} productName={product.name} imageDescriptions={product.imageDescriptions} />
+            <ProductGallery images={product.images} productName={product.name} imageDescriptions={product.imageDescriptions} spin={product.spinVideo} />
           </div>
 
           {/* Product info */}
@@ -985,7 +994,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               {product.faq && product.faq.length > 0 && (
                 <a
                   href="#faq"
-                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className={`px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap${lastCls}`}
                 >
                   FAQ
                 </a>
@@ -1001,7 +1010,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               {(downloads.length > 0 || manual) && (
                 <a
                   href="#pliki"
-                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className={`px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap${lastCls}`}
                 >
                   Do pobrania
                 </a>
@@ -1057,17 +1066,25 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             </nav>
           </div>
 
-          <div className="py-8 lg:py-12 space-y-12 lg:space-y-16">
+          <div className="py-8 lg:py-12 flex flex-col space-y-12 lg:space-y-16">
             {/* Warianty — ukryte dla etykiet termicznych (wybór wariantu odbywa się na /etykiety-termiczne-zebra/serie/[slug]) */}
             {showVariants && (
-              <VariantsTable
-                productSlug={product.slug}
-                productName={product.name}
-                productImage={product.images[0]}
-                variants={product.variants!}
-                variantAttributeTooltips={product.variantAttributeTooltips}
-                manufacturerId={product.manufacturerId}
-              />
+              <>
+                <VariantQuickPick variants={product.variants!} />
+                <VariantsTable
+                  productSlug={product.slug}
+                  productName={product.name}
+                  productImage={product.images[0]}
+                  variants={product.variants!}
+                  variantAttributeTooltips={product.variantAttributeTooltips}
+                  manufacturerId={product.manufacturerId}
+                />
+              </>
+            )}
+
+            {/* Komplet na pierwszy wydruk tuż pod wyborem wariantu, nie za opisem i FAQ (audyt ZD-10) */}
+            {product.starterKits && product.starterKits.length > 0 && (
+              <StarterKits kits={product.starterKits} printerName={product.name} printerSlug={product.slug} />
             )}
 
             {/* Opis — dla etykiet termicznych bogaty content z thermal-label-series */}
@@ -1366,7 +1383,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
             {/* FAQ */}
             {product.faq && product.faq.length > 0 && (
-              <section id="faq">
+              <section id="faq" className={faqLast ? 'order-last' : undefined}>
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Najczęściej zadawane pytania</h2>
                 <div className="space-y-4">
                   {product.faq.map((item, i) => (
@@ -1389,33 +1406,13 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
             {/* Pliki do pobrania */}
             {(downloads.length > 0 || manual) && (
-              <section id="pliki">
+              <section id="pliki" className={faqLast ? 'order-last' : undefined}>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Pliki do pobrania</h2>
-                {downloads.length > 0 && (
+                {fileDownloads.length > 0 && (
                   <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
-                    {downloads.map((download, i) => {
-                      const isExternal = download.url.startsWith('http')
-                      const isSerwisZebry = download.url.includes('serwis-zebry.pl')
-                      const externalRel = isSerwisZebry ? 'noopener' : 'noopener nofollow'
-                      return (
-                        <a
-                          key={i}
-                          href={download.url}
-                          {...(isExternal ? { target: '_blank', rel: externalRel } : {})}
-                          className="flex items-center gap-3 p-3 sm:gap-4 sm:p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group"
-                        >
-                          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors">
-                            <DownloadIcon size={24} />
-                          </div>
-                          <div className="flex-1 min-w-0">
-                            <p className="font-medium text-gray-900 truncate">{download.name}</p>
-                            <p className="text-sm text-gray-500">
-                              {download.type.toUpperCase()} • {download.size}
-                            </p>
-                          </div>
-                        </a>
-                      )
-                    })}
+                    {fileDownloads.map((download, i) => (
+                      <DownloadCard key={i} download={download} />
+                    ))}
                   </div>
                 )}
 
@@ -1431,11 +1428,26 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                     <div className="flex-1 min-w-0">
                       <p className="font-medium text-gray-900">Instrukcja obsługi {product.name} (PDF)</p>
                       <p className="text-sm text-gray-500">
-                        Szybki start, konfiguracja i obsługa po polsku — przeglądaj online lub pobierz
+                        {manual.polishManual
+                          ? 'Szybki start, konfiguracja i obsługa po polsku — przeglądaj online lub pobierz'
+                          : `${manual.documents.map((d) => d.title).join(', ')} — przeglądaj online lub pobierz`}
                       </p>
                     </div>
                     <ChevronRightIcon size={20} className="text-slate-400 group-hover:translate-x-0.5 transition-transform shrink-0" />
                   </Link>
+                )}
+
+                {/* Sterowniki — osobna podsekcja */}
+                {driverDownloads.length > 0 && (
+                  <div id="sterowniki" className="mt-8">
+                    <h3 className="text-xl font-bold text-gray-900">Sterowniki</h3>
+                    <p className="mt-1 mb-4 text-sm text-gray-600">Wybierz wersję dla swojego systemu operacyjnego.</p>
+                    <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
+                      {driverDownloads.map((download, i) => (
+                        <DownloadCard key={i} download={download} />
+                      ))}
+                    </div>
+                  </div>
                 )}
               </section>
             )}
@@ -1530,11 +1542,6 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               />
             )}
 
-            {/* Komplet na pierwszy wydruk: wycenione pary etykieta + taśma (audyt ZD421t, ZD-10) */}
-            {product.starterKits && product.starterKits.length > 0 && (
-              <StarterKits kits={product.starterKits} printerName={product.name} printerSlug={product.slug} />
-            )}
-
             {/* Karty PVC */}
             {relatedCards.length > 0 && (
               <RelatedProducts
@@ -1590,24 +1597,11 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         </div>
       </div>
 
-      {/* Sticky mobile CTA */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-gray-200 px-4 py-2.5 pb-[max(0.625rem,env(safe-area-inset-bottom))] lg:hidden z-40">
-        <div className="flex items-center gap-2">
-          <div className="flex-1 min-w-0">
-            <AskAboutProductButton productName={product.name} productSlug={product.slug} compact />
-          </div>
-          <a
-            href="tel:+48607819688"
-            aria-label="Zadzwoń do nas"
-            className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary-600 text-white hover:bg-primary-700 transition-colors active:scale-[0.96] shrink-0"
-          >
-            <PhoneIcon size={22} />
-          </a>
-        </div>
-      </div>
+      {/* Stały pasek na telefonie: zakup wybranego wariantu z ceną, skrót do wariantów, telefon */}
+      <MobileCta product={product} hasVariants={showVariants} />
 
       {/* Spacer for mobile sticky CTA */}
-      <div className="h-16 lg:hidden" />
+      <div className="h-20 lg:hidden" />
     </SmartPriceProvider>
   )
 }

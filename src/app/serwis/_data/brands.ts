@@ -14,7 +14,13 @@ export type ServiceBrand = {
   heroImage?: string
   /** Override wariantu cennika. Dla marek które mają np. drukarki + terminale
    *  (jak Honeywell) ustaw 'all'. Domyślnie wyliczane z category. */
-  pricingVariant?: 'printers' | 'devices' | 'all'
+  pricingVariant?: 'printers' | 'devices' | 'cardPrinters' | 'all'
+  /** Własny obraz OG (1200×630). Bez niego strona bierze wspólne /images/takma-og.png. */
+  ogImage?: string
+  /** Opis oferty w sekcji cross-sell; domyślnie „drukarki, terminale, skanery i akcesoria”. */
+  crossSell?: string
+  /** Linki do kart produktów, instrukcji i stron marki renderowane pod usterkami. */
+  relatedLinks?: Array<{ label: string; href: string }>
   commonIssues: Array<{ title: string; description: string }>
   faqs: Array<{ q: string; a: string }>
   metaTitle: string
@@ -420,6 +426,76 @@ export const serviceBrands: ServiceBrand[] = [
       { q: 'Jak długo trwa naprawa TSC TE310?', a: 'Diagnostyka w 48h od dostarczenia, naprawa 5 dni. Dla TE200/TE210/TE310 mamy na stanie kluczowe części (głowice, wałki). Większość napraw kompaktowych drukarek TSC realizujemy w 5 dni od dostarczenia.' },
       { q: 'Czy można regenerować głowice TSC?', a: 'Nie. Uszkodzone głowice termiczne (wypalone punkty) nie podlegają regeneracji — wymagają wymiany. Używamy wyłącznie oryginalnych głowic TSC, co gwarantuje deklarowaną żywotność 30 km druku (203 dpi) lub 20 km (300 dpi).' },
       { q: 'Dajecie gwarancję na naprawę TSC?', a: 'Tak — 3 miesiące na wymienioną głowicę, 3 miesiące na wałki dociskowe, 6 miesięcy na naprawę elektroniki. Do odsyłanej drukarki dołączamy specyfikację wymienionych części i numery seryjne wykorzystanych komponentów TSC.' },
+    ],
+  },
+  {
+    slug: 'magicard',
+    name: 'Magicard',
+    // Wersja z przezroczystym tłem: hero robi brightness-0 + invert, a logo_magicard.png ma białe tło (wychodził biały prostokąt).
+    logoSrc: '/images/partners/logo_magicard-alpha.png',
+    logoAlt: 'Serwis drukarek kart Magicard — Pronto100, 300, 600, Enduro, Rio Pro',
+    category: 'drukarki',
+    pricingVariant: 'cardPrinters',
+    shortDesc: 'Drukarki kart Pronto100, 300, 600, Enduro, Rio Pro',
+    products: 'Drukarki kart PVC Magicard: Pronto100, Pronto, 300, 300 Duo, 600, 600 Duo, Enduro3E, Enduro+, Rio Pro 360, Rio Pro, Ultima, Prima',
+    heroTitle: 'Serwis Magicard — naprawa drukarek kart PVC i identyfikatorów',
+    heroDescription: 'Pogwarancyjny serwis drukarek kart Magicard: Pronto100, 300, 300 Duo, 600, 600 Duo, Enduro3E, Rio Pro 360, Ultima. Wymiana głowic, wałków, modułu obracania kart, kodera magnetycznego. Oryginalne części, wysyłka z całej Polski.',
+    heroImage: '/images/serwis-hero/magicard-hero.webp',
+    ogImage: '/images/serwis-hero/magicard-og.jpg',
+    crossSell: 'drukarki kart, taśmy YMCKO, karty PVC i zestawy czyszczące w cenach B2B',
+    heroLead: 'Serwis i naprawa drukarek kart Magicard w TAKMA we Wrocławiu obejmuje modele z bieżącej oferty: Pronto100, 300 i 300 Duo, 600 i 600 Duo, a także starsze Enduro3E, Enduro+, Rio Pro 360, Rio Pro oraz retransferowe Ultima i Prima. Najczęściej wymieniamy głowicę po białych liniach na kartach i wałki czyszczące oraz naprawiamy moduł obracania kart (flipper) w wersjach Duo. Diagnostyka w 48h, urządzenie wraca z kartą testową, kurier odbiera z całej Polski.',
+    metaTitle: 'Serwis Magicard — naprawa drukarek kart Pronto100, 300, 600 | TAKMA',
+    metaDescription: 'Serwis drukarek kart Magicard: Pronto100, 300 Duo, 600 Duo, Rio Pro. Wymiana głowicy i wałków, naprawa flippera i kodera. Diagnostyka 48h, cała Polska.',
+    relatedLinks: [
+      { label: 'Magicard Pronto100 — karta produktu', href: '/produkt/magicard-pronto100' },
+      { label: 'Magicard 300 Duo — karta produktu', href: '/produkt/magicard-300' },
+      { label: 'Magicard 600 Duo — karta produktu', href: '/produkt/magicard-600-duo' },
+      { label: 'Instrukcja Pronto100 po polsku (diody, czyszczenie, kody błędów)', href: '/instrukcje/magicard-pronto100/instrukcja-po-polsku' },
+      { label: 'Instrukcja Magicard 300 po polsku (menu, taśmy, kody błędów)', href: '/instrukcje/magicard-300/instrukcja-po-polsku' },
+      { label: 'Instrukcja Magicard 600 po polsku (Wi-Fi, Clix, kody błędów)', href: '/instrukcje/magicard-600/instrukcja-po-polsku' },
+      { label: 'Zestaw czyszczący 3633-0053 do Magicard 300 i 600', href: '/produkt/magicard-zestaw-czyszczacy-3633-0053' },
+      { label: 'Zestaw czyszczący E9100 do Pronto100', href: '/produkt/magicard-zestaw-czyszczacy-pronto100-e9100' },
+      { label: 'Wszystkie drukarki kart Magicard', href: '/drukarki-kart-magicard' },
+    ],
+    educationalSection: {
+      heading: 'Co obejmuje serwis drukarek kart Magicard?',
+      paragraphs: [
+        'Magicard (część Brady Corporation) to brytyjski producent drukarek do kart PVC: identyfikatorów, legitymacji szkolnych, kart dostępu i kart lojalnościowych. Drukarki pracują w technologii termosublimacyjnej (druk bezpośredni na karcie) albo retransferowej (Ultima, Prima). Zużywają się w nich przede wszystkim głowica, wałki czyszczące i mechanizm podawania kart.',
+        'TAKMA sprzedaje drukarki Magicard w Polsce i serwisuje modele z bieżącej oferty oraz starsze serie na oryginalnych częściach. Po naprawie drukarka wraca z wydrukowaną kartą testową i wyczyszczonym torem kart.',
+      ],
+      bullets: [
+        { title: 'Wymiana głowicy drukującej', description: 'Białe linie, kreski albo brak fragmentu nadruku na karcie. Przed wymianą sprawdzamy czyszczenie zestawem 3633-0053 (300 i 600) albo E9100 (Pronto100). Nowa głowica 300 dpi, kalibracja docisku i czujnika taśmy, karta testowa.' },
+        { title: 'Wałki i tor kart', description: 'Zacięcia kart, przekrzywiony nadruk, smugi. Wymiana niebieskiego wałka czyszczącego (komplet 3633-0054) i wałków transportowych, mycie pomarańczowego wałka, czyszczenie toru.' },
+        { title: 'Moduł obracania kart (Duo)', description: 'Błędy „Flip jam” w 300 Duo i 600 Duo. Naprawa lub wymiana flippera, kalibracja czujników.' },
+        { title: 'Elektronika i sieć', description: 'Płyta główna, zasilacz, koder pasków magnetycznych, moduły Ethernet i Wi-Fi, aktualizacja firmware, ustawienie stałego adresu IP.' },
+      ],
+    },
+    seriesList: [
+      { series: 'Serwis Magicard Pronto100 i Pronto', description: 'Kompaktowe drukarki jednostronne na 50 kart, sterowane jednym przyciskiem. Naprawa głowicy, wałków, podajnika i modułu Ethernet.', typicalDevices: 'Pronto100, Pronto100E, Pronto' },
+      { series: 'Serwis Magicard 300 i 300 Duo', description: 'Biurkowe drukarki z wyświetlaczem LCD, podajnik 100 kart, opcjonalny koder magnetyczny. Naprawa głowicy, flippera, czujnika taśmy, kodera.', typicalDevices: '300, 300 Duo, 300 S Duo' },
+      { series: 'Serwis Magicard 600 i 600 Duo', description: 'Drukarki z Wi-Fi i Ethernetem, do 10 wzorów HoloKote. Naprawa głowicy, modułu obracania, modułów sieciowych, kodera.', typicalDevices: '600, 600 Duo' },
+      { series: 'Serwis Magicard Enduro i Rio Pro', description: 'Starsze modele wciąż używane w szkołach, urzędach i firmach. Głowice, wałki, płyty główne, kodery magnetyczne i zbliżeniowe.', typicalDevices: 'Enduro3E, Enduro+, Enduro, Rio Pro 360, Rio Pro, Rio Pro Xtended' },
+      { series: 'Serwis Magicard Ultima i Prima (retransfer)', description: 'Drukarki retransferowe z drukiem od krawędzi do krawędzi. Naprawa głowicy, modułu retransferu i toru folii.', typicalDevices: 'Ultima, Prima 4, Prima 8, Helix' },
+    ],
+    commonIssues: [
+      { title: 'Białe linie lub kreski na kartach (Pronto100, 300, 600)', description: 'Wypalone punkty głowicy, często po druku na brudnych kartach. Wymiana głowicy, wymiana wałków czyszczących, kalibracja. Przy lekkim zabrudzeniu wystarczy pisak z alkoholem izopropylowym z zestawu czyszczącego.' },
+      { title: 'Błąd 5 „Out of film” — taśma zrywa się lub nie przewija', description: 'Taśma skończona lub zerwana (kody 5:0, 5:7, 5:8) albo drukarka nie rozpoznaje paneli koloru (kod 5:2). Kalibracja czujnika taśmy, wymiana rolek prowadzących; przy taśmie z wyzerowanym licznikiem (kod 5:4) nowa rolka.' },
+      { title: 'Błąd 6 „Film invalid” — drukarka nie przyjmuje taśmy', description: 'Nieczytelny znacznik RFID taśmy albo taśma z innego regionu (/2 zamiast /3). Sprawdzenie czytnika RFID, dobór właściwej taśmy MD, MC lub MB.' },
+      { title: 'Błąd 4 „Card jam” — karta zacina się w torze', description: 'Zużyte wałki transportowe, karty spoza zakresu 0,5–1,27 mm albo brud w torze. Wymiana wałków, czyszczenie toru, regulacja podajnika.' },
+      { title: 'Błąd 9 „Flip jam” w 300 Duo / 600 Duo', description: 'Moduł obracania kart nie dochodzi do pozycji. Naprawa lub wymiana flippera, kalibracja czujnika położenia.' },
+      { title: 'Blade kolory, przesunięte panele, smugi', description: 'Rozkalibrowany czujnik paneli taśmy, zużyta głowica albo brudne wałki. Kalibracja, czyszczenie, w razie potrzeby wymiana głowicy.' },
+      { title: 'Koder magnetyczny nie zapisuje paska', description: 'Uszkodzona głowica zapisu lub płyta kodera. Test Mag Test, wymiana modułu kodera HiCo/LoCo.' },
+      { title: 'Drukarka niewidoczna przez USB, Ethernet lub Wi-Fi', description: 'Uszkodzone gniazdo, moduł sieciowy albo błędna konfiguracja IP. Naprawa złącza, wymiana modułu, ustawienie stałego adresu i aktualizacja firmware.' },
+    ],
+    faqs: [
+      { q: 'Czy naprawiacie drukarki Magicard po gwarancji?', a: 'Tak. Gwarancja producenta MagiCover trwa 3 lata i obejmuje głowicę do limitu określonego przez producenta (w Pronto100: 50 000 kart lub 250 000 paneli). Po jej upływie naprawiamy Pronto100, 300, 600, Enduro, Rio Pro i Ultima na oryginalnych częściach Magicard. W okresie gwarancji pośredniczymy w zgłoszeniu do producenta.' },
+      { q: 'Ile kosztuje wymiana głowicy w drukarce kart Magicard?', a: 'Robocizna z kalibracją i kartą testową od 450 PLN netto. Koszt głowicy zależy od modelu i podajemy go po bezpłatnej diagnostyce. Na wymienioną głowicę dajemy 6 miesięcy gwarancji.' },
+      { q: 'Jak długo trwa naprawa drukarki Magicard?', a: 'Diagnostyka w 48h od dostarczenia. Naprawa zwykle 3–5 dni roboczych. Części do starszych modeli (Enduro, Rio Pro) sprowadzamy w 7–14 dni.' },
+      { q: 'Dlaczego drukarka Magicard drukuje białe linie na kartach?', a: 'Białe linie na kartach z drukarki Magicard to najczęściej brud pod głowicą albo zużyty niebieski wałek czyszczący, nie uszkodzona głowica. Czyszczenie pisakiem z alkoholem izopropylowym z zestawu 3633-0053 (Pronto100: E9100) i nowy niebieski wałek usuwają cienką, świeżą linię. Linia w tym samym miejscu po czyszczeniu to wypalony punkt głowicy i wtedy konieczna jest wymiana: od 450 PLN netto robocizny plus głowica.' },
+      { q: 'Drukarka Magicard nie pobiera kart. Co sprawdzić?', a: 'Błąd 2 „Out of cards” oznacza pusty podajnik albo sklejone karty: przekartkuj plik i włóż od 10 do 100 kart (Pronto100: do 50) o grubości 0,5–1,27 mm. Błąd 4 „Card jam” to karta zablokowana w torze, trzeba otworzyć pokrywę i ją wyjąć. Jeśli zacięcia wracają przy dobrych kartach, zużyły się wałki transportowe. Wymiana od 150 PLN netto.' },
+      { q: 'Jak często czyścić drukarkę Magicard i jaki zestaw kupić?', a: 'Co 700 kart albo przy każdej wymianie taśmy. Do Magicard 300 i 600 służy zestaw 3633-0053, do Pronto100 zestaw E9100: 10 kart czyszczących i pisak z alkoholem izopropylowym. Nowy niebieski wałek czyszczący jest w każdym opakowaniu oryginalnej taśmy.' },
+      { q: 'Czy da się dodać druk dwustronny do jednostronnej Magicard 300 lub 600?', a: 'Tak. Druk dwustronny włącza klucz elektroniczny wystawiany przez producenta na numer seryjny drukarki (menu More → Serial Number). Zamawiamy go w imieniu klienta, bez wizyty serwisu. Wersje 300 Duo i 600 Duo z naszej oferty mają tę funkcję od razu.' },
+      { q: 'Czy mogę wysłać drukarkę Magicard do serwisu z innego miasta?', a: 'Tak, obsługujemy całą Polskę. Kurier odbiera urządzenie zazwyczaj w ciągu 24h od zgłoszenia przez formularz. Można też wysłać je samodzielnie na adres: TAKMA, ul. Poświęcka 1a, 51-128 Wrocław. Przed wysyłką należy wyjąć taśmę i karty z podajnika i zapakować drukarkę w oryginalny karton.' },
     ],
   },
   {
