@@ -105,7 +105,7 @@ export const guides: Guide[] = [
 <h3>Magicard 300 — regularny druk po obu stronach</h3>
 <p><a href="/produkt/magicard-300">Magicard 300</a> wybierz wtedy, gdy na odwrocie karty ma znaleźć się kod kreskowy, regulamin, dane kontaktowe albo dodatkowe informacje. Oferowany przez nas wariant Duo sam obraca kartę, więc operator nie musi przekładać jej ręcznie. Podajnik mieści 100 kart, odbiornik 70, a kolorowy ekran ma menu w języku polskim.</p>
 
-<p>Przy druku jednostronnym drukarka osiąga do 160 kolorowych kart na godzinę. Oprócz trzech standardowych znaków HoloKote może przechowywać trzy własne wzory, na przykład z logo firmy lub szkoły. USB i Ethernet są wyposażeniem standardowym.</p>
+<p>Przy druku jednostronnym drukarka osiąga do 160 kolorowych kart na godzinę. Oprócz czterech standardowych znaków HoloKote może przechowywać cztery własne wzory, na przykład z logo firmy lub szkoły. USB i Ethernet są wyposażeniem standardowym.</p>
 
 <h3>Magicard 600 Duo — więcej szczegółów i Wi-Fi</h3>
 <p><a href="/produkt/magicard-600-duo">Magicard 600 Duo</a> jest najbardziej rozbudowanym z wprowadzonych modeli. Drukuje automatycznie po obu stronach, a przy czarnym nadruku pracuje w rozdzielczości do 600 × 300 dpi. Ma to znaczenie przy drobnym tekście, numerach i elementach zabezpieczających. Kolorowe zdjęcia i grafiki powstają w rozdzielczości 300 dpi.</p>
