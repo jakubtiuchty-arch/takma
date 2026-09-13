@@ -46385,15 +46385,15 @@ Obudowa ma 179 mm szerokości, 309 mm głębokości i 208 mm wysokości, a całe
     // Film producenta (niemy, napisy EN) z polskim lektorem nagranym w ElevenLabs; plik w Vercel Blob (store takma-downloads)
     videos: [
       {
-        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-zawartosc-pudelka-pl-v2.mp4',
-        title: 'Co jest w pudełku · 1:03',
+        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-zawartosc-pudelka-pl-v3.mp4',
+        title: 'Co jest w pudełku · 0:59',
         native: true,
         poster: '/images/products/magicard-300-zawartosc-pudelka-poster.webp',
         captions: '/video/napisy/magicard-300-zawartosc-pudelka-pl.vtt',
         published: '2026-09-12',
       },
       {
-        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-wymiana-tasmy-pl.mp4',
+        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-wymiana-tasmy-pl-v2.mp4',
         title: 'Wymiana taśmy · 1:19',
         native: true,
         poster: '/images/products/magicard-300-wymiana-tasmy-poster.webp',
@@ -46401,7 +46401,7 @@ Obudowa ma 179 mm szerokości, 309 mm głębokości i 208 mm wysokości, a całe
         published: '2026-09-12',
       },
       {
-        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-podawanie-reczne-pl-v5.mp4',
+        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-podawanie-reczne-pl-v6.mp4',
         title: 'Podawanie ręczne kart · 1:39',
         native: true,
         poster: '/images/products/magicard-300-podawanie-reczne-poster.webp',
@@ -46409,8 +46409,8 @@ Obudowa ma 179 mm szerokości, 309 mm głębokości i 208 mm wysokości, a całe
         published: '2026-09-12',
       },
       {
-        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-czyszczenie-pl.mp4',
-        title: 'Czyszczenie drukarki · 2:42',
+        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-czyszczenie-pl-v2.mp4',
+        title: 'Czyszczenie drukarki · 2:40',
         native: true,
         poster: '/images/products/magicard-300-czyszczenie-poster.webp',
         captions: '/video/napisy/magicard-300-czyszczenie-pl.vtt',
@@ -46560,32 +46560,32 @@ USB i Ethernet są w standardzie. Ustawienia można zmieniać z kolorowego ekran
     // Film producenta (angielski lektor zastąpiony polskim, ElevenLabs) z napisami PL; plik w Vercel Blob (store takma-downloads)
     videos: [
       {
-        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-600-zawartosc-pudelka-pl-v2.mp4',
-        title: 'Co jest w pudełku · 1:15',
+        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-600-zawartosc-pudelka-pl-v3.mp4',
+        title: 'Co jest w pudełku · 1:11',
         native: true,
         poster: '/images/products/magicard-600-duo-zawartosc-pudelka-poster.webp',
         captions: '/video/napisy/magicard-600-zawartosc-pudelka-pl.vtt',
         published: '2026-09-12',
       },
       {
-        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-600-wymiana-tasmy-pl.mp4',
-        title: 'Wymiana taśmy · 1:27',
+        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-600-wymiana-tasmy-pl-v2.mp4',
+        title: 'Wymiana taśmy · 1:25',
         native: true,
         poster: '/images/products/magicard-600-duo-wymiana-tasmy-poster.webp',
         captions: '/video/napisy/magicard-600-wymiana-tasmy-pl.vtt',
         published: '2026-09-12',
       },
       {
-        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-600-podawanie-reczne-pl.mp4',
-        title: 'Podawanie ręczne kart · 1:44',
+        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-600-podawanie-reczne-pl-v2.mp4',
+        title: 'Podawanie ręczne kart · 1:42',
         native: true,
         poster: '/images/products/magicard-600-duo-podawanie-reczne-poster.webp',
         captions: '/video/napisy/magicard-600-podawanie-reczne-pl.vtt',
         published: '2026-09-12',
       },
       {
-        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-600-czyszczenie-pl.mp4',
-        title: 'Czyszczenie drukarki · 3:13',
+        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-600-czyszczenie-pl-v2.mp4',
+        title: 'Czyszczenie drukarki · 3:11',
         native: true,
         poster: '/images/products/magicard-600-duo-czyszczenie-poster.webp',
         captions: '/video/napisy/magicard-600-czyszczenie-pl.vtt',

@@ -87,7 +87,7 @@ export const magicard300Pl: PolishManual = {
         },
         {
           type: 'video',
-          src: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-podawanie-reczne-pl-v5.mp4',
+          src: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-podawanie-reczne-pl-v6.mp4',
           poster: '/images/products/magicard-300-podawanie-reczne-poster.webp',
           captions: '/video/napisy/magicard-300-podawanie-reczne-pl.vtt',
           caption: 'Podawanie ręczne kart: włączenie trybu Hand feed w menu, druk pojedynczej karty z komputera i karty testowej. Film producenta z polskim lektorem, 1:39.',
@@ -160,7 +160,7 @@ export const magicard300Pl: PolishManual = {
         },
         {
           type: 'video',
-          src: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-wymiana-tasmy-pl.mp4',
+          src: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-wymiana-tasmy-pl-v2.mp4',
           poster: '/images/products/magicard-300-wymiana-tasmy-poster.webp',
           captions: '/video/napisy/magicard-300-wymiana-tasmy-pl.vtt',
           caption: 'Wymiana taśmy: wyjęcie zużytych rolek, nowy niebieski wałek z prętem, założenie taśmy i zamknięcie pokrywy. Film producenta z polskim lektorem, 1:19.',
@@ -190,7 +190,7 @@ export const magicard300Pl: PolishManual = {
       blocks: [
         {
           type: 'video',
-          src: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-zawartosc-pudelka-pl-v2.mp4',
+          src: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-zawartosc-pudelka-pl-v3.mp4',
           poster: '/images/products/magicard-300-zawartosc-pudelka-poster.webp',
           captions: '/video/napisy/magicard-300-zawartosc-pudelka-pl.vtt',
           caption: 'Zawartość pudełka: zasilacz z kablem, kabel USB, podajnik na 100 kart, odbiornik na 70 kart, karta czyszcząca, skrócona instrukcja i dokument gwarancyjny. Film producenta z polskim lektorem, 1:03.',
@@ -254,7 +254,7 @@ export const magicard300Pl: PolishManual = {
       blocks: [
         {
           type: 'video',
-          src: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-czyszczenie-pl.mp4',
+          src: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-300-czyszczenie-pl-v2.mp4',
           poster: '/images/products/magicard-300-czyszczenie-poster.webp',
           captions: '/video/napisy/magicard-300-czyszczenie-pl.vtt',
           caption: 'Czyszczenie Magicard 300 krok po kroku: karta czyszcząca, drugi przebieg odwróconą kartą, wymiana niebieskiego wałka. Film producenta z polskim lektorem, 2:42.',
