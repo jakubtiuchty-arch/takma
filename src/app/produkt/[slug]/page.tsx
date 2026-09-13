@@ -232,7 +232,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // Sterowniki dostają własną podsekcję, żeby nie mieszały się z kartami katalogowymi i programami
   const driverDownloads = downloads.filter((d) => d.type === 'driver')
   const fileDownloads = downloads.filter((d) => d.type !== 'driver')
-  // Kolejność sekcji: 'faq-last' przesuwa FAQ i pliki na koniec (kontener sekcji jest flex-col, używamy order-last)
+  // Kolejność sekcji: 'faq-last' przesuwa FAQ, filmy instruktażowe i pliki na koniec (kontener sekcji jest flex-col, używamy order-last)
   const faqLast = product.sectionOrder === 'faq-last'
   const lastCls = faqLast ? ' order-last' : ''
 
@@ -701,6 +701,49 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               </section>
             )}
 
+            {/* Kilka filmów (np. instrukcje producenta) — siatka 2 kolumny */}
+            {product.videos?.length ? (
+              <section id="video">
+                <h2 className="text-2xl font-bold text-gray-900 mb-1">Filmy: obsługa drukarki</h2>
+                {/* Zdanie zależy od zestawu filmów: przy pełnym cyklu mówimy o kolejności, przy dwóch nie ma czego porządkować. */}
+                <p className="mb-4 text-sm text-gray-500">
+                  Filmy producenta z polskim lektorem i napisami
+                  {product.videos.length > 2 ? ', w kolejności od rozpakowania do czyszczenia.' : '.'}
+                </p>
+                <div className="grid gap-5 sm:grid-cols-2">
+                  {product.videos.map((v) => (
+                    <figure key={v.url}>
+                      <div className="aspect-video rounded-xl overflow-hidden bg-gray-100">
+                        {v.native ? (
+                          <video
+                            src={v.url}
+                            poster={v.poster}
+                            className="w-full h-full object-contain bg-black"
+                            controls
+                            preload="none"
+                            playsInline
+                            title={v.title}
+                          >
+                            {v.captions && <track kind="subtitles" src={v.captions} srcLang="pl" label="Polski" default />}
+                          </video>
+                        ) : (
+                          <iframe
+                            src={v.url}
+                            className="w-full h-full"
+                            allowFullScreen
+                            allow="autoplay; fullscreen; picture-in-picture"
+                            title={v.title}
+                            loading="lazy"
+                          />
+                        )}
+                      </div>
+                      <figcaption className="mt-2 text-sm text-gray-600">{v.title}</figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </section>
+            ) : null}
+
             {/* Pliki do pobrania */}
             {(downloads.length > 0 || manual) && (
               <section id="pliki">
@@ -1132,7 +1175,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               {(product.videoUrl || product.videoFile || product.videos?.length) && (
                 <a
                   href="#video"
-                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                  className={`px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap${lastCls}`}
                 >
                   Wideo
                 </a>
@@ -1387,45 +1430,6 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {product.manufacturerId === 'magicard' && product.categoryId === 'drukarki-kart' && (
               <MagicardHubBanner printerName={product.name} />
             )}
-
-            {/* Kilka filmów (np. instrukcje producenta) — siatka 2 kolumny */}
-            {product.videos?.length ? (
-              <section id="video">
-                <h2 className="text-2xl font-bold text-gray-900 mb-1">Filmy: obsługa drukarki</h2>
-                <p className="mb-4 text-sm text-gray-500">Filmy producenta z polskim lektorem i napisami, w kolejności od rozpakowania do czyszczenia.</p>
-                <div className="grid gap-5 sm:grid-cols-2">
-                  {product.videos.map((v) => (
-                    <figure key={v.url}>
-                      <div className="aspect-video rounded-xl overflow-hidden bg-gray-100">
-                        {v.native ? (
-                          <video
-                            src={v.url}
-                            poster={v.poster}
-                            className="w-full h-full object-contain bg-black"
-                            controls
-                            preload="none"
-                            playsInline
-                            title={v.title}
-                          >
-                            {v.captions && <track kind="subtitles" src={v.captions} srcLang="pl" label="Polski" default />}
-                          </video>
-                        ) : (
-                          <iframe
-                            src={v.url}
-                            className="w-full h-full"
-                            allowFullScreen
-                            allow="autoplay; fullscreen; picture-in-picture"
-                            title={v.title}
-                            loading="lazy"
-                          />
-                        )}
-                      </div>
-                      <figcaption className="mt-2 text-sm text-gray-600">{v.title}</figcaption>
-                    </figure>
-                  ))}
-                </div>
-              </section>
-            ) : null}
 
             {/* Video — embed Vidyard/YouTube or native MP4 */}
             {(product.videoUrl || product.videoFile) && (

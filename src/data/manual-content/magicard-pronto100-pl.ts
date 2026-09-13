@@ -160,6 +160,13 @@ export const magicardPronto100Pl: PolishManual = {
           type: 'p',
           text: 'Kod regionu ma znaczenie: taśmy dla Europy mają końcówkę /3. Taśma z rynku amerykańskiego (/2) nie zadziała. Wszystkie taśmy do drukarek kart są w [osobnej kategorii](/tasmy-do-drukarek-kart).',
         },
+        {
+          type: 'video',
+          src: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-pronto100-wymiana-tasmy-pl-v7.mp4',
+          poster: '/images/products/magicard-pronto100-wymiana-tasmy-poster.webp',
+          captions: '/video/napisy/magicard-pronto100-wymiana-tasmy-pl.vtt',
+          caption: 'Wymiana taśmy: migająca kontrolka materiałów, otwarcie pokrywy zatrzaskiem, wyjęcie obu szpul i założenie nowej rolki niebieską szpulą do tyłu. Film producenta z polskim lektorem i napisami, 1:01.',
+        },
       ],
     },
     {
@@ -225,6 +232,13 @@ export const magicardPronto100Pl: PolishManual = {
     {
       title: 'Czyszczenie',
       blocks: [
+        {
+          type: 'video',
+          src: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/magicard-pronto100-czyszczenie-pl-v7.mp4',
+          poster: '/images/products/magicard-pronto100-czyszczenie-poster.webp',
+          captions: '/video/napisy/magicard-pronto100-czyszczenie-pl.vtt',
+          caption: 'Czyszczenie krok po kroku: opróżnienie podajników, wyjęcie taśmy, dwa naciśnięcia przycisku zasilania i przejazd karty czyszczącej. Film producenta z polskim lektorem i napisami, 1:28.',
+        },
         {
           type: 'p',
           text: 'Czyść drukarkę co 700 kart albo przy każdej wymianie taśmy, w zależności od tego, co nastąpi pierwsze. Brud pod głowicą to najczęstsza przyczyna białych kresek na kartach. Potrzebny jest [zestaw czyszczący E9100](/produkt/magicard-zestaw-czyszczacy-pronto100-e9100): dziesięć kart czyszczących i pisak z alkoholem izopropylowym.',

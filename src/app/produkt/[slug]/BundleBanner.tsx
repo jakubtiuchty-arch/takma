@@ -31,6 +31,16 @@ export default function BundleBanner({ bundle, image, compact }: { bundle: Produ
   const separately = items.reduce((s, i) => s + (i.product.priceFrom ?? 0) * i.quantity, 0)
   const saving = separately - bundle.priceFrom
   const pn = bundle.specifications.find((s) => s.name === 'Part Number')?.value
+  // Liczby w zdaniu pod nagłówkiem biorą się ze składników zestawu, nie z kodu:
+  // taśma na 200 wydruków (Pronto100) i na 300 (Magicard 300 / 600) dają inne zdanie.
+  const ribbon = items.find((i) => i.product.subcategoryIds?.includes('tasmy-do-drukarek-kart'))
+  const printer = items.find((i) => i.product.categoryId === 'drukarki-kart')
+  const ribbonPrints = (() => {
+    const m = (ribbon?.product.specifications.find((s) => s.name === 'Wydajność')?.value ?? '').replace(/\s/g, '').match(/\d+/)
+    return m ? parseInt(m[0], 10) : null
+  })()
+  const cardsCount = items.find((i) => i.product.subcategoryIds?.includes('karty-plastikowe'))?.quantity
+  const isDuplex = /dwustronn/i.test(printer?.product.specifications.find((s) => s.name === 'Druk jedno-/dwustronny')?.value ?? '')
   const cartBundle = { id: bundle.id, name: bundle.name, slug: bundle.slug, image: bundle.images[0], partNumber: pn, priceNetto: bundle.priceFrom, categoryId: bundle.categoryId }
 
   if (compact) {
@@ -57,7 +67,9 @@ export default function BundleBanner({ bundle, image, compact }: { bundle: Produ
                 </span>
               ))}
             </p>
-            <p className="mt-1 text-xs text-gray-500">Drukarka jest sprzedawana bez taśmy i kart. Taśma wystarcza na {fmtInt(300)} stron w kolorze.</p>
+            <p className="mt-1 text-xs text-gray-500">
+              Drukarka jest sprzedawana bez taśmy i kart.{ribbonPrints ? ` Taśma wystarcza na ${fmtInt(ribbonPrints)} stron w kolorze.` : ''}
+            </p>
           </div>
           <div className="flex flex-col gap-2 border-t border-slate-100 px-5 py-4 sm:px-6 md:border-t-0 md:border-l md:items-end md:text-right">
             <p className="text-2xl font-bold text-gray-900 tabular-nums leading-none">
@@ -96,7 +108,9 @@ export default function BundleBanner({ bundle, image, compact }: { bundle: Produ
             Drukuj od pierwszego dnia
           </h2>
           <p className="mt-2 text-sm text-gray-600">
-            Drukarka jest sprzedawana bez taśmy i kart. Zestaw zawiera taśmę na {fmtInt(300)} stron w kolorze, czyli do {fmtInt(150)} kart z nadrukiem po obu stronach, i opakowanie {fmtInt(100)} kart.
+            Drukarka jest sprzedawana bez taśmy i kart.
+            {ribbonPrints ? ` Zestaw zawiera taśmę na ${fmtInt(ribbonPrints)} stron w kolorze${isDuplex ? `, czyli do ${fmtInt(ribbonPrints / 2)} kart z nadrukiem po obu stronach` : ''}` : ''}
+            {ribbonPrints && cardsCount ? ` i opakowanie ${fmtInt(cardsCount * 100)} kart.` : ribbonPrints ? '.' : ''}
           </p>
 
           <ul className="mt-4 border-y border-slate-100 divide-y divide-slate-100 text-sm">

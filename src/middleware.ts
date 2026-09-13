@@ -268,7 +268,7 @@ export async function middleware(request: NextRequest) {
       'karty-pvc-samoprzylepne-pvc1-sa40', 'karty-pvc-srebrne-si76-a-sc', 'karty-pvc-czarne-bk76-a-sc',
       // Zestawy startowe drukarek kart
       'magicard-300-zestaw-startowy', 'magicard-tasma-ymckok-300-250-mc250ymcko-s',
-      'magicard-600-duo-zestaw-startowy',
+      'magicard-600-duo-zestaw-startowy', 'magicard-pronto100-zestaw-startowy',
     ])
 
     // Jeśli slug NIE istnieje na nowej stronie → redirect do strony przebudowy
