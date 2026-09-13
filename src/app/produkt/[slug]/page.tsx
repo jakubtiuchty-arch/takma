@@ -43,6 +43,7 @@ import StockInfo from './StockInfo'
 import SmartPrice from './SmartPrice'
 import { BundleContents } from './BundleBox'
 import BundleBanner from './BundleBanner'
+import ServiceBanner from './ServiceBanner'
 import PromoBanner from './PromoBanner'
 import PriceIncreaseNotice from './PriceIncreaseNotice'
 import { priceIncreaseFor } from '@/data/price-increase'
@@ -441,6 +442,21 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     (product.variants?.some(v => v.priceFrom && v.priceFrom > 0))
   const magicardOffer = getMagicardOffer(product)
 
+  // VideoObject dla filmów natywnych z datą publikacji (tylko te, które mają `published`)
+  const toIsoDuration = (title: string) => { const m = title.match(/(\d+):(\d{2})\s*$/); return m ? `PT${parseInt(m[1], 10)}M${parseInt(m[2], 10)}S` : undefined }
+  const videoJsonLd = (product.videos ?? []).filter((v) => v.native && v.published && v.poster).map((v) => ({
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: `${v.title.replace(/\s*·\s*\d+:\d{2}\s*$/, '')} — ${product.name}`,
+    description: `${v.title.replace(/\s*·\s*\d+:\d{2}\s*$/, '')}: film producenta z polskim lektorem i napisami dla drukarki ${product.name}.`,
+    thumbnailUrl: [`https://www.takma.com.pl${v.poster}`],
+    contentUrl: v.url,
+    uploadDate: v.published,
+    ...(toIsoDuration(v.title) ? { duration: toIsoDuration(v.title) } : {}),
+    inLanguage: 'pl',
+    publisher: { '@type': 'Organization', name: 'TAKMA' },
+  }))
+
   const productJsonLd = {
     '@context': 'https://schema.org',
     '@type': product.download ? 'SoftwareApplication' : 'Product',
@@ -747,6 +763,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
       />}
+      {videoJsonLd.map((v, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(v) }} />
+      ))}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
@@ -823,7 +842,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {!liveOffers && productHeading}
 
             {/* Variants link — ukryte dla etykiet termicznych (wybór wariantu na /serie/) */}
-            {showVariants && (
+            {showVariants && product.variants!.length > 1 && (
               <a
                 href="#warianty"
                 className="inline-flex items-center gap-1 text-sm font-semibold text-gray-900 underline underline-offset-4 decoration-primary-400 hover:decoration-primary-600 transition-colors mb-1"
@@ -1361,7 +1380,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {/* Kilka filmów (np. instrukcje producenta) — siatka 2 kolumny */}
             {product.videos?.length ? (
               <section id="video">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">Wideo: jak to działa</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-1">Filmy: obsługa drukarki</h2>
+                <p className="mb-4 text-sm text-gray-500">Filmy producenta z polskim lektorem i napisami, w kolejności od rozpakowania do czyszczenia.</p>
                 <div className="grid gap-5 sm:grid-cols-2">
                   {product.videos.map((v) => (
                     <figure key={v.url}>
@@ -1475,7 +1495,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {/* CTA — Serwis (gdy marka ma stronę serwisową) */}
             {(() => {
               const serviceBrand = getServiceBrandBySlug(product.manufacturerId)
-              if (!serviceBrand) return null
+              if (!serviceBrand || serviceBrand.bannerImage) return null
               return (
                 <aside className="rounded-xl border border-slate-200 bg-gray-50 p-5 sm:p-6">
                   <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1">
@@ -1660,12 +1680,18 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             )}
 
             {faqLast && faqAndFilesJsx}
+
+            {/* Baner serwisowy marki na samym końcu karty (marki z bannerImage; pozostałe mają boks wyżej) */}
+            {(() => {
+              const sb = getServiceBrandBySlug(product.manufacturerId)
+              return sb?.bannerImage ? <ServiceBanner brandName={sb.name} brandSlug={sb.slug} image={sb.bannerImage} /> : null
+            })()}
           </div>
         </div>
       </div>
 
       {/* Stały pasek na telefonie: zakup wybranego wariantu z ceną, skrót do wariantów, telefon */}
-      <MobileCta product={product} hasVariants={showVariants} bundle={starterBundle?.priceFrom ? { price: starterBundle.priceFrom, href: '#zestaw-startowy' } : undefined} />
+      <MobileCta product={product} hasVariants={showVariants && (product.variants?.length ?? 0) > 1} bundle={starterBundle?.priceFrom ? { price: starterBundle.priceFrom, href: '#zestaw-startowy' } : undefined} />
 
       {/* Spacer for mobile sticky CTA */}
       <div className="h-20 lg:hidden" />

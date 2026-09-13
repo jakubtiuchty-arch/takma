@@ -12,6 +12,8 @@ export type ServiceBrand = {
   heroDescription: string
   /** Opcjonalny obraz tła hero (dark theme). Jeśli brak — jasny hero z logo. */
   heroImage?: string
+  /** Baner serwisowy na końcu kart produktów tej marki (Higgsfield, 21:9) */
+  bannerImage?: string
   /** Override wariantu cennika. Dla marek które mają np. drukarki + terminale
    *  (jak Honeywell) ustaw 'all'. Domyślnie wyliczane z category. */
   pricingVariant?: 'printers' | 'devices' | 'cardPrinters' | 'all'
@@ -441,6 +443,7 @@ export const serviceBrands: ServiceBrand[] = [
     heroTitle: 'Serwis Magicard — naprawa drukarek kart PVC i identyfikatorów',
     heroDescription: 'Pogwarancyjny serwis drukarek kart Magicard: Pronto100, 300, 300 Duo, 600, 600 Duo, Enduro3E, Rio Pro 360, Ultima. Wymiana głowic, wałków, modułu obracania kart, kodera magnetycznego. Oryginalne części, wysyłka z całej Polski.',
     heroImage: '/images/serwis-hero/magicard-hero.webp',
+    bannerImage: '/images/serwis-banner/magicard-banner-v4.webp',
     ogImage: '/images/serwis-hero/magicard-og.jpg',
     crossSell: 'drukarki kart, taśmy YMCKO, karty PVC i zestawy czyszczące w cenach B2B',
     heroLead: 'Serwis i naprawa drukarek kart Magicard w TAKMA we Wrocławiu obejmuje modele z bieżącej oferty: Pronto100, 300 i 300 Duo, 600 i 600 Duo, a także starsze Enduro3E, Enduro+, Rio Pro 360, Rio Pro oraz retransferowe Ultima i Prima. Najczęściej wymieniamy głowicę po białych liniach na kartach i wałki czyszczące oraz naprawiamy moduł obracania kart (flipper) w wersjach Duo. Diagnostyka w 48h, urządzenie wraca z kartą testową, kurier odbiera z całej Polski.',
