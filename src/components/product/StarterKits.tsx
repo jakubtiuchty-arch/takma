@@ -120,14 +120,13 @@ export default function StarterKits({ kits, printerName, printerSlug }: { kits: 
                       : <p className="text-sm text-gray-400">część pozycji na zapytanie</p>}
                     {kitPrints ? <p className="mt-1 text-xs text-gray-500">wystarczy na ok. {fmtInt(kitPrints)} wydruków{ribbonsForRoll ? `, na całą rolkę ${ribbonsForRoll} rolki taśmy` : ''}</p> : null}
                   </div>
-                  <div className="flex items-center gap-3">
+                  <div className="ml-auto flex items-center gap-3">
                     <AskAboutProductButton
                       productName={printerName}
                       productSlug={printerSlug}
-                      label="Inne warianty"
-                      arrow
+                      label="Zapytaj o inny rozmiar"
                       initialMessage={`Dzień dobry, proszę o propozycję innego kompletu etykieta + taśma do drukarki ${printerName} niż „${kit.title}”. Potrzebuję etykiet o wymiarach ... mm, na ... (papier / folia), w nakładzie ok. ... szt. miesięcznie.`}
-                      buttonClassName="inline-flex items-center gap-1 whitespace-nowrap text-sm font-medium text-gray-600 hover:text-primary-700"
+                      buttonClassName="inline-flex items-center gap-1.5 whitespace-nowrap text-sm font-medium text-gray-600 hover:text-primary-700"
                     />
                     <button
                       type="button"

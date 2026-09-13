@@ -1172,8 +1172,8 @@ Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/
       'zebra-power-supply-zd421-zd621',
     ],
     starterKits: [
-      { title: 'Etykiety papierowe', description: 'Papierowa etykieta i woskowa taśma do zwykłych oznaczeń w suchym pomieszczeniu.', facts: ['Magazyn, półka, wysyłka', 'Wnętrze, ponad rok trwałości', 'Najtańszy komplet'], image: '/images/kits/zd421t-papier.webp', partNumbers: ['3007206-T', '02300GS11007'] },
-      { title: 'Etykiety foliowe', description: 'Mała etykieta z folii i żywiczna taśma do znakowania sprzętu, który się ściera i moczy.', facts: ['Sprzęt, majątek, inwentaryzacja', 'Odporna na wilgoć i ścieranie', 'Wnętrze, do roku użytkowania'], image: '/images/kits/zd421t-folia.webp', partNumbers: ['3011159', '05095GS06407'] },
+      { title: 'Etykiety papierowe', description: 'Papierowa etykieta i woskowa taśma do zwykłych oznaczeń w suchym pomieszczeniu.', facts: ['Magazyn, półka, wysyłka', 'Wnętrze, ponad rok trwałości', 'Najtańszy komplet'], image: '/images/kits/zd421t-papier-v3.webp', partNumbers: ['3007206-T', '02300GS11007'] },
+      { title: 'Etykiety foliowe', description: 'Mała etykieta z folii i żywiczna taśma do znakowania sprzętu, który się ściera i moczy.', facts: ['Sprzęt, majątek, inwentaryzacja', 'Odporna na wilgoć i ścieranie', 'Wnętrze, do roku użytkowania'], image: '/images/kits/zd421t-folia-v3.webp', partNumbers: ['3011159', '05095GS06407'] },
     ],
     faq: [
       { question: "Jaki program do projektowania etykiet dostanę?", answer: "Bezpłatny ZebraDesigner Essentials dla Windows wystarcza do projektu etykiety z tekstem, kodem kreskowym i logo, obsługuje też pola wpisywane przy druku, datę, czas i liczniki. Płatna wersja Professional jest potrzebna dopiero przy danych z bazy albo arkusza Excel, skryptach i kodowaniu RFID. Do druku z programu magazynowego lub ERP nie potrzeba żadnego z nich: system wysyła gotowy ZPL przez sterownik albo bezpośrednio do portu drukarki." },
