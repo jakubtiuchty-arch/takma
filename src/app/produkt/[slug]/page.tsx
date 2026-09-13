@@ -902,7 +902,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {/* Zawartość pudełka przy zakupie, zamiast 17. wiersza specyfikacji (audyt ZD421t, ZD-09) */}
             {(() => {
               const box = product.specifications.find((s) => /^(W zestawie|Zawartość (zestawu|opakowania)|W opakowaniu|W pudełku)$/i.test(s.name))
-              if (!box || !box.value) return null
+              // drukarki kart mają zawartość pudełka w wierszu „Kluczowych parametrów”, bez akordeonu
+              if (!box || !box.value || product.categoryId === 'drukarki-kart') return null
               const items = box.value.split(/,\s+(?![^(]*\))/).map((t) => t.trim()).filter(Boolean)
               const isLabelPrinter = product.categoryId === 'drukarki-etykiet'
               return (
@@ -971,38 +972,38 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {szerokosc && (
                       <div>
-                        <dt className="text-sm text-gray-500">Szerokość etykiety</dt>
-                        <dd className="font-medium text-gray-900">{szerokosc}</dd>
+                        <dt className="text-sm font-semibold text-gray-900">Szerokość etykiety</dt>
+                        <dd className="text-gray-700">{szerokosc}</dd>
                       </div>
                     )}
                     {wysokosc && (
                       <div>
-                        <dt className="text-sm text-gray-500">Wysokość etykiety</dt>
-                        <dd className="font-medium text-gray-900">{wysokosc}</dd>
+                        <dt className="text-sm font-semibold text-gray-900">Wysokość etykiety</dt>
+                        <dd className="text-gray-700">{wysokosc}</dd>
                       </div>
                     )}
                     {gilza && (
                       <div>
-                        <dt className="text-sm text-gray-500">Rdzeń (gilza)</dt>
-                        <dd className="font-medium text-gray-900">{gilza}</dd>
+                        <dt className="text-sm font-semibold text-gray-900">Rdzeń (gilza)</dt>
+                        <dd className="text-gray-700">{gilza}</dd>
                       </div>
                     )}
                     {typDrukuSpec && (
                       <div>
-                        <dt className="text-sm text-gray-500">Typ druku</dt>
-                        <dd className="font-medium text-gray-900">{typDrukuSpec}</dd>
+                        <dt className="text-sm font-semibold text-gray-900">Typ druku</dt>
+                        <dd className="text-gray-700">{typDrukuSpec}</dd>
                       </div>
                     )}
                     {materialSpec && (
                       <div>
-                        <dt className="text-sm text-gray-500">Materiał</dt>
-                        <dd className="font-medium text-gray-900">{materialSpec}</dd>
+                        <dt className="text-sm font-semibold text-gray-900">Materiał</dt>
+                        <dd className="text-gray-700">{materialSpec}</dd>
                       </div>
                     )}
                     {klejSpec && (
                       <div>
-                        <dt className="text-sm text-gray-500">Klej</dt>
-                        <dd className="font-medium text-gray-900 break-words">{klejSpec}</dd>
+                        <dt className="text-sm font-semibold text-gray-900">Klej</dt>
+                        <dd className="text-gray-700 break-words">{klejSpec}</dd>
                       </div>
                     )}
                   </dl>
@@ -1013,37 +1014,47 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 <h2 className="font-semibold text-gray-900 mb-4">Kluczowe parametry</h2>
                 <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <dt className="text-sm text-gray-500">Rodzaj druku</dt>
-                    <dd className="font-medium text-gray-900">{product.keyParams.rodzajDruku}</dd>
+                    <dt className="text-sm font-semibold text-gray-900">Rodzaj druku</dt>
+                    <dd className="text-gray-700">{product.keyParams.rodzajDruku}</dd>
                   </div>
                   <div>
-                    <dt className="text-sm text-gray-500">Rozdzielczość</dt>
-                    <dd className="font-medium text-gray-900">{product.keyParams.rozdzielczosc}</dd>
+                    <dt className="text-sm font-semibold text-gray-900">Rozdzielczość</dt>
+                    <dd className="text-gray-700">{product.keyParams.rozdzielczosc}</dd>
                   </div>
                   <div>
-                    <dt className="text-sm text-gray-500">Prędkość druku</dt>
-                    <dd className="font-medium text-gray-900">{product.keyParams.predkoscDruku}</dd>
+                    <dt className="text-sm font-semibold text-gray-900">Prędkość druku</dt>
+                    <dd className="text-gray-700">{product.keyParams.predkoscDruku}</dd>
                   </div>
                   <div>
-                    <dt className="text-sm text-gray-500">Szerokość druku</dt>
-                    <dd className="font-medium text-gray-900">{product.keyParams.szerokoscDruku}</dd>
+                    <dt className="text-sm font-semibold text-gray-900">Szerokość druku</dt>
+                    <dd className="text-gray-700">{product.keyParams.szerokoscDruku}</dd>
                   </div>
                   <div>
-                    <dt className="text-sm text-gray-500">Szerokość etykiet</dt>
-                    <dd className="font-medium text-gray-900">{product.keyParams.szerokoscEtykiet}</dd>
+                    <dt className="text-sm font-semibold text-gray-900">Szerokość etykiet</dt>
+                    <dd className="text-gray-700">{product.keyParams.szerokoscEtykiet}</dd>
                   </div>
                 </dl>
               </div>
             ) : product.specifications.length > 0 ? (
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <h2 className="font-semibold text-gray-900 mb-4">Kluczowe parametry</h2>
-                <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {product.specifications.slice(0, 5).map((spec) => (
-                    <div key={spec.name}>
-                      <dt className="text-sm text-gray-500">{spec.name}</dt>
-                      <dd className="font-medium text-gray-900 break-words">{spec.value}</dd>
+                {/* Zwarta lista: nazwa w lewej kolumnie, wartość obok; hairline między wierszami zamiast dużych odstępów */}
+                <dl className="divide-y divide-slate-100 text-sm">
+                  {product.specifications.filter((s) => s.name !== 'W pudełku').slice(0, 5).map((spec) => (
+                    <div key={spec.name} className="flex gap-4 py-2">
+                      <dt className="w-36 sm:w-44 shrink-0 font-semibold text-gray-900">{spec.name}</dt>
+                      <dd className="min-w-0 text-gray-700 break-words">{spec.value}</dd>
                     </div>
                   ))}
+                  {product.categoryId === 'drukarki-kart' && !product.bundleItems && (
+                    <div className="flex gap-4 py-2">
+                      <dt className="w-36 sm:w-44 shrink-0 font-semibold text-gray-900">W pudełku</dt>
+                      <dd className="min-w-0 text-gray-700">
+                        {product.specifications.find((s) => s.name === 'W pudełku')?.value
+                          ?? 'Drukarka, zasilacz z kablem i kabel USB. Taśma i karty osobno: w zestawie startowym albo w sekcjach niżej.'}
+                      </dd>
+                    </div>
+                  )}
                 </dl>
               </div>
             ) : null}

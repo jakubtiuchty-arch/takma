@@ -38,11 +38,11 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
     {
       specKey: 'kodowanie',
       label: 'Kodowanie kart',
-      description: 'Zapis danych na karcie podczas druku, zwykle jako opcja.\n• Pasek magnetyczny — karty lojalnościowe, starsze systemy dostępu\n• RFID / NFC — karty zbliżeniowe do drzwi, bramek i rejestracji czasu pracy\n• Smart card — chip stykowy do podpisu i uwierzytelniania',
+      description: 'Zapis danych na karcie podczas druku. Filtr pokazuje tylko drukarki, których wersja z koderem jest w naszej ofercie.\n• Pasek magnetyczny — karty lojalnościowe, starsze systemy dostępu\n• RFID / NFC — karty zbliżeniowe do drzwi, bramek i rejestracji czasu pracy\n• Smart card — chip stykowy do podpisu i uwierzytelniania',
       derived: [
-        { value: 'Pasek magnetyczny', pattern: 'magnetyczn', specs: ['Kodowanie (opcja)', 'Kodowanie'] },
-        { value: 'RFID / NFC', pattern: 'RFID|NFC|zbliżeniow|Mifare', specs: ['Kodowanie (opcja)', 'Kodowanie'] },
-        { value: 'Smart card', pattern: 'smart ?card|chipow', specs: ['Kodowanie (opcja)', 'Kodowanie'] },
+        { value: 'Pasek magnetyczny', pattern: 'magnetyczn', specs: ['Kodowanie (opcja)'] },
+        { value: 'RFID / NFC', pattern: 'RFID|NFC|zbliżeniow|Mifare', specs: ['Kodowanie (opcja)'] },
+        { value: 'Smart card', pattern: 'smart ?card|chipow', specs: ['Kodowanie (opcja)'] },
       ],
     },
     {

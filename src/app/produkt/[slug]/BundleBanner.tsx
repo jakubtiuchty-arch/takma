@@ -44,7 +44,7 @@ export default function BundleBanner({ bundle, image, compact }: { bundle: Produ
           <div className="min-w-0 px-5 py-4 sm:px-6">
             <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">Zestaw startowy</p>
             <h2 id="zestaw-startowy-h" className="mt-0.5 text-lg font-bold text-gray-900 leading-tight text-balance">
-              Drukuj identyfikatory od pierwszego dnia
+              Drukuj od pierwszego dnia
             </h2>
             <p className="mt-1.5 text-sm text-gray-700">
               {items.map(({ product, quantity }, i) => (
@@ -93,7 +93,7 @@ export default function BundleBanner({ bundle, image, compact }: { bundle: Produ
         <div className="min-w-0 p-5 sm:p-6 flex flex-col">
           <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">Zestaw startowy</p>
           <h2 id="zestaw-startowy-h" className="mt-1 text-xl sm:text-2xl font-bold text-gray-900 leading-tight text-balance">
-            Drukuj identyfikatory od pierwszego dnia
+            Drukuj od pierwszego dnia
           </h2>
           <p className="mt-2 text-sm text-gray-600">
             Drukarka jest sprzedawana bez taśmy i kart. Zestaw zawiera taśmę na {fmtInt(300)} stron w kolorze, czyli do {fmtInt(150)} kart z nadrukiem po obu stronach, i opakowanie {fmtInt(100)} kart.
