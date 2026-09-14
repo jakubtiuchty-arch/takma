@@ -64,6 +64,7 @@ import MobileCta from './MobileCta'
 import VariantQuickPick from './VariantQuickPick'
 import DownloadCard from './DownloadCard'
 import { absoluteProductImageUrl, getMagicardOffer } from '@/lib/magicard-offer'
+import VideoTracker from '@/components/tracking/VideoTracker'
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>
@@ -704,6 +705,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {/* Kilka filmów (np. instrukcje producenta) — siatka 2 kolumny */}
             {product.videos?.length ? (
               <section id="video">
+                <VideoTracker />
                 <h2 className="text-2xl font-bold text-gray-900 mb-1">Filmy: obsługa drukarki</h2>
                 {/* Zdanie zależy od zestawu filmów: przy pełnym cyklu mówimy o kolejności, przy dwóch nie ma czego porządkować. */}
                 <p className="mb-4 text-sm text-gray-500">

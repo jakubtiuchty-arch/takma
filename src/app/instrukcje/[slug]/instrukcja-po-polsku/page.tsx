@@ -5,6 +5,7 @@ import { ChevronRightIcon, DownloadIcon } from '@/components/ui/Icons'
 import { manuals, getManualBySlug } from '@/data/manuals'
 import { getProductBySlug } from '@/data/products'
 import { ManualBlocks } from '@/app/instrukcje/_components/ManualBlocks'
+import VideoTracker from '@/components/tracking/VideoTracker'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -116,6 +117,7 @@ export default async function PolishManualPage({ params }: PageProps) {
                 </nav>
               )}
 
+              <VideoTracker />
               <div className="space-y-8">
                 {pm.sections.map((s, i) => (
                   <section key={i} id={`sekcja-${i}`}>

@@ -1008,6 +1008,16 @@ Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/
       'Zebra ZD421t — widok z przodu i prawego boku przy zamkniętej pokrywie',
       'Zebra ZD421t — otwarta pokrywa, komora etykiet i mechanizm taśmy barwiącej',
     ],
+    videos: [
+      {
+        url: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/zebra-zd421t-zakladanie-tasmy-pl-v3.mp4',
+        title: 'Zakładanie taśmy barwiącej · 1:30',
+        native: true,
+        poster: '/images/products/zebra-zd421t-zakladanie-tasmy-poster.webp',
+        captions: '/video/napisy/zebra-zd421t-zakladanie-tasmy-pl.vtt',
+        published: '2026-09-13',
+      },
+    ],
     tags: ['magazyn', 'logistyka', 'retail'],
     availability: 'available',
     isNew: true,

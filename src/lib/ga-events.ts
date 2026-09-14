@@ -257,3 +257,48 @@ export function trackFileDownload(params: { fileName: string; productName: strin
     software_version: params.version,
   })
 }
+
+// ── Odtwarzanie filmów instruktażowych ────────────────────────
+
+/**
+ * Nasze filmy leżą na Vercel Blob i są odtwarzane w natywnym `<video>`, więc
+ * wbudowane w GA4 „zaangażowanie w filmy” ich nie liczy — mierzy wyłącznie
+ * osadzone YouTube. Wysyłamy więc te same nazwy zdarzeń i parametry, których
+ * używa GA4, dzięki czemu wpadają do standardowego raportu zamiast osobnego
+ * zdarzenia własnego.
+ * @see https://support.google.com/analytics/answer/9216061
+ */
+export interface VideoEventParams {
+  title: string
+  url: string
+  duration: number
+  currentTime: number
+  percent: number
+}
+
+function videoPayload(p: VideoEventParams) {
+  return {
+    video_title: p.title.slice(0, 100),
+    video_url: p.url,
+    video_provider: 'takma',
+    video_duration: Math.round(p.duration),
+    video_current_time: Math.round(p.currentTime),
+    video_percent: p.percent,
+    visible: true,
+  }
+}
+
+/** Pierwsze uruchomienie filmu w tej odsłonie strony. */
+export function trackVideoStart(p: VideoEventParams) {
+  gtag('event', 'video_start', videoPayload(p))
+}
+
+/** Przekroczenie progu 10, 25, 50 albo 75 procent — każdy próg raz. */
+export function trackVideoProgress(p: VideoEventParams) {
+  gtag('event', 'video_progress', videoPayload(p))
+}
+
+/** Film dobiegł końca. */
+export function trackVideoComplete(p: VideoEventParams) {
+  gtag('event', 'video_complete', videoPayload(p))
+}
