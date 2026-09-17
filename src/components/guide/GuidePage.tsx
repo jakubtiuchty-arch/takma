@@ -208,10 +208,11 @@ export default function GuidePage({ guide }: GuidePageProps) {
         {guide.heroImage ? (
           <>
             {/* Hero with background image */}
-            <div className="relative bg-[#020102] overflow-hidden sm:min-h-[400px]">
+            <div className="relative bg-[#020102] overflow-hidden sm:min-h-[220px]">
               {/* Background — right-aligned, vertically centered, never cropped.
-                  Wideo (gdy podane) odtwarza się raz, bez dźwięku, i zatrzymuje na ostatniej klatce
-                  — narracja ma dobiec do końca, a nie wracać do punktu wyjścia.
+                  Wideo (gdy podane) odtwarza się bez dźwięku. Domyślnie raz, z zatrzymaniem na
+                  ostatniej klatce — narracja ma dobiec do końca, a nie wracać do punktu wyjścia.
+                  Wpis z ambientowym tłem ustawia heroVideoLoop i wtedy klip chodzi w kółko.
                   Obraz służy jako plakat i fallback. */}
               {guide.heroVideo ? (
                 <video
@@ -220,6 +221,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
                   autoPlay
                   muted
                   playsInline
+                  loop={guide.heroVideoLoop}
                   preload="metadata"
                   aria-label={guide.heroImageAlt || guide.title}
                   className="absolute right-0 top-0 h-full w-auto max-w-[70%] object-contain object-right hidden sm:block"
@@ -252,9 +254,9 @@ export default function GuidePage({ guide }: GuidePageProps) {
                     <li className="text-white font-medium truncate max-w-[300px]">{guide.title}</li>
                   </ol>
                 </nav>
-                <header className="container-main pt-6 pb-12">
+                <header className="container-main pt-4 pb-7">
                   <div className="max-w-4xl sm:max-w-[50%]">
-                    <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4">
+                    <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-3">
                       <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[#A8F000]/20 text-[#A8F000]">
                         {guideCategoryLabels[guide.category]}
                       </span>
@@ -267,7 +269,7 @@ export default function GuidePage({ guide }: GuidePageProps) {
                     <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">
                       {guide.title}
                     </h1>
-                    <p className="mt-4 text-lg text-white/80 leading-relaxed">
+                    <p className="mt-3 text-base text-white/80 leading-relaxed line-clamp-2">
                       {guide.excerpt}
                     </p>
                   </div>

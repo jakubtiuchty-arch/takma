@@ -32,8 +32,11 @@ export interface Guide {
   heroImageAlt?: string
   /** statyczny wariant hero do Open Graph i danych strukturalnych (gdy heroImage jest animowany) */
   ogImage?: string
-  /** wideo w tle hero (zapętlone, bez dźwięku); heroImage służy wtedy jako plakat */
+  /** wideo w tle hero (bez dźwięku); heroImage służy wtedy jako plakat */
   heroVideo?: string
+  /** Wideo ma chodzić w kółko. Domyślnie klip leci raz i zatrzymuje się na ostatniej klatce —
+   *  tak ma być tam, gdzie obraz coś opowiada. Dla ambientowej animacji tła ustaw true. */
+  heroVideoLoop?: boolean
   /** CSS object-position override for card thumbnail (doesn't affect hero in guide page) */
   cardImagePosition?: string
   /** Fit mode for card thumbnails; use contain when the whole artwork must remain visible */
@@ -53,6 +56,219 @@ export const guideCategoryLabels: Record<Guide['category'], string> = {
 }
 
 export const guides: Guide[] = [
+// ============================================================
+// GS1 Sunrise 2027 — migracja na kody 2D w handlu (wpis 17.09.2026)
+// ============================================================
+{
+  slug: 'gs1-sunrise-2027-kody-2d',
+  title: 'GS1 Sunrise 2027 — kody 2D w punktach sprzedaży',
+  seoTitle: 'GS1 Sunrise 2027 — kody 2D przy kasie. Co wymienić | TAKMA',
+  seoDescription: 'Do końca 2027 roku kasy mają odczytywać numer GTIN z kodów 2D: GS1 DataMatrix oraz QR z GS1 Digital Link. Omawiamy zakres zmian dla handlu i producentów oraz wymagania wobec skanerów i drukarek.',
+  excerpt: 'Do końca 2027 roku systemy kasowe mają odczytywać numer GTIN również z kodu dwuwymiarowego: GS1 DataMatrix albo QR z GS1 Digital Link. Przedstawiamy wymagania wobec skanerów i drukarek, zakres zmian po stronie kasy oraz stan przygotowań rynku w Polsce.',
+  category: 'przewodnik' as const,
+  tags: ['gs1', 'sunrise 2027', 'kody 2d', 'gs1 datamatrix', 'gs1 digital link', 'skanery kodów kreskowych', 'kody kreskowe', 'retail', 'drukarki etykiet'],
+  publishedAt: '2026-09-17',
+  updatedAt: '2026-09-17',
+  readTime: '12 min',
+  heroImage: '/images/guides/gs1-sunrise-2027-kody-2d.webp',
+  heroVideo: '/images/guides/gs1-sunrise-2027-kody-2d.mp4',
+  heroVideoLoop: true,
+  heroImageAlt: 'Liniowy kod kreskowy przechodzący w matrycę kodu dwuwymiarowego zgodnego ze standardami GS1',
+  sections: [
+    {
+      id: 'tldr',
+      heading: 'Najważniejsze ustalenia',
+      content: `
+<p><strong>Do końca 2027 roku systemy kasowe mają odczytywać numer GTIN także z kodu dwuwymiarowego</strong> zgodnego ze standardami GS1, obok dotychczasowego kodu EAN. Inicjatywa funkcjonuje pod nazwą Sunrise 2027; w dokumentach GS1 występuje również jako „Ambicja 2027" oraz „Global Migration to 2D". Nie wynika ona z przepisów prawa — jest wspólnym zobowiązaniem sieci handlowych i producentów, przyjętym w Consumer Goods Forum oraz przez Radę GS1.</p>
+<p>Kod EAN pozostaje w użyciu. W całym okresie przejściowym opakowanie może zawierać oba kody równocześnie, a rezygnacja z kodu liniowego będzie możliwa dopiero wtedy, gdy 90% rozwiązań skanujących w punktach sprzedaży zapewni odczyt numeru GTIN z kodu dwuwymiarowego.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:20px 0">
+<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px;text-align:left">
+<p><strong>Zadania po stronie sklepu lub sieci:</strong></p>
+<ul>
+<li>sporządzenie spisu skanerów przy kasach z podziałem na modele laserowe i obrazujące,</li>
+<li>uzyskanie od dostawcy systemu kasowego informacji o obsłudze trybów skanowania oraz pojedynczego potwierdzenia odczytu przy dwóch kodach na opakowaniu,</li>
+<li>zakup wyłącznie modeli 2D przy wymianie sprzętu — skaner laserowy nabyty obecnie nie spełni wymagań po 2027 roku.</li>
+</ul>
+</div>
+<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px;text-align:left">
+<p><strong>Zadania po stronie producenta i firmy etykietującej:</strong></p>
+<ul>
+<li>wybór kodu odpowiedniego dla asortymentu — GS1 DataMatrix albo QR z GS1 Digital Link,</li>
+<li>weryfikacja, czy oprogramowanie do etykiet obsługuje znak FNC1 i składnię GS1,</li>
+<li>przy etykietach drobnych — rozważenie drukarki 300 dpi, ponieważ kod 2D wymaga miejsca także na strefę ciszy.</li>
+</ul>
+</div>
+</div>`,
+    },
+    {
+      id: 'co-ustalono',
+      heading: 'Zakres przyjętego zobowiązania',
+      content: `
+<p>Cel został sformułowany jednoznacznie: <strong>do końca 2027 roku systemy w punktach sprzedaży detalicznej mają odczytywać i przetwarzać kody 2D ze standardami GS1, obok dotychczasowych kodów liniowych</strong>. Tak opisuje go GS1 w materiałach dla dostawców rozwiązań. Polskie <a href="https://gs1pl.org/app/uploads/2025/11/Wytyczne_dotyczace_wdrazania_kodow_2D_w_punktach_sprzedazy_detalicznej.pdf" target="_blank" rel="noopener">Wytyczne dotyczące wdrażania kodów 2D w punktach sprzedaży detalicznej</a> z listopada 2025 roku formułują to następująco: jeżeli po tym roku skanery w sklepach nie będą odczytywały kodów 2D, sprzęt i oprogramowanie będą wymagały aktualizacji.</p>
+<p>Podstawą zmiany jest wspólne oświadczenie 22 członków kierownictwa największych firm handlowych i produkcyjnych, w tym Lidl International, Carrefour, Alibaba, Barilla, Dr. Oetker, L'Oréal, Mondelēz, Nestlé oraz Procter &amp; Gamble. Przesłanka jest praktyczna: trzynaście cyfr kodu EAN pozwala zapisać wyłącznie identyfikator produktu, natomiast regulacje, oczekiwania konsumentów i procesy magazynowe wymagają dziś również daty ważności, numeru partii oraz odesłania do informacji o produkcie.</p>
+<h3>Trzy kody objęte zobowiązaniem</h3>
+<table>
+<colgroup><col style="width:26%"><col style="width:40%"><col style="width:34%"></colgroup>
+<thead><tr><th>Kod</th><th>Zawartość</th><th>Zastosowanie</th></tr></thead>
+<tbody>
+<tr><td style="white-space:normal"><strong>GS1 DataMatrix</strong></td><td>Numer GTIN oraz dane dodatkowe w składni rozszerzonej GS1: partia (10), data ważności (17), numer seryjny (21)</td><td>Standard wymagany w punktach sprzedaży. Wybierany przy ograniczonej powierzchni opakowania</td></tr>
+<tr><td style="white-space:normal"><strong>QR z GS1 Digital Link</strong></td><td>Adres URL zawierający numer GTIN oraz dane dodatkowe</td><td>Odczyt przy kasie i przekierowanie konsumenta na stronę produktu</td></tr>
+<tr><td style="white-space:normal"><strong>Data Matrix z GS1 Digital Link</strong></td><td>Ta sama zawartość, zapisana w symbolice Data Matrix</td><td>Wariant na wypadek, gdy kod QR nie mieści się na opakowaniu</td></tr>
+</tbody>
+</table>
+<p>Przykład adresu zapisanego w kodzie QR z GS1 Digital Link: <code>https://przyklad.pl/01/05901234567890/10/ABC123?17=271231</code>. Numer po członie /01/ to GTIN, po /10/ numer partii, a parametr 17 określa datę ważności.</p>
+<p>Różnica między pierwszym a dwoma pozostałymi kodami ma znaczenie dla działu informatyki. GS1 DataMatrix przenosi dane w składni rozszerzonej GS1 i jest rozpoznawany przez systemy kasowe bez dodatkowych zmian. Kody ze składnią Digital Link wymagają natomiast aktualizacji oprogramowania, które rozpozna adres URL i wyodrębni z niego numer GTIN.</p>`,
+    },
+    {
+      id: 'skaner-gotowy',
+      heading: 'Kryteria gotowości skanera na rok 2027',
+      content: `
+<p>W tym miejscu najczęściej dochodzi do nieporozumień. <strong>Sam fakt, że urządzenie jest imagerem 2D i odczytuje kod QR, nie przesądza o zgodności z Ambicją 2027.</strong> GS1 opublikowało zestaw kryteriów, które producent sprzętu potwierdza w formie samooceny:</p>
+<ul>
+<li>odczyt wszystkich trzech detalicznych kodów 2D opisanych w Specyfikacjach Ogólnych GS1,</li>
+<li>obsługa odwróconego kontrastu, czyli jasnego kodu na ciemnym tle, dla każdego z tych kodów,</li>
+<li>czas odczytu poniżej 300 ms dla skanerów bioptycznych oraz poniżej 500 ms dla urządzeń prezentacyjnych i ręcznych,</li>
+<li>możliwość skonfigurowania zakresu danych przesyłanych do kasy: wyłącznie numeru GTIN albo numeru GTIN wraz z danymi dodatkowymi,</li>
+<li>obsługa trzech trybów skanowania.</li>
+</ul>
+<p>Tryby skanowania decydują o zachowaniu kasy wobec opakowania zawierającego dwa kody:</p>
+<ul>
+<li><strong>Tryb 1</strong> — skaner odczytuje pierwszy napotkany numer GTIN z kodu liniowego albo dwuwymiarowego, przesyła go i emituje jeden sygnał. Jest to warunek minimalny w ramach Ambicji 2027.</li>
+<li><strong>Tryb 2</strong> — skaner traktuje kod 2D priorytetowo i przesyła numer GTIN wraz z danymi dodatkowymi w jednolitym formacie składni GS1.</li>
+<li><strong>Tryb 3</strong> — skaner przesyła wszystkie odczytane kody z produktu, co pozwala systemowi powiązać je z jedną pozycją handlową.</li>
+</ul>
+<p>Stan faktyczny ilustruje samoocena złożona do GS1 przez firmę Honeywell. Dla modeli Voyager XP 1470 i 1472, Xenon Ultra 1960 i 1962 oraz Granit XP 1991i producent zadeklarował odczyt wszystkich detalicznych kodów 2D i obsługę odwróconego kontrastu jako funkcje dostępne, natomiast obsługę trybów 1–3 jako będącą w opracowaniu. Sprzęt odczytuje zatem kody, a pozostałe wymagania pozostają kwestią oprogramowania układowego i konfiguracji. <strong>Przy zakupie należy pytać nie o sam odczyt kodu QR, lecz o harmonogram producenta dotyczący trybów skanowania.</strong></p>
+<p>Jeżeli skaner pozostaje sprawny, a producent nie przewiduje dla niego aktualizacji, dopuszczalne jest rozwiązanie po stronie kasy. Wytyczne określają je jako oprogramowanie pośredniczące, tak zwaną bibliotekę podkładkową, która przechwytuje odczyt, wyodrębnia numer GTIN i przekazuje go w formacie obsługiwanym przez system.</p>`,
+    },
+    {
+      id: 'skanery-z-oferty',
+      heading: 'Skanery z odczytem kodów 2D dostępne w naszej ofercie',
+      content: `
+<p>Wszystkie wymienione modele są imagerami 2D i odczytują GS1 DataMatrix, kod QR oraz PDF417 obok standardowego kodu EAN. Ceny netto, zweryfikowane 17 września 2026 roku.</p>
+<table>
+<colgroup><col style="width:24%"><col style="width:23%"><col style="width:11%"><col style="width:42%"></colgroup>
+<thead><tr><th>Zastosowanie</th><th>Model</th><th>Cena od</th><th>Uwagi</th></tr></thead>
+<tbody>
+<tr><td style="white-space:normal">Kasa, lada, mniejszy sklep</td><td><a href="/produkt/zebra-ds2208">Zebra DS2208</a></td><td>336&nbsp;zł</td><td>Model przewodowy, najczęściej wybierany na stanowisko kasowe</td></tr>
+<tr><td style="white-space:normal">Kasa, wariant ekonomiczny</td><td><a href="/produkt/newland-hr23-dorada">Newland HR23 Dorada</a></td><td>248&nbsp;zł</td><td>Certyfikat GS1 Ready, obsługa kodów GS1 Composite</td></tr>
+<tr><td style="white-space:normal">Kasa, rozwiązanie alternatywne</td><td><a href="/produkt/honeywell-voyager-xp-1470g">Honeywell Voyager XP 1470g</a></td><td>356&nbsp;zł</td><td>Skuteczny odczyt kodów wyświetlanych na ekranie telefonu</td></tr>
+<tr><td style="white-space:normal">Obsługa bezprzewodowa</td><td><a href="/produkt/zebra-ds2278">Zebra DS2278</a></td><td>442&nbsp;zł</td><td>Bluetooth, zasięg do 30 m od podstawki</td></tr>
+<tr><td style="white-space:normal">Kasa o dużym natężeniu ruchu</td><td><a href="/produkt/zebra-ds9308">Zebra DS9308</a></td><td>970&nbsp;zł</td><td>Model prezentacyjny, praca bez trzymania w dłoni, odczyt DataMatrix 10 mil do 11 cm</td></tr>
+<tr><td style="white-space:normal">Kasa i towar wielkogabarytowy</td><td><a href="/produkt/zebra-ds9908">Zebra DS9908</a></td><td>1&nbsp;150&nbsp;zł</td><td>Konstrukcja hybrydowa: praca na ladzie oraz w dłoni</td></tr>
+<tr><td style="white-space:normal">Magazyn, przyjęcie towaru</td><td><a href="/produkt/zebra-ds3678-sr">Zebra DS3678&#8209;SR</a></td><td>3&nbsp;128&nbsp;zł</td><td>Model bezprzewodowy, IP65, odporność na upadki z 2,4 m</td></tr>
+<tr><td style="white-space:normal">Magazyn, praca ciągła</td><td><a href="/produkt/honeywell-granit-ultra-2100i">Honeywell Granit Ultra 2100i</a></td><td>1&nbsp;842&nbsp;zł</td><td>Model przewodowy, odczyt kodów uszkodzonych i słabo nadrukowanych</td></tr>
+<tr><td style="white-space:normal">Sklep, inwentaryzacja</td><td><a href="/produkt/zebra-tc22">Zebra TC22</a></td><td>2&nbsp;666&nbsp;zł</td><td>Terminal z systemem Android, skaner 2D i aplikacją sklepową</td></tr>
+</tbody>
+</table>
+<h3>Modele nieprzeznaczone do eksploatacji po 2027 roku</h3>
+<p>Skanery laserowe oraz imagery liniowe pozostają tańsze i nadal poprawnie odczytują kody EAN, jednak nie odczytają kodu dwuwymiarowego. Wynika to z konstrukcji urządzenia, nie z wersji oprogramowania. W naszej ofercie są to <a href="/produkt/zebra-li2208">Zebra LI2208</a> (178 zł), <a href="/produkt/newland-hr11-aringa">Newland HR11 Aringa</a> (214 zł) oraz <a href="/produkt/newland-hr15-wahoo">Newland HR15 Wahoo</a> (175 zł). Karta katalogowa modelu LI2208 zawiera jednoznaczną informację: odczyt kodów 2D — nie.</p>
+<p>Nie oznacza to, że urządzeń tych nie należy kupować. Na stanowiskach obsługujących wyłącznie kody liniowe — kompletacja na linii produkcyjnej, ewidencja środków trwałych, magazyn pracujący na etykietach własnych — skaner laserowy jest wystarczający i tańszy w wymianie. Ograniczenie dotyczy stanowisk kasowych, na których w perspektywie najbliższych dwóch lat pojawi się towar oznaczony wyłącznie kodem 2D.</p>`,
+    },
+    {
+      id: 'kasa',
+      heading: 'Wymagania wobec systemu kasowego',
+      content: `
+<p>W okresie przejściowym opakowanie zawiera dwa kody z tym samym numerem GTIN. Jeżeli system kasowy potraktuje je jako dwa odrębne odczyty, towar zostanie zarejestrowany dwukrotnie. Wytyczne formułują w związku z tym dwa warunki:</p>
+<ul>
+<li>w transakcji ma zostać uwzględniony <strong>wyłącznie jeden zestaw danych</strong> z pozycji handlowej,</li>
+<li>skaner ma emitować <strong>jeden sygnał potwierdzenia</strong>, nawet jeżeli odczytał oba kody.</li>
+</ul>
+<p>Druga kwestia dotyczy składni. Kod QR z GS1 Digital Link zawiera adres URL, natomiast system kasowy oczekuje ciągu w składni GS1. Konwersję wykonuje skaner albo oprogramowanie kasowe. Bez tej aktualizacji odczyt nastąpi, lecz kasa otrzyma adres internetowy zamiast numeru produktu.</p>
+<p>Przed zamówieniem sprzętu zalecamy ustalenie trzech kwestii: z dostawcą systemu kasowego — czy używana wersja obsługuje kody 2D oraz konwersję składni; z dostawcą skanerów — czy dany model otrzyma obsługę trybów skanowania; z integratorem systemu magazynowego — czy przyjmie dane dodatkowe, jeżeli zostaną one wykorzystane. GS1 udostępnia w tym celu <a href="https://ref.gs1.org/test-suites/2d-barcodes-in-retail/" target="_blank" rel="noopener">zestaw testów dla kodów 2D w handlu detalicznym</a>, który pozwala ocenić stan systemu i zakres wymaganych aktualizacji.</p>`,
+    },
+    {
+      id: 'druk',
+      heading: 'Druk kodów 2D po stronie producenta',
+      content: `
+<p>Rozdzielczość drukarki rzadko stanowi tu ograniczenie. Wytyczne GS1 wskazują, że w druku termotransferowym zakres 203–600 dpi nie ogranicza możliwości druku kodów 2D. Istotniejsza jest powierzchnia etykiety: kod dwuwymiarowy wymaga strefy ciszy liczonej od wymiaru modułu — dla GS1 DataMatrix jest to jeden moduł z każdej strony, dla kodu QR cztery moduły. Przy module 0,495 mm oznacza to niespełna milimetr wolnej przestrzeni wokół kodu DataMatrix oraz blisko dwa milimetry wokół kodu QR.</p>
+<p>Wynika stąd zasada praktyczna: <strong>na etykiecie 100 × 150 mm wystarcza drukarka 203 dpi, natomiast przy etykietach o szerokości poniżej 40 mm zalecany jest wariant 300 dpi.</strong> Drobny moduł drukowany głowicą 203 dpi odwzorowywany jest nierównomiernie, co w przypadku kodu dwuwymiarowego obniża klasę jakości.</p>
+<table>
+<colgroup><col style="width:20%"><col style="width:12%"><col style="width:20%"><col style="width:48%"></colgroup>
+<thead><tr><th>Drukarka</th><th>Cena od</th><th>Rozdzielczość</th><th>Zastosowanie</th></tr></thead>
+<tbody>
+<tr><td style="white-space:normal"><a href="/produkt/zebra-zd421t">Zebra ZD421t</a></td><td>1&nbsp;626&nbsp;zł</td><td>203 lub 300 dpi</td><td>Biuro, sklep, niewielka produkcja</td></tr>
+<tr><td><a href="/produkt/zebra-zd621t">Zebra ZD621t</a></td><td>2&nbsp;146&nbsp;zł</td><td>203 lub 300 dpi</td><td>To samo zastosowanie, z wyświetlaczem i wyższą prędkością druku</td></tr>
+<tr><td><a href="/produkt/zebra-zt231">Zebra ZT231</a></td><td>2&nbsp;470&nbsp;zł</td><td>203 lub 300 dpi</td><td>Drukarka przemysłowa, praca zmianowa</td></tr>
+<tr><td><a href="/produkt/zebra-zt411">Zebra ZT411</a></td><td>5&nbsp;751&nbsp;zł</td><td>203, 300 lub 600 dpi</td><td>Wysokie wolumeny, kody o bardzo drobnym module</td></tr>
+</tbody>
+</table>
+<h3>Składnia kodu — najczęstsze źródło błędów</h3>
+<p>Drukarka obsługująca język ZPL wydrukuje symbol Data Matrix poleceniem ^BX, a kod QR poleceniem ^BQ. Sama symbolika nie jest jednak wystarczająca: <strong>kod GS1 DataMatrix odróżnia od zwykłego Data Matriksa znak FNC1 na początku danych</strong>. W języku ZPL wprowadza się go sekwencją ucieczki — w poleceniu ^BX ustawia się znak sterujący na podkreślenie, a dane rozpoczyna sekwencją _1. Kod QR z Digital Link nie wymaga tego zabiegu, ponieważ zawiera adres URL.</p>
+<p>W praktyce odpowiada za to oprogramowanie do etykiet albo szablon w systemie ERP. Przed wdrożeniem zalecamy wydruk partii testowej i jej weryfikację zgodnie z normą ISO/IEC 15415 — jest to jedyny sposób potwierdzenia, że kod osiąga klasę jakości wymaganą przez Specyfikacje Ogólne GS1. Weryfikatorów kodów nie prowadzimy w sprzedaży; GS1 publikuje wykaz modeli, których producenci zadeklarowali gotowość do kontroli kodów 2D.</p>
+<p>Wybór kodu QR z Digital Link wiąże się z jeszcze jedną decyzją: adres zapisany w kodzie musi prowadzić do działającego zasobu. Wymaga to usługi typu resolver, która przekształca numer GTIN w odesłanie do strony produktu, karty charakterystyki albo informacji o recyklingu. Bez niej kod zostanie odczytany przy kasie, lecz konsument trafi na stronę pustą.</p>`,
+    },
+    {
+      id: 'magazyn',
+      heading: 'Magazyn i logistyka — zakres bez zmian',
+      content: `
+<p>Zmiana obejmuje opakowania jednostkowe i punkty sprzedaży. Etykieta logistyczna z kodem GS1-128 i numerem SSCC pozostaje bez zmian, podobnie jak oznaczenia palet oraz dokumentacja dostaw. Terminale mobilne używane w magazynach wyposażone są w skanery 2D od lat, więc po stronie sprzętu nie są wymagane działania.</p>
+<p>Weryfikacji wymaga natomiast zachowanie systemu magazynowego w sytuacji, gdy operator zeskanuje towar oznaczony kodem 2D zawierającym datę ważności i numer partii. Dla wielu przedsiębiorstw jest to szansa na uproszczenie procesu: dane wprowadzane obecnie ręcznie albo nanoszone odrębną etykietą trafią do systemu jednym odczytem. Warunkiem jest obsługa tych pól po stronie systemu WMS.</p>
+<p>Jeżeli wymiana terminali jest planowana przy okazji tej transformacji, najniżej wycenione modele z odczytem kodów 2D w naszej ofercie to <a href="/produkt/m3-sm24">M3 SM24</a> (3 015 zł) oraz <a href="/produkt/zebra-tc22">Zebra TC22</a> (2 666 zł). Pełne zestawienie zawiera poradnik <a href="/poradnik/jak-wybrac-terminal-mobilny">Jak wybrać terminal mobilny</a>.</p>`,
+    },
+    {
+      id: 'polska',
+      heading: 'Stan przygotowań na rynku polskim',
+      content: `
+<p>GS1 Polska prowadzi program „Kody 2D" od 2023 roku. W jego ramach działa grupa robocza, przeprowadzono pilotaże, a w listopadzie 2025 roku opublikowano liczące ponad sto trzydzieści stron wytyczne wdrożeniowe dla punktów sprzedaży detalicznej.</p>
+<p>Według stanu na wrzesień 2026 roku gotowość do odczytu <strong>kodu GS1 DataMatrix</strong> zadeklarowały sieci H&amp;M, Żabka Polska, Selgros, Makro oraz DOZ. Odczyt <strong>kodu QR z GS1 Digital Link</strong> zgłosił Carrefour Polska. Po stronie producentów listy intencyjne podpisały spółki Skawa, Makarony Czarnieckie oraz Tymbark. Wykaz jest aktualizowany na <a href="https://gs1pl.org/standardy/gromadzenie/kody-2d/gotowosc-rynku/" target="_blank" rel="noopener">stronie GS1 Polska</a>.</p>
+<p>Dla mniejszego sklepu i producenta wniosek jest następujący: duże sieci rozpoczęły wdrożenia od kodu DataMatrix, ponieważ nie wymaga on przebudowy systemu kasowego. Jeżeli towar trafia na półkę w takiej sieci, wymagania dotyczące oznaczenia opakowania zostaną przekazane przez odbiorcę — wskazane jest wcześniejsze przygotowanie parku maszynowego.</p>`,
+    },
+    {
+      id: 'plan',
+      heading: 'Harmonogram działań na lata 2026–2027',
+      content: `
+<ol>
+<li><strong>Inwentaryzacja skanerów.</strong> Model, rok zakupu, stanowisko. Kluczowe rozróżnienie: skaner laserowy czy imager 2D. W kartach katalogowych należy szukać pozycji „odczyt kodów 2D".</li>
+<li><strong>Zapytania do dostawców.</strong> Do producenta skanerów — o obsługę trybów skanowania i termin udostępnienia aktualizacji. Do dostawcy systemu kasowego — o obsługę składni GS1 Digital Link oraz pojedyncze potwierdzenie odczytu.</li>
+<li><strong>Test na jednym stanowisku.</strong> Wydruk etykiet testowych z kodami GS1 DataMatrix i QR z Digital Link, odczyt przy kasie oraz kontrola danych zapisanych w systemie. Zakres kontroli wyznacza zestaw testów GS1.</li>
+<li><strong>Powiązanie wymiany z cyklem życia sprzętu.</strong> Skaner kasowy eksploatowany jest zwykle 5–7 lat. Przy wymianie awaryjnej w latach 2026–2027 zasadny jest zakup modelu 2D; różnica ceny wobec skanera laserowego wynosi najczęściej 150–200 zł.</li>
+<li><strong>Przygotowanie projektu opakowania.</strong> Kod 2D musi zmieścić się wraz ze strefą ciszy, a w okresie przejściowym obok kodu EAN. Jest to zadanie dla działu graficznego, nie dla drukarki.</li>
+<li><strong>Rozpoczęcie prac z wyprzedzeniem.</strong> Sieci, które podpisały listy intencyjne, będą kierować zapytania do dostawców wcześniej, niż wynika to z terminu końcowego.</li>
+</ol>
+<p>W celu weryfikacji, czy konkretny skaner albo drukarka spełni wymagania dotyczące kodów 2D, prosimy o kontakt: <a href="tel:+48607819688">+48 607 819 688</a> lub przez <a href="/kontakt">formularz kontaktowy</a>. Sprawdzimy model po numerze katalogowym i wskażemy, czy wystarczy aktualizacja oprogramowania, czy konieczna jest wymiana urządzenia.</p>`,
+    },
+  ],
+  faq: [
+    {
+      question: 'Czy kod EAN zostanie wycofany z opakowań w 2028 roku?',
+      answer: 'Nie. Kody EAN i UPC pozostaną w użyciu tak długo, jak długo będą dla nich zastosowania. Wytyczne GS1 stanowią, że produkty z detalicznym kodem 2D muszą być oznaczone również tradycyjnym kodem kreskowym, dopóki 90% rozwiązań skanujących w punktach sprzedaży nie zapewni obsługi kodów dwuwymiarowych. Rezygnacja z kodu liniowego jest decyzją producenta podejmowaną po przekroczeniu tego progu, nie obowiązkiem terminowym.',
+    },
+    {
+      question: 'Czy Sunrise 2027 wynika z przepisów prawa?',
+      answer: 'Nie. Jest to zobowiązanie branżowe przyjęte w Consumer Goods Forum oraz przez Radę GS1. Konsekwencje mają jednak charakter praktyczny: jeżeli po 2027 roku skaner przy kasie nie odczyta kodu 2D, a dostawca wprowadzi takie oznaczenie na opakowanie, sprzedaż będzie wymagała ręcznego wprowadzenia numeru produktu.',
+    },
+    {
+      question: 'Czy posiadanie skanerów 2D oznacza gotowość do wymagań 2027?',
+      answer: 'Sam sprzęt nie jest wystarczający. Zgodność z Ambicją 2027 obejmuje również odczyt odwróconego kontrastu, czas odczytu poniżej 300–500 ms, konfigurowalny zakres przesyłanych danych oraz obsługę trybów skanowania. Część producentów deklarowała w samoocenach złożonych do GS1, że obsługa trybów pozostaje w opracowaniu. Zalecamy weryfikację konkretnego modelu i wersji oprogramowania układowego u dostawcy.',
+    },
+    {
+      question: 'Jaki jest koszt wymiany skanera kasowego na model 2D?',
+      answer: 'Przewodowy imager 2D na stanowisko kasowe kosztuje od 248 zł netto (Newland HR23 Dorada) do około 356 zł (Honeywell Voyager XP 1470g); najczęściej wybierany model Zebra DS2208 — 336 zł. Wersje bezprzewodowe rozpoczynają się od 442 zł, prezentacyjne od 970 zł. Wobec skanera laserowego w cenie 178 zł różnica wynosi zwykle 150–200 zł na stanowisko.',
+    },
+    {
+      question: 'Czy drukarka 203 dpi wydrukuje kod GS1 DataMatrix?',
+      answer: 'Tak. Wytyczne GS1 wskazują, że w druku termotransferowym rozdzielczość 203–600 dpi nie ogranicza możliwości druku kodów 2D. Rozdzielczość 300 dpi ma znaczenie przy etykietach drobnych, gdzie moduł kodu jest niewielki, a wokół niego wymagana jest jeszcze strefa ciszy.',
+    },
+    {
+      question: 'Czym różni się GS1 DataMatrix od kodu QR z GS1 Digital Link?',
+      answer: 'GS1 DataMatrix zawiera dane w składni rozszerzonej GS1, czyli identyfikatory zastosowania: (01) GTIN, (10) numer partii, (17) data ważności. Kod QR z GS1 Digital Link zawiera adres URL, w którym te same dane stanowią elementy ścieżki. Pierwszy jest prostszy w obsłudze przez systemy kasowe, drugi dodatkowo kieruje konsumenta na stronę produktu po zeskanowaniu telefonem.',
+    },
+    {
+      question: 'Czy konsument odczyta taki kod telefonem?',
+      answer: 'Kod QR z GS1 Digital Link — tak, aparatem telefonu, bez dodatkowej aplikacji. Kod GS1 DataMatrix przeznaczony jest dla systemów, nie dla konsumenta. Jeżeli celem jest komunikacja z klientem, właściwy jest wyłącznie pierwszy wariant.',
+    },
+    {
+      question: 'Jakie wymagania obowiązują skanery bioptyczne w kasach samoobsługowych?',
+      answer: 'Obowiązują je te same kryteria, z zaostrzonym wymaganiem czasu odczytu: poniżej 300 ms zamiast 500 ms. Skanerów bioptycznych nie prowadzimy w sprzedaży — w tej sprawie właściwy jest kontakt z dostawcą systemów kasowych. Gotowość poszczególnych modeli producenci zgłaszają do GS1, a wykaz jest publicznie dostępny.',
+    },
+  ],
+  relatedLinks: [
+    { title: 'Skanery kodów kreskowych — cała oferta', href: '/skanery-kodow-kreskowych' },
+    { title: 'Skanery kodów kreskowych Zebra — przewodnik', href: '/poradnik/skanery-kodow-kreskowych-zebra-przewodnik' },
+    { title: 'Drukarki etykiet — jak wybrać', href: '/poradnik/jak-wybrac-drukarke-etykiet' },
+    { title: 'Jak wybrać terminal mobilny', href: '/poradnik/jak-wybrac-terminal-mobilny' },
+  ],
+},
 // ============================================================
 // Magicard w ofercie TAKMA — wdrożenie marki 04.09.2026
 // ============================================================
@@ -5135,7 +5351,7 @@ export const guides: Guide[] = [
       content: `
 <p><strong>Zebra MC3400</strong> wygrywa wytrzymałością i elastycznością: pełna wodoodporność IP65/IP67, upadki z 2,4 m, skaner SE58 czytający kody z 30,5 m, trzy klawiatury i dwie obudowy do wyboru — łącznie 14 konfiguracji. <strong>Honeywell CK62</strong> odpowiada większą pamięcią w standardzie (zawsze 8 GB RAM / 128 GB) i deklaracją do 28 godzin pracy na baterii. Serce mają identyczne: procesor Qualcomm QCS4490, Android 14 z aktualizacjami do 18, Wi-Fi 6E i baterię 7 000 mAh z hot-swap.</p>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:20px 0">
-<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px">
+<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px;text-align:left">
 <p><strong>Wybierz Zebra MC3400, jeśli:</strong></p>
 <ul>
 <li>terminal bywa myty pod bieżącą wodą albo pracuje w kurzu i wilgoci — IP67 kontra IP65 to realna różnica klasy szczelności,</li>
@@ -5144,7 +5360,7 @@ export const guides: Guide[] = [
 <li>migrujesz z MC3300/MC3300x — baterie, stacje i ładowarki pasują 1:1, bez wymiany infrastruktury.</li>
 </ul>
 </div>
-<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px">
+<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px;text-align:left">
 <p><strong>Wybierz Honeywell CK62, jeśli:</strong></p>
 <ul>
 <li>aplikacja WMS jest pamięciożerna — CK62 ma zawsze 8 GB RAM / 128 GB, u Zebry to szczyt oferty,</li>
@@ -14715,7 +14931,7 @@ export const guides: Guide[] = [
       content: `
 <p><strong>Honeywell CT32</strong> daje więcej sprzętu w standardzie i dwa lata dłuższe wsparcie systemu — mocniejszy procesor, zawsze 128 GB pamięci, większa bateria i Android aktualizowany do wersji 18. <strong>Zebra TC22</strong> wygrywa niższą ceną startową i lepszą kamerą główną. Oba to solidne terminale klasy podstawowej do magazynu, logistyki i handlu.</p>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:20px 0">
-<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px">
+<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px;text-align:left">
 <p><strong>Wybierz Honeywell CT32, jeśli:</strong></p>
 <ul>
 <li>planujesz używać terminali 5–7 lat — wsparcie do Androida 18 realnie wydłuża cykl życia,</li>
@@ -14724,7 +14940,7 @@ export const guides: Guide[] = [
 <li>potrzebujesz wariantu 5G z eSIM bez przesiadki na wyższy model.</li>
 </ul>
 </div>
-<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px">
+<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px;text-align:left">
 <p><strong>Wybierz Zebra TC22, jeśli:</strong></p>
 <ul>
 <li>budżet na sztukę jest twardym ograniczeniem — TC22 startuje z niższej półki cenowej,</li>
@@ -14842,7 +15058,7 @@ export const guides: Guide[] = [
       content: `
 <p><strong>Honeywell PC45d</strong> daje w standardzie to, za co u Zebry się dopłaca — Ethernet, kolorowy ekran dotykowy i szybszy druk — a dzięki obsłudze ZPL-II podmienisz nią drukarkę Zebry bez zmiany ani linijki w systemie. <strong>Zebra ZD421d</strong> wygrywa opcją 300 dpi (drobne etykiety, małe kody) i ekosystemem Link-OS. Obie to biurkowe drukarki termiczne tej samej klasy.</p>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:20px 0">
-<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px">
+<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px;text-align:left">
 <p><strong>Wybierz Honeywell PC45d, jeśli:</strong></p>
 <ul>
 <li>drukarka ma stać w sieci — Ethernet jest w standardzie, bez dopłat,</li>
@@ -14851,7 +15067,7 @@ export const guides: Guide[] = [
 <li>wymieniasz starszą drukarkę Zebry lub Datamax — PC45d rozumie ZPL-II, DPL i IPL.</li>
 </ul>
 </div>
-<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px">
+<div style="border:1px solid #e2e8f0;border-radius:12px;padding:20px;text-align:left">
 <p><strong>Wybierz Zebra ZD421d, jeśli:</strong></p>
 <ul>
 <li>drukujesz bardzo małe etykiety z drobnymi kodami — wariant 300 dpi robi różnicę,</li>
