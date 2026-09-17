@@ -126,13 +126,13 @@ Q: Zebra vs Honeywell — który terminal mobilny wybrać?
 A: Zebra wygrywa ceną (TC22 od 2 417 zł vs CT32 od 3 389 zł), wsparciem Android (10 lat LifeGuard vs 5-7 lat Sentinel) i serwisem w Polsce. Honeywell wygrywa wagą terminali gun (CK67: 508 g vs MC9400: 765 g) i najnowszą łącznością (CT70 z Wi-Fi 7). Szczegółowe porównanie 5 par modeli: https://www.takma.com.pl/poradnik/zebra-vs-honeywell-terminale-mobilne
 
 Q: Jaki terminal mobilny do magazynu?
-A: Dla lekkiego magazynu: Zebra TC22 (od 2 417 zł) lub M3 Mobile SL20+ (od 2 000 zł). Dla intensywnego skanowania: Zebra TC53 (od 6 418 zł) lub MC3400 z klawiaturą (od 4 561 zł). Dla chłodni: Zebra MC9400 (IP67, drop 3,0 m, do −30°C, od 7 638 zł). Pełny poradnik: https://www.takma.com.pl/poradnik/jak-wybrac-terminal-mobilny
+A: Dla lekkiego magazynu: Zebra TC22 (od 2 417 zł) lub M3 Mobile SL20+ (od 2 269 zł). Dla intensywnego skanowania: Zebra TC53 (od 6 999 zł) lub MC3400 z klawiaturą (od 4 637 zł). Dla chłodni: Zebra MC9400 (IP67, drop 3,0 m, do −30°C, od 8 482 zł). Pełny poradnik: https://www.takma.com.pl/poradnik/jak-wybrac-terminal-mobilny
 
 Q: Czy kolektor danych to to samo co terminal mobilny?
 A: Tak — kolektor danych to starsze określenie na terminal mobilny. Współczesne terminale mobilne (Zebra, Honeywell, Datalogic) pracują na Androidzie i oferują Wi-Fi 6, BT 5, ekran dotykowy i baterie 8–16h. Termin „kolektor danych" jest nadal używany w Polsce.
 
 Q: Ile kosztuje terminal mobilny?
-A: Entry-level: 2 000–3 200 zł (M3 SL20+, Zebra TC22, Honeywell CT32). Mid-range: 4 500–7 500 zł (Zebra TC53, Honeywell CT47). Ultra-rugged: 7 000–9 000 zł (Zebra MC9400). RFID: od 2 951 zł (Zebra EM45). Ceny netto.
+A: Entry-level: 2 269–3 800 zł (M3 SL20+, Zebra TC22, Honeywell CT32). Mid-range: 4 100–7 300 zł (M3 SM30, Zebra TC53, Honeywell CT47). Ultra-rugged: 6 400–8 500 zł (M3 UL30, Zebra MC9400). RFID: od 2 951 zł (Zebra EM45). Ceny netto.
 
 Q: Jaki jest ranking TOP 10 terminali mobilnych do magazynu 2026?
 A: Ranking TAKMA (luty 2026): 1. Zebra TC22 (2 417 zł), 2. Datalogic Memor K (2 490 zł), 3. Zebra TC27 (2 690 zł), 4. Zebra TC501 (3 730 zł), 5. Zebra TC701 (4 017 zł), 6. Datalogic Memor 12 (4 490 zł), 7. Zebra MC3400 (4 561 zł), 8. Zebra TC53e (4 926 zł), 9. Datalogic Skorpio X5 (6 490 zł), 10. Zebra MC9400 (7 638 zł). Pełny ranking z TCO i FAQ: https://www.takma.com.pl/poradnik/top-10-terminali-mobilnych-2026
@@ -160,9 +160,9 @@ A: Ranking TAKMA (luty 2026): 1. Zebra TC22 (2 417 zł), 2. Datalogic Memor K (2
 - Zebra ZD621t (termotransferowa, premium, kolorowy LCD, od 2 264 zł): https://www.takma.com.pl/produkt/zebra-zd621t
 
 ### Przemysłowe drukarki etykiet (7 modeli, od 2 081 zł netto)
-- Zebra ZT111 (entry-level, 203 dpi, 203 mm/s, od 2 081 zł): https://www.takma.com.pl/produkt/zebra-zt111
+- Zebra ZT111 (entry-level, 203 dpi, 203 mm/s, od 2 269 zł): https://www.takma.com.pl/produkt/zebra-zt111
 - Zebra ZT231 (mid-range, 203/300 dpi, 305 mm/s, od 2 551 zł): https://www.takma.com.pl/produkt/zebra-zt231
-- Zebra ZT411 (4", 203-600 dpi, 356 mm/s, od 5 132 zł): https://www.takma.com.pl/produkt/zebra-zt411
+- Zebra ZT411 (4", 203-600 dpi, 356 mm/s, od 5 078 zł): https://www.takma.com.pl/produkt/zebra-zt411
 - Zebra ZT421 (6", 203/300 dpi, 305 mm/s, od 9 416 zł): https://www.takma.com.pl/produkt/zebra-zt421
 - Zebra ZT510 (4", 203/300 dpi, produkcja, od 8 490 zł): https://www.takma.com.pl/produkt/zebra-zt510
 - Zebra ZT610 (4", 203-600 dpi, premium, od 10 432 zł): https://www.takma.com.pl/produkt/zebra-zt610
@@ -185,23 +185,29 @@ A: Ranking TAKMA (luty 2026): 1. Zebra TC22 (2 417 zł), 2. Datalogic Memor K (2
 - Porównanie szczegółowe: https://www.takma.com.pl/poradnik/drukarka-termiczna-vs-termotransferowa
 
 ## Terminale mobilne M3 Mobile
-- M3 UL20 (kolektor danych gun z klawiaturą 28/35/53 kl., 5" FHD, IP67, SE4750/SE4850/SE5800, freezer −30°C, 34 warianty od 4 920 zł): https://www.takma.com.pl/produkt/m3-ul20
-- M3 UL30 (następca UL20, AI NPU 12 TOPS, Wi-Fi 6E, BT 5.3, Android 14→18, od 5 626 zł): https://www.takma.com.pl/produkt/m3-ul30
-- M3 SM30 (terminal dotykowy 5G, AI 12 TOPS, ekran 5,7" FHD, hot-swap, od 3 610 zł): https://www.takma.com.pl/produkt/m3-sm30
-- M3 SM24 (terminal budżetowy, 6" HD+, SE4710, od 3 123 zł): https://www.takma.com.pl/produkt/m3-sm24
-- M3 SM25 (terminal mid-range, 6" FHD+, 5G, SE5500, premiera 2026): https://www.takma.com.pl/produkt/m3-sm25
-- M3 SL20K (terminal z klawiaturą fizyczną, 4,7", od 2 424 zł): https://www.takma.com.pl/produkt/m3-sl20k
+- Wszystkie modele M3 Mobile (9 terminali, ceny i dostępność): https://www.takma.com.pl/terminale-m3-mobile
+- M3 UL20 (kolektor danych gun z klawiaturą 28/35/53 kl., 5" FHD, IP67, SE4750/SE4850/SE5800, freezer −30°C, 34 warianty od 5 484 zł): https://www.takma.com.pl/produkt/m3-ul20
+- M3 UL30 (następca UL20, AI NPU 12 TOPS, Wi-Fi 6E, BT 5.3, Android 14→18, od 6 431 zł): https://www.takma.com.pl/produkt/m3-ul30
+- M3 SM30 (terminal dotykowy 5G, AI 12 TOPS, ekran 5,7" FHD, hot-swap, od 4 132 zł): https://www.takma.com.pl/produkt/m3-sm30
+- M3 SM24 (terminal budżetowy, 6" HD+, SE4710, od 3 016 zł): https://www.takma.com.pl/produkt/m3-sm24
+- M3 SM25 (terminal mid-range, 6" FHD+, 5G, SE5500, od 3 654 zł): https://www.takma.com.pl/produkt/m3-sm25
+- M3 US30 (klawiatura 30/38/42/51 kl., 4" WVGA, Wi-Fi 6, hot-swap 6 700 mAh, od 4 290 zł): https://www.takma.com.pl/produkt/m3-us30
+- M3 US20 (klawiatura 30/42/51 kl., opcja 4G LTE, 6 wariantów skanera, od 4 411 zł): https://www.takma.com.pl/produkt/m3-us20
+- M3 SL20 (najlżejszy i najtańszy, 5,5" HD+, IP67, hot-swap, od 2 269 zł): https://www.takma.com.pl/produkt/m3-sl20
+- M3 SL20K (terminal z klawiaturą fizyczną, 4,7", od 2 492 zł): https://www.takma.com.pl/produkt/m3-sl20k
+- M3 WR10 / WR15 (skanery pierścieniowe na palec i na dłoń, Bluetooth, od 1 605 zł): https://www.takma.com.pl/produkt/m3-wr10
+- Serwis terminali M3 Mobile: https://www.takma.com.pl/serwis/m3-mobile
 
 ## Terminale mobilne Honeywell
-- Honeywell CT32 (FlexRange, Mobility Edge, od 3 389 zł): https://www.takma.com.pl/produkt/honeywell-ct32
+- Honeywell CT32 (FlexRange, Mobility Edge, od 3 775 zł): https://www.takma.com.pl/produkt/honeywell-ct32
 - Honeywell CT47 (mid-range, FlexRange XLR, od 4 500 zł): https://www.takma.com.pl/produkt/honeywell-ct47
-- Honeywell CT70 (Wi-Fi 7, BT 6.0, Qi, od 5 900 zł): https://www.takma.com.pl/produkt/honeywell-ct70
+- Honeywell CT70 (Wi-Fi 7, BT 6.0, Qi, od 7 265 zł): https://www.takma.com.pl/produkt/honeywell-ct70
 - Honeywell CK67 (ultra-rugged gun, FlexRange XLR 24 m, 5G, od 7 765 zł): https://www.takma.com.pl/produkt/honeywell-ck67
 
 ## Terminale mobilne Newland
 - Newland MT93 Megattera (najtańszy enterprise terminal, od 2 207 zł): https://www.takma.com.pl/produkt/newland-mt93-megattera-standard-plus
-- Newland N7 Cachalot Pro II (klawiatura fizyczna, od 2 550 zł): https://www.takma.com.pl/produkt/newland-n7-cachalot-pro-ii
-- Newland MT95 Kambur Pro II (5G, IP67, od 3 400 zł): https://www.takma.com.pl/produkt/newland-mt95-kambur-pro-ii
+- Newland N7 Cachalot Pro II (klawiatura fizyczna, od 3 346 zł): https://www.takma.com.pl/produkt/newland-n7-cachalot-pro-ii
+- Newland MT95 Kambur Pro II (5G, IP67, od 3 546 zł): https://www.takma.com.pl/produkt/newland-mt95-kambur-pro-ii
 
 ## Terminale mobilne Zebra
 - Zebra TC22 (Wi-Fi 6E, entry-level, od 2 417 zł): https://www.takma.com.pl/produkt/zebra-tc22
@@ -220,7 +226,7 @@ A: Ranking TAKMA (luty 2026): 1. Zebra TC22 (2 417 zł), 2. Datalogic Memor K (2
 - Zebra EM45 (enterprise smartphone, od ~3 500 zł): https://www.takma.com.pl/produkt/zebra-em45
 - Zebra TC73 (ultra-rugged WiFi, od ~8 500 zł): https://www.takma.com.pl/produkt/zebra-tc73
 - Zebra TC78 (ultra-rugged 5G, od ~9 500 zł): https://www.takma.com.pl/produkt/zebra-tc78
-- Zebra TC501 (AI, RFID, Wi-Fi 7, od 3 730 zł): https://www.takma.com.pl/produkt/zebra-tc501
+- Zebra TC501 (AI, RFID, Wi-Fi 7, od 6 319 zł): https://www.takma.com.pl/produkt/zebra-tc501
 - Zebra TC701 (ultra-rugged AI, RFID, od ~4 017 zł): https://www.takma.com.pl/produkt/zebra-tc701
 
 ## Skanery kodów kreskowych — oferta (5 modeli)

@@ -1907,25 +1907,202 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
   // TERMINALE M3 MOBILE
   // ===================================================================
   'terminale-m3-mobile': {
+    updatedAt: '2026-09-16',
+    sectionHeadings: {
+      expertAuthority: 'Dlaczego M3 Mobile kupuje się u nas',
+      technicalDeepDive: 'Dziewięć modeli obok siebie: parametry i ceny',
+      useCases: 'Gdzie sprawdza się który terminal',
+      comparisons: 'M3 Mobile a Zebra i Honeywell',
+      howToSteps: 'Jak wdrożyć terminale M3 Mobile w magazynie',
+    },
     definition: {
       heading: 'Terminale M3 Mobile — koreański producent enterprise z AI i 5G',
       content:
-        'M3 Mobile (założony w 2000 roku w Korei Południowej) to producent wytrzymałych terminali mobilnych klasy enterprise, specjalizujący się w urządzeniach z systemem Android dla magazynów, logistyki, produkcji i handlu detalicznego.\n\n**Seria SM (Smart Mobile)** — terminale dotykowe z ekranami 5,7–6". Flagowy [SM30](/produkt/m3-sm30) z procesorem Qualcomm QCM6490 i akceleratorem AI 12 TOPS (od 3 610 zł). [SM25](/produkt/m3-sm25) z 5G i skanerem SE5500 (premiera czerwiec 2026). Ekonomiczny [SM24](/produkt/m3-sm24) z hot-swap i ekranem 6" (od 3 123 zł).\n\n**Seria US (Ultra Scan)** — terminale z klawiaturą fizyczną 30–51 klawiszy. [US30](/produkt/m3-us30) z Wi-Fi 6 i Android 13 (od 3 610 zł). [US20](/produkt/m3-us20) z opcją 4G LTE i 6 wariantami skanerów (od 4 080 zł).\n\n**Seria SL (Slim Line)** — kompaktowe terminale budżetowe. [SL20](/produkt/m3-sl20) z IP67 i hot-swap (od 2 255 zł). [SL20K](/produkt/m3-sl20k) z klawiaturą 30-klawiszową (od 2 424 zł).\n\n**Seria UL (Ultra Large)** — wytrzymałe terminale gun z ekranem 5" FHD i klawiaturą. [UL30](/produkt/m3-ul30) z AI 12 TOPS, IP67 i upadkami z 3 m (od 5 626 zł). [UL20](/produkt/m3-ul20) z wersją Freezer do -30°C (od 4 920 zł).\n\n**Kluczowe wyróżniki M3 Mobile:**\n- Akcelerator AI 12 TOPS w SM30 i UL30 (ten sam procesor QCM6490 co w Zebra TC53e — rozpoznawanie obrazów, detekcja defektów bez chmury)\n- Skanery Zebra (SE4770, SE5500, SE5800) — identyczna jakość dekodowania jak w terminalach Zebra TC/MC\n- Hot-swap baterii we wszystkich modelach (ciągłość sesji WMS/WLAN/BT)\n- M3 Speedpack — bezpłatny system MDM do masowej konfiguracji i zarządzania flotą\n\nTAKMA jest partnerem M3 Mobile w Polsce — oferujemy doradztwo, konfigurację M3 Speedpack i serwis pogwarancyjny. Pełne porównanie modeli: [Terminale M3 Mobile — porównanie i poradnik](/poradnik/terminale-m3-mobile-porownanie).',
+        'M3 Mobile (założony w 2000 roku w Korei Południowej) to producent wytrzymałych terminali mobilnych (kolektorów danych) klasy enterprise, specjalizujący się w urządzeniach z systemem Android dla magazynów, logistyki, produkcji i handlu detalicznego.\n\n**Seria SM (Smart Mobile)** — terminale dotykowe z ekranami 5,7–6". Flagowy [SM30](/produkt/m3-sm30) z procesorem Qualcomm QCM6490 i akceleratorem AI 12 TOPS (od 4 132 zł). [SM25](/produkt/m3-sm25) z 5G i skanerem SE5500 (od 3 654 zł). Ekonomiczny [SM24](/produkt/m3-sm24) z hot-swap i ekranem 6" (od 3 016 zł).\n\n**Seria US (Ultra Scan)** — terminale z klawiaturą fizyczną 30–51 klawiszy. [US30](/produkt/m3-us30) z Wi-Fi 6 i Android 13 (od 4 290 zł). [US20](/produkt/m3-us20) z opcją 4G LTE i 6 wariantami skanerów (od 4 411 zł).\n\n**Seria SL (Slim Line)** — najlżejsze i najtańsze modele w ofercie. [SL20](/produkt/m3-sl20) (SL20+) z IP67 i hot-swap (od 2 269 zł). [SL20K](/produkt/m3-sl20k) z klawiaturą 30-klawiszową (od 2 492 zł).\n\n**Seria UL (Ultra Large)** — wytrzymałe terminale gun z ekranem 5" FHD i klawiaturą. [UL30](/produkt/m3-ul30) z AI 12 TOPS, IP67 i upadkami z 3 m (od 6 431 zł). [UL20](/produkt/m3-ul20) z wersją Freezer do -30°C (od 5 484 zł).\n\nTAKMA jest partnerem M3 Mobile w Polsce — oferujemy doradztwo, konfigurację M3 Speedpack i serwis pogwarancyjny. Pełne porównanie modeli: [Terminale M3 Mobile — porównanie i poradnik](/poradnik/terminale-m3-mobile-porownanie).',
     },
     buyingGuide: {
       heading: 'Jak wybrać terminal M3 Mobile? 6 kryteriów wyboru',
       items: [
-        'Dotykowy vs klawiatura fizyczna — terminale dotykowe (seria SM): [SM30](/produkt/m3-sm30) (5,7" FHD, od 3 610 zł), [SM24](/produkt/m3-sm24) (6" HD+, od 3 123 zł), [SM25](/produkt/m3-sm25) (6" FHD+, premiera VI.2026), [SL20](/produkt/m3-sl20) (5,5" HD+, od 2 255 zł) — lekkie (240–270 g), intuicyjne, szybki onboarding pracowników. Terminale z klawiaturą: [US30](/produkt/m3-us30) (4" WVGA, 30/38/42/51 kl., od 3 610 zł), [US20](/produkt/m3-us20) (4" WVGA, 30/42/51 kl., od 4 080 zł), [SL20K](/produkt/m3-sl20k) (4" WVGA, 30 kl., od 2 424 zł), [UL20](/produkt/m3-ul20) (5" FHD gun, 28/35/53 kl., od 4 920 zł), [UL30](/produkt/m3-ul30) (5" FHD gun, 28/35/53 kl., od 5 626 zł). Klawiatura fizyczna jest 3–5× szybsza niż wirtualna przy wpisywaniu numerów partii, ilości, kodów lokalizacji — niezbędna w produkcji i logistyce z intensywnym ręcznym wprowadzaniem danych.',
-        'Skaner — SE4710 (zasięg do 76 cm): podstawowy skaner 2D w [SL20](/produkt/m3-sl20), wystarczający do kasowego skanowania i lekkiej inwentaryzacji. SE4770 (zasięg do 92 cm): standard w [SM30](/produkt/m3-sm30), [US30](/produkt/m3-us30), [UL30](/produkt/m3-ul30) — rozszerzone pole widzenia, dobry do kompletacji WMS. SE5500 Smart Focus (zasięg do 15 m): dostępny w [SM30](/produkt/m3-sm30) (+168 zł), [US30](/produkt/m3-us30) (+270 zł), [US20](/produkt/m3-us20) (+880 zł) — do magazynów wysokiego składowania, skanowanie regałów bez drabiny. SE5800 (najnowszy, rozszerzony zasięg): następca SE5500, w [US30](/produkt/m3-us30) (+720 zł) i [UL30](/produkt/m3-ul30) (+277 zł) — najszybszy skaner w ofercie M3. CM60E (skaner M3): standard w [SM24](/produkt/m3-sm24) i [SM25](/produkt/m3-sm25) — kompaktowy imager 2D.',
-        'Łączność — Wi-Fi 5 (802.11ac): [SL20](/produkt/m3-sl20), [SL20K](/produkt/m3-sl20k), [US20](/produkt/m3-us20) — wystarczający w magazynach z dobrym pokryciem. Wi-Fi 6 (802.11ax): [US30](/produkt/m3-us30) — do 2× szybszy transfer, lepsze działanie w gęstych sieciach z wieloma AP. Wi-Fi 6E (802.11ax, 2,4/5/6 GHz): [SM30](/produkt/m3-sm30), [SM24](/produkt/m3-sm24), [SM25](/produkt/m3-sm25), [UL30](/produkt/m3-ul30) — najniższe opóźnienia, pasmo 6 GHz bez zakłóceń. 4G LTE: opcja w [SL20](/produkt/m3-sl20) (eSIM), [SL20K](/produkt/m3-sl20k) (dual SIM), [SM24](/produkt/m3-sm24) X (+429 zł), [US20](/produkt/m3-us20) X (+610 zł) — do pracy w terenie bez Wi-Fi. 5G: [SM30](/produkt/m3-sm30) 5G (+437 zł) — najszybsza łączność mobilna, eSIM.',
+        'Dotykowy vs klawiatura fizyczna — terminale dotykowe (seria SM): [SM30](/produkt/m3-sm30) (5,7" FHD, od 4 132 zł), [SM24](/produkt/m3-sm24) (6" HD+, od 3 016 zł), [SM25](/produkt/m3-sm25) (6" FHD+, od 3 654 zł), [SL20](/produkt/m3-sl20) (5,5" HD+, od 2 269 zł) — lekkie (240–270 g), intuicyjne, szybki onboarding pracowników. Terminale z klawiaturą: [US30](/produkt/m3-us30) (4" WVGA, 30/38/42/51 kl., od 4 290 zł), [US20](/produkt/m3-us20) (4" WVGA, 30/42/51 kl., od 4 411 zł), [SL20K](/produkt/m3-sl20k) (4" WVGA, 30 kl., od 2 492 zł), [UL20](/produkt/m3-ul20) (5" FHD gun, 28/35/53 kl., od 5 484 zł), [UL30](/produkt/m3-ul30) (5" FHD gun, 28/35/53 kl., od 6 431 zł). Klawiatura fizyczna jest 3–5× szybsza niż wirtualna przy wpisywaniu numerów partii, ilości, kodów lokalizacji — niezbędna w produkcji i logistyce z intensywnym ręcznym wprowadzaniem danych.',
+        'Skaner — SE4710 (zasięg do 76 cm): podstawowy skaner 2D w [SL20](/produkt/m3-sl20), wystarczający do kasowego skanowania i lekkiej inwentaryzacji. SE4770 (zasięg do 92 cm): standard w [SM30](/produkt/m3-sm30), [US30](/produkt/m3-us30), [UL30](/produkt/m3-ul30) — rozszerzone pole widzenia, dobry do kompletacji WMS. SE5500 Smart Focus (zasięg do 15 m): dostępny w SM30 (+168 zł), US30 (+270 zł), [US20](/produkt/m3-us20) (+880 zł) — do magazynów wysokiego składowania, skanowanie regałów bez drabiny. SE5800 (najnowszy, rozszerzony zasięg): następca SE5500, w US30 (+720 zł) i UL30 (+277 zł) — najszybszy skaner w ofercie M3. CM60E (skaner M3): standard w [SM24](/produkt/m3-sm24) i [SM25](/produkt/m3-sm25) — kompaktowy imager 2D.',
+        'Łączność — Wi-Fi 5 (802.11ac): [SL20](/produkt/m3-sl20), [SL20K](/produkt/m3-sl20k), [US20](/produkt/m3-us20) — wystarczający w magazynach z dobrym pokryciem. Wi-Fi 6 (802.11ax): [US30](/produkt/m3-us30) — do 2× szybszy transfer, lepsze działanie w gęstych sieciach z wieloma AP. Wi-Fi 6E (802.11ax, 2,4/5/6 GHz): [SM30](/produkt/m3-sm30), [SM24](/produkt/m3-sm24), [SM25](/produkt/m3-sm25), [UL30](/produkt/m3-ul30) — najniższe opóźnienia, pasmo 6 GHz bez zakłóceń. 4G LTE: opcja w SL20 (eSIM), SL20K (dual SIM), SM24 X (+429 zł), US20 X (+610 zł) — do pracy w terenie bez Wi-Fi. 5G: SM30 5G (+437 zł) — najszybsza łączność mobilna, eSIM.',
         'AI i przetwarzanie obrazu — [SM30](/produkt/m3-sm30) i [UL30](/produkt/m3-ul30) wyposażone w procesor Qualcomm QCM6490 z NPU Hexagon o mocy 12 TOPS (trylionów operacji na sekundę). Umożliwia to rozpoznawanie obrazów, kontrolę jakości produktów, detekcję defektów i OCR bezpośrednio na urządzeniu — bez połączenia z chmurą. To ten sam procesor i NPU co w Zebra TC53e. Pozostałe modele (SM24, SM25, US30, US20, SL20, SL20K, UL20) nie mają dedykowanego NPU — jeśli AI na urządzeniu jest kluczowe, wybierz SM30 lub UL30.',
         'Bateria i hot-swap — wszystkie terminale M3 Mobile mają wymienną baterię z funkcją hot-swap (wymiana bez wyłączania urządzenia). [SL20](/produkt/m3-sl20): 5 000 mAh (~12 h). [SL20K](/produkt/m3-sl20k): 5 200 mAh (~12 h). [SM24](/produkt/m3-sm24): 4 000 mAh (~10 h, opcja 6 000 mAh). [SM30](/produkt/m3-sm30): 5 000 mAh (~12 h, opcja 7 000 mAh). [US30](/produkt/m3-us30)/[US20](/produkt/m3-us20): 6 700 mAh (~14 h) — największa bateria w ofercie handheld. [UL20](/produkt/m3-ul20)/[UL30](/produkt/m3-ul30): 6 700 mAh (~14 h). Dla pracy wielozmianowej planuj 2 baterie na terminal + stację lub ładowarkę baterii.',
-        'Budżet — od najtańszego do najdroższego: [SL20](/produkt/m3-sl20) (od 2 255 zł) → [SL20K](/produkt/m3-sl20k) (od 2 424 zł) → [SM24](/produkt/m3-sm24) (od 3 123 zł) → [US30](/produkt/m3-us30) (od 3 610 zł) = [SM30](/produkt/m3-sm30) (od 3 610 zł) → [SM24 LTE](/produkt/m3-sm24) (od 3 552 zł) → [SM30 5G](/produkt/m3-sm30) (od 4 047 zł) → [US20](/produkt/m3-us20) (od 4 080 zł) → [UL20](/produkt/m3-ul20) (od 4 920 zł) → [UL30](/produkt/m3-ul30) (od 5 626 zł). Akcesoria (baterie, stacje, booty, trigger handle): 15–25% wartości terminala. Łączny budżet floty 20 terminali SM30: ~72 200 zł (terminale) + ~14 000 zł (akcesoria) ≈ 86 200 zł.',
+        'Budżet — od najtańszego do najdroższego: [SL20](/produkt/m3-sl20) (od 2 269 zł) → [SL20K](/produkt/m3-sl20k) (od 2 492 zł) → [SM24](/produkt/m3-sm24) (od 3 016 zł) → [US30](/produkt/m3-us30) (od 4 290 zł) = [SM30](/produkt/m3-sm30) (od 4 132 zł) → SM24 LTE (od 3 430 zł) → SM30 5G (od 4 174 zł) → [US20](/produkt/m3-us20) (od 4 411 zł) → [UL20](/produkt/m3-ul20) (od 5 484 zł) → [UL30](/produkt/m3-ul30) (od 6 431 zł). Akcesoria (baterie, stacje, booty, trigger handle): 15–25% wartości terminala. Łączny budżet floty 20 terminali SM30: ~72 200 zł (terminale) + ~14 000 zł (akcesoria) ≈ 86 200 zł.',
       ],
     },
     expertAuthority:
-      'TAKMA jest partnerem M3 Mobile w Polsce z ponad 25-letnim doświadczeniem w branży AutoID. Wdrażamy terminale M3 Mobile w magazynach, centrach dystrybucji i zakładach produkcyjnych — od pojedynczych urządzeń po floty 50+ terminali zarządzanych przez M3 Speedpack. Oferujemy pełne wsparcie: doradztwo w doborze modelu i wariantu skanera, konfigurację M3 Speedpack (MDM, profile Wi-Fi, aplikacje WMS), szkolenie operatorów i serwis gwarancyjny (1 rok) oraz pogwarancyjny. Każda rekomendacja na tej stronie opiera się na danych z realnych wdrożeń i porównaniach TCO z [Zebrą](/terminale-mobilne-zebra) i [Honeywellem](/terminale-honeywell), nie na materiałach marketingowych producenta.',
-    technicalDeepDive: `Pełna macierz terminali mobilnych M3 Mobile — od budżetowych kompaktowych po flagowe gun z AI — pozwala dobrać urządzenie idealnie dopasowane do środowiska pracy i budżetu. Zestawienie kluczowych parametrów i cen (netto, kwiecień 2026):\n\n• SL20 (kompaktowy, budżetowy): ekran 5,5" HD+ (1440×720), Octa-core 2,0 GHz, 4/64 lub 8/128 GB, skaner Zebra SE4710, Wi-Fi 5, Bluetooth 5.0, 4G LTE + eSIM, GPS, IP67, upadki 1,8 m, 1000 tumble, hot-swap 5 000 mAh, Android 13 (do v15), od 2 255 zł netto — najtańszy terminal M3 z IP67 i hot-swap, do retailu, hospitality i lekkiej inwentaryzacji.\n\n• SL20K (kompaktowy z klawiaturą): ekran 4" WVGA (480×800) + klawiatura 30 klawiszy z podświetleniem, Octa-core 2,0 GHz, 4/64 GB, skaner 2D, Wi-Fi 5, Bluetooth 5.0, 4G LTE + dual nano-SIM, GPS, IP65, upadki 1,5 m, 2000 tumble, hot-swap 5 200 mAh z szybkim ładowaniem PD 20W, Android 13 (do v15), od 2 424 zł netto — jedyny kompaktowy M3 z klawiaturą fizyczną.\n\n• SM24 (dotykowy 6", mid-range): ekran 6" HD+ (720×1440), Qualcomm SM6225 2,4 GHz, 8/128 GB, skaner CM60E 2D, Wi-Fi 6E, BT 5.3, opcja 4G LTE + GPS (model X), IP67, upadki 1,5 m (1,8 m z boot), 2000 tumble, hot-swap 4 000 mAh (opcja 6 000 mAh), Gorilla Glass 5, Android 16 (do v18), od 3 123 zł netto (Wi-Fi) / 3 552 zł (LTE) — najlepszy stosunek pamięci (8/128 GB) do ceny.\n\n• SM25 (dotykowy 6" FHD+, premiera VI.2026): ekran 6" FHD+ (1080×2160), Qualcomm Dragonwing QCM4490 2,4 GHz, 8/128 GB, skaner CM60E lub SE5500 Smart Focus (do 15 m), Wi-Fi 6E, BT 5.3, opcja 5G + GPS (model X), IP67, upadki 1,5 m (1,8 m z boot), hot-swap 4 000/6 000 mAh, Gorilla Glass 5, Android 16 (do v18), cena TBD — FHD+ i 5G w średnim segmencie.\n\n• SM30 (flagowy dotykowy, AI): ekran 5,7" FHD (1080×1920), Qualcomm QCM6490 2,7 GHz z NPU AI 12 TOPS, 8/128 GB DDR4/UFS, skaner Zebra SE4770 lub SE5500 Smart Focus (do 15 m), Wi-Fi 6E, BT 5.3 z Beaconing, opcja 5G + GPS + eSIM (model SM305E), IP68, upadki 1,5 m (1,8 m z boot), 2000 tumble, hot-swap 5 000 mAh (opcja 7 000 mAh), Gorilla Glass 5, kamera 16+5 MP, Android 14 (do v18), od 3 610 zł netto (Wi-Fi SE4770) / 3 778 zł (Wi-Fi SE5500) / 4 047 zł (5G SE4770) / 4 378 zł (5G SE5500) — flagowy terminal M3 z AI, 5G i IP68.\n\n• US30 (klawiatura, Wi-Fi 6): ekran 4" WVGA (480×800) + klawiatura 30/38/42/51 kl., Octa-core 2,2 GHz, 4/64 GB, skaner Zebra SE4770, SE5500 lub SE5800, Wi-Fi 6, BT, IP65, upadki 1,8 m, 2000 tumble z 1 m, hot-swap 6 700 mAh, kamera 16 MP, Android 13, od 3 610 zł netto (SE4770) / 3 880 zł (SE5500) / 4 330 zł (SE5800) — następca US20 z Wi-Fi 6 i nowym skanerem SE5800.\n\n• US20 (klawiatura, 4G LTE opcja): ekran 4" WVGA + klawiatura 30/42/51 kl., Octa-core 2,2 GHz, 4/64 GB, 6 skanerów Zebra (SE4710/SE4750/SE4770/SE4770 45°/SE4850 LR/SE5500), Wi-Fi 5, opcja 4G LTE + GPS, IP65, upadki 1,8 m, 2000 tumble, hot-swap 6 700 mAh, Android 10, 21 wariantów, od 4 080 zł netto (Wi-Fi) / 4 690 zł (LTE) — najszerszy wybór skanerów i klawiatur w ofercie M3.\n\n• UL20 (gun z klawiaturą, poprzednia gen.): ekran 5" FHD (1920×1080), Octa-core 2,0–2,2 GHz, 2/16 – 8/128 GB, klawiatura 28/35/53 kl., skaner Zebra SE4750/SE4850/SE5800, Wi-Fi 5/6, opcja 4G LTE + GPS, IP67, upadki 2,0 m, hot-swap 6 700 mAh, wersja Freezer -30°C, Android 9/10, od 4 920 zł netto — sprawdzony model gun z największym ekranem w klasie.\n\n• UL30 (gun z klawiaturą, flagowy): ekran 5" FHD (1920×1080), Qualcomm QCS6490 2,7 GHz z NPU AI 12 TOPS, 8/128 GB DDR4/UFS, klawiatura 28/35/53 kl., skaner Zebra SE4770 lub SE5800, Wi-Fi 6E, BT 5.3, IP67, upadki 3,0 m (z boot), hot-swap 6 700 mAh, wersja Frozen -30°C, kamera 16 MP, Android 14 (do v18), od 5 626 zł netto (SE4770) / 5 903 zł (SE5800) — najwytrzymalszy terminal M3 z AI i największym ekranem FHD w klasie gun.`,
+      'TAKMA jest partnerem M3 Mobile w Polsce z ponad 25-letnim doświadczeniem w branży AutoID. Wdrażamy terminale M3 Mobile w magazynach, centrach dystrybucji i zakładach produkcyjnych — od pojedynczych urządzeń po floty 50+ terminali zarządzanych przez M3 Speedpack. Oferujemy pełne wsparcie: doradztwo w doborze modelu i wariantu skanera, konfigurację M3 Speedpack (MDM, profile Wi-Fi, aplikacje WMS), szkolenie operatorów i serwis gwarancyjny (1 rok) oraz [pogwarancyjny we Wrocławiu](/serwis/m3-mobile) — wymiana ekranów, baterii i modułów skanujących na oryginalnych częściach. Baterie, stacje dokujące, ładowarki i uchwyty pistoletowe do wszystkich serii mamy w [akcesoriach do terminali](/akcesoria-do-terminali). Każda rekomendacja na tej stronie opiera się na danych z realnych wdrożeń i porównaniach TCO z [Zebrą](/terminale-mobilne-zebra) i [Honeywellem](/terminale-honeywell), nie na materiałach marketingowych producenta.',
+    modelTable: [
+      {
+        name: 'SL20',
+        href: '/produkt/m3-sl20',
+        role: 'kompaktowy, najtańszy',
+        priceFrom: 'od 2 269 zł',
+        icon: 'ekran-dotykowy',
+        specs: [
+          { label: 'Ekran', value: '5,5" HD+ (1440×720)' },
+          { label: 'Procesor', value: 'Octa-core 2,0 GHz' },
+          { label: 'Pamięć', value: '4/64 lub 8/128 GB' },
+          { label: 'Skaner', value: 'Zebra SE4710' },
+          { label: 'Łączność', value: 'Wi-Fi 5, BT 5.0, 4G LTE + eSIM, GPS' },
+          { label: 'Bateria', value: 'hot-swap 5 000 mAh' },
+          { label: 'Odporność', value: 'IP67, upadki 1,8 m' },
+          { label: 'System', value: 'Android 13 (do v15)' },
+        ],
+        bestFor: 'Retail, gastronomia i lekka inwentaryzacja. Najtańszy M3 z IP67 i hot-swapem.',
+      },
+      {
+        name: 'SL20K',
+        href: '/produkt/m3-sl20k',
+        role: 'kompaktowy z klawiaturą',
+        priceFrom: 'od 2 492 zł',
+        icon: 'klawiatura-fizyczna',
+        specs: [
+          { label: 'Ekran', value: '4" WVGA + klawiatura 30 kl. z podświetleniem' },
+          { label: 'Procesor', value: 'Octa-core 2,0 GHz' },
+          { label: 'Pamięć', value: '4/64 GB' },
+          { label: 'Skaner', value: 'imager 2D' },
+          { label: 'Łączność', value: 'Wi-Fi 5, BT 5.0, 4G LTE + dual SIM, GPS' },
+          { label: 'Bateria', value: 'hot-swap 5 200 mAh, ładowanie PD 20 W' },
+          { label: 'Odporność', value: 'IP65, upadki 1,5 m' },
+          { label: 'System', value: 'Android 13 (do v15)' },
+        ],
+        bestFor: 'Najlżejszy M3 z klawiaturą — 266 g wobec 369–450 g w serii US.',
+      },
+      {
+        name: 'SM24',
+        href: '/produkt/m3-sm24',
+        role: 'dotykowy 6", mid-range',
+        priceFrom: 'od 3 016 zł',
+        priceVariants: 'Wi-Fi 3 016 zł · LTE 3 430 zł',
+        icon: 'ekran-dotykowy',
+        specs: [
+          { label: 'Ekran', value: '6" HD+ (720×1440), Gorilla Glass 5' },
+          { label: 'Procesor', value: 'Qualcomm SM6225 2,4 GHz' },
+          { label: 'Pamięć', value: '8/128 GB' },
+          { label: 'Skaner', value: 'CM60E 2D' },
+          { label: 'Łączność', value: 'Wi-Fi 6E, BT 5.3, opcja 4G LTE + GPS' },
+          { label: 'Bateria', value: 'hot-swap 4 000 mAh (opcja 6 000)' },
+          { label: 'Odporność', value: 'IP67, upadki 1,5 m (1,8 m z bootem)' },
+          { label: 'System', value: 'Android 16 (do v18)' },
+        ],
+        bestFor: 'Najwięcej pamięci w tej cenie — 8/128 GB w modelu za trzy tysiące.',
+      },
+      {
+        name: 'SM25',
+        href: '/produkt/m3-sm25',
+        role: 'dotykowy 6" FHD+, 5G',
+        priceFrom: 'od 3 654 zł',
+        icon: 'lte-teren',
+        specs: [
+          { label: 'Ekran', value: '6" FHD+ (1080×2160), Gorilla Glass 5' },
+          { label: 'Procesor', value: 'Qualcomm Dragonwing QCM4490 2,4 GHz' },
+          { label: 'Pamięć', value: '8/128 GB' },
+          { label: 'Skaner', value: 'CM60E lub SE5500 Smart Focus (do 15 m)' },
+          { label: 'Łączność', value: 'Wi-Fi 6E, BT 5.3, opcja 5G + GPS' },
+          { label: 'Bateria', value: 'hot-swap 4 000 / 6 000 mAh' },
+          { label: 'Odporność', value: 'IP67, upadki 1,5 m (1,8 m z bootem)' },
+          { label: 'System', value: 'Android 16 (do v18)' },
+        ],
+        bestFor: 'FHD+ i 5G w średnim segmencie — do pracy w terenie z dobrym ekranem.',
+      },
+      {
+        name: 'SM30',
+        href: '/produkt/m3-sm30',
+        role: 'flagowy dotykowy, z AI',
+        priceFrom: 'od 4 132 zł',
+        priceVariants: 'SE4770 4 132 zł · SE5500 4 913 zł · 5G od 4 174 zł',
+        icon: 'ai-kontrola',
+        specs: [
+          { label: 'Ekran', value: '5,7" FHD (1080×1920), Gorilla Glass 5' },
+          { label: 'Procesor', value: 'QCM6490 2,7 GHz + NPU 12 TOPS' },
+          { label: 'Pamięć', value: '8/128 GB DDR4/UFS' },
+          { label: 'Skaner', value: 'SE4770 lub SE5500 Smart Focus (do 15 m)' },
+          { label: 'Łączność', value: 'Wi-Fi 6E, BT 5.3, opcja 5G + eSIM' },
+          { label: 'Bateria', value: 'hot-swap 5 000 mAh (opcja 7 000)' },
+          { label: 'Odporność', value: 'IP68, upadki 1,5 m (1,8 m z bootem)' },
+          { label: 'System', value: 'Android 14 (do v18)' },
+        ],
+        bestFor: 'Rozpoznawanie obrazu na urządzeniu, 5G i IP68 — flagowiec serii SM.',
+      },
+      {
+        name: 'US30',
+        href: '/produkt/m3-us30',
+        role: 'klawiatura, Wi-Fi 6',
+        priceFrom: 'od 4 290 zł',
+        priceVariants: 'SE4770 4 290 zł · SE5500 4 609 zł · SE5800 5 148 zł',
+        icon: 'klawiatura-fizyczna',
+        specs: [
+          { label: 'Ekran', value: '4" WVGA + klawiatura 30/38/42/51 kl.' },
+          { label: 'Procesor', value: 'Octa-core 2,2 GHz' },
+          { label: 'Pamięć', value: '4/64 GB' },
+          { label: 'Skaner', value: 'SE4770, SE5500 lub SE5800' },
+          { label: 'Łączność', value: 'Wi-Fi 6, Bluetooth' },
+          { label: 'Bateria', value: 'hot-swap 6 700 mAh' },
+          { label: 'Odporność', value: 'IP65, upadki 1,8 m' },
+          { label: 'System', value: 'Android 13' },
+        ],
+        bestFor: 'Następca US20: Wi-Fi 6 i skaner SE5800. Do magazynu z ręcznym wpisywaniem danych.',
+      },
+      {
+        name: 'US20',
+        href: '/produkt/m3-us20',
+        role: 'klawiatura, opcja 4G LTE',
+        priceFrom: 'od 4 411 zł',
+        priceVariants: 'Wi-Fi 4 411 zł · LTE 5 070 zł',
+        icon: 'skaner-standard',
+        specs: [
+          { label: 'Ekran', value: '4" WVGA + klawiatura 30/42/51 kl.' },
+          { label: 'Procesor', value: 'Octa-core 2,2 GHz' },
+          { label: 'Pamięć', value: '4/64 GB' },
+          { label: 'Skaner', value: '6 skanerów Zebry, od SE4710 po SE5500' },
+          { label: 'Łączność', value: 'Wi-Fi 5, opcja 4G LTE + GPS' },
+          { label: 'Bateria', value: 'hot-swap 6 700 mAh' },
+          { label: 'Odporność', value: 'IP65, upadki 1,8 m' },
+          { label: 'System', value: 'Android 10' },
+        ],
+        bestFor: 'Najszerszy wybór skanerów i klawiatur — 21 wariantów do skonfigurowania.',
+      },
+      {
+        name: 'UL20',
+        href: '/produkt/m3-ul20',
+        role: 'gun z klawiaturą, poprzednia generacja',
+        priceFrom: 'od 5 484 zł',
+        icon: 'mroznia',
+        specs: [
+          { label: 'Ekran', value: '5" FHD (1920×1080) + klawiatura 28/35/53 kl.' },
+          { label: 'Procesor', value: 'Octa-core 2,0–2,2 GHz' },
+          { label: 'Pamięć', value: 'od 2/16 do 8/128 GB' },
+          { label: 'Skaner', value: 'SE4750, SE4850 lub SE5800' },
+          { label: 'Łączność', value: 'Wi-Fi 5 lub 6, opcja 4G LTE + GPS' },
+          { label: 'Bateria', value: 'hot-swap 6 700 mAh' },
+          { label: 'Odporność', value: 'IP67, upadki 2,0 m, wersja Freezer −30 °C' },
+          { label: 'System', value: 'Android 9/10' },
+        ],
+        bestFor: 'Sprawdzony gun z największym ekranem w klasie. Wersja mroźniowa do −30 °C.',
+      },
+      {
+        name: 'UL30',
+        href: '/produkt/m3-ul30',
+        role: 'gun z klawiaturą, flagowy',
+        priceFrom: 'od 6 431 zł',
+        priceVariants: 'SE4770 6 431 zł · SE5800 7 029 zł',
+        icon: 'wysokie-skladowanie',
+        specs: [
+          { label: 'Ekran', value: '5" FHD (1920×1080) + klawiatura 28/35/53 kl.' },
+          { label: 'Procesor', value: 'QCS6490 2,7 GHz + NPU 12 TOPS' },
+          { label: 'Pamięć', value: '8/128 GB DDR4/UFS' },
+          { label: 'Skaner', value: 'SE4770 lub SE5800' },
+          { label: 'Łączność', value: 'Wi-Fi 6E, BT 5.3' },
+          { label: 'Bateria', value: 'hot-swap 6 700 mAh' },
+          { label: 'Odporność', value: 'IP67, upadki 3,0 m z bootem, wersja Frozen −30 °C' },
+          { label: 'System', value: 'Android 14 (do v18)' },
+        ],
+        bestFor: 'Najwytrzymalszy M3: 3 metry upadku, AI na pokładzie, mroźnia w standardzie.',
+      },
+    ],
+    technicalDeepDive: `Pełna macierz terminali mobilnych M3 Mobile — od budżetowych kompaktowych po flagowe gun z AI — pozwala dobrać urządzenie idealnie dopasowane do środowiska pracy i budżetu. Zestawienie kluczowych parametrów i cen (netto, wrzesień 2026):\n\n• SL20 (kompaktowy, budżetowy): ekran 5,5" HD+ (1440×720), Octa-core 2,0 GHz, 4/64 lub 8/128 GB, skaner Zebra SE4710, Wi-Fi 5, Bluetooth 5.0, 4G LTE + eSIM, GPS, IP67, upadki 1,8 m, 1000 tumble, hot-swap 5 000 mAh, Android 13 (do v15), od 2 269 zł netto — najtańszy terminal M3 z IP67 i hot-swap, do retailu, hospitality i lekkiej inwentaryzacji.\n\n• SL20K (kompaktowy z klawiaturą): ekran 4" WVGA (480×800) + klawiatura 30 klawiszy z podświetleniem, Octa-core 2,0 GHz, 4/64 GB, skaner 2D, Wi-Fi 5, Bluetooth 5.0, 4G LTE + dual nano-SIM, GPS, IP65, upadki 1,5 m, 2000 tumble, hot-swap 5 200 mAh z szybkim ładowaniem PD 20W, Android 13 (do v15), od 2 492 zł netto — najlżejszy M3 z klawiaturą fizyczną — 266 g wobec 369–450 g w serii US.\n\n• SM24 (dotykowy 6", mid-range): ekran 6" HD+ (720×1440), Qualcomm SM6225 2,4 GHz, 8/128 GB, skaner CM60E 2D, Wi-Fi 6E, BT 5.3, opcja 4G LTE + GPS (model X), IP67, upadki 1,5 m (1,8 m z boot), 2000 tumble, hot-swap 4 000 mAh (opcja 6 000 mAh), Gorilla Glass 5, Android 16 (do v18), od 3 016 zł netto (Wi-Fi) / 3 430 zł (LTE) — najlepszy stosunek pamięci (8/128 GB) do ceny.\n\n• SM25 (dotykowy 6" FHD+): ekran 6" FHD+ (1080×2160), Qualcomm Dragonwing QCM4490 2,4 GHz, 8/128 GB, skaner CM60E lub SE5500 Smart Focus (do 15 m), Wi-Fi 6E, BT 5.3, opcja 5G + GPS (model X), IP67, upadki 1,5 m (1,8 m z boot), hot-swap 4 000/6 000 mAh, Gorilla Glass 5, Android 16 (do v18), od 3 654 zł — FHD+ i 5G w średnim segmencie.\n\n• SM30 (flagowy dotykowy, AI): ekran 5,7" FHD (1080×1920), Qualcomm QCM6490 2,7 GHz z NPU AI 12 TOPS, 8/128 GB DDR4/UFS, skaner Zebra SE4770 lub SE5500 Smart Focus (do 15 m), Wi-Fi 6E, BT 5.3 z Beaconing, opcja 5G + GPS + eSIM (model SM305E), IP68, upadki 1,5 m (1,8 m z boot), 2000 tumble, hot-swap 5 000 mAh (opcja 7 000 mAh), Gorilla Glass 5, kamera 16+5 MP, Android 14 (do v18), od 4 132 zł netto (Wi-Fi SE4770) / 4 913 zł (Wi-Fi SE5500) / 4 174 zł (5G SE4770) / 5 011 zł (5G SE5500) — flagowy terminal M3 z AI, 5G i IP68.\n\n• US30 (klawiatura, Wi-Fi 6): ekran 4" WVGA (480×800) + klawiatura 30/38/42/51 kl., Octa-core 2,2 GHz, 4/64 GB, skaner Zebra SE4770, SE5500 lub SE5800, Wi-Fi 6, BT, IP65, upadki 1,8 m, 2000 tumble z 1 m, hot-swap 6 700 mAh, kamera 16 MP, Android 13, od 4 290 zł netto (SE4770) / 4 609 zł (SE5500) / 5 148 zł (SE5800) — następca US20 z Wi-Fi 6 i nowym skanerem SE5800.\n\n• US20 (klawiatura, 4G LTE opcja): ekran 4" WVGA + klawiatura 30/42/51 kl., Octa-core 2,2 GHz, 4/64 GB, 6 skanerów Zebra (SE4710/SE4750/SE4770/SE4770 45°/SE4850 LR/SE5500), Wi-Fi 5, opcja 4G LTE + GPS, IP65, upadki 1,8 m, 2000 tumble, hot-swap 6 700 mAh, Android 10, 21 wariantów, od 4 411 zł netto (Wi-Fi) / 5 070 zł (LTE) — najszerszy wybór skanerów i klawiatur w ofercie M3.\n\n• UL20 (gun z klawiaturą, poprzednia gen.): ekran 5" FHD (1920×1080), Octa-core 2,0–2,2 GHz, 2/16 – 8/128 GB, klawiatura 28/35/53 kl., skaner Zebra SE4750/SE4850/SE5800, Wi-Fi 5/6, opcja 4G LTE + GPS, IP67, upadki 2,0 m, hot-swap 6 700 mAh, wersja Freezer -30°C, Android 9/10, od 5 484 zł netto — sprawdzony model gun z największym ekranem w klasie.\n\n• UL30 (gun z klawiaturą, flagowy): ekran 5" FHD (1920×1080), Qualcomm QCS6490 2,7 GHz z NPU AI 12 TOPS, 8/128 GB DDR4/UFS, klawiatura 28/35/53 kl., skaner Zebra SE4770 lub SE5800, Wi-Fi 6E, BT 5.3, IP67, upadki 3,0 m (z boot), hot-swap 6 700 mAh, wersja Frozen -30°C, kamera 16 MP, Android 14 (do v18), od 6 431 zł netto (SE4770) / 7 029 zł (SE5800) — najwytrzymalszy terminal M3 z AI i największym ekranem FHD w klasie gun.`,
     tcoComparisons: [
       {
         title: 'TCO 3 lata — magazyn 20 terminali z klawiaturą',
@@ -1933,27 +2110,27 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
           {
             label: '20× M3 US30 (SE4770, Wi-Fi 6)',
             items: [
-              { name: 'Terminale (3 610 zł × 20)', cost: '72 200 zł' },
+              { name: 'Terminale (4 290 zł × 20)', cost: '85 800 zł' },
               { name: 'Baterie zapasowe (264 zł × 20)', cost: '5 280 zł' },
               { name: 'Stacje dokujące 5-gn. (1 900 zł × 4)', cost: '7 600 zł' },
               { name: 'Booty ochronne (57 zł × 20)', cost: '1 140 zł' },
               { name: 'M3 Speedpack MDM (bezpłatny)', cost: '0 zł' },
             ],
-            total: '~86 220 zł (~120 zł/mies./terminal)',
+            total: '~99 820 zł (~139 zł/mies./terminal)',
           },
           {
             label: '20× Zebra MC3400 (SE55, Wi-Fi 6E)',
             items: [
-              { name: 'Terminale (4 561 zł × 20)', cost: '91 220 zł' },
+              { name: 'Terminale (4 637 zł × 20)', cost: '92 740 zł' },
               { name: 'Baterie zapasowe (350 zł × 40)', cost: '14 000 zł' },
               { name: 'Stacje 5-gn. (3 500 zł × 4)', cost: '14 000 zł' },
               { name: 'Etuia + trigger (400 zł × 20)', cost: '8 000 zł' },
-              { name: 'MDM SOTI (50 zł × 20 × 36 mies.)', cost: '36 000 zł' },
+              { name: 'MDM SOTI (szacunkowo 50 zł × 20 × 36 mies.)', cost: '36 000 zł' },
             ],
-            total: '~163 220 zł (~227 zł/mies./terminal)',
+            total: '~164 740 zł (~229 zł/mies./terminal)',
           },
         ],
-        conclusion: 'M3 US30 jest o ~47% tańszy w TCO 3-letnim: niższa cena terminala, bezpłatny MDM M3 Speedpack (vs ~36 000 zł za SOTI) i tańsze akcesoria. Zebra MC3400 wygrywa dłuższym wsparciem Android (14→18 vs Android 13), lepszą wytrzymałością (2,4 m vs 1,8 m) i ekosystemem Mobility DNA (DataWedge, StageNow). Dla flot z cyklem 3 lata: M3 US30. Dla flot z cyklem 5+ lat: Zebra MC3400.',
+        conclusion: 'M3 US30 jest o ~39% tańszy w TCO 3-letnim: niższa cena terminala, bezpłatny MDM M3 Speedpack (vs ~36 000 zł za SOTI) i tańsze akcesoria. Zebra MC3400 wygrywa dłuższym wsparciem Android (14→18 vs Android 13), lepszą wytrzymałością (2,4 m vs 1,8 m) i ekosystemem Mobility DNA (DataWedge, StageNow). Dla flot z cyklem 3 lata: M3 US30. Dla flot z cyklem 5+ lat: Zebra MC3400.',
       },
       {
         title: 'TCO 3 lata — flota 10 terminali dotykowych',
@@ -1961,54 +2138,71 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
           {
             label: '10× M3 SM30 (SE4770, Wi-Fi 6E)',
             items: [
-              { name: 'Terminale (3 610 zł × 10)', cost: '36 100 zł' },
+              { name: 'Terminale (4 132 zł × 10)', cost: '41 320 zł' },
               { name: 'Baterie zapasowe 5000 mAh (250 zł × 10)', cost: '2 500 zł' },
               { name: 'Stacje dokujące 4-gn. (1 200 zł × 3)', cost: '3 600 zł' },
               { name: 'Booty ochronne (80 zł × 10)', cost: '800 zł' },
               { name: 'M3 Speedpack MDM (bezpłatny)', cost: '0 zł' },
             ],
-            total: '~43 000 zł (~119 zł/mies./terminal)',
+            total: '~48 220 zł (~134 zł/mies./terminal)',
           },
           {
             label: '10× Zebra TC53 (SE55, Wi-Fi 6E)',
             items: [
-              { name: 'Terminale (6 418 zł × 10)', cost: '64 180 zł' },
+              { name: 'Terminale (6 999 zł × 10)', cost: '69 990 zł' },
               { name: 'Baterie zapasowe (300 zł × 20)', cost: '6 000 zł' },
               { name: 'Stacje 5-gn. (3 000 zł × 2)', cost: '6 000 zł' },
               { name: 'Etuia (200 zł × 10)', cost: '2 000 zł' },
-              { name: 'MDM SOTI (50 zł × 10 × 36 mies.)', cost: '18 000 zł' },
+              { name: 'MDM SOTI (szacunkowo 50 zł × 10 × 36 mies.)', cost: '18 000 zł' },
             ],
-            total: '~96 180 zł (~267 zł/mies./terminal)',
+            total: '~101 990 zł (~283 zł/mies./terminal)',
           },
         ],
-        conclusion: 'M3 SM30 jest o ~55% tańszy w TCO 3-letnim: terminal kosztuje 56% ceny TC53, a M3 Speedpack eliminuje koszt MDM. Zebra TC53 oferuje 12 m zasięg skanera SE55, IP68, Mobility DNA i dłuższe wsparcie LifeGuard. SM30 ma ten sam procesor QCM6490, AI 12 TOPS i skaner SE4770/SE5500 — ale z krótszym cyklem wsparcia Android (14→18 vs do v16). Dla firm z budżetem: SM30 to najlepsza wartość.',
+        conclusion: 'M3 SM30 jest o ~53% tańszy w TCO 3-letnim: terminal kosztuje 59% ceny TC53, a M3 Speedpack eliminuje koszt MDM. Zebra TC53 oferuje 12 m zasięg skanera SE55, IP68, Mobility DNA i dłuższe wsparcie LifeGuard. SM30 ma ten sam procesor QCM6490, AI 12 TOPS i skaner SE4770/SE5500 — ale z krótszym cyklem wsparcia Android (14→18 vs do v16). Dla firm z budżetem: SM30 to najlepsza wartość.',
       },
     ],
     useCases: [
       {
         title: 'Magazyn z WMS i klawiaturą fizyczną',
+        icon: 'magazyn-wms',
         description:
-          'Terminal [M3 US30](/produkt/m3-us30) z klawiaturą 38 lub 51 klawiszy (od 3 610 zł) do intensywnej pracy w systemie WMS: skanowanie lokalizacji → skanowanie produktu → wpisywanie ilości na klawiaturze fizycznej → potwierdzenie. Klawiatura jest 3–5× szybsza niż wirtualna przy danych liczbowych. Bateria 6 700 mAh z hot-swap na cały dzień bez ładowania. Wi-Fi 6 zapewnia stabilne połączenie w gęstych sieciach z wieloma AP. Alternatywa z 4G LTE: [US20](/produkt/m3-us20) X (od 4 690 zł) do pracy poza zasięgiem Wi-Fi.',
+          'Skanujesz lokalizację, potem produkt, a ilość wpisujesz z klawiatury. Przy danych liczbowych fizyczne klawisze są kilka razy szybsze od ekranu, a bateria 6 700 mAh z hot-swapem starcza na całą zmianę.\n\n**Polecamy:** [US30](/produkt/m3-us30) z klawiaturą 38 lub 51 klawiszy (od 4 290 zł). Do pracy poza zasięgiem firmowego Wi-Fi — [US20](/produkt/m3-us20) X z 4G LTE (od 5 070 zł).',
       },
       {
         title: 'Magazyn wysokiego składowania — skaner dalekiego zasięgu',
+        icon: 'wysokie-skladowanie',
         description:
-          'Terminal [M3 US30](/produkt/m3-us30) z SE5500 Smart Focus (od 3 880 zł) lub SE5800 (od 4 330 zł) skanuje kody na regałach z odległości do 15 m — bez drabiny, bez wózka podnośnikowego. Eliminuje czas i ryzyko pracy na wysokości. Alternatywa gun: [UL30](/produkt/m3-ul30) z SE5800 (od 5 903 zł) — ergonomiczny uchwyt pistoletowy, 5" FHD, IP67, upadki z 3,0 m, wersja Frozen do mroźni -30°C. Dla porównania: Zebra MC3400 z SE55 (od 4 561 zł, zasięg 12 m) lub Honeywell CK67 z FlexRange XLR (od 7 765 zł, zasięg 24 m).',
+          'Kod z czwartego poziomu regału da się odczytać z podłogi. Skaner dalekiego zasięgu sięga 15 metrów, więc nikt nie wjeżdża na wysokość tylko po to, żeby sprawdzić paletę.\n\n**Polecamy:** [US30](/produkt/m3-us30) z SE5500 Smart Focus (od 4 609 zł). Przy kilkuset skanach dziennie wygodniejszy jest gun [UL30](/produkt/m3-ul30) z SE5800 (od 7 029 zł).',
       },
       {
         title: 'Produkcja z AI i kontrolą jakości',
+        icon: 'produkcja',
         description:
-          'Terminal [M3 SM30](/produkt/m3-sm30) z NPU AI 12 TOPS (od 3 610 zł) do rozpoznawania obrazów, detekcji defektów i OCR bezpośrednio na urządzeniu — bez opóźnień związanych z przesyłaniem do chmury. Kamera 16 MP dokumentuje usterki, AI klasyfikuje produkty w czasie rzeczywistym. IP68 chroni przed pyłem, olejami i wilgocią na hali produkcyjnej. Alternatywa gun do ciężkiej produkcji: [UL30](/produkt/m3-ul30) z AI 12 TOPS, klawiaturą i upadkami z 3,0 m (od 5 626 zł). Obie wersje działają offline — AI on-edge nie wymaga stałego połączenia z siecią.',
+          'Terminal rozpoznaje obrazy na samym urządzeniu: wyłapuje rysy i braki, czyta tekst z etykiet, klasyfikuje detale. Nic nie jedzie do chmury, więc nie ma czekania na odpowiedź ani przestoju przy zerwanej sieci. IP68 znosi pył, olej i mycie stanowiska.\n\n**Polecamy:** [SM30](/produkt/m3-sm30) z NPU 12 TOPS (od 4 132 zł). Do ciężkiej hali ten sam układ w wersji gun — [UL30](/produkt/m3-ul30) (od 6 431 zł).',
       },
       {
         title: 'Logistyka i dostawy — 4G LTE i 5G',
+        icon: 'logistyka',
         description:
-          'Terminal [M3 SM30](/produkt/m3-sm30) 5G z GPS (od 4 047 zł) do pracy w terenie: skanowanie przesyłek, rejestracja POD (Proof of Delivery) z podpisem na ekranie, śledzenie lokalizacji GPS w czasie rzeczywistym. 5G zapewnia transmisję danych z niskim opóźnieniem nawet w gęstej zabudowie. Budżetowa alternatywa: [SL20](/produkt/m3-sl20) z 4G LTE i eSIM (od 2 255 zł) — lekki (250 g), 5,5" HD+, IP67, idealny dla kurierów. Dla pracy z klawiaturą w terenie: [US20](/produkt/m3-us20) X z 4G LTE + GPS (od 4 690 zł).',
+          'Kurier skanuje przesyłkę, zbiera podpis na ekranie i odsyła potwierdzenie z lokalizacją. Liczy się zasięg poza magazynem i waga urządzenia, nie przekątna ekranu.\n\n**Polecamy:** [SM30](/produkt/m3-sm30) w wersji 5G z GPS (od 4 174 zł) do gęstej zabudowy. Gdy priorytetem jest lekkość — [SL20](/produkt/m3-sl20) z LTE i eSIM (od 2 269 zł, 250 g).',
+      },
+      {
+        title: 'Kompletacja bez trzymania terminala w ręce',
+        icon: 'hands-free',
+        description:
+          'Przy pakowaniu obie ręce są zajęte, a terminal ląduje pod pachą. Wtedy zamiast handhelda bierze się skaner pierścieniowy, sparowany po Bluetooth z terminalem w kaburze. Skanowanie jednym ruchem kciuka, bez odkładania kartonu.\n\n**Polecamy:** [WR10](/produkt/m3-wr10) na palec albo [WR15](/produkt/m3-wr15) na grzbiet dłoni (od 1 605 zł).',
+      },
+      {
+        title: 'Chłodnia i mroźnia — wersja Freezer',
+        icon: 'mroznia',
+        description:
+          'W mroźni zwykły terminal gubi wyświetlacz i traci pojemność baterii po kilkunastu minutach. Wersja Freezer ma podgrzewany ekran, uszczelnione złącza i baterię przystosowaną do zimna.\n\n**Polecamy:** [UL30F](/produkt/m3-ul30) do −30 °C — od 7 146 zł z SE4770, od 7 794 zł z SE5800 do regałów. Przy pracy na przemian w chłodni i hali warto dobrać stację dokującą z suszeniem kondensatu.',
       },
       {
         title: 'Retail i inwentaryzacja — budżetowy terminal enterprise',
+        icon: 'retail',
         description:
-          'Terminal [M3 SL20](/produkt/m3-sl20) (od 2 255 zł) lub [SM24](/produkt/m3-sm24) (od 3 123 zł) do pracy na sali sprzedaży: skanowanie kodu produktu → weryfikacja ceny i stanu magazynowego → lokalizacja w sklepie. SL20: 5,5" HD+, 250 g, IP67, skaner SE4710 — ekonomiczny i lekki. SM24: 6" HD+, 8/128 GB, hot-swap, Wi-Fi 6E, IP67 — więcej pamięci i nowszy Android (16). Inwentaryzacja RFID? Rozważ [Zebra TC501](/produkt/zebra-tc501) z wbudowanym RFID UHF (od 6 541 zł). Do inwentaryzacji z klawiaturą: [SL20K](/produkt/m3-sl20k) (od 2 424 zł) — 30 klawiszy z podświetleniem do wpisywania ilości w ciemnych pomieszczeniach.',
+          'Na sali sprzedaży terminal robi trzy rzeczy: sprawdza cenę, sprawdza stan i pokazuje, gdzie leży towar na zapleczu. Do tego wystarczy lekki model z porządnym skanerem.\n\n**Polecamy:** [SL20](/produkt/m3-sl20) (od 2 269 zł, 250 g) albo [SM24](/produkt/m3-sm24) z większą pamięcią (od 3 016 zł). Do wpisywania ilości w ciemnym magazynie — [SL20K](/produkt/m3-sl20k) z podświetlaną klawiaturą (od 2 492 zł). Inwentaryzacja z RFID: [Zebra TC501](/produkt/zebra-tc501) (od 6 319 zł).',
       },
     ],
     uniqueInsights: {
@@ -2016,23 +2210,28 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       items: [
         {
           title: 'Skanery Zebra w terminalu M3 — identyczna jakość dekodowania',
-          text: 'M3 Mobile stosuje skanery kodów kreskowych produkowane przez Zebra Technologies: SE4710, SE4750, SE4770, SE4850, SE5500 Smart Focus i SE5800 — identyczne moduły jak w terminalach Zebra TC/MC. Oznacza to tę samą prędkość dekodowania, ten sam zasięg i tę samą obsługę symbologii — ale w urządzeniu o innej ergonomii i niższej cenie. [SM30](/produkt/m3-sm30) z SE5500 (od 3 778 zł) skanuje na 15 m jak Zebra MC9400 z SE55 (od 7 638 zł). Klient nie idzie na kompromis w jakości skanowania, wybierając M3 Mobile.',
+          icon: 'skaner-standard',
+          text: 'M3 montuje moduły skanujące Zebry: SE4710, SE4750, SE4770, SE4850, SE5500 i SE5800 — te same układy co w terminalach TC i MC. Prędkość dekodowania, zasięg i obsługa symbologii są więc identyczne. [SM30](/produkt/m3-sm30) z SE5500 (od 4 913 zł) czyta kod z 15 metrów tak samo jak Zebra MC9400 z SE55 (od 8 482 zł).',
         },
         {
           title: 'M3 Speedpack MDM — bezpłatne zarządzanie flotą eliminujące koszt SOTI/Intune',
-          text: 'M3 Speedpack to bezpłatna platforma MDM od M3 Mobile do masowej konfiguracji, zarządzania aplikacjami, monitoringu baterii i zdalnej aktualizacji firmware. Dla floty 20 terminali na 3 lata: M3 Speedpack oszczędza ~36 000 zł (vs SOTI MobiControl po 50 zł/urządzenie/miesiąc) lub ~21 600 zł (vs Microsoft Intune po 30 zł/urządzenie/miesiąc). Ograniczenie: Speedpack zarządza wyłącznie urządzeniami M3 Mobile — dla flot mieszanych (M3 + Zebra + Honeywell) potrzebny jest komercyjny MDM. Dla jednorodnych flot M3: to jedyna w branży oferta bezpłatnego MDM obok Newland Ndevor.',
+          icon: 'budzet',
+          text: 'Speedpack konfiguruje flotę, rozsyła aplikacje i aktualizuje firmware zdalnie. Jest bezpłatny, więc przy 20 terminalach na trzy lata zostaje w firmie około 36 000 zł, których nie trzeba wydać na SOTI MobiControl. Jeden warunek: obsługuje wyłącznie sprzęt M3 — flota mieszana i tak potrzebuje komercyjnego MDM.',
         },
         {
           title: 'AI 12 TOPS na urządzeniu — SM30 i UL30 z tym samym procesorem co Zebra TC53e',
-          text: 'Procesor Qualcomm QCM6490 z NPU Hexagon 12 TOPS w [SM30](/produkt/m3-sm30) (od 3 610 zł) i [UL30](/produkt/m3-ul30) (od 5 626 zł) to ten sam chip co w Zebra TC53e (od 4 926 zł). Umożliwia uruchamianie modeli TensorFlow Lite i ONNX Runtime bezpośrednio na terminalu — rozpoznawanie obrazów, detekcja defektów, klasyfikacja produktów i OCR bez chmury. W praktyce: kontrola jakości na linii produkcyjnej (detekcja rys, pęknięć, brakujących komponentów), weryfikacja poprawności etykiet (OCR + walidacja), zliczanie produktów na palecie (computer vision). Koszt SM30 z AI to 73% ceny TC53e — znacząca oszczędność przy porównywalnej wydajności AI.',
+          icon: 'ai-kontrola',
+          text: 'W [SM30](/produkt/m3-sm30) i [UL30](/produkt/m3-ul30) pracuje Qualcomm QCM6490 z NPU 12 TOPS — ten sam układ co w Zebrze TC53e (od 5 372 zł). Modele TensorFlow Lite i ONNX chodzą bezpośrednio na terminalu, bez sieci: kontrola jakości na linii, weryfikacja etykiet, liczenie towaru na palecie. SM30 kosztuje przy tym około trzech czwartych ceny TC53e.',
         },
         {
           title: 'Hot-swap we wszystkich modelach — standard, nie opcja',
-          text: 'Każdy terminal M3 Mobile w ofercie TAKMA obsługuje hot-swap baterii: wymiana w 5–10 sekund bez wyłączania urządzenia, z zachowaniem sesji WMS, Wi-Fi, Bluetooth i WWAN. Dla porównania: Zebra TC22/TC27 NIE mają hot-swap (restart przy wymianie baterii), Zebra TC53/MC3400 mają warm-swap (krótka przerwa). W M3 Mobile hot-swap jest standardem we wszystkich seriach: SL20 (5 000 mAh), SL20K (5 200 mAh), SM24 (4 000/6 000 mAh), SM30 (5 000/7 000 mAh), US30/US20 (6 700 mAh), UL20/UL30 (6 700 mAh). To eliminuje straty czasu przy wymianie baterii w pracy wielozmianowej.',
+          icon: 'bateria-hotswap',
+          text: 'Wymiana baterii trwa 5–10 sekund i nie wyłącza urządzenia — sesja WMS, Wi-Fi i Bluetooth zostają. Zebra TC22 i TC27 wymagają przy tym restartu, TC53 i MC3400 mają warm-swap z krótką przerwą. W M3 hot-swap jest w każdym modelu, od najtańszego SL20 po pistoletowy UL30.',
         },
         {
-          title: 'Koreańska jakość enterprise w polskiej cenie',
-          text: 'M3 Mobile to jedyny koreański producent terminali enterprise dostępny w Polsce przez autoryzowanego partnera z serwisem. Portfolio 9 modeli pokrywa segment od 2 255 zł (SL20) do 5 903 zł (UL30 SE5800) — o 20–40% taniej niż porównywalne modele Zebra i Honeywell. Kluczowa różnica wobec chińskich producentów (Urovo, Chainway): M3 Mobile stosuje skanery Zebra (nie własne), procesory Qualcomm (nie MediaTek), Gorilla Glass, certyfikaty MIL-STD-810G/H i Android Enterprise Recommended. To enterprise jakość w cenie zbliżonej do budżetowej konkurencji z Chin.',
+          title: 'Skąd bierze się niższa cena przy tych samych podzespołach',
+          icon: 'wifi-hala',
+          text: 'Skanery Zebry, procesory Qualcomma, Gorilla Glass, MIL-STD-810G/H i Android Enterprise Recommended — komponenty są te same co u droższych marek. Różnica siedzi w skali sprzedaży i sieci serwisowej, nie w środku obudowy. Portfolio obejmuje dziewięć modeli od 2 269 zł (SL20) do 7 029 zł (UL30 z SE5800).',
         },
       ],
     },
@@ -2040,12 +2239,12 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       {
         question: 'Ile kosztują terminale M3 Mobile w 2026 roku?',
         answer:
-          'Ceny terminali M3 Mobile w TAKMA: [SL20](/produkt/m3-sl20) od 2 255 zł netto (kompaktowy, IP67), [SL20K](/produkt/m3-sl20k) od 2 424 zł (z klawiaturą 30 kl.), [SM24](/produkt/m3-sm24) od 3 123 zł (6" HD+, Wi-Fi 6E), [SM30](/produkt/m3-sm30) od 3 610 zł (flagowy z AI 12 TOPS), [US30](/produkt/m3-us30) od 3 610 zł (klawiatura, Wi-Fi 6), [US20](/produkt/m3-us20) od 4 080 zł (klawiatura, 21 wariantów), [UL20](/produkt/m3-ul20) od 4 920 zł (gun z klawiaturą), [UL30](/produkt/m3-ul30) od 5 626 zł (gun flagowy z AI). Ceny netto, aktualizowane regularnie.',
+          'Ceny terminali M3 Mobile w TAKMA: [SL20](/produkt/m3-sl20) od 2 269 zł netto (kompaktowy, IP67), [SL20K](/produkt/m3-sl20k) od 2 492 zł (z klawiaturą 30 kl.), [SM24](/produkt/m3-sm24) od 3 016 zł (6" HD+, Wi-Fi 6E), [SM30](/produkt/m3-sm30) od 4 132 zł (flagowy z AI 12 TOPS), [US30](/produkt/m3-us30) od 4 290 zł (klawiatura, Wi-Fi 6), [US20](/produkt/m3-us20) od 4 411 zł (klawiatura, 21 wariantów), [UL20](/produkt/m3-ul20) od 5 484 zł (gun z klawiaturą), [UL30](/produkt/m3-ul30) od 6 431 zł (gun flagowy z AI). Ceny netto, aktualizowane regularnie.',
       },
       {
         question: 'Czy terminale M3 Mobile mają hot-swap baterii?',
         answer:
-          'Tak — wszystkie terminale M3 Mobile w ofercie TAKMA obsługują hot-swap baterii (wymianę bez wyłączania urządzenia). Podczas wymiany sesje WMS, Wi-Fi, Bluetooth i WWAN są zachowane. Pojemności: SL20 — 5 000 mAh, SL20K — 5 200 mAh, SM24 — 4 000 mAh (opcja 6 000 mAh), SM30 — 5 000 mAh (opcja 7 000 mAh), US30/US20 — 6 700 mAh, UL20/UL30 — 6 700 mAh. Hot-swap jest standardem M3 Mobile — w odróżnieniu od Zebra TC22/TC27, które wymagają restartu przy wymianie baterii.',
+          'Tak — wszystkie terminale M3 Mobile w ofercie TAKMA obsługują hot-swap baterii (wymianę bez wyłączania urządzenia). Podczas wymiany sesje WMS, Wi-Fi, Bluetooth i WWAN są zachowane. Hot-swap jest standardem M3 Mobile — w odróżnieniu od Zebra TC22/TC27, które wymagają restartu przy wymianie baterii.',
       },
       {
         question: 'Jaki system Android mają terminale M3 Mobile i jak długo są wspierane?',
@@ -2053,14 +2252,14 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
           'Aktualne wersje: [SL20](/produkt/m3-sl20)/[SL20K](/produkt/m3-sl20k) — Android 13 (do v15, 2 generacje). [SM24](/produkt/m3-sm24)/[SM25](/produkt/m3-sm25) — Android 16 (do v18, 3 generacje). [SM30](/produkt/m3-sm30) — Android 14 (do v18, 4 generacje). [US30](/produkt/m3-us30) — Android 13. [US20](/produkt/m3-us20) — Android 10. [UL20](/produkt/m3-ul20) — Android 9/10. [UL30](/produkt/m3-ul30) — Android 14 (do v18, 4 generacje). Dla porównania: Zebra TC501 — Android 15 do v19 (5 generacji), Honeywell CT70 — Android 15 do v19. M3 oferuje 2–4 generacje wsparcia, krótsze niż Zebra, porównywalne z Honeywellem.',
       },
       {
-        question: 'M3 SM30 vs Zebra TC53 — który terminal wybrać?',
+        question: 'Jaką gwarancję mają terminale M3 Mobile?',
         answer:
-          '[SM30](/produkt/m3-sm30) (od 3 610 zł): QCM6490 z AI 12 TOPS, 5,7" FHD, 8/128 GB, IP68, hot-swap 5 000/7 000 mAh, skaner SE4770/SE5500, Android 14→18. [Zebra TC53](/produkt/zebra-tc53) (od 6 418 zł): QCM6490, 6" FHD, 4/6/8 GB RAM, IP68, warm-swap 4 680/7 000 mAh, SE4720/SE55 (12 m), Mobility DNA, Android do v16. SM30 jest o 44% tańszy, ma AI 12 TOPS, pełny hot-swap i 8 GB RAM w standardzie. TC53 oferuje 12 m skaner SE55, Mobility DNA (DataWedge, StageNow, Device Tracker) i dłuższe wsparcie LifeGuard. Rekomendacja: SM30 przy ograniczonym budżecie i cyklu 3–4 lata. TC53 gdy ekosystem Zebra i długi lifecycle są priorytetem.',
+          'Standardowo rok gwarancji producenta. Do tego można dokupić pakiet M3 Speed Care na 3 albo 5 lat — obejmuje naprawy również po uszkodzeniach mechanicznych, a urządzenie wraca z priorytetem. Naprawy gwarancyjne prowadzi M3Mobile GmbH, zgłoszenie i logistykę bierzemy na siebie. Po gwarancji serwisujemy terminale u siebie: wymiana ekranu, baterii, złącza ładowania, czyszczenie skanera.',
       },
       {
-        question: 'M3 US30 vs Zebra MC3400 — terminale z klawiaturą',
+        question: 'Jaki jest czas dostawy terminali M3 Mobile?',
         answer:
-          '[US30](/produkt/m3-us30) (od 3 610 zł): 4" WVGA, klawiatura 30/38/42/51 kl., 4/64 GB, IP65, upadki 1,8 m, SE4770/SE5500/SE5800, Wi-Fi 6, hot-swap 6 700 mAh, Android 13, Speedpack MDM (bezpłatny). [Zebra MC3400](/produkt/zebra-mc3400) (od 4 561 zł): 4" WVGA, klawiatura 29/38/47 kl., 4–6/64–128 GB, IP65/IP67, upadki 2,4 m, SE55/SE4770/SE58 (do 30 m), Wi-Fi 6E, hot-swap 7 000 mAh, Android 14→18, Mobility DNA. MC3400 jest o 26% droższa, ale oferuje lepszą wytrzymałość (2,4 vs 1,8 m), Wi-Fi 6E, dłuższe wsparcie i darmowy ekosystem Mobility DNA. US30 wygrywa ceną i bezpłatnym MDM.',
+          'Modele, które mamy na stanie w Polsce, wysyłamy w 24 godziny. Te z magazynu centralnego jadą 2–3 dni robocze. Przy każdym modelu na liście widać, ile sztuk jest dostępnych i w jakim czasie wysyłamy — dane pokazujemy razem z ceną. Konfiguracje spoza magazynu (nietypowa klawiatura, skaner dalekiego zasięgu, wersja mroźniowa) zamawiamy u producenta, zwykle 3–5 tygodni. Przy flocie powyżej 20 sztuk warto zapytać o rezerwację towaru.',
       },
       {
         question: 'Czym jest M3 Speedpack i jak działa?',
@@ -2075,12 +2274,12 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       {
         question: 'Który terminal M3 Mobile do magazynu z WMS?',
         answer:
-          'Zależy od workflow: skanowanie + potwierdzanie na ekranie (90% pracy) → [SM30](/produkt/m3-sm30) (od 3 610 zł) — AI, IP68, hot-swap. Intensywne wpisywanie danych (kody, ilości) → [US30](/produkt/m3-us30) z klawiaturą (od 3 610 zł). Skanowanie na wysokich regałach → US30 z SE5500 (od 3 880 zł) lub [UL30](/produkt/m3-ul30) gun z SE5800 (od 5 903 zł). Budżet minimalny → [SL20](/produkt/m3-sl20) (od 2 255 zł). Wszystkie kompatybilne z SAP WM, Comarch WMS, Asseco WAPRO, Simple WMS.',
+          'Zależy od workflow: skanowanie + potwierdzanie na ekranie (90% pracy) → [SM30](/produkt/m3-sm30) (od 4 132 zł) — AI, IP68, hot-swap. Intensywne wpisywanie danych (kody, ilości) → [US30](/produkt/m3-us30) z klawiaturą (od 4 290 zł). Skanowanie na wysokich regałach → US30 z SE5500 (od 4 609 zł) lub [UL30](/produkt/m3-ul30) gun z SE5800 (od 7 029 zł). Budżet minimalny → [SL20](/produkt/m3-sl20) (od 2 269 zł). Wszystkie kompatybilne z SAP WM, Comarch WMS, Asseco WAPRO, Simple WMS.',
       },
       {
         question: 'M3 Mobile vs Newland — porównanie budżetowych terminali',
         answer:
-          'M3 Mobile: skanery Zebra (SE4770, SE5500, SE5800) — identyczna jakość jak w terminalach Zebra TC/MC. Newland: własne skanery Duo Near & Far — dobre, ale bez kompatybilności z ekosystemem Zebra. M3 SL20 (od 2 255 zł) vs Newland MT93 (od ~1 770 zł): MT93 jest tańszy o ~485 zł, ale SL20 ma IP67 (vs IP65), hot-swap i skaner Zebra SE4710. M3 SM30 z AI (od 3 610 zł) — brak odpowiednika u Newland (żaden model nie ma NPU). Obie marki oferują bezpłatny MDM: M3 Speedpack vs Newland Ndevor.',
+          'M3 Mobile: skanery Zebra (SE4770, SE5500, SE5800) — identyczna jakość jak w terminalach Zebra TC/MC. Newland: własne skanery Duo Near & Far — dobre, ale bez kompatybilności z ekosystemem Zebra. M3 SL20 (od 2 269 zł) vs Newland MT93 (od ~1 770 zł): MT93 jest tańszy o ~485 zł, ale SL20 ma IP67 (vs IP65), hot-swap i skaner Zebra SE4710. M3 SM30 z AI (od 4 132 zł) — brak odpowiednika u Newland (żaden model nie ma NPU). Obie marki oferują bezpłatny MDM: M3 Speedpack vs Newland Ndevor.',
       },
       {
         question: 'Jakie akcesoria są dostępne do terminali M3 Mobile?',
@@ -2091,18 +2290,21 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
     comparisons: [
       {
         title: 'M3 SM30 vs Zebra TC53 — flagowe terminale dotykowe enterprise',
+        verdict: 'SM30 przy ograniczonym budżecie i cyklu 3–4 lata. TC53, gdy liczy się ekosystem Zebry, masowa konfiguracja i długie wsparcie.',
         content:
-          '[M3 SM30](/produkt/m3-sm30) (od 3 610 zł): Qualcomm QCM6490, AI 12 TOPS NPU, 5,7" FHD, 8/128 GB, IP68, upadki 1,5 m (1,8 m z boot), hot-swap 5 000/7 000 mAh, skaner SE4770 lub SE5500 (15 m), Wi-Fi 6E, BT 5.3, Android 14→18, M3 Speedpack (bezpłatny MDM). [Zebra TC53](/produkt/zebra-tc53) (od 6 418 zł): Qualcomm QCM6490, 6" FHD, 4/6/8 GB RAM, IP68, upadki 1,8 m, warm-swap 4 680/7 000 mAh, skaner SE4720 lub SE55 (12 m), Wi-Fi 6E, Mobility DNA (DataWedge, StageNow, Device Tracker), LifeGuard do v16. SM30 kosztuje 56% ceny TC53, ma AI 12 TOPS, pełny hot-swap (vs warm-swap) i 8 GB RAM w standardzie (vs 4–8 GB). TC53 oferuje 6" ekran (vs 5,7"), Mobility DNA — 12+ darmowych narzędzi enterprise (masowa konfiguracja StageNow, DataWedge bez pisania kodu, Device Tracker), skaner SE55 z 12 m zasięgiem i znacząco dłuższe wsparcie LifeGuard. Rekomendacja: SM30 gdy budżet decyduje i cykl 3–4 lata. TC53 gdy ekosystem Zebra, dłuższy lifecycle i masowa konfiguracja StageNow są priorytetem.',
+          'Oba terminale mają ten sam procesor — różnica jest w tym, co producent do niego dołożył.\n\n| Parametr | [M3 SM30](/produkt/m3-sm30) — od 4 132 zł | [Zebra TC53](/produkt/zebra-tc53) — od 6 999 zł |\n|---|---|---|\n| Procesor | QCM6490 z NPU 12 TOPS | QCM6490 bez NPU |\n| Ekran | 5,7" FHD | 6" FHD |\n| Pamięć | 8/128 GB w standardzie | 4–8 GB RAM zależnie od wariantu |\n| Bateria | hot-swap 5 000 / 7 000 mAh | warm-swap 4 680 / 7 000 mAh |\n| Skaner | SE4770 lub SE5500 do 15 m | SE4720 lub SE55 do 12 m |\n| Odporność | IP68, upadki 1,5 m (1,8 m z bootem) | IP68, upadki 1,8 m |\n| Oprogramowanie | Speedpack, bezpłatny | Mobility DNA, LifeGuard |\n\nSM30 kosztuje 59% ceny TC53 i jako jedyny liczy modele AI na samym urządzeniu. Po stronie Zebry stoi Mobility DNA — kilkanaście darmowych narzędzi, w tym masowa konfiguracja StageNow i DataWedge bez pisania kodu — oraz dłuższe wsparcie LifeGuard.',
       },
       {
         title: 'M3 US30 vs Zebra MC3400 — terminale z klawiaturą fizyczną',
+        verdict: 'US30 do magazynu w zasięgu Wi-Fi z budżetem na trzy lata. MC3400, gdy potrzebna jest wytrzymałość 2,4 m i skan do 30 metrów.',
         content:
-          '[M3 US30](/produkt/m3-us30) (od 3 610 zł): 4" WVGA, klawiatura 30/38/42/51 kl., Octa-core 2,2 GHz, 4/64 GB, IP65, upadki 1,8 m, 2000 tumble, SE4770/SE5500/SE5800, Wi-Fi 6, hot-swap 6 700 mAh, kamera 16 MP, Android 13, M3 Speedpack MDM. [Zebra MC3400](/produkt/zebra-mc3400) (od 4 561 zł): 4" WVGA, klawiatura 29/38/47 kl., QCS4490 2,4 GHz, 4–6/64–128 GB, IP65/IP67, upadki 2,4 m, SE55/SE4770/SE58 (do 30 m!), Wi-Fi 6E, hot-swap 7 000 mAh, Android 14→18, Mobility DNA. MC3400 jest droższa o 26%, ale oferuje: wyższą IP67 (vs IP65), upadki 2,4 m (vs 1,8 m), bateria 7 000 mAh (vs 6 700 mAh), Wi-Fi 6E (vs Wi-Fi 6), Android 14→18 (vs 13), skaner SE58 z zasięgiem do 30 m, Mobility DNA. US30 wygrywa: ceną (3 610 vs 4 561 zł), 4 typami klawiatury (vs 3), bezpłatnym MDM Speedpack i niższą wagą. Wybór: US30 → budżet i cykl 3 lata. MC3400 → wytrzymałość, daleki skan i długie wsparcie.',
+          'Dwa terminale z klawiaturą w tej samej półce cenowej, do tej samej pracy w magazynie.\n\n| Parametr | [M3 US30](/produkt/m3-us30) — od 4 290 zł | [Zebra MC3400](/produkt/zebra-mc3400) — od 4 637 zł |\n|---|---|---|\n| Klawiatura | 30, 38, 42 lub 51 klawiszy | 29, 38 lub 47 klawiszy |\n| Skaner | SE4770, SE5500, SE5800 | SE4770, SE55, SE58 do 30 m |\n| Łączność | Wi-Fi 6 | Wi-Fi 6E |\n| Bateria | hot-swap 6 700 mAh | hot-swap 7 000 mAh |\n| Odporność | IP65, upadki 1,8 m | IP65/IP67, upadki 2,4 m |\n| System | Android 13 | Android 14 → 18 |\n| Zarządzanie | Speedpack, bezpłatny | Mobility DNA |\n\nMC3400 jest droższa o 8%, ale znosi upadek z 2,4 m, ma Wi-Fi 6E i skaner sięgający 30 metrów. US30 nadrabia ceną, czterema układami klawiatury i bezpłatnym zarządzaniem flotą.',
       },
       {
         title: 'M3 Mobile vs Honeywell — porównanie ofert enterprise',
+        verdict: 'M3 wygrywa ceną i AI na urządzeniu, Honeywell zasięgiem skanerów FlexRange i długością wsparcia.',
         content:
-          'M3 Mobile i Honeywell celują w ten sam segment — terminale enterprise do magazynów, logistyki i produkcji — ale z różnych pozycji cenowych. Dotykowe entry-level: [M3 SM24](/produkt/m3-sm24) (od 3 123 zł) vs [Honeywell CT32](/produkt/honeywell-ct32) (od 3 389 zł) — SM24 jest tańszy o 266 zł, ma 8/128 GB (vs 6/128 GB), hot-swap, ale HD+ (vs FHD) i krótszy cykl. CT32 ma lepszy skaner FlexRange do 15 m i platformę Mobility Edge. Flagowe dotykowe: [M3 SM30](/produkt/m3-sm30) (od 3 610 zł) vs [Honeywell CT70](/produkt/honeywell-ct70) (od 6 168 zł) — SM30 jest o 41% tańszy, ma AI 12 TOPS i IP68. CT70 oferuje Wi-Fi 7, Qi charging, Android 15→19 (najdłuższe wsparcie) i BT 6.0. Gun z klawiaturą: [M3 UL30](/produkt/m3-ul30) (od 5 626 zł) vs [Honeywell CK67](/produkt/honeywell-ck67) (od 7 765 zł) — UL30 jest o 27% tańszy, ma AI 12 TOPS i ekran 5" FHD (największy w klasie). CK67 oferuje FlexRange XLR do 24 m, IP65+IP68, 28 h baterii i 5 typów klawiatury. M3 wygrywa ceną i AI. Honeywell wygrywa ekosystemem, zasięgiem skanerów i cyklem wsparcia.',
+          'Obie marki celują w ten sam segment, ale z innych pułapów cenowych. Trzy pary do bezpośredniego porównania:\n\n| Segment | M3 Mobile | Honeywell |\n|---|---|---|\n| Dotykowy podstawowy | [SM24](/produkt/m3-sm24) — od 3 016 zł, 8/128 GB, hot-swap | [CT32](/produkt/honeywell-ct32) — od 3 775 zł, FlexRange 15 m, Mobility Edge |\n| Dotykowy flagowy | [SM30](/produkt/m3-sm30) — od 4 132 zł, AI 12 TOPS, IP68 | [CT70](/produkt/honeywell-ct70) — od 7 265 zł, Wi-Fi 7, Android do v19 |\n| Gun z klawiaturą | [UL30](/produkt/m3-ul30) — od 6 431 zł, AI, ekran 5" FHD | [CK67](/produkt/honeywell-ck67) — od 8 595 zł, FlexRange XLR 24 m, 28 h pracy |\n\nM3 wygrywa ceną i akceleratorem AI. Honeywell nadrabia zasięgiem skanerów FlexRange, czasem pracy na baterii i najdłuższym cyklem aktualizacji Androida w tym zestawieniu.',
       },
     ],
     howToSteps: [
@@ -2112,7 +2314,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       },
       {
         name: 'Wybór modelu i konfiguracji',
-        text: 'Budżetowy dotykowy: [SL20](/produkt/m3-sl20) 4/64 GB (od 2 255 zł) — retail, lekka inwentaryzacja. Budżetowy z klawiaturą: [SL20K](/produkt/m3-sl20k) (od 2 424 zł). Mid-range dotykowy: [SM24](/produkt/m3-sm24) 8/128 GB (od 3 123 zł) — magazyn, e-commerce. Flagowy dotykowy: [SM30](/produkt/m3-sm30) z AI (od 3 610 zł) — produkcja z AI, 5G logistyka. Klawiatura mid-range: [US30](/produkt/m3-us30) SE4770 (od 3 610 zł). Klawiatura long-range: US30 SE5800 (od 4 330 zł). Gun flagowy: [UL30](/produkt/m3-ul30) SE5800 (od 5 903 zł). Wybierz skaner: SE4770 (standard), SE5500 (15 m), SE5800 (najnowszy, rozszerzony zasięg).',
+        text: 'Budżetowy dotykowy: [SL20](/produkt/m3-sl20) 4/64 GB (od 2 269 zł) — retail, lekka inwentaryzacja. Budżetowy z klawiaturą: [SL20K](/produkt/m3-sl20k) (od 2 492 zł). Mid-range dotykowy: [SM24](/produkt/m3-sm24) 8/128 GB (od 3 016 zł) — magazyn, e-commerce. Flagowy dotykowy: [SM30](/produkt/m3-sm30) z AI (od 4 132 zł) — produkcja z AI, 5G logistyka. Klawiatura mid-range: [US30](/produkt/m3-us30) SE4770 (od 4 290 zł). Klawiatura long-range: US30 SE5800 (od 5 148 zł). Gun flagowy: [UL30](/produkt/m3-ul30) SE5800 (od 7 029 zł). Wybierz skaner: SE4770 (standard), SE5500 (15 m), SE5800 (najnowszy, rozszerzony zasięg).',
       },
       {
         name: 'Zamówienie akcesoriów',

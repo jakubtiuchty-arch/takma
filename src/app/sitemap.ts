@@ -15,6 +15,7 @@ import { thermalLabelSeries } from '@/data/thermal-label-series'
 import { transferLabelSeries } from '@/data/transfer-label-series'
 import { transferRibbonSeries } from '@/data/transfer-ribbon-series'
 import { isRibbonProduct } from '@/data/products'
+import { brandCategoryContent } from '@/data/brand-category-content'
 import { PROMOTIONS } from '@/data/promotions'
 import { prisma } from '@/lib/db'
 import { UZYWANE_WIDOCZNE } from '@/lib/used-devices'
@@ -124,10 +125,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: lastUpdated,
   }))
 
-  const brandCategoryPages: MetadataRoute.Sitemap = brandCategories.map((bc) => ({
-    url: `${baseUrl}/${bc.slug}`,
-    lastModified: lastUpdated,
-  }))
+  // Data z wpisu treści, jeśli jest — inaczej wspólna data statyczna.
+  const brandCategoryPages: MetadataRoute.Sitemap = brandCategories.map((bc) => {
+    const updated = brandCategoryContent[bc.slug]?.updatedAt
+    return {
+      url: `${baseUrl}/${bc.slug}`,
+      lastModified: updated ? new Date(updated) : lastUpdated,
+    }
+  })
 
   // Landing pages dla serii etykiet termicznych — /etykiety-termiczne-zebra/serie/[slug]
   const thermalSeriesPages: MetadataRoute.Sitemap = thermalLabelSeries.map((s) => ({

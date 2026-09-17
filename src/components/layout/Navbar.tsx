@@ -47,7 +47,7 @@ const navigation: NavItem[] = [
       manufacturer: 'M3 Mobile',
       manufacturerLogo: '/images/partners/logo_m3mobile.png',
       shortDesc: 'Flagowy terminal 5G z AI 12 TOPS, Snapdragon QCM6490, 5,7" FHD, IP68, hot-swap',
-      priceFrom: 3610,
+      priceFrom: 4132,
       imageHeight: 'h-48',
     },
     children: [

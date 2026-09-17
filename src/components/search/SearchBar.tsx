@@ -5,16 +5,7 @@ import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import clsx from 'clsx'
 import { SearchIcon, CloseIcon, ArrowRightIcon } from '@/components/ui/Icons'
-import {
-  products,
-  categories,
-  manufacturers,
-  variantSizeSlug,
-  isThermalLabelProduct,
-  isTransferLabelProduct,
-  type Product,
-  type Category,
-} from '@/data/products'
+import type { Product, Category } from '@/data/products'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import { trackSearch } from '@/lib/ga-events'
 
@@ -42,8 +33,34 @@ interface SearchResult {
   href?: string
 }
 
+type Katalog = typeof import('@/data/products')
+type IndexEntry = { product: Product; searchText: string; partNumbers: string[] }
+type SearchData = { index: IndexEntry[]; categories: Category[]; katalog: Katalog }
+
+// Katalog waży kilka megabajtów, a wyszukiwarka siedzi w nagłówku każdej strony.
+// Dlatego dane dociągamy dopiero przy pierwszym wejściu w pole (albo pierwszym
+// znaku), osobnym chunkiem. Cache modułowy — drugi SearchBar (mobilny) korzysta
+// z gotowego indeksu.
+let cacheDanych: SearchData | null = null
+let wTrakcie: Promise<SearchData> | null = null
+
+function wczytajDane(): Promise<SearchData> {
+  if (cacheDanych) return Promise.resolve(cacheDanych)
+  if (!wTrakcie) {
+    wTrakcie = import('@/data/products').then((katalog) => {
+      cacheDanych = {
+        index: buildSearchIndex(katalog),
+        categories: katalog.categories,
+        katalog,
+      }
+      return cacheDanych
+    })
+  }
+  return wTrakcie
+}
+
 // Buduj indeks wyszukiwania raz
-function buildSearchIndex(): { product: Product; searchText: string; partNumbers: string[] }[] {
+function buildSearchIndex({ products, manufacturers }: Katalog): IndexEntry[] {
   return products.map((p) => {
     const partNumbers = (p.variants || []).map((v) => v.partNumber.toLowerCase())
     const variantNames = (p.variants || []).map((v) => v.name.toLowerCase())
@@ -92,7 +109,10 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
   const inputRef = useRef<HTMLInputElement>(null)
   const listRef = useRef<HTMLUListElement>(null)
 
-  const searchIndex = useMemo(() => buildSearchIndex(), [])
+  const [dane, setDane] = useState<SearchData | null>(cacheDanych)
+  const przygotujDane = useCallback(() => {
+    if (!cacheDanych) void wczytajDane().then(setDane)
+  }, [])
 
   const search = useCallback(
     (q: string) => {
@@ -101,6 +121,12 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
         setIsOpen(false)
         return
       }
+      if (!dane) {
+        przygotujDane()
+        return // efekt uruchomi wyszukiwanie ponownie, gdy indeks dojedzie
+      }
+      const { index: searchIndex, categories, katalog } = dane
+      const { variantSizeSlug, isThermalLabelProduct, isTransferLabelProduct } = katalog
 
       const queryLower = q.toLowerCase().trim()
       const queryNormalized = queryLower.replace(/\s+/g, '')
@@ -220,7 +246,7 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
       setIsOpen(found.length > 0 || q.length >= 2)
       setActiveIndex(-1)
     },
-    [searchIndex]
+    [dane, przygotujDane]
   )
 
   // Debounced search
@@ -337,7 +363,10 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            onFocus={() => query.length >= 2 && results.length > 0 && setIsOpen(true)}
+            onFocus={() => {
+              przygotujDane()
+              if (query.length >= 2 && results.length > 0) setIsOpen(true)
+            }}
             onKeyDown={handleKeyDown}
             placeholder="Szukaj produktu, modelu, PN..."
             className={clsx(

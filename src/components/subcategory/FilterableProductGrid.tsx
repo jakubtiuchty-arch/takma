@@ -2,9 +2,10 @@
 
 import { useState, useMemo, useCallback, useRef, useEffect } from 'react'
 import Link from 'next/link'
-import { Product } from '@/data/products'
+import type { ProductCardData } from '@/components/product/ProductGrid'
 import ProductGrid from '@/components/product/ProductGrid'
 import { FilterIcon, CloseIcon, ChevronDownIcon, HelpCircleIcon } from '@/components/ui/Icons'
+import { trackFilterUsed } from '@/lib/ga-events'
 
 export interface FilterDefinition {
   specKey: string
@@ -42,13 +43,29 @@ export interface DerivedRule {
   subcategory?: string
 }
 
+/**
+ * Czy nazwa wiersza specyfikacji odpowiada nazwie wpisanej w regule.
+ *
+ * Katalog dopisuje do nazw wariant albo typ: „SIM (model US20X)”, „WWAN (Memor 35)”,
+ * „Skaner 2D”, „Skaner LR”. Porównanie 1:1 gubiło takie wiersze — terminal z LTE
+ * wyłącznie w wariancie wpadał do „Tylko Wi-Fi”, a gun ze skanerem dalekiego
+ * zasięgu znikał z filtra skanera.
+ */
+function specNameMatches(names: string[], name: string): boolean {
+  const n = name.toLowerCase()
+  return names.some(raw => {
+    const r = raw.toLowerCase()
+    return n === r || n.startsWith(`${r} `) || n.startsWith(`${r}(`)
+  })
+}
+
 /** Wszystkie wartości filtra dla produktu (dla filtrów zwykłych 0–1 wartość, dla pochodnych 0–n). */
-function productValues(product: Product, def: FilterDefinition): string[] {
+function productValues(product: ProductCardData, def: FilterDefinition): string[] {
   if (def.derived) {
     const out: string[] = []
     for (const rule of def.derived) {
       if (rule.manufacturer && product.manufacturerId !== rule.manufacturer) continue
-      if (rule.notSpecs && product.specifications.some(sp => rule.notSpecs!.includes(sp.name))) continue
+      if (rule.notSpecs && product.specifications.some(sp => specNameMatches(rule.notSpecs!, sp.name))) continue
       if (rule.slugs && !rule.slugs.includes(product.slug)) continue
       if (rule.namePattern && !new RegExp(rule.namePattern, 'i').test(product.name)) continue
       if (rule.subcategory && !product.subcategoryIds?.includes(rule.subcategory)) continue
@@ -57,7 +74,7 @@ function productValues(product: Product, def: FilterDefinition): string[] {
       if (rule.priceMax !== undefined && !(product.priceFrom && product.priceFrom < rule.priceMax)) continue
       if (rule.pattern) {
         const re = new RegExp(rule.pattern, 'i')
-        const specs = rule.specs ? product.specifications.filter(sp => rule.specs!.includes(sp.name)) : product.specifications
+        const specs = rule.specs ? product.specifications.filter(sp => specNameMatches(rule.specs!, sp.name)) : product.specifications
         if (!specs.some(sp => re.test(sp.value))) continue
       }
       if (!out.includes(rule.value)) out.push(rule.value) // kilka reguł może dawać tę samą wartość (różne specyfikacje)
@@ -111,7 +128,7 @@ function FilterInfoTooltip({ text }: { text: string }) {
         onBlur={() => setShow(false)}
         onClick={e => { e.stopPropagation(); e.preventDefault() }}
         onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); e.stopPropagation(); updateCoords(); setShow(v => !v) } }}
-        className="inline-flex items-center justify-center text-gray-400 hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-300 rounded-full transition-colors cursor-help"
+        className="inline-flex items-center justify-center p-1.5 -m-1.5 text-gray-400 hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-300 rounded-full transition-colors cursor-help"
       >
         <HelpCircleIcon size={14} />
       </span>
@@ -160,7 +177,7 @@ export interface CategoryNavItem {
 }
 
 interface FilterableProductGridProps {
-  products: Product[]
+  products: ProductCardData[]
   filters: FilterDefinition[]
   categoryNav: CategoryNavItem[]
   variant?: 'grid' | 'list' | 'compact'
@@ -168,6 +185,10 @@ interface FilterableProductGridProps {
   children?: React.ReactNode
   /** Filtry nad nawigacją kategorii (strony kategorii: filtry są celem, lista kategorii tylko pomocą) */
   filtersFirst?: boolean
+  /** Kafle z przyciskiem „Do zapytania" obok „Zobacz więcej" */
+  showDualButtons?: boolean
+  /** Nazwa listy w GA4 (slug strony) — trafia do `filtr_uzyty` i `select_item`. */
+  listName?: string
 }
 
 function extractNumeric(val: string): number {
@@ -195,12 +216,15 @@ export default function FilterableProductGrid({
   columns = 3,
   children,
   filtersFirst = false,
+  showDualButtons = false,
+  listName,
 }: FilterableProductGridProps) {
   const [activeFilters, setActiveFilters] = useState<Record<string, Set<string>>>({})
   const [expandedGroups, setExpandedGroups] = useState<Record<string, boolean>>(
     () => Object.fromEntries(filters.map(f => [fId(f), true]))
   )
   const [showMobileFilters, setShowMobileFilters] = useState(false)
+  const [sortowanie, setSortowanie] = useState<'domyslne' | 'cena-rosnaco' | 'cena-malejaco' | 'nazwa'>('domyslne')
 
   // Mapa filter ID → transform
   const filterLookup = useMemo(
@@ -275,12 +299,37 @@ export default function FilterableProductGrid({
     })
   }, [products, activeFilters, filterLookup])
 
+  // Sortowanie listy. Produkty bez ceny („na zapytanie") lądują na końcu przy
+  // obu kierunkach — inaczej przy „najtańsze" otwierałyby listę z zerem.
+  const sortedProducts = useMemo(() => {
+    if (sortowanie === 'domyslne') return filteredProducts
+    const lista = [...filteredProducts]
+    if (sortowanie === 'nazwa') {
+      lista.sort((a, b) => a.name.localeCompare(b.name, 'pl'))
+      return lista
+    }
+    const cena = (p: ProductCardData) => p.priceFrom || p.variants?.reduce<number | null>(
+      (min, v) => (v.priceFrom && (min === null || v.priceFrom < min) ? v.priceFrom : min), null) || null
+    lista.sort((a, b) => {
+      const ca = cena(a), cb = cena(b)
+      if (ca === null && cb === null) return 0
+      if (ca === null) return 1
+      if (cb === null) return -1
+      return sortowanie === 'cena-rosnaco' ? ca - cb : cb - ca
+    })
+    return lista
+  }, [filteredProducts, sortowanie])
+
   const totalActiveCount = useMemo(
     () => Object.values(activeFilters).reduce((sum, s) => sum + s.size, 0),
     [activeFilters]
   )
 
+  // Ostatnio kliknięty filtr — zdarzenie wysyłamy dopiero, gdy znamy liczbę wyników.
+  const ostatniFiltr = useRef<{ filtr: string; wartosc: string } | null>(null)
+
   const toggleFilter = useCallback((id: string, value: string) => {
+    ostatniFiltr.current = { filtr: id, wartosc: value }
     setActiveFilters(prev => {
       const current = new Set(prev[id] || [])
       if (current.has(value)) {
@@ -293,6 +342,7 @@ export default function FilterableProductGrid({
   }, [])
 
   const setDropdownFilter = useCallback((id: string, value: string) => {
+    ostatniFiltr.current = { filtr: id, wartosc: value || '(wyczyszczony)' }
     setActiveFilters(prev => ({
       ...prev,
       [id]: value ? new Set([value]) : new Set(),
@@ -315,7 +365,7 @@ export default function FilterableProductGrid({
 
   const categoryNavBlock = (
       <div className="mb-6">
-        <h2 className="font-semibold text-gray-900 mb-3">Kategoria</h2>
+        <p className="font-semibold text-gray-900 mb-3">Kategoria</p>
         <ul className="space-y-1">
           {categoryNav.map((cat) => (
             <li key={cat.id}>
@@ -358,10 +408,10 @@ export default function FilterableProductGrid({
   const filtersBlock = (
       <div>
         <div className="flex items-center justify-between mb-4">
-          <h2 className="font-semibold text-gray-900 flex items-center gap-2">
+          <p className="font-semibold text-gray-900 flex items-center gap-2">
             <FilterIcon size={16} className="text-gray-500" />
             Filtry
-          </h2>
+          </p>
           {totalActiveCount > 0 && (
             <button
               onClick={clearAll}
@@ -484,6 +534,31 @@ export default function FilterableProductGrid({
       </div>
   )
 
+  useEffect(() => {
+    const zmiana = ostatniFiltr.current
+    if (!zmiana) return
+    ostatniFiltr.current = null
+    trackFilterUsed({
+      lista: listName || (typeof window !== 'undefined' ? window.location.pathname : ''),
+      filtr: filterLookup[zmiana.filtr]?.label || zmiana.filtr,
+      wartosc: zmiana.wartosc,
+      wynikow: filteredProducts.length,
+    })
+  }, [filteredProducts, filterLookup, listName])
+
+  // Szuflada filtrów na telefonie: Escape zamyka, tło nie przewija się pod spodem.
+  useEffect(() => {
+    if (!showMobileFilters) return
+    const naKlawisz = (e: KeyboardEvent) => { if (e.key === 'Escape') setShowMobileFilters(false) }
+    document.addEventListener('keydown', naKlawisz)
+    const poprzedni = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.removeEventListener('keydown', naKlawisz)
+      document.body.style.overflow = poprzedni
+    }
+  }, [showMobileFilters])
+
   const filterSidebarContent = filtersFirst ? (
     <>
       {filtersBlock}
@@ -538,8 +613,16 @@ export default function FilterableProductGrid({
                   <CloseIcon size={20} />
                 </button>
               </div>
-              <div className="p-4">
+              <div className="p-4 pb-24">
                 {filterSidebarContent}
+              </div>
+              <div className="sticky bottom-0 border-t border-gray-200 bg-white p-3">
+                <button
+                  onClick={() => setShowMobileFilters(false)}
+                  className="w-full py-2.5 rounded-xl bg-primary-600 text-white text-sm font-semibold hover:bg-primary-700 transition-colors"
+                >
+                  Pokaż {sortedProducts.length} {productWord}
+                </button>
               </div>
             </div>
           </>
@@ -548,11 +631,28 @@ export default function FilterableProductGrid({
 
       {/* Siatka produktów */}
       <div className="flex-1 min-w-0">
+        <div className="flex items-center justify-between gap-3 mb-4">
+          <span className="text-sm text-gray-500">
+            {sortedProducts.length} {productWord}
+          </span>
+          <label className="flex items-center gap-2 text-sm text-gray-500">
+            <span className="hidden sm:inline">Sortuj</span>
+            <select
+              value={sortowanie}
+              onChange={e => setSortowanie(e.target.value as typeof sortowanie)}
+              aria-label="Sortowanie listy produktów"
+              className="border border-gray-200 rounded-lg px-2.5 py-1.5 text-sm text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-primary-500/30"
+            >
+              <option value="domyslne">Domyślnie</option>
+              <option value="cena-rosnaco">Cena rosnąco</option>
+              <option value="cena-malejaco">Cena malejąco</option>
+              <option value="nazwa">Nazwa A–Z</option>
+            </select>
+          </label>
+        </div>
+
         {totalActiveCount > 0 && (
           <div className="flex flex-wrap items-center gap-2 mb-4">
-            <span className="text-sm text-gray-500">
-              {filteredProducts.length} {productWord}
-            </span>
             {Object.entries(activeFilters).map(([id, values]) =>
               Array.from(values).map(val => {
                 const def = filterLookup[id]
@@ -572,7 +672,7 @@ export default function FilterableProductGrid({
           </div>
         )}
 
-        <ProductGrid products={filteredProducts} variant={variant} columns={columns} />
+        <ProductGrid products={sortedProducts} variant={variant} columns={columns} showDualButtons={showDualButtons} listName={listName} />
 
         {children}
       </div>

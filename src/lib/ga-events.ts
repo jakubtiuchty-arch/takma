@@ -48,6 +48,38 @@ export function trackAddToCart(item: GA4Item) {
   })
 }
 
+/**
+ * Kliknięcie w produkt na liście (kategoria, marka, podkategoria).
+ * GA4 zestawia to z `view_item` i pokazuje, które kafle naprawdę klikają.
+ */
+export function trackSelectItem(item: GA4Item, listName: string, index?: number) {
+  gtag('event', 'select_item', {
+    item_list_name: listName,
+    items: [{ ...item, index }],
+  })
+}
+
+/**
+ * Użycie filtra na liście produktów.
+ *
+ * Filtry trzymają stan w komponencie, nie w URL-u, więc bez tego zdarzenia
+ * w GA4 nie widać ani tego, czego klienci szukają, ani filtra, który nic nie
+ * zwraca. `wynikow: 0` jest tu najważniejszą liczbą.
+ */
+export function trackFilterUsed(params: {
+  lista: string
+  filtr: string
+  wartosc: string
+  wynikow: number
+}) {
+  gtag('event', 'filtr_uzyty', {
+    lista: params.lista,
+    filtr: params.filtr,
+    wartosc: params.wartosc,
+    wynikow: params.wynikow,
+  })
+}
+
 /** Fired when user removes product from cart */
 export function trackRemoveFromCart(item: GA4Item) {
   gtag('event', 'remove_from_cart', {

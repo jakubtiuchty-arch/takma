@@ -262,16 +262,16 @@ export async function GET(request: NextRequest) {
 
           if (stockPL > 0) {
             availability = 'available'
-            deliveryText = `Dostepny — wysylka 24h (${stockPL} szt.)`
+            deliveryText = `Dostępny — wysyłka 24h (${stockPL} szt.)`
           } else if (stockDE > 0) {
             availability = 'available'
-            deliveryText = `Dostepny — wysylka 2-3 dni (${stockDE} szt.)`
+            deliveryText = `Dostępny — wysyłka 2-3 dni (${stockDE} szt.)`
           } else if (inDelivery > 0) {
             availability = 'on-order'
             deliveryText = `W dostawie (${inDelivery} szt.)`
           } else {
             availability = 'unavailable'
-            deliveryText = 'Niedostepny'
+            deliveryText = 'Niedostępny'
           }
 
           // Ręczne korekty per PN (np. przedsprzedaż — patrz lib/stock-overrides)

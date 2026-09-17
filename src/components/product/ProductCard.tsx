@@ -4,18 +4,22 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Badge, Button } from '@/components/ui'
 import { PlusIcon, CheckIcon, BellIcon } from '@/components/ui/Icons'
-import { Product, getManufacturerById } from '@/data/products'
+import type { ProductCardData } from './ProductGrid'
+import { getManufacturerById } from '@/data/manufacturers'
 import { useCartStore } from '@/store/cartStore'
 import { useEffect, useState, useMemo } from 'react'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
+import { trackAddToCart, trackSelectItem } from '@/lib/ga-events'
 
 interface ProductCardProps {
-  product: Product
+  product: ProductCardData
   variant?: 'grid' | 'list' | 'compact'
   showDualButtons?: boolean
+  /** Nazwa listy do GA4 (np. slug kategorii) — trafia do `select_item`. */
+  listName?: string
 }
 
-function getPartNumbers(product: Product): string[] {
+function getPartNumbers(product: ProductCardData): string[] {
   if (product.variants && product.variants.length > 0) {
     return product.variants.map(v => v.partNumber)
   }
@@ -28,7 +32,7 @@ function getPartNumbers(product: Product): string[] {
  * kierujemy do variant browsera /etykiety-termiczne-zebra/serie/[slug] zamiast strony parent — klient
  * od razu widzi wszystkie 200+ wariantów rozmiarowych z filtrem szerokość/wysokość/gilza.
  */
-function getProductHref(product: Product): string {
+function getProductHref(product: ProductCardData): string {
   if (product.subcategoryIds?.includes('etykiety-termiczne')) {
     const seriesSlug = product.slug.replace(/^zebra-/, '')
     return `/etykiety-termiczne-zebra/serie/${seriesSlug}`
@@ -36,7 +40,7 @@ function getProductHref(product: Product): string {
   return `/produkt/${product.slug}`
 }
 
-export default function ProductCard({ product, variant = 'grid', showDualButtons = false }: ProductCardProps) {
+export default function ProductCard({ product, variant = 'grid', showDualButtons = false, listName }: ProductCardProps) {
   const { addItem, isInCart } = useCartStore()
   const [mounted, setMounted] = useState(false)
 
@@ -76,16 +80,36 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
     return variantPrices?.[0]
   }, [product.priceFrom, product.variants])
 
-  // Live cena z API — szukaj najtańszej dostępnej ceny z Ingram
+  // Live cena z API. Najpierw najtańszy wariant, który faktycznie leży na
+  // magazynie — inaczej kafel obiecuje cenę konfiguracji, której nie da się
+  // kupić od ręki. Gdy nic nie ma stanu, pokazujemy najtańszą cenę katalogową.
   const displayPrice = useMemo(() => {
     if (stockLoading || !anyFound) return staticPrice
-    const livePrices = partNumbers
+    const znalezione = partNumbers
       .map(pn => stockData.get(pn))
       .filter((s): s is NonNullable<typeof s> => !!s?.found && !!s?.price)
-      .map(s => s.price!)
-      .sort((a, b) => a - b)
-    return livePrices[0] ?? staticPrice
+    const posortuj = (lista: typeof znalezione) => lista.map(s => s.price!).sort((a, b) => a - b)
+    const naStanie = posortuj(znalezione.filter(s => s.totalStock > 0))
+    return naStanie[0] ?? posortuj(znalezione)[0] ?? staticPrice
   }, [stockLoading, anyFound, partNumbers, stockData, staticPrice])
+
+  // Czas wysyłki liczymy z pól stanu, nie z gotowego tekstu — ten w cache'u
+  // bywa zapisany bez polskich znaków i różni się między źródłami.
+  const czasWysylki = (() => {
+    if (stockLoading || !anyFound) return null
+    let pl = 0, de = 0, wDrodze = 0
+    for (const pn of partNumbers) {
+      const stan = stockData.get(pn)
+      if (!stan?.found) continue
+      pl += stan.stockPL || 0
+      de += stan.stockDE || 0
+      wDrodze += stan.inDelivery || 0
+    }
+    if (pl > 0) return 'wysyłka 24 h'
+    if (de > 0) return 'wysyłka 2–3 dni'
+    if (wDrodze > 0) return 'w dostawie'
+    return null
+  })()
 
   const liveAvailability = liveStatus ?? product.availability
   // 'on-order' jest zamawialne (przedsprzedaż) — dzwonek tylko dla twardego braku
@@ -99,9 +123,21 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
 
   const availability = availabilityConfig[liveAvailability]
 
+  const gaItem = () => ({
+    item_id: product.id,
+    item_name: product.name,
+    item_category: product.categoryId,
+    price: displayPrice,
+    quantity: 1,
+  })
+
+  // Kliknięcie w kafel — bez tego w GA4 nie widać, które pozycje listy działają.
+  const handleSelect = () => trackSelectItem(gaItem(), listName ?? product.categoryId)
+
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault()
     e.stopPropagation()
+    trackAddToCart(gaItem())
     addItem({
       id: product.id,
       name: product.name,
@@ -117,6 +153,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
       <article className="card p-4 flex gap-4">
         <Link
           href={productHref}
+          onClick={handleSelect}
           className="w-24 h-24 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center group relative overflow-hidden"
         >
           {hasRealImage ? (
@@ -129,9 +166,9 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
         <div className="flex-1 min-w-0 flex items-center justify-between gap-4">
           <div className="min-w-0">
             {manufacturer && (
-              <span className="text-xs text-gray-400 uppercase tracking-wide">{manufacturer.name}</span>
+              <span className="text-xs text-gray-500 uppercase tracking-wide">{manufacturer.name}</span>
             )}
-            <Link href={productHref}>
+            <Link href={productHref} onClick={handleSelect}>
               <h3 className="font-semibold text-gray-900 hover:text-primary-600 transition-colors truncate">
                 {product.name}
               </h3>
@@ -142,14 +179,14 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
           </div>
 
           <div className="flex items-center gap-3 flex-shrink-0">
-            {stockLoading ? (
+            {stockLoading && !displayPrice ? (
               <span className="inline-block h-5 w-24 bg-gray-200 rounded animate-pulse" />
             ) : displayPrice ? (
               <div className="text-right">
                 <p className="text-lg font-bold text-gray-900 whitespace-nowrap">
                   {displayPrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
                 </p>
-                <span className="text-xs text-gray-400">netto</span>
+                <span className="text-xs text-gray-500">netto</span>
               </div>
             ) : (
               <span className="text-sm text-gray-500">Cena na zapytanie</span>
@@ -181,21 +218,21 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
     return (
       <article className="card group overflow-hidden flex flex-col h-full">
         <Link href={productHref} className="p-3 flex flex-col flex-1">
-          <span className="text-[11px] text-gray-400 font-medium leading-tight">{series}</span>
+          <span className="text-[11px] text-gray-500 font-medium leading-tight">{series}</span>
           <span className="text-sm xs:text-base font-bold text-gray-900 mt-0.5 group-hover:text-primary-600 transition-colors">{dimension}</span>
           <span className="text-xs text-gray-500 mt-0.5">{qty}</span>
           <div className="flex items-center gap-1.5 mt-1.5">
             <span className={`w-1.5 h-1.5 rounded-full ${availDot[liveAvailability]}`} />
-            <span className="text-[11px] text-gray-400">{availability.label}</span>
+            <span className="text-[11px] text-gray-500">{availability.label}</span>
           </div>
         </Link>
         <div className="px-3 pb-3 flex items-center justify-between gap-2 mt-auto">
-          {stockLoading ? (
+          {stockLoading && !displayPrice ? (
             <span className="inline-block h-4 w-16 bg-gray-200 rounded animate-pulse" />
           ) : displayPrice ? (
             <span className="text-sm font-bold text-gray-900">
               {displayPrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-              <span className="text-xs font-normal text-gray-400 ml-0.5">zł</span>
+              <span className="text-xs font-normal text-gray-500 ml-0.5">zł</span>
             </span>
           ) : (
             <span className="text-xs text-gray-500">Na zapytanie</span>
@@ -226,15 +263,17 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   }
 
   // Grid variant (default)
+  // Cały kafel jest celem dotyku (stretched link na tytule), a przyciski leżą
+  // nad tą warstwą — bez tego 129 z 304 px wysokości karty nie reagowało.
   return (
-    <article className="card group overflow-hidden flex flex-col h-full">
+    <article className="card group overflow-hidden flex flex-col h-full relative">
       {/* Image */}
       <Link
         href={productHref}
         className="relative aspect-[4/3] bg-white flex items-center justify-center overflow-hidden"
       >
         {hasRealImage ? (
-          <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-3" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
+          <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-3" sizes="(max-width: 1024px) 45vw, 22vw" />
         ) : (
           <span className="text-gray-300 text-sm group-hover:text-primary-500 transition-colors">IMG</span>
         )}
@@ -245,11 +284,11 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
       <div className="p-2 sm:p-3 flex flex-col flex-1">
         <div className="flex-1">
           {manufacturer && (
-            <span className="text-[11px] text-gray-400 uppercase tracking-wide font-medium">
+            <span className="text-[11px] text-gray-500 uppercase tracking-wide font-medium">
               {manufacturer.name}
             </span>
           )}
-          <Link href={productHref}>
+          <Link href={productHref} onClick={handleSelect} className="after:absolute after:inset-0 after:content-['']">
             <h3 className="font-semibold text-xs sm:text-sm text-gray-900 hover:text-primary-600 transition-colors mt-0.5 line-clamp-2 leading-tight">
               {product.name}
             </h3>
@@ -260,8 +299,8 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
         </div>
 
         {/* Price & CTA */}
-        <div className="mt-3 pt-3 border-t border-gray-100">
-          {stockLoading ? (
+        <div className="mt-3 pt-3 border-t border-gray-100 relative z-10">
+          {stockLoading && !displayPrice ? (
             <div className="mb-2">
               <span className="inline-block h-5 w-24 bg-gray-200 rounded animate-pulse" />
             </div>
@@ -270,13 +309,14 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
               <span className="text-sm sm:text-lg font-bold text-gray-900">
                 {displayPrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
               </span>
-              <span className="text-[10px] sm:text-xs text-gray-400 ml-0.5 sm:ml-1">
+              <span className="text-xs text-gray-500 ml-0.5 sm:ml-1">
                 {product.subcategoryIds?.includes('karty-plastikowe')
                   ? 'netto/opak.'
                   : product.priceTiers
                     ? 'netto/szt.'
                     : product.categoryId === 'materialy-eksploatacyjne' ? 'netto/rolka' : 'netto'}
               </span>
+              {czasWysylki && <span className="block text-xs text-gray-500">{czasWysylki}</span>}
             </div>
           ) : (
             <div className="mb-2">

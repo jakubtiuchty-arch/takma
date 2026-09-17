@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import Link from 'next/link'
 import InfoTooltip from './InfoTooltip'
 
@@ -12,7 +13,7 @@ function BoldText({ text }: { text: string }) {
           // Bez forced color — dziedziczy kolor parent (działa na jasnym i ciemnym tle)
           return <strong key={i} className="font-semibold">{boldMatch[1]}</strong>
         }
-        return <span key={i}>{part}</span>
+        return <Fragment key={i}>{part}</Fragment>
       })}
     </>
   )

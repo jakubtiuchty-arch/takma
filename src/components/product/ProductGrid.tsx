@@ -1,17 +1,42 @@
 'use client'
 
 import { useState } from 'react'
-import { Product } from '@/data/products'
+import type { Product } from '@/data/products'
+
+/**
+ * Pola, których naprawdę używa kafel i filtry. Strony kategorii przekazują
+ * produkty do komponentu klienckiego, więc cały obiekt `Product` (z `faq`,
+ * `comparison` i długim opisem) jechał w payloadzie HTML — na stronie marki
+ * to było ~80 kB z 122 kB. Pełny `Product` nadal pasuje do tego typu.
+ */
+export type ProductCardData = Pick<
+  Product,
+  | 'id'
+  | 'name'
+  | 'slug'
+  | 'images'
+  | 'imageDescriptions'
+  | 'manufacturerId'
+  | 'categoryId'
+  | 'subcategoryIds'
+  | 'specifications'
+  | 'variants'
+  | 'priceFrom'
+  | 'priceTiers'
+  | 'availability'
+>
 import ProductCard from './ProductCard'
 import clsx from 'clsx'
 
 interface ProductGridProps {
-  products: Product[]
+  products: ProductCardData[]
   variant?: 'grid' | 'list' | 'compact'
   columns?: 2 | 3 | 4
   showDualButtons?: boolean
   /** Max products to show initially (rest behind "Pokaż więcej"). Reduces page size for SEO. */
   maxInitial?: number
+  /** Nazwa listy w GA4 — przekazywana do kafli (`select_item`). */
+  listName?: string
 }
 
 const LOAD_MORE_STEP = 48
@@ -22,6 +47,7 @@ export default function ProductGrid({
   columns = 4,
   showDualButtons = false,
   maxInitial,
+  listName,
 }: ProductGridProps) {
   // Bez `maxInitial` komponent NIE stronicuje — pokazuje dokładnie to, co dostał.
   // Wcześniej liczba widocznych kafli była stanem inicjalizowanym raz, z długości
@@ -67,7 +93,7 @@ export default function ProductGrid({
       <>
         <div className="space-y-4">
           {displayedProducts.map((product) => (
-            <ProductCard key={product.id} product={product} variant="list" />
+            <ProductCard key={product.id} product={product} variant="list" listName={listName} />
           ))}
         </div>
         {showMoreButton}
@@ -80,7 +106,7 @@ export default function ProductGrid({
       <>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
           {displayedProducts.map((product) => (
-            <ProductCard key={product.id} product={product} variant="compact" />
+            <ProductCard key={product.id} product={product} variant="compact" listName={listName} />
           ))}
         </div>
         {showMoreButton}
@@ -98,7 +124,7 @@ export default function ProductGrid({
     <>
       <div className={clsx('grid gap-4 sm:gap-6', gridCols[columns])}>
         {displayedProducts.map((product) => (
-          <ProductCard key={product.id} product={product} variant="grid" showDualButtons={showDualButtons} />
+          <ProductCard key={product.id} product={product} variant="grid" showDualButtons={showDualButtons} listName={listName} />
         ))}
       </div>
       {showMoreButton}

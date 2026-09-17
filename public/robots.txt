@@ -24,10 +24,15 @@ Allow: /
 User-agent: Google-CloudVertexBot
 Allow: /
 
-# Block AI training-only crawlers
+# Roboty AI, którym nie udostępniamy treści.
+# CCBot zbiera korpus treningowy Common Crawl — blokada nie odcina żadnej
+# wyszukiwarki ani asystenta, bo te pobierają strony własnymi robotami.
 User-agent: CCBot
 Disallow: /
 
+# Google-Extended obejmuje też grounding odpowiedzi w aplikacji Gemini i na
+# Vertex AI, nie tylko trening. AI Overviews i AI Mode w wyszukiwarce chodzą
+# na Googlebocie i tej reguły nie dotyczą.
 User-agent: Google-Extended
 Disallow: /
 

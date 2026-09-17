@@ -7,7 +7,6 @@ import Image from 'next/image'
 import { CloseIcon, TrashIcon, MinusIcon, PlusIcon, ArrowRightIcon } from '@/components/ui/Icons'
 import { Button } from '@/components/ui'
 import { useCartStore, type CartItem, type AppliedPromoCode } from '@/store/cartStore'
-import { products } from '@/data/products'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import { trackRemoveFromCart, trackViewCart } from '@/lib/ga-events'
 
@@ -18,10 +17,29 @@ function formatPrice(price: number): string {
   })
 }
 
+// Katalog ładujemy dopiero, gdy fallback jest naprawdę potrzebny — koszyk wisi
+// w layoucie każdej strony, a sam plik z produktami waży kilka megabajtów.
+type Katalog = typeof import('@/data/products')
+let katalogCache: Katalog | null = null
+let katalogWTrakcie: Promise<Katalog> | null = null
+
+function wczytajKatalog(): Promise<Katalog> {
+  if (katalogCache) return Promise.resolve(katalogCache)
+  if (!katalogWTrakcie) {
+    katalogWTrakcie = import('@/data/products').then((m) => {
+      katalogCache = m
+      return m
+    })
+  }
+  return katalogWTrakcie
+}
+
 /**
  * Statyczny fallback — szuka ceny w products.ts (używany gdy live API nie zwróci wyniku)
  */
 function findStaticPrice(productId: string | undefined): number | undefined {
+  const products = katalogCache?.products
+  if (!products) return undefined
   if (!productId) return undefined
   if (productId.includes('__onecare__')) return undefined
   if (productId.includes('__') && !productId.includes('__onecare__')) {
@@ -125,6 +143,17 @@ export default function RFQDrawer() {
 
   const { stockData, loading: priceLoading } = useStockData(cartPartNumbers)
 
+  // Fallback z katalogu przydaje się tylko wtedy, gdy pozycja nie ma ceny ani
+  // z API, ani zapisanej przy dodawaniu do koszyka. Wtedy dopiero dociągamy dane.
+  const [katalogGotowy, setKatalogGotowy] = useState(!!katalogCache)
+  useEffect(() => {
+    if (katalogGotowy || !isDrawerOpen) return
+    const brakCeny = items.some(
+      (item) => !item.priceNetto && !(item.partNumber && stockData.get(item.partNumber)?.price)
+    )
+    if (brakCeny) void wczytajKatalog().then(() => setKatalogGotowy(true))
+  }, [katalogGotowy, isDrawerOpen, items, stockData])
+
   // Oblicz ceny dla elementów w koszyku (live API > zapisane > static)
   const itemPrices = useMemo(() => {
     const prices = new Map<string, number | undefined>()
@@ -132,7 +161,8 @@ export default function RFQDrawer() {
       prices.set(item.productId, getItemPrice(item, stockData, promoCode))
     }
     return prices
-  }, [items, stockData, promoCode])
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- katalogGotowy przelicza ceny po dociągnięciu katalogu
+  }, [items, stockData, promoCode, katalogGotowy])
 
   // Suma netto (tylko elementy z ceną)
   const subtotalNetto = useMemo(() => {

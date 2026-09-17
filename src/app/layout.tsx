@@ -79,6 +79,18 @@ const organizationJsonLd = {
     addressLocality: 'Wrocław',
     addressCountry: 'PL',
   },
+  telephone: '+48607819688',
+  email: 'takma@takma.com.pl',
+  contactPoint: [
+    {
+      '@type': 'ContactPoint',
+      telephone: '+48607819688',
+      email: 'takma@takma.com.pl',
+      contactType: 'sales',
+      areaServed: 'PL',
+      availableLanguage: ['pl', 'en'],
+    },
+  ],
   taxID: '915-100-43-77',
   foundingDate: '2001',
   numberOfEmployees: { '@type': 'QuantitativeValue', value: 15 },

@@ -558,9 +558,20 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       ],
     },
     {
+      specKey: 'temperatura',
+      label: 'Temperatura pracy',
+      description: 'Najniższa temperatura, w której terminal pracuje zgodnie ze specyfikacją.\n• Standardowa — do -20°C; hala, magazyn, rampa\n• Mroźnia (do -30°C) — wersja Freezer: podgrzewany ekran i bateria odporna na zimno',
+      derived: [
+        // Tylko temperatura pracy — „Temperatura przechowywania" schodzi do -30°C
+        // w każdym terminalu i wrzucałaby całą listę do wyników mroźni.
+        { value: 'Mroźnia (do -30°C)', pattern: '-\\s?30\\s?°C|freezer|cold storage|mroźn', specs: ['Temp. pracy', 'Temperatura pracy'] },
+        { value: 'Standardowa', pattern: '-\\s?(1[0-9]|20)\\s?°C', specs: ['Temp. pracy', 'Temperatura pracy'] },
+      ],
+    },
+    {
       specKey: 'wifi',
       label: 'Wi-Fi',
-      description: 'Generacja sieci bezprzewodowej.\n• Wi-Fi 6/6E lub 7 — nowe wdrożenia, gęste magazyny, mniejsze opóźnienia\n• Wi-Fi 5 (ac) — wystarcza do skanowania i prostych aplikacji',
+      description: 'Generacja sieci bezprzewodowej. Model dostępny w kilku konfiguracjach pojawia się przy każdej, którą da się u nas zamówić.\n• Wi-Fi 6/6E lub 7 — nowe wdrożenia, gęste magazyny, mniejsze opóźnienia\n• Wi-Fi 5 (ac) — wystarcza do skanowania i prostych aplikacji',
       derived: [
         { value: 'Wi-Fi 6/6E lub 7', pattern: 'Wi-?Fi ?6|Wi-?Fi ?7|802\\.11 ?ax|802\\.11 ?be', specs: ['WLAN', 'Wi-Fi', 'Łączność'] },
         { value: 'Wi-Fi 5 (ac)', pattern: '802\\.11 ?a/b/g/n/ac(?!/ax)|802\\.11ac|Wi-?Fi ?5', specs: ['WLAN', 'Wi-Fi', 'Łączność'] },

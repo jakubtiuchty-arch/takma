@@ -10,6 +10,9 @@ if (typeof window !== 'undefined' && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
     api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://eu.i.posthog.com',
     capture_pageview: false, // manual pageview tracking below
     capture_pageleave: true,
+    // Nagrania sesji robi Clarity. Drugi rejestrator kosztował 76 ms TBT
+    // i 1,1 s do zdarzenia load, a dane i tak się dublowały.
+    disable_session_recording: true,
   })
 }
 

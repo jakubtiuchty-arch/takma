@@ -71,6 +71,11 @@ interface SubcategoryPageProps {
   slug: string
 }
 
+/** Tylko pierwsza litera w dół — nazwy własne w nazwie podkategorii mają zostać. */
+function odmienNazwe(name: string): string {
+  return name.charAt(0).toLowerCase() + name.slice(1)
+}
+
 export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
   const subcategory = getSubcategoryBySlug(slug)!
   const parentCategory = getCategoryById(subcategory.parentCategoryId)!
@@ -141,8 +146,8 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
   const howToJsonLd = content?.howToSteps?.length ? {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: `Jak wybrać i wdrożyć ${subcategory.name.toLowerCase()}`,
-    description: `Krok po kroku: wybór, konfiguracja i wdrożenie ${subcategory.name.toLowerCase()} w firmie.`,
+    name: `Jak wybrać i wdrożyć ${odmienNazwe(subcategory.name)}`,
+    description: `Krok po kroku: wybór, konfiguracja i wdrożenie ${odmienNazwe(subcategory.name)} w firmie.`,
     step: content.howToSteps.map((step, i) => ({
       '@type': 'HowToStep',
       position: i + 1,
@@ -358,7 +363,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
 
                 {content.howToSteps?.length > 0 && (
                   <section>
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Jak wybrać i wdrożyć {subcategory.name.toLowerCase()}?</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Jak wybrać i wdrożyć {odmienNazwe(subcategory.name)}?</h2>
                     <ol className="space-y-4">
                       {content.howToSteps.map((step, i) => (
                         <li key={i} className="flex gap-4">
@@ -597,7 +602,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
 
                   {content.howToSteps?.length > 0 && (
                     <section>
-                      <h2 className="text-2xl font-bold text-gray-900 mb-4">Jak wybrać i wdrożyć {subcategory.name.toLowerCase()}?</h2>
+                      <h2 className="text-2xl font-bold text-gray-900 mb-4">Jak wybrać i wdrożyć {odmienNazwe(subcategory.name)}?</h2>
                       <ol className="space-y-4">
                         {content.howToSteps.map((step, i) => (
                           <li key={i} className="flex gap-4">

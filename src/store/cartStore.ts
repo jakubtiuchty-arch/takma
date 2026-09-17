@@ -1,21 +1,43 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { tierPrice, type PriceTier } from '@/lib/price-tiers'
-import {
-  products,
-  getProductBySlug,
-  pickRibbonVariantForLabel,
-  parseLabelWidth,
-  parseLabelCore,
-  isThermalLabelProduct,
-  isTransferLabelProduct,
-  variantSizeSlug,
-  type Product,
-  type ProductVariant,
-} from '@/data/products'
-import { transferLabelSeries } from '@/data/transfer-label-series'
-import { getRibbonSeriesBySlug } from '@/data/transfer-ribbon-series'
+import type { Product, ProductVariant } from '@/data/products'
+
 import { ribbonNameToSlug } from '@/lib/ribbon-name-to-slug'
+
+/**
+ * Katalog na żądanie.
+ *
+ * Koszyk jest w layoucie każdej strony, a podpowiedzi cross-sell liczy tylko
+ * strona zamówienia. Statyczny import ciągnął cały `products.ts` (4 MB) do
+ * bundle'a wszystkich podstron, więc dane dociągamy dopiero, gdy któraś
+ * funkcja podpowiedzi naprawdę ich potrzebuje.
+ */
+type KatalogModul = typeof import('@/data/products')
+type SerieEtykiet = typeof import('@/data/transfer-label-series')
+type SerieTasm = typeof import('@/data/transfer-ribbon-series')
+
+let katalog: KatalogModul | null = null
+let serieEtykiet: SerieEtykiet | null = null
+let serieTasm: SerieTasm | null = null
+let ladowanie: Promise<void> | null = null
+
+function zaladujKatalog(poZaladowaniu?: () => void): void {
+  if (katalog) return
+  if (!ladowanie) {
+    ladowanie = Promise.all([
+      import('@/data/products'),
+      import('@/data/transfer-label-series'),
+      import('@/data/transfer-ribbon-series'),
+    ]).then(([k, se, st]) => {
+      katalog = k
+      serieEtykiet = se
+      serieTasm = st
+    })
+  }
+  if (poZaladowaniu) void ladowanie.then(poZaladowaniu)
+}
+
 
 /** Sugerowana taśma dopasowana do konkretnego wariantu etykiety w koszyku.
  *  Zwraca pełny wariant rozmiarowy (np. 110×450 mm/m) wybrany przez algorytm
@@ -134,6 +156,9 @@ interface CartStore {
   getVatAmount: () => number
   getTotalBrutto: () => number
 
+  /** Rośnie po doładowaniu katalogu — komponenty z podpowiedziami przeliczają się wtedy same. */
+  katalogWersja: number
+
   // Cross-sell
   getCrossSellProducts: (productId: string) => Product[]
   /** Konkretne warianty etykiet dobrane do drukarek w koszyku (termiczne vs TT). */
@@ -155,6 +180,7 @@ export const useCartStore = create<CartStore>()(
     (set, get) => ({
       items: [],
       isDrawerOpen: false,
+      katalogWersja: 0,
       promoCode: null,
 
       addItem: (product) => {
@@ -291,6 +317,14 @@ export const useCartStore = create<CartStore>()(
       // --- Cross-sell ---
 
       getCrossSellProducts: (productId: string): Product[] => {
+        if (!katalog || !serieEtykiet || !serieTasm) {
+          zaladujKatalog(() => set((st) => ({ katalogWersja: st.katalogWersja + 1 })))
+          return []
+        }
+        const { products, getProductBySlug, pickRibbonVariantForLabel, parseLabelWidth,
+          parseLabelCore, isThermalLabelProduct, isTransferLabelProduct, variantSizeSlug } = katalog
+        const { transferLabelSeries } = serieEtykiet
+        const { getRibbonSeriesBySlug } = serieTasm
         // Resolve slug for variant IDs (slug__partNumber)
         let resolvedId = productId
         if (productId.includes('__') && !productId.includes('__onecare__')) {
@@ -345,6 +379,14 @@ export const useCartStore = create<CartStore>()(
       // ── Sugestie etykiet dla drukarek w koszyku (konkretne warianty, nie serie) ──
 
       getLabelSuggestions: (): LabelSuggestion[] => {
+        if (!katalog || !serieEtykiet || !serieTasm) {
+          zaladujKatalog(() => set((st) => ({ katalogWersja: st.katalogWersja + 1 })))
+          return []
+        }
+        const { products, getProductBySlug, pickRibbonVariantForLabel, parseLabelWidth,
+          parseLabelCore, isThermalLabelProduct, isTransferLabelProduct, variantSizeSlug } = katalog
+        const { transferLabelSeries } = serieEtykiet
+        const { getRibbonSeriesBySlug } = serieTasm
         const items = get().items
         if (items.length === 0) return []
 
@@ -421,6 +463,14 @@ export const useCartStore = create<CartStore>()(
       // ── Sugestie taśm dla etykiet w koszyku (z konkretnym wariantem rozmiaru) ──
 
       getRibbonSuggestions: (): RibbonSuggestion[] => {
+        if (!katalog || !serieEtykiet || !serieTasm) {
+          zaladujKatalog(() => set((st) => ({ katalogWersja: st.katalogWersja + 1 })))
+          return []
+        }
+        const { products, getProductBySlug, pickRibbonVariantForLabel, parseLabelWidth,
+          parseLabelCore, isThermalLabelProduct, isTransferLabelProduct, variantSizeSlug } = katalog
+        const { transferLabelSeries } = serieEtykiet
+        const { getRibbonSeriesBySlug } = serieTasm
         const items = get().items
         if (items.length === 0) return []
 

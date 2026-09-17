@@ -19,6 +19,11 @@ interface CategoryPageProps {
   slug: string
 }
 
+/** Tylko pierwsza litera w dół — „Drukarki etykiet Zebra" nie może stać się „drukarki etykiet zebra". */
+function odmienNazwe(name: string): string {
+  return name.charAt(0).toLowerCase() + name.slice(1)
+}
+
 export default function CategoryPage({ slug }: CategoryPageProps) {
   const category = getCategoryById(slug)!
   const products = getProductsByCategory(category.id)
@@ -42,8 +47,8 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
   const howToJsonLd = content?.howToSteps?.length ? {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: `Jak wybrać i wdrożyć ${category.name.toLowerCase()}`,
-    description: `Krok po kroku: wybór, konfiguracja i wdrożenie ${category.name.toLowerCase()} w firmie.`,
+    name: `Jak wybrać i wdrożyć ${odmienNazwe(category.name)}`,
+    description: `Krok po kroku: wybór, konfiguracja i wdrożenie ${odmienNazwe(category.name)} w firmie.`,
     step: content.howToSteps.map((step, i) => ({
       '@type': 'HowToStep',
       position: i + 1,
@@ -237,7 +242,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
                 {/* HowTo Steps */}
                 {content.howToSteps?.length > 0 && (
                   <section>
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.sectionHeadings?.howToSteps || `Jak wybrać i wdrożyć ${category.name.toLowerCase()}?`}</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.sectionHeadings?.howToSteps || `Jak wybrać i wdrożyć ${odmienNazwe(category.name)}?`}</h2>
                     <ol className="space-y-4">
                       {content.howToSteps.map((step, i) => (
                         <li key={i} className="flex gap-4">

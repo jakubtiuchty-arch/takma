@@ -9,11 +9,15 @@ export interface SubcategoryFAQ {
 export interface SubcategoryUseCase {
   title: string
   description: string
+  /** Nazwa pliku ikony z `public/icons/line/` (bez rozszerzenia). */
+  icon?: string
 }
 
 export interface SubcategoryComparison {
   title: string
   content: string
+  /** Jedno zdanie werdyktu — szablon stawia je nad treścią porównania. */
+  verdict?: string
 }
 
 export interface HowToStep {
@@ -25,6 +29,21 @@ export interface TcoComparison {
   title: string
   variants: { label: string; items: { name: string; cost: string }[]; total: string }[]
   conclusion?: string
+}
+
+/** Jeden model w zestawieniu porównawczym na stronie marki. */
+export interface ModelRow {
+  name: string
+  href: string
+  /** Krótka rola modelu, np. „flagowy, z AI" */
+  role: string
+  priceFrom: string
+  /** Ceny konfiguracji, np. „SE5500 4 609 zł · SE5800 5 148 zł" */
+  priceVariants?: string
+  specs: { label: string; value: string }[]
+  bestFor: string
+  /** Nazwa pliku ikony z `public/icons/line/` (bez rozszerzenia). */
+  icon?: string
 }
 
 export interface SubcategoryRichContent {
@@ -45,8 +64,14 @@ export interface SubcategoryRichContent {
   buyingGuide: { heading: string; items: string[] }
   expertAuthority: string
   technicalDeepDive: string
+  /**
+   * Zestawienie modeli w formie kart z etykietowanymi polami. Gdy jest wypełnione,
+   * szablon rysuje je zamiast parsowania zdania z `technicalDeepDive` — wtedy tekst
+   * nad tabelą zostaje, a same dane są czytelne i nie rozjeżdżają się na telefonie.
+   */
+  modelTable?: ModelRow[]
   useCases: SubcategoryUseCase[]
-  uniqueInsights: { heading: string; items: { title: string; text: string }[] }
+  uniqueInsights: { heading: string; items: { title: string; text: string; icon?: string }[] }
   faq: SubcategoryFAQ[]
   comparisons: SubcategoryComparison[]
   howToSteps: HowToStep[]

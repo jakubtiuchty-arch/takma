@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    // avif jest ~3× lżejszy od webp na naszych zdjęciach produktowych
+    formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -22,7 +24,7 @@ const nextConfig = {
           { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
           { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
           { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
-          { key: 'Content-Security-Policy', value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://lib.onet.pl https://*.posthog.com https://va.vercel-scripts.com https://challenges.cloudflare.com https://www.googletagmanager.com https://analytics.ahrefs.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.supabase.co https://*.posthog.com https://challenges.cloudflare.com https://va.vercel-scripts.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://analytics.ahrefs.com; frame-src https://challenges.cloudflare.com https://play.vidyard.com https://www.google.com https://www.youtube-nocookie.com https://www.youtube.com; media-src 'self' https://*.public.blob.vercel-storage.com; object-src 'none'; base-uri 'self'" },
+          { key: 'Content-Security-Policy', value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.clarity.ms https://*.clarity.ms https://lib.onet.pl https://*.onet.pl https://*.posthog.com https://va.vercel-scripts.com https://challenges.cloudflare.com https://www.googletagmanager.com https://analytics.ahrefs.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.clarity.ms https://*.onet.pl https://*.ocdn.eu https://stats.g.doubleclick.net https://*.supabase.co https://*.posthog.com https://challenges.cloudflare.com https://va.vercel-scripts.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://analytics.ahrefs.com; frame-src https://challenges.cloudflare.com https://play.vidyard.com https://www.google.com https://www.youtube-nocookie.com https://www.youtube.com; media-src 'self' https://*.public.blob.vercel-storage.com; object-src 'none'; base-uri 'self'" },
           { key: 'X-Permitted-Cross-Domain-Policies', value: 'none' },
         ],
       },
@@ -192,7 +194,7 @@ const nextConfig = {
       // =====================================================
 
       // Strony kategorii/producenta → istniejące odpowiedniki
-      { source: '/m3-mobile', destination: '/terminale-mobilne', permanent: true },
+      { source: '/m3-mobile', destination: '/terminale-m3-mobile', permanent: true },
       { source: '/datalogic', destination: '/terminale-datalogic', permanent: true },
       { source: '/citizen', destination: '/drukarki-etykiet-citizen', permanent: true },
       { source: '/brother', destination: '/drukarki-etykiet-brother', permanent: true },

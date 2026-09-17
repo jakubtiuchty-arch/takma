@@ -67,9 +67,9 @@ export default function Footer() {
 
       {/* Duży napis TAKMA w tle */}
       <div className="absolute left-0 right-0 bottom-0 flex items-end justify-center pointer-events-none" style={{ transform: 'translateY(20%)' }}>
-        <h2 className="w-full text-center font-black tracking-[-0.05em] whitespace-nowrap leading-none bg-gradient-to-t from-white/[0.07] via-white/[0.02] to-transparent bg-clip-text text-transparent select-none" style={{ fontSize: 'min(25vw, 22rem)' }}>
+        <span aria-hidden="true" className="block w-full text-center font-black tracking-[-0.05em] whitespace-nowrap leading-none bg-gradient-to-t from-white/[0.07] via-white/[0.02] to-transparent bg-clip-text text-transparent select-none" style={{ fontSize: 'min(25vw, 22rem)' }}>
           TAKMA
-        </h2>
+        </span>
       </div>
 
       {/* Main content */}
