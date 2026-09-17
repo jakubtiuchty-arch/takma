@@ -432,8 +432,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
-            {/* KC401 wykluczony do premiery 17.09.2026 (embargo) — Google rankował home zamiast wpisu na frazę "zebra kc401" */}
-            {[...guides].filter(g => g.slug !== 'zebra-kc401-kiosk-samoobslugowy').sort((a, b) => b.publishedAt.localeCompare(a.publishedAt)).slice(0, 4).map((guide, i) => (
+            {[...guides].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt)).slice(0, 4).map((guide, i) => (
               <Link
                 key={guide.slug}
                 href={`/poradnik/${guide.slug}`}
@@ -487,7 +486,7 @@ export default function HomePage() {
               href="/poradnik"
               className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-primary-700 bg-primary-50 hover:bg-primary-100 border border-primary-200 rounded-xl transition-colors"
             >
-              Zobacz wszystkie poradniki ({guides.filter(g => g.slug !== 'zebra-kc401-kiosk-samoobslugowy').length})
+              Zobacz wszystkie poradniki ({guides.length})
               <ArrowRightIcon size={16} />
             </Link>
           </div>
