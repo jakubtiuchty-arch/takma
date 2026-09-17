@@ -1,6 +1,7 @@
 import { ChevronRightIcon } from '@/components/ui/Icons'
 
-const serviceLinks: Record<string, { label: string; url: string; alt: string; subtitle: string }> = {
+/** Adresy i opisy serwisu Zebry per kategoria — używane też przez baner na dole karty produktu. */
+export const serviceLinks: Record<string, { label: string; url: string; alt: string; subtitle: string }> = {
   'drukarki-etykiet': {
     label: 'Serwis drukarek Zebra',
     url: 'https://www.serwis-zebry.pl/serwis-drukarek-zebra',

@@ -44,6 +44,7 @@ import SmartPrice from './SmartPrice'
 import { BundleContents } from './BundleBox'
 import BundleBanner from './BundleBanner'
 import ServiceBanner from './ServiceBanner'
+import { serviceLinks } from '@/components/ui/ServiceBanner'
 import PromoBanner from './PromoBanner'
 import PriceIncreaseNotice from './PriceIncreaseNotice'
 import { priceIncreaseFor } from '@/data/price-increase'
@@ -1543,34 +1544,6 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {/* FAQ i pliki: przy faq-last renderowane fizycznie na końcu (czytnik ekranu i klawiatura = kolejność wizualna) */}
             {!faqLast && faqAndFilesJsx}
 
-            {/* Serwis gwarancyjny — urządzenia Zebra + akcesoria serwisowe (głowice, wałki, obcinaki, odklejaki) */}
-            {product.manufacturerId === 'zebra' && (product.variants?.length || /głowic|wałek|wałk|obcinak|odklejak|cutter|dispenser|platen|printhead/i.test(product.name)) && (
-              <section>
-                <a
-                  href={product.categoryId === 'terminale-mobilne' ? 'https://www.serwis-zebry.pl/serwis-terminali-zebra' : product.categoryId === 'skanery-kodow-kreskowych' ? 'https://www.serwis-zebry.pl/serwis-skanerow-zebra' : product.categoryId === 'tablety-przemyslowe' ? 'https://www.serwis-zebry.pl/serwis-tabletow-zebra' : 'https://www.serwis-zebry.pl/serwis-drukarek-zebra'}
-                  target="_blank"
-                  rel="noopener"
-                  className="block relative rounded-xl overflow-hidden hover:shadow-lg transition-all group bg-gray-900 min-h-[160px]"
-                >
-                  <img
-                    src="/images/serwis-zebry-banner.jpg"
-                    alt={product.categoryId === 'terminale-mobilne' ? 'Serwis-Zebry.pl — autoryzowany serwis terminali Zebra' : product.categoryId === 'skanery-kodow-kreskowych' ? 'Serwis-Zebry.pl — autoryzowany serwis skanerów Zebra' : product.categoryId === 'tablety-przemyslowe' ? 'Serwis-Zebry.pl — autoryzowany serwis tabletów Zebra' : 'Serwis-Zebry.pl — autoryzowany serwis drukarek Zebra'}
-                    className="absolute inset-0 w-full h-full object-cover object-[65%_28%]"
-                  />
-                  <div className="relative h-full flex items-center justify-between p-6">
-                    <div>
-                      <p className="text-xs text-primary-400 font-semibold uppercase tracking-wide mb-1">Serwis-Zebry.pl</p>
-                      <h3 className="text-lg font-bold text-white mb-1">Autoryzowany serwis gwarancyjny i pogwarancyjny</h3>
-                      <p className="text-sm text-gray-300">
-                        Instrukcje po polsku, sterowniki, diagnostyka AI 24/7, naprawa z odbiorem kurierem
-                      </p>
-                    </div>
-                    <ChevronRightIcon size={24} className="text-gray-400 group-hover:text-primary-400 transition-colors flex-shrink-0 ml-4" />
-                  </div>
-                </a>
-              </section>
-            )}
-
             {/* Etykiety — dobór wg technologii i szerokości głowicy:
                 a) drukarka DT (termiczna, w tym mobilne) → PrinterCompatibleLabels — etykiety
                    termiczne filtrowane do szerokości głowicy (live cena/dostępność)
@@ -1698,10 +1671,35 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
             {faqLast && faqAndFilesJsx}
 
-            {/* Baner serwisowy marki na samym końcu karty (marki z bannerImage; pozostałe mają boks wyżej) */}
+            {/* Baner serwisowy na samym końcu karty: marki z własną grafiką (bannerImage) oraz Zebra,
+                której serwis prowadzimy pod serwis-zebry.pl. Pozostałe marki mają boks wyżej. */}
             {(() => {
               const sb = getServiceBrandBySlug(product.manufacturerId)
-              return sb?.bannerImage ? <ServiceBanner brandName={sb.name} brandSlug={sb.slug} image={sb.bannerImage} /> : null
+              if (sb?.bannerImage) return <ServiceBanner brandName={sb.name} brandSlug={sb.slug} image={sb.bannerImage} />
+
+              // Zebra: urządzenia z wariantami oraz części serwisowe (głowice, wałki, obcinaki, odklejaki)
+              // części serwisowe stoją w kategoriach materiałów i akcesoriów, więc bez wpisu w mapie
+              // — dla nich zostaje serwis drukarek
+              const zebraSerwis = product.manufacturerId === 'zebra'
+                && (product.variants?.length || /głowic|wałek|wałk|obcinak|odklejak|cutter|dispenser|platen|printhead/i.test(product.name))
+                ? serviceLinks[product.categoryId] ?? serviceLinks['drukarki-etykiet']
+                : undefined
+              if (!zebraSerwis) return null
+
+              // Drukarki kart mają własną grafikę z ZC100; reszta kategorii zdjęcie warsztatu w tle
+              const kartowa = product.categoryId === 'drukarki-kart'
+              return (
+                <ServiceBanner
+                  brandName="Zebry"
+                  image={kartowa ? '/images/serwis-banner/zebra-zc-banner.webp' : '/images/serwis-zebry-banner.jpg'}
+                  imageFit={kartowa ? 'contain' : 'cover'}
+                  imageAlt={zebraSerwis.alt}
+                  href={zebraSerwis.url}
+                  eyebrow="Serwis-Zebry.pl"
+                  lead={zebraSerwis.subtitle}
+                  cta={zebraSerwis.label}
+                />
+              )
             })()}
           </div>
         </div>

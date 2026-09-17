@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Product, products } from '@/data/products'
+import { Product } from '@/data/products'
 import BundleAddButton from './BundleAddButton'
+import { resolveItems } from './BundleBox'
 
 const fmt = (v: number) => v.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
 const fmtInt = (v: number) => Math.round(v).toLocaleString('pl-PL')
@@ -12,8 +13,8 @@ function unitLabel(p: Product, qty: number) {
 }
 
 /** Krótka nazwa składnika w banerze: bez PN-u w nawiasie i bez pauzy z liczbą wydruków. */
-function shortName(p: Product) {
-  return p.name.replace(/\s*\([^)]*\)\s*$/, '').replace(/ — /, ', ')
+function shortName(name: string) {
+  return name.replace(/\s*\([^)]*\)\s*$/, '').replace(/ — /, ', ')
 }
 
 /**
@@ -21,14 +22,9 @@ function shortName(p: Product) {
  * Obraz z Higgsfield (produkty 1:1 z renderów), cały tekst w HTML. Jeden przycisk: zestaw do koszyka.
  */
 export default function BundleBanner({ bundle, image, compact }: { bundle: Product; image: string; compact?: boolean }) {
-  const items = (bundle.bundleItems ?? [])
-    .map((i) => {
-      const p = products.find((x) => x.id === i.productId)
-      return p ? { product: p, quantity: i.quantity } : null
-    })
-    .filter((x): x is { product: Product; quantity: number } => x !== null)
+  const items = resolveItems(bundle)
   if (!items.length || !bundle.priceFrom) return null
-  const separately = items.reduce((s, i) => s + (i.product.priceFrom ?? 0) * i.quantity, 0)
+  const separately = items.reduce((s, i) => s + i.price * i.quantity, 0)
   const saving = separately - bundle.priceFrom
   const pn = bundle.specifications.find((s) => s.name === 'Part Number')?.value
   // Liczby w zdaniu pod nagłówkiem biorą się ze składników zestawu, nie z kodu:
@@ -57,18 +53,27 @@ export default function BundleBanner({ bundle, image, compact }: { bundle: Produ
               Drukuj od pierwszego dnia
             </h2>
             <p className="mt-1.5 text-sm text-gray-700">
-              {items.map(({ product, quantity }, i) => (
+              {items.map(({ product, quantity, label }, i) => (
                 <span key={product.id}>
                   {i > 0 && <span className="mx-1.5 text-gray-300">·</span>}
                   <Link href={`/produkt/${product.slug}`} className="hover:text-blue-700 hover:underline underline-offset-2">
-                    {shortName(product)}
+                    {shortName(label)}
                   </Link>
                   {product.subcategoryIds?.includes('karty-plastikowe') && quantity === 1 ? '' : quantity > 1 ? ` ×${quantity}` : ''}
                 </span>
               ))}
+              {(bundle.bundleExtras ?? []).map((extra) => (
+                <span key={extra}>
+                  <span className="mx-1.5 text-gray-300">·</span>
+                  {extra}
+                </span>
+              ))}
             </p>
             <p className="mt-1 text-xs text-gray-500">
-              Drukarka jest sprzedawana bez taśmy i kart.{ribbonPrints ? ` Taśma wystarcza na ${fmtInt(ribbonPrints)} stron w kolorze.` : ''}
+              {bundle.bundleFactory
+                ? 'Komplet Zebry pod jednym numerem katalogowym.'
+                : 'Drukarka jest sprzedawana bez taśmy i kart.'}
+              {ribbonPrints ? ` Taśma wystarcza na ${fmtInt(ribbonPrints)} stron w kolorze.` : ''}
             </p>
           </div>
           <div className="flex flex-col gap-2 border-t border-slate-100 px-5 py-4 sm:px-6 md:border-t-0 md:border-l md:items-end md:text-right">
@@ -108,18 +113,24 @@ export default function BundleBanner({ bundle, image, compact }: { bundle: Produ
             Drukuj od pierwszego dnia
           </h2>
           <p className="mt-2 text-sm text-gray-600">
-            Drukarka jest sprzedawana bez taśmy i kart.
+            {bundle.bundleFactory ? 'Komplet Zebry pod jednym numerem katalogowym.' : 'Drukarka jest sprzedawana bez taśmy i kart.'}
             {ribbonPrints ? ` Zestaw zawiera taśmę na ${fmtInt(ribbonPrints)} stron w kolorze${isDuplex ? `, czyli do ${fmtInt(ribbonPrints / 2)} kart z nadrukiem po obu stronach` : ''}` : ''}
             {ribbonPrints && cardsCount ? ` i opakowanie ${fmtInt(cardsCount * 100)} kart.` : ribbonPrints ? '.' : ''}
           </p>
 
           <ul className="mt-4 border-y border-slate-100 divide-y divide-slate-100 text-sm">
-            {items.map(({ product, quantity }) => (
+            {items.map(({ product, quantity, label }) => (
               <li key={product.id} className="flex items-baseline justify-between gap-4 py-2 min-w-0">
                 <Link href={`/produkt/${product.slug}`} className="min-w-0 text-gray-900 hover:text-blue-700">
-                  {shortName(product)}
+                  {shortName(label)}
                 </Link>
                 <span className="shrink-0 text-gray-500 tabular-nums">{unitLabel(product, quantity)}</span>
+              </li>
+            ))}
+            {(bundle.bundleExtras ?? []).map((extra) => (
+              <li key={extra} className="flex items-baseline justify-between gap-4 py-2 min-w-0">
+                <span className="min-w-0 text-gray-900">{extra}</span>
+                <span className="shrink-0 text-gray-500">w pudełku</span>
               </li>
             ))}
           </ul>

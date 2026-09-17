@@ -269,9 +269,6 @@ export const guides: Guide[] = [
     { title: 'Jak wybrać terminal mobilny', href: '/poradnik/jak-wybrac-terminal-mobilny' },
   ],
 },
-// ============================================================
-// Magicard w ofercie TAKMA — wdrożenie marki 04.09.2026
-// ============================================================
 {
   slug: 'magicard-w-ofercie-takma',
   title: 'Wprowadziliśmy Magicard do oferty. Trzy drukarki kart, które warto znać',
@@ -2469,7 +2466,7 @@ export const guides: Guide[] = [
     {
       id: 'definicja',
       heading: 'Co to jest terminal mobilny?',
-      content: `<p><strong>W skrócie:</strong> Terminal mobilny (kolektor danych) to wzmocniony komputer przenośny ze zintegrowanym skanerem kodów kreskowych, stworzony do pracy w magazynach, produkcji i logistyce. W 2026 roku ceny zaczynają się od 2 000 zł (M3 Mobile SL20+) do 7 638 zł (Zebra MC9400). Kluczowe kryteria wyboru: klasa IP, wytrzymałość na upadki, typ skanera, łączność i długość wsparcia Android.</p>
+      content: `<p><strong>W skrócie:</strong> Terminal mobilny (kolektor danych) to wzmocniony komputer przenośny ze zintegrowanym skanerem kodów kreskowych, stworzony do pracy w magazynach, produkcji i logistyce. W 2026 roku ceny zaczynają się od 2 000 zł (M3 Mobile SL20+) do 8 482 zł (Zebra MC9400). Kluczowe kryteria wyboru: klasa IP, wytrzymałość na upadki, typ skanera, łączność i długość wsparcia Android.</p>
 
 <p>Terminal mobilny — nazywany również <strong>kolektorem danych</strong>, terminalem magazynowym, przenośnym komputerem przemysłowym (ang. handheld mobile computer, PDA) — to specjalistyczne urządzenie wyposażone w zintegrowany skaner kodów kreskowych, system operacyjny Android, ekran dotykowy, moduł łączności bezprzewodowej (Wi-Fi, Bluetooth, opcjonalnie LTE/5G) oraz baterię zapewniającą co najmniej jedną pełną zmianę roboczą. W odróżnieniu od zwykłego smartfona, terminal mobilny jest projektowany do pracy w wymagających warunkach — ma wzmocnioną obudowę (klasa <a href="https://pl.wikipedia.org/wiki/Stopie%C5%84_ochrony_IP" target="_blank" rel="noopener">IP65–IP68</a>), wytrzymuje upadki na beton z wysokości 1,2–3,0 m zgodnie ze standardem <a href="https://en.wikipedia.org/wiki/MIL-STD-810" target="_blank" rel="noopener">MIL-STD-810H</a> i pracuje w temperaturach od −20°C do +50°C.</p>
 
@@ -2625,7 +2622,7 @@ export const guides: Guide[] = [
       content: `<p>Na polskim rynku terminali mobilnych (kolektorów danych) dominuje pięć marek: Zebra Technologies (~45%), Honeywell (~25%), Datalogic (~10%), Newland (~8%) i M3 Mobile (~5%). Poniżej porównujemy ich mocne strony, ekosystemy i optymalne segmenty zastosowań.</p>
 
 <h3>Zebra Technologies — lider rynku</h3>
-<p>Udział w rynku: ~45% globalnie, ~50% w Polsce. Najszersze portfolio (od entry-level TC22 za 2 417 zł po ultra-rugged MC9400 za 7 638 zł), najdłuższe wsparcie Androida (do 10 lat LifeGuard), najlepszy ekosystem MDM (StageNow, Mobility DNA). Unikalna przewaga: Mobility DNA — zestaw narzędzi (DataWedge, StageNow, WorryFree WiFi, PowerPrecision+) które obniżają TCO i upraszczają wdrożenie. Zebra jest najdroższa w zakupie, ale ma najniższe TCO na przestrzeni 5 lat. TAKMA jest autoryzowanym partnerem Zebra Technologies w Polsce i prowadzi serwis urządzeń Zebra pod marką <a href="https://www.serwis-zebry.pl" target="_blank" rel="noopener">serwis-zebry.pl</a>.</p>
+<p>Udział w rynku: ~45% globalnie, ~50% w Polsce. Najszersze portfolio (od entry-level TC22 za 2 417 zł po ultra-rugged MC9400 za 8 482 zł), najdłuższe wsparcie Androida (do 10 lat LifeGuard), najlepszy ekosystem MDM (StageNow, Mobility DNA). Unikalna przewaga: Mobility DNA — zestaw narzędzi (DataWedge, StageNow, WorryFree WiFi, PowerPrecision+) które obniżają TCO i upraszczają wdrożenie. Zebra jest najdroższa w zakupie, ale ma najniższe TCO na przestrzeni 5 lat. TAKMA jest autoryzowanym partnerem Zebra Technologies w Polsce i prowadzi serwis urządzeń Zebra pod marką <a href="https://www.serwis-zebry.pl" target="_blank" rel="noopener">serwis-zebry.pl</a>.</p>
 
 <h3>Honeywell — solidna alternatywa</h3>
 <p>Udział: ~25%. Silna pozycja w logistyce i produkcji. Modele CT32 (entry-level, ~2 800 zł) i CT47 (mid-range, ~7 000 zł) konkurują cenowo z Zebrą. CK67 z 5 wariantami klawiatury to najlepszy wybór „z klawiaturą" na rynku. Dobre wsparcie Sentinel (5–7 lat patchy), solidny ekosystem MDM. Honeywell ma silne kanały dystrybucji w Polsce i dobrą dostępność serwisową.</p>
@@ -2706,7 +2703,7 @@ export const guides: Guide[] = [
     {
       id: 'segmenty',
       heading: 'Polecane terminale mobilne wg segmentu zastosowań',
-      content: `<p>Ranking terminali mobilnych (kolektorów danych) 2026: na podstawie ponad 500 wdrożeń realizowanych przez TAKMA w polskich firmach opracowaliśmy rekomendacje dla 6 najczęstszych scenariuszy. Ceny kolektorów danych: od 2 000 zł (M3 Mobile SL20+, retail) do 7 638 zł (Zebra MC9400, ultra-rugged). Każda rekomendacja uwzględnia stosunek ceny do wydajności w danym segmencie — TOP modele z cenami netto.</p>
+      content: `<p>Ranking terminali mobilnych (kolektorów danych) 2026: na podstawie ponad 500 wdrożeń realizowanych przez TAKMA w polskich firmach opracowaliśmy rekomendacje dla 6 najczęstszych scenariuszy. Ceny kolektorów danych: od 2 000 zł (M3 Mobile SL20+, retail) do 8 482 zł (Zebra MC9400, ultra-rugged). Każda rekomendacja uwzględnia stosunek ceny do wydajności w danym segmencie — TOP modele z cenami netto.</p>
 
 <h3>Entry-level — retail, lekki magazyn, inwentaryzacja</h3>
 <p>Budżet: 2 000–3 200 zł/szt. Wymagania: IP65+, drop 1,2–1,5 m, Wi-Fi, BT, skaner SR, bateria 8h+.</p>
@@ -2733,7 +2730,7 @@ export const guides: Guide[] = [
   </thead>
   <tbody>
     <tr><td>Datalogic Memor 35</td><td>6" FHD+</td><td>313 g</td><td>IP65/68 / 1,8 m</td><td>~5 200 zł</td></tr>
-    <tr><td>Zebra TC53</td><td>6" FHD+</td><td>301 g</td><td>IP68 / 2,4 m</td><td>6 418 zł</td></tr>
+    <tr><td>Zebra TC53</td><td>6" FHD+</td><td>301 g</td><td>IP68 / 2,4 m</td><td>6 999 zł</td></tr>
     <tr><td>Honeywell CT47</td><td>5,5" FHD</td><td>314 g</td><td>IP65/68 / 2,45 m</td><td>~7 000 zł</td></tr>
   </tbody>
 </table>
@@ -2747,7 +2744,7 @@ export const guides: Guide[] = [
   </thead>
   <tbody>
     <tr><td>M3 Mobile UL20</td><td>numeryczna/alfanum.</td><td>530 g</td><td>IP67 / 2,0 m</td><td>~3 400 zł</td></tr>
-    <tr><td>Zebra MC3400</td><td>29/47-key</td><td>490 g</td><td>IP64 / 1,8 m</td><td>4 561 zł</td></tr>
+    <tr><td>Zebra MC3400</td><td>29/47-key</td><td>490 g</td><td>IP64 / 1,8 m</td><td>4 637 zł</td></tr>
     <tr><td>Honeywell CK67</td><td>5 wariantów</td><td>516 g</td><td>IP65 / 2,4 m</td><td>~7 200 zł</td></tr>
     <tr><td>M3 Mobile UL30</td><td>numeryczna/alfanum.</td><td>~530 g</td><td>IP67 / 3,0 m</td><td>~b.d. (nowość 2025)</td></tr>
   </tbody>
@@ -2762,7 +2759,7 @@ export const guides: Guide[] = [
   </thead>
   <tbody>
     <tr><td>Datalogic Skorpio X5</td><td>IP65 / 1,8 m</td><td>3 500 mAh</td><td>do 15 m</td><td>~4 500 zł</td></tr>
-    <tr><td>Zebra MC9400</td><td>IP67 / 3,0 m</td><td>5 200 mAh</td><td>SE58 FlexRange</td><td>7 638 zł</td></tr>
+    <tr><td>Zebra MC9400</td><td>IP67 / 3,0 m</td><td>5 200 mAh</td><td>SE58 FlexRange</td><td>8 482 zł</td></tr>
     <tr><td>Honeywell CK67</td><td>IP65 / 2,4 m</td><td>7 000 mAh</td><td>FlexRange</td><td>~7 200 zł</td></tr>
   </tbody>
 </table>
@@ -2791,7 +2788,7 @@ export const guides: Guide[] = [
   </thead>
   <tbody>
     <tr><td>Zebra EM45</td><td>do 5 m</td><td>100+</td><td>Brick ze zintegrowaną anteną</td><td>2 951 zł</td></tr>
-    <tr><td>Zebra TC501</td><td>do 6 m</td><td>200+</td><td>Brick premium</td><td>6 541 zł</td></tr>
+    <tr><td>Zebra TC501</td><td>do 6 m</td><td>200+</td><td>Brick premium</td><td>6 319 zł</td></tr>
   </tbody>
 </table>
 <p><strong>Nasza rekomendacja:</strong> Zebra EM45 dla podstawowej inwentaryzacji RFID. Zebra TC501 dla zaawansowanych wdrożeń (retail asset tracking, zarządzanie narzędziami, healthcare). Zebra dominuje segment RFID handheld — brak realnej konkurencji w tej klasie cenowej.</p>`
@@ -2871,7 +2868,7 @@ export const guides: Guide[] = [
     {
       id: 'podsumowanie',
       heading: 'Podsumowanie — który terminal mobilny wybrać?',
-      content: `<p>Wybór terminala mobilnego (kolektora danych) zależy od trzech głównych czynników: <strong>budżetu</strong> (od 2 000 zł entry-level do 7 638 zł ultra-rugged), <strong>środowiska pracy</strong> (IP65 magazyn, IP67 chłodnia, IP68 outdoor) i <strong>skali floty</strong> (Zebra przy 20+ szt. dla najniższego TCO, M3/Newland przy &lt;10 szt. dla najniższej ceny zakupu). Oto nasze finalne rekomendacje:</p>
+      content: `<p>Wybór terminala mobilnego (kolektora danych) zależy od trzech głównych czynników: <strong>budżetu</strong> (od 2 000 zł entry-level do 8 482 zł ultra-rugged), <strong>środowiska pracy</strong> (IP65 magazyn, IP67 chłodnia, IP68 outdoor) i <strong>skali floty</strong> (Zebra przy 20+ szt. dla najniższego TCO, M3/Newland przy &lt;10 szt. dla najniższej ceny zakupu). Oto nasze finalne rekomendacje:</p>
 
 <h3>Szybka ściągawka decyzyjna</h3>
 <table style="width:100%">
@@ -2899,11 +2896,11 @@ export const guides: Guide[] = [
   faq: [
     {
       question: 'Co to jest terminal mobilny (kolektor danych)?',
-      answer: 'Terminal mobilny (kolektor danych) to wzmocniony komputer przenośny ze zintegrowanym skanerem kodów kreskowych, systemem Android, ekranem dotykowym i łącznością Wi-Fi/Bluetooth/LTE, zaprojektowany do pracy w magazynach, produkcji i logistyce. Ma obudowę IP65–IP68 odporną na pył, wodę i upadki na beton z 1,2–3,0 m. Ceny w Polsce w 2026 roku: od 2 000 zł (M3 Mobile SL20+) do 7 638 zł (Zebra MC9400, ultra-rugged). Dominujące marki: Zebra Technologies (~45% rynku), Honeywell (~25%), Datalogic (~10%), Newland (~8%), M3 Mobile (~5%). TAKMA jest autoryzowanym partnerem terminali mobilnych w Polsce od 2001 roku — doradzamy w doborze na podstawie ponad 500 wdrożeń.'
+      answer: 'Terminal mobilny (kolektor danych) to wzmocniony komputer przenośny ze zintegrowanym skanerem kodów kreskowych, systemem Android, ekranem dotykowym i łącznością Wi-Fi/Bluetooth/LTE, zaprojektowany do pracy w magazynach, produkcji i logistyce. Ma obudowę IP65–IP68 odporną na pył, wodę i upadki na beton z 1,2–3,0 m. Ceny w Polsce w 2026 roku: od 2 000 zł (M3 Mobile SL20+) do 8 482 zł (Zebra MC9400, ultra-rugged). Dominujące marki: Zebra Technologies (~45% rynku), Honeywell (~25%), Datalogic (~10%), Newland (~8%), M3 Mobile (~5%). TAKMA jest autoryzowanym partnerem terminali mobilnych w Polsce od 2001 roku — doradzamy w doborze na podstawie ponad 500 wdrożeń.'
     },
     {
       question: 'Ile kosztuje terminal mobilny (kolektor danych)?',
-      answer: 'Ceny terminali mobilnych (kolektorów danych) w Polsce w 2026 roku: entry-level (retail, lekki magazyn): 2 000–3 200 zł — np. M3 Mobile SL20+ (~2 000 zł), Zebra TC22 (2 417 zł), Honeywell CT32 (~2 800 zł). Mid-range (magazyn, logistyka): 4 500–7 500 zł — np. Zebra TC53 (6 418 zł), Honeywell CT47 (~7 000 zł). Ultra-rugged (chłodnie, ciężki przemysł): 7 000–9 000 zł — np. Zebra MC9400 (7 638 zł). RFID: 2 900–8 600 zł — np. Zebra EM45 (2 951 zł). Ceny netto. Do tego doliczyć akcesoria (ładowarka, etui, bateria zapasowa): 1 000–3 000 zł/terminal.'
+      answer: 'Ceny terminali mobilnych (kolektorów danych) w Polsce w 2026 roku: entry-level (retail, lekki magazyn): 2 000–3 200 zł — np. M3 Mobile SL20+ (~2 000 zł), Zebra TC22 (2 417 zł), Honeywell CT32 (~2 800 zł). Mid-range (magazyn, logistyka): 4 500–7 500 zł — np. Zebra TC53 (6 999 zł), Honeywell CT47 (~7 000 zł). Ultra-rugged (chłodnie, ciężki przemysł): 7 000–9 000 zł — np. Zebra MC9400 (8 482 zł). RFID: 2 900–8 600 zł — np. Zebra EM45 (2 951 zł). Ceny netto. Do tego doliczyć akcesoria (ładowarka, etui, bateria zapasowa): 1 000–3 000 zł/terminal.'
     },
     {
       question: 'Czy terminal mobilny to to samo co kolektor danych?',
@@ -2951,7 +2948,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Co to jest RFID w terminalu mobilnym i kiedy go potrzebuję?',
-      answer: 'RFID (Radio-Frequency Identification) to technologia bezstykowej identyfikacji — terminal odczytuje tagi RFID UHF z odległości do 5–10 m, nawet przez opakowanie. Jeden przejazd korytarzem = odczyt 100+ tagów na sekundę (vs. skanowanie kodów kreskowych jeden po drugim). Kiedy potrzebujesz RFID: inwentaryzacja dużych stanów (1 000+ SKU — RFID 10× szybszy), retail (śledzenie odzieży, zapobieganie kradzieżom), zarządzanie narzędziami/aktywami, healthcare (identyfikacja sprzętu medycznego). Polecane: Zebra EM45 (2 951 zł) dla podstawowych potrzeb, Zebra TC501 (6 541 zł) dla zaawansowanych wdrożeń.'
+      answer: 'RFID (Radio-Frequency Identification) to technologia bezstykowej identyfikacji — terminal odczytuje tagi RFID UHF z odległości do 5–10 m, nawet przez opakowanie. Jeden przejazd korytarzem = odczyt 100+ tagów na sekundę (vs. skanowanie kodów kreskowych jeden po drugim). Kiedy potrzebujesz RFID: inwentaryzacja dużych stanów (1 000+ SKU — RFID 10× szybszy), retail (śledzenie odzieży, zapobieganie kradzieżom), zarządzanie narzędziami/aktywami, healthcare (identyfikacja sprzętu medycznego). Polecane: Zebra EM45 (2 951 zł) dla podstawowych potrzeb, Zebra TC501 (6 319 zł) dla zaawansowanych wdrożeń.'
     },
     {
       question: 'Jakie są alternatywy dla terminali mobilnych?',
@@ -2959,7 +2956,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Jaki terminal mobilny do chłodni i mroźni?',
-      answer: 'Do pracy w chłodniach (−20°C do −30°C) polecamy: Zebra MC9400 (−30°C do +50°C, opcja heated display eliminujący parowanie, IP67, drop 3,0 m, od 7 638 zł) lub Honeywell CK67 (−20°C, bateria 7 000 mAh, IP65, drop 2,4 m, od ~7 200 zł). Kluczowe cechy terminala do chłodni: obsługa w rękawicach (glove mode), bateria o zwiększonej pojemności (mróz skraca czas pracy o 20–30%), certyfikat min. IP67 (kondensacja przy przejściach ciepło/zimno), podświetlana klawiatura. Nie kupuj entry-level do chłodni — oszczędność na zakupie przełoży się na 3× wyższe koszty napraw.'
+      answer: 'Do pracy w chłodniach (−20°C do −30°C) polecamy: Zebra MC9400 (−30°C do +50°C, opcja heated display eliminujący parowanie, IP67, drop 3,0 m, od 8 482 zł) lub Honeywell CK67 (−20°C, bateria 7 000 mAh, IP65, drop 2,4 m, od ~7 200 zł). Kluczowe cechy terminala do chłodni: obsługa w rękawicach (glove mode), bateria o zwiększonej pojemności (mróz skraca czas pracy o 20–30%), certyfikat min. IP67 (kondensacja przy przejściach ciepło/zimno), podświetlana klawiatura. Nie kupuj entry-level do chłodni — oszczędność na zakupie przełoży się na 3× wyższe koszty napraw.'
     },
     {
       question: 'Jak długo służy terminal mobilny?',
@@ -3671,7 +3668,7 @@ export const guides: Guide[] = [
 <thead><tr><th>Kryterium</th><th>Zebra Technologies</th><th>Honeywell</th><th>Wygrywa</th></tr></thead>
 <tbody>
 <tr><td><strong>Wsparcie Android</strong></td><td>Do 10 lat (LifeGuard™)</td><td>5–7 lat (Sentinel)</td><td>Zebra</td></tr>
-<tr><td><strong>Cena entry-level</strong></td><td>od 2 417 zł (TC22)</td><td>od 3 389 zł (CT32)</td><td>Zebra</td></tr>
+<tr><td><strong>Cena entry-level</strong></td><td>od 2 417 zł (TC22)</td><td>od 3 775 zł (CT32)</td><td>Zebra</td></tr>
 <tr><td><strong>Najnowsza łączność</strong></td><td>Wi-Fi 6E, BT 5.3</td><td>Wi-Fi 7, BT 6.0 (CT70)</td><td>Honeywell</td></tr>
 <tr><td><strong>Skaner dalekiego zasięgu</strong></td><td>SE58: do 30 m</td><td>FlexRange XLR: do 24 m</td><td>Zebra</td></tr>
 <tr><td><strong>Waga terminala gun</strong></td><td>765 g (MC9400)</td><td>508 g (CK67)</td><td>Honeywell</td></tr>
@@ -3717,12 +3714,12 @@ export const guides: Guide[] = [
 
 <h3>1. Entry-level: Zebra TC22 vs Honeywell CT32</h3>
 
-<p><strong>Zebra TC22 (od 2 417 zł netto) to najtańszy terminal enterprise na rynku polskim, podczas gdy Honeywell CT32 (od 3 389 zł netto) oferuje nowszą łączność Wi-Fi 6E w standardzie.</strong> Oba urządzenia są następcami popularnych modeli (TC21 i EDA52) i celują w retail, lekki magazyn i healthcare.</p>
+<p><strong>Zebra TC22 (od 2 417 zł netto) to najtańszy terminal enterprise na rynku polskim, podczas gdy Honeywell CT32 (od 3 775 zł netto) oferuje nowszą łączność Wi-Fi 6E w standardzie.</strong> Oba urządzenia są następcami popularnych modeli (TC21 i EDA52) i celują w retail, lekki magazyn i healthcare.</p>
 
 <table>
 <thead><tr><th>Parametr</th><th>Zebra TC22</th><th>Honeywell CT32</th></tr></thead>
 <tbody>
-<tr><td><strong>Cena od (netto PLN)</strong></td><td>2 417 zł</td><td>3 389 zł</td></tr>
+<tr><td><strong>Cena od (netto PLN)</strong></td><td>2 417 zł</td><td>3 775 zł</td></tr>
 <tr><td><strong>Procesor</strong></td><td>Qualcomm 5430, 2,1 GHz</td><td>Qualcomm QCS4490, 2,4 GHz</td></tr>
 <tr><td><strong>Ekran</strong></td><td>6" FHD+ (1080×2160)</td><td>6" FHD (1080×2160)</td></tr>
 <tr><td><strong>RAM / Flash</strong></td><td>6–8 GB / 64–128 GB</td><td>6–8 GB / 128 GB</td></tr>
@@ -3737,18 +3734,18 @@ export const guides: Guide[] = [
 </tbody>
 </table>
 
-<p><strong>Wybierz <a href="/produkt/zebra-tc22">Zebra TC22</a>, jeśli:</strong> zależy Ci na najniższej cenie wejścia (2 417 zł vs 3 389 zł), najdłuższym wsparciu Android (do 10 lat LifeGuard) i dostępie do autoryzowanego serwisu Zebra w Polsce.</p>
+<p><strong>Wybierz <a href="/produkt/zebra-tc22">Zebra TC22</a>, jeśli:</strong> zależy Ci na najniższej cenie wejścia (2 417 zł vs 3 775 zł), najdłuższym wsparciu Android (do 10 lat LifeGuard) i dostępie do autoryzowanego serwisu Zebra w Polsce.</p>
 
 <p><strong>Wybierz <a href="/produkt/honeywell-ct32">Honeywell CT32</a>, jeśli:</strong> potrzebujesz 5G + GPS w tej samej obudowie (wariant X1N), cenisz kompatybilność z akcesoriami EDA52 lub preferujesz skaner FlexRange S0803 z zasięgiem do 11 m.</p>
 
 <h3>2. Mid-range: Zebra TC53 vs Honeywell CT47</h3>
 
-<p><strong>Zebra TC53 (od 6 418 zł netto) to flagowy terminal dotykowy Zebry z procesorem Qualcomm 6490, podczas gdy Honeywell CT47 (od 7 901 zł netto) oferuje kompaktowy format 5,5" z dropem 3,0 m i skaner FlexRange XLR do 24 m.</strong></p>
+<p><strong>Zebra TC53 (od 6 999 zł netto) to flagowy terminal dotykowy Zebry z procesorem Qualcomm 6490, podczas gdy Honeywell CT47 (od 7 901 zł netto) oferuje kompaktowy format 5,5" z dropem 3,0 m i skaner FlexRange XLR do 24 m.</strong></p>
 
 <table>
 <thead><tr><th>Parametr</th><th>Zebra TC53</th><th>Honeywell CT47</th></tr></thead>
 <tbody>
-<tr><td><strong>Cena od (netto PLN)</strong></td><td>6 418 zł</td><td>7 901 zł</td></tr>
+<tr><td><strong>Cena od (netto PLN)</strong></td><td>6 999 zł</td><td>7 901 zł</td></tr>
 <tr><td><strong>Procesor</strong></td><td>Qualcomm 6490, 2,7 GHz</td><td>Qualcomm 6490, 2,7 GHz</td></tr>
 <tr><td><strong>Ekran</strong></td><td>6" FHD (1080×2160), 600 nit</td><td>5,5" FHD (2160×1080), 550 nit</td></tr>
 <tr><td><strong>RAM / Flash</strong></td><td>4–8 GB / 64–128 GB</td><td>6–8 GB / 128 GB</td></tr>
@@ -3768,12 +3765,12 @@ export const guides: Guide[] = [
 
 <h3>3. Gun warehouse: Zebra MC3400 vs Honeywell CK62</h3>
 
-<p><strong>Zebra MC3400 (od 4 561 zł netto) to następca bestsellerowego MC3300x z skanerem SE58 do 30 m, podczas gdy Honeywell CK62 (od 5 759 zł netto) to nowy, lekki terminal gun z FlexRange XLR do 24 m i współdzieloną baterią z CK67.</strong></p>
+<p><strong>Zebra MC3400 (od 4 637 zł netto) to następca bestsellerowego MC3300x z skanerem SE58 do 30 m, podczas gdy Honeywell CK62 (od 5 759 zł netto) to nowy, lekki terminal gun z FlexRange XLR do 24 m i współdzieloną baterią z CK67.</strong></p>
 
 <table>
 <thead><tr><th>Parametr</th><th>Zebra MC3400</th><th>Honeywell CK62</th></tr></thead>
 <tbody>
-<tr><td><strong>Cena od (netto PLN)</strong></td><td>4 561 zł</td><td>5 759 zł</td></tr>
+<tr><td><strong>Cena od (netto PLN)</strong></td><td>4 637 zł</td><td>5 759 zł</td></tr>
 <tr><td><strong>Procesor</strong></td><td>Qualcomm QCS4490, 2,4 GHz</td><td>Qualcomm QCS4490, 2,4 GHz</td></tr>
 <tr><td><strong>Ekran</strong></td><td>4" WVGA (800×480)</td><td>4" WVGA (800×480)</td></tr>
 <tr><td><strong>RAM / Flash</strong></td><td>4–6 GB / 64–128 GB</td><td>6 GB / 128 GB</td></tr>
@@ -3794,12 +3791,12 @@ export const guides: Guide[] = [
 
 <h3>4. Ultra-rugged gun: Zebra MC9400 vs Honeywell CK67</h3>
 
-<p><strong>Zebra MC9400 (od 7 638 zł netto) to flagowy ultra-rugged terminal z 7 wymiennymi klawiaturami i skanerem SE58 do 30 m, podczas gdy Honeywell CK67 (od 7 778 zł netto) oferuje lżejszą konstrukcję (508 g vs 765 g) i dłuższy czas pracy baterii (28 h vs 17 h).</strong></p>
+<p><strong>Zebra MC9400 (od 8 482 zł netto) to flagowy ultra-rugged terminal z 7 wymiennymi klawiaturami i skanerem SE58 do 30 m, podczas gdy Honeywell CK67 (od 7 778 zł netto) oferuje lżejszą konstrukcję (508 g vs 765 g) i dłuższy czas pracy baterii (28 h vs 17 h).</strong></p>
 
 <table>
 <thead><tr><th>Parametr</th><th>Zebra MC9400</th><th>Honeywell CK67</th></tr></thead>
 <tbody>
-<tr><td><strong>Cena od (netto PLN)</strong></td><td>7 638 zł</td><td>7 778 zł</td></tr>
+<tr><td><strong>Cena od (netto PLN)</strong></td><td>8 482 zł</td><td>7 778 zł</td></tr>
 <tr><td><strong>Procesor</strong></td><td>Qualcomm QCS4490, 2,4 GHz</td><td>Qualcomm QCS4490, 2,4 GHz</td></tr>
 <tr><td><strong>Ekran</strong></td><td>4,3" WVGA (800×480), 600 nit</td><td>4,3" WVGA (800×480)</td></tr>
 <tr><td><strong>RAM / Flash</strong></td><td>6 GB / 128 GB</td><td>6 GB / 128 GB</td></tr>
@@ -3898,7 +3895,7 @@ export const guides: Guide[] = [
 <table>
 <thead><tr><th>Składnik kosztu</th><th>Zebra TC53</th><th>Honeywell CT47</th></tr></thead>
 <tbody>
-<tr><td><strong>Zakup terminala</strong></td><td>6 418 zł</td><td>7 901 zł</td></tr>
+<tr><td><strong>Zakup terminala</strong></td><td>6 999 zł</td><td>7 901 zł</td></tr>
 <tr><td><strong>Bateria zapasowa (1 szt.)</strong></td><td>~220 zł</td><td>~250 zł</td></tr>
 <tr><td><strong>Etui ochronne</strong></td><td>~180 zł</td><td>~63 zł</td></tr>
 <tr><td><strong>Stacja ładowania (1-slot)</strong></td><td>~800 zł</td><td>~900 zł</td></tr>
@@ -3966,7 +3963,7 @@ export const guides: Guide[] = [
 <p><strong>Rekomendacja: Zebra.</strong> Ekosystem Zebra dominuje w polskich magazynach — większość systemów WMS (SAP EWM, Oracle WMS, Comarch WMS, Consafe Astro) ma gotowe integracje z DataWedge. <a href="/produkt/zebra-mc3400">MC3400</a> z klawiaturą i skanerem SE58 (30 m) to standard dla kompletacji w magazynach wysokiego składowania. Dla lżejszych operacji — <a href="/produkt/zebra-tc53">TC53</a> z dużym ekranem dotykowym.</p>
 
 <h3>Handel detaliczny (retail)</h3>
-<p><strong>Rekomendacja: remis.</strong> W retail liczy się lekkość i cena. <a href="/produkt/zebra-tc22">Zebra TC22</a> (2 417 zł, 236 g) i <a href="/produkt/honeywell-ct32">Honeywell CT32</a> (3 389 zł, 269 g) to porównywalne urządzenia. Zebra wygrywa ceną, Honeywell — wbudowanym 5G w tym samym modelu (bez potrzeby kupowania osobnej wersji).</p>
+<p><strong>Rekomendacja: remis.</strong> W retail liczy się lekkość i cena. <a href="/produkt/zebra-tc22">Zebra TC22</a> (2 417 zł, 236 g) i <a href="/produkt/honeywell-ct32">Honeywell CT32</a> (3 775 zł, 269 g) to porównywalne urządzenia. Zebra wygrywa ceną, Honeywell — wbudowanym 5G w tym samym modelu (bez potrzeby kupowania osobnej wersji).</p>
 
 <h3>Produkcja</h3>
 <p><strong>Rekomendacja: Zebra.</strong> W środowisku produkcyjnym krytyczne są upadki, pył i olej. <a href="/produkt/zebra-mc9400">Zebra MC9400</a> z dropem 3,65 m i 7 wymiennymi klawiaturami (w tym emulacja VT i IBM 5250) najlepiej integruje się z legacy systemami produkcyjnymi.</p>
@@ -4009,15 +4006,15 @@ export const guides: Guide[] = [
     }
   ],
   faq: [
-    { question: 'Czy terminal Zebra jest lepszy od Honeywell do pracy w magazynie?', answer: 'W typowym magazynie z Wi-Fi i systemem WMS <strong>Zebra jest częściej wybierana</strong> — ze względu na niższe ceny wejścia (TC22 od 2 417 zł vs CT32 od 3 389 zł), dłuższe wsparcie Android (do 10 lat LifeGuard) i głębszą integrację z WMS przez DataWedge. Honeywell wygrywa w magazynach wymagających lekkich terminali gun (CK67: 508 g vs MC9400: 765 g) lub łączności 5G w terenie.' },
-    { question: 'Ile kosztuje terminal mobilny Zebra vs Honeywell w 2026 roku?', answer: 'Ceny netto PLN (marzec 2026): entry-level — <a href="/produkt/zebra-tc22">Zebra TC22</a> od 2 417 zł, <a href="/produkt/honeywell-ct32">Honeywell CT32</a> od 3 389 zł. Mid-range — <a href="/produkt/zebra-tc53">TC53</a> od 6 418 zł, <a href="/produkt/honeywell-ct47">CT47</a> od 7 901 zł. Ultra-rugged — <a href="/produkt/zebra-mc9400">MC9400</a> od 7 638 zł, <a href="/produkt/honeywell-ck67">CK67</a> od 7 778 zł. Zebra jest tańsza w 4 na 5 segmentów.' },
+    { question: 'Czy terminal Zebra jest lepszy od Honeywell do pracy w magazynie?', answer: 'W typowym magazynie z Wi-Fi i systemem WMS <strong>Zebra jest częściej wybierana</strong> — ze względu na niższe ceny wejścia (TC22 od 2 417 zł vs CT32 od 3 775 zł), dłuższe wsparcie Android (do 10 lat LifeGuard) i głębszą integrację z WMS przez DataWedge. Honeywell wygrywa w magazynach wymagających lekkich terminali gun (CK67: 508 g vs MC9400: 765 g) lub łączności 5G w terenie.' },
+    { question: 'Ile kosztuje terminal mobilny Zebra vs Honeywell w 2026 roku?', answer: 'Ceny netto PLN (marzec 2026): entry-level — <a href="/produkt/zebra-tc22">Zebra TC22</a> od 2 417 zł, <a href="/produkt/honeywell-ct32">Honeywell CT32</a> od 3 775 zł. Mid-range — <a href="/produkt/zebra-tc53">TC53</a> od 6 999 zł, <a href="/produkt/honeywell-ct47">CT47</a> od 7 901 zł. Ultra-rugged — <a href="/produkt/zebra-mc9400">MC9400</a> od 8 482 zł, <a href="/produkt/honeywell-ck67">CK67</a> od 7 778 zł. Zebra jest tańsza w 4 na 5 segmentów.' },
     { question: 'Który producent oferuje dłuższe wsparcie oprogramowania Android?', answer: '<strong>Zebra Technologies oferuje do 10 lat wsparcia bezpieczeństwa Android</strong> (program LifeGuard for Android) — comiesięczne łatki OTA przez cały okres. Honeywell Sentinel zapewnia 5–7 lat wsparcia (np. Android 14→18 w CT32, Android 15→19 w CT70). Dłuższe wsparcie Zebry oznacza niższe TCO — terminal nie wymaga wymiany z powodu końca wsparcia.' },
     { question: 'Czy terminale Zebra są bardziej wytrzymałe od Honeywell?', answer: 'To zależy od modelu. <strong>Zebra MC9400 ma najwyższy drop w branży: 3,65 m na beton</strong> i 6 000 cykli tumble. Zebra TC78 wytrzymuje upadki z 3,05 m. Honeywell CT47 oferuje 3,0 m (z bootem), a CK67 — 2,4 m. Oba producenci certyfikują terminale wg MIL-STD-810H. Zebra generalnie wygrywa w testach upadkowych, Honeywell kompensuje lżejszą wagą.' },
-    { question: 'Jaki terminal mobilny wybrać do małego magazynu — Zebra czy Honeywell?', answer: 'Dla małego magazynu z budżetem do 3 000 zł na terminal rekomendujemy <a href="/produkt/zebra-tc22">Zebra TC22</a> (od 2 417 zł) — najniższa cena wejścia, 10 lat wsparcia Android, duży ekran 6" FHD. Alternatywa Honeywell: <a href="/produkt/honeywell-ct32">CT32</a> (od 3 389 zł) — droższy, ale z opcją 5G+GPS w tym samym modelu.' },
+    { question: 'Jaki terminal mobilny wybrać do małego magazynu — Zebra czy Honeywell?', answer: 'Dla małego magazynu z budżetem do 3 000 zł na terminal rekomendujemy <a href="/produkt/zebra-tc22">Zebra TC22</a> (od 2 417 zł) — najniższa cena wejścia, 10 lat wsparcia Android, duży ekran 6" FHD. Alternatywa Honeywell: <a href="/produkt/honeywell-ct32">CT32</a> (od 3 775 zł) — droższy, ale z opcją 5G+GPS w tym samym modelu.' },
     { question: 'Czy można używać terminali Zebra i Honeywell w jednej firmie?', answer: 'Tak, ale <strong>zwiększa to koszty zarządzania flotą</strong>. Każdy producent wymaga osobnego ekosystemu akcesoriów (ładowarki, baterie, etui) i osobnej konfiguracji MDM. Jeśli musisz mieszać, rekomendujemy Zebra w magazynie (DataWedge + WMS) i Honeywell w terenie (5G + GPS), zarządzane przez uniwersalny MDM jak SOTI MobiControl.' },
     { question: 'Który producent ma lepszą ofertę serwisową w Polsce?', answer: '<strong>Zebra ma przewagę serwisową w Polsce</strong> dzięki autoryzowanemu serwisowi komponentowemu (<a href="https://www.serwis-zebry.pl/serwis-terminali-zebra">serwis-zebry.pl</a>) z czasem naprawy 3–7 dni. Honeywell realizuje serwis głównie przez europejskie centra (Holandia, Czechy) z czasem 7–14 dni. Zebra oferuje też kontrakty OneCare z gwarancją SLA.' },
     { question: 'Ile lat działa terminal mobilny Zebra vs Honeywell?', answer: 'Przy prawidłowym użytkowaniu <strong>terminale obu producentów działają 5–7 lat</strong>. Kluczowe czynniki: regularna wymiana baterii (co 2–3 lata), użycie etui ochronnego, aktualizacje Android. Zebra z 10-letnim LifeGuard pozwala na dłuższą eksploatację bez ryzyka luk bezpieczeństwa. Honeywell z 5–7-letnim Sentinel wymaga wcześniejszego planowania wymiany.' },
-    { question: 'Czy Honeywell jest tańszy od Zebra?', answer: '<strong>W większości segmentów Zebra jest tańsza.</strong> Entry: TC22 (2 417 zł) vs CT32 (3 389 zł). Mid: TC53 (6 418 zł) vs CT47 (7 901 zł). Gun: MC3400 (4 561 zł) vs CK62 (5 759 zł). Wyjątek: premium touch — <a href="/produkt/honeywell-ct70">Honeywell CT70</a> (6 383 zł) jest o ~1 350 zł tańszy od <a href="/produkt/zebra-tc78">Zebra TC78</a> (7 742 zł).' },
+    { question: 'Czy Honeywell jest tańszy od Zebra?', answer: '<strong>W większości segmentów Zebra jest tańsza.</strong> Entry: TC22 (2 417 zł) vs CT32 (3 775 zł). Mid: TC53 (6 999 zł) vs CT47 (7 901 zł). Gun: MC3400 (4 637 zł) vs CK62 (5 759 zł). Wyjątek: premium touch — <a href="/produkt/honeywell-ct70">Honeywell CT70</a> (6 383 zł) jest o ~1 350 zł tańszy od <a href="/produkt/zebra-tc78">Zebra TC78</a> (7 742 zł).' },
     { question: 'Jaki jest całkowity koszt posiadania (TCO) terminala Zebra vs Honeywell?', answer: 'Szacunkowe TCO 5-letnie (mid-range, 1 terminal): <strong>Zebra TC53: ~9 100 zł</strong> (terminal + bateria + etui + stacja + serwis). <strong>Honeywell CT47: ~10 300 zł</strong>. Różnica wynika głównie z niższej ceny zakupu Zebry. Honeywell nadrabia niższymi kosztami obudów ochronnych (63 zł vs ~180 zł) i wspólnymi bateriami w ekosystemie CK62/CK67.' },
     { question: 'Który terminal mobilny lepiej integruje się z systemem WMS?', answer: '<strong>Zebra z DataWedge jest de facto standardem integracji z WMS</strong> — SAP EWM, Oracle WMS, Comarch WMS, Consafe Astro i większość polskich systemów ma gotowe profile DataWedge. Honeywell wymaga konfiguracji SDK lub użycia dedykowanego drivera skanera. Jeśli Twój WMS już działa z Zebra — migracja na Honeywell wymaga pracy programistycznej.' },
     { question: 'Czym różni się Mobility DNA od Mobility Edge?', answer: '<strong>Mobility DNA</strong> (Zebra) to zestaw narzędzi programowych: DataWedge (skanowanie bez kodu), StageNow (masowa konfiguracja), LifeGuard (10 lat łatek), Device Tracker (lokalizacja). <strong>Mobility Edge</strong> (Honeywell) to platforma sprzętowo-programowa: wspólny BSP dla całej floty, Operational Intelligence (monitoring), SmartTalk (PTT), Sentinel (5–7 lat wsparcia). Zebra = głębsze narzędzia skanowania, Honeywell = lepszy monitoring floty.' },
@@ -4707,7 +4704,7 @@ export const guides: Guide[] = [
 <table>
 <thead><tr><th>Parametr</th><th>Zebra TC22</th><th>Zebra TC27</th><th><a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a></th><th><a href="/produkt/honeywell-ct32">Honeywell CT32</a></th></tr></thead>
 <tbody>
-<tr><td><strong>Cena od</strong></td><td>2 417 zł</td><td>2 690 zł</td><td>~2 687 zł</td><td>~3 389 zł</td></tr>
+<tr><td><strong>Cena od</strong></td><td>2 417 zł</td><td>2 690 zł</td><td>~2 687 zł</td><td>~3 775 zł</td></tr>
 <tr><td><strong>Ekran</strong></td><td colspan="2">6,0" FHD+</td><td>6,0" FHD+</td><td>6,0" FHD</td></tr>
 <tr><td><strong>Procesor</strong></td><td colspan="2">Qualcomm 5430</td><td>Qualcomm SD680</td><td>Qualcomm QCS4490</td></tr>
 <tr><td><strong>Wi-Fi</strong></td><td colspan="2">Wi-Fi 6/6E</td><td>Wi-Fi 6</td><td>Wi-Fi 6E</td></tr>
@@ -4816,7 +4813,7 @@ export const guides: Guide[] = [
     { question: 'Jaki Android ma TC22 i TC27?', answer: 'TC22 i TC27 są dostarczane z systemem Android i mają gwarancję aktualizacji do Androida 16. Zebra LifeGuard™ zapewnia comiesięczne łatki bezpieczeństwa OTA przez cały cykl życia urządzenia (do 10 lat). Aplikacje z Google Play (wersja GMS) lub wgrywane przez MDM (wersja AOSP).' },
     { question: 'Gdzie serwisować Zebra TC22 i TC27 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl we Wrocławiu — naprawy gwarancyjne i pogwarancyjne TC22/TC27 na poziomie komponentów (wymiana ekranów, skanerów, płyt głównych). Czas naprawy: 3–5 dni roboczych. Oryginalne części Zebra. Dla klientów z kontraktem OneCare Essential — naprawa priorytetowa.' },
     { question: 'Co to jest DataWedge w Zebra TC22/TC27?', answer: 'DataWedge to moduł oprogramowania Zebra (część pakietu Mobility DNA, w cenie terminala) umożliwiający integrację skanera kodów kreskowych z dowolną aplikacją WMS/ERP/POS bez pisania kodu. Konfigurowalny profil: typ kodu, dźwięk potwierdzenia, formatowanie danych, prefix/suffix. DataWedge eliminuje potrzebę programowania obsługi skanera — wystarczy konfiguracja.' },
-    { question: 'Jakie są alternatywy dla Zebra TC22 i TC27?', answer: 'Główne alternatywy w segmencie entry-level: Datalogic Memor 12 (6" FHD+, IP67, Green Spot, od ~2 687 zł), Datalogic Memor 17 (5G, SafeSwap, od ~2 991 zł), Honeywell CT32 (6" FHD, Wi-Fi 6E, upadki 1,8 m, od ~3 389 zł). TC22 wyróżnia się najniższą ceną (2 417 zł), IP68 i serwisem w Polsce. TC27 oferuje najtańsze wejście w 5G enterprise (2 690 zł).' },
+    { question: 'Jakie są alternatywy dla Zebra TC22 i TC27?', answer: 'Główne alternatywy w segmencie entry-level: Datalogic Memor 12 (6" FHD+, IP67, Green Spot, od ~2 687 zł), Datalogic Memor 17 (5G, SafeSwap, od ~2 991 zł), Honeywell CT32 (6" FHD, Wi-Fi 6E, upadki 1,8 m, od ~3 775 zł). TC22 wyróżnia się najniższą ceną (2 417 zł), IP68 i serwisem w Polsce. TC27 oferuje najtańsze wejście w 5G enterprise (2 690 zł).' },
     { question: 'Ile ważą Zebra TC22 i TC27?', answer: 'TC22 i TC27 ważą identycznie — 236 g z baterią standardową 3 800 mAh. To mniej niż wiele smartfonów premium (iPhone 15 Pro Max: 221 g, Samsung S24 Ultra: 232 g). Wymiary: 165 × 76,3 × 12,5 mm. Profil o 10% cieńszy niż TC21/TC26 (12,5 mm vs 13,9 mm).' },
   ],
   relatedLinks: [
@@ -4838,8 +4835,8 @@ export const guides: Guide[] = [
   slug: 'zebra-mc3400-vs-mc9400',
   title: 'Zebra MC3400 vs MC9400 — który kolektor danych wybrać?',
   seoTitle: 'Zebra MC3400 vs MC9400 — porównanie kolektorów danych 2026',
-  seoDescription: 'Kolektor danych Zebra MC3400 vs terminal MC9400: tabela specyfikacji, 3 vs 7 klawiatur, skanery SE55/SE58 do 30,5 m, IP67 vs IP68, chłodnia -30°C, ceny od 4 561 zł, TCO na 3 i 5 lat.',
-  excerpt: 'MC3400 od 4 561 zł — rugged, IP67, 3 klawiatury. MC9400 od 7 638 zł — ultra-rugged, IP68, 7 klawiatur, chłodnia -30°C. Sprawdź porównanie specyfikacji, cen i TCO obu kolektorów Zebra.',
+  seoDescription: 'Kolektor danych Zebra MC3400 vs terminal MC9400: tabela specyfikacji, 3 vs 7 klawiatur, skanery SE55/SE58 do 30,5 m, IP67 vs IP68, chłodnia -30°C, ceny od 4 637 zł, TCO na 3 i 5 lat.',
+  excerpt: 'MC3400 od 4 637 zł — rugged, IP67, 3 klawiatury. MC9400 od 8 482 zł — ultra-rugged, IP68, 7 klawiatur, chłodnia -30°C. Sprawdź porównanie specyfikacji, cen i TCO obu kolektorów Zebra.',
   category: 'porownanie',
   tags: ['Zebra MC3400', 'Zebra MC9400', 'porównanie terminali', 'terminal z klawiaturą', 'kolektor danych', 'magazyn', 'chłodnia', 'MC3400 vs MC9400', 'terminal mobilny Zebra', 'SE58 Extended Range', 'kolektor MC3400', 'kolektor MC9400', 'terminal MC3400', 'terminal MC9400', 'kolektor danych do magazynu'],
   publishedAt: '2026-03-13',
@@ -4853,15 +4850,15 @@ export const guides: Guide[] = [
       content: `<div style="display:flex;gap:64px;flex-wrap:wrap;justify-content:center;margin-bottom:24px">
 <div style="text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/zebra-mc3400_1.png" alt="Kolektor danych Zebra MC3400 — terminal mobilny z klawiaturą 38-klawiszową i ekranem 4 cale" style="max-height:180px;object-fit:contain" loading="lazy" />
-<p style="margin-top:8px;font-weight:600"><a href="/produkt/zebra-mc3400">Zebra MC3400</a> — <span data-live-price="zebra-mc3400" class="animate-pulse">od 4 561 zł</span> netto</p>
+<p style="margin-top:8px;font-weight:600"><a href="/produkt/zebra-mc3400">Zebra MC3400</a> — <span data-live-price="zebra-mc3400" class="animate-pulse">od 4 637 zł</span> netto</p>
 </div>
 <div style="text-align:center;display:flex;flex-direction:column;align-items:center">
 <img src="/images/products/zebra-mc9400_1.png" alt="Kolektor danych Zebra MC9400 — terminal ultra-rugged z klawiaturą 53-klawiszową do magazynu i chłodni" style="max-height:180px;object-fit:contain" loading="lazy" />
-<p style="margin-top:8px;font-weight:600"><a href="/produkt/zebra-mc9400">Zebra MC9400</a> — <span data-live-price="zebra-mc9400" class="animate-pulse">od 7 638 zł</span> netto</p>
+<p style="margin-top:8px;font-weight:600"><a href="/produkt/zebra-mc9400">Zebra MC9400</a> — <span data-live-price="zebra-mc9400" class="animate-pulse">od 8 482 zł</span> netto</p>
 </div>
 </div>
 
-<p><strong>Zebra MC3400 (kolektor danych <span data-live-price="zebra-mc3400">od 4 561 zł</span>) to terminal rugged z 3 klawiaturami i IP67. Zebra MC9400 (kolektor danych <span data-live-price="zebra-mc9400">od 7 638 zł</span>) to ultra-rugged z 7 wymiennymi klawiaturami, IP68 i pracą do -30°C.</strong> Oba kolektory danych mają ten sam procesor Qualcomm QCS4490 (2,4 GHz), Wi-Fi 6E, Bluetooth 5.3 i skanery SE58 Extended Range do 30,5 m. Różni je klasa wytrzymałości, liczba klawiatur, zakres temperatur i cena.</p>
+<p><strong>Zebra MC3400 (kolektor danych <span data-live-price="zebra-mc3400">od 4 637 zł</span>) to terminal rugged z 3 klawiaturami i IP67. Zebra MC9400 (kolektor danych <span data-live-price="zebra-mc9400">od 8 482 zł</span>) to ultra-rugged z 7 wymiennymi klawiaturami, IP68 i pracą do -30°C.</strong> Oba kolektory danych mają ten sam procesor Qualcomm QCS4490 (2,4 GHz), Wi-Fi 6E, Bluetooth 5.3 i skanery SE58 Extended Range do 30,5 m. Różni je klasa wytrzymałości, liczba klawiatur, zakres temperatur i cena.</p>
 
 <div style="background:#f8fee6;border-left:4px solid #A8F000;padding:16px;border-radius:8px;margin:16px 0">
 <p style="margin:0;font-weight:600">Szybka odpowiedź:</p>
@@ -4883,7 +4880,7 @@ export const guides: Guide[] = [
 </tr>
 </thead>
 <tbody>
-<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Cena od</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">4 561 zł netto</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">7 638 zł netto</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Cena od</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">4 637 zł netto</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">8 482 zł netto</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Procesor</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center" colspan="2">Qualcomm QCS4490 octa-core, 2,4 GHz</td></tr>
 <tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Wyświetlacz</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">4" WVGA, 350–600 nit</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">4,3" WVGA, 600 nit</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">RAM / Flash</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">4–6 GB / 64–128 GB</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center;color:#7ab800;font-weight:600">6 GB / 128 GB</td></tr>
@@ -5017,7 +5014,7 @@ export const guides: Guide[] = [
 
 <p>Oba terminale mają <strong>SE58 Extended Range</strong> z zielonym laserem IntelliFocus — skanowanie etykiet z najwyższych regałów (do 30,5 m) bez drabiny i wózka widłowego. Laser IntelliFocus jest 7× bardziej widoczny niż tradycyjny, co przyspiesza celowanie o 30%.</p>
 
-<p><strong>Który skaner wybrać?</strong> SE55 (<span data-live-price="zebra-mc3400">od 4 561 zł</span> z MC3400) — jeśli regały mają do 8 m. SE58 — jeśli regały przekraczają 10 m lub operacje obejmują plac kontenerowy. SE4770 — tylko jeśli skanowanie jest na dystansie ręki (retail, apteka, produkcja).</p>`
+<p><strong>Który skaner wybrać?</strong> SE55 (<span data-live-price="zebra-mc3400">od 4 637 zł</span> z MC3400) — jeśli regały mają do 8 m. SE58 — jeśli regały przekraczają 10 m lub operacje obejmują plac kontenerowy. SE4770 — tylko jeśli skanowanie jest na dystansie ręki (retail, apteka, produkcja).</p>`
     },
     {
       id: 'bateria-obudowa',
@@ -5066,7 +5063,7 @@ export const guides: Guide[] = [
 </tr>
 </thead>
 <tbody>
-<tr><td style="padding:6px 8px;border:1px solid #e2e8f0">SE55</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 38 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">4/64 GB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right;font-weight:600;color:#7ab800">od 4 561 zł</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0">SE55</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 38 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">4/64 GB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right;font-weight:600;color:#7ab800">od 4 637 zł</td></tr>
 <tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0">SE4770</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 38 / 47 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">6/64 GB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 4 872 zł</td></tr>
 <tr><td style="padding:6px 8px;border:1px solid #e2e8f0">SE58</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 38 / 47 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">6/64 GB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 5 444 zł</td></tr>
 <tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0">SE4770 + Kamera</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 38 / 47 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">6/128 GB</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 5 329 zł</td></tr>
@@ -5085,7 +5082,7 @@ export const guides: Guide[] = [
 </tr>
 </thead>
 <tbody>
-<tr><td style="padding:6px 8px;border:1px solid #e2e8f0">SE4770</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">34 / 43 / 53 / 53-VT / 53-5250 / 58 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">—</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 7 638 zł</td></tr>
+<tr><td style="padding:6px 8px;border:1px solid #e2e8f0">SE4770</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">34 / 43 / 53 / 53-VT / 53-5250 / 58 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">—</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 8 482 zł</td></tr>
 <tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0">SE4770</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">53 / 53-5250 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">13 MP</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 7 817 zł</td></tr>
 <tr><td style="padding:6px 8px;border:1px solid #e2e8f0">SE58</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 34 / 43 / 53 / 53-VT / 53-5250 / 58 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">—</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 8 102 zł</td></tr>
 <tr style="background:#f8fafc"><td style="padding:6px 8px;border:1px solid #e2e8f0">SE58</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">29 / 34 / 43 / 53 / 53-5250 / 58 kl.</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:center">13 MP</td><td style="padding:6px 8px;border:1px solid #e2e8f0;text-align:right">od 7 977 zł</td></tr>
@@ -5226,8 +5223,8 @@ export const guides: Guide[] = [
 </tr>
 </thead>
 <tbody>
-<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-mc3400">Zebra MC3400</a></td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">29/38/47</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">SE55/4770/58</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP67</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">4 561 zł</td></tr>
-<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-mc9400">Zebra MC9400</a></td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">7 wymiennych</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">SE4770/SE58</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP68</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">7 638 zł</td></tr>
+<tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-mc3400">Zebra MC3400</a></td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">29/38/47</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">SE55/4770/58</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP67</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">4 637 zł</td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600"><a href="/produkt/zebra-mc9400">Zebra MC9400</a></td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">7 wymiennych</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">SE4770/SE58</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP68</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">8 482 zł</td></tr>
 <tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Honeywell CK65</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">52 / alfa</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">S0703 / EX20</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP65</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~5 500 zł</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Honeywell CK67</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">numeryczna</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">FlexRange XLR</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP65</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~6 200 zł</td></tr>
 <tr><td style="padding:8px;border:1px solid #e2e8f0;font-weight:600">Datalogic Skorpio X5</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">38/47</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">Star SE5500</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:center">IP65</td><td style="padding:8px;border:1px solid #e2e8f0;text-align:right">~4 800 zł</td></tr>
@@ -5275,7 +5272,7 @@ export const guides: Guide[] = [
 <li>Potrzebujesz skanera SE55 (12 m) — najtańsza opcja</li>
 <li>Obudowa Straight Shooter bez pistoletu</li>
 </ul>
-<p style="margin:12px 0 0 0"><a href="/produkt/zebra-mc3400" style="font-weight:600">→ Zebra MC3400 — <span data-live-price="zebra-mc3400">od 4 561 zł</span></a></p>
+<p style="margin:12px 0 0 0"><a href="/produkt/zebra-mc3400" style="font-weight:600">→ Zebra MC3400 — <span data-live-price="zebra-mc3400">od 4 637 zł</span></a></p>
 </div>
 <div style="flex:1;min-width:280px;background:#f8fee6;border:2px solid #A8F000;border-radius:12px;padding:20px">
 <h3 style="margin:0 0 12px 0;color:#7ab800">Wybierz MC9400 gdy:</h3>
@@ -5287,7 +5284,7 @@ export const guides: Guide[] = [
 <li>Wymagana najwyższa odporność (3,65 m, IP68)</li>
 <li>Wielozmianowa praca w ekstremalnych warunkach</li>
 </ul>
-<p style="margin:12px 0 0 0"><a href="/produkt/zebra-mc9400" style="font-weight:600">→ Zebra MC9400 — <span data-live-price="zebra-mc9400">od 7 638 zł</span></a></p>
+<p style="margin:12px 0 0 0"><a href="/produkt/zebra-mc9400" style="font-weight:600">→ Zebra MC9400 — <span data-live-price="zebra-mc9400">od 8 482 zł</span></a></p>
 </div>
 </div>
 
@@ -5297,10 +5294,10 @@ export const guides: Guide[] = [
     },
   ],
   faq: [
-    { question: 'Co to jest kolektor danych Zebra MC3400?', answer: 'Zebra MC3400 to wytrzymały kolektor danych (terminal mobilny) klasy rugged z fizyczną klawiaturą, skanerem kodów kreskowych do 30,5 m, procesorem 8-rdzeniowym QCS4490 (2,4 GHz), Wi-Fi 6E i Androidem 14→18. IP65/IP67, upadki z 2,4 m, 528 g. Cena od 4 561 zł netto. Następca modelu MC3300x — pełna kompatybilność baterii i akcesoriów.' },
-    { question: 'Co to jest terminal mobilny Zebra MC9400?', answer: 'Zebra MC9400 to najwytrzymalszy kolektor danych (terminal mobilny) Zebra klasy ultra-rugged z 7 wymiennymi klawiaturami, skanerem SE58 do 30,5 m i procesorem QCS4490 (2,4 GHz). IP65+IP68, upadki z 3,65 m, praca w chłodni do -30°C, 743 g. Cena od 7 638 zł netto. Następca modelu MC9300.' },
-    { question: 'Czym się różni kolektor danych Zebra MC3400 od MC9400?', answer: 'MC3400 i MC9400 mają identyczny procesor Qualcomm QCS4490 (2,4 GHz), Wi-Fi 6E, Bluetooth 5.3 i skanery SE58 Extended Range do 30,5 m. Główne różnice: MC9400 ma 7 wymiennych klawiatur (vs 3 w MC3400), IP65+IP68 (vs IP65/IP67), upadki z 3,65 m (vs 2,4 m), pracuje do -30°C z baterią freezer (vs -20°C) i kosztuje od 7 638 zł (vs 4 561 zł). MC3400 jest lżejszy (528 g vs 743 g) i ma dłuższe wsparcie Android (do 18 vs 17).' },
-    { question: 'Ile kosztuje Zebra MC3400 vs MC9400?', answer: 'Zebra MC3400 kosztuje od 4 561 zł netto (SE55, 29 kl., 4/64 GB) do 5 734 zł (SE58, kamera, 6/128 GB). Zebra MC9400 kosztuje od 7 638 zł netto (SE4770, 58 kl.) do 8 296 zł (SE58, kamera). Różnica cen: MC9400 jest o 67% droższy w najtańszych wariantach. Na flocie 50 terminali oszczędność na MC3400 vs MC9400 wynosi ~139 700 zł netto na 3 lata (z OneCare).' },
+    { question: 'Co to jest kolektor danych Zebra MC3400?', answer: 'Zebra MC3400 to wytrzymały kolektor danych (terminal mobilny) klasy rugged z fizyczną klawiaturą, skanerem kodów kreskowych do 30,5 m, procesorem 8-rdzeniowym QCS4490 (2,4 GHz), Wi-Fi 6E i Androidem 14→18. IP65/IP67, upadki z 2,4 m, 528 g. Cena od 4 637 zł netto. Następca modelu MC3300x — pełna kompatybilność baterii i akcesoriów.' },
+    { question: 'Co to jest terminal mobilny Zebra MC9400?', answer: 'Zebra MC9400 to najwytrzymalszy kolektor danych (terminal mobilny) Zebra klasy ultra-rugged z 7 wymiennymi klawiaturami, skanerem SE58 do 30,5 m i procesorem QCS4490 (2,4 GHz). IP65+IP68, upadki z 3,65 m, praca w chłodni do -30°C, 743 g. Cena od 8 482 zł netto. Następca modelu MC9300.' },
+    { question: 'Czym się różni kolektor danych Zebra MC3400 od MC9400?', answer: 'MC3400 i MC9400 mają identyczny procesor Qualcomm QCS4490 (2,4 GHz), Wi-Fi 6E, Bluetooth 5.3 i skanery SE58 Extended Range do 30,5 m. Główne różnice: MC9400 ma 7 wymiennych klawiatur (vs 3 w MC3400), IP65+IP68 (vs IP65/IP67), upadki z 3,65 m (vs 2,4 m), pracuje do -30°C z baterią freezer (vs -20°C) i kosztuje od 8 482 zł (vs 4 637 zł). MC3400 jest lżejszy (528 g vs 743 g) i ma dłuższe wsparcie Android (do 18 vs 17).' },
+    { question: 'Ile kosztuje Zebra MC3400 vs MC9400?', answer: 'Zebra MC3400 kosztuje od 4 637 zł netto (SE55, 29 kl., 4/64 GB) do 5 734 zł (SE58, kamera, 6/128 GB). Zebra MC9400 kosztuje od 8 482 zł netto (SE4770, 58 kl.) do 8 296 zł (SE58, kamera). Różnica cen: MC9400 jest o 67% droższy w najtańszych wariantach. Na flocie 50 terminali oszczędność na MC3400 vs MC9400 wynosi ~139 700 zł netto na 3 lata (z OneCare).' },
     { question: 'Który terminal do chłodni — MC3400 czy MC9400?', answer: 'Do chłodni i mroźni tylko MC9400. MC3400 działa od -20°C — nie nadaje się do mroźni (-25°C do -30°C). MC9400 z baterią freezer (BTRY-MC93-FZ-01, 5 000 mAh) pracuje do -30°C. Wyświetlacz 600 nit z ogrzewaniem zapobiega parowaniu przy przejściach chłodnia↔hala. IP65+IP68 chroni przed wilgocią i kondensatem w zmiennych temperaturach.' },
     { question: 'Jaką klawiaturę wybrać w MC3400?', answer: 'MC3400 oferuje 3 klawiatury: 29 kl. (numeryczna — szybkie ilości), 38 kl. (funkcyjna z Tab/Enter/strzałkami — najpopularniejsza w WMS, rekomendowana), 47 kl. (alfanumeryczna A-Z — gdy operator wpisuje kody tekstowe). Klawiaturę wybiera się przy zakupie — nie można jej wymienić w terenie. Klawisze są 20% większe niż w MC3300x i zoptymalizowane do pracy w rękawicach.' },
     { question: 'Czy MC9400 ma wymienne klawiatury?', answer: 'Tak — MC9400 ma 7 wymiennych klawiatur hot-swap (wymiana bez narzędzi w terenie): 29 kl. (numeryczna), 34 kl. (rozszerzona), 43 kl. (funkcyjna F1-F12), 53 kl. STD (najpopularniejsza w WMS), 53 kl. VT (emulacja terminala), 53 kl. 5250 (IBM AS/400), 58 kl. (alfanumeryczna). Ten sam terminal może obsługiwać różne procesy: rano kompletacja (53 kl.), po południu inwentaryzacja (29 kl.).' },
@@ -5844,8 +5841,8 @@ export const guides: Guide[] = [
   slug: 'zebra-tc501-vs-tc58',
   title: 'Zebra TC501 vs TC58 — porównanie kolektorów danych 2026',
   seoTitle: 'Zebra TC501 vs TC58 — porównanie kolektorów danych 2026',
-  seoDescription: 'Zebra TC501 vs TC58: RFID, AI NPU, AMOLED 1500 nit, Wi-Fi 7, skaner 30 m. TC501 od 6 541 zł, TC58 od 6 751 zł. TCO, porównanie i rekomendacje TAKMA.',
-  excerpt: 'Zebra TC501 (kolektor danych z AI i RFID od 6 541 zł) vs TC58 (terminal 5G od 6 751 zł) — porównanie procesorów, wyświetlaczy, skanerów, RFID, łączności, TCO na 5 lat i rekomendacje wg zastosowania. Pierwszy tak szczegółowy poradnik w języku polskim.',
+  seoDescription: 'Zebra TC501 vs TC58: RFID, AI NPU, AMOLED 1500 nit, Wi-Fi 7, skaner 30 m. TC501 od 6 319 zł, TC58 od 6 751 zł. TCO, porównanie i rekomendacje TAKMA.',
+  excerpt: 'Zebra TC501 (kolektor danych z AI i RFID od 6 319 zł) vs TC58 (terminal 5G od 6 751 zł) — porównanie procesorów, wyświetlaczy, skanerów, RFID, łączności, TCO na 5 lat i rekomendacje wg zastosowania. Pierwszy tak szczegółowy poradnik w języku polskim.',
   category: 'porownanie' as const,
   tags: ['terminale-mobilne', 'porownanie', 'zebra', 'tc501', 'tc58', 'kolektor-danych', 'rfid', 'ai', 'tco', 'wifi-7', 'amoled', 'komputer-mobilny', 'magazyn', '5g'],
   publishedAt: '2026-03-14',
@@ -5856,7 +5853,7 @@ export const guides: Guide[] = [
     {
       id: 'podsumowanie',
       heading: 'Zebra TC501 vs TC58 — który kolektor danych wybrać w 2026 roku?',
-      content: `<p><strong>Zebra TC501 to kolektor danych nowej generacji z wbudowanym RFID UHF, procesorem AI Dragonwing Q-6690 i ekranem AMOLED 1500 nit — od 6 541 zł netto. Zebra TC58 to sprawdzony terminal 5G z procesorem Qualcomm 6490 i skanerem SE55 — od 6 751 zł netto.</strong></p>
+      content: `<p><strong>Zebra TC501 to kolektor danych nowej generacji z wbudowanym RFID UHF, procesorem AI Dragonwing Q-6690 i ekranem AMOLED 1500 nit — od 6 319 zł netto. Zebra TC58 to sprawdzony terminal 5G z procesorem Qualcomm 6490 i skanerem SE55 — od 6 751 zł netto.</strong></p>
 
 <p>TC501 i TC58 to dwa flagowe kolektory danych Zebra, ale należą do <strong>różnych generacji</strong>. TC501 (premiera 2025/2026) to następca linii TC53/TC58 z przełomowymi technologiami: RFID w standardzie, AI on-device i Wi-Fi 7. TC58 (premiera 2023) to wersja TC53 z łącznością 5G/LTE — sprawdzona, stabilna, z szerokim ekosystemem akcesoriów wspólnych z TC53.</p>
 
@@ -5876,7 +5873,7 @@ export const guides: Guide[] = [
 <tr style="background:#f8fafc"><td style="padding:8px 12px;font-weight:600">Waga</td><td style="padding:8px 12px;text-align:center"><strong>273 g</strong></td><td style="padding:8px 12px;text-align:center">293 g</td></tr>
 <tr><td style="padding:8px 12px;font-weight:600">Android (do wersji)</td><td style="padding:8px 12px;text-align:center"><strong>Android 19</strong> (4 aktualizacje)</td><td style="padding:8px 12px;text-align:center">Android 16 (1 aktualizacja)</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px 12px;font-weight:600">5G</td><td style="padding:8px 12px;text-align:center">Release 17 (wersje TC501G)</td><td style="padding:8px 12px;text-align:center">5G FR1 (standard)</td></tr>
-<tr><td style="padding:8px 12px;font-weight:600">Cena od (netto)</td><td style="padding:8px 12px;text-align:center"><strong>6 541 zł</strong></td><td style="padding:8px 12px;text-align:center">6 751 zł</td></tr>
+<tr><td style="padding:8px 12px;font-weight:600">Cena od (netto)</td><td style="padding:8px 12px;text-align:center"><strong>6 319 zł</strong></td><td style="padding:8px 12px;text-align:center">6 751 zł</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px 12px;font-weight:600">Warianty</td><td style="padding:8px 12px;text-align:center"><strong>15 konfiguracji</strong></td><td style="padding:8px 12px;text-align:center">6 konfiguracji</td></tr>
 </tbody></table>
 
@@ -5989,8 +5986,8 @@ export const guides: Guide[] = [
 <table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.95rem">
 <thead><tr style="background:#1e3a5f;color:#fff"><th style="padding:10px 12px;text-align:left">Rozwiązanie</th><th style="padding:10px 12px;text-align:center">Koszt urządzenia</th><th style="padding:10px 12px;text-align:center">Koszt RFID</th><th style="padding:10px 12px;text-align:center">Suma</th></tr></thead>
 <tbody>
-<tr style="background:#f8fafc"><td style="padding:8px 12px"><strong>TC501 WiFi + RFID wbudowany</strong></td><td style="padding:8px 12px;text-align:center">6 541 zł</td><td style="padding:8px 12px;text-align:center">0 zł (w cenie)</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>6 541 zł</strong></td></tr>
-<tr><td style="padding:8px 12px"><strong>TC501 5G + RFID wbudowany</strong></td><td style="padding:8px 12px;text-align:center">6 541 zł</td><td style="padding:8px 12px;text-align:center">0 zł (w cenie)</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>6 541 zł</strong></td></tr>
+<tr style="background:#f8fafc"><td style="padding:8px 12px"><strong>TC501 WiFi + RFID wbudowany</strong></td><td style="padding:8px 12px;text-align:center">6 319 zł</td><td style="padding:8px 12px;text-align:center">0 zł (w cenie)</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>6 319 zł</strong></td></tr>
+<tr><td style="padding:8px 12px"><strong>TC501 5G + RFID wbudowany</strong></td><td style="padding:8px 12px;text-align:center">6 319 zł</td><td style="padding:8px 12px;text-align:center">0 zł (w cenie)</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>6 319 zł</strong></td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px 12px">TC58 + sled RFD40</td><td style="padding:8px 12px;text-align:center">6 751 zł</td><td style="padding:8px 12px;text-align:center">~6 000 zł</td><td style="padding:8px 12px;text-align:center;color:#dc2626"><strong>~12 751 zł</strong></td></tr>
 <tr><td style="padding:8px 12px">TC58 + sled RFD90</td><td style="padding:8px 12px;text-align:center">6 751 zł</td><td style="padding:8px 12px;text-align:center">~9 000 zł</td><td style="padding:8px 12px;text-align:center;color:#dc2626"><strong>~15 751 zł</strong></td></tr>
 </tbody></table>
@@ -6130,7 +6127,7 @@ export const guides: Guide[] = [
 <li>Potrzebujesz <strong>skanera dalekiego zasięgu powyżej 12 m</strong> — AC670 sięga do 30 m</li>
 <li>Zależy Ci na <strong>najdłuższym cyklu życia</strong> — Android do v19, ~8 lat wsparcia</li>
 <li>Startujesz <strong>nowe wdrożenie</strong> bez bagażu kompatybilności z TC53</li>
-<li>Szukasz <strong>najlepszej ceny terminala 5G</strong> — TC501G od 6 541 zł vs TC58 od 6 751 zł</li>
+<li>Szukasz <strong>najlepszej ceny terminala 5G</strong> — TC501G od 6 319 zł vs TC58 od 6 751 zł</li>
 </ul>
 
 <h3>Wybierz Zebra TC58, jeśli:</h3>
@@ -6149,7 +6146,7 @@ export const guides: Guide[] = [
 <tr style="background:#f8fafc"><td style="padding:8px 12px">Magazyn z RFID</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501</strong></td><td style="padding:8px 12px">RFID w standardzie, AC670 do 30 m, tańszy o 7 000+ zł</td></tr>
 <tr><td style="padding:8px 12px">Magazyn bez RFID (nowa flota)</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501</strong></td><td style="padding:8px 12px">Lepszy ekran, procesor, bateria, dłuższy cykl życia, niższa cena</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px 12px">Rozbudowa floty TC53/TC58</td><td style="padding:8px 12px;text-align:center;color:#2563eb"><strong>TC58</strong></td><td style="padding:8px 12px">Te same baterie i stacje, zero kosztów migracji</td></tr>
-<tr><td style="padding:8px 12px">Kurier / serwis terenowy</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501G (5G)</strong></td><td style="padding:8px 12px">Tańszy 5G (6 541 zł), lżejszy, GPS Triple-Band</td></tr>
+<tr><td style="padding:8px 12px">Kurier / serwis terenowy</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501G (5G)</strong></td><td style="padding:8px 12px">Tańszy 5G (6 319 zł), lżejszy, GPS Triple-Band</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px 12px">Retail / sklep</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501</strong></td><td style="padding:8px 12px">RFID do inwentaryzacji, AMOLED czytelny pod lampami, AI OCR</td></tr>
 <tr><td style="padding:8px 12px">Produkcja / kontrola jakości</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501</strong></td><td style="padding:8px 12px">AI NPU weryfikuje etykiety i rozpoznaje produkty kamerą</td></tr>
 <tr style="background:#f8fafc"><td style="padding:8px 12px">Healthcare</td><td style="padding:8px 12px;text-align:center;color:#16a34a"><strong>TC501</strong></td><td style="padding:8px 12px">RFID identyfikacja pacjentów, AMOLED czytelny na korytarzu</td></tr>
@@ -6163,7 +6160,7 @@ export const guides: Guide[] = [
   faq: [
     {
       question: 'Co to jest Zebra TC501 (kolektor danych)?',
-      answer: 'Zebra TC501 to kolektor danych nowej generacji z wbudowanym RFID UHF, procesorem AI Dragonwing Q-6690 z NPU, ekranem AMOLED 1500 nit, Wi-Fi 7 i skanerem AC670 do 30 m — od 6 541 zł netto. Premiera: 2025/2026. TC501 zastępuje linię TC53/TC58 i jest pierwszym terminalem enterprise z RFID w standardzie i AI on-device. Android 15 z gwarancją aktualizacji do v19 (~8 lat wsparcia LifeGuard). Dostępny w TAKMA — autoryzowany partner Zebra Technologies w Polsce.'
+      answer: 'Zebra TC501 to kolektor danych nowej generacji z wbudowanym RFID UHF, procesorem AI Dragonwing Q-6690 z NPU, ekranem AMOLED 1500 nit, Wi-Fi 7 i skanerem AC670 do 30 m — od 6 319 zł netto. Premiera: 2025/2026. TC501 zastępuje linię TC53/TC58 i jest pierwszym terminalem enterprise z RFID w standardzie i AI on-device. Android 15 z gwarancją aktualizacji do v19 (~8 lat wsparcia LifeGuard). Dostępny w TAKMA — autoryzowany partner Zebra Technologies w Polsce.'
     },
     {
       question: 'Czym różni się kolektor danych Zebra TC501 od TC58?',
@@ -6171,7 +6168,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Ile kosztuje Zebra TC501 vs TC58?',
-      answer: 'Zebra TC501 5G (kolektor danych) startuje od 6 541 zł netto (karta produktu: takma.com.pl/produkt/zebra-tc501). Zebra TC58 kosztuje od 6 751 zł netto (karta produktu: takma.com.pl/produkt/zebra-tc58). TC501 ma cenę zbliżoną do starszego TC58, oferując znacznie więcej technologii (RFID i AI w standardzie, AMOLED 1500 nit, Wi-Fi 7). Ceny netto, czerwiec 2026.'
+      answer: 'Zebra TC501 5G (kolektor danych) startuje od 6 319 zł netto (karta produktu: takma.com.pl/produkt/zebra-tc501). Zebra TC58 kosztuje od 6 751 zł netto (karta produktu: takma.com.pl/produkt/zebra-tc58). TC501 ma cenę zbliżoną do starszego TC58, oferując znacznie więcej technologii (RFID i AI w standardzie, AMOLED 1500 nit, Wi-Fi 7). Ceny netto, czerwiec 2026.'
     },
     {
       question: 'Czy Zebra TC501 ma wbudowany RFID UHF?',
@@ -7641,7 +7638,7 @@ export const guides: Guide[] = [
 <p>Inwentaryzacja cykliczna polega na priorytetyzacji: produkty A (wysoka wartość) = co miesiąc, B = co kwartał, C = co pół roku. Wymaga: kolektor danych z trybem offline (dla stref bez Wi-Fi), bateria wymienna hot-swap. Rekomendowane kolektory: <a href="/produkt/zebra-tc22">Zebra TC22</a>, <a href="/produkt/honeywell-ct32">Honeywell CT32</a> (hot-swap bateria).</p>
 
 <h3>Inwentaryzacja RFID (masowa)</h3>
-<p>Inwentaryzacja RFID to skanowanie setek tagów jednocześnie z odległości do 5 metrów — bez kontaktu wzrokowego z etykietą. Jeden operator z kolektorem danych RFID liczy 3 000-5 000 pozycji na godzinę (vs 500-800 z kodem kreskowym). Wymaga: terminal mobilny z wbudowanym czytnikiem RFID UHF. Rekomendowane kolektory danych: <a href="/produkt/zebra-tc501">Zebra TC501</a> (6 541 zł — najtańszy z wbudowanym RFID). Porównanie: <a href="/poradnik/zebra-tc501-vs-tc58">TC501 vs TC58</a>.</p>
+<p>Inwentaryzacja RFID to skanowanie setek tagów jednocześnie z odległości do 5 metrów — bez kontaktu wzrokowego z etykietą. Jeden operator z kolektorem danych RFID liczy 3 000-5 000 pozycji na godzinę (vs 500-800 z kodem kreskowym). Wymaga: terminal mobilny z wbudowanym czytnikiem RFID UHF. Rekomendowane kolektory danych: <a href="/produkt/zebra-tc501">Zebra TC501</a> (6 319 zł — najtańszy z wbudowanym RFID). Porównanie: <a href="/poradnik/zebra-tc501-vs-tc58">TC501 vs TC58</a>.</p>
 
 <h3>Inwentaryzacja środków trwałych</h3>
 <p>Inwentaryzacja środków trwałych to coroczne sprawdzenie wyposażenia: meble, komputery, maszyny, narzędzia. Wymaga: lekki kolektor danych + kamera do zdjęć stanu. Rekomendowane terminale mobilne: <a href="/produkt/honeywell-ct70">Honeywell CT70</a> (kamera 48 MP, IP68), <a href="/produkt/zebra-em45">Zebra EM45</a> (kamera 50 MP — najlepsza do dokumentacji fotograficznej), <a href="/produkt/datalogic-memor-30">Datalogic Memor 30</a> (16 MP, IP68). Porównanie: <a href="/poradnik/zebra-tc22-vs-tc27">TC22 vs TC27</a>.</p>
@@ -7658,10 +7655,10 @@ export const guides: Guide[] = [
     </tr>
   </thead>
   <tbody>
-    <tr><td>Pełna (roczna)</td><td>1x/rok</td><td>2-5 dni</td><td><a href="/produkt/zebra-mc3400">Zebra MC3400</a> / <a href="/produkt/honeywell-ck67">Honeywell CK67</a></td><td>od <span data-live-price="zebra-mc3400">4 561 zł</span></td></tr>
+    <tr><td>Pełna (roczna)</td><td>1x/rok</td><td>2-5 dni</td><td><a href="/produkt/zebra-mc3400">Zebra MC3400</a> / <a href="/produkt/honeywell-ck67">Honeywell CK67</a></td><td>od <span data-live-price="zebra-mc3400">4 637 zł</span></td></tr>
     <tr><td>Ciągła (permanentna)</td><td>codziennie</td><td>1-2 h/dzień</td><td><a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a> / <a href="/produkt/zebra-tc22">Zebra TC22</a></td><td>od <span data-live-price="datalogic-memor-12">2 687 zł</span></td></tr>
     <tr><td>Cykliczna (ABC)</td><td>co tydzień/miesiąc</td><td>4-8 h</td><td><a href="/produkt/honeywell-ct32">Honeywell CT32</a> / <a href="/produkt/zebra-tc22">Zebra TC22</a></td><td>od <span data-live-price="zebra-tc22">2 417 zł</span></td></tr>
-    <tr><td>RFID (masowa)</td><td>dowolna</td><td>90% szybsza</td><td><a href="/produkt/zebra-tc501">Zebra TC501</a></td><td><span data-live-price="zebra-tc501">6 541 zł</span></td></tr>
+    <tr><td>RFID (masowa)</td><td>dowolna</td><td>90% szybsza</td><td><a href="/produkt/zebra-tc501">Zebra TC501</a></td><td><span data-live-price="zebra-tc501">6 319 zł</span></td></tr>
     <tr><td>Środki trwałe</td><td>1x/rok</td><td>1-3 dni</td><td><a href="/produkt/honeywell-ct70">Honeywell CT70</a> / <a href="/produkt/zebra-em45">Zebra EM45</a></td><td>od <span data-live-price="zebra-em45">2 951 zł</span></td></tr>
   </tbody>
 </table>`
@@ -7686,7 +7683,7 @@ export const guides: Guide[] = [
     <tr><td>Odczyt wielu naraz</td><td>NIE (1 kod = 1 skan)</td><td>TAK (200+ tagów/sek)</td></tr>
     <tr><td>Czas inwentaryzacji 10 000 szt.</td><td>~14 h</td><td>~1,5 h</td></tr>
     <tr><td>Trwałość nośnika</td><td>Niska (papier)</td><td>Wysoka (polimer/metal)</td></tr>
-    <tr><td>Koszt kolektora danych</td><td>od <span data-live-price="newland-mt93-megattera-standard-plus">2 207 zł</span></td><td>od <span data-live-price="zebra-tc501">6 541 zł</span></td></tr>
+    <tr><td>Koszt kolektora danych</td><td>od <span data-live-price="newland-mt93-megattera-standard-plus">2 207 zł</span></td><td>od <span data-live-price="zebra-tc501">6 319 zł</span></td></tr>
     <tr><td>Najlepszy dla</td><td>Magazyn, retail, logistyka</td><td>Retail (odzież), środki trwałe, pharma</td></tr>
   </tbody>
 </table>
@@ -7698,7 +7695,7 @@ export const guides: Guide[] = [
 <p>Inwentaryzacja RFID opłaca się gdy: magazyn ma ponad 30 000 SKU, firma prowadzi retail z dużą rotacją towaru (odzież, FMCG), inwentaryzacja środków trwałych obejmuje tysiące pozycji (meble, IT, narzędzia), branża wymaga traceability (farmacja, motoryzacja), lub firma przeprowadza inwentaryzację ciągłą/cykliczną (>2 razy w roku).</p>
 
 <h3>ROI inwentaryzacji RFID</h3>
-<p>Inwentaryzacja RFID jest 10x szybsza niż z kodami kreskowymi, ale tag RFID kosztuje 10x więcej niż etykieta z kodem kreskowym. ROI pojawia się przy dużych wolumenach: oszczędność czasu pracy > koszt tagów. Punkt zwrotny: od 50 000+ tagów i więcej niż 2 inwentaryzacje rocznie — RFID zaczyna się opłacać. Kolektory danych z RFID w TAKMA: <a href="/produkt/zebra-tc501">Zebra TC501</a> (<span data-live-price="zebra-tc501">6 541 zł</span>), <a href="/produkt/zebra-tc701">Zebra TC701</a> (8 361 zł), <a href="/produkt/zebra-tc53e">Zebra TC53e</a> z opcją RFID (<span data-live-price="zebra-tc53e">4 926 zł</span>).</p>`
+<p>Inwentaryzacja RFID jest 10x szybsza niż z kodami kreskowymi, ale tag RFID kosztuje 10x więcej niż etykieta z kodem kreskowym. ROI pojawia się przy dużych wolumenach: oszczędność czasu pracy > koszt tagów. Punkt zwrotny: od 50 000+ tagów i więcej niż 2 inwentaryzacje rocznie — RFID zaczyna się opłacać. Kolektory danych z RFID w TAKMA: <a href="/produkt/zebra-tc501">Zebra TC501</a> (<span data-live-price="zebra-tc501">6 319 zł</span>), <a href="/produkt/zebra-tc701">Zebra TC701</a> (8 361 zł), <a href="/produkt/zebra-tc53e">Zebra TC53e</a> z opcją RFID (<span data-live-price="zebra-tc53e">5 372 zł</span>).</p>`
     },
     {
       id: 'wymagania-techniczne',
@@ -7771,23 +7768,23 @@ export const guides: Guide[] = [
     <tr><td><a href="/produkt/zebra-em45">Zebra EM45</a></td><td><span data-live-price="zebra-em45">2 951 zł</span></td><td>IP68 / 1,5 m</td><td>—</td><td>Środki trwałe (kamera 50 MP)</td></tr>
     <tr><td><a href="/produkt/datalogic-memor-17">Datalogic Memor 17</a></td><td><span data-live-price="datalogic-memor-17">2 991 zł</span></td><td>IP65 / 1,5 m</td><td>—</td><td>Retail 5G</td></tr>
     <tr><td><a href="/produkt/newland-n7-cachalot-pro-ii">Newland N7 Cachalot</a></td><td><span data-live-price="newland-n7-cachalot-pro-ii">3 346 zł</span></td><td>IP67 / 1,5 m</td><td>klawiatura</td><td>Magazyn z klawiaturą (budżet)</td></tr>
-    <tr><td><a href="/produkt/honeywell-ct32">Honeywell CT32</a></td><td><span data-live-price="honeywell-ct32">3 389 zł</span></td><td>IP65 / 1,5 m</td><td>—</td><td>Magazyn (hot-swap)</td></tr>
+    <tr><td><a href="/produkt/honeywell-ct32">Honeywell CT32</a></td><td><span data-live-price="honeywell-ct32">3 775 zł</span></td><td>IP65 / 1,5 m</td><td>—</td><td>Magazyn (hot-swap)</td></tr>
     <tr><td><a href="/produkt/newland-mt95-kambur-pro-ii">Newland MT95 Kambur</a></td><td><span data-live-price="newland-mt95-kambur-pro-ii">3 546 zł</span></td><td>IP67 / 1,5 m</td><td>—</td><td>Teren 5G (budżetowy)</td></tr>
-    <tr><td><strong><a href="/produkt/zebra-tc501">Zebra TC501</a></strong></td><td><span data-live-price="zebra-tc501">6 541 zł</span></td><td>IP68 / 2,4 m</td><td>—</td><td><strong>RFID inwentaryzacja</strong></td></tr>
+    <tr><td><strong><a href="/produkt/zebra-tc501">Zebra TC501</a></strong></td><td><span data-live-price="zebra-tc501">6 319 zł</span></td><td>IP68 / 2,4 m</td><td>—</td><td><strong>RFID inwentaryzacja</strong></td></tr>
     <tr><td><a href="/produkt/zebra-tc701">Zebra TC701</a></td><td><span data-live-price="zebra-tc701">8 361 zł</span></td><td>IP68 / 3,66 m</td><td>—</td><td>RFID ultra-rugged</td></tr>
-    <tr><td><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a></strong></td><td><span data-live-price="zebra-mc3400">4 561 zł</span></td><td>IP67 / 2,4 m</td><td>3 klawiatury</td><td><strong>Duży magazyn — optymalny</strong></td></tr>
+    <tr><td><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a></strong></td><td><span data-live-price="zebra-mc3400">4 637 zł</span></td><td>IP67 / 2,4 m</td><td>3 klawiatury</td><td><strong>Duży magazyn — optymalny</strong></td></tr>
     <tr><td><a href="/produkt/datalogic-skorpio-x5">Datalogic Skorpio X5</a></td><td><span data-live-price="datalogic-skorpio-x5">4 858 zł</span></td><td>IP65 / 1,8 m</td><td>klawiatura</td><td>Magazyn gun (Datalogic)</td></tr>
     <tr><td><a href="/produkt/datalogic-memor-30">Datalogic Memor 30</a></td><td><span data-live-price="datalogic-memor-30">4 869 zł</span></td><td>IP68 / 1,8 m</td><td>—</td><td>Magazyn (Datalogic)</td></tr>
-    <tr><td><a href="/produkt/zebra-tc53e">Zebra TC53e</a></td><td><span data-live-price="zebra-tc53e">4 926 zł</span></td><td>IP68 / 1,8 m</td><td>—</td><td>Magazyn premium (opcja RFID)</td></tr>
+    <tr><td><a href="/produkt/zebra-tc53e">Zebra TC53e</a></td><td><span data-live-price="zebra-tc53e">5 372 zł</span></td><td>IP68 / 1,8 m</td><td>—</td><td>Magazyn premium (opcja RFID)</td></tr>
     <tr><td><a href="/produkt/zebra-mc3450">Zebra MC3450</a></td><td><span data-live-price="zebra-mc3450">5 572 zł</span></td><td>IP67 / 2,4 m</td><td>3 klawiatury + 5G</td><td>Duży magazyn + teren</td></tr>
     <tr><td><a href="/produkt/honeywell-ck62">Honeywell CK62</a></td><td><span data-live-price="honeywell-ck62">5 759 zł</span></td><td>IP65 / 1,8 m</td><td>klawiatura</td><td>Magazyn gun (Honeywell)</td></tr>
     <tr><td><a href="/produkt/datalogic-memor-35">Datalogic Memor 35</a></td><td><span data-live-price="datalogic-memor-35">5 775 zł</span></td><td>IP68 / 1,8 m</td><td>—</td><td>Premium (Datalogic)</td></tr>
     <tr><td><a href="/produkt/zebra-mc3300x">Zebra MC3300x</a></td><td><span data-live-price="zebra-mc3300x">5 779 zł</span></td><td>IP64 / 1,8 m</td><td>3 klawiatury</td><td>Legacy (następca: MC3400)</td></tr>
     <tr><td><a href="/produkt/honeywell-ct70">Honeywell CT70</a></td><td><span data-live-price="honeywell-ct70">6 383 zł</span></td><td>IP68 / 1,8 m</td><td>—</td><td>Premium touch (Honeywell)</td></tr>
-    <tr><td><a href="/produkt/zebra-tc53">Zebra TC53</a></td><td><span data-live-price="zebra-tc53">6 418 zł</span></td><td>IP68 / 1,8 m</td><td>—</td><td>Premium touch (Zebra)</td></tr>
+    <tr><td><a href="/produkt/zebra-tc53">Zebra TC53</a></td><td><span data-live-price="zebra-tc53">6 999 zł</span></td><td>IP68 / 1,8 m</td><td>—</td><td>Premium touch (Zebra)</td></tr>
     <tr><td><a href="/produkt/zebra-tc73">Zebra TC73</a></td><td><span data-live-price="zebra-tc73">7 044 zł</span></td><td>IP68 / 3,05 m</td><td>—</td><td>Ultra-rugged touch</td></tr>
-    <tr><td><a href="/produkt/zebra-mc9400">Zebra MC9400</a></td><td><span data-live-price="zebra-mc9400">7 638 zł</span></td><td>IP68 / 3,65 m</td><td>7 klawiatur</td><td><strong>Mroźnia / ultra-rugged</strong></td></tr>
-    <tr><td><a href="/produkt/honeywell-ck67">Honeywell CK67</a></td><td><span data-live-price="honeywell-ck67">7 765 zł</span></td><td>IP65 / 1,8 m</td><td>klawiatura</td><td>Ultra-rugged gun (Honeywell)</td></tr>
+    <tr><td><a href="/produkt/zebra-mc9400">Zebra MC9400</a></td><td><span data-live-price="zebra-mc9400">8 482 zł</span></td><td>IP68 / 3,65 m</td><td>7 klawiatur</td><td><strong>Mroźnia / ultra-rugged</strong></td></tr>
+    <tr><td><a href="/produkt/honeywell-ck67">Honeywell CK67</a></td><td><span data-live-price="honeywell-ck67">8 595 zł</span></td><td>IP65 / 1,8 m</td><td>klawiatura</td><td>Ultra-rugged gun (Honeywell)</td></tr>
     <tr><td><a href="/produkt/honeywell-ct47">Honeywell CT47</a></td><td><span data-live-price="honeywell-ct47">7 901 zł</span></td><td>IP68 / 1,8 m</td><td>—</td><td>Premium 5G (Honeywell)</td></tr>
   </tbody>
 </table>
@@ -7797,10 +7794,10 @@ export const guides: Guide[] = [
   <li><strong><a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a> (<span data-live-price="newland-mt93-megattera-standard-plus">2 207 zł</span>)</strong> — najniższy budżet. Solidny kolektor danych do inwentaryzacji za cenę tańszego smartfona. IP67, Wi-Fi 5, Android 13. Idealny na start dla firm do 5 000 SKU.</li>
   <li><strong><a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a> (<span data-live-price="datalogic-memor-12">2 687 zł</span>)</strong> — najlżejszy i najsmuklejszy kolektor danych (245 g). Idealny do inwentaryzacji ciągłej w retail, gdzie liczy się ergonomia. Skaner 2D, IP65, Gorilla Glass.</li>
   <li><strong><a href="/produkt/zebra-tc22">Zebra TC22</a> (<span data-live-price="zebra-tc22">2 417 zł</span>)</strong> — bestseller. Ekran 6" FHD+, IP68, Wi-Fi 6E, skaner SE55 do 7,6 m. 10 lat wsparcia LifeGuard — najniższy TCO wśród kolektorów touch.</li>
-  <li><strong><a href="/produkt/honeywell-ct32">Honeywell CT32</a> (<span data-live-price="honeywell-ct32">3 389 zł</span>)</strong> — bateria hot-swap. Jedyny terminal mobilny Honeywell z wymienną baterią w cenie poniżej 3 500 zł. Inwentaryzacja cykliczna bez przestojów na ładowanie.</li>
-  <li><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a> (<span data-live-price="zebra-mc3400">4 561 zł</span>)</strong> — gun z klawiaturą do dużych magazynów. Skaner SE58 do 30,5 m, hot-swap bateria, 3 opcje klawiatury. Alternatywa: <a href="/produkt/honeywell-ck67">Honeywell CK67</a> (<span data-live-price="honeywell-ck67">7 765 zł</span>) z FlexRange XLR.</li>
+  <li><strong><a href="/produkt/honeywell-ct32">Honeywell CT32</a> (<span data-live-price="honeywell-ct32">3 775 zł</span>)</strong> — bateria hot-swap. Jedyny terminal mobilny Honeywell z wymienną baterią w cenie poniżej 3 500 zł. Inwentaryzacja cykliczna bez przestojów na ładowanie.</li>
+  <li><strong><a href="/produkt/zebra-mc3400">Zebra MC3400</a> (<span data-live-price="zebra-mc3400">4 637 zł</span>)</strong> — gun z klawiaturą do dużych magazynów. Skaner SE58 do 30,5 m, hot-swap bateria, 3 opcje klawiatury. Alternatywa: <a href="/produkt/honeywell-ck67">Honeywell CK67</a> (<span data-live-price="honeywell-ck67">8 595 zł</span>) z FlexRange XLR.</li>
   <li><strong><a href="/produkt/datalogic-memor-30">Datalogic Memor 30</a> (<span data-live-price="datalogic-memor-30">4 869 zł</span>)</strong> — premium touch od Datalogic. Ekran 6", IP68, skaner Mega 1.4 MP. Dla firm preferujących ekosystem Datalogic (DL-AXIST, Wavelink).</li>
-  <li><strong><a href="/produkt/zebra-tc501">Zebra TC501</a> (<span data-live-price="zebra-tc501">6 541 zł</span>)</strong> — RFID UHF wbudowany. Jedyny terminal z czytnikiem RFID poniżej 4 000 zł. Inwentaryzacja 3 000-5 000 tagów/h bez osobnego czytnika.</li>
+  <li><strong><a href="/produkt/zebra-tc501">Zebra TC501</a> (<span data-live-price="zebra-tc501">6 319 zł</span>)</strong> — RFID UHF wbudowany. Jedyny terminal z czytnikiem RFID poniżej 4 000 zł. Inwentaryzacja 3 000-5 000 tagów/h bez osobnego czytnika.</li>
 </ol>
 
 <p>Pełny ranking terminali mobilnych z cenami: <a href="/poradnik/top-10-terminali-mobilnych-2026">TOP 15 kolektorów danych 2026 — ranking z cenami</a>. Porównanie marek: <a href="/poradnik/zebra-vs-honeywell-terminale-mobilne">Zebra vs Honeywell — terminale mobilne</a>.</p>`
@@ -7915,12 +7912,12 @@ export const guides: Guide[] = [
     <tr><td>Mały budżet</td><td><a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a></td><td><span data-live-price="newland-mt93-megattera-standard-plus">2 207 zł</span></td></tr>
     <tr><td>Retail / inwentaryzacja ciągła</td><td><a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a></td><td><span data-live-price="datalogic-memor-12">2 687 zł</span></td></tr>
     <tr><td>Optymalny wybór (touch)</td><td><a href="/produkt/zebra-tc22">Zebra TC22</a></td><td><span data-live-price="zebra-tc22">2 417 zł</span></td></tr>
-    <tr><td>Hot-swap bateria</td><td><a href="/produkt/honeywell-ct32">Honeywell CT32</a></td><td><span data-live-price="honeywell-ct32">3 389 zł</span></td></tr>
-    <tr><td>Duży magazyn + klawiatura</td><td><a href="/produkt/zebra-mc3400">Zebra MC3400</a> / <a href="/produkt/honeywell-ck67">Honeywell CK67</a></td><td>od <span data-live-price="zebra-mc3400">4 561 zł</span></td></tr>
+    <tr><td>Hot-swap bateria</td><td><a href="/produkt/honeywell-ct32">Honeywell CT32</a></td><td><span data-live-price="honeywell-ct32">3 775 zł</span></td></tr>
+    <tr><td>Duży magazyn + klawiatura</td><td><a href="/produkt/zebra-mc3400">Zebra MC3400</a> / <a href="/produkt/honeywell-ck67">Honeywell CK67</a></td><td>od <span data-live-price="zebra-mc3400">4 637 zł</span></td></tr>
     <tr><td>Premium touch (Datalogic)</td><td><a href="/produkt/datalogic-memor-30">Datalogic Memor 30</a></td><td><span data-live-price="datalogic-memor-30">4 869 zł</span></td></tr>
-    <tr><td>Inwentaryzacja RFID</td><td><a href="/produkt/zebra-tc501">Zebra TC501</a></td><td><span data-live-price="zebra-tc501">6 541 zł</span></td></tr>
+    <tr><td>Inwentaryzacja RFID</td><td><a href="/produkt/zebra-tc501">Zebra TC501</a></td><td><span data-live-price="zebra-tc501">6 319 zł</span></td></tr>
     <tr><td>Teren 5G</td><td><a href="/produkt/honeywell-ct47">Honeywell CT47</a> / <a href="/produkt/newland-mt95-kambur-pro-ii">Newland MT95</a></td><td>od <span data-live-price="newland-mt95-kambur-pro-ii">3 546 zł</span></td></tr>
-    <tr><td>Mroźnia -30°C</td><td><a href="/produkt/zebra-mc9400">Zebra MC9400</a></td><td><span data-live-price="zebra-mc9400">7 638 zł</span></td></tr>
+    <tr><td>Mroźnia -30°C</td><td><a href="/produkt/zebra-mc9400">Zebra MC9400</a></td><td><span data-live-price="zebra-mc9400">8 482 zł</span></td></tr>
   </tbody>
 </table>
 
@@ -7932,8 +7929,8 @@ export const guides: Guide[] = [
 
   faq: [
     { question: 'Jaki kolektor danych do inwentaryzacji kupić przy małym budżecie?', answer: '<a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93 Megattera Standard+</a> (2 207 zł netto) — najtańszy enterprise kolektor danych z IP67, Wi-Fi i skanerem 2D. Dla małych magazynów do 5 000 SKU to optymalny terminal mobilny do inwentaryzacji w najniższej cenie.' },
-    { question: 'Ile kosztuje kolektor danych do inwentaryzacji?', answer: 'Od 2 207 zł (<a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a>) do 7 638 zł (<a href="/produkt/zebra-mc9400">Zebra MC9400</a>). Najpopularniejszy kolektor danych do inwentaryzacji — <a href="/produkt/zebra-tc22">Zebra TC22</a> — kosztuje od 2 417 zł netto. Do ceny kolektora doliczyć drukarkę etykiet (od 650 zł, <a href="/produkt/zebra-zd220d">Zebra ZD220d</a>) i etykiety (od 44 zł/rolka).' },
-    { question: 'Czy potrzebuję kolektor danych z klawiaturą fizyczną do inwentaryzacji?', answer: 'Klawiatura fizyczna przyspiesza wpisywanie ilości (np. "47 szt.") przy inwentaryzacji pełnej. Polecamy: <a href="/produkt/zebra-mc3400">Zebra MC3400</a> (4 561 zł), <a href="/produkt/newland-n7-cachalot-pro-ii">Newland N7 Cachalot</a> (3 346 zł), <a href="/produkt/honeywell-ck62">Honeywell CK62</a> (5 759 zł). Jeśli skanujesz głównie kody bez ręcznego wpisywania — kolektor dotykowy (<a href="/produkt/zebra-tc22">TC22</a>) wystarczy.' },
+    { question: 'Ile kosztuje kolektor danych do inwentaryzacji?', answer: 'Od 2 207 zł (<a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a>) do 8 482 zł (<a href="/produkt/zebra-mc9400">Zebra MC9400</a>). Najpopularniejszy kolektor danych do inwentaryzacji — <a href="/produkt/zebra-tc22">Zebra TC22</a> — kosztuje od 2 417 zł netto. Do ceny kolektora doliczyć drukarkę etykiet (od 650 zł, <a href="/produkt/zebra-zd220d">Zebra ZD220d</a>) i etykiety (od 44 zł/rolka).' },
+    { question: 'Czy potrzebuję kolektor danych z klawiaturą fizyczną do inwentaryzacji?', answer: 'Klawiatura fizyczna przyspiesza wpisywanie ilości (np. "47 szt.") przy inwentaryzacji pełnej. Polecamy: <a href="/produkt/zebra-mc3400">Zebra MC3400</a> (4 637 zł), <a href="/produkt/newland-n7-cachalot-pro-ii">Newland N7 Cachalot</a> (3 346 zł), <a href="/produkt/honeywell-ck62">Honeywell CK62</a> (5 759 zł). Jeśli skanujesz głównie kody bez ręcznego wpisywania — kolektor dotykowy (<a href="/produkt/zebra-tc22">TC22</a>) wystarczy.' },
     { question: 'Zebra, Honeywell, Datalogic, Newland — który kolektor danych do inwentaryzacji?', answer: 'Każda marka ma swoją niszę. <strong>Honeywell</strong> (~25% rynku PL): najlepsze skanery FlexRange (do 24 m), wymienne baterie hot-swap (<a href="/produkt/honeywell-ct32">CT32</a>), solidny ekosystem Workflow Solutions. <strong>Datalogic</strong> (~10%): najlżejsze kolektory na rynku (<a href="/produkt/datalogic-memor-12">Memor 12</a> — 245 g), idealne do retail i inwentaryzacji ciągłej. <strong>Newland</strong> (~8%): najniższe ceny enterprise — <a href="/produkt/newland-mt93-megattera-standard-plus">MT93</a> od 2 207 zł. <strong>Zebra</strong> (~45%): najdłuższe wsparcie (10 lat LifeGuard), największy ekosystem akcesoriów. Wybór zależy od priorytetu: budżet → Newland, ergonomia → Datalogic, hot-swap → Honeywell, ekosystem → Zebra. Porównanie: <a href="/poradnik/zebra-vs-honeywell-terminale-mobilne">Zebra vs Honeywell</a>.' },
     { question: 'Czy kolektor danych do inwentaryzacji współpracuje z Excelem?', answer: 'Tak — każdy kolektor danych z DataWedge (Zebra) lub analogicznym softwarem skanuje kody kreskowe bezpośrednio do Excela (output: keystroke). Ale WMS da Ci automatyczne porównanie stanów i protokół inwentaryzacyjny — Excel tego nie zrobi. Do inwentaryzacji magazynu >1 000 SKU polecamy WMS.' },
     { question: 'Jaki zasięg skanera kodów kreskowych potrzebuję do inwentaryzacji?', answer: 'Magazyn standardowy (regały do 3 m): SE55 7,6 m (<a href="/produkt/zebra-tc22">Zebra TC22</a>) lub Mega 1.4 MP (<a href="/produkt/datalogic-memor-30">Datalogic Memor 30</a>). Regały wysokiego składowania (>6 m): SE58 30,5 m (<a href="/produkt/zebra-mc3400">MC3400</a>) lub FlexRange XLR 24 m (<a href="/produkt/honeywell-ck67">Honeywell CK67</a>). Budżetowy daleki zasięg: Newland EM4300 20 m (<a href="/produkt/newland-n7-cachalot-pro-ii">N7 Cachalot</a>). RFID: do 5 m (<a href="/produkt/zebra-tc501">TC501</a>).' },
@@ -7941,8 +7938,8 @@ export const guides: Guide[] = [
     { question: 'Jak długo wytrzymuje bateria kolektora przy ciągłym skanowaniu?', answer: '<a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a>: 8-10 h (4 300 mAh). <a href="/produkt/datalogic-memor-12">Datalogic Memor 12</a>: 8-10 h. <a href="/produkt/zebra-tc22">Zebra TC22</a>: 8-12 h. <a href="/produkt/honeywell-ct32">Honeywell CT32</a>: 10-12 h (hot-swap!). <a href="/produkt/zebra-mc3400">MC3400</a>: 10-14 h (5 200/7 000 mAh, hot-swap). <a href="/produkt/honeywell-ck67">Honeywell CK67</a>: 12-14 h. Przy inwentaryzacji pełnej (>8 h) polecamy kolektor z hot-swap baterią: CT32, MC3400, CK67, MC9400.' },
     { question: 'Czy kolektor danych do inwentaryzacji można podłączyć do WMS?', answer: 'Tak — kolektory danych z Android działają z polskimi WMS-ami: Comarch WMS, Sellasist WMS, Logifact, SAP EWM, Qguar, Asseco WAMAS. Zebra DataWedge pozwala na integrację skanera kodów kreskowych bez programowania (output: keystroke do pola WMS).' },
     { question: 'Czy mogę używać zwykłego smartfona zamiast kolektora danych?', answer: 'Technicznie tak (kamera skanuje kody), ale: smartfon nie ma dedykowanego skanera kodów kreskowych (wolniejszy 5-10x), brak IP67 (mokry magazyn = awaria), brak gun grip, brak DataWedge, brak wsparcia MDM. Kolektor danych za 2 207 zł (<a href="/produkt/newland-mt93-megattera-standard-plus">Newland MT93</a>) jest 10x szybszy i 5x trwalszy niż smartfon za 1 500 zł.' },
-    { question: 'Kiedy opłaca się inwentaryzacja RFID zamiast kodów kreskowych?', answer: 'Gdy masz >30 000 SKU i robisz inwentaryzację >2x/rok. Inwentaryzacja RFID kolektorem danych jest 10x szybsza, ale tag RFID kosztuje 10x więcej niż etykieta z kodem kreskowym. ROI przy dużych wolumenach: oszczędność czasu > koszt tagów. Kolektory danych RFID: <a href="/produkt/zebra-tc501">Zebra TC501</a> (<span data-live-price="zebra-tc501">6 541 zł</span>), <a href="/produkt/zebra-tc701">Zebra TC701</a> (<span data-live-price="zebra-tc701">8 361 zł</span>).' },
-    { question: 'Czy mogę skanować kody kreskowe i RFID jednym kolektorem danych?', answer: 'Tak — <a href="/produkt/zebra-tc501">Zebra TC501</a> i <a href="/produkt/zebra-tc701">TC701</a> mają zarówno skaner kodów kreskowych (AC670, do 30 m), jak i czytnik RFID UHF wbudowany. Jeden kolektor danych, dwie metody inwentaryzacji. <a href="/produkt/zebra-tc53e">Zebra TC53e</a> (4 926 zł) oferuje RFID jako opcję.' },
+    { question: 'Kiedy opłaca się inwentaryzacja RFID zamiast kodów kreskowych?', answer: 'Gdy masz >30 000 SKU i robisz inwentaryzację >2x/rok. Inwentaryzacja RFID kolektorem danych jest 10x szybsza, ale tag RFID kosztuje 10x więcej niż etykieta z kodem kreskowym. ROI przy dużych wolumenach: oszczędność czasu > koszt tagów. Kolektory danych RFID: <a href="/produkt/zebra-tc501">Zebra TC501</a> (<span data-live-price="zebra-tc501">6 319 zł</span>), <a href="/produkt/zebra-tc701">Zebra TC701</a> (<span data-live-price="zebra-tc701">8 361 zł</span>).' },
+    { question: 'Czy mogę skanować kody kreskowe i RFID jednym kolektorem danych?', answer: 'Tak — <a href="/produkt/zebra-tc501">Zebra TC501</a> i <a href="/produkt/zebra-tc701">TC701</a> mają zarówno skaner kodów kreskowych (AC670, do 30 m), jak i czytnik RFID UHF wbudowany. Jeden kolektor danych, dwie metody inwentaryzacji. <a href="/produkt/zebra-tc53e">Zebra TC53e</a> (5 372 zł) oferuje RFID jako opcję.' },
     { question: 'Czy TAKMA pomaga w konfiguracji kolektora danych do inwentaryzacji?', answer: 'Tak — oferujemy bezpłatne doradztwo techniczne, pomoc w konfiguracji DataWedge i integracji kolektora danych z WMS. Dostarczamy skonfigurowane terminale mobilne gotowe do pracy "out of the box". <a href="/kontakt">Kontakt</a> lub telefon.' },
     { question: 'Czy mogę zamówić zestaw: kolektor danych + drukarka etykiet + etykiety?', answer: 'Tak — kompletujemy zestawy inwentaryzacyjne. Przykład: <a href="/produkt/zebra-tc22">Zebra TC22</a> (2 417 zł) + <a href="/produkt/zebra-zd421d">drukarka ZD421d</a> (1 472 zł) + etykiety Z-Perform 102x152 mm (75 zł/rolka) = gotowy pakiet kolektor danych + drukarka etykiet od ~4 000 zł netto. <a href="/kontakt">Doradztwo i zamówienia</a>.' },
   ],
@@ -11202,7 +11199,7 @@ export const guides: Guide[] = [
 <tr><td>Skaner</td><td>CM60E + SE5500</td><td>CM60E</td><td>SE4710 / SE55</td><td>SE4710 / SE55</td><td>S0703 / S0803 FlexRange</td></tr>
 <tr><td><strong>Wsparcie Android</strong></td><td><strong>3-5 lat</strong></td><td><strong>3-5 lat</strong></td><td><strong>4+ lat (LifeGuard)</strong></td><td><strong>4+ lat (LifeGuard)</strong></td><td><strong>5 lat (Mobility Edge)</strong></td></tr>
 <tr><td>MDM</td><td>M3 Speedpack</td><td>M3 Speedpack</td><td>Mobility DNA</td><td>Mobility DNA</td><td>Operational Intelligence</td></tr>
-<tr><td><strong>Cena od</strong></td><td><strong>—</strong></td><td><strong>—</strong></td><td><strong>2 690 zł</strong></td><td><strong>2 417 zł</strong></td><td><strong>3 389 zł</strong></td></tr>
+<tr><td><strong>Cena od</strong></td><td><strong>—</strong></td><td><strong>—</strong></td><td><strong>2 690 zł</strong></td><td><strong>2 417 zł</strong></td><td><strong>3 775 zł</strong></td></tr>
 </tbody>
 </table>
 
@@ -11222,7 +11219,7 @@ export const guides: Guide[] = [
 
 <p><strong>Mobility DNA vs M3 Speedpack.</strong> Zebra Mobility DNA (DataWedge, StageNow, WorryFree WiFi, PowerPrecision+, Device Tracker) to najrozbudowanszy ekosystem zarządzania flotą terminali mobilnych na rynku. M3 Speedpack oferuje podstawowe funkcje MDM, ale ma węższy zakres — przy flotach 50+ terminali różnica jest odczuwalna.</p>
 
-<p><strong>Cena.</strong> <a href="/produkt/zebra-tc22">Zebra TC22</a> startuje od 2 417 zł netto — to najtańszy terminal z Wi-Fi 6E, IP68 i Mobility DNA na rynku. <a href="/produkt/m3-sm24">SM24</a> od 3 123 zł netto (Wi-Fi) / 3 552 zł (LTE) — droższy od TC22, ale z dwukrotnie większą pamięcią (8/128 GB vs 4/64 GB) i hot-swap baterii.</p>
+<p><strong>Cena.</strong> <a href="/produkt/zebra-tc22">Zebra TC22</a> startuje od 2 417 zł netto — to najtańszy terminal z Wi-Fi 6E, IP68 i Mobility DNA na rynku. <a href="/produkt/m3-sm24">SM24</a> od 3 016 zł netto (Wi-Fi) / 3 430 zł (LTE) — droższy od TC22, ale z dwukrotnie większą pamięcią (8/128 GB vs 4/64 GB) i hot-swap baterii.</p>
 
 <p><strong>IP67 vs IP68.</strong> SM24/SM25 mają IP67 (zanurzenie 1 m/30 min). TC22/TC27 i CT32 mają IP68 (zanurzenie 1,5 m/30 min). W praktyce rzadko zanurzamy terminale — ale IP68 daje lepszą ochronę przy intensywnym kontakcie z wodą (mycie halowe, deszcz).</p>`
     },
@@ -11231,7 +11228,7 @@ export const guides: Guide[] = [
       heading: 'Kiedy SM24/SM25, kiedy Zebra — rekomendacja',
       content: `<p><strong>SM24</strong> — gdy budżet jest priorytetem, flota poniżej 20 szt., cykl życia 3 lata, praca głównie w Wi-Fi, retail lub lekki magazyn. Najniższe TCO w segmencie 3-letnim.</p>
 
-<p><strong>SM25</strong> — gdy potrzebujesz 5G i skanera dalekiego zasięgu SE5500. SM25 daje 5G, Wi-Fi 6E i dwa silniki skanera — porównaj z <a href="/produkt/zebra-tc27">Zebra TC27</a> (2 690 zł, 5G + Mobility DNA) i <a href="/produkt/honeywell-ct32">Honeywell CT32</a> (3 389 zł, 5G + FlexRange do 11 m).</p>
+<p><strong>SM25</strong> — gdy potrzebujesz 5G i skanera dalekiego zasięgu SE5500. SM25 daje 5G, Wi-Fi 6E i dwa silniki skanera — porównaj z <a href="/produkt/zebra-tc27">Zebra TC27</a> (2 690 zł, 5G + Mobility DNA) i <a href="/produkt/honeywell-ct32">Honeywell CT32</a> (3 775 zł, 5G + FlexRange do 11 m).</p>
 
 <p><strong><a href="/produkt/zebra-tc22">Zebra TC22</a> / <a href="/produkt/zebra-tc27">TC27</a></strong> — gdy potrzebujesz Mobility DNA (DataWedge, PowerPrecision+, Device Tracker), IP68 i sprawdzonego ekosystemu Zebra z LifeGuard. TC22 od 2 417 zł to najtańszy terminal enterprise z Wi-Fi 6E na rynku.</p>
 
@@ -11326,7 +11323,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Ile kosztuje M3 SM24 / SM25?',
-      answer: '<a href="/produkt/m3-sm24">SM24</a> W (Wi-Fi) od 3 123 zł netto, SM24 X (Wi-Fi + LTE + GPS) od 3 552 zł netto. Dla porównania: <a href="/produkt/zebra-tc22">Zebra TC22</a> od 2 417 zł, <a href="/produkt/zebra-tc27">TC27</a> od 2 690 zł, <a href="/produkt/honeywell-ct32">Honeywell CT32</a> od 3 389 zł. SM24 jest droższy od TC22, ale oferuje 8 GB RAM, 128 GB Flash i hot-swap baterii. Ceny SM25 dostępne na zapytanie — skontaktuj się z TAKMA: +48 607 819 688 lub biuro@takma.com.pl.',
+      answer: '<a href="/produkt/m3-sm24">SM24</a> W (Wi-Fi) od 3 016 zł netto, SM24 X (Wi-Fi + LTE + GPS) od 3 430 zł netto. Dla porównania: <a href="/produkt/zebra-tc22">Zebra TC22</a> od 2 417 zł, <a href="/produkt/zebra-tc27">TC27</a> od 2 690 zł, <a href="/produkt/honeywell-ct32">Honeywell CT32</a> od 3 775 zł. SM24 jest droższy od TC22, ale oferuje 8 GB RAM, 128 GB Flash i hot-swap baterii. Ceny SM25 dostępne na zapytanie — skontaktuj się z TAKMA: +48 607 819 688 lub biuro@takma.com.pl.',
     },
     {
       question: 'Czy TAKMA serwisuje terminale M3 Mobile?',
@@ -11990,7 +11987,7 @@ export const guides: Guide[] = [
       <td class="border border-gray-200 px-2 sm:px-3 py-2"><a href="/produkt/zebra-tc501">Zebra TC501</a></td>
       <td class="border border-gray-200 px-2 sm:px-3 py-2">Nowa (2025+)</td>
       <td class="border border-gray-200 px-2 sm:px-3 py-2">WiFi+ToF, 5G+ToF</td>
-      <td class="border border-gray-200 px-2 sm:px-3 py-2">6 541 zł</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">6 319 zł</td>
       <td class="border border-gray-200 px-2 sm:px-3 py-2">Logistyka, field service</td>
     </tr>
     <tr>
@@ -12004,7 +12001,7 @@ export const guides: Guide[] = [
       <td class="border border-gray-200 px-2 sm:px-3 py-2"><a href="/produkt/zebra-tc53">Zebra TC53</a></td>
       <td class="border border-gray-200 px-2 sm:px-3 py-2">Poprzednia</td>
       <td class="border border-gray-200 px-2 sm:px-3 py-2">Premium (ToF)</td>
-      <td class="border border-gray-200 px-2 sm:px-3 py-2">6 418 zł</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">6 999 zł</td>
       <td class="border border-gray-200 px-2 sm:px-3 py-2">Retail, lekka logistyka</td>
     </tr>
     <tr>
@@ -12053,7 +12050,7 @@ export const guides: Guide[] = [
   <tbody>
     <tr>
       <td class="border border-gray-200 px-2 sm:px-3 py-2"><strong>Koszt</strong></td>
-      <td class="border border-gray-200 px-2 sm:px-3 py-2">Terminal z ToF od 6 541 zł</td>
+      <td class="border border-gray-200 px-2 sm:px-3 py-2">Terminal z ToF od 6 319 zł</td>
       <td class="border border-gray-200 px-2 sm:px-3 py-2">30 000 -- 100 000 zł</td>
       <td class="border border-gray-200 px-2 sm:px-3 py-2">0 zł (ale koszty błędów)</td>
     </tr>
@@ -12097,7 +12094,7 @@ export const guides: Guide[] = [
 </table>
 
 <h3>Kiedy wybrać dimensioning mobilny?</h3>
-<p>Dimensioning mobilny na terminalu Zebra sprawdza się najlepiej, gdy paczki są rozproszone — kurier odbierający przesyłki u klientów, pracownik przyjęcia towaru w magazynie, operator na rampie załadunkowej. Nie wymaga stałej infrastruktury, a terminal pełni jednocześnie funkcję skanera kodów, komputera z WMS i urządzenia pomiarowego. Koszt wejścia (od 6 541 zł za TC501 z ToF) jest wielokrotnie niższy niż systemu stacjonarnego.</p>
+<p>Dimensioning mobilny na terminalu Zebra sprawdza się najlepiej, gdy paczki są rozproszone — kurier odbierający przesyłki u klientów, pracownik przyjęcia towaru w magazynie, operator na rampie załadunkowej. Nie wymaga stałej infrastruktury, a terminal pełni jednocześnie funkcję skanera kodów, komputera z WMS i urządzenia pomiarowego. Koszt wejścia (od 6 319 zł za TC501 z ToF) jest wielokrotnie niższy niż systemu stacjonarnego.</p>
 
 <h3>Kiedy wybrać system stacjonarny?</h3>
 <p>Systemy stacjonarne (Cubiscan, Mettler Toledo) są uzasadnione przy bardzo dużych wolumenach (tysiące paczek dziennie) w jednym punkcie — np. sortownia centralna firmy kurierskiej. Oferują najwyższą dokładność (+/-0,1 cm), zintegrowaną wagę i pomiar na taśmociągu, ale wymagają inwestycji rzędu 30 000-100 000 zł i stałego stanowiska.</p>
@@ -12147,7 +12144,7 @@ export const guides: Guide[] = [
 
 <h3>Kalkulacja zwrotu z inwestycji</h3>
 <ul>
-  <li><strong>Koszt terminala z ToF:</strong> <a href="/produkt/zebra-tc501">Zebra TC501</a> od 6 541 zł (najtańszy model z kamerą ToF)</li>
+  <li><strong>Koszt terminala z ToF:</strong> <a href="/produkt/zebra-tc501">Zebra TC501</a> od 6 319 zł (najtańszy model z kamerą ToF)</li>
   <li><strong>Licencja:</strong> MD Client jest częścią pakietu Mobility DNA Professional — wliczona w cenę terminala w wersji Professional/Premium</li>
   <li><strong>Miesięczne oszczędności:</strong> ok. 945 zł (czas) + redukcja strat na błędach wymiarowych</li>
   <li><strong>Zwrot z inwestycji:</strong> ok. 5 miesięcy (uwzględniając tylko oszczędność czasu)</li>
@@ -12472,7 +12469,7 @@ export const guides: Guide[] = [
     {
       id: 'wprowadzenie',
       heading: 'M3 Mobile — koreański producent enterprise z AI i 5G',
-      content: `<p>M3 Mobile to koreański producent terminali mobilnych klasy enterprise, założony w 2000 roku w Daegu (Korea Południowa). Firma specjalizuje się w urządzeniach do automatycznej identyfikacji — kolektorach danych z fizycznymi klawiaturami, terminalach dotykowych i tabletach rugged. W 2026 roku portfolio M3 Mobile obejmuje <strong>9 modeli terminali</strong> — od flagowego SM30 z akceleratorem AI 12 TOPS i łącznością 5G po budżetowego SL20+ od 2 255 zł netto.</p>
+      content: `<p>M3 Mobile to koreański producent terminali mobilnych klasy enterprise, założony w 2000 roku w Daegu (Korea Południowa). Firma specjalizuje się w urządzeniach do automatycznej identyfikacji — kolektorach danych z fizycznymi klawiaturami, terminalach dotykowych i tabletach rugged. W 2026 roku portfolio M3 Mobile obejmuje <strong>9 modeli terminali</strong> — od flagowego SM30 z akceleratorem AI 12 TOPS i łącznością 5G po budżetowego SL20+ od 2 269 zł netto.</p>
 <p>Kluczowym wyróżnikiem M3 Mobile jest platforma <strong>M3 Speedpack</strong> — zintegrowane narzędzie MDM do zdalnego zarządzania urządzeniami, aktualizacji firmware, konfiguracji Wi-Fi/VPN i wdrażania aplikacji. Speedpack upraszcza deployment flot terminali w magazynach i centrach logistycznych.</p>
 <p><strong>TAKMA jest partnerem M3 Mobile w Polsce</strong> — zapewniamy doradztwo w doborze modelu, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny oraz urządzenia demo do testów pilotażowych. Pełna oferta terminali M3 Mobile dostępna jest na stronie <a href="/terminale-m3-mobile">terminale M3 Mobile</a>.</p>
 <p>W tym poradniku porównujemy wszystkie aktualne modele M3 Mobile — z tabelami specyfikacji, cenami netto i rekomendacjami zastosowań. Jeśli szukasz jednego konkretnego terminala, przejdź do sekcji z jego opisem. Jeśli nie wiesz, który wybrać — zacznij od <a href="#tabela-porownawcza">tabeli porównawczej</a> lub <a href="#jaki-terminal-wybrac">macierzy zastosowań</a>.</p>`,
@@ -12511,7 +12508,7 @@ export const guides: Guide[] = [
 <td>14→18</td>
 <td>Nie</td>
 <td>5G (opcja)</td>
-<td>3 610 zł</td>
+<td>4 132 zł</td>
 </tr>
 <tr>
 <td><a href="/produkt/m3-sm25"><strong>SM25</strong></a></td>
@@ -12537,7 +12534,7 @@ export const guides: Guide[] = [
 <td>16→18</td>
 <td>Nie</td>
 <td>4G (opcja)</td>
-<td>3 123 zł</td>
+<td>3 016 zł</td>
 </tr>
 <tr>
 <td><a href="/produkt/m3-us30"><strong>US30</strong></a></td>
@@ -12550,7 +12547,7 @@ export const guides: Guide[] = [
 <td>13</td>
 <td>30/38/42/51 kl.</td>
 <td>Brak (Wi-Fi 6)</td>
-<td>3 610 zł</td>
+<td>4 290 zł</td>
 </tr>
 <tr>
 <td><a href="/produkt/m3-us20"><strong>US20</strong></a></td>
@@ -12563,7 +12560,7 @@ export const guides: Guide[] = [
 <td>10</td>
 <td>30/42/51 kl.</td>
 <td>4G (opcja)</td>
-<td>4 080 zł</td>
+<td>4 411 zł</td>
 </tr>
 <tr>
 <td><a href="/produkt/m3-sl20"><strong>SL20+</strong></a></td>
@@ -12576,7 +12573,7 @@ export const guides: Guide[] = [
 <td>13→15</td>
 <td>Nie</td>
 <td>4G + GPS</td>
-<td>2 255 zł</td>
+<td>2 269 zł</td>
 </tr>
 <tr>
 <td><a href="/produkt/m3-sl20k"><strong>SL20K</strong></a></td>
@@ -12589,7 +12586,7 @@ export const guides: Guide[] = [
 <td>13→15</td>
 <td>30 kl.</td>
 <td>4G + GPS</td>
-<td>2 424 zł</td>
+<td>2 492 zł</td>
 </tr>
 <tr>
 <td><a href="/produkt/m3-ul20"><strong>UL20</strong></a></td>
@@ -12602,7 +12599,7 @@ export const guides: Guide[] = [
 <td>9/10</td>
 <td>28/35/53 kl. (gun)</td>
 <td>4G (opcja)</td>
-<td>4 920 zł</td>
+<td>5 484 zł</td>
 </tr>
 <tr>
 <td><a href="/produkt/m3-ul30"><strong>UL30</strong></a></td>
@@ -12615,7 +12612,7 @@ export const guides: Guide[] = [
 <td>14→18</td>
 <td>28/35/53 kl. (gun)</td>
 <td>Brak (Wi-Fi 6E)</td>
-<td>5 626 zł</td>
+<td>6 431 zł</td>
 </tr>
 </tbody>
 </table>
@@ -12640,7 +12637,7 @@ export const guides: Guide[] = [
 <h3>Dla kogo SM30?</h3>
 <p>SM30 to wybór dla firm wdrażających sztuczną inteligencję w procesach magazynowych i produkcyjnych: kontrola jakości z detekcją defektów, rozpoznawanie etykiet OCR, skanowanie w magazynach wysokiego składowania (SE5500, do 15 m). Dzięki IP68 i temperaturze pracy od -20°C do +55°C SM30 sprawdza się w chłodniach i trudnych warunkach zewnętrznych.</p>
 <h3>Cena M3 SM30</h3>
-<p>Od <strong>3 610 zł netto</strong> (Wi-Fi, SE4770) do <strong>4 378 zł netto</strong> (5G+GPS, SE5500). Dostępny w 4 wariantach. <a href="/produkt/m3-sm30">Zobacz kartę produktu M3 SM30</a>.</p>`,
+<p>Od <strong>4 132 zł netto</strong> (Wi-Fi, SE4770) do <strong>5 011 zł netto</strong> (5G+GPS, SE5500). Dostępny w 4 wariantach. <a href="/produkt/m3-sm30">Zobacz kartę produktu M3 SM30</a>.</p>`,
     },
     {
       id: 'us30-us20',
@@ -12665,13 +12662,13 @@ export const guides: Guide[] = [
 <tr><td>Bateria</td><td>6700 mAh hot-swap</td><td>6700 mAh hot-swap</td></tr>
 <tr><td>Upadki</td><td>1,8 m (MIL-STD-810G)</td><td>1,8 m (MIL-STD-810G)</td></tr>
 <tr><td>Bluetooth</td><td>4.1 BLE</td><td>4.1 BLE</td></tr>
-<tr><td>Cena od</td><td><strong>3 610 zł</strong></td><td>4 080 zł</td></tr>
+<tr><td>Cena od</td><td><strong>4 290 zł</strong></td><td>4 411 zł</td></tr>
 <tr><td>Wariantów</td><td>12</td><td>21</td></tr>
 </tbody>
 </table>
 </div>
 <h3>Kto powinien wybrać US30?</h3>
-<p>US30 to nowszy model z Wi-Fi 6 i Androidem 13, a do tego jest <strong>tańszy</strong> (od 3 610 zł vs 4 080 zł za US20). Ma nową klawiaturę funkcyjno-numeryczną 38-klawiszową i najnowszy skaner SE5800. Dla nowych wdrożeń US30 jest jednoznacznym wyborem.</p>
+<p>US30 to nowszy model z Wi-Fi 6 i Androidem 13, a do tego jest <strong>tańszy</strong> (od 4 290 zł vs 4 411 zł za US20). Ma nową klawiaturę funkcyjno-numeryczną 38-klawiszową i najnowszy skaner SE5800. Dla nowych wdrożeń US30 jest jednoznacznym wyborem.</p>
 <h3>Kiedy US20 jest lepszym wyborem?</h3>
 <p>US20 wygrywa w dwóch sytuacjach: (1) potrzebujesz <strong>4G LTE + GPS</strong> do pracy w terenie — US30 nie ma wariantu z modemem komórkowym, (2) potrzebujesz skanera <strong>SE4770 pod kątem 45°</strong> do ergonomicznego skanowania półek lub <strong>SE4850 LR</strong> do ekstremalnie dalekiego zasięgu. US20 oferuje 6 opcji skanerów vs 3 w US30.</p>
 <p><strong>Ważne:</strong> akcesoria US20 i US30 są wzajemnie kompatybilne — stacje dokujące, ładowarki baterii, booty, uchwyty pistoletowe i baterie US20-BATT-E67 pasują do obu modeli.</p>
@@ -12694,7 +12691,7 @@ export const guides: Guide[] = [
 <li><strong>Android:</strong> oba 16→18 (3 generacje)</li>
 </ul>
 <h3>Cena</h3>
-<p>SM24 — od <strong>3 123 zł netto</strong> (Wi-Fi) do 3 552 zł (LTE). SM25 — cena oficjalnie nieogłoszona (premiera czerwiec 2026), szacunkowo 20-30% więcej niż SM24.</p>
+<p>SM24 — od <strong>3 016 zł netto</strong> (Wi-Fi) do 3 430 zł (LTE). SM25 — od <strong>3 654 zł netto</strong>, czyli około 20% więcej niż SM24.</p>
 <h3>Który wybrać?</h3>
 <p><strong>SM24</strong> — jeśli wystarczy ekran HD+, nie potrzebujesz 5G ani skanera dalekiego zasięgu, a budżet jest ograniczony. Doskonały do kompletacji e-commerce, inwentaryzacji i handlu detalicznego.</p>
 <p><strong>SM25</strong> — jeśli pracujesz w dużym centrum logistycznym z magazynami wysokiego składowania (SE5500 do 15 m), potrzebujesz 5G do WMS w chmurze lub zależy Ci na ostrości ekranu FHD+ do pracy z dokumentami.</p>
@@ -12718,7 +12715,7 @@ export const guides: Guide[] = [
 <li><strong>Android:</strong> oba 13→15</li>
 </ul>
 <h3>Cena</h3>
-<p>SL20+ — od <strong>2 255 zł netto</strong> (4/64 GB) do 2 416 zł (8/128 GB). SL20K — od <strong>2 424 zł netto</strong>. To najtańsze terminale enterprise M3 Mobile z hot-swap na polskim rynku.</p>
+<p>SL20+ — od <strong>2 269 zł netto</strong> (4/64 GB) do 2 416 zł (8/128 GB). SL20K — od <strong>2 492 zł netto</strong>. To najtańsze terminale enterprise M3 Mobile z hot-swap na polskim rynku.</p>
 <h3>Który wybrać?</h3>
 <p><strong>SL20+</strong> — do pracy z interfejsem dotykowym (retail, hospitality, lekka logistyka). Większy ekran 5,5" i IP67 to przewagi dla pracowników przyzwyczajonych do smartfonów. eSIM upraszcza zarządzanie flotą.</p>
 <p><strong>SL20K</strong> — do intensywnego wpisywania danych liczbowych (inwentaryzacja, kompletacja WMS). Klawiatura fizyczna przyspiesza pracę o 30-50% vs klawiatura ekranowa. Klawiatura z podświetleniem LED do pracy w ciemnych pomieszczeniach.</p>
@@ -12744,7 +12741,7 @@ export const guides: Guide[] = [
 <li><strong>4G LTE:</strong> UL20 — tak (UL20X). UL30 — brak (tylko Wi-Fi 6E)</li>
 </ul>
 <h3>Cena</h3>
-<p>UL20 — od <strong>4 920 zł netto</strong> (UL20W, SE4750). UL30 — od <strong>5 626 zł netto</strong> (SE4770). Wersje Freezer UL30F od 6 251 zł, z SE5800 do 6 809 zł.</p>
+<p>UL20 — od <strong>5 484 zł netto</strong> (UL20W, SE4750). UL30 — od <strong>6 431 zł netto</strong> (SE4770). Wersje Freezer UL30F od 6 251 zł, z SE5800 do 6 809 zł.</p>
 <h3>Który wybrać?</h3>
 <p><strong>UL30</strong> — dla nowych wdrożeń. Procesor QCS6490 z AI, Wi-Fi 6E, Android 14→18, upadki z 3 m i hot-swap dają wyraźną przewagę nad UL20. Największy ekran 5" FHD w klasie terminali gun z klawiaturą (Zebra MC3400 i MC9400 mają 4-4,3").</p>
 <p><strong>UL20</strong> — jeśli potrzebujesz <strong>4G LTE</strong> (model UL20X) do pracy w terenie bez Wi-Fi, lub masz ograniczony budżet. Modele UL20 FX (z SE5800, USB-C, Wi-Fi 6 i 8/128 GB) to dobry kompromis. Akcesoria UL20 i UL30 są kompatybilne.</p>
@@ -12800,7 +12797,7 @@ export const guides: Guide[] = [
 <td><strong>Retail / handel detaliczny</strong></td>
 <td><a href="/produkt/m3-sl20">SL20+</a>, <a href="/produkt/m3-sm24">SM24</a></td>
 <td><a href="/produkt/m3-sl20k">SL20K</a></td>
-<td>SL20+ od 2 255 zł — najtańszy z IP67 i hot-swap. SM24 z większym ekranem 6".</td>
+<td>SL20+ od 2 269 zł — najtańszy z IP67 i hot-swap. SM24 z większym ekranem 6".</td>
 </tr>
 <tr>
 <td><strong>Wózki widłowe</strong></td>
@@ -12817,30 +12814,30 @@ export const guides: Guide[] = [
       id: 'podsumowanie',
       heading: 'Podsumowanie — 5 kluczowych wniosków',
       content: `<ol>
-<li><strong>SM30 to flagowiec z AI i 5G</strong> — jedyny terminal M3 Mobile z NPU 12 TOPS, IP68 i BLE Beaconing. Cena od 3 610 zł netto stawia go w bezpośredniej konkurencji z Zebra TC53e, przy niższej cenie i wbudowanym AI.</li>
-<li><strong>US30 zastępuje US20 dla nowych wdrożeń</strong> — Wi-Fi 6, Android 13, nowy skaner SE5800 i nowa klawiatura 38-klawiszowa, a do tego niższa cena (3 610 zł vs 4 080 zł). US20 pozostaje jedynym terminalem z klawiaturą M3 z 4G LTE.</li>
-<li><strong>SM24 to najlepszy stosunek ceny do możliwości</strong> — 8 GB RAM, 128 GB Flash, Android 16→18 i hot-swap baterii za 3 123 zł netto. Dwukrotnie więcej pamięci niż Zebra TC22/TC27 w podobnej cenie.</li>
+<li><strong>SM30 to flagowiec z AI i 5G</strong> — jedyny terminal M3 Mobile z NPU 12 TOPS, IP68 i BLE Beaconing. Cena od 4 132 zł netto stawia go w bezpośredniej konkurencji z Zebra TC53e, przy niższej cenie i wbudowanym AI.</li>
+<li><strong>US30 zastępuje US20 dla nowych wdrożeń</strong> — Wi-Fi 6, Android 13, nowy skaner SE5800 i nowa klawiatura 38-klawiszowa, a do tego niższa cena (4 290 zł vs 4 411 zł). US20 pozostaje jedynym terminalem z klawiaturą M3 z 4G LTE.</li>
+<li><strong>SM24 to najlepszy stosunek ceny do możliwości</strong> — 8 GB RAM, 128 GB Flash, Android 16→18 i hot-swap baterii za 3 016 zł netto. Dwukrotnie więcej pamięci niż Zebra TC22/TC27 w podobnej cenie.</li>
 <li><strong>UL30 to najwytrzymalszy terminal M3</strong> — obudowa gun z upadkami z 3,0 m, 6000 tumble, IP67 i klawiatura do 53 klawiszy. Największy ekran 5" FHD w klasie terminali gun z klawiaturą. AI 12 TOPS i Wi-Fi 6E jak w SM30.</li>
-<li><strong>SL20+ od 2 255 zł to najtańsze wejście w enterprise</strong> — IP67, hot-swap, 4G LTE + GPS + eSIM i skaner Zebra SE4710. Idealny do retailu, hospitality i lekkiej logistyki, gdzie budżet na terminal nie przekracza 2 500 zł netto.</li>
+<li><strong>SL20+ od 2 269 zł to najtańsze wejście w enterprise</strong> — IP67, hot-swap, 4G LTE + GPS + eSIM i skaner Zebra SE4710. Idealny do retailu, hospitality i lekkiej logistyki, gdzie budżet na terminal nie przekracza 2 500 zł netto.</li>
 </ol>`,
     },
   ],
   faq: [
     {
       question: 'Który terminal M3 Mobile jest najlepszy do magazynu?',
-      answer: 'Do standardowego magazynu z kompletacją zamówień najlepiej sprawdzi się <a href="/produkt/m3-us30">M3 US30</a> (od 3 610 zł) z klawiaturą fizyczną i Wi-Fi 6 lub <a href="/produkt/m3-sm24">M3 SM24</a> (od 3 123 zł) z ekranem dotykowym 6". Do magazynów wysokiego składowania wybierz <a href="/produkt/m3-sm30">M3 SM30</a> z SE5500 (zasięg do 15 m) lub <a href="/produkt/m3-ul30">M3 UL30</a> w obudowie gun z SE5800. Do chłodni — <a href="/produkt/m3-ul30">UL30F</a> (Freezer do -30°C).',
+      answer: 'Do standardowego magazynu z kompletacją zamówień najlepiej sprawdzi się <a href="/produkt/m3-us30">M3 US30</a> (od 4 290 zł) z klawiaturą fizyczną i Wi-Fi 6 lub <a href="/produkt/m3-sm24">M3 SM24</a> (od 3 016 zł) z ekranem dotykowym 6". Do magazynów wysokiego składowania wybierz <a href="/produkt/m3-sm30">M3 SM30</a> z SE5500 (zasięg do 15 m) lub <a href="/produkt/m3-ul30">M3 UL30</a> w obudowie gun z SE5800. Do chłodni — <a href="/produkt/m3-ul30">UL30F</a> (Freezer do -30°C).',
     },
     {
       question: 'Który terminal M3 Mobile ma klawiaturę fizyczną?',
-      answer: 'Klawiaturę fizyczną mają 4 modele: <a href="/produkt/m3-us30">M3 US30</a> (30/38/42/51 klawiszy), <a href="/produkt/m3-us20">M3 US20</a> (30/42/51 klawiszy), <a href="/produkt/m3-sl20k">M3 SL20K</a> (30 klawiszy) i terminale gun — <a href="/produkt/m3-ul20">M3 UL20</a> oraz <a href="/produkt/m3-ul30">M3 UL30</a> (28/35/53 klawisze). Najtańszy z klawiaturą to SL20K od 2 424 zł netto.',
+      answer: 'Klawiaturę fizyczną mają 4 modele: <a href="/produkt/m3-us30">M3 US30</a> (30/38/42/51 klawiszy), <a href="/produkt/m3-us20">M3 US20</a> (30/42/51 klawiszy), <a href="/produkt/m3-sl20k">M3 SL20K</a> (30 klawiszy) i terminale gun — <a href="/produkt/m3-ul20">M3 UL20</a> oraz <a href="/produkt/m3-ul30">M3 UL30</a> (28/35/53 klawisze). Najtańszy z klawiaturą to SL20K od 2 492 zł netto.',
     },
     {
       question: 'Który terminal M3 Mobile obsługuje 5G?',
-      answer: 'Łączność 5G Sub-6 GHz oferują dwa modele: <a href="/produkt/m3-sm30">M3 SM30</a> (wariant SM305E, od 4 047 zł netto) i <a href="/produkt/m3-sm25">M3 SM25</a> (wariant SM25X, premiera czerwiec 2026). Pozostałe modele obsługują 4G LTE (SM24X, US20X, SL20+, SL20K, UL20X) lub tylko Wi-Fi (US30, UL30).',
+      answer: 'Łączność 5G Sub-6 GHz oferują dwa modele: <a href="/produkt/m3-sm30">M3 SM30</a> (wariant SM305E, od 4 174 zł netto) i <a href="/produkt/m3-sm25">M3 SM25</a> (wariant SM25X, od 3 654 zł netto). Pozostałe modele obsługują 4G LTE (SM24X, US20X, SL20+, SL20K, UL20X) lub tylko Wi-Fi (US30, UL30).',
     },
     {
       question: 'Ile kosztują terminale M3 Mobile?',
-      answer: 'Ceny terminali M3 Mobile zaczynają się od <strong>2 255 zł netto</strong> za <a href="/produkt/m3-sl20">M3 SL20+</a> (4/64 GB). Przegląd cen: SL20K — od 2 424 zł, SM24 — od 3 123 zł, US30 — od 3 610 zł, SM30 — od 3 610 zł, US20 — od 4 080 zł, UL20 — od 4 920 zł, UL30 — od 5 626 zł. SM25 — cena w zapytaniu (premiera czerwiec 2026). Wszystkie ceny netto, bez VAT. Dla zamówień flotowych przygotujemy rabat ilościowy — <a href="/kontakt">skontaktuj się z TAKMA</a>.',
+      answer: 'Ceny terminali M3 Mobile zaczynają się od <strong>2 269 zł netto</strong> za <a href="/produkt/m3-sl20">M3 SL20+</a> (4/64 GB). Przegląd cen: SL20K — od 2 492 zł, SM24 — od 3 016 zł, US30 — od 4 290 zł, SM30 — od 4 132 zł, US20 — od 4 411 zł, UL20 — od 5 484 zł, UL30 — od 6 431 zł. SM25 — od 3 654 zł. Wszystkie ceny netto, bez VAT. Dla zamówień flotowych przygotujemy rabat ilościowy — <a href="/kontakt">skontaktuj się z TAKMA</a>.',
     },
     {
       question: 'Czy M3 Mobile ma serwis w Polsce?',
@@ -12848,11 +12845,11 @@ export const guides: Guide[] = [
     },
     {
       question: 'M3 Mobile vs Zebra — który producent wybrać?',
-      answer: 'Zależy od priorytetu. <strong>M3 Mobile wygrywa:</strong> ceną (SL20+ od 2 255 zł vs TC22 od 2 417 zł), pamięcią (SM24 ma 8/128 GB vs TC22 4/64 GB), hot-swap baterii (SM24, SM25, SM30 vs brak w TC22/TC27) i AI NPU w SM30/UL30. <strong>Zebra wygrywa:</strong> ekosystemem Mobility DNA (DataWedge, StageNow, LifeGuard), 10-letnim wsparciem LifeGuard, IP68 w TC53e/TC73e i największą bazą integratorów. Jeśli masz istniejącą flotę Zebra z DataWedge — zostań przy Zebrze. Dla nowych wdrożeń bez vendor lock-in M3 Mobile oferuje lepszy stosunek ceny do parametrów. Sprawdź naszą ofertę <a href="/terminale-m3-mobile">terminali M3 Mobile</a> i <a href="/terminale-mobilne-zebra">terminali Zebra</a>.',
+      answer: 'Zależy od priorytetu. <strong>M3 Mobile wygrywa:</strong> ceną (SL20+ od 2 269 zł vs TC22 od 2 417 zł), pamięcią (SM24 ma 8/128 GB vs TC22 4/64 GB), hot-swap baterii (SM24, SM25, SM30 vs brak w TC22/TC27) i AI NPU w SM30/UL30. <strong>Zebra wygrywa:</strong> ekosystemem Mobility DNA (DataWedge, StageNow, LifeGuard), 10-letnim wsparciem LifeGuard, IP68 w TC53e/TC73e i największą bazą integratorów. Jeśli masz istniejącą flotę Zebra z DataWedge — zostań przy Zebrze. Dla nowych wdrożeń bez vendor lock-in M3 Mobile oferuje lepszy stosunek ceny do parametrów. Sprawdź naszą ofertę <a href="/terminale-m3-mobile">terminali M3 Mobile</a> i <a href="/terminale-mobilne-zebra">terminali Zebra</a>.',
     },
     {
       question: 'Który terminal M3 Mobile wybrać do pracy w terenie?',
-      answer: 'Do pracy w terenie (logistyka, dostawy, serwis) potrzebujesz modelu z 4G LTE + GPS. Najlepsze opcje: <a href="/produkt/m3-sm30">M3 SM30</a> (5G + GPS, IP68, od 4 047 zł za wariant 5G) dla najwyższych wymagań, <a href="/produkt/m3-us20">M3 US20</a> (4G + GPS, klawiatura, od 4 690 zł za wariant X) do wpisywania danych w terenie, <a href="/produkt/m3-sl20">M3 SL20+</a> (4G + GPS + eSIM, od 2 255 zł) jako najtańsza opcja. Uwaga: US30 i UL30 nie mają modemu komórkowego.',
+      answer: 'Do pracy w terenie (logistyka, dostawy, serwis) potrzebujesz modelu z 4G LTE + GPS. Najlepsze opcje: <a href="/produkt/m3-sm30">M3 SM30</a> (5G + GPS, IP68, od 4 174 zł za wariant 5G) dla najwyższych wymagań, <a href="/produkt/m3-us20">M3 US20</a> (4G + GPS, klawiatura, od 5 070 zł za wariant X) do wpisywania danych w terenie, <a href="/produkt/m3-sl20">M3 SL20+</a> (4G + GPS + eSIM, od 2 269 zł) jako najtańsza opcja. Uwaga: US30 i UL30 nie mają modemu komórkowego.',
     },
     {
       question: 'Czy akcesoria M3 są wymienne między modelami?',
@@ -13200,7 +13197,7 @@ export const guides: Guide[] = [
   faq: [
     {
       question: 'Ile kosztuje M3 Speed Care?',
-      answer: 'Cena zależy od modelu i pakietu (3Y lub 5Y). Orientacyjnie: 8–15% ceny terminala za 3 lata, 12–22% za 5 lat. Dla <a href="/produkt/m3-sm30">SM30</a> (od 3 610 zł) kontrakt 3-letni to ok. 290–540 zł. Skontaktuj się z TAKMA po indywidualną wycenę — <a href="/kontakt">kontakt</a>.',
+      answer: 'Cena zależy od modelu i pakietu (3Y lub 5Y). Orientacyjnie: 8–15% ceny terminala za 3 lata, 12–22% za 5 lat. Dla <a href="/produkt/m3-sm30">SM30</a> (od 4 132 zł) kontrakt 3-letni to ok. 290–540 zł. Skontaktuj się z TAKMA po indywidualną wycenę — <a href="/kontakt">kontakt</a>.',
     },
     {
       question: 'Czy M3 Speed Care obejmuje uszkodzenia przypadkowe?',
