@@ -38,6 +38,8 @@ interface QuoteStore {
   clearItems: () => void
 
   // Terms
+  /** stawka VAT oferty: 23 % krajowa albo 0 % dla klientów zwolnionych */
+  vatRate: number
   validDays: number
   paymentTerms: string
   deliveryTerms: string
@@ -46,6 +48,7 @@ interface QuoteStore {
   freebiesNote: string
   zebraServiceBanner: boolean
   setTerms: (data: Partial<{
+    vatRate: number
     validDays: number
     paymentTerms: string
     deliveryTerms: string
@@ -102,6 +105,7 @@ export const useQuoteStore = create<QuoteStore>()((set, get) => ({
   },
   clearItems: () => set({ items: [] }),
 
+  vatRate: 23,
   validDays: 14,
   paymentTerms: '7 dni',
   deliveryTerms: '2-5 dni roboczych',
@@ -111,6 +115,7 @@ export const useQuoteStore = create<QuoteStore>()((set, get) => ({
   zebraServiceBanner: false,
   setTerms: (data) =>
     set({
+      ...(data.vatRate !== undefined && { vatRate: data.vatRate }),
       ...(data.validDays !== undefined && { validDays: data.validDays }),
       ...(data.paymentTerms !== undefined && { paymentTerms: data.paymentTerms }),
       ...(data.deliveryTerms !== undefined && { deliveryTerms: data.deliveryTerms }),
@@ -123,7 +128,7 @@ export const useQuoteStore = create<QuoteStore>()((set, get) => ({
   getSubtotalNetto: () =>
     get().items.reduce((sum, item) => sum + item.priceNetto * item.quantity, 0),
 
-  getVatAmount: () => Math.round(get().getSubtotalNetto() * 0.23),
+  getVatAmount: () => Math.round((get().getSubtotalNetto() * get().vatRate) / 100),
 
   getTotalBrutto: () => get().getSubtotalNetto() + get().getVatAmount(),
 
@@ -131,6 +136,7 @@ export const useQuoteStore = create<QuoteStore>()((set, get) => ({
     set({
       client: { ...initialClient },
       items: [],
+      vatRate: 23,
       validDays: 14,
       paymentTerms: '7 dni',
       deliveryTerms: '2-5 dni roboczych',

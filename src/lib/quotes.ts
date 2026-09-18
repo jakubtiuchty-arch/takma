@@ -16,10 +16,16 @@ export async function generateQuoteNumber(): Promise<string> {
   return `OFR-${year}-${String(seq).padStart(6, '0')}`
 }
 
-export function calculateQuoteTotals(items: { priceNetto: number; quantity: number }[]) {
+export { STAWKI_VAT, VAT_DOMYSLNY, stawkaVat } from './quotes-stawki'
+
+export function calculateQuoteTotals(
+  items: { priceNetto: number; quantity: number }[],
+  vatRate: number = 23
+) {
   const subtotalNetto = items.reduce((sum, item) => sum + item.priceNetto * item.quantity, 0)
-  const vatAmount = Math.round(subtotalNetto * 0.23)
+  const vatAmount = Math.round((subtotalNetto * vatRate) / 100)
   const totalBrutto = subtotalNetto + vatAmount
 
   return { subtotalNetto, vatAmount, totalBrutto }
 }
+

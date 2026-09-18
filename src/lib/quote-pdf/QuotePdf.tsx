@@ -1,5 +1,6 @@
 import React from 'react'
 import { Document, Page, View, Text, Image, StyleSheet } from '@react-pdf/renderer'
+import { stawkaVat } from '@/lib/quotes-stawki'
 
 /**
  * Oferta handlowa jako prawdziwy PDF (react-pdf) — załącznik do maila ofertowego
@@ -127,6 +128,8 @@ const splitFreebies = (note: string): string[] => {
 
 export function QuotePdfDoc({ q }: { q: QuotePdfData }) {
   const items = [...q.items].sort((a, b) => a.position - b.position)
+  // Stawka wynika z kwot oferty: 0 % przy kliencie zwolnionym z VAT-u
+  const stawka = stawkaVat(q.subtotalNetto, q.vatAmount)
   return (
     <Document title={`Oferta ${q.quoteNumber} — TAKMA`} author="TAKMA" creator="TAKMA" producer="TAKMA">
       <Page size="A4" style={s.page}>
@@ -189,7 +192,7 @@ export function QuotePdfDoc({ q }: { q: QuotePdfData }) {
                 {discounted ? <Text style={s.strike}>{pln(it.catalogPriceNetto!)}</Text> : null}
                 <Text style={[s.bold, { textAlign: 'right' }]}>{pln(it.priceNetto)}</Text>
               </View>
-              <Text style={s.colVat}>23%</Text>
+              <Text style={s.colVat}>{stawka}%</Text>
               <Text style={[s.colTotal, s.bold]}>{pln(it.totalNetto)}</Text>
             </View>
           )
@@ -205,7 +208,7 @@ export function QuotePdfDoc({ q }: { q: QuotePdfData }) {
           </View>
           <View style={s.summary}>
             <View style={s.sumRow}><Text style={s.sumLabel}>Wartość netto:</Text><Text style={s.sumValue}>{pln(q.subtotalNetto)}</Text></View>
-            <View style={s.sumRow}><Text style={s.sumLabel}>VAT 23%:</Text><Text style={s.sumValue}>{pln(q.vatAmount)}</Text></View>
+            <View style={s.sumRow}><Text style={s.sumLabel}>VAT {stawka}%:</Text><Text style={s.sumValue}>{pln(q.vatAmount)}</Text></View>
             <View style={s.sumTotal}>
               <Text style={[s.sumLabel, s.sumTotalText]}>Razem brutto:</Text>
               <Text style={[s.sumValue, s.sumTotalText]}>{pln(q.totalBrutto)}</Text>

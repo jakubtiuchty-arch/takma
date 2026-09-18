@@ -60,6 +60,8 @@ export interface EditData {
     internalNotes?: string
     freebiesNote?: string
     zebraServiceBanner?: boolean
+    /** stawka VAT oferty; odczytana z kwot zapisanej oferty */
+    vatRate?: number
   }
 }
 
@@ -118,6 +120,7 @@ export default function QuoteBuilder({ rfqData, editData, copyData }: QuoteBuild
         internalNotes: editData.terms.internalNotes || '',
         freebiesNote: editData.terms.freebiesNote || '',
         zebraServiceBanner: editData.terms.zebraServiceBanner ?? false,
+        vatRate: editData.terms.vatRate ?? 23,
       })
     } else if (copyData) {
       // Kopia oferty: przepisujemy pozycje z cenami i marżami oraz warunki
@@ -146,6 +149,7 @@ export default function QuoteBuilder({ rfqData, editData, copyData }: QuoteBuild
         internalNotes: copyData.terms.internalNotes || '',
         freebiesNote: copyData.terms.freebiesNote || '',
         zebraServiceBanner: copyData.terms.zebraServiceBanner ?? false,
+        vatRate: copyData.terms.vatRate ?? 23,
       })
     } else if (rfqData) {
       // Załaduj dane klienta z zapytania
@@ -215,6 +219,7 @@ export default function QuoteBuilder({ rfqData, editData, copyData }: QuoteBuild
       internalNotes: store.internalNotes || undefined,
       freebiesNote: store.freebiesNote || undefined,
       zebraServiceBanner: store.zebraServiceBanner,
+      vatRate: store.vatRate,
     }
 
     startTransition(async () => {
@@ -230,6 +235,7 @@ export default function QuoteBuilder({ rfqData, editData, copyData }: QuoteBuild
           internalNotes: store.internalNotes || undefined,
           freebiesNote: store.freebiesNote || undefined,
           zebraServiceBanner: store.zebraServiceBanner,
+          vatRate: store.vatRate,
         })
       } else {
         await createQuote(commonPayload)

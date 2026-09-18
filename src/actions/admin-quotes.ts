@@ -42,11 +42,13 @@ interface CreateQuoteInput {
   internalNotes?: string
   freebiesNote?: string
   zebraServiceBanner?: boolean
+  /** 23 % domyślnie; 0 % dla klientów zwolnionych z VAT-u */
+  vatRate?: number
 }
 
 export async function createQuote(input: CreateQuoteInput) {
   const quoteNumber = await generateQuoteNumber()
-  const totals = calculateQuoteTotals(input.items)
+  const totals = calculateQuoteTotals(input.items, input.vatRate)
 
   const validUntil = new Date()
   validUntil.setDate(validUntil.getDate() + input.validDays)
@@ -219,11 +221,12 @@ export async function priceRfqQuote(rfqQuoteId: string, input: {
   internalNotes?: string
   freebiesNote?: string
   zebraServiceBanner?: boolean
+  vatRate?: number
 }) {
   const existing = await prisma.quote.findUnique({ where: { id: rfqQuoteId } })
   if (!existing) throw new Error('Zapytanie nie znalezione')
 
-  const totals = calculateQuoteTotals(input.items)
+  const totals = calculateQuoteTotals(input.items, input.vatRate)
 
   const validUntil = new Date()
   validUntil.setDate(validUntil.getDate() + input.validDays)
@@ -280,7 +283,7 @@ export async function updateQuote(quoteId: string, input: CreateQuoteInput) {
     throw new Error(`Nie można edytować oferty w statusie ${existing.status}`)
   }
 
-  const totals = calculateQuoteTotals(input.items)
+  const totals = calculateQuoteTotals(input.items, input.vatRate)
 
   const validUntil = new Date()
   validUntil.setDate(validUntil.getDate() + input.validDays)

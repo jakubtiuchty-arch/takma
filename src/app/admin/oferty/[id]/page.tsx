@@ -4,6 +4,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 import { QuoteStatus } from '@/generated/prisma/client'
 import QuoteActions from './QuoteActions'
+import { stawkaVat } from '@/lib/quotes-stawki'
 
 const statusLabels: Record<QuoteStatus, string> = {
   REQUESTED: 'Zapytanie klienta',
@@ -140,7 +141,7 @@ export default async function QuoteDetailPage({ params }: PageProps) {
                   <span className="tabular-nums">{formatPrice(quote.subtotalNetto)} zł</span>
                 </div>
                 <div className="flex justify-end gap-8">
-                  <span className="text-gray-500">VAT 23%:</span>
+                  <span className="text-gray-500">VAT {stawkaVat(quote.subtotalNetto, quote.vatAmount)}%:</span>
                   <span className="tabular-nums">{formatPrice(quote.vatAmount)} zł</span>
                 </div>
                 <div className="flex justify-end gap-8 text-lg font-bold">

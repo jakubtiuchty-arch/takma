@@ -1,5 +1,6 @@
 import { quoteHasZebra } from '@/lib/quote-zebra'
 import { czyZebra } from '@/lib/device-brand'
+import { stawkaVat } from '@/lib/quotes-stawki'
 // ─── TAKMA Email Design System ───────────────────────────────────────────────
 // Profesjonalny system szablonów email B2B — table-based layout, Outlook compatible
 // Zero dependencies — plain TypeScript helpers returning HTML strings
@@ -908,7 +909,7 @@ export function buildQuoteEmail(data: {
         emailTable(['Lp.', 'Produkt', 'Ilo&#347;&#263;', 'Cena netto', 'Razem netto'], rows) +
         emailTotalBox([
           { label: 'Netto:', value: `${fmtPLN(data.subtotalNetto / 100)} z&#322;` },
-          { label: 'VAT 23%:', value: `${fmtPLN(data.vatAmount / 100)} z&#322;` },
+          { label: `VAT ${stawkaVat(data.subtotalNetto, data.vatAmount)}%:`, value: `${fmtPLN(data.vatAmount / 100)} z&#322;` },
           { label: 'Brutto:', value: `${fmtPLN(data.totalBrutto / 100)} z&#322;`, bold: true },
         ]) +
         (data.freebiesNote ? emailFreebie(data.freebiesNote) : '') +

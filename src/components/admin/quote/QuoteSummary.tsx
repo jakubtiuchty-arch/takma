@@ -1,13 +1,14 @@
 'use client'
 
 import { useQuoteStore } from '@/store/quoteStore'
+import { STAWKI_VAT } from '@/lib/quotes-stawki'
 
 function formatPrice(grosze: number): string {
   return (grosze / 100).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
 }
 
 export default function QuoteSummary() {
-  const { items, getSubtotalNetto, getVatAmount, getTotalBrutto, setTerms, validDays, paymentTerms, deliveryTerms, notes, internalNotes, freebiesNote, zebraServiceBanner } =
+  const { items, getSubtotalNetto, getVatAmount, getTotalBrutto, setTerms, vatRate, validDays, paymentTerms, deliveryTerms, notes, internalNotes, freebiesNote, zebraServiceBanner } =
     useQuoteStore()
 
   const subtotal = getSubtotalNetto()
@@ -32,10 +33,28 @@ export default function QuoteSummary() {
             <span className="text-gray-500">Netto:</span>
             <span className="font-medium tabular-nums">{formatPrice(subtotal)} zł</span>
           </div>
-          <div className="flex justify-between">
-            <span className="text-gray-500">VAT 23%:</span>
+          {/* Stawkę wybiera handlowiec: część klientów (m.in. jednostki zwolnione)
+              dostaje fakturę z zerowym VAT-em. */}
+          <div className="flex justify-between items-center">
+            <label className="text-gray-500 flex items-center gap-1.5">
+              VAT
+              <select
+                value={vatRate}
+                onChange={(e) => setTerms({ vatRate: Number(e.target.value) })}
+                className="rounded border border-gray-300 bg-white px-1.5 py-0.5 text-sm tabular-nums focus:ring-1 focus:ring-blue-500"
+              >
+                {STAWKI_VAT.map((s) => (
+                  <option key={s} value={s}>{s}%</option>
+                ))}
+              </select>
+            </label>
             <span className="tabular-nums">{formatPrice(vat)} zł</span>
           </div>
+          {vatRate === 0 && (
+            <p className="text-xs text-gray-400 pt-0.5">
+              Oferta bez VAT-u — na fakturze trzeba podać podstawę zwolnienia.
+            </p>
+          )}
           <div className="flex justify-between text-lg font-bold pt-2 border-t border-gray-300">
             <span>Brutto:</span>
             <span className="tabular-nums">{formatPrice(total)} zł</span>

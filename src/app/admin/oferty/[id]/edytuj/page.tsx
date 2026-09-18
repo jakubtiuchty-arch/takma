@@ -3,6 +3,7 @@ import { notFound, redirect } from 'next/navigation'
 import Link from 'next/link'
 import QuoteBuilder from '@/components/admin/quote/QuoteBuilder'
 import type { EditData } from '@/components/admin/quote/QuoteBuilder'
+import { stawkaVat } from '@/lib/quotes-stawki'
 
 interface PageProps {
   params: Promise<{ id: string }>
@@ -56,6 +57,7 @@ export default async function EditQuotePage({ params }: PageProps) {
       internalNotes: quote.internalNotes || undefined,
       freebiesNote: quote.freebiesNote || undefined,
       zebraServiceBanner: quote.zebraServiceBanner,
+      vatRate: stawkaVat(quote.subtotalNetto, quote.vatAmount),
     },
   }
 

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
+import { stawkaVat } from '@/lib/quotes-stawki'
 
 function escapeHtml(str: string): string {
   return str
@@ -30,13 +31,15 @@ export async function GET(request: NextRequest) {
   }
 
   const today = new Date().toLocaleDateString('pl-PL')
+  // Stawka VAT oferty wynika z zapisanych kwot — 0 % przy kliencie zwolnionym
+  const stawka = stawkaVat(quote.subtotalNetto, quote.vatAmount)
 
   const url = new URL(request.url)
   const baseUrl = `${url.protocol}//${url.host}`
 
   const itemsRows = quote.items
     .map((item) => {
-      const totalBrutto = Math.round(item.totalNetto * 1.23)
+      const totalBrutto = item.totalNetto + Math.round((item.totalNetto * stawka) / 100)
       return `
       <tr>
         <td>${item.position}</td>
@@ -50,7 +53,7 @@ export async function GET(request: NextRequest) {
             ? `<span style="color:#9ca3af;text-decoration:line-through;font-size:11px;">${formatPrice(item.catalogPriceNetto)} zł</span><br />`
             : ''
         }${formatPrice(item.priceNetto)} zł</td>
-        <td style="text-align:center;">23%</td>
+        <td style="text-align:center;">${stawka}%</td>
         <td class="amount">${formatPrice(totalBrutto)} zł</td>
       </tr>`
     })
@@ -253,7 +256,7 @@ export async function GET(request: NextRequest) {
           <span>${formatPrice(quote.subtotalNetto)} zł</span>
         </div>
         <div class="summary-row">
-          <span>VAT 23%:</span>
+          <span>VAT ${stawka}%:</span>
           <span>${formatPrice(quote.vatAmount)} zł</span>
         </div>
         <div class="summary-total">

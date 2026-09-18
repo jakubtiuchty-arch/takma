@@ -1,6 +1,7 @@
 import QuoteBuilder from '@/components/admin/quote/QuoteBuilder'
 import Link from 'next/link'
 import { prisma } from '@/lib/db'
+import { stawkaVat } from '@/lib/quotes-stawki'
 
 interface PageProps {
   searchParams: Promise<{ fromRfq?: string; kopiaZ?: string }>
@@ -22,6 +23,7 @@ export default async function NewQuotePage({ searchParams }: PageProps) {
     terms: {
       validDays: number; paymentTerms: string; deliveryTerms: string
       notes?: string; internalNotes?: string; freebiesNote?: string; zebraServiceBanner?: boolean
+      vatRate?: number
     }
   } | null = null
 
@@ -58,6 +60,7 @@ export default async function NewQuotePage({ searchParams }: PageProps) {
           internalNotes: zrodlo.internalNotes ?? undefined,
           freebiesNote: zrodlo.freebiesNote ?? undefined,
           zebraServiceBanner: zrodlo.zebraServiceBanner,
+          vatRate: stawkaVat(zrodlo.subtotalNetto, zrodlo.vatAmount),
         },
       }
     }
