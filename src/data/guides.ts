@@ -98,17 +98,17 @@ export const guides: Guide[] = [
 <h3>Zabezpieczenie nadruku</h3>
 <p>Magicard nakłada znak wodny HoloKote z panelu ochronnego zwykłej taśmy. Pronto100 ma trzy gotowe wzory, model 300 przyjmuje cztery własne, 600 Duo dziesięć. Zebra ZC350 robi to inaczej: taśmą specjalną z panelem perłowym, metalicznym albo z podwójną warstwą ochronną, kupowaną osobno. ZC100 i ZC300 szyfrują dane w drodze do drukarki, ale samego nadruku nie zabezpieczają.</p>
 <h3>Koszt jednej karty</h3>
-<p>Cena drukarki to mniejsza część rachunku. Biała karta PVC z opakowania po 100 sztuk kosztuje 0,38 zł netto, do tego dochodzi taśma. Kolorowa karta jednostronna z drukarki Zebra wychodzi więc około 1,10 zł, dwustronna z taśmą YMCKOK około 1,35 zł, karta z samym czarnym nadrukiem około 0,40 zł. Taśmy Magicard są droższe w przeliczeniu na kartę, co przy tysiącu kart rocznie daje różnicę rzędu 200–400 zł.</p>
+<p>Cena drukarki to mniejsza część rachunku. <a href="/produkt/karty-pvc-standard-biale-ac-76s">Biała karta PVC</a> z opakowania po 100 sztuk kosztuje 0,38 zł netto, do tego dochodzi taśma. Kolorowa karta jednostronna z drukarki Zebra wychodzi więc około 1,10 zł, dwustronna z taśmą YMCKOK około 1,35 zł, karta z samym czarnym nadrukiem około 0,40 zł. Taśmy Magicard są droższe w przeliczeniu na kartę, co przy tysiącu kart rocznie daje różnicę rzędu 200–400 zł.</p>
 <table>
 <caption>Taśmy kolorowe i czarna, ceny netto z cennika TAKMA, wrzesień 2026</caption>
 <thead><tr><th>Taśma</th><th>Wydruków</th><th>Cena</th><th>Za kartę</th></tr></thead>
 <tbody>
-<tr><td>Zebra ZC100/ZC300 YMCKO (800300-350EM)</td><td>200</td><td>138 zł</td><td>0,69 zł</td></tr>
-<tr><td>Zebra ZC350 YMCKO (800350-250EM)</td><td>200</td><td>139 zł</td><td>0,70 zł</td></tr>
-<tr><td>Zebra ZC100/ZC300 YMCKOK, dwustronna (800300-550EM)</td><td>200</td><td>189 zł</td><td>0,95 zł</td></tr>
-<tr><td>Zebra czarna (800300-301EM)</td><td>2 000</td><td>76 zł</td><td>0,04 zł</td></tr>
-<tr><td>Magicard Pronto100 YMCKO</td><td>200</td><td>217 zł</td><td>1,09 zł</td></tr>
-<tr><td>Magicard 300 YMCKO</td><td>300</td><td>270 zł</td><td>0,90 zł</td></tr>
+<tr><td><a href="/produkt/zebra-tasma-ymcko-zc100-zc300">Zebra ZC100/ZC300 YMCKO (800300-350EM)</a></td><td>200</td><td>138 zł</td><td>0,69 zł</td></tr>
+<tr><td><a href="/produkt/zebra-tasma-ymcko-zc350">Zebra ZC350 YMCKO (800350-250EM)</a></td><td>200</td><td>139 zł</td><td>0,70 zł</td></tr>
+<tr><td><a href="/produkt/zebra-tasma-ymckok-zc100-zc300">Zebra ZC100/ZC300 YMCKOK, dwustronna (800300-550EM)</a></td><td>200</td><td>189 zł</td><td>0,95 zł</td></tr>
+<tr><td><a href="/produkt/zebra-tasma-czarna-zc100-zc300">Zebra czarna (800300-301EM)</a></td><td>2 000</td><td>76 zł</td><td>0,04 zł</td></tr>
+<tr><td><a href="/produkt/magicard-tasma-ymcko-pronto100-200">Magicard Pronto100 YMCKO</a></td><td>200</td><td>217 zł</td><td>1,09 zł</td></tr>
+<tr><td><a href="/produkt/magicard-tasma-ymcko-300-wydrukow-mc300ymcko-s">Magicard 300 YMCKO</a></td><td>300</td><td>270 zł</td><td>0,90 zł</td></tr>
 </tbody>
 </table>
 <h3>Łączność i obsługa</h3>
@@ -135,8 +135,8 @@ export const guides: Guide[] = [
       id: 'materialy',
       heading: 'Taśmy, karty i program',
       content: `
-<p>Do pierwszej karty potrzeba taśmy, kart i programu do projektowania. Zebra ZC100 i ZC300 pracują z taśmami serii 800300, ZC350 z serią 800350; czarna taśma 800300-301EM i taśmy jednokolorowe pasują do wszystkich trzech. Magicard ma osobne taśmy dla Pronto100 oraz dla modeli 300 i 600 Duo. Karty PVC o grubości 0,76 mm w opakowaniach po 100 sztuk oraz karty z chipem MIFARE, DESFire i Unique są wspólne dla wszystkich sześciu modeli.</p>
-<p>Zebra zaleca kartę czyszczącą co około tysiąc wydruków. Do projektowania kart Zebra ma program CardStudio 2.0; do drukarek Magicard program producenta jest opisany w specyfikacji każdego modelu. Zestawy startowe z drukarką, taśmą, 200 kartami i programem mamy dla Pronto100, Magicard 300, ZC100 i ZC300.</p>
+<p>Do pierwszej karty potrzeba taśmy, kart i programu do projektowania. Zebra ZC100 i ZC300 pracują z <a href="/produkt/zebra-tasma-ymcko-zc100-zc300">taśmami serii 800300</a>, ZC350 z <a href="/produkt/zebra-tasma-ymcko-zc350">serią 800350</a>; <a href="/produkt/zebra-tasma-czarna-zc100-zc300">czarna taśma 800300-301EM</a> i taśmy jednokolorowe pasują do wszystkich trzech. Magicard ma osobne taśmy dla <a href="/produkt/magicard-tasma-ymcko-pronto100-200">Pronto100</a> oraz dla modeli <a href="/produkt/magicard-tasma-ymcko-300-wydrukow-mc300ymcko-s">300</a> i <a href="/produkt/magicard-tasma-ymcko-600-300-wydrukow-mb300ymcko-s">600 Duo</a>. Wszystkie taśmy są w kategorii <a href="/tasmy-do-drukarek-kart">taśmy do drukarek kart</a>. <a href="/produkt/karty-pvc-standard-biale-ac-76s">Karty PVC o grubości 0,76 mm</a> w opakowaniach po 100 sztuk oraz karty z chipem <a href="/produkt/karta-mifare-1k-iso-mfrc1">MIFARE</a>, <a href="/produkt/karta-desfire-ev1-2k-iso-mdev12">DESFire</a> i <a href="/produkt/karta-unique-iso-unqe1">Unique</a> są wspólne dla wszystkich sześciu modeli.</p>
+<p>Zebra zaleca <a href="/produkt/zebra-zestaw-czyszczacy-2-karty-zc100-zc300">kartę czyszczącą</a> co około tysiąc wydruków; Magicard ma osobne zestawy czyszczące do <a href="/produkt/magicard-zestaw-czyszczacy-pronto100-e9100">Pronto100</a> oraz do <a href="/produkt/magicard-zestaw-czyszczacy-3633-0053">modeli 300 i 600</a>. Do projektowania kart Zebra ma program <a href="/produkt/zebra-cardstudio">CardStudio 2.0</a>; do drukarek Magicard program producenta jest opisany w specyfikacji każdego modelu. Zestaw startowy z drukarką, taśmą i kartami mamy dla każdego z sześciu modeli: <a href="/produkt/magicard-pronto100-zestaw-startowy">Pronto100</a>, <a href="/produkt/zebra-zc100-zestaw-startowy">ZC100</a>, <a href="/produkt/magicard-300-zestaw-startowy">Magicard 300</a>, <a href="/produkt/zebra-zc300-zestaw-startowy">ZC300</a>, <a href="/produkt/zebra-zc350-zestaw-startowy">ZC350</a> i <a href="/produkt/magicard-600-duo-zestaw-startowy">600 Duo</a>. Zestawy ZC100 i ZC300 zawierają dodatkowo licencję CardStudio.</p>
 `,
     },
     {
@@ -144,7 +144,7 @@ export const guides: Guide[] = [
       heading: 'Od zamówienia do pierwszej karty',
       content: `
 <p>Instalacja zajmuje zwykle kwadrans: sterownik ze strony producenta, kaseta z taśmą do komory, karty do podajnika, karta testowa z panelu sterownika. W drukarkach Zebra podajnik sam dopasowuje się do grubości kart, a wyświetlacz ZC300 i ZC350 prowadzi przez wymianę taśmy. Projekt karty robi się raz: szablon z polem na zdjęcie, dane z pliku Excel lub CSV, kod kreskowy, jeśli ma być. Kolejne karty drukuje się z listy.</p>
-<p>Instrukcje po polsku do drukarek Zebra są na serwis-zebry.pl, a naprawy pogwarancyjne drukarek kart wykonuje nasz serwis. Przy wdrożeniu na kilkaset kart, na przykład w szkole, konfigurację dobieramy po rozmowie o liczbie kart, kodowaniu i systemie, w którym karty mają działać.</p>
+<p>Instrukcje po polsku do drukarek Zebra są na serwis-zebry.pl: <a href="https://www.serwis-zebry.pl/instrukcje/zebra-zc100/instrukcja-po-polsku">ZC100</a>, <a href="https://www.serwis-zebry.pl/instrukcje/zebra-zc300/instrukcja-po-polsku">ZC300</a> i <a href="https://www.serwis-zebry.pl/instrukcje/zebra-zc350/instrukcja-po-polsku">ZC350</a>. Naprawy pogwarancyjne drukarek kart wykonuje <a href="/serwis">nasz serwis</a>; typowe usterki ZC100 i ZC300 opisuje <a href="https://www.serwis-zebry.pl/blog/serwis-drukarki-kart-zebra-zc100-zc300-diagnostyka-naprawa">wpis na serwis-zebry.pl</a>. Przy wdrożeniu na kilkaset kart, na przykład w szkole, konfigurację dobieramy po rozmowie o liczbie kart, kodowaniu i systemie, w którym karty mają działać.</p>
 `,
     },
   ],
