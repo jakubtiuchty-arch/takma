@@ -220,6 +220,19 @@ export default function FilterableProductGrid({
   listName,
 }: FilterableProductGridProps) {
   const [activeFilters, setActiveFilters] = useState<Record<string, Set<string>>>({})
+
+  // Pasek przewijania sidebara pojawia się tylko podczas przewijania (jak natywne paski macOS);
+  // klasa is-scrolling znika 800 ms po ostatnim ruchu, tor zostaje, żeby treść nie skakała.
+  const sidebarScrollRef = useRef<HTMLDivElement>(null)
+  const sidebarScrollTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const handleSidebarScroll = useCallback(() => {
+    const el = sidebarScrollRef.current
+    if (!el) return
+    el.classList.add('is-scrolling')
+    if (sidebarScrollTimer.current) clearTimeout(sidebarScrollTimer.current)
+    sidebarScrollTimer.current = setTimeout(() => el.classList.remove('is-scrolling'), 800)
+  }, [])
+  useEffect(() => () => { if (sidebarScrollTimer.current) clearTimeout(sidebarScrollTimer.current) }, [])
   const [expandedGroups, setExpandedGroups] = useState<Record<string, boolean>>(
     () => Object.fromEntries(filters.map(f => [fId(f), true]))
   )
@@ -577,7 +590,7 @@ export default function FilterableProductGrid({
     <div className="flex flex-col lg:flex-row gap-8">
       {/* Sidebar — desktop */}
       <aside className="hidden lg:block w-60 flex-shrink-0">
-        <div className="sticky top-32 max-h-[calc(100vh-9rem)] overflow-y-auto pr-1">
+        <div ref={sidebarScrollRef} onScroll={handleSidebarScroll} className="sticky top-32 max-h-[calc(100vh-9rem)] overflow-y-auto pr-1 scrollbar-on-scroll">
           {filterSidebarContent}
         </div>
       </aside>

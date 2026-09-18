@@ -97,6 +97,30 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
+
+  /* Pasek przewijania widoczny tylko w trakcie przewijania (klasę is-scrolling nadaje JS, jak natywne paski macOS).
+     Tor zajmuje miejsce na stałe, więc treść nie przesuwa się, gdy pasek się pojawia. */
+  .scrollbar-on-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    scrollbar-gutter: stable;
+  }
+  .scrollbar-on-scroll.is-scrolling {
+    scrollbar-color: rgb(203 213 225) transparent;
+  }
+  .scrollbar-on-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-on-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-on-scroll::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 9999px;
+  }
+  .scrollbar-on-scroll.is-scrolling::-webkit-scrollbar-thumb {
+    background: rgb(203 213 225);
+  }
 }
 
 @layer utilities {
