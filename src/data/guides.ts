@@ -82,7 +82,6 @@ export const guides: Guide[] = [
       content: `
 <p>Drukarnia opłaca się przy nakładzie liczonym w tysiącach sztuk. Przy kilkudziesięciu kartach miesięcznie liczy się co innego: nowy pracownik ma dostać identyfikator pierwszego dnia, uczeń legitymację w tygodniu zapisu, gość hotelowy kartę do drzwi przy zameldowaniu. Tu wygrywa drukarka na biurku w kadrach albo na recepcji.</p>
 <p>Sześć modeli z tego zestawienia drukuje na tej samej karcie PVC 85,6 × 54 mm, w tej samej rozdzielczości 300 dpi i tą samą metodą: taśma barwiąca nanosi obraz wprost na kartę. Różnią się czterema rzeczami. Czy zadrukują drugą stronę. Czy zakodują pasek magnetyczny albo chip. Jak zabezpieczą nadruk przed podrobieniem. Ile kart mieści podajnik. Od tych czterech cech zależy cena: od niespełna 3 000 zł netto za Magicard Pronto100 do ponad 6 000 zł netto za dwustronną Zebra ZC350 z koderem magnetycznym.</p>
-<p>Zestawienie obejmuje modele, które sprzedajemy i serwisujemy. Drukarek retransferowych w nim nie ma, a Zebra ZXP Series 7 i 9 zostały wycofane z produkcji.</p>
 `,
     },
     {
@@ -119,7 +118,7 @@ export const guides: Guide[] = [
       id: 'ranking',
       heading: 'Porównanie sześciu modeli z oferty TAKMA',
       content: `
-<p>Tabela porządkuje modele od najtańszego. Oceny pod tabelą mówią, komu dany model wystarczy, a komu nie.</p>
+<p>Zestawienie obejmuje modele, które sprzedajemy i serwisujemy; tabela porządkuje je od najtańszego. Oceny pod tabelą mówią, komu dany model wystarczy, a komu nie.</p>
 `,
       component: 'card-printer-ranking',
     },
@@ -156,7 +155,6 @@ export const guides: Guide[] = [
     { question: 'Ile kosztuje wydruk jednej karty?', answer: '<p>W drukarce Zebra około 1,10 zł netto za kartę kolorową jednostronną, około 1,35 zł za dwustronną i około 0,40 zł za kartę z czarnym nadrukiem. Liczone dla taśm serii 800300 i kart w opakowaniu po 100 sztuk, według cen z września 2026. Taśmy Magicard wychodzą o 0,20–0,40 zł drożej na kartę.</p>' },
     { question: 'Zebra czy Magicard?', answer: '<p>Magicard, gdy karta ma mieć znak wodny bez dodatkowej taśmy i drukować się dwustronnie w standardzie. Zebra, gdy karta ma być kodowana albo gdy w firmie są już drukarki Zebra i jeden serwis ma obsłużyć wszystko. Producent daje 3 lata gwarancji w obu markach.</p>' },
     { question: 'Czy zestaw startowy się opłaca?', answer: '<p>Tak, gdy zaczyna się od zera: drukarka, taśma, 200 kart i program w jednej pozycji. Gdy firma ma już program albo potrzebuje wersji z koderem, korzystniej kupić drukarkę w wybranej konfiguracji i materiały osobno.</p>' },
-    { question: 'Dlaczego w zestawieniu nie ma drukarek retransferowych?', answer: '<p>Nie ma ich w ofercie TAKMA, a Zebra ZXP Series 7 i 9 zostały wycofane z produkcji. Retransfer przydaje się przy kartach z nierówną powierzchnią, na przykład ze stykowym chipem, i przy nadruku po samą krawędź. Do identyfikatorów, legitymacji i kart hotelowych wystarcza druk wprost na karcie.</p>' },
   ],
   relatedLinks: [
     { title: 'Magicard Pronto100 — drukarka kart jednostronna', href: '/produkt/magicard-pronto100' },
