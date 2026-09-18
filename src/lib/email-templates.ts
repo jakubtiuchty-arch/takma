@@ -1,4 +1,5 @@
 import { quoteHasZebra } from '@/lib/quote-zebra'
+import { czyZebra } from '@/lib/device-brand'
 // ─── TAKMA Email Design System ───────────────────────────────────────────────
 // Profesjonalny system szablonów email B2B — table-based layout, Outlook compatible
 // Zero dependencies — plain TypeScript helpers returning HTML strings
@@ -84,8 +85,13 @@ function emailLayout(opts: { preheader: string; content: string; after?: string 
 </html>`
 }
 
-function emailHeader(opts: { title: string; subtitle?: string; accent: AccentColor }): string {
+/**
+ * `zebra: false` zdejmuje odznakę Zebra Premier Partner — zgłoszenia urządzeń
+ * innych marek (formularz serwisowy jest wielomarkowy) nie mają jej dostawać.
+ */
+function emailHeader(opts: { title: string; subtitle?: string; accent: AccentColor; zebra?: boolean }): string {
   const color = ACCENT[opts.accent]
+  const zPartnerem = opts.zebra !== false
   return `
           <tr>
             <td style="background-color:#1f2937;padding:20px 32px">
@@ -95,7 +101,7 @@ function emailHeader(opts: { title: string; subtitle?: string; accent: AccentCol
                     <img src="${IMG.logo}" alt="TAKMA" width="160" style="display:block;max-width:160px;height:auto" />
                   </td>
                   <td align="right" valign="middle">
-                    <img src="${IMG.premierPartner}" alt="Zebra Premier Partner" width="100" style="display:block;max-width:100px;height:auto" />
+                    ${zPartnerem ? `<img src="${IMG.premierPartner}" alt="Zebra Premier Partner" width="100" style="display:block;max-width:100px;height:auto" />` : ''}
                   </td>
                 </tr>
               </table>
@@ -973,6 +979,8 @@ export function buildRepairSubmittedEmail(data: {
   repairNumber: string
   deviceType: string
   deviceModel: string
+  /** opcjonalna korekta marki; domyślnie rozpoznawana z modelu */
+  deviceBrand?: string | null
   problemDescription: string
   isWarranty: boolean
   loginEmail?: string
@@ -992,7 +1000,7 @@ export function buildRepairSubmittedEmail(data: {
   return emailLayout({
     preheader: `Zgloszenie naprawy ${data.deviceModel} #${data.repairNumber} przyjete`,
     content:
-      emailHeader({ title: 'Zg&#322;oszenie naprawy przyj&#281;te!', subtitle: `Nr: ${esc(data.repairNumber)}`, accent: 'green' }) +
+      emailHeader({ title: 'Zg&#322;oszenie naprawy przyj&#281;te!', subtitle: `Nr: ${esc(data.repairNumber)}`, accent: 'green', zebra: czyZebra(data.deviceBrand, data.deviceModel) }) +
       emailBody(
         emailGreeting(data.customerName) +
         emailText('Twoje zg&#322;oszenie serwisowe zosta&#322;o przyj&#281;te. Oto podsumowanie:') +

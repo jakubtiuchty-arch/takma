@@ -171,6 +171,8 @@ export async function sendRepairSubmittedEmail(data: {
   repairNumber: string
   deviceType: string
   deviceModel: string
+  /** opcjonalna korekta marki; domyślnie rozpoznawana z modelu */
+  deviceBrand?: string | null
   problemDescription: string
   isWarranty: boolean
   generatedPassword?: string
@@ -184,6 +186,7 @@ export async function sendRepairSubmittedEmail(data: {
       repairNumber: data.repairNumber,
       deviceType: data.deviceType,
       deviceModel: data.deviceModel,
+      deviceBrand: data.deviceBrand,
       problemDescription: data.problemDescription,
       isWarranty: data.isWarranty,
       loginEmail: data.to,
