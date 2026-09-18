@@ -71,7 +71,7 @@ export function CardPrinterRankingTable() {
           </tbody>
         </table>
       </div>
-      <p className="mt-2 text-xs text-gray-500">Ceny netto za wersję podstawową, odświeżane z cennika sklepu; gwarancja producenta 3 lata dla każdego modelu.</p>
+      <p className="mt-2 text-xs text-gray-500">Ceny netto za wersję podstawową. Gwarancja producenta: 3 lata dla każdego modelu.</p>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2">
         {list.map((p) => {

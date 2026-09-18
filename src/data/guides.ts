@@ -69,7 +69,7 @@ export const guides: Guide[] = [
   title: 'Jaka drukarka do kart plastikowych? Ranking i porównanie 2026',
   seoTitle: 'Jaka drukarka do kart plastikowych? Ranking 2026 | TAKMA',
   seoDescription: 'Ranking drukarek do kart plastikowych: Zebra ZC100, ZC300, ZC350 oraz Magicard Pronto100, 300 i 600 Duo. Ceny, druk dwustronny, kodowanie, koszt jednej karty.',
-  excerpt: 'Sześć drukarek kart z oferty TAKMA w jednej tabeli: ceny z cennika sklepu, druk jedno- i dwustronny, kodery, zabezpieczenia nadruku i koszt jednej karty. Do tego wskazanie modelu do identyfikatorów pracowniczych, legitymacji szkolnych i kart RFID.',
+  excerpt: 'Sześć drukarek kart z oferty TAKMA w jednej tabeli: ceny netto, druk jedno- i dwustronny, kodery, zabezpieczenia nadruku i koszt jednej karty. Do tego wskazanie modelu do identyfikatorów pracowniczych, legitymacji szkolnych i kart RFID.',
   category: 'porownanie' as const,
   tags: ['drukarki kart', 'ranking', 'porównanie', 'jak wybrać', 'zebra zc100', 'zebra zc300', 'zebra zc350', 'magicard pronto100', 'magicard 300', 'magicard 600 duo', 'karty pvc', 'identyfikatory'],
   publishedAt: '2026-09-18',
@@ -82,7 +82,7 @@ export const guides: Guide[] = [
       content: `
 <p>Drukarnia opłaca się przy nakładzie liczonym w tysiącach sztuk. Przy kilkudziesięciu kartach miesięcznie liczy się co innego: nowy pracownik ma dostać identyfikator pierwszego dnia, uczeń legitymację w tygodniu zapisu, gość hotelowy kartę do drzwi przy zameldowaniu. Tu wygrywa drukarka na biurku w kadrach albo na recepcji.</p>
 <p>Sześć modeli z tego zestawienia drukuje na tej samej karcie PVC 85,6 × 54 mm, w tej samej rozdzielczości 300 dpi i tą samą metodą: taśma barwiąca nanosi obraz wprost na kartę. Różnią się czterema rzeczami. Czy zadrukują drugą stronę. Czy zakodują pasek magnetyczny albo chip. Jak zabezpieczą nadruk przed podrobieniem. Ile kart mieści podajnik. Od tych czterech cech zależy cena: od niespełna 3 000 zł netto za Magicard Pronto100 do ponad 6 000 zł netto za dwustronną Zebra ZC350 z koderem magnetycznym.</p>
-<p>Ceny w tabeli poniżej pobierają się z cennika sklepu, tak samo jak na kartach produktów. Zestawienie obejmuje modele, które sprzedajemy i serwisujemy. Drukarek retransferowych w nim nie ma, a Zebra ZXP Series 7 i 9 zostały wycofane z produkcji.</p>
+<p>Zestawienie obejmuje modele, które sprzedajemy i serwisujemy. Drukarek retransferowych w nim nie ma, a Zebra ZXP Series 7 i 9 zostały wycofane z produkcji.</p>
 `,
     },
     {
@@ -119,7 +119,7 @@ export const guides: Guide[] = [
       id: 'ranking',
       heading: 'Porównanie sześciu modeli z oferty TAKMA',
       content: `
-<p>Tabela porządkuje modele od najtańszego. Ceny są cenami netto z cennika sklepu w chwili otwarcia strony. Oceny pod tabelą mówią, komu dany model wystarczy, a komu nie.</p>
+<p>Tabela porządkuje modele od najtańszego. Oceny pod tabelą mówią, komu dany model wystarczy, a komu nie.</p>
 `,
       component: 'card-printer-ranking',
     },
