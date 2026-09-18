@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { getSessionFromCookie } from '@/lib/auth'
-import { parsujDokumentCenowy, koncesjeDlaPn } from '@/lib/koncesje'
+import { parsujDokumentCenowy, koncesjeDlaPn, cennikJakoDokument, type DaneKoncesji } from '@/lib/koncesje'
+import { parsujCennikXlsx } from '@/lib/cennik-xlsx'
 
 export const runtime = 'nodejs'
 export const maxDuration = 60
@@ -71,8 +72,35 @@ export async function POST(request: NextRequest) {
     const plik = form.get('file') as File | null
     if (!plik) return NextResponse.json({ error: 'Brak pliku.' }, { status: 400 })
 
-    const tekst = await tekstZPdf(Buffer.from(await plik.arrayBuffer()))
-    const dane = parsujDokumentCenowy(tekst, plik.name)
+    const bufor = Buffer.from(await plik.arrayBuffer())
+    const arkusz = /\.xlsx?$/i.test(plik.name)
+
+    let dane: DaneKoncesji
+    if (arkusz) {
+      // Cennik producenta nie niesie w sobie metryki: kto go wystawił i na jak
+      // długo. Te trzy pola przychodzą z formularza obok pola na plik.
+      const dostawca = (form.get('dostawca') as string | null)?.trim()
+      const od = (form.get('od') as string | null) || ''
+      const doKiedy = (form.get('do') as string | null) || ''
+      if (!dostawca) return NextResponse.json({ error: 'Podaj dostawcę, od którego jest cennik.' }, { status: 400 })
+      const startDate = new Date(`${od}T12:00:00Z`)
+      const endDate = new Date(`${doKiedy}T12:00:00Z`)
+      if (Number.isNaN(startDate.getTime()) || Number.isNaN(endDate.getTime()))
+        return NextResponse.json({ error: 'Podaj, od kiedy i do kiedy cennik obowiązuje.' }, { status: 400 })
+      if (endDate <= startDate)
+        return NextResponse.json({ error: 'Data końca cennika musi być późniejsza niż początek.' }, { status: 400 })
+
+      const wiersze = await parsujCennikXlsx(bufor)
+      // Kod cennika wiąże rewizje tego samego dostawcy: nowy plik na ten sam
+      // miesiąc zastępuje poprzedni, a nie dokłada drugiej listy.
+      const kod = `${dostawca.toUpperCase().replace(/[^A-Z0-9]+/g, '-')}-${startDate.getUTCFullYear()}-${String(startDate.getUTCMonth() + 1).padStart(2, '0')}`
+      dane = cennikJakoDokument(
+        wiersze.map((w) => ({ partNumber: w.partNumber, description: w.description, minQty: 1, unitPrice: w.unitPrice })),
+        { dostawca, kod, reseller: 'TAKMA', startDate, endDate }
+      )
+    } else {
+      dane = parsujDokumentCenowy(await tekstZPdf(bufor), plik.name)
+    }
 
     // Nowa wersja dokumentu zastępuje poprzednią — rewizje wydaje się przy
     // zmianie ilości albo cen i dwie naraz nie obowiązują. Kasujemy tylko w
@@ -115,6 +143,7 @@ export async function POST(request: NextRequest) {
       docNumber: zapisana.docNumber,
       requestId: zapisana.requestId,
       reseller: zapisana.reseller,
+      distributor: zapisana.distributor,
       pozycji: zapisana.items.length,
       waznaDo: zapisana.endDate,
     })

@@ -38,11 +38,13 @@ function PriceInput({ value, onChange }: { value: number; onChange: (grosze: num
 }
 
 export interface TrafienieKoncesji {
-  source: 'ZEBRA' | 'JARLTECH'
+  /** CENNIK = cennik zakupowy producenta, bez limitu sztuk i klienta końcowego */
+  source: 'ZEBRA' | 'JARLTECH' | 'CENNIK'
   requestId: string
   docNumber: string | null
   reseller: string
   endUser: string | null
+  distributor: string | null
   unitPrice: number
   currency: string
   unitPricePln: number
@@ -90,17 +92,27 @@ function ItemRow({ item, index, koncesje = [] }: { item: QuoteItemData; index: n
         {koncesje.map((koncesja) => (
           <div key={`${koncesja.source}-${koncesja.requestId}`} className="mt-1 px-1 text-xs leading-relaxed">
             <span className="text-emerald-700 font-medium">
-              Cena specjalna {(koncesja.unitPrice / 100).toFixed(2)} {koncesja.currency}
-              {' '}≈ {formatPrice(koncesja.unitPricePln)} zł
+              {koncesja.source === 'CENNIK' ? 'Cena z cennika ' : 'Cena specjalna '}
+              {koncesja.currency === 'PLN'
+                ? `${formatPrice(koncesja.unitPricePln)} zł`
+                : `${(koncesja.unitPrice / 100).toFixed(2)} ${koncesja.currency} ≈ ${formatPrice(koncesja.unitPricePln)} zł`}
             </span>
             <span className="text-gray-500">
-              {koncesja.source === 'JARLTECH'
-                ? ` — oferta Jarltecha ${koncesja.docNumber ?? ''} na ${etykietaPowiazania(koncesja.requestId)}`
-                : ` — koncesja ${koncesja.requestId}`}
-              {' '}({koncesja.reseller}
-              {koncesja.endUser ? `, ${koncesja.endUser}` : ''})
-              {koncesja.pozostaloSztuk != null ? `, zostało ${koncesja.pozostaloSztuk} szt.` : ''}
-              , ważna jeszcze {koncesja.dniDoKonca} dni
+              {koncesja.source === 'CENNIK' ? (
+                <>
+                  {` — cennik ${koncesja.distributor ?? koncesja.requestId}, obowiązuje jeszcze ${koncesja.dniDoKonca} dni`}
+                </>
+              ) : (
+                <>
+                  {koncesja.source === 'JARLTECH'
+                    ? ` — oferta Jarltecha ${koncesja.docNumber ?? ''} na ${etykietaPowiazania(koncesja.requestId)}`
+                    : ` — koncesja ${koncesja.requestId}`}
+                  {' '}({koncesja.reseller}
+                  {koncesja.endUser ? `, ${koncesja.endUser}` : ''})
+                  {koncesja.pozostaloSztuk != null ? `, zostało ${koncesja.pozostaloSztuk} szt.` : ''}
+                  , ważna jeszcze {koncesja.dniDoKonca} dni
+                </>
+              )}
             </span>
             {item.purchasePrice !== koncesja.unitPricePln && (
               <button

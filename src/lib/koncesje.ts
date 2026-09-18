@@ -12,7 +12,11 @@ import { prisma } from '@/lib/db'
  */
 
 /** Skąd pochodzi cena specjalna. */
-export type ZrodloKoncesji = 'ZEBRA' | 'JARLTECH'
+export type ZrodloKoncesji = 'ZEBRA' | 'JARLTECH' | 'CENNIK'
+
+/** Wartość z bazy na typ — nieznane źródło traktujemy jak koncesję Zebry. */
+export const zrodloCeny = (s: string): ZrodloKoncesji =>
+  s === 'JARLTECH' || s === 'CENNIK' ? s : 'ZEBRA'
 
 /** Wiersz tabeli „Price Concession Items" po sparsowaniu PDF-a. */
 export interface PozycjaKoncesji {
@@ -265,6 +269,30 @@ export function parsujOferteJarltech(tekst: string): DaneKoncesji {
 }
 
 /**
+ * Cennik zakupowy producenta (arkusz) jako dokument cenowy.
+ *
+ * Różni się od koncesji tym, że nie stoi za nim ani jedna szansa sprzedaży, ani
+ * limit sztuk: to nasza cena zakupu na wszystko z listy, ważna do następnej
+ * rewizji cennika. Trzymamy go w tej samej tabeli, żeby kreator oferty pytał o
+ * cenę zakupu w jednym miejscu, a nie w trzech.
+ */
+export function cennikJakoDokument(
+  items: PozycjaKoncesji[],
+  meta: { dostawca: string; kod: string; reseller: string; startDate: Date; endDate: Date }
+): DaneKoncesji {
+  return {
+    source: 'CENNIK',
+    requestId: meta.kod,
+    reseller: meta.reseller,
+    distributor: meta.dostawca,
+    currency: 'PLN',
+    startDate: meta.startDate,
+    endDate: meta.endDate,
+    items,
+  }
+}
+
+/**
  * Rozpoznaje dokument po treści. Ceny specjalne przychodzą dwiema drogami:
  * koncesja od Zebry i oparta na niej oferta dystrybutora — obie trafiają do
  * tej samej tabeli, więc w kreatorze oferty widać je obok siebie.
@@ -344,7 +372,7 @@ export async function koncesjeDlaPn(partNumber: string): Promise<TrafienieKonces
 
   return pozycje
     .map((p) => ({
-      source: (p.concession.source === 'JARLTECH' ? 'JARLTECH' : 'ZEBRA') as ZrodloKoncesji,
+      source: zrodloCeny(p.concession.source),
       requestId: p.concession.requestId,
       docNumber: p.concession.docNumber,
       revision: p.concession.revision,

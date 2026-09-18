@@ -55,15 +55,19 @@ export default async function KoncesjePage() {
               <p className="font-semibold text-gray-900">
                 {k.reseller}
                 <span className="ml-2 text-sm font-normal text-gray-500">
-                  {k.source === 'JARLTECH'
-                    ? `oferta Jarltecha ${k.docNumber ?? ''} → ${etykietaPowiazania(k.requestId)}`
-                    : `PC ${k.requestId}`}
+                  {k.source === 'CENNIK'
+                    ? `cennik ${k.distributor ?? k.requestId}`
+                    : k.source === 'JARLTECH'
+                      ? `oferta Jarltecha ${k.docNumber ?? ''} → ${etykietaPowiazania(k.requestId)}`
+                      : `PC ${k.requestId}`}
                   {k.revision ? ` rev. ${k.revision}` : ''}
                 </span>
               </p>
               <p className="text-sm text-gray-500 mt-0.5">
                 {k.endUser ? <>klient końcowy: {k.endUser} · </> : null}
-                zakup przez {k.distributor || '—'}
+                {k.source === 'CENNIK'
+                  ? `${k.items.length} ${k.items.length === 1 ? 'pozycja' : k.items.length < 5 ? 'pozycje' : 'pozycji'} w cenniku`
+                  : `zakup przez ${k.distributor || '—'}`}
               </p>
               <p className="text-sm mt-1 text-gray-500">
                 {k.startDate.toLocaleDateString('pl-PL')} – {k.endDate.toLocaleDateString('pl-PL')}
@@ -96,7 +100,14 @@ export default async function KoncesjePage() {
                 </>
               )}
             </span>
-            <UsunKoncesje id={k.id} etykieta={`${k.source === 'JARLTECH' ? `oferta ${k.docNumber ?? k.requestId}` : k.requestId} (${k.reseller})`} />
+            <UsunKoncesje
+              id={k.id}
+              etykieta={
+                k.source === 'CENNIK'
+                  ? `cennik ${k.distributor ?? k.requestId}`
+                  : `${k.source === 'JARLTECH' ? `oferta ${k.docNumber ?? k.requestId}` : k.requestId} (${k.reseller})`
+              }
+            />
           </div>
         </summary>
 
@@ -136,8 +147,9 @@ export default async function KoncesjePage() {
     <div className="max-w-5xl">
       <h1 className="text-2xl font-bold text-gray-900 mb-1">Ceny specjalne</h1>
       <p className="text-sm text-gray-500 mb-5">
-        Koncesje Zebry i oferty Jarltecha wystawione na te koncesje. Gdy w kreatorze oferty dodasz numer
-        objęty aktywnym dokumentem, zobaczysz podpowiedź z ceną zakupu i pozostałym limitem sztuk.
+        Koncesje Zebry, oferty Jarltecha wystawione na te koncesje i cenniki zakupowe producentów. Gdy w
+        kreatorze oferty dodasz numer objęty aktywnym dokumentem, zobaczysz podpowiedź z ceną zakupu i
+        pozostałym limitem sztuk.
         Koncesja mówi, ile Zebra pozwala zapłacić; oferta dystrybutora — ile faktycznie zapłacimy.
         Kliknij kartę, żeby zobaczyć numery i ceny. Na tydzień przed końcem idzie przypomnienie mailem:
         ceny TAKMY na handlowy@takma.com.pl, ceny Scantera na biuro@scanter.pl.
