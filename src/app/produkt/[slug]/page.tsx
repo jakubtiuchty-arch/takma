@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { notFound, permanentRedirect } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import { getProductStock } from '@/lib/product-stock'
+import { getProductStock, getBundleLivePrices } from '@/lib/product-stock'
 import productImageDims from '@/data/product-image-dims.json'
 import { selectProductVariant } from '@/lib/product-variant-offers'
 import LiveProductSchema from './LiveProductSchema'
@@ -367,6 +367,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const starterBundle = product.categoryId === 'drukarki-kart' && !product.bundleItems
     ? products.find((p) => p.bundleItems?.some((i) => i.productId === product.id))
     : undefined
+  // Ceny na żywo zestawu i składników — baner „zamiast X zł” i sekcja „Co jest w zestawie” z tego samego źródła co SmartPrice
+  const bundleForLivePrices = product.bundleItems ? product : starterBundle
+  const bundleLivePrices = bundleForLivePrices ? await getBundleLivePrices(bundleForLivePrices.slug) : undefined
 
   // Karty PVC / zbliżeniowe: drukarki, do których pasują — odwrotność sekcji „Karty PVC” na karcie
   // drukarki (drukarka ma kartę w relatedAccessories), więc jedna lista w danych wystarcza
@@ -1267,11 +1270,11 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             )}
 
             {/* Karta zestawu: skład z cenami osobno, nad opisem (nie w kolumnie ceny, żeby nie rozpychać CTA) */}
-            {product.bundleItems ? <BundleContents bundle={product} /> : null}
+            {product.bundleItems ? <BundleContents bundle={product} livePrices={bundleLivePrices} /> : null}
 
             {/* Zestaw startowy drukarki kart: baner w tym samym miejscu co komplety drukarek etykiet */}
             {starterBundle && (
-              <BundleBanner bundle={starterBundle} image={`/images/kits/${starterBundle.slug}.webp`} compact={starterBundle.bundleBannerCompact} />
+              <BundleBanner bundle={starterBundle} image={`/images/kits/${starterBundle.slug}.webp`} compact={starterBundle.bundleBannerCompact} livePrices={bundleLivePrices} />
             )}
 
             {/* Opis — dla etykiet termicznych bogaty content z thermal-label-series */}

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Product, products } from '@/data/products'
+import { bundleItemPartNumber, bundlePartNumber } from '@/lib/bundle'
 
 const fmt = (v: number) => v.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
 
@@ -8,16 +9,18 @@ export type BundleItem = { product: Product; quantity: number; price: number; la
 
 /** Składniki zestawu z cenami. Gdy składnik ma wskazany wariant (np. CardStudio 2.0 Standard),
  *  bierzemy cenę i nazwę tego wariantu, a nie najtańszego z karty. */
-export function resolveItems(bundle: Product): BundleItem[] {
+export function resolveItems(bundle: Product, livePrices?: Record<string, number>): BundleItem[] {
   return (bundle.bundleItems ?? [])
     .map((i): BundleItem | null => {
       const p = products.find((x) => x.id === i.productId)
       if (!p) return null
       const variant = i.variantPn ? p.variants?.find((v) => v.partNumber === i.variantPn) : undefined
+      const pn = bundleItemPartNumber(i, p)
       return {
         product: p,
         quantity: i.quantity,
-        price: variant?.priceFrom ?? p.priceFrom ?? 0,
+        // Cena na żywo z tego samego źródła co karta produktu; bez odpowiedzi dystrybutora — priceFrom.
+        price: (pn ? livePrices?.[pn] : undefined) ?? variant?.priceFrom ?? p.priceFrom ?? 0,
         label: variant?.name ? `${p.manufacturerId === 'zebra' ? 'Zebra ' : ''}${variant.name}` : p.name,
         image: i.image ?? p.images[0],
         // Własny opis składnika: opis karty potrafi wymieniać wszystkie wersje naraz,
@@ -33,11 +36,13 @@ function sumSeparately(items: BundleItem[]) {
 }
 
 /** Sekcja „Co jest w zestawie” na karcie samego zestawu: składniki ze zdjęciami, ceny osobno i różnica. */
-export function BundleContents({ bundle }: { bundle: Product }) {
-  const items = resolveItems(bundle)
+export function BundleContents({ bundle, livePrices }: { bundle: Product; livePrices?: Record<string, number> }) {
+  const items = resolveItems(bundle, livePrices)
   if (!items.length) return null
   const separately = sumSeparately(items)
-  const saving = bundle.priceFrom ? separately - bundle.priceFrom : 0
+  const bundlePn = bundlePartNumber(bundle)
+  const bundlePrice = (bundlePn ? livePrices?.[bundlePn] : undefined) ?? bundle.priceFrom
+  const saving = bundlePrice ? separately - bundlePrice : 0
   return (
     <section id="w-zestawie">
       <div className="flex items-baseline justify-between gap-3 flex-wrap mb-4">
@@ -73,7 +78,7 @@ export function BundleContents({ bundle }: { bundle: Product }) {
           {bundle.bundleExtras.join(' · ')}
         </p>
       ) : null}
-      {bundle.priceFrom ? (
+      {bundlePrice ? (
         <div className="mt-3 rounded-xl border border-slate-200 bg-slate-50 px-4 py-4 sm:px-6 grid gap-4 sm:grid-cols-3 sm:items-center">
           <div>
             <p className="text-xs uppercase tracking-wide text-gray-500">{bundle.bundleFactory ? 'Kupione osobno' : 'Suma osobno'}</p>
@@ -82,7 +87,7 @@ export function BundleContents({ bundle }: { bundle: Product }) {
           <div>
             <p className="text-xs uppercase tracking-wide text-gray-500">Cena zestawu</p>
             <p className="mt-0.5 text-2xl font-bold text-gray-900 tabular-nums">
-              {fmt(bundle.priceFrom)} zł <span className="text-sm font-normal text-gray-500">netto</span>
+              {fmt(bundlePrice)} zł <span className="text-sm font-normal text-gray-500">netto</span>
             </p>
           </div>
           <div className="sm:justify-self-end">

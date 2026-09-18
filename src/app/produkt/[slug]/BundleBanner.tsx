@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Product } from '@/data/products'
 import BundleAddButton from './BundleAddButton'
 import { resolveItems } from './BundleBox'
+import { bundlePartNumber } from '@/lib/bundle'
 
 const fmt = (v: number) => v.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
 const fmtInt = (v: number) => Math.round(v).toLocaleString('pl-PL')
@@ -21,12 +22,14 @@ function shortName(name: string) {
  * Niski baner zestawu startowego na karcie drukarki kart, między tabelą wariantów a opisem.
  * Obraz z Higgsfield (produkty 1:1 z renderów), cały tekst w HTML. Jeden przycisk: zestaw do koszyka.
  */
-export default function BundleBanner({ bundle, image, compact }: { bundle: Product; image: string; compact?: boolean }) {
-  const items = resolveItems(bundle)
-  if (!items.length || !bundle.priceFrom) return null
+export default function BundleBanner({ bundle, image, compact, livePrices }: { bundle: Product; image: string; compact?: boolean; livePrices?: Record<string, number> }) {
+  const items = resolveItems(bundle, livePrices)
+  const pn = bundlePartNumber(bundle)
+  // Cena zestawu i składników z jednego snapshotu dystrybutora; bez niego — priceFrom z katalogu.
+  const bundlePrice = (pn ? livePrices?.[pn] : undefined) ?? bundle.priceFrom
+  if (!items.length || !bundlePrice) return null
   const separately = items.reduce((s, i) => s + i.price * i.quantity, 0)
-  const saving = separately - bundle.priceFrom
-  const pn = bundle.specifications.find((s) => s.name === 'Part Number')?.value
+  const saving = separately - bundlePrice
   // Liczby w zdaniu pod nagłówkiem biorą się ze składników zestawu, nie z kodu:
   // taśma na 200 wydruków (Pronto100) i na 300 (Magicard 300 / 600) dają inne zdanie.
   const ribbon = items.find((i) => i.product.subcategoryIds?.includes('tasmy-do-drukarek-kart'))
@@ -41,7 +44,7 @@ export default function BundleBanner({ bundle, image, compact }: { bundle: Produ
   // liczy się w kartach, a nie w stronach
   const ribbonDuplex = /dwustronn/i.test(ribbon?.product.specifications.find((s) => s.name === 'Wydajność')?.value ?? '')
   const ribbonUnit = ribbonDuplex ? 'kart z nadrukiem po obu stronach' : 'stron w kolorze'
-  const cartBundle = { id: bundle.id, name: bundle.name, slug: bundle.slug, image: bundle.images[0], partNumber: pn, priceNetto: bundle.priceFrom, categoryId: bundle.categoryId }
+  const cartBundle = { id: bundle.id, name: bundle.name, slug: bundle.slug, image: bundle.images[0], partNumber: pn, priceNetto: bundlePrice, categoryId: bundle.categoryId }
 
   if (compact) {
     // Wariant niski: jeden wiersz — obraz, tekst ze składem w jednej linii, cena i przycisk
@@ -82,7 +85,7 @@ export default function BundleBanner({ bundle, image, compact }: { bundle: Produ
           </div>
           <div className="flex flex-col gap-2 border-t border-slate-100 px-5 py-4 sm:px-6 md:border-t-0 md:border-l md:items-end md:text-right">
             <p className="text-2xl font-bold text-gray-900 tabular-nums leading-none">
-              {fmt(bundle.priceFrom)} zł <span className="text-sm font-normal text-gray-500">netto</span>
+              {fmt(bundlePrice)} zł <span className="text-sm font-normal text-gray-500">netto</span>
             </p>
             <p className="text-xs text-gray-500 tabular-nums">
               {saving > 0 && <>zamiast <span className="line-through">{fmt(separately)} zł</span> · <span className="font-semibold text-green-700">oszczędzasz {fmt(saving)} zł</span></>}
@@ -142,7 +145,7 @@ export default function BundleBanner({ bundle, image, compact }: { bundle: Produ
           <div className="mt-4 flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
             <div className="min-w-0">
               <p className="text-2xl font-bold text-gray-900 tabular-nums leading-none">
-                {fmt(bundle.priceFrom)} zł <span className="text-sm font-normal text-gray-500">netto</span>
+                {fmt(bundlePrice)} zł <span className="text-sm font-normal text-gray-500">netto</span>
               </p>
               <p className="mt-1.5 text-xs text-gray-500 tabular-nums">
                 {saving > 0 && (
@@ -151,7 +154,7 @@ export default function BundleBanner({ bundle, image, compact }: { bundle: Produ
                     <span className="mx-1.5 text-gray-300">·</span>
                   </>
                 )}
-                {fmt(bundle.priceFrom * 1.23)} zł brutto
+                {fmt(bundlePrice * 1.23)} zł brutto
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-4">
@@ -162,7 +165,7 @@ export default function BundleBanner({ bundle, image, compact }: { bundle: Produ
                   slug: bundle.slug,
                   image: bundle.images[0],
                   partNumber: pn,
-                  priceNetto: bundle.priceFrom,
+                  priceNetto: bundlePrice,
                   categoryId: bundle.categoryId,
                 }}
               />
