@@ -40,6 +40,7 @@ export function productVariantSchema(product: Product, rows: StockInfo[]) {
         description: `${product.shortDescription}. Wariant: ${variant.name}.`,
         sku: variant.partNumber,
         mpn: variant.partNumber,
+        ...(variant.gtin13 ? { gtin13: variant.gtin13 } : {}),
         url: variantUrl,
         image: product.images.map(absoluteProductImageUrl),
         brand: { '@type': 'Brand', name: 'Zebra' },

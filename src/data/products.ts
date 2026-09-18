@@ -118,6 +118,8 @@ export interface ProductVariant {
   partNumber: string
   name: string
   attributes: Record<string, string>
+  /** GTIN-13 (EAN) wariantu — trafia do schema Product wariantu; ten sam kod co w feedzie Merchant Center */
+  gtin13?: string
   priceFrom?: number
   promoPrice?: number
   promoLabel?: string
@@ -206,7 +208,7 @@ export const categories: Category[] = [
     description: 'Drukarki kart PVC do identyfikatorów, kart dostępu i kart lojalnościowych. Modele jednostronne i dwustronne Zebra oraz Magicard.',
     seoTitle: 'Drukarki kart plastikowych | Zebra i Magicard',
     seoDescription: 'Porównaj drukarki kart PVC Magicard Pronto100, 300 i 600 Duo oraz Zebra ZC100 i ZC300. Druk jedno- i dwustronny, taśmy, ceny netto i pomoc w doborze.',
-    longDescription: 'Drukuj identyfikatory pracownicze, karty lojalnościowe i przepustki wtedy, gdy są potrzebne. W ofercie znajdziesz drukarki [Zebra](/zebra) ZC100 i ZC300 oraz [Magicard by Brady](/magicard): kompaktową Pronto100 i dwustronne modele 300 oraz 600 Duo. Wybierz druk jednej lub obu stron, a do urządzenia dobierz taśmę i zestaw czyszczący. Jeśli karta ma też otwierać drzwi, sprawdzimy z Tobą wymagania systemu kontroli dostępu i potrzebne kodowanie.',
+    longDescription: 'Drukuj identyfikatory pracownicze, karty lojalnościowe i przepustki wtedy, gdy są potrzebne. W ofercie znajdziesz drukarki [Zebra](/zebra) [ZC100](/produkt/zebra-zc100) i [ZC300](/produkt/zebra-zc300) oraz [Magicard by Brady](/magicard): kompaktową Pronto100 i dwustronne modele 300 oraz 600 Duo. Wybierz druk jednej lub obu stron, a do urządzenia dobierz taśmę i zestaw czyszczący. Jeśli karta ma też otwierać drzwi, sprawdzimy z Tobą wymagania systemu kontroli dostępu i potrzebne kodowanie.',
     icon: 'printer',
     productCount: 7,
   },
@@ -46675,70 +46677,90 @@ USB, Ethernet i Wi-Fi są w standardzie. Magicard 600 Duo może więc pracować 
     id: 'zebra-zc100',
     slug: 'zebra-zc100',
     name: 'Zebra ZC100',
-    shortDescription: 'Zebra ZC100 — drukarka kart plastikowych entry-level, jednostronna, 300 dpi, termosublimacja, USB/Ethernet',
-    seoTitle: 'Drukarka kart Zebra ZC100 — tania mono 300 dpi USB/LAN',
-    seoDescription: 'Zebra ZC100 (ZC11) — tania drukarka kart plastikowych mono, 300 dpi, termosublimacja. ZC100 Zebra: 150 kart/h, USB/Ethernet. ZC11-0000000EM00 od 3 420 zł netto.',
-    description: `Dla kogo? Zebra ZC100 to kompaktowa drukarka kart plastikowych zaprojektowana dla małych biur, recepcji hotelowych, klubów fitness i sklepów — wszędzie tam, gdzie potrzebujesz drukować identyfikatory, karty lojalnościowe lub karty członkowskie w niewielkich nakładach (do 500 kart/rok).
+    shortDescription: 'Zebra ZC100 — jednostronna drukarka kart plastikowych, kolor i mono, 300 dpi, USB, opcje Ethernet i koder magnetyczny',
+    seoTitle: 'Drukarka kart Zebra ZC100 — jednostronna, kolor, 300 dpi',
+    seoDescription: 'Drukarka kart Zebra ZC100: kolorowe karty PVC, 300 dpi, do 150 kart/h, jednostronna. Wersje USB, Ethernet, koder magnetyczny. PN: ZC11-0000000EM00, ZC11-000C000EM00.',
+    description: `Zebra ZC100 to jednostronna drukarka kart plastikowych do identyfikatorów, kart lojalnościowych, członkowskich i legitymacji w nakładach do kilkuset kart rocznie. Drukuje w pełnym kolorze z taśmą YMCKO albo w czerni z taśmą mono na kartach PVC CR-80 i CR-79. Sprawdza się w małych biurach, recepcjach, klubach fitness, szkołach i sklepach, gdzie karta ma powstać w kilkadziesiąt sekund, bez zamawiania jej na zewnątrz.
 
-Drukuje pełnokolorowe karty PVC CR-80 w technologii termosublimacyjnej (dye-sublimation) z rozdzielczością 300 dpi. Prędkość: 150 kart/h w trybie kolorowym YMCKO (24 s/karta) lub 700 kart/h w trybie monochromatycznym (5 s/karta). Podajnik na 100 kart, odbiornik na 50 kart.
+## Zebra ZC100 w liczbach
 
-Opcjonalne kodowanie paskiem magnetycznym (HiCo/LoCo) pozwala tworzyć karty hotelowe i dostępowe. Komplet QuikCard (ZC11-0000Q00EM00) — ta sama drukarka plus taśma YMCKO na 200 wydruków, 200 kart PVC i licencja CardStudio 2.0 Standard — stoi u nas jako osobny zestaw startowy.
+Druk jednostronny w rozdzielczości 300 dpi (11,8 pkt/mm). Do 150 kart/h w kolorze YMCKO i do 700 kart/h w czerni. Podajnik i odbiornik na 100 kart o grubości 0,76 mm, obsługa kart 0,25–1,02 mm (10–40 mil). USB 2.0 w standardzie, 2 GB pamięci flash. Obudowa 258 × 157 × 383 mm (wys. × szer. × gł.), 3,9 kg. Gwarancja producenta: 3 lata na drukarkę i głowicę drukującą.
 
-Łączność: USB 2.0 standardowo, Ethernet 10/100 opcjonalnie. Platforma Link-OS umożliwia zdalne zarządzanie przez przeglądarkę. Wymiary: 202 × 348 × 215 mm, waga 3,5 kg. Gwarancja producenta: 2 lata (drukarka) + 2 lata (głowica).
+## Cztery konfiguracje
 
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
+ZC11-0000000EM00 to wersja podstawowa z USB. ZC11-000C000EM00 ma dodatkowo Ethernet 10/100, więc drukarkę może współdzielić kilka stanowisk. ZC11-0M00000EM00 zawiera koder pasków magnetycznych ISO 7811 (HiCo i LoCo, ścieżki 1–3, karty 0,76 mm) do kart hotelowych i dostępowych, a ZC11-0M0C000EM00 łączy Ethernet z koderem. Karta specyfikacji Zebra wymienia jeszcze moduł 802.11ac; w TAKMA ZC100 jest dostępna w czterech konfiguracjach przewodowych, a jeśli potrzebujesz Wi-Fi, druku dwustronnego albo kodowania RFID, wybierz Zebra ZC300.
+
+## Co jest potrzebne do pierwszego wydruku
+
+Drukarka, taśma (YMCKO na 200 lub 300 kolorowych kart albo mono K na 1 500 kart), karty PVC i program do projektowania. Komplet QuikCard ZC11-0000Q00EM00 z taśmą YMCKO na 200 wydruków, 200 białymi kartami i licencją Zebra CardStudio 2.0 Standard sprzedajemy jako osobny zestaw startowy. Sterowniki dla Windows, macOS i Linux pobierzesz ze strony wsparcia Zebra, do której link znajdziesz w sekcji „Pliki do pobrania”. Kaseta z taśmą wchodzi do komory od przodu w jednej pozycji, a podajnik sam dopasowuje się do grubości kart.
+
+## Zabezpieczenia i serwis
+
+Drukarka uwierzytelnia komputer, z którego przychodzi zlecenie, i szyfruje transmisję, więc nie wydrukuje karty z nieautoryzowanego stanowiska. Serwis drukarek kart Zebra prowadzi nasz warsztat, a obsługę ZC100 opisaliśmy po polsku w instrukcji na serwis-zebry.pl.
+
+Parametry według karty specyfikacji Zebra ZC100 i listy gwarancyjnej Zebra (wrzesień 2026).`,
     categoryId: 'drukarki-kart',
     subcategoryIds: [],
     manufacturerId: 'zebra',
     priceFrom: 3419.55,
     images: ['/images/products/zc100_1_s.png', '/images/products/zc100_2_s.png', '/images/products/zc100_3_s.png'],
     imageDescriptions: [
-      'Zebra ZC100 — widok z przodu',
-      'Zebra ZC100 — widok z tyłu',
-      'Zebra ZC100 — widok pod kątem',
+      'Zebra ZC100 — zamknięta drukarka kart, widok z boku i od przodu, biała obudowa i okno kasety z taśmą',
+      'Zebra ZC100 — front z podajnikiem i odbiornikiem kart, ujęcie pod kątem',
+      'Zebra ZC100 — widok z przodu, diody stanu i przezroczyste okno taśmy YMCKO',
     ],
     tags: ['retail'],
     availability: 'available',
-    isNew: true,
+    isNew: false,
     isBestseller: false,
     specifications: [
       { name: 'Metoda druku', value: 'Termosublimacja (dye-sublimation)' },
-      { name: 'Rozdzielczość', value: '300 dpi (11,8 dot/mm)' },
+      { name: 'Rozdzielczość', value: '300 dpi (11,8 pkt/mm)' },
       { name: 'Druk jedno-/dwustronny', value: 'Jednostronny' },
-      { name: 'Prędkość druku (YMCKO)', value: '150 kart/h (24 s/karta)' },
-      { name: 'Prędkość druku (mono K)', value: '700 kart/h (5 s/karta)' },
-      { name: 'Format karty', value: 'CR-80 (85,6 × 54 mm), ISO 7810 ID-1' },
-      { name: 'Grubość karty', value: '0,25–1,02 mm (10–40 mil)' },
-      { name: 'Pojemność podajnika', value: '100 kart (0,76 mm)' },
-      { name: 'Pojemność odbiornika', value: '50 kart' },
-      { name: 'Pamięć', value: '512 MB flash' },
+      { name: 'Prędkość druku (YMCKO)', value: 'do 150 kart/h (ok. 24 s/karta)' },
+      { name: 'Prędkość druku (mono K)', value: 'do 700 kart/h (ok. 5 s/karta)' },
+      { name: 'Format karty', value: 'CR-80 (85,6 × 54 mm) ISO 7810 ID-1, CR-79' },
+      { name: 'Grubość karty', value: '0,25–1,02 mm (10–40 mil); koder magnetyczny tylko dla 0,76 mm' },
+      { name: 'Materiał kart', value: 'PVC i kompozyt PVC' },
+      { name: 'Pojemność podajnika', value: '100 kart (0,76 mm), automatyczna regulacja' },
+      { name: 'Pojemność odbiornika', value: '100 kart (0,76 mm)' },
+      { name: 'Pamięć', value: '2 GB flash' },
       { name: 'Łączność (standard)', value: 'USB 2.0' },
-      { name: 'Łączność (opcja)', value: 'Ethernet 10/100' },
-      { name: 'Kodowanie (opcja)', value: 'Pasek magnetyczny HiCo/LoCo (ISO 7811)' },
-      { name: 'Oprogramowanie', value: 'Zebra CardStudio (wersje od Classic do Enterprise)' },
-      { name: 'Zarządzanie', value: 'Link-OS, przeglądarka www, SNMP' },
-      { name: 'Wymiary (szer.×gł.×wys.)', value: '202 × 348 × 215 mm' },
-      { name: 'Waga', value: '3,5 kg' },
+      { name: 'Łączność (opcja)', value: 'Ethernet 10/100 (warianty ZC11-000C…)' },
+      { name: 'Kodowanie (opcja)', value: 'Pasek magnetyczny ISO 7811, HiCo/LoCo, ścieżki 1–3 (warianty ZC11-0M…)' },
+      { name: 'Zabezpieczenia', value: 'Uwierzytelnianie drukarka–host, szyfrowanie transmisji' },
+      { name: 'Sterowniki', value: 'Windows (w tym Server), macOS, Linux — aktualne wersje na stronie wsparcia Zebra' },
+      { name: 'Oprogramowanie', value: 'Zebra CardStudio 2.0 (Classic, Standard, Professional, Enterprise)' },
+      { name: 'Wymiary (wys.×szer.×gł.)', value: '258 × 157 × 383 mm' },
+      { name: 'Waga', value: '3,9 kg' },
       { name: 'Zasilanie', value: '100–240 V AC, 50/60 Hz' },
-      { name: 'Gwarancja', value: '2 lata drukarka + 2 lata głowica' },
+      { name: 'Gwarancja', value: '3 lata na drukarkę i głowicę drukującą' },
     ],
-    applications: ['Identyfikatory pracownicze', 'Karty lojalnościowe', 'Karty hotelowe', 'Karty członkowskie (fitness, kluby)', 'Karty rabatowe i gift cards', 'Przepustki gości'],
+    applications: ['Identyfikatory pracownicze', 'Legitymacje szkolne i studenckie', 'Karty lojalnościowe', 'Karty hotelowe', 'Karty członkowskie (fitness, kluby)', 'Karty rabatowe i podarunkowe', 'Przepustki gości'],
     variants: [
-      { partNumber: 'ZC11-0000000EM00', name: 'ZC100 USB', priceFrom: 3419.55, availability: 'available', attributes: {} },
-      { partNumber: 'ZC11-000C000EM00', name: 'ZC100 USB + Ethernet', priceFrom: 4226.55, availability: 'available', attributes: { 'Ethernet': 'Tak' } },
-      { partNumber: 'ZC11-0M00000EM00', name: 'ZC100 USB + Mag', priceFrom: 4445.44, availability: 'available', attributes: { 'Koder magnetyczny': 'Tak' } },
-      { partNumber: 'ZC11-0M0C000EM00', name: 'ZC100 USB + Ethernet + Mag', priceFrom: 5115.59, availability: 'available', attributes: { 'Ethernet': 'Tak', 'Koder magnetyczny': 'Tak' } },
+      { partNumber: 'ZC11-0000000EM00', name: 'ZC100 USB', priceFrom: 3419.55, availability: 'available', gtin13: '8596375174955', attributes: {} },
+      { partNumber: 'ZC11-000C000EM00', name: 'ZC100 USB + Ethernet', priceFrom: 4226.55, availability: 'available', gtin13: '8596375174962', attributes: { 'Ethernet': 'Tak' } },
+      { partNumber: 'ZC11-0M00000EM00', name: 'ZC100 USB + koder magnetyczny', priceFrom: 4445.44, availability: 'unavailable', attributes: { 'Koder magnetyczny': 'Tak' } },
+      { partNumber: 'ZC11-0M0C000EM00', name: 'ZC100 USB + Ethernet + koder magnetyczny', priceFrom: 5115.59, availability: 'unavailable', attributes: { 'Ethernet': 'Tak', 'Koder magnetyczny': 'Tak' } },
     ],
+    variantAttributeTooltips: {
+      'Ethernet': 'Port sieciowy 10/100 Mb/s. Drukarkę widzi każde stanowisko w sieci, nie tylko komputer podłączony kablem USB.',
+      'Koder magnetyczny': 'Wbudowany koder pasków magnetycznych ISO 7811 (HiCo i LoCo, ścieżki 1–3). Zapisuje dane na pasku w tym samym przebiegu co druk.\n\nDziała tylko z kartami 0,76 mm (30 mil) z paskiem magnetycznym.',
+    },
     compatibleAccessories: ['zebra-ribbon-ymcko-zc', 'zebra-ribbon-black-zc', 'zebra-ribbon-white-zc', 'zebra-ribbon-ymcko-300-zc', 'zebra-ribbon-ymcko-multipack-zc', 'zebra-ribbon-ymckok-zc', 'zebra-ribbon-half-ymcko-zc', 'zebra-ribbon-kdo-zc', 'zebra-ribbon-kro-zc', 'zebra-ribbon-red-zc', 'zebra-ribbon-blue-zc', 'zebra-ribbon-gold-zc', 'zebra-ribbon-silver-zc'],
     relatedAccessories: ['zebra-cleaning-kit-2-zc', 'zebra-cleaning-kit-5-zc', 'zebra-cards-premier-025', 'zebra-cards-premier-076', 'zebra-cardstudio', 'acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq', 'acss-ac-76s', 'acss-wf76-af', 'acss-hp6-76-gd-a', 'acss-pvc1-sa40', 'acss-si76-a-sc', 'acss-bk76-a-sc'],
+    relatedProducts: ['zebra-zc300', 'magicard-pronto100', 'magicard-300'],
     faq: [
-      { question: 'Czym różni się Zebra ZC100 od ZC300?', answer: 'ZC100 to model entry-level — wyłącznie jednostronny, bez opcji Wi-Fi i kodowania RFID. ZC300 oferuje druk dwustronny, enkodery RFID/smart card, Wi-Fi i większą elastyczność konfiguracji. ZC100 jest idealny do małych nakładów (do 500 kart/rok), ZC300 do średnich i dużych.' },
-      { question: 'Ile kosztuje wydruk jednej karty na ZC100?', answer: 'Druk kolorowy YMCKO: taśma 800300-250EM (200 wydruków) ok. 146 zł → 0,73 zł/odcisk + karta PVC blank ok. 0,50 zł = ok. 1,23 zł/karta. Mono czarny: taśma 800300-301 (1500 wydruków) ok. 77 zł → 0,05 zł/odcisk + karta = ok. 0,55 zł/karta.' },
-      { question: 'Czy ZC100 drukuje dwustronnie?', answer: 'Nie. ZC100 to drukarka wyłącznie jednostronna. Jeśli potrzebujesz druku dwustronnego, wybierz Zebra ZC300 w wersji Dual-sided (ZC32-xxx).' },
-      { question: 'Jakie taśmy pasują do ZC100?', answer: 'Wszystkie taśmy z serii 800300-xxx są kompatybilne z ZC100 i ZC300: YMCKO kolorowa (800300-250EM, 200 wydruków), czarna mono (800300-301, 1500 wydruków), biała (800300-309EM, 1500 wydruków). Taśmy są identyczne dla obu modeli.' },
-      { question: 'Czy mogę kodować karty magnetyczne na ZC100?', answer: 'Tak, w wariantach ZC11-0Mxx — z wbudowanym koderem magnetycznym ISO 7811 HiCo/LoCo. Karty hotelowe, karty dostępu z paskiem magnetycznym — wszystko to obsługuje ZC100 z koderem.' },
-      { question: 'Co zawiera zestaw startowy ZC11-0000Q00EM00?', answer: 'Drukarkę ZC100 USB, taśmę YMCKO na 200 kolorowych wydruków, 200 białych kart PVC 0,76 mm i licencję Zebra CardStudio 2.0 Standard. Sprzedajemy go jako osobną pozycję — zestaw startowy Zebra ZC100.' },
-      { question: 'Jakie są alternatywy dla Zebra ZC100?', answer: 'W podobnej klasie cenowej: Evolis Zenius (od ok. 3 500 zł), Magicard 300 (od ok. 3 200 zł), HID Fargo DTC1250e (od ok. 4 000 zł). TAKMA rekomenduje ZC100 ze względu na platformę Link-OS, zdalne zarządzanie i szerokie wsparcie serwisowe Zebra w Polsce.' },
+      { question: 'Czy Zebra ZC100 drukuje w kolorze?', answer: 'Tak. Z taśmą YMCKO drukuje pełnokolorowe karty ze zdjęciem, logo i grafiką, a panel O nakłada warstwę ochronną. Z taśmą mono K drukuje w czerni, a z taśmami jednokolorowymi w bieli, czerwieni, niebieskim, złocie lub srebrze. Druk jest zawsze jednostronny.' },
+      { question: 'Czym różni się Zebra ZC100 od ZC300?', answer: 'ZC100 drukuje wyłącznie jednostronnie, ma USB w standardzie, a Ethernet i koder magnetyczny jako opcje. ZC300 drukuje jedno- lub dwustronnie, ma Ethernet w standardzie, konfiguracje z Wi-Fi oraz kodery RFID i smart card, a w kolorze osiąga do 200 kart/h. Gwarancja producenta w obu modelach wynosi 3 lata. Taśmy serii 800300 są wspólne.' },
+      { question: 'Ile kosztuje wydruk jednej karty na ZC100?', answer: 'Policz to z wydajności materiałów: taśma YMCKO 800300-250EM daje 200 kolorowych kart, taśma mono 800300-301 daje 1 500 kart, a białe karty PVC 0,76 mm kupujesz w opakowaniach po 100 lub 500 sztuk. Przy cenach z września 2026 kolorowa karta kosztuje około 1 zł netto, a czarno-biała około 0,35 zł netto. Aktualne ceny taśm i kart znajdziesz w sekcjach poniżej.' },
+      { question: 'Czy ZC100 drukuje dwustronnie?', answer: 'Nie. ZC100 drukuje tylko jedną stronę karty. Jeśli druga strona ma zawierać nadruk, wybierz Zebra ZC300 w wersji dwustronnej (ZC32-…) albo Magicard 300.' },
+      { question: 'Jakie taśmy pasują do ZC100?', answer: 'Taśmy Zebra serii 800300: kolorowa YMCKO na 200 wydruków (800300-250EM) lub 300 wydruków (800300-255EM), czarna mono K na 1 500 wydruków (800300-301), biała (800300-309EM) oraz taśmy KdO, KrO, półpanelowa YMCKO i jednokolorowe. Te same taśmy pracują w ZC300 i ZC350.' },
+      { question: 'Czy mogę kodować karty magnetyczne na ZC100?', answer: 'Tak, w wariantach ZC11-0M… z wbudowanym koderem ISO 7811. Koder zapisuje ścieżki 1–3 w standardzie HiCo i LoCo na kartach 0,76 mm z paskiem magnetycznym, w tym samym przebiegu co druk. Sprawdza się przy kartach hotelowych i przepustkach do starszych systemów kontroli dostępu.' },
+      { question: 'Co zawiera zestaw startowy ZC11-0000Q00EM00 i kiedy się opłaca?', answer: 'Drukarkę ZC100 USB, taśmę YMCKO na 200 kolorowych wydruków, 200 białych kart PVC 0,76 mm i licencję Zebra CardStudio 2.0 Standard. Opłaca się, gdy zaczynasz od zera i chcesz mieć wszystko pod jednym numerem katalogowym. Jeśli masz już program do projektowania albo potrzebujesz Ethernetu lub kodera, kup drukarkę w wybranej konfiguracji i dobierz taśmę oraz karty osobno.' },
+      { question: 'Jakie sterowniki i systemy obsługuje ZC100?', answer: 'Zebra udostępnia sterowniki dla Windows (także wersji Server), macOS i Linux oraz program CardStudio 2.0. Pobierzesz je ze strony wsparcia Zebra, do której prowadzi link w sekcji „Pliki do pobrania”. Po instalacji sterownika wkładasz kasetę z taśmą, ładujesz karty do podajnika i drukujesz kartę testową z panelu sterownika.' },
+      { question: 'Jaka jest gwarancja na Zebra ZC100?', answer: 'Producent udziela 3 lat gwarancji na drukarkę i głowicę drukującą (lista gwarancyjna Zebra dla ZC100, ZC150 i ZC300). Serwis pogwarancyjny drukarek kart Zebra prowadzi nasz warsztat.' },
+      { question: 'Jakie są alternatywy dla Zebra ZC100?', answer: 'Tańszy start daje Magicard Pronto100, także jednostronna drukarka kart z taśmą i kartami w zestawie. Jeśli potrzebujesz druku dwustronnego, wybierz Magicard 300 albo Zebra ZC300, a przy kodowaniu RFID lub druku w sieci Wi-Fi Zebra ZC300. Wszystkie te modele znajdziesz w sekcji „Podobne drukarki” poniżej.' },
     ],
     comparison: {
       title: 'Porównanie drukarek kart Zebra',
@@ -46752,8 +46774,8 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
             'Rozdzielczość': '300 dpi',
             'Prędkość (YMCKO)': '150 kart/h',
             'Kodowanie': 'Magnetyczny (opcja)',
-            'Łączność': 'USB, Ethernet (opcja)',
-            'Cena od': '3 420 zł',
+            'Łączność': 'USB; Ethernet (opcja)',
+            'Gwarancja': '3 lata',
           },
         },
         {
@@ -46762,10 +46784,10 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
           specs: {
             'Druk': 'Jedno-/dwustronny',
             'Rozdzielczość': '300 dpi',
-            'Prędkość (YMCKO)': '140 kart/h',
+            'Prędkość (YMCKO)': '200 kart/h (jednostronnie)',
             'Kodowanie': 'Mag + RFID + Smart Card',
-            'Łączność': 'USB, Ethernet, Wi-Fi',
-            'Cena od': '4 297 zł',
+            'Łączność': 'USB, Ethernet; Wi-Fi (opcja)',
+            'Gwarancja': '3 lata',
           },
         },
         {
@@ -46776,17 +46798,19 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
             'Rozdzielczość': '300 dpi',
             'Prędkość (YMCKO)': '225 kart/h',
             'Kodowanie': 'Mag + RFID/NFC + SC + UHF',
-            'Łączność': 'USB, Ethernet, Wi-Fi',
-            'Cena od': 'Na zapytanie',
+            'Łączność': 'USB, Ethernet; Wi-Fi (opcja)',
+            'Gwarancja': '3 lata',
           },
         },
       ],
     },
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zc100/instrukcja-po-polsku', size: 'Online' },
-      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Printers/Card/zc100-zc300/spec-sheets/zc100-spec-sheet-en-us.pdf', size: 'PDF' },
+      { name: 'Karta specyfikacji Zebra ZC100 (PL)', type: 'datasheet', url: 'https://www.zebra.com/pl/pl/products/spec-sheets/printers/card/zc100.html', size: 'Online' },
+      { name: 'Sterowniki Windows, macOS, Linux i CardStudio — wsparcie Zebra', type: 'driver', url: 'https://www.zebra.com/pl/pl/support-downloads/printers/card/zc100.html', size: 'Online' },
     ],
     createdAt: '2026-02-14',
+    updatedAt: '2026-09-18',
     sameAs: 'https://www.zebra.com/pl/pl/products/printers/card/zc100.html',
   },
   {
@@ -46798,13 +46822,13 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     seoDescription: 'Zebra ZC300 (ZC31) — drukarka kart pracowniczych kolorowa, RFID, NFC, pasek magnetyczny. ZC300 Zebra: 300 dpi, jedno-/dwustronna. ZC31-000C000EM00 od 4 297 zł netto.',
     description: `Dla kogo? Zebra ZC300 to wszechstronna drukarka kart plastikowych zaprojektowana dla przedsiębiorstw, szkół, hoteli i organizacji — idealny wybór do identyfikatorów pracowniczych, e-legitymacji, kart dostępu RFID i kart hotelowych w nakładach od 500 do 5 000 kart/rok.
 
-Drukuje pełnokolorowe karty PVC CR-80 w technologii termosublimacyjnej z rozdzielczością 300 dpi. Dostępna w wersji jednostronnej (ZC31-xxx) i dwustronnej (ZC32-xxx). Prędkość: 140 kart/h kolorowo YMCKO lub do 900 kart/h monochromatycznie. Podajnik na 100 kart, odbiornik na 100 kart.
+Drukuje pełnokolorowe karty PVC CR-80 w technologii termosublimacyjnej z rozdzielczością 300 dpi. Dostępna w wersji jednostronnej (ZC31-xxx) i dwustronnej (ZC32-xxx). Prędkość: do 200 kart/h w kolorze YMCKO jednostronnie, 140 kart/h dwustronnie (YMCKOK) i do 900 kart/h monochromatycznie. Podajnik na 100 kart, odbiornik na 100 kart.
 
 Zaawansowane opcje kodowania: pasek magnetyczny HiCo/LoCo, enkoder RFID/NFC (Mifare Classic, DESFire, HID iCLASS/Prox, NTAG), smart card kontaktowy (ISO 7816), oraz kombinacje — wszystko w jednym przejściu z drukiem.
 
 Łączność: USB 2.0 + Ethernet 10/100 standardowo, Wi-Fi 802.11ac opcjonalnie. Platforma Link-OS ze zdalnym zarządzaniem. Pamięć: 2 GB flash. Wymiary: 202 × 484 × 234 mm (jednostronna), waga 5,3 kg.
 
-Wariant z zestawem startowym (ZC31-000CQ00EM00 / ZC32-000CQ00EM00) zawiera taśmę YMCKO, 200 kart PVC i CardStudio Classic. Gwarancja: 2 lata drukarka + 2 lata głowica.
+Wariant z zestawem startowym (ZC31-000CQ00EM00 / ZC32-000CQ00EM00) zawiera taśmę YMCKO, 200 kart PVC i CardStudio Classic. Gwarancja producenta: 3 lata na drukarkę i głowicę drukującą.
 
 Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-kart',
@@ -46827,7 +46851,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Metoda druku', value: 'Termosublimacja (dye-sublimation)' },
       { name: 'Rozdzielczość', value: '300 dpi (11,8 dot/mm)' },
       { name: 'Druk jedno-/dwustronny', value: 'Jednostronny (ZC31) / Dwustronny (ZC32)' },
-      { name: 'Prędkość druku (YMCKO)', value: '140 kart/h jednostronnie, 120 kart/h dwustronnie' },
+      { name: 'Prędkość druku (YMCKO)', value: '200 kart/h jednostronnie, 140 kart/h dwustronnie (YMCKOK)' },
       { name: 'Prędkość druku (mono K)', value: 'Do 900 kart/h jednostronnie' },
       { name: 'Format karty', value: 'CR-80 (85,6 × 54 mm), ISO 7810 ID-1' },
       { name: 'Grubość karty', value: '0,25–1,02 mm (10–40 mil)' },
@@ -46843,7 +46867,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Wymiary dwustr. (szer.×gł.×wys.)', value: '202 × 563 × 234 mm' },
       { name: 'Waga', value: '5,3 kg (jedn.) / 6,7 kg (dwustr.)' },
       { name: 'Zasilanie', value: '100–240 V AC, 50/60 Hz' },
-      { name: 'Gwarancja', value: '2 lata drukarka + 2 lata głowica' },
+      { name: 'Gwarancja', value: '3 lata na drukarkę i głowicę drukującą' },
     ],
     applications: ['Identyfikatory pracownicze z RFID', 'E-legitymacje szkolne i studenckie', 'Karty hotelowe RFID', 'Karty dostępu do budynków', 'Karty członkowskie (fitness, kluby)', 'Karty lojalnościowe i rabatowe', 'Przepustki parkingowe'],
     variants: [
@@ -46889,7 +46913,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
           highlight: true,
           specs: {
             'Druk': 'Jedno-/dwustronny',
-            'Prędkość (YMCKO)': '140 kart/h',
+            'Prędkość (YMCKO)': '200 kart/h (jednostronnie)',
             'Taśmy specialty': 'Nie',
             'Kodowanie': 'Mag + RFID/NFC + SC',
             'Łączność': 'USB, Ethernet, Wi-Fi',
@@ -46991,7 +47015,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { question: 'Ile kosztuje wydruk jednej karty na ZC350?', answer: 'Druk kolorowy YMCKO jednostronny: ok. 1,23 zł/karta (identycznie jak ZC300). Taśmy specialty (UV, holograficzne): ok. 2–3 zł/karta dodatkowo. Monochromatyczny: ok. 0,55 zł/karta. Plus koszt karty PVC blank: 0,50–15 zł (w zależności od typu — czysta vs RFID UHF).' },
       { question: 'Jakie technologie RFID obsługuje ZC350?', answer: 'HF/NFC 13,56 MHz: Mifare Classic 1K/4K, DESFire EV1/EV2/EV3, NTAG 213/215/216, HID iCLASS SE, HID Prox (125 kHz), SEOS. UHF 860–960 MHz: EPC Gen2 / ISO 18000-6C. Smart Card kontaktowy: ISO 7816. Wszystko w jednym przejściu z drukiem.' },
       { question: 'Czy mogę drukować karty z hologramem na ZC350?', answer: 'Tak. ZC350 obsługuje taśmy holograficzne Zebra YMCKLL (seria 800350-xxx) — druk hologramu bezpośrednio na karcie w jednym przejściu razem z kolorem YMCKO. Nie trzeba osobnej laminatorki — ZC350 nanosi hologram w tym samym cyklu druku. Zabezpieczenie przed fałszerstwem na poziomie klasy bankowej.' },
-      { question: 'Jaka jest gwarancja na Zebra ZC350?', answer: '3 lata gwarancji producenta na drukarkę i głowicę drukującą (EMEA) — o rok dłużej niż ZC100/ZC300. Dodatkowo: blokada pokrywy, szyfrowanie klasy rządowej i uwierzytelnianie drukarka-host zapewniają bezpieczeństwo fizyczne i cyfrowe.' },
+      { question: 'Jaka jest gwarancja na Zebra ZC350?', answer: '3 lata gwarancji producenta na drukarkę i głowicę drukującą (EMEA), tak samo jak w ZC100 i ZC300. Dodatkowo: blokada pokrywy, szyfrowanie klasy rządowej i uwierzytelnianie drukarka-host zapewniają bezpieczeństwo fizyczne i cyfrowe.' },
       { question: 'Co zawiera wariant z zestawem startowym?', answer: 'Wariant ZC35-0M0C000EM00 (wybrany domyślnie na BCMarket) zawiera drukarkę z koderem magnetycznym. Zestaw startowy z taśmą YMCKO i kartami PVC dostępny osobno — skontaktuj się z TAKMA po wycenę pakietu.' },
       { question: 'Jakie są alternatywy dla Zebra ZC350?', answer: 'W klasie drukarek z taśmami specialty i RFID UHF: HID Fargo DTC5500LMX (od ok. 12 000 zł), Evolis Avansia (retransfer, od ok. 15 000 zł), Matica XID8600 (od ok. 18 000 zł). ZC350 oferuje najlepszy stosunek ceny do funkcji — taśmy specialty + RFID UHF + Link-OS za ułamek ceny konkurencji.' },
     ],
@@ -49383,7 +49407,7 @@ To drukarka jednostronna z USB. W tym komplecie nie ma Ethernetu ani kodera pask
       { name: 'Format kart', value: 'CR-80 (85,6 × 54 mm), ISO 7810 ID-1' },
       { name: 'Łączność', value: 'USB 2.0, bez Ethernetu i kodera magnetycznego' },
       { name: 'W pudełku', value: 'Drukarka, zasilacz, kabel USB, podajnik i odbiornik kart, karta czyszcząca' },
-      { name: 'Gwarancja', value: '2 lata drukarka + 2 lata głowica' },
+      { name: 'Gwarancja', value: '3 lata na drukarkę i głowicę drukującą' },
       { name: 'Part Number', value: 'ZC11-0000Q00EM00' },
     ],
     applications: [

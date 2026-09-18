@@ -3,6 +3,7 @@ import { notFound, permanentRedirect } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { getProductStock } from '@/lib/product-stock'
+import productImageDims from '@/data/product-image-dims.json'
 import { selectProductVariant } from '@/lib/product-variant-offers'
 import LiveProductSchema from './LiveProductSchema'
 import {
@@ -140,8 +141,10 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
       ? `${product.shortDescription}. Od ${product.priceFrom.toLocaleString('pl-PL')} zł netto. Sprawdź warianty i zamów w TAKMA.`
       : `${product.shortDescription}. Sprawdź i zamów w TAKMA.`
 
-  // OG image — pełny URL z domeną (nie relative path)
+  // OG image — pełny URL z domeną (nie relative path) i prawdziwe wymiary pliku
+  // (mapa generowana skryptem scripts/generate-image-dims.mjs; bez wpisu nie deklarujemy wymiarów)
   const ogImage = product.images[0] ? absoluteProductImageUrl(product.images[0]) : undefined
+  const ogImageDims = product.images[0] ? (productImageDims as unknown as Record<string, [number, number] | undefined>)[product.images[0]] : undefined
   const magicardOffer = getMagicardOffer(product)
 
   // ── Canonical: dla etykiet (DT i TT) przekazujemy autorytet stronie serii.
@@ -174,11 +177,11 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
     description: metaDescription,
     openGraph: {
       title: title,
-      description: product.slug === 'zebra-zd421t' ? metaDescription : smartTruncate(ogDescription, 200),
+      description: initialStock !== undefined ? metaDescription : smartTruncate(ogDescription, 200),
       type: 'website',
       locale: 'pl_PL',
       siteName: 'TAKMA',
-      images: ogImage ? [{ url: ogImage, width: 1200, height: product.slug === 'zebra-zd421t' ? 1200 : 630, alt: variant ? `${product.name}${variantSize ? ` ${variantSize}` : ''}` : product.name }] : undefined,
+      images: ogImage ? [{ url: ogImage, ...(ogImageDims ? { width: ogImageDims[0], height: ogImageDims[1] } : {}), alt: variant ? `${product.name}${variantSize ? ` ${variantSize}` : ''}` : product.name }] : undefined,
       url: canonical,
     },
     other: {

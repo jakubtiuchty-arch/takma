@@ -78,6 +78,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       'zebra-ds2208',
       'zebra-ds4608',
       'zebra-et40',
+      'zebra-zc100',
     ],
 
     // ────────────────────────────────
