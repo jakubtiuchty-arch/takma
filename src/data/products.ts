@@ -46959,7 +46959,7 @@ Parametry według karty specyfikacji Zebra ZC300 i listy gwarancyjnej Zebra (wrz
     },
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zc300/instrukcja-po-polsku', size: 'Online' },
-      { name: 'Karta specyfikacji Zebra ZC300 (PL)', type: 'datasheet', url: 'https://www.zebra.com/pl/pl/products/spec-sheets/printers/card/zc300.html', size: 'Online' },
+      { name: 'Karta katalogowa Zebra ZC300 (PL)', type: 'datasheet', url: '/downloads/zebra-zc300-karta-katalogowa-pl.pdf', size: '373 KB' },
       { name: 'Sterowniki Windows, macOS, Linux i CardStudio — wsparcie Zebra', type: 'driver', url: 'https://www.zebra.com/pl/pl/support-downloads/printers/card/zc300.html', size: 'Online' },
     ],
     createdAt: '2026-02-14',
