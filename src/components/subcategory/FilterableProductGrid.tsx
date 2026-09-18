@@ -189,6 +189,8 @@ interface FilterableProductGridProps {
   showDualButtons?: boolean
   /** Nazwa listy w GA4 (slug strony) — trafia do `filtr_uzyty` i `select_item`. */
   listName?: string
+  /** Ile kafli pokazać od razu (reszta po kliknięciu). Katalog ma setki pozycji. */
+  maxInitial?: number
 }
 
 function extractNumeric(val: string): number {
@@ -218,6 +220,7 @@ export default function FilterableProductGrid({
   filtersFirst = false,
   showDualButtons = false,
   listName,
+  maxInitial,
 }: FilterableProductGridProps) {
   const [activeFilters, setActiveFilters] = useState<Record<string, Set<string>>>({})
 
@@ -685,7 +688,7 @@ export default function FilterableProductGrid({
           </div>
         )}
 
-        <ProductGrid products={sortedProducts} variant={variant} columns={columns} showDualButtons={showDualButtons} listName={listName} />
+        <ProductGrid products={sortedProducts} variant={variant} columns={columns} showDualButtons={showDualButtons} listName={listName} maxInitial={maxInitial} />
 
         {children}
       </div>

@@ -1179,3 +1179,21 @@ for (const page of ['drukarki-etykiet-zebra', 'drukarki-etykiet-honeywell', 'dru
   categoryFilters[page] = categoryFilters['drukarki-etykiet']
 }
 categoryFilters['drukarki-kart-magicard'] = categoryFilters['drukarki-kart']
+
+/**
+ * Filtr ceny dla katalogu (/katalog), gdy nie wybrano kategorii. Specyfikacje
+ * różnią się między kategoriami — drukarka nie ma przekątnej ekranu, a skaner
+ * rozdzielczości druku — więc wspólne zostają producent (budowany z listy
+ * producentów na stronie) i cena. Po wybraniu kategorii wchodzi jej zestaw.
+ */
+export const filtrCenaKatalogu: FilterDefinition = {
+  specKey: 'katalog-cena',
+  label: 'Cena netto',
+  derived: [
+    { value: 'do 500 zł', priceMax: 500 },
+    { value: '500 – 2 000 zł', priceMin: 500, priceMax: 2000 },
+    { value: '2 000 – 5 000 zł', priceMin: 2000, priceMax: 5000 },
+    { value: '5 000 – 10 000 zł', priceMin: 5000, priceMax: 10000 },
+    { value: 'powyżej 10 000 zł', priceMin: 10000 },
+  ],
+}
